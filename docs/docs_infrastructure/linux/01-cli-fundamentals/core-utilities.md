@@ -8,32 +8,32 @@ sidebar_position: 2
 ## GNU Coreutils Overview
 
 GNU coreutils is the package that provides the fundamental file, shell, and text manipulation
-utilities on virtually every Linux distribution. These utilities implement the POSIX specifications
-and extend them with GNU-specific options. The package contains roughly 105 programs, grouped into:
+Utilities on virtually every Linux distribution. These utilities implement the POSIX specifications
+And extend them with GNU-specific options. The package contains roughly 105 programs, grouped into:
 
-- **File utilities**: `ls`, `cp`, `mv`, `rm`, `ln`, `chmod`, `chown`, `touch`, `mkdir`, `rmdir`,
-  `stat`, `du`, `df`, `sync`
-- **Text utilities**: `cat`, `head`, `tail`, `sort`, `uniq`, `tr`, `cut`, `paste`, `join`, `wc`,
-  `nl`, `fmt`, `fold`, `pr`
-- **Shell utilities**: `echo`, `printf`, `date`, `tee`, `basename`, `dirname`, `sleep`, `true`,
-  `false`, `test`, `expr`, `yes`, `timeout`
+- **File utilities**: `ls``cp``mv``rm``ln``chmod``chown``touch``mkdir``rmdir`
+ `stat``du``df``sync`
+- **Text utilities**: `cat``head``tail``sort``uniq``tr``cut``paste``join``wc`
+ `nl``fmt``fold``pr`
+- **Shell utilities**: `echo``printf``date``tee``basename``dirname``sleep``true`
+ `false``test``expr``yes``timeout`
 
 ## Text Processing Pipeline Patterns
 
 The Unix philosophy of composing small, single-purpose tools into pipelines is the foundation of
 Linux systems administration. Understanding how to chain these tools effectively is a core
-competency.
+Competency.
 
 ### `grep` — Pattern Matching
 
 `grep` searches input lines for patterns matching a regular expression and prints matching lines.
 Three main variants exist:
 
-| Variant   | Regex Flavor | Description                         |
+| Variant | Regex Flavor | Description |
 | --------- | ------------ | ----------------------------------- |
-| `grep`    | BRE          | Basic Regular Expressions (default) |
-| `grep -E` | ERE          | Extended Regular Expressions        |
-| `grep -P` | PCRE         | Perl-Compatible Regular Expressions |
+| `grep` | BRE | Basic Regular Expressions (default) |
+| `grep -E` | ERE | Extended Regular Expressions |
+| `grep -P` | PCRE | Perl-Compatible Regular Expressions |
 
 ```bash
 # Basic pattern matching
@@ -75,35 +75,35 @@ grep --color=always "pattern" file
 
 #### BRE vs ERE vs PCRE
 
-| Feature             | BRE      | ERE     | PCRE                     |
+| Feature | BRE | ERE | PCRE |
 | ------------------- | -------- | ------- | ------------------------ |
-| Literal match       | `abc`    | `abc`   | `abc`                    |
-| Any character       | `.`      | `.`     | `.`                      |
-| Zero or more        | `*`      | `*`     | `*`                      |
-| One or more         | `\{1,\}` | `+`     | `+`                      |
-| Zero or one         | `\?`     | `?`     | `?`                      |
-| Alternation         | `\|`     | `\|`    | `\|`                     |
-| Grouping            | `\(\)`   | `()`    | `()`                     |
-| Character class     | `[abc]`  | `[abc]` | `[abc]`                  |
-| Lookahead           | No       | No      | `(?=...)`                |
-| Lookbehind          | No       | No      | `(?&lt;=...)`            |
-| Non-capturing group | No       | No      | `(?:...)`                |
-| Named capture       | No       | No      | `(?P&lt;name&gt;...)`    |
-| Backreference       | `\1`     | `\1`    | `\1` or `\k&lt;name&gt;` |
-| Unicode properties  | No       | No      | `\p{L}`                  |
+| Literal match | `abc` | `abc` | `abc` |
+| Any character | `.` | `.` | `.` |
+| Zero or more | `*` | `*` | `*` |
+| One or more | `\{1,\}` | `+` | `+` |
+| Zero or one | `\?` | `?` | `?` |
+| Alternation | `\|` | `\|` | `\|` |
+| Grouping | `\(\)` | `()` | `()` |
+| Character class | `[abc]` | `[abc]` | `[abc]` |
+| Lookahead | No | No | `(?=...)` |
+| Lookbehind | No | No | `(?&lt;=...)` |
+| Non-capturing group | No | No | `(?:...)` |
+| Named capture | No | No | `(?P&lt;name&gt;...)` |
+| Backreference | `\1` | `\1` | `\1` or `\k&lt;name&gt;` |
+| Unicode properties | No | No | `\p{L}` |
 
 :::warning
 
-In BRE, `+`, `?`, `{`, `|`, `(`, `)` are literal characters. You must escape them with `\` to get
-their special meaning. In ERE, the reverse is true — they are special by default and must be escaped
-to be literal. This is a frequent source of confusion.
+In BRE, `+``?``{``|``(``)` are literal characters. You must escape them with `\` to get
+Their special meaning. In ERE, the reverse is true — they are special by default and must be escaped
+To be literal. This is a frequent source of confusion.
 
 :::
 
 ### `sed` — Stream Editor
 
 `sed` applies editing commands to input text line by line. It operates on a **pattern space** — a
-buffer holding the current line — and supports hold space for multi-line operations.
+Buffer holding the current line — and supports hold space for multi-line operations.
 
 ```bash
 # Substitute first occurrence per line
@@ -170,7 +170,7 @@ sed -E 's/(https?):\/\/([^/]+)(.*)/\2/' urls.txt
 ### `awk` — Pattern-Directed Scanning and Processing
 
 `awk` is a full programming language designed for text processing. It processes input line by line,
-splitting each line into fields. The three main implementations are `awk` (often `mawk` or `gawk`).
+Splitting each line into fields. The three main implementations are `awk` (often `mawk` or `gawk`).
 
 ```bash
 # Print specific fields (default field separator: whitespace)
@@ -246,7 +246,7 @@ awk 'FNR==1 {print "=== " FILENAME " ==="} {print}' *.log
 awk '{print | "sort -rn"}' unsorted.txt
 ```
 
-### `sort`, `uniq`, `wc`, `cut`, `tr`
+### `sort``uniq``wc``cut``tr`
 
 These utilities form the backbone of text processing pipelines:
 
@@ -317,7 +317,7 @@ find . -name "*.conf" -exec sed -i 's/oldhost.example.com/newhost.example.com/g'
 ### `find` — File System Traversal
 
 `find` recursively traverses a directory tree and evaluates expressions against each file. It is one
-of the most powerful tools available but also one of the most commonly misused.
+Of the most powerful tools available but also one of the most commonly misused.
 
 ```bash
 # Basic search
@@ -382,18 +382,18 @@ find . -name "*.log" -print0 | xargs -0 -P 4 gzip
 find . -name "*.c" -print0 | xargs -0 -I {} cp {} /backup/
 ```
 
-| Method            | Invocation Count | Safety             | Use Case                           |
+| Method | Invocation Count | Safety | Use Case |
 | ----------------- | ---------------- | ------------------ | ---------------------------------- |
-| `-exec {} \;`     | Once per file    | Safest             | Few files, complex commands        |
-| `-exec {} +`      | Batched          | Safe               | Many files, simple commands        |
-| `xargs` (default) | Batched          | Unsafe with spaces | Simple filenames                   |
-| `xargs -0`        | Batched          | Safe               | Any filenames (use with `-print0`) |
+| `-exec {} \;` | Once per file | Safest | Few files, complex commands |
+| `-exec {} +` | Batched | Safe | Many files, simple commands |
+| `xargs` (default) | Batched | Unsafe with spaces | Simple filenames |
+| `xargs -0` | Batched | Safe | Any filenames (use with `-print0`) |
 
 :::warning
 
 Always use `find ... -print0 | xargs -0` instead of `find ... | xargs` when filenames may contain
-spaces, newlines, or special characters. The default `xargs` splits on whitespace and does not
-handle these cases correctly.
+Spaces, newlines, or special characters. The default `xargs` splits on whitespace and does not
+Handle these cases correctly.
 
 :::
 
@@ -525,13 +525,13 @@ tar --preserve-permissions --same-owner -xvf archive.tar
 
 ### Compression Formats
 
-| Format | Command           | Compression     | Speed     | Typical Ratio |
+| Format | Command | Compression | Speed | Typical Ratio |
 | ------ | ----------------- | --------------- | --------- | ------------- |
-| gzip   | `gzip`/`gunzip`   | Deflate         | Fast      | 5:1 - 8:1     |
-| bzip2  | `bzip2`/`bunzip2` | Burrows-Wheeler | Slow      | 8:1 - 12:1    |
-| xz     | `xz`/`unxz`       | LZMA2           | Slower    | 10:1 - 15:1   |
-| zstd   | `zstd`/`unzstd`   | Zstandard       | Fastest   | 5:1 - 10:1    |
-| lz4    | `lz4`/`unlz4`     | LZ4             | Very fast | 3:1 - 5:1     |
+| gzip | `gzip`/`gunzip` | Deflate | Fast | 5:1 - 8:1 |
+| bzip2 | `bzip2`/`bunzip2` | Burrows-Wheeler | Slow | 8:1 - 12:1 |
+| xz | `xz`/`unxz` | LZMA2 | Slower | 10:1 - 15:1 |
+| zstd | `zstd`/`unzstd` | Zstandard | Fastest | 5:1 - 10:1 |
+| lz4 | `lz4`/`unlz4` | LZ4 | Very fast | 3:1 - 5:1 |
 
 ```bash
 # gzip
@@ -590,7 +590,7 @@ rsync -av --bwlimit=1000 /source/ user@host:/dest/
 
 Always use trailing slashes on source paths in rsync. `/source/` means "contents of source", while
 `/source` means "source directory itself". The difference is whether the source directory name is
-created in the destination.
+Created in the destination.
 
 :::
 
@@ -606,25 +606,25 @@ Type   Owner    Group    Other
 -       rwx      r-x      r--
 ```
 
-| Bit Position | Name      | Value | Description                            |
+| Bit Position | Name | Value | Description |
 | ------------ | --------- | ----- | -------------------------------------- |
-| 0-2          | Other     | 0-7   | Permissions for others                 |
-| 3-5          | Group     | 0-7   | Permissions for group members          |
-| 6-8          | Owner     | 0-7   | Permissions for file owner             |
-| 9-11         | File type | —     | Regular file, directory, symlink, etc. |
+| 0-2 | Other | 0-7 | Permissions for others |
+| 3-5 | Group | 0-7 | Permissions for group members |
+| 6-8 | Owner | 0-7 | Permissions for file owner |
+| 9-11 | File type | — | Regular file, directory, symlink, etc. |
 
 Each permission triplet:
 
-| Octal | Binary | Permissions            |
+| Octal | Binary | Permissions |
 | ----- | ------ | ---------------------- |
-| 0     | 000    | No permissions         |
-| 1     | 001    | Execute only           |
-| 2     | 010    | Write only             |
-| 3     | 011    | Write + Execute        |
-| 4     | 100    | Read only              |
-| 5     | 101    | Read + Execute         |
-| 6     | 110    | Read + Write           |
-| 7     | 111    | Read + Write + Execute |
+| 0 | 000 | No permissions |
+| 1 | 001 | Execute only |
+| 2 | 010 | Write only |
+| 3 | 011 | Write + Execute |
+| 4 | 100 | Read only |
+| 5 | 101 | Read + Execute |
+| 6 | 110 | Read + Write |
+| 7 | 111 | Read + Write + Execute |
 
 ```bash
 # Symbolic mode
@@ -649,11 +649,11 @@ chmod --reference=reference_file target_file
 
 ### Special Permission Bits
 
-| Bit    | Octal | Name   | Effect on Files       | Effect on Directories       |
+| Bit | Octal | Name | Effect on Files | Effect on Directories |
 | ------ | ----- | ------ | --------------------- | --------------------------- |
-| setuid | 4000  | SUID   | Execute as file owner | —                           |
-| setgid | 2000  | SGID   | Execute as file group | New files inherit group     |
-| sticky | 1000  | Sticky | —                     | Only owner can delete files |
+| setuid | 4000 | SUID | Execute as file owner | — |
+| setgid | 2000 | SGID | Execute as file group | New files inherit group |
+| sticky | 1000 | Sticky | — | Only owner can delete files |
 
 ```bash
 # Set SUID (execute as owner)
@@ -675,7 +675,7 @@ chmod 4755 /usr/local/bin/custom_tool
 :::warning
 
 SUID executables are a critical attack surface. Any SUID binary that is writable by non-root users
-can be used for privilege escalation. Audit SUID files regularly:
+Can be used for privilege escalation. Audit SUID files regularly:
 
 ```bash
 find / -perm -4000 -type f -exec ls -la {} \; 2>/dev/null
@@ -686,7 +686,7 @@ find / -perm -4000 -type f -exec ls -la {} \; 2>/dev/null
 ### `umask`
 
 `umask` controls the default permissions for newly created files and directories. It is a **mask** —
-it specifies which permission bits to **remove** from the default mode.
+It specifies which permission bits to **remove** from the default mode.
 
 ```bash
 # View current umask
@@ -707,12 +707,12 @@ umask 0077     # files: 600 (666 - 077), directories: 700 (777 - 077)
 
 The math: `default_permissions & ~umask`. For files: `0666 & ~0022 = 0644`. For directories:
 `0777 & ~0022 = 0755`. Note that most programs do not create files with execute bits set by default,
-even if the umask would allow it.
+Even if the umask would allow it.
 
 ### ACLs — Access Control Lists
 
 Standard Unix permissions provide only three permission classes (owner, group, other). ACLs extend
-this model with per-user and per-group rules.
+This model with per-user and per-group rules.
 
 ```bash
 # Check ACL support
@@ -775,8 +775,8 @@ chown --reference=ref_file target_file
 
 ### Pitfall: `grep` Returning Non-Zero on No Matches
 
-In scripts, `grep` returns exit code 1 when no lines match. With `set -e`, this terminates the
-script:
+In scripts, `grep` returns exit code 1 when no lines match. With `set -e`This terminates the
+Script:
 
 ```bash
 # WRONG — exits script if no matches
@@ -813,7 +813,7 @@ find . -name "*.tmp" -delete
 ### Pitfall: `sort` Stability
 
 `sort` is **stable** only when using `-s` (`--stable`). Without it, equal-sorting lines may be
-reordered:
+Reordered:
 
 ```bash
 # Stable sort — preserves original order of equal elements
@@ -823,12 +823,12 @@ sort -s -k2,2n data.txt
 ### Pitfall: `sed -i` on Symlinks
 
 `sed -i` (in-place editing) breaks symlinks by replacing the symlink with a regular file containing
-the edited content. Always use `sed --follow-symlinks -i` or avoid `-i` on symlinks.
+The edited content. Always use `sed --follow-symlinks -i` or avoid `-i` on symlinks.
 
 ### Pitfall: `awk` Floating-Point Precision
 
 `awk` uses double-precision floating-point arithmetic. This can cause precision issues with monetary
-calculations or exact comparisons:
+Calculations or exact comparisons:
 
 ```bash
 # WRONG — floating-point comparison
@@ -871,7 +871,7 @@ tar --directory /tmp/extract -xvf archive.tar
 ### Pitfall: `chmod +x` on Files Without Read Permission
 
 A file can be executable but not readable. For scripts, this means the shell cannot read the file to
-interpret it, so execution fails with "Permission denied" even though the execute bit is set.
+Interpret it, so execution fails with "Permission denied" even though the execute bit is set.
 Regular compiled binaries can still be executed without read permission.
 
 ```bash
@@ -893,5 +893,13 @@ true | xargs -r echo
 
 ### Pitfall: `sort -h` Availability
 
-The `-h` flag (human-numeric sort, handling `K`, `M`, `G` suffixes) is a GNU extension. It is not
-available on BSD/macOS `sort`. On those systems, convert sizes to bytes first or use `numfmt`.
+The `-h` flag (human-numeric sort, handling `K``M``G` suffixes) is a GNU extension. It is not
+Available on BSD/macOS `sort`. On those systems, convert sizes to bytes first or use `numfmt`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -9,11 +9,11 @@ slug: probability-extended
 ## Probability (Extended Treatment)
 
 This document extends the core probability material with rigorous treatments of conditional
-probability, independence, Venn diagrams, tree diagrams, and Bayes' theorem.
+Probability, independence, Venn diagrams, tree diagrams, and Bayes' theorem.
 
 :::info
 Probability problems reward careful notation and clear event definitions. Always define your events
-explicitly before writing any equations.
+Explicitly before writing any equations.
 :::
 
 <hr />
@@ -26,7 +26,7 @@ The **conditional probability** of event $A$ given that event $B$ has occurred i
 
 $$P(A \mid B) = \frac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆$$
 
-provided $P(B) \gt 0$.
+Provided $P(B) \gt 0$.
 
 **Interpretation.** $P(A \mid B)$ is the probability of $A$ within the "reduced sample space" $B$.
 
@@ -43,7 +43,7 @@ $$P(A \cap B \cap C) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)$$
 ### 1.3 Worked example
 
 **Problem.** A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. Find
-the probability that both are red.
+The probability that both are red.
 
 Let $R_1$ = "first ball is red", $R_2$ = "second ball is red".
 
@@ -52,7 +52,7 @@ $$P(R_1 \cap R_2) = P(R_1) \cdot P(R_2 \mid R_1) = \frac{5}{8} \times \frac{4}{7
 ### 1.4 The Law of Total Probability
 
 If $\{B_1, B_2, \ldots, B_n\}$ is a partition of the sample space (mutually exclusive and exhaustive),
-then for any event $A$:
+Then for any event $A$:
 
 $$\boxed{P(A) = \sum_{i=1}^{n} P(A \mid B_i)\,P(B_i)}$$
 
@@ -68,7 +68,7 @@ $$P(A) = \sum_{i=1}^n P(A \cap B_i) = \sum_{i=1}^n P(A \mid B_i)\,P(B_i) \quad \
 
 **Problem.** In a factory, Machine $A$ produces 60% of items and Machine $B$ produces 40%. Machine
 $A$ has a defect rate of 2% and Machine $B$ has a defect rate of 5%. Find the probability that a
-randomly selected item is defective.
+Randomly selected item is defective.
 
 Let $D$ = "item is defective".
 
@@ -93,14 +93,14 @@ $$P(A_i \mid B) = \frac◆LB◆P(B \mid A_i)\,P(A_i)◆RB◆◆LB◆\sum_{j=1}^{
 $$P(A \mid B) = \frac◆LB◆P(A \cap B)◆RB◆◆LB◆P(B)◆RB◆ = \frac◆LB◆P(B \mid A)\,P(A)◆RB◆◆LB◆P(B)◆RB◆$$
 
 The first step is the definition of conditional probability. The second step applies the
-multiplication rule to the numerator. $\blacksquare$
+Multiplication rule to the numerator. $\blacksquare$
 
 ### 2.3 Worked example
 
 **Problem.** A disease affects 1% of a population. A test for the disease has a 95% true positive
-rate ($P(\mathrm{positive} \mid \mathrm{disease}) = 0.95$) and a 10% false positive rate
+Rate ($P(\mathrm{positive} \mid \mathrm{disease}) = 0.95$) and a 10% false positive rate
 ($P(\mathrm{positive} \mid \mathrm{no\ disease}) = 0.10$). If a person tests positive, what is the
-probability they actually have the disease?
+Probability they actually have the disease?
 
 Let $D$ = "has disease", $T^+$ = "tests positive".
 
@@ -111,17 +111,17 @@ $$= \frac◆LB◆0.95 \times 0.01◆RB◆◆LB◆0.95 \times 0.01 + 0.10 \times 
 So even with a positive test, there is only about an 8.8% chance of having the disease.
 
 :::warning
-warning
+Warning
 This counterintuitive result arises because the disease is rare. The number of false positives far
-exceeds the number of true positives. This is the **base rate fallacy** -- ignoring the prior
-probability of the condition.
+Exceeds the number of true positives. This is the **base rate fallacy** -- ignoring the prior
+Probability of the condition.
 :::
 
 ### 2.4 Worked example: factory with three machines
 
 **Problem.** A factory has three machines producing bolts. Machine 1 produces 50%, Machine 2 produces
 30%, and Machine 3 produces 20%. Defect rates are 1%, 2%, and 3% respectively. A bolt is found to
-be defective. What is the probability it came from Machine 3?
+Be defective. What is the probability it came from Machine 3?
 
 $$P(M_3 \mid D) = \frac◆LB◆P(D \mid M_3)\,P(M_3)◆RB◆◆LB◆P(D \mid M_1)\,P(M_1) + P(D \mid M_2)\,P(M_2) + P(D \mid M_3)\,P(M_3)◆RB◆$$
 
@@ -135,20 +135,20 @@ $$= \frac{0.006}{0.005 + 0.006 + 0.006} = \frac{0.006}{0.017} \approx 0.353$$
 
 ### 3.1 Notation and regions
 
-For two events $A$ and $B$, the Venn diagram has four regions:
+For two events $A$ and $B$The Venn diagram has four regions:
 
-| Region          | Description                      | Probability          |
+| Region | Description | Probability |
 | --------------- | -------------------------------- | -------------------- |
-| $A \cap B$      | In both $A$ and $B$              | $P(A \cap B)$        |
-| $A \cap B'$     | In $A$ but not in $B$            | $P(A) - P(A \cap B)$ |
-| $A' \cap B$     | In $B$ but not in $A$            | $P(B) - P(A \cap B)$ |
-| $A' \cap B'$    | In neither $A$ nor $B$           | $1 - P(A \cup B)$    |
+| $A \cap B$ | In both $A$ and $B$ | $P(A \cap B)$ |
+| $A \cap B'$ | In $A$ but not in $B$ | $P(A) - P(A \cap B)$ |
+| $A' \cap B$ | In $B$ but not in $A$ | $P(B) - P(A \cap B)$ |
+| $A' \cap B'$ | In neither $A$ nor $B$ | $1 - P(A \cup B)$ |
 
 ### 3.2 Worked example
 
 **Problem.** In a group of 100 students, 45 study Maths, 30 study Physics, and 15 study both. A
-student is chosen at random. Find: (a) the probability they study at least one subject; (b) the
-probability they study Maths given they study Physics.
+Student is chosen at random. Find: (a) the probability they study at least one subject; (b) the
+Probability they study Maths given they study Physics.
 
 $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
@@ -158,14 +158,14 @@ $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
 ### 3.3 Three-event Venn diagrams
 
-For three events $A$, $B$, $C$, the inclusion-exclusion formula gives:
+For three events $A$$B$$C$The inclusion-exclusion formula gives:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 
 ### 3.4 Worked example: three events
 
 **Problem.** In a survey, 60% of people like tea, 50% like coffee, 40% like chocolate, 30% like
-tea and coffee, 25% like tea and chocolate, 20% like coffee and chocolate, and 10% like all three.
+Tea and coffee, 25% like tea and chocolate, 20% like coffee and chocolate, and 10% like all three.
 What proportion likes none of these?
 
 $$P(T \cup C \cup H) = 0.6 + 0.5 + 0.4 - 0.3 - 0.25 - 0.2 + 0.1 = 0.85$$
@@ -179,20 +179,20 @@ $$P(\mathrm{none}) = 1 - 0.85 = 0.15$$
 ### 4.1 Structure
 
 A tree diagram represents a sequence of events. Each branch represents a possible outcome with its
-probability. The probability of any path through the tree is the product of the probabilities along
-that path.
+Probability. The probability of any path through the tree is the product of the probabilities along
+That path.
 
 ### 4.2 Rules
 
 1. The probabilities on branches from any single node must sum to 1.
 2. The probability of an outcome is the product of probabilities along the path to that outcome.
 3. To find the probability of a compound event, add the probabilities of all paths leading to that
-   event.
+ event.
 
 ### 4.3 Worked example: two-stage selection
 
 **Problem.** A box contains 7 red and 5 green counters. Two counters are drawn at random without
-replacement. Find the probability that: (a) both are the same colour; (b) exactly one is red.
+Replacement. Find the probability that: (a) both are the same colour; (b) exactly one is red.
 
 (a) $P(\mathrm{both\ red}) = \dfrac{7}{12} \times \dfrac{6}{11} = \dfrac{42}{132} = \dfrac{7}{22}$
 
@@ -205,7 +205,7 @@ $P(\mathrm{same\ colour}) = \dfrac{7}{22} + \dfrac{5}{33} = \dfrac{21 + 10}{66} 
 ### 4.4 Worked example: with replacement
 
 **Problem.** Two dice are rolled. Find the probability that the sum is at least 9, given that the
-first die shows at least 4.
+First die shows at least 4.
 
 Let $A$ = "sum $\geq 9$" and $B$ = "first die $\geq 4$".
 
@@ -231,19 +231,19 @@ Events $A$ and $B$ are **independent** if and only if:
 
 $$P(A \cap B) = P(A) \cdot P(B)$$
 
-Equivalently: $P(A \mid B) = P(A)$, or $P(B \mid A) = P(B)$.
+Equivalently: $P(A \mid B) = P(A)$Or $P(B \mid A) = P(B)$.
 
 **Interpretation.** Knowing that $B$ occurred provides no information about whether $A$ occurred.
 
 ### 5.2 Pairwise vs mutual independence
 
-For three events $A$, $B$, $C$:
+For three events $A$$B$$C$:
 
 - **Pairwise independence** means each pair is independent.
 - **Mutual independence** means pairwise independence **and** $P(A \cap B \cap C) = P(A)\,P(B)\,P(C)$.
 
 Mutual independence is a stronger condition. Pairwise independence does not imply mutual
-independence.
+Independence.
 
 ### 5.3 Worked example
 
@@ -259,7 +259,7 @@ independence.
 (d) $P(A' \cap B') = P((A \cup B)') = 1 - 0.82 = 0.18$
 
 **Note:** $P(A' \cap B') = P(A') \cdot P(B') = 0.6 \times 0.3 = 0.18$ confirms the complements are
-also independent.
+Also independent.
 
 ### 5.4 Theorem: complements of independent events are independent
 
@@ -272,9 +272,9 @@ $$P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B) = 1 - P(A) - P(B) + P(A)P(B)$
 $$= (1 - P(A))(1 - P(B)) = P(A') \cdot P(B') \quad \blacksquare$$
 
 :::warning
-warning
+Warning
 "Independent" and "mutually exclusive" are different concepts. In fact, if $A$ and $B$ are both
-non-trivial (positive probability) and mutually exclusive, they **cannot** be independent:
+Non-trivial (positive probability) and mutually exclusive, they **cannot** be independent:
 $P(A \cap B) = 0 \neq P(A)P(B)$.
 :::
 
@@ -285,12 +285,12 @@ $P(A \cap B) = 0 \neq P(A)P(B)$.
 ### Problem 1
 
 In a class of 40 students, 25 play football, 18 play cricket, and 5 play neither. A student is
-chosen at random. Given that they play football, find the probability they also play cricket.
+Chosen at random. Given that they play football, find the probability they also play cricket.
 
 <details>
 <summary>Solution</summary>
 
-$P(F) = 25/40 = 0.625$, $P(C) = 18/40 = 0.45$, $P(F \cup C) = 35/40 = 0.875$.
+$P(F) = 25/40 = 0.625$$P(C) = 18/40 = 0.45$$P(F \cup C) = 35/40 = 0.875$.
 
 $P(F \cap C) = 0.625 + 0.45 - 0.875 = 0.20$.
 
@@ -301,13 +301,13 @@ $P(C \mid F) = 0.20 / 0.625 = 0.32$.
 ### Problem 2
 
 A test for a condition has sensitivity 92% (true positive rate) and specificity 96% (true negative
-rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mathrm{positive})$;
+Rate). The condition prevalence is 3%. Find: (a) $P(\mathrm{condition} \mid \mathrm{positive})$;
 (b) $P(\mathrm{condition} \mid \mathrm{negative})$.
 
 <details>
 <summary>Solution</summary>
 
-$P(T^+ \mid C) = 0.92$, $P(T^- \mid C') = 0.96$, $P(C) = 0.03$.
+$P(T^+ \mid C) = 0.92$$P(T^- \mid C') = 0.96$$P(C) = 0.03$.
 
 (a) $P(C \mid T^+) = \dfrac◆LB◆0.92 \times 0.03◆RB◆◆LB◆0.92 \times 0.03 + 0.04 \times 0.97◆RB◆ = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$
 
@@ -336,7 +336,7 @@ $\dfrac{5}{12} = \dfrac{2}{3}P(B) \implies P(B) = \dfrac{5}{8}$.
 ### Problem 4
 
 A bag contains 4 red, 6 green, and 5 blue balls. Three balls are drawn without replacement. Find
-the probability that they are all different colours.
+The probability that they are all different colours.
 
 <details>
 <summary>Solution</summary>
@@ -356,3 +356,15 @@ $P = \dfrac{4}{15} \times \dfrac{6}{14} \times \dfrac{5}{13} \times 6 = \dfrac{7
 (The factor of 6 accounts for the $3! = 6$ orderings of the three colours.)
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

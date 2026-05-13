@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-Alpha-glucose and beta-glucose are both hexose monosaccharides with the molecular formula $\text{C}_6\text{H}_{12}\text{O}_6$, yet they form polysaccharides with very different properties.
+Alpha-glucose and beta-glucose are both hexose monosaccharides with the molecular formula $\text{C}_6\text{H}_{12}\text{O}_6$Yet they form polysaccharides with very different properties.
 
 (a) Describe the precise structural difference between alpha-glucose and beta-glucose.
 
@@ -29,7 +29,7 @@ Alpha-glucose and beta-glucose are both hexose monosaccharides with the molecula
 
 (b) A condensation reaction occurs between the hydroxyl group on C1 of one alpha-glucose molecule and the hydroxyl group on C4 of another alpha-glucose molecule. This forms a glycosidic bond (specifically a 1,4-glycosidic bond) and eliminates a molecule of water ($\text{H}_2\text{O}$). The oxygen atom in the glycosidic bond originates from C1 of the first glucose molecule.
 
-(c) In beta-glucose, the alternating orientation of $-$OH groups above and below the ring means that each successive beta-glucose molecule must rotate 180 degrees relative to its neighbour to form a 1,4-glycosidic bond. This produces a straight, unbranched chain. The straight chains align parallel to each other, allowing extensive hydrogen bonding between the $-$OH groups of adjacent chains, forming strong, insoluble microfibrils. In alpha-glucose, the $-$OH groups all point in the same relative direction, so successive molecules do not need to rotate — the chain naturally coils into a helix, which is compact and less accessible for hydrogen bonding between chains.
+(c) In beta-glucose, the alternating orientation of $-$OH groups above and below the ring means that each successive beta-glucose molecule must rotate 180 degrees relative to its neighbour to form a 1,4-glycosidic bond. This produces a straight, unbranched chain. The straight chains align parallel to each other, allowing extensive hydrogen bonding between the $-$OH groups of adjacent chains, forming strong, insoluble microfibrils. In alpha-glucose, the $-$OH groups all point in the same relative direction, so successive molecules do not need to rotate — the chain coils into a helix, which is compact and less accessible for hydrogen bonding between chains.
 
 (d) The enzyme amylase, produced in human saliva and the pancreas, has an active site complementary in shape to the alpha-glycosidic bond. Cellulase, the enzyme that hydrolyses beta-1,4-glycosidic bonds, is not produced by humans. The active site of amylase cannot bind to the beta-glycosidic bond because the spatial arrangement of atoms in the beta linkage does not match the active site's three-dimensional shape. This is an example of the lock-and-key model of enzyme action (though induced fit also applies more broadly — the key point is that the active site is specific to the alpha linkage).
 
@@ -92,7 +92,7 @@ The results are shown below:
 (b) Three structural differences between DNA and RNA:
 1. **Sugar**: DNA contains deoxyribose (lacks an oxygen on C2); RNA contains ribose (has an $-$OH on C2).
 2. **Bases**: DNA contains adenine, thymine, cytosine, and guanine; RNA contains adenine, uracil, cytosine, and guanine (uracil replaces thymine).
-3. **Structure**: DNA is typically double-stranded (forming a double helix); RNA is typically single-stranded.
+3. **Structure**: DNA is double-stranded (forming a double helix); RNA is single-stranded.
 (Additional acceptable differences: DNA is a very long molecule; RNA is relatively short. DNA has a regular helical structure; RNA can fold into complex 3D shapes.)
 
 (c) ATP (adenosine triphosphate) consists of three components: adenine (a nitrogenous base), ribose (a pentose sugar), and three phosphate groups. The hydrolysis of the terminal phosphoanhydride bond between the second and third phosphate groups releases energy (approximately 30.5 kJ mol$^{-1}$) because the products (ADP + P$_i$) are more stable than ATP — the negative charges on the phosphate groups in ATP repel each other, making the bond strained and high-energy. The reaction is exergonic because it has a negative change in Gibbs free energy ($\Delta G \lt 0$); energy is released to the surroundings.
@@ -127,7 +127,7 @@ Cystic fibrosis is caused by a mutation in the CFTR gene, resulting in the produ
 
 (c) The primary structure (amino acid sequence) determines the secondary and tertiary structure of the protein. Phenylalanine is a hydrophobic amino acid; its presence at position 508 is critical for correct folding of the protein. Removing it alters the hydrophobic interactions that guide the protein into its correct tertiary shape. The misfolded protein is recognised by cellular quality control mechanisms (e.g., chaperone proteins in the endoplasmic reticulum), and is degraded before it can reach the cell membrane. Even if some protein reaches the membrane, the altered tertiary structure means the chloride channel does not function correctly.
 
-(d) According to the fluid mosaic model, proteins are embedded in the phospholipid bilayer of the cell membrane. **Intrinsic (integral) proteins** such as CFTR span the entire bilayer; they have hydrophobic regions on their outer surface that interact with the hydrophobic tails of the phospholipids, and hydrophilic regions that protrude into the aqueous environment on either side of the membrane. **Extrinsic (peripheral) proteins** are attached to the surface of the membrane, typically bound to intrinsic proteins or to phospholipid heads. The phospholipid molecules can move laterally within the bilayer (fluid), giving the membrane flexibility. The proteins form the "mosaic" pattern within this fluid bilayer.
+(d) According to the fluid mosaic model, proteins are embedded in the phospholipid bilayer of the cell membrane. **Intrinsic (integral) proteins** such as CFTR span the entire bilayer; they have hydrophobic regions on their outer surface that interact with the hydrophobic tails of the phospholipids, and hydrophilic regions that protrude into the aqueous environment on either side of the membrane. **Extrinsic (peripheral) proteins** are attached to the surface of the membrane, bound to intrinsic proteins or to phospholipid heads. The phospholipid molecules can move laterally within the bilayer (fluid), giving the membrane flexibility. The proteins form the "mosaic" pattern within this fluid bilayer.
 
 ---
 

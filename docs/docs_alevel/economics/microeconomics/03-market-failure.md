@@ -14,55 +14,55 @@ sidebar_position: 3
 
 We define **market failure** as the condition in which the free market allocation of resources is
 _allocatively inefficient_ — that is, the market fails to produce the Pareto-optimal quantity of
-goods and services.
+Goods and services.
 
 Formally, market failure occurs when the price mechanism does not equate marginal social benefit
-with marginal social cost:
+With marginal social cost:
 
 $$P \neq MSC \quad \mathrm{or equivalently} \quad MSB \neq MSC$$
 
 This leads to a **deadweight welfare loss**: the total surplus (consumer + producer + third-party)
-is not maximised.
+Is not maximised.
 
 :::warning
-warning
-sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
-one person better off without making anyone worse off (Pareto improvement).
+Warning
+Sense. It means the _outcome_ is suboptimal — there exists a reallocation that could make at least
+One person better off without making anyone worse off (Pareto improvement).
 :::
 
 ## 2. Types of Market Failure
 
 :::info
-info
+Info
 (production/consumption, positive/negative) with diagrammatic welfare loss triangles. **Edexcel**
-emphasises the distinction between private and social costs/benefits using demand-supply diagrams.
+Emphasises the distinction between private and social costs/benefits using demand-supply diagrams.
 **CIE (9708)** covers market failure in the context of allocative efficiency and requires
-consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
-failure directly to government intervention and expects evaluation of whether intervention improves
-outcomes.
+Consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
+Failure directly to government intervention and expects evaluation of whether intervention improves
+Outcomes.
 :::
 
 ### 2.1 Externalities
 
 We define an **externality** as a cost or benefit arising from production or consumption that
-affects a third party who is not part of the transaction.
+Affects a third party who is not part of the transaction.
 
 **Negative externality**: the social cost exceeds the private cost.
 
 $$MSC = MPC + MEC$$
 
-where $MPC$ = marginal private cost, $MEC$ = marginal external cost.
+Where $MPC$ = marginal private cost, $MEC$ = marginal external cost.
 
 **Positive externality**: the social benefit exceeds the private benefit.
 
 $$MSB = MPB + MEB$$
 
-where $MPB$ = marginal private benefit, $MEB$ = marginal external benefit.
+Where $MPB$ = marginal private benefit, $MEB$ = marginal external benefit.
 
 #### Derivation of the Welfare Loss
 
 Consider a good with a negative production externality (e.g., pollution from a factory). The market
-equilibrium is where demand (MPB) equals supply (MPC):
+Equilibrium is where demand (MPB) equals supply (MPC):
 
 $$\mathrm{Market equilibrium: } MPB = MPC \implies Q_{mkt}, P_{mkt}$$
 
@@ -71,7 +71,7 @@ The socially optimal outcome is where marginal social benefit equals marginal so
 $$\mathrm{Social optimum: } MSB = MSC \implies Q^*, P^*$$
 
 Since $MSC > MPC$ (there is an external cost), the social optimum quantity $Q^*$ is _less than_ the
-market quantity $Q_{mkt}$. The free market **over-produces** the good.
+Market quantity $Q_{mkt}$. The free market **over-produces** the good.
 
 The deadweight welfare loss (DWL) is:
 
@@ -79,18 +79,18 @@ $$\mathrm{DWL} = \frac{1}{2}(Q_{mkt} - Q^*)(MSC(Q_{mkt}) - MSB(Q_{mkt}))$$
 
 This is the area of the triangle between the MSC and MSB curves from $Q^*$ to $Q_{mkt}$.
 
-For positive externalities (e.g., education, vaccinations), the analysis is reversed: $MSB > MPB$,
-so $Q^* > Q_{mkt}$. The free market **under-produces** the good, and the DWL triangle lies between
+For positive externalities (e.g., education, vaccinations), the analysis is reversed: $MSB > MPB$
+So $Q^* > Q_{mkt}$. The free market **under-produces** the good, and the DWL triangle lies between
 $Q_{mkt}$ and $Q^*$.
 
 <details>
 <summary>Example: Pollution from a Chemical Factory</summary>
 A chemical factory produces output $Q$ with marginal private cost $MPC = 20 + Q$ and marginal
-external cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$.
+External cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$.
 
 - $MSC = MPC + MEC = 20 + 2Q$
-- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$, $P_{mkt} = 50$
-- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$, $P^* = 60$
+- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$$P_{mkt} = 50$
+- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$$P^* = 60$
 - DWL $= \frac{1}{2}(30 - 20)(MSC(30) - MSB(30)) = \frac{1}{2}(10)(80 - 50) = 150$
 
 The market over-produces by 10 units, creating a welfare loss of 150.
@@ -99,27 +99,27 @@ The market over-produces by 10 units, creating a welfare loss of 150.
 
 #### Types of Externalities
 
-|              | Production                             | Consumption                                 |
+| | Production | Consumption |
 | ------------ | -------------------------------------- | ------------------------------------------- |
-| **Negative** | Factory pollution ($MSC > MPC$)        | Second-hand smoke, congestion ($MSC > MPB$) |
-| **Positive** | Beekeeping near orchards ($MSC < MPC$) | Vaccination, education ($MSB > MPB$)        |
+| **Negative** | Factory pollution ($MSC > MPC$) | Second-hand smoke, congestion ($MSC > MPB$) |
+| **Positive** | Beekeeping near orchards ($MSC < MPC$) | Vaccination, education ($MSB > MPB$) |
 
 ### 2.2 Public Goods
 
 We define a **public good** as a good that is:
 
 1. **Non-excludable**: it is impossible (or prohibitively costly) to prevent non-payers from
-   consuming the good
+ consuming the good
 2. **Non-rivalrous**: one person's consumption does not reduce the quantity available to others
 
 $$Q_{total} = Q_{individual} \quad \mathrm{(non-rivalry)}$$
 
 Contrast with **private goods**: excludable and rivalrous (your consumption of an apple means I
-cannot eat it).
+Cannot eat it).
 
-|                    | Rivalrous                                    | Non-rivalrous                                    |
+| | Rivalrous | Non-rivalrous |
 | ------------------ | -------------------------------------------- | ------------------------------------------------ |
-| **Excludable**     | Private goods (food, clothing)               | Club goods (cable TV, cinema)                    |
+| **Excludable** | Private goods (food, clothing) | Club goods (cable TV, cinema) |
 | **Non-excludable** | Common resources (fish stocks, grazing land) | Public goods (national defence, street lighting) |
 
 #### The Free-Rider Problem
@@ -128,74 +128,74 @@ cannot eat it).
 
 _Proof._ Suppose a public good costs $C$ to provide and benefits each of $n$ individuals by $B_i$.
 The socially optimal provision requires $\sum_{i=1}^{n} B_i \geq C$. However, each individual $i$
-reasons: "If others pay, I can enjoy the good without paying (non-excludability). If others don't
-pay, my contribution is insufficient to provide the good." Therefore, it is individually rational
-for each person not to contribute — the **dominant strategy is to free-ride**. By the same logic, no
-one contributes, and the good is not provided, even when $\sum B_i \gg C$. $\blacksquare$
+Reasons: "If others pay, I can enjoy the good without paying (non-excludability). If others don't
+Pay, my contribution is insufficient to provide the good." Therefore, it is individually rational
+For each person not to contribute — the **dominant strategy is to free-ride**. By the same logic, no
+One contributes, and the good is not provided, even when $\sum B_i \gg C$. $\blacksquare$
 
 **Quasi-public goods**: goods that are largely non-rivalrous but are excludable (e.g., roads,
-education, healthcare). These are often provided by the government because the market would
-under-provide them.
+Education, healthcare). These are often provided by the government because the market would
+Under-provide them.
 
 ### 2.3 Information Asymmetry
 
 We define **information asymmetry** as a situation in which one party to a transaction has more or
-better information than the other.
+Better information than the other.
 
 #### Adverse Selection (Akerlof's Lemons Model)
 
 Akerlof (1970) analysed the market for used cars. Sellers know the quality of their car; buyers do
-not. There are two types of cars:
+Not. There are two types of cars:
 
-- **"Peaches"** (high quality): value to seller $= £8\,000$, value to buyer $= £10\,000$
-- **"Lemons"** (low quality): value to seller $= £4\,000$, value to buyer $= £6\,000$
+- **"Peaches"** (high quality): value to seller $= £8\,000$Value to buyer $= £10\,000$
+- **"Lemons"** (low quality): value to seller $= £4\,000$Value to buyer $= £6\,000$
 
 If buyers can distinguish quality, both types trade at mutually beneficial prices. But if buyers
-cannot distinguish, and 50% of cars are peaches and 50% are lemons, the **expected value** to a
-buyer of a random car is:
+Cannot distinguish, and 50% of cars are peaches and 50% are lemons, the **expected value** to a
+Buyer of a random car is:
 
 $$E[V] = 0.5 \times 10\,000 + 0.5 \times 6\,000 = £8\,000$$
 
 Buyers are willing to pay at most £8,000. But at this price, sellers of peaches (£8,000 value to
-seller) will not sell — only lemons are offered. Buyers, anticipating this, revise their offer
-downward to £6,000. Now _only_ lemons trade. **The market for high-quality cars collapses** — this
-is adverse selection: asymmetric information drives high-quality products out of the market.
+Seller) will not sell — only lemons are offered. Buyers, anticipating this, revise their offer
+Downward to £6,000. Now _only_ lemons trade. **The market for high-quality cars collapses** — this
+Is adverse selection: asymmetric information drives high-quality products out of the market.
 
 #### Moral Hazard
 
 We define **moral hazard** as a situation in which one party alters their behaviour after entering
-into an agreement, knowing that the other party bears some of the cost of that behaviour.
+Into an agreement, knowing that the other party bears some of the cost of that behaviour.
 
 <details>
 <summary>Example</summary>
 After purchasing comprehensive car insurance, a driver may take more risks (driving faster, parking
-in unsafe areas) because the insurance company bears the cost of accidents. The driver's behaviour
-changes _because_ they are insured — this is moral hazard.
+In unsafe areas) because the insurance company bears the cost of accidents. The driver's behaviour
+Changes _because_ they are insured — this is moral hazard.
 </details>
 
 ### 2.4 Market Power
 
 When a single firm (monopoly) or a small number of firms (oligopoly) have significant market power,
-they restrict output and raise prices above the competitive level. This creates a deadweight loss
+They restrict output and raise prices above the competitive level. This creates a deadweight loss
 (analysed in detail in Topic 4).
 
 ### 2.5 Factor Immobility
 
-**Occupational immobility**: workers cannot easily move between jobs due to lack of skills,
-training, or qualifications.
+**Occupational immobility**: workers cannot move between jobs due to lack of skills,
+Training, or qualifications.
 
-**Geographical immobility**: workers cannot easily move between regions due to housing costs, family
-ties, or information gaps.
+**Geographical immobility**: workers cannot move between regions due to housing costs, family
+Ties, or information gaps.
 
 Both types of immobility prevent the market from clearing, leading to structural unemployment and
-inefficient allocation of labour.
+Inefficient allocation of labour.
 
 ### 2.6 Inequality
 
 Markets reward factors of production according to marginal productivity. Those who own scarce,
-highly productive factors (skilled labour, capital, land) receive higher incomes. Without
-redistribution, this can lead to extreme inequality — which many consider a form of market failure
-because:
+Highly productive factors (skilled labour, capital, land) receive higher incomes. Without
+Redistribution, this can lead to extreme inequality — which many consider a form of market failure
+Because:
 
 1. Unequal incomes $\Rightarrow$ unequal access to education, healthcare, opportunities
 2. High inequality may reduce aggregate demand (the rich have a lower MPC)
@@ -206,11 +206,11 @@ because:
 ### 3.1 Lorenz Curve
 
 The **Lorenz curve** plots the cumulative share of income received by the cumulative share of the
-population, ordered from poorest to richest.
+Population, ordered from poorest to richest.
 
 If income were perfectly equally distributed, the Lorenz curve would be the 45° line (line of
-perfect equality). The greater the deviation (bow) of the Lorenz curve from the 45° line, the
-greater the inequality.
+Perfect equality). The greater the deviation (bow) of the Lorenz curve from the 45° line, the
+Greater the inequality.
 
 ### 3.2 Gini Coefficient
 
@@ -218,54 +218,54 @@ We define the **Gini coefficient** as:
 
 $$G = \frac{A}{A + B}$$
 
-where $A$ is the area between the 45° line and the Lorenz curve, and $B$ is the area under the
+Where $A$ is the area between the 45° line and the Lorenz curve, and $B$ is the area under the
 Lorenz curve.
 
 Since $A + B = \frac{1}{2}$ (area of the triangle below the 45° line):
 
 $$G = \frac{A}{A + B} = 2A = 1 - 2B$$
 
-| Gini Value  | Interpretation                                       |
+| Gini Value | Interpretation |
 | ----------- | ---------------------------------------------------- |
-| $G = 0$     | Perfect equality                                     |
-| $G = 1$     | Perfect inequality (one person has all income)       |
+| $G = 0$ | Perfect equality |
+| $G = 1$ | Perfect inequality (one person has all income) |
 | $0.2 - 0.3$ | Relatively equal (e.g., Nordic countries: 0.25-0.28) |
-| $0.3 - 0.4$ | Moderate inequality (e.g., UK: 0.35)                 |
-| $0.5 - 0.6$ | High inequality (e.g., South Africa: 0.63)           |
+| $0.3 - 0.4$ | Moderate inequality (e.g., UK: 0.35) |
+| $0.5 - 0.6$ | High inequality (e.g., South Africa: 0.63) |
 
 ## 4. Government Intervention
 
 :::info
 Board-Specific Note **AQA** requires comparison of taxes, subsidies, regulation, and
-tradable permits with evaluation of each. **Edexcel** expects diagrammatic analysis showing the
-effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
-intervention alongside cost-benefit analysis and requires understanding of when intervention may
-fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
-students to evaluate whether intervention worsens outcomes.
+Tradable permits with evaluation of each. **Edexcel** expects diagrammatic analysis showing the
+Effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
+Intervention alongside cost-benefit analysis and requires understanding of when intervention may
+Fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
+Students to evaluate whether intervention worsens outcomes.
 :::
 
 ### 4.1 Pigouvian Taxation
 
 For a negative externality, the optimal **Pigouvian tax** equals the marginal external cost at the
-socially optimal quantity:
+Socially optimal quantity:
 
 $$t^* = MEC(Q^*)$$
 
 **Proof of optimality.** With a specific tax $t$ per unit, the firm's private cost becomes
 $MPC + t$. The firm produces where demand equals private cost plus tax: $MPB = MPC + t$. For this to
-equal the social optimum ($MPB = MSC = MPC + MEC$), we need $t = MEC$ at the optimal quantity.
+Equal the social optimum ($MPB = MSC = MPC + MEC$), we need $t = MEC$ at the optimal quantity.
 $\blacksquare$
 
 The tax **internalises the externality**: the firm now faces the full social cost of its production
-and reduces output to $Q^*$.
+And reduces output to $Q^*$.
 
 <details>
 <summary>Example: Carbon Tax</summary>
 A coal power plant produces electricity with $MPC = 10 + Q$ and $MEC = 0.5Q$ (carbon emissions
-damage). Demand: $P = 100 - Q$.
+Damage). Demand: $P = 100 - Q$.
 
 - $MSC = 10 + 1.5Q$
-- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$, $P^* = 64$
+- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$$P^* = 64$
 - Optimal tax: $t^* = MEC(36) = 18$
 - With tax, firm faces: $MPC + t = 10 + Q + 18 = 28 + Q$. Equilibrium:
 $100 - Q = 28 + Q \Rightarrow Q = 36$ ✓
@@ -274,10 +274,10 @@ $100 - Q = 28 + Q \Rightarrow Q = 36$ ✓
 ### 4.2 Subsidies
 
 For positive externalities, a **Pigouvian subsidy** equal to the marginal external benefit can
-internalise the externality and increase output to the social optimum.
+Internalise the externality and increase output to the social optimum.
 
 **Limitation**: subsidies require government revenue (from taxation), which may itself create
-distortions.
+Distortions.
 
 ### 4.3 Regulation
 
@@ -296,7 +296,7 @@ The government can directly regulate production or consumption:
 ### 4.4 Tradable Permits
 
 The government sets a total quantity of pollution allowed and issues permits that firms can trade
-among themselves. This combines quantity regulation with market efficiency:
+Among themselves. This combines quantity regulation with market efficiency:
 
 - Firms with low abatement costs reduce pollution and sell permits
 - Firms with high abatement costs buy permits instead
@@ -307,7 +307,7 @@ among themselves. This combines quantity regulation with market efficiency:
 ### 4.5 Direct Provision
 
 The government directly provides public goods (defence, street lighting) and merit goods (education,
-healthcare) that the market would under-provide.
+Healthcare) that the market would under-provide.
 
 ### 4.6 Provision of Information
 
@@ -321,27 +321,27 @@ Government can reduce information asymmetry by:
 ## 5. Government Failure
 
 We define **government failure** as the situation in which government intervention to correct a
-market failure worsens the outcome.
+Market failure worsens the outcome.
 
 ### 5.1 Types of Government Failure
 
 1. **Regulatory capture**: the regulatory agency becomes dominated by the industry it regulates,
-   acting in the industry's interest rather than the public's
+ acting in the industry's interest rather than the public's
 2. **Information problems**: governments face the same information constraints as markets — they may
-   not know the optimal tax rate or the true marginal external cost
+ not know the optimal tax rate or the true marginal external cost
 3. **Bureaucracy and inefficiency**: government agencies lack the profit motive and may be slow,
-   costly, and unresponsive
+ costly, and unresponsive
 4. **Unintended consequences**: e.g., rent control reducing the supply of housing, agricultural
-   subsidies encouraging overproduction
+ subsidies encouraging overproduction
 5. **Political constraints**: short election cycles incentivise policies with immediate visible
-   benefits but long-term costs
+ benefits but long-term costs
 6. **Principal-agent problems**: government officials (agents) may not act in the public's
-   (principal's) interest
+ (principal's) interest
 
 :::tip
-tip
-strong answer acknowledges that government intervention is not automatically superior to the market
-— it depends on the relative severity of market failure vs government failure in each specific case.
+Tip
+Strong answer acknowledges that government intervention is not automatically superior to the market
+— on the relative severity of market failure vs government failure in each specific case.
 :::
 
 ## 6. Critical Evaluation
@@ -349,40 +349,40 @@ strong answer acknowledges that government intervention is not automatically sup
 ### Merit and Demerit Goods
 
 **Merit goods**: goods that the government believes consumers _should_ consume more of, because
-consumers underestimate their private benefit (due to imperfect information or myopia). Examples:
-education, healthcare, vaccinations.
+Consumers underestimate their private benefit (due to imperfect information or myopia). Examples:
+Education, healthcare, vaccinations.
 
 **Demerit goods**: goods that the government believes consumers _should_ consume less of. Examples:
-alcohol, tobacco, illegal drugs.
+Alcohol, tobacco, illegal drugs.
 
 :::warning
-warning
-judgements about what is "good" or "bad" for people. This is different from positive externalities
+Warning
+Judgements about what is "good" or "bad" for people. This is different from positive externalities
 (which are objective welfare effects on third parties). Many merit goods also generate positive
-externalities, but the concepts are distinct.
+Externalities, but the concepts are distinct.
 :::
 
 ### Tragedy of the Commons
 
 For **common resources** (rivalrous but non-excludable), individual rationality leads to collective
-irrationality. Each herder adds animals to the common grazing land because they receive the full
-benefit of the additional animal but share the cost of overgrazing with all herders. The result is
-depletion of the common resource (Hardin, 1968).
+Irrationality. Each herder adds animals to the common grazing land because they receive the full
+Benefit of the additional animal but share the cost of overgrazing with all herders. The result is
+Depletion of the common resource (Hardin, 1968).
 
 ## 7. Problem Set
 
 **Problem 1.** A steel factory has marginal private cost $MPC = 15 + 0.5Q$ and generates marginal
-external cost $MEC = 0.3Q$. The demand curve is $P = 60 - Q$. Find (a) the market equilibrium, (b)
-the socially optimal output, (c) the optimal Pigouvian tax, (d) the deadweight loss of the free
-market outcome.
+External cost $MEC = 0.3Q$. The demand curve is $P = 60 - Q$. Find (a) the market equilibrium, (b)
+The socially optimal output, (c) the optimal Pigouvian tax, (d) the deadweight loss of the free
+Market outcome.
 
 <details>
 <summary>Hint</summary>
-(a) Market: $60 - Q = 15 + 0.5Q \Rightarrow Q_{mkt} = 30$, $P = 30$. (b) $MSC = 15 + 0.8Q$. Social optimum: $60 - Q = 15 + 0.8Q \Rightarrow Q^* = 25$, $P^* = 35$. (c) $t^* = MEC(25) = 7.5$. (d) DWL $= \frac{1}{2}(30 - 25)(MSC(30) - MSB(30)) = \frac{1}{2}(5)(15 + 24 - 30) = \frac{1}{2}(5)(9) = 22.5$.
+(a) Market: $60 - Q = 15 + 0.5Q \Rightarrow Q_{mkt} = 30$$P = 30$. (b) $MSC = 15 + 0.8Q$. Social optimum: $60 - Q = 15 + 0.8Q \Rightarrow Q^* = 25$$P^* = 35$. (c) $t^* = MEC(25) = 7.5$. (d) DWL $= \frac{1}{2}(30 - 25)(MSC(30) - MSB(30)) = \frac{1}{2}(5)(15 + 24 - 30) = \frac{1}{2}(5)(9) = 22.5$.
 </details>
 
 **Problem 2.** Vaccination against a disease has marginal private benefit $MPB = 100 - Q$ and
-marginal private cost $MPC = 20 + Q$. The marginal external benefit is $MEB = 0.5Q$ (herd immunity).
+Marginal private cost $MPC = 20 + Q$. The marginal external benefit is $MEB = 0.5Q$ (herd immunity).
 Find the market outcome, the social optimum, and the optimal subsidy.
 
 <details>
@@ -391,8 +391,8 @@ Market: $100 - Q = 20 + Q \Rightarrow Q_{mkt} = 40$. Social: $MSB = 100 - Q + 0.
 </details>
 
 **Problem 3.** Using Akerlof's lemons model, explain what happens if the proportion of peaches
-increases to 80%. Calculate the expected value to the buyer and determine whether the market for
-peaches survives.
+Increases to 80%. Calculate the expected value to the buyer and determine whether the market for
+Peaches survives.
 
 <details>
 <summary>Hint</summary>
@@ -401,7 +401,7 @@ Expected value $= 0.8 \times 10\,000 + 0.2 \times 6\,000 = £9\,200$. Sellers of
 
 **Problem 4.** A country has five income groups with the following shares of total income: poorest
 20% receive 5%, second 20% receive 10%, third 20% receive 15%, fourth 20% receive 25%, richest 20%
-receive 45%. Plot the Lorenz curve (conceptually) and calculate the Gini coefficient.
+Receive 45%. Plot the Lorenz curve (conceptually) and calculate the Gini coefficient.
 
 <details>
 <summary>Hint</summary>
@@ -417,8 +417,8 @@ For: imperfect information (patients can't assess treatment quality), positive e
 </details>
 
 **Problem 6.** A government is considering two policies to reduce carbon emissions: (a) a carbon tax
-of £50 per tonne, (b) a regulation requiring all firms to reduce emissions by 20%. Evaluate both
-policies using the criteria of efficiency, equity, and practicality.
+Of £50 per tonne, (b) a regulation requiring all firms to reduce emissions by 20%. Evaluate both
+Policies using the criteria of efficiency, equity, and practicality.
 
 <details>
 <summary>Hint</summary>
@@ -426,8 +426,8 @@ Tax (a): efficient (firms with low abatement costs reduce more, high-cost firms 
 </details>
 
 **Problem 7.** Explain why a pure public good (non-excludable, non-rivalrous) will not be provided
-by the free market. In your answer, distinguish between the free-rider problem and the tragedy of
-the commons.
+By the free market. In your answer, distinguish between the free-rider problem and the tragedy of
+The commons.
 
 <details>
 <summary>Hint</summary>
@@ -435,9 +435,9 @@ Free-rider problem applies to public goods (non-excludable): individuals can ben
 </details>
 
 **Problem 8.** A tradable permit scheme for pollution allows 100 firms to each emit up to 10 tonnes
-of CO₂. Firm A can reduce emissions at a cost of £5/tonne, while Firm B's abatement cost is
+Of CO₂. Firm A can reduce emissions at a cost of £5/tonne, while Firm B's abatement cost is
 £20/tonne. Show that both firms benefit from trading permits, and find the equilibrium permit price
-range.
+Range.
 
 <details>
 <summary>Hint</summary>
@@ -445,7 +445,7 @@ If Firm A reduces by 1 extra tonne (cost £5) and sells the permit to Firm B (sa
 </details>
 
 **Problem 9.** "Rent control is an effective way to make housing affordable." Evaluate this
-statement using both theoretical analysis and empirical evidence.
+Statement using both theoretical analysis and empirical evidence.
 
 <details>
 <summary>Hint</summary>
@@ -453,7 +453,7 @@ Rent control sets a price ceiling below equilibrium $\Rightarrow$ excess demand 
 </details>
 
 **Problem 10.** Explain the concept of moral hazard in the context of (a) health insurance and (b)
-bank bailouts. How can policymakers mitigate moral hazard in each case?
+Bank bailouts. How can policymakers mitigate moral hazard in each case?
 
 <details>
 <summary>Hint</summary>
@@ -461,7 +461,7 @@ bank bailouts. How can policymakers mitigate moral hazard in each case?
 </details>
 
 **Problem 11.** "The existence of market failure justifies government intervention." To what extent
-do you agree with this statement?
+Do you agree with this statement?
 
 <details>
 <summary>Hint</summary>
@@ -469,8 +469,8 @@ Agree: market failure leads to allocative inefficiency (DWL), government can int
 </details>
 
 **Problem 12.** Explain how the Coase theorem applies to externalities. Under what conditions can
-private bargaining resolve externalities without government intervention? Why might the Coase
-theorem fail in practice?
+Private bargaining resolve externalities without government intervention? Why might the Coase
+Theorem fail in practice?
 
 <details>
 <summary>Hint</summary>
@@ -483,15 +483,15 @@ Coase theorem: if property rights are well-defined, transaction costs are zero, 
 
 **Example.** A factory producing widgets has $MPC = 10 + Q$ and generates pollution with
 $MEC = 0.5Q$. Demand is $P = 80 - Q$. Find the market equilibrium, social optimum, optimal Pigouvian
-tax, and DWL.
+Tax, and DWL.
 
 **Answer.**
 
 $MSC = 10 + 1.5Q$.
 
-Market equilibrium: $80 - Q = 10 + Q \implies Q_{mkt} = 35$, $P_{mkt} = 45$.
+Market equilibrium: $80 - Q = 10 + Q \implies Q_{mkt} = 35$$P_{mkt} = 45$.
 
-Social optimum: $80 - Q = 10 + 1.5Q \implies Q^* = 28$, $P^* = 52$.
+Social optimum: $80 - Q = 10 + 1.5Q \implies Q^* = 28$$P^* = 52$.
 
 Optimal tax: $t^* = MEC(28) = 14$.
 
@@ -509,30 +509,30 @@ For a negative production externality, the standard diagram shows:
 - Social optimum at intersection of MPB and MSC
 - DWL triangle between MSC and MPB from $Q^*$ to $Q_{mkt}$
 
-The tax shifts the MPC curve upward by $t^*$, so the new MPC + tax curve passes through the social
-optimum.
+The tax shifts the MPC curve upward by $t^*$So the new MPC + tax curve passes through the social
+Optimum.
 
 ## 9. Public Goods and the Free-Rider Problem: Extended Analysis
 
 ### 9.1 Pure Public Goods vs Quasi-Public Goods
 
-| Feature          | Pure Public Good                  | Quasi-Public Good              |
+| Feature | Pure Public Good | Quasi-Public Good |
 | ---------------- | --------------------------------- | ------------------------------ |
-| Excludability    | Non-excludable                    | Excludable                     |
-| Rivalry          | Non-rivalrous                     | Non-rivalrous (up to capacity) |
-| Market provision | Will not be provided              | Under-provided                 |
-| Examples         | National defence, street lighting | Roads, parks, education        |
-| Funding          | General taxation                  | Taxation or user fees          |
+| Excludability | Non-excludable | Excludable |
+| Rivalry | Non-rivalrous | Non-rivalrous (up to capacity) |
+| Market provision | Will not be provided | Under-provided |
+| Examples | National defence, street lighting | Roads, parks, education |
+| Funding | General taxation | Taxation or user fees |
 
 ### 9.2 Worked Example: Valuing a Public Good
 
 **Example.** A street lamp benefits 50 residents. Each resident values the lamp at $£30$. The lamp
-costs $£1\,000$ to install. Should it be provided?
+Costs $£1\,000$ to install. Should it be provided?
 
 **Answer.** Total social benefit $= 50 \times 30 = £1\,500$. Cost $= £1\,000$. Since
-$£1\,500 > £1\,000$, it is socially efficient to provide the lamp. However, if each resident
-reasons "I can benefit without paying," no one contributes and the lamp is not provided (free-rider
-problem). Government intervention (funding through taxation) is needed.
+$£1\,500 > £1\,000$It is socially efficient to provide the lamp. However, if each resident
+Reasons "I can benefit without paying," no one contributes and the lamp is not provided (free-rider
+Problem). Government intervention (funding through taxation) is needed.
 
 ### 9.3 The Samuelson Condition
 
@@ -540,9 +540,9 @@ The efficient provision of a public good requires:
 
 $$\sum_{i=1}^{n} MRS_i = MRT$$
 
-where $MRS_i$ is each individual's marginal rate of substitution between the public good and a
-private good, and $MRT$ is the marginal rate of transformation (the marginal cost of the public good
-in terms of the private good). This differs from private goods, where efficiency requires
+Where $MRS_i$ is each individual's marginal rate of substitution between the public good and a
+Private good, and $MRT$ is the marginal rate of transformation (the marginal cost of the public good
+In terms of the private good). This differs from private goods, where efficiency requires
 $MRS_i = MRT$ for each individual.
 
 ## 10. Demerit Goods and Information Asymmetry
@@ -550,19 +550,19 @@ $MRS_i = MRT$ for each individual.
 ### 10.1 Demerit Goods
 
 Demerit goods are goods whose consumption generates negative externalities or which consumers
-over-consume due to imperfect information. Unlike negative externalities (which affect third
-parties), demerit goods harm the consumer themselves.
+Over-consume due to imperfect information. Unlike negative externalities (which affect third
+Parties), demerit goods harm the consumer themselves.
 
-| Feature        | Demerit Good                                    | Good with Negative Externality       |
+| Feature | Demerit Good | Good with Negative Externality |
 | -------------- | ----------------------------------------------- | ------------------------------------ |
-| Harm           | Falls on the consumer                           | Falls on third parties               |
-| Market outcome | Over-consumption (consumers underestimate harm) | Over-production                      |
-| Examples       | Alcohol, tobacco, junk food                     | Factory pollution, second-hand smoke |
-| Policy         | Taxation, regulation, information provision     | Pigouvian tax, regulation            |
+| Harm | Falls on the consumer | Falls on third parties |
+| Market outcome | Over-consumption (consumers underestimate harm) | Over-production |
+| Examples | Alcohol, tobacco, junk food | Factory pollution, second-hand smoke |
+| Policy | Taxation, regulation, information provision | Pigouvian tax, regulation |
 
 ### 10.2 Information Asymmetry in Healthcare
 
-In healthcare markets, patients (buyers) typically have far less information than doctors (sellers).
+In healthcare markets, patients (buyers) have far less information than doctors (sellers).
 This leads to:
 
 - **Supplier-induced demand**: doctors may recommend unnecessary treatments
@@ -570,78 +570,78 @@ This leads to:
 - **Moral hazard**: insured patients over-consume healthcare
 
 Government responses: mandatory qualification standards, clinical guidelines, public provision of
-healthcare, regulation of insurance markets.
+Healthcare, regulation of insurance markets.
 
 ## 11. Government Intervention: Effectiveness Analysis
 
 ### 11.1 Comparing Policy Instruments
 
-| Policy           | Efficiency                      | Certainty of Outcome                | Administrative Cost                       | Equity                    |
+| Policy | Efficiency | Certainty of Outcome | Administrative Cost | Equity |
 | ---------------- | ------------------------------- | ----------------------------------- | ----------------------------------------- | ------------------------- |
-| Pigouvian tax    | High (internalises externality) | Uncertain (depends on elasticities) | Low                                       | Can be regressive         |
-| Regulation       | Low (inflexible)                | High (directly controls quantity)   | Medium (enforcement needed)               | Depends on design         |
-| Tradable permits | High (cost-effective)           | High (cap is fixed)                 | High (monitoring, trading infrastructure) | Permits can be auctioned  |
-| Subsidy          | High for positive externalities | Uncertain                           | Medium                                    | Pro-poor if well-targeted |
-| Direct provision | Variable                        | High                                | High (bureaucracy)                        | Can ensure access         |
+| Pigouvian tax | High (internalises externality) | Uncertain (depends on elasticities) | Low | Can be regressive |
+| Regulation | Low (inflexible) | High (directly controls quantity) | Medium (enforcement needed) | Depends on design |
+| Tradable permits | High (cost-effective) | High (cap is fixed) | High (monitoring, trading infrastructure) | Permits can be auctioned |
+| Subsidy | High for positive externalities | Uncertain | Medium | Pro-poor if well-targeted |
+| Direct provision | Variable | High | High (bureaucracy) | Can ensure access |
 
 ### 11.2 When Government Intervention Fails
 
 Government failure occurs when intervention worsens outcomes. Common examples:
 
 - **Regulatory capture**: regulators become influenced by the industry they regulate (e.g.,
-  financial regulators before the 2008 crisis)
+ financial regulators before the 2008 crisis)
 - **Information problems**: governments cannot accurately measure MEC to set the optimal tax rate
 - **Unintended consequences**: agricultural subsidies encouraging overproduction and environmental
-  damage
+ damage
 - **Political economy**: short-term electoral incentives lead to underinvestment in long-term
-  projects (e.g., infrastructure, climate mitigation)
+ projects (e.g., infrastructure, climate mitigation)
 
 ## 12. Common Pitfalls
 
 1. **Confusing demerit goods with negative externalities.** A demerit good harms the consumer; a
-   negative externality harms third parties. Alcohol is both (health harm to consumer + anti-social
-   behaviour), but the concepts are distinct.
+ negative externality harms third parties. Alcohol is both (health harm to consumer + anti-social
+ behaviour), but the concepts are distinct.
 
 2. **Assuming all market failure requires government intervention.** Private solutions exist in some
-   cases (Coase theorem, contracts, reputation mechanisms, voluntary agreements).
+ cases (Coase theorem, contracts, reputation mechanisms, voluntary agreements).
 
 3. **Ignoring the second-best problem.** If there are multiple market failures, correcting one may
-   worsen another. For example, a tax on pollution may reduce output and employment in the taxed
-   industry.
+ worsen another. For example, a tax on pollution may reduce output and employment in the taxed
+ industry.
 
 4. **Drawing DWL triangles incorrectly.** The DWL triangle is bounded by MSC, MSB (or MPB), and the
-   vertical lines at $Q^*$ and $Q_{mkt}$. Make sure you identify the correct quantities.
+ vertical lines at $Q^*$ and $Q_{mkt}$. Make sure you identify the correct quantities.
 
 5. **Confusing public goods with common resources.** Public goods are non-rivalrous and
-   non-excludable. Common resources are rivalrous and non-excludable. The free-rider problem applies
-   to public goods; the tragedy of the commons applies to common resources.
+ non-excludable. Common resources are rivalrous and non-excludable. The free-rider problem applies
+ to public goods; the tragedy of the commons applies to common resources.
 
 6. **Treating the optimal tax as easy to implement.** In practice, measuring MEC is extremely
-   difficult. The optimal tax rate is uncertain, and setting it too high creates its own deadweight
-   loss.
+ difficult. The optimal tax rate is uncertain, and setting it too high creates its own deadweight
+ loss.
 
 ## 13. Extension Problem Set
 
 **Problem 1.** A chemical plant has $MPC = 20 + 2Q$ and produces pollution with $MEC = 10 + Q$.
 Demand is $P = 120 - Q$. Calculate the market equilibrium, social optimum, DWL, and the optimal tax
-rate.
+Rate.
 
 <details>
 <summary>Hint</summary>
-$MSC = 30 + 3Q$. Market: $120 - Q = 20 + 2Q \implies Q_{mkt} = 33.3$, $P = 86.7$. Social: $120 - Q = 30 + 3Q \implies Q^* = 22.5$, $P^* = 97.5$. DWL $= \frac{1}{2}(33.3 - 22.5)(MSC(33.3) - MSB(33.3)) = \frac{1}{2}(10.8)(129.9 - 86.7) = 233$. Tax $= MEC(22.5) = 32.5$.
+$MSC = 30 + 3Q$. Market: $120 - Q = 20 + 2Q \implies Q_{mkt} = 33.3$$P = 86.7$. Social: $120 - Q = 30 + 3Q \implies Q^* = 22.5$$P^* = 97.5$. DWL $= \frac{1}{2}(33.3 - 22.5)(MSC(33.3) - MSB(33.3)) = \frac{1}{2}(10.8)(129.9 - 86.7) = 233$. Tax $= MEC(22.5) = 32.5$.
 </details>
 
 **Problem 2.** A vaccination programme has $MPB = 200 - 2Q$ and $MPC = 20 + Q$. The marginal
-external benefit is $MEB = 40 - Q$ (herd immunity effect). Calculate the market outcome, social
-optimum, and the optimal subsidy per vaccination.
+External benefit is $MEB = 40 - Q$ (herd immunity effect). Calculate the market outcome, social
+Optimum, and the optimal subsidy per vaccination.
 
 <details>
 <summary>Hint</summary>
-Market: $200 - 2Q = 20 + Q \implies Q_{mkt} = 60$. $MSB = 240 - 3Q$. Social: $240 - 3Q = 20 + Q \implies Q^* = 55$. Wait, $MSB = MPB + MEB = 200 - 2Q + 40 - Q = 240 - 3Q$. $240 - 3Q = 20 + Q \implies 220 = 4Q \implies Q^* = 55$. Subsidy $= MEB(55) = 40 - 55 = -15$. This is negative, which means $MEB$ is already declining. Let me recheck: at $Q_{mkt} = 60$, $MEB = 40 - 60 = -20$, meaning there's actually a negative externality at high vaccination rates. The optimal subsidy should be $MEB(Q^*) = 40 - 55 = -15$. A negative subsidy means a tax, which doesn't make sense. The issue is the linear $MEB$ function. In practice, $MEB$ would be positive over the relevant range.
+Market: $200 - 2Q = 20 + Q \implies Q_{mkt} = 60$. $MSB = 240 - 3Q$. Social: $240 - 3Q = 20 + Q \implies Q^* = 55$. Wait, $MSB = MPB + MEB = 200 - 2Q + 40 - Q = 240 - 3Q$. $240 - 3Q = 20 + Q \implies 220 = 4Q \implies Q^* = 55$. Subsidy $= MEB(55) = 40 - 55 = -15$. This is negative, which means $MEB$ is already declining. Let me recheck: at $Q_{mkt} = 60$$MEB = 40 - 60 = -20$Meaning there's actually a negative externality at high vaccination rates. The optimal subsidy should be $MEB(Q^*) = 40 - 55 = -15$. A negative subsidy means a tax, which doesn't make sense. The issue is the linear $MEB$ function. In practice, $MEB$ would be positive over the relevant range.
 </details>
 
 **Problem 3.** Explain why road congestion is an example of a negative externality. Using a diagram,
-show how a road toll could improve welfare.
+Show how a road toll could improve welfare.
 
 <details>
 <summary>Hint</summary>
@@ -649,7 +649,7 @@ Each additional driver imposes travel time costs on all other drivers (negative 
 </details>
 
 **Problem 4.** "Government provision of healthcare is always superior to market provision." Evaluate
-this statement using concepts of market failure and government failure.
+This statement using concepts of market failure and government failure.
 
 <details>
 <summary>Hint</summary>
@@ -657,9 +657,9 @@ For: healthcare has severe information asymmetry (patients cannot assess quality
 </details>
 
 **Problem 5.** A lake is used by 10 fishermen. Each fisherman can catch $Q$ fish per day. The total
-sustainable catch is $1\,000$ fish per day. If each fisherman maximises their own catch, they each
-catch 150 fish, depleting the stock. Explain this as a tragedy of the commons and propose a
-solution.
+Sustainable catch is $1\,000$ fish per day. If each fisherman maximises their own catch, they each
+Catch 150 fish, depleting the stock. Explain this as a tragedy of the commons and propose a
+Solution.
 
 <details>
 <summary>Hint</summary>
@@ -667,7 +667,7 @@ Each fisherman receives the full benefit of an additional fish caught (private b
 </details>
 
 **Problem 6.** Compare and contrast tradable pollution permits with a Pigouvian tax as methods of
-reducing pollution. Under what circumstances is each policy preferable?
+Reducing pollution. Under what circumstances is each policy preferable?
 
 <details>
 <summary>Hint</summary>
@@ -703,7 +703,7 @@ The subsidy created a DWL triangle where $MSC > MSB$ at the subsidised output le
 - Long run: landlords reduce supply by converting rental properties to owner-occupied units, Airbnbs, or commercial use. New construction of rental housing declines. Housing quality deteriorates because landlords have less revenue to invest in maintenance.
 - Result: shortage of rental housing, reduced quality, and reduced total surplus.
 
-**Calculation.** Suppose demand is $Q_D = 1000 - 5P$ and supply is $Q_S = 200 + 5P$. Equilibrium: $1000 - 5P = 200 + 5P \Rightarrow P^* = 80$, $Q^* = 600$. If rent control sets $P_c = 50$: $Q_D = 750$, $Q_S = 450$. Shortage $= 300$ units. DWL $= \frac{1}{2}(80 - 50)(600 - 450) = \frac{1}{2}(30)(150) = 2\,250$.
+**Calculation.** Suppose demand is $Q_D = 1000 - 5P$ and supply is $Q_S = 200 + 5P$. Equilibrium: $1000 - 5P = 200 + 5P \Rightarrow P^* = 80$$Q^* = 600$. If rent control sets $P_c = 50$: $Q_D = 750$$Q_S = 450$. Shortage $= 300$ units. DWL $= \frac{1}{2}(80 - 50)(600 - 450) = \frac{1}{2}(30)(150) = 2\,250$.
 
 ### 14.3 Worked Example: Cost-Benefit Analysis of a Road Project
 
@@ -719,11 +719,11 @@ A government is considering building a new motorway with the following costs and
 | Increased pollution (PV) | -120 |
 | Noise costs (PV) | -80 |
 
-**Answer.** Total cost $= 500 + 100 + 200 = £800$m. Total benefit $= 800 + 150 = £950$m. Total external cost $= 120 + 80 = £200$m.
+**Answer.** Total cost $= 500 + 100 + 200 = £800$M. Total benefit $= 800 + 150 = £950$M. Total external cost $= 120 + 80 = £200$M.
 
-Net Social Benefit $= 950 - 800 - 200 = -£50$m.
+Net Social Benefit $= 950 - 800 - 200 = -£50$M.
 
-The project has a negative net social benefit when environmental costs are included. Without environmental costs, NSB $= +£150$m. This illustrates how ignoring externalities in CBA can lead to government failure -- approving projects that reduce overall welfare.
+The project has a negative net social benefit when environmental costs are included. Without environmental costs, NSB $= +£150$M. This illustrates how ignoring externalities in CBA can lead to government failure -- approving projects that reduce overall welfare.
 
 **Sensitivity analysis.** If the discount rate increases, future benefits (time savings, accident reduction) are discounted more heavily, making the project even less attractive. If pollution costs are underestimated (e.g., by using a low social cost of carbon), the project may appear beneficial when it is not.
 
@@ -734,7 +734,7 @@ The project has a negative net social benefit when environmental costs are inclu
 **Example.** A power plant has $MPC = 30 + 0.5Q$ and generates pollution with $MEC = 0.2Q^2$ (increasing marginal damage). Demand is $P = 150 - Q$.
 
 **Step 1: Market equilibrium.**
-$150 - Q = 30 + 0.5Q \Rightarrow 120 = 1.5Q \Rightarrow Q_{mkt} = 80$, $P_{mkt} = 70$.
+$150 - Q = 30 + 0.5Q \Rightarrow 120 = 1.5Q \Rightarrow Q_{mkt} = 80$$P_{mkt} = 70$.
 
 **Step 2: Social optimum.**
 $MSC = 30 + 0.5Q + 0.2Q^2$.
@@ -762,11 +762,11 @@ The DWL is approximately GBP 31,371 (the absolute value).
 **Example.** Education has demand $MPB = 200 - 2Q$ and supply $MPC = 40 + 2Q$. The marginal external benefit is constant at $MEB = 30$ (spillover benefits to society from a more educated population).
 
 **Step 1: Market equilibrium.**
-$200 - 2Q = 40 + 2Q \Rightarrow 160 = 4Q \Rightarrow Q_{mkt} = 40$, $P_{mkt} = 120$.
+$200 - 2Q = 40 + 2Q \Rightarrow 160 = 4Q \Rightarrow Q_{mkt} = 40$$P_{mkt} = 120$.
 
 **Step 2: Social optimum.**
 $MSB = MPB + MEB = 200 - 2Q + 30 = 230 - 2Q$.
-$230 - 2Q = 40 + 2Q \Rightarrow 190 = 4Q \Rightarrow Q^* = 47.5$, $P^* = 135$.
+$230 - 2Q = 40 + 2Q \Rightarrow 190 = 4Q \Rightarrow Q^* = 47.5$$P^* = 135$.
 
 The market under-produces by $47.5 - 40 = 7.5$ units.
 
@@ -788,7 +788,7 @@ $\frac◆LB◆d\pi◆RB◆◆LB◆dL◆RB◆ = 4800 - 100L = 0 \Rightarrow L^* =
 
 **Open access equilibrium (each boat enters until average revenue equals cost):**
 Average catch per boat $= \frac{T}{L} = 100 - L$.
-Entry continues until $p(100 - L) = 200$, i.e., $50(100 - L) = 200 \Rightarrow 5000 - 50L = 200 \Rightarrow L_{OA} = 96$ boats.
+Entry continues until $p(100 - L) = 200$I.e., $50(100 - L) = 200 \Rightarrow 5000 - 50L = 200 \Rightarrow L_{OA} = 96$ boats.
 
 At $L_{OA} = 96$: total catch $= 100(96) - 96^2 = 9600 - 9216 = 384$. Each boat catches $384/96 = 4$ units. Revenue per boat $= 200 = cost$. Profit $= 0$.
 
@@ -840,7 +840,7 @@ This illustrates the enormous waste generated by the tragedy of the commons.
 <details>
 <summary>Full Mark Scheme</summary>
 **Agree:**
-- Theory of Pigouvian taxation: tax equal to MEC achieves the socially optimal quantity, eliminating DWL. Mathematical proof: at $t = MEC(Q^*)$, the firm's private cost equals MSC, so $MPB = MSC$ at the new equilibrium.
+- Theory of Pigouvian taxation: tax equal to MEC achieves the socially optimal quantity, eliminating DWL. Mathematical proof: at $t = MEC(Q^*)$The firm's private cost equals MSC, so $MPB = MSC$ at the new equilibrium.
 - Public goods: government provision overcomes the free-rider problem. Without government, public goods would be under-provided or not provided at all.
 - Information asymmetry: government regulation (product standards, mandatory labelling) corrects market failures like adverse selection (Akerlof's lemons).
 - Merit goods: government provision of education and healthcare corrects under-consumption due to imperfect information.
@@ -868,23 +868,23 @@ This illustrates the enormous waste generated by the tragedy of the commons.
 
 **Question 3 (12 marks).** Using the data below, calculate the deadweight loss of the free market outcome and the optimal Pigouvian tax rate.
 
-A factory producing steel has $MPC = 10 + Q$, faces demand $P = 80 - Q$, and generates pollution with $MEC = 5 + 0.5Q$.
+A factory producing steel has $MPC = 10 + Q$Faces demand $P = 80 - Q$And generates pollution with $MEC = 5 + 0.5Q$.
 
 <details>
 <summary>Full Mark Scheme</summary>
 
 **Step 1: Market equilibrium (2 marks).**
-$MPB = MPC$: $80 - Q = 10 + Q \Rightarrow 2Q = 70 \Rightarrow Q_{mkt} = 35$, $P_{mkt} = 45$. (1 mark for quantity, 1 mark for price.)
+$MPB = MPC$: $80 - Q = 10 + Q \Rightarrow 2Q = 70 \Rightarrow Q_{mkt} = 35$$P_{mkt} = 45$. (1 mark for quantity, 1 mark for price.)
 
 **Step 2: Social optimum (2 marks).**
 $MSC = MPC + MEC = 10 + Q + 5 + 0.5Q = 15 + 1.5Q$.
-$MSB = MSC$: $80 - Q = 15 + 1.5Q \Rightarrow 2.5Q = 65 \Rightarrow Q^* = 26$, $P^* = 54$. (1 mark for quantity, 1 mark for price.)
+$MSB = MSC$: $80 - Q = 15 + 1.5Q \Rightarrow 2.5Q = 65 \Rightarrow Q^* = 26$$P^* = 54$. (1 mark for quantity, 1 mark for price.)
 
 **Step 3: Optimal tax (2 marks).**
 $t^* = MEC(Q^*) = 5 + 0.5(26) = 5 + 13 = 18$. (2 marks.)
 
 **Step 4: DWL calculation (4 marks).**
-At $Q_{mkt} = 35$: $MSC = 15 + 1.5(35) = 67.5$, $MSB = 80 - 35 = 45$.
+At $Q_{mkt} = 35$: $MSC = 15 + 1.5(35) = 67.5$$MSB = 80 - 35 = 45$.
 At $Q^* = 26$: $MSC = MSB = 54$.
 $\mathrm{DWL} = \int_{26}^{35} [(80 - Q) - (15 + 1.5Q)]\,dQ = \int_{26}^{35} [65 - 2.5Q]\,dQ$
 $= [65Q - 1.25Q^2]_{26}^{35}$
@@ -902,7 +902,7 @@ Sketch the diagram showing MPB, MPC, MSC, and the DWL triangle. Label the market
 
 2. **Assuming the optimal tax equals the MEC at the market quantity.** The optimal Pigouvian tax equals the MEC at the SOCIAL OPTIMUM quantity ($Q^*$), not at the market quantity ($Q_{mkt}$). Since MEC may be increasing, $MEC(Q^*) < MEC(Q_{mkt})$. Setting the tax equal to $MEC(Q_{mkt})$ would over-correct, creating a new DWL from excessive reduction.
 
-3. **Confusing the Coase theorem with government intervention.** The Coase theorem states that private bargaining can achieve efficiency WITHOUT government intervention, provided property rights are well-defined and transaction costs are low. It is an argument AGAINST government intervention in some cases, not for it.
+3. **Confusing the Coase theorem with government intervention.** The Coase theorem states that private bargaining can achieve efficiency WITHOUT government intervention, provided property rights are well-defined and transaction costs are low. It is an argument AGAINST government intervention , not for it.
 
 4. **Stating that all market failure requires government intervention.** Some market failures are self-correcting (reputation mechanisms address information asymmetry in repeat transactions), minor (small externalities may not justify the administrative cost of correction), or better addressed through private solutions (contracts, voluntary agreements).
 
@@ -910,7 +910,7 @@ Sketch the diagram showing MPB, MPC, MSC, and the DWL triangle. Label the market
 
 6. **Treating the free-rider problem as the only reason public goods are under-provided.** Even if the free-rider problem were solved (e.g., through voluntary contributions or altruism), public goods may still be under-provided because individuals undervalue the benefits they receive from public goods (they do not account for the benefit to others when making their contribution decision -- the "voluntary contribution game" result).
 
-7. **Misapplying the Samuelson condition.** The Samuelson condition states that the efficient provision of a public good requires $\sum MRS_i = MRT$, NOT $MRS_i = MRT$ for each individual. This is because the good is non-rivalrous: one person's consumption does not reduce the amount available to others. Confusing these conditions leads to the error of treating public goods as if they were private goods.
+7. **Misapplying the Samuelson condition.** The Samuelson condition states that the efficient provision of a public good requires $\sum MRS_i = MRT$NOT $MRS_i = MRT$ for each individual. This is because the good is non-rivalrous: one person's consumption does not reduce the amount available to others. Confusing these conditions leads to the error of treating public goods as if they were private goods.
 
 ## 18. Extended Worked Examples
 
@@ -918,7 +918,7 @@ Sketch the diagram showing MPB, MPC, MSC, and the DWL triangle. Label the market
 
 **Example.** A lake supports fishing. The fish population grows according to $F_{t+1} = F_t + rF_t(1 - F_t/K) - H_t$ where $F_t$ is the fish stock, $r = 0.5$ is the growth rate, $K = 1000$ is carrying capacity, and $H_t$ is the harvest.
 
-**Open access (no regulation):** Each fisher earns profit $\pi = pH - cE$ where $p = 2$, $c = 1$ per unit of effort, and $E$ is effort. Harvest $H = qEF$ where $q = 0.01$ (catchability).
+**Open access (no regulation):** Each fisher earns profit $\pi = pH - cE$ where $p = 2$$c = 1$ per unit of effort, and $E$ is effort. Harvest $H = qEF$ where $q = 0.01$ (catchability).
 
 The open-access equilibrium occurs where profit per unit of effort is zero: $pqF = c \Rightarrow 2(0.01)F = 1 \Rightarrow F = 50$.
 
@@ -1010,13 +1010,13 @@ This analysis shows that the carbon tax generates a net social benefit, even aft
 **Coase theorem (property rights assigned to the factory):**
 The fishery can offer to pay the factory to reduce output. The fishery's willingness to pay equals the damage avoided: up to GBP 200 per unit of reduction.
 
-The factory will reduce output if the payment exceeds its lost profit. Lost profit per unit at $Q = 400$: $MB - MC = 100 - 100 = 0$... wait, at $Q = 400$, $MB = 100 = MC$, so profit on the marginal unit is zero.
+The factory will reduce output if the payment exceeds its lost profit. Lost profit per unit at $Q = 400$: $MB - MC = 100 - 100 = 0$... Wait, at $Q = 400$$MB = 100 = MC$So profit on the marginal unit is zero.
 
 Let me reconsider. The factory's profit per unit at output $Q$ is $MB(Q) - MC = (500 - Q) - 100 = 400 - Q$.
 
 At $Q = 400$: profit per unit $= 0$. The factory would accept any positive payment to reduce the 400th unit (since it earns zero profit on it).
 
-At $Q = 300$: profit per unit $= 100$. The fishery would pay up to 200 to avoid this unit. Since $200 > 100$, the factory accepts and reduces to 299.
+At $Q = 300$: profit per unit $= 100$. The fishery would pay up to 200 to avoid this unit. Since $200 > 100$The factory accepts and reduces to 299.
 
 At $Q = 200$: profit per unit $= 200$. The fishery would pay up to 200. The factory is indifferent ($200 = 200$). Reduction occurs.
 
@@ -1047,12 +1047,12 @@ $P = 50 - 10 = 40$. This is more years of education than typical (20 years would
 
 Let $Q$ be units of education (courses, modules). $P = 50 - 0.5Q$. $MC = 20 + Q$.
 
-$50 - 0.5Q = 20 + Q \Rightarrow Q = 20$, $P = 40$.
+$50 - 0.5Q = 20 + Q \Rightarrow Q = 20$$P = 40$.
 
 **Social optimum:** The marginal social benefit of education exceeds the private marginal benefit due to positive externalities (reduced crime, higher civic participation, better health outcomes, technology spillovers). Let $MEB = 10$ (constant).
 
 $MSB = MPB + MEB = 60 - 0.5Q$. $MSC = 20 + Q$.
-$60 - 0.5Q = 20 + Q \Rightarrow Q = 26.67$, $P_{MSB} = 60 - 13.33 = 46.67$.
+$60 - 0.5Q = 20 + Q \Rightarrow Q = 26.67$$P_{MSB} = 60 - 13.33 = 46.67$.
 
 The socially optimal quantity is 26.67 (33.3% more than the private market provides).
 
@@ -1096,3 +1096,7 @@ Welfare gain: $533.4 - 500 = 33.4$. This is the DWL of the under-provision that 
 - Warranties and guarantees: firms signal product quality by offering free repairs and money-back guarantees.
 - Professional regulation: doctors, lawyers, and accountants are licensed by professional bodies (GMC, SRA, ICAEW), which enforce minimum quality standards.
 - Franchising: brand reputation reduces information asymmetry (consumers trust McDonald's regardless of the local franchisee because the brand enforces standards).
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

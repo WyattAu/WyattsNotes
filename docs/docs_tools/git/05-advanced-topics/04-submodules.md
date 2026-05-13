@@ -87,7 +87,7 @@ $ git submodule update --init --recursive
 
 :::warning
 
-If you clone without `--recurse-submodules`, your submodule directories will be **empty**. Running `git submodule update --init` fills them. This is a common source of confusion for new developers.
+If you clone without `--recurse-submodules`Your submodule directories will be **empty**. Running `git submodule update --init` fills them. This is a common source of confusion for new developers.
 
 :::
 
@@ -129,13 +129,13 @@ Submodules are notoriously difficult to work with. The core problem is that the 
 
 ### Common Pitfalls
 
-| Pitfall               | Description                                                                  | Solution                                                       |
+| Pitfall | Description | Solution |
 | --------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| **Detached HEAD**     | `git submodule update` checks out the recorded commit in detached HEAD state | Create a branch: `cd src/lib && git checkout -b tracking main` |
-| **Stale submodules**  | After `git pull` on the parent, submodules may point to old commits          | Always run `git submodule update` after pulling                |
-| **Forgotten commits** | Changes in a submodule are not visible to the parent until committed         | `git add src/lib && git commit` in the parent                  |
-| **Nested submodules** | Submodules within submodules add complexity                                  | Use `--recursive` flag everywhere                              |
-| **Large clones**      | Many submodules significantly increase clone time                            | Use `--depth=1 --shallow-submodules`                           |
+| **Detached HEAD** | `git submodule update` checks out the recorded commit in detached HEAD state | Create a branch: `cd src/lib && git checkout -b tracking main` |
+| **Stale submodules** | After `git pull` on the parent, submodules may point to old commits | Always run `git submodule update` after pulling |
+| **Forgotten commits** | Changes in a submodule are not visible to the parent until committed | `git add src/lib && git commit` in the parent |
+| **Nested submodules** | Submodules within submodules add complexity | Use `--recursive` flag everywhere |
+| **Large clones** | Many submodules significantly increase clone time | Use `--depth=1 --shallow-submodules` |
 
 ## Alternatives to Submodules
 
@@ -154,27 +154,27 @@ $ git subtree pull --prefix=src/lib https://github.com/org/library.git main --sq
 $ git subtree push --prefix=src/lib https://github.com/org/library.git main
 ```
 
-| Feature                 | Submodule                           | Subtree                         |
+| Feature | Submodule | Subtree |
 | ----------------------- | ----------------------------------- | ------------------------------- |
-| Repository independence | Full independence                   | History merged into parent      |
-| Clone complexity        | Requires `--recurse-submodules`     | Single repository               |
-| Commit granularity      | Separate commits per submodule      | Single commit per subtree merge |
-| History preservation    | Preserves full submodule history    | Can squash with `--squash`      |
-| Size                    | Minimal (only references)           | Larger (full file history)      |
-| Branch management       | Each submodule has its own branches | No separate branches            |
+| Repository independence | Full independence | History merged into parent |
+| Clone complexity | Requires `--recurse-submodules` | Single repository |
+| Commit granularity | Separate commits per submodule | Single commit per subtree merge |
+| History preservation | Preserves full submodule history | Can squash with `--squash` |
+| Size | Minimal (only references) | Larger (full file history) |
+| Branch management | Each submodule has its own branches | No separate branches |
 
 ### Package Managers
 
 For most dependency management, a language-specific package manager is preferable to submodules:
 
-| Language | Tool            |
+| Language | Tool |
 | -------- | --------------- |
-| C/C++    | Conan, vcpkg    |
-| Rust     | Cargo           |
-| Node.js  | npm, yarn, pnpm |
-| Python   | pip, poetry     |
-| Java     | Maven, Gradle   |
-| Go       | Go modules      |
+| C/C++ | Conan, vcpkg |
+| Rust | Cargo |
+| Node.js | npm, yarn, pnpm |
+| Python | pip, poetry |
+| Java | Maven, Gradle |
+| Go | Go modules |
 
 Use submodules only when you need:
 
@@ -201,3 +201,15 @@ submodule-update:
     git add src/lib
     git commit -m "Update submodules"
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

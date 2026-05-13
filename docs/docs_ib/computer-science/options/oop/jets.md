@@ -10,18 +10,18 @@ description: "Rigorous IB computer science notes covering JETS. Includes definit
 # Java Examination Tool Sebset (JETS)
 
 The IB does not expect a specific standard of Java to be taught but a subset of Java called JETS for
-students to present OOP concepts
+Students to present OOP concepts
 
 ## Conventions
 
 ### Styles
 
-| Token               | Conventions        |
+| Token | Conventions |
 | ------------------- | ------------------ |
-| Classes identifier  | `CapitalCamelCase` |
-| Variable identifier | `camelCase`        |
-| Method identifier   | `camelCase`        |
-| Constant identifier | `UPPER_CASE`       |
+| Classes identifier | `CapitalCamelCase` |
+| Variable identifier | `camelCase` |
+| Method identifier | `camelCase` |
+| Constant identifier | `UPPER_CASE` |
 
 ### Ordering
 
@@ -31,36 +31,36 @@ students to present OOP concepts
 ## Operators Permitted
 
 - Arithmetic
-  - `+`
-  - `-`
-  - `*`
-  - `/`
-  - `%`
+ - `+`
+ - `-`
+ - `*`
+ - `/`
+ - `%`
 - Relational
-  - `==`
-  - `!=`
-  - `>`
-  - `<`
-  - `$\ge$`
-  - `$\le$`
+ - `==`
+ - `!=`
+ - `>`
+ - `<`
+ - `$\ge$`
+ - `$\le$`
 - Boolean
-  - `!`
-  - `&&`
-  - `||`
+ - `!`
+ - `&&`
+ - `||`
 
 ## Types
 
 ### Primitive Data Types
 
 Primitive data types are data types other data types are constructed with, these are normally
-built-in as standard data types of programming languages, in JETS, these are: | type declaration |
-size | range | Standard | Default init value | | :---------------- |
+Built-in as standard data types of programming languages, in JETS, these are: | type declaration |
+Size | range | Standard | Default init value | | :---------------- |
 :---------------------------------------: | :--------------------------------------------------: |
 :------------------------------------------------------: | :------------------: | | `byte` | 8 bits
 | $-128\le n \le 127$ | signed | `0` | | `int` | 32 bits | $-2^{31}\le n \le 2^{31}-1$ | signed |
 `0` | | `long` | 64 bits | $-2^{63}\le n \le 2^{63}-1$ | signed | `0` | | `double` | 64 bits |
 $-1.8\times 10^{308} \le n \le 1.8\times 10^{308}$ | IEEE 754-1984 (double precision binary
-floating-point) | `0.0d` | | `char` | 16 bits | $0 \le n \le 2^{16} -1$ | UTF-16 | `'\u0000'` `'a'`
+Floating-point) | `0.0d` | | `char` | 16 bits | $0 \le n \le 2^{16} -1$ | UTF-16 | `'\u0000'` `'a'`
 | | `boolean` | 1 bit (logical) 1 byte (in-practice) | `false` |
 
 ```java
@@ -120,7 +120,7 @@ JETS is designed to demonstrate these core principles.
 ### Encapsulation
 
 Encapsulation is the bundling of data (attributes) and methods that operate on that data within a
-single unit (class), while restricting direct access to some of the object's components.
+Single unit (class), while restricting direct access to some of the object's components.
 
 - **Private attributes** can only be accessed through public methods (getters and setters).
 - This protects the internal state of an object from unauthorised or accidental modification.
@@ -154,7 +154,7 @@ class Student {
 ```
 
 **Exam tip:** In IB exams, encapsulation questions often ask you to identify whether attributes
-should be `private` and explain why. Always justify with data protection/validation.
+Should be `private` and explain why. Always justify with data protection/validation.
 
 ### Inheritance
 
@@ -203,15 +203,15 @@ class Dog extends Animal {
 - `super()` calls the parent class constructor.
 - The subclass inherits all `public` and `protected` members of the superclass.
 - `private` members are not directly accessible but can be accessed through inherited public
-  methods.
+ methods.
 
 ### Polymorphism
 
 Polymorphism means "many forms." It allows objects of different classes to be treated through a
-common interface.
+Common interface.
 
 **Method overriding:** A subclass provides a specific implementation of a method already defined in
-its superclass.
+Its superclass.
 
 ```java
 class Shape {
@@ -248,7 +248,7 @@ class Rectangle extends Shape {
 ```
 
 **Method overloading:** Multiple methods with the same name but different parameter lists within the
-same class.
+Same class.
 
 ```java
 class Calculator {
@@ -303,20 +303,20 @@ class Car extends Vehicle {
 ## UML Class Diagrams
 
 UML (Unified Modelling Language) class diagrams are a standard way to represent the structure of OOP
-programs. IB exams frequently include UML diagrams and ask you to interpret or construct them.
+Programs. IB exams frequently include UML diagrams and ask you to interpret or construct them.
 
 ### Key UML Notation
 
-| Element         | Symbol                                          | Meaning                                    |
+| Element | Symbol | Meaning |
 | :-------------- | :---------------------------------------------- | :----------------------------------------- |
-| Class           | Rectangle with three sections                   | Class name, attributes, methods            |
-| `-` (private)   | Minus sign before attribute/method              | Only accessible within the class           |
-| `+` (public)    | Plus sign before attribute/method               | Accessible from any class                  |
-| `#` (protected) | Hash sign before attribute/method               | Accessible within the class and subclasses |
-| Inheritance     | Solid line with hollow arrow pointing to parent | "Is-a" relationship                        |
-| Association     | Solid line with arrow                           | "Has-a" relationship                       |
-| Aggregation     | Solid line with hollow diamond                  | "Has-a" (weak ownership)                   |
-| Composition     | Solid line with filled diamond                  | "Has-a" (strong ownership)                 |
+| Class | Rectangle with three sections | Class name, attributes, methods |
+| `-` (private) | Minus sign before attribute/method | Only accessible within the class |
+| `+` (public) | Plus sign before attribute/method | Accessible from any class |
+| `#` (protected) | Hash sign before attribute/method | Accessible within the class and subclasses |
+| Inheritance | Solid line with hollow arrow pointing to parent | "Is-a" relationship |
+| Association | Solid line with arrow | "Has-a" relationship |
+| Aggregation | Solid line with hollow diamond | "Has-a" (weak ownership) |
+| Composition | Solid line with filled diamond | "Has-a" (strong ownership) |
 
 ### Example UML Diagram (Text Representation)
 
@@ -347,7 +347,7 @@ programs. IB exams frequently include UML diagrams and ask you to interpret or c
 ## Design Patterns (IB Context)
 
 Design patterns are reusable solutions to common programming problems. While the IB does not require
-deep knowledge of design patterns, understanding these concepts helps with exam questions.
+Deep knowledge of design patterns, understanding these concepts helps with exam questions.
 
 ### Singleton Pattern
 
@@ -378,8 +378,8 @@ class DatabaseConnection {
 ### Observer Pattern
 
 A one-to-many dependency: when one object (subject) changes state, all its dependents (observers)
-are notified and updated automatically. This is relevant to event-driven programming in the IB
-syllabus.
+Are notified and updated automatically. This is relevant to event-driven programming in the IB
+Syllabus.
 
 ---
 
@@ -515,7 +515,7 @@ int binarySearch(int[] arr, int target) {
 ### Bubble Sort
 
 Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the
-wrong order.
+Wrong order.
 
 ```java
 void bubbleSort(int[] arr) {
@@ -562,23 +562,35 @@ void selectionSort(int[] arr) {
 
 ## IB Exam Tips for JETS
 
-1. **Know the access modifiers:** Understand when to use `public`, `private`, and `protected`. Most
-   attributes should be `private`; most methods should be `public`.
+1. **Know the access modifiers:** Understand when to use `public``private`And `protected`. Most
+ attributes should be `private`; most methods should be `public`.
 
 2. **Constructors come first:** In JETS convention, constructors are placed as the first method in a
-   class.
+ class.
 
 3. **Use `this` keyword:** When a parameter has the same name as an attribute, use `this.attribute`
-   to distinguish them.
+ to distinguish them.
 
 4. **Read UML diagrams carefully:** Identify the attributes (with types and access modifiers),
-   methods, and relationships between classes.
+ methods, and relationships between classes.
 
 5. **Practise tracing code:** IB exams often include code tracing questions where you must determine
-   the output of a given program. Step through the code line by line.
+ the output of a given program. Step through the code line by line.
 
 6. **Understand polymorphism:** Be prepared to explain how method overriding works and why it is
-   useful.
+ useful.
 
 7. **Be careful with array indices:** Arrays in Java are zero-indexed. `arr.length` gives the number
-   of elements, but the last valid index is `arr.length - 1`.
+ of elements, but the last valid index is `arr.length - 1`.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

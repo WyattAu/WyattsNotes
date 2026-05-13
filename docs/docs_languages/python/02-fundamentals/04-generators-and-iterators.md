@@ -14,9 +14,9 @@ sidebar_position: 4
 ### The Two Methods
 
 Python's iteration mechanism is built on a two-method protocol defined by the data model. Any object
-that implements `__iter__` and `__next__` is an iterator. The CPython implementation checks for
-these methods via `PyIter_Check()` and `tp_iternext` slots -- the interpreter itself does not care
-whether the object is a built-in type or a user-defined class, only that it satisfies the protocol.
+That implements `__iter__` and `__next__` is an iterator. The CPython implementation checks for
+These methods via `PyIter_Check()` and `tp_iternext` slots -- the interpreter itself does not care
+Whether the object is a built-in type or a user-defined class, only that it satisfies the protocol.
 
 ```python
 class CountUp:
@@ -39,8 +39,8 @@ class CountUp:
 
 `__iter__` must return the iterator object itself. `__next__` must return the next value or raise
 `StopIteration` to signal exhaustion. There is no other sentinel value, no null convention, no
-optional return. The exception is the signal -- this is a deliberate design choice that avoids
-ambiguity between "the next value is `None`" and "there are no more values."
+Optional return. The exception is the signal -- this is a deliberate design choice that avoids
+Ambiguity between "the next value is `None`" and "there are no more values."
 
 ### How `for` Loops Consume the Protocol
 
@@ -51,7 +51,7 @@ for item in iterable:
     process(item)
 ```
 
-is mechanically equivalent to:
+Is mechanically equivalent to:
 
 ```python
 iterator = iter(iterable)
@@ -64,24 +64,24 @@ while True:
 ```
 
 This is not an approximation or simplification -- it is the literal translation that CPython
-performs. The bytecode for a `for` loop consists of `GET_ITER` (calls `__iter__`), followed by a
-loop of `FOR_ITER` (calls `__next__`) and `JUMP_BACK`. When `StopIteration` is raised, `FOR_ITER`
-pops the iterator and jumps to the block after the loop.
+Performs. The bytecode for a `for` loop consists of `GET_ITER` (calls `__iter__`), followed by a
+Loop of `FOR_ITER` (calls `__next__`) and `JUMP_BACK`. When `StopIteration` is raised, `FOR_ITER`
+Pops the iterator and jumps to the block after the loop.
 
 The implications are significant:
 
 1. **The `for` loop calls `iter()` on the target**, not `__iter__` directly. `iter()` tries
-   `__iter__` first, then falls back to `__getitem__` with sequential integer indices starting
-   from 0. This is why legacy sequence types that only define `__getitem__` still work in `for`
-   loops.
+ `__iter__` first, then falls back to `__getitem__` with sequential integer indices starting
+ from 0. This is why legacy sequence types that only define `__getitem__` still work in `for`
+ loops.
 
 2. **`StopIteration` is caught at the `for` level**, not inside your code. If you manually call
-   `next()` inside a loop body and catch `StopIteration`, you will swallow the loop's own
-   termination signal. This is a real bug pattern -- see Common Pitfalls.
+ `next()` inside a loop body and catch `StopIteration`You will swallow the loop's own
+ termination signal. This is a real bug pattern -- see Common Pitfalls.
 
 3. **`break` does not call `close()` on the iterator.** Only `generator.close()` exists for
-   generators; class-based iterators have no cleanup hook. This matters when iterators hold
-   resources (file handles, network connections).
+ generators; class-based iterators have no cleanup hook. This matters when iterators hold
+ resources (file handles, network connections).
 
 ### `iter()` Built-in: Two Forms
 
@@ -101,8 +101,8 @@ die_rolls = iter(lambda: random.randint(1, 6), 1)  # stops when a 1 is rolled
 ```
 
 The two-argument form is less well-known but genuinely useful for reading from file descriptors,
-polling APIs, or any situation where you have a function that produces values until some condition
-is met. The callable must take zero arguments.
+Polling APIs, or any situation where you have a function that produces values until some condition
+Is met. The callable must take zero arguments.
 
 ```python
 import os
@@ -119,7 +119,7 @@ for line in lines:
 ### Iterables vs Iterators: The Critical Distinction
 
 An **iterable** is any object that implements `__iter__` returning a _new_ iterator each time it is
-called. An **iterator** is any object that implements both `__iter__` (returning `self`) and
+Called. An **iterator** is any object that implements both `__iter__` (returning `self`) and
 `__next__`. Every iterator is an iterable, but not every iterable is an iterator.
 
 ```python
@@ -154,13 +154,13 @@ class FibonacciIterator:
 ```
 
 The reason `__iter__` on an iterator returns `self` is not arbitrary. The `for` loop calls `iter()`
-on the object to get an iterator. If the object is already an iterator, `iter()` should return it
-unchanged so that iteration resumes from the current position rather than starting over. If
+On the object to get an iterator. If the object is already an iterator, `iter()` should return it
+Unchanged so that iteration resumes from the current position rather than starting over. If
 `__iter__` on an iterator returned a _new_ iterator, the `for` loop would never make progress -- it
-would get a fresh iterator on each iteration attempt.
+Would get a fresh iterator on each iteration attempt.
 
 For iterables (non-iterators), `__iter__` must return a _new_ iterator each time so that multiple
-independent loops over the same object work correctly:
+Independent loops over the same object work correctly:
 
 ```python
 fib = FibonacciIterable(5)
@@ -174,11 +174,11 @@ for x in fib:
 ```
 
 If `FibonacciIterable.__iter__` returned a shared mutable iterator, the second loop would produce
-nothing because the first loop already consumed it.
+Nothing because the first loop already consumed it.
 
 **Rule of thumb:** if your class maintains iteration state (index, cursor, counter), split it into
-an iterable (the factory) and an iterator (the stateful cursor). If you need a one-shot iterator, a
-generator function is almost always simpler.
+An iterable (the factory) and an iterator (the stateful cursor). If you need a one-shot iterator, a
+Generator function is almost always simpler.
 
 ## Implementing Custom Iterators
 
@@ -225,16 +225,16 @@ for f in FloatRange(0.0, 1.0, 0.2):
 ```
 
 Note the floating-point issue: due to IEEE 754 accumulation error, the last value may not land
-exactly on the stop boundary. This is why `range()` only supports integers. For production use,
-consider using `count` and `takewhile` from `itertools`, or the `more_itertools.numeric_range`
-function.
+Exactly on the stop boundary. This is why `range()` only supports integers. For production use,
+Consider using `count` and `takewhile` from `itertools`Or the `more_itertools.numeric_range`
+Function.
 
 ### The StopIteration Contract
 
-`StopIteration` inherits directly from `Exception`, not `BaseException`. This means it can be caught
-by bare `except Exception:` clauses, which is a source of subtle bugs. PEP 479 (Python 3.7+)
-addresses the related issue of `StopIteration` leaking from generator internals -- now, if a
-generator raises `StopIteration`, it is automatically converted to `RuntimeError`.
+`StopIteration` inherits directly from `Exception`Not `BaseException`. This means it can be caught
+By bare `except Exception:` clauses, which is a source of subtle bugs. PEP 479 (Python 3.7+)
+Addresses the related issue of `StopIteration` leaking from generator internals -- now, if a
+Generator raises `StopIteration`It is automatically converted to `RuntimeError`.
 
 ```python
 def broken_generator():
@@ -244,11 +244,11 @@ def broken_generator():
 ```
 
 The lesson: never raise `StopIteration` manually in generator functions. Let the `return` statement
-or function exit handle it.
+Or function exit handle it.
 
 ### Iterator Exhaustion
 
-Once an iterator raises `StopIteration`, it is exhausted. Subsequent calls to `next()` will raise
+Once an iterator raises `StopIteration`It is exhausted. Subsequent calls to `next()` will raise
 `StopIteration` again immediately:
 
 ```python
@@ -259,18 +259,18 @@ next(it)   # raises StopIteration
 ```
 
 There is no `reset()` method on iterators. This is by design -- iterators model a single pass over a
-sequence. If you need to iterate multiple times, either: (a) re-create the iterable (call `__iter__`
-again on the factory), (b) materialize the values into a list/tuple, or (c) use `itertools.tee()` to
-create independent copies (at the cost of memory proportional to the distance between the slowest
-and fastest consumer).
+Sequence. If you need to iterate multiple times, either: (a) re-create the iterable (call `__iter__`
+Again on the factory), (b) materialize the values into a list/tuple, or (c) use `itertools.tee()` to
+Create independent copies (at the cost of memory proportional to the distance between the slowest
+And fastest consumer).
 
 ## Generator Functions
 
 ### The `yield` Keyword
 
 A generator function is any function that contains the `yield` keyword in its body. When called, it
-does not execute the function body. Instead, it returns a **generator object** -- a specific type of
-iterator that suspends and resumes execution.
+Does not execute the function body. Instead, it returns a **generator object** -- a specific type of
+Iterator that suspends and resumes execution.
 
 ```python
 def count_to(n: int):
@@ -310,30 +310,30 @@ next(gen)
 ```
 
 The execution model is critical to understand. The generator function's body is compiled into a
-frame object (a code execution frame, the same mechanism Python uses for function call stacks). When
+Frame object (a code execution frame, the same mechanism Python uses for function call stacks). When
 `next(gen)` is called, CPython resumes execution of the frame from where it last suspended, executes
-until it hits the next `yield`, saves the frame state (local variables, instruction pointer, stack),
-and returns the yielded value. This is not threading or coroutines in the async sense -- it is
-cooperative multitasking within a single thread, controlled entirely by explicit `next()` calls.
+Until it hits the next `yield`Saves the frame state (local variables, instruction pointer, stack),
+And returns the yielded value. This is not threading or coroutines in the async sense -- it is
+Cooperative multitasking within a single thread, controlled entirely by explicit `next()` calls.
 
 ### How Generators Differ from Regular Functions
 
-| Property                   | Regular Function        | Generator Function           |
+| Property | Regular Function | Generator Function |
 | -------------------------- | ----------------------- | ---------------------------- |
-| Returns                    | A value (or `None`)     | A generator object           |
-| Body execution             | Runs to completion      | Runs lazily, paused at yield |
-| State                      | Lost on return          | Preserved between yields     |
-| Multiple return values     | Use tuple/list          | Multiple `yield` statements  |
-| Memory for large sequences | O(n) in caller's memory | O(1) -- one value at a time  |
+| Returns | A value (or `None`) | A generator object |
+| Body execution | Runs to completion | Runs lazily, paused at yield |
+| State | Lost on return | Preserved between yields |
+| Multiple return values | Use tuple/list | Multiple `yield` statements |
+| Memory for large sequences | O(n) in caller's memory | O(1) -- one value at a time |
 
 The generator object itself is lightweight -- it holds a reference to the code object and the
-current frame. The memory cost is proportional to the number of local variables in the generator
-function, not the number of values it will eventually produce.
+Current frame. The memory cost is proportional to the number of local variables in the generator
+Function, not the number of values it will eventually produce.
 
 ### `return` in Generators
 
 A generator function can contain a `return` statement. Unlike regular functions, `return` in a
-generator cannot return a value to the caller (in the usual sense). Instead, it causes
+Generator cannot return a value to the caller (in the usual sense). Instead, it causes
 `StopIteration` to be raised, and the return value is stored as the `.value` attribute of the
 `StopIteration` exception:
 
@@ -357,15 +357,15 @@ except StopIteration as e:
 ```
 
 In practice, the return value from a generator is rarely used directly by callers. Its primary
-purpose is to communicate a result when using `yield from` for delegation -- the sub-generator's
-return value becomes the value of the `yield from` expression in the delegating generator.
+Purpose is to communicate a result when using `yield from` for delegation -- the sub-generator's
+Return value becomes the value of the `yield from` expression in the delegating generator.
 
 ## Generator Expressions
 
 ### Syntax and Semantics
 
 A generator expression has the same syntax as a list comprehension, but uses parentheses instead of
-square brackets:
+Square brackets:
 
 ```python
 # List comprehension -- materializes the entire list in memory
@@ -379,14 +379,14 @@ squares_gen = (x ** 2 for x in range(1_000_000))
 
 The generator expression compiles to a code object that is a first-class iterator. It supports
 `__iter__` (returning self) and `__next__` (producing the next value or raising `StopIteration`). It
-does not support indexing, `len()`, or multiple passes.
+Does not support indexing, `len()`Or multiple passes.
 
 ### When to Use Which
 
 Use a generator expression when:
 
 - The sequence is large or infinite
-- You only need to consume the values once (e.g., passing to `sum()`, `max()`, `any()`)
+- You only need to consume the values once (e.g., passing to `sum()``max()``any()`)
 - You are chaining transformations (the intermediate results don't need to exist simultaneously)
 
 Use a list comprehension when:
@@ -423,8 +423,8 @@ sum(x ** 2 for x in range(100))
 ```
 
 This is a syntactic convenience, not a semantic difference. The parser recognizes that a single
-generator expression argument does not need an additional layer of parentheses. Note that this only
-applies when the generator expression is the _only_ argument:
+Generator expression argument does not need an additional layer of parentheses. Note that this only
+Applies when the generator expression is the _only_ argument:
 
 ```python
 # Two arguments -- parentheses required around the generator expression
@@ -455,12 +455,12 @@ def chain(*iterables):
 ```
 
 Both produce the same sequence of values, but `yield from` does more than the manual loop. It
-establishes a **transparent, bidirectional channel** between the caller and the sub-generator.
+Establishes a **transparent, bidirectional channel** between the caller and the sub-generator.
 
 ### The Full Semantics of `yield from`
 
 The expression `result = yield from subgen()` is roughly equivalent to the following (from PEP 380,
-the formal specification):
+The formal specification):
 
 ```python
 _i = iter(subgen())
@@ -500,19 +500,19 @@ result = _r
 What this means in practice:
 
 1. **Every `yield` from the sub-generator is transparently passed to the caller.** The delegating
-   generator acts as a pipe.
+ generator acts as a pipe.
 
-2. **`send()` values are forwarded to the sub-generator.** If the caller does `gen.send(value)`,
-   that value goes directly to the sub-generator's current `yield` expression, not to the delegating
-   generator.
+2. **`send()` values are forwarded to the sub-generator.** If the caller does `gen.send(value)`
+ that value goes directly to the sub-generator's current `yield` expression, not to the delegating
+ generator.
 
 3. **`throw()` exceptions are forwarded to the sub-generator.** If the caller does
-   `gen.throw(ValueError)`, the sub-generator receives the exception at its current yield point.
+ `gen.throw(ValueError)`The sub-generator receives the exception at its current yield point.
 
 4. **`close()` is forwarded.** Calling `gen.close()` calls `subgen.close()`.
 
 5. **The return value of the sub-generator becomes the value of the `yield from` expression.** This
-   is the mechanism for getting a result back from a delegated computation.
+ is the mechanism for getting a result back from a delegated computation.
 
 ### Practical Example: Recursive Tree Traversal
 
@@ -551,9 +551,9 @@ print(list(inorder_traversal(root)))  # [1, 2, 3, 4, 5, 6, 7]
 ```
 
 Each recursive call to `inorder_traversal` creates a new generator object, and `yield from`
-delegates to it. The call stack depth is bounded by the tree depth, but the number of generator
-objects in existence at any time equals the tree depth (not the total number of nodes). Each
-generator object holds only its own local state.
+Delegates to it. The call stack depth is bounded by the tree depth, but the number of generator
+Objects in existence at any time equals the tree depth (not the total number of nodes). Each
+Generator object holds only its own local state.
 
 ### Flattening Nested Iterables
 
@@ -576,18 +576,18 @@ print(list(flatten(data)))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ### Coroutine Heritage
 
 Generators in Python predate `async`/`await` by over a decade. Before PEP 492 (Python 3.5),
-generators were the only mechanism for coroutine-like behavior. The `send()`, `throw()`, and
+Generators were the only mechanism for coroutine-like behavior. The `send()``throw()`And
 `close()` methods on generator objects exist because generators were originally designed to serve as
-coroutines.
+Coroutines.
 
 While modern Python uses `async def` for asynchronous coroutines, the generator-based coroutine
-protocol is still fully functional and has legitimate use cases in synchronous code: state machines,
-pipeline processing, and dataflow programming.
+Protocol is still fully functional and has legitimate use cases in synchronous code: state machines,
+Pipeline processing, and dataflow programming.
 
 ### `send(value)`: Injecting Values into a Generator
 
 When `yield` is used as an expression (on the right side of an assignment), it receives the value
-passed to `send()`:
+Passed to `send()`:
 
 ```python
 def accumulator():
@@ -619,16 +619,16 @@ except StopIteration as e:
 ```
 
 The "priming" step is mandatory. When a generator is first created, execution begins at the top of
-the function body and runs until the first `yield`. At that point, the generator is suspended and
-the yielded value is returned. You cannot `send()` a non-`None` value until the generator has
-reached its first `yield` because there is no `yield` expression to receive the value. This is why
+The function body and runs until the first `yield`. At that point, the generator is suspended and
+The yielded value is returned. You cannot `send()` a non-`None` value until the generator has
+Reached its first `yield` because there is no `yield` expression to receive the value. This is why
 `next(gen)` is equivalent to `gen.send(None)` -- both advance the generator to the first yield.
 
 ### `throw()`: Injecting Exceptions
 
 `gen.throw(type, value=None, traceback=None)` causes the `yield` expression inside the generator to
-raise the specified exception. This allows the caller to signal error conditions or state
-transitions to the generator:
+Raise the specified exception. This allows the caller to signal error conditions or state
+Transitions to the generator:
 
 ```python
 def stateful_processor():
@@ -670,9 +670,9 @@ print(result)           # ['c']
 ### `close()` for Cleanup
 
 `gen.close()` causes a `GeneratorExit` exception to be raised at the current `yield` point. If the
-generator catches `GeneratorExit`, it must re-raise it (or raise `StopIteration`) -- it is not
-allowed to yield another value. This is the mechanism that `with` statements and `for` loops use to
-clean up generators when they are abandoned:
+Generator catches `GeneratorExit`It must re-raise it (or raise `StopIteration`) -- it is not
+Allowed to yield another value. This is the mechanism that `with` statements and `for` loops use to
+Clean up generators when they are abandoned:
 
 ```python
 def resource_holder():
@@ -692,13 +692,13 @@ gen.close()     # "Resource released"
 ```
 
 The `finally` block is guaranteed to run whether the generator is closed, exhausted, or garbage
-collected (assuming the garbage collector eventually runs). This is the recommended pattern for
-resource management in generators.
+Collected (assuming the garbage collector eventually runs). This is the recommended pattern for
+Resource management in generators.
 
 ### The `@generator` Decorator Pattern
 
 To avoid the priming boilerplate (calling `next()` before `send()`), a common pattern is a decorator
-that auto-primes the generator:
+That auto-primes the generator:
 
 ```python
 from functools import wraps
@@ -741,7 +741,7 @@ print(avg.send(30))  # 20.0
 
 The core advantage of generators is that they decouple the _description_ of a sequence from its
 _materialization_. You can define a sequence with infinite extent and only realize as many elements
-as needed:
+As needed:
 
 ```python
 def natural_numbers():
@@ -784,15 +784,15 @@ print(list(islice(primes(), 10)))            # [2, 3, 5, 7, 11, 13, 17, 19, 23, 
 
 The prime sieve above is an incremental version of the Sieve of Eratosthenes, sometimes called the
 "incremental sieve" or "O'Neill sieve." It maintains a dictionary of known composite numbers and
-their generating primes, avoiding the memory cost of a full boolean sieve array. Its time complexity
-is approximately $O(n \log \log n)$ for generating all primes up to $n$, matching the classical
-sieve, but its constant factor is higher due to dictionary overhead.
+Their generating primes, avoiding the memory cost of a full boolean sieve array. Its time complexity
+Is approximately $O(n \log \log n)$ for generating all primes up to $n$Matching the classical
+Sieve, but its constant factor is higher due to dictionary overhead.
 
 ### Pipeline Processing (ETL)
 
-Generators compose naturally into pipelines. Each stage is a generator that consumes from its input
-and produces values for its output. Memory usage is bounded by the size of one item at each stage,
-not the total size of the data:
+Generators compose into pipelines. Each stage is a generator that consumes from its input
+And produces values for its output. Memory usage is bounded by the size of one item at each stage,
+Not the total size of the data:
 
 ```python
 import re
@@ -840,43 +840,43 @@ print(pipeline)
 ```
 
 This pipeline processes a multi-gigabyte log file using constant memory (plus the final dictionary
-of distinct error paths). Each line flows through the pipeline one at a time -- there is no
-intermediate list of all error lines, no intermediate list of all paths. This is the fundamental
-benefit of lazy evaluation: **composition without materialization**.
+Of distinct error paths). Each line flows through the pipeline one at a time -- there is no
+Intermediate list of all error lines, no intermediate list of all paths. This is the fundamental
+Benefit of lazy evaluation: **composition without materialization**.
 
 ### When Laziness Matters
 
 - **Large files.** A 100 GB CSV file cannot be read into memory. A generator that reads one row at a
-  time can process it on a machine with 8 GB of RAM.
+ time can process it on a machine with 8 GB of RAM.
 - **Network streams.** Data arriving over a socket or HTTP connection is inherently streaming.
-  Generators model this naturally.
+ Generators model this .
 - **Combinatorial explosion.** The set of all subsets of a 30-element set has $2^{30} \approx 10^9$
-  elements. You cannot materialize it, but a generator can produce and consume subsets one at a
-  time.
+ elements. You cannot materialize it, but a generator can produce and consume subsets one at a
+ time.
 - **Early termination.** `any()` and `all()` short-circuit. `next()` stops after one element. If you
-  are searching for the first matching element in a large sequence, a generator lets you stop as
-  soon as you find it.
+ are searching for the first matching element in a large sequence, a generator lets you stop as
+ soon as you find it.
 
 ### Tradeoffs: Lazy vs Eager
 
-| Aspect          | Lazy (Generator)                | Eager (List)                    |
+| Aspect | Lazy (Generator) | Eager (List) |
 | --------------- | ------------------------------- | ------------------------------- |
-| Memory          | O(1) per item                   | O(n) total                      |
-| Startup cost    | Negligible                      | Full materialization before use |
-| Random access   | Not supported                   | O(1) indexing                   |
-| Length          | Unknown (no `len()`)            | O(1) via `len()`                |
-| Multiple passes | Requires re-creation or `tee()` | Unlimited                       |
-| Debugging       | Harder -- state is implicit     | Easier -- data is inspectable   |
-| Exceptions      | Delayed until consumption       | Immediate during construction   |
+| Memory | O(1) per item | O(n) total |
+| Startup cost | Negligible | Full materialization before use |
+| Random access | Not supported | O(1) indexing |
+| Length | Unknown (no `len()`) | O(1) via `len()` |
+| Multiple passes | Requires re-creation or `tee()` | Unlimited |
+| Debugging | Harder -- state is implicit | Easier -- data is inspectable |
+| Exceptions | Delayed until consumption | Immediate during construction |
 
 ## Generator-Based State Machines
 
 ### Yield as a State Transition
 
-A generator function naturally models a state machine because `yield` points are suspension points
-where the generator waits for input. The function's local variables serve as the state, and each
+A generator function models a state machine because `yield` points are suspension points
+Where the generator waits for input. The function's local variables serve as the state, and each
 `yield` expression receives the next input event. The control flow between yields defines the
-transitions.
+Transitions.
 
 ### Example: A Simple Protocol Parser
 
@@ -993,9 +993,9 @@ print(tok.send("count = 42"))
 ```
 
 The tokenizer accumulates tokens into a buffer and yields them as the caller requests. In a real
-implementation, you would yield tokens as they are found rather than buffering, but this pattern
-demonstrates the core idea: the generator's position in the function body encodes the current state
-of the parsing process.
+Implementation, you would yield tokens as they are found rather than buffering, but this pattern
+Demonstrates the core idea: the generator's position in the function body encodes the current state
+Of the parsing process.
 
 ## itertools Consumption Patterns
 
@@ -1043,7 +1043,7 @@ sorted(gen)   # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ### `collections.deque` with `maxlen`
 
 A `deque` with a `maxlen` is an efficient way to peek at or consume a fixed number of items from a
-generator without materializing the entire sequence:
+Generator without materializing the entire sequence:
 
 ```python
 from collections import deque
@@ -1104,24 +1104,24 @@ print(list(dropwhile(lambda x: x < 5, gen)))  # [5, 6, 7, 8, 9, 10, 11, 12, 13, 
 Ask these questions in order:
 
 1. **Is the sequence finite and small?** If yes, a list is simpler and more debuggable. Don't
-   over-engineer with generators for a 10-element sequence.
+ over-engineer with generators for a 10-element sequence.
 
 2. **Do you need random access (`seq[i]`)?** If yes, you must use a list (or `tuple`). Generators do
-   not support indexing.
+ not support indexing.
 
 3. **Do you need `len()`?** If yes, you must use a list. Generators have unknown length.
 
 4. **Do you need to iterate multiple times?** If yes, use a list. Re-creating a generator requires
-   re-executing the function that produced it, which may have side effects or be expensive.
+ re-executing the function that produced it, which may have side effects or be expensive.
 
 5. **Is the sequence large or potentially infinite?** If yes, you must use a generator. A list would
-   exhaust memory.
+ exhaust memory.
 
 6. **Are you chaining transformations?** If yes, generators compose better. Each stage produces
-   values on demand, so intermediate results are never all in memory simultaneously.
+ values on demand, so intermediate results are never all in memory simultaneously.
 
 7. **Do you need to inspect intermediate results for debugging?** If yes, a list lets you print or
-   log the entire intermediate state. With generators, you must materialize at each stage.
+ log the entire intermediate state. With generators, you must materialize at each stage.
 
 ### Converting Between Them
 
@@ -1140,9 +1140,9 @@ gen = (x for x in range(5))
 t = tuple(gen)  # (0, 1, 2, 3, 4)
 ```
 
-`iter(lst)` returns a `list_iterator`, which is not a generator object but satisfies the same
-iterator protocol. The distinction is rarely important in practice, but it matters for `isinstance`
-checks: `isinstance(iter([]), collections.abc.Generator)` returns `False`, while
+`iter(lst)` returns a `list_iterator`Which is not a generator object but satisfies the same
+Iterator protocol. The distinction is rarely important in practice, but it matters for `isinstance`
+Checks: `isinstance(iter([]), collections.abc.Generator)` returns `False`While
 `isinstance((x for x in []), collections.abc.Generator)` returns `True`.
 
 ### When Generators Are Inappropriate
@@ -1205,8 +1205,8 @@ print(list(gen2))  # [0, 1, 2, 3, 4]
 
 ### `return value` Semantics in Generators
 
-The return value of a generator is stored in `StopIteration.value`, which is inaccessible through
-normal iteration:
+The return value of a generator is stored in `StopIteration.value`Which is inaccessible through
+Normal iteration:
 
 ```python
 def compute():
@@ -1228,13 +1228,13 @@ list(delegator())  # prints "Sub-generator returned: done", returns [None]
 ```
 
 This is not a bug -- it is by design. The `for` loop and `list()` constructor only care about the
-yielded values. If you need the return value, use `yield from` (which captures it) or catch
+Yielded values. If you need the return value, use `yield from` (which captures it) or catch
 `StopIteration` explicitly.
 
 ### Using Generators Where Lists Are Needed
 
 Functions that inspect their arguments for length, indexing, or multiple passes will fail silently
-or raise confusing errors when given generators:
+Or raise confusing errors when given generators:
 
 ```python
 def process_items(items):
@@ -1258,7 +1258,7 @@ def process_items(items):
 
 When using `yield from` to delegate, `send()` calls from the outer caller go to the
 **sub-generator**, not to the delegating generator. This is the transparent forwarding behavior, but
-it can be surprising:
+It can be surprising:
 
 ```python
 def inner():
@@ -1277,15 +1277,15 @@ print(gen.send("hello"))  # "inner: received hello"  -- went to inner, NOT outer
 print(next(gen))          # "outer: inner returned None"  (inner's return value was None)
 ```
 
-The `send("hello")` value is received by the `yield` expression inside `inner()`, not by the
+The `send("hello")` value is received by the `yield` expression inside `inner()`Not by the
 `yield from` in `outer()`. The delegating generator is completely transparent during the delegation
 -- it suspends and lets the sub-generator interact directly with the caller.
 
 ### Generator Expression Variable Scope
 
 In Python 2, the loop variable in a list comprehension or generator expression leaked into the
-enclosing scope. This was fixed in Python 3, where both list comprehensions and generator
-expressions have their own scope:
+Enclosing scope. This was fixed in Python 3, where both list comprehensions and generator
+Expressions have their own scope:
 
 ```python
 # Python 3: the variable 'x' does NOT leak
@@ -1310,14 +1310,14 @@ print([f() for f in funcs])  # [0, 1, 2, 3, 4]
 ```
 
 This is not specific to generator expressions -- it affects list comprehensions too. The issue is
-that closures capture variables by reference, not by value. The lambda closes over `x`, and by the
-time any lambda is called, the loop has finished and `x` is 4.
+That closures capture variables by reference, not by value. The lambda closes over `x`And by the
+Time any lambda is called, the loop has finished and `x` is 4.
 
 ### Uncaught Exceptions and Generator Cleanup
 
 If an exception propagates out of a generator (other than `StopIteration` and `GeneratorExit`), the
-generator's `finally` blocks still execute, but any cleanup code that depends on the generator's
-internal state may be in an inconsistent condition:
+Generator's `finally` blocks still execute, but any cleanup code that depends on the generator's
+Internal state may be in an inconsistent condition:
 
 ```python
 import contextlib
@@ -1359,9 +1359,17 @@ def safe_file_reader(path):
 ```
 
 **Always use `with` statements inside generators for resource management.** The `finally` block runs
-on generator close, but relying on the consumer to call `close()` is fragile. Wrapping the resource
-in a `with` statement ensures cleanup happens at the right time regardless of how the generator is
-consumed.
+On generator close, but relying on the consumer to call `close()` is fragile. Wrapping the resource
+In a `with` statement ensures cleanup happens at the right time regardless of how the generator is
+Consumed.
 
-For more on `contextlib.contextmanager`, see
+For more on `contextlib.contextmanager`See
 [Essential Modules](../05-standard-library/01-essential-modules.md).
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

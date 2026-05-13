@@ -27,7 +27,7 @@ Large-scale maps (e.g., 1:10 000) show a small area in greater detail. Small-sca
 
 ### Contour Interpretation
 
-Contours are lines on a map joining points of equal elevation above a stated datum (usually mean sea level). The vertical spacing between contours is the contour interval (typically 10 m or 20 m on 1:50 000 maps).
+Contours are lines on a map joining points of equal elevation above a stated datum ( mean sea level). The vertical spacing between contours is the contour interval ( 10 m or 20 m on 1:50 000 maps).
 
 Key principles:
 
@@ -68,7 +68,7 @@ Secondary data is data that has been collected by someone else for another purpo
 
 ## Data Presentation
 
-Effective data presentation communicates patterns, relationships, and anomalies clearly and efficiently. The choice of presentation method depends on the type of data and the purpose of the analysis.
+Effective data presentation communicates patterns, relationships, and anomalies and efficiently. The choice of presentation method depends on the type of data and the purpose of the analysis.
 
 ### Graphs
 
@@ -89,7 +89,7 @@ Effective data presentation communicates patterns, relationships, and anomalies 
 Geographic data is often best presented on maps. Types include:
 
 - **Choropleth maps:** areas shaded or coloured according to the value of a variable (e.g., population density by country). Require a classified colour scheme (e.g., quartiles, equal intervals, natural breaks). Best for showing spatial variation in ratio or interval data.
-- **Proportional symbol maps:** symbols (typically circles) whose size is proportional to the value of a variable at a specific location. Best for showing absolute quantities at point locations.
+- **Proportional symbol maps:** symbols ( circles) whose size is proportional to the value of a variable at a specific location. Best for showing absolute quantities at point locations.
 - **Isoline maps:** lines joining points of equal value (e.g., isotherms for temperature, isohyets for rainfall, isobars for atmospheric pressure). Best for showing continuous spatial variation.
 - **Dot maps:** each dot represents a specified number of a phenomenon. Best for showing the spatial distribution of discrete events (e.g., population distribution).
 - **Flow maps:** lines (often with arrows) whose width is proportional to the magnitude of flow between two locations. Best for showing migration, trade, or transport flows.
@@ -101,7 +101,7 @@ Annotated photographs and field sketches are effective for showing geographic fe
 <details>
 <summary>Common Pitfalls: Misleading Data Presentation</summary>
 
-Examiners penalise misleading data presentation. Common errors include: (1) truncating the vertical axis of a bar or line graph, exaggerating differences between categories; (2) using unequal class intervals in choropleth maps without clearly indicating the class boundaries; (3) using 3D pie charts or bar charts, which distort proportions; (4) failing to label axes, provide a title, or include a legend. Always follow conventions: label axes with both the variable name and units; provide a clear, descriptive title; include a legend or key; and use an appropriate scale.
+Examiners penalise misleading data presentation. Common errors include: (1) truncating the vertical axis of a bar or line graph, exaggerating differences between categories; (2) using unequal class intervals in choropleth maps without indicating the class boundaries; (3) using 3D pie charts or bar charts, which distort proportions; (4) failing to label axes, provide a title, or include a legend. Always follow conventions: label axes with both the variable name and units; provide a clear, descriptive title; include a legend or key; and use an appropriate scale.
 
 </details>
 
@@ -125,7 +125,7 @@ Examiners penalise misleading data presentation. Common errors include: (1) trun
 
 $$s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n - 1}}$$
 
-where $s$ is the sample standard deviation, $x_i$ are individual data points, $\bar{x}$ is the sample mean, and $n$ is the sample size. A low standard deviation indicates that data points are clustered close to the mean; a high standard deviation indicates that data points are widely dispersed. Standard deviation is only appropriate for normally distributed data and is sensitive to outliers.
+Where $s$ is the sample standard deviation, $x_i$ are individual data points, $\bar{x}$ is the sample mean, and $n$ is the sample size. A low standard deviation indicates that data points are clustered close to the mean; a high standard deviation indicates that data points are widely dispersed. Standard deviation is only appropriate for normally distributed data and is sensitive to outliers.
 
 ### Inferential Statistics
 
@@ -135,21 +135,21 @@ Inferential statistics allow researchers to draw conclusions about a population 
 
 $$r_s = 1 - \frac{6 \sum{d_i^2}}{n(n^2 - 1)}$$
 
-where $d_i$ is the difference between the ranks of the two variables for the $i$-th observation, and $n$ is the sample size. The value of $r_s$ ranges from $-1$ (perfect negative correlation) to $+1$ (perfect positive correlation), with 0 indicating no correlation.
+Where $d_i$ is the difference between the ranks of the two variables for the $i$-th observation, and $n$ is the sample size. The value of $r_s$ ranges from $-1$ (perfect negative correlation) to $+1$ (perfect positive correlation), with 0 indicating no correlation.
 
-To determine whether the correlation is statistically significant, compare $r_s$ to the critical value from a Spearman's rank table at the appropriate significance level (typically $p = 0.05$, i.e., a 5% probability that the observed correlation occurred by chance) and degrees of freedom ($n - 2$). If $|r_s|$ exceeds the critical value, the null hypothesis (that there is no significant correlation) is rejected.
+To determine whether the correlation is statistically significant, compare $r_s$ to the critical value from a Spearman's rank table at the appropriate significance level ( $p = 0.05$I.e., a 5% probability that the observed correlation occurred by chance) and degrees of freedom ($n - 2$). If $|r_s|$ exceeds the critical value, the null hypothesis (that there is no significant correlation) is rejected.
 
 **Chi-squared ($\chi^2$) test.** A non-parametric test that determines whether observed frequencies in a contingency table differ significantly from expected frequencies (which would occur if there were no association between the variables).
 
 $$\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}$$
 
-where $O_i$ is the observed frequency and $E_i$ is the expected frequency for each cell. The expected frequency for each cell is:
+Where $O_i$ is the observed frequency and $E_i$ is the expected frequency for each cell. The expected frequency for each cell is:
 
 $$E_i = \frac{(\mathrm{row\ total}) \times (\mathrm{column\ total})}{\mathrm{grand\ total}}$$
 
-Compare the calculated $\chi^2$ value to the critical value from a chi-squared table at the appropriate degrees of freedom ($\mathrm{df} = (r - 1)(c - 1)$, where $r$ is the number of rows and $c$ is the number of columns) and significance level (typically $p = 0.05$). If the calculated value exceeds the critical value, the null hypothesis is rejected, indicating a statistically significant association between the variables.
+Compare the calculated $\chi^2$ value to the critical value from a chi-squared table at the appropriate degrees of freedom ($\mathrm{df} = (r - 1)(c - 1)$Where $r$ is the number of rows and $c$ is the number of columns) and significance level ( $p = 0.05$). If the calculated value exceeds the critical value, the null hypothesis is rejected, indicating a statistically significant association between the variables.
 
-**Conditions for validity:** the chi-squared test requires that (1) data are in the form of frequencies (not percentages or proportions); (2) expected frequencies in each cell are at least 5 (if any $E_i \lt 5$, combine categories or use Fisher's exact test); (3) observations are independent.
+**Conditions for validity:** the chi-squared test requires that (1) data are in the form of frequencies (not percentages or proportions); (2) expected frequencies in each cell are at least 5 (if any $E_i \lt 5$Combine categories or use Fisher's exact test); (3) observations are independent.
 
 **Mann-Whitney U test.** A non-parametric test that determines whether two independent samples come from the same population. It is the non-parametric equivalent of the independent samples t-test and is used when data are ordinal or when the assumption of normality is not met.
 
@@ -159,7 +159,7 @@ $$U_1 = n_1 n_2 + \frac{n_1(n_1 + 1)}{2} - R_1$$
 
 $$U_2 = n_1 n_2 + \frac{n_2(n_2 + 1)}{2} - R_2$$
 
-where $n_1$ and $n_2$ are the sample sizes, and $R_1$ and $R_2$ are the sum of ranks for each sample. The test uses the smaller of $U_1$ and $U_2$. Compare this value to the critical value at the appropriate significance level. If $U$ is less than or equal to the critical value, the null hypothesis (that the two samples come from the same population) is rejected.
+Where $n_1$ and $n_2$ are the sample sizes, and $R_1$ and $R_2$ are the sum of ranks for each sample. The test uses the smaller of $U_1$ and $U_2$. Compare this value to the critical value at the appropriate significance level. If $U$ is less than or equal to the critical value, the null hypothesis (that the two samples come from the same population) is rejected.
 
 <details>
 <summary>Common Pitfalls: Choosing the Right Statistical Test</summary>
@@ -171,7 +171,7 @@ Selecting the wrong statistical test is a common source of lost marks. The choic
 - **Association between two categorical variables:** chi-squared test
 - **Difference between more than two groups:** Kruskal-Wallis test (non-parametric) or one-way ANOVA (parametric)
 
-Always state the null hypothesis, calculate the test statistic, compare it to the critical value, and state the conclusion in terms of the original research question. Do not simply state "the test is significant" without explaining what this means geographically.
+Always state the null hypothesis, calculate the test statistic, compare it to the critical value, and state the conclusion in terms of the original research question. Do not state "the test is significant" without explaining what this means geographically.
 
 </details>
 
@@ -253,14 +253,14 @@ Students often conflate GIS with digital mapping. While GIS can produce maps, it
 
 ### Principles
 
-Remote sensing is the acquisition of information about Earth's surface without physical contact, typically using sensors mounted on satellites or aircraft. Sensors detect electromagnetic radiation (visible light, infrared, microwave) reflected or emitted by Earth's surface and atmosphere.
+Remote sensing is the acquisition of information about Earth's surface without physical contact, using sensors mounted on satellites or aircraft. Sensors detect electromagnetic radiation (visible light, infrared, microwave) reflected or emitted by Earth's surface and atmosphere.
 
 ### Key Concepts
 
-- **Spatial resolution:** the size of the smallest feature that can be distinguished on an image, typically expressed as the ground area represented by a single pixel (e.g., 10 m for Sentinel-2, 30 m for Landsat 8, 0.3 m for commercial high-resolution satellites such as WorldView).
+- **Spatial resolution:** the size of the smallest feature that can be distinguished on an image, expressed as the ground area represented by a single pixel (e.g., 10 m for Sentinel-2, 30 m for Landsat 8, 0.3 m for commercial high-resolution satellites such as WorldView).
 - **Temporal resolution:** how frequently a satellite revisits the same location (e.g., Landsat revisits every 16 days; Sentinel-2 revisits every 5 days at the equator).
 - **Spectral resolution:** the number and width of wavelength bands that a sensor records. Multispectral sensors record several discrete bands (e.g., Landsat 8 records 11 bands spanning visible, near-infrared, shortwave infrared, and thermal infrared). Hyperspectral sensors record hundreds of narrow bands, providing detailed spectral signatures that can be used to identify specific materials (e.g., mineral types, crop species).
-- **Radiometric resolution:** the sensitivity of the sensor to differences in signal intensity, typically expressed as the number of bits per pixel (e.g., 8-bit sensors distinguish 256 brightness levels; 12-bit sensors distinguish 4096 levels).
+- **Radiometric resolution:** the sensitivity of the sensor to differences in signal intensity, expressed as the number of bits per pixel (e.g., 8-bit sensors distinguish 256 brightness levels; 12-bit sensors distinguish 4096 levels).
 
 ### Applications
 
@@ -271,7 +271,7 @@ Remote sensing is the acquisition of information about Earth's surface without p
 | Flood monitoring | Sentinel-1 (SAR) | Mapping flood extent using synthetic aperture radar, which penetrates cloud cover |
 | Sea surface temperature | MODIS, NOAA AVHRR | Monitoring ocean currents, upwelling, coral bleaching |
 | Glacier monitoring | Landsat, ASTER | Tracking glacier extent, mass balance, and retreat rates |
-| Air quality | Sentinel-5P (TROPOMI) | Monitoring atmospheric concentrations of $\mathrm{NO_2}$, $\mathrm{SO_2}$, $\mathrm{O_3}$, and particulate matter |
+| Air quality | Sentinel-5P (TROPOMI) | Monitoring atmospheric concentrations of $\mathrm{NO_2}$$\mathrm{SO_2}$$\mathrm{O_3}$And particulate matter |
 
 ### Normalised Difference Vegetation Index (NDVI)
 
@@ -280,3 +280,15 @@ NDVI is a widely used indicator of vegetation density and health, calculated fro
 $$\mathrm{NDVI} = \frac{\mathrm{NIR} - \mathrm{RED}}{\mathrm{NIR} + \mathrm{RED}}$$
 
 Healthy vegetation strongly reflects near-infrared light and absorbs red light (for photosynthesis), yielding NDVI values close to $+1$. Bare soil, rock, and built-up surfaces yield NDVI values close to $0$. Water bodies yield negative NDVI values. NDVI is used extensively in monitoring agricultural productivity, drought conditions, and deforestation.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

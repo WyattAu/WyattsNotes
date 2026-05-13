@@ -7,27 +7,27 @@ slug: dp-patterns
 ## Pattern Classification
 
 Recognising which DP pattern applies to a problem is the key skill. This section provides a decision
-framework.
+Framework.
 
 ### Decision Tree
 
-| Signal                                | Pattern             | Example                      |
+| Signal | Pattern | Example |
 | ------------------------------------- | ------------------- | ---------------------------- |
-| Choose items with capacity constraint | Knapsack            | 0/1 knapsack, subset sum     |
-| Optimise over intervals/substrings    | Interval DP         | Matrix chain, burst balloons |
-| Problem on a tree structure           | Tree DP             | Diameter, independent set    |
-| Small set of items (n &lt;= 20)       | Bitmask DP          | TSP, assignment              |
-| Count numbers with digit properties   | Digit DP            | Numbers with no '4' and '7'  |
-| Optimise over subsequences/strings    | String DP           | Edit distance, LCS           |
-| Two players taking turns              | Game theory DP      | Nim, coin game               |
-| Greedy seems to work                  | Greedy-reducible DP | Activity selection           |
+| Choose items with capacity constraint | Knapsack | 0/1 knapsack, subset sum |
+| Optimise over intervals/substrings | Interval DP | Matrix chain, burst balloons |
+| Problem on a tree structure | Tree DP | Diameter, independent set |
+| Small set of items (n &lt;= 20) | Bitmask DP | TSP, assignment |
+| Count numbers with digit properties | Digit DP | Numbers with no '4' and '7' |
+| Optimise over subsequences/strings | String DP | Edit distance, LCS |
+| Two players taking turns | Game theory DP | Nim, coin game |
+| Greedy seems to work | Greedy-reducible DP | Activity selection |
 
 ## Knapsack Family
 
 ### 0/1 Knapsack
 
-Given $n$ items with weights $w_i$ and values $v_i$, and a knapsack of capacity $W$, maximise the
-total value of items selected. Each item can be taken at most once.
+Given $n$ items with weights $w_i$ and values $v_i$And a knapsack of capacity $W$Maximise the
+Total value of items selected. Each item can be taken at most once.
 
 $$dp[i][c] = \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) \quad \mathrm{if {} c \ge w_i$$
 
@@ -52,8 +52,8 @@ def knapsack_01(weights, values, capacity):
 :::info
 
 The 1D optimisation iterates capacity in reverse to prevent using the same item twice. If you
-iterate forward, `dp[c - w]` may already include item $i$, violating the 0/1 constraint. This is the
-most common bug in knapsack implementations.
+Iterate forward, `dp[c - w]` may already include item $i$Violating the 0/1 constraint. This is the
+Most common bug in knapsack implementations.
 
 :::
 
@@ -159,12 +159,12 @@ def knapsack_2d(weights, volumes, values, max_weight, max_volume):
 ## Interval DP
 
 Interval DP solves problems on contiguous subarrays/substrings by considering all possible
-partitions of an interval.
+Partitions of an interval.
 
 ### Matrix Chain Multiplication
 
-Given matrices $A_1, A_2, \ldots, A_n$ where $A_i$ has dimensions $p_{i-1} \times p_i$, find the
-parenthesisation that minimises the total number of scalar multiplications.
+Given matrices $A_1, A_2, \ldots, A_n$ where $A_i$ has dimensions $p_{i-1} \times p_i$Find the
+Parenthesisation that minimises the total number of scalar multiplications.
 
 $$dp[i][j] = \min_{i \le k \lt j} (dp[i][k] + dp[k+1][j] + p_{i-1} \cdot p_k \cdot p_j)$$
 
@@ -199,9 +199,9 @@ def matrix_chain_order(p):
 
 ### Burst Balloons
 
-Given `nums`, where `nums[i]` is the value of the $i$-th balloon, bursting balloon $i$ yields
+Given `nums`Where `nums[i]` is the value of the $i$-th balloon, bursting balloon $i$ yields
 `nums[left] * nums[i] * nums[right]` coins where `left` and `right` are the adjacent unburst
-balloons. Maximise total coins.
+Balloons. Maximise total coins.
 
 ```python
 def burst_balloons(nums):
@@ -230,8 +230,8 @@ def burst_balloons(nums):
 
 ### Minimum Cost to Merge Stones
 
-Given $n$ piles of stones and an integer $k$, merge adjacent piles into one pile. Each merge of $k$
-piles costs the sum of those $k$ piles. Find the minimum total cost, or return -1 if impossible.
+Given $n$ piles of stones and an integer $k$Merge adjacent piles into one pile. Each merge of $k$
+Piles costs the sum of those $k$ piles. Find the minimum total cost, or return -1 if impossible.
 
 ```python
 def merge_stones(stones, k):
@@ -289,7 +289,7 @@ def interval_dp_template(arr):
 
 ## Tree DP
 
-Tree DP applies dynamic programming on tree structures, typically using post-order traversal
+Tree DP applies dynamic programming on tree structures, using post-order traversal
 (process children before parent).
 
 ### Tree Diameter
@@ -435,7 +435,7 @@ def rerooting_dp(n, edges):
 ## Bitmask DP
 
 Bitmask DP uses bitmasks to represent subsets, enabling $O(2^n \cdot n)$ solutions for problems with
-small $n$ (typically $n \le 20$).
+Small $n$ ( $n \le 20$).
 
 ### Travelling Salesman Problem (TSP)
 
@@ -506,7 +506,7 @@ def assignment(cost):
 ## Digit DP
 
 Digit DP counts numbers in a range that satisfy certain digit-based properties by processing digits
-from most significant to least significant.
+From most significant to least significant.
 
 ### Template
 
@@ -686,8 +686,8 @@ def is_match(s, p):
 ### Nim and Sprague-Grundy Theorem
 
 Every impartial game (where the available moves depend only on the position, not on which player is
-moving) is equivalent to a Nim heap. The Sprague-Grundy theorem states that the Grundy number (mex
-of children's Grundy numbers) determines the winning strategy.
+Moving) is equivalent to a Nim heap. The Sprague-Grundy theorem states that the Grundy number (mex
+Of children's Grundy numbers) determines the winning strategy.
 
 ```python
 def grundy_number(positions):
@@ -744,80 +744,88 @@ def coin_game(coins):
 ## Greedy-Reducible DP
 
 Some DP problems have greedy solutions that are simpler and faster. The key question: does making
-the locally optimal choice always lead to the globally optimal solution?
+The locally optimal choice always lead to the globally optimal solution?
 
 ### When Greedy Works Instead of DP
 
-| Problem                    | Greedy Works? | Greedy Strategy                |
+| Problem | Greedy Works? | Greedy Strategy |
 | -------------------------- | ------------- | ------------------------------ |
-| Fractional knapsack        | Yes           | Sort by value/weight ratio     |
-| Activity selection         | Yes           | Earliest finish time           |
-| Huffman coding             | Yes           | Merge two smallest frequencies |
-| Minimum spanning tree      | Yes           | Kruskal / Prim                 |
-| Dijkstra (non-negative)    | Yes           | Process smallest distance      |
-| 0/1 knapsack               | No            | DP required                    |
-| Partition equal subset sum | No            | DP required                    |
-| Edit distance              | No            | DP required                    |
+| Fractional knapsack | Yes | Sort by value/weight ratio |
+| Activity selection | Yes | Earliest finish time |
+| Huffman coding | Yes | Merge two smallest frequencies |
+| Minimum spanning tree | Yes | Kruskal / Prim |
+| Dijkstra (non-negative) | Yes | Process smallest distance |
+| 0/1 knapsack | No | DP required |
+| Partition equal subset sum | No | DP required |
+| Edit distance | No | DP required |
 
 ## State Compression Techniques
 
 ### Reducing State Space
 
-| Technique              | When to Use                         | Example                                |
+| Technique | When to Use | Example |
 | ---------------------- | ----------------------------------- | -------------------------------------- |
-| Coordinate compression | Large coordinate values, few unique | `sorted(set(values))` + binary search  |
-| Difference encoding    | State depends on differences        | `dp[i][diff]` instead of `dp[i][a][b]` |
-| Rolling array          | Only previous row/column needed     | `prev` and `curr` arrays               |
-| Bitmask                | Small set of choices (n &lt;= 20)   | TSP, assignment                        |
-| Sparse DP              | Many states unreachable             | Dictionary instead of array            |
+| Coordinate compression | Large coordinate values, few unique | `sorted(set(values))` + binary search |
+| Difference encoding | State depends on differences | `dp[i][diff]` instead of `dp[i][a][b]` |
+| Rolling array | Only previous row/column needed | `prev` and `curr` arrays |
+| Bitmask | Small set of choices (n &lt;= 20) | TSP, assignment |
+| Sparse DP | Many states unreachable | Dictionary instead of array |
 
 ## Common Pitfalls
 
 ### 1. Wrong Iteration Order
 
-The fill order must respect the dependency: if `dp[i]` depends on `dp[j]`, then `j` must be computed
-before `i`. For interval DP, always iterate by increasing interval length. For 1D DP, verify whether
-forward or backward iteration is needed (0/1 knapsack needs backward, unbounded needs forward).
+The fill order must respect the dependency: if `dp[i]` depends on `dp[j]`Then `j` must be computed
+Before `i`. For interval DP, always iterate by increasing interval length. For 1D DP, verify whether
+Forward or backward iteration is needed (0/1 knapsack needs backward, unbounded needs forward).
 
 ### 2. Integer Overflow in DP Values
 
 DP values can grow exponentially (e.g., counting paths in a grid). Use Python's arbitrary-precision
-integers, or in C++/Java, use `long long` or `BigInteger`. Always check whether the problem asks for
-the result modulo some value.
+Integers, or in C++/Java, use `long long` or `BigInteger`. Always check whether the problem asks for
+The result modulo some value.
 
 ### 3. Off-by-One in Bitmask DP
 
 In bitmask DP, `mask & (1 << i)` tests whether bit $i$ is set. `mask | (1 << i)` sets bit $i$.
 `mask & ~(1 << i)` clears bit $i$. Forgetting the parentheses around `1 << i` in `~(1 << i)` is a
-common bug because `~` has lower precedence than `&`.
+Common bug because `~` has lower precedence than `&`.
 
 ### 4. Forgetting Base Cases
 
 Missing or incorrect base cases are the most common DP bug. For interval DP, the base case is
 `dp[i][i]`. For tree DP, the base case is the leaf node. For string DP, the base case is the empty
-string. Always verify base cases by hand before writing the transition.
+String. Always verify base cases by hand before writing the transition.
 
 ### 5. Confusing Subsequence and Subarray
 
 A subsequence is not necessarily contiguous; a subarray (or substring) is. "Longest increasing
-subsequence" uses DP over subsequences ($O(n^2)$ or $O(n \log n)$). "Maximum sum subarray" uses
+Subsequence" uses DP over subsequences ($O(n^2)$ or $O(n \log n)$). "Maximum sum subarray" uses
 Kadane's algorithm ($O(n)$). Mixing these up leads to incorrect solutions.
 
 ### 6. Digit DP `tight` Flag Mishandling
 
 In digit DP, the `tight` flag indicates whether the prefix matches the upper bound. When `tight` is
 False, you can use any digit (0-9). When `tight` is True, you can only use digits up to the current
-digit of the upper bound. Forgetting to propagate `tight` correctly produces wrong counts.
+Digit of the upper bound. Forgetting to propagate `tight` correctly produces wrong counts.
 
 ### 7. Tree DP Root Assumption
 
-Tree DP solutions often assume a specific root (typically node 0). If the problem asks for a
-property of the tree regardless of root (e.g., diameter), make sure the solution does not depend on
-the root choice. For problems that require computing a value for every node as root, use rerooting
+Tree DP solutions often assume a specific root ( node 0). If the problem asks for a
+Property of the tree regardless of root (e.g., diameter), make sure the solution does not depend on
+The root choice. For problems that require computing a value for every node as root, use rerooting
 DP.
 
 ### 8. Overcounting in Game Theory DP
 
 In game theory DP, the standard formulation computes the value that the current player can
-guarantee. A common mistake is to assume both players play optimally for the same objective. In
-zero-sum games, player 1 maximises while player 2 minimises. Getting this wrong inverts the result.
+Guarantee. A common mistake is to assume both players play optimally for the same objective. In
+Zero-sum games, player 1 maximises while player 2 minimises. Getting this wrong inverts the result.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

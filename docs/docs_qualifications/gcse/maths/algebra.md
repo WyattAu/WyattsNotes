@@ -73,7 +73,7 @@ $$x^2 - 9 = (x - 3)(x + 3)$$
 
 **Worked Example.** Factorise $x^2 + 5x + 6$.
 
-We need $p + q = 5$ and $pq = 6$, giving $p = 2$ and $q = 3$:
+We need $p + q = 5$ and $pq = 6$Giving $p = 2$ and $q = 3$:
 
 $$x^2 + 5x + 6 = (x + 2)(x + 3)$$
 
@@ -108,7 +108,7 @@ This is a difference of two squares twice:
 $$x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)$$
 
 Note that $x^2 + 4$ cannot be factorised further over the reals since $x^2 + 4 = 0$ has no real
-solutions.
+Solutions.
 
 ### 1.4 Algebraic Fractions (Higher Tier)
 
@@ -125,7 +125,7 @@ $$\frac{(x - 2)^2}{(x - 2)(x + 2)} = \frac{x - 2}{x + 2}$$
 $$\frac{2(x^2 - 4)}{(x + 2)^2} = \frac{2(x - 2)(x + 2)}{(x + 2)^2} = \frac{2(x - 2)}{x + 2}$$
 
 ::warning When cancelling factors in algebraic fractions, always factorise first. Never cancel
-individual terms across addition or subtraction.
+Individual terms across addition or subtraction.
 :::
 
 ## 2. Solving Equations
@@ -168,15 +168,15 @@ $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 **Theorem.** The **discriminant** $\Delta = b^2 - 4ac$ determines the nature of the roots:
 
-| Condition      | Roots                   |
+| Condition | Roots |
 | -------------- | ----------------------- |
 | $\Delta \gt 0$ | Two distinct real roots |
-| $\Delta = 0$   | One repeated real root  |
-| $\Delta \lt 0$ | No real roots           |
+| $\Delta = 0$ | One repeated real root |
+| $\Delta \lt 0$ | No real roots |
 
-**Proof sketch.** The formula gives $x = \frac{-b \pm \sqrt{\Delta}}{2a}$. If $\Delta \gt 0$, the
-square root is a positive real, giving two distinct values. If $\Delta = 0$, both roots equal
-$\frac{-b}{2a}$. If $\Delta \lt 0$, the square root is not real, so no real roots exist.
+**Proof sketch.** The formula gives $x = \frac{-b \pm \sqrt{\Delta}}{2a}$. If $\Delta \gt 0$The
+Square root is a positive real, giving two distinct values. If $\Delta = 0$Both roots equal
+$\frac{-b}{2a}$. If $\Delta \lt 0$The square root is not real, so no real roots exist.
 
 **Worked Example.** Solve $2x^2 + 3x - 5 = 0$ using the formula.
 
@@ -185,7 +185,7 @@ $$x = \frac{-3 \pm \sqrt{9 + 40}}{4} = \frac{-3 \pm \sqrt{49}}{4} = \frac{-3 \pm
 $$x = 1 \mathrm{ or {} x = -\frac{5}{2}$$
 
 **Worked Example (Higher Tier).** Find the values of $k$ for which $x^2 + 4x + k = 0$ has equal
-roots.
+Roots.
 
 Equal roots means $\Delta = 0$:
 
@@ -206,7 +206,7 @@ $x$ at which it occurs.
 
 $$f(x) = 2(x^2 - 6x) + 5 = 2\left((x - 3)^2 - 9\right) + 5 = 2(x - 3)^2 - 18 + 5 = 2(x - 3)^2 - 13$$
 
-Since $(x - 3)^2 \geq 0$, the minimum value is $-13$ when $x = 3$.
+Since $(x - 3)^2 \geq 0$The minimum value is $-13$ when $x = 3$.
 
 **Worked Example (Higher Tier).** Solve $3x^2 - 5x - 2 = 0$.
 
@@ -226,9 +226,9 @@ $$\begin{cases} 3x + 2y = 12 \\ 5x - y = 7 \end{cases}$$
 
 Multiply the second equation by 2: $10x - 2y = 14$.
 
-Add to the first: $13x = 26$, so $x = 2$.
+Add to the first: $13x = 26$So $x = 2$.
 
-Substitute back: $10 - y = 7$, so $y = 3$.
+Substitute back: $10 - y = 7$So $y = 3$.
 
 **Linear-quadratic systems:** Substitute the linear equation into the quadratic.
 
@@ -286,7 +286,7 @@ Solving linear inequalities follows the same rules as equations, with one critic
 
 :::warning
 When multiplying or dividing both sides of an inequality by a negative number, you must
-reverse the inequality sign.
+Reverse the inequality sign.
 :::
 
 **Worked Example.** Solve $3 - 2x \gt 7$.
@@ -318,7 +318,7 @@ $$2 \leq x \leq 3$$
 Roots: $x = 1$ and $x = -\frac{5}{2}$.
 
 Since the coefficient of $x^2$ is positive, the parabola opens upward. The expression is negative
-between the roots:
+Between the roots:
 
 $$-\frac{5}{2} \lt x \lt 1$$
 
@@ -356,20 +356,20 @@ An **arithmetic sequence** has a constant **common difference** $d$. The $n$-th 
 
 $$u_n = a + (n - 1)d$$
 
-where $a$ is the first term.
+Where $a$ is the first term.
 
 The **sum of the first $n$ terms** is:
 
 $$S_n = \frac{n}{2}(2a + (n - 1)d) = \frac{n}{2}(a + l)$$
 
-where $l$ is the last term.
+Where $l$ is the last term.
 
 **Proof of the sum formula.** Write the sum forwards and backwards:
 
 $$S_n = a + (a + d) + (a + 2d) + \cdots + (l - d) + l$$
 $$S_n = l + (l - d) + (l - 2d) + \cdots + (a + d) + a$$
 
-Adding: $2S_n = n(a + l)$, so $S_n = \frac{n(a + l)}{2}$. $\blacksquare$
+Adding: $2S_n = n(a + l)$So $S_n = \frac{n(a + l)}{2}$. $\blacksquare$
 
 **Worked Example.** Find the 20th term and the sum of the first 20 terms of $3, 7, 11, 15, \ldots$.
 
@@ -389,7 +389,7 @@ $d$.
 
 $$a + 2d = 14 \quad \mathrm{and{} \quad a + 6d = 26$$
 
-Subtracting: $4d = 12$, so $d = 3$. Then $a = 14 - 6 = 8$.
+Subtracting: $4d = 12$So $d = 3$. Then $a = 14 - 6 = 8$.
 
 The sequence is $8, 11, 14, 17, \ldots$
 
@@ -407,7 +407,7 @@ $$u_8 = 2 \times 3^7 = 2 \times 2187 = 4374$$
 
 **Worked Example (Higher Tier).** Find the sum of the first 10 terms of $1, -2, 4, -8, \ldots$.
 
-$a = 1$, $r = -2$, $n = 10$.
+$a = 1$$r = -2$$n = 10$.
 
 $$S_{10} = \frac{1((-2)^{10} - 1)}{-2 - 1} = \frac{1024 - 1}{-3} = \frac{1023}{-3} = -341$$
 
@@ -427,7 +427,7 @@ When $n = 1$: $1 + b + c = 2 \implies b + c = 1$
 
 When $n = 2$: $4 + 2b + c = 6 \implies 2b + c = 2$
 
-Subtracting: $b = 1$, so $c = 0$.
+Subtracting: $b = 1$So $c = 0$.
 
 $$u_n = n^2 + n$$
 
@@ -443,7 +443,7 @@ When $n = 1$: $-1 + b + c = 1 \implies b + c = 2$
 
 When $n = 2$: $-4 + 2b + c = 0 \implies 2b + c = 4$
 
-Subtracting: $b = 2$, so $c = 0$.
+Subtracting: $b = 2$So $c = 0$.
 
 $$u_n = -n^2 + 2n = n(2 - n)$$
 
@@ -462,17 +462,17 @@ $\blacksquare$
 **Proposition.** $\gcd(F_m, F_n) = F_{\gcd(m, n)}$.
 
 This beautiful identity connects the Fibonacci sequence to the greatest common divisor. It explains
-why consecutive Fibonacci numbers are coprime: $\gcd(F_n, F_{n+1}) = F_1 = 1$.
+Why consecutive Fibonacci numbers are coprime: $\gcd(F_n, F_{n+1}) = F_1 = 1$.
 
 ## 5. Graphs of Functions
 
 
 
 <DesmosGraph
-  title="Graphs of Common Functions"
-  expressions={["x^2", "x^3", "2^x", "\frac{1}{x}"]}
-  width={800}
-  height={500}
+ title="Graphs of Common Functions"
+ expressions={["x^2", "x^3", "2^x", "\frac{1}{x}"]}
+ width={800}
+ height={500}
 />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
@@ -490,9 +490,9 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1}$$
 $-1$: $m_1 m_2 = -1$.
 
 **Proof of the perpendicular gradient property.** If two lines with gradients $m_1$ and $m_2$ are
-perpendicular, then the angle between them is $90^{\circ}$. The tangent of the angle between two
-lines is $\frac{m_2 - m_1}{1 + m_1 m_2}$. Setting this to be undefined (as $\tan 90^{\circ}$ is
-undefined), the denominator $1 + m_1 m_2 = 0$, giving $m_1 m_2 = -1$. $\blacksquare$
+Perpendicular, then the angle between them is $90^{\circ}$. The tangent of the angle between two
+Lines is $\frac{m_2 - m_1}{1 + m_1 m_2}$. Setting this to be undefined (as $\tan 90^{\circ}$ is
+Undefined), the denominator $1 + m_1 m_2 = 0$Giving $m_1 m_2 = -1$. $\blacksquare$
 
 **Worked Example.** Find the equation of the line through $(2, 5)$ perpendicular to $y = 3x - 1$.
 
@@ -502,7 +502,7 @@ $$y - 5 = -\frac{1}{3}(x - 2)$$
 $$y = -\frac{1}{3}x + \frac{2}{3} + 5 = -\frac{1}{3}x + \frac{17}{3}$$
 
 **Worked Example (Higher Tier).** Find the equation of the perpendicular bisector of the line
-segment joining $A(1, 3)$ and $B(7, -1)$.
+Segment joining $A(1, 3)$ and $B(7, -1)$.
 
 Midpoint: $M = \left(\frac{8}{2}, \frac{2}{2}\right) = (4, 1)$.
 
@@ -510,12 +510,12 @@ Gradient of AB: $m = \frac{-1 - 3}{7 - 1} = \frac{-4}{6} = -\frac{2}{3}$.
 
 Perpendicular gradient: $\frac{3}{2}$.
 
-Equation: $y - 1 = \frac{3}{2}(x - 4)$, i.e. $2y - 2 = 3x - 12$, or $3x - 2y = 10$.
+Equation: $y - 1 = \frac{3}{2}(x - 4)$I.e. $2y - 2 = 3x - 12$Or $3x - 2y = 10$.
 
 ### 5.2 Quadratic Graphs
 
 The graph of $y = ax^2 + bx + c$ is a **parabola**. If $a \gt 0$ it opens upward; if $a \lt 0$ it
-opens downward.
+Opens downward.
 
 The **turning point** is at $x = -\frac{b}{2a}$.
 
@@ -523,13 +523,13 @@ The **line of symmetry** is $x = -\frac{b}{2a}$.
 
 **Worked Example.** Sketch the graph of $y = x^2 - 4x + 3$.
 
-Factorise: $y = (x - 1)(x - 3)$, so the roots are $x = 1$ and $x = 3$.
+Factorise: $y = (x - 1)(x - 3)$So the roots are $x = 1$ and $x = 3$.
 
 $y$-intercept: $(0, 3)$.
 
-Vertex: $x = -\frac{-4}{2} = 2$, $y = 4 - 8 + 3 = -1$. Vertex at $(2, -1)$.
+Vertex: $x = -\frac{-4}{2} = 2$$y = 4 - 8 + 3 = -1$. Vertex at $(2, -1)$.
 
-The parabola opens upward with minimum at $(2, -1)$, crossing the $x$-axis at $x = 1$ and $x = 3$.
+The parabola opens upward with minimum at $(2, -1)$Crossing the $x$-axis at $x = 1$ and $x = 3$.
 
 **Worked Example (Higher Tier).** Sketch the graph of $y = -2x^2 + 8x - 6$.
 
@@ -537,40 +537,40 @@ Factorise: $-2(x^2 - 4x + 3) = -2(x - 1)(x - 3)$. Roots at $x = 1$ and $x = 3$.
 
 $y$-intercept: $(0, -6)$.
 
-Vertex: $x = -\frac{8}{-4} = 2$, $y = -8 + 16 - 6 = 2$. Vertex at $(2, 2)$.
+Vertex: $x = -\frac{8}{-4} = 2$$y = -8 + 16 - 6 = 2$. Vertex at $(2, 2)$.
 
 The parabola opens downward with maximum at $(2, 2)$.
 
 ### 5.3 Other Key Graphs
 
-| Function          | Shape             | Key features                            |
+| Function | Shape | Key features |
 | ----------------- | ----------------- | --------------------------------------- |
-| $y = x^3$         | Cubic             | Point of inflection at origin           |
-| $y = \frac{1}{x}$ | Reciprocal        | Asymptotes at both axes                 |
-| $y = \sqrt{x}$    | Square root       | Starts at origin, curves to the right   |
-| $y = 2^x$         | Exponential       | Passes through $(0, 1)$, never negative |
-| $x^2 + y^2 = a^2$ | Circle radius $a$ | Centre at origin                        |
+| $y = x^3$ | Cubic | Point of inflection at origin |
+| $y = \frac{1}{x}$ | Reciprocal | Asymptotes at both axes |
+| $y = \sqrt{x}$ | Square root | Starts at origin, curves to the right |
+| $y = 2^x$ | Exponential | Passes through $(0, 1)$Never negative |
+| $x^2 + y^2 = a^2$ | Circle radius $a$ | Centre at origin |
 
 ### 5.4 Transformations of Graphs
 
-| Transformation | Effect on graph                                |
+| Transformation | Effect on graph |
 | -------------- | ---------------------------------------------- |
-| $y = f(x) + c$ | Translate up by $c$                            |
-| $y = f(x - c)$ | Translate right by $c$                         |
-| $y = -f(x)$    | Reflect in the $x$-axis                        |
-| $y = f(-x)$    | Reflect in the $y$-axis                        |
-| $y = af(x)$    | Vertical stretch, scale factor $a$             |
-| $y = f(ax)$    | Horizontal stretch, scale factor $\frac{1}{a}$ |
+| $y = f(x) + c$ | Translate up by $c$ |
+| $y = f(x - c)$ | Translate right by $c$ |
+| $y = -f(x)$ | Reflect in the $x$-axis |
+| $y = f(-x)$ | Reflect in the $y$-axis |
+| $y = af(x)$ | Vertical stretch, scale factor $a$ |
+| $y = f(ax)$ | Horizontal stretch, scale factor $\frac{1}{a}$ |
 
 **Worked Example (Higher Tier).** The graph of $y = f(x)$ passes through $(2, 5)$. State the
-coordinates of the corresponding point on the graph of $y = f(x - 3) + 1$.
+Coordinates of the corresponding point on the graph of $y = f(x - 3) + 1$.
 
 Translation right by 3, up by 1: $(2 + 3, 5 + 1) = (5, 6)$.
 
-**Worked Example (Higher Tier).** Given $f(x) = x^2$, sketch $y = -f(2x) + 3$.
+**Worked Example (Higher Tier).** Given $f(x) = x^2$Sketch $y = -f(2x) + 3$.
 
-$y = -(2x)^2 + 3 = -4x^2 + 3$. This is a parabola opening downward with vertex at $(0, 3)$, narrower
-than $y = x^2$ by a factor of 2 in the $x$-direction.
+$y = -(2x)^2 + 3 = -4x^2 + 3$. This is a parabola opening downward with vertex at $(0, 3)$Narrower
+Than $y = x^2$ by a factor of 2 in the $x$-direction.
 
 ## 6. Algebraic Fractions
 
@@ -638,9 +638,9 @@ Sum $= (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1)$.
 Since $n + 1$ is an integer, the sum is a multiple of 4. $\blacksquare$
 
 **Example (Higher Tier).** Prove that the product of any three consecutive integers is divisible
-by 6.
+By 6.
 
-Let the three consecutive integers be $n$, $n + 1$, and $n + 2$.
+Let the three consecutive integers be $n$$n + 1$And $n + 2$.
 
 Among any three consecutive integers, one is divisible by 2 (even) and one is divisible by 3. Since
 2 and 3 are coprime, their product 6 divides the product of the three integers. $\blacksquare$
@@ -653,14 +653,14 @@ Let the consecutive integers be $n$ and $n + 1$.
 $n^2 + (n+1)^2 - 1 = n^2 + n^2 + 2n + 1 - 1 = 2n^2 + 2n = 2n(n + 1)$.
 
 Since $n$ and $n + 1$ are consecutive, one is even, so $n(n+1)$ is even, meaning $n(n+1) = 2k$ for
-some integer $k$.
+Some integer $k$.
 
-Therefore $2n(n+1) = 4k$, which is divisible by 4 but not necessarily by 8. The original claim that
-this is always divisible by 8 is **false**. For example, when $n = 1$: $1 + 4 - 1 = 4$, which is not
-divisible by 8.
+Therefore $2n(n+1) = 4k$Which is divisible by 4 but not necessarily by 8. The original claim that
+This is always divisible by 8 is **false**. For example, when $n = 1$: $1 + 4 - 1 = 4$Which is not
+Divisible by 8.
 
 ::warning Not every claim about numbers is true. When asked to prove something, first check whether
-the statement is actually correct with a small example.
+The statement is actually correct with a small example.
 :::
 
 ### 7.3 Disproof by Counterexample
@@ -673,40 +673,40 @@ To disprove a statement, find a single example where it fails.
 $n^2 = 36$ is divisible by 4, but 6 is not.
 
 **Example (Higher Tier).** "The sum of two irrational numbers is irrational." Counterexample:
-$\sqrt{2} + (-\sqrt{2}) = 0$, which is rational.
+$\sqrt{2} + (-\sqrt{2}) = 0$Which is rational.
 
 ### 7.4 Proof with Functions (Higher Tier)
 
-**Example.** Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$, prove that $fg(-2) = gf(1)$.
+**Example.** Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$Prove that $fg(-2) = gf(1)$.
 
-$f(-2) = -5$, $g(-5) = 25 + 3 = 28$.
+$f(-2) = -5$$g(-5) = 25 + 3 = 28$.
 
-$f(1) = 1$, $g(1) = 1 + 3 = 4$.
+$f(1) = 1$$g(1) = 1 + 3 = 4$.
 
 $fg(-2) = g(f(-2)) = 28 \neq 4 = gf(1)$.
 
-So $fg(-2) \neq gf(1)$ -- the statement is false. This illustrates that in general
+So $fg(-2) \neq gf(1)$ -- the statement is false. This illustrates that 
 $f \circ g \ne
-g \circ f$.
+G \circ f$.
 
 ## Common Pitfalls
 
 - **Forgetting to reverse the inequality sign** when multiplying or dividing by a negative.
-- **Incorrectly expanding $(a + b)^2$.** It is $a^2 + 2ab + b^2$, not $a^2 + b^2$.
-- **Squaring brackets incorrectly in completing the square.** $(x + 3)^2 = x^2 + 6x + 9$, not
-  $x^2 + 9$.
-- **Confusing the turning point formula.** The $x$-coordinate is $-\frac{b}{2a}$, not
-  $\frac{b}{2a}$.
+- **Incorrectly expanding $(a + b)^2$.** It is $a^2 + 2ab + b^2$Not $a^2 + b^2$.
+- **Squaring brackets incorrectly in completing the square.** $(x + 3)^2 = x^2 + 6x + 9$Not
+ $x^2 + 9$.
+- **Confusing the turning point formula.** The $x$-coordinate is $-\frac{b}{2a}$Not
+ $\frac{b}{2a}$.
 - **Dropping solutions when solving quadratics.** Always check both values from $\pm$ in the
-  formula.
+ formula.
 - **Assuming all sequences are arithmetic.** Always check the first differences.
 - **Cancelling terms instead of factors** in algebraic fractions. Factorise first.
 - **Mistaking graph transformations.** $y = f(x + 2)$ shifts LEFT by 2, not right.
 - **Forgetting domain restrictions** when simplifying algebraic fractions (e.g., $x \neq 1$).
 - **Losing a negative sign** when expanding a bracket preceded by a minus sign. Expand $-(x - 3)$ as
-  $-x + 3$, not $-x - 3$.
+ $-x + 3$Not $-x - 3$.
 - **Incorrectly identifying the common difference** of a geometric sequence as addition rather than
-  multiplication. Arithmetic sequences add $d$; geometric sequences multiply by $r$.
+ multiplication. Arithmetic sequences add $d$; geometric sequences multiply by $r$.
 
 ## Practice Questions
 
@@ -717,7 +717,7 @@ g \circ f$.
 3. Solve $x^2 - 7x + 10 = 0$ by factorisation, and verify using the quadratic formula.
 
 4. Write $2x^2 - 12x + 5$ in completed square form. Hence state the minimum value and where it
-   occurs.
+ occurs.
 
 5. Solve the inequality $x^2 - 4x - 5 \gt 0$.
 
@@ -734,14 +734,14 @@ g \circ f$.
 11. Find the equation of the line through $(3, -1)$ perpendicular to $2x + 5y = 10$.
 
 12. Express $\frac{x^3 - x}{x^2 - 1}$ as a simplified algebraic fraction, stating any restriction on
-    $x$.
+ $x$.
 
 13. Prove that the difference between the squares of any two consecutive integers is always odd.
 
-14. Solve $x^2 - 6x + 2 \leq 0$, giving your answer in exact form.
+14. Solve $x^2 - 6x + 2 \leq 0$Giving your answer in exact form.
 
 15. The first three terms of a geometric sequence are $k, k + 3, k + 12$. Find the value of $k$ and
-    the common ratio.
+ the common ratio.
 
 16. Find the $n$-th term of the sequence $5, 10, 17, 26, 37, \ldots$.
 
@@ -749,6 +749,14 @@ g \circ f$.
 
 18. Find the values of $k$ for which $kx^2 - 6x + 4 = 0$ has two distinct real roots.
 
-19. Simplify $\frac{x^3 - 8}{x^2 - 4}$, stating any restriction on $x$.
+19. Simplify $\frac{x^3 - 8}{x^2 - 4}$Stating any restriction on $x$.
 
-20. Prove that for any positive integer $n$, the number $n^3 - n$ is divisible by 6.
+20. Prove that for any positive integer $n$The number $n^3 - n$ is divisible by 6.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

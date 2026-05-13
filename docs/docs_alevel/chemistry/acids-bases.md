@@ -49,7 +49,7 @@ $$
 \mathrm{HCl}(aq) \to \mathrm{H}^+(aq) + \mathrm{Cl}^-(aq)
 $$
 
-Common strong acids: $\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$ (first dissociation), $\mathrm{HClO}_4$.
+Common strong acids: $\mathrm{HCl}$$\mathrm{HBr}$$\mathrm{HI}$$\mathrm{HNO}_3$$\mathrm{H}_2\mathrm{SO}_4$ (first dissociation), $\mathrm{HClO}_4$.
 
 For a strong monoprotic acid of concentration $c$: $[\mathrm{H}^+] = c$.
 
@@ -63,15 +63,15 @@ $$
 
 The position of equilibrium lies to the left. The degree of dissociation $\alpha$ is the fraction of acid molecules that dissociate. For weak acids, $\alpha \ll 1$.
 
-Common weak acids: $\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{HCOOH}$, $\mathrm{HCN}$, $\mathrm{H}_2\mathrm{CO}_3$, $\mathrm{NH}_4^+$.
+Common weak acids: $\mathrm{CH}_3\mathrm{COOH}$$\mathrm{HCOOH}$$\mathrm{HCN}$$\mathrm{H}_2\mathrm{CO}_3$$\mathrm{NH}_4^+$.
 
 ### Strong Bases
 
-Common strong bases: Group 1 hydroxides ($\mathrm{NaOH}$, $\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$, and $\mathrm{Ca(OH)}_2$ (sparingly soluble but fully dissociated).
+Common strong bases: Group 1 hydroxides ($\mathrm{NaOH}$$\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$And $\mathrm{Ca(OH)}_2$ (sparingly soluble but fully dissociated).
 
 ### Weak Bases
 
-Common weak bases: $\mathrm{NH}_3$, amines, $\mathrm{CO}_3^{2-}$, $\mathrm{HCO}_3^-$.
+Common weak bases: $\mathrm{NH}_3$Amines, $\mathrm{CO}_3^{2-}$$\mathrm{HCO}_3^-$.
 
 ## The pH Scale
 
@@ -81,12 +81,12 @@ $$
 \mathrm{pH} = -\log_{10}[\mathrm{H}^+]
 $$
 
-where $[\mathrm{H}^+]$ is in $\mathrm{mol/dm}^3$.
+Where $[\mathrm{H}^+]$ is in $\mathrm{mol/dm}^3$.
 
-- At $25^\circ\mathrm{C}$, pure water has $[\mathrm{H}^+] = 1.0 \times 10^{-7}\,\mathrm{mol/dm}^3$, giving $\mathrm{pH} = 7.0$.
+- At $25^\circ\mathrm{C}$Pure water has $[\mathrm{H}^+] = 1.0 \times 10^{-7}\,\mathrm{mol/dm}^3$Giving $\mathrm{pH} = 7.0$.
 - Acidic solutions: $\mathrm{pH} \lt 7$ ($[\mathrm{H}^+] \gt [\mathrm{OH}^-]$).
 - Alkaline solutions: $\mathrm{pH} \gt 7$ ($[\mathrm{H}^+] \lt [\mathrm{OH}^-]$).
-- pH is typically measured on a scale of 0--14, though values outside this range are possible.
+- pH is measured on a scale of 0--14, though values outside this range are possible.
 
 ## The Ionic Product of Water ($K_w$)
 
@@ -110,7 +110,7 @@ At $25^\circ\mathrm{C}$: $K_w = 1.0 \times 10^{-14}\,\mathrm{mol^2\,dm^{-6}}$.
 
 Since $[\mathrm{H}^+] = [\mathrm{OH}^-]$ in pure water: $[\mathrm{H}^+] = \sqrt{K_w} = 1.0 \times 10^{-7}\,\mathrm{mol/dm}^3$.
 
-$K_w$ is temperature-dependent. At $50^\circ\mathrm{C}$, $K_w = 5.5 \times 10^{-14}$, so neutral $\mathrm{pH} = 6.63$. The solution is still neutral ($[\mathrm{H}^+] = [\mathrm{OH}^-]$) but the pH is lower because $K_w$ has increased.
+$K_w$ is temperature-dependent. At $50^\circ\mathrm{C}$$K_w = 5.5 \times 10^{-14}$So neutral $\mathrm{pH} = 6.63$. The solution is still neutral ($[\mathrm{H}^+] = [\mathrm{OH}^-]$) but the pH is lower because $K_w$ has increased.
 
 ## Acid Dissociation Constant ($K_a$)
 
@@ -268,7 +268,7 @@ $$
 A buffer solution resists changes in pH when small amounts of acid or base are added. An acidic buffer consists of:
 
 1. A weak acid ($\mathrm{HA}$).
-2. Its conjugate base ($\mathrm{A}^-$), typically supplied as a salt (e.g. $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{COONa}$).
+2. Its conjugate base ($\mathrm{A}^-$), supplied as a salt (e.g. $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{COONa}$).
 
 A basic buffer consists of a weak base and its conjugate acid (e.g. $\mathrm{NH}_3 + \mathrm{NH}_4\mathrm{Cl}$).
 
@@ -280,7 +280,7 @@ $$
 \mathrm{A}^- + \mathrm{H}^+ \to \mathrm{HA}
 $$
 
-This consumes the added $\mathrm{H}^+$, minimising the pH change.
+This consumes the added $\mathrm{H}^+$Minimising the pH change.
 
 **Adding base ($\mathrm{OH}^-$):** The weak acid $\mathrm{HA}$ reacts with the added $\mathrm{OH}^-$:
 
@@ -288,7 +288,7 @@ $$
 \mathrm{HA} + \mathrm{OH}^- \to \mathrm{A}^- + \mathrm{H}_2\mathrm{O}
 $$
 
-This consumes the added $\mathrm{OH}^-$, minimising the pH change.
+This consumes the added $\mathrm{OH}^-$Minimising the pH change.
 
 ### Henderson-Hasselbalch Equation
 
@@ -332,7 +332,7 @@ Example: $\mathrm{HCl}$ vs $\mathrm{NaOH}$.
 - Initial pH: low ($\approx 1$ for $0.1\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$).
 - pH rises slowly, then very steeply near the equivalence point.
 - Equivalence point at $\mathrm{pH} = 7.0$ (neutral).
-- The pH jump is large (typically 3--11), allowing a wide choice of indicators.
+- The pH jump is large ( 3--11), allowing a wide choice of indicators.
 
 ### Strong Acid vs Weak Base
 
@@ -348,7 +348,7 @@ Example: $\mathrm{CH}_3\mathrm{COOH}$ vs $\mathrm{NaOH}$.
 - Equivalence point at $\mathrm{pH} \gt 7$ (alkaline, because the conjugate base $\mathrm{CH}_3\mathrm{COO}^-$ hydrolyses).
 - Suitable indicator: phenolphthalein (range 8.3--10.0).
 
-**Half-equivalence point:** At half-neutralisation, $[\mathrm{HA}] = [\mathrm{A}^-]$, so $\mathrm{pH} = \mathrm{p}K_a$. This allows experimental determination of $\mathrm{p}K_a$ from a titration curve.
+**Half-equivalence point:** At half-neutralisation, $[\mathrm{HA}] = [\mathrm{A}^-]$So $\mathrm{pH} = \mathrm{p}K_a$. This allows experimental determination of $\mathrm{p}K_a$ from a titration curve.
 
 ### Weak Acid vs Weak Base
 
@@ -362,7 +362,7 @@ Example: $\mathrm{CH}_3\mathrm{COOH}$ vs $\mathrm{NH}_3$.
 
 | Titration type | Equivalence point pH | Suitable indicator |
 |---|---|---|
-| Strong acid / Strong base | 7.0 | Any (e.g. bromothymol blue) |
+| Strong acid / Strong base | 7.0 | Any (e.g. Bromothymol blue) |
 | Strong acid / Weak base | &lt; 7.0 | Methyl orange (3.1--4.4) |
 | Weak acid / Strong base | &gt; 7.0 | Phenolphthalein (8.3--10.0) |
 | Weak acid / Weak base | $\approx 7.0$ (gradual) | None suitable; use pH meter |
@@ -383,11 +383,11 @@ For reactions involving weak acids or weak bases, the enthalpy of neutralisation
 
 1. **Confusing pH with [H+].** pH = 3 does not mean $[\mathrm{H}^+] = 3\,\mathrm{mol/dm}^3$. It means $[\mathrm{H}^+] = 10^{-3}\,\mathrm{mol/dm}^3$. A lower pH means a higher $[\mathrm{H}^+]$.
 
-2. **Applying the weak acid approximation when it is not valid.** If $c/K_a \lt 100$, the assumption $[\mathrm{HA}] \approx c$ fails, and the quadratic formula must be used.
+2. **Applying the weak acid approximation when it is not valid.** If $c/K_a \lt 100$The assumption $[\mathrm{HA}] \approx c$ fails, and the quadratic formula must be used.
 
 3. **Using the wrong indicator.** The indicator range must overlap with the steep portion of the titration curve at the equivalence point.
 
-4. **Forgetting that $K_w$ changes with temperature.** At temperatures other than $25^\circ\mathrm{C}$, $\mathrm{p}K_w \ne 14$, so $\mathrm{pH} + \mathrm{pOH} \ne 14$.
+4. **Forgetting that $K_w$ changes with temperature.** At temperatures other than $25^\circ\mathrm{C}$$\mathrm{p}K_w \ne 14$So $\mathrm{pH} + \mathrm{pOH} \ne 14$.
 
 5. **Adding strong acid/base to a buffer in quantities exceeding its capacity.** The buffer can only resist small additions; large additions will overwhelm it.
 
@@ -492,11 +492,11 @@ $$
 \mathrm{pH} = 4.76 + \log_{10}\left(\frac{0.0389}{0.0723}\right) = 4.76 - 0.269 = 4.49
 $$
 
-pH change = $4.76 - 4.49 = 0.27$ units. The buffer resists the pH change effectively.
+PH change = $4.76 - 4.49 = 0.27$ units. The buffer resists the pH change effectively.
 
 For comparison, adding the same amount of $\mathrm{HCl}$ to $25.0\,\mathrm{cm}^3$ of pure water would give:
 
-$[\mathrm{H}^+] = 5.0 \times 10^{-4} / 0.0300 = 0.0167\,\mathrm{mol/dm}^3$, $\mathrm{pH} = 1.78$
+$[\mathrm{H}^+] = 5.0 \times 10^{-4} / 0.0300 = 0.0167\,\mathrm{mol/dm}^3$$\mathrm{pH} = 1.78$
 
 A change from pH 7.00 to pH 1.78 -- 5.22 units. The buffer reduces the pH change by a factor of approximately 19.
 
@@ -515,7 +515,7 @@ $$
 \mathrm{HA} + \mathrm{OH}^- \to \mathrm{A}^- + \mathrm{H}_2\mathrm{O}
 $$
 
-If the initial amount of $\mathrm{HA}$ is $n_0$, then at the half-equivalence point:
+If the initial amount of $\mathrm{HA}$ is $n_0$Then at the half-equivalence point:
 
 $n(\mathrm{HA})_\mathrm{remaining} = n_0/2$
 
@@ -535,7 +535,7 @@ This is a useful experimental method for determining the $\mathrm{p}K_a$ of a we
 
 ## Indicators
 
-An acid-base indicator is a weak acid that has a different colour from its conjugate base. The colour change occurs over a specific pH range (typically about 2 pH units wide).
+An acid-base indicator is a weak acid that has a different colour from its conjugate base. The colour change occurs over a specific pH range ( about 2 pH units wide).
 
 | Indicator | Colour in acid | Colour in alkali | pH range |
 |---|---|---|---|
@@ -558,14 +558,14 @@ The indicator must change colour at the pH of the equivalence point:
 
 **Strong acid-strong base (e.g. $\mathrm{HCl}$ vs $\mathrm{NaOH}$):**
 
-- Initial pH is low (e.g. pH 1 for $0.1\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$).
+- Initial pH is low (e.g. PH 1 for $0.1\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$).
 - pH rises slowly at first, then very steeply near the equivalence point.
 - The equivalence point is at pH 7 (neutral, because neither cation nor anion hydrolyses appreciably in water).
 - The vertical portion of the curve is very steep (pH jumps from approximately 3 to 11 over a very small volume), allowing a wide choice of indicators.
 
 **Weak acid-strong base (e.g. $\mathrm{CH}_3\mathrm{COOH}$ vs $\mathrm{NaOH}$):**
 
-- Initial pH is higher than for a strong acid of the same concentration (e.g. pH 2.9 for $0.1\,\mathrm{mol/dm}^3$ $\mathrm{CH}_3\mathrm{COOH}$).
+- Initial pH is higher than for a strong acid of the same concentration (e.g. PH 2.9 for $0.1\,\mathrm{mol/dm}^3$ $\mathrm{CH}_3\mathrm{COOH}$).
 - The initial rise is more gradual (buffer region).
 - The equivalence point is at $\mathrm{pH} \gt 7$ (basic, because the conjugate base $\mathrm{CH}_3\mathrm{COO}^-$ is a weak base and hydrolyses water).
 - Phenolphthalein is the appropriate indicator.
@@ -582,7 +582,7 @@ The indicator must change colour at the pH of the equivalence point:
 
 ### The Buffer Region on a Titration Curve
 
-In a weak acid-strong base titration, the buffer region is the flat portion of the curve before the equivalence point. In this region, added base converts $\mathrm{HA}$ to $\mathrm{A}^-$, and the pH changes only slowly because the buffer resists pH change. At the half-equivalence point, $\mathrm{pH} = \mathrm{p}K_a$.
+In a weak acid-strong base titration, the buffer region is the flat portion of the curve before the equivalence point. In this region, added base converts $\mathrm{HA}$ to $\mathrm{A}^-$And the pH changes only slowly because the buffer resists pH change. At the half-equivalence point, $\mathrm{pH} = \mathrm{p}K_a$.
 
 ## The pH Scale and pH Calculations
 
@@ -652,13 +652,13 @@ $$
 \mathrm{pH} = -\log_{10}(1.32 \times 10^{-3}) = 2.88
 $$
 
-Note that $1.32 \times 10^{-3}$ is approximately $1.3\%$ of $0.100$, so the approximation is valid. For weaker acids or higher concentrations, the full quadratic expression must be solved:
+Note that $1.32 \times 10^{-3}$ is approximately $1.3\%$ of $0.100$So the approximation is valid. For weaker acids or higher concentrations, the full quadratic expression must be solved:
 
 $$
 K_a = \frac{x^2}{c_0 - x} \implies x^2 + K_a x - K_a c_0 = 0
 $$
 
-where $x = [\mathrm{H}^+]$.
+Where $x = [\mathrm{H}^+]$.
 
 ### Calculating pH of Very Dilute Solutions
 
@@ -752,7 +752,7 @@ $$
 
 **At equivalence point ($25.0\,\mathrm{cm}^3$):**
 
-$\mathrm{HCl}$ and $\mathrm{NaOH}$ are in stoichiometric ratio. The solution contains $\mathrm{NaCl}$ and water. pH = 7.00 (neutral).
+$\mathrm{HCl}$ and $\mathrm{NaOH}$ are in stoichiometric ratio. The solution contains $\mathrm{NaCl}$ and water. PH = 7.00 (neutral).
 
 **After $25.1\,\mathrm{cm}^3$ $\mathrm{NaOH}$ added (just past equivalence):**
 
@@ -796,7 +796,7 @@ K_a = \frac◆LB◆[\mathrm{NH}_3][\mathrm{H}_3\mathrm{O}^+]◆RB◆◆LB◆[\ma
 $$
 
 $$
-x = \sqrt◆LB◆5.6 \times 10^{-10} \times 0.050◆RB◆ = \sqrt◆LB◆2.8 \times 10^{-11}◆RB◆ = 5.3 \times 10^{-6}\,\mathrm{mol/dm}^3
+X = \sqrt◆LB◆5.6 \times 10^{-10} \times 0.050◆RB◆ = \sqrt◆LB◆2.8 \times 10^{-11}◆RB◆ = 5.3 \times 10^{-6}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -874,7 +874,7 @@ $$
 \mathrm{HA} \rightleftharpoons \mathrm{H}^+ + \mathrm{A}^-
 $$
 
-When acid is added, $\mathrm{A}^-$ consumes the added $\mathrm{H}^+$, shifting the equilibrium left and minimising pH change. When base is added, HA donates $\mathrm{H}^+$ to neutralise the added $\mathrm{OH}^-$, shifting the equilibrium right.
+When acid is added, $\mathrm{A}^-$ consumes the added $\mathrm{H}^+$Shifting the equilibrium left and minimising pH change. When base is added, HA donates $\mathrm{H}^+$ to neutralise the added $\mathrm{OH}^-$Shifting the equilibrium right.
 
 $\mathrm{HCl}$ and $\mathrm{NaCl}$: $\mathrm{HCl}$ is a strong acid that dissociates completely. $\mathrm{Cl}^-$ is the conjugate base of a strong acid and has negligible basicity ($\mathrm{Cl}^-$ does not accept protons appreciably). When $\mathrm{H}^+$ is added, there is no mechanism to consume it (no weak base present). The solution's pH changes dramatically with small additions of acid or base.
 
@@ -946,7 +946,7 @@ The titration of ethanoic acid with $\mathrm{NaOH}$ produces a characteristic S-
 
 1. **Initial pH:** pH of the weak acid (higher than for a strong acid of the same concentration because the weak acid is only partially dissociated).
 
-2. **Buffer region:** After some $\mathrm{NaOH}$ has been added, the solution contains both $\mathrm{CH}_3\mathrm{COOH}$ and $\mathrm{CH}_3\mathrm{COO}^-$, forming a buffer. The pH changes slowly in this region.
+2. **Buffer region:** After some $\mathrm{NaOH}$ has been added, the solution contains both $\mathrm{CH}_3\mathrm{COOH}$ and $\mathrm{CH}_3\mathrm{COO}^-$Forming a buffer. The pH changes slowly in this region.
 
 3. **Half-equivalence point:** When half the acid has been neutralised, $[\mathrm{HA}] = [\mathrm{A}^-]$ and $\mathrm{pH} = \mathrm{p}K_a$. This is a useful experimental method for determining $\mathrm{p}K_a$.
 
@@ -991,8 +991,8 @@ An indicator is chosen so that its colour change range overlaps with the steep p
 
 Sulfuric acid ($\mathrm{H}_2\mathrm{SO}_4$) is a diprotic acid:
 
-- First dissociation: complete ($\mathrm{H}_2\mathrm{SO}_4 \to \mathrm{H}^+ + \mathrm{HSO}_4^-$, strong acid).
-- Second dissociation: partial ($\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$, $K_{a2} = 1.02 \times 10^{-2}$).
+- First dissociation: complete ($\mathrm{H}_2\mathrm{SO}_4 \to \mathrm{H}^+ + \mathrm{HSO}_4^-$Strong acid).
+- Second dissociation: partial ($\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$$K_{a2} = 1.02 \times 10^{-2}$).
 
 **Worked Example:** Calculate the pH of $0.050\,\mathrm{mol\,dm^{-3}}$ $\mathrm{H}_2\mathrm{SO}_4$.
 
@@ -1002,7 +1002,7 @@ For the second dissociation: let $x$ be the additional $[\mathrm{H}^+]$ from $\m
 
 $$K_{a2} = \frac{(0.050 + x)(x)}{0.050 - x} = 1.02 \times 10^{-2}$$
 
-Approximation: $0.050 + x \approx 0.050$, $0.050 - x \approx 0.050$:
+Approximation: $0.050 + x \approx 0.050$$0.050 - x \approx 0.050$:
 
 $$x = 1.02 \times 10^{-2} = 0.0102\,\mathrm{mol\,dm^{-3}}$$
 
@@ -1077,11 +1077,11 @@ $$\mathrm{pH} = 4.76 + \log\frac{0.0090}{0.0110} = 4.76 + \log(0.818) = 4.76 - 0
 <details>
 <summary>Q3 (5 marks)</summary>
 
-Define the term $\mathrm{p}K_a$. Explain why the $\mathrm{p}K_a$ of chloroethanoic acid ($\mathrm{CH}_2\mathrm{ClCOOH}$, $\mathrm{p}K_a = 2.86$) is lower than that of ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{p}K_a = 4.76$).
+Define the term $\mathrm{p}K_a$. Explain why the $\mathrm{p}K_a$ of chloroethanoic acid ($\mathrm{CH}_2\mathrm{ClCOOH}$$\mathrm{p}K_a = 2.86$) is lower than that of ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$$\mathrm{p}K_a = 4.76$).
 
 **Mark Scheme:**
 
-$\mathrm{p}K_a = -\log K_a$, where $K_a$ is the acid dissociation constant (1 mark). A lower $\mathrm{p}K_a$ means a stronger acid (greater dissociation).
+$\mathrm{p}K_a = -\log K_a$Where $K_a$ is the acid dissociation constant (1 mark). A lower $\mathrm{p}K_a$ means a stronger acid (greater dissociation).
 
 Chlorine is more electronegative than hydrogen, so it withdraws electron density from the carboxyl group through the inductive effect (1 mark). This destabilises the undissociated acid (makes the O--H bond more polar and easier to break) (1 mark) and stabilises the carboxylate anion by delocalising the negative charge more effectively (1 mark). The net effect is to increase $K_a$ (and decrease $\mathrm{p}K_a$), making chloroethanoic acid a stronger acid than ethanoic acid (1 mark).
 
@@ -1108,3 +1108,11 @@ Ready to test your understanding of **Acids, Bases and Buffers**? The [diagnosti
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

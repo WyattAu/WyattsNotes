@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In the figure, $A$, $B$, $C$ are points on a circle with centre $O$. If $\angle ABC = 35°$ and $\angle BAC = 70°$, find $\angle AOC$.
+In the figure, $A$$B$$C$ are points on a circle with centre $O$. If $\angle ABC = 35°$ and $\angle BAC = 70°$Find $\angle AOC$.
 
 **Solution:**
 
@@ -41,7 +41,7 @@ A common mistake is confusing which arc the angle subtends. $\angle ABC$ subtend
 
 **Question:**
 
-$TA$ and $TB$ are tangents to a circle with centre $O$, touching the circle at $A$ and $B$ respectively. If $\angle ATB = 50°$, find $\angle AOB$.
+$TA$ and $TB$ are tangents to a circle with centre $O$Touching the circle at $A$ and $B$ respectively. If $\angle ATB = 50°$Find $\angle AOB$.
 
 **Solution:**
 
@@ -73,7 +73,7 @@ $\angle B + \angle D = 180° \implies \angle D = 145°$.
 
 **Question:**
 
-Let $\vec{OA} = \mathbf{'\{'}a{'\}'}$, $\vec{OB} = \mathbf{'\{'}b{'\}'}$. Point $P$ divides $AB$ in the ratio $2:1$ and point $Q$ divides $AB$ in the ratio $3:2$. Express $\vec{PQ}$ in terms of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
+Let $\vec{OA} = \mathbf{'\{'}a{'\}'}$$\vec{OB} = \mathbf{'\{'}b{'\}'}$. Point $P$ divides $AB$ in the ratio $2:1$ and point $Q$ divides $AB$ in the ratio $3:2$. Express $\vec{PQ}$ in terms of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
 
 **Solution:**
 
@@ -101,9 +101,9 @@ Use coordinate geometry to prove that the midpoint of the hypotenuse of a right-
 
 Place the right angle at the origin, with the legs along the axes.
 
-Let $A = (0, 0)$, $B = (2a, 0)$, $C = (0, 2b)$.
+Let $A = (0, 0)$$B = (2a, 0)$$C = (0, 2b)$.
 
-Right angle at $A$, hypotenuse is $BC$.
+Right angle at $A$Hypotenuse is $BC$.
 
 Midpoint $M$ of $BC$: $\left(\dfrac{2a + 0}{2},\; \dfrac{0 + 2b}{2}\right) = (a,\; b)$.
 
@@ -113,7 +113,7 @@ $MB = \sqrt{(a - 2a)^2 + (b - 0)^2} = \sqrt{a^2 + b^2}$.
 
 $MC = \sqrt{(a - 0)^2 + (b - 2b)^2} = \sqrt{a^2 + b^2}$.
 
-Since $MA = MB = MC$, the midpoint of the hypotenuse is equidistant from all three vertices.
+Since $MA = MB = MC$The midpoint of the hypotenuse is equidistant from all three vertices.
 
 ---
 
@@ -125,7 +125,7 @@ Since $MA = MB = MC$, the midpoint of the hypotenuse is equidistant from all thr
 
 **Question:**
 
-In triangle $ABC$, $AB = 10$ cm, $BC = 8$ cm, $CA = 6$ cm. Find the radius of the circumscribed circle.
+In triangle $ABC$$AB = 10$ cm, $BC = 8$ cm, $CA = 6$ cm. Find the radius of the circumscribed circle.
 
 **Solution:**
 
@@ -141,7 +141,7 @@ Radius $= \dfrac{AB}{2} = \dfrac{10}{2} = 5$ cm.
 
 **Question:**
 
-The position vectors of $A$ and $B$ are $\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'}$ and $\mathbf{'\{'}b{'\}'} = 8\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'}$. Point $C$ has position vector $\mathbf{'\{'}c{'\}'} = 4\mathbf{'\{'}i{'\}'} + 7\mathbf{'\{'}j{'\}'}$. Prove that $A$, $B$, $C$ form an isosceles triangle.
+The position vectors of $A$ and $B$ are $\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'}$ and $\mathbf{'\{'}b{'\}'} = 8\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'}$. Point $C$ has position vector $\mathbf{'\{'}c{'\}'} = 4\mathbf{'\{'}i{'\}'} + 7\mathbf{'\{'}j{'\}'}$. Prove that $A$$B$$C$ form an isosceles triangle.
 
 **Solution:**
 
@@ -157,11 +157,11 @@ $$\vec{BC} = \mathbf{'\{'}c{'\}'} - \mathbf{'\{'}b{'\}'} = -4\mathbf{'\{'}i{'\}'
 
 $$|\vec{BC}| = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}$$
 
-$|\vec{AB}| = 2\sqrt{13}$, $|\vec{AC}| = 2\sqrt{5}$, $|\vec{BC}| = 4\sqrt{5}$.
+$|\vec{AB}| = 2\sqrt{13}$$|\vec{AC}| = 2\sqrt{5}$$|\vec{BC}| = 4\sqrt{5}$.
 
 None are equal, so this is **not** isosceles. Verifying:
-$|\vec{AC}|^2 + |\vec{BC}|^2 = 20 + 80 = 100 \neq 52 = |\vec{AB}|^2$, confirming it is also not
-right-angled. The triangle is **scalene**.
+$|\vec{AC}|^2 + |\vec{BC}|^2 = 20 + 80 = 100 \neq 52 = |\vec{AB}|^2$Confirming it is also not
+Right-angled. The triangle is **scalene**.
 
 **Key takeaway:** Always compute and verify rather than assuming geometric properties.
 
@@ -171,7 +171,7 @@ right-angled. The triangle is **scalene**.
 
 **Question:**
 
-The points $(1, 2)$, $(3, 6)$, and $(k, 10)$ are collinear. Find $k$.
+The points $(1, 2)$$(3, 6)$And $(k, 10)$ are collinear. Find $k$.
 
 **Solution:**
 
@@ -193,7 +193,7 @@ $$k - 3 = 2 \implies k = 5$$
 
 **Question:**
 
-$TA$ is a tangent to a circle at $A$. $AB$ is a chord of the circle. If $\angle BAT = 42°$, find the angle in the alternate segment, i.e. the angle subtended by chord $AB$ in the opposite segment.
+$TA$ is a tangent to a circle at $A$. $AB$ is a chord of the circle. If $\angle BAT = 42°$Find the angle in the alternate segment, i.e. The angle subtended by chord $AB$ in the opposite segment.
 
 **Solution:**
 
@@ -201,7 +201,7 @@ The angle between a tangent and a chord through the point of contact equals the 
 
 Therefore the angle in the alternate segment $= 42°$.
 
-If $C$ is any point on the circle on the opposite side of $AB$ from $T$, then $\angle ACB = 42°$.
+If $C$ is any point on the circle on the opposite side of $AB$ from $T$Then $\angle ACB = 42°$.
 
 **DSE Exam Technique:** When stating circle theorems, name the theorem explicitly. The HKEAA requires you to cite the specific theorem being used, e.g. "By the alternate segment theorem."
 
@@ -217,7 +217,7 @@ A circle has radius $r = 10$ cm. A chord subtends a central angle of $120°$. Fi
 
 Let the chord be $AB$ with centre $O$. Then $\angle AOB = 120°$ and $OA = OB = 10$ cm.
 
-Drop the perpendicular from $O$ to $AB$, meeting at $M$.
+Drop the perpendicular from $O$ to $AB$Meeting at $M$.
 
 Since $OM$ bisects $\angle AOB$: $\angle AOM = 60°$.
 
@@ -231,11 +231,11 @@ $$AB = 2 \times AM = 10\sqrt{3} \text{ cm}$$
 
 **Question:**
 
-In triangle $ABC$, $D$ is a point on $BC$ such that $AD$ bisects $\angle BAC$. If $AD = AB$, prove that $ABCD$ is a cyclic quadrilateral.
+In triangle $ABC$$D$ is a point on $BC$ such that $AD$ bisects $\angle BAC$. If $AD = AB$Prove that $ABCD$ is a cyclic quadrilateral.
 
 **Solution:**
 
-Since $AD = AB$, triangle $ABD$ is isosceles with $\angle ABD = \angle ADB$. ... (1)
+Since $AD = AB$Triangle $ABD$ is isosceles with $\angle ABD = \angle ADB$. ... (1)
 
 Since $AD$ bisects $\angle BAC$: $\angle BAD = \angle CAD$. ... (2)
 
@@ -249,7 +249,7 @@ $\angle ABD + \angle CAD + \angle ABD = 180°$ and $\angle CAD + \angle ADC + \a
 
 Also $\angle ADB + \angle ADC = 180°$ (angles on a straight line), so $\angle ABD + \angle ADC = 180°$.
 
-Since $\angle ABD + \angle ACD = 180°$ (from the two triangle angle sums), we have $\angle ADC = \angle ACD$, meaning... Let us reconsider.
+Since $\angle ABD + \angle ACD = 180°$ (from the two triangle angle sums), we have $\angle ADC = \angle ACD$Meaning... Let us reconsider.
 
 From the isosceles triangle: $\angle ABD = \angle ADB$.
 
@@ -304,7 +304,7 @@ $$\text{Area of segment} = 24\pi - 16\sqrt{2} \text{ cm}^2$$
 
 **Question:**
 
-In triangle $ABC$, let $D$ be the midpoint of $BC$. Using vectors, prove that $\vec{AD} = \dfrac{1}{2}(\vec{AB} + \vec{AC})$.
+In triangle $ABC$Let $D$ be the midpoint of $BC$. Using vectors, prove that $\vec{AD} = \dfrac{1}{2}(\vec{AB} + \vec{AC})$.
 
 **Solution:**
 
@@ -324,7 +324,7 @@ $$\vec{AD} = \vec{AB} + \frac{1}{2}(-\vec{AB} + \vec{AC}) = \vec{AB} - \frac{1}{
 
 **Question:**
 
-Find the equation of the circle passing through the points $(0, 0)$, $(4, 0)$, and $(0, 6)$.
+Find the equation of the circle passing through the points $(0, 0)$$(4, 0)$And $(0, 6)$.
 
 **Solution:**
 
@@ -340,7 +340,7 @@ Equation: $x^2 + y^2 - 4x - 6y = 0$.
 
 Completing the square: $(x - 2)^2 + (y - 3)^2 = 4 + 9 = 13$.
 
-Centre: $(2, 3)$, Radius: $\sqrt{13}$.
+Centre: $(2, 3)$Radius: $\sqrt{13}$.
 
 ---
 
@@ -348,7 +348,7 @@ Centre: $(2, 3)$, Radius: $\sqrt{13}$.
 
 **Question:**
 
-In the figure, $AB \parallel CD$. $EF$ is a transversal cutting $AB$ at $G$ and $CD$ at $H$. If $\angle EGB = 3x + 10°$ and $\angle CHG = 5x - 30°$, find $x$.
+In the figure, $AB \parallel CD$. $EF$ is a transversal cutting $AB$ at $G$ and $CD$ at $H$. If $\angle EGB = 3x + 10°$ and $\angle CHG = 5x - 30°$Find $x$.
 
 **Solution:**
 
@@ -372,9 +372,9 @@ $$x = 25°$$
 
 2. **Assuming the tangent is perpendicular to the chord.** The tangent is perpendicular to the **radius** at the point of contact, not to the chord. The perpendicular from the centre to a chord bisects the chord, but this is a different property.
 
-3. **Forgetting that cyclic quadrilateral conditions work both ways.** If opposite angles sum to $180°$, then the quadrilateral is cyclic. But you can also use this property in reverse: if you know a quadrilateral is cyclic, you can conclude that opposite angles sum to $180°$.
+3. **Forgetting that cyclic quadrilateral conditions work both ways.** If opposite angles sum to $180°$Then the quadrilateral is cyclic. But you can also use this property in reverse: if you know a quadrilateral is cyclic, you can conclude that opposite angles sum to $180°$.
 
-4. **Incorrect vector notation in geometry proofs.** When writing vector proofs, always use position vectors (e.g. $\vec{OA}$, $\vec{OB}$) or clearly define your notation. Mixing free vectors and position vectors leads to sign errors.
+4. **Incorrect vector notation in geometry proofs.** When writing vector proofs, always use position vectors (e.g. $\vec{OA}$$\vec{OB}$) or define your notation. Mixing free vectors and position vectors leads to sign errors.
 
 5. **Not rationalising the denominator in coordinate geometry answers.** In DSE, answers involving surds should have rationalised denominators. For example, write $\dfrac{1}{\sqrt{2}}$ as $\dfrac{\sqrt{2}}{2}$.
 
@@ -387,7 +387,7 @@ $$x = 25°$$
 $ABCD$ is a cyclic quadrilateral with $AB = AC$ and $AD$ produced to $E$ such that $CE$ is a tangent to the circle at $C$.
 
 (a) Prove that $\angle ABC = \angle ACE$. (3 marks)
-(b) If $\angle BAC = 50°$ and $\angle ABC = 65°$, find $\angle ADC$. (3 marks)
+(b) If $\angle BAC = 50°$ and $\angle ABC = 65°$Find $\angle ADC$. (3 marks)
 
 **Solution:**
 
@@ -407,10 +407,10 @@ Since $ABCD$ is cyclic: $\angle ADC = 180° - \angle ABC = 180° - 65° = 115°$
 
 ### DSE-2
 
-The vertices of triangle $ABC$ are $A(1, 2)$, $B(5, 4)$, and $C(3, 8)$.
+The vertices of triangle $ABC$ are $A(1, 2)$$B(5, 4)$And $C(3, 8)$.
 
 (a) Find the equation of the perpendicular bisector of $AB$. (4 marks)
-(b) The perpendicular bisector of $AB$ meets the perpendicular bisector of $AC$ at point $O$. Find the coordinates of $O$, the circumcentre of triangle $ABC$. (4 marks)
+(b) The perpendicular bisector of $AB$ meets the perpendicular bisector of $AC$ at point $O$. Find the coordinates of $O$The circumcentre of triangle $ABC$. (4 marks)
 (c) Find the radius of the circumcircle. (2 marks)
 
 **Solution:**
@@ -445,7 +445,7 @@ Circumcentre: $O = (2, 5)$.
 
 ### DSE-3
 
-In triangle $PQR$, $PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
+In triangle $PQR$$PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
 
 (a) Find $QR$. (3 marks)
 (b) Find the area of triangle $PQR$. (2 marks)
@@ -471,10 +471,10 @@ $$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{
 
 ### DSE-4
 
-The position vectors of points $A$, $B$, $C$ are $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, $\mathbf{'\{'}c{'\}'}$ respectively. Point $D$ is such that $\vec{AD} = \dfrac{1}{3}\vec{AC}$.
+The position vectors of points $A$$B$$C$ are $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$$\mathbf{'\{'}c{'\}'}$ respectively. Point $D$ is such that $\vec{AD} = \dfrac{1}{3}\vec{AC}$.
 
 (a) Express $\vec{OD}$ in terms of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. (1 mark)
-(b) If $E$ is the midpoint of $BC$, prove that $A$, $D$, $E$ are collinear. (4 marks)
+(b) If $E$ is the midpoint of $BC$Prove that $A$$D$$E$ are collinear. (4 marks)
 
 **Solution:**
 
@@ -488,17 +488,17 @@ $$\vec{AE} = \vec{OE} - \vec{OA} = \frac{1}{2}(\mathbf{'\{'}b{'\}'} + \mathbf{'\
 
 $$\vec{AD} = \frac{1}{3}(\mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'})$$
 
-For collinearity, $\vec{AE}$ must be a scalar multiple of $\vec{AD}$. This requires more information about the relationship between $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, and $\mathbf{'\{'}c{'\}'}$. If $D$ divides $AE$ in some ratio, we can show:
+For collinearity, $\vec{AE}$ must be a scalar multiple of $\vec{AD}$. This requires more information about the relationship between $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}c{'\}'}$. If $D$ divides $AE$ in some ratio, we can show:
 
 $\vec{AD} = \dfrac{1}{3}\vec{AC}$ means $D$ divides $AC$ in ratio $1:2$.
 
 $E$ is the midpoint of $BC$.
 
-By the converse of the midpoint theorem or using mass points: assign mass $2$ at $A$ and mass $1$ at $C$, giving the centre of mass at $D$ on $AC$. Similarly, mass $1$ at $B$ and $1$ at $C$ gives $E$ on $BC$.
+By the converse of the midpoint theorem or using mass points: assign mass $2$ at $A$ and mass $1$ at $C$Giving the centre of mass at $D$ on $AC$. Similarly, mass $1$ at $B$ and $1$ at $C$ gives $E$ on $BC$.
 
 Consider $\vec{DE} = \vec{OE} - \vec{OD} = \dfrac{1}{2}(\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) - \dfrac{2}{3}\mathbf{'\{'}a{'\}'} - \dfrac{1}{3}\mathbf{'\{'}c{'\}'} = \dfrac{1}{2}\mathbf{'\{'}b{'\}'} + \dfrac{1}{6}\mathbf{'\{'}c{'\}'} - \dfrac{2}{3}\mathbf{'\{'}a{'\}'}$.
 
-This shows collinearity only if additional conditions are given. The question likely assumes $D$ lies on the median from $A$, which it does since $D$ is on $AC$ and $E$ is on $BC$.
+This shows collinearity only if additional conditions are given. The question likely assumes $D$ lies on the median from $A$Which it does since $D$ is on $AC$ and $E$ is on $BC$.
 
 ---
 
@@ -516,7 +516,7 @@ A circle $C$ has equation $x^2 + y^2 - 8x + 6y + 9 = 0$.
 
 $(x - 4)^2 + (y + 3)^2 = 16$.
 
-Centre: $(4, -3)$, Radius: $4$.
+Centre: $(4, -3)$Radius: $4$.
 
 (b) The tangent at $(5, -2)$ is perpendicular to the radius joining $(4, -3)$ and $(5, -2)$.
 

@@ -16,13 +16,13 @@ slug: heat-and-gases
 ### Temperature Scales
 
 Temperature is a scalar quantity that measures the average kinetic energy of the particles in a
-substance. Three temperature scales are in common use:
+Substance. Three temperature scales are in common use:
 
-| Scale      | Symbol | Unit               | Absolute Zero | Key Reference Points                                                  |
+| Scale | Symbol | Unit | Absolute Zero | Key Reference Points |
 | ---------- | ------ | ------------------ | ------------- | --------------------------------------------------------------------- |
-| Celsius    | $T_C$  | $^\circ\mathrm{C}$ | $-273.15$     | $0^\circ\mathrm{C}$ (ice point), $100^\circ\mathrm{C}$ (steam point)  |
-| Kelvin     | $T$    | K                  | $0$           | Same interval as Celsius, shifted by $273.15$                         |
-| Fahrenheit | $T_F$  | $^\circ\mathrm{F}$ | $-459.67$     | $32^\circ\mathrm{F}$ (ice point), $212^\circ\mathrm{F}$ (steam point) |
+| Celsius | $T_C$ | $^\circ\mathrm{C}$ | $-273.15$ | $0^\circ\mathrm{C}$ (ice point), $100^\circ\mathrm{C}$ (steam point) |
+| Kelvin | $T$ | K | $0$ | Same interval as Celsius, shifted by $273.15$ |
+| Fahrenheit | $T_F$ | $^\circ\mathrm{F}$ | $-459.67$ | $32^\circ\mathrm{F}$ (ice point), $212^\circ\mathrm{F}$ (steam point) |
 
 The **Kelvin** is the SI unit of temperature and is defined by fixing the Boltzmann constant
 $k_B = 1.380649 \times 10^{-23}$ J/K.
@@ -72,42 +72,42 @@ $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
 ### Thermometric Properties
 
 A thermometer works by exploiting a **thermometric property** -- a physical property that varies
-continuously with temperature. Common thermometric properties include:
+Continuously with temperature. Common thermometric properties include:
 
-| Thermometer Type       | Thermometric Property                                       | Range                               |
+| Thermometer Type | Thermometric Property | Range |
 | ---------------------- | ----------------------------------------------------------- | ----------------------------------- |
-| Liquid-in-glass        | Length of liquid column (thermal expansion)                 | $-39$ to $350^\circ\mathrm{C}$ (Hg) |
-| Gas thermometer        | Pressure at constant volume, or volume at constant pressure | $-270$ to $1500^\circ\mathrm{C}$    |
-| Thermocouple           | EMF between two junctions at different temperatures         | $-200$ to $1500^\circ\mathrm{C}$    |
-| Resistance thermometer | Electrical resistance of a metal (e.g., platinum)           | $-200$ to $850^\circ\mathrm{C}$     |
+| Liquid-in-glass | Length of liquid column (thermal expansion) | $-39$ to $350^\circ\mathrm{C}$ (Hg) |
+| Gas thermometer | Pressure at constant volume, or volume at constant pressure | $-270$ to $1500^\circ\mathrm{C}$ |
+| Thermocouple | EMF between two junctions at different temperatures | $-200$ to $1500^\circ\mathrm{C}$ |
+| Resistance thermometer | Electrical resistance of a metal (e.g., platinum) | $-200$ to $850^\circ\mathrm{C}$ |
 
 ### Calibration of a Thermometer
 
 To calibrate an arbitrary thermometer, two fixed points are needed:
 
 1. **Lower fixed point** (ice point): temperature of pure melting ice at standard pressure
-   ($0^\circ\mathrm{C}$)
+ ($0^\circ\mathrm{C}$)
 2. **Upper fixed point** (steam point): temperature of pure boiling water at standard pressure
-   ($100^\circ\mathrm{C}$)
+ ($100^\circ\mathrm{C}$)
 
-If $X_0$ is the thermometric property at $0^\circ\mathrm{C}$ and $X_{100}$ at $100^\circ\mathrm{C}$,
-then the temperature corresponding to a property value $X$ is:
+If $X_0$ is the thermometric property at $0^\circ\mathrm{C}$ and $X_{100}$ at $100^\circ\mathrm{C}$
+Then the temperature corresponding to a property value $X$ is:
 
 $$\theta = \frac{X - X_0}{X_{100} - X_0} \times 100^\circ\mathrm{C}$$
 
 This formula assumes the thermometric property varies **linearly** with temperature, which is an
-approximation. Different thermometers will agree exactly at the two fixed points but may differ at
-intermediate temperatures because their properties do not have the same functional dependence on
-temperature.
+Approximation. Different thermometers will agree exactly at the two fixed points but may differ at
+Intermediate temperatures because their properties do not have the same functional dependence on
+Temperature.
 
 ### Absolute Temperature Scale
 
 The **ideal gas scale** defines temperature in terms of the pressure of an ideal gas at constant
-volume. As pressure approaches zero (low-density limit), all real gases behave ideally, so this
-scale is independent of the particular gas used.
+Volume. As pressure approaches zero (low-density limit), all real gases behave ideally, so this
+Scale is independent of the particular gas used.
 
 The absolute zero of temperature ($0$ K) is the theoretical temperature at which all thermal motion
-ceases. On the Celsius scale this corresponds to $-273.15^\circ\mathrm{C}$.
+Ceases. On the Celsius scale this corresponds to $-273.15^\circ\mathrm{C}$.
 
 ---
 
@@ -116,30 +116,30 @@ ceases. On the Celsius scale this corresponds to $-273.15^\circ\mathrm{C}$.
 ### Internal Energy
 
 The **internal energy** $U$ of a substance is the total kinetic energy (translational, rotational,
-vibrational) and potential energy (intermolecular forces) of all its particles.
+Vibrational) and potential energy (intermolecular forces) of all its particles.
 
 For an **ideal gas**, there are no intermolecular forces, so the internal energy is entirely
-kinetic:
+Kinetic:
 
 $$U = \frac{3}{2}Nk_BT = \frac{3}{2}nRT$$
 
-where $N$ is the number of molecules, $n$ is the number of moles, $k_B$ is Boltzmann's constant, and
+Where $N$ is the number of molecules, $n$ is the number of moles, $k_B$ is Boltzmann's constant, and
 $R$ is the molar gas constant.
 
 ### Heat
 
 **Heat** $Q$ is the energy transferred between two systems (or between a system and its
-surroundings) due to a temperature difference. Heat flows spontaneously from a body at higher
-temperature to one at lower temperature.
+Surroundings) due to a temperature difference. Heat flows spontaneously from a body at higher
+Temperature to one at lower temperature.
 
 Key distinction: **Temperature** is a state variable (depends only on the state of the system);
 **heat** is a process variable (depends on the path taken between states).
 
-| Concept         | Symbol | Unit | Nature           |
+| Concept | Symbol | Unit | Nature |
 | --------------- | ------ | ---- | ---------------- |
-| Internal energy | $U$    | J    | State function   |
-| Heat            | $Q$    | J    | Process variable |
-| Temperature     | $T$    | K    | State function   |
+| Internal energy | $U$ | J | State function |
+| Heat | $Q$ | J | Process variable |
+| Temperature | $T$ | K | State function |
 
 ---
 
@@ -148,12 +148,12 @@ Key distinction: **Temperature** is a state variable (depends only on the state 
 ### Definition
 
 The **specific heat capacity** $c$ of a substance is the amount of heat required to raise the
-temperature of $1$ kg of the substance by $1$ K (or $1^\circ\mathrm{C}$, since the intervals are
-identical).
+Temperature of $1$ kg of the substance by $1$ K (or $1^\circ\mathrm{C}$Since the intervals are
+Identical).
 
 $$c = \frac{Q}{m\Delta T}$$
 
-where:
+Where:
 
 - $Q$ = heat energy supplied (J)
 - $m$ = mass (kg)
@@ -165,23 +165,23 @@ The **molar heat capacity** $C$ is the heat required per mole per kelvin:
 
 $$C = Mc$$
 
-where $M$ is the molar mass.
+Where $M$ is the molar mass.
 
 ### Common Specific Heat Capacities
 
-| Substance        | Specific Heat Capacity ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$) |
+| Substance | Specific Heat Capacity ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$) |
 | ---------------- | ------------------------------------------------------------- |
-| Water            | $4186$                                                        |
-| Ice              | $2100$                                                        |
-| Aluminium        | $900$                                                         |
-| Copper           | $385$                                                         |
-| Iron             | $449$                                                         |
-| Lead             | $128$                                                         |
-| Glass            | $840$                                                         |
-| Air (const. $p$) | $1005$                                                        |
+| Water | $4186$ |
+| Ice | $2100$ |
+| Aluminium | $900$ |
+| Copper | $385$ |
+| Iron | $449$ |
+| Lead | $128$ |
+| Glass | $840$ |
+| Air (const. $p$) | $1005$ |
 
 Water has an exceptionally high specific heat capacity, which is why it is used as a coolant and why
-coastal climates are more moderate than inland climates.
+Coastal climates are more moderate than inland climates.
 
 ### Heat Capacity of an Object
 
@@ -197,7 +197,7 @@ When heat $Q$ is supplied to a body at constant volume (no work done):
 $$Q = \Delta U = mc\Delta T$$
 
 This is valid for solids and liquids where thermal expansion work is negligible. For gases, the
-specific heat capacity depends on whether the process is at constant volume or constant pressure.
+Specific heat capacity depends on whether the process is at constant volume or constant pressure.
 
 ### Worked Example 2
 
@@ -257,15 +257,15 @@ $$t = \frac{627900}{1600} = 392.4 \mathrm{ s} = 6.5 \mathrm{ minutes}$$
 
 1. Measure the mass $m_s$ of the solid.
 2. Heat the solid in a water bath to a known temperature $T_s$ (e.g., by boiling water so
-   $T_s \approx 100^\circ\mathrm{C}$).
+ $T_s \approx 100^\circ\mathrm{C}$).
 3. Quickly transfer the solid to an insulated calorimeter containing water of mass $m_w$ at
-   temperature $T_w$.
+ temperature $T_w$.
 4. Stir and record the maximum temperature $T_f$.
 5. Apply the principle of calorimetry (heat lost $=$ heat gained):
 
 $$m_s c_s (T_s - T_f) = (m_w c_w + C_{\mathrm{cal}})(T_f - T_w)$$
 
-where $C_{\mathrm{cal}}$ is the heat capacity of the calorimeter.
+Where $C_{\mathrm{cal}}$ is the heat capacity of the calorimeter.
 
 **Sources of error:**
 
@@ -281,33 +281,33 @@ where $C_{\mathrm{cal}}$ is the heat capacity of the calorimeter.
 ### Definition
 
 **Latent heat** is the energy absorbed or released by a substance during a **phase change** at
-constant temperature. The word "latent" means hidden, because this heat does not produce a
-temperature change.
+Constant temperature. The word "latent" means hidden, because this heat does not produce a
+Temperature change.
 
-| Quantity                             | Symbol | Unit                 | Definition                                             |
+| Quantity | Symbol | Unit | Definition |
 | ------------------------------------ | ------ | -------------------- | ------------------------------------------------------ |
-| Specific latent heat of fusion       | $l_f$  | $\mathrm{J kg}^{-1}$ | Heat to melt $1$ kg of solid at its melting point      |
-| Specific latent heat of vaporization | $l_v$  | $\mathrm{J kg}^{-1}$ | Heat to vaporise $1$ kg of liquid at its boiling point |
+| Specific latent heat of fusion | $l_f$ | $\mathrm{J kg}^{-1}$ | Heat to melt $1$ kg of solid at its melting point |
+| Specific latent heat of vaporization | $l_v$ | $\mathrm{J kg}^{-1}$ | Heat to vaporise $1$ kg of liquid at its boiling point |
 
 The heat involved in a phase change of mass $m$:
 
 $$Q = ml$$
 
-where $l$ is the appropriate specific latent heat.
+Where $l$ is the appropriate specific latent heat.
 
 ### Common Latent Heats
 
 | Substance | $l_f$ ($\mathrm{kJ kg}^{-1}$) | $l_v$ ($\mathrm{kJ kg}^{-1}$) | Melting Point ($^\circ\mathrm{C}$) | Boiling Point ($^\circ\mathrm{C}$) |
 | --------- | ----------------------------- | ----------------------------- | ---------------------------------- | ---------------------------------- |
-| Water     | $334$                         | $2260$                        | $0$                                | $100$                              |
-| Ethanol   | $109$                         | $846$                         | $-114$                             | $78$                               |
-| Aluminium | $397$                         | $10500$                       | $660$                              | $2519$                             |
-| Copper    | $205$                         | $4730$                        | $1085$                             | $2562$                             |
-| Lead      | $23$                          | $871$                         | $327$                              | $1749$                             |
+| Water | $334$ | $2260$ | $0$ | $100$ |
+| Ethanol | $109$ | $846$ | $-114$ | $78$ |
+| Aluminium | $397$ | $10500$ | $660$ | $2519$ |
+| Copper | $205$ | $4730$ | $1085$ | $2562$ |
+| Lead | $23$ | $871$ | $327$ | $1749$ |
 
 Note that $l_v \gg l_f$ for all substances. Vaporisation requires breaking most intermolecular bonds
 (particles gain enough energy to escape the liquid), whereas fusion only requires weakening them
-enough to allow the regular solid structure to break down.
+Enough to allow the regular solid structure to break down.
 
 ### Heating Curve
 
@@ -315,30 +315,30 @@ A heating curve plots temperature against time as a substance is heated at a con
 
 1. **Solid phase**: temperature rises steadily (slope depends on $c_{\mathrm{solid}}$).
 2. **Melting**: temperature remains constant at the melting point while latent heat of fusion is
-   absorbed.
+ absorbed.
 3. **Liquid phase**: temperature rises steadily (slope depends on $c_{\mathrm{liquid}}$).
 4. **Boiling**: temperature remains constant at the boiling point while latent heat of vaporisation
-   is absorbed.
+ is absorbed.
 5. **Gas phase**: temperature rises steadily (slope depends on $c_{\mathrm{gas}}$).
 
 The flat regions on the heating curve correspond to phase transitions where all the supplied heat
-goes into changing the molecular arrangement rather than increasing kinetic energy.
+Goes into changing the molecular arrangement rather than increasing kinetic energy.
 
 ### Cooling Curve
 
 A cooling curve is the reverse: as a substance cools, the temperature drops, plateaus at the
-condensation point, drops again, plateaus at the freezing point, and then drops in the solid phase.
+Condensation point, drops again, plateaus at the freezing point, and then drops in the solid phase.
 
 **Supercooling** can occur: the liquid may cool below its freezing point before crystallisation
-begins. When crystallisation starts, the released latent heat causes the temperature to jump back up
-to the freezing point.
+Begins. When crystallisation starts, the released latent heat causes the temperature to jump back up
+To the freezing point.
 
 ### Why Does Temperature Remain Constant During Phase Change?
 
 During melting or boiling, the supplied heat energy is used to overcome the intermolecular forces
-rather than increase the average kinetic energy of the particles. Since temperature is a measure of
-average kinetic energy, the temperature remains constant while the potential energy of the system
-increases.
+Rather than increase the average kinetic energy of the particles. Since temperature is a measure of
+Average kinetic energy, the temperature remains constant while the potential energy of the system
+Increases.
 
 ### Worked Example 4
 
@@ -380,7 +380,7 @@ $$Q_{\mathrm{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \math
 ### Worked Example 5
 
 $200$ g of ice at $0^\circ\mathrm{C}$ is added to $400$ g of water at $50^\circ\mathrm{C}$ in an
-insulated container. Find the final temperature and state of the mixture.
+Insulated container. Find the final temperature and state of the mixture.
 
 <details>
 <summary>Solution</summary>
@@ -394,7 +394,7 @@ Heat required to melt all the ice:
 
 $$Q_{\mathrm{melt}} = m_i l_f = 0.2 \times 334000 = 66800 \mathrm{ J}$$
 
-Since $Q_{\mathrm{available}} \gt Q_{\mathrm{melt}}$, all the ice melts and the mixture warms above
+Since $Q_{\mathrm{available}} \gt Q_{\mathrm{melt}}$All the ice melts and the mixture warms above
 $0^\circ\mathrm{C}$.
 
 Remaining heat after melting:
@@ -416,13 +416,13 @@ The final mixture is all liquid water at $6.7^\circ\mathrm{C}$.
 ### Determining Specific Latent Heat by Electrical Method
 
 **Aim:** To determine the specific latent heat of fusion of ice (or vaporisation of water) using an
-electrical heater.
+Electrical heater.
 
 **Procedure for latent heat of fusion:**
 
 1. Place crushed ice in a funnel with a heating coil immersed in it.
 2. Allow the ice to start melting and collect the water that drips through for a few minutes before
-   starting the timer (to ensure the ice is already at $0^\circ\mathrm{C}$).
+ starting the timer (to ensure the ice is already at $0^\circ\mathrm{C}$).
 3. Turn on the heater of known power $P$ for a measured time $t$.
 4. Collect the meltwater produced during this time and measure its mass $m$.
 5. The specific latent heat of fusion is:
@@ -434,12 +434,12 @@ $$l_f = \frac{Pt}{m}$$
 - Use crushed ice to ensure good thermal contact.
 - Stir continuously for uniform temperature.
 - Account for heat from the surroundings (the heater must also supply the heat that would normally
-  come from the room to melt ice).
+ come from the room to melt ice).
 - The correct formula accounting for background melting is:
 
 $$l_f = \frac{Pt}{m - m_0}$$
 
-where $m_0$ is the mass of water collected with the heater off over the same time interval.
+Where $m_0$ is the mass of water collected with the heater off over the same time interval.
 
 ---
 
@@ -448,37 +448,37 @@ where $m_0$ is the mass of water collected with the heater off over the same tim
 ### Overview
 
 Heat can be transferred by three mechanisms: **conduction**, **convection**, and **radiation**. In
-most practical situations, more than one mechanism operates simultaneously.
+Most practical situations, more than one mechanism operates simultaneously.
 
-| Mechanism  | Medium Required             | Dominant In              | Physical Basis                            |
+| Mechanism | Medium Required | Dominant In | Physical Basis |
 | ---------- | --------------------------- | ------------------------ | ----------------------------------------- |
-| Conduction | Solid (or stationary fluid) | Metals                   | Molecular collisions / electron transport |
-| Convection | Fluid (liquid or gas)       | Fluids                   | Bulk motion of fluid                      |
-| Radiation  | None (vacuum)               | All, especially high $T$ | Electromagnetic waves                     |
+| Conduction | Solid (or stationary fluid) | Metals | Molecular collisions / electron transport |
+| Convection | Fluid (liquid or gas) | Fluids | Bulk motion of fluid |
+| Radiation | None (vacuum) | All, especially high $T$ | Electromagnetic waves |
 
 ### Conduction
 
 #### Mechanism
 
 In **conduction**, heat is transferred through a material by the vibration and collision of
-particles, without bulk motion of the material. In metals, free electrons also contribute
-significantly to heat transfer.
+Particles, without bulk motion of the material. In metals, free electrons also contribute
+Significantly to heat transfer.
 
 In a non-metal: particles at the hot end vibrate more vigorously and pass energy to neighbours via
-intermolecular forces. This process is relatively slow.
+Intermolecular forces. This process is relatively slow.
 
 In a metal: in addition to lattice vibrations, the sea of free electrons can move freely and carry
-kinetic energy rapidly from the hot end to the cold end. This is why metals are generally much
-better thermal conductors than non-metals.
+Kinetic energy rapidly from the hot end to the cold end. This is why metals are generally much
+Better thermal conductors than non-metals.
 
 #### Fourier's Law of Heat Conduction
 
 The rate of heat flow through a material is proportional to the temperature gradient and the
-cross-sectional area:
+Cross-sectional area:
 
 $$\frac{dQ}{dt} = -kA\frac{dT}{dx}$$
 
-where:
+Where:
 
 - $k$ = thermal conductivity ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$)
 - $A$ = cross-sectional area ($\mathrm{m}^2$)
@@ -492,22 +492,22 @@ $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d}$$
 
 #### Thermal Conductivities
 
-| Material             | $k$ ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) |
+| Material | $k$ ($\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) |
 | -------------------- | ----------------------------------------- |
-| Copper               | $385$                                     |
-| Aluminium            | $205$                                     |
-| Steel                | $50$                                      |
-| Glass                | $0.8$                                     |
-| Water                | $0.6$                                     |
-| Brick                | $0.6$-$0.8$                               |
-| Wood                 | $0.1$-$0.2$                               |
-| Air                  | $0.025$                                   |
-| Expanded polystyrene | $0.03$-$0.04$                             |
+| Copper | $385$ |
+| Aluminium | $205$ |
+| Steel | $50$ |
+| Glass | $0.8$ |
+| Water | $0.6$ |
+| Brick | $0.6$-$0.8$ |
+| Wood | $0.1$-$0.2$ |
+| Air | $0.025$ |
+| Expanded polystyrene | $0.03$-$0.04$ |
 
 #### U-Value (Overall Heat Transfer Coefficient)
 
 The **U-value** combines the thermal conductivities of all layers in a composite structure (wall,
-insulation, etc.) into a single figure:
+Insulation, etc.) into a single figure:
 
 $$U = \frac{Q}{A \cdot t \cdot \Delta T}$$
 
@@ -531,19 +531,19 @@ A lower U-value indicates better insulation.
 #### Mechanism
 
 **Convection** is the transfer of heat by the bulk movement of a fluid. When a fluid is heated, it
-expands and becomes less dense. The warmer, less dense fluid rises and is replaced by cooler, denser
-fluid, creating a **convection current**.
+Expands and becomes less dense. The warmer, less dense fluid rises and is replaced by cooler, denser
+Fluid, creating a **convection current**.
 
 There are two types:
 
 - **Natural convection**: driven by buoyancy forces due to density differences from temperature
-  differences.
+ differences.
 - **Forced convection**: driven by an external agent (fan, pump, wind).
 
 #### Examples
 
 - Sea breezes: land heats faster than water during the day; air over land rises, cooler air from the
-  sea flows in to replace it.
+ sea flows in to replace it.
 - Radiators heat a room primarily by convection (despite the name).
 - Atmospheric circulation: differential solar heating drives large-scale convection cells.
 
@@ -559,10 +559,10 @@ There are two types:
 #### Mechanism
 
 **Thermal radiation** is electromagnetic radiation emitted by all objects with temperature above
-absolute zero. It does not require a medium and can travel through vacuum.
+Absolute zero. It does not require a medium and can travel through vacuum.
 
 All objects emit and absorb thermal radiation simultaneously. The net rate of radiative heat
-transfer depends on the temperature difference between the body and its surroundings.
+Transfer depends on the temperature difference between the body and its surroundings.
 
 #### Stefan-Boltzmann Law
 
@@ -570,7 +570,7 @@ The total power radiated by a black body is:
 
 $$P = \sigma A T^4$$
 
-where:
+Where:
 
 - $\sigma = 5.67 \times 10^{-8}$ $\mathrm{W m}^{-2}\mathrm{ K}^{-4}$ (Stefan-Boltzmann constant)
 - $A$ = surface area ($\mathrm{m}^2$)
@@ -592,26 +592,26 @@ $$P_{\mathrm{net}} = e\sigma A(T_1^4 - T_2^4)$$
 #### Black Body Radiation
 
 A **black body** is an idealised physical body that absorbs all incident electromagnetic radiation,
-regardless of frequency or angle of incidence. It is also a perfect emitter.
+Regardless of frequency or angle of incidence. It is also a perfect emitter.
 
 Key features of the black body radiation spectrum:
 
 - The spectrum is continuous and depends only on temperature.
 - The total radiated power is proportional to $T^4$ (Stefan-Boltzmann law).
 - The wavelength at which the radiation is most intense is inversely proportional to $T$ (Wien's
-  displacement law):
+ displacement law):
 
 $$\lambda_{\mathrm{max}} T = b$$
 
-where $b = 2.898 \times 10^{-3}$ $\mathrm{m K}$ (Wien's constant).
+Where $b = 2.898 \times 10^{-3}$ $\mathrm{m K}$ (Wien's constant).
 
 - As temperature increases, the peak wavelength shifts to shorter wavelengths (higher frequencies).
-  This explains why objects glow red, then orange, then yellow, then white as they get hotter.
+ This explains why objects glow red, then orange, then yellow, then white as they get hotter.
 
 #### Wien's Displacement Law: Worked Example
 
 The Sun has a surface temperature of approximately $5778$ K. At what wavelength does its radiation
-peak?
+Peak?
 
 <details>
 <summary>Solution</summary>
@@ -619,14 +619,14 @@ peak?
 $$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{5778} = 5.01 \times 10^{-7} \mathrm{ m} = 501 \mathrm{ nm}$$
 
 This is in the green-blue region of the visible spectrum, consistent with the Sun appearing
-yellowish-white (the combined effect of all wavelengths, modified by atmospheric scattering).
+Yellowish-white (the combined effect of all wavelengths, modified by atmospheric scattering).
 
 </details>
 
 #### Newton's Law of Cooling
 
 When the temperature difference is not too large, the rate of heat loss from a body to its
-surroundings is approximately proportional to the temperature difference:
+Surroundings is approximately proportional to the temperature difference:
 
 $$\frac{dQ}{dt} \propto (T_{\mathrm{body}} - T_{\mathrm{surr}})$$
 
@@ -634,17 +634,17 @@ Or, for a body of heat capacity $C$:
 
 $$C\frac{dT}{dt} = -hA(T - T_s)$$
 
-where $h$ is the heat transfer coefficient. This gives exponential decay of the temperature
-difference:
+Where $h$ is the heat transfer coefficient. This gives exponential decay of the temperature
+Difference:
 
 $$T(t) = T_s + (T_0 - T_s)e^{-t/\tau}$$
 
-where $\tau = C / (hA)$ is the time constant.
+Where $\tau = C / (hA)$ is the time constant.
 
 :::info
-info
-radiation is not the dominant mechanism. At large temperature differences, the $T^4$ dependence of
-radiation becomes significant and the cooling is faster than predicted by Newton's law.
+Info
+Radiation is not the dominant mechanism. At large temperature differences, the $T^4$ dependence of
+Radiation becomes significant and the cooling is faster than predicted by Newton's law.
 :::
 
 ---
@@ -657,19 +657,19 @@ Explore the simulation above to develop intuition for this topic.
 
 ### Basic Definitions
 
-| Quantity            | Symbol | Unit                     | Definition                |
+| Quantity | Symbol | Unit | Definition |
 | ------------------- | ------ | ------------------------ | ------------------------- |
-| Pressure            | $p$    | Pa ($\mathrm{N m}^{-2}$) | Force per unit area       |
-| Volume              | $V$    | $\mathrm{m}^3$           | Space occupied by the gas |
-| Temperature         | $T$    | K                        | Absolute temperature      |
-| Amount of substance | $n$    | mol                      | Number of moles           |
-| Molar mass          | $M$    | $\mathrm{kg mol}^{-1}$   | Mass per mole             |
+| Pressure | $p$ | Pa ($\mathrm{N m}^{-2}$) | Force per unit area |
+| Volume | $V$ | $\mathrm{m}^3$ | Space occupied by the gas |
+| Temperature | $T$ | K | Absolute temperature |
+| Amount of substance | $n$ | mol | Number of moles |
+| Molar mass | $M$ | $\mathrm{kg mol}^{-1}$ | Mass per mole |
 
 ### Standard Temperature and Pressure (STP)
 
-| Standard          | Temperature                      | Pressure                |
+| Standard | Temperature | Pressure |
 | ----------------- | -------------------------------- | ----------------------- |
-| STP (IUPAC, 1982) | $273.15$ K ($0^\circ\mathrm{C}$) | $100$ kPa ($1$ bar)     |
+| STP (IUPAC, 1982) | $273.15$ K ($0^\circ\mathrm{C}$) | $100$ kPa ($1$ bar) |
 | STP (traditional) | $273.15$ K ($0^\circ\mathrm{C}$) | $101.325$ kPa ($1$ atm) |
 
 **Molar volume at STP (IUPAC):** $V_m = 22.7$ L/mol **Molar volume at traditional STP:**
@@ -678,7 +678,7 @@ $V_m = 22.4$ L/mol
 ### Boyle's Law
 
 **Statement:** For a fixed mass of gas at constant temperature, the pressure is inversely
-proportional to the volume.
+Proportional to the volume.
 
 $$p \propto \frac{1}{V} \quad (\mathrm{at constant } T, n)$$
 
@@ -687,32 +687,32 @@ $$p_1 V_1 = p_2 V_2$$
 **Graphical representations:**
 
 - $p$ vs $1/V$: straight line through origin (proportionality)
-- $p$ vs $V$: rectangular hyperbola (at constant $T$, different curves for different $T$)
+- $p$ vs $V$: rectangular hyperbola (at constant $T$Different curves for different $T$)
 - $pV$ vs $p$: horizontal line (at constant $T$)
 
 ### Charles's Law
 
 **Statement:** For a fixed mass of gas at constant pressure, the volume is directly proportional to
-the absolute temperature.
+The absolute temperature.
 
 $$V \propto T \quad (\mathrm{at constant } p, n)$$
 
 $$\frac{V_1}{T_1} = \frac{V_2}{T_2}$$
 
 **Critical point:** Temperature must be in Kelvin. If Celsius is used, the graph of $V$ vs $T_C$ is
-a straight line that extrapolates to $V = 0$ at $T_C = -273.15^\circ\mathrm{C}$.
+A straight line that extrapolates to $V = 0$ at $T_C = -273.15^\circ\mathrm{C}$.
 
 ### Gay-Lussac's Law (Pressure-Temperature Law)
 
 **Statement:** For a fixed mass of gas at constant volume, the pressure is directly proportional to
-the absolute temperature.
+The absolute temperature.
 
 $$p \propto T \quad (\mathrm{at constant } V, n)$$
 
 $$\frac{p_1}{T_1} = \frac{p_2}{T_2}$$
 
 This is the principle behind the constant-volume gas thermometer and the pressure cooker (the
-pressure increases as temperature increases at constant volume).
+Pressure increases as temperature increases at constant volume).
 
 ### General Gas Law
 
@@ -728,7 +728,7 @@ The **ideal gas equation** unifies all gas laws:
 
 $$pV = nRT$$
 
-where $R = 8.314$ $\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$ is the universal molar gas constant.
+Where $R = 8.314$ $\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$ is the universal molar gas constant.
 
 Alternative forms:
 
@@ -737,7 +737,7 @@ $\mathrm{mol}^{-1}$ is Avogadro's number):
 
 $$pV = Nk_BT$$
 
-where $k_B = R / N_A = 1.381 \times 10^{-23}$ $\mathrm{J K}^{-1}$ is Boltzmann's constant.
+Where $k_B = R / N_A = 1.381 \times 10^{-23}$ $\mathrm{J K}^{-1}$ is Boltzmann's constant.
 
 In terms of mass and density:
 
@@ -745,12 +745,12 @@ $$pV = \frac{m}{M}RT$$
 
 $$p = \frac{\rho RT}{M}$$
 
-where $\rho = m/V$ is the density.
+Where $\rho = m/V$ is the density.
 
 ### Worked Example 6
 
 A gas occupies $5.0 \times 10^{-3}$ $\mathrm{m}^3$ at $2.0 \times 10^5$ Pa and $300$ K. It is
-compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$
+Compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$
 Pa. Find the new temperature.
 
 <details>
@@ -781,12 +781,12 @@ $$n = \frac{202}{2478.9} = 0.0815 \mathrm{ mol}$$
 ### Experimental Verification of Gas Laws
 
 **Boyle's Law experiment:** A column of air is trapped in a closed tube by a column of oil or
-mercury. The pressure is varied by changing the height of the oil reservoir, and the volume of the
-trapped air is measured. A graph of $p$ vs $1/V$ yields a straight line through the origin.
+Mercury. The pressure is varied by changing the height of the oil reservoir, and the volume of the
+Trapped air is measured. A graph of $p$ vs $1/V$ yields a straight line through the origin.
 
 **Charles's Law experiment:** A capillary tube containing a drop of mercury trapping a column of air
-is heated in a water bath. The length of the air column (proportional to volume) is measured at
-various temperatures. A graph of $V$ vs $T$ (in Kelvin) yields a straight line through the origin.
+Is heated in a water bath. The length of the air column (proportional to volume) is measured at
+Various temperatures. A graph of $V$ vs $T$ (in Kelvin) yields a straight line through the origin.
 
 ---
 
@@ -798,30 +798,30 @@ The ideal gas equation is derived under the following assumptions:
 
 1. **Point particles**: Gas molecules occupy negligible volume compared to the container.
 2. **No intermolecular forces**: Molecules do not exert forces on each other except during
-   collisions.
+ collisions.
 3. **Elastic collisions**: Collisions between molecules and between molecules and walls are
-   perfectly elastic (kinetic energy is conserved).
+ perfectly elastic (kinetic energy is conserved).
 4. **Random motion**: Molecules move in random directions with a distribution of speeds.
 5. **Large number of molecules**: Statistical treatment is valid.
 6. **Short duration of collisions**: The time of a collision is negligible compared to the time
-   between collisions.
+ between collisions.
 
 ### When Do Real Gases Deviate from Ideal Behaviour?
 
 Real gases deviate from ideal behaviour at:
 
 - **High pressures**: molecules are forced close together, so their volume becomes significant
-  compared to the container volume.
+ compared to the container volume.
 - **Low temperatures**: molecules move slowly enough that intermolecular attractive forces become
-  significant (this is why gases liquefy at low temperatures).
+ significant (this is why gases liquefy at low temperatures).
 - **High densities**: same as high pressure -- molecules are close together.
 
 Under these conditions, the $pV = nRT$ equation gives inaccurate results. The **van der Waals
-equation** provides a better model:
+Equation** provides a better model:
 
 $$\left(p + \frac{an^2}{V^2}\right)(V - nb) = nRT$$
 
-where:
+Where:
 
 - $a$ accounts for intermolecular attractive forces (reduces effective pressure)
 - $b$ accounts for the finite volume of molecules (reduces effective volume)
@@ -843,12 +843,12 @@ $$Z = \frac{pV}{nRT}$$
 ### Molecular Model
 
 The kinetic theory of gases explains the macroscopic properties of gases (pressure, temperature) in
-terms of the microscopic behaviour of molecules.
+Terms of the microscopic behaviour of molecules.
 
 ### Pressure of an Ideal Gas -- Derivation
 
 Consider $N$ molecules in a cubic container of side $L$. A single molecule of mass $m$ moving with
-velocity $\mathbf{'\{'}v{'\}'} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to the
+Velocity $\mathbf{'\{'}v{'\}'} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to the
 $x$-axis.
 
 **Change in momentum per collision:**
@@ -871,10 +871,10 @@ $$F_{\mathrm{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=
 
 $$p = \frac{F_{\mathrm{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N} v_{x,i}^2 = \frac{mN}{V}\langle v_x^2 \rangle$$
 
-where $\langle v_x^2 \rangle = \frac{1}{N}\sum_{i=1}^{N} v_{x,i}^2$ is the mean square velocity in
-the $x$-direction.
+Where $\langle v_x^2 \rangle = \frac{1}{N}\sum_{i=1}^{N} v_{x,i}^2$ is the mean square velocity in
+The $x$-direction.
 
-By symmetry, $\langle v_x^2 \rangle = \langle v_y^2 \rangle = \langle v_z^2 \rangle$, and:
+By symmetry, $\langle v_x^2 \rangle = \langle v_y^2 \rangle = \langle v_z^2 \rangle$And:
 
 $$\langle v^2 \rangle = \langle v_x^2 \rangle + \langle v_y^2 \rangle + \langle v_z^2 \rangle = 3\langle v_x^2 \rangle$$
 
@@ -895,12 +895,12 @@ $$\frac{1}{3}Nm\langle v^2 \rangle = Nk_BT$$
 $$\frac{1}{2}m\langle v^2 \rangle = \frac{3}{2}k_BT$$
 
 The quantity $\frac{1}{2}m\langle v^2 \rangle$ is the **mean translational kinetic energy** of a
-molecule:
+Molecule:
 
 $$\langle E_k \rangle = \frac{3}{2}k_BT$$
 
 This is a central result: temperature is a direct measure of the average translational kinetic
-energy of molecules.
+Energy of molecules.
 
 ### Root Mean Square Speed
 
@@ -912,12 +912,12 @@ From the kinetic theory:
 
 $$v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
 
-where $M$ is the molar mass ($M = N_A m$).
+Where $M$ is the molar mass ($M = N_A m$).
 
 ### Worked Example 8
 
 Find the rms speed of nitrogen molecules ($M = 28.0$ $\mathrm{g/mol} = 0.0280$ $\mathrm{kg/mol}$) at
-room temperature ($300$ K).
+Room temperature ($300$ K).
 
 <details>
 <summary>Solution</summary>
@@ -939,15 +939,15 @@ Key features of the distribution:
 
 - The curve is asymmetric, skewed towards higher speeds (long tail).
 - There are three characteristic speeds:
-  - **Most probable speed** $v_p$: speed at the peak of the distribution
+ - **Most probable speed** $v_p$: speed at the peak of the distribution
 
     $$v_p = \sqrt{\frac{2k_BT}{m}} = \sqrt{\frac{2RT}{M}}$$
 
-  - **Mean speed** $\langle v \rangle$:
+ - **Mean speed** $\langle v \rangle$:
 
     $$\langle v \rangle = \sqrt{\frac{8k_BT}{\pi m}} = \sqrt{\frac{8RT}{\pi M}}$$
 
-  - **Root mean square speed** $v_{\mathrm{rms}}$:
+ - **Root mean square speed** $v_{\mathrm{rms}}$:
 
     $$v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}}$$
 
@@ -958,15 +958,15 @@ Key features of the distribution:
 ### Equipartition of Energy
 
 The **equipartition theorem** states that each degree of freedom that appears quadratically in the
-energy contributes $\frac{1}{2}k_BT$ to the average energy per molecule (or $\frac{1}{2}RT$ per
-mole).
+Energy contributes $\frac{1}{2}k_BT$ to the average energy per molecule (or $\frac{1}{2}RT$ per
+Mole).
 
 For a monatomic ideal gas (3 translational degrees of freedom):
 
 $$U = \frac{3}{2}nRT, \quad C_V = \frac{3}{2}R, \quad C_p = \frac{5}{2}R$$
 
 For a diatomic ideal gas at moderate temperatures (3 translational + 2 rotational degrees of
-freedom):
+Freedom):
 
 $$U = \frac{5}{2}nRT, \quad C_V = \frac{5}{2}R, \quad C_p = \frac{7}{2}R$$
 
@@ -979,10 +979,10 @@ $$\gamma = \frac{C_p}{C_V}$$
 
 ### Molar Heat Capacities of Gases
 
-| Type      | $C_V$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $C_p$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $\gamma = C_p/C_V$ |
+| Type | $C_V$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $C_p$ ($\mathrm{J mol}^{-1}\mathrm{ K}^{-1}$) | $\gamma = C_p/C_V$ |
 | --------- | --------------------------------------------- | --------------------------------------------- | ------------------ |
-| Monatomic | $12.5$                                        | $20.8$                                        | $1.67$             |
-| Diatomic  | $20.8$                                        | $29.1$                                        | $1.40$             |
+| Monatomic | $12.5$ | $20.8$ | $1.67$ |
+| Diatomic | $20.8$ | $29.1$ | $1.40$ |
 
 ---
 
@@ -991,7 +991,7 @@ $$\gamma = \frac{C_p}{C_V}$$
 ### Definition
 
 When a gas expands against an external pressure, it does work. For a small expansion $dV$ against
-pressure $p$:
+Pressure $p$:
 
 $$dW = p\,dV$$
 
@@ -1003,23 +1003,23 @@ $$W = p(V_2 - V_1) = p\Delta V$$
 
 $$\Delta U = Q - W$$
 
-where:
+Where:
 
 - $\Delta U$ = change in internal energy (J)
 - $Q$ = heat supplied to the system (J)
 - $W$ = work done **by** the system (J)
 
 Sign convention: $Q \gt 0$ when heat is absorbed by the system; $W \gt 0$ when the system does work
-on the surroundings.
+On the surroundings.
 
 ### Special Cases
 
-| Process                | Condition      | Work Done                                | Heat Supplied      | Internal Energy Change |
+| Process | Condition | Work Done | Heat Supplied | Internal Energy Change |
 | ---------------------- | -------------- | ---------------------------------------- | ------------------ | ---------------------- |
-| Isothermal             | $\Delta T = 0$ | $W = nRT\ln(V_2/V_1)$                    | $Q = W$            | $\Delta U = 0$         |
-| Isochoric (const. $V$) | $\Delta V = 0$ | $W = 0$                                  | $Q = nC_V\Delta T$ | $\Delta U = Q$         |
-| Isobaric (const. $p$)  | $\Delta p = 0$ | $W = p\Delta V$                          | $Q = nC_p\Delta T$ | $\Delta U = Q - W$     |
-| Adiabatic              | $Q = 0$        | $W = \frac{p_1V_1 - p_2V_2}{\gamma - 1}$ | $Q = 0$            | $\Delta U = -W$        |
+| Isothermal | $\Delta T = 0$ | $W = nRT\ln(V_2/V_1)$ | $Q = W$ | $\Delta U = 0$ |
+| Isochoric (const. $V$) | $\Delta V = 0$ | $W = 0$ | $Q = nC_V\Delta T$ | $\Delta U = Q$ |
+| Isobaric (const. $p$) | $\Delta p = 0$ | $W = p\Delta V$ | $Q = nC_p\Delta T$ | $\Delta U = Q - W$ |
+| Adiabatic | $Q = 0$ | $W = \frac{p_1V_1 - p_2V_2}{\gamma - 1}$ | $Q = 0$ | $\Delta U = -W$ |
 
 For an adiabatic process:
 
@@ -1030,7 +1030,7 @@ $$TV^{\gamma - 1} = \mathrm{constant}$$
 ### Worked Example 9
 
 $2.0$ moles of an ideal monatomic gas expand isothermally at $300$ K from $5.0$ L to $15.0$ L. Find
-the work done and the heat absorbed.
+The work done and the heat absorbed.
 
 <details>
 <summary>Solution</summary>
@@ -1039,7 +1039,7 @@ $$W = nRT\ln\left(\frac{V_2}{V_1}\right) = 2.0 \times 8.314 \times 300 \times \l
 
 $$W = 4988.4 \times \ln(3) = 4988.4 \times 1.099 = 5482 \mathrm{ J}$$
 
-Since the process is isothermal, $\Delta U = 0$, so $Q = W = 5482$ J.
+Since the process is isothermal, $\Delta U = 0$So $Q = W = 5482$ J.
 
 </details>
 
@@ -1050,41 +1050,41 @@ Since the process is isothermal, $\Delta U = 0$, so $Q = W = 5482$ J.
 ### Evaporation
 
 **Evaporation** is the process by which molecules escape from the surface of a liquid at
-temperatures below the boiling point. It occurs because molecules near the surface have a
-distribution of kinetic energies, and the most energetic ones can overcome the intermolecular forces
-and escape.
+Temperatures below the boiling point. It occurs because molecules near the surface have a
+Distribution of kinetic energies, and the most energetic ones can overcome the intermolecular forces
+And escape.
 
 Key features:
 
 - Evaporation occurs **only at the surface** (unlike boiling, which occurs throughout the liquid).
 - Evaporation causes **cooling** of the remaining liquid (the most energetic molecules leave,
-  lowering the average kinetic energy).
+ lowering the average kinetic energy).
 - The rate of evaporation depends on:
-  - Temperature (higher temperature = faster evaporation)
-  - Surface area (larger area = faster evaporation)
-  - Air flow over the surface (removes vapour molecules, maintaining concentration gradient)
-  - Vapour pressure of the liquid
+ - Temperature (higher temperature = faster evaporation)
+ - Surface area (larger area = faster evaporation)
+ - Air flow over the surface (removes vapour molecules, maintaining concentration gradient)
+ - Vapour pressure of the liquid
 
 ### Boiling
 
 **Boiling** occurs when the **saturated vapour pressure** of the liquid equals the external
-atmospheric pressure. At this point, bubbles can form within the liquid (not just at the surface)
-and rise to the top.
+Atmospheric pressure. At this point, bubbles can form within the liquid (not just at the surface)
+And rise to the top.
 
 - The boiling point of a liquid depends on the external pressure.
 - At higher altitudes (lower atmospheric pressure), water boils at a temperature below
-  $100^\circ\mathrm{C}$.
+ $100^\circ\mathrm{C}$.
 - In a pressure cooker, the high pressure raises the boiling point, allowing food to cook faster.
 
 ### Distinction Between Evaporation and Boiling
 
-| Feature     | Evaporation                         | Boiling                            |
+| Feature | Evaporation | Boiling |
 | ----------- | ----------------------------------- | ---------------------------------- |
-| Location    | Surface only                        | Throughout the liquid              |
-| Temperature | Any temperature below boiling point | At a specific temperature          |
-| Bubbles     | No                                  | Yes                                |
-| Rate        | Generally slow                      | Can be rapid                       |
-| Condition   | Always occurring                    | Requires SVP $=$ external pressure |
+| Location | Surface only | Throughout the liquid |
+| Temperature | Any temperature below boiling point | At a specific temperature |
+| Bubbles | No | Yes |
+| Rate | Generally slow | Can be rapid |
+| Condition | Always occurring | Requires SVP $=$ external pressure |
 
 ---
 
@@ -1099,57 +1099,57 @@ $90^\circ\mathrm{C}$. Temperature measures the _average_ kinetic energy per part
 ### Mistake 2: Using Celsius in Gas Law Calculations
 
 All gas law calculations require temperature in **Kelvin**. Using Celsius will produce incorrect
-results. For example, doubling the Celsius temperature from $20^\circ\mathrm{C}$ to
+Results. For example, doubling the Celsius temperature from $20^\circ\mathrm{C}$ to
 $40^\circ\mathrm{C}$ is NOT a doubling of the absolute temperature ($293$ K to $313$ K).
 
 ### Mistake 3: Forgetting to Account for the Calorimeter
 
 In method of mixtures experiments, the calorimeter itself absorbs heat. Ignoring the calorimeter's
-heat capacity $C_{\mathrm{cal}}$ leads to an overestimate of the specific heat capacity of the
-sample. The correct energy balance is:
+Heat capacity $C_{\mathrm{cal}}$ leads to an overestimate of the specific heat capacity of the
+Sample. The correct energy balance is:
 
 $$m_s c_s (T_s - T_f) = (m_w c_w + C_{\mathrm{cal}})(T_f - T_w)$$
 
 ### Mistake 4: Assuming All Ice Melts (or All Water Freezes)
 
 When mixing ice and water, always check whether the available heat is sufficient to melt all the ice
-before assuming the final state is all liquid. If not, the final temperature is $0^\circ\mathrm{C}$
-and the system is a mixture of ice and water.
+Before assuming the final state is all liquid. If not, the final temperature is $0^\circ\mathrm{C}$
+And the system is a mixture of ice and water.
 
 ### Mistake 5: Wrong Sign Convention in the First Law
 
 The first law of thermodynamics is $\Delta U = Q - W$. Here $W$ is work done _by_ the system. If the
-problem gives work done _on_ the system, you must negate it. Be consistent with the sign convention
-throughout.
+Problem gives work done _on_ the system, you must negate it. Be consistent with the sign convention
+Throughout.
 
 ### Mistake 6: Confusing the Three Characteristic Speeds
 
 The most probable speed, mean speed, and rms speed are different. For Maxwell-Boltzmann
-distributions:
+Distributions:
 
 $$v_p = \sqrt{\frac{2RT}{M}}, \quad \langle v \rangle = \sqrt{\frac{8RT}{\pi M}}, \quad v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}}$$
 
 The relationship is $v_p \lt \langle v \rangle \lt v_{\mathrm{rms}}$. In DSE problems, pay attention
-to which speed the question asks for.
+To which speed the question asks for.
 
 ### Mistake 7: Applying Boyle's Law When Temperature Changes
 
 Boyle's Law ($p_1 V_1 = p_2 V_2$) is only valid when temperature is constant. If the problem
-involves a temperature change, you must use the general gas law:
+Involves a temperature change, you must use the general gas law:
 
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 
 ### Mistake 8: Units in Thermal Conductivity Problems
 
 When using Fourier's law, ensure all quantities are in SI units: $k$ in
-$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$, $A$ in $\mathrm{m}^2$, $d$ in $\mathrm{m}$, $\Delta T$ in K. A
-common error is using centimetres for thickness without converting to metres.
+$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$$A$ in $\mathrm{m}^2$$d$ in $\mathrm{m}$$\Delta T$ in K. A
+Common error is using centimetres for thickness without converting to metres.
 
 ### Mistake 9: Mixing Up Specific Heat Capacity and Heat Capacity
 
 Specific heat capacity $c$ is per unit mass ($\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$). Heat capacity
 $C$ is for the entire object ($\mathrm{J K}^{-1}$). They are related by $C = mc$. Using one in place
-of the other is a frequent error.
+Of the other is a frequent error.
 
 ### Mistake 10: Incorrect U-Value Calculation
 
@@ -1183,9 +1183,9 @@ $$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 
 A $0.3$ kg aluminium block at $200^\circ\mathrm{C}$ is dropped into $1.0$ kg of oil at
 $25^\circ\mathrm{C}$ contained in a copper calorimeter of mass $0.2$ kg at $25^\circ\mathrm{C}$. The
-specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Find the final
-temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$,
-copper $= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
+Specific heat capacity of oil is $2100$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$. Find the final
+Temperature. (Specific heat capacity of aluminium $= 900$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$
+Copper $= 385$ $\mathrm{J kg}^{-1}\mathrm{ K}^{-1}$.)
 
 <details>
 <summary>Solution</summary>
@@ -1230,8 +1230,8 @@ Heat required to warm water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$:
 
 $$Q_{\mathrm{warm}} = m_w c_w (100 - 20) = 0.5 \times 4186 \times 80 = 167440 \mathrm{ J}$$
 
-Since $Q_{\mathrm{max}} \gt Q_{\mathrm{warm}}$, all the steam condenses and the final temperature is
-above $20^\circ\mathrm{C}$ but we need to check if it reaches $100^\circ\mathrm{C}$.
+Since $Q_{\mathrm{max}} \gt Q_{\mathrm{warm}}$All the steam condenses and the final temperature is
+Above $20^\circ\mathrm{C}$ but we need to check if it reaches $100^\circ\mathrm{C}$.
 
 Actually, $Q_{\mathrm{warm}} = 167440$ J is less than the latent heat of condensation alone
 ($226000$ J), so only part of the steam condenses. The final temperature is $100^\circ\mathrm{C}$.
@@ -1251,8 +1251,8 @@ The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\math
 <summary>Question 4: Thermal Conductivity</summary>
 
 A glass window of area $1.5$ $\mathrm{m}^2$ and thickness $5.0$ mm has an indoor surface temperature
-of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}$. Find the rate of
-heat loss through the window. (Thermal conductivity of glass $= 0.8$
+Of $20^\circ\mathrm{C}$ and an outdoor surface temperature of $5^\circ\mathrm{C}$. Find the rate of
+Heat loss through the window. (Thermal conductivity of glass $= 0.8$
 $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$.)
 
 <details>
@@ -1269,7 +1269,7 @@ $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}
 <summary>Question 5: U-Value of Composite Wall</summary>
 
 A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$
-cm layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
+Cm layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
 
 <details>
 <summary>Solution</summary>
@@ -1308,7 +1308,7 @@ $$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \mathrm{ W}$$
 <summary>Question 7: Gas Law Combined</summary>
 
 A gas cylinder contains $10$ L of oxygen at $20^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa. If the
-temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to maintain
+Temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to maintain
 $1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$
 Pa) escapes?
 
@@ -1330,7 +1330,7 @@ Moles escaped:
 
 $$\Delta n = 6.154 - 5.108 = 1.046 \mathrm{ mol}$$
 
-Volume at STP conditions ($20^\circ\mathrm{C}$, $1.01 \times 10^5$ Pa):
+Volume at STP conditions ($20^\circ\mathrm{C}$$1.01 \times 10^5$ Pa):
 
 $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
 
@@ -1349,7 +1349,7 @@ $\mathrm{g/mol}$) at the same temperature.
 $$\frac{v_{\mathrm{rms,H}_2}}{v_{\mathrm{rms,O}_2}} = \sqrt{\frac{M_{\mathrm{O}_2}}{M_{\mathrm{H}_2}}} = \sqrt{\frac{32.0}{2.0}} = \sqrt{16} = 4$$
 
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is
-consistent with the observation that lighter gases diffuse more rapidly (Graham's law).
+Consistent with the observation that lighter gases diffuse more rapidly (Graham's law).
 
 </details>
 </details>
@@ -1358,7 +1358,7 @@ consistent with the observation that lighter gases diffuse more rapidly (Graham'
 <summary>Question 9: First Law of Thermodynamics</summary>
 
 $1.0$ mol of an ideal monatomic gas at $300$ K expands isobarically from $10$ L to $20$ L. Find the
-work done, the change in internal energy, and the heat supplied.
+Work done, the change in internal energy, and the heat supplied.
 
 <details>
 <summary>Solution</summary>
@@ -1475,8 +1475,8 @@ A star has a surface temperature of $3500$ K. (a) At what wavelength does it rad
 $$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{3500} = 8.28 \times 10^{-7} \mathrm{ m} = 828 \mathrm{ nm}$$
 
 This is in the **near-infrared** region (visible light extends from approximately $380$ nm to $750$
-nm). Such stars appear reddish to the eye because the tail of the distribution extends into the red
-part of the visible spectrum.
+Nm). Such stars appear reddish to the eye because the tail of the distribution extends into the red
+Part of the visible spectrum.
 
 </details>
 </details>
@@ -1485,7 +1485,7 @@ part of the visible spectrum.
 <summary>Question 13: Mean Free Path (Extension)</summary>
 
 Oxygen molecules at STP have a molecular diameter of $3.6 \times 10^{-10}$ m. Estimate the mean free
-path.
+Path.
 
 <details>
 <summary>Solution</summary>
@@ -1494,7 +1494,7 @@ The mean free path is:
 
 $$\lambda = \frac{1}{\sqrt{2}\pi d^2 n}$$
 
-where $n$ is the number density. At STP, $n = \frac{p}{k_BT}$:
+Where $n$ is the number density. At STP, $n = \frac{p}{k_BT}$:
 
 $$n = \frac{1.01 \times 10^5}{1.381 \times 10^{-23} \times 273.15} = 2.68 \times 10^{25} \mathrm{ m}^{-3}$$
 
@@ -1528,7 +1528,7 @@ $$\rho = \frac{2828}{2478.9} = 1.141 \mathrm{ kg/m}^3$$
 
 A $500$ W heater is used to heat $0.5$ kg of ice at $-10^\circ\mathrm{C}$ in an insulated container.
 How long does it take to convert all the ice to steam at $100^\circ\mathrm{C}$? Assume $100\%$
-efficiency.
+Efficiency.
 
 <details>
 <summary>Solution</summary>
@@ -1565,7 +1565,7 @@ For the A-Level treatment of this topic, see [Thermal Properties](https://alevel
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Heat and Gases**? The [diagnostic test](/docs/dse/Physics/diagnostics/diag-heat-gases) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Heat and Gases with other physics topics to test synthesis under exam conditions.
@@ -1579,11 +1579,11 @@ See [Diagnostic Guide](/docs/dse/Physics/diagnostics/diagnostic-guide) for instr
 
 ### Derivation: Ideal Gas Law from Empirical Gas Laws
 
-**Boyle's law** (constant temperature): $PV = \text{constant}$, or $P \propto 1/V$
+**Boyle's law** (constant temperature): $PV = \text{constant}$Or $P \propto 1/V$
 
-**Charles's law** (constant pressure): $V/T = \text{constant}$, or $V \propto T$
+**Charles's law** (constant pressure): $V/T = \text{constant}$Or $V \propto T$
 
-**Pressure law** (constant volume): $P/T = \text{constant}$, or $P \propto T$
+**Pressure law** (constant volume): $P/T = \text{constant}$Or $P \propto T$
 
 Combining all three: $PV/T = \text{constant}$ for a fixed mass of gas.
 
@@ -1591,16 +1591,16 @@ For $n$ moles of ideal gas:
 
 $$PV = nRT$$
 
-where $R = 8.31 \mathrm{ J/(mol\cdot K)}$ is the molar gas constant.
+Where $R = 8.31 \mathrm{ J/(mol\cdot K)}$ is the molar gas constant.
 
-For one mole: $PV = RT$. At STP ($T = 273 \mathrm{ K}$, $P = 1.01 \times 10^5 \mathrm{ Pa}$):
+For one mole: $PV = RT$. At STP ($T = 273 \mathrm{ K}$$P = 1.01 \times 10^5 \mathrm{ Pa}$):
 $V = RT/P = 8.31 \times 273 / (1.01 \times 10^5) = 0.0224 \mathrm{ m}^3 = 22.4 \mathrm{ litres}$.
 
 ### Derivation: Kinetic Theory Pressure Formula
 
 Consider $N$ molecules in a cubic container of side $L$. A molecule of mass $m$ moving with
-velocity component $u_x$ in the x-direction bounces off a wall. The change in momentum per
-collision is $\Delta p = 2mu_x$. The time between collisions with the same wall is $2L/u_x$.
+Velocity component $u_x$ in the x-direction bounces off a wall. The change in momentum per
+Collision is $\Delta p = 2mu_x$. The time between collisions with the same wall is $2L/u_x$.
 
 Force on wall from one molecule: $F = \frac{\Delta p}{\Delta t} = \frac{2mu_x}{2L/u_x} = \frac{mu_x^2}{L}$
 
@@ -1622,11 +1622,11 @@ $$PV = nRT = \frac{2}{3}N\overline{E_k} = \frac{2}{3}N \times \frac{1}{2}m\overl
 
 $$\overline{u^2} = \frac{3RT}{M}$$
 
-where $M = Nm/N_A = mN_A$ is the molar mass.
+Where $M = Nm/N_A = mN_A$ is the molar mass.
 
 The root-mean-square speed: $u_{\mathrm{rms}} = \sqrt{\overline{u^2}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3k_BT}{m}}$
 
-where $k_B = R/N_A = 1.38 \times 10^{-23} \mathrm{ J/K}$ is Boltzmann's constant.
+Where $k_B = R/N_A = 1.38 \times 10^{-23} \mathrm{ J/K}$ is Boltzmann's constant.
 
 ---
 
@@ -1635,14 +1635,14 @@ where $k_B = R/N_A = 1.38 \times 10^{-23} \mathrm{ J/K}$ is Boltzmann's constant
 ### Determining the Specific Heat Capacity of a Metal
 
 **Apparatus:** A metal block (e.g., aluminium) with two holes (for thermometer and heater), an
-immersion heater, a thermometer, an ammeter, a voltmeter, a stopwatch, and insulation.
+Immersion heater, a thermometer, an ammeter, a voltmeter, a stopwatch, and insulation.
 
 **Procedure:**
 1. Measure the mass $m$ of the metal block.
 2. Insert the heater and thermometer, and insulate the block.
 3. Record the initial temperature $T_i$.
 4. Switch on the heater, record the voltage $V$ and current $I$.
-5. After time $t$, record the final temperature $T_f$.
+5. After time $t$Record the final temperature $T_f$.
 6. Calculate: $c = \frac{VIt}{m(T_f - T_i)}$
 
 **Sources of error:**
@@ -1651,19 +1651,19 @@ immersion heater, a thermometer, an ammeter, a voltmeter, a stopwatch, and insul
 - The heater and thermometer have their own heat capacities.
 
 **Improvements:** Plot temperature versus time, extrapolate the cooling portion back to estimate
-the temperature that would have been reached without heat loss. Repeat and average.
+The temperature that would have been reached without heat loss. Repeat and average.
 
 ### Verifying Boyle's Law
 
 **Apparatus:** A column of air trapped in a sealed glass tube by a column of oil (or mercury),
-connected to a pressure gauge or manometer.
+Connected to a pressure gauge or manometer.
 
 **Procedure:**
 1. Record the pressure $P$ and the length $L$ (proportional to volume) of the trapped air.
 2. Vary the pressure by adjusting the oil reservoir.
 3. Record pairs of $P$ and $L$.
 4. Plot $P$ (y-axis) versus $1/L$ (x-axis). A straight line through the origin confirms
-   Boyle's law ($P \propto 1/V$).
+ Boyle's law ($P \propto 1/V$).
 5. Alternatively, plot $PV$ (y-axis) versus $P$ (x-axis). A horizontal line confirms $PV = \text{const}$.
 
 **Precautions:**
@@ -1673,7 +1673,7 @@ connected to a pressure gauge or manometer.
 ### Investigating the Pressure Law
 
 **Apparatus:** A flask of air connected to a pressure gauge, immersed in a water bath with a
-thermometer.
+Thermometer.
 
 **Procedure:**
 1. Heat the water bath gradually and record pairs of pressure $P$ and temperature $T$ (in kelvin).
@@ -1692,8 +1692,8 @@ $$\frac{\Delta c}{c} = \sqrt{\left(\frac{\Delta V}{V}\right)^2 + \left(\frac{\De
 
 The temperature difference uncertainty is: $\Delta(\Delta T) = \sqrt{(\Delta T_f)^2 + (\Delta T_i)^2}$
 
-**Example:** $V = (12.0 \pm 0.1) \mathrm{ V}$, $I = (2.00 \pm 0.02) \mathrm{ A}$,
-$t = (300 \pm 1) \mathrm{ s}$, $m = (0.500 \pm 0.001) \mathrm{ kg}$,
+**Example:** $V = (12.0 \pm 0.1) \mathrm{ V}$$I = (2.00 \pm 0.02) \mathrm{ A}$
+$t = (300 \pm 1) \mathrm{ s}$$m = (0.500 \pm 0.001) \mathrm{ kg}$
 $\Delta T = (25.0 \pm 0.5)^\circ\mathrm{C}$:
 
 $$c = \frac{12.0 \times 2.00 \times 300}{0.500 \times 25.0} = \frac{7200}{12.5} = 576 \mathrm{ J/(kg\cdot}^\circ C)}$$
@@ -1711,7 +1711,7 @@ $$c = (576 \pm 14) \mathrm{ J/(kg\cdot}^\circ C)}$$
 ### Worked Example 11
 
 A gas in a cylinder with a movable piston is compressed isothermally at $300 \mathrm{ K}$ from
-volume $5.0 \times 10^{-3} \mathrm{ m}^3$ at pressure $1.0 \times 10^5 \mathrm{ Pa}$ to volume
+Volume $5.0 \times 10^{-3} \mathrm{ m}^3$ at pressure $1.0 \times 10^5 \mathrm{ Pa}$ to volume
 $2.0 \times 10^{-3} \mathrm{ m}^3$. Calculate the final pressure and the work done on the gas.
 
 <details>
@@ -1737,14 +1737,14 @@ $458 \mathrm{ J}$.
 ### Worked Example 12
 
 A room measures $5.0 \mathrm{ m} \times 4.0 \mathrm{ m} \times 3.0 \mathrm{ m}$ and contains air
-at $20^\circ\mathrm{C}$ and $1.01 \times 10^5 \mathrm{ Pa}$.
+At $20^\circ\mathrm{C}$ and $1.01 \times 10^5 \mathrm{ Pa}$.
 
 (a) Calculate the number of moles of air in the room.
 
 (b) Calculate the number of air molecules.
 
 (c) If the temperature rises to $25^\circ\mathrm{C}$ at constant pressure, calculate the mass
-of air that leaves the room.
+Of air that leaves the room.
 
 (Molar mass of air $= 29 \mathrm{ g/mol}$)
 
@@ -1761,7 +1761,7 @@ $$n = \frac{PV}{RT} = \frac{1.01 \times 10^5 \times 60.0}{8.31 \times 293} = \fr
 
 $$V_2 = V_1 \times \frac{T_2}{T_1} = 60.0 \times \frac{298}{293} = 61.0 \mathrm{ m}^3$$
 
-The room volume is fixed at $60.0 \mathrm{ m}^3$, so the excess air ($1.0 \mathrm{ m}^3$ at
+The room volume is fixed at $60.0 \mathrm{ m}^3$So the excess air ($1.0 \mathrm{ m}^3$ at
 $298 \mathrm{ K}$) leaves.
 
 Moles leaving: $n_{\mathrm{out}} = n_1 \times \left(1 - \frac{T_1}{T_2}\right) = 2489 \times \left(1 - \frac{293}{298}\right) = 2489 \times 0.0168 = 41.8 \mathrm{ mol}$
@@ -1773,7 +1773,7 @@ Mass leaving: $m = 41.8 \times 0.029 = 1.21 \mathrm{ kg}$
 ### Worked Example 13
 
 Calculate the root-mean-square speed of nitrogen molecules ($M = 28 \mathrm{ g/mol}$) at:
-(a) $0^\circ\mathrm{C}$, (b) $100^\circ\mathrm{C}$.
+(a) $0^\circ\mathrm{C}$(b) $100^\circ\mathrm{C}$.
 
 <details>
 <summary>Solution</summary>
@@ -1788,8 +1788,8 @@ $$u_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 273}{0.028}} = \sqrt{\frac
 
 $$u_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 373}{0.028}} = \sqrt{\frac{9298.6}{0.028}} = \sqrt{332093} = 576 \mathrm{ m/s}$$
 
-Note: $u_{\mathrm{rms}}$ increases with temperature but depends on the square root of $T$,
-so doubling the absolute temperature only increases $u_{\mathrm{rms}}$ by a factor of $\sqrt{2} \approx 1.41$.
+Note: $u_{\mathrm{rms}}$ increases with temperature but depends on the square root of $T$
+So doubling the absolute temperature only increases $u_{\mathrm{rms}}$ by a factor of $\sqrt{2} \approx 1.41$.
 
 </details>
 
@@ -1802,7 +1802,7 @@ so doubling the absolute temperature only increases $u_{\mathrm{rms}}$ by a fact
 (a) State the assumptions of the kinetic theory of gases.
 
 (b) A gas cylinder contains $2.0 \mathrm{ mol}$ of an ideal gas at temperature $300 \mathrm{ K}$
-and pressure $2.0 \times 10^6 \mathrm{ Pa}$.
+And pressure $2.0 \times 10^6 \mathrm{ Pa}$.
 
 (i) Calculate the volume of the gas.
 
@@ -1833,8 +1833,8 @@ Total KE $= N \times \overline{E_k} = nN_A \times \frac{3RT}{2N_A} = \frac{3}{2}
 (iii) $u_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.004}} = \sqrt{\frac{7479}{0.004}} = \sqrt{1.87 \times 10^6} = 1367 \mathrm{ m/s}$
 
 (c) At high pressures, molecules are forced close together, so the volume of the molecules
-themselves becomes significant compared to the container volume (assumption 3 fails). At low
-temperatures, molecules move more slowly, so intermolecular forces become significant
+Themselves becomes significant compared to the container volume (assumption 3 fails). At low
+Temperatures, molecules move more slowly, so intermolecular forces become significant
 (assumption 4 fails), and the gas may even liquefy.
 
 </details>
@@ -1843,29 +1843,29 @@ temperatures, molecules move more slowly, so intermolecular forces become signif
 
 A student carries out an experiment to determine the specific heat capacity of water. She heats
 $0.200 \mathrm{ kg}$ of water using an immersion heater of power $50 \mathrm{ W}$. The following
-data are recorded:
+Data are recorded:
 
 | Time (s) | Temperature ($^\circ\mathrm{C}$) |
 | ------- | ------------------------------ |
-| 0       | 20.0                           |
-| 60      | 23.5                           |
-| 120     | 27.2                           |
-| 180     | 30.8                           |
-| 240     | 34.7                           |
-| 300     | 38.3                           |
+| 0 | 20.0 |
+| 60 | 23.5 |
+| 120 | 27.2 |
+| 180 | 30.8 |
+| 240 | 34.7 |
+| 300 | 38.3 |
 
 (a) Plot a graph of temperature versus time and determine the rate of temperature rise.
 
 (b) Calculate the specific heat capacity of water from the gradient.
 
 (c) The accepted value is $4186 \mathrm{ J/(kg\cdot}^\circ C)}$. Calculate the percentage
-error and suggest two reasons for any discrepancy.
+Error and suggest two reasons for any discrepancy.
 
 <details>
 <summary>Solution</summary>
 
 (a) The graph of temperature versus time is approximately linear. The gradient (rate of temperature
-rise) from a line of best fit:
+Rise) from a line of best fit:
 
 $$\mathrm{Gradient} = \frac{\Delta T}{\Delta t} \approx \frac{38.3 - 20.0}{300 - 0} = \frac{18.3}{300} = 0.0610^\circ\mathrm{C/s}$$
 
@@ -1875,9 +1875,9 @@ $$\mathrm{Gradient} = \frac{\Delta T}{\Delta t} \approx \frac{38.3 - 20.0}{300 -
 
 Two reasons for discrepancy:
 1. **Heat loss to the surroundings**: Some electrical energy heats the container and the air,
-   not just the water.
+ not just the water.
 2. **Incomplete stirring**: The temperature may not be uniform, so the recorded temperature may
-   not represent the average water temperature.
+ not represent the average water temperature.
 
 </details>
 
@@ -1886,20 +1886,20 @@ Two reasons for discrepancy:
 (a) Distinguish between evaporation and boiling.
 
 (b) $0.050 \mathrm{ kg}$ of ice at $-10^\circ\mathrm{C}$ is added to $0.300 \mathrm{ kg}$ of water
-at $40^\circ\mathrm{C}$ in an insulated container. Calculate the final temperature of the
-mixture.
+At $40^\circ\mathrm{C}$ in an insulated container. Calculate the final temperature of the
+Mixture.
 
-(Specific heat capacity of ice $= 2100 \mathrm{ J/(kg\cdot}^\circ C)}$,
-specific latent heat of fusion of ice $= 334000 \mathrm{ J/kg}$,
-specific heat capacity of water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
+(Specific heat capacity of ice $= 2100 \mathrm{ J/(kg\cdot}^\circ C)}$
+Specific latent heat of fusion of ice $= 334000 \mathrm{ J/kg}$
+Specific heat capacity of water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
 
 <details>
 <summary>Solution</summary>
 
 (a) **Evaporation** occurs at any temperature, only at the surface, and is a slow process. It
-causes cooling because the most energetic molecules escape. **Boiling** occurs at a specific
-temperature (the boiling point), throughout the liquid, and is a rapid process involving
-bubble formation. Both involve a change of state from liquid to gas.
+Causes cooling because the most energetic molecules escape. **Boiling** occurs at a specific
+Temperature (the boiling point), throughout the liquid, and is a rapid process involving
+Bubble formation. Both involve a change of state from liquid to gas.
 
 (b) First, check if all the ice melts. Energy to warm ice to $0^\circ\mathrm{C}$:
 
@@ -1915,7 +1915,7 @@ Maximum energy available from water cooling to $0^\circ\mathrm{C}$:
 
 $$Q_{\max} = 0.300 \times 4200 \times 40 = 50400 \mathrm{ J}$$
 
-Since $50400 > 17750$, all the ice melts and the final temperature is above $0^\circ\mathrm{C}$.
+Since $50400 > 17750$All the ice melts and the final temperature is above $0^\circ\mathrm{C}$.
 
 Energy available after melting ice: $50400 - 17750 = 32650 \mathrm{ J}$
 
@@ -1943,3 +1943,6 @@ $$T_f = 22.2^\circ\mathrm{C}$
 
 </details>
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

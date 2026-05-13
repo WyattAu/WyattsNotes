@@ -22,7 +22,7 @@ hide_table_of_contents: true
 
 Punnett square:
 
-|  | F | f |
+| | F | f |
 |---|---|---|
 | **f** | Ff | ff |
 | **f** | Ff | ff |
@@ -88,17 +88,17 @@ Probability that one child has CF $= 1/4$. Probability that both children have C
 
 (a) **Speciation by allopatric speciation:** (1) Geographic isolation separates the populations -- they cannot interbreed. (2) Different environmental conditions (tropical vs temperate) create different selection pressures. (3) In the tropical forest, alleles for heat tolerance, dark colouration (camouflage), and specific food preferences are advantageous. (4) In the temperate grassland, alleles for cold tolerance, light colouration, and different food sources are selected. (5) Over many generations, each population accumulates different genetic changes through natural selection and genetic drift. (6) Eventually, even if the populations are brought back together, they have diverged so much that they can no longer interbreed to produce fertile offspring -- they are now separate species.
 
-(b) Using the Hardy-Weinberg principle: $p + q = 1$, where $p$ is the dominant allele frequency and $q$ is the recessive allele frequency.
+(b) Using the Hardy-Weinberg principle: $p + q = 1$Where $p$ is the dominant allele frequency and $q$ is the recessive allele frequency.
 
-Population A: $p = 0.3$, $q = 1 - 0.3 = 0.7$.
-Population B: $p = 0.7$, $q = 1 - 0.7 = 0.3$.
+Population A: $p = 0.3$$q = 1 - 0.3 = 0.7$.
+Population B: $p = 0.7$$q = 1 - 0.7 = 0.3$.
 
 (c) **Genetic drift** is the random change in allele frequencies due to chance events, particularly significant in small populations. In a small isolated population: (1) A random event (natural disaster, disease) could eliminate individuals carrying certain alleles, permanently changing the gene pool. (2) The founder effect -- if the population was started by a small number of individuals, it would carry only a subset of the original genetic diversity. (3) Genetic drift can lead to fixation (one allele reaching 100%) or loss (an allele disappearing), reducing genetic diversity.
 
 (d) Reproductive isolation may have occurred through several mechanisms: (1) **Behavioural isolation** -- different mating behaviours or courtship rituals evolved. (2) **Temporal isolation** -- different breeding seasons. (3) **Mechanical isolation** -- physical incompatibility of reproductive structures. (4) **Genetic incompatibility** -- chromosomal differences prevent successful fertilisation or embryo development. (5) **Hybrid inviability** -- even if mating occurs, the offspring are sterile or non-viable (like mules from horse $\times$ donkey).
 
 ### IT-3: Genetics and Ethics (with Organisation)
-**Question:** A couple are both carriers of sickle cell anaemia (recessive condition). They wish to use IVF with pre-implantation genetic diagnosis (PGD) to ensure their child does not have the disease. (a) Explain the process of PGD. (b) Calculate the probability that a naturally conceived child would: (i) have sickle cell anaemia, (ii) be a carrier, (iii) be completely unaffected. (c) Explain the advantage of being a carrier of sickle cell trait in regions where malaria is endemic. (d) Discuss one ethical argument for and one against using PGD for this purpose.
+**Question:** A couple are both carriers of sickle cell anaemia (recessive condition). They wish to use IVF with pre-implantation genetic diagnosis (PGD) to ensure their child does not have the disease. (a) Explain the process of PGD. (b) Calculate the probability that a conceived child would: (i) have sickle cell anaemia, (ii) be a carrier, (iii) be completely unaffected. (c) Explain the advantage of being a carrier of sickle cell trait in regions where malaria is endemic. (d) Discuss one ethical argument for and one against using PGD for this purpose.
 
 **Solution:**
 

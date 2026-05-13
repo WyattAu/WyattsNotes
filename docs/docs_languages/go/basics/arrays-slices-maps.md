@@ -34,7 +34,7 @@ fmt.Println(b) // [99 2 3]
 ```
 
 Arrays are stack-allocated when they are local variables. Large arrays (> a few kilobytes) may be
-better represented as slices to avoid stack frame bloat.
+Better represented as slices to avoid stack frame bloat.
 
 ### Array Length
 
@@ -48,7 +48,7 @@ fmt.Println(len(a)) // 5
 ## Slices
 
 Slices are dynamically-sized, flexible views into arrays. A slice is a descriptor containing a
-pointer to an underlying array, a length, and a capacity:
+Pointer to an underlying array, a length, and a capacity:
 
 ```
 +-------------------+
@@ -104,7 +104,7 @@ fmt.Println(a) // [0 99 2 3]
 #### Append
 
 `append` adds elements to a slice. If the capacity is exceeded, a new underlying array is allocated
-and all elements are copied:
+And all elements are copied:
 
 ```go
 s := []int{1, 2}
@@ -148,9 +148,9 @@ fmt.Println(s) // [0, 0 0]
 
 ### Slice Growth Strategy
 
-When `append` triggers reallocation, Go typically doubles the capacity for slices smaller than 256
-elements and grows by ~25% for larger slices. The exact strategy is an implementation detail of the
-runtime and should not be relied upon.
+When `append` triggers reallocation, Go doubles the capacity for slices smaller than 256
+Elements and grows by ~25% for larger slices. The exact strategy is an implementation detail of the
+Runtime and should not be relied upon.
 
 Pre-allocate capacity when the final size is known:
 
@@ -176,13 +176,13 @@ emptySlice := []int{}    // not nil, len=0, cap=0
 madeSlice := make([]int, 0) // not nil, len=0, cap=0
 ```
 
-The difference matters for JSON marshaling: `nil` marshals to `null`, while `[]int{}` marshals to
+The difference matters for JSON marshaling: `nil` marshals to `null`While `[]int{}` marshals to
 `[]`. For most other purposes, they are interchangeable.
 
 ## Maps
 
 Maps are hash tables mapping keys to values. The zero value is `nil`. A `nil` map is empty but
-cannot be written to.
+Cannot be written to.
 
 ```go
 var m map[string]int   // nil map
@@ -227,7 +227,7 @@ for k, v := range m {
 ### Map Keys
 
 Map keys must be comparable. Comparable types are: booleans, integers, floats, strings, pointers,
-interfaces (if the dynamic type is comparable), structs (if all fields are comparable), and arrays
+Interfaces (if the dynamic type is comparable), structs (if all fields are comparable), and arrays
 (if element type is comparable).
 
 Slices, maps, and functions are not comparable and cannot be used as map keys.
@@ -298,7 +298,7 @@ fmt.Println(d.Name) // "test" -- promoted field
 ```
 
 Promoted fields are accessed directly on the embedding struct. This is syntactic sugar -- there is
-no inheritance hierarchy. The embedded struct's methods are also promoted.
+No inheritance hierarchy. The embedded struct's methods are also promoted.
 
 ### Comparing Structs
 
@@ -315,10 +315,10 @@ Structs containing slices or maps are not comparable.
 ## Common Pitfalls
 
 1. **Forgetting to capture `append` return value.** `append` may allocate a new underlying array.
-   The original slice header is not updated. Always write `s = append(s, ...)`.
+ The original slice header is not updated. Always write `s = append(s, ...)`.
 
 2. **Slicing retains the underlying array.** A small slice of a large array prevents the large array
-   from being garbage collected. Use `copy` to create an independent copy:
+ from being garbage collected. Use `copy` to create an independent copy:
 
    ```go
    small := make([]byte, len(large[1000:1100]))
@@ -326,13 +326,21 @@ Structs containing slices or maps are not comparable.
    ```
 
 3. **Writing to a `nil` map.** `var m map[string]int` creates a nil map. Writing to it panics.
-   Always initialize with `make` or a literal before writing.
+ Always initialize with `make` or a literal before writing.
 
 4. **Map iteration order is random.** Go randomizes map iteration order. Do not rely on it. If you
-   need ordered iteration, maintain a separate sorted key slice.
+ need ordered iteration, maintain a separate sorted key slice.
 
 5. **Concurrent map access.** Maps are not safe for concurrent use. Use `sync.RWMutex` or `sync.Map`
-   for concurrent access.
+ for concurrent access.
 
 6. **Struct embedding is not inheritance.** There is no `super` call, no method overriding in the
-   OOP sense. Embedding is composition with syntactic sugar for field/method promotion.
+ OOP sense. Embedding is composition with syntactic sugar for field/method promotion.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

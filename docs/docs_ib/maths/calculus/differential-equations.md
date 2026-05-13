@@ -10,11 +10,11 @@ slug: differential-equations
 
 A **differential equation** (DE) is an equation involving derivatives of an unknown function. A
 **first order** DE involves only the first derivative. A DE is **ordinary** (ODE) if all derivatives
-are with respect to a single variable.
+Are with respect to a single variable.
 
 The **order** of a DE is the highest derivative that appears. The **general solution** of an
 $n$-th order DE contains $n$ arbitrary constants. A **particular solution** is obtained by imposing
-initial or boundary conditions.
+Initial or boundary conditions.
 
 ---
 
@@ -52,9 +52,9 @@ $$y^2 = x^2 + 4 \implies y = \sqrt{x^2 + 4}$$
 
 $$\frac{dy}{y} = x\,dx \implies \ln|y| = \frac{x^2}{2} + C \implies y = Ae^{x^2/2}$$
 
-where $A = \pm e^C$.
+Where $A = \pm e^C$.
 
-**Example.** Solve $\dfrac{dy}{dx} = \dfrac{y + 1}{x}$, $x \gt 0$.
+**Example.** Solve $\dfrac{dy}{dx} = \dfrac{y + 1}{x}$$x \gt 0$.
 
 $$\frac{dy}{y + 1} = \frac{dx}{x} \implies \ln|y + 1| = \ln x + C \implies |y + 1| = e^C \cdot x$$
 
@@ -88,18 +88,18 @@ $$y = \frac{1}{\mu(x)} \int \mu(x) \cdot Q(x)\,dx$$
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y\frac{d\mu}{dx}$$
 
-We need $\dfrac{d\mu}{dx} = \mu P(x)$, which gives $\dfrac{1}{\mu}\dfrac{d\mu}{dx} = P(x)$, hence
+We need $\dfrac{d\mu}{dx} = \mu P(x)$Which gives $\dfrac{1}{\mu}\dfrac{d\mu}{dx} = P(x)$Hence
 $\mu = \exp\!\left(\displaystyle\int P(x)\,dx\right)$.
 
 ### Worked Examples
 
-**Example.** Solve $\dfrac{dy}{dx} + \dfrac{y}{x} = x^2$, $x \gt 0$.
+**Example.** Solve $\dfrac{dy}{dx} + \dfrac{y}{x} = x^2$$x \gt 0$.
 
-Here $P(x) = \dfrac{1}{x}$, so:
+Here $P(x) = \dfrac{1}{x}$So:
 
 $$\mu(x) = \exp\!\left(\int \frac{1}{x}\,dx\right) = e^{\ln x} = x$$
 
-Multiply through: $x\dfrac{dy}{dx} + y = x^3$, i.e. $\dfrac{d}{dx}(xy) = x^3$.
+Multiply through: $x\dfrac{dy}{dx} + y = x^3$I.e. $\dfrac{d}{dx}(xy) = x^3$.
 
 $$xy = \int x^3\,dx = \frac{x^4}{4} + C \implies y = \frac{x^3}{4} + \frac{C}{x}$$
 
@@ -111,7 +111,7 @@ $$\frac{d}{dx}\bigl(e^{2x} y\bigr) = e^{2x} \cdot e^{-x} = e^x$$
 
 $$e^{2x} y = e^x + C \implies y = e^{-x} + Ce^{-2x}$$
 
-**Example.** Solve $\dfrac{dy}{dx} - 3y = 6$, given $y(0) = 1$.
+**Example.** Solve $\dfrac{dy}{dx} - 3y = 6$Given $y(0) = 1$.
 
 $\mu(x) = e^{-3x}$.
 
@@ -129,7 +129,7 @@ Using $y(0) = 1$: $1 = -2 + C \implies C = 3$. Hence $y = 3e^{3x} - 2$.
 
 $$a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = 0$$
 
-where $a, b, c$ are constants and $a \ne 0$.
+Where $a, b, c$ are constants and $a \ne 0$.
 
 ### The Characteristic Equation
 
@@ -159,7 +159,7 @@ $$y = e^{\alpha x}\bigl(A\cos\beta x + B\sin\beta x\bigr)$$
 
 Characteristic equation: $\lambda^2 - 5\lambda + 6 = 0 \implies (\lambda - 2)(\lambda - 3) = 0$.
 
-Roots: $\lambda_1 = 2$, $\lambda_2 = 3$ (distinct real).
+Roots: $\lambda_1 = 2$$\lambda_2 = 3$ (distinct real).
 
 $$y = Ae^{2x} + Be^{3x}$$
 
@@ -177,7 +177,7 @@ Characteristic equation: $\lambda^2 + 2\lambda + 5 = 0$.
 
 $$\lambda = \frac{-2 \pm \sqrt{4 - 20}}{2} = -1 \pm 2i$$
 
-Here $\alpha = -1$, $\beta = 2$.
+Here $\alpha = -1$$\beta = 2$.
 
 $$y = e^{-x}(A\cos 2x + B\sin 2x)$$
 
@@ -202,11 +202,11 @@ $$y = \frac{1}{2}e^x - \frac{1}{2}e^{-x} = \sinh x$$
 
 The DE $\dfrac{dN}{dt} = kN$ has the general solution $N = N_0 e^{kt}$.
 
-- **Growth:** $k \gt 0$ (e.g. population, compound interest).
-- **Decay:** $k \lt 0$ (e.g. radioactive decay, cooling).
+- **Growth:** $k \gt 0$ (e.g. Population, compound interest).
+- **Decay:** $k \lt 0$ (e.g. Radioactive decay, cooling).
 
 **Half-life.** For radioactive decay, $N = N_0 e^{-\lambda t}$ where $\lambda \gt 0$ is the decay
-constant. The half-life $t_{1/2}$ satisfies:
+Constant. The half-life $t_{1/2}$ satisfies:
 
 $$N_0 e^{-\lambda t_{1/2}} = \frac{N_0}{2} \implies t_{1/2} = \frac{\ln 2}{\lambda}$$
 
@@ -220,7 +220,7 @@ $$0.1N_0 = N_0 e^{-\lambda t} \implies -\lambda t = \ln 0.1 \implies t = \frac{\
 
 $$\frac{dT}{dt} = -k(T - T_{\mathrm{env}})$$
 
-where $T$ is the temperature of the object, $T_{\mathrm{env}}$ is the ambient temperature, and
+Where $T$ is the temperature of the object, $T_{\mathrm{env}}$ is the ambient temperature, and
 $k \gt 0$.
 
 Solution: $T(t) = T_{\mathrm{env}} + (T_0 - T_{\mathrm{env}})e^{-kt}$.
@@ -256,12 +256,12 @@ $\phi = \arctan\!\left(-\dfrac{B}{A}\right)$.
 | Maximum velocity | $v_{\max} = R\omega$ |
 | Maximum acceleration | $a_{\max} = R\omega^2$ |
 
-**Example.** A particle moves with SHM. At $t = 0$, $x = 3$ and $v = 4$. The angular frequency is
+**Example.** A particle moves with SHM. At $t = 0$$x = 3$ and $v = 4$. The angular frequency is
 $\omega = 2$. Find $x(t)$.
 
 $$x = A\cos 2t + B\sin 2t, \qquad v = -2A\sin 2t + 2B\cos 2t$$
 
-$x(0) = A = 3$, $v(0) = 2B = 4 \implies B = 2$.
+$x(0) = A = 3$$v(0) = 2B = 4 \implies B = 2$.
 
 $$x(t) = 3\cos 2t + 2\sin 2t$$
 
@@ -273,7 +273,7 @@ With damping proportional to velocity:
 
 $$\frac{d^2x}{dt^2} + 2\gamma\frac{dx}{dt} + \omega_0^2\, x = 0$$
 
-where $\gamma$ is the damping coefficient and $\omega_0$ is the natural frequency.
+Where $\gamma$ is the damping coefficient and $\omega_0$ is the natural frequency.
 
 Characteristic equation: $\lambda^2 + 2\gamma\lambda + \omega_0^2 = 0$.
 
@@ -285,7 +285,7 @@ $$\lambda = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$$
 | $\gamma^2 = \omega_0^2$ | Critically damped | Repeated root: $(A + Bt)e^{-\gamma t}$ |
 | $\gamma^2 \lt \omega_0^2$ | Underdamped | $\lambda = -\gamma \pm i\omega_d$: decaying oscillation |
 
-where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the **damped frequency**.
+Where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the **damped frequency**.
 
 ### Mechanics Applications
 
@@ -304,7 +304,7 @@ $$\frac{d}{dt}\!\left(ve^{kt/m}\right) = ge^{kt/m}$$
 
 $$v = \frac{mg}{k} + Ce^{-kt/m}$$
 
-If $v(0) = 0$: $C = -\dfrac{mg}{k}$, giving $v = \dfrac{mg}{k}\!\left(1 - e^{-kt/m}\right)$.
+If $v(0) = 0$: $C = -\dfrac{mg}{k}$Giving $v = \dfrac{mg}{k}\!\left(1 - e^{-kt/m}\right)$.
 
 The **terminal velocity** is $v_T = \dfrac{mg}{k}$ (as $t \to \infty$).
 
@@ -314,25 +314,25 @@ The **terminal velocity** is $v_T = \dfrac{mg}{k}$ (as $t \to \infty$).
 
 ### Euler's Method
 
-For the initial value problem $\dfrac{dy}{dx} = f(x, y)$ with $y(x_0) = y_0$, Euler's method
-generates approximate values using:
+For the initial value problem $\dfrac{dy}{dx} = f(x, y)$ with $y(x_0) = y_0$Euler's method
+Generates approximate values using:
 
 $$y_{n+1} = y_n + h \cdot f(x_n, y_n)$$
 
 $$x_{n+1} = x_n + h$$
 
-where $h$ is the step size.
+Where $h$ is the step size.
 
 **Algorithm:**
 
 1. Set $x_0, y_0$ from the initial condition.
 2. For each step $n = 0, 1, 2, \ldots$:
-   - Compute the slope: $m_n = f(x_n, y_n)$.
-   - Update: $y_{n+1} = y_n + h \cdot m_n$.
-   - Advance: $x_{n+1} = x_n + h$.
+ - Compute the slope: $m_n = f(x_n, y_n)$.
+ - Update: $y_{n+1} = y_n + h \cdot m_n$.
+ - Advance: $x_{n+1} = x_n + h$.
 
 **Example.** Use Euler's method with $h = 0.1$ to approximate $y(0.5)$ for
-$\dfrac{dy}{dx} = x + y$, $y(0) = 1$.
+$\dfrac{dy}{dx} = x + y$$y(0) = 1$.
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n + y_n$ |
 | :-- | :---- | :---- | :------------------------- |
@@ -355,13 +355,13 @@ $$y = 2e^x - x - 1$$
 
 At $x = 0.5$: $y = 2e^{0.5} - 1.5 \approx 1.797$.
 
-The Euler approximation of $1.721$ underestimates the true value by about $0.076$, a relative error
-of roughly $4.2\%$.
+The Euler approximation of $1.721$ underestimates the true value by about $0.076$A relative error
+Of roughly $4.2\%$.
 
 ### Error Analysis
 
 Euler's method has **local truncation error** proportional to $h^2$ and **global error**
-proportional to $h$. Halving the step size approximately halves the global error.
+Proportional to $h$. Halving the step size approximately halves the global error.
 
 ### Improved Euler Method (Heun's Method)
 
@@ -371,15 +371,15 @@ $$k_1 = f(x_n, y_n)$$
 $$k_2 = f(x_n + h, y_n + hk_1)$$
 $$y_{n+1} = y_n + \frac{h}{2}(k_1 + k_2)$$
 
-This is a **second order** method with global error proportional to $h^2$, offering significantly
-better accuracy than the basic Euler method for the same step size.
+This is a **second order** method with global error proportional to $h^2$Offering significantly
+Better accuracy than the basic Euler method for the same step size.
 
 :::warning
-warning
+Warning
 
 Euler's method can produce wildly inaccurate results for stiff equations or when the step size is too
-large. Always check whether the approximation is reasonable by comparing with qualitative behaviour
-of the DE (equilibrium, asymptotes, periodicity).
+Large. Always check whether the approximation is reasonable by comparing with qualitative behaviour
+Of the DE (equilibrium, asymptotes, periodicity).
 
 :::
 
@@ -389,7 +389,7 @@ of the DE (equilibrium, asymptotes, periodicity).
 
 **Worked Example: Separable Equation with Partial Fractions**
 
-Solve $\dfrac{dy}{dx} = \dfrac{y^2 - 1}{x}$ with $y(1) = 2$, $x \gt 0$.
+Solve $\dfrac{dy}{dx} = \dfrac{y^2 - 1}{x}$ with $y(1) = 2$$x \gt 0$.
 
 <details>
 <summary>Solution</summary>
@@ -408,11 +408,11 @@ $$\ln\left|\frac{y-1}{y+1}\right| = 2\ln x + 2C = \ln(x^2) + 2C$$
 
 $$\left|\frac{y-1}{y+1}\right| = e^{2C} x^2 = Ax^2$$
 
-where $A = e^{2C} \gt 0$.
+Where $A = e^{2C} \gt 0$.
 
 Apply $y(1) = 2$: $\dfrac{1}{3} = A \cdot 1 \implies A = \dfrac{1}{3}$.
 
-Since $y(1) = 2 \gt 1$, the numerator $y - 1$ is positive initially. For $x \gt 0$ near $1$:
+Since $y(1) = 2 \gt 1$The numerator $y - 1$ is positive initially. For $x \gt 0$ near $1$:
 
 $$\frac{y-1}{y+1} = \frac{x^2}{3}$$
 
@@ -431,13 +431,13 @@ Solve $\dfrac{dy}{dx} + y\tan x = \cos x$ for $-\dfrac{\pi}{2} \lt x \lt \dfrac{
 <details>
 <summary>Solution</summary>
 
-Here $P(x) = \tan x$, so:
+Here $P(x) = \tan x$So:
 
 $$\mu(x) = \exp\!\left(\int \tan x\,dx\right) = \exp(-\ln|\cos x|) = \frac{1}{\cos x} = \sec x$$
 
 Multiply through: $\sec x \dfrac{dy}{dx} + y\sec x \tan x = \sec x \cos x = 1$.
 
-The left side is $\dfrac{d}{dx}(y \sec x)$, so:
+The left side is $\dfrac{d}{dx}(y \sec x)$So:
 
 $$\frac{d}{dx}(y \sec x) = 1 \implies y \sec x = x + C$$
 
@@ -475,7 +475,7 @@ $$y = e^{2x}\!\left(\cos 3x + \frac{4}{3}\sin 3x\right)$$
 **Worked Example: Newton's Law of Cooling with Two Data Points**
 
 A cup of coffee at $85\,{}^{\circ}\mathrm{C}$ is placed in a room at $22\,{}^{\circ}\mathrm{C}$. After
-$5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$, and after $10$ minutes it is
+$5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$And after $10$ minutes it is
 $60\,{}^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
 
 <details>
@@ -487,9 +487,9 @@ From the first data point: $70 = 22 + 63e^{-5k} \implies e^{-5k} = \dfrac{48}{63
 
 From the second data point: $60 = 22 + 63e^{-10k} \implies e^{-10k} = \dfrac{38}{63}$.
 
-Check consistency: $\left(\dfrac{16}{21}\right)^2 = \dfrac{256}{441} \approx 0.5805$, and
+Check consistency: $\left(\dfrac{16}{21}\right)^2 = \dfrac{256}{441} \approx 0.5805$And
 $\dfrac{38}{63} \approx 0.6032$. These are close but not exactly equal, indicating measurement
-imprecision. Using the $10$-minute data point:
+Imprecision. Using the $10$-minute data point:
 
 $$e^{-10k} = \frac{38}{63} \implies -10k = \ln\!\left(\frac{38}{63}\right) \implies k = \frac{1}{10}\ln\!\left(\frac{63}{38}\right) \approx 0.0506$$
 
@@ -499,7 +499,7 @@ $$T(20) = 22 + 63\left(\frac{38}{63}\right)^2 = 22 + \frac{1444}{63} \approx 22 
 
 **Worked Example: Euler's Method with Small Step Size**
 
-Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} = x - y$,
+Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} = x - y$
 $y(0) = 2$.
 
 <details>
@@ -517,7 +517,7 @@ $y(0) = 2$.
 
 Euler approximation: $y(0.3) \approx 1.505$.
 
-The exact solution (integrating factor): $y' + y = x$, $\mu = e^x$.
+The exact solution (integrating factor): $y' + y = x$$\mu = e^x$.
 
 $$\frac{d}{dx}(ye^x) = xe^x \implies ye^x = (x - 1)e^x + C$$
 
@@ -525,7 +525,7 @@ With $y(0) = 2$: $C = 3$. So $y = x - 1 + 3e^{-x}$.
 
 At $x = 0.3$: $y = -0.7 + 3e^{-0.3} \approx -0.7 + 3(0.7408) = -0.7 + 2.2225 = 1.522$.
 
-Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
+Error: $|1.522 - 1.505| \approx 0.017$Roughly $1.1\%$.
 
 </details>
 
@@ -534,36 +534,36 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration.** When solving a separable equation, each side of the
-   separated equation produces its own constant. These combine into a single constant $C$, but omitting
-   it entirely loses the generality of the solution.
+ separated equation produces its own constant. These combine into a single constant $C$But omitting
+ it entirely loses the generality of the solution.
 
 2. **Losing solutions during separation.** Dividing by $g(y)$ implicitly assumes $g(y) \ne 0$. The
-   equilibrium solution $g(y) = 0$ must be checked separately. For example, in $\dfrac{dy}{dx} = y^2$,
-   dividing by $y^2$ loses the solution $y = 0$.
+ equilibrium solution $g(y) = 0$ must be checked separately. For example, in $\dfrac{dy}{dx} = y^2$
+ dividing by $y^2$ loses the solution $y = 0$.
 
 3. **Incorrect sign in the integrating factor.** The standard form is
-   $\dfrac{dy}{dx} + P(x)y = Q(x)$. If the equation is $\dfrac{dy}{dx} = P(x)y + Q(x)$, you must
-   rewrite it as $\dfrac{dy}{dx} - P(x)y = Q(x)$ before computing $\mu = e^{\int -P(x)\,dx}$.
+ $\dfrac{dy}{dx} + P(x)y = Q(x)$. If the equation is $\dfrac{dy}{dx} = P(x)y + Q(x)$You must
+ rewrite it as $\dfrac{dy}{dx} - P(x)y = Q(x)$ before computing $\mu = e^{\int -P(x)\,dx}$.
 
 4. **Misidentifying the discriminant for second order equations.** For
-   $a\lambda^2 + b\lambda + c = 0$, the discriminant is $\Delta = b^2 - 4ac$. If $\Delta = 0$, the
-   repeated root gives $(A + Bx)e^{\lambda x}$, **not** $Ae^{\lambda x}$.
+ $a\lambda^2 + b\lambda + c = 0$The discriminant is $\Delta = b^2 - 4ac$. If $\Delta = 0$The
+ repeated root gives $(A + Bx)e^{\lambda x}$**not** $Ae^{\lambda x}$.
 
 5. **Confusing the damping cases.** In the damped oscillation equation
-   $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$, it is $\gamma^2$ that is compared with $\omega_0^2$.
-   A common error is to compare $\gamma$ with $\omega_0$ directly.
+ $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$It is $\gamma^2$ that is compared with $\omega_0^2$.
+ A common error is to compare $\gamma$ with $\omega_0$ directly.
 
 6. **Euler's method sign errors.** The update formula is $y_{n+1} = y_n + h \cdot f(x_n, y_n)$.
-   A negative sign in $f$ does **not** change the formula; it only affects the value of the slope
-   $f(x_n, y_n)$ at each step.
+ A negative sign in $f$ does **not** change the formula; it only affects the value of the slope
+ $f(x_n, y_n)$ at each step.
 
 7. **Applying initial conditions prematurely.** Apply the initial condition only after finding the
-   general solution with the constant $C$. Applying it during the separation or integration step leads
-   to incorrect particular solutions.
+ general solution with the constant $C$. Applying it during the separation or integration step leads
+ to incorrect particular solutions.
 
 8. **Ignoring the domain of the solution.** Solutions to DEs may only be valid on specific intervals.
-   For example, $y = \dfrac{3 + x^2}{3 - x^2}$ blows up at $x = \sqrt{3}$. Always state the domain
-   on which the solution is defined.
+ For example, $y = \dfrac{3 + x^2}{3 - x^2}$ blows up at $x = \sqrt{3}$. Always state the domain
+ on which the solution is defined.
 
 ---
 
@@ -571,25 +571,25 @@ Error: $|1.522 - 1.505| \approx 0.017$, roughly $1.1\%$.
 
 1. Solve $\dfrac{dy}{dx} = \dfrac{e^{x+y}}{e^x + 1}$ given $y(0) = \ln 3$.
 
-2. Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^3$ for $x \gt 0$, given $y(1) = 0$.
+2. Solve $\dfrac{dy}{dx} + \dfrac{2y}{x} = x^3$ for $x \gt 0$Given $y(1) = 0$.
 
 3. Find the general solution of $y'' + 6y' + 9y = 0$ and identify the type of damping.
 
 4. A radioactive isotope has a half-life of $8$ days. A sample initially contains $200\,\mathrm{g}$.
-   How long until only $12.5\,\mathrm{g}$ remain? Give your answer to the nearest day.
+ How long until only $12.5\,\mathrm{g}$ remain? Give your answer to the nearest day.
 
-5. Use Euler's method with $h = 0.25$ to estimate $y(1)$ for $\dfrac{dy}{dx} = 2x - y$,
-   $y(0) = 0$. Find the exact solution and compute the percentage error.
+5. Use Euler's method with $h = 0.25$ to estimate $y(1)$ for $\dfrac{dy}{dx} = 2x - y$
+ $y(0) = 0$. Find the exact solution and compute the percentage error.
 
 6. A particle of mass $2\,\mathrm{kg}$ falls from rest under gravity with air resistance equal to
-   $0.5v$ (where $v$ is the velocity in $\mathrm{m/s}$). Find the terminal velocity and the time
-   taken to reach $90\%$ of terminal velocity. Take $g = 9.8\,\mathrm{m/s}^2$.
+ $0.5v$ (where $v$ is the velocity in $\mathrm{m/s}$). Find the terminal velocity and the time
+ taken to reach $90\%$ of terminal velocity. Take $g = 9.8\,\mathrm{m/s}^2$.
 
 7. Solve $\dfrac{dy}{dx} = \dfrac{x^2 + 1}{2y}$ with $y(0) = 2$. Find the value of $y$ when $x = 2$.
 
 8. The temperature of an object follows Newton's law of cooling. It cools from $95\,{}^{\circ}\mathrm{C}$
-   to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at $20\,{}^{\circ}\mathrm{C}$. How long
-   does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to $30\,{}^{\circ}\mathrm{C}$?
+ to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at $20\,{}^{\circ}\mathrm{C}$. How long
+ does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to $30\,{}^{\circ}\mathrm{C}$?
 
 ---
 
@@ -603,10 +603,14 @@ For the A-Level Further Maths treatment of this topic, see [Differential Equatio
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Differential Equations**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-differential-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differential Equations with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

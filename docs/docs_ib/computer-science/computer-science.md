@@ -10,47 +10,47 @@ slug: computer-science
 ## Objective of the IB computer science program
 
 - Understand the concepts of computational thinking
-  - Identifying a problem
-  - Accessing the feasibility of solving the problem
-    - Understanding the theoretical limitations and practical limitations for computational problems
-  - Designing solutions and prototypes
-    - Consideration of concurrency
-    - Usage and importance of abstraction
-    - Consideration of preemptive solution
-    - Utilization of experimental and inquiry approach in problem solving
-    - Development of algorithms
-  - Testing the proposed solution
-  - Evaluation of proposed solution
-    - Acquisition of knowledge from the evaluation
+ - Identifying a problem
+ - Accessing the feasibility of solving the problem
+ - Understanding the theoretical limitations and practical limitations for computational problems
+ - Designing solutions and prototypes
+ - Consideration of concurrency
+ - Usage and importance of abstraction
+ - Consideration of preemptive solution
+ - Utilization of experimental and inquiry approach in problem solving
+ - Development of algorithms
+ - Testing the proposed solution
+ - Evaluation of proposed solution
+ - Acquisition of knowledge from the evaluation
 - Introduction of computational ethics
-  - Interactions with society and the impact on societal values
-  - Ethical issues raised by innovation or proposed solution
+ - Interactions with society and the impact on societal values
+ - Ethical issues raised by innovation or proposed solution
 
 ## SL and HL distinction
 
 - Mutually consist of:
-  - 4 topics
-    - System Fundamentals
-    - Computer organization
-    - Networks
-    - Computational thinking
-  - 1 option
-    - Databases
-    - Modelling Simulation
-    - Web science
-    - Object-oriented programming
+ - 4 topics
+ - System Fundamentals
+ - Computer organization
+ - Networks
+ - Computational thinking
+ - 1 option
+ - Databases
+ - Modelling Simulation
+ - Web science
+ - Object-oriented programming
 - HL exclusive:
-  - 3 extensive topics
-    - Abstract data structures
-    - Resource management
-    - Control
-  - Additional content for the option chosen
-  - Additional scenario to be studied
+ - 3 extensive topics
+ - Abstract data structures
+ - Resource management
+ - Control
+ - Additional content for the option chosen
+ - Additional scenario to be studied
 
 ## Computational Thinking
 
 Computational thinking is the foundation of computer science. It involves a set of problem-solving
-methods that draw on concepts fundamental to computer science.
+Methods that draw on concepts fundamental to computer science.
 
 ### Decomposition
 
@@ -69,7 +69,7 @@ Each sub-problem can be developed, tested, and refined independently.
 ### Pattern Recognition
 
 Identifying similarities or patterns within and between problems. This allows us to apply known
-solutions to new problems.
+Solutions to new problems.
 
 **Example**: If you have written a function to validate email addresses, the same pattern (check for
 `@` symbol, check for domain suffix) can be adapted to validate URLs or phone numbers.
@@ -97,7 +97,7 @@ def validate_url(url):
 ```
 
 Both functions follow the same pattern: check for a separator, split into parts, validate the
-structure.
+Structure.
 
 ### Worked Example: Applying Computational Thinking
 
@@ -114,12 +114,12 @@ Apply the four pillars of computational thinking to design a smart home temperat
 - Energy monitoring (tracking usage and cost)
 
 **Pattern Recognition:** Recognize that the decision-making module follows the same pattern as a
-thermostat: compare current temperature to target, and take action based on the difference. This is
-the same pattern used in cruise control, autopilot, and other feedback control systems.
+Thermostat: compare current temperature to target, and take action based on the difference. This is
+The same pattern used in cruise control, autopilot, and other feedback control systems.
 
-**Abstraction:** Create a `Thermostat` class with methods like `setTarget(temp)`, `getCurrentTemp()`,
-and `isActionNeeded()`. The user interacts with the interface (setting a desired temperature) without
-needing to know about sensor calibration, HVAC wiring, or control algorithms.
+**Abstraction:** Create a `Thermostat` class with methods like `setTarget(temp)``getCurrentTemp()`
+And `isActionNeeded()`. The user interacts with the interface (setting a desired temperature) without
+Needing to know about sensor calibration, HVAC wiring, or control algorithms.
 
 **Algorithm Design:** The control algorithm:
 1. Read current temperature from sensor
@@ -130,26 +130,26 @@ needing to know about sensor calibration, HVAC wiring, or control algorithms.
 
 This algorithm is finite (runs continuously until stopped), defined (each step is precise), has input
 (sensor data) and output (HVAC control signals), and is effective (each step can be executed by the
-hardware).
+Hardware).
 
 </details>
 
 ### Abstraction
 
 Removing unnecessary details to focus on the essential features of a problem. Abstraction allows us
-to create models that capture what is important while ignoring irrelevant complexity.
+To create models that capture what is important while ignoring irrelevant complexity.
 
 **Levels of abstraction** (from low to high):
 
 1. **Hardware level**: Logic gates, registers, memory cells
 2. **Machine code level**: Binary instructions executed by the CPU
-3. **Assembly language**: Human-readable representations of machine code (e.g., `MOV`, `ADD`)
+3. **Assembly language**: Human-readable representations of machine code (e.g., `MOV``ADD`)
 4. **High-level language**: Python, Java, C++ — closer to human language
 5. **Application level**: The software users interact with
 
 **Example**: When using a `list` in Python, you do not need to know how memory is allocated, how
-pointers work, or how the data is stored physically. The abstraction hides these details and
-provides a simple interface: `append()`, `remove()`, `sort()`.
+Pointers work, or how the data is stored physically. The abstraction hides these details and
+Provides a simple interface: `append()``remove()``sort()`.
 
 ### Algorithm Design
 
@@ -193,18 +193,18 @@ def binary_search(data, target):
 ### Efficiency
 
 Algorithm efficiency is measured in terms of **time complexity** (how the running time grows with
-input size) and **space complexity** (how the memory usage grows with input size).
+Input size) and **space complexity** (how the memory usage grows with input size).
 
 **Big-O notation** describes the upper bound of an algorithm's growth rate:
 
-| Big-O      | Name        | Example                             |
+| Big-O | Name | Example |
 | ---------- | ----------- | ----------------------------------- |
-| O(1)       | Constant    | Accessing an array element by index |
-| O(log n)   | Logarithmic | Binary search                       |
-| O(n)       | Linear      | Linear search, traversing a list    |
-| O(n log n) | Log-linear  | Merge sort, efficient sorting       |
-| O(n²)      | Quadratic   | Bubble sort, nested loops           |
-| O(2ⁿ)      | Exponential | Recursive Fibonacci (naive)         |
+| O(1) | Constant | Accessing an array element by index |
+| O(log n) | Logarithmic | Binary search |
+| O(n) | Linear | Linear search, traversing a list |
+| O(n log n) | Log-linear | Merge sort, efficient sorting |
+| O(n²) | Quadratic | Bubble sort, nested loops |
+| O(2ⁿ) | Exponential | Recursive Fibonacci (naive) |
 
 ### Sorting Algorithms
 
@@ -255,12 +255,12 @@ def insertion_sort(data):
 ### Worked Example: Tracing Bubble Sort
 
 Trace bubble sort on the array `[5, 1, 4, 2, 8]`. Show the array after each pass and count the total
-comparisons.
+Comparisons.
 
 <details>
 <summary>Solution</summary>
 
-**Pass 1** (`i = 0`, inner loop runs for `j = 0` to `3`):
+**Pass 1** (`i = 0`Inner loop runs for `j = 0` to `3`):
 
 | Comparison | Action | Array State |
 | ---------- | ------ | ----------- |
@@ -269,7 +269,7 @@ comparisons.
 | 5 vs 2 | Swap | [1, 4, 2, 5, 8] |
 | 5 vs 8 | No swap | [1, 4, 2, 5, 8] |
 
-**Pass 2** (`i = 1`, inner loop runs for `j = 0` to `2`):
+**Pass 2** (`i = 1`Inner loop runs for `j = 0` to `2`):
 
 | Comparison | Action | Array State |
 | ---------- | ------ | ----------- |
@@ -277,14 +277,14 @@ comparisons.
 | 4 vs 2 | Swap | [1, 2, 4, 5, 8] |
 | 4 vs 5 | No swap | [1, 2, 4, 5, 8] |
 
-**Pass 3** (`i = 2`, inner loop runs for `j = 0` to `1`):
+**Pass 3** (`i = 2`Inner loop runs for `j = 0` to `1`):
 
 | Comparison | Action | Array State |
 | ---------- | ------ | ----------- |
 | 1 vs 2 | No swap | [1, 2, 4, 5, 8] |
 | 2 vs 4 | No swap | [1, 2, 4, 5, 8] |
 
-**Pass 4** (`i = 3`, inner loop runs for `j = 0` to `0`):
+**Pass 4** (`i = 3`Inner loop runs for `j = 0` to `0`):
 
 | Comparison | Action | Array State |
 | ---------- | ------ | ----------- |
@@ -294,8 +294,8 @@ Total comparisons: $4 + 3 + 2 + 1 = 10$ (which is $n(n-1)/2 = 5 \times 4 / 2 = 1
 Total swaps: 3.
 
 The array is sorted after pass 2, but the algorithm continues for the remaining passes (no early
-termination in this implementation). An optimized version would add a flag to stop early if no swaps
-occur in a pass.
+Termination in this implementation). An optimized version would add a flag to stop early if no swaps
+Occur in a pass.
 
 </details>
 
@@ -309,21 +309,21 @@ occur in a pass.
 
 | Step | low | high | mid | data[mid] | Action |
 | ---- | --- | ---- | --- | --------- | ------ |
-| 1    | 0   | 6    | 3   | 7         | Found! |
+| 1 | 0 | 6 | 3 | 7 | Found! |
 
 **Trace of binary search** — searching for 6 in `[1, 3, 5, 7, 9, 11, 13]`:
 
-| Step | low | high | mid | data[mid] | Action                   |
+| Step | low | high | mid | data[mid] | Action |
 | ---- | --- | ---- | --- | --------- | ------------------------ |
-| 1    | 0   | 6    | 3   | 7         | 6 &lt; 7, high = 2       |
-| 2    | 0   | 2    | 1   | 3         | 6 &gt; 3, low = 2        |
-| 3    | 2   | 2    | 2   | 5         | 6 &gt; 5, low = 3        |
-| 4    | 3   | 2    | —   | —         | low &gt; high, not found |
+| 1 | 0 | 6 | 3 | 7 | 6 &lt; 7, high = 2 |
+| 2 | 0 | 2 | 1 | 3 | 6 &gt; 3, low = 2 |
+| 3 | 2 | 2 | 2 | 5 | 6 &gt; 5, low = 3 |
+| 4 | 3 | 2 | — | — | low &gt; high, not found |
 
 ### Worked Example: Comparing Search Algorithms
 
 An array contains 1,000,000 sorted integers. How many comparisons does binary search make in the
-worst case to determine that a target value is not present?
+Worst case to determine that a target value is not present?
 
 <details>
 <summary>Solution</summary>
@@ -340,8 +340,8 @@ So binary search makes at most **20 comparisons** in the worst case.
 By contrast, linear search would make up to **1,000,000 comparisons** in the worst case.
 
 This dramatic difference ($20$ vs $1,000,000$) illustrates why binary search is preferred for
-sorted data, and why sorting data once and then searching many times can be more efficient than
-repeated linear searches.
+Sorted data, and why sorting data once and then searching many times can be more efficient than
+Repeated linear searches.
 
 </details>
 
@@ -361,7 +361,7 @@ print(data[2])  # Output: 30
 
 ### Worked Example: Array Operations Trace
 
-Given `data = [3, 7, 1, 9, 4]`, trace the following operations:
+Given `data = [3, 7, 1, 9, 4]`Trace the following operations:
 
 1. Access `data[2]`
 2. Replace `data[1]` with 5
@@ -373,24 +373,24 @@ Given `data = [3, 7, 1, 9, 4]`, trace the following operations:
 
 | Operation | Array State | Notes |
 | --------- | ----------- | ----- |
-| Initial   | [3, 7, 1, 9, 4] | |
+| Initial | [3, 7, 1, 9, 4] | |
 | Access `data[2]` | [3, 7, 1, 9, 4] | Returns **1** (O(1)) |
 | Replace `data[1] ← 5` | [3, 5, 1, 9, 4] | O(1), no shifting needed |
 | Insert 8 at index 2 | [3, 5, 8, 1, 9, 4] | O(n), elements 1,9,4 shift right |
 | Remove index 0 | [5, 8, 1, 9, 4] | O(n), elements shift left |
 
 Key insight: access and replacement are O(1) because arrays use contiguous memory with direct
-indexing. Insertion and deletion are O(n) because elements must be shifted. This is why arrays are
-efficient for lookup but inefficient for frequent insertions/deletions.
+Indexing. Insertion and deletion are O(n) because elements must be shifted. This is why arrays are
+Efficient for lookup but inefficient for frequent insertions/deletions.
 
 </details>
 
 ### Stacks
 
 - Last In, First Out (LIFO) structure
-- Operations: `push(item)`, `pop()`, `peek()`, `isEmpty()`
+- Operations: `push(item)``pop()``peek()``isEmpty()`
 - Applications: undo/redo functionality, expression evaluation, function call management (call
-  stack)
+ stack)
 
 ```python
 class Stack:
@@ -417,7 +417,7 @@ class Stack:
 ### Queues
 
 - First In, First Out (FIFO) structure
-- Operations: `enqueue(item)`, `dequeue()`, `front()`, `isEmpty()`
+- Operations: `enqueue(item)``dequeue()``front()``isEmpty()`
 - Applications: print spooling, task scheduling, breadth-first search
 
 ```python
@@ -512,20 +512,20 @@ def inorder(root):
 
 The IB CS syllabus emphasizes the ethical implications of computing:
 
-| Issue                 | Description                                                  | Example                                                |
+| Issue | Description | Example |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
-| Privacy               | Collection, storage, and use of personal data                | Social media data harvesting, surveillance systems     |
-| Security              | Protecting systems and data from unauthorized access         | Encryption, firewalls, two-factor authentication       |
-| Intellectual property | Ownership and rights over digital content                    | Software licensing, piracy, open-source vs proprietary |
-| Digital divide        | Inequality in access to technology                           | Urban vs. rural internet access, developing nations    |
-| Environmental impact  | Energy consumption and e-waste from computing                | Data center energy use, electronic waste disposal      |
-| AI and bias           | Algorithmic discrimination and fairness in automated systems | Hiring algorithms, facial recognition bias             |
-| Censorship            | Control of information by governments or corporations        | Internet filtering, content moderation                 |
+| Privacy | Collection, storage, and use of personal data | Social media data harvesting, surveillance systems |
+| Security | Protecting systems and data from unauthorized access | Encryption, firewalls, two-factor authentication |
+| Intellectual property | Ownership and rights over digital content | Software licensing, piracy, open-source vs proprietary |
+| Digital divide | Inequality in access to technology | Urban vs. Rural internet access, developing nations |
+| Environmental impact | Energy consumption and e-waste from computing | Data center energy use, electronic waste disposal |
+| AI and bias | Algorithmic discrimination and fairness in automated systems | Hiring algorithms, facial recognition bias |
+| Censorship | Control of information by governments or corporations | Internet filtering, content moderation |
 
 ### Privacy
 
 - **Data protection laws**: GDPR (EU), CCPA (California) regulate how organizations collect, store,
-  and process personal data.
+ and process personal data.
 - **Data minimization**: Only collect data that is necessary for the stated purpose.
 - **Consent**: Users must be informed about and consent to data collection.
 - **Right to be forgotten**: Individuals can request deletion of their personal data.
@@ -533,15 +533,15 @@ The IB CS syllabus emphasizes the ethical implications of computing:
 ### Worked example: Ethical analysis
 
 **Scenario**: A school implements a facial recognition attendance system that scans students' faces
-as they enter the building.
+As they enter the building.
 
 **Ethical considerations**:
 
 1. **Privacy**: Students' biometric data is collected and stored. Who has access? How long is it
-   retained?
+ retained?
 2. **Consent**: Have students and parents given informed consent? Can students opt out?
 3. **Accuracy**: What happens if the system misidentifies a student? False positives/negatives have
-   consequences.
+ consequences.
 4. **Security**: How is the biometric data protected against breaches?
 5. **Alternative solutions**: Could a less invasive system (e.g., ID cards) achieve the same goal?
 
@@ -552,7 +552,7 @@ as they enter the building.
 ### Worked Example: Ethical Analysis of a Social Media Algorithm
 
 **Scenario:** A social media company uses an algorithm that prioritizes posts with strong emotional
-reactions (anger, outrage) because these generate more engagement and ad revenue.
+Reactions (anger, outrage) because these generate more engagement and ad revenue.
 
 <details>
 <summary>Solution</summary>
@@ -566,26 +566,26 @@ reactions (anger, outrage) because these generate more engagement and ad revenue
 **Ethical considerations:**
 
 1. **Algorithmic bias:** The algorithm systematically favors emotionally charged content over
-   neutral or positive content. This is a form of bias -- not based on protected characteristics, but
-   on emotional valence, which distorts users' perception of reality.
+ neutral or positive content. This is a form of bias -- not based on protected characteristics, but
+ on emotional valence, which distorts users' perception of reality.
 
 2. **Transparency:** Users are not informed that their feed is curated to maximize emotional
-   engagement rather than to provide accurate or balanced information. This violates the principle of
-   informed consent.
+ engagement rather than to provide accurate or balanced information. This violates the principle of
+ informed consent.
 
 3. **Privacy:** The algorithm requires extensive data collection (tracking which posts users react to,
-   how long they linger, what they share) to optimize for engagement. Users may not be aware of the
-   extent of this surveillance.
+ how long they linger, what they share) to optimize for engagement. Users may not be aware of the
+ extent of this surveillance.
 
 4. **Social impact:** Research has shown that outrage-driven algorithms can contribute to political
-   polarization, the spread of misinformation, and mental health issues (especially in teenagers).
+ polarization, the spread of misinformation, and mental health issues (especially in teenagers).
 
 5. **Balancing interests:** The company has a legitimate business interest in generating revenue, but
-   this must be weighed against the societal harm. A possible compromise: add transparency labels, give
-   users control over their feed algorithm, or incorporate content quality metrics alongside engagement.
+ this must be weighed against the societal harm. A possible compromise: add transparency labels, give
+ users control over their feed algorithm, or incorporate content quality metrics alongside engagement.
 
 **IB exam strategy:** Use specific terminology (algorithmic bias, data minimization, transparency),
-reference multiple stakeholders, and present a balanced argument with a reasoned conclusion.
+Reference multiple stakeholders, and present a balanced argument with a reasoned conclusion.
 
 </details>
 
@@ -594,18 +594,18 @@ reference multiple stakeholders, and present a balanced argument with a reasoned
 ### General strategies
 
 - **Past papers**: Practice is essential. Complete at least 5 years of past papers under timed
-  conditions before the exam.
+ conditions before the exam.
 - **Command terms**: Learn the exact meaning of each command term (define, describe, explain,
-  discuss, evaluate, compare, justify, outline, analyze, to what extent).
+ discuss, evaluate, compare, justify, outline, analyze, to what extent).
 - **Time management**: Allocate time proportionally to marks. Do not spend too long on any single
-  question.
+ question.
 - **Show your working**: For algorithm tracing questions, show every step of your trace table.
-  Examiners award method marks even if the final answer is wrong.
+ Examiners award method marks even if the final answer is wrong.
 
 ### Paper 1 tips
 
 - Memorize key definitions exactly (e.g., "An algorithm is a finite sequence of well-defined
-  instructions for solving a problem").
+ instructions for solving a problem").
 - For extended-response questions, use clear paragraph structure with topic sentences.
 - Include specific examples to support your answers.
 
@@ -626,23 +626,23 @@ reference multiple stakeholders, and present a balanced argument with a reasoned
 ## Problem Set
 
 **Problem 1:** Apply decomposition to design a "smart parking system" that detects available parking
-spaces, guides drivers to the nearest spot, and accepts payment. Identify at least 5 sub-problems.
+Spaces, guides drivers to the nearest spot, and accepts payment. Identify at least 5 sub-problems.
 
 <details>
 <summary>Solution</summary>
 
 1. **Space detection:** Sensors in each parking spot detect whether a vehicle is present (occupied) or
-   absent (available).
+ absent (available).
 2. **Data aggregation:** Collect sensor data from all spots and maintain a real-time map of available
-   spaces.
+ spaces.
 3. **Navigation algorithm:** Calculate the shortest path from the entrance to the nearest available
-   spot (using graph-based pathfinding).
+ spot (using graph-based pathfinding).
 4. **Payment processing:** Handle different payment methods (card, mobile app, cash) and validate
-   transactions.
+ transactions.
 5. **User interface:** Display availability on entrance signs and a mobile app; show navigation
-   instructions.
+ instructions.
 6. **Session management:** Track when a vehicle enters, which spot it occupies, and when it leaves to
-   calculate parking duration and fee.
+ calculate parking duration and fee.
 
 </details>
 
@@ -655,11 +655,11 @@ If you get this wrong, revise: [Decomposition](#decomposition)
 <details>
 <summary>Solution</summary>
 
-| Step | low | high | mid | data[mid] | Action                 |
+| Step | low | high | mid | data[mid] | Action |
 | ---- | --- | ---- | --- | --------- | ---------------------- |
-| 1    | 0   | 6    | 3   | 6         | 4 &lt; 6, high = 2     |
-| 2    | 0   | 2    | 1   | 3         | 4 &gt; 3, low = 2      |
-| 3    | 2   | 2    | 2   | 4         | Found! Returns index 2 |
+| 1 | 0 | 6 | 3 | 6 | 4 &lt; 6, high = 2 |
+| 2 | 0 | 2 | 1 | 3 | 4 &gt; 3, low = 2 |
+| 3 | 2 | 2 | 2 | 4 | Found! Returns index 2 |
 
 Result: **Found at index 2**, after 3 comparisons.
 
@@ -670,7 +670,7 @@ If you get this wrong, revise: [Binary Search](#algorithms)
 ---
 
 **Problem 3:** An algorithm processes an array of $n$ elements. For each element, it scans the entire
-array to find duplicates. What is the time complexity? How many operations are performed when $n = 100$?
+Array to find duplicates. What is the time complexity? How many operations are performed when $n = 100$?
 
 <details>
 <summary>Solution</summary>
@@ -682,8 +682,8 @@ Time complexity: $O(n^2)$.
 For $n = 100$: $100^2 = 10000$ operations.
 
 This is characteristic of nested loops where the inner loop depends on the outer loop. A more
-efficient approach would use a hash set: insert each element into the set (O(1) per insertion) and
-check for duplicates as you go, giving $O(n)$ total time.
+Efficient approach would use a hash set: insert each element into the set (O(1) per insertion) and
+Check for duplicates as you go, giving $O(n)$ total time.
 
 </details>
 
@@ -716,26 +716,26 @@ If you get this wrong, revise: [Selection Sort](#sorting-algorithms)
 
 ---
 
-**Problem 5:** A stack has the following operations performed on it in order: `push(3)`, `push(7)`,
-`push(1)`, `pop()`, `push(9)`, `push(4)`, `pop()`, `pop()`, `peek()`. What values are returned by
-each `pop()` and `peek()` call, and what is the final state of the stack?
+**Problem 5:** A stack has the following operations performed on it in order: `push(3)``push(7)`
+`push(1)``pop()``push(9)``push(4)``pop()``pop()``peek()`. What values are returned by
+Each `pop()` and `peek()` call, and what is the final state of the stack?
 
 <details>
 <summary>Solution</summary>
 
-| Operation  | Stack (top on right) | Returned |
+| Operation | Stack (top on right) | Returned |
 | ---------- | -------------------- | -------- |
-| push(3)    | [3]                  | --       |
-| push(7)    | [3, 7]               | --       |
-| push(1)    | [3, 7, 1]            | --       |
-| pop()      | [3, 7]               | 1        |
-| push(9)    | [3, 7, 9]            | --       |
-| push(4)    | [3, 7, 9, 4]         | --       |
-| pop()      | [3, 7, 9]            | 4        |
-| pop()      | [3, 7]               | 9        |
-| peek()     | [3, 7]               | 7        |
+| push(3) | [3] | -- |
+| push(7) | [3, 7] | -- |
+| push(1) | [3, 7, 1] | -- |
+| pop() | [3, 7] | 1 |
+| push(9) | [3, 7, 9] | -- |
+| push(4) | [3, 7, 9, 4] | -- |
+| pop() | [3, 7, 9] | 4 |
+| pop() | [3, 7] | 9 |
+| peek() | [3, 7] | 7 |
 
-`pop()` returns: 1, 4, 9. `peek()` returns 7. Final stack: `[3, 7]`, top = 7.
+`pop()` returns: 1, 4, 9. `peek()` returns 7. Final stack: `[3, 7]`Top = 7.
 
 </details>
 
@@ -743,24 +743,24 @@ If you get this wrong, revise: [Stacks](#stacks)
 
 ---
 
-**Problem 6:** A queue has the following operations: `enqueue("red")`, `enqueue("blue")`,
-`enqueue("green")`, `dequeue()`, `enqueue("yellow")`, `dequeue()`, `enqueue("purple")`. What does
-the queue contain after all operations?
+**Problem 6:** A queue has the following operations: `enqueue("red")``enqueue("blue")`
+`enqueue("green")``dequeue()``enqueue("yellow")``dequeue()``enqueue("purple")`. What does
+The queue contain after all operations?
 
 <details>
 <summary>Solution</summary>
 
-| Operation        | Queue (front on left) | Dequeued |
+| Operation | Queue (front on left) | Dequeued |
 | ---------------- | --------------------- | -------- |
-| enqueue("red")   | [red]                 | --       |
-| enqueue("blue")  | [red, blue]           | --       |
-| enqueue("green") | [red, blue, green]    | --       |
-| dequeue()        | [blue, green]         | red      |
-| enqueue("yellow")| [blue, green, yellow] | --       |
-| dequeue()        | [green, yellow]       | blue     |
-| enqueue("purple")| [green, yellow, purple]| --     |
+| enqueue("red") | [red] | -- |
+| enqueue("blue") | [red, blue] | -- |
+| enqueue("green") | [red, blue, green] | -- |
+| dequeue() | [blue, green] | red |
+| enqueue("yellow")| [blue, green, yellow] | -- |
+| dequeue() | [green, yellow] | blue |
+| enqueue("purple")| [green, yellow, purple]| -- |
 
-Final queue: `[green, yellow, purple]`, front = green.
+Final queue: `[green, yellow, purple]`Front = green.
 
 </details>
 
@@ -769,19 +769,19 @@ If you get this wrong, revise: [Queues](#queues)
 ---
 
 **Problem 7:** Explain the difference between a **stack** and a **queue**. Give one real-world example
-of each.
+Of each.
 
 <details>
 <summary>Solution</summary>
 
 A **stack** is LIFO (Last In, First Out): the most recently added element is removed first. Example:
-a browser's back button -- the most recently visited page is the first one you return to.
+A browser's back button -- the most recently visited page is the first one you return to.
 
 A **queue** is FIFO (First In, First Out): the earliest added element is removed first. Example:
-a print queue -- documents are printed in the order they were submitted.
+A print queue -- documents are printed in the order they were submitted.
 
 The key difference is the removal policy: stacks remove from the same end where elements are added
-(top), while queues remove from the opposite end (front vs. rear).
+(top), while queues remove from the opposite end (front vs. Rear).
 
 </details>
 
@@ -790,7 +790,7 @@ If you get this wrong, revise: [Stacks](#stacks) and [Queues](#queues)
 ---
 
 **Problem 8:** Insert the values 8, 3, 10, 1, 6 into an initially empty Binary Search Tree (BST). Draw
-the resulting tree and state the in-order traversal.
+The resulting tree and state the in-order traversal.
 
 <details>
 <summary>Solution</summary>
@@ -822,7 +822,7 @@ If you get this wrong, revise: [Trees](#trees-hl)
 ---
 
 **Problem 9:** A linked list contains the values `10 → 20 → 30 → 40`. Describe what happens when a
-new node with value 25 is inserted between 20 and 30.
+New node with value 25 is inserted between 20 and 30.
 
 <details>
 <summary>Solution</summary>
@@ -835,8 +835,8 @@ new node with value 25 is inserted between 20 and 30.
 Result: `10 → 20 → 25 → 30 → 40`
 
 Only two pointer assignments are needed (steps 3 and 4). No elements need to be shifted, unlike an
-array. This is why linked list insertion at a known position is O(1) (after the position is found),
-while array insertion is O(n).
+Array. This is why linked list insertion at a known position is O(1) (after the position is found),
+While array insertion is O(n).
 
 </details>
 
@@ -845,25 +845,25 @@ If you get this wrong, revise: [Linked Lists](#linked-lists-hl)
 ---
 
 **Problem 10:** A school is implementing an AI system that automatically grades student essays. Analyze
-two ethical concerns and suggest mitigations for each.
+Two ethical concerns and suggest mitigations for each.
 
 <details>
 <summary>Solution</summary>
 
 **Concern 1: Algorithmic bias.** The AI may be trained on essays from specific demographics, leading to
-systematic disadvantages for students from underrepresented backgrounds (e.g., non-native English
-speakers, different cultural writing styles). **Mitigation:** Regularly audit the AI's grading
-decisions across demographic groups. Use diverse training data. Ensure human teachers can override AI
-grades.
+Systematic disadvantages for students from underrepresented backgrounds (e.g., non-native English
+Speakers, different cultural writing styles). **Mitigation:** Regularly audit the AI's grading
+Decisions across demographic groups. Use diverse training data. Ensure human teachers can override AI
+Grades.
 
 **Concern 2: Privacy and data ownership.** Student essays contain personal thoughts, experiences, and
-potentially sensitive information. Storing and processing this data raises privacy concerns. Who owns
-the essays? Can the data be used to train future AI models? **Mitigation:** Obtain informed consent
-from students and parents. Anonymize data before processing. Allow students to opt out. Comply with
-data protection regulations (GDPR, CCPA).
+Potentially sensitive information. Storing and processing this data raises privacy concerns. Who owns
+The essays? Can the data be used to train future AI models? **Mitigation:** Obtain informed consent
+From students and parents. Anonymize data before processing. Allow students to opt out. Comply with
+Data protection regulations (GDPR, CCPA).
 
 Other valid concerns: transparency of grading criteria, impact on teacher-student relationships,
-over-reliance on technology, access inequality (schools that cannot afford the system).
+Over-reliance on technology, access inequality (schools that cannot afford the system).
 
 </details>
 
@@ -872,25 +872,25 @@ If you get this wrong, revise: [Ethics and Social Impact](#ethics-and-social-imp
 ---
 
 **Problem 11:** Explain why binary search cannot be used on an unsorted array. What would happen if you
-tried?
+Tried?
 
 <details>
 <summary>Solution</summary>
 
 Binary search relies on the property that if the target is less than the middle element, it must be in
-the left half, and if greater, it must be in the right half. This property only holds for sorted
-arrays.
+The left half, and if greater, it must be in the right half. This property only holds for sorted
+Arrays.
 
 On an unsorted array, this assumption is invalid. For example, searching for 3 in `[5, 1, 4, 2, 3]`:
 
-| Step | low | high | mid | data[mid] | Action               |
+| Step | low | high | mid | data[mid] | Action |
 | ---- | --- | ---- | --- | --------- | -------------------- |
-| 1    | 0   | 4    | 2   | 4         | 3 &lt; 4, high = 1   |
-| 2    | 0   | 1    | 0   | 5         | 3 &lt; 5, high = -1  |
-| 3    | 0   | -1   | --  | --        | low &gt; high, not found |
+| 1 | 0 | 4 | 2 | 4 | 3 &lt; 4, high = 1 |
+| 2 | 0 | 1 | 0 | 5 | 3 &lt; 5, high = -1 |
+| 3 | 0 | -1 | -- | -- | low &gt; high, not found |
 
 Binary search reports "not found" even though 3 is in the array at index 4. The algorithm
-incorrectly eliminated the right half because the array is not sorted.
+Incorrectly eliminated the right half because the array is not sorted.
 
 </details>
 
@@ -919,12 +919,23 @@ Total iterations: $1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$
 For `mystery(4)`: $1 + 2 + 3 + 4 = 10$. Output: **10**
 For `mystery(5)`: $1 + 2 + 3 + 4 + 5 = 15$. Output: **15**
 
-Time complexity: $O(n^2)$ (the dominant term is $n^2/2$, constants are dropped in Big-O).
+Time complexity: $O(n^2)$ (the dominant term is $n^2/2$Constants are dropped in Big-O).
 
 The nested loop pattern where the inner loop bound depends on the outer loop variable produces the
-triangular number series. This is a common pattern in IB exam questions.
+Triangular number series. This is a common pattern in IB exam questions.
 
 </details>
 
 If you get this wrong, revise: [Efficiency](#efficiency) and [Nested Loops](#algorithms)
 
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

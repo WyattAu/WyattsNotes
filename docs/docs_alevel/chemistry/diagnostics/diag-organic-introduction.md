@@ -39,11 +39,11 @@ Working: The longest chain is 5 carbons (pentane). The two $-$OH groups are at C
 
 **Question:**
 
-(a) For the compound $\text{CH}_3\text{CH}=\text{C}(\text{Cl})\text{CH}_2\text{CH}_3$, identify whether E/Z isomerism is possible and assign the configurations.
+(a) For the compound $\text{CH}_3\text{CH}=\text{C}(\text{Cl})\text{CH}_2\text{CH}_3$Identify whether E/Z isomerism is possible and assign the configurations.
 
 (b) Explain why the compound $\text{CH}_3\text{CH}(\text{OH})\text{COOH}$ (lactic acid) exhibits optical isomerism but $\text{CH}_3\text{COOH}$ (ethanoic acid) does not.
 
-(c) A sample of 2-chlorobutane has an observed optical rotation of $+13.5^\circ$. If the pure $(R)$-enantiomer has a specific rotation of $+23.1^\circ$, calculate the enantiomeric excess and the ratio of $(R)$- to $(S)$-2-chlorobutane in the mixture.
+(c) A sample of 2-chlorobutane has an observed optical rotation of $+13.5^\circ$. If the pure $(R)$-enantiomer has a specific rotation of $+23.1^\circ$Calculate the enantiomeric excess and the ratio of $(R)$- to $(S)$-2-chlorobutane in the mixture.
 
 **Solution:**
 
@@ -60,9 +60,9 @@ Assigning priorities (Cahn-Ingold-Prelog rules) for each carbon of the double bo
 - **Z isomer:** Higher priority groups on the same side: both on top or both on bottom
 - **E isomer:** Higher priority groups on opposite sides
 
-(b) Lactic acid ($\text{CH}_3\text{CH}(\text{OH})\text{COOH}$) has a **chiral centre** at the second carbon. This carbon is bonded to four different groups: $-\text{H}$, $-\text{OH}$, $-\text{CH}_3$, and $-\text{COOH}$. A chiral centre (asymmetric carbon) gives rise to two non-superimposable mirror images (enantiomers).
+(b) Lactic acid ($\text{CH}_3\text{CH}(\text{OH})\text{COOH}$) has a **chiral centre** at the second carbon. This carbon is bonded to four different groups: $-\text{H}$$-\text{OH}$$-\text{CH}_3$And $-\text{COOH}$. A chiral centre (asymmetric carbon) gives rise to two non-superimposable mirror images (enantiomers).
 
-Ethanoic acid ($\text{CH}_3\text{COOH}$) has no chiral centre. The carbonyl carbon is bonded to $-\text{CH}_3$, $=\text{O}$, and $-\text{OH}$ (three different groups, but with the double bond, it is not $sp^3$ hybridised and cannot be a chiral centre). The methyl carbon is bonded to three hydrogens and one carbon (not four different groups).
+Ethanoic acid ($\text{CH}_3\text{COOH}$) has no chiral centre. The carbonyl carbon is bonded to $-\text{CH}_3$$=\text{O}$And $-\text{OH}$ (three different groups, but with the double bond, it is not $sp^3$ hybridised and cannot be a chiral centre). The methyl carbon is bonded to three hydrogens and one carbon (not four different groups).
 
 (c)
 
@@ -107,7 +107,7 @@ Ratio $(R):(S) = 79.2 : 20.8 \approx 3.81 : 1$
 (iii) **Oxidation** -- the alcohol is oxidised (loss of hydrogen/ gain of oxygen).
 
 (b)
-(i) **Propene to propan-1-ol:** React propene with **steam ($\text{H}_2\text{O}$) and a phosphoric acid ($\text{H}_3\text{PO}_4$) catalyst at $300\,^\circ\text{C}$ and $60\,\text{atm}$**. This gives predominantly propan-2-ol via Markovnikov addition. For propan-1-ol specifically, use **hydroboration-oxidation** (not on A-Level syllabus in detail). Alternatively, react propene with $\text{HBr}$, then $\text{NaOH}(aq)$ to get propan-2-ol (Markovnikov product).
+(i) **Propene to propan-1-ol:** React propene with **steam ($\text{H}_2\text{O}$) and a phosphoric acid ($\text{H}_3\text{PO}_4$) catalyst at $300\,^\circ\text{C}$ and $60\,\text{atm}$**. This gives predominantly propan-2-ol via Markovnikov addition. For propan-1-ol specifically, use **hydroboration-oxidation** (not on A-Level syllabus in detail). Alternatively, react propene with $\text{HBr}$Then $\text{NaOH}(aq)$ to get propan-2-ol (Markovnikov product).
 
 (ii) **Propan-1-ol to propanal:** Oxidise with **acidified potassium dichromate(VI)** ($\text{K}_2\text{Cr}_2\text{O}_7/\text{H}^+$) under **distillation** conditions to prevent over-oxidation to the carboxylic acid.
 
@@ -153,7 +153,7 @@ Boiling point depends on van der Waals forces, which increase with surface area.
 - **2-bromo-2-methylpropane** (most branched) has the lowest boiling point
 - **1-bromobutane** (straight chain) has the largest surface area and highest boiling point
 
-(c) **2-bromo-2-methylpropane** (tertiary) reacts fastest with aqueous NaOH. It undergoes **SN1** (unimolecular nucleophilic substitution), where the rate-determining step is the formation of a tertiary carbocation. Tertiary carbocations are stabilised by the electron-donating inductive effect of three methyl groups, making them relatively easy to form. The rate equation is $\text{rate} = k[\text{RBr}]$, independent of $[\text{OH}^-]$.
+(c) **2-bromo-2-methylpropane** (tertiary) reacts fastest with aqueous NaOH. It undergoes **SN1** (unimolecular nucleophilic substitution), where the rate-determining step is the formation of a tertiary carbocation. Tertiary carbocations are stabilised by the electron-donating inductive effect of three methyl groups, making them relatively easy to form. The rate equation is $\text{rate} = k[\text{RBr}]$Independent of $[\text{OH}^-]$.
 
 1-bromobutane (primary) would be slowest, undergoing **SN2** where both the halogenoalkane and nucleophile are involved in the rate-determining step.
 
@@ -202,8 +202,8 @@ Reflux allows the aldehyde to remain in contact with the oxidising agent long en
 3. **Oxidation** -- aldehyde oxidised to carboxylic acid
 
 (c) Direct oxidation of ethene to ethanoic acid is not straightforward because:
-- Ethene contains only C--C and C--H bonds, which are not easily oxidised by standard laboratory oxidising agents like acidified dichromate.
-- The C$=$C bond reacts with oxidising agents by cleavage (e.g., with hot concentrated $\text{KMnO}_4$, ethene is cleaved to $\text{CO}_2$ and $\text{H}_2\text{O}$, not selectively to ethanoic acid).
+- Ethene contains only C--C and C--H bonds, which are not oxidised by standard laboratory oxidising agents like acidified dichromate.
+- The C$=$C bond reacts with oxidising agents by cleavage (e.g., with hot concentrated $\text{KMnO}_4$Ethene is cleaved to $\text{CO}_2$ and $\text{H}_2\text{O}$Not selectively to ethanoic acid).
 - Industrial oxidation of ethene to ethanoic acid uses a two-step process: ethene is first converted to ethanol (or ethanal via the Wacker process), which is then oxidised.
 - Selective partial oxidation of alkenes is difficult because the C$=$C bond is highly reactive and tends to undergo complete cleavage.
 

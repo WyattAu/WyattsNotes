@@ -15,11 +15,11 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 ## 1. Magnetic Flux Density
 
 **Definition.** The magnetic flux density $B$ (also called the magnetic field strength in the context
-of force calculations) is defined by the force on a current-carrying conductor:
+Of force calculations) is defined by the force on a current-carrying conductor:
 
 $$\boxed{B = \frac◆LB◆F◆RB◆◆LB◆IL\sin\theta◆RB◆}$$
 
-where $F$ is the force on a wire of length $L$ carrying current $I$ at angle $\theta$ to the field.
+Where $F$ is the force on a wire of length $L$ carrying current $I$ at angle $\theta$ to the field.
 
 SI unit: tesla (T). $1\ \mathrm{T} = 1\ \mathrm{N\,A^{-1}\,m^{-1}}$.
 
@@ -39,8 +39,8 @@ A charge $q$ moving with velocity $v$ at angle $\theta$ to a magnetic field expe
 $$\boxed{F = Bqv\sin\theta}$$
 
 **Derivation from the wire force.** Current in a wire: $I = nqvA$ where $n$ is the number density of
-charge carriers, $q$ is the charge per carrier, $v$ is the drift velocity, and $A$ is the
-cross-sectional area. The number of carriers in length $L$ is $nAL$. The force is:
+Charge carriers, $q$ is the charge per carrier, $v$ is the drift velocity, and $A$ is the
+Cross-sectional area. The number of carriers in length $L$ is $nAL$. The force is:
 
 $$F = BIL\sin\theta = B(nqvA)L\sin\theta = (nAL) \cdot Bqv\sin\theta$$
 
@@ -53,13 +53,13 @@ $$\boxed{F = Bqv}$$
 :::warning
 Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
 $\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
-change the speed of a charged particle — only its direction.
+Change the speed of a charged particle — only its direction.
 :::
 
 ## 3. Circular Motion in a Magnetic Field
 
 When a charged particle moves perpendicular to a uniform magnetic field, the magnetic force provides
-the centripetal acceleration:
+The centripetal acceleration:
 
 $$Bqv = \frac{mv^2}{r}$$
 
@@ -74,13 +74,13 @@ The period of revolution:
 $$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆$$
 
 This is **independent of $v$ and $r$**. A faster particle traces a proportionally larger circle in the
-same time. The cyclotron frequency is:
+Same time. The cyclotron frequency is:
 
 $$f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆$$
 
-**Physical reason.** The magnetic force is $F = Bqv = mv^2/r$, giving $r = mv/(Bq)$. Both $r$ and $v$
-increase proportionally, so $T = 2\pi r/v = 2\pi m/(Bq)$ is constant. This is the operating principle
-of the cyclotron accelerator.
+**Physical reason.** The magnetic force is $F = Bqv = mv^2/r$Giving $r = mv/(Bq)$. Both $r$ and $v$
+Increase proportionally, so $T = 2\pi r/v = 2\pi m/(Bq)$ is constant. This is the operating principle
+Of the cyclotron accelerator.
 
 ### Kinetic Energy in Terms of Radius
 
@@ -89,14 +89,14 @@ $$E_k = \frac{1}{2}mv^2 = \frac{B^2 q^2 r^2}{2m}$$
 <details>
 <summary>Worked Example: Proton and Alpha Particle</summary>
 A proton and an alpha particle enter a magnetic field with the same speed. The alpha particle has
-charge $+2e$ and mass $4m_p$. Compare their radii of curvature.
+Charge $+2e$ and mass $4m_p$. Compare their radii of curvature.
 
 **Answer.** $r = mv/(Bq)$.
 
 $r_\alpha / r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$.
 
 The alpha particle has twice the radius. Despite having four times the mass, its double charge reduces
-the ratio to 2:1.
+The ratio to 2:1.
 
 </details>
 
@@ -106,9 +106,9 @@ When a particle enters a uniform $\mathbf{B}$ field at angle $\theta$ to the fie
 
 $$v_\perp = v\sin\theta, \qquad v_\parallel = v\cos\theta$$
 
-The perpendicular component produces circular motion (radius $r = mv_\perp/(Bq)$, period
+The perpendicular component produces circular motion (radius $r = mv_\perp/(Bq)$Period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected by the magnetic force (since
-$\mathbf{F} \perp \mathbf{B}$, there is no force component along $\mathbf{B}$).
+$\mathbf{F} \perp \mathbf{B}$There is no force component along $\mathbf{B}$).
 
 The particle traces a **helix** with pitch:
 
@@ -119,7 +119,7 @@ $$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac◆LB◆2\pi m v\cos\theta◆RB
 Crossed electric and magnetic fields select particles of a specific velocity.
 
 A particle with charge $q$ and velocity $v$ passes through a region where $\mathbf{E}$ and $\mathbf{B}$
-are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic force
+Are perpendicular. The electric force $F_E = qE$ acts in one direction; the magnetic force
 $F_B = Bqv$ acts in the opposite direction.
 
 For undeflected passage:
@@ -127,7 +127,7 @@ For undeflected passage:
 $$\boxed{qE = Bqv \implies v = \frac{E}{B}}$$
 
 Only particles with this exact velocity pass through. Faster particles are deflected by the dominant
-magnetic force; slower particles by the electric force.
+Magnetic force; slower particles by the electric force.
 
 ## 6. Electromagnetic Induction
 
@@ -135,35 +135,35 @@ magnetic force; slower particles by the electric force.
 
 $$\boxed{\Phi = BA\cos\theta}$$
 
-where $A$ is the area and $\theta$ is the angle between the field and the normal to the area.
+Where $A$ is the area and $\theta$ is the angle between the field and the normal to the area.
 
 SI unit: weber (Wb). $1\ \mathrm{Wb} = 1\ \mathrm{T\,m^2}$.
 
 ### Faraday's Law
 
-**Statement.** The magnitude of the induced e.m.f. equals the rate of change of flux linkage:
+**Statement.** The magnitude of the induced e.m.f. Equals the rate of change of flux linkage:
 
 $$\boxed{|\varepsilon| = N\left|\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆\right|}$$
 
-where $N$ is the number of turns and $N\Phi$ is the flux linkage.
+Where $N$ is the number of turns and $N\Phi$ is the flux linkage.
 
 ### Lenz's Law
 
 **Statement.** The direction of the induced current is such that it **opposes the change** in magnetic
-flux that produced it.
+Flux that produced it.
 
 Lenz's law is the physical content of the minus sign in the full Faraday equation:
 
 $$\varepsilon = -N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆$$
 
 **Energy conservation argument.** If the induced current reinforced the flux change rather than
-opposing it, a self-amplifying cycle would create energy from nothing. The opposition ensures that
-work must be done to maintain the flux change, and this work appears as electrical energy.
+Opposing it, a self-amplifying cycle would create energy from nothing. The opposition ensures that
+Work must be done to maintain the flux change, and this work appears as electrical energy.
 
 :::tip
-tip
-determine the field direction that would oppose this change, (3) use the right-hand grip rule to find
-the induced current direction.
+Tip
+Determine the field direction that would oppose this change, (3) use the right-hand grip rule to find
+The induced current direction.
 :::
 
 ### Motional e.m.f.
@@ -172,7 +172,7 @@ A conducting rod of length $l$ moving at velocity $v$ perpendicular to a uniform
 
 $$\boxed{\varepsilon = Blv}$$
 
-**Proof.** In time $dt$, the rod sweeps area $l \cdot v\,dt$. Flux swept: $d\Phi = Blv\,dt$. By
+**Proof.** In time $dt$The rod sweeps area $l \cdot v\,dt$. Flux swept: $d\Phi = Blv\,dt$. By
 Faraday's law: $\varepsilon = d\Phi/dt = Blv$. $\square$
 
 **Alternative derivation.** Charges in the rod experience force $F = Bqv$ (by the magnetic force law).
@@ -181,7 +181,7 @@ $\varepsilon = Bvl$.
 
 ## 7. The AC Generator
 
-A coil of $N$ turns, area $A$, rotating at angular frequency $\omega$ in uniform field $B$:
+A coil of $N$ turns, area $A$Rotating at angular frequency $\omega$ in uniform field $B$:
 
 $$\Phi = NBA\cos(\omega t)$$
 
@@ -189,10 +189,10 @@ $$\varepsilon = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = NBA\omega\sin(\o
 
 $$\boxed{\varepsilon = \varepsilon_0\sin(\omega t)}$$
 
-where the peak e.m.f. is $\varepsilon_0 = NBA\omega$.
+Where the peak e.m.f. Is $\varepsilon_0 = NBA\omega$.
 
-The output is sinusoidal with the same frequency as the rotation. The peak e.m.f. is proportional to
-$N$, $B$, $A$, and $\omega$.
+The output is sinusoidal with the same frequency as the rotation. The peak e.m.f. Is proportional to
+$N$$B$$A$And $\omega$.
 
 ## 8. Transformers
 
@@ -233,7 +233,7 @@ Modern transformers achieve efficiencies exceeding 95% for power distribution ap
 <summary>Worked Example: Step-Down Transformer</summary>
 A transformer with 2400 turns on the primary and 120 turns on the secondary is connected to 240 V AC.
 The secondary delivers 8.0 A to a load. Assuming ideal behaviour, find the secondary voltage and
-primary current.
+Primary current.
 
 **Answer.** $V_s = V_p \times N_s/N_p = 240 \times 120/2400 = 12$ V.
 
@@ -249,7 +249,7 @@ When the current in a coil changes, the changing flux through the coil itself in
 
 $$\boxed{\varepsilon = -L\frac{dI}{dt}}$$
 
-where $L$ is the self-inductance in henry (H). $1\ \mathrm{H} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
+Where $L$ is the self-inductance in henry (H). $1\ \mathrm{H} = 1\ \mathrm{Wb\,A^{-1}} = 1\ \mathrm{V\,s\,A^{-1}}$.
 
 ### Energy Stored in an Inductor
 
@@ -264,7 +264,7 @@ $$E = \int_0^t P\,dt' = \int_0^I LI'\,dI' = \frac{1}{2}LI^2$$
 $\square$
 
 This is the magnetic analogue of $\frac{1}{2}CV^2$ for capacitors. The energy is stored in the
-magnetic field, with energy density $u = B^2/(2\mu_0)$.
+Magnetic field, with energy density $u = B^2/(2\mu_0)$.
 
 ## 10. Force Between Parallel Current-Carrying Wires
 
@@ -272,7 +272,7 @@ magnetic field, with energy density $u = B^2/(2\mu_0)$.
 
 Wire 1 (current $I_1$) creates field at distance $d$: $B_1 = \mu_0 I_1/(2\pi d)$.
 
-Wire 2 (current $I_2$, length $L$) in this field experiences force:
+Wire 2 (current $I_2$Length $L$) in this field experiences force:
 
 $$F = B_1 I_2 L = \frac◆LB◆\mu_0 I_1 I_2 L◆RB◆◆LB◆2\pi d◆RB◆$$
 
@@ -289,7 +289,7 @@ This can be determined by applying the right-hand grip rule to wire 1 (to find $
 ### Definition of the Ampere
 
 The ampere is defined such that two parallel wires 1 m apart, each carrying 1 A, experience a force of
-exactly $2 \times 10^{-7}$ N m$^{-1}$.
+Exactly $2 \times 10^{-7}$ N m$^{-1}$.
 
 ## Problem Set
 
@@ -304,9 +304,9 @@ A wire of length 0.30 m carries 5.0 A at $30^\circ$ to a field of 0.40 T. Calcul
 <details>
 <summary>Problem 2</summary>
 An electron moves at $2.0 \times 10^6$ m s$^{-1}$ perpendicular to a 0.80 T field. Calculate the
-radius of its circular path.
+Radius of its circular path.
 
-**Answer.** $r = \frac{m_e v}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$ m $= 14.2\,\mu$m.
+**Answer.** $r = \frac{m_e v}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$ m $= 14.2\,\mu$M.
 
 </details>
 
@@ -320,7 +320,7 @@ A velocity selector has $E = 6.0 \times 10^5$ V m$^{-1}$ and $B = 0.20$ T. What 
 
 <details>
 <summary>Problem 4</summary>
-A coil of 200 turns, each of area 0.010 m$^2$, is in a field that decreases from 0.50 T to 0.10 T in
+A coil of 200 turns, each of area 0.010 m$^2$Is in a field that decreases from 0.50 T to 0.10 T in
 0.05 s. Calculate the average induced e.m.f.
 
 **Answer.** $d\Phi = A\,dB = 0.010 \times 0.40 = 0.004$ Wb.
@@ -331,7 +331,7 @@ $\varepsilon = N|d\Phi/dt| = 200 \times 0.004/0.05 = 16$ V.
 <details>
 <summary>Problem 5</summary>
 A rod of length 0.50 m moves at 8.0 m s$^{-1}$ perpendicular to a 0.60 T field. Calculate the motional
-e.m.f.
+E.m.f.
 
 **Answer.** $\varepsilon = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
 
@@ -340,7 +340,7 @@ e.m.f.
 <details>
 <summary>Problem 6</summary>
 A rectangular coil of 100 turns (0.10 m by 0.05 m) rotates at 3000 rpm in 0.20 T. Calculate the peak
-e.m.f.
+E.m.f.
 
 **Answer.** $\omega = 3000 \times 2\pi/60 = 314$ rad s$^{-1}$. $A = 0.10 \times 0.05 = 0.005$ m$^2$.
 $\varepsilon_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
@@ -352,19 +352,19 @@ $\varepsilon_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 State Lenz's law and explain why it is a consequence of energy conservation.
 
 **Answer.** Lenz's law: the induced current flows in a direction such that its magnetic effect opposes
-the change in flux that produced it.
+The change in flux that produced it.
 
 If the induced current reinforced the flux change, the increased flux would induce more current,
-creating a positive feedback loop. This would generate electrical energy from nothing, violating
-conservation of energy. The opposition ensures work must be done against the induced effects, and this
-work is converted to electrical energy.
+Creating a positive feedback loop. This would generate electrical energy from nothing, violating
+Conservation of energy. The opposition ensures work must be done against the induced effects, and this
+Work is converted to electrical energy.
 
 </details>
 
 <details>
 <summary>Problem 8</summary>
 Two parallel wires 10 cm apart carry 10 A each in the same direction. Calculate the force per unit
-length.
+Length.
 
 **Answer.** $\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 10◆RB◆◆LB◆2\pi \times 0.10◆RB◆ = 2.0 \times 10^{-4}$ N m$^{-1}$ (attractive).
 
@@ -388,8 +388,8 @@ $\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 
 
 <details>
 <summary>Problem 10</summary>
-A 100 mH inductor carries 2.0 A. Calculate the stored energy and the e.m.f. induced when the current
-falls to zero in 5.0 ms.
+A 100 mH inductor carries 2.0 A. Calculate the stored energy and the e.m.f. Induced when the current
+Falls to zero in 5.0 ms.
 
 **Answer.** $E = \frac{1}{2}LI^2 = \frac{1}{2} \times 0.100 \times 4.0 = 0.200$ J.
 
@@ -402,7 +402,7 @@ The positive sign confirms the inductor opposes the decrease in current.
 <details>
 <summary>Problem 11</summary>
 A transformer with 2000 primary turns and 100 secondary turns is connected to 240 V AC. The secondary
-delivers 5.0 A. Calculate the secondary voltage, primary current, and the power.
+Delivers 5.0 A. Calculate the secondary voltage, primary current, and the power.
 
 **Answer.** $V_s = 240 \times 100/2000 = 12$ V.
 $I_p = 5.0 \times 100/2000 = 0.25$ A.
@@ -413,14 +413,26 @@ $P = V_s I_s = 12 \times 5.0 = 60$ W (ideal case).
 <details>
 <summary>Problem 12</summary>
 Explain why eddy currents in a transformer core reduce efficiency, and describe how lamination
-mitigates this.
+Mitigates this.
 
 **Answer.** The alternating magnetic flux induces circulating currents (eddy currents) in the
-conductive iron core by Faraday's law. These currents dissipate energy as heat via $P = I^2R$,
-reducing the useful power delivered to the secondary.
+Conductive iron core by Faraday's law. These currents dissipate energy as heat via $P = I^2R$
+Reducing the useful power delivered to the secondary.
 
 Lamination divides the core into thin, electrically insulated sheets perpendicular to the eddy
-current paths. This increases the effective resistance of each current loop, reducing the magnitude
-of the eddy currents and thus the power dissipated.
+Current paths. This increases the effective resistance of each current loop, reducing the magnitude
+Of the eddy currents and thus the power dissipated.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -9,11 +9,11 @@ slug: statistical-distributions-extended
 ## Statistical Distributions (Extended Treatment)
 
 This document provides rigorous coverage of the binomial, normal, and Poisson distributions, their
-approximations, and hypothesis testing applications.
+Approximations, and hypothesis testing applications.
 
 :::info
 Always state the distribution you are using in full, including the parameter values, before
-calculating probabilities. For example: "$X \sim B(20, 0.3)$".
+Calculating probabilities. For example: "$X \sim B(20, 0.3)$".
 :::
 
 <hr />
@@ -84,7 +84,7 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\exp\!\left(-\fr
 
 - The distribution is symmetric about $x = \mu$.
 - The mean, median, and mode are all equal to $\mu$.
-- $E(X) = \mu$, $\mathrm{Var}(X) = \sigma^2$.
+- $E(X) = \mu$$\mathrm{Var}(X) = \sigma^2$.
 - Approximately 68% of data lies within $\mu \pm \sigma$.
 - Approximately 95% of data lies within $\mu \pm 2\sigma$.
 - Approximately 99.7% of data lies within $\mu \pm 3\sigma$.
@@ -97,13 +97,13 @@ $$Z = \frac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆$$
 
 $$P(X \leq x) = P\!\left(Z \leq \frac◆LB◆x - \mu◆RB◆◆LB◆\sigma◆RB◆\right) = \Phi\!\left(\frac◆LB◆x - \mu◆RB◆◆LB◆\sigma◆RB◆\right)$$
 
-where $\Phi(z)$ denotes the cumulative distribution function of the standard normal.
+Where $\Phi(z)$ denotes the cumulative distribution function of the standard normal.
 
 ### 2.4 Worked example
 
 **Problem.** The masses of bags of sugar are normally distributed with mean $1.02\;\mathrm{kg}$ and
-standard deviation $0.03\;\mathrm{kg}$. Find: (a) the probability a randomly selected bag has mass
-less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ and $1.05\;\mathrm{kg}$;
+Standard deviation $0.03\;\mathrm{kg}$. Find: (a) the probability a randomly selected bag has mass
+Less than $1.00\;\mathrm{kg}$; (b) the probability the mass is between $0.98$ and $1.05\;\mathrm{kg}$;
 (c) the value $m$ such that 90% of bags have mass less than $m$.
 
 $X \sim N(1.02, 0.03^2)$.
@@ -114,7 +114,7 @@ $X \sim N(1.02, 0.03^2)$.
 
 $= \Phi(1.000) - \Phi(-1.333) = 0.8413 - (1 - 0.9088) = 0.8413 - 0.0912 = 0.7501$
 
-(c) We need $\Phi\!\left(\dfrac{m - 1.02}{0.03}\right) = 0.90$, so $\dfrac{m - 1.02}{0.03} = 1.282$.
+(c) We need $\Phi\!\left(\dfrac{m - 1.02}{0.03}\right) = 0.90$So $\dfrac{m - 1.02}{0.03} = 1.282$.
 
 $m = 1.02 + 0.03 \times 1.282 = 1.058\;\mathrm{kg}$
 
@@ -125,7 +125,7 @@ If $X \sim B(n, p)$ and $n$ is large, then $X$ is approximately normal with:
 $$X \approx N(np, np(1-p))$$
 
 **Continuity correction.** Since the binomial is discrete and the normal is continuous, apply a
-continuity correction:
+Continuity correction:
 
 - $P(X \leq k) \approx P(Y \lt k + 0.5)$
 - $P(X \geq k) \approx P(Y \gt k - 0.5)$
@@ -137,7 +137,7 @@ The approximation is reasonable when $np \gt 5$ and $n(1-p) \gt 5$.
 
 **Problem.** $X \sim B(80, 0.45)$. Use a normal approximation to find $P(X \gt 35)$.
 
-$\mu = 80 \times 0.45 = 36$, $\sigma^2 = 80 \times 0.45 \times 0.55 = 19.8$, $\sigma = 4.45$.
+$\mu = 80 \times 0.45 = 36$$\sigma^2 = 80 \times 0.45 \times 0.55 = 19.8$$\sigma = 4.45$.
 
 $X \approx N(36, 19.8)$.
 
@@ -171,8 +171,8 @@ The equality of mean and variance is a distinguishing feature of the Poisson dis
 ### 3.3 Worked example
 
 **Problem.** A call centre receives an average of 4.5 calls per minute. Assuming a Poisson model,
-find: (a) the probability of exactly 6 calls in a minute; (b) the probability of at most 2 calls
-in a minute; (c) the probability of more than 8 calls in a two-minute period.
+Find: (a) the probability of exactly 6 calls in a minute; (b) the probability of at most 2 calls
+In a minute; (c) the probability of more than 8 calls in a two-minute period.
 
 $X \sim \mathrm{Po}(4.5)$.
 
@@ -195,7 +195,7 @@ This is valid when $n \geq 50$ and $p \leq 0.1$ (and $np \leq 10$ as a rough gui
 ### 3.5 Worked example: Poisson approximation
 
 **Problem.** A machine produces items with a defect rate of 0.02. In a batch of 200 items, find the
-probability that exactly 3 are defective.
+Probability that exactly 3 are defective.
 
 $X \sim B(200, 0.02)$. Since $n = 200$ is large and $p = 0.02$ is small, $X \approx \mathrm{Po}(4)$.
 
@@ -207,16 +207,16 @@ $$P(X = 3) = \frac◆LB◆e^{-4} \cdot 4^3◆RB◆◆LB◆3!◆RB◆ = \frac{64e
 
 ### 4.1 Decision framework
 
-| Situation                          | Distribution         |
+| Situation | Distribution |
 | ---------------------------------- | -------------------- |
-| Fixed trials, two outcomes, const $p$ | Binomial $B(n, p)$  |
-| Rare events, constant rate         | Poisson $\mathrm{Po}(\lambda)$ |
+| Fixed trials, two outcomes, const $p$ | Binomial $B(n, p)$ |
+| Rare events, constant rate | Poisson $\mathrm{Po}(\lambda)$ |
 | Continuous, symmetric, bell-shaped | Normal $N(\mu, \sigma^2)$ |
 
 ### 4.2 Sums of independent Poisson variables
 
 **Theorem.** If $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$ are independent,
-then $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$.
+Then $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$.
 
 **Proof sketch.** Using MGFs or direct convolution:
 
@@ -227,7 +227,7 @@ $$= \frac◆LB◆e^{-(\lambda_1+\lambda_2)}◆RB◆◆LB◆r!◆RB◆\sum_{k=0}^
 ### 4.3 Worked example
 
 **Problem.** A shop receives orders at an average rate of 3 per hour from online and 2 per hour
-from walk-in customers. Find the probability of receiving more than 7 orders in a two-hour period.
+From walk-in customers. Find the probability of receiving more than 7 orders in a two-hour period.
 
 Total rate per hour $= 3 + 2 = 5$. For two hours, $X \sim \mathrm{Po}(10)$.
 
@@ -236,7 +236,7 @@ $P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^
 :::warning
 Common Pitfall
 When using the Poisson approximation to the binomial, always check that the conditions are met
-(large $n$, small $p$). If $p$ is close to 0.5, the normal approximation is more appropriate.
+(large $n$Small $p$). If $p$ is close to 0.5, the normal approximation is more appropriate.
 :::
 
 <hr />
@@ -246,7 +246,7 @@ When using the Poisson approximation to the binomial, always check that the cond
 ### Problem 1
 
 $X \sim B(15, 0.35)$. Find: (a) $P(X = 5)$; (b) $P(3 \leq X \leq 7)$; (c) the most likely value
-of $X$.
+Of $X$.
 
 <details>
 <summary>Solution</summary>
@@ -255,9 +255,9 @@ of $X$.
 
 (b) $P(3 \leq X \leq 7) = P(X \leq 7) - P(X \leq 2) \approx 0.9506 - 0.0355 = 0.9151$.
 
-(c) Mode $\approx (n+1)p = 16 \times 0.35 = 5.6$, so check $r = 5$ and $r = 6$.
+(c) Mode $\approx (n+1)p = 16 \times 0.35 = 5.6$So check $r = 5$ and $r = 6$.
 
-$P(X = 5) \approx 0.2123$, $P(X = 6) \approx 0.2186$. The mode is $X = 6$.
+$P(X = 5) \approx 0.2123$$P(X = 6) \approx 0.2186$. The mode is $X = 6$.
 
 </details>
 
@@ -281,8 +281,8 @@ $8\;\mathrm{cm}$. Find the probability that a randomly selected man is: (a) tall
 ### Problem 3
 
 The number of emails received per hour follows a Poisson distribution with mean 6. Find the
-probability that: (a) exactly 4 emails are received in an hour; (b) more than 10 emails in two
-hours.
+Probability that: (a) exactly 4 emails are received in an hour; (b) more than 10 emails in two
+Hours.
 
 <details>
 <summary>Solution</summary>
@@ -298,12 +298,12 @@ $P(Y \gt 10) = 1 - P(Y \leq 10) \approx 1 - 0.6528 = 0.3472$.
 ### Problem 4
 
 A die is rolled 60 times. Use a suitable approximation to find the probability that the number of
-sixes is between 8 and 14 inclusive.
+Sixes is between 8 and 14 inclusive.
 
 <details>
 <summary>Solution</summary>
 
-$X \sim B(60, 1/6)$. $\mu = 10$, $\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
+$X \sim B(60, 1/6)$. $\mu = 10$$\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
 
 $\sigma \approx 2.887$.
 
@@ -314,3 +314,15 @@ $= P\!\left(\dfrac{7.5 - 10}{2.887} \lt Z \lt \dfrac{14.5 - 10}{2.887}\right) = 
 $= \Phi(1.558) - \Phi(-0.866) = 0.9404 - 0.1931 = 0.7473$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

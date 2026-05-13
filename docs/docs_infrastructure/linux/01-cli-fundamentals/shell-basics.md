@@ -8,29 +8,29 @@ sidebar_position: 1
 ## Shell Invocation
 
 A shell is both an **interactive command interpreter** and a **scripting language interpreter**.
-When you open a terminal emulator, it spawns a shell process — typically `bash`, `zsh`, or `dash`.
-When you run a script with `./script.sh`, the shebang line determines which interpreter processes
-the file.
+When you open a terminal emulator, it spawns a shell process — `bash``zsh`Or `dash`.
+When you run a script with `./script.sh`The shebang line determines which interpreter processes
+The file.
 
 ### Interactive vs Non-Interactive
 
-| Aspect            | Interactive                               | Non-Interactive                        |
+| Aspect | Interactive | Non-Interactive |
 | ----------------- | ----------------------------------------- | -------------------------------------- |
-| **Startup files** | `.bashrc`, `.profile`, `/etc/bash.bashrc` | Only `BASH_ENV` variable if set        |
-| **Prompt**        | `PS1`, `PS2` displayed                    | No prompt                              |
-| **Job control**   | Enabled (`set -m`)                        | Disabled by default                    |
-| **Line editing**  | Readline active (`readline` library)      | Not active                             |
-| **Aliases**       | Expanded                                  | Expanded (in bash) or not (POSIX mode) |
-| **Exit on error** | Does not exit on error                    | Same unless `set -e`                   |
+| **Startup files** | `.bashrc``.profile``/etc/bash.bashrc` | Only `BASH_ENV` variable if set |
+| **Prompt** | `PS1``PS2` displayed | No prompt |
+| **Job control** | Enabled (`set -m`) | Disabled by default |
+| **Line editing** | Readline active (`readline` library) | Not active |
+| **Aliases** | Expanded | Expanded (in bash) or not (POSIX mode) |
+| **Exit on error** | Does not exit on error | Same unless `set -e` |
 
 The shell's startup sequence differs depending on whether it is a **login shell** or a **non-login
-shell**:
+Shell**:
 
-- **Login shell**: Sourced on first login (SSH, `su -`, `login`). Reads `/etc/profile`, then
-  `~/.bash_profile` or `~/.bash_login` or `~/.profile` (first one found).
+- **Login shell**: Sourced on first login (SSH, `su -``login`). Reads `/etc/profile`Then
+ `~/.bash_profile` or `~/.bash_login` or `~/.profile` (first one found).
 - **Non-login interactive shell**: Reads `~/.bashrc`.
 - **Non-login non-interactive shell**: Inherits exported environment variables. Does not read
-  startup files unless `BASH_ENV` points to one.
+ startup files unless `BASH_ENV` points to one.
 
 ```mermaid
 flowchart TD
@@ -49,31 +49,31 @@ flowchart TD
 
 :::info
 
-In practice, most systems configure `~/.profile` to source `~/.bashrc`, so both login and non-login
-interactive shells load the same configuration. However, scripts executed by cron or systemd do not
-source `~/.bashrc` — this is a frequent source of bugs.
+In practice, most systems configure `~/.profile` to source `~/.bashrc`So both login and non-login
+Interactive shells load the same configuration. However, scripts executed by cron or systemd do not
+Source `~/.bashrc` — this is a frequent source of bugs.
 
 :::
 
 ### POSIX Shell vs Bash
 
 POSIX specifies a shell standard (IEEE 1003.1, also known as the Single UNIX Specification). Bash is
-largely POSIX-compliant but adds extensions. When writing portable scripts, target POSIX sh. When
-writing for known-bash environments, use bash features deliberately.
+Largely POSIX-compliant but adds extensions. When writing portable scripts, target POSIX sh. When
+Writing for known-bash environments, use bash features deliberately.
 
-| Feature                | POSIX sh | Bash                        |
+| Feature | POSIX sh | Bash |
 | ---------------------- | -------- | --------------------------- |
-| Arrays                 | No       | Yes (`arr=()`)              |
-| `[[ ]]`                | No       | Yes (preferred over `[ ]`)  |
-| `(( ))`                | No       | Yes (arithmetic evaluation) |
-| Process substitution   | No       | Yes (`&lt;()`, `&gt;()`)    |
-| Associative arrays     | No       | Yes (bash 4.0+)             |
-| `[[ $a =~ $re ]]`      | No       | Yes (regex matching)        |
-| `${var:offset:length}` | No       | Yes (substring expansion)   |
-| `&\>\&2` redirection   | No       | Yes                         |
+| Arrays | No | Yes (`arr=()`) |
+| `[[ ]]` | No | Yes (preferred over `[ ]`) |
+| `(( ))` | No | Yes (arithmetic evaluation) |
+| Process substitution | No | Yes (`&lt;()``&gt;()`) |
+| Associative arrays | No | Yes (bash 4.0+) |
+| `[[ $a =~ $re ]]` | No | Yes (regex matching) |
+| `${var:offset:length}` | No | Yes (substring expansion) |
+| `&\>\&2` redirection | No | Yes |
 
 On Debian and Ubuntu, `/bin/sh` is `dash` — a minimal POSIX shell that is significantly faster than
-bash but lacks bash extensions. Scripts that use bash features must use `#!/bin/bash`, not
+Bash but lacks bash extensions. Scripts that use bash features must use `#!/bin/bash`Not
 `#!/bin/sh`.
 
 ## Command Structure
@@ -87,16 +87,16 @@ command [options] [arguments] [--] [operands]
 The shell performs the following steps before executing a command:
 
 1. **Tokenization**: Split the input line into words based on `IFS` (Internal Field Separator,
-   default: space, tab, newline).
+ default: space, tab, newline).
 2. **Alias expansion**: Replace aliases (only in interactive shells, and not for the first word in
-   certain contexts).
+ certain contexts).
 3. **Brace expansion**: Expand `{a,b,c}` patterns.
-4. **Tilde expansion**: Replace `~` with `$HOME`, `~user` with user's home directory.
-5. **Parameter expansion**: Expand `$VAR`, `${VAR}`, `${VAR:-default}`, etc.
-6. **Command substitution**: Execute `$(cmd)` or `` `cmd` `` and replace with stdout.
+4. **Tilde expansion**: Replace `~` with `$HOME``~user` with user's home directory.
+5. **Parameter expansion**: Expand `$VAR``${VAR}``${VAR:-default}`Etc.
+6. **Command substitution**: Execute `$(cmd)` or `` `Cmd` `` and replace with stdout.
 7. **Arithmetic expansion**: Evaluate `$((expression))`.
 8. **Word splitting**: Split results on `IFS` (except in contexts where it is suppressed).
-9. **Pathname expansion (globbing)**: Expand `*`, `?`, `[...]` patterns.
+9. **Pathname expansion (globbing)**: Expand `*``?``[...]` patterns.
 10. **Quote removal**: Remove quoting characters that are not part of expansions.
 11. **Redirection**: Set up I/O redirections.
 12. **Command execution**: Execute the command using the resolved path.
@@ -104,8 +104,8 @@ The shell performs the following steps before executing a command:
 :::warning
 
 The order of these expansions matters enormously. Parameter expansion happens before globbing, which
-means `VAR="*.txt"` followed by `ls $VAR` will expand to `ls *.txt` and then glob-expand. If there
-are no matching files, the shell behavior depends on the `nullglob` option.
+Means `VAR="*.txt"` followed by `ls $VAR` will expand to `ls *.txt` and then glob-expand. If there
+Are no matching files, the shell behavior depends on the `nullglob` option.
 
 :::
 
@@ -115,14 +115,14 @@ are no matching files, the shell behavior depends on the `nullglob` option.
 
 Every process in Linux has three standard file descriptors at startup:
 
-| FD  | Name   | Default Destination | Description             |
+| FD | Name | Default Destination | Description |
 | --- | ------ | ------------------- | ----------------------- |
-| 0   | stdin  | Keyboard            | Input stream            |
-| 1   | stdout | Terminal            | Normal output           |
-| 2   | stderr | Terminal            | Error/diagnostic output |
+| 0 | stdin | Keyboard | Input stream |
+| 1 | stdout | Terminal | Normal output |
+| 2 | stderr | Terminal | Error/diagnostic output |
 
 The shell can redirect any file descriptor to a file, another descriptor, a pipe, or a
-here-document.
+Here-document.
 
 ### Basic Redirection Operators
 
@@ -168,7 +168,7 @@ command <<< "single line string"
 ### Pipes
 
 Pipes connect the stdout of one process to the stdin of another. The shell creates an anonymous pipe
-using the `pipe(2)` system call, forks both processes, and wires their file descriptors.
+Using the `pipe(2)` system call, forks both processes, and wires their file descriptors.
 
 ```bash
 # Simple pipe
@@ -184,8 +184,8 @@ command 2>&1 1>&3 | process_stderr 3>&1 1>&2 | process_stdout
 :::info
 
 **Pipe buffer size**: Linux pipes have a default buffer of 64 KiB (since kernel 2.6.11, configurable
-via `/proc/sys/fs/pipe-max-size`). When the buffer is full, the writing process blocks until the
-reader consumes data. For high-throughput pipelines, this can be a bottleneck.
+Via `/proc/sys/fs/pipe-max-size`). When the buffer is full, the writing process blocks until the
+Reader consumes data. For high-throughput pipelines, this can be a bottleneck.
 
 :::
 
@@ -228,7 +228,7 @@ exec 2>&1
 ```
 
 This is particularly useful in scripts where you need to maintain open file handles across multiple
-operations:
+Operations:
 
 ```bash
 #!/bin/bash
@@ -246,17 +246,17 @@ exec 3>&- 4>&-
 ## Globbing Patterns
 
 The shell expands glob patterns into matching filenames before passing them to the command. This is
-fundamentally different from regex — globbing operates on filenames in the filesystem, not on
-arbitrary text.
+Fundamentally different from regex — globbing operates on filenames in the filesystem, not on
+Arbitrary text.
 
-| Pattern  | Meaning                                         | Example     | Matches                     |
+| Pattern | Meaning | Example | Matches |
 | -------- | ----------------------------------------------- | ----------- | --------------------------- |
-| `*`      | Any sequence of characters (except leading dot) | `*.log`     | `app.log`, `error.log`      |
-| `?`      | Exactly one character                           | `file?.txt` | `file1.txt`, `fileA.txt`    |
-| `[abc]`  | One character from the set                      | `[abc].sh`  | `a.sh`, `b.sh`, `c.sh`      |
-| `[a-z]`  | One character from the range                    | `[a-m]*`    | `apple`, `banana`, `middle` |
-| `[!abc]` | One character NOT in the set                    | `[!0-9]*`   | `file`, `name`              |
-| `**`     | Recursive glob (bash 4.0+, `globstar` option)   | `**/*.py`   | All `.py` files recursively |
+| `*` | Any sequence of characters (except leading dot) | `*.log` | `app.log``error.log` |
+| `?` | Exactly one character | `file?.txt` | `file1.txt``fileA.txt` |
+| `[abc]` | One character from the set | `[abc].sh` | `a.sh``b.sh``c.sh` |
+| `[a-z]` | One character from the range | `[a-m]*` | `apple``banana``middle` |
+| `[!abc]` | One character NOT in the set | `[!0-9]*` | `file``name` |
+| `**` | Recursive glob (bash 4.0+, `globstar` option) | `**/*.py` | All `.py` files recursively |
 
 ```bash
 # Enable recursive globbing
@@ -276,7 +276,7 @@ ls *.TXT  # matches file.txt, FILE.TXT, etc.
 :::warning
 
 By default, `*` does not match files starting with a dot. This is a security feature inherited from
-the original Unix glob behavior — you must explicitly use `.*` or enable `dotglob` with
+The original Unix glob behavior — you must explicitly use `.*` or enable `dotglob` with
 `shopt -s dotglob`.
 
 :::
@@ -285,13 +285,13 @@ the original Unix glob behavior — you must explicitly use `.*` or enable `dotg
 
 Extended globbing provides pattern matching similar to regex quantifiers:
 
-| Pattern                 | Meaning                           | Regex equivalent   |
+| Pattern | Meaning | Regex equivalent |
 | ----------------------- | --------------------------------- | ------------------ |
-| `?(pattern)`            | Match zero or one occurrence      | `pattern?`         |
-| `*(pattern)`            | Match zero or more occurrences    | `pattern*`         |
-| `+(pattern)`            | Match one or more occurrences     | `pattern+`         |
-| `@(pattern1\|pattern2)` | Match exactly one of the patterns | `(p1\|p2)`         |
-| `!(pattern)`            | Match anything except the pattern | Negative lookahead |
+| `?(pattern)` | Match zero or one occurrence | `pattern?` |
+| `*(pattern)` | Match zero or more occurrences | `pattern*` |
+| `+(pattern)` | Match one or more occurrences | `pattern+` |
+| `@(pattern1\|pattern2)` | Match exactly one of the patterns | `(p1\|p2)` |
+| `!(pattern)` | Match anything except the pattern | Negative lookahead |
 
 ```bash
 shopt -s extglob
@@ -309,7 +309,7 @@ ls *.@(c|h)
 ## Job Control
 
 Job control allows you to manage multiple processes within a single shell session. The shell tracks
-jobs (pipeline groups) and assigns them to the shell's session.
+Jobs (pipeline groups) and assigns them to the shell's session.
 
 ### Core Job Control Commands
 
@@ -369,7 +369,7 @@ graph TD
 ### `nohup` and `disown`
 
 When a shell session ends (SSH disconnect, terminal close), it sends `SIGHUP` to all jobs in the
-session. Two mechanisms prevent this:
+Session. Two mechanisms prevent this:
 
 ```bash
 # Method 1: nohup — ignores SIGHUP, redirects output to nohup.out
@@ -381,9 +381,9 @@ disown -h %1  # prevents SIGHUP on shell exit
 ```
 
 The difference: `nohup` modifies the signal handling of the child process itself, while `disown`
-simply tells the shell not to send `SIGHUP` when it exits. If the shell crashes (SIGKILL),
+ tells the shell not to send `SIGHUP` when it exits. If the shell crashes (SIGKILL),
 `nohup`-protected processes survive, but `disown`-ed processes may still receive `SIGHUP` depending
-on the terminal driver behavior.
+On the terminal driver behavior.
 
 ## Environment Variables
 
@@ -420,21 +420,21 @@ unset MY_VAR
 
 ### Special Shell Variables
 
-| Variable | Meaning                                                    |
+| Variable | Meaning |
 | -------- | ---------------------------------------------------------- |
-| `$?`     | Exit status of the last command (0 = success)              |
+| `$?` | Exit status of the last command (0 = success) |
 | `$$`     | PID of the current shell                                   |
-| `$!`     | PID of the last background process                         |
-| `$-`     | Current shell options                                      |
-| `$_`     | Last argument of the previous command                      |
-| `$@`     | All positional parameters as separate words                |
-| `$*`     | All positional parameters as a single word                 |
-| `$#`     | Number of positional parameters                            |
-| `$0`     | Name of the shell or script                                |
-| `$1..$9` | Positional parameters                                      |
-| `${10}`  | Positional parameter 10+ (must use braces)                 |
-| `IFS`    | Internal Field Separator (default: space, tab, newline)    |
-| `PATH`   | Colon-separated list of directories to search for commands |
+| `$!` | PID of the last background process |
+| `$-` | Current shell options |
+| `$_` | Last argument of the previous command |
+| `$@` | All positional parameters as separate words |
+| `$*` | All positional parameters as a single word |
+| `$#` | Number of positional parameters |
+| `$0` | Name of the shell or script |
+| `$1..$9` | Positional parameters |
+| `${10}` | Positional parameter 10+ (must use braces) |
+| `IFS` | Internal Field Separator (default: space, tab, newline) |
+| `PATH` | Colon-separated list of directories to search for commands |
 
 ### Parameter Expansion
 
@@ -488,23 +488,23 @@ echo "${VAR,,}"
 
 ### Common Environment Files
 
-| File               | Sourced by                    | Purpose                             |
+| File | Sourced by | Purpose |
 | ------------------ | ----------------------------- | ----------------------------------- |
-| `/etc/environment` | PAM                           | System-wide environment variables   |
-| `/etc/profile`     | Login shells                  | System-wide login configuration     |
-| `/etc/bash.bashrc` | Interactive shells            | System-wide interactive config      |
-| `~/.profile`       | Login shells                  | User login configuration            |
-| `~/.bashrc`        | Interactive non-login shells  | User interactive configuration      |
-| `~/.bash_profile`  | Login shells (bash)           | Alternative to `.profile`           |
-| `~/.bash_login`    | Login shells (bash, fallback) | Fallback if `.bash_profile` missing |
-| `/etc/profile.d/*` | `/etc/profile`                | Drop-in system scripts              |
+| `/etc/environment` | PAM | System-wide environment variables |
+| `/etc/profile` | Login shells | System-wide login configuration |
+| `/etc/bash.bashrc` | Interactive shells | System-wide interactive config |
+| `~/.profile` | Login shells | User login configuration |
+| `~/.bashrc` | Interactive non-login shells | User interactive configuration |
+| `~/.bash_profile` | Login shells (bash) | Alternative to `.profile` |
+| `~/.bash_login` | Login shells (bash, fallback) | Fallback if `.bash_profile` missing |
+| `/etc/profile.d/*` | `/etc/profile` | Drop-in system scripts |
 
 ## Shell Scripting
 
 ### Shebangs
 
 The shebang (`#!`) line tells the kernel which interpreter to use when executing the script as a
-direct command (`./script.sh`):
+Direct command (`./script.sh`):
 
 ```bash
 #!/bin/bash
@@ -515,19 +515,19 @@ direct command (`./script.sh`):
 ```
 
 The `env` form is preferred for languages that may be installed in different locations
-(`/usr/bin/bash`, `/usr/local/bin/bash`, `/opt/homebrew/bin/bash`). The kernel only allows one
-argument on the shebang line, so `#!/usr/bin/bash -e` works but `#!/usr/bin/env bash -e` does not —
+(`/usr/bin/bash``/usr/local/bin/bash``/opt/homebrew/bin/bash`). The kernel only allows one
+Argument on the shebang line, so `#!/usr/bin/bash -e` works but `#!/usr/bin/env bash -e` does not —
 `bash -e` is treated as a single argument to `env`.
 
 ### Quoting Rules
 
 Quoting controls word splitting and globbing. The rules are:
 
-| Quote Type  | Expansions Performed                                  |
+| Quote Type | Expansions Performed |
 | ----------- | ----------------------------------------------------- |
-| No quotes   | All expansions, word splitting, globbing              |
+| No quotes | All expansions, word splitting, globbing |
 | Double `""` | Parameter expansion, command substitution, arithmetic |
-| Single `''` | None — literal string                                 |
+| Single `''` | None — literal string |
 
 ```bash
 VAR="hello world"
@@ -668,7 +668,7 @@ set -euo pipefail
 
 `set -e` has subtle interactions with commands in `if` conditions, `&&`/`||` chains, and subshells.
 It does not fire for commands whose exit status is tested (e.g., `if ! command; then`). If you need
-fine-grained error handling, use explicit error checking with `$?` or `trap`.
+Fine-grained error handling, use explicit error checking with `$?` or `trap`.
 
 :::
 
@@ -805,9 +805,9 @@ done < file.txt
 
 ### Pitfall: `#!/bin/sh` with Bash Features
 
-Scripts using `[[`, arrays, `(( ))`, or `local` must use `#!/bin/bash`. On Debian/Ubuntu, `/bin/sh`
-is `dash`, which does not support these. The script will fail with syntax errors that are hard to
-diagnose because the error messages come from dash, not bash.
+Scripts using `[[`Arrays, `(( ))`Or `local` must use `#!/bin/bash`. On Debian/Ubuntu, `/bin/sh`
+Is `dash`Which does not support these. The script will fail with syntax errors that are hard to
+Diagnose because the error messages come from dash, not bash.
 
 ### Pitfall: Unquoted Variable Expansion in `[ ]`
 
@@ -846,7 +846,7 @@ EOF
 ### Pitfall: `echo` Portability
 
 `echo` behavior varies between implementations. The `-e` flag (interpret escape sequences) is
-supported by bash's built-in `echo` but not by the POSIX `echo` from `/bin/echo` on some systems.
+Supported by bash's built-in `echo` but not by the POSIX `echo` from `/bin/echo` on some systems.
 The `-n` flag (suppress trailing newline) is also non-portable.
 
 ```bash
@@ -856,5 +856,13 @@ printf '%-20s %5d\n' "filename" 42
 printf 'Error: %s (code %d)\n' "$msg" "$code"
 ```
 
-`printf` interprets C-style format specifiers (`%s`, `%d`, `%f`, `%x`, `%o`) and is the recommended
-way to produce formatted output in shell scripts.
+`printf` interprets C-style format specifiers (`%s``%d``%f``%x``%o`) and is the recommended
+Way to produce formatted output in shell scripts.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

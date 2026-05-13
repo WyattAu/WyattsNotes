@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A sample contains two radioactive isotopes: isotope $A$ with half-life $t_{A} = 5.0\,\text{days}$ and initial activity $R_{A0} = 400\,\text{Bq}$, and isotope $B$ with half-life $t_{B} = 20.0\,\text{days}$ and initial activity $R_{B0} = 600\,\text{Bq}$.
+A sample contains two radioactive isotopes: isotope $A$ with half-life $t_{A} = 5.0\,\text{days}$ and initial activity $R_{A0} = 400\,\text{Bq}$And isotope $B$ with half-life $t_{B} = 20.0\,\text{days}$ and initial activity $R_{B0} = 600\,\text{Bq}$.
 
 (a) Calculate the total activity of the sample after $10\,\text{days}$.
 
@@ -53,11 +53,11 @@ $$t = 9.43\,\text{days}$$
 
 $$e^{-0.10395t} = 600/400 = 1.5$$
 
-This requires $e$ raised to a positive power to equal $1.5$, but $-0.10395t \lt 0$ for all $t \gt 0$, so $e^{-0.10395t} \lt 1$ always.
+This requires $e$ raised to a positive power to equal $1.5$But $-0.10395t \lt 0$ for all $t \gt 0$So $e^{-0.10395t} \lt 1$ always.
 
-The activities are **never equal** for $t \gt 0$. At $t = 0$, $R_A = 400 \lt R_B = 600$, and $R_A$ always decays faster than $R_B$ (larger decay constant), so $R_A$ is always less than $R_B$ for $t \gt 0$.
+The activities are **never equal** for $t \gt 0$. At $t = 0$$R_A = 400 \lt R_B = 600$And $R_A$ always decays faster than $R_B$ (larger decay constant), so $R_A$ is always less than $R_B$ for $t \gt 0$.
 
-For the activities to be equal, we would need $R_{A0} \gt R_{B0}$ (isotope $A$ starts with higher activity) and then they would cross at some time. With $R_{A0} \lt R_{B0}$, the activities never cross.
+For the activities to be equal, we would need $R_{A0} \gt R_{B0}$ (isotope $A$ starts with higher activity) and then they would cross at some time. With $R_{A0} \lt R_{B0}$The activities never cross.
 
 ---
 ### UT-2: Decay Chain Analysis
@@ -90,11 +90,11 @@ $$= \frac◆LB◆0.10 \times 1000◆RB◆◆LB◆0.05 - 0.10◆RB◆(e^{-2} - e^
 
 So approximately $465$ atoms of $Y$ at $t = 20\,\text{s}$.
 
-(c) Secular equilibrium occurs when $\lambda_X \ll \lambda_Y$ (the parent decays much more slowly than the daughter). In this case, $\lambda_X = 0.10$ and $\lambda_Y = 0.05$, so $\lambda_X \gt \lambda_Y$. This is the opposite of secular equilibrium -- it is **transient equilibrium** ($\lambda_Y \lt \lambda_X$).
+(c) Secular equilibrium occurs when $\lambda_X \ll \lambda_Y$ (the parent decays much more slowly than the daughter). In this case, $\lambda_X = 0.10$ and $\lambda_Y = 0.05$So $\lambda_X \gt \lambda_Y$. This is the opposite of secular equilibrium -- it is **transient equilibrium** ($\lambda_Y \lt \lambda_X$).
 
-In transient equilibrium, after sufficient time, the ratio $N_Y/N_X$ approaches a constant: $\lambda_X N_X = \lambda_Y N_Y$, giving $N_Y/N_X = \lambda_X/\lambda_Y = 2.0$.
+In transient equilibrium, after sufficient time, the ratio $N_Y/N_X$ approaches a constant: $\lambda_X N_X = \lambda_Y N_Y$Giving $N_Y/N_X = \lambda_X/\lambda_Y = 2.0$.
 
-At $t = 20\,\text{s}$: $N_Y/N_X = 465/135 = 3.44$, which has not yet reached the equilibrium value of $2.0$. More time is needed.
+At $t = 20\,\text{s}$: $N_Y/N_X = 465/135 = 3.44$Which has not yet reached the equilibrium value of $2.0$. More time is needed.
 
 ---
 ### UT-3: Beta Decay and the Neutrino
@@ -113,11 +113,11 @@ The Q-value of the decay is $0.156\,\text{MeV}$.
 
 (c) Calculate the maximum momentum of the beta particle.
 
-Take $m_e = 9.11 \times 10^{-31}\,\text{kg}$, $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $1\,\text{eV} = 1.60 \times 10^{-19}\,\text{J}$.
+Take $m_e = 9.11 \times 10^{-31}\,\text{kg}$$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$1\,\text{eV} = 1.60 \times 10^{-19}\,\text{J}$.
 
 **Solution:**
 
-(a) In beta-minus decay, a neutron converts to a proton, electron, and electron antineutrino: $n \to p + e^- + \bar{\nu}_e$. Without the antineutrino, the decay would violate conservation of energy and momentum simultaneously. The kinetic energy of the beta particle varies from zero to $Q$, with the antineutrino carrying the remaining energy. The antineutrino ensures that both energy and momentum are conserved for every individual decay, not just on average.
+(a) In beta-minus decay, a neutron converts to a proton, electron, and electron antineutrino: $n \to p + e^- + \bar{\nu}_e$. Without the antineutrino, the decay would violate conservation of energy and momentum simultaneously. The kinetic energy of the beta particle varies from zero to $Q$With the antineutrino carrying the remaining energy. The antineutrino ensures that both energy and momentum are conserved for every individual decay, not just on average.
 
 Additionally, beta decay involves the weak nuclear force (mediated by $W^-$ bosons), and the leptons (electron and antineutrino) are produced as a lepton-antilepton pair to conserve lepton number.
 
@@ -127,11 +127,11 @@ Additionally, beta decay involves the weak nuclear force (mediated by $W^-$ boso
 
 $K_{\max} = 0.156\,\text{MeV} = 0.156 \times 10^6 \times 1.60 \times 10^{-19} = 2.496 \times 10^{-14}\,\text{J}$
 
-Since $K \ll m_e c^2 = 0.511\,\text{MeV}$, we can use non-relativistic mechanics:
+Since $K \ll m_e c^2 = 0.511\,\text{MeV}$We can use non-relativistic mechanics:
 
 $$p = \sqrt{2m_e K} = \sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 2.496 \times 10^{-14}◆RB◆ = \sqrt◆LB◆4.548 \times 10^{-44}◆RB◆ = 2.13 \times 10^{-22}\,\text{kg}\,\text{m}\,\text{s}^{-1}$$
 
-Alternatively, using $pc = \sqrt{2m_e c^2 K} = \sqrt◆LB◆2 \times 0.511 \times 0.156◆RB◆\,\text{MeV} = \sqrt{0.159}\,\text{MeV} = 0.399\,\text{MeV}$, giving $p = 0.399\,\text{MeV}/c$.
+Alternatively, using $pc = \sqrt{2m_e c^2 K} = \sqrt◆LB◆2 \times 0.511 \times 0.156◆RB◆\,\text{MeV} = \sqrt{0.159}\,\text{MeV} = 0.399\,\text{MeV}$Giving $p = 0.399\,\text{MeV}/c$.
 
 ## Integration Tests
 
@@ -145,7 +145,7 @@ A sample of ancient wood has a carbon-14 activity of $1.2\,\text{Bq}\,\text{g}^{
 
 (b) Calculate the percentage of original carbon-14 remaining.
 
-(c) If the measurement uncertainty in the activity is $\pm 0.1\,\text{Bq}\,\text{g}^{-1}$, calculate the uncertainty in the age.
+(c) If the measurement uncertainty in the activity is $\pm 0.1\,\text{Bq}\,\text{g}^{-1}$Calculate the uncertainty in the age.
 
 **Solution:**
 
@@ -153,7 +153,7 @@ A sample of ancient wood has a carbon-14 activity of $1.2\,\text{Bq}\,\text{g}^{
 
 $\lambda = \ln 2/5730 = 1.209 \times 10^{-4}\,\text{year}^{-1}$
 
-**Note:** The stated sample activity of $1.2\,\text{Bq}\,\text{g}^{-1}$ exceeds the living-wood baseline of $0.23\,\text{Bq}\,\text{g}^{-1}$, which is physically inconsistent with radioactive decay (a sample cannot have more C-14 than living material). This indicates either measurement error or contamination. Assuming the intended value is $A = 0.12\,\text{Bq}\,\text{g}^{-1}$ (approximately half the living value):
+**Note:** The stated sample activity of $1.2\,\text{Bq}\,\text{g}^{-1}$ exceeds the living-wood baseline of $0.23\,\text{Bq}\,\text{g}^{-1}$Which is physically inconsistent with radioactive decay (a sample cannot have more C-14 than living material). This indicates either measurement error or contamination. Assuming the intended value is $A = 0.12\,\text{Bq}\,\text{g}^{-1}$ (approximately half the living value):
 
 $$t = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln\frac{A_0}{A} = \frac◆LB◆1◆RB◆◆LB◆1.209 \times 10^{-4}◆RB◆\ln\frac{0.23}{0.12} = 8271 \times 0.652 = 5393\,\text{years}$$
 
@@ -225,7 +225,7 @@ A gamma-ray source emits photons of energy $0.662\,\text{MeV}$ (Cs-137). The lin
 
 (a) $I = I_0 e^{-\mu x}$
 
-At HVT: $I = I_0/2$, so $e^{-\mu x_{1/2}} = 0.5 \Rightarrow x_{1/2} = \ln 2/\mu$
+At HVT: $I = I_0/2$So $e^{-\mu x_{1/2}} = 0.5 \Rightarrow x_{1/2} = \ln 2/\mu$
 
 Lead: $x_{1/2} = 0.693/1.20 = 0.578\,\text{cm}$
 

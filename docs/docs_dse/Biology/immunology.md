@@ -17,12 +17,12 @@ slug: dse-biology-immunology
 
 A pathogen is any organism or agent that can cause disease. The DSE specification requires knowledge of four main types of pathogen.
 
-| Pathogen Type | Structure                                                | Examples of Diseases                                   | Key Features                                                                                                               |
+| Pathogen Type | Structure | Examples of Diseases | Key Features |
 | ------------- | -------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| Bacteria      | Prokaryotic cells; no nucleus; cell wall (peptidoglycan); single circular chromosome; 70S ribosomes; plasmids | Cholera, tuberculosis, gonorrhoea, tetanus, syphilis | Reproduce by binary fission (rapid, every 20 min); produce toxins (endotoxins and exotoxins); most are free-living; treated with antibiotics |
-| Viruses       | Non-cellular; protein coat (capsid) surrounding nucleic acid (DNA or RNA); no ribosomes; no metabolism; no cell membrane | Influenza, HIV/AIDS, COVID-19, measles, polio, HPV   | Obligate intracellular parasites; replicate inside host cells using host machinery; not affected by antibiotics                |
-| Fungi         | Eukaryotic; chitin cell wall; true nucleus; 80S ribosomes; can be unicellular (yeasts) or multicellular (moulds) | Athlete's foot, ringworm, thrush (Candida)           | Reproduce by spores; saprotrophic nutrition; treated with antifungal drugs                                                 |
-| Protozoa      | Eukaryotic; unicellular; no cell wall; true nucleus; some have flagella or cilia | Malaria (Plasmodium), amoebic dysentery, sleeping sickness | Often have complex life cycles involving multiple hosts; transmitted by vectors (e.g., mosquitoes for malaria)                |
+| Bacteria | Prokaryotic cells; no nucleus; cell wall (peptidoglycan); single circular chromosome; 70S ribosomes; plasmids | Cholera, tuberculosis, gonorrhoea, tetanus, syphilis | Reproduce by binary fission (rapid, every 20 min); produce toxins (endotoxins and exotoxins); most are free-living; treated with antibiotics |
+| Viruses | Non-cellular; protein coat (capsid) surrounding nucleic acid (DNA or RNA); no ribosomes; no metabolism; no cell membrane | Influenza, HIV/AIDS, COVID-19, measles, polio, HPV | Obligate intracellular parasites; replicate inside host cells using host machinery; not affected by antibiotics |
+| Fungi | Eukaryotic; chitin cell wall; true nucleus; 80S ribosomes; can be unicellular (yeasts) or multicellular (moulds) | Athlete's foot, ringworm, thrush (Candida) | Reproduce by spores; saprotrophic nutrition; treated with antifungal drugs |
+| Protozoa | Eukaryotic; unicellular; no cell wall; true nucleus; some have flagella or cilia | Malaria (Plasmodium), amoebic dysentery, sleeping sickness | Often have complex life cycles involving multiple hosts; transmitted by vectors (e.g., mosquitoes for malaria) |
 
 ### How Pathogens Cause Disease
 
@@ -30,10 +30,10 @@ Pathogens cause disease through several mechanisms:
 
 **1. Production of toxins:**
 
-| Toxin Type | Description                                                                                                       | Example                                            |
+| Toxin Type | Description | Example |
 | ----------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| Exotoxins   | Secreted by living bacteria into the surrounding environment; highly potent; specific targets (nerves, cells, etc.) | Tetanus toxin (Clostridium tetani); cholera toxin (Vibrio cholerae) |
-| Endotoxins  | Components of the outer membrane of Gram-negative bacteria; released when bacteria die; less potent but cause fever and inflammation | Lipopolysaccharide (LPS) from Salmonella, E. coli  |
+| Exotoxins | Secreted by living bacteria into the surrounding environment; highly potent; specific targets (nerves, cells, etc.) | Tetanus toxin (Clostridium tetani); cholera toxin (Vibrio cholerae) |
+| Endotoxins | Components of the outer membrane of Gram-negative bacteria; released when bacteria die; less potent but cause fever and inflammation | Lipopolysaccharide (LPS) from Salmonella, E. Coli |
 
 **2. Cell damage:**
 
@@ -48,15 +48,15 @@ Pathogens cause disease through several mechanisms:
 
 ### Transmission of Pathogens
 
-| Transmission Route    | Description                                                                                    | Example                                                   |
+| Transmission Route | Description | Example |
 | --------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Direct contact        | Physical contact with an infected person (skin, bodily fluids)                                 | Herpes simplex, HIV, HPV                                  |
-| Droplet infection     | Coughing, sneezing, talking expels droplets containing pathogens                               | Influenza, common cold, COVID-19, tuberculosis             |
-| Water-borne           | Ingestion of contaminated water                                                                | Cholera, typhoid, amoebic dysentery                       |
-| Food-borne            | Ingestion of contaminated food (undercooked meat, unwashed vegetables)                         | Salmonella, E. coli O157, botulism                        |
-| Vector-borne          | Transmission by an insect or other animal vector                                              | Malaria (mosquito), dengue fever (mosquito), Lyme disease (tick) |
-| Fomite transmission   | Transfer via contaminated objects (door handles, towels, medical equipment)                    | Common cold viruses, MRSA                                 |
-| Blood-borne           | Transfer through blood or blood products                                                       | HIV, Hepatitis B and C                                     |
+| Direct contact | Physical contact with an infected person (skin, bodily fluids) | Herpes simplex, HIV, HPV |
+| Droplet infection | Coughing, sneezing, talking expels droplets containing pathogens | Influenza, common cold, COVID-19, tuberculosis |
+| Water-borne | Ingestion of contaminated water | Cholera, typhoid, amoebic dysentery |
+| Food-borne | Ingestion of contaminated food (undercooked meat, unwashed vegetables) | Salmonella, E. Coli O157, botulism |
+| Vector-borne | Transmission by an insect or other animal vector | Malaria (mosquito), dengue fever (mosquito), Lyme disease (tick) |
+| Fomite transmission | Transfer via contaminated objects (door handles, towels, medical equipment) | Common cold viruses, MRSA |
+| Blood-borne | Transfer through blood or blood products | HIV, Hepatitis B and C |
 
 ---
 
@@ -66,16 +66,16 @@ Pathogens cause disease through several mechanisms:
 
 The body's first line of defence prevents pathogens from entering the body.
 
-| Barrier                | Mechanism                                                                                                                                      |
+| Barrier | Mechanism |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Skin                   | Physical barrier; keratinised outer layer (epidermis) is tough and waterproof; sebaceous glands secrete sebum (antimicrobial lipids)        |
-| Mucous membranes       | Line respiratory, digestive, and reproductive tracts; trap pathogens in sticky mucus                                                           |
-| Cilia                  | Microscopic hair-like structures in the respiratory tract; move mucus (with trapped pathogens) upwards and out of the airways                  |
-| Stomach acid           | Hydrochloric acid (HCl) in the stomach (pH ~2) denatures proteins in pathogens and destroys most ingested bacteria                              |
-| Tears and saliva       | Contain **lysozyme**, an enzyme that breaks down peptidoglycan in bacterial cell walls, causing lysis                                          |
-| Ear wax (cerumen)      | Traps pathogens and insects; contains antimicrobial properties                                                                                |
-| Vaginal secretions     | Slightly acidic (pH ~4) due to lactic acid production by _Lactobacillus_; inhibits growth of many pathogens                                   |
-| Normal flora (microbiome) | Commensal bacteria on the skin and in the gut compete with pathogens for nutrients and space; some produce antimicrobial substances            |
+| Skin | Physical barrier; keratinised outer layer (epidermis) is tough and waterproof; sebaceous glands secrete sebum (antimicrobial lipids) |
+| Mucous membranes | Line respiratory, digestive, and reproductive tracts; trap pathogens in sticky mucus |
+| Cilia | Microscopic hair-like structures in the respiratory tract; move mucus (with trapped pathogens) upwards and out of the airways |
+| Stomach acid | Hydrochloric acid (HCl) in the stomach (pH ~2) denatures proteins in pathogens and destroys most ingested bacteria |
+| Tears and saliva | Contain **lysozyme**, an enzyme that breaks down peptidoglycan in bacterial cell walls, causing lysis |
+| Ear wax (cerumen) | Traps pathogens and insects; contains antimicrobial properties |
+| Vaginal secretions | Slightly acidic (pH ~4) due to lactic acid production by _Lactobacillus_; inhibits growth of many pathogens |
+| Normal flora (microbiome) | Commensal bacteria on the skin and in the gut compete with pathogens for nutrients and space; some produce antimicrobial substances |
 
 ### Second Line of Defence: Internal Defences
 
@@ -85,10 +85,10 @@ If pathogens breach the first line of defence, the second line provides a rapid,
 
 Phagocytes (neutrophils and macrophages) are white blood cells that engulf and destroy pathogens.
 
-| Phagocyte Type | Source                           | Location                                  | Characteristics                                                                                                               |
+| Phagocyte Type | Source | Location | Characteristics |
 | -------------- | -------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Neutrophils    | Bone marrow; short-lived (hours) | Blood; recruited to infection sites       | Most abundant phagocyte; first to arrive at infection; multi-lobed nucleus; granules contain digestive enzymes              |
-| Macrophages    | Derived from monocytes           | Tissues (liver, lungs, lymph nodes, spleen) | Larger and longer-lived than neutrophils; can present antigens to T cells (antigen-presenting cells); important in adaptive immunity |
+| Neutrophils | Bone marrow; short-lived (hours) | Blood; recruited to infection sites | Most abundant phagocyte; first to arrive at infection; multi-lobed nucleus; granules contain digestive enzymes |
+| Macrophages | Derived from monocytes | Tissues (liver, lungs, lymph nodes, spleen) | Larger and longer-lived than neutrophils; can present antigens to T cells (antigen-presenting cells); important in adaptive immunity |
 
 **Stages of phagocytosis:**
 
@@ -104,12 +104,12 @@ Inflammation is a localised response to tissue damage or infection. Its purpose 
 
 **The four cardinal signs of inflammation:**
 
-| Sign          | Mechanism                                                                                                           |
+| Sign | Mechanism |
 | ------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Redness       | Vasodilation increases blood flow to the area                                                                       |
-| Heat          | Increased blood flow brings warm blood from the body core to the surface                                             |
-| Swelling      | Increased permeability of capillary walls allows plasma proteins and fluid to leak into the tissue (oedema)           |
-| Pain          | Swelling compresses nerve endings; inflammatory chemicals (prostaglandins, bradykinin) stimulate pain receptors     |
+| Redness | Vasodilation increases blood flow to the area |
+| Heat | Increased blood flow brings warm blood from the body core to the surface |
+| Swelling | Increased permeability of capillary walls allows plasma proteins and fluid to leak into the tissue (oedema) |
+| Pain | Swelling compresses nerve endings; inflammatory chemicals (prostaglandins, bradykinin) stimulate pain receptors |
 
 **Sequence of events:**
 
@@ -145,10 +145,10 @@ Adaptive immunity is a specific response to a particular pathogen. It is slower 
 
 Two types of adaptive immunity:
 
-| Type                    | Cells Involved    | Target                           | Mechanism                                                                                                    |
+| Type | Cells Involved | Target | Mechanism |
 | ----------------------- | ----------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Cell-mediated immunity  | T lymphocytes (T cells) | Body's own cells that are infected, cancerous, or transplanted | Cytotoxic T cells directly destroy abnormal cells; T helper cells coordinate the immune response            |
-| Humoral immunity        | B lymphocytes (B cells) | Extracellular pathogens (bacteria, viruses outside cells, toxins) | B cells differentiate into plasma cells that secrete antibodies specific to the pathogen's antigens |
+| Cell-mediated immunity | T lymphocytes (T cells) | Body's own cells that are infected, cancerous, or transplanted | Cytotoxic T cells directly destroy abnormal cells; T helper cells coordinate the immune response |
+| Humoral immunity | B lymphocytes (B cells) | Extracellular pathogens (bacteria, viruses outside cells, toxins) | B cells differentiate into plasma cells that secrete antibodies specific to the pathogen's antigens |
 
 ### Antigens
 
@@ -162,12 +162,12 @@ An **antigen** is any molecule that can trigger an immune response. Most antigen
 
 T cells originate in the bone marrow but mature in the **thymus gland**.
 
-| T Cell Type       | Function                                                                                                                                            | Surface Marker   |
+| T Cell Type | Function | Surface Marker |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| T helper cells ($\mathrm{CD4}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4             |
-| Cytotoxic T cells ($\mathrm{CD8}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I   | CD8             |
-| Memory T cells    | Long-lived; provide rapid secondary response upon re-exposure to the same antigen                                                                    | --              |
-| Regulatory T cells (Tregs) | Suppress immune responses; prevent autoimmune reactions; maintain tolerance to self-antigens                                                         | CD4, CD25        |
+| T helper cells ($\mathrm{CD4}^+$) | Release cytokines that stimulate B cells to differentiate into plasma cells and memory cells; activate cytotoxic T cells and macrophages | CD4 |
+| Cytotoxic T cells ($\mathrm{CD8}^+$) | Directly destroy virus-infected cells and cancer cells by inducing apoptosis (programmed cell death); recognise antigens presented on MHC class I | CD8 |
+| Memory T cells | Long-lived; provide rapid secondary response upon re-exposure to the same antigen | -- |
+| Regulatory T cells (Tregs) | Suppress immune responses; prevent autoimmune reactions; maintain tolerance to self-antigens | CD4, CD25 |
 
 **T cell activation:**
 
@@ -211,25 +211,25 @@ An antibody is a Y-shaped protein (immunoglobulin) composed of:
 
 **How antibodies work:**
 
-| Mechanism           | Description                                                                                                                                                          |
+| Mechanism | Description |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Neutralisation      | Antibodies bind to the surface antigens of pathogens or toxins, blocking their ability to bind to host cells or enter tissues                                       |
-| Agglutination       | Antibodies bind to multiple pathogens, clumping them together. This prevents them from spreading and makes it easier for phagocytes to engulf multiple pathogens at once |
-| Opsonisation        | Antibodies coat the surface of pathogens, marking them for phagocytosis. Phagocytes have receptors for the constant region of antibodies                              |
+| Neutralisation | Antibodies bind to the surface antigens of pathogens or toxins, blocking their ability to bind to host cells or enter tissues |
+| Agglutination | Antibodies bind to multiple pathogens, clumping them together. This prevents them from spreading and makes it easier for phagocytes to engulf multiple pathogens at once |
+| Opsonisation | Antibodies coat the surface of pathogens, marking them for phagocytosis. Phagocytes have receptors for the constant region of antibodies |
 | Complement activation| Antibodies bound to pathogens trigger the complement system -- a cascade of proteins that: (a) form membrane attack complexes (MAC) that lyse pathogens, (b) enhance inflammation, (c) promote opsonisation |
-| Precipitation       | Antibodies bind to soluble antigens (toxins), forming insoluble complexes that precipitate out of solution and are cleared by phagocytes                             |
+| Precipitation | Antibodies bind to soluble antigens (toxins), forming insoluble complexes that precipitate out of solution and are cleared by phagocytes |
 
 ### Primary and Secondary Immune Responses
 
-| Feature         | Primary Response                        | Secondary Response                           |
+| Feature | Primary Response | Secondary Response |
 | --------------- | --------------------------------------- | -------------------------------------------- |
-| Trigger         | First exposure to an antigen            | Subsequent exposure to the SAME antigen      |
-| Speed           | Slow: 5-10 days before antibody production peaks | Fast: 1-3 days before antibody production peaks |
-| Antibody level  | Lower peak                               | Much higher peak (10-100 times primary)       |
-| Antibody class  | Mainly IgM initially, then IgG          | Mainly IgG (rapid, large-scale production)   |
-| Duration        | Short-lived (weeks)                     | Long-lived (months to years)                 |
-| Cells involved  | Naive B cells and T cells               | Memory B cells and memory T cells            |
-| Result          | Symptoms of disease may develop before immunity is established | Usually no symptoms; pathogen destroyed rapidly |
+| Trigger | First exposure to an antigen | Subsequent exposure to the SAME antigen |
+| Speed | Slow: 5-10 days before antibody production peaks | Fast: 1-3 days before antibody production peaks |
+| Antibody level | Lower peak | Much higher peak (10-100 times primary) |
+| Antibody class | Mainly IgM initially, then IgG | Mainly IgG (rapid, large-scale production) |
+| Duration | Short-lived (weeks) | Long-lived (months to years) |
+| Cells involved | Naive B cells and T cells | Memory B cells and memory T cells |
+| Result | Symptoms of disease may develop before immunity is established | no symptoms; pathogen destroyed rapidly |
 
 **Immunological memory:** After the primary response, memory B cells and memory T cells persist in the body for years or even a lifetime. Upon re-exposure to the same antigen, memory cells rapidly divide and differentiate into effector cells, producing a faster, stronger, and longer-lasting secondary response.
 
@@ -243,14 +243,14 @@ Vaccination exploits the immune system's ability to develop immunological memory
 
 **Types of vaccine:**
 
-| Vaccine Type              | Description                                                                                                           | Examples                                             |
+| Vaccine Type | Description | Examples |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Live attenuated           | Weakened (attenuated) form of the pathogen; can replicate but does not cause disease in healthy individuals            | MMR (measles, mumps, rubella); BCG (tuberculosis)    |
-| Inactivated (killed)      | Dead pathogen; cannot replicate; generally requires booster doses                                                      | Influenza; polio (Salk vaccine); rabies              |
-| Toxoid                    | Inactivated toxin; stimulates antibody production against the toxin                                                   | Tetanus; diphtheria                                  |
-| Subunit (recombinant)     | Specific antigenic proteins from the pathogen                                                                          | HPV vaccine; Hepatitis B; COVID-19 (subunit)         |
-| mRNA                      | Messenger RNA that instructs cells to produce the pathogen's antigen                                                  | COVID-19 (Pfizer-BioNTech, Moderna)                  |
-| Viral vector              | Harmless virus engineered to carry genes for the pathogen's antigen                                                    | COVID-19 (Oxford-AstraZeneca, Janssen)               |
+| Live attenuated | Weakened (attenuated) form of the pathogen; can replicate but does not cause disease in healthy individuals | MMR (measles, mumps, rubella); BCG (tuberculosis) |
+| Inactivated (killed) | Dead pathogen; cannot replicate; generally requires booster doses | Influenza; polio (Salk vaccine); rabies |
+| Toxoid | Inactivated toxin; stimulates antibody production against the toxin | Tetanus; diphtheria |
+| Subunit (recombinant) | Specific antigenic proteins from the pathogen | HPV vaccine; Hepatitis B; COVID-19 (subunit) |
+| mRNA | Messenger RNA that instructs cells to produce the pathogen's antigen | COVID-19 (Pfizer-BioNTech, Moderna) |
+| Viral vector | Harmless virus engineered to carry genes for the pathogen's antigen | COVID-19 (Oxford-AstraZeneca, Janssen) |
 
 ### Herd Immunity
 
@@ -262,22 +262,22 @@ $$\text{Threshold} = \left(1 - \frac{1}{R_0}\right) \times 100\%$$
 
 Where $R_0$ is the basic reproduction number (average number of secondary infections produced by one infected individual in a fully susceptible population).
 
-| Disease        | $R_0$  | Herd Immunity Threshold |
+| Disease | $R_0$ | Herd Immunity Threshold |
 | -------------- | ------ | ----------------------- |
-| Measles        | 12-18  | 92-94%                  |
-| Polio          | 5-7    | 80-86%                  |
-| COVID-19 (Omicron) | 8-12 | 87-92%                  |
-| Seasonal flu   | 1.5-3  | 33-67%                  |
+| Measles | 12-18 | 92-94% |
+| Polio | 5-7 | 80-86% |
+| COVID-19 (Omicron) | 8-12 | 87-92% |
+| Seasonal flu | 1.5-3 | 33-67% |
 
 ### Advantages and Risks of Vaccination
 
-| Advantages                                   | Risks and Limitations                                                                                                  |
+| Advantages | Risks and Limitations |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Provides individual immunity                 | Rare adverse reactions (allergic reactions, fever)                                                                    |
-| Protects vulnerable individuals (herd immunity) | Some vaccines require multiple doses (boosters)                                                                        |
-| Eliminates or eradicates diseases            | Not 100% effective in all individuals                                                                                  |
-| Cost-effective compared to treating disease  | Vaccine hesitancy and misinformation can reduce uptake                                                                 |
-| Reduces antibiotic resistance                | Antigenic variation (mutations) in pathogens may require updated vaccines (e.g., annual flu vaccine)                   |
+| Provides individual immunity | Rare adverse reactions (allergic reactions, fever) |
+| Protects vulnerable individuals (herd immunity) | Some vaccines require multiple doses (boosters) |
+| Eliminates or eradicates diseases | Not 100% effective in all individuals |
+| Cost-effective compared to treating disease | Vaccine hesitancy and misinformation can reduce uptake |
+| Reduces antibiotic resistance | Antigenic variation (mutations) in pathogens may require updated vaccines (e.g., annual flu vaccine) |
 
 ---
 
@@ -287,14 +287,14 @@ Where $R_0$ is the basic reproduction number (average number of secondary infect
 
 In autoimmune diseases, the immune system mistakenly attacks the body's own tissues (self-antigens), failing to distinguish between self and non-self.
 
-| Disease                  | Target Tissue/Cells                           | Symptoms                                                                          |
+| Disease | Target Tissue/Cells | Symptoms |
 | ------------------------ | --------------------------------------------- | --------------------------------------------------------------------------------- |
-| Type 1 diabetes          | $\beta$ cells of the islets of Langerhans    | Destruction of $\beta$ cells; no insulin production; hyperglycaemia                |
-| Rheumatoid arthritis     | Synovial membranes of joints                 | Joint inflammation, pain, swelling, cartilage destruction, deformity              |
-| Multiple sclerosis (MS)  | Myelin sheath of neurons in the CNS          | Demyelination; impaired nerve conduction; muscle weakness, vision problems         |
-| Lupus (SLE)              | Connective tissue, skin, kidneys, joints     | Butterfly rash, joint pain, kidney damage, fatigue                                 |
-| Myasthenia gravis        | Acetylcholine receptors at neuromuscular junctions | Muscle weakness that worsens with activity; drooping eyelids, difficulty swallowing |
-| Coeliac disease          | Villi of the small intestine (triggered by gluten) | Damage to intestinal villi; malabsorption; diarrhoea, weight loss                  |
+| Type 1 diabetes | $\beta$ cells of the islets of Langerhans | Destruction of $\beta$ cells; no insulin production; hyperglycaemia |
+| Rheumatoid arthritis | Synovial membranes of joints | Joint inflammation, pain, swelling, cartilage destruction, deformity |
+| Multiple sclerosis (MS) | Myelin sheath of neurons in the CNS | Demyelination; impaired nerve conduction; muscle weakness, vision problems |
+| Lupus (SLE) | Connective tissue, skin, kidneys, joints | Butterfly rash, joint pain, kidney damage, fatigue |
+| Myasthenia gravis | Acetylcholine receptors at neuromuscular junctions | Muscle weakness that worsens with activity; drooping eyelids, difficulty swallowing |
+| Coeliac disease | Villi of the small intestine (triggered by gluten) | Damage to intestinal villi; malabsorption; diarrhoea, weight loss |
 
 **Possible causes of autoimmune disease:**
 
@@ -313,13 +313,13 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 3. **Degranulation:** The mast cells release histamine and other inflammatory mediators (degranulation).
 4. **Symptoms:** Histamine causes vasodilation, increased capillary permeability (swelling), mucus production, and smooth muscle contraction (bronchoconstriction).
 
-| Allergic Condition       | Symptoms                                                                                     |
+| Allergic Condition | Symptoms |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
-| Hay fever (allergic rhinitis) | Sneezing, runny nose, itchy eyes, nasal congestion (pollen allergen)                       |
-| Asthma                   | Wheezing, difficulty breathing, bronchoconstriction (dust mites, pollen, pet dander)       |
-| Anaphylaxis              | Life-threatening: airway constriction, drop in blood pressure, swelling of tongue/throat    |
-| Eczema (atopic dermatitis) | Red, itchy, inflamed skin                                                                  |
-| Food allergy             | Hives, swelling, gastrointestinal symptoms, anaphylaxis (peanuts, shellfish, eggs)          |
+| Hay fever (allergic rhinitis) | Sneezing, runny nose, itchy eyes, nasal congestion (pollen allergen) |
+| Asthma | Wheezing, difficulty breathing, bronchoconstriction (dust mites, pollen, pet dander) |
+| Anaphylaxis | Life-threatening: airway constriction, drop in blood pressure, swelling of tongue/throat |
+| Eczema (atopic dermatitis) | Red, itchy, inflamed skin |
+| Food allergy | Hives, swelling, gastrointestinal symptoms, anaphylaxis (peanuts, shellfish, eggs) |
 
 **Treatment of allergies:**
 
@@ -332,12 +332,12 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 
 **Human Immunodeficiency Virus (HIV):**
 
-| Feature            | Description                                                                                                           |
+| Feature | Description |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| Pathogen type      | Retrovirus (RNA virus) that carries reverse transcriptase                                                              |
-| Target cells       | T helper cells ($\mathrm{CD4}^+$ T cells) -- the cells that coordinate the immune response                            |
-| Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
-| Not transmitted by | Casual contact, hugging, sharing utensils, mosquito bites                                                              |
+| Pathogen type | Retrovirus (RNA virus) that carries reverse transcriptase |
+| Target cells | T helper cells ($\mathrm{CD4}^+$ T cells) -- the cells that coordinate the immune response |
+| Transmission | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
+| Not transmitted by | Casual contact, hugging, sharing utensils, mosquito bites |
 
 **HIV lifecycle:**
 
@@ -352,11 +352,11 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 
 **Stages of HIV infection:**
 
-| Stage                  | Description                                                                                                                            |
+| Stage | Description |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Acute infection        | 2-4 weeks after exposure; flu-like symptoms; high viral load; T helper cell count drops briefly then partially recovers                 |
-| Clinical latency       | May last 8-10 years; no symptoms; virus replicates slowly; T helper cell count gradually declines                                       |
-| AIDS                   | T helper cell count drops below 200 cells/mm$^3$; immune system severely compromised; opportunistic infections (infections that a healthy immune system would normally control) develop |
+| Acute infection | 2-4 weeks after exposure; flu-like symptoms; high viral load; T helper cell count drops briefly then partially recovers |
+| Clinical latency | May last 8-10 years; no symptoms; virus replicates slowly; T helper cell count gradually declines |
+| AIDS | T helper cell count drops below 200 cells/mm$^3$; immune system severely compromised; opportunistic infections (infections that a healthy immune system would normally control) develop |
 
 **Opportunistic infections in AIDS:**
 
@@ -387,12 +387,12 @@ An allergy is an exaggerated immune response to a harmless antigen (allergen). T
 
 **Applications:**
 
-| Application         | Description                                                                                                                   |
+| Application | Description |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Medical diagnosis   | Pregnancy tests (detect hCG); detection of specific pathogens or disease markers in blood samples                             |
-| Cancer treatment    | Monoclonal antibodies designed to bind to specific cancer cell antigens, marking them for destruction by the immune system       |
-| Autoimmune disease  | Infliximab (binds to and neutralises TNF-alpha, reducing inflammation in rheumatoid arthritis and Crohn's disease)              |
-| COVID-19 treatment  | Monoclonal antibody cocktails that bind to the SARS-CoV-2 spike protein, neutralising the virus                                |
+| Medical diagnosis | Pregnancy tests (detect hCG); detection of specific pathogens or disease markers in blood samples |
+| Cancer treatment | Monoclonal antibodies designed to bind to specific cancer cell antigens, marking them for destruction by the immune system |
+| Autoimmune disease | Infliximab (binds to and neutralises TNF-alpha, reducing inflammation in rheumatoid arthritis and Crohn's disease) |
+| COVID-19 treatment | Monoclonal antibody cocktails that bind to the SARS-CoV-2 spike protein, neutralising the virus |
 
 ---
 
@@ -426,14 +426,14 @@ ELISA is a widely used biochemical technique that uses antibodies and colour cha
 
 ### Applications of ELISA
 
-| Application          | Target                          | Description                                                                                                    |
+| Application | Target | Description |
 | -------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Disease diagnosis    | HIV antibodies; hepatitis B surface antigen; SARS-CoV-2 antibodies | Detects exposure to specific pathogens                 |
-| Pregnancy testing    | hCG (human chorionic gonadotropin) | Detects the hormone produced during early pregnancy in urine or blood                                           |
-| Allergy testing      | IgE antibodies specific to allergens | Measures the level of allergen-specific IgE in blood                                                            |
-| Drug testing         | Specific drug molecules          | Detects drugs or their metabolites in blood or urine                                                           |
-| Food safety          | Food allergens, pathogens        | Detects traces of allergens (peanut protein) or bacteria (_Salmonella_, _E. coli_) in food samples               |
-| Environmental monitoring | Toxins, pollutants        | Measures levels of environmental contaminants in water or soil samples                                          |
+| Disease diagnosis | HIV antibodies; hepatitis B surface antigen; SARS-CoV-2 antibodies | Detects exposure to specific pathogens |
+| Pregnancy testing | hCG (human chorionic gonadotropin) | Detects the hormone produced during early pregnancy in urine or blood |
+| Allergy testing | IgE antibodies specific to allergens | Measures the level of allergen-specific IgE in blood |
+| Drug testing | Specific drug molecules | Detects drugs or their metabolites in blood or urine |
+| Food safety | Food allergens, pathogens | Detects traces of allergens (peanut protein) or bacteria (_Salmonella_, _E. Coli_) in food samples |
+| Environmental monitoring | Toxins, pollutants | Measures levels of environmental contaminants in water or soil samples |
 
 ---
 
@@ -441,23 +441,23 @@ ELISA is a widely used biochemical technique that uses antibodies and colour cha
 
 ### Classification of Immunity
 
-| Category          | Type           | Description                                                                                                               | Example                                                   |
+| Category | Type | Description | Example |
 | ----------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Active            | Natural         | The body produces its own antibodies after natural exposure to a pathogen                                              | Recovering from chickenpox provides immunity to future infection |
-| Active            | Artificial      | The body produces its own antibodies after vaccination                                                               | MMR vaccine provides immunity to measles, mumps, and rubella |
-| Passive           | Natural         | Pre-formed antibodies are transferred from mother to baby across the placenta (IgG) or in breast milk (IgA/sIgA)   | Newborn immunity to diseases the mother has had            |
-| Passive           | Artificial      | Pre-formed antibodies are injected into the body (from an immune animal or human donor)                              | Antivenom for snake bite; rabies immunoglobulin; tetanus antitoxin |
+| Active | Natural | The body produces its own antibodies after natural exposure to a pathogen | Recovering from chickenpox provides immunity to future infection |
+| Active | Artificial | The body produces its own antibodies after vaccination | MMR vaccine provides immunity to measles, mumps, and rubella |
+| Passive | Natural | Pre-formed antibodies are transferred from mother to baby across the placenta (IgG) or in breast milk (IgA/sIgA) | Newborn immunity to diseases the mother has had |
+| Passive | Artificial | Pre-formed antibodies are injected into the body (from an immune animal or human donor) | Antivenom for snake bite; rabies immunoglobulin; tetanus antitoxin |
 
-| Feature            | Active Immunity                                  | Passive Immunity                                              |
+| Feature | Active Immunity | Passive Immunity |
 | ------------------ | ------------------------------------------------ | ------------------------------------------------------------- |
-| Antibody source    | Body's own plasma cells                            | Pre-formed antibodies from another source                      |
-| Memory cells       | Produced (long-lasting protection)                | NOT produced (short-lived protection)                         |
-| Onset              | Slow (days to weeks)                               | Immediate (instant protection)                                |
-| Duration           | Long-lasting (years to lifetime)                   | Short-lived (weeks to months)                                 |
-| Boosters           | Booster doses extend immunity                       | Cannot be boosted (no memory cells)                            |
+| Antibody source | Body's own plasma cells | Pre-formed antibodies from another source |
+| Memory cells | Produced (long-lasting protection) | NOT produced (short-lived protection) |
+| Onset | Slow (days to weeks) | Immediate (instant protection) |
+| Duration | Long-lasting (years to lifetime) | Short-lived (weeks to months) |
+| Boosters | Booster doses extend immunity | Cannot be boosted (no memory cells) |
 
 :::warning
-A common DSE question asks students to distinguish between active and passive immunity and between natural and artificial immunity. Remember: "active" means the body MAKES its own antibodies; "passive" means the body RECEIVES pre-made antibodies. "Natural" means the exposure occurred naturally (infection or maternal transfer); "artificial" means the exposure was deliberate (vaccination or antibody injection).
+A common DSE question asks students to distinguish between active and passive immunity and between natural and artificial immunity. Remember: "active" means the body MAKES its own antibodies; "passive" means the body RECEIVES pre-made antibodies. "Natural" means the exposure occurred (infection or maternal transfer); "artificial" means the exposure was deliberate (vaccination or antibody injection).
 :::
 
 1. **Confusing antigens and antibodies:** Antigens are molecules on the surface of pathogens (or other foreign substances) that trigger an immune response. Antibodies are proteins produced by plasma cells that bind to specific antigens. Antigens are the "target"; antibodies are the "weapon."
@@ -525,7 +525,7 @@ If you get this wrong, revise: Antibodies -- Types of Immunity; Vaccination
 <details>
 <summary>Solution</summary>
 
-Antivenom contains pre-formed antibodies against the snake venom. This is **passive artificial immunity** -- the person receives antibodies produced by another organism (typically a horse or sheep that has been injected with snake venom). These antibodies circulate in the blood, neutralising the venom. However, the antibodies are NOT produced by the person's own immune system, so no memory B cells are generated. The antibodies are gradually broken down by the body (within weeks), and the person is not protected against future snake bites. If bitten again, they would need another dose of antivenom.
+Antivenom contains pre-formed antibodies against the snake venom. This is **passive artificial immunity** -- the person receives antibodies produced by another organism ( a horse or sheep that has been injected with snake venom). These antibodies circulate in the blood, neutralising the venom. However, the antibodies are NOT produced by the person's own immune system, so no memory B cells are generated. The antibodies are gradually broken down by the body (within weeks), and the person is not protected against future snake bites. If bitten again, they would need another dose of antivenom.
 
 In contrast, a **tetanus vaccine** contains a toxoid (inactivated tetanus toxin). This stimulates the person's own immune system to produce a primary response, generating memory B cells and memory T cells. If the person is later exposed to tetanus toxin (from a wound contaminated with _Clostridium tetani_), memory cells mount a rapid secondary response, producing large quantities of antibodies that neutralise the toxin before it causes symptoms. This is **active artificial immunity** and provides long-lasting protection (booster doses every 10 years).
 
@@ -542,14 +542,14 @@ In contrast, a **tetanus vaccine** contains a toxoid (inactivated tetanus toxin)
 
 **Human Immunodeficiency Virus (HIV) is a retrovirus** -- an RNA virus that carries reverse transcriptase, enabling it to convert its RNA genome into DNA, which integrates into the host cell's chromosomes.
 
-| Feature            | Description                                                                                                           |
+| Feature | Description |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Pathogen type      | Retrovirus (RNA virus with reverse transcriptase)                                                              |
-| Target cells       | T helper cells ($\mathrm{CD4}^+$ T cells), macrophages, dendritic cells                                  |
-| Genetic material   | Two copies of single-stranded RNA; nine genes (gag, pol, env, tat, rev, nef, vif, vpr, vpu)                        |
-| Viral envelope     | Stolen from host cell membrane during budding; contains viral glycoproteins gp120 (binds CD4 receptor) and gp41 (mediates fusion) |
-| Transmission       | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
-| Not transmitted by   | Casual contact, hugging, sharing utensils, mosquito bites, swimming pools                                   |
+| Pathogen type | Retrovirus (RNA virus with reverse transcriptase) |
+| Target cells | T helper cells ($\mathrm{CD4}^+$ T cells), macrophages, dendritic cells |
+| Genetic material | Two copies of single-stranded RNA; nine genes (gag, pol, env, tat, rev, nef, vif, vpr, vpu) |
+| Viral envelope | Stolen from host cell membrane during budding; contains viral glycoproteins gp120 (binds CD4 receptor) and gp41 (mediates fusion) |
+| Transmission | Unprotected sexual contact; contaminated blood products; sharing needles; mother-to-child (during birth or breastfeeding) |
+| Not transmitted by | Casual contact, hugging, sharing utensils, mosquito bites, swimming pools |
 
 **HIV lifecycle:**
 
@@ -565,33 +565,33 @@ In contrast, a **tetanus vaccine** contains a toxoid (inactivated tetanus toxin)
 
 ### Stages of HIV Infection
 
-| Stage                  | Description                                                                                                               | CD4 count (/mm$^3$)    |
+| Stage | Description | CD4 count (/mm$^3$) |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| Acute infection        | Flu-like symptoms 2-4 weeks after exposure; high viral load; CD4 count drops briefly then partially recovers | 500-1000 (may drop below 200) |
-| Clinical latency       | May last 8-10 years; no symptoms; virus replicates slowly; CD4 gradually declines                  | 200-500                  |
-| AIDS                   | CD4 falls below 200; immune system severely compromised; opportunistic infections develop             | Below 200                |
+| Acute infection | Flu-like symptoms 2-4 weeks after exposure; high viral load; CD4 count drops briefly then partially recovers | 500-1000 (may drop below 200) |
+| Clinical latency | May last 8-10 years; no symptoms; virus replicates slowly; CD4 gradually declines | 200-500 |
+| AIDS | CD4 falls below 200; immune system severely compromised; opportunistic infections develop | Below 200 |
 
 **Opportunistic infections in AIDS:**
 
-| Infection                     | Pathogen Type              | Description                                                                                   |
+| Infection | Pathogen Type | Description |
 | ---------------------------- | -------------------------- | ----------------------------------------------------------------- |
-| _Pneumocystis jirovecii_ pneumonia | Fungus                   | Fatal without treatment; causes coughing, fever, shortness of breath                         |
-| Tuberculosis                | _Mycobacterium tuberculosis_ | Reactivation of latent TB is common in HIV/AIDS patients                                |
-| Kaposi's sarcoma             | Human herpesvirus 8 (HHV-8)    | Cancer of blood vessel cells; causes purple skin lesions                                       |
-| Candidiasis (thrush)         | _Candida albicans_            | Fungal infection of mouth, oesophagus, vagina                                               |
-| Cytomegalovirus (CMV)        | Cytomegalovirus (HHV-5)     | Can cause retinitis (blindness), colitis, pneumonia                                       |
+| _Pneumocystis jirovecii_ pneumonia | Fungus | Fatal without treatment; causes coughing, fever, shortness of breath |
+| Tuberculosis | _Mycobacterium tuberculosis_ | Reactivation of latent TB is common in HIV/AIDS patients |
+| Kaposi's sarcoma | Human herpesvirus 8 (HHV-8) | Cancer of blood vessel cells; causes purple skin lesions |
+| Candidiasis (thrush) | _Candida albicans_ | Fungal infection of mouth, oesophagus, vagina |
+| Cytomegalovirus (CMV) | Cytomegalovirus (HHV-5) | Can cause retinitis (blindness), colitis, pneumonia |
 
 ### Treatment and Prevention
 
 **Antiretroviral therapy (ART):**
 
-| Drug class             | Example                | Mechanism                                                                                                     |
+| Drug class | Example | Mechanism |
 | -------------------- | ---------------------- | ------------------------------------------------------------------------------------------------- |
-| NRTIs                 | AZT, lamivudine (3TC)    | Competitive inhibitors of reverse transcriptase; cause chain termination during DNA synthesis                |
-| NNRTIs                | Efavirenz, nevirapine     | Bind to and inhibit reverse transcriptase at an allosteric site                            |
-| PIs                   | Ritonavir, indinavir        | Inhibit HIV protease; prevent processing of viral polyproteins into functional proteins         |
-| Integrase inhibitors   | Raltegravir               | Block integrase; prevent integration of viral DNA into host chromosomes                      |
-| Entry inhibitors     | Maraviroc               | Block CCR5 co-receptor; prevent HIV from entering T cells                                       |
+| NRTIs | AZT, lamivudine (3TC) | Competitive inhibitors of reverse transcriptase; cause chain termination during DNA synthesis |
+| NNRTIs | Efavirenz, nevirapine | Bind to and inhibit reverse transcriptase at an allosteric site |
+| PIs | Ritonavir, indinavir | Inhibit HIV protease; prevent processing of viral polyproteins into functional proteins |
+| Integrase inhibitors | Raltegravir | Block integrase; prevent integration of viral DNA into host chromosomes |
+| Entry inhibitors | Maraviroc | Block CCR5 co-receptor; prevent HIV from entering T cells |
 
 ART does not cure HIV but can reduce viral load to undetectable levels, preventing AIDS and allowing near-normal life expectancy. Combination therapy (3 or more drugs from at least 2 classes) is standard practice to prevent resistance.
 
@@ -614,28 +614,28 @@ In autoimmune diseases, the immune system fails to distinguish between self-anti
 
 ### Major Autoimmune Diseases
 
-| Disease                  | Target Tissue/Cells                           | Symptoms                                                                              |
+| Disease | Target Tissue/Cells | Symptoms |
 | ------------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Type 1 diabetes          | $\beta$ cells of islets of Langerhans             | Destruction of $\beta$ cells; no insulin production; hyperglycaemia                |
-| Rheumatoid arthritis     | Synovial membranes of joints                 | Joint inflammation, pain, swelling, cartilage destruction, deformity              |
-| Multiple sclerosis (MS)      | Myelin sheath of neurons in the CNS          | Demyelination; impaired nerve conduction; muscle weakness, vision problems          |
-| Systemic lupus erythematosus (SLE) | Connective tissue, skin, kidneys, joints | Butterfly rash, joint pain, kidney damage, fatigue                       |
-| Myasthenia gravis        | Acetylcholine receptors at neuromuscular junctions | Muscle weakness that worsens with activity; drooping eyelids, difficulty swallowing |
-| Coeliac disease          | Villi of the small intestine (triggered by gluten) | Damage to intestinal villi; malabsorption; diarrhoea, weight loss              |
-| Hashimoto's thyroiditis  | Thyroid gland                                  | Hypothyroidism; weight gain, fatigue, cold intolerance, goitre                 |
+| Type 1 diabetes | $\beta$ cells of islets of Langerhans | Destruction of $\beta$ cells; no insulin production; hyperglycaemia |
+| Rheumatoid arthritis | Synovial membranes of joints | Joint inflammation, pain, swelling, cartilage destruction, deformity |
+| Multiple sclerosis (MS) | Myelin sheath of neurons in the CNS | Demyelination; impaired nerve conduction; muscle weakness, vision problems |
+| Systemic lupus erythematosus (SLE) | Connective tissue, skin, kidneys, joints | Butterfly rash, joint pain, kidney damage, fatigue |
+| Myasthenia gravis | Acetylcholine receptors at neuromuscular junctions | Muscle weakness that worsens with activity; drooping eyelids, difficulty swallowing |
+| Coeliac disease | Villi of the small intestine (triggered by gluten) | Damage to intestinal villi; malabsorption; diarrhoea, weight loss |
+| Hashimoto's thyroiditis | Thyroid gland | Hypothyroidism; weight gain, fatigue, cold intolerance, goitre |
 
 ### Treatment Approaches for Autoimmune Diseases
 
-| Approach              | Description                                                                                                               |
+| Approach | Description |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Immunosuppressants       | Drugs that suppress immune system activity (e.g., corticosteroids, methotrexate, cyclosporine)                |
-| Anti-inflammatory drugs   | NSAIDs (e.g., ibuprofen) for pain and inflammation                                                      |
-| Replacement therapy    | Insulin for Type 1 diabetes; thyroxine for Hashimoto's thyroiditis                               |
-| Monoclonal antibodies   | Targeted antibodies that block specific immune pathways (e.g., anti-TNF-alpha for rheumatoid arthritis)        |
-| Plasmapheresis          | Filtering blood to remove autoantibodies and immune complexes                                        |
+| Immunosuppressants | Drugs that suppress immune system activity (e.g., corticosteroids, methotrexate, cyclosporine) |
+| Anti-inflammatory drugs | NSAIDs (e.g., ibuprofen) for pain and inflammation |
+| Replacement therapy | Insulin for Type 1 diabetes; thyroxine for Hashimoto's thyroiditis |
+| Monoclonal antibodies | Targeted antibodies that block specific immune pathways (e.g., anti-TNF-alpha for rheumatoid arthritis) |
+| Plasmapheresis | Filtering blood to remove autoantibodies and immune complexes |
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Immunology**? Review the [Cell Biology and Biochemistry diagnostic test](/docs/dse/Biology/diagnostics/diag-cell-biology-biochemistry) which covers immune system topics within the DSE specification.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
@@ -653,19 +653,19 @@ Type I hypersensitivity (immediate hypersensitivity) is the mechanism underlying
 3. **IgE binding:** The IgE antibodies bind to Fc receptors on the surface of **mast cells** (in connective tissue) and **basophils** (in blood). The person is now "sensitised" -- no symptoms occur on this first exposure
 4. **Re-exposure:** On subsequent exposure to the same allergen, the allergen cross-links the IgE antibodies on mast cells/basophils
 5. **Degranulation:** Cross-linking triggers mast cells to degranulate -- releasing pre-formed mediators stored in granules:
-   - **Histamine:** Causes vasodilation, increased capillary permeability (leading to swelling, redness, heat), mucus secretion, smooth muscle contraction (bronchoconstriction in the airways), itching
-   - **Heparin:** Prevents blood clotting at the site of inflammation
-   - **Serotonin (5-HT):** Contributes to inflammation and smooth muscle contraction
+ - **Histamine:** Causes vasodilation, increased capillary permeability (leading to swelling, redness, heat), mucus secretion, smooth muscle contraction (bronchoconstriction in the airways), itching
+ - **Heparin:** Prevents blood clotting at the site of inflammation
+ - **Serotonin (5-HT):** Contributes to inflammation and smooth muscle contraction
 6. **Late-phase response:** Hours later, newly synthesised mediators are released (leukotrienes, prostaglandins, cytokines), causing sustained inflammation
 
 ### Allergic Symptoms and Treatments
 
-| Symptom                    | Cause                                                                                                               | Treatment                                |
+| Symptom | Cause | Treatment |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| Hay fever (allergic rhinitis) | Histamine causes vasodilation and mucus secretion in nasal passages                                           | Antihistamines; corticosteroid nasal sprays |
-| Asthma                     | Histamine and leukotrienes cause bronchoconstriction and mucus secretion in airways                               | Bronchodilators (salbutamol); inhaled corticosteroids; leukotriene receptor antagonists |
-| Eczema (atopic dermatitis)  | Inflammatory response in the skin; dry, itchy, red patches                                                      | Moisturisers; topical corticosteroids; antihistamines |
-| Anaphylaxis                 | Systemic release of histamine; massive vasodilation causing drop in blood pressure; airway constriction; swelling of throat | Adrenaline (epinephrine) auto-injector (EpiPen); call emergency services |
+| Hay fever (allergic rhinitis) | Histamine causes vasodilation and mucus secretion in nasal passages | Antihistamines; corticosteroid nasal sprays |
+| Asthma | Histamine and leukotrienes cause bronchoconstriction and mucus secretion in airways | Bronchodilators (salbutamol); inhaled corticosteroids; leukotriene receptor antagonists |
+| Eczema (atopic dermatitis) | Inflammatory response in the skin; dry, itchy, red patches | Moisturisers; topical corticosteroids; antihistamines |
+| Anaphylaxis | Systemic release of histamine; massive vasodilation causing drop in blood pressure; airway constriction; swelling of throat | Adrenaline (epinephrine) auto-injector (EpiPen); call emergency services |
 
 ### Antihistamines
 
@@ -683,10 +683,10 @@ Type I hypersensitivity (immediate hypersensitivity) is the mechanism underlying
 
 | Blood Group | Antigens on RBC Surface | Antibodies in Plasma | Can Donate To | Can Receive From |
 | ----------- | ----------------------- | -------------------- | ------------- | ----------------- |
-| A           | A                       | Anti-B               | A, AB         | A, O              |
-| B           | B                       | Anti-A               | B, AB         | B, O              |
-| AB          | A and B                 | Neither              | AB            | A, B, AB, O (universal recipient) |
-| O           | Neither                 | Anti-A and Anti-B    | A, B, AB, O (universal donor) | O  |
+| A | A | Anti-B | A, AB | A, O |
+| B | B | Anti-A | B, AB | B, O |
+| AB | A and B | Neither | AB | A, B, AB, O (universal recipient) |
+| O | Neither | Anti-A and Anti-B | A, B, AB, O (universal donor) | O |
 
 **Agglutination:** If incompatible blood is transfused, antibodies in the recipient's plasma bind to antigens on the donor's red blood cells, causing them to clump (agglutinate). This blocks blood vessels and triggers complement-mediated lysis of the RBCs, which can be fatal.
 
@@ -699,7 +699,7 @@ Type I hypersensitivity (immediate hypersensitivity) is the mechanism underlying
 **Haemolytic disease of the newborn (HDN):**
 
 1. An Rh-negative mother carries an Rh-positive foetus (inherited from the father)
-2. During the first pregnancy, foetal Rh-positive red blood cells may cross into the maternal circulation (usually during delivery)
+2. During the first pregnancy, foetal Rh-positive red blood cells may cross into the maternal circulation ( during delivery)
 3. The mother's immune system produces anti-Rh antibodies
 4. In a subsequent pregnancy with another Rh-positive foetus, maternal anti-Rh antibodies (IgG) can cross the placenta
 5. These antibodies bind to foetal Rh-positive RBCs, causing agglutination and complement-mediated lysis (haemolysis)
@@ -710,20 +710,20 @@ Type I hypersensitivity (immediate hypersensitivity) is the mechanism underlying
 
 For a tissue or organ transplant to be successful, the donor and recipient must be as genetically similar as possible to minimise immune rejection.
 
-| Type of Match         | Description                                                                                                               | Rejection Risk  |
+| Type of Match | Description | Rejection Risk |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| Autograft               | Tissue transplanted from one part of a person's body to another                                                 | None            |
-| Isograft                | Tissue transplanted between genetically identical individuals (identical twins)                                   | None            |
-| Allograft               | Tissue transplanted between genetically non-identical individuals of the same species                          | High            |
-| Xenograft               | Tissue transplanted from a different species                                                                      | Very high       |
+| Autograft | Tissue transplanted from one part of a person's body to another | None |
+| Isograft | Tissue transplanted between genetically identical individuals (identical twins) | None |
+| Allograft | Tissue transplanted between genetically non-identical individuals of the same species | High |
+| Xenograft | Tissue transplanted from a different species | Very high |
 
 **Types of rejection:**
 
-| Type                  | Timing                  | Mechanism                                                                                                               |
+| Type | Timing | Mechanism |
 | --------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Hyperacute rejection  | Minutes to hours         | Pre-existing antibodies in the recipient immediately attack the donor tissue; caused by ABO or HLA incompatibility     |
-| Acute rejection       | Days to weeks           | T cells recognise foreign HLA antigens on donor cells and mount a cell-mediated immune response                        |
-| Chronic rejection     | Months to years         | Gradual T cell and antibody-mediated damage; fibrosis and scarring of the transplanted tissue                          |
+| Hyperacute rejection | Minutes to hours | Pre-existing antibodies in the recipient immediately attack the donor tissue; caused by ABO or HLA incompatibility |
+| Acute rejection | Days to weeks | T cells recognise foreign HLA antigens on donor cells and mount a cell-mediated immune response |
+| Chronic rejection | Months to years | Gradual T cell and antibody-mediated damage; fibrosis and scarring of the transplanted tissue |
 
 **Immunosuppressive drugs** (e.g., ciclosporin, tacrolimus, corticosteroids) are given to transplant recipients to suppress the immune response and prevent rejection. However, these drugs also increase susceptibility to infections.
 
@@ -742,12 +742,12 @@ The lymphatic system is a network of vessels, tissues, and organs that:
 
 ### Lymphatic Vessels
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Structure                | Thin-walled vessels with valves (similar to veins); carry lymph (a clear fluid similar to blood plasma but without RBCs and platelets) |
-| Flow direction           | One-way: from tissues towards the heart; lymph drains into the subclavian veins via the thoracic duct (left) and right lymphatic duct |
-| Pumping mechanism        | Lymph is moved by contraction of surrounding skeletal muscles, breathing movements, and valves that prevent backflow     |
-| Capillaries              | Lymphatic capillaries are blind-ended and more permeable than blood capillaries; they allow larger molecules (proteins, cell debris) to enter |
+| Structure | Thin-walled vessels with valves (similar to veins); carry lymph (a clear fluid similar to blood plasma but without RBCs and platelets) |
+| Flow direction | One-way: from tissues towards the heart; lymph drains into the subclavian veins via the thoracic duct (left) and right lymphatic duct |
+| Pumping mechanism | Lymph is moved by contraction of surrounding skeletal muscles, breathing movements, and valves that prevent backflow |
+| Capillaries | Lymphatic capillaries are blind-ended and more permeable than blood capillaries; they allow larger molecules (proteins, cell debris) to enter |
 
 ### Lymph Nodes
 
@@ -759,12 +759,12 @@ The lymphatic system is a network of vessels, tissues, and organs that:
 
 ### Other Lymphatic Organs
 
-| Organ              | Location             | Function                                                                                                                 |
+| Organ | Location | Function |
 | ------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Spleen             | Upper left abdomen    | Filters blood; removes old/damaged RBCs; stores platelets; contains lymphocytes; responds to blood-borne pathogens       |
-| Thymus             | Upper chest (behind sternum) | Site of T cell maturation; T cells migrate from bone marrow to thymus where they undergo selection (positive and negative); atrophies after puberty |
-| Tonsils            | Throat (pharynx)     | Trap pathogens entering through the mouth and nose; contain lymphocytes; often removed if chronically infected          |
-| Peyer's patches     | Small intestine       | Aggregates of lymphoid tissue in the intestinal wall; monitor intestinal bacteria and pathogens; part of GALT (gut-associated lymphoid tissue) |
+| Spleen | Upper left abdomen | Filters blood; removes old/damaged RBCs; stores platelets; contains lymphocytes; responds to blood-borne pathogens |
+| Thymus | Upper chest (behind sternum) | Site of T cell maturation; T cells migrate from bone marrow to thymus where they undergo selection (positive and negative); atrophies after puberty |
+| Tonsils | Throat (pharynx) | Trap pathogens entering through the mouth and nose; contain lymphocytes; often removed if chronically infected |
+| Peyer's patches | Small intestine | Aggregates of lymphoid tissue in the intestinal wall; monitor intestinal bacteria and pathogens; part of GALT (gut-associated lymphoid tissue) |
 
 ---
 
@@ -772,15 +772,15 @@ The lymphatic system is a network of vessels, tissues, and organs that:
 
 ### Types of Vaccines
 
-| Vaccine Type        | Description                                                                                                               | Examples                                 | Advantages                  | Disadvantages               |
+| Vaccine Type | Description | Examples | Advantages | Disadvantages |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------- | --------------------------- |
-| Live attenuated       | Weakened form of the pathogen; can replicate but cannot cause disease in healthy individuals                          | MMR (measles, mumps, rubella); BCG (tuberculosis); oral polio | Strong immune response; often lifelong immunity with 1-2 doses | Cannot be given to immunocompromised individuals; risk of reversion to virulence |
-| Inactivated (killed)  | Pathogen is killed by heat or chemicals; cannot replicate                                                            | Influenza (injectable); hepatitis A; cholera | Safer than live vaccines; no risk of reversion | Weaker immune response; requires booster doses; often requires adjuvant |
-| Toxoid                | Inactivated toxin produced by the pathogen; immune response targets the toxin, not the pathogen                      | Tetanus; diphtheria                     | Effective against toxin-mediated diseases | Requires booster doses (every 10 years for tetanus) |
-| Subunit (recombinant)  | Purified antigenic components of the pathogen (specific proteins)                                                    | Hepatitis B; HPV; acellular pertussis   | Very safe; well-defined composition | Weaker immune response; more expensive to produce |
-| Conjugate             | Polysaccharide antigens linked to a carrier protein; improves immune response in young children                     | Hib (Haemophilus influenzae type b); pneumococcal; meningococcal | Effective in infants and young children | More complex to manufacture |
-| mRNA                  | Synthetic mRNA encoding a pathogen antigen; host cells translate the mRNA to produce the antigen, triggering an immune response | COVID-19 (Pfizer, Moderna)           | Rapid development; strong immune response; no live pathogen used | Requires cold storage; relatively new technology |
-| Viral vector          | Harmless virus engineered to carry genes encoding a pathogen antigen; the vector delivers the gene to host cells, which produce the antigen | COVID-19 (AstraZeneca, Janssen); Ebola | Strong immune response; no live pathogen | Pre-existing immunity to the vector may reduce effectiveness |
+| Live attenuated | Weakened form of the pathogen; can replicate but cannot cause disease in healthy individuals | MMR (measles, mumps, rubella); BCG (tuberculosis); oral polio | Strong immune response; often lifelong immunity with 1-2 doses | Cannot be given to immunocompromised individuals; risk of reversion to virulence |
+| Inactivated (killed) | Pathogen is killed by heat or chemicals; cannot replicate | Influenza (injectable); hepatitis A; cholera | Safer than live vaccines; no risk of reversion | Weaker immune response; requires booster doses; often requires adjuvant |
+| Toxoid | Inactivated toxin produced by the pathogen; immune response targets the toxin, not the pathogen | Tetanus; diphtheria | Effective against toxin-mediated diseases | Requires booster doses (every 10 years for tetanus) |
+| Subunit (recombinant) | Purified antigenic components of the pathogen (specific proteins) | Hepatitis B; HPV; acellular pertussis | Very safe; well-defined composition | Weaker immune response; more expensive to produce |
+| Conjugate | Polysaccharide antigens linked to a carrier protein; improves immune response in young children | Hib (Haemophilus influenzae type b); pneumococcal; meningococcal | Effective in infants and young children | More complex to manufacture |
+| mRNA | Synthetic mRNA encoding a pathogen antigen; host cells translate the mRNA to produce the antigen, triggering an immune response | COVID-19 (Pfizer, Moderna) | Rapid development; strong immune response; no live pathogen used | Requires cold storage; relatively new technology |
+| Viral vector | Harmless virus engineered to carry genes encoding a pathogen antigen; the vector delivers the gene to host cells, which produce the antigen | COVID-19 (AstraZeneca, Janssen); Ebola | Strong immune response; no live pathogen | Pre-existing immunity to the vector may reduce effectiveness |
 
 ### Herd Immunity
 
@@ -789,13 +789,13 @@ The lymphatic system is a network of vessels, tissues, and organs that:
 
 $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
-| Disease       | $R_0$  | Herd Immunity Threshold |
+| Disease | $R_0$ | Herd Immunity Threshold |
 | ------------- | ------ | ----------------------- |
-| Measles       | 12-18  | 92-94%                  |
-| Polio         | 5-7    | 80-86%                  |
-| COVID-19 (Omicron) | 8-10  | 87-90%                  |
-| Influenza     | 1.5-3  | 33-67%                  |
-| Diphtheria    | 4-6    | 75-83%                  |
+| Measles | 12-18 | 92-94% |
+| Polio | 5-7 | 80-86% |
+| COVID-19 (Omicron) | 8-10 | 87-90% |
+| Influenza | 1.5-3 | 33-67% |
+| Diphtheria | 4-6 | 75-83% |
 
 ### Common Pitfalls
 
@@ -811,26 +811,26 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 ### Innate vs Adaptive Immunity
 
-| Feature                  | Innate Immunity                                                                                                           | Adaptive (Acquired) Immunity                                                                                             |
+| Feature | Innate Immunity | Adaptive (Acquired) Immunity |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Speed of response         | Immediate (minutes to hours)                                                                                             | Slower (days to weeks); requires clonal selection and expansion                                                          |
-| Specificity               | Non-specific; responds to a broad range of pathogens in the same way                                                     | Highly specific; produces antibodies and T cells targeted to specific antigens                                            |
-| Memory                    | No immunological memory; responds identically on each exposure                                                           | Immunological memory; second exposure produces a faster, stronger response                                                |
-| Components                | Physical barriers (skin, mucous membranes); phagocytes (neutrophils, macrophages); complement system; natural killer cells; inflammation | B lymphocytes (antibodies); T lymphocytes (helper T cells, cytotoxic T cells, memory cells)                              |
+| Speed of response | Immediate (minutes to hours) | Slower (days to weeks); requires clonal selection and expansion |
+| Specificity | Non-specific; responds to a broad range of pathogens in the same way | Highly specific; produces antibodies and T cells targeted to specific antigens |
+| Memory | No immunological memory; responds identically on each exposure | Immunological memory; second exposure produces a faster, stronger response |
+| Components | Physical barriers (skin, mucous membranes); phagocytes (neutrophils, macrophages); complement system; natural killer cells; inflammation | B lymphocytes (antibodies); T lymphocytes (helper T cells, cytotoxic T cells, memory cells) |
 | Types of molecules involved | Pattern recognition receptors (PRRs) that recognise pathogen-associated molecular patterns (PAMPs) -- broad molecular patterns shared by many pathogens | B cell receptors (BCRs) and T cell receptors (TCRs) that recognise specific antigen epitopes -- unique molecular shapes |
-| Effectiveness              | Effective against a wide range of pathogens but can be overwhelmed; does not improve with repeated exposure              | Highly effective; improves with each exposure (affinity maturation, memory cells)                                        |
+| Effectiveness | Effective against a wide range of pathogens but can be overwhelmed; does not improve with repeated exposure | Highly effective; improves with each exposure (affinity maturation, memory cells) |
 
 ### Primary vs Secondary Immune Response
 
-| Feature                  | Primary Response                                                                                                          | Secondary Response                                                                                                       |
+| Feature | Primary Response | Secondary Response |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Trigger                   | First exposure to a specific antigen                                                                                      | Subsequent exposure to the SAME antigen                                                                                  |
-| Lag phase                 | Longer (5-10 days); time needed for clonal selection, expansion, and differentiation of B and T cells                    | Shorter (1-3 days); memory cells already exist and respond quickly                                                       |
-| Antibody concentration    | Lower peak; IgM produced first, then IgG                                                                                 | Higher peak; mainly IgG (due to class switching); peak antibody level is much higher (10-100x primary response)         |
-| Antibody affinity         | Lower affinity (antibodies bind less tightly to the antigen)                                                             | Higher affinity (antibodies bind more tightly; affinity maturation has occurred during primary response via somatic hypermutation) |
-| Duration                  | Shorter; antibody levels decline relatively quickly after the peak                                                      | Longer; antibody levels remain elevated for weeks to months                                                              |
-| Memory cells              | Memory B and T cells are produced during the primary response                                                             | Memory cells from the primary response are immediately activated; no need for clonal selection                            |
-| Clinical significance      | The person may experience symptoms of the disease while the immune system is mounting its response                       | The person is usually protected from the disease; may have mild or no symptoms (immunity)                                |
+| Trigger | First exposure to a specific antigen | Subsequent exposure to the SAME antigen |
+| Lag phase | Longer (5-10 days); time needed for clonal selection, expansion, and differentiation of B and T cells | Shorter (1-3 days); memory cells already exist and respond quickly |
+| Antibody concentration | Lower peak; IgM produced first, then IgG | Higher peak; mainly IgG (due to class switching); peak antibody level is much higher (10-100x primary response) |
+| Antibody affinity | Lower affinity (antibodies bind less tightly to the antigen) | Higher affinity (antibodies bind more tightly; affinity maturation has occurred during primary response via somatic hypermutation) |
+| Duration | Shorter; antibody levels decline relatively quickly after the peak | Longer; antibody levels remain elevated for weeks to months |
+| Memory cells | Memory B and T cells are produced during the primary response | Memory cells from the primary response are immediately activated; no need for clonal selection |
+| Clinical significance | The person may experience symptoms of the disease while the immune system is mounting its response | The person is protected from the disease; may have mild or no symptoms (immunity) |
 
 ---
 
@@ -838,47 +838,47 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 ### Malaria
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Pathogen                  | _Plasmodium falciparum_ (most severe), _P. vivax_, _P. ovale_, _P. malariae_ (protozoan parasite)                        |
-| Vector                    | Female _Anopheles_ mosquito (transmits the parasite when it takes a blood meal)                                           |
-| Lifecycle                 | (1) Infected mosquito injects _Plasmodium_ sporozoites into the human bloodstream $\rightarrow$ (2) Sporozoites travel to the liver and infect liver cells $\rightarrow$ (3) They multiply in the liver (asexual reproduction), then burst out and infect red blood cells $\rightarrow$ (4) Inside RBCs, they multiply again (asexual), causing RBCs to burst (causing the characteristic fever cycles) $\rightarrow$ (5) Some parasites develop into gametocytes in the blood $\rightarrow$ (6) Another mosquito bites and ingests the gametocytes $\rightarrow$ (7) Sexual reproduction occurs in the mosquito $\rightarrow$ (8) New sporozoites develop and the cycle repeats |
-| Symptoms                  | Recurring fever (every 48-72 hours, corresponding to RBC bursting cycles), chills, sweating, headache, nausea, anaemia, splenomegaly (enlarged spleen) |
-| Prevention                | Mosquito nets (insecticide-treated); antimalarial drugs (prophylaxis); mosquito control (draining breeding sites, insecticide spraying); vaccine (RTS,S -- partially effective) |
-| Treatment                 | Artemisinin-based combination therapies (ACTs); quinine (for severe cases)                                                |
-| Global impact              | ~240 million cases per year; ~600,000 deaths per year (mostly children under 5 in sub-Saharan Africa)                     |
+| Pathogen | _Plasmodium falciparum_ (most severe), _P. Vivax_, _P. Ovale_, _P. Malariae_ (protozoan parasite) |
+| Vector | Female _Anopheles_ mosquito (transmits the parasite when it takes a blood meal) |
+| Lifecycle | (1) Infected mosquito injects _Plasmodium_ sporozoites into the human bloodstream $\rightarrow$ (2) Sporozoites travel to the liver and infect liver cells $\rightarrow$ (3) They multiply in the liver (asexual reproduction), then burst out and infect red blood cells $\rightarrow$ (4) Inside RBCs, they multiply again (asexual), causing RBCs to burst (causing the characteristic fever cycles) $\rightarrow$ (5) Some parasites develop into gametocytes in the blood $\rightarrow$ (6) Another mosquito bites and ingests the gametocytes $\rightarrow$ (7) Sexual reproduction occurs in the mosquito $\rightarrow$ (8) New sporozoites develop and the cycle repeats |
+| Symptoms | Recurring fever (every 48-72 hours, corresponding to RBC bursting cycles), chills, sweating, headache, nausea, anaemia, splenomegaly (enlarged spleen) |
+| Prevention | Mosquito nets (insecticide-treated); antimalarial drugs (prophylaxis); mosquito control (draining breeding sites, insecticide spraying); vaccine (RTS,S -- partially effective) |
+| Treatment | Artemisinin-based combination therapies (ACTs); quinine (for severe cases) |
+| Global impact | ~240 million cases per year; ~600,000 deaths per year (mostly children under 5 in sub-Saharan Africa) |
 
 ### Tuberculosis (TB)
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Pathogen                  | _Mycobacterium tuberculosis_ (bacterium)                                                                                 |
-| Transmission              | Airborne droplets (coughing, sneezing); close and prolonged contact with an infected person                              |
-| Primary infection          | Bacteria are inhaled and engulfed by macrophages in the alveoli; the bacteria can survive and multiply INSIDE the macrophages (they resist destruction by inhibiting phagosome-lysosome fusion) |
-| Latent TB                 | In most healthy individuals, the immune system walls off the infection in a granuloma (a collection of immune cells surrounding the bacteria); the person has no symptoms and is not infectious; the bacteria can remain dormant for years |
-| Active TB                 | If the immune system weakens, the bacteria reactivate and multiply; symptoms include persistent cough (sometimes blood-tinged sputum), weight loss, night sweats, fever, fatigue |
-| Treatment                 | Combination antibiotic therapy (isoniazid, rifampicin, pyrazinamide, ethambutol) for at least 6 months; drug resistance is a growing problem (MDR-TB, XDR-TB) |
-| Prevention                | BCG vaccine (provides partial protection, especially against severe TB in children); improved living conditions; infection control |
-| DOTS programme             | Directly Observed Treatment, Short-course -- WHO strategy to ensure patients complete their full course of treatment      |
+| Pathogen | _Mycobacterium tuberculosis_ (bacterium) |
+| Transmission | Airborne droplets (coughing, sneezing); close and prolonged contact with an infected person |
+| Primary infection | Bacteria are inhaled and engulfed by macrophages in the alveoli; the bacteria can survive and multiply INSIDE the macrophages (they resist destruction by inhibiting phagosome-lysosome fusion) |
+| Latent TB | In most healthy individuals, the immune system walls off the infection in a granuloma (a collection of immune cells surrounding the bacteria); the person has no symptoms and is not infectious; the bacteria can remain dormant for years |
+| Active TB | If the immune system weakens, the bacteria reactivate and multiply; symptoms include persistent cough (sometimes blood-tinged sputum), weight loss, night sweats, fever, fatigue |
+| Treatment | Combination antibiotic therapy (isoniazid, rifampicin, pyrazinamide, ethambutol) for at least 6 months; drug resistance is a growing problem (MDR-TB, XDR-TB) |
+| Prevention | BCG vaccine (provides partial protection, especially against severe TB in children); improved living conditions; infection control |
+| DOTS programme | Directly Observed Treatment, Short-course -- WHO strategy to ensure patients complete their full course of treatment |
 
 ### Cholera
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Pathogen                  | _Vibrio cholerae_ (bacterium; curved, rod-shaped, flagellated)                                                          |
-| Transmission              | Faecal-oral route; contaminated water and food (especially in areas with poor sanitation)                                |
-| Mechanism                  | _V. cholerae_ attaches to the intestinal wall and produces cholera toxin; the toxin causes chloride ion channels in the intestinal epithelial cells to remain open; chloride ions are secreted into the intestinal lumen; sodium ions and water follow by osmosis; massive volumes of watery diarrhoea result (up to 20 litres per day) |
-| Symptoms                  | Profuse, painless, watery diarrhoea ("rice-water stools"); vomiting; rapid dehydration; electrolyte imbalance; can be fatal within hours if untreated |
-| Treatment                 | Oral rehydration therapy (ORT): a solution of clean water, glucose, sodium chloride, and potassium chloride is given orally; the glucose facilitates the co-transport of sodium ions back into the epithelial cells (using SGLT1 transporters), and water follows by osmosis; antibiotics (tetracycline) reduce the duration and severity |
-| Prevention                | Clean water supply; proper sanitation; hand hygiene; vaccination (oral cholera vaccine)                                  |
+| Pathogen | _Vibrio cholerae_ (bacterium; curved, rod-shaped, flagellated) |
+| Transmission | Faecal-oral route; contaminated water and food (especially in areas with poor sanitation) |
+| Mechanism | _V. Cholerae_ attaches to the intestinal wall and produces cholera toxin; the toxin causes chloride ion channels in the intestinal epithelial cells to remain open; chloride ions are secreted into the intestinal lumen; sodium ions and water follow by osmosis; massive volumes of watery diarrhoea result (up to 20 litres per day) |
+| Symptoms | Profuse, painless, watery diarrhoea ("rice-water stools"); vomiting; rapid dehydration; electrolyte imbalance; can be fatal within hours if untreated |
+| Treatment | Oral rehydration therapy (ORT): a solution of clean water, glucose, sodium chloride, and potassium chloride is given orally; the glucose facilitates the co-transport of sodium ions back into the epithelial cells (using SGLT1 transporters), and water follows by osmosis; antibiotics (tetracycline) reduce the duration and severity |
+| Prevention | Clean water supply; proper sanitation; hand hygiene; vaccination (oral cholera vaccine) |
 
 ### HIV/AIDS (Extended Detail)
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Why HIV is hard to cure    | (1) High mutation rate: reverse transcriptase has no proofreading function, so many mutations occur; this creates viral variants that can evade the immune system and develop drug resistance. (2) Latency: HIV integrates into the host genome as a provirus and can remain dormant for years, invisible to the immune system and unaffected by antiretroviral drugs that target active viral replication. (3) Reservoirs: HIV persists in reservoirs such as lymph nodes, the brain, and the gut-associated lymphoid tissue (GALT), where drugs may not reach effective concentrations. (4) Destruction of CD4+ T cells: HIV specifically targets and destroys the immune cells needed to fight it, progressively weakening the immune system |
-| "Berlin Patient"           | Timothy Ray Brown, the first person cured of HIV (2011). He received a bone marrow transplant from a donor with a CCR5-delta32 mutation (a natural genetic mutation that makes cells resistant to HIV because the CCR5 co-receptor is non-functional). This demonstrated that a cure is theoretically possible, but bone marrow transplantation is too risky and expensive for widespread use |
-| "London Patient"           | Adam Castillejo, the second person cured of HIV (2019). Similar approach: bone marrow transplant from a CCR5-delta32 donor for Hodgkin's lymphoma treatment |
+| Why HIV is hard to cure | (1) High mutation rate: reverse transcriptase has no proofreading function, so many mutations occur; this creates viral variants that can evade the immune system and develop drug resistance. (2) Latency: HIV integrates into the host genome as a provirus and can remain dormant for years, invisible to the immune system and unaffected by antiretroviral drugs that target active viral replication. (3) Reservoirs: HIV persists in reservoirs such as lymph nodes, the brain, and the gut-associated lymphoid tissue (GALT), where drugs may not reach effective concentrations. (4) Destruction of CD4+ T cells: HIV specifically targets and destroys the immune cells needed to fight it, progressively weakening the immune system |
+| "Berlin Patient" | Timothy Ray Brown, the first person cured of HIV (2011). He received a bone marrow transplant from a donor with a CCR5-delta32 mutation (a natural genetic mutation that makes cells resistant to HIV because the CCR5 co-receptor is non-functional). This demonstrated that a cure is theoretically possible, but bone marrow transplantation is too risky and expensive for widespread use |
+| "London Patient" | Adam Castillejo, the second person cured of HIV (2019). Similar approach: bone marrow transplant from a CCR5-delta32 donor for Hodgkin's lymphoma treatment |
 
 ---
 
@@ -897,3 +897,15 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 - Positive control: an antibiotic disc with a known effective antibiotic (confirms the bacteria are susceptible to some antibiotics)
 - Negative control: a disc with no antibiotic (confirms that the bacteria can grow on the agar and that the clear zone is caused by the antibiotic, not by the disc itself)
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

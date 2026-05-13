@@ -87,18 +87,18 @@ HTML defines the structure and content of web pages using **elements** (tags).
 
 **Common HTML elements:**
 
-| Element                              | Purpose                    |
+| Element | Purpose |
 | ------------------------------------ | -------------------------- |
-| `h1` - `h6`                          | Headings                   |
-| `p`                                  | Paragraph                  |
-| `a`                                  | Hyperlink                  |
-| `img`                                | Image                      |
-| `ul`, `ol`, `li`                     | Lists                      |
-| `table`, `tr`, `td`, `th`            | Tables                     |
-| `form`, `input`, `button`            | Forms                      |
-| `div`                                | Generic container (block)  |
-| `span`                               | Generic container (inline) |
-| `section`, `article`, `aside`, `nav` | Semantic elements          |
+| `h1` - `h6` | Headings |
+| `p` | Paragraph |
+| `a` | Hyperlink |
+| `img` | Image |
+| `ul``ol``li` | Lists |
+| `table``tr``td``th` | Tables |
+| `form``input``button` | Forms |
+| `div` | Generic container (block) |
+| `span` | Generic container (inline) |
+| `section``article``aside``nav` | Semantic elements |
 
 **HTML table example:**
 
@@ -145,17 +145,17 @@ HTML defines the structure and content of web pages using **elements** (tags).
 
 **HTML5 input types:**
 
-| Type       | Purpose                     | Validation               |
+| Type | Purpose | Validation |
 | ---------- | --------------------------- | ------------------------ |
-| `text`     | Plain text                  | None                     |
-| `email`    | Email address               | Checks for @ and domain  |
-| `number`   | Numeric input               | Only digits and decimals |
-| `date`     | Date picker                 | Calendar format          |
-| `password` | Password (masked)           | None                     |
-| `url`      | Web URL                     | Checks URL format        |
-| `range`    | Slider                      | Min/max values           |
-| `checkbox` | Multiple selections         | Boolean                  |
-| `radio`    | Single selection from group | Requires name attribute  |
+| `text` | Plain text | None |
+| `email` | Email address | Checks for @ and domain |
+| `number` | Numeric input | Only digits and decimals |
+| `date` | Date picker | Calendar format |
+| `password` | Password (masked) | None |
+| `url` | Web URL | Checks URL format |
+| `range` | Slider | Min/max values |
+| `checkbox` | Multiple selections | Boolean |
+| `radio` | Single selection from group | Requires name attribute |
 
 ### CSS (Cascading Style Sheets)
 
@@ -200,7 +200,7 @@ a:hover {
 1. Inline styles (`style=""`)
 2. ID selectors (`#id`)
 3. Class selectors (`.class`), attribute selectors, pseudo-classes
-4. Element selectors (`p`, `div`)
+4. Element selectors (`p``div`)
 5. Universal selector (`*`)
 
 **Box Model:** Every element is a box with content, padding, border, and margin.
@@ -252,13 +252,13 @@ a:hover {
 
 **Flexbox properties reference:**
 
-| Property          | Values                                                    | Effect               |
+| Property | Values | Effect |
 | ----------------- | --------------------------------------------------------- | -------------------- |
-| `justify-content` | flex-start, center, flex-end, space-between, space-around | Main axis alignment  |
-| `align-items`     | flex-start, center, flex-end, stretch                     | Cross axis alignment |
-| `flex-direction`  | row, column, row-reverse, column-reverse                  | Direction of items   |
-| `flex-wrap`       | nowrap, wrap                                              | Whether items wrap   |
-| `gap`             | length                                                    | Space between items  |
+| `justify-content` | flex-start, center, flex-end, space-between, space-around | Main axis alignment |
+| `align-items` | flex-start, center, flex-end, stretch | Cross axis alignment |
+| `flex-direction` | row, column, row-reverse, column-reverse | Direction of items |
+| `flex-wrap` | nowrap, wrap | Whether items wrap |
+| `gap` | length | Space between items |
 
 **Layout with CSS Grid:**
 
@@ -386,7 +386,7 @@ if (!validateEmail(email)) {
 ### Threats and Countermeasures
 
 **Cross-Site Scripting (XSS):** Attacker injects malicious scripts into web pages viewed by other
-users.
+Users.
 
 **Prevention:** Sanitise and validate all user input. Use `textContent` instead of `innerHTML`.
 
@@ -401,12 +401,12 @@ cursor.execute("SELECT * FROM users WHERE name = ?", (user_input,))
 ```
 
 **Cross-Site Request Forgery (CSRF):** Attacker tricks the user into performing unwanted actions on
-a website where they are authenticated.
+A website where they are authenticated.
 
 **Prevention:** Use CSRF tokens.
 
 **HTTPS:** Encrypts data in transit between client and server. Prevents eavesdropping and
-man-in-the-middle attacks.
+Man-in-the-middle attacks.
 
 **Passwords:** Hash and salt passwords before storing. Never store plain text passwords.
 
@@ -430,15 +430,15 @@ Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'
 
 ### Grid Properties Reference
 
-| Property                | Values                                         | Effect                     |
+| Property | Values | Effect |
 | ----------------------- | ---------------------------------------------- | -------------------------- |
-| `display`              | `grid`                                         | Creates a grid container    |
-| `grid-template-columns` | `1fr 2fr 300px` / `repeat(3, 1fr)`             | Defines column sizes        |
-| `grid-template-rows`    | `auto 1fr auto`                                | Defines row sizes           |
-| `grid-column`           | `1 / 3`                                        | Spans columns 1-2           |
-| `grid-row`              | `2 / 4`                                        | Spans rows 2-3              |
-| `gap`                   | `16px`                                         | Space between items         |
-| `grid-area`             | `header` / `auto`                              | Named grid area            |
+| `display` | `grid` | Creates a grid container |
+| `grid-template-columns` | `1fr 2fr 300px` / `repeat(3, 1fr)` | Defines column sizes |
+| `grid-template-rows` | `auto 1fr auto` | Defines row sizes |
+| `grid-column` | `1 / 3` | Spans columns 1-2 |
+| `grid-row` | `2 / 4` | Spans rows 2-3 |
+| `gap` | `16px` | Space between items |
+| `grid-area` | `header` / `auto` | Named grid area |
 
 ### Responsive Design Techniques
 
@@ -479,12 +479,12 @@ img {
 
 **Viewport units:**
 
-| Unit  | Description                          |
+| Unit | Description |
 | ----- | ------------------------------------ |
-| `vw`  | 1% of viewport width                 |
-| `vh`  | 1% of viewport height                |
-| `vmin` | 1% of smaller viewport dimension     |
-| `vmax` | 1% of larger viewport dimension      |
+| `vw` | 1% of viewport width |
+| `vh` | 1% of viewport height |
+| `vmin` | 1% of smaller viewport dimension |
+| `vmax` | 1% of larger viewport dimension |
 
 ## JavaScript in Detail
 
@@ -536,18 +536,18 @@ localStorage.clear();
 
 **localStorage vs sessionStorage:**
 
-| Feature        | localStorage                  | sessionStorage              |
+| Feature | localStorage | sessionStorage |
 | -------------- | ----------------------------- | -------------------------- |
-| Persistence    | Survives browser restart      | Lost when tab closes       |
-| Scope          | Same origin, all tabs         | Same origin, same tab      |
-| Storage limit  | ~5-10 MB                      | ~5-10 MB                   |
+| Persistence | Survives browser restart | Lost when tab closes |
+| Scope | Same origin, all tabs | Same origin, same tab |
+| Storage limit | ~5-10 MB | ~5-10 MB |
 
 ## Web Security in Detail
 
 ### Cross-Site Request Forgery (CSRF) Prevention
 
 A CSRF token is a unique, unpredictable value embedded in forms. The server verifies the token
-matches its expectation before processing the request.
+Matches its expectation before processing the request.
 
 ```html
 <form action="/transfer" method="POST">
@@ -578,8 +578,8 @@ Access-Control-Allow-Headers: Content-Type
 ### Same-Origin Policy
 
 The Same-Origin Policy prevents a web page from making requests to a different domain than the one
-that served the page. This prevents malicious scripts on one page from accessing sensitive data on
-another.
+That served the page. This prevents malicious scripts on one page from accessing sensitive data on
+Another.
 
 **Origin** is defined by the combination of protocol, domain, and port:
 - `https://example.com:443/page` and `https://example.com/api` -- same origin.
@@ -607,12 +607,12 @@ another.
 ## Practice Questions
 
 19. Write a responsive CSS Grid layout for a page with a header, navigation sidebar (collapsible on
-    mobile), main content area, and footer.
+ mobile), main content area, and footer.
 
 20. Explain the Same-Origin Policy and give an example of when it prevents a security issue.
 
 21. Write JavaScript that uses event delegation to handle clicks on a list of items, showing an
-    alert with the item's text.
+ alert with the item's text.
 
 22. Explain what CORS is and why it is necessary. How does a server enable CORS?
 
@@ -623,83 +623,83 @@ another.
 25. Write HTML that includes form validation using HTML5 attributes (required, pattern, min, max).
 
 26. Explain the difference between `localStorage` and `sessionStorage`. Give an appropriate use
-    case for each.
+ case for each.
 
 27. Write a Content Security Policy header that only allows scripts from the same origin and
-    images from a specific CDN.
+ images from a specific CDN.
 
 28. Explain what event delegation is and why it is more efficient than adding individual event
-    listeners.
+ listeners.
 
 29. Write JavaScript that implements an image carousel with previous/next buttons and automatic
-    advancement every 5 seconds.
+ advancement every 5 seconds.
 
 30. Explain the difference between graceful degradation and progressive enhancement in web
-    development.
+ development.
 
 ---
 
 ## Common Pitfalls
 
-1. **Semantic HTML:** Use `nav`, `main`, `section`, `article` instead of generic `div` elements.
-   This improves accessibility and SEO.
+1. **Semantic HTML:** Use `nav``main``section``article` instead of generic `div` elements.
+ This improves accessibility and SEO.
 
 2. **Box model confusion:** Remember that `width` in the standard box model does NOT include padding
-   and border. Use `box-sizing: border-box` to include them.
+ and border. Use `box-sizing: border-box` to include them.
 
 3. **JavaScript timing:** Scripts in the `<head>` block render unless `defer` or `async` is used.
-   Place scripts at the end of `<body>` or use `defer`.
+ Place scripts at the end of `<body>` or use `defer`.
 
 4. **Responsive images:** Always include `alt` text for accessibility and specify width/height to
-   prevent layout shift.
+ prevent layout shift.
 
 5. **SQL injection:** Never concatenate user input directly into SQL queries. Always use
-   parameterised queries.
+ parameterised queries.
 
 6. **CSS specificity conflicts.** Inline styles override external CSS. Use specificity rules to
-   predict which styles apply.
+ predict which styles apply.
 
-7. **Forgetting to close HTML tags.** Some elements (like `img`, `br`, `input`) are self-closing.
-   Others (like `div`, `p`) must be explicitly closed.
+7. **Forgetting to close HTML tags.** Some elements (like `img``br``input`) are self-closing.
+ Others (like `div``p`) must be explicitly closed.
 
 ---
 
 ## Practice Questions
 
 1. Explain the role of DNS in web browsing and describe what happens when you type a URL into the
-   browser.
+ browser.
 
 2. Create an HTML form for a user registration page with fields for name, email, password, and date
-   of birth. Include appropriate input types and validation.
+ of birth. Include appropriate input types and validation.
 
 3. Write CSS for a responsive two-column layout using Flexbox that stacks to a single column on
-   screens narrower than 768 px.
+ screens narrower than 768 px.
 
 4. Write JavaScript code that validates an email address format and displays an error message if
-   invalid.
+ invalid.
 
 5. Explain the CSS box model and how `box-sizing: border-box` affects element dimensions.
 
 6. Describe three common web security threats and explain how to prevent each one.
 
 7. Write HTML and CSS to create a navigation bar that is horizontal on desktop and collapses into a
-   hamburger menu on mobile.
+ hamburger menu on mobile.
 
 8. Explain the difference between `localStorage` and `sessionStorage` and give an appropriate use
-   case for each.
+ case for each.
 
 9. Write JavaScript that fetches data from a REST API and dynamically creates a table from the
-   results.
+ results.
 
 10. Explain the difference between GET and POST HTTP methods. When would you use each?
 
 11. Write CSS Grid layout for a page with a header (full width), sidebar (250 px), main content
-    (remaining space), and footer (full width).
+ (remaining space), and footer (full width).
 
 12. Explain what the Same-Origin Policy is and why it is important for web security.
 
-13. Write HTML that includes a semantic structure with `header`, `nav`, `main`, `article`, and
-    `footer` elements.
+13. Write HTML that includes a semantic structure with `header``nav``main``article`And
+ `footer` elements.
 
 14. Explain the difference between client-side and server-side validation. Why should both be used?
 
@@ -710,4 +710,12 @@ another.
 17. Write a responsive HTML email template that works on both desktop and mobile devices.
 
 18. Describe three ways to improve the performance of a web page. Include both frontend and backend
-    techniques.
+ techniques.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

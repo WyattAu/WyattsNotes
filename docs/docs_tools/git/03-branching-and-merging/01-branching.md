@@ -47,7 +47,7 @@ In the graph above:
 
 - `main` points to commit `F`.
 - `feature` points to commit `E`.
-- Commits `A`, `B`, `C` are shared by both branches — no duplication.
+- Commits `A``B``C` are shared by both branches — no duplication.
 - Commit `D` and `E` are only reachable from `feature`.
 - Commit `F` is only reachable from `main`.
 
@@ -105,7 +105,7 @@ $ git checkout main
 
 ### What Happens During a Branch Switch
 
-When you run `git switch main`, Git performs the following:
+When you run `git switch main`Git performs the following:
 
 1. **Validate**: Check that the working directory is clean (or that changes can be carried over).
 2. **Update HEAD**: Write `ref: refs/heads/main` to `.git/HEAD`.
@@ -173,16 +173,16 @@ $ git push origin --delete feature-auth
 
 Consistent branch naming is essential for project hygiene. Common conventions:
 
-| Pattern                          | Purpose                                            |
+| Pattern | Purpose |
 | -------------------------------- | -------------------------------------------------- |
-| `main`, `master`                 | Production-ready code                              |
-| `staging`                        | Pre-production integration branch                  |
-| `develop`                        | Active development (Git Flow)                      |
+| `main``master` | Production-ready code |
+| `staging` | Pre-production integration branch |
+| `develop` | Active development (Git Flow) |
 | `feature/<ticket>-<description>` | Feature development (e.g., `feature/PROJ-42-auth`) |
-| `bugfix/<ticket>-<description>`  | Bug fixes                                          |
-| `hotfix/<description>`           | Urgent production fixes                            |
-| `release/<version>`              | Release preparation                                |
-| `experiment/<description>`       | Experimental work                                  |
+| `bugfix/<ticket>-<description>` | Bug fixes |
+| `hotfix/<description>` | Urgent production fixes |
+| `release/<version>` | Release preparation |
+| `experiment/<description>` | Experimental work |
 
 :::tip
 
@@ -316,3 +316,11 @@ $ git branch --merged main | grep -v "^\*\|  main" | xargs -r git branch -d
 # Delete all remote branches that no longer exist on the remote
 $ git fetch --prune
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -14,55 +14,55 @@ slug: alcohols
 Alcohols are organic compounds containing one or more hydroxyl ($-\mathrm{OH}$) groups bonded to an
 $sp^3$ hybridised carbon atom. The general formula for a mono-alcohol is $\mathrm{R-OH}$. The
 $-\mathrm{OH}$ functional group is polar and capable of hydrogen bonding, which dominates the
-physical and much of the chemical behaviour of alcohols.
+Physical and much of the chemical behaviour of alcohols.
 
 ## Classification
 
 Alcohols are classified by the number of alkyl groups attached to the carbon bearing the hydroxyl
-group:
+Group:
 
 - **Primary ($1^\circ$):** The $-\mathrm{OH}$ carbon is bonded to one alkyl group (and two
-  hydrogens). General structure: $\mathrm{RCH}_2\mathrm{OH}$. Examples: methanol, ethanol,
-  propan-1-ol.
+ hydrogens). General structure: $\mathrm{RCH}_2\mathrm{OH}$. Examples: methanol, ethanol,
+ propan-1-ol.
 - **Secondary ($2^\circ$):** The $-\mathrm{OH}$ carbon is bonded to two alkyl groups (and one
-  hydrogen). General structure: $\mathrm{R}_2\mathrm{CHOH}$. Examples: propan-2-ol, butan-2-ol.
+ hydrogen). General structure: $\mathrm{R}_2\mathrm{CHOH}$. Examples: propan-2-ol, butan-2-ol.
 - **Tertiary ($3^\circ$):** The $-\mathrm{OH}$ carbon is bonded to three alkyl groups (and no
-  hydrogens). General structure: $\mathrm{R}_3\mathrm{COH}$. Examples: 2-methylpropan-2-ol
-  (tert-butanol).
+ hydrogens). General structure: $\mathrm{R}_3\mathrm{COH}$. Examples: 2-methylpropan-2-ol
+ (tert-butanol).
 
 ## Physical Properties
 
 ### Boiling Points
 
 Alcohols have much higher boiling points than alkanes of similar molecular mass due to hydrogen
-bonding between the $-\mathrm{OH}$ groups. Each molecule can both donate and accept hydrogen bonds,
-creating an extensive intermolecular network.
+Bonding between the $-\mathrm{OH}$ groups. Each molecule can both donate and accept hydrogen bonds,
+Creating an extensive intermolecular network.
 
-| Compound                                | $M_r$ | Boiling Point          |
+| Compound | $M_r$ | Boiling Point |
 | --------------------------------------- | ----- | ---------------------- |
-| $\mathrm{CH}_4$                         | 16    | $-162^\circ\mathrm{C}$ |
-| $\mathrm{CH}_3\mathrm{OH}$              | 32    | $65^\circ\mathrm{C}$   |
-| $\mathrm{C}_2\mathrm{H}_6$              | 30    | $-89^\circ\mathrm{C}$  |
-| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ | 46    | $78^\circ\mathrm{C}$   |
+| $\mathrm{CH}_4$ | 16 | $-162^\circ\mathrm{C}$ |
+| $\mathrm{CH}_3\mathrm{OH}$ | 32 | $65^\circ\mathrm{C}$ |
+| $\mathrm{C}_2\mathrm{H}_6$ | 30 | $-89^\circ\mathrm{C}$ |
+| $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}$ | 46 | $78^\circ\mathrm{C}$ |
 
 ### Solubility
 
 Short-chain alcohols (methanol, ethanol, propan-1-ol) are miscible with water in all proportions.
 The $-\mathrm{OH}$ group forms hydrogen bonds with water, overcoming the hydrophobic effect of the
-alkyl chain. As chain length increases, the hydrophobic character dominates and solubility decreases
-sharply.
+Alkyl chain. As chain length increases, the hydrophobic character dominates and solubility decreases
+Sharply.
 
 ## Oxidation of Alcohols
 
 Oxidation of alcohols is the most synthetically important reaction of this class. The products
-depend on the class of alcohol and the reaction conditions.
+Depend on the class of alcohol and the reaction conditions.
 
 ### Oxidising Agent
 
 Acidified potassium dichromate(VI)
 ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}_2\mathrm{SO}_4$) is the standard oxidising
-agent. It is orange and is reduced to $\mathrm{Cr}^{3+}$ (green). The colour change from orange to
-green provides a visual indication that oxidation has occurred.
+Agent. It is orange and is reduced to $\mathrm{Cr}^{3+}$ (green). The colour change from orange to
+Green provides a visual indication that oxidation has occurred.
 
 ### Primary Alcohols
 
@@ -82,14 +82,14 @@ $$
 
 **Stage 2: Aldehyde to carboxylic acid.** To oxidise all the way to the carboxylic acid, use
 **reflux** (heating under a condenser so the product returns to the reaction mixture). The aldehyde
-remains in contact with the oxidising agent and is further oxidised.
+Remains in contact with the oxidising agent and is further oxidised.
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \xrightarrow{[\mathrm{O}],\,\mathrm{reflux}} \mathrm{CH}_3\mathrm{COOH} + \mathrm{H}_2\mathrm{O}
 $$
 
 An alternative for producing aldehydes without over-oxidation is to use PCC (pyridinium
-chlorochromate) in dichloromethane, which selectively oxidises primary alcohols to aldehydes.
+Chlorochromate) in dichloromethane, which selectively oxidises primary alcohols to aldehydes.
 
 ### Secondary Alcohols
 
@@ -100,7 +100,7 @@ $$
 $$
 
 Ketones resist further oxidation under these conditions because there is no hydrogen atom on the
-carbonyl carbon that can be removed (C--C bond cleavage requires much harsher conditions).
+Carbonyl carbon that can be removed (C--C bond cleavage requires much harsher conditions).
 
 $$
 \mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_3 \xrightarrow{[\mathrm{O}]} \mathrm{CH}_3\mathrm{COCH}_3
@@ -110,8 +110,8 @@ $$
 
 Tertiary alcohols are **not oxidised** by acidified dichromate(VI). The carbon bearing the
 $-\mathrm{OH}$ group has no hydrogen atoms (all three substituents are alkyl groups), so the initial
-oxidation step cannot occur. The orange solution remains orange, which provides a useful negative
-test.
+Oxidation step cannot occur. The orange solution remains orange, which provides a useful negative
+Test.
 
 $$
 (\mathrm{CH}_3)_3\mathrm{COH} + [\mathrm{O}] \to \mathrm{no\ reaction}
@@ -122,10 +122,10 @@ $$
 The oxidation proceeds via a chromate ester intermediate:
 
 1. The alcohol attacks the chromium(VI) centre, displacing a water molecule and forming a chromate
-   ester.
+ ester.
 2. A base (water or $\mathrm{HSO}_4^-$) abstracts the proton from the $-\mathrm{OH}$ group.
 3. The C--H bond on the same carbon breaks heterolytically, transferring a hydride ($\mathrm{H}^-$)
-   equivalent to the chromium. The C=O double bond forms as the Cr(VI) is reduced to Cr(IV).
+ equivalent to the chromium. The C=O double bond forms as the Cr(VI) is reduced to Cr(IV).
 4. Chromium(IV) disproportionates or is further reduced to Cr(III).
 
 ## Dehydration (Elimination to Alkenes)
@@ -140,7 +140,7 @@ $$
 ### Mechanism
 
 1. Protonation of the hydroxyl group by the acid catalyst, converting $-\mathrm{OH}$ into
-   $-\mathrm{OH}_2^+$ (a good leaving group, since water is a weak base).
+ $-\mathrm{OH}_2^+$ (a good leaving group, since water is a weak base).
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH}_2^+
@@ -151,7 +151,7 @@ $$
 3. Loss of a proton ($\mathrm{H}^+$) from an adjacent carbon, forming the C=C double bond.
 
 When multiple alkenes are possible, Zaitsev's rule applies: the more substituted alkene
-predominates.
+Predominates.
 
 **Worked Example.** Dehydration of butan-2-ol:
 
@@ -160,7 +160,7 @@ $$
 $$
 
 But-2-ene (more substituted, disubstituted alkene) is the major product; but-1-ene (monosubstituted)
-is the minor product.
+Is the minor product.
 
 ## Esterification
 
@@ -173,8 +173,8 @@ $$
 
 This is an equilibrium reaction. The position of equilibrium can be shifted to the right by:
 
-- Using an excess of one reactant (usually the cheaper alcohol).
-- Removing the water as it forms (e.g. by using a Dean-Stark apparatus).
+- Using an excess of one reactant ( the cheaper alcohol).
+- Removing the water as it forms (e.g. By using a Dean-Stark apparatus).
 
 **Example:**
 
@@ -188,7 +188,7 @@ Ethanoic acid + ethanol $\rightleftharpoons$ ethyl ethanoate + water.
 
 1. Protonation of the carboxylic acid on the carbonyl oxygen.
 2. Nucleophilic attack of the alcohol on the protonated carbonyl carbon, forming a tetrahedral
-   intermediate.
+ intermediate.
 3. Proton transfer from the alcohol oxygen to one of the hydroxyl oxygens.
 4. Elimination of water from the tetrahedral intermediate.
 5. Deprotonation to yield the ester.
@@ -196,17 +196,17 @@ Ethanoic acid + ethanol $\rightleftharpoons$ ethyl ethanoate + water.
 ## Nucleophilic Substitution of Alcohols
 
 Alcohols are poor substrates for direct nucleophilic substitution because $-\mathrm{OH}$ is a poor
-leaving group. However, the hydroxyl group can be converted into a better leaving group:
+Leaving group. However, the hydroxyl group can be converted into a better leaving group:
 
-**Protonation:** In acidic conditions, $-\mathrm{OH}$ is protonated to $-\mathrm{OH}_2^+$, making
-water the leaving group. This allows substitution to proceed.
+**Protonation:** In acidic conditions, $-\mathrm{OH}$ is protonated to $-\mathrm{OH}_2^+$Making
+Water the leaving group. This allows substitution to proceed.
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{HBr} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{H}_2\mathrm{O}
 $$
 
 **Conversion to a halogenoalkane:** Using phosphorus tribromide ($\mathrm{PBr}_3$), phosphorus
-pentachloride ($\mathrm{PCl}_5$), or thionyl chloride ($\mathrm{SOCl}_2$):
+Pentachloride ($\mathrm{PCl}_5$), or thionyl chloride ($\mathrm{SOCl}_2$):
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{PBr}_3 \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{H}_3\mathrm{PO}_3
@@ -217,7 +217,7 @@ $$
 $$
 
 Thionyl chloride is preferred because the byproducts ($\mathrm{SO}_2$ and $\mathrm{HCl}$) are gases
-that escape, driving the reaction to completion and simplifying purification.
+That escape, driving the reaction to completion and simplifying purification.
 
 ## Alcohols as Intermediates in Organic Synthesis
 
@@ -229,7 +229,7 @@ Alcohols are central to organic synthesis because they can be converted into vir
 | Aldehyde | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (primary alcohol only) |
 | Carboxylic acid | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (primary alcohol only) |
 | Ketone | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (secondary alcohol) |
-| Halogenoalkane | $\mathrm{PBr}_3$, $\mathrm{SOCl}_2$, or conc. $\mathrm{HBr}$ |
+| Halogenoalkane | $\mathrm{PBr}_3$$\mathrm{SOCl}_2$Or conc. $\mathrm{HBr}$ |
 | Ester | Carboxylic acid + concentrated $\mathrm{H}_2\mathrm{SO}_4$ |
 | Ether | Williamson ether synthesis (deprotonation with Na, then $\mathrm{R}'\mathrm{Br}$) |
 
@@ -249,7 +249,7 @@ $$
 \mathrm{CH}_2=\mathrm{CHCH}_2\mathrm{CH}_3 + \mathrm{HBr} \xrightarrow{\text{peroxides}} \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3
 $$
 
-Step 2: Substitution to alcohol (aqueous $\mathrm{NaOH}$, SN2):
+Step 2: Substitution to alcohol (aqueous $\mathrm{NaOH}$SN2):
 
 $$
 \mathrm{BrCH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{NaOH} \to \mathrm{HOCH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_3
@@ -304,23 +304,23 @@ The cloudiness is caused by the formation of an insoluble halogenoalkane. Tertia
 ## Common Pitfalls
 
 1. **Distillation vs reflux.** Distillation isolates the aldehyde; reflux produces the carboxylic
-   acid. Confusing these conditions leads to the wrong product.
+ acid. Confusing these conditions leads to the wrong product.
 
 2. **Using the wrong oxidising agent.** $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (orange to green) and
-   $\mathrm{KMnO}_4$ (purple to colourless) are both strong oxidising agents. Tollen's reagent
-   (silver mirror) and Fehling's solution (brick red precipitate) are mild oxidising agents that
-   only oxidise aldehydes (not ketones).
+ $\mathrm{KMnO}_4$ (purple to colourless) are both strong oxidising agents. Tollen's reagent
+ (silver mirror) and Fehling's solution (brick red precipitate) are mild oxidising agents that
+ only oxidise aldehydes (not ketones).
 
 3. **Assuming all alcohols can be oxidised.** Tertiary alcohols are resistant to oxidation because
-   there is no $\alpha$-hydrogen to remove. No colour change is observed with
-   $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$.
+ there is no $\alpha$-hydrogen to remove. No colour change is observed with
+ $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$.
 
 4. **Forgetting that $\mathrm{PBr}_3$ and $\mathrm{SOCl}_2$ produce different halogenoalkanes.**
-   $\mathrm{PBr}_3$ gives bromoalkanes; $\mathrm{SOCl}_2$ gives chloroalkanes. Using
-   $\mathrm{SOCl}_2$ when you need a bromoalkane is a common error.
+ $\mathrm{PBr}_3$ gives bromoalkanes; $\mathrm{SOCl}_2$ gives chloroalkanes. Using
+ $\mathrm{SOCl}_2$ when you need a bromoalkane is a common error.
 
 5. **Incorrect use of the Lucas test.** The Lucas test only works for water-soluble alcohols. If
-   the alcohol is insoluble, cloudiness will not be observed even if the reaction occurs.
+ the alcohol is insoluble, cloudiness will not be observed even if the reaction occurs.
 
 ## Dehydration of Alcohols to Alkenes
 
@@ -342,7 +342,7 @@ $$
 
 ## Ester Formation
 
-Alcohols react with carboxylic acids in the presence of a strong acid catalyst (typically concentrated $\mathrm{H}_2\mathrm{SO}_4$) to form esters:
+Alcohols react with carboxylic acids in the presence of a strong acid catalyst ( concentrated $\mathrm{H}_2\mathrm{SO}_4$) to form esters:
 
 $$
 \mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}
@@ -357,12 +357,12 @@ $$
 3. Proton transfer and loss of water.
 4. Deprotonation to give the ester.
 
-The reaction is an equilibrium. To drive it to the right, use an excess of one reactant or remove the water as it forms (e.g. using a Dean-Stark apparatus).
+The reaction is an equilibrium. To drive it to the right, use an excess of one reactant or remove the water as it forms (e.g. Using a Dean-Stark apparatus).
 
 ### Uses of Esters
 
 - **Solvents** -- ethyl ethanoate is a common organic solvent (nail polish remover).
-- **Flavourings and fragrances** -- many esters have pleasant fruity odours (e.g. isoamyl acetate smells of banana, methyl salicylate of wintergreen).
+- **Flavourings and fragrances** -- many esters have pleasant fruity odours (e.g. Isoamyl acetate smells of banana, methyl salicylate of wintergreen).
 - **Plasticisers** -- added to PVC to make it flexible.
 - **Biodiesel** -- fatty acid methyl esters (FAME) produced by transesterification of vegetable oils.
 
@@ -399,17 +399,17 @@ The ethanol produced by fermentation is approximately 95\% pure (azeotrope with 
 | Reduces dependence on fossil fuels | Fermentation is slow; limited production capacity |
 
 2. **Oxidation of tertiary alcohols.** Tertiary alcohols are not oxidised by
-   $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}^+$. The absence of a colour change is the key
-   diagnostic.
+ $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7 / \mathrm{H}^+$. The absence of a colour change is the key
+ diagnostic.
 
 3. **Using $-\mathrm{OH}$ as a leaving group in nucleophilic substitution.** $-\mathrm{OH}$ is a
-   poor leaving group. Always protonate first (acidic conditions) or convert to a halide.
+ poor leaving group. Always protonate first (acidic conditions) or convert to a halide.
 
 4. **Forgetting that esterification is an equilibrium.** Unless you remove water or use excess
-   reagent, the yield is limited by the equilibrium position.
+ reagent, the yield is limited by the equilibrium position.
 
 5. **Ignoring Zaitsev's rule in dehydration.** For unsymmetrical secondary and tertiary alcohols,
-   the major elimination product is the more substituted alkene.
+ the major elimination product is the more substituted alkene.
 
 ## Practice Problems
 
@@ -417,20 +417,20 @@ The ethanol produced by fermentation is approximately 95\% pure (azeotrope with 
 <summary>Problem 1</summary>
 
 Describe a chemical test to distinguish between propan-1-ol, propan-2-ol, and 2-methylpropan-2-ol
-using acidified potassium dichromate(VI).
+Using acidified potassium dichromate(VI).
 
 **Solution:**
 
 - **Propan-1-ol:** Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. The orange
-  solution turns green. The product is propanoic acid. (If distilled instead, propanal is produced
-  -- it can be detected by its smell and by Tollens' or Fehling's test.)
+ solution turns green. The product is propanoic acid. (If distilled instead, propanal is produced
+ -- it can be detected by its smell and by Tollens' or Fehling's test.)
 
 - **Propan-2-ol:** Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. The orange
-  solution turns green. The product is propanone. Propanone gives no reaction with Tollens' reagent
-  or Fehling's solution, distinguishing it from the aldehyde produced from propan-1-ol.
+ solution turns green. The product is propanone. Propanone gives no reaction with Tollens' reagent
+ or Fehling's solution, distinguishing it from the aldehyde produced from propan-1-ol.
 
 - **2-Methylpropan-2-ol:** Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour
-  change (solution remains orange). Tertiary alcohols are not oxidised.
+ change (solution remains orange). Tertiary alcohols are not oxidised.
 
 </details>
 
@@ -438,7 +438,7 @@ using acidified potassium dichromate(VI).
 <summary>Problem 2</summary>
 
 Ethanol can be converted to bromoethane by three different methods. Write equations for each and
-identify the mechanism.
+Identify the mechanism.
 
 **Solution:**
 
@@ -459,7 +459,7 @@ $$
 Mechanism: $\mathrm{S_N}2$ (primary substrate, bromide ion as nucleophile).
 
 **Method 3:** $\mathrm{SOCl}_2$ (produces chloroethane, not bromoethane -- so this method is not
-valid for bromoethane). For chloroethane:
+Valid for bromoethane). For chloroethane:
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{SOCl}_2 \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{Cl} + \mathrm{SO}_2 + \mathrm{HCl}
@@ -679,7 +679,7 @@ Product: Chloroethane (not bromoethane). Mechanism: SN2. Advantage: gaseous bypr
 **Rule of thumb:** If the product is volatile and you want to isolate it, use distillation. If the reaction needs prolonged heating without loss of reactants or solvent, use reflux.
 
 For the oxidation of primary alcohols:
-- To isolate the aldehyde: distil the product as it forms (lower b.p. than the alcohol).
+- To isolate the aldehyde: distil the product as it forms (lower b.p. Than the alcohol).
 - To produce the carboxylic acid: reflux (keep the aldehyde in the mixture for further oxidation).
 
 ## Exam-Style Questions with Full Mark Schemes
@@ -709,7 +709,7 @@ Explain the mechanism for the acid-catalysed dehydration of butan-2-ol to form b
 **Mark Scheme:**
 
 6 marks:
-- Protonation: $\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$ (1 mark). The acid catalyst protonates the $-\mathrm{OH}$ group, converting it to $-\mathrm{OH}_2^+$, a good leaving group.
+- Protonation: $\mathrm{CH}_3\mathrm{CH}(\mathrm{OH})\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{CH}(\mathrm{OH}_2^+)\mathrm{CH}_2\mathrm{CH}_3$ (1 mark). The acid catalyst protonates the $-\mathrm{OH}$ group, converting it to $-\mathrm{OH}_2^+$A good leaving group.
 - Loss of water (rate-determining step): Formation of a secondary carbocation (1 mark).
 - Deprotonation: Loss of a proton from an adjacent carbon, forming the C=C double bond (1 mark).
 - Zaitsev's rule: The major product is but-2-ene (more substituted alkene) rather than but-1-ene (1 mark).
@@ -733,7 +733,7 @@ A student prepares ethyl ethanoate from ethanoic acid and ethanol using concentr
 
 (a) $\mathrm{CH}_3\mathrm{COOH} + \mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} \rightleftharpoons \mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 + \mathrm{H}_2\mathrm{O}$ (1 mark).
 
-(b) Use excess of one reactant (e.g. ethanol) (1 mark). Remove water as it forms using a Dean-Stark apparatus or molecular sieves (1 mark).
+(b) Use excess of one reactant (e.g. Ethanol) (1 mark). Remove water as it forms using a Dean-Stark apparatus or molecular sieves (1 mark).
 
 (c) The reaction is an equilibrium, so some reactants always remain (1 mark). At equilibrium, the rates of the forward and reverse reactions are equal (1 mark).
 
@@ -782,3 +782,7 @@ See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for 
 :::
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

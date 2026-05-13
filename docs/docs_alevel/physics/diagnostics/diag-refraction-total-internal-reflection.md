@@ -36,7 +36,7 @@ $$r_1 = 25.03^\circ$$
 
 Angle of incidence at the second face: $i_2 = 60^\circ - r_1 = 60 - 25.03 = 34.97^\circ$
 
-Since $34.97^\circ \lt 41.1^\circ = \theta_c$, total internal reflection does **not** occur.
+Since $34.97^\circ \lt 41.1^\circ = \theta_c$Total internal reflection does **not** occur.
 
 Angle of emergence: $n\sin i_2 = \sin e$
 
@@ -123,13 +123,13 @@ $$n = 1.40 \pm 0.04$$
 
 (b) For near-normal incidence, the apparent depth of an object in a medium of refractive index $n_1$ viewed from a medium of refractive index $n_2$ is $d_{\text{apparent}} = d \times n_2/n_1$.
 
-The light path is: glass ($n_g = 1.52$, thickness $d_g = 3.0\,\text{cm}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n_a = 1.00$).
+The light path is: glass ($n_g = 1.52$Thickness $d_g = 3.0\,\text{cm}$) $\to$ liquid ($n_l = 1.40$) $\to$ air ($n_a = 1.00$).
 
 For the glass block viewed from air through the intervening liquid, the apparent thickness is:
 
 $$d_{\text{app}} = \frac{d_g}{n_g} = \frac{3.0}{1.52} = 1.97\,\text{cm}$$
 
-The apparent depth formula uses the refractive index of the object's medium relative to the observer's medium. The liquid layer does not change the apparent thickness of the glass block itself; it only affects the apparent depth of objects within or below the liquid. The total apparent depth of the bottom of the glass from the liquid surface would be $d_l/n_l + d_g/n_g$, but the apparent thickness of the glass alone is $d_g/n_g = 1.97\,\text{cm}$.
+The apparent depth formula uses the refractive index of the object's medium relative to the observer's medium. The liquid layer does not change the apparent thickness of the glass block itself; it only affects the apparent depth of objects within or below the liquid. The total apparent depth of the bottom of the glass from the liquid surface would be $d_l/n_l + d_g/n_g$But the apparent thickness of the glass alone is $d_g/n_g = 1.97\,\text{cm}$.
 
 (c) The apparent depth formula $d_{\text{app}} = d/n$ is derived using the small-angle (paraxial) approximation. At larger angles, Snell's law gives a curved relationship between real and apparent position, and the simple ratio no longer holds. The apparent depth depends on the viewing angle, and the image position varies with angle -- a phenomenon known as aberration. Additionally, at large angles, the formula breaks down because it assumes all rays from a point converge to a single image point, which is only true for paraxial rays.
 
@@ -163,7 +163,7 @@ The angle of incidence at the second surface $i_2 = r_1 = 23.6^\circ$ (by the is
 
 Critical angle: $\theta_c = \sin^{-1}(1/1.50) = 41.1^\circ$
 
-Since $i_2 = 23.6^\circ \lt \theta_c$, TIR does **not** occur.
+Since $i_2 = 23.6^\circ \lt \theta_c$TIR does **not** occur.
 
 (c) At the second surface: $n\sin i_2 = \sin e_2$
 
@@ -174,7 +174,7 @@ The ray emerges parallel to the original direction (as expected for a sphere). T
 
 $$\delta = (i_1 - r_1) + (e_2 - i_2) = (36.9 - 23.6) + (36.9 - 23.6) = 26.6^\circ$$
 
-For TIR to occur: $r_1 \ge \theta_c = 41.1^\circ$, which requires $i_1$ such that $\sin i_1 \ge 1.50 \times \sin 41.1^\circ = 1.50 \times 0.657 = 0.986$, i.e. $i_1 \ge 80.4^\circ$ or $h \ge 9.86\,\text{cm}$. Only rays very close to the edge undergo TIR.
+For TIR to occur: $r_1 \ge \theta_c = 41.1^\circ$Which requires $i_1$ such that $\sin i_1 \ge 1.50 \times \sin 41.1^\circ = 1.50 \times 0.657 = 0.986$I.e. $i_1 \ge 80.4^\circ$ or $h \ge 9.86\,\text{cm}$. Only rays very close to the edge undergo TIR.
 
 ---
 ### IT-2: Optical Fibre Signal Attenuation (with DC Circuits)
@@ -187,7 +187,7 @@ An optical fibre of length $5.0\,\text{km}$ has an attenuation of $0.30\,\text{d
 
 (b) The fibre has a numerical aperture of 0.22 and core diameter $62.5\,\mu\text{m}$. Calculate the maximum acceptance angle and the solid angle of acceptance.
 
-(c) If the fibre is bent to a radius of curvature of $5.0\,\text{cm}$, estimate whether significant power loss occurs due to bending.
+(c) If the fibre is bent to a radius of curvature of $5.0\,\text{cm}$Estimate whether significant power loss occurs due to bending.
 
 **Solution:**
 
@@ -209,7 +209,7 @@ $$R_{\text{critical}} \approx \frac◆LB◆3n_1^2\lambda◆RB◆◆LB◆4\pi(n_1
 
 Without the wavelength, we can estimate: for typical telecom fibres, bend losses become significant below $R \approx 10$--$30\,\text{mm}$ for single-mode fibres. For multimode fibres with larger cores, the critical radius is smaller.
 
-At $R = 5.0\,\text{cm} = 50\,\text{mm}$, a multimode fibre of $62.5\,\mu\text{m}$ core diameter would experience minimal bending loss. However, tight bends at $5\,\text{mm}$ radius would cause significant loss.
+At $R = 5.0\,\text{cm} = 50\,\text{mm}$A multimode fibre of $62.5\,\mu\text{m}$ core diameter would experience minimal bending loss. However, tight bends at $5\,\text{mm}$ radius would cause significant loss.
 
 The key point is that bending changes the angle of incidence at the core-cladding boundary. Some rays that previously satisfied the TIR condition no longer do, and they leak into the cladding. This is macrobending loss.
 
@@ -234,11 +234,11 @@ $$\theta_c = 40.2^\circ$$
 
 (b) At normal incidence on the short face, the light enters undeviated ($r_1 = 0$). It hits the hypotenuse at $45^\circ$ angle of incidence.
 
-Since $45^\circ \gt 40.2^\circ = \theta_c$, TIR occurs. The ray is reflected through $90^\circ$.
+Since $45^\circ \gt 40.2^\circ = \theta_c$TIR occurs. The ray is reflected through $90^\circ$.
 
 (c) Let the angle of incidence on the short face be $i$.
 
-By Snell's law: $\sin i = n\sin r$, where $r$ is the angle of refraction.
+By Snell's law: $\sin i = n\sin r$Where $r$ is the angle of refraction.
 
 The ray hits the hypotenuse at angle $i_2 = 45^\circ - r$.
 

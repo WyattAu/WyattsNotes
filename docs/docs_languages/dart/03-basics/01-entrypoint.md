@@ -10,8 +10,8 @@ slug: entry-point
 ---
 ## Program Entry
 
-When the project creates an executable, the entry point of the project is located in `main()`, where
-the default is given as:
+When the project creates an executable, the entry point of the project is located in `main()`Where
+The default is given as:
 
 ```dart
 void main(){
@@ -24,7 +24,7 @@ This can be find in `lib/main.dart` along with other source code.
 :::info
 
 Inside the `main()` function, there is the `runApp()` function which bootstrap the application by
-initializing the framework and attaching the root widget the render tree. This is perform by:
+Initializing the framework and attaching the root widget the render tree. This is perform by:
 
 ```dart
 void runApp(Widget app) {
@@ -33,13 +33,13 @@ void runApp(Widget app) {
 }
 ```
 
-- `WidgetsFlutterBinding.ensureInitialized();` creates the binders required (`GestureBinding`,
-  `RendererBinding`, `SchedulerBinding`, `WidgetsBinding`)
+- `WidgetsFlutterBinding.ensureInitialized();` creates the binders required (`GestureBinding`
+ `RendererBinding``SchedulerBinding``WidgetsBinding`)
 - This `binding` is pass into `_runWidget`
 - The widget (app) passed in will be wrapped with a `View` widget, this widget will now be the root
-  widget and be rendered through the `RendererBinding`
+ widget and be rendered through the `RendererBinding`
 - This now calls the `mount()` function which recursively adds the child elements and instantiates
-  `RenderObject` for each `RenderObjectWidget`.
+ `RenderObject` for each `RenderObjectWidget`.
 - `SchedulerBinding.scheduleFrame()` hooks into `window.onDrawFrame`
 - The event loop will now initialize, each loop will update render objects and draw schedule frames.
 
@@ -77,7 +77,7 @@ void main(List<String> args) {
 ```
 
 The `main()` function must be a **top-level function** (not a method of a class) and must be named
-exactly `main`. It must be in a library file (not a part file).
+Exactly `main`. It must be in a library file (not a part file).
 
 ## Command-Line Arguments
 
@@ -110,12 +110,12 @@ dart run main.dart Dart --verbose
 ```
 
 Note that `args` does **not** include the program name (unlike C's `argv[0]`). It starts with the
-first actual argument.
+First actual argument.
 
 ## Basic Types
 
 Dart has a small set of built-in types. The type system is sound — the compiler and runtime
-guarantee type safety.
+Guarantee type safety.
 
 ### Numbers
 
@@ -160,7 +160,7 @@ bool truthy = 'hello';    // ERROR: Dart has no truthy/falsy coercion
 ```
 
 Dart does **not** have implicit boolean coercion. Unlike JavaScript or Python, only `true` and
-`false` are valid boolean values. Conditions in `if`, `while`, and `?:` must evaluate to `bool`.
+`false` are valid boolean values. Conditions in `if``while`And `?:` must evaluate to `bool`.
 
 ### Lists
 
@@ -215,7 +215,7 @@ name = 42;               // ERROR: type mismatch
 ### final
 
 The variable must be initialized exactly once. The reference cannot be reassigned, but the object
-itself can be mutated.
+Itself can be mutated.
 
 ```dart
 final name = 'Dart';          // inferred as String
@@ -228,7 +228,7 @@ items.add(4);                  // OK: mutating the list, not the reference
 ### const
 
 Compile-time constant. The value must be a literal or a const constructor invocation. All const
-variables with the same value refer to the same object (canonicalization).
+Variables with the same value refer to the same object (canonicalization).
 
 ```dart
 const pi = 3.14159;
@@ -246,7 +246,7 @@ print(identical(a, b));      // true — same object in memory
 ### late
 
 Defer initialization until first access. Required when a field cannot be initialized in the
-constructor but will be before use.
+Constructor but will be before use.
 
 ```dart
 class Database {
@@ -272,7 +272,7 @@ String _computeExpensiveValue() {
 ```
 
 The `late` keyword tells the analyzer "trust me, this will be initialized before access." If you
-access it before initialization, you get a runtime error. Use it when:
+Access it before initialization, you get a runtime error. Use it when:
 
 1. The variable is initialized in `initState()` or a setup method, not the constructor.
 2. You want lazy initialization of an expensive computation.
@@ -281,7 +281,7 @@ access it before initialization, you get a runtime error. Use it when:
 ## Null Safety
 
 Dart's null safety (Dart 2.12+) is sound — the compiler guarantees that no `null` value reaches a
-non-nullable variable at runtime.
+Non-nullable variable at runtime.
 
 ### Nullable and Non-Nullable Types
 
@@ -303,7 +303,7 @@ String definite = name!;    // assert name is not null
 ```
 
 Use `!` only when you are **certain** the value is not null. If the assertion is wrong, you get a
-runtime crash with no useful context. Prefer null-aware operators or explicit checks.
+Runtime crash with no useful context. Prefer null-aware operators or explicit checks.
 
 ### Null-Aware Operators
 
@@ -421,21 +421,29 @@ final age = 20;
 final status = age >= 18 ? 'adult' : 'minor';
 ```
 
-Remember: Dart has no truthy/falsy. The condition in `?:`, `if`, `while` must be `bool`. You cannot
-write `final status = name ? 'exists' : 'missing';` — that is a compile error.
+Remember: Dart has no truthy/falsy. The condition in `?:``if``while` must be `bool`. You cannot
+Write `final status = name ? 'exists' : 'missing';` — that is a compile error.
 
 ## Common Pitfalls
 
 - **Using `var` for everything**: `var` is fine for local variables with obvious initializers. For
-  fields and parameters, always specify the type explicitly — it serves as documentation.
+ fields and parameters, always specify the type explicitly — it serves as documentation.
 - **Confusing `final` with immutable**: `final` means the reference cannot change. The object itself
-  is still mutable. Use `const` for compile-time constants, or use immutable collections from
-  `package:collection` / `package:built_collection` for deep immutability.
-- **Overusing `!` (null assertion)**: Every `!` is a potential crash. Prefer `?.`, `??`, or explicit
-  null checks. Use `!` only when the null state is provably impossible (e.g., after an `is` check).
+ is still mutable. Use `const` for compile-time constants, or use immutable collections from
+ `package:collection` / `package:built_collection` for deep immutability.
+- **Overusing `!` (null assertion)**: Every `!` is a potential crash. Prefer `?.``??`Or explicit
+ null checks. Use `!` only when the null state is provably impossible (e.g., after an `is` check).
 - **Forgetting that Dart has no truthy coercion**: `if (list)` does not check if the list is
-  non-empty. Use `if (list.isNotEmpty)`. `if (value)` does not check if value is non-zero. Use
-  `if (value != 0)`.
+ non-empty. Use `if (list.isNotEmpty)`. `if (value)` does not check if value is non-zero. Use
+ `if (value != 0)`.
 - **Using `late` without guaranteeing initialization**: `late` defers the runtime check. If you
-  access a `late` variable before it is set, you get a `LateInitializationError`. This is a runtime
-  crash, not a compile-time error.
+ access a `late` variable before it is set, you get a `LateInitializationError`. This is a runtime
+ crash, not a compile-time error.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -94,7 +94,7 @@ Areas 1--4 (non-backbone): Each contains 20--30 internal routers and 1 ABR conne
 4. Shortest AS_PATH.
 5. Lowest ORIGIN type (IGP < EGP < incomplete).
 6. Lowest MED.
-7. eBGP over iBGP.
+7. EBGP over iBGP.
 8. Lowest IGP metric to NEXT_HOP.
 9. Oldest route (for eBGP).
 10. Lowest router ID.
@@ -125,7 +125,7 @@ Route aggregation (supernetting) reduces the size of routing tables by combining
 
 Common bits: first 22 bits = 11000000.10101000.000000 = 192.168.0.0/22.
 
-**Theorem 1.3.** A set of $2^k$ contiguous routes with prefix length $n$ can always be aggregated to a single route with prefix length $n - k$, provided they share the same first $n - k$ bits.
+**Theorem 1.3.** A set of $2^k$ contiguous routes with prefix length $n$ can always be aggregated to a single route with prefix length $n - k$Provided they share the same first $n - k$ bits.
 
 <details>
 <summary>Worked Example: Route Aggregation and Subnetting</summary>
@@ -140,7 +140,7 @@ A company has been allocated the network 172.16.0.0/16. It needs to create subne
 
 Total addresses: $2^{16} = 65536$.
 
-Headquarters: 16000 hosts needs $\lceil \log_2(16002) \rceil = 15$ bits for hosts, so $/17$ ($32 - 15 = 17$). But 16000 < $2^{14} = 16384$, so $/18$ suffices (16382 usable hosts). Allocate 172.16.0.0/18.
+Headquarters: 16000 hosts needs $\lceil \log_2(16002) \rceil = 15$ bits for hosts, so $/17$ ($32 - 15 = 17$). But 16000 < $2^{14} = 16384$So $/18$ suffices (16382 usable hosts). Allocate 172.16.0.0/18.
 
 Data centres: 8000 hosts needs $\lceil \log_2(8002) \rceil = 14$ bits, so $/18$ suffices. Allocate 172.16.64.0/18 and 172.16.128.0/18.
 
@@ -185,9 +185,9 @@ TCP uses an **additive-increase multiplicative-decrease (AIMD)** algorithm for c
 
 $$\text{Throughput{} \approx \frac{1.22 \cdot \text{MSS{}}{\text{RTT{} \cdot \sqrt{p}}$$
 
-where $p$ is the packet loss rate.
+Where $p$ is the packet loss rate.
 
-*Proof (outline).* TCP oscillates between cwnd $= W/2$ and cwnd $= W$, where $W$ is the window size at which loss occurs. The area under the AIMD sawtooth is approximately $\frac{3}{8} W^2$ (the integral of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is $\frac{3}{8} W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately $1/(\frac{3}{8} W^2)$ (one loss per cycle). So $W \approx \sqrt{8/(3p)}$. The throughput is $\frac{3}{8} W^2 / (\frac{W}{2} \cdot \text{RTT{}) = \frac{3W}{4 \cdot \text{RTT{}} \approx \frac{1.22 \cdot \text{MSS{}}{\text{RTT{} \cdot \sqrt{p}}$. $\blacksquare$
+*Proof (outline).* TCP oscillates between cwnd $= W/2$ and cwnd $= W$Where $W$ is the window size at which loss occurs. The area under the AIMD sawtooth is approximately $\frac{3}{8} W^2$ (the integral of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is $\frac{3}{8} W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately $1/(\frac{3}{8} W^2)$ (one loss per cycle). So $W \approx \sqrt{8/(3p)}$. The throughput is $\frac{3}{8} W^2 / (\frac{W}{2} \cdot \text{RTT{}) = \frac{3W}{4 \cdot \text{RTT{}} \approx \frac{1.22 \cdot \text{MSS{}}{\text{RTT{} \cdot \sqrt{p}}$. $\blacksquare$
 
 ### 2.2 TCP Variants
 
@@ -203,7 +203,7 @@ where $p$ is the packet loss rate.
 
 $$\text{cwnd{}(t) = W_{\max} + \beta \cdot \left(\frac{t}{K}\right)^3 - (W_{\max} - \text{cwnd{}_{\text{low{}})$$
 
-where $W_{\max}$ is the window size at the last loss event, $K = \sqrt[3]{W_{\max} \cdot \beta / C}$, $\beta = 0.4$, and $C = 0.4$.
+Where $W_{\max}$ is the window size at the last loss event, $K = \sqrt[3]{W_{\max} \cdot \beta / C}$$\beta = 0.4$And $C = 0.4$.
 
 The cubic function grows slowly near $W_{\max}$ (probing) and rapidly far from it (quick recovery), making it suitable for high-BDP (bandwidth-delay product) networks.
 
@@ -258,7 +258,7 @@ BBR cycles through four phases:
 
 *Proof.* By Little's Law ($L = \lambda W$) and the properties of the geometric distribution of the number in system. The probability of $n$ in system is $(1 - \rho) \rho^n$. The expected value is $\sum_{n=0}^{\infty} n(1-\rho)\rho^n = \rho/(1-\rho)$. $\blacksquare$
 
-**Little's Law.** For any stable system: $L = \lambda W$, where $L$ is the long-term average number of customers in the system, $\lambda$ is the arrival rate, and $W$ is the average time a customer spends in the system.
+**Little's Law.** For any stable system: $L = \lambda W$Where $L$ is the long-term average number of customers in the system, $\lambda$ is the arrival rate, and $W$ is the average time a customer spends in the system.
 
 <details>
 <summary>Worked Example: Network Queueing Analysis</summary>
@@ -675,7 +675,7 @@ Extension headers are chained after the main header:
 
 $$S \approx \frac{P_s \cdot P_{tr} \cdot E[p]}{(1 - P_{tr})\sigma + P_{tr}P_s T_s + P_{tr}(1 - P_s)T_c}$$
 
-where $P_{tr}$ is the probability that at least one station transmits, $P_s$ is the probability of exactly one transmission, $T_s$ is the time for a successful transmission, $T_c$ is the time for a collision, $\sigma$ is the slot time, and $E[p]$ is the average payload size.
+Where $P_{tr}$ is the probability that at least one station transmits, $P_s$ is the probability of exactly one transmission, $T_s$ is the time for a successful transmission, $T_c$ is the time for a collision, $\sigma$ is the slot time, and $E[p]$ is the average payload size.
 
 ### 10.2 Wi-Fi Standards
 
@@ -930,9 +930,9 @@ SW3 is the root bridge (lowest priority).
 All non-root switches have a single direct link to SW3, so that link is the root port.
 
 **Step 3: Designated ports.**
-- SW1-SW2 link: SW1 has cost 19 to root, SW2 has cost 19. Tiebreak by BID: SW1 (01) < SW2 (02). SW1's port is designated, SW2's port is... wait, SW2's port on this link is not the root port (root port is SW2-SW3). So this is a blocked port on SW2.
+- SW1-SW2 link: SW1 has cost 19 to root, SW2 has cost 19. Tiebreak by BID: SW1 (01) < SW2 (02). SW1's port is designated, SW2's port is... Wait, SW2's port on this link is not the root port (root port is SW2-SW3). So this is a blocked port on SW2.
 
-Actually, all switches connect to SW3. SW1-SW2 and SW2-SW4 and SW1-SW4... let me reconsider the topology. The connections are:
+Actually, all switches connect to SW3. SW1-SW2 and SW2-SW4 and SW1-SW4... Let me reconsider the topology. The connections are:
 - SW1--SW2, SW1--SW3
 - SW2--SW3, SW2--SW4
 - SW3--SW4
@@ -997,7 +997,7 @@ Utilisation: $\rho = 10 / (4 \times 3) = 10/12 = 0.833$.
 
 Using the Erlang C formula:
 
-Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor{}$... this is complex to compute by hand. Let me use the simplified formula.
+Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor{}$... This is complex to compute by hand. Let me use the simplified formula.
 
 $a = \lambda / \mu = 10/3 = 3.333$.
 
@@ -1119,3 +1119,11 @@ If AS_PATH lengths were equal, then:
 
 If you get this wrong, revise: Section 1.2.
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

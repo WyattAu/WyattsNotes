@@ -22,14 +22,14 @@ Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
 
 The immune system can be divided into two broad categories based on specificity and memory:
 
-| Feature              | Innate (Non-Specific) Immunity                         | Adaptive (Specific) Immunity                              |
+| Feature | Innate (Non-Specific) Immunity | Adaptive (Specific) Immunity |
 | -------------------- | ------------------------------------------------------- | --------------------------------------------------------- |
-| Specificity          | Non-specific; responds to a range of pathogens          | Highly specific; targets particular antigens              |
-| Memory               | No immunological memory                                 | Memory cells enable faster secondary response             |
-| Speed of response    | Immediate (minutes to hours)                            | Slower initial response (days); faster on second exposure |
-| Cells involved       | Phagocytes, neutrophils, mast cells, NK cells           | T lymphocytes (T cells), B lymphocytes (B cells)          |
-| Molecules involved   | Complement proteins, interferons, antimicrobial peptides | Antibodies, cytokines, perforin, granzymes                |
-| Physical barriers    | Skin, mucous membranes, stomach acid, lysozyme          | Not applicable                                            |
+| Specificity | Non-specific; responds to a range of pathogens | Highly specific; targets particular antigens |
+| Memory | No immunological memory | Memory cells enable faster secondary response |
+| Speed of response | Immediate (minutes to hours) | Slower initial response (days); faster on second exposure |
+| Cells involved | Phagocytes, neutrophils, mast cells, NK cells | T lymphocytes (T cells), B lymphocytes (B cells) |
+| Molecules involved | Complement proteins, interferons, antimicrobial peptides | Antibodies, cytokines, perforin, granzymes |
+| Physical barriers | Skin, mucous membranes, stomach acid, lysozyme | Not applicable |
 
 The immune response proceeds in a coordinated sequence. **Innate immunity** provides the first line of defence, acting immediately to limit infection. **Adaptive immunity** is activated more slowly but provides targeted, long-lasting protection.
 
@@ -37,7 +37,7 @@ The immune response proceeds in a coordinated sequence. **Innate immunity** prov
 
 A **pathogen** is any organism that causes disease: bacteria, viruses, fungi, protoctista, and helminths (parasitic worms).
 
-An **antigen** is a molecule (usually a protein or glycoprotein) on the surface of a pathogen or on a transplanted cell that is recognised as foreign by the immune system, provoking an immune response. Each antigen has a specific **epitope** (the precise molecular region recognised by an antibody or T-cell receptor).
+An **antigen** is a molecule ( a protein or glycoprotein) on the surface of a pathogen or on a transplanted cell that is recognised as foreign by the immune system, provoking an immune response. Each antigen has a specific **epitope** (the precise molecular region recognised by an antibody or T-cell receptor).
 
 **Self-antigens** are molecules on the surface of an individual's own cells that are normally tolerated by the immune system. The ability to distinguish self from non-self is fundamental to immune function. Failure of this distinction leads to autoimmune diseases (see Section 6).
 
@@ -53,14 +53,14 @@ An **antigen** is a molecule (usually a protein or glycoprotein) on the surface 
 
 The first line of defence prevents pathogen entry entirely:
 
-| Barrier                  | Mechanism                                                                                     |
+| Barrier | Mechanism |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| Skin                     | Physical barrier; keratinised epidermis; sebum (antimicrobial lipids); low pH ($\approx 5.5$) |
-| Mucous membranes         | Trap pathogens; mucus contains lysozyme (breaks bacterial cell walls); cilia move mucus outwards |
-| Stomach acid              | $\mathrm{HCl}$ (pH $\approx 2$) denatures proteins and kills most ingested pathogens            |
-| Tears and saliva         | Contain lysozyme; flush pathogens from eyes and mouth                                          |
-| Commensal bacteria       | Compete with pathogens for nutrients and space; produce antimicrobial substances                |
-| Blood clotting           | Seals wounds, preventing pathogen entry into tissues                                            |
+| Skin | Physical barrier; keratinised epidermis; sebum (antimicrobial lipids); low pH ($\approx 5.5$) |
+| Mucous membranes | Trap pathogens; mucus contains lysozyme (breaks bacterial cell walls); cilia move mucus outwards |
+| Stomach acid | $\mathrm{HCl}$ (pH $\approx 2$) denatures proteins and kills most ingested pathogens |
+| Tears and saliva | Contain lysozyme; flush pathogens from eyes and mouth |
+| Commensal bacteria | Compete with pathogens for nutrients and space; produce antimicrobial substances |
+| Blood clotting | Seals wounds, preventing pathogen entry into tissues |
 
 ### 2.2 Phagocytosis
 
@@ -82,13 +82,13 @@ Phagocytosis is the engulfment and digestion of pathogens by specialised white b
 
 **Macrophages vs neutrophils:**
 
-| Feature         | Neutrophils                                | Macrophages                                           |
+| Feature | Neutrophils | Macrophages |
 | --------------- | ------------------------------------------ | ----------------------------------------------------- |
-| Lifespan        | Short (hours to days)                      | Long (months)                                         |
-| Location        | Circulate in blood; migrate to infection   | Reside in tissues (liver, spleen, lymph nodes, lungs) |
-| Antigen presentation | Limited                                | Yes -- display antigens on MHC molecules              |
-| Number in blood | Most abundant white blood cell ($60$--$70\%$) | Less abundant ($2$--$8\%$)                           |
-| Response        | First to arrive at infection site          | Arrive later; sustain long-term response              |
+| Lifespan | Short (hours to days) | Long (months) |
+| Location | Circulate in blood; migrate to infection | Reside in tissues (liver, spleen, lymph nodes, lungs) |
+| Antigen presentation | Limited | Yes -- display antigens on MHC molecules |
+| Number in blood | Most abundant white blood cell ($60$--$70\%$) | Less abundant ($2$--$8\%$) |
+| Response | First to arrive at infection site | Arrive later; sustain long-term response |
 
 ### 2.3 Inflammation
 
@@ -118,7 +118,7 @@ The complement system is a collection of approximately 20 plasma proteins that e
 
 When activated (by antigen-antibody complexes or by pathogen surfaces), complement proteins act in a cascade:
 
-1. **Opsonisation**: complement protein $\mathrm{C3b}$ binds to the pathogen surface, making it more easily recognised and engulfed by phagocytes (acts as an opsonin).
+1. **Opsonisation**: complement protein $\mathrm{C3b}$ binds to the pathogen surface, making it more recognised and engulfed by phagocytes (acts as an opsonin).
 
 2. **Chemotaxis**: $\mathrm{C3a}$ and $\mathrm{C5a}$ attract phagocytes to the site of infection.
 
@@ -153,9 +153,9 @@ When a T helper cell binds to its specific antigen on an APC:
 
 1. The T helper cell is activated and undergoes **clonal expansion**: it divides repeatedly by mitosis to produce a large clone of identical T helper cells, all specific to the same antigen.
 2. The activated T helper cells release **cytokines** that:
-   - Stimulate **B cells** to divide and differentiate (linking to the humoral response).
-   - Stimulate **phagocytes** to increase phagocytic activity.
-   - Activate **T killer cells**.
+ - Stimulate **B cells** to divide and differentiate (linking to the humoral response).
+ - Stimulate **phagocytes** to increase phagocytic activity.
+ - Activate **T killer cells**.
 
 ### 3.4 T Killer Cells and Apoptosis
 
@@ -209,13 +209,13 @@ Each antibody has:
 
 ### 4.5 Classes of Antibodies
 
-| Class | Structure         | Location                      | Function                                                                 |
+| Class | Structure | Location | Function |
 | ----- | ----------------- | ----------------------------- | ------------------------------------------------------------------------ |
-| IgG   | Monomer           | Blood, lymph, tissue fluid    | Most abundant; crosses placenta; opsonisation; neutralisation             |
-| IgA   | Monomer or dimer  | Secretions (saliva, tears, breast milk, mucus) | Protects mucosal surfaces; dimer form in secretions |
-| IgM   | Pentamer          | Blood                         | First antibody produced in primary response; effective agglutination     |
-| IgE   | Monomer           | Bound to mast cells           | Triggers allergic responses (histamine release); defence against parasites |
-| IgD   | Monomer           | B cell surface                | Acts as B cell receptor; role not fully understood                       |
+| IgG | Monomer | Blood, lymph, tissue fluid | Most abundant; crosses placenta; opsonisation; neutralisation |
+| IgA | Monomer or dimer | Secretions (saliva, tears, breast milk, mucus) | Protects mucosal surfaces; dimer form in secretions |
+| IgM | Pentamer | Blood | First antibody produced in primary response; effective agglutination |
+| IgE | Monomer | Bound to mast cells | Triggers allergic responses (histamine release); defence against parasites |
+| IgD | Monomer | B cell surface | Acts as B cell receptor; role not fully understood |
 
 ### 4.6 Mechanisms of Antibody Action
 
@@ -238,9 +238,9 @@ Antibodies do not kill pathogens directly. They act by several mechanisms:
 The primary response occurs on first exposure to a specific antigen:
 
 - **Latent period**: there is a delay of approximately 5--10 days before a significant antibody concentration is detectable. This is because:
-  - The naive B cell specific to the antigen must be located and activated.
-  - Clonal expansion takes time.
-  - Plasma cell differentiation and antibody production must occur.
+ - The naive B cell specific to the antigen must be located and activated.
+ - Clonal expansion takes time.
+ - Plasma cell differentiation and antibody production must occur.
 - **Antibody concentration**: rises slowly, reaches a relatively low peak, then declines as plasma cells die.
 - **IgM** is the predominant antibody class initially.
 - Some B cells differentiate into **memory B cells** and some T cells into **memory T cells**, providing long-term immunity.
@@ -254,14 +254,14 @@ The secondary (anamnestic) response occurs on subsequent exposure to the same an
 - **IgG** is the predominant antibody class.
 - The secondary response is the basis of immunological memory and vaccination.
 
-| Feature                | Primary Response              | Secondary Response                |
+| Feature | Primary Response | Secondary Response |
 | ---------------------- | ----------------------------- | --------------------------------- |
-| Latent period          | 5--10 days                    | 1--3 days                         |
-| Peak antibody level    | Relatively low                | Much higher (10--100 times)       |
-| Antibody class         | IgM predominates initially     | IgG predominates                  |
-| Antibody persistence   | Declines within weeks         | Persists for months to years      |
-| Memory cells produced  | Yes                           | Yes (additional)                  |
-| Cell type involved     | Naive B cells                 | Memory B cells                    |
+| Latent period | 5--10 days | 1--3 days |
+| Peak antibody level | Relatively low | Much higher (10--100 times) |
+| Antibody class | IgM predominates initially | IgG predominates |
+| Antibody persistence | Declines within weeks | Persists for months to years |
+| Memory cells produced | Yes | Yes (additional) |
+| Cell type involved | Naive B cells | Memory B cells |
 
 :::warning
 Common Pitfall Students often state that "antibodies kill pathogens." Antibodies do not kill pathogens directly. They mark pathogens for destruction by other mechanisms (phagocytosis, complement lysis, neutralisation of toxins). The antibody itself is a signalling molecule that tags the pathogen and triggers other components of the immune system.
@@ -282,13 +282,13 @@ Autoimmune diseases occur when the immune system fails to distinguish self from 
 
 ### 6.2 Examples of Autoimmune Diseases
 
-| Disease                       | Target Tissue                 | Mechanism and Effects                                                               |
+| Disease | Target Tissue | Mechanism and Effects |
 | ----------------------------- | ----------------------------- | ---------------------------------------------------------------------------------- |
-| Type 1 diabetes mellitus      | Pancreatic beta cells (islets of Langerhans) | T killer cells destroy insulin-producing beta cells; insulin deficiency causes elevated blood glucose |
-| Rheumatoid arthritis          | Synovial membranes of joints  | Antibodies attack joint linings; inflammation, pain, and joint destruction           |
-| Multiple sclerosis (MS)       | Myelin sheath of nerve fibres| T cells attack myelin; loss of myelin disrupts nerve impulse transmission           |
-| Systemic lupus erythematosus (SLE) | Multiple tissues (skin, kidneys, joints) | Antibodies against nuclear antigens; widespread tissue damage   |
-| Myasthenia gravis             | Acetylcholine receptors at neuromuscular junctions | Antibodies block ACh receptors; muscle weakness and fatigue  |
+| Type 1 diabetes mellitus | Pancreatic beta cells (islets of Langerhans) | T killer cells destroy insulin-producing beta cells; insulin deficiency causes elevated blood glucose |
+| Rheumatoid arthritis | Synovial membranes of joints | Antibodies attack joint linings; inflammation, pain, and joint destruction |
+| Multiple sclerosis (MS) | Myelin sheath of nerve fibres| T cells attack myelin; loss of myelin disrupts nerve impulse transmission |
+| Systemic lupus erythematosus (SLE) | Multiple tissues (skin, kidneys, joints) | Antibodies against nuclear antigens; widespread tissue damage |
+| Myasthenia gravis | Acetylcholine receptors at neuromuscular junctions | Antibodies block ACh receptors; muscle weakness and fatigue |
 
 For the management of Type 1 diabetes, see [Homeostasis](/docs/alevel/biology/homeostasis).
 
@@ -300,14 +300,14 @@ Vaccination is the deliberate introduction of antigenic material into the body t
 
 **Types of vaccine:**
 
-| Type                    | Description                                                                                    | Examples                                       |
+| Type | Description | Examples |
 | ----------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| Live attenuated         | Weakened (attenuated) form of the pathogen; replicates slowly but does not cause disease       | MMR (measles, mumps, rubella); oral polio      |
-| Inactivated (killed)    | Pathogen killed by heat or chemicals; cannot replicate                                         | Influenza (some formulations); cholera         |
-| Subunit (recombinant)   | Purified antigens from the pathogen; often produced by recombinant DNA technology               | Hepatitis B; HPV (human papillomavirus)        |
-| Toxoid                  | Inactivated toxin that retains antigenicity                                                    | Tetanus; diphtheria                            |
-| mRNA                    | mRNA encoding a pathogen antigen; host cells translate the mRNA and display the antigen         | COVID-19 (Pfizer-BioNTech, Moderna)            |
-| Viral vector            | Harmless virus engineered to carry genes encoding pathogen antigens                             | COVID-19 (Oxford-AstraZeneca); Ebola           |
+| Live attenuated | Weakened (attenuated) form of the pathogen; replicates slowly but does not cause disease | MMR (measles, mumps, rubella); oral polio |
+| Inactivated (killed) | Pathogen killed by heat or chemicals; cannot replicate | Influenza (some formulations); cholera |
+| Subunit (recombinant) | Purified antigens from the pathogen; often produced by recombinant DNA technology | Hepatitis B; HPV (human papillomavirus) |
+| Toxoid | Inactivated toxin that retains antigenicity | Tetanus; diphtheria |
+| mRNA | mRNA encoding a pathogen antigen; host cells translate the mRNA and display the antigen | COVID-19 (Pfizer-BioNTech, Moderna) |
+| Viral vector | Harmless virus engineered to carry genes encoding pathogen antigens | COVID-19 (Oxford-AstraZeneca); Ebola |
 
 ### 7.2 Herd Immunity
 
@@ -352,7 +352,7 @@ ELISA is a quantitative biochemical assay that uses antibodies linked to an enzy
 3. A **secondary antibody** (linked to an enzyme such as horseradish peroxidase) is added and binds to the primary antibody.
 4. A **substrate** is added. The enzyme converts the substrate into a coloured product.
 5. The absorbance (colour intensity) is measured with a colorimeter/plate reader.
-6. A standard curve (absorbance vs. known antigen concentration) is used to determine the concentration of antigen in the unknown sample.
+6. A standard curve (absorbance vs. Known antigen concentration) is used to determine the concentration of antigen in the unknown sample.
 
 ### 8.3 Indirect ELISA (Detecting Antibodies)
 
@@ -368,9 +368,9 @@ Used, for example, in HIV testing:
 
 A standard curve is prepared using known concentrations of antigen, and the absorbance of each is measured:
 
-| Antigen concentration ($\mathrm{ng\ cm^{-3}}$) | 0   | 5   | 10  | 20  | 40  | 80  |
+| Antigen concentration ($\mathrm{ng\ cm^{-3}}$) | 0 | 5 | 10 | 20 | 40 | 80 |
 | ----------------------------------------------- | --- | --- | --- | --- | --- | --- |
-| Absorbance (at 450 nm)                           | 0.05| 0.12| 0.23| 0.42| 0.78| 1.45|
+| Absorbance (at 450 nm) | 0.05| 0.12| 0.23| 0.42| 0.78| 1.45|
 
 An unknown patient sample gives an absorbance of 0.55. Determine the antigen concentration.
 
@@ -394,25 +394,25 @@ Monoclonal antibodies are identical antibodies produced by a single clone of B c
 2. B cells are extracted from the mouse's spleen.
 3. These B cells are fused with **myeloma cells** (cancerous B cells that divide indefinitely) using polyethylene glycol (PEG) or electrofusion.
 4. The resulting **hybridomas** combine the antibody-producing ability of B cells with the immortality of myeloma cells.
-5. Hybridomas are cultured in **HAT medium** (containing hypoxanthine, aminopterin, and thymidine). Unfused myeloma cells die (they lack HGPRT, an enzyme needed to use hypoxanthine); unfused B cells die naturally (they have a limited lifespan).
+5. Hybridomas are cultured in **HAT medium** (containing hypoxanthine, aminopterin, and thymidine). Unfused myeloma cells die (they lack HGPRT, an enzyme needed to use hypoxanthine); unfused B cells die (they have a limited lifespan).
 6. Individual hybridoma cells are separated (by limiting dilution) and cultured in separate wells.
 7. Each clone is tested for antibody production against the target antigen.
 8. The clone producing the desired antibody is expanded in culture or in mice (ascites fluid).
 
 ### 9.2 Applications of Monoclonal Antibodies
 
-| Application                   | Mechanism                                                                                                  |
+| Application | Mechanism |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Pregnancy testing             | Monoclonal antibodies bind to hCG (human chorionic gonadotropin) in urine; a colour change indicates pregnancy |
-| Cancer treatment              | Monoclonal antibodies (e.g., trastuzumab/Herceptin) bind to receptors on cancer cells, blocking growth signals and marking them for immune destruction |
-| Diagnosis of disease          | ELISA and lateral flow tests use monoclonal antibodies to detect specific disease antigens or antibodies      |
-| Drug delivery                 | Monoclonal antibodies can be conjugated to drugs or radioactive isotopes and targeted to specific cells (e.g., cancer cells), minimising side effects |
-| Transplant rejection          | Monoclonal antibodies (e.g., OKT3) suppress the immune response against transplanted organs by binding to T cells |
-| Purification of substances    | Monoclonal antibodies attached to a column can purify specific proteins from a mixture (affinity chromatography) |
+| Pregnancy testing | Monoclonal antibodies bind to hCG (human chorionic gonadotropin) in urine; a colour change indicates pregnancy |
+| Cancer treatment | Monoclonal antibodies (e.g., trastuzumab/Herceptin) bind to receptors on cancer cells, blocking growth signals and marking them for immune destruction |
+| Diagnosis of disease | ELISA and lateral flow tests use monoclonal antibodies to detect specific disease antigens or antibodies |
+| Drug delivery | Monoclonal antibodies can be conjugated to drugs or radioactive isotopes and targeted to specific cells (e.g., cancer cells), minimising side effects |
+| Transplant rejection | Monoclonal antibodies (e.g., OKT3) suppress the immune response against transplanted organs by binding to T cells |
+| Purification of substances | Monoclonal antibodies attached to a column can purify specific proteins from a mixture (affinity chromatography) |
 
 ### 9.3 Ethical Issues of Monoclonal Antibody Production
 
-- **Use of animals**: the hybridoma method requires mice for immunisation, spleen cell extraction, and (in some cases) antibody production in ascites fluid. This raises animal welfare concerns.
+- **Use of animals**: the hybridoma method requires mice for immunisation, spleen cell extraction, and () antibody production in ascites fluid. This raises animal welfare concerns.
 - **Humanised antibodies**: early monoclonal antibodies were entirely mouse-derived, causing human anti-mouse antibody (HAMA) responses when used clinically. Modern techniques produce **humanised** or fully **human** monoclonal antibodies by genetic engineering, reducing this problem.
 - **Cost**: monoclonal antibody therapies are extremely expensive to develop and manufacture, raising questions about access and equity in healthcare.
 - **Side effects**: monoclonal antibodies can cause immune reactions, infusion reactions, and off-target effects.
@@ -492,7 +492,7 @@ A patient is tested for HIV antibodies using an indirect ELISA. Explain why this
 
 <details>
 <summary>Problem 4</summary>
-Explain how monoclonal antibodies are produced using the hybridoma technique. Why is this method necessary instead of simply culturing B cells? (5 marks)
+Explain how monoclonal antibodies are produced using the hybridoma technique. Why is this method necessary instead of culturing B cells? (5 marks)
 
 **Answer.** B cells cannot be cultured indefinitely because they have a limited lifespan and undergo apoptosis after a few divisions. The hybridoma technique overcomes this by fusing B cells with myeloma cells (cancerous B cells that divide indefinitely). Steps: (1) A mouse is injected with the target antigen to stimulate antibody production. (2) B cells are extracted from the spleen. (3) B cells are fused with myeloma cells using polyethylene glycol. (4) The mixture is cultured in HAT medium, which allows only hybridomas (B cells + myeloma cells) to survive: unfused myeloma cells die because they lack HGPRT (needed to use hypoxanthine), and unfused B cells die because they have a limited lifespan. (5) Individual hybridoma clones are separated by limiting dilution and tested for antibody production. (6) The clone producing the desired antibody is expanded. This produces an unlimited supply of identical (monoclonal) antibodies specific to a single epitope.
 
@@ -518,13 +518,13 @@ Measles has a basic reproduction number ($R_0$) of approximately 15. (a) Calcula
 
 ### 12.1 Types of Acquired Immunity
 
-| Feature              | Active Immunity                                       | Passive Immunity                                         |
+| Feature | Active Immunity | Passive Immunity |
 | -------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
-| Source               | Own immune system produces antibodies and memory cells  | Pre-made antibodies received from another individual    |
-| Speed of response    | Slow (requires activation and clonal expansion)        | Immediate (antibodies already present)                 |
-| Duration             | Long-term (memory cells persist for years)             | Short-term (antibodies degraded within weeks/months)   |
-| Memory               | Yes                                                  | No                                                      |
-| Examples             | Natural infection, vaccination                        | Maternal antibodies crossing placenta; antivenom/antisera injections |
+| Source | Own immune system produces antibodies and memory cells | Pre-made antibodies received from another individual |
+| Speed of response | Slow (requires activation and clonal expansion) | Immediate (antibodies already present) |
+| Duration | Long-term (memory cells persist for years) | Short-term (antibodies degraded within weeks/months) |
+| Memory | Yes | No |
+| Examples | Natural infection, vaccination | Maternal antibodies crossing placenta; antivenom/antisera injections |
 
 **Natural active immunity**: acquired through infection with a pathogen. The immune system mounts a primary response, followed by immunological memory.
 
@@ -536,16 +536,16 @@ Measles has a basic reproduction number ($R_0$) of approximately 15. (a) Calcula
 
 ### 12.2 Comparison of Natural and Artificial Immunity
 
-| Type                     | Natural                             | Artificial                          |
+| Type | Natural | Artificial |
 | ------------------------ | ----------------------------------- | ---------------------------------- |
-| Active immunity          | Infection                           | Vaccination                        |
-| Passive immunity         | Maternal antibodies (placenta, milk) | Antiserum/antivenom injection      |
+| Active immunity | Infection | Vaccination |
+| Passive immunity | Maternal antibodies (placenta, milk) | Antiserum/antivenom injection |
 
 ## 13. Types of Vaccine and Their Mechanisms
 
 ### 13.1 Live Attenuated Vaccines
 
-Live attenuated vaccines contain a weakened (attenuated) form of the pathogen that can replicate within the host but does not cause disease. Because the pathogen replicates, it presents a wide range of antigens to the immune system over an extended period, stimulating both humoral and cell-mediated immunity. This typically produces strong, long-lasting immunity with one or two doses.
+Live attenuated vaccines contain a weakened (attenuated) form of the pathogen that can replicate within the host but does not cause disease. Because the pathogen replicates, it presents a wide range of antigens to the immune system over an extended period, stimulating both humoral and cell-mediated immunity. This produces strong, long-lasting immunity with one or two doses.
 
 **Examples:** MMR (measles, mumps, rubella), oral polio vaccine (Sabin), varicella (chickenpox), yellow fever.
 
@@ -555,17 +555,17 @@ Live attenuated vaccines contain a weakened (attenuated) form of the pathogen th
 
 ### 13.2 Inactivated Vaccines
 
-Inactivated vaccines contain pathogens that have been killed by heat or chemical treatment (e.g., formaldehyde). They cannot replicate, so they present a limited range of antigens and typically require adjuvants (substances that enhance the immune response) and booster doses to achieve durable immunity.
+Inactivated vaccines contain pathogens that have been killed by heat or chemical treatment (e.g., formaldehyde). They cannot replicate, so they present a limited range of antigens and require adjuvants (substances that enhance the immune response) and booster doses to achieve durable immunity.
 
 **Examples:** influenza (some formulations), cholera, hepatitis A, rabies, polio (Salk, injected).
 
 **Advantages:** safer than live vaccines; no risk of reversion; can be given to immunocompromised individuals.
 
-**Disadvantages:** weaker immune response; typically requires multiple doses and boosters; does not induce cell-mediated immunity as effectively as live vaccines.
+**Disadvantages:** weaker immune response; requires multiple doses and boosters; does not induce cell-mediated immunity as effectively as live vaccines.
 
 ### 13.3 Subunit and Recombinant Vaccines
 
-Subunit vaccines contain purified antigens from the pathogen rather than the whole pathogen. Recombinant subunit vaccines are produced by genetically engineering organisms (usually yeast or mammalian cells) to express specific pathogen proteins.
+Subunit vaccines contain purified antigens from the pathogen rather than the whole pathogen. Recombinant subunit vaccines are produced by genetically engineering organisms ( yeast or mammalian cells) to express specific pathogen proteins.
 
 **Examples:** hepatitis B (produced in yeast), HPV (human papillomavirus, produced in yeast), acellular pertussis (whooping cough), meningococcal group C.
 
@@ -581,7 +581,7 @@ Toxoid vaccines contain inactivated bacterial toxins (toxoids) that retain their
 
 ### 13.5 mRNA Vaccines
 
-mRNA vaccines contain messenger RNA encoding a pathogen antigen (e.g., the spike protein of SARS-CoV-2). The mRNA is encapsulated in lipid nanoparticles (LNPs) that fuse with host cell membranes, delivering the mRNA into the cytoplasm. The host cell's ribosomes translate the mRNA into the antigen protein, which is displayed on the cell surface and recognised by the immune system.
+MRNA vaccines contain messenger RNA encoding a pathogen antigen (e.g., the spike protein of SARS-CoV-2). The mRNA is encapsulated in lipid nanoparticles (LNPs) that fuse with host cell membranes, delivering the mRNA into the cytoplasm. The host cell's ribosomes translate the mRNA into the antigen protein, which is displayed on the cell surface and recognised by the immune system.
 
 **Examples:** Pfizer-BioNTech (Comirnaty), Moderna (Spikevax) -- both for COVID-19.
 
@@ -591,7 +591,7 @@ mRNA vaccines contain messenger RNA encoding a pathogen antigen (e.g., the spike
 
 ### 13.6 Viral Vector Vaccines
 
-Viral vector vaccines use a harmless, modified virus (typically an adenovirus) that carries the gene for a pathogen antigen. The vector enters host cells and delivers the gene, which is transcribed and translated, producing the antigen protein.
+Viral vector vaccines use a harmless, modified virus ( an adenovirus) that carries the gene for a pathogen antigen. The vector enters host cells and delivers the gene, which is transcribed and translated, producing the antigen protein.
 
 **Examples:** Oxford-AstraZeneca (ChAdOx1 nCoV-19), Johnson & Johnson (Ad26.COV2.S) -- both for COVID-19; Ebola vaccine (rVSV-ZEBOV).
 
@@ -605,10 +605,10 @@ Viral vector vaccines use a harmless, modified virus (typically an adenovirus) t
 
 **Primary lymphoid organs** are where lymphocytes mature and become functional:
 
-| Organ            | Lymphocyte Type    | Function                                      |
+| Organ | Lymphocyte Type | Function |
 | ---------------- | ------------------ | --------------------------------------------- |
-| Bone marrow       | B cells, T cells (produced) | B cell maturation; production of all blood cells (haematopoiesis) |
-| Thymus           | T cells            | T cell maturation; positive and negative selection |
+| Bone marrow | B cells, T cells (produced) | B cell maturation; production of all blood cells (haematopoiesis) |
+| Thymus | T cells | T cell maturation; positive and negative selection |
 
 In the thymus, developing T cells undergo:
 - **Positive selection**: T cells whose TCRs can recognise self-MHC molecules survive. T cells that cannot bind to self-MHC die by apoptosis.
@@ -616,12 +616,12 @@ In the thymus, developing T cells undergo:
 
 **Secondary lymphoid organs** are where lymphocytes encounter antigens and are activated:
 
-| Organ                    | Function                                                    |
+| Organ | Function |
 | ------------------------ | ----------------------------------------------------------- |
-| Lymph nodes              | Filter lymph; site of antigen presentation and B/T cell activation |
-| Spleen                   | Filters blood; removes old/damaged red blood cells; immune response to blood-borne antigens |
+| Lymph nodes | Filter lymph; site of antigen presentation and B/T cell activation |
+| Spleen | Filters blood; removes old/damaged red blood cells; immune response to blood-borne antigens |
 | Mucosa-associated lymphoid tissue (MALT) | Immune defence at mucosal surfaces (gut, respiratory tract, urogenital tract); includes Peyer's patches in the ileum |
-| Tonsils                 | Immune defence at the entrance to the respiratory and digestive tracts |
+| Tonsils | Immune defence at the entrance to the respiratory and digestive tracts |
 
 ### 14.2 Lymphocyte Circulation
 
@@ -640,7 +640,7 @@ When a lymphocyte encounters its specific antigen, it is retained in the lymph n
 
 The antibody molecule has several structural domains:
 
-- **Variable domain ($V_H$, $V_L$)**: at the N-terminus of each chain; contains the antigen-binding site (complementarity-determining regions, CDRs). The amino acid sequence varies between antibodies, determining specificity.
+- **Variable domain ($V_H$$V_L$)**: at the N-terminus of each chain; contains the antigen-binding site (complementarity-determining regions, CDRs). The amino acid sequence varies between antibodies, determining specificity.
 - **Constant domain ($C_H$1--3, $C_L$)**: at the C-terminus; the amino acid sequence is the same within each antibody class. Determines the effector functions.
 - **Hinge region**: between $C_H$1 and $C_H$2; provides flexibility, allowing both arms to bind to antigens at varying distances.
 
@@ -654,13 +654,13 @@ The human immune system can produce approximately $10^{11}$ different antibody s
 
 ### 15.3 The Five Antibody Classes: Functional Comparison
 
-| Class | Heavy Chain | Structure      | Key Properties                                          |
+| Class | Heavy Chain | Structure | Key Properties |
 | ----- | ---------- | ------------- | ------------------------------------------------------ |
-| IgG   | $\gamma$    | Monomer       | Most abundant in serum; crosses placenta; opsonises; activates complement |
-| IgA   | $\alpha$    | Mono/dimer    | In secretions (saliva, milk, mucus); protects mucosal surfaces    |
-| IgM   | $\mu$       | Pentamer      | First antibody in primary response; efficient agglutination     |
-| IgE   | $\epsilon$  | Monomer       | Binds to mast cells; triggers histamine release; anti-parasitic |
-| IgD   | $\delta$    | Monomer       | B cell surface receptor; function not fully understood          |
+| IgG | $\gamma$ | Monomer | Most abundant in serum; crosses placenta; opsonises; activates complement |
+| IgA | $\alpha$ | Mono/dimer | In secretions (saliva, milk, mucus); protects mucosal surfaces |
+| IgM | $\mu$ | Pentamer | First antibody in primary response; efficient agglutination |
+| IgE | $\epsilon$ | Monomer | Binds to mast cells; triggers histamine release; anti-parasitic |
+| IgD | $\delta$ | Monomer | B cell surface receptor; function not fully understood |
 
 ### 15.4 Antibody-Antigen Binding
 
@@ -714,12 +714,12 @@ Hypersensitivity is an exaggerated immune response to a normally harmless antige
 
 ### 17.1 Types of Transplant
 
-| Type                        | Donor-Recipient Relationship  | Rejection Risk | Example                          |
+| Type | Donor-Recipient Relationship | Rejection Risk | Example |
 | --------------------------- | ---------------------------- | -------------- | -------------------------------- |
-| Autograft                  | Self                         | None          | Skin graft from thigh to face     |
-| Isograft                   | Identical twin                | Very low      | Skin graft between identical twins |
-| Allograft                  | Same species, unrelated      | Moderate      | Kidney transplant, heart transplant |
-| Xenograft                  | Different species             | Very high      | Pig heart valve in humans        |
+| Autograft | Self | None | Skin graft from thigh to face |
+| Isograft | Identical twin | Very low | Skin graft between identical twins |
+| Allograft | Same species, unrelated | Moderate | Kidney transplant, heart transplant |
+| Xenograft | Different species | Very high | Pig heart valve in humans |
 
 ### 17.2 Rejection Mechanisms
 
@@ -741,18 +741,18 @@ Transplant rejection occurs when the recipient's immune system recognises the do
 
 Pathogens have evolved numerous strategies to evade the immune system:
 
-| Strategy                   | Mechanism                                                                 | Example                                           |
+| Strategy | Mechanism | Example |
 | -------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------- |
-| Antigenic variation        | Pathogen alters its surface antigens, evading pre-existing antibodies   | Influenza virus (antigenic drift and shift)       |
-| Antigenic mimicry         | Pathogen surface antigens resemble host molecules, reducing immune detection | _Streptococcus pyogenes_ (M protein resembles host proteins) |
-| Capsule formation          | Polysaccharide capsule prevents phagocytosis                             | _Streptococcus pneumoniae_, _Neisseria meningitidis_ |
-| Intracellular survival    | Pathogen lives inside host cells, hidden from antibodies                | _Mycobacterium tuberculosis_, viruses              |
-| Immunosuppression         | Pathogen produces proteins that suppress the immune response            | HIV (destroys T helper cells); EBV (inactivates CTLs) |
-| Biofilm formation          | Bacteria in biofilms are resistant to phagocytosis and antibiotics          | _Pseudomonas aeruginosa_ in cystic fibrosis patients |
+| Antigenic variation | Pathogen alters its surface antigens, evading pre-existing antibodies | Influenza virus (antigenic drift and shift) |
+| Antigenic mimicry | Pathogen surface antigens resemble host molecules, reducing immune detection | _Streptococcus pyogenes_ (M protein resembles host proteins) |
+| Capsule formation | Polysaccharide capsule prevents phagocytosis | _Streptococcus pneumoniae_, _Neisseria meningitidis_ |
+| Intracellular survival | Pathogen lives inside host cells, hidden from antibodies | _Mycobacterium tuberculosis_, viruses |
+| Immunosuppression | Pathogen produces proteins that suppress the immune response | HIV (destroys T helper cells); EBV (inactivates CTLs) |
+| Biofilm formation | Bacteria in biofilms are resistant to phagocytosis and antibiotics | _Pseudomonas aeruginosa_ in cystic fibrosis patients |
 
 ### 18.2 Antigenic Drift and Shift in Influenza
 
-**Antigenic drift**: gradual, minor changes in the viral surface proteins (haemagglutinin and neuraminidase) due to the accumulation of point mutations. This is why seasonal flu vaccines are updated annually. The immune system partially recognises the new strain, so disease is usually milder than for a completely novel strain.
+**Antigenic drift**: gradual, minor changes in the viral surface proteins (haemagglutinin and neuraminidase) due to the accumulation of point mutations. This is why seasonal flu vaccines are updated annually. The immune system partially recognises the new strain, so disease is milder than for a completely novel strain.
 
 **Antigenic shift**: a major, sudden change in the viral surface proteins caused by the reassortment of genome segments when two different influenza virus strains infect the same cell (e.g., human and avian influenza strains exchanging RNA segments). This produces a novel virus to which the human population has no pre-existing immunity. Antigenic shift can cause pandemics (e.g., H1N1 "swine flu" in 2009).
 
@@ -889,9 +889,9 @@ Type I hypersensitivity involves IgE antibodies and mast cells:
 1. **Sensitisation**: on first exposure to the allergen (e.g., pollen, peanut protein, house dust mite faeces), B cells produce IgE specific to the allergen. IgE binds to Fc receptors on the surface of **mast cells** (in connective tissue) and **basophils** (in blood).
 2. **Re-exposure**: the allergen cross-links IgE molecules on the mast cell surface, triggering degranulation.
 3. **Degranulation**: mast cells release:
-   - **Histamine**: causes vasodilation (redness, swelling), increased capillary permeability (oedema), bronchoconstriction, mucus secretion.
-   - **Heparin**: anticoagulant.
-   - **Proteases**: tissue damage.
+ - **Histamine**: causes vasodilation (redness, swelling), increased capillary permeability (oedema), bronchoconstriction, mucus secretion.
+ - **Heparin**: anticoagulant.
+ - **Proteases**: tissue damage.
 4. **Symptoms**: range from mild (hay fever: sneezing, itchy eyes, runny nose) to severe (anaphylaxis: life-threatening swelling of the airway, drop in blood pressure, cardiovascular collapse).
 
 ### 22.2 Anaphylaxis Treatment
@@ -1006,7 +1006,7 @@ The spleen is the largest lymphoid organ. It filters blood (not lymph) and:
 - Stores platelets (approximately one-third of the body's platelets).
 - Acts as a blood reservoir (can release stored blood during haemorrhage).
 
-People without a spleen (splenectomy, e.g., after trauma) are at increased risk of infections from encapsulated bacteria (_Streptococcus pneumoniae_, _Neisseria meningitidis_, _Haemophilus influenzae_) and are usually vaccinated against these and given prophylactic antibiotics.
+People without a spleen (splenectomy, e.g., after trauma) are at increased risk of infections from encapsulated bacteria (_Streptococcus pneumoniae_, _Neisseria meningitidis_, _Haemophilus influenzae_) and are vaccinated against these and given prophylactic antibiotics.
 
 ### 24.3 The Thymus
 
@@ -1037,7 +1037,7 @@ Only approximately 2--5% of thymocytes survive both selection processes and are 
 A **cytokine storm** (cytokine release syndrome) occurs when the immune system produces excessive amounts of pro-inflammatory cytokines, causing widespread inflammation and tissue damage. This can occur in severe viral infections (e.g., COVID-19, Spanish flu, SARS), sepsis, and as a side effect of some immunotherapies (CAR-T cell therapy).
 
 Consequences:
-- Massive release of TNF-$\alpha$, IL-1, IL-6, and interferons.
+- Massive release of TNF-$\alpha$IL-1, IL-6, and interferons.
 - Systemic inflammation: fever, widespread capillary leakage (causing oedema and hypotension), multi-organ failure.
 - Treatment: anti-cytokine therapies (e.g., tocilizumab, an IL-6 receptor antagonist; anakinra, an IL-1 receptor antagonist).
 
@@ -1059,7 +1059,7 @@ Consequences:
 | Vaccine Type | Description | Examples | Advantages | Disadvantages |
 | ------------ | ----------- | -------- | ---------- | ------------- |
 | Live attenuated | Weakened but live pathogen | MMR, chickenpox, BCG | Strong immune response; often single dose; cell-mediated and humoral immunity | Risk of reversion to virulence (rare); not suitable for immunocompromised |
-| Inactivated (killed) | Dead pathogen | Influenza (injected), cholera, hepatitis A | Cannot cause disease; safer for immunocompromised | Weaker immune response; requires adjuvant; usually requires boosters |
+| Inactivated (killed) | Dead pathogen | Influenza (injected), cholera, hepatitis A | Cannot cause disease; safer for immunocompromised | Weaker immune response; requires adjuvant; requires boosters |
 | Subunit (protein) | Purified antigens from pathogen | Hepatitis B, HPV, acellular pertussis | Very safe; well-defined composition | May not elicit strong cellular immunity; requires adjuvant |
 | Toxoid | Inactivated toxin | Tetanus, diphtheria | Safe; effective against toxin-mediated diseases | Does not prevent infection, only toxin effects |
 | Conjugate | Polysaccharide antigen linked to a carrier protein | MenC, MenACWY, pneumococcal (PCV) | Effective in infants (T-dependent response) | More expensive to produce |
@@ -1232,7 +1232,7 @@ HIV (human immunodeficiency virus) is a retrovirus:
 | Stage | CD4 Count | Viral Load | Symptoms |
 | ----- | --------- | ---------- | -------- |
 | Acute infection (2--4 weeks) | Normal to decreased | Very high | Flu-like illness (fever, rash, sore throat, swollen lymph nodes) |
-| Clinical latency (2--10 years) | Gradually declining (350--500 cells/$\mathrm{mm^3}$) | Stable (set point) | Usually asymptomatic; gradual immune deterioration |
+| Clinical latency (2--10 years) | Gradually declining (350--500 cells/$\mathrm{mm^3}$) | Stable (set point) | asymptomatic; gradual immune deterioration |
 | AIDS | < 200 cells/$\mathrm{mm^3}$ | High | Opportunistic infections (PCP pneumonia, TB, Kaposi's sarcoma, candidiasis); wasting; dementia |
 
 ### 30.3 Antiretroviral Therapy (ART)
@@ -1245,7 +1245,7 @@ HIV (human immunodeficiency virus) is a retrovirus:
 | Integrase inhibitors | Block integration of viral DNA into host chromosome | Raltegravir, dolutegravir |
 | Entry inhibitors | Block viral entry (CCR5 antagonists, fusion inhibitors) | Maraviroc (CCR5 antagonist), enfuvirtide (fusion inhibitor) |
 
-ART typically uses a combination of 3 or more drugs from at least 2 classes (combination therapy). This prevents the development of drug resistance (the virus would need to simultaneously develop resistance to multiple drugs, which is statistically very unlikely). ART does not cure HIV but can reduce viral load to undetectable levels, allowing normal life expectancy and preventing transmission (U = U: undetectable = untransmittable).
+ART uses a combination of 3 or more drugs from at least 2 classes (combination therapy). This prevents the development of drug resistance (the virus would need to simultaneously develop resistance to multiple drugs, which is statistically very unlikely). ART does not cure HIV but can reduce viral load to undetectable levels, allowing normal life expectancy and preventing transmission (U = U: undetectable = untransmittable).
 
 ## 31. Blood Groups and Transfusion
 
@@ -1308,7 +1308,7 @@ The lymphatic system is a network of vessels, nodes, and organs that returns exc
 
 At the arterial end of a capillary:
 - **Blood hydrostatic pressure** ($\approx 35\ \mathrm{mmHg}$) forces fluid out of the capillary.
-- **Blood oncotic pressure** ($\approx 25\ \mathrm{mmHg}$, due to plasma proteins) pulls fluid back in.
+- **Blood oncotic pressure** ($\approx 25\ \mathrm{mmHg}$Due to plasma proteins) pulls fluid back in.
 - **Net outward pressure** $= 35 - 25 = 10\ \mathrm{mmHg}$ (fluid leaves capillary).
 
 At the venous end:
@@ -1688,7 +1688,7 @@ The complement system is a cascade of plasma proteins that enhances (complements
 | ---- | ------------- | -------- |
 | Helper T cells (CD4+) | CD4 | Coordinate the immune response; activate B cells (help them produce antibodies); activate cytotoxic T cells; activate macrophages (enhance phagocytosis); secrete cytokines |
 | Cytotoxic T cells (CD8+) | CD8 | Kill virus-infected cells and cancer cells; recognise viral antigens presented on MHC class I; release perforin and granzymes (induce apoptosis of target cell) |
-| Regulatory T cells ($\mathrm{T_{reg}}$, CD4+ CD25+ FoxP3+) | CD4, CD25, FoxP3 | Suppress immune responses; maintain self-tolerance; prevent autoimmune reactions; secrete anti-inflammatory cytokines (IL-10, TGF-$\beta$) |
+| Regulatory T cells ($\mathrm{T_{reg}}$CD4+ CD25+ FoxP3+) | CD4, CD25, FoxP3 | Suppress immune responses; maintain self-tolerance; prevent autoimmune reactions; secrete anti-inflammatory cytokines (IL-10, TGF-$\beta$) |
 | Memory T cells | -- | Long-lived; provide rapid secondary response upon re-exposure to the same antigen |
 
 ### 46.2 MHC Class I vs MHC Class II
@@ -1760,7 +1760,7 @@ The human microbiome is the collection of all microorganisms (bacteria, archaea,
 
 | Factor | Effect |
 | ------ | ------ |
-| Antibiotics | Kill beneficial bacteria; can cause C. difficile overgrowth; may take months for microbiome to recover |
+| Antibiotics | Kill beneficial bacteria; can cause C. Difficile overgrowth; may take months for microbiome to recover |
 | Diet | High-fibre diet promotes diversity; high-sugar/high-fat diet reduces diversity; fermented foods (yogurt, kefir, sauerkraut) introduce beneficial bacteria |
 | Birth method | Vaginal birth exposes the newborn to the mother's microbiota; Caesarean section delays colonisation; associated with higher rates of asthma, allergies, and obesity |
 
@@ -1843,3 +1843,15 @@ The complement system is a collection of ~30 proteins found in blood plasma that
 Diagnostic Test
 :::
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

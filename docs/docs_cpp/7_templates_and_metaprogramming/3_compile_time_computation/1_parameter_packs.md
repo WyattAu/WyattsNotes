@@ -12,14 +12,14 @@ slug: parameter-packs-and-variadic-templates
 
 A **variadic template** accepts a variable number of template arguments via a **parameter pack**
 [N4950 §13.7.3]. Parameter packs come in two forms: type parameter packs and non-type parameter
-packs. Combined with **pack expansion** syntax and perfect forwarding, they enable type-safe
-operations on arbitrary numbers of arguments.
+Packs. Combined with **pack expansion** syntax and perfect forwarding, they enable type-safe
+Operations on arbitrary numbers of arguments.
 
 ## Variadic Function Templates and Parameter Packs
 
 A **variadic template** accepts a variable number of template arguments via a **parameter pack**
 [N4950 §13.7.3]. Parameter packs come in two forms: type parameter packs and non-type parameter
-packs.
+Packs.
 
 ```cpp
 #include <iostream>
@@ -128,14 +128,14 @@ int main() {
 
 :::tip
 `std::make_unique` (C++14) is implemented essentially as shown above. The variadic template +
-perfect forwarding pattern (`Args&&... args` with `std::forward<Args>(args)...`) is one of the most
-important idioms in modern C++ template programming.
+Perfect forwarding pattern (`Args&&... args` with `std::forward<Args>(args)...`) is one of the most
+Important idioms in modern C++ template programming.
 :::
 
 ## Variadic Class Templates
 
 Parameter packs are not limited to function templates. A **variadic class template** accepts a pack
-of type parameters, enabling type-safe heterogeneous containers and mixin-style composition [N4950
+Of type parameters, enabling type-safe heterogeneous containers and mixin-style composition [N4950
 §13.7.3].
 
 ```cpp
@@ -207,8 +207,8 @@ int main() {
 ## `sizeof...` Operator
 
 `sizeof...(pack)` returns the number of elements in a parameter pack as a `std::size_t` [N4950
-§8.3.3]. It is a constant expression usable in `if constexpr`, `static_assert`, and template
-metaprogramming. It works on both type packs and non-type packs.
+§8.3.3]. It is a constant expression usable in `if constexpr``static_assert`And template
+Metaprogramming. It works on both type packs and non-type packs.
 
 ```cpp
 #include <iostream>
@@ -246,8 +246,8 @@ int main() {
 ## Pack Indexing with `std::tuple`
 
 There is no built-in "get the Nth type of a pack" operator in C++. The standard technique is to
-convert the pack to `std::tuple` and use `std::tuple_element_t` for type indexing or `std::get` for
-value indexing [N4950 §22.4.6].
+Convert the pack to `std::tuple` and use `std::tuple_element_t` for type indexing or `std::get` for
+Value indexing [N4950 §22.4.6].
 
 ```cpp
 #include <iostream>
@@ -287,7 +287,7 @@ int main() {
 ## Pack Expansion in Different Contexts
 
 Pack expansion `pattern...` can appear in many syntactic positions [N4950 §13.7.3]. Each context
-substitutes each pack element into the pattern and produces a comma-separated list of expansions:
+Substitutes each pack element into the pattern and produces a comma-separated list of expansions:
 
 ```cpp
 #include <iostream>
@@ -343,7 +343,7 @@ int main() {
 ## Recursive Template Patterns for Pack Processing
 
 Before C++17 fold expressions, pack processing required recursive template instantiation. The
-pattern is: peel one element off the pack, process it, then recurse on the remainder [N4950
+Pattern is: peel one element off the pack, process it, then recurse on the remainder [N4950
 §13.7.3].
 
 ```cpp
@@ -408,7 +408,7 @@ int main() {
 ## Fold Expressions: The Modern Alternative
 
 C++17 fold expressions replace most recursive template patterns with a single line of code. For
-details, see [Fold Expressions and Pack Expansion](./2_fold_expressions.md).
+Details, see [Fold Expressions and Pack Expansion](./2_fold_expressions.md).
 
 ```cpp
 #include <iostream>
@@ -445,7 +445,7 @@ int main() {
 ### Empty Pack Ambiguity
 
 Overload resolution between a variadic template and a specific overload can be surprising when the
-pack is empty:
+Pack is empty:
 
 ```cpp
 #include <iostream>
@@ -469,12 +469,12 @@ int main() {
 ```
 
 The non-variadic overload wins when the argument list matches exactly. This is by design per
-overload resolution rules [N4950 §12.4.3], but it can be surprising.
+Overload resolution rules [N4950 §12.4.3], but it can be surprising.
 
 ### Ambiguous Overloads with Variadics
 
 A variadic template can shadow all other overloads in the same scope. The workaround is to constrain
-the variadic with `requires` or SFINAE:
+The variadic with `requires` or SFINAE:
 
 ```cpp
 #include <iostream>
@@ -508,7 +508,7 @@ int main() {
 ### Expanding Into the Wrong Context
 
 Pack expansion must appear in a valid expansion context [N4950 §13.7.3]. You cannot expand a pack in
-an arbitrary position:
+An arbitrary position:
 
 ```cpp
 #include <iostream>
@@ -535,7 +535,7 @@ int main() {
 ### Perfect Forwarding with Parameter Packs
 
 When using forwarding references (`Args&&...`) with parameter packs, always use `std::forward` in
-the expansion. Forgetting to forward degrades rvalues to lvalues:
+The expansion. Forgetting to forward degrades rvalues to lvalues:
 
 ```cpp
 #include <iostream>
@@ -575,3 +575,11 @@ int main() {
 - [Template Instantiation, Monomorphization, and Code Bloat](../1_generic_programming/1_instantiation.md)
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

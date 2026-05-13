@@ -12,18 +12,18 @@ categories:
 ## Why Indexes Matter
 
 Without an index, finding a specific row in a table of $N$ rows requires a full sequential scan,
-which is $O(N)$. A B-tree index reduces this to $O(\log N)$ -- for a table of one billion rows, that
-is the difference between examining one billion rows and approximately 30.
+Which is $O(N)$. A B-tree index reduces this to $O(\log N)$ -- for a table of one billion rows, that
+Is the difference between examining one billion rows and approximately 30.
 
 Indexes are the single most impactful performance tool available to a database user. The query
-planner cannot use an index that does not exist, and adding the wrong index wastes storage and slows
-down writes. Understanding how indexes work internally is the difference between a query that runs
-in milliseconds and one that takes minutes.
+Planner cannot use an index that does not exist, and adding the wrong index wastes storage and slows
+Down writes. Understanding how indexes work internally is the difference between a query that runs
+In milliseconds and one that takes minutes.
 
 ## B-Tree Structure
 
 The B-tree (Bayer and McCreight, 1972) is the default index structure in PostgreSQL, MySQL (InnoDB),
-and most relational databases. Despite the name, modern implementations use B+ trees.
+And most relational databases. Despite the name, modern implementations use B+ trees.
 
 ### Node Anatomy
 
@@ -52,13 +52,13 @@ B+ Tree (all data in leaves, leaves linked):
   [leaf] -> [leaf] -> [leaf] -> [leaf]  (linked list for range scans)
 ```
 
-| Property     | B-Tree                   | B+ Tree                               |
+| Property | B-Tree | B+ Tree |
 | ------------ | ------------------------ | ------------------------------------- |
-| Data storage | In all nodes             | Only in leaf nodes                    |
-| Leaf linkage | None                     | Doubly-linked list                    |
-| Range scans  | Requires tree traversal  | Sequential scan of linked leaves      |
-| Node fill    | Variable                 | Typically 2/3 to 4/5 (higher fan-out) |
-| Height       | Taller for the same data | Shorter (higher fan-out)              |
+| Data storage | In all nodes | Only in leaf nodes |
+| Leaf linkage | None | Doubly-linked list |
+| Range scans | Requires tree traversal | Sequential scan of linked leaves |
+| Node fill | Variable | 2/3 to 4/5 (higher fan-out) |
+| Height | Taller for the same data | Shorter (higher fan-out) |
 
 ### Depth and Fan-Out
 
@@ -76,32 +76,32 @@ In practice:
 - For 1 billion rows: height = $\lceil \log_{300}(10^9) \rceil \approx 4$
 
 This means **every index lookup traverses at most 4 pages** -- approximately 4 disk seeks or, more
-likely with the buffer pool, 4 cache lookups.
+Likely with the buffer pool, 4 cache lookups.
 
 ### Insertion
 
 1. Find the correct leaf node by traversing from the root
 2. Insert the new key in sorted order in the leaf
 3. If the leaf overflows (exceeds page capacity):
-   - Split the leaf into two halves
-   - Promote the median key to the parent
-   - If the parent overflows, split it recursively
-   - If the root splits, create a new root (tree height increases by 1)
+ - Split the leaf into two halves
+ - Promote the median key to the parent
+ - If the parent overflows, split it recursively
+ - If the root splits, create a new root (tree height increases by 1)
 
 ### Deletion
 
 1. Find the key in the leaf
 2. Remove the key
 3. If the leaf underflows (below minimum fill factor):
-   - Attempt to redistribute entries from a sibling (borrow)
-   - If siblings are also at minimum, merge with a sibling
-   - If the parent underflows, recurse upward
-   - If the root has one child and is an internal node, the child becomes the new root
+ - Attempt to redistribute entries from a sibling (borrow)
+ - If siblings are also at minimum, merge with a sibling
+ - If the parent underflows, recurse upward
+ - If the root has one child and is an internal node, the child becomes the new root
 
 :::info
 
 PostgreSQL does not immediately reclaim space from page splits. Empty space on B-tree pages is
-reused by future inserts, but the pages themselves are not returned to the OS until `VACUUM FULL` or
+Reused by future inserts, but the pages themselves are not returned to the OS until `VACUUM FULL` or
 `pg_repack`. This is why B-tree indexes can become bloated after heavy UPDATE/DELETE workloads.
 
 :::
@@ -109,7 +109,7 @@ reused by future inserts, but the pages themselves are not returned to the OS un
 ## Hash Indexes
 
 Hash indexes use a hash function to map keys directly to bucket locations, providing $O(1)$ average
-lookup for exact equality checks.
+Lookup for exact equality checks.
 
 ### When to Use
 
@@ -134,7 +134,7 @@ CREATE INDEX idx_users_email_hash ON users USING hash (email);
 ## Covering Indexes
 
 A covering index (also called an index-only scan) contains all the columns needed by a query, so the
-database never needs to access the table itself (the "heap" in PostgreSQL terminology).
+Database never needs to access the table itself (the "heap" in PostgreSQL terminology).
 
 ```sql
 -- Query:
@@ -147,18 +147,18 @@ CREATE INDEX idx_emp_dept_covering ON employees (department_id, first_name, last
 The benefits are significant:
 
 - **No heap access**: the query is satisfied entirely from the index
-- **Less I/O**: index pages are typically much smaller than table pages
+- **Less I/O**: index pages are much smaller than table pages
 - **Better cache utilisation**: more index entries fit in the buffer pool
 
 In PostgreSQL, an index-only scan requires that the visibility map indicates all pages are
-all-visible. If any referenced page has dirty visibility information, the database falls back to a
-regular index scan that checks the heap. This is why `VACUUM` matters for index-only scan
-performance.
+All-visible. If any referenced page has dirty visibility information, the database falls back to a
+Regular index scan that checks the heap. This is why `VACUUM` matters for index-only scan
+Performance.
 
 ## Composite Indexes
 
 A composite (multi-column) index is an index on two or more columns. The order of columns in a
-composite index matters critically.
+Composite index matters critically.
 
 ### The Leftmost Prefix Rule
 
@@ -192,7 +192,7 @@ SELECT * FROM employees WHERE salary > 100000;
 The general rule for ordering columns in a composite index:
 
 1. **Equality columns first** -- columns used with `=` go before range columns
-2. **Range columns after equality** -- columns used with `>`, `<`, `BETWEEN`, `LIKE` come after
+2. **Range columns after equality** -- columns used with `>``<``BETWEEN``LIKE` come after
 3. **Most selective columns first** among equality columns (reduces the search space faster)
 
 ```sql
@@ -208,7 +208,7 @@ CREATE INDEX idx_emp_hire_dept ON employees (hire_date, department_id);
 ## Partial Indexes
 
 A partial index is an index built on a subset of rows defined by a WHERE clause. This reduces index
-size and maintenance overhead.
+Size and maintenance overhead.
 
 ```sql
 -- Index only active users (99% of queries filter on this anyway)
@@ -226,9 +226,9 @@ CREATE INDEX idx_transactions_large ON transactions (account_id, created_at)
 :::tip
 
 Partial indexes are one of the most underused optimisation tools. If your queries consistently
-filter on a condition (e.g., `status = 'active'`), a partial index can be 10-100x smaller than a
-full index while providing the same query performance. The key insight: **do not index data your
-queries never look for.**
+Filter on a condition (e.g., `status = 'active'`), a partial index can be 10-100x smaller than a
+Full index while providing the same query performance. The key insight: **do not index data your
+Queries never look for.**
 
 :::
 
@@ -265,7 +265,7 @@ SELECT * FROM users WHERE email = 'ADA@EXAMPLE.COM';
 ### GIN (Generalized Inverted Index)
 
 Designed for composite types where you need to find rows containing specific elements within a
-value: arrays, full-text search, JSONB.
+Value: arrays, full-text search, JSONB.
 
 ```sql
 -- Array containment:
@@ -284,7 +284,7 @@ SELECT * FROM documents WHERE to_tsvector('english', body) @@ to_tsquery('englis
 ### GiST (Generalized Search Tree)
 
 A framework for building balanced tree structures over custom data types. Used for geometric data,
-range types, and full-text search.
+Range types, and full-text search.
 
 ```sql
 -- Geometric queries:
@@ -299,8 +299,8 @@ SELECT * FROM reservations WHERE date_range && '[2024-01-01, 2024-12-31]'::dater
 ### BRIN (Block Range Index)
 
 Stores summary information about ranges of physical table pages. Extremely small but only effective
-when data is physically correlated with the indexed column (e.g., a timestamp column where rows are
-inserted in chronological order).
+When data is physically correlated with the indexed column (e.g., a timestamp column where rows are
+Inserted in chronological order).
 
 ```sql
 -- For time-series data where newer rows have higher timestamps:
@@ -308,13 +308,13 @@ CREATE INDEX idx_sensor_readings_ts ON sensor_readings USING brin (timestamp);
 ```
 
 A BRIN index for a 100GB table might be only a few hundred KB, compared to several GB for a B-tree
-index. The trade-off: the index only tells the query planner which page ranges might contain
-matching rows, so it must still scan those pages.
+Index. The trade-off: the index only tells the query planner which page ranges might contain
+Matching rows, so it must still scan those pages.
 
 ## EXPLAIN and EXPLAIN ANALYZE
 
 `EXPLAIN` shows the query planner's execution plan. `EXPLAIN ANALYZE` actually executes the query
-and shows actual timing and row counts alongside the planner's estimates.
+And shows actual timing and row counts alongside the planner's estimates.
 
 ### Reading an EXPLAIN Plan
 
@@ -344,33 +344,33 @@ Execution Time: 0.221 ms
 
 Key fields to examine:
 
-| Field         | Meaning                                                  |
+| Field | Meaning |
 | ------------- | -------------------------------------------------------- |
-| `cost`        | Planner's estimate of relative cost (lower is better)    |
-| `rows`        | Planner's estimate of rows processed at each node        |
+| `cost` | Planner's estimate of relative cost (lower is better) |
+| `rows` | Planner's estimate of rows processed at each node |
 | `actual time` | Actual time in milliseconds for this node (from ANALYZE) |
-| `actual rows` | Actual rows processed (from ANALYZE)                     |
-| `loops`       | Number of times this node was executed (from ANALYZE)    |
+| `actual rows` | Actual rows processed (from ANALYZE) |
+| `loops` | Number of times this node was executed (from ANALYZE) |
 
 ### Common Plan Nodes
 
-| Node              | Description                                                      |
+| Node | Description |
 | ----------------- | ---------------------------------------------------------------- |
-| `Seq Scan`        | Full table scan; reads every row                                 |
-| `Index Scan`      | Uses a B-tree index to find matching rows (reads heap for each)  |
-| `Index Only Scan` | All data comes from the index; no heap access needed             |
-| `Bitmap Scan`     | Two-phase: bitmap of matching pages, then fetch in page order    |
-| `Nested Loop`     | For each outer row, look up matching inner rows (good for small) |
-| `Hash Join`       | Build hash table on inner, probe with outer (good for large)     |
-| `Merge Join`      | Both inputs sorted, merge in one pass (good for pre-sorted data) |
-| `Sort`            | In-memory sort (quicksort) or external sort (merge sort to disk) |
-| `Aggregate`       | Hash aggregate or Group Aggregate (sorted)                       |
-| `Limit`           | Stops processing after N rows                                    |
+| `Seq Scan` | Full table scan; reads every row |
+| `Index Scan` | Uses a B-tree index to find matching rows (reads heap for each) |
+| `Index Only Scan` | All data comes from the index; no heap access needed |
+| `Bitmap Scan` | Two-phase: bitmap of matching pages, then fetch in page order |
+| `Nested Loop` | For each outer row, look up matching inner rows (good for small) |
+| `Hash Join` | Build hash table on inner, probe with outer (good for large) |
+| `Merge Join` | Both inputs sorted, merge in one pass (good for pre-sorted data) |
+| `Sort` | In-memory sort (quicksort) or external sort (merge sort to disk) |
+| `Aggregate` | Hash aggregate or Group Aggregate (sorted) |
+| `Limit` | Stops processing after N rows |
 
 ### When the Planner Gets It Wrong
 
 The query planner relies on statistics gathered by `ANALYZE`. If statistics are stale or the table
-has a highly skewed data distribution, the planner may choose a suboptimal plan.
+Has a highly skewed data distribution, the planner may choose a suboptimal plan.
 
 ```sql
 -- Update statistics for a specific table:
@@ -396,16 +396,16 @@ WHERE tablename = 'employees';
 ### Sequential Scan vs Index Scan
 
 A sequential scan reads every page of the table in physical order. An index scan reads the index
-first, then fetches matching rows from the table. Counterintuitively, a sequential scan can be
-faster than an index scan when:
+First, then fetches matching rows from the table. Counterintuitively, a sequential scan can be
+Faster than an index scan when:
 
 - The table is small (fits in a few pages)
 - A large percentage of rows match the query (e.g., `WHERE status = 'active'` when 80% of rows are
-  active)
+ active)
 - The index and table are both on disk, causing random I/O for each index entry
 
 The planner's decision threshold is approximately when the query selects more than 5-15% of the
-table (varies by index type, data distribution, and hardware).
+Table (varies by index type, data distribution, and hardware).
 
 ### Bitmap Index Scan
 
@@ -439,13 +439,13 @@ Bitmap Scan (sequential I/O):
 - Build an in-memory hash table from the inner (smaller) table, then probe with the outer table
 - Cost: $O(N_{\mathrm{inner{}} + N_{\mathrm{outer{}})$
 - Best for: large tables, equi-joins, when the inner table fits in memory (work_mem)
-- Fallback: if the hash table exceeds `work_mem`, spills to disk (slow)
+- Fallback: if the hash table exceeds `work_mem`Spills to disk (slow)
 
 **Merge Join:**
 
 - Both inputs must be sorted on the join key; merge in a single pass
 - Cost: $O(N_{\mathrm{outer{}} \log N_{\mathrm{outer{}} + N_{\mathrm{inner{}} \log N_{\mathrm{inner{}})$
-  for sorting, $O(N_{\mathrm{outer{}} + N_{\mathrm{inner{}})$ for merge
+ for sorting, $O(N_{\mathrm{outer{}} + N_{\mathrm{inner{}})$ for merge
 - Best for: pre-sorted inputs, large result sets, range joins
 
 ### Understanding Cost Estimates
@@ -459,29 +459,29 @@ PostgreSQL uses a cost model based on:
 - `cpu_operator_cost` (default 0.0025): cost of evaluating each operator
 
 For SSDs, `random_page_cost` should be lowered (1.1-1.5) because random reads are nearly as fast as
-sequential reads. For HDD arrays, the default of 4.0 is reasonable.
+Sequential reads. For HDD arrays, the default of 4.0 is reasonable.
 
 ## Statistics and the Query Planner
 
 The query planner's decisions are only as good as the statistics it works from. PostgreSQL collects
-statistics via `ANALYZE` (run automatically by autovacuum) and stores them in `pg_statistic`
+Statistics via `ANALYZE` (run automatically by autovacuum) and stores them in `pg_statistic`
 (viewable through `pg_stats`).
 
 ### Key Statistics
 
-| Column              | Meaning                                                                                                                 |
+| Column | Meaning |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `n_distinct`        | Estimated number of distinct values (-1 means "proportional to row count")                                              |
-| `most_common_vals`  | Most frequent values in the column                                                                                      |
-| `most_common_freqs` | Frequency of the most common values                                                                                     |
-| `histogram_bounds`  | Bucket boundaries for value distribution                                                                                |
-| `correlation`       | Correlation between physical row order and column value order (1.0 = perfectly sorted, -1.0 = perfectly reverse sorted) |
-| `null_frac`         | Fraction of rows where the column is NULL                                                                               |
+| `n_distinct` | Estimated number of distinct values (-1 means "proportional to row count") |
+| `most_common_vals` | Most frequent values in the column |
+| `most_common_freqs` | Frequency of the most common values |
+| `histogram_bounds` | Bucket boundaries for value distribution |
+| `correlation` | Correlation between physical row order and column value order (1.0 = perfectly sorted, -1.0 = perfectly reverse sorted) |
+| `null_frac` | Fraction of rows where the column is NULL |
 
 ### Extended Statistics
 
 When columns are correlated (e.g., `city` and `zip_code`), the planner may underestimate selectivity
-because it treats each column independently. PostgreSQL 10+ supports extended statistics:
+Because it treats each column independently. PostgreSQL 10+ supports extended statistics:
 
 ```sql
 CREATE STATISTICS s_emp_dept_role (ndistinct, dependencies)
@@ -492,7 +492,7 @@ ANALYZE employees;
 ## VACUUM and Index Maintenance
 
 PostgreSQL uses Multi-Version Concurrency Control (MVCC), which means updates and deletes do not
-immediately reclaim space. Dead tuples (old row versions) accumulate until `VACUUM` processes them.
+Immediately reclaim space. Dead tuples (old row versions) accumulate until `VACUUM` processes them.
 
 ### Autovacuum
 
@@ -512,7 +512,7 @@ ALTER TABLE employees SET (autovacuum_vacuum_cost_delay = 20);
 ### Index Bloat
 
 After heavy UPDATE/DELETE activity, B-tree indexes accumulate empty space from page splits and
-deleted entries. Check for index bloat:
+Deleted entries. Check for index bloat:
 
 ```sql
 SELECT pg_size_pretty(pg_relation_size(indexrelid)) AS index_size,
@@ -543,7 +543,7 @@ pg_repack -d mydb -t employees
 ```
 
 `pg_repack` creates a new table, copies data, rebuilds indexes, and swaps the tables with a brief
-lock window.
+Lock window.
 
 ## When NOT to Index
 
@@ -559,15 +559,15 @@ Guidelines for when to skip indexing:
 - **Small tables** (a few thousand rows): a sequential scan is already fast
 - **Write-heavy tables** with few reads: the write cost outweighs the read benefit
 - **Columns with low cardinality**: a boolean column with 99% TRUE values is not worth indexing (use
-  a partial index instead)
+ a partial index instead)
 - **Bulk load operations**: drop indexes before loading, recreate after
 - **Temporary/staging tables**: data is ephemeral, no point in indexing
 
 ## Connection Pooling
 
 Every database connection consumes memory (PostgreSQL: approximately 5-10MB per connection for the
-process, plus `work_mem` for queries). A web application with 500 concurrent connections can consume
-several GB just for connection overhead.
+Process, plus `work_mem` for queries). A web application with 500 concurrent connections can consume
+Several GB just for connection overhead.
 
 ### Connection Poolers
 
@@ -588,18 +588,18 @@ reserve_pool_timeout = 3
 
 Pool modes:
 
-| Mode          | Behaviour                                                                                     |
+| Mode | Behaviour |
 | ------------- | --------------------------------------------------------------------------------------------- |
-| `session`     | Server connection held for the entire client session                                          |
-| `transaction` | Server connection held only for the duration of a transaction (recommended)                   |
-| `statement`   | Server connection returned to pool after each statement (limited, breaks prepared statements) |
+| `session` | Server connection held for the entire client session |
+| `transaction` | Server connection held only for the duration of a transaction (recommended) |
+| `statement` | Server connection returned to pool after each statement (limited, breaks prepared statements) |
 
 :::tip
 
 Transaction-mode pooling with PgBouncer is the standard for web applications. It allows thousands of
-client connections to share a small pool of server connections (typically 25-100). The caveat:
-prepared statements that are scoped to a server connection may not work as expected, because a
-subsequent transaction might use a different server connection.
+Client connections to share a small pool of server connections ( 25-100). The caveat:
+Prepared statements that are scoped to a server connection may not work as expected, because a
+Subsequent transaction might use a different server connection.
 
 :::
 
@@ -608,29 +608,29 @@ subsequent transaction might use a different server connection.
 ### Creating an Index Without Checking the Query Plan
 
 Adding an index and assuming it will be used is a common mistake. Always `EXPLAIN ANALYZE` before
-and after creating an index to verify it is actually used and improves performance.
+And after creating an index to verify it is actually used and improves performance.
 
 ### Ignoring Index Bloat
 
 A bloated index is slower to scan, wastes disk space, and causes more cache pressure. Monitor index
-size growth and run `REINDEX CONCURRENTLY` on bloated indexes during maintenance windows.
+Size growth and run `REINDEX CONCURRENTLY` on bloated indexes during maintenance windows.
 
 ### Over-Indexing
 
 A table with 30 indexes has 30x the write amplification. Every INSERT/UPDATE must update all 30
-indexes. Profile your write workload before adding indexes. A good rule of thumb: if a query runs
-less than once per minute, a covering index might not be worth the write cost.
+Indexes. Profile your write workload before adding indexes. A good rule of thumb: if a query runs
+Less than once per minute, a covering index might not be worth the write cost.
 
 ### Not Running ANALYZE After Bulk Loads
 
-After a bulk `COPY` or large `INSERT`, run `ANALYZE` to update statistics. Without current
-statistics, the query planner will make decisions based on stale data and may choose sequential
-scans over index scans or vice versa.
+After a bulk `COPY` or large `INSERT`Run `ANALYZE` to update statistics. Without current
+Statistics, the query planner will make decisions based on stale data and may choose sequential
+Scans over index scans or vice versa.
 
 ### Using OFFSET for Deep Pagination
 
 `OFFSET 100000 LIMIT 20` requires the database to scan and discard 100,000 rows. Use keyset
-pagination instead:
+Pagination instead:
 
 ```sql
 -- Instead of:
@@ -644,22 +644,22 @@ SELECT * FROM orders WHERE id > 100000 ORDER BY id LIMIT 20;
 
 `work_mem` controls the memory available for sorts, hash joins, and hash aggregates. The default is
 4MB, which is too low for many production workloads. If `EXPLAIN ANALYZE` shows "Sort Method:
-external merge Disk" or "HashAggregate" spilling to disk, increase `work_mem` for the session or
-role:
+External merge Disk" or "HashAggregate" spilling to disk, increase `work_mem` for the session or
+Role:
 
 ```sql
 SET work_mem = '256MB';
 ```
 
 Do not set this globally too high -- it is per-operation, and concurrent operations multiply the
-memory usage.
+Memory usage.
 
 ## Query Optimization Patterns
 
 ### Materialized Views
 
 A materialized view caches the result of a query and refreshes it periodically. This trades storage
-for query latency on expensive aggregations and joins.
+For query latency on expensive aggregations and joins.
 
 ```sql
 -- Create a materialized view for daily revenue:
@@ -687,15 +687,15 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY daily_revenue;
 :::info
 
 `REFRESH MATERIALIZED VIEW CONCURRENTLY` requires a UNIQUE index on the materialized view. It
-refreshes by scanning the new data and updating existing rows, which is slower than a full refresh
-but does not block concurrent reads.
+Refreshes by scanning the new data and updating existing rows, which is slower than a full refresh
+But does not block concurrent reads.
 
 :::
 
 ### Subquery Flattening
 
 The query planner often converts subqueries into joins automatically. However, some subquery
-patterns prevent this optimisation:
+Patterns prevent this optimisation:
 
 ```sql
 -- This may not be flattened (correlated subquery with LIMIT):
@@ -716,7 +716,7 @@ LIMIT 100;
 ### Batch Inserts and COPY
 
 For bulk data loading, individual `INSERT` statements are extremely slow due to per-statement
-overhead (parsing, planning, WAL flush, index maintenance). Use batch inserts or `COPY`:
+Overhead (parsing, planning, WAL flush, index maintenance). Use batch inserts or `COPY`:
 
 ```sql
 -- Multi-row INSERT (batch):
@@ -745,8 +745,8 @@ psql -c "ANALYZE sensor_readings;"
 ### Prepared Statements
 
 Prepared statements parse and plan a query once, then execute it multiple times with different
-parameters. This avoids repeated parsing overhead and allows the planner to cache the execution
-plan.
+Parameters. This avoids repeated parsing overhead and allows the planner to cache the execution
+Plan.
 
 ```sql
 -- Prepare:
@@ -765,16 +765,16 @@ DEALLOCATE get_orders_by_customer;
 
 In PostgreSQL, the planner generates a **generic plan** after 5 executions of a prepared statement.
 The generic plan does not use the specific parameter values for planning, which can lead to
-suboptimal plans if the parameter values significantly affect selectivity (e.g., a status column
-where 'pending' has 5 rows and 'completed' has 5 million rows). Monitor with `pg_stat_statements`
-and use `plan_cache_mode = force_custom_plan` if generic plans are consistently worse.
+Suboptimal plans if the parameter values significantly affect selectivity (e.g., a status column
+Where 'pending' has 5 rows and 'completed' has 5 million rows). Monitor with `pg_stat_statements`
+And use `plan_cache_mode = force_custom_plan` if generic plans are consistently worse.
 
 :::
 
 ### Partition Pruning
 
 When querying a partitioned table, the planner can eliminate entire partitions based on the WHERE
-clause. This is called partition pruning.
+Clause. This is called partition pruning.
 
 ```sql
 -- Without pruning: scans all 12 monthly partitions
@@ -788,13 +788,13 @@ SELECT * FROM orders WHERE created_at >= '2024-01-01' AND created_at &lt; '2024-
 ```
 
 Partition pruning is most effective when the partition key matches the query's filter. If you
-frequently query by `customer_id` but partition by `created_at`, pruning does not help.
+Frequently query by `customer_id` but partition by `created_at`Pruning does not help.
 
 ### Index-Only Scans and Visibility Maps
 
 An index-only scan reads only the index, never touching the heap (table data). This is the fastest
-type of scan. However, PostgreSQL must verify that each index entry points to a visible (not dead)
-row. If the visibility map indicates all pages are all-visible, the heap check is skipped entirely.
+Type of scan. However, PostgreSQL must verify that each index entry points to a visible (not dead)
+Row. If the visibility map indicates all pages are all-visible, the heap check is skipped entirely.
 
 ```sql
 -- Check visibility map coverage:
@@ -889,3 +889,11 @@ SELECT relname AS table_name,
 FROM pg_stat_user_tables
 ORDER BY pg_total_relation_size(relid) DESC;
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

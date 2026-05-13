@@ -12,8 +12,8 @@ slug: computational-thinking
 ## What Is Computational Thinking? (CED Unit 1)
 
 Computational thinking is a problem-solving approach that involves breaking down complex problems,
-finding patterns, abstracting details, and designing step-by-step solutions. It is not about
-thinking like a computer -- it is about expressing problems in a way that a computer can solve.
+Finding patterns, abstracting details, and designing step-by-step solutions. It is not about
+Thinking like a computer -- it is about expressing problems in a way that a computer can solve.
 
 ### Four Pillars
 
@@ -23,28 +23,28 @@ thinking like a computer -- it is about expressing problems in a way that a comp
 4. **Algorithm Design:** Developing a step-by-step procedure to solve the problem.
 
 **Why these four matter together.** Decomposition tells you _what_ the subproblems are. Pattern
-recognition tells you _which_ subproblems are instances of problems you already know how to solve.
+Recognition tells you _which_ subproblems are instances of problems you already know how to solve.
 Abstraction tells you _which details matter_ for each subproblem. Algorithm design turns the
-abstracted subproblems into _precise, executable steps_.
+Abstracted subproblems into _precise, executable steps_.
 
 **Worked Example.** Design a program to manage a school library.
 
 - **Decomposition:** Book cataloguing, user management, borrowing/returning, overdue tracking,
-  search functionality.
+ search functionality.
 - **Pattern Recognition:** Searching for a book and searching for a user follow the same pattern
-  (linear or binary search on a sorted list). Borrowing and returning both modify the same data
-  structure (a loan record).
+ (linear or binary search on a sorted list). Borrowing and returning both modify the same data
+ structure (a loan record).
 - **Abstraction:** A "book" is represented by its ISBN, title, author, and availability status. We
-  do not need to model the physical book's condition, shelf location, or cover colour.
+ do not need to model the physical book's condition, shelf location, or cover colour.
 - **Algorithm Design:** Write pseudocode for each operation: add_book, search_book, borrow_book,
-  return_book, calculate_fine.
+ return_book, calculate_fine.
 
 **Worked Example.** Design a program to calculate the average exam score for a class, excluding the
-highest and lowest scores.
+Highest and lowest scores.
 
 - **Decomposition:** Read scores, find min and max, remove them, calculate average.
 - **Pattern Recognition:** Finding min and max are the same pattern (scan all elements, track the
-  extreme).
+ extreme).
 - **Abstraction:** A "score" is a number. We do not need the student's name or subject.
 - **Algorithm Design:**
   ```
@@ -69,39 +69,39 @@ highest and lowest scores.
 ## Abstraction (CED Unit 2)
 
 Abstraction is the process of reducing complexity by hiding unnecessary details and exposing only
-the essential features.
+The essential features.
 
 ### Why Abstraction Matters
 
 - Simplifies complex systems by providing a manageable interface.
 - Allows programmers to work with high-level concepts without worrying about low-level
-  implementation.
+ implementation.
 - Enables code reuse and modularity.
 
 **Concrete example.** When you drive a car, you use the steering wheel, pedals, and gear stick. You
-do not need to know how the fuel injection system works, how the transmission gears mesh, or how the
+Do not need to know how the fuel injection system works, how the transmission gears mesh, or how the
 ABS sensors communicate with the brake controller. The car's interface abstracts away these details.
 Similarly, a programmer using a `sort()` function does not need to know whether it uses merge sort,
-quick sort, or heap sort -- only that it sorts correctly.
+Quick sort, or heap sort -- only that it sorts correctly.
 
 ### Levels of Abstraction
 
-| Level    | Example                  | Detail Level |
+| Level | Example | Detail Level |
 | -------- | ------------------------ | ------------ |
-| High     | A web browser            | Very low     |
-| Medium   | HTML/CSS/JavaScript      | Moderate     |
-| Low      | Operating system calls   | High         |
-| Very low | Machine code / binary    | Very high    |
-| Hardware | Logic gates, transistors | Maximum      |
+| High | A web browser | Very low |
+| Medium | HTML/CSS/JavaScript | Moderate |
+| Low | Operating system calls | High |
+| Very low | Machine code / binary | Very high |
+| Hardware | Logic gates, transistors | Maximum |
 
 Moving down the ladder reveals more detail. Moving up hides detail behind simpler interfaces. The
-key insight of abstraction is that you rarely need to go all the way down -- you work at the level
-appropriate to the problem.
+Key insight of abstraction is that you rarely need to go all the way down -- you work at the level
+Appropriate to the problem.
 
 ### Procedural Abstraction
 
 A procedure (function/method) provides a named interface that hides its implementation. The caller
-only needs to know what the procedure does (its specification), not how it does it.
+Only needs to know what the procedure does (its specification), not how it does it.
 
 **Benefits:**
 
@@ -110,8 +110,8 @@ only needs to know what the procedure does (its specification), not how it does 
 - Modifiability: change the implementation without affecting callers.
 
 **Formal notion: preconditions and postconditions.** A procedure's contract specifies what must be
-true before it is called (precondition) and what it guarantees after it returns (postcondition). The
-implementation can change as long as it satisfies this contract.
+True before it is called (precondition) and what it guarantees after it returns (postcondition). The
+Implementation can change as long as it satisfies this contract.
 
 ### Data Abstraction
 
@@ -143,19 +143,19 @@ public class Rectangle {
 ```
 
 The caller uses `getArea()` and `getPerimeter()` without knowing that `width` and `height` are
-stored as doubles. The implementation could be changed to store different data (e.g., coordinates of
-corners) without affecting any code that uses this class.
+Stored as doubles. The implementation could be changed to store different data (e.g., coordinates of
+Corners) without affecting any code that uses this class.
 
 :::
 
 ### Information Hiding
 
 Information hiding is the principle that the internal details of a module should be hidden from
-other modules. Only the public interface is exposed. This reduces coupling between modules, making
-the system easier to understand, test, and modify.
+Other modules. Only the public interface is exposed. This reduces coupling between modules, making
+The system easier to understand, test, and modify.
 
 In Java, the `private` keyword enforces information hiding. A `private` field cannot be accessed
-directly from outside the class, forcing callers to use the public methods.
+Directly from outside the class, forcing callers to use the public methods.
 
 **Example of poor vs good abstraction:**
 
@@ -236,7 +236,7 @@ REPEAT UNTIL (condition)
 
 :::warning
 `REPEAT UNTIL` is a post-test loop -- the body executes at least once, then the condition
-is checked. This differs from a `WHILE` loop, which is a pre-test loop.
+Is checked. This differs from a `WHILE` loop, which is a pre-test loop.
 :::
 
 **FOR EACH:**
@@ -292,9 +292,9 @@ PROCEDURE findMax(list)
 ```
 
 **Proof of correctness (invariant).** Invariant: "max is the largest element among all elements
-examined so far." Initially, max = list[1], trivially the largest of the first element. When a new
-item is compared, if it is larger, max is updated; otherwise, max remains the largest. By induction,
-after all elements are examined, max is the largest in the entire list. $\blacksquare$
+Examined so far." Initially, max = list[1], the largest of the first element. When a new
+Item is compared, if it is larger, max is updated; otherwise, max remains the largest. By induction,
+After all elements are examined, max is the largest in the entire list. $\blacksquare$
 
 :::
 
@@ -354,7 +354,7 @@ PROCEDURE linearSearch(list, target)
 ```
 
 Note: AP CSP pseudocode returns 0 (not -1) to indicate "not found", because index 0 is not a valid
-position in 1-based indexing.
+Position in 1-based indexing.
 
 :::
 
@@ -389,7 +389,7 @@ PROCEDURE binarySearch(list, target)
 ```
 
 **Complexity analysis.** Each iteration halves the search space, so the maximum number of iterations
-is $\lceil \log_2 n \rceil$. Time complexity: $O(\log n)$.
+Is $\lceil \log_2 n \rceil$. Time complexity: $O(\log n)$.
 
 :::
 
@@ -431,8 +431,8 @@ PROCEDURE reverseList(list)
 **Time complexity:** $O(n)$ -- copies each element once.
 
 **Proof of termination.** The loop variable `i` starts at LENGTH(list) and decreases by 1 each
-iteration until it reaches 1. Since LENGTH(list) is a finite positive integer, the loop terminates
-after LENGTH(list) iterations. $\blacksquare$
+Iteration until it reaches 1. Since LENGTH(list) is a finite positive integer, the loop terminates
+After LENGTH(list) iterations. $\blacksquare$
 
 :::
 
@@ -441,7 +441,7 @@ after LENGTH(list) iterations. $\blacksquare$
 ### Top-Down Design
 
 Start with the main problem, then decompose into subproblems. Each subproblem is further decomposed
-until the tasks are simple enough to implement directly.
+Until the tasks are simple enough to implement directly.
 
 **Example:** "Build a student management system."
 
@@ -454,7 +454,7 @@ Level 3 (under Add student): Validate name, validate ID, check for duplicates, s
 ### Stepwise Refinement
 
 Gradually add detail to a high-level design. Start with pseudocode, then refine each step into more
-specific instructions.
+Specific instructions.
 
 **Example:**
 
@@ -500,20 +500,20 @@ An algorithm is a finite set of unambiguous instructions that solves a problem o
 
 ### Deciding Between Representations
 
-| Representation   | Precision | Readability | Executable |
+| Representation | Precision | Readability | Executable |
 | ---------------- | --------- | ----------- | ---------- |
-| Natural language | Low       | High        | No         |
-| Pseudocode       | Medium    | Medium      | No         |
-| Flowchart        | Medium    | High        | No         |
-| Programming code | High      | Low         | Yes        |
+| Natural language | Low | High | No |
+| Pseudocode | Medium | Medium | No |
+| Flowchart | Medium | High | No |
+| Programming code | High | Low | Yes |
 
 Pseudocode is the best compromise for communicating algorithms between humans. It is precise enough
-to unambiguously describe the logic, but does not require knowledge of a specific language's syntax.
+To unambiguously describe the logic, but does not require knowledge of a specific language's syntax.
 
 ### Proving Termination
 
 An algorithm terminates if every loop has a well-defined condition that is eventually satisfied, and
-every recursive call makes progress toward a base case.
+Every recursive call makes progress toward a base case.
 
 **Example.** The following algorithm always terminates:
 
@@ -529,7 +529,7 @@ PROCEDURE countdown(n)
 ```
 
 **Proof.** The variable `n` decreases by 1 each iteration. Since `n` is a non-negative integer, it
-will eventually reach 0, satisfying the loop condition. $\blacksquare$
+Will eventually reach 0, satisfying the loop condition. $\blacksquare$
 
 ### Proving Correctness by Induction
 
@@ -538,7 +538,7 @@ will eventually reach 0, satisfying the loop condition. $\blacksquare$
 Base case: `factorial(0) = 1 = 0!`. True.
 
 Inductive step: assume `factorial(k) = k!` for all $k \lt n$. Then `factorial(n) = n *
-factorial(n-1) = n * (n-1)! = n!`. True by the inductive hypothesis.
+Factorial(n-1) = n * (n-1)! = n!`. True by the inductive hypothesis.
 
 By induction, `factorial(n) = n!` for all $n \ge 0$. $\blacksquare$
 
@@ -547,7 +547,7 @@ By induction, `factorial(n) = n!` for all $n \ge 0$. $\blacksquare$
 ### Abstract Data Types
 
 An Abstract Data Type (ADT) defines a data type by its behavior (operations) rather than its
-implementation. The user interacts with the ADT through a well-defined interface.
+Implementation. The user interacts with the ADT through a well-defined interface.
 
 **Stack ADT:**
 
@@ -557,7 +557,7 @@ implementation. The user interacts with the ADT through a well-defined interface
 - `isEmpty()`: Return true if the stack is empty.
 
 The user does not need to know whether the stack is implemented using an array, a linked list, or
-something else.
+Something else.
 
 **Queue ADT:**
 
@@ -609,11 +609,11 @@ public class ArrayStack {
 
 | Operation | Time Complexity |
 | --------- | --------------- |
-| push      | $O(1)$          |
-| pop       | $O(1)$          |
-| peek      | $O(1)$          |
-| isEmpty   | $O(1)$          |
-| search    | $O(n)$          |
+| push | $O(1)$ |
+| pop | $O(1)$ |
+| peek | $O(1)$ |
+| isEmpty | $O(1)$ |
+| search | $O(n)$ |
 
 ### Using Stacks: Balanced Parentheses
 
@@ -715,125 +715,125 @@ A trace table records the values of variables as an algorithm executes.
 
 | Iteration | item | max (before) | max (after) |
 | --------- | ---- | ------------ | ----------- |
-| 1         | 3    | 3            | 3           |
-| 2         | 7    | 3            | 7           |
-| 3         | 2    | 7            | 7           |
-| 4         | 9    | 7            | 9           |
-| 5         | 5    | 9            | 9           |
+| 1 | 3 | 3 | 3 |
+| 2 | 7 | 3 | 7 |
+| 3 | 2 | 7 | 7 |
+| 4 | 9 | 7 | 9 |
+| 5 | 5 | 9 | 9 |
 
 Final result: 9. Correct.
 
 **Example:** Trace `binarySearch` on [2, 5, 8, 12, 16, 23, 38] searching for 16.
 
-| Iteration | low | high | mid | list[mid] | Action    |
+| Iteration | low | high | mid | list[mid] | Action |
 | --------- | --- | ---- | --- | --------- | --------- |
-| 1         | 1   | 7    | 4   | 12        | 12 < 16   |
-| 2         | 5   | 7    | 6   | 23        | 23 > 16   |
-| 3         | 5   | 5    | 5   | 16        | Found!    |
+| 1 | 1 | 7 | 4 | 12 | 12 < 16 |
+| 2 | 5 | 7 | 6 | 23 | 23 > 16 |
+| 3 | 5 | 5 | 5 | 16 | Found! |
 
 Result: index 5. Correct.
 
 ## Common Pitfalls
 
 1. **Confusing abstraction with simplification.** Abstraction hides irrelevant details while
-   preserving essential behavior; simplification may lose important information.
+ preserving essential behavior; simplification may lose important information.
 2. **Not identifying the right level of abstraction.** Too high-level: the solution is vague. Too
-   low-level: the solution is cluttered with irrelevant details.
+ low-level: the solution is cluttered with irrelevant details.
 3. **Ignoring edge cases in pseudocode.** Always consider empty inputs, single-element inputs, and
-   boundary conditions.
+ boundary conditions.
 4. **Confusing procedure parameters with procedure calls.** A parameter is a variable in the
-   procedure definition; an argument is the actual value passed when calling the procedure.
+ procedure definition; an argument is the actual value passed when calling the procedure.
 5. **Using programming-language-specific syntax in pseudocode.** AP CSP pseudocode is
-   language-agnostic.
+ language-agnostic.
 6. **Forgetting that lists in AP CSP pseudocode are 1-indexed**, not 0-indexed like in Java.
 7. **Not decomposing the problem sufficiently.** If a procedure is too complex, it should be
-   decomposed further.
+ decomposed further.
 8. **Writing pseudocode that is too vague.** "Sort the list" is not an acceptable step -- you must
-   describe _how_ to sort it, unless you are calling a named procedure that you have already
-   defined.
+ describe _how_ to sort it, unless you are calling a named procedure that you have already
+ defined.
 9. **Forgetting the RETURN statement.** A procedure that computes a result must use RETURN to pass
-   the result back to the caller. Without RETURN, the computed value is lost.
+ the result back to the caller. Without RETURN, the computed value is lost.
 10. **Confusing REPEAT UNTIL with WHILE.** REPEAT UNTIL checks the condition _after_ the body
-    executes (post-test loop). WHILE checks the condition _before_ the body executes (pre-test loop).
+ executes (post-test loop). WHILE checks the condition _before_ the body executes (pre-test loop).
 
 ## Practice Questions
 
 1. Decompose the problem "sort a list of student records by grade point average" into subproblems.
-   Write pseudocode for each subproblem.
+ Write pseudocode for each subproblem.
 
 2. Write pseudocode for a procedure `countOccurrences(list, value)` that returns the number of times
-   `value` appears in `list`.
+ `value` appears in `list`.
 
 3. Explain the difference between procedural abstraction and data abstraction, and give an example
-   of each.
+ of each.
 
 4. Write pseudocode for a procedure `isPalindrome(word)` that returns `true` if `word` reads the
-   same forwards and backwards.
+ same forwards and backwards.
 
 5. A programmer is designing a program to manage a library. Identify three levels of abstraction and
-   describe what details are hidden at each level.
+ describe what details are hidden at each level.
 
 6. Write pseudocode for a procedure that finds the second-largest value in a list of numbers.
 
 7. Explain why abstraction is important in software development. How does it contribute to code
-   maintainability?
+ maintainability?
 
 8. Write pseudocode for a procedure `mergeLists(list1, list2)` that combines two sorted lists into
-   one sorted list.
+ one sorted list.
 
 9. Write AP CSP pseudocode for a procedure `removeDuplicates(list)` that returns a new list with all
-   duplicate values removed.
+ duplicate values removed.
 
 10. Explain the difference between top-down design and stepwise refinement. How do they complement
-    each other?
+ each other?
 
 11. Write AP CSP pseudocode for a procedure `binarySearch(list, target)` that returns the index of
-    `target` in a sorted `list`, or 0 if not found.
+ `target` in a sorted `list`Or 0 if not found.
 
 12. Explain what is meant by the "contract" of a procedure. Why are preconditions and postconditions
-    important?
+ important?
 
 13. Write pseudocode for a procedure `reverseList(list)` that returns a new list with the elements
-    in reverse order. Prove that your algorithm terminates.
+ in reverse order. Prove that your algorithm terminates.
 
 14. Write pseudocode for a procedure `isSorted(list)` that returns true if the list is sorted in
-    non-decreasing order. What is the time complexity?
+ non-decreasing order. What is the time complexity?
 
 15. Explain the difference between `REPEAT UNTIL (condition)` and `WHILE (condition)` loops. Give an
-    example where each would be more appropriate than the other.
+ example where each would be more appropriate than the other.
 
 16. Write pseudocode for a procedure `findRange(list)` that returns both the minimum and maximum
-    values in a list in a single pass. What is the time complexity compared to calling findMin and
-    findMax separately?
+ values in a list in a single pass. What is the time complexity compared to calling findMin and
+ findMax separately?
 
 17. **(AP CS A)** Write a Java method that implements `removeDuplicates` using an `ArrayList`. What
-    is the time complexity of your solution?
+ is the time complexity of your solution?
 
 18. **(AP CS A)** Write a recursive Java method `gcd(int a, int b)` that computes the greatest
-    common divisor using Euclid's algorithm. Prove that it terminates by showing that the arguments
-    decrease at each recursive call.
+ common divisor using Euclid's algorithm. Prove that it terminates by showing that the arguments
+ decrease at each recursive call.
 
 19. Prove by induction that the procedure `sumFirstN(n)` which computes $1 + 2 + \cdots + n$
-    returns $n(n+1)/2$.
+ returns $n(n+1)/2$.
 
 20. Write pseudocode for a procedure `isAnagram(word1, word2)` that returns true if the two words
-    are anagrams of each other. What is the time complexity?
+ are anagrams of each other. What is the time complexity?
 
 21. Explain how information hiding reduces coupling between modules. Give a concrete example from
-    Java programming.
+ Java programming.
 
 22. Write pseudocode for a procedure that determines whether a list contains any duplicate values.
-    What is the most efficient approach?
+ What is the most efficient approach?
 
 23. Design a procedure `mode(list)` that returns the most frequently occurring value in a list. What
-    is the time complexity?
+ is the time complexity?
 
 24. **(AP CS A)** Explain the difference between a class and an interface in Java. How does each
-    support abstraction?
+ support abstraction?
 
 25. Write a detailed trace table for the binary search algorithm when searching for 23 in the list
-    [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]. Show the values of low, high, mid, and list[mid] at
-    each step.
+ [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]. Show the values of low, high, mid, and list[mid] at
+ each step.
 
 ## Practice Problems
 
@@ -938,7 +938,7 @@ Each level builds on the one below it, hiding implementation details and exposin
 <details>
 <summary>Question 4: Binary search pseudocode</summary>
 
-Write AP CSP pseudocode for a binary search that returns the index of `target` in sorted `list`, or 0 if not found.
+Write AP CSP pseudocode for a binary search that returns the index of `target` in sorted `list`Or 0 if not found.
 
 </details>
 
@@ -972,7 +972,7 @@ PROCEDURE binarySearch(list, target)
 }
 ```
 
-Note: AP CSP uses 1-based indexing, so indices start at 1. The loop continues until `low &gt; high`, indicating the target was not found.
+Note: AP CSP uses 1-based indexing, so indices start at 1. The loop continues until `low &gt; high`Indicating the target was not found.
 
 </details>
 
@@ -1016,3 +1016,11 @@ PROCEDURE findMostCommonWord(filename)
 This decomposition separates concerns: file I/O, string processing, counting, and finding the maximum.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

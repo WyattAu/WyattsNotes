@@ -15,15 +15,15 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 ## 1. Coulomb's Law
 
 **Coulomb's Law.** The electrostatic force between two point charges $q_1$ and $q_2$ separated by
-distance $r$ in vacuum is:
+Distance $r$ in vacuum is:
 
 $$\boxed{F = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
 
-where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the permittivity of free space and
+Where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the permittivity of free space and
 $k = 1/(4\pi\varepsilon_0) = 8.99 \times 10^9$ N m$^2$ C$^{-2}$ is Coulomb's constant.
 
 The force is **repulsive** for like charges and **attractive** for opposite charges, directed along the
-line joining them.
+Line joining them.
 
 ### Superposition Principle
 
@@ -45,17 +45,17 @@ This linearity is fundamental: each pair of charges interacts independently of a
 | Relative strength | Very weak | Very strong |
 
 The electrostatic force is approximately $10^{36}$ times stronger than gravity for proton--proton
-interactions. This enormous ratio explains why atomic and molecular structure is governed entirely by
-electromagnetic forces.
+Interactions. This enormous ratio explains why atomic and molecular structure is governed entirely by
+Electromagnetic forces.
 
 ## 2. Electric Field Strength
 
 **Definition.** The electric field strength $\mathbf{E}$ at a point is the force per unit positive
-charge:
+Charge:
 
 $$\boxed{\mathbf{E} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆q◆RB◆}$$
 
-SI units: N C$^{-1}$, equivalent to V m$^{-1}$.
+SI units: N C$^{-1}$Equivalent to V m$^{-1}$.
 
 ### Field of a Point Charge
 
@@ -70,13 +70,13 @@ The field points radially outward from a positive charge and radially inward tow
 
 $$\boxed{E = \frac{V}{d}}$$
 
-where $V$ is the potential difference and $d$ is the plate separation.
+Where $V$ is the potential difference and $d$ is the plate separation.
 
 **Proof.** A charge $q$ between the plates experiences force $F = qE$. Work done moving from one plate
-to the other: $W = Fd = qEd$. But also $W = qV$. Therefore $qEd = qV$, giving $E = V/d$. $\square$
+To the other: $W = Fd = qEd$. But also $W = qV$. Therefore $qEd = qV$Giving $E = V/d$. $\square$
 
 The field is uniform (constant magnitude and direction) between the plates, with fringe effects at the
-edges.
+Edges.
 
 ### Electric Field Lines
 
@@ -91,7 +91,7 @@ Field lines provide a visual representation of the electric field:
 ## 3. Electric Potential
 
 **Definition.** The electric potential $V$ at a point is the work done per unit positive charge in
-bringing a small test charge from infinity to that point:
+Bringing a small test charge from infinity to that point:
 
 $$\boxed{V = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆}$$
 
@@ -104,16 +104,16 @@ $$V = \frac{W}{q} = \frac{1}{q}\int_{\infty}^{r}\frac◆LB◆Qq◆RB◆◆LB◆4
 $\square$
 
 **Sign convention.** Potential is positive near a positive charge (work must be done against repulsion)
-and negative near a negative charge (the field does work). Potential decreases with distance,
-approaching zero at infinity.
+And negative near a negative charge (the field does work). Potential decreases with distance,
+Approaching zero at infinity.
 
 ### Field--Potential Relationship
 
 $$\boxed{E = -\frac{dV}{dr}}$$
 
 **Proof.** Consider a test charge $q$ moved by $dr$ in the direction of the field. Work done by the
-field: $dW = qE\,dr$. This equals the loss in potential energy: $dW = -q\,dV$. Therefore
-$qE\,dr = -q\,dV$, giving $E = -dV/dr$. $\square$
+Field: $dW = qE\,dr$. This equals the loss in potential energy: $dW = -q\,dV$. Therefore
+$qE\,dr = -q\,dV$Giving $E = -dV/dr$. $\square$
 
 The minus sign means the field points in the direction of decreasing potential.
 
@@ -130,13 +130,13 @@ This is the work required to bring two charges from infinite separation to dista
 ## 4. Equipotential Surfaces
 
 **Definition.** An equipotential surface is a surface on which every point has the same electric
-potential.
+Potential.
 
 ### Properties
 
 1. **No work is done** moving a charge along an equipotential surface (since $\Delta V = 0$).
 2. The electric field is always **perpendicular** to equipotential surfaces (since $E = -dV/dr$ and
-   $dV = 0$ along the surface).
+ $dV = 0$ along the surface).
 3. Equipotential surfaces **never cross** (each point has a unique potential).
 4. For a point charge, equipotentials are concentric spheres.
 5. For a uniform field, equipotentials are parallel planes perpendicular to the field.
@@ -152,9 +152,9 @@ A practical method uses conducting paper with electrodes painted on:
 4. Draw field lines perpendicular to the equipotentials.
 
 :::warning
-warning
-the field is zero on an equipotential. The field is non-zero and perpendicular; only the component
-tangent to the surface is zero.
+Warning
+The field is zero on an equipotential. The field is non-zero and perpendicular; only the component
+Tangent to the surface is zero.
 :::
 
 ## 5. Motion of Charged Particles in Uniform Fields
@@ -162,7 +162,7 @@ tangent to the surface is zero.
 ### Parabolic Trajectory
 
 A particle of charge $q$ and mass $m$ enters a uniform electric field $E$ with initial velocity $v$
-perpendicular to the field, between plates of length $L$.
+Perpendicular to the field, between plates of length $L$.
 
 **Horizontal** (perpendicular to field): uniform motion.
 
@@ -183,11 +183,11 @@ Eliminating $t$: $y = \frac{qE}{2mv^2}\,x^2$. This is a parabola.
 ### Energy Method
 
 An alternative approach uses energy conservation. The kinetic energy gained by the particle equals the
-work done by the field:
+Work done by the field:
 
 $$\Delta E_k = qV = qEd$$
 
-where $d$ is the vertical displacement. This is often quicker than the kinematic approach.
+Where $d$ is the vertical displacement. This is often quicker than the kinematic approach.
 
 <details>
 <summary>Worked Example: Electron Deflection</summary>
@@ -213,10 +213,10 @@ $\tan\theta = v_y/v = 1.47 \times 10^6 / (3.0 \times 10^7) = 0.0489$. $\theta = 
 A CRT uses electric fields to control and deflect a beam of electrons:
 
 1. **Electron gun:** A heated cathode emits electrons by thermionic emission. A high potential
-   difference $V_{\mathrm{acc}}$ accelerates them through a potential difference, giving kinetic energy
-   $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$.
+ difference $V_{\mathrm{acc}}$ accelerates them through a potential difference, giving kinetic energy
+ $\frac{1}{2}m_e v^2 = eV_{\mathrm{acc}}$.
 2. **Deflection system:** Two pairs of parallel plates (X and Y) apply transverse electric fields,
-   deflecting the beam horizontally and vertically.
+ deflecting the beam horizontally and vertically.
 3. **Fluorescent screen:** Electrons strike a phosphor coating, producing visible light.
 
 ### Acceleration Voltage and Beam Speed
@@ -235,13 +235,13 @@ The deflection sensitivity $S$ is the deflection per unit deflection voltage:
 
 $$S = \frac{y}{V_d} = \frac{eL^2}{2m_e v^2 d} = \frac◆LB◆L^2◆RB◆◆LB◆4V_{\mathrm{acc}}\,d◆RB◆$$
 
-where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
-plates, closer spacing, and lower acceleration voltage.
+Where $L$ is the plate length and $d$ is the plate separation. Higher sensitivity requires longer
+Plates, closer spacing, and lower acceleration voltage.
 
 :::warning
 Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
-deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
+Deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
 :::
 
 ## 7. Electric Fields of Extended Charge Distributions
@@ -249,7 +249,7 @@ deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{ac
 ### Field on the Axis of a Charged Ring
 
 A ring of radius $a$ carrying total charge $Q$. The field at distance $x$ from the centre along the
-axis:
+Axis:
 
 $$\boxed{E = \frac◆LB◆Qx◆RB◆◆LB◆4\pi\varepsilon_0(x^2 + a^2)^{3/2}◆RB◆}$$
 
@@ -270,28 +270,28 @@ For a line of charge with linear charge density $\lambda$ (C m$^{-1}$):
 
 $$\boxed{E = \frac◆LB◆\lambda◆RB◆◆LB◆2\pi\varepsilon_0 r◆RB◆}$$
 
-where $r$ is the perpendicular distance from the line. Note: the field falls off as $1/r$, not $1/r^2$,
-because a line charge is an extended source in one dimension.
+Where $r$ is the perpendicular distance from the line. Note: the field falls off as $1/r$Not $1/r^2$
+Because a line charge is an extended source in one dimension.
 
 ## 8. Potential Gradient and the Millikan Experiment
 
 ### Millikan's Oil Drop Experiment
 
 Millikan (1909--1913) measured the elementary charge $e$ by observing electrically charged oil drops
-in a uniform electric field.
+In a uniform electric field.
 
-**Method:** An oil drop of mass $m$ carries charge $q$. In a uniform upward field $E$, the drop is
-suspended when the electric force balances gravity:
+**Method:** An oil drop of mass $m$ carries charge $q$. In a uniform upward field $E$The drop is
+Suspended when the electric force balances gravity:
 
 $$qE = mg$$
 
 $$\boxed{q = \frac{mg}{E}}$$
 
 The mass is found from the terminal velocity (using Stokes' law for the drag force in air). Millikan
-found that all measured charges were integer multiples of $e = 1.60 \times 10^{-19}$ C.
+Found that all measured charges were integer multiples of $e = 1.60 \times 10^{-19}$ C.
 
 **Significance.** This experiment proved that charge is quantised — it comes in discrete packets of
-size $e$.
+Size $e$.
 
 ## 9. Capacitance and Stored Energy
 
@@ -303,7 +303,7 @@ The energy stored when the capacitor carries charge $Q$ at potential difference 
 
 $$\boxed{U = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{Q^2}{2C}}$$
 
-**Proof.** During charging, the p.d. at any instant is $v = q/C$. Work to transfer charge $dq$:
+**Proof.** During charging, the p.d. At any instant is $v = q/C$. Work to transfer charge $dq$:
 $dW = v\,dq = q\,dq/C$.
 
 $$W = \int_0^Q \frac{q}{C}\,dq = \frac{Q^2}{2C}$$
@@ -319,7 +319,7 @@ $$u = \frac{1}{2}\varepsilon_0 E^2$$
 <details>
 <summary>Problem 1</summary>
 Two point charges, $q_1 = +3.0\,\mu$C and $q_2 = -5.0\,\mu$C, are separated by 0.20 m. Calculate the
-force between them.
+Force between them.
 
 **Answer.** $F = \frac◆LB◆k|q_1||q_2|◆RB◆◆LB◆r^2◆RB◆ = \frac◆LB◆8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}◆RB◆◆LB◆0.040◆RB◆ = 3.37$ N (attractive).
 
@@ -336,7 +336,7 @@ Calculate the electric field strength at 0.10 m from a point charge of $+8.0\,\m
 <details>
 <summary>Problem 3</summary>
 Two parallel plates are separated by 2.0 cm with p.d. 500 V. Calculate the field strength and the force
-on a proton between the plates.
+On a proton between the plates.
 
 **Answer.** $E = V/d = 500/0.020 = 2.5 \times 10^4$ V m$^{-1}$.
 $F = qE = 1.60 \times 10^{-19} \times 2.5 \times 10^4 = 4.0 \times 10^{-15}$ N.
@@ -356,7 +356,7 @@ $U = q_2 V = (-1.0 \times 10^{-6})(3.60 \times 10^5) = -0.360$ J.
 
 <details>
 <summary>Problem 5</summary>
-Starting from $E = -dV/dr$, derive the field of a point charge from its potential.
+Starting from $E = -dV/dr$Derive the field of a point charge from its potential.
 
 **Answer.** $V = Q/(4\pi\varepsilon_0 r)$.
 $E = -\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\cdot\frac{d}{dr}(r^{-1}) = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆(-r^{-2}) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$. $\square$
@@ -376,15 +376,15 @@ $v = \sqrt{2E_k/m_e} = \sqrt◆LB◆2 \times 4.80 \times 10^{-16}/9.11 \times 10
 <details>
 <summary>Problem 7</summary>
 In a Millikan-type experiment, an oil drop of mass $1.2 \times 10^{-14}$ kg is suspended between
-parallel plates with field $E = 4.8 \times 10^4$ V m$^{-1}$. Calculate the charge on the drop and
-determine how many elementary charges it carries.
+Parallel plates with field $E = 4.8 \times 10^4$ V m$^{-1}$. Calculate the charge on the drop and
+Determine how many elementary charges it carries.
 
 **Answer.** $q = mg/E = 1.2 \times 10^{-14} \times 9.81 / (4.8 \times 10^4) = 2.45 \times 10^{-18}$ C.
 
 $n = q/e = 2.45 \times 10^{-18} / 1.60 \times 10^{-19} = 15.3$.
 
 Since $n$ must be an integer, the drop carries 15 elementary charges (the discrepancy is within
-experimental uncertainty).
+Experimental uncertainty).
 
 </details>
 
@@ -394,11 +394,11 @@ Sketch the equipotential lines and field lines for two equal positive charges se
 $d$. Explain why the field is zero at the midpoint.
 
 **Answer.** The equipotential lines form peanut-shaped closed curves around each charge, with a
-zero-potential surface at infinity. The field lines radiate outward from each charge, curving away from
-each other.
+Zero-potential surface at infinity. The field lines radiate outward from each charge, curving away from
+Each other.
 
 At the midpoint, the fields due to each charge are equal in magnitude ($kq/(d/2)^2$) and opposite in
-direction (each points away from its own charge). By symmetry, $\mathbf{E}_1 + \mathbf{E}_2 = 0$.
+Direction (each points away from its own charge). By symmetry, $\mathbf{E}_1 + \mathbf{E}_2 = 0$.
 This is an unstable equilibrium point.
 
 </details>
@@ -406,7 +406,7 @@ This is an unstable equilibrium point.
 <details>
 <summary>Problem 9</summary>
 A proton is released from rest in a uniform electric field of $3.0 \times 10^4$ V m$^{-1}$. Calculate
-its acceleration and the kinetic energy gained after moving 5.0 cm.
+Its acceleration and the kinetic energy gained after moving 5.0 cm.
 
 **Answer.** $a = qE/m_p = 1.60 \times 10^{-19} \times 3.0 \times 10^4 / 1.67 \times 10^{-27} = 2.88 \times 10^{12}$ m s$^{-2}$.
 
@@ -419,9 +419,21 @@ $E_k = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4 \tim
 A charged sphere of mass 0.50 g is suspended by a thread in a horizontal uniform field of
 $5.0 \times 10^3$ V m$^{-1}$. The thread makes $15^\circ$ with the vertical. Calculate the charge.
 
-**Answer.** Resolving: $qE = T\sin 15^\circ$, $mg = T\cos 15^\circ$.
+**Answer.** Resolving: $qE = T\sin 15^\circ$$mg = T\cos 15^\circ$.
 
 $\tan 15^\circ = qE/(mg)$.
 $q = mg\tan 15^\circ / E = 0.50 \times 10^{-3} \times 9.81 \times 0.268 / 5000 = 2.63 \times 10^{-7}$ C $= 263$ nC.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

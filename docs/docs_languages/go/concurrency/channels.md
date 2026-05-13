@@ -11,7 +11,7 @@ categories:
 ## Channel Review
 
 Unbuffered channels synchronize sender and receiver: both must be ready at the same time. Buffered
-channels allow the sender to proceed up to the buffer capacity without a receiver.
+Channels allow the sender to proceed up to the buffer capacity without a receiver.
 
 ```go
 unbuf := make(chan int)      // blocks until receiver ready
@@ -21,7 +21,7 @@ buf := make(chan int, 10)    // sender can buffer up to 10
 ## Select
 
 `select` allows a goroutine to wait on multiple channel operations simultaneously. It blocks until
-one of its cases can proceed, then executes that case:
+One of its cases can proceed, then executes that case:
 
 ```go
 ch1 := make(chan string)
@@ -85,7 +85,7 @@ for {
 ### Nil Channels
 
 Sending to or receiving from a `nil` channel blocks forever. This is useful in `select` to
-temporarily disable a case:
+Temporarily disable a case:
 
 ```go
 var ch1 chan int // nil
@@ -156,7 +156,7 @@ func fanIn(chs ...<-chan int) <-chan int {
 ### Pipeline
 
 A pipeline is a series of stages connected by channels, where each stage receives values from
-upstream and sends values downstream:
+Upstream and sends values downstream:
 
 ```go
 func generator(nums ...int) <-chan int {
@@ -189,7 +189,7 @@ func main() {
 ```
 
 Each stage runs in its own goroutine. Stages are connected only by channels. Cancellation requires
-propagating a done signal through the pipeline.
+Propagating a done signal through the pipeline.
 
 ### Worker Pool
 
@@ -247,18 +247,18 @@ func processItems(items []Item, maxConcurrency int) {
 ## The context Package
 
 The `context` package provides cancellation, deadlines, and request-scoped values across goroutine
-boundaries. It is the standard mechanism for propagating cancellation signals in Go.
+Boundaries. It is the standard mechanism for propagating cancellation signals in Go.
 
 ### Context Types
 
-| Type                   | Purpose                                           |
+| Type | Purpose |
 | ---------------------- | ------------------------------------------------- |
-| `context.Background`   | Root context, never cancelled                     |
-| `context.TODO`         | Placeholder when context is not yet available     |
-| `context.WithCancel`   | Returns a cancelable context and cancel function  |
-| `context.WithTimeout`  | Returns a context that cancels after a deadline   |
+| `context.Background` | Root context, never cancelled |
+| `context.TODO` | Placeholder when context is not yet available |
+| `context.WithCancel` | Returns a cancelable context and cancel function |
+| `context.WithTimeout` | Returns a context that cancels after a deadline |
 | `context.WithDeadline` | Returns a context that cancels at a specific time |
-| `context.WithValue`    | Returns a context carrying a key-value pair       |
+| `context.WithValue` | Returns a context carrying a key-value pair |
 
 ### WithCancel
 
@@ -316,7 +316,7 @@ func handler(ctx context.Context) {
 ```
 
 Use `context.WithValue` sparingly and only for request-scoped data that flows through the call
-chain. Do not use it as a global variable substitute.
+Chain. Do not use it as a global variable substitute.
 
 ### Cancellation Propagation
 
@@ -331,29 +331,37 @@ cancel() // cancels parent, child1, and child2
 ```
 
 This is how HTTP request cancellation works: the server creates a context per request, and when the
-client disconnects, the context is cancelled, propagating to all goroutines handling that request.
+Client disconnects, the context is cancelled, propagating to all goroutines handling that request.
 
 ## Common Pitfalls
 
-1. **Forgetting to call the cancel function.** `WithCancel`, `WithTimeout`, and `WithDeadline`
-   return a cancel function that must be called to release resources. Use `defer cancel()`.
+1. **Forgetting to call the cancel function.** `WithCancel``WithTimeout`And `WithDeadline`
+ return a cancel function that must be called to release resources. Use `defer cancel()`.
 
 2. **Not propagating context through function calls.** If a function starts goroutines, accept a
-   `context.Context` parameter so callers can cancel the work.
+ `context.Context` parameter so callers can cancel the work.
 
 3. **Using `context.WithValue` for business logic data.** Values in context are untyped. Prefer
-   function parameters for structured data. Reserve context values for cross-cutting concerns
-   (request IDs, tracing, auth tokens).
+ function parameters for structured data. Reserve context values for cross-cutting concerns
+ (request IDs, tracing, auth tokens).
 
 4. **Buffered channel deadlocks.** If all goroutines are blocked sending to a channel and no
-   goroutine is receiving (or vice versa), the program deadlocks. Ensure there is always at least
-   one receiver for each sender.
+ goroutine is receiving (or vice versa), the program deadlocks. Ensure there is always at least
+ one receiver for each sender.
 
 5. **Leaking goroutines.** A goroutine that blocks forever on a channel read with no sender (or vice
-   versa) is a goroutine leak. Use context cancellation to ensure goroutines can exit.
+ versa) is a goroutine leak. Use context cancellation to ensure goroutines can exit.
 
 6. **Closing a channel from the receiver.** Only the sender should close a channel. If the receiver
-   closes it, the sender may panic when trying to send.
+ closes it, the sender may panic when trying to send.
 
 7. **Race conditions with `select`.** If multiple cases are ready, `select` chooses uniformly at
-   random. Do not assume a preferred order.
+ random. Do not assume a preferred order.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

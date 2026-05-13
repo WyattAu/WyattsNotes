@@ -7,7 +7,7 @@ slug: context-managers
 ## The with Statement
 
 The `with` statement guarantees that setup and teardown code runs, even if an exception occurs in
-the block body. It is the primary mechanism for resource management in Python.
+The block body. It is the primary mechanism for resource management in Python.
 
 ```python
 # Basic form
@@ -45,7 +45,7 @@ with (
 :::warning
 If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
 `PermissionError`), the first resource (`input.txt`) is still properly closed. This is a key
-advantage over manual try/finally.
+Advantage over manual try/finally.
 :::
 
 ## \_\_enter\_\_ and \_\_exit\_\_
@@ -80,14 +80,14 @@ with Resource("db_connection") as r:
 
 ### \_\_exit\_\_ Parameters
 
-| Parameter  | Description                                |
+| Parameter | Description |
 | ---------- | ------------------------------------------ |
 | `exc_type` | Exception class, or `None` if no exception |
-| `exc_val`  | Exception instance, or `None`              |
-| `exc_tb`   | Traceback object, or `None`                |
+| `exc_val` | Exception instance, or `None` |
+| `exc_tb` | Traceback object, or `None` |
 
 All three are `None` when the block exits normally. When an exception occurs, they contain the
-exception details.
+Exception details.
 
 ### Suppressing Exceptions
 
@@ -223,7 +223,7 @@ errors = buffer.getvalue()
 ## File Handling with Context Managers
 
 `open()` is the most common context manager. It guarantees the file is closed even if an exception
-occurs:
+Occurs:
 
 ```python
 # Reading
@@ -647,7 +647,7 @@ with elevated_privileges(0, 0):
 ## contextlib.ExitStack
 
 `ExitStack` manages a dynamic number of context managers, which is useful when the number of
-resources is determined at runtime:
+Resources is determined at runtime:
 
 ```python
 from contextlib import ExitStack
@@ -840,3 +840,11 @@ async def get_resource():
 async with get_resource():
     pass
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

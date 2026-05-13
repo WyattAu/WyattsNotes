@@ -8,14 +8,14 @@ categories:
   - cpp
 slug: debugger
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A compiled C++ binary consists of machine code instructions. To map an Instruction Pointer (IP)
-address back to a specific line of C++ source code, variable name, or stack frame, the debugger
-requires **Debug Symbols**.
+Address back to a specific line of C++ source code, variable name, or stack frame, the debugger
+Requires **Debug Symbols**.
 
 This module analyzes the architecture of symbol formats, the mechanics of mapping source paths, and
-the procedures for attaching debuggers to active processes.
+The procedures for attaching debuggers to active processes.
 
 ## Debug Information Architecture
 
@@ -25,34 +25,34 @@ The format of debug information depends on the platform and toolchain.
 
 - **Format:** A standardized debugging data format.
 - **Storage:**
-  - **Embedded:** By default, GCC and Clang embed DWARF sections (`.debug_info`, `.debug_line`)
-    directly into the final executable or shared library.
-  - **Split (dwp/dSYM):** For release builds or to reduce binary size, symbols can be separated.
-    - **Linux:** `.debug` files (via `objcopy --only-keep-debug`).
-    - **macOS:** `.dSYM` bundles (via `dsymutil`).
+ - **Embedded:** By default, GCC and Clang embed DWARF sections (`.debug_info``.debug_line`)
+ directly into the final executable or shared library.
+ - **Split (dwp/dSYM):** For release builds or to reduce binary size, symbols can be separated.
+ - **Linux:** `.debug` files (via `objcopy --only-keep-debug`).
+ - **macOS:** `.dSYM` bundles (via `dsymutil`).
 - **Compiler Flag:** `-g` (default level) or `-g3` (includes macro information).
 
 ### 2. PDB (Windows MSVC)
 
 - **Format:** Program Database (Proprietary Microsoft format).
 - **Storage:** Always separate. The executable contains a GUID signature that matches a specific
-  `.pdb` file.
+ `.pdb` file.
 - **Compiler Flag:** `/Zi` (separate PDB) or `/Z7` (embedded debug info, similar to DWARF, mostly
-  for static libs).
+ for static libs).
 
 ## Debug Information Levels
 
 The amount of debug information embedded in the binary is controlled by flags that determine the
-granularity of source-level mapping.
+Granularity of source-level mapping.
 
 ### GCC/Clang Debug Levels
 
-| Flag  | Description                                                                                              | Binary Size Impact |
+| Flag | Description | Binary Size Impact |
 | :---- | :------------------------------------------------------------------------------------------------------- | :----------------- |
-| `-g0` | No debug information (default for release).                                                              | None               |
-| `-g1` | Minimal: line numbers and source file names only. No local variable information.                         | Small              |
-| `-g2` | Standard (same as `-g`): Full debug info including local variables, function signatures, types.          | Moderate           |
-| `-g3` | Maximum: Includes macro definitions and expanded macro locations. Useful for debugging macro-heavy code. | Large              |
+| `-g0` | No debug information (default for release). | None |
+| `-g1` | Minimal: line numbers and source file names only. No local variable information. | Small |
+| `-g2` | Standard (same as `-g`): Full debug info including local variables, function signatures, types. | Moderate |
+| `-g3` | Maximum: Includes macro definitions and expanded macro locations. Useful for debugging macro-heavy code. | Large |
 
 ```bash
 # Compile with maximum debug info including macros
@@ -64,20 +64,20 @@ readelf -S app | grep debug
 
 ### MSVC Debug Levels
 
-| Flag  | Description                                                                      |
+| Flag | Description |
 | :---- | :------------------------------------------------------------------------------- |
-| `/Z7` | Old-style: Embeds debug info in each .obj file.                                  |
-| `/Zi` | Program Database: Generates a separate .pdb file.                                |
+| `/Z7` | Old-style: Embeds debug info in each .obj file. |
+| `/Zi` | Program Database: Generates a separate .pdb file. |
 | `/ZI` | Edit and Continue: PDB with additional metadata for hot-reload during debugging. |
 
 `/Zi` is the standard for production builds. `/ZI` is useful during development in Visual Studio but
-produces slightly larger PDBs and may inhibit some optimizations.
+Produces slightly larger PDBs and may inhibit some optimizations.
 
 ## 1. LLDB (The LLVM Debugger)
 
 LLDB is the default debugger for macOS (Xcode) and the preferred modern debugger for Linux/Android
-when using Clang. It uses a Clang frontend for expression evaluation, allowing it to understand
-modern C++ syntax perfectly.
+When using Clang. It uses a Clang frontend for expression evaluation, allowing it to understand
+Modern C++ syntax perfectly.
 
 ### Compilation Requirements
 
@@ -97,7 +97,7 @@ lldb ./app
 ```
 
 **Attach Mode:** Attaching to a running process requires root privileges (on Linux) or specific
-code-signing entitlements (on macOS) to use the `ptrace` system call.
+Code-signing entitlements (on macOS) to use the `ptrace` system call.
 
 ```bash
 # 1. Find the Process ID (PID)
@@ -110,7 +110,7 @@ lldb -p <PID>
 ### Symbol Loading
 
 When debugging optimized binaries or stripped executables, you must tell LLDB where to find the
-symbols if they were split.
+Symbols if they were split.
 
 ```bash
 (lldb) target symbols add /path/to/symbols.dSYM
@@ -118,8 +118,8 @@ symbols if they were split.
 
 ### Source Mapping
 
-A common issue in CI/CD builds is that the binary was built in `/build/workspace/src`, but the
-source code on your local machine is in `/Users/dev/src`. The debugger cannot find the source files.
+A common issue in CI/CD builds is that the binary was built in `/build/workspace/src`But the
+Source code on your local machine is in `/Users/dev/src`. The debugger cannot find the source files.
 
 **Solution:** Map the build-time path to the run-time path.
 
@@ -175,8 +175,8 @@ gdb -p <PID>
 ### Debuginfod (Automatic Symbol Loading)
 
 Modern Linux distributions (Fedora, Debian 12+, Ubuntu 22.04+) utilize **debuginfod**. When GDB
-encounters a binary without symbols (like a system library `libstdc++.so`), it queries a centralized
-server to download the matching debug info on demand.
+Encounters a binary without symbols (like a system library `libstdc++.so`), it queries a centralized
+Server to download the matching debug info on demand.
 
 **Configuration:**
 
@@ -222,7 +222,7 @@ _GDB will prompt to enable this feature upon startup._
 ### GDB Pretty Printers
 
 GDB supports **pretty printers** that customize how C++ types are displayed. The `libstdc++` library
-ships with pretty printers for standard containers:
+Ships with pretty printers for standard containers:
 
 ```bash
 # Without pretty printers:
@@ -263,7 +263,7 @@ gdb.pretty_printers.append(my_lookup)
 ## 3. WinDbg (Windows Debugging)
 
 While Visual Studio has an excellent integrated debugger, **WinDbg** is the tool for systems
-engineering, kernel debugging, and post-mortem crash dump analysis on Windows.
+Engineering, kernel debugging, and post-mortem crash dump analysis on Windows.
 
 ### The Symbol Path architecture
 
@@ -279,20 +279,20 @@ srv*C:\Symbols*https://msdl.microsoft.com/download/symbols
 - `srv*`: Indicates a symbol server protocol.
 - `C:\Symbols`: Local cache directory.
 - `https://...`: Microsoft's public symbol server (downloads symbols for Windows DLLs like
-  `kernel32.dll` or `ntdll.dll`).
+ `kernel32.dll` or `ntdll.dll`).
 
 ### Loading Symbols
 
 In WinDbg (Command window):
 
 1. **Set Path:**
-   `.sympath srv*C:\Symbols*https://msdl.microsoft.com/download/symbols;C:\MyProject\Build\Debug`
+ `.sympath srv*C:\Symbols*https://msdl.microsoft.com/download/symbols;C:\MyProject\Build\Debug`
 2. **Reload:** `.reload /f` (Force reload).
 
 ### Time Travel Debugging (TTD)
 
 WinDbg Preview supports TTD, allowing you to record the execution of a process and then replay it
-forwards and backwards. This is invaluable for non-deterministic concurrency bugs.
+Forwards and backwards. This is invaluable for non-deterministic concurrency bugs.
 
 1. Launch WinDbg Preview as Administrator.
 2. Select "Launch Executable (Advanced)".
@@ -391,8 +391,8 @@ Recommended for Windows MSVC builds.
 ## Post-Mortem Debugging with Core Dumps
 
 When a process crashes (e.g., segmentation fault), the OS can write the complete memory image of the
-process to a file called a **core dump**. This file can be loaded into a debugger to inspect the
-state at the moment of the crash, without needing to reproduce the crash.
+Process to a file called a **core dump**. This file can be loaded into a debugger to inspect the
+State at the moment of the crash, without needing to reproduce the crash.
 
 ### Enabling Core Dumps on Linux
 
@@ -436,8 +436,8 @@ lldb -c core.app.12345.1699999999 -- ./app
 
 ### Minidumps (Windows)
 
-On Windows, the equivalent of a core dump is a **minidump** (`.dmp` file). These are typically
-generated by Windows Error Reporting (WER) or explicitly via `MiniDumpWriteDump()`.
+On Windows, the equivalent of a core dump is a **minidump** (`.dmp` file). These are 
+Generated by Windows Error Reporting (WER) or explicitly via `MiniDumpWriteDump()`.
 
 ```text
 # In WinDbg:
@@ -488,20 +488,20 @@ clang++ -g -O1 -fsanitize=thread main.cpp -o app_tsan
 
 ## Debug Info and Optimization Interaction
 
-Debugging optimized binaries (`-O2`, `-O3`) is fundamentally harder than debugging unoptimized
-binaries (`-O0`) because the compiler transforms the code in ways that break the 1:1 mapping between
-source lines and machine instructions.
+Debugging optimized binaries (`-O2``-O3`) is fundamentally harder than debugging unoptimized
+Binaries (`-O0`) because the compiler transforms the code in ways that break the 1:1 mapping between
+Source lines and machine instructions.
 
 ### What Breaks at `-O2`
 
 1. **Variable Elimination:** Variables that are proven dead are eliminated. The debugger shows
-   "optimized out" for their values.
+ "optimized out" for their values.
 2. **Instruction Reordering:** Instructions are reordered for pipeline efficiency. Stepping through
-   source lines jumps non-sequentially.
+ source lines jumps non-sequentially.
 3. **Inlining:** Inlined functions do not appear in the call stack. The debugger may show the
-   caller's frame where you expect the callee.
+ caller's frame where you expect the callee.
 4. **Loop Unrolling:** Loops are unrolled, making it appear as if the loop body executes only once
-   when stepping.
+ when stepping.
 
 ### Best Practice: Release with Debug Info
 
@@ -515,51 +515,59 @@ strip --strip-debug --strip-unneeded app
 ```
 
 This gives you an optimized binary for production with a separate symbol file for post-mortem
-debugging. The `app.debug` file can be stored in a symbol server and matched to the production
-binary via build ID.
+Debugging. The `app.debug` file can be stored in a symbol server and matched to the production
+Binary via build ID.
 
 ## Architectural Considerations
 
 1. **Release with Debug Info:** It is best practice to compile Release builds with debug info
-   enabled (`-g -O3` or `/Zi /O2`). You can then strip the symbols into a separate file (`.dSYM` or
-   `.pdb`) for deployment. This allows you to debug production crashes by matching the production
-   binary with the saved symbol file.
+ enabled (`-g -O3` or `/Zi /O2`). You can then strip the symbols into a separate file (`.dSYM` or
+ `.pdb`) for deployment. This allows you to debug production crashes by matching the production
+ binary with the saved symbol file.
 2. **Ptrace Hardening (Linux):** By default, many Linux kernels (via YAMA security module) prevent
-   non-root processes from attaching to other processes.
-   - _Fix:_ `sudo sysctl -w kernel.yama.ptrace_scope=0` (Development only).
+ non-root processes from attaching to other processes.
+ - _Fix:_ `sudo sysctl -w kernel.yama.ptrace_scope=0` (Development only).
 3. **Core Dumps:** When a process crashes (Segfault), the OS can write the memory state to a file.
-   - _Enable:_ `ulimit -c unlimited`
-   - _Analyze:_ `gdb ./app core.dump` or `lldb -c core.dump`.
+ - _Enable:_ `ulimit -c unlimited`
+ - _Analyze:_ `gdb ./app core.dump` or `lldb -c core.dump`.
 
 ## Common Pitfalls
 
 ### 1. Debugging a Stripped Binary
 
 If the binary has been stripped (`strip app`), all symbol information is removed. You cannot set
-breakpoints by function name, view variables, or get meaningful backtraces. Always keep the debug
-file (`.debug` / `.dSYM` / `.pdb`) alongside the binary or on a symbol server.
+Breakpoints by function name, view variables, or get meaningful backtraces. Always keep the debug
+File (`.debug` / `.dSYM` / `.pdb`) alongside the binary or on a symbol server.
 
 ### 2. Source Path Mismatch in CI Builds
 
 CI builds produce binaries with source paths like `/__w/repo/repo/src/main.cpp`. Your local machine
-has `/home/user/project/src/main.cpp`. The debugger cannot find the source. Always configure source
-mapping (`target.source-map` in LLDB, `directory` command in GDB).
+Has `/home/user/project/src/main.cpp`. The debugger cannot find the source. Always configure source
+Mapping (`target.source-map` in LLDB, `directory` command in GDB).
 
 ### 3. Mismatched PDB and Binary
 
 On Windows, the PDB is matched to the binary via a GUID embedded in both. If you rebuild the binary
-but the PDB is stale (from a previous build), the debugger will refuse to load the PDB or load
-incorrect symbols. Always rebuild both together.
+But the PDB is stale (from a previous build), the debugger will refuse to load the PDB or load
+Incorrect symbols. Always rebuild both together.
 
 ### 4. `-O0` Performance Artifacts
 
 Debugging at `-O0` can mask bugs that only appear at higher optimization levels. Timing-dependent
-bugs, undefined behavior exploitation, and certain concurrency issues may not reproduce at `-O0`.
+Bugs, undefined behavior exploitation, and certain concurrency issues may not reproduce at `-O0`.
 Always verify that the bug reproduces at the target optimization level before spending hours
-debugging.
+Debugging.
 
 ### 5. Missing DWARF Call Frame Information
 
 If you see `??` in backtraces instead of function names, the binary may be missing `.eh_frame` or
 `.debug_frame` sections. This happens when linking with `-Wl,--strip-all` which removes unwind info.
 Use `--strip-debug` instead, which preserves unwind tables.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

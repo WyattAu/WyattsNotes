@@ -33,7 +33,7 @@ Transitions:
   +------0-----+
 ```
 
-More clearly:
+More :
 
 ```
       1        0
@@ -65,13 +65,13 @@ Final state: S0 (accepting). The string `10110` is **accepted** because it conta
 
 ---
 ### UT-2: Regular Expressions
-**Question:** Write regular expressions for: (a) all binary strings that start with `01`, (b) all binary strings of length exactly 3 that contain at least one `1`, (c) all strings over $\{a, b\}$ that do NOT contain the substring `aba`. For (c), explain why this cannot be done with a standard regular expression without negation.
+**Question:** Write regular expressions for: (a) all binary strings that start with `01`(b) all binary strings of length exactly 3 that contain at least one `1`(c) all strings over $\{a, b\}$ that do NOT contain the substring `aba`. For (c), explain why this cannot be done with a standard regular expression without negation.
 
 **Solution:**
 
 (a) Strings starting with `01`: `01(0|1)*`
 
-This matches: `01`, `010`, `011`, `0101`, `0110`, etc. The `(0|1)*` allows any binary sequence (including empty) after the initial `01`.
+This matches: `01``010``011``0101``0110`Etc. The `(0|1)*` allows any binary sequence (including empty) after the initial `01`.
 
 (b) Strings of length exactly 3 with at least one `1`:
 
@@ -111,7 +111,7 @@ Trace the Turing machine with the input `_110_` (representing binary `011` $= 3$
 
 **Solution:**
 
-Initial tape: `_ 1 1 0 _` (head on first `1`, state q0)
+Initial tape: `_ 1 1 0 _` (head on first `1`State q0)
 
 Wait, the number is stored LSB first, so `_110_` represents bits 1, 1, 0 from left to right, which is binary $011_2 = 3_{10}$.
 
@@ -119,23 +119,23 @@ Tape layout: `[_] [1] [1] [0] [_]` -- but the head position needs clarification.
 
 Tape: `1 1 0 _` with head on `0` (the LSB).
 
-Step 1: State q0, read `0`. Write `1`, move R, go to q_accept.
+Step 1: State q0, read `0`. Write `1`Move R, go to q_accept.
 Tape: `1 1 1 _`. Head on `_`.
 
 The machine halts. Result: `111` (LSB first) $= 111_2 = 7_{10}$.
 
-Wait, but `011` $= 3$, adding 1 gives `100` $= 4$. Let me re-examine.
+Wait, but `011` $= 3$Adding 1 gives `100` $= 4$. Let me re-examine.
 
-If `110` in LSB-first means: bit 0 $= 1$, bit 1 $= 1$, bit 2 $= 0$. So the number is $1 \times 2^0 + 1 \times 2^1 + 0 \times 2^2 = 1 + 2 + 0 = 3$. Adding 1 gives $4 = 100_2$. In LSB-first: `001`.
+If `110` in LSB-first means: bit 0 $= 1$Bit 1 $= 1$Bit 2 $= 0$. So the number is $1 \times 2^0 + 1 \times 2^1 + 0 \times 2^2 = 1 + 2 + 0 = 3$. Adding 1 gives $4 = 100_2$. In LSB-first: `001`.
 
 Let me retrace with the correct initial tape. The tape stores `110` (LSB first) for the number 3.
 
 Tape: `[1] [1] [0] [_]` with head on position 0 (the LSB, which is `1`).
 
-Step 1: State q0, read `1`. Write `0`, move L, stay in q0.
+Step 1: State q0, read `1`. Write `0`Move L, stay in q0.
 Tape: `[0] [1] [0] [_]`. Head moves left to position -1.
 
-Step 2: State q0, read `_`. Write `1`, move R, go to q_accept.
+Step 2: State q0, read `_`. Write `1`Move R, go to q_accept.
 Tape: `[1] [0] [1] [0] [_]`. Head on position 0.
 
 Result: `101` (LSB first) $= 1 \times 2^0 + 0 \times 2^1 + 1 \times 2^2 = 1 + 0 + 4 = 5$.
@@ -148,7 +148,7 @@ Tape: `_ [1] [1] [0] _`
 
 If the head starts at `0` (position 3):
 
-Step 1: q0, read `0`. Write `1`, move R, q_accept.
+Step 1: q0, read `0`. Write `1`Move R, q_accept.
 Tape: `_ [1] [1] [1] _`. Result: `111` (MSB first) $= 7$.
 
 But this is MSB first, not LSB first. In MSB first: `011` $= 3$. Adding 1: `100` $= 4$.
@@ -157,13 +157,13 @@ The issue is my initial interpretation. Let me use MSB first:
 
 `011` with head on the LSB (rightmost `1`):
 
-Step 1: q0, read `1`. Write `0`, move L.
+Step 1: q0, read `1`. Write `0`Move L.
 Tape: `0 1 0`. Head on the middle `1`.
 
-Step 2: q0, read `1`. Write `0`, move L.
+Step 2: q0, read `1`. Write `0`Move L.
 Tape: `0 0 0`. Head on the `0`.
 
-Step 3: q0, read `0`. Write `1`, move R, q_accept.
+Step 3: q0, read `0`. Write `1`Move R, q_accept.
 Tape: `1 0 0`. Head on `0`.
 
 Result: `100` $= 4$. Correct!
@@ -173,7 +173,7 @@ The Turing machine correctly adds 1 to the binary number `011` ($= 3$), producin
 ## Integration Tests
 
 ### IT-1: Regular Languages and FSM (with Programming Constructs)
-**Question:** Write a Python function that simulates the FSM from UT-1 (accepts binary strings with even number of 0s). Then, write a regular expression that matches the same language. Use both to test the strings `""`, `"0"`, `"00"`, `"101"`, `"1110"`, `"01010"`. Compare the time complexity of the FSM approach vs the regex approach for an input of length $n$.
+**Question:** Write a Python function that simulates the FSM from UT-1 (accepts binary strings with even number of 0s). Then, write a regular expression that matches the same language. Use both to test the strings `""``"0"``"00"``"101"``"1110"``"01010"`. Compare the time complexity of the FSM approach vs the regex approach for an input of length $n$.
 
 **Solution:**
 
@@ -211,7 +211,7 @@ Expected output:
 
 FSM approach: $O(n)$ -- one pass through the string, $O(1)$ work per character. Memory: $O(1)$ (just one state variable).
 
-Regex approach: depends on the implementation. For the regex `^(1*01*01*)*$`, a naive backtracking engine could have exponential time in the worst case because the nested `*` operators create many possible match paths. A DFA-based regex engine (like Google's RE2) compiles the regex to a DFA first and achieves $O(n)$ matching time, but with potentially exponential compilation time.
+Regex approach: depends on the implementation. For the regex `^(1*01*01*)*$`A naive backtracking engine could have exponential time in the worst case because the nested `*` operators create many possible match paths. A DFA-based regex engine (like Google's RE2) compiles the regex to a DFA first and achieves $O(n)$ matching time, but with potentially exponential compilation time.
 
 The FSM approach is always $O(n)$ time and $O(1)$ space, making it more predictable and efficient. For simple validation rules, a hand-coded FSM or state variable is often preferred over regex for performance-critical applications.
 
@@ -221,9 +221,9 @@ The FSM approach is always $O(n)$ time and $O(1)$ space, making it more predicta
 
 **Solution:**
 
-(a) **Halting problem:** Given an arbitrary program $P$ and input $I$, determine whether $P$ halts (terminates) when run on $I$.
+(a) **Halting problem:** Given an arbitrary program $P$ and input $I$Determine whether $P$ halts (terminates) when run on $I$.
 
-**Proof by contradiction:** Assume a function `halts(P, I)` exists that returns True if program $P$ halts on input $I$, and False otherwise.
+**Proof by contradiction:** Assume a function `halts(P, I)` exists that returns True if program $P$ halts on input $I$And False otherwise.
 
 Construct a paradoxical program `trouble(P)`:
 
@@ -244,7 +244,7 @@ Both cases lead to contradictions, so the assumption that `halts` exists is fals
 
 (b) A compiler cannot detect all infinite loops because if it could, it would solve the halting problem. Specifically, to detect an infinite loop, the compiler would need to determine whether a program (or part of a program) halts -- which is undecidable. Any compiler that claims to detect all infinite loops would either miss some (false negatives) or incorrectly flag terminating code as infinite (false positives).
 
-(c) **Detectable pattern example:** `while True: pass` -- this is trivially an infinite loop because the condition is a constant `True`.
+(c) **Detectable pattern example:** `while True: pass` -- this is an infinite loop because the condition is a constant `True`.
 
 Another example: `x = 0; while x >= 0: x += 1` -- a static analyser can detect that `x` only increases and the condition `x >= 0` is always true (for an integer that starts non-negative), making this loop infinite.
 
@@ -285,7 +285,7 @@ States: q0 (start), q1 (reading b's, popping), q_accept.
 - End of input in q1 with empty stack: accept.
 - Read 'a' in q1: reject (a after b).
 
-(c) **Why no DFA can accept $a^n b^n$:** A DFA has a finite number of states. For the language $\{a^n b^n\}$, the DFA would need to "remember" exactly how many $a$'s were read to verify the same number of $b$'s follow. For arbitrary $n$, this requires unbounded memory (counting arbitrarily high). A DFA's finite state set cannot store an arbitrarily large count. This is proven by the pumping lemma for regular languages: a sufficiently long string in the language can be "pumped" (a substring repeated) and must remain in the language. For $a^n b^n$, pumping the $a$ section breaks the balance, producing a string not in the language -- proving it is not regular.
+(c) **Why no DFA can accept $a^n b^n$:** A DFA has a finite number of states. For the language $\{a^n b^n\}$The DFA would need to "remember" exactly how many $a$'s were read to verify the same number of $b$'s follow. For arbitrary $n$This requires unbounded memory (counting arbitrarily high). A DFA's finite state set cannot store an arbitrarily large count. This is proven by the pumping lemma for regular languages: a sufficiently long string in the language can be "pumped" (a substring repeated) and must remain in the language. For $a^n b^n$Pumping the $a$ section breaks the balance, producing a string not in the language -- proving it is not regular.
 
 (d) **Complexity classes:**
 

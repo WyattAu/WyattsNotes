@@ -28,7 +28,7 @@ Meanwhile, **photolysis of water** occurs at PSII: $2H_{2}O \to 4H^{+} + 4e^{-} 
 
 As electrons pass through the electron transport chain, they release energy that is used to pump $H^{+}$ ions from the stroma into the thylakoid space, creating a **proton gradient**. $H^{+}$ ions flow back through ATP synthase, driving the synthesis of **ATP** (photophosphorylation).
 
-At photosystem I, electrons are re-excited and transferred via ferredoxin to NADP$^{+}$, reducing it to **NADPH** (with the addition of $H^{+}$ from the stroma).
+At photosystem I, electrons are re-excited and transferred via ferredoxin to NADP$^{+}$Reducing it to **NADPH** (with the addition of $H^{+}$ from the stroma).
 
 (b) With DCMU blocking electron transfer from PSII to the plastoquinone pool:
 - (i) **Oxygen production stops**: DCMU prevents the acceptance of electrons from PSII, so the electron transport chain cannot operate. The water-splitting mechanism at PSII halts because there is no way to replace the excited electrons from P680.
@@ -47,10 +47,10 @@ A potted plant was placed under different environmental conditions, and the rate
 
 | Condition | Relative rate of water uptake |
 |-----------|:---:|
-| Still air, $20^{\circ}C$, normal humidity | 1.0 |
-| Moving air (fan), $20^{\circ}C$, normal humidity | 1.8 |
-| Still air, $30^{\circ}C$, normal humidity | 1.5 |
-| Still air, $20^{\circ}C$, high humidity | 0.5 |
+| Still air, $20^{\circ}C$Normal humidity | 1.0 |
+| Moving air (fan), $20^{\circ}C$Normal humidity | 1.8 |
+| Still air, $30^{\circ}C$Normal humidity | 1.5 |
+| Still air, $20^{\circ}C$High humidity | 0.5 |
 
 (a) Explain the mechanism of water movement through the xylem from the root to the leaf, referring to the **transpiration pull** and the **cohesion-tension theory**. [4 marks]
 
@@ -100,9 +100,9 @@ The result is a negative pressure (tension) in the xylem that pulls water upward
 | **End walls** | End walls broken down, forming continuous tubes | End walls remain as **sieve plates** with pores |
 | **Transport direction** | One-way (upward only) | Two-way (upward and downward) |
 
-(b) According to the **mass flow hypothesis**, sugars (mainly sucrose) are actively loaded into phloem sieve tubes at a **source** (e.g. leaf). This lowers the water potential inside the sieve tube, causing water to enter by osmosis from the xylem and surrounding cells. This creates a **high hydrostatic pressure** at the source end.
+(b) According to the **mass flow hypothesis**, sugars (mainly sucrose) are actively loaded into phloem sieve tubes at a **source** (e.g. Leaf). This lowers the water potential inside the sieve tube, causing water to enter by osmosis from the xylem and surrounding cells. This creates a **high hydrostatic pressure** at the source end.
 
-At the **sink** (e.g. root), sugars are actively unloaded, raising the water potential inside the sieve tube. Water leaves by osmosis, reducing the hydrostatic pressure at the sink end.
+At the **sink** (e.g. Root), sugars are actively unloaded, raising the water potential inside the sieve tube. Water leaves by osmosis, reducing the hydrostatic pressure at the sink end.
 
 This pressure gradient drives the **bulk flow** of phloem sap from source to sink. When the aphid's stylet is severed, the high hydrostatic pressure inside the sieve tube forces phloem sap to exude from the cut.
 
@@ -130,7 +130,7 @@ An investigation was carried out to determine the effect of light intensity and 
 
 (c) This experiment uses oxygen bubble count as a measure of photosynthesis rate. Evaluate the reliability of this method and suggest **one** improvement. [3 marks]
 
-(d) The plant was then transferred to conditions of high light intensity and 0.10% CO$_{2}$, and the temperature was gradually increased from $20^{\circ}C$ to $45^{\circ}C$. Describe and explain the expected change in photosynthesis rate. [4 marks]
+(d) The plant was then transferred to conditions of high light intensity and 0.10% CO$_{2}$And the temperature was gradually increased from $20^{\circ}C$ to $45^{\circ}C$. Describe and explain the expected change in photosynthesis rate. [4 marks]
 
 ---
 
@@ -138,7 +138,7 @@ An investigation was carried out to determine the effect of light intensity and 
 
 (a) At high light intensity, light is no longer the **limiting factor**. Even though more light energy is available, the rate cannot increase because another factor (in this case, **CO$_{2}$ concentration**) becomes limiting. The light-dependent reactions are producing ATP and NADPH faster than the light-independent reactions can use them, because there is insufficient CO$_{2}$ for carbon fixation by RuBisCO.
 
-(b) At 0.04% CO$_{2}$, CO$_{2}$ is the limiting factor at this light intensity. At 0.10% CO$_{2}$, more CO$_{2}$ is available for the light-independent reactions (Calvin cycle), so RuBisCO can catalyse more carboxylation reactions, producing more GP and subsequently more TP, leading to a higher overall rate of photosynthesis. The higher CO$_{2}$ concentration raises the point at which CO$_{2}$ becomes limiting.
+(b) At 0.04% CO$_{2}$CO$_{2}$ is the limiting factor at this light intensity. At 0.10% CO$_{2}$More CO$_{2}$ is available for the light-independent reactions (Calvin cycle), so RuBisCO can catalyse more carboxylation reactions, producing more GP and subsequently more TP, leading to a higher overall rate of photosynthesis. The higher CO$_{2}$ concentration raises the point at which CO$_{2}$ becomes limiting.
 
 (c) **Limitations of bubble counting**:
 - Bubble size is not constant, so the number of bubbles does not directly correspond to the volume of oxygen produced.
@@ -147,9 +147,9 @@ An investigation was carried out to determine the effect of light intensity and 
 
 **Improvement**: Collect the oxygen gas over water in a graduated cylinder or gas syringe to measure the **volume** of oxygen produced per unit time, which is a more quantitative and reliable measure.
 
-(d) As temperature increases from $20^{\circ}C$ to approximately $25$--$30^{\circ}C$, the rate of photosynthesis **increases** because the kinetic energy of molecules increases, leading to more frequent enzyme-substrate collisions (particularly RuBisCO catalysing CO$_{2}$ fixation).
+(d) As temperature increases from $20^{\circ}C$ to approximately $25$--$30^{\circ}C$The rate of photosynthesis **increases** because the kinetic energy of molecules increases, leading to more frequent enzyme-substrate collisions (particularly RuBisCO catalysing CO$_{2}$ fixation).
 
-Above approximately $30^{\circ}C$ (the optimum), the rate **decreases** because the high temperature causes enzymes (especially RuBisCO and other Calvin cycle enzymes) to **denature**. The tertiary structure of these enzymes unfolds, changing the shape of the active site and reducing their catalytic activity. At $45^{\circ}C$, significant denaturation has occurred, and the photosynthesis rate may be very low.
+Above approximately $30^{\circ}C$ (the optimum), the rate **decreases** because the high temperature causes enzymes (especially RuBisCO and other Calvin cycle enzymes) to **denature**. The tertiary structure of these enzymes unfolds, changing the shape of the active site and reducing their catalytic activity. At $45^{\circ}C$Significant denaturation has occurred, and the photosynthesis rate may be very low.
 
 ---
 
@@ -175,7 +175,7 @@ The **higher concentration of auxin on the shaded side** stimulates **cell elong
 
 (b) The Cholodny-Went hypothesis states that auxin is **redistributed** (transported laterally) from the illuminated side to the shaded side, rather than being destroyed on the illuminated side.
 
-Evidence against the destruction hypothesis: if auxin were destroyed, the total amount of auxin in the shoot would decrease. However, experiments using agar blocks to collect auxin from illuminated and shaded sides show that the **total auxin** remains approximately the same; it is simply redistributed so that the shaded side has a higher concentration. The student's proposal is incorrect.
+Evidence against the destruction hypothesis: if auxin were destroyed, the total amount of auxin in the shoot would decrease. However, experiments using agar blocks to collect auxin from illuminated and shaded sides show that the **total auxin** remains approximately the same; it is redistributed so that the shaded side has a higher concentration. The student's proposal is incorrect.
 
 (c) In roots, a **higher auxin concentration inhibits cell elongation** (the opposite of its effect in shoots). Therefore, the shaded side of the root (which has a higher auxin concentration) experiences **reduced elongation**, while the illuminated side (lower auxin) elongates more. This differential elongation causes the root to bend **away from the light** (negative phototropism).
 

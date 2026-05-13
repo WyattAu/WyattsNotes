@@ -46,9 +46,9 @@ $E_{kA} = \frac{1}{2}(2.0)(1 + 16) = 17\,\text{J}$
 
 $E_{kB} = \frac{1}{2}(3.0)(11.56) = 17.33\,\text{J}$
 
-Total after $= 34.33\,\text{J}$, total before $= 25\,\text{J}$.
+Total after $= 34.33\,\text{J}$Total before $= 25\,\text{J}$.
 
-Since $34.33 \ne 25$, the collision is **not elastic** (kinetic energy is not conserved). KE has increased by $9.33\,\text{J}$, making this a **superelastic** collision -- energy was released from an internal store (e.g. an explosion).
+Since $34.33 \ne 25$The collision is **not elastic** (kinetic energy is not conserved). KE has increased by $9.33\,\text{J}$Making this a **superelastic** collision -- energy was released from an internal store (e.g. An explosion).
 
 (c) Impulse on $A$ $= \Delta\mathbf{p}_A = m_A(\mathbf{v}_A - \mathbf{u}_A)$
 
@@ -85,7 +85,7 @@ Or directly: $h' = e^2 h = 0.64 \times 2.0 = 1.28\,\text{m}$
 
 Time for first ascent: $t_1 = v'/g = 5.012/9.81 = 0.5109\,\text{s}$
 
-Since $h' = e^2 h$ and $t \propto \sqrt{h}$, each successive bounce time is multiplied by $e$.
+Since $h' = e^2 h$ and $t \propto \sqrt{h}$Each successive bounce time is multiplied by $e$.
 
 Total time $= t_0 + 2t_1 + 2et_1 + 2e^2t_1 + \ldots$
 
@@ -134,7 +134,7 @@ The average force ($9.33\,\text{N}$) differs from the force at the midpoint ($10
 
 **Question:**
 
-A ball of mass $0.20\,\text{kg}$ hits a smooth vertical wall with velocity $(8.0\hat{i} - 6.0\hat{j})\,\text{m}\,\text{s}^{-1}$, where $\hat{i}$ is horizontal (perpendicular to the wall) and $\hat{j}$ is vertical (parallel to the wall). The coefficient of restitution between the ball and wall is $e = 0.75$. The wall is smooth, so there is no friction.
+A ball of mass $0.20\,\text{kg}$ hits a smooth vertical wall with velocity $(8.0\hat{i} - 6.0\hat{j})\,\text{m}\,\text{s}^{-1}$Where $\hat{i}$ is horizontal (perpendicular to the wall) and $\hat{j}$ is vertical (parallel to the wall). The coefficient of restitution between the ball and wall is $e = 0.75$. The wall is smooth, so there is no friction.
 
 (a) Calculate the velocity of the ball after the collision.
 
@@ -182,7 +182,7 @@ Horizontal distance from wall at time $t$: $x = |v_x| \times t = 6.0t$. But sinc
 
 **Question:**
 
-A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep space (no external forces). It burns fuel at a rate of $5.0\,\text{kg}\,\text{s}^{-1}$, ejecting exhaust gas at a speed of $2000\,\text{m}\,\text{s}^{-1}$ relative to the rocket.
+A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep space (no external forces). It burns fuel at a rate of $5.0\,\text{kg}\,\text{s}^{-1}$Ejecting exhaust gas at a speed of $2000\,\text{m}\,\text{s}^{-1}$ relative to the rocket.
 
 (a) Calculate the thrust produced by the rocket engine.
 
@@ -198,7 +198,7 @@ A rocket of mass $500\,\text{kg}$ (including fuel) is initially at rest in deep 
 
 $$a_0 = \frac◆LB◆F_{\text{thrust}}◆RB◆◆LB◆m◆RB◆ = \frac{10000}{500} = 20.0\,\text{m}\,\text{s}^{-2}$$
 
-At $t = 60\,\text{s}$: fuel burned $= 5.0 \times 60 = 300\,\text{kg}$, remaining mass $= 200\,\text{kg}$
+At $t = 60\,\text{s}$: fuel burned $= 5.0 \times 60 = 300\,\text{kg}$Remaining mass $= 200\,\text{kg}$
 
 $$a_{60} = \frac{10000}{200} = 50.0\,\text{m}\,\text{s}^{-2}$$
 

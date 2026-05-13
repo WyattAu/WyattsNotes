@@ -12,68 +12,68 @@ categories:
 ## The CAP Theorem
 
 The CAP theorem, formalised by Gilbert and Lynch in 2002 based on Brewer's 2000 conjecture, states
-that a distributed data store can provide at most two of three guarantees:
+That a distributed data store can provide at most two of three guarantees:
 
 - **Consistency (C):** every read receives the most recent write or an error
 - **Availability (A):** every request receives a non-error response (without guarantee about which
-  data version)
+ data version)
 - **Partition Tolerance (P):** the system continues to operate despite arbitrary message loss or
-  delay between nodes
+ delay between nodes
 
 ### Why P Is Non-Negotiable
 
 Network partitions are not theoretical -- they happen regularly in production. A switch fails, a DNS
-update propagates slowly, a garbage collector pause causes a timeout, a cross-datacenter link
-degrades. Any distributed system must tolerate partitions, which means the real choice is between
+Update propagates slowly, a garbage collector pause causes a timeout, a cross-datacenter link
+Degrades. Any distributed system must tolerate partitions, which means the real choice is between
 **CP** and **AP**:
 
-| Category | Strategy                                                       | Example Systems                                             |
+| Category | Strategy | Example Systems |
 | -------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
-| CP       | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, Redis (with replication) |
-| AP       | Preserve availability, sacrifice consistency during partitions | MongoDB (default, w:1), Cassandra, DynamoDB, CouchDB, Riak  |
+| CP | Preserve consistency, sacrifice availability during partitions | PostgreSQL (sync replicas), HBase, Redis (with replication) |
+| AP | Preserve availability, sacrifice consistency during partitions | MongoDB (default, w:1), Cassandra, DynamoDB, CouchDB, Riak |
 
 ### The PACELC Theorem
 
 The PACELC theorem (Abadi, 2012) extends CAP: when there is **no** partition (the EL part), the
-system must choose between **L**atency and **C**onsistency:
+System must choose between **L**atency and **C**onsistency:
 
 $$\mathrm{PA{} \to \mathrm{EL{} : \mathrm{when no partition, prefer availability and latency over consistency{}$$
 
 $$\mathrm{PC{} \to \mathrm{EC{} : \mathrm{when no partition, prefer consistency, accepting higher latency{}$$
 
 This captures a nuance that CAP misses: even during normal operation (no partition), systems make
-consistency-latency trade-offs. DynamoDB defaults to eventual consistency for low latency but can be
-configured for strong consistency (higher latency). Cassandra defaults to eventual consistency but
-supports tunable consistency per operation.
+Consistency-latency trade-offs. DynamoDB defaults to eventual consistency for low latency but can be
+Configured for strong consistency (higher latency). Cassandra defaults to eventual consistency but
+Supports tunable consistency per operation.
 
 ### Consistency Models: A Spectrum
 
 Consistency is not binary. There is a spectrum of consistency models, from strongest to weakest:
 
-| Model              | Guarantee                                                         | Examples                               |
+| Model | Guarantee | Examples |
 | ------------------ | ----------------------------------------------------------------- | -------------------------------------- |
-| Linearizable       | Operations appear to execute atomically and in real-time order    | Single-node databases, ZooKeeper       |
-| Sequential         | Operations appear in some total order consistent with real time   | Google Spanner (external consistency)  |
-| Serializable       | Equivalent to some serial execution of transactions               | PostgreSQL SERIALIZABLE                |
-| Snapshot Isolation | Each transaction reads from a consistent snapshot                 | PostgreSQL REPEATABLE READ             |
-| Causal             | Causally related operations are seen by all nodes in order        | DynamoDB (with consistent reads)       |
-| Read-your-writes   | A reader always sees its own writes                               | Most systems with sticky sessions      |
-| Session            | Consistency within a single client session                        | MongoDB (read preference)              |
-| Eventual           | If no new writes, all reads eventually converge to the same value | Cassandra, CouchDB, DynamoDB (default) |
+| Linearizable | Operations appear to execute atomically and in real-time order | Single-node databases, ZooKeeper |
+| Sequential | Operations appear in some total order consistent with real time | Google Spanner (external consistency) |
+| Serializable | Equivalent to some serial execution of transactions | PostgreSQL SERIALIZABLE |
+| Snapshot Isolation | Each transaction reads from a consistent snapshot | PostgreSQL REPEATABLE READ |
+| Causal | Causally related operations are seen by all nodes in order | DynamoDB (with consistent reads) |
+| Read-your-writes | A reader always sees its own writes | Most systems with sticky sessions |
+| Session | Consistency within a single client session | MongoDB (read preference) |
+| Eventual | If no new writes, all reads eventually converge to the same value | Cassandra, CouchDB, DynamoDB (default) |
 
 :::warning
 
 "Eventual consistency" does not mean "will eventually be consistent in a bounded time." It means
-that if you stop writing, the system will converge. In practice, convergence time depends on the
-system, the network, and the write volume. In a partition, convergence may be indefinite.
+That if you stop writing, the system will converge. In practice, convergence time depends on the
+System, the network, and the write volume. In a partition, convergence may be indefinite.
 
 :::
 
 ## NoSQL Categories
 
 NoSQL is not a single technology -- it is a category of databases that provide alternatives to the
-relational model. The four primary categories are document stores, key-value stores, column-family
-stores, and graph databases.
+Relational model. The four primary categories are document stores, key-value stores, column-family
+Stores, and graph databases.
 
 ```mermaid
 graph TB
@@ -95,12 +95,12 @@ graph TB
 ## Document Stores
 
 Document stores model data as JSON/BSON documents. Each document is a self-contained unit with a
-flexible schema -- documents within the same collection can have different fields.
+Flexible schema -- documents within the same collection can have different fields.
 
 ### MongoDB
 
 MongoDB is the most widely deployed document store. It provides a query language, secondary indexes,
-aggregation pipelines, and multi-document ACID transactions (since version 4.0).
+Aggregation pipelines, and multi-document ACID transactions (since version 4.0).
 
 ```javascript
 // Insert a document
@@ -146,8 +146,8 @@ db.orders.aggregate([
 ### Data Modeling in Document Stores
 
 Document stores encourage **denormalization**: embed related data within a document rather than
-joining separate collections. The decision between embedding and referencing mirrors the
-normalization vs denormalization trade-off:
+Joining separate collections. The decision between embedding and referencing mirrors the
+Normalization vs denormalization trade-off:
 
 **Embed when:**
 
@@ -182,7 +182,7 @@ normalization vs denormalization trade-off:
 ### CouchDB
 
 CouchDB is an AP system designed for offline-first applications. Every node can accept writes
-independently, and conflicts are resolved using deterministic merge functions (revision trees).
+Independently, and conflicts are resolved using deterministic merge functions (revision trees).
 
 Key characteristics:
 
@@ -193,32 +193,32 @@ Key characteristics:
 - Designed for high availability in unreliable network conditions
 
 Use cases: mobile applications with offline support, configuration management, content management
-systems where conflicts are rare and resolution is straightforward.
+Systems where conflicts are rare and resolution is straightforward.
 
 ## Key-Value Stores
 
 Key-value stores are the simplest NoSQL category: store a value under a key, retrieve it by key. No
-queries, no secondary indexes (in the basic form), no joins. The value is opaque to the database --
-it can be a string, a serialized object, a JSON document, or binary data.
+Queries, no secondary indexes (in the basic form), no joins. The value is opaque to the database --
+It can be a string, a serialized object, a JSON document, or binary data.
 
 ### Redis
 
 Redis is an in-memory key-value store with optional persistence. It is not just a simple key-value
-store -- it supports a rich set of data structures and operations.
+Store -- it supports a rich set of data structures and operations.
 
 #### Redis Data Structures
 
-| Structure   | Commands                                   | Use Cases                                   |
+| Structure | Commands | Use Cases |
 | ----------- | ------------------------------------------ | ------------------------------------------- |
-| Strings     | `GET`, `SET`, `INCR`, `SETEX`, `GETSET`    | Caching, counters, rate limiting            |
-| Lists       | `LPUSH`, `RPUSH`, `LPOP`, `RPOP`, `LRANGE` | Queues, stacks, recent items                |
-| Sets        | `SADD`, `SREM`, `SMEMBERS`, `SISMEMBER`    | Unique collections, tagging, membership     |
-| Sorted Sets | `ZADD`, `ZRANGE`, `ZRANK`, `ZSCORE`        | Leaderboards, ranges, priority queues       |
-| Hashes      | `HSET`, `HGET`, `HMSET`, `HGETALL`         | Object storage, session data                |
-| Bitmaps     | `SETBIT`, `GETBIT`, `BITCOUNT`, `BITOP`    | Feature flags, analytics                    |
-| HyperLogLog | `PFADD`, `PFCOUNT`, `PFMERGE`              | Cardinality estimation (unique visitors)    |
-| Streams     | `XADD`, `XREAD`, `XREADGROUP`, `XACK`      | Event sourcing, message queues, time series |
-| Geospatial  | `GEOADD`, `GEORADIUS`, `GEOSEARCH`         | Location-based features                     |
+| Strings | `GET``SET``INCR``SETEX``GETSET` | Caching, counters, rate limiting |
+| Lists | `LPUSH``RPUSH``LPOP``RPOP``LRANGE` | Queues, stacks, recent items |
+| Sets | `SADD``SREM``SMEMBERS``SISMEMBER` | Unique collections, tagging, membership |
+| Sorted Sets | `ZADD``ZRANGE``ZRANK``ZSCORE` | Leaderboards, ranges, priority queues |
+| Hashes | `HSET``HGET``HMSET``HGETALL` | Object storage, session data |
+| Bitmaps | `SETBIT``GETBIT``BITCOUNT``BITOP` | Feature flags, analytics |
+| HyperLogLog | `PFADD``PFCOUNT``PFMERGE` | Cardinality estimation (unique visitors) |
+| Streams | `XADD``XREAD``XREADGROUP``XACK` | Event sourcing, message queues, time series |
+| Geospatial | `GEOADD``GEORADIUS``GEOSEARCH` | Location-based features |
 
 #### Redis Persistence
 
@@ -235,11 +235,11 @@ appendfsync everysec   # fsync once per second (good balance)
 # appendfsync no        # let OS decide (fastest, least safe)
 ```
 
-| Mode      | Pros                                                     | Cons                                  |
+| Mode | Pros | Cons |
 | --------- | -------------------------------------------------------- | ------------------------------------- |
-| RDB       | Compact files, fast restart, low overhead                | Data loss between snapshots (minutes) |
-| AOF       | Minimal data loss (1 second at most)                     | Larger files, slower restart          |
-| RDB + AOF | Best of both (AOF for durability, RDB for restart speed) | More disk usage, more complexity      |
+| RDB | Compact files, fast restart, low overhead | Data loss between snapshots (minutes) |
+| AOF | Minimal data loss (1 second at most) | Larger files, slower restart |
+| RDB + AOF | Best of both (AOF for durability, RDB for restart speed) | More disk usage, more complexity |
 
 #### Redis Clustering
 
@@ -262,8 +262,8 @@ redis-cli --cluster create \
 :::warning
 
 Redis Cluster does **not** support multi-key operations across different hash slots. If you need to
-atomically update `user:123:profile` and `user:123:settings`, they must have the same hash tag
-prefix (`{user:123}`). Operations like `MGET` on keys with different hash tags will fail with a
+Atomically update `user:123:profile` and `user:123:settings`They must have the same hash tag
+Prefix (`{user:123}`). Operations like `MGET` on keys with different hash tags will fail with a
 `CROSSSLOT` error.
 
 :::
@@ -271,8 +271,8 @@ prefix (`{user:123}`). Operations like `MGET` on keys with different hash tags w
 ### Memcached
 
 Memcached is a simpler, multi-threaded, in-memory key-value cache with no persistence and no
-built-in clustering. It uses consistent hashing for distribution and is designed specifically for
-caching:
+Built-in clustering. It uses consistent hashing for distribution and is designed specifically for
+Caching:
 
 - LRU eviction when memory is full
 - No authentication
@@ -281,19 +281,19 @@ caching:
 - Multi-threaded (better CPU utilisation than Redis for simple get/set)
 
 Use Memcached when you need a simple, high-throughput cache and do not need Redis's data structures,
-persistence, or clustering.
+Persistence, or clustering.
 
 ## Column-Family Stores
 
 Column-family stores (also called wide-column stores) are designed for massive write throughput and
-efficient access to columns within rows. They are optimised for workloads where rows can have
-millions of columns and queries access a subset of columns.
+Efficient access to columns within rows. They are optimised for workloads where rows can have
+Millions of columns and queries access a subset of columns.
 
 ### Architecture
 
 Data is stored in column families, where each column family contains related columns. On disk, data
-is stored by column family (not by row), which makes reading all values of a specific column across
-many rows very efficient.
+Is stored by column family (not by row), which makes reading all values of a specific column across
+Many rows very efficient.
 
 ```text
 Traditional row-oriented storage:
@@ -313,7 +313,7 @@ Column Family "info":    Column Family "location":
 ### Cassandra
 
 Cassandra is a distributed, AP column-family store designed for linear scalability and high
-availability across multiple data centers.
+Availability across multiple data centers.
 
 #### Architecture
 
@@ -326,22 +326,22 @@ availability across multiple data centers.
 
 #### Consistency Levels
 
-| Level          | Description                                                         |
+| Level | Description |
 | -------------- | ------------------------------------------------------------------- |
-| `ONE`          | Coordinator returns after one replica responds (fastest)            |
-| `QUORUM`       | Coordinator returns after a majority of replicas respond            |
-| `ALL`          | Coordinator returns after all replicas respond (slowest, strongest) |
-| `LOCAL_QUORUM` | Quorum within the local data center only                            |
-| `EACH_QUORUM`  | Quorum in each data center (for multi-DC writes)                    |
-| `SERIAL`       | Linearizable consistency for lightweight transactions               |
+| `ONE` | Coordinator returns after one replica responds (fastest) |
+| `QUORUM` | Coordinator returns after a majority of replicas respond |
+| `ALL` | Coordinator returns after all replicas respond (slowest, strongest) |
+| `LOCAL_QUORUM` | Quorum within the local data center only |
+| `EACH_QUORUM` | Quorum in each data center (for multi-DC writes) |
+| `SERIAL` | Linearizable consistency for lightweight transactions |
 
 For reads and writes to be consistent (read-your-writes), the sum of read and write consistency
-levels must exceed the replication factor:
+Levels must exceed the replication factor:
 
 $$W + R \gt RF$$
 
 For example, with replication factor 3: `QUORUM` writes + `QUORUM` reads ($2 + 2 = 4 \gt 3$)
-guarantees that the read sees the latest write.
+Guarantees that the read sees the latest write.
 
 #### Data Model
 
@@ -368,21 +368,21 @@ CREATE TABLE events (
 :::warning
 
 Cassandra's data model requires you to design around queries, not entities. Unlike relational
-databases where you model entities and then write queries to access them, in Cassandra you model the
-queries and denormalise data to support each query pattern. A common rule: one table per query
-pattern.
+Databases where you model entities and then write queries to access them, in Cassandra you model the
+Queries and denormalise data to support each query pattern. A common rule: one table per query
+Pattern.
 
 :::
 
 ### ScyllaDB
 
 ScyllaDB is a C++ rewrite of Cassandra that is compatible with the Cassandra protocol and CQL. It
-uses a shard-per-core architecture (separate CPU core handles its own subset of data) and avoids JVM
-garbage collection pauses that can affect Cassandra's latency.
+Uses a shard-per-core architecture (separate CPU core handles its own subset of data) and avoids JVM
+Garbage collection pauses that can affect Cassandra's latency.
 
 Key advantages over Cassandra:
 
-- Latency: typically 5-10x lower P99 latency
+- Latency: 5-10x lower P99 latency
 - Throughput: higher per-node throughput
 - No GC pauses: C++ with seastar framework, no garbage collector
 - Cassandra-compatible: same CQL drivers and query language
@@ -390,7 +390,7 @@ Key advantages over Cassandra:
 ### HBase
 
 HBase is a CP column-family store built on top of HDFS, designed for massive tables (billions of
-rows, millions of columns) with strict consistency.
+Rows, millions of columns) with strict consistency.
 
 Key characteristics:
 
@@ -403,13 +403,13 @@ Key characteristics:
 ## Graph Databases
 
 Graph databases model data as nodes (entities) and edges (relationships), optimising for queries
-that traverse relationships. They are the natural choice for data with complex, interconnected
-relationships: social networks, fraud detection, recommendation engines, knowledge graphs.
+That traverse relationships. They are the natural choice for data with complex, interconnected
+Relationships: social networks, fraud detection, recommendation engines, knowledge graphs.
 
 ### Neo4j
 
 Neo4j is the most widely deployed graph database. It provides the Cypher query language for
-expressing graph patterns.
+Expressing graph patterns.
 
 ```cypher
 -- Create nodes and relationships
@@ -451,15 +451,15 @@ RETURN p
 :::tip
 
 A graph database is not a replacement for a relational database. Many production systems use a
-relational database for transactional data and a graph database for relationship-heavy queries. This
-is the **polyglot persistence** pattern: use the right tool for each part of the problem.
+Relational database for transactional data and a graph database for relationship-heavy queries. This
+Is the **polyglot persistence** pattern: use the right tool for each part of the problem.
 
 :::
 
 ## Time Series Databases
 
 Time series databases are optimised for storing and querying data points indexed by time. They are
-the standard for monitoring, IoT sensor data, financial tick data, and application metrics.
+The standard for monitoring, IoT sensor data, financial tick data, and application metrics.
 
 ### InfluxDB
 
@@ -564,10 +564,10 @@ Service Architecture with Polyglot Persistence:
 :::warning
 
 Polyglot persistence increases operational complexity. Each database has its own backup strategy,
-replication configuration, monitoring, upgrade path, and failure modes. Before introducing a new
-database technology, ensure your team has the expertise to operate it in production. The cost of
-operating 5 different databases often exceeds the cost of operating one database that handles 80% of
-your use cases adequately.
+Replication configuration, monitoring, upgrade path, and failure modes. Before introducing a new
+Database technology, ensure your team has the expertise to operate it in production. The cost of
+Operating 5 different databases often exceeds the cost of operating one database that handles 80% of
+Your use cases adequately.
 
 :::
 
@@ -576,31 +576,31 @@ your use cases adequately.
 ### Using NoSQL to Avoid Learning SQL
 
 Choosing MongoDB or Cassandra because "SQL is hard" leads to data integrity problems that are far
-harder to debug than SQL queries. If your data has relationships, normalisation requirements, and
-transactional needs, a relational database is the right tool regardless of how you feel about SQL.
+Harder to debug than SQL queries. If your data has relationships, normalisation requirements, and
+Transactional needs, a relational database is the right tool regardless of how you feel about SQL.
 
 ### Ignoring Consistency Tuning
 
 Many NoSQL databases default to eventual consistency. If your application assumes strong consistency
 (e.g., reading a value immediately after writing it), you will see stale data. Always configure
-consistency levels explicitly based on your application's requirements.
+Consistency levels explicitly based on your application's requirements.
 
 ### Modelling Relational Patterns in NoSQL
 
 Designing a Cassandra table with many small partitions, or a MongoDB collection with frequent
-inter-document references that require application-level joins, defeats the purpose of using NoSQL.
+Inter-document references that require application-level joins, defeats the purpose of using NoSQL.
 Model around your access patterns, not your entity relationships.
 
 ### Underestimating Operational Complexity
 
 Running a Redis cluster, a Cassandra ring, or a MongoDB replica set in production requires expertise
-in the specific database's failure modes, backup procedures, monitoring, and upgrade paths. Budget
-for this expertise before adopting a new technology.
+In the specific database's failure modes, backup procedures, monitoring, and upgrade paths. Budget
+For this expertise before adopting a new technology.
 
 ### Not Setting TTL on Cache Data
 
 In Redis and Memcached, data without a TTL accumulates until memory is full, at which point eviction
-policies kick in and may evict data you wanted to keep. Always set TTL on cached data:
+Policies kick in and may evict data you wanted to keep. Always set TTL on cached data:
 
 ```bash
 SET session:abc123 "user_data" EX 3600   # expire in 1 hour
@@ -611,17 +611,17 @@ EXPIRE cache:product:P1 86400            # expire in 24 hours
 ### Using Cassandra for Small Datasets
 
 Cassandra's strengths (linear scalability, multi-DC replication, high write throughput) only
-materialise at scale. For datasets that fit on a single PostgreSQL instance, the operational
-overhead of Cassandra is not justified. The same applies to most other NoSQL databases: they solve
-problems that relational databases cannot solve at scale, but they introduce complexity that is not
-warranted for small-scale systems.
+Materialise at scale. For datasets that fit on a single PostgreSQL instance, the operational
+Overhead of Cassandra is not justified. The same applies to most other NoSQL databases: they solve
+Problems that relational databases cannot solve at scale, but they introduce complexity that is not
+Warranted for small-scale systems.
 
 ## Advanced NoSQL Topics
 
 ### Consensus Algorithms
 
 Distributed databases that require strong consistency use consensus algorithms to agree on the
-current state across replicas.
+Current state across replicas.
 
 **Raft** (Ongaro and Ousterhout, 2014):
 
@@ -651,25 +651,25 @@ stateDiagram-v2
 ### CRDTs (Conflict-Free Replicated Data Types)
 
 CRDTs are data structures designed to be replicated across multiple nodes with automatic conflict
-resolution. They guarantee eventual consistency without requiring coordination.
+Resolution. They guarantee eventual consistency without requiring coordination.
 
-| CRDT Type    | Example Operations          | Conflict Resolution                 |
+| CRDT Type | Example Operations | Conflict Resolution |
 | ------------ | --------------------------- | ----------------------------------- |
-| G-Counter    | Increment                   | Take maximum                        |
-| PN-Counter   | Increment, Decrement        | Separate positive/negative counters |
-| G-Set        | Add                         | Union (set merge)                   |
-| OR-Set       | Add, Remove                 | Observed-remove (tombstone-based)   |
-| LWW-Register | Assign value with timestamp | Last-writer-wins                    |
+| G-Counter | Increment | Take maximum |
+| PN-Counter | Increment, Decrement | Separate positive/negative counters |
+| G-Set | Add | Union (set merge) |
+| OR-Set | Add, Remove | Observed-remove (tombstone-based) |
+| LWW-Register | Assign value with timestamp | Last-writer-wins |
 
 CRDTs are used in Riak, Redis CRDT module, and some edge computing frameworks. The trade-off: they
-only support a limited set of operations (no arbitrary transactions), and some types accumulate
-garbage (tombstones in OR-Set).
+Only support a limited set of operations (no arbitrary transactions), and some types accumulate
+Garbage (tombstones in OR-Set).
 
 ### LSM Trees (Log-Structured Merge Trees)
 
 Most NoSQL databases that are write-optimised (Cassandra, RocksDB, LevelDB, HBase) use LSM trees
-instead of B-trees. LSM trees batch writes in memory and flush to disk in sorted runs, which
-dramatically reduces write amplification.
+Instead of B-trees. LSM trees batch writes in memory and flush to disk in sorted runs, which
+Dramatically reduces write amplification.
 
 **Write path:**
 
@@ -700,20 +700,20 @@ SSTable Level N (disk)  ← oldest, largest
 
 **LSM Tree vs B-Tree:**
 
-| Aspect              | LSM Tree                             | B-Tree                               |
+| Aspect | LSM Tree | B-Tree |
 | ------------------- | ------------------------------------ | ------------------------------------ |
-| Write throughput    | Very high (sequential writes only)   | Moderate (random writes for updates) |
-| Read throughput     | Moderate (may check multiple levels) | High (single tree traversal)         |
-| Write amplification | Low (sequential)                     | High (in-place update, page rewrite) |
-| Read amplification  | High (multiple levels)               | Low (single traversal)               |
-| Space amplification | Moderate (compaction overhead)       | Low to moderate (page fragmentation) |
-| Compaction          | Required (background merge)          | Not required (in-place updates)      |
+| Write throughput | Very high (sequential writes only) | Moderate (random writes for updates) |
+| Read throughput | Moderate (may check multiple levels) | High (single tree traversal) |
+| Write amplification | Low (sequential) | High (in-place update, page rewrite) |
+| Read amplification | High (multiple levels) | Low (single traversal) |
+| Space amplification | Moderate (compaction overhead) | Low to moderate (page fragmentation) |
+| Compaction | Required (background merge) | Not required (in-place updates) |
 
 :::info
 
 RocksDB (used by MongoDB's WiredTiger for caching, TiKV, and many other systems) is a popular LSM
-tree implementation. It is configurable: you can tune compaction strategy, bloom filter size,
-compression, block cache, and write buffer size to optimise for specific workloads.
+Tree implementation. It is configurable: you can tune compaction strategy, bloom filter size,
+Compression, block cache, and write buffer size to optimise for specific workloads.
 
 :::
 
@@ -741,10 +741,10 @@ Dynamo-style architecture.
 
 **Capacity modes:**
 
-| Mode        | Characteristics                                                      |
+| Mode | Characteristics |
 | ----------- | -------------------------------------------------------------------- |
 | Provisioned | Specify read/write capacity units; cheaper for predictable workloads |
-| On-Demand   | Auto-scales; pay per request; more expensive for steady workloads    |
+| On-Demand | Auto-scales; pay per request; more expensive for steady workloads |
 
 **Global Secondary Indexes (GSI):**
 
@@ -799,8 +799,8 @@ GET /products/_search
 :::warning
 
 Elasticsearch is not ACID-compliant. Document updates are eventually consistent across shards. It is
-a search engine, not a primary data store. Use it as a secondary index alongside a relational
-database, not as a replacement for one.
+A search engine, not a primary data store. Use it as a secondary index alongside a relational
+Database, not as a replacement for one.
 
 :::
 
@@ -810,13 +810,13 @@ When evaluating NoSQL databases, benchmark with your actual workload, not synthe
 
 1. **Define your access patterns:** read/write ratio, query complexity, data size, concurrency
 2. **Test with realistic data:** use production data (anonymised) or generate data that matches your
-   production distribution
+ production distribution
 3. **Measure what matters:** P50, P95, P99 latency; throughput at target concurrency; operational
-   complexity
+ complexity
 4. **Test failure modes:** what happens when a node fails? When the network partitions? When you add
-   a node?
+ a node?
 5. **Measure operational overhead:** backup/restore time, compaction impact, monitoring, upgrade
-   complexity
+ complexity
 
 ```bash
 # Example: Cassandra benchmark with cassandra-stress
@@ -834,8 +834,16 @@ mongoperf -f test.json
 :::tip
 
 Published benchmarks (especially vendor-provided ones) are often optimised for the specific system
-being benchmarked. Always run your own benchmarks with your own data and access patterns. The
-performance difference between systems is often smaller than the difference between a well-tuned and
-poorly-tuned deployment of the same system.
+Being benchmarked. Always run your own benchmarks with your own data and access patterns. The
+Performance difference between systems is often smaller than the difference between a well-tuned and
+Poorly-tuned deployment of the same system.
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

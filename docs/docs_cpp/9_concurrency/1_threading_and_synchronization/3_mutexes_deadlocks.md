@@ -10,29 +10,29 @@ slug: mutexes-shared-locks-deadlock-prevention
 ---
 # Mutexes, Shared Locks, and Deadlock Prevention
 
-This section covers `std::mutex`, `std::recursive_mutex`, `std::timed_mutex`, RAII lock wrappers
-(`std::lock_guard`, `std::scoped_lock`), reader-writer locks (`std::shared_mutex`), the four Coffman
-deadlock conditions, and deadlock prevention strategies.
+This section covers `std::mutex``std::recursive_mutex``std::timed_mutex`RAII lock wrappers
+(`std::lock_guard``std::scoped_lock`), reader-writer locks (`std::shared_mutex`), the four Coffman
+Deadlock conditions, and deadlock prevention strategies.
 
 ## `std::mutex`
 
 `std::mutex` [N4950 §31.4.3.3] provides exclusive ownership semantics. Only one thread can hold the
-lock at any time. The basic operations are:
+Lock at any time. The basic operations are:
 
-| Operation    | Description                                       |
+| Operation | Description |
 | ------------ | ------------------------------------------------- |
-| `lock()`     | Blocks until the lock is acquired                 |
+| `lock()` | Blocks until the lock is acquired |
 | `try_lock()` | Attempts to acquire the lock; returns immediately |
-| `unlock()`   | Releases the lock                                 |
+| `unlock()` | Releases the lock |
 
 Calling `lock()` on a mutex already held by the current thread results in **undefined behavior**
 [N4950 §31.4.3.3.2].
 
 ### Implementation: POSIX `pthread_mutex_t`
 
-On Linux, `std::mutex` is typically implemented as a thin wrapper around `pthread_mutex_t`. The
-default `pthread_mutex_t` uses the **Normal** type (not recursive, not error-checking), which means
-re-locking without unlocking is UB — exactly matching the C++ standard's requirement.
+On Linux, `std::mutex` is implemented as a thin wrapper around `pthread_mutex_t`. The
+Default `pthread_mutex_t` uses the **Normal** type (not recursive, not error-checking), which means
+Re-locking without unlocking is UB — exactly matching the C++ standard's requirement.
 
 ```cpp
 #include <pthread.h>
@@ -49,22 +49,22 @@ struct my_mutex {
 };
 ```
 
-The Linux `pthread_mutex_t` for the normal type is typically 40 bytes, containing the lock state,
-owner thread ID, and a count for robust mutex tracking. In the uncontended case,
+The Linux `pthread_mutex_t` for the normal type is 40 bytes, containing the lock state,
+Owner thread ID, and a count for robust mutex tracking. In the uncontended case,
 `pthread_mutex_lock` compiles to a single atomic `cmpxchg` instruction (futex-based).
 
 ### Uncontended vs Contended Lock Performance
 
 In the uncontended case (no other thread holds the lock), acquiring a mutex is essentially the cost
-of a single atomic compare-and-swap — approximately 10-20 nanoseconds on x86. In the contended case,
-the thread is descheduled via a futex system call (`FUTEX_WAIT`), which costs 1-10 microseconds for
-the kernel context switch alone, plus scheduler latency.
+Of a single atomic compare-and-swap — approximately 10-20 nanoseconds on x86. In the contended case,
+The thread is descheduled via a futex system call (`FUTEX_WAIT`), which costs 1-10 microseconds for
+The kernel context switch alone, plus scheduler latency.
 
 ## `std::recursive_mutex`
 
 `std::recursive_mutex` [N4950 §31.4.3.3.4] allows the same thread to acquire the lock multiple
-times. The thread must call `unlock()` the same number of times it called `lock()` for the mutex to
-be released. The implementation maintains an internal lock count:
+Times. The thread must call `unlock()` the same number of times it called `lock()` for the mutex to
+Be released. The implementation maintains an internal lock count:
 
 $$\mathrm{recursion depth{} = n_{\mathrm{lock{}} - n_{\mathrm{unlock{}}$$
 
@@ -73,8 +73,8 @@ When the recursion depth reaches zero, the mutex is released.
 ### Why `std::recursive_mutex` Exists
 
 `std::recursive_mutex` exists primarily for interfacing with legacy code that was not designed with
-explicit lock boundaries. For example, a recursive data structure traversal where functions call
-each other and each needs the lock:
+Explicit lock boundaries. For example, a recursive data structure traversal where functions call
+Each other and each needs the lock:
 
 ```cpp
 #include <iostream>
@@ -127,7 +127,7 @@ int main() {
 
 The better design is to refactor so that `walk_impl` does not acquire the lock — only the public
 `walk()` method acquires it, and `walk_impl` is a private method that assumes the lock is already
-held:
+Held:
 
 ```cpp
 class BetterTreeWalker {
@@ -154,9 +154,9 @@ public:
 ```
 
 :::tip
-tip
-indicates a design issue where lock ownership boundaries are unclear. Use it only when interfacing
-with recursive code structures that you cannot refactor.
+Tip
+Indicates a design issue where lock ownership boundaries are unclear. Use it only when interfacing
+With recursive code structures that you cannot refactor.
 :::
 
 ## `std::timed_mutex`
@@ -167,7 +167,7 @@ with recursive code structures that you cannot refactor.
 - `try_lock_until(time_point)`: Attempts to acquire the lock before a specific time point.
 
 Timed mutexes are useful for implementing timeout-based locking policies, especially in distributed
-systems or when interfacing with external resources that may hang:
+Systems or when interfacing with external resources that may hang:
 
 ```cpp
 #include <iostream>
@@ -199,11 +199,11 @@ int main() {
 ## `std::lock_guard` and `std::scoped_lock`
 
 `std::lock_guard` [N4950 §31.4.4.2] is a lightweight RAII wrapper for a single mutex. It acquires
-the mutex in its constructor and releases it in its destructor.
+The mutex in its constructor and releases it in its destructor.
 
 `std::scoped_lock` [N4950 §31.4.4.2.2] (C++17) generalizes this to zero or more mutexes. When
-multiple mutexes are provided, it uses a deadlock-avoidance algorithm (similar to `std::lock`) to
-acquire them without risk of deadlock:
+Multiple mutexes are provided, it uses a deadlock-avoidance algorithm (similar to `std::lock`) to
+Acquire them without risk of deadlock:
 
 ```cpp
 #include <iostream>
@@ -256,7 +256,7 @@ int main() {
 `std::unique_lock` [N4950 §31.4.4.3] provides more flexibility than `std::lock_guard`:
 
 - **Deferred locking:** Construct without acquiring the lock (`std::defer_lock`).
-- **Timed locking:** `try_lock_for()`, `try_lock_until()`.
+- **Timed locking:** `try_lock_for()``try_lock_until()`.
 - **Manual unlock/lock:** Can be unlocked and re-locked during its lifetime.
 - **Movable:** Can be returned from functions (unlike `std::lock_guard` in C++14).
 
@@ -308,49 +308,49 @@ The deadlock-avoidance algorithm used by `std::scoped_lock` (and `std::lock`) wo
 2. Try to lock the first mutex. If successful, move it to the "locked" set.
 3. Try to lock the next mutex. If successful, continue.
 4. If any lock attempt fails (returns `false` from `try_lock`), unlock all previously acquired
-   mutexes in **reverse order**, then retry from the beginning.
+ mutexes in **reverse order**, then retry from the beginning.
 5. Repeat until all mutexes are acquired.
 
 This algorithm guarantees that threads acquire the same set of mutexes in the same order, preventing
-circular wait. The retry loop has no upper bound on iterations, but in practice contention is rare
-and the loop terminates quickly.
+Circular wait. The retry loop has no upper bound on iterations, but in practice contention is rare
+And the loop terminates quickly.
 
 ## `std::shared_mutex` (Reader-Writer Lock)
 
 `std::shared_mutex` [N4950 §31.4.3.4] allows multiple threads to hold a **shared** (read) lock
-simultaneously, but only one thread can hold an **exclusive** (write) lock at a time. This is useful
-when reads are frequent and writes are infrequent.
+Simultaneously, but only one thread can hold an **exclusive** (write) lock at a time. This is useful
+When reads are frequent and writes are infrequent.
 
-| Lock type                      | Concurrent access | Exclusive access |
+| Lock type | Concurrent access | Exclusive access |
 | ------------------------------ | ----------------- | ---------------- |
-| `std::shared_lock` (shared)    | Multiple readers  | No writers       |
-| `std::unique_lock` (exclusive) | No other threads  | One writer       |
+| `std::shared_lock` (shared) | Multiple readers | No writers |
+| `std::unique_lock` (exclusive) | No other threads | One writer |
 
 ### Writer Starvation
 
 A naive reader-writer lock implementation can suffer from **writer starvation**: if readers
-continuously acquire shared locks, a waiting writer may never get exclusive access. The C++ standard
-does not mandate a specific policy for `std::shared_mutex`, but POSIX `pthread_rwlock_t`
-implementations typically implement a "writer-preferring" policy on modern Linux kernels (glibc
+Continuously acquire shared locks, a waiting writer may never get exclusive access. The C++ standard
+Does not mandate a specific policy for `std::shared_mutex`But POSIX `pthread_rwlock_t`
+Implementations implement a "writer-preferring" policy on modern Linux kernels (glibc
 2.26+).
 
 ### Reader-Writer Lock Overhead
 
 A shared lock acquisition is more expensive than a plain mutex: it requires atomic operations on
-both a reader count and a writer flag. On x86, a `std::shared_mutex` shared lock is approximately
+Both a reader count and a writer flag. On x86, a `std::shared_mutex` shared lock is approximately
 2-3x slower than an uncontended `std::mutex`. Only use `std::shared_mutex` when the read-to-write
-ratio is high enough (typically &gt;10:1) to justify the overhead.
+Ratio is high enough ( &gt;10:1) to justify the overhead.
 
 ## Deadlock Conditions
 
 A deadlock occurs when two or more threads are blocked forever, each waiting for a resource held by
-the other. The four necessary conditions (Coffman conditions) are:
+The other. The four necessary conditions (Coffman conditions) are:
 
 1. **Mutual exclusion**: At least one resource is held in a non-shareable mode.
 2. **Hold and wait**: A thread holds at least one resource and is waiting for additional resources.
 3. **No preemption**: Resources cannot be forcibly taken from a thread.
 4. **Circular wait**: There exists a circular chain of threads, each waiting for a resource held by
-   the next.
+ the next.
 
 $$\mathrm{Deadlock{} \iff \mathrm{Mutual Exclusion{} \wedge \mathrm{Hold-and-Wait{} \wedge \mathrm{No Preemption{} \wedge \mathrm{Circular Wait{}$$
 
@@ -413,11 +413,11 @@ int main() {
 ## Deadlock Prevention Strategies
 
 **Lock ordering**: Always acquire locks in a consistent global order. If every thread acquires
-mutexes in the same order, circular wait cannot occur.
+Mutexes in the same order, circular wait cannot occur.
 
 **`std::scoped_lock`**: When acquiring multiple mutexes, `std::scoped_lock` uses an algorithm
-similar to `std::lock` [N4950 §31.4.4.2.2] that tries locks in a try-and-back-off fashion,
-preventing deadlock by avoiding a consistent hold-and-wait pattern:
+Similar to `std::lock` [N4950 §31.4.4.2.2] that tries locks in a try-and-back-off fashion,
+Preventing deadlock by avoiding a consistent hold-and-wait pattern:
 
 ```cpp
 #include <iostream>
@@ -450,7 +450,7 @@ int main() {
 ### Strategy: Hierarchical Locking with `std::strict_lock` (C++17)
 
 A compile-time deadlock prevention technique is to assign each mutex a **level** and enforce that
-locks are always acquired in increasing level order:
+Locks are always acquired in increasing level order:
 
 ```cpp
 #include <mutex>
@@ -501,8 +501,8 @@ int main() {
 
 :::info
 `std::scoped_lock` with multiple mutexes uses an algorithm that attempts to lock each mutex
-in turn. If any lock attempt fails, it unlocks all previously acquired mutexes and retries. This
-guarantees that all threads acquire the set of mutexes in the same order, preventing circular wait
+In turn. If any lock attempt fails, it unlocks all previously acquired mutexes and retries. This
+Guarantees that all threads acquire the set of mutexes in the same order, preventing circular wait
 [N4950 §31.4.4.2.2].
 :::
 
@@ -568,8 +568,8 @@ int main() {
 ### Upgradable Lock: `std::shared_mutex` with Promotion
 
 A common pattern is to acquire a shared lock for reading, then upgrade to exclusive for writing if a
-condition is met. `std::shared_mutex` does not directly support lock promotion. The safe approach is
-to release the shared lock and acquire an exclusive lock:
+Condition is met. `std::shared_mutex` does not directly support lock promotion. The safe approach is
+To release the shared lock and acquire an exclusive lock:
 
 ```cpp
 #include <iostream>
@@ -610,13 +610,13 @@ int main() {
 ```
 
 The double-check pattern is essential: between releasing the shared lock and acquiring the exclusive
-lock, another thread may have already inserted the key. Without the second check, `try_emplace`
-would silently discard the existing value.
+Lock, another thread may have already inserted the key. Without the second check, `try_emplace`
+Would silently discard the existing value.
 
 :::tip
 `std::shared_mutex` in C++17 (and `std::shared_timed_mutex` in C++14) provides read-write
-locking. Prefer `std::shared_lock` for read-only access and `std::unique_lock` for write access. On
-POSIX systems, this typically maps to `pthread_rwlock_t`.
+Locking. Prefer `std::shared_lock` for read-only access and `std::unique_lock` for write access. On
+POSIX systems, this maps to `pthread_rwlock_t`.
 :::
 
 ## Common Pitfalls
@@ -624,7 +624,7 @@ POSIX systems, this typically maps to `pthread_rwlock_t`.
 ### Pitfall 1: Locking and Unlocking on Different Threads
 
 The C++ standard requires that a mutex be unlocked by the same thread that locked it. Unlocking on a
-different thread is undefined behavior:
+Different thread is undefined behavior:
 
 ```cpp
 #include <iostream>
@@ -660,7 +660,7 @@ public:
 ### Pitfall 3: RAII Wrapper Scope
 
 Be careful with the scope of RAII lock wrappers. A lock is released when the wrapper is destroyed,
-which happens at the end of the enclosing block:
+Which happens at the end of the enclosing block:
 
 ```cpp
 void bug() {
@@ -701,10 +701,18 @@ int main() {
 
 `std::call_once` guarantees that the callable is invoked exactly once, even if multiple threads call
 `get_expensive()` concurrently. Internally, it uses a combination of atomic flags and a mutex, but
-the fast path (already initialized) is a single atomic load.
+The fast path (already initialized) is a single atomic load.
 
 :::
 
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

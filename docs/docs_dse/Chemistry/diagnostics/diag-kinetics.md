@@ -14,14 +14,14 @@ The reaction $A + 2B \rightarrow C$ was studied at constant temperature. The fol
 
 | Experiment | $[A]$ (mol/dm$^{3}$) | $[B]$ (mol/dm$^{3}$) | Initial Rate (mol dm$^{-3}$ s$^{-1}$) |
 |-----------|----------------------|----------------------|--------------------------------------|
-| 1         | 0.10                 | 0.10                 | $1.2 \times 10^{-4}$                |
-| 2         | 0.20                 | 0.10                 | $2.4 \times 10^{-4}$                |
-| 3         | 0.10                 | 0.20                 | $4.8 \times 10^{-4}$                |
-| 4         | 0.30                 | 0.30                 | $2.16 \times 10^{-3}$               |
+| 1 | 0.10 | 0.10 | $1.2 \times 10^{-4}$ |
+| 2 | 0.20 | 0.10 | $2.4 \times 10^{-4}$ |
+| 3 | 0.10 | 0.20 | $4.8 \times 10^{-4}$ |
+| 4 | 0.30 | 0.30 | $2.16 \times 10^{-3}$ |
 
 (a) Determine the order of reaction with respect to $A$ and with respect to $B$. [3 marks]
 
-(b) Write the rate equation and calculate the rate constant $k$, including its units. [3 marks]
+(b) Write the rate equation and calculate the rate constant $k$Including its units. [3 marks]
 
 (c) Using the rate equation, predict the initial rate when $[A] = 0.15$ and $[B] = 0.25$ mol/dm$^{3}$. [2 marks]
 
@@ -33,18 +33,18 @@ The reaction $A + 2B \rightarrow C$ was studied at constant temperature. The fol
 
 $[A]$ doubles (0.10 to 0.20), rate doubles ($1.2 \times 10^{-4}$ to $2.4 \times 10^{-4}$).
 
-Rate $\propto [A]^{1}$, so **order with respect to $A$ = 1**.
+Rate $\propto [A]^{1}$So **order with respect to $A$ = 1**.
 
 **Order with respect to $B$**: Compare experiments 1 and 3 (where $[A]$ is constant).
 
 $[B]$ doubles (0.10 to 0.20), rate quadruples ($1.2 \times 10^{-4}$ to $4.8 \times 10^{-4}$).
 
-Rate $\propto [B]^{2}$, so **order with respect to $B$ = 2**.
+Rate $\propto [B]^{2}$So **order with respect to $B$ = 2**.
 
-**Verification with experiment 4:** With orders $A = 1$, $B = 2$: predicted rate $= 0.12 \times 0.30
+**Verification with experiment 4:** With orders $A = 1$$B = 2$: predicted rate $= 0.12 \times 0.30
 \times 0.30^{2} = 3.24 \times 10^{-3}$. The given value of $2.16 \times 10^{-3}$ does not match.
 Experiment 4 may contain a typo, or is designed to test whether students verify all data points.
-Proceeding with orders $A = 1$, $B = 2$ as determined from experiments 1--3.
+Proceeding with orders $A = 1$$B = 2$ as determined from experiments 1--3.
 
 (b) Rate equation: $\text{Rate} = k[A][B]^{2}$
 
@@ -62,7 +62,7 @@ Units: $\frac{\text{mol dm}^{-3} \text{ s}^{-1}}{(\text{mol dm}^{-3})^{3}} = \te
 
 **Question**
 
-(a) Sketch a Maxwell-Boltzmann distribution curve for a gas at temperature $T_{1}$, and on the same axes, sketch the curve for the same gas at a higher temperature $T_{2}$ ($T_{2} \gt T_{1}$). Indicate the activation energy $E_{a}$ on both curves. [3 marks]
+(a) Sketch a Maxwell-Boltzmann distribution curve for a gas at temperature $T_{1}$And on the same axes, sketch the curve for the same gas at a higher temperature $T_{2}$ ($T_{2} \gt T_{1}$). Indicate the activation energy $E_{a}$ on both curves. [3 marks]
 
 (b) Explain why increasing the temperature increases the rate of a reaction **more significantly** than increasing the concentration of reactants. [3 marks]
 
@@ -85,7 +85,7 @@ Increasing temperature increases the rate because:
 2. The average kinetic energy increases, so molecules move faster and collide more frequently.
 The combined effect (higher proportion AND higher frequency) makes temperature much more impactful than concentration alone.
 
-(c) The claim is **incorrect**. A catalyst **lowers the activation energy** ($E_{a}$) rather than shifting the distribution. The Maxwell-Boltzmann distribution itself does not change. By lowering $E_{a}$, a larger area under the **same** distribution curve now exceeds the threshold, meaning more molecules have sufficient energy to react.
+(c) The claim is **incorrect**. A catalyst **lowers the activation energy** ($E_{a}$) rather than shifting the distribution. The Maxwell-Boltzmann distribution itself does not change. By lowering $E_{a}$A larger area under the **same** distribution curve now exceeds the threshold, meaning more molecules have sufficient energy to react.
 
 ---
 
@@ -99,7 +99,7 @@ $$2H_{2}O_{2}(aq) \rightarrow 2H_{2}O(l) + O_{2}(g)$$
 
 (a) Define the term **activation energy**. [1 mark]
 
-(b) Explain how $MnO_{2}$ increases the rate of decomposition of $H_{2}O_{2}$, using the term "alternative reaction pathway." [3 marks]
+(b) Explain how $MnO_{2}$ increases the rate of decomposition of $H_{2}O_{2}$Using the term "alternative reaction pathway." [3 marks]
 
 (c) Does $MnO_{2}$ change the enthalpy change ($\Delta H$) of the reaction? Explain. [2 marks]
 
@@ -145,13 +145,13 @@ Explain why this proposed mechanism is **inconsistent** with the rate equation. 
 
 **Worked Solution**
 
-(a) Overall order = $1 + 1 = 2$ (first order in $NO_{2}$, first order in $F_{2}$).
+(a) Overall order = $1 + 1 = 2$ (first order in $NO_{2}$First order in $F_{2}$).
 
 (b) If the reaction occurred in a single step involving the collision of $2NO_{2}$ and $F_{2}$ simultaneously (a termolecular collision), the rate equation would be:
 
 $$\text{Rate} = k[NO_{2}]^{2}[F_{2}]$$
 
-This predicts **second order** with respect to $NO_{2}$, which contradicts the experimentally determined rate equation (first order in $NO_{2}$). Therefore, the one-step mechanism is inconsistent.
+This predicts **second order** with respect to $NO_{2}$Which contradicts the experimentally determined rate equation (first order in $NO_{2}$). Therefore, the one-step mechanism is inconsistent.
 
 (c) A consistent two-step mechanism:
 
@@ -167,7 +167,7 @@ $$\text{Rate} = k[NO_{2}][F_{2}]$$
 
 This matches the experimental rate equation.
 
-(d) Since the reaction is first order in $NO_{2}$, tripling $[NO_{2}]$ will **triple** the rate (factor of 3).
+(d) Since the reaction is first order in $NO_{2}$Tripling $[NO_{2}]$ will **triple** the rate (factor of 3).
 
 ---
 
@@ -175,15 +175,15 @@ This matches the experimental rate equation.
 
 **Question**
 
-For the reaction $A \rightarrow B + C$, the following data were collected:
+For the reaction $A \rightarrow B + C$The following data were collected:
 
 | Time (s) | $[A]$ (mol/dm$^{3}$) |
 |----------|----------------------|
-| 0        | 0.80                 |
-| 100      | 0.60                 |
-| 200      | 0.45                 |
-| 300      | 0.34                 |
-| 400      | 0.25                 |
+| 0 | 0.80 |
+| 100 | 0.60 |
+| 200 | 0.45 |
+| 300 | 0.34 |
+| 400 | 0.25 |
 
 (a) Plot a concentration-time graph and determine the order of reaction with respect to $A$. [3 marks]
 
@@ -208,11 +208,11 @@ For a first-order reaction, a plot of $\ln[A]$ vs time should be a straight line
 
 | Time (s) | $[A]$ | $\ln[A]$ |
 |----------|-------|---------|
-| 0        | 0.80  | $-0.223$ |
-| 100      | 0.60  | $-0.511$ |
-| 200      | 0.45  | $-0.799$ |
-| 300      | 0.34  | $-1.079$ |
-| 400      | 0.25  | $-1.386$ |
+| 0 | 0.80 | $-0.223$ |
+| 100 | 0.60 | $-0.511$ |
+| 200 | 0.45 | $-0.799$ |
+| 300 | 0.34 | $-1.079$ |
+| 400 | 0.25 | $-1.386$ |
 
 The $\ln[A]$ values decrease approximately linearly (drops by about 0.29 per 100 s interval), confirming **first order**.
 
@@ -228,7 +228,7 @@ Rate at $t = 200$ s: $k[A] = 2.91 \times 10^{-3} \times 0.45 = 1.31 \times 10^{-
 
 By tangent method: The gradient of the $[A]$ vs $t$ curve at $t = 200$ s gives $-d[A]/dt \approx 1.3 \times 10^{-3}$ mol dm$^{-3}$ s$^{-1}$.
 
-(c) The half-life is **increasing** with time. This is characteristic of a **second-order** reaction (where $t_{1/2} \propto 1/[A]_{0}$, so as $[A]$ decreases, $t_{1/2}$ increases). However, from part (a) the reaction appears first-order.
+(c) The half-life is **increasing** with time. This is characteristic of a **second-order** reaction (where $t_{1/2} \propto 1/[A]_{0}$So as $[A]$ decreases, $t_{1/2}$ increases). However, from part (a) the reaction appears first-order.
 
 The resolution: For a first-order reaction, the half-life should be **constant**. The apparent increase in half-life (175 s vs 250 s) suggests the data may not perfectly follow first-order kinetics, or the half-life estimates from the limited data are imprecise. The more reliable analysis from part (a) (linearity of $\ln[A]$ vs $t$) suggests the reaction is approximately first-order, with the half-life variation due to experimental data limitations.
 
@@ -266,7 +266,7 @@ $$E_{a} = \frac{1.386 \times 8.314}{2.083 \times 10^{-4}}$$
 
 $$E_{a} = \frac{11.523}{2.083 \times 10^{-4}} = 55320 \text{ J/mol} = 55.3 \text{ kJ/mol}$$
 
-(b) Using the Arrhenius equation with $T_{1} = 300$ K, $k_{1} = 2.5 \times 10^{-3}$ s$^{-1}$, $T_{2} = 340$ K:
+(b) Using the Arrhenius equation with $T_{1} = 300$ K, $k_{1} = 2.5 \times 10^{-3}$ s$^{-1}$$T_{2} = 340$ K:
 
 $$\ln\left(\frac{k_{2}}{2.5 \times 10^{-3}}\right) = \frac{55320}{8.314}\left(\frac{1}{300} - \frac{1}{340}\right)$$
 
@@ -276,4 +276,4 @@ $$\frac{k_{2}}{2.5 \times 10^{-3}} = e^{2.610} = 13.60$$
 
 $$k_{2} = 13.60 \times 2.5 \times 10^{-3} = 3.40 \times 10^{-2} \text{ s}^{-1}$$
 
-(c) The statement is an **overgeneralisation**. While it is true that at higher temperatures, a larger proportion of molecules have energy above $E_{a}$, the Maxwell-Boltzmann distribution always has a tail extending to very low energies. At any finite temperature, some molecules will always have energy below $E_{a}$. Furthermore, even if all molecules exceed $E_{a}$, the rate still depends on the **collision frequency** and the correct **orientation** of collisions (the steric/entropy factor). The rate would increase dramatically but would not be truly "instantaneous." In practice, at very high temperatures, other factors such as reactant decomposition or competing reactions may become significant.
+(c) The statement is an **overgeneralisation**. While it is true that at higher temperatures, a larger proportion of molecules have energy above $E_{a}$The Maxwell-Boltzmann distribution always has a tail extending to very low energies. At any finite temperature, some molecules will always have energy below $E_{a}$. Furthermore, even if all molecules exceed $E_{a}$The rate still depends on the **collision frequency** and the correct **orientation** of collisions (the steric/entropy factor). The rate would increase dramatically but would not be truly "instantaneous." In practice, at very high temperatures, other factors such as reactant decomposition or competing reactions may become significant.

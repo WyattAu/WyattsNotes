@@ -17,32 +17,32 @@ Board Coverage Edexcel P1, P3 | CIE P2, P4
 :::
 
 Development economics studies how nations transform from low-income, less-productive economies into
-high-income, modern economies. It is distinct from mainstream macroeconomics because it must grapple
-with institutional failure, poverty traps, and structural transformation — problems that are largely
-absent in advanced economies.
+High-income, modern economies. It is distinct from mainstream macroeconomics because it must grapple
+With institutional failure, poverty traps, and structural transformation — problems that are largely
+Absent in advanced economies.
 
 ## 1. What is Development?
 
 **Definition.** **Economic development** is the process by which a nation improves the economic,
-political, and social well-being of its people. It encompasses not just growth in income but also
-improvements in health, education, living standards, and political freedom.
+Political, and social well-being of its people. It encompasses not just growth in income but also
+Improvements in health, education, living standards, and political freedom.
 
 **Definition.** **Economic growth** is an increase in a country's real GDP or real GDP per capita.
 Growth is a **necessary but not sufficient** condition for development — a country can grow without
-developing if the gains accrue to a small elite.
+Developing if the gains accrue to a small elite.
 
 **Key distinction:**
 
-|              | Economic Growth          | Economic Development                              |
+| | Economic Growth | Economic Development |
 | ------------ | ------------------------ | ------------------------------------------------- |
 | **Measures** | GDP, GNI, GDP per capita | HDI, poverty rates, inequality, health, education |
-| **Focus**    | Quantity of output       | Quality of life                                   |
-| **Scope**    | Narrow (market output)   | Broad (well-being, institutions, freedoms)        |
+| **Focus** | Quantity of output | Quality of life |
+| **Scope** | Narrow (market output) | Broad (well-being, institutions, freedoms) |
 
 :::warning
 Common Pitfall Do not conflate growth with development. Equatorial Guinea has a high GDP
-per capita (driven by oil) but low HDI (0.59) due to extreme inequality. Conversely, Costa Rica has
-a moderate GDP per capita but high HDI (0.81) due to strong public services and political stability.
+Per capita (driven by oil) but low HDI (0.59) due to extreme inequality. Conversely, Costa Rica has
+A moderate GDP per capita but high HDI (0.81) due to strong public services and political stability.
 Always use multiple indicators.
 :::
 
@@ -50,20 +50,20 @@ Always use multiple indicators.
 
 ### 2.1 Economic Indicators
 
-**GDP per capita** — total output divided by population. Usually adjusted for purchasing power
-parity (PPP) to account for differences in price levels between countries.
+**GDP per capita** — total output divided by population. Adjusted for purchasing power
+Parity (PPP) to account for differences in price levels between countries.
 
 $$\mathrm{GDP per capita (PPP)} = \frac◆LB◆\mathrm{GDP (PPP)}◆RB◆◆LB◆\mathrm{Population}◆RB◆$$
 
 **GNI per capita** — GDP plus net income from abroad (remittances, profits from overseas
-investments). The World Bank uses GNI per capita to classify countries:
+Investments). The World Bank uses GNI per capita to classify countries:
 
 | Classification | GNI per capita (2024) |
 | -------------- | --------------------- |
-| Low income     | &lt; USD 1,145        |
-| Lower-middle   | USD 1,146 – 4,515     |
-| Upper-middle   | USD 4,516 – 14,005    |
-| High income    | &gt; USD 14,005       |
+| Low income | &lt; USD 1,145 |
+| Lower-middle | USD 1,146 – 4,515 |
+| Upper-middle | USD 4,516 – 14,005 |
+| High income | &gt; USD 14,005 |
 
 ### 2.2 The Human Development Index (HDI)
 
@@ -77,54 +77,54 @@ $$\mathrm{HDI} = \frac◆LB◆(\mathrm{Health Index} + \mathrm{Education Index} 
 
 $$0 \leq \mathrm{HDI} \leq 1$$
 
-| HDI range  | Category              |
+| HDI range | Category |
 | ---------- | --------------------- |
-| 1.0 – 0.8  | Very high development |
-| 0.8 – 0.7  | High development      |
-| 0.7 – 0.55 | Medium development    |
-| &lt; 0.55  | Low development       |
+| 1.0 – 0.8 | Very high development |
+| 0.8 – 0.7 | High development |
+| 0.7 – 0.55 | Medium development |
+| &lt; 0.55 | Low development |
 
 ### 2.3 Income Inequality: The Gini Coefficient
 
 **Definition.** The **Gini coefficient** measures income inequality within a country. It ranges from
 $0$ (perfect equality — everyone has the same income) to $1$ (perfect inequality — one person has
-all the income).
+All the income).
 
 The Gini coefficient is derived from the **Lorenz curve**, which plots the cumulative share of
-income received by the cumulative share of the population (ordered from poorest to richest).
+Income received by the cumulative share of the population (ordered from poorest to richest).
 
 $$\mathrm{Gini} = \frac{A}{A + B}$$
 
-where $A$ is the area between the line of perfect equality and the Lorenz curve, and $B$ is the area
-under the Lorenz curve.
+Where $A$ is the area between the line of perfect equality and the Lorenz curve, and $B$ is the area
+Under the Lorenz curve.
 
-| Country      | Gini (approx.) | Interpretation      |
+| Country | Gini (approx.) | Interpretation |
 | ------------ | -------------- | ------------------- |
-| South Africa | 0.63           | Extreme inequality  |
-| Brazil       | 0.53           | High inequality     |
-| USA          | 0.40           | Moderate inequality |
-| UK           | 0.35           | Moderate inequality |
-| Germany      | 0.31           | Lower inequality    |
-| Japan        | 0.33           | Lower inequality    |
-| Denmark      | 0.28           | Low inequality      |
+| South Africa | 0.63 | Extreme inequality |
+| Brazil | 0.53 | High inequality |
+| USA | 0.40 | Moderate inequality |
+| UK | 0.35 | Moderate inequality |
+| Germany | 0.31 | Lower inequality |
+| Japan | 0.33 | Lower inequality |
+| Denmark | 0.28 | Low inequality |
 
 ### 2.4 Other Indicators
 
 - **Multidimensional Poverty Index (MPI)**: measures health, education, and living standards
-  simultaneously. Used by the UN to identify the poorest populations.
+ simultaneously. Used by the UN to identify the poorest populations.
 - **Infant mortality rate**: deaths per 1,000 live births. Strongly correlated with overall
-  development.
+ development.
 - **Literacy rate**: percentage of adults who can read and write. Fundamental to human capital
-  formation.
+ formation.
 - **Access to clean water and sanitation**: essential for health and productivity.
 - **Sectoral employment**: the share of employment in agriculture, industry, and services. As
-  countries develop, the share in agriculture falls and the share in services rises.
+ countries develop, the share in agriculture falls and the share in services rises.
 
 :::info
 Board-Specific Note **CIE (9708)** requires you to evaluate the strengths and weaknesses of
-different development indicators, including the HDI and Gini coefficient. **Edexcel** focuses on GDP
-per capita and HDI as measures of living standards, and may ask you to compare indicators across
-countries.
+Different development indicators, including the HDI and Gini coefficient. **Edexcel** focuses on GDP
+Per capita and HDI as measures of living standards, and may ask you to compare indicators across
+Countries.
 :::
 
 ## 3. Causes of Economic Growth
@@ -135,7 +135,7 @@ The Solow growth model explains long-run growth as a function of three factors:
 
 $$Y = A \cdot f(K, L)$$
 
-where $Y$ = output, $K$ = capital, $L$ = labour, and $A$ = total factor productivity (technology).
+Where $Y$ = output, $K$ = capital, $L$ = labour, and $A$ = total factor productivity (technology).
 
 In per-worker terms:
 
@@ -144,18 +144,18 @@ $$\frac{Y}{L} = A \cdot f\left(\frac{K}{L}\right)$$
 **Sources of growth:**
 
 1. **Capital accumulation** ($\Delta K$): investment in physical capital (machinery, infrastructure,
-   buildings). Subject to diminishing returns — each additional unit of capital produces less output
-   than the last.
+ buildings). Subject to diminishing returns — each additional unit of capital produces less output
+ than the last.
 2. **Labour force growth** ($\Delta L$): increases in population or labour force participation.
 3. **Technological progress** ($\Delta A$): improvements in knowledge, techniques, and efficiency.
-   The only source of sustained long-run growth in per capita income.
+ The only source of sustained long-run growth in per capita income.
 
 $$\boxed{\mathrm{Long-run growth in } y = Y/L \mathrm{ requires technological progress}}$$
 
 ### 3.2 Human Capital
 
 **Definition.** **Human capital** is the stock of knowledge, skills, and health that workers
-possess. It is accumulated through education, training, and healthcare.
+Possess. It is accumulated through education, training, and healthcare.
 
 Human capital is as important as physical capital for growth:
 
@@ -169,21 +169,21 @@ Human capital is as important as physical capital for growth:
 **institutions**:
 
 - **Inclusive institutions**: protect property rights, enforce contracts, encourage competition,
-  provide public goods. Associated with sustained growth (e.g., UK, USA, South Korea).
+ provide public goods. Associated with sustained growth (e.g., UK, USA, South Korea).
 - **Extractive institutions**: concentrate power and wealth in a small elite, extract resources from
-  the majority. Associated with stagnation (e.g., DRC, Zimbabwe, North Korea).
+ the majority. Associated with stagnation (e.g., DRC, Zimbabwe, North Korea).
 
 ### 3.4 The Natural Resource Curse
 
 **Definition.** The **resource curse** (paradox of plenty) is the observation that countries with
-abundant natural resources (oil, minerals) often grow more slowly than resource-poor countries.
+Abundant natural resources (oil, minerals) often grow more slowly than resource-poor countries.
 
 **Causes:**
 
 1. **Dutch disease**: resource exports appreciate the exchange rate, making manufacturing less
-   competitive.
+ competitive.
 2. **Rent-seeking and corruption**: resource revenues create incentives for corruption rather than
-   productive investment.
+ productive investment.
 3. **Volatility**: commodity prices are highly volatile, creating macroeconomic instability.
 4. **Conflict**: resource wealth fuels civil wars (e.g., "conflict diamonds" in Sierra Leone).
 
@@ -196,38 +196,38 @@ The poverty trap is a self-reinforcing mechanism that prevents escape from pover
 $$\mathrm{Low income} \to \mathrm{Low savings} \to \mathrm{Low investment} \to \mathrm{Low productivity} \to \mathrm{Low income}$$
 
 Without external intervention (aid, FDI, debt relief), countries can be trapped in a low-level
-equilibrium.
+Equilibrium.
 
 ### 4.2 Institutional and Governance Failures
 
 - **Corruption**: diverts resources from productive uses, discourages investment. Transparency
-  International's Corruption Perceptions Index correlates strongly with development outcomes.
+ International's Corruption Perceptions Index correlates strongly with development outcomes.
 - **Weak property rights**: if individuals cannot protect their assets, they have no incentive to
-  invest or innovate.
+ invest or innovate.
 - **Political instability**: war and conflict destroy physical and human capital, displace
-  populations, and deter investment.
+ populations, and deter investment.
 
 ### 4.3 Infrastructure Deficit
 
 Inadequate transport, energy, water, and telecommunications infrastructure raises the cost of doing
-business, reduces productivity, and limits market access. The World Bank estimates that sub-Saharan
+Business, reduces productivity, and limits market access. The World Bank estimates that sub-Saharan
 Africa needs $93$ billion per year in infrastructure investment.
 
 ### 4.4 Demographic Challenges
 
 High population growth can outpace economic growth, leading to falling GDP per capita. Many
-developing countries have a **youth bulge** — a large proportion of young people — which can be a
-demographic dividend (if jobs are created) or a source of instability (if not).
+Developing countries have a **youth bulge** — a large proportion of young people — which can be a
+Demographic dividend (if jobs are created) or a source of instability (if not).
 
 ### 4.5 Other Barriers
 
-| Barrier               | Mechanism                                                                          |
+| Barrier | Mechanism |
 | --------------------- | ---------------------------------------------------------------------------------- |
-| **Debt burden**       | Debt servicing crowds out spending on health, education, and infrastructure        |
-| **Brain drain**       | Skilled workers emigrate, reducing human capital                                   |
-| **Trade barriers**    | Rich-country tariffs and subsidies on agriculture limit developing-country exports |
-| **Disease burden**    | Malaria, HIV/AIDS reduce life expectancy and labour productivity                   |
-| **Gender inequality** | Excluding women from education and work reduces potential output by up to 25%      |
+| **Debt burden** | Debt servicing crowds out spending on health, education, and infrastructure |
+| **Brain drain** | Skilled workers emigrate, reducing human capital |
+| **Trade barriers** | Rich-country tariffs and subsidies on agriculture limit developing-country exports |
+| **Disease burden** | Malaria, HIV/AIDS reduce life expectancy and labour productivity |
+| **Gender inequality** | Excluding women from education and work reduces potential output by up to 25% |
 
 ## 5. Development Strategies
 
@@ -241,10 +241,10 @@ Argentina) and India (pre-1991).
 $$\mathrm{Tariffs} \to \mathrm{Protected domestic industries grow} \to \mathrm{Self-sufficiency}$$
 
 - **Advantages**: protects infant industries, reduces dependence on imports, retains foreign
-  exchange.
+ exchange.
 - **Disadvantages**: protected industries become inefficient (no competitive pressure), small
-  domestic market limits economies of scale, balance of payments problems (importing capital goods
-  while exporting little).
+ domestic market limits economies of scale, balance of payments problems (importing capital goods
+ while exporting little).
 
 **Export-oriented industrialisation (EOI):**
 
@@ -254,12 +254,12 @@ Singapore, Hong Kong).
 $$\mathrm{Export incentives} \to \mathrm{Access to world markets} \to \mathrm{Economies of scale} \to \mathrm{Growth}$$
 
 - **Advantages**: access to large world markets, competitive pressure drives efficiency, export
-  earnings finance further investment.
+ earnings finance further investment.
 - **Disadvantages**: vulnerability to external demand shocks, initially difficult to compete with
-  established firms.
+ established firms.
 
 Evidence strongly favours EOI: the East Asian tigers achieved 7–10% annual growth vs 3–5% for ISI
-economies.
+Economies.
 
 ### 5.2 Foreign Direct Investment (FDI)
 
@@ -284,8 +284,8 @@ economies.
 ### 5.3 Foreign Aid
 
 **Definition.** **Foreign aid** is the transfer of resources (money, goods, technical assistance)
-from developed to developing countries, either bilaterally (government to government) or
-multilaterally (through the World Bank, IMF, UN).
+From developed to developing countries, either bilaterally (government to government) or
+Multilaterally (through the World Bank, IMF, UN).
 
 **Arguments for aid:**
 
@@ -301,22 +301,22 @@ multilaterally (through the World Bank, IMF, UN).
 3. **Dutch disease** — large aid inflows appreciate the real exchange rate.
 4. **Tied aid** — may benefit donor countries more than recipients.
 5. **Effectiveness depends on institutions** — Burnside & Dollar (2000): aid only promotes growth in
-   countries with sound fiscal, monetary, and trade policies.
+ countries with sound fiscal, monetary, and trade policies.
 
 ### 5.4 Microfinance
 
 **Definition.** **Microfinance** provides small loans (microcredit), savings accounts, and insurance
-to low-income individuals who lack access to traditional banking. Pioneered by Muhammad Yunus
+To low-income individuals who lack access to traditional banking. Pioneered by Muhammad Yunus
 (Grameen Bank, Bangladesh, Nobel Prize 2006).
 
-Microfinance targets entrepreneurs — typically women — who need small amounts of capital to start or
-expand businesses (e.g., buying a sewing machine, seeds, a market stall).
+Microfinance targets entrepreneurs — women — who need small amounts of capital to start or
+Expand businesses (e.g., buying a sewing machine, seeds, a market stall).
 
 ## 6. Trade and Development
 
 ### 6.1 Comparative Advantage for Developing Countries
 
-Developing countries typically have a comparative advantage in:
+Developing countries have a comparative advantage in:
 
 - Primary commodities (agriculture, minerals, oil) — abundant land and natural resources.
 - Labour-intensive manufactured goods (textiles, clothing, assembly) — abundant low-cost labour.
@@ -324,46 +324,46 @@ Developing countries typically have a comparative advantage in:
 ### 6.2 The Prebisch-Singer Hypothesis
 
 **Definition.** The **Prebisch-Singer hypothesis** states that the terms of trade for primary
-commodity exporters tend to deteriorate relative to manufactured goods exporters over the long run.
+Commodity exporters tend to deteriorate relative to manufactured goods exporters over the long run.
 
 $$\frac◆LB◆P_{\mathrm{primary}}◆RB◆◆LB◆P_{\mathrm{manufactured}}◆RB◆ \mathrm{ falls over time}$$
 
 **Causes:**
 
 1. **Low income elasticity of demand for primary commodities** (Engel's law): as global income
-   rises, the share spent on food and raw materials falls.
+ rises, the share spent on food and raw materials falls.
 2. **High income elasticity of demand for manufactured goods**: demand for manufactured goods grows
-   faster than income.
+ faster than income.
 3. **Technological substitution**: synthetic materials replace natural ones (nylon replaces cotton,
-   plastics replace metals).
+ plastics replace metals).
 4. **Oligopolistic pricing in manufacturing** vs **competitive pricing in primary commodities**:
-   manufacturers have pricing power; primary producers do not.
+ manufacturers have pricing power; primary producers do not.
 
 **Implication**: developing countries specialising in primary commodities face a long-term decline
-in their terms of trade, making it harder to earn foreign exchange and finance development.
+In their terms of trade, making it harder to earn foreign exchange and finance development.
 
 ### 6.3 Fair Trade
 
 **Definition.** **Fair trade** is a trading partnership that aims to achieve sustainable development
-for excluded and disadvantaged producers by offering better trading conditions and campaigning for
-change.
+For excluded and disadvantaged producers by offering better trading conditions and campaigning for
+Change.
 
 Fair trade organisations pay a minimum price floor (above market price) to producers and provide a
-social premium for community development projects (schools, healthcare, clean water).
+Social premium for community development projects (schools, healthcare, clean water).
 
 ### 6.4 International Trade Agreements
 
 - **WTO**: sets global trade rules, reduces tariffs through negotiation rounds.
 - **Generalised System of Preferences (GSP)**: developed countries grant preferential (lower)
-  tariffs to developing-country exports.
+ tariffs to developing-country exports.
 - **Economic Partnership Agreements (EPAs)**: trade agreements between the EU and developing
-  countries.
+ countries.
 
 :::warning
-warning
-developing country liberalises trade while developed countries maintain subsidies on agriculture
+Warning
+Developing country liberalises trade while developed countries maintain subsidies on agriculture
 (e.g., the EU's Common Agricultural Policy), developing-country farmers cannot compete. Trade
-liberalisation must be reciprocal and sequenced appropriately.
+Liberalisation must be reciprocal and sequenced appropriately.
 :::
 
 ## 7. Sustainable Development
@@ -371,24 +371,24 @@ liberalisation must be reciprocal and sequenced appropriately.
 ### 7.1 The Environmental Kuznets Curve
 
 The **environmental Kuznets curve (EKC)** hypothesises an inverted-U relationship between
-environmental degradation and income per capita:
+Environmental degradation and income per capita:
 
 $$\mathrm{At low income: degradation increases with growth}$$
 $$\mathrm{At high income: degradation decreases as societies invest in environmental protection}$$
 
 This suggests that environmental problems may resolve themselves as countries develop — but this is
-controversial. Some pollutants (e.g., local air pollution) follow the EKC pattern; others (e.g.,
+Controversial. Some pollutants (e.g., local air pollution) follow the EKC pattern; others (e.g.,
 CO$_2$ emissions) do not.
 
 ### 7.2 Tragedy of the Commons
 
 **Definition.** The **tragedy of the commons** (Hardin, 1968) describes a situation where
-individuals, acting independently in their own self-interest, deplete a shared resource, even though
-it is not in anyone's long-term interest.
+Individuals, acting independently in their own self-interest, deplete a shared resource, even though
+It is not in anyone's long-term interest.
 
 Examples: overfishing, deforestation, overgrazing, atmospheric pollution. The tragedy arises because
-no individual has an incentive to conserve the resource — any conservation effort benefits everyone,
-not just the individual.
+No individual has an incentive to conserve the resource — any conservation effort benefits everyone,
+Not just the individual.
 
 **Solutions:**
 
@@ -396,12 +396,12 @@ not just the individual.
 2. **Regulation** — quotas, bans, environmental standards enforced by government.
 3. **Pigouvian taxes** — tax the use of the common resource at the marginal social cost.
 4. **Cap and trade** — set a total quota and allow trading of permits (e.g., EU Emissions Trading
-   System).
+ System).
 
 ### 7.3 Sustainable Development Goals (SDGs)
 
 The UN's 17 SDGs (2015–2030) provide a framework for balancing economic development with
-environmental sustainability:
+Environmental sustainability:
 
 1. No poverty
 2. Zero hunger
@@ -429,78 +429,78 @@ Rostow proposed that all countries pass through five stages of economic developm
 
 $$\boxed{\mathrm{Traditional society} \to \mathrm{Preconditions for take-off} \to \mathrm{Take-off} \to \mathrm{Drive to maturity} \to \mathrm{Age of high mass consumption}}$$
 
-| Stage                        | Characteristics                                                                |
+| Stage | Characteristics |
 | ---------------------------- | ------------------------------------------------------------------------------ |
-| Traditional society          | Subsistence agriculture, limited technology, static social structure           |
-| Preconditions for take-off   | Emerging banking, infrastructure investment, new elite emerges                 |
-| Take-off                     | Industrialisation begins, investment > 10% of GDP, rapid growth in key sectors |
-| Drive to maturity            | Diversified economy, technology spreads, new industries replace old            |
-| Age of high mass consumption | High GDP per capita, consumer goods, welfare state, service sector dominates   |
+| Traditional society | Subsistence agriculture, limited technology, static social structure |
+| Preconditions for take-off | Emerging banking, infrastructure investment, new elite emerges |
+| Take-off | Industrialisation begins, investment > 10% of GDP, rapid growth in key sectors |
+| Drive to maturity | Diversified economy, technology spreads, new industries replace old |
+| Age of high mass consumption | High GDP per capita, consumer goods, welfare state, service sector dominates |
 
 **Limitations:** Eurocentric (based on Western experience), assumes all countries follow the same
-path, ignores institutional and cultural differences, does not explain why some countries get
+Path, ignores institutional and cultural differences, does not explain why some countries get
 "stuck" at a particular stage.
 
 ### 8.2 Harrod-Domar Model
 
 The Harrod-Domar model relates the growth rate of output to the savings rate and the capital-output
-ratio:
+Ratio:
 
 $$\boxed{g = \frac{s}{v}}$$
 
-where $g$ = growth rate of GDP, $s$ = savings rate (proportion of GDP saved), $v$ = capital-output
-ratio (units of capital needed per unit of output).
+Where $g$ = growth rate of GDP, $s$ = savings rate (proportion of GDP saved), $v$ = capital-output
+Ratio (units of capital needed per unit of output).
 
 **Implication:** to increase the growth rate, a country must either increase its savings rate or
-reduce its capital-output ratio (use capital more efficiently).
+Reduce its capital-output ratio (use capital more efficiently).
 
 $$\Delta g = \frac◆LB◆\Delta s◆RB◆◆LB◆v◆RB◆ - \frac◆LB◆s\,\Delta v◆RB◆◆LB◆v^2◆RB◆$$
 
-If $s = 15\%$ and $v = 3$, then $g = 15/3 = 5\%$ per year.
+If $s = 15\%$ and $v = 3$Then $g = 15/3 = 5\%$ per year.
 
 **Limitations:** assumes a fixed capital-output ratio (constant returns), ignores the role of
-technology and human capital, assumes savings are automatically invested (requires functioning
-financial markets).
+Technology and human capital, assumes savings are automatically invested (requires functioning
+Financial markets).
 
 ### 8.3 Lewis Dual-Sector Model (1954)
 
 **Definition.** The **Lewis model** describes a developing economy as having two sectors:
 
 1. **Traditional (subsistence) sector**: agriculture, with surplus labour (marginal product of
-   labour $\approx 0$).
+ labour $\approx 0$).
 2. **Modern (industrial) sector**: manufacturing, with higher productivity and wages.
 
 **Mechanism:** The modern sector grows by absorbing surplus labour from the traditional sector at a
-slightly higher wage (the "institutional wage"). Since the marginal product of surplus labour in
-agriculture is zero, transferring workers to industry does not reduce agricultural output. The
-modern sector reinvests its profits, expanding capacity and absorbing more workers. This continues
-until the surplus labour is exhausted (the **Lewis turning point**), after which wages rise in both
-sectors.
+Slightly higher wage (the "institutional wage"). Since the marginal product of surplus labour in
+Agriculture is zero, transferring workers to industry does not reduce agricultural output. The
+Modern sector reinvests its profits, expanding capacity and absorbing more workers. This continues
+Until the surplus labour is exhausted (the **Lewis turning point**), after which wages rise in both
+Sectors.
 
 $$\mathrm{Profits in modern sector} \to \mathrm{Reinvestment} \to \mathrm{Expansion} \to \mathrm{More workers absorbed}$$
 
 **Limitations:** assumes unlimited surplus labour in agriculture, ignores urban unemployment,
-assumes wages in the modern sector are constant until the turning point, does not account for terms
-of trade between sectors.
+Assumes wages in the modern sector are constant until the turning point, does not account for terms
+Of trade between sectors.
 
 ### 8.4 Solow Growth Model (Application to Development)
 
 The Solow model predicts **conditional convergence**: poorer countries should grow faster than
-richer countries (because they have less capital per worker and therefore higher marginal returns to
-investment). This implies that, all else equal, developing countries should "catch up" to developed
-countries.
+Richer countries (because they have less capital per worker and therefore higher marginal returns to
+Investment). This implies that, all else equal, developing countries should "catch up" to developed
+Countries.
 
 $$\mathrm{If } A \mathrm{ and } s \mathrm{ are the same: poor countries grow faster}$$
 
 In practice, convergence is **conditional**, not absolute — it only occurs among countries with
-similar institutions, policies, and human capital. This explains why some developing countries
-converge (East Asia) while others do not (sub-Saharan Africa).
+Similar institutions, policies, and human capital. This explains why some developing countries
+Converge (East Asia) while others do not (sub-Saharan Africa).
 
 ## Problems
 
 **Problem 1.** Country A has a GDP of USD 500 billion and a population of 50 million. Country B has
-a GDP of USD 200 billion and a population of 10 million. (a) Calculate GDP per capita for each
-country. (b) Can you conclude that Country B is more developed? Explain.
+A GDP of USD 200 billion and a population of 10 million. (a) Calculate GDP per capita for each
+Country. (b) Can you conclude that Country B is more developed? Explain.
 
 <details>
 <summary>Hint</summary>
@@ -508,8 +508,8 @@ country. (b) Can you conclude that Country B is more developed? Explain.
 </details>
 
 **Problem 2.** A country's GNI per capita is $3,200$. (a) Using the World Bank classification, what
-category does this country fall into? (b) What additional information would you need to assess
-whether this country is developing successfully?
+Category does this country fall into? (b) What additional information would you need to assess
+Whether this country is developing successfully?
 
 <details>
 <summary>Hint</summary>
@@ -517,8 +517,8 @@ whether this country is developing successfully?
 </details>
 
 **Problem 3.** Using the Harrod-Domar model, a country has a savings rate of 20% and a
-capital-output ratio of 4. (a) Calculate the growth rate. (b) If the government wants to achieve 8%
-growth, what savings rate is required (assuming $v$ is unchanged)? (c) Evaluate the assumption that
+Capital-output ratio of 4. (a) Calculate the growth rate. (b) If the government wants to achieve 8%
+Growth, what savings rate is required (assuming $v$ is unchanged)? (c) Evaluate the assumption that
 $v$ is constant.
 
 <details>
@@ -535,7 +535,7 @@ Arguments for aid: (1) Provides capital for countries too poor to save enough do
 </details>
 
 **Problem 5.** Explain the Lewis dual-sector model. Why might a developing country fail to progress
-through the stages described by Lewis?
+Through the stages described by Lewis?
 
 <details>
 <summary>Hint</summary>
@@ -543,7 +543,7 @@ The Lewis model describes two sectors: a traditional agricultural sector with su
 </details>
 
 **Problem 6.** A developing country specialises in coffee exports. Explain how the Prebisch-Singer
-hypothesis applies to this country and evaluate the policy responses available.
+Hypothesis applies to this country and evaluate the policy responses available.
 
 <details>
 <summary>Hint</summary>
@@ -551,7 +551,7 @@ The Prebisch-Singer hypothesis predicts that the terms of trade for primary comm
 </details>
 
 **Problem 7.** "The resource curse means that countries with abundant natural resources are worse
-off than those without." To what extent do you agree?
+Off than those without." To what extent do you agree?
 
 <details>
 <summary>Hint</summary>
@@ -559,7 +559,7 @@ The resource curse is not inevitable — some resource-rich countries have devel
 </details>
 
 **Problem 8.** Using the concept of the tragedy of the commons, explain why overfishing occurs and
-evaluate potential solutions.
+Evaluate potential solutions.
 
 <details>
 <summary>Hint</summary>
@@ -567,7 +567,7 @@ The tragedy of the commons: the ocean is a common-pool resource — no individua
 </details>
 
 **Problem 9.** Explain the concept of conditional convergence in the Solow model. Why do some
-developing countries converge with developed countries while others do not?
+Developing countries converge with developed countries while others do not?
 
 <details>
 <summary>Hint</summary>
@@ -575,7 +575,7 @@ The Solow model predicts conditional convergence: among countries with similar s
 </details>
 
 **Problem 10.** "Sustainable development is incompatible with rapid economic growth in developing
-countries." Evaluate this statement.
+Countries." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
@@ -594,12 +594,12 @@ $$Y = F(K, L) = K^\alpha L^{1-\alpha}$$
 In per-worker terms:
 $$y = \frac{Y}{L} = \left(\frac{K}{L}\right)^\alpha = k^\alpha$$
 
-where $k = K/L$ is capital per worker and $y = Y/L$ is output per worker.
+Where $k = K/L$ is capital per worker and $y = Y/L$ is output per worker.
 
 **Capital accumulation:**
 $$\dot{k} = s \cdot y - (n + \delta) \cdot k$$
 
-where $s$ is the savings rate, $n$ is the population growth rate, and $\delta$ is the depreciation rate.
+Where $s$ is the savings rate, $n$ is the population growth rate, and $\delta$ is the depreciation rate.
 
 - $s \cdot y = s \cdot k^\alpha$ is investment per worker.
 - $(n + \delta) \cdot k$ is break-even investment (the investment needed to maintain the current capital-labour ratio as the population grows and capital depreciates).
@@ -624,7 +624,7 @@ $$y^* = \left(\frac◆LB◆s◆RB◆◆LB◆n + \delta◆RB◆\right)^{\frac◆L
 
 ### 11.3 Worked Example: Solow Model Calculations
 
-**Example.** A country has $\alpha = 0.3$, $s = 0.2$, $n = 0.02$, $\delta = 0.05$.
+**Example.** A country has $\alpha = 0.3$$s = 0.2$$n = 0.02$$\delta = 0.05$.
 
 **Steady-state capital per worker:**
 $$k^* = \left(\frac{0.2}{0.02 + 0.05}\right)^{\frac{1}{0.7}} = \left(\frac{0.2}{0.07}\right)^{1.4286} = (2.857)^{1.4286}$$
@@ -686,7 +686,7 @@ A **poverty trap** is a self-reinforcing mechanism that causes poverty to persis
 
 **1. Savings trap.** At very low incomes, households cannot save because all income is spent on subsistence consumption. The savings rate is effectively zero, so $k^*$ is near zero, and the economy cannot accumulate capital.
 
-Mathematically: if $s = 0$ for $y < y_{subsistence}$, then $k^* = 0$ and $y^* = 0$. The economy cannot grow.
+Mathematically: if $s = 0$ for $y < y_{subsistence}$Then $k^* = 0$ and $y^* = 0$. The economy cannot grow.
 
 **2. Big push trap.** Multiple industries must develop simultaneously for any single industry to be profitable. If infrastructure, education, and manufacturing all require each other to be viable, no individual sector can develop alone. A "big push" (coordinated investment) is needed to escape the trap (Rosenstein-Rodan, 1943).
 
@@ -708,7 +708,7 @@ Mathematically: if $s = 0$ for $y < y_{subsistence}$, then $k^* = 0$ and $y^* = 
 - Many countries have escaped poverty without large aid inflows (China, India post-1991).
 - The "middle-income trap" (countries that grow rapidly to middle-income status but then stagnate) may reflect institutional bottlenecks rather than poverty traps per se.
 
-**Evaluation:** Poverty traps exist in theory but are heterogeneous. The appropriate policy depends on the specific trap. Aid can help in some cases (health, education) but cannot substitute for institutional reform and good governance.
+**Evaluation:** Poverty traps exist in theory but are heterogeneous. The appropriate policy depends on the specific trap. Aid can help (health, education) but cannot substitute for institutional reform and good governance.
 
 ## 13. Trade vs Aid for Development
 
@@ -788,7 +788,7 @@ Higher $s$ increases $k^* = [s/(n+\delta)]^{1/(1-\alpha)}$. The new steady state
 When $s$ increases, investment exceeds break-even investment at the old $k^*$. Capital accumulates ($\dot{k} > 0$), and output per worker rises. During the transition, the growth rate of $y$ is positive (diminishing as the economy approaches the new steady state). The growth rate follows a path from high to zero, asymptotically approaching the new steady state.
 
 **Step 3: With technological progress (4 marks).**
-With labour-augmenting technological progress at rate $g$, the steady-state growth rate of output per worker is $g$ regardless of $s$. The savings rate affects the LEVEL of output per effective worker ($\hat{y}^*$) but not its growth rate. This is the key Solow prediction: long-run growth is driven by technology, not capital accumulation alone.
+With labour-augmenting technological progress at rate $g$The steady-state growth rate of output per worker is $g$ regardless of $s$. The savings rate affects the LEVEL of output per effective worker ($\hat{y}^*$) but not its growth rate. This is the key Solow prediction: long-run growth is driven by technology, not capital accumulation alone.
 </details>
 
 **Question 3 (25 marks).** "Institutional quality is the most important determinant of economic development." Evaluate this statement with reference to the Solow model, the Lewis model, and empirical evidence.
@@ -837,7 +837,7 @@ The country needs foreign aid or FDI of 9.5% of GDP to achieve the growth target
 Gap 1 (savings gap): the difference between required investment and domestic savings.
 Gap 2 (foreign exchange gap): the difference between required imports and export earnings.
 
-If required investment $= 24.5\%$ of GDP, domestic savings $= 15\%$, and required imports $= 30\%$ of GDP while exports $= 20\%$:
+If required investment $= 24.5\%$ of GDP, domestic savings $= 15\%$And required imports $= 30\%$ of GDP while exports $= 20\%$:
 - Savings gap $= 24.5 - 15 = 9.5\%$ of GDP.
 - Foreign exchange gap $= 30 - 20 = 10\%$ of GDP.
 - The binding constraint is the foreign exchange gap (10% > 9.5%). The country needs 10% of GDP in foreign aid.
@@ -879,11 +879,11 @@ Assume output in industry $= 50L - L^2$ (so $MPL = 50 - 2L$). Capital is needed:
 
 Year 1: $K = 20$ (for 10 workers). Industrial wage = 300. Hire until $MPL = 300$: $50 - 2L = 300$ is impossible ($L$ would be negative). This doesn't work.
 
-**Simpler approach:** Let industrial output $= A \times K^{0.3}L^{0.7}$ with $A = 1$. Initial $K = 100$, $L = 10$.
+**Simpler approach:** Let industrial output $= A \times K^{0.3}L^{0.7}$ with $A = 1$. Initial $K = 100$$L = 10$.
 Output $= 100^{0.3} \times 10^{0.7} = 3.98 \times 5.01 = 19.94$.
 $MPL = 0.7 \times 19.94 / 10 = 1.40$.
 Industrial wage $= 1.5 \times 0.2 = 0.3$ (if agricultural MPL = 0.2).
-Since $MPL = 1.40 > 0.3$, the industrial sector wants to hire more workers.
+Since $MPL = 1.40 > 0.3$The industrial sector wants to hire more workers.
 
 **Key insight of the Lewis model:** in the early stages, the industrial sector can hire unlimited labour at the subsistence wage. Profits are reinvested, expanding the capital stock and absorbing more labour. Growth is rapid because:
 1. Labour is cheap (no wage pressure).
@@ -909,15 +909,15 @@ Since $MPL = 1.40 > 0.3$, the industrial sector wants to hire more workers.
 **Aid scenario (current policy):**
 - Aid = 4% of GDP.
 - Government spending financed by aid: USD 2bn (assumed 100% effective, which is optimistic).
-- Multiplier: 1.5. GDP increase from aid = $2 \times 1.5 = 3$bn (6% of GDP).
+- Multiplier: 1.5. GDP increase from aid = $2 \times 1.5 = 3$Bn (6% of GDP).
 - But: aid dependency, Dutch disease (appreciation of the real exchange rate reduces export competitiveness), and governance issues reduce the effective multiplier. Realistic multiplier: 0.8-1.2.
-- Net GDP increase: $2 \times 1.0 = 2$bn (4% of GDP).
+- Net GDP increase: $2 \times 1.0 = 2$Bn (4% of GDP).
 
 **Trade scenario (alternative policy):**
 - The government negotiates a free trade agreement that increases exports by 20%.
-- New exports: $8 \times 1.2 = 9.6$bn. Increase: 1.6bn.
+- New exports: $8 \times 1.2 = 9.6$Bn. Increase: 1.6bn.
 - Import tariff revenue lost: USD 0.3bn (assuming 15% average tariff on imports of 2bn).
-- Multiplier on net exports: 1.5. GDP increase $= 1.6 \times 1.5 = 2.4$bn (4.8% of GDP).
+- Multiplier on net exports: 1.5. GDP increase $= 1.6 \times 1.5 = 2.4$Bn (4.8% of GDP).
 - Additional dynamic gains: technology transfer, competition, economies of scale. Estimated additional 1% of GDP per year over 10 years.
 
 **Comparison over 10 years (compounding):**
@@ -943,13 +943,13 @@ The trade-led strategy generates 5.2% higher GDP after 10 years than the aid-led
 
 $$s(Y) = \begin{cases} 0.05 & \text{if } Y < Y^* \\ 0.20 & \text{if } Y \geq Y^* \end{cases}$$
 
-where $Y^* = 100$ is a "threshold" income above which households can afford to save more (they are above subsistence).
+Where $Y^* = 100$ is a "threshold" income above which households can afford to save more (they are above subsistence).
 
-**Low-income trap:** If $Y_0 < Y^*$, savings rate = 5%. Steady state: $k^* = (0.05 / 0.05)^{1/0.7} = 1$. $y^* = 1^{0.3} = 1$. $Y^*_{trap} = 1 \times L = L$. (Using $\delta = 0.05$, $n = 0$.)
+**Low-income trap:** If $Y_0 < Y^*$Savings rate = 5%. Steady state: $k^* = (0.05 / 0.05)^{1/0.7} = 1$. $y^* = 1^{0.3} = 1$. $Y^*_{trap} = 1 \times L = L$. (Using $\delta = 0.05$$n = 0$.)
 
-This gives $y^* = (s/(\delta + n))^{0.3/(1-0.3)} = (0.05/0.05)^{0.429} = 1$. The economy is trapped at $y = 1$, which is below the threshold $Y^* = 100$.
+This gives $y^* = (s/(\delta + n))^{0.3/(1-0.3)} = (0.05/0.05)^{0.429} = 1$. The economy is trapped at $y = 1$Which is below the threshold $Y^* = 100$.
 
-**High-income equilibrium:** If $Y_0 \geq Y^*$, savings rate = 20%. Steady state: $k^* = (0.20/0.05)^{1/0.7} = 4^{1.429} = 6.96$. $y^* = 6.96^{0.3} = 1.84$.
+**High-income equilibrium:** If $Y_0 \geq Y^*$Savings rate = 20%. Steady state: $k^* = (0.20/0.05)^{1/0.7} = 4^{1.429} = 6.96$. $y^* = 6.96^{0.3} = 1.84$.
 
 The economy has TWO stable steady states: a poverty trap ($y = 1$) and a developed equilibrium ($y = 1.84$). The threshold $Y^* = 100$ determines which equilibrium the economy converges to.
 
@@ -1022,3 +1022,11 @@ The business is viable. After repaying the loan, the woman has a profitable busi
 - The poorest (who are not entrepreneurs) do not benefit from microfinance and may be harmed by taking on debt they cannot repay.
 - The most effective poverty reduction strategies combine microfinance with other interventions (health, education, infrastructure, social protection).
 - Microfinance works best when complemented by business training, savings products, and insurance.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

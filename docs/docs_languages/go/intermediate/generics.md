@@ -11,8 +11,8 @@ categories:
 ## Introduction
 
 Go 1.18 (released March 2022) added generics via type parameters. Generics allow you to write
-functions and types that abstract over different concrete types while maintaining full type safety
-at compile time.
+Functions and types that abstract over different concrete types while maintaining full type safety
+At compile time.
 
 ## Type Parameters
 
@@ -49,7 +49,7 @@ strs := Map(nums, func(n int) string {
 ## Constraints
 
 A constraint is an interface that restricts which types can be used as a type argument. The `any`
-constraint (alias for `interface{}`) allows any type:
+Constraint (alias for `interface{}`) allows any type:
 
 ```go
 func Print[T any](v T) {
@@ -105,8 +105,8 @@ func Sum[T Number](nums []T) T {
 }
 ```
 
-The `~` token means "the underlying type must be." A type `MyInt int` has underlying type `int`, so
-it satisfies `~int`.
+The `~` token means "the underlying type must be." A type `MyInt int` has underlying type `int`So
+It satisfies `~int`.
 
 ### Methods in Constraints
 
@@ -146,14 +146,14 @@ func Clamp[T constraints.Ordered](v, lo, hi T) T {
 
 Common constraints:
 
-| Constraint             | Types Allowed                                                  |
+| Constraint | Types Allowed |
 | ---------------------- | -------------------------------------------------------------- |
-| `constraints.Signed`   | `~int`, `~int8`, `~int16`, `~int32`, `~int64`                  |
-| `constraints.Unsigned` | `~uint`, `~uint8`, `~uint16`, `~uint32`, `~uint64`, `~uintptr` |
-| `constraints.Integer`  | All signed and unsigned integers                               |
-| `constraints.Float`    | `~float32`, `~float64`                                         |
-| `constraints.Ordered`  | All integers, floats, and `~string`                            |
-| `constraints.Complex`  | `~complex64`, `~complex128`                                    |
+| `constraints.Signed` | `~int``~int8``~int16``~int32``~int64` |
+| `constraints.Unsigned` | `~uint``~uint8``~uint16``~uint32``~uint64``~uintptr` |
+| `constraints.Integer` | All signed and unsigned integers |
+| `constraints.Float` | `~float32``~float64` |
+| `constraints.Ordered` | All integers, floats, and `~string` |
+| `constraints.Complex` | `~complex64``~complex128` |
 
 ## Generic Types
 
@@ -234,7 +234,7 @@ func MapKeys[K comparable, V any](m map[K]V) []K {
 ## Type Inference
 
 Go uses type inference for generic functions. The compiler infers type arguments from function
-arguments. When inference is ambiguous, you must specify explicitly:
+Arguments. When inference is ambiguous, you must specify explicitly:
 
 ```go
 func New[T any]() *T {
@@ -251,7 +251,7 @@ s := Map(nums, fn) // T and U inferred from nums and fn
 ## Generic Methods
 
 Methods on generic types can have their own type parameters (separate from the receiver's type
-parameters):
+Parameters):
 
 ```go
 func (s *Stack[T]) Filter(predicate func(T) bool) *Stack[T] {
@@ -266,42 +266,50 @@ func (s *Stack[T]) Filter(predicate func(T) bool) *Stack[T] {
 ```
 
 Note: methods cannot introduce new type parameters that are not on the receiver. All type parameters
-must be declared on the type.
+Must be declared on the type.
 
 ## Instantiation
 
 Go uses monomorphization at compile time. Each unique set of type arguments produces a separate
-specialization of the generic function or type. There is no boxing or type erasure at runtime.
+Specialization of the generic function or type. There is no boxing or type erasure at runtime.
 
 ## Limitations
 
 1. **No specialization.** You cannot provide different implementations for different types. Generic
-   code is the same for all type arguments.
+ code is the same for all type arguments.
 
 2. **No operator methods in constraints.** You cannot require that a type support `+` beyond the
-   built-in types. You cannot write a constraint that says "any type with a `+` operator."
+ built-in types. You cannot write a constraint that says "any type with a `+` operator."
 
 3. **No variadic type parameters.** Type parameter lists must be fixed-length.
 
 4. **No type parameter defaults.** Each type parameter must be specified or inferred.
 
 5. **Methods cannot add type parameters.** Only the type's own type parameters are available in
-   methods.
+ methods.
 
 ## Common Pitfalls
 
 1. **Using `any` as a constraint when a narrower constraint exists.** `any` allows any type,
-   including types that do not support the operations your function performs. Use `comparable`,
-   `cmp.Ordered`, or a custom constraint to enforce requirements at compile time.
+ including types that do not support the operations your function performs. Use `comparable`
+ `cmp.Ordered`Or a custom constraint to enforce requirements at compile time.
 
 2. **Forgetting `comparable` for map keys and set elements.** If a generic type uses a value as a
-   map key, the constraint must include `comparable`.
+ map key, the constraint must include `comparable`.
 
 3. **Confusing `~T` with `T`.** `~int` matches `int` and any type with underlying type `int` (e.g.,
-   `type MyInt int`). `int` matches only `int` exactly.
+ `type MyInt int`). `int` matches only `int` exactly.
 
 4. **Overusing generics.** Not every function needs to be generic. If a function only works with one
-   or two concrete types, concrete implementations are clearer and often more efficient.
+ or two concrete types, concrete implementations are clearer and often more efficient.
 
 5. **Generic type assertion ambiguity.** When type parameters appear in the same signature position
-   as concrete types, inference may fail. Specify type arguments explicitly in such cases.
+ as concrete types, inference may fail. Specify type arguments explicitly in such cases.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

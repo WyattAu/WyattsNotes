@@ -11,26 +11,26 @@ slug: state-management
 ## What State Management Is
 
 Flutter renders UI by calling `build()` on widgets. The `build()` method returns a widget tree based
-on the current state. When state changes, `build()` must be called again to produce an updated tree.
+On the current state. When state changes, `build()` must be called again to produce an updated tree.
 The problem is: where does the state live, how does it change, and how does the framework know to
-rebuild?
+Rebuild?
 
 Without a deliberate strategy, state ends up scattered across widget fields, callbacks, and global
-variables. This works for a prototype but collapses under the weight of a real application:
-propagating a change from a deep widget to an ancestor requires passing callbacks through every
-intermediate widget (callback hell), shared state becomes uncontrollable without a single source of
-truth, and rebuilds become unpredictable because the framework cannot determine which widgets depend
-on which state.
+Variables. This works for a prototype but collapses under the weight of a real application:
+Propagating a change from a deep widget to an ancestor requires passing callbacks through every
+Intermediate widget (callback hell), shared state becomes uncontrollable without a single source of
+Truth, and rebuilds become unpredictable because the framework cannot determine which widgets depend
+On which state.
 
 State management is the discipline of controlling **where** state is stored, **how** it is modified,
-and **which** widgets rebuild when it changes. Every solution in this document addresses the same
-fundamental problem — they differ in complexity, boilerplate, testability, and scalability.
+And **which** widgets rebuild when it changes. Every solution in this document addresses the same
+Fundamental problem — they differ in complexity, boilerplate, testability, and scalability.
 
 ### Why setState Alone Does Not Scale
 
 `setState` marks a single `State` object as dirty, triggering a rebuild of that widget and its
-descendants. This works for local UI state (a toggle, a text field, an animation progress) but fails
-for shared application state (user session, shopping cart, feature flags):
+Descendants. This works for local UI state (a toggle, a text field, an animation progress) but fails
+For shared application state (user session, shopping cart, feature flags):
 
 ```dart
 class CounterPage extends StatefulWidget {
@@ -64,19 +64,19 @@ class _CounterPageState extends State<CounterPage> {
 The problems:
 
 1. **Excessive rebuilds** — `setState` at the top rebuilds the entire subtree, including widgets
-   that do not depend on the changed state.
+ that do not depend on the changed state.
 2. **No sharing** — state in a `State` object is inaccessible to sibling or ancestor widgets without
-   callbacks.
+ callbacks.
 3. **No persistence** — when the widget is disposed, the state is lost.
 4. **No separation of concerns** — business logic lives in the widget, making it untestable and
-   unreusable.
+ unreusable.
 
 ## setState and InheritedWidget
 
 ### How setState Works
 
-When you call `setState()`, Flutter marks the `State` object's element as dirty. On the next frame,
-the framework calls `build()` on that element and reconciles the new widget tree with the old one.
+When you call `setState()`Flutter marks the `State` object's element as dirty. On the next frame,
+The framework calls `build()` on that element and reconciles the new widget tree with the old one.
 Only widgets whose configuration changes are updated in the render tree.
 
 ```dart
@@ -86,13 +86,13 @@ setState(() {
 ```
 
 The callback is synchronous. It runs immediately — not on the next frame. The rebuild is scheduled
-for the next frame. Multiple `setState` calls within the same microtask are batched into a single
-rebuild.
+For the next frame. Multiple `setState` calls within the same microtask are batched into a single
+Rebuild.
 
 ### Scope Limitations
 
 `setState` is scoped to a single `State` object. The state is private to that widget. To communicate
-state changes to a parent, you need a callback:
+State changes to a parent, you need a callback:
 
 ```dart
 class TemperatureInput extends StatefulWidget {
@@ -120,13 +120,13 @@ class _TemperatureInputState extends State<TemperatureInput> {
 ```
 
 This pattern does not scale. For three levels of nesting, you need three callback parameters. For
-ten levels, the boilerplate becomes unmaintainable.
+Ten levels, the boilerplate becomes unmaintainable.
 
 ### InheritedWidget
 
 `InheritedWidget` is Flutter's built-in mechanism for propagating data down the widget tree. A
-widget anywhere in the subtree can access the data via `BuildContext` without explicit parameter
-passing.
+Widget anywhere in the subtree can access the data via `BuildContext` without explicit parameter
+Passing.
 
 ```dart
 class TemperatureData extends InheritedWidget {
@@ -202,11 +202,11 @@ class TemperatureSlider extends StatelessWidget {
 ### How updateShouldNotify Controls Rebuilds
 
 `updateShouldNotify` determines whether descendants that depend on this `InheritedWidget` should be
-rebuilt. If it returns `false`, no descendant is notified. If it returns `true`, every widget that
-called `of()` is rebuilt.
+Rebuilt. If it returns `false`No descendant is notified. If it returns `true`Every widget that
+Called `of()` is rebuilt.
 
 This is the granularity mechanism — you control which state changes trigger rebuilds by what you
-compare in `updateShouldNotify`. Compare only the fields that descendants care about:
+Compare in `updateShouldNotify`. Compare only the fields that descendants care about:
 
 ```dart
 @override
@@ -221,20 +221,20 @@ bool updateShouldNotify(AppState oldWidget) {
 ### Limitations of InheritedWidget
 
 1. **No built-in mutation API** — `InheritedWidget` is immutable. To change its data, you must wrap
-   it in a `StatefulWidget` that calls `setState`, then provide a new `InheritedWidget` with updated
-   data. This is the boilerplate that `Provider` eliminates.
-2. **No notification granularity** — when `updateShouldNotify` returns `true`, **all** dependents
-   rebuild, not just the ones that care about the changed field.
+ it in a `StatefulWidget` that calls `setState`Then provide a new `InheritedWidget` with updated
+ data. This is the boilerplate that `Provider` eliminates.
+2. **No notification granularity** — when `updateShouldNotify` returns `true`**all** dependents
+ rebuild, not just the ones that care about the changed field.
 3. **No lifecycle management** — `InheritedWidget` does not dispose resources. You must handle
-   disposal in the wrapping `StatefulWidget`.
+ disposal in the wrapping `StatefulWidget`.
 4. **Verbose** — every piece of shared state requires a custom `InheritedWidget` subclass with
-   `of()`, `updateShouldNotify`, and a wrapping `StatefulWidget`.
+ `of()``updateShouldNotify`And a wrapping `StatefulWidget`.
 
 ## Provider
 
 `Provider` is a thin wrapper around `InheritedWidget` that eliminates the boilerplate. It is the
-most widely used state management solution in Flutter, recommended by the Flutter team for small to
-medium applications.
+Most widely used state management solution in Flutter, recommended by the Flutter team for small to
+Medium applications.
 
 ```yaml
 dependencies:
@@ -244,7 +244,7 @@ dependencies:
 ### ChangeNotifier and ChangeNotifierProvider
 
 `ChangeNotifier` is Dart's built-in observable class from `package:flutter/foundation.dart`. It
-maintains a list of listeners and notifies them when `notifyListeners()` is called:
+Maintains a list of listeners and notifies them when `notifyListeners()` is called:
 
 ```dart
 import 'package:flutter/foundation.dart';
@@ -271,8 +271,8 @@ class Counter extends ChangeNotifier {
 }
 ```
 
-`ChangeNotifierProvider` creates the `ChangeNotifier`, makes it available to the subtree, and
-automatically calls `dispose()` when the provider is removed from the tree:
+`ChangeNotifierProvider` creates the `ChangeNotifier`Makes it available to the subtree, and
+Automatically calls `dispose()` when the provider is removed from the tree:
 
 ```dart
 void main() {
@@ -308,11 +308,11 @@ class CounterPage extends StatelessWidget {
 ### context.read() vs context.watch() vs context.select()
 
 - `context.watch<T>()` — subscribes to the provider and rebuilds the widget whenever
-  `notifyListeners()` is called. Use it in `build()`.
+ `notifyListeners()` is called. Use it in `build()`.
 - `context.read<T>()` — returns the provider value without subscribing. Use it in event handlers and
-  callbacks. Calling `read()` in `build()` is a mistake — it will not rebuild when state changes.
+ callbacks. Calling `read()` in `build()` is a mistake — it will not rebuild when state changes.
 - `context.select<T, R>(R Function(T) selector)` — subscribes to a specific property of the
-  provider. The widget rebuilds only when the selected value changes:
+ provider. The widget rebuilds only when the selected value changes:
 
 ```dart
 // Rebuilds only when counter.count changes, not on every notifyListeners()
@@ -382,24 +382,24 @@ MultiProvider(
 ### Limitations of Provider
 
 1. **No code generation** — every notifier is a hand-written class with manual `notifyListeners()`
-   calls. Forgetting to call `notifyListeners()` causes silent bugs (state changes but UI does not
-   update).
+ calls. Forgetting to call `notifyListeners()` causes silent bugs (state changes but UI does not
+ update).
 2. **No async built-in** — handling loading/error states for async operations requires manual
-   boilerplate.
+ boilerplate.
 3. **Mutable state** — `ChangeNotifier` is mutable by default. Any code with a reference can mutate
-   the state directly, bypassing any validation logic.
+ the state directly, bypassing any validation logic.
 4. **No dependency injection for non-ChangeNotifier types** — `Provider` works best with
-   `ChangeNotifier`. For plain objects, services, or repositories, you need separate provider types
-   (`Provider`, `FutureProvider`, `StreamProvider`).
-5. **BuildContext dependency** — `context.read()` and `context.watch()` require `BuildContext`,
-   which means state access is tied to the widget tree. You cannot access state outside of widgets
-   (e.g., in a domain service or route guard).
+ `ChangeNotifier`. For plain objects, services, or repositories, you need separate provider types
+ (`Provider``FutureProvider``StreamProvider`).
+5. **BuildContext dependency** — `context.read()` and `context.watch()` require `BuildContext`
+ which means state access is tied to the widget tree. You cannot access state outside of widgets
+ (e.g., in a domain service or route guard).
 
 ## Riverpod
 
 Riverpod was created by the same author as Provider (Remi Rousselet) to address its fundamental
-limitations. It removes the dependency on `BuildContext`, introduces immutable providers, supports
-async out of the box, and provides code generation for less boilerplate.
+Limitations. It removes the dependency on `BuildContext`Introduces immutable providers, supports
+Async out of the box, and provides code generation for less boilerplate.
 
 ```yaml
 dependencies:
@@ -414,8 +414,8 @@ dev_dependencies:
 ### Providers as Immutable Declarative Values
 
 In Riverpod, a provider is a declaration of how to create a value — not a mutable object. Providers
-are immutable globals that you reference by name. The framework handles creation, disposal, and
-dependency tracking:
+Are immutable globals that you reference by name. The framework handles creation, disposal, and
+Dependency tracking:
 
 ```dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -499,10 +499,10 @@ class AsyncCounter extends _$AsyncCounter {
 ### ref.watch() vs ref.read()
 
 - `ref.watch(provider)` — subscribes to the provider. When the provider's value changes, the
-  watching provider or widget rebuilds. Use inside `build()` and widget `build()` methods.
+ watching provider or widget rebuilds. Use inside `build()` and widget `build()` methods.
 - `ref.read(provider)` — reads the current value without subscribing. Use in event handlers,
-  callbacks, and lifecycle methods. Using `ref.read()` inside `build()` is a mistake — the widget
-  will not rebuild when the value changes.
+ callbacks, and lifecycle methods. Using `ref.read()` inside `build()` is a mistake — the widget
+ will not rebuild when the value changes.
 
 ```dart
 final myWidgetProvider = Provider<void>((ref) {
@@ -522,7 +522,7 @@ final myWidgetProvider = Provider<void>((ref) {
 
 Providers annotated with `autoDispose` are automatically disposed when no widget is watching them.
 This prevents memory leaks for providers that hold large resources (stream subscriptions, cached
-data):
+Data):
 
 ```dart
 final searchResultsProvider = FutureProvider.autoDispose<List<Result>>((ref) async {
@@ -533,7 +533,7 @@ final searchResultsProvider = FutureProvider.autoDispose<List<Result>>((ref) asy
 ```
 
 When the search UI is dismissed, the provider is disposed. When the search UI is shown again, the
-provider is recreated. Use `keepAlive()` to override this for providers that should persist:
+Provider is recreated. Use `keepAlive()` to override this for providers that should persist:
 
 ```dart
 final cachedConfigProvider = FutureProvider.autoDispose<Config>((ref) async {
@@ -546,7 +546,7 @@ final cachedConfigProvider = FutureProvider.autoDispose<Config>((ref) async {
 ### ref.invalidate()
 
 `ref.invalidate(provider)` forces a provider to rebuild on next access. This is useful for
-refreshing data:
+Refreshing data:
 
 ```dart
 final onRefresh = () {
@@ -555,7 +555,7 @@ final onRefresh = () {
 ```
 
 All providers that depend on the invalidated provider are also invalidated — this cascading
-invalidation ensures consistency.
+Invalidation ensures consistency.
 
 ### Code Generation with @riverpod
 
@@ -593,18 +593,18 @@ dart run build_runner build --delete-conflicting-outputs
 ```
 
 This generates the provider definitions in `counter.g.dart`. The generated code handles the provider
-family, `autoDispose`, and proper typing.
+Family, `autoDispose`And proper typing.
 
 ### Why Riverpod Is Recommended for New Projects
 
 1. **No BuildContext dependency** — providers are global constants. You can access state from
-   anywhere: widgets, domain services, route guards, middleware.
+ anywhere: widgets, domain services, route guards, middleware.
 2. **Immutable by default** — providers declare how to create a value, not how to mutate it. State
-   mutation goes through well-defined notifier APIs.
+ mutation goes through well-defined notifier APIs.
 3. **Async-first** — `FutureProvider` and `AsyncNotifierProvider` handle loading, error, and data
-   states without manual boilerplate.
+ states without manual boilerplate.
 4. **Auto-dispose** — prevents memory leaks by automatically disposing providers when they are no
-   longer watched.
+ longer watched.
 5. **Testable** — providers can be overridden in tests without widgets:
 
 ```dart
@@ -623,8 +623,8 @@ test('fetches user', () async {
 ## BLoC
 
 The BLoC (Business Logic Component) pattern enforces a strict separation between the UI and business
-logic by using a unidirectional data flow: Events go in, States come out. The BLoC itself is a pure
-function from event streams to state streams.
+Logic by using a unidirectional data flow: Events go in, States come out. The BLoC itself is a pure
+Function from event streams to state streams.
 
 ```yaml
 dependencies:
@@ -643,8 +643,8 @@ UI ──(events)──> BLoC ──(states)──> UI
 3. The UI rebuilds in response to the new state.
 
 This is a state machine. Every state transition is caused by a specific event. Every event produces
-a deterministic state transition (for synchronous events). This makes the system traceable — you can
-log every event and state transition to reproduce bugs.
+A deterministic state transition (for synchronous events). This makes the system traceable — you can
+Log every event and state transition to reproduce bugs.
 
 ### Defining Events and States
 
@@ -704,8 +704,8 @@ class AuthError extends AuthState {
 ```
 
 Using `sealed` classes for events and states gives you exhaustive pattern matching and prevents
-unhandled cases at compile time. `Equatable` provides value equality for events and states, which
-prevents the BLoC from emitting duplicate consecutive states.
+Unhandled cases at compile time. `Equatable` provides value equality for events and states, which
+Prevents the BLoC from emitting duplicate consecutive states.
 
 ### The BLoC Class
 
@@ -779,7 +779,7 @@ class CounterCubit extends Cubit<int> {
 ```
 
 Use `Cubit` when the state transitions are simple (no complex event-driven logic). Use `Bloc` when
-you need event tracing, replayability, or complex state machines.
+You need event tracing, replayability, or complex state machines.
 
 ### BlocProvider, BlocBuilder, BlocListener, BlocConsumer
 
@@ -963,29 +963,29 @@ void main() {
 
 - **Large teams** where explicit event contracts prevent "who changed what" confusion.
 - **Complex state machines** with many states and transitions (e.g., multi-step forms, order
-  processing, authentication flows).
+ processing, authentication flows).
 - **Event tracing requirements** — when you need to log, replay, or audit every state transition.
 - **Testing rigor** — when the ability to test state transitions in isolation without widgets is a
-  priority.
+ priority.
 
 The cost is boilerplate. Every feature requires an event class, a state class, and a BLoC class. For
-simple features, this overhead is not justified.
+Simple features, this overhead is not justified.
 
 ## Comparison Table
 
-| Factor              | setState         | InheritedWidget | Provider   | Riverpod            | BLoC              |
+| Factor | setState | InheritedWidget | Provider | Riverpod | BLoC |
 | ------------------- | ---------------- | --------------- | ---------- | ------------------- | ----------------- |
-| Complexity          | Trivial          | Low             | Low        | Medium              | High              |
-| Learning curve      | None             | Low             | Low        | Medium              | High              |
-| Boilerplate         | None             | High            | Low        | Medium (low w/ gen) | High              |
-| BuildContext needed | Yes (local only) | Yes             | Yes        | No                  | Yes (for widgets) |
-| Async support       | Manual           | Manual          | Manual     | Built-in            | Built-in          |
-| Rebuild granularity | None (full tree) | Manual          | Good       | Excellent           | Good              |
-| Testability         | Poor             | Poor            | Medium     | Excellent           | Excellent         |
-| Scalability         | None             | Low             | Medium     | High                | High              |
-| Code generation     | No               | No              | No         | Optional            | No                |
-| Ecosystem maturity  | N/A (built-in)   | N/A (built-in)  | Mature     | Mature              | Mature            |
-| Recommended for     | Local UI state   | Foundation only | Small apps | New projects        | Large teams       |
+| Complexity | Trivial | Low | Low | Medium | High |
+| Learning curve | None | Low | Low | Medium | High |
+| Boilerplate | None | High | Low | Medium (low w/ gen) | High |
+| BuildContext needed | Yes (local only) | Yes | Yes | No | Yes (for widgets) |
+| Async support | Manual | Manual | Manual | Built-in | Built-in |
+| Rebuild granularity | None (full tree) | Manual | Good | Excellent | Good |
+| Testability | Poor | Poor | Medium | Excellent | Excellent |
+| Scalability | None | Low | Medium | High | High |
+| Code generation | No | No | No | Optional | No |
+| Ecosystem maturity | N/A (built-in) | N/A (built-in) | Mature | Mature | Mature |
+| Recommended for | Local UI state | Foundation only | Small apps | New projects | Large teams |
 
 ## Choosing the Right Solution
 
@@ -994,7 +994,7 @@ The decision depends on four factors: app size, team size, state complexity, and
 ### Small App / Solo Developer
 
 **Provider or setState.** The overhead of Riverpod or BLoC is not justified. Use `setState` for
-local UI state and `ChangeNotifierProvider` for shared state. Keep it simple.
+Local UI state and `ChangeNotifierProvider` for shared state. Keep it simple.
 
 ```dart
 // This is fine for a small app
@@ -1008,29 +1008,29 @@ class _SettingsPageState extends State<SettingsPage> {
 ### Medium App / Small Team
 
 **Riverpod.** The auto-dispose, async support, and testability without widgets pay off as complexity
-grows. The learning curve is moderate, and code generation keeps boilerplate manageable.
+Grows. The learning curve is moderate, and code generation keeps boilerplate manageable.
 
 ### Large App / Large Team
 
 **Riverpod or BLoC.** Riverpod for flexibility and developer ergonomics. BLoC when the team benefits
-from explicit event contracts and state machine discipline.
+From explicit event contracts and state machine discipline.
 
 ### Decision Framework
 
-| Condition                                    | Recommendation                |
+| Condition | Recommendation |
 | -------------------------------------------- | ----------------------------- |
-| Local UI state only                          | `setState`                    |
-| Shared state, simple mutations               | Provider                      |
-| Shared state, async operations               | Riverpod                      |
-| Complex state machine, event tracing needed  | BLoC                          |
-| State access outside widgets (routing, etc.) | Riverpod                      |
-| Team requires strict event contracts         | BLoC                          |
-| Minimize boilerplate                         | Riverpod with code generation |
-| Already using Provider, want to stay simple  | Provider                      |
+| Local UI state only | `setState` |
+| Shared state, simple mutations | Provider |
+| Shared state, async operations | Riverpod |
+| Complex state machine, event tracing needed | BLoC |
+| State access outside widgets (routing, etc.) | Riverpod |
+| Team requires strict event contracts | BLoC |
+| Minimize boilerplate | Riverpod with code generation |
+| Already using Provider, want to stay simple | Provider |
 
 The most common mistake is choosing the most complex solution first. Start with `setState` for local
-state. Add Provider or Riverpod when state needs to be shared. Introduce BLoC only when the
-complexity of the state machine justifies the boilerplate.
+State. Add Provider or Riverpod when state needs to be shared. Introduce BLoC only when the
+Complexity of the state machine justifies the boilerplate.
 
 ## Common Pitfalls
 
@@ -1061,7 +1061,7 @@ class _UserSessionState extends State<UserSession> {
 final userProvider = StateProvider<User?>((ref) => null);
 ```
 
-### 2. context.read() in build() Instead of context.watch()
+### 2. Context.read() in build() Instead of context.watch()
 
 ```dart
 // WRONG — reads once, never rebuilds when state changes
@@ -1203,10 +1203,10 @@ final tickerProvider = StreamProvider.autoDispose<int>((ref) {
 ### 7. Mixing State Management Solutions
 
 Using Provider for one feature, Riverpod for another, and raw BLoC for a third creates an
-inconsistent codebase where developers must understand three systems. Pick one solution for the app
-layer. It is acceptable to use `setState` for truly local widget state regardless of which solution
-the app uses — `setState` is the correct tool for ephemeral, widget-scoped state like animation
-progress or a text field controller.
+Inconsistent codebase where developers must understand three systems. Pick one solution for the app
+Layer. It is acceptable to use `setState` for truly local widget state regardless of which solution
+The app uses — `setState` is the correct tool for ephemeral, widget-scoped state like animation
+Progress or a text field controller.
 
 ### 8. Not Extracting State Logic from Widgets
 
@@ -1276,12 +1276,20 @@ class AuthState extends Equatable {
 }
 ```
 
-Without proper `props`, the BLoC will skip emitting identical states even when the fields differ,
-because `Equatable` considers them equal.
+Without proper `props`The BLoC will skip emitting identical states even when the fields differ,
+Because `Equatable` considers them equal.
 
 ### 10. Premature Abstraction
 
 Do not create a BLoC, notifier, or provider for a feature that is a single screen with two buttons.
 `setState` is the correct tool for that. Premature abstraction adds complexity without benefit.
 Abstract when the state is shared across screens, when the logic is complex enough to test in
-isolation, or when multiple widgets need to react to the same state change.
+Isolation, or when multiple widgets need to react to the same state change.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

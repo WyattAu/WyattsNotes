@@ -20,12 +20,12 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 Explore the simulation above to develop intuition for this topic.
 
 **Definition.** A magnetic field is a region of space where a magnetic force acts on moving charges
-or magnetic materials.
+Or magnetic materials.
 
 ## 1. Magnetic Force on a Current-Carrying Wire
 
 **Definition.** Magnetic flux density $B$ is the force per unit length per unit current on a
-straight conductor perpendicular to the field.
+Straight conductor perpendicular to the field.
 
 $$\boxed{B = \frac{F}{IL}}$$
 
@@ -33,14 +33,14 @@ A current-carrying wire in a magnetic field experiences a force:
 
 $$\boxed{F = BIl\sin\theta}$$
 
-where $B$ is the magnetic flux density (T), $I$ is the current (A), $l$ is the length of wire in the
-field (m), and $\theta$ is the angle between the wire and the field direction.
+Where $B$ is the magnetic flux density (T), $I$ is the current (A), $l$ is the length of wire in the
+Field (m), and $\theta$ is the angle between the wire and the field direction.
 
 The force is maximum when the wire is perpendicular to the field ($\theta = 90^\circ$): $F = BIl$.
 The force is zero when the wire is parallel to the field ($\theta = 0^\circ$).
 
 **Definition.** Fleming's left-hand rule relates the directions of force, magnetic field, and
-current: thumb (force), index (field), middle (current).
+Current: thumb (force), index (field), middle (current).
 
 **Direction:** Given by **Fleming's Left-Hand Rule**:
 
@@ -49,14 +49,14 @@ current: thumb (force), index (field), middle (current).
 - **Thumb** → Force ($F$)
 
 **Definition.** The tesla is the SI unit of magnetic flux density; 1 T = 1 N A$^{-1}$ m$^{-1}$ — the
-magnetic flux density that produces a force of 1 N on a wire of length 1 m carrying a current of 1 A
-perpendicular to the field.
+Magnetic flux density that produces a force of 1 N on a wire of length 1 m carrying a current of 1 A
+Perpendicular to the field.
 
 $$\boxed{1\,\mathrm{T} = 1\,\mathrm{N A}^{-1}\,\mathrm{m}^{-1}}$$
 
 ### Magnetic Force on a Moving Charge
 
-Since $I = dq/dt$, and $n$ charges each of charge $q$ move through length $l$ in time $t$:
+Since $I = dq/dt$And $n$ charges each of charge $q$ move through length $l$ in time $t$:
 $I = nq/t$ for one charge $I = q/t$ where $t = l/v$.
 
 $$F = B \cdot \frac{q}{t} \cdot l \cdot \sin\theta = B \cdot q \cdot \frac{l}{t} \cdot \sin\theta$$
@@ -72,7 +72,7 @@ $$\boxed{F = Bqv}$$
 ### Derivation of $r = mv/(Bq)$
 
 When a charged particle moves perpendicular to a uniform magnetic field, the magnetic force provides
-the centripetal acceleration:
+The centripetal acceleration:
 
 $$F = Bqv = \frac{mv^2}{r}$$
 
@@ -85,14 +85,14 @@ $$\boxed{r = \frac{mv}{Bq}}$$
 $$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆$$
 
 Note that $T$ is **independent of $v$ and $r$** — a remarkable result. All particles of the same
-mass and charge orbit with the same period regardless of speed.
+Mass and charge orbit with the same period regardless of speed.
 
 The **cyclotron frequency** is:
 
 $$f = \frac{1}{T} = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆$$
 
 **Intuition.** A faster particle has a larger orbit (proportionally), so it takes the same time to
-complete one revolution. This is the principle behind the cyclotron particle accelerator.
+Complete one revolution. This is the principle behind the cyclotron particle accelerator.
 
 ### Kinetic Energy in Terms of $r$
 
@@ -101,18 +101,18 @@ $$E_k = \frac{1}{2}mv^2 = \frac{1}{2}m\left(\frac{Bqr}{m}\right)^2 = \frac{B^2q^
 <details>
 <summary>Example: Proton in a Magnetic Field</summary>
 A proton ($m = 1.67 \times 10^{-27}$ kg) moves at $3.0 \times 10^6$ m s$^{-1}$ perpendicular to a
-magnetic field of 0.50 T. Find the radius of its circular path.
+Magnetic field of 0.50 T. Find the radius of its circular path.
 
 **Answer.**
 $r = \frac{mv}{Bq} = \frac◆LB◆1.67 \times 10^{-27} \times 3.0 \times 10^6◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆5.01 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.0626$
-m $= 6.26$ cm.
+M $= 6.26$ cm.
 
 </details>
 
 ## 3. Velocity Selector
 
 A velocity selector uses crossed electric and magnetic fields to select particles of a specific
-velocity.
+Velocity.
 
 **Principle.** A particle with charge $q$ and velocity $v$ passes through a region where
 $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to each other and to the particle's velocity.
@@ -126,23 +126,23 @@ $$F_E = F_B$$
 $$\boxed{qE = Bqv \implies v = \frac{E}{B}}$$
 
 Only particles with this specific velocity pass through undeflected. Faster or slower particles are
-deflected and filtered out.
+Deflected and filtered out.
 
 **Intuition.** The electric and magnetic forces balance for exactly one speed. This is how mass
-spectrometers first select a monoenergetic beam before separating by mass.
+Spectrometers first select a monoenergetic beam before separating by mass.
 
 ## 4. Faraday's Law of Electromagnetic Induction
 
 ### Magnetic Flux
 
 **Definition.** Magnetic flux $\Phi$ is the product of the magnetic flux density and the
-perpendicular component of area: $\Phi = BA\cos\theta$ where $\theta$ is the angle between the field
-and the normal to the area.
+Perpendicular component of area: $\Phi = BA\cos\theta$ where $\theta$ is the angle between the field
+And the normal to the area.
 
 $$\boxed{\Phi = BA\cos\theta}$$
 
-where $A$ is the area of the surface and $\theta$ is the angle between the field and the normal to
-the surface.
+Where $A$ is the area of the surface and $\theta$ is the angle between the field and the normal to
+The surface.
 
 **Definition.** The weber is the SI unit of magnetic flux; 1 Wb = 1 T m$^2$.
 
@@ -150,27 +150,27 @@ $$\boxed{1\,\mathrm{Wb} = 1\,\mathrm{T}\,\mathrm{m}^2}$$
 
 ### Faraday's Law
 
-**Definition.** Faraday's law states that the induced e.m.f. is equal to the negative rate of change
-of magnetic flux linkage.
+**Definition.** Faraday's law states that the induced e.m.f. Is equal to the negative rate of change
+Of magnetic flux linkage.
 
 $$\boxed{\varepsilon = -N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆}$$
 
-where $N$ is the number of turns, $\Phi$ is the magnetic flux, and $N\Phi$ is the **flux linkage**.
+Where $N$ is the number of turns, $\Phi$ is the magnetic flux, and $N\Phi$ is the **flux linkage**.
 
-**Derivation from energy conservation.** If an e.m.f. were induced that did not oppose the change in
-flux, you could create a self-sustaining current and violate conservation of energy.
+**Derivation from energy conservation.** If an e.m.f. Were induced that did not oppose the change in
+Flux, you could create a self-sustaining current and violate conservation of energy.
 
 ### Lenz's Law
 
 **Definition.** Lenz's law states that the direction of the induced current is such that it opposes
-the change producing it.
+The change producing it.
 
 This is the physical content of the minus sign in Faraday's law. The induced current creates a
-magnetic field that opposes the change in the original flux.
+Magnetic field that opposes the change in the original flux.
 
 **Intuition.** Lenz's law is nature's expression of inertia for magnetic systems. If you push a
-magnet towards a coil, the coil generates a current whose field repels the magnet. If you pull the
-magnet away, the current attracts it. The system always resists change.
+Magnet towards a coil, the coil generates a current whose field repels the magnet. If you pull the
+Magnet away, the current attracts it. The system always resists change.
 
 ### Motional e.m.f.
 
@@ -178,12 +178,12 @@ A conducting rod of length $l$ moving with velocity $v$ perpendicular to a unifo
 
 $$\mathcal{E} = Blv$$
 
-**Derivation.** In time $dt$, the rod sweeps out area $l \cdot v\,dt$. The flux swept:
+**Derivation.** In time $dt$The rod sweeps out area $l \cdot v\,dt$. The flux swept:
 $d\Phi = B \cdot lv\,dt$. By Faraday's law: $\mathcal{E} = d\Phi/dt = Blv$. $\square$
 
 ## 5. The Alternating Current Generator
 
-A coil of $N$ turns, area $A$, rotating at angular frequency $\omega$ in a uniform field $B$:
+A coil of $N$ turns, area $A$Rotating at angular frequency $\omega$ in a uniform field $B$:
 
 $$\Phi = NBA\cos(\omega t)$$
 
@@ -191,12 +191,12 @@ $$\mathcal{E} = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = NBA\omega\sin(\o
 
 $$\boxed{\mathcal{E} = \mathcal{E}_0\sin(\omega t)}$$
 
-where the peak e.m.f. is $\mathcal{E}_0 = NBA\omega$.
+Where the peak e.m.f. Is $\mathcal{E}_0 = NBA\omega$.
 
 :::tip
 Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-right-hand grip rule.
+Right-hand grip rule.
 :::
 
 ## 6. Biot-Savart Law and Ampere's Law
@@ -204,14 +204,14 @@ right-hand grip rule.
 ### The Biot-Savart Law
 
 The Biot-Savart law is the magnetic analogue of Coulomb's law: it gives the magnetic field
-contribution $d\mathbf{B}$ at a point $\mathbf{P}$ due to an infinitesimal current element
+Contribution $d\mathbf{B}$ at a point $\mathbf{P}$ due to an infinitesimal current element
 $I\,d\mathbf{l}$:
 
 $$\boxed{d\mathbf{B} = \frac◆LB◆\mu_0◆RB◆◆LB◆4\pi◆RB◆\frac◆LB◆I\,d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆}$$
 
-where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{l}$
-points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$,
-and $r$ is the distance. The total field is:
+Where $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ is the permeability of free space, $d\mathbf{l}$
+Points along the current, $\hat{\mathbf{r}}$ is the unit vector from the element to $\mathbf{P}$
+And $r$ is the distance. The total field is:
 
 $$\mathbf{B} = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\int \frac◆LB◆d\mathbf{l} \times \hat{\mathbf{r}}◆RB◆◆LB◆r^2◆RB◆$$
 
@@ -219,14 +219,14 @@ The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
 :::warning
-Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$, not
+Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$Not
 $\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
 :::
 
 ### Field at the Centre of a Circular Loop
 
-For a circular loop of radius $R$ carrying current $I$, every element $d\mathbf{l}$ satisfies
-$d\mathbf{l} \perp \hat{\mathbf{r}}$ and $r = R$, so $|d\mathbf{l} \times \hat{\mathbf{r}}| = dl$:
+For a circular loop of radius $R$ carrying current $I$Every element $d\mathbf{l}$ satisfies
+$d\mathbf{l} \perp \hat{\mathbf{r}}$ and $r = R$So $|d\mathbf{l} \times \hat{\mathbf{r}}| = dl$:
 
 $$B = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi R^2◆RB◆\oint dl = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi R^2◆RB◆\cdot 2\pi R$$
 
@@ -238,12 +238,12 @@ For $N$ turns: $B = \mu_0 NI/(2R)$.
 
 Consider a point $\mathbf{P}$ on the axis at distance $x$ from the centre of a loop of radius $R$.
 Each current element is at distance $r = \sqrt{R^2 + x^2}$ from $\mathbf{P}$. Since
-$d\mathbf{l} \perp \hat{\mathbf{r}}$, the contribution magnitude is
+$d\mathbf{l} \perp \hat{\mathbf{r}}$The contribution magnitude is
 $dB = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\frac{dl}{r^2}$.
 
 By rotational symmetry, components of $d\mathbf{B}$ perpendicular to the axis cancel. Only the axial
-component survives. Since $d\mathbf{B} \perp \hat{\mathbf{r}}$ and $\hat{\mathbf{r}}$ makes angle
-$\alpha$ with the axis where $\sin\alpha = R/r$, the axial component is:
+Component survives. Since $d\mathbf{B} \perp \hat{\mathbf{r}}$ and $\hat{\mathbf{r}}$ makes angle
+$\alpha$ with the axis where $\sin\alpha = R/r$The axial component is:
 
 $$dB_{\parallel} = dB\sin\alpha = \frac◆LB◆\mu_0 I◆RB◆◆LB◆4\pi◆RB◆\frac{R\,dl}{r^3}$$
 
@@ -253,50 +253,50 @@ $$B = \frac◆LB◆\mu_0 I R◆RB◆◆LB◆4\pi(R^2 + x^2)^{3/2}◆RB◆\cdot 2
 
 $$\boxed{B = \frac◆LB◆\mu_0 I R^2◆RB◆◆LB◆2(R^2 + x^2)^{3/2}◆RB◆}$$
 
-**Check.** At $x = 0$: $B = \mu_0 I/(2R)$, recovering the centre-of-loop result. As $x \to \infty$:
-$B \to 0$, as expected.
+**Check.** At $x = 0$: $B = \mu_0 I/(2R)$Recovering the centre-of-loop result. As $x \to \infty$:
+$B \to 0$As expected.
 
 ### Ampere's Law
 
 **Statement.** Ampere's circuital law: the line integral of $\mathbf{B}$ around any closed Amperian
-loop equals $\mu_0$ times the net current threading that loop:
+Loop equals $\mu_0$ times the net current threading that loop:
 
 $$\boxed{\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enc}}}$$
 
 This is one of Maxwell's equations. It is the magnetic analogue of Gauss's law for electric fields.
 Where Gauss's law exploits symmetry to find $E$ from enclosed charge, Ampere's law exploits symmetry
-to find $B$ from enclosed current.
+To find $B$ from enclosed current.
 
 ### Field Inside a Long Solenoid
 
 Take a rectangular Amperian loop with one long side of length $L$ inside the solenoid (parallel to
-the axis) and the other outside.
+The axis) and the other outside.
 
 - **Inside:** $B$ is uniform and parallel to the axis, so $\mathbf{B} \cdot d\mathbf{l} = B\,dl$.
 - **Outside:** $B \approx 0$ for an ideal long solenoid.
-- **Ends:** $\mathbf{B} \perp d\mathbf{l}$, contributing zero.
+- **Ends:** $\mathbf{B} \perp d\mathbf{l}$Contributing zero.
 
 $$\oint \mathbf{B} \cdot d\mathbf{l} = BL = \mu_0(nL)I$$
 
 $$\boxed{B = \mu_0 n I}$$
 
-where $n = N/L$ is the number of turns per unit length. The field is uniform inside and independent
-of the solenoid's radius (for a long solenoid).
+Where $n = N/L$ is the number of turns per unit length. The field is uniform inside and independent
+Of the solenoid's radius (for a long solenoid).
 
 **Toroid.** A solenoid bent into a circle. Ampere's law with a circular path of radius $r$ inside
-the toroid gives $B = \mu_0 NI/(2\pi r)$, where $N$ is the total number of turns. Unlike the
-solenoid, the field varies with $r$.
+The toroid gives $B = \mu_0 NI/(2\pi r)$Where $N$ is the total number of turns. Unlike the
+Solenoid, the field varies with $r$.
 
 ## 7. Force Between Two Parallel Wires
 
 ### Derivation
 
 Wire 1 (current $I_1$) creates a magnetic field at distance $d$. By Ampere's law (or the Biot-Savart
-result for an infinite wire):
+Result for an infinite wire):
 
 $$B_1 = \frac◆LB◆\mu_0 I_1◆RB◆◆LB◆2\pi d◆RB◆$$
 
-Wire 2 (current $I_2$, length $L$) in this field experiences a force:
+Wire 2 (current $I_2$Length $L$) in this field experiences a force:
 
 $$F = B_1 I_2 L = \frac◆LB◆\mu_0 I_1 I_2 L◆RB◆◆LB◆2\pi d◆RB◆$$
 
@@ -305,15 +305,15 @@ $$\boxed{\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆}
 ### Direction: Attractive or Repulsive
 
 Apply the right-hand grip rule to wire 1 to find $\mathbf{B}_1$ at wire 2's position, then Fleming's
-left-hand rule to wire 2 for the force direction:
+Left-hand rule to wire 2 for the force direction:
 
 - **Same-direction currents** $\to$ attractive force
 - **Opposite-direction currents** $\to$ repulsive force
 
 :::tip
-tip
-currents repel. Think of it as two parallel beams of particles moving together (attract) versus
-head-on (repel).
+Tip
+Currents repel. Think of it as two parallel beams of particles moving together (attract) versus
+Head-on (repel).
 :::
 
 ### Definition of the Ampere
@@ -327,7 +327,7 @@ The ampere is defined such that this force is exactly $2 \times 10^{-7}$ N per m
 <details>
 <summary>Worked Example: Force Between Wires</summary>
 Two parallel wires 10 cm apart carry currents of 10 A and 10 A in the same direction. Find the
-force per unit length and its nature.
+Force per unit length and its nature.
 
 **Answer.**
 $\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆(4\pi \times 10^{-7})(10)(10)◆RB◆◆LB◆2\pi(0.10)◆RB◆ = \frac◆LB◆4 \times 10^{-7} \times 100◆RB◆◆LB◆0.20◆RB◆ = 2.0 \times 10^{-4}$
@@ -340,7 +340,7 @@ Same-direction currents $\to$ attractive.
 ## 8. Charged Particles in Crossed Fields
 
 The velocity selector (Section 3) is the special case of crossed $\mathbf{E}$ and $\mathbf{B}$
-fields where the particle happens to have $v = E/B$. The general case is richer.
+Fields where the particle happens to have $v = E/B$. The general case is richer.
 
 ### $\mathbf{E} \perp \mathbf{B}$: Cycloid Motion
 
@@ -355,8 +355,8 @@ $$m\ddot{x} = qv_y B, \qquad m\ddot{y} = qE - qv_x B$$
 When $v = E/B$: $\ddot{y} = 0$ and $\ddot{x} = 0$ — straight-line motion (velocity selector).
 
 When $v \neq E/B$: the particle follows a **cycloid**. Decompose the velocity into the drift
-velocity $v_d = E/B$ and a residual circular component. The particle gyrates around a guiding centre
-that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular to both fields.
+Velocity $v_d = E/B$ and a residual circular component. The particle gyrates around a guiding centre
+That drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular to both fields.
 
 - $v = 0$ initially: the particle traces a **cusped cycloid** (loops with sharp cusps).
 - $0 \lt v \lt E/B$: **curtate cycloid** (wavy path, no loops).
@@ -364,70 +364,70 @@ that drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 - $v \gt E/B$: **prolate cycloid** (loops with self-intersections).
 
 :::warning
-warning
-velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
-always $\mathbf{E} \times \mathbf{B}$, perpendicular to both fields.
+Warning
+Velocity and charge. Even a stationary particle will drift at this speed. The drift direction is
+Always $\mathbf{E} \times \mathbf{B}$Perpendicular to both fields.
 :::
 
 ### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
 
-When $\mathbf{E}$ is parallel to $\mathbf{B}$, the perpendicular component of velocity still
-produces circular motion, but the parallel component is accelerated by $E$:
+When $\mathbf{E}$ is parallel to $\mathbf{B}$The perpendicular component of velocity still
+Produces circular motion, but the parallel component is accelerated by $E$:
 
 $$v_{\parallel}(t) = v_{0\parallel} + \frac{qE}{m}t$$
 
 The result is a helix whose pitch increases linearly with time. The circular radius and period are
-unchanged.
+Unchanged.
 
-### Helical Motion in General
+### Helical Motion 
 
 A particle entering a uniform $\mathbf{B}$ field at angle $\theta$ to the field lines has:
 
 $$v_{\perp} = v\sin\theta, \qquad v_{\parallel} = v\cos\theta$$
 
-The perpendicular component produces circular motion (radius $r = mv_{\perp}/(Bq)$, period
+The perpendicular component produces circular motion (radius $r = mv_{\perp}/(Bq)$Period
 $T = 2\pi m/(Bq)$), while the parallel component is unaffected. The particle traces a helix with:
 
 $$\boxed{\mathrm{pitch} = v_{\parallel}\,T = \frac◆LB◆2\pi m v_{\parallel}◆RB◆◆LB◆Bq◆RB◆}$$
 
 The pitch is the axial distance travelled per revolution. A faster parallel component or larger mass
-gives a more stretched helix; a stronger field or larger charge gives a tighter helix.
+Gives a more stretched helix; a stronger field or larger charge gives a tighter helix.
 
 ## 9. Electromagnetic Induction — Extended Applications
 
 ### Eddy Currents
 
 When a conductor moves through a non-uniform magnetic field, or when the flux through a bulk
-conductor changes, circulating currents called **eddy currents** are induced throughout the
-material.
+Conductor changes, circulating currents called **eddy currents** are induced throughout the
+Material.
 
 By Lenz's law, eddy currents oppose the relative motion, producing a velocity-dependent drag force.
 This converts kinetic energy into thermal energy via resistive heating ($P = I^2R$ in the bulk
-material).
+Material).
 
 **Applications:**
 
 - **Electromagnetic braking** — trains, roller coasters, industrial machinery. Braking force is
-  proportional to speed (no friction, no wear, no fade).
+ proportional to speed (no friction, no wear, no fade).
 - **Induction heating** — cooktops, metal hardening, brazing. High-frequency AC induces eddy
-  currents that heat the conductor directly.
+ currents that heat the conductor directly.
 
 **Problems:**
 
 - **Energy loss in transformers** — eddy currents in the iron core dissipate power.
 - **Mitigation:** laminated cores (thin insulated sheets break up current loops) or ferrite cores
-  (high resistivity).
+ (high resistivity).
 
 ### Self-Induction
 
 When the current in a coil changes, the changing magnetic flux through the coil itself induces an
-e.m.f.:
+E.m.f.:
 
 $$\boxed{\mathcal{E} = -L\frac{dI}{dt}}$$
 
-where $L$ is the **self-inductance** measured in henry (H). 1 H = 1 Wb A$^{-1}$ = 1 V s A$^{-1}$.
+Where $L$ is the **self-inductance** measured in henry (H). 1 H = 1 Wb A$^{-1}$ = 1 V s A$^{-1}$.
 
-The self-inductance of a long solenoid is $L = \mu_0 n^2 A l = \mu_0 N^2 A/l$, derived from
+The self-inductance of a long solenoid is $L = \mu_0 n^2 A l = \mu_0 N^2 A/l$Derived from
 $\Phi = \mu_0 n I A$ per turn and $N\Phi = LI$.
 
 #### Energy Stored in an Inductor
@@ -441,11 +441,11 @@ $$E = \int_0^t P\,dt' = \int_0^I LI'\,dI' = \frac{1}{2}LI^2$$
 $$\boxed{E = \frac{1}{2}LI^2}$$
 
 **Proof.** This is the magnetic analogue of $\frac{1}{2}CV^2$ for capacitors. The energy is stored
-in the magnetic field, analogous to how $\frac{1}{2}\epsilon_0 E^2$ is stored in the electric field.
+In the magnetic field, analogous to how $\frac{1}{2}\epsilon_0 E^2$ is stored in the electric field.
 
 ### RL Circuits
 
-Consider a series circuit of resistance $R$, inductance $L$, and applied voltage $V$.
+Consider a series circuit of resistance $R$Inductance $L$And applied voltage $V$.
 
 **Current growth** (switch closed at $t = 0$): $V = IR + L\,dI/dt$.
 
@@ -456,19 +456,19 @@ $$\boxed{I = I_0\!\left(1 - e^{-t/\tau}\right)}, \qquad I_0 = \frac{V}{R}, \qqua
 $$\boxed{I = I_0\,e^{-t/\tau}}$$
 
 The time constant $\tau = L/R$ has the same physical meaning as $\tau = RC$ in capacitor circuits:
-after one time constant, the current reaches $1 - e^{-1} \approx 63\%$ of its final value; after
-$5\tau$, it is within 1%.
+After one time constant, the current reaches $1 - e^{-1} \approx 63\%$ of its final value; after
+$5\tau$It is within 1%.
 
 :::tip
 Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
-problem-solving framework for both.
+Problem-solving framework for both.
 :::
 
 ### Transformers
 
 A transformer consists of two coils (primary and secondary) sharing a common magnetic flux through
-an iron core.
+An iron core.
 
 **Ideal transformer equation:**
 
@@ -477,8 +477,8 @@ $$\boxed{\frac{V_s}{V_p} = \frac{N_s}{N_p}}$$
 **Derivation.** The same changing flux $\Phi$ threads both coils. By Faraday's law:
 $V_p = N_p\,|d\Phi/dt|$ and $V_s = N_s\,|d\Phi/dt|$. Dividing gives the result. $\square$
 
-For an ideal transformer (no losses): $V_p I_p = V_s I_s$, so $I_s/I_p = N_p/N_s$. A step-up
-transformer increases voltage but decreases current, and vice versa.
+For an ideal transformer (no losses): $V_p I_p = V_s I_s$So $I_s/I_p = N_p/N_s$. A step-up
+Transformer increases voltage but decreases current, and vice versa.
 
 **Energy losses in real transformers:**
 
@@ -491,13 +491,13 @@ transformer increases voltage but decreases current, and vice versa.
 <summary>Worked Example: Transformer</summary>
 A transformer with 2000 turns on the primary and 100 turns on the secondary is connected to a 240 V
 AC supply. The secondary delivers 5.0 A to a load. Assuming ideal behaviour, find the secondary
-voltage and the primary current.
+Voltage and the primary current.
 
 **Answer.** $V_s = V_p \times N_s/N_p = 240 \times 100/2000 = 12$ V.
 
 $I_p = I_s \times N_s/N_p = 5.0 \times 100/2000 = 0.25$ A.
 
-(Equivalently: $V_p I_p = V_s I_s$, so $I_p = 12 \times 5.0 / 240 = 0.25$ A.)
+(Equivalently: $V_p I_p = V_s I_s$So $I_p = 12 \times 5.0 / 240 = 0.25$ A.)
 
 </details>
 
@@ -505,16 +505,16 @@ $I_p = I_s \times N_s/N_p = 5.0 \times 100/2000 = 0.25$ A.
 
 A mass spectrometer separates ions by their mass-to-charge ratio. The essential stages are:
 
-1. **Ionisation** — atoms are ionised (e.g. by electron bombardment), producing singly charged
-   positive ions.
-2. **Acceleration** — ions are accelerated through a potential difference $V$, gaining kinetic
-   energy $\frac{1}{2}mv^2 = qV$.
+1. **Ionisation** — atoms are ionised (e.g. By electron bombardment), producing singly charged
+ positive ions.
+2. **Acceleration** — ions are accelerated through a potential difference $V$Gaining kinetic
+ energy $\frac{1}{2}mv^2 = qV$.
 3. **Velocity selection** — crossed $\mathbf{E}$ and $\mathbf{B}$ fields select ions with $v = E/B$
-   (Section 3).
+ (Section 3).
 4. **Deflection** — selected ions enter a region with a uniform $\mathbf{B}$ field only. They follow
-   semicircular paths of radius $r = mv/(Bq)$.
+ semicircular paths of radius $r = mv/(Bq)$.
 5. **Detection** — ions strike a detector (photographic plate or electronic). The impact position
-   depends on $r$, hence on $m$.
+ depends on $r$Hence on $m$.
 
 ### Mass Separation
 
@@ -529,22 +529,22 @@ The separation on the detector (for semicircular deflection) is:
 $$\Delta x = 2(r_1 - r_2) = \frac{2v}{Bq}(m_1 - m_2)$$
 
 This linear dependence on mass difference makes the mass spectrometer a precision instrument for
-isotope analysis.
+Isotope analysis.
 
 **Applications:** measuring isotope ratios (geology, archaeology), drug testing (detecting doping
-compounds by mass signature), carbon dating ($^{14}$C/$^{12}$C ratio), trace element analysis.
+Compounds by mass signature), carbon dating ($^{14}$C/$^{12}$C ratio), trace element analysis.
 
 <details>
 <summary>Worked Example: Separating Neon Isotopes</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the detector separation
-between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
+Between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
 For $^{20}$Ne$^+$:
 $r_{20} = \frac{m_{20}v}{B_2 e} = \frac◆LB◆20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆9.96 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.125$
-m.
+M.
 
 For $^{22}$Ne$^+$: $r_{22} = \frac{22}{20} \times 0.125 = 0.137$ m.
 
@@ -557,7 +557,7 @@ Separation: $\Delta x = 2(0.137 - 0.125) = 0.024$ m $= 2.4$ cm.
 <details>
 <summary>Problem 1</summary>
 A wire of length 0.30 m carries a current of 5.0 A at $30^\circ$ to a magnetic field of 0.40 T. Calculate
-the force on the wire.
+The force on the wire.
 
 **Answer.**
 $F = BIl\sin\theta = 0.40 \times 5.0 \times 0.30 \times \sin 30° = 0.40 \times 5.0 \times 0.30 \times 0.5 = 0.30$
@@ -575,7 +575,7 @@ Calculate the radius of its circular path.
 
 **Answer.**
 $r = \frac{mv}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.822 \times 10^{-24}◆RB◆◆LB◆1.28 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$
-m $= 14.2\,\mu$m.
+M $= 14.2\,\mu$M.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
@@ -585,7 +585,7 @@ m $= 14.2\,\mu$m.
 <details>
 <summary>Problem 3</summary>
 A velocity selector has $E = 6.0 \times 10^5$ V m$^{-1}$ and $B = 0.20$ T. Calculate the velocity of
-particles that pass through undeflected.
+Particles that pass through undeflected.
 
 **Answer.** $v = E/B = 6.0 \times 10^5 / 0.20 = 3.0 \times 10^6$ m s$^{-1}$.
 
@@ -595,8 +595,8 @@ particles that pass through undeflected.
 
 <details>
 <summary>Problem 4</summary>
-A coil of 200 turns, each of area $0.010$ m$^2$, is placed in a magnetic field that decreases
-uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
+A coil of 200 turns, each of area $0.010$ m$^2$Is placed in a magnetic field that decreases
+Uniformly from 0.50 T to 0.10 T in 0.05 s. Calculate the average induced e.m.f.
 
 **Answer.** $d\Phi = A \cdot dB = 0.010 \times (0.50 - 0.10) = 0.004$ Wb.
 $d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{E} = 16$ V.
@@ -608,11 +608,11 @@ $d(N\Phi)/dt = 200 \times 0.004 / 0.05 = 16$ V. $\mathcal{E} = 16$ V.
 <details>
 <summary>Problem 5</summary>
 A proton and an alpha particle enter a magnetic field with the same velocity. The alpha particle has
-twice the charge and four times the mass of the proton. Compare the radii of their circular paths.
+Twice the charge and four times the mass of the proton. Compare the radii of their circular paths.
 
 **Answer.** $r = mv/(Bq)$.
 $r_\alpha/r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$. The alpha particle has
-twice the radius.
+Twice the radius.
 
 <b>If you get this wrong, revise:</b>
 [Circular Motion in a Magnetic Field](#2-circular-motion-in-a-magnetic-field)
@@ -622,7 +622,7 @@ twice the radius.
 <details>
 <summary>Problem 6</summary>
 A straight rod of length 0.50 m moves at 8.0 m s$^{-1}$ perpendicular to a magnetic field of 0.60 T.
-Calculate the motional e.m.f. induced.
+Calculate the motional e.m.f. Induced.
 
 **Answer.** $\mathcal{E} = Blv = 0.60 \times 0.50 \times 8.0 = 2.4$ V.
 
@@ -633,7 +633,7 @@ Calculate the motional e.m.f. induced.
 <details>
 <summary>Problem 7</summary>
 A rectangular coil of 100 turns, dimensions 0.10 m $\times$ 0.05 m, rotates at 3000 rpm in a 0.20 T
-magnetic field. Calculate the peak e.m.f.
+Magnetic field. Calculate the peak e.m.f.
 
 **Answer.** $\omega = 3000 \times 2\pi/60 = 314$ rad s$^{-1}$. $A = 0.10 \times 0.05 = 0.005$ m$^2$.
 
@@ -649,10 +649,10 @@ $\mathcal{E}_0 = NBA\omega = 100 \times 0.20 \times 0.005 \times 314 = 31.4$ V.
 State Lenz's law and explain how it relates to conservation of energy.
 
 **Answer.** Lenz's law states that the direction of the induced current is such that it opposes the
-change in magnetic flux that produced it. This ensures energy conservation: if the induced current
-reinforced the flux change, it would amplify the effect, creating energy from nothing. The
-opposition means work must be done against the induced effects, and this work appears as electrical
-energy in the circuit.
+Change in magnetic flux that produced it. This ensures energy conservation: if the induced current
+Reinforced the flux change, it would amplify the effect, creating energy from nothing. The
+Opposition means work must be done against the induced effects, and this work appears as electrical
+Energy in the circuit.
 
 <b>If you get this wrong, revise:</b> [Lenz's Law](#lenzs-law)
 
@@ -661,11 +661,11 @@ energy in the circuit.
 <details>
 <summary>Problem 9</summary>
 An electron moves in a circle of radius 1.0 mm in a magnetic field of 0.30 T. Calculate its speed
-and kinetic energy.
+And kinetic energy.
 
 **Answer.**
 $v = \frac{Ber}{m} = \frac◆LB◆1.60 \times 10^{-19} \times 0.30 \times 0.001◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = \frac◆LB◆4.8 \times 10^{-23}◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 5.27 \times 10^7$
-m s$^{-1}$.
+M s$^{-1}$.
 
 $E_k = \frac{1}{2}mv^2 = \frac{1}{2} \times 9.11 \times 10^{-31} \times (5.27 \times 10^7)^2 = 1.27 \times 10^{-16}$
 J.
@@ -678,24 +678,24 @@ J.
 <details>
 <summary>Problem 10</summary>
 A magnet is pushed into a coil of 50 turns, and the magnetic flux through each turn increases by
-$4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. and explain which end of the
-coil acts as a north pole.
+$4.0 \times 10^{-3}$ Wb in 0.10 s. Calculate the average induced e.m.f. And explain which end of the
+Coil acts as a north pole.
 
 **Answer.** $\mathcal{E} = N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = 50 \times \frac◆LB◆4.0 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 2.0$ V.
 
 By Lenz's law, the induced current opposes the increasing flux. If the magnet's north pole is being
-pushed in, the coil end facing the magnet becomes a north pole (to repel the magnet), so current
-flows anticlockwise when viewed from the magnet's side.
+Pushed in, the coil end facing the magnet becomes a north pole (to repel the magnet), so current
+Flows anticlockwise when viewed from the magnet's side.
 
 <b>If you get this wrong, revise:</b> [Faraday's Law](#4-faradays-law-of-electromagnetic-induction)
-and [Lenz's Law](#lenzs-law)
+And [Lenz's Law](#lenzs-law)
 
 </details>
 
 <details>
 <summary>Problem 11</summary>
 A circular coil of radius 10 cm carries a current of 5.0 A. Calculate the magnetic field at the
-centre of the coil.
+Centre of the coil.
 
 **Answer.**
 $B = \frac◆LB◆\mu_0 I◆RB◆◆LB◆2R◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 5.0◆RB◆◆LB◆2 \times 0.10◆RB◆ = \frac◆LB◆6.28 \times 10^{-6}◆RB◆◆LB◆0.20◆RB◆ = 3.14 \times 10^{-5}$
@@ -709,7 +709,7 @@ T $= \pi \times 10^{-5}$ T $\approx 31.4\,\mu$T.
 <details>
 <summary>Problem 12</summary>
 Two parallel wires 10 cm apart carry currents of 10 A and 10 A in the same direction. Calculate the
-force per unit length between them and state whether it is attractive or repulsive.
+Force per unit length between them and state whether it is attractive or repulsive.
 
 **Answer.**
 $\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆(4\pi \times 10^{-7})(10)(10)◆RB◆◆LB◆2\pi(0.10)◆RB◆ = \frac◆LB◆4 \times 10^{-7} \times 100◆RB◆◆LB◆0.20◆RB◆ = 2.0 \times 10^{-4}$
@@ -727,7 +727,7 @@ Same-direction currents $\to$ attractive.
 A solenoid of length 0.20 m produces a magnetic field of 2.5 mT when carrying a current of 5.0 A.
 Calculate the number of turns required.
 
-**Answer.** $B = \mu_0 n I = \mu_0 (N/L) I$, so
+**Answer.** $B = \mu_0 n I = \mu_0 (N/L) I$So
 $N = \frac◆LB◆BL◆RB◆◆LB◆\mu_0 I◆RB◆ = \frac◆LB◆2.5 \times 10^{-3} \times 0.20◆RB◆◆LB◆4\pi \times 10^{-7} \times 5.0◆RB◆ = \frac◆LB◆5.0 \times 10^{-4}◆RB◆◆LB◆6.28 \times 10^{-6}◆RB◆ = 79.6$.
 
 Approximately 80 turns.
@@ -740,8 +740,8 @@ Approximately 80 turns.
 <details>
 <summary>Problem 14</summary>
 A small neodymium magnet of mass 10 g falls through a vertical copper tube. It reaches a terminal
-velocity of 8.0 cm s$^{-1}$ due to eddy current braking. Calculate the average braking force and the
-power dissipated as heat.
+Velocity of 8.0 cm s$^{-1}$ due to eddy current braking. Calculate the average braking force and the
+Power dissipated as heat.
 
 **Answer.** At terminal velocity the braking force equals weight:
 $F = mg = 0.010 \times 9.81 = 0.098$ N $= 98$ mN.
@@ -772,7 +772,7 @@ A $= 52$ mA.
 <details>
 <summary>Problem 16</summary>
 A transformer has 2000 turns on the primary and 100 turns on the secondary. The primary is connected
-to a 240 V AC supply. The secondary delivers 5.0 A to a load. Calculate (a) the secondary voltage,
+To a 240 V AC supply. The secondary delivers 5.0 A to a load. Calculate (a) the secondary voltage,
 (b) the primary current, assuming an ideal transformer.
 
 **Answer.** (a) $V_s = V_p \times N_s/N_p = 240 \times 100/2000 = 12$ V.
@@ -788,12 +788,12 @@ to a 240 V AC supply. The secondary delivers 5.0 A to a load. Calculate (a) the 
 <summary>Problem 17</summary>
 Singly ionised neon atoms pass through a velocity selector with $E = 1.5 \times 10^5$ V m$^{-1}$ and
 $B_1 = 0.50$ T, then enter a deflection chamber with $B_2 = 0.50$ T. Find the separation on the
-detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
+Detector between $^{20}$Ne$^+$ and $^{22}$Ne$^+$. ($1\ \mathrm{u} = 1.66 \times 10^{-27}$ kg.)
 
 **Answer.** $v = E/B_1 = 1.5 \times 10^5 / 0.50 = 3.0 \times 10^5$ m s$^{-1}$.
 
 $r_{20} = \frac{m_{20}v}{B_2 e} = \frac◆LB◆20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^5◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆9.96 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.125$
-m.
+M.
 
 $r_{22} = \frac{22}{20} \times 0.125 = 0.137$ m.
 
@@ -807,21 +807,21 @@ $\Delta x = 2(0.137 - 0.125) = 0.024$ m $= 2.4$ cm.
 <summary>Problem 18</summary>
 A proton enters a uniform magnetic field of 0.40 T at an angle of $30^\circ$ to the field lines with speed
 $5.0 \times 10^6$ m s$^{-1}$. Calculate (a) the radius of the helical path, (b) the pitch of the
-helix.
+Helix.
 
 **Answer.** $v_\perp = v\sin 30° = 5.0 \times 10^6 \times 0.5 = 2.5 \times 10^6$ m s$^{-1}$.
 $v_\parallel = v\cos 30° = 5.0 \times 10^6 \times 0.866 = 4.33 \times 10^6$ m s$^{-1}$.
 
 (a)
 $r = \frac◆LB◆mv_\perp◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆1.67 \times 10^{-27} \times 2.5 \times 10^6◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆4.18 \times 10^{-21}◆RB◆◆LB◆6.4 \times 10^{-20}◆RB◆ = 0.0653$
-m $= 6.53$ cm.
+M $= 6.53$ cm.
 
 (b)
 $T = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆2\pi \times 1.67 \times 10^{-27}◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.05 \times 10^{-26}◆RB◆◆LB◆6.4 \times 10^{-20}◆RB◆ = 1.64 \times 10^{-7}$
-s.
+S.
 
 $\mathrm{pitch} = v_\parallel T = 4.33 \times 10^6 \times 1.64 \times 10^{-7} = 0.710$ m $= 71.0$
-cm.
+Cm.
 
 <b>If you get this wrong, revise:</b>
 [Charged Particles in Crossed Fields](#8-charged-particles-in-crossed-fields)
@@ -852,3 +852,15 @@ Common Pitfalls
 - **Not understanding why charged particles move in circles:** A charged particle entering a uniform magnetic field perpendicular to its velocity experiences a force perpendicular to both v and B. This centripetal force causes circular motion with radius r = mv/(qB). The particle does NOT slow down -- the magnetic force only changes direction.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

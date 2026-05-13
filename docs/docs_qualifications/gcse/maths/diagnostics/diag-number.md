@@ -15,14 +15,14 @@ hide_table_of_contents: true
 **Solution:**
 
 (a) Common denominator of 8, 6, 4 is 24.
-$\frac{3}{8} = \frac{9}{24}$, $\frac{5}{6} = \frac{20}{24}$, $\frac{1}{4} = \frac{6}{24}$.
+$\frac{3}{8} = \frac{9}{24}$$\frac{5}{6} = \frac{20}{24}$$\frac{1}{4} = \frac{6}{24}$.
 $\frac{9}{24} + \frac{20}{24} - \frac{6}{24} = \frac{23}{24}$.
 
-(b) Let $x = 0.363636...$. Then $100x = 36.3636...$. Subtracting: $99x = 36$, so $x = \frac{36}{99} = \frac{4}{11}$.
+(b) Let $x = 0.363636...$. Then $100x = 36.3636...$. Subtracting: $99x = 36$So $x = \frac{36}{99} = \frac{4}{11}$.
 
 (c) After 20% discount: $45 \times 0.80 = \pounds 36$. After 20% increase: $36 \times 1.20 = \pounds 43.20$.
 
-The final price is not $\pounds 45$ because the 20% increase is applied to a smaller base ($\pounds 36$) than the 20% decrease ($\pounds 45$). A 20% decrease followed by a 20% increase equals $0.80 \times 1.20 = 0.96$, a net 4% decrease.
+The final price is not $\pounds 45$ because the 20% increase is applied to a smaller base ($\pounds 36$) than the 20% decrease ($\pounds 45$). A 20% decrease followed by a 20% increase equals $0.80 \times 1.20 = 0.96$A net 4% decrease.
 
 (d) $10\%$ of $360 = 36$. $5\%$ of $360 = 18$. $15\% = 36 + 18 = 54$.
 
@@ -36,12 +36,12 @@ The final price is not $\pounds 45$ because the 20% increase is applied to a sma
 (b) $\text{HCF{} = 2^2 \times 3^2 = 4 \times 9 = 36$.
 $\text{LCM{} = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 1260$.
 
-(c) Time $= \text{LCM{}(12, 18, 30)$. $12 = 2^2 \times 3$, $18 = 2 \times 3^2$, $30 = 2 \times 3 \times 5$. $\text{LCM{} = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at **3:00 pm**.
+(c) Time $= \text{LCM{}(12, 18, 30)$. $12 = 2^2 \times 3$$18 = 2 \times 3^2$$30 = 2 \times 3 \times 5$. $\text{LCM{} = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at **3:00 pm**.
 
 (d) A prime number has exactly two factors: 1 and itself. The number 1 has only one factor (itself). The definition of prime requires exactly two distinct factors, which 1 does not satisfy. Additionally, the Fundamental Theorem of Arithmetic (every integer $\gt 1$ has a unique prime factorisation) would break down if 1 were prime, since $6 = 2 \times 3 = 1 \times 2 \times 3 = 1 \times 1 \times 2 \times 3$ would not have a unique factorisation.
 
 ### UT-3: Bounds and Standard Form
-**Question:** (a) A rectangle has length 8.4 cm (correct to 1 decimal place) and width 5.2 cm (correct to 1 decimal place). Calculate the upper bound of the area. (b) Write $0.000376$ in standard form. (c) Calculate $\frac{4.2 \times 10^5}{2.8 \times 10^{-3}}$, giving your answer in standard form. (d) The population of a city is $3.45 \times 10^6$ to the nearest $10,000$. Write down the lower and upper bounds.
+**Question:** (a) A rectangle has length 8.4 cm (correct to 1 decimal place) and width 5.2 cm (correct to 1 decimal place). Calculate the upper bound of the area. (b) Write $0.000376$ in standard form. (c) Calculate $\frac{4.2 \times 10^5}{2.8 \times 10^{-3}}$Giving your answer in standard form. (d) The population of a city is $3.45 \times 10^6$ to the nearest $10,000$. Write down the lower and upper bounds.
 
 **Solution:**
 
@@ -79,7 +79,7 @@ Total $= 3326.16 + 2249.73 = \pounds 5575.89$.
 
 **Solution:**
 
-(a) $t = \frac{k}{n}$. When $n = 4$, $t = 6$: $6 = k/4$, so $k = 24$. Formula: $t = \frac{24}{n}$.
+(a) $t = \frac{k}{n}$. When $n = 4$$t = 6$: $6 = k/4$So $k = 24$. Formula: $t = \frac{24}{n}$.
 
 (b) $t = 24/10 = 2.4$ hours $= 2$ hours 24 minutes.
 

@@ -78,3 +78,15 @@ The following pages are available:
 - [Developmental Psychology](./developmental-psychology)
 - [Research Methods](./research-methods)
 - [Qualitative Research (HL)](./qualitative-research)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

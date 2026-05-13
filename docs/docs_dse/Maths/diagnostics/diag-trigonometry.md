@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In triangle $ABC$, $AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of $\angle ABC$.
+In triangle $ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of $\angle ABC$.
 
 **Solution:**
 
@@ -23,7 +23,7 @@ By the sine rule:
 
 $$\frac{\sin \angle ABC}{AC} = \frac{\sin 30°}{BC}$$
 
-We need $AC$ first. We only have $AB$, $BC$, and $\angle A$ -- this is the SSA (ambiguous) case.
+We need $AC$ first. We only have $AB$$BC$And $\angle A$ -- this is the SSA (ambiguous) case.
 
 Using the sine rule: $\dfrac{\sin C}{8} = \dfrac{\sin 30°}{6}$
 
@@ -43,7 +43,7 @@ This is the ambiguous case of the sine rule. A common mistake is giving only the
 
 **Question:**
 
-In triangle $PQR$, $PQ = 5$, $QR = 7$, $PR = 8$. Find $\angle PQR$.
+In triangle $PQR$$PQ = 5$$QR = 7$$PR = 8$. Find $\angle PQR$.
 
 **Solution:**
 
@@ -77,7 +77,7 @@ $$\cos x(2\sin x - 1) = 0$$
 
 **Case 2:** $\sin x = \dfrac{1}{2} \implies x = 30°$ or $x = 150°$.
 
-A common mistake is dividing by $\cos x$ without considering the case $\cos x = 0$, which loses solutions.
+A common mistake is dividing by $\cos x$ without considering the case $\cos x = 0$Which loses solutions.
 
 Solution: $x = 30°,\; 90°,\; 150°,\; 270°$.
 
@@ -87,7 +87,7 @@ Solution: $x = 30°,\; 90°,\; 150°,\; 270°$.
 
 **Question:**
 
-In the cuboid $ABCDEFGH$ where $AB = 4$, $BC = 3$, $CG = 5$. Find the angle between the diagonal $AG$ and the base $ABCD$.
+In the cuboid $ABCDEFGH$ where $AB = 4$$BC = 3$$CG = 5$. Find the angle between the diagonal $AG$ and the base $ABCD$.
 
 **Solution:**
 
@@ -129,7 +129,7 @@ $$\frac{1 - \cos 2x}{\sin 2x} = \frac{1 - (1 - 2\sin^2 x)}{2\sin x \cos x} = \fr
 
 **Question:**
 
-Three points $A(\cos\theta,\; \sin\theta)$, $B(\cos 3\theta,\; \sin 3\theta)$, $C(\cos 5\theta,\; \sin 5\theta)$ lie on the unit circle. Show that $A$, $B$, $C$ are collinear when $\theta = 36°$.
+Three points $A(\cos\theta,\; \sin\theta)$$B(\cos 3\theta,\; \sin 3\theta)$$C(\cos 5\theta,\; \sin 5\theta)$ lie on the unit circle. Show that $A$$B$$C$ are collinear when $\theta = 36°$.
 
 **Solution:**
 
@@ -151,13 +151,13 @@ Substituting:
 
 $$\frac{1}{2}\left|-2\cos\theta \cos 4\theta \sin\theta + 2\cos 3\theta \cos 3\theta \sin 2\theta - 2\cos 5\theta \cos 2\theta \sin\theta\right|$$
 
-At $\theta = 36°$: $\theta = 36°$, $3\theta = 108°$, $5\theta = 180°$.
+At $\theta = 36°$: $\theta = 36°$$3\theta = 108°$$5\theta = 180°$.
 
-$A = (\cos 36°,\; \sin 36°)$, $B = (\cos 108°,\; \sin 108°)$, $C = (-1,\; 0)$.
+$A = (\cos 36°,\; \sin 36°)$$B = (\cos 108°,\; \sin 108°)$$C = (-1,\; 0)$.
 
 Slope $AB = \dfrac{\sin 108° - \sin 36°}{\cos 108° - \cos 36°}$
 
-$\sin 108° = \cos 18°$, $\cos 108° = -\sin 18°$.
+$\sin 108° = \cos 18°$$\cos 108° = -\sin 18°$.
 
 Slope $AC = \dfrac{0 - \sin 36°}{-1 - \cos 36°} = \dfrac{-\sin 36°}{-1 - \cos 36°} = \dfrac{\sin 36°}{1 + \cos 36°}$
 
@@ -173,7 +173,7 @@ Denominator: $-\sin 18° - 1 + 2\sin^2 18° = -(1 + \sin 18° - 2\sin^2 18°)$.
 
 This equals $\tan 18°$ (verifiable numerically: $\tan 18° \approx 0.325$).
 
-Since slope $AB$ = slope $AC$, the points are collinear.
+Since slope $AB$ = slope $AC$The points are collinear.
 
 ---
 
@@ -195,7 +195,7 @@ $\tan x = \dfrac{3 + \sqrt{5}}{2} \approx 2.618 \implies x \approx 69.1°$
 
 $\tan x = \dfrac{3 - \sqrt{5}}{2} \approx 0.382 \implies x \approx 20.9°$
 
-In the range $0° \leq x \lt 180°$, each tangent value gives one solution (since $\tan$ is positive in both Q1 and Q3):
+In the range $0° \leq x \lt 180°$Each tangent value gives one solution (since $\tan$ is positive in both Q1 and Q3):
 
 $x \approx 69.1°$ or $x \approx 20.9°$.
 
@@ -233,7 +233,7 @@ $$\angle VMO = \arctan\left(\frac{4}{3}\right) \approx 53.1°$$
 
 **Question:**
 
-In triangle $ABC$, $\angle A = 45°$, $\angle B = 60°$, and $a = 8$ cm. Find the length of side $c$.
+In triangle $ABC$$\angle A = 45°$$\angle B = 60°$And $a = 8$ cm. Find the length of side $c$.
 
 **Solution:**
 
@@ -251,7 +251,7 @@ $$c = \frac{a \sin C}{\sin A} = \frac{8 \sin 75°}{\sin 45°} = \frac{8 \times 0
 
 **Question:**
 
-In triangle $PQR$, $PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
+In triangle $PQR$$PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
 
 **Solution:**
 
@@ -307,7 +307,7 @@ Solution: $x = 0°,\; 120°,\; 240°$.
 
 **Question:**
 
-In triangle $ABC$, $AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
+In triangle $ABC$$AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
 
 **Solution:**
 
@@ -343,7 +343,7 @@ The absolute shortest is the space diagonal $\sqrt{61}$ m.
 
 **Question:**
 
-A ship sails from port $A$ on a bearing of $060°$ for $15$ km to point $B$, then on a bearing of $150°$ for $20$ km to point $C$. Find the distance and bearing of $C$ from $A$.
+A ship sails from port $A$ on a bearing of $060°$ for $15$ km to point $B$Then on a bearing of $150°$ for $20$ km to point $C$. Find the distance and bearing of $C$ from $A$.
 
 **Solution:**
 
@@ -381,7 +381,7 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 ## Common Pitfalls
 
-1. **Missing solutions in trigonometric equations.** When solving $\cos x \cdot f(x) = 0$, you must consider both $\cos x = 0$ AND $f(x) = 0$. Dividing by $\cos x$ or $\sin x$ loses solutions. Always factorise first.
+1. **Missing solutions in trigonometric equations.** When solving $\cos x \cdot f(x) = 0$You must consider both $\cos x = 0$ AND $f(x) = 0$. Dividing by $\cos x$ or $\sin x$ loses solutions. Always factorise first.
 
 2. **Using degrees when radians are required (or vice versa).** In DSE Maths, most trigonometry problems use degrees unless specified otherwise. Always check the required units and be consistent throughout your working.
 
@@ -397,7 +397,7 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 ### DSE-1
 
-In triangle $ABC$, $a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
+In triangle $ABC$$a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
 
 (a) Find $\angle B$. Give your answer correct to 1 decimal place. (3 marks)
 (b) Find the area of triangle $ABC$. (2 marks)
@@ -421,7 +421,7 @@ So $\angle B \approx 44.8°$.
 
 $\text{Area} = \dfrac{1}{2} \times 8 \times 6 \times \sin 65.2° \approx 24 \times 0.9075 \approx 21.8$ cm$^2$.
 
-(c) $\text{Area} = \dfrac{1}{2} \times AB \times h$, where $AB = c$.
+(c) $\text{Area} = \dfrac{1}{2} \times AB \times h$Where $AB = c$.
 
 By the sine rule: $c = \dfrac{8\sin 65.2°}{\sin 44.8°} \approx \dfrac{8 \times 0.9075}{0.7048} \approx 10.3$ cm.
 
@@ -450,7 +450,7 @@ Solution: $x = 60°,\; 120°,\; 240°,\; 300°$.
 
 ### DSE-3
 
-A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of elevation of $P$ is $32°$. From another point $B$, $50$ m from $A$ on the opposite side of the tower, the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
+A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of elevation of $P$ is $32°$. From another point $B$$50$ m from $A$ on the opposite side of the tower, the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
 
 **Solution:**
 
@@ -500,9 +500,9 @@ In the figure, $ABCD$ is a square of side $6$ cm. $E$ is a point on $BC$ such th
 
 **Solution:**
 
-Place $A$ at the origin: $A = (0, 0)$, $B = (6, 0)$, $C = (6, 6)$, $D = (0, 6)$.
+Place $A$ at the origin: $A = (0, 0)$$B = (6, 0)$$C = (6, 6)$$D = (0, 6)$.
 
-$E = (6, 2)$, $F = (3, 6)$.
+$E = (6, 2)$$F = (3, 6)$.
 
 $$AE = \sqrt{6^2 + 2^2} = \sqrt{40} = 2\sqrt{10}$$
 

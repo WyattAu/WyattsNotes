@@ -8,18 +8,18 @@ slug: energy
 ## Forms of Energy
 
 Energy is a scalar quantity measured in joules ($\mathrm{J}$). It exists in many forms and can be
-transformed from one form to another, but the total energy in a closed system is conserved.
+Transformed from one form to another, but the total energy in a closed system is conserved.
 
-| Form                      | Description                                     |
+| Form | Description |
 | ------------------------- | ----------------------------------------------- |
-| Kinetic                   | Energy of motion                                |
-| Gravitational potential   | Energy due to position in a gravitational field |
-| Elastic potential         | Energy stored in a deformed object              |
-| Thermal                   | Energy associated with temperature              |
-| Chemical                  | Energy stored in chemical bonds                 |
-| Nuclear                   | Energy stored in atomic nuclei                  |
-| Electrical                | Energy of moving charges                        |
-| Radiant (electromagnetic) | Energy of electromagnetic waves                 |
+| Kinetic | Energy of motion |
+| Gravitational potential | Energy due to position in a gravitational field |
+| Elastic potential | Energy stored in a deformed object |
+| Thermal | Energy associated with temperature |
+| Chemical | Energy stored in chemical bonds |
+| Nuclear | Energy stored in atomic nuclei |
+| Electrical | Energy of moving charges |
+| Radiant (electromagnetic) | Energy of electromagnetic waves |
 
 ---
 
@@ -36,7 +36,7 @@ $$
 ### Key Points
 
 - Kinetic energy is always non-negative ($E_k \ge 0$).
-- It depends on speed squared, so doubling speed quadruples kinetic energy.
+- on speed squared, so doubling speed quadruples kinetic energy.
 - It is a scalar (no direction).
 
 ### Work-Energy Theorem
@@ -50,7 +50,7 @@ $$
 :::info[Example]
 
 A $1500\mathrm{ kg}$ car travelling at $20\mathrm{ m/s}$ brakes to a stop. Find the work done by the
-brakes.
+Brakes.
 
 $$
 W = \Delta E_k = 0 - \frac{1}{2}(1500)(400) = -300000\mathrm{ J} = -300\mathrm{ kJ}
@@ -72,7 +72,7 @@ $$
 E_p = mgh
 $$
 
-where $h$ is the height above a chosen reference level (datum).
+Where $h$ is the height above a chosen reference level (datum).
 
 ### Universal Gravitational Potential Energy
 
@@ -82,21 +82,21 @@ $$
 E_p = -\frac`\{GMm}`{r}
 $$
 
-where $G = 6.674 \times 10^{-11}\mathrm{ N}\cdot\mathrm{m}^2/\mathrm{kg}^2$.
+Where $G = 6.674 \times 10^{-11}\mathrm{ N}\cdot\mathrm{m}^2/\mathrm{kg}^2$.
 
 ### Key Differences
 
-| Property        | Near Surface ($mgh$)       | Universal ($-GMm/r$)                    |
+| Property | Near Surface ($mgh$) | Universal ($-GMm/r$) |
 | --------------- | -------------------------- | --------------------------------------- |
-| Reference level | Arbitrary (usually ground) | Zero at infinity                        |
-| Sign            | Positive above reference   | Negative (bound state)                  |
-| Validity        | $h \ll R_{\mathrm{Earth}}$ | Any distance                            |
-| Gradient        | $-\dfrac{dE_p}{dh} = -mg$  | $-\dfrac{dE_p}{dr} = -\dfrac{GMm}{r^2}$ |
+| Reference level | Arbitrary ( ground) | Zero at infinity |
+| Sign | Positive above reference | Negative (bound state) |
+| Validity | $h \ll R_{\mathrm{Earth}}$ | Any distance |
+| Gradient | $-\dfrac{dE_p}{dh} = -mg$ | $-\dfrac{dE_p}{dr} = -\dfrac{GMm}{r^2}$ |
 
 :::info[Example]
 
 Find the gravitational potential energy of a $70\mathrm{ kg}$ person at the top of a $50\mathrm{ m}$
-building (using $mgh$).
+Building (using $mgh$).
 
 $$
 E_p = 70 \times 9.81 \times 50 = 34335\mathrm{ J} \approx 34.3\mathrm{ kJ}
@@ -107,11 +107,11 @@ $$
 :::info[Example]
 
 A satellite of mass $500\mathrm{ kg}$ orbits at a height of $300\mathrm{ km}$ above Earth's surface.
-Find its gravitational potential energy. ($M_E = 5.97 \times 10^{24}\mathrm{ kg}$,
+Find its gravitational potential energy. ($M_E = 5.97 \times 10^{24}\mathrm{ kg}$
 $R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
-r = 6.37 \times 10^6 + 3.0 \times 10^5 = 6.67 \times 10^6\mathrm{ m}
+R = 6.37 \times 10^6 + 3.0 \times 10^5 = 6.67 \times 10^6\mathrm{ m}
 $$
 
 $$
@@ -129,7 +129,7 @@ $$
 The minimum speed needed to escape a gravitational field:
 
 $$
-v_{\mathrm{esc}} = \sqrt{\frac{2GM}{r}}
+V_{\mathrm{esc}} = \sqrt{\frac{2GM}{r}}
 $$
 
 For Earth: $v_{\mathrm{esc}} \approx 11200\mathrm{ m/s} \approx 11.2\mathrm{ km/s}$.
@@ -146,7 +146,7 @@ $$
 F = -kx
 $$
 
-where $k$ is the spring constant (stiffness) and $x$ is the displacement from equilibrium.
+Where $k$ is the spring constant (stiffness) and $x$ is the displacement from equilibrium.
 
 ### Elastic Potential Energy
 
@@ -163,7 +163,7 @@ $$
 :::info[Example]
 
 A spring with $k = 200\mathrm{ N/m}$ is compressed by $0.1\mathrm{ m}$. Find the elastic potential
-energy stored.
+Energy stored.
 
 $$
 E_e = \frac{1}{2}(200)(0.01) = 1.0\mathrm{ J}
@@ -183,12 +183,12 @@ The area under the graph equals the elastic potential energy.
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
 Observe how kinetic energy and gravitational potential energy interchange as a skater moves along a
-track. Try changing the skater's mass and the track shape to see how energy is conserved.
+Track. Try changing the skater's mass and the track shape to see how energy is conserved.
 
 ### Principle
 
 In a system with only conservative forces (gravity, elastic forces), the total mechanical energy is
-conserved:
+Conserved:
 
 $$
 E_k + E_p + E_e = \mathrm{constant}
@@ -200,19 +200,19 @@ $$
 
 ### Conservative vs Non-Conservative Forces
 
-| Conservative Forces      | Non-Conservative Forces |
+| Conservative Forces | Non-Conservative Forces |
 | ------------------------ | ----------------------- |
-| Gravity                  | Friction                |
-| Elastic (spring)         | Air resistance          |
-| Electrostatic            | Applied pushes/pulls    |
-| Work is path-independent | Work is path-dependent  |
+| Gravity | Friction |
+| Elastic (spring) | Air resistance |
+| Electrostatic | Applied pushes/pulls |
+| Work is path-independent | Work is path-dependent |
 
 ### Applications
 
 :::info[Example]
 
 A $2\mathrm{ kg}$ ball is dropped from a height of $10\mathrm{ m}$. Find its speed just before it
-hits the ground (ignoring air resistance).
+Hits the ground (ignoring air resistance).
 
 $$
 E_k(\mathrm{top}) + E_p(\mathrm{top}) = E_k(\mathrm{bottom}) + E_p(\mathrm{bottom})
@@ -227,7 +227,7 @@ $$
 $$
 
 $$
-v = 14.0\mathrm{ m/s}
+V = 14.0\mathrm{ m/s}
 $$
 
 :::
@@ -235,7 +235,7 @@ $$
 :::info[Example]
 
 A pendulum of length $1.5\mathrm{ m}$ is released from horizontal. Find its speed at the lowest
-point.
+Point.
 
 Taking the lowest point as reference ($E_p = 0$):
 
@@ -250,7 +250,7 @@ $$
 By conservation: $mgL = \dfrac{1}{2}mv^2$.
 
 $$
-v = \sqrt{2gL} = \sqrt{2(9.81)(1.5)} = \sqrt{29.43} = 5.42\mathrm{ m/s}
+V = \sqrt{2gL} = \sqrt{2(9.81)(1.5)} = \sqrt{29.43} = 5.42\mathrm{ m/s}
 $$
 
 :::
@@ -259,7 +259,7 @@ $$
 
 A block of mass $0.5\mathrm{ kg}$ slides from rest down a frictionless curved ramp of height
 $3\mathrm{ m}$ onto a horizontal surface with friction ($\mu_k = 0.4$). How far does it slide before
-stopping?
+Stopping?
 
 At the bottom of the ramp, all $E_p$ converts to $E_k$:
 
@@ -302,7 +302,7 @@ $$
 E_{k,i} + E_{p,i} + W_{\mathrm{nc}} = E_{k,f} + E_{p,f}
 $$
 
-where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (negative for friction).
+Where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (negative for friction).
 
 :::info[Example]
 
@@ -310,7 +310,7 @@ A $3\mathrm{ kg}$ block slides down a $5\mathrm{ m}$ ramp inclined at $30\degree
 $\mu_k = 0.2$. Find the speed at the bottom if it starts from rest.
 
 $$
-mgh - \mu_k mg\cos\theta \cdot d = \frac{1}{2}mv^2
+Mgh - \mu_k mg\cos\theta \cdot d = \frac{1}{2}mv^2
 $$
 
 $$
@@ -356,7 +356,7 @@ $$
 
 - SI unit: watt ($\mathrm{W}$), where $1\mathrm{ W} = 1\mathrm{ J/s}$.
 - Other units: kilowatt ($1\mathrm{ kW} = 1000\mathrm{ W}$), horsepower
-  ($1\mathrm{ hp} \approx 746\mathrm{ W}$).
+ ($1\mathrm{ hp} \approx 746\mathrm{ W}$).
 
 ### Power and Inclined Planes
 
@@ -380,14 +380,14 @@ $P = f_{\mathrm{drag}} \cdot v_{\max}$.
 :::info[Example]
 
 A car engine produces $80\mathrm{ kW}$ of power. The total resistive force is $800\mathrm{ N}$ at
-the car's maximum speed. Find the maximum speed.
+The car's maximum speed. Find the maximum speed.
 
 $$
 P = Fv \implies 80000 = 800v \implies v = 100\mathrm{ m/s}
 $$
 
-This is $360\mathrm{ km/h}$, which is unrealistic for a car with $80\mathrm{ kW}$ — in practice,
-drag increases with $v^2$ so the maximum speed would be lower.
+This is $360\mathrm{ km/h}$Which is unrealistic for a car with $80\mathrm{ kW}$ — in practice,
+Drag increases with $v^2$ so the maximum speed would be lower.
 
 :::
 
@@ -403,7 +403,7 @@ $$
 
 ### Energy Degradation
 
-In all real energy transfers, some energy is dissipated (usually as thermal energy due to friction).
+In all real energy transfers, some energy is dissipated ( as thermal energy due to friction).
 This means:
 
 - Efficiency is always less than 100%.
@@ -426,22 +426,22 @@ $$
 \mathrm{Efficiency} = \frac{10}{100} \times 100\% = 10\%
 $$
 
-Power input $= 100\mathrm{ W}$, useful power output $= 10\mathrm{ W}$.
+Power input $= 100\mathrm{ W}$Useful power output $= 10\mathrm{ W}$.
 
 :::
 
 ### Common Efficiencies
 
-| Device                  | Typical Efficiency |
+| Device | Typical Efficiency |
 | ----------------------- | ------------------ |
-| Incandescent light bulb | 5--10%             |
-| LED light bulb          | 30--40%            |
-| Electric motor          | 70--95%            |
-| Car engine (petrol)     | 20--30%            |
-| Diesel engine           | 30--40%            |
-| Steam turbine           | 35--45%            |
-| Solar cell              | 15--25%            |
-| Human body              | 20--25%            |
+| Incandescent light bulb | 5--10% |
+| LED light bulb | 30--40% |
+| Electric motor | 70--95% |
+| Car engine (petrol) | 20--30% |
+| Diesel engine | 30--40% |
+| Steam turbine | 35--45% |
+| Solar cell | 15--25% |
+| Human body | 20--25% |
 
 ---
 
@@ -455,7 +455,7 @@ $$
 E_{\mathrm{total}} = E_k + E_p = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2
 $$
 
-where $A$ is the amplitude.
+Where $A$ is the amplitude.
 
 ### Energy as a Function of Position
 
@@ -487,10 +487,10 @@ The total energy remains constant at all times.
 
 A roller coaster car of mass $500\mathrm{ kg}$ starts from rest at point `A` which is
 $30\mathrm{ m}$ above the ground. It travels along the track to point `B` which is $10\mathrm{ m}$
-above the ground. Neglecting friction, find its speed at `B`.
+Above the ground. Neglecting friction, find its speed at `B`.
 
 $$
-mgh_A = mgh_B + \frac{1}{2}mv_B^2
+Mgh_A = mgh_B + \frac{1}{2}mv_B^2
 $$
 
 $$
@@ -502,7 +502,7 @@ $$
 $$
 
 $$
-v_B^2 = 392.4 \implies v_B = 19.8\mathrm{ m/s}
+V_B^2 = 392.4 \implies v_B = 19.8\mathrm{ m/s}
 $$
 
 ### Question 2 (Paper 2 style)
@@ -517,7 +517,7 @@ $$
 $$
 
 $$
-v = x\sqrt{\frac{k}{m}} = 0.15\sqrt{\frac{500}{0.2}} = 0.15\sqrt{2500} = 0.15 \times 50 = 7.5\mathrm{ m/s}
+V = x\sqrt{\frac{k}{m}} = 0.15\sqrt{\frac{500}{0.2}} = 0.15\sqrt{2500} = 0.15 \times 50 = 7.5\mathrm{ m/s}
 $$
 
 **(b)** Find the maximum height reached (from the launch point).
@@ -527,13 +527,13 @@ $$
 $$
 
 $$
-h = \frac{v^2}{2g} = \frac{56.25}{19.62} = 2.87\mathrm{ m}
+H = \frac{v^2}{2g} = \frac{56.25}{19.62} = 2.87\mathrm{ m}
 $$
 
 ### Question 3 (Paper 2 style)
 
 A pump lifts $500\mathrm{ kg}$ of water per minute from a well $15\mathrm{ m}$ deep. The pump has an
-efficiency of 65%. Find the power input to the pump.
+Efficiency of 65%. Find the power input to the pump.
 
 $$
 P_{\mathrm{useful}} = \frac`\{mgh}`{t} = \frac{500 \times 9.81 \times 15}{60} = 1226\mathrm{ W}
@@ -546,12 +546,12 @@ $$
 ### Question 4 (Paper 1 style)
 
 A satellite of mass $200\mathrm{ kg}$ is in a circular orbit at altitude $500\mathrm{ km}$.
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 **(a)** Find the orbital speed.
 
 $$
-r = 6.87 \times 10^6\mathrm{ m}
+R = 6.87 \times 10^6\mathrm{ m}
 $$
 
 $$
@@ -559,7 +559,7 @@ $$
 $$
 
 $$
-v = \sqrt{5.80 \times 10^7} = 7616\mathrm{ m/s}
+V = \sqrt{5.80 \times 10^7} = 7616\mathrm{ m/s}
 $$
 
 **(b)** Find the total mechanical energy.
@@ -579,12 +579,12 @@ $$
 ### Question 5 (Paper 2 style)
 
 A $60\mathrm{ kg}$ person jumps from a platform $5\mathrm{ m}$ above a trampoline. The trampoline
-sags $0.5\mathrm{ m}$ at the lowest point. Find the spring constant of the trampoline.
+Sags $0.5\mathrm{ m}$ at the lowest point. Find the spring constant of the trampoline.
 
 At the lowest point, all energy is elastic potential energy:
 
 $$
-mg(h + x) = \frac{1}{2}kx^2
+Mg(h + x) = \frac{1}{2}kx^2
 $$
 
 $$
@@ -599,22 +599,22 @@ $$
 
 ## Summary
 
-| Energy Type                     | Formula                                                         |
+| Energy Type | Formula |
 | ------------------------------- | --------------------------------------------------------------- |
-| Kinetic                         | $E_k = \dfrac{1}{2}mv^2$                                        |
-| Gravitational PE (near surface) | $E_p = mgh$                                                     |
-| Gravitational PE (universal)    | $E_p = -\dfrac{GMm}{r}$                                         |
-| Elastic PE                      | $E_e = \dfrac{1}{2}kx^2$                                        |
-| Conservation                    | $E_k + E_p + E_e = \mathrm{constant}$                           |
-| Work-energy theorem             | $W_{\mathrm{net}} = \Delta E_k$                                 |
-| Power                           | $P = \dfrac{W}{t} = Fv$                                         |
-| Efficiency                      | $\eta = \dfrac{E_{\mathrm{out}}}{E_{\mathrm{in}}} \times 100\%$ |
+| Kinetic | $E_k = \dfrac{1}{2}mv^2$ |
+| Gravitational PE (near surface) | $E_p = mgh$ |
+| Gravitational PE (universal) | $E_p = -\dfrac{GMm}{r}$ |
+| Elastic PE | $E_e = \dfrac{1}{2}kx^2$ |
+| Conservation | $E_k + E_p + E_e = \mathrm{constant}$ |
+| Work-energy theorem | $W_{\mathrm{net}} = \Delta E_k$ |
+| Power | $P = \dfrac{W}{t} = Fv$ |
+| Efficiency | $\eta = \dfrac{E_{\mathrm{out}}}{E_{\mathrm{in}}} \times 100\%$ |
 
 :::tip[Exam Strategy]
 
 For energy conservation problems, always define your reference level for gravitational PE. Show the
-energy at two clearly chosen points (usually start and end). When friction is present, subtract the
-work done by friction from the total mechanical energy.
+Energy at two chosen points ( start and end). When friction is present, subtract the
+Work done by friction from the total mechanical energy.
 
 :::
 
@@ -624,13 +624,13 @@ work done by friction from the total mechanical energy.
 
 ### Gravitational Potential Energy Curves
 
-For two masses $M$ and $m$ separated by distance $r$, the total energy determines the type of orbit:
+For two masses $M$ and $m$ separated by distance $r$The total energy determines the type of orbit:
 
-| Total Energy $E$ | Orbit Type                    |
+| Total Energy $E$ | Orbit Type |
 | ---------------- | ----------------------------- | --- | --- | --- | ------------------ |
-| $E \lt 0$ (and $ | E                             | \lt | E_p | $)  | Bound (elliptical) |
-| $E = 0$          | Parabolic (escape trajectory) | | | | |
-| $E \gt 0$        | Hyperbolic (unbound)          | | | | |
+| $E \lt 0$ (and $ | E                             | \lt | E_p | $) | Bound (elliptical) |
+| $E = 0$ | Parabolic (escape trajectory) | | | | |
+| $E \gt 0$ | Hyperbolic (unbound) | | | | |
 
 For a circular orbit:
 
@@ -641,17 +641,17 @@ $$
 ### Energy to Change Orbits
 
 To move from one circular orbit to another, energy must be supplied. The minimum energy required is
-the difference in total orbital energies.
+The difference in total orbital energies.
 
 :::info[Example]
 
 Find the energy required to move a $1000\mathrm{ kg}$ satellite from a circular orbit at
 $300\mathrm{ km}$ altitude to one at $600\mathrm{ km}$ altitude.
 
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
-r_1 = 6.67 \times 10^6\mathrm{ m}, \quad r_2 = 6.97 \times 10^6\mathrm{ m}
+R_1 = 6.67 \times 10^6\mathrm{ m}, \quad r_2 = 6.97 \times 10^6\mathrm{ m}
 $$
 
 $$
@@ -694,14 +694,14 @@ W = \int_0^{-d} (-kx)\,dx = \left[-\frac{kx^2}{2}\right]_0^{-d} = -\frac{k(-d)^2
 $$
 
 The negative sign indicates work is done on the spring (energy stored). The elastic potential energy
-is $\dfrac{1}{2}kd^2$.
+Is $\dfrac{1}{2}kd^2$.
 
 :::
 
 ### Force-Extension Graphs for Non-Hookean Materials
 
 For materials that do not obey Hooke's law, the area under the force-extension graph still equals
-the elastic potential energy, but it must be found by integration or by counting squares.
+The elastic potential energy, but it must be found by integration or by counting squares.
 
 ---
 
@@ -713,12 +713,12 @@ $$
 P = \tau\omega
 $$
 
-where $\tau$ is the torque and $\omega$ is the angular velocity.
+Where $\tau$ is the torque and $\omega$ is the angular velocity.
 
 :::info[Example]
 
 A motor delivers a torque of $50\mathrm{ N}\cdot\mathrm{m}$ at $3000\mathrm{ rpm}$. Find the power
-output.
+Output.
 
 $$
 \omega = 3000 \times \frac{2\pi}{60} = 314.2\mathrm{ rad/s}
@@ -736,7 +736,7 @@ $$
 
 ### Friction and Heat
 
-When friction does work $W_f$, the energy is converted to thermal energy:
+When friction does work $W_f$The energy is converted to thermal energy:
 
 $$
 Q = W_f = \mu_k Nd
@@ -757,7 +757,7 @@ $$
 ### Question 6 (Paper 2 style)
 
 A $0.5\mathrm{ kg}$ ball is attached to a string of length $1.0\mathrm{ m}$ and swings as a simple
-pendulum. It is released from horizontal.
+Pendulum. It is released from horizontal.
 
 **(a)** Find the tension in the string at the lowest point.
 
@@ -782,11 +782,11 @@ $$
 Height above lowest point: $h = L - L\cos 45\degree = 1.0 - 0.707 = 0.293\mathrm{ m}$.
 
 $$
-mgh = \frac{1}{2}mv^2
+Mgh = \frac{1}{2}mv^2
 $$
 
 $$
-v = \sqrt{2gh} = \sqrt{2(9.81)(0.293)} = \sqrt{5.75} = 2.40\mathrm{ m/s}
+V = \sqrt{2gh} = \sqrt{2(9.81)(0.293)} = \sqrt{5.75} = 2.40\mathrm{ m/s}
 $$
 
 ### Question 7 (Paper 2 style)
@@ -806,7 +806,7 @@ $$
 P = Fv = 1683 \times 20 = 33660\mathrm{ W} \approx 33.7\mathrm{ kW}
 $$
 
-**(c)** If the engine efficiency is $25\%$, what is the rate of fuel energy consumption?
+**(c)** If the engine efficiency is $25\%$What is the rate of fuel energy consumption?
 
 $$
 P_{\mathrm{input}} = \frac{33660}{0.25} = 134640\mathrm{ W} = 134.6\mathrm{ kW}
@@ -816,14 +816,14 @@ $$
 
 A spring with $k = 500\mathrm{ N/m}$ is used to launch a $0.1\mathrm{ kg}$ projectile vertically.
 The spring is compressed $0.08\mathrm{ m}$. What is the maximum height reached above the launch
-point?
+Point?
 
 $$
 \frac{1}{2}kx^2 = mgh
 $$
 
 $$
-h = \frac{kx^2}{2mg} = \frac{500(0.0064)}{2(0.1)(9.81)} = \frac{3.2}{1.962} = 1.63\mathrm{ m}
+H = \frac{kx^2}{2mg} = \frac{500(0.0064)}{2(0.1)(9.81)} = \frac{3.2}{1.962} = 1.63\mathrm{ m}
 $$
 
 For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
@@ -838,3 +838,11 @@ Ready to test your understanding of **Energy and Conservation**? The [diagnostic
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

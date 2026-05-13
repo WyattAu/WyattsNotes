@@ -31,7 +31,7 @@ fun <T : Comparable<T>> maxOf(a: T, b: T): T = if (a > b) a else b
 ## Variance
 
 Variance describes how subtyping relationships between generic type arguments compose with the
-container type. Kotlin uses **declaration-site variance** with `in` and `out` modifiers.
+Container type. Kotlin uses **declaration-site variance** with `in` and `out` modifiers.
 
 ### Invariance
 
@@ -59,7 +59,7 @@ val animalProducer: Producer<Animal> = dogProducer  // OK
 ```
 
 The compiler enforces that `T` only appears in **out-positions** (return types). It cannot appear as
-a parameter type or in a mutable property.
+A parameter type or in a mutable property.
 
 ```kotlin
 class Producer<out T>(private val value: T) {
@@ -83,7 +83,7 @@ val dogConsumer: Consumer<Dog> = animalConsumer  // OK
 ```
 
 The compiler enforces that `T` only appears in **in-positions** (parameter types). It cannot appear
-as a return type.
+As a return type.
 
 ### Variance Mnemonic
 
@@ -95,7 +95,7 @@ Consumer<in T>   -- consumes T, contravariant
 ### Declaration-Site vs Use-Site Variance
 
 Kotlin prefers declaration-site variance (Java only has use-site). Declaration-site variance means
-the class author decides the variance once, and all call sites benefit.
+The class author decides the variance once, and all call sites benefit.
 
 ```kotlin
 // Declaration-site (Kotlin style)
@@ -110,7 +110,7 @@ fun copy(from: Array<out Any>, to: Array<in Any>) {
 ```
 
 Use-site variance is useful when declaration-site variance is not possible (e.g., arrays, which are
-invariant on the JVM).
+Invariant on the JVM).
 
 ## Type Constraints
 
@@ -149,8 +149,8 @@ fun <T : Any> requireNonNull(value: T?): T {
 }
 ```
 
-`T : Any` constrains `T` to non-nullable types. Without this bound, `T` defaults to `T : Any?`,
-allowing nullable types.
+`T : Any` constrains `T` to non-nullable types. Without this bound, `T` defaults to `T : Any?`
+Allowing nullable types.
 
 ## Star Projection
 
@@ -167,11 +167,11 @@ fun printAll(list: List<*>) {
 
 Star projection behavior depends on variance:
 
-| Declaration       | Star projection `*` means              |
+| Declaration | Star projection `*` means |
 | ----------------- | -------------------------------------- |
-| `Producer<out T>` | `Producer<out Nothing>`                |
-| `Consumer<in T>`  | `Consumer<in Any?>`                    |
-| `MutableList<T>`  | `MutableList<out Nothing>` (read-only) |
+| `Producer<out T>` | `Producer<out Nothing>` |
+| `Consumer<in T>` | `Consumer<in Any?>` |
+| `MutableList<T>` | `MutableList<out Nothing>` (read-only) |
 
 ```kotlin
 fun process(producer: Producer<*>) {
@@ -186,7 +186,7 @@ fun process(consumer: Consumer<*>) {
 ## Reified Types
 
 Type parameters are erased at runtime, so you cannot perform type checks or create instances of a
-type parameter directly.
+Type parameter directly.
 
 ```kotlin
 // This does not compile:
@@ -200,7 +200,7 @@ println(isType<Int>("hello"))     // false
 ```
 
 The `reified` modifier requires the function to be `inline`. The compiler substitutes the actual
-type argument at each call site, making the type available at runtime.
+Type argument at each call site, making the type available at runtime.
 
 ### Common Reified Use Cases
 
@@ -232,7 +232,7 @@ inline class Id<T : Any>(val value: Long) {
 ## Generics and Arrays
 
 Arrays on the JVM are covariant and reified (type information is preserved at runtime). Kotlin's
-generics are invariant and erased. This mismatch requires attention.
+Generics are invariant and erased. This mismatch requires attention.
 
 ```kotlin
 // Array is covariant (JVM behavior)
@@ -256,7 +256,7 @@ val <K, V> Map<K, V>.keysAsStrings: String
 ## Type Erasure and Runtime
 
 Generic type parameters are erased at runtime. Two instances of `List<String>` and `List<Int>` are
-both `List` at runtime.
+Both `List` at runtime.
 
 ```kotlin
 val stringList = listOf("a", "b")
@@ -266,19 +266,27 @@ println(stringList::class == intList::class)  // true -- both are ArrayList
 ```
 
 Reified types and inline functions are the primary mechanism for accessing generic type information
-at runtime in Kotlin.
+At runtime in Kotlin.
 
 ## Common Pitfalls
 
-- \*\* Confusing `out` and `in` variance. Remember: producers are `out`, consumers are `in`. If a
-  class both produces and consumes `T`, it must be invariant.
+- \*\* Confusing `out` and `in` variance. Remember: producers are `out`Consumers are `in`. If a
+ class both produces and consumes `T`It must be invariant.
 - \*\* Using star projection when you actually need the type. Star projection treats the type as
-  unknown, which means you can read as `Any?` but cannot write. If you need the specific type, pass
-  the type parameter explicitly.
+ unknown, which means you can read as `Any?` but cannot write. If you need the specific type, pass
+ the type parameter explicitly.
 - \*\* Forgetting that reified type parameters require `inline`. Non-inline functions cannot have
-  reified type parameters.
+ reified type parameters.
 - \*\* Storing reified type parameters in collections. Since reified works through inline expansion,
-  you cannot store a type parameter for later use. The type information is only available at the
-  call site during compilation.
+ you cannot store a type parameter for later use. The type information is only available at the
+ call site during compilation.
 - \*_ Using `List<_>` and then trying to add elements. Star projection makes the list effectively
-  read-only for generic types.
+ read-only for generic types.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

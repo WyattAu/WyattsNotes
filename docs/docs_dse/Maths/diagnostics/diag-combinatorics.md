@@ -72,7 +72,7 @@ Find the coefficient of $x^5$ in the expansion of $(2x - 3)^8$.
 
 The general term in $(a + b)^n$ is $\dbinom{n}{r} a^{n-r} b^r$.
 
-Here, $a = 2x$, $b = -3$, $n = 8$:
+Here, $a = 2x$$b = -3$$n = 8$:
 
 $$T_{r+1} = \dbinom{8}{r}(2x)^{8-r}(-3)^r$$
 
@@ -98,7 +98,7 @@ For circular arrangements, we fix one person to eliminate rotational symmetry.
 
 Number of arrangements $= (6 - 1)! = 5! = 120$.
 
-A common mistake is using $6! = 720$, which counts the same arrangement multiple times (one for each rotation).
+A common mistake is using $6! = 720$Which counts the same arrangement multiple times (one for each rotation).
 
 ---
 
@@ -106,7 +106,7 @@ A common mistake is using $6! = 720$, which counts the same arrangement multiple
 
 **Question:**
 
-Find the first three terms in the expansion of $(1 + 2x)^{-3}$ in ascending powers of $x$, up to and including the term in $x^2$.
+Find the first three terms in the expansion of $(1 + 2x)^{-3}$ in ascending powers of $x$Up to and including the term in $x^2$.
 
 **Solution:**
 
@@ -164,7 +164,7 @@ $$2(r+1)(n-r+1) = (r+1)r + (n-r)(n-r+1)$$
 
 This is complex. For ALL coefficients to be in AP (not just three consecutive), there is no such
 $n > 2$. The question likely means: find $n$ such that three specific consecutive coefficients form
-an AP. For $C_1, C_2, C_3$:
+An AP. For $C_1, C_2, C_3$:
 
 $2\dbinom{n}{2} = \dbinom{n}{1} + \dbinom{n}{3}$
 
@@ -176,7 +176,7 @@ $6(n - 2) = (n-1)(n-2)$
 
 If $n \neq 2$: $6 = n - 1 \implies n = 7$.
 
-Check $n = 7$: $\dbinom{7}{1} = 7$, $\dbinom{7}{2} = 21$, $\dbinom{7}{3} = 35$.
+Check $n = 7$: $\dbinom{7}{1} = 7$$\dbinom{7}{2} = 21$$\dbinom{7}{3} = 35$.
 
 $2(21) = 42 = 7 + 35 = 42$. Yes.
 
@@ -188,7 +188,7 @@ Therefore $n = 7$.
 
 **Question:**
 
-If $\dbinom{n}{2} = 55$, find $n$ and evaluate $\dbinom{n}{4}$.
+If $\dbinom{n}{2} = 55$Find $n$ and evaluate $\dbinom{n}{4}$.
 
 **Solution:**
 
@@ -293,7 +293,7 @@ Find the middle term in the expansion of $\left(2x - \dfrac{1}{x}\right)^{10}$.
 
 **Solution:**
 
-$n = 10$, so there are 11 terms. The middle term is the 6th term ($r = 5$).
+$n = 10$So there are 11 terms. The middle term is the 6th term ($r = 5$).
 
 $$T_6 = \dbinom{10}{5}(2x)^5\left(-\frac{1}{x}\right)^5 = 252 \times 32x^5 \times \left(-\frac{1}{x^5}\right) = 252 \times 32 \times (-1) = -8064$$
 
@@ -349,13 +349,13 @@ $$\dbinom{8}{5} = \dbinom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1
 
 ## Common Pitfalls
 
-1. **Confusing permutations with combinations.** Use permutations (${}_nP_r$) when order matters (e.g. arranging people in a line) and combinations ($\dbinom{n}{r}$) when order does not matter (e.g. selecting a committee). Ask yourself: does swapping two selected items create a new outcome?
+1. **Confusing permutations with combinations.** Use permutations (${}_nP_r$) when order matters (e.g. Arranging people in a line) and combinations ($\dbinom{n}{r}$) when order does not matter (e.g. Selecting a committee). Ask yourself: does swapping two selected items create a new outcome?
 
 2. **Double counting in "at least" problems.** When counting arrangements with conditions like "at least 2 women," either count each case separately (2 women, 3 women, 4 women) or use the complement method (total minus cases with 0 or 1 woman). Mixing these approaches leads to double counting.
 
 3. **Forgetting to divide by factorials for identical objects.** When arranging letters or objects with identical elements, always divide by the factorial of the count of each set of identical objects. Failing to do so inflates the count.
 
-4. **Incorrect binomial coefficient in expansion.** In $(a + b)^n$, the general term is $\dbinom{n}{r} a^{n-r} b^r$. A common error is swapping the exponents: writing $a^r b^{n-r}$. Always identify which term is "$a$" and which is "$b$" at the start.
+4. **Incorrect binomial coefficient in expansion.** In $(a + b)^n$The general term is $\dbinom{n}{r} a^{n-r} b^r$. A common error is swapping the exponents: writing $a^r b^{n-r}$. Always identify which term is "$a$" and which is "$b$" at the start.
 
 5. **Not considering all valid patterns in arrangement problems.** For gender alternation problems, remember that both M-W-M-W and W-M-W-M patterns are valid. Missing one pattern halves the answer.
 
@@ -419,7 +419,7 @@ Find the first four terms in the expansion of $(1 - 3x)^{1/2}$ in ascending powe
 
 **Solution:**
 
-Using the generalised binomial theorem with $n = \dfrac{1}{2}$, $a = 1$, $b = -3x$:
+Using the generalised binomial theorem with $n = \dfrac{1}{2}$$a = 1$$b = -3x$:
 
 $$(1 - 3x)^{1/2} = 1 + \frac{1}{2}(-3x) + \frac{\frac{1}{2} \times \left(-\frac{1}{2}\right)}{2!}(-3x)^2 + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{3!}(-3x)^3 + \cdots$$
 
@@ -427,7 +427,7 @@ $$= 1 - \frac{3x}{2} + \frac{-\frac{1}{4}}{2} \cdot 9x^2 + \frac{\frac{3}{8}}{6}
 
 $$= 1 - \frac{3x}{2} - \frac{9x^2}{8} - \frac{27x^3}{16} + \cdots$$
 
-The expansion is valid when $|-3x| < 1$, i.e. $|x| < \dfrac{1}{3}$.
+The expansion is valid when $|-3x| < 1$I.e. $|x| < \dfrac{1}{3}$.
 
 ---
 

@@ -50,7 +50,7 @@ A block of mass $5.0\,\text{kg}$ rests on a rough plane inclined at $30^\circ$ t
 
 (b) Calculate the maximum value of $P$ before the block begins to slide up the plane.
 
-(c) If $P = 30\,\text{N}$, determine the magnitude and direction of the frictional force.
+(c) If $P = 30\,\text{N}$Determine the magnitude and direction of the frictional force.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -85,7 +85,7 @@ $$0.866P = 24.525 + 10.62 + 0.125P$$
 $$0.741P = 35.145$$
 $$P = 47.4\,\text{N}$$
 
-(c) With $P = 30\,\text{N}$, we first check whether the block is in equilibrium by assuming it is and finding the required friction.
+(c) With $P = 30\,\text{N}$We first check whether the block is in equilibrium by assuming it is and finding the required friction.
 
 Up the plane: $P\cos 30^\circ = 30 \times 0.866 = 25.98\,\text{N}$
 
@@ -99,7 +99,7 @@ $$F = 1.455\,\text{N}\text{ down the plane}$$
 
 Check: $F_{\max} = \mu R = 0.25(42.48 + 30 \times 0.5) = 0.25 \times 57.48 = 14.37\,\text{N}$
 
-Since $1.455 \lt 14.37$, the block is indeed in equilibrium and the friction is **less than the maximum**, confirming $F \le \mu R$.
+Since $1.455 \lt 14.37$The block is indeed in equilibrium and the friction is **less than the maximum**, confirming $F \le \mu R$.
 
 The magnitude of friction is $1.5\,\text{N}$ (2 s.f.), directed down the plane.
 
@@ -124,7 +124,7 @@ For $B$ (down positive): $6.0g - T = 6.0a$
 
 For $A$ (up the plane positive): $T - mg\sin 25^\circ - F = 4.0a$
 
-where $F = \mu R = \mu \cdot mg\cos 25^\circ = 0.30 \times 4.0 \times 9.81 \times \cos 25^\circ = 0.30 \times 4.0 \times 9.81 \times 0.9063 = 10.66\,\text{N}$
+Where $F = \mu R = \mu \cdot mg\cos 25^\circ = 0.30 \times 4.0 \times 9.81 \times \cos 25^\circ = 0.30 \times 4.0 \times 9.81 \times 0.9063 = 10.66\,\text{N}$
 
 Adding the equations:
 
@@ -163,7 +163,7 @@ A car of mass $1500\,\text{kg}$ tows a trailer of mass $500\,\text{kg}$ up a hil
 
 (b) Calculate the tension in the towbar.
 
-(c) Calculate the work done by the engine over the first $50\,\text{m}$ and hence the speed of the system after $50\,\text{m}$, starting from rest.
+(c) Calculate the work done by the engine over the first $50\,\text{m}$ and hence the speed of the system after $50\,\text{m}$Starting from rest.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -213,7 +213,7 @@ A block of mass $0.50\,\text{kg}$ is placed on a horizontal turntable at a dista
 
 (b) Calculate $\omega_{\max}$.
 
-(c) The turntable is then tilted so that its surface makes an angle of $10^\circ$ with the horizontal, with the block on the upper side. The turntable rotates about a vertical axis. Will the block slide more easily or less easily? Justify your answer with calculations.
+(c) The turntable is then tilted so that its surface makes an angle of $10^\circ$ with the horizontal, with the block on the upper side. The turntable rotates about a vertical axis. Will the block slide more or less ? Justify your answer with calculations.
 
 **Solution:**
 
@@ -227,7 +227,7 @@ $$\omega_{\max} = \sqrt◆LB◆\frac{\mu_s g}{r}◆RB◆$$
 
 (b) $\omega_{\max} = \sqrt◆LB◆\frac{0.40 \times 9.81}{0.15}◆RB◆ = \sqrt◆LB◆\frac{3.924}{0.15}◆RB◆ = \sqrt{26.16} = 5.11\,\text{rad}\,\text{s}^{-1}$
 
-(c) When tilted at $10^\circ$, resolve perpendicular to the surface:
+(c) When tilted at $10^\circ$Resolve perpendicular to the surface:
 
 $$R = mg\cos 10^\circ = 0.50 \times 9.81 \times 0.9848 = 4.831\,\text{N}$$
 
@@ -267,7 +267,7 @@ $$\omega_{\max}^2 = \frac◆LB◆0.40 \times 9.81 \times 0.9848◆RB◆◆LB◆0
 
 $$\omega_{\max} = 4.94\,\text{rad}\,\text{s}^{-1}$$
 
-Since $4.94 \lt 5.11$, the block slides **more easily** when the turntable is tilted. The tilt reduces the effective normal reaction and the friction must also counteract the tendency to slide down the slope.
+Since $4.94 \lt 5.11$The block slides **more ** when the turntable is tilted. The tilt reduces the effective normal reaction and the friction must also counteract the tendency to slide down the slope.
 
 ---
 ### IT-3: Multi-Stage Connected Particle Problem (with Momentum)
@@ -280,7 +280,7 @@ Two trolleys $A$ and $B$ are on a horizontal track. $A$ has mass $2.0\,\text{kg}
 
 (b) $B$ then collides with a wall and rebounds with speed $1.0\,\text{m}\,\text{s}^{-1}$ towards $A$. If $A$ and $B$ then collide and stick together, calculate their common velocity after the collision.
 
-(c) Calculate the total kinetic energy at the end and compare it with the initial $12.0\,\text{J}$, accounting for the difference.
+(c) Calculate the total kinetic energy at the end and compare it with the initial $12.0\,\text{J}$Accounting for the difference.
 
 **Solution:**
 
@@ -321,7 +321,7 @@ Common velocity is $1.67\,\text{m}\,\text{s}^{-1}$ leftward.
 
 Energy lost $= 12.0 - 6.97 = 5.03\,\text{J}$
 
-This energy is lost in the collision with the wall (where $B$'s KE changed from $\frac{1}{2}(3.0)(1.79)^2 = 4.80\,\text{J}$ to $\frac{1}{2}(3.0)(1.0)^2 = 1.50\,\text{J}$, a loss of $3.30\,\text{J}$) and in the perfectly inelastic collision between $A$ and $B$ (loss of $5.03 - 3.30 = 1.73\,\text{J}$).
+This energy is lost in the collision with the wall (where $B$'s KE changed from $\frac{1}{2}(3.0)(1.79)^2 = 4.80\,\text{J}$ to $\frac{1}{2}(3.0)(1.0)^2 = 1.50\,\text{J}$A loss of $3.30\,\text{J}$) and in the perfectly inelastic collision between $A$ and $B$ (loss of $5.03 - 3.30 = 1.73\,\text{J}$).
 
 Total KE before wall collision: $12.0\,\text{J}$. KE after wall collision, before $A$-$B$ collision: $\frac{1}{2}(2.0)(2.68)^2 + \frac{1}{2}(3.0)(1.0)^2 = 7.18 + 1.50 = 8.68\,\text{J}$. Lost at wall: $12.0 - 8.68 = 3.32\,\text{J}$.
 

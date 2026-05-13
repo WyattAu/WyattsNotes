@@ -11,13 +11,13 @@ slug: object-layout-vptr-this-pointer
 # Object Layout, vptr, and the `this` Pointer
 
 Understanding how the compiler lays out objects in memory is fundamental to writing correct and
-efficient C++. This section covers the memory layout of simple and polymorphic classes, the `this`
-pointer mechanism, and the Empty Base Optimization (EBO).
+Efficient C++. This section covers the memory layout of simple and polymorphic classes, the `this`
+Pointer mechanism, and the Empty Base Optimization (EBO).
 
 ## 1.1 Memory Layout of a Simple Class
 
 For a class with no virtual functions and no base classes, the memory layout is straightforward:
-data members are laid out in declaration order with potential padding between them for alignment
+Data members are laid out in declaration order with potential padding between them for alignment
 [N4950 §11.4.1]. Each non-static data member occupies
 $\lceil \mathrm{size{} / \mathrm{alignment{} \rceil \times \mathrm{alignment{}$ bytes.
 
@@ -58,17 +58,17 @@ $$
 
 :::tip
 Standard Layout A class with no virtual functions, no non-static data members of reference
-type, and all non-static data members with the same access control is a **standard-layout class**
+Type, and all non-static data members with the same access control is a **standard-layout class**
 [N4950 §11.4.1]. Such classes have a well-defined, portable memory layout and are compatible with C
-structs.
+Structs.
 :::
 
 ## 1.2 The `this` Pointer [N4950 §11.4.3.2]
 
 Every non-static member function receives an implicit first parameter: a pointer to the object on
-which the function is invoked. This pointer is named `this` and has the type `T*` in a non-const
-member function, `const T*` in a const member function, and `volatile T*` in a volatile member
-function.
+Which the function is invoked. This pointer is named `this` and has the type `T*` in a non-const
+Member function, `const T*` in a const member function, and `volatile T*` in a volatile member
+Function.
 
 ```cpp
 #include <cstdio>
@@ -104,13 +104,13 @@ The C++ Standard does not specify the mechanism for passing `this` — that is d
 On the dominant 64-bit platforms:
 
 - **System V AMD64 ABI** (Linux, macOS): `this` is passed as the first implicit argument in register
-  **rdi** (the same register used for the first explicit parameter of a non-member function). If the
-  member function is called on a `const` object, the pointer is passed in the same register; the
-  type difference is purely a compile-time distinction.
+ **rdi** (the same register used for the first explicit parameter of a non-member function). If the
+ member function is called on a `const` object, the pointer is passed in the same register; the
+ type difference is purely a compile-time distinction.
 - **Windows x64 ABI**: `this` is passed in register **rcx**.
 
 The key insight: a member function call `obj.method(arg)` is ABI-equivalent to a non-member call
-`method(&obj, arg)`, modulo the name-mangling convention that encodes the class name.
+`method(&obj, arg)`Modulo the name-mangling convention that encodes the class name.
 
 ```cpp
 #include <cstdio>
@@ -140,8 +140,8 @@ int main() {
 ## 1.4 Empty Base Optimization (EBO)
 
 The Standard requires that every complete object has a unique address [N4950 §6.9]. This means that
-even an empty class — one with no non-static data members and no virtual functions — must occupy at
-least one byte:
+Even an empty class — one with no non-static data members and no virtual functions — must occupy at
+Least one byte:
 
 ```cpp
 #include <cstddef>
@@ -152,7 +152,7 @@ static_assert(sizeof(Empty) == 1);
 
 However, when an empty class is used as a **base class**, the compiler is permitted to apply the
 **Empty Base Optimization** (EBO): it may allocate zero bytes for the base class subobject, since
-the derived class's own address already satisfies the unique-address requirement.
+The derived class's own address already satisfies the unique-address requirement.
 
 ```cpp
 #include <cstddef>
@@ -173,9 +173,9 @@ static_assert(sizeof(Derived) == sizeof(int));
 
 :::info
 Practical Importance EBO is exploited heavily by standard library implementations.
-`std::allocator&lt;T&gt;` is typically an empty class, and
+`std::allocator&lt;T&gt;` is an empty class, and
 `std::vector&lt;T, std::allocator&lt;T&gt;&gt;` inherits from it privately so that the allocator
-storage costs nothing.
+Storage costs nothing.
 :::
 
 ### EBO Limitations
@@ -185,7 +185,7 @@ EBO cannot be applied when:
 - The empty class is a **member**, not a base class.
 - Multiple base classes of the **same type** exist (they must have distinct addresses).
 - The empty base is also a base of another base in a diamond hierarchy (the compiler must still
-  ensure unique addresses in some configurations).
+ ensure unique addresses in some configurations).
 
 ```cpp
 struct Empty {};
@@ -227,14 +227,14 @@ int main() {
 ```
 
 When a class has virtual functions, the compiler adds a hidden pointer — the **vptr** — as the first
-member of the object layout. The vptr points to a per-class virtual table (vtable) containing
-function pointers for each virtual function. On 64-bit platforms, the vptr occupies 8 bytes.
+Member of the object layout. The vptr points to a per-class virtual table (vtable) containing
+Function pointers for each virtual function. On 64-bit platforms, the vptr occupies 8 bytes.
 
 ## 1.6 Multiple Inheritance Layout
 
 Multiple inheritance introduces a more complex layout because each base class contributes its own
-vptr (if it has virtual functions) and the compiler must handle `this` pointer adjustments when
-converting between derived and base pointers.
+Vptr (if it has virtual functions) and the compiler must handle `this` pointer adjustments when
+Converting between derived and base pointers.
 
 ```cpp
 #include <cstdio>
@@ -283,8 +283,8 @@ int main() {
 ### The `this` Pointer Adjustment Problem
 
 When a virtual function is called through a pointer to a non-first base, the compiler must adjust
-the `this` pointer before invoking the function. This adjustment is encoded in the **vtable** or
-performed by a **thunk** (a small code stub):
+The `this` pointer before invoking the function. This adjustment is encoded in the **vtable** or
+Performed by a **thunk** (a small code stub):
 
 ```cpp
 // When calling b2->f2():
@@ -295,13 +295,13 @@ performed by a **thunk** (a small code stub):
 ```
 
 This has a runtime cost: one additional instruction (a `sub` or `add` on the `this` pointer) for
-every virtual call through a non-first base pointer. In hot paths, this can be measurable.
+Every virtual call through a non-first base pointer. In hot paths, this can be measurable.
 
 ## 1.7 Virtual Inheritance Layout
 
 Virtual inheritance solves the diamond problem by ensuring that a virtually inherited base class has
-exactly one subobject shared by all paths in the inheritance hierarchy. The cost is significant:
-virtual base pointers and indirection.
+Exactly one subobject shared by all paths in the inheritance hierarchy. The cost is significant:
+Virtual base pointers and indirection.
 
 ```cpp
 #include <cstdio>
@@ -344,7 +344,7 @@ int main() {
 ### Virtual Base Pointer (vbptr)
 
 Classes with virtual bases contain a hidden **virtual base pointer** (vbptr) that points to a shared
-table containing the offset of the virtual base subobject. The layout is approximately:
+Table containing the offset of the virtual base subobject. The layout is approximately:
 
 ```
 Diamond object layout:
@@ -368,16 +368,16 @@ Diamond object layout:
 ```
 
 The exact layout varies by compiler and ABI. MSVC uses a separate vbptr; the Itanium ABI (GCC/Clang)
-often stores virtual base offsets in the vtable itself.
+Often stores virtual base offsets in the vtable itself.
 
 **Performance cost:** Every access to a virtual base member requires an additional indirection
-through the vbptr table. Construction of a diamond object requires multiple `this` adjustments as
-each base constructor is called.
+Through the vbptr table. Construction of a diamond object requires multiple `this` adjustments as
+Each base constructor is called.
 
 ## 1.8 vtable Internals
 
 The vtable is a compiler-generated array of function pointers, one per virtual function in the class
-hierarchy. Each polymorphic class has its own vtable.
+Hierarchy. Each polymorphic class has its own vtable.
 
 ### vtable Structure (Itanium C++ ABI)
 
@@ -396,7 +396,7 @@ vtable for Derived:
 ### RTTI and `type_info`
 
 Every polymorphic class has an associated `std::type_info` object [N4950 §17.2.1]. The vtable
-contains a pointer to this object, enabling `dynamic_cast` and `typeid`:
+Contains a pointer to this object, enabling `dynamic_cast` and `typeid`:
 
 ```cpp
 #include <cstdio>
@@ -420,17 +420,17 @@ int main() {
 }
 ```
 
-**RTTI overhead:** Each polymorphic class adds a `type_info` object to the binary (typically in
+**RTTI overhead:** Each polymorphic class adds a `type_info` object to the binary ( in
 `.data.rel.ro`), and each object carries a vptr pointing to a vtable that contains a `type_info`
-pointer. This overhead is present even if you never use `dynamic_cast` or `typeid`.
+Pointer. This overhead is present even if you never use `dynamic_cast` or `typeid`.
 
 Disabling RTTI: Use `-fno-rtti` (GCC/Clang) or `/GR-` (MSVC) to eliminate this overhead. This also
-disables `dynamic_cast` (except for upcasts, which are compile-time resolved).
+Disables `dynamic_cast` (except for upcasts, which are compile-time resolved).
 
 ### Pure Virtual Functions and Abstract Classes
 
 A class with at least one **pure virtual function** is abstract — it cannot be instantiated. In the
-vtable, a pure virtual function's slot typically points to `__cxa_pure_virtual` (Itanium ABI) or
+Vtable, a pure virtual function's slot points to `__cxa_pure_virtual` (Itanium ABI) or
 `_purecall` (MSVC), which triggers a runtime error if called:
 
 ```cpp
@@ -459,7 +459,7 @@ int main() {
 ### Calling a Pure Virtual Function from a Constructor
 
 A common Undefined Behavior scenario: calling a virtual function (especially a pure virtual) from a
-base class constructor. During base class construction, the derived class vtable is not yet set up:
+Base class constructor. During base class construction, the derived class vtable is not yet set up:
 
 ```cpp
 #include <cstdio>
@@ -489,8 +489,8 @@ int main() {
 ## 1.9 Virtual Destructors and Object Destruction
 
 When deleting an object through a base class pointer, the destructor must be virtual to ensure the
-derived destructor runs. Without `virtual`, only the base destructor runs, causing resource leaks
-and Undefined Behavior.
+Derived destructor runs. Without `virtual`Only the base destructor runs, causing resource leaks
+And Undefined Behavior.
 
 ```cpp
 #include <cstdio>
@@ -535,7 +535,7 @@ When a derived object is destroyed, destructors run in reverse order of construc
 ## 1.10 Devirtualization and the `final` Specifier
 
 The compiler can devirtualize a virtual call (convert it to a direct call) when it can prove the
-dynamic type at compile time. The `final` specifier helps the compiler make this determination.
+Dynamic type at compile time. The `final` specifier helps the compiler make this determination.
 
 ```cpp
 #include <cstdio>
@@ -569,20 +569,20 @@ int main() {
 ### When Devirtualization Occurs
 
 1. **Static type analysis:** If the object is allocated locally and never escapes (no pointers to it
-   are stored), the compiler can track its exact type.
-2. **`final` on the class:** If the class is `final`, no further derivation is possible, so the
-   dynamic type is always the static type.
-3. **`final` on the method:** If the virtual function is `final`, no override exists, so the
-   compiler can use the static type's vtable entry.
-4. **Speculative devirtualization:** At `-O2`/`-O3`, compilers may emit speculative direct calls
-   guarded by a type check (comparing the vptr against the expected vtable).
+ are stored), the compiler can track its exact type.
+2. **`final` on the class:** If the class is `final`No further derivation is possible, so the
+ dynamic type is always the static type.
+3. **`final` on the method:** If the virtual function is `final`No override exists, so the
+ compiler can use the static type's vtable entry.
+4. **Speculative devirtualization:** At `-O2`/`-O3`Compilers may emit speculative direct calls
+ guarded by a type check (comparing the vptr against the expected vtable).
 
 ## Common Pitfalls
 
 ### 1. Object Slicing
 
 Assigning a derived object to a base object by value copies only the base subobject, discarding the
-derived portion:
+Derived portion:
 
 ```cpp
 #include <cstdio>
@@ -600,8 +600,8 @@ int main() {
 ### 2. `offsetof` with Non-Standard-Layout Types
 
 `offsetof` is undefined behavior for non-standard-layout classes [N4950 §18.2.4]. A class with
-virtual functions is not standard-layout. Compilers typically still produce correct results, but the
-behavior is not portable:
+Virtual functions is not standard-layout. Compilers still produce correct results, but the
+Behavior is not portable:
 
 ```cpp
 struct Polymorphic {
@@ -615,22 +615,22 @@ struct Polymorphic {
 ### 3. Forgetting Virtual Destructors in Interface Classes
 
 Any class that is intended to be used as a base class with polymorphic deletion must have a virtual
-destructor. This is the single most common C++ bug related to object layout. If a destructor is
-non-virtual and the class has any virtual functions, deleting through a base pointer causes
+Destructor. This is the single most common C++ bug related to object layout. If a destructor is
+Non-virtual and the class has any virtual functions, deleting through a base pointer causes
 Undefined Behavior.
 
 ### 4. Multiple Inheritance `this` Pointer Adjustments
 
 When casting between base class pointers in a multiple inheritance hierarchy, the pointer value may
-change. This is surprising but correct — the different base subobjects are at different offsets
-within the derived object. Always use `static_cast` for known-safe downcasts and `dynamic_cast` for
-runtime-checked downcasts.
+Change. This is surprising but correct — the different base subobjects are at different offsets
+Within the derived object. Always use `static_cast` for known-safe downcasts and `dynamic_cast` for
+Runtime-checked downcasts.
 
 ### 5. EBO Failure with Same-Type Bases
 
 EBO does not apply when two or more base classes have the same type. Each base subobject must have a
-unique address, so each one occupies at least one byte. Use parameterized base classes (empty base
-class templates with different template arguments) to work around this:
+Unique address, so each one occupies at least one byte. Use parameterized base classes (empty base
+Class templates with different template arguments) to work around this:
 
 ```cpp
 template <typename Tag>
@@ -645,3 +645,11 @@ static_assert(sizeof(Combined) == sizeof(int));  // EBO applies for both
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **(a)** Solve $\dfrac{dy}{dx} = y^2 - 1$ with the general solution.
 
-**(b)** A student separates variables and writes $\dfrac{dy}{y^2 - 1} = dx$, integrates, and arrives at the general solution $\dfrac{1}{2}\ln\!\left\lvert\dfrac{y - 1}{y + 1}\right\rvert = x + C$. They claim this covers all solutions. Is this correct?
+**(b)** A student separates variables and writes $\dfrac{dy}{y^2 - 1} = dx$Integrates, and arrives at the general solution $\dfrac{1}{2}\ln\!\left\lvert\dfrac{y - 1}{y + 1}\right\rvert = x + C$. They claim this covers all solutions. Is this correct?
 
 **(c)** Find the particular solution with $y(0) = 1$.
 
@@ -27,7 +27,7 @@ hide_table_of_contents: true
 
 **(a)** First check equilibrium solutions: $y^2 - 1 = 0 \implies y = 1$ or $y = -1$.
 
-For $y \neq \pm 1$, separate variables using partial fractions:
+For $y \neq \pm 1$Separate variables using partial fractions:
 
 $$\frac{1}{y^2 - 1} = \frac{1}{(y - 1)(y + 1)} = \frac{1}{2(y - 1)} - \frac{1}{2(y + 1)}$$
 
@@ -37,15 +37,15 @@ $$\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$$
 
 $$\left\lvert\frac{y - 1}{y + 1}\right\rvert = e^{2(x + C)} = Ae^{2x}$$
 
-where $A = e^{2C} \gt 0$. Including the equilibrium solutions, the general solution is:
+Where $A = e^{2C} \gt 0$. Including the equilibrium solutions, the general solution is:
 
 $$y = 1, \quad y = -1, \quad \text{or} \quad \frac{y - 1}{y + 1} = \pm Ae^{2x}$$
 
-**(b)** The student's solution is incomplete because they lost the equilibrium solutions $y = 1$ and $y = -1$. By dividing by $y^2 - 1$, the student implicitly assumed $y^2 - 1 \neq 0$. The equilibrium solutions must be stated separately and are not captured by the formula $\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$.
+**(b)** The student's solution is incomplete because they lost the equilibrium solutions $y = 1$ and $y = -1$. By dividing by $y^2 - 1$The student implicitly assumed $y^2 - 1 \neq 0$. The equilibrium solutions must be stated separately and are not captured by the formula $\frac{1}{2}\ln\!\left\lvert\frac{y - 1}{y + 1}\right\rvert = x + C$.
 
-**(c)** The particular solution with $y(0) = 1$ is simply the equilibrium solution $y = 1$ for all $x$. This can be verified: $\frac{dy}{dx} = 0$ and $y^2 - 1 = 1 - 1 = 0$. Confirmed.
+**(c)** The particular solution with $y(0) = 1$ is the equilibrium solution $y = 1$ for all $x$. This can be verified: $\frac{dy}{dx} = 0$ and $y^2 - 1 = 1 - 1 = 0$. Confirmed.
 
-Note that if the student tries to use their formula: $\frac{1}{2}\ln\!\left\lvert\frac{0}{2}\right\rvert = 0 + C \implies \frac{1}{2}\ln 0$, which is undefined. This shows the equilibrium solution $y = 1$ cannot be obtained from the separated formula.
+Note that if the student tries to use their formula: $\frac{1}{2}\ln\!\left\lvert\frac{0}{2}\right\rvert = 0 + C \implies \frac{1}{2}\ln 0$Which is undefined. This shows the equilibrium solution $y = 1$ cannot be obtained from the separated formula.
 
 ---
 
@@ -57,13 +57,13 @@ Solve $\dfrac{dy}{dx} = 2y + e^{3x}$ with $y(0) = 1$.
 
 **(a)** Find the general solution using an integrating factor.
 
-**(b)** A student rewrites the equation as $\dfrac{dy}{dx} - 2y = e^{3x}$, computes the integrating factor as $\mu = e^{-2x}$, and gets the wrong answer. Identify the error in their working:
+**(b)** A student rewrites the equation as $\dfrac{dy}{dx} - 2y = e^{3x}$Computes the integrating factor as $\mu = e^{-2x}$And gets the wrong answer. Identify the error in their working:
 
 Their working: $\dfrac{d}{dx}(ye^{-2x}) = e^{3x} \cdot e^{-2x} = e^x$.
 
 So $ye^{-2x} = e^x + C \implies y = e^{3x} + Ce^{2x}$.
 
-With $y(0) = 1$: $1 = 1 + C \implies C = 0$, so $y = e^{3x}$.
+With $y(0) = 1$: $1 = 1 + C \implies C = 0$So $y = e^{3x}$.
 
 Verify: $\dfrac{dy}{dx} = 3e^{3x}$ and $2y + e^{3x} = 2e^{3x} + e^{3x} = 3e^{3x}$. Confirmed.
 
@@ -128,7 +128,7 @@ Note the factor of $x$ in the second term. This is essential.
 
 **(b)** The student's error is treating the repeated root $\lambda = -2$ as two independent solutions $e^{-2x}$ and $e^{-2x}$. These are the same function, so they are linearly dependent. The general solution requires two linearly independent solutions.
 
-For a repeated root $\lambda$, the two independent solutions are $e^{\lambda x}$ and $xe^{\lambda x}$. The factor of $x$ is derived from the method of reduction of order or from the Taylor expansion perspective: when the characteristic equation has a repeated root, the second solution involves the derivative of $e^{\lambda x}$ with respect to $\lambda$.
+For a repeated root $\lambda$The two independent solutions are $e^{\lambda x}$ and $xe^{\lambda x}$. The factor of $x$ is derived from the method of reduction of order or from the Taylor expansion perspective: when the characteristic equation has a repeated root, the second solution involves the derivative of $e^{\lambda x}$ with respect to $\lambda$.
 
 Using the correct general solution with $y(0) = 1$ and $y'(0) = 0$:
 
@@ -164,7 +164,7 @@ A body at temperature $95\degree\mathrm{C}$ is placed in a room at constant temp
 
 **Solution:**
 
-**(a)** Newton's law of cooling: $\dfrac{dT}{dt} = -k(T - 20)$, where $k \gt 0$.
+**(a)** Newton's law of cooling: $\dfrac{dT}{dt} = -k(T - 20)$Where $k \gt 0$.
 
 Separate variables: $\dfrac{dT}{T - 20} = -k\,dt$.
 
@@ -196,7 +196,7 @@ $$t = \frac{10\ln\!\left(\frac{2}{15}\right)}{\ln\!\left(\frac{8}{15}\right)} = 
 
 Numerically: $t \approx \frac{10 \times (-2.015)}{0.628} \approx 32.1$ minutes.
 
-**(c)** As $t \to \infty$, since $\frac{8}{15} \lt 1$, we have $\left(\frac{8}{15}\right)^{t/10} \to 0$.
+**(c)** As $t \to \infty$Since $\frac{8}{15} \lt 1$We have $\left(\frac{8}{15}\right)^{t/10} \to 0$.
 
 Therefore $T(t) \to 20 + 75 \times 0 = 20\degree\mathrm{C}$.
 
@@ -226,9 +226,9 @@ $$\frac{dy}{dx} = \frac{x}{y}, \quad y(1) = 2$$
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = \dfrac{x_n}{y_n}$ |
 |-----|-------|-------|-----------------------------------|
-| 0   | 1.0   | 2.000 | 0.500                             |
-| 1   | 1.5   | 2.250 | 0.667                             |
-| 2   | 2.0   | 2.583 | ---                               |
+| 0 | 1.0 | 2.000 | 0.500 |
+| 1 | 1.5 | 2.250 | 0.667 |
+| 2 | 2.0 | 2.583 | --- |
 
 $$y_1 = 2.000 + 0.5 \times 0.500 = 2.250$$
 

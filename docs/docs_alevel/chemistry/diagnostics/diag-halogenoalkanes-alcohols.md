@@ -179,7 +179,7 @@ Conditions: Acidified potassium dichromate(VI), reflux.
 1. The rate equation would be second order: $\text{rate} = k[\text{1-chlorobutane}][\text{OH}^-]$ (both species involved in rate-determining step).
 2. Primary halogenoalkanes cannot form stable carbocations, so SN1 is not feasible.
 3. The product has **inverted stereochemistry** at the chiral centre (if one were present) -- Walden inversion.
-4. The rate constant has units of $\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$, confirming second-order kinetics.
+4. The rate constant has units of $\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$Confirming second-order kinetics.
 
 (c) Using the Arrhenius equation:
 
@@ -202,7 +202,7 @@ The reactivity of halogenoalkanes in nucleophilic substitution follows the order
 
 (a) Explain this trend in terms of bond enthalpy and polarisability.
 
-(b) The hydrolysis of 1-bromopropane with NaOH is a second-order reaction. An experiment shows that doubling the concentration of 1-bromopropane doubles the rate. Explain what would happen to the rate if the temperature is increased from $25\,^\circ\text{C}$ to $50\,^\circ\text{C}$, assuming the activation energy is $85\,\text{kJ mol}^{-1}$.
+(b) The hydrolysis of 1-bromopropane with NaOH is a second-order reaction. An experiment shows that doubling the concentration of 1-bromopropane doubles the rate. Explain what would happen to the rate if the temperature is increased from $25\,^\circ\text{C}$ to $50\,^\circ\text{C}$Assuming the activation energy is $85\,\text{kJ mol}^{-1}$.
 
 (c) Explain why fluoroalkanes are much less reactive than iodoalkanes, despite the C--F bond being the most polar.
 
@@ -212,7 +212,7 @@ The reactivity of halogenoalkanes in nucleophilic substitution follows the order
 
 **Bond enthalpy:** C--I ($234\,\text{kJ mol}^{-1}$) $\lt$ C--Br ($285\,\text{kJ mol}^{-1}$) $\lt$ C--Cl ($339\,\text{kJ mol}^{-1}$) $\lt$ C--F ($485\,\text{kJ mol}^{-1}$). The weaker the bond, the easier it is to break in the rate-determining step. C--I bonds are weakest and break most readily.
 
-**Polarisability:** The iodide ion is large and has a diffuse electron cloud that is easily polarised. In the transition state, the C--I bond is stretched and the developing negative charge on iodine is better stabilised by its polarisability. Fluorine is small and has a concentrated charge that is not easily polarised.
+**Polarisability:** The iodide ion is large and has a diffuse electron cloud that is polarised. In the transition state, the C--I bond is stretched and the developing negative charge on iodine is better stabilised by its polarisability. Fluorine is small and has a concentrated charge that is not polarised.
 
 The combined effect of weaker bonds and greater polarisability makes iodoalkanes the most reactive.
 
@@ -340,6 +340,6 @@ Alternatively, the **Lucas test** (conc. $\mathrm{HCl}$ with $\mathrm{ZnCl}_2$) 
 
 Elimination requires $\mathrm{OH}^-$ to act as a **base** (abstracting a $\beta$-hydrogen) rather than as a nucleophile (attacking the carbon) (1 mark).
 
-A **concentrated** solution of $\mathrm{NaOH}$ provides a high concentration of $\mathrm{OH}^-$, increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
+A **concentrated** solution of $\mathrm{NaOH}$ provides a high concentration of $\mathrm{OH}^-$Increasing the rate of both substitution and elimination. However, the **ethanol solvent** is a polar protic solvent that stabilises the charged transition state of elimination and does not solvate the nucleophile as effectively as water would (1 mark).
 
 **High temperature** favours elimination because elimination has a higher activation energy than substitution (it involves breaking a C--H bond in addition to the C--Br bond). According to the Arrhenius equation, reactions with higher $E_a$ are more sensitive to temperature increases, so the rate of elimination increases more than the rate of substitution as temperature rises (1 mark).

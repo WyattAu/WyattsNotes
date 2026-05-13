@@ -16,21 +16,21 @@ slug: dse-biology-genetics
 ### Terminology
 
 Before proceeding, the following terms must be understood precisely. Ambiguity in terminology is the
-single most common source of lost marks in DSE genetics questions.
+Single most common source of lost marks in DSE genetics questions.
 
-| Term             | Definition                                                                                  |
+| Term | Definition |
 | ---------------- | ------------------------------------------------------------------------------------------- |
-| Gene             | A specific sequence of DNA that codes for a specific polypeptide or functional RNA          |
-| Allele           | One of two or more alternative forms of a gene at the same locus on homologous chromosomes  |
-| Locus            | The fixed position of a gene on a chromosome                                                |
-| Genotype         | The genetic constitution of an organism with respect to a particular trait (e.g., Bb)       |
-| Phenotype        | The observable physical or biochemical characteristics of an organism (e.g., brown eyes)    |
-| Homozygous       | Having two identical alleles at a locus (e.g., BB or bb)                                    |
-| Heterozygous     | Having two different alleles at a locus (e.g., Bb)                                          |
-| Dominant allele  | An allele that is expressed in the phenotype even in the presence of a different allele     |
-| Recessive allele | An allele that is only expressed in the phenotype when two copies are present (homozygous)  |
-| Carrier          | A heterozygous individual who carries a recessive allele but does not express the phenotype |
-| Test cross       | Crossing an individual of unknown genotype with a homozygous recessive individual           |
+| Gene | A specific sequence of DNA that codes for a specific polypeptide or functional RNA |
+| Allele | One of two or more alternative forms of a gene at the same locus on homologous chromosomes |
+| Locus | The fixed position of a gene on a chromosome |
+| Genotype | The genetic constitution of an organism with respect to a particular trait (e.g., Bb) |
+| Phenotype | The observable physical or biochemical characteristics of an organism (e.g., brown eyes) |
+| Homozygous | Having two identical alleles at a locus (e.g., BB or bb) |
+| Heterozygous | Having two different alleles at a locus (e.g., Bb) |
+| Dominant allele | An allele that is expressed in the phenotype even in the presence of a different allele |
+| Recessive allele | An allele that is only expressed in the phenotype when two copies are present (homozygous) |
+| Carrier | A heterozygous individual who carries a recessive allele but does not express the phenotype |
+| Test cross | Crossing an individual of unknown genotype with a homozygous recessive individual |
 
 ### Mendel's Laws
 
@@ -39,27 +39,27 @@ Mendel's work with pea plants (_Pisum sativum_) established three fundamental la
 **1. Law of Segregation (First Law):**
 
 Each individual possesses two alleles for any given trait. During gamete formation, the two alleles
-segregate so that each gamete carries only one allele. This is a direct consequence of the
-separation of homologous chromosomes during meiosis I (anaphase I).
+Segregate so that each gamete carries only one allele. This is a direct consequence of the
+Separation of homologous chromosomes during meiosis I (anaphase I).
 
 **2. Law of Independent Assortment (Second Law):**
 
 Alleles of different genes on different chromosomes assort independently of one another during
-gamete formation. This occurs because the orientation of one homologous pair on the metaphase plate
-during meiosis I is independent of the orientation of other pairs. This law only holds for genes on
-different chromosomes or genes that are far apart on the same chromosome (linked genes that undergo
-frequent crossing over approximate independent assortment).
+Gamete formation. This occurs because the orientation of one homologous pair on the metaphase plate
+During meiosis I is independent of the orientation of other pairs. This law only holds for genes on
+Different chromosomes or genes that are far apart on the same chromosome (linked genes that undergo
+Frequent crossing over approximate independent assortment).
 
 **3. Law of Dominance:**
 
 In a heterozygote, one allele may mask the expression of another. The allele that is expressed is
-dominant; the allele that is masked is recessive.
+Dominant; the allele that is masked is recessive.
 
 :::info
 Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
-complete dominance, (c) no gene interaction, and (d) no linkage. Real organisms frequently violate
-one or more of these assumptions. The DSE syllabus expects you to recognise when Mendelian ratios do
-not hold and to explain why.
+Complete dominance, (c) no gene interaction, and (d) no linkage. Real organisms frequently violate
+One or more of these assumptions. The DSE syllabus expects you to recognise when Mendelian ratios do
+Not hold and to explain why.
 :::
 
 ### Monohybrid Crosses
@@ -71,10 +71,10 @@ A monohybrid cross involves a single pair of contrasting traits.
 
 **Punnett square:**
 
-|       | **T** | **t** |
+| | **T** | **t** |
 | ----- | ----- | ----- |
-| **T** | TT    | Tt    |
-| **t** | Tt    | tt    |
+| **T** | TT | Tt |
+| **t** | Tt | tt |
 
 **Genotypic ratio:** 1 TT : 2 Tt : 1 tt
 
@@ -83,7 +83,7 @@ A monohybrid cross involves a single pair of contrasting traits.
 **Worked calculation:**
 
 If two carriers of cystic fibrosis (a recessive disorder, Cc) have a child, what is the probability
-that the child will have cystic fibrosis?
+That the child will have cystic fibrosis?
 
 The cross is Cc x Cc. The probability of cc = 1/4 = 25%.
 
@@ -92,19 +92,19 @@ The cross is Cc x Cc. The probability of cc = 1/4 = 25%.
 A dihybrid cross involves two pairs of contrasting traits simultaneously.
 
 **Example:** In pea plants, round seeds (R) are dominant over wrinkled (r), and yellow seeds (Y) are
-dominant over green (y). Cross two double heterozygotes (RrYy x RrYy).
+Dominant over green (y). Cross two double heterozygotes (RrYy x RrYy).
 
 The gametes from each parent are: RY, Ry, rY, ry (four types, produced in equal frequency assuming
-independent assortment).
+Independent assortment).
 
 **Punnett square (4 x 4):**
 
-|        | **RY** | **Ry** | **rY** | **ry** |
+| | **RY** | **Ry** | **rY** | **ry** |
 | ------ | ------ | ------ | ------ | ------ |
-| **RY** | RRYY   | RRYy   | RrYY   | RrYy   |
-| **Ry** | RRYy   | RRyy   | RrYy   | Rryy   |
-| **rY** | RrYY   | RrYy   | rrYY   | rrYy   |
-| **ry** | RrYy   | Rryy   | rrYy   | rryy   |
+| **RY** | RRYY | RRYy | RrYY | RrYy |
+| **Ry** | RRYy | RRyy | RrYy | Rryy |
+| **rY** | RrYY | RrYy | rrYY | rrYy |
+| **ry** | RrYy | Rryy | rrYy | rryy |
 
 **Genotypic ratio:** 1 RRYY : 2 RRYy : 1 RRyy : 2 RrYY : 4 RrYy : 2 Rryy : 1 rrYY : 2 rrYy : 1 rryy
 
@@ -132,7 +132,7 @@ This yields the familiar 9:3:3:1 ratio and is significantly faster on an exam.
 ### The Test Cross
 
 A test cross determines the genotype of an individual showing the dominant phenotype by crossing it
-with a homozygous recessive individual.
+With a homozygous recessive individual.
 
 **If the unknown genotype is homozygous dominant (BB x bb):**
 
@@ -143,8 +143,8 @@ All offspring will be Bb (100% dominant phenotype).
 Offspring will be 50% Bb (dominant phenotype) and 50% bb (recessive phenotype).
 
 The appearance of any recessive offspring proves that the parent was heterozygous. The absence of
-recessive offspring suggests (but does not prove with certainty, especially in small sample sizes)
-that the parent is homozygous.
+Recessive offspring suggests (but does not prove with certainty, especially in small sample sizes)
+That the parent is homozygous.
 
 ---
 
@@ -155,7 +155,7 @@ Mendel's laws assume complete dominance. In reality, dominance relationships are
 ### Incomplete Dominance
 
 In incomplete dominance, the heterozygote has an intermediate phenotype that is distinct from either
-homozygote. Neither allele is fully dominant.
+Homozygote. Neither allele is fully dominant.
 
 **Classic example:** Snapdragon flower colour.
 
@@ -166,7 +166,7 @@ homozygote. Neither allele is fully dominant.
 Cross: Rr x Rr yields 1 RR (red) : 2 Rr (pink) : 1 rr (white).
 
 The phenotypic ratio (1:2:1) matches the genotypic ratio directly. This is a hallmark of incomplete
-dominance.
+Dominance.
 
 ### Worked Example: Incomplete Dominance vs Codominance
 
@@ -192,63 +192,63 @@ A red-flowered snapdragon (RR) is crossed with a white-flowered snapdragon (rr).
 ### Codominance
 
 In codominance, both alleles are fully expressed simultaneously in the heterozygote. Neither allele
-masks the other.
+Masks the other.
 
 **Classic example:** Human ABO blood groups and coat colour in shorthorn cattle.
 
 - **AB blood group:** Both A and B antigens are present on the red blood cell surface. The genotype
-  is I^A I^B, and the phenotype is blood group AB. This is codominance.
+ is I^A I^B, and the phenotype is blood group AB. This is codominance.
 - **Shorthorn cattle:** Red (RR) x White (WW) = Roan (RW), where both red and white hairs are
-  present in the coat.
+ present in the coat.
 
 **Key distinction between incomplete dominance and codominance:**
 
-| Feature                | Incomplete Dominance                        | Codominance                                        |
+| Feature | Incomplete Dominance | Codominance |
 | ---------------------- | ------------------------------------------- | -------------------------------------------------- |
-| Heterozygote phenotype | Intermediate (blend) of the two homozygotes | Both phenotypes are expressed simultaneously       |
-| Molecular mechanism    | One functional allele produces less product | Both alleles produce functional, distinct products |
-| Example                | Pink snapdragons (Rr from red x white)      | AB blood group (I^A I^B), roan cattle (RW)         |
-| Biochemical basis      | Reduced gene product dosage                 | Two different gene products are both detectable    |
+| Heterozygote phenotype | Intermediate (blend) of the two homozygotes | Both phenotypes are expressed simultaneously |
+| Molecular mechanism | One functional allele produces less product | Both alleles produce functional, distinct products |
+| Example | Pink snapdragons (Rr from red x white) | AB blood group (I^A I^B), roan cattle (RW) |
+| Biochemical basis | Reduced gene product dosage | Two different gene products are both detectable |
 
 ### Multiple Alleles
 
 A gene may have more than two alleles in the population, although any individual can only carry two
-alleles (one on each homologous chromosome).
+Alleles (one on each homologous chromosome).
 
 **Human ABO blood groups:**
 
 Three alleles exist at the I locus:
 
-| Allele | Type          | Antigen on RBC | Antibody in Plasma |
+| Allele | Type | Antigen on RBC | Antibody in Plasma |
 | ------ | ------------- | -------------- | ------------------ |
-| I^A    | Dominant to i | A              | Anti-B             |
-| I^B    | Dominant to i | B              | Anti-A             |
-| i      | Recessive     | None           | Anti-A and Anti-B  |
+| I^A | Dominant to i | A | Anti-B |
+| I^B | Dominant to i | B | Anti-A |
+| i | Recessive | None | Anti-A and Anti-B |
 
 **Six possible genotypes and four phenotypes:**
 
-| Genotype | Phenotype | Antigens | Antibodies     |
+| Genotype | Phenotype | Antigens | Antibodies |
 | -------- | --------- | -------- | -------------- |
-| I^A I^A  | A         | A        | Anti-B         |
-| I^A i    | A         | A        | Anti-B         |
-| I^B I^B  | B         | B        | Anti-A         |
-| I^B i    | B         | B        | Anti-A         |
-| I^A I^B  | AB        | A and B  | None           |
-| ii       | O         | None     | Anti-A, Anti-B |
+| I^A I^A | A | A | Anti-B |
+| I^A i | A | A | Anti-B |
+| I^B I^B | B | B | Anti-A |
+| I^B i | B | B | Anti-A |
+| I^A I^B | AB | A and B | None |
+| ii | O | None | Anti-A, Anti-B |
 
 :::warning
 A common error is writing "three alleles" when the question asks about an individual's
-genotype. An individual always carries exactly two alleles. The phrase "multiple alleles" refers to
-the gene pool of the entire population, not to a single organism.
+Genotype. An individual always carries exactly two alleles. The phrase "multiple alleles" refers to
+The gene pool of the entire population, not to a single organism.
 :::
 
 **Worked calculation:**
 
 A woman with blood group A (whose father was blood group O) has a child with a man who is blood
-group B (whose mother was blood group O). What are the possible blood groups of their child?
+Group B (whose mother was blood group O). What are the possible blood groups of their child?
 
 The woman is I^A i (her father was ii, so she must carry i). The man is I^B i (his mother was ii, so
-he must carry i).
+He must carry i).
 
 Cross: I^A i x I^B i
 
@@ -256,10 +256,10 @@ Gametes from woman: I^A, i
 
 Gametes from man: I^B, i
 
-|         | **I^B** | **i** |
+| | **I^B** | **i** |
 | ------- | ------- | ----- |
 | **I^A** | I^A I^B | I^A i |
-| **i**   | I^B i   | ii    |
+| **i** | I^B i | ii |
 
 Possible genotypes: I^A I^B (AB), I^A i (A), I^B i (B), ii (O)
 
@@ -297,15 +297,15 @@ Humans have 23 pairs of chromosomes: 22 pairs of autosomes and 1 pair of sex chr
 - Males: XY (heterogametic)
 
 The sex of the offspring is determined by the sperm: if an X-bearing sperm fertilises the egg, the
-result is XX (female); if a Y-bearing sperm fertilises the egg, the result is XY (male).
+Result is XX (female); if a Y-bearing sperm fertilises the egg, the result is XY (male).
 
 $$P(\mathrm{female}) = \frac{1}{2}, \quad P(\mathrm{male}) = \frac{1}{2}$$
 
 ### X-Linked Inheritance
 
 Genes located on the X chromosome exhibit X-linked inheritance. Males have only one X chromosome, so
-a single recessive allele on the X chromosome will be expressed in the male phenotype (hemizygous
-condition). Females need two copies of the recessive allele to express the trait.
+A single recessive allele on the X chromosome will be expressed in the male phenotype (hemizygous
+Condition). Females need two copies of the recessive allele to express the trait.
 
 **Notation:** X-linked alleles are written with the chromosome letter as a superscript.
 
@@ -318,52 +318,52 @@ condition). Females need two copies of the recessive allele to express the trait
 
 Haemophilia is an X-linked recessive bleeding disorder caused by a deficiency in clotting factor
 VIII (haemophilia A) or factor IX (haemophilia B). Affected individuals have prolonged bleeding
-after injury because their blood cannot clot properly.
+After injury because their blood cannot clot properly.
 
 **Cross:** Carrier female (X^H X^h) x Normal male (X^H Y)
 
-|         | **X^H** | **Y** |
+| | **X^H** | **Y** |
 | ------- | ------- | ----- |
 | **X^H** | X^H X^H | X^H Y |
 | **X^h** | X^H X^h | X^h Y |
 
 **Offspring:** 1 normal female (X^H X^H) : 1 carrier female (X^H X^h) : 1 normal male (X^H Y) : 1
-affected male (X^h Y)
+Affected male (X^h Y)
 
 Key observations:
 
 - Affected males inherit the allele from their carrier mother (never from their father, since
-  fathers pass Y to sons)
+ fathers pass Y to sons)
 - Affected males pass the allele to ALL their daughters (who become carriers) but to NONE of their
-  sons
+ sons
 - Females are rarely affected (would require an affected father and a carrier mother)
 
 ### Red-Green Colour Blindness
 
 Red-green colour blindness is another X-linked recessive condition. Affected individuals cannot
-distinguish between red and green wavelengths of light. The gene codes for opsins (photopigments) in
-the cone cells of the retina.
+Distinguish between red and green wavelengths of light. The gene codes for opsins (photopigments) in
+The cone cells of the retina.
 
 The inheritance pattern is identical to haemophilia. The cross diagrams use X^N (normal) and X^n
 (colour blind).
 
 ### Why X-Linked Recessive Disorders Are More Common in Males
 
-| Factor                                       | Explanation                                                                                           |
+| Factor | Explanation |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Hemizygosity                                 | Males have only one X chromosome; a single recessive allele is sufficient to produce the phenotype    |
+| Hemizygosity | Males have only one X chromosome; a single recessive allele is sufficient to produce the phenotype |
 | Females are protected by the second X allele | A female with one recessive allele is a carrier but is phenotypically normal (heterozygous advantage) |
-| Fathers do not pass X-linked alleles to sons | X-linked alleles cannot pass directly from father to son (father gives Y to sons)                     |
+| Fathers do not pass X-linked alleles to sons | X-linked alleles cannot pass directly from father to son (father gives Y to sons) |
 
 **Probability calculations for X-linked traits:**
 
 A carrier woman (X^N X^n) marries a normal man (X^N Y).
 
 Probability that their son is colour blind: 1/2 (the son receives X^n from the mother with
-probability 1/2).
+Probability 1/2).
 
 Probability that their daughter is colour blind: 0 (the daughter would need to receive X^n from both
-parents, but the father only has X^N).
+Parents, but the father only has X^N).
 
 Probability that their daughter is a carrier: 1/2.
 
@@ -386,7 +386,7 @@ When constructing genetic diagrams for DSE examinations, follow these convention
 
 1. Identify whether one or two traits are involved (monohybrid or dihybrid)
 2. Assign symbols to alleles (use the first letter of the dominant phenotype, capital for dominant,
-   lowercase for recessive)
+ lowercase for recessive)
 3. Determine the genotypes of the parents from the information given
 4. Work out the gametes each parent can produce
 5. Construct a Punnett square or use the forked-line method
@@ -394,10 +394,10 @@ When constructing genetic diagrams for DSE examinations, follow these convention
 7. Answer the question using the ratios
 
 :::info
-info
-standard Mendelian ratios. Use a Punnett square when the genes are linked or when you need to show
-all individual genotypes. For X-linked crosses, always use a Punnett square since the gamete
-combinations differ between males and females.
+Info
+Standard Mendelian ratios. Use a Punnett square when the genes are linked or when you need to show
+All individual genotypes. For X-linked crosses, always use a Punnett square since the gamete
+Combinations differ between males and females.
 :::
 
 ---
@@ -407,7 +407,7 @@ combinations differ between males and females.
 ### Definition
 
 Epistasis occurs when the expression of one gene is modified or masked by the expression of one or
-more other genes. The gene that masks is the **epistatic gene**; the gene that is masked is the
+More other genes. The gene that masks is the **epistatic gene**; the gene that is masked is the
 **hypostatic gene**.
 
 Epistasis differs from dominance. Dominance is an interaction between alleles at the **same** locus.
@@ -418,23 +418,23 @@ Epistasis is an interaction between alleles at **different** loci.
 **1. Recessive epistasis (9:3:4 ratio):**
 
 The recessive allele of the epistatic gene (when homozygous) masks the expression of the hypostatic
-gene.
+Gene.
 
 **Example:** Coat colour in Labrador retrievers.
 
 - Gene B: B (black) is dominant over b (brown)
 - Gene E: E allows pigment deposition; ee prevents any pigment deposition (epistatic)
 
-| Genotype | Phenotype          |
+| Genotype | Phenotype |
 | -------- | ------------------ |
-| B*E*     | Black              |
-| bbE\_    | Brown              |
+| B*E* | Black |
+| bbE\_ | Brown |
 | \_ \_ ee | Yellow (epistatic) |
 
 Cross: BbEe x BbEe yields a 9:3:4 phenotypic ratio (9 black : 3 brown : 4 yellow).
 
 The 4 includes 1 BBee, 2 Bbee, 1 bbee (all are yellow because ee is epistatic and masks the B/b
-locus).
+Locus).
 
 **2. Dominant epistasis (12:3:1 ratio):**
 
@@ -445,18 +445,18 @@ A dominant allele of the epistatic gene masks the hypostatic gene.
 - Gene W: W (white) is epistatic; when present, fruit is white regardless of Y/y
 - Gene Y: Y (yellow) is dominant over y (green) -- only expressed when ww
 
-| Genotype  | Phenotype |
+| Genotype | Phenotype |
 | --------- | --------- |
-| W\_ \_ \_ | White     |
-| wwY\_     | Yellow    |
-| wwyy      | Green     |
+| W\_ \_ \_ | White |
+| wwY\_ | Yellow |
+| wwyy | Green |
 
 Cross: WwYy x WwYy yields a 12:3:1 ratio (12 white : 3 yellow : 1 green).
 
 **3. Complementary gene action (9:7 ratio):**
 
 Two genes work together to produce a trait. A dominant allele of each gene is required. If either
-gene is homozygous recessive, the trait is not expressed.
+Gene is homozygous recessive, the trait is not expressed.
 
 **Example:** Flower colour in sweet peas.
 
@@ -468,7 +468,7 @@ Cross: CcPp x CcPp yields 9 purple (C*P*) : 7 white (3 C*pp + 3 ccP* + 1 ccpp).
 **4. Duplicate gene action (15:1 ratio):**
 
 Two dominant alleles at either gene produce the same phenotype. Only the double recessive shows the
-alternate phenotype.
+Alternate phenotype.
 
 **Example:** Seed shape in shepherd's purse.
 
@@ -478,20 +478,20 @@ Cross: AaBb x AaBb yields 15 triangular : 1 oval.
 
 ### Summary of Epistatic Ratios
 
-| Type                | Ratio   | Description                                                           |
+| Type | Ratio | Description |
 | ------------------- | ------- | --------------------------------------------------------------------- |
-| Standard dihybrid   | 9:3:3:1 | No epistasis; independent assortment                                  |
-| Recessive epistasis | 9:3:4   | Homozygous recessive at one locus masks the other                     |
-| Dominant epistasis  | 12:3:1  | Dominant allele at one locus masks the other                          |
-| Complementary       | 9:7     | Both dominant alleles required for phenotype expression               |
-| Duplicate           | 15:1    | Either dominant allele sufficient; only double recessive is different |
+| Standard dihybrid | 9:3:3:1 | No epistasis; independent assortment |
+| Recessive epistasis | 9:3:4 | Homozygous recessive at one locus masks the other |
+| Dominant epistasis | 12:3:1 | Dominant allele at one locus masks the other |
+| Complementary | 9:7 | Both dominant alleles required for phenotype expression |
+| Duplicate | 15:1 | Either dominant allele sufficient; only double recessive is different |
 
 ---
 
 ## Chromosome Mutations
 
 Chromosome mutations involve changes to the structure or number of whole chromosomes. These are
-distinct from gene mutations, which affect individual genes.
+Distinct from gene mutations, which affect individual genes.
 
 ### Structural Changes
 
@@ -500,13 +500,13 @@ distinct from gene mutations, which affect individual genes.
 Loss of a segment of a chromosome. The deleted segment may contain one or more genes.
 
 - Consequences: loss of genetic material; often lethal if the deletion is large; heterozygous
-  deletions can cause disorders (e.g., Cri du chat syndrome -- deletion on chromosome 5)
+ deletions can cause disorders (e.g., Cri du chat syndrome -- deletion on chromosome 5)
 - Mechanism: breakage of a chromosome during meiosis; the fragment without a centromere is lost
 
 **2. Duplication:**
 
 A segment of a chromosome is repeated. The extra copy may be adjacent (tandem duplication) or
-elsewhere.
+Elsewhere.
 
 - Consequences: gene dosage effects; can alter phenotype if the duplicated gene is dosage-sensitive
 - Mechanism: unequal crossing over between misaligned homologous chromosomes during meiosis
@@ -518,7 +518,7 @@ A segment of a chromosome is reversed end-to-end. The genes are present but in t
 - **Paracentric inversion:** The inversion does not include the centromere.
 - **Pericentric inversion:** The inversion includes the centromere.
 - Consequences: may cause problems during meiosis if crossing over occurs within the inverted region
-  (produces abnormal gametes)
+ (produces abnormal gametes)
 - The inversion carrier is phenotypically normal (no genetic material is lost)
 
 **4. Translocation:**
@@ -526,27 +526,27 @@ A segment of a chromosome is reversed end-to-end. The genes are present but in t
 A segment of one chromosome breaks off and attaches to a non-homologous chromosome.
 
 - **Reciprocal translocation:** Two non-homologous chromosomes exchange segments. No genetic
-  material is lost overall, but the arrangement is altered.
+ material is lost overall, but the arrangement is altered.
 - **Robertsonian translocation:** The long arms of two acrocentric chromosomes fuse at the
-  centromere. The short arms are lost. This is the most common form of chromosomal rearrangement in
-  humans and is involved in some cases of Down syndrome (translocation trisomy 21).
+ centromere. The short arms are lost. This is the most common form of chromosomal rearrangement in
+ humans and is involved of Down syndrome (translocation trisomy 21).
 - Consequences: carriers are phenotypically normal but may produce unbalanced gametes, leading to
-  recurrent miscarriages or offspring with chromosomal disorders
+ recurrent miscarriages or offspring with chromosomal disorders
 
 ### Numerical Changes
 
 **Aneuploidy:** Gain or loss of individual chromosomes (e.g., trisomy 21 -- Down syndrome, having
-three copies of chromosome 21).
+Three copies of chromosome 21).
 
 **Polyploidy:** Having extra complete sets of chromosomes (e.g., 3n, 4n). Common in plants, rare and
-usually lethal in humans.
+ lethal in humans.
 
-| Disorder             | Type       | Chromosomal Change                    | Key Features                                                 |
+| Disorder | Type | Chromosomal Change | Key Features |
 | -------------------- | ---------- | ------------------------------------- | ------------------------------------------------------------ |
-| Down syndrome        | Trisomy 21 | Extra copy of chromosome 21           | Intellectual disability, flat facial profile, heart defects  |
-| Turner syndrome      | Monosomy X | XO (only one X chromosome)            | Female, short stature, sterile, no puberty without treatment |
-| Klinefelter syndrome | XXY        | Extra X chromosome in male            | Male, tall, sterile, reduced testosterone, gynaecomastia     |
-| Cri du chat syndrome | Deletion   | Deletion on short arm of chromosome 5 | High-pitched cry, intellectual disability, microcephaly      |
+| Down syndrome | Trisomy 21 | Extra copy of chromosome 21 | Intellectual disability, flat facial profile, heart defects |
+| Turner syndrome | Monosomy X | XO (only one X chromosome) | Female, short stature, sterile, no puberty without treatment |
+| Klinefelter syndrome | XXY | Extra X chromosome in male | Male, tall, sterile, reduced testosterone, gynaecomastia |
+| Cri du chat syndrome | Deletion | Deletion on short arm of chromosome 5 | High-pitched cry, intellectual disability, microcephaly |
 
 ---
 
@@ -559,17 +559,17 @@ usually lethal in humans.
 A single nucleotide base is replaced by another.
 
 - **Silent mutation:** The new codon codes for the same amino acid (due to the degeneracy of the
-  genetic code). No change to the protein.
+ genetic code). No change to the protein.
 - **Missense mutation:** The new codon codes for a different amino acid. The effect depends on the
-  chemical properties of the new amino acid (conservative vs non-conservative substitution).
+ chemical properties of the new amino acid (conservative vs non-conservative substitution).
 - **Nonsense mutation:** The new codon is a stop codon (UAA, UAG, UGA). Translation terminates
-  prematurely, producing a truncated (and usually non-functional) protein.
+ prematurely, producing a truncated (and non-functional) protein.
 
 **2. Frameshift mutations:**
 
 Insertion or deletion of one or more nucleotides that is NOT a multiple of three. This shifts the
-reading frame of all codons downstream of the mutation, typically producing a completely
-non-functional protein.
+Reading frame of all codons downstream of the mutation, producing a completely
+Non-functional protein.
 
 - **Insertion:** One or more nucleotides are added.
 - **Deletion:** One or more nucleotides are removed.
@@ -581,21 +581,21 @@ non-functional protein.
 
 ### Effects of Mutations
 
-| Effect                | Description                                                                                             |
+| Effect | Description |
 | --------------------- | ------------------------------------------------------------------------------------------------------- |
-| Neutral               | No effect on the organism's fitness (silent mutations, mutations in non-coding regions)                 |
-| Harmful (deleterious) | Reduce the organism's fitness (most mutations fall into this category)                                  |
-| Beneficial            | Increase the organism's fitness and may be selected for (rare, but provides raw material for evolution) |
+| Neutral | No effect on the organism's fitness (silent mutations, mutations in non-coding regions) |
+| Harmful (deleterious) | Reduce the organism's fitness (most mutations fall into this category) |
+| Beneficial | Increase the organism's fitness and may be selected for (rare, but provides raw material for evolution) |
 
 ### Mutation Rate
 
 Spontaneous mutation rates in humans are approximately $1 \times 10^{-8}$ to $1 \times 10^{-6}$ per
-gene per generation. Mutations can be caused by:
+Gene per generation. Mutations can be caused by:
 
 - **Spontaneous:** Errors during DNA replication; spontaneous base changes (e.g., deamination of
-  cytosine to uracil)
+ cytosine to uracil)
 - **Induced:** Exposure to mutagens -- UV radiation, ionising radiation (X-rays, gamma rays),
-  chemical mutagens (e.g., mustard gas, nitrous acid, benzopyrene in tobacco smoke)
+ chemical mutagens (e.g., mustard gas, nitrous acid, benzopyrene in tobacco smoke)
 
 ---
 
@@ -604,34 +604,34 @@ gene per generation. Mutations can be caused by:
 ### Overview
 
 The Human Genome Project (HGP) was an international scientific research project (1990-2003) that
-mapped and sequenced the entire human genome. The project determined the sequence of approximately 3
-billion base pairs of DNA and identified approximately 20,000-25,000 protein-coding genes.
+Mapped and sequenced the entire human genome. The project determined the sequence of approximately 3
+Billion base pairs of DNA and identified approximately 20,000-25,000 protein-coding genes.
 
 ### Key Findings
 
 - The human genome contains approximately 3.2 billion base pairs
 - Only approximately 1.5% of the genome codes for proteins
 - Approximately 50% of the genome consists of repetitive sequences (transposable elements, satellite
-  DNA)
+ DNA)
 - Humans share approximately 99.9% of their DNA sequence with each other
 - The genetic variation between any two humans is approximately 0.1% (about 3 million base pairs)
 
 ### Applications
 
-| Application          | Description                                                                                  |
+| Application | Description |
 | -------------------- | -------------------------------------------------------------------------------------------- |
-| Medicine             | Identification of disease-causing genes; development of targeted therapies; pharmacogenomics |
-| Forensic science     | DNA fingerprinting; identification of victims and suspects                                   |
-| Genetic screening    | Prenatal diagnosis; carrier testing; pre-symptomatic testing for inherited disorders         |
-| Gene therapy         | Correcting defective genes to treat genetic diseases                                         |
-| Evolutionary biology | Comparing human genome with other species to understand evolutionary relationships           |
-| Agriculture          | Genomic selection in crop and livestock breeding                                             |
+| Medicine | Identification of disease-causing genes; development of targeted therapies; pharmacogenomics |
+| Forensic science | DNA fingerprinting; identification of victims and suspects |
+| Genetic screening | Prenatal diagnosis; carrier testing; pre-symptomatic testing for inherited disorders |
+| Gene therapy | Correcting defective genes to treat genetic diseases |
+| Evolutionary biology | Comparing human genome with other species to understand evolutionary relationships |
+| Agriculture | Genomic selection in crop and livestock breeding |
 
 ### Pharmacogenomics
 
 The study of how an individual's genetic makeup affects their response to drugs. This allows for
-personalised medicine -- tailoring drug choice and dosage to an individual's genotype to maximise
-efficacy and minimise adverse effects.
+Personalised medicine -- tailoring drug choice and dosage to an individual's genotype to maximise
+Efficacy and minimise adverse effects.
 
 ---
 
@@ -640,18 +640,18 @@ efficacy and minimise adverse effects.
 ### Recombinant DNA Technology
 
 Recombinant DNA is DNA formed by combining DNA sequences from two different organisms. The basic
-process:
+Process:
 
 **1. Isolation of the gene of interest:**
 
 The target gene is identified and extracted from the donor organism's DNA. For eukaryotic genes,
-mRNA is often used as the template, and reverse transcriptase produces complementary DNA (cDNA).
+MRNA is often used as the template, and reverse transcriptase produces complementary DNA (cDNA).
 This avoids the intron problem (bacteria cannot splice out introns).
 
 **2. Cutting with restriction enzymes:**
 
 Restriction endonucleases (restriction enzymes) are enzymes that cut DNA at specific recognition
-sequences (palindromic sequences, typically 4-8 base pairs long).
+Sequences (palindromic sequences, 4-8 base pairs long).
 
 - **EcoRI** recognises GAATTC and cuts between G and A
 - **BamHI** recognises GGATCC and cuts between G and G
@@ -660,12 +660,12 @@ sequences (palindromic sequences, typically 4-8 base pairs long).
 **3. Ligation with DNA ligase:**
 
 DNA ligase catalyses the formation of phosphodiester bonds, sealing the gene into the vector
-(carrier) DNA. The vector is typically a plasmid that has been cut with the same restriction enzyme,
-producing complementary sticky ends.
+(carrier) DNA. The vector is a plasmid that has been cut with the same restriction enzyme,
+Producing complementary sticky ends.
 
 **4. Transformation:**
 
-The recombinant DNA is introduced into host cells (typically _E. coli_ bacteria). Methods include:
+The recombinant DNA is introduced into host cells ( _E. Coli_ bacteria). Methods include:
 
 - Heat shock (calcium chloride treatment)
 - Electroporation (electric pulse)
@@ -674,7 +674,7 @@ The recombinant DNA is introduced into host cells (typically _E. coli_ bacteria)
 **5. Selection and expression:**
 
 Transformed cells are selected using marker genes (e.g., antibiotic resistance). Successfully
-transformed cells are cultured and the desired protein product is harvested.
+Transformed cells are cultured and the desired protein product is harvested.
 
 ### Polymerase Chain Reaction (PCR)
 
@@ -682,22 +682,22 @@ PCR amplifies a specific segment of DNA exponentially.
 
 **Components:**
 
-| Component        | Function                                                                         |
+| Component | Function |
 | ---------------- | -------------------------------------------------------------------------------- |
-| DNA template     | The DNA to be copied                                                             |
-| Taq polymerase   | Heat-stable DNA polymerase from _Thermus aquaticus_; synthesises new DNA strands |
-| Primers          | Short single-stranded DNA sequences complementary to regions flanking the target |
-| Free nucleotides | dATP, dTTP, dCTP, dGTP -- building blocks                                        |
-| Thermal cycler   | Machine that cycles through the required temperatures                            |
+| DNA template | The DNA to be copied |
+| Taq polymerase | Heat-stable DNA polymerase from _Thermus aquaticus_; synthesises new DNA strands |
+| Primers | Short single-stranded DNA sequences complementary to regions flanking the target |
+| Free nucleotides | dATP, dTTP, dCTP, dGTP -- building blocks |
+| Thermal cycler | Machine that cycles through the required temperatures |
 
 **PCR cycle (repeated 25-35 times):**
 
 1. **Denaturation (94-96 degrees C):** Hydrogen bonds break; double-stranded DNA separates into two
-   single strands.
+ single strands.
 2. **Annealing (50-65 degrees C):** Primers bind to complementary sequences on the single-stranded
-   DNA.
+ DNA.
 3. **Extension (72 degrees C):** Taq polymerase adds nucleotides to the 3-prime end of each primer,
-   synthesising new DNA strands.
+ synthesising new DNA strands.
 
 $$\mathrm{After } n \mathrm{ cycles: } N = N_0 \times 2^n$$
 
@@ -712,10 +712,10 @@ Gel electrophoresis separates DNA fragments by size.
 3. DNA fragments are negatively charged (phosphate backbone) and move towards the positive electrode
 4. Smaller fragments move faster and travel further; larger fragments move more slowly
 5. The DNA is visualised using a fluorescent dye (e.g., ethidium bromide) that binds to DNA and
-   fluoresces under UV light
+ fluoresces under UV light
 
 **Applications:** DNA profiling, analysis of PCR products, checking the results of restriction
-digests.
+Digests.
 
 ### DNA Fingerprinting (DNA Profiling)
 
@@ -723,7 +723,7 @@ DNA fingerprinting identifies individuals based on their unique DNA pattern.
 
 **Principle:** Non-coding regions of DNA contain **Short Tandem Repeats (STRs)** -- short sequences
 (2-6 base pairs) repeated a variable number of times. The number of repeats at each locus varies
-between individuals.
+Between individuals.
 
 **Process:**
 
@@ -741,8 +741,8 @@ between individuals.
 - Establishing evolutionary relationships between species
 
 **Reliability:** The probability of two unrelated individuals having the same DNA profile at 13 or
-more STR loci is less than 1 in a billion. This makes DNA fingerprinting extremely reliable for
-identification.
+More STR loci is less than 1 in a billion. This makes DNA fingerprinting extremely reliable for
+Identification.
 
 ---
 
@@ -751,44 +751,44 @@ identification.
 ### Definition
 
 A genetically modified organism (GMO) is an organism whose genome has been altered using genetic
-engineering techniques. This differs from conventional selective breeding because specific genes can
-be inserted, deleted, or modified precisely.
+Engineering techniques. This differs from conventional selective breeding because specific genes can
+Be inserted, deleted, or modified precisely.
 
 ### Examples of GMOs
 
-| GMO                          | Modification                                     | Purpose                                                    |
+| GMO | Modification | Purpose |
 | ---------------------------- | ------------------------------------------------ | ---------------------------------------------------------- |
-| Bt cotton                    | Contains _Bacillus thuringiensis_ toxin gene     | Produces insecticidal protein; reduces pesticide use       |
-| Golden rice                  | Contains beta-carotene synthesis genes           | Produces vitamin A precursor; combats vitamin A deficiency |
-| Herbicide-resistant soybeans | Resistant to glyphosate herbicide                | Farmers can spray herbicide without harming the crop       |
-| GM salmon (AquAdvantage)     | Contains growth hormone gene from Chinook salmon | Grows faster than conventional salmon                      |
-| Insulin-producing bacteria   | Contains human insulin gene                      | Produces human insulin for medical use                     |
+| Bt cotton | Contains _Bacillus thuringiensis_ toxin gene | Produces insecticidal protein; reduces pesticide use |
+| Golden rice | Contains beta-carotene synthesis genes | Produces vitamin A precursor; combats vitamin A deficiency |
+| Herbicide-resistant soybeans | Resistant to glyphosate herbicide | Farmers can spray herbicide without harming the crop |
+| GM salmon (AquAdvantage) | Contains growth hormone gene from Chinook salmon | Grows faster than conventional salmon |
+| Insulin-producing bacteria | Contains human insulin gene | Produces human insulin for medical use |
 
 ### Benefits of GMOs
 
 1. **Increased crop yield:** Pest-resistant and disease-resistant varieties reduce losses
 2. **Reduced pesticide use:** Bt crops produce their own insecticide
 3. **Enhanced nutritional content:** Golden rice addresses vitamin A deficiency in developing
-   countries
+ countries
 4. **Tolerance to abiotic stress:** Drought-resistant, salt-tolerant varieties
 5. **Pharmaceutical production:** Bacteria and plants engineered to produce vaccines, antibodies,
-   and other drugs
+ and other drugs
 6. **Environmental benefits:** Reduced fuel use from fewer pesticide applications; conservation
-   tillage with herbicide-resistant crops reduces soil erosion
+ tillage with herbicide-resistant crops reduces soil erosion
 
 ### Risks and Concerns
 
 1. **Gene flow:** Transferred genes may escape to wild relatives through cross-pollination,
-   potentially creating "superweeds" (herbicide-resistant weeds)
+ potentially creating "superweeds" (herbicide-resistant weeds)
 2. **Impact on non-target organisms:** Bt toxin may affect beneficial insects (though evidence
-   suggests it is specific to certain pest groups)
+ suggests it is specific to certain pest groups)
 3. **Development of resistance:** Pests may evolve resistance to Bt toxin, similar to antibiotic
-   resistance
+ resistance
 4. **Biodiversity reduction:** Large-scale monocultures of GM varieties reduce genetic diversity
 5. **Human health concerns:** Potential allergenicity of novel proteins; long-term effects not fully
-   known (though extensive testing is required before approval)
+ known (though extensive testing is required before approval)
 6. **Corporate control:** Patents on GM seeds create dependency on biotechnology companies; farmers
-   cannot legally save seeds
+ cannot legally save seeds
 7. **Ethical concerns:** Some consider genetic modification of organisms to be "unnatural"
 
 ### Regulation
@@ -797,9 +797,9 @@ Different countries have different approaches to GMO regulation:
 
 - **European Union:** Highly restrictive; mandatory labelling; precautionary principle
 - **United States:** Generally permissive; voluntary labelling (changing); substantial equivalence
-  standard
+ standard
 - **Hong Kong:** No specific GMO labelling requirements (but pre-packaged food must be accurately
-  described)
+ described)
 
 ---
 
@@ -808,7 +808,7 @@ Different countries have different approaches to GMO regulation:
 ### Definition
 
 Gene therapy is the treatment of genetic disorders by introducing, removing, or altering genetic
-material within a patient's cells.
+Material within a patient's cells.
 
 ### Types of Gene Therapy
 
@@ -819,7 +819,7 @@ material within a patient's cells.
 - The treated individual benefits, but the genetic change is not inherited
 - Currently the main approach in clinical trials
 - Example: Treating severe combined immunodeficiency (SCID) by introducing a functional copy of the
-  defective gene into bone marrow cells
+ defective gene into bone marrow cells
 
 **2. Germline gene therapy:**
 
@@ -827,79 +827,79 @@ material within a patient's cells.
 - Changes ARE passed to all future generations
 - Currently not permitted in most countries due to ethical concerns
 - Raises issues of consent (future generations cannot consent), equity, and the possibility of
-  "designer babies"
+ "designer babies"
 
 ### Methods of Delivery
 
-| Method              | Description                                                                                |
+| Method | Description |
 | ------------------- | ------------------------------------------------------------------------------------------ |
-| Viral vectors       | Modified viruses (retroviruses, adenoviruses) carry the therapeutic gene into target cells |
-| Liposomes           | Fatty spheres that fuse with the cell membrane, delivering DNA into the cell               |
-| Naked DNA injection | Direct injection of plasmid DNA into the target tissue                                     |
-| Electroporation     | Electric pulse creates temporary pores in the cell membrane for DNA entry                  |
+| Viral vectors | Modified viruses (retroviruses, adenoviruses) carry the therapeutic gene into target cells |
+| Liposomes | Fatty spheres that fuse with the cell membrane, delivering DNA into the cell |
+| Naked DNA injection | Direct injection of plasmid DNA into the target tissue |
+| Electroporation | Electric pulse creates temporary pores in the cell membrane for DNA entry |
 
 ### Challenges and Limitations
 
 1. **Delivery:** Getting the therapeutic gene to the correct cells in sufficient quantity
 2. **Immune response:** The body may attack the viral vector or the newly expressed protein
 3. **Duration:** The therapeutic effect may be temporary if the modified cells do not persist or
-   divide
+ divide
 4. **Off-target effects:** The gene may insert into an unintended location, disrupting normal gene
-   function (insertional mutagenesis)
+ function (insertional mutagenesis)
 5. **Cost:** Gene therapy treatments are extremely expensive (e.g., Zolgensma for spinal muscular
-   atrophy costs approximately USD 2.1 million per treatment)
+ atrophy costs approximately USD 2.1 million per treatment)
 6. **Ethical concerns:** Germline editing, enhancement vs treatment, access and equity
 
 ### Successful Examples
 
 - **Luxturna (2017):** Gene therapy for a form of inherited retinal dystrophy that causes blindness.
-  A working copy of the RPE65 gene is delivered to retinal cells using an adeno-associated virus
-  vector.
+ A working copy of the RPE65 gene is delivered to retinal cells using an adeno-associated virus
+ vector.
 - **Zolgensma (2019):** Gene therapy for spinal muscular atrophy (SMA). A functional copy of the
-  SMN1 gene is delivered via an adeno-associated virus.
+ SMN1 gene is delivered via an adeno-associated virus.
 
 ---
 
 ## Common Pitfalls
 
 1. **Confusing incomplete dominance with codominance:** Incomplete dominance produces an
-   intermediate phenotype (pink from red and white). Codominance produces a phenotype showing both
-   parental traits simultaneously (AB blood group, roan coat). These are fundamentally different
-   mechanisms.
+ intermediate phenotype (pink from red and white). Codominance produces a phenotype showing both
+ parental traits simultaneously (AB blood group, roan coat). These are fundamentally different
+ mechanisms.
 
 2. **Forgetting that males are hemizygous for X-linked genes:** A male has only one X chromosome, so
-   he cannot be "heterozygous" or "homozygous" for an X-linked gene. He is either affected or
-   normal. This is why X-linked recessive disorders are far more common in males.
+ he cannot be "heterozygous" or "homozygous" for an X-linked gene. He is either affected or
+ normal. This is why X-linked recessive disorders are far more common in males.
 
 3. **Writing that a father passes an X-linked allele to his son:** Fathers pass their X chromosome
-   to daughters and their Y chromosome to sons. An X-linked allele cannot pass directly from father
-   to son.
+ to daughters and their Y chromosome to sons. An X-linked allele cannot pass directly from father
+ to son.
 
 4. **Confusing epistatic ratios with Mendelian ratios:** If a dihybrid cross does not produce a
-   9:3:3:1 ratio, consider epistasis. The modified ratios (9:3:4, 12:3:1, 9:7, 15:1) each have a
-   specific biological explanation. Learn them.
+ 9:3:3:1 ratio, consider epistasis. The modified ratios (9:3:4, 12:3:1, 9:7, 15:1) each have a
+ specific biological explanation. Learn them.
 
 5. **Stating that gene mutations are always harmful:** Most are neutral or harmful, but a small
-   fraction are beneficial and provide the raw material for natural selection. "Mutation is always
-   bad" is a false statement.
+ fraction are beneficial and provide the raw material for natural selection. "Mutation is always
+ bad" is a false statement.
 
 6. **Confusing chromosome mutations with gene mutations:** Chromosome mutations affect whole
-   chromosomes or large segments (deletion, duplication, inversion, translocation). Gene mutations
-   affect individual nucleotides or small regions (point mutations, frameshifts).
+ chromosomes or large segments (deletion, duplication, inversion, translocation). Gene mutations
+ affect individual nucleotides or small regions (point mutations, frameshifts).
 
 7. **Writing that DNA ligase cuts DNA:** DNA ligase JOINS DNA fragments (seals the sugar-phosphate
-   backbone). Restriction enzymes CUT DNA. Students frequently confuse these two enzymes.
+ backbone). Restriction enzymes CUT DNA. Students frequently confuse these two enzymes.
 
 8. **Stating that PCR amplifies the entire genome:** PCR amplifies a specific segment of DNA defined
-   by the primers. It does not copy the entire genome.
+ by the primers. It does not copy the entire genome.
 
 9. **Confusing DNA fingerprinting with whole-genome sequencing:** DNA fingerprinting analyses
-   specific STR loci in non-coding regions. It does not sequence the entire genome.
+ specific STR loci in non-coding regions. It does not sequence the entire genome.
 
 10. **Forgetting that genetic engineering uses cDNA from eukaryotes:** Bacterial cells cannot splice
-    out introns from eukaryotic genes. Therefore, the mRNA is extracted and reverse transcriptase
-    produces cDNA (which has no introns). Direct insertion of genomic DNA containing introns would
-    not produce a functional protein in bacteria.
+ out introns from eukaryotic genes. Therefore, the mRNA is extracted and reverse transcriptase
+ produces cDNA (which has no introns). Direct insertion of genomic DNA containing introns would
+ not produce a functional protein in bacteria.
 
 ---
 
@@ -990,15 +990,15 @@ If you get this wrong, revise: Genetic Engineering Techniques -- Recombinant DNA
 <details>
 <summary>Solution</summary>
 
-1. mRNA for HGH is extracted from human pituitary gland cells.
+1. MRNA for HGH is extracted from human pituitary gland cells.
 2. Reverse transcriptase produces cDNA from the mRNA (removes introns).
 3. The cDNA and a plasmid are both cut with the same restriction enzyme, producing complementary sticky ends.
 4. DNA ligase seals the cDNA into the plasmid, creating a recombinant plasmid.
-5. The recombinant plasmid is introduced into _E. coli_ by transformation.
+5. The recombinant plasmid is introduced into _E. Coli_ by transformation.
 6. Transformed bacteria are selected using a marker gene (antibiotic resistance).
 7. Bacteria are cultured; they transcribe and translate the HGH gene.
 
-cDNA is used because genomic DNA contains introns. Bacteria lack spliceosomes and cannot remove introns from pre-mRNA. If genomic DNA were inserted, the ribosome would translate intron sequences, producing a non-functional protein.
+CDNA is used because genomic DNA contains introns. Bacteria lack spliceosomes and cannot remove introns from pre-mRNA. If genomic DNA were inserted, the ribosome would translate intron sequences, producing a non-functional protein.
 
 </details>
 
@@ -1039,11 +1039,11 @@ The man is I$^A$I$^B$ (genotype AB). The woman is ii (genotype O).
 
 Gametes from man: I$^A$ or I$^B$. Gametes from woman: i only.
 
-|         | **I$^A$** | **I$^B$** |
+| | **I$^A$** | **I$^B$** |
 | ------- | --------- | --------- |
-| **i**   | I$^A$i    | I$^B$i    |
+| **i** | I$^A$I | I$^B$I |
 
-Possible genotypes: I$^A$i (blood group A) or I$^B$i (blood group B).
+Possible genotypes: I$^A$I (blood group A) or I$^B$I (blood group B).
 
 Possible blood groups of the child: A or B. Each has a 50% probability. Blood group AB and O are not possible.
 
@@ -1073,7 +1073,7 @@ If you get this wrong, revise: Gene Mutations -- Types of Gene Mutations
 
 A **point mutation** (substitution) replaces a single nucleotide with another. A missense point mutation changes one codon, potentially replacing one amino acid with another (e.g., sickle cell mutation: GAG to GTG, glutamic acid to valine in haemoglobin).
 
-A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT a multiple of three. This shifts the reading frame of all codons downstream, typically changing every subsequent amino acid and often creating a premature stop codon. The resulting protein is usually completely non-functional (e.g., a 1-bp insertion in the CFTR gene causes cystic fibrosis).
+A **frameshift mutation** is an insertion or deletion of nucleotides that is NOT a multiple of three. This shifts the reading frame of all codons downstream, changing every subsequent amino acid and often creating a premature stop codon. The resulting protein is completely non-functional (e.g., a 1-bp insertion in the CFTR gene causes cystic fibrosis).
 
 </details>
 
@@ -1092,16 +1092,16 @@ Every cell in an organism contains the same DNA (same genes). However, not all g
 
 ### Gene Regulation in Prokaryotes: The Lac Operon
 
-The **lac operon** in _E. coli_ is the classic model of gene regulation. It controls the production of enzymes needed to metabolise lactose.
+The **lac operon** in _E. Coli_ is the classic model of gene regulation. It controls the production of enzymes needed to metabolise lactose.
 
 **Components:**
 
-| Component       | Description                                                                                                        |
+| Component | Description |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Structural genes | lacZ (beta-galactosidase, breaks down lactose into glucose and galactose), lacY (permease, transports lactose into the cell), lacA (transacetylase, function less well understood) |
-| Promoter        | DNA sequence where RNA polymerase binds to transcribe the structural genes                                         |
-| Operator        | DNA sequence between the promoter and structural genes; acts as an on/off switch controlled by a repressor protein  |
-| Regulator gene  | lacI gene, located upstream; produces the lac repressor protein                                                   |
+| Promoter | DNA sequence where RNA polymerase binds to transcribe the structural genes |
+| Operator | DNA sequence between the promoter and structural genes; acts as an on/off switch controlled by a repressor protein |
+| Regulator gene | lacI gene, located upstream; produces the lac repressor protein |
 
 **Mechanism of the lac operon:**
 
@@ -1123,10 +1123,10 @@ The **lac operon** in _E. coli_ is the classic model of gene regulation. It cont
 
 **Positive control by glucose (catabolite repression):**
 
-When both glucose AND lactose are present, _E. coli_ preferentially uses glucose (more efficient energy source). The lac operon is not fully activated because:
+When both glucose AND lactose are present, _E. Coli_ preferentially uses glucose (more efficient energy source). The lac operon is not fully activated because:
 
 1. Low glucose leads to high cAMP (cyclic AMP) levels
-2. cAMP binds to the **CAP protein** (catabolite activator protein)
+2. CAMP binds to the **CAP protein** (catabolite activator protein)
 3. The cAMP-CAP complex binds to a site upstream of the promoter, enhancing RNA polymerase binding
 4. When glucose is HIGH, cAMP is LOW; the cAMP-CAP complex does not form; the lac operon is transcribed at a low rate even if lactose is present
 
@@ -1134,12 +1134,12 @@ When both glucose AND lactose are present, _E. coli_ preferentially uses glucose
 
 Eukaryotic gene regulation is more complex than prokaryotic regulation, involving multiple levels of control:
 
-| Level of Regulation | Description                                                                                                         |
+| Level of Regulation | Description |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Transcriptional     | Control of whether a gene is transcribed into mRNA (transcription factors, enhancers, silencers, chromatin structure) |
+| Transcriptional | Control of whether a gene is transcribed into mRNA (transcription factors, enhancers, silencers, chromatin structure) |
 | Post-transcriptional | mRNA processing (splicing, capping, poly-A tail); alternative splicing produces different proteins from the same gene |
-| Translational       | Control of whether mRNA is translated into protein (microRNAs, RNA interference, initiation factors)                |
-| Post-translational  | Modification of proteins after synthesis (phosphorylation, glycosylation, proteolytic cleavage, ubiquitin-mediated degradation) |
+| Translational | Control of whether mRNA is translated into protein (microRNAs, RNA interference, initiation factors) |
+| Post-translational | Modification of proteins after synthesis (phosphorylation, glycosylation, proteolytic cleavage, ubiquitin-mediated degradation) |
 
 **Transcription factors:**
 
@@ -1152,11 +1152,11 @@ Eukaryotic gene regulation is more complex than prokaryotic regulation, involvin
 
 Epigenetics refers to heritable changes in gene expression that do NOT involve changes to the DNA sequence itself.
 
-| Epigenetic Mechanism | Description                                                                                                                        |
+| Epigenetic Mechanism | Description |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| DNA methylation      | Addition of methyl groups (-CH$_3$) to cytosine bases, typically at CpG islands near gene promoters; usually associated with gene silencing |
+| DNA methylation | Addition of methyl groups (-CH$_3$) to cytosine bases, at CpG islands near gene promoters; associated with gene silencing |
 | Histone modification | Acetylation, methylation, or phosphorylation of histone proteins; affects how tightly DNA is wound around histones (chromatin structure) |
-| Non-coding RNA       | MicroRNAs (miRNAs) and small interfering RNAs (siRNAs) that bind to mRNA and inhibit translation or promote degradation                       |
+| Non-coding RNA | MicroRNAs (miRNAs) and small interfering RNAs (siRNAs) that bind to mRNA and inhibit translation or promote degradation |
 
 :::info
 Epigenetic changes are REVERSIBLE (unlike mutations) and can be influenced by environmental factors (diet, stress, toxins). This has important implications for understanding how environmental exposures affect gene expression and disease risk across generations. However, epigenetic changes should NOT be confused with Lamarckian inheritance of acquired characteristics -- the DNA sequence itself is unchanged.
@@ -1168,12 +1168,12 @@ Epigenetic changes are REVERSIBLE (unlike mutations) and can be influenced by en
 
 ### Changes in Chromosome Number
 
-| Type                  | Description                                                                                                      | Example                                        |
+| Type | Description | Example |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| Polyploidy            | Having extra complete sets of chromosomes (3n, 4n, etc.)                                                         | Common in plants (wheat is hexaploid, 6n)      |
-| Aneuploidy            | Having one extra or one missing chromosome                                                                        | Down syndrome (trisomy 21, 47 chromosomes)     |
-| Trisomy               | Having three copies of a chromosome instead of two                                                                | Trisomy 21 (Down syndrome), Trisomy 18 (Edwards syndrome) |
-| Monosomy              | Having only one copy of a chromosome instead of two                                                              | Monosomy X (Turner syndrome, 45 chromosomes)   |
+| Polyploidy | Having extra complete sets of chromosomes (3n, 4n, etc.) | Common in plants (wheat is hexaploid, 6n) |
+| Aneuploidy | Having one extra or one missing chromosome | Down syndrome (trisomy 21, 47 chromosomes) |
+| Trisomy | Having three copies of a chromosome instead of two | Trisomy 21 (Down syndrome), Trisomy 18 (Edwards syndrome) |
+| Monosomy | Having only one copy of a chromosome instead of two | Monosomy X (Turner syndrome, 45 chromosomes) |
 
 **Causes of aneuploidy -- non-disjunction:**
 
@@ -1183,29 +1183,29 @@ If a gamete with an extra chromosome (n+1) is fertilised by a normal gamete (n),
 
 ### Changes in Chromosome Structure
 
-| Type             | Description                                                                                           | Consequence                                           |
+| Type | Description | Consequence |
 | ---------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Deletion         | A segment of a chromosome is lost                                                                    | Genes on the deleted segment are lost; often lethal   |
-| Duplication      | A segment is repeated                                                                                | Extra copies of genes; may affect gene dosage          |
-| Inversion        | A segment is reversed (flipped end-to-end)                                                           | Genes are present but in wrong order; may affect meiosis |
-| Translocation    | A segment breaks off and attaches to a non-homologous chromosome                                      | Can create fusion genes; e.g., Philadelphia chromosome in CML |
+| Deletion | A segment of a chromosome is lost | Genes on the deleted segment are lost; often lethal |
+| Duplication | A segment is repeated | Extra copies of genes; may affect gene dosage |
+| Inversion | A segment is reversed (flipped end-to-end) | Genes are present but in wrong order; may affect meiosis |
+| Translocation | A segment breaks off and attaches to a non-homologous chromosome | Can create fusion genes; e.g., Philadelphia chromosome in CML |
 
 ---
 
 ## Additional Problem Set
 
-**Problem 11:** Explain how the lac operon in _E. coli_ is regulated when (a) only glucose is present in the medium, (b) only lactose is present, and (c) both glucose and lactose are present.
+**Problem 11:** Explain how the lac operon in _E. Coli_ is regulated when (a) only glucose is present in the medium, (b) only lactose is present, and (c) both glucose and lactose are present.
 
 If you get this wrong, revise: Gene Regulation -- Gene Regulation in Prokaryotes: The Lac Operon
 
 <details>
 <summary>Solution</summary>
 
-(a) **Only glucose present:** The lac repressor (produced by lacI) binds to the operator, blocking transcription of lacZ, lacY, and lacA. Additionally, high glucose means low cAMP, so the cAMP-CAP complex does not form, providing no positive stimulation. The lac operon is OFF. _E. coli_ uses glucose directly.
+(a) **Only glucose present:** The lac repressor (produced by lacI) binds to the operator, blocking transcription of lacZ, lacY, and lacA. Additionally, high glucose means low cAMP, so the cAMP-CAP complex does not form, providing no positive stimulation. The lac operon is OFF. _E. Coli_ uses glucose directly.
 
-(b) **Only lactose present:** Lactose enters the cell (via low basal permease) and is converted to allolactose. Allolactose binds to the repressor, causing it to detach from the operator. Additionally, low glucose means high cAMP; the cAMP-CAP complex binds upstream of the promoter, enhancing RNA polymerase binding. The lac operon is fully ON. _E. coli_ produces beta-galactosidase and permease to metabolise lactose.
+(b) **Only lactose present:** Lactose enters the cell (via low basal permease) and is converted to allolactose. Allolactose binds to the repressor, causing it to detach from the operator. Additionally, low glucose means high cAMP; the cAMP-CAP complex binds upstream of the promoter, enhancing RNA polymerase binding. The lac operon is fully ON. _E. Coli_ produces beta-galactosidase and permease to metabolise lactose.
 
-(c) **Both glucose and lactose present:** Lactose/allolactose inactivates the repressor (operator is unblocked), but high glucose means low cAMP, so the cAMP-CAP complex does not form. The lac operon is transcribed at a LOW rate (not fully activated). _E. coli_ preferentially uses glucose and only slowly metabolises lactose. Once glucose is depleted, cAMP levels rise, cAMP-CAP forms, and the lac operon becomes fully active.
+(c) **Both glucose and lactose present:** Lactose/allolactose inactivates the repressor (operator is unblocked), but high glucose means low cAMP, so the cAMP-CAP complex does not form. The lac operon is transcribed at a LOW rate (not fully activated). _E. Coli_ preferentially uses glucose and only slowly metabolises lactose. Once glucose is depleted, cAMP levels rise, cAMP-CAP forms, and the lac operon becomes fully active.
 
 </details>
 
@@ -1236,11 +1236,11 @@ If you get this wrong, revise: Protein Synthesis; Gene Regulation
 <details>
 <summary>Solution</summary>
 
-| Type  | Structure                                                             | Function                                                                                     |
+| Type | Structure | Function |
 | ----- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| mRNA  | Single-stranded; carries a copy of the genetic code from DNA; has a 5' cap and 3' poly-A tail | Carries the genetic information from the nucleus to the ribosome; determines the amino acid sequence of the protein |
-| tRNA  | Cloverleaf shape in 2D; has an anticodon loop and an amino acid attachment site (3' end) | Carries specific amino acids to the ribosome; anticodon base-pairs with the codon on the mRNA, ensuring the correct amino acid is inserted |
-| rRNA  | Single-stranded with folded regions; combined with proteins to form ribosomes | Forms the structural and catalytic core of the ribosome; catalyses peptide bond formation between amino acids |
+| mRNA | Single-stranded; carries a copy of the genetic code from DNA; has a 5' cap and 3' poly-A tail | Carries the genetic information from the nucleus to the ribosome; determines the amino acid sequence of the protein |
+| tRNA | Cloverleaf shape in 2D; has an anticodon loop and an amino acid attachment site (3' end) | Carries specific amino acids to the ribosome; anticodon base-pairs with the codon on the mRNA, ensuring the correct amino acid is inserted |
+| rRNA | Single-stranded with folded regions; combined with proteins to form ribosomes | Forms the structural and catalytic core of the ribosome; catalyses peptide bond formation between amino acids |
 
 All three are necessary because: mRNA provides the template (the "message"), tRNA brings the correct building blocks (amino acids) based on the codon-anticodon matching, and rRNA forms the ribosome (the "factory") where the mRNA is read and amino acids are linked together. Without any one of these, protein synthesis cannot occur.
 
@@ -1262,40 +1262,40 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 ### Autosomal Dominant Disorders
 
-| Disorder              | Gene / Chromosome        | Description                                                                                                               | Inheritance Pattern                   |
+| Disorder | Gene / Chromosome | Description | Inheritance Pattern |
 | ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| Huntington's disease   | HTT gene on chromosome 4 | Progressive neurodegenerative disorder; caused by expanded CAG trinucleotide repeat (codes for glutamine); symptoms typically appear after age 35 (chorea, dementia, personality changes); lethal                       | Autosomal dominant; 50% chance of inheriting if one parent affected; homozygous dominant is rare (often more severe, earlier onset) |
-| Marfan syndrome        | FBN1 gene on chromosome 15 | Defect in fibrillin-1 protein (connective tissue); tall stature, long limbs, dislocated eye lenses, aortic aneurysm                           | Autosomal dominant                     |
-| Achondroplasia         | FGFR3 gene on chromosome 4 | Most common form of dwarfism; mutation in fibroblast growth factor receptor 3 causes impaired cartilage formation; short limbs, normal trunk             | Autosomal dominant; 75% of cases are new mutations (not inherited) |
-| Familial hypercholesterolaemia | LDLR gene on chromosome 19 | Defective or absent LDL receptors; high blood cholesterol from birth; increased risk of early heart disease              | Autosomal dominant; codominant (heterozygotes have ~2x normal cholesterol; homozygotes have ~4x) |
+| Huntington's disease | HTT gene on chromosome 4 | Progressive neurodegenerative disorder; caused by expanded CAG trinucleotide repeat (codes for glutamine); symptoms appear after age 35 (chorea, dementia, personality changes); lethal | Autosomal dominant; 50% chance of inheriting if one parent affected; homozygous dominant is rare (often more severe, earlier onset) |
+| Marfan syndrome | FBN1 gene on chromosome 15 | Defect in fibrillin-1 protein (connective tissue); tall stature, long limbs, dislocated eye lenses, aortic aneurysm | Autosomal dominant |
+| Achondroplasia | FGFR3 gene on chromosome 4 | Most common form of dwarfism; mutation in fibroblast growth factor receptor 3 causes impaired cartilage formation; short limbs, normal trunk | Autosomal dominant; 75% of cases are new mutations (not inherited) |
+| Familial hypercholesterolaemia | LDLR gene on chromosome 19 | Defective or absent LDL receptors; high blood cholesterol from birth; increased risk of early heart disease | Autosomal dominant; codominant (heterozygotes have ~2x normal cholesterol; homozygotes have ~4x) |
 
 ### Autosomal Recessive Disorders
 
-| Disorder              | Gene / Chromosome        | Description                                                                                                               | Carrier Frequency                    |
+| Disorder | Gene / Chromosome | Description | Carrier Frequency |
 | ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| Cystic fibrosis         | CFTR gene on chromosome 7 | Defective chloride ion channel; thick, sticky mucus in lungs, pancreas, and digestive system; recurrent lung infections; pancreatic insufficiency; shortened life expectancy (~40-50 years with treatment) | ~1 in 25 in Caucasian populations |
-| Sickle cell anaemia     | HBB gene on chromosome 11 | Mutation in beta-globin gene (GAG $\rightarrow$ GTG, Glu $\rightarrow$ Val at position 6); produces abnormal haemoglobin (HbS); RBCs become sickle-shaped under low oxygen; block capillaries; pain crises, organ damage, anaemia | ~1 in 10 in African populations |
-| Phenylketonuria (PKU)   | PAH gene on chromosome 12 | Deficiency of phenylalanine hydroxylase; cannot convert phenylalanine to tyrosine; phenylalanine accumulates, causing brain damage and intellectual disability if untreated; treated with low-phenylalanine diet from birth | ~1 in 50 in Caucasian populations  |
-| Tay-Sachs disease       | HEXA gene on chromosome 15 | Deficiency of hexosaminidase A; lipid (GM2 ganglioside) accumulates in nerve cells; progressive neurological deterioration; death usually by age 4-5 | ~1 in 27 in Ashkenazi Jewish populations |
-| Albinism               | Various genes (TYR, OCA2) | Deficiency of melanin production; lack of pigment in skin, hair, and eyes; vision problems (photophobia, nystagmus); increased risk of skin cancer | Varies by population                |
+| Cystic fibrosis | CFTR gene on chromosome 7 | Defective chloride ion channel; thick, sticky mucus in lungs, pancreas, and digestive system; recurrent lung infections; pancreatic insufficiency; shortened life expectancy (~40-50 years with treatment) | ~1 in 25 in Caucasian populations |
+| Sickle cell anaemia | HBB gene on chromosome 11 | Mutation in beta-globin gene (GAG $\rightarrow$ GTG, Glu $\rightarrow$ Val at position 6); produces abnormal haemoglobin (HbS); RBCs become sickle-shaped under low oxygen; block capillaries; pain crises, organ damage, anaemia | ~1 in 10 in African populations |
+| Phenylketonuria (PKU) | PAH gene on chromosome 12 | Deficiency of phenylalanine hydroxylase; cannot convert phenylalanine to tyrosine; phenylalanine accumulates, causing brain damage and intellectual disability if untreated; treated with low-phenylalanine diet from birth | ~1 in 50 in Caucasian populations |
+| Tay-Sachs disease | HEXA gene on chromosome 15 | Deficiency of hexosaminidase A; lipid (GM2 ganglioside) accumulates in nerve cells; progressive neurological deterioration; death by age 4-5 | ~1 in 27 in Ashkenazi Jewish populations |
+| Albinism | Various genes (TYR, OCA2) | Deficiency of melanin production; lack of pigment in skin, hair, and eyes; vision problems (photophobia, nystagmus); increased risk of skin cancer | Varies by population |
 
 ### Sex-Linked Disorders
 
-| Disorder              | Gene / Chromosome        | Description                                                                                                               | Affected Sex                          |
+| Disorder | Gene / Chromosome | Description | Affected Sex |
 | ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| Haemophilia A           | F8 gene on X chromosome   | Deficiency of clotting factor VIII; blood does not clot properly; prolonged bleeding after injury; spontaneous internal bleeding into joints (haemarthrosis) | Primarily males (X$^h$Y); females rarely affected (need X$^h$X$^h$) |
-| Red-green colour blindness | Opsin genes on X chromosome | Defective photopigments in cone cells; cannot distinguish between red and green; most common in males (~8% of males vs ~0.5% of females in Caucasian populations) | Primarily males                      |
-| Duchenne muscular dystrophy | DMD gene on X chromosome  | Absence of dystrophin protein; progressive muscle weakness and degeneration; affected boys typically lose the ability to walk by age 12; life expectancy ~20-30 years | Males only (X-linked recessive)      |
+| Haemophilia A | F8 gene on X chromosome | Deficiency of clotting factor VIII; blood does not clot properly; prolonged bleeding after injury; spontaneous internal bleeding into joints (haemarthrosis) | Primarily males (X$^h$Y); females rarely affected (need X$^h$X$^h$) |
+| Red-green colour blindness | Opsin genes on X chromosome | Defective photopigments in cone cells; cannot distinguish between red and green; most common in males (~8% of males vs ~0.5% of females in Caucasian populations) | Primarily males |
+| Duchenne muscular dystrophy | DMD gene on X chromosome | Absence of dystrophin protein; progressive muscle weakness and degeneration; affected boys lose the ability to walk by age 12; life expectancy ~20-30 years | Males only (X-linked recessive) |
 
 ### Pedigree Analysis
 
-| Feature                          | Autosomal Dominant                                | Autosomal Recessive                                | X-Linked Recessive                              |
+| Feature | Autosomal Dominant | Autosomal Recessive | X-Linked Recessive |
 | -------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------- |
-| Affected children from unaffected parents | No (at least one parent must be affected)   | Yes (both parents can be unaffected carriers)     | No (mother must be a carrier or father affected) |
-| Both sexes affected              | Yes (approximately equal)                         | Yes (approximately equal)                         | Mostly males; females rarely affected            |
-| Skips generations                | No (appears in every generation)                  | Yes (can skip generations through carriers)       | Yes (can skip through carrier females            |
-| Father-to-son transmission       | Possible                                          | Possible                                          | No (father passes Y to son, not X)               |
-| Affected female with unaffected male: all children affected? | Yes (she passes the dominant allele to all children) | No (children are carriers at most)              | No (sons receive Y from father; daughters receive one normal X) |
+| Affected children from unaffected parents | No (at least one parent must be affected) | Yes (both parents can be unaffected carriers) | No (mother must be a carrier or father affected) |
+| Both sexes affected | Yes (approximately equal) | Yes (approximately equal) | Mostly males; females rarely affected |
+| Skips generations | No (appears in every generation) | Yes (can skip generations through carriers) | Yes (can skip through carrier females |
+| Father-to-son transmission | Possible | Possible | No (father passes Y to son, not X) |
+| Affected female with unaffected male: all children affected? | Yes (she passes the dominant allele to all children) | No (children are carriers at most) | No (sons receive Y from father; daughters receive one normal X) |
 
 ---
 
@@ -1306,43 +1306,43 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 - A karyotype is a photograph of the chromosomes of a cell, arranged in pairs according to size and banding pattern
 - Human somatic cells are diploid (2n = 46): 22 pairs of autosomes + 1 pair of sex chromosomes (XX or XY)
 - Karyotyping is performed by:
-  1. Collecting cells (e.g., from blood, amniotic fluid, or chorionic villus sampling)
-  2. Stimulating the cells to divide
-  3. Arresting cell division in metaphase (using colchicine) -- when chromosomes are most condensed and visible
-  4. Staining the chromosomes (Giemsa stain produces characteristic banding patterns)
-  5. Photographing and arranging the chromosomes in homologous pairs
+ 1. Collecting cells (e.g., from blood, amniotic fluid, or chorionic villus sampling)
+ 2. Stimulating the cells to divide
+ 3. Arresting cell division in metaphase (using colchicine) -- when chromosomes are most condensed and visible
+ 4. Staining the chromosomes (Giemsa stain produces characteristic banding patterns)
+ 5. Photographing and arranging the chromosomes in homologous pairs
 
 ### Chromosomal Abnormalities
 
 **Numerical abnormalities (aneuploidy):**
 
-| Condition                  | Karyotype   | Description                                                                                                               | Symptoms                                           |
+| Condition | Karyotype | Description | Symptoms |
 | -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| Down syndrome (trisomy 21)  | 47,XX,+21 or 47,XY,+21 | Extra copy of chromosome 21; most common chromosomal abnormality; incidence increases with maternal age                     | Intellectual disability; characteristic facial features; heart defects; increased risk of leukaemia |
-| Edwards syndrome (trisomy 18) | 47,XX,+18 or 47,XY,+18 | Extra copy of chromosome 18; severe developmental abnormalities; most affected infants die within the first year             | Severe intellectual disability; heart defects; clenched fists; rocker-bottom feet |
-| Patau syndrome (trisomy 13) | 47,XX,+13 or 47,XY,+13 | Extra copy of chromosome 13; severe abnormalities; most die within the first year                                        | Severe intellectual disability; cleft lip/palate; polydactyly; heart defects |
-| Klinefelter syndrome        | 47,XXY      | Extra X chromosome in a male                                                                                              | Tall stature; small testes; infertility; gynaecomastia; mild learning difficulties |
-| Turner syndrome             | 45,X0       | Missing one X chromosome in a female                                                                                      | Short stature; webbed neck; lack of ovarian development; infertility; no puberty without hormone treatment |
-| Triple X syndrome           | 47,XXX      | Extra X chromosome in a female                                                                                           | Usually normal; tall stature; may have learning difficulties |
-| Jacob's syndrome            | 47,XYY      | Extra Y chromosome in a male                                                                                             | Usually normal; tall stature; may have mild learning difficulties |
+| Down syndrome (trisomy 21) | 47,XX,+21 or 47,XY,+21 | Extra copy of chromosome 21; most common chromosomal abnormality; incidence increases with maternal age | Intellectual disability; characteristic facial features; heart defects; increased risk of leukaemia |
+| Edwards syndrome (trisomy 18) | 47,XX,+18 or 47,XY,+18 | Extra copy of chromosome 18; severe developmental abnormalities; most affected infants die within the first year | Severe intellectual disability; heart defects; clenched fists; rocker-bottom feet |
+| Patau syndrome (trisomy 13) | 47,XX,+13 or 47,XY,+13 | Extra copy of chromosome 13; severe abnormalities; most die within the first year | Severe intellectual disability; cleft lip/palate; polydactyly; heart defects |
+| Klinefelter syndrome | 47,XXY | Extra X chromosome in a male | Tall stature; small testes; infertility; gynaecomastia; mild learning difficulties |
+| Turner syndrome | 45,X0 | Missing one X chromosome in a female | Short stature; webbed neck; lack of ovarian development; infertility; no puberty without hormone treatment |
+| Triple X syndrome | 47,XXX | Extra X chromosome in a female | normal; tall stature; may have learning difficulties |
+| Jacob's syndrome | 47,XYY | Extra Y chromosome in a male | normal; tall stature; may have mild learning difficulties |
 
 **Structural abnormalities:**
 
-| Type                        | Description                                                                                                               | Effect                                  |
+| Type | Description | Effect |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Deletion                     | A segment of a chromosome is lost                                                                                       | Cri-du-chat syndrome: deletion on chromosome 5 (short arm); severe intellectual disability; cat-like cry in infants |
-| Duplication                  | A segment of a chromosome is duplicated (present twice)                                                                 | May cause developmental abnormalities depending on the genes involved |
-| Inversion                    | A segment of a chromosome is reversed (flipped 180 degrees)                                                            | May disrupt gene function if the breakpoint occurs within a gene; may cause problems during meiosis |
-| Translocation                | A segment of one chromosome breaks off and attaches to another chromosome                                              | Reciprocal translocation: two chromosomes exchange segments; Robertsonian translocation: two acrocentric chromosomes (13, 14, 15, 21, 22) fuse at the centromere |
-| Robertsonian translocation    | A type of translocation involving acrocentric chromosomes where the long arms fuse and the short arms are lost           | Can cause Down syndrome if a Robertsonian translocation involves chromosome 21; a carrier (45 chromosomes) is phenotypically normal but at risk of having children with Down syndrome |
+| Deletion | A segment of a chromosome is lost | Cri-du-chat syndrome: deletion on chromosome 5 (short arm); severe intellectual disability; cat-like cry in infants |
+| Duplication | A segment of a chromosome is duplicated (present twice) | May cause developmental abnormalities depending on the genes involved |
+| Inversion | A segment of a chromosome is reversed (flipped 180 degrees) | May disrupt gene function if the breakpoint occurs within a gene; may cause problems during meiosis |
+| Translocation | A segment of one chromosome breaks off and attaches to another chromosome | Reciprocal translocation: two chromosomes exchange segments; Robertsonian translocation: two acrocentric chromosomes (13, 14, 15, 21, 22) fuse at the centromere |
+| Robertsonian translocation | A type of translocation involving acrocentric chromosomes where the long arms fuse and the short arms are lost | Can cause Down syndrome if a Robertsonian translocation involves chromosome 21; a carrier (45 chromosomes) is phenotypically normal but at risk of having children with Down syndrome |
 
 ### Pre-Natal Diagnosis
 
-| Method                          | Timing              | Description                                                                                                               | Risks                                  |
+| Method | Timing | Description | Risks |
 | ------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Amniocentesis                    | 15-20 weeks         | A needle is inserted through the abdomen into the amniotic sac; a sample of amniotic fluid (containing foetal cells) is withdrawn; cells are cultured and karyotyped | ~0.5-1% risk of miscarriage          |
-| Chorionic villus sampling (CVS)  | 10-13 weeks         | A sample of chorionic villi (placental tissue) is obtained via a needle through the abdomen or a catheter through the cervix; cells are karyotyped directly | ~1-2% risk of miscarriage             |
-| Non-invasive prenatal testing (NIPT) | 10+ weeks      | Cell-free foetal DNA is extracted from the mother's blood and analysed for chromosomal abnormalities using sequencing technology | No risk to the foetus (blood test only); high sensitivity for trisomy 21, 18, 13 |
+| Amniocentesis | 15-20 weeks | A needle is inserted through the abdomen into the amniotic sac; a sample of amniotic fluid (containing foetal cells) is withdrawn; cells are cultured and karyotyped | ~0.5-1% risk of miscarriage |
+| Chorionic villus sampling (CVS) | 10-13 weeks | A sample of chorionic villi (placental tissue) is obtained via a needle through the abdomen or a catheter through the cervix; cells are karyotyped directly | ~1-2% risk of miscarriage |
+| Non-invasive prenatal testing (NIPT) | 10+ weeks | Cell-free foetal DNA is extracted from the mother's blood and analysed for chromosomal abnormalities using sequencing technology | No risk to the foetus (blood test only); high sensitivity for trisomy 21, 18, 13 |
 
 ---
 
@@ -1360,27 +1360,27 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 ### Restriction Enzymes (Restriction Endonucleases)
 
 - Proteins produced by bacteria as a defence mechanism against bacteriophages (viruses that infect bacteria)
-- They recognise specific short DNA sequences (recognition sites, typically 4-8 base pairs long) and cut the DNA at or near these sites
+- They recognise specific short DNA sequences (recognition sites, 4-8 base pairs long) and cut the DNA at or near these sites
 - The recognition sites are **palindromic** -- the sequence reads the same on both strands in the 5' to 3' direction (e.g., GAATTC on one strand reads CTTAAG on the complementary strand)
 
-| Type                    | Cut Pattern                                                                                                               | Result                                   |
+| Type | Cut Pattern | Result |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| **Blunt end cutters**     | Cut straight through both strands at the same position in the recognition site                                           | Flat ends; can be joined to any other blunt end, but less efficient and less specific |
-| **Sticky end cutters**    | Cut at staggered positions on the two strands, creating short single-stranded overhangs (sticky ends)                     | The single-stranded overhangs can base-pair with complementary overhangs from another fragment; more efficient and more specific joining |
+| **Blunt end cutters** | Cut straight through both strands at the same position in the recognition site | Flat ends; can be joined to any other blunt end, but less efficient and less specific |
+| **Sticky end cutters** | Cut at staggered positions on the two strands, creating short single-stranded overhangs (sticky ends) | The single-stranded overhangs can base-pair with complementary overhangs from another fragment; more efficient and more specific joining |
 
-| Enzyme                  | Recognition Site (5' $\rightarrow$ 3')                                                                                  | Cut Type                                |
+| Enzyme | Recognition Site (5' $\rightarrow$ 3') | Cut Type |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| EcoRI                   | GAATTC                                                                                                                    | Sticky ends (5' overhang: AATT)          |
-| BamHI                   | GGATCC                                                                                                                    | Sticky ends (5' overhang: GATC)          |
-| HindIII                 | AAGCTT                                                                                                                    | Sticky ends (5' overhang: AGCT)          |
-| SmaI                    | CCCGGG                                                                                                                    | Blunt ends                                |
+| EcoRI | GAATTC | Sticky ends (5' overhang: AATT) |
+| BamHI | GGATCC | Sticky ends (5' overhang: GATC) |
+| HindIII | AAGCTT | Sticky ends (5' overhang: AGCT) |
+| SmaI | CCCGGG | Blunt ends |
 
 ### DNA Ligase
 
 - An enzyme that joins DNA fragments by forming phosphodiester bonds between adjacent nucleotides
 - Used to join:
-  - Insert DNA and plasmid vector in genetic engineering
-  - Okazaki fragments during DNA replication (natural role)
+ - Insert DNA and plasmid vector in genetic engineering
+ - Okazaki fragments during DNA replication (natural role)
 - DNA ligase is more efficient at joining sticky ends than blunt ends because the complementary overhangs hold the fragments in the correct position
 
 ### PCR (Polymerase Chain Reaction) in Detail
@@ -1389,32 +1389,32 @@ PCR is a technique used to amplify a specific region of DNA in vitro (outside a 
 
 **Steps in each cycle:**
 
-| Step                    | Temperature              | What Happens                                                                                                              | Duration (approximate)   |
+| Step | Temperature | What Happens | Duration (approximate) |
 | ----------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| 1. Denaturation           | 94-96 degrees C           | Double-stranded DNA template is heated to separate the two strands (breaks hydrogen bonds between base pairs)             | 30 seconds              |
-| 2. Annealing              | 50-65 degrees C           | Temperature is lowered; short DNA primers (forward and reverse) bind to complementary sequences on the target DNA; the annealing temperature depends on the primer sequence | 30 seconds              |
-| 3. Extension              | 72 degrees C              | Taq polymerase (heat-stable DNA polymerase from _Thermus aquaticus_) adds nucleotides to the 3' end of each primer, synthesising new DNA strands complementary to the template | 1-2 minutes (depending on length of target DNA) |
+| 1. Denaturation | 94-96 degrees C | Double-stranded DNA template is heated to separate the two strands (breaks hydrogen bonds between base pairs) | 30 seconds |
+| 2. Annealing | 50-65 degrees C | Temperature is lowered; short DNA primers (forward and reverse) bind to complementary sequences on the target DNA; the annealing temperature depends on the primer sequence | 30 seconds |
+| 3. Extension | 72 degrees C | Taq polymerase (heat-stable DNA polymerase from _Thermus aquaticus_) adds nucleotides to the 3' end of each primer, synthesising new DNA strands complementary to the template | 1-2 minutes (depending on length of target DNA) |
 
 **Key features of PCR:**
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Primers                  | Short, single-stranded DNA sequences (typically 18-25 bases) that are complementary to the regions flanking the target DNA; they define the start and end points of the amplified region |
-| Taq polymerase           | Heat-stable DNA polymerase from _Thermus aquaticus_ (a thermophilic bacterium); does not denature at 95 degrees C (unlike human DNA polymerase); essential because the high temperatures in each cycle would destroy most enzymes |
-| Nucleotides              | Free dNTPs (deoxynucleoside triphosphates: dATP, dTTP, dCTP, dGTP) provide the building blocks for new DNA strands      |
+| Primers | Short, single-stranded DNA sequences ( 18-25 bases) that are complementary to the regions flanking the target DNA; they define the start and end points of the amplified region |
+| Taq polymerase | Heat-stable DNA polymerase from _Thermus aquaticus_ (a thermophilic bacterium); does not denature at 95 degrees C (unlike human DNA polymerase); essential because the high temperatures in each cycle would destroy most enzymes |
+| Nucleotides | Free dNTPs (deoxynucleoside triphosphates: dATP, dTTP, dCTP, dGTP) provide the building blocks for new DNA strands |
 | Exponential amplification | Each cycle doubles the amount of DNA; after 30 cycles, there are approximately $2^{30}$ ($\approx$ 1 billion) copies of the target region |
-| Thermocycler             | A programmable machine that automatically cycles through the temperature changes                                          |
+| Thermocycler | A programmable machine that automatically cycles through the temperature changes |
 
 ### Gel Electrophoresis
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Principle                | DNA fragments are negatively charged (due to phosphate groups); when placed in an electric field, they migrate towards the positive electrode (anode) |
-| Gel medium               | Agarose gel (a polysaccharide from seaweed); acts as a molecular sieve -- smaller fragments move through the pores more easily and travel further |
-| Separation               | DNA fragments are separated by SIZE (not by charge -- all fragments have the same charge-to-mass ratio); smaller fragments travel further, larger fragments travel less far |
-| Staining                 | DNA is not visible; the gel is stained with a DNA-binding dye (e.g., ethidium bromide, GelRed) that fluoresces under UV light |
-| DNA ladder (marker)       | A set of DNA fragments of known sizes run in a separate lane; used to estimate the size of unknown fragments by comparing their distance travelled with the ladder |
-| Applications             | Comparing DNA fragments (e.g., in genetic fingerprinting, forensic analysis, paternity testing); checking the results of PCR and restriction digestion; diagnosing genetic diseases (e.g., detecting the sickle cell mutation) |
+| Principle | DNA fragments are negatively charged (due to phosphate groups); when placed in an electric field, they migrate towards the positive electrode (anode) |
+| Gel medium | Agarose gel (a polysaccharide from seaweed); acts as a molecular sieve -- smaller fragments move through the pores more and travel further |
+| Separation | DNA fragments are separated by SIZE (not by charge -- all fragments have the same charge-to-mass ratio); smaller fragments travel further, larger fragments travel less far |
+| Staining | DNA is not visible; the gel is stained with a DNA-binding dye (e.g., ethidium bromide, GelRed) that fluoresces under UV light |
+| DNA ladder (marker) | A set of DNA fragments of known sizes run in a separate lane; used to estimate the size of unknown fragments by comparing their distance travelled with the ladder |
+| Applications | Comparing DNA fragments (e.g., in genetic fingerprinting, forensic analysis, paternity testing); checking the results of PCR and restriction digestion; diagnosing genetic diseases (e.g., detecting the sickle cell mutation) |
 
 ---
 
@@ -1429,20 +1429,20 @@ PCR is a technique used to amplify a specific region of DNA in vitro (outside a 
 
 ### STRs (Short Tandem Repeats)
 
-- STRs are short sequences of DNA (typically 2-6 base pairs) that are repeated multiple times in tandem
+- STRs are short sequences of DNA ( 2-6 base pairs) that are repeated multiple times in tandem
 - The number of repeats varies between individuals (e.g., one person might have ATCG repeated 7 times at a particular locus; another might have it repeated 12 times)
 - The FBI uses a panel of 13 standard STR loci (CODIS) for forensic DNA profiling in the United States
 - The probability of two unrelated individuals having the same DNA profile at all 13 loci is less than 1 in a trillion
 
 ### Applications
 
-| Application              | Description                                                                                                               |
+| Application | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Forensic science          | Matching DNA from crime scenes to suspects or victims; DNA evidence can confirm presence at a scene, establish innocence, or link serial crimes |
-| Paternity testing         | Comparing the STR profile of a child with that of the alleged father; the child must inherit one allele at each locus from each biological parent |
+| Forensic science | Matching DNA from crime scenes to suspects or victims; DNA evidence can confirm presence at a scene, establish innocence, or link serial crimes |
+| Paternity testing | Comparing the STR profile of a child with that of the alleged father; the child must inherit one allele at each locus from each biological parent |
 | Identifying disaster victims | DNA profiles from remains are compared with profiles from family members or personal belongings (e.g., toothbrush) |
-| Immigration cases         | Confirming family relationships when documentation is disputed                                                           |
-| Conservation biology      | Monitoring genetic diversity in endangered populations; identifying illegal trade in wildlife products (e.g., elephant ivory, rhino horn) |
+| Immigration cases | Confirming family relationships when documentation is disputed |
+| Conservation biology | Monitoring genetic diversity in endangered populations; identifying illegal trade in wildlife products (e.g., elephant ivory, rhino horn) |
 
 ---
 
@@ -1451,6 +1451,14 @@ PCR is a technique used to amplify a specific region of DNA in vitro (outside a 
 - **Restriction enzymes cut at specific recognition sites; they do NOT cut at random.** The recognition sequence must be present in the DNA for the enzyme to cut it. Different enzymes recognise different sequences
 - **Sticky ends are more useful than blunt ends in genetic engineering because the complementary overhangs ensure that the DNA fragments are joined in the correct orientation.** Blunt ends can be joined in either orientation, and the process is less efficient
 - **PCR amplifies a SPECIFIC region of DNA, not the entire genome.** The region amplified is determined by the primers used
-- **Gel electrophoresis separates DNA by SIZE (length), not by charge.** All DNA fragments carry the same charge per unit length (negative charge from phosphate groups), so charge does not affect separation; smaller fragments travel further because they move through the gel pores more easily
+- **Gel electrophoresis separates DNA by SIZE (length), not by charge.** All DNA fragments carry the same charge per unit length (negative charge from phosphate groups), so charge does not affect separation; smaller fragments travel further because they move through the gel pores more 
 - **DNA profiling compares the NUMBER OF REPEATS at specific loci, NOT the sequence of bases.** The bases in the repeat are the same between individuals; what varies is how many times the repeat occurs**
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

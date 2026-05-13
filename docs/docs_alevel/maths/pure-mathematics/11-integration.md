@@ -11,16 +11,16 @@ slug: integration
 ---
 ## Board Coverage
 
-| Board      | Paper      | Notes                                                      |
+| Board | Paper | Notes |
 | ---------- | ---------- | ---------------------------------------------------------- |
-| AQA        | Paper 1, 2 | Basic integration in P1; by parts, substitution in P2      |
-| Edexcel    | P1, P2     | Similar split                                              |
-| OCR (A)    | Paper 1, 2 | Includes trapezium rule                                    |
+| AQA | Paper 1, 2 | Basic integration in P1; by parts, substitution in P2 |
+| Edexcel | P1, P2 | Similar split |
+| OCR (A) | Paper 1, 2 | Includes trapezium rule |
 | CIE (9709) | P1, P2, P3 | Basic in P1; by parts/substitution in P2/P3; further in P3 |
 
 :::info
 The formula booklet provides standard integrals. You must know how to apply integration
-techniques and when to use each method.
+Techniques and when to use each method.
 :::
 
 <hr />
@@ -30,46 +30,46 @@ techniques and when to use each method.
 ### 1.1 Definition
 
 **Definition.** The **definite integral** of $f$ from $a$ to $b$ is defined as the limit of Riemann
-sums:
+Sums:
 
 $$\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^{n}f(x_i^*)\,\Delta x$$
 
-where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$, and $x_i^*$ is
-a sample point in the $i$-th subinterval.
+Where $[a,b]$ is divided into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$And $x_i^*$ is
+A sample point in the $i$-th subinterval.
 
 **Geometric picture.** We divide the area under $y = f(x)$ between $x = a$ and $x = b$ into $n$ thin
-rectangles. The sum of their areas approximates the total area. As $n \to \infty$ (rectangles become
-infinitely thin), the approximation becomes exact.
+Rectangles. The sum of their areas approximates the total area. As $n \to \infty$ (rectangles become
+Infinitely thin), the approximation becomes exact.
 
 - If we take the **upper** rectangle height (right endpoint), we get an **upper sum**.
 - If we take the **lower** rectangle height (left endpoint), we get a **lower sum**.
 - The integral exists when the upper and lower sums converge to the same limit.
 
 **Intuition.** Integration is "accumulation" — adding up infinitely many infinitesimal
-contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
+Contributions. If $f(x)$ is a rate (like velocity), then $\int_a^b f(x)\,dx$ is the total change
 (displacement).
 
 <DesmosGraph title="Integration as Area Under a Curve" expressions={["int_{0}^{b} x^2 dx"]} width={800} height={500} /> Increase the number of rectangles to see how Riemann sums converge to
-the exact area under the curve. Compare the upper and lower sums as the partition gets finer.
+The exact area under the curve. Compare the upper and lower sums as the partition gets finer.
 
 <hr />
 
 ## 2. The Fundamental Theorem of Calculus
 
-**Theorem (FTC).** If $f$ is continuous on $[a,b]$, then
+**Theorem (FTC).** If $f$ is continuous on $[a,b]$Then
 
 $$(\mathrm{Part 1})\quad \frac{d}{dx}\int_a^x f(t)\,dt = f(x)$$
 
 $$(\mathrm{Part 2})\quad \int_a^b f(x)\,dx = F(b) - F(a)$$
 
-where $F$ is any antiderivative of $f$ (i.e., $F'(x) = f(x)$).
+Where $F$ is any antiderivative of $f$ (i.e., $F'(x) = f(x)$).
 
 ### 2.1 Sketch proof of Part 2
 
 Let $G(x) = \int_a^x f(t)\,dt$. By Part 1, $G'(x) = f(x)$.
 
-If $F$ is any other antiderivative of $f$, then $F'(x) = G'(x) = f(x)$, so $F(x) - G(x) = C$ (a
-constant).
+If $F$ is any other antiderivative of $f$Then $F'(x) = G'(x) = f(x)$So $F(x) - G(x) = C$ (a
+Constant).
 
 $$F(x) = G(x) + C \implies F(b) - F(a) = G(b) - G(a) = \int_a^b f(t)\,dt - 0$$
 
@@ -77,8 +77,8 @@ Hence $\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$. $\blacksquare$
 
 :::info
 The Fundamental Theorem of Calculus is one of the most important results in all of
-mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
-change) and integration (finding areas).
+Mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
+Change) and integration (finding areas).
 :::
 
 <hr />
@@ -111,14 +111,14 @@ $$\int \sec^2 x\,dx = \tan x + C$$
 
 ### 3.2 Summary table
 
-| $f(x)$              | $\int f(x)\,dx$            |
+| $f(x)$ | $\int f(x)\,dx$ |
 | ------------------- | -------------------------- | --- | ---- |
 | $x^n$ ($n \neq -1$) | $\dfrac{x^{n+1}}{n+1} + C$ |
-| $1/x$               | $\ln                       | x   | + C$ |
-| $e^{kx}$            | $\dfrac{1}{k}e^{kx} + C$   |
-| $\cos x$            | $\sin x + C$               |
-| $\sin x$            | $-\cos x + C$              |
-| $\sec^2 x$          | $\tan x + C$               |
+| $1/x$ | $\ln                       | x   | + C$ |
+| $e^{kx}$ | $\dfrac{1}{k}e^{kx} + C$ |
+| $\cos x$ | $\sin x + C$ |
+| $\sin x$ | $-\cos x + C$ |
+| $\sec^2 x$ | $\tan x + C$ |
 
 <hr />
 
@@ -126,22 +126,22 @@ $$\int \sec^2 x\,dx = \tan x + C$$
 
 ### 4.1 Area under a curve
 
-The area between $y = f(x)$, the $x$-axis, $x = a$, and $x = b$ is
+The area between $y = f(x)$The $x$-axis, $x = a$And $x = b$ is
 
 $$A = \int_a^b f(x)\,dx$$
 
-provided $f(x) \geq 0$ on $[a,b]$.
+Provided $f(x) \geq 0$ on $[a,b]$.
 
 ### 4.2 Area between a curve and the $x$-axis
 
-If $f(x)$ changes sign on $[a,b]$, we must split the integral at each root:
+If $f(x)$ changes sign on $[a,b]$We must split the integral at each root:
 
 $$A = \int_a^b |f(x)|\,dx$$
 
 :::warning
 $\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
-actual geometric area, take the absolute value and integrate separately over regions where $f$ is
-positive and negative.
+Actual geometric area, take the absolute value and integrate separately over regions where $f$ is
+Positive and negative.
 :::
 
 ### 4.3 Area between two curves
@@ -178,12 +178,12 @@ Therefore $\int f(g(x))g'(x)\,dx = F(g(x)) + C$. $\blacksquare$
 
 **Example.** Find $\displaystyle\int 2x\sqrt{x^2+1}\,dx$.
 
-Let $u = x^2 + 1$, $du = 2x\,dx$.
+Let $u = x^2 + 1$$du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
 :::tip
-tip
+Tip
 $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
 :::
 
@@ -192,7 +192,7 @@ $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
 For a definite integral, you can either:
 
 - Substitute back to $x$ before evaluating, or
-- Change the limits: when $x = a$, $u = g(a)$; when $x = b$, $u = g(b)$.
+- Change the limits: when $x = a$$u = g(a)$; when $x = b$$u = g(b)$.
 
 <hr />
 
@@ -212,21 +212,21 @@ $$uv = \int u\frac{dv}{dx}\,dx + \int v\frac{du}{dx}\,dx$$
 
 $$\int u\frac{dv}{dx}\,dx = uv - \int v\frac{du}{dx}\,dx$$
 
-i.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
+I.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 
 ### 6.3 Choosing $u$ and $dv$
 
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
-from the leftmost category that appears.
+From the leftmost category that appears.
 
 :::warning
-warning
-after applying the formula, swap $u$ and $dv$.
+Warning
+After applying the formula, swap $u$ and $dv$.
 :::
 
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
-Let $u = x$, $dv = e^x\,dx$. Then $du = dx$, $v = e^x$.
+Let $u = x$$dv = e^x\,dx$. Then $du = dx$$v = e^x$.
 
 $$\int x e^x\,dx = x e^x - \int e^x\,dx = x e^x - e^x + C = e^x(x-1) + C$$
 
@@ -236,11 +236,11 @@ Integration by parts can produce **reduction formulas** relating $I_n$ to $I_{n-
 
 **Example.** Find a reduction formula for $I_n = \displaystyle\int x^n e^x\,dx$.
 
-Let $u = x^n$, $dv = e^x\,dx$. Then $du = nx^{n-1}\,dx$, $v = e^x$.
+Let $u = x^n$$dv = e^x\,dx$. Then $du = nx^{n-1}\,dx$$v = e^x$.
 
 $$I_n = x^n e^x - n\int x^{n-1} e^x\,dx = x^n e^x - nI_{n-1}$$
 
-This gives $I_n = x^n e^x - nI_{n-1}$, allowing us to reduce any $I_n$ to $I_0 = e^x + C$.
+This gives $I_n = x^n e^x - nI_{n-1}$Allowing us to reduce any $I_n$ to $I_0 = e^x + C$.
 
 <hr />
 
@@ -248,12 +248,12 @@ This gives $I_n = x^n e^x - nI_{n-1}$, allowing us to reduce any $I_n$ to $I_0 =
 
 ### 7.1 Formula
 
-To approximate $\displaystyle\int_a^b f(x)\,dx$, divide $[a,b]$ into $n$ equal strips of width
+To approximate $\displaystyle\int_a^b f(x)\,dx$Divide $[a,b]$ into $n$ equal strips of width
 $h = \dfrac{b-a}{n}$:
 
 $$\int_a^b f(x)\,dx \approx \frac{h}{2}\left[y_0 + 2y_1 + 2y_2 + \cdots + 2y_{n-1} + y_n\right]$$
 
-where $y_i = f(a + ih)$.
+Where $y_i = f(a + ih)$.
 
 ### 7.2 Derivation
 
@@ -272,25 +272,25 @@ $$
 
 ### 7.3 Error bound
 
-If $f''$ is continuous on $[a,b]$ and $|f''(x)| \leq M$ for all $x \in [a,b]$, then the error $E$
-satisfies
+If $f''$ is continuous on $[a,b]$ and $|f''(x)| \leq M$ for all $x \in [a,b]$Then the error $E$
+Satisfies
 
 $$|E| \leq \frac{(b-a)^3}{12n^2}M$$
 
-**Proof (sketch).** For a single strip of width $h$, the trapezium rule gives area
-$\dfrac{h}{2}[f(a) + f(a+h)]$, while the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem,
-the error per strip is $-\dfrac{h^3}{12}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips
-and using the bound $|f''| \leq M$:
+**Proof (sketch).** For a single strip of width $h$The trapezium rule gives area
+$\dfrac{h}{2}[f(a) + f(a+h)]$While the true area is $\int_a^{a+h}f(x)\,dx$. By Taylor's theorem,
+The error per strip is $-\dfrac{h^3}{12}f''(\xi)$ for some $\xi \in (a, a+h)$. Summing $n$ strips
+And using the bound $|f''| \leq M$:
 
 $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-a)^3}{12n^2}M \quad \blacksquare$$
 
 **Intuition.** The error decreases as $1/n^2$ — doubling the number of strips quarters the error.
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
-the trapezium rule is exact.
+The trapezium rule is exact.
 
 :::tip
-tip
-concave-down functions and overestimates for concave-up functions.
+Tip
+Concave-down functions and overestimates for concave-up functions.
 :::
 
 <hr />
@@ -356,11 +356,11 @@ Find $\displaystyle\int \frac{2x}{x^2+3}\,dx$.
 
 <details>
 <summary>Solution 3</summary>
-Let $u = x^2 + 3$, $du = 2x\,dx$.
+Let $u = x^2 + 3$$du = 2x\,dx$.
 
 $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C$$
 
-(Since $x^2+3 \gt{} 0$, no absolute value needed.)
+(Since $x^2+3 \gt{} 0$No absolute value needed.)
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.
@@ -374,7 +374,7 @@ Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\,dx$.
 
 <details>
 <summary>Solution 4</summary>
-Integration by parts: $u = x$, $dv = \sin x\,dx$. Then $du = dx$, $v = -\cos x$.
+Integration by parts: $u = x$$dv = \sin x\,dx$. Then $du = dx$$v = -\cos x$.
 
 $$\int x\sin x\,dx = -x\cos x + \int \cos x\,dx = -x\cos x + \sin x + C$$
 
@@ -386,12 +386,12 @@ $$\left[-x\cos x + \sin x\right]_0^{\pi/2} = \left(0 + 1\right) - \left(0 + 0\ri
 
 <details>
 <summary>Problem 5</summary>
-Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac{1}{1+x^2}\,dx$, and give an error bound given $|f''(x)| \leq 2$ on $[0,2]$.
+Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac{1}{1+x^2}\,dx$And give an error bound given $|f''(x)| \leq 2$ on $[0,2]$.
 </details>
 
 <details>
 <summary>Solution 5</summary>
-$h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
+$h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$$y_1 = 1/(1+0.25) = 0.8$$y_2 = 1/(1+1) = 0.5$$y_3 = 1/(1+2.25) \approx 0.3077$$y_4 = 1/5 = 0.2$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
@@ -409,7 +409,7 @@ Find $\displaystyle\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\,dx$.
 
 <details>
 <summary>Solution 6</summary>
-Let $u = x+1$, so $x = u-1$ and $dx = du$.
+Let $u = x+1$So $x = u-1$ and $dx = du$.
 
 $$\int \frac◆LB◆u-1◆RB◆◆LB◆\sqrt{u}◆RB◆\,du = \int(u^{1/2} - u^{-1/2})\,du = \frac{2}{3}u^{3/2} - 2u^{1/2} + C = \frac{2}{3}(x+1)^{3/2} - 2(x+1)^{1/2} + C$$
 
@@ -427,7 +427,7 @@ Find a reduction formula for $I_n = \displaystyle\int_0^{\pi/2} \sin^n x\,dx$ fo
 <summary>Solution 7</summary>
 $I_n = \int_0^{\pi/2}\sin^{n-1}x \cdot \sin x\,dx$.
 
-Let $u = \sin^{n-1}x$, $dv = \sin x\,dx$. $du = (n-1)\sin^{n-2}x\cos x\,dx$, $v = -\cos x$.
+Let $u = \sin^{n-1}x$$dv = \sin x\,dx$. $du = (n-1)\sin^{n-2}x\cos x\,dx$$v = -\cos x$.
 
 $$I_n = \left[-\sin^{n-1}x\cos x\right]_0^{\pi/2} + (n-1)\int_0^{\pi/2}\sin^{n-2}x\cos^2 x\,dx$$
 
@@ -471,11 +471,11 @@ Find $\displaystyle\int e^{2x}\cos x\,dx$.
 <summary>Solution 9</summary>
 Apply integration by parts twice. Let $I = \int e^{2x}\cos x\,dx$.
 
-First: $u = e^{2x}$, $dv = \cos x\,dx$. $du = 2e^{2x}\,dx$, $v = \sin x$.
+First: $u = e^{2x}$$dv = \cos x\,dx$. $du = 2e^{2x}\,dx$$v = \sin x$.
 
 $I = e^{2x}\sin x - 2\int e^{2x}\sin x\,dx$.
 
-Second: $u = e^{2x}$, $dv = \sin x\,dx$. $du = 2e^{2x}\,dx$, $v = -\cos x$.
+Second: $u = e^{2x}$$dv = \sin x\,dx$. $du = 2e^{2x}\,dx$$v = -\cos x$.
 
 $\int e^{2x}\sin x\,dx = -e^{2x}\cos x + 2\int e^{2x}\cos x\,dx = -e^{2x}\cos x + 2I$.
 
@@ -496,7 +496,7 @@ Evaluate $\displaystyle\int_1^e \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx$
 
 <details>
 <summary>Solution 10</summary>
-Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
+Let $u = \ln x$$du = \dfrac{1}{x}\,dx$.
 
 $$\int \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx = \int u\,du = \frac{u^2}{2} + C = \frac◆LB◆(\ln x)^2◆RB◆◆LB◆2◆RB◆ + C$$
 
@@ -509,7 +509,7 @@ Section 5.
 
 <details>
 <summary>Problem 11</summary>
-The curve $C$ has parametric equations $x = t^2$, $y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
+The curve $C$ has parametric equations $x = t^2$$y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
 </details>
 
 <details>
@@ -580,10 +580,22 @@ $\blacksquare$
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Integration**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-integration) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

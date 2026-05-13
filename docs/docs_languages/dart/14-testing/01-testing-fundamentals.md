@@ -11,53 +11,53 @@ slug: testing-fundamentals
 ## Why Test
 
 Testing is not a phase that comes after development. It is a structural property of the codebase
-that determines whether you can safely change it. The absence of tests does not mean you are moving
-faster — it means every change is a gamble with unknown odds.
+That determines whether you can safely change it. The absence of tests does not mean you are moving
+Faster — it means every change is a gamble with unknown odds.
 
 ### Regression Prevention
 
 A regression is a bug introduced by a change that was supposed to be unrelated. The cost of a
-regression grows non-linearly with time: a bug caught by a test running in CI costs seconds to fix;
-a bug caught by a user in production costs hours of investigation, a release cycle, and lost trust.
+Regression grows non-linearly with time: a bug caught by a test running in CI costs seconds to fix;
+A bug caught by a user in production costs hours of investigation, a release cycle, and lost trust.
 Tests act as a contract that the system must continue to satisfy after every change.
 
 ### Documentation
 
 A test describes the expected behavior of a unit in a form that cannot go out of date — if the test
-passes, the behavior matches the description; if it fails, either the behavior changed or the test
-needs updating. This is more reliable than comments, which have no mechanism to signal staleness.
+Passes, the behavior matches the description; if it fails, either the behavior changed or the test
+Needs updating. This is more reliable than comments, which have no mechanism to signal staleness.
 
 ### Design Improvement
 
 Code that is difficult to test is almost always poorly structured. Tight coupling, hidden
-dependencies, side effects in constructors, and god classes all surface as untestable code. Writing
-tests first (test-driven development) or writing tests immediately after forces you to confront
-these design problems while they are still cheap to fix.
+Dependencies, side effects in constructors, and god classes all surface as untestable code. Writing
+Tests first (test-driven development) or writing tests immediately after forces you to confront
+These design problems while they are still cheap to fix.
 
 ### Confidence in Refactoring
 
 Refactoring is the process of changing the internal structure of code without changing its external
-behavior. Without tests, you have no way to verify that behavior is preserved. With tests, you can
-restructure, rename, split, and merge with confidence — the tests tell you immediately if you broke
-something.
+Behavior. Without tests, you have no way to verify that behavior is preserved. With tests, you can
+Restructure, rename, split, and merge with confidence — the tests tell you immediately if you broke
+Something.
 
 ### Types of Testing
 
-| Type        | Scope                    | Speed      | What It Validates                               |
+| Type | Scope | Speed | What It Validates |
 | ----------- | ------------------------ | ---------- | ----------------------------------------------- |
-| Unit        | Single function or class | Millis     | Isolated logic correctness                      |
-| Widget      | Single Flutter widget    | 10-100ms   | Rendering, interaction, lifecycle               |
-| Integration | Multiple units together  | 100-1000ms | Unit interactions, data flow across boundaries  |
-| End-to-End  | Full application flow    | Seconds    | User-visible behavior from launch to completion |
+| Unit | Single function or class | Millis | Isolated logic correctness |
+| Widget | Single Flutter widget | 10-100ms | Rendering, interaction, lifecycle |
+| Integration | Multiple units together | 100-1000ms | Unit interactions, data flow across boundaries |
+| End-to-End | Full application flow | Seconds | User-visible behavior from launch to completion |
 
 Unit tests are the foundation. They are fast, deterministic, and cheap to maintain. Widget tests add
-coverage for the UI layer. Integration tests validate that units compose correctly. End-to-end tests
-are the most expensive and should be used sparingly — they catch issues that lower-level tests miss,
-but they are slow, flaky, and hard to debug.
+Coverage for the UI layer. Integration tests validate that units compose correctly. End-to-end tests
+Are the most expensive and should be used sparingly — they catch issues that lower-level tests miss,
+But they are slow, flaky, and hard to debug.
 
 The testing pyramid is not a suggestion — it is a cost optimization. A project with 1000 unit tests,
 100 widget tests, and 10 integration tests will outperform a project with 10 unit tests and 100
-integration tests in both defect detection and developer velocity.
+Integration tests in both defect detection and developer velocity.
 
 ## The test Package
 
@@ -97,7 +97,7 @@ test/
 ```
 
 Each file under test is suffixed with `_test.dart`. The test runner discovers tests by convention —
-no registration is required.
+No registration is required.
 
 ### The Core API
 
@@ -138,7 +138,7 @@ void main() {
 ### setUp, tearDown, setUpAll, tearDownAll
 
 `setUp` and `tearDown` run before and after **each** test. `setUpAll` and `tearDownAll` run **once**
-before and after all tests in the group. The distinction matters for expensive resources:
+Before and after all tests in the group. The distinction matters for expensive resources:
 
 ```dart
 group('Database Integration', () {
@@ -171,14 +171,14 @@ group('Database Integration', () {
 ```
 
 `setUpAll` is for resources that are expensive to create (database connections, HTTP servers, test
-fixtures). `setUp` is for resetting state between tests. Never share mutable state across tests
-without resetting it — tests must be independent and order-invariant.
+Fixtures). `setUp` is for resetting state between tests. Never share mutable state across tests
+Without resetting it — tests must be independent and order-invariant.
 
 ### expect and the Matcher System
 
 `expect(actual, matcher)` is the core assertion. The `actual` value is evaluated immediately; the
 `matcher` describes the expected property. When the match fails, the test framework produces a
-human-readable diff:
+Human-readable diff:
 
 ```dart
 expect(actual, equals(expected));
@@ -236,7 +236,7 @@ expect(value, isA<User>().having((u) => u.name, 'name', 'Alice'));
 ```
 
 `isA<T>()` checks `value is T` at runtime. The `.having()` combinator lets you assert properties of
-the matched object — the second argument is a description used in failure messages.
+The matched object — the second argument is a description used in failure messages.
 
 ### Numeric Comparisons
 
@@ -249,7 +249,7 @@ expect(3.14, closeTo(3.0, 0.2));  // |actual - expected| <= delta
 ```
 
 `closeTo` is essential for floating-point comparisons. Never use `equals` for doubles — rounding
-errors will cause flaky tests.
+Errors will cause flaky tests.
 
 ### Collections
 
@@ -347,7 +347,7 @@ test('email validation', () {
 ```
 
 For more complex matchers, extend `CustomMatcher` which provides `featureValueOf` for property
-extraction:
+Extraction:
 
 ```dart
 class HasLength extends CustomMatcher {
@@ -372,7 +372,7 @@ expect('hello', HasLength(greaterThan(0)));
 ### Testing Pure Functions
 
 Pure functions are the easiest to test — no dependencies, no side effects, no setup. Input goes in,
-output comes out:
+Output comes out:
 
 ```dart
 // lib/src/math/geometry.dart
@@ -403,7 +403,7 @@ void main() {
 ### Testing Classes with Dependencies
 
 When a class depends on external services (repositories, API clients, caches), inject those
-dependencies as abstract interfaces and substitute test doubles:
+Dependencies as abstract interfaces and substitute test doubles:
 
 ```dart
 // lib/src/auth/authenticator.dart
@@ -519,13 +519,13 @@ test('calculates total with tax', () {
 ```
 
 Keep the phases visually distinct with blank lines. This makes tests scannable and makes it obvious
-when a test is doing too much in one phase.
+When a test is doing too much in one phase.
 
 ### Test Organization
 
-Mirror the source structure. If `lib/src/orders/order_service.dart` contains `OrderService`, the
-test lives at `test/src/orders/order_service_test.dart`. This is not just convention — it makes
-navigation trivial when the directory tree is the same in both `lib/` and `test/`.
+Mirror the source structure. If `lib/src/orders/order_service.dart` contains `OrderService`The
+Test lives at `test/src/orders/order_service_test.dart`. This is not just convention — it makes
+Navigation trivial when the directory tree is the same in both `lib/` and `test/`.
 
 Within a test file, use `group()` to organize by method, then by scenario:
 
@@ -557,7 +557,7 @@ void main() {
 ### mockito
 
 `mockito` is the dominant mocking library in the Dart ecosystem. It uses code generation to create
-mock classes that record calls and return configurable values.
+Mock classes that record calls and return configurable values.
 
 ```yaml
 # pubspec.yaml
@@ -660,7 +660,7 @@ test('logs analytics event on login', () async {
 ### reset
 
 `reset(mock)` clears all stubbings and call history on a mock. Use it when you want to reuse a mock
-across tests without recreating it:
+Across tests without recreating it:
 
 ```dart
 tearDown(() {
@@ -670,7 +670,7 @@ tearDown(() {
 
 ### Argument Matchers
 
-mockito provides argument matchers for flexible stubbing and verification:
+Mockito provides argument matchers for flexible stubbing and verification:
 
 ```dart
 import 'package:mockito/annotations.dart';
@@ -701,7 +701,7 @@ test('sends correct notification', () async {
 ### mocktail
 
 `mocktail` is a simpler alternative that does not require code generation. You extend `Mock`
-directly:
+Directly:
 
 ```yaml
 # pubspec.yaml
@@ -735,23 +735,23 @@ void main() {
 
 ### mockito vs mocktail
 
-| Factor        | mockito                               | mocktail                         |
+| Factor | mockito | mocktail |
 | ------------- | ------------------------------------- | -------------------------------- |
-| Code gen      | Required (`build_runner`)             | None                             |
-| Setup         | Annotate classes, run generator       | Extend `Mock` directly           |
-| Fallback vals | Not required                          | Required for non-nullable params |
-| API           | `when(mock.method()).thenReturn(...)` | `when(() => mock.method())...`   |
-| Ecosystem     | Larger, more mature                   | Lighter, simpler                 |
-| Type safety   | Strong (generated stubs)              | Weaker (manual `implements`)     |
+| Code gen | Required (`build_runner`) | None |
+| Setup | Annotate classes, run generator | Extend `Mock` directly |
+| Fallback vals | Not required | Required for non-nullable params |
+| API | `when(mock.method()).thenReturn(...)` | `when(() => mock.method())...` |
+| Ecosystem | Larger, more mature | Lighter, simpler |
+| Type safety | Strong (generated stubs) | Weaker (manual `implements`) |
 
 Use `mocktail` for small projects or when you want zero build-time overhead. Use `mockito` for
-larger projects where generated mocks provide stronger type guarantees and better IDE support.
+Larger projects where generated mocks provide stronger type guarantees and better IDE support.
 
 ## Async Testing
 
 ### Testing Future-Returning Functions
 
-A test body can be `async`. The test runner `await`s the returned Future:
+A test body can be `async`. The test runner `await`S the returned Future:
 
 ```dart
 test('fetches data from API', () async {
@@ -764,7 +764,7 @@ test('fetches data from API', () async {
 ```
 
 If the Future completes with an error and no `try/catch` wraps it, the test fails with the error
-message and stack trace. This is correct behavior — the test framework catches the error for you:
+Message and stack trace. This is correct behavior — the test framework catches the error for you:
 
 ```dart
 test('propagates API errors', () async {
@@ -783,7 +783,7 @@ test('propagates API errors', () async {
 ### expectLater for Streams
 
 `expectLater` returns a Future that completes when the matcher is satisfied. This is essential for
-testing streams because you cannot `await` a stream in a normal `expect`:
+Testing streams because you cannot `await` a stream in a normal `expect`:
 
 ```dart
 test('emits values in order', () {
@@ -835,7 +835,7 @@ expectLater(
 ### FakeAsync and the async Package
 
 `FakeAsync` from `package:async` gives you deterministic control over time in tests. It replaces the
-real event loop with a fake one that only advances when you tell it to:
+Real event loop with a fake one that only advances when you tell it to:
 
 ```yaml
 dev_dependencies:
@@ -926,8 +926,8 @@ test('rejects when completer completes with error', () async {
 ## Property-Based Testing
 
 Traditional tests check specific inputs against expected outputs. Property-based testing checks that
-a **property** (invariant) holds across a large space of random inputs. This catches edge cases that
-hand-written tests miss.
+A **property** (invariant) holds across a large space of random inputs. This catches edge cases that
+Hand-written tests miss.
 
 ### Using check (package:check_v1)
 
@@ -1008,7 +1008,7 @@ Do not use it for:
 - Properties that are expensive to check (O(n^2) or worse for large inputs).
 
 Property-based tests are complementary to example-based tests. They find edge cases; example-based
-tests document specific behaviors. Use both.
+Tests document specific behaviors. Use both.
 
 ## Test Coverage
 
@@ -1023,7 +1023,7 @@ flutter test --coverage
 ```
 
 This produces `coverage/lcov.info` — a machine-readable file listing every line in your source code
-and whether it was executed during the test run.
+And whether it was executed during the test run.
 
 ### Viewing Coverage with genhtml
 
@@ -1040,7 +1040,7 @@ open coverage/html/index.html
 ```
 
 Each source file gets a page showing which lines are covered (green), uncovered (red), or not
-relevant (gray).
+Relevant (gray).
 
 ### Coverage Thresholds in CI
 
@@ -1073,7 +1073,7 @@ In GitHub Actions:
 ### Interpreting Coverage Reports
 
 Coverage is a necessary but not sufficient metric. 100% line coverage does not mean 100%
-correctness. Coverage tells you what code was **executed**, not whether the execution was
+Correctness. Coverage tells you what code was **executed**, not whether the execution was
 **verified**.
 
 ```dart
@@ -1092,8 +1092,8 @@ test('divide does not crash', () {
 ```
 
 Branch coverage is more informative than line coverage — it measures whether each conditional branch
-was taken. Some tools support this, but the Dart ecosystem's support is limited. Focus on line
-coverage as a floor and supplement with manual review of assertion quality.
+Was taken. Some tools support this, but the Dart ecosystem's support is limited. Focus on line
+Coverage as a floor and supplement with manual review of assertion quality.
 
 ### Excluding Files from Coverage
 
@@ -1108,7 +1108,7 @@ genhtml coverage/lcov.info \
 ```
 
 Exclude generated files, test helpers, and platform-specific code that cannot be tested on the CI
-platform.
+Platform.
 
 ## Running Tests
 
@@ -1116,7 +1116,7 @@ platform.
 
 - `dart test` — runs pure Dart tests (no Flutter SDK). Use for packages, servers, CLI tools.
 - `flutter test` — runs Flutter-aware tests (includes widget testing, golden tests). Use for Flutter
-  apps and packages that depend on Flutter.
+ apps and packages that depend on Flutter.
 
 ### Filtering Tests
 
@@ -1164,8 +1164,8 @@ flutter test -j 1
 ```
 
 Tests must be independent — they must not share mutable state, depend on execution order, or compete
-for external resources (ports, files). If tests fail under parallelism but pass sequentially, you
-have a test isolation bug.
+For external resources (ports, files). If tests fail under parallelism but pass sequentially, you
+Have a test isolation bug.
 
 ### Reporters
 
@@ -1245,7 +1245,7 @@ test('total increases when item is added', () {
 ```
 
 Tests that reach into private internals break when you refactor. Tests that verify public behavior
-survive refactoring.
+Survive refactoring.
 
 ### 2. Tests That Depend on Execution Order
 
@@ -1381,12 +1381,20 @@ test('debounce works', () {
 ### 9. Golden Tests Without Baseline Updates
 
 Golden tests compare widget rendering against a saved image. When you intentionally change the UI,
-the golden test fails until you update the baseline. Forgetting to update leads to red tests that
-everyone ignores — at which point the golden test has zero value. Run
+The golden test fails until you update the baseline. Forgetting to update leads to red tests that
+Everyone ignores — at which point the golden test has zero value. Run
 `flutter test --update-goldens` when you intentionally change the UI, and review the diff carefully.
 
 ### 10. Coverage as a Vanity Metric
 
 100% coverage is not the goal. A test suite with 80% coverage and strong assertions is more valuable
-than one with 100% coverage and weak assertions. Coverage measures execution, not correctness. Use
-it as a floor, not a ceiling, and supplement it with code review of assertion quality.
+Than one with 100% coverage and weak assertions. Coverage measures execution, not correctness. Use
+It as a floor, not a ceiling, and supplement it with code review of assertion quality.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

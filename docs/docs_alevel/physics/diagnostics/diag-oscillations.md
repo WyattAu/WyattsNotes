@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A particle of mass $0.50\,\text{kg}$ moves in a straight line. Its displacement from a fixed point $O$ is given by $x = 0.15\cos(4\pi t + \pi/3)\,\text{m}$, where $t$ is in seconds.
+A particle of mass $0.50\,\text{kg}$ moves in a straight line. Its displacement from a fixed point $O$ is given by $x = 0.15\cos(4\pi t + \pi/3)\,\text{m}$Where $t$ is in seconds.
 
 (a) Calculate the amplitude, angular frequency, period, and frequency of the motion.
 
@@ -34,7 +34,7 @@ A particle of mass $0.50\,\text{kg}$ moves in a straight line. Its displacement 
 
 Maximum velocity: $v_{\max} = A\omega = 0.15 \times 4\pi = 1.885\,\text{m}\,\text{s}^{-1}$
 
-This occurs when $\sin(4\pi t + \pi/3) = \pm 1$, i.e. $x = 0$ (equilibrium position).
+This occurs when $\sin(4\pi t + \pi/3) = \pm 1$I.e. $x = 0$ (equilibrium position).
 
 Acceleration: $a = -A\omega^2\cos(\omega t + \phi) = -\omega^2 x$
 
@@ -44,7 +44,7 @@ This occurs when $|x| = A = 0.15\,\text{m}$ (maximum displacement).
 
 (c) KE $=$ PE when $\frac{1}{2}mv^2 = \frac{1}{2}m\omega^2 x^2$.
 
-Since $E_k + E_p = \frac{1}{2}m\omega^2 A^2$, KE $=$ PE implies each is half the total:
+Since $E_k + E_p = \frac{1}{2}m\omega^2 A^2$KE $=$ PE implies each is half the total:
 
 $$\frac{1}{2}m\omega^2 x^2 = \frac{1}{4}m\omega^2 A^2 \Rightarrow x^2 = \frac{A^2}{2} \Rightarrow x = \pm\frac◆LB◆A◆RB◆◆LB◆\sqrt{2}◆RB◆$$
 
@@ -73,7 +73,7 @@ The first time is $t = 0.104\,\text{s}$ (when $x = -A/\sqrt{2}$).
 
 **Question:**
 
-A mass-spring system undergoes damped harmonic oscillations. The displacement is given by $x = A_0 e^{-\gamma t}\cos(\omega_d t)$, where $\gamma = 0.50\,\text{s}^{-1}$ and $\omega_d = 8.0\,\text{rad}\,\text{s}^{-1}$.
+A mass-spring system undergoes damped harmonic oscillations. The displacement is given by $x = A_0 e^{-\gamma t}\cos(\omega_d t)$Where $\gamma = 0.50\,\text{s}^{-1}$ and $\omega_d = 8.0\,\text{rad}\,\text{s}^{-1}$.
 
 (a) Calculate the time for the amplitude to halve.
 
@@ -133,7 +133,7 @@ Natural frequency $f_0 = \omega_0/(2\pi) = 0.498\,\text{Hz}$
 
 $$A_{\text{res}} = \frac◆LB◆F_0/m◆RB◆◆LB◆2\gamma\omega_0◆RB◆$$
 
-where $\gamma = b/(2m) = 0.10/(2 \times 0.20) = 0.25\,\text{s}^{-1}$
+Where $\gamma = b/(2m) = 0.10/(2 \times 0.20) = 0.25\,\text{s}^{-1}$
 
 $$A_{\text{res}} = \frac◆LB◆0.50/0.20◆RB◆◆LB◆2 \times 0.25 \times 3.132◆RB◆ = \frac{2.50}{1.566} = 1.596\,\text{m}$$
 
@@ -194,9 +194,9 @@ The acceleration of the lift changes the equilibrium position but not the period
 
 **Question:**
 
-A mechanical oscillator (mass $m$, spring constant $k$, damping constant $b$) is driven by a force $F = F_0\cos(\omega t)$. The analogous electrical circuit consists of an inductor $L$, capacitor $C$, and resistor $R$ in series driven by an AC voltage $V = V_0\cos(\omega t)$.
+A mechanical oscillator (mass $m$Spring constant $k$Damping constant $b$) is driven by a force $F = F_0\cos(\omega t)$. The analogous electrical circuit consists of an inductor $L$Capacitor $C$And resistor $R$ in series driven by an AC voltage $V = V_0\cos(\omega t)$.
 
-Given: $m = 0.50\,\text{kg}$, $k = 200\,\text{N}\,\text{m}^{-1}$, $b = 2.0\,\text{N}\,\text{s}\,\text{m}^{-1}$, $L = 0.10\,\text{H}$, $C = 25\,\mu\text{F}$, $R = 40\,\Omega$.
+Given: $m = 0.50\,\text{kg}$$k = 200\,\text{N}\,\text{m}^{-1}$$b = 2.0\,\text{N}\,\text{s}\,\text{m}^{-1}$$L = 0.10\,\text{H}$$C = 25\,\mu\text{F}$$R = 40\,\Omega$.
 
 (a) Show that the natural frequency of the mechanical oscillator equals the resonant frequency of the electrical circuit.
 
@@ -210,13 +210,13 @@ Given: $m = 0.50\,\text{kg}$, $k = 200\,\text{N}\,\text{m}^{-1}$, $b = 2.0\,\tex
 
 Electrical: $\omega_0 = 1/\sqrt{LC} = 1/\sqrt◆LB◆0.10 \times 25 \times 10^{-6}◆RB◆ = 1/\sqrt◆LB◆2.5 \times 10^{-6}◆RB◆ = 1/(1.581 \times 10^{-3}) = 632.5\,\text{rad}\,\text{s}^{-1}$
 
-These are **not** equal. For the analogy to hold, the corresponding parameters must be chosen consistently. The mechanical-electrical analogies are: $m \leftrightarrow L$, $k \leftrightarrow 1/C$, $b \leftrightarrow R$.
+These are **not** equal. For the analogy to hold, the corresponding parameters must be chosen consistently. The mechanical-electrical analogies are: $m \leftrightarrow L$$k \leftrightarrow 1/C$$b \leftrightarrow R$.
 
-For the frequencies to match, we need $\sqrt{k/m} = 1/\sqrt{LC}$, i.e. $k/m = 1/(LC)$.
+For the frequencies to match, we need $\sqrt{k/m} = 1/\sqrt{LC}$I.e. $k/m = 1/(LC)$.
 
 Check: $k/m = 200/0.50 = 400$ and $1/(LC) = 1/(0.10 \times 25 \times 10^{-6}) = 400000$. These are not equal, so the systems are not analogous as given.
 
-For a true analogy with the given mechanical parameters, the electrical components would need: $LC = m/k = 0.50/200 = 2.5 \times 10^{-3}\,\text{s}^2$, e.g. $L = 0.50\,\text{H}$, $C = 5.0 \times 10^{-3}\,\text{F}$.
+For a true analogy with the given mechanical parameters, the electrical components would need: $LC = m/k = 0.50/200 = 2.5 \times 10^{-3}\,\text{s}^2$E.g. $L = 0.50\,\text{H}$$C = 5.0 \times 10^{-3}\,\text{F}$.
 
 (b) For the mechanical oscillator at resonance:
 
@@ -264,7 +264,7 @@ By Newton's second law: $ma = F$
 $$\rho A L \ddot{x} = -2\rho A g x$$
 $$\ddot{x} = -\frac{2g}{L} x$$
 
-This is of the form $\ddot{x} = -\omega^2 x$, confirming SHM with $\omega^2 = 2g/L$.
+This is of the form $\ddot{x} = -\omega^2 x$Confirming SHM with $\omega^2 = 2g/L$.
 
 (b) $\omega = \sqrt{2g/L} = \sqrt◆LB◆2 \times 9.81/0.80◆RB◆ = \sqrt{24.53} = 4.953\,\text{rad}\,\text{s}^{-1}$
 

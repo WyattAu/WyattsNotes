@@ -8,29 +8,29 @@ categories:
   - cpp
 slug: code-coverage
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Code coverage is a metric used to calculate the percentage of source code executed during the
-testing phase. In high-reliability C++ systems, coverage analysis is essential for identifying
-untested logical branches and dead code.
+Testing phase. In high-reliability C++ systems, coverage analysis is essential for identifying
+Untested logical branches and dead code.
 
 Unlike dynamic analysis (Sanitizers) which checks for correctness, coverage checking checks for
-completeness.
+Completeness.
 
 ## Instrumentation Mechanics
 
 Coverage tools work by **instrumenting** the binary. During compilation, the compiler inserts hidden
-counter instructions at the entry points of every **Basic Block** (a linear sequence of code with
-one entry and one exit).
+Counter instructions at the entry points of every **Basic Block** (a linear sequence of code with
+One entry and one exit).
 
 When the program runs, these counters increment. Upon process termination, the runtime writes the
-counter data to raw profile files on the disk, which are then mapped back to the source code by
-analysis tools.
+Counter data to raw profile files on the disk, which are then mapped back to the source code by
+Analysis tools.
 
 :::warning
 Performance Overhead Instrumentation significantly increases binary size and execution
-time. Coverage builds should never be used for performance benchmarking or production release
-artifacts.
+Time. Coverage builds should never be used for performance benchmarking or production release
+Artifacts.
 :::
 
 ## The Two Ecosystems
@@ -38,9 +38,9 @@ artifacts.
 There are two primary coverage implementations in the modern C++ landscape:
 
 1. **Gcov (GCC):** The traditional approach. Generates `.gcno` (notes) files during build and
-   `.gcda` (data) files during execution.
+ `.gcda` (data) files during execution.
 2. **Source-Based Coverage (Clang/LLVM):** The modern approach. Uses the LLVM profile runtime. It is
-   generally faster and handles C++ templates and inlined functions with greater precision.
+ generally faster and handles C++ templates and inlined functions with greater precision.
 
 ## 1. GCC Workflow: gcov & lcov
 
@@ -55,7 +55,7 @@ This workflow applies to GCC on Linux and MinGW-w64 on Windows.
 ### Step 1: Compilation Flags
 
 To instrument the binary, pass `--coverage` to both the compiler and the linker. This is a shorthand
-for `-fprofile-arcs -ftest-coverage` and linking `libgcov`.
+For `-fprofile-arcs -ftest-coverage` and linking `libgcov`.
 
 ```bash
 g++ -std=c++23 --coverage -g -O0 main.cpp -o app
@@ -124,7 +124,7 @@ llvm-profdata merge -sparse app-*.profraw -o app.profdata
 ### Step 4: Visualization
 
 Use `llvm-cov` to display the results. Note that `llvm-cov` requires the executable to map the
-counters back to the source.
+Counters back to the source.
 
 ```bash
 # Console Summary
@@ -137,8 +137,8 @@ llvm-cov show ./app -instr-profile=app.profdata -format=html -output-dir=coverag
 ## CMake Integration Strategy
 
 To maintain a clean build architecture, coverage logic should be encapsulated within the build
-system but guarded by a configuration option. We do not want coverage flags leaking into Release or
-standard Debug builds.
+System but guarded by a configuration option. We do not want coverage flags leaking into Release or
+Standard Debug builds.
 
 ### Implementation
 
@@ -165,7 +165,7 @@ endif()
 ### Defining a Coverage Target
 
 Instead of manually typing `lcov` or `llvm-cov` commands, define a custom CMake target to automate
-the generation.
+The generation.
 
 ```cmake
 if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -196,17 +196,17 @@ endif()
 ## Continuous Integration (CI) Best Practices
 
 In a CI environment (GitHub Actions, GitLab CI), the goal is to fail the build if coverage drops
-below a threshold or to upload reports to visualization services.
+Below a threshold or to upload reports to visualization services.
 
 ### 1. Artifact Upload
 
 Do not commit coverage artifacts. Instead, configure the CI pipeline to upload the `coverage_html`
-directory as a build artifact for manual inspection.
+Directory as a build artifact for manual inspection.
 
 ### 2. Services (Codecov / Coveralls)
 
 Services like Codecov ingest the raw reports (XML or LCOV format) and provide pull-request
-integration (e.g., "This PR decreases coverage by 2%").
+Integration (e.g., "This PR decreases coverage by 2%").
 
 To support these services, `llvm-cov` can export to LCOV format:
 
@@ -227,12 +227,12 @@ Lines: 847/1200 (70.6%)
 ```
 
 **Limitation:** A line containing a complex ternary expression counts as "covered" if any branch
-executes. Line coverage alone can give a false sense of completeness.
+Executes. Line coverage alone can give a false sense of completeness.
 
 ### Branch Coverage
 
 Measures the percentage of conditional branches (if/else, switch, ternary) where **both** the true
-and false paths have been taken.
+And false paths have been taken.
 
 ```text
 Branches: 234/300 (78.0%)
@@ -252,8 +252,8 @@ int classify(int x) {
 }
 ```
 
-If tests only call `classify(1)` and `classify(-1)`, line coverage is 100% (all lines execute), but
-branch coverage is 83% (the `return 0` path is never taken).
+If tests only call `classify(1)` and `classify(-1)`Line coverage is 100% (all lines execute), but
+Branch coverage is 83% (the `return 0` path is never taken).
 
 ### Function Coverage
 
@@ -264,19 +264,19 @@ Functions: 45/50 (90.0%)
 ```
 
 **Limitation:** Calling a function once only proves the entry point is reached. It does not verify
-internal logic.
+Internal logic.
 
 ### Metric Comparison
 
-| Metric        | Granularity              | False Confidence Risk | Cost to Achieve High % |
+| Metric | Granularity | False Confidence Risk | Cost to Achieve High % |
 | ------------- | ------------------------ | --------------------- | ---------------------- |
-| **Line**      | Coarse                   | High                  | Low                    |
-| **Branch**    | Medium                   | Low                   | Medium                 |
-| **Function**  | Coarse (per-function)    | High                  | Low                    |
-| **Condition** | Fine (per-subexpression) | Very Low              | High                   |
+| **Line** | Coarse | High | Low |
+| **Branch** | Medium | Low | Medium |
+| **Function** | Coarse (per-function) | High | Low |
+| **Condition** | Fine (per-subexpression) | Very Low | High |
 
 **Industry standard for critical systems:** Branch coverage &gt; 80%, line coverage &gt; 90%. For
-safety-critical (automotive, medical), branch coverage &gt; 95% is often required (per ISO 26262 /
+Safety-critical (automotive, medical), branch coverage &gt; 95% is often required (per ISO 26262 /
 IEC 62304).
 
 ## gcov File Format: `.gcno` and `.gcda`
@@ -312,11 +312,11 @@ Analyze:  gcov main.gcno main.gcda → main.cpp.gcov
 ### Common File Issues
 
 - **Stale `.gcda` files:** If you recompile without running the program, old `.gcda` files from a
-  previous run remain. Always run the program after recompilation, or delete `.gcda` files before
-  analysis.
+ previous run remain. Always run the program after recompilation, or delete `.gcda` files before
+ analysis.
 - **Missing `.gcda` files:** If the program crashes (segfault) without calling `atexit()` handlers,
-  `.gcda` files may not be written. Use `__gcov_flush()` to force-write coverage data at specific
-  checkpoints.
+ `.gcda` files may not be written. Use `__gcov_flush()` to force-write coverage data at specific
+ checkpoints.
 
 ```cpp
 #include <gcov.h>  // GCC-specific
@@ -331,7 +331,7 @@ void critical_section() {
 ## Code Coverage Exclude Patterns
 
 Not all code should contribute to coverage metrics. Test harnesses, generated code, and third-party
-templates inflate coverage numbers without providing value.
+Templates inflate coverage numbers without providing value.
 
 ### Excluding Files with lcov
 
@@ -346,7 +346,7 @@ lcov --capture --directory . --output-file coverage.info \
 ### Excluding Code with Compiler Attributes
 
 GCC and Clang support the `__attribute__((no_sanitize("coverage")))` attribute (Clang) or pragmas to
-exclude specific functions:
+Exclude specific functions:
 
 ```cpp
 // GCC: exclude a function from coverage
@@ -365,7 +365,7 @@ void debug_only_function() {
 
 ### Excluding Lines with Annotations
 
-lcov respects exclusion markers in source comments:
+Lcov respects exclusion markers in source comments:
 
 ```cpp
 // LCOV_EXCL_START
@@ -420,7 +420,7 @@ llvm-cov show ./app \
 ```
 
 Clang's HTML report is generally considered more readable than lcov's, with color-coded regions and
-branch coverage percentages inline.
+Branch coverage percentages inline.
 
 ### Coverage Report Integration (Codecov Example)
 
@@ -513,25 +513,33 @@ endif()
 ## Common Pitfalls
 
 1. **Running coverage builds in production:** Coverage instrumentation adds 20-50% overhead. Never
-   deploy instrumented binaries to production. Use separate build configurations for coverage and
-   release.
+ deploy instrumented binaries to production. Use separate build configurations for coverage and
+ release.
 2. **Stale `.gcda` files from previous runs:** Always clean the build directory or delete `.gcda`
-   files before running tests. Otherwise, coverage data from a previous run may be merged with the
-   current run, producing inaccurate results.
+ files before running tests. Otherwise, coverage data from a previous run may be merged with the
+ current run, producing inaccurate results.
 3. **Optimized builds hiding dead code:** Compiling with `-O2` or higher may eliminate unreachable
-   code, causing it to appear as "not covered" rather than "dead code." Always compile with `-O0`
-   for coverage builds.
+ code, causing it to appear as "not covered" rather than "dead code." Always compile with `-O0`
+ for coverage builds.
 4. **Coverage of third-party code:** Including system headers or vcpkg libraries in coverage reports
-   inflates numbers. Always filter them out with `lcov --remove` or `llvm-cov` exclude paths.
+ inflates numbers. Always filter them out with `lcov --remove` or `llvm-cov` exclude paths.
 5. **Multi-process coverage merge:** When running tests in parallel (e.g., `ctest -j8`), each
-   process writes to the same `.gcda` file. Use `LLVM_PROFILE_FILE="app-%p.profraw"` (Clang) or set
-   `GCOV_PREFIX` (GCC) to separate output per process.
+ process writes to the same `.gcda` file. Use `LLVM_PROFILE_FILE="app-%p.profraw"` (Clang) or set
+ `GCOV_PREFIX` (GCC) to separate output per process.
 
 ## See Also
 
 - [Unit Tests](5_unit_tests.md) — Writing tests that drive coverage analysis
 - [Build Caching](4_build_caching.md) — Avoiding cache poisoning with instrumented builds
 - [CMake Targets and Properties](1_cmake_targets_properties_generator.md) — Custom targets for
-  coverage automation
+ coverage automation
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

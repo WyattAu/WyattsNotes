@@ -45,3 +45,15 @@ Complete revision notes for IB Computer Science, covering the full syllabus with
 - **A-Level Computer Science:** [A-Level Computer Science](https://alevel.wyattau.com/docs/computer-science)
 - **DSE Computer Science:** [DSE Computer Science](https://academics.wyattau.com/docs/dse/computer-science)
 - **University Computer Science:** [University Computer Science](https://university.wyattau.com/docs/computer-science)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

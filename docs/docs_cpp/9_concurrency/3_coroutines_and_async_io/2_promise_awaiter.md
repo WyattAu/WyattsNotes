@@ -11,20 +11,20 @@ slug: coroutine-handle-promise-awaiter
 # The Coroutine Handle, Promise Type, and Awaiter
 
 This section covers the three interacting components of the C++ coroutine machinery, `co_await`
-expression semantics, the promise type vs awaiter distinction, `get_return_object()`,
+Expression semantics, the promise type vs awaiter distinction, `get_return_object()`
 `await_transform` for custom suspension behavior, and `yield_value`/`return_value` for value
-communication.
+Communication.
 
 ## The Coroutine Machinery Overview
 
 The C++ coroutine mechanism consists of three interacting components [N4950 §9.5.4]:
 
 1. **Coroutine handle** (`std::coroutine_handle<P>`): a non-owning reference to the coroutine frame
-   [N4950 §21.4.4].
+ [N4950 §21.4.4].
 2. **Promise type**: the communication channel between the coroutine author and the caller. Defined
-   by the `promise_type` nested type inside the return type [N4950 §9.5.4.3].
+ by the `promise_type` nested type inside the return type [N4950 §9.5.4.3].
 3. **Awaiter type**: the type that controls what happens at each `co_await` suspension point.
-   Discovered via the awaitable interface [N4950 §9.5.4.3].
+ Discovered via the awaitable interface [N4950 §9.5.4.3].
 
 The relationship between these three is:
 
@@ -38,20 +38,20 @@ The expression `co_await expr` is transformed by the compiler into a sequence of
 **awaiter** object. The awaiter is obtained by the following lookup chain [N4950 §9.5.4.3]:
 
 1. If `expr` has an `operator co_await` member or non-member overload, the result of
-   `expr.operator co_await()` (or `operator co_await(expr)`) is the awaiter.
-2. Otherwise, if the promise type has `await_transform`, then `promise.await_transform(expr)` is
-   called, and the result is the awaiter.
+ `expr.operator co_await()` (or `operator co_await(expr)`) is the awaiter.
+2. Otherwise, if the promise type has `await_transform`Then `promise.await_transform(expr)` is
+ called, and the result is the awaiter.
 3. Otherwise, `expr` itself is the awaiter.
 
 ### Proof of `co_await` Transformation Steps
 
 **Claim:** The compiler transforms `co_await expr` into a well-defined sequence of awaiter method
-calls [N4950 §9.5.4.3].
+Calls [N4950 §9.5.4.3].
 
 **Proof:**
 
 1. The compiler first resolves the awaiter through the lookup chain defined above (operator
-   `co_await`, `await_transform`, or identity).
+ `co_await``await_transform`Or identity).
 2. Let the resolved awaiter be `a`. The compiler generates code equivalent to:
 
    ```cpp
@@ -79,9 +79,9 @@ calls [N4950 §9.5.4.3].
    ```
 
 3. The `await_ready()` check short-circuits suspension for already-completed awaitables (e.g.,
-   immediately available values).
+ immediately available values).
 4. The `await_suspend()` call is the suspension mechanism — it determines whether the coroutine
-   actually suspends and what happens upon resumption.
+ actually suspends and what happens upon resumption.
 5. The `await_resume()` call produces the value visible to the `co_await` expression.
 
 $\square$
@@ -101,45 +101,45 @@ awaiter.await_resume();
 
 The three methods that an awaiter must provide [N4950 §9.5.4.3]:
 
-| Method                  | Return type                              | Purpose                                                  |
+| Method | Return type | Purpose |
 | :---------------------- | :--------------------------------------- | :------------------------------------------------------- |
-| `await_ready()`         | `bool`                                   | If `true`, skip suspension and proceed directly          |
-| `await_suspend(handle)` | `void`, `bool`, or `coroutine_handle<Z>` | Called when coroutine suspends; controls resumption      |
-| `await_resume()`        | any type                                 | Produces the result of `co_await expr`; called on resume |
+| `await_ready()` | `bool` | If `true`Skip suspension and proceed directly |
+| `await_suspend(handle)` | `void``bool`Or `coroutine_handle<Z>` | Called when coroutine suspends; controls resumption |
+| `await_resume()` | any type | Produces the result of `co_await expr`; called on resume |
 
 The return type of `await_suspend` is critical [N4950 §9.5.4.3]:
 
 - **`void`**: the coroutine is suspended; control returns to the caller.
-- **`bool`**: if `true`, the coroutine is suspended; if `false`, it resumes immediately.
+- **`bool`**: if `true`The coroutine is suspended; if `false`It resumes immediately.
 - **`coroutine_handle<Z>`**: the coroutine is suspended, and the returned handle is resumed
-  (symmetric transfer).
+ (symmetric transfer).
 
 ### Detailed `await_suspend` Return Type Semantics
 
-| Return Type           | Coroutine State After | What Happens                                                                                                          |
+| Return Type | Coroutine State After | What Happens |
 | :-------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| `void`                | Suspended             | Control returns to the caller/resumer. The coroutine is suspended until something explicitly calls `resume()`.        |
-| `bool` (true)         | Suspended             | Same as `void`. Used when the decision to suspend is conditional.                                                     |
-| `bool` (false)        | Running               | The coroutine continues immediately from the resume point. No suspension occurs.                                      |
-| `coroutine_handle<Z>` | Suspended             | The returned handle is resumed immediately. Used for symmetric transfer (tail-call optimization of coroutine chains). |
+| `void` | Suspended | Control returns to the caller/resumer. The coroutine is suspended until something explicitly calls `resume()`. |
+| `bool` (true) | Suspended | Same as `void`. Used when the decision to suspend is conditional. |
+| `bool` (false) | Running | The coroutine continues immediately from the resume point. No suspension occurs. |
+| `coroutine_handle<Z>` | Suspended | The returned handle is resumed immediately. Used for symmetric transfer (tail-call optimization of coroutine chains). |
 
 ## Promise Type vs Awaiter Type
 
 The **promise type** is the bidirectional communication channel between the coroutine and its
-caller. The **awaiter type** is the mechanism that controls individual suspension points.
+Caller. The **awaiter type** is the mechanism that controls individual suspension points.
 
-| Aspect      | Promise Type                                            | Awaiter Type                                          |
+| Aspect | Promise Type | Awaiter Type |
 | :---------- | :------------------------------------------------------ | :---------------------------------------------------- |
-| Lifetime    | Lives for the entire duration of the coroutine frame    | Temporary — lives only for the duration of `co_await` |
-| Purpose     | Manages coroutine state, return values, exceptions      | Controls individual suspend/resume behavior           |
-| Required by | Every coroutine (via `promise_type` alias)              | Every `co_await` expression                           |
-| Key methods | `get_return_object`, `initial_suspend`, `final_suspend` | `await_ready`, `await_suspend`, `await_resume`        |
+| Lifetime | Lives for the entire duration of the coroutine frame | Temporary — lives only for the duration of `co_await` |
+| Purpose | Manages coroutine state, return values, exceptions | Controls individual suspend/resume behavior |
+| Required by | Every coroutine (via `promise_type` alias) | Every `co_await` expression |
+| Key methods | `get_return_object``initial_suspend``final_suspend` | `await_ready``await_suspend``await_resume` |
 
 ## `promise_type::get_return_object()`
 
 The `get_return_object()` method [N4950 §9.5.4.3] is called **before** the coroutine body begins
-execution. It produces the value that is returned to the caller. Typically, this is a wrapper type
-that holds a `std::coroutine_handle` and provides a convenient API:
+Execution. It produces the value that is returned to the caller. , this is a wrapper type
+That holds a `std::coroutine_handle` and provides a convenient API:
 
 ```cpp
 #include <coroutine>
@@ -194,9 +194,9 @@ int main() {
 
 ## `await_transform` for Custom Suspension Behavior
 
-If the promise type defines `await_transform`, every `co_await expr` first passes through it [N4950
+If the promise type defines `await_transform`Every `co_await expr` first passes through it [N4950
 §9.5.4.3]. This allows the promise to intercept and transform any awaitable into a custom awaiter,
-enabling library-level control over suspension semantics:
+Enabling library-level control over suspension semantics:
 
 ```cpp
 #include <coroutine>
@@ -271,10 +271,10 @@ a=10 b=0 c=6
 
 ### `await_transform` and Generic Fallback
 
-When the promise defines `await_transform`, **every** `co_await` expression must match one of its
-overloads. If no overload matches, the code is ill-formed. This means you cannot `co_await`
+When the promise defines `await_transform`**every** `co_await` expression must match one of its
+Overloads. If no overload matches, the code is ill-formed. This means you cannot `co_await`
 `std::suspend_always` or any other type not handled by `await_transform` unless you provide a
-generic fallback:
+Generic fallback:
 
 ```cpp
 template<typename T>
@@ -284,7 +284,7 @@ auto await_transform(T&& awaitable) {
 ```
 
 This generic fallback forwards the awaitable unchanged, allowing the default awaiter resolution to
-proceed for types not explicitly handled.
+Proceed for types not explicitly handled.
 
 ## `yield_value` and `return_value`
 
@@ -292,12 +292,12 @@ The promise type communicates values back to the caller through two distinct cha
 §9.5.4.3]:
 
 - **`co_yield expr`** is syntactic sugar for `co_await promise.yield_value(expr)`. It suspends the
-  coroutine and makes `expr` available to the caller.
+ coroutine and makes `expr` available to the caller.
 - **`co_return expr`** calls `promise.return_value(expr)` (or `promise.return_void()` if no value)
-  and transitions the coroutine to the final suspend point.
+ and transitions the coroutine to the final suspend point.
 
-A promise type must define **either** `return_value` or `return_void`, but not both. If the
-coroutine uses `co_return;` (no value), `return_void` must be present.
+A promise type must define **either** `return_value` or `return_void`But not both. If the
+Coroutine uses `co_return;` (no value), `return_void` must be present.
 
 ```cpp
 #include <coroutine>
@@ -374,17 +374,17 @@ int main() {
 ## Coroutine Frame Lifetime and the `final_suspend` Decision
 
 The coroutine frame is heap-allocated (unless the compiler can prove it doesn't escape) and its
-lifetime is managed by `std::coroutine_handle` [N4950 §9.5.4]. When a coroutine reaches the final
-suspend point, the behavior of `final_suspend` determines whether the frame is automatically
-destroyed or must be destroyed manually:
+Lifetime is managed by `std::coroutine_handle` [N4950 §9.5.4]. When a coroutine reaches the final
+Suspend point, the behavior of `final_suspend` determines whether the frame is automatically
+Destroyed or must be destroyed manually:
 
 - **`std::suspend_always`**: The coroutine suspends at the final point. The caller (or resumer)
-  **must** call `handle.destroy()` to free the frame. This is required for any coroutine whose
-  return type needs to observe the coroutine's result after completion (e.g., a `Task` that carries
-  a value).
+ **must** call `handle.destroy()` to free the frame. This is required for any coroutine whose
+ return type needs to observe the coroutine's result after completion (e.g., a `Task` that carries
+ a value).
 
 - **`std::suspend_never`**: The coroutine's frame is destroyed immediately upon reaching the final
-  suspend point. The handle becomes invalid. This is used for fire-and-forget coroutines.
+ suspend point. The handle becomes invalid. This is used for fire-and-forget coroutines.
 
 ```cpp
 #include <coroutine>
@@ -429,18 +429,18 @@ int main() {
 ```
 
 :::warning
-If `final_suspend` returns `std::suspend_never`, the coroutine frame is destroyed at the
-final suspend point. Calling `handle.destroy()` afterward on a dangling handle is **undefined
-behavior**. If `final_suspend` returns `std::suspend_always`, you **must** eventually call
+If `final_suspend` returns `std::suspend_never`The coroutine frame is destroyed at the
+Final suspend point. Calling `handle.destroy()` afterward on a dangling handle is **undefined
+Behavior**. If `final_suspend` returns `std::suspend_always`You **must** eventually call
 `handle.destroy()` or the frame leaks.
 :::
 
 ## Symmetric Transfer and `await_suspend` Returning a Handle
 
-When `await_suspend` returns a `coroutine_handle<Z>`, the calling coroutine is suspended and the
-returned handle is resumed immediately — without unwinding the stack back to the caller. This is
+When `await_suspend` returns a `coroutine_handle<Z>`The calling coroutine is suspended and the
+Returned handle is resumed immediately — without unwinding the stack back to the caller. This is
 **symmetric transfer** [N4950 §9.5.4.3]. It is the foundational mechanism for building coroutine
-chains without stack overflow:
+Chains without stack overflow:
 
 ```cpp
 #include <coroutine>
@@ -513,13 +513,13 @@ int main() {
 
 Symmetric transfer avoids stack growth when coroutines await each other in a chain. Without it, each
 `co_await` of a nested coroutine would grow the stack by one frame, leading to stack overflow for
-deep chains. With symmetric transfer, the resumption is a tail call at the ABI level.
+Deep chains. With symmetric transfer, the resumption is a tail call at the ABI level.
 
 ## Exception Handling in Coroutines
 
 When an exception escapes the coroutine body (i.e., it is not caught by a `try`/`catch` within the
-coroutine), the promise's `unhandled_exception()` method is called [N4950 §9.5.4.3]. The standard
-library provides no default implementation — the promise type must define this method.
+Coroutine), the promise's `unhandled_exception()` method is called [N4950 §9.5.4.3]. The standard
+Library provides no default implementation — the promise type must define this method.
 
 ### Exception Storage Pattern
 
@@ -619,10 +619,10 @@ int main() {
 
 ### Exception Propagation Through Coroutine Chains
 
-When coroutine A `co_await`s coroutine B, and B throws, the exception propagates through B's
+When coroutine A `co_await`S coroutine B, and B throws, the exception propagates through B's
 `unhandled_exception()` to A's `await_resume()`. This is analogous to exception propagation through
-regular function calls, but the mechanism is explicit: the promise captures the exception, and the
-awaiter rethrows it.
+Regular function calls, but the mechanism is explicit: the promise captures the exception, and the
+Awaiter rethrows it.
 
 The chain works as follows:
 
@@ -631,13 +631,13 @@ The chain works as follows:
 3. B reaches final suspend.
 4. B's `FinalAwaiter` transfers control back to A (symmetric transfer).
 5. A's `await_resume()` (on B's awaiter) calls `std::rethrow_exception()` with B's captured
-   exception.
+ exception.
 6. The exception propagates through A as if B's `co_return` had thrown.
 
 ## Complete Awaitable Interface Implementation
 
 The following is a complete, production-ready awaitable type that supports all three `await_suspend`
-return types and demonstrates best practices:
+Return types and demonstrates best practices:
 
 ```cpp
 #include <coroutine>
@@ -723,37 +723,45 @@ int main() {
 ## Common Pitfalls
 
 **1. Dangling coroutine handles:** The most common bug is forgetting to `destroy()` a coroutine
-handle. If `final_suspend` returns `std::suspend_always` and the handle is never destroyed, the
-frame leaks. Always pair handle creation with a destruction guarantee (RAII wrapper, scope guard, or
+Handle. If `final_suspend` returns `std::suspend_always` and the handle is never destroyed, the
+Frame leaks. Always pair handle creation with a destruction guarantee (RAII wrapper, scope guard, or
 `.destroy()` in the destructor of the return type).
 
 **2. Accessing the promise after `final_suspend` with `suspend_never`:** If `final_suspend` returns
-`std::suspend_never`, the frame (including the promise) is destroyed at the final suspend point. Any
-access to `handle.promise()` afterward is undefined behavior.
+`std::suspend_never`The frame (including the promise) is destroyed at the final suspend point. Any
+Access to `handle.promise()` afterward is undefined behavior.
 
 **3. Exception propagation:** If an exception escapes the coroutine body, `unhandled_exception()` is
-called on the promise. The default behavior (inheriting from `std::exception_ptr` storage) is to
-capture the exception. If `unhandled_exception` does nothing, the exception is silently swallowed.
+Called on the promise. The default behavior (inheriting from `std::exception_ptr` storage) is to
+Capture the exception. If `unhandled_exception` does nothing, the exception is silently swallowed.
 Always either rethrow, store, or terminate in `unhandled_exception`.
 
-**4. `await_transform` hides the original type:** When the promise defines `await_transform`, every
+**4. `await_transform` hides the original type:** When the promise defines `await_transform`Every
 `co_await` expression passes through it. If you intend to `co_await` a type that does not match any
 `await_transform` overload, the compiler will error — the raw expression is never used as the
-awaiter. Provide a generic fallback `template&lt;typename T&gt; auto await_transform(T&& t)` to
-forward unsupported types unchanged.
+Awaiter. Provide a generic fallback `template&lt;typename T&gt; auto await_transform(T&& t)` to
+Forward unsupported types unchanged.
 
 **5. `await_ready` returning `true` when the awaiter is not ready:** If `await_ready()` returns
 `true` when the awaited operation has not actually completed, `await_resume()` will be called
-immediately, potentially returning garbage or an uninitialized value. Always ensure `await_ready()`
-accurately reflects completion status.
+Immediately, potentially returning garbage or an uninitialized value. Always ensure `await_ready()`
+Accurately reflects completion status.
 
 **6. Returning `bool` vs `coroutine_handle` from `await_suspend`:** A `bool` return of `false`
-causes immediate resumption in the _same_ call stack (no suspension occurs). A `coroutine_handle`
-return causes the _returned_ handle to be resumed via symmetric transfer. Confusing these two leads
-to subtle bugs where the wrong coroutine is resumed.
+Causes immediate resumption in the _same_ call stack (no suspension occurs). A `coroutine_handle`
+Return causes the _returned_ handle to be resumed via symmetric transfer. Confusing these two leads
+To subtle bugs where the wrong coroutine is resumed.
 
 ## See Also
 
 - [Stackless Coroutine Frames and Heap Allocation](./1_coroutine_frames.md)
 - [Generators (std::generator)](./3_generators.md)
 - [Task Scheduling and Executors](./4_task_scheduling.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

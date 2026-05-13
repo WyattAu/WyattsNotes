@@ -19,7 +19,7 @@ For $n \in \mathbb{'\{'}N{'\}'}$:
 
 $$n! = n \times (n - 1) \times (n - 2) \times \cdots \times 2 \times 1$$
 
-with $0! = 1$ by convention.
+With $0! = 1$ by convention.
 
 ### Properties
 
@@ -40,7 +40,7 @@ $$\frac{10!}{7! \cdot 3!} = \frac{10 \times 9 \times 8 \times 7!}{7! \times 6} =
 ### Definition
 
 A **permutation** is an ordered arrangement of objects. The number of permutations of $r$ objects
-chosen from $n$ distinct objects:
+Chosen from $n$ distinct objects:
 
 $$P_r^n = \frac{n!}{(n - r)!}$$
 
@@ -72,7 +72,7 @@ $$\mathrm{Arrangements} = \frac{n!}{n_1!\, n_2!\, \cdots\, n_k!}$$
 
 How many distinct arrangements of the letters in "BANANA"?
 
-Total letters: $n = 6$, with $\mathrm{A}$ appearing $3$ times, $\mathrm{N}$ appearing $2$ times, and
+Total letters: $n = 6$With $\mathrm{A}$ appearing $3$ times, $\mathrm{N}$ appearing $2$ times, and
 $\mathrm{B}$ appearing $1$ time.
 
 $$\frac{6!}{3!\, 2!\, 1!} = \frac{720}{6 \times 2} = 60$$
@@ -98,7 +98,7 @@ $$(6 - 1)! = 5! = 120$$
 ### Definition
 
 A **combination** is an unordered selection of objects. The number of combinations of $r$ objects
-chosen from $n$ distinct objects:
+Chosen from $n$ distinct objects:
 
 $$C_r^n = \binom{n}{r} = \frac{n!}{r!(n - r)!}$$
 
@@ -127,7 +127,7 @@ This reflects the fact that each combination of $r$ objects can be arranged in $
 ### Construction
 
 Pascal's triangle is a triangular array where each entry is the sum of the two entries directly
-above it:
+Above it:
 
 $$
 \begin{array}{cccccccc}
@@ -182,17 +182,17 @@ Coefficient: $\binom{7}{3} \cdot 2^3 = 35 \times 8 = 280$.
 ### Selection Problems
 
 When a problem involves selecting from distinct groups, multiply the number of choices for each
-group.
+Group.
 
 ### Worked Example 8
 
 A class has 7 boys and 5 girls. In how many ways can a team of 4 be chosen with at least 2 girls?
 
-| Girls | Boys | Ways                                                    |
+| Girls | Boys | Ways |
 | ----- | ---- | ------------------------------------------------------- |
-| 2     | 2    | $\binom{5}{2} \times \binom{7}{2} = 10 \times 21 = 210$ |
-| 3     | 1    | $\binom{5}{3} \times \binom{7}{1} = 10 \times 7 = 70$   |
-| 4     | 0    | $\binom{5}{4} \times \binom{7}{0} = 5 \times 1 = 5$     |
+| 2 | 2 | $\binom{5}{2} \times \binom{7}{2} = 10 \times 21 = 210$ |
+| 3 | 1 | $\binom{5}{3} \times \binom{7}{1} = 10 \times 7 = 70$ |
+| 4 | 0 | $\binom{5}{4} \times \binom{7}{0} = 5 \times 1 = 5$ |
 
 Total: $210 + 70 + 5 = 285$.
 
@@ -217,27 +217,27 @@ Hands with at least one ace: $2598960 - 1712304 = 886656$.
 ## Common Pitfalls
 
 - Confusing permutations with combinations. Ask: does the order matter? If yes, use $P_r^n$; if no,
-  use $C_r^n$.
+ use $C_r^n$.
 - Forgetting that $0! = 1$. This is needed in many calculations.
 - In circular permutation problems, forgetting that rotations are equivalent. For $n$ objects in a
-  circle, there are $(n - 1)!$ arrangements, not $n!$.
+ circle, there are $(n - 1)!$ arrangements, not $n!$.
 - Double-counting in selection problems. When dividing into groups, ensure each object is counted
-  exactly once.
+ exactly once.
 - Incorrectly applying the permutation-with-repetition formula. Only divide by factorials when
-  objects are truly identical.
+ objects are truly identical.
 
 ---
 
 ## Summary Table
 
-| Topic             | Formula                                            |
+| Topic | Formula |
 | ----------------- | -------------------------------------------------- |
-| Factorial         | $n! = n(n-1)(n-2)\cdots 1$                         |
-| Permutation       | $P_r^n = n!/(n-r)!$                                |
-| Combination       | $C_r^n = n!/[r!(n-r)!]$                            |
-| With repetition   | $n!/(n_1!\, n_2!\, \cdots)$                        |
-| Circular          | $(n - 1)!$                                         |
-| Row sum           | $\sum_{k=0}^n \binom{n}{k} = 2^n$                  |
+| Factorial | $n! = n(n-1)(n-2)\cdots 1$ |
+| Permutation | $P_r^n = n!/(n-r)!$ |
+| Combination | $C_r^n = n!/[r!(n-r)!]$ |
+| With repetition | $n!/(n_1!\, n_2!\, \cdots)$ |
+| Circular | $(n - 1)!$ |
+| Row sum | $\sum_{k=0}^n \binom{n}{k} = 2^n$ |
 | Pascal's identity | $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ |
 
 ---
@@ -250,38 +250,38 @@ Hands with at least one ace: $2598960 - 1712304 = 886656$.
 $\binom{12}{4} = \dfrac{12!}{4!\, 8!} = \dfrac{12 \times 11 \times 10 \times 9}{4 \times 3 \times 2 \times 1} = \dfrac{11880}{24} = 495$.
 
 2. **Question:** How many 3-digit even numbers can be formed from the digits $\{1, 2, 3, 4, 5, 6\}$
-   if each digit can be used at most once?
+ if each digit can be used at most once?
 
 Last digit (units) must be even: choose from $\{2, 4, 6\}$ -- 3 ways.
 
 First digit cannot be zero (not an issue here) and must differ from the last digit: 5 remaining
-digits.
+Digits.
 
 Middle digit: 4 remaining digits.
 
 Total: $3 \times 5 \times 4 = 60$. Wait -- first digit: 5 choices (all except the chosen last
-digit). Middle digit: 4 choices (remaining). Total: $3 \times 5 \times 4 = 60$.
+Digit). Middle digit: 4 choices (remaining). Total: $3 \times 5 \times 4 = 60$.
 
 3. **Question:** In how many ways can 4 boys and 3 girls be arranged in a row if no two girls sit
-   together?
+ together?
 
 First arrange the 4 boys: $4! = 24$ ways. This creates 5 gaps (including ends):
 
 `_ B _ B _ B _ B _`
 
 Choose 3 of these 5 gaps for the girls: $\binom{5}{3} = 10$ ways. Arrange the 3 girls: $3! = 6$
-ways.
+Ways.
 
 Total: $24 \times 10 \times 6 = 1440$.
 
 4. **Question:** A committee of 5 is chosen from 4 men and 6 women. How many committees have more
-   women than men?
+ women than men?
 
-| Women | Men | Ways                                           |
+| Women | Men | Ways |
 | ----- | --- | ---------------------------------------------- |
-| 3     | 2   | $\binom{6}{3}\binom{4}{2} = 20 \times 6 = 120$ |
-| 4     | 1   | $\binom{6}{4}\binom{4}{1} = 15 \times 4 = 60$  |
-| 5     | 0   | $\binom{6}{5}\binom{4}{0} = 6 \times 1 = 6$    |
+| 3 | 2 | $\binom{6}{3}\binom{4}{2} = 20 \times 6 = 120$ |
+| 4 | 1 | $\binom{6}{4}\binom{4}{1} = 15 \times 4 = 60$ |
+| 5 | 0 | $\binom{6}{5}\binom{4}{0} = 6 \times 1 = 6$ |
 
 Total: $120 + 60 + 6 = 186$.
 
@@ -303,7 +303,7 @@ $= \frac{n!(n - r + 1) + n! \cdot r}{r!(n - r + 1)!} = \frac{n!(n + 1)}{r!(n + 1
 $\qed$
 
 8. **Question:** A box contains 6 red, 4 blue, and 5 green balls. In how many ways can 4 balls be
-   chosen so that at least 2 are red?
+ chosen so that at least 2 are red?
 
 Total: $\binom{15}{4} = 1365$.
 
@@ -318,7 +318,7 @@ Number of ways to split $2n$ people into $n$ unordered pairs:
 $$\frac{(2n)!}{2^n \cdot n!} = \frac{8!}{2^4 \cdot 4!} = \frac{40320}{16 \times 24} = \frac{40320}{384} = 105$$
 
 10. **Question:** From 7 men and 5 women, how many committees of 6 can be formed with at least 3 men
-    and at least 2 women?
+ and at least 2 women?
 
 Possible compositions: (4M, 2W), (3M, 3W).
 
@@ -419,17 +419,17 @@ $$\binom{6}{4} \cdot 2^4 = 15 \times 16 = 240$$
 
 ## Additional Common Pitfalls
 
-1. **Order matters vs. does not matter.** "Arranging" implies permutations (order matters). "Selecting" or "choosing" implies combinations (order does not matter). When in doubt, ask whether swapping two elements produces a different outcome.
+1. **Order matters vs. Does not matter.** "Arranging" implies permutations (order matters). "Selecting" or "choosing" implies combinations (order does not matter). When in doubt, ask whether swapping two elements produces a different outcome.
 
-2. **Overcounting in selection problems.** When forming teams from distinct groups, multiply the number of ways from each group. Do not simply use $\binom{n}{r}$ on the combined pool, which ignores group structure.
+2. **Overcounting in selection problems.** When forming teams from distinct groups, multiply the number of ways from each group. Do not use $\binom{n}{r}$ on the combined pool, which ignores group structure.
 
 3. **Circular permutation exceptions.** If a circle has a fixed reference point (e.g., a specific seat for a host), the arrangement count changes. With $n$ people and one fixed seat, the remaining $n-1$ people are arranged linearly in $(n-1)!$ ways.
 
 4. **Stars and bars conditions.** $\binom{n+k-1}{k-1}$ counts non-negative integer solutions. For strictly positive solutions (at least one per box), substitute $y_i = x_i - 1$ to get $\binom{n-1}{k-1}$.
 
-5. **Binomial theorem sign errors.** In $(a - b)^n$, the general term is $(-1)^k \binom{n}{k} a^{n-k} b^k$. The alternating sign $(-1)^k$ is frequently forgotten.
+5. **Binomial theorem sign errors.** In $(a - b)^n$The general term is $(-1)^k \binom{n}{k} a^{n-k} b^k$. The alternating sign $(-1)^k$ is frequently forgotten.
 
-6. **Division into equal indistinguishable groups.** When dividing $2n$ people into two teams of $n$, the answer is $\dfrac{1}{2}\binom{2n}{n}$, not $\binom{2n}{n}$, since the two teams are not labelled.
+6. **Division into equal indistinguishable groups.** When dividing $2n$ people into two teams of $n$The answer is $\dfrac{1}{2}\binom{2n}{n}$Not $\binom{2n}{n}$Since the two teams are not labelled.
 
 7. **Double-counting in circular arrangements with identical objects.** In circular permutations with repeated items, apply both the circular correction ($(n-1)!$) and the identical-objects correction (dividing by factorials of counts).
 
@@ -457,7 +457,7 @@ $$330 - 15 - 5 = 310$$
 <details>
 <summary>Solution</summary>
 
-The first digit must be $4$, $5$, $6$, or $7$: $4$ choices.
+The first digit must be $4$$5$$6$Or $7$: $4$ choices.
 
 The remaining 4 positions are filled from the remaining $6$ digits without repetition: $P_4^6 = \dfrac{6!}{2!} = 360$.
 
@@ -571,13 +571,13 @@ $$420 - 120 = 300$$
 In DSE Maths Paper 2 (MC) you select the answer; in Paper 1 you must show full working. For counting problems, examiners expect:
 
 1. State whether order matters (permutation vs combination).
-2. For casework, clearly label each case and sum at the end.
+2. For casework, label each case and sum at the end.
 3. For complementary counting, explicitly state the total and the complement.
 4. Write the formula before substituting values, e.g., $\binom{n}{r} = \dfrac{n!}{r!(n-r)!}$.
 
 ### Significant Figures
 
-Final numerical answers should typically be given to 3 significant figures unless the question specifies otherwise. Intermediate combinatorial values (factorials, binomial coefficients) are exact integers and must not be rounded.
+Final numerical answers should be given to 3 significant figures unless the question specifies otherwise. Intermediate combinatorial values (factorials, binomial coefficients) are exact integers and must not be rounded.
 
 ### Common DSE Question Types
 
@@ -650,7 +650,7 @@ Find the number of positive divisors of $N = 2^3 \times 3^2 \times 5$.
 <details>
 <summary>Solution</summary>
 
-A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where $0 \leq a \leq 3$, $0 \leq b \leq 2$, $0 \leq c \leq 1$.
+A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where $0 \leq a \leq 3$$0 \leq b \leq 2$$0 \leq c \leq 1$.
 
 Number of choices for $a$: $4$ (i.e., $0, 1, 2, 3$).
 
@@ -771,7 +771,7 @@ For the power of $x$ to be $k$: $k = 6 - 3r$.
 
 Second factor: $(1 - x^{-1})^5$. General term: $\binom{5}{s}(-1)^s x^{-s}$.
 
-We need the total power of $x$ to be 0. From the first factor, take $x^{6-3r}$; from the second, take $(-1)^s x^{-s}$. Total power: $6 - 3r - s = 0$, i.e., $s = 6 - 3r$.
+We need the total power of $x$ to be 0. From the first factor, take $x^{6-3r}$; from the second, take $(-1)^s x^{-s}$. Total power: $6 - 3r - s = 0$I.e., $s = 6 - 3r$.
 
 Since $0 \leq s \leq 5$:
 

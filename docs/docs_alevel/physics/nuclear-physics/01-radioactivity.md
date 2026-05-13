@@ -26,11 +26,11 @@ Explore the simulation above to develop intuition for this topic.
 The atom consists of a nucleus containing **protons** and **neutrons** (collectively called
 **nucleons**), surrounded by electrons.
 
-| Property | Proton    | Neutron   | Electron        |
+| Property | Proton | Neutron | Electron |
 | -------- | --------- | --------- | --------------- |
-| Charge   | $+e$      | $0$       | $-e$            |
-| Mass (u) | $1.00728$ | $1.00867$ | $0.00055$       |
-| Location | Nucleus   | Nucleus   | Electron shells |
+| Charge | $+e$ | $0$ | $-e$ |
+| Mass (u) | $1.00728$ | $1.00867$ | $0.00055$ |
+| Location | Nucleus | Nucleus | Electron shells |
 
 **Notation.** A nuclide is written as $\prescript{A}{}{Z}\mathrm{X}$ where $A$ is the mass number
 (nucleon number) and $Z$ is the atomic number (proton number). The neutron number is $N = A - Z$.
@@ -42,7 +42,7 @@ The atom consists of a nucleus containing **protons** and **neutrons** (collecti
 ### Alpha Decay ($\alpha$)
 
 **Definition.** An alpha particle ($\alpha$) is a helium nucleus ($\prescript{4}{}{2}\mathrm{He}$),
-emitted during alpha decay.
+Emitted during alpha decay.
 
 $$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\alpha$$
 
@@ -56,7 +56,7 @@ Alpha particles are highly ionising but poorly penetrating (stopped by paper or 
 ### Beta Decay ($\beta^-$)
 
 **Definition.** A beta particle ($\beta^-$) is an electron emitted when a neutron converts to a
-proton in beta-minus decay.
+Proton in beta-minus decay.
 
 A neutron converts to a proton, emitting an electron and an antineutrino:
 
@@ -69,14 +69,14 @@ $$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z+1}\mathrm{Y} + \prescript{0
 - Charge: $0 = (+1) + (-1) + 0$ $\checkmark$
 
 The antineutrino was postulated by Fermi (1934) to conserve energy and momentum — the observed
-electron energy spectrum is continuous, implying a third particle carries away the remaining energy.
+Electron energy spectrum is continuous, implying a third particle carries away the remaining energy.
 
 **Penetration:** Beta particles are moderately ionising, stopped by a few mm of aluminium.
 
 ### Beta-Plus Decay ($\beta^+$)
 
 **Definition.** A beta-plus particle ($\beta^+$) is a positron emitted when a proton converts to a
-neutron in beta-plus decay.
+Neutron in beta-plus decay.
 
 A proton converts to a neutron, emitting a positron and a neutrino:
 
@@ -87,32 +87,32 @@ This only occurs in proton-rich nuclei.
 ### Gamma Decay ($\gamma$)
 
 **Definition.** A gamma ray ($\gamma$) is high-energy electromagnetic radiation emitted during
-nuclear transitions.
+Nuclear transitions.
 
 After alpha or beta decay, the daughter nucleus is often in an excited state. It de-excites by
-emitting a gamma ray (high-energy photon):
+Emitting a gamma ray (high-energy photon):
 
 $$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
 
 No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (stopped by thick
-lead or concrete).
+Lead or concrete).
 
 :::warning
 Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
-number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
+Number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
 :::
 
 :::info
 Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
-| Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
+| Requirement | AQA | Edexcel | OCR (A) | CIE |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
-| Alpha decay equations        | Yes         | Yes         | Yes         | Yes      |
-| $\beta^-$ decay equations    | Yes         | Yes         | Yes         | Yes      |
-| $\beta^+$ decay equations    | Required    | Required    | Not in core | Yes      |
-| Neutrino / antineutrino      | Qualitative | Qualitative | Qualitative | Detailed |
-| Spontaneous vs random nature | Required    | Required    | Required    | Required |
+| Alpha decay equations | Yes | Yes | Yes | Yes |
+| $\beta^-$ decay equations | Yes | Yes | Yes | Yes |
+| $\beta^+$ decay equations | Required | Required | Not in core | Yes |
+| Neutrino / antineutrino | Qualitative | Qualitative | Qualitative | Detailed |
+| Spontaneous vs random nature | Required | Required | Required | Required |
 
 ## 3. Exponential Decay Law
 
@@ -160,7 +160,7 @@ $$\boxed{1\,\mathrm{Bq} = 1\,\mathrm{decay s}^{-1}}$$
 ### Half-Life
 
 **Definition.** The half-life $t_{1/2}$ is the time taken for half of the radioactive nuclei in a
-sample to decay.
+Sample to decay.
 
 $$\boxed{N(t) = N_0 \cdot 2^{-t/t_{1/2}}}$$
 
@@ -176,62 +176,62 @@ $$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
 
 **Intuition.** After one half-life, half remain. After two, a quarter. After $n$ half-lives,
 $N = N_0/2^n$. The decay is exponential — the activity is always proportional to the number of
-remaining nuclei, so it decreases exponentially.
+Remaining nuclei, so it decreases exponentially.
 
 :::tip
-tip
-straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
-activity to halve at any point on the curve.
+Tip
+Straight line with gradient $=-\lambda$. The half-life can be found by finding the time for the
+Activity to halve at any point on the curve.
 :::
 
 ### Radiation Detection
 
 :::info
-info
+Info
 
 #### Geiger-Muller Tube
 
 The Geiger-Muller (GM) tube is the most common radiation detector. It consists of a thin-walled
-metal tube filled with an inert gas (typically argon) at low pressure, with a central anode wire
-held at high positive potential.
+Metal tube filled with an inert gas ( argon) at low pressure, with a central anode wire
+Held at high positive potential.
 
 When ionising radiation enters through the thin mica window, it ionises gas atoms. The freed
-electrons are accelerated towards the anode, gaining enough energy to ionise further atoms in an
+Electrons are accelerated towards the anode, gaining enough energy to ionise further atoms in an
 **avalanche** process. Each avalanche produces a current pulse, which is counted electronically.
 
 - The GM tube has a **dead time** of approximately $100\,\mu\mathrm{s}$ after each count, during
-  which it cannot detect further radiation. At very high activities this leads to count rates lower
-  than the true activity.
-- **Background radiation** (typically 20-40 counts per minute in the UK) must be subtracted from all
-  measurements.
+ which it cannot detect further radiation. At very high activities this leads to count rates lower
+ than the true activity.
+- **Background radiation** ( 20-40 counts per minute in the UK) must be subtracted from all
+ measurements.
 
 **Definition.** Background radiation is the ionising radiation present in the environment from
-natural and artificial sources.
+Natural and artificial sources.
 
 Sources of background radiation include:
 
 - **Radon gas** (from uranium decay in rocks) — the largest single source in the UK, contributing
-  approximately 50% of background dose.
+ approximately 50% of background dose.
 - **Cosmic rays** — high-energy particles from space, increasing with altitude.
 - **Medical sources** — X-rays and nuclear medicine procedures.
-- **Ground and building materials** — naturally occurring radioactive isotopes such as
-  ${}^{40}\mathrm{K}$ and ${}^{238}\mathrm{U}$.
+- **Ground and building materials** — occurring radioactive isotopes such as
+ ${}^{40}\mathrm{K}$ and ${}^{238}\mathrm{U}$.
 - **Food and drink** — trace amounts of ${}^{40}\mathrm{K}$ and ${}^{14}\mathrm{C}$.
 
 :::warning
-warning
-because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
-(2) not all radiation that enters the tube produces a count (detection efficiency is typically 1-2%
-for gamma rays). Never assume count rate equals activity.
+Warning
+Because: (1) the detector only intercepts a fraction of emitted radiation (solid angle factor), and
+(2) not all radiation that enters the tube produces a count (detection efficiency is 1-2%
+For gamma rays). Never assume count rate equals activity.
 :::
 
 #### Scintillation Detector
 
-A scintillation detector uses a crystal (e.g. sodium iodide) that emits flashes of light when
-radiation passes through it. The light pulses are converted to electrical signals by a
-photomultiplier tube. Scintillation detectors are more sensitive than GM tubes and can distinguish
-between different types of radiation by the intensity of the light pulse (pulse-height analysis),
-making them useful for identifying specific isotopes.
+A scintillation detector uses a crystal (e.g. Sodium iodide) that emits flashes of light when
+Radiation passes through it. The light pulses are converted to electrical signals by a
+Photomultiplier tube. Scintillation detectors are more sensitive than GM tubes and can distinguish
+Between different types of radiation by the intensity of the light pulse (pulse-height analysis),
+Making them useful for identifying specific isotopes.
 
 ### Half-Life Measurement Techniques
 
@@ -248,26 +248,26 @@ The logarithmic method is more accurate because it uses all data points, not jus
 
 $$\ln A = \ln A_0 - \lambda t$$
 
-The gradient of the straight line gives $-\lambda$, and then $t_{1/2} = \ln 2 / \lambda$.
+The gradient of the straight line gives $-\lambda$And then $t_{1/2} = \ln 2 / \lambda$.
 
 :::tip
 Exam Technique When describing an experimental method for determining half-life, always
-mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
-readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
+Mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
+Readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
 :::
 
 #### Practical Considerations
 
 - For short half-lives (seconds to minutes), readings can be taken in real time with a GM tube and
-  data logger.
+ data logger.
 - For long half-lives (years to millennia), direct measurement is impractical. Instead, measure a
-  known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
-  Avogadro's number.
+ known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
+ Avogadro's number.
 
 :::info
 Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
-discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
-method.
+Discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
+Method.
 :::
 
 ## Problem Set
@@ -299,7 +299,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 <details>
 <summary>Problem 3</summary>
 A radioactive sample has a half-life of 5.0 hours. If the initial activity is 800 Bq, what is the
-activity after 20 hours?
+Activity after 20 hours?
 
 **Answer.** Number of half-lives: $n = 20/5 = 4$. $A = 800/2^4 = 800/16 = 50$ Bq.
 
@@ -311,7 +311,7 @@ activity after 20 hours?
 <summary>Problem 4</summary>
 A sample contains $4.0 \times 10^{12}$ nuclei of a radioactive isotope with decay constant
 $1.2 \times 10^{-7}$ s$^{-1}$. Calculate the initial activity and the number of nuclei remaining
-after 2.0 hours.
+After 2.0 hours.
 
 **Answer.** $A_0 = \lambda N_0 = 1.2 \times 10^{-7} \times 4.0 \times 10^{12} = 4.8 \times 10^5$ Bq.
 
@@ -349,11 +349,11 @@ The activity of a sample decreases from 1200 Bq to 150 Bq in 30 minutes. Calcula
 Explain why the antineutrino was proposed in beta decay.
 
 **Answer.** In beta decay, the emitted electron has a continuous energy spectrum rather than a
-single energy. This appeared to violate conservation of energy. Pauli proposed (1930) and Fermi
-formalised (1934) the existence of an unseen particle (the antineutrino) that carries away the
-remaining energy and momentum. The total energy of electron + antineutrino equals the fixed energy
-released by the nuclear transition, conserving energy. The antineutrino was experimentally detected
-in 1956 by Cowan and Reines.
+Single energy. This appeared to violate conservation of energy. Pauli proposed (1930) and Fermi
+Formalised (1934) the existence of an unseen particle (the antineutrino) that carries away the
+Remaining energy and momentum. The total energy of electron + antineutrino equals the fixed energy
+Released by the nuclear transition, conserving energy. The antineutrino was experimentally detected
+In 1956 by Cowan and Reines.
 
 <b>If you get this wrong, revise:</b> [Beta Decay ($\beta^-$)](#beta-decay-beta-)
 
@@ -362,7 +362,7 @@ in 1956 by Cowan and Reines.
 <details>
 <summary>Problem 8</summary>
 A sample of iodine-131 has a half-life of 8.04 days. How long does it take for the activity to fall
-to 5% of its initial value?
+To 5% of its initial value?
 
 **Answer.** $0.05 = e^{-\lambda t}$. $\ln 0.05 = -\lambda t$.
 $\lambda = \ln 2/t_{1/2} = 0.693/8.04 = 0.0862$ day$^{-1}$.
@@ -379,13 +379,13 @@ Compare and contrast alpha, beta, and gamma radiation in terms of: (a) nature, (
 (c) penetrating power, (d) deflection in electric and magnetic fields.
 
 **Answer.** (a) $\alpha$: helium nucleus (2p, 2n). $\beta$: electron/positron. $\gamma$:
-electromagnetic photon.
+Electromagnetic photon.
 
 (b) Ionising power: $\alpha > \beta > \gamma$ (alpha has the largest charge and slowest speed,
-maximising interaction).
+Maximising interaction).
 
 (c) Penetrating power: $\gamma > \beta > \alpha$ (alpha stopped by paper, beta by aluminium, gamma
-by thick lead).
+By thick lead).
 
 (d) Deflection: $\alpha$ and $\beta$ are deflected (opposite directions since opposite charges).
 $\alpha$ deflection is less (larger mass). $\gamma$ is undeflected (no charge).
@@ -397,7 +397,7 @@ $\alpha$ deflection is less (larger mass). $\gamma$ is undeflected (no charge).
 <details>
 <summary>Problem 10</summary>
 A radioactive isotope X with half-life 12 hours decays to a stable daughter Y. A sample initially
-contains 1000 atoms of X. How many atoms of Y are present after 36 hours?
+Contains 1000 atoms of X. How many atoms of Y are present after 36 hours?
 
 **Answer.** After 36 hours: $n = 36/12 = 3$ half-lives. $N_X = 1000/2^3 = 125$. Atoms of Y =
 $1000 - 125 = 875$.
@@ -413,12 +413,12 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
 
 **Definition.** A decay chain (or radioactive series) is a sequence of radioactive decays where each
-daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
+Daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
 
 ### The Uranium-238 Decay Series
 
 The most important natural decay chain begins with uranium-238 and ends at stable lead-206 after 14
-decays (8 alpha and 6 beta-minus):
+Decays (8 alpha and 6 beta-minus):
 
 $$
 \prescript{238}{}{92}\mathrm{U} \xrightarrow{\alpha} \prescript{234}{}{90}\mathrm{Th}
@@ -440,20 +440,20 @@ Other natural decay chains include:
 ### Secular Equilibrium
 
 When a long-lived parent nuclide (very large $t_{1/2}$) decays through a chain of shorter-lived
-daughters, a state of **secular equilibrium** is established after several daughter half-lives. In
-equilibrium:
+Daughters, a state of **secular equilibrium** is established after several daughter half-lives. In
+Equilibrium:
 
 $$\boxed{\lambda_1 N_1 = \lambda_2 N_2 = \lambda_3 N_3 = \cdots}$$
 
 Each daughter has the same activity as the parent. This has practical importance in radiological
-protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{U}$) in buildings is sustained
-by the essentially constant uranium in the ground beneath.
+Protection: the activity of radon-222 (a daughter of ${}^{238}\mathrm{U}$) in buildings is sustained
+By the essentially constant uranium in the ground beneath.
 
 :::warning
-warning
-only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
-long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
-hazard.
+Warning
+Only when the parent is much longer-lived than all daughters. If a short-lived daughter precedes a
+Long-lived daughter, the long-lived daughter accumulates and can become the dominant radiological
+Hazard.
 :::
 
 ## 5. Applications of Radioactivity
@@ -461,11 +461,11 @@ hazard.
 ### Carbon-14 Dating
 
 :::info
-info
+Info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
 ${}^{14}\mathrm{C}$ to ${}^{12}\mathrm{C}$. Cosmic rays produce neutrons in the upper atmosphere,
-which react with nitrogen-14:
+Which react with nitrogen-14:
 
 $${}^{14}\mathrm{N} + {}^{1}\mathrm{n} \to {}^{14}\mathrm{C} + {}^{1}\mathrm{H}$$
 
@@ -474,36 +474,36 @@ When an organism dies, this exchange stops and the ${}^{14}\mathrm{C}$ decays wi
 
 $$t = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln\left(\frac{A_0}{A}\right) = \frac◆LB◆t_{1/2}◆RB◆◆LB◆\ln 2◆RB◆\ln\left(\frac{N_0}{N}\right)$$
 
-where $N_0/N$ is the ratio of current ${}^{14}\mathrm{C}$ content to that of a living sample.
+Where $N_0/N$ is the ratio of current ${}^{14}\mathrm{C}$ content to that of a living sample.
 
 **Limitations:**
 
 - Effective range is approximately 50,000 years (beyond this, too few ${}^{14}\mathrm{C}$ atoms
-  remain for accurate measurement).
+ remain for accurate measurement).
 - Assumes the atmospheric ${}^{14}\mathrm{C}$/${}^{12}\mathrm{C}$ ratio has been constant.
-  Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
+ Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
 - Contamination by modern carbon makes samples appear younger; contamination by old carbon makes
-  them appear older.
+ them appear older.
 
 ### Nuclear Medicine
 
 Radioactive isotopes are used both diagnostically and therapeutically:
 
-| Isotope               | Half-life   | Use                               | Reason                                                                         |
+| Isotope | Half-life | Use | Reason |
 | --------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------ |
-| ${}^{99m}\mathrm{Tc}$ | 6.0 hours   | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose                          |
-| ${}^{131}\mathrm{I}$  | 8.04 days   | Treatment of thyroid cancer       | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
-| ${}^{60}\mathrm{Co}$  | 5.27 years  | Radiotherapy (external beam)      | High-energy gamma rays for tumour destruction                                  |
-| ${}^{18}\mathrm{F}$   | 110 minutes | PET scans                         | Positron emission enables precise 3D imaging                                   |
+| ${}^{99m}\mathrm{Tc}$ | 6.0 hours | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose |
+| ${}^{131}\mathrm{I}$ | 8.04 days | Treatment of thyroid cancer | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
+| ${}^{60}\mathrm{Co}$ | 5.27 years | Radiotherapy (external beam) | High-energy gamma rays for tumour destruction |
+| ${}^{18}\mathrm{F}$ | 110 minutes | PET scans | Positron emission enables precise 3D imaging |
 
 **Definition.** The effective half-life of a radioactive substance in the body is the time for its
-activity to fall to half its initial value, combining both physical decay and biological clearance:
+Activity to fall to half its initial value, combining both physical decay and biological clearance:
 
 $$\frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{eff}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{physical}}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{biological}}◆RB◆$$
 
 :::info
 Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
-explicitly tested by AQA or CIE at A Level.
+Explicitly tested by AQA or CIE at A Level.
 :::
 
 ## 6. Case Studies
@@ -511,42 +511,42 @@ explicitly tested by AQA or CIE at A Level.
 ### Chernobyl (1986)
 
 The Chernobyl disaster released approximately $5.2 \times 10^{18}$ Bq of radioactive material into
-the atmosphere. The most significant isotopes released were:
+The atmosphere. The most significant isotopes released were:
 
 - **Iodine-131** ($t_{1/2} = 8.04$ days): Caused thyroid cancer, particularly in children who drank
-  milk from cows that had grazed on contaminated grass. The short half-life meant the acute danger
-  passed within months.
+ milk from cows that had grazed on contaminated grass. The short half-life meant the acute danger
+ passed within months.
 - **Caesium-137** ($t_{1/2} = 30.2$ years): More persistent contaminant. Caesium behaves chemically
-  like potassium and was taken up by plants and animals, entering the food chain. The 30 km
-  exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{Cs}$
-  contamination.
+ like potassium and was taken up by plants and animals, entering the food chain. The 30 km
+ exclusion zone around the reactor remains in place partly because of ${}^{137}\mathrm{Cs}$
+ contamination.
 
 The different half-lives illustrate a key principle: short-lived isotopes produce intense but brief
-radiation hazards, while long-lived isotopes create lower but persistent contamination.
+Radiation hazards, while long-lived isotopes create lower but persistent contamination.
 
 ### Fukushima Daiichi (2011)
 
 The Fukushima disaster, triggered by a tsunami following the Tohoku earthquake, released significant
-quantities of radioactive isotopes including ${}^{131}\mathrm{I}$, ${}^{134}\mathrm{Cs}$
+Quantities of radioactive isotopes including ${}^{131}\mathrm{I}$${}^{134}\mathrm{Cs}$
 ($t_{1/2} = 2.06$ years), and ${}^{137}\mathrm{Cs}$.
 
 Key differences from Chernobyl:
 
 - Most radioactive material was released into the Pacific Ocean rather than the atmosphere, leading
-  to rapid dilution of water-soluble isotopes.
+ to rapid dilution of water-soluble isotopes.
 - ${}^{134}\mathrm{Cs}$ has a short half-life (2.06 years) and decayed rapidly;
-  ${}^{137}\mathrm{Cs}$ remains the primary long-term concern.
+ ${}^{137}\mathrm{Cs}$ remains the primary long-term concern.
 - The disaster highlighted the importance of cooling systems for spent fuel and the vulnerability of
-  nuclear plants to extreme natural events.
+ nuclear plants to extreme natural events.
 
 Both disasters demonstrate that understanding half-lives is critical for predicting contamination
-timelines and informing public health responses.
+Timelines and informing public health responses.
 
 :::tip
 Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
-which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
-ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
-internally, gamma externally).
+Which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
+Ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
+Internally, gamma externally).
 :::
 
 ## Additional Problems
@@ -554,7 +554,7 @@ internally, gamma externally).
 <details>
 <summary>Problem 11</summary>
 A sample of ancient wood has a ${}^{14}\mathrm{C}$ activity of 1.5 Bq per gram. A living sample of the
-same type of wood has an activity of 12.5 Bq per gram. Calculate the age of the ancient wood.
+Same type of wood has an activity of 12.5 Bq per gram. Calculate the age of the ancient wood.
 ($t_{1/2}$ of ${}^{14}\mathrm{C} = 5730$ years.)
 
 **Answer.** $A/A_0 = 1.5/12.5 = 0.12$. $\ln 0.12 = -\lambda t$.
@@ -568,10 +568,10 @@ $t = -\ln 0.12/(1.209 \times 10^{-4}) = 2.12/(1.209 \times 10^{-4}) = 17,500$ ye
 <details>
 <summary>Problem 12</summary>
 In the uranium-238 decay series, verify that 8 alpha decays and 6 beta-minus decays are consistent
-with the transformation from ${}^{238}\mathrm{U}$ to ${}^{206}\mathrm{Pb}$.
+With the transformation from ${}^{238}\mathrm{U}$ to ${}^{206}\mathrm{Pb}$.
 
-**Answer.** After 8 alpha decays: $A = 238 - 8 \times 4 = 206$, $Z = 92 - 8 \times 2 = 76$. After 6
-beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$, $Z = 82$, which is
+**Answer.** After 8 alpha decays: $A = 238 - 8 \times 4 = 206$$Z = 92 - 8 \times 2 = 76$. After 6
+Beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$$Z = 82$Which is
 ${}^{206}\mathrm{Pb}$ $\checkmark$.
 
 <b>If you get this wrong, revise:</b> [The Uranium-238 Decay Series](#the-uranium-238-decay-series)
@@ -581,8 +581,8 @@ ${}^{206}\mathrm{Pb}$ $\checkmark$.
 <details>
 <summary>Problem 13</summary>
 A GM tube records a count rate of 340 counts per minute from a radioactive source. The background
-count rate is 25 counts per minute. After 2.5 hours, the count rate (including background) has
-fallen to 105 counts per minute. Calculate the half-life of the source.
+Count rate is 25 counts per minute. After 2.5 hours, the count rate (including background) has
+Fallen to 105 counts per minute. Calculate the half-life of the source.
 
 **Answer.** Corrected initial count rate: $340 - 25 = 315$ cpm. Corrected final count rate:
 $105 - 25 = 80$ cpm. $80/315 = 0.254$. $\ln 0.254 = -\lambda \times 150$ min (2.5 hours).
@@ -596,14 +596,14 @@ $-1.37 = -150\lambda$. $\lambda = 0.00913$ min$^{-1}$. $t_{1/2} = \ln 2/0.00913 
 <details>
 <summary>Problem 14</summary>
 A patient is administered ${}^{99m}\mathrm{Tc}$ with a physical half-life of 6.0 hours for a
-diagnostic scan. The biological half-life of ${}^{99m}\mathrm{Tc}$ in the body is 4.8 hours. Calculate
-the effective half-life and the fraction of the initial activity remaining after 12 hours.
+Diagnostic scan. The biological half-life of ${}^{99m}\mathrm{Tc}$ in the body is 4.8 hours. Calculate
+The effective half-life and the fraction of the initial activity remaining after 12 hours.
 
 **Answer.** $1/t_{\mathrm{eff}} = 1/6.0 + 1/4.8 = 0.167 + 0.208 = 0.375$ hour$^{-1}$.
 $t_{\mathrm{eff}} = 1/0.375 = 2.67$ hours.
 
 After 12 hours: $n = 12/2.67 = 4.49$ effective half-lives. Fraction remaining
-$= 1/2^{4.49} = 1/22.4 = 0.0446$, i.e. 4.5%.
+$= 1/2^{4.49} = 1/22.4 = 0.0446$I.e. 4.5%.
 
 <b>If you get this wrong, revise:</b> [Nuclear Medicine](#nuclear-medicine)
 
@@ -612,15 +612,15 @@ $= 1/2^{4.49} = 1/22.4 = 0.0446$, i.e. 4.5%.
 <details>
 <summary>Problem 15</summary>
 Explain why a sample of radon-222 collected from the soil beneath a building continues to produce a
-detectable activity even after the original radon-222 has been removed, referring to the concept of
-secular equilibrium.
+Detectable activity even after the original radon-222 has been removed, referring to the concept of
+Secular equilibrium.
 
 **Answer.** Radon-222 is part of the ${}^{238}\mathrm{U}$ decay chain. Its parent, radium-226, has a
-half-life of 1600 years — much longer than radon-222's half-life of 3.82 days. In secular
-equilibrium, radon-222 is produced by radium-226 at the same rate it decays, so its activity remains
-constant. Removing the radon-222 temporarily reduces the activity, but new radon-222 atoms are
-continuously produced by the long-lived parent, causing the radon activity to rebuild towards its
-equilibrium value over several radon half-lives (approximately 20-40 days).
+Half-life of 1600 years — much longer than radon-222's half-life of 3.82 days. In secular
+Equilibrium, radon-222 is produced by radium-226 at the same rate it decays, so its activity remains
+Constant. Removing the radon-222 temporarily reduces the activity, but new radon-222 atoms are
+Continuously produced by the long-lived parent, causing the radon activity to rebuild towards its
+Equilibrium value over several radon half-lives (approximately 20-40 days).
 
 <b>If you get this wrong, revise:</b> [Secular Equilibrium](#secular-equilibrium)
 
@@ -666,3 +666,15 @@ Common Pitfalls
 - **Confusing activity with count rate:** Activity is the total number of decays per second in the sample (Bq). Count rate is what a detector actually measures, which is always LESS than activity because the detector only captures a fraction of the emissions and background radiation adds to the reading.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

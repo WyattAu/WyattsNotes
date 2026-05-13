@@ -18,15 +18,15 @@ slug: waves-and-radiation
 A wave is a disturbance that transfers energy without transferring matter.
 
 **Transverse waves:** Oscillations perpendicular to the direction of energy transfer (e.g., light,
-water waves).
+Water waves).
 
 **Longitudinal waves:** Oscillations parallel to the direction of energy transfer (e.g., sound).
 
 ### Why the Distinction Between Transverse and Longitudinal Matters
 
 Only transverse waves can be polarised (the oscillations restricted to a single plane). Sound cannot
-be polarised because it is longitudinal. This fact was historically important in establishing that
-light is a transverse wave.
+Be polarised because it is longitudinal. This fact was historically important in establishing that
+Light is a transverse wave.
 
 **Key Wave Quantities:**
 
@@ -41,14 +41,14 @@ $$v = f\lambda$$
 
 ### Derivation of the Wave Equation
 
-In one period $T$, each wavefront travels a distance of one wavelength $\lambda$. Therefore:
+In one period $T$Each wavefront travels a distance of one wavelength $\lambda$. Therefore:
 
 $$v = \frac{\mathrm{distance{}}{\mathrm{time{}} = \frac{\lambda}{T} = \lambda f$$
 
 This is exact for any periodic wave.
 
 **Example:** A sound wave has frequency $440 \mathrm{ Hz{}$ and wavelength $0.78 \mathrm{ m{}$. Find its
-speed.
+Speed.
 
 $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s{}$$
 
@@ -57,13 +57,13 @@ $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s{}$$
 **Reflection:** Angle of incidence equals angle of reflection ($\theta_i = \theta_r$).
 
 **Refraction:** When a wave passes from one medium to another, its speed changes. If it enters at an
-angle, the direction changes.
+Angle, the direction changes.
 
 **Snell's Law:**
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
 
-where $n$ is the refractive index of each medium.
+Where $n$ is the refractive index of each medium.
 
 **Example:** Light travels from air ($n = 1$) into glass ($n = 1.5$) at an angle of incidence of
 $40^\circ$. Find the angle of refraction.
@@ -79,10 +79,10 @@ $$\theta_2 = \arcsin(0.4285) \approx 25.4^\circ$$
 The rate at which wavefronts arrive at the boundary must equal the rate at which they leave.
 Otherwise, wavefronts would pile up or gaps would appear. Therefore the frequency is unchanged.
 Since $v = f\lambda$ and $f$ is constant, a decrease in speed produces a proportional decrease in
-wavelength.
+Wavelength.
 
 **Total Internal Reflection:** Occurs when light travels from a denser to a less dense medium and
-the angle of incidence exceeds the critical angle.
+The angle of incidence exceeds the critical angle.
 
 $$\sin\theta_c = \frac{n_2}{n_1} \quad (n_1 > n_2)$$
 
@@ -100,9 +100,9 @@ Maximum diffraction occurs when the gap width is approximately equal to the wave
 ### Why Diffraction Depends on Wavelength Relative to Gap Size
 
 By Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. If the gap
-is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
-edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
-from all parts of the gap overlap significantly, producing broad spreading.
+Is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
+Edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
+From all parts of the gap overlap significantly, producing broad spreading.
 
 ### Interference
 
@@ -119,8 +119,8 @@ A path difference of $\lambda$ corresponds to a phase difference of $2\pi$ (one 
 
 ### Double Slit Experiment
 
-For light of wavelength $\lambda$ passing through two slits separated by distance $d$, observed on a
-screen at distance $L$:
+For light of wavelength $\lambda$ passing through two slits separated by distance $d$Observed on a
+Screen at distance $L$:
 
 **Fringe spacing:** $w = \dfrac{\lambda L}{d}$
 
@@ -133,11 +133,11 @@ $$w = \frac{\lambda L}{d} = \frac{600 \times 10^{-9} \times 1.5}{0.2 \times 10^{
 
 $$d\sin\theta = n\lambda$$
 
-where $d$ is the grating spacing, $\theta$ is the angle to the $n$th order maximum, and $\lambda$ is
-the wavelength.
+Where $d$ is the grating spacing, $\theta$ is the angle to the $n$Th order maximum, and $\lambda$ is
+The wavelength.
 
 **Example:** A diffraction grating has 500 lines per mm. Light of wavelength $580 \mathrm{ nm{}$ is
-incident normally. Find the angle of the second-order maximum.
+Incident normally. Find the angle of the second-order maximum.
 
 $$d = \frac{1}{500} \mathrm{ mm{} = 2 \times 10^{-6} \mathrm{ m{}$$
 
@@ -147,15 +147,15 @@ $$\theta = \arcsin(0.58) \approx 35.4^\circ$$
 
 ### The Electromagnetic Spectrum
 
-| Region      | Wavelength Range                   | Typical Source    |
+| Region | Wavelength Range | Typical Source |
 | ----------- | ---------------------------------- | ----------------- |
-| Radio       | $> 0.1 \mathrm{ m{}$                  | Transmitters      |
-| Microwave   | $1 \mathrm{ mm{}$ to $0.1 \mathrm{ m{}$  | Microwave ovens   |
-| Infrared    | $700 \mathrm{ nm{}$ to $1 \mathrm{ mm{}$ | Warm objects      |
-| Visible     | $400 - 700 \mathrm{ nm{}$             | The Sun           |
-| Ultraviolet | $10 - 400 \mathrm{ nm{}$              | UV lamps          |
-| X-ray       | $0.01 - 10 \mathrm{ nm{}$             | X-ray tubes       |
-| Gamma       | $< 0.01 \mathrm{ nm{}$                | Radioactive decay |
+| Radio | $> 0.1 \mathrm{ m{}$ | Transmitters |
+| Microwave | $1 \mathrm{ mm{}$ to $0.1 \mathrm{ m{}$ | Microwave ovens |
+| Infrared | $700 \mathrm{ nm{}$ to $1 \mathrm{ mm{}$ | Warm objects |
+| Visible | $400 - 700 \mathrm{ nm{}$ | The Sun |
+| Ultraviolet | $10 - 400 \mathrm{ nm{}$ | UV lamps |
+| X-ray | $0.01 - 10 \mathrm{ nm{}$ | X-ray tubes |
+| Gamma | $< 0.01 \mathrm{ nm{}$ | Radioactive decay |
 
 All EM waves travel at $c = 3 \times 10^8 \mathrm{ m/s{}$ in a vacuum.
 
@@ -171,7 +171,7 @@ Sound is a longitudinal mechanical wave. It requires a medium.
 
 $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 
-where $I_0 = 10^{-12} \mathrm{ W/m{}^2$ (threshold of hearing).
+Where $I_0 = 10^{-12} \mathrm{ W/m{}^2$ (threshold of hearing).
 
 **Example:** A sound has intensity $10^{-6} \mathrm{ W/m{}^2$. Find its intensity level in decibels.
 
@@ -180,8 +180,8 @@ $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) =
 ### Why the Decibel Scale Is Logarithmic
 
 The human ear can detect sounds over a range of intensities spanning $10^{12}$ (from the threshold
-of hearing at $10^{-12}$ W/m$^2$ to the threshold of pain at $1$ W/m$^2$). A linear scale would
-require numbers ranging from 1 to a trillion. The logarithmic decibel scale compresses this range to
+Of hearing at $10^{-12}$ W/m$^2$ to the threshold of pain at $1$ W/m$^2$). A linear scale would
+Require numbers ranging from 1 to a trillion. The logarithmic decibel scale compresses this range to
 0--120 dB, which is far more manageable.
 
 ---
@@ -191,20 +191,20 @@ require numbers ranging from 1 to a trillion. The logarithmic decibel scale comp
 ### Nuclear Radiation
 
 **Alpha radiation ($\alpha$):** Helium nucleus ($^4_2\mathrm{He{}$). Highly ionising, stopped by paper,
-range of a few cm in air.
+Range of a few cm in air.
 
 **Beta radiation ($\beta^-$):** Electron ($^0_{-1}\mathrm{e{}$). Moderately ionising, stopped by a few
-mm of aluminium.
+Mm of aluminium.
 
 **Gamma radiation ($\gamma$):** Electromagnetic radiation. Weakly ionising, requires thick lead or
-concrete to absorb.
+Concrete to absorb.
 
 ### Penetrating Power vs Ionising Power
 
 There is a trade-off: alpha particles are the most ionising but the least penetrating, while gamma
-rays are the least ionising but the most penetrating. This makes sense physically: a highly ionising
-particle loses energy rapidly (short range), while a weakly ionising particle retains its energy
-over a longer distance.
+Rays are the least ionising but the most penetrating. This makes sense physically: a highly ionising
+Particle loses energy rapidly (short range), while a weakly ionising particle retains its energy
+Over a longer distance.
 
 ### Radioactive Decay
 
@@ -212,7 +212,7 @@ Radioactive decay is a random, spontaneous process. The activity $A$ (decay rate
 
 $$A = \lambda N$$
 
-where $\lambda$ is the decay constant and $N$ is the number of undecayed nuclei.
+Where $\lambda$ is the decay constant and $N$ is the number of undecayed nuclei.
 
 **Half-life ($t_{1/2}$):** Time for half the nuclei to decay.
 
@@ -225,21 +225,21 @@ $$N = N_0 e^{-\lambda t}$$
 $$A = A_0 e^{-\lambda t}$$
 
 **Example:** A radioactive isotope has a half-life of 5 hours. If the initial activity is
-$800 \mathrm{ Bq{}$, find the activity after 15 hours.
+$800 \mathrm{ Bq{}$Find the activity after 15 hours.
 
 $$\lambda = \frac{\ln 2}{5} = 0.1386 \mathrm{ h{}^{-1}$$
 
 $$A = 800 e^{-0.1386 \times 15} = 800 e^{-2.079} = 800 \times 0.125 = 100 \mathrm{ Bq{}$$
 
-Or more simply: after 3 half-lives, $A = 800 / 2^3 = 100 \mathrm{ Bq{}$.
+Or more : after 3 half-lives, $A = 800 / 2^3 = 100 \mathrm{ Bq{}$.
 
 ### Why Radioactive Decay Is Random
 
 Each nucleus decays independently with a fixed probability per unit time. It is impossible to
-predict when a specific nucleus will decay. The decay law $N = N_0 e^{-\lambda t}$ describes the
+Predict when a specific nucleus will decay. The decay law $N = N_0 e^{-\lambda t}$ describes the
 _average_ behaviour of a large number of nuclei, not the behaviour of any individual nucleus. This
-is analogous to throwing dice: you cannot predict the outcome of a single throw, but you can predict
-the statistical distribution of many throws.
+Is analogous to throwing dice: you cannot predict the outcome of a single throw, but you can predict
+The statistical distribution of many throws.
 
 ### Nuclear Equations
 
@@ -254,7 +254,7 @@ In a nuclear reaction, both mass number and atomic number are conserved.
 $$E = mc^2$$
 
 **Binding energy:** The energy equivalent of the mass defect (difference between the mass of a
-nucleus and the sum of its constituent nucleons).
+Nucleus and the sum of its constituent nucleons).
 
 $$\Delta E = \Delta m \cdot c^2$$
 
@@ -267,12 +267,12 @@ $$E = 0.0304 \times 931.5 = 28.3 \mathrm{ MeV{}$$
 ### Why Binding Energy Per Nucleon Peaks at Iron-56
 
 As nuclei get larger, the binding energy per nucleon increases (because the strong nuclear force
-binds neighbouring nucleons). However, the strong force has a very short range, so nucleons on
-opposite sides of a large nucleus do not attract each other, while the repulsive Coulomb force
-between protons acts over the entire nucleus. Beyond iron-56, the Coulomb repulsion dominates, and
-adding more nucleons actually decreases the binding energy per nucleon. This is why nuclei heavier
-than iron can release energy through fission, and nuclei lighter than iron can release energy
-through fusion.
+Binds neighbouring nucleons). However, the strong force has a very short range, so nucleons on
+Opposite sides of a large nucleus do not attract each other, while the repulsive Coulomb force
+Between protons acts over the entire nucleus. Beyond iron-56, the Coulomb repulsion dominates, and
+Adding more nucleons actually decreases the binding energy per nucleon. This is why nuclei heavier
+Than iron can release energy through fission, and nuclei lighter than iron can release energy
+Through fusion.
 
 ### Background Radiation
 
@@ -293,58 +293,58 @@ Background radiation comes from:
 2. **Forgetting to convert units:** Wavelengths in nm need to be converted to m for calculations.
 
 3. **Snell's law direction:** The refractive index of the first medium multiplies the sine of the
-   angle in the first medium.
+ angle in the first medium.
 
 4. **Total internal reflection conditions:** It only occurs when light travels from a denser medium
-   ($n_1$) to a less dense medium ($n_2$).
+ ($n_1$) to a less dense medium ($n_2$).
 
-5. **Decay constant and half-life:** $\lambda = \dfrac{\ln 2}{t_{1/2}}$, not
-   $\lambda = \dfrac{1}{t_{1/2}}$.
+5. **Decay constant and half-life:** $\lambda = \dfrac{\ln 2}{t_{1/2}}$Not
+ $\lambda = \dfrac{1}{t_{1/2}}$.
 
 6. **Confusing path difference and phase difference.** Path difference is in metres; phase
-   difference is in radians or degrees.
+ difference is in radians or degrees.
 
 7. **Using the fringe spacing formula with the wrong variable for slit separation.** $d$ is the slit
-   separation, not the distance to the screen.
+ separation, not the distance to the screen.
 
 ---
 
 ## Practice Questions
 
 1. Light of wavelength $550 \mathrm{ nm{}$ is incident on a diffraction grating with 300 lines per mm.
-   Find the angles of the first and second order maxima.
+ Find the angles of the first and second order maxima.
 
 2. A sound has intensity level $75 \mathrm{ dB{}$. Find its intensity in $\mathrm{W/m{}^2$.
 
 3. A radioactive sample has half-life 8 days and initial activity $1200 \mathrm{ Bq{}$. Find the
-   activity after 32 days.
+ activity after 32 days.
 
 4. Light travels from water ($n = 1.33$) into air at an angle of $35^\circ$ to the normal. Find the angle
-   of refraction. Does total internal reflection occur?
+ of refraction. Does total internal reflection occur?
 
 5. The binding energy per nucleon of iron-56 is $8.79 \mathrm{ MeV{}$. Find the total binding energy.
 
 6. In a double slit experiment, the fringe spacing is $3.2 \mathrm{ mm{}$ when the screen is
-   $1.2 \mathrm{ m{}$ from the slits. If the slit separation is $0.25 \mathrm{ mm{}$, find the wavelength
-   of the light.
+ $1.2 \mathrm{ m{}$ from the slits. If the slit separation is $0.25 \mathrm{ mm{}$Find the wavelength
+ of the light.
 
 7. Write the nuclear equation for the beta-minus decay of carbon-14.
 
 8. A wave has frequency $250 \mathrm{ Hz{}$ and travels at $1500 \mathrm{ m/s{}$. Find the wavelength and
-   the phase difference between two points $3 \mathrm{ m{}$ apart.
+ the phase difference between two points $3 \mathrm{ m{}$ apart.
 
 9. A diffraction grating produces a first-order maximum at $20^\circ$ for light of wavelength
-   $500 \mathrm{ nm{}$. Calculate the number of lines per mm on the grating.
+ $500 \mathrm{ nm{}$. Calculate the number of lines per mm on the grating.
 
 10. A sample of iodine-131 has a half-life of 8 days. A hospital receives a shipment with activity
-    $6.4 \times 10^8 \mathrm{ Bq{}$. After how many days will the activity fall below
-    $1.0 \times 10^7 \mathrm{ Bq{}$?
+ $6.4 \times 10^8 \mathrm{ Bq{}$. After how many days will the activity fall below
+ $1.0 \times 10^7 \mathrm{ Bq{}$?
 
 ## 11. Worked Example: Single Slit Diffraction Intensity
 
 Light of wavelength $550 \mathrm{ nm{}$ passes through a slit of width $0.02 \mathrm{ mm{}$. Find the
-angular width of the central maximum and the intensity of the first secondary maximum relative to
-the central maximum.
+Angular width of the central maximum and the intensity of the first secondary maximum relative to
+The central maximum.
 
 **Central maximum half-width:**
 
@@ -355,7 +355,7 @@ $$\theta = \arcsin(0.0275) = 1.58^{\circ}$$
 The full angular width of the central maximum is $2\theta = 3.15^{\circ}$.
 
 **First secondary maximum:** The first secondary maximum occurs approximately halfway between the
-first and second minima:
+First and second minima:
 
 $$\sin\theta \approx \frac{3\lambda}{2a} = 0.0413$$
 
@@ -368,22 +368,22 @@ The first secondary maximum has about 4.5% of the intensity of the central maxim
 ## 12. Worked Example: Diffraction Grating with White Light
 
 A diffraction grating with 500 lines/mm is illuminated with white light. Find the angular width of
-the first-order spectrum.
+The first-order spectrum.
 
 The grating spacing: $d = \frac{1}{500 \times 10^3} = 2 \times 10^{-6} \mathrm{ m{}$.
 
 For the first order ($n = 1$):
 
 - Violet ($\lambda = 400 \mathrm{ nm{}$):
-  $\sin\theta_v = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.200$, $\theta_v = 11.5^{\circ}$
+ $\sin\theta_v = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.200$$\theta_v = 11.5^{\circ}$
 - Red ($\lambda = 700 \mathrm{ nm{}$):
-  $\sin\theta_r = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.350$, $\theta_r = 20.5^{\circ}$
+ $\sin\theta_r = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.350$$\theta_r = 20.5^{\circ}$
 
 The angular width of the first-order spectrum is $20.5^{\circ} - 11.5^{\circ} = 9.0^{\circ}$.
 
-The second-order spectra overlap: the second-order violet ($\sin\theta = 0.400$,
+The second-order spectra overlap: the second-order violet ($\sin\theta = 0.400$
 $\theta = 23.6^{\circ}$) overlaps with the first-order red ($\theta = 20.5^{\circ}$). This limits
-the useful number of orders for spectroscopy.
+The useful number of orders for spectroscopy.
 
 ## 13. Radioactive Decay: Extended Analysis
 
@@ -397,8 +397,8 @@ $$\lambda = \frac{\ln 2}{t_{1/2}} = \frac{0.693}{28.8} = 0.02406 \mathrm{ year{}
 $$\frac{N}{N_0} = e^{-\lambda t} = e^{-0.02406 \times 100} = e^{-2.406} = 0.0902$$
 
 After 100 years, about 9% of the original strontium-90 remains. This is why strontium-90 is so
-hazardous in nuclear fallout: it has a long enough half-life to persist for decades, yet decays fast
-enough to deliver significant radiation dose.
+Hazardous in nuclear fallout: it has a long enough half-life to persist for decades, yet decays fast
+Enough to deliver significant radiation dose.
 
 ### Activity and Mass Relationship
 
@@ -406,7 +406,7 @@ The activity of a sample depends on the number of nuclei and the decay constant:
 
 $$A = \lambda N = \frac{\lambda m N_A}{M_{\mathrm{atomic{}}}$$
 
-where $m$ is the mass of the sample, $N_A = 6.022 \times 10^{23}$ is Avogadro's number, and
+Where $m$ is the mass of the sample, $N_A = 6.022 \times 10^{23}$ is Avogadro's number, and
 $M_{\mathrm{atomic{}}$ is the molar mass in g/mol.
 
 ### Worked Example: Activity of a Sample
@@ -428,7 +428,7 @@ $A = \lambda N = 4.17 \times 10^{-9} \times 5.018 \times 10^{19} = 2.09 \times 1
 ### Worked Example: Decibel Addition
 
 Two sound sources produce intensity levels of $70 \mathrm{ dB{}$ and $73 \mathrm{ dB{}$ at a point. Find
-the total intensity level.
+The total intensity level.
 
 $$I_1 = I_0 \times 10^{70/10} = 10^{-12} \times 10^7 = 10^{-5} \mathrm{ W/m{}^2$$
 
@@ -438,61 +438,61 @@ $$I_{\mathrm{total{}} = 3 \times 10^{-5} \mathrm{ W/m{}^2$$
 
 $$\beta_{\mathrm{total{}} = 10\log_{10}\left(\frac{3 \times 10^{-5}}{10^{-12}}\right) = 10\log_{10}(3 \times 10^7) = 10 \times 7.477 = 74.8 \mathrm{ dB{}$$
 
-Note: adding two sources of 70 dB and 73 dB gives $74.8 \mathrm{ dB{}$, not $143 \mathrm{ dB{}$. Decibels
-do not add linearly. A 3 dB increase corresponds to a doubling of intensity, so adding a second
-source of equal intensity adds 3 dB.
+Note: adding two sources of 70 dB and 73 dB gives $74.8 \mathrm{ dB{}$Not $143 \mathrm{ dB{}$. Decibels
+Do not add linearly. A 3 dB increase corresponds to a doubling of intensity, so adding a second
+Source of equal intensity adds 3 dB.
 
 ## 15. Summary Table: Wave and Radiation Formulas
 
-| Topic               | Formula                             | Variables                | Notes                     |
+| Topic | Formula | Variables | Notes |
 | ------------------- | ----------------------------------- | ------------------------ | ------------------------- |
-| Wave speed          | $v = f\lambda$                      | $f$, $\lambda$           | Exact for periodic waves  |
-| Snell's law         | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$, $\theta$            | Frequency unchanged       |
-| Critical angle      | $\sin\theta_c = n_2/n_1$            | $n_1 \gt n_2$            | Total internal reflection |
-| Double slit         | $w = \lambda L/d$                   | $\lambda$, $L$, $d$      | Fringe spacing            |
-| Diffraction grating | $d\sin\theta = n\lambda$            | $d$, $\theta$, $\lambda$ | $n$th order maximum       |
-| Decibels            | $\beta = 10\log_{10}(I/I_0)$        | $I$, $I_0$               | $I_0 = 10^{-12}$ W/m$^2$  |
-| Decay law           | $N = N_0 e^{-\lambda t}$            | $N_0$, $\lambda$, $t$    | Exponential decay         |
-| Half-life           | $t_{1/2} = \ln 2/\lambda$           | $\lambda$                | Constant for each isotope |
-| Activity            | $A = \lambda N$                     | $\lambda$, $N$           | In becquerels (Bq)        |
-| Mass-energy         | $E = mc^2$                          | $m$, $c$                 | Binding energy            |
+| Wave speed | $v = f\lambda$ | $f$$\lambda$ | Exact for periodic waves |
+| Snell's law | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$$\theta$ | Frequency unchanged |
+| Critical angle | $\sin\theta_c = n_2/n_1$ | $n_1 \gt n_2$ | Total internal reflection |
+| Double slit | $w = \lambda L/d$ | $\lambda$$L$$d$ | Fringe spacing |
+| Diffraction grating | $d\sin\theta = n\lambda$ | $d$$\theta$$\lambda$ | $n$Th order maximum |
+| Decibels | $\beta = 10\log_{10}(I/I_0)$ | $I$$I_0$ | $I_0 = 10^{-12}$ W/m$^2$ |
+| Decay law | $N = N_0 e^{-\lambda t}$ | $N_0$$\lambda$$t$ | Exponential decay |
+| Half-life | $t_{1/2} = \ln 2/\lambda$ | $\lambda$ | Constant for each isotope |
+| Activity | $A = \lambda N$ | $\lambda$$N$ | In becquerels (Bq) |
+| Mass-energy | $E = mc^2$ | $m$$c$ | Binding energy |
 
 ## 16. Practice Questions (Additional)
 
 11. Light of wavelength $480 \mathrm{ nm{}$ passes through a double slit with slit separation
-    $0.15 \mathrm{ mm{}$. The screen is $2.5 \mathrm{ m{}$ away. Calculate the fringe spacing and the
-    distance from the central maximum to the third-order bright fringe.
+ $0.15 \mathrm{ mm{}$. The screen is $2.5 \mathrm{ m{}$ away. Calculate the fringe spacing and the
+ distance from the central maximum to the third-order bright fringe.
 
 12. A sample of radon-222 has an initial activity of $8000 \mathrm{ Bq{}$. After 11.4 days, the
-    activity is $2000 \mathrm{ Bq{}$. Calculate the half-life of radon-222.
+ activity is $2000 \mathrm{ Bq{}$. Calculate the half-life of radon-222.
 
 13. Two speakers emit sound at $440 \mathrm{ Hz{}$ and are $3 \mathrm{ m{}$ apart. A listener walks along
-    a line perpendicular to the line joining the speakers, starting from the midpoint. At what
-    distance from the midpoint does the listener first hear a minimum in intensity? (Speed of sound
-    $= 343 \mathrm{ m/s{}$.)
+ a line perpendicular to the line joining the speakers, starting from the midpoint. At what
+ distance from the midpoint does the listener first hear a minimum in intensity? (Speed of sound
+ $= 343 \mathrm{ m/s{}$.)
 
 14. Calculate the binding energy per nucleon of carbon-12. Given: mass of carbon-12 =
-    $12.000 \mathrm{ u{}$, mass of proton $= 1.00728 \mathrm{ u{}$, mass of neutron $= 1.00867 \mathrm{ u{}$,
-    $1 \mathrm{ u{} = 931.5 \mathrm{ MeV{}/c^2$.
+ $12.000 \mathrm{ u{}$Mass of proton $= 1.00728 \mathrm{ u{}$Mass of neutron $= 1.00867 \mathrm{ u{}$
+ $1 \mathrm{ u{} = 931.5 \mathrm{ MeV{}/c^2$.
 
 15. A diffraction grating produces a first-order maximum at $22.0^{\circ}$ for light of wavelength
-    $589 \mathrm{ nm{}$. Calculate the number of lines per mm on the grating and the maximum number of
-    orders visible.
+ $589 \mathrm{ nm{}$. Calculate the number of lines per mm on the grating and the maximum number of
+ orders visible.
 
 16. Explain why gamma rays are more penetrating than alpha particles, even though alpha particles
-    carry more energy per particle.
+ carry more energy per particle.
 
 17. A sound source produces an intensity level of $85 \mathrm{ dB{}$ at $5 \mathrm{ m{}$. At what distance
-    is the intensity level $60 \mathrm{ dB{}$?
+ is the intensity level $60 \mathrm{ dB{}$?
 
 18. Write balanced nuclear equations for: (a) alpha decay of polonium-210, (b) beta-minus decay of
-    strontium-90.
+ strontium-90.
 
 19. Explain the process of nuclear fission. Why does it release energy? Reference the binding energy
-    per nucleon curve in your answer.
+ per nucleon curve in your answer.
 
 20. Describe an experiment to demonstrate two-source interference with sound waves. Include a
-    diagram description and explain how you would measure the wavelength.
+ diagram description and explain how you would measure the wavelength.
 
 ## Extended Worked Examples
 
@@ -521,15 +521,15 @@ $$\frac{I}{I_0} = \left( \frac{\sin\beta}{\beta} \right)^2 = \left( \frac{\sin(2
 So the second secondary maximum has about $1.6\%$ of the central maximum intensity.
 
 :::info
-The intensity of secondary maxima drops rapidly: first secondary $\approx 4.7\%$, second
-$\approx 1.6\%$, third $\approx 0.8\%$ of $I_0$. Most of the diffracted light energy is concentrated
-in the central maximum.
+The intensity of secondary maxima drops rapidly: first secondary $\approx 4.7\%$Second
+$\approx 1.6\%$Third $\approx 0.8\%$ of $I_0$. Most of the diffracted light energy is concentrated
+In the central maximum.
 :::
 
 ### Example 22: Radioactive Dating
 
 A sample of ancient wood contains $25\%$ of the original carbon-14. Given that the half-life of
-carbon-14 is $5730 \mathrm{ years{}$, calculate the age of the sample.
+Carbon-14 is $5730 \mathrm{ years{}$Calculate the age of the sample.
 
 **Step 1: Use the decay law**
 
@@ -547,13 +547,13 @@ $$\ln(0.25) = -\lambda t$$
 
 $$t = \frac{-\ln(0.25)}{\lambda} = \frac{1.386}{1.209 \times 10^{-4}} = 11460 \mathrm{ years{}$$
 
-**Check:** Since $0.25 = (1/2)^2$, the sample has undergone exactly 2 half-lives, so
+**Check:** Since $0.25 = (1/2)^2$The sample has undergone exactly 2 half-lives, so
 $t = 2 \times 5730 = 11460 \mathrm{ years{}$. This confirms our calculation.
 
 ### Example 23: Sound Level Addition with Multiple Sources
 
 Three identical machines each produce a sound level of $80 \mathrm{ dB{}$ at a certain point. Calculate
-the combined sound level.
+The combined sound level.
 
 **Step 1: Convert each level to intensity**
 
@@ -572,7 +572,7 @@ $$L_{\mathrm{total{}} = 10 \log_{10}(3 \times 10^8) = 10 \times (8 + \log_{10} 3
 :::warning
 Doubling the number of identical sources only increases the sound level by $3 \mathrm{ dB{}$
 (since $10\log_{10} 2 \approx 3$). Ten times as many sources gives $+10 \mathrm{ dB{}$. This
-logarithmic behaviour surprises many students.
+Logarithmic behaviour surprises many students.
 :::
 
 ## Common Pitfalls Extended
@@ -581,50 +581,50 @@ logarithmic behaviour surprises many students.
 
 - **Activity** $A = \lambda N$ is the number of decays per second (Bq) -- a property of the _sample_
 - **Count rate** is what a detector actually measures -- always less than activity due to detector
-  efficiency and geometry
+ efficiency and geometry
 - **Decay constant** $\lambda$ is a fixed property of the _isotope_, independent of sample size
 
 ### Pitfall 7: Forgetting the Factor of 2 in Coherent Source Path Difference
 
-For two coherent sources separated by distance $d$, the path difference to a point at angle $\theta$
-is $d \sin\theta$, _not_ $2d \sin\theta$. The factor of 2 only appears in thin film interference
-where the light traverses the film twice (reflection from top and bottom surfaces).
+For two coherent sources separated by distance $d$The path difference to a point at angle $\theta$
+Is $d \sin\theta$_not_ $2d \sin\theta$. The factor of 2 only appears in thin film interference
+Where the light traverses the film twice (reflection from top and bottom surfaces).
 
 ### Pitfall 8: Assuming All Nuclear Radiation Is Equally Ionising
 
 Ionising power: alpha &gt; beta &gt; gamma. Penetrating power is the reverse: gamma &gt; beta &gt;
-alpha. A common exam question asks you to explain this inverse relationship: alpha particles are
-large and slow with double charge, so they interact strongly (high ionisation, low penetration).
-Gamma rays have no charge or mass, so they pass through matter easily (low ionisation, high
-penetration).
+Alpha. A common exam question asks you to explain this inverse relationship: alpha particles are
+Large and slow with double charge, so they interact strongly (high ionisation, low penetration).
+Gamma rays have no charge or mass, so they pass through matter (low ionisation, high
+Penetration).
 
 ## Additional Practice Problems
 
 21. A diffraction grating has $500 \mathrm{ lines/mm{}$. Light of wavelength $620 \mathrm{ nm{}$ is
-    incident normally. Calculate the angular position of the third-order maximum and the total
-    number of orders visible.
+ incident normally. Calculate the angular position of the third-order maximum and the total
+ number of orders visible.
 
 22. A sample of radon-222 (half-life $3.82 \mathrm{ days{}$) has an initial activity of
-    $8000 \mathrm{ Bq{}$. Calculate the activity after 15 days and the time for the activity to fall to
-    $500 \mathrm{ Bq{}$.
+ $8000 \mathrm{ Bq{}$. Calculate the activity after 15 days and the time for the activity to fall to
+ $500 \mathrm{ Bq{}$.
 
 23. Two speakers are $3 \mathrm{ m{}$ apart and emit sound at $685 \mathrm{ Hz{}$. A listener walks along
-    a line parallel to the speakers, $8 \mathrm{ m{}$ away. Calculate the positions of the first three
-    points of constructive interference along this line. (Speed of sound $= 343 \mathrm{ m/s{}$.)
+ a line parallel to the speakers, $8 \mathrm{ m{}$ away. Calculate the positions of the first three
+ points of constructive interference along this line. (Speed of sound $= 343 \mathrm{ m/s{}$.)
 
 24. Calculate the energy released when $1 \mathrm{ kg{}$ of uranium-235 undergoes fission, assuming
-    each fission releases $200 \mathrm{ MeV{}$ and Avogadro's number $= 6.02 \times 10^{23}$. Compare
-    this to the energy released by burning $1 \mathrm{ kg{}$ of coal ($3 \times 10^7 \mathrm{ J{}$).
+ each fission releases $200 \mathrm{ MeV{}$ and Avogadro's number $= 6.02 \times 10^{23}$. Compare
+ this to the energy released by burning $1 \mathrm{ kg{}$ of coal ($3 \times 10^7 \mathrm{ J{}$).
 
 25. Explain why ultrasound is preferred to X-rays for imaging foetuses. Refer to the types of
-    radiation, their ionising power, and the energy of typical photons in each case.
+ radiation, their ionising power, and the energy of typical photons in each case.
 
 ## Further Worked Examples
 
 ### Example 26: Resonance in a Closed Pipe
 
 A closed pipe produces resonance with a tuning fork of frequency $512 \mathrm{ Hz{}$ when the air
-column length is $16.5 \mathrm{ cm{}$. Calculate the speed of sound and the next two resonant lengths.
+Column length is $16.5 \mathrm{ cm{}$. Calculate the speed of sound and the next two resonant lengths.
 
 **Step 1: Identify the harmonic**
 
@@ -647,8 +647,8 @@ $L_3 = 5\lambda/4 = 5 \times 0.165 = 0.825 \mathrm{ m{} = 82.5 \mathrm{ cm{}$
 ### Example 27: Nuclear Binding Energy Calculation
 
 Calculate the binding energy per nucleon of helium-4. Given: mass of helium-4 nucleus
-$= 4.001506 \mathrm{ u{}$, mass of proton $= 1.007276 \mathrm{ u{}$, mass of neutron
-$= 1.008665 \mathrm{ u{}$, $1 \mathrm{ u{} = 931.5 \mathrm{ MeV{}/c^2$.
+$= 4.001506 \mathrm{ u{}$Mass of proton $= 1.007276 \mathrm{ u{}$Mass of neutron
+$= 1.008665 \mathrm{ u{}$$1 \mathrm{ u{} = 931.5 \mathrm{ MeV{}/c^2$.
 
 **Step 1: Calculate mass defect**
 
@@ -670,19 +670,19 @@ This is close to the accepted value of $7.07 \mathrm{ MeV/nucleon{}$ for helium-
 
 :::info
 The binding energy per nucleon peaks at around $8.8 \mathrm{ MeV/nucleon{}$ for iron-56. This
-means:
+Means:
 
 - Nuclei lighter than iron can _release energy by fusion_ (combining to form heavier nuclei closer
-  to iron)
+ to iron)
 - Nuclei heavier than iron can _release energy by fission_ (splitting to form lighter nuclei closer
-to iron)
+To iron)
 :::
 
 ### Example 28: Two-Source Interference Quantitative
 
 In a two-source interference experiment, two coherent sources $S_1$ and $S_2$ are $0.8 \mathrm{ mm{}$
-apart and emit light of wavelength $580 \mathrm{ nm{}$. The screen is $1.5 \mathrm{ m{}$ away. Calculate
-the fringe spacing and the distance from the central maximum to the fifth bright fringe.
+Apart and emit light of wavelength $580 \mathrm{ nm{}$. The screen is $1.5 \mathrm{ m{}$ away. Calculate
+The fringe spacing and the distance from the central maximum to the fifth bright fringe.
 
 **Step 1: Fringe spacing**
 
@@ -703,35 +703,35 @@ Doubling the wavelength doubles the fringe spacing.
 ### Radiation Detection: Geiger-Muller Tube
 
 A GM tube has a dead time of approximately $100 \mathrm{ {}\mu\mathrm{s{}$ after each count. This limits
-the maximum count rate:
+The maximum count rate:
 
 $$\mathrm{Maximum count rate{} = \frac{1}{\mathrm{dead time{}} = \frac{1}{100 \times 10^{-6}} = 10000 \mathrm{ counts/s{}$$
 
 At high activities, the GM tube undercounts because some particles arrive during the dead time. The
-true count rate is related to the observed count rate by:
+True count rate is related to the observed count rate by:
 
 $$R_{\mathrm{true{}} = \frac{R_{\mathrm{obs{}}}{1 - R_{\mathrm{obs{}} \times \tau}$$
 
-where $\tau$ is the dead time.
+Where $\tau$ is the dead time.
 
 ## Additional Practice Problems
 
 26. A diffraction grating has $600 \mathrm{ lines/mm{}$ and is illuminated with light of wavelength
-    $550 \mathrm{ nm{}$. Calculate the angular positions of the first three orders and determine the
-    maximum number of orders visible.
+ $550 \mathrm{ nm{}$. Calculate the angular positions of the first three orders and determine the
+ maximum number of orders visible.
 
 27. A sample of cobalt-60 has a half-life of $5.27 \mathrm{ years{}$ and an initial activity of
-    $20000 \mathrm{ Bq{}$. Calculate the activity after 10 years, the number of cobalt-60 atoms
-    remaining, and the mass of cobalt-60 remaining.
+ $20000 \mathrm{ Bq{}$. Calculate the activity after 10 years, the number of cobalt-60 atoms
+ remaining, and the mass of cobalt-60 remaining.
 
 28. Two loudspeakers are connected to the same signal generator and placed $2 \mathrm{ m{}$ apart. They
-    emit a tone of $440 \mathrm{ Hz{}$. A microphone is moved along a line $5 \mathrm{ m{}$ from and
-    parallel to the line joining the speakers. Calculate the positions of the first three minima.
-    (Speed of sound $= 343 \mathrm{ m/s{}$.)
+ emit a tone of $440 \mathrm{ Hz{}$. A microphone is moved along a line $5 \mathrm{ m{}$ from and
+ parallel to the line joining the speakers. Calculate the positions of the first three minima.
+ (Speed of sound $= 343 \mathrm{ m/s{}$.)
 
 29. Calculate the energy released when two deuterium nuclei fuse to form helium-3 and a neutron.
-    Mass of deuterium $= 2.013553 \mathrm{ u{}$, mass of helium-3 $= 3.016029 \mathrm{ u{}$, mass of
-    neutron $= 1.008665 \mathrm{ u{}$.
+ Mass of deuterium $= 2.013553 \mathrm{ u{}$Mass of helium-3 $= 3.016029 \mathrm{ u{}$Mass of
+ neutron $= 1.008665 \mathrm{ u{}$.
 
 30. Explain the principles of a gamma camera used in medical imaging. Describe how the collimator,
-    scintillator crystal, photomultiplier tubes, and computer work together to produce an image.
+ scintillator crystal, photomultiplier tubes, and computer work together to produce an image.

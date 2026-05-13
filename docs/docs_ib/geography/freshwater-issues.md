@@ -35,7 +35,7 @@ The distribution of renewable freshwater resources is highly uneven. Brazil, Rus
 
 ### Definitions
 
-**Physical water scarcity** occurs when the available freshwater resources are insufficient to meet the demands of the population, typically defined as annual renewable freshwater availability below 1000 m$^3$ per person per year (the Falkenmark indicator).
+**Physical water scarcity** occurs when the available freshwater resources are insufficient to meet the demands of the population, defined as annual renewable freshwater availability below 1000 m$^3$ per person per year (the Falkenmark indicator).
 
 **Economic water scarcity** occurs where freshwater resources are physically sufficient but are not accessible due to lack of infrastructure, investment, or institutional capacity. Approximately 1.6 billion people live in areas of economic water scarcity, predominantly in Sub-Saharan Africa and South Asia.
 
@@ -79,7 +79,7 @@ The water balance of a drainage basin is expressed as:
 
 $$P = Q + E \pm \Delta S$$
 
-where $P$ is precipitation, $Q$ is runoff (river discharge), $E$ is evapotranspiration, and $\Delta S$ is the change in storage. Over the long term, $\Delta S$ approaches zero, so:
+Where $P$ is precipitation, $Q$ is runoff (river discharge), $E$ is evapotranspiration, and $\Delta S$ is the change in storage. Over the long term, $\Delta S$ approaches zero, so:
 
 $$P = Q + E$$
 
@@ -87,7 +87,7 @@ This equation states that all precipitation is ultimately accounted for by runof
 
 ### The Storm Hydrograph
 
-A storm hydrograph (or flood hydrograph) is a graph showing river discharge (typically in m$^3$/s) over time, usually before, during, and after a rainfall event. Key features include:
+A storm hydrograph (or flood hydrograph) is a graph showing river discharge ( in m$^3$/s) over time, before, during, and after a rainfall event. Key features include:
 
 - **Baseflow:** the normal, sustained flow of a river, fed by groundwater discharge
 - **Rising limb:** the increase in discharge following rainfall, as water reaches the river channel
@@ -113,7 +113,7 @@ A storm hydrograph (or flood hydrograph) is a graph showing river discharge (typ
 <details>
 <summary>Common Pitfalls: Confusing Physical and Human Factors in Hydrology</summary>
 
-When explaining the shape of a storm hydrograph, distinguish clearly between physical factors (climate, geology, slope, drainage basin characteristics) and human factors (urbanisation, deforestation, drainage modifications). Many examination questions require students to explain the impact of a specific factor (e.g., urbanisation) on the hydrograph: urbanisation increases the proportion of impermeable surface, reduces infiltration, and accelerates overland flow, resulting in a shorter lag time and higher peak discharge. Use precise terminology (overland flow, infiltration, throughflow, baseflow) rather than vague descriptions.
+When explaining the shape of a storm hydrograph, distinguish between physical factors (climate, geology, slope, drainage basin characteristics) and human factors (urbanisation, deforestation, drainage modifications). Many examination questions require students to explain the impact of a specific factor (e.g., urbanisation) on the hydrograph: urbanisation increases the proportion of impermeable surface, reduces infiltration, and accelerates overland flow, resulting in a shorter lag time and higher peak discharge. Use precise terminology (overland flow, infiltration, throughflow, baseflow) rather than vague descriptions.
 
 </details>
 
@@ -164,7 +164,7 @@ Hard engineering approaches involve the construction of physical structures to c
 
 ### Soft Engineering
 
-Soft engineering approaches work with natural processes to reduce flood risk, typically at lower cost and with fewer environmental impacts.
+Soft engineering approaches work with natural processes to reduce flood risk, at lower cost and with fewer environmental impacts.
 
 | Method | Description | Advantages | Disadvantages |
 |---|---|---|---|
@@ -272,3 +272,15 @@ As of 2023, progress toward SDG 6 is off track. Approximately 2 billion people s
 Water scarcity is not solely a function of low rainfall. A country with high rainfall can experience water scarcity if demand exceeds supply (e.g., parts of India, which receives monsoonal rainfall but faces severe groundwater depletion due to over-extraction for irrigation). Conversely, a country with low rainfall can avoid water scarcity through efficient management (e.g., Singapore, which has limited natural freshwater but achieves near-universal access through diversification and demand management). Always distinguish between physical and economic water scarcity, and evaluate management strategies in context.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

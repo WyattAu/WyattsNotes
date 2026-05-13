@@ -17,13 +17,13 @@ $$
 \vec{F} = q\vec{v} \times \vec{B}
 $$
 
-The magnitude is $F = qvB\sin\theta$, where $\theta$ is the angle between $\vec{v}$ and $\vec{B}$. The
-direction is given by the right-hand rule.
+The magnitude is $F = qvB\sin\theta$Where $\theta$ is the angle between $\vec{v}$ and $\vec{B}$. The
+Direction is given by the right-hand rule.
 
 ### Key Properties
 
 - The magnetic force is always perpendicular to both $\vec{v}$ and $\vec{B}$.
-- The magnetic force does no work ($\vec{F} \perp \vec{v}$, so $W = \int \vec{F} \cdot d\vec{l} = 0$).
+- The magnetic force does no work ($\vec{F} \perp \vec{v}$So $W = \int \vec{F} \cdot d\vec{l} = 0$).
 - The magnetic force changes the direction of motion, not the speed.
 
 ### Circular Motion in a Magnetic Field
@@ -32,20 +32,20 @@ A charged particle moving perpendicular to a uniform magnetic field follows a ci
 $F = ma$:
 
 $$
-qvB = \frac{mv^2}{r} \implies r = \frac{mv}{qB}
+QvB = \frac{mv^2}{r} \implies r = \frac{mv}{qB}
 $$
 
 The cyclotron frequency is:
 
 $$
-f = \frac{qB}{2\pi m}, \qquad \omega = \frac{qB}{m}
+F = \frac{qB}{2\pi m}, \qquad \omega = \frac{qB}{m}
 $$
 
 ### Motion at an Angle to the Field
 
-If $\vec{v}$ makes angle $\theta$ with $\vec{B}$, the motion is helical. The parallel component
+If $\vec{v}$ makes angle $\theta$ with $\vec{B}$The motion is helical. The parallel component
 $v_\parallel = v\cos\theta$ is unaffected. The perpendicular component $v_\perp = v\sin\theta$ produces
-circular motion with radius $r = mv_\perp/(qB)$ and pitch $p = v_\parallel \cdot T = 2\pi m v_\parallel/(qB)$.
+Circular motion with radius $r = mv_\perp/(qB)$ and pitch $p = v_\parallel \cdot T = 2\pi m v_\parallel/(qB)$.
 
 ## Magnetic Force on a Current-Carrying Wire
 
@@ -58,19 +58,19 @@ $$
 For a non-uniform field or curved wire, use the differential form:
 
 $$
-d\vec{F} = I\, d\vec{l} \times \vec{B}
+D\vec{F} = I\, d\vec{l} \times \vec{B}
 $$
 
 :::info[Example: Force on a semicircular wire]
 
 A semicircular wire of radius $R$ carries current $I$ in a uniform magnetic field $\vec{B}$ directed
-into the page. The straight ends of the wire are along the diameter.
+Into the page. The straight ends of the wire are along the diameter.
 
 The force on the straight segment of length $2R$ is $F = I(2R)B$ (by the right-hand rule, directed
-upward). For the curved part, consider a segment at angle $\theta$:
+Upward). For the curved part, consider a segment at angle $\theta$:
 
 $$
-dF = I(R\, d\theta)B
+DF = I(R\, d\theta)B
 $$
 
 Only the $y$-components survive: $dF_y = dF \sin\theta$. Integrating from $\theta = 0$ to $\pi$:
@@ -79,7 +79,7 @@ $$
 F_y = \int_0^\pi IRB\sin\theta\, d\theta = IRB[-\cos\theta]_0^\pi = 2IRB
 $$
 
-The total force on the semicircular wire is $2IRB$, the same as on a straight wire of length $2R$.
+The total force on the semicircular wire is $2IRB$The same as on a straight wire of length $2R$.
 
 :::
 
@@ -91,20 +91,20 @@ $$
 \vec{\tau} = \vec{\mu} \times \vec{B}
 $$
 
-where the magnetic dipole moment is $\vec{\mu} = NI\vec{A}$, with $\vec{A}$ directed normal to the loop
-by the right-hand rule and $N$ is the number of turns.
+Where the magnetic dipole moment is $\vec{\mu} = NI\vec{A}$With $\vec{A}$ directed normal to the loop
+By the right-hand rule and $N$ is the number of turns.
 
-The magnitude is $\tau = NIAB\sin\alpha$, where $\alpha$ is the angle between $\vec{\mu}$ and $\vec{B}$.
+The magnitude is $\tau = NIAB\sin\alpha$Where $\alpha$ is the angle between $\vec{\mu}$ and $\vec{B}$.
 
 ## Biot-Savart Law
 
 The magnetic field produced by a current element $I\, d\vec{l}$ at position $\vec{r}$ from the element:
 
 $$
-d\vec{B} = \frac{\mu_0}{4\pi} \frac{I\, d\vec{l} \times \hat{r}}{r^2}
+D\vec{B} = \frac{\mu_0}{4\pi} \frac{I\, d\vec{l} \times \hat{r}}{r^2}
 $$
 
-where $\mu_0 = 4\pi \times 10^{-7}$ T$\cdot$m/A is the permeability of free space.
+Where $\mu_0 = 4\pi \times 10^{-7}$ T$\cdot$M/A is the permeability of free space.
 
 ### Field of a Long Straight Wire
 
@@ -115,13 +115,13 @@ $$
 **Derivation:** Place the wire along the $z$-axis. A current element $I\, dz$ at the origin produces:
 
 $$
-dB = \frac{\mu_0}{4\pi}\frac{I\, dz}{r^2}\sin\theta
+DB = \frac{\mu_0}{4\pi}\frac{I\, dz}{r^2}\sin\theta
 $$
 
-where $\sin\theta = R/r$ and $r = \sqrt{z^2 + R^2}$. Let $z = R\tan\phi$, $dz = R\sec^2\phi\, d\phi$:
+Where $\sin\theta = R/r$ and $r = \sqrt{z^2 + R^2}$. Let $z = R\tan\phi$$dz = R\sec^2\phi\, d\phi$:
 
 $$
-dB = \frac{\mu_0 I}{4\pi} \frac{R\sec^2\phi\, d\phi}{R^2\sec^2\phi} \cdot \sin\phi = \frac{\mu_0 I}{4\pi R}\sin\phi\, d\phi
+DB = \frac{\mu_0 I}{4\pi} \frac{R\sec^2\phi\, d\phi}{R^2\sec^2\phi} \cdot \sin\phi = \frac{\mu_0 I}{4\pi R}\sin\phi\, d\phi
 $$
 
 Integrating from $\phi = 0$ to $\pi$ (infinite wire):
@@ -142,7 +142,7 @@ At the center ($x = 0$): $B = \dfrac{\mu_0 I}{2R}$.
 By symmetry, only the axial component survives:
 
 $$
-dB_x = \frac{\mu_0 I}{4\pi r^2}\cdot\frac{R}{r}\, dl = \frac{\mu_0 IR}{4\pi(R^2+x^2)^{3/2}}\, dl
+DB_x = \frac{\mu_0 I}{4\pi r^2}\cdot\frac{R}{r}\, dl = \frac{\mu_0 IR}{4\pi(R^2+x^2)^{3/2}}\, dl
 $$
 
 $$
@@ -159,25 +159,25 @@ $$
 
 ### Field Inside a Long Solenoid
 
-For a solenoid with $n$ turns per unit length carrying current $I$, choose a rectangular Amperian loop
-with one side inside the solenoid and one outside.
+For a solenoid with $n$ turns per unit length carrying current $I$Choose a rectangular Amperian loop
+With one side inside the solenoid and one outside.
 
 $$
 B = \mu_0 n I
 $$
 
 This result is valid for an ideal (infinitely long) solenoid and is a good approximation near the center
-of a long solenoid.
+Of a long solenoid.
 
 ### Field Inside a Toroid
 
-A toroid with $N$ turns carrying current $I$, inner radius $a$, outer radius $b$:
+A toroid with $N$ turns carrying current $I$Inner radius $a$Outer radius $b$:
 
 $$
 B = \frac{\mu_0 N I}{2\pi r}
 $$
 
-valid for $a < r < b$.
+Valid for $a < r < b$.
 
 :::info[Example: Thick conductor with non-uniform current density]
 
@@ -194,7 +194,7 @@ $$
 B \cdot 2\pi r = \mu_0 \frac{2\pi J_0 r^3}{3R} \implies B = \frac{\mu_0 J_0 r^2}{3R}
 $$
 
-To express in terms of $I$, find the total current:
+To express in terms of $I$Find the total current:
 
 $$
 I = \frac{2\pi J_0 R^3}{3R} = \frac{2\pi J_0 R^2}{3} \implies J_0 = \frac{3I}{2\pi R^2}
@@ -220,7 +220,7 @@ $$
 \mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt}
 $$
 
-where the magnetic flux through a surface is:
+Where the magnetic flux through a surface is:
 
 $$
 \Phi_B = \int_S \vec{B} \cdot d\vec{A}
@@ -231,7 +231,7 @@ For a uniform field perpendicular to a flat surface of area $A$: $\Phi_B = BA$.
 ### Lenz's Law
 
 The negative sign in Faraday's law encodes Lenz's law: the induced EMF drives a current whose magnetic
-field opposes the change in flux that produced it. The induced current acts to maintain the status quo.
+Field opposes the change in flux that produced it. The induced current acts to maintain the status quo.
 
 ### Motional EMF
 
@@ -242,7 +242,7 @@ $$
 $$
 
 **Derivation:** The free charges in the bar experience a magnetic force $F = qvB$. This is equivalent
-to an electric field $E = vB$ along the bar. The EMF is:
+To an electric field $E = vB$ along the bar. The EMF is:
 
 $$
 \mathcal{'\{'}E{'\}'} = \int_0^L E\, dl = \int_0^L vB\, dl = BLv
@@ -251,7 +251,7 @@ $$
 :::info[Example: Rotating loop in a magnetic field]
 
 A rectangular loop of area $A$ with $N$ turns rotates with angular velocity $\omega$ in a uniform
-magnetic field $B$. The flux through the loop is:
+Magnetic field $B$. The flux through the loop is:
 
 $$
 \Phi_B = NBA\cos(\omega t)
@@ -263,7 +263,7 @@ $$
 \mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t) = \mathcal{'\{'}E{'\}'}_0\sin(\omega t)
 $$
 
-where $\mathcal{'\{'}E{'\}'}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC generators.
+Where $\mathcal{'\{'}E{'\}'}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC generators.
 
 :::
 
@@ -298,14 +298,14 @@ $$
 \mathcal{'\{'}E{'\}'} = -L\frac{dI}{dt}
 $$
 
-where $L$ is the inductance, measured in henrys (H). For a long solenoid with $N$ turns, length $\ell$,
-cross-sectional area $A$:
+Where $L$ is the inductance, measured in henrys (H). For a long solenoid with $N$ turns, length $\ell$
+Cross-sectional area $A$:
 
 $$
 L = \frac{\mu_0 N^2 A}{\ell} = \mu_0 n^2 A \ell
 $$
 
-where $n = N/\ell$ is the turns per unit length.
+Where $n = N/\ell$ is the turns per unit length.
 
 ### Mutual Inductance
 
@@ -315,7 +315,7 @@ $$
 \mathcal{'\{'}E{'\}'}_2 = -M\frac{dI_1}{dt}
 $$
 
-where $M$ is the mutual inductance. For a solenoid with a secondary coil of $N_2$ turns:
+Where $M$ is the mutual inductance. For a solenoid with a secondary coil of $N_2$ turns:
 
 $$
 M = \frac{\mu_0 N_1 N_2 A}{\ell}
@@ -347,7 +347,7 @@ $$
 I(t) = \frac{\mathcal{'\{'}E{'\}'}}{R}\left(1 - e^{-t/(L/R)}\right) = I_{\max}\left(1 - e^{-t/\tau_L}\right)
 $$
 
-where $\tau_L = L/R$ is the inductive time constant.
+Where $\tau_L = L/R$ is the inductive time constant.
 
 When the switch is opened (current decaying):
 
@@ -361,8 +361,8 @@ $$
 V_L = L\frac{dI}{dt} = \mathcal{'\{'}E{'\}'} e^{-t/\tau_L}
 $$
 
-At $t = 0$, all the voltage is across the inductor. At $t \to \infty$, all the voltage is across the
-resistor.
+At $t = 0$All the voltage is across the inductor. At $t \to \infty$All the voltage is across the
+Resistor.
 
 ### LC Circuits
 
@@ -405,7 +405,7 @@ $$
 
 An LC circuit has $L = 10$ mH and $C = 100\,\mu\text{F{}$. The capacitor is initially charged to
 $Q_0 = 50\,\mu\text{C{}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
-charge when the current is half its maximum value.
+Charge when the current is half its maximum value.
 
 (a) $f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{(0.01)(10^{-4})}} = \frac{1}{2\pi \times 10^{-3}} = 159\,\text{Hz{}$
 
@@ -441,8 +441,8 @@ The four Maxwell's equations unify electricity and magnetism:
 ### The Displacement Current
 
 Maxwell added the displacement current term $\mu_0\epsilon_0 \frac{d\Phi_E}{dt}$ to Ampere's law. This
-term accounts for the fact that a changing electric field (as between capacitor plates) also produces a
-magnetic field, even in the absence of a physical current.
+Term accounts for the fact that a changing electric field (as between capacitor plates) also produces a
+Magnetic field, even in the absence of a physical current.
 
 $$
 I_d = \epsilon_0 \frac{d\Phi_E}{dt}
@@ -465,7 +465,7 @@ $$
 \Phi_E = E \cdot \pi r^2 = \frac{V}{d}\pi r^2
 $$
 
-Since $V = Q/C = Qd/(\epsilon_0 A)$, we have $E = Q/(\epsilon_0 A)$, so $\Phi_E = Q\pi r^2/(\epsilon_0 A)$.
+Since $V = Q/C = Qd/(\epsilon_0 A)$We have $E = Q/(\epsilon_0 A)$So $\Phi_E = Q\pi r^2/(\epsilon_0 A)$.
 
 Apply Ampere-Maxwell law with a circular Amperian loop of radius $r$:
 
@@ -483,61 +483,61 @@ This is the same as the field inside a wire of radius $R$ carrying current $I$.
 
 ## Common Pitfalls
 
-1. **Wrong direction for the magnetic force.** Use $\vec{F} = q\vec{v} \times \vec{B}$, not
-   $\vec{B} \times \vec{v}$. The cross product is not commutative. For negative charges, reverse the
-   direction.
+1. **Wrong direction for the magnetic force.** Use $\vec{F} = q\vec{v} \times \vec{B}$Not
+ $\vec{B} \times \vec{v}$. The cross product is not commutative. For negative charges, reverse the
+ direction.
 2. **Confusing Gauss's law for magnetism with Gauss's law for electricity.** $\oint \vec{B} \cdot
-   d\vec{A} = 0$ always (no magnetic monopoles). This does not mean $B = 0$ everywhere; it means the
-   net flux through any closed surface is zero.
+ d\vec{A} = 0$ always (no magnetic monopoles). This does not mean $B = 0$ everywhere; it means the
+ net flux through any closed surface is zero.
 3. **Incorrect sign in Faraday's law.** The negative sign matters. It represents Lenz's law. If you
-   forget it, your induced current will be in the wrong direction.
+ forget it, your induced current will be in the wrong direction.
 4. **Using Ampere's law without symmetry.** Like Gauss's law, Ampere's law is always true but only
-   useful when symmetry allows you to extract $B$ from the integral. Choose Amperian loops that match
-   the symmetry: circles for straight wires and solenoids.
+ useful when symmetry allows you to extract $B$ from the integral. Choose Amperian loops that match
+ the symmetry: circles for straight wires and solenoids.
 5. **Forgetting that inductors oppose changes in current.** At $t = 0$ in an RL circuit, the inductor
-   acts as an open circuit ($I = 0$). At steady state, it acts as a short circuit ($V_L = 0$). This
-   is the opposite of a capacitor.
+ acts as an open circuit ($I = 0$). At steady state, it acts as a short circuit ($V_L = 0$). This
+ is the opposite of a capacitor.
 6. **Confusing self-inductance and mutual inductance.** Self-inductance $L$ relates the EMF in a coil
-   to its own changing current. Mutual inductance $M$ relates the EMF in one coil to the changing
-   current in another coil.
+ to its own changing current. Mutual inductance $M$ relates the EMF in one coil to the changing
+ current in another coil.
 7. **Incorrectly computing flux for non-perpendicular fields.** When $\vec{B}$ is not perpendicular to
-   the surface, use $\Phi_B = BA\cos\theta$, not $BA$. The angle $\theta$ is between $\vec{B}$ and the
-   surface normal.
+ the surface, use $\Phi_B = BA\cos\theta$Not $BA$. The angle $\theta$ is between $\vec{B}$ and the
+ surface normal.
 8. **Forgetting the displacement current in Ampere-Maxwell law.** When applying Ampere's law between
-   capacitor plates (or in any region where $d\vec{E}/dt \neq 0$), you must include the displacement
-   current term. Without it, Ampere's law gives incorrect results.
+ capacitor plates (or in any region where $d\vec{E}/dt \neq 0$), you must include the displacement
+ current term. Without it, Ampere's law gives incorrect results.
 9. **Assuming the magnetic field inside a solenoid is zero.** The field inside an ideal solenoid is
-   uniform and given by $B = \mu_0 nI$. The field outside is approximately zero.
+ uniform and given by $B = \mu_0 nI$. The field outside is approximately zero.
 
 ## Practice Questions
 
 1. A proton ($m_p = 1.67 \times 10^{-27}$ kg, $q = 1.6 \times 10^{-19}$ C) enters a magnetic field of
-   $B = 0.5$ T with velocity $v = 3 \times 10^6$ m/s perpendicular to the field. Find the radius of
-   the circular orbit and the cyclotron frequency.
+ $B = 0.5$ T with velocity $v = 3 \times 10^6$ m/s perpendicular to the field. Find the radius of
+ the circular orbit and the cyclotron frequency.
 
-2. A wire carrying $I = 10$ A is bent into a right angle. Find the magnetic field at point $P$,
-   located at distance $d = 5$ cm from the vertex along the angle bisector.
+2. A wire carrying $I = 10$ A is bent into a right angle. Find the magnetic field at point $P$
+ located at distance $d = 5$ cm from the vertex along the angle bisector.
 
 3. A solenoid of length $0.3$ m has 1000 turns and carries a current of $5$ A. Find the magnetic field
-   inside and the inductance if the cross-sectional area is $4 \times 10^{-4}$ m$^2$.
+ inside and the inductance if the cross-sectional area is $4 \times 10^{-4}$ m$^2$.
 
 4. A square loop of side $0.2$ m is in a magnetic field $B = 0.5$ T perpendicular to the loop. The
-   field decreases to zero in $0.1$ s. If the loop has resistance $2\,\Omega$, find the induced
-   current and the energy dissipated.
+ field decreases to zero in $0.1$ s. If the loop has resistance $2\,\Omega$Find the induced
+ current and the energy dissipated.
 
 5. An RL circuit has $R = 50\,\Omega$ and $L = 0.2$ H connected to a $12$ V battery. Find (a) the
-   time constant, (b) the current at $t = 10$ ms, and (c) the voltage across the inductor at
-   $t = 10$ ms.
+ time constant, (b) the current at $t = 10$ ms, and (c) the voltage across the inductor at
+ $t = 10$ ms.
 
 6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{F{}$. The maximum charge on the capacitor is
-   $80\,\mu\text{C{}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
-   energy in the circuit.
+ $80\,\mu\text{C{}$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
+ energy in the circuit.
 
 <details>
 <summary>Question 7: AP Exam-Style -- Biot-Savart and Ampere combined</summary>
 
 A long straight wire carries current $I_1 = 10$ A. A circular loop of radius $R = 0.05$ m lies in the
-same plane as the wire, with its center at distance $d = 0.1$ m from the wire. The loop carries current
+Same plane as the wire, with its center at distance $d = 0.1$ m from the wire. The loop carries current
 $I_2 = 5$ A. Find the net magnetic field at the center of the loop.
 
 </details>
@@ -550,7 +550,7 @@ The field from the straight wire at the center of the loop (distance $d = 0.1$ m
 $$B_{\text{wire{}} = \frac{\mu_0 I_1}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)}{2\pi(0.1)} = \frac{2 \times 10^{-5}}{0.1} = 2.0 \times 10^{-4}\,\text{T{}$$
 
 By the right-hand rule, if the wire is vertical and the loop is to the right, the field from the wire
-at the loop center points out of the page.
+At the loop center points out of the page.
 
 The field from the circular loop at its center:
 
@@ -558,7 +558,7 @@ $$B_{\text{loop{}} = \frac{\mu_0 I_2}{2R} = \frac{(4\pi \times 10^{-7})(5)}{2(0.
 
 The direction depends on the current direction in the loop. If the loop current flows counterclockwise
 (viewed from above), the field at the center points out of the page (same direction as the wire's
-field).
+Field).
 
 If both fields are in the same direction:
 
@@ -574,9 +574,9 @@ $$B_{\text{net{}} = (2.0 - 1.257) \times 10^{-4} = 0.74 \times 10^{-4}\,\text{T{
 <summary>Question 8: AP Exam-Style -- Faraday's law with a falling loop</summary>
 
 A rectangular conducting loop of width $w = 0.1$ m and height $h = 0.2$ m falls vertically into a
-region of uniform magnetic field $B = 0.5$ T directed into the page. The field region extends from
+Region of uniform magnetic field $B = 0.5$ T directed into the page. The field region extends from
 $y = 0$ to $y = 0.3$ m. The loop has mass $m = 0.01$ kg and resistance $R = 0.5\,\Omega$. Find the
-terminal velocity of the loop as it enters the field.
+Terminal velocity of the loop as it enters the field.
 
 </details>
 
@@ -584,14 +584,14 @@ terminal velocity of the loop as it enters the field.
 <summary>Answer</summary>
 
 As the loop enters the field, the flux through the loop changes. Only the bottom edge of width $w$ is
-inside the field during entry.
+Inside the field during entry.
 
 The motional EMF: $\mathcal{'\{'}E{'\}'} = Bwv$.
 
 The induced current: $I = \mathcal{'\{'}E{'\}'}/R = Bwv/R$.
 
 By Lenz's law, the induced current creates a force opposing the motion (upward). The force on the
-bottom wire is:
+Bottom wire is:
 
 $$F_B = BIw = \frac{B^2 w^2 v}{R}$$
 
@@ -609,9 +609,9 @@ $$
 <summary>Question 9: AP Exam-Style -- RL circuit analysis</summary>
 
 An RL circuit with $R = 100\,\Omega$ and $L = 0.5$ H is connected to a DC source of $\mathcal{'\{'}E{'\}'} = 20$
-V. At $t = 0$, the switch is closed. (a) Derive the current as a function of time. (b) At what time is
-the current increasing at half its initial rate? (c) How much energy has been stored in the inductor
-when the current reaches 80% of its maximum value?
+V. At $t = 0$The switch is closed. (a) Derive the current as a function of time. (b) At what time is
+The current increasing at half its initial rate? (c) How much energy has been stored in the inductor
+When the current reaches 80% of its maximum value?
 
 </details>
 
@@ -646,9 +646,9 @@ $$U_L = \frac{1}{2}LI^2 = \frac{1}{2}(0.5)(0.16)^2 = \frac{1}{2}(0.5)(0.0256) = 
 <summary>Question 10: AP Exam-Style -- Displacement current and Maxwell's equations</summary>
 
 A parallel plate capacitor with circular plates of radius $R = 5$ cm and separation $d = 2$ mm is being
-charged by a current $I = 3$ A. (a) Find the displacement current between the plates. (b) Find the
-magnetic field at $r = 3$ cm from the axis, midway between the plates. (c) Find the rate of change of
-the electric field between the plates.
+Charged by a current $I = 3$ A. (a) Find the displacement current between the plates. (b) Find the
+Magnetic field at $r = 3$ cm from the axis, midway between the plates. (c) Find the rate of change of
+The electric field between the plates.
 
 </details>
 
@@ -672,3 +672,11 @@ $$I_d = \epsilon_0 \frac{d\Phi_E}{dt} = \epsilon_0 \frac{d}{dt}(E \cdot \pi R^2)
 $$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-12})\pi(0.05)^2} = \frac{3}{6.95 \times 10^{-14}} = 4.32 \times 10^{13}\,\text{V/m{}\cdot\text{s{}$$
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

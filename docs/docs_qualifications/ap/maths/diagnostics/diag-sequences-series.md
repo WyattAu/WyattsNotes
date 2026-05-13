@@ -25,9 +25,9 @@ The alternating series test requires that $b_n = \dfrac{1}{\sqrt{n} + (-1)^n}$ i
 
 $b_1 = \dfrac{1}{1 - 1}$ is **undefined** (division by zero). So the series is not even well-defined starting from $n = 1$.
 
-Start from $n = 2$ instead: $b_2 = \dfrac{1}{\sqrt{2} + 1} \approx 0.414$, $b_3 = \dfrac{1}{\sqrt{3} - 1} \approx 1.366$, $b_4 = \dfrac{1}{2 + 1} \approx 0.333$.
+Start from $n = 2$ instead: $b_2 = \dfrac{1}{\sqrt{2} + 1} \approx 0.414$$b_3 = \dfrac{1}{\sqrt{3} - 1} \approx 1.366$$b_4 = \dfrac{1}{2 + 1} \approx 0.333$.
 
-Since $b_3 > b_2$, the sequence $\{b_n\}$ is **not decreasing**, so the alternating series test does not apply.
+Since $b_3 > b_2$The sequence $\{b_n\}$ is **not decreasing**, so the alternating series test does not apply.
 
 To determine convergence, rewrite:
 
@@ -52,7 +52,7 @@ Use the Maclaurin series for $e^x$ to approximate $e^{0.3}$ using the first thre
 (a) Compute the approximation.
 (b) Use the Lagrange error bound to find an upper bound on the absolute error.
 (c) The actual value is $e^{0.3} \approx 1.3498588$. Compute the actual error and verify it is within the bound.
-(d) A student claims "since the Maclaurin series for $e^x$ converges for all $x$, the error must go to zero." Explain why this does not mean the error is zero for any finite number of terms.
+(d) A student claims "since the Maclaurin series for $e^x$ converges for all $x$The error must go to zero." Explain why this does not mean the error is zero for any finite number of terms.
 
 **Solution:**
 
@@ -62,7 +62,7 @@ First three nonzero terms: $1 + 0.3 + \dfrac{0.09}{2} = 1 + 0.3 + 0.045 = 1.345$
 
 (b) The Lagrange remainder after $n$ terms: $|R_n(x)| \leq \dfrac{M|x|^{n+1}}{(n+1)!}$ where $M = \max|f^{(n+1)}(c)|$ for $c$ between $0$ and $x$.
 
-After 3 terms ($n = 3$, using up to the $x^2$ term), the next term involves $f^{(3)}(x) = e^x$:
+After 3 terms ($n = 3$Using up to the $x^2$ term), the next term involves $f^{(3)}(x) = e^x$:
 
 $$|R_2(0.3)| \leq \frac{e^{0.3} \cdot (0.3)^3}{3!} = \frac{e^{0.3} \cdot 0.027}{6}$$
 
@@ -94,7 +94,7 @@ Apply the ratio test:
 
 $$\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \lim_{n \to \infty}\left|\frac{(x-2)^{n+1}}{(n+1) \cdot 3^{n+1}} \cdot \frac{n \cdot 3^n}{(x-2)^n}\right| = \lim_{n \to \infty}\frac{n}{n+1} \cdot \frac{|x-2|}{3} = \frac{|x-2|}{3}$$
 
-The ratio test gives convergence when $\dfrac{|x-2|}{3} \lt 1$, i.e., $|x - 2| \lt 3$.
+The ratio test gives convergence when $\dfrac{|x-2|}{3} \lt 1$I.e., $|x - 2| \lt 3$.
 
 **Radius of convergence:** $R = 3$.
 
@@ -116,11 +116,11 @@ $x = -1$: $\displaystyle\sum_{n=1}^{\infty} \frac{(-3)^n}{n \cdot 3^n} = \sum_{n
 
 **Question:**
 
-Starting from the geometric series $\displaystyle\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}$ for $|x| \lt 1$, find the exact value of $\displaystyle\sum_{n=1}^{\infty} \frac{n^2}{2^n}$.
+Starting from the geometric series $\displaystyle\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}$ for $|x| \lt 1$Find the exact value of $\displaystyle\sum_{n=1}^{\infty} \frac{n^2}{2^n}$.
 
 **Solution:**
 
-From $\displaystyle\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}$, differentiate both sides:
+From $\displaystyle\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}$Differentiate both sides:
 
 $$\sum_{n=1}^{\infty} nx^{n-1} = \frac{1}{(1-x)^2}$$
 
@@ -166,9 +166,9 @@ $$T_4(x) = 1 - \frac{x^4}{2}$$
 
 $$|R_4(x)| \leq \frac{M|x|^6}{6!}$$
 
-where $M = \max|f^{(6)}(c)|$ for $c \in [0, 0.5]$. This is complicated. Instead, bound using the next series term:
+Where $M = \max|f^{(6)}(c)|$ for $c \in [0, 0.5]$. This is complicated. Instead, bound using the next series term:
 
-Since the series for $\cos(x^2)$ is alternating and the terms decrease in magnitude for $|x| \lt 1$, the error in truncating after the $x^4$ term is at most the magnitude of the next term:
+Since the series for $\cos(x^2)$ is alternating and the terms decrease in magnitude for $|x| \lt 1$The error in truncating after the $x^4$ term is at most the magnitude of the next term:
 
 $$|R_4(x)| \leq \frac{x^8}{24}$$
 
@@ -195,7 +195,7 @@ Then, for the convergent case(s), use the integral test remainder bound to deter
 
 Let $f(x) = \dfrac{1}{x(\ln x)^p}$ for $x \geq 2$. This is positive, continuous, and decreasing for $x \geq 2$ (when $p > 0$).
 
-Let $u = \ln x$, $du = \dfrac{dx}{x}$:
+Let $u = \ln x$$du = \dfrac{dx}{x}$:
 
 $$\int_2^{\infty}\frac{dx}{x(\ln x)^p} = \int_{\ln 2}^{\infty}\frac{du}{u^p}$$
 
@@ -221,4 +221,4 @@ For comparison, even $p = 1.01$ gives:
 
 $$\int_N^{\infty}\frac{du}{u^{1.01}} = \frac{N^{-0.01}}{0.01} = 100N^{-0.01}$$
 
-Setting $100N^{-0.01} \lt 0.001$: $N^{-0.01} \lt 0.00001$, so $N^{0.01} > 100000$, giving $N > 100000^{100}$. Still impractical. The series $\sum \frac{1}{n(\ln n)^p}$ converges very slowly for $p$ near $1$.
+Setting $100N^{-0.01} \lt 0.001$: $N^{-0.01} \lt 0.00001$So $N^{0.01} > 100000$Giving $N > 100000^{100}$. Still impractical. The series $\sum \frac{1}{n(\ln n)^p}$ converges very slowly for $p$ near $1$.

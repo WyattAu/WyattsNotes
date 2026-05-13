@@ -24,7 +24,7 @@ Show all working — marks are awarded for method as well as final answer.
 
 ### Q1 [7 marks] — Algebraic Expressions
 
-Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$, find the exact value of:
+Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$Find the exact value of:
 
 $$\frac◆LB◆a^{\frac{3}{2}} - a^{-\frac{3}{2}}◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆$$
 
@@ -32,7 +32,7 @@ $$\frac◆LB◆a^{\frac{3}{2}} - a^{-\frac{3}{2}}◆RB◆◆LB◆a^{\frac{1}{2}}
 
 The roots of the equation $2x^2 - 5x + 1 = 0$ are $\alpha$ and $\beta$.
 
-Without finding the numerical values of $\alpha$ and $\beta$, find the value of:
+Without finding the numerical values of $\alpha$ and $\beta$Find the value of:
 
 $$\frac◆LB◆1◆RB◆◆LB◆\alpha^2 + 1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2 + 1◆RB◆$$
 
@@ -42,7 +42,7 @@ Solve the inequality:
 
 $$\frac{x^2 - 3x + 2}{x^2 + x - 6} \geq 0$$
 
-State your answer using set notation, clearly identifying all excluded values.
+State your answer using set notation, identifying all excluded values.
 
 ### Q4 [7 marks] — Coordinates and Geometry
 
@@ -54,9 +54,9 @@ Hence find the coordinates of the point of tangency.
 
 Given $f(x) = \sqrt{2x - 1}$ and $g(x) = \frac{1}{x - 3}$:
 
-**(a)** Find the domain of $f \circ g$, i.e. $f(g(x))$.
+**(a)** Find the domain of $f \circ g$I.e. $f(g(x))$.
 
-**(b)** Find the domain of $g \circ f$, i.e. $g(f(x))$.
+**(b)** Find the domain of $g \circ f$I.e. $g(f(x))$.
 
 **(c)** Explain why the domains of $f \circ g$ and $g \circ f$ are different.
 
@@ -66,7 +66,7 @@ Evaluate the sum:
 
 $$S_n = \sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)}$$
 
-Express your answer in terms of $n$, and hence find $\lim_{n \to \infty} S_n$.
+Express your answer in terms of $n$And hence find $\lim_{n \to \infty} S_n$.
 
 ### Q7 [7 marks] — Binomial Expansion
 
@@ -82,11 +82,11 @@ $$\frac{(1 + 2x)^5}{(1 - x)^3}$$
 
 ### Q9 [8 marks] — Exponentials and Logarithms
 
-**(a)** Solve $e^{2x} - 5e^x + 6 = 0$, giving exact answers.
+**(a)** Solve $e^{2x} - 5e^x + 6 = 0$Giving exact answers.
 
-**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$, giving exact answers.
+**(b)** Solve $e^{2x} - 5e^x + 6 = 1$ for $x \in \mathbb{R}$Giving exact answers.
 
-**(c)** Explain why, when using the substitution $u = e^x$ to solve an equation of the form $e^{2x} + pe^x + q = 0$, you must check that $u \gt 0$ before taking natural logarithms.
+**(c)** Explain why, when using the substitution $u = e^x$ to solve an equation of the form $e^{2x} + pe^x + q = 0$You must check that $u \gt 0$ before taking natural logarithms.
 
 ### Q10 [9 marks] — Differentiation
 
@@ -116,9 +116,9 @@ Line $l_2$ passes through $B(4, 1, 0)$ with direction vector $\mathbf{d}_2 = \be
 
 **(a)** Find the value of $a$ for which $l_1$ and $l_2$ intersect.
 
-**(b)** For $a = 3$, determine whether $l_1$ and $l_2$ are skew, parallel, or intersecting.
+**(b)** For $a = 3$Determine whether $l_1$ and $l_2$ are skew, parallel, or intersecting.
 
-**(c)** For $a = -1$, find the shortest distance between $l_1$ and $l_2$.
+**(c)** For $a = -1$Find the shortest distance between $l_1$ and $l_2$.
 
 ### Q13 [5 marks] — Proof
 
@@ -136,7 +136,7 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$, and $x_3$. Describe the behaviour of the iteration.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$. Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge.
 
@@ -154,7 +154,7 @@ Therefore the expression simplifies to:
 
 $$\frac◆LB◆\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆ = a + 1 + a^{-1}$$
 
-provided $a^{1/2} - a^{-1/2} \neq 0$, i.e. $a \neq 1$. (If $a = 1$, the given condition would give $2 = 5$, a contradiction, so $a \neq 1$ is guaranteed.)
+Provided $a^{1/2} - a^{-1/2} \neq 0$I.e. $a \neq 1$. (If $a = 1$The given condition would give $2 = 5$A contradiction, so $a \neq 1$ is guaranteed.)
 
 **Step 2: Find $a + a^{-1}$ from the given condition.**
 
@@ -225,7 +225,7 @@ Excluded values: $x = -3$ (denominator zero) and $x = 2$ (denominator zero).
 
 **Step 5: Assemble the solution.**
 
-The expression is non-negative when $x \lt -3$, $1 \leq x \lt 2$, or $x \gt 2$.
+The expression is non-negative when $x \lt -3$$1 \leq x \lt 2$Or $x \gt 2$.
 
 $$x \in (-\infty, -3) \cup [1, 2) \cup (2, \infty)$$
 
@@ -249,7 +249,7 @@ $$k = 0$$
 
 **Step 3: Find the point of tangency.**
 
-With $k = 0$, the line is $y = 5$. Substituting into the circle:
+With $k = 0$The line is $y = 5$. Substituting into the circle:
 
 $$x^2 + 25 - 4x - 30 + 9 = 0$$
 $$x^2 - 4x + 4 = 0$$
@@ -294,8 +294,8 @@ Domain of $g \circ f$: $\left[\frac{1}{2}, 5\right) \cup (5, \infty)$.
 
 **(c)** The domains differ because:
 
-- For $f \circ g$: the input to $f$ is $g(x) = \frac{1}{x-3}$, and we need $g(x) \geq \frac{1}{2}$ (since $f$ requires $2 \cdot g(x) - 1 \geq 0$). This constrains $x$ to a finite interval $(3, 5]$.
-- For $g \circ f$: the input to $g$ is $f(x) = \sqrt{2x-1}$, and we need $f(x) \neq 3$. Since $f(x) \geq 0$ for all $x$ in its domain, we only exclude $x = 5$. The domain is almost the entire domain of $f$.
+- For $f \circ g$: the input to $f$ is $g(x) = \frac{1}{x-3}$And we need $g(x) \geq \frac{1}{2}$ (since $f$ requires $2 \cdot g(x) - 1 \geq 0$). This constrains $x$ to a finite interval $(3, 5]$.
+- For $g \circ f$: the input to $g$ is $f(x) = \sqrt{2x-1}$And we need $f(x) \neq 3$. Since $f(x) \geq 0$ for all $x$ in its domain, we only exclude $x = 5$. The domain is almost the entire domain of $f$.
 
 The key difference is that $f \circ g$ requires the output of $g$ to fall within the domain of $f$ (which is $[1/2, \infty)$), while $g \circ f$ requires the output of $f$ to avoid the single excluded value of $g$ (which is $3$). The former is much more restrictive.
 
@@ -305,7 +305,7 @@ The key difference is that $f \circ g$ requires the output of $g$ to fall within
 
 **Step 1: Partial fraction decomposition.**
 
-We seek constants $A$, $B$, $C$ such that:
+We seek constants $A$$B$$C$ such that:
 
 $$\frac{1}{r(r+1)(r+2)} = \frac{A}{r} + \frac{B}{r+1} + \frac{C}{r+2}$$
 
@@ -389,7 +389,7 @@ Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
 **(a)** $\cos(3x) = \frac{1}{2}$.
 
-Let $\theta = 3x$. Since $x \in [0, 2\pi)$, we have $\theta \in [0, 6\pi)$.
+Let $\theta = 3x$. Since $x \in [0, 2\pi)$We have $\theta \in [0, 6\pi)$.
 
 $\cos\theta = \frac{1}{2}$ gives $\theta = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ or $\theta = \frac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + 2n\pi$ for $n \in \mathbb{Z}$.
 
@@ -417,7 +417,7 @@ $$S = \frac◆LB◆\pi◆RB◆◆LB◆9◆RB◆ + \frac◆LB◆5\pi◆RB◆◆LB
 
 ### Q9 — Solution
 
-**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{R}$, we require $u \gt 0$.
+**(a)** Let $u = e^x$. Since $e^x \gt 0$ for all $x \in \mathbb{R}$We require $u \gt 0$.
 
 $$u^2 - 5u + 6 = 0 \implies (u-2)(u-3) = 0 \implies u = 2 \text{ or } u = 3$$
 
@@ -439,7 +439,7 @@ Both roots are positive: $\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆ \ap
 
 $$x = \ln\!\left(\frac◆LB◆5 + \sqrt{5}◆RB◆◆LB◆2◆RB◆\right) \quad \text{or} \quad x = \ln\!\left(\frac◆LB◆5 - \sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$$
 
-**(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$, then $u = -1$ or $u = 4$, and $u = -1$ would give $e^x = -1$, which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$, and students who forget this constraint accept spurious solutions.
+**(c)** The check is necessary because if a root of the quadratic in $u$ were negative or zero, taking $\ln u$ would be undefined. For example, if the equation were $e^{2x} - 3e^x - 4 = 0$Then $u = -1$ or $u = 4$And $u = -1$ would give $e^x = -1$Which has no real solution. The substitution $u = e^x$ implicitly constrains $u \gt 0$And students who forget this constraint accept spurious solutions.
 
 ---
 
@@ -475,7 +475,7 @@ The second derivative test is inconclusive when $\frac{d^2y}{dx^2} = 0$; the fir
 
 **(d)** $y = x^4 - 4x^3 + 6x^2 - 4x + 1 = (x-1)^4$.
 
-This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$, with equality only at $x = 1$. So $(1, 0)$ is a global (and local) minimum.
+This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$With equality only at $x = 1$. So $(1, 0)$ is a global (and local) minimum.
 
 ---
 
@@ -483,9 +483,9 @@ This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$, with equality 
 
 **(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is prioritised for $u$.
 
-Set $u = \ln x$, $\frac{dv}{dx} = x^3$.
+Set $u = \ln x$$\frac{dv}{dx} = x^3$.
 
-$du = \frac{1}{x}\, dx$, $v = \frac{x^4}{4}$.
+$du = \frac{1}{x}\, dx$$v = \frac{x^4}{4}$.
 
 $$\int x^3 \ln x\, dx = \frac{x^4}{4}\ln x - \int \frac{x^4}{4} \cdot \frac{1}{x}\, dx$$
 
@@ -497,7 +497,7 @@ $$= \frac{x^4}{16}(4\ln x - 1) + C$$
 
 **(b)** If the student chooses $u = x^3$ and $\frac{dv}{dx} = \ln x$:
 
-$du = 3x^2\, dx$, but $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts to find).
+$du = 3x^2\, dx$But $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts to find).
 
 This produces an equation involving the original integral on both sides, which eventually works but requires more steps and an additional integration by parts just to find $v$. The LIATE choice is more efficient.
 
@@ -513,7 +513,7 @@ $$= \frac{3e^4}{16} - \left(-\frac{1}{16}\right) = \frac{3e^4 + 1}{16}$$
 
 ### Q12 — Solution
 
-**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$, so the lines are never parallel.
+**(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$So the lines are never parallel.
 
 For intersection, there exist $s, t$ such that:
 
@@ -527,17 +527,17 @@ Then $t = 2(3) - 3 = 3$.
 
 Substituting into the second equation: $2 - 3 = 1 + 3a \implies -1 = 1 + 3a \implies a = -\frac{2}{3}$.
 
-The lines intersect when $a = -\frac{2}{3}$, at the point $\begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
+The lines intersect when $a = -\frac{2}{3}$At the point $\begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
 
 **(b)** For $a = 3$: the lines are not parallel. Check for intersection:
 
-From the first and third equations: $s = 3$, $t = 3$.
+From the first and third equations: $s = 3$$t = 3$.
 
-Second equation: $2 - 3 = 1 + 3(3) = 10$, giving $-1 = 10$, which is false.
+Second equation: $2 - 3 = 1 + 3(3) = 10$Giving $-1 = 10$Which is false.
 
 The system is inconsistent, so the lines are **skew**.
 
-**(c)** For $a = -1$: the lines are skew (checking gives $-1 = 1 + (-1)(3) = -2$, false).
+**(c)** For $a = -1$: the lines are skew (checking gives $-1 = 1 + (-1)(3) = -2$False).
 
 The shortest distance between two skew lines is:
 
@@ -557,15 +557,15 @@ $$d = \frac◆LB◆\lvert -3 \rvert◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆L
 
 ### Q13 — Solution
 
-**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$, but $x \lt 2$.
+**(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$But $x \lt 2$.
 
 Answer: **sufficient but not necessary**.
 
-**(b)** If $n$ is prime and $n \neq 2$, then $n$ is odd. But $n = 2$ is prime and even. Also, "odd" does not imply "prime" (counterexample: 9).
+**(b)** If $n$ is prime and $n \neq 2$Then $n$ is odd. But $n = 2$ is prime and even. Also, "odd" does not imply "prime" (counterexample: 9).
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$, the sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** Since $a^2 \geq 0$ and $b^2 \geq 0$The sum $a^2 + b^2 = 0$ only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
 
 Answer: **both necessary and sufficient**.
 
@@ -583,21 +583,21 @@ Since the local minimum is positive ($\approx 0.91$), the graph crosses the $x$-
 
 **(b)** $f'(x) = 3x^2 - 2$. Newton-Raphson: $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$.
 
-$x_0 = 0$: $f(0) = 2$, $f'(0) = -2$.
+$x_0 = 0$: $f(0) = 2$$f'(0) = -2$.
 
 $$x_1 = 0 - \frac{2}{-2} = 1$$
 
-$x_1 = 1$: $f(1) = 1$, $f'(1) = 1$.
+$x_1 = 1$: $f(1) = 1$$f'(1) = 1$.
 
 $$x_2 = 1 - \frac{1}{1} = 0$$
 
-$x_2 = 0$: $f(0) = 2$, $f'(0) = -2$.
+$x_2 = 0$: $f(0) = 2$$f'(0) = -2$.
 
 $$x_3 = 0 - \frac{2}{-2} = 1$$
 
 The iteration cycles: $0, 1, 0, 1, 0, 1, \ldots$
 
-**(c)** The iteration fails because at $x_0 = 0$, the tangent to the curve has gradient $f'(0) = -2$, which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The Newton-Raphson method overshoots because the tangent at $x = 0$ intersects the $x$-axis at $x = 1$, which is on the opposite side of the local minimum at $x \approx 0.816$ where $f \approx 0.91 \gt 0$, creating a barrier that the iteration cannot cross. The iteration gets trapped in a 2-cycle between $x = 0$ and $x = 1$.
+**(c)** The iteration fails because at $x_0 = 0$The tangent to the curve has gradient $f'(0) = -2$Which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The Newton-Raphson method overshoots because the tangent at $x = 0$ intersects the $x$-axis at $x = 1$Which is on the opposite side of the local minimum at $x \approx 0.816$ where $f \approx 0.91 \gt 0$Creating a barrier that the iteration cannot cross. The iteration gets trapped in a 2-cycle between $x = 0$ and $x = 1$.
 
 ---
 
@@ -612,8 +612,8 @@ The iteration cycles: $0, 1, 0, 1, 0, 1, \ldots$
 | Q5 | Functions | 7 | Composite function domains, range of inner function, domain restrictions |
 | Q6 | Sequences and Series | 7 | Partial fractions, telescoping series, index shifting, limits |
 | Q7 | Binomial Expansion | 7 | General binomial theorem, combining expansions, coefficient extraction |
-| Q8 | Trigonometry | 8 | Periodicity of $\cos(3x)$, systematic solution enumeration, sum of solutions |
-| Q9 | Exponentials and Logarithms | 8 | Hidden quadratic in $e^x$, positivity constraint on substitution |
+| Q8 | Trigonometry | 8 | Periodicity of $\cos(3x)$Systematic solution enumeration, sum of solutions |
+| Q9 | Exponentials and Logarithms | 8 | Hidden quadratic in $e^x$Positivity constraint on substitution |
 | Q10 | Differentiation | 9 | Stationary points, second derivative test inconclusiveness, first derivative test, $(x-1)^4$ recognition |
 | Q11 | Integration | 9 | LIATE rule for integration by parts, definite integration with $e$ |
 | Q12 | Vectors | 7 | Skew/parallel/intersecting lines, cross product, shortest distance formula |

@@ -11,12 +11,12 @@ slug: algebraic-error-handling-optional-and-variant
 # Algebraic Error Handling
 
 `std::optional` and `std::variant` are stack-allocated, type-safe alternatives to exceptions for
-representing values that may be absent or that may hold one of several alternative types.
+Representing values that may be absent or that may hold one of several alternative types.
 
 ## 4.1 `std::optional<T>`
 
 `std::optional<T>` models a value that may or may not be present [N4950 §20.6]. It is allocated on
-the stack, stores at most one `T`, and requires no heap allocation.
+The stack, stores at most one `T`And requires no heap allocation.
 
 ```cpp
 #include <iostream>
@@ -63,7 +63,7 @@ int main() {
 ## 4.2 `std::variant<T, U, V>`
 
 `std::variant` is a type-safe, stack-allocated union that holds exactly one of its alternative types
-at any time [N4950 §20.7].
+At any time [N4950 §20.7].
 
 ```cpp
 #include <iostream>
@@ -182,13 +182,13 @@ int main() {
 
 ## 4.4 Comparison with Exceptions
 
-| Aspect                | Exceptions           | `std::optional`              | `std::variant`                     |
+| Aspect | Exceptions | `std::optional` | `std::variant` |
 | --------------------- | -------------------- | ---------------------------- | ---------------------------------- |
-| Overhead (no error)   | ~0 (table-based)     | 0                            | 0                                  |
-| Overhead (error path) | ~$\mu s$             | ~ns                          | ~ns                                |
-| Error type            | Any type             | `std::nullopt` only          | User-defined alternatives          |
-| Composability         | Implicit (unwinding) | Explicit (check `has_value`) | Explicit (`std::visit`/`std::get`) |
-| Catches missed errors | No (terminate)       | Yes (forgot to check)        | Yes (forgot to check)              |
+| Overhead (no error) | ~0 (table-based) | 0 | 0 |
+| Overhead (error path) | ~$\mu s$ | ~ns | ~ns |
+| Error type | Any type | `std::nullopt` only | User-defined alternatives |
+| Composability | Implicit (unwinding) | Explicit (check `has_value`) | Explicit (`std::visit`/`std::get`) |
+| Catches missed errors | No (terminate) | Yes (forgot to check) | Yes (forgot to check) |
 
 ## See Also
 
@@ -273,11 +273,11 @@ int main() {
 
 C++23 added monadic operations that allow chaining optional operations without explicit null checks:
 
-| Operation   | Signature                            | Behavior                                                                          |
+| Operation | Signature | Behavior |
 | :---------- | :----------------------------------- | :-------------------------------------------------------------------------------- |
-| `transform` | `optional<U> transform(F&& f) const` | If engaged, returns `f(value)` wrapped in optional; otherwise `nullopt`           |
-| `and_then`  | `optional<U> and_then(F&& f) const`  | If engaged, calls `f(value)` which must return `optional<U>`; otherwise `nullopt` |
-| `or_else`   | `optional<T> or_else(F&& f) const`   | If empty, calls `f()` which must return `optional<T>`; otherwise returns `*this`  |
+| `transform` | `optional<U> transform(F&& f) const` | If engaged, returns `f(value)` wrapped in optional; otherwise `nullopt` |
+| `and_then` | `optional<U> and_then(F&& f) const` | If engaged, calls `f(value)` which must return `optional<U>`; otherwise `nullopt` |
+| `or_else` | `optional<T> or_else(F&& f) const` | If empty, calls `f()` which must return `optional<T>`; otherwise returns `*this` |
 
 ```cpp
 #include <optional>
@@ -333,7 +333,7 @@ int main() {
 ## 4.6 `std::variant` as Tagged Union
 
 `std::variant` is the C++ replacement for C-style tagged unions. It provides type-safe access to the
-active alternative and automatic destruction of the previous alternative on assignment.
+Active alternative and automatic destruction of the previous alternative on assignment.
 
 ### `std::get` vs `std::get_if`
 
@@ -597,14 +597,22 @@ int main() {
 ## Common Pitfalls
 
 - **Using `*opt` without checking.** Dereferencing an empty `std::optional` is undefined behavior.
-  Always use `has_value()`, `value_or()`, or `std::get_if`.
+ Always use `has_value()``value_or()`Or `std::get_if`.
 - **Storing references in `std::optional`.** `std::optional<T&>` is valid since C++23 but has
-  different semantics from `std::optional<T>`. Before C++23, use
-  `std::optional<std::reference_wrapper<T>>`.
+ different semantics from `std::optional<T>`. Before C++23, use
+ `std::optional<std::reference_wrapper<T>>`.
 - **`std::visit` with non-exhaustive visitor.** If the visitor does not handle all alternatives, the
-  program will not compile. This is a feature, not a bug.
+ program will not compile. This is a feature, not a bug.
 - **Exception safety of `std::variant`.** If the constructor of the new alternative throws during
-  assignment, the variant is left in a valid but unspecified state. The previous value is destroyed.
+ assignment, the variant is left in a valid but unspecified state. The previous value is destroyed.
 - **Forgetting `std::monostate` for default-constructible variants.** If none of the alternatives is
-  default-constructible, use `std::variant<std::monostate, T, U>` to make the variant itself
-  default-constructible.
+ default-constructible, use `std::variant<std::monostate, T, U>` to make the variant itself
+ default-constructible.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

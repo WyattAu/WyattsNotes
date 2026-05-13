@@ -13,21 +13,21 @@ sidebar_position: 1
 ## Poisson and Geometric Distributions
 
 The Poisson and geometric distributions model discrete random variables arising from counting
-processes. The Poisson distribution counts the number of rare events in a fixed interval, while the
-geometric distribution counts the number of trials until the first success.
+Processes. The Poisson distribution counts the number of rare events in a fixed interval, while the
+Geometric distribution counts the number of trials until the first success.
 
 ### Board Coverage
 
-| Board      | Paper   | Notes                                   |
+| Board | Paper | Notes |
 | ---------- | ------- | --------------------------------------- |
-| AQA        | Paper 2 | Both Poisson and geometric in depth     |
-| Edexcel    | S2, S3  | Poisson in S2; geometric in S3          |
-| OCR (A)    | Paper 2 | Poisson and geometric                   |
-| CIE (9231) | S2      | Poisson covered; geometric not required |
+| AQA | Paper 2 | Both Poisson and geometric in depth |
+| Edexcel | S2, S3 | Poisson in S2; geometric in S3 |
+| OCR (A) | Paper 2 | Poisson and geometric |
+| CIE (9231) | S2 | Poisson covered; geometric not required |
 
 :::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
-and how to carry out hypothesis testing with discrete distributions. The geometric distribution has
-two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
+And how to carry out hypothesis testing with discrete distributions. The geometric distribution has
+Two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
 $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$. :::
 
 <hr />
@@ -37,12 +37,12 @@ $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$. :::
 ### 1.1 Definition
 
 **Definition.** A discrete random variable $X$ follows a **Poisson distribution** with parameter
-$\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Po}(\lambda)$, if
+$\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Po}(\lambda)$If
 
 $$P(X = r) = \frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆, \quad r = 0, 1, 2, \ldots$$
 
 The Poisson distribution models the number of events occurring in a fixed interval of time or space
-when:
+When:
 
 - Events occur independently
 - Events occur at a constant average rate $\lambda$
@@ -116,7 +116,7 @@ Cumulative Poisson probabilities are found using:
 
 $$P(X \leq r) = \sum_{k=0}^{r}\frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$$
 
-These are typically obtained from tables or a calculator. Key relationships:
+These are obtained from tables or a calculator. Key relationships:
 
 $$P(X > r) = 1 - P(X \leq r)$$ $$P(a \leq X \leq b) = P(X \leq b) - P(X \leq a-1)$$
 
@@ -132,9 +132,9 @@ The procedure mirrors binomial hypothesis testing:
 6. Conclude in context
 
 **Example.** A call centre receives an average of 3.2 calls per minute. In a particular minute, 7
-calls are received. Test at the 5% significance level whether the rate has increased.
+Calls are received. Test at the 5% significance level whether the rate has increased.
 
-$X \sim \mathrm{Po}(3.2)$. $H_0: \lambda = 3.2$, $H_1: \lambda > 3.2$.
+$X \sim \mathrm{Po}(3.2)$. $H_0: \lambda = 3.2$$H_1: \lambda > 3.2$.
 
 $P(X \geq 7) = 1 - P(X \leq 6) = 1 - 0.9554 = 0.0446 < 0.05$.
 
@@ -158,8 +158,8 @@ Critical region: $X \leq 0$ or $X \geq 11$.
 ### 2.1 Definition
 
 **Definition.** A discrete random variable $X$ follows a **geometric distribution** with parameter
-$p$ (where $0 < p \leq 1$), written $X \sim \mathrm{Geo}(p)$, if $X$ is the number of the trial on
-which the first success occurs:
+$p$ (where $0 < p \leq 1$), written $X \sim \mathrm{Geo}(p)$If $X$ is the number of the trial on
+Which the first success occurs:
 
 $$P(X = r) = (1-p)^{r-1}p, \quad r = 1, 2, 3, \ldots$$
 
@@ -198,7 +198,7 @@ E(X(X-1)) &= \sum_{r=2}^{\infty}r(r-1)q^{r-1}p = p\,q\sum_{r=2}^{\infty}r(r-1)q^
 \end{aligned}
 $$
 
-Starting from $\sum_{r=0}^{\infty}q^r = \frac{1}{1-q}$, differentiating twice:
+Starting from $\sum_{r=0}^{\infty}q^r = \frac{1}{1-q}$Differentiating twice:
 
 $$\sum_{r=2}^{\infty}r(r-1)q^{r-2} = \frac{2}{(1-q)^3}$$
 
@@ -238,7 +238,7 @@ $$
 $$
 
 :::info info success, the probability of waiting at least $n$ more trials is exactly the same as if
-you were starting fresh. The process "forgets" its history. :::
+You were starting fresh. The process "forgets" its history. :::
 
 ### 2.5 Cumulative distribution function
 
@@ -247,9 +247,9 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 ### 2.6 Geometric hypothesis testing
 
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
-experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
+Experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$$H_1: p < 0.3$ (the ball took longer than expected, so
 $p$ may be smaller).
 
 $p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
@@ -269,11 +269,11 @@ Critical region: $X \geq 10$.
 
 ### 3.1 When to use each
 
-| Situation                                         | Distribution                   |
+| Situation | Distribution |
 | ------------------------------------------------- | ------------------------------ |
 | Number of events in a fixed interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
-| Number of trials until first success              | Geometric $\mathrm{Geo}(p)$    |
-| Fixed number of trials, counting successes        | Binomial $B(n, p)$             |
+| Number of trials until first success | Geometric $\mathrm{Geo}(p)$ |
+| Fixed number of trials, counting successes | Binomial $B(n, p)$ |
 
 ### 3.2 Poisson as approximation to Binomial
 
@@ -281,7 +281,7 @@ When $n$ is large and $p$ is small such that $np \leq 10$:
 
 $$B(n, p) \approx \mathrm{Po}(np)$$
 
-**Example.** $X \sim B(200, 0.02)$. Then $\lambda = np = 4$, so $X \approx \mathrm{Po}(4)$.
+**Example.** $X \sim B(200, 0.02)$. Then $\lambda = np = 4$So $X \approx \mathrm{Po}(4)$.
 
 $P(X \leq 2) \approx e^{-4}\left(1 + 4 + \frac{16}{2}\right) = 13e^{-4} \approx 0.2381$.
 
@@ -337,7 +337,7 @@ Wait: $P(X > 10) = 1 - P(X \leq 10) = 1 - (1-q^{10}) = q^{10} = (5/6)^{10} \appr
 
 <details>
 <summary>Problem 3</summary>
-Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$, showing all steps of the summation.
+Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$Showing all steps of the summation.
 </details>
 
 <details>
@@ -362,7 +362,7 @@ The number of emails received per hour follows $\mathrm{Po}(8)$. Find the probab
 <summary>Solution 4</summary>
 $X \sim \mathrm{Po}(8)$. $P(6 \leq X \leq 12) = P(X \leq 12) - P(X \leq 5)$.
 
-$P(X \leq 12) \approx 0.9362$, $P(X \leq 5) \approx 0.1912$.
+$P(X \leq 12) \approx 0.9362$$P(X \leq 5) \approx 0.1912$.
 
 $P(6 \leq X \leq 12) \approx 0.9362 - 0.1912 = 0.7450$.
 
@@ -397,7 +397,7 @@ Prove the memoryless property of the geometric distribution: $P(X > m+n \mid X >
 <summary>Solution 6</summary>
 $P(X > m+n \mid X > m) = \dfrac{P(X > m+n)}{P(X > m)} = \dfrac{q^{m+n}}{q^m} = q^n = P(X > n)$.
 
-This uses $P(X > k) = q^k = (1-p)^k$, which follows from $P(X \leq k) = 1 - q^k$. $\blacksquare$
+This uses $P(X > k) = q^k = (1-p)^k$Which follows from $P(X \leq k) = 1 - q^k$. $\blacksquare$
 
 **If you get this wrong, revise:** [The memoryless property](#24-the-memoryless-property) — Section
 2.4.
@@ -406,7 +406,7 @@ This uses $P(X > k) = q^k = (1-p)^k$, which follows from $P(X \leq k) = 1 - q^k$
 
 <details>
 <summary>Problem 7</summary>
-A shop receives an average of 6 customers per 30 minutes. Find the critical region for a test at the 5% significance level of $H_0: \lambda = 6$ against $H_1: \lambda > 6$, where $X$ is the number of customers in a 30-minute period.
+A shop receives an average of 6 customers per 30 minutes. Find the critical region for a test at the 5% significance level of $H_0: \lambda = 6$ against $H_1: \lambda > 6$Where $X$ is the number of customers in a 30-minute period.
 </details>
 
 <details>
@@ -433,7 +433,7 @@ $X \sim \mathrm{Geo}(p)$. Find $P(X = 3 \mid X > 1)$ and show it equals $P(X = 2
 $P(X = 3 \mid X > 1) = \dfrac{P(X = 3)}{P(X > 1)} = \dfrac{q^2 p}{q} = qp = P(X = 2)$.
 
 This is a direct consequence of the memoryless property: given that the first trial was a failure,
-the distribution of the remaining trials is the same as starting fresh.
+The distribution of the remaining trials is the same as starting fresh.
 
 **If you get this wrong, revise:** [The memoryless property](#24-the-memoryless-property) — Section
 2.4.
@@ -447,16 +447,16 @@ The number of accidents per week at a junction follows $\mathrm{Po}(3)$. After n
 
 <details>
 <summary>Solution 9</summary>
-$X \sim \mathrm{Po}(3)$. $H_0: \lambda = 3$, $H_1: \lambda > 3$. $\alpha = 0.05$.
+$X \sim \mathrm{Po}(3)$. $H_0: \lambda = 3$$H_1: \lambda > 3$. $\alpha = 0.05$.
 
 $p\mathrm{-value} = P(X \geq 8) = 1 - P(X \leq 7) = 1 - 0.9881 = 0.0119 < 0.05$.
 
 Reject $H_0$. There is sufficient evidence that the accident rate has increased.
 
-Alternatively, critical region: $P(X \geq 7) = 1 - 0.9665 = 0.0335 < 0.05$,
+Alternatively, critical region: $P(X \geq 7) = 1 - 0.9665 = 0.0335 < 0.05$
 $P(X \geq 6) = 1 - 0.9165 = 0.0835 > 0.05$.
 
-Critical region: $X \geq 7$. Since $X = 8 \geq 7$, reject $H_0$.
+Critical region: $X \geq 7$. Since $X = 8 \geq 7$Reject $H_0$.
 
 **If you get this wrong, revise:** [Poisson hypothesis testing](#17-poisson-hypothesis-testing) —
 Section 1.7.
@@ -465,14 +465,14 @@ Section 1.7.
 
 <details>
 <summary>Problem 10</summary>
-If $X \sim \mathrm{Geo}(p)$, find $E(X(X-1))$ and hence verify that $\mathrm{Var}(X) = \dfrac{1-p}{p^2}$.
+If $X \sim \mathrm{Geo}(p)$Find $E(X(X-1))$ and hence verify that $\mathrm{Var}(X) = \dfrac{1-p}{p^2}$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
 $E(X(X-1)) = \sum_{r=2}^{\infty}r(r-1)q^{r-1}p = pq\sum_{r=2}^{\infty}r(r-1)q^{r-2}$.
 
-Since $\sum_{r=0}^{\infty}q^r = \dfrac{1}{1-q}$, differentiating twice gives
+Since $\sum_{r=0}^{\infty}q^r = \dfrac{1}{1-q}$Differentiating twice gives
 $\sum_{r=2}^{\infty}r(r-1)q^{r-2} = \dfrac{2}{(1-q)^3}$.
 
 $E(X(X-1)) = pq \cdot \dfrac{2}{p^3} = \dfrac{2q}{p^2}$.
@@ -494,8 +494,8 @@ $\mathrm{Var}(X) = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}$. $\blac
 ### Example 7.1: Poisson approximation to binomial
 
 **Problem.** A factory produces items with a defect rate of 0.02. In a batch of 200 items, find the
-probability of exactly 3 defective items using (a) the binomial distribution and (b) the Poisson
-approximation.
+Probability of exactly 3 defective items using (a) the binomial distribution and (b) the Poisson
+Approximation.
 
 **Solution.** **(a) Binomial:** $X \sim \mathrm{Bin}(200, 0.02)$.
 
@@ -510,7 +510,7 @@ The approximation is valid since $n \geq 50$ and $p \leq 0.1$.
 ### Example 7.2: Geometric distribution and memoryless property
 
 **Problem.** A fair die is rolled until a 6 appears. Find the probability that more than 4 rolls are
-needed. Verify the memoryless property: $P(X > m + n \mid X > m) = P(X > n)$.
+Needed. Verify the memoryless property: $P(X > m + n \mid X > m) = P(X > n)$.
 
 **Solution.** $X \sim \mathrm{Geo}(1/6)$.
 
@@ -523,7 +523,7 @@ $$P(X > m + n \mid X > m) = \frac{P(X > m + n)}{P(X > m)} = \frac{(5/6)^{m+n}}{(
 ### Example 7.3: Cumulative Poisson probabilities
 
 **Problem.** Calls arrive at a call centre at a rate of 2.5 per minute. Find the probability that
-more than 5 calls arrive in a 3-minute period.
+More than 5 calls arrive in a 3-minute period.
 
 **Solution.** For a 3-minute period: $\lambda = 2.5 \times 3 = 7.5$. $X \sim \mathrm{Po}(7.5)$.
 
@@ -538,27 +538,27 @@ $$= 1 - e^{-7.5} \times 633.577 \approx 1 - 0.554 \times 0.634 = 1 - 0.351 = 0.6
 ### Example 7.4: Hypothesis testing with the Poisson distribution
 
 **Problem.** A traffic survey records the number of cars passing a point in 10-second intervals. The
-observed frequencies for $k$ cars are compared with the expected frequencies under $H_0$:
+Observed frequencies for $k$ cars are compared with the expected frequencies under $H_0$:
 $X \sim \mathrm{Po}(3)$. Calculate the expected frequency for each value of $k$ if 200 intervals
-were observed.
+Were observed.
 
 **Solution.** Under $H_0$: $P(X = k) = \dfrac◆LB◆e^{-3} \cdot 3^k◆RB◆◆LB◆k!◆RB◆$.
 
-| $k$      | $P(X = k)$             | Expected freq ($\times 200$) |
+| $k$ | $P(X = k)$ | Expected freq ($\times 200$) |
 | -------- | ---------------------- | ---------------------------- |
-| 0        | $e^{-3} = 0.0498$      | 9.96                         |
-| 1        | $3e^{-3} = 0.1494$     | 29.87                        |
-| 2        | $4.5e^{-3} = 0.2240$   | 44.81                        |
-| 3        | $4.5e^{-3} = 0.2240$   | 44.81                        |
-| 4        | $3.375e^{-3} = 0.1680$ | 33.60                        |
-| 5        | $2.025e^{-3} = 0.1008$ | 20.17                        |
-| $\geq 6$ | $1 - \sum_0^5$         | $\approx 16.78$              |
+| 0 | $e^{-3} = 0.0498$ | 9.96 |
+| 1 | $3e^{-3} = 0.1494$ | 29.87 |
+| 2 | $4.5e^{-3} = 0.2240$ | 44.81 |
+| 3 | $4.5e^{-3} = 0.2240$ | 44.81 |
+| 4 | $3.375e^{-3} = 0.1680$ | 33.60 |
+| 5 | $2.025e^{-3} = 0.1008$ | 20.17 |
+| $\geq 6$ | $1 - \sum_0^5$ | $\approx 16.78$ |
 
 ### Example 7.5: Fitting a Poisson distribution
 
 **Problem.** The number of email messages received per hour is recorded over 100 hours:
 $\{0: 5, 1: 15, 2: 25, 3: 30, 4: 15, 5: 7, 6: 3\}$. Estimate the parameter $\lambda$ and calculate
-expected frequencies.
+Expected frequencies.
 
 **Solution.**
 $\bar{x} = \dfrac{0(5) + 1(15) + 2(25) + 3(30) + 4(15) + 5(7) + 6(3)}{100} = \dfrac{0 + 15 + 50 + 90 + 60 + 35 + 18}{100} = \dfrac{268}{100} = 2.68$.
@@ -567,21 +567,21 @@ $\hat{\lambda} = 2.68$.
 
 Expected frequency for $k$: $100 \times \dfrac{e^{-2.68}(2.68)^k}{k!}$.
 
-| $k$ | Expected                            |
+| $k$ | Expected |
 | --- | ----------------------------------- |
-| 0   | $100e^{-2.68} = 6.86$               |
-| 1   | $100 \times 2.68 e^{-2.68} = 18.38$ |
-| 2   | $100 \times 3.59 e^{-2.68} = 24.64$ |
-| 3   | $100 \times 3.21 e^{-2.68} = 22.02$ |
-| 4   | $100 \times 2.15 e^{-2.68} = 14.76$ |
-| 5   | $100 \times 1.15 e^{-2.68} = 7.91$  |
-| 6   | $100 \times 0.51 e^{-2.68} = 3.52$  |
+| 0 | $100e^{-2.68} = 6.86$ |
+| 1 | $100 \times 2.68 e^{-2.68} = 18.38$ |
+| 2 | $100 \times 3.59 e^{-2.68} = 24.64$ |
+| 3 | $100 \times 3.21 e^{-2.68} = 22.02$ |
+| 4 | $100 \times 2.15 e^{-2.68} = 14.76$ |
+| 5 | $100 \times 1.15 e^{-2.68} = 7.91$ |
+| 6 | $100 \times 0.51 e^{-2.68} = 3.52$ |
 
 ### Example 7.6: Conditional probability with geometric distribution
 
 **Problem.** In a game, the probability of winning each round is $p = 0.3$ independently. Given that
-a player has not won in the first 5 rounds, find the probability that they win within the next 3
-rounds.
+A player has not won in the first 5 rounds, find the probability that they win within the next 3
+Rounds.
 
 **Solution.** $X \sim \mathrm{Geo}(0.3)$. By the memoryless property:
 
@@ -590,7 +590,7 @@ $$P(X \leq 8 \mid X > 5) = P(X \leq 3) = 1 - (0.7)^3 = 1 - 0.343 = 0.657$$
 ### Example 7.7: Sum of independent Poisson variables
 
 **Problem.** $X \sim \mathrm{Po}(3)$ and $Y \sim \mathrm{Po}(5)$ are independent. State the
-distribution of $X + Y$ and find $P(X + Y = 6)$.
+Distribution of $X + Y$ and find $P(X + Y = 6)$.
 
 **Solution.** $X + Y \sim \mathrm{Po}(3 + 5) = \mathrm{Po}(8)$.
 
@@ -598,8 +598,8 @@ $$P(X + Y = 6) = \frac◆LB◆e^{-8} \cdot 8^6◆RB◆◆LB◆6!◆RB◆ = \frac
 
 ### Example 7.8: Poisson as a limiting case
 
-**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$,
-then $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$.
+**Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$
+Then $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$.
 
 **Solution.**
 
@@ -618,20 +618,20 @@ Therefore $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆
 
 ### 8.1 Poisson distribution and exponential distribution
 
-If events occur according to a Poisson process with rate $\lambda$, the time between consecutive
-events follows the exponential distribution $\mathrm{Exp}(\lambda)$. See
+If events occur according to a Poisson process with rate $\lambda$The time between consecutive
+Events follows the exponential distribution $\mathrm{Exp}(\lambda)$. See
 [Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/exponential-continuous-rv).
 
 ### 8.2 Geometric distribution and series summation
 
 The probability generating function $G_X(t) = \dfrac{pt}{1-qt}$ of the geometric distribution
-connects to the summation of geometric series. See
+Connects to the summation of geometric series. See
 [Further Algebra](/docs/alevel/further-maths/pure-mathematics/further-algebra).
 
 ### 8.3 Poisson and hypothesis testing
 
 Goodness-of-fit tests using the chi-squared statistic compare observed and expected (Poisson)
-frequencies. See
+Frequencies. See
 [Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/chi-squared-tests).
 
 ---
@@ -641,7 +641,7 @@ frequencies. See
 ### Question 11
 
 A shop receives on average 4 customers per hour. Find the probability that: **(a)** Exactly 3
-customers arrive in a given hour. **(b)** More than 2 customers arrive in a 30-minute period.
+Customers arrive in a given hour. **(b)** More than 2 customers arrive in a 30-minute period.
 
 <details>
 <summary>Solution</summary>
@@ -667,7 +667,7 @@ A coin is tossed until the first head appears. The probability of heads is $p$.
 <details>
 <summary>Solution</summary>
 
-**(a)** $X \sim \mathrm{Geo}(p)$: $E(X) = 1/p$, $\mathrm{Var}(X) = (1-p)/p^2$.
+**(a)** $X \sim \mathrm{Geo}(p)$: $E(X) = 1/p$$\mathrm{Var}(X) = (1-p)/p^2$.
 
 **(b)** $P(X \text{ is even}) = P(X = 2) + P(X = 4) + P(X = 6) + \cdots$
 
@@ -677,8 +677,8 @@ $$= qp + q^3p + q^5p + \cdots = qp(1 + q^2 + q^4 + \cdots) = qp \cdot \frac{1}{1
 
 ### Question 13
 
-**Prove that** if $X_1, X_2, \ldots, X_n$ are independent with $X_i \sim \mathrm{Po}(\lambda_i)$,
-then $S = \sum X_i \sim \mathrm{Po}\!\left(\sum \lambda_i\right)$.
+**Prove that** if $X_1, X_2, \ldots, X_n$ are independent with $X_i \sim \mathrm{Po}(\lambda_i)$
+Then $S = \sum X_i \sim \mathrm{Po}\!\left(\sum \lambda_i\right)$.
 
 <details>
 <summary>Solution</summary>
@@ -699,7 +699,7 @@ $S \sim \mathrm{Po}\!\left(\sum\lambda_i\right)$. $\blacksquare$
 
 A typist makes on average 2 errors per page. Find the probability that a particular page has:
 **(a)** No errors. **(b)** At most 3 errors. **(c)** Exactly 2 errors given that it has at most 3
-errors.
+Errors.
 
 <details>
 <summary>Solution</summary>
@@ -723,7 +723,7 @@ $X \sim \mathrm{Po}(\lambda)$. Over 50 seconds, 145 decays are observed.
 **(a)** Estimate $\lambda$.
 
 **(b)** Using your estimate, find the probability of observing exactly 3 decays in a 1-second
-interval.
+Interval.
 
 <details>
 <summary>Solution</summary>
@@ -744,8 +744,8 @@ $P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = \dfrac◆LB◆24.389 \cdot e^{-2.9}◆R
 ### Example 8.1: Poisson as a limit of the binomial
 
 **Problem.** A factory produces items with a defect rate of 0.002. In a batch of 1000, find the
-probability of exactly 3 defects using (a) the binomial distribution and (b) the Poisson
-approximation.
+Probability of exactly 3 defects using (a) the binomial distribution and (b) the Poisson
+Approximation.
 
 **Solution.** (a) $X \sim B(1000, 0.002)$:
 $P(X=3) = \binom{1000}{3}(0.002)^3(0.998)^{997} \approx 0.1814$.
@@ -758,9 +758,9 @@ The approximation is excellent (error $< 0.6\%$).
 ### Example 8.2: Sum of independent Poisson random variables
 
 **Problem.** Emails arrive at a rate of 5 per hour and texts at 3 per hour. Find the probability
-that the total number of messages in a 2-hour period exceeds 20.
+That the total number of messages in a 2-hour period exceeds 20.
 
-**Solution.** In 2 hours: emails $\sim \mathrm{Po}(10)$, texts $\sim \mathrm{Po}(6)$.
+**Solution.** In 2 hours: emails $\sim \mathrm{Po}(10)$Texts $\sim \mathrm{Po}(6)$.
 
 Total messages $= \mathrm{Po}(10+6) = \mathrm{Po}(16)$.
 
@@ -774,19 +774,19 @@ $$P(X > 20) = 1 - P(X \leq 20) = 1 - \sum_{k=0}^{20} \frac◆LB◆e^{-16} \cdot 
 
 $$P(X > 4 \mid X > 2) = P(X > 2) = (1-0.3)^2 = 0.49$$
 
-Verification: $P(X > 4) = 0.7^4 = 0.2401$, $P(X > 2) = 0.49$.
+Verification: $P(X > 4) = 0.7^4 = 0.2401$$P(X > 2) = 0.49$.
 $P(X>4 \mid X>2) = \dfrac{0.2401}{0.49} = 0.49$. ✓
 
 ### Example 8.4: Poisson hypothesis testing
 
 **Problem.** A call centre claims an average of 6 calls per minute. In a 10-minute period, 72 calls
-are received. Test at the 5% level whether the rate has increased.
+Are received. Test at the 5% level whether the rate has increased.
 
 **Solution.** $H_0$: $\lambda = 6$ per minute. $H_1$: $\lambda > 6$.
 
-Under $H_0$, total calls in 10 minutes $\sim \mathrm{Po}(60)$.
+Under $H_0$Total calls in 10 minutes $\sim \mathrm{Po}(60)$.
 
-For large $\lambda$, approximate with $N(60, 60)$.
+For large $\lambda$Approximate with $N(60, 60)$.
 
 $$P(X \geq 72) \approx P\!\left(Z \geq \frac◆LB◆71.5 - 60◆RB◆◆LB◆\sqrt{60}◆RB◆\right) = P(Z \geq 1.485) = 1 - 0.9311 = 0.069$$
 
@@ -804,23 +804,23 @@ $$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB�
 
 $$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB◆e^{-\lambda}\lambda^{m+1}◆RB◆◆LB◆(m+1)!◆RB◆ \implies \frac◆LB◆m+1◆RB◆◆LB◆\lambda◆RB◆ \geq 1 \implies m \geq \lambda - 1$$
 
-So $\lambda - 1 \leq m \leq \lambda$, meaning the mode is $\lfloor\lambda\rfloor$ (and also
+So $\lambda - 1 \leq m \leq \lambda$Meaning the mode is $\lfloor\lambda\rfloor$ (and also
 $\lambda$ if $\lambda$ is an integer).
 
 ### Example 8.6: Relationship between Poisson and exponential
 
 **Problem.** Events occur according to a Poisson process with rate $\lambda = 4$ per hour. Find the
-probability that the time between two consecutive events exceeds 30 minutes.
+Probability that the time between two consecutive events exceeds 30 minutes.
 
-**Solution.** For a Poisson process with rate $\lambda$, the inter-arrival time
+**Solution.** For a Poisson process with rate $\lambda$The inter-arrival time
 $T \sim \mathrm{Exp}(\lambda)$.
 
 $$P(T > 0.5) = e^{-4 \times 0.5} = e^{-2} \approx \boxed{0.135}$$
 
 ### Example 8.7: Variance of the geometric distribution
 
-**Problem.** Derive $\mathrm{Var}(X)$ for $X \sim \mathrm{Geo}(p)$, defined as the number of trials
-until the first success.
+**Problem.** Derive $\mathrm{Var}(X)$ for $X \sim \mathrm{Geo}(p)$Defined as the number of trials
+Until the first success.
 
 **Solution.** $E(X) = \dfrac{1}{p}$. Using $\mathrm{Var}(X) = E(X^2) - [E(X)]^2$:
 
@@ -837,12 +837,12 @@ $$\mathrm{Var}(X) = \frac{2-p}{p^2} - \frac{1}{p^2} = \boxed{\frac{1-p}{p^2}}$$
 
 ## 9. Common Pitfalls
 
-| Pitfall                                                                             | Correct Approach                                                                                                  |
+| Pitfall | Correct Approach |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Confusing the two definitions of the geometric distribution                         | "Number of trials until first success": $E(X) = 1/p$; "Number of failures before first success": $E(X) = (1-p)/p$ |
-| Using the Poisson approximation when $np > 10$ or $n < 20$                          | The Poisson approximation requires $n$ large and $p$ small, with $np$ moderate                                    |
-| Forgetting that Poisson probabilities sum to 1 only over all $k$ from 0 to $\infty$ | Never truncate without adjusting                                                                                  |
-| Applying the Poisson to events that are not independent                             | The Poisson process requires independent events at a constant average rate                                        |
+| Confusing the two definitions of the geometric distribution | "Number of trials until first success": $E(X) = 1/p$; "Number of failures before first success": $E(X) = (1-p)/p$ |
+| Using the Poisson approximation when $np > 10$ or $n < 20$ | The Poisson approximation requires $n$ large and $p$ small, with $np$ moderate |
+| Forgetting that Poisson probabilities sum to 1 only over all $k$ from 0 to $\infty$ | Never truncate without adjusting |
+| Applying the Poisson to events that are not independent | The Poisson process requires independent events at a constant average rate |
 
 ---
 
@@ -851,7 +851,7 @@ $$\mathrm{Var}(X) = \frac{2-p}{p^2} - \frac{1}{p^2} = \boxed{\frac{1-p}{p^2}}$$
 ### Question 8
 
 A typist makes an average of 2 errors per page. Find the probability that a 3-page document contains
-exactly 5 errors.
+Exactly 5 errors.
 
 <details>
 <summary>Solution</summary>
@@ -864,7 +864,7 @@ $$P(X = 5) = \frac◆LB◆e^{-6} \cdot 6^5◆RB◆◆LB◆120◆RB◆ = \frac◆
 
 ### Question 9
 
-**Prove that** for $X \sim \mathrm{Po}(\lambda)$, $E(X) = \lambda$.
+**Prove that** for $X \sim \mathrm{Po}(\lambda)$$E(X) = \lambda$.
 
 <details>
 <summary>Solution</summary>
@@ -899,7 +899,7 @@ $P(X > 3) = 0.75^3 = \boxed{0.4219}$.
 ### 11.1 Poisson process and exponential distribution
 
 The inter-arrival times of a Poisson process follow the exponential distribution. If events occur at
-rate $\lambda$ per unit time, the time between consecutive events is $\mathrm{Exp}(\lambda)$. See
+Rate $\lambda$ per unit time, the time between consecutive events is $\mathrm{Exp}(\lambda)$. See
 [Exponential and Continuous Random Variables](/docs/alevel/further-maths/further-statistics/exponential-continuous-rv).
 
 ### 11.2 Poisson and binomial
@@ -910,24 +910,24 @@ $\lambda = np$.
 ### 11.3 Poisson and chi-squared tests
 
 The chi-squared goodness-of-fit test is used to test whether data follows a Poisson or geometric
-distribution. See
+Distribution. See
 [Chi-Squared Tests](/docs/alevel/further-maths/further-statistics/chi-squared-tests).
 
 ---
 
 ## 12. Key Results Summary
 
-| Distribution                 | PMF                                                      | $E(X)$           | $\mathrm{Var}(X)$  |
+| Distribution | PMF | $E(X)$ | $\mathrm{Var}(X)$ |
 | ---------------------------- | -------------------------------------------------------- | ---------------- | ------------------ |
-| $\mathrm{Po}(\lambda)$       | $P(X=x) = \dfrac◆LB◆e^{-\lambda}\lambda^x◆RB◆◆LB◆x!◆RB◆$ | $\lambda$        | $\lambda$          |
-| $\mathrm{Geo}(p)$ (trials)   | $P(X=x) = p(1-p)^{x-1}$                                  | $\dfrac{1}{p}$   | $\dfrac{1-p}{p^2}$ |
-| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$                                      | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
+| $\mathrm{Po}(\lambda)$ | $P(X=x) = \dfrac◆LB◆e^{-\lambda}\lambda^x◆RB◆◆LB◆x!◆RB◆$ | $\lambda$ | $\lambda$ |
+| $\mathrm{Geo}(p)$ (trials) | $P(X=x) = p(1-p)^{x-1}$ | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$ |
+| $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$ | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
 
-| Property            | Poisson                                           | Geometric    |
+| Property | Poisson | Geometric |
 | ------------------- | ------------------------------------------------- | ------------ |
-| Memoryless          | No                                                | Yes          |
-| Additive: $X_1+X_2$ | $\mathrm{Po}(\lambda_1+\lambda_2)$ if independent | Not simple   |
-| PMF tail behaviour  | Decays faster than geometric                      | Slower decay |
+| Memoryless | No | Yes |
+| Additive: $X_1+X_2$ | $\mathrm{Po}(\lambda_1+\lambda_2)$ if independent | Not simple |
+| PMF tail behaviour | Decays faster than geometric | Slower decay |
 
 ---
 
@@ -936,8 +936,8 @@ distribution. See
 ### Question 11
 
 A shop receives customers at a rate of 8 per hour. Find the probability that: (a) exactly 5
-customers arrive in a 30-minute period; (b) more than 10 customers arrive in an hour; (c) the time
-between two consecutive arrivals exceeds 20 minutes.
+Customers arrive in a 30-minute period; (b) more than 10 customers arrive in an hour; (c) the time
+Between two consecutive arrivals exceeds 20 minutes.
 
 <details>
 <summary>Solution</summary>
@@ -954,7 +954,7 @@ $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac◆LB◆e^{-8} \cdot 8^
 
 ### Question 12
 
-**Prove that** for $X \sim \mathrm{Po}(\lambda)$, $\mathrm{Var}(X) = \lambda$.
+**Prove that** for $X \sim \mathrm{Po}(\lambda)$$\mathrm{Var}(X) = \lambda$.
 
 <details>
 <summary>Solution</summary>
@@ -973,25 +973,25 @@ $\mathrm{Var}(X) = E(X^2)-[E(X)]^2 = \lambda^2+\lambda-\lambda^2 = \boxed{\lambd
 
 ### 14.1 Compound Poisson process
 
-If events of type $A$ occur at rate $\lambda_A$ and type $B$ at rate $\lambda_B$, independently,
-then the total event process is Poisson with rate $\lambda_A + \lambda_B$.
+If events of type $A$ occur at rate $\lambda_A$ and type $B$ at rate $\lambda_B$Independently,
+Then the total event process is Poisson with rate $\lambda_A + \lambda_B$.
 
 ### 14.2 Poisson distribution and the Poisson point process
 
 A Poisson point process in 2D with rate $\lambda$ per unit area has the property that the number of
-points in a region of area $A$ follows $\mathrm{Po}(\lambda A)$.
+Points in a region of area $A$ follows $\mathrm{Po}(\lambda A)$.
 
 ### 14.3 The geometric distribution as a special case of the negative binomial
 
 The negative binomial distribution counts the number of trials until $r$ successes. The geometric
-distribution is the case $r = 1$.
+Distribution is the case $r = 1$.
 
 $\mathrm{NegBin}(r, p)$: $P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r}$ for $n = r, r+1, \ldots$
 
 ### 14.4 Relationship to exponential families
 
 Both the Poisson and geometric distributions belong to the exponential family of distributions,
-which have PDF/PMF of the form $f(x;\theta) = h(x)\exp(\eta(\theta)T(x) - A(\theta))$.
+Which have PDF/PMF of the form $f(x;\theta) = h(x)\exp(\eta(\theta)T(x) - A(\theta))$.
 
 ---
 
@@ -1020,7 +1020,7 @@ $= P(-0.919 < Z < 1.327) = \Phi(1.327) - \Phi(-0.919) = 0.908 - 0.179 = \boxed{0
 ### Question 14
 
 **Prove that** if $X$ and $Y$ are independent with $X \sim \mathrm{Geo}(p)$ and
-$Y \sim \mathrm{Geo}(p)$, then $\min(X,Y) \sim \mathrm{Geo}(1-(1-p)^2)$.
+$Y \sim \mathrm{Geo}(p)$Then $\min(X,Y) \sim \mathrm{Geo}(1-(1-p)^2)$.
 
 <details>
 <summary>Solution</summary>
@@ -1047,12 +1047,12 @@ A Poisson process with rate $\lambda$ is a counting process $N(t)$ satisfying:
 
 ### 16.2 Conditional distributions
 
-For $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$, independent:
+For $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$Independent:
 
 $$P(X = k \mid X + Y = n) = \binom{n}{k}\!\left(\frac◆LB◆\lambda_1◆RB◆◆LB◆\lambda_1+\lambda_2◆RB◆\right)^k\left(\frac◆LB◆\lambda_2◆RB◆◆LB◆\lambda_1+\lambda_2◆RB◆\right)^{n-k}$$
 
 This is $\mathrm{Bin}(n, \lambda_1/(\lambda_1+\lambda_2))$ — the conditional distribution is
-binomial!
+Binomial!
 
 ### 16.3 The negative binomial distribution
 
@@ -1060,7 +1060,7 @@ The number of trials until the $r$-th success follows $\mathrm{NegBin}(r, p)$:
 
 $$P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r} \quad \text{for } n = r, r+1, \ldots$$
 
-$E(X) = \dfrac{r}{p}$, $\mathrm{Var}(X) = \dfrac{r(1-p)}{p^2}$.
+$E(X) = \dfrac{r}{p}$$\mathrm{Var}(X) = \dfrac{r(1-p)}{p^2}$.
 
 The geometric distribution is $\mathrm{NegBin}(1, p)$.
 
@@ -1085,7 +1085,7 @@ $t = 1$ hour.
 <summary>Solution</summary>
 
 The time of the 3rd call is $\mathrm{Gamma}(3, 3)$ (sum of 3 independent $\mathrm{Exp}(3)$
-variables).
+Variables).
 
 $P(T_3 < 1) = P(\text{at least 3 calls in 1 hour}) = \sum_{k=3}^{\infty}\dfrac{e^{-3}3^k}{k!}$
 
@@ -1097,7 +1097,7 @@ $\approx 1 - 0.4232 \approx \boxed{0.577}$.
 
 ### Question 16
 
-**Prove that** for $X \sim \mathrm{Geo}(p)$, the moment generating function is
+**Prove that** for $X \sim \mathrm{Geo}(p)$The moment generating function is
 $M_X(t) = \dfrac{pe^t}{1-(1-p)e^t}$ for $t < -\ln(1-p)$.
 
 <details>
@@ -1107,6 +1107,6 @@ $M_X(t) = \displaystyle\sum_{n=1}^{\infty} e^{tn} p(1-p)^{n-1} = \frac{p}{1-p}\s
 
 $= \frac{p}{1-p} \cdot \frac{(1-p)e^t}{1-(1-p)e^t} = \frac{pe^t}{1-(1-p)e^t}$.
 
-This converges when $|(1-p)e^t| < 1$, i.e., $t < -\ln(1-p)$. $\blacksquare$
+This converges when $|(1-p)e^t| < 1$I.e., $t < -\ln(1-p)$. $\blacksquare$
 
 </details>

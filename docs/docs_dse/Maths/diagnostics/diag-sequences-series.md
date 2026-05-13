@@ -31,7 +31,7 @@ When it converges:
 
 $$S_\infty = \frac{a}{1 - r} = \frac{\dfrac{3x}{4}}{1 - \dfrac{x}{4}} = \frac{3x}{4 - x}$$
 
-A common mistake is writing $r = \dfrac{3x}{4}$ instead of $r = \dfrac{x}{4}$, confusing the first term with the ratio.
+A common mistake is writing $r = \dfrac{3x}{4}$ instead of $r = \dfrac{x}{4}$Confusing the first term with the ratio.
 
 ---
 
@@ -39,11 +39,11 @@ A common mistake is writing $r = \dfrac{3x}{4}$ instead of $r = \dfrac{x}{4}$, c
 
 **Question:**
 
-Express $\displaystyle\sum_{k=3}^{n+2} (k - 2)^2$ in terms of $n$, without sigma notation.
+Express $\displaystyle\sum_{k=3}^{n+2} (k - 2)^2$ in terms of $n$Without sigma notation.
 
 **Solution:**
 
-Let $j = k - 2$. When $k = 3$, $j = 1$. When $k = n + 2$, $j = n$.
+Let $j = k - 2$. When $k = 3$$j = 1$. When $k = n + 2$$j = n$.
 
 $$\sum_{k=3}^{n+2} (k - 2)^2 = \sum_{j=1}^{n} j^2 = \frac{n(n+1)(2n+1)}{6}$$
 
@@ -83,7 +83,7 @@ Find the sum of the first $n$ terms of the sequence: $2, 4, 8, 14, 22, 32, \ldot
 
 The first differences are: $2, 4, 6, 8, 10, \ldots$ (arithmetic with $d = 2$).
 
-The second differences are constant at $2$, confirming a quadratic sequence.
+The second differences are constant at $2$Confirming a quadratic sequence.
 
 Let $u_n = an^2 + bn + c$.
 
@@ -120,7 +120,7 @@ First term: $a = \sqrt{2}$.
 
 Common ratio: $r = \dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{2}$.
 
-$|r| = \dfrac{\sqrt{2}}{2} \approx 0.707 \lt 1$, so the series converges.
+$|r| = \dfrac{\sqrt{2}}{2} \approx 0.707 \lt 1$So the series converges.
 
 $$S_\infty = \frac{a}{1 - r} = \frac{\sqrt{2}}{1 - \frac{\sqrt{2}}{2}} = \frac{\sqrt{2}}{\frac{2 - \sqrt{2}}{2}} = \frac{2\sqrt{2}}{2 - \sqrt{2}}$$
 
@@ -138,17 +138,17 @@ $$= \frac{2\sqrt{2}(2 + \sqrt{2})}{(2 - \sqrt{2})(2 + \sqrt{2})} = \frac{4\sqrt{
 
 **Question:**
 
-The first three terms of a geometric sequence are $\log_2 3$, $\log_2 9$, $\log_2 27$. Find the common ratio and the sum of the first 10 terms.
+The first three terms of a geometric sequence are $\log_2 3$$\log_2 9$$\log_2 27$. Find the common ratio and the sum of the first 10 terms.
 
 **Solution:**
 
 $r = \dfrac{\log_2 9}{\log_2 3} = \dfrac{\log_2 3^2}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 2$.
 
-Checking the ratio: $\dfrac{\log_2 9}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 2$, but
+Checking the ratio: $\dfrac{\log_2 9}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 2$But
 $\dfrac{\log_2 27}{\log_2 9} = \dfrac{3\log_2 3}{2\log_2 3} = \dfrac{3}{2}$.
 
-Since the ratio is not constant, this is **not** a geometric sequence. The terms are $\log_2 3$,
-$2\log_2 3$, $3\log_2 3$, which form an **arithmetic sequence** with common difference $d = \log_2 3$.
+Since the ratio is not constant, this is **not** a geometric sequence. The terms are $\log_2 3$
+$2\log_2 3$$3\log_2 3$Which form an **arithmetic sequence** with common difference $d = \log_2 3$.
 
 $S_{10} = \dfrac{10}{2}[2\log_2 3 + 9\log_2 3] = 5 \times 11\log_2 3 = 55\log_2 3$.
 
@@ -220,7 +220,7 @@ Find the sum of all integers from 1 to 200 that are divisible by 3.
 
 The integers from 1 to 200 divisible by 3 form an AP: $3, 6, 9, \ldots, 198$.
 
-First term $a = 3$, common difference $d = 3$.
+First term $a = 3$Common difference $d = 3$.
 
 Last term: $198 = 3 + (n-1) \times 3 \implies 195 = 3(n-1) \implies n - 1 = 65 \implies n = 66$.
 
@@ -240,7 +240,7 @@ Let the sequence be $2, ar, ar^2, ar^3, 162$ where $a = 2$.
 
 $ar^4 = 162 \implies 2r^4 = 162 \implies r^4 = 81 \implies r = 3$ (taking positive $r$).
 
-The three geometric means are: $2 \times 3 = 6$, $2 \times 9 = 18$, $2 \times 27 = 54$.
+The three geometric means are: $2 \times 3 = 6$$2 \times 9 = 18$$2 \times 27 = 54$.
 
 Sequence: $2, 6, 18, 54, 162$.
 
@@ -256,7 +256,7 @@ Find the sum to infinity of $\dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \dfrac
 
 This is a geometric series with $a = \dfrac{1}{2}$ and $r = \dfrac{1}{2}$.
 
-$|r| = \dfrac{1}{2} < 1$, so the series converges.
+$|r| = \dfrac{1}{2} < 1$So the series converges.
 
 $$S_\infty = \frac{a}{1 - r} = \frac{1/2}{1 - 1/2} = \frac{1/2}{1/2} = 1$$
 
@@ -320,11 +320,11 @@ In exact form: $A_8 = 10000 \times (1.06)^8 = 10000 \times \left(\dfrac{106}{100
 
 **Question:**
 
-If three positive numbers $a$, $b$, $c$ form a geometric sequence and $a + b + c = 26$ and $a + 2b - c = 10$, find $a$, $b$, and $c$.
+If three positive numbers $a$$b$$c$ form a geometric sequence and $a + b + c = 26$ and $a + 2b - c = 10$Find $a$$b$And $c$.
 
 **Solution:**
 
-Since $a$, $b$, $c$ are in GP: $b^2 = ac$ and $b = ar$, $c = ar^2$ for some ratio $r$.
+Since $a$$b$$c$ are in GP: $b^2 = ac$ and $b = ar$$c = ar^2$ for some ratio $r$.
 
 From the two equations:
 
@@ -386,13 +386,13 @@ $$= 1 - \frac{1}{n+1} = \frac{n}{n+1}$$
 
 1. **Confusing arithmetic and geometric sequences.** An arithmetic sequence has a constant **difference** between consecutive terms ($u_{n+1} - u_n = d$). A geometric sequence has a constant **ratio** ($\dfrac{u_{n+1}}{u_n} = r$). Always check which one applies before using formulas.
 
-2. **Using the wrong formula for the sum of a geometric series.** $S_n = \dfrac{a(r^n - 1)}{r - 1}$ when $r \neq 1$. When $r = 1$, the sum is simply $S_n = na$. Forgetting the $r \neq 1$ condition and using the formula with $r = 1$ leads to division by zero.
+2. **Using the wrong formula for the sum of a geometric series.** $S_n = \dfrac{a(r^n - 1)}{r - 1}$ when $r \neq 1$. When $r = 1$The sum is $S_n = na$. Forgetting the $r \neq 1$ condition and using the formula with $r = 1$ leads to division by zero.
 
-3. **Incorrect index in sigma notation.** When evaluating $\displaystyle\sum_{k=1}^{n} f(k)$, the index $k$ starts at $1$ and ends at $n$. Confusing the starting index (e.g. using $k = 0$ instead of $k = 1$) is a common source of error.
+3. **Incorrect index in sigma notation.** When evaluating $\displaystyle\sum_{k=1}^{n} f(k)$The index $k$ starts at $1$ and ends at $n$. Confusing the starting index (e.g. Using $k = 0$ instead of $k = 1$) is a common source of error.
 
-4. **Assuming convergence without checking $|r| < 1$.** The infinite sum formula $S_\infty = \dfrac{a}{1 - r}$ is only valid when $|r| < 1$. If $|r| \geq 1$, the series diverges and the sum does not exist.
+4. **Assuming convergence without checking $|r| < 1$.** The infinite sum formula $S_\infty = \dfrac{a}{1 - r}$ is only valid when $|r| < 1$. If $|r| \geq 1$The series diverges and the sum does not exist.
 
-5. **Sign errors in the arithmetic series sum formula.** The formula is $S_n = \dfrac{n}{2}[2a + (n-1)d]$. A common error is writing $(n + 1)d$ instead of $(n - 1)d$, or using $a + nd$ instead of $2a + (n-1)d$.
+5. **Sign errors in the arithmetic series sum formula.** The formula is $S_n = \dfrac{n}{2}[2a + (n-1)d]$. A common error is writing $(n + 1)d$ instead of $(n - 1)d$Or using $a + nd$ instead of $2a + (n-1)d$.
 
 ---
 

@@ -11,12 +11,12 @@ slug: the-noexcept-specifier
 # The `noexcept` Specifier
 
 Since C++17, `noexcept` is part of the **function type system** [N4950 §14.5.1]. This has
-significant implications for overload resolution, optimization, and exception safety guarantees.
+Significant implications for overload resolution, optimization, and exception safety guarantees.
 
 ## 3.1 `noexcept` as Part of the Function Type
 
 Since C++17, `noexcept` is part of the **function type system** [N4950 §14.5.1]. Two function
-pointers that differ only in `noexcept` are different types:
+Pointers that differ only in `noexcept` are different types:
 
 ```cpp
 #include <type_traits>
@@ -39,7 +39,7 @@ int main() {
 ```
 
 A `noexcept` function pointer can be initialized with a non-`noexcept` function pointer (implicit
-conversion), but not vice versa:
+Conversion), but not vice versa:
 
 ```cpp
 #include <iostream>
@@ -64,8 +64,8 @@ int main() {
 ## 3.2 `std::move_if_noexcept`
 
 The standard library uses `std::move_if_noexcept` to provide the strong exception safety guarantee
-during reallocation [N4950 §20.2.4]. If an element's move constructor might throw, the library falls
-back to copying:
+During reallocation [N4950 §20.2.4]. If an element's move constructor might throw, the library falls
+Back to copying:
 
 $$
 \mathrm{move\_if\_noexcept{}(x) = \begin{cases} \mathrm{std::move{}(x) & \mathrm{if {} T\mathrm{'s move is noexcept or not copyable{} \\ x & \mathrm{otherwise (lvalue copy){} \end{cases}
@@ -123,7 +123,7 @@ Marking a function `noexcept` gives the compiler permission to:
 
 1. **Omit unwind tables** for that function on some platforms.
 2. **Assume non-throwing** when inlining — enabling optimizations that would otherwise be invalid if
-   a callee could throw.
+ a callee could throw.
 3. **Elide exception-related bookkeeping** in callers.
 
 ```cpp
@@ -159,8 +159,8 @@ int main() {
 ## 3.4 `noexcept(false)` — Explicit Opt-Out
 
 The default for destructors is `noexcept(true)` since C++11 [N4950 §14.5.3]. Use `noexcept(false)`
-only when absolutely necessary (and the "destructor must never throw" rule still applies — see
-below).
+Only when absolutely necessary (and the "destructor must never throw" rule still applies — see
+Below).
 
 ```cpp
 #include <iostream>
@@ -189,7 +189,7 @@ int main() {
 :::warning
 If a `noexcept(false)` destructor actually throws during stack unwinding,
 `std::terminate()` is called [N4950 §14.7]. Marking a destructor `noexcept(false)` does not make it
-safe to throw from a destructor during unwinding.
+Safe to throw from a destructor during unwinding.
 :::
 
 ## 3.5 Conditional `noexcept`
@@ -228,8 +228,8 @@ int main() {
 ## 3.6 The `noexcept` Operator
 
 The `noexcept` operator is a **compile-time** constant expression that evaluates to `true` if the
-given expression is guaranteed not to throw [N4950 §14.5.2]. It does not evaluate the expression at
-runtime — it only examines the `noexcept` specifiers of the functions called within it:
+Given expression is guaranteed not to throw [N4950 §14.5.2]. It does not evaluate the expression at
+Runtime — it only examines the `noexcept` specifiers of the functions called within it:
 
 ```cpp
 #include <iostream>
@@ -309,7 +309,7 @@ public:
 
 The C++ standard library uses `noexcept` specifications extensively to enable optimizations.
 Containers like `std::vector` check `noexcept` at compile time to decide whether to move or copy
-elements during reallocation [N4950 §22.4.4.4]:
+Elements during reallocation [N4950 §22.4.4.4]:
 
 ```cpp
 #include <iostream>
@@ -337,13 +337,13 @@ int main() {
 
 The relevant type traits for querying noexcept properties:
 
-| Trait                                | Meaning                                          |
+| Trait | Meaning |
 | ------------------------------------ | ------------------------------------------------ |
-| `std::is_nothrow_constructible`      | Can be constructed without throwing              |
-| `std::is_nothrow_move_constructible` | Move constructor is noexcept                     |
-| `std::is_nothrow_copy_constructible` | Copy constructor is noexcept                     |
-| `std::is_nothrow_move_assignable`    | Move assignment operator is noexcept             |
-| `std::is_nothrow_destructible`       | Destructor is noexcept (always true since C++11) |
+| `std::is_nothrow_constructible` | Can be constructed without throwing |
+| `std::is_nothrow_move_constructible` | Move constructor is noexcept |
+| `std::is_nothrow_copy_constructible` | Copy constructor is noexcept |
+| `std::is_nothrow_move_assignable` | Move assignment operator is noexcept |
+| `std::is_nothrow_destructible` | Destructor is noexcept (always true since C++11) |
 
 ## 3.8 `noexcept` Function Overloading
 
@@ -381,12 +381,12 @@ int main() {
 ```
 
 This is particularly useful for dispatching to optimized code paths when a callback is known to be
-non-throwing.
+Non-throwing.
 
 ## 3.9 `noexcept` in Template Metaprogramming
 
 The `noexcept` operator is commonly used in `static_assert` and `if constexpr` to provide
-compile-time diagnostics:
+Compile-time diagnostics:
 
 ```cpp
 #include <iostream>
@@ -420,7 +420,7 @@ int main() {
 ### 1. `noexcept` is Not Verified by the Compiler
 
 The compiler does not verify that a `noexcept` function actually cannot throw. If a `noexcept`
-function throws, `std::terminate()` is called [N4950 §14.7]. The `noexcept` specifier is a
+Function throws, `std::terminate()` is called [N4950 §14.7]. The `noexcept` specifier is a
 **promise** by the programmer, not a guarantee checked by the compiler:
 
 ```cpp
@@ -439,7 +439,7 @@ void dangerous() noexcept {
 
 Move constructors and move assignment operators should almost always be `noexcept`. If they are not,
 `std::vector` and other containers will fall back to copying instead of moving during reallocation,
-defeating the purpose of move semantics:
+Defeating the purpose of move semantics:
 
 ```cpp
 #include <iostream>
@@ -469,10 +469,10 @@ int main() {
 
 ### 3. Conditional `noexcept` and Undefined Behavior
 
-When writing conditional `noexcept`, the condition must accurately reflect whether the function can
-throw. If the condition evaluates to `true` but the function actually throws, `std::terminate()` is
-called. If the condition evaluates to `false` when the function cannot throw, you lose the
-optimization benefit but correctness is preserved:
+When writing conditional `noexcept`The condition must accurately reflect whether the function can
+Throw. If the condition evaluates to `true` but the function actually throws, `std::terminate()` is
+Called. If the condition evaluates to `false` when the function cannot throw, you lose the
+Optimization benefit but correctness is preserved:
 
 ```cpp
 #include <iostream>
@@ -501,9 +501,9 @@ int main() {
 ### 4. `noexcept(false)` on Destructors
 
 Marking a destructor `noexcept(false)` does not make it safe to throw from. If a destructor throws
-during stack unwinding (while another exception is active), `std::terminate()` is called regardless
-of the `noexcept` specification [N4950 §14.7]. The only safe use of `noexcept(false)` on a
-destructor is when you want to catch and handle exceptions thrown by member destructors:
+During stack unwinding (while another exception is active), `std::terminate()` is called regardless
+Of the `noexcept` specification [N4950 §14.7]. The only safe use of `noexcept(false)` on a
+Destructor is when you want to catch and handle exceptions thrown by member destructors:
 
 ```cpp
 #include <iostream>
@@ -546,3 +546,11 @@ int main() {
 - [The Itanium Exception ABI](1_exception_abi.md)
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

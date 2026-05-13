@@ -11,9 +11,9 @@ slug: regular-expressions
 ## Regular Expressions
 
 `std::regex` (C++11) provides regular expression matching, searching, and replacement using the
-ECMAScript regex grammar by default. This section covers the three main operations (`regex_match`,
-`regex_search`, `regex_replace`), capture groups with `std::smatch`, practical patterns like email
-validation, and performance considerations including catastrophic backtracking.
+ECMAScript regex grammar by default. This section covers the three main operations (`regex_match`
+`regex_search``regex_replace`), capture groups with `std::smatch`Practical patterns like email
+Validation, and performance considerations including catastrophic backtracking.
 
 ### Overview
 
@@ -22,21 +22,21 @@ It is declared in `<regex>` and uses the ECMAScript regex grammar by default.
 
 The library provides three main operations:
 
-| Function                              | Behavior                                                  |
+| Function | Behavior |
 | :------------------------------------ | :-------------------------------------------------------- |
-| `std::regex_match(str, regex)`        | Returns `true` if the **entire** string matches the regex |
-| `std::regex_search(str, regex)`       | Returns `true` if **any part** of the string matches      |
-| `std::regex_replace(str, regex, fmt)` | Replaces all matches with a formatted string              |
+| `std::regex_match(str, regex)` | Returns `true` if the **entire** string matches the regex |
+| `std::regex_search(str, regex)` | Returns `true` if **any part** of the string matches |
+| `std::regex_replace(str, regex, fmt)` | Replaces all matches with a formatted string |
 
 :::warning
 `std::regex` is notoriously slow on many standard library implementations (particularly
 GCC's libstdc++, which uses a backtracking NFA engine). For production use with untrusted input,
-consider:
+Consider:
 
 - **CTRE** (Compile-Time Regular Expressions): header-only, uses CTAD and template metaprogramming
-  to compile regex patterns at compile time.
+ to compile regex patterns at compile time.
 - **Hand-written parsers:** for simple patterns (e.g., email validation, URL parsing), a
-  hand-written parser is often faster and more readable.
+ hand-written parser is often faster and more readable.
 - **RE2:** Google's regex library with guaranteed linear-time matching.
 :::
 
@@ -63,10 +63,10 @@ void regex_match_search_demo() {
 ### `std::smatch` and Capture Groups
 
 `std::smatch` (match results for `std::string`) stores the results of a regex operation, including
-capture groups [N4950 §30.9.2]:
+Capture groups [N4950 §30.9.2]:
 
 - `smatch[0]`: The entire match.
-- `smatch[1]`, `smatch[2]`, ...: Capture groups in order of their opening parentheses.
+- `smatch[1]``smatch[2]`...: Capture groups in order of their opening parentheses.
 - `smatch.prefix()`: The text before the match.
 - `smatch.suffix()`: The text after the match.
 
@@ -183,7 +183,7 @@ void email_validation_demo() {
 
 The primary performance concern with `std::regex` is **catastrophic backtracking**. A regex like
 `(a+)+b` applied to the string `"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaac"` can take exponential time because
-the engine tries every possible partition of the `a` characters between the two nested quantifiers.
+The engine tries every possible partition of the `a` characters between the two nested quantifiers.
 
 ```cpp
 #include <chrono>
@@ -216,9 +216,9 @@ void catastrophic_backtracking_demo() {
 ```
 
 :::warning
-Avoid nested quantifiers in regex patterns: `(a+)+`, `(a*)*`, `(a+)*`. These can trigger
-exponential backtracking on inputs that nearly match. If you must use them, set a timeout or use a
-library with guaranteed linear-time matching (RE2, hyperscan).
+Avoid nested quantifiers in regex patterns: `(a+)+``(a*)*``(a+)*`. These can trigger
+Exponential backtracking on inputs that nearly match. If you must use them, set a timeout or use a
+Library with guaranteed linear-time matching (RE2, hyperscan).
 :::
 
 ### Regex Grammars and Flags
@@ -226,23 +226,23 @@ library with guaranteed linear-time matching (RE2, hyperscan).
 `std::regex` supports multiple regex grammars selectable via the `std::regex::flag_type` bitmask
 [N4950 §30.9.1]:
 
-| Flag         | Grammar     | Description                                               |
+| Flag | Grammar | Description |
 | ------------ | ----------- | --------------------------------------------------------- |
-| `ECMAScript` | ECMAScript  | Default. JavaScript-like syntax. Supports backreferences. |
-| `basic`      | POSIX BRE   | Basic Regular Expressions. `\(` for groups, no `+`/`?`.   |
-| `extended`   | POSIX ERE   | Extended Regular Expressions. `()` for groups, `+`/`?`.   |
-| `awk`        | POSIX awk   | Like ERE but escape semantics differ.                     |
-| `grep`       | POSIX grep  | Like BRE but newline handling differs.                    |
-| `egrep`      | POSIX egrep | Like ERE but newline handling differs.                    |
+| `ECMAScript` | ECMAScript | Default. JavaScript-like syntax. Supports backreferences. |
+| `basic` | POSIX BRE | Basic Regular Expressions. `\(` for groups, no `+`/`?`. |
+| `extended` | POSIX ERE | Extended Regular Expressions. `()` for groups, `+`/`?`. |
+| `awk` | POSIX awk | Like ERE but escape semantics differ. |
+| `grep` | POSIX grep | Like BRE but newline handling differs. |
+| `egrep` | POSIX egrep | Like ERE but newline handling differs. |
 
 Additional flags that can be combined with the grammar:
 
-| Flag       | Description                                                                |
+| Flag | Description |
 | ---------- | -------------------------------------------------------------------------- |
-| `icase`    | Case-insensitive matching                                                  |
-| `nosubs`   | Do not track capture groups (faster when groups are not needed)            |
+| `icase` | Case-insensitive matching |
+| `nosubs` | Do not track capture groups (faster when groups are not needed) |
 | `optimize` | Hint to the implementation to favor faster matching over construction time |
-| `collate`  | Locale-sensitive character ranges like `[a-z]`                             |
+| `collate` | Locale-sensitive character ranges like `[a-z]` |
 
 ```cpp
 #include <iostream>
@@ -360,16 +360,16 @@ int main() {
 
 `std::regex_match` and `std::regex_search` accept `std::regex_constants::match_flag_type` flags:
 
-| Flag               | Description                                         |
+| Flag | Description |
 | ------------------ | --------------------------------------------------- |
-| `match_default`    | Default behavior                                    |
-| `match_not_bol`    | Do not match `^` at the first position              |
-| `match_not_eol`    | Do not match `$` at the last position               |
-| `match_not_bow`    | Do not match `\b` at the beginning of the string    |
-| `match_not_eow`    | Do not match `\b` at the end of the string          |
-| `match_any`        | Any character matches `.` (including newline)       |
-| `match_not_null`   | Do not match empty sequences                        |
-| `match_continuous` | Only match at the beginning (like anchored match)   |
+| `match_default` | Default behavior |
+| `match_not_bol` | Do not match `^` at the first position |
+| `match_not_eol` | Do not match `$` at the last position |
+| `match_not_bow` | Do not match `\b` at the beginning of the string |
+| `match_not_eow` | Do not match `\b` at the end of the string |
+| `match_any` | Any character matches `.` (including newline) |
+| `match_not_null` | Do not match empty sequences |
+| `match_continuous` | Only match at the beginning (like anchored match) |
 | `match_prev_avail` | The first position is not the start of the sequence |
 
 ```cpp
@@ -392,8 +392,8 @@ int main() {
 ### Precompiled Regex for Repeated Use
 
 Always store a compiled `std::regex` as a `static` or `const` object when the same pattern is used
-multiple times. The regex compilation is expensive, and recompiling on every call is a common
-performance mistake:
+Multiple times. The regex compilation is expensive, and recompiling on every call is a common
+Performance mistake:
 
 ```cpp
 #include <iostream>
@@ -488,14 +488,14 @@ int main() {
 ### 1. Using `std::regex` with libstdc++ for Untrusted Input
 
 GCC's libstdc++ implementation of `std::regex` uses a backtracking NFA engine that is exponentially
-slow for certain patterns. For any production code that processes untrusted input, prefer a
+Slow for certain patterns. For any production code that processes untrusted input, prefer a
 DFA-based or hybrid engine (RE2, hyperscan). MSVC's STL and libc++ (Clang) have better performance
-but still lack guaranteed linear-time matching.
+But still lack guaranteed linear-time matching.
 
 ### 2. Forgetting to Anchor Patterns with `regex_match`
 
 `std::regex_match` requires the **entire** string to match. If you forget to anchor your pattern
-with `^` and `$`, you may get unexpected results with `regex_search`:
+With `^` and `$`You may get unexpected results with `regex_search`:
 
 ```cpp
 #include <iostream>
@@ -516,7 +516,7 @@ int main() {
 
 ### 3. Escaping Special Characters in Replacement Strings
 
-In replacement strings passed to `std::regex_replace`, the `$` character has special meaning. To
+In replacement strings passed to `std::regex_replace`The `$` character has special meaning. To
 insert a literal `$`, use `$$`. The matched text is `$&`, capture groups are `$1` through `$9`:
 
 ```cpp
@@ -542,8 +542,8 @@ int main() {
 ### 4. Empty Matches in Iteration
 
 `std::regex_iterator` skips zero-length matches at the same position to prevent infinite loops. If
-you need to capture zero-length matches (e.g., for splitting), use `std::regex_token_iterator` with
-index `-1`.
+You need to capture zero-length matches (e.g., for splitting), use `std::regex_token_iterator` with
+Index `-1`.
 
 ## See Also
 
@@ -556,3 +556,11 @@ index `-1`.
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

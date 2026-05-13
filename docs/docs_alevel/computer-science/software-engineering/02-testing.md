@@ -14,7 +14,7 @@ slug: testing
 ### Definition
 
 **Software testing** is the process of evaluating a program to determine whether it meets specified
-requirements and to identify defects.
+Requirements and to identify defects.
 
 ### Why Test?
 
@@ -26,11 +26,11 @@ requirements and to identify defects.
 
 ### Verification vs Validation
 
-| Aspect   | Verification                         | Validation                           |
+| Aspect | Verification | Validation |
 | -------- | ------------------------------------ | ------------------------------------ |
 | Question | "Are we building the product right?" | "Are we building the right product?" |
-| Focus    | Conformance to specification         | Meets user needs and expectations    |
-| Activity | Reviews, inspections, walkthroughs   | Testing with real-world scenarios    |
+| Focus | Conformance to specification | Meets user needs and expectations |
+| Activity | Reviews, inspections, walkthroughs | Testing with real-world scenarios |
 
 <hr />
 
@@ -64,11 +64,11 @@ def test_add():
 
 **Approaches:**
 
-| Approach  | Description                                                  |
+| Approach | Description |
 | --------- | ------------------------------------------------------------ |
-| Top-down  | Test from the top module down, using stubs for lower modules |
-| Bottom-up | Test from the bottom up, using drivers for higher modules    |
-| Big Bang  | Integrate all modules at once and test                       |
+| Top-down | Test from the top module down, using stubs for lower modules |
+| Bottom-up | Test from the bottom up, using drivers for higher modules |
+| Big Bang | Integrate all modules at once and test |
 
 ### 2.3 System Testing
 
@@ -83,22 +83,22 @@ Types:
 ### 2.4 Acceptance Testing
 
 **Definition:** Testing by the customer or end-user to determine if the system meets their
-requirements.
+Requirements.
 
-| Type                 | Description                                             |
+| Type | Description |
 | -------------------- | ------------------------------------------------------- |
-| Alpha testing        | Testing by the development team at the developer's site |
-| Beta testing         | Testing by selected users at their own sites            |
-| User acceptance test | Formal testing to determine if requirements are met     |
+| Alpha testing | Testing by the development team at the developer's site |
+| Beta testing | Testing by selected users at their own sites |
+| User acceptance test | Formal testing to determine if requirements are met |
 
 :::info
 Board-specific
 
 - **AQA** requires unit testing, integration testing, system testing, acceptance testing; requires
-  understanding of test data (normal, boundary, erroneous, extreme)
+ understanding of test data (normal, boundary, erroneous, extreme)
 - **CIE (9618)** covers testing strategies; requires test plans and test data design
 - **OCR (A)** requires unit, integration, system, and acceptance testing; may require traceability
-  between requirements and tests
+ between requirements and tests
 - **Edexcel** covers testing types and test data design
 :::
 
@@ -109,20 +109,20 @@ Board-specific
 ### Definition
 
 **Black-box testing** tests the functionality of a system without knowledge of its internal
-implementation. Tests are based on requirements and specifications.
+Implementation. Tests are based on requirements and specifications.
 
 ### Equivalence Partitioning
 
 Divide input data into **equivalence classes** — groups of inputs that the system should treat the
-same way. Test one representative from each class.
+Same way. Test one representative from each class.
 
 **Example:** A function accepts ages 0-120.
 
-| Equivalence class  | Range       | Test value |
+| Equivalence class | Range | Test value |
 | ------------------ | ----------- | ---------- |
-| Valid              | $[0, 120]$  | 25         |
-| Invalid (too low)  | $\lt{} 0$   | -1         |
-| Invalid (too high) | $\gt{} 120$ | 150        |
+| Valid | $[0, 120]$ | 25 |
+| Invalid (too low) | $\lt{} 0$ | -1 |
+| Invalid (too high) | $\gt{} 120$ | 150 |
 
 ### Boundary Value Analysis
 
@@ -132,13 +132,13 @@ Test values at the **boundaries** of equivalence classes, where errors are most 
 
 **Example:** Age range $[0, 120]$:
 
-| Boundary | Test values   |
+| Boundary | Test values |
 | -------- | ------------- |
-| Lower    | -1, 0, 1      |
-| Upper    | 119, 120, 121 |
+| Lower | -1, 0, 1 |
+| Upper | 119, 120, 121 |
 
 **Why boundaries?** Off-by-one errors are among the most common programming mistakes. If a developer
-writes `age < 120` instead of `age <= 120`, boundary testing catches it immediately.
+Writes `age < 120` instead of `age <= 120`Boundary testing catches it immediately.
 
 ### Decision Table Testing
 
@@ -146,10 +146,10 @@ Create a table listing all combinations of conditions and the expected actions.
 
 | Condition 1 | Condition 2 | Action |
 | ----------- | ----------- | ------ |
-| True        | True        | A      |
-| True        | False       | B      |
-| False       | True        | C      |
-| False       | False       | D      |
+| True | True | A |
+| True | False | B |
+| False | True | C |
+| False | False | D |
 
 ### State Transition Testing
 
@@ -189,7 +189,7 @@ x = 2
 ```
 
 A single test with `condition = True` achieves 100% statement coverage (all 2 statements executed)
-but only 50% branch coverage (the false branch of the if-statement is never taken). $\square$
+But only 50% branch coverage (the false branch of the if-statement is never taken). $\square$
 
 ### Path Coverage
 
@@ -221,7 +221,7 @@ but only 50% branch coverage (the false branch of the if-statement is never take
 ### Definition
 
 **Traceability** links requirements to test cases, ensuring every requirement is tested and every
-test case maps to a requirement.
+Test case maps to a requirement.
 
 ```
 Requirement → Design → Code → Test Case → Test Result
@@ -247,22 +247,22 @@ Using equivalence partitioning and boundary value analysis, identify all test ca
 
 **Equivalence classes:**
 
-| Class              | Range          | Test value |
+| Class | Range | Test value |
 | ------------------ | -------------- | ---------- |
-| Child              | $[0, 12]$      | 6          |
-| Teen               | $[13, 17]$     | 15         |
-| Adult              | $[18, 64]$     | 40         |
-| Senior             | $[65, \infty)$ | 70         |
-| Invalid (negative) | $\lt{} 0$      | -1         |
+| Child | $[0, 12]$ | 6 |
+| Teen | $[13, 17]$ | 15 |
+| Adult | $[18, 64]$ | 40 |
+| Senior | $[65, \infty)$ | 70 |
+| Invalid (negative) | $\lt{} 0$ | -1 |
 
 **Boundary value analysis:**
 
-| Boundary | Values     |
+| Boundary | Values |
 | -------- | ---------- |
-| 0        | -1, 0, 1   |
-| 12/13    | 12, 13, 14 |
-| 17/18    | 17, 18, 19 |
-| 64/65    | 64, 65, 66 |
+| 0 | -1, 0, 1 |
+| 12/13 | 12, 13, 14 |
+| 17/18 | 17, 18, 19 |
+| 64/65 | 64, 65, 66 |
 
 Total test cases: 5 (equivalence) + 12 (boundary) = 17 (some overlap).
 
@@ -274,22 +274,22 @@ Total test cases: 5 (equivalence) + 12 (boundary) = 17 (some overlap).
 <summary>Answer</summary>
 
 A **stub** is a simple replacement for a dependency that returns predefined responses. It provides
-canned answers to calls.
+Canned answers to calls.
 
 A **mock** is a more sophisticated replacement that **verifies** how it was called — it records the
-calls and can assert that specific methods were called with specific arguments.
+Calls and can assert that specific methods were called with specific arguments.
 
-| Feature    | Stub                                  | Mock                                  |
+| Feature | Stub | Mock |
 | ---------- | ------------------------------------- | ------------------------------------- |
-| Purpose    | Provide test data                     | Verify interactions                   |
-| Asserts    | On return values                      | On method calls                       |
-| Complexity | Simple                                | More complex                          |
-| Example    | Fake database returning fixed records | Verify `send_email()` was called once |
+| Purpose | Provide test data | Verify interactions |
+| Asserts | On return values | On method calls |
+| Complexity | Simple | More complex |
+| Example | Fake database returning fixed records | Verify `send_email()` was called once |
 
 </details>
 
 **Problem 3.** Consider the following code. What is the minimum number of test cases to achieve 100%
-branch coverage?
+Branch coverage?
 
 ```python
 def classify(x, y):
@@ -364,13 +364,13 @@ Tests cover: push/peek, push/pop order, empty after all pops, pop from empty, pe
 </details>
 
 **Problem 5.** Explain why 100% statement coverage does not guarantee bug-free code. Give a concrete
-example.
+Example.
 
 <details>
 <summary>Answer</summary>
 
 100% statement coverage means every line of code has been executed at least once, but it does not
-guarantee:
+Guarantee:
 
 1. All combinations of conditions are tested
 2. All data flows are tested
@@ -390,7 +390,7 @@ def process(data):
 ```
 
 Test: `process([3])` → `[6, 3]`. Statement coverage: 100% (all lines executed). But this doesn't
-test:
+Test:
 
 - Negative items (different branch)
 - Empty list (edge case)
@@ -398,7 +398,7 @@ test:
 </details>
 
 **Problem 6.** Describe the difference between top-down and bottom-up integration testing. What are
-the advantages of each?
+The advantages of each?
 
 <details>
 <summary>Answer</summary>
@@ -409,7 +409,7 @@ the advantages of each?
 - Lower-level modules are replaced by **stubs** (simple stand-ins)
 - Advantages: High-level design flaws are found early; the system skeleton is visible early
 - Disadvantages: Stubs may not represent lower modules accurately; testing lower modules in
-  isolation is difficult
+ isolation is difficult
 
 **Bottom-up integration:**
 
@@ -417,7 +417,7 @@ the advantages of each?
 - Higher-level modules are replaced by **drivers** (test harnesses)
 - Advantages: Low-level modules are thoroughly tested; drivers are simpler than stubs
 - Disadvantages: The complete system is not visible until late; interface defects between high-level
-modules may be found late
+Modules may be found late
 </details>
 
 **Problem 7.** Create a decision table for a login system where a user can be:
@@ -429,27 +429,27 @@ modules may be found late
 <details>
 <summary>Answer</summary>
 
-| Rule | User    | Password  | Locked | Action                         |
+| Rule | User | Password | Locked | Action |
 | ---- | ------- | --------- | ------ | ------------------------------ |
-| 1    | Valid   | Correct   | No     | Login success                  |
-| 2    | Valid   | Incorrect | No     | Show error, increment attempts |
-| 3    | Valid   | Correct   | Yes    | Show "account locked"          |
-| 4    | Valid   | Incorrect | Yes    | Show "account locked"          |
-| 5    | Invalid | Any       | Any    | Show "user not found"          |
+| 1 | Valid | Correct | No | Login success |
+| 2 | Valid | Incorrect | No | Show error, increment attempts |
+| 3 | Valid | Correct | Yes | Show "account locked" |
+| 4 | Valid | Incorrect | Yes | Show "account locked" |
+| 5 | Invalid | Any | Any | Show "user not found" |
 
 Rules 3, 4, 5 could potentially be merged (locked or invalid user always shows an error), but for
-completeness, they're listed separately.
+Completeness, they're listed separately.
 
 </details>
 
 **Problem 8.** Explain the concept of regression testing and why it is necessary in iterative
-development.
+Development.
 
 <details>
 <summary>Answer</summary>
 
 **Regression testing** is the re-execution of existing test cases after a code change to verify that
-previously working functionality has not been broken (regressed).
+Previously working functionality has not been broken (regressed).
 
 **Why necessary in iterative development:**
 
@@ -457,7 +457,7 @@ previously working functionality has not been broken (regressed).
 2. New features may interact with old features in unexpected ways
 3. Refactoring (improving code structure without changing behaviour) must not introduce bugs
 4. Without regression testing, each iteration could degrade quality, making the system increasingly
-   unstable
+ unstable
 
 **Best practices:**
 
@@ -478,25 +478,25 @@ For revision on software development, see
 ### Worked Example: Boundary Value Analysis for a Password Validator
 
 A system requires passwords to be 8-20 characters long, containing at least one uppercase letter,
-one digit, and one special character.
+One digit, and one special character.
 
 **Boundary value analysis for length:**
 
-| Boundary        | Values     | Expected               |
+| Boundary | Values | Expected |
 | --------------- | ---------- | ---------------------- |
-| Min length (8)  | 7, 8, 9    | Reject, Accept, Accept |
+| Min length (8) | 7, 8, 9 | Reject, Accept, Accept |
 | Max length (20) | 19, 20, 21 | Accept, Accept, Reject |
 
 **Equivalence partitioning for character requirements:**
 
-| Class           | Test input                         | Expected |
+| Class | Test input | Expected |
 | --------------- | ---------------------------------- | -------- |
-| Valid password  | `Abcdef1!`                         | Accept   |
-| No uppercase    | `abcdef1!`                         | Reject   |
-| No digit        | `Abcdefgh`                         | Reject   |
-| No special char | `Abcdefg1`                         | Reject   |
-| Too short       | `Abc1!`                            | Reject   |
-| Too long        | `Abcdefghijklmnopqr1!x` (22 chars) | Reject   |
+| Valid password | `Abcdef1!` | Accept |
+| No uppercase | `abcdef1!` | Reject |
+| No digit | `Abcdefgh` | Reject |
+| No special char | `Abcdefg1` | Reject |
+| Too short | `Abc1!` | Reject |
+| Too long | `Abcdefghijklmnopqr1!x` (22 chars) | Reject |
 
 ### Worked Example: Equivalence Partitioning for a Date Validator
 
@@ -504,14 +504,14 @@ A function accepts dates in the format `DD/MM/YYYY` where the year must be betwe
 
 **Equivalence classes:**
 
-| Class          | Description                          | Test value   | Expected |
+| Class | Description | Test value | Expected |
 | -------------- | ------------------------------------ | ------------ | -------- |
-| Valid date     | Day 1-31, month 1-12, year 1900-2100 | `15/06/2024` | Accept   |
-| Invalid day    | Day &gt; 31 or &lt; 1                | `32/01/2024` | Reject   |
-| Invalid month  | Month &gt; 12 or &lt; 1              | `15/13/2024` | Reject   |
-| Year too early | Year &lt; 1900                       | `15/06/1899` | Reject   |
-| Year too late  | Year &gt; 2100                       | `15/06/2101` | Reject   |
-| Invalid format | Wrong separator or order             | `06-15-2024` | Reject   |
+| Valid date | Day 1-31, month 1-12, year 1900-2100 | `15/06/2024` | Accept |
+| Invalid day | Day &gt; 31 or &lt; 1 | `32/01/2024` | Reject |
+| Invalid month | Month &gt; 12 or &lt; 1 | `15/13/2024` | Reject |
+| Year too early | Year &lt; 1900 | `15/06/1899` | Reject |
+| Year too late | Year &gt; 2100 | `15/06/2101` | Reject |
+| Invalid format | Wrong separator or order | `06-15-2024` | Reject |
 
 **Boundary values for year:** `1899, 1900, 1901` and `2099, 2100, 2101`
 
@@ -520,20 +520,20 @@ A function accepts dates in the format `DD/MM/YYYY` where the year must be betwe
 
 ### Worked Example: Test Cases for a Stack with Fixed Size
 
-A stack has a maximum capacity of 5 elements. Operations: `push(item)`, `pop()`, `peek()`,
-`is_empty()`, `is_full()`.
+A stack has a maximum capacity of 5 elements. Operations: `push(item)``pop()``peek()`
+`is_empty()``is_full()`.
 
-| Test case            | Input                          | Expected output             |
+| Test case | Input | Expected output |
 | -------------------- | ------------------------------ | --------------------------- |
-| Push single item     | `push(10)`                     | Stack: `[10]`, size = 1     |
-| Push to full         | `push` 5 items, then `push(6)` | Error/exception             |
-| Pop from full        | Push 3 items, `pop()`          | Returns 3rd item, size = 2  |
-| Pop from empty       | `pop()` on empty stack         | Error/exception             |
-| Peek does not remove | `push(10)`, `peek()`, size     | Returns 10, size = 1        |
-| Is empty             | New stack, `is_empty()`        | True                        |
-| Is full              | Push 5 items, `is_full()`      | True                        |
-| Pop then push        | Push 5, pop 1, push 1          | Stack has 5 items, no error |
-| Order preserved      | Push 1, 2, 3; pop twice        | Returns 3, then 2           |
+| Push single item | `push(10)` | Stack: `[10]`Size = 1 |
+| Push to full | `push` 5 items, then `push(6)` | Error/exception |
+| Pop from full | Push 3 items, `pop()` | Returns 3rd item, size = 2 |
+| Pop from empty | `pop()` on empty stack | Error/exception |
+| Peek does not remove | `push(10)``peek()`Size | Returns 10, size = 1 |
+| Is empty | New stack, `is_empty()` | True |
+| Is full | Push 5 items, `is_full()` | True |
+| Pop then push | Push 5, pop 1, push 1 | Stack has 5 items, no error |
+| Order preserved | Push 1, 2, 3; pop twice | Returns 3, then 2 |
 
 <hr />
 
@@ -608,26 +608,26 @@ def test_is_prime():
 
 ### Benefits of TDD in Practice
 
-| Benefit                | Explanation                                                                       |
+| Benefit | Explanation |
 | ---------------------- | --------------------------------------------------------------------------------- |
-| Design improvement     | Writing tests first forces you to think about the interface before implementation |
-| Comprehensive coverage | Every feature has at least one test (written before the feature)                  |
-| Safe refactoring       | Existing tests catch regressions when code is changed                             |
-| Living documentation   | Tests demonstrate how the code is intended to be used                             |
-| Smaller code           | Writing only enough code to pass the test discourages over-engineering            |
+| Design improvement | Writing tests first forces you to think about the interface before implementation |
+| Comprehensive coverage | Every feature has at least one test (written before the feature) |
+| Safe refactoring | Existing tests catch regressions when code is changed |
+| Living documentation | Tests demonstrate how the code is intended to be used |
+| Smaller code | Writing only enough code to pass the test discourages over-engineering |
 
 <hr />
 
 ## 9. Common Pitfalls
 
-| Pitfall                         | Explanation                                                          | Avoidance                                                                        |
+| Pitfall | Explanation | Avoidance |
 | ------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Testing only the happy path     | Edge cases and error conditions are where most bugs hide             | Include boundary values, invalid inputs, and empty inputs                        |
-| Writing tests after the code    | Tests become biased toward the implementation, not the specification | Use TDD or write tests from the requirements document                            |
-| Insufficient branch coverage    | A single test passing through `if` does not test the `else`          | Use branch coverage analysis to identify untested paths                          |
-| Test interdependence            | Tests that depend on execution order produce false passes/failures   | Each test should set up its own state and clean up after itself                  |
-| Ignoring non-functional testing | Performance, security, and usability bugs reach production           | Include load tests, security scans, and user acceptance tests                    |
-| Over-reliance on code coverage  | 100% coverage does not mean 100% correctness                         | Combine coverage metrics with manual test design (equivalence partitioning, BVA) |
+| Testing only the happy path | Edge cases and error conditions are where most bugs hide | Include boundary values, invalid inputs, and empty inputs |
+| Writing tests after the code | Tests become biased toward the implementation, not the specification | Use TDD or write tests from the requirements document |
+| Insufficient branch coverage | A single test passing through `if` does not test the `else` | Use branch coverage analysis to identify untested paths |
+| Test interdependence | Tests that depend on execution order produce false passes/failures | Each test should set up its own state and clean up after itself |
+| Ignoring non-functional testing | Performance, security, and usability bugs reach production | Include load tests, security scans, and user acceptance tests |
+| Over-reliance on code coverage | 100% coverage does not mean 100% correctness | Combine coverage metrics with manual test design (equivalence partitioning, BVA) |
 
 <hr />
 
@@ -649,61 +649,61 @@ Boundaries are at BMI values: 18.5, 25, and 30.
 
 For each boundary, test the value, and the values immediately above and below:
 
-| Boundary | Test values      | Expected                       |
+| Boundary | Test values | Expected |
 | -------- | ---------------- | ------------------------------ |
-| 18.5     | 18.4, 18.5, 18.6 | Underweight, Normal, Normal    |
-| 25.0     | 24.9, 25.0, 25.1 | Normal, Overweight, Overweight |
-| 30.0     | 29.9, 30.0, 30.1 | Overweight, Obese, Obese       |
+| 18.5 | 18.4, 18.5, 18.6 | Underweight, Normal, Normal |
+| 25.0 | 24.9, 25.0, 25.1 | Normal, Overweight, Overweight |
+| 30.0 | 29.9, 30.0, 30.1 | Overweight, Obese, Obese |
 
 To produce these BMIs from weight and height, choose fixed height (e.g., 1.7m) and calculate the
-corresponding weights.
+Corresponding weights.
 
 For height = 1.7m: BMI = weight / (1.7 \* 1.7) = weight / 2.89
 
 | Target BMI | Weight (kg) |
 | ---------- | ----------- |
-| 18.4       | 53.2        |
-| 18.5       | 53.5        |
-| 18.6       | 53.8        |
-| 24.9       | 72.0        |
-| 25.0       | 72.3        |
-| 25.1       | 72.5        |
-| 29.9       | 86.4        |
-| 30.0       | 86.7        |
-| 30.1       | 87.0        |
+| 18.4 | 53.2 |
+| 18.5 | 53.5 |
+| 18.6 | 53.8 |
+| 24.9 | 72.0 |
+| 25.0 | 72.3 |
+| 25.1 | 72.5 |
+| 29.9 | 86.4 |
+| 30.0 | 86.7 |
+| 30.1 | 87.0 |
 
 </details>
 
 **Problem 2.** A function `merge_sorted(a, b)` merges two sorted arrays into one sorted array. Write
-a set of test cases using equivalence partitioning.
+A set of test cases using equivalence partitioning.
 
 <details>
 <summary>Answer</summary>
 
 **Equivalence classes for inputs:**
 
-| Class                    | Description            | Test input               | Expected             |
+| Class | Description | Test input | Expected |
 | ------------------------ | ---------------------- | ------------------------ | -------------------- |
-| Both non-empty           | Normal case            | `[1, 3, 5]`, `[2, 4, 6]` | `[1, 2, 3, 4, 5, 6]` |
-| First empty              | Edge case              | `[]`, `[1, 2]`           | `[1, 2]`             |
-| Second empty             | Edge case              | `[1, 2]`, `[]`           | `[1, 2]`             |
-| Both empty               | Edge case              | `[]`, `[]`               | `[]`                 |
-| Single element each      | Small case             | `[1]`, `[2]`             | `[1, 2]`             |
-| Duplicate values         | Data with repeats      | `[1, 2, 2]`, `[2, 3]`    | `[1, 2, 2, 2, 3]`    |
-| Negative values          | Include negatives      | `[-3, -1]`, `[-2, 0]`    | `[-3, -2, -1, 0]`    |
-| Different lengths        | Unequal arrays         | `[1]`, `[2, 3, 4, 5]`    | `[1, 2, 3, 4, 5]`    |
-| One contains all smaller | No interleaving needed | `[1, 2]`, `[3, 4]`       | `[1, 2, 3, 4]`       |
+| Both non-empty | Normal case | `[1, 3, 5]``[2, 4, 6]` | `[1, 2, 3, 4, 5, 6]` |
+| First empty | Edge case | `[]``[1, 2]` | `[1, 2]` |
+| Second empty | Edge case | `[1, 2]``[]` | `[1, 2]` |
+| Both empty | Edge case | `[]``[]` | `[]` |
+| Single element each | Small case | `[1]``[2]` | `[1, 2]` |
+| Duplicate values | Data with repeats | `[1, 2, 2]``[2, 3]` | `[1, 2, 2, 2, 3]` |
+| Negative values | Include negatives | `[-3, -1]``[-2, 0]` | `[-3, -2, -1, 0]` |
+| Different lengths | Unequal arrays | `[1]``[2, 3, 4, 5]` | `[1, 2, 3, 4, 5]` |
+| One contains all smaller | No interleaving needed | `[1, 2]``[3, 4]` | `[1, 2, 3, 4]` |
 
 </details>
 
 **Problem 3.** Explain why a test that achieves 100% branch coverage might still miss a bug. Provide
-a concrete code example.
+A concrete code example.
 
 <details>
 <summary>Answer</summary>
 
 Consider a function that calculates the area of a triangle given three side lengths using Heron's
-formula:
+Formula:
 
 ```python
 def triangle_area(a, b, c):
@@ -722,17 +722,17 @@ Two test cases achieve 100% branch coverage:
 Both branches are covered. But the following issues are not caught:
 
 - **Negative side length:** `triangle_area(-3, 4, 5)` — the condition `-3 + 4 > 5` is `1 > 5` which
-  is false, so it returns -1. But `triangle_area(-3, -4, -5)` — the condition `-3 + (-4) > -5` is
-  `-7 > -5` which is false. These happen to be handled, but only by accident — the function does not
-  explicitly validate for negative inputs.
+ is false, so it returns -1. But `triangle_area(-3, -4, -5)` — the condition `-3 + (-4) > -5` is
+ `-7 > -5` which is false. These happen to be handled, but only by accident — the function does not
+ explicitly validate for negative inputs.
 
 The key insight: branch coverage tests control flow, not data ranges, not data types, not arithmetic
-properties. A function can have correct control flow but incorrect logic for specific data values.
+Properties. A function can have correct control flow but incorrect logic for specific data values.
 
 </details>
 
 **Problem 4.** Describe how you would apply TDD to develop a function that converts a Roman numeral
-string to an integer.
+String to an integer.
 
 <details>
 <summary>Answer</summary>
@@ -785,13 +785,13 @@ def roman_to_int(s):
 ```
 
 Each TDD cycle adds a test case that captures a new requirement (repeated characters, subtractive
-notation, multi-character numerals), then implements just enough code to satisfy it.
+Notation, multi-character numerals), then implements just enough code to satisfy it.
 
 </details>
 
 **Problem 5.** A software team has 500 test cases. Running all tests takes 2 hours. After a code
-change, the team only wants to run the tests most likely to fail. Describe a strategy for selecting
-which tests to run.
+Change, the team only wants to run the tests most likely to fail. Describe a strategy for selecting
+Which tests to run.
 
 <details>
 <summary>Answer</summary>
@@ -799,26 +799,30 @@ which tests to run.
 **Test prioritisation strategies:**
 
 1. **Impact analysis:** Identify which modules were changed and run only the tests that cover those
-   modules. If function `X` was modified, run all tests that call `X` directly or indirectly.
+ modules. If function `X` was modified, run all tests that call `X` directly or indirectly.
 
 2. **Test categorisation:**
-   - **Smoke tests (5 minutes):** Core functionality — login, database connection, API health. Run
-     always.
-   - **Regression tests (30 minutes):** Tests for previously-fixed bugs. Run after each commit.
-   - **Full suite (2 hours):** Run nightly or before release.
+ - **Smoke tests (5 minutes):** Core functionality — login, database connection, API health. Run
+ always.
+ - **Regression tests (30 minutes):** Tests for previously-fixed bugs. Run after each commit.
+ - **Full suite (2 hours):** Run nightly or before release.
 
 3. **Historical failure rate:** Prioritise tests that have failed most frequently in the past. Tests
-   that always pass are less likely to catch new bugs.
+ that always pass are less likely to catch new bugs.
 
 4. **Code change proximity:** Tests for code that is "close" (in the call graph) to the changed code
-   are more likely to fail than tests for unrelated modules.
+ are more likely to fail than tests for unrelated modules.
 
 5. **Risk-based selection:** If the change is to authentication code, prioritise all
-   security-related tests. If the change is to the UI, prioritise UI tests.
+ security-related tests. If the change is to the UI, prioritise UI tests.
 
 The most practical approach: run smoke tests on every commit, run affected module tests on every
-pull request, and run the full suite nightly.
+Pull request, and run the full suite nightly.
 
 </details>
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

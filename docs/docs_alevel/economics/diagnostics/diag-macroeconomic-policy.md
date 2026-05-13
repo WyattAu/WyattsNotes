@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: The Multiplier Effect
-**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC} = 0.75$. An increase in investment of $\pounds 200$~m occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM} = 0.1$, recalculate the multiplier.
+**Question:** In a closed economy with no government, the marginal propensity to consume is $\text{MPC} = 0.75$. An increase in investment of $\pounds 200$~m occurs. Calculate: (a) the multiplier, (b) the total change in national income, (c) the change in consumption. If the government introduces a proportional income tax of $t = 0.2$ and $\text{MPM} = 0.1$Recalculate the multiplier.
 
 **Solution:**
 
@@ -28,11 +28,11 @@ The tax and imports act as automatic withdrawals, reducing the multiplier from 4
 
 ---
 ### UT-2: Phillips Curve Analysis
-**Question:** The short-run Phillips curve is given by $\pi = \pi^e - 3(u - 5) + 0.5x$, where $\pi$ is inflation, $\pi^e$ is expected inflation, $u$ is unemployment (%), and $x$ is a supply shock. Initially, $\pi^e = 3\%$ and $x = 0$. (a) If the government reduces unemployment to 3%, what is the inflation rate? (b) In the long run, with adaptive expectations, what happens to the Phillips curve? (c) Calculate the natural rate of unemployment.
+**Question:** The short-run Phillips curve is given by $\pi = \pi^e - 3(u - 5) + 0.5x$Where $\pi$ is inflation, $\pi^e$ is expected inflation, $u$ is unemployment (%), and $x$ is a supply shock. Initially, $\pi^e = 3\%$ and $x = 0$. (a) If the government reduces unemployment to 3%, what is the inflation rate? (b) In the long run, with adaptive expectations, what happens to the Phillips curve? (c) Calculate the natural rate of unemployment.
 
 **Solution:**
 
-(a) With $u = 3\%$, $\pi^e = 3\%$, $x = 0$:
+(a) With $u = 3\%$$\pi^e = 3\%$$x = 0$:
 
 $\pi = 3 - 3(3 - 5) + 0 = 3 - 3(-2) = 3 + 6 = 9\%$.
 
@@ -42,7 +42,7 @@ Reducing unemployment by 2 percentage points below the natural rate comes at the
 
 (c) The natural rate of unemployment ($u^*$) is the rate at which $\pi = \pi^e$ with no supply shock ($x = 0$):
 
-$\pi = \pi^e - 3(u^* - 5) + 0$. For $\pi = \pi^e$: $-3(u^* - 5) = 0$, so $u^* = 5\%$.
+$\pi = \pi^e - 3(u^* - 5) + 0$. For $\pi = \pi^e$: $-3(u^* - 5) = 0$So $u^* = 5\%$.
 
 The natural rate is 5%.
 
@@ -101,7 +101,7 @@ $\frac◆LB◆\Delta(\text{MV})◆RB◆◆LB◆\text{MV}◆RB◆ = \frac◆LB◆
 
 For small changes: $\frac◆LB◆\Delta M◆RB◆◆LB◆M◆RB◆ + \frac◆LB◆\Delta V◆RB◆◆LB◆V◆RB◆ \approx 2\%$.
 
-This scenario is contradictory: the interest rate rise and bond sale both reduce the money supply, which should reduce $Y$ or $P$, not increase $Y$ by 2%. If we observe $Y$ rising despite contractionary monetary policy, either: (1) the policy has not yet taken effect (lags), (2) other factors are boosting $Y$ (fiscal expansion, export boom), or (3) velocity has increased significantly as people spend money faster in anticipation of further rate rises.
+This scenario is contradictory: the interest rate rise and bond sale both reduce the money supply, which should reduce $Y$ or $P$Not increase $Y$ by 2%. If we observe $Y$ rising despite contractionary monetary policy, either: (1) the policy has not yet taken effect (lags), (2) other factors are boosting $Y$ (fiscal expansion, export boom), or (3) velocity has increased significantly as people spend money faster in anticipation of further rate rises.
 
 ---
 ### IT-2: AD/AS and Supply-Side Policy (with Supply-Side Policy)
@@ -117,9 +117,9 @@ This scenario is contradictory: the interest rate rise and bond sale both reduce
 
 (b) With AD unchanged and unitary elasticity (PQ approximately constant at potential):
 
-Initial: $P_0 \times 2000 = \text{AD}$, New: $P_1 \times 2100 = \text{AD}$.
+Initial: $P_0 \times 2000 = \text{AD}$New: $P_1 \times 2100 = \text{AD}$.
 
-$P_1 \times 2100 = P_0 \times 2000$, so $P_1 = P_0 \times \frac{2000}{2100} = P_0 \times 0.9524$.
+$P_1 \times 2100 = P_0 \times 2000$So $P_1 = P_0 \times \frac{2000}{2100} = P_0 \times 0.9524$.
 
 The price level falls by approximately 4.76%. The supply-side improvement simultaneously:
 - Reduces inflation (price level falls)
@@ -134,7 +134,7 @@ This is the key advantage of supply-side policies over demand-side policies in a
 
 **Solution:**
 
-(a) **J-curve effect:** In the short run (first 6 months), consumers and firms cannot easily change their trading patterns. The short-run PEDs sum to 0.6 (less than 1), so the Marshall-Lerner condition is NOT satisfied in the short run.
+(a) **J-curve effect:** In the short run (first 6 months), consumers and firms cannot change their trading patterns. The short-run PEDs sum to 0.6 (less than 1), so the Marshall-Lerner condition is NOT satisfied in the short run.
 
 The depreciation makes imports more expensive (more pounds needed per dollar of imports) and exports cheaper (fewer dollars needed per pound of exports). With inelastic demand in the short run, the value effect (higher import prices) dominates the volume effect (quantity changes).
 
@@ -166,7 +166,7 @@ The J-curve illustrates that exchange rate depreciation initially worsens the tr
 
 ## Section 3: Extended Macroeconomic Policy Practice
 
-**UT-4 (Extension).** An economy has the following data: $C = 200 + 0.8Y_d$, $I = 150$, $G = 250$, $T = 0.25Y$, $X = 100$, $M = 50 + 0.15Y$. (a) Calculate equilibrium GDP. (b) Calculate the government spending multiplier and the tax multiplier. (c) The government increases spending by 20 while simultaneously increasing the tax rate to 30%. Calculate the new equilibrium. (d) Calculate the change in the government budget balance.
+**UT-4 (Extension).** An economy has the following data: $C = 200 + 0.8Y_d$$I = 150$$G = 250$$T = 0.25Y$$X = 100$$M = 50 + 0.15Y$. (a) Calculate equilibrium GDP. (b) Calculate the government spending multiplier and the tax multiplier. (c) The government increases spending by 20 while simultaneously increasing the tax rate to 30%. Calculate the new equilibrium. (d) Calculate the change in the government budget balance.
 
 **Solution:**
 
@@ -194,16 +194,16 @@ The budget surplus has increased by 25.22, from 45.46 to 70.68. The balanced bud
 
 ---
 
-**UT-5 (Extension): AD/AS with Simultaneous Shocks.** An economy has AD: $Y = 600 - 2P$, SRAS: $Y = 4P - 200$, and LRAS: $Y^* = 500$. (a) Find the current equilibrium and identify any output gap. (b) A positive supply shock shifts SRAS right by 80 units (new SRAS: $Y = 4P - 280$). Calculate the new equilibrium. (c) Simultaneously, consumer confidence falls, shifting AD left by 100 (new AD: $Y = 500 - 2P$). Calculate the combined effect. (d) Is the economy now in a recessionary or inflationary gap?
+**UT-5 (Extension): AD/AS with Simultaneous Shocks.** An economy has AD: $Y = 600 - 2P$SRAS: $Y = 4P - 200$And LRAS: $Y^* = 500$. (a) Find the current equilibrium and identify any output gap. (b) A positive supply shock shifts SRAS right by 80 units (new SRAS: $Y = 4P - 280$). Calculate the new equilibrium. (c) Simultaneously, consumer confidence falls, shifting AD left by 100 (new AD: $Y = 500 - 2P$). Calculate the combined effect. (d) Is the economy now in a recessionary or inflationary gap?
 
 **Solution:**
 
-(a) $600 - 2P = 4P - 200 \Rightarrow 800 = 6P \Rightarrow P = 133.33$, $Y = 333.33$.
+(a) $600 - 2P = 4P - 200 \Rightarrow 800 = 6P \Rightarrow P = 133.33$$Y = 333.33$.
 Output gap: $500 - 333.33 = 166.67$ (recessionary gap).
 
-(b) With new SRAS: $600 - 2P = 4P - 280 \Rightarrow 880 = 6P \Rightarrow P = 146.67$, $Y = 306.67$.
+(b) With new SRAS: $600 - 2P = 4P - 280 \Rightarrow 880 = 6P \Rightarrow P = 146.67$$Y = 306.67$.
 Output gap: $500 - 306.67 = 193.33$ (larger recessionary gap!).
-The positive supply shock actually worsened the recessionary gap in the short run because it reduced the price level, which (through the real balance effect) could further reduce AD. But in this model, AD is fixed, so the lower price level simply means a new intersection at lower output. Wait -- this seems wrong.
+The positive supply shock actually worsened the recessionary gap in the short run because it reduced the price level, which (through the real balance effect) could further reduce AD. But in this model, AD is fixed, so the lower price level means a new intersection at lower output. Wait -- this seems wrong.
 
 Let me recheck. New SRAS: $Y = 4P - 280$. At $P = 146.67$: $Y = 586.67 - 280 = 306.67$. Yes, output has fallen. But a rightward shift of SRAS should INCREASE output for a given AD. Let me reconsider.
 
@@ -213,21 +213,21 @@ Wait, this is LESS output than before (333.33). That cannot be right for a right
 
 Original SRAS: $Y = 4P - 200$. At $P = 133.33$: $Y = 533.33 - 200 = 333.33$. Correct.
 
-New SRAS: $Y = 4P - 280$. The intercept has DECREASED (from -200 to -280), which means for any given $P$, output is LOWER. This is a LEFTWARD shift, not a rightward shift. I defined the shift incorrectly.
+New SRAS: $Y = 4P - 280$. The intercept has DECREASED (from -200 to -280), which means for any given $P$Output is LOWER. This is a LEFTWARD shift, not a rightward shift. I defined the shift incorrectly.
 
 A rightward shift by 80 means: new SRAS $= 4P - 200 + 80 = 4P - 120$.
 
-Let me redo: $600 - 2P = 4P - 120 \Rightarrow 720 = 6P \Rightarrow P = 120$, $Y = 600 - 240 = 360$.
+Let me redo: $600 - 2P = 4P - 120 \Rightarrow 720 = 6P \Rightarrow P = 120$$Y = 600 - 240 = 360$.
 Output has increased from 333.33 to 360 (correct for a rightward SRAS shift). Output gap: $500 - 360 = 140$ (smaller recessionary gap).
 
-(c) Combined shocks: new AD $Y = 500 - 2P$, new SRAS $Y = 4P - 120$.
-$500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 500 - 206.67 = 293.33$.
+(c) Combined shocks: new AD $Y = 500 - 2P$New SRAS $Y = 4P - 120$.
+$500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$$Y = 500 - 206.67 = 293.33$.
 
 (d) Output gap: $500 - 293.33 = 206.67$ (large recessionary gap). The negative AD shock dominates, pushing output well below potential. The positive supply shock partially offset the price level increase but not the output decline.
 
 ---
 
-**IT-4 (Extension): Fiscal Policy and Debt Dynamics.** A country has GDP = $\pounds 2000$bn, government debt = $\pounds 1800$bn (90% of GDP), budget deficit = $\pounds 100$bn (5% of GDP), and the interest rate on government debt = 4%. GDP grows at 2% per year and inflation is 3%. (a) Calculate the primary deficit. (b) Calculate the debt-stabilising primary balance. (c) If the government maintains the current primary deficit, calculate the debt-to-GDP ratio after 5 years (using the approximation $b_{t+1} \approx (1 + r - g - \pi)b_t - p$). (d) What primary surplus is needed to reduce the debt ratio to 60% of GDP within 10 years?
+**IT-4 (Extension): Fiscal Policy and Debt Dynamics.** A country has GDP = $\pounds 2000$Bn, government debt = $\pounds 1800$Bn (90% of GDP), budget deficit = $\pounds 100$Bn (5% of GDP), and the interest rate on government debt = 4%. GDP grows at 2% per year and inflation is 3%. (a) Calculate the primary deficit. (b) Calculate the debt-stabilising primary balance. (c) If the government maintains the current primary deficit, calculate the debt-to-GDP ratio after 5 years (using the approximation $b_{t+1} \approx (1 + r - g - \pi)b_t - p$). (d) What primary surplus is needed to reduce the debt ratio to 60% of GDP within 10 years?
 
 **Solution:**
 
@@ -235,14 +235,14 @@ $500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 500 - 20
 Total deficit = primary deficit + interest payments. $100 = \text{primary deficit} + 72$.
 Primary deficit $= \pounds 28\text{bn}$ (1.4% of GDP).
 
-(b) Debt-stabilising condition: the debt ratio is stable when $b_{t+1} = b_t$, i.e., $(r - g - \pi)b = p$.
+(b) Debt-stabilising condition: the debt ratio is stable when $b_{t+1} = b_t$I.e., $(r - g - \pi)b = p$.
 Nominal GDP growth $= g + \pi = 2 + 3 = 5\%$. Real interest rate on debt $= r - \pi = 4 - 3 = 1\%$.
 Using the approximation: $(r - g_{nominal})b = p$ where $r$ is nominal rate and $g_{nominal} = 5\%$.
 $(0.04 - 0.05) \times 90 = p \Rightarrow -0.01 \times 90 = p \Rightarrow p = -0.9$.
 
 The debt-stabilising primary balance is a SURPLUS of 0.9% of GDP ($\pounds 18\text{bn}$). Since the current primary balance is a DEFICIT of 1.4%, the debt ratio is rising.
 
-(c) Year-by-year debt ratio evolution ($b_0 = 90\%$, $p = -1.4\%$, $r - g_{nominal} = -1\%$):
+(c) Year-by-year debt ratio evolution ($b_0 = 90\%$$p = -1.4\%$$r - g_{nominal} = -1\%$):
 $b_{t+1} = (1 - 0.01)b_t - (-1.4) = 0.99b_t + 1.4$.
 $b_1 = 0.99(90) + 1.4 = 89.1 + 1.4 = 90.5$.
 $b_2 = 0.99(90.5) + 1.4 = 89.6 + 1.4 = 91.0$.
@@ -263,7 +263,7 @@ A primary surplus of 2.24% of GDP ($\pounds 44.8\text{bn}$) sustained for 10 yea
 
 ---
 
-**IT-5 (Extension): Monetary Policy Transmission.** The Bank of England raises the Bank Rate from 3% to 4%. (a) If the interest elasticity of investment is $-0.5$ and investment was $\pounds 300$bn, calculate the change in investment. (b) If the multiplier is 2, calculate the change in GDP. (c) If the exchange rate appreciates by 3% as a result, and exports are $\pounds 500$bn with a PED of $-0.8$, calculate the change in export revenue. (d) Calculate the total estimated change in AD.
+**IT-5 (Extension): Monetary Policy Transmission.** The Bank of England raises the Bank Rate from 3% to 4%. (a) If the interest elasticity of investment is $-0.5$ and investment was $\pounds 300$Bn, calculate the change in investment. (b) If the multiplier is 2, calculate the change in GDP. (c) If the exchange rate appreciates by 3% as a result, and exports are $\pounds 500$Bn with a PED of $-0.8$Calculate the change in export revenue. (d) Calculate the total estimated change in AD.
 
 **Solution:**
 
@@ -280,4 +280,4 @@ $\Delta X = -2.4\% \times 500 = -\pounds 12\text{bn}$. New exports $= \pounds 48
 The export change also goes through the multiplier: $\Delta Y_{exports} = 2 \times (-12) = -\pounds 24\text{bn}$.
 Total $\Delta Y = -100 - 24 = -\pounds 124\text{bn}$.
 
-If GDP was $\pounds 2000$bn, this is a contraction of 6.2%. This is a large effect, illustrating the power of monetary policy. In practice, the effects are spread over 2-3 years and may be partially offset by other factors (e.g., falling inflation boosts real incomes).
+If GDP was $\pounds 2000$Bn, this is a contraction of 6.2%. This is a large effect, illustrating the power of monetary policy. In practice, the effects are spread over 2-3 years and may be partially offset by other factors (e.g., falling inflation boosts real incomes).

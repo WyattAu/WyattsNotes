@@ -12,8 +12,8 @@ slug: floating-point
 ## 1. Motivation
 
 Fixed-point representation allocates a fixed number of bits to the integer and fractional parts,
-limiting both range and precision. **Floating-point representation** decouples these: it uses a form
-of scientific notation in binary, allowing a vastly larger range at the cost of variable precision.
+Limiting both range and precision. **Floating-point representation** decouples these: it uses a form
+Of scientific notation in binary, allowing a vastly larger range at the cost of variable precision.
 
 ## 2. IEEE 754 Single Precision (32-bit)
 
@@ -26,11 +26,11 @@ An IEEE 754 single-precision number uses 32 bits partitioned as follows:
 | Sign S | Exponent E |    Mantissa/Fraction M |
 ```
 
-| Field          | Bits | Purpose                                                |
+| Field | Bits | Purpose |
 | -------------- | ---- | ------------------------------------------------------ |
-| Sign ($S$)     | 1    | 0 = positive, 1 = negative                             |
-| Exponent ($E$) | 8    | Biased exponent: stored as $E = e + 127$               |
-| Mantissa ($M$) | 23   | Fractional part of the significand; implicit leading 1 |
+| Sign ($S$) | 1 | 0 = positive, 1 = negative |
+| Exponent ($E$) | 8 | Biased exponent: stored as $E = e + 127$ |
+| Mantissa ($M$) | 23 | Fractional part of the significand; implicit leading 1 |
 
 ### Decoding the Value
 
@@ -38,7 +38,7 @@ The represented value is:
 
 $$(-1)^S \times 1.M \times 2^{E - 127}$$
 
-where $1.M$ denotes the binary number $1 + \sum_{i=1}^{23} m_i \cdot 2^{-i}$. The leading 1 is
+Where $1.M$ denotes the binary number $1 + \sum_{i=1}^{23} m_i \cdot 2^{-i}$. The leading 1 is
 **implicit** — it is not stored but always assumed (for normalised numbers). This is called the
 **hidden bit convention**.
 
@@ -63,28 +63,28 @@ $\pm 3.403 \times 10^{38}$.
 ### Precision
 
 With 23 explicit mantissa bits plus 1 implicit bit, the significand has 24 bits of precision. This
-gives approximately $24 \times \log_{10}(2) \approx 7.22$ decimal digits of precision.
+Gives approximately $24 \times \log_{10}(2) \approx 7.22$ decimal digits of precision.
 
 ### Special Values
 
-| Exponent $E$ | Mantissa $M$ | Meaning               |
+| Exponent $E$ | Mantissa $M$ | Meaning |
 | ------------ | ------------ | --------------------- |
-| 0            | 0            | $\pm 0$ (signed zero) |
-| 0            | $\neq 0$     | Denormalised number   |
-| 255          | 0            | $\pm \infty$          |
-| 255          | $\neq 0$     | NaN (Not a Number)    |
+| 0 | 0 | $\pm 0$ (signed zero) |
+| 0 | $\neq 0$ | Denormalised number |
+| 255 | 0 | $\pm \infty$ |
+| 255 | $\neq 0$ | NaN (Not a Number) |
 
 ### Denormalised Numbers
 
-When $E = 0$ and $M \neq 0$, the value is:
+When $E = 0$ and $M \neq 0$The value is:
 
 $$(-1)^S \times 0.M \times 2^{-126}$$
 
 Note: the implicit bit is now **0** (not 1), and the exponent is fixed at $-126$ (not $-127$).
 
 **Why denormalised numbers exist:** Without them, there is a gap between zero ($0$) and the smallest
-normalised number ($2^{-126} \approx 1.18 \times 10^{-38}$). Denormalised numbers fill this gap,
-providing a **smooth gradual underflow**. The smallest positive denormalised number is:
+Normalised number ($2^{-126} \approx 1.18 \times 10^{-38}$). Denormalised numbers fill this gap,
+Providing a **smooth gradual underflow**. The smallest positive denormalised number is:
 
 $$0.000\ldots001 \times 2^{-126} = 2^{-23} \times 2^{-126} = 2^{-149} \approx 1.4 \times 10^{-45}$$
 
@@ -96,7 +96,7 @@ Hex: $41280000_{16}$
 Binary: `0 10000010 01010000000000000000000`
 
 - $S = 0$ (positive)
-- $E = 10000010_2 = 130$, so $e = 130 - 127 = 3$
+- $E = 10000010_2 = 130$So $e = 130 - 127 = 3$
 - $M = 01010000000000000000000$
 
 Value: $(-1)^0 \times 1.0101 \times 2^3$
@@ -113,7 +113,7 @@ $1.3125 \times 8 = 10.5$
 $6.5_{10} = 110.1_2 = 1.101 \times 2^2$
 
 - $S = 1$
-- $e = 2$, so $E = 2 + 127 = 129 = 10000001_2$
+- $e = 2$So $E = 2 + 127 = 129 = 10000001_2$
 - $M = 10100000000000000000000$
 
 Result: `1 10000001 10100000000000000000000`
@@ -127,7 +127,7 @@ Result: `1 10000001 10100000000000000000000`
 ## 3. Normalisation
 
 A floating-point number is **normalised** when the leading bit of the significand is 1. In binary,
-this means the number is expressed in the form:
+This means the number is expressed in the form:
 
 $$\pm 1.xxxxxx \times 2^e$$
 
@@ -145,7 +145,7 @@ Shift binary point right 3 positions: $1.01 \times 2^{-3}$
 
 The normalised form is $1.01 \times 2^{-3}$.
 
-In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
+In IEEE 754: $e = -3$$E = -3 + 127 = 124 = 01111100_2$.
 
 </details>
 
@@ -161,13 +161,13 @@ In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
 
 $0.1_{10} = \frac{1}{10} = \frac◆LB◆1◆RB◆◆LB◆2 \times 5◆RB◆$
 
-For a number to have a finite representation in base $b$, when reduced to lowest terms
-$\frac{p}{q}$, the denominator $q$ must divide some power of $b$. Here $q = 10 = 2 \times 5$, and
+For a number to have a finite representation in base $b$When reduced to lowest terms
+$\frac{p}{q}$The denominator $q$ must divide some power of $b$. Here $q = 10 = 2 \times 5$And
 $5$ does not divide any power of $2$. Therefore $0.1_{10}$ has no finite binary expansion. $\square$
 
 When stored in IEEE 754, $0.1_{10}$ is approximated by the nearest representable binary value.
 Similarly for $0.2_{10}$ and $0.3_{10}$. Since the approximations introduce rounding errors, the sum
-of the approximations of $0.1$ and $0.2$ does not exactly equal the approximation of $0.3$.
+Of the approximations of $0.1$ and $0.2$ does not exactly equal the approximation of $0.3$.
 
 ```python
 >>> 0.1 + 0.2
@@ -185,7 +185,7 @@ $$\mathrm{Absolute Error} = |x - \tilde{x}|$$
 $$\mathrm{Relative Error} = \frac◆LB◆|x - \tilde{x}|◆RB◆◆LB◆|x|◆RB◆$$
 
 **Machine epsilon** ($\epsilon$) is the smallest number such that $1 + \epsilon \gt{} 1$ in
-floating-point arithmetic. For IEEE 754 single precision,
+Floating-point arithmetic. For IEEE 754 single precision,
 $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 
 ### Sources of Floating-Point Error
@@ -226,7 +226,7 @@ Note: CIE uses an **explicit** leading 0 (not the hidden 1 of IEEE 754).
 <details>
 <summary>Example: Decode CIE 8-bit `0 1010 110`</summary>
 
-$S = 0$ (positive) $E = 1010_2 = 10$, $e = 10 - 8 = 2$ $M = 110$
+$S = 0$ (positive) $E = 1010_2 = 10$$e = 10 - 8 = 2$ $M = 110$
 
 Value: $+0.110_2 \times 2^2 = 0.75 \times 4 = 3.0_{10}$
 
@@ -247,22 +247,22 @@ Result: `1 1011 101`
 
 ## 6. Fixed-Point vs Floating-Point Comparison
 
-| Property        | Fixed-Point                 | Floating-Point                          |
+| Property | Fixed-Point | Floating-Point |
 | --------------- | --------------------------- | --------------------------------------- |
-| Range           | Limited by bit allocation   | Very large ($\sim 10^{\pm38}$)          |
-| Precision       | Uniform (constant)          | Variable (depends on magnitude)         |
-| Speed           | Faster (integer arithmetic) | Slower (requires FPU)                   |
-| Hardware        | Simple                      | Complex (FPU required)                  |
-| Representation  | Simple to understand        | Complex (normalisation, special values) |
-| Rounding errors | Predictable                 | Less predictable near boundaries        |
-| Use case        | Financial, embedded systems | Scientific computing, graphics          |
+| Range | Limited by bit allocation | Very large ($\sim 10^{\pm38}$) |
+| Precision | Uniform (constant) | Variable (depends on magnitude) |
+| Speed | Faster (integer arithmetic) | Slower (requires FPU) |
+| Hardware | Simple | Complex (FPU required) |
+| Representation | Simple to understand | Complex (normalisation, special values) |
+| Rounding errors | Predictable | Less predictable near boundaries |
+| Use case | Financial, embedded systems | Scientific computing, graphics |
 
 <hr />
 
 ## Problem Set
 
 **Problem 1.** Convert $-14.25$ to IEEE 754 single precision. Give your answer in binary and
-hexadecimal.
+Hexadecimal.
 
 <details>
 <summary>Hint</summary>
@@ -276,7 +276,7 @@ Convert to binary, normalise, determine sign, exponent (with bias 127), and mant
 
 $14.25_{10} = 1110.01_2 = 1.11001 \times 2^3$
 
-$S = 1$, $E = 3 + 127 = 130 = 10000010_2$, $M = 11001000000000000000000$
+$S = 1$$E = 3 + 127 = 130 = 10000010_2$$M = 11001000000000000000000$
 
 Binary: `1 10000010 11001000000000000000000`
 
@@ -298,19 +298,19 @@ Convert hex to binary, split into sign, exponent, mantissa fields.
 
 `BF800000` = `10111111 10000000 00000000 00000000`
 
-$S = 1$, $E = 01111111_2 = 127$, $e = 0$, $M = 000\ldots0$
+$S = 1$$E = 01111111_2 = 127$$e = 0$$M = 000\ldots0$
 
 Value: $-1.0 \times 2^0 = -1.0$
 
 </details>
 
 **Problem 3.** What is the IEEE 754 single-precision representation of zero? What about negative
-zero?
+Zero?
 
 <details>
 <summary>Hint</summary>
 
-Check the special values table: $E = 0$, $M = 0$.
+Check the special values table: $E = 0$$M = 0$.
 
 </details>
 
@@ -339,7 +339,7 @@ Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.
 
 $9.75 = 1001.11_2 = 0.100111 \times 2^4$
 
-$S = 0$, $E = 4 + 8 = 12 = 1100_2$, $M = 100$ (truncate)
+$S = 0$$E = 4 + 8 = 12 = 1100_2$$M = 100$ (truncate)
 
 Result: `0 1100 100`
 
@@ -360,13 +360,13 @@ Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1
 $0.2 = \frac{2}{10} = \frac{1}{5}$
 
 For a finite binary expansion, the denominator must divide a power of 2 when the fraction is in
-lowest terms. Since $5$ is prime and does not divide any power of $2$, $1/5$ has no finite binary
-representation. $\square$
+Lowest terms. Since $5$ is prime and does not divide any power of $2$$1/5$ has no finite binary
+Representation. $\square$
 
 </details>
 
 **Problem 6.** A system uses 12-bit floating-point: 1 sign bit, 5 exponent bits (excess-15), 6
-mantissa bits. Calculate the range and approximate precision.
+Mantissa bits. Calculate the range and approximate precision.
 
 <details>
 <summary>Hint</summary>
@@ -388,7 +388,7 @@ Assuming hidden bit convention:
 </details>
 
 **Problem 7.** Explain the difference between normalised and denormalised numbers in IEEE 754. Why
-would removing denormalised numbers be problematic?
+Would removing denormalised numbers be problematic?
 
 <details>
 <summary>Hint</summary>
@@ -401,17 +401,17 @@ Consider what happens as values approach zero without denormalised numbers.
 <summary>Answer</summary>
 
 Normalised numbers use the implicit leading 1 and exponent range $[-126, 127]$. Denormalised numbers
-use implicit leading 0 and fixed exponent $-126$.
+Use implicit leading 0 and fixed exponent $-126$.
 
 Without denormalised numbers, there would be a sudden jump from the smallest normalised number
 ($\approx 1.18 \times 10^{-38}$) to zero. Any computation producing a result smaller than this
-threshold would "flush to zero," losing all precision. Denormalised numbers provide a gradual
-transition, maintaining relative precision longer.
+Threshold would "flush to zero," losing all precision. Denormalised numbers provide a gradual
+Transition, maintaining relative precision longer.
 
 </details>
 
 **Problem 8.** In IEEE 754 single precision, how many distinct normalised numbers are there? How
-many denormalised?
+Many denormalised?
 
 <details>
 <summary>Hint</summary>
@@ -424,14 +424,14 @@ Count the combinations of sign, exponent, and mantissa for each category.
 <summary>Answer</summary>
 
 Normalised: Exponent $E$ ranges from 1 to 254 (254 values). Mantissa $M$ has $2^{23}$ values. Sign
-has 2 values. Total: $2 \times 254 \times 2^{23} = 4,261,412,864$.
+Has 2 values. Total: $2 \times 254 \times 2^{23} = 4,261,412,864$.
 
-Denormalised: $E = 0$, $M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
+Denormalised: $E = 0$$M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
 
 </details>
 
 **Problem 9.** A programmer computes $a = 10000000.0$ and $b = 0.00000001$ in single-precision
-float, then computes $a + b - a$. Explain why the result might be $0$ rather than $b$.
+Float, then computes $a + b - a$. Explain why the result might be $0$ rather than $b$.
 
 <details>
 <summary>Hint</summary>
@@ -443,17 +443,17 @@ Think about the precision of single-precision float relative to the magnitude of
 <details>
 <summary>Answer</summary>
 
-Single precision has approximately 7 decimal digits of precision. When $a = 10^7$, the smallest
-representable difference between consecutive floats near $a$ is approximately
+Single precision has approximately 7 decimal digits of precision. When $a = 10^7$The smallest
+Representable difference between consecutive floats near $a$ is approximately
 $a \times \epsilon \approx 10^7 \times 10^{-7} = 1$. Since $b = 10^{-8}$ is much smaller than the
-gap between representable numbers near $a$, $a + b$ rounds to $a$ itself. Then $a - a = 0$.
+Gap between representable numbers near $a$$a + b$ rounds to $a$ itself. Then $a - a = 0$.
 
 This is an example of **cancellation error** combined with **limited precision**.
 
 </details>
 
 **Problem 10.** Calculate the absolute and relative error when $1/3$ is stored as $0.333333$ (6
-decimal places).
+Decimal places).
 
 <details>
 <summary>Hint</summary>
@@ -484,11 +484,11 @@ $\frac◆LB◆3.33 \times 10^{-7}◆RB◆◆LB◆1/3◆RB◆ = 3.33 \times 10^{-
 | Sign S | Exponent E |    Mantissa M        |
 ```
 
-| Field          | Bits | Purpose                             |
+| Field | Bits | Purpose |
 | -------------- | ---- | ----------------------------------- |
-| Sign ($S$)     | 1    | 0 = positive, 1 = negative          |
-| Exponent ($E$) | 11   | Biased exponent: $E = e + 1023$     |
-| Mantissa ($M$) | 52   | Fractional part; implicit leading 1 |
+| Sign ($S$) | 1 | 0 = positive, 1 = negative |
+| Exponent ($E$) | 11 | Biased exponent: $E = e + 1023$ |
+| Mantissa ($M$) | 52 | Fractional part; implicit leading 1 |
 
 ### Decoding
 
@@ -502,14 +502,14 @@ $$(-1)^S \times 1.M \times 2^{E - 1023}$$
 
 ### Comparison: Single vs Double
 
-| Property        | Single (32-bit)                       | Double (64-bit)                        |
+| Property | Single (32-bit) | Double (64-bit) |
 | --------------- | ------------------------------------- | -------------------------------------- |
-| Sign            | 1 bit                                 | 1 bit                                  |
-| Exponent        | 8 bits (bias 127)                     | 11 bits (bias 1023)                    |
-| Mantissa        | 23 bits                               | 52 bits                                |
-| Precision       | ~7 decimal digits                     | ~16 decimal digits                     |
-| Max value       | ~$3.4 \times 10^{38}$                 | ~$1.8 \times 10^{308}$                 |
-| Min normal      | ~$1.2 \times 10^{-38}$                | ~$2.2 \times 10^{-308}$                |
+| Sign | 1 bit | 1 bit |
+| Exponent | 8 bits (bias 127) | 11 bits (bias 1023) |
+| Mantissa | 23 bits | 52 bits |
+| Precision | ~7 decimal digits | ~16 decimal digits |
+| Max value | ~$3.4 \times 10^{38}$ | ~$1.8 \times 10^{308}$ |
+| Min normal | ~$1.2 \times 10^{-38}$ | ~$2.2 \times 10^{-308}$ |
 | Machine epsilon | $2^{-23} \approx 1.19 \times 10^{-7}$ | $2^{-52} \approx 2.22 \times 10^{-16}$ |
 
 <hr />
@@ -525,7 +525,7 @@ IEEE 754 has both $+0$ and $-0$:
 
 They compare equal (`+0 == -0` is true), but their sign bits differ. This matters for:
 
-- Division: $1 / +0 = +\infty$, $1 / -0 = -\infty$
+- Division: $1 / +0 = +\infty$$1 / -0 = -\infty$
 - Square root: $\sqrt{-0} = -0$
 - Complex arithmetic where the sign of zero indicates direction
 
@@ -538,15 +538,15 @@ Represents overflow or division by zero:
 
 Arithmetic rules:
 
-| Operation                 | Result    |
+| Operation | Result |
 | ------------------------- | --------- |
 | $x / 0$ (for $x \gt{} 0$) | $+\infty$ |
 | $x / 0$ (for $x \lt{} 0$) | $-\infty$ |
-| $\infty + \infty$         | $+\infty$ |
-| $\infty - \infty$         | NaN       |
-| $\infty \times \infty$    | $+\infty$ |
-| $0 \times \infty$         | NaN       |
-| $\infty / \infty$         | NaN       |
+| $\infty + \infty$ | $+\infty$ |
+| $\infty - \infty$ | NaN |
+| $\infty \times \infty$ | $+\infty$ |
+| $0 \times \infty$ | NaN |
+| $\infty / \infty$ | NaN |
 
 ### NaN (Not a Number)
 
@@ -558,12 +558,12 @@ Represents undefined or indeterminate results:
 
 NaN is produced by:
 
-| Operation         | Result |
+| Operation | Result |
 | ----------------- | ------ |
-| $0 / 0$           | NaN    |
-| $\infty - \infty$ | NaN    |
-| $\sqrt{-1}$       | NaN    |
-| $\infty \times 0$ | NaN    |
+| $0 / 0$ | NaN |
+| $\infty - \infty$ | NaN |
+| $\sqrt{-1}$ | NaN |
+| $\infty \times 0$ | NaN |
 
 Key property: **NaN is not equal to anything, including itself.**
 
@@ -593,7 +593,7 @@ print(difference)   # Output: 1.000000082740371e-07
 ```
 
 The result has only 1 significant digit of accuracy despite both inputs having 8. The leading digits
-cancel out, leaving only the error terms.
+Cancel out, leaving only the error terms.
 
 ### Example 2: Accumulation Error
 
@@ -606,7 +606,7 @@ print(total)  # Expected: 100000.0
 ```
 
 Each addition introduces a small rounding error. After a million additions, the errors accumulate to
-a noticeable discrepancy.
+A noticeable discrepancy.
 
 ### Example 3: Comparing Floats
 
@@ -624,22 +624,22 @@ print(abs(x - y) < epsilon)  # True
 
 ## 10. Common Pitfalls
 
-| Pitfall                            | Explanation                                            | Solution                                                       |
+| Pitfall | Explanation | Solution |
 | ---------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------- |
-| Using `==` for float comparison    | Rounding errors mean exact equality rarely holds       | Compare with tolerance: `abs(a - b) &lt; epsilon`              |
-| Assuming floats are exact          | Most decimal fractions have infinite binary expansions | Use `decimal.Decimal` for financial calculations               |
-| Subtracting nearly equal numbers   | Catastrophic cancellation destroys precision           | Rearrange the formula algebraically to avoid subtraction       |
-| Adding small to large numbers      | The small number may be lost due to limited precision  | Add small numbers together first, then add to the large number |
-| Checking `x == float('nan')`       | NaN is not equal to itself by definition               | Use `math.isnan(x)`                                            |
-| Ignoring denormalised numbers      | Assuming all numbers have 24-bit precision             | Denormalised numbers near zero have fewer significant bits     |
-| Mixing single and double precision | Implicit conversions can lose precision                | Be consistent with precision throughout the calculation        |
+| Using `==` for float comparison | Rounding errors mean exact equality rarely holds | Compare with tolerance: `abs(a - b) &lt; epsilon` |
+| Assuming floats are exact | Most decimal fractions have infinite binary expansions | Use `decimal.Decimal` for financial calculations |
+| Subtracting nearly equal numbers | Catastrophic cancellation destroys precision | Rearrange the formula algebraically to avoid subtraction |
+| Adding small to large numbers | The small number may be lost due to limited precision | Add small numbers together first, then add to the large number |
+| Checking `x == float('nan')` | NaN is not equal to itself by definition | Use `math.isnan(x)` |
+| Ignoring denormalised numbers | Assuming all numbers have 24-bit precision | Denormalised numbers near zero have fewer significant bits |
+| Mixing single and double precision | Implicit conversions can lose precision | Be consistent with precision throughout the calculation |
 
 <hr />
 
 ## 11. Additional Problem Set
 
 **Problem 1.** Encode the value $-0.75$ in IEEE 754 single precision. Give the binary and
-hexadecimal representation.
+Hexadecimal representation.
 
 <details>
 <summary>Answer</summary>
@@ -668,7 +668,7 @@ Hex: `4039000000000000`
 Binary: `0100000000111001000000000000000000000000000000000000000000000000`
 
 - $S = 0$ (positive)
-- $E = 10000000011_2 = 1027$, so $e = 1027 - 1023 = 4$
+- $E = 10000000011_2 = 1027$So $e = 1027 - 1023 = 4$
 - $M = 1001000000...0$
 
 Value: $(-1)^0 \times 1.1001_2 \times 2^4$
@@ -682,26 +682,26 @@ So the value is $25.0$.
 </details>
 
 **Problem 3.** Explain what happens when you compute `1.0 / 0.0` and `0.0 / 0.0` in IEEE 754. Why
-are the results different?
+Are the results different?
 
 <details>
 <summary>Answer</summary>
 
 `1.0 / 0.0` produces $+\infty$. This represents mathematical division where a non-zero quantity is
-divided by zero — the result tends to infinity.
+Divided by zero — the result tends to infinity.
 
 `0.0 / 0.0` produces NaN. This represents an indeterminate form: the limit depends on how both
-numerator and denominator approach zero (e.g., $\lim_{x \to 0} x/x = 1$ but
+Numerator and denominator approach zero (e.g., $\lim_{x \to 0} x/x = 1$ but
 $\lim_{x \to 0} 2x/x = 2$). Since the result is not uniquely determined, IEEE 754 returns NaN.
 
 The distinction is important because $+\infty$ can participate meaningfully in further arithmetic
 (e.g., $1 / \infty = 0$), while NaN propagates through all operations, signalling that the result is
-invalid.
+Invalid.
 
 </details>
 
 **Problem 4.** A programmer writes the following code to compute the quadratic formula. Explain why
-it may give incorrect results and suggest a fix.
+It may give incorrect results and suggest a fix.
 
 ```python
 def quadratic(a, b, c):
@@ -714,10 +714,10 @@ def quadratic(a, b, c):
 <details>
 <summary>Answer</summary>
 
-**Problem: Catastrophic cancellation.** When $4ac$ is small compared to $b^2$, the discriminant is
-close to $b^2$. Then $\sqrt{b^2 - 4ac} \approx |b|$, and one of the numerators becomes $-b + |b|$ or
-$-b - |b|$. If $b \gt{} 0$, then $-b + \sqrt{b^2 - 4ac}$ subtracts nearly equal numbers, losing
-precision.
+**Problem: Catastrophic cancellation.** When $4ac$ is small compared to $b^2$The discriminant is
+Close to $b^2$. Then $\sqrt{b^2 - 4ac} \approx |b|$And one of the numerators becomes $-b + |b|$ or
+$-b - |b|$. If $b \gt{} 0$Then $-b + \sqrt{b^2 - 4ac}$ subtracts nearly equal numbers, losing
+Precision.
 
 **Fix:** Compute one root with the standard formula and the other using the identity
 $x_1 \times x_2 = c/a$:
@@ -734,13 +734,13 @@ def quadratic(a, b, c):
     return x1, x2
 ```
 
-By choosing the sign that avoids cancellation in $x_1$, and computing $x_2$ from the product
-relationship, both roots maintain full precision.
+By choosing the sign that avoids cancellation in $x_1$And computing $x_2$ from the product
+Relationship, both roots maintain full precision.
 
 </details>
 
 **Problem 5.** In IEEE 754 single precision, what is the smallest positive number that, when added
-to $1.0$, produces a result different from $1.0$? Explain why.
+To $1.0$Produces a result different from $1.0$? Explain why.
 
 <details>
 <summary>Answer</summary>
@@ -749,15 +749,23 @@ This is the definition of **machine epsilon**: the smallest $\epsilon$ such that
 $1 + \epsilon \gt{} 1$.
 
 In single precision, the mantissa has 23 bits. The value $1.0$ is represented as
-$1.000\ldots0 \times 2^0$. The next representable number is $1.000\ldots01 \times 2^0$, where the
-last bit of the mantissa is 1.
+$1.000\ldots0 \times 2^0$. The next representable number is $1.000\ldots01 \times 2^0$Where the
+Last bit of the mantissa is 1.
 
 This value is $1 + 2^{-23} \approx 1.0000001192092896$.
 
 So $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 
-Any value smaller than $\epsilon$, when added to $1.0$, rounds back to $1.0$ because there are not
-enough mantissa bits to represent the difference. For example, $1.0 + 2^{-24} = 1.0$ in single
-precision.
+Any value smaller than $\epsilon$When added to $1.0$Rounds back to $1.0$ because there are not
+Enough mantissa bits to represent the difference. For example, $1.0 + 2^{-24} = 1.0$ in single
+Precision.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

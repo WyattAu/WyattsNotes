@@ -11,7 +11,7 @@ slug: inequalities
 ---
 
 An inequality states that one expression is greater than or less than another. Inequalities arise
-naturally when finding the [domain](functions#definition-of-a-function) and
+ when finding the [domain](functions#definition-of-a-function) and
 [range](functions#definition-of-a-function) of functions, and are closely related to
 [quadratic functions](functions#quadratic-functions) through their graphical interpretation.
 
@@ -19,12 +19,12 @@ naturally when finding the [domain](functions#definition-of-a-function) and
 
 ### Basic Properties
 
-Let $a$, $b$, and $c$ be real numbers. The following properties hold for inequalities:
+Let $a$$b$And $c$ be real numbers. The following properties hold for inequalities:
 
 **Addition property:**
 
 $$
-a > b \implies a + c > b + c
+A > b \implies a + c > b + c
 $$
 
 Adding the same quantity to both sides preserves the inequality.
@@ -32,35 +32,35 @@ Adding the same quantity to both sides preserves the inequality.
 **Multiplication by a positive number:**
 
 $$
-a > b,\; c > 0 \implies ac > bc
+A > b,\; c > 0 \implies ac > bc
 $$
 
 **Multiplication by a negative number (reversal):**
 
 $$
-a > b,\; c < 0 \implies ac < bc
+A > b,\; c < 0 \implies ac < bc
 $$
 
 This is the most important rule to remember: multiplying or dividing both sides by a **negative**
-number **reverses** the inequality sign.
+Number **reverses** the inequality sign.
 
 ### Transitivity
 
 $$
-a > b \mathrm{ and } b > c \implies a > c
+A > b \mathrm{ and } b > c \implies a > c
 $$
 
 ### Other Properties
 
-- If $a > b > 0$, then $a^2 > b^2$ and $\dfrac{1}{a} < \dfrac{1}{b}$.
-- If $a > b$ and $c > d$, then $a + c > b + d$.
-- If $a > b > 0$ and $c > d > 0$, then $ac > bd$.
+- If $a > b > 0$Then $a^2 > b^2$ and $\dfrac{1}{a} < \dfrac{1}{b}$.
+- If $a > b$ and $c > d$Then $a + c > b + d$.
+- If $a > b > 0$ and $c > d > 0$Then $ac > bd$.
 
 <details>
 <summary>Examples</summary>
-- $3 > 1 \implies 3 + 5 > 1 + 5$, i.e., $8 > 6$.
-- $4 > 2$ and $3 > 0 \implies 4 \times 3 > 2 \times 3$, i.e., $12 > 6$.
-- $5 > 2$ and $-3 < 0 \implies 5 \times (-3) < 2 \times (-3)$, i.e., $-15 < -6$.
+- $3 > 1 \implies 3 + 5 > 1 + 5$I.e., $8 > 6$.
+- $4 > 2$ and $3 > 0 \implies 4 \times 3 > 2 \times 3$I.e., $12 > 6$.
+- $5 > 2$ and $-3 < 0 \implies 5 \times (-3) < 2 \times (-3)$I.e., $-15 < -6$.
 - $7 > 5 > 2 \implies 7 > 2$ (transitivity).
 - $3 > 2 > 0 \implies 9 > 4$ and $\dfrac{1}{3} < \dfrac{1}{2}$.
 </details>
@@ -69,9 +69,9 @@ $$
 
 ### Solving Linear Inequalities
 
-A linear inequality has the form $ax + b > c$ or $ax + b < c$, where $a \neq 0$. The solution
-procedure mirrors that of linear equations, with one critical exception: when multiplying or
-dividing by a negative number, the inequality sign must be reversed.
+A linear inequality has the form $ax + b > c$ or $ax + b < c$Where $a \neq 0$. The solution
+Procedure mirrors that of linear equations, with one critical exception: when multiplying or
+Dividing by a negative number, the inequality sign must be reversed.
 
 **General method:**
 
@@ -82,7 +82,7 @@ dividing by a negative number, the inequality sign must be reversed.
 ### Number Line Representation
 
 The solution of a linear inequality in one variable is an interval, which can be represented on a
-number line:
+Number line:
 
 - An **open circle** ($\circ$) indicates a strict inequality ($<$ or $>$).
 - A **closed circle** ($\bullet$) indicates an inclusive inequality ($\leq$ or $\geq$).
@@ -125,24 +125,24 @@ The solution set is $[7, \infty)$.
 
 ## Quadratic Inequalities
 
-A quadratic inequality has the form $ax^2 + bx + c > 0$, $ax^2 + bx + c < 0$, or their non-strict
-variants, where $a \neq 0$. Solving quadratic inequalities relies on understanding the graph of the
-corresponding [quadratic function](functions#quadratic-functions) $f(x) = ax^2 + bx + c$.
+A quadratic inequality has the form $ax^2 + bx + c > 0$$ax^2 + bx + c < 0$Or their non-strict
+Variants, where $a \neq 0$. Solving quadratic inequalities relies on understanding the graph of the
+Corresponding [quadratic function](functions#quadratic-functions) $f(x) = ax^2 + bx + c$.
 
 ### Graphical Interpretation
 
 The graph of $f(x) = ax^2 + bx + c$ is a parabola. The solution of $f(x) > 0$ corresponds to the
 $x$-values where the parabola lies **above** the $x$-axis, and $f(x) < 0$ corresponds to where the
-parabola lies **below** the $x$-axis.
+Parabola lies **below** the $x$-axis.
 
 The [discriminant](functions#discriminant) $\Delta = b^2 - 4ac$ determines the number of
-intersections with the $x$-axis:
+Intersections with the $x$-axis:
 
-| Condition    | Parabola and $x$-axis                             | $ax^2 + bx + c > 0$ (for $a > 0$)              |
+| Condition | Parabola and $x$-axis | $ax^2 + bx + c > 0$ (for $a > 0$) |
 | ------------ | ------------------------------------------------- | ---------------------------------------------- |
-| $\Delta > 0$ | Two distinct intersections at $x = \alpha, \beta$ | $x < \alpha$ or $x > \beta$                    |
-| $\Delta = 0$ | One intersection at $x = \alpha$                  | $x \neq \alpha$ (all real $x$ except $\alpha$) |
-| $\Delta < 0$ | No intersection                                   | All real $x$ (always true)                     |
+| $\Delta > 0$ | Two distinct intersections at $x = \alpha, \beta$ | $x < \alpha$ or $x > \beta$ |
+| $\Delta = 0$ | One intersection at $x = \alpha$ | $x \neq \alpha$ (all real $x$ except $\alpha$) |
+| $\Delta < 0$ | No intersection | All real $x$ (always true) |
 
 ### Solving Method
 
@@ -165,13 +165,13 @@ intersections with the $x$-axis:
 
 Factorize: $(x-2)(x-3) > 0$.
 
-Roots are $x = 2$ and $x = 3$. Since $a = 1 > 0$, the parabola opens upward.
+Roots are $x = 2$ and $x = 3$. Since $a = 1 > 0$The parabola opens upward.
 
 Sign diagram:
 
 $$
 \begin{array}{c|ccc}
-x & (-\infty, 2) & (2, 3) & (3, \infty) \\
+X & (-\infty, 2) & (2, 3) & (3, \infty) \\
 \hline
 (x-2) & - & + & + \\
 (x-3) & - & - & + \\
@@ -180,7 +180,7 @@ x & (-\infty, 2) & (2, 3) & (3, \infty) \\
 \end{array}
 $$
 
-Solution: $x < 2$ or $x > 3$, i.e., $(-\infty, 2) \cup (3, \infty)$.
+Solution: $x < 2$ or $x > 3$I.e., $(-\infty, 2) \cup (3, \infty)$.
 
 - Solve $-x^2 + 4x - 3 \geq 0$:
 
@@ -188,15 +188,15 @@ Multiply both sides by $-1$ (reverse inequality): $x^2 - 4x + 3 \leq 0$.
 
 Factorize: $(x-1)(x-3) \leq 0$.
 
-Since $a = 1 > 0$, the parabola opens upward. The expression is non-positive between the roots.
+Since $a = 1 > 0$The parabola opens upward. The expression is non-positive between the roots.
 
-Solution: $1 \leq x \leq 3$, i.e., $[1, 3]$.
+Solution: $1 \leq x \leq 3$I.e., $[1, 3]$.
 
 - Solve $x^2 + 2x + 5 < 0$:
 
 Discriminant: $\Delta = 4 - 20 = -16 < 0$.
 
-Since $a = 1 > 0$ and $\Delta < 0$, the parabola is always above the $x$-axis.
+Since $a = 1 > 0$ and $\Delta < 0$The parabola is always above the $x$-axis.
 
 Solution: $\varnothing$ (no solution).
 
@@ -210,7 +210,7 @@ Sign diagram:
 
 $$
 \begin{array}{c|ccc}
-x & \left(-\infty, -\tfrac{1}{2}\right) & \left(-\tfrac{1}{2}, 2\right) & (2, \infty) \\
+X & \left(-\infty, -\tfrac{1}{2}\right) & \left(-\tfrac{1}{2}, 2\right) & (2, \infty) \\
 \hline
 (2x+1) & - & + & + \\
 (x-2) & - & - & + \\
@@ -219,15 +219,15 @@ x & \left(-\infty, -\tfrac{1}{2}\right) & \left(-\tfrac{1}{2}, 2\right) & (2, \i
 \end{array}
 $$
 
-Solution: $x < -\dfrac{1}{2}$ or $x > 2$, i.e.,
+Solution: $x < -\dfrac{1}{2}$ or $x > 2$I.e.,
 $\left(-\infty, -\dfrac{1}{2}\right) \cup (2, \infty)$.
 
 </details>
 
 ## Absolute Value Inequalities
 
-The absolute value of a real number $x$, denoted $|x|$, represents its distance from zero on the
-number line. This geometric interpretation is the key to solving absolute value inequalities.
+The absolute value of a real number $x$Denoted $|x|$Represents its distance from zero on the
+Number line. This geometric interpretation is the key to solving absolute value inequalities.
 
 ### Fundamental Forms
 
@@ -267,8 +267,8 @@ This gives two separate linear inequalities, each solved independently.
 
 ### Special Cases
 
-- If $c \leq 0$, then $|x| < c$ has no solution ($\varnothing$).
-- If $c < 0$, then $|x| > c$ is true for all real $x$ ($\mathbb{'\{'}R{'\}'}$).
+- If $c \leq 0$Then $|x| < c$ has no solution ($\varnothing$).
+- If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{'\{'}R{'\}'}$).
 - $|x| \geq a$ and $|x| \leq a$ follow the same patterns with non-strict inequality signs.
 
 <details>
@@ -292,7 +292,7 @@ $$
 $$
 
 $$
-x \leq -4 \;\mathrm{ or }\; x \geq 3
+X \leq -4 \;\mathrm{ or }\; x \geq 3
 $$
 
 Solution: $(-\infty, -4] \cup [3, \infty)$.
@@ -311,7 +311,7 @@ $$
 -5 < x^2 - 4 < 5 \implies -1 < x^2 < 9
 $$
 
-Since $x^2 \geq 0$ for all real $x$, the left inequality $-1 < x^2$ is always satisfied.
+Since $x^2 \geq 0$ for all real $x$The left inequality $-1 < x^2$ is always satisfied.
 
 From $x^2 < 9$: $-3 < x < 3$.
 
@@ -319,7 +319,7 @@ Solution: $(-3, 3)$.
 
 - Solve $|x + 2| \leq -1$:
 
-Since $|x + 2| \geq 0$ for all real $x$, it can never be $\leq -1$.
+Since $|x + 2| \geq 0$ for all real $x$It can never be $\leq -1$.
 
 Solution: $\varnothing$.
 
@@ -328,8 +328,8 @@ Solution: $\varnothing$.
 ## Systems of Inequalities
 
 A system of inequalities requires finding the set of values that satisfy **all** inequalities
-simultaneously. The solution set of the system is the **intersection** of the solution sets of the
-individual inequalities.
+Simultaneously. The solution set of the system is the **intersection** of the solution sets of the
+Individual inequalities.
 
 ### Method for Systems of Linear Inequalities
 
@@ -340,7 +340,7 @@ individual inequalities.
 ### Systems Involving Quadratic and Absolute Value Inequalities
 
 The same principle applies: solve each inequality independently, then take the intersection of all
-solution sets.
+Solution sets.
 
 <details>
 <summary>Examples</summary>
@@ -350,7 +350,7 @@ From $x^2 - 4x + 3 < 0$: $(x-1)(x-3) < 0 \implies 1 < x < 3$.
 
 From $2x - 1 > 3$: $2x > 4 \implies x > 2$.
 
-Intersection: $2 < x < 3$, i.e., $(2, 3)$.
+Intersection: $2 < x < 3$I.e., $(2, 3)$.
 
 - Find all $x$ satisfying $|x - 1| \leq 3$ and $x^2 - 9 \leq 0$:
 
@@ -358,7 +358,7 @@ From $|x - 1| \leq 3$: $-3 \leq x - 1 \leq 3 \implies -2 \leq x \leq 4$.
 
 From $x^2 - 9 \leq 0$: $(x-3)(x+3) \leq 0 \implies -3 \leq x \leq 3$.
 
-Intersection: $-2 \leq x \leq 3$, i.e., $[-2, 3]$.
+Intersection: $-2 \leq x \leq 3$I.e., $[-2, 3]$.
 
 - Find all $x$ satisfying $x^2 - 2x - 8 > 0$ and $|x + 1| < 6$:
 
@@ -366,14 +366,14 @@ From $x^2 - 2x - 8 > 0$: $(x-4)(x+2) > 0 \implies x < -2$ or $x > 4$.
 
 From $|x + 1| < 6$: $-6 < x + 1 < 6 \implies -7 < x < 5$.
 
-Intersection: $-7 < x < -2$, i.e., $(-7, -2)$.
+Intersection: $-7 < x < -2$I.e., $(-7, -2)$.
 
-(Note: the second branch $x > 4$ from the quadratic has no overlap with $x < 5$ beyond $(4, 5)$, but
+(Note: the second branch $x > 4$ from the quadratic has no overlap with $x < 5$ beyond $(4, 5)$But
 $x > 4$ and $x < 5$ gives $4 < x < 5$. The full intersection is $(-7, -2) \cup (4, 5)$.)
 
 - Find all $x$ satisfying $x^2 + 1 > 0$ and $x - 3 < 0$:
 
-From $x^2 + 1 > 0$: always true (discriminant $\Delta = -4 < 0$, and $a = 1 > 0$).
+From $x^2 + 1 > 0$: always true (discriminant $\Delta = -4 < 0$And $a = 1 > 0$).
 
 From $x - 3 < 0$: $x < 3$.
 
@@ -388,7 +388,7 @@ Intersection: $(-\infty, 3)$.
 1. **Question:** Solve the inequality $\dfrac{2x - 1}{3} \leq \dfrac{x + 2}{4} + 1$.
 <details>
 <summary>Answer</summary>
-Multiply through by $12$ (the LCM of $3$ and $4$, which is positive so the inequality sign is preserved):
+Multiply through by $12$ (the LCM of $3$ and $4$Which is positive so the inequality sign is preserved):
 
 $$
 4(2x - 1) \leq 3(x + 2) + 12
@@ -412,7 +412,7 @@ Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
 Factorize: $(x - 3)^2 \geq 0$.
 
 Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all
-real numbers.
+Real numbers.
 
 Solution: $\mathbb{'\{'}R{'\}'}$.
 
@@ -425,7 +425,7 @@ From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
 
 From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
 
-Intersection: $-\dfrac{1}{2} < x < 5$, i.e., $\left(-\dfrac{1}{2}, 5\right)$.
+Intersection: $-\dfrac{1}{2} < x < 5$I.e., $\left(-\dfrac{1}{2}, 5\right)$.
 
 </details>
 
@@ -466,7 +466,7 @@ So $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
 Combined with $x \geq -\dfrac{3}{2}$:
 $\max\!\left(1 - \sqrt{2},\; -\dfrac{3}{2}\right) \leq x \leq 1 + \sqrt{2}$.
 
-Since $1 - \sqrt{2} \approx -0.414 > -\dfrac{3}{2} = -1.5$, the constraint is
+Since $1 - \sqrt{2} \approx -0.414 > -\dfrac{3}{2} = -1.5$The constraint is
 $1 - \sqrt{2} \leq x \leq 1 + \sqrt{2}$.
 
 **Case 2:** $2x + 3 < 0$ (i.e., $x < -\dfrac{3}{2}$), so $|2x + 3| = -(2x + 3)$:
@@ -475,15 +475,15 @@ $$
 -2x - 3 \geq x^2 + 2 \implies x^2 + 2x + 5 \leq 0
 $$
 
-Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$, the expression is always positive. No
-solution in this case.
+Discriminant: $\Delta = 4 - 20 = -16 < 0$. Since $a = 1 > 0$The expression is always positive. No
+Solution in this case.
 
 Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
 
 </details>
 
 6. **Question:** For what values of $k$ does the quadratic equation $x^2 + 2kx + k + 6 = 0$ have two
-distinct real roots?
+Distinct real roots?
 <details>
 <summary>Answer</summary>
 For two distinct real roots, the [discriminant](functions#discriminant) must satisfy $\Delta > 0$:
@@ -493,18 +493,18 @@ $$
 $$
 
 $$
-k^2 - k - 6 > 0
+K^2 - k - 6 > 0
 $$
 
 Factorize: $(k - 3)(k + 2) > 0$.
 
-Since $a = 1 > 0$, the parabola opens upward. The expression is positive outside the roots.
+Since $a = 1 > 0$The parabola opens upward. The expression is positive outside the roots.
 
-Solution: $k < -2$ or $k > 3$, i.e., $(-\infty, -2) \cup (3, \infty)$.
+Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
 </details>
 
-7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$, and
+7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And
 $x > 0$.
 <details>
 <summary>Answer</summary>
@@ -527,8 +527,8 @@ Solution: $[1, 4]$.
 </details>
 
 8. **Question:** A ball is thrown upward from a height of $2$ m with an initial velocity of $20$
-m/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what
-time interval is the ball at a height greater than $17$ m?
+M/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what
+Time interval is the ball at a height greater than $17$ m?
 <details>
 <summary>Answer</summary>
 We need $h(t) > 17$:
@@ -544,7 +544,7 @@ $$
 Divide by $-5$ (reverse inequality):
 
 $$
-t^2 - 4t + 3 < 0
+T^2 - 4t + 3 < 0
 $$
 
 Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
@@ -560,13 +560,13 @@ First note that $x \neq 1$ (the denominator cannot be zero).
 
 Factorize the numerator: $\dfrac{(x-2)(x+2)}{x-1} \geq 0$.
 
-Critical points: $x = -2$, $x = 1$, $x = 2$.
+Critical points: $x = -2$$x = 1$$x = 2$.
 
 Sign diagram:
 
 $$
 \begin{array}{c|cccc}
-x & (-\infty, -2) & (-2, 1) & (1, 2) & (2, \infty) \\
+X & (-\infty, -2) & (-2, 1) & (1, 2) & (2, \infty) \\
 \hline
 (x-2) & - & - & - & + \\
 (x+2) & - & + & + & + \\
@@ -579,7 +579,7 @@ $$
 The expression is $\geq 0$ when $-2 \leq x < 1$ or $x \geq 2$.
 
 (Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is
-included.)
+Included.)
 
 Solution: $[-2, 1) \cup [2, \infty)$.
 
@@ -596,13 +596,13 @@ Split into two inequalities:
 
 **Left inequality:** $x^2 - 3x + 1 > -3 \implies x^2 - 3x + 4 > 0$.
 
-Discriminant: $\Delta = 9 - 16 = -7 < 0$. Since $a = 1 > 0$, this is always true.
+Discriminant: $\Delta = 9 - 16 = -7 < 0$. Since $a = 1 > 0$This is always true.
 
 **Right inequality:** $x^2 - 3x + 1 < 3 \implies x^2 - 3x - 2 < 0$.
 
 Roots: $x = \dfrac{3 \pm \sqrt{9 + 8}}{2} = \dfrac{3 \pm \sqrt{17}}{2}$.
 
-Since $a = 1 > 0$, the expression is negative between the roots:
+Since $a = 1 > 0$The expression is negative between the roots:
 
 $$
 \frac{3 - \sqrt{17}}{2} < x < \frac{3 + \sqrt{17}}{2}
@@ -649,7 +649,7 @@ Solve $\dfrac{x^2 - 3x + 2}{x + 1} \leq 0$.
 
 Factor: $\dfrac{(x - 1)(x + 2)}{x + 1} \leq 0$.
 
-Critical points: $x = -2$, $x = -1$, $x = 1$. Note $x \neq -1$.
+Critical points: $x = -2$$x = -1$$x = 1$. Note $x \neq -1$.
 
 | Interval | $(-\infty, -2)$ | $(-2, -1)$ | $(-1, 1)$ | $(1, \infty)$ |
 |---|---|---|---|---|
@@ -671,7 +671,7 @@ For inequality problems in DSE Paper 1:
 
 1. When solving quadratic inequalities, always find the roots and sketch the parabola or draw a sign chart.
 2. When multiplying or dividing by a negative, explicitly state that the inequality sign reverses.
-3. For rational inequalities, clearly identify points where the denominator is zero and exclude them.
+3. For rational inequalities, identify points where the denominator is zero and exclude them.
 4. For system of inequalities, draw each solution on a number line and identify the intersection.
 
 ### Significant Figures
@@ -699,7 +699,7 @@ Solve $|x^2 - 4x + 3| < 3x - 5$.
 
 The RHS must be positive: $3x - 5 > 0 \implies x > \dfrac{5}{3}$.
 
-Case 1: $x^2 - 4x + 3 \geq 0$, i.e., $(x-1)(x-3) \geq 0 \implies x \leq 1$ or $x \geq 3$.
+Case 1: $x^2 - 4x + 3 \geq 0$I.e., $(x-1)(x-3) \geq 0 \implies x \leq 1$ or $x \geq 3$.
 
 Combined with $x > \dfrac{5}{3}$: $x \geq 3$.
 
@@ -711,7 +711,7 @@ $\dfrac{7 - \sqrt{17}}{2} \approx 1.44$ and $\dfrac{7 + \sqrt{17}}{2} \approx 5.
 
 Intersection with $x \geq 3$: $3 \leq x < \dfrac{7 + \sqrt{17}}{2}$.
 
-Case 2: $x^2 - 4x + 3 < 0$, i.e., $1 < x < 3$.
+Case 2: $x^2 - 4x + 3 < 0$I.e., $1 < x < 3$.
 
 Combined with $x > \dfrac{5}{3}$: $\dfrac{5}{3} < x < 3$.
 
@@ -732,9 +732,9 @@ Find the range of $m$ such that $mx^2 + (m - 1)x + m > 0$ for all real $x$.
 <details>
 <summary>Solution</summary>
 
-Case 1: $m = 0$. The inequality becomes $-x > 0 \implies x < 0$, which is not true for all real $x$. Reject.
+Case 1: $m = 0$. The inequality becomes $-x > 0 \implies x < 0$Which is not true for all real $x$. Reject.
 
-Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$, we need $m > 0$ and $\Delta < 0$:
+Case 2: $m \neq 0$. For $mx^2 + (m-1)x + m > 0$ for all real $x$We need $m > 0$ and $\Delta < 0$:
 
 $$\Delta = (m - 1)^2 - 4m^2 = m^2 - 2m + 1 - 4m^2 = -3m^2 - 2m + 1 < 0$$
 
@@ -746,7 +746,7 @@ Combined with $m > 0$: $m > \dfrac{1}{3}$.
 
 **Worked Example: System with three inequalities**
 
-Solve the system: $x^2 - 2x - 15 \leq 0$, $|x - 1| \leq 4$, $x > 0$.
+Solve the system: $x^2 - 2x - 15 \leq 0$$|x - 1| \leq 4$$x > 0$.
 
 <details>
 <summary>Solution</summary>
@@ -819,11 +819,11 @@ Solution: $x < \dfrac{2}{3}$ or $x > 4$.
 
 Let $t = |x| \geq 0$: $t^2 - 2t - 8 < 0 \implies (t - 4)(t + 2) < 0 \implies -2 < t < 4$.
 
-Since $t \geq 0$: $0 \leq t < 4$, i.e., $|x| < 4 \implies -4 < x < 4$.
+Since $t \geq 0$: $0 \leq t < 4$I.e., $|x| < 4 \implies -4 < x < 4$.
 
 </details>
 
-**DSE Practice 5.** Given that $x^2 + 2(k + 1)x + 9 > 0$ for all real $x$, find the range of $k$.
+**DSE Practice 5.** Given that $x^2 + 2(k + 1)x + 9 > 0$ for all real $x$Find the range of $k$.
 
 <details>
 <summary>Solution</summary>
@@ -839,12 +839,20 @@ $\Delta < 0$: $4(k + 1)^2 - 36 < 0 \implies (k + 1)^2 < 9 \implies -3 < k + 1 < 
 
 $$\frac{x^2 - x - 6}{x^2 - 4} = \frac{(x - 3)(x + 2)}{(x - 2)(x + 2)} = \frac{x - 3}{x - 2}$$
 
-for $x \neq -2$.
+For $x \neq -2$.
 
 $\dfrac{x - 3}{x - 2} \leq 0$: $2 < x \leq 3$.
 
-But $x \neq -2$, which is not in $[2, 3]$ anyway.
+But $x \neq -2$Which is not in $[2, 3]$ anyway.
 
 Solution: $(2, 3]$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

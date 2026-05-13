@@ -12,23 +12,23 @@ Z_{\mathrm{eff}} = Z - S
 $$
 
 $Z_{\mathrm{eff}}$ increases across a period (shielding increases slowly, $Z$ increases by 1 per
-element) and changes only slightly down a group (new shells increase shielding proportionally).
+Element) and changes only slightly down a group (new shells increase shielding proportionally).
 
 ### Summary of Trends
 
-| Property           | Across a period | Down a group  |
+| Property | Across a period | Down a group |
 | ------------------ | --------------- | ------------- |
-| Atomic radius      | Decreases       | Increases     |
-| Ionic radius       | Decreases       | Increases     |
-| Ionization energy  | Increases       | Decreases     |
-| Electron affinity  | More negative   | Less negative |
-| Electronegativity  | Increases       | Decreases     |
-| Metallic character | Decreases       | Increases     |
+| Atomic radius | Decreases | Increases |
+| Ionic radius | Decreases | Increases |
+| Ionization energy | Increases | Decreases |
+| Electron affinity | More negative | Less negative |
+| Electronegativity | Increases | Decreases |
+| Metallic character | Decreases | Increases |
 
 ### Common Pitfalls
 
 - Noble gas atomic radii (van der Waals) are significantly larger than covalent radii of adjacent
-  halogens.
+ halogens.
 - The $d$-block contraction causes period 5 and 6 elements to have similar radii.
 
 ---
@@ -37,13 +37,13 @@ element) and changes only slightly down a group (new shells increase shielding p
 
 ### Physical Properties
 
-| Property      | Trend down the group            |
+| Property | Trend down the group |
 | ------------- | ------------------------------- |
-| Melting point | Decreases                       |
-| Boiling point | Decreases                       |
-| Density       | Generally increases (K anomaly) |
-| Atomic radius | Increases                       |
-| Hardness      | Decreases (softer)              |
+| Melting point | Decreases |
+| Boiling point | Decreases |
+| Density | Generally increases (K anomaly) |
+| Atomic radius | Increases |
+| Hardness | Decreases (softer) |
 
 ### Chemical Properties
 
@@ -57,33 +57,33 @@ $$
 
 Reactivity increases down the group as $IE_1$ decreases.
 
-| Metal  | Observation                      |
+| Metal | Observation |
 | ------ | -------------------------------- |
-| Li     | Fizzes steadily                  |
-| Na     | Melts into a ball, rapid fizzing |
-| K      | Ignites with lilac flame         |
-| Rb, Cs | Explosive                        |
+| Li | Fizzes steadily |
+| Na | Melts into a ball, rapid fizzing |
+| K | Ignites with lilac flame |
+| Rb, Cs | Explosive |
 
 #### Oxides
 
-| Metal  | Limited O$_2$              | Excess O$_2$                           |
+| Metal | Limited O$_2$ | Excess O$_2$ |
 | ------ | -------------------------- | -------------------------------------- |
-| Li     | $\mathrm{Li}_2\mathrm{O}$  | $\mathrm{Li}_2\mathrm{O}$              |
-| Na     | $\mathrm{Na}_2\mathrm{O}$  | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
-| K      | $\mathrm{K}_2\mathrm{O}_2$ | $\mathrm{KO}_2$ (superoxide)           |
-| Rb, Cs | Superoxides                | Superoxides                            |
+| Li | $\mathrm{Li}_2\mathrm{O}$ | $\mathrm{Li}_2\mathrm{O}$ |
+| Na | $\mathrm{Na}_2\mathrm{O}$ | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
+| K | $\mathrm{K}_2\mathrm{O}_2$ | $\mathrm{KO}_2$ (superoxide) |
+| Rb, Cs | Superoxides | Superoxides |
 
 The trend from oxide to peroxide to superoxide down the group reflects the decreasing charge density
-of the $\mathrm{M}^+$ ion, which stabilizes the larger anions ($\mathrm{O}_2^{2-}$,
+Of the $\mathrm{M}^+$ ion, which stabilizes the larger anions ($\mathrm{O}_2^{2-}$
 $\mathrm{O}_2^-$).
 
 #### Flame Tests
 
-| Ion             | Colour                            |
+| Ion | Colour |
 | --------------- | --------------------------------- |
-| $\mathrm{Li}^+$ | Crimson red                       |
-| $\mathrm{Na}^+$ | Yellow                            |
-| $\mathrm{K}^+$  | Lilac (view through cobalt glass) |
+| $\mathrm{Li}^+$ | Crimson red |
+| $\mathrm{Na}^+$ | Yellow |
+| $\mathrm{K}^+$ | Lilac (view through cobalt glass) |
 
 ---
 
@@ -91,15 +91,15 @@ $\mathrm{O}_2^-$).
 
 ### Physical Properties
 
-| Property      | Trend down the group |
+| Property | Trend down the group |
 | ------------- | -------------------- |
-| Melting point | Generally decreases  |
-| Boiling point | Generally decreases  |
-| Density       | Increases            |
-| Atomic radius | Increases            |
+| Melting point | Generally decreases |
+| Boiling point | Generally decreases |
+| Density | Increases |
+| Atomic radius | Increases |
 
 Group 2 metals are harder and have higher melting points than Group 1 metals due to the release of
-two delocalised electrons per atom, producing stronger metallic bonding.
+Two delocalised electrons per atom, producing stronger metallic bonding.
 
 ### Chemical Properties
 
@@ -108,7 +108,7 @@ Outer configuration: $ns^2$. They lose two electrons to form $\mathrm{M}^{2+}$ i
 #### Reactivity with Water
 
 Reactivity increases down the group. Beryllium does not react with water. Magnesium reacts slowly
-with steam. Calcium, strontium, and barium react with cold water.
+With steam. Calcium, strontium, and barium react with cold water.
 
 $$
 \mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{M(OH)}_2(aq) + \mathrm{H}_2(g)
@@ -129,21 +129,21 @@ $$
 $$
 
 Thermal stability increases down the group. This is because the larger $\mathrm{M}^{2+}$ ion has
-lower polarising power, distorting the carbonate/nitrate ion less and making it harder to decompose.
+Lower polarising power, distorting the carbonate/nitrate ion less and making it harder to decompose.
 
-| Compound          | Ease of decomposition (decreasing) |
+| Compound | Ease of decomposition (decreasing) |
 | ----------------- | ---------------------------------- |
-| $\mathrm{MgCO}_3$ | Decomposes at low temperature      |
-| $\mathrm{CaCO}_3$ | Decomposes at high temperature     |
-| $\mathrm{BaCO}_3$ | Very stable, requires strong heat  |
+| $\mathrm{MgCO}_3$ | Decomposes at low temperature |
+| $\mathrm{CaCO}_3$ | Decomposes at high temperature |
+| $\mathrm{BaCO}_3$ | Very stable, requires strong heat |
 
 ### Solubility Trends
 
-| Species    | Trend down the group |
+| Species | Trend down the group |
 | ---------- | -------------------- |
 | Hydroxides | Solubility increases |
-| Sulfates   | Solubility decreases |
-| Carbonates | Generally insoluble  |
+| Sulfates | Solubility decreases |
+| Carbonates | Generally insoluble |
 
 $$
 \mathrm{BaSO}_4 \mathrm{ is very insoluble — used in barium meals (X-ray contrast).}
@@ -151,12 +151,12 @@ $$
 
 ### Uses
 
-| Compound                                        | Use                          |
+| Compound | Use |
 | ----------------------------------------------- | ---------------------------- |
-| $\mathrm{Mg(OH)}_2$                             | Antacids, laxatives          |
-| $\mathrm{CaCO}_3$                               | Limestone, cement, antacids  |
-| $\mathrm{CaSO}_4 \cdot 2\mathrm{H}_2\mathrm{O}$ | Plaster of Paris             |
-| $\mathrm{BaSO}_4$                               | Barium meals (radiocontrast) |
+| $\mathrm{Mg(OH)}_2$ | Antacids, laxatives |
+| $\mathrm{CaCO}_3$ | Limestone, cement, antacids |
+| $\mathrm{CaSO}_4 \cdot 2\mathrm{H}_2\mathrm{O}$ | Plaster of Paris |
+| $\mathrm{BaSO}_4$ | Barium meals (radiocontrast) |
 
 ---
 
@@ -164,17 +164,17 @@ $$
 
 ### Physical Properties
 
-| Property      | Trend down the group                             |
+| Property | Trend down the group |
 | ------------- | ------------------------------------------------ |
-| Melting point | Increases                                        |
-| Boiling point | Increases                                        |
-| Atomic radius | Increases                                        |
-| State at RTP  | F$_2$, Cl$_2$ (gas); Br$_2$ (liq); I$_2$ (solid) |
+| Melting point | Increases |
+| Boiling point | Increases |
+| Atomic radius | Increases |
+| State at RTP | F$_2$Cl$_2$ (gas); Br$_2$ (liq); I$_2$ (solid) |
 
 ### Chemical Properties
 
 Outer configuration: $ns^2\, np^5$. Reactivity **decreases** down the group as atomic radius
-increases and electron affinity becomes less favourable.
+Increases and electron affinity becomes less favourable.
 
 #### Displacement Reactions
 
@@ -195,11 +195,11 @@ $\mathrm{Cl}^-$.
 
 Add dilute $\mathrm{HNO}_3$ first (to remove carbonate/hydroxide), then $\mathrm{AgNO}_3$:
 
-| Halide          | Precipitate colour      | Solubility in $\mathrm{NH}_3$(aq)          |
+| Halide | Precipitate colour | Solubility in $\mathrm{NH}_3$(aq) |
 | --------------- | ----------------------- | ------------------------------------------ |
-| $\mathrm{Cl}^-$ | White ($\mathrm{AgCl}$) | Soluble in dilute $\mathrm{NH}_3$          |
+| $\mathrm{Cl}^-$ | White ($\mathrm{AgCl}$) | Soluble in dilute $\mathrm{NH}_3$ |
 | $\mathrm{Br}^-$ | Cream ($\mathrm{AgBr}$) | Partially soluble in conc. $\mathrm{NH}_3$ |
-| $\mathrm{I}^-$  | Yellow ($\mathrm{AgI}$) | Insoluble                                  |
+| $\mathrm{I}^-$ | Yellow ($\mathrm{AgI}$) | Insoluble |
 
 ---
 
@@ -207,26 +207,26 @@ Add dilute $\mathrm{HNO}_3$ first (to remove carbonate/hydroxide), then $\mathrm
 
 ### Physical Trends Across Period 3
 
-| Element       | Na       | Mg       | Al       | Si                             | P                 | S                 | Cl                 | Ar        |
+| Element | Na | Mg | Al | Si | P | S | Cl | Ar |
 | ------------- | -------- | -------- | -------- | ------------------------------ | ----------------- | ----------------- | ------------------ | --------- |
-| Structure     | Metallic | Metallic | Metallic | Giant covalent                 | Molecular (P$_4$) | Molecular (S$_8$) | Molecular (Cl$_2$) | Monatomic |
-| Melting point | Low      | Higher   | Higher   | High ($1414\degree\mathrm{C}$) | Low               | Low               | Low                | Very low  |
-| Conductivity  | Good     | Good     | Good     | Poor (semiconductor)           | Poor              | Poor              | Poor               | Poor      |
+| Structure | Metallic | Metallic | Metallic | Giant covalent | Molecular (P$_4$) | Molecular (S$_8$) | Molecular (Cl$_2$) | Monatomic |
+| Melting point | Low | Higher | Higher | High ($1414\degree\mathrm{C}$) | Low | Low | Low | Very low |
+| Conductivity | Good | Good | Good | Poor (semiconductor) | Poor | Poor | Poor | Poor |
 
 The melting point peaks at silicon (giant covalent network) and drops sharply at phosphorus (simple
-molecular).
+Molecular).
 
 ### Oxides of Period 3
 
-| Element | Oxide                         | Structure      | Acid/Base  | pH of solution  |
+| Element | Oxide | Structure | Acid/Base | pH of solution |
 | ------- | ----------------------------- | -------------- | ---------- | --------------- |
-| Na      | $\mathrm{Na}_2\mathrm{O}$     | Ionic          | Basic      | $\gt 7$         |
-| Mg      | $\mathrm{MgO}$                | Ionic          | Basic      | $\gt 7$         |
-| Al      | $\mathrm{Al}_2\mathrm{O}_3$   | Ionic/covalent | Amphoteric | $7$             |
-| Si      | $\mathrm{SiO}_2$              | Giant covalent | Acidic     | Insoluble       |
-| P       | $\mathrm{P}_4\mathrm{O}_{10}$ | Molecular      | Acidic     | $1$--$2$        |
-| S       | $\mathrm{SO}_3$               | Molecular      | Acidic     | $0$--$1$        |
-| Cl      | $\mathrm{Cl}_2\mathrm{O}_7$   | Molecular      | Acidic     | Strongly acidic |
+| Na | $\mathrm{Na}_2\mathrm{O}$ | Ionic | Basic | $\gt 7$ |
+| Mg | $\mathrm{MgO}$ | Ionic | Basic | $\gt 7$ |
+| Al | $\mathrm{Al}_2\mathrm{O}_3$ | Ionic/covalent | Amphoteric | $7$ |
+| Si | $\mathrm{SiO}_2$ | Giant covalent | Acidic | Insoluble |
+| P | $\mathrm{P}_4\mathrm{O}_{10}$ | Molecular | Acidic | $1$--$2$ |
+| S | $\mathrm{SO}_3$ | Molecular | Acidic | $0$--$1$ |
+| Cl | $\mathrm{Cl}_2\mathrm{O}_7$ | Molecular | Acidic | Strongly acidic |
 
 **Trend**: Oxides become more acidic across the period.
 
@@ -244,30 +244,30 @@ $$
 
 ### Highest Oxidation States of Period 3
 
-| Element | Highest oxidation state | Oxide                         |
+| Element | Highest oxidation state | Oxide |
 | ------- | ----------------------- | ----------------------------- |
-| Na      | $+1$                    | $\mathrm{Na}_2\mathrm{O}$     |
-| Mg      | $+2$                    | $\mathrm{MgO}$                |
-| Al      | $+3$                    | $\mathrm{Al}_2\mathrm{O}_3$   |
-| Si      | $+4$                    | $\mathrm{SiO}_2$              |
-| P       | $+5$                    | $\mathrm{P}_4\mathrm{O}_{10}$ |
-| S       | $+6$                    | $\mathrm{SO}_3$               |
-| Cl      | $+7$                    | $\mathrm{Cl}_2\mathrm{O}_7$   |
+| Na | $+1$ | $\mathrm{Na}_2\mathrm{O}$ |
+| Mg | $+2$ | $\mathrm{MgO}$ |
+| Al | $+3$ | $\mathrm{Al}_2\mathrm{O}_3$ |
+| Si | $+4$ | $\mathrm{SiO}_2$ |
+| P | $+5$ | $\mathrm{P}_4\mathrm{O}_{10}$ |
+| S | $+6$ | $\mathrm{SO}_3$ |
+| Cl | $+7$ | $\mathrm{Cl}_2\mathrm{O}_7$ |
 
 The trend of increasing highest oxidation state across the period reflects the increasing number of
-valence electrons available for bonding.
+Valence electrons available for bonding.
 
 ### Chlorides of Period 3
 
-| Element | Chloride                                   | Bonding          | Reaction with water                                                                           |
+| Element | Chloride | Bonding | Reaction with water |
 | ------- | ------------------------------------------ | ---------------- | --------------------------------------------------------------------------------------------- |
-| Na      | $\mathrm{NaCl}$                            | Ionic            | Dissolves, neutral                                                                            |
-| Mg      | $\mathrm{MgCl}_2$                          | Ionic            | Dissolves, slightly acidic                                                                    |
-| Al      | $\mathrm{AlCl}_3$                          | Covalent (layer) | Hydrolyses: $\mathrm{AlCl}_3 + 3\mathrm{H}_2\mathrm{O} \to \mathrm{Al(OH)}_3 + 3\mathrm{HCl}$ |
-| Si      | $\mathrm{SiCl}_4$                          | Covalent (mol.)  | Hydrolyses: $\mathrm{SiCl}_4 + 2\mathrm{H}_2\mathrm{O} \to \mathrm{SiO}_2 + 4\mathrm{HCl}$    |
-| P       | $\mathrm{PCl}_3/\mathrm{PCl}_5$            | Covalent         | Hydrolyses violently                                                                          |
-| S       | $\mathrm{SCl}_2/\mathrm{S}_2\mathrm{Cl}_2$ | Covalent         | Hydrolyses                                                                                    |
-| Cl      | —                                          | —                | N/A                                                                                           |
+| Na | $\mathrm{NaCl}$ | Ionic | Dissolves, neutral |
+| Mg | $\mathrm{MgCl}_2$ | Ionic | Dissolves, slightly acidic |
+| Al | $\mathrm{AlCl}_3$ | Covalent (layer) | Hydrolyses: $\mathrm{AlCl}_3 + 3\mathrm{H}_2\mathrm{O} \to \mathrm{Al(OH)}_3 + 3\mathrm{HCl}$ |
+| Si | $\mathrm{SiCl}_4$ | Covalent (mol.) | Hydrolyses: $\mathrm{SiCl}_4 + 2\mathrm{H}_2\mathrm{O} \to \mathrm{SiO}_2 + 4\mathrm{HCl}$ |
+| P | $\mathrm{PCl}_3/\mathrm{PCl}_5$ | Covalent | Hydrolyses violently |
+| S | $\mathrm{SCl}_2/\mathrm{S}_2\mathrm{Cl}_2$ | Covalent | Hydrolyses |
+| Cl | — | — | N/A |
 
 ---
 
@@ -276,22 +276,22 @@ valence electrons available for bonding.
 ### Definition
 
 A **transition metal** has a partially filled $d$-subshell in its atom **or** in any of its common
-oxidation states.
+Oxidation states.
 
-By this definition, $\mathrm{Sc}$ (always $\mathrm{Sc}^{3+}$, $d^0$) and $\mathrm{Zn}$ (always
-$\mathrm{Zn}^{2+}$, $d^{10}$) are **not** transition metals.
+By this definition, $\mathrm{Sc}$ (always $\mathrm{Sc}^{3+}$$d^0$) and $\mathrm{Zn}$ (always
+$\mathrm{Zn}^{2+}$$d^{10}$) are **not** transition metals.
 
 ### Variable Oxidation States
 
 | Element | Common oxidation states |
 | ------- | ----------------------- |
-| Ti      | $+2, +3, +4$            |
-| V       | $+2, +3, +4, +5$        |
-| Cr      | $+2, +3, +6$            |
-| Mn      | $+2, +3, +4, +6, +7$    |
-| Fe      | $+2, +3$                |
-| Co      | $+2, +3$                |
-| Cu      | $+1, +2$                |
+| Ti | $+2, +3, +4$ |
+| V | $+2, +3, +4, +5$ |
+| Cr | $+2, +3, +6$ |
+| Mn | $+2, +3, +4, +6, +7$ |
+| Fe | $+2, +3$ |
+| Co | $+2, +3$ |
+| Cu | $+1, +2$ |
 
 The maximum oxidation state increases across the period to $\mathrm{Mn}$ ($+7$), then decreases.
 
@@ -303,11 +303,11 @@ $$
 [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}, \quad [\mathrm{Ag}(\mathrm{NH}_3)_2]^+, \quad [\mathrm{Fe}(\mathrm{CN})_6]^{3-}
 $$
 
-| Ligand type | Examples                                                   | Denticity |
+| Ligand type | Examples | Denticity |
 | ----------- | ---------------------------------------------------------- | --------- |
-| Monodentate | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$ | $1$       |
-| Bidentate   | en, oxalate                                                | $2$       |
-| Hexadentate | EDTA                                                       | $6$       |
+| Monodentate | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$ | $1$ |
+| Bidentate | en, oxalate | $2$ |
+| Hexadentate | EDTA | $6$ |
 
 ### Colour
 
@@ -327,12 +327,12 @@ $$
 ### Catalytic Properties
 
 Transition metals are effective catalysts because of variable oxidation states and the ability to
-form intermediate complexes.
+Form intermediate complexes.
 
-| Type          | Example                                              |
+| Type | Example |
 | ------------- | ---------------------------------------------------- |
 | Heterogeneous | Fe (Haber), V$_2$O$_5$ (Contact), Ni (hydrogenation) |
-| Homogeneous   | $\mathrm{Fe}^{2+}/\mathrm{Fe}^{3+}$ (Fenton)         |
+| Homogeneous | $\mathrm{Fe}^{2+}/\mathrm{Fe}^{3+}$ (Fenton) |
 
 ### Magnetic Properties
 
@@ -351,9 +351,9 @@ Explain why the thermal decomposition temperature of Group 2 carbonates increase
 **Solution:**
 
 As the size of the $\mathrm{M}^{2+}$ ion increases down the group, its charge density decreases. The
-larger cation has lower polarising power, meaning it distorts the electron cloud of the
+Larger cation has lower polarising power, meaning it distorts the electron cloud of the
 $\mathrm{CO}_3^{2-}$ anion less. A less distorted carbonate ion is more stable and requires more
-thermal energy to decompose into $\mathrm{MO}$ and $\mathrm{CO}_2$.
+Thermal energy to decompose into $\mathrm{MO}$ and $\mathrm{CO}_2$.
 
 </details>
 
@@ -365,10 +365,10 @@ Explain why $\mathrm{Al}_2\mathrm{O}_3$ is amphoteric but $\mathrm{MgO}$ is basi
 **Solution:**
 
 $\mathrm{Al}^{3+}$ has a high charge density (small ion, $+3$ charge), which polarises the O--H
-bonds in water molecules coordinated to it, facilitating proton release. This gives aluminium oxide
-acidic character in addition to its basic character. $\mathrm{Mg}^{2+}$ has a lower charge density,
-so it acts only as a Lewis acid in accepting oxide ions but does not polarise water sufficiently to
-release protons. Therefore $\mathrm{MgO}$ is purely basic.
+Bonds in water molecules coordinated to it, facilitating proton release. This gives aluminium oxide
+Acidic character in addition to its basic character. $\mathrm{Mg}^{2+}$ has a lower charge density,
+So it acts only as a Lewis acid in accepting oxide ions but does not polarise water sufficiently to
+Release protons. Therefore $\mathrm{MgO}$ is purely basic.
 
 </details>
 
@@ -376,17 +376,17 @@ release protons. Therefore $\mathrm{MgO}$ is purely basic.
 <summary>Problem 3</summary>
 
 Predict and explain the trend in solubility of Group 2 sulfates down the group. Which Group 2
-sulfate is the least soluble?
+Sulfate is the least soluble?
 
 **Solution:**
 
 Solubility of Group 2 sulfates **decreases** down the group. The hydration enthalpy (energy released
-when ions are hydrated) decreases more rapidly than the lattice energy as the cation size increases.
+When ions are hydrated) decreases more rapidly than the lattice energy as the cation size increases.
 Since the lattice energy does not decrease as fast, the enthalpy of solution becomes less favourable
 (less negative or more positive) down the group.
 
 $\mathrm{BaSO}_4$ is the least soluble. This is exploited in barium meal X-ray procedures and in
-gravimetric determination of sulfate.
+Gravimetric determination of sulfate.
 
 </details>
 
@@ -394,17 +394,17 @@ gravimetric determination of sulfate.
 <summary>Problem 4</summary>
 
 Explain why $\mathrm{TiCl}_4$ is a liquid at room temperature while $\mathrm{TiO}_2$ is a solid with
-a very high melting point ($1843\degree\mathrm{C}$).
+A very high melting point ($1843\degree\mathrm{C}$).
 
 **Solution:**
 
 $\mathrm{TiCl}_4$ is a simple molecular (covalent) compound with weak London dispersion forces
-between molecules, so it is a liquid at room temperature (bp $136\degree\mathrm{C}$).
+Between molecules, so it is a liquid at room temperature (bp $136\degree\mathrm{C}$).
 
 $\mathrm{TiO}_2$ has a giant ionic lattice structure. The strong electrostatic forces between
 $\mathrm{Ti}^{4+}$ and $\mathrm{O}^{2-}$ ions require a large amount of energy to overcome,
-resulting in a very high melting point. The high charges on both ions ($+4$ and $-2$) produce a
-particularly large lattice energy.
+Resulting in a very high melting point. The high charges on both ions ($+4$ and $-2$) produce a
+Particularly large lattice energy.
 
 </details>
 
@@ -419,7 +419,7 @@ Is scandium a transition metal? Justify using the IB definition.
 <details>
 <summary>Solution</summary>
 
-The IB defines a transition metal as an element with a partially filled $d$-subshell in the atom or any common oxidation state. Scandium has the electron configuration $[\mathrm{Ar}]\,3d^1\,4s^2$, so its atom has a partially filled $d$-subshell. However, its only common oxidation state is $\mathrm{Sc}^{3+}$ with configuration $[\mathrm{Ar}]\,3d^0$ — an empty $d$-subshell. Since no common ion of scandium has a partially filled $d$-subshell, scandium is **not** classified as a transition metal under the IB definition.
+The IB defines a transition metal as an element with a partially filled $d$-subshell in the atom or any common oxidation state. Scandium has the electron configuration $[\mathrm{Ar}]\,3d^1\,4s^2$So its atom has a partially filled $d$-subshell. However, its only common oxidation state is $\mathrm{Sc}^{3+}$ with configuration $[\mathrm{Ar}]\,3d^0$ — an empty $d$-subshell. Since no common ion of scandium has a partially filled $d$-subshell, scandium is **not** classified as a transition metal under the IB definition.
 
 </details>
 
@@ -467,7 +467,7 @@ $$
 \mathrm{Na}_2\mathrm{O}(s) + \mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{NaOH}(aq)
 $$
 
-Since $\mathrm{NaOH}$ is a strong base, the solution pH is well above 7 (typically 12--14 depending on concentration).
+Since $\mathrm{NaOH}$ is a strong base, the solution pH is well above 7 ( 12--14 depending on concentration).
 
 $\mathrm{P}_4\mathrm{O}_{10}$ is a covalent, acidic oxide. It reacts with water to form phosphoric acid:
 
@@ -481,14 +481,14 @@ Phosphoric acid is a weak acid, giving a pH in the range 1--2 for a moderately c
 
 **Worked Example: Thermal Decomposition Ranking**
 
-Arrange the following in order of increasing thermal decomposition temperature, and explain: $\mathrm{Na}_2\mathrm{CO}_3$, $\mathrm{MgCO}_3$, $\mathrm{CaCO}_3$.
+Arrange the following in order of increasing thermal decomposition temperature, and explain: $\mathrm{Na}_2\mathrm{CO}_3$$\mathrm{MgCO}_3$$\mathrm{CaCO}_3$.
 
 <details>
 <summary>Solution</summary>
 
 Order: $\mathrm{Na}_2\mathrm{CO}_3$ $\lt$ $\mathrm{MgCO}_3$ $\lt$ $\mathrm{CaCO}_3$
 
-The thermal stability of carbonates depends on the polarising power of the cation. $\mathrm{Na}^+$ is a large, singly charged ion with very low charge density — it barely distorts the $\mathrm{CO}_3^{2-}$ ion, so $\mathrm{Na}_2\mathrm{CO}_3$ does not decompose on heating (it melts at $851\degree\mathrm{C}$ without decomposition). $\mathrm{Mg}^{2+}$ has the highest charge density among these three (small radius, $+2$ charge), so it most effectively polarises the carbonate ion and destabilises it, giving the lowest decomposition temperature ($\approx 540\degree\mathrm{C}$). $\mathrm{Ca}^{2+}$ is larger than $\mathrm{Mg}^{2+}$, so it has lower polarising power, making $\mathrm{CaCO}_3$ more thermally stable ($\approx 840\degree\mathrm{C}$).
+The thermal stability of carbonates depends on the polarising power of the cation. $\mathrm{Na}^+$ is a large, singly charged ion with very low charge density — it barely distorts the $\mathrm{CO}_3^{2-}$ ion, so $\mathrm{Na}_2\mathrm{CO}_3$ does not decompose on heating (it melts at $851\degree\mathrm{C}$ without decomposition). $\mathrm{Mg}^{2+}$ has the highest charge density among these three (small radius, $+2$ charge), so it most effectively polarises the carbonate ion and destabilises it, giving the lowest decomposition temperature ($\approx 540\degree\mathrm{C}$). $\mathrm{Ca}^{2+}$ is larger than $\mathrm{Mg}^{2+}$So it has lower polarising power, making $\mathrm{CaCO}_3$ more thermally stable ($\approx 840\degree\mathrm{C}$).
 
 </details>
 
@@ -501,7 +501,7 @@ Explain why $\mathrm{CuSO}_4 \cdot 5\mathrm{H}_2\mathrm{O}$ is blue, but anhydro
 
 The blue colour of hydrated copper(II) sulfate arises from the $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ complex ion. In the octahedral crystal field created by the six water ligands, the $d$-orbitals of the $\mathrm{Cu}^{2+}$ ion ($d^9$ configuration) split into two energy levels. When white light passes through the solution, photons of a specific wavelength (red-orange, $\approx 600$--$700\mathrm{ nm}$) are absorbed to promote electrons from the lower to the upper $d$-orbital set. The transmitted or reflected light is the complementary colour — blue.
 
-In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal field splitting occurs and no visible light is absorbed by $d$-$d$ transitions. The compound appears white.
+In anhydrous $\mathrm{CuSO}_4$No water ligands are present, so no crystal field splitting occurs and no visible light is absorbed by $d$-$d$ transitions. The compound appears white.
 
 </details>
 
@@ -513,11 +513,11 @@ In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal fiel
 
 - **Misidentifying transition metals:** $\mathrm{Sc}$ and $\mathrm{Zn}$ are not transition metals under the IB definition. The criterion is a partially filled $d$-subshell in a common oxidation state, not merely being in the $d$-block.
 
-- **Assuming all Group 2 carbonates decompose easily:** $\mathrm{Na}_2\mathrm{CO}_3$ and $\mathrm{K}_2\mathrm{CO}_3$ are Group 1 carbonates and are thermally stable — they do not decompose on heating. Group 2 carbonates do decompose, with decreasing ease down the group.
+- **Assuming all Group 2 carbonates decompose :** $\mathrm{Na}_2\mathrm{CO}_3$ and $\mathrm{K}_2\mathrm{CO}_3$ are Group 1 carbonates and are thermally stable — they do not decompose on heating. Group 2 carbonates do decompose, with decreasing ease down the group.
 
 - **Forgetting the oxide/peroxide/superoxide trend:** Students often assume all Group 1 metals form normal oxides ($\mathrm{M}_2\mathrm{O}$). In reality, heavier alkali metals form peroxides ($\mathrm{M}_2\mathrm{O}_2$) and superoxides ($\mathrm{MO}_2$) in excess oxygen due to the decreasing charge density of the $\mathrm{M}^+$ ion.
 
-- **Reversing the spectrochemical series:** The spectrochemical series ranks ligands by the magnitude of crystal field splitting ($\Delta$). $\mathrm{CN}^-$ produces a larger $\Delta$ than $\mathrm{H}_2\mathrm{O}$, not the other way around. A larger $\Delta$ means shorter-wavelength (higher-energy) light is absorbed.
+- **Reversing the spectrochemical series:** The spectrochemical series ranks ligands by the magnitude of crystal field splitting ($\Delta$). $\mathrm{CN}^-$ produces a larger $\Delta$ than $\mathrm{H}_2\mathrm{O}$Not the other way around. A larger $\Delta$ means shorter-wavelength (higher-energy) light is absorbed.
 
 - **Saying transition metals are coloured:** The metals themselves are not coloured; it is their **complex ions** that are coloured due to $d$-$d$ transitions. A $d^0$ or $d^{10}$ complex is colourless because there are no partially filled $d$-orbitals to allow such transitions.
 
@@ -527,7 +527,7 @@ In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal fiel
 
 1. **[Medium]** Explain why the first ionization energy of aluminium ($577\mathrm{ kJ/mol}$) is lower than that of magnesium ($738\mathrm{ kJ/mol}$), even though aluminium has a greater nuclear charge.
 
-2. **[Medium]** A student adds aqueous silver nitrate to three separate test tubes containing $\mathrm{NaCl}(aq)$, $\mathrm{NaBr}(aq)$, and $\mathrm{NaI}(aq)$. Describe the observations at each step, including what happens when dilute and concentrated ammonia are subsequently added.
+2. **[Medium]** A student adds aqueous silver nitrate to three separate test tubes containing $\mathrm{NaCl}(aq)$$\mathrm{NaBr}(aq)$And $\mathrm{NaI}(aq)$. Describe the observations at each step, including what happens when dilute and concentrated ammonia are subsequently added.
 
 3. **[Hard]** Write balanced equations for the reactions of sulfur dioxide with: (a) water, (b) sodium hydroxide solution (limited and excess), (c) oxygen in the presence of $\mathrm{V}_2\mathrm{O}_5$. State the role of $\mathrm{V}_2\mathrm{O}_5$ in reaction (c).
 
@@ -539,7 +539,7 @@ In anhydrous $\mathrm{CuSO}_4$, no water ligands are present, so no crystal fiel
 
 7. **[Medium]** State and explain the trend in reactivity of Group 17 elements with hydrogen. Include balanced equations for the reactions of fluorine, chlorine, and bromine with hydrogen, noting any conditions required.
 
-8. **[Hard]** EDTA ($\mathrm{C}_{10}\mathrm{H}_{16}\mathrm{N}_2\mathrm{O}_8$) forms a 1:1 complex with $\mathrm{Ca}^{2+}$. Calculate the mass of EDTA required to complex exactly $50.0\mathrm{ mg}$ of $\mathrm{Ca}^{2+}$ ions. ($M_r$ of EDTA $= 292\mathrm{ g/mol}$, $A_r$ of $\mathrm{Ca} = 40.1$)
+8. **[Hard]** EDTA ($\mathrm{C}_{10}\mathrm{H}_{16}\mathrm{N}_2\mathrm{O}_8$) forms a 1:1 complex with $\mathrm{Ca}^{2+}$. Calculate the mass of EDTA required to complex exactly $50.0\mathrm{ mg}$ of $\mathrm{Ca}^{2+}$ ions. ($M_r$ of EDTA $= 292\mathrm{ g/mol}$$A_r$ of $\mathrm{Ca} = 40.1$)
 
 ---
 
@@ -591,7 +591,7 @@ This is a specific example of a broader principle: half-filled and fully-filled 
 
 **Worked Example: Enthalpy of Solution and Hydration**
 
-The enthalpy of solution of $\mathrm{CaCl}_2$ is $-82.8\;\mathrm{kJ/mol}$. The lattice energy is $-2258\;\mathrm{kJ/mol}$. Calculate the total hydration enthalpy of $\mathrm{Ca}^{2+}$ and $2\mathrm{Cl}^-$. Given that the hydration enthalpy of $\mathrm{Cl}^-$ is $-363\;\mathrm{kJ/mol}$, determine the hydration enthalpy of $\mathrm{Ca}^{2+}$.
+The enthalpy of solution of $\mathrm{CaCl}_2$ is $-82.8\;\mathrm{kJ/mol}$. The lattice energy is $-2258\;\mathrm{kJ/mol}$. Calculate the total hydration enthalpy of $\mathrm{Ca}^{2+}$ and $2\mathrm{Cl}^-$. Given that the hydration enthalpy of $\mathrm{Cl}^-$ is $-363\;\mathrm{kJ/mol}$Determine the hydration enthalpy of $\mathrm{Ca}^{2+}$.
 
 <details>
 <summary>Solution</summary>
@@ -604,7 +604,7 @@ $$-82.8 = +2258 + \Delta H_\mathrm{hydration}$$
 
 $$\Delta H_\mathrm{hydration} = -82.8 - 2258 = -2341\;\mathrm{kJ/mol}$$
 
-The total hydration enthalpy is $-2341\;\mathrm{kJ/mol}$, which is the sum of the hydration enthalpies of all ions:
+The total hydration enthalpy is $-2341\;\mathrm{kJ/mol}$Which is the sum of the hydration enthalpies of all ions:
 
 $$\Delta H_\mathrm{hydration} = \Delta H_\mathrm{hyd}(\mathrm{Ca}^{2+}) + 2 \times \Delta H_\mathrm{hyd}(\mathrm{Cl}^-)$$
 
@@ -656,7 +656,7 @@ $$V(\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7) = \frac{n}{c} = \frac{4.17 \times 10^
 <details>
 <summary>Problem 9: Quantitative -- Comparing Lattice Energies</summary>
 
-Arrange the following ionic compounds in order of increasing lattice energy (most negative first): $\mathrm{NaF}$, $\mathrm{MgO}$, $\mathrm{NaCl}$, $\mathrm{MgCl}_2$, $\mathrm{Al}_2\mathrm{O}_3$. Justify your ordering using Coulomb's law: $U \propto \frac{z_+ z_-}{r_+ + r_-}$.
+Arrange the following ionic compounds in order of increasing lattice energy (most negative first): $\mathrm{NaF}$$\mathrm{MgO}$$\mathrm{NaCl}$$\mathrm{MgCl}_2$$\mathrm{Al}_2\mathrm{O}_3$. Justify your ordering using Coulomb's law: $U \propto \frac{z_+ z_-}{r_+ + r_-}$.
 
 </details>
 
@@ -670,7 +670,7 @@ The atomic radius of $\mathrm{Zr}$ ($160\;\mathrm{pm}$) is almost identical to t
 <details>
 <summary>Problem 11: Quantitative -- Halogen Displacement Equilibrium</summary>
 
-The equilibrium constant for the reaction $\mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \rightleftharpoons 2\mathrm{Cl}^-(aq) + \mathrm{Br}_2(aq)$ is $K = 4.0 \times 10^{11}$ at $298\;\mathrm{K}$. (a) Calculate $E_{\mathrm{cell}}^\circ$ for the reaction. (b) If $0.050\;\mathrm{mol}$ of $\mathrm{Cl}_2$ is bubbled into $1.0\;\mathrm{L}$ of $0.10\;\mathrm{M}$ $\mathrm{KBr}$, calculate the equilibrium concentration of $\mathrm{Br}_2$. ($E^\circ(\mathrm{Cl}_2/\mathrm{Cl}^-) = +1.36\;\mathrm{V}$, $E^\circ(\mathrm{Br}_2/\mathrm{Br}^-) = +1.09\;\mathrm{V}$)
+The equilibrium constant for the reaction $\mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \rightleftharpoons 2\mathrm{Cl}^-(aq) + \mathrm{Br}_2(aq)$ is $K = 4.0 \times 10^{11}$ at $298\;\mathrm{K}$. (a) Calculate $E_{\mathrm{cell}}^\circ$ for the reaction. (b) If $0.050\;\mathrm{mol}$ of $\mathrm{Cl}_2$ is bubbled into $1.0\;\mathrm{L}$ of $0.10\;\mathrm{M}$ $\mathrm{KBr}$Calculate the equilibrium concentration of $\mathrm{Br}_2$. ($E^\circ(\mathrm{Cl}_2/\mathrm{Cl}^-) = +1.36\;\mathrm{V}$$E^\circ(\mathrm{Br}_2/\mathrm{Br}^-) = +1.09\;\mathrm{V}$)
 
 </details>
 
@@ -684,7 +684,7 @@ The complex ion $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is pink and $[\ma
 <details>
 <summary>Problem 13: Quantitative -- Successive Ionisation Energies</summary>
 
-The first five ionisation energies of an element ($\mathrm{kJ/mol}$) are: $578$, $1817$, $2745$, $11577$, $14842$. (a) Identify the group of the element. (b) Write the electron configuration of the element. (c) The element is in Period 3. Identify it and explain the large jump between $IE_3$ and $IE_4$.
+The first five ionisation energies of an element ($\mathrm{kJ/mol}$) are: $578$$1817$$2745$$11577$$14842$. (a) Identify the group of the element. (b) Write the electron configuration of the element. (c) The element is in Period 3. Identify it and explain the large jump between $IE_3$ and $IE_4$.
 
 </details>
 
@@ -703,7 +703,7 @@ Both $\mathrm{Al}(\mathrm{OH})_3$ and $\mathrm{Zn}(\mathrm{OH})_2$ are amphoteri
 
 - **Reversing the polarising power trend**: Smaller, more highly charged cations have greater polarising power. $\mathrm{Be}^{2+}$ polarises more than $\mathrm{Ba}^{2+}$; $\mathrm{Al}^{3+}$ polarises more than $\mathrm{Na}^+$. This is why $\mathrm{BeCl}_2$ and $\mathrm{AlCl}_3$ have significant covalent character.
 
-- **Ignoring the disproportionation of chlorine in cold vs hot alkali**: In cold dilute $\mathrm{NaOH}$, chlorine disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}^-$. In hot concentrated $\mathrm{NaOH}$, it disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}_3^-$. The product depends on temperature.
+- **Ignoring the disproportionation of chlorine in cold vs hot alkali**: In cold dilute $\mathrm{NaOH}$Chlorine disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}^-$. In hot concentrated $\mathrm{NaOH}$It disproportionates to $\mathrm{Cl}^-$ and $\mathrm{ClO}_3^-$. The product depends on temperature.
 
 - **Stating that all Group 2 hydroxides are strong bases**: $\mathrm{Be}(\mathrm{OH})_2$ is amphoteric, not basic. The trend from basic to amphoteric applies from $\mathrm{Mg}$ upward, but $\mathrm{Be}$ is the exception due to its high charge density.
 
@@ -721,3 +721,6 @@ Both $\mathrm{Al}(\mathrm{OH})_3$ and $\mathrm{Zn}(\mathrm{OH})_2$ are amphoteri
 - **Oxidation states and redox reactions** → Review [./redox-advanced](./redox-advanced)
 - **Bonding and structure (ionic vs covalent)** → Review [./chemical-bonding-advanced](./chemical-bonding-advanced)
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

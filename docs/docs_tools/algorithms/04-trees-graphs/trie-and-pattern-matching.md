@@ -7,8 +7,8 @@ slug: trie-and-pattern-matching
 ## Trie (Prefix Tree)
 
 A trie is a tree data structure where each node represents a character of a string. The path from
-the root to any node spells out a prefix, and nodes marked as "end of word" represent complete
-strings in the set.
+The root to any node spells out a prefix, and nodes marked as "end of word" represent complete
+Strings in the set.
 
 ### Node Definition
 
@@ -125,28 +125,28 @@ graph TD
 
 ### Complexity Analysis
 
-| Operation     | Time        | Space                   |
+| Operation | Time | Space |
 | ------------- | ----------- | ----------------------- |
-| Insert        | $O(m)$      | $O(1)$ additional nodes |
-| Search        | $O(m)$      | $O(1)$                  |
-| Delete        | $O(m)$      | $O(1)$ freed nodes      |
-| StartsWith    | $O(m)$      | $O(1)$                  |
-| Prefix search | $O(m + kL)$ | $O(kL)$ for results     |
+| Insert | $O(m)$ | $O(1)$ additional nodes |
+| Search | $O(m)$ | $O(1)$ |
+| Delete | $O(m)$ | $O(1)$ freed nodes |
+| StartsWith | $O(m)$ | $O(1)$ |
+| Prefix search | $O(m + kL)$ | $O(kL)$ for results |
 
-where $m$ is the word length, $k$ is the number of results, and $L$ is the average result length.
+Where $m$ is the word length, $k$ is the number of results, and $L$ is the average result length.
 
 :::info
 
 A trie with $n$ keys of total length $L$ has at most $L + 1$ nodes. In the worst case (no shared
-prefixes), this is $\sum |word_i| + 1$. The space can be reduced using a radix tree (compressed
-trie) which merges chains of single-child nodes.
+Prefixes), this is $\sum |word_i| + 1$. The space can be reduced using a radix tree (compressed
+Trie) which merges chains of single-child nodes.
 
 :::
 
 ## Compressed Trie (Radix Tree / Patricia Trie)
 
 A compressed trie merges chains of nodes with only one child into single edges labelled with
-substrings. This reduces the number of nodes and eliminates unnecessary internal nodes.
+Substrings. This reduces the number of nodes and eliminates unnecessary internal nodes.
 
 ```python
 class RadixNode:
@@ -228,7 +228,7 @@ class RadixTrie:
 ## Suffix Trie
 
 A suffix trie of a string $S$ of length $n$ contains all suffixes of $S$. It has $O(n^2)$ nodes (in
-the worst case), which is too large for practical use.
+The worst case), which is too large for practical use.
 
 ### Construction
 
@@ -266,29 +266,29 @@ A suffix tree is a compressed suffix trie. It has at most $2n - 1$ nodes for a s
 
 ### Properties
 
-| Property                   | Value                             |
+| Property | Value |
 | -------------------------- | --------------------------------- |
-| Number of nodes            | $O(n)$                            |
-| Construction               | $O(n)$ (Ukkonen's algorithm)      |
-| Space                      | $O(n)$                            |
-| Substring search           | $O(m)$ where $m$ = pattern length |
-| Longest repeated substring | Find deepest internal node        |
-| Longest common substring   | Generalised suffix tree           |
+| Number of nodes | $O(n)$ |
+| Construction | $O(n)$ (Ukkonen's algorithm) |
+| Space | $O(n)$ |
+| Substring search | $O(m)$ where $m$ = pattern length |
+| Longest repeated substring | Find deepest internal node |
+| Longest common substring | Generalised suffix tree |
 
 ### Ukkonen's Algorithm (Conceptual)
 
 Ukkonen's algorithm builds the suffix tree in $O(n)$ time by processing the string left to right,
-one character at a time. It maintains an implicit suffix tree during construction and uses suffix
-links to efficiently extend all suffixes.
+One character at a time. It maintains an implicit suffix tree during construction and uses suffix
+Links to efficiently extend all suffixes.
 
 The key ideas:
 
 1. **Implicit suffix tree**: during construction, suffixes may end in the middle of an edge
 2. **Suffix links**: each internal node has a link to the node representing its longest proper
-   suffix
-3. **Rule 1 / Rule 2 extension**: when adding character $S[i]$, extend all suffixes. Rule 1 applies
-   when the extension is trivial (character already exists on the current edge); Rule 2 applies when
-   a new leaf must be created
+ suffix
+3. **Rule 1 / Rule 2 extension**: when adding character $S[i]$Extend all suffixes. Rule 1 applies
+ when the extension is trivial (character already exists on the current edge); Rule 2 applies when
+ a new leaf must be created
 
 ```python
 class SuffixTreeNode:
@@ -397,7 +397,7 @@ class SuffixTree:
 ## Suffix Array
 
 A suffix array `SA` of a string $S$ of length $n$ is a permutation of $\{0, 1, \ldots, n-1\}$ such
-that $S[SA[0]:] \lt S[SA[1]:] \lt \cdots \lt S[SA[n-1]:]$.
+That $S[SA[0]:] \lt S[SA[1]:] \lt \cdots \lt S[SA[n-1]:]$.
 
 ### Construction
 
@@ -434,7 +434,7 @@ def build_suffix_array(s):
 ### LCP Array
 
 The Longest Common Prefix (LCP) array stores the length of the longest common prefix between
-consecutive suffixes in the suffix array. `LCP[i] = lcp(S[SA[i]:], S[SA[i-1]:])`.
+Consecutive suffixes in the suffix array. `LCP[i] = lcp(S[SA[i]:], S[SA[i-1]:])`.
 
 ```python
 def build_lcp_array(s, sa):
@@ -504,20 +504,20 @@ def suffix_array_search(s, sa, pattern):
 :::tip
 
 For most practical purposes, suffix arrays are preferred over suffix trees because they use less
-memory (an array of integers vs a tree of objects) and are easier to implement. The LCP array
-enables efficient computation of longest common substrings and other string problems.
+Memory (an array of integers vs a tree of objects) and are easier to implement. The LCP array
+Enables efficient computation of longest common substrings and other string problems.
 
 :::
 
 ## Aho-Corasick Algorithm
 
 Aho-Corasick finds all occurrences of a set of patterns in a text simultaneously. It builds an
-automaton from a trie augmented with failure links.
+Automaton from a trie augmented with failure links.
 
 ### Failure Function
 
 The failure link of a node points to the longest proper suffix of the current path that is also a
-prefix of some pattern. This is analogous to the KMP failure function but for multiple patterns.
+Prefix of some pattern. This is analogous to the KMP failure function but for multiple patterns.
 
 ```python
 from collections import deque
@@ -588,12 +588,12 @@ class AhoCorasick:
 ## Knuth-Morris-Pratt (KMP)
 
 KMP is a single-pattern matching algorithm that achieves $O(n + m)$ time by preprocessing the
-pattern to compute a failure function.
+Pattern to compute a failure function.
 
 ### Failure Function
 
 The failure function `pi[i]` is the length of the longest proper prefix of `pattern[0:i+1]` that is
-also a suffix of `pattern[0:i+1]`.
+Also a suffix of `pattern[0:i+1]`.
 
 ```python
 def kmp_failure(pattern):
@@ -642,16 +642,16 @@ def kmp_search(text, pattern):
 
 ### Correctness Proof Sketch
 
-The key invariant: after processing `text[i]`, the variable `j` equals the length of the longest
-prefix of `pattern` that is a suffix of `text[0:i+1]`. When `j == m`, we have found a complete match
-ending at position `i`. The failure function ensures that we never backtrack in the text — each
-character of the text is examined at most once, giving $O(n)$ time for the search phase plus $O(m)$
-for preprocessing.
+The key invariant: after processing `text[i]`The variable `j` equals the length of the longest
+Prefix of `pattern` that is a suffix of `text[0:i+1]`. When `j == m`We have found a complete match
+Ending at position `i`. The failure function ensures that we never backtrack in the text — each
+Character of the text is examined at most once, giving $O(n)$ time for the search phase plus $O(m)$
+For preprocessing.
 
 ## Rabin-Karp Algorithm
 
 Rabin-Karp uses hashing to find pattern matches. It computes a rolling hash of the text and compares
-it with the hash of the pattern.
+It with the hash of the pattern.
 
 ### Rolling Hash
 
@@ -740,18 +740,18 @@ def rabin_karp_double_hash(text, pattern):
 ## Boyer-Moore Algorithm
 
 Boyer-Moore is often the fastest string matching algorithm in practice because it skips sections of
-the text that cannot possibly match.
+The text that cannot possibly match.
 
 ### Bad Character Rule
 
 When a mismatch occurs at position $j$ of the pattern with character $c$ in the text, shift the
-pattern so that the rightmost occurrence of $c$ in `pattern[0:j]` (if any) aligns with the text
-character.
+Pattern so that the rightmost occurrence of $c$ in `pattern[0:j]` (if any) aligns with the text
+Character.
 
 ### Good Suffix Rule
 
-When a mismatch occurs after a partial match of length $k$, shift the pattern so that the next
-occurrence of the suffix (or a prefix of it) aligns with the matched portion of the text.
+When a mismatch occurs after a partial match of length $k$Shift the pattern so that the next
+Occurrence of the suffix (or a prefix of it) aligns with the matched portion of the text.
 
 ```python
 def boyer_moore_search(text, pattern):
@@ -788,9 +788,9 @@ def boyer_moore_search(text, pattern):
 
 :::warning
 
-Boyer-Moore's worst case is $O(nm)$, which is worse than KMP. In practice, Boyer-Moore is sublinear
-on average (it examines fewer than $n$ characters of the text). For guaranteed $O(n)$ worst case,
-use the Boyer-Moore-Horspool variant or KMP.
+Boyer-Moore's worst case is $O(nm)$Which is worse than KMP. In practice, Boyer-Moore is sublinear
+On average (it examines fewer than $n$ characters of the text). For guaranteed $O(n)$ worst case,
+Use the Boyer-Moore-Horspool variant or KMP.
 
 :::
 
@@ -903,16 +903,16 @@ def manacher(s):
 
 ## Algorithm Comparison
 
-| Algorithm    | Preprocessing | Search Time                  | Worst Case    | Sublinear? | Multi-pattern? |
+| Algorithm | Preprocessing | Search Time | Worst Case | Sublinear? | Multi-pattern? |
 | ------------ | ------------- | ---------------------------- | ------------- | ---------- | -------------- |
-| Naive        | $O(1)$        | $O(nm)$                      | $O(nm)$       | No         | No             |
-| KMP          | $O(m)$        | $O(n)$                       | $O(n)$        | No         | No             |
-| Rabin-Karp   | $O(m)$        | $O(n+m)$ avg                 | $O(nm)$       | No         | Yes (simple)   |
-| Boyer-Moore  | $O(m+\sigma)$ | $O(nm)$ worst, sublinear avg | $O(nm)$       | Yes        | No             |
-| Aho-Corasick | $O(km)$       | $O(n + z)$                   | $O(n + z)$    | No         | Yes            |
-| Suffix Array | $O(n \log n)$ | $O(m \log n)$                | $O(m \log n)$ | No         | Yes            |
+| Naive | $O(1)$ | $O(nm)$ | $O(nm)$ | No | No |
+| KMP | $O(m)$ | $O(n)$ | $O(n)$ | No | No |
+| Rabin-Karp | $O(m)$ | $O(n+m)$ avg | $O(nm)$ | No | Yes (simple) |
+| Boyer-Moore | $O(m+\sigma)$ | $O(nm)$ worst, sublinear avg | $O(nm)$ | Yes | No |
+| Aho-Corasick | $O(km)$ | $O(n + z)$ | $O(n + z)$ | No | Yes |
+| Suffix Array | $O(n \log n)$ | $O(m \log n)$ | $O(m \log n)$ | No | Yes |
 
-where $n$ = text length, $m$ = pattern length, $k$ = number of patterns, $z$ = number of matches,
+Where $n$ = text length, $m$ = pattern length, $k$ = number of patterns, $z$ = number of matches,
 $\sigma$ = alphabet size.
 
 ## Applications
@@ -930,50 +930,58 @@ $\sigma$ = alphabet size.
 ### 1. Trie Memory Explosion
 
 A basic trie for English words with 26 children per node uses about $26 \times 8 = 208$ bytes per
-node (pointer size). For 1 million words averaging 10 characters, this is about 10 million nodes
-consuming ~2 GB. Use a radix tree (compressed trie) or a sorted array of words with binary search
-for memory-constrained applications.
+Node (pointer size). For 1 million words averaging 10 characters, this is about 10 million nodes
+Consuming ~2 GB. Use a radix tree (compressed trie) or a sorted array of words with binary search
+For memory-constrained applications.
 
 ### 2. Off-by-One in Suffix Array Ranks
 
 When building a suffix array, remember that `rank[i]` gives the position of suffix starting at `i`
-in the sorted order. The LCP array is indexed by the suffix array: `LCP[j]` gives the LCP between
-suffixes at `SA[j]` and `SA[j-1]`, not between suffixes starting at `j` and `j-1`.
+In the sorted order. The LCP array is indexed by the suffix array: `LCP[j]` gives the LCP between
+Suffixes at `SA[j]` and `SA[j-1]`Not between suffixes starting at `j` and `j-1`.
 
 ### 3. Rabin-Karp Hash Collisions
 
 A single hash function has collision probability $1/m$ per comparison. For large texts, this can
-lead to many false positives, each requiring an $O(m)$ string comparison. Use double hashing (two
-independent moduli) to reduce the collision probability to approximately $1/(m_1 \cdot m_2)$, or use
-a 64-bit hash (which effectively eliminates collisions in practice).
+Lead to many false positives, each requiring an $O(m)$ string comparison. Use double hashing (two
+Independent moduli) to reduce the collision probability to approximately $1/(m_1 \cdot m_2)$Or use
+A 64-bit hash (which effectively eliminates collisions in practice).
 
 ### 4. KMP Failure Function Edge Cases
 
-The failure function for the pattern `"aaaa"` is `[0, 1, 2, 3]`, which means KMP never "skips ahead"
-for this pattern — it degrades to $O(nm)$ in terms of character comparisons. This is correct but
-slow. For patterns with many repeated characters, the Z-algorithm may be more intuitive.
+The failure function for the pattern `"aaaa"` is `[0, 1, 2, 3]`Which means KMP never "skips ahead"
+For this pattern — it degrades to $O(nm)$ in terms of character comparisons. This is correct but
+Slow. For patterns with many repeated characters, the Z-algorithm may be more intuitive.
 
 ### 5. Manacher's Transform Indexing
 
 Manacher's algorithm works on a transformed string where each character is separated by `#`. The
-mapping from the transformed index `i` to the original index is `(i - 1) // 2`. Forgetting this
-mapping produces incorrect results.
+Mapping from the transformed index `i` to the original index is `(i - 1) // 2`. Forgetting this
+Mapping produces incorrect results.
 
 ### 6. Unicode in Tries
 
 If your trie keys are Unicode strings, the children dictionary can become very large (over 1 million
-possible code points). Consider normalising the input (NFKC/NFKD), lowercasing, or using an array
-only for the ASCII subset with a dictionary fallback for other characters.
+Possible code points). Consider normalising the input (NFKC/NFKD), lowercasing, or using an array
+Only for the ASCII subset with a dictionary fallback for other characters.
 
 ### 7. Aho-Corasick Output Duplication
 
 If multiple patterns share suffixes, the output list at a node includes outputs from its failure
-link. When counting matches, ensure you count each pattern index separately and do not double-count
-patterns that appear in both the node's direct output and its failure chain output.
+Link. When counting matches, ensure you count each pattern index separately and do not double-count
+Patterns that appear in both the node's direct output and its failure chain output.
 
 ### 8. Suffix Tree Construction Bugs
 
 Ukkonen's algorithm is notoriously difficult to implement correctly. Common bugs include: incorrect
-suffix link updates, edge cases for the first few characters, and handling the "active point"
-transitions when `active_length` exceeds an edge length. Consider using a suffix array + LCP array
-instead unless you specifically need the suffix tree structure.
+Suffix link updates, edge cases for the first few characters, and handling the "active point"
+Transitions when `active_length` exceeds an edge length. Consider using a suffix array + LCP array
+Instead unless you specifically need the suffix tree structure.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -15,8 +15,8 @@ sidebar_position: 7
 ### 1.1 The Keynesian Revolution
 
 Keynes (1936, _General Theory_) challenged the classical view that markets always clear. His central
-insight: **aggregate demand determines output in the short run**, and there is no automatic
-mechanism ensuring full employment.
+Insight: **aggregate demand determines output in the short run**, and there is no automatic
+Mechanism ensuring full employment.
 
 **Key propositions:**
 
@@ -25,7 +25,7 @@ mechanism ensuring full employment.
 3. Active **fiscal policy** is needed to manage aggregate demand
 4. The **multiplier** amplifies the effects of spending changes
 5. **Liquidity preference** determines the interest rate: the demand for money is a stable function
-   of income and the interest rate
+ of income and the interest rate
 
 $$IS-LM: \quad Y = C(Y - T) + I(r) + G, \quad \frac{M}{P} = L(Y, r)$$
 
@@ -34,69 +34,69 @@ $$IS-LM: \quad Y = C(Y - T) + I(r) + G, \quad \frac{M}{P} = L(Y, r)$$
 Friedman (1968, _The Role of Monetary Policy_) and the monetarists argued:
 
 1. **"Inflation is always and everywhere a monetary phenomenon"**: sustained inflation is caused by
-   excessive growth of the money supply
+ excessive growth of the money supply
 
 $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 
 (from the quantity theory: $MV = PY$)
 
 2. **The long-run Phillips curve is vertical**: there is no long-run trade-off between inflation and
-   unemployment
+ unemployment
 
 3. **Markets are broadly self-correcting**: given time, wages and prices adjust to restore full
-   employment
+ employment
 
 4. **Fiscal policy is ineffective** (crowding out dominates), and **monetary policy is the primary
-   tool** of macroeconomic stabilisation
+ tool** of macroeconomic stabilisation
 
 5. **Discretionary policy is harmful**: due to lags and the time-inconsistency problem, systematic
-   policy rules outperform discretionary interventions
+ policy rules outperform discretionary interventions
 
 ### 1.3 The Policy Implications
 
-| Issue                   | Keynesian View                           | Monetarist View                                              |
+| Issue | Keynesian View | Monetarist View |
 | ----------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| Cause of inflation      | Excess demand, cost-push                 | Excessive money supply growth                                |
-| Cause of unemployment   | Insufficient aggregate demand            | Real wages above equilibrium (structural), plus natural rate |
-| Role of fiscal policy   | Active and effective                     | Ineffective (crowding out), harmful (lags)                   |
-| Role of monetary policy | Important, but fiscal policy also needed | Primary policy tool; should follow a rule                    |
-| Phillips curve          | Short-run trade-off is exploitable       | Vertical in long run; only acceleration possible             |
-| Self-correction         | Slow or non-existent                     | Automatic, though may take time                              |
-| Government intervention | Essential for stability                  | Minimise — rules-based policy                                |
+| Cause of inflation | Excess demand, cost-push | Excessive money supply growth |
+| Cause of unemployment | Insufficient aggregate demand | Real wages above equilibrium (structural), plus natural rate |
+| Role of fiscal policy | Active and effective | Ineffective (crowding out), harmful (lags) |
+| Role of monetary policy | Important, but fiscal policy also needed | Primary policy tool; should follow a rule |
+| Phillips curve | Short-run trade-off is exploitable | Vertical in long run; only acceleration possible |
+| Self-correction | Slow or non-existent | Automatic, though may take time |
+| Government intervention | Essential for stability | Minimise — rules-based policy |
 
 :::info
 Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
-them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
+Them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
 "battle of the economists" in the context of policy debates.
 :::
 
 ### 1.4 Evaluation: The Keynesian-Monetarist Debate in Practice
 
 In practice, modern macroeconomic policy represents a **synthesis** of both views. The post-2008
-consensus acknowledges:
+Consensus acknowledges:
 
 - **Short run**: Keynesian — active fiscal and monetary policy is essential when the economy is far
-  from full employment, especially at the ZLB
+ from full employment, especially at the ZLB
 - **Long run**: Monetarist — inflation is ultimately a monetary phenomenon, and sustained fiscal
-  deficits must be financed by money creation, risking inflation
+ deficits must be financed by money creation, risking inflation
 - **Supply side**: Both schools now accept the importance of structural reforms for long-run growth
 
 The key insight for exams: the "correct" view depends on the **time horizon** and the **state of the
-economy**. In a deep recession with spare capacity, Keynesian policies are more relevant. When the
-economy is near full employment, monetarist concerns about inflation dominate.
+Economy**. In a deep recession with spare capacity, Keynesian policies are more relevant. When the
+Economy is near full employment, monetarist concerns about inflation dominate.
 
 ## 2. Rules vs Discretion
 
 ### 2.1 The Time-Inconsistency Problem
 
 **Proposition (Kydland & Prescott, 1977): Discretionary policymakers have an incentive to renege on
-announced policies, leading to a suboptimal outcome (inflationary bias).**
+Announced policies, leading to a suboptimal outcome (inflationary bias).**
 
 _Proof sketch._ The central bank announces low inflation. If the public believes this, workers set
-moderate wage demands. The central bank then has an incentive to create surprise inflation to boost
-output (exploiting the short-run Phillips curve). But rational agents anticipate this — they don't
-believe the announcement. The equilibrium has high inflation with no output gain. $\blacksquare$
+Moderate wage demands. The central bank then has an incentive to create surprise inflation to boost
+Output (exploiting the short-run Phillips curve). But rational agents anticipate this — they don't
+Believe the announcement. The equilibrium has high inflation with no output gain. $\blacksquare$
 
 Formally, the central bank's loss function:
 
@@ -115,12 +115,12 @@ The rule dominates because it eliminates the inflationary bias without sacrifici
 ### 2.2 The Taylor Rule
 
 The **Taylor Rule** (Taylor, 1993) is a specific monetary policy rule that prescribes how the
-central bank should set the interest rate in response to deviations of inflation from target and
-output from potential:
+Central bank should set the interest rate in response to deviations of inflation from target and
+Output from potential:
 
 $$i = r^* + \pi + 0.5(\pi - \pi^*) + 0.5(y - y^*)$$
 
-where:
+Where:
 
 - $i$ = nominal interest rate (policy rate)
 - $r^*$ = equilibrium real interest rate (estimated ~2%)
@@ -129,7 +129,7 @@ where:
 - $y - y^*$ = output gap (percentage deviation of actual from potential GDP)
 
 **Interpretation**: The central bank raises the real interest rate by 0.5% for every 1% that
-inflation exceeds target, and by 0.5% for every 1% that output exceeds potential.
+Inflation exceeds target, and by 0.5% for every 1% that output exceeds potential.
 
 **Properties:**
 
@@ -139,12 +139,12 @@ inflation exceeds target, and by 0.5% for every 1% that output exceeds potential
 
 <details>
 <summary>Worked Example</summary>
-Suppose $r^* = 2\%$, $\pi^* = 2\%$, current $\pi = 5\%$, output gap = $-3\%$ (recession).
+Suppose $r^* = 2\%$$\pi^* = 2\%$Current $\pi = 5\%$Output gap = $-3\%$ (recession).
 
 $$i = 2 + 5 + 0.5(5 - 2) + 0.5(-3) = 2 + 5 + 1.5 - 1.5 = 7\%$$
 
 The Taylor Rule prescribes a 7% policy rate: above neutral (4%) to fight inflation, but moderated by
-the recessionary output gap.
+The recessionary output gap.
 
 </details>
 
@@ -153,44 +153,44 @@ the recessionary output gap.
 1. **Anchors expectations**: a credible rule reduces uncertainty about future policy
 2. **Eliminates time inconsistency**: removes the temptation for surprise inflation
 3. **Transparent and accountable**: the public can evaluate whether the central bank is following
-   the rule
+ the rule
 4. **Prevents political pressure**: an independent central bank following a rule is insulated from
-   electoral cycles
+ electoral cycles
 
 ### 2.4 Arguments for Discretion
 
 1. **Unforeseen circumstances**: rules cannot anticipate all shocks (financial crises, pandemics,
-   wars)
-2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$, $y^*$, and the correct coefficients
-   — these are uncertain
+ wars)
+2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$$y^*$And the correct coefficients
+ — these are uncertain
 3. **Multiple objectives**: rules may be too rigid when trade-offs between objectives change
 4. **Communication**: discretion allows nuanced forward guidance
 
 ### 2.5 Time Lags and Policy Effectiveness
 
 A critical challenge for both rules-based and discretionary policy is the existence of **time
-lags**:
+Lags**:
 
 1. **Recognition lag**: the time between a shock occurring and policymakers identifying it. Data is
-   published with delays and is often revised.
+ published with delays and is often revised.
 2. **Decision lag**: the time between identifying a problem and implementing a policy response.
-   Fiscal policy has a longer decision lag (parliamentary approval needed) than monetary policy (MPC
-   meets monthly).
+ Fiscal policy has a longer decision lag (parliamentary approval needed) than monetary policy (MPC
+ meets monthly).
 3. **Implementation lag**: the time between the decision and the policy taking effect. Monetary
-   policy affects the economy through interest rate channels with a lag of 12–18 months. Fiscal
-   policy (e.g., infrastructure spending) may take years to affect AD.
+ policy affects the economy through interest rate channels with a lag of 12–18 months. Fiscal
+ policy (e.g., infrastructure spending) may take years to affect AD.
 4. **Impact lag**: the time for the full effects to materialise in output and employment.
 
 **Real-world example: The 2008 crisis.** The Bank of England cut rates from 5% to 0.5% between
 October 2008 and March 2009, but the UK recession continued until Q3 2009. Fiscal stimulus (the 2008
-temporary VAT cut from 17.5% to 15%) was implemented relatively quickly but had limited effect — the
-multiplier was estimated at only 0.3–0.5 (IMF, 2010) because households saved the extra income
-rather than spending it (the **paradox of thrift**).
+Temporary VAT cut from 17.5% to 15%) was implemented relatively quickly but had limited effect — the
+Multiplier was estimated at only 0.3–0.5 (IMF, 2010) because households saved the extra income
+Rather than spending it (the **paradox of thrift**).
 
 **Implication**: By the time discretionary policy takes effect, the economic conditions may have
-changed, potentially making the policy **pro-cyclical** (stimulating when the economy is already
-recovering, or tightening when it is entering recession). This is the strongest argument for
-rules-based policy — rules respond automatically, without lags.
+Changed, potentially making the policy **pro-cyclical** (stimulating when the economy is already
+Recovering, or tightening when it is entering recession). This is the strongest argument for
+Rules-based policy — rules respond automatically, without lags.
 
 ### 2.6 Inflation Targeting: A Compromise
 
@@ -200,17 +200,17 @@ Most modern central banks use **inflation targeting with discretion**:
 - **Independence** to set interest rates to achieve the target
 - **Accountability** through regular reports and parliamentary oversight
 - **Flexibility** to respond to shocks (the target is symmetric — deviations above and below are
-  equally undesirable)
+ equally undesirable)
 
 $$\mathrm{UK (1992–present), NZ (1990–present), Canada (1991–present), Eurozone (2003–present)}$$
 
 :::info
-info
-monetary policy and may require discussion of the transmission mechanism. Edexcel (Paper 3) often
-asks about the role of central bank independence in achieving macroeconomic objectives. OCR
+Info
+Monetary policy and may require discussion of the transmission mechanism. Edexcel (Paper 3) often
+Asks about the role of central bank independence in achieving macroeconomic objectives. OCR
 (Paper 3) may ask students to compare different monetary policy frameworks. CIE (9708) Paper 4
-expects students to evaluate the relative merits of rules vs discretion with reference to specific
-country examples.
+Expects students to evaluate the relative merits of rules vs discretion with reference to specific
+Country examples.
 :::
 
 ## 3. The Lucas Critique
@@ -218,30 +218,30 @@ country examples.
 ### 3.1 Statement
 
 **Proposition (Lucas, 1976): Policy evaluation using econometric models that assume fixed parameters
-is invalid, because the parameters of behavioural equations depend on the policy regime itself.**
+Is invalid, because the parameters of behavioural equations depend on the policy regime itself.**
 
 ### 3.2 Explanation
 
 Traditional macroeconomic models estimated relationships (e.g., the Phillips curve, consumption
-function) from historical data, assuming the parameters were constant. Lucas argued that when policy
-changes, people's **expectations and behaviour change**, so the historical relationships no longer
-hold.
+Function) from historical data, assuming the parameters were constant. Lucas argued that when policy
+Changes, people's **expectations and behaviour change**, so the historical relationships no longer
+Hold.
 
 **Example: The Phillips Curve.** The historical Phillips curve (1958–1969) showed a stable inverse
-relationship between inflation and unemployment. Governments tried to exploit this trade-off by
-creating inflation to reduce unemployment. But once workers and firms anticipated higher inflation,
-they adjusted wage demands and price-setting, and the trade-off disappeared. The Phillips curve
-shifted — the historical relationship was not a structural parameter but a function of the policy
-regime.
+Relationship between inflation and unemployment. Governments tried to exploit this trade-off by
+Creating inflation to reduce unemployment. But once workers and firms anticipated higher inflation,
+They adjusted wage demands and price-setting, and the trade-off disappeared. The Phillips curve
+Shifted — the historical relationship was not a structural parameter but a function of the policy
+Regime.
 
 ### 3.3 Implications
 
 1. **Microfoundations**: macroeconomic models should be derived from individual optimisation
-   (micro-founded), not estimated from aggregate data
+ (micro-founded), not estimated from aggregate data
 2. **Policy evaluation**: you cannot reliably predict the effects of a new policy using models
-   estimated under the old policy
+ estimated under the old policy
 3. **Rational expectations**: agents use all available information, including understanding of the
-   policy regime, when forming expectations
+ policy regime, when forming expectations
 
 $$\mathrm{Policy change} \Rightarrow \mathrm{Expectations change} \Rightarrow \mathrm{Behaviour changes} \Rightarrow \mathrm{Old model parameters invalid}$$
 
@@ -250,25 +250,25 @@ $$\mathrm{Policy change} \Rightarrow \mathrm{Expectations change} \Rightarrow \m
 ### 4.1 The Zero Lower Bound (ZLB)
 
 The **zero lower bound** is the constraint that nominal interest rates cannot fall significantly
-below zero (since holding cash pays zero nominal interest).
+Below zero (since holding cash pays zero nominal interest).
 
 $$i \geq 0 \mathrm{ (approximately)}$$
 
 When the equilibrium real interest rate is negative (as during a severe recession), the central bank
-cannot cut rates far enough to stimulate the economy. The economy is caught in a **liquidity trap**
+Cannot cut rates far enough to stimulate the economy. The economy is caught in a **liquidity trap**
 (Keynes, 1936):
 
 $$r^* < 0 \Rightarrow i = 0 \Rightarrow r = i - \pi^e = -\pi^e$$
 
 Even with zero nominal rates, the real interest rate may be positive if expected inflation is
-negative (deflation). In this case, monetary policy is impotent — conventional tools have been
-exhausted.
+Negative (deflation). In this case, monetary policy is impotent — conventional tools have been
+Exhausted.
 
 ### 4.2 Quantitative Easing (QE)
 
 **Quantitative easing** is an unconventional monetary policy where the central bank purchases
-long-term assets (government bonds, corporate bonds) to increase the money supply and lower
-long-term interest rates when the policy rate is at the ZLB.
+Long-term assets (government bonds, corporate bonds) to increase the money supply and lower
+Long-term interest rates when the policy rate is at the ZLB.
 
 **Mechanism:**
 
@@ -281,7 +281,7 @@ $$\Rightarrow \mathrm{asset prices rise (portfolio rebalancing)} \Rightarrow \ma
 $$\Rightarrow \mathrm{exchange rate may depreciate} \Rightarrow \mathrm{exports increase}$$
 
 **UK QE programme**: The Bank of England purchased £875 billion of assets between 2009 and 2021,
-expanding the monetary base from ~£100bn to ~£800bn.
+Expanding the monetary base from ~£100bn to ~£800bn.
 
 **The 2008 Financial Crisis: A Policy Case Study**
 
@@ -289,25 +289,25 @@ The global financial crisis provides the clearest real-world illustration of the
 Keynesian-monetarist debate in action:
 
 1. **Monetary response**: The Bank of England cut the base rate from 5.25% (October 2008) to 0.5%
-   (March 2009) — the lowest in the `` `{BoE}` ``'s 315-year history. When this proved insufficient
-   (ZLB), it launched QE in March 2009, purchasing GBP 75 billion of government bonds initially,
-   eventually reaching GBP 875 billion by 2021.
+ (March 2009) — the lowest in the `` `{BoE}` ``'s 315-year history. When this proved insufficient
+ (ZLB), it launched QE in March 2009, purchasing GBP 75 billion of government bonds initially,
+ eventually reaching GBP 875 billion by 2021.
 
 2. **Fiscal response**: The Labour government introduced a GBP 20 billion fiscal stimulus package
-   (November 2008), including a temporary VAT cut (17.5% to 15%), increased infrastructure spending,
-   and support for the banking sector (GBP 500 billion in guarantees and capital injections). The
-   budget deficit peaked at 10.2% of GDP in 2009–10.
+ (November 2008), including a temporary VAT cut (17.5% to 15%), increased infrastructure spending,
+ and support for the banking sector (GBP 500 billion in guarantees and capital injections). The
+ budget deficit peaked at 10.2% of GDP in 2009–10.
 
 3. **Austerity (2010–2015)**: The incoming Coalition government adopted a monetarist-inspired
-   austerity programme, aiming to eliminate the structural deficit within five years. Public sector
-   net borrowing was cut from 10.2% to 4.0% of GDP by 2014–15, but GDP growth averaged only 1.8%
-   (vs. 2.5% pre-crisis trend), and real wages fell for the longest period since the 1860s.
+ austerity programme, aiming to eliminate the structural deficit within five years. Public sector
+ net borrowing was cut from 10.2% to 4.0% of GDP by 2014–15, but GDP growth averaged only 1.8%
+ (vs. 2.5% pre-crisis trend), and real wages fell for the longest period since the 1860s.
 
 4. **Evaluation**: The initial Keynesian response (2008–2009) was widely regarded as necessary to
-   prevent a depression. However, the subsequent austerity programme is more controversial — many
-   economists argue it delayed the recovery unnecessarily (the UK did not regain its pre-crisis GDP
-   per capita level until 2015). The OBR (2013) estimated that austerity reduced GDP growth by
-   approximately 1% per year between 2010 and 2013.
+ prevent a depression. However, the subsequent austerity programme is more controversial — many
+ economists argue it delayed the recovery unnecessarily (the UK did not regain its pre-crisis GDP
+ per capita level until 2015). The OBR (2013) estimated that austerity reduced GDP growth by
+ approximately 1% per year between 2010 and 2013.
 
 ### 4.3 Evaluation of QE
 
@@ -321,30 +321,30 @@ Keynesian-monetarist debate in action:
 **Disadvantages:**
 
 - **Distributional effects**: QE raises asset prices (bonds, equities, property), benefiting
-  wealthier households who own these assets → increases inequality
+ wealthier households who own these assets → increases inequality
 - **Asset bubbles**: low rates may encourage excessive risk-taking and misallocation of capital
 - **Exit strategy**: unwinding QE (selling bonds, raising rates) may destabilise financial markets
 - **Diminishing returns**: each round of QE may have a smaller effect
 - **Inflation risk**: if the money created is not absorbed when the economy recovers, inflation may
-  surge
+ surge
 
 ### 4.4 Fiscal Policy Revival
 
 The 2008 crisis and the ZLB led to a **Keynesian revival**:
 
 1. **Multipliers are larger at the ZLB**: with no crowding out (interest rates cannot rise), the
-   fiscal multiplier is closer to its theoretical maximum. IMF (2012) revised its multiplier
-   estimates upward to 0.9–1.7.
+ fiscal multiplier is closer to its theoretical maximum. IMF (2012) revised its multiplier
+ estimates upward to 0.9–1.7.
 
 2. **Austerity was premature**: many economists (Blanchard, Stiglitz, Krugman) argued that fiscal
-   consolidation in 2010–2012 slowed the recovery unnecessarily.
+ consolidation in 2010–2012 slowed the recovery unnecessarily.
 
 3. **The case for fiscal-monetary coordination**: when monetary policy is constrained, fiscal policy
-   must take the lead. "Helicopter money" (Friedman, 1969) — direct monetary financing of government
-   spending — entered mainstream debate.
+ must take the lead. "Helicopter money" (Friedman, 1969) — direct monetary financing of government
+ spending — entered mainstream debate.
 
 4. **Modern Monetary Theory (MMT)**: argues that sovereign currency issuers cannot go bankrupt and
-   should use fiscal policy freely until inflation emerges. This is highly controversial.
+ should use fiscal policy freely until inflation emerges. This is highly controversial.
 
 ### 4.5 The Post-COVID Inflation Surge (2021–2023)
 
@@ -352,36 +352,36 @@ The pandemic and policy response created a new policy challenge:
 
 - **Demand shock**: fiscal stimulus + pent-up consumer demand → AD surged
 - **Supply shock**: supply chain disruptions, labour shortages, energy crisis (Ukraine war) → SRAS
-  shifted left
+ shifted left
 - **Monetary accommodation**: interest rates at ZLB, QE continued
 
 Result: inflation surged to 10.1% in the UK (July 2022) — the highest in 40 years.
 
 **Policy response**: Bank of England raised rates from 0.1% to 5.25% (2021–2023). Government
-implemented tighter fiscal policy.
+Implemented tighter fiscal policy.
 
 **Key debate**: Was the inflation **transitory** (as initially claimed by the Fed) or
 **persistent**? In hindsight, a combination of persistent supply-side pressures and excess demand
-contributed, requiring a strong monetary tightening.
+Contributed, requiring a strong monetary tightening.
 
 ### 4.6 The COVID-19 Policy Response: Real-World Examples
 
 The pandemic triggered an unprecedented policy response, illustrating both the power and limitations
-of macroeconomic policy:
+Of macroeconomic policy:
 
 **Fiscal packages by country:**
 
-| Country | Fiscal Stimulus (as % of GDP) | Key Measures                                                                   |
+| Country | Fiscal Stimulus (as % of GDP) | Key Measures |
 | ------- | ----------------------------- | ------------------------------------------------------------------------------ |
-| UK      | ~19% (2020–21)                | Furlough scheme (GBP 70 billion), business grants, VAT cut to 5% (hospitality) |
-| US      | ~25% (2020–21)                | CARES Act (USD 2.2 trillion), stimulus checks, expanded unemployment benefits  |
-| Germany | ~34% (2020–21)                | Kurzarbeit (short-time work), VAT cut, emergency aid for firms                 |
-| Japan   | ~40% (2020–21)                | Cash handouts, business subsidies, tourism campaign                            |
+| UK | ~19% (2020–21) | Furlough scheme (GBP 70 billion), business grants, VAT cut to 5% (hospitality) |
+| US | ~25% (2020–21) | CARES Act (USD 2.2 trillion), stimulus checks, expanded unemployment benefits |
+| Germany | ~34% (2020–21) | Kurzarbeit (short-time work), VAT cut, emergency aid for firms |
+| Japan | ~40% (2020–21) | Cash handouts, business subsidies, tourism campaign |
 
 **Evaluation**: The scale of fiscal response was justified by the Keynesian logic that when the
-private sector withdraws spending simultaneously (lockdowns), the government must fill the gap. The
-furlough scheme was particularly effective at preventing mass unemployment (UK unemployment peaked
-at only 5.2%, compared to the OBR's initial forecast of 12%). However, the withdrawal of stimulus in
+Private sector withdraws spending simultaneously (lockdowns), the government must fill the gap. The
+Furlough scheme was particularly effective at preventing mass unemployment (UK unemployment peaked
+At only 5.2%, compared to the OBR's initial forecast of 12%). However, the withdrawal of stimulus in
 2021–22, combined with supply bottlenecks, contributed to the inflation surge.
 
 ### 4.7 Brexit Policy Trade-Offs
@@ -389,25 +389,25 @@ at only 5.2%, compared to the OBR's initial forecast of 12%). However, the withd
 The UK's departure from the EU created unique macroeconomic policy challenges:
 
 1. **Trade friction**: Non-tariff barriers (customs checks, regulatory divergence) reduced UK-EU
-   trade by an estimated 15% (OBR, 2022). This is a negative supply shock (LRAS shifts left),
-   reducing potential output.
+ trade by an estimated 15% (OBR, 2022). This is a negative supply shock (LRAS shifts left),
+ reducing potential output.
 
 2. **Labour market effects**: The end of free movement reduced EU worker inflows, contributing to
-   labour shortages in agriculture, hospitality, and logistics — a cost-push inflation factor
-   post-Brexit and post-COVID.
+ labour shortages in agriculture, hospitality, and logistics — a cost-push inflation factor
+ post-Brexit and post-COVID.
 
 3. **Policy implications**: The supply-side nature of the Brexit shock meant that demand management
-   tools (fiscal and monetary policy) could not fully offset the output loss. Supply-side policies
-   (training, investment, deregulation) were needed, but these take years to deliver results.
+ tools (fiscal and monetary policy) could not fully offset the output loss. Supply-side policies
+ (training, investment, deregulation) were needed, but these take years to deliver results.
 
 4. **Exchange rate**: GBP depreciated by ~15% against USD following the 2016 referendum, providing a
-   temporary export boost (Marshall-Lerner conditions satisfied) but increasing import prices and
-   contributing to inflation.
+ temporary export boost (Marshall-Lerner conditions satisfied) but increasing import prices and
+ contributing to inflation.
 
 **Exam evaluation point**: Brexit illustrates the limits of demand-side policy in addressing
-supply-side shocks. No amount of fiscal or monetary stimulus can fully compensate for the loss of
-trade openness and labour mobility — only structural supply-side reforms can address the root
-causes.
+Supply-side shocks. No amount of fiscal or monetary stimulus can fully compensate for the loss of
+Trade openness and labour mobility — only structural supply-side reforms can address the root
+Causes.
 
 ## 5. Modern Monetary Theory (MMT)
 
@@ -417,120 +417,120 @@ Modern Monetary Theory, associated with economists such as Warren Mosler, Stepha
 Mitchell, argues:
 
 1. **Sovereign currency issuers cannot go bankrupt**: a government that issues its own fiat currency
-   can always meet obligations denominated in that currency by creating money. The constraint is not
-   solvency but inflation.
+ can always meet obligations denominated in that currency by creating money. The constraint is not
+ solvency but inflation.
 
 $$\mathrm{Government can always pay} \iff \mathrm{debt denominated in own currency}$$
 
 2. **Functional finance** (Lerner, 1943): fiscal policy should be used to achieve full employment
-   and price stability, regardless of the deficit. The deficit is not a target — real outcomes are.
+ and price stability, regardless of the deficit. The deficit is not a target — real outcomes are.
 
 3. **Taxes drive money**: taxes create demand for the government's currency (people need it to pay
-   taxes). Taxes are not primarily a revenue-raising tool but a tool to control inflation and
-   redistribute income.
+ taxes). Taxes are not primarily a revenue-raising tool but a tool to control inflation and
+ redistribute income.
 
 4. **Sectoral balances**: the government deficit equals the non-government sector surplus:
 
 $$(G - T) = (S - I) + (M - X)$$
 
 If the government runs a balanced budget, the private sector cannot net-save (unless there is a
-current account surplus). A government deficit is necessary for private sector net saving.
+Current account surplus). A government deficit is necessary for private sector net saving.
 
 ### 5.2 Evaluation
 
 **Strengths**: (1) Correctly identifies that sovereign currency issuers face an inflation
-constraint, not a solvency constraint. (2) Highlights the importance of functional outcomes over
-arbitrary deficit targets. (3) Sectoral balances identity is accounting-accurate.
+Constraint, not a solvency constraint. (2) Highlights the importance of functional outcomes over
+Arbitrary deficit targets. (3) Sectoral balances identity is accounting-accurate.
 
 **Weaknesses**: (1) Underestimates inflation risks — the 2021–2023 inflation surge showed that
-excessive fiscal stimulus combined with supply constraints does generate inflation. (2) Assumes the
-government can perfectly calibrate fiscal policy to maintain full employment without inflation —
-this requires information the government does not have. (3) Ignores political economy — giving
-governments a "blank cheque" risks fiscal profligacy and loss of market confidence. (4) May not
-apply to countries that borrow in foreign currency (emerging markets — most developing countries).
+Excessive fiscal stimulus combined with supply constraints does generate inflation. (2) Assumes the
+Government can perfectly calibrate fiscal policy to maintain full employment without inflation —
+This requires information the government does not have. (3) Ignores political economy — giving
+Governments a "blank cheque" risks fiscal profligacy and loss of market confidence. (4) May not
+Apply to countries that borrow in foreign currency (emerging markets — most developing countries).
 (5) Assumes away the crowding out channel and Ricardian equivalence too casually.
 
 :::warning
 Common Pitfall MMT is often caricatured as "deficits don't matter." This is a
-misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
-employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
-harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
-prescriptions risky.
+Misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
+Employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
+Harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
+Prescriptions risky.
 :::
 
 ### 5.3 Exam Technique: Evaluating Policy Frameworks
 
 When evaluating any macroeconomic policy framework (inflation targeting, MMT, fiscal rules), use the
-following structure:
+Following structure:
 
 1. **Define** the policy framework and its objectives
 2. **Explain the mechanism** — how does it work in theory?
 3. **Apply** with real-world evidence — use specific data points (e.g., "UK inflation averaged 2.0%
-   under inflation targeting, 1992–2020")
+ under inflation targeting, 1992–2020")
 4. **Evaluate** by considering:
-   - **Effectiveness**: did it achieve its stated objectives?
-   - **Trade-offs**: what was sacrificed? (e.g., QE increased inequality)
-   - **Context dependency**: does it work in all circumstances? (e.g., inflation targeting fails at
-     the ZLB)
-   - **Unintended consequences**: what went wrong? (e.g., austerity slowed recovery)
-   - **Alternatives**: what would have worked better?
+ - **Effectiveness**: did it achieve its stated objectives?
+ - **Trade-offs**: what was sacrificed? (e.g., QE increased inequality)
+ - **Context dependency**: does it work in all circumstances? (e.g., inflation targeting fails at
+ the ZLB)
+ - **Unintended consequences**: what went wrong? (e.g., austerity slowed recovery)
+ - **Alternatives**: what would have worked better?
 5. **Conclude** with a balanced judgement — "On balance, X was effective in achieving Y but failed
-   to address Z."
+ to address Z."
 
 ## 6. Policy Mixes for Various Scenarios
 
 ### 5.1 Scenario Analysis
 
-| Scenario                      | Problem                                    | Recommended Policy Mix                                                     |
+| Scenario | Problem | Recommended Policy Mix |
 | ----------------------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
-| **Recession + low inflation** | Output gap, deflation risk                 | Expansionary fiscal + expansionary monetary (rates cut, QE)                |
-| **Overheating + inflation**   | Output above potential, demand-pull        | Contractionary fiscal + contractionary monetary (rates raised)             |
-| **Stagflation**               | High inflation + low growth (supply shock) | Supply-side policy + tight monetary + targeted fiscal (support vulnerable) |
-| **BoP deficit + growth**      | Current account worsening                  | Depreciation + supply-side (improve competitiveness) + fiscal tightening   |
-| **ZLB recession**             | Deep recession, rates at zero              | Aggressive fiscal expansion + QE + forward guidance                        |
-| **Currency crisis**           | Capital flight, sharp depreciation         | Raise rates (defend currency) + IMF support + structural reform            |
+| **Recession + low inflation** | Output gap, deflation risk | Expansionary fiscal + expansionary monetary (rates cut, QE) |
+| **Overheating + inflation** | Output above potential, demand-pull | Contractionary fiscal + contractionary monetary (rates raised) |
+| **Stagflation** | High inflation + low growth (supply shock) | Supply-side policy + tight monetary + targeted fiscal (support vulnerable) |
+| **BoP deficit + growth** | Current account worsening | Depreciation + supply-side (improve competitiveness) + fiscal tightening |
+| **ZLB recession** | Deep recession, rates at zero | Aggressive fiscal expansion + QE + forward guidance |
+| **Currency crisis** | Capital flight, sharp depreciation | Raise rates (defend currency) + IMF support + structural reform |
 
 ### 5.2 The Assignment Problem
 
 The **assignment problem** (Mundell, 1962): which policy instrument should be assigned to which
-objective?
+Objective?
 
 **Mundell's principle of effective market classification**: assign each instrument to the objective
-on which it has the most comparative advantage.
+On which it has the most comparative advantage.
 
 - **Monetary policy** → price stability (domestic objective)
 - **Fiscal policy** → output stabilisation (domestic objective)
 - **Exchange rate policy** → BoP equilibrium (external objective)
 
 Under floating exchange rates, the BoP is self-correcting (exchange rate adjusts), so monetary and
-fiscal policy can focus on domestic objectives.
+Fiscal policy can focus on domestic objectives.
 
 ### 6.3 Policy Coordination and Conflict
 
 In practice, fiscal and monetary policy may **conflict** rather than coordinate:
 
 **Example 1: The UK (2010–2015)**. The government pursued fiscal austerity (contractionary fiscal
-policy) while the Bank of England maintained expansionary monetary policy (QE + low rates). This
-policy mix created unusual dynamics: government borrowing costs fell to record lows (QE pushed down
-gilt yields), but bank lending to the real economy remained weak — the "rebalancing" the government
-sought (towards manufacturing and exports) was undermined by the strong pound caused by capital
-inflows attracted by QE.
+Policy) while the Bank of England maintained expansionary monetary policy (QE + low rates). This
+Policy mix created unusual dynamics: government borrowing costs fell to record lows (QE pushed down
+Gilt yields), but bank lending to the real economy remained weak — the "rebalancing" the government
+Sought (towards manufacturing and exports) was undermined by the strong pound caused by capital
+Inflows attracted by QE.
 
 **Example 2: The US (2017–2019)**. The Trump administration pursued expansionary fiscal policy (Tax
 Cuts and Jobs Act, 2017 — USD 1.5 trillion over 10 years) while the Fed was tightening monetary
-policy (raising rates from 0.5% to 2.5%). This created upward pressure on interest rates and the
-dollar, partially crowding out the fiscal stimulus.
+Policy (raising rates from 0.5% to 2.5%). This created upward pressure on interest rates and the
+Dollar, partially crowding out the fiscal stimulus.
 
 **Key principle**: When fiscal and monetary policy pull in the same direction, their effects are
-amplified. When they pull in opposite directions, they partially offset each other, and the net
-effect depends on the relative strength of each.
+Amplified. When they pull in opposite directions, they partially offset each other, and the net
+Effect depends on the relative strength of each.
 
 :::info
 Board-Specific Note AQA Paper 2 (Section B) often requires students to evaluate the
-effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
-trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
+Effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
+Trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple
-macroeconomic objectives simultaneously.
+Macroeconomic objectives simultaneously.
 :::
 
 ## 7. Nominal GDP Targeting: An Alternative Framework
@@ -544,47 +544,47 @@ $$\mathrm{Target: } \Delta(NGDP) = \Delta(Real\ GDP) + \pi = \mathrm{constant (e
 ### 7.2 Advantages over Inflation Targeting
 
 1. **Automatic stabiliser**: A negative supply shock (SRAS shifts left) raises inflation but reduces
-   real growth. Under inflation targeting, the central bank raises rates (worsening the recession).
-   Under NGDP targeting, the central bank accommodates — the nominal target is unchanged, so the
-   central bank loosens to support real growth.
+ real growth. Under inflation targeting, the central bank raises rates (worsening the recession).
+ Under NGDP targeting, the central bank accommodates — the nominal target is unchanged, so the
+ central bank loosens to support real growth.
 
 2. **Handles demand and supply shocks symmetrically**: The central bank responds to the _nominal_
-   income gap, not just the inflation gap.
+ income gap, not just the inflation gap.
 
 3. **Better communication**: "We will ensure total spending in the economy grows at 5% per year" is
-   arguably clearer than "We will ensure prices rise at 2% per year."
+ arguably clearer than "We will ensure prices rise at 2% per year."
 
 4. **Financial stability**: Accommodates supply shocks without tightening, reducing the risk of
-   over-tightening after cost-push inflation.
+ over-tightening after cost-push inflation.
 
 ### 7.3 Disadvantages
 
 1. **Measurement**: Real-time GDP data is revised frequently and with long lags. The central bank
-   might be targeting the wrong number.
+ might be targeting the wrong number.
 
 2. **Double-counting risk**: If a supply shock reduces real GDP, NGDP targeting requires the central
-   bank to accommodate with more inflation — the public may see this as "accepting inflation."
+ bank to accommodate with more inflation — the public may see this as "accepting inflation."
 
 3. **Less established**: No major central bank has adopted NGDP targeting (though some economists
-   advocate it strongly — Sumner, 2011; Frankel, 2012).
+ advocate it strongly — Sumner, 2011; Frankel, 2012).
 
 4. **Political feasibility**: shifting from an established framework (inflation targeting) to an
-   untested one faces resistance.
+ untested one faces resistance.
 
 ## 8. Problem Set
 
 **Problem 1.** Using the quantity theory of money ($MV = PY$), explain the monetarist argument that
 "inflation is always and everywhere a monetary phenomenon." Under what conditions might this
-statement be less valid?
+Statement be less valid?
 
 <details>
 <summary>Hint</summary>
 From $MV = PY$: if $V$ is stable (Friedman's assumption) and $Y$ is at potential in the long run (LRAS vertical), then $\Delta P \approx \Delta M$. Sustained inflation requires sustained money supply growth. Conditions where this is less valid: (1) $V$ is not stable — during financial crises, velocity falls sharply (people hoard cash), so $\Delta M$ does not translate to $\Delta P$. (2) The economy has a large output gap — $Y$ can increase, absorbing the money supply growth. (3) Supply shocks cause inflation without money supply growth (cost-push). (4) In the short run, prices are sticky, so $\Delta M$ affects $Y$ not $P$ (Keynesian view). Overall: the monetarist argument is strong in the long run but weaker in the short run and during crises.
 </details>
 
-**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$, $\pi^* = 2\%$, and
-coefficients 0.5 for both inflation and output gap. Calculate the prescribed interest rate when: (a)
-$\pi = 3\%$, $y - y^* = 0\%$, (b) $\pi = 2\%$, $y - y^* = -4\%$, (c) $\pi = 6\%$, $y - y^* = 1\%$.
+**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$$\pi^* = 2\%$And
+Coefficients 0.5 for both inflation and output gap. Calculate the prescribed interest rate when: (a)
+$\pi = 3\%$$y - y^* = 0\%$(b) $\pi = 2\%$$y - y^* = -4\%$(c) $\pi = 6\%$$y - y^* = 1\%$.
 Comment on the results.
 
 <details>
@@ -593,7 +593,7 @@ Comment on the results.
 </details>
 
 **Problem 3.** Explain the Lucas critique. Why does it imply that traditional macroeconomic models
-are unreliable for policy evaluation? Illustrate your answer with the Phillips curve example.
+Are unreliable for policy evaluation? Illustrate your answer with the Phillips curve example.
 
 <details>
 <summary>Hint</summary>
@@ -601,7 +601,7 @@ The Lucas critique: when policy changes, people's expectations and behaviour cha
 </details>
 
 **Problem 4.** "Quantitative easing was a necessary and effective response to the 2008 financial
-crisis, but it has created significant long-term problems." Evaluate this statement.
+Crisis, but it has created significant long-term problems." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
@@ -609,8 +609,8 @@ Necessary: (1) Interest rates were at the ZLB — conventional monetary policy w
 </details>
 
 **Problem 5.** The economy is experiencing stagflation: inflation is 8% and rising, while GDP growth
-has fallen to -1%. The central bank's inflation target is 2%. Using the AD/AS framework, explain the
-policy dilemma and evaluate possible policy responses.
+Has fallen to -1%. The central bank's inflation target is 2%. Using the AD/AS framework, explain the
+Policy dilemma and evaluate possible policy responses.
 
 <details>
 <summary>Hint</summary>
@@ -618,8 +618,8 @@ The dilemma: the economy faces both high inflation (requiring contractionary pol
 </details>
 
 **Problem 6.** "Inflation targeting has been a success and should continue to be the primary
-objective of monetary policy." Evaluate this statement with reference to the experience of the UK
-since 1992.
+Objective of monetary policy." Evaluate this statement with reference to the experience of the UK
+Since 1992.
 
 <details>
 <summary>Hint</summary>
@@ -627,7 +627,7 @@ Successes: (1) UK inflation averaged 2.0% from 1992–2020, compared to 10%+ in 
 </details>
 
 **Problem 7.** Explain the time-inconsistency problem. How does an independent central bank with an
-inflation target help to solve it?
+Inflation target help to solve it?
 
 <details>
 <summary>Hint</summary>
@@ -635,7 +635,7 @@ Time inconsistency (Kydland & Prescott, 1977): the optimal policy ex ante (when 
 </details>
 
 **Problem 8.** "The COVID-19 pandemic demonstrated that the Keynesian view of macroeconomic policy
-is more relevant than the monetarist view." Discuss.
+Is more relevant than the monetarist view." Discuss.
 
 <details>
 <summary>Hint</summary>
@@ -643,74 +643,74 @@ Arguments for: (1) The pandemic caused a massive demand shock (lockdowns → AD 
 </details>
 
 **Problem 9.** "Brexit has made it harder for the UK government to achieve its macroeconomic
-objectives." Evaluate this statement with reference to the period 2016–2025.
+Objectives." Evaluate this statement with reference to the period 2016–2025.
 
 <details>
 <summary>Hint</summary>
 Macroeconomic objectives: economic growth, price stability, low unemployment, balance of payments
-equilibrium. Brexit effects: (1) **Growth**: the OBR estimated Brexit would reduce long-run
-productivity by 4% — this shifts LRAS left, reducing trend growth. UK GDP growth averaged 1.4%
+Equilibrium. Brexit effects: (1) **Growth**: the OBR estimated Brexit would reduce long-run
+Productivity by 4% — this shifts LRAS left, reducing trend growth. UK GDP growth averaged 1.4%
 (2017–2019) vs. 2.1% (2013–2016). (2) **Inflation**: the 15% sterling depreciation (2016) increased
-import prices, contributing to inflation peaking at 3.1% in 2017. The `` `{BoE}` `` responded by
-raising rates, creating a trade-off with growth. (3) **Employment**: unemployment fell to 3.5%
+Import prices, contributing to inflation peaking at 3.1% in 2017. The `` `{BoE}` `` responded by
+Raising rates, creating a trade-off with growth. (3) **Employment**: unemployment fell to 3.5%
 (2022) — a 50-year low — partly because reduced EU migration tightened the labour market. However,
-labour shortages in key sectors (NHS, agriculture, hospitality) represent a supply constraint. (4)
+Labour shortages in key sectors (NHS, agriculture, hospitality) represent a supply constraint. (4)
 **Balance of payments**: the trade deficit with the EU widened as non-tariff barriers reduced
-exports. The current account deficit averaged 3.5% of GDP (2017–2023). However, (5) **policy
-flexibility**: leaving the EU gave the UK freedom to pursue independent monetary policy, set its own
-regulations, and sign trade deals (e.g., CPTPP, 2024). Evaluation: on balance, the evidence suggests
+Exports. The current account deficit averaged 3.5% of GDP (2017–2023). However, (5) **policy
+Flexibility**: leaving the EU gave the UK freedom to pursue independent monetary policy, set its own
+Regulations, and sign trade deals (e.g., CPTPP, 2024). Evaluation: on balance, the evidence suggests
 Brexit has made macroeconomic management harder, primarily through supply-side constraints and
-reduced trade openness. However, some effects are confounded with COVID-19, making attribution
-difficult.
+Reduced trade openness. However, some effects are confounded with COVID-19, making attribution
+Difficult.
 </details>
 
 **Problem 10.** To what extent is the Lucas critique relevant for modern macroeconomic
-policy-making? Discuss with reference to the UK's experience of quantitative easing.
+Policy-making? Discuss with reference to the UK's experience of quantitative easing.
 
 <details>
 <summary>Hint</summary>
 The Lucas critique argues that relationships estimated under one policy regime may not hold when
-policy changes. Application to QE: (1) **Interest rate channel**: pre-2008 models estimated a stable
-relationship between the policy rate and long-term borrowing costs. QE changed this relationship by
-directly purchasing long-term assets — the historical interest rate transmission mechanism was
-altered. (2) **Portfolio rebalancing**: the standard IS-LM framework assumes money and bonds are
-substitutes. QE works partly through a portfolio rebalancing channel (investors sell bonds to the
-central bank and buy riskier assets), which is not captured in traditional models. (3)
+Policy changes. Application to QE: (1) **Interest rate channel**: pre-2008 models estimated a stable
+Relationship between the policy rate and long-term borrowing costs. QE changed this relationship by
+Directly purchasing long-term assets — the historical interest rate transmission mechanism was
+Altered. (2) **Portfolio rebalancing**: the standard IS-LM framework assumes money and bonds are
+Substitutes. QE works partly through a portfolio rebalancing channel (investors sell bonds to the
+Central bank and buy riskier assets), which is not captured in traditional models. (3)
 **Expectations**: QE's effectiveness depends partly on signalling (forward guidance) — the central
-bank's announcement effect. If the public's expectations formation process changes in response to QE
+Bank's announcement effect. If the public's expectations formation process changes in response to QE
 (e.g., learning that the central bank will buy bonds in a crisis), then the historical relationship
-between policy and expectations is unreliable. (4) **Counterargument**: some relationships have
-proved relatively stable. The Phillips curve, despite shifting, still shows a short-run trade-off.
+Between policy and expectations is unreliable. (4) **Counterargument**: some relationships have
+Proved relatively stable. The Phillips curve, despite shifting, still shows a short-run trade-off.
 The Taylor Rule, while not followed mechanically, still provides a useful benchmark for the
 `` `{BoE}` ``'s rate decisions. Overall: the Lucas critique remains highly relevant — it reminds us
-that the unprecedented scale of QE means historical evidence may be an unreliable guide to its
-effects, particularly regarding inflation and the exit strategy.
+That the unprecedented scale of QE means historical evidence may be an unreliable guide to its
+Effects, particularly regarding inflation and the exit strategy.
 </details>
 
 **Problem 11.** Assess the case for replacing inflation targeting with nominal GDP targeting as the
-primary monetary policy framework for the Bank of England.
+Primary monetary policy framework for the Bank of England.
 
 <details>
 <summary>Hint</summary>
 Case for NGDP targeting: (1) **Automatic stabiliser**: NGDP targeting would have led to a more
-accommodative response after the 2008 crisis and during COVID — the `` `{BoE}` `` would not have
-tightened prematurely as inflation rose due to supply shocks. (2) **Handles supply shocks better**:
-the 2021–2023 inflation was partly cost-push (energy, supply chains). Under NGDP targeting, the
+Accommodative response after the 2008 crisis and during COVID — the `` `{BoE}` `` would not have
+Tightened prematurely as inflation rose due to supply shocks. (2) **Handles supply shocks better**:
+The 2021–2023 inflation was partly cost-push (energy, supply chains). Under NGDP targeting, the
 `` `{BoE}` `` would have accommodated more inflation (since real GDP was falling), reducing the
-depth of the recession. (3) **Simplicity**: a single target for the growth of total nominal income
-is arguably easier to communicate than an inflation target. (4) **Financial stability**: by not
-overtightening after supply shocks, NGDP targeting may reduce the risk of triggering a financial
-crisis. Case against: (1) **Measurement problems**: GDP data is revised frequently and with long
-lags (3–6 months). The `` `{BoE}` `` might be targeting an incorrect number. Inflation data, by
-contrast, is available monthly with less revision. (2) **No precedent**: no major central bank has
-adopted NGDP targeting, so there is no real-world evidence of its effectiveness. (3) **Legitimacy**:
+Depth of the recession. (3) **Simplicity**: a single target for the growth of total nominal income
+Is arguably easier to communicate than an inflation target. (4) **Financial stability**: by not
+Overtightening after supply shocks, NGDP targeting may reduce the risk of triggering a financial
+Crisis. Case against: (1) **Measurement problems**: GDP data is revised frequently and with long
+Lags (3–6 months). The `` `{BoE}` `` might be targeting an incorrect number. Inflation data, by
+Contrast, is available monthly with less revision. (2) **No precedent**: no major central bank has
+Adopted NGDP targeting, so there is no real-world evidence of its effectiveness. (3) **Legitimacy**:
 NGDP targeting could be seen as "giving up on price stability" — the public may resist a framework
-that explicitly tolerates higher inflation. (4) **Confusion**: the public understands "2% inflation"
-but may not understand "5% nominal GDP growth." (5) **Distributional effects**: accommodative policy
-after supply shocks may benefit borrowers at the expense of savers. Conclusion: NGDP targeting is
-intellectually appealing but faces significant practical obstacles. The best reform may be a more
-flexible inflation target (average inflation targeting, as adopted by the Fed in 2020) rather than a
-complete regime change.
+That explicitly tolerates higher inflation. (4) **Confusion**: the public understands "2% inflation"
+But may not understand "5% nominal GDP growth." (5) **Distributional effects**: accommodative policy
+After supply shocks may benefit borrowers at the expense of savers. Conclusion: NGDP targeting is
+Intellectually appealing but faces significant practical obstacles. The best reform may be a more
+Flexible inflation target (average inflation targeting, as adopted by the Fed in 2020) rather than a
+Complete regime change.
 </details>
 
 :::
@@ -722,7 +722,7 @@ complete regime change.
 :::
 
 :::danger
-danger
+Danger
 
 - **Treating Keynesianism and monetarism as mutually exclusive:** Modern macroeconomic policy is a synthesis of both views. Keynesian demand management is appropriate during recessions (especially at the zero lower bound), while monetarist concerns about inflation dominate near full employment. The "correct" view depends on the economic context.
 
@@ -767,7 +767,7 @@ $$i = 2 + 2 + 0.5(6 - 2) + 0.5(1.0 - 2.5) = 4 + 2 - 0.75 = 5.25\%$$
 **Application to the UK (2022-2023):**
 The Bank Rate was raised from 0.25% to 5.25% between December 2021 and August 2023. Inflation peaked at 11.1% in October 2022.
 
-Taylor Rule recommendation at peak inflation ($\pi = 11.1\%$, $g = 0.2\%$):
+Taylor Rule recommendation at peak inflation ($\pi = 11.1\%$$g = 0.2\%$):
 $$i = 2 + 2 + 0.5(11.1 - 2) + 0.5(0.2 - 2.5) = 4 + 4.55 - 1.15 = 7.4\%$$
 
 The actual Bank Rate (5.25%) was BELOW the Taylor Rule recommendation, suggesting monetary policy was still accommodative relative to the inflation outlook. This gap partly reflected the cost-push nature of the inflation (energy prices, supply chain disruption), which the BoE judged would be temporary.
@@ -787,7 +787,7 @@ $\pi^e = \pi^a = 2\%$. Government sets $\pi = 2\%$.
 $u = u^*$. Loss $= 0 + 0 = 0$. First-best outcome.
 
 **If the government reneges (discretion):**
-After wages are set at $\pi^e = 2\%$, the government minimises:
+After wages are set at $\pi^e = 2\%$The government minimises:
 $$L = (\pi - 2)^2 + \beta(u^* - \alpha(\pi - 2) - u^*)^2 = (\pi - 2)^2 + \beta\alpha^2(\pi - 2)^2 = (\pi - 2)^2(1 + \beta\alpha^2)$$
 
 Minimising: $\pi^* = 2$ (optimal to stick to the promise). Loss is still zero.
@@ -810,9 +810,9 @@ $$u = u^* + \epsilon - \alpha\left(\frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \
 
 The output gain from surprise inflation is zero (since workers anticipate it), but inflation is higher. This is the **inflationary bias** of discretionary policy.
 
-**Numerical example:** $\beta = 1$, $\alpha = 0.5$, $\pi^* = 2\%$, $\epsilon = 2\%$.
+**Numerical example:** $\beta = 1$$\alpha = 0.5$$\pi^* = 2\%$$\epsilon = 2\%$.
 
-Under rules (credible commitment): $\pi = 2\%$, $u = u^* + 2\%$. Loss $= 0 + 4 = 4$.
+Under rules (credible commitment): $\pi = 2\%$$u = u^* + 2\%$. Loss $= 0 + 4 = 4$.
 
 Under discretion: $\pi = 2 + \frac◆LB◆1 \times 0.5◆RB◆◆LB◆1 + 1 \times 0.25◆RB◆ \times 2 = 2 + 0.8 = 2.8\%$. $u = u^* + \frac{2}{1.25} = u^* + 1.6\%$.
 
@@ -847,14 +847,14 @@ Discretion produces a LOWER loss than rules because the government can partially
 **Keynesian policy:** Government increases $G$ by 20 with $k = 5$.
 $\Delta Y = 5 \times 20 = 100$. New $Y = 500$. Economy returns to full employment.
 Cost: budget deficit increases by 20 (before multiplier effects on tax revenue).
-Risk: if the multiplier is overestimated ($k = 3$), $\Delta Y = 60$, new $Y = 460$. Policy is insufficient.
+Risk: if the multiplier is overestimated ($k = 3$), $\Delta Y = 60$New $Y = 460$. Policy is insufficient.
 
 **Monetarist approach:** Wait for self-correction.
-- Year 1: $Y = 400$, $u = 8\%$ (natural rate 5%). Wages fall 2%.
-- Year 2: SRAS shifts right. $Y = 440$, $P$ falls. $u = 6.4\%$.
-- Year 3: $Y = 470$, $u = 5.6\%$.
-- Year 4: $Y = 490$, $u = 5.1\%$.
-- Year 5: $Y = 500$, $u = 5\%$. Full employment restored.
+- Year 1: $Y = 400$$u = 8\%$ (natural rate 5%). Wages fall 2%.
+- Year 2: SRAS shifts right. $Y = 440$$P$ falls. $u = 6.4\%$.
+- Year 3: $Y = 470$$u = 5.6\%$.
+- Year 4: $Y = 490$$u = 5.1\%$.
+- Year 5: $Y = 500$$u = 5\%$. Full employment restored.
 
 The economy self-corrects in approximately 5 years, during which cumulative lost output is approximately $100 + 60 + 30 + 10 = 200$ units of GDP.
 
@@ -950,9 +950,9 @@ The 100 basis point reduction in 10-year rates reduces mortgage rates, corporate
 **Taylor Rule calculation (4 marks):**
 Using $i = 2 + 2 + 0.5(\pi - 2) + 0.5(g - 2.5)$:
 
-- December 2021: $\pi = 5.4\%$, $g = 0.9\%$. Taylor rate $= 4 + 0.5(3.4) + 0.5(-1.6) = 4 + 1.7 - 0.8 = 4.9\%$. Actual Bank Rate: 0.25%. Policy was far below the Taylor Rule.
-- June 2022: $\pi = 9.4\%$, $g = 0.2\%$. Taylor rate $= 4 + 0.5(7.4) + 0.5(-2.3) = 4 + 3.7 - 1.15 = 6.55\%$. Actual Bank Rate: 1.25%. Still well below.
-- August 2023: $\pi = 6.8\%$, $g = 0.2\%$. Taylor rate $= 4 + 0.5(4.8) + 0.5(-2.3) = 4 + 2.4 - 1.15 = 5.25\%$. Actual Bank Rate: 5.25%. Now consistent.
+- December 2021: $\pi = 5.4\%$$g = 0.9\%$. Taylor rate $= 4 + 0.5(3.4) + 0.5(-1.6) = 4 + 1.7 - 0.8 = 4.9\%$. Actual Bank Rate: 0.25%. Policy was far below the Taylor Rule.
+- June 2022: $\pi = 9.4\%$$g = 0.2\%$. Taylor rate $= 4 + 0.5(7.4) + 0.5(-2.3) = 4 + 3.7 - 1.15 = 6.55\%$. Actual Bank Rate: 1.25%. Still well below.
+- August 2023: $\pi = 6.8\%$$g = 0.2\%$. Taylor rate $= 4 + 0.5(4.8) + 0.5(-2.3) = 4 + 2.4 - 1.15 = 5.25\%$. Actual Bank Rate: 5.25%. Now consistent.
 
 **Assessment (4 marks):**
 The BoE was "behind the curve" in 2021-2022, keeping rates too low relative to the Taylor Rule recommendation. This contributed to inflation becoming embedded. By August 2023, policy had caught up.
@@ -1202,3 +1202,11 @@ If the deficit rises to 15%: central bank purchases 6% of GDP. Inflation rises t
 - This framework has delivered low and stable inflation (2% +/- 1% for most of the period 1997-2021).
 
 **Evaluation:** central bank independence is not a panacea. If the government ignores fiscal rules and runs large deficits, the central bank faces a dilemma: tighten monetary policy (causing a recession) or accommodate the deficit (losing credibility). The Truss mini-budget (2022) demonstrated this tension: the government's unfunded tax cuts were inconsistent with the BoE's inflation target, triggering a gilt market crisis and forcing a policy reversal.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

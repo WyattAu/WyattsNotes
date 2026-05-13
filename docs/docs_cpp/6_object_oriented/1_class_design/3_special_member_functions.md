@@ -11,13 +11,13 @@ slug: special-member-function-generation-rules
 # Special Member Function Generation Rules
 
 The compiler automatically generates special member functions (SMFs) — destructor, copy/move
-constructors, and copy/move assignment operators — according to well-defined rules. Understanding
-these rules is critical for writing classes that manage resources correctly.
+Constructors, and copy/move assignment operators — according to well-defined rules. Understanding
+These rules is critical for writing classes that manage resources correctly.
 
 ## 3.1 The Rule of Five
 
 A class with user-defined resource management must define or delete each of the five **special
-member functions** (SMFs) [N4950 §11.4.5.3]:
+Member functions** (SMFs) [N4950 §11.4.5.3]:
 
 1. Destructor: `~T()`
 2. Copy constructor: `T(const T&)`
@@ -26,37 +26,37 @@ member functions** (SMFs) [N4950 §11.4.5.3]:
 5. Move assignment operator: `T& operator=(T&&)` (since C++11)
 
 If any one of these is user-declared, the others are not implicitly generated under various
-conditions, leading to potentially incorrect or surprising behavior.
+Conditions, leading to potentially incorrect or surprising behavior.
 
 ## 3.2 Default Generation Rules
 
 The compiler implicitly declares a default SMF if the class has no user-declared constructor,
-destructor, copy/move operations, or other conditions that would trigger implicit deletion. The
-exact rules are [N4950 §11.4.5.3]:
+Destructor, copy/move operations, or other conditions that would trigger implicit deletion. The
+Exact rules are [N4950 §11.4.5.3]:
 
-| SMF                  | Implicitly declared if...                                           | Implicitly defined as default if...                  | Implicitly deleted if...                                                                                                 |
+| SMF | Implicitly declared if... | Implicitly defined as default if... | Implicitly deleted if... |
 | -------------------- | ------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Destructor**       | No user-declared destructor                                         | Trivial (all bases/members have trivial destructors) | Any base or member has deleted/inaccessible destructor                                                                   |
-| **Copy constructor** | No user-declared move constructor or move assignment                | Trivial                                              | Any base/member has deleted copy ctor, or has move ctor, or volatile member                                              |
-| **Copy assignment**  | No user-declared move constructor or move assignment                | Trivial                                              | Any base/member has deleted copy assign, or has move assign, or reference member, or volatile member                     |
-| **Move constructor** | No user-declared copy ctor, copy assign, move assign, or destructor | Trivial                                              | Any base/member has deleted move ctor or inaccessible non-move ctor, or has copy-only semantics                          |
-| **Move assignment**  | No user-declared copy ctor, copy assign, move ctor, or destructor   | Trivial                                              | Any base/member has deleted move assign or inaccessible non-move assign, or has copy-only semantics, or reference member |
+| **Destructor** | No user-declared destructor | Trivial (all bases/members have trivial destructors) | Any base or member has deleted/inaccessible destructor |
+| **Copy constructor** | No user-declared move constructor or move assignment | Trivial | Any base/member has deleted copy ctor, or has move ctor, or volatile member |
+| **Copy assignment** | No user-declared move constructor or move assignment | Trivial | Any base/member has deleted copy assign, or has move assign, or reference member, or volatile member |
+| **Move constructor** | No user-declared copy ctor, copy assign, move assign, or destructor | Trivial | Any base/member has deleted move ctor or inaccessible non-move ctor, or has copy-only semantics |
+| **Move assignment** | No user-declared copy ctor, copy assign, move ctor, or destructor | Trivial | Any base/member has deleted move assign or inaccessible non-move assign, or has copy-only semantics, or reference member |
 
 :::warning
 C++11 vs C++14+ Move Generation In C++11, if any SMF is user-declared, the move
-constructor and move assignment are **not** implicitly declared. In C++14 and later, this remains
-true — the Standard was not changed. The critical point: declaring a destructor suppresses implicit
-move generation.
+Constructor and move assignment are **not** implicitly declared. In C++14 and later, this remains
+True — the Standard was not changed. The critical point: declaring a destructor suppresses implicit
+Move generation.
 :::
 
 ## 3.3 `= default` and `= delete`
 
 The `= default` specifier explicitly requests the compiler-generated default implementation [N4950
 §11.4.5.2]. It can appear inside the class body or out-of-line. When applied out-of-line, the SMF is
-only generated if it is odr-used.
+Only generated if it is odr-used.
 
 The `= delete` specifier explicitly suppresses the SMF [N4950 §11.4.5.2]. Any use of a deleted
-function is ill-formed.
+Function is ill-formed.
 
 ```cpp
 #include <cstdio>
@@ -232,14 +232,14 @@ int main() {
 ## 3.6 Trivial vs Non-Trivial Special Member Functions
 
 A special member function is **trivial** if it is not user-provided, its class has no virtual
-functions or virtual base classes, and all base classes and members have trivial versions of the
-same SMF [N4950 §11.4.5.3]. Trivial SMFs have important implications:
+Functions or virtual base classes, and all base classes and members have trivial versions of the
+Same SMF [N4950 §11.4.5.3]. Trivial SMFs have important implications:
 
-- **Trivially copyable types** can be copied with `memcpy` — this is the foundation of
-  `std::is_trivially_copyable` [N4950 §20.15.4.3].
-- **Trivially destructible types** do not require destructor calls during stack unwinding.
+- ** copyable types** can be copied with `memcpy` — this is the foundation of
+ `std::is_trivially_copyable` [N4950 §20.15.4.3].
+- ** destructible types** do not require destructor calls during stack unwinding.
 - **Trivial default constructors** allow zero-initialization and static storage duration objects to
-  be placed in `.bss` (zero-initialized memory segment).
+ be placed in `.bss` (zero-initialized memory segment).
 
 ```cpp
 #include <iostream>
@@ -286,9 +286,9 @@ int main() {
 ## 3.7 The Rule of Zero
 
 The **Rule of Zero** states that classes that do not directly manage resources should not declare
-any special member functions. Instead, they should compose resource-owning standard library types
-(`std::string`, `std::vector`, `std::unique_ptr`, `std::shared_ptr`) which handle their own resource
-management correctly [N4950 §11.4.5.3]:
+Any special member functions. Instead, they should compose resource-owning standard library types
+(`std::string``std::vector``std::unique_ptr``std::shared_ptr`) which handle their own resource
+Management correctly [N4950 §11.4.5.3]:
 
 ```cpp
 #include <iostream>
@@ -340,17 +340,17 @@ int main() {
 Use the Rule of Zero whenever possible. Only fall back to the Rule of Five when:
 
 1. You need to manage a raw resource directly (e.g., a file descriptor, a network socket, a custom
-   allocator).
+ allocator).
 2. You need to support copying of a type that contains a `unique_ptr` (by implementing a deep copy
-   in the copy constructor).
+ in the copy constructor).
 3. You need non-default move semantics (e.g., a type that caches computed data and wants to transfer
-   the cache).
+ the cache).
 
 ## 3.8 The Destructor Destructor-Ordering Guarantee
 
 C++ guarantees that members are destroyed in **reverse order of construction**, and base classes are
-destroyed after all members [N4950 §11.9.6]. This ordering is deterministic and does not depend on
-the order of member declarations in the destructor body:
+Destroyed after all members [N4950 §11.9.6]. This ordering is deterministic and does not depend on
+The order of member declarations in the destructor body:
 
 ```cpp
 #include <iostream>
@@ -393,8 +393,8 @@ int main() {
 ### Destructor Order and Exception Safety
 
 The reverse-destruction-order guarantee is critical for exception safety. If a member's destructor
-throws, all previously-constructed members (constructed after it) have already been destroyed. No
-double-destruction occurs:
+Throws, all previously-constructed members (constructed after it) have already been destroyed. No
+Double-destruction occurs:
 
 ```cpp
 #include <iostream>
@@ -429,8 +429,8 @@ int main() {
 ## 3.9 `= default` Out-of-Line: Lazy Generation
 
 When `= default` is used **out-of-line** (outside the class body), the SMF is only generated if it
-is odr-used. This can reduce compile time and binary size for types with complex implicitly-
-generated SMFs:
+Is odr-used. This can reduce compile time and binary size for types with complex implicitly-
+Generated SMFs:
 
 ```cpp
 #include <iostream>
@@ -465,8 +465,8 @@ int main() {
 ## 3.10 P0609R3: Fixing the "Destructors Suppress Move" Problem
 
 C++11 introduced a defect: declaring a destructor (even `= default`) suppresses implicit move
-constructor and move assignment generation. This was a pragmatic decision to avoid breaking C++03
-code that relied on implicit copy semantics, but it creates a common surprise:
+Constructor and move assignment generation. This was a pragmatic decision to avoid breaking C++03
+Code that relied on implicit copy semantics, but it creates a common surprise:
 
 ```cpp
 #include <iostream>
@@ -536,8 +536,8 @@ int main() {
 ### 1. Copy Assignment Without Self-Assignment Check
 
 A copy assignment operator that does not check for self-assignment (`a = a`) can cause resource
-corruption. The copy-and-swap idiom naturally handles self-assignment, but manual implementations
-must check:
+Corruption. The copy-and-swap idiom handles self-assignment, but manual implementations
+Must check:
 
 ```cpp
 #include <cstring>
@@ -575,7 +575,7 @@ struct Good {
 ### 2. Move Assignment Without Cleanup
 
 A move assignment operator that does not release the current resource before taking ownership of the
-source's resource causes a memory leak:
+Source's resource causes a memory leak:
 
 ```cpp
 #include <cstring>
@@ -626,9 +626,9 @@ int main() {
 ### 4. Implicit Move and Return Statements
 
 When a function returns by value and the return expression names a local variable, the compiler
-first tries NRVO, then falls back to treating the return as an implicit move (if the move
-constructor is available). If the move constructor is deleted or not declared, it falls back to
-copy. Understanding this chain prevents the common mistake of writing `return std::move(local)`:
+First tries NRVO, then falls back to treating the return as an implicit move (if the move
+Constructor is available). If the move constructor is deleted or not declared, it falls back to
+Copy. Understanding this chain prevents the common mistake of writing `return std::move(local)`:
 
 ```cpp
 #include <iostream>
@@ -659,3 +659,11 @@ int main() {
 - [Operator Overloading](./4_operator_overloading.md)
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

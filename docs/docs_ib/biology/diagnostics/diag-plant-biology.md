@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-$E = \frac{hc}{\lambda}$, where $h = 6.626 \times 10^{-34}\ \text{J s}$, $c = 2.998 \times 10^8\ \text{m s}^{-1}$.
+$E = \frac{hc}{\lambda}$Where $h = 6.626 \times 10^{-34}\ \text{J s}$$c = 2.998 \times 10^8\ \text{m s}^{-1}$.
 
 PSII ($680\ \text{nm}$): $E = \frac{(6.626 \times 10^{-34})(2.998 \times 10^8)}{680 \times 10^{-9}} = 2.92 \times 10^{-19}\ \text{J}$ per photon.
 
@@ -30,11 +30,11 @@ Total energy absorbed (2 photons from PSII + 2 from PSI): $2 \times 176 + 2 \tim
 
 Efficiency: $\frac{531.5}{694} \times 100 = 76.6\%$.
 
-This is the theoretical maximum efficiency of the light-dependent reactions. In practice, overall photosynthetic efficiency (including the Calvin cycle) is much lower, typically 3--6% of incident solar energy.
+This is the theoretical maximum efficiency of the light-dependent reactions. In practice, overall photosynthetic efficiency (including the Calvin cycle) is much lower, 3--6% of incident solar energy.
 
 ---
 ### UT-2: Transpiration and Water Potential
-**Question:** A leaf has a stomatal pore of dimensions $10\ \mu\text{m} \times 40\ \mu\text{m}$. The leaf has 200 stomata per $\text{mm}^2$ on the lower surface only. The water vapour concentration inside the leaf is $23\ \text{g m}^{-3}$ and outside is $10\ \text{g m}^{-3}$. The diffusion coefficient of water vapour in air is $2.4 \times 10^{-5}\ \text{m}^2\text{s}^{-1}$, and the boundary layer thickness is $1\ \text{mm}$. Estimate the transpiration rate from $1\ \text{cm}^2$ of leaf surface in $\text{mg hr}^{-1}$.
+**Question:** A leaf has a stomatal pore of dimensions $10\ \mu\text{m} \times 40\ \mu\text{m}$. The leaf has 200 stomata per $\text{mm}^2$ on the lower surface only. The water vapour concentration inside the leaf is $23\ \text{g m}^{-3}$ and outside is $10\ \text{g m}^{-3}$. The diffusion coefficient of water vapour in air is $2.4 \times 10^{-5}\ \text{m}^2\text{s}^{-1}$And the boundary layer thickness is $1\ \text{mm}$. Estimate the transpiration rate from $1\ \text{cm}^2$ of leaf surface in $\text{mg hr}^{-1}$.
 
 **Solution:**
 

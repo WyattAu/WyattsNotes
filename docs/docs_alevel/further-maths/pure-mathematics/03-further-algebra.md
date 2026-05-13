@@ -13,18 +13,18 @@ sidebar_position: 3
 ## Further Algebra
 
 Further algebra builds on the polynomial and algebraic techniques from A Level mathematics,
-extending to partial fractions with irreducible quadratics, the relationships between roots and
-coefficients of polynomial equations, and systematic summation of series using the method of
-differences.
+Extending to partial fractions with irreducible quadratics, the relationships between roots and
+Coefficients of polynomial equations, and systematic summation of series using the method of
+Differences.
 
 ### Board Coverage
 
-| Board   | Paper   | Notes                                                    |
+| Board | Paper | Notes |
 | ------- | ------- | -------------------------------------------------------- |
-| AQA     | Paper 1 | Further partial fractions; roots and coefficients        |
-| Edexcel | FP1/FP2 | Summation of series; roots of polynomials                |
-| OCR (A) | Paper 1 | All topics; summation of series emphasised               |
-| CIE     | P1/P3   | Summation of series required; partial fractions in depth |
+| AQA | Paper 1 | Further partial fractions; roots and coefficients |
+| Edexcel | FP1/FP2 | Summation of series; roots of polynomials |
+| OCR (A) | Paper 1 | All topics; summation of series emphasised |
+| CIE | P1/P3 | Summation of series required; partial fractions in depth |
 
 <hr />
 
@@ -32,11 +32,11 @@ differences.
 
 ### 1.1 Polynomial long division
 
-To divide $P(x)$ by $(ax + b)$, perform polynomial long division (or synthetic division) to obtain:
+To divide $P(x)$ by $(ax + b)$Perform polynomial long division (or synthetic division) to obtain:
 
 $$P(x) = (ax + b)Q(x) + R$$
 
-where $Q(x)$ is the quotient and $R$ is a constant remainder.
+Where $Q(x)$ is the quotient and $R$ is a constant remainder.
 
 ### Proof of the remainder theorem
 
@@ -46,7 +46,7 @@ Let $P(x)$ be divided by $(x - c)$:
 
 $$P(x) = (x - c)Q(x) + R$$
 
-for some polynomial $Q(x)$ and constant $R$. Setting $x = c$:
+For some polynomial $Q(x)$ and constant $R$. Setting $x = c$:
 
 $$P(c) = (c - c)Q(c) + R = 0 + R = R$$
 
@@ -56,20 +56,20 @@ $\square$
 
 ### 1.2 The factor theorem
 
-**Definition.** If $P(c) = 0$, then $(x - c)$ is a factor of $P(x)$. This is the _factor theorem_.
+**Definition.** If $P(c) = 0$Then $(x - c)$ is a factor of $P(x)$. This is the _factor theorem_.
 
 This follows directly from the remainder theorem: if the remainder is zero, the divisor is a factor.
 
 ### 1.3 Finding unknown coefficients
 
 When a polynomial has unknown coefficients, use the factor theorem by substituting known roots, or
-use the remainder theorem by evaluating at specified points.
+Use the remainder theorem by evaluating at specified points.
 
 <details>
 <summary>Worked Example: Finding unknown coefficients</summary>
 
 The polynomial $P(x) = x^3 + ax^2 + bx - 6$ is divisible by $(x - 1)$ and leaves remainder $-24$
-when divided by $(x + 3)$. Find $a$ and $b$.
+When divided by $(x + 3)$. Find $a$ and $b$.
 
 Since $(x - 1)$ is a factor: $P(1) = 1 + a + b - 6 = 0 \implies a + b = 5$ ... (i)
 
@@ -88,7 +88,7 @@ $P(x) = x^3 + 2x^2 + 3x - 6$.
 ## 2. Partial Fractions with Irreducible Quadratics
 
 In A Level, partial fractions involved only linear factors. In further mathematics, denominators may
-contain irreducible quadratic factors, requiring a different decomposition.
+Contain irreducible quadratic factors, requiring a different decomposition.
 
 **Definition.** A quadratic $x^2 + cx + d$ is _irreducible_ if it has no real roots, i.e.
 $\Delta = c^2 - 4d < 0$.
@@ -123,7 +123,7 @@ $$\frac{3x + 5}{(x + 1)(x^2 + 1)} = \frac{1}{x + 1} + \frac{-2x + 4}{x^2 + 1}$$
 $$\boxed{\frac{px^2 + qx + r}{(x^2 + a)^2} = \frac{Ax + B}{x^2 + a} + \frac{Cx + D}{(x^2 + a)^2}}$$
 
 When the irreducible quadratic is repeated, the numerators follow the same pattern as repeated
-linear factors.
+Linear factors.
 
 ### 2.3 Type 3: Distinct irreducible quadratics
 
@@ -161,7 +161,7 @@ $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{1}{x^2 + 4} - \frac{3}{(x^2 + 4)^2}$$
 
 If $P(x) = ax^3 + bx^2 + cx + d = a(x - \alpha)(x - \beta)(x - \gamma)$ where $\alpha, \beta,
 \gamma$
-are the roots, then:
+Are the roots, then:
 
 $$\boxed{\alpha + \beta + \gamma = -\frac{b}{a}}$$
 
@@ -185,7 +185,7 @@ Comparing coefficients with $ax^3 + bx^2 + cx + d$:
 
 - $x^2$: $-a(\alpha + \beta + \gamma) = b \implies \alpha + \beta + \gamma = -\dfrac{b}{a}$
 - $x^1$:
-  $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{c}{a}$
+ $a(\alpha\beta + \alpha\gamma + \beta\gamma) = c \implies \alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{c}{a}$
 - $x^0$: $-a\alpha\beta\gamma = d \implies \alpha\beta\gamma = -\dfrac{d}{a}$
 
 $\square$
@@ -249,7 +249,7 @@ This is a _telescoping sum_ — all intermediate terms cancel.
 
 ### Proof
 
-Note that $r^3 - (r-1)^3 = 3r^2 - 3r + 1$, so $r^2 = \dfrac{r^3 - (r-1)^3 + 3r - 1}{3}$.
+Note that $r^3 - (r-1)^3 = 3r^2 - 3r + 1$So $r^2 = \dfrac{r^3 - (r-1)^3 + 3r - 1}{3}$.
 
 Summing from $r = 1$ to $n$:
 
@@ -271,7 +271,7 @@ $$\boxed{\sum_{r=1}^{n} r(r+1) = \frac{n(n+1)(n+2)}{3}}$$
 
 $$\boxed{\sum_{r=1}^{n} r(r+1)(r+2) = \frac{n(n+1)(n+2)(n+3)}{4}}$$
 
-In general, $\displaystyle\sum_{r=1}^{n} \binom{r+k}{k+1} = \binom{n+k+1}{k+2}$.
+$\displaystyle\sum_{r=1}^{n} \binom{r+k}{k+1} = \binom{n+k+1}{k+2}$.
 
 <hr />
 
@@ -280,7 +280,7 @@ In general, $\displaystyle\sum_{r=1}^{n} \binom{r+k}{k+1} = \binom{n+k+1}{k+2}$.
 ### 5.1 Using partial fractions for summation
 
 When the general term of a series can be decomposed into partial fractions, the method of
-differences often applies.
+Differences often applies.
 
 <details>
 <summary>Worked Example: Sum using method of differences</summary>
@@ -349,7 +349,7 @@ $$= \frac{(k+1)^2[k^2 + 4(k+1)]}{4} = \frac{(k+1)^2(k+2)^2}{4} = \left[\frac{(k+
 ✓ $\square$
 
 :::info info summation formulae. Edexcel FP2 requires summation of series including method of
-differences. AQA covers summation in the context of mathematical induction. :::
+Differences. AQA covers summation in the context of mathematical induction. :::
 
 <hr />
 
@@ -374,7 +374,7 @@ $$\boxed{\sum_{r=1}^{n} [g(r) - g(r+1)] = g(1) - g(n+1)}$$
 <details>
 <summary>Hint</summary>
 
-Since $x^2 + 2x + 5 = (x+1)^2 + 4$ has $\Delta = 4 - 20 < 0$, it is irreducible. Use the form
+Since $x^2 + 2x + 5 = (x+1)^2 + 4$ has $\Delta = 4 - 20 < 0$It is irreducible. Use the form
 $\dfrac{A}{x+2} + \dfrac{Bx + C}{x^2 + 2x + 5}$.
 
 </details>
@@ -399,7 +399,7 @@ $$\frac{2x^2 + 3x + 4}{(x + 2)(x^2 + 2x + 5)} = \frac{6/5}{x + 2} + \frac{2x - 1
 <hr />
 
 **Problem 2.** The equation $x^3 - 4x^2 + x + 6 = 0$ has roots $\alpha, \beta, \gamma$. Find the
-value of
+Value of
 $\dfrac◆LB◆1◆RB◆◆LB◆\alpha\beta◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\alpha\gamma◆RB◆ + \dfrac◆LB◆1◆RB◆◆LB◆\beta\gamma◆RB◆$.
 
 <details>
@@ -462,8 +462,8 @@ $$\frac{3x + 1}{(x^2 + 1)(x^2 + 4)} = \frac{x + 1/3}{x^2 + 1} + \frac{-x - 1/3}{
 <summary>Hint</summary>
 
 Use partial fractions to show that
-$\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$, then apply the method of
-differences.
+$\dfrac{2}{r(r+1)(r+2)} = \dfrac{1}{r(r+1)} - \dfrac{1}{(r+1)(r+2)}$Then apply the method of
+Differences.
 
 </details>
 
@@ -483,7 +483,7 @@ $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
 <hr />
 
 **Problem 5.** The equation $3x^3 + px^2 + qx + 12 = 0$ has roots $\alpha, \beta, \gamma$ such that
-$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$, $q$, and
+$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$$q$And
 $\alpha\beta + \alpha\gamma + \beta\gamma$.
 
 <details>
@@ -500,7 +500,7 @@ $\alpha + \beta + \gamma = -\dfrac{p}{3} = 4 \implies p = -12$.
 
 $\alpha\beta\gamma = -\dfrac{12}{3} = -4$. This is consistent with the given information. ✓
 
-$\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{q}{3}$, so
+$\alpha\beta + \alpha\gamma + \beta\gamma = \dfrac{q}{3}$So
 $q = 3(\alpha\beta + \alpha\gamma + \beta\gamma)$.
 
 We need additional information. Note that
@@ -508,11 +508,11 @@ $\alpha^2 + \beta^2 + \gamma^2 = (\alpha + \beta + \gamma)^2 - 2(\alpha\beta + \
 $= 16 - 2S$ where $S = \alpha\beta + \alpha\gamma + \beta\gamma$.
 
 Without further information about the individual roots, $S$ cannot be determined uniquely. However,
-we know $p = -12$ and $q$ depends on $S$.
+We know $p = -12$ and $q$ depends on $S$.
 
-If the question provides that the roots are integers: trying factors of $\dfrac{-4}{3}$, the roots
-are $1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 2, 3$ give sum = 4 ✓ and
-product = $-6$ ✗.
+If the question provides that the roots are integers: trying factors of $\dfrac{-4}{3}$The roots
+Are $1, 1, 2$ (checking: sum = 4 ✓, product = 2 ≠ $-4$ ✗). The roots $-1, 2, 3$ give sum = 4 ✓ and
+Product = $-6$ ✗.
 
 $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
 
@@ -527,7 +527,7 @@ $p = -12$ and $q = 3S$ where $S$ requires more information about the roots.
 
 Use partial fractions:
 $\dfrac{1}{r(r+3)} = \dfrac{1}{3}\!\left(\dfrac{1}{r} - \dfrac{1}{r+3}\right)$. Three terms survive
-the telescoping.
+The telescoping.
 
 </details>
 
@@ -548,7 +548,7 @@ $$= \frac{1}{3}\left(\frac{11}{6} - \frac{1}{n+1} - \frac{1}{n+2} - \frac{1}{n+3
 **Problem 7.** The polynomial $P(x) = x^4 + ax^3 + bx^2 + cx + d$ has roots
 $\alpha, \beta, \gamma,
 \delta$. Given that $\alpha + \beta = 3$, $\gamma + \delta = -5$, and
-$\alpha\beta = 2$, find $a$ and $b$.
+$\alpha\beta = 2$Find $a$ and $b$.
 
 <details>
 <summary>Hint</summary>
@@ -577,7 +577,7 @@ $a = 2$ and $b$ depends on $\gamma\delta$ (which requires further information to
 <hr />
 
 **Problem 8.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r(r+1) = \frac{n(n+1)(n+2)}{3}$
-for all $n \in \mathbb{Z}^+$.
+For all $n \in \mathbb{Z}^+$.
 
 <details>
 <summary>Hint</summary>
@@ -633,29 +633,29 @@ $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{
 <hr />
 
 **Problem 10.** The cubic equation $x^3 + px^2 + qx + r = 0$ has roots $\alpha, \beta, \gamma$ where
-$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$, $q$, and $r$ in terms of $\alpha$, and hence
-find the roots when $p = -6$.
+$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$$q$And $r$ in terms of $\alpha$And hence
+Find the roots when $p = -6$.
 
 <details>
 <summary>Hint</summary>
 
-Substitute the root relationships into $\alpha + \beta + \gamma = -p$,
-$\alpha\beta + \alpha\gamma + \beta\gamma = q$, and $\alpha\beta\gamma = -r$.
+Substitute the root relationships into $\alpha + \beta + \gamma = -p$
+$\alpha\beta + \alpha\gamma + \beta\gamma = q$And $\alpha\beta\gamma = -r$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$\alpha + 2\alpha + 3\alpha = 6\alpha = -p$, so $p = -6\alpha$.
+$\alpha + 2\alpha + 3\alpha = 6\alpha = -p$So $p = -6\alpha$.
 
 $\alpha(2\alpha) + \alpha(3\alpha) + (2\alpha)(3\alpha) = 2\alpha^2 + 3\alpha^2 + 6\alpha^2 = 11\alpha^2 = q$.
 
-$\alpha(2\alpha)(3\alpha) = 6\alpha^3 = -r$, so $r = -6\alpha^3$.
+$\alpha(2\alpha)(3\alpha) = 6\alpha^3 = -r$So $r = -6\alpha^3$.
 
 When $p = -6$: $-6\alpha = -6 \implies \alpha = 1$.
 
-Then $q = 11$, $r = -6$, and the roots are $1, 2, 3$.
+Then $q = 11$$r = -6$And the roots are $1, 2, 3$.
 
 Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 
@@ -670,7 +670,7 @@ Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 ### Example 8.1: Using the binomial theorem with negative and fractional indices
 
 **Problem.** Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^{-1/2}$ up to and including
-the term in $x^4$.
+The term in $x^4$.
 
 **Solution.** Using the general binomial expansion for $|x| < \dfrac{1}{2}$:
 
@@ -688,7 +688,7 @@ $\dfrac◆LB◆\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)\left(-\frac{5}
 ### Example 8.2: Roots of a cubic with a substitution
 
 **Problem.** The cubic equation $x^3 - 3x^2 + 4 = 0$ has roots $\alpha, \beta, \gamma$. Find the
-value of $\alpha^2 + \beta^2 + \gamma^2$.
+Value of $\alpha^2 + \beta^2 + \gamma^2$.
 
 **Solution.** By Vieta's formulae: $\alpha + \beta + \gamma = 3$ and
 $\alpha\beta + \beta\gamma + \gamma\alpha = 0$.
@@ -710,7 +710,7 @@ As $n \to \infty$: $\displaystyle\sum_{r=1}^{\infty} \frac{1}{r(r+1)} = \boxed{1
 
 **Problem.** Prove by induction that $\displaystyle\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Solution.** **Base case** ($n=1$): LHS $= 1$, RHS
+**Solution.** **Base case** ($n=1$): LHS $= 1$RHS
 $= \dfrac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
 
 **Inductive hypothesis:** Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
@@ -736,15 +736,15 @@ $$= \frac{1}{2}\left(1 - \frac{1}{2n+1}\right) = \boxed{\frac{n}{2n+1}}$$
 
 ### Example 8.6: Manipulating series with a given recurrence
 
-**Problem.** Given $u_1 = 1$ and $u_{n+1} = \dfrac{u_n}{u_n + 1}$, find
+**Problem.** Given $u_1 = 1$ and $u_{n+1} = \dfrac{u_n}{u_n + 1}$Find
 $\displaystyle\sum_{r=1}^{n} u_r$.
 
 **Solution.** Write $u_r$ in closed form. From the recurrence:
 $\dfrac{1}{u_{n+1}} = \dfrac{u_n + 1}{u_n} = 1 + \dfrac{1}{u_n}$.
 
-Let $v_n = \dfrac{1}{u_n}$. Then $v_{n+1} = 1 + v_n$, so $v_n = v_1 + (n-1)$.
+Let $v_n = \dfrac{1}{u_n}$. Then $v_{n+1} = 1 + v_n$So $v_n = v_1 + (n-1)$.
 
-Since $v_1 = \dfrac{1}{u_1} = 1$: $v_n = n$, so $u_n = \dfrac{1}{n}$.
+Since $v_1 = \dfrac{1}{u_1} = 1$: $v_n = n$So $u_n = \dfrac{1}{n}$.
 
 $$\sum_{r=1}^{n} u_r = \sum_{r=1}^{n} \frac{1}{r} = H_n$$
 
@@ -752,14 +752,14 @@ The $n$-th harmonic number. No simpler closed form exists.
 
 ### Example 8.7: Simultaneous equations via matrices
 
-**Problem.** Solve the system $x + 2y - z = 3$, $2x - y + z = 4$, $3x + y + 2z = 7$.
+**Problem.** Solve the system $x + 2y - z = 3$$2x - y + z = 4$$3x + y + 2z = 7$.
 
 **Solution.** In matrix form $\mathbf{M}\mathbf{x} = \mathbf{b}$:
 
 $$\mathbf{M} = \begin{pmatrix}1&2&-1\\2&-1&1\\3&1&2\end{pmatrix}$$
 
-$\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$, so the system has a unique
-solution.
+$\det(\mathbf{M}) = 1(2-1) - 2(4-3) + (-1)(2+3) = 1 - 2 - 5 = -6 \neq 0$So the system has a unique
+Solution.
 
 Using Cramer's rule:
 $x = \dfrac◆LB◆\det\begin{pmatrix}3&2&-1\\4&-1&1\\7&1&2\end{pmatrix}◆RB◆◆LB◆-6◆RB◆ = \dfrac{-6+16-11}{-6} = \dfrac{-1}{-6} = \dfrac{1}{6}$.
@@ -770,13 +770,13 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ## 9. Common Pitfalls
 
-| Pitfall                                                                                         | Correct Approach                                                                                                         |
+| Pitfall | Correct Approach |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Forgetting the condition $\|x\| < 1$ for binomial expansions                                    | Always state the convergence condition explicitly                                                                        |
-| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different                               |
-| Splitting partial fractions incorrectly for method of differences                               | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$                               |
-| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign             | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
-| Skipping the base case in induction proofs                                                      | The base case is essential — without it the induction chain is unanchored                                                |
+| Forgetting the condition $\|x\| < 1$ for binomial expansions | Always state the convergence condition explicitly |
+| Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different |
+| Splitting partial fractions incorrectly for method of differences | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$ |
+| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
+| Skipping the base case in induction proofs | The base case is essential — without it the induction chain is unanchored |
 
 ---
 
@@ -784,8 +784,8 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 
 ### Question 8
 
-The binomial expansion of $(1 + ax)^{-2}$, in ascending powers of $x$ up to and including the term
-in $x^3$, is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
+The binomial expansion of $(1 + ax)^{-2}$In ascending powers of $x$ up to and including the term
+In $x^3$Is $1 - 4x + 12x^2 + bx^3$. Find the values of $a$ and $b$.
 
 <details>
 <summary>Solution</summary>
@@ -807,7 +807,7 @@ $\boxed{a = 2, \; b = -32}$
 <details>
 <summary>Solution</summary>
 
-**Base case** ($n=1$): $7^1 - 1 = 6$, divisible by 6. ✓
+**Base case** ($n=1$): $7^1 - 1 = 6$Divisible by 6. ✓
 
 **Inductive hypothesis:** $7^k - 1 = 6m$ for some integer $m$.
 
@@ -851,7 +851,7 @@ $\alpha(2\alpha)(3\alpha) = -r \implies 6\alpha^3 = -r$.
 
 $p:q:r = -6\alpha : 11\alpha^2 : -6\alpha^3 = -6 : 11\alpha : -6\alpha^2$.
 
-For specific values, if $\alpha = 1$: $p:q:r = -6:11:-6$, giving
+For specific values, if $\alpha = 1$: $p:q:r = -6:11:-6$Giving
 $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$.
 
 </details>
@@ -887,28 +887,28 @@ The roots of unity and De Moivre's theorem connect algebra to complex numbers. S
 ### 11.2 Algebra and matrices
 
 Vieta's formulae are closely related to the characteristic equation of a matrix: the sum of
-eigenvalues equals the trace, and the product equals the determinant. See
+Eigenvalues equals the trace, and the product equals the determinant. See
 [Matrices](/docs/alevel/further-maths/pure-mathematics/further-matrices).
 
 ### 11.3 Series and calculus
 
 The binomial expansion and Maclaurin series are both infinite series representations of functions,
-used extensively in integration and differentiation. See
+Used extensively in integration and differentiation. See
 [Maclaurin and Taylor Series](/docs/alevel/further-maths/pure-mathematics/maclaurin-taylor-series).
 
 ---
 
 ## 12. Key Formulae Summary
 
-| Topic                 | Key Formula                                                                                      |
+| Topic | Key Formula |
 | --------------------- | ------------------------------------------------------------------------------------------------ |
-| General binomial      | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$                     |
-| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope                             |
-| Induction             | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$                                               |
-| Vieta's (cubic)       | $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
-| Sum of squares        | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$                                      |
-| Sum of cubes          | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$                                        |
-| Harmonic sum          | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$                          |
+| General binomial | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$ |
+| Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope |
+| Induction | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$ |
+| Vieta's (cubic) | $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
+| Sum of squares | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$ |
+| Sum of cubes | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$ |
+| Harmonic sum | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$ |
 
 ---
 
@@ -933,7 +933,7 @@ $2k^3 - 3k^2 - 3k - 1 > 0$ for $k \geq 4$.
 
 At $k=4$: $128-48-12-1 = 67 > 0$. ✓
 
-For $k > 4$: $2k^3$ grows faster than $3k^2 + 3k + 1$, so the inequality holds. $\blacksquare$
+For $k > 4$: $2k^3$ grows faster than $3k^2 + 3k + 1$So the inequality holds. $\blacksquare$
 
 </details>
 
@@ -958,7 +958,7 @@ $x^3$ coefficient: $\dfrac{1}{3} \cdot 8 + \dfrac{2}{3}(-1) = \dfrac{8-2}{3} = \
 ### Question 15
 
 The roots of $x^3 + px + q = 0$ are $\alpha, \beta, \gamma$. Express $\alpha^3 + \beta^3 + \gamma^3$
-in terms of $p$ and $q$.
+In terms of $p$ and $q$.
 
 <details>
 <summary>Solution</summary>
@@ -991,7 +991,7 @@ Analogous to integration by parts:
 
 $$\sum_{r=a}^{b} u_r \Delta v_r = [u_r v_r]_a^{b+1} - \sum_{r=a}^{b} (\Delta u_r) v_{r+1}$$
 
-where $\Delta f(r) = f(r+1) - f(r)$ is the forward difference operator.
+Where $\Delta f(r) = f(r+1) - f(r)$ is the forward difference operator.
 
 ### 14.3 Generating functions
 
@@ -1008,7 +1008,7 @@ Examples:
 $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ (Pascal's identity).
 
 This is the basis of Pascal's triangle and is proved combinatorially: choosing $k$ objects from $n$
-either includes or excludes a specific object.
+Either includes or excludes a specific object.
 
 ---
 
@@ -1043,7 +1043,7 @@ LHS: $\binom{2n}{n}$ chooses any $n$ from $2n$.
 RHS: choosing $k$ men and $n-k$ women for each $k$ gives
 $\displaystyle\sum_{k=0}^{n} \binom{n}{k}\binom{n}{n-k} = \sum_{k=0}^{n} \binom{n}{k}^2$.
 
-Since $\binom{n}{n-k} = \binom{n}{k}$, the identity follows. $\blacksquare$
+Since $\binom{n}{n-k} = \binom{n}{k}$The identity follows. $\blacksquare$
 
 </details>
 

@@ -14,7 +14,7 @@ slug: operating-systems
 ### 1.1 Role of the Operating System
 
 An operating system (OS) is system software that manages hardware resources and provides services
-to application programs. It serves as an intermediary between users and the underlying hardware.
+To application programs. It serves as an intermediary between users and the underlying hardware.
 
 **Core responsibilities:**
 
@@ -27,40 +27,40 @@ to application programs. It serves as an intermediary between users and the unde
 ### 1.2 Kernel Architectures
 
 **Monolithic Kernel.** All OS services (file system, device drivers, network stack, scheduler) run
-in a single address space in kernel mode. Examples: Linux, FreeBSD.
+In a single address space in kernel mode. Examples: Linux, FreeBSD.
 
 - *Advantage:* Low overhead from function-call latency.
 - *Disadvantage:* A bug in any component can crash the entire system.
 
 **Microkernel.** Only essential services (IPC, scheduling, basic memory management) run in kernel
-mode. Other services run in user mode as separate processes. Examples: MINIX 3, seL4, QNX.
+Mode. Other services run in user mode as separate processes. Examples: MINIX 3, seL4, QNX.
 
 - *Advantage:* Fault isolation; easier to verify formally.
 - *Disadvantage:* Higher overhead from message passing between user-mode servers.
 
 **Hybrid Kernel.** A pragmatic compromise combining monolithic and microkernel ideas. Some
-non-essential services run in kernel mode for performance, but the architecture is more modular
-than a pure monolith. Examples: Windows NT, macOS XNU.
+Non-essential services run in kernel mode for performance, but the architecture is more modular
+Than a pure monolith. Examples: Windows NT, macOS XNU.
 
 ### 1.3 System Calls
 
 System calls provide the interface between user-mode applications and kernel-mode OS services. They
-are invoked via software interrupts (e.g., `syscall` on x86-64, `svc` on ARM).
+Are invoked via software interrupts (e.g., `syscall` on x86-64, `svc` on ARM).
 
 **Categories:**
 
-| Category        | Examples                                 |
+| Category | Examples |
 | --------------- | ---------------------------------------- |
-| Process control | `fork`, `exec`, `wait`, `exit`           |
-| File management | `open`, `read`, `write`, `close`         |
-| Device I/O      | `ioctl`, `read`, `write`                 |
-| Communication   | `pipe`, `shmget`, `mmap`, `socket`       |
-| Information     | `getpid`, `stat`, `sysconf`              |
-| Protection      | `chmod`, `chown`, `setuid`               |
+| Process control | `fork``exec``wait``exit` |
+| File management | `open``read``write``close` |
+| Device I/O | `ioctl``read``write` |
+| Communication | `pipe``shmget``mmap``socket` |
+| Information | `getpid``stat``sysconf` |
+| Protection | `chmod``chown``setuid` |
 
 **System call overhead.** A transition from user mode to kernel mode involves saving user
-registers, switching to the kernel stack, validating arguments, executing kernel code, and
-returning. Typical overhead: $100\mathrm{--{}1000$ ns on modern hardware.
+Registers, switching to the kernel stack, validating arguments, executing kernel code, and
+Returning. Typical overhead: $100\mathrm{--{}1000$ ns on modern hardware.
 
 ## 2. Process Management
 
@@ -69,16 +69,16 @@ returning. Typical overhead: $100\mathrm{--{}1000$ ns on modern hardware.
 A **process** is an instance of a program in execution. The OS maintains a **process control block
 (PCB)** for each process:
 
-| Field             | Description                                |
+| Field | Description |
 | ----------------- | ------------------------------------------ |
-| PID               | Unique process identifier                   |
-| Process state     | Running, ready, blocked, etc.              |
-| Program counter   | Address of next instruction                |
-| Registers         | CPU register contents                      |
-| Memory limits     | Base/limit registers or page table pointer |
-| Open files        | List of open file descriptors              |
-| I/O status        | I/O devices allocated and their status     |
-| Scheduling info   | Priority, scheduling queue, CPU usage      |
+| PID | Unique process identifier |
+| Process state | Running, ready, blocked, etc. |
+| Program counter | Address of next instruction |
+| Registers | CPU register contents |
+| Memory limits | Base/limit registers or page table pointer |
+| Open files | List of open file descriptors |
+| I/O status | I/O devices allocated and their status |
+| Scheduling info | Priority, scheduling queue, CPU usage |
 
 **Process states.** Processes transition through states:
 
@@ -92,27 +92,27 @@ The scheduler dispatches processes from **ready** to **running**. A running proc
 ### 2.2 Threads
 
 A **thread** is the fundamental unit of CPU execution. Multiple threads within a process share the
-same address space, open files, and other resources, but each has its own program counter,
-registers, and stack.
+Same address space, open files, and other resources, but each has its own program counter,
+Registers, and stack.
 
 **User-level threads.** Managed entirely by a user-space library (e.g., POSIX `pthread`). The OS is
-unaware of them.
+Unaware of them.
 
 - *Advantage:* Fast creation and switching (no kernel involvement).
 - *Disadvantage:* One blocking system call blocks all threads in the process.
 
-**Kernel-level threads.** Managed by the OS kernel (e.g., Linux `clone()`, Windows threads).
+**Kernel-level threads.** Managed by the OS kernel (e.g., Linux `clone()`Windows threads).
 
 - *Advantage:* True parallelism on multiprocessor systems; blocking one thread does not block others.
 - *Disadvantage:* Slower creation and context switch (kernel trap required).
 
 **Thread models:**
 
-| Model       | User:Kernel | Characteristics                              |
+| Model | User:Kernel | Characteristics |
 | ----------- | ----------- | -------------------------------------------- |
-| Many-to-one | $m:1$       | All user threads map to one kernel thread    |
-| One-to-one  | $1:1$       | Each user thread maps to a kernel thread     |
-| Many-to-many| $m:n$       | User threads multiplexed onto kernel threads |
+| Many-to-one | $m:1$ | All user threads map to one kernel thread |
+| One-to-one | $1:1$ | Each user thread maps to a kernel thread |
+| Many-to-many| $m:n$ | User threads multiplexed onto kernel threads |
 
 Linux uses a $1:1$ model by default.
 
@@ -123,7 +123,7 @@ The CPU scheduler decides which process runs next from the set of ready processe
 **Scheduling criteria:**
 
 - **CPU utilisation:** Keep the CPU busy ($\mathrm{utilisation{} = 1 - p$ where $p$ is the I/O wait
-  probability).
+ probability).
 - **Throughput:** Number of processes completed per time unit.
 - **Turnaround time:** $T_{\mathrm{turnaround{}} = T_{\mathrm{completion{}} - T_{\mathrm{arrival{}}$.
 - **Waiting time:** Time spent in the ready queue.
@@ -132,17 +132,17 @@ The CPU scheduler decides which process runs next from the set of ready processe
 ### 2.4 Scheduling Algorithms
 
 **First-Come, First-Served (FCFS).** Non-preemptive. Processes scheduled in arrival order. Suffers
-from the **convoy effect**: short processes waiting behind a long process.
+From the **convoy effect**: short processes waiting behind a long process.
 
 **Shortest Job First (SJF).** Non-preemptive. Schedule the process with the shortest next CPU burst.
 Provably optimal for average waiting time. Requires burst length estimation via exponential
-averaging: $\tau_{n+1} = \alpha t_n + (1 - \alpha) \tau_n$.
+Averaging: $\tau_{n+1} = \alpha t_n + (1 - \alpha) \tau_n$.
 
 **Shortest Remaining Time First (SRTF).** Preemptive SJF. If a new process arrives with a shorter
-remaining burst, preempt the current process.
+Remaining burst, preempt the current process.
 
-**Round Robin (RR).** Each process gets a time quantum $q$. If not finished within $q$, preempted and
-placed at the back of the ready queue. If $q$ is large, RR degenerates to FCFS. Typical $q$:
+**Round Robin (RR).** Each process gets a time quantum $q$. If not finished within $q$Preempted and
+Placed at the back of the ready queue. If $q$ is large, RR degenerates to FCFS. Typical $q$:
 $10\mathrm{--{}100$ ms.
 
 **Priority Scheduling.** Highest-priority ready process runs. Can be preemptive or non-preemptive.
@@ -150,13 +150,13 @@ Risk of **starvation**; solved by **aging** (gradually increase priority of wait
 
 **Multilevel Feedback Queue (MLFQ).** Partition the ready queue into multiple priority levels.
 Processes that use too much CPU are demoted; processes that wait are promoted. The most general and
-widely used approach. Linux CFS uses a variant with red-black trees keyed on virtual runtime.
+Widely used approach. Linux CFS uses a variant with red-black trees keyed on virtual runtime.
 
 **Theorem 2.1.** SJF gives the minimum average waiting time for a given set of processes.
 
 *Proof.* Consider any schedule that is not SJF. There exist consecutive processes $A$ and $B$ where
 $A$ has a longer burst than $B$ but is scheduled first. Swapping $A$ and $B$ reduces the waiting
-time of $B$ by the burst time of $A$ and increases the waiting time of $A$ by the burst time of
+Time of $B$ by the burst time of $A$ and increases the waiting time of $A$ by the burst time of
 $B$. Since $B$'s burst is shorter, the net change reduces the average. $\blacksquare$
 
 **Worked Example 2.1 — FCFS vs SJF Comparison**
@@ -165,9 +165,9 @@ Consider three processes, all arriving at time $t = 0$:
 
 | Process | Burst Time |
 | ------- | ---------- |
-| $P_1$   | 24         |
-| $P_2$   | 3          |
-| $P_3$   | 3          |
+| $P_1$ | 24 |
+| $P_2$ | 3 |
+| $P_3$ | 3 |
 
 *FCFS Gantt chart:*
 
@@ -178,10 +178,10 @@ Consider three processes, all arriving at time $t = 0$:
 
 | Process | Waiting Time | Turnaround Time |
 | ------- | ------------ | --------------- |
-| $P_1$   | 0            | 24              |
-| $P_2$   | 24           | 27              |
-| $P_3$   | 27           | 30              |
-| **Avg** | **17**       | **27**          |
+| $P_1$ | 0 | 24 |
+| $P_2$ | 24 | 27 |
+| $P_3$ | 27 | 30 |
+| **Avg** | **17** | **27** |
 
 *SJF Gantt chart:*
 
@@ -192,10 +192,10 @@ Consider three processes, all arriving at time $t = 0$:
 
 | Process | Waiting Time | Turnaround Time |
 | ------- | ------------ | --------------- |
-| $P_1$   | 6            | 30              |
-| $P_2$   | 0            | 3               |
-| $P_3$   | 3            | 6               |
-| **Avg** | **3**        | **13**          |
+| $P_1$ | 6 | 30 |
+| $P_2$ | 0 | 3 |
+| $P_3$ | 3 | 6 |
+| **Avg** | **3** | **13** |
 
 SJF reduces average waiting time from 17 to 3, illustrating the **convoy effect** in FCFS.
 
@@ -211,14 +211,14 @@ Using the same three processes with quantum $q = 4$:
 
 | Process | Completion | Turnaround | Waiting |
 | ------- | ---------- | ---------- | ------- |
-| $P_1$   | 27         | 27         | 3       |
-| $P_2$   | 7          | 7          | 4       |
-| $P_3$   | 10         | 10         | 7       |
-| **Avg** |            | **14.67**  | **4.67**|
+| $P_1$ | 27 | 27 | 3 |
+| $P_2$ | 7 | 7 | 4 |
+| $P_3$ | 10 | 10 | 7 |
+| **Avg** | | **14.67** | **4.67**|
 
 Round Robin eliminates the convoy effect but gives a higher average waiting time than SJF due to
-preemption overhead. The turnaround time for $P_1$ is unchanged (the work must be done), but $P_2$
-and $P_3$ receive faster first response.
+Preemption overhead. The turnaround time for $P_1$ is unchanged (the work must be done), but $P_2$
+And $P_3$ receive faster first response.
 </details>
 
 ### 2.5 Scheduling Algorithm Pseudocode
@@ -349,7 +349,7 @@ void mlfq_schedule(Process processes[], int n, int quantums[]) {
 Processes may need to communicate and synchronise. IPC mechanisms:
 
 **Shared memory.** A region of memory mapped into multiple address spaces. Fast, but requires
-explicit synchronisation.
+Explicit synchronisation.
 
 ```c
 int shmid = shmget(SHM_KEY, SHM_SIZE, IPC_CREAT | 0666);
@@ -361,31 +361,31 @@ shmdt(shm_ptr);
 **Message passing.** Processes exchange messages through the OS. Operations: `send(dest, msg)` and
 `receive(src, msg)`. Can be **direct** (named processes) or **indirect** (via mailboxes/ports).
 
-| Property       | Shared Memory    | Message Passing           |
+| Property | Shared Memory | Message Passing |
 | -------------- | ---------------- | ------------------------- |
-| Speed          | Fast             | Slower (kernel mediation) |
-| Synchronisation| Required         | Built-in                  |
-| Kernel use     | Setup only       | Every message             |
-| Scalability    | Single machine   | Can be distributed        |
+| Speed | Fast | Slower (kernel mediation) |
+| Synchronisation| Required | Built-in |
+| Kernel use | Setup only | Every message |
+| Scalability | Single machine | Can be distributed |
 
 **Pipes.** Unidirectional data channel. `pipe()` creates a pipe; `fork()` inherits file descriptors.
 Named pipes (`mkfifo`) allow unrelated processes to communicate.
 
-**Signals.** Asynchronous notifications (integer payload only). Common: `SIGTERM`, `SIGKILL`,
-`SIGSEGV`, `SIGCHLD`.
+**Signals.** Asynchronous notifications (integer payload only). Common: `SIGTERM``SIGKILL`
+`SIGSEGV``SIGCHLD`.
 
 ## 3. Synchronisation
 
 ### 3.1 The Critical Section Problem
 
 Consider $n$ processes sharing a resource. The **critical section** is the code segment accessing the
-resource. A correct solution must satisfy:
+Resource. A correct solution must satisfy:
 
 1. **Mutual exclusion:** At most one process executes in its critical section at any time.
 2. **Progress:** If no process is in its critical section and some wish to enter, only those not in
-   their remainder section participate, and the decision cannot be postponed indefinitely.
+ their remainder section participate, and the decision cannot be postponed indefinitely.
 3. **Bounded waiting:** A bound exists on the number of times other processes enter their critical
-   sections after a process has requested entry.
+ sections after a process has requested entry.
 
 ### 3.2 Hardware Support
 
@@ -428,7 +428,7 @@ pthread_mutex_destroy(&lock);
 ```
 
 **Spinlocks.** A mutex that busy-waits. Useful when the expected wait time is shorter than the
-context-switch overhead.
+Context-switch overhead.
 
 ```c
 void spinlock_acquire(volatile int *lock) {
@@ -450,10 +450,10 @@ A **semaphore** is an integer variable $S$ accessed only through two atomic oper
 - **Signal (V):** $V(S)$: $S \leftarrow S + 1$.
 
 **Counting semaphore:** $S$ takes any non-negative integer. Controls access to a resource with
-multiple instances.
+Multiple instances.
 
 **Binary semaphore:** $S \in \{0, 1\}$. Functionally similar to a mutex, but can be signalled by any
-process (not just the owner).
+Process (not just the owner).
 
 ```c
 sem_t mutex;
@@ -465,16 +465,16 @@ sem_post(&mutex);
 ```
 
 **Theorem 3.1.** Semaphores can implement mutual exclusion correctly if initialised to 1 and used
-with `wait` on entry and `signal` on exit.
+With `wait` on entry and `signal` on exit.
 
 *Proof.* If the semaphore is 1, the first `wait` decrements it to 0 and enters. Any concurrent
 `wait` finds $S = 0$ and blocks. When the first process signals, $S$ becomes 1, waking exactly one
-blocked process. $\blacksquare$
+Blocked process. $\blacksquare$
 
 ### 3.5 Monitors and Condition Variables
 
 A **monitor** is a high-level synchronisation construct encapsulating shared data and operations,
-allowing only one process to execute within it at any time.
+Allowing only one process to execute within it at any time.
 
 A **condition variable** allows a process to wait for a condition inside a monitor:
 
@@ -507,7 +507,7 @@ pthread_mutex_unlock(&mutex);
 ### 3.6 Classic Synchronisation Problems
 
 **Producer-Consumer (Bounded Buffer).** A producer writes items to a shared buffer of size $N$; a
-consumer reads them.
+Consumer reads them.
 
 ```c
 sem_t empty, full, mutex;
@@ -597,8 +597,8 @@ void philosopher(int i) {
 :::caution
 Common Pitfall
 Always use a `while` loop (not `if`) when checking conditions with condition variables. Spurious
-wakeups can cause `pthread_cond_wait()` to return without the condition being signalled. The loop
-re-checks the condition after every wakeup.
+Wakeups can cause `pthread_cond_wait()` to return without the condition being signalled. The loop
+Re-checks the condition after every wakeup.
 :::
 
 ## 4. Deadlocks
@@ -606,7 +606,7 @@ re-checks the condition after every wakeup.
 ### 4.1 Definition and Necessary Conditions
 
 A **deadlock** is a situation where a set of processes are all blocked, each waiting for a resource
-held by another process in the set.
+Held by another process in the set.
 
 **Coffman conditions** (all four must hold simultaneously):
 
@@ -614,29 +614,29 @@ held by another process in the set.
 2. **Hold and wait:** A process holds at least one resource and is waiting for others.
 3. **No preemption:** Resources cannot be forcibly taken.
 4. **Circular wait:** A circular chain of processes exists, each waiting for a resource held by the
-   next.
+ next.
 
 ### 4.2 Deadlock Prevention
 
 Eliminate one of the four Coffman conditions:
 
-| Condition       | Prevention strategy                                |
+| Condition | Prevention strategy |
 | --------------- | -------------------------------------------------- |
-| Mutual exclusion| Generally not feasible for non-sharable resources  |
-| Hold and wait   | Require all resources upfront before execution      |
-| No preemption   | Release held resources if a new request cannot be granted |
-| Circular wait   | Impose a total ordering on resources; request in increasing order |
+| Mutual exclusion| Generally not feasible for non-sharable resources |
+| Hold and wait | Require all resources upfront before execution |
+| No preemption | Release held resources if a new request cannot be granted |
+| Circular wait | Impose a total ordering on resources; request in increasing order |
 
 ### 4.3 Deadlock Avoidance: Banker's Algorithm
 
 The **Banker's algorithm** avoids deadlock by checking whether granting a request leads to a safe
-state.
+State.
 
 **Definitions:**
 
 - **Available:** Vector $A = (A_1, \ldots, A_m)$ of available instances of each resource type.
 - **Maximum:** Matrix $\mathrm{Max{}$ where $\mathrm{Max{}[i][j]$ is the maximum demand of process
-  $i$ for resource $j$.
+ $i$ for resource $j$.
 - **Allocation:** Matrix $\mathrm{Alloc{}$ where $\mathrm{Alloc{}[i][j]$ is the current allocation.
 - **Need:** $\mathrm{Need{}[i][j] = \mathrm{Max{}[i][j] - \mathrm{Alloc{}[i][j]$.
 
@@ -666,17 +666,17 @@ state.
 
 **Example.** Five processes, three resource types, $A = (3, 3, 2)$:
 
-| Process | Allocation | Max       | Need      |
+| Process | Allocation | Max | Need |
 | ------- | ---------- | --------- | --------- |
-| $P_0$   | (0,1,0)    | (7,5,3)   | (7,4,3)   |
-| $P_1$   | (2,0,0)    | (3,2,2)   | (1,2,2)   |
-| $P_2$   | (3,0,2)    | (9,0,2)   | (6,0,0)   |
-| $P_3$   | (2,1,1)    | (2,2,2)   | (0,1,1)   |
-| $P_4$   | (0,0,2)    | (4,3,3)   | (4,3,1)   |
+| $P_0$ | (0,1,0) | (7,5,3) | (7,4,3) |
+| $P_1$ | (2,0,0) | (3,2,2) | (1,2,2) |
+| $P_2$ | (3,0,2) | (9,0,2) | (6,0,0) |
+| $P_3$ | (2,1,1) | (2,2,2) | (0,1,1) |
+| $P_4$ | (0,0,2) | (4,3,3) | (4,3,1) |
 
-Safety check: $P_1$ has $\mathrm{Need{} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$, release
-$(2,0,0)$, new $A = (5,3,2)$. Then $P_3$: $\mathrm{Need{} = (0,1,1) \leq (5,3,2)$. Continuing,
-all processes can complete: system is **safe**.
+Safety check: $P_1$ has $\mathrm{Need{} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release
+$(2,0,0)$New $A = (5,3,2)$. Then $P_3$: $\mathrm{Need{} = (0,1,1) \leq (5,3,2)$. Continuing,
+All processes can complete: system is **safe**.
 
 <details>
 <summary>Worked Example 4.1 — Banker's Algorithm Step-by-Step</summary>
@@ -689,13 +689,13 @@ Given the state above, suppose $P_1$ requests $(1,0,2)$.
 
 *Step 3:* Pretend to allocate:
 
-| Process | Allocation | Max       | Need      |
+| Process | Allocation | Max | Need |
 | ------- | ---------- | --------- | --------- |
-| $P_0$   | (0,1,0)    | (7,5,3)   | (7,4,3)   |
-| $P_1$   | (3,0,2)    | (3,2,2)   | (0,2,0)   |
-| $P_2$   | (3,0,2)    | (9,0,2)   | (6,0,0)   |
-| $P_3$   | (2,1,1)    | (2,2,2)   | (0,1,1)   |
-| $P_4$   | (0,0,2)    | (4,3,3)   | (4,3,1)   |
+| $P_0$ | (0,1,0) | (7,5,3) | (7,4,3) |
+| $P_1$ | (3,0,2) | (3,2,2) | (0,2,0) |
+| $P_2$ | (3,0,2) | (9,0,2) | (6,0,0) |
+| $P_3$ | (2,1,1) | (2,2,2) | (0,1,1) |
+| $P_4$ | (0,0,2) | (4,3,3) | (4,3,1) |
 
 $A = (3,3,2) - (1,0,2) = (2,3,0)$.
 
@@ -719,7 +719,7 @@ Suppose instead $P_0$ requests $(0,2,0)$ in the original state.
 
 *Step 2:* $\mathrm{Request{}_0 = (0,2,0) \leq A = (3,3,2)$. OK.
 
-*Step 3:* Pretend to allocate. New $A = (3,1,2)$, $\mathrm{Need{}_0 = (7,2,3)$.
+*Step 3:* Pretend to allocate. New $A = (3,1,2)$$\mathrm{Need{}_0 = (7,2,3)$.
 
 *Step 4:* Safety check. No process can execute: $P_1$ needs $(1,2,2)$ but only $(3,1,2)$ available
 (second component insufficient). $P_3$ needs $(0,1,1) \leq (3,1,2)$ — OK, execute $P_3$:
@@ -731,12 +731,12 @@ Safe sequence: $\langle P_3, P_1, P_0, P_4, P_2 \rangle$. The request is **grant
 </details>
 
 **Theorem 4.1.** The Banker's algorithm is correct: if it declares a state safe, there exists a
-sequence of process completions that avoids deadlock.
+Sequence of process completions that avoids deadlock.
 
 *Proof.* The safety algorithm constructs an explicit sequence. Each process in the sequence can run
-to completion with the currently available resources plus those released by previously completed
-processes. If no such sequence exists, there is a set of processes whose combined needs exceed
-available resources. $\blacksquare$
+To completion with the currently available resources plus those released by previously completed
+Processes. If no such sequence exists, there is a set of processes whose combined needs exceed
+Available resources. $\blacksquare$
 
 ### 4.4 Deadlock Detection
 
@@ -756,7 +756,7 @@ Allow deadlocks to occur, then detect and recover.
 
 1. **Process termination:** Kill deadlocked processes one at a time until the cycle is broken.
 2. **Resource preemption:** Forcibly reclaim resources; must handle rollback of the affected
-   process.
+ process.
 3. **Checkpoint and rollback:** Periodically save process state; restore on deadlock.
 
 <details>
@@ -766,13 +766,13 @@ Three processes and one resource type with 10 instances:
 
 | Process | Allocation | Maximum |
 | ------- | ---------- | ------- |
-| $P_0$   | 5          | 9       |
-| $P_1$   | 2          | 4       |
-| $P_2$   | 2          | 7       |
+| $P_0$ | 5 | 9 |
+| $P_1$ | 2 | 4 |
+| $P_2$ | 2 | 7 |
 
 Available = $10 - (5 + 2 + 2) = 1$.
 
-$\mathrm{Request{}_0 = 4$, $\mathrm{Request{}_1 = 2$, $\mathrm{Request{}_2 = 5$.
+$\mathrm{Request{}_0 = 4$$\mathrm{Request{}_1 = 2$$\mathrm{Request{}_2 = 5$.
 
 *Detection:*
 
@@ -783,15 +783,15 @@ The system is in an **unsafe state** with a deadlock involving $\{P_0, P_1, P_2\
 
 *Recovery:* Preempt 3 units from $P_0$ (reducing its allocation to 2). Now Available = 4.
 $P_1$ can proceed ($\mathrm{Request{}_1 = 2 \leq 4$). After $P_1$ finishes, Available = $4 + 2 = 6$.
-$P_0$: $\mathrm{Request{}_0 = 4 \leq 6$, proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds.
+$P_0$: $\mathrm{Request{}_0 = 4 \leq 6$Proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds.
 Deadlock resolved.
 </details>
 
 ### 4.5 Deadlock Handling in Practice
 
 Most modern OSes (Linux, Windows) use the **ostrich algorithm**: ignore deadlocks and rely on process
-termination or reboot. Rationale: deadlocks are rare, detection is expensive, and prevention is
-overly restrictive.
+Termination or reboot. Rationale: deadlocks are rare, detection is expensive, and prevention is
+Overly restrictive.
 
 ## 5. Memory Management
 
@@ -803,12 +803,12 @@ overly restrictive.
 
 **Allocation strategies:**
 
-| Strategy   | Description                                    |
+| Strategy | Description |
 | ---------- | ---------------------------------------------- |
-| First-fit  | Allocate the first hole large enough           |
-| Best-fit   | Allocate the smallest hole large enough        |
-| Worst-fit  | Allocate the largest hole                      |
-| Next-fit   | Continue searching from the last allocation    |
+| First-fit | Allocate the first hole large enough |
+| Best-fit | Allocate the smallest hole large enough |
+| Worst-fit | Allocate the largest hole |
+| Next-fit | Continue searching from the last allocation |
 
 **Theorem 5.1.** First-fit and best-fit have roughly equivalent utilisation; first-fit is faster.
 
@@ -819,28 +819,28 @@ Divide physical memory into fixed-size **frames** and logical memory into same-s
 
 $$\mathrm{physical address{} = \mathrm{PT{}[p] \times F + f$$
 
-where $\mathrm{PT{}[p]$ is the frame number for page $p$ and $F$ is the frame size.
+Where $\mathrm{PT{}[p]$ is the frame number for page $p$ and $F$ is the frame size.
 
 **Page table entry fields:**
 
-| Field          | Purpose                                   |
+| Field | Purpose |
 | -------------- | ----------------------------------------- |
-| Frame number   | Physical frame containing this page       |
-| Valid bit      | Page is in memory (1) or not (0)          |
-| Dirty bit      | Page has been modified                    |
-| Reference bit  | Page accessed recently                    |
-| Protection     | Read/write/execute permissions            |
+| Frame number | Physical frame containing this page |
+| Valid bit | Page is in memory (1) or not (0) |
+| Dirty bit | Page has been modified |
+| Reference bit | Page accessed recently |
+| Protection | Read/write/execute permissions |
 
 **Multi-level page tables.** A single page table for a 64-bit address space is infeasible. A
-two-level scheme uses a **page directory** indexed by the outer page number, pointing to inner
-page tables:
+Two-level scheme uses a **page directory** indexed by the outer page number, pointing to inner
+Page tables:
 
 $$\mathrm{Address: {} \underbrace{p_1}_{\mathrm{outer{}} \mid \underbrace{p_2}_{\mathrm{inner{}} \mid \underbrace{d}_{\mathrm{offset{}}$$
 
-x86-64 with 48-bit virtual addresses uses four-level page tables.
+X86-64 with 48-bit virtual addresses uses four-level page tables.
 
 **Inverted page table.** One entry per physical frame (not per virtual page). Reduces memory
-overhead but makes searching for a specific virtual page expensive; solved by hashing.
+Overhead but makes searching for a specific virtual page expensive; solved by hashing.
 
 ### 5.3 Segmentation
 
@@ -857,11 +857,11 @@ $$\mathrm{physical address{} = \mathrm{base{} + \mathrm{offset{}, \quad \mathrm{
 
 A process has three segments with the following segment table:
 
-| Segment | Base    | Limit |
+| Segment | Base | Limit |
 | ------- | ------- | ----- |
-| Code    | 4096    | 2048  |
-| Data    | 12288   | 4096  |
-| Stack   | 20480   | 2048  |
+| Code | 4096 | 2048 |
+| Data | 12288 | 4096 |
+| Stack | 20480 | 2048 |
 
 Translate logical address (segment = 1, offset = 1500):
 
@@ -884,7 +884,7 @@ Used by x86 (segmentation + paging).
 ### 5.5 Virtual Memory
 
 Virtual memory allows processes to use more memory than physically available by keeping only active
-pages in RAM; the rest reside on disk (swap space).
+Pages in RAM; the rest reside on disk (swap space).
 
 **Demand paging.** Pages loaded on access, not at process start.
 
@@ -901,26 +901,26 @@ pages in RAM; the rest reside on disk (swap space).
 
 $$\mathrm{EAT{} = (1 - p) \times \mathrm{ma{} + p \times \mathrm{pf{}$$
 
-where $p$ = page fault rate, $\mathrm{ma{}$ = memory access time, $\mathrm{pf{}$ = page fault service
-time.
+Where $p$ = page fault rate, $\mathrm{ma{}$ = memory access time, $\mathrm{pf{}$ = page fault service
+Time.
 
-For $p = 0.001$, $\mathrm{ma{} = 100$ ns, $\mathrm{pf{} = 8$ ms:
+For $p = 0.001$$\mathrm{ma{} = 100$ ns, $\mathrm{pf{} = 8$ ms:
 
 $$\mathrm{EAT{} = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm{s{}$$
 
 This is roughly $80\times$ slower than pure memory access, illustrating why a low page fault rate
-is critical.
+Is critical.
 
 ### 5.6 Translation Lookaside Buffer (TLB)
 
 A **TLB** is a hardware cache of recently used page table entries, avoiding an extra memory access
-per translation.
+Per translation.
 
 $$\mathrm{EAT{} = h \times (\mathrm{TLB{} + \mathrm{ma{}) + (1 - h) \times (\mathrm{TLB{} + \mathrm{ma{} + \mathrm{ma{})$$
 
-where $h$ is the TLB hit ratio.
+Where $h$ is the TLB hit ratio.
 
-For $h = 0.99$, $\mathrm{TLB{} = 2$ ns, $\mathrm{ma{} = 100$ ns:
+For $h = 0.99$$\mathrm{TLB{} = 2$ ns, $\mathrm{ma{} = 100$ ns:
 
 $$\mathrm{EAT{} = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm{ns{}$$
 
@@ -947,7 +947,7 @@ $$\mathrm{EAT{} = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,
 $$\mathrm{EAT{} = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm{ns{} \approx 4.12 \;\mu\mathrm{s{}$$
 
 This is roughly $41\times$ slower than pure memory access, driven almost entirely by the page fault
-component.
+Component.
 </details>
 
 ### 5.7 Page Replacement Algorithms
@@ -955,28 +955,28 @@ component.
 When physical memory is full, a victim page must be selected for eviction.
 
 **Optimal (OPT/MIN).** Replace the page not used for the longest time in the future. Provably
-optimal but requires future knowledge; used only as a benchmark.
+Optimal but requires future knowledge; used only as a benchmark.
 
 **Theorem 5.2 (Belady's Optimality).** OPT yields the fewest page faults for any reference string.
 
 *Proof.* If OPT replaces page $x$ (used furthest in future) and another algorithm replaces page
 $y$ (used sooner), the other algorithm faults at least once more by the time $y$ is next
-referenced. $\blacksquare$
+Referenced. $\blacksquare$
 
 **First-In, First-Out (FIFO).** Replace the oldest page. Simple but may evict heavily used pages.
 Suffers from **Belady's anomaly**: increasing frames can increase faults.
 
 **Example of Belady's anomaly.** Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. With 3
-frames: 9 faults. With 4 frames: 10 faults.
+Frames: 9 faults. With 4 frames: 10 faults.
 
 **Least Recently Used (LRU).** Replace the page not used for the longest time. Approximates OPT
-well. Does **not** suffer from Belady's anomaly.
+Well. Does **not** suffer from Belady's anomaly.
 
 **Theorem 5.3.** LRU is a **stack algorithm**: the set of pages in $n+1$ frames is a superset of the
-set in $n$ frames, for any reference string.
+Set in $n$ frames, for any reference string.
 
 *Proof.* When adding a frame, LRU keeps the $n$ most recently used pages (same as before) plus the
-new frame. No page in the $n$-frame set can be more recently used than a page outside it, so the
+New frame. No page in the $n$-frame set can be more recently used than a page outside it, so the
 $n+1$ set must contain the $n$-frame set. $\blacksquare$
 
 **Clock (Second Chance).** Pages in a circular list with a reference bit. On replacement:
@@ -987,11 +987,11 @@ $n+1$ set must contain the $n$-frame set. $\blacksquare$
 Approximates LRU with $O(1)$ per operation.
 
 **LFU (Least Frequently Used).** Replace the page with the smallest access count. May fail to adapt
-to changing access patterns.
+To changing access patterns.
 
 **Approximating LRU in practice.** Most OSes use a variant of Clock. Linux uses an LRU-like
-approximation with **active** and **inactive** lists: pages on the active list are protected; pages
-not accessed are demoted to the inactive list; eviction targets the inactive list.
+Approximation with **active** and **inactive** lists: pages on the active list are protected; pages
+Not accessed are demoted to the inactive list; eviction targets the inactive list.
 
 <details>
 <summary>Worked Example 5.3 — Optimal Page Replacement</summary>
@@ -1000,26 +1000,26 @@ Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1. Th
 
 | Ref | Frame 1 | Frame 2 | Frame 3 | Fault? | Victim |
 | --- | ------- | ------- | ------- | ------ | ------ |
-| 7   | 7       |         |         | Yes    | —      |
-| 0   | 7       | 0       |         | Yes    | —      |
-| 1   | 7       | 0       | 1       | Yes    | —      |
-| 2   | 2       | 0       | 1       | Yes    | 7 (used at 18) |
-| 0   | 2       | 0       | 1       | No     | —      |
-| 3   | 2       | 3       | 1       | Yes    | 0 (used at 10) |
-| 0   | 2       | 3       | 0       | Yes    | 1 (used at 14) |
-| 4   | 2       | 4       | 0       | Yes    | 3 (used at 11) |
-| 2   | 2       | 4       | 0       | No     | —      |
-| 3   | 3       | 4       | 0       | Yes    | 2 (used at 13) |
-| 0   | 3       | 4       | 0       | No     | —      |
-| 3   | 3       | 4       | 0       | No     | —      |
-| 2   | 2       | 4       | 0       | Yes    | 3 (used at 11, already past) |
-| 1   | 2       | 1       | 0       | Yes    | 4 (used at $\infty$) |
-| 2   | 2       | 1       | 0       | No     | —      |
-| 0   | 2       | 1       | 0       | No     | —      |
-| 1   | 2       | 1       | 0       | No     | —      |
-| 7   | 7       | 1       | 0       | Yes    | 2 (used at 13, already past) |
-| 0   | 7       | 1       | 0       | No     | —      |
-| 1   | 7       | 1       | 0       | No     | —      |
+| 7 | 7 | | | Yes | — |
+| 0 | 7 | 0 | | Yes | — |
+| 1 | 7 | 0 | 1 | Yes | — |
+| 2 | 2 | 0 | 1 | Yes | 7 (used at 18) |
+| 0 | 2 | 0 | 1 | No | — |
+| 3 | 2 | 3 | 1 | Yes | 0 (used at 10) |
+| 0 | 2 | 3 | 0 | Yes | 1 (used at 14) |
+| 4 | 2 | 4 | 0 | Yes | 3 (used at 11) |
+| 2 | 2 | 4 | 0 | No | — |
+| 3 | 3 | 4 | 0 | Yes | 2 (used at 13) |
+| 0 | 3 | 4 | 0 | No | — |
+| 3 | 3 | 4 | 0 | No | — |
+| 2 | 2 | 4 | 0 | Yes | 3 (used at 11, already past) |
+| 1 | 2 | 1 | 0 | Yes | 4 (used at $\infty$) |
+| 2 | 2 | 1 | 0 | No | — |
+| 0 | 2 | 1 | 0 | No | — |
+| 1 | 2 | 1 | 0 | No | — |
+| 7 | 7 | 1 | 0 | Yes | 2 (used at 13, already past) |
+| 0 | 7 | 1 | 0 | No | — |
+| 1 | 7 | 1 | 0 | No | — |
 
 Total page faults: **9**. This is the theoretical minimum.
 </details>
@@ -1031,29 +1031,29 @@ Same reference string, three frames. LRU replaces the page whose last use was fu
 
 | Ref | F1 | F2 | F3 | Fault? | Victim (least recent) |
 | --- | -- | -- | -- | ------ | --------------------- |
-| 7   | 7  |    |    | Yes    | —                     |
-| 0   | 7  | 0  |    | Yes    | —                     |
-| 1   | 7  | 0  | 1  | Yes    | —                     |
-| 2   | 2  | 0  | 1  | Yes    | 7                     |
-| 0   | 2  | 0  | 1  | No     | —                     |
-| 3   | 2  | 3  | 1  | Yes    | 0                     |
-| 0   | 0  | 3  | 1  | Yes    | 2                     |
-| 4   | 0  | 4  | 1  | Yes    | 3                     |
-| 2   | 0  | 4  | 2  | Yes    | 1                     |
-| 3   | 3  | 4  | 2  | Yes    | 0                     |
-| 0   | 3  | 0  | 2  | Yes    | 4                     |
-| 3   | 3  | 0  | 2  | No     | —                     |
-| 2   | 3  | 0  | 2  | No     | —                     |
-| 1   | 1  | 0  | 2  | Yes    | 3                     |
-| 2   | 1  | 0  | 2  | No     | —                     |
-| 0   | 1  | 0  | 2  | No     | —                     |
-| 1   | 1  | 0  | 2  | No     | —                     |
-| 7   | 1  | 0  | 7  | Yes    | 2                     |
-| 0   | 1  | 0  | 7  | No     | —                     |
-| 1   | 1  | 0  | 7  | No     | —                     |
+| 7 | 7 | | | Yes | — |
+| 0 | 7 | 0 | | Yes | — |
+| 1 | 7 | 0 | 1 | Yes | — |
+| 2 | 2 | 0 | 1 | Yes | 7 |
+| 0 | 2 | 0 | 1 | No | — |
+| 3 | 2 | 3 | 1 | Yes | 0 |
+| 0 | 0 | 3 | 1 | Yes | 2 |
+| 4 | 0 | 4 | 1 | Yes | 3 |
+| 2 | 0 | 4 | 2 | Yes | 1 |
+| 3 | 3 | 4 | 2 | Yes | 0 |
+| 0 | 3 | 0 | 2 | Yes | 4 |
+| 3 | 3 | 0 | 2 | No | — |
+| 2 | 3 | 0 | 2 | No | — |
+| 1 | 1 | 0 | 2 | Yes | 3 |
+| 2 | 1 | 0 | 2 | No | — |
+| 0 | 1 | 0 | 2 | No | — |
+| 1 | 1 | 0 | 2 | No | — |
+| 7 | 1 | 0 | 7 | Yes | 2 |
+| 0 | 1 | 0 | 7 | No | — |
+| 1 | 1 | 0 | 7 | No | — |
 
 Total page faults: **12**. LRU produces 33% more faults than optimal, but does not require future
-knowledge.
+Knowledge.
 </details>
 
 <details>
@@ -1061,43 +1061,43 @@ knowledge.
 
 Same reference string, three frames. Clock hand starts at frame 0. R = reference bit.
 
-| Ref | State (R bits)         | Fault? | Action                            |
+| Ref | State (R bits) | Fault? | Action |
 | --- | ---------------------- | ------ | --------------------------------- |
-| 7   | [7,R] [-] [-]         | Yes    | Load 7 into F0                    |
-| 0   | [7,R] [0,R] [-]       | Yes    | Load 0 into F1                    |
-| 1   | [7,R] [0,R] [1,R]     | Yes    | Load 1 into F2                    |
-| 2   | [2,R] [0,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 2 |
-| 0   | [2,R] [0,R] [1,R]     | No     | Set R on F1                       |
-| 3   | [2,R] [3,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 3 |
-| 0   | [0,R] [3,R] [1,R]     | Yes    | F0: R=0, replace with 0           |
-| 4   | [0,R] [4,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=0, replace with 4 |
-| 2   | [2,R] [4,R] [1,R]     | Yes    | F0: R=0, replace with 2           |
-| 3   | [2,R] [3,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=0, replace with 3 |
-| 0   | [0,R] [3,R] [1,R]     | Yes    | F0: R=0, replace with 0           |
-| 3   | [0,R] [3,R] [1,R]     | No     | Set R on F1                       |
-| 2   | [2,R] [3,R] [1,R]     | Yes    | F0: R=0, replace with 2           |
-| 1   | [2,R] [3,R] [1,R]     | No     | Set R on F2                       |
-| 2   | [2,R] [3,R] [1,R]     | No     | Set R on F0                       |
-| 0   | [2,R] [0,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 0 |
-| 1   | [0,R] [1,R] [1,R]     | No     | Set R on F2                       |
-| 7   | [7,R] [1,R] [1,R]     | Yes    | F0: R=0, replace with 7           |
-| 0   | [7,R] [0,R] [1,R]     | Yes    | F0: R=1, clear, advance; F1: R=0, replace with 0 |
-| 1   | [7,R] [0,R] [1,R]     | No     | Set R on F2                       |
+| 7 | [7,R] [-] [-] | Yes | Load 7 into F0 |
+| 0 | [7,R] [0,R] [-] | Yes | Load 0 into F1 |
+| 1 | [7,R] [0,R] [1,R] | Yes | Load 1 into F2 |
+| 2 | [2,R] [0,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 2 |
+| 0 | [2,R] [0,R] [1,R] | No | Set R on F1 |
+| 3 | [2,R] [3,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 3 |
+| 0 | [0,R] [3,R] [1,R] | Yes | F0: R=0, replace with 0 |
+| 4 | [0,R] [4,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=0, replace with 4 |
+| 2 | [2,R] [4,R] [1,R] | Yes | F0: R=0, replace with 2 |
+| 3 | [2,R] [3,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=0, replace with 3 |
+| 0 | [0,R] [3,R] [1,R] | Yes | F0: R=0, replace with 0 |
+| 3 | [0,R] [3,R] [1,R] | No | Set R on F1 |
+| 2 | [2,R] [3,R] [1,R] | Yes | F0: R=0, replace with 2 |
+| 1 | [2,R] [3,R] [1,R] | No | Set R on F2 |
+| 2 | [2,R] [3,R] [1,R] | No | Set R on F0 |
+| 0 | [2,R] [0,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=1, clear, advance; F2: R=1, clear, advance; F0: R=0, replace with 0 |
+| 1 | [0,R] [1,R] [1,R] | No | Set R on F2 |
+| 7 | [7,R] [1,R] [1,R] | Yes | F0: R=0, replace with 7 |
+| 0 | [7,R] [0,R] [1,R] | Yes | F0: R=1, clear, advance; F1: R=0, replace with 0 |
+| 1 | [7,R] [0,R] [1,R] | No | Set R on F2 |
 
 Total page faults: **15**. Clock performs worse than LRU here but requires only $O(1)$ per operation
-and no global ordering of references.
+And no global ordering of references.
 </details>
 
 :::caution
 Common Pitfall
 Belady's anomaly applies to FIFO but **not** to LRU or Optimal. Adding more memory does not always
-reduce page faults for non-stack algorithms.
+Reduce page faults for non-stack algorithms.
 :::
 
 ### 5.8 Thrashing
 
 **Thrashing** occurs when a process spends more time paging than executing. This happens when the
-total working set of all active processes exceeds physical memory.
+Total working set of all active processes exceeds physical memory.
 
 **Working set model.** $W(t, \Delta)$ is the set of pages referenced in the last $\Delta$ references.
 If $\sum W_i \gt{}$ available frames, thrashing occurs.
@@ -1116,37 +1116,37 @@ A system has 64 frames of physical memory. Four processes with the following wor
 
 | Process | Working Set Size |
 | ------- | ---------------- |
-| $P_1$   | 15               |
-| $P_2$   | 20               |
-| $P_3$   | 18               |
-| $P_4$   | 25               |
-| **Total** | **78**         |
+| $P_1$ | 15 |
+| $P_2$ | 20 |
+| $P_3$ | 18 |
+| $P_4$ | 25 |
+| **Total** | **78** |
 
 Total working set = 78 frames, but only 64 available. Thrashing occurs.
 
 *Solution 1 (working set admission):* Suspend $P_4$ (largest working set). Remaining: $15 + 20 + 18 = 53 \leq 64$. Thrashing eliminated.
 
 *Solution 2 (PFF):* If $P_3$'s page fault rate exceeds the upper threshold, increase its resident
-set size by stealing frames from $P_4$. If $P_4$'s fault rate drops below the lower threshold,
-decrease its allocation.
+Set size by stealing frames from $P_4$. If $P_4$'s fault rate drops below the lower threshold,
+Decrease its allocation.
 </details>
 
 **Theorem 5.4.** If the sum of all working sets exceeds the number of physical frames, at least one
-process must thrash.
+Process must thrash.
 
 *Proof.* By the pigeonhole principle, if $\sum_{i=1}^{n} \lvert W_i \rvert \gt{} F$ where $F$ is the
-total number of frames, at least one process cannot hold its entire working set in memory. That
-process will repeatedly evict pages it needs, causing its page fault rate to dominate its execution
-time. $\blacksquare$
+Total number of frames, at least one process cannot hold its entire working set in memory. That
+Process will repeatedly evict pages it needs, causing its page fault rate to dominate its execution
+Time. $\blacksquare$
 
 ### 5.9 Copy-on-Write (COW)
 
 **Copy-on-Write** is an optimisation for `fork()`. Instead of copying all pages, parent and child
-share physical frames (marked read-only). On a write to a shared page, a fault triggers a copy of
-just that page.
+Share physical frames (marked read-only). On a write to a shared page, a fault triggers a copy of
+Just that page.
 
 - `fork()` becomes nearly $O(1)$ instead of $O(n)$ where $n$ is the number of pages.
-- If the child immediately calls `exec()`, no copies are ever made.
+- If the child immediately calls `exec()`No copies are ever made.
 
 ## 6. File Systems
 
@@ -1156,7 +1156,7 @@ A **file** is a named collection of related data on secondary storage.
 
 **File attributes:** Name, identifier (inode number), type, location, size, protection, timestamps.
 
-**File operations:** `create`, `delete`, `open`, `close`, `read`, `write`, `seek`, `truncate`.
+**File operations:** `create``delete``open``close``read``write``seek``truncate`.
 
 **Access methods:**
 
@@ -1167,31 +1167,31 @@ A **file** is a named collection of related data on secondary storage.
 ### 6.2 File Allocation Methods
 
 **Contiguous allocation.** Each file occupies a contiguous set of blocks on disk. The directory entry
-stores the starting block and length.
+Stores the starting block and length.
 
 - *Advantage:* Excellent for sequential and direct access; minimal seek time.
 - *Disadvantage:* External fragmentation; difficulty finding space for large files; cannot grow
-  dynamically.
+ dynamically.
 
 **Linked allocation.** Each block contains a pointer to the next block. The directory entry stores
-the starting block and the end block (or a count).
+The starting block and the end block (or a count).
 
 - *Advantage:* No external fragmentation; file can grow dynamically.
 - *Disadvantage:* No direct access (must follow pointers); pointer overhead per block; reliability
-  (a broken pointer loses the rest of the file).
+ (a broken pointer loses the rest of the file).
 
 **Indexed allocation.** The directory entry points to an **index block** that contains an array of
-pointers to data blocks. Supports direct access without external fragmentation.
+Pointers to data blocks. Supports direct access without external fragmentation.
 
 - *Advantage:* Direct access; no external fragmentation.
 - *Disadvantage:* Index block may be too small for large files (solved by linked index blocks or
-  multi-level indexing, as in the inode scheme of §6.3).
+ multi-level indexing, as in the inode scheme of §6.3).
 
-| Method     | Sequential | Direct | External Frag. | Internal Frag. |
+| Method | Sequential | Direct | External Frag. | Internal Frag. |
 | ---------- | ---------- | ------ | -------------- | -------------- |
-| Contiguous | Excellent  | Yes    | Yes            | Possible       |
-| Linked     | Good       | No     | No             | None           |
-| Indexed    | Good       | Yes    | No             | Index block    |
+| Contiguous | Excellent | Yes | Yes | Possible |
+| Linked | Good | No | No | None |
+| Indexed | Good | Yes | No | Index block |
 
 <details>
 <summary>Worked Example 6.1 — Allocation Comparison</summary>
@@ -1200,10 +1200,10 @@ A file of 10 blocks is stored on a disk. The disk has blocks at positions: 0 (fr
 2-5 (free), 6 (used), 7-9 (free), 10-15 (free), 16 (used), 17-31 (free).
 
 *Contiguous:* Needs 10 consecutive free blocks. Largest free run is 16-31 (16 blocks). File stored
-at blocks 17--26. Access to block $k$: position $17 + k$.
+At blocks 17--26. Access to block $k$: position $17 + k$.
 
 *Linked:* Blocks can be scattered. E.g., 2, 3, 4, 5, 7, 8, 9, 10, 11, 12. To read block 7, must
-traverse 7 pointers.
+Traverse 7 pointers.
 
 *Indexed:* Index block at position 0. Index block contains pointers to data blocks 2, 3, 4, 5, 7,
 8, 9, 10, 11, 12. To read block 7, access index block position 7 (one seek + one read).
@@ -1211,39 +1211,39 @@ traverse 7 pointers.
 
 ### 6.3 Directory Structures
 
-| Structure      | Description                                       |
+| Structure | Description |
 | -------------- | ------------------------------------------------- |
-| Single-level   | All files in one directory                        |
-| Two-level      | Separate directory per user                       |
-| Tree           | Hierarchical tree with subdirectories             |
-| Acyclic graph  | Tree with shared subdirectories (hard links)      |
-| General graph  | Allows cycles; requires garbage collection        |
+| Single-level | All files in one directory |
+| Two-level | Separate directory per user |
+| Tree | Hierarchical tree with subdirectories |
+| Acyclic graph | Tree with shared subdirectories (hard links) |
+| General graph | Allows cycles; requires garbage collection |
 
 **Path resolution.** A path name is resolved by traversing the directory tree from the root (`/`)
-or the current working directory. Each component is looked up in the current directory to find the
-next inode. Symbolic links (symlinks) store a path string that is substituted during resolution;
-circular symlinks are detected by tracking the link count.
+Or the current working directory. Each component is looked up in the current directory to find the
+Next inode. Symbolic links (symlinks) store a path string that is substituted during resolution;
+Circular symlinks are detected by tracking the link count.
 
 **Hard links vs symbolic links.** A hard link creates an additional directory entry pointing to the
-same inode (increments the link count). A symbolic link is a special file containing a path string.
+Same inode (increments the link count). A symbolic link is a special file containing a path string.
 Hard links cannot cross file systems; symbolic links can. Deleting the original file does not affect
-a symbolic link but removes one reference from a hard link (the inode is freed only when the link
-count reaches zero).
+A symbolic link but removes one reference from a hard link (the inode is freed only when the link
+Count reaches zero).
 
 ### 6.4 Inode-Based File Systems
 
 An **inode** (index node) stores metadata about a file (but not the file name, which is in the
-directory entry):
+Directory entry):
 
-| Field            | Description                                         |
+| Field | Description |
 | ---------------- | --------------------------------------------------- |
-| Mode             | File type and permissions                           |
-| Owner            | User and group IDs                                  |
-| Size             | File size in bytes                                  |
-| Timestamps       | Last access, modification, inode change             |
-| Link count       | Number of hard links to this inode                  |
-| Block pointers   | Direct, indirect, double-indirect, triple-indirect  |
-| Blocks           | Number of blocks allocated                          |
+| Mode | File type and permissions |
+| Owner | User and group IDs |
+| Size | File size in bytes |
+| Timestamps | Last access, modification, inode change |
+| Link count | Number of hard links to this inode |
+| Block pointers | Direct, indirect, double-indirect, triple-indirect |
+| Blocks | Number of blocks allocated |
 
 **Block pointer scheme (ext4 with 4 KiB blocks, 4-byte pointers):**
 
@@ -1257,41 +1257,41 @@ Maximum file size: $48\;\mathrm{KiB{} + 4\;\mathrm{MiB{} + 4\;\mathrm{GiB{} + 4\
 ### 6.5 Journaling File Systems
 
 **The problem.** A crash during a file system update can leave inconsistent metadata (orphaned
-inodes, lost blocks, incorrect free block count).
+Inodes, lost blocks, incorrect free block count).
 
 **Journaling.** Before modifying the file system, write a description of the modifications to a
-dedicated **journal**. After a crash, replay the journal to restore consistency.
+Dedicated **journal**. After a crash, replay the journal to restore consistency.
 
 **Journaling modes (ext4):**
 
-| Mode        | Description                                                       |
+| Mode | Description |
 | ----------- | ----------------------------------------------------------------- |
-| `ordered`   | Metadata journaled; data written before metadata commit (default) |
-| `writeback` | Metadata journaled; data not journaled (fastest, data loss risk)  |
-| `journal`   | Both metadata and data journaled (safest, slowest)                |
+| `ordered` | Metadata journaled; data written before metadata commit (default) |
+| `writeback` | Metadata journaled; data not journaled (fastest, data loss risk) |
+| `journal` | Both metadata and data journaled (safest, slowest) |
 
 **Write-ahead logging (WAL).** The journal entry is written to stable storage before the actual
-modification. Recovery scans the journal: committed entries are applied; uncommitted entries are
-discarded.
+Modification. Recovery scans the journal: committed entries are applied; uncommitted entries are
+Discarded.
 
 **Other journaling file systems:** NTFS (Windows), APFS (macOS), XFS, ZFS.
 
 ### 6.5a RAID Levels
 
 **RAID (Redundant Array of Independent Disks)** combines multiple disks for performance, reliability,
-or both.
+Or both.
 
-| Level | Min Disks | Description                                  | Fault Tolerance | Write Performance |
+| Level | Min Disks | Description | Fault Tolerance | Write Performance |
 | ----- | --------- | -------------------------------------------- | --------------- | ----------------- |
-| 0     | 1         | Striping only, no redundancy                 | None            | Excellent         |
-| 1     | 2         | Mirroring every disk                         | 1 disk          | Moderate          |
-| 2     | 3         | Bit-level striping with Hamming code ECC     | 1 disk          | Poor              |
-| 3     | 3         | Byte-level striping with dedicated parity    | 1 disk          | Moderate          |
-| 4     | 3         | Block-level striping with dedicated parity   | 1 disk          | Moderate          |
-| 5     | 3         | Block-level striping with distributed parity | 1 disk          | Good              |
-| 6     | 4         | Block-level striping with dual parity        | 2 disks         | Moderate          |
-| 10    | 4         | Mirrored sets of stripes (RAID 1 + RAID 0)   | 1 disk per mirror | Excellent       |
-| 50    | 6         | Parity sets of stripes (RAID 5 + RAID 0)     | 1 disk per set  | Good              |
+| 0 | 1 | Striping only, no redundancy | None | Excellent |
+| 1 | 2 | Mirroring every disk | 1 disk | Moderate |
+| 2 | 3 | Bit-level striping with Hamming code ECC | 1 disk | Poor |
+| 3 | 3 | Byte-level striping with dedicated parity | 1 disk | Moderate |
+| 4 | 3 | Block-level striping with dedicated parity | 1 disk | Moderate |
+| 5 | 3 | Block-level striping with distributed parity | 1 disk | Good |
+| 6 | 4 | Block-level striping with dual parity | 2 disks | Moderate |
+| 10 | 4 | Mirrored sets of stripes (RAID 1 + RAID 0) | 1 disk per mirror | Excellent |
+| 50 | 6 | Parity sets of stripes (RAID 5 + RAID 0) | 1 disk per set | Good |
 
 **Effective capacity.** For $n$ disks of capacity $C$:
 
@@ -1307,7 +1307,7 @@ or both.
 $$\mathrm{MTTF{}_{\mathrm{RAID\;5{}} \approx \frac{\mathrm{MTTF{}_{\mathrm{disk{}}^2}{n(n-1) \cdot T_{\mathrm{repair{}}}$$
 
 RAID 5 significantly improves reliability for large arrays, but the rebuild time grows with disk
-capacity, increasing the window of vulnerability.
+Capacity, increasing the window of vulnerability.
 
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
@@ -1320,13 +1320,13 @@ Eight 2 TiB disks. $\mathrm{MTTF{}_{\mathrm{disk{}} = 1.2 \times 10^6$ hours, $T
 $\mathrm{MTTF{}_{\mathrm{RAID\;5{}} \approx \frac{(1.2 \times 10^6)^2}{8 \times 7 \times 24} = \frac{1.44 \times 10^{12}}{1344} \approx 1.07 \times 10^9$ hours.
 
 *RAID 6:* Capacity = $6 \times 2 = 12$ TiB. Tolerates 2 simultaneous disk failures. MTTF is orders of
-magnitude higher than RAID 5.
+Magnitude higher than RAID 5.
 </details>
 
 ### 6.6 FUSE
 
 **FUSE (Filesystem in Userspace)** allows non-privileged users to create file systems without
-modifying the kernel. The FUSE kernel module routes VFS operations to a user-space daemon.
+Modifying the kernel. The FUSE kernel module routes VFS operations to a user-space daemon.
 
 **Workflow:**
 
@@ -1341,12 +1341,12 @@ modifying the kernel. The FUSE kernel module routes VFS operations to a user-spa
 
 ### 6.7 Free Space Management
 
-| Method       | Description                                                |
+| Method | Description |
 | ------------ | ---------------------------------------------------------- |
-| Bitmap       | One bit per block; 1 = free, 0 = used. Simple and fast.   |
-| Linked list  | Free blocks linked together. Slow to traverse.             |
-| Grouping     | First free block stores addresses of $n$ free blocks.      |
-| Counting     | Track contiguous free blocks as (start, count) pairs.      |
+| Bitmap | One bit per block; 1 = free, 0 = used. Simple and fast. |
+| Linked list | Free blocks linked together. Slow to traverse. |
+| Grouping | First free block stores addresses of $n$ free blocks. |
+| Counting | Track contiguous free blocks as (start, count) pairs. |
 
 ### 6.8 File System Consistency
 
@@ -1358,22 +1358,22 @@ modifying the kernel. The FUSE kernel module routes VFS operations to a user-spa
 - **Missing/free blocks:** Blocks marked as used but not referenced, or vice versa.
 
 **Journaling vs. `fsck`.** Journaling eliminates the need for full `fsck` after a crash. Only the
-journal needs to be replayed, which takes seconds instead of hours for large file systems.
+Journal needs to be replayed, which takes seconds instead of hours for large file systems.
 
 ## 7. I/O Systems
 
 ### 7.1 I/O Hardware
 
-| Category          | Examples                            | Data rate      |
+| Category | Examples | Data rate |
 | ----------------- | ----------------------------------- | -------------- |
-| Human-readable    | Keyboard, screen, printer           | Low            |
-| Machine-readable  | Disk, tape, sensors                 | Medium to high |
-| Communication     | Network interfaces, modems          | Variable       |
+| Human-readable | Keyboard, screen, printer | Low |
+| Machine-readable | Disk, tape, sensors | Medium to high |
+| Communication | Network interfaces, modems | Variable |
 
 ### 7.2 Device Drivers
 
 A **device driver** is kernel-mode software that translates OS I/O requests into device-specific
-operations. It provides a uniform interface to the OS while hiding hardware details.
+Operations. It provides a uniform interface to the OS while hiding hardware details.
 
 **Driver architecture (layered):**
 
@@ -1392,13 +1392,13 @@ User application
 **Types:**
 
 - **Block device drivers:** Manage fixed-size block access (disks, SSDs). Use a buffer cache to
-  reduce physical I/O. The OS can reorder and merge block requests for performance.
+ reduce physical I/O. The OS can reorder and merge block requests for performance.
 - **Character device drivers:** Manage byte-stream access (terminals, serial ports). No buffering or
-  reordering by the OS.
+ reordering by the OS.
 
 **Driver loading.** Most modern OSes support loadable kernel modules (LKMs): drivers loaded at
-runtime without rebooting. On Linux: `insmod`, `modprobe`. This allows third-party hardware support
-without kernel recompilation.
+Runtime without rebooting. On Linux: `insmod``modprobe`. This allows third-party hardware support
+Without kernel recompilation.
 
 ### 7.3 I/O Scheduling
 
@@ -1406,7 +1406,7 @@ I/O schedulers reorder and merge requests to improve performance:
 
 - **FCFS:** Simple but may cause starvation.
 - **SSTF:** Service the request closest to the current head position. Minimises seek but can
-  starve distant requests.
+ starve distant requests.
 - **SCAN (elevator):** Head moves in one direction servicing requests, then reverses.
 - **C-SCAN:** Like SCAN but only services in one direction; returns without servicing.
 - **LOOK / C-LOOK:** Optimised SCAN/C-SCAN that reverses when no requests remain ahead.
@@ -1414,8 +1414,8 @@ I/O schedulers reorder and merge requests to improve performance:
 **Theorem 7.1.** C-SCAN provides more uniform wait times than SCAN.
 
 *Proof.* SCAN services requests in both directions, so requests at the extremes of the disk wait
-longer. C-SCAN treats the disk as a circular queue, ensuring every request is serviced within one
-full sweep. $\blacksquare$
+Longer. C-SCAN treats the disk as a circular queue, ensuring every request is serviced within one
+Full sweep. $\blacksquare$
 
 <details>
 <summary>Worked Example 7.1 — Disk Scheduling Comparison</summary>
@@ -1440,26 +1440,26 @@ Total seek = $12 + 2 + 31 + 24 + 2 + 59 + 146 + 23 = 299$ cylinders.
 
 | Algorithm | Total Seek | Max Wait | Fairness |
 | --------- | ---------- | -------- | -------- |
-| FCFS      | 640        | 335      | Fair     |
-| SSTF      | 236        | 130      | Starves  |
-| SCAN      | 331        | 313      | Good     |
-| C-SCAN    | 382        | 329      | Best     |
-| LOOK      | 299        | 299      | Good     |
+| FCFS | 640 | 335 | Fair |
+| SSTF | 236 | 130 | Starves |
+| SCAN | 331 | 313 | Good |
+| C-SCAN | 382 | 329 | Best |
+| LOOK | 299 | 299 | Good |
 
 SSTF minimises total seek but starves requests at the extremes. C-SCAN provides the most uniform
-wait time at the cost of higher total seek.
+Wait time at the cost of higher total seek.
 </details>
 
 ### 7.4 Direct Memory Access (DMA)
 
 **DMA** allows I/O devices to transfer data directly to/from memory without per-word CPU
-intervention.
+Intervention.
 
 **Without DMA:** CPU reads each word from the device controller to memory. For a 4 KiB read, the CPU
-is interrupted 4096 times.
+Is interrupted 4096 times.
 
 **With DMA:** CPU programs the DMA controller with source, destination, and count. DMA handles the
-transfer, interrupting the CPU only when complete.
+Transfer, interrupting the CPU only when complete.
 
 - DMA transfers are **cycle-stealing**: the DMA controller uses the system bus, pausing the CPU.
 - Modern systems use **bus mastering**: the I/O device controller performs the transfer autonomously.
@@ -1484,13 +1484,13 @@ A **VMM** (hypervisor) presents the illusion of multiple independent physical ma
 
 **Challenges:**
 
-- **Instruction emulation:** Sensitive instructions must be trapped and emulated. On x86, `IN`,
-  `OUT`, `HLT`, `CLI`, `STI`, and `MOV` to/from control registers are sensitive.
+- **Instruction emulation:** Sensitive instructions must be trapped and emulated. On x86, `IN`
+ `OUT``HLT``CLI``STI`And `MOV` to/from control registers are sensitive.
 - **Memory virtualization:** The VMM maintains **shadow page tables** mapping guest virtual to host
-  physical addresses. Hardware support: Extended Page Tables (EPT, Intel) and Nested Page Tables
-  (NPT, AMD).
+ physical addresses. Hardware support: Extended Page Tables (EPT, Intel) and Nested Page Tables
+ (NPT, AMD).
 - **I/O virtualization:** Device access mediated by the VMM. Paravirtualized drivers (e.g., VirtIO)
-  improve performance.
+ improve performance.
 
 ### 8.3 Paravirtualization
 
@@ -1506,19 +1506,19 @@ The guest OS is modified to make **hypercalls** instead of executing sensitive i
 - **Namespaces:** Isolate process trees, network, file systems, IPC, UTS (hostname).
 - **cgroups:** Limit resource usage (CPU, memory, I/O).
 
-| Property    | VMs                       | Containers                   |
+| Property | VMs | Containers |
 | ----------- | ------------------------- | ---------------------------- |
-| Kernel      | Separate per VM           | Shared with host             |
-| Startup     | Minutes                   | Seconds                      |
-| Footprint   | GBs                       | MBs                          |
-| Isolation   | Hardware-level            | Process-level                |
-| Performance | Near-native (with EPT)    | Near-native (minimal)        |
+| Kernel | Separate per VM | Shared with host |
+| Startup | Minutes | Seconds |
+| Footprint | GBs | MBs |
+| Isolation | Hardware-level | Process-level |
+| Performance | Near-native (with EPT) | Near-native (minimal) |
 
 **Docker** uses OverlayFS for layered images. **Kubernetes** orchestrates containers across clusters.
 
 :::caution Common Pitfall
 Containers do **not** provide hardware-level isolation. A kernel vulnerability can potentially
-compromise all containers on a host. For strong multi-tenant isolation, VMs are preferred.
+Compromise all containers on a host. For strong multi-tenant isolation, VMs are preferred.
 :::
 
 ## 9. Security
@@ -1526,7 +1526,7 @@ compromise all containers on a host. For strong multi-tenant isolation, VMs are 
 ### 9.1 Access Control
 
 **Access control lists (ACLs).** Each object (file, directory, device) has an associated list of
-entries specifying which subjects (users, groups) have which permissions (read, write, execute).
+Entries specifying which subjects (users, groups) have which permissions (read, write, execute).
 
 ```
 ACL for /data/report.txt:
@@ -1540,76 +1540,76 @@ ACL for /data/report.txt:
 - *Disadvantage:* Checking permissions requires scanning the list; ACLs can grow large.
 
 **Capabilities.** Each subject (process) carries a list of capability tokens, each granting access to
-a specific object with specific rights. The kernel verifies that the process presents a valid
-capability.
+A specific object with specific rights. The kernel verifies that the process presents a valid
+Capability.
 
 - *Advantage:* Decentralised; no per-object list to scan; efficient for distributed systems.
 - *Disadvantage:* Capability revocation is difficult; if a process copies a capability, revoking the
-  original does not affect copies (solved by indirection: capabilities point to a kernel-managed
-  object table entry that can be invalidated).
+ original does not affect copies (solved by indirection: capabilities point to a kernel-managed
+ object table entry that can be invalidated).
 
-| Property       | ACLs                   | Capabilities          |
+| Property | ACLs | Capabilities |
 | -------------- | ---------------------- | --------------------- |
-| Association    | With objects           | With subjects         |
-| Revocation     | Easy (modify the list) | Difficult             |
-| Delegation     | Requires policy        | Natural (copy token)  |
-| Implementation | POSIX, NTFS            | seL4, Capsicum, FUSE  |
+| Association | With objects | With subjects |
+| Revocation | Easy (modify the list) | Difficult |
+| Delegation | Requires policy | Natural (copy token) |
+| Implementation | POSIX, NTFS | seL4, Capsicum, FUSE |
 
 ### 9.2 Principle of Least Privilege
 
 A subject should receive only the minimum privileges necessary to perform its task. Violations
-create unnecessary attack surface.
+Create unnecessary attack surface.
 
 **Application to OS design:**
 
 - **Processes:** Run with the lowest possible privileges. Web servers should not run as root.
 - **System calls:** `chmod` and `chown` require appropriate ownership; `setuid` requires root.
 - **Kernel modules:** Loadable kernel modules have full kernel access; restrict loading to
-  privileged users.
+ privileged users.
 - **Containers:** Limit capabilities via `docker run --cap-drop ALL --cap-add NET_BIND_SERVICE`.
 
 **Privilege separation.** Split a program into components with different privilege levels. Example:
 OpenSSH splits into an unprivileged monitor (handles network I/O) and a privileged child (handles
-authentication and session setup). A compromise of the monitor does not grant root access.
+Authentication and session setup). A compromise of the monitor does not grant root access.
 
 ### 9.3 Buffer Overflow Prevention
 
 A **buffer overflow** occurs when a program writes data beyond the bounds of a buffer, potentially
-overwriting return addresses, function pointers, or other control data.
+Overwriting return addresses, function pointers, or other control data.
 
 **Defences:**
 
 **Stack canaries.** A random value (`canary`) placed between the local variables and the saved
-return address on the stack. Before returning, the function checks that the canary is unchanged. If
-modified, the program aborts.
+Return address on the stack. Before returning, the function checks that the canary is unchanged. If
+Modified, the program aborts.
 
 - Implemented in GCC/Clang with `-fstack-protector-all`.
 - The canary value is randomised per process and stored in a segment register (`%fs:40` on x86-64).
 
 **Address Space Layout Randomisation (ASLR).** Randomises the base addresses of the stack, heap,
-libraries, and executable code in each process invocation.
+Libraries, and executable code in each process invocation.
 
 - Defeats return-to-libc and ROP (Return-Oriented Programming) attacks that rely on known addresses.
-- Entropy: typically 22--28 bits on 64-bit systems, providing $2^{22}$ to $2^{28}$ possible layouts.
+- Entropy: 22--28 bits on 64-bit systems, providing $2^{22}$ to $2^{28}$ possible layouts.
 - Limitation: information leaks (e.g., pointer disclosure) can defeat ASLR.
 
 **Data Execution Prevention (DEP / W\^X).** Marks memory pages as either writable or executable,
-never both. A buffer overflow that injects shellcode into a writable data region cannot execute it.
+Never both. A buffer overflow that injects shellcode into a writable data region cannot execute it.
 
 - Hardware support: the NX (No-eXecute) bit in page table entries.
 - Compiler support: `-Wl,-z,noexecstack` (GNU ld).
 
 **Control Flow Integrity (CFI).** Verifies that indirect branches (function pointers, returns) jump
-only to valid targets. Forward-edge CFI checks call targets; backward-edge CFI checks return
-addresses using shadow stacks.
+Only to valid targets. Forward-edge CFI checks call targets; backward-edge CFI checks return
+Addresses using shadow stacks.
 
 - Implemented in LLVM via `-fsanitize=cfi`.
 - Hardware support: Intel CET (Control-flow Enforcement Technology).
 
 :::caution Common Pitfall
 ASLR, stack canaries, and DEP are complementary defences. Relying on any single mechanism is
-insufficient. A determined attacker who can read memory can defeat ASLR; a format string
-vulnerability can leak canary values; and JIT compilers require writable-and-executable pages.
+Insufficient. A determined attacker who can read memory can defeat ASLR; a format string
+Vulnerability can leak canary values; and JIT compilers require writable-and-executable pages.
 :::
 
 ## 10. Problem Set
@@ -1618,18 +1618,18 @@ vulnerability can leak canary values; and JIT compilers require writable-and-exe
 <summary>Problem 1 — Process States</summary>
 
 List all possible state transitions for a process and identify which transition requires the
-scheduler, which requires an I/O event, and which is initiated by the process itself.
+Scheduler, which requires an I/O event, and which is initiated by the process itself.
 
 **Solution.** (Revision: §2.1)
 
-| Transition           | Trigger               |
+| Transition | Trigger |
 | -------------------- | --------------------- |
-| New → Ready          | OS admission          |
-| Ready → Running      | Scheduler (dispatch)  |
-| Running → Ready      | Preemption (timer)    |
-| Running → Blocked    | I/O or wait request   |
-| Blocked → Ready      | I/O completion        |
-| Running → Terminated | `exit()` system call  |
+| New → Ready | OS admission |
+| Ready → Running | Scheduler (dispatch) |
+| Running → Ready | Preemption (timer) |
+| Running → Blocked | I/O or wait request |
+| Blocked → Ready | I/O completion |
+| Running → Terminated | `exit()` system call |
 
 The scheduler triggers Ready → Running and Running → Ready (preemption). I/O events trigger
 Running → Blocked and Blocked → Ready. The process itself initiates Running → Terminated.
@@ -1638,15 +1638,15 @@ Running → Blocked and Blocked → Ready. The process itself initiates Running 
 <details>
 <summary>Problem 2 — Kernel Architecture Trade-offs</summary>
 
-A microkernel-based OS adds 2 $\mu$s of message-passing overhead per system call compared to a
-monolithic kernel. If a web server makes $10^6$ system calls per second, what is the total overhead
-as a fraction of CPU time on a 3 GHz processor?
+A microkernel-based OS adds 2 $\mu$S of message-passing overhead per system call compared to a
+Monolithic kernel. If a web server makes $10^6$ system calls per second, what is the total overhead
+As a fraction of CPU time on a 3 GHz processor?
 
 **Solution.** (Revision: §1.2)
 
 Total message-passing time per second: $10^6 \times 2 \;\mu\mathrm{s{} = 2$ seconds of CPU time per
-second. This exceeds available CPU time, making the microkernel approach infeasible at this call
-rate without optimisations such as batched IPC or shared-memory channels.
+Second. This exceeds available CPU time, making the microkernel approach infeasible at this call
+Rate without optimisations such as batched IPC or shared-memory channels.
 </details>
 
 <details>
@@ -1661,10 +1661,10 @@ Gantt: $\lvert P_1(10) \rvert P_2(5) \rvert P_3(2) \rvert$ at times 0, 10, 15, 1
 
 | Process | Waiting | Turnaround |
 | ------- | ------- | ---------- |
-| $P_1$   | 0       | 10         |
-| $P_2$   | 9       | 14         |
-| $P_3$   | 13      | 15         |
-| **Avg** | **7.33** | **13**    |
+| $P_1$ | 0 | 10 |
+| $P_2$ | 9 | 14 |
+| $P_3$ | 13 | 15 |
+| **Avg** | **7.33** | **13** |
 
 $P_3$ waits the longest despite having the shortest burst — the convoy effect.
 </details>
@@ -1676,17 +1676,17 @@ Using the same processes as Problem 3, compute the schedule under non-preemptive
 
 **Solution.** (Revision: §2.4)
 
-At $t = 0$, only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$, $P_2$ (burst 5) and $P_3$
-(burst 2) are both ready. SJF selects $P_3$, then $P_2$.
+At $t = 0$Only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$$P_2$ (burst 5) and $P_3$
+(burst 2) are both ready. SJF selects $P_3$Then $P_2$.
 
 Gantt: $\lvert P_1(10) \rvert P_3(2) \rvert P_2(5) \rvert$ at times 0, 10, 12, 17.
 
 | Process | Waiting | Turnaround |
 | ------- | ------- | ---------- |
-| $P_1$   | 0       | 10         |
-| $P_2$   | 10      | 15         |
-| $P_3$   | 8       | 10         |
-| **Avg** | **6**   | **11.67**  |
+| $P_1$ | 0 | 10 |
+| $P_2$ | 10 | 15 |
+| $P_3$ | 8 | 10 |
+| **Avg** | **6** | **11.67** |
 
 Average waiting time improves from 7.33 to 6 compared to FCFS.
 </details>
@@ -1694,8 +1694,8 @@ Average waiting time improves from 7.33 to 6 compared to FCFS.
 <details>
 <summary>Problem 5 — Round Robin Scheduling</summary>
 
-Using the processes from Problem 3 with quantum $q = 2$, draw the Gantt chart and compute the
-average turnaround time.
+Using the processes from Problem 3 with quantum $q = 2$Draw the Gantt chart and compute the
+Average turnaround time.
 
 **Solution.** (Revision: §2.4)
 
@@ -1706,13 +1706,13 @@ Times: 0, 2, 4, 6, 8, 10, 12, 13, 15, 17.
 
 | Process | Completion | Turnaround |
 | ------- | ---------- | ---------- |
-| $P_1$   | 17         | 17         |
-| $P_2$   | 13         | 12         |
-| $P_3$   | 6          | 4          |
-| **Avg** |            | **11**     |
+| $P_1$ | 17 | 17 |
+| $P_2$ | 13 | 12 |
+| $P_3$ | 6 | 4 |
+| **Avg** | | **11** |
 
 Round Robin gives the fastest turnaround for $P_3$ (4 vs 10 under SJF) at the cost of slower
-average turnaround.
+Average turnaround.
 </details>
 
 <details>
@@ -1734,17 +1734,17 @@ Gantt: $\lvert P_1(1) \rvert P_2(1) \rvert P_3(2) \rvert P_2(4) \rvert P_1(6) \r
 
 | Process | Completion | Turnaround | Waiting |
 | ------- | ---------- | ---------- | ------- |
-| $P_1$   | 14         | 14         | 6       |
-| $P_2$   | 8          | 7          | 3       |
-| $P_3$   | 4          | 2          | 0       |
-| **Avg** |            | **7.67**   | **3**   |
+| $P_1$ | 14 | 14 | 6 |
+| $P_2$ | 8 | 7 | 3 |
+| $P_3$ | 4 | 2 | 0 |
+| **Avg** | | **7.67** | **3** |
 </details>
 
 <details>
 <summary>Problem 7 — Critical Section</summary>
 
 Show that the following solution to the critical section problem is incorrect (Peterson's algorithm
-with the order of `flag[i] = true` and `turn = j` swapped):
+With the order of `flag[i] = true` and `turn = j` swapped):
 
 ```c
 // Process i:
@@ -1759,7 +1759,7 @@ flag[i] = false;
 
 Both processes can set `turn` to the other's value, then set their own flag. If both execute
 `turn = j` and `turn = i` respectively, then `turn` ends up as the last writer's value. Both then
-set their flags to true. The while loop checks `flag[j] && turn == j`. If the interleaving is:
+Set their flags to true. The while loop checks `flag[j] && turn == j`. If the interleaving is:
 
 1. $P_0$: `turn = 1`
 2. $P_1$: `turn = 0`
@@ -1785,7 +1785,7 @@ Both processes are in their critical section simultaneously. Mutual exclusion is
 <summary>Problem 8 — Producer-Consumer with Semaphores</summary>
 
 In the bounded buffer solution of §3.6, explain why the `empty` and `full` semaphores must be
-different from the `mutex`. What goes wrong if we use only `mutex` (initialised to 1) and
+Different from the `mutex`. What goes wrong if we use only `mutex` (initialised to 1) and
 `count` (shared variable)?
 
 **Solution.** (Revision: §3.6)
@@ -1802,26 +1802,26 @@ while (count == BUFFER_SIZE) {
 
 Without `empty` and `full` semaphores, the producer must busy-wait or use condition variables.
 Semaphores provide **blocking** semantics: the producer blocks on `empty` when the buffer is full
-and is automatically woken when a consumer signals `empty`. Using only `mutex` either causes
-busy-waiting (wasting CPU cycles) or requires the programmer to correctly implement the
-wait/signal protocol — which is exactly what semaphores encapsulate.
+And is automatically woken when a consumer signals `empty`. Using only `mutex` either causes
+Busy-waiting (wasting CPU cycles) or requires the programmer to correctly implement the
+Wait/signal protocol — which is exactly what semaphores encapsulate.
 </details>
 
 <details>
 <summary>Problem 9 — Deadlock: Necessary Conditions</summary>
 
 A system has three processes and three resources. Each process holds one resource and requests a
-second. Is deadlock possible? If so, identify the deadlocked set.
+Second. Is deadlock possible? If so, identify the deadlocked set.
 
 **Solution.** (Revision: §4.1)
 
 Yes. If $P_0$ holds $R_0$ and requests $R_1$; $P_1$ holds $R_1$ and requests $R_2$; $P_2$ holds
-$R_2$ and requests $R_0$, we have circular wait: $P_0 \to R_1 \to P_1 \to R_2 \to P_2 \to R_0
+$R_2$ and requests $R_0$We have circular wait: $P_0 \to R_1 \to P_1 \to R_2 \to P_2 \to R_0
 \to P_0$. All four Coffman conditions hold (mutual exclusion, hold-and-wait, no preemption,
-circular wait), so deadlock exists. The deadlocked set is $\{P_0, P_1, P_2\}$.
+Circular wait), so deadlock exists. The deadlocked set is $\{P_0, P_1, P_2\}$.
 
 If instead $P_0$ holds $R_0$ and requests $R_2$; $P_1$ holds $R_1$ and requests $R_0$; $P_2$ holds
-$R_2$ and requests $R_1$, the same circular wait exists.
+$R_2$ and requests $R_1$The same circular wait exists.
 </details>
 
 <details>
@@ -1829,11 +1829,11 @@ $R_2$ and requests $R_1$, the same circular wait exists.
 
 Three processes, three resource types. Available = $(3, 2, 1)$.
 
-| Process | Allocation | Max       | Need      |
+| Process | Allocation | Max | Need |
 | ------- | ---------- | --------- | --------- |
-| $P_0$   | (1, 0, 0)  | (3, 2, 1) | (2, 2, 1) |
-| $P_1$   | (1, 0, 1)  | (2, 1, 2) | (1, 1, 1) |
-| $P_2$   | (1, 1, 0)  | (2, 1, 1) | (1, 0, 1) |
+| $P_0$ | (1, 0, 0) | (3, 2, 1) | (2, 2, 1) |
+| $P_1$ | (1, 0, 1) | (2, 1, 2) | (1, 1, 1) |
+| $P_2$ | (1, 1, 0) | (2, 1, 1) | (1, 0, 1) |
 
 Determine if the system is in a safe state.
 
@@ -1852,17 +1852,17 @@ All Finish = true. Safe sequence: $\langle P_1, P_2, P_0 \rangle$.
 <summary>Problem 11 — Banker's Algorithm Request</summary>
 
 Using the state from Problem 10, determine whether the request from $P_0$ for $(1, 0, 0)$ can be
-granted.
+Granted.
 
 **Solution.** (Revision: §4.3)
 
 1. $\mathrm{Request{}_0 = (1,0,0) \leq \mathrm{Need{}_0 = (2,2,1)$. OK.
 2. $\mathrm{Request{}_0 = (1,0,0) \leq A = (3,2,1)$. OK.
-3. Pretend to allocate: $A = (2,2,1)$, $\mathrm{Alloc{}_0 = (2,0,0)$, $\mathrm{Need{}_0 = (1,2,1)$.
+3. Pretend to allocate: $A = (2,2,1)$$\mathrm{Alloc{}_0 = (2,0,0)$$\mathrm{Need{}_0 = (1,2,1)$.
 4. Safety: Work = $(2,2,1)$.
-   - $P_0$: $(1,2,1) \leq (2,2,1)$. Execute. Work = $(4,2,1)$.
-   - $P_1$: $(1,1,1) \leq (4,2,1)$. Execute. Work = $(5,2,2)$.
-   - $P_2$: $(1,0,1) \leq (5,2,2)$. Execute. Work = $(6,3,2)$.
+ - $P_0$: $(1,2,1) \leq (2,2,1)$. Execute. Work = $(4,2,1)$.
+ - $P_1$: $(1,1,1) \leq (4,2,1)$. Execute. Work = $(5,2,2)$.
+ - $P_2$: $(1,0,1) \leq (5,2,2)$. Execute. Work = $(6,3,2)$.
 
 All finish. Request **granted**.
 </details>
@@ -1888,7 +1888,7 @@ A system uses 32-bit virtual addresses with 4 KiB pages. The page table entry is
 
 A system with a two-level page table. TLB hit ratio = 0.90, TLB access = 2 ns, memory access =
 100 ns (for any level). Page fault rate = 0.001, page fault service = 6 ms. Compute the effective
-access time.
+Access time.
 
 **Solution.** (Revision: §5.6)
 
@@ -1897,14 +1897,14 @@ access time.
 *Fault* ($0.001$): $2 + 100 + 100 + 6 \times 10^6 = 6000002$ ns.
 
 $\mathrm{EAT{} = 0.8991 \times 102 + 0.0999 \times 202 + 0.001 \times 6000002$
-$= 91.71 + 20.18 + 6000.20 = 6112.09$ ns $\approx 6.11$ $\mu$s.
+$= 91.71 + 20.18 + 6000.20 = 6112.09$ ns $\approx 6.11$ $\mu$S.
 </details>
 
 <details>
 <summary>Problem 14 — Page Fault EAT</summary>
 
 What page fault rate is needed to ensure the effective access time is no more than 200 ns? Memory
-access time = 100 ns, page fault service = 8 ms.
+Access time = 100 ns, page fault service = 8 ms.
 
 **Solution.** (Revision: §5.5)
 
@@ -1915,14 +1915,14 @@ $100 = 7999900 p$
 $p \approx 1.25 \times 10^{-5}$
 
 The page fault rate must be below 0.00125%, or roughly 1 fault per 80,000 accesses. This
-illustrates why effective caching is essential.
+Illustrates why effective caching is essential.
 </details>
 
 <details>
 <summary>Problem 15 — LRU Page Replacement</summary>
 
 Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Four frames. Compute the number of page
-faults under LRU and under FIFO. Does Belady's anomaly occur?
+Faults under LRU and under FIFO. Does Belady's anomaly occur?
 
 **Solution.** (Revision: §5.7)
 
@@ -1930,17 +1930,17 @@ faults under LRU and under FIFO. Does Belady's anomaly occur?
 
 | Ref | F1 | F2 | F3 | F4 | Fault? |
 | --- | -- | -- | -- | -- | ------ |
-| 1   | 1  |    |    |    | Yes    |
-| 2   | 1  | 2  |    |    | Yes    |
-| 3   | 1  | 2  | 3  |    | Yes    |
-| 4   | 1  | 2  | 3  | 4  | Yes    |
-| 1   | 1  | 2  | 3  | 4  | No     |
-| 2   | 1  | 2  | 3  | 4  | No     |
-| 5   | 5  | 2  | 3  | 4  | Yes    |
-| 1   | 5  | 1  | 3  | 4  | Yes    |
-| 2   | 5  | 1  | 2  | 4  | Yes    |
-| 3   | 5  | 1  | 2  | 3  | Yes    |
-| 4   | 5  | 1  | 2  | 3  | No (wait, 4 not in frames) |
+| 1 | 1 | | | | Yes |
+| 2 | 1 | 2 | | | Yes |
+| 3 | 1 | 2 | 3 | | Yes |
+| 4 | 1 | 2 | 3 | 4 | Yes |
+| 1 | 1 | 2 | 3 | 4 | No |
+| 2 | 1 | 2 | 3 | 4 | No |
+| 5 | 5 | 2 | 3 | 4 | Yes |
+| 1 | 5 | 1 | 3 | 4 | Yes |
+| 2 | 5 | 1 | 2 | 4 | Yes |
+| 3 | 5 | 1 | 2 | 3 | Yes |
+| 4 | 5 | 1 | 2 | 3 | No (wait, 4 not in frames) |
 
 Let me redo FIFO more carefully. FIFO replaces the oldest page in memory.
 
@@ -1948,18 +1948,18 @@ Frames after each reference (FIFO queue, front = oldest):
 
 | Ref | Queue (oldest→newest) | Fault? |
 | --- | --------------------- | ------ |
-| 1   | [1]                   | Yes    |
-| 2   | [1, 2]                | Yes    |
-| 3   | [1, 2, 3]             | Yes    |
-| 4   | [1, 2, 3, 4]          | Yes    |
-| 1   | [1, 2, 3, 4]          | No     |
-| 2   | [1, 2, 3, 4]          | No     |
-| 5   | [2, 3, 4, 5]          | Yes    |
-| 1   | [3, 4, 5, 1]          | Yes    |
-| 2   | [4, 5, 1, 2]          | Yes    |
-| 3   | [5, 1, 2, 3]          | Yes    |
-| 4   | [1, 2, 3, 4]          | Yes    |
-| 5   | [2, 3, 4, 5]          | Yes    |
+| 1 | [1] | Yes |
+| 2 | [1, 2] | Yes |
+| 3 | [1, 2, 3] | Yes |
+| 4 | [1, 2, 3, 4] | Yes |
+| 1 | [1, 2, 3, 4] | No |
+| 2 | [1, 2, 3, 4] | No |
+| 5 | [2, 3, 4, 5] | Yes |
+| 1 | [3, 4, 5, 1] | Yes |
+| 2 | [4, 5, 1, 2] | Yes |
+| 3 | [5, 1, 2, 3] | Yes |
+| 4 | [1, 2, 3, 4] | Yes |
+| 5 | [2, 3, 4, 5] | Yes |
 
 FIFO faults: **10**.
 
@@ -1968,23 +1968,23 @@ With 3 frames: faults = **9** (from Belady's anomaly example in the text). With 
 
 *LRU (4 frames):* LRU replaces the least recently used page.
 
-| Ref | Frames     | Fault? |
+| Ref | Frames | Fault? |
 | --- | ---------- | ------ |
-| 1   | [1]        | Yes    |
-| 2   | [1, 2]     | Yes    |
-| 3   | [1, 2, 3]  | Yes    |
-| 4   | [1, 2, 3, 4] | Yes  |
-| 1   | [1, 2, 3, 4] | No   |
-| 2   | [1, 2, 3, 4] | No   |
-| 5   | [5, 2, 3, 4] | Yes  |
-| 1   | [5, 1, 3, 4] | Yes  |
-| 2   | [5, 1, 2, 4] | Yes  |
-| 3   | [5, 1, 2, 3] | Yes  |
-| 4   | [4, 1, 2, 3] | Yes  |
-| 5   | [4, 5, 2, 3] | Yes  |
+| 1 | [1] | Yes |
+| 2 | [1, 2] | Yes |
+| 3 | [1, 2, 3] | Yes |
+| 4 | [1, 2, 3, 4] | Yes |
+| 1 | [1, 2, 3, 4] | No |
+| 2 | [1, 2, 3, 4] | No |
+| 5 | [5, 2, 3, 4] | Yes |
+| 1 | [5, 1, 3, 4] | Yes |
+| 2 | [5, 1, 2, 4] | Yes |
+| 3 | [5, 1, 2, 3] | Yes |
+| 4 | [4, 1, 2, 3] | Yes |
+| 5 | [4, 5, 2, 3] | Yes |
 
 LRU faults: **10**. LRU does not exhibit Belady's anomaly (it is a stack algorithm), but in this
-particular reference string, 3 and 4 frames happen to produce the same count under LRU.
+Particular reference string, 3 and 4 frames happen to produce the same count under LRU.
 </details>
 
 <details>
@@ -1999,44 +1999,44 @@ Reference string: 1, 2, 3, 1, 2.
 *2 frames:*
 | Ref | F1 | F2 | Fault? |
 | --- | -- | -- | ------ |
-| 1   | 1  |    | Yes    |
-| 2   | 1  | 2  | Yes    |
-| 3   | 3  | 2  | Yes    |
-| 1   | 3  | 1  | Yes    |
-| 2   | 3  | 2  | Yes    |
+| 1 | 1 | | Yes |
+| 2 | 1 | 2 | Yes |
+| 3 | 3 | 2 | Yes |
+| 1 | 3 | 1 | Yes |
+| 2 | 3 | 2 | Yes |
 
 Faults: **5**.
 
 *3 frames:*
 | Ref | F1 | F2 | F3 | Fault? |
 | --- | -- | -- | -- | ------ |
-| 1   | 1  |    |    | Yes    |
-| 2   | 1  | 2  |    | Yes    |
-| 3   | 1  | 2  | 3  | Yes    |
-| 1   | 1  | 2  | 3  | No     |
-| 2   | 1  | 2  | 3  | No     |
+| 1 | 1 | | | Yes |
+| 2 | 1 | 2 | | Yes |
+| 3 | 1 | 2 | 3 | Yes |
+| 1 | 1 | 2 | 3 | No |
+| 2 | 1 | 2 | 3 | No |
 
 Faults: **3**.
 
 Here 3 frames produces fewer faults (3 vs 5), so this is not a counterexample. The original
-counterexample from the text (1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 vs 4 frames) remains
-valid: 3 frames → 9 faults, 4 frames → 10 faults.
+Counterexample from the text (1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 vs 4 frames) remains
+Valid: 3 frames → 9 faults, 4 frames → 10 faults.
 </details>
 
 <details>
 <summary>Problem 17 — Working Set and Thrashing</summary>
 
 A system has 40 frames. Process $P_1$ has a working set of 15 pages, $P_2$ has 12 pages, and $P_3$
-has 18 pages. Can all three run simultaneously without thrashing? What if $P_4$ with a working set
-of 8 pages is added?
+Has 18 pages. Can all three run simultaneously without thrashing? What if $P_4$ with a working set
+Of 8 pages is added?
 
 **Solution.** (Revision: §5.8)
 
 Without $P_4$: total working set = $15 + 12 + 18 = 45 \gt{} 40$. Thrashing occurs. Only two
-processes can run concurrently (e.g., $P_1 + P_2 = 27 \leq 40$, or $P_2 + P_3 = 30 \leq 40$).
+Processes can run concurrently (e.g., $P_1 + P_2 = 27 \leq 40$Or $P_2 + P_3 = 30 \leq 40$).
 
 With $P_4$: total = $15 + 12 + 18 + 8 = 53 \gt{} 40$. Even worse. Using working set admission, we
-would run at most two processes. The best combination that fits is $P_1 + P_3 = 33$ or $P_2 + P_3 =
+Would run at most two processes. The best combination that fits is $P_1 + P_3 = 33$ or $P_2 + P_3 =
 30$.
 </details>
 
@@ -2044,23 +2044,23 @@ would run at most two processes. The best combination that fits is $P_1 + P_3 = 
 <summary>Problem 18 — File Allocation</summary>
 
 A file system uses contiguous allocation with 512-byte blocks. A file is created at block 1000 and
-grows to 5000 bytes. Blocks 1000--1009 are allocated. The file then grows by 2000 bytes, but
-blocks 1010--1012 are occupied by another file. How does the file system handle this growth?
+Grows to 5000 bytes. Blocks 1000--1009 are allocated. The file then grows by 2000 bytes, but
+Blocks 1010--1012 are occupied by another file. How does the file system handle this growth?
 
 **Solution.** (Revision: §6.2)
 
 The file currently occupies blocks 1000--1009 (10 blocks for 5000 bytes). To grow by 2000 bytes, it
-needs 4 more blocks. Blocks 1010--1012 are occupied, so contiguous extension is impossible.
+Needs 4 more blocks. Blocks 1010--1012 are occupied, so contiguous extension is impossible.
 
 Options:
 1. **Move the file:** Copy blocks 1000--1009 to a new location with 14 consecutive free blocks.
-   Expensive for large files.
+ Expensive for large files.
 2. **Extents:** Use multiple extents. The file has extent 1 = blocks 1000--1009 and extent 2 = blocks
-   1016--1019 (wherever 4 free blocks are found). The directory stores a list of extents.
+ 1016--1019 (wherever 4 free blocks are found). The directory stores a list of extents.
 3. **Switch to linked or indexed allocation:** Not practical once the file system is in use.
 
 This illustrates the primary disadvantage of contiguous allocation: inability to grow files
-dynamically without costly relocation.
+Dynamically without costly relocation.
 </details>
 
 <details>
@@ -2111,20 +2111,28 @@ void vulnerable(char *input) {
 
 **Solution.** (Revision: §9.3)
 
-(a) If `input` exceeds 63 characters, `strcpy` writes past the end of `buffer`, overwriting the
-stack frame. On x86-64, the saved return address is located above the buffer on the stack. An
-attacker can overwrite the return address with the address of injected shellcode (also placed in
-the buffer), gaining control of execution when the function returns.
+(a) If `input` exceeds 63 characters, `strcpy` writes past the end of `buffer`Overwriting the
+Stack frame. On x86-64, the saved return address is located above the buffer on the stack. An
+Attacker can overwrite the return address with the address of injected shellcode (also placed in
+The buffer), gaining control of execution when the function returns.
 
 (b) Defences:
 
 - **Stack canary:** A random value is placed between `buffer` and the return address. The overflow
-  would overwrite the canary. Before returning, the function checks the canary and aborts if it has
-  been modified.
+ would overwrite the canary. Before returning, the function checks the canary and aborts if it has
+ been modified.
 - **ASLR:** Randomises the stack base address, so the attacker cannot predict where `buffer` (and
-  therefore the shellcode) will be in memory.
+ therefore the shellcode) will be in memory.
 - **DEP (W\^X):** Marks the stack as non-executable. Even if the attacker overwrites the return
-  address to point to the shellcode in `buffer`, the CPU will fault when trying to execute it.
+ address to point to the shellcode in `buffer`The CPU will fault when trying to execute it.
 - **CFI:** Verifies that the return address points to a valid call site. A crafted address injected
-  by the overflow would fail the CFI check.
+ by the overflow would fail the CFI check.
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

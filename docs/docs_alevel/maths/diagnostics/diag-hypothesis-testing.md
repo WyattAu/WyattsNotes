@@ -55,7 +55,7 @@ $$c = 500 - 1.6449 \times 0.125 = 500 - 0.2056 = 499.794$$
 
 **(c)** For the two-tailed test at the 5% level, each tail has significance $\frac{0.05}{2} = 0.025$.
 
-$H_0: \mu = 500$, $H_1: \mu \neq 500$.
+$H_0: \mu = 500$$H_1: \mu \neq 500$.
 
 Lower critical value:
 
@@ -73,20 +73,20 @@ $$\frac{c_2 - 500}{0.125} = 1.96 \implies c_2 = 500 + 0.245 = 500.245$$
 
 Test statistic: $z = \frac{499.4 - 500}{0.125} = \frac{-0.6}{0.125} = -4.8$.
 
-Since $-4.8 \lt -1.6449$, the test statistic falls in the critical region.
+Since $-4.8 \lt -1.6449$The test statistic falls in the critical region.
 
 **Conclusion (one-tailed):** Reject $H_0$. There is sufficient evidence that the machine is underfilling.
 
 **Two-tailed test:** $z = -4.8$.
 
-Since $-4.8 \lt -1.96$, the test statistic falls in the lower critical region.
+Since $-4.8 \lt -1.96$The test statistic falls in the lower critical region.
 
 **Conclusion (two-tailed):** Reject $H_0$. There is sufficient evidence that the mean fill weight differs from 500 g.
 
 In this case, both tests lead to rejection because the evidence is very strong ($z = -4.8$ is far in the tail). However, consider if $\bar{x} = 499.77$ instead:
 
-- One-tailed: $z = \frac{499.77 - 500}{0.125} = -1.84$. Since $-1.84 \lt -1.6449$, we reject $H_0$.
-- Two-tailed: $z = -1.84$. Since $-1.96 \lt -1.84 \lt 1.96$, we do **not** reject $H_0$.
+- One-tailed: $z = \frac{499.77 - 500}{0.125} = -1.84$. Since $-1.84 \lt -1.6449$We reject $H_0$.
+- Two-tailed: $z = -1.84$. Since $-1.96 \lt -1.84 \lt 1.96$We do **not** reject $H_0$.
 
 This shows that the one-tailed test is more powerful for detecting deviations in the specified direction, but it should only be used when there is a genuine prior reason to test in one direction only.
 
@@ -101,7 +101,7 @@ The one-tailed critical region extends further into the tail (includes values be
 **Implications:**
 - **Type I error rate:** Both tests have the same overall Type I error rate (5%). The one-tailed test concentrates this 5% in one direction.
 - **Type II error rate:** The one-tailed test has a **lower** Type II error rate (higher power) for detecting deviations in the specified direction, because its critical region is larger in that direction.
-- **Risk:** The one-tailed test cannot detect deviations in the opposite direction. If the machine is actually overfilling, the one-tailed test (testing for underfilling) will almost certainly fail to reject $H_0$, committing a Type II error.
+- **Risk:** The one-tailed test cannot detect deviations in the opposite direction. If the machine is actually overfilling, the one-tailed test (testing for underfilling) will almost certainly fail to reject $H_0$Committing a Type II error.
 
 ---
 
@@ -161,13 +161,13 @@ $$\mathrm{P}\left(Z \leq \frac{c - 62}{8}\right) \leq 0.05 \implies \frac{c - 62
 
 So $c \geq 75.16$.
 
-But for the Type I error rate to be at most 5%, we need $c \geq 63.16$, while for the Type II error rate to be at most 5%, we need $c \geq 75.16$. These are contradictory requirements in the sense that increasing $c$ reduces the Type I error rate but increases the Type II error rate, and vice versa.
+But for the Type I error rate to be at most 5%, we need $c \geq 63.16$While for the Type II error rate to be at most 5%, we need $c \geq 75.16$. These are contradictory requirements in the sense that increasing $c$ reduces the Type I error rate but increases the Type II error rate, and vice versa.
 
-Let me verify: at $c = 63.16$, Type I error $= 5\%$ and Type II error $= \mathrm{P}(B \leq 63.16 \mid \mu = 62) = \mathrm{P}(Z \leq 0.145) = 0.558 = 55.8\%$. At $c = 75.16$, Type II error $= 5\%$ but Type I error $= \mathrm{P}(B > 75.16 \mid \mu = 50) = \mathrm{P}(Z > 3.145) \approx 0.08\%$.
+Let me verify: at $c = 63.16$Type I error $= 5\%$ and Type II error $= \mathrm{P}(B \leq 63.16 \mid \mu = 62) = \mathrm{P}(Z \leq 0.145) = 0.558 = 55.8\%$. At $c = 75.16$Type II error $= 5\%$ but Type I error $= \mathrm{P}(B > 75.16 \mid \mu = 50) = \mathrm{P}(Z > 3.145) \approx 0.08\%$.
 
 As $c$ increases, Type I error decreases and Type II error increases. There is no value of $c$ where both are at most 5% simultaneously.
 
-**(d)** With $n = 4$ independent tests, $\bar{B} \sim N(\mu, \frac{64}{4}) = N(\mu, 16)$, so $\sigma_{\bar{B}} = 4$.
+**(d)** With $n = 4$ independent tests, $\bar{B} \sim N(\mu, \frac{64}{4}) = N(\mu, 16)$So $\sigma_{\bar{B}} = 4$.
 
 For Type I error $\leq 5\%$: $c \geq 50 + 1.6449 \times 4 = 56.58$
 
@@ -177,9 +177,9 @@ Wait --- for Type II error $\leq 5\%$: we need $\mathrm{P}(\bar{B} \leq c \mid \
 
 $$\mathrm{P}\left(Z \leq \frac{c - 62}{4}\right) \leq 0.05 \implies \frac{c - 62}{4} \geq 1.6449 \implies c \geq 68.58$$
 
-But at $c = 68.58$: Type I error $= \mathrm{P}(\bar{B} > 68.58 \mid \mu = 50) = \mathrm{P}(Z > 4.645) \approx 0$, and Type II error $= 5\%$.
+But at $c = 68.58$: Type I error $= \mathrm{P}(\bar{B} > 68.58 \mid \mu = 50) = \mathrm{P}(Z > 4.645) \approx 0$And Type II error $= 5\%$.
 
-At $c = 56.58$: Type I error $= 5\%$, Type II error $= \mathrm{P}(\bar{B} \leq 56.58 \mid \mu = 62) = \mathrm{P}(Z \leq -1.355) = 8.8\%$.
+At $c = 56.58$: Type I error $= 5\%$Type II error $= \mathrm{P}(\bar{B} \leq 56.58 \mid \mu = 62) = \mathrm{P}(Z \leq -1.355) = 8.8\%$.
 
 Still, there is no value where both are $\leq 5\%$. Even with 4 samples, the distributions overlap too much.
 
@@ -221,7 +221,7 @@ The researcher tests the drug on 25 patients and finds the mean reduction in blo
 
 **Solution:**
 
-**(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$, so $\sigma_{\bar{X}} = 3$.
+**(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$So $\sigma_{\bar{X}} = 3$.
 
 $$z = \frac◆LB◆\bar{x} - 0◆RB◆◆LB◆3◆RB◆ = \frac{-5.2}{3} = -1.733$$
 
@@ -231,13 +231,13 @@ $$\text{p-value} = \mathrm{P}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 
 
 The p-value is approximately 0.0414.
 
-Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level.
+Since $0.0414 \lt 0.05$The result is statistically significant at the 5% level.
 
 **(b)** The researcher's statement contains two errors:
 
 1. **"Accept the null hypothesis"**: We never "accept" $H_0$. The correct language is "there is insufficient evidence to reject $H_0$" or "we fail to reject $H_0$." The distinction matters because a lack of evidence against $H_0$ is not the same as evidence for $H_0$. The drug may have a small effect that the test was not powerful enough to detect.
 
-2. **"The drug has no effect"**: Failing to reject $H_0$ does not prove that $H_0$ is true. The correct statement is that "the data does not provide sufficient evidence to conclude that the drug reduces blood pressure." The drug might still have an effect; we simply cannot detect it with this sample size.
+2. **"The drug has no effect"**: Failing to reject $H_0$ does not prove that $H_0$ is true. The correct statement is that "the data does not provide sufficient evidence to conclude that the drug reduces blood pressure." The drug might still have an effect; we cannot detect it with this sample size.
 
 **Corrected statement:** "The p-value is [greater/less] than 0.05, so there is [insufficient/sufficient] evidence at the 5% significance level to reject the null hypothesis that the drug has no effect on blood pressure."
 
@@ -245,13 +245,13 @@ Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level
 
 > The probability of obtaining a test statistic at least as extreme as the one observed, **assuming $H_0$ is true**.
 
-The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$, not $\mathrm{P}(H_0 \mid \text{data})$.
+The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$Not $\mathrm{P}(H_0 \mid \text{data})$.
 
-A large p-value means the observed data is consistent with $H_0$, but it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
+A large p-value means the observed data is consistent with $H_0$But it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
 
 To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
 
-**(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
+**(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$So $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
 $$z = \frac◆LB◆-5.2◆RB◆◆LB◆\sqrt{4.5}◆RB◆ = \frac{-5.2}{2.121} = -2.451$$
 
@@ -279,7 +279,7 @@ After a new traffic light system is installed, the engineer records the number o
 
 $$6, 7, 5, 8, 4, 9, 6, 7, 5, 8, 6, 7, 4, 9, 5, 8, 6, 7, 5, 8$$
 
-**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{Po}(8)$. State the mean and variance of $X$, and explain why the Poisson distribution is a reasonable model for this scenario.
+**(a)** The engineer proposes to use a Poisson distribution to model the data. Before the new system, the number of vehicles $X \sim \text{Po}(8)$. State the mean and variance of $X$And explain why the Poisson distribution is a reasonable model for this scenario.
 
 **(b)** The engineer wants to test whether the new traffic light system has changed the mean number of vehicles per interval. She decides to use the sample mean. State why using the sample mean directly with a Poisson test is difficult, and explain why a normal approximation would be appropriate.
 
@@ -318,29 +318,29 @@ $H_0: \lambda = 8$ (mean number of vehicles per interval is 8)
 
 $H_1: \lambda \lt 8$ (mean has decreased)
 
-Under $H_0$: $\bar{X} \approx N(8, 0.4)$, $\sigma = \sqrt{0.4} \approx 0.6325$.
+Under $H_0$: $\bar{X} \approx N(8, 0.4)$$\sigma = \sqrt{0.4} \approx 0.6325$.
 
 $$z = \frac{6.7 - 8}{0.6325} = \frac{-1.3}{0.6325} = -2.056$$
 
-p-value $= \mathrm{P}(Z \lt -2.056) = 1 - \Phi(2.056) = 1 - 0.9801 = 0.0199$
+P-value $= \mathrm{P}(Z \lt -2.056) = 1 - \Phi(2.056) = 1 - 0.9801 = 0.0199$
 
-Since $0.0199 \lt 0.05$, we reject $H_0$.
+Since $0.0199 \lt 0.05$We reject $H_0$.
 
 **Conclusion:** There is sufficient evidence at the 5% significance level to conclude that the new traffic light system has reduced the mean number of vehicles per 10-second interval.
 
 **(d)** The total count is $T = 134$.
 
-Under $H_0$: $T \sim \text{Po}(160)$, approximated by $N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
+Under $H_0$: $T \sim \text{Po}(160)$Approximated by $N(160, 160)$$\sigma = \sqrt{160} \approx 12.649$.
 
 With continuity correction (since $T$ is discrete and we want $\mathrm{P}(T \leq 134)$):
 
 $$z = \frac◆LB◆134.5 - 160◆RB◆◆LB◆\sqrt{160}◆RB◆ = \frac{-25.5}{12.649} = -2.016$$
 
-p-value $= \mathrm{P}(Z \lt -2.016) = 1 - \Phi(2.016) = 1 - 0.9781 = 0.0219$
+P-value $= \mathrm{P}(Z \lt -2.016) = 1 - \Phi(2.016) = 1 - 0.9781 = 0.0219$
 
-Since $0.0219 \lt 0.05$, we reject $H_0$ --- the same conclusion as part (c).
+Since $0.0219 \lt 0.05$We reject $H_0$ --- the same conclusion as part (c).
 
-The slight difference in p-values (0.0199 vs 0.0219) is due to the continuity correction in part (d). Without the continuity correction, part (d) gives $z = \frac◆LB◆134 - 160◆RB◆◆LB◆\sqrt{160}◆RB◆ = -2.056$, exactly matching part (c). This confirms the equivalence: testing the sample mean is mathematically identical to testing the total count, since $\bar{X} = \frac{T}{n}$ and dividing by a constant $n$ does not change the significance of the result.
+The slight difference in p-values (0.0199 vs 0.0219) is due to the continuity correction in part (d). Without the continuity correction, part (d) gives $z = \frac◆LB◆134 - 160◆RB◆◆LB◆\sqrt{160}◆RB◆ = -2.056$Exactly matching part (c). This confirms the equivalence: testing the sample mean is mathematically identical to testing the total count, since $\bar{X} = \frac{T}{n}$ and dividing by a constant $n$ does not change the significance of the result.
 
 ---
 
@@ -362,7 +362,7 @@ A manufacturer claims that the mean lifetime of their batteries is 500 hours. A 
 
 **Solution:**
 
-**(a)** $H_0: \mu = 500$, $H_1: \mu \lt 500$.
+**(a)** $H_0: \mu = 500$$H_1: \mu \lt 500$.
 
 Under $H_0$: $\bar{X} \sim N\left(500, \frac{40^2}{36}\right) = N(500, \frac{1600}{36}) = N(500, 44.44)$.
 
@@ -400,7 +400,7 @@ $$\text{Power} = 1 - \mathrm{P}(\text{Type II error}) = 1 - 0.0877 = 0.9123$$
 
 The power is approximately 91.2% when the true mean is 480 hours.
 
-**(d)** We need Power $\geq 0.90$ when $\mu = 480$, i.e., $\mathrm{P}(\text{Type II error}) \leq 0.10$.
+**(d)** We need Power $\geq 0.90$ when $\mu = 480$I.e., $\mathrm{P}(\text{Type II error}) \leq 0.10$.
 
 Let $n$ be the sample size. Under $H_0$: $\bar{X} \sim N(500, \frac{1600}{n})$.
 
@@ -456,15 +456,15 @@ So $n = 35$ is the minimum sample size.
 
 **Question:**
 
-A psychologist investigates the relationship between hours of sleep ($S$) and reaction time ($R$, in ms) for a random sample of 15 adults. She calculates the product moment correlation coefficient to be $r = -0.52$.
+A psychologist investigates the relationship between hours of sleep ($S$) and reaction time ($R$In ms) for a random sample of 15 adults. She calculates the product moment correlation coefficient to be $r = -0.52$.
 
-**(a)** Stating your hypotheses clearly, test at the 5% significance level whether there is evidence of a negative correlation between hours of sleep and reaction time. The critical value for a one-tailed test with $n = 15$ at the 5% level is $-0.441$.
+**(a)** Stating your hypotheses , test at the 5% significance level whether there is evidence of a negative correlation between hours of sleep and reaction time. The critical value for a one-tailed test with $n = 15$ at the 5% level is $-0.441$.
 
 **(b)** Calculate the coefficient of determination $r^2$ and interpret it in the context of this study.
 
 **(c)** The psychologist fits a regression line of $R$ on $S$ and obtains $R = 580 - 28S$. Using this regression line, predict the reaction time for someone who sleeps 8 hours. Explain why this prediction might not be reliable.
 
-**(d)** A colleague collects data from 40 adults and obtains $r = -0.31$. Using the fact that the critical value for a one-tailed test with $n = 40$ at the 5% level is $-0.257$, test whether there is evidence of negative correlation. Compare the p-values (qualitatively) for the two studies and explain the role of sample size in hypothesis testing for correlation.
+**(d)** A colleague collects data from 40 adults and obtains $r = -0.31$. Using the fact that the critical value for a one-tailed test with $n = 40$ at the 5% level is $-0.257$Test whether there is evidence of negative correlation. Compare the p-values (qualitatively) for the two studies and explain the role of sample size in hypothesis testing for correlation.
 
 [Difficulty: hard. Combines hypothesis testing for correlation with regression and interpretation of $r^2$.]
 
@@ -480,7 +480,7 @@ $H_1: \rho \lt 0$ (negative linear correlation)
 
 **Critical value:** $-0.441$ (for a one-tailed test at the 5% level with $n = 15$)
 
-Since $r = -0.52 \lt -0.441$, the test statistic falls in the critical region.
+Since $r = -0.52 \lt -0.441$The test statistic falls in the critical region.
 
 **Conclusion:** There is sufficient evidence at the 5% significance level to reject $H_0$ and conclude that there is evidence of a negative correlation between hours of sleep and reaction time in the population.
 
@@ -502,27 +502,27 @@ This prediction might not be reliable because:
 
 1. **Extrapolation:** If the original data was collected from adults with, say, 4--9 hours of sleep, then 8 hours might be near the upper end of the data range. The regression line may not accurately predict beyond the observed range.
 
-2. **Weak correlation:** With $r^2 = 0.27$, only 27% of the variation is explained. The remaining 73% of variation means there is substantial scatter around the regression line, making individual predictions imprecise.
+2. **Weak correlation:** With $r^2 = 0.27$Only 27% of the variation is explained. The remaining 73% of variation means there is substantial scatter around the regression line, making individual predictions imprecise.
 
 3. **Confounding variables:** Reaction time depends on many factors other than sleep. The prediction assumes all other factors are at their average values, which may not be the case for any specific individual.
 
-**(d)** $H_0: \rho = 0$, $H_1: \rho \lt 0$.
+**(d)** $H_0: \rho = 0$$H_1: \rho \lt 0$.
 
 Test statistic: $r = -0.31$.
 
 Critical value: $-0.257$.
 
-Since $-0.31 \lt -0.257$, the test statistic falls in the critical region.
+Since $-0.31 \lt -0.257$The test statistic falls in the critical region.
 
 **Conclusion:** There is sufficient evidence at the 5% level to conclude there is a negative correlation.
 
 **Comparison:**
 
-Study 1 ($n = 15$, $r = -0.52$): Stronger correlation but smaller sample. The p-value is small but not extremely so, because with only 15 observations, a correlation of $-0.52$ could plausibly occur by chance with moderate probability.
+Study 1 ($n = 15$$r = -0.52$): Stronger correlation but smaller sample. The p-value is small but not extremely so, because with only 15 observations, a correlation of $-0.52$ could plausibly occur by chance with moderate probability.
 
-Study 2 ($n = 40$, $r = -0.31$): Weaker correlation but larger sample. Despite the weaker correlation, the larger sample provides more evidence against $H_0$, and the p-value may be comparable or even smaller.
+Study 2 ($n = 40$$r = -0.31$): Weaker correlation but larger sample. Despite the weaker correlation, the larger sample provides more evidence against $H_0$And the p-value may be comparable or even smaller.
 
-The relationship between $r$, $n$, and the p-value is governed by the test statistic $t = r\sqrt◆LB◆\frac{n-2}{1-r^2}◆RB◆$, which follows a $t$-distribution with $n-2$ degrees of freedom under $H_0$.
+The relationship between $r$$n$And the p-value is governed by the test statistic $t = r\sqrt◆LB◆\frac{n-2}{1-r^2}◆RB◆$Which follows a $t$-distribution with $n-2$ degrees of freedom under $H_0$.
 
 For Study 1: $t = -0.52\sqrt◆LB◆\frac{13}{1-0.2704}◆RB◆ = -0.52\sqrt{17.81} = -0.52 \times 4.22 = -2.19$
 

@@ -33,13 +33,13 @@ An unknown organic compound $X$ has the molecular formula $C_{3}H_{6}O_{2}$. The
 
 - **No reaction with Fehling's solution**: $X$ does **not** contain an aldehyde ($-CHO$) group. (Fehling's solution is reduced by aldehydes, giving a brick-red precipitate.)
 
-- **Orange to green with $K_{2}Cr_{2}O_{7}$**: $X$ is oxidised, but since we already know it has a $-COOH$ group (which cannot be further oxidised by this reagent), the colour change is likely due to an **alcohol** group also being present. However, the molecular formula is $C_{3}H_{6}O_{2}$, which accounts for exactly one $-COOH$ group ($C_{2}H_{3}O_{2}$) plus one additional carbon ($CH_{3}$). The only structure is $CH_{3}CH_{2}COOH$ (propanoic acid), which has no alcohol group.
+- **Orange to green with $K_{2}Cr_{2}O_{7}$**: $X$ is oxidised, but since we already know it has a $-COOH$ group (which cannot be further oxidised by this reagent), the colour change is likely due to an **alcohol** group also being present. However, the molecular formula is $C_{3}H_{6}O_{2}$Which accounts for exactly one $-COOH$ group ($C_{2}H_{3}O_{2}$) plus one additional carbon ($CH_{3}$). The only structure is $CH_{3}CH_{2}COOH$ (propanoic acid), which has no alcohol group.
 
 **Note:** $CH_{3}CH_{2}COOH$ would NOT give orange-to-green with $K_{2}Cr_{2}O_{7}$ since
-carboxylic acids are not oxidised by this reagent. However, the $Na_{2}CO_{3}$ result is definitive
-for carboxylic acid. No other $C_{3}H_{6}O_{2}$ structure (e.g., hydroxypropanal) would react with
+Carboxylic acids are not oxidised by this reagent. However, the $Na_{2}CO_{3}$ result is definitive
+For carboxylic acid. No other $C_{3}H_{6}O_{2}$ structure (e.g., hydroxypropanal) would react with
 $Na_{2}CO_{3}$. The orange-to-green result may be due to a slight impurity, or the question is
-designed to test whether students recognise that carboxylic acids are the endpoint of oxidation.
+Designed to test whether students recognise that carboxylic acids are the endpoint of oxidation.
 Given the $Na_{2}CO_{3}$ result, $X$ must be propanoic acid.
 
 (b) Structure: $CH_{3}CH_{2}COOH$
@@ -168,8 +168,8 @@ $$A \xrightarrow{CH_{3}CH_{2}OH / H^{+}} E$$
 
 **$B$**: The iodoform reaction works for methyl ketones ($CH_{3}CO-$) and ethanol ($CH_{3}CH_{2}OH$).
 Ethanoic acid ($CH_{3}COOH$) does not give the iodoform test. The scheme therefore requires $A$ to be
-the aldehyde $CH_{3}CHO$ (ethanal), formed by controlled oxidation (interpreting the question as
-intending the aldehyde stage). Ethanal undergoes the iodoform reaction:
+The aldehyde $CH_{3}CHO$ (ethanal), formed by controlled oxidation (interpreting the question as
+Intending the aldehyde stage). Ethanal undergoes the iodoform reaction:
 
 $CH_{3}CHO + 3I_{2} + 4NaOH \rightarrow CHI_{3} + HCOONa + 3NaI + 3H_{2}O$
 
@@ -231,7 +231,7 @@ Product: **2-bromobutane**.
 
 (Curly arrow from lone pair on $Br^{-}$ to the carbocation carbon.)
 
-(b) The product (2-bromobutane) has a chiral centre at $C-2$ (carbon bonded to four different groups: $CH_{3}$-, $H$, $Br$, $CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture** (equal amounts of both enantiomers) because the $Br^{-}$ can attack the planar carbocation intermediate with equal probability from either face. Since equal amounts of both enantiomers are produced, the mixture is **optically inactive** (no net rotation of plane-polarised light).
+(b) The product (2-bromobutane) has a chiral centre at $C-2$ (carbon bonded to four different groups: $CH_{3}$-, $H$$Br$$CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture** (equal amounts of both enantiomers) because the $Br^{-}$ can attack the planar carbocation intermediate with equal probability from either face. Since equal amounts of both enantiomers are produced, the mixture is **optically inactive** (no net rotation of plane-polarised light).
 
 (c) The addition of $Br_{2}$ to but-2-ene proceeds via a **bromonium ion intermediate**, which is a three-membered ring involving the two carbons and one bromine atom.
 

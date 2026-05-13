@@ -35,11 +35,11 @@ $$= 22\hat{i} - 48\hat{j} - 63\hat{k}\,\text{N}\,\text{m}$$
 
 (b) Magnitude: $|\vec{\tau}| = \sqrt{22^2 + 48^2 + 63^2} = \sqrt{484 + 2304 + 3969} = \sqrt{6757} = 82.2\,\text{N}\,\text{m}$
 
-(c) The student computed $|\vec{F}| \times |\vec{r}|$, which is the product of the magnitudes. This is only correct when $\vec{F}$ is perpendicular to $\vec{r}$. In general:
+(c) The student computed $|\vec{F}| \times |\vec{r}|$Which is the product of the magnitudes. This is only correct when $\vec{F}$ is perpendicular to $\vec{r}$. :
 
 $$|\vec{r} \times \vec{F}| = |\vec{r}||\vec{F}|\sin\theta$$
 
-where $\theta$ is the angle between $\vec{r}$ and $\vec{F}$.
+Where $\theta$ is the angle between $\vec{r}$ and $\vec{F}$.
 
 The correct perpendicular distance (moment arm) is $d = |\vec{r}|\sin\theta$.
 
@@ -49,9 +49,9 @@ $$|\vec{r}| = \sqrt{9 + 16 + 4} = \sqrt{29} = 5.385\,\text{m}$$
 
 $$|\vec{F}| \times |\vec{r}| = 15.26 \times 5.385 = 82.2\,\text{N}\,\text{m}$$
 
-In this case the product of magnitudes equals the torque magnitude. This occurs because $\vec{r} \cdot \vec{F} = 3(12) + 4(-5) + (-2)(8) = 36 - 20 - 16 = 0$, so $\vec{r}$ and $\vec{F}$ are perpendicular ($\theta = 90^\circ$). The perpendicular distance is $d = |\vec{r}| = 5.385\,\text{m}$.
+In this case the product of magnitudes equals the torque magnitude. This occurs because $\vec{r} \cdot \vec{F} = 3(12) + 4(-5) + (-2)(8) = 36 - 20 - 16 = 0$So $\vec{r}$ and $\vec{F}$ are perpendicular ($\theta = 90^\circ$). The perpendicular distance is $d = |\vec{r}| = 5.385\,\text{m}$.
 
-However, the student's **method** is wrong in general -- they must use the cross product, not simply multiply magnitudes.
+However, the student's **method** is wrong -- they must use the cross product, not multiply magnitudes.
 
 ---
 
@@ -79,13 +79,13 @@ $$I = I_{\text{cm}} + Md^2 = 0.360 + 8.0 \times 0.30^2 = 0.360 + 0.720 = 1.080\,
 
 $$T = 2\pi\sqrt{\frac{I}{Mgd}}$$
 
-where $d = R = 0.30\,\text{m}$:
+Where $d = R = 0.30\,\text{m}$:
 
 $$T = 2\pi\sqrt{\frac{1.080}{8.0 \times 9.81 \times 0.30}} = 2\pi\sqrt{\frac{1.080}{23.54}} = 2\pi\sqrt{0.04588} = 2\pi \times 0.2142 = 1.346\,\text{s}$$
 
 (c) The period is $T = 2\pi\sqrt{\frac{I_{\text{cm}} + Md^2}{Mgd}} = 2\pi\sqrt{\frac{R^2/2 + d^2}{gd}}$
 
-To minimise $T$, we minimise $\frac{R^2/2 + d^2}{d} = \frac{R^2}{2d} + d$.
+To minimise $T$We minimise $\frac{R^2/2 + d^2}{d} = \frac{R^2}{2d} + d$.
 
 Setting the derivative to zero:
 
@@ -247,7 +247,7 @@ Since $1 - \cos\theta$ cannot exceed 2, the rod makes a full revolution. This me
 
 Check: PE for full rotation (rod to become horizontal, $\theta = 90^\circ$):
 
-$\Delta h = 1.016\,\text{m}$, so $PE = 3.050 \times 9.81 \times 1.016 = 30.42\,\text{J} \lt 190.3\,\text{J}$.
+$\Delta h = 1.016\,\text{m}$So $PE = 3.050 \times 9.81 \times 1.016 = 30.42\,\text{J} \lt 190.3\,\text{J}$.
 
 The rod swings over the top (makes complete circles).
 
@@ -269,7 +269,7 @@ The angular velocity is approximately halved when the bullet strikes at the midp
 
 **Question:**
 
-A yo-yo consists of two discs of mass $M = 0.10\,\text{kg}$ each and radius $R = 0.030\,\text{m}$, connected by an axle of negligible mass and radius $r = 0.005\,\text{m}$. A string is wound around the axle. The yo-yo is released from rest with the string unwinding.
+A yo-yo consists of two discs of mass $M = 0.10\,\text{kg}$ each and radius $R = 0.030\,\text{m}$Connected by an axle of negligible mass and radius $r = 0.005\,\text{m}$. A string is wound around the axle. The yo-yo is released from rest with the string unwinding.
 
 (a) Calculate the moment of inertia of the yo-yo about its central axis.
 
@@ -293,7 +293,7 @@ Translational: $mg - T = ma$
 
 Rotational about the centre: $Tr = I\alpha$
 
-For rolling without slipping (string unwinding): $a = r\alpha$, so $\alpha = a/r$.
+For rolling without slipping (string unwinding): $a = r\alpha$So $\alpha = a/r$.
 
 $$T = \frac{I\alpha}{r} = \frac{Ia}{r^2}$$
 

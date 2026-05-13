@@ -9,12 +9,12 @@ categories:
   - Cpp
 slug: contiguous-memory-views-std-span
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Contiguous Memory Views (`std::span`)
 
 `std::span<T>` (C++20, `<span>`) is a non-owning view over a contiguous sequence of objects. It is
-the type-safe replacement for the raw `pointer + size` interface pattern that pervades C and legacy
+The type-safe replacement for the raw `pointer + size` interface pattern that pervades C and legacy
 C++ APIs.
 
 If `std::string_view` is the non-owning view for character sequences, `std::span` is the
@@ -35,17 +35,17 @@ On 64-bit systems:
 - **Dynamic extent** (`std::span<T>`): 16 bytes (pointer + `size_t`).
 - **Static extent** (`std::span<T, N>`): 8 bytes (pointer only; size is a compile-time constant).
 
-`std::span` is trivially copyable and has the same pass-by-value cost as two registers.
+`std::span` is copyable and has the same pass-by-value cost as two registers.
 
 ## 2. Relationship to `std::string_view`
 
-| Property             | `std::span<const char>`     | `std::string_view`                        |
+| Property | `std::span<const char>` | `std::string_view` |
 | :------------------- | :-------------------------- | :---------------------------------------- |
-| Null-termination     | Not assumed                 | Partially (implementation detail)         |
-| Character traits     | No                          | Yes (`char_traits`)                       |
-| Stream output        | No `operator<<`             | Yes                                       |
-| Hash                 | `std::hash` not specialized | `std::hash<std::string_view>` specialized |
-| General element type | Any `T`                     | `char`-like only                          |
+| Null-termination | Not assumed | Partially (implementation detail) |
+| Character traits | No | Yes (`char_traits`) |
+| Stream output | No `operator<<` | Yes |
+| Hash | `std::hash` not specialized | `std::hash<std::string_view>` specialized |
+| General element type | Any `T` | `char`-like only |
 
 `std::string_view` is a domain-specific specialization. Prefer `std::string_view` for text. Prefer
 `std::span` for everything else.
@@ -120,12 +120,12 @@ void caller() {
 ```
 
 **Critical advantage over raw pointers:** Array decay is eliminated. The size information is
-preserved through the span interface.
+Preserved through the span interface.
 
 ## 5. Subviews and Splitting
 
-`std::span` provides `first()`, `last()`, and `subspan()` for creating views into subsets of the
-data. These operations return new `span` objects and are **O(1)** — no data is copied.
+`std::span` provides `first()``last()`And `subspan()` for creating views into subsets of the
+Data. These operations return new `span` objects and are **O(1)** — no data is copied.
 
 ```cpp
 void parse_header(std::span<const uint8_t> packet) {
@@ -152,7 +152,7 @@ std::span<const char> split_at(std::span<const char> text, char delimiter) {
 ### Converting to Static Extent
 
 If you know at compile time that a subview has a specific size, you can convert to a static-extent
-span:
+Span:
 
 ```cpp
 std::span<int> dynamic_view = /* ... */;
@@ -215,7 +215,7 @@ uint32_t crc32(std::span<const std::byte> data) {
 
 ### The Array Decay Problem (Revisited)
 
-When a C array is passed to a function taking `T*`, the size is lost. `std::span` preserves it:
+When a C array is passed to a function taking `T*`The size is lost. `std::span` preserves it:
 
 ```cpp
 // Legacy: size lost
@@ -245,19 +245,19 @@ ssize_t read_into(int fd, std::span<std::byte> buf) {
 
 ### Comparison Table
 
-| Feature                    | C array `T[N]` | `std::array<T, N>` | `std::span<T>`                          |
+| Feature | C array `T[N]` | `std::array<T, N>` | `std::span<T>` |
 | :------------------------- | :------------- | :----------------- | :-------------------------------------- |
-| Owns data                  | Yes (stack)    | Yes (stack)        | **No**                                  |
-| Size known at compile time | Yes            | Yes                | Dynamic (or static extent)              |
-| Copyable                   | No (decays)    | Yes                | Yes (trivially copyable)                |
-| Dynamic sizing             | No             | No                 | Yes                                     |
-| Bounds checking            | No             | `.at()`            | `.at()` (C++26 `operator[]` is checked) |
-| Slicing                    | No             | No                 | Yes (`first`, `last`, `subspan`)        |
+| Owns data | Yes (stack) | Yes (stack) | **No** |
+| Size known at compile time | Yes | Yes | Dynamic (or static extent) |
+| Copyable | No (decays) | Yes | Yes ( copyable) |
+| Dynamic sizing | No | No | Yes |
+| Bounds checking | No | `.at()` | `.at()` (C++26 `operator[]` is checked) |
+| Slicing | No | No | Yes (`first``last``subspan`) |
 
 ## 8. Range-For Integration
 
 `std::span` provides iterators and satisfies the range concept, enabling direct use in range-for
-loops:
+Loops:
 
 ```cpp
 void print_all(std::span<const std::string_view> items) {
@@ -319,7 +319,7 @@ void process_rgb(std::span<uint8_t, 3> pixel);
 
 ### Why Not Templates?
 
-Before `std::span`, the common approach was:
+Before `std::span`The common approach was:
 
 ```cpp
 template<typename Container>
@@ -331,18 +331,18 @@ void legacy_analyze(const Container& data) {
 Problems with the template approach:
 
 1. **Header-only requirement:** The template must be defined in the header, exposing implementation
-   details.
+ details.
 2. **Compile-time bloat:** Each instantiation generates new code.
 3. **Error messages:** Template instantiation failures produce enormous error messages.
 4. **No size constraint:** Accepts any range, including non-contiguous ones like `std::list`.
 
 `std::span` solves all of these: it is a concrete type (no templates needed at the call site), it
-guarantees contiguity, and error messages are concise.
+Guarantees contiguity, and error messages are concise.
 
 ### Const-Correctness: `std::span<const T>`
 
-`std::span<const T>` provides read-only access to the elements. The pointer is `const T*`,
-preventing modification through the span:
+`std::span<const T>` provides read-only access to the elements. The pointer is `const T*`
+Preventing modification through the span:
 
 ```cpp
 void inspect(std::span<const int> data) {
@@ -352,7 +352,7 @@ void inspect(std::span<const int> data) {
 ```
 
 This is the analog of `const int*` with bounds. It should be the default for any function that only
-needs to read the data.
+Needs to read the data.
 
 ```cpp
 // Correct: read-only, non-owning, bounded
@@ -482,7 +482,7 @@ public:
 ```
 
 **Rule:** If a span must be stored, ensure the source's lifetime is explicitly managed and outlives
-the span.
+The span.
 
 ### Pitfall 3: Passing to Thread Without Lifetime Guarantee
 
@@ -498,12 +498,12 @@ void launch_worker(std::span<const int> data) {
 ```
 
 Fix: either copy the data into the thread (e.g., capture a `std::vector` by value) or use a shared
-ownership model (`std::shared_ptr<std::vector<int>>`).
+Ownership model (`std::shared_ptr<std::vector<int>>`).
 
 ### Pitfall 4: Assuming Bounds Checking in `operator[]`
 
 Prior to C++26, `std::span::operator[]` is **unchecked**. It performs no bounds validation,
-identical to raw pointer indexing.
+Identical to raw pointer indexing.
 
 ```cpp
 std::span<int> s = {some_ptr, 10};
@@ -511,12 +511,12 @@ int x = s[100]; // UB: out of bounds, no diagnostic
 ```
 
 Use `s.at(100)` for checked access (throws `std::out_of_range`), or enable bounds-checking
-sanitizers (`-fsanitize=address`).
+Sanitizers (`-fsanitize=address`).
 
 ### Pitfall 5: Multi-Dimensional Array Confusion
 
 `std::span` is inherently one-dimensional. For multi-dimensional data, you must compute offsets
-manually:
+Manually:
 
 ```cpp
 // 2D matrix stored row-major
@@ -537,12 +537,20 @@ private:
 ```
 
 `std::mdspan` (C++23) provides proper multi-dimensional span support with compile-time layout
-policies.
+Policies.
 
 ## See Also
 
 - **Module 8: String Views and SSO** — `std::string_view` as the character-specific specialization.
-- **Module 7: Data Layout** — Contiguity, alignment, `sizeof`, `std::byte`.
-- **Module 8: Pointers and References** — Array decay, `std::nullptr_t`, pointer arithmetic.
+- **Module 7: Data Layout** — Contiguity, alignment, `sizeof``std::byte`.
+- **Module 8: Pointers and References** — Array decay, `std::nullptr_t`Pointer arithmetic.
 - **`std::span`** — [N4950 §22.7.3], C++20.
 - **`std::mdspan`** — [N4950 §22.7.4], C++23 (multi-dimensional views).
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

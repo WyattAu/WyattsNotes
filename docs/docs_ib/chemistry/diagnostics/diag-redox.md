@@ -10,19 +10,19 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Oxidation Number Assignment
-**Question:** Assign oxidation numbers to all elements in: (a) $\text{KMnO}_4$, (b) $\text{K}_2\text{Cr}_2\text{O}_7$, (c) $\text{Na}_2\text{S}_2\text{O}_3$, (d) $\text{Fe}_3\text{O}_4$, (e) $\text{H}_2\text{O}_2$.
+**Question:** Assign oxidation numbers to all elements in: (a) $\text{KMnO}_4$(b) $\text{K}_2\text{Cr}_2\text{O}_7$(c) $\text{Na}_2\text{S}_2\text{O}_3$(d) $\text{Fe}_3\text{O}_4$(e) $\text{H}_2\text{O}_2$.
 
 **Solution:**
 
-(a) $\text{KMnO}_4$: K = $+1$ (group 1), O = $-2$ (usually). Let Mn = $x$: $+1 + x + 4(-2) = 0$, $x = +7$. Mn is $+7$.
+(a) $\text{KMnO}_4$: K = $+1$ (group 1), O = $-2$ (). Let Mn = $x$: $+1 + x + 4(-2) = 0$$x = +7$. Mn is $+7$.
 
-(b) $\text{K}_2\text{Cr}_2\text{O}_7$: K = $+1$, O = $-2$. $2(+1) + 2x + 7(-2) = 0$, $2 + 2x - 14 = 0$, $2x = 12$, $x = +6$. Cr is $+6$.
+(b) $\text{K}_2\text{Cr}_2\text{O}_7$: K = $+1$O = $-2$. $2(+1) + 2x + 7(-2) = 0$$2 + 2x - 14 = 0$$2x = 12$$x = +6$. Cr is $+6$.
 
-(c) $\text{Na}_2\text{S}_2\text{O}_3$: Na = $+1$, O = $-2$. $2(+1) + 2x + 3(-2) = 0$, $2 + 2x - 6 = 0$, $2x = 4$, $x = +2$. Average S oxidation state is $+2$. (In reality, the two S atoms have different oxidation states: the central S is $+6$ and the terminal S is $-2$, averaging to $+2$.)
+(c) $\text{Na}_2\text{S}_2\text{O}_3$: Na = $+1$O = $-2$. $2(+1) + 2x + 3(-2) = 0$$2 + 2x - 6 = 0$$2x = 4$$x = +2$. Average S oxidation state is $+2$. (In reality, the two S atoms have different oxidation states: the central S is $+6$ and the terminal S is $-2$Averaging to $+2$.)
 
-(d) $\text{Fe}_3\text{O}_4$: O = $-2$. $3x + 4(-2) = 0$, $3x = 8$, $x = +2.67$. Average Fe oxidation state is $+2.67$. $\text{Fe}_3\text{O}_4$ is a mixed oxide containing both $\text{Fe}^{2+}$ and $\text{Fe}^{3+}$ in the ratio 1:2 (one $\text{FeO}\cdot\text{Fe}_2\text{O}_3$), giving $(+2 + 2 \times +3)/3 = +2.67$.
+(d) $\text{Fe}_3\text{O}_4$: O = $-2$. $3x + 4(-2) = 0$$3x = 8$$x = +2.67$. Average Fe oxidation state is $+2.67$. $\text{Fe}_3\text{O}_4$ is a mixed oxide containing both $\text{Fe}^{2+}$ and $\text{Fe}^{3+}$ in the ratio 1:2 (one $\text{FeO}\cdot\text{Fe}_2\text{O}_3$), giving $(+2 + 2 \times +3)/3 = +2.67$.
 
-(e) $\text{H}_2\text{O}_2$: H = $+1$. $2(+1) + 2x = 0$, $2x = -2$, $x = -1$. O is $-1$ (peroxide exception to the usual $-2$).
+(e) $\text{H}_2\text{O}_2$: H = $+1$. $2(+1) + 2x = 0$$2x = -2$$x = -1$. O is $-1$ (peroxide exception to the usual $-2$).
 
 ---
 ### UT-2: Balancing Redox Equations in Acidic Solution
@@ -46,7 +46,7 @@ Balance O with $\text{H}_2\text{O}$: $\text{MnO}_4^- \to \text{Mn}^{2+} + 4\text
 
 Balance H with $\text{H}^+$: $\text{MnO}_4^- + 8\text{H}^+ \to \text{Mn}^{2+} + 4\text{H}_2\text{O}$
 
-Balance charge: left = $-1 + 8 = +7$, right = $+2$. Add $5e^-$ to left:
+Balance charge: left = $-1 + 8 = +7$Right = $+2$. Add $5e^-$ to left:
 
 $\text{MnO}_4^- + 8\text{H}^+ + 5e^- \to \text{Mn}^{2+} + 4\text{H}_2\text{O}$
 
@@ -62,15 +62,15 @@ Add half-reactions:
 
 $\text{MnO}_4^- + 8\text{H}^+ + 5\text{Fe}^{2+} \to \text{Mn}^{2+} + 5\text{Fe}^{3+} + 4\text{H}_2\text{O}$
 
-Check: left charge $= -1 + 8 + 10 = +17$, right charge $= +2 + 15 = +17$. Balanced.
+Check: left charge $= -1 + 8 + 10 = +17$Right charge $= +2 + 15 = +17$. Balanced.
 
 ---
 ### UT-3: Electrochemical Cell EMF
-**Question:** A voltaic cell is constructed with $\text{Zn}\mid\text{Zn}^{2+}(1.0\ \text{mol dm}^{-3})$ and $\text{Cu}^{2+}(1.0\ \text{mol dm}^{-3})\mid\text{Cu}$. Given $E^\circ(\text{Zn}^{2+}/\text{Zn}) = -0.76\ \text{V}$ and $E^\circ(\text{Cu}^{2+}/\text{Cu}) = +0.34\ \text{V}$, calculate the standard cell potential, identify the anode and cathode, write the overall cell equation, and determine the standard Gibbs free energy change.
+**Question:** A voltaic cell is constructed with $\text{Zn}\mid\text{Zn}^{2+}(1.0\ \text{mol dm}^{-3})$ and $\text{Cu}^{2+}(1.0\ \text{mol dm}^{-3})\mid\text{Cu}$. Given $E^\circ(\text{Zn}^{2+}/\text{Zn}) = -0.76\ \text{V}$ and $E^\circ(\text{Cu}^{2+}/\text{Cu}) = +0.34\ \text{V}$Calculate the standard cell potential, identify the anode and cathode, write the overall cell equation, and determine the standard Gibbs free energy change.
 
 **Solution:**
 
-Since $E^\circ(\text{Cu}^{2+}/\text{Cu}) \gt E^\circ(\text{Zn}^{2+}/\text{Zn})$, Cu is reduced (cathode) and Zn is oxidised (anode).
+Since $E^\circ(\text{Cu}^{2+}/\text{Cu}) \gt E^\circ(\text{Zn}^{2+}/\text{Zn})$Cu is reduced (cathode) and Zn is oxidised (anode).
 
 Anode (oxidation): $\text{Zn} \to \text{Zn}^{2+} + 2e^-$
 Cathode (reduction): $\text{Cu}^{2+} + 2e^- \to \text{Cu}$
@@ -86,11 +86,11 @@ The negative $\Delta G^\circ$ confirms the reaction is spontaneous under standar
 ## Integration Tests
 
 ### IT-1: Electrochemistry and Equilibrium (with Equilibrium)
-**Question:** For the cell $\text{Zn}\mid\text{Zn}^{2+}\mid\mid\text{Cu}^{2+}\mid\text{Cu}$ with $E^\circ_{\text{cell}} = 1.10\ \text{V}$, calculate the equilibrium constant $K$ for the reaction at $298\ \text{K}$. At what ratio of $[\text{Zn}^{2+}]/[\text{Cu}^{2+}]$ does the cell potential drop to $0.50\ \text{V}$?
+**Question:** For the cell $\text{Zn}\mid\text{Zn}^{2+}\mid\mid\text{Cu}^{2+}\mid\text{Cu}$ with $E^\circ_{\text{cell}} = 1.10\ \text{V}$Calculate the equilibrium constant $K$ for the reaction at $298\ \text{K}$. At what ratio of $[\text{Zn}^{2+}]/[\text{Cu}^{2+}]$ does the cell potential drop to $0.50\ \text{V}$?
 
 **Solution:**
 
-At equilibrium, $E_{\text{cell}} = 0$, and $\Delta G^\circ = -RT\ln K$.
+At equilibrium, $E_{\text{cell}} = 0$And $\Delta G^\circ = -RT\ln K$.
 
 $nFE^\circ = RT\ln K$
 
@@ -144,4 +144,4 @@ When aluminium is exposed to air, it rapidly forms a thin (2--10 nm), continuous
 
 Iron also forms an oxide layer ($\text{Fe}_2\text{O}_3/\text{Fe}_3\text{O}_4$), but rust (hydrated iron(III) oxide, $\text{Fe}_2\text{O}_3 \cdot x\text{H}_2\text{O}$) is porous, flaky, and non-adherent. It does not protect the underlying metal; instead, moisture and oxygen can penetrate through cracks and continue the corrosion process. This is why iron corrosion is progressive and destructive.
 
-The periodic trend explanation: Al is in period 3 with a small ionic radius ($\text{Al}^{3+} = 53.5\ \text{pm}$) and high charge density. The $\text{Al}^{3+}$ ion polarises the $\text{O}^{2-}$ ions strongly, forming a tightly bonded, compact oxide lattice. Fe is in period 4 with a larger ionic radius ($\text{Fe}^{2+} = 78\ \text{pm}$, $\text{Fe}^{3+} = 64.5\ \text{pm}$) and the oxide lattice has more defects and is less uniformly bonded, allowing water incorporation and porosity.
+The periodic trend explanation: Al is in period 3 with a small ionic radius ($\text{Al}^{3+} = 53.5\ \text{pm}$) and high charge density. The $\text{Al}^{3+}$ ion polarises the $\text{O}^{2-}$ ions strongly, forming a tightly bonded, compact oxide lattice. Fe is in period 4 with a larger ionic radius ($\text{Fe}^{2+} = 78\ \text{pm}$$\text{Fe}^{3+} = 64.5\ \text{pm}$) and the oxide lattice has more defects and is less uniformly bonded, allowing water incorporation and porosity.

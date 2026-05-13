@@ -32,7 +32,7 @@ function Greeting({ name, age }: GreetingProps) {
 ### `FC` Type
 
 The `FC` (FunctionComponent) type provides a default typing for function components, including an
-implicit `children` prop:
+Implicit `children` prop:
 
 ```tsx
 import type { FC } from 'react';
@@ -53,7 +53,7 @@ const Card: FC<CardProps> = ({ title, children }) => {
 
 **Common Pitfall:** Using `FC` is controversial in modern React. The `FC` type implicitly includes
 `children` in the props, which encourages passing children via the props object rather than as a
-prop. Many teams prefer explicit typing without `FC`:
+Prop. Many teams prefer explicit typing without `FC`:
 
 ```tsx
 interface CardProps {
@@ -73,12 +73,12 @@ function Card({ title, children }: CardProps) {
 
 ### Component Typing Comparison
 
-| Approach                               | `children`           | Pros                            | Cons                                            |
+| Approach | `children` | Pros | Cons |
 | -------------------------------------- | -------------------- | ------------------------------- | ----------------------------------------------- |
-| `FC<Props>`                            | Implicit             | Concise, includes ref typing    | Implicit children, deprecated in React 18 types |
-| `(props: Props) => JSX.Element`        | Explicit if declared | Full control, modern convention | Must type return explicitly                     |
-| `(props: Props) => React.ReactElement` | Explicit if declared | Precise return type             | Does not allow `null` or `string` returns       |
-| `function Component(props: Props)`     | Explicit if declared | Readable, supports overloads    | Verbose                                         |
+| `FC<Props>` | Implicit | Concise, includes ref typing | Implicit children, deprecated in React 18 types |
+| `(props: Props) => JSX.Element` | Explicit if declared | Full control, modern convention | Must type return explicitly |
+| `(props: Props) => React.ReactElement` | Explicit if declared | Precise return type | Does not allow `null` or `string` returns |
+| `function Component(props: Props)` | Explicit if declared | Readable, supports overloads | Verbose |
 
 ### `ComponentPropsWithRef` and `ComponentPropsWithoutRef`
 
@@ -93,18 +93,18 @@ function EnhancedButton(props: ComponentPropsWithoutRef<'button'>) {
 ```
 
 `ComponentPropsWithoutRef<"button">` produces the props type of the native `<button>` element,
-including all HTML attributes but excluding `ref`. Use `ComponentPropsWithRef` to include `ref`.
+Including all HTML attributes but excluding `ref`. Use `ComponentPropsWithRef` to include `ref`.
 
 ### `ReactNode` vs `JSX.Element` vs `ReactElement`
 
-| Type                 | Description                                                                                           |
+| Type | Description |
 | -------------------- | ----------------------------------------------------------------------------------------------------- |
-| `React.ReactNode`    | Anything React can render: elements, strings, numbers, `null`, `undefined`, booleans, arrays, portals |
-| `React.ReactElement` | A React element (result of `createElement` or JSX)                                                    |
-| `JSX.Element`        | Alias for `React.ReactElement` in the current JSX namespace                                           |
+| `React.ReactNode` | Anything React can render: elements, strings, numbers, `null``undefined`Booleans, arrays, portals |
+| `React.ReactElement` | A React element (result of `createElement` or JSX) |
+| `JSX.Element` | Alias for `React.ReactElement` in the current JSX namespace |
 
 For component return types and `children` props, `React.ReactNode` is the most permissive and
-generally correct choice.
+Generally correct choice.
 
 ## Event Handler Types
 
@@ -146,16 +146,16 @@ function Input() {
 
 ### Event Type Reference
 
-| Event Type          | Target Element                      |
+| Event Type | Target Element |
 | ------------------- | ----------------------------------- |
-| `MouseEvent<T>`     | `<div>`, `<button>`, `<a>`, etc.    |
-| `ChangeEvent<T>`    | `<input>`, `<select>`, `<textarea>` |
-| `FormEvent<T>`      | `<form>`                            |
-| `KeyboardEvent<T>`  | `<input>`, `<textarea>`             |
-| `FocusEvent<T>`     | `<input>`, `<textarea>`, `<button>` |
-| `DragEvent<T>`      | Any draggable element               |
-| `WheelEvent<T>`     | Any element                         |
-| `ClipboardEvent<T>` | Any element                         |
+| `MouseEvent<T>` | `<div>``<button>``<a>`Etc. |
+| `ChangeEvent<T>` | `<input>``<select>``<textarea>` |
+| `FormEvent<T>` | `<form>` |
+| `KeyboardEvent<T>` | `<input>``<textarea>` |
+| `FocusEvent<T>` | `<input>``<textarea>``<button>` |
+| `DragEvent<T>` | Any draggable element |
+| `WheelEvent<T>` | Any element |
+| `ClipboardEvent<T>` | Any element |
 
 ### Inline Event Handlers
 
@@ -183,15 +183,15 @@ function Counter() {
 }
 ```
 
-When the initial value is `null` or `undefined`, provide an explicit type parameter:
+When the initial value is `null` or `undefined`Provide an explicit type parameter:
 
 ```tsx
 const [user, setUser] = useState<User | null>(null);
 const [data, setData] = useState<ApiResponse | undefined>(undefined);
 ```
 
-**Common Pitfall:** Using `useState(null)` without a type parameter produces `useState<null>`, which
-means the state can only ever be `null`. Always provide the union type:
+**Common Pitfall:** Using `useState(null)` without a type parameter produces `useState<null>`Which
+Means the state can only ever be `null`. Always provide the union type:
 `useState<Type | null>(null)`.
 
 ### `useReducer`
@@ -271,7 +271,7 @@ function TextInput() {
 
 **Common Pitfall:** `useRef` without an initial value argument creates
 `MutableRefObject<T | undefined>`. When the initial value is `null` and the ref is attached to a DOM
-element, the type should be `useRef<T>(null)`:
+Element, the type should be `useRef<T>(null)`:
 
 ```tsx
 const ref = useRef<HTMLDivElement>(null);
@@ -328,7 +328,7 @@ function ExpensiveComponent({ items }: { items: number[] }) {
 ### Typing Rules for Custom Hooks
 
 Custom hooks are functions prefixed with `use` that may call other hooks. Their types follow
-standard function typing rules.
+Standard function typing rules.
 
 ```tsx
 function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T) => void] {
@@ -493,14 +493,14 @@ function useConfig() {
 }
 ```
 
-When a default value is provided, `useContext` never returns `null`, so the null-check in the hook
-is unnecessary. However, this approach is less type-safe because the default value may not match the
-actual provider value.
+When a default value is provided, `useContext` never returns `null`So the null-check in the hook
+Is unnecessary. However, this approach is less type-safe because the default value may not match the
+Actual provider value.
 
 ### Factory Context Pattern
 
 For contexts where a default value is impractical (e.g., because the value depends on state), use a
-factory function:
+Factory function:
 
 ```tsx
 function createContextFactory<T>() {
@@ -586,18 +586,18 @@ function Form() {
 ```
 
 **Common Pitfall:** `forwardRef` is a generic function with two type parameters: the ref handle type
-and the props type. The order is `<HandleType, PropsType>`. Forgetting the generic parameters
-produces `unknown` for the ref type.
+And the props type. The order is `<HandleType, PropsType>`. Forgetting the generic parameters
+Produces `unknown` for the ref type.
 
 ## Ref Types
 
 ### `RefObject` vs `MutableRefObject` vs `Ref<T>`
 
-| Type                  | Description                                       |
+| Type | Description |
 | --------------------- | ------------------------------------------------- |
-| `RefObject<T>`        | Immutable ref object (`current` is readonly)      |
-| `MutableRefObject<T>` | Mutable ref object (`current` is writable)        |
-| `Ref<T>`              | `RefObject<T> \| ((instance: T) => void) \| null` |
+| `RefObject<T>` | Immutable ref object (`current` is readonly) |
+| `MutableRefObject<T>` | Mutable ref object (`current` is writable) |
+| `Ref<T>` | `RefObject<T> \| ((instance: T) => void) \| null` |
 
 ```tsx
 const immutableRef = useRef<HTMLDivElement>(null);
@@ -611,7 +611,7 @@ const mutableRef = useRef<number>(0);
 ```
 
 `mutableRef` has type `MutableRefObject<number>`. Its `current` property is `number` and is
-writable.
+Writable.
 
 ### Callback Refs
 
@@ -763,7 +763,7 @@ Using `MouseEvent` instead of `React.MouseEvent` causes type errors:
 const handleClick = (e: MouseEvent) => {};
 ```
 
-This types `e` as the native DOM `MouseEvent`, not React's synthetic event. Use
+This types `e` as the native DOM `MouseEvent`Not React's synthetic event. Use
 `React.MouseEvent<HTMLButtonElement>`.
 
 ### Pitfall 2: `useRef` for DOM Elements Without `null` Initial Value
@@ -772,8 +772,8 @@ This types `e` as the native DOM `MouseEvent`, not React's synthetic event. Use
 const ref = useRef<HTMLDivElement>();
 ```
 
-This creates `MutableRefObject<HTMLDivElement | undefined>`, which is not compatible with JSX `ref`
-props that expect `Ref<HTMLDivElement>`. Always initialise DOM refs with `null`:
+This creates `MutableRefObject<HTMLDivElement | undefined>`Which is not compatible with JSX `ref`
+Props that expect `Ref<HTMLDivElement>`. Always initialise DOM refs with `null`:
 
 ```tsx
 const ref = useRef<HTMLDivElement>(null);
@@ -781,7 +781,7 @@ const ref = useRef<HTMLDivElement>(null);
 
 ### Pitfall 3: Missing Exhaustive Checks in Reducers
 
-When using `useReducer`, always add a default case that returns the current state or calls
+When using `useReducer`Always add a default case that returns the current state or calls
 `assertNever` to ensure new action types are handled:
 
 ```tsx
@@ -798,7 +798,7 @@ function reducer(state: State, action: Action): State {
 ### Pitfall 4: Overly Broad `children` Types
 
 Using `JSX.Element` instead of `React.ReactNode` for `children` excludes valid React render values
-like strings, numbers, `null`, and arrays:
+Like strings, numbers, `null`And arrays:
 
 ```tsx
 interface Bad {
@@ -809,3 +809,11 @@ interface Good {
   children: React.ReactNode;
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

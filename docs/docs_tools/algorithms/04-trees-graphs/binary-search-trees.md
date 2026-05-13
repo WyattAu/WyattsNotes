@@ -7,8 +7,8 @@ slug: binary-search-trees
 ## Binary Search Tree Fundamentals
 
 A binary search tree (BST) is a binary tree where every node satisfies the **BST property**: for any
-node with key $k$, all keys in its left subtree are strictly less than $k$, and all keys in its
-right subtree are strictly greater than $k$.
+Node with key $k$All keys in its left subtree are strictly less than $k$And all keys in its
+Right subtree are strictly greater than $k$.
 
 ### Node Definition
 
@@ -123,15 +123,15 @@ graph TD
 
 ### BST Height
 
-| Shape      | Height               | Search/Insert/Delete |
+| Shape | Height | Search/Insert/Delete |
 | ---------- | -------------------- | -------------------- |
-| Balanced   | $O(\log n)$          | $O(\log n)$          |
-| Degenerate | $O(n)$               | $O(n)$               |
-| Random     | $O(\log n)$ expected | $O(\log n)$ expected |
+| Balanced | $O(\log n)$ | $O(\log n)$ |
+| Degenerate | $O(n)$ | $O(n)$ |
+| Random | $O(\log n)$ expected | $O(\log n)$ expected |
 
 For $n$ distinct keys inserted in random order, the expected height of a BST is approximately
 $2 \ln n \approx 1.39 \log_2 n$. This is only about 39% taller than a perfectly balanced tree, but
-the worst case (sorted input) gives height $n$.
+The worst case (sorted input) gives height $n$.
 
 ### Traversals
 
@@ -208,15 +208,15 @@ def bst_predecessor(node):
 ## AVL Trees
 
 An AVL tree (Adelson-Velsky and Landis, 1962) is a self-balancing BST where the **balance factor**
-of every node is in $\{-1, 0, 1\}$. The balance factor is the height of the right subtree minus the
-height of the left subtree.
+Of every node is in $\{-1, 0, 1\}$. The balance factor is the height of the right subtree minus the
+Height of the left subtree.
 
 ### Balance Factor
 
 $$\mathrm{bf{}(v) = \mathrm{height{}(v.\mathrm{right{}) - \mathrm{height{}(v.\mathrm{left{})$$
 
 After every insertion or deletion, we walk back up from the modified node to the root, rebalancing
-as needed. The balance factor must be in $\{-1, 0, 1\}$ for every node.
+As needed. The balance factor must be in $\{-1, 0, 1\}$ for every node.
 
 ### Rotations
 
@@ -250,7 +250,7 @@ graph TD
     T2  T3       T1  T2
 ```
 
-**LR (Left-Right) Case**: Left rotation on $y$, then right rotation on $z$.
+**LR (Left-Right) Case**: Left rotation on $y$Then right rotation on $z$.
 
 ```
      z                z                x
@@ -262,7 +262,7 @@ graph TD
     T2  T3      T1  T2
 ```
 
-**RL (Right-Left) Case**: Right rotation on $y$, then left rotation on $z$.
+**RL (Right-Left) Case**: Right rotation on $y$Then left rotation on $z$.
 
 ```
    z                z                  x
@@ -381,29 +381,29 @@ class AVLTree:
 ### Complexity Proof
 
 An AVL tree with $n$ nodes has height at most $1.44 \log_2(n+2) - 1.328$. Proof sketch: the minimum
-number of nodes in an AVL tree of height $h$ is $N(h) = N(h-1) + N(h-2) + 1$ with $N(0) = 1$,
+Number of nodes in an AVL tree of height $h$ is $N(h) = N(h-1) + N(h-2) + 1$ with $N(0) = 1$
 $N(1) = 2$. This is closely related to the Fibonacci sequence, giving $N(h) = F_{h+3} - 1$. Since
-$F_k \approx \phi^k / \sqrt{5}$, we get $h \le c \log_\phi(n)$ for some constant $c$.
+$F_k \approx \phi^k / \sqrt{5}$We get $h \le c \log_\phi(n)$ for some constant $c$.
 
-| Operation | Worst Case  | Rotations per Insert | Rotations per Delete |
+| Operation | Worst Case | Rotations per Insert | Rotations per Delete |
 | --------- | ----------- | -------------------- | -------------------- |
-| Search    | $O(\log n)$ | 0                    | 0                    |
-| Insert    | $O(\log n)$ | $\le 2$              | 0                    |
-| Delete    | $O(\log n)$ | 0                    | $O(\log n)$          |
+| Search | $O(\log n)$ | 0 | 0 |
+| Insert | $O(\log n)$ | $\le 2$ | 0 |
+| Delete | $O(\log n)$ | 0 | $O(\log n)$ |
 
 :::info
 
 Insertion requires at most 1 rotation (single or double). Deletion may require up to $O(\log n)$
-rotations in the worst case, because a deletion can increase the height difference at each ancestor
-along the path to the root.
+Rotations in the worst case, because a deletion can increase the height difference at each ancestor
+Along the path to the root.
 
 :::
 
 ## Red-Black Trees
 
 A red-black tree is a self-balancing BST where each node has a colour (red or black) and satisfies
-five invariants. It provides the same $O(\log n)$ worst-case guarantees as AVL trees but with fewer
-rotations on insertion (at most 2) and deletion (at most 3).
+Five invariants. It provides the same $O(\log n)$ worst-case guarantees as AVL trees but with fewer
+Rotations on insertion (at most 2) and deletion (at most 3).
 
 ### Properties
 
@@ -412,18 +412,18 @@ rotations on insertion (at most 2) and deletion (at most 3).
 3. Every leaf (NIL) is black
 4. If a node is red, both its children are black (no two reds in a row)
 5. For each node, all paths from the node to descendant NIL nodes contain the same number of black
-   nodes (black-height)
+ nodes (black-height)
 
 ### Black-Height Lemma
 
 The black-height of a node is the number of black nodes on any path from that node to a NIL leaf
 (not counting the node itself). By property 5, this is well-defined. A red-black tree with $n$
-internal nodes has height at most $2 \log_2(n+1)$.
+Internal nodes has height at most $2 \log_2(n+1)$.
 
 **Proof sketch**: the shortest path from root to leaf has only black nodes (length = bh), and the
-longest has alternating red-black (length = 2 \cdot bh). Since at least half the nodes on any
-root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh{}$. A tree with black-height $b$ has
-at least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$, giving $h \le 2 \log_2(n+1)$.
+Longest has alternating red-black (length = 2 \cdot bh). Since at least half the nodes on any
+Root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh{}$. A tree with black-height $b$ has
+At least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$Giving $h \le 2 \log_2(n+1)$.
 
 ### Node Definition
 
@@ -545,22 +545,22 @@ class RBTree:
 
 ### AVL vs Red-Black Trees
 
-| Property             | AVL Tree                | Red-Black Tree               |
+| Property | AVL Tree | Red-Black Tree |
 | -------------------- | ----------------------- | ---------------------------- |
-| Height bound         | $\le 1.44 \log_2 n$     | $\le 2 \log_2(n+1)$          |
-| Strictly balanced    | Yes (bf in {-1,0,1})    | No (allows more slack)       |
-| Search               | Faster (shorter tree)   | Slightly slower              |
-| Insert rotations     | $\le 2$                 | $\le 2$                      |
-| Delete rotations     | $O(\log n)$             | $\le 3$                      |
-| Insert performance   | Slightly slower         | Slightly faster              |
-| Delete performance   | Slower (more rotations) | Faster                       |
-| Standard library use | `std::map` (GCC)        | Java `TreeMap`, Linux kernel |
+| Height bound | $\le 1.44 \log_2 n$ | $\le 2 \log_2(n+1)$ |
+| Strictly balanced | Yes (bf in {-1,0,1}) | No (allows more slack) |
+| Search | Faster (shorter tree) | Slightly slower |
+| Insert rotations | $\le 2$ | $\le 2$ |
+| Delete rotations | $O(\log n)$ | $\le 3$ |
+| Insert performance | Slightly slower | Slightly faster |
+| Delete performance | Slower (more rotations) | Faster |
+| Standard library use | `std::map` (GCC) | Java `TreeMap`Linux kernel |
 
 :::tip
 
 Use AVL trees when lookups dominate (databases, dictionaries). Use red-black trees when insertions
-and deletions are frequent (scheduler, event queues). In practice, the performance difference is
-small for most workloads.
+And deletions are frequent (scheduler, event queues). In practice, the performance difference is
+Small for most workloads.
 
 :::
 
@@ -568,12 +568,12 @@ small for most workloads.
 
 B-trees are balanced search trees designed for systems that read and write large blocks of data
 (disk pages). They minimise the number of disk I/O operations by keeping the tree shallow with wide
-nodes.
+Nodes.
 
 ### Motivation
 
 A binary tree with 1 million keys has height $\approx 20$. If each node is on a different disk page,
-a lookup requires 20 disk seeks (each costing ~10ms on HDD). A B-tree of order $m = 100$ has height
+A lookup requires 20 disk seeks (each costing ~10ms on HDD). A B-tree of order $m = 100$ has height
 $\le 3$ for the same data, requiring only 3 disk seeks.
 
 ### Structure
@@ -586,13 +586,13 @@ A B-tree of minimum degree $t \ge 2$ has these properties:
 4. A non-leaf node with $k$ keys has $k + 1$ children
 5. All leaves are at the same depth
 
-| Parameter         | Value              |
+| Parameter | Value |
 | ----------------- | ------------------ |
-| Max keys per node | $2t - 1$           |
+| Max keys per node | $2t - 1$ |
 | Min keys per node | $t - 1$ (non-root) |
-| Max children      | $2t$               |
-| Min children      | $t$ (non-root)     |
-| Height            | $O(\log_t n)$      |
+| Max children | $2t$ |
+| Min children | $t$ (non-root) |
+| Height | $O(\log_t n)$ |
 
 ### Search
 
@@ -682,17 +682,17 @@ class BTree:
 ## B+ Trees
 
 A B+ tree is a variant of the B-tree used in database systems and file systems. All data is stored
-in the leaf nodes, and internal nodes contain only keys for navigation.
+In the leaf nodes, and internal nodes contain only keys for navigation.
 
 ### Differences from B-Trees
 
-| Property        | B-Tree               | B+ Tree                     |
+| Property | B-Tree | B+ Tree |
 | --------------- | -------------------- | --------------------------- |
-| Data storage    | Every node           | Leaf nodes only             |
-| Internal nodes  | Keys + data pointers | Keys + child pointers only  |
-| Leaf linkage    | None                 | Linked list (next pointers) |
-| Key duplication | No                   | Keys duplicated in leaves   |
-| Range queries   | Requires traversal   | Sequential scan of leaves   |
+| Data storage | Every node | Leaf nodes only |
+| Internal nodes | Keys + data pointers | Keys + child pointers only |
+| Leaf linkage | None | Linked list (next pointers) |
+| Key duplication | No | Keys duplicated in leaves |
+| Range queries | Requires traversal | Sequential scan of leaves |
 
 ```mermaid
 graph TD
@@ -744,14 +744,14 @@ def bplus_range_query(tree, low, high):
 
 B+ trees are the standard index structure in relational databases (PostgreSQL, MySQL InnoDB,
 Oracle). PostgreSQL uses B+ trees as the default index type. MySQL InnoDB uses a variant where the
-leaf pages form a doubly-linked list, enabling both forward and backward scans.
+Leaf pages form a doubly-linked list, enabling both forward and backward scans.
 
 :::
 
 ## Splay Trees
 
 A splay tree is a self-adjusting BST that has no explicit balance information. Instead, it moves the
-most recently accessed node to the root using a series of rotations called a **splay operation**.
+Most recently accessed node to the root using a series of rotations called a **splay operation**.
 
 ### Splay Operation
 
@@ -846,12 +846,12 @@ class SplayTree:
 ### Amortised Analysis
 
 The splay operation has amortised cost $O(\log n)$ using the **potential method**. Define the
-potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size{}(x)) \rfloor$. The amortised cost
-of a splay is bounded by $1 + 3(r(\mathrm{root{}) - r(x)) = O(\log n)$.
+Potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size{}(x)) \rfloor$. The amortised cost
+Of a splay is bounded by $1 + 3(r(\mathrm{root{}) - r(x)) = O(\log n)$.
 
 The **access lemma** states that the amortised cost of splaying node $x$ is at most
-$3(\log_2 n - \log_2(\mathrm{size{}(x))) + 1$, which means frequently accessed nodes move toward the
-root and become cheaper to access.
+$3(\log_2 n - \log_2(\mathrm{size{}(x))) + 1$Which means frequently accessed nodes move toward the
+Root and become cheaper to access.
 
 ### Static Optimality Theorem
 
@@ -863,7 +863,7 @@ This means splay trees are within a constant factor of optimal for any access pa
 
 A treap (tree + heap) is a BST ordered by key with heap ordering on randomly assigned priorities.
 Each node has a key and a priority; the BST property holds for keys, and the min-heap property holds
-for priorities.
+For priorities.
 
 ```python
 import random
@@ -935,7 +935,7 @@ class Treap:
 :::info
 
 The expected height of a treap is $O(\log n)$ because the random priorities make the treap
-equivalent to a randomly built BST. The expected depth of any node is at most
+Equivalent to a randomly built BST. The expected depth of any node is at most
 $2 \ln n \approx 1.39 \log_2 n$. Treaps are simpler to implement than AVL or red-black trees.
 
 :::
@@ -943,12 +943,12 @@ $2 \ln n \approx 1.39 \log_2 n$. Treaps are simpler to implement than AVL or red
 ## Skip Lists
 
 A skip list is a probabilistic alternative to balanced BSTs. It consists of multiple levels of
-linked lists, where each higher level is a sparser "express lane" for the level below.
+Linked lists, where each higher level is a sparser "express lane" for the level below.
 
 ### Structure
 
 - Level 0: a sorted linked list containing all elements
-- Level $k$: contains each element from level $k-1$ with probability $p$ (typically $p = 1/2$)
+- Level $k$: contains each element from level $k-1$ with probability $p$ ( $p = 1/2$)
 - The maximum level is $O(\log n)$ with high probability
 
 ```mermaid
@@ -1047,17 +1047,17 @@ class SkipList:
 
 ### Skip List vs Balanced Tree
 
-| Property          | Skip List              | Balanced Tree            |
+| Property | Skip List | Balanced Tree |
 | ----------------- | ---------------------- | ------------------------ |
-| Search            | $O(\log n)$ expected   | $O(\log n)$ worst        |
-| Insert            | $O(\log n)$ expected   | $O(\log n)$ worst        |
-| Concurrent access | Easy (lock-free)       | Hard (needs rebalancing) |
-| Implementation    | Simple                 | Complex (rotations)      |
-| Memory            | $O(n \log n)$ expected | $O(n)$                   |
-| Cache performance | Poor (pointer chasing) | Moderate                 |
+| Search | $O(\log n)$ expected | $O(\log n)$ worst |
+| Insert | $O(\log n)$ expected | $O(\log n)$ worst |
+| Concurrent access | Easy (lock-free) | Hard (needs rebalancing) |
+| Implementation | Simple | Complex (rotations) |
+| Memory | $O(n \log n)$ expected | $O(n)$ |
+| Cache performance | Poor (pointer chasing) | Moderate |
 
 Skip lists are used in Redis (for sorted sets), Apache Lucene, and LevelDB's memtable. Their
-simplicity and lock-friendliness make them popular in concurrent systems.
+Simplicity and lock-friendliness make them popular in concurrent systems.
 
 ## Common Pitfalls
 
@@ -1065,51 +1065,59 @@ simplicity and lock-friendliness make them popular in concurrent systems.
 
 Inserting sorted data into a basic BST creates a degenerate tree (essentially a linked list) with
 $O(n)$ height. Always use a self-balancing variant (AVL, red-black, treap, splay) unless you are
-certain the input is random. Most standard library map implementations already use balanced trees.
+Certain the input is random. Most standard library map implementations already use balanced trees.
 
 ### 2. Incorrect AVL Rotation Cases
 
 The most common bug in AVL tree implementations is applying the wrong rotation case. LL and RR are
-single rotations; LR and RL are double rotations. The balance factor of the child determines which
-case applies. A balance factor of -2 with a left child balance factor of +1 is LR (not LL).
+Single rotations; LR and RL are double rotations. The balance factor of the child determines which
+Case applies. A balance factor of -2 with a left child balance factor of +1 is LR (not LL).
 
 ### 3. Red-Black Tree NIL Sentinels
 
 Forgetting to use NIL sentinel nodes (or using `None` instead) is a common source of bugs. All leaf
-positions in a red-black tree must be NIL nodes (black), and every real node's children that are not
-real nodes must point to NIL. Using `None` breaks the black-height invariant and causes null pointer
-errors during rotation.
+Positions in a red-black tree must be NIL nodes (black), and every real node's children that are not
+Real nodes must point to NIL. Using `None` breaks the black-height invariant and causes null pointer
+Errors during rotation.
 
 ### 4. B-Tree Node Size Selection
 
 Choosing the node size requires understanding the hardware. On a disk-based system, the node size
-should match the disk block size (typically 4 KB). In memory, larger nodes may benefit from cache
-line effects. A node that fits in a single cache line (64 bytes) enables single-instruction
-comparisons for the entire node.
+Should match the disk block size ( 4 KB). In memory, larger nodes may benefit from cache
+Line effects. A node that fits in a single cache line (64 bytes) enables single-instruction
+Comparisons for the entire node.
 
 ### 5. Splay Tree Worst Case
 
 While splay trees have $O(\log n)$ amortised performance, individual operations can take $O(n)$
-time. If you need strict worst-case guarantees, use AVL or red-black trees instead. Splay trees are
-also not suitable for real-time systems where latency spikes are unacceptable.
+Time. If you need strict worst-case guarantees, use AVL or red-black trees instead. Splay trees are
+Also not suitable for real-time systems where latency spikes are unacceptable.
 
 ### 6. Treap Priority Collisions
 
 If two nodes have the same priority, the treap property is violated. Use 64-bit random priorities
 (collision probability $\approx 10^{-19}$) or a deterministic tiebreaker (e.g., compare keys when
-priorities are equal). In competitive programming, 32-bit random priorities are usually sufficient.
+Priorities are equal). In competitive programming, 32-bit random priorities are sufficient.
 
 ### 7. Skip List Memory Overhead
 
 A skip list with probability $p = 0.5$ uses approximately $2n$ pointers on average (each element
-appears in level $i$ with probability $1/2^i$, so expected pointers per element is
+Appears in level $i$ with probability $1/2^i$So expected pointers per element is
 $\sum_{i=0}^{\infty} 1/2^i = 2$). This is more than a balanced tree (which uses $n$ pointers). For
-memory-constrained applications, use a lower probability (e.g., $p = 1/4$) at the cost of slower
-lookups.
+Memory-constrained applications, use a lower probability (e.g., $p = 1/4$) at the cost of slower
+Lookups.
 
 ### 8. Modifying Tree During Iteration
 
 When iterating over a BST (inorder, preorder, etc.), modifying the tree structure (inserting,
-deleting, or rotating nodes) can cause the iterator to visit nodes incorrectly or loop forever.
+Deleting, or rotating nodes) can cause the iterator to visit nodes incorrectly or loop forever.
 Either collect all nodes into a list first, or use a concurrent data structure that supports safe
-iteration.
+Iteration.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

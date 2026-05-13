@@ -11,10 +11,10 @@ categories:
 ## Overview
 
 The `reflect` package provides runtime type introspection and manipulation. It allows programs to
-examine types, inspect struct fields, call methods by name, and modify values dynamically.
+Examine types, inspect struct fields, call methods by name, and modify values dynamically.
 
 Reflection is powerful but slow and type-unsafe. Use it only when static typing is insufficient:
-serialization, ORMs, configuration parsing, testing frameworks.
+Serialization, ORMs, configuration parsing, testing frameworks.
 
 ## reflect.Type and reflect.Value
 
@@ -52,9 +52,9 @@ fmt.Println(t.Name()) // MyInt
 fmt.Println(t.Kind()) // int
 ```
 
-`Kind` is one of: `Bool`, `Int`, `Int8`, `Int16`, `Int32`, `Int64`, `Uint`, `Uint8`, `Uint16`,
-`Uint32`, `Uint64`, `Float32`, `Float64`, `Complex64`, `Complex128`, `String`, `Array`, `Slice`,
-`Map`, `Chan`, `Func`, `Interface`, `Struct`, `Ptr`, `UnsafePointer`.
+`Kind` is one of: `Bool``Int``Int8``Int16``Int32``Int64``Uint``Uint8``Uint16`
+`Uint32``Uint64``Float32``Float64``Complex64``Complex128``String``Array``Slice`
+`Map``Chan``Func``Interface``Struct``Ptr``UnsafePointer`.
 
 ## Modifying Values
 
@@ -121,7 +121,7 @@ fmt.Println(p) // {Bob 25}
 ### Struct Tags
 
 Struct tags are key-value metadata attached to struct fields. They are conventionally used by
-libraries for serialization, validation, and ORM mapping:
+Libraries for serialization, validation, and ORM mapping:
 
 ```go
 type Config struct {
@@ -242,27 +242,35 @@ reflect.ValueOf(&p).Elem().FieldByName("Name").SetString("Alice")
 ```
 
 If performance is critical, avoid reflection. Consider code generation (text/template) or generics
-as alternatives.
+As alternatives.
 
 ## Common Pitfalls
 
 1. **Reflecting on unexported fields.** Reflection cannot read or set unexported (lowercase) struct
-   fields. `CanSet()` returns false for unexported fields.
+ fields. `CanSet()` returns false for unexported fields.
 
 2. **Forgetting `Elem()` for pointer values.** `reflect.ValueOf(&x)` gives you a `*int` Value. Call
-   `.Elem()` to get the underlying `int` Value for modification.
+ `.Elem()` to get the underlying `int` Value for modification.
 
 3. **Panicking on wrong types.** `Int()` panics if the kind is not an integer. Always check `Kind()`
-   before calling type-specific methods.
+ before calling type-specific methods.
 
 4. **Performance in hot paths.** Reflection is 10-100x slower than direct code. Do not use it in
-   tight loops. Cache `reflect.Type` and `reflect.Value` results when possible.
+ tight loops. Cache `reflect.Type` and `reflect.Value` results when possible.
 
 5. **Using reflection when type assertions suffice.** If you know the possible types at compile
-   time, use type switches and type assertions. They are type-safe and fast.
+ time, use type switches and type assertions. They are type-safe and fast.
 
 6. **Modifying unexported fields.** This is not possible through the `reflect` package. If you must
-   do it, use `unsafe` (but this is highly discouraged and may break across Go versions).
+ do it, use `unsafe` (but this is highly discouraged and may break across Go versions).
 
 7. **Ignoring `CanAddr` and `CanSet`.** Not all `reflect.Value` objects are addressable or settable.
-   Always check before attempting modification.
+ Always check before attempting modification.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

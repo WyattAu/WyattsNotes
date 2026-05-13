@@ -7,7 +7,7 @@ slug: packaging-distribution
 ## pyproject.toml
 
 `pyproject.toml` is the modern standard for Python project configuration, defined by PEP 518 (build
-system) and PEP 621 (project metadata).
+System) and PEP 621 (project metadata).
 
 ### Minimal pyproject.toml
 
@@ -115,8 +115,8 @@ branch = true
 
 :::info
 PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
-scattered across `setup.py`, `setup.cfg`, and `setup.cfg`/`pyproject.toml`. The new standard
-consolidates everything into one file.
+Scattered across `setup.py``setup.cfg`And `setup.cfg`/`pyproject.toml`. The new standard
+Consolidates everything into one file.
 :::
 
 ## setup.py Legacy vs pyproject.toml
@@ -167,7 +167,7 @@ where = ["src"]
 :::warning
 `setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
 `setup.py` file can still exist for complex build logic that cannot be expressed declaratively, but
-most projects do not need it.
+Most projects do not need it.
 :::
 
 ## setuptools
@@ -308,8 +308,8 @@ requests==2.31.0 \
 
 :::warning
 Always use `--generate-hashes` in production deployments. Hashes verify that the
-installed package matches exactly what you tested. Without hashes, a compromised PyPI mirror could
-serve malicious packages.
+Installed package matches exactly what you tested. Without hashes, a compromised PyPI mirror could
+Serve malicious packages.
 :::
 
 ## Virtual Environments
@@ -427,14 +427,14 @@ poetry build
 
 ### Comparison
 
-| Feature         | pip                   | poetry            | pipenv         | conda             |
+| Feature | pip | poetry | pipenv | conda |
 | --------------- | --------------------- | ----------------- | -------------- | ----------------- |
-| Lock file       | Manual (pip-tools)    | `poetry.lock`     | `Pipfile.lock` | `environment.yml` |
-| Resolution      | Basic                 | Full (resolvelib) | Full (pip)     | Full              |
-| Non-Python deps | No                    | No                | No             | Yes               |
-| Build system    | setuptools/hatch/flit | Built-in          | pip            | Built-in          |
-| Speed           | Fast                  | Medium            | Slow           | Slow              |
-| Ecosystem       | Largest               | Growing           | Declining      | Scientific        |
+| Lock file | Manual (pip-tools) | `poetry.lock` | `Pipfile.lock` | `environment.yml` |
+| Resolution | Basic | Full (resolvelib) | Full (pip) | Full |
+| Non-Python deps | No | No | No | Yes |
+| Build system | setuptools/hatch/flit | Built-in | pip | Built-in |
+| Speed | Fast | Medium | Slow | Slow |
+| Ecosystem | Largest | Growing | Declining | Scientific |
 
 ## Package Structure
 
@@ -483,9 +483,9 @@ mylib/
 
 :::warning
 The `src` layout is preferred because it prevents a subtle bug: when you run tests from
-the project root, Python may import the local package instead of the installed one. The `src` layout
-forces you to install the package before testing, catching missing dependencies and incorrect
-packaging.
+The project root, Python may import the local package instead of the installed one. The `src` layout
+Forces you to install the package before testing, catching missing dependencies and incorrect
+Packaging.
 :::
 
 ## Entry Points
@@ -579,7 +579,7 @@ prune tests
 ```
 
 :::tip
-With the `src` layout and `[tool.setuptools.package-data]`, most projects do not need
+With the `src` layout and `[tool.setuptools.package-data]`Most projects do not need
 `MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover.
 :::
 
@@ -645,7 +645,7 @@ touch src/mylib/__init__.py
 touch src/mylib/submodule/__init__.py
 ```
 
-### 2. editable Install Not Reflecting Changes
+### 2. Editable Install Not Reflecting Changes
 
 ```bash
 # If changes aren't reflected after pip install -e .:
@@ -718,7 +718,7 @@ touch src/mylib/py.typed
 mylib = ["py.typed"]
 ```
 
-Without `py.typed`, downstream users cannot get type hints from your library even if you include
+Without `py.typed`Downstream users cannot get type hints from your library even if you include
 `.pyi` stub files or inline annotations.
 
 ### 8. Not Testing the sdist
@@ -751,7 +751,7 @@ packages = ["src/mylib"]
 ```
 
 Hatch is a modern build backend and project manager. It supports environment management, versioning,
-and publishing in a single tool.
+And publishing in a single tool.
 
 ### flit
 
@@ -770,22 +770,22 @@ name = "mylib"
 ```
 
 Flit is minimal — it does not support `setup.py` or complex build logic. Best for simple pure-Python
-packages.
+Packages.
 
 ### Comparison
 
-| Feature        | setuptools  | hatch    | flit       |
+| Feature | setuptools | hatch | flit |
 | -------------- | ----------- | -------- | ---------- |
-| Maturity       | Most mature | Modern   | Minimal    |
-| Legacy compat  | Full        | Partial  | None       |
-| Plugins        | Many        | Growing  | None       |
-| Speed          | Medium      | Fast     | Fast       |
-| Complexity     | High        | Medium   | Low        |
-| VCS versioning | Via plugin  | Built-in | Via plugin |
+| Maturity | Most mature | Modern | Minimal |
+| Legacy compat | Full | Partial | None |
+| Plugins | Many | Growing | None |
+| Speed | Medium | Fast | Fast |
+| Complexity | High | Medium | Low |
+| VCS versioning | Via plugin | Built-in | Via plugin |
 
 :::tip
 For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
-need compatibility with existing tooling or complex build requirements (e.g., C extensions).
+Need compatibility with existing tooling or complex build requirements (e.g., C extensions).
 :::
 
 ## Wheel vs sdist
@@ -793,7 +793,7 @@ need compatibility with existing tooling or complex build requirements (e.g., C 
 ### Wheel (.whl)
 
 A wheel is a pre-built binary distribution format. It contains the package already compiled and
-ready to install:
+Ready to install:
 
 ```
 mylib-1.0.0-py3-none-any.whl
@@ -872,7 +872,7 @@ pip install --no-index --find-links=./wheels -r requirements.txt
 ```
 
 This is essential for air-gapped environments, Docker builds, and CI/CD pipelines with restricted
-network access.
+Network access.
 
 ## Monorepo and Workspace Patterns
 
@@ -947,8 +947,8 @@ RUN pip install --no-dev .
 requires-python = ">=3.10"
 ```
 
-Without `requires-python`, pip will try to install your package on any Python version, which fails
-at runtime with cryptic errors.
+Without `requires-python`Pip will try to install your package on any Python version, which fails
+At runtime with cryptic errors.
 
 ### 12.Editable Install Not Working with src Layout
 
@@ -971,3 +971,11 @@ pip install twine
 twine check dist/*
 # Also verify the name is available on https://pypi.org
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

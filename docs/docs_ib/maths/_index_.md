@@ -62,3 +62,15 @@ Complete revision notes for IB Mathematics, covering the full syllabus with work
 - **A-Level Maths:** [A-Level Maths](https://alevel.wyattau.com/docs/maths)
 - **DSE Maths:** [DSE Maths](https://academics.wyattau.com/docs/dse/maths)
 - **University Maths:** [University Maths](https://university.wyattau.com/docs/maths)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

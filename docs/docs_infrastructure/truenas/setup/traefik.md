@@ -11,21 +11,21 @@ slug: setup-traefik
 ## Why Traefik
 
 Traefik is a modern HTTP reverse proxy and load balancer designed for microservices and
-containerized environments. Key advantages over alternatives:
+Containerized environments. Key advantages over alternatives:
 
-| Feature                           | Traefik                            | Nginx Proxy Manager   | Caddy            |
+| Feature | Traefik | Nginx Proxy Manager | Caddy |
 | --------------------------------- | ---------------------------------- | --------------------- | ---------------- |
-| Auto-discovery from Docker labels | Yes (native)                       | No (manual UI)        | Yes (via plugin) |
-| TLS certificate management        | Built-in ACME                      | Built-in (UI)         | Built-in         |
-| Configuration method              | Labels, file, CLI                  | Web UI                | Caddyfile        |
-| Dynamic routing                   | Automatic on container start       | Manual per proxy host | Automatic        |
-| Learning curve                    | Medium                             | Low                   | Low              |
-| Dashboard                         | Built-in                           | Built-in              | No               |
-| Docker Compose integration        | Excellent (labels on each service) | Separate container    | Good             |
+| Auto-discovery from Docker labels | Yes (native) | No (manual UI) | Yes (via plugin) |
+| TLS certificate management | Built-in ACME | Built-in (UI) | Built-in |
+| Configuration method | Labels, file, CLI | Web UI | Caddyfile |
+| Dynamic routing | Automatic on container start | Manual per proxy host | Automatic |
+| Learning curve | Medium | Low | Low |
+| Dashboard | Built-in | Built-in | No |
+| Docker Compose integration | Excellent (labels on each service) | Separate container | Good |
 
 Traefik shines in a homelab because it eliminates manual proxy configuration. When you start a new
-container with the right labels, Traefik picks it up and routes traffic immediately — no restart, no
-config file editing, no UI clicking.
+Container with the right labels, Traefik picks it up and routes traffic immediately — no restart, no
+Config file editing, no UI clicking.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ Before deploying, understand the core routing model:
 
 - **Routers**: Define how requests reach your services (host-based, path-based, etc.)
 - **Middlewares**: Modify requests before they reach services (authentication, headers, rate
-  limiting, compression)
+ limiting, compression)
 - **Services**: Define the backend (container IP + port)
 - **EntryPoints**: Listening ports (80 for HTTP, 443 for HTTPS, 8080 for dashboard)
 - **Providers**: Sources of configuration (Docker labels, file provider, etc.)
@@ -49,7 +49,7 @@ Before deploying, understand the core routing model:
 ## Docker Compose Deployment
 
 This is the recommended way to run Traefik on TrueNAS SCALE. Store this compose file in a dataset
-accessible to your Docker runtime.
+Accessible to your Docker runtime.
 
 Create the directory structure on your TrueNAS:
 
@@ -117,7 +117,7 @@ networks:
 ### Setting Permissions on acme.json
 
 The ACME certificate store file requires restricted permissions. After starting Traefik for the
-first time, set permissions:
+First time, set permissions:
 
 ```bash
 chmod 600 /mnt/tank/apps/traefik/certs/acme.json
@@ -194,7 +194,7 @@ Or add it in a dynamic configuration file (see below).
 ## Dynamic Configuration File
 
 For middlewares and routing rules that apply globally or are shared across services, use a
-file-based dynamic provider.
+File-based dynamic provider.
 
 Create `dynamic-config.yml` in your Traefik config directory:
 
@@ -248,12 +248,12 @@ http:
 ## TLS with Let's Encrypt
 
 Traefik handles Let's Encrypt certificate provisioning and renewal automatically. Two challenge
-types are commonly used:
+Types are commonly used:
 
 ### TLS Challenge (Recommended for most setups)
 
 The default in the compose file above. Traefik proves domain ownership by responding to an ACME
-challenge on port 443. Only port 443 needs to be forwarded.
+Challenge on port 443. Only port 443 needs to be forwarded.
 
 ### HTTP Challenge
 
@@ -293,7 +293,7 @@ Then on your routers, use:
 ### Certificate Renewal
 
 Traefik automatically renews certificates before expiry (default: 30 days before). No manual
-intervention needed. Check certificate status:
+Intervention needed. Check certificate status:
 
 ```bash
 # View stored certificates
@@ -335,7 +335,7 @@ labels:
 ```
 
 This redirects unauthenticated users to an Authelia login page. After login, users are authenticated
-across all services without re-entering credentials.
+Across all services without re-entering credentials.
 
 ### Rate Limiting
 
@@ -388,7 +388,7 @@ The Traefik dashboard is available at:
 - `https://traefik.yourdomain.com` (if you configured the label in the compose file)
 
 The dashboard shows all routers, services, middlewares, and entrypoints in real time. It is
-invaluable for debugging routing issues.
+Invaluable for debugging routing issues.
 
 <details>
 <summary>Securing the dashboard</summary>
@@ -409,7 +409,7 @@ Never expose the dashboard on port 8080 to the public internet without authentic
 ## Example: Full Service Stack with Traefik
 
 Here is a complete example showing a Jellyfin media server behind Traefik with TLS, security
-headers, and compression:
+Headers, and compression:
 
 ```yaml
 services:
@@ -459,15 +459,15 @@ docker inspect jellyfin | jq '.[0].Config.Labels'
 ```
 
 3. **Check the dashboard** — all routers should show a green status. Red or yellow means a
-   configuration error.
+ configuration error.
 
 4. **Common issues**:
-   - Container not on the `proxy-network` → Traefik cannot reach it
-   - `traefik.enable=true` label missing or misspelled
-   - Port mismatch: `loadbalancer.server.port` does not match the container's internal port
-   - DNS not resolving: the subdomain must point to your public IP
-   - Certificate pending: Let's Encrypt has rate limits. Check `acme.json` for error messages
-   - `exposedbydefault=false` means you must explicitly enable each service with labels
+ - Container not on the `proxy-network` → Traefik cannot reach it
+ - `traefik.enable=true` label missing or misspelled
+ - Port mismatch: `loadbalancer.server.port` does not match the container's internal port
+ - DNS not resolving: the subdomain must point to your public IP
+ - Certificate pending: Let's Encrypt has rate limits. Check `acme.json` for error messages
+ - `exposedbydefault=false` means you must explicitly enable each service with labels
 
 5. **Increase log level** temporarily:
 
@@ -492,7 +492,7 @@ docker exec traefik ls -la /var/run/docker.sock
 ```
 
 On TrueNAS SCALE, you may need to use the built-in Apps catalog for Traefik rather than a custom
-compose, or ensure the Docker socket path is correct for the SCALE Kubernetes-based Docker runtime.
+Compose, or ensure the Docker socket path is correct for the SCALE Kubernetes-based Docker runtime.
 
 </details>
 
@@ -500,8 +500,8 @@ compose, or ensure the Docker socket path is correct for the SCALE Kubernetes-ba
 <summary>Let's Encrypt rate limits</summary>
 
 Let's Encrypt enforces strict rate limits: 50 certificates per registered domain per week, 5
-duplicate certificates per week. If you are experimenting and restarting containers frequently, you
-can hit this limit. Use the Let's Encrypt staging environment during development:
+Duplicate certificates per week. If you are experimenting and restarting containers frequently, you
+Can hit this limit. Use the Let's Encrypt staging environment during development:
 
 ```yaml
 command:
@@ -544,7 +544,7 @@ labels:
 ```
 
 If WebSocket connections drop after 30 seconds, check if your reverse proxy or ISP is terminating
-idle connections.
+Idle connections.
 
 </details>
 
@@ -553,6 +553,14 @@ idle connections.
 
 If your ISP uses Carrier-Grade NAT (CGNAT), you cannot receive incoming connections on port 443. The
 TLS challenge will fail. Switch to the DNS challenge with your DNS provider (Cloudflare, Route53,
-etc.) which requires no inbound ports.
+Etc.) which requires no inbound ports.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

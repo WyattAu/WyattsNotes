@@ -14,17 +14,17 @@ slug: navigation
 
 Navigation is the mechanism by which users move between different screens, pages, or views within a
 Flutter application. Every non-trivial app needs a way to transition the user from one logical
-destination to another, whether that is moving from a home screen to a settings page, drilling into
-a detail view, or presenting a modal dialog.
+Destination to another, whether that is moving from a home screen to a settings page, drilling into
+A detail view, or presenting a modal dialog.
 
 There are two dominant paradigms for navigation in Flutter: imperative navigation and declarative
-navigation.
+Navigation.
 
 ### Imperative Navigation
 
 Imperative navigation is the model inherited from many traditional UI frameworks. The developer
-explicitly tells the framework to "go to this screen now" by calling a function that mutates the
-navigation stack:
+Explicitly tells the framework to "go to this screen now" by calling a function that mutates the
+Navigation stack:
 
 ```dart
 Navigator.of(context).push(
@@ -34,25 +34,25 @@ Navigator.of(context).push(
 
 The push call directly modifies the navigator's internal stack. This is analogous to calling
 `startActivity` on Android or presenting a view controller on iOS. The control flow is linear and
-explicit: every transition is triggered by a discrete function call.
+Explicit: every transition is triggered by a discrete function call.
 
 The problems with imperative navigation become apparent as an app grows:
 
 - **Global mutable state**: The navigator's route stack is global state that any widget can modify,
-  making it difficult to reason about which part of the app caused a navigation event.
+ making it difficult to reason about which part of the app caused a navigation event.
 - **No single source of truth**: The current screen is determined by a sequence of push/pop calls
-  scattered throughout the codebase. There is no central declaration of "what screens exist" and
-  "how they connect."
+ scattered throughout the codebase. There is no central declaration of "what screens exist" and
+ "how they connect."
 - **Deep linking is bolted on**: Converting a URL like `/users/42/posts/7` into a sequence of pushes
-  is manual and error-prone.
+ is manual and error-prone.
 - **Type safety**: Routes are identified by strings or builder functions, so passing the wrong
-  arguments is only caught at runtime.
+ arguments is only caught at runtime.
 
 ### Declarative Navigation
 
 Declarative navigation treats the navigation state as a function of application state. Instead of
-imperatively pushing and popping routes, you declare a mapping from app state (or URL-like location)
-to the widget tree that should be displayed:
+Imperatively pushing and popping routes, you declare a mapping from app state (or URL-like location)
+To the widget tree that should be displayed:
 
 ```dart
 final _router = GoRouter(
@@ -75,29 +75,29 @@ final _router = GoRouter(
 ```
 
 The router becomes the single source of truth for the app's navigation structure. The current
-location determines what is displayed. When the location changes (whether from a user action, a deep
-link, or a redirect), the router reacts and rebuilds the widget tree accordingly.
+Location determines what is displayed. When the location changes (whether from a user action, a deep
+Link, or a redirect), the router reacts and rebuilds the widget tree accordingly.
 
 Benefits of the declarative approach:
 
 - **Centralized route table**: Every route and its parameters are declared in one place.
 - **Deep linking is first-class**: A URL directly maps to a route — no manual push choreography
-  required.
+ required.
 - **Predictable back-button behavior**: The router manages the navigation stack based on the
-  declarative structure, so the back button always behaves consistently.
+ declarative structure, so the back button always behaves consistently.
 - **Testability**: Navigation logic can be tested by asserting that a given URL produces the
-  expected widget tree.
+ expected widget tree.
 
 Flutter has evolved through several navigation APIs to arrive at the current best practice of using
-`go_router`, a declarative routing package maintained by the Flutter team.
+`go_router`A declarative routing package maintained by the Flutter team.
 
 ---
 
 ## Navigator 1.0
 
 Navigator 1.0 is Flutter's original navigation system, built around the `Navigator` widget and an
-imperative API. Understanding it is essential because many existing codebases still use it, and it
-is the foundation upon which later APIs were built.
+Imperative API. Understanding it is essential because many existing codebases still use it, and it
+Is the foundation upon which later APIs were built.
 
 ### Basic Push and Pop
 
@@ -145,7 +145,7 @@ class DetailPage extends StatelessWidget {
 ```
 
 `Navigator.push()` adds a new route to the top of the navigation stack. `Navigator.pop()` removes
-the topmost route. Under the hood, `Navigator` maintains an ordered list of `Route` objects — the
+The topmost route. Under the hood, `Navigator` maintains an ordered list of `Route` objects — the
 **navigation stack** — and only the topmost route is visible.
 
 ### Passing Data to a Route
@@ -254,43 +254,43 @@ A `Route` has a lifecycle managed by the `Navigator`:
 Navigator 1.0 works well for simple apps but has serious limitations at scale:
 
 1. **Imperative mutations**: Any widget with a `BuildContext` can push or pop at any time, leading
-   to unpredictable navigation state.
+ to unpredictable navigation state.
 2. **No deep linking**: There is no built-in way to map a URL to a stack of routes. The developer
-   must manually parse the URL and perform a sequence of pushes.
+ must manually parse the URL and perform a sequence of pushes.
 3. **No type safety for arguments**: Arguments are passed as `Object?` and require runtime casting.
 4. **No route guards**: There is no declarative mechanism to protect routes (e.g., requiring
-   authentication). Guards must be implemented manually at each entry point.
+ authentication). Guards must be implemented manually at each entry point.
 5. **Poor support for web**: The browser's address bar does not automatically reflect the current
-   route, and back/forward button handling is manual.
+ route, and back/forward button handling is manual.
 
 ---
 
 ## Navigator 2.0
 
 Navigator 2.0 was introduced as a declarative alternative to Navigator 1.0. It is a lower-level API
-that provides complete control over the navigation stack, making it possible to implement deep
-linking, URL-based routing, and complex nested navigation patterns.
+That provides complete control over the navigation stack, making it possible to implement deep
+Linking, URL-based routing, and complex nested navigation patterns.
 
 ### Core Components
 
 Navigator 2.0 is built from four cooperating classes:
 
-1. **`RouteInformationProvider`** — Owns the current route information (typically a URL string). It
-   listens to platform route changes (e.g., browser URL bar) and notifies the rest of the system.
+1. **`RouteInformationProvider`** — Owns the current route information ( a URL string). It
+ listens to platform route changes (e.g., browser URL bar) and notifies the rest of the system.
 2. **`RouteInformationParser<T>`** — Converts raw route information (a string) into a typed
-   configuration object `T`. This is where URL parsing happens.
+ configuration object `T`. This is where URL parsing happens.
 3. **`RouterDelegate<T>`** — The central coordinator. It receives the parsed configuration, builds
-   the navigation stack, and tells the `Navigator` which pages to display. It also handles
-   back-button dispatching.
+ the navigation stack, and tells the `Navigator` which pages to display. It also handles
+ back-button dispatching.
 4. **`BackButtonDispatcher`** — Intercepts the system back button (Android) or browser back button
-   (web) and delegates to the `RouterDelegate`.
+ (web) and delegates to the `RouterDelegate`.
 
 ### How Navigator 2.0 Works Under the Hood
 
 The flow proceeds as follows:
 
 1. The `RouteInformationProvider` detects a route change (e.g., user taps a link, browser URL
-   changes).
+ changes).
 2. It passes the raw route string to the `RouteInformationParser`.
 3. The parser converts the string into a typed configuration object.
 4. The `RouterDelegate` receives the new configuration and calls `setNewRoutePath`.
@@ -391,15 +391,15 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
 ### PlatformRouteInformationProvider
 
 `PlatformRouteInformationProvider` is the default implementation that integrates with the platform's
-route information system. On the web, it reads from and writes to the browser's history API. On
-mobile, it is less critical since mobile platforms do not have a URL bar.
+Route information system. On the web, it reads from and writes to the browser's history API. On
+Mobile, it is less critical since mobile platforms do not have a URL bar.
 
 ### Why Navigator 2.0 Is Rarely Used Directly
 
 Navigator 2.0 provides the primitives, but it requires significant boilerplate to implement
-correctly. Most production apps use **GoRouter**, which wraps Navigator 2.0 in a much simpler
-declarative API. Understanding Navigator 2.0 is valuable for debugging GoRouter internals or
-building custom routing solutions that GoRouter cannot express.
+Correctly. Most production apps use **GoRouter**, which wraps Navigator 2.0 in a much simpler
+Declarative API. Understanding Navigator 2.0 is valuable for debugging GoRouter internals or
+Building custom routing solutions that GoRouter cannot express.
 
 ---
 
@@ -437,7 +437,7 @@ class MyApp extends StatelessWidget {
 ### Route Structure
 
 Routes are defined as a tree of `GoRoute` objects. Each `GoRoute` can have a `routes` array
-containing child routes:
+Containing child routes:
 
 ```dart
 GoRoute(
@@ -475,9 +475,9 @@ Child routes inherit their parent's path prefix. A route with `path: 'posts/:pos
 ### Key GoRoute Properties
 
 - **`path`**: The URL path pattern. Must start with `/` for top-level routes; relative paths for
-  nested routes.
+ nested routes.
 - **`builder`**: Returns the widget for this route. Called with the `BuildContext` and a
-  `GoRouterState`.
+ `GoRouterState`.
 - **`redirect`**: A function that can redirect to a different path. Called before the builder.
 - **`routes`**: Array of child `GoRoute` objects for nested navigation.
 
@@ -496,9 +496,9 @@ context.goNamed('userDetail', pathParameters: {'id': '42'});
 The key difference between `go` and `push`:
 
 - `go` replaces the current location. The back button will not return to the previous screen. This
-  is analogous to "navigate" in web terms.
+ is analogous to "navigate" in web terms.
 - `push` adds a new location on top of the stack. The back button will return to the previous
-  screen.
+ screen.
 
 ### Named Routes
 
@@ -518,14 +518,14 @@ context.goNamed('userDetail', pathParameters: {'id': '42'});
 ```
 
 Named routes are useful when you want to change the URL structure without updating every navigation
-call in your codebase.
+Call in your codebase.
 
 ---
 
 ## Path Parameters
 
 Path parameters are dynamic segments in a URL path, denoted with a colon prefix. They allow a single
-route definition to match multiple URLs with different values.
+Route definition to match multiple URLs with different values.
 
 ### Defining Path Parameters
 
@@ -558,7 +558,7 @@ GoRoute(
 ### Typed Path Parameters
 
 `go_router` provides typed extraction utilities. While `pathParameters` always returns
-`Map<String, String>`, you should parse to the expected type:
+`Map<String, String>`You should parse to the expected type:
 
 ```dart
 GoRoute(
@@ -576,7 +576,7 @@ GoRoute(
 ### Path Validation
 
 Path parameters match any value that does not contain a forward slash. For stricter validation, use
-the `redirect` function:
+The `redirect` function:
 
 ```dart
 GoRoute(
@@ -611,19 +611,19 @@ GoRoute(
 ```
 
 A wildcard matches the remainder of the path including slashes. `/files/docs/report.pdf` would match
-with `filepath` equal to `docs/report.pdf`.
+With `filepath` equal to `docs/report.pdf`.
 
 ---
 
 ## Query Parameters
 
-Query parameters are key-value pairs appended to a URL after a `?`, separated by `&`. They are
-commonly used for filtering, pagination, and search.
+Query parameters are key-value pairs appended to a URL after a `?`Separated by `&`. They are
+Commonly used for filtering, pagination, and search.
 
 ### Defining Routes with Query Parameters
 
 Routes do not include query parameters in their `path` definition. Query parameters are
-automatically available in `GoRouterState`:
+Automatically available in `GoRouterState`:
 
 ```dart
 GoRoute(
@@ -685,8 +685,8 @@ final limit = double.tryParse(state.uri.queryParameters['limit'] ?? '10') ?? 10.
 ### Preserving Query Parameters Across Navigation
 
 GoRouter preserves query parameters when you navigate within the same route hierarchy. However, when
-navigating to a completely different route, query parameters from the previous route are not carried
-over. If you need to persist filter state, store it in app-level state (e.g., a Riverpod provider or
+Navigating to a completely different route, query parameters from the previous route are not carried
+Over. If you need to persist filter state, store it in app-level state (e.g., a Riverpod provider or
 BLoC) rather than relying on query parameters.
 
 ---
@@ -694,7 +694,7 @@ BLoC) rather than relying on query parameters.
 ## Guards and Redirects
 
 Guards and redirects control access to routes. GoRouter provides a `redirect` function on both the
-top-level `GoRouter` and individual `GoRoute` objects.
+Top-level `GoRouter` and individual `GoRoute` objects.
 
 ### Global Redirect
 
@@ -730,8 +730,8 @@ final router = GoRouter(
 ```
 
 The `redirect` function returns `null` to allow navigation to proceed, or a string path to redirect
-to. If the redirect returns a path that would itself be redirected, GoRouter detects the loop and
-throws an error.
+To. If the redirect returns a path that would itself be redirected, GoRouter detects the loop and
+Throws an error.
 
 ### Route-Level Redirect
 
@@ -794,8 +794,8 @@ final router = GoRouter(
 ### Redirect Chains and Loops
 
 GoRouter limits redirects to prevent infinite loops. By default, if a redirect triggers more than 5
-consecutive redirects, GoRouter throws an error. This prevents accidental infinite redirect chains
-where `/a` redirects to `/b` which redirects back to `/a`.
+Consecutive redirects, GoRouter throws an error. This prevents accidental infinite redirect chains
+Where `/a` redirects to `/b` which redirects back to `/a`.
 
 ### Refreshing the Route List
 
@@ -812,7 +812,7 @@ authService.addListener(() {
 ## Deep Linking
 
 Deep linking allows an external source (a URL, another app, a push notification) to navigate
-directly to a specific screen within your app, potentially with parameters.
+Directly to a specific screen within your app, potentially with parameters.
 
 ### What Deep Links Are
 
@@ -820,9 +820,9 @@ A deep link is a URL that points to a specific resource inside a mobile app rath
 There are two types:
 
 - **App links (Android) / Universal links (iOS)**: Use `https://` URLs that are verified to belong
-  to your app. If the app is installed, the OS opens it; otherwise, the URL opens in the browser.
+ to your app. If the app is installed, the OS opens it; otherwise, the URL opens in the browser.
 - **Custom URL schemes**: Use a custom scheme like `myapp://users/42`. These are simpler to set up
-  but less secure (any app can register the same scheme).
+ but less secure (any app can register the same scheme).
 
 ### GoRouter Initial Location
 
@@ -836,7 +836,7 @@ final router = GoRouter(
 ```
 
 When a deep link is received, GoRouter automatically parses it and navigates to the corresponding
-route.
+Route.
 
 ### Handling Incoming Links on Android
 
@@ -858,7 +858,7 @@ Add an intent filter to `AndroidManifest.xml`:
 ### Handling Incoming Links on iOS
 
 Add an associated domain in `apple-app-site-association` (hosted on your web server) and configure
-the `CFBundleURLTypes` in `Info.plist`:
+The `CFBundleURLTypes` in `Info.plist`:
 
 ```xml
 <key>CFBundleURLTypes</key>
@@ -875,7 +875,7 @@ the `CFBundleURLTypes` in `Info.plist`:
 ### Handling Incoming Links on Web
 
 On the web, GoRouter integrates with the browser's URL bar automatically. When a user navigates to
-`https://example.com/users/42`, GoRouter parses the path and renders the corresponding widget.
+`https://example.com/users/42`GoRouter parses the path and renders the corresponding widget.
 
 ### The `uni_links` Package
 
@@ -903,8 +903,8 @@ Future<void> initDeepLinks() async {
 ### Deferred Deep Linking
 
 Deferred deep linking refers to the scenario where a user clicks a link but does not have the app
-installed. The user is taken to the app store, installs the app, and then is navigated to the
-originally intended content. This requires a third-party service like Firebase Dynamic Links
+Installed. The user is taken to the app store, installs the app, and then is navigated to the
+Originally intended content. This requires a third-party service like Firebase Dynamic Links
 (deprecated), Branch.io, or Adjust to store the pending deep link and deliver it after installation.
 
 ---
@@ -912,12 +912,12 @@ originally intended content. This requires a third-party service like Firebase D
 ## Nested Navigation
 
 Nested navigation allows you to have multiple navigation stacks within a single screen. The most
-common use case is a bottom navigation bar where each tab maintains its own navigation history.
+Common use case is a bottom navigation bar where each tab maintains its own navigation history.
 
 ### ShellRoute for Persistent UI
 
 `ShellRoute` provides a persistent shell around child routes. The shell widget remains in the tree
-as the user navigates between child routes:
+As the user navigates between child routes:
 
 ```dart
 ShellRoute(
@@ -940,7 +940,7 @@ ShellRoute(
 ```
 
 The `ScaffoldWithNavBar` widget renders the persistent bottom navigation bar and places the `child`
-in the body:
+In the body:
 
 ```dart
 class ScaffoldWithNavBar extends StatelessWidget {
@@ -996,7 +996,7 @@ class ScaffoldWithNavBar extends StatelessWidget {
 ### StatefulShellRoute.indexedStack
 
 `StatefulShellRoute.indexedStack` preserves the state of each tab's navigation stack. When the user
-switches tabs and comes back, the previous navigation state is restored:
+Switches tabs and comes back, the previous navigation state is restored:
 
 ```dart
 StatefulShellRoute.indexedStack(
@@ -1045,9 +1045,9 @@ StatefulShellRoute.indexedStack(
 ```
 
 Each `StatefulShellBranch` maintains its own `Navigator` stack. This means that if the user
-navigates from `/home` to `/home/detail/5` and then switches to the Explore tab, the Home tab
-retains the detail page. When the user switches back to Home, they see the detail page exactly as
-they left it.
+Navigates from `/home` to `/home/detail/5` and then switches to the Explore tab, the Home tab
+Retains the detail page. When the user switches back to Home, they see the detail page exactly as
+They left it.
 
 ### Nested Navigation Without ShellRoute
 
@@ -1077,7 +1077,7 @@ class TabPage extends StatelessWidget {
 ### Bottom Sheets
 
 Bottom sheets slide up from the bottom of the screen. They are useful for selections, confirmations,
-or supplementary content:
+Or supplementary content:
 
 ```dart
 void showFilterSheet(BuildContext context) {
@@ -1143,7 +1143,7 @@ GoRoute(
 ### Modal Routes
 
 `fullscreenDialog: true` creates a route that slides in from the bottom (on iOS) and has a close
-button instead of a back arrow:
+Button instead of a back arrow:
 
 ```dart
 Navigator.of(context).push(
@@ -1212,13 +1212,13 @@ GoRoute(
 ### Using `go` When You Mean `push`
 
 `context.go('/detail')` replaces the current route. If you want the user to be able to press back
-and return to the previous screen, use `context.push('/detail')` instead. A common bug is using `go`
-everywhere and losing the back stack, so the back button exits the app unexpectedly.
+And return to the previous screen, use `context.push('/detail')` instead. A common bug is using `go`
+Everywhere and losing the back stack, so the back button exits the app unexpectedly.
 
 ### Forgetting to Handle Null Path Parameters
 
 `state.pathParameters['id']` returns `String?`. Forgetting the null check or the `!` assertion
-causes a runtime crash:
+Causes a runtime crash:
 
 ```dart
 final id = state.pathParameters['id']!; // Crashes if 'id' is missing
@@ -1229,49 +1229,57 @@ Always validate parameters in a `redirect` function before reaching the builder.
 ### Infinite Redirect Loops
 
 If a redirect function returns a path that itself triggers a redirect, GoRouter detects the loop
-after approximately 5 iterations and throws. Common causes:
+After approximately 5 iterations and throws. Common causes:
 
-- The login redirect sends the user to `/`, which redirects back to `/login` because the user is not
-  yet authenticated (race condition with async auth state).
+- The login redirect sends the user to `/`Which redirects back to `/login` because the user is not
+ yet authenticated (race condition with async auth state).
 - Two routes redirect to each other.
 
 ### Not Calling `router.refresh()` After Auth State Changes
 
 When the authentication state changes (user logs in or out), GoRouter's redirect functions are not
-automatically re-evaluated. You must call `router.refresh()` to trigger re-evaluation. Without this,
-a user who just logged in may still see the login screen.
+Automatically re-evaluated. You must call `router.refresh()` to trigger re-evaluation. Without this,
+A user who just logged in may still see the login screen.
 
 ### Using `Navigator.of(context)` Directly with GoRouter
 
-When using GoRouter, avoid mixing Navigator 1.0 calls (`Navigator.push`, `Navigator.pop`) with
-GoRouter calls (`context.go`, `context.push`). They operate on different stacks and can cause
-inconsistent behavior. Always use GoRouter's API for page-level navigation.
+When using GoRouter, avoid mixing Navigator 1.0 calls (`Navigator.push``Navigator.pop`) with
+GoRouter calls (`context.go``context.push`). They operate on different stacks and can cause
+Inconsistent behavior. Always use GoRouter's API for page-level navigation.
 
 ### Not Using `GlobalKey<NavigatorState>` for Deep Links
 
 When using GoRouter, you need a `GlobalKey<NavigatorState>` to access the navigator from outside the
-widget tree (e.g., in a deep link handler). Forgetting to provide this key to `MaterialApp.router`
-causes deep links to fail silently.
+Widget tree (e.g., in a deep link handler). Forgetting to provide this key to `MaterialApp.router`
+Causes deep links to fail silently.
 
 ### Ignoring Web URL Behavior
 
 On the web, every navigation event updates the browser's URL bar. If your routes use `push` heavily,
-the browser's back button will step through each pushed route individually, which may confuse users.
+The browser's back button will step through each pushed route individually, which may confuse users.
 Consider whether `go` is more appropriate for web.
 
 ### Over-Nesting ShellRoutes
 
 Nesting `ShellRoute` objects more than two levels deep creates complex navigation hierarchies that
-are difficult to debug. If you find yourself needing deeply nested shells, consider simplifying your
-app's information architecture.
+Are difficult to debug. If you find yourself needing deeply nested shells, consider simplifying your
+App's information architecture.
 
 ### State Loss in ShellRoute Tabs
 
 Using a plain `ShellRoute` with `context.go()` for tab switching destroys and rebuilds the child
-navigator's state. If you need to preserve each tab's navigation history, use
+Navigator's state. If you need to preserve each tab's navigation history, use
 `StatefulShellRoute.indexedStack` instead.
 
 ### Missing `key` on Pages
 
-When building custom pages, always provide a unique `key` (typically `state.pageKey`). Without a
-stable key, Flutter may not properly animate transitions or may incorrectly reuse page state.
+When building custom pages, always provide a unique `key` ( `state.pageKey`). Without a
+Stable key, Flutter may not properly animate transitions or may incorrectly reuse page state.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

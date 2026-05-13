@@ -35,27 +35,27 @@ Throwable
 ```
 
 `Throwable` sits at the top. The JVM only throws subclasses of `Throwable`. The split into `Error`
-and `Exception` is the first critical decision point:
+And `Exception` is the first critical decision point:
 
 - **`Error`**: JVM-level failures. Application code should almost never catch these. If you catch
-  `OutOfMemoryError`, you are guessing about JVM state invariants that may no longer hold.
+ `OutOfMemoryError`You are guessing about JVM state invariants that may no longer hold.
 - **`Exception`**: Application-level failures. This is where you design error handling.
 
-Within `Exception`, the `RuntimeException` subclass marks **unchecked** exceptions — the compiler
-does not force you to declare or handle them. Everything else is **checked**.
+Within `Exception`The `RuntimeException` subclass marks **unchecked** exceptions — the compiler
+Does not force you to declare or handle them. Everything else is **checked**.
 
 ### When to Use Checked vs Unchecked
 
-| Factor               | Checked                                      | Unchecked                                          |
+| Factor | Checked | Unchecked |
 | -------------------- | -------------------------------------------- | -------------------------------------------------- |
-| Recovery expected?   | Yes — caller can meaningfully handle it      | No — typically a programming error                 |
-| Compiler enforcement | Required `throws` declaration                | No declaration needed                              |
-| API surface impact   | Propagates through every caller in the chain | Stops where it stops                               |
-| Example              | `IOException`, `SQLException`                | `NullPointerException`, `IllegalArgumentException` |
+| Recovery expected? | Yes — caller can meaningfully handle it | No — a programming error |
+| Compiler enforcement | Required `throws` declaration | No declaration needed |
+| API surface impact | Propagates through every caller in the chain | Stops where it stops |
+| Example | `IOException``SQLException` | `NullPointerException``IllegalArgumentException` |
 
 The pragmatic rule: use checked exceptions for conditions where the caller **reasonably can and
-should** take corrective action. Use unchecked exceptions for programming errors and precondition
-violations.
+Should** take corrective action. Use unchecked exceptions for programming errors and precondition
+Violations.
 
 This is not a bright line. The Java standard library itself is inconsistent —
 `CloneNotSupportedException` is checked but almost never handled meaningfully, while
@@ -130,8 +130,8 @@ try {
 ```
 
 The pipe operator lets you handle multiple exception types with identical logic. The variable `e` is
-implicitly `final`. The alternatives cannot be related by subtyping — if one exception type is a
-subtype of another, it is a compiler error (e.g., `IOException | FileNotFoundException`).
+Implicitly `final`. The alternatives cannot be related by subtyping — if one exception type is a
+Subtype of another, it is a compiler error (e.g., `IOException | FileNotFoundException`).
 
 ### try-with-resources (Java 7+)
 
@@ -160,7 +160,7 @@ try (InputStream in = new FileInputStream("data.bin");
 ```
 
 The resource must implement `AutoCloseable`. Its `close()` method is called even if the try block
-throws. If both the try block and `close()` throw, the `close()` exception is attached as a
+Throws. If both the try block and `close()` throw, the `close()` exception is attached as a
 **suppressed exception** on the primary exception:
 
 ```java
@@ -189,9 +189,9 @@ public class DebugResource implements AutoCloseable {
 ### finally Block Semantics and Gotchas
 
 `finally` executes unless the JVM exits (via `System.exit()` or a fatal `Error` that terminates the
-thread). An `OutOfMemoryError` does not typically prevent `finally` from running, but a truly fatal
-error (e.g., `StackOverflowError` leaving no stack space, or `VirtualMachineError`) can. There are
-also subtle traps:
+Thread). An `OutOfMemoryError` does not prevent `finally` from running, but a truly fatal
+Error (e.g., `StackOverflowError` leaving no stack space, or `VirtualMachineError`) can. There are
+Also subtle traps:
 
 **Gotcha: Return in finally silently discards the try/catch return value**
 
@@ -332,7 +332,7 @@ public List<User> loadUsers(Path file) {
 ```
 
 Without the cause chain, the original failure point is invisible. This is one of the most common
-mistakes in Java error handling.
+Mistakes in Java error handling.
 
 ### Exception Translation (Layer Abstraction)
 
@@ -368,12 +368,12 @@ public class UserService {
 ```
 
 The rule: each layer should only throw exceptions meaningful to its callers. A service layer caller
-should never see `SQLException` or `PersistenceException`.
+Should never see `SQLException` or `PersistenceException`.
 
 ### Fail-fast vs Fail-safe
 
 **Fail-fast**: Throw immediately when an invariant is violated. Detect problems as early as
-possible:
+Possible:
 
 ```java
 public void setAge(int age) {
@@ -413,19 +413,19 @@ Choose fail-safe only when partial results are meaningful and the cost of failur
 ### Arguments For Checked Exceptions
 
 - **Compiler-enforced documentation**: The method signature tells you what can go wrong without
-  reading implementation
+ reading implementation
 - **Handling is mandatory**: Callers cannot accidentally ignore error conditions
-- **Appropriate for recoverable conditions**: `IOException`, `SQLException` are conditions a
-  well-written program should handle
+- **Appropriate for recoverable conditions**: `IOException``SQLException` are conditions a
+ well-written program should handle
 
 ### Arguments Against Checked Exceptions
 
 - **Signature pollution**: Adding a checked exception to a low-level method forces every caller up
-  the chain to declare or handle it
+ the chain to declare or handle it
 - **Encourages antipatterns**: Developers write `catch (Exception e) {}` or `throws Exception` to
-  satisfy the compiler
+ satisfy the compiler
 - **Versioning friction**: Adding a checked exception to an interface method breaks all
-  implementations
+ implementations
 - **Lambdas friction**: Checked exceptions are painful with functional interfaces
 
 ### How Modern Java Reduces the Need
@@ -466,7 +466,7 @@ public sealed interface Result<T> {
 
 ### Checked Exceptions in Lambdas
 
-The standard functional interfaces (`Function`, `Supplier`, etc.) do not declare checked exceptions.
+The standard functional interfaces (`Function``Supplier`Etc.) do not declare checked exceptions.
 Workarounds:
 
 **Utility wrapper:**
@@ -511,14 +511,14 @@ public class FileLoader {
 
 `@SneakyThrows` works by generating bytecode that throws the checked exception without declaring it.
 The JVM does not enforce checked exceptions — only the compiler does. Use it when wrapping every
-call in a try-catch would add noise without safety.
+Call in a try-catch would add noise without safety.
 
 ## Performance Implications
 
 ### Exception Creation Cost
 
 Creating an exception is expensive because `Throwable` captures the stack trace by calling
-`Throwable.fillInStackTrace()`, which walks the stack via `StackTraceElement`:
+`Throwable.fillInStackTrace()`Which walks the stack via `StackTraceElement`:
 
 ```java
 // Benchmark: exception creation vs simple object creation
@@ -528,7 +528,7 @@ Creating an exception is expensive because `Throwable` captures the stack trace 
 // Throwing and catching (no stack trace): ~0.01 microseconds (near-zero)
 ```
 
-For hot paths, avoid exceptions entirely. Use return codes, `Optional`, or `null` checks:
+For hot paths, avoid exceptions entirely. Use return codes, `Optional`Or `null` checks:
 
 ```java
 // Bad: using exceptions for control flow in a hot path
@@ -570,28 +570,28 @@ This avoids the stack walk cost entirely. The exception still propagates normall
 ### HotSpot Optimization
 
 HotSpot treats exception paths as "cold" code. Methods that frequently throw exceptions may be
-deoptimized or prevented from being compiled by C2. The JIT compiler assumes the fast (non-throwing)
-path is the common case. If exceptions are your normal control flow, you are fighting the optimizer.
+Deoptimized or prevented from being compiled by C2. The JIT compiler assumes the fast (non-throwing)
+Path is the common case. If exceptions are your normal control flow, you are fighting the optimizer.
 
 ### When Exceptions Are Appropriate vs Return Codes
 
-| Criterion                        | Exceptions         | Return Codes          |
+| Criterion | Exceptions | Return Codes |
 | -------------------------------- | ------------------ | --------------------- |
-| Frequency of failure             | Rare / exceptional | Common / expected     |
-| Performance sensitivity          | Low                | High                  |
-| Separation of happy/unhappy path | Clean separation   | Mixed in control flow |
-| Forced handling                  | Yes (checked)      | No — easily ignored   |
-| Composability                    | Breaks lambdas     | Composes cleanly      |
+| Frequency of failure | Rare / exceptional | Common / expected |
+| Performance sensitivity | Low | High |
+| Separation of happy/unhappy path | Clean separation | Mixed in control flow |
+| Forced handling | Yes (checked) | No — ignored |
+| Composability | Breaks lambdas | Composes cleanly |
 
 Rule of thumb: if it happens more than once per thousand calls on the hot path, consider a return
-code or `Optional`.
+Code or `Optional`.
 
 ## JVM Internals
 
 ### Exception Table in Class File Format
 
 The Java class file format includes an exception table for each method. Each entry maps a range of
-bytecode instructions to a handler:
+Bytecode instructions to a handler:
 
 ```
 Exception table:
@@ -626,9 +626,9 @@ public void readFile() throws IOException;
 ```
 
 The exception table is a list of `(start_pc, end_pc, handler_pc, catch_type)` tuples. When an
-exception is thrown, the JVM scans the exception table of the current method for a matching entry
-where `start_pc &lt;= pc &lt; end_pc` and the thrown exception is assignable to `catch_type`. If no
-handler is found, the method frame is popped and the search continues in the caller.
+Exception is thrown, the JVM scans the exception table of the current method for a matching entry
+Where `start_pc &lt;= pc &lt; end_pc` and the thrown exception is assignable to `catch_type`. If no
+Handler is found, the method frame is popped and the search continues in the caller.
 
 ### Stack Unwinding Mechanism
 
@@ -645,7 +645,7 @@ When an exception is thrown:
 ### Suppressed Exceptions
 
 `Throwable.addSuppressed()` allows attaching secondary exceptions that would otherwise be lost. The
-primary use case is try-with-resources:
+Primary use case is try-with-resources:
 
 ```java
 try (Reader r = new ThrowingReader();       // close() throws IOException
@@ -692,8 +692,8 @@ try {
 ```
 
 Catching broadly hides bugs. A `NullPointerException` or `ClassCastException` indicates a
-programming error that should propagate, not be swallowed. Catch the most specific exception type
-possible.
+Programming error that should propagate, not be swallowed. Catch the most specific exception type
+Possible.
 
 ```java
 // GOOD: catch only what you can actually handle
@@ -725,7 +725,7 @@ try {
 ```
 
 At minimum, log the exception with context. If you truly intend to ignore it, comment explaining
-why:
+Why:
 
 ```java
 try {
@@ -780,7 +780,7 @@ public Iterator<String> parseLines(String text) {
 ```
 
 Exception-driven control flow is slow, obscure, and defeats JIT optimization. It also makes
-debugging harder because the stack trace is noise.
+Debugging harder because the stack trace is noise.
 
 ### Losing Stack Traces
 
@@ -854,7 +854,7 @@ public void process(@NonNull String input) {
 
 `Objects.requireNonNull` is the canonical way to fail-fast on null arguments. It throws
 `NullPointerException` with your message and appears as a single frame in the stack trace, making it
-clear where the null check failed.
+Clear where the null check failed.
 
 ### InterruptedException Swallowing
 
@@ -884,5 +884,13 @@ try {
 ```
 
 When `InterruptedException` is caught, the thread's interrupt flag is **automatically cleared**. If
-you do not restore it (via `Thread.currentThread().interrupt()`), the interruption is lost and
-cooperative cancellation in the caller breaks.
+You do not restore it (via `Thread.currentThread().interrupt()`), the interruption is lost and
+Cooperative cancellation in the caller breaks.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

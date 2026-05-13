@@ -22,8 +22,8 @@ $$
 $$
 
 On the unit circle (radius 1), the point at angle $\theta$ from the positive $x$-axis has
-coordinates $(\cos\theta, \sin\theta)$. This definition extends the trig functions to all real
-angles, not just those in $[0, \pi/2]$.
+Coordinates $(\cos\theta, \sin\theta)$. This definition extends the trig functions to all real
+Angles, not just those in $[0, \pi/2]$.
 
 **Key Identity:**
 
@@ -33,7 +33,7 @@ $$
 
 **Proof (geometric).** In the unit circle, a point at angle $\theta$ has coordinates
 $(\cos\theta, \sin\theta)$. By the Pythagorean theorem, the distance from the origin is
-$\sqrt{\cos^2\theta + \sin^2\theta} = 1$, so $\cos^2\theta + \sin^2\theta = 1$.
+$\sqrt{\cos^2\theta + \sin^2\theta} = 1$So $\cos^2\theta + \sin^2\theta = 1$.
 
 Dividing through by $\cos^2\theta$:
 
@@ -57,15 +57,15 @@ $$
 
 **Why radians?** In calculus, the derivative formula $\frac{d}{dx}[\sin x] = \cos x$ holds only when
 $x$ is in radians. If $x$ is in degrees, you get an extra factor of $\frac{\pi}{180}$. Radians arise
-naturally because the arc length subtended by angle $\theta$ on a unit circle is exactly $\theta$.
+ because the arc length subtended by angle $\theta$ on a unit circle is exactly $\theta$.
 
 **Arc Length:**
 
 $$
-s = r\theta
+S = r\theta
 $$
 
-where $s$ is arc length, $r$ is radius, and $\theta$ is in radians.
+Where $s$ is arc length, $r$ is radius, and $\theta$ is in radians.
 
 **Sector Area:**
 
@@ -80,7 +80,7 @@ A = \frac{1}{2}r^2(\theta - \sin\theta)
 $$
 
 **Example:** Find the length of the arc and the area of the sector for a circle of radius 8 cm with
-an angle of $\dfrac{5\pi}{6}$ radians.
+An angle of $\dfrac{5\pi}{6}$ radians.
 
 Arc length: $s = 8 \times \dfrac{5\pi}{6} = \dfrac{20\pi}{3} \approx 20.94 \mathrm{ cm{}$.
 
@@ -88,7 +88,7 @@ Sector area:
 $A = \dfrac{1}{2} \times 64 \times \dfrac{5\pi}{6} = \dfrac{160\pi}{6} = \dfrac{80\pi}{3} \approx 83.78 \mathrm{ cm{}^2$.
 
 **Example:** A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm{}^2$. Find the
-perimeter of the sector.
+Perimeter of the sector.
 
 $$
 \frac{1}{2} \times 36 \times \theta = 24\pi \implies \theta = \frac{48\pi}{36} = \frac{4\pi}{3}
@@ -115,9 +115,9 @@ $$
 $$
 
 **Proof of $\cos(A + B)$.** Consider two points on the unit circle: $P$ at angle $A$ with
-coordinates $(\cos A, \sin A)$, and $Q$ at angle $-(A+B)$ with coordinates
+Coordinates $(\cos A, \sin A)$And $Q$ at angle $-(A+B)$ with coordinates
 $(\cos(A+B), -\sin(A+B))$. Rotating the entire figure by angle $A$ maps $P$ to $(1, 0)$ and $Q$ to
-the point at angle $-B$, namely $(\cos B, -\sin B)$. Since rotation preserves distances:
+The point at angle $-B$Namely $(\cos B, -\sin B)$. Since rotation preserves distances:
 
 $$
 [\cos(A+B) - \cos A]^2 + [-\sin(A+B) - \sin A]^2 = (\cos B - 1)^2 + (-\sin B)^2
@@ -141,7 +141,7 @@ $$
 $$
 
 The three forms of $\cos 2A$ are all useful in different contexts. Use $\cos 2A = 2\cos^2 A - 1$
-when everything is in terms of $\cos$, and $\cos 2A = 1 - 2\sin^2 A$ when everything is in terms of
+When everything is in terms of $\cos$And $\cos 2A = 1 - 2\sin^2 A$ when everything is in terms of
 $\sin$.
 
 **Proof that $\sin 2A = 2\sin A \cos A$.**
@@ -209,11 +209,11 @@ $\blacksquare$
 ### Solving Trigonometric Equations
 
 When solving trig equations in a given interval, always check for all solutions. The periodicity of
-trig functions means there are typically multiple solutions.
+Trig functions means there are multiple solutions.
 
 :::warning
 When dividing by a trig function to simplify, always consider the case where that
-function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$.
+Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$.
 :::
 
 **Example:** Solve $\sin 2x = \cos x$ for $0 \leq x < 2\pi$.
@@ -269,7 +269,7 @@ $$
 
 $\sin x = 0$: $x = 0, \pi$.
 
-$2\sin x - 3 = 0$: $\sin x = 1.5$, which has no solution since $|\sin x| \le 1$.
+$2\sin x - 3 = 0$: $\sin x = 1.5$Which has no solution since $|\sin x| \le 1$.
 
 Solutions: $x = 0, \pi$.
 
@@ -305,18 +305,18 @@ $$
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
 $$
 
-where $R$ is the circumradius of the triangle.
+Where $R$ is the circumradius of the triangle.
 
 Use the sine rule when you know an angle and its opposite side, or two angles and one side.
 
 **Cosine Rule:**
 
 $$
-a^2 = b^2 + c^2 - 2bc\cos A
+A^2 = b^2 + c^2 - 2bc\cos A
 $$
 
 Use the cosine rule when you know all three sides (to find an angle) or two sides and the included
-angle (to find the third side).
+Angle (to find the third side).
 
 **Area of a triangle:**
 
@@ -324,15 +324,15 @@ $$
 A = \frac{1}{2}ab\sin C
 $$
 
-**Example:** In triangle $ABC$, $a = 8$, $b = 5$, $C = 60^\circ$. Find $c$.
+**Example:** In triangle $ABC$$a = 8$$b = 5$$C = 60^\circ$. Find $c$.
 
 $$
-c^2 = 64 + 25 - 2(8)(5)\cos 60° = 89 - 40 = 49
+C^2 = 64 + 25 - 2(8)(5)\cos 60° = 89 - 40 = 49
 $$
 
 $c = 7$.
 
-**Example:** In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$.
+**Example:** In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$.
 
 By the sine rule:
 
@@ -350,12 +350,12 @@ $$
 
 Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180^\circ$ and
 $A + B = 140.4° + 55° = 195.4° > 180^\circ$. Only $A \approx 39.6^\circ$ is valid (since the sum of angles
-must be less than $180^\circ$).
+Must be less than $180^\circ$).
 
 ### Wave Function (R-Addition Formula)
 
 An expression of the form $a\sin x + b\cos x$ can be written as $R\sin(x + \alpha)$ or
-$R\cos(x - \alpha)$, where:
+$R\cos(x - \alpha)$Where:
 
 $$
 R = \sqrt{a^2 + b^2}, \quad \alpha = \arctan\left(\frac{b}{a}\right)
@@ -363,7 +363,7 @@ $$
 
 **Derivation.** We want
 $a\sin x + b\cos x = R\sin(x + \alpha) = R\sin x \cos\alpha + R\cos x \sin\alpha$. Matching
-coefficients: $R\cos\alpha = a$ and $R\sin\alpha = b$. Squaring and adding: $R^2 = a^2 + b^2$, so
+Coefficients: $R\cos\alpha = a$ and $R\sin\alpha = b$. Squaring and adding: $R^2 = a^2 + b^2$So
 $R = \sqrt{a^2 + b^2}$. Dividing: $\tan\alpha = b/a$.
 
 **Applications:** The maximum value is $R$ and the minimum is $-R$.
@@ -380,10 +380,10 @@ $$
 3\sin x + 4\cos x = 5\sin\left(x + \arctan\left(\frac{4}{3}\right)\right)
 $$
 
-Maximum value is $5$, occurring when $\sin(x + \alpha) = 1$.
+Maximum value is $5$Occurring when $\sin(x + \alpha) = 1$.
 
 **Example:** Find the maximum value of $2\sin\theta - \sqrt{3}\cos\theta$ and the smallest positive
-value of $\theta$ at which it occurs.
+Value of $\theta$ at which it occurs.
 
 $$
 R = \sqrt{4 + 3} = \sqrt{7}
@@ -393,15 +393,15 @@ $$
 2\sin\theta - \sqrt{3}\cos\theta = \sqrt{7}\sin(\theta + \alpha)
 $$
 
-where $\tan\alpha = \dfrac{-\sqrt{3}}{2}$, so
+Where $\tan\alpha = \dfrac{-\sqrt{3}}{2}$So
 $\alpha = -\arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx -0.714 \mathrm{ rad{}$.
 
-Maximum value is $\sqrt{7}$, occurring when $\sin(\theta + \alpha) = 1$, i.e.,
-$\theta + \alpha = \dfrac{\pi}{2}$, so
+Maximum value is $\sqrt{7}$Occurring when $\sin(\theta + \alpha) = 1$I.e.,
+$\theta + \alpha = \dfrac{\pi}{2}$So
 $\theta = \dfrac{\pi}{2} + \arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx 2.285 \mathrm{ rad{}$.
 
 **Example:** Express $5\sin\theta - 12\cos\theta$ in the form $R\sin(\theta - \alpha)$ and find its
-maximum value.
+Maximum value.
 
 $$
 R = \sqrt{25 + 144} = \sqrt{169} = 13
@@ -411,7 +411,7 @@ $$
 5\sin\theta - 12\cos\theta = 13\sin(\theta - \alpha)
 $$
 
-where $\tan\alpha = \dfrac{12}{5}$, so $\alpha = \arctan\!\left(\dfrac{12}{5}\right)$.
+Where $\tan\alpha = \dfrac{12}{5}$So $\alpha = \arctan\!\left(\dfrac{12}{5}\right)$.
 
 Maximum value is $13$.
 
@@ -422,14 +422,14 @@ $a\sin x + b\cos x = c$.
 
 **Example:** Solve $3\sin x + 4\cos x = 5$ for $0 \le x \lt 2\pi$.
 
-Since $R = 5$, we have $5\sin(x + \alpha) = 5$, so $\sin(x + \alpha) = 1$.
+Since $R = 5$We have $5\sin(x + \alpha) = 5$So $\sin(x + \alpha) = 1$.
 
 $$
-x + \alpha = \frac{\pi}{2} + 2k\pi
+X + \alpha = \frac{\pi}{2} + 2k\pi
 $$
 
 $$
-x = \frac{\pi}{2} - \alpha + 2k\pi = \frac{\pi}{2} - \arctan\frac{4}{3} + 2k\pi
+X = \frac{\pi}{2} - \alpha + 2k\pi = \frac{\pi}{2} - \arctan\frac{4}{3} + 2k\pi
 $$
 
 For $k = 0$: $x \approx 1.571 - 0.927 = 0.644$ rad. For $k = 1$:
@@ -437,8 +437,8 @@ $x \approx 0.644 + 2\pi \approx 6.927$ (outside range).
 
 There is exactly one solution in $[0, 2\pi)$.
 
-Note that if $|c| > R = \sqrt{a^2 + b^2}$, the equation has no real solutions, because the maximum
-of $a\sin x + b\cos x$ is $R$.
+Note that if $|c| > R = \sqrt{a^2 + b^2}$The equation has no real solutions, because the maximum
+Of $a\sin x + b\cos x$ is $R$.
 
 ---
 
@@ -449,17 +449,17 @@ of $a\sin x + b\cos x$ is $R$.
 The equation of a straight line passing through $(x_1, y_1)$ with gradient $m$:
 
 $$
-y - y_1 = m(x - x_1)
+Y - y_1 = m(x - x_1)
 $$
 
 **Gradient between two points:**
 
 $$
-m = \frac{y_2 - y_1}{x_2 - x_1}
+M = \frac{y_2 - y_1}{x_2 - x_1}
 $$
 
 **Example:** Find the equation of the perpendicular bisector of the line segment joining $A(2, 5)$
-and $B(8, 3)$.
+And $B(8, 3)$.
 
 Midpoint: $M = \left(\dfrac{2 + 8}{2}, \dfrac{5 + 3}{2}\right) = (5, 4)$.
 
@@ -467,7 +467,7 @@ Gradient of AB: $m_{AB} = \dfrac{3 - 5}{8 - 2} = -\dfrac{1}{3}$.
 
 Gradient of perpendicular bisector: $m = 3$.
 
-Equation: $y - 4 = 3(x - 5)$, i.e., $y = 3x - 11$.
+Equation: $y - 4 = 3(x - 5)$I.e., $y = 3x - 11$.
 
 ### Circles
 
@@ -479,7 +479,7 @@ $$
 
 Expanded form: $x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0$.
 
-Given the expanded form $x^2 + y^2 + 2gx + 2fy + c = 0$, the centre is $(-g, -f)$ and the radius is
+Given the expanded form $x^2 + y^2 + 2gx + 2fy + c = 0$The centre is $(-g, -f)$ and the radius is
 $\sqrt{g^2 + f^2 - c}$ (provided $g^2 + f^2 - c > 0$).
 
 **Example:** Find the centre and radius of the circle $x^2 + y^2 - 6x + 4y - 12 = 0$.
@@ -490,12 +490,12 @@ $$(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4$$
 
 $$(x - 3)^2 + (y + 2)^2 = 25$$
 
-Centre $(3, -2)$, radius $5$.
+Centre $(3, -2)$Radius $5$.
 
 **Example:** Find the equation of the circle with centre $(2, -3)$ that passes through $(5, 1)$.
 
 $$
-r^2 = (5 - 2)^2 + (1 + 3)^2 = 9 + 16 = 25
+R^2 = (5 - 2)^2 + (1 + 3)^2 = 9 + 16 = 25
 $$
 
 $$(x - 2)^2 + (y + 3)^2 = 25$$
@@ -507,7 +507,7 @@ The tangent at a point on the circle is perpendicular to the radius at that poin
 The equation of the tangent to $x^2 + y^2 = r^2$ at point $(x_1, y_1)$ on the circle is:
 
 $$
-x_1 x + y_1 y = r^2
+X_1 x + y_1 y = r^2
 $$
 
 **Example:** Find the equation of the tangent to $(x - 2)^2 + (y + 1)^2 = 25$ at the point $(5, 3)$.
@@ -518,21 +518,21 @@ Gradient of radius from $(2, -1)$ to $(5, 3)$: $m_r = \dfrac{3 - (-1)}{5 - 2} = 
 
 Gradient of tangent: $m_t = -\dfrac{3}{4}$.
 
-Equation: $y - 3 = -\dfrac{3}{4}(x - 5)$, i.e., $4y - 12 = -3x + 15$, or $3x + 4y - 27 = 0$.
+Equation: $y - 3 = -\dfrac{3}{4}(x - 5)$I.e., $4y - 12 = -3x + 15$Or $3x + 4y - 27 = 0$.
 
 **Example:** Find the equation of the tangent to $x^2 + y^2 + 4x - 6y + 9 = 0$ at the point
 $(-2, 3)$.
 
-Complete the square: $(x + 2)^2 + (y - 3)^2 = 4$. Centre $(-2, 3)$, radius $2$.
+Complete the square: $(x + 2)^2 + (y - 3)^2 = 4$. Centre $(-2, 3)$Radius $2$.
 
 Since $(-2, 3)$ is the centre, not a point on the circle, we must check:
 $(-2+2)^2 + (3-3)^2 = 0 \ne 4$. The point $(-2, 3)$ is inside the circle, so there is no tangent
-from this point to the circle. The point must lie **on** the circle for a tangent to exist.
+From this point to the circle. The point must lie **on** the circle for a tangent to exist.
 
 ### Intersection of Line and Circle
 
 Substitute the line equation into the circle equation and solve the resulting quadratic. The
-discriminant of the resulting quadratic tells you:
+Discriminant of the resulting quadratic tells you:
 
 - $\Delta > 0$: two intersection points (secant)
 - $\Delta = 0$: one intersection point (tangent)
@@ -541,11 +541,11 @@ discriminant of the resulting quadratic tells you:
 **Example:** Find where the line $y = 2x + 1$ intersects the circle $x^2 + y^2 = 10$.
 
 $$
-x^2 + (2x + 1)^2 = 10
+X^2 + (2x + 1)^2 = 10
 $$
 
 $$
-x^2 + 4x^2 + 4x + 1 = 10
+X^2 + 4x^2 + 4x + 1 = 10
 $$
 
 $$
@@ -565,19 +565,19 @@ Points of intersection: $(1, 3)$ and $\left(-\dfrac{9}{5}, -\dfrac{13}{5}\right)
 The perpendicular distance from $(x_0, y_0)$ to the line $ax + by + c = 0$ is:
 
 $$
-d = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}
+D = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}
 $$
 
 **Proof.** Let $P = (x_0, y_0)$ and let $Q$ be the foot of the perpendicular from $P$ to the line.
-The line through $P$ perpendicular to $ax + by + c = 0$ has direction $(a, b)$, so its parametric
-form is $(x_0 + at, y_0 + bt)$. Substituting into the line equation:
-$a(x_0 + at) + b(y_0 + bt) + c = 0$, giving $t = -\frac{ax_0 + by_0 + c}{a^2 + b^2}$. The distance
-is $|t|\sqrt{a^2 + b^2} = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$. $\blacksquare$
+The line through $P$ perpendicular to $ax + by + c = 0$ has direction $(a, b)$So its parametric
+Form is $(x_0 + at, y_0 + bt)$. Substituting into the line equation:
+$a(x_0 + at) + b(y_0 + bt) + c = 0$Giving $t = -\frac{ax_0 + by_0 + c}{a^2 + b^2}$. The distance
+Is $|t|\sqrt{a^2 + b^2} = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}$. $\blacksquare$
 
 **Example:** Find the distance from $(3, 2)$ to the line $4x + 3y - 5 = 0$.
 
 $$
-d = \frac{|12 + 6 - 5|}{\sqrt{16 + 9}} = \frac{13}{5}
+D = \frac{|12 + 6 - 5|}{\sqrt{16 + 9}} = \frac{13}{5}
 $$
 
 ---
@@ -590,7 +590,7 @@ A line through point $\mathbf{'\{'}a{'\}'} = (a_1, a_2, a_3)$ with direction vec
 $\mathbf{'\{'}d{'\}'} = (d_1, d_2, d_3)$ has parametric equations:
 
 $$
-x = a_1 + td_1, \quad y = a_2 + td_2, \quad z = a_3 + td_3
+X = a_1 + td_1, \quad y = a_2 + td_2, \quad z = a_3 + td_3
 $$
 
 In vector form: $\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + t\mathbf{'\{'}d{'\}'}$.
@@ -601,7 +601,7 @@ $$
 \mathbf{'\{'}r{'\}'} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix}
 $$
 
-Parametrically: $x = 1 + 3t$, $y = 2 - t$, $z = -1 + 4t$.
+Parametrically: $x = 1 + 3t$$y = 2 - t$$z = -1 + 4t$.
 
 ### Skew, Parallel, and Intersecting Lines
 
@@ -609,7 +609,7 @@ Two lines in 3D can be:
 
 - **Parallel**: direction vectors are scalar multiples
 - **Intersecting**: there exists a common point (same values of $s$ and $t$ satisfy all three
-  coordinate equations simultaneously)
+ coordinate equations simultaneously)
 - **Skew**: neither parallel nor intersecting
 
 **Example:** Determine whether the following lines intersect:
@@ -626,23 +626,23 @@ $$s = 1 - t \quad (2)$$
 
 $$2 - s = -1 + 3t \quad (3)$$
 
-From (2): $s = 1 - t$. Substitute into (1): $1 + 2(1 - t) = 3 + t$, so $3 - 2t = 3 + t$, giving
-$t = 0$, $s = 1$.
+From (2): $s = 1 - t$. Substitute into (1): $1 + 2(1 - t) = 3 + t$So $3 - 2t = 3 + t$Giving
+$t = 0$$s = 1$.
 
-Check (3): $2 - 1 = -1 + 0$, i.e., $1 = -1$. This is false, so the lines are **skew**.
+Check (3): $2 - 1 = -1 + 0$I.e., $1 = -1$. This is false, so the lines are **skew**.
 
 ### Distance from a Point to a Line in 3D
 
 The shortest distance from point $P$ to the line through $A$ with direction $\mathbf{'\{'}d{'\}'}$ is:
 
 $$
-d = \frac{|\overrightarrow{AP} \times \mathbf{'\{'}d{'\}'}|}{|\mathbf{'\{'}d{'\}'}|}
+D = \frac{|\overrightarrow{AP} \times \mathbf{'\{'}d{'\}'}|}{|\mathbf{'\{'}d{'\}'}|}
 $$
 
 **Example:** Find the perpendicular distance from the point $(1, 2, 3)$ to the line
 $\mathbf{'\{'}r{'\}'} = (0, 1, -1) + t(2, -1, 3)$.
 
-$\overrightarrow{AP} = (1, 1, 4)$, $\mathbf{'\{'}d{'\}'} = (2, -1, 3)$.
+$\overrightarrow{AP} = (1, 1, 4)$$\mathbf{'\{'}d{'\}'} = (2, -1, 3)$.
 
 $$
 \overrightarrow{AP} \times \mathbf{'\{'}d{'\}'} = \begin{pmatrix} 1 \cdot 3 - 4 \cdot (-1) \\ 4 \cdot 2 - 1 \cdot 3 \\ 1 \cdot (-1) - 1 \cdot 2 \end{pmatrix} = \begin{pmatrix} 7 \\ 5 \\ -3 \end{pmatrix}
@@ -657,7 +657,7 @@ $$
 $$
 
 $$
-d = \frac{\sqrt{83}}{\sqrt{14}} = \sqrt{\frac{83}{14}} \approx 2.435
+D = \frac{\sqrt{83}}{\sqrt{14}} = \sqrt{\frac{83}{14}} \approx 2.435
 $$
 
 ### Distance Between Two Skew Lines
@@ -666,15 +666,15 @@ The shortest distance between two skew lines $\mathbf{'\{'}r{'\}'}_1 = \mathbf{'
 $\mathbf{'\{'}r{'\}'}_2 = \mathbf{'\{'}a{'\}'}_2 + s\mathbf{'\{'}d{'\}'}_2$ is:
 
 $$
-d = \frac{|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)|}{|\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2|}
+D = \frac{|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)|}{|\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2|}
 $$
 
 **Example:** Find the shortest distance between the skew lines $\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$
-and $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
+And $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
 
 $\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1 = (-1, 0, 1)$.
 
-$\mathbf{'\{'}d{'\}'}_1 = (1, 2, 0)$, $\mathbf{'\{'}d{'\}'}_2 = (0, 1, 1)$.
+$\mathbf{'\{'}d{'\}'}_1 = (1, 2, 0)$$\mathbf{'\{'}d{'\}'}_2 = (0, 1, 1)$.
 
 $$
 \mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 2 \cdot 1 - 0 \cdot 1 \\ 0 \cdot 0 - 1 \cdot 1 \\ 1 \cdot 1 - 2 \cdot 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}
@@ -689,7 +689,7 @@ $$
 $$
 
 $$
-d = \frac{|-1|}{\sqrt{6}} = \frac{1}{\sqrt{6}} = \frac{\sqrt{6}}{6}
+D = \frac{|-1|}{\sqrt{6}} = \frac{1}{\sqrt{6}} = \frac{\sqrt{6}}{6}
 $$
 
 ---
@@ -697,41 +697,41 @@ $$
 ## Common Pitfalls
 
 1. **Degrees vs radians:** Always check which units are being used. Calculus requires radians. If a
-   question gives angles in degrees, convert before differentiating or integrating.
+ question gives angles in degrees, convert before differentiating or integrating.
 
-2. **Forgetting to check the domain:** When solving $\cos x = -\dfrac{2}{3}$, there are two
-   solutions in $[0, 2\pi)$: one in the second quadrant and one in the third quadrant.
+2. **Forgetting to check the domain:** When solving $\cos x = -\dfrac{2}{3}$There are two
+ solutions in $[0, 2\pi)$: one in the second quadrant and one in the third quadrant.
 
-3. **Sign errors in the wave function:** When writing $a\sin x + b\cos x = R\sin(x + \alpha)$,
-   ensure $\alpha$ has the correct sign. The quadrant of $\alpha$ depends on the signs of $a$ and
-   $b$.
+3. **Sign errors in the wave function:** When writing $a\sin x + b\cos x = R\sin(x + \alpha)$
+ ensure $\alpha$ has the correct sign. The quadrant of $\alpha$ depends on the signs of $a$ and
+ $b$.
 
 4. **Incorrectly completing the square for circles:** Remember to add the constant terms to both
-   sides. For $x^2 + y^2 - 6x + 4y - 12 = 0$, you add 9 and 4 to both sides.
+ sides. For $x^2 + y^2 - 6x + 4y - 12 = 0$You add 9 and 4 to both sides.
 
 5. **Assuming lines in 3D always intersect:** Always check all three coordinates when testing for
-   intersection. Even if two coordinates match, the third may not.
+ intersection. Even if two coordinates match, the third may not.
 
-6. **Dividing by zero in trig equations:** When you factor and divide by $\cos x$, $\sin x$, or
-   $\tan x$, you lose solutions. Always consider the case where the factor equals zero separately.
+6. **Dividing by zero in trig equations:** When you factor and divide by $\cos x$$\sin x$Or
+ $\tan x$You lose solutions. Always consider the case where the factor equals zero separately.
 
 7. **Using the wrong form of $\cos 2A$:** All three forms are equivalent, but using the wrong one
-   for the given context makes the algebra much harder.
+ for the given context makes the algebra much harder.
 
-8. **Confusing the ambiguous case of the sine rule:** When $\sin A = k$ where $0 < k < 1$, there are
-   two possible angles ($A$ and $180° - A$). Both may or may not be valid in the triangle. Always
-   check the sum of angles.
+8. **Confusing the ambiguous case of the sine rule:** When $\sin A = k$ where $0 < k < 1$There are
+ two possible angles ($A$ and $180° - A$). Both may or may not be valid in the triangle. Always
+ check the sum of angles.
 
 9. **Forgetting that $R$ in the wave function is always positive:** $R = \sqrt{a^2 + b^2}$ is
-   defined as the positive square root. The maximum of $a\sin x + b\cos x$ is $R$ and the minimum is
-   $-R$.
+ defined as the positive square root. The maximum of $a\sin x + b\cos x$ is $R$ and the minimum is
+ $-R$.
 
 ---
 
 ## Practice Questions
 
 1. Express $5\sin\theta - 12\cos\theta$ in the form $R\sin(\theta - \alpha)$ and find its maximum
-   value.
+ value.
 
 2. Solve $\cos 2x = 1 - 3\sin x$ for $0 \leq x < 2\pi$.
 
@@ -740,32 +740,40 @@ $$
 4. Find the equation of the tangent to $x^2 + y^2 + 4x - 6y + 9 = 0$ at the point $(-2, 3)$.
 
 5. A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm{}^2$. Find the perimeter of
-   the sector.
+ the sector.
 
 6. Prove that $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$.
 
 7. Determine whether the lines $\mathbf{'\{'}r{'\}'} = (1, 2, 0) + s(1, -1, 2)$ and
-   $\mathbf{'\{'}r{'\}'} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
+ $\mathbf{'\{'}r{'\}'} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
 
 8. Find the minimum value of $3\cos x + 4\sin x$ and the smallest positive value of $x$ at which it
-   occurs.
+ occurs.
 
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
-   $\mathbf{'\{'}r{'\}'} = (0, 1, -1) + t(2, -1, 3)$.
+ $\mathbf{'\{'}r{'\}'} = (0, 1, -1) + t(2, -1, 3)$.
 
-10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$ (there may be two solutions).
+10. In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$ (there may be two solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 
 12. Find the shortest distance between the skew lines $\mathbf{'\{'}r{'\}'} = (1, 0, 0) + s(1, 2, 0)$ and
-    $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
+ $\mathbf{'\{'}r{'\}'} = (0, 0, 1) + t(0, 1, 1)$.
 
 13. Find the angle between the lines $\mathbf{'\{'}r{'\}'} = (0, 0, 0) + s(1, 2, -1)$ and
-    $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
+ $\mathbf{'\{'}r{'\}'} = (1, 1, 0) + t(2, -1, 3)$.
 
-14. Find the area of triangle $ABC$ given $a = 10$, $b = 8$, $c = 6$.
+14. Find the area of triangle $ABC$ given $a = 10$$b = 8$$c = 6$.
 
 15. The line $y = mx + 7$ is tangent to the circle $x^2 + y^2 - 4x + 2y - 20 = 0$. Find the possible
-    values of $m$.
+ values of $m$.
 
 16. Express $\cos 4\theta$ in terms of $\cos\theta$ using double angle formulae.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

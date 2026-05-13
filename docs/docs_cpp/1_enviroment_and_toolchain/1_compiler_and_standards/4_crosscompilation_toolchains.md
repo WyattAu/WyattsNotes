@@ -14,33 +14,33 @@ Host**) that is intended to execute on a different architecture or operating sys
 
 This is distinct from native compilation, where the Build Host and Target are identical.
 Cross-compilation is standard practice for embedded systems, mobile development, and CI/CD pipelines
-where build agents (often Linux x86_64) must generate binaries for Windows, macOS, or ARM devices.
+Where build agents (often Linux x86_64) must generate binaries for Windows, macOS, or ARM devices.
 
 ## The Architecture of a Cross-Toolchain
 
 A functional cross-compilation environment requires three distinct components synchronized to the
-specific target.
+Specific target.
 
 ### 1. The Cross-Compiler
 
-A compiler binary capable of generating machine code for a different architecture. It is typically
-named using a **Target Triple** to distinguish it from the native compiler.
+A compiler binary capable of generating machine code for a different architecture. It is 
+Named using a **Target Triple** to distinguish it from the native compiler.
 
 **The Target Triple Format:** `<arch>-<vendor>-<sys>-<abi>`
 
 The target triple is standardized by LLVM and GCC as a unique identifier for a compilation target.
 Every binary in the cross-toolchain is prefixed with this triple to avoid collision with the host
-toolchain.
+Toolchain.
 
 ### 2. The Sysroot
 
 The compiler cannot use the headers (`/usr/include`) or libraries (`/usr/lib`) of the Build Host, as
-they correspond to the wrong architecture. The **Sysroot** is a directory structure that mirrors the
-root (`/`) of the Target system, containing:
+They correspond to the wrong architecture. The **Sysroot** is a directory structure that mirrors the
+Root (`/`) of the Target system, containing:
 
 - **Target Headers:** Kernel headers and Standard Library headers (glibc/musl).
-- **Target Libraries:** Pre-compiled shared objects (`.so`, `.dll`) and static archives (`.a`,
-  `.lib`) for the target architecture.
+- **Target Libraries:** Pre-compiled shared objects (`.so``.dll`) and static archives (`.a`
+ `.lib`) for the target architecture.
 
 ### 3. The Binutils
 
@@ -55,20 +55,20 @@ Support tools required for linking and object manipulation, also prefixed with t
 
 The following table lists target triples commonly encountered in cross-compilation.
 
-| Target Platform             | Target Triple           | Notes                                       |
+| Target Platform | Target Triple | Notes |
 | :-------------------------- | :---------------------- | :------------------------------------------ |
-| Linux x86_64 (native)       | `x86_64-linux-gnu`      | Standard Linux desktop/server               |
-| Linux ARM64 (AArch64)       | `aarch64-linux-gnu`     | NVIDIA Jetson, AWS Graviton, Raspberry Pi 5 |
-| Linux ARM32 (Hard Float)    | `arm-linux-gnueabihf`   | Raspberry Pi 3/4 (32-bit mode)              |
-| Linux RISC-V 64             | `riscv64-linux-gnu`     | SiFive boards, RISC-V development           |
-| Windows x86_64 (MinGW)      | `x86_64-w64-mingw32`    | Cross-compiling Windows from Linux          |
-| Windows ARM64 (MinGW)       | `aarch64-w64-mingw32`   | Windows on ARM                              |
-| Android ARM64               | `aarch64-linux-android` | Android NDK (API level appended)            |
-| macOS ARM64 (Apple Silicon) | `arm64-apple-darwin22`  | Requires Xcode toolchain on macOS           |
-| macOS x86_64                | `x86_64-apple-darwin22` | Intel Macs                                  |
-| FreeRTOS ARM Cortex-M4      | `arm-none-eabi`         | Bare metal, no OS                           |
-| FreeRTOS ARM Cortex-M7      | `arm-none-eabi`         | Bare metal (same triple, different `-mcpu`) |
-| Embedded RISC-V             | `riscv64-unknown-elf`   | Bare metal RISC-V                           |
+| Linux x86_64 (native) | `x86_64-linux-gnu` | Standard Linux desktop/server |
+| Linux ARM64 (AArch64) | `aarch64-linux-gnu` | NVIDIA Jetson, AWS Graviton, Raspberry Pi 5 |
+| Linux ARM32 (Hard Float) | `arm-linux-gnueabihf` | Raspberry Pi 3/4 (32-bit mode) |
+| Linux RISC-V 64 | `riscv64-linux-gnu` | SiFive boards, RISC-V development |
+| Windows x86_64 (MinGW) | `x86_64-w64-mingw32` | Cross-compiling Windows from Linux |
+| Windows ARM64 (MinGW) | `aarch64-w64-mingw32` | Windows on ARM |
+| Android ARM64 | `aarch64-linux-android` | Android NDK (API level appended) |
+| macOS ARM64 (Apple Silicon) | `arm64-apple-darwin22` | Requires Xcode toolchain on macOS |
+| macOS x86_64 | `x86_64-apple-darwin22` | Intel Macs |
+| FreeRTOS ARM Cortex-M4 | `arm-none-eabi` | Bare metal, no OS |
+| FreeRTOS ARM Cortex-M7 | `arm-none-eabi` | Bare metal (same triple, different `-mcpu`) |
+| Embedded RISC-V | `riscv64-unknown-elf` | Bare metal RISC-V |
 
 ### Clang's `-target` Flag
 
@@ -87,16 +87,16 @@ clang++ -target x86_64-w64-mingw32 --sysroot=/usr/x86_64-w64-mingw32 main.cpp
 ```
 
 This is fundamentally different from GCC, which requires a separate binary for each target
-(`aarch64-linux-gnu-g++`, `x86_64-w64-mingw32-g++`). Clang's approach simplifies CI/CD pipelines
-because a single Clang installation can target any architecture.
+(`aarch64-linux-gnu-g++``x86_64-w64-mingw32-g++`). Clang's approach simplifies CI/CD pipelines
+Because a single Clang installation can target any architecture.
 
 ## CMake Toolchain Files
 
-In modern C++, passing dozens of compiler flags (`--sysroot`, `-target`) via the command line is
-fragile and unmaintainable. The industry standard is the **CMake Toolchain File**.
+In modern C++, passing dozens of compiler flags (`--sysroot``-target`) via the command line is
+Fragile and unmaintainable. The industry standard is the **CMake Toolchain File**.
 
-A toolchain file is a CMake script (typically ending in `.cmake`) that presets compilation variables
-before the project configuration step.
+A toolchain file is a CMake script ( ending in `.cmake`) that presets compilation variables
+Before the project configuration step.
 
 ### Anatomy of a Toolchain File
 
@@ -170,7 +170,7 @@ cmake --build build-win
 ### Scenario 1: Linux Host $\to$ Windows Target (MinGW-w64)
 
 This is the most common CI/CD scenario, allowing Linux servers to build Windows `.exe` artifacts
-without needing a Windows license or VM.
+Without needing a Windows license or VM.
 
 **Prerequisites (Debian/Ubuntu):**
 
@@ -178,9 +178,9 @@ without needing a Windows license or VM.
 sudo apt install mingw-w64
 ```
 
-**Implementation Details:** MinGW-w64 provides a complete sysroot usually located at
+**Implementation Details:** MinGW-w64 provides a complete sysroot located at
 `/usr/x86_64-w64-mingw32`. When using `std::thread` in this environment, ensure the POSIX threading
-model is selected if the Win32 threading model is insufficient, or link against `mcfgthread` for
+Model is selected if the Win32 threading model is insufficient, or link against `mcfgthread` for
 C++11 threading compliance.
 
 ### Scenario 2: x86_64 Host $\to$ ARM64 Linux Target
@@ -206,7 +206,7 @@ set(CMAKE_SYSROOT /usr/aarch64-linux-gnu)
 ### Scenario 3: Linux Host $\to$ RISC-V 64 Target
 
 RISC-V is an open ISA gaining traction in embedded and HPC. Cross-compilation setup follows the same
-pattern.
+Pattern.
 
 **Prerequisites (Debian/Ubuntu):**
 
@@ -229,12 +229,12 @@ set(CMAKE_SYSROOT /usr/riscv64-linux-gnu)
 ## Handling Dependencies (Vcpkg)
 
 Managing 3rd-party libraries (e.g., Boost, fmt, nlohmann_json) during cross-compilation is complex
-because the libraries themselves must be compiled for the target.
+Because the libraries themselves must be compiled for the target.
 
 **Vcpkg** handles this via "Triplet" files.
 
 1. **Select the Triplet:** Vcpkg ships with community triplets like `x64-mingw-dynamic` or
-   `arm64-linux`.
+ `arm64-linux`.
 2. **Install Dependencies for Target:**
 
    ```bash
@@ -250,7 +250,7 @@ because the libraries themselves must be compiled for the target.
    ```
 
 _Note: When using Vcpkg, you often do not need to write a manual CMake toolchain file; Vcpkg
-generates one dynamically based on the triplet._
+Generates one dynamically based on the triplet._
 
 ## Verification
 
@@ -273,12 +273,12 @@ file ./build-arm/app
 **Expected Output:** `ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV)`
 
 If the output indicates `x86-64` and `ELF` (when targeting ARM or Windows), the cross-compilation
-configuration failed, and the host compiler was mostly likely used by mistake.
+Configuration failed, and the host compiler was mostly likely used by mistake.
 
 ## Sysroot Configuration
 
 The sysroot is the single most critical component of a cross-compilation environment. An incorrectly
-configured sysroot produces binaries that cannot execute on the target.
+Configured sysroot produces binaries that cannot execute on the target.
 
 ### What a Sysroot Contains
 
@@ -306,7 +306,7 @@ A sysroot is a directory that mirrors the root filesystem of the target:
 ### Creating a Sysroot from a Target Device
 
 For embedded targets (Raspberry Pi, Jetson), the cleanest approach is to copy the target's
-filesystem:
+Filesystem:
 
 ```bash
 # On the target device (Raspberry Pi):
@@ -338,22 +338,22 @@ clang++ -target aarch64-linux-gnu --sysroot=/sysroots/raspberry-pi-arm64 main.cp
 ```
 
 The `--sysroot` flag instructs the compiler to search for headers and libraries under the specified
-directory instead of the host system's `/usr/include` and `/usr/lib`.
+Directory instead of the host system's `/usr/include` and `/usr/lib`.
 
 ### Sysroot Best Practices
 
 1. **Keep the sysroot immutable.** Never modify the sysroot in-place. If you need to add libraries,
-   install them into a separate overlay directory and use `-L` flags to point the linker there.
+ install them into a separate overlay directory and use `-L` flags to point the linker there.
 2. **Match the sysroot to the target OS version.** A sysroot from Ubuntu 22.04 links against
-   `glibc 2.35`. If the target runs Ubuntu 20.04 (glibc 2.31), symbols like `statx` may be missing
-   at runtime.
+ `glibc 2.35`. If the target runs Ubuntu 20.04 (glibc 2.31), symbols like `statx` may be missing
+ at runtime.
 3. **Verify the dynamic linker.** The `INTERP` segment in the ELF binary must point to a dynamic
-   linker that exists on the target. Use `readelf -l build/app | grep INTERP` to verify.
+ linker that exists on the target. Use `readelf -l build/app | grep INTERP` to verify.
 
 ## QEMU Emulation for Testing
 
 Cross-compiled binaries cannot run natively on the build host. **QEMU user-mode emulation** allows
-running target-architecture binaries on the host by translating system calls.
+Running target-architecture binaries on the host by translating system calls.
 
 ### Installing QEMU
 
@@ -399,17 +399,17 @@ cd build-arm && ctest --output-on-failure
 ### Limitations of QEMU Emulation
 
 - **Performance:** QEMU user-mode is 5-10x slower than native execution. Full system emulation
-  (`qemu-system-*`) is 50-100x slower.
+ (`qemu-system-*`) is 50-100x slower.
 - **Syscall compatibility:** Some syscalls (e.g., advanced networking, specific `ioctl` calls) may
-  not be fully emulated.
+ not be fully emulated.
 - **Signal handling:** Signal semantics differ between emulated and native environments.
 - **Floating point:** NEON (ARM SIMD) instructions are emulated in software and may produce slightly
-  different results than hardware.
+ different results than hardware.
 
 ## Android NDK Cross-Compilation
 
 The Android NDK provides a complete cross-compilation toolchain for building native C++ code
-targeting Android devices.
+Targeting Android devices.
 
 ### NDK Toolchain File
 
@@ -425,20 +425,20 @@ cmake -S . -B build-android \
 
 ### NDK ABI Options
 
-| ABI           | Architecture | Devices                              |
+| ABI | Architecture | Devices |
 | ------------- | ------------ | ------------------------------------ |
-| `armeabi-v7a` | ARM 32-bit   | Older Android devices                |
-| `arm64-v8a`   | ARM 64-bit   | Modern Android devices (recommended) |
-| `x86`         | x86 32-bit   | Android emulators (older)            |
-| `x86_64`      | x86 64-bit   | Android emulators                    |
+| `armeabi-v7a` | ARM 32-bit | Older Android devices |
+| `arm64-v8a` | ARM 64-bit | Modern Android devices (recommended) |
+| `x86` | x86 32-bit | Android emulators (older) |
+| `x86_64` | x86 64-bit | Android emulators |
 
 ### NDK STL Options
 
-| STL          | Description     | Use Case                              |
+| STL | Description | Use Case |
 | ------------ | --------------- | ------------------------------------- |
-| `c++_shared` | libc++ (shared) | Default, recommended for most apps    |
+| `c++_shared` | libc++ (shared) | Default, recommended for most apps |
 | `c++_static` | libc++ (static) | Standalone executables, NDK-only apps |
-| `none`       | No C++ STL      | Pure C projects                       |
+| `none` | No C++ STL | Pure C projects |
 
 ```cmake
 # In CMakeLists.txt -- verify the STL at configure time
@@ -452,7 +452,7 @@ endif()
 ## Embedded Target: ARM Cortex-M (Bare Metal)
 
 Bare-metal cross-compilation targets microcontrollers without an operating system. This requires a
-different toolchain and approach.
+Different toolchain and approach.
 
 ### Installing the ARM Embedded Toolchain
 
@@ -548,8 +548,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -fno-exceptions -fno-rtti")
 ## CMake Cross-Compilation with Conan
 
 Conan provides an alternative to manual toolchain files for cross-compilation. Conan's profile
-system handles the toolchain selection, standard library configuration, and dependency resolution
-for the target platform.
+System handles the toolchain selection, standard library configuration, and dependency resolution
+For the target platform.
 
 ### Conan Cross-Compilation Workflow
 
@@ -567,7 +567,7 @@ cmake --build --preset conan-release
 ```
 
 Conan generates a `CMakePresets.json` that contains the toolchain file, build directory, and cache
-variables. This eliminates the need to write a manual toolchain file when using Conan.
+Variables. This eliminates the need to write a manual toolchain file when using Conan.
 
 ### Conan Profile for ARM64 Cross-Compilation
 
@@ -592,12 +592,12 @@ Conan resolves the dependency graph for the target architecture automatically.
 ## Cross-Compiling Static Libraries vs Shared Libraries
 
 The choice between static and shared libraries has different implications for cross-compilation than
-for native compilation.
+For native compilation.
 
 ### Static Libraries (Recommended for Embedded)
 
 Static libraries (`.a`) are architecture-specific but have no runtime dependency. They are the
-default choice for embedded targets and bare-metal environments.
+Default choice for embedded targets and bare-metal environments.
 
 ```cmake
 # Force static linking in the toolchain
@@ -607,8 +607,8 @@ set(BUILD_SHARED_LIBS OFF)
 ### Shared Libraries (Recommended for Linux Targets)
 
 Shared libraries (`.so`) require a matching dynamic linker on the target. When cross-compiling, the
-shared libraries must be built for the target architecture, and the `RPATH` must be set correctly so
-the executable can find them at runtime.
+Shared libraries must be built for the target architecture, and the `RPATH` must be set correctly so
+The executable can find them at runtime.
 
 ```cmake
 # Set RPATH for the target filesystem
@@ -629,51 +629,51 @@ find build/ -name "*.so" -o -name "*.a" | xargs file | grep -v "x86-64"
 ## Common Pitfalls
 
 1. **Host vs. Build vs. Target confusion:** These three terms describe different roles:
-   - **Host:** The machine running the compiler (e.g., x86_64 Linux).
-   - **Build:** The machine running the build system (usually same as Host).
-   - **Target:** The machine that will execute the binary (e.g., ARM64).
+ - **Host:** The machine running the compiler (e.g., x86_64 Linux).
+ - **Build:** The machine running the build system ( same as Host).
+ - **Target:** The machine that will execute the binary (e.g., ARM64).
 
-   Confusing these leads to using the host compiler instead of the cross-compiler, producing
-   binaries that run on the wrong architecture.
+ Confusing these leads to using the host compiler instead of the cross-compiler, producing
+ binaries that run on the wrong architecture.
 
 2. **Missing `CMAKE_SYSTEM_NAME`:** If `CMAKE_SYSTEM_NAME` is not set, CMake assumes native
-   compilation and will use `find_program` to locate the host compiler, ignoring your cross-compiler
-   settings. Always set `CMAKE_SYSTEM_NAME` in your toolchain file.
+ compilation and will use `find_program` to locate the host compiler, ignoring your cross-compiler
+ settings. Always set `CMAKE_SYSTEM_NAME` in your toolchain file.
 
 3. **Wrong dynamic linker:** On Linux targets, the dynamic linker (ld-linux) must match the target
-   architecture. If you accidentally link against the host's `ld-linux-x86-64.so.2` in an ARM
-   binary, execution will fail with `exec format error`. Use `file` to verify and `readelf -l` to
-   inspect the `INTERP` program header.
+ architecture. If you accidentally link against the host's `ld-linux-x86-64.so.2` in an ARM
+ binary, execution will fail with `exec format error`. Use `file` to verify and `readelf -l` to
+ inspect the `INTERP` program header.
 
 4. **Forgetting `CMAKE_FIND_ROOT_PATH_MODE`:** Without setting these variables, `find_package()` and
-   `find_library()` will search the host filesystem, potentially finding host-architecture
-   libraries. Set them to `ONLY` for libraries and includes, and `NEVER` for programs.
+ `find_library()` will search the host filesystem, potentially finding host-architecture
+ libraries. Set them to `ONLY` for libraries and includes, and `NEVER` for programs.
 
 5. **Hardcoded paths:** Paths like `/usr/include` in source code or build scripts will resolve to
-   the host filesystem during cross-compilation. Use CMake's `find_path()` and generator expressions
-   instead of hardcoded includes.
+ the host filesystem during cross-compilation. Use CMake's `find_path()` and generator expressions
+ instead of hardcoded includes.
 
 6. **Sysroot version mismatch:** Building against a sysroot from Ubuntu 22.04 (glibc 2.35) and
-   deploying to Ubuntu 20.04 (glibc 2.31) causes `version GLIBC_2.34 not found` errors at runtime.
-   The sysroot's C library version must be less than or equal to the target's C library version.
+ deploying to Ubuntu 20.04 (glibc 2.31) causes `version GLIBC_2.34 not found` errors at runtime.
+ The sysroot's C library version must be less than or equal to the target's C library version.
 
 7. **QEMU testing false negatives:** Some tests may pass under QEMU but fail on real hardware due to
-   differences in FPU rounding, timing behavior, or peripheral access. Always validate on physical
-   hardware before shipping embedded firmware.
+ differences in FPU rounding, timing behavior, or peripheral access. Always validate on physical
+ hardware before shipping embedded firmware.
 
 8. **Not using `CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY`:** For bare-metal targets
-   (`CMAKE_SYSTEM_NAME Generic`), CMake's default `try_compile` attempts to link an executable,
-   which fails because there is no OS runtime. Setting `CMAKE_TRY_COMPILE_TARGET_TYPE` to
-   `STATIC_LIBRARY` avoids this by only compiling to a `.a` file during configuration checks.
+ (`CMAKE_SYSTEM_NAME Generic`), CMake's default `try_compile` attempts to link an executable,
+ which fails because there is no OS runtime. Setting `CMAKE_TRY_COMPILE_TARGET_TYPE` to
+ `STATIC_LIBRARY` avoids this by only compiling to a `.a` file during configuration checks.
 
 9. **Missing `--gc-sections` for embedded:** Embedded targets have limited flash. Without
-   `-ffunction-sections -fdata-sections` at compile time and `--gc-sections` at link time, the
-   linker includes every function and data object from every linked translation unit, wasting
-   significant flash space.
+ `-ffunction-sections -fdata-sections` at compile time and `--gc-sections` at link time, the
+ linker includes every function and data object from every linked translation unit, wasting
+ significant flash space.
 
 10. **Using `find_package` without `CMAKE_FIND_ROOT_PATH`:** When cross-compiling, `find_package`
-    searches the host system by default. If you need to find a package installed in the sysroot, set
-    `CMAKE_PREFIX_PATH` to the sysroot's install prefix:
+ searches the host system by default. If you need to find a package installed in the sysroot, set
+ `CMAKE_PREFIX_PATH` to the sysroot's install prefix:
 
     ```cmake
     set(CMAKE_PREFIX_PATH ${CMAKE_SYSROOT}/usr)
@@ -729,7 +729,15 @@ Use the following checklist to diagnose cross-compilation failures:
 
 - [Installing a Compiler](1_installing_compiler.md) -- Setting up native and cross-compilers
 - [Standard Library Implementation](3_standard_library_implementation.md) -- Choosing the right
-  standard library for the target
+ standard library for the target
 - [Linker Configuration](5_linker_configuration.md) -- Cross-linking considerations
 - [vcpkg](../3_dependency_management/3_vcpkg.md) -- Cross-compiling dependencies with triplets
 - [Conan](../3_dependency_management/4_conan.md) -- Cross-compilation with Conan profiles
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

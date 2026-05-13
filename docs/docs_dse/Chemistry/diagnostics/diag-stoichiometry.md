@@ -235,7 +235,7 @@ $$m = 0.01250 \times 277.9 = 3.474 \text{ g}$$
 
 $$\%\text{ purity} = \frac{3.474}{5.00} \times 100\% = 69.5\%$$
 
-(c) The reaction requires $H^{+}$ ions as a reactant (see the equation). Without an acidic medium, $MnO_{4}^{-}$ would be reduced to $MnO_{2}$ instead of $Mn^{2+}$, and the stoichiometry would change. The acid also prevents the formation of insoluble $MnO_{2}$.
+(c) The reaction requires $H^{+}$ ions as a reactant (see the equation). Without an acidic medium, $MnO_{4}^{-}$ would be reduced to $MnO_{2}$ instead of $Mn^{2+}$And the stoichiometry would change. The acid also prevents the formation of insoluble $MnO_{2}$.
 
 ---
 
@@ -323,7 +323,7 @@ $$M(C_{2}H_{5}OH) = 2 \times 12.0 + 6 \times 1.0 + 16.0 = 46.0 \text{ g/mol}$$
 
 $$n(C_{2}H_{5}OH) = \frac{8.00}{46.0} = 0.174 \text{ mol}$$
 
-From the equation, the mole ratio is 1:1. Since $0.174 \lt 0.250$, **ethanol** is the limiting reagent.
+From the equation, the mole ratio is 1:1. Since $0.174 \lt 0.250$**ethanol** is the limiting reagent.
 
 (c) Theoretical moles of ester = moles of limiting reagent = 0.174 mol
 

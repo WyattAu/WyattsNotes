@@ -13,7 +13,7 @@ slug: annotations-reflection
 ### @Override
 
 `@Override` (JDK 5) marks a method as intending to override a method from a superclass or implement
-a method from an interface. The compiler verifies the declaration actually overrides something:
+A method from an interface. The compiler verifies the declaration actually overrides something:
 
 ```java
 public class Dog {
@@ -30,7 +30,7 @@ public class Dog {
 ```
 
 On interfaces (JDK 6+), `@Override` on a method declaration indicates the method is intended to
-implement a method from a super-interface:
+Implement a method from a super-interface:
 
 ```java
 public interface Animal {
@@ -44,12 +44,12 @@ public interface LoudAnimal extends Animal {
 ```
 
 Always use `@Override` on every overriding method. It catches typos and signature mismatches at
-compile time.
+Compile time.
 
 ### @Deprecated
 
 `@Deprecated` (JDK 5) marks a program element as obsolete. The compiler emits a warning when
-deprecated elements are used or overridden:
+Deprecated elements are used or overridden:
 
 ```java
 public class LegacyService {
@@ -76,14 +76,14 @@ Parameters (all optional, added in JDK 9):
 
 `@SuppressWarnings` (JDK 5) suppresses compiler warnings at the declaration level. Common keys:
 
-| Key             | Suppresses                                           |
+| Key | Suppresses |
 | --------------- | ---------------------------------------------------- |
-| `"unchecked"`   | Unchecked casts and raw type usage                   |
-| `"deprecation"` | Use of deprecated APIs                               |
-| `"rawtypes"`    | Raw type usage (subset of unchecked)                 |
-| `"unused"`      | Unused variables, methods, parameters                |
-| `"serial"`      | Missing `serialVersionUID` in Serializable classes   |
-| `"varargs"`     | Heap pollution from varargs with non-reifiable types |
+| `"unchecked"` | Unchecked casts and raw type usage |
+| `"deprecation"` | Use of deprecated APIs |
+| `"rawtypes"` | Raw type usage (subset of unchecked) |
+| `"unused"` | Unused variables, methods, parameters |
+| `"serial"` | Missing `serialVersionUID` in Serializable classes |
+| `"varargs"` | Heap pollution from varargs with non-reifiable types |
 
 Apply at the narrowest scope possible:
 
@@ -130,32 +130,32 @@ public interface Broken {
 ```
 
 The annotation is optional (any interface with one abstract method is a functional interface), but
-it makes intent explicit and catches accidental additions.
+It makes intent explicit and catches accidental additions.
 
 ### Other Built-in Annotations
 
 - `@SafeVarargs` (JDK 7) — suppresses heap pollution warnings on varargs methods/constructors. Must
-  be on `final`, `static`, or `private` methods (or constructors). Applying it on non-final instance
-  methods is a compile error (JDK 9+).
+ be on `final``static`Or `private` methods (or constructors). Applying it on non-final instance
+ methods is a compile error (JDK 9+).
 - `@Native` (JDK 8) — marks a `static final` field as a constant that may be referenced from native
-  code. The field must be initialized to a compile-time constant.
+ code. The field must be initialized to a compile-time constant.
 - `@Repeatable` (JDK 8) — covered in [Meta-Annotations](#meta-annotations).
 
 ## Meta-Annotations
 
 Meta-annotations are annotations that apply to other annotation declarations. They control how
-custom annotations behave.
+Custom annotations behave.
 
 ### @Retention
 
 `@Retention` (JDK 5) specifies how long an annotation is retained. Takes a `RetentionPolicy` enum
-value:
+Value:
 
-| Policy    | Retained through                                               |
+| Policy | Retained through |
 | --------- | -------------------------------------------------------------- |
-| `SOURCE`  | Discarded by the compiler (not in `.class` files)              |
-| `CLASS`   | Retained in `.class` files but not loaded at runtime (default) |
-| `RUNTIME` | Available at runtime via reflection                            |
+| `SOURCE` | Discarded by the compiler (not in `.class` files) |
+| `CLASS` | Retained in `.class` files but not loaded at runtime (default) |
+| `RUNTIME` | Available at runtime via reflection |
 
 ```java
 @Retention(RetentionPolicy.SOURCE)
@@ -169,29 +169,29 @@ public @interface Column { String name(); } // readable via reflection
 ```
 
 If you need to read annotations at runtime (for framework processing, serialization config, etc.),
-use `RUNTIME`. If annotations are purely for compile-time checking (lint rules, code generation),
+Use `RUNTIME`. If annotations are purely for compile-time checking (lint rules, code generation),
 `SOURCE` is appropriate. `CLASS` is rarely used directly — it exists for tools that process class
-files without loading them into the JVM.
+Files without loading them into the JVM.
 
 ### @Target
 
 `@Target` (JDK 5) specifies which program elements an annotation can be applied to. Takes
 `ElementType` enum values (combinable with OR):
 
-| ElementType                 | Applies to                                         |
+| ElementType | Applies to |
 | --------------------------- | -------------------------------------------------- |
-| `TYPE`                      | Classes, interfaces, enums, records                |
-| `FIELD`                     | Fields (including enum constants)                  |
-| `METHOD`                    | Methods                                            |
-| `PARAMETER`                 | Method/constructor parameters                      |
-| `CONSTRUCTOR`               | Constructors                                       |
-| `LOCAL_VARIABLE`            | Local variables                                    |
-| `ANNOTATION_TYPE`           | Annotation declarations                            |
-| `PACKAGE`                   | Package declarations (in `package-info.java`)      |
-| `TYPE_PARAMETER` (JDK 8)    | Type parameter declarations                        |
-| `TYPE_USE` (JDK 8)          | Any type use (generics, casts, implements, throws) |
-| `MODULE` (JDK 9)            | Module declarations                                |
-| `RECORD_COMPONENT` (JDK 16) | Record components                                  |
+| `TYPE` | Classes, interfaces, enums, records |
+| `FIELD` | Fields (including enum constants) |
+| `METHOD` | Methods |
+| `PARAMETER` | Method/constructor parameters |
+| `CONSTRUCTOR` | Constructors |
+| `LOCAL_VARIABLE` | Local variables |
+| `ANNOTATION_TYPE` | Annotation declarations |
+| `PACKAGE` | Package declarations (in `package-info.java`) |
+| `TYPE_PARAMETER` (JDK 8) | Type parameter declarations |
+| `TYPE_USE` (JDK 8) | Any type use (generics, casts, implements, throws) |
+| `MODULE` (JDK 9) | Module declarations |
+| `RECORD_COMPONENT` (JDK 16) | Record components |
 
 ```java
 @Target({ElementType.FIELD, ElementType.PARAMETER})
@@ -210,7 +210,7 @@ void process(@NotNull String input) throws @NotNull IOException;
 ### @Inherited
 
 `@Inherited` (JDK 5) causes an annotation to be inherited by subclasses. Only applies to class
-declarations:
+Declarations:
 
 ```java
 @Inherited
@@ -229,7 +229,7 @@ Limitations:
 
 - Only works for class-level annotations, not methods or fields.
 - Only applies to direct inheritance — interfaces implementing other interfaces do not inherit
-  annotations.
+ annotations.
 - A subclass annotation overrides the inherited one.
 
 ### @Repeatable
@@ -263,7 +263,7 @@ public void runDailyReport() { }
 
 At runtime, the container annotation is what reflection sees by default. Use
 `AnnotatedElement.getAnnotationsByType()` to get individual repeatable annotations regardless of
-whether they are stored individually or in a container:
+Whether they are stored individually or in a container:
 
 ```java
 Schedule[] schedules = MyClass.class.getMethod("runDailyReport")
@@ -275,8 +275,8 @@ Schedule[] schedules = MyClass.class.getMethod("runDailyReport")
 ### Defining an Annotation Type
 
 An annotation type is declared with `@interface`. Methods define the annotation's elements (the
-attributes you set when using the annotation). Methods have no parameters, no throws clauses, and
-return a limited set of types:
+Attributes you set when using the annotation). Methods have no parameters, no throws clauses, and
+Return a limited set of types:
 
 ```java
 import java.lang.annotation.*;
@@ -293,7 +293,7 @@ public @interface Config {
 
 Allowed return types for annotation elements:
 
-- All primitives (`int`, `long`, `boolean`, etc.)
+- All primitives (`int``long``boolean`Etc.)
 - `String`
 - `Class<?>` (or `Class<? extends SomeType>`)
 - Enums
@@ -330,9 +330,9 @@ public void process(Order order) { }
 ### Annotation Processing at Compile Time
 
 The **Annotation Processing API** (`javax.annotation.processing`) runs during compilation. Build
-tools like Lombok, MapStruct, and AutoValue use this. Register the processor in
+Tools like Lombok, MapStruct, and AutoValue use this. Register the processor in
 `META-INF/services/javax.annotation.processing.Processor`. Most projects use existing processors
-rather than writing their own.
+Rather than writing their own.
 
 ### Runtime Annotation Processing
 
@@ -355,7 +355,7 @@ for (Method method : PaymentService.class.getDeclaredMethods()) {
 ### Class Objects
 
 `java.lang.Class<T>` is the entry point for reflection. Every type has a corresponding `Class`
-instance:
+Instance:
 
 ```java
 // Getting a Class object
@@ -436,7 +436,7 @@ intClass != intWrapper;                  // true — different Class objects
 ### Generic Type Resolution
 
 While generic type parameters are erased, you can recover them from field declarations, method
-return types, and class hierarchies using `java.lang.reflect.Type`:
+Return types, and class hierarchies using `java.lang.reflect.Type`:
 
 ```java
 import java.lang.reflect.*;
@@ -504,7 +504,7 @@ public class CommandDispatcher {
 ### Bean Property Introspection
 
 `java.beans.Introspector` (standard library since JDK 1.1) extracts JavaBean properties from a class
-based on getter/setter conventions:
+Based on getter/setter conventions:
 
 ```java
 import java.beans.BeanInfo;
@@ -530,16 +530,16 @@ public class BeanUtils {
 ### Classpath Scanning
 
 Reflection enables runtime classpath scanning (used by Spring, Jersey, etc.) by reading JAR entries
-or directory listings. Real implementations must handle JAR files, modules, and edge cases.
+Or directory listings. Real implementations must handle JAR files, modules, and edge cases.
 Libraries like Reflections or Spring's `ClassPathScanningCandidateComponentProvider` handle these
-complexities.
+Complexities.
 
 ## Dynamic Proxy
 
 ### JDK Dynamic Proxy
 
 `java.lang.reflect.Proxy` (JDK 1.3) creates proxy instances for interfaces at runtime. The proxy
-dispatches all method calls to an `InvocationHandler`:
+Dispatches all method calls to an `InvocationHandler`:
 
 ```java
 import java.lang.reflect.InvocationHandler;
@@ -593,28 +593,28 @@ proxy.getUserName(42);
 Limitations:
 
 - Only works with **interfaces**, not concrete classes. For class-based proxying, use CGLIB or
-  ByteBuddy.
-- `equals`, `hashCode`, and `toString` are also dispatched to the handler (default implementations
-  in `Proxy`).
+ ByteBuddy.
+- `equals``hashCode`And `toString` are also dispatched to the handler (default implementations
+ in `Proxy`).
 - The proxy object is an instance of `java.lang.reflect.Proxy` and all specified interfaces.
 
 ### Common Proxy Use Cases
 
 AOP (Spring AOP, transaction management), RPC stubs, Hibernate lazy loading, Mockito/EasyMock test
-doubles, and access control (permission checks before method execution).
+Doubles, and access control (permission checks before method execution).
 
 ### Proxy Class Caching
 
-JDK proxies cache generated proxy classes (named `$Proxy0`, `$Proxy1`, etc.). Set
+JDK proxies cache generated proxy classes (named `$Proxy0``$Proxy1`Etc.). Set
 `sun.misc.ProxyGenerator.saveGeneratedFiles=true` to write generated proxy class files to disk for
-debugging.
+Debugging.
 
 ## MethodHandle and VarHandle
 
 ### MethodHandle (JDK 7)
 
 `java.lang.invoke.MethodHandle` is a typed, directly executable reference to a method, field, or
-constructor. It is the low-level mechanism that the JVM uses internally for `invokedynamic`.
+Constructor. It is the low-level mechanism that the JVM uses internally for `invokedynamic`.
 
 ```java
 import java.lang.invoke.MethodHandle;
@@ -646,20 +646,20 @@ public class MethodHandleExample {
 ```
 
 `invokeExact` requires the exact argument types (no implicit conversions) and the return type must
-match exactly. `invoke` allows implicit conversions as defined by the JVM's method handle adapters.
+Match exactly. `invoke` allows implicit conversions as defined by the JVM's method handle adapters.
 
 ### MethodHandle vs Reflection
 
-| Aspect         | MethodHandle                      | Reflection (Method)         |
+| Aspect | MethodHandle | Reflection (Method) |
 | -------------- | --------------------------------- | --------------------------- |
-| Performance    | Can be JIT-optimized, close to direct invocation | Slower, no JIT optimization |
-| Access control | Checked at creation time          | Checked at every invocation |
-| Type safety    | Enforced at invoke time           | Weaker                      |
-| Flexibility    | Adapters for currying, binding    | No built-in adapters        |
-| Learning curve | Steeper                           | Simpler API                 |
+| Performance | Can be JIT-optimized, close to direct invocation | Slower, no JIT optimization |
+| Access control | Checked at creation time | Checked at every invocation |
+| Type safety | Enforced at invoke time | Weaker |
+| Flexibility | Adapters for currying, binding | No built-in adapters |
+| Learning curve | Steeper | Simpler API |
 
 For performance-critical code, `MethodHandle` is preferred over `Method.invoke()`. The JIT can
-inline method handles in many cases, especially after warmup.
+Inline method handles , especially after warmup.
 
 ### MethodHandle Adapters
 
@@ -689,7 +689,7 @@ result = (String) constant.invokeExact(); // "42"
 ### VarHandle (JDK 9)
 
 `java.lang.invoke.VarHandle` provides fine-grained access to fields and array elements with
-volatile/atomic semantics. It replaces `sun.misc.Unsafe` field access operations:
+Volatile/atomic semantics. It replaces `sun.misc.Unsafe` field access operations:
 
 ```java
 import java.lang.invoke.MethodHandles;
@@ -729,14 +729,14 @@ public class AtomicCounter {
 
 VarHandle modes:
 
-| Method                        | Memory semantics                      |
+| Method | Memory semantics |
 | ----------------------------- | ------------------------------------- |
-| `get` / `set`                 | Plain (no ordering guarantees)        |
-| `getVolatile` / `setVolatile` | Volatile read/write                   |
-| `getAcquire` / `setRelease`   | Acquire/release semantics             |
-| `getOpaque` / `setOpaque`     | Opaque (no reordering, no visibility) |
-| `compareAndSet`               | Atomic CAS                            |
-| `getAndAdd`, `getAndSet`      | Atomic RMW                            |
+| `get` / `set` | Plain (no ordering guarantees) |
+| `getVolatile` / `setVolatile` | Volatile read/write |
+| `getAcquire` / `setRelease` | Acquire/release semantics |
+| `getOpaque` / `setOpaque` | Opaque (no reordering, no visibility) |
+| `compareAndSet` | Atomic CAS |
+| `getAndAdd``getAndSet` | Atomic RMW |
 
 Array VarHandles:
 
@@ -750,16 +750,16 @@ int val = (int) arrayVH.getVolatile(arr, 1); // volatile read
 ### Invokedynamic (JDK 7)
 
 `invokedynamic` is a JVM bytecode instruction that defers method linkage to runtime. Foundation for
-lambda expressions (JDK 8), dynamic languages (Groovy, JRuby), and string concatenation (JDK 9+).
+Lambda expressions (JDK 8), dynamic languages (Groovy, JRuby), and string concatenation (JDK 9+).
 You rarely use it directly unless building a language runtime — the JVM links the call site through
-a `CallSite` object and a bootstrap method.
+A `CallSite` object and a bootstrap method.
 
 ## Performance Implications of Reflection
 
 ### Reflection vs Direct Access
 
 Reflection is significantly slower than direct method calls, especially before JIT warmup. The
-overhead comes from:
+Overhead comes from:
 
 1. **Permission checks**: Security manager checks (if enabled)
 2. **Method resolution**: Looking up the method in the class's method table
@@ -776,7 +776,7 @@ MethodHandle.invokeExact (warmed up): ~2-5 ns
 ```
 
 These numbers vary significantly with JVM version, flags, and workload. Always benchmark for your
-specific case.
+Specific case.
 
 ### Mitigating Reflection Overhead
 
@@ -785,28 +785,28 @@ specific case.
 **Use `MethodHandle` instead of `Method.invoke()`** — JIT can optimize `invokeExact` call sites.
 
 **Code generation** (ByteBuddy, CGLIB, ASM) eliminates reflection entirely by generating bytecode at
-runtime. This is what Hibernate, Spring, and Mockito do for performance-critical paths.
+Runtime. This is what Hibernate, Spring, and Mockito do for performance-critical paths.
 
 ### Reflection and JIT Optimization
 
 The JIT compiler cannot optimize through reflection boundaries — a reflective call site is an opaque
-barrier. The called method is not inlined, escape analysis doesn't work across it, and loop
-optimizations cannot see through reflective dispatch. `MethodHandle.invokeExact` is an exception:
-the JIT can sometimes inline through it because the type is known at the call site.
+Barrier. The called method is not inlined, escape analysis doesn't work across it, and loop
+Optimizations cannot see through reflective dispatch. `MethodHandle.invokeExact` is an exception:
+The JIT can sometimes inline through it because the type is known at the call site.
 
 ## Common Pitfalls
 
 ### Security Manager and Access Control
 
 `setAccessible(true)` bypasses Java's access control. In security-managed environments (JDK 16+ with
-strong encapsulation), this throws `InaccessibleObjectException` for module-internal classes:
+Strong encapsulation), this throws `InaccessibleObjectException` for module-internal classes:
 
 ```
 java --add-opens java.base/java.lang=ALL-UNNAMED MyApp
 ```
 
 Avoid relying on `setAccessible(true)` for JDK-internal classes. The correct approach is to use
-public APIs.
+Public APIs.
 
 ### IllegalAccessException on Private Members
 
@@ -821,7 +821,7 @@ field.get(obj); // OK
 ### Performance Degradation
 
 Reflection in hot paths causes measurable performance degradation. Common mistake: putting
-reflection inside a loop that processes millions of items:
+Reflection inside a loop that processes millions of items:
 
 ```java
 // BAD
@@ -842,7 +842,7 @@ for (Object item : items) {
 
 Method lookups are parameter-sensitive. `getMethod("foo", String.class)` and
 `getMethod("foo", Object.class)` return different methods. Always include parameter types in your
-cache key:
+Cache key:
 
 ```java
 String key = "foo:" + Arrays.toString(paramTypes); // CORRECT
@@ -860,19 +860,19 @@ List<String> list = (List<String>) field.get(obj);
 ```
 
 The cast succeeds at runtime because erasure reduces it to `(List)`. If the field actually contains
-a `List<Integer>`, you get a `ClassCastException` later when accessing elements, not at the cast
-site.
+A `List<Integer>`You get a `ClassCastException` later when accessing elements, not at the cast
+Site.
 
 ### Primitive Type Handling
 
 `Method.invoke()` boxes primitives automatically, which costs in tight loops. Use `Field.setInt()` /
 `Field.getInt()` for primitive fields. `Method.invoke` always boxes — consider `MethodHandle` for
-performance-critical paths.
+Performance-critical paths.
 
 ### Overloaded Methods and Ambiguity
 
 `Class.getMethod()` requires exact parameter types. For overloaded methods, specify the correct
-parameter types:
+Parameter types:
 
 ```java
 Method m1 = clazz.getMethod("process", String.class);
@@ -882,8 +882,8 @@ Method m2 = clazz.getMethod("process", int.class);
 
 ### Proxy Equals and hashCode
 
-JDK dynamic proxies delegate `equals`, `hashCode`, and `toString` to the `InvocationHandler`. Always
-handle these methods in your handler if proxy identity semantics matter:
+JDK dynamic proxies delegate `equals``hashCode`And `toString` to the `InvocationHandler`. Always
+Handle these methods in your handler if proxy identity semantics matter:
 
 ```java
 InvocationHandler handler = (proxy, method, args) -> {
@@ -895,5 +895,13 @@ InvocationHandler handler = (proxy, method, args) -> {
 ### Module System Restrictions (JDK 9+)
 
 The module system restricts reflective access to non-exported packages, affecting deep reflection
-into JDK internals (e.g., `sun.misc.Unsafe`) and frameworks that access private members of library
-classes. The long-term fix is to use public APIs instead of reaching into internals via reflection.
+Into JDK internals (e.g., `sun.misc.Unsafe`) and frameworks that access private members of library
+Classes. The long-term fix is to use public APIs instead of reaching into internals via reflection.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -21,7 +21,7 @@ hide_table_of_contents: true
 
 | Diagnostic File | Topics Covered | Source Files |
 |---|---|---|
-| `diag-macroeconomic-policy.md` | Multiplier, Phillips curve, fiscal/monetary policy, AD/AS, exchange rates | `01-macroeconomic-performance.md`, `02-aggregate-demand-and-supply.md`, `04-fiscal-policy.md`, `06-the-international-economy.md` |
+| `diag-macroeconomic-policy.md` | Multiplier, Phillips curve, fiscal/monetary policy, AD/AS, exchange rates | `01-macroeconomic-performance.md``02-aggregate-demand-and-supply.md``04-fiscal-policy.md``06-the-international-economy.md` |
 
 ### Topics Covered Through Integration Tests
 
@@ -250,7 +250,7 @@ The following errors appear repeatedly in student work. Use this section to chec
 |---|---|
 | Confusing $\% \Delta Q / \% \Delta P$ with $\Delta Q / \Delta P$ | PED is a percentage ratio, not a slope. $PED = \frac◆LB◆\% \Delta Q◆RB◆◆LB◆\% \Delta P◆RB◆$. |
 | Using average price/quantity incorrectly for midpoint PED | Midpoint formula: $PED = \frac◆LB◆\Delta Q◆RB◆◆LB◆(Q_1+Q_2)/2◆RB◆ \div \frac◆LB◆\Delta P◆RB◆◆LB◆(P_1+P_2)/2◆RB◆$ |
-| Forgetting that $MR = MC$ gives quantity, not price | Always find $Q$ from $MR = MC$, then find $P$ from the demand curve. |
+| Forgetting that $MR = MC$ gives quantity, not price | Always find $Q$ from $MR = MC$Then find $P$ from the demand curve. |
 | Using the nominal multiplier instead of the multiplier with leakages | With tax and imports: $k = \frac{1}{1 - MPC(1-t) + MPM}$. |
 | Adding tax revenue to calculate total surplus with externality | Tax revenue is a TRANSFER, not a net welfare gain. It offsets the loss to consumers and producers. |
 | Calculating deadweight loss as the full triangle without checking | DWL $= \frac{1}{2} \times \text{tax} \times \Delta Q$. The $\Delta Q$ is the change in quantity, not the quantity itself. |
@@ -308,7 +308,7 @@ The following errors appear repeatedly in student work. Use this section to chec
 **Analysis (12 marks, 15 min):**
 - 3-4 analytical paragraphs, each with a clear point, explanation, diagram, and real-world example.
 - Each paragraph should link back to the question.
-- Use chain of reasoning: "This leads to... which means... therefore..."
+- Use chain of reasoning: "This leads to... Which means... Therefore..."
 
 **Evaluation (8 marks, 12 min):**
 - 2-3 evaluation paragraphs challenging the analysis.

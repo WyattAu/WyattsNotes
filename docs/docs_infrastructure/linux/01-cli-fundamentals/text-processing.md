@@ -8,15 +8,15 @@ sidebar_position: 3
 ## Regular Expressions
 
 Regular expressions are the backbone of text processing on Linux. Three major flavors exist, each
-with different capabilities and syntax.
+With different capabilities and syntax.
 
 ### BRE vs ERE vs PCRE
 
-| Flavor | Engine          | Activator            | Metacharacters Require Escape | Lookaround  |
+| Flavor | Engine | Activator | Metacharacters Require Escape | Lookaround |
 | ------ | --------------- | -------------------- | ----------------------------- | ----------- | --- |
-| BRE    | POSIX `grep`    | Default              | `+`, `?`, `{`, `              | `, `(`, `)` | No  |
-| ERE    | POSIX `grep -E` | `grep -E`, `egrep`   | None                          | No          |
-| PCRE   | Perl-compatible | `grep -P`, `ripgrep` | None                          | Yes         |
+| BRE | POSIX `grep` | Default | `+``?``{``              | ``(``)` | No |
+| ERE | POSIX `grep -E` | `grep -E``egrep` | None | No |
+| PCRE | Perl-compatible | `grep -P``ripgrep` | None | Yes |
 
 ```text
 BRE:  \{1,3\}    \+    \?    \(group\)
@@ -106,7 +106,7 @@ grep -P '\bv[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.]+)?(\+[a-zA-Z0-9.]+)?\b' file.tx
 
 `sed` reads input line by line, applies editing commands, and writes output. It operates on a
 **pattern space** (a working buffer holding the current line) and a **hold space** (a secondary
-buffer for multi-line operations).
+Buffer for multi-line operations).
 
 ### Basic Substitution
 
@@ -226,15 +226,15 @@ sed -i 's/192.168.1.100/10.0.0.1/g' /etc/hosts /etc/resolv.conf
 :::warning
 
 `sed -i` on symlinks will replace the symlink with a regular file containing the edited content. If
-the original file was a symlink, the link is destroyed. Always use `sed -i.bak` in production
-scripts to preserve recoverability.
+The original file was a symlink, the link is destroyed. Always use `sed -i.bak` in production
+Scripts to preserve recoverability.
 
 :::
 
 ## awk — Pattern-Scanning Language
 
 `awk` is a full programming language designed for processing columnar text data. The GNU
-implementation (`gawk`) is standard on Linux.
+Implementation (`gawk`) is standard on Linux.
 
 ### Program Structure
 
@@ -389,7 +389,7 @@ grep -P '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' access.log
 ### ripgrep (rg)
 
 `ripgrep` is a modern, Rust-based alternative that is faster than GNU grep for most use cases and
-respects `.gitignore` by default.
+Respects `.gitignore` by default.
 
 ```bash
 # Basic search (respects .gitignore)
@@ -857,7 +857,7 @@ awk '{for(i=3;i<=NF;i++) printf "%s%s", $i, (i<NF?OFS:"\n")}' data.txt
 :::info
 
 Prefer `cut` when you only need simple field extraction — it is significantly faster than `awk` for
-large files. Use `awk` when you need conditional logic, field manipulation, or aggregation.
+Large files. Use `awk` when you need conditional logic, field manipulation, or aggregation.
 
 :::
 
@@ -1037,3 +1037,11 @@ sed -i 's/old/new/g' /readonly/file.txt  # may fail
 # Fix: write to a temp directory
 sed "s/old/new/g" /readonly/file.txt > /tmp/file.txt && sudo cp /tmp/file.txt /readonly/file.txt
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

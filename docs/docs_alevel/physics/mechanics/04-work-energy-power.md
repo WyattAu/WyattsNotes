@@ -22,22 +22,22 @@ Explore the simulation above to develop intuition for this topic.
 ## 1. Work Done by a Force
 
 **Definition.** The **work done** by a constant force $\mathbf{F}$ when its point of application
-moves through displacement $\mathbf{s}$ is:
+Moves through displacement $\mathbf{s}$ is:
 
 $$W = \mathbf{F} \cdot \mathbf{s} = Fs\cos\theta$$
 
-where $\theta$ is the angle between $\mathbf{F}$ and $\mathbf{s}$.
+Where $\theta$ is the angle between $\mathbf{F}$ and $\mathbf{s}$.
 
 **Derivation.** We decompose $\mathbf{F}$ into components parallel and perpendicular to
 $\mathbf{s}$. Only the parallel component $F\cos\theta$ does work (the perpendicular component
-produces no displacement in its direction). Work is defined as force multiplied by the displacement
-in the direction of the force, hence $W = (F\cos\theta) \cdot s = Fs\cos\theta$.
+Produces no displacement in its direction). Work is defined as force multiplied by the displacement
+In the direction of the force, hence $W = (F\cos\theta) \cdot s = Fs\cos\theta$.
 
 **Units.** Work has the unit joule (J), where
 $1 \mathrm{ J} = 1 \mathrm{ N m} = 1 \mathrm{ kg m}^2\mathrm{s}^{-2}$.
 
 **Sign convention.** Work is positive when the force has a component in the direction of motion,
-negative when opposing motion.
+Negative when opposing motion.
 
 **Work done by a variable force.** For a force $F(x)$ that varies with position:
 
@@ -50,7 +50,7 @@ $$W = \int_{x_1}^{x_2} F(x)\,dx$$
 $$\boxed{E_k = \frac{1}{2}mv^2}$$
 
 **Derivation from the work-energy theorem.** Consider a body of mass $m$ accelerated from rest to
-speed $v$ by a constant net force $F$ over distance $s$. The work done is:
+Speed $v$ by a constant net force $F$ over distance $s$. The work done is:
 
 $$W = Fs = mas$$
 
@@ -61,31 +61,31 @@ $$W = ma \cdot \frac{v^2}{2a} = \frac{1}{2}mv^2$$
 We define this work done as the kinetic energy gained. $\square$
 
 **General proof (variable force).** From Newton's second law: $F = m\frac{dv}{dt}$. The work done
-is:
+Is:
 
 $$W = \int_{s_1}^{s_2} F\,ds = \int_{s_1}^{s_2} m\frac{dv}{dt}\,ds = \int_{v_1}^{v_2} mv\,dv = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 This is the **work-energy theorem**: the net work done on a body equals its change in kinetic
-energy.
+Energy.
 
 $$\boxed{W_{\mathrm{net}} = \Delta E_k}$$
 
 ## 3. Gravitational Potential Energy
 
 **Definition.** The **gravitational potential energy** of a body of mass $m$ at height $h$ above a
-reference level is:
+Reference level is:
 
 $$\boxed{E_p = mgh}$$
 
 **Derivation.** The work done against gravity in lifting a mass $m$ through a vertical height $h$ at
-constant velocity (so $a = 0$ and applied force $= mg$):
+Constant velocity (so $a = 0$ and applied force $= mg$):
 
 $$W = Fd = mg \times h = mgh$$
 
 This work is stored as gravitational potential energy. $\square$
 
 **Intuition.** $E_p$ depends on the choice of reference level. Only **changes** in potential energy
-are physically meaningful. The convention is to take $E_p = 0$ at the lowest point of the system.
+Are physically meaningful. The convention is to take $E_p = 0$ at the lowest point of the system.
 
 ## 4. Elastic Potential Energy
 
@@ -94,46 +94,46 @@ Hooke's law) extended by $x$ from its natural length is:
 
 $$\boxed{E_e = \frac{1}{2}kx^2}$$
 
-where $k$ is the spring constant (force per unit extension).
+Where $k$ is the spring constant (force per unit extension).
 
 **Derivation.** By Hooke's law, the force required to extend the spring by $x$ is $F = kx$. Since
-the force varies with extension, we integrate:
+The force varies with extension, we integrate:
 
 $$W = \int_0^x F\,dx' = \int_0^x kx'\,dx' = \left[\frac{1}{2}kx'^2\right]_0^x = \frac{1}{2}kx^2$$
 
 This work is stored as elastic potential energy. $\square$
 
 **Graphical interpretation.** On a force-extension graph, the elastic potential energy is the area
-under the line $F = kx$, which is a triangle of base $x$ and height $kx$, giving $\frac{1}{2}kx^2$.
+Under the line $F = kx$Which is a triangle of base $x$ and height $kx$Giving $\frac{1}{2}kx^2$.
 
 ### Springs in Series and Parallel
 
 **Parallel** (same extension, forces add). Two springs with constants $k_1$ and $k_2$ share the same
-extension $x$:
+Extension $x$:
 
 $$E_e = \frac{1}{2}k_1 x^2 + \frac{1}{2}k_2 x^2 = \frac{1}{2}(k_1 + k_2)x^2 = \frac{1}{2}k_{\mathrm{eff}}x^2$$
 
 $$\boxed{k_{\mathrm{parallel}} = k_1 + k_2}$$
 
 **Proof from equilibrium.** Both springs exert force on the mass:
-$F = k_1 x + k_2 x = (k_1 + k_2)x$, so $k_{\mathrm{eff}} = k_1 + k_2$. $\square$
+$F = k_1 x + k_2 x = (k_1 + k_2)x$So $k_{\mathrm{eff}} = k_1 + k_2$. $\square$
 
 **Series** (same force, extensions add). Two springs with constants $k_1$ and $k_2$ experience the
-same force $F$:
+Same force $F$:
 
-$F = k_1 x_1 = k_2 x_2$, so $x_1 = F/k_1$ and $x_2 = F/k_2$. Total extension:
+$F = k_1 x_1 = k_2 x_2$So $x_1 = F/k_1$ and $x_2 = F/k_2$. Total extension:
 $x = x_1 + x_2 = F(1/k_1 + 1/k_2)$.
 
 $$\boxed{\frac◆LB◆1◆RB◆◆LB◆k_{\mathrm{series}}◆RB◆ = \frac{1}{k_1} + \frac{1}{k_2}}$$
 
 **Intuition.** Parallel springs are stiffer (each contributes to resisting displacement). Series
-springs are less stiff (each stretches under the same load, giving more total compliance). This is
-analogous to electrical circuits: parallel resistors decrease, series resistors increase.
+Springs are less stiff (each stretches under the same load, giving more total compliance). This is
+Analogous to electrical circuits: parallel resistors decrease, series resistors increase.
 
 ## 5. Conservation of Energy
 
 **Principle of Conservation of Energy.** Energy cannot be created or destroyed, only transferred
-from one form to another.
+From one form to another.
 
 $$\sum E_{\mathrm{initial}} = \sum E_{\mathrm{final}}$$
 
@@ -156,17 +156,17 @@ $$E_k + E_p = \mathrm{constant} \quad \square$$
 
 $$W_{\mathrm{nc}} = \Delta E_k + \Delta E_p$$
 
-where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (e.g., friction does negative
-work, reducing total mechanical energy).
+Where $W_{\mathrm{nc}}$ is the work done by non-conservative forces (e.g., friction does negative
+Work, reducing total mechanical energy).
 
 ### Energy Dissipation by Friction
 
 When friction acts, mechanical energy is not conserved -- it decreases monotonically as energy is
-transferred to thermal energy. For a block sliding to rest on a rough horizontal surface:
+Transferred to thermal energy. For a block sliding to rest on a rough horizontal surface:
 
 $$E_k(\mathrm{initial}) = E_k(\mathrm{final}) + W_f$$
 
-where $W_f = \mu mg d$ is the work done against friction over distance $d$.
+Where $W_f = \mu mg d$ is the work done against friction over distance $d$.
 
 Setting $E_k(\mathrm{final}) = 0$ (block comes to rest):
 
@@ -175,14 +175,14 @@ $$\frac{1}{2}mv^2 = \mu mgd$$
 $$\boxed{d = \frac◆LB◆v^2◆RB◆◆LB◆2\mu g◆RB◆}$$
 
 **Intuition.** The stopping distance is proportional to $v^2$ (not $v$), which is why driving at
-twice the speed requires **four times** the braking distance. This quadratic dependence is a direct
-consequence of energy conservation: kinetic energy scales as $v^2$, so removing that energy requires
-friction to act over a distance proportional to $v^2$.
+Twice the speed requires **four times** the braking distance. This quadratic dependence is a direct
+Consequence of energy conservation: kinetic energy scales as $v^2$So removing that energy requires
+Friction to act over a distance proportional to $v^2$.
 
 :::warning
-warning
-never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
-the closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
+Warning
+Never lost -- it is transferred from mechanical to thermal (internal) energy. The total energy of
+The closed system is always conserved. Only **mechanical** energy ($E_k + E_p$) decreases.
 :::
 
 <details>
@@ -201,8 +201,8 @@ Doubling the speed quadruples the braking distance -- a critical road safety res
 
 Emmy Noether proved in 1915 that every conservation law corresponds to a symmetry of nature.
 Conservation of energy corresponds to **time-translation symmetry** — the laws of physics do not
-change over time. If you perform an experiment today or tomorrow, you expect the same result. This
-deep connection between symmetry and conservation is one of the most profound results in physics.
+Change over time. If you perform an experiment today or tomorrow, you expect the same result. This
+Deep connection between symmetry and conservation is one of the most profound results in physics.
 
 ## 6. Power
 
@@ -233,31 +233,31 @@ Since the average velocity is $\bar{v} = (u + v)/2$:
 $$\boxed{P_{\mathrm{avg}} = \frac{F(u + v)}{2}}$$
 
 This is useful because it relates power to the initial and final velocities directly, without
-needing to know the distance or time separately.
+Needing to know the distance or time separately.
 
 :::tip
 Exam Technique When asked for "the power developed by the engine" as a car accelerates,
-specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
-instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$, while the average power
-over the whole acceleration is $F(u+v)/2$.
+Specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
+Instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$While the average power
+Over the whole acceleration is $F(u+v)/2$.
 :::
 
 **Definition.** The **efficiency** of an energy transfer is:
 
 $$\eta = \frac◆LB◆\mathrm{useful energy output}◆RB◆◆LB◆\mathrm{total energy input}◆RB◆ \times 100\%$$
 
-or equivalently for power:
+Or equivalently for power:
 
 $$\eta = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆P_{\mathrm{in}}◆RB◆ \times 100\%$$
 
-Efficiency is always between 0% and 100%. In practice, some energy is always dissipated (usually as
-thermal energy due to friction or resistance).
+Efficiency is always between 0% and 100%. In practice, some energy is always dissipated ( as
+Thermal energy due to friction or resistance).
 
 ## 8. Energy as the Universal Currency
 
 Energy is the most unifying concept in physics. It connects mechanics, thermodynamics,
-electromagnetism, waves, quantum physics, and relativity. The conservation of energy is the one
-principle that holds across all domains:
+Electromagnetism, waves, quantum physics, and relativity. The conservation of energy is the one
+Principle that holds across all domains:
 
 - In mechanics, $E_k + E_p = \mathrm{const}$.
 - In circuits, $E = VIt = I^2Rt$ is dissipated as heat.
@@ -275,7 +275,7 @@ A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Cal
 
 (b) $P = \frac◆LB◆\Delta E_k◆RB◆◆LB◆\Delta t◆RB◆ = \frac{375\,000}{8.0} = 46\,900$ W $= 46.9$ kW.
 
-(c) $P = Fv_{\mathrm{avg}}$, $v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
+(c) $P = Fv_{\mathrm{avg}}$$v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
 Alternatively, $F = ma = 1200 \times 25/8 = 3750$ N.
 
 <b>If you get this wrong, revise:</b> [Kinetic Energy](#2-kinetic-energy) and
@@ -330,7 +330,7 @@ A pendulum bob of mass $0.50$ kg is pulled aside until it is $0.10$ m above its 
 
 **Answer.**
 $mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.81 \times 0.10◆RB◆ = \sqrt{1.962} = 1.40$
-m s$^{-1}$.
+M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
 
@@ -373,7 +373,7 @@ Fuel power: $P_{\mathrm{fuel}} = P/\eta = 13\,680/0.25 = 54\,700$ W $= 54.7$ kW.
 
 <details>
 <summary>Problem 8</summary>
-Two springs are connected in parallel (both attached to the same mass). Spring A has $k_A = 200$ N m$^{-1}$, spring B has $k_B = 300$ N m$^{-1}$. The mass is displaced $0.05$ m. Find the total elastic PE stored.
+Two springs are connected in parallel (both attached to the same mass). Spring A has $k_A = 200$ N m$^{-1}$Spring B has $k_B = 300$ N m$^{-1}$. The mass is displaced $0.05$ m. Find the total elastic PE stored.
 
 **Answer.** For parallel springs, the effective spring constant is
 $k_{\mathrm{eff}} = k_A + k_B = 500$ N m$^{-1}$.
@@ -415,11 +415,11 @@ J $= -14.9$ GJ.
 <summary>Problem 11</summary>
 
 A spring of constant $200$ N m$^{-1}$ is connected in series with a spring of constant $300$ N
-m$^{-1}$. A $2.0$ kg mass is attached and displaced $0.10$ m. Find: (a) the total extension, (b) the
-total elastic potential energy stored.
+M$^{-1}$. A $2.0$ kg mass is attached and displaced $0.10$ m. Find: (a) the total extension, (b) the
+Total elastic potential energy stored.
 
 **Answer.** (a) For series: $1/k_{\mathrm{eff}} = 1/200 + 1/300 = 5/600$. $k_{\mathrm{eff}} = 120$ N
-m$^{-1}$.
+M$^{-1}$.
 
 Extension: $x = F/k_{\mathrm{eff}} = k_{\mathrm{eff}} \times 0.10 / k_{\mathrm{eff}} = 0.10$ m.
 (Each spring shares the same force: $F = k_1 x_1 = k_2 x_2$.
@@ -442,7 +442,7 @@ J.
 
 A block of mass $3.0$ kg is projected up a rough incline at $30^\circ$ with speed $8.0$ m s$^{-1}$.
 The coefficient of friction is $0.20$. Use energy methods to find how far up the incline it travels
-before stopping.
+Before stopping.
 
 **Answer.** Initial KE: $\frac{1}{2}(3.0)(64) = 96$ J. Gain in PE:
 $mg\Delta s \sin 30° = 3.0 \times 9.81 \times 0.5 \times \Delta s = 14.7\,\Delta s$.
@@ -463,8 +463,8 @@ $\Delta s = 96/19.8 = 4.85$ m.
 <summary>Problem 13</summary>
 
 A $70$ kg student runs up a flight of stairs, gaining $5.0$ m of height in $4.0$ s. Calculate: (a)
-the work done against gravity, (b) the average power output, (c) the minimum instantaneous power if
-the student starts from rest and accelerates uniformly.
+The work done against gravity, (b) the average power output, (c) the minimum instantaneous power if
+The student starts from rest and accelerates uniformly.
 
 **Answer.** (a) $W = mgh = 70 \times 9.81 \times 5.0 = 3434$ J.
 
@@ -473,12 +473,12 @@ the student starts from rest and accelerates uniformly.
 (c) Starting from rest with constant acceleration, $h = \frac{1}{2}at^2$ and $v = at$.
 
 $a = 2h/t^2 = 2 \times 5.0/16 = 0.625$ m s$^{-2}$. $v_{\mathrm{final}} = 0.625 \times 4 = 2.5$ m
-s$^{-1}$.
+S$^{-1}$.
 
 Vertical force = $mg + ma = 70(9.81 + 0.625) = 731$ N.
 
 $P_{\mathrm{max}} = Fv = 731 \times 2.5 = 1828$ W. The minimum instantaneous power is the power at
-the start (when $v = 0$): $P_{\mathrm{min}} = 0$. Power increases linearly with speed.
+The start (when $v = 0$): $P_{\mathrm{min}} = 0$. Power increases linearly with speed.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity)
 
@@ -488,16 +488,16 @@ the start (when $v = 0$): $P_{\mathrm{min}} = 0$. Power increases linearly with 
 <summary>Problem 14</summary>
 
 A mass of $0.50$ kg is attached to a spring of constant $200$ N m$^{-1}$ on a smooth horizontal
-surface. The mass is pulled $0.15$ m from equilibrium and released. Find: (a) the maximum speed, (b)
-the speed when the mass is $0.05$ m from equilibrium, (c) the total energy of the system.
+Surface. The mass is pulled $0.15$ m from equilibrium and released. Find: (a) the maximum speed, (b)
+The speed when the mass is $0.05$ m from equilibrium, (c) the total energy of the system.
 
 **Answer.** (a) At equilibrium: all energy is elastic. At maximum displacement: all energy is
-elastic. At any other point: $E_e + E_k = E_{\mathrm{total}}$.
+Elastic. At any other point: $E_e + E_k = E_{\mathrm{total}}$.
 
 $E_{\mathrm{total}} = \frac{1}{2}(200)(0.15)^2 = 2.25$ J. Maximum speed at equilibrium ($x = 0$):
 $E_k = E_{\mathrm{total}}$.
 $v_{\mathrm{max}} = \sqrt◆LB◆2E_{\mathrm{total}}/m◆RB◆ = \sqrt◆LB◆2 \times 2.25/0.50◆RB◆ = \sqrt{9} = 3.0$ m
-s$^{-1}$.
+S$^{-1}$.
 
 (b) At $x = 0.05$ m: $E_e = \frac{1}{2}(200)(0.0025) = 0.25$ J. $E_k = 2.25 - 0.25 = 2.0$ J.
 $v = \sqrt◆LB◆2 \times 2.0/0.50◆RB◆ = \sqrt{8} = 2.83$ m s$^{-1}$.
@@ -512,17 +512,17 @@ $v = \sqrt◆LB◆2 \times 2.0/0.50◆RB◆ = \sqrt{8} = 2.83$ m s$^{-1}$.
 <summary>Problem 15</summary>
 
 A car engine delivers a constant driving force of $3000$ N. The total resistive force (drag +
-rolling resistance) is $F_{\mathrm{res}} = 300 + 2v^2$ N (where $v$ is in m s$^{-1}$). Find: (a) the
-maximum speed of the car (terminal velocity), (b) the power at this speed.
+Rolling resistance) is $F_{\mathrm{res}} = 300 + 2v^2$ N (where $v$ is in m s$^{-1}$). Find: (a) the
+Maximum speed of the car (terminal velocity), (b) the power at this speed.
 
 **Answer.** (a) At maximum speed, driving force equals resistive force: $3000 = 300 + 2v^2$.
 
-$2v^2 = 2700$, $v^2 = 1350$, $v = 36.7$ m s$^{-1} \approx 132$ km h$^{-1}$.
+$2v^2 = 2700$$v^2 = 1350$$v = 36.7$ m s$^{-1} \approx 132$ km h$^{-1}$.
 
 (b) $P = Fv = 3000 \times 36.7 = 110\,100$ W $= 110$ kW.
 
 Note: at maximum speed, all the engine's power goes into overcoming resistance. If the car tried to
-go faster, resistance would exceed the driving force and it would decelerate.
+Go faster, resistance would exceed the driving force and it would decelerate.
 
 <b>If you get this wrong, revise:</b> [Power and Velocity](#power-and-velocity)
 
@@ -533,7 +533,7 @@ go faster, resistance would exceed the driving force and it would decelerate.
 
 A bungee jumper of mass $75$ kg jumps from a platform. The bungee cord has an unstretched length of
 $25$ m and spring constant $50$ N m$^{-1}$. Taking the reference level as the jump platform, find
-the speed of the jumper when the cord is stretched $15$ m beyond its natural length.
+The speed of the jumper when the cord is stretched $15$ m beyond its natural length.
 
 **Answer.** Height below platform: $h = 25 + 15 = 40$ m. Loss of PE:
 $mgh = 75 \times 9.81 \times 40 = 29\,430$ J.
@@ -552,8 +552,8 @@ $\frac{1}{2}(75)v^2 = 23\,805$. $v^2 = 634.8$. $v = 25.2$ m s$^{-1}$.
 <summary>Problem 17</summary>
 
 An electric motor is 85% efficient. It lifts a $200$ kg crate vertically at a steady speed of $0.80$
-m s$^{-1}$. Calculate: (a) the useful power output, (b) the total electrical power input, (c) the
-energy wasted per second, (d) the total electrical energy consumed to lift the crate $12$ m.
+M s$^{-1}$. Calculate: (a) the useful power output, (b) the total electrical power input, (c) the
+Energy wasted per second, (d) the total electrical energy consumed to lift the crate $12$ m.
 
 **Answer.** (a) $P_{\mathrm{out}} = Fv = mgv = 200 \times 9.81 \times 0.80 = 1570$ W.
 
@@ -571,15 +571,15 @@ $P_{\mathrm{in}} \times t = 1847 \times 15 = 27\,705$ J $= 27.7$ kJ.
 <details>
 <summary>Problem 18</summary>
 
-Two identical springs, each of constant $k = 400$ N m$^{-1}$, are connected in parallel and support
-a mass of $5.0$ kg. The mass is displaced $0.05$ m downward and released. Calculate: (a) the period
-of the resulting oscillation (you may assume SHM), (b) the maximum kinetic energy, (c) the maximum
-elastic potential energy in each spring.
+Two identical springs, each of constant $k = 400$ N m$^{-1}$Are connected in parallel and support
+A mass of $5.0$ kg. The mass is displaced $0.05$ m downward and released. Calculate: (a) the period
+Of the resulting oscillation (you may assume SHM), (b) the maximum kinetic energy, (c) the maximum
+Elastic potential energy in each spring.
 
 **Answer.** (a) For parallel springs: $k_{\mathrm{eff}} = 2k = 800$ N m$^{-1}$.
 
 Angular frequency: $\omega = \sqrt◆LB◆k_{\mathrm{eff}}/m◆RB◆ = \sqrt{800/5.0} = \sqrt{160} = 12.6$ rad
-s$^{-1}$.
+S$^{-1}$.
 
 Period: $T = 2\pi/\omega = 2\pi/12.6 = 0.499$ s.
 
@@ -616,3 +616,15 @@ Common Pitfalls
 - **Confusing power and energy:** Power is the RATE of doing work (P = W/t = Fv), measured in watts. Energy is the total work done or transferred, measured in joules. A machine that is twice as powerful delivers the same energy in half the time, not twice the energy.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

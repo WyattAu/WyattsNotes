@@ -40,7 +40,7 @@ A block of mass $8$ kg rests on a rough horizontal surface. The coefficient of f
 
 **(b)** When $P = 20$ N, find the magnitude and direction of the frictional force acting on the block. [2 marks]
 
-**(c)** A student, upon seeing the value $\mu = 0.4$, immediately writes $F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force $P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student overestimates the friction. [3 marks]
+**(c)** A student, upon seeing the value $\mu = 0.4$Immediately writes $F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force $P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student overestimates the friction. [3 marks]
 
 **(d)** The force $P$ is now applied at an angle of $30°$ above the horizontal. Find the maximum value of $P$ for which the block remains in equilibrium, and explain why this maximum is greater than the answer in part (a). [3 marks]
 
@@ -58,7 +58,7 @@ A force of $50$ N acts at one end $B$ of a uniform rod $AB$ of length $3$ m. The
 
 A car of mass $800$ kg travels on a level road. The engine works at constant power $40$ kW. The resistance to motion is a constant $200$ N.
 
-**(a)** Show that the acceleration of the car is given by $a = \frac{P}{mv} - \frac{R}{m}$, where $P$ is the power, $v$ is the speed, and $R$ is the resistance. [2 marks]
+**(a)** Show that the acceleration of the car is given by $a = \frac{P}{mv} - \frac{R}{m}$Where $P$ is the power, $v$ is the speed, and $R$ is the resistance. [2 marks]
 
 **(b)** Find the maximum speed of the car. [2 marks]
 
@@ -92,17 +92,17 @@ The particle is at rest at $t = 1$ s and $t = 5$ s.
 
 **(b)** First, determine the sign of $v$ in each interval.
 
-For $0 \lt{} t \lt{} 1$: test $t = 0.5$, $v = 3 - 0.25 - 5 = -2.25 \lt{} 0$ (moving in negative direction).
+For $0 \lt{} t \lt{} 1$: test $t = 0.5$$v = 3 - 0.25 - 5 = -2.25 \lt{} 0$ (moving in negative direction).
 
-For $1 \lt{} t \lt{} 5$: test $t = 3$, $v = 18 - 9 - 5 = 4 \gt{} 0$ (moving in positive direction).
+For $1 \lt{} t \lt{} 5$: test $t = 3$$v = 18 - 9 - 5 = 4 \gt{} 0$ (moving in positive direction).
 
-For $t \gt{} 5$: test $t = 6$, $v = 36 - 36 - 5 = -5 \lt{} 0$ (moving in negative direction).
+For $t \gt{} 5$: test $t = 6$$v = 36 - 36 - 5 = -5 \lt{} 0$ (moving in negative direction).
 
-The particle reverses direction at $t = 1$ and $t = 5$. Total distance requires integrating $\lvert v \rvert$, which means splitting at the turning points and taking the magnitude of each segment.
+The particle reverses direction at $t = 1$ and $t = 5$. Total distance requires integrating $\lvert v \rvert$Which means splitting at the turning points and taking the magnitude of each segment.
 
 $$s(t) = \int v\,dt = \int (6t - t^2 - 5)\,dt = 3t^2 - \frac{t^3}{3} - 5t + C$$
 
-With $s(0) = 0$: $C = 0$, so $s(t) = 3t^2 - \frac{t^3}{3} - 5t$.
+With $s(0) = 0$: $C = 0$So $s(t) = 3t^2 - \frac{t^3}{3} - 5t$.
 
 $s(1) = 3 - \frac{1}{3} - 5 = -\frac{7}{3}$ m.
 
@@ -162,7 +162,7 @@ $$0.866P = 31.36 - 0.2P$$
 
 $$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{ N}$$
 
-This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt{} 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$, the reduction in $R$ means the maximum available horizontal force is reduced overall.
+This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt{} 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$The reduction in $R$ means the maximum available horizontal force is reduced overall.
 
 ### Q3
 
@@ -174,7 +174,7 @@ $$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{ m}$$
 
 $$\text{Moment} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{along rod}}$.
+**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$Not $F \times d_{\text{along rod}}$.
 
 $$\text{Student's answer} = 150 \text{ Nm}$$
 
@@ -182,7 +182,7 @@ $$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
 $$\text{Percentage overestimate} = \frac◆LB◆150 - 150\cos 40°◆RB◆◆LB◆150\cos 40°◆RB◆ \times 100\% = \frac◆LB◆1 - \cos 40°◆RB◆◆LB◆\cos 40°◆RB◆ \times 100\% = \left(\frac◆LB◆1◆RB◆◆LB◆\cos 40°◆RB◆ - 1\right) \times 100\% \approx 30.5\%$$
 
-**(c)** If the $50$ N force acts perpendicular to the rod at $B$, the perpendicular distance from $A$ to the line of action is simply the length of the rod:
+**(c)** If the $50$ N force acts perpendicular to the rod at $B$The perpendicular distance from $A$ to the line of action is the length of the rod:
 
 $$\text{Moment} = 50 \times 3 = 150 \text{ Nm}$$
 
@@ -218,7 +218,7 @@ $$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
-Let $u = 40000 - 200v$, $du = -200\,dv$, $dv = -\frac{du}{200}$, $v = \frac{40000 - u}{200}$:
+Let $u = 40000 - 200v$$du = -200\,dv$$dv = -\frac{du}{200}$$v = \frac{40000 - u}{200}$:
 
 $$t = 800\int \frac{(40000 - u)/200}{u} \cdot \left(-\frac{du}{200}\right) = 800 \times \frac{-1}{40000}\int \frac{40000 - u}{u}\,du$$
 
@@ -268,7 +268,7 @@ Conservation: $-2 = 4(2) + 6v_B \implies -2 = 8 + 6v_B \implies 6v_B = -10 \impl
 
 The negative sign means $B$ moves in the opposite direction to the defined positive, i.e., in $A$'s initial direction. This is the same physical velocity as $\frac{5}{3}$ m/s in $A$'s initial direction, confirming the result is convention-independent.
 
-**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt{} e \lt{} 1$, the collision is **inelastic**.
+**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt{} e \lt{} 1$The collision is **inelastic**.
 
 $$\text{KE}_{\text{before}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{ J}$$
 
@@ -282,8 +282,8 @@ $$\Delta\text{KE} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \appr
 
 | Question | Topic | Marks | Key Skills Tested |
 |----------|-------|------:|-------------------|
-| Q1 | Kinematics | 10 | Displacement vs distance, direction changes from $v = 0$, splitting integrals, percentage error |
-| Q2 | Forces and Newton's Laws | 10 | Static friction inequality $F \leq \mu R$, non-limiting friction, angled force and normal reaction |
+| Q1 | Kinematics | 10 | Displacement vs distance, direction changes from $v = 0$Splitting integrals, percentage error |
+| Q2 | Forces and Newton's Laws | 10 | Static friction inequality $F \leq \mu R$Non-limiting friction, angled force and normal reaction |
 | Q3 | Moments | 10 | Perpendicular distance vs distance to pivot, trigonometric moments, percentage error analysis |
 | Q4 | Energy and Work | 10 | $P = Fv$ derivation, maximum speed, decreasing acceleration at constant power, integration for time |
 | Q5 | Momentum | 10 | Sign convention consistency, conservation of momentum, coefficient of restitution, energy classification |

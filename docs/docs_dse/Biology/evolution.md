@@ -19,14 +19,14 @@ The **gene pool** is the total collection of all the alleles of all the genes in
 
 **Key terms:**
 
-| Term                       | Definition                                                                                                          |
+| Term | Definition |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Allele frequency           | The proportion of a specific allele in the gene pool, expressed as a decimal or percentage                           |
-| Genotype frequency         | The proportion of a specific genotype in the population                                                             |
-| Gene pool                  | All alleles of all genes in a population                                                                           |
-| Population                 | A group of individuals of the same species living in the same area at the same time, capable of interbreeding        |
-| Fixed allele               | An allele with a frequency of 1.0 (100%) -- all individuals are homozygous for that allele                          |
-| Lost allele                | An allele with a frequency of 0.0 -- it has been completely eliminated from the population                          |
+| Allele frequency | The proportion of a specific allele in the gene pool, expressed as a decimal or percentage |
+| Genotype frequency | The proportion of a specific genotype in the population |
+| Gene pool | All alleles of all genes in a population |
+| Population | A group of individuals of the same species living in the same area at the same time, capable of interbreeding |
+| Fixed allele | An allele with a frequency of 1.0 (100%) -- all individuals are homozygous for that allele |
+| Lost allele | An allele with a frequency of 0.0 -- it has been completely eliminated from the population |
 
 ### The Hardy-Weinberg Principle
 
@@ -90,13 +90,13 @@ If observed genotype frequencies differ significantly from Hardy-Weinberg expect
 
 A population of flowers has 160 red (RR), 480 pink (Rr), and 360 white (rr) individuals. Total = 1000.
 
-- Observed frequency of $q^2 = \frac{360}{1000} = 0.36$, so $q = 0.6$, $p = 0.4$.
+- Observed frequency of $q^2 = \frac{360}{1000} = 0.36$So $q = 0.6$$p = 0.4$.
 - Expected: $p^2 = 0.16$ (160 RR), $2pq = 0.48$ (480 Rr), $q^2 = 0.36$ (360 rr).
 - Observed: $p^2 = 0.16$ (160), $2pq = 0.48$ (480), $q^2 = 0.36$ (360).
 - The observed and expected frequencies are identical, suggesting the population is in Hardy-Weinberg equilibrium.
 
 If instead the observed numbers were 100 RR, 500 Rr, 400 rr:
-- $q = \sqrt{0.4} = 0.632$, $p = 0.368$.
+- $q = \sqrt{0.4} = 0.632$$p = 0.368$.
 - Expected: $p^2 = 0.135$ (135), $2pq = 0.465$ (465), $q^2 = 0.400$ (400).
 - Observed: $p^2 = 0.100$ (100), $2pq = 0.500$ (500), $q^2 = 0.400$ (400).
 - The excess of heterozygotes and deficit of homozygous dominants suggests a possible selective advantage for heterozygotes (heterozygote advantage) or non-random mating.
@@ -120,12 +120,12 @@ Natural selection is the differential survival and reproduction of individuals d
 
 Mutation is the ultimate source of new alleles and genetic variation. Without mutation, there would be no raw material for natural selection to act upon.
 
-| Feature            | Description                                                                                                                   |
+| Feature | Description |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| Rate               | Typically low: approximately $10^{-6}$ per gene per generation for point mutations                                            |
-| Types              | Point mutations (substitution), insertions, deletions, frameshifts, chromosome mutations (duplication, inversion, translocation) |
-| Effect on fitness  | Most mutations are neutral or harmful; a small fraction are beneficial                                                        |
-| Randomness         | Mutations occur randomly with respect to the needs of the organism -- they are not directed by the environment                   |
+| Rate | low: approximately $10^{-6}$ per gene per generation for point mutations |
+| Types | Point mutations (substitution), insertions, deletions, frameshifts, chromosome mutations (duplication, inversion, translocation) |
+| Effect on fitness | Most mutations are neutral or harmful; a small fraction are beneficial |
+| Randomness | Mutations occur randomly with respect to the needs of the organism -- they are not directed by the environment |
 
 **Mutation and natural selection combined:**
 
@@ -159,13 +159,13 @@ Example: The Amish population in Pennsylvania was founded by approximately 200 i
 
 **Genetic drift vs natural selection:**
 
-| Feature              | Genetic Drift                                      | Natural Selection                                  |
+| Feature | Genetic Drift | Natural Selection |
 | -------------------- | -------------------------------------------------- | ------------------------------------------------- |
-| Direction            | Random (no direction)                              | Non-random (directional)                          |
-| Effect on fitness    | Can increase, decrease, or have no effect          | Consistently increases fitness (adaptation)       |
-| Population size      | Strongest in small populations                     | Operates in all population sizes                  |
-| Predictability       | Unpredictable                                      | Predictable (favours advantageous traits)         |
-| Speed                | Can be rapid in very small populations             | Generally slower (unless selection is very strong) |
+| Direction | Random (no direction) | Non-random (directional) |
+| Effect on fitness | Can increase, decrease, or have no effect | Consistently increases fitness (adaptation) |
+| Population size | Strongest in small populations | Operates in all population sizes |
+| Predictability | Unpredictable | Predictable (favours advantageous traits) |
+| Speed | Can be rapid in very small populations | Generally slower (unless selection is very strong) |
 
 ### Gene Flow
 
@@ -179,11 +179,11 @@ Gene flow (migration) is the movement of alleles between populations through the
 
 Non-random mating changes genotype frequencies (but not allele frequencies) in a population.
 
-| Type               | Description                                                                                            | Effect                                           |
+| Type | Description | Effect |
 | ------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
-| Inbreeding         | Mating between closely related individuals                                                              | Increases homozygosity; increases expression of recessive deleterious alleles |
+| Inbreeding | Mating between closely related individuals | Increases homozygosity; increases expression of recessive deleterious alleles |
 | Assortative mating | Individuals choose mates with similar phenotypes (positive assortative) or different phenotypes (negative assortative) | Positive assortative: increases homozygosity. Negative assortative: increases heterozygosity |
-| Sexual selection   | Individuals choose mates based on specific traits (e.g., peacock tail size)                            | Alleles for preferred traits increase in frequency; may reduce overall fitness (handicap principle) |
+| Sexual selection | Individuals choose mates based on specific traits (e.g., peacock tail size) | Alleles for preferred traits increase in frequency; may reduce overall fitness (handicap principle) |
 
 ---
 
@@ -191,7 +191,7 @@ Non-random mating changes genotype frequencies (but not allele frequencies) in a
 
 ### What is Speciation?
 
-Speciation is the formation of new species from existing ones. A species is typically defined as a group of organisms that can interbreed to produce fertile offspring under natural conditions.
+Speciation is the formation of new species from existing ones. A species is defined as a group of organisms that can interbreed to produce fertile offspring under natural conditions.
 
 ### Reproductive Isolation
 
@@ -199,21 +199,21 @@ For speciation to occur, gene flow between populations must be reduced or elimin
 
 **Pre-zygotic barriers (prevent mating or fertilisation):**
 
-| Barrier Type          | Description                                                                                                      |
+| Barrier Type | Description |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Habitat isolation     | Populations live in different habitats within the same geographic area and rarely encounter each other          |
-| Temporal isolation    | Populations breed at different times (different seasons, different times of day)                                  |
-| Behavioural isolation | Populations have different courtship rituals, songs, or displays that prevent interbreeding                        |
-| Mechanical isolation  | Physical differences in reproductive structures prevent successful mating                                          |
-| Gametic isolation     | Sperm and egg are incompatible; even if mating occurs, fertilisation does not happen                               |
+| Habitat isolation | Populations live in different habitats within the same geographic area and rarely encounter each other |
+| Temporal isolation | Populations breed at different times (different seasons, different times of day) |
+| Behavioural isolation | Populations have different courtship rituals, songs, or displays that prevent interbreeding |
+| Mechanical isolation | Physical differences in reproductive structures prevent successful mating |
+| Gametic isolation | Sperm and egg are incompatible; even if mating occurs, fertilisation does not happen |
 
 **Post-zygotic barriers (prevent fertile offspring):**
 
-| Barrier Type               | Description                                                                                                      |
+| Barrier Type | Description |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Hybrid inviability         | Hybrid offspring do not survive to adulthood                                                                     |
-| Hybrid sterility           | Hybrid offspring are sterile (e.g., mule -- cross between horse and donkey)                                       |
-| Hybrid breakdown           | First-generation hybrids are fertile, but second-generation hybrids have reduced fitness                          |
+| Hybrid inviability | Hybrid offspring do not survive to adulthood |
+| Hybrid sterility | Hybrid offspring are sterile (e.g., mule -- cross between horse and donkey) |
+| Hybrid breakdown | First-generation hybrids are fertile, but second-generation hybrids have reduced fitness |
 
 ### Allopatric Speciation
 
@@ -246,7 +246,7 @@ Sympatric speciation occurs without geographic separation. It is less common tha
 
 ### Adaptive Radiation
 
-Adaptive radiation is the rapid diversification of a single ancestral species into many different species, each adapted to a different ecological niche. This typically occurs when a species colonises a new area with many unoccupied niches.
+Adaptive radiation is the rapid diversification of a single ancestral species into many different species, each adapted to a different ecological niche. This occurs when a species colonises a new area with many unoccupied niches.
 
 **Classic example: Darwin's finches (Galapagos Islands)**
 
@@ -270,12 +270,12 @@ Adaptive radiation is the rapid diversification of a single ancestral species in
 
 **Transitional fossils:**
 
-| Fossil             | Age (approximate) | Transitional Features                                                                                     |
+| Fossil | Age (approximate) | Transitional Features |
 | ------------------ | ----------------- | --------------------------------------------------------------------------------------------------------- |
-| _Tiktaalik_        | 375 million years | Fish-like fins with limb-like bones; intermediate between fish and tetrapods (four-legged vertebrates)    |
-| _Archaeopteryx_    | 150 million years | Feathers and wings (bird-like); teeth, long bony tail, claws on wings (reptile-like)                      |
-| _Ambulocetus_      | 50 million years  | Four legs for walking on land (terrestrial); whale-like skull and inner ear structure (aquatic)            |
-| _Australopithecus_ | 3-4 million years | Ape-like skull and teeth; upright bipedal posture (human-like)                                             |
+| _Tiktaalik_ | 375 million years | Fish-like fins with limb-like bones; intermediate between fish and tetrapods (four-legged vertebrates) |
+| _Archaeopteryx_ | 150 million years | Feathers and wings (bird-like); teeth, long bony tail, claws on wings (reptile-like) |
+| _Ambulocetus_ | 50 million years | Four legs for walking on land (terrestrial); whale-like skull and inner ear structure (aquatic) |
+| _Australopithecus_ | 3-4 million years | Ape-like skull and teeth; upright bipedal posture (human-like) |
 
 **Limitations of the fossil record:**
 
@@ -288,21 +288,21 @@ Adaptive radiation is the rapid diversification of a single ancestral species in
 
 **Homologous structures:** Structures derived from a common ancestor, sharing the same underlying anatomy despite potentially different functions. They indicate **divergent evolution**.
 
-| Structure         | Organism    | Function          | Underlying Anatomy                    |
+| Structure | Organism | Function | Underlying Anatomy |
 | ----------------- | ----------- | ----------------- | ------------------------------------- |
-| Pentadactyl limb  | Human       | Grasping          | Humerus, radius, ulna, carpals, metacarpals, phalanges |
-| Pentadactyl limb  | Bat         | Flying            | Same basic bone arrangement           |
-| Pentadactyl limb  | Whale       | Swimming          | Same basic bone arrangement           |
-| Pentadactyl limb  | Horse       | Running           | Same basic bone arrangement           |
+| Pentadactyl limb | Human | Grasping | Humerus, radius, ulna, carpals, metacarpals, phalanges |
+| Pentadactyl limb | Bat | Flying | Same basic bone arrangement |
+| Pentadactyl limb | Whale | Swimming | Same basic bone arrangement |
+| Pentadactyl limb | Horse | Running | Same basic bone arrangement |
 
 **Analogous structures:** Structures with similar functions but different evolutionary origins. They indicate **convergent evolution** -- unrelated species evolve similar traits independently due to similar environmental pressures.
 
-| Structure         | Organism    | Function          | Evolutionary Origin                     |
+| Structure | Organism | Function | Evolutionary Origin |
 | ----------------- | ----------- | ----------------- | --------------------------------------- |
-| Wing              | Bird        | Flying            | Modified forelimb (bones present)       |
-| Wing              | Insect      | Flying            | Extension of exoskeleton (no bones)     |
-| Eye               | Octopus     | Vision            | Pinhole eye                              |
-| Eye               | Human       | Vision            | Camera eye (lens, retina)               |
+| Wing | Bird | Flying | Modified forelimb (bones present) |
+| Wing | Insect | Flying | Extension of exoskeleton (no bones) |
+| Eye | Octopus | Vision | Pinhole eye |
+| Eye | Human | Vision | Camera eye (lens, retina) |
 
 ### Molecular Biology
 
@@ -329,11 +329,11 @@ Mnemonic: "Dear King Philip Came Over For Good Soup"
 
 Proposed by Carl Woese in 1990, based on ribosomal RNA (rRNA) sequencing.
 
-| Domain       | Cell Type   | Membrane Lipids              | Cell Wall        | Gene Structure            | Examples                          |
+| Domain | Cell Type | Membrane Lipids | Cell Wall | Gene Structure | Examples |
 | ------------ | ----------- | ---------------------------- | ---------------- | ------------------------- | --------------------------------- |
-| Bacteria     | Prokaryotic | Unbranched fatty acid chains | Peptidoglycan    | Single circular chromosome | _E. coli_, _Bacillus_, _Cyanobacteria_ |
-| Archaea      | Prokaryotic | Branched isoprene chains     | Pseudopeptidoglycan or no wall | Single circular chromosome | Methanogens, halophiles, thermophiles |
-| Eukarya      | Eukaryotic  | Ester-linked fatty acids     | Cellulose (plants), chitin (fungi), none (animals) | Linear chromosomes in nucleus | Animals, plants, fungi, protists |
+| Bacteria | Prokaryotic | Unbranched fatty acid chains | Peptidoglycan | Single circular chromosome | _E. Coli_, _Bacillus_, _Cyanobacteria_ |
+| Archaea | Prokaryotic | Branched isoprene chains | Pseudopeptidoglycan or no wall | Single circular chromosome | Methanogens, halophiles, thermophiles |
+| Eukarya | Eukaryotic | Ester-linked fatty acids | Cellulose (plants), chitin (fungi), none (animals) | Linear chromosomes in nucleus | Animals, plants, fungi, protists |
 
 **Key distinction between Bacteria and Archaea:**
 
@@ -345,13 +345,13 @@ Although both are prokaryotic, Archaea are more closely related to Eukarya than 
 
 ### The Five-Kingdom System
 
-| Kingdom    | Cell Type | Cell Wall           | Nutrition                      | Examples                                    |
+| Kingdom | Cell Type | Cell Wall | Nutrition | Examples |
 | ---------- | --------- | ------------------- | ------------------------------ | ------------------------------------------- |
-| Animalia   | Eukaryotic | None                | Heterotrophic (ingestion)      | Mammals, insects, fish, birds               |
-| Plantae    | Eukaryotic | Cellulose           | Autotrophic (photosynthesis)   | Flowering plants, conifers, mosses, ferns   |
-| Fungi      | Eukaryotic | Chitin              | Heterotrophic (absorption)     | Mushrooms, yeasts, moulds, _Penicillium_    |
-| Protoctista | Eukaryotic | Varies (some have, some do not) | Autotrophic or heterotrophic | Amoeba, Paramecium, _Euglena_, algae       |
-| Prokaryotae | Prokaryotic | Peptidoglycan (bacteria) | Autotrophic or heterotrophic | Bacteria, cyanobacteria                     |
+| Animalia | Eukaryotic | None | Heterotrophic (ingestion) | Mammals, insects, fish, birds |
+| Plantae | Eukaryotic | Cellulose | Autotrophic (photosynthesis) | Flowering plants, conifers, mosses, ferns |
+| Fungi | Eukaryotic | Chitin | Heterotrophic (absorption) | Mushrooms, yeasts, moulds, _Penicillium_ |
+| Protoctista | Eukaryotic | Varies (some have, some do not) | Autotrophic or heterotrophic | Amoeba, Paramecium, _Euglena_, algae |
+| Prokaryotae | Prokaryotic | Peptidoglycan (bacteria) | Autotrophic or heterotrophic | Bacteria, cyanobacteria |
 
 ### Binomial Nomenclature
 
@@ -366,7 +366,7 @@ The system of naming species using two Latin/Latinised words:
 - Every species has a unique binomial name
 - Names are universally recognised (same name used worldwide)
 - Names are in Latin or Latinised Greek
-- The genus name may be abbreviated after first use (e.g., _H. sapiens_)
+- The genus name may be abbreviated after first use (e.g., _H. Sapiens_)
 - If subspecies exist, a third name is added (trinomial), e.g., _Homo sapiens sapiens_
 
 ### Phylogenetic Trees
@@ -389,11 +389,11 @@ A phylogenetic tree is a diagram that represents the evolutionary relationships 
 
 **Methods of constructing phylogenetic trees:**
 
-| Method                 | Data Used                                    | Description                                                                                     |
+| Method | Data Used | Description |
 | ---------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Morphological analysis | Physical characteristics (bones, organs)     | Compare shared derived characteristics (synapomorphies); traditional method                     |
-| Molecular analysis     | DNA sequences, protein sequences, rRNA        | Compare nucleotide or amino acid sequences; count differences to estimate relatedness           |
-| Molecular clock        | DNA or protein sequences + known mutation rate | Use the number of genetic differences to estimate the TIME since divergence from a common ancestor |
+| Morphological analysis | Physical characteristics (bones, organs) | Compare shared derived characteristics (synapomorphies); traditional method |
+| Molecular analysis | DNA sequences, protein sequences, rRNA | Compare nucleotide or amino acid sequences; count differences to estimate relatedness |
+| Molecular clock | DNA or protein sequences + known mutation rate | Use the number of genetic differences to estimate the TIME since divergence from a common ancestor |
 
 ---
 
@@ -401,11 +401,11 @@ A phylogenetic tree is a diagram that represents the evolutionary relationships 
 
 ### Types of Adaptation
 
-| Adaptation Type  | Description                                                                 | Example                                                                                     |
+| Adaptation Type | Description | Example |
 | ---------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Structural       | Physical features of an organism that enhance survival                     | Camouflage (peppered moth); thick fur (Arctic animals); streamlined body (dolphins)        |
-| Physiological    | Internal processes that enhance survival                                   | Venom production (snakes); antifreeze proteins (Arctic fish); efficient kidneys (desert animals) |
-| Behavioural      | Actions or patterns of behaviour that enhance survival                     | Migration (birds); hibernation (bears); courtship displays (birds of paradise); alarm calls (meerkats) |
+| Structural | Physical features of an organism that enhance survival | Camouflage (peppered moth); thick fur (Arctic animals); streamlined body (dolphins) |
+| Physiological | Internal processes that enhance survival | Venom production (snakes); antifreeze proteins (Arctic fish); efficient kidneys (desert animals) |
+| Behavioural | Actions or patterns of behaviour that enhance survival | Migration (birds); hibernation (bears); courtship displays (birds of paradise); alarm calls (meerkats) |
 
 ### Antibiotic Resistance in Detail
 
@@ -422,13 +422,13 @@ Antibiotic resistance is one of the most important examples of natural selection
 
 **Mechanisms of antibiotic resistance:**
 
-| Mechanism                    | Description                                                                                              |
+| Mechanism | Description |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Enzymatic inactivation       | Bacteria produce enzymes that break down or modify the antibiotic (e.g., beta-lactamase breaks down penicillin) |
-| Efflux pumps                 | Bacteria pump the antibiotic out of the cell before it can reach its target                               |
-| Target modification          | Bacteria alter the molecular target of the antibiotic so it can no longer bind effectively                |
-| Reduced permeability         | Bacteria modify their cell membrane or porins to reduce antibiotic entry                                   |
-| Biofilm formation           | Bacteria form a protective matrix (biofilm) that slows antibiotic penetration                               |
+| Enzymatic inactivation | Bacteria produce enzymes that break down or modify the antibiotic (e.g., beta-lactamase breaks down penicillin) |
+| Efflux pumps | Bacteria pump the antibiotic out of the cell before it can reach its target |
+| Target modification | Bacteria alter the molecular target of the antibiotic so it can no longer bind effectively |
+| Reduced permeability | Bacteria modify their cell membrane or porins to reduce antibiotic entry |
+| Biofilm formation | Bacteria form a protective matrix (biofilm) that slows antibiotic penetration |
 
 **Factors contributing to antibiotic resistance:**
 
@@ -438,7 +438,7 @@ Antibiotic resistance is one of the most important examples of natural selection
 - Poor infection control in hospitals
 - Global travel facilitating the spread of resistant strains
 
-**MRSA (Methicillin-Resistant _Staphylococcus aureus_):** A strain of _S. aureus_ that is resistant to methicillin and many other antibiotics. It produces an altered penicillin-binding protein (PBP2a) that does not bind methicillin. MRSA is a major cause of hospital-acquired infections.
+**MRSA (Methicillin-Resistant _Staphylococcus aureus_):** A strain of _S. Aureus_ that is resistant to methicillin and many other antibiotics. It produces an altered penicillin-binding protein (PBP2a) that does not bind methicillin. MRSA is a major cause of hospital-acquired infections.
 
 ---
 
@@ -458,7 +458,7 @@ Where $O$ = observed frequency, $E$ = expected frequency.
 2. Calculate $\chi^2$ by summing $(O - E)^2 / E$ for each genotype
 3. Compare to the critical value at the appropriate degrees of freedom (df = number of genotypes - number of alleles)
 4. For two alleles, df = 3 - 2 = 1. The critical value at p = 0.05 is 3.84
-5. If $\chi^2 > 3.84$, the deviation from Hardy-Weinberg is statistically significant, suggesting evolution is occurring
+5. If $\chi^2 > 3.84$The deviation from Hardy-Weinberg is statistically significant, suggesting evolution is occurring
 
 ### Worked Example: Chi-Square Test
 
@@ -511,34 +511,34 @@ Coevolution occurs when two or more species reciprocally affect each other's evo
 
 Predators and prey are locked in an evolutionary "arms race." Adaptations in one drive counter-adaptations in the other.
 
-| Predator Adaptation     | Prey Counter-Adaptation          |
+| Predator Adaptation | Prey Counter-Adaptation |
 | ----------------------- | -------------------------------- |
-| Speed (cheetah)         | Speed and agility (gazelle)       |
-| Camouflage (tiger)      | Camouflage (deer fawns)           |
-| Venom (snakes)          | Venom resistance (some prey)      |
+| Speed (cheetah) | Speed and agility (gazelle) |
+| Camouflage (tiger) | Camouflage (deer fawns) |
+| Venom (snakes) | Venom resistance (some prey) |
 | Cooperative hunting (wolves) | Group vigilance and defence (wildebeest) |
-| Echolocation (bats)     | Jamming signals (moths)           |
+| Echolocation (bats) | Jamming signals (moths) |
 
 **2. Plant-herbivore coevolution:**
 
 Plants evolve defences against herbivores; herbivores evolve counter-adaptations to overcome these defences.
 
-| Plant Defence           | Herbivore Counter-Adaptation         |
+| Plant Defence | Herbivore Counter-Adaptation |
 | ----------------------- | ----------------------------------- |
-| Physical (thorns, spines) | Modified mouthparts to avoid thorns  |
+| Physical (thorns, spines) | Modified mouthparts to avoid thorns |
 | Chemical (toxins, tannins) | Detoxification enzymes; specialised gut flora |
-| Silica in grass leaves   | Wearing down of teeth (grazing adaptation) |
+| Silica in grass leaves | Wearing down of teeth (grazing adaptation) |
 | Mimicry (non-toxic species mimicking toxic ones) | Learning to avoid both |
 
 **3. Mutualistic coevolution:**
 
 Species that have a mutually beneficial relationship evolve in tandem, each becoming increasingly specialised for the interaction.
 
-| Example                          | Description                                                                                                               |
+| Example | Description |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Flowers and pollinators          | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
-| Acacia trees and acacia ants     | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores and competing plants. |
-| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae (algae) provide photosynthate (sugars) and oxygen. This mutualism is essential for coral reef formation. |
+| Flowers and pollinators | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
+| Acacia trees and acacia ants | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores and competing plants. |
+| Coral and zooxanthellae | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae (algae) provide photosynthate (sugars) and oxygen. This mutualism is essential for coral reef formation. |
 | Mycorrhizal fungi and plant roots | Fungi provide mineral nutrients (especially phosphorus) to the plant; the plant provides carbohydrates to the fungus. Both partners have evolved specialised structures for this exchange. |
 
 ---
@@ -549,14 +549,14 @@ Species that have a mutually beneficial relationship evolve in tandem, each beco
 
 **Fossil hominins (members of the human lineage after divergence from chimpanzees):**
 
-| Species                    | Age (approximate) | Key Features                                                                                                               |
+| Species | Age (approximate) | Key Features |
 | -------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| _Sahelanthropus tchadensis_ | 7 million years   | Small brain (~360 cm$^3$); bipedal (foramen magnum position); ape-like features                                         |
-| _Australopithecus afarensis_ | 3-4 million years | Bipedal but with ape-like proportions; small brain (~400-500 cm$^3$); "Lucy" is the most famous specimen                   |
-| _Homo habilis_              | 2-2.4 million years | Larger brain (~600 cm$^3$); first stone tool use (Oldowan tools); reduced canine teeth                                 |
-| _Homo erectus_              | 1.8 million - 100,000 years | Larger brain (~900 cm$^3$); more sophisticated tools (Acheulean hand axes); first to migrate out of Africa; use of fire |
-| _Homo neanderthalensis_ (Neanderthals) | 400,000 - 40,000 years | Large brain (~1,500 cm$^3$); robust body; complex tools; burial of the dead; interbred with _Homo sapiens_             |
-| _Homo sapiens_              | 300,000 years ago to present | Large brain (~1,350 cm$^3$); gracile skeleton; complex language; sophisticated tools and art; global distribution      |
+| _Sahelanthropus tchadensis_ | 7 million years | Small brain (~360 cm$^3$); bipedal (foramen magnum position); ape-like features |
+| _Australopithecus afarensis_ | 3-4 million years | Bipedal but with ape-like proportions; small brain (~400-500 cm$^3$); "Lucy" is the most famous specimen |
+| _Homo habilis_ | 2-2.4 million years | Larger brain (~600 cm$^3$); first stone tool use (Oldowan tools); reduced canine teeth |
+| _Homo erectus_ | 1.8 million - 100,000 years | Larger brain (~900 cm$^3$); more sophisticated tools (Acheulean hand axes); first to migrate out of Africa; use of fire |
+| _Homo neanderthalensis_ (Neanderthals) | 400,000 - 40,000 years | Large brain (~1,500 cm$^3$); robust body; complex tools; burial of the dead; interbred with _Homo sapiens_ |
+| _Homo sapiens_ | 300,000 years ago to present | Large brain (~1,350 cm$^3$); gracile skeleton; complex language; sophisticated tools and art; global distribution |
 
 ### Key Trends in Human Evolution
 
@@ -571,7 +571,7 @@ Species that have a mutually beneficial relationship evolve in tandem, each beco
 
 ## Common Pitfalls
 
-1. **Writing that evolution is "progressive" or "goal-directed":** Evolution has no direction, goal, or endpoint. It is simply the change in allele frequencies in a population over time. Natural selection produces organisms that are better adapted to their CURRENT environment, not "more advanced" or "more perfect" organisms.
+1. **Writing that evolution is "progressive" or "goal-directed":** Evolution has no direction, goal, or endpoint. It is the change in allele frequencies in a population over time. Natural selection produces organisms that are better adapted to their CURRENT environment, not "more advanced" or "more perfect" organisms.
 
 2. **Confusing Lamarckism with Darwinian evolution:** Lamarck proposed the inheritance of acquired characteristics (e.g., a giraffe stretches its neck, and its offspring inherit longer necks). Darwin proposed natural selection acting on random, heritable variation. Only Darwinian evolution is supported by evidence.
 
@@ -626,9 +626,9 @@ If you get this wrong, revise: Speciation -- Allopatric Speciation; Reproductive
 3. **Independent evolution:** Natural selection, mutation, and genetic drift act independently on each population. Allele frequencies diverge over time. For example, lizards on the dry side may evolve longer legs for running on open ground, while lizards on the vegetated side may develop better climbing ability.
 
 4. **Accumulation of reproductive isolation:** Over thousands of generations, pre-zygotic barriers may develop:
-   - **Behavioural isolation:** Different courtship displays or pheromones
-   - **Temporal isolation:** Different breeding seasons
-   - **Mechanical isolation:** Differences in reproductive structures
+ - **Behavioural isolation:** Different courtship displays or pheromones
+ - **Temporal isolation:** Different breeding seasons
+ - **Mechanical isolation:** Differences in reproductive structures
 
 5. **Complete speciation:** Even if the lava flow cools and becomes passable, accumulated differences prevent successful interbreeding. The two populations are now separate species.
 
@@ -680,7 +680,7 @@ Where $O$ = observed frequency, $E$ = expected frequency.
 2. Calculate $\chi^2$ by summing $(O - E)^2 / E$ for each genotype
 3. Compare to the critical value at the appropriate degrees of freedom (df = number of genotypes - number of alleles)
 4. For two alleles, df = 3 - 2 = 1. The critical value at p = 0.05 is 3.84
-5. If $\chi^2 > 3.84$, the deviation from Hardy-Weinberg is statistically significant, suggesting evolution is occurring
+5. If $\chi^2 > 3.84$The deviation from Hardy-Weinberg is statistically significant, suggesting evolution is occurring
 
 ### Worked Example: Chi-Square Test
 
@@ -733,32 +733,32 @@ Coevolution occurs when two or more species reciprocally affect each other's evo
 
 Predators and prey are locked in an evolutionary "arms race." Adaptations in one drive counter-adaptations in the other.
 
-| Predator Adaptation     | Prey Counter-Adaptation          |
+| Predator Adaptation | Prey Counter-Adaptation |
 | ----------------------- | -------------------------------- |
-| Speed (cheetah)         | Speed and agility (gazelle)       |
-| Camouflage (tiger)        | Camouflage (deer fawns)           |
-| Venom (snakes)          | Venom resistance (some prey)      |
+| Speed (cheetah) | Speed and agility (gazelle) |
+| Camouflage (tiger) | Camouflage (deer fawns) |
+| Venom (snakes) | Venom resistance (some prey) |
 | Cooperative hunting (wolves) | Group vigilance and defence (wildebeest) |
-| Echolocation (bats)     | Jamming signals (moths)           |
+| Echolocation (bats) | Jamming signals (moths) |
 
 **2. Plant-herbivore coevolution:**
 
 Plants evolve defences against herbivores; herbivores evolve counter-adaptations to overcome these defences.
 
-| Plant Defence           | Herbivore Counter-Adaptation         |
+| Plant Defence | Herbivore Counter-Adaptation |
 | ----------------------- | ----------------------------------- |
-| Physical (thorns, spines) | Modified mouthparts to avoid thorns  |
+| Physical (thorns, spines) | Modified mouthparts to avoid thorns |
 | Chemical (toxins, tannins) | Detoxification enzymes; specialised gut flora |
-| Silica in grass leaves   | Wearing down of teeth (grazing adaptation) |
+| Silica in grass leaves | Wearing down of teeth (grazing adaptation) |
 | Mimicry (non-toxic species mimicking toxic ones) | Learning to avoid both |
 
 **3. Mutualistic coevolution:**
 
-| Example                          | Description                                                                                                               |
+| Example | Description |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Flowers and pollinators          | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
-| Acacia trees and acacia ants     | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores. |
-| Coral and zooxanthellae          | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae provide photosynthate and oxygen. Essential for coral reef formation. |
+| Flowers and pollinators | Flower shape, colour, and scent evolve to attract specific pollinators; pollinator mouthparts evolve to access nectar efficiently. Orchids and their specific bee pollinators are a classic example. |
+| Acacia trees and acacia ants | The tree provides food (Beltian bodies) and shelter (hollow thorns); the ants defend the tree against herbivores. |
+| Coral and zooxanthellae | Coral provides shelter and $\mathrm{CO}_2$; zooxanthellae provide photosynthate and oxygen. Essential for coral reef formation. |
 
 ---
 
@@ -768,14 +768,14 @@ Plants evolve defences against herbivores; herbivores evolve counter-adaptations
 
 **Fossil hominins:**
 
-| Species                    | Age (approximate) | Key Features                                                                                                               |
+| Species | Age (approximate) | Key Features |
 | -------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| _Sahelanthropus tchadensis_ | 7 million years   | Small brain; bipedal (foramen magnum position); ape-like features                                         |
-| _Australopithecus afarensis_ | 3-4 million years | Bipedal but with ape-like proportions; small brain; "Lucy" is the most famous specimen                   |
-| _Homo habilis_              | 2-2.4 million years | Larger brain (~600 cm$^3$); first stone tool use (Oldowan tools); reduced canine teeth                                 |
-| _Homo erectus_              | 1.8M - 100k years | Larger brain (~900 cm$^3$); Acheulean hand axes; first to migrate out of Africa; use of fire              |
-| _Homo neanderthalensis_      | 400k - 40k years | Large brain (~1500 cm$^3$); robust body; complex tools; burial of dead; interbred with _Homo sapiens_ |
-| _Homo sapiens_              | 300k years ago    | Large brain (~1350 cm$^3$); complex language; sophisticated tools and art; global distribution          |
+| _Sahelanthropus tchadensis_ | 7 million years | Small brain; bipedal (foramen magnum position); ape-like features |
+| _Australopithecus afarensis_ | 3-4 million years | Bipedal but with ape-like proportions; small brain; "Lucy" is the most famous specimen |
+| _Homo habilis_ | 2-2.4 million years | Larger brain (~600 cm$^3$); first stone tool use (Oldowan tools); reduced canine teeth |
+| _Homo erectus_ | 1.8M - 100k years | Larger brain (~900 cm$^3$); Acheulean hand axes; first to migrate out of Africa; use of fire |
+| _Homo neanderthalensis_ | 400k - 40k years | Large brain (~1500 cm$^3$); robust body; complex tools; burial of dead; interbred with _Homo sapiens_ |
+| _Homo sapiens_ | 300k years ago | Large brain (~1350 cm$^3$); complex language; sophisticated tools and art; global distribution |
 
 **Key trends in human evolution:**
 
@@ -816,13 +816,13 @@ Where:
 
 **Assumptions for Hardy-Weinberg equilibrium (NONE of these are truly met in nature):**
 
-| Assumption                | Description                                                                                                               | If Violated...                           |
+| Assumption | Description | If Violated... |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| No mutations              | No new alleles are created by mutation                                                                                   | Mutation introduces new alleles, changing allele frequencies |
-| No gene flow (migration)  | No individuals enter or leave the population                                                                             | Immigration or emigration introduces or removes alleles |
-| Random mating             | All individuals have an equal chance of mating with any other individual (no assortative mating or sexual selection)     | Non-random mating changes genotype frequencies (but not necessarily allele frequencies) |
-| No natural selection       | All genotypes have equal survival and reproductive success                                                               | Natural selection favours certain alleles over others, changing allele frequencies |
-| Large population size      | The population is infinitely large                                                                                       | Genetic drift has a significant effect in small populations, causing random changes in allele frequencies |
+| No mutations | No new alleles are created by mutation | Mutation introduces new alleles, changing allele frequencies |
+| No gene flow (migration) | No individuals enter or leave the population | Immigration or emigration introduces or removes alleles |
+| Random mating | All individuals have an equal chance of mating with any other individual (no assortative mating or sexual selection) | Non-random mating changes genotype frequencies (but not necessarily allele frequencies) |
+| No natural selection | All genotypes have equal survival and reproductive success | Natural selection favours certain alleles over others, changing allele frequencies |
+| Large population size | The population is infinitely large | Genetic drift has a significant effect in small populations, causing random changes in allele frequencies |
 
 ### Worked Example: Sickle Cell Anaemia and Malaria
 
@@ -845,11 +845,11 @@ This maintains both alleles in the population at relatively high frequencies (ba
 
 Genetic drift is the random change in allele frequencies in a population due to chance events. It has a greater effect in small populations.
 
-| Type of Genetic Drift    | Description                                                                                                               |
+| Type of Genetic Drift | Description |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Bottleneck effect          | A population is drastically reduced in size (by natural disaster, hunting, habitat destruction); the surviving individuals are not representative of the original gene pool; allele frequencies change by chance; genetic diversity is reduced |
-| Founder effect            | A small group of individuals colonises a new area (e.g., island); the gene pool of the new population is determined by the alleles carried by the founders; rare alleles in the source population may become common in the new population |
-| Example -- bottleneck     | Northern elephant seals: hunted to near extinction in the 19th century (population reduced to ~20 individuals); recovered to over 100,000 but have much less genetic diversity than southern elephant seals |
+| Bottleneck effect | A population is drastically reduced in size (by natural disaster, hunting, habitat destruction); the surviving individuals are not representative of the original gene pool; allele frequencies change by chance; genetic diversity is reduced |
+| Founder effect | A small group of individuals colonises a new area (e.g., island); the gene pool of the new population is determined by the alleles carried by the founders; rare alleles in the source population may become common in the new population |
+| Example -- bottleneck | Northern elephant seals: hunted to near extinction in the 19th century (population reduced to ~20 individuals); recovered to over 100,000 but have much less genetic diversity than southern elephant seals |
 | Example -- founder effect | Amish population in Pennsylvania: founded by ~200 individuals; high frequency of Ellis-van Creveld syndrome (a rare form of dwarfism caused by a recessive allele) due to the founder effect and subsequent inbreeding |
 
 ---
@@ -858,30 +858,30 @@ Genetic drift is the random change in allele frequencies in a population due to 
 
 ### Hominin Timeline
 
-| Species                  | Approximate Age        | Key Features                                                                                                               | Significance                                                                                                             |
+| Species | Approximate Age | Key Features | Significance |
 | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| _Sahelanthropus tchadensis_ | ~7 million years ago   | Small brain (~360 cm$^3$); foramen magnum positioned underneath the skull (suggesting bipedalism); ape-like features         | One of the oldest known ancestors after the split from the chimpanzee lineage                                           |
-| _Australopithecus afarensis_ (Lucy) | ~3.9-2.9 million years ago | Brain ~380-550 cm$^3$; bipedal pelvis and leg bones; ape-like face and brain size; long arms                          | Clear evidence of bipedalism before significant brain enlargement                                                        |
-| _Australopithecus africanus_ | ~3-2 million years ago | Brain ~400-500 cm$^3$; more human-like face than _A. afarensis_; bipedal                                               | Gracile (slender) australopithecine                                                                                      |
-| _Paranthropus boisei_      | ~2.3-1.2 million years ago | Brain ~500-550 cm$^3$; massive jaw and large molars for chewing tough plant material (robust australopithecine)            | Specialised herbivore; went extinct; represents a side branch, not a direct human ancestor                               |
-| _Homo habilis_             | ~2.4-1.4 million years ago | Brain ~510-687 cm$^3$ (larger than australopithecines); first evidence of stone tool use (Oldowan tools)                  | "Handy man"; likely the first member of the genus _Homo_; marks the beginning of tool use                                |
-| _Homo erectus_             | ~1.9 million - 110,000 years ago | Brain ~600-1250 cm$^3$; first to migrate out of Africa; used fire; more sophisticated tools (Acheulean handaxes); larger body size | First hominin to leave Africa; first to use fire (cooking food may have supported brain enlargement)                    |
-| _Homo heidelbergensis_     | ~700,000-200,000 years ago | Brain ~1100-1400 cm$^3$; likely ancestor of both _Homo neanderthalensis_ and _Homo sapiens_                              | Intermediate between _H. erectus_ and modern humans; first evidence of deliberate burial of the dead                     |
-| _Homo neanderthalensis_ (Neanderthals) | ~400,000-40,000 years ago | Brain ~1200-1750 cm$^3$ (larger than modern humans on average); robust body; lived in Europe and western Asia; used complex tools; possibly had language; buried their dead | Closest extinct relatives of modern humans; interbred with _H. sapiens_ (1-4% of modern non-African human DNA is of Neanderthal origin) |
-| _Homo sapiens_             | ~300,000 years ago to present | Brain ~1200-1500 cm$^3$; gracile skeleton; prominent chin; high forehead; complex language and culture; symbolic art; agriculture; technology | Only surviving hominin species; originated in Africa; migrated worldwide; developed agriculture, civilisation, and technology |
+| _Sahelanthropus tchadensis_ | ~7 million years ago | Small brain (~360 cm$^3$); foramen magnum positioned underneath the skull (suggesting bipedalism); ape-like features | One of the oldest known ancestors after the split from the chimpanzee lineage |
+| _Australopithecus afarensis_ (Lucy) | ~3.9-2.9 million years ago | Brain ~380-550 cm$^3$; bipedal pelvis and leg bones; ape-like face and brain size; long arms | Clear evidence of bipedalism before significant brain enlargement |
+| _Australopithecus africanus_ | ~3-2 million years ago | Brain ~400-500 cm$^3$; more human-like face than _A. Afarensis_; bipedal | Gracile (slender) australopithecine |
+| _Paranthropus boisei_ | ~2.3-1.2 million years ago | Brain ~500-550 cm$^3$; massive jaw and large molars for chewing tough plant material (robust australopithecine) | Specialised herbivore; went extinct; represents a side branch, not a direct human ancestor |
+| _Homo habilis_ | ~2.4-1.4 million years ago | Brain ~510-687 cm$^3$ (larger than australopithecines); first evidence of stone tool use (Oldowan tools) | "Handy man"; likely the first member of the genus _Homo_; marks the beginning of tool use |
+| _Homo erectus_ | ~1.9 million - 110,000 years ago | Brain ~600-1250 cm$^3$; first to migrate out of Africa; used fire; more sophisticated tools (Acheulean handaxes); larger body size | First hominin to leave Africa; first to use fire (cooking food may have supported brain enlargement) |
+| _Homo heidelbergensis_ | ~700,000-200,000 years ago | Brain ~1100-1400 cm$^3$; likely ancestor of both _Homo neanderthalensis_ and _Homo sapiens_ | Intermediate between _H. Erectus_ and modern humans; first evidence of deliberate burial of the dead |
+| _Homo neanderthalensis_ (Neanderthals) | ~400,000-40,000 years ago | Brain ~1200-1750 cm$^3$ (larger than modern humans on average); robust body; lived in Europe and western Asia; used complex tools; possibly had language; buried their dead | Closest extinct relatives of modern humans; interbred with _H. Sapiens_ (1-4% of modern non-African human DNA is of Neanderthal origin) |
+| _Homo sapiens_ | ~300,000 years ago to present | Brain ~1200-1500 cm$^3$; gracile skeleton; prominent chin; high forehead; complex language and culture; symbolic art; agriculture; technology | Only surviving hominin species; originated in Africa; migrated worldwide; developed agriculture, civilisation, and technology |
 
 ### Trends in Human Evolution
 
-| Trend                    | Description                                                                                                               |
+| Trend | Description |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Increasing brain size      | Cranial capacity increased from ~400 cm$^3$ in australopithecines to ~1400 cm$^3$ in modern humans; associated with increased cognitive ability, tool use, language, and social complexity |
-| Bipedalism                 | The foramen magnum moved to the underside of the skull; the spine developed an S-shape; the pelvis became shorter and broader; the femur angled inward; the foot developed arches; freed the hands for tool use and carrying |
+| Increasing brain size | Cranial capacity increased from ~400 cm$^3$ in australopithecines to ~1400 cm$^3$ in modern humans; associated with increased cognitive ability, tool use, language, and social complexity |
+| Bipedalism | The foramen magnum moved to the underside of the skull; the spine developed an S-shape; the pelvis became shorter and broader; the femur angled inward; the foot developed arches; freed the hands for tool use and carrying |
 | Decreasing jaw and tooth size | As tools were used for processing food and cooking made food softer, the need for large jaws and teeth decreased; the jaw became smaller and more parabolic (U-shaped); the chin developed as a by-product of jaw reduction |
-| Flatter face                | The face became flatter as the jaws reduced; the brow ridge became less prominent; the forehead became higher and more vertical |
-| Reduced body hair           | Likely associated with the evolution of sweating for thermoregulation during endurance running in hot African savanna environments |
+| Flatter face | The face became flatter as the jaws reduced; the brow ridge became less prominent; the forehead became higher and more vertical |
+| Reduced body hair | Likely associated with the evolution of sweating for thermoregulation during endurance running in hot African savanna environments |
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Evolution**? Review the [Evolution and Ecology diagnostic test](/docs/dse/Biology/diagnostics/diag-evolution-ecology) which covers evolution topics within the DSE specification.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
@@ -894,12 +894,12 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 Fossils are the preserved remains or traces of organisms that lived in the past. The fossil record provides direct evidence of evolutionary change over time.
 
-| Type of Fossil            | Description                                                                                                               | Example                                 |
+| Type of Fossil | Description | Example |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Body fossils               | Preserved hard parts (bones, teeth, shells) or rarely soft parts (amber, freezing, mineralisation)                    | Dinosaur bones; mammoths preserved in ice |
-| Trace fossils               | Evidence of activity rather than the organism itself                                                                   | Footprints; burrows; coprolites (fossilised faeces) |
-| Casts and moulds           | Organism buried in sediment decays, leaving a mould; minerals fill the mould to form a cast                            | Ammonite casts                           |
-| Amber preservation          | Organism trapped in tree resin that hardens into amber; preserves fine detail of soft tissues                           | Insects in amber                         |
+| Body fossils | Preserved hard parts (bones, teeth, shells) or rarely soft parts (amber, freezing, mineralisation) | Dinosaur bones; mammoths preserved in ice |
+| Trace fossils | Evidence of activity rather than the organism itself | Footprints; burrows; coprolites (fossilised faeces) |
+| Casts and moulds | Organism buried in sediment decays, leaving a mould; minerals fill the mould to form a cast | Ammonite casts |
+| Amber preservation | Organism trapped in tree resin that hardens into amber; preserves fine detail of soft tissues | Insects in amber |
 
 **Limitations of the fossil record:**
 
@@ -911,31 +911,31 @@ Fossils are the preserved remains or traces of organisms that lived in the past.
 
 **Transitional fossils:** Fossils that show intermediate characteristics between two groups of organisms, providing evidence of evolutionary transitions.
 
-| Transitional Fossil   | Transitional Between         | Key Features                                                                                                             |
+| Transitional Fossil | Transitional Between | Key Features |
 | ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| _Tiktaalik_             | Fish and tetrapods           | Fish-like scales and fins, but with a flat head, neck, and limb bones resembling early tetrapods (~375 million years ago) |
-| _Archaeopteryx_         | Reptiles and birds           | Feathers and wishbone like birds, but teeth, long bony tail, and claws like reptiles (~150 million years ago)            |
-| _Australopithecus afarensis_ (Lucy) | Ape-like ancestors and humans | Bipedal pelvis and leg bones, but small brain and ape-like face (~3.2 million years ago)                                 |
-| _Ambulocetus_            | Land mammals and whales      | Legs that could support weight on land, but also adaptations for swimming (~50 million years ago)                          |
-| _Tetrapodophus_          | Reptiles and mammals         | Reptile-like jaw and teeth, but mammal-like ear bones and post-cranial skeleton (~260 million years ago)                  |
+| _Tiktaalik_ | Fish and tetrapods | Fish-like scales and fins, but with a flat head, neck, and limb bones resembling early tetrapods (~375 million years ago) |
+| _Archaeopteryx_ | Reptiles and birds | Feathers and wishbone like birds, but teeth, long bony tail, and claws like reptiles (~150 million years ago) |
+| _Australopithecus afarensis_ (Lucy) | Ape-like ancestors and humans | Bipedal pelvis and leg bones, but small brain and ape-like face (~3.2 million years ago) |
+| _Ambulocetus_ | Land mammals and whales | Legs that could support weight on land, but also adaptations for swimming (~50 million years ago) |
+| _Tetrapodophus_ | Reptiles and mammals | Reptile-like jaw and teeth, but mammal-like ear bones and post-cranial skeleton (~260 million years ago) |
 
 ### 2. Comparative Anatomy
 
 **Homologous structures:** Structures in different species that share a common evolutionary origin (derived from a common ancestor), even though they may serve different functions. The presence of homologous structures is evidence of divergent evolution.
 
-| Homologous Structure   | Species                  | Function in Each Species                                                                                                  |
+| Homologous Structure | Species | Function in Each Species |
 | ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Pentadactyl limb        | Human, bat, whale, horse | Grasping (human); flying (bat); swimming (whale); running (horse) -- same basic bone arrangement (humerus, radius, ulna, carpals, metacarpals, phalanges) modified for different functions |
-| Vertebral column        | All vertebrates          | Support and protection of the spinal cord                                                                                 |
-| Forelimb bones           | Bird, crocodile, human   | Modified for flight (bird), walking (crocodile), manipulation (human) -- same underlying structure                       |
+| Pentadactyl limb | Human, bat, whale, horse | Grasping (human); flying (bat); swimming (whale); running (horse) -- same basic bone arrangement (humerus, radius, ulna, carpals, metacarpals, phalanges) modified for different functions |
+| Vertebral column | All vertebrates | Support and protection of the spinal cord |
+| Forelimb bones | Bird, crocodile, human | Modified for flight (bird), walking (crocodile), manipulation (human) -- same underlying structure |
 
 **Analogous structures:** Structures in different species that serve similar functions but have different evolutionary origins. They are NOT evidence of common ancestry; instead, they demonstrate convergent evolution.
 
-| Analogous Structure    | Species                  | Description                                                                                                               |
+| Analogous Structure | Species | Description |
 | ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Wings                   | Bird, bat, insect        | All used for flight, but bird wings are modified forelimbs with feathers; bat wings are modified forelimbs with skin membranes; insect wings are extensions of the exoskeleton -- completely different origins |
-| Eyes                   | Cephalopod (octopus), vertebrate | Similar camera-type eye structure but evolved independently; different embryological origin and retinal cell arrangement (octopus retina is not inverted) |
-| Streamlined body shape   | Shark (fish), dolphin (mammal), ichthyosaur (reptile) | All adapted for fast swimming in water, but sharks are fish, dolphins are mammals, ichthyosaurs were reptiles |
+| Wings | Bird, bat, insect | All used for flight, but bird wings are modified forelimbs with feathers; bat wings are modified forelimbs with skin membranes; insect wings are extensions of the exoskeleton -- completely different origins |
+| Eyes | Cephalopod (octopus), vertebrate | Similar camera-type eye structure but evolved independently; different embryological origin and retinal cell arrangement (octopus retina is not inverted) |
+| Streamlined body shape | Shark (fish), dolphin (mammal), ichthyosaur (reptile) | All adapted for fast swimming in water, but sharks are fish, dolphins are mammals, ichthyosaurs were reptiles |
 
 ### 3. Comparative Embryology
 
@@ -952,13 +952,13 @@ Fossils are the preserved remains or traces of organisms that lived in the past.
 - Organisms that are more closely related share a greater percentage of their DNA sequence
 - Cytochrome c (a protein involved in respiration) can be compared across species: humans and chimpanzees share identical cytochrome c; humans and yeast differ at approximately 50% of amino acid positions
 
-| Species Pair              | DNA Similarity   | Time Since Common Ancestor  |
+| Species Pair | DNA Similarity | Time Since Common Ancestor |
 | ------------------------- | ---------------- | --------------------------- |
-| Human -- Chimpanzee        | ~98.7%           | ~6-7 million years ago      |
-| Human -- Gorilla           | ~98.4%           | ~8-10 million years ago     |
-| Human -- Mouse             | ~85%             | ~75-90 million years ago    |
-| Human -- Fruit fly (_Drosophila_) | ~60%       | ~600 million years ago      |
-| Human -- Yeast             | ~30%             | ~1 billion years ago        |
+| Human -- Chimpanzee | ~98.7% | ~6-7 million years ago |
+| Human -- Gorilla | ~98.4% | ~8-10 million years ago |
+| Human -- Mouse | ~85% | ~75-90 million years ago |
+| Human -- Fruit fly (_Drosophila_) | ~60% | ~600 million years ago |
+| Human -- Yeast | ~30% | ~1 billion years ago |
 
 ### 5. Biogeography
 
@@ -985,29 +985,29 @@ The most common form of speciation; occurs when populations of a species become 
 
 Occurs without geographic isolation; populations become reproductively isolated while living in the same area.
 
-| Mechanism                | Description                                                                                                               | Example                                 |
+| Mechanism | Description | Example |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Polyploidy               | A mutation causes a doubling of chromosome number (e.g., from diploid 2n to tetraploid 4n); the polyploid individual cannot interbreed with the original diploid population | Common in plants (wheat, cotton, tobacco); rare in animals |
+| Polyploidy | A mutation causes a doubling of chromosome number (e.g., from diploid 2n to tetraploid 4n); the polyploid individual cannot interbreed with the original diploid population | Common in plants (wheat, cotton, tobacco); rare in animals |
 | Ecological (habitat) specialisation | Different populations of the same species exploit different habitats or food sources within the same area | Apple maggot fly: originally laid eggs on hawthorn; some switched to apples after apples were introduced to North America; now partially reproductively isolated |
-| Sexual selection          | Different mating preferences or behaviours within a population lead to assortative mating                                  | Cichlid fish in African lakes: different colour patterns preferentially attract different mates |
-| Behavioural isolation     | Different courtship songs, dances, or pheromones prevent interbreeding                                                   | Cricket species distinguished by their mating songs |
+| Sexual selection | Different mating preferences or behaviours within a population lead to assortative mating | Cichlid fish in African lakes: different colour patterns preferentially attract different mates |
+| Behavioural isolation | Different courtship songs, dances, or pheromones prevent interbreeding | Cricket species distinguished by their mating songs |
 
 ### Reproductive Isolating Mechanisms
 
 Reproductive isolation can be pre-zygotic (before fertilisation) or post-zygotic (after fertilisation).
 
-| Type                  | Mechanism                                                                                                                 | Example                                 |
+| Type | Mechanism | Example |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **Pre-zygotic**       |                                                                                                                           |                                         |
-| Temporal isolation      | Populations breed at different times of year, day, or season                                                           | Two species of frogs breed in different months  |
-| Habitat isolation       | Populations live in different habitats within the same area                                                            | One species of insect lives on tree bark, another in the canopy |
-| Behavioural isolation  | Different courtship rituals, songs, or displays prevent mating                                                        | Bird species with different songs do not recognise each other's courtship |
-| Mechanical isolation   | Physical differences in reproductive structures prevent mating                                                        | Insect species with incompatible genitalia |
-| Gametic isolation       | Sperm and egg cannot fuse (chemical incompatibility)                                                                    | Marine species that release gametes into water; sperm of one species cannot penetrate egg of another |
-| **Post-zygotic**       |                                                                                                                           |                                         |
-| Hybrid inviability       | Zygote forms but the hybrid embryo does not develop properly or dies before reproductive age                            | Hybrid salamanders die before reaching sexual maturity |
-| Hybrid sterility        | Hybrid offspring are viable but sterile                                                                                 | Mule (horse $\times$ donkey) -- healthy but sterile due to odd chromosome number (63) |
-| Hybrid breakdown         | First-generation hybrids are viable and fertile, but subsequent generations show reduced fitness                        | Hybrid rice: first generation vigorous, later generations show reduced yield |
+| **Pre-zygotic** | | |
+| Temporal isolation | Populations breed at different times of year, day, or season | Two species of frogs breed in different months |
+| Habitat isolation | Populations live in different habitats within the same area | One species of insect lives on tree bark, another in the canopy |
+| Behavioural isolation | Different courtship rituals, songs, or displays prevent mating | Bird species with different songs do not recognise each other's courtship |
+| Mechanical isolation | Physical differences in reproductive structures prevent mating | Insect species with incompatible genitalia |
+| Gametic isolation | Sperm and egg cannot fuse (chemical incompatibility) | Marine species that release gametes into water; sperm of one species cannot penetrate egg of another |
+| **Post-zygotic** | | |
+| Hybrid inviability | Zygote forms but the hybrid embryo does not develop properly or dies before reproductive age | Hybrid salamanders die before reaching sexual maturity |
+| Hybrid sterility | Hybrid offspring are viable but sterile | Mule (horse $\times$ donkey) -- healthy but sterile due to odd chromosome number (63) |
+| Hybrid breakdown | First-generation hybrids are viable and fertile, but subsequent generations show reduced fitness | Hybrid rice: first generation vigorous, later generations show reduced yield |
 
 ### Adaptive Radiation
 
@@ -1021,11 +1021,11 @@ Adaptive radiation is the rapid diversification of a single ancestral species in
 
 **Classic examples:**
 
-| Example                         | Description                                                                                                               |
+| Example | Description |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Darwin's finches (Galapagos)     | Single ancestral finch species from South America gave rise to 13-15 species with different beak shapes adapted to different food sources (seeds, insects, cactus flowers, blood) |
-| Hawaiian honeycreepers           | Over 50 species evolved from a single ancestral finch-like bird, with diverse beak shapes for nectar, insects, seeds, and snails |
-| Cichlid fish (African lakes)     | Hundreds of cichlid species evolved rapidly in Lake Victoria, Lake Malawi, and Lake Tanganyika, occupying diverse ecological niches |
+| Darwin's finches (Galapagos) | Single ancestral finch species from South America gave rise to 13-15 species with different beak shapes adapted to different food sources (seeds, insects, cactus flowers, blood) |
+| Hawaiian honeycreepers | Over 50 species evolved from a single ancestral finch-like bird, with diverse beak shapes for nectar, insects, seeds, and snails |
+| Cichlid fish (African lakes) | Hundreds of cichlid species evolved rapidly in Lake Victoria, Lake Malawi, and Lake Tanganyika, occupying diverse ecological niches |
 | Mammalian radiation (after K-T extinction) | After the extinction of the dinosaurs 66 million years ago, mammals rapidly diversified to fill the vacant ecological niches |
 
 ### Common Pitfalls
@@ -1037,3 +1037,11 @@ Adaptive radiation is the rapid diversification of a single ancestral species in
 - **Analogous structures are evidence of convergent evolution, NOT common ancestry.** Homologous structures are evidence of common ancestry**
 - **The fossil record is incomplete but still provides strong evidence.** The fact that some transitional fossils have not been found does not invalidate evolution**
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

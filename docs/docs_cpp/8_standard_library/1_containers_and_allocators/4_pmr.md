@@ -10,20 +10,20 @@ slug: polymorphic-memory-resources-pmr
 ---
 ## Polymorphic Memory Resources (PMR) and Monotonic Buffers
 
-C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>`, enabling
-containers to use different allocation strategies without changing their type. PMR decouples the
-allocation strategy from the container, supporting patterns like arena allocation, pool allocation,
-and dependency injection of memory resources. This section covers the `memory_resource` abstraction,
-`monotonic_buffer_resource`, `unsynchronized_pool_resource`, and practical integration patterns.
+C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>`Enabling
+Containers to use different allocation strategies without changing their type. PMR decouples the
+Allocation strategy from the container, supporting patterns like arena allocation, pool allocation,
+And dependency injection of memory resources. This section covers the `memory_resource` abstraction,
+`monotonic_buffer_resource``unsynchronized_pool_resource`And practical integration patterns.
 
 ### `std::pmr::memory_resource`: The Polymorphic Allocator Interface
 
 C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>` [N4950 §23.10].
 PMR decouples container allocation strategy from the container type itself, enabling containers to
-use different allocation strategies without changing the container's type.
+Use different allocation strategies without changing the container's type.
 
 The central abstraction is `std::pmr::memory_resource` [N4950 §23.10.2], an abstract base class with
-three virtual functions:
+Three virtual functions:
 
 ```cpp
 class memory_resource {
@@ -43,7 +43,7 @@ private:
 ```
 
 The public `allocate` / `deallocate` functions check alignment and size constraints before
-delegating to the private virtual functions [N4950 §23.10.2.2].
+Delegating to the private virtual functions [N4950 §23.10.2.2].
 
 `std::pmr::polymorphic_allocator&lt;T>` [N4950 §23.10.8] is a concrete allocator class that wraps a
 `memory_resource*`. Standard containers parameterized on the allocator can use
@@ -78,9 +78,9 @@ int main() {
 ### `std::pmr::monotonic_buffer_resource`: Arena Allocation
 
 `std::pmr::monotonic_buffer_resource` [N4950 §23.10.5] implements **arena allocation**: memory is
-allocated from an initial buffer, and when that buffer is exhausted, a new buffer is obtained from
-an upstream resource. Critically, **individual deallocations are no-ops** --- all memory is released
-when the resource itself is destroyed.
+Allocated from an initial buffer, and when that buffer is exhausted, a new buffer is obtained from
+An upstream resource. Critically, **individual deallocations are no-ops** --- all memory is released
+When the resource itself is destroyed.
 
 This makes `monotonic_buffer_resource` ideal for scenarios with many short-lived allocations:
 
@@ -135,20 +135,20 @@ int main() {
 
 :::tip
 `monotonic_buffer_resource` is perfect for parsing, JSON processing, AST construction, and
-any scenario where many objects are created and destroyed together. Since individual `deallocate`
-calls are no-ops, allocation is extremely fast.
+Any scenario where many objects are created and destroyed together. Since individual `deallocate`
+Calls are no-ops, allocation is extremely fast.
 :::
 
 ### `std::pmr::unsynchronized_pool_resource`
 
 `std::pmr::unsynchronized_pool_resource` [N4950 §23.10.4] is a general-purpose pool allocator that
-manages a set of pools, one for each commonly-used allocation size. It provides:
+Manages a set of pools, one for each commonly-used allocation size. It provides:
 
-- **Fast allocation**: typically faster than `new` for small objects
+- **Fast allocation**: faster than `new` for small objects
 - **Thread-unsafe**: must not be used from multiple threads simultaneously (use
-  `synchronized_pool_resource` for thread safety)
-- **Proper deallocation**: unlike `monotonic_buffer_resource`, individual deallocations work
-  correctly
+ `synchronized_pool_resource` for thread safety)
+- **Proper deallocation**: unlike `monotonic_buffer_resource`Individual deallocations work
+ correctly
 
 ```cpp
 #include <memory_resource>
@@ -195,7 +195,7 @@ memory_resource (abstract base) [N4950 §23.10.2]
 ```
 
 Each resource can have an **upstream resource** that it falls back to when its own resources are
-exhausted [N4950 §23.10.2]. The default upstream is `new_delete_resource()`.
+Exhausted [N4950 §23.10.2]. The default upstream is `new_delete_resource()`.
 
 ### Complete Example: Arena Allocation with PMR
 
@@ -267,10 +267,10 @@ int main() {
 ```
 
 :::warning
-When using `monotonic_buffer_resource`, remember that `deallocate` is a no-op. If you
-create container A, then container B, and A still holds references to memory allocated from B's
-objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation
-is safest when all allocations share the same lifetime scope.
+When using `monotonic_buffer_resource`Remember that `deallocate` is a no-op. If you
+Create container A, then container B, and A still holds references to memory allocated from B's
+Objects, those references may dangle if B is destroyed and its memory is recycled. Arena allocation
+Is safest when all allocations share the same lifetime scope.
 :::
 
 ### Integration Pattern: Dependency Injection of Memory Resources
@@ -337,13 +337,13 @@ int main() {
 ```
 
 This pattern allows the same `Parser` class to be used in different performance contexts without
-modification, simply by injecting a different memory resource.
+Modification, by injecting a different memory resource.
 
 ### Custom Memory Resources: Tracking Allocations
 
 The `memory_resource` interface makes it straightforward to write custom resources for debugging,
-accounting, or enforcing allocation policies. The following implements a tracking allocator that
-logs every allocation and detects leaks:
+Accounting, or enforcing allocation policies. The following implements a tracking allocator that
+Logs every allocation and detects leaks:
 
 ```cpp
 #include <memory_resource>
@@ -426,14 +426,14 @@ int main() {
 ```
 
 This pattern is invaluable during development: wrap any resource with `TrackingResource` to get
-allocation/deallocation logs and leak detection without modifying the code that uses the containers.
+Allocation/deallocation logs and leak detection without modifying the code that uses the containers.
 
 ### `std::pmr::synchronized_pool_resource`: Thread-Safe Pool Allocation
 
 For multi-threaded contexts, `std::pmr::synchronized_pool_resource` [N4950 §23.10.4] provides the
-same pool-based allocation as `unsynchronized_pool_resource` but with internal synchronization
-(typically a mutex per pool). The trade-off is thread safety at the cost of higher per-allocation
-overhead:
+Same pool-based allocation as `unsynchronized_pool_resource` but with internal synchronization
+( a mutex per pool). The trade-off is thread safety at the cost of higher per-allocation
+Overhead:
 
 ```cpp
 #include <memory_resource>
@@ -471,32 +471,32 @@ int main() {
 
 :::info
 The performance advantage of `synchronized_pool_resource` over `new_delete_resource()` in
-multi-threaded code comes from reduced contention: each thread typically allocates from its own
-thread-local pool chunk, and the global heap lock is only contended when a new chunk is needed. For
-single-threaded code, `unsynchronized_pool_resource` is strictly faster.
+Multi-threaded code comes from reduced contention: each thread allocates from its own
+Thread-local pool chunk, and the global heap lock is only contended when a new chunk is needed. For
+Single-threaded code, `unsynchronized_pool_resource` is strictly faster.
 :::
 
 ### Common Pitfalls
 
 **1. `monotonic_buffer_resource` and dangling references:** Since individual `deallocate` calls are
-no-ops, destroying a container that allocated from a monotonic buffer does not free memory. If
-another object still holds a reference or pointer to memory from that destroyed container, the
-reference dangles. All objects using a `monotonic_buffer_resource` should share the same lifetime
-scope as the resource itself.
+No-ops, destroying a container that allocated from a monotonic buffer does not free memory. If
+Another object still holds a reference or pointer to memory from that destroyed container, the
+Reference dangles. All objects using a `monotonic_buffer_resource` should share the same lifetime
+Scope as the resource itself.
 
 **2. Buffer sizing for `monotonic_buffer_resource`:** If the initial buffer is too small, the
-resource falls back to the upstream allocator (typically `new_delete_resource`), negating the
-performance benefit. Profile actual allocation patterns and size the buffer accordingly. A common
-technique is to measure peak allocation during a trial run and use that plus a safety margin.
+Resource falls back to the upstream allocator ( `new_delete_resource`), negating the
+Performance benefit. Profile actual allocation patterns and size the buffer accordingly. A common
+Technique is to measure peak allocation during a trial run and use that plus a safety margin.
 
 **3. `polymorphic_allocator` is not a drop-in replacement for `std::allocator`:** PMR containers
-have a different type (`std::vector&lt;T, std::pmr::polymorphic_allocator&lt;T>>`) from standard
-containers (`std::vector&lt;T>`). They are not interchangeable in APIs that expect a specific
-allocator type. Design APIs to accept `memory_resource*` and construct PMR containers internally.
+Have a different type (`std::vector&lt;T, std::pmr::polymorphic_allocator&lt;T>>`) from standard
+Containers (`std::vector&lt;T>`). They are not interchangeable in APIs that expect a specific
+Allocator type. Design APIs to accept `memory_resource*` and construct PMR containers internally.
 
 **4. `null_memory_resource()` throws on every allocate:** This resource is useful for testing that
-code does not perform unexpected allocations, but will terminate with `std::bad_alloc` on any
-allocation attempt. Use it in unit tests to verify stack-only or no-heap-allocation code paths.
+Code does not perform unexpected allocations, but will terminate with `std::bad_alloc` on any
+Allocation attempt. Use it in unit tests to verify stack-only or no-heap-allocation code paths.
 
 ## See Also
 
@@ -509,3 +509,15 @@ allocation attempt. Use it in unit tests to verify stack-only or no-heap-allocat
 :::
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

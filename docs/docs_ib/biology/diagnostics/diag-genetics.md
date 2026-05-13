@@ -60,11 +60,11 @@ Degrees of freedom: number of categories $- 1 = 2 - 1 = 1$.
 
 Critical value at $\alpha = 0.05$ with $df = 1$: $3.841$.
 
-Since $\chi^2_{\text{calc}} = 1.728 \lt 3.841 = \chi^2_{\text{crit}}$, we **fail to reject** the null hypothesis.
+Since $\chi^2_{\text{calc}} = 1.728 \lt 3.841 = \chi^2_{\text{crit}}$We **fail to reject** the null hypothesis.
 
 Conclusion: The observed data fits the expected 3:1 ratio at the 0.05 significance level. There is no statistically significant evidence that the inheritance pattern deviates from Mendelian expectations.
 
-The p-value for $\chi^2 = 1.728$ with $df = 1$ is approximately $0.19$, meaning there is a 19% probability of observing this much deviation (or more) by chance alone.
+The p-value for $\chi^2 = 1.728$ with $df = 1$ is approximately $0.19$Meaning there is a 19% probability of observing this much deviation (or more) by chance alone.
 
 ---
 ### UT-3: Sex-Linked Inheritance
@@ -86,20 +86,20 @@ Offspring:
 | $X^C$ (mother) | $X^CX^C$ (normal female) | $X^CY$ (normal male) |
 | $X^c$ (mother) | $X^CX^c$ (carrier female) | $X^cY$ (colour-blind male) |
 
-Probability that a son is colour-blind: the son receives Y from father (50% chance of being male) and $X^c$ from mother (50% chance). Since we are told they have a son, the probability is simply the chance he receives $X^c$ from mother = $1/2 = 50\%$.
+Probability that a son is colour-blind: the son receives Y from father (50% chance of being male) and $X^c$ from mother (50% chance). Since we are told they have a son, the probability is the chance he receives $X^c$ from mother = $1/2 = 50\%$.
 
 Probability that a daughter is a carrier: the daughter receives $X^C$ from father and $X^c$ from mother (50% chance) = $1/2 = 50\%$. The other 50% would be $X^CX^C$ (normal, non-carrier).
 
 ## Integration Tests
 
 ### IT-1: Genetics and Evolution (with Evolution)
-**Question:** In a population of 10000 humans, the frequency of the allele for cystic fibrosis ($f$, recessive) is $0.02$. Assuming Hardy-Weinberg equilibrium: (a) calculate the expected number of carriers, (b) calculate the expected number of individuals with cystic fibrosis, (c) if the population is in HWE and the disease reduces fitness by 90% ($w = 0.1$ for affected individuals), calculate the new allele frequency after one generation of selection.
+**Question:** In a population of 10000 humans, the frequency of the allele for cystic fibrosis ($f$Recessive) is $0.02$. Assuming Hardy-Weinberg equilibrium: (a) calculate the expected number of carriers, (b) calculate the expected number of individuals with cystic fibrosis, (c) if the population is in HWE and the disease reduces fitness by 90% ($w = 0.1$ for affected individuals), calculate the new allele frequency after one generation of selection.
 
 **Solution:**
 
 (a) Let $p$ = frequency of normal allele, $q$ = frequency of CF allele $= 0.02$.
 
-$p + q = 1$, so $p = 0.98$.
+$p + q = 1$So $p = 0.98$.
 
 Carrier frequency ($2pq$): $2 \times 0.98 \times 0.02 = 0.0392$.
 
@@ -128,7 +128,7 @@ $q$ decreased from $0.0200$ to $0.01965$ -- only a small decrease because the re
 
 **Solution:**
 
-Let $w_{AA} = 0.85$, $w_{AS} = 1.00$, $w_{SS} = 0.15$.
+Let $w_{AA} = 0.85$$w_{AS} = 1.00$$w_{SS} = 0.15$.
 
 At equilibrium under balancing selection, the frequency of allele S is:
 
@@ -179,10 +179,10 @@ Under the model (one parent Aa non-penetrant, other parent aa):
 P(affected) per child = $0.5 \times 0.8 = 0.4$
 P(unaffected) per child = $1 - 0.4 = 0.6$
 
-Expected in 3 children: affected $= 3 \times 0.4 = 1.2$, unaffected $= 3 \times 0.6 = 1.8$.
+Expected in 3 children: affected $= 3 \times 0.4 = 1.2$Unaffected $= 3 \times 0.6 = 1.8$.
 
-Observed: affected $= 1$, unaffected $= 2$.
+Observed: affected $= 1$Unaffected $= 2$.
 
 $\chi^2 = \frac{(1 - 1.2)^2}{1.2} + \frac{(2 - 1.8)^2}{1.8} = \frac{0.04}{1.2} + \frac{0.04}{1.8} = 0.0333 + 0.0222 = 0.0556$
 
-With $df = 1$, $\chi^2_{\text{crit}} = 3.841$. Since $0.0556 \lt 3.841$, the data is consistent with 80% penetrance autosomal dominant inheritance. The probability of two unaffected parents having an affected child is 40% per child under this model.
+With $df = 1$$\chi^2_{\text{crit}} = 3.841$. Since $0.0556 \lt 3.841$The data is consistent with 80% penetrance autosomal dominant inheritance. The probability of two unaffected parents having an affected child is 40% per child under this model.

@@ -6,25 +6,25 @@ slug: pre-commit-framework
 ## What pre-commit Is
 
 `pre-commit` is a Python-based framework for managing and executing Git hooks in a declarative,
-reproducible way. It solves the fundamental problem with raw Git hooks: they are not tracked by Git,
-not shared across contributors, and each developer must manually install and maintain them.
+Reproducible way. It solves the fundamental problem with raw Git hooks: they are not tracked by Git,
+Not shared across contributors, and each developer must manually install and maintain them.
 
 The framework provides:
 
 - **A declarative configuration file** (`.pre-commit-config.yaml`) that defines which hooks run,
-  when they run, and what files they target. This file is committed to the repository and shared
-  with all contributors.
+ when they run, and what files they target. This file is committed to the repository and shared
+ with all contributors.
 - **Isolated execution environments** — each hook runs in its own virtual environment or container,
-  so hook dependencies never conflict with project dependencies or with each other.
+ so hook dependencies never conflict with project dependencies or with each other.
 - **A caching layer** — hooks skip files that have not changed since the last successful run, making
-  incremental commits fast.
+ incremental commits fast.
 - **Language-agnostic hook support** — hooks can be written in any language: Python, Bash, Node.js,
-  Go, Rust, or run inside Docker containers. The framework does not care what the hook is, only that
-  it follows the contract (exit code 0 = pass, non-zero = fail).
+ Go, Rust, or run inside Docker containers. The framework does not care what the hook is, only that
+ it follows the contract (exit code 0 = pass, non-zero = fail).
 
 The `pre-commit` framework is not the same as the `pre-commit` Git hook. The framework installs
-itself as the `pre-commit` hook in `.git/hooks/` and then orchestrates all configured hooks from
-there. One hook file delegates to many.
+Itself as the `pre-commit` hook in `.git/hooks/` and then orchestrates all configured hooks from
+There. One hook file delegates to many.
 
 ## Installation
 
@@ -42,7 +42,7 @@ pre-commit 3.7.1
 ### Installing Hooks into a Repository
 
 Installation here means "install the pre-commit framework as the Git hook." This is what makes the
-hooks actually fire on `git commit`:
+Hooks actually fire on `git commit`:
 
 ```bash
 # Install the pre-commit hook (fires on git commit)
@@ -84,7 +84,7 @@ $ pre-commit uninstall --hook-type commit-msg
 ### Bootstrap Script for New Contributors
 
 Since `pre-commit install` is a local operation (it modifies `.git/hooks/`), new contributors must
-run it after cloning. Document this in the README and optionally automate it:
+Run it after cloning. Document this in the README and optionally automate it:
 
 ```bash
 # In your Makefile or Justfile
@@ -97,7 +97,7 @@ pre-commit install --hook-type pre-commit --hook-type commit-msg
 ## Configuration File
 
 The `.pre-commit-config.yaml` file is the single source of truth for all hooks. It lives at the
-repository root and must be committed to version control.
+Repository root and must be committed to version control.
 
 ### Top-Level Structure
 
@@ -145,37 +145,37 @@ The framework clones these repos (at the pinned `rev`) and reads their hook meta
 
 ### Per-Repo Fields
 
-| Field   | Required | Description                                      |
+| Field | Required | Description |
 | ------- | -------- | ------------------------------------------------ |
-| `repo`  | Yes      | URL of the hook repository (HTTPS or local path) |
-| `rev`   | Yes      | Git ref to checkout (tag, branch, or SHA)        |
-| `hooks` | Yes      | Array of hook definitions from this repo         |
+| `repo` | Yes | URL of the hook repository (HTTPS or local path) |
+| `rev` | Yes | Git ref to checkout (tag, branch, or SHA) |
+| `hooks` | Yes | Array of hook definitions from this repo |
 
 ### Per-Hook Fields
 
-| Field            | Required | Description                                                                  |
+| Field | Required | Description |
 | ---------------- | -------- | ---------------------------------------------------------------------------- |
-| `id`             | Yes      | Hook identifier (must match an entry in the repo's `.pre-commit-hooks.yaml`) |
-| `name`           | No       | Human-readable name (defaults to `id`)                                       |
-| `entry`          | No       | Command to run (for local hooks; remote hooks define this in their metadata) |
-| `language`       | No       | Execution environment (`system`, `python`, `node`, `docker`, etc.)           |
-| `files`          | No       | Regex pattern: only run on files matching this pattern                       |
-| `exclude`        | No       | Regex pattern: skip files matching this pattern                              |
-| `types`          | No       | Array of file types (e.g., `[python]`, `[text]`, `[json]`)                   |
-| `types_or`       | No       | Array of file types (match if file is ANY type)                              |
-| `exclude_types`  | No       | Array of file types to exclude                                               |
-| `args`           | No       | Additional arguments passed to the hook entry point                          |
-| `stages`         | No       | Array of stages: `[commit]`, `[push]`, `[commit-msg]`, `[manual]`            |
-| `pass_filenames` | No       | Whether to pass filenames as arguments (default: `true`)                     |
-| `always_run`     | No       | Run even when no files match (default: `false`)                              |
-| `verbose`        | No       | Print more output (default: `false`)                                         |
-| `log_file`       | No       | Write hook output to this file                                               |
-| `require_serial` | No       | Do not run this hook in parallel with other hooks (default: `false`)         |
+| `id` | Yes | Hook identifier (must match an entry in the repo's `.pre-commit-hooks.yaml`) |
+| `name` | No | Human-readable name (defaults to `id`) |
+| `entry` | No | Command to run (for local hooks; remote hooks define this in their metadata) |
+| `language` | No | Execution environment (`system``python``node``docker`Etc.) |
+| `files` | No | Regex pattern: only run on files matching this pattern |
+| `exclude` | No | Regex pattern: skip files matching this pattern |
+| `types` | No | Array of file types (e.g., `[python]``[text]``[json]`) |
+| `types_or` | No | Array of file types (match if file is ANY type) |
+| `exclude_types` | No | Array of file types to exclude |
+| `args` | No | Additional arguments passed to the hook entry point |
+| `stages` | No | Array of stages: `[commit]``[push]``[commit-msg]``[manual]` |
+| `pass_filenames` | No | Whether to pass filenames as arguments (default: `true`) |
+| `always_run` | No | Run even when no files match (default: `false`) |
+| `verbose` | No | Print more output (default: `false`) |
+| `log_file` | No | Write hook output to this file |
+| `require_serial` | No | Do not run this hook in parallel with other hooks (default: `false`) |
 
 ### File Type Matching
 
 The `types` field uses Git's heuristics for file type detection. This is more reliable than regex
-patterns for many common cases:
+Patterns for many common cases:
 
 ```yaml
 hooks:
@@ -192,9 +192,9 @@ hooks:
     types: [json]
 ```
 
-Common file types: `file`, `symlink`, `directory`, `text`, `binary`, `python`, `ruby`, `javascript`,
-`jsx`, `typescript`, `tsx`, `shell`, `yaml`, `json`, `toml`, `xml`, `html`, `css`, `markdown`,
-`dockerfile`, `c`, `cpp`, `go`, `rust`, `java`.
+Common file types: `file``symlink``directory``text``binary``python``ruby``javascript`
+`jsx``typescript``tsx``shell``yaml``json``toml``xml``html``css``markdown`
+`dockerfile``c``cpp``go``rust``java`.
 
 ### Stages
 
@@ -218,7 +218,7 @@ This is how conventional commit validators work.
 ### Local Hooks
 
 The special `repo: local` entry defines hooks that run directly on the host system without cloning
-an external repository:
+An external repository:
 
 ```yaml
 repos:
@@ -242,7 +242,7 @@ repos:
 ## Built-in Hooks
 
 The `pre-commit-hooks` repository (`https://github.com/pre-commit/pre-commit-hooks`) is maintained
-by the pre-core team and provides the most widely-used hooks. Pin to a specific tag:
+By the pre-core team and provides the most widely-used hooks. Pin to a specific tag:
 
 ```yaml
 repos:
@@ -263,28 +263,28 @@ repos:
 
 ### Reference Table
 
-| Hook ID                                | What It Checks                                                | Auto-Fix? | Common Arguments                            |
+| Hook ID | What It Checks | Auto-Fix? | Common Arguments |
 | -------------------------------------- | ------------------------------------------------------------- | --------- | ------------------------------------------- |
-| `trailing-whitespace`                  | Trailing whitespace on any line                               | Yes       |                                             |
-| `end-of-file-fixer`                    | File ends with exactly one newline                            | Yes       |                                             |
-| `check-yaml`                           | Valid YAML syntax (via `pyyaml`)                              | No        | `--unsafe` to allow custom tags             |
-| `check-json`                           | Valid JSON syntax                                             | No        |                                             |
-| `check-toml`                           | Valid TOML syntax                                             | No        |                                             |
-| `check-merge-conflict`                 | Unresolved conflict markers (`<<<<<<<`, `=======`, `>>>>>>`)  | No        | `--assume-in-merge` to check outside merges |
-| `check-added-large-files`              | Files exceeding size threshold                                | No        | `--maxkb=500` (default: 500KB)              |
-| `detect-private-key`                   | PEM-encoded private key material in files                     | No        |                                             |
-| `no-commit-to-branch`                  | Prevents commits to protected branches                        | No        | `--branch main --branch release/*`          |
-| `mixed-line-ending`                    | Inconsistent line endings (LF vs CRLF)                        | Yes       | `--fix=lf` or `--fix=crlf`                  |
-| `check-case-conflict`                  | Filename case collisions (problematic on case-insensitive FS) | No        |                                             |
-| `check-executables-have-shebangs`      | Executable files must have a shebang line                     | No        |                                             |
-| `check-shebang-scripts-are-executable` | Files with shebangs must be executable                        | No        |                                             |
-| `check-byte-order-marker`              | Detects BOM in UTF-8 files                                    | No        |                                             |
-| `check-docstring-first`                | Python files: docstring before code                           | No        |                                             |
-| `debug-statements`                     | Python `import pdb`, `import ipdb`, `breakpoint()`            | No        |                                             |
-| `destroyed-symlinks`                   | Symlinks that point to nothing                                | No        |                                             |
-| `fix-byte-order-marker`                | Removes BOM from UTF-8 files                                  | Yes       |                                             |
-| `fix-encoding-pragma`                  | Adds `# -*- coding: utf-8 -*-` to Python files if needed      | Yes       |                                             |
-| `name-tests-test`                      | Python test files follow naming convention                    | No        | `--pytest` to only match pytest-style names |
+| `trailing-whitespace` | Trailing whitespace on any line | Yes | |
+| `end-of-file-fixer` | File ends with exactly one newline | Yes | |
+| `check-yaml` | Valid YAML syntax (via `pyyaml`) | No | `--unsafe` to allow custom tags |
+| `check-json` | Valid JSON syntax | No | |
+| `check-toml` | Valid TOML syntax | No | |
+| `check-merge-conflict` | Unresolved conflict markers (`<<<<<<<``=======``>>>>>>`) | No | `--assume-in-merge` to check outside merges |
+| `check-added-large-files` | Files exceeding size threshold | No | `--maxkb=500` (default: 500KB) |
+| `detect-private-key` | PEM-encoded private key material in files | No | |
+| `no-commit-to-branch` | Prevents commits to protected branches | No | `--branch main --branch release/*` |
+| `mixed-line-ending` | Inconsistent line endings (LF vs CRLF) | Yes | `--fix=lf` or `--fix=crlf` |
+| `check-case-conflict` | Filename case collisions (problematic on case-insensitive FS) | No | |
+| `check-executables-have-shebangs` | Executable files must have a shebang line | No | |
+| `check-shebang-scripts-are-executable` | Files with shebangs must be executable | No | |
+| `check-byte-order-marker` | Detects BOM in UTF-8 files | No | |
+| `check-docstring-first` | Python files: docstring before code | No | |
+| `debug-statements` | Python `import pdb``import ipdb``breakpoint()` | No | |
+| `destroyed-symlinks` | Symlinks that point to nothing | No | |
+| `fix-byte-order-marker` | Removes BOM from UTF-8 files | Yes | |
+| `fix-encoding-pragma` | Adds `# -*- coding: utf-8 -*-` to Python files if needed | Yes | |
+| `name-tests-test` | Python test files follow naming convention | No | `--pytest` to only match pytest-style names |
 
 ### Practical Configuration
 
@@ -363,7 +363,7 @@ repos:
 
 **Ruff vs Black**: Ruff can replace both flake8 and black (via `ruff check --fix` and
 `ruff format`). If you use Ruff, you do not need black or flake8 as separate hooks. Ruff is 10-100x
-faster than both because it is written in Rust.
+Faster than both because it is written in Rust.
 
 ### JavaScript / TypeScript
 
@@ -384,8 +384,8 @@ repos:
 ```
 
 **Note**: The `mirrors-*` repositories are maintained by the pre-commit team and provide pre-built
-hooks for tools that do not natively support the pre-commit framework. For ESLint, you may also use
-the npm-based approach with `language: node` and `additional_dependencies`.
+Hooks for tools that do not natively support the pre-commit framework. For ESLint, you may also use
+The npm-based approach with `language: node` and `additional_dependencies`.
 
 ### Shell Scripts
 
@@ -465,7 +465,7 @@ repos:
 
 A hook is any executable that:
 
-1. Receives filenames as arguments (when `pass_filenames: true`, which is the default).
+1. Receives filenames as arguments (when `pass_filenames: true`Which is the default).
 2. Reads from stdin if it needs to process piped content.
 3. Exits with code 0 on success, non-zero on failure.
 4. Prints diagnostics to stdout or stderr (stderr is preferred for error messages).
@@ -519,7 +519,7 @@ repos:
 ```
 
 The `language: script` type means the entry point is a script that will be executed directly. It
-must be executable (`chmod +x`).
+Must be executable (`chmod +x`).
 
 ### Python Hook
 
@@ -581,7 +581,7 @@ repos:
 ### System Language Hooks
 
 The `language: system` type runs the entry command directly on the host. This is useful for tools
-that are already installed globally:
+That are already installed globally:
 
 ```yaml
 repos:
@@ -621,7 +621,7 @@ repos:
 ### Hook That Receives stdin
 
 Some tools expect input on stdin rather than as file arguments. Use `pass_filenames: false` and pipe
-content:
+Content:
 
 ```yaml
 repos:
@@ -668,8 +668,8 @@ $ pre-commit run --color always
 ### Incremental Runs
 
 By default, `pre-commit run` (without `--all-files`) only runs on files that have changed since the
-last successful run. This is the caching layer. It uses a cache file stored in the hook's
-environment to track which files have been checked:
+Last successful run. This is the caching layer. It uses a cache file stored in the hook's
+Environment to track which files have been checked:
 
 ```bash
 # Clear the cache and force a full run
@@ -692,7 +692,7 @@ $ pre-commit run --from-ref origin/main --to-ref HEAD
 ### Updating Hook Environments
 
 When you modify `.pre-commit-config.yaml` (add a new hook, change a version), the framework detects
-the change and reinstalls affected hooks on the next run:
+The change and reinstalls affected hooks on the next run:
 
 ```bash
 # Force reinstall all hook environments
@@ -731,7 +731,7 @@ jobs:
 
 Each hook repository is cloned and installed into a virtual environment under
 `~/.cache/pre-commit/`. In CI, this means every run re-downloads and re-installs all hook
-dependencies. Cache this directory:
+Dependencies. Cache this directory:
 
 ```yaml
 jobs:
@@ -756,14 +756,14 @@ jobs:
 ```
 
 The cache key includes the hash of `.pre-commit-config.yaml` so that cache invalidation happens
-automatically when the configuration changes.
+Automatically when the configuration changes.
 
 ### Pre-Commit.ci
 
 [pre-commit.ci](https://pre-commit.ci) is a hosted service that runs pre-commit hooks on pull
-requests. It is free for open-source repositories and handles caching, environment setup, and
-automatic fixing. When a hook makes fixes (like `trailing-whitespace` or `black`), the service
-creates a commit on the PR branch with those fixes.
+Requests. It is free for open-source repositories and handles caching, environment setup, and
+Automatic fixing. When a hook makes fixes (like `trailing-whitespace` or `black`), the service
+Creates a commit on the PR branch with those fixes.
 
 Enable it by adding the repository to pre-commit.ci. No CI configuration changes are needed.
 
@@ -803,7 +803,7 @@ pre-commit:
 ### Updating Hook Versions
 
 Hook repositories release new versions. The `autoupdate` command bumps the `rev` field in your
-configuration to the latest release tag or commit:
+Configuration to the latest release tag or commit:
 
 ```bash
 # Update all repos to their latest tags
@@ -843,9 +843,9 @@ The `rev` field can be a tag, a branch, or a SHA:
 ```
 
 **Recommendation**: Pin to release tags. Tags are immutable (once published, they do not change), so
-every contributor and CI run uses the exact same hook version. Branch references are mutable — the
-commit at `main` today may differ from the commit at `main` tomorrow, leading to non-reproducible
-behavior.
+Every contributor and CI run uses the exact same hook version. Branch references are mutable — the
+Commit at `main` today may differ from the commit at `main` tomorrow, leading to non-reproducible
+Behavior.
 
 ### Automating Autoupdate in CI
 
@@ -891,20 +891,20 @@ jobs:
 ### Hooks Run on Staged Content, Not the Working Tree
 
 This is the most common source of confusion. The `pre-commit` framework stages files internally
-before running hooks. If you edit a file after staging it, the hook sees the **staged** version, not
-your latest edit. Fix: run `git add` again after editing.
+Before running hooks. If you edit a file after staging it, the hook sees the **staged** version, not
+Your latest edit. Fix: run `git add` again after editing.
 
 ### The Framework Creates Isolated Virtual Environments
 
 Each hook repository gets its own virtual environment under `~/.cache/pre-commit/`. If a hook
-depends on a library that your project also uses, the versions may differ. This is by design — it
-prevents hook dependencies from conflicting with project dependencies. If you need a hook to use
-your project's environment, use `language: system` and manage dependencies yourself.
+Depends on a library that your project also uses, the versions may differ. This is by design — it
+Prevents hook dependencies from conflicting with project dependencies. If you need a hook to use
+Your project's environment, use `language: system` and manage dependencies yourself.
 
 ### First Run Is Slow
 
 The first `pre-commit run` downloads and installs all hook environments. Subsequent runs use the
-cache and are fast. In CI, use caching to avoid re-downloading on every build.
+Cache and are fast. In CI, use caching to avoid re-downloading on every build.
 
 ### Hooks Are Bypassable with `--no-verify`
 
@@ -913,28 +913,28 @@ $ git commit --no-verify -m "skip hooks"
 ```
 
 This bypasses all hooks. The framework cannot prevent this — it is a fundamental limitation of
-client-side hooks. If you need to enforce hook execution, run `pre-commit run --all-files` in CI. CI
-is the enforcement layer; local hooks are the convenience layer.
+Client-side hooks. If you need to enforce hook execution, run `pre-commit run --all-files` in CI. CI
+Is the enforcement layer; local hooks are the convenience layer.
 
 ### `--all-files` in CI Masks Incremental Issues
 
 Running `pre-commit run --all-files` in CI checks every file, not just the changed ones. This is
-correct for CI (you want to catch all issues), but it means a CI failure may be caused by a file
-that was not modified in the PR. Use `--from-ref origin/main --to-ref HEAD` to limit CI checks to
-changed files only.
+Correct for CI (you want to catch all issues), but it means a CI failure may be caused by a file
+That was not modified in the PR. Use `--from-ref origin/main --to-ref HEAD` to limit CI checks to
+Changed files only.
 
 ### Mirror Repositories Can Be Outdated
 
 The `mirrors-*` repositories (e.g., `pre-commit/mirrors-eslint`) are maintained by the pre-commit
-community, not by the upstream tool authors. They may lag behind the latest release. Check the
-mirror repo's release page and compare with the upstream release before pinning a version.
+Community, not by the upstream tool authors. They may lag behind the latest release. Check the
+Mirror repo's release page and compare with the upstream release before pinning a version.
 
 ### Multiple Hooks Modifying the Same File
 
 When two hooks both modify the same file (e.g., `black` reformats and `isort` reorders imports), the
-order matters. If `isort` runs after `black`, it may reformat in a way that `black` would change.
+Order matters. If `isort` runs after `black`It may reformat in a way that `black` would change.
 The framework runs hooks in the order they appear in the configuration. Order your hooks so that the
-last modifier is the one whose output is canonical:
+Last modifier is the one whose output is canonical:
 
 ```yaml
 hooks:
@@ -951,7 +951,7 @@ This speeds up the feedback loop locally but means you only see one error at a t
 ### Local Hooks with `language: script` Require Executable Bit
 
 Hooks using `language: script` must be executable. The framework will fail silently or with a
-permission denied error:
+Permission denied error:
 
 ```bash
 $ chmod +x scripts/check-no-debug.sh
@@ -959,6 +959,14 @@ $ chmod +x scripts/check-no-debug.sh
 
 ### The `exclude` Pattern Applies to the Full File Path
 
-When you write `exclude: 'vendor/'`, it matches the full path relative to the repository root, not
-just the filename. Use `^vendor/` to anchor to the start, or test your patterns with
+When you write `exclude: 'vendor/'`It matches the full path relative to the repository root, not
+Just the filename. Use `^vendor/` to anchor to the start, or test your patterns with
 `pre-commit run --verbose` to see which files are being passed to each hook.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

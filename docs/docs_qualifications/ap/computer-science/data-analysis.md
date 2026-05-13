@@ -67,14 +67,14 @@ int index = names.indexOf("Alice");
 
 **Array vs ArrayList:**
 
-| Feature         | Array          | ArrayList                |
+| Feature | Array | ArrayList |
 | --------------- | -------------- | ------------------------ |
-| Size            | Fixed          | Dynamic (resizable)      |
-| Primitives      | Yes            | No (use wrapper classes) |
-| `length`/`size` | `arr.length`   | `list.size()`            |
-| Access          | `arr[i]`       | `list.get(i)`            |
-| Modify          | `arr[i] = val` | `list.set(i, val)`       |
-| Add element     | Not possible   | `list.add(val)`          |
+| Size | Fixed | Dynamic (resizable) |
+| Primitives | Yes | No (use wrapper classes) |
+| `length`/`size` | `arr.length` | `list.size()` |
+| Access | `arr[i]` | `list.get(i)` |
+| Modify | `arr[i] = val` | `list.set(i, val)` |
+| Add element | Not possible | `list.add(val)` |
 
 ### 2D Arrays
 
@@ -140,14 +140,14 @@ Time complexity: $O(r \times c)$ where $r$ is rows and $c$ is columns.
 
 AP CSP uses generic list operations:
 
-| Operation            | Description                                |
+| Operation | Description |
 | -------------------- | ------------------------------------------ |
-| `list[i]`            | Access element at index `i` (1-indexed)    |
-| `list[i] <- v`       | Set element at index `i` to value `v`      |
-| `INSERT(list, i, v)` | Insert `v` at index `i`, shifting right    |
-| `APPEND(list, v)`    | Add `v` to the end of `list`               |
-| `REMOVE(list, i)`    | Remove element at index `i`, shifting left |
-| `LENGTH(list)`       | Number of elements in `list`               |
+| `list[i]` | Access element at index `i` (1-indexed) |
+| `list[i] <- v` | Set element at index `i` to value `v` |
+| `INSERT(list, i, v)` | Insert `v` at index `i`Shifting right |
+| `APPEND(list, v)` | Add `v` to the end of `list` |
+| `REMOVE(list, i)` | Remove element at index `i`Shifting left |
+| `LENGTH(list)` | Number of elements in `list` |
 
 ## Strings (AP CS A)
 
@@ -155,17 +155,17 @@ Strings are immutable sequences of characters.
 
 ### Common Methods
 
-| Method                      | Description                 | Returns   |
+| Method | Description | Returns |
 | --------------------------- | --------------------------- | --------- |
-| `str.length()`              | Number of characters        | `int`     |
-| `str.substring(start)`      | From `start` to end         | `String`  |
-| `str.substring(start, end)` | From `start` to `end - 1`   | `String`  |
-| `str.indexOf(s)`            | First occurrence of `s`     | `int`     |
-| `str.charAt(i)`             | Character at index `i`      | `char`    |
-| `str.equals(other)`         | Content equality (not `==`) | `boolean` |
-| `str.compareTo(other)`      | Lexicographic comparison    | `int`     |
-| `str.toUpperCase()`         | All uppercase               | `String`  |
-| `str.toLowerCase()`         | All lowercase               | `String`  |
+| `str.length()` | Number of characters | `int` |
+| `str.substring(start)` | From `start` to end | `String` |
+| `str.substring(start, end)` | From `start` to `end - 1` | `String` |
+| `str.indexOf(s)` | First occurrence of `s` | `int` |
+| `str.charAt(i)` | Character at index `i` | `char` |
+| `str.equals(other)` | Content equality (not `==`) | `boolean` |
+| `str.compareTo(other)` | Lexicographic comparison | `int` |
+| `str.toUpperCase()` | All uppercase | `String` |
+| `str.toLowerCase()` | All lowercase | `String` |
 
 ### String Immutability
 
@@ -179,7 +179,7 @@ s = s.toUpperCase();
 ```
 
 **Why immutability matters.** Because strings are immutable, Java can share string literals. If two
-variables hold the same string literal, they may point to the same object in memory.
+Variables hold the same string literal, they may point to the same object in memory.
 
 :::info[Example: Reversing a String]
 
@@ -194,7 +194,7 @@ public static String reverse(String s) {
 ```
 
 Time complexity: $O(n^2)$ because string concatenation creates a new object each time. A more
-efficient approach uses `StringBuilder` for $O(n)$.
+Efficient approach uses `StringBuilder` for $O(n)$.
 
 ```java
 public static String reverseEfficient(String s) {
@@ -232,8 +232,8 @@ PROCEDURE findMin(list)
 ```
 
 **Proof of correctness.** The algorithm maintains the invariant: "min is the smallest element among
-all elements seen so far." Initially, min = list[1], trivially true. At each step, if the new
-element is smaller, we update min. By induction, after all elements, min is the smallest.
+All elements seen so far." Initially, min = list[1], true. At each step, if the new
+Element is smaller, we update min. By induction, after all elements, min is the smallest.
 $\blacksquare$
 
 ### Computing the Average
@@ -251,7 +251,7 @@ PROCEDURE average(list)
 ```
 
 **Edge case.** If the list is empty, division by zero occurs. A robust implementation should check
-for this.
+For this.
 
 ### Mode (Most Frequent Element)
 
@@ -294,11 +294,11 @@ Time complexity: $O(n^2)$. A more efficient $O(n \log n)$ approach sorts the lis
 
 - **Symmetric encryption:** Same key for encryption and decryption (e.g., AES). Fast.
 - **Asymmetric encryption:** Public key for encryption, private key for decryption (e.g., RSA).
-  Slower, but no need to share a secret key.
+ Slower, but no need to share a secret key.
 - **Hashing:** One-way function that produces a fixed-size output. Not encryption.
 
 **Salting passwords.** A salt is a random string added to the password before hashing. This prevents
-rainbow table attacks.
+Rainbow table attacks.
 
 ### Digital Certificates and PKI
 
@@ -341,7 +341,7 @@ for (String name : names) {
 
 :::warning
 Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-during iteration. Use an Iterator or iterate backwards with an index.
+During iteration. Use an Iterator or iterate backwards with an index.
 :::
 
 ```java
@@ -367,16 +367,16 @@ public class Student implements Comparable<Student> {
 
 ### Big-O Analysis of ArrayList Operations
 
-| Operation          | Average | Worst  |
+| Operation | Average | Worst |
 | ------------------ | ------- | ------ |
-| `get(i)`           | $O(1)$  | $O(1)$ |
-| `add(item)`        | $O(1)$  | $O(n)$ |
-| `add(i, item)`     | $O(n)$  | $O(n)$ |
-| `remove(i)`        | $O(n)$  | $O(n)$ |
-| `remove(Object)`   | $O(n)$  | $O(n)$ |
-| `set(i, item)`     | $O(1)$  | $O(1)$ |
-| `contains(Object)` | $O(n)$  | $O(n)$ |
-| `indexOf(Object)`  | $O(n)$  | $O(n)$ |
+| `get(i)` | $O(1)$ | $O(1)$ |
+| `add(item)` | $O(1)$ | $O(n)$ |
+| `add(i, item)` | $O(n)$ | $O(n)$ |
+| `remove(i)` | $O(n)$ | $O(n)$ |
+| `remove(Object)` | $O(n)$ | $O(n)$ |
+| `set(i, item)` | $O(1)$ | $O(1)$ |
+| `contains(Object)` | $O(n)$ | $O(n)$ |
+| `indexOf(Object)` | $O(n)$ | $O(n)$ |
 
 ### String Algorithms
 
@@ -393,7 +393,7 @@ public static String reverse(String s) {
 ```
 
 **Time complexity:** $O(n^2)$ because string concatenation creates a new object each time. A more
-efficient approach uses `StringBuilder` for $O(n)$.
+Efficient approach uses `StringBuilder` for $O(n)$.
 
 **Counting character frequency:**
 
@@ -421,7 +421,7 @@ public static int[] charFrequency(String s) {
 ### Data Breaches
 
 A data breach is an incident where sensitive data is accessed without authorisation. Consequences
-include identity theft, financial loss, and reputational damage.
+Include identity theft, financial loss, and reputational damage.
 
 **Prevention strategies:**
 
@@ -444,12 +444,12 @@ int pow = (int)Math.pow(2, 10);    // 1024
 
 ### Wrapper Classes and Autoboxing (AP CS A)
 
-| Primitive | Wrapper   |
+| Primitive | Wrapper |
 | --------- | --------- |
-| int       | Integer   |
-| double    | Double    |
-| boolean   | Boolean   |
-| char      | Character |
+| int | Integer |
+| double | Double |
+| boolean | Boolean |
+| char | Character |
 
 ```java
 ArrayList<Integer> list = new ArrayList<>();
@@ -473,13 +473,13 @@ Always cast to `double` before division when you need a decimal result.
 ## Practice Questions
 
 1. Write a Java method that finds and returns the mode (most frequent element) in an array of
-   integers.
+ integers.
 
 2. Write a Java method `isSorted(int[] arr)` that returns `true` if the array is sorted in ascending
-   order.
+ order.
 
 3. Given a 2D array representing a seating chart (0 = empty, 1 = occupied), write a method that
-   counts the number of occupied seats.
+ counts the number of occupied seats.
 
 4. Write pseudocode for a procedure that removes all occurrences of a given value from a list.
 
@@ -502,24 +502,24 @@ Always cast to `double` before division when you need a decimal result.
 13. Write a Java method `isPalindrome(String s)` that ignores case and non-alphanumeric characters.
 
 14. Explain the difference between `ArrayIndexOutOfBoundsException` and `NullPointerException`. Give
-    an example of code that causes each.
+ an example of code that causes each.
 
 15. Write a Java method that finds the two largest values in an array in a single pass.
 
 16. Write pseudocode for a procedure `mergeSorted(list1, list2)` that merges two sorted lists into
-    one sorted list.
+ one sorted list.
 
 17. Explain what metadata is and give two examples where metadata could reveal sensitive
-    information.
+ information.
 
 18. Write a Java method that counts the frequency of each character in a string and returns the
-    results in a Map.
+ results in a Map.
 
 19. Explain the difference between an array and an ArrayList. Give three scenarios where you would
-    use each.
+ use each.
 
 20. Write a Java method that takes a 2D array and returns the transpose of the matrix. What is the
-    time complexity?
+ time complexity?
 
 ### Iterating Over 2D Arrays
 
@@ -642,7 +642,7 @@ Scatter plots are used to visualise the relationship between two variables.
 - **No correlation:** No visible pattern.
 
 **Correlation does not imply causation.** Two variables may be correlated due to a confounding
-variable, not because one causes the other.
+Variable, not because one causes the other.
 
 ### Data Cleaning
 
@@ -659,12 +659,12 @@ Real-world data is often messy and requires cleaning before analysis:
 2. **Off-by-one errors with `substring`.** `substring(a, b)` includes index `a` but excludes `b`.
 3. **Confusing `ArrayList` size with array length.** `list.size()` vs `arr.length`.
 4. **Forgetting that strings are immutable.** Methods return new strings; they do not modify the
-   original.
+ original.
 5. **Not handling empty arrays or null inputs.**
 6. **Confusing row and column indices in 2D arrays.** `grid[row][col]`.
-7. **Integer division in Java.** `5 / 2` equals `2`, not `2.5`. Cast to `double`.
+7. **Integer division in Java.** `5 / 2` equals `2`Not `2.5`. Cast to `double`.
 8. **Confusing `substring` parameters across languages.** Java `substring(1, 4)` returns chars at
-   indices 1, 2, 3.
+ indices 1, 2, 3.
 
 ## Additional Topics
 
@@ -702,7 +702,7 @@ for (String name : names) {
 
 :::warning
 Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-during iteration. Use an Iterator or iterate backwards with an index.
+During iteration. Use an Iterator or iterate backwards with an index.
 :::
 
 ```java
@@ -728,16 +728,16 @@ public class Student implements Comparable<Student> {
 
 ### Big-O Analysis of ArrayList Operations
 
-| Operation          | Average | Worst  |
+| Operation | Average | Worst |
 | ------------------ | ------- | ------ |
-| `get(i)`           | $O(1)$  | $O(1)$ |
-| `add(item)`        | $O(1)$  | $O(n)$ |
-| `add(i, item)`     | $O(n)$  | $O(n)$ |
-| `remove(i)`        | $O(n)$  | $O(n)$ |
-| `remove(Object)`   | $O(n)$  | $O(n)$ |
-| `set(i, item)`     | $O(1)$  | $O(1)$ |
-| `contains(Object)` | $O(n)$  | $O(n)$ |
-| `indexOf(Object)`  | $O(n)$  | $O(n)$ |
+| `get(i)` | $O(1)$ | $O(1)$ |
+| `add(item)` | $O(1)$ | $O(n)$ |
+| `add(i, item)` | $O(n)$ | $O(n)$ |
+| `remove(i)` | $O(n)$ | $O(n)$ |
+| `remove(Object)` | $O(n)$ | $O(n)$ |
+| `set(i, item)` | $O(1)$ | $O(1)$ |
+| `contains(Object)` | $O(n)$ | $O(n)$ |
+| `indexOf(Object)` | $O(n)$ | $O(n)$ |
 
 ### Privacy Laws and Regulations
 
@@ -748,7 +748,7 @@ public class Student implements Comparable<Student> {
 ### Data Breaches
 
 A data breach is an incident where sensitive data is accessed without authorisation. Consequences
-include identity theft, financial loss, and reputational damage.
+Include identity theft, financial loss, and reputational damage.
 
 **Prevention strategies:**
 
@@ -761,13 +761,13 @@ include identity theft, financial loss, and reputational damage.
 ## Practice Questions
 
 1. Write a Java method that finds and returns the mode (most frequent element) in an array of
-   integers.
+ integers.
 
 2. Write a Java method `isSorted(int[] arr)` that returns `true` if the array is sorted in ascending
-   order.
+ order.
 
 3. Given a 2D array representing a seating chart (0 = empty, 1 = occupied), write a method that
-   counts the number of occupied seats.
+ counts the number of occupied seats.
 
 4. Write pseudocode for a procedure that removes all occurrences of a given value from a list.
 
@@ -790,18 +790,18 @@ include identity theft, financial loss, and reputational damage.
 13. Write a Java method `isPalindrome(String s)` that ignores case and non-alphanumeric characters.
 
 14. Explain the difference between `ArrayIndexOutOfBoundsException` and `NullPointerException`. Give
-    an example of code that causes each.
+ an example of code that causes each.
 
 15. Write a Java method that finds the two largest values in an array in a single pass.
 
 16. Write pseudocode for a procedure `mergeSorted(list1, list2)` that merges two sorted lists into
-    one sorted list.
+ one sorted list.
 
 17. Explain what metadata is and give two examples where metadata could reveal sensitive
-    information.
+ information.
 
 18. Write a Java method that counts the frequency of each character in a string and returns the
-    results in a Map.
+ results in a Map.
 
 ## Practice Problems
 
@@ -842,7 +842,7 @@ Time complexity: $O(r + c)$ where $r$ is rows and $c$ is columns.
 <details>
 <summary>Question 2: ArrayList manipulation</summary>
 
-Given an `ArrayList<Integer>` containing the values `[3, 7, 2, 7, 5, 7, 1]`, write Java code that removes all occurrences of the value 7. Explain why iterating forward with a for-each loop would cause an error.
+Given an `ArrayList<Integer>` containing the values `[3, 7, 2, 7, 5, 7, 1]`Write Java code that removes all occurrences of the value 7. Explain why iterating forward with a for-each loop would cause an error.
 
 </details>
 
@@ -890,7 +890,7 @@ An algorithm performs the following steps on an array of size $n$: (1) sorts the
 
 Step 1: Merge sort takes $O(n \log n)$.
 
-Step 2: Each binary search takes $O(\log n)$, and it is performed $n$ times: $n \times O(\log n) = O(n \log n)$.
+Step 2: Each binary search takes $O(\log n)$And it is performed $n$ times: $n \times O(\log n) = O(n \log n)$.
 
 Overall: $O(n \log n) + O(n \log n) = O(n \log n)$.
 
@@ -913,3 +913,11 @@ A photographer uploads photos to a social media platform. Describe two types of 
 Other examples include camera model, software version, and thumbnail previews. Users should strip metadata before sharing photos online.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

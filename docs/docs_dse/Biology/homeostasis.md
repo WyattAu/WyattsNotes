@@ -39,12 +39,12 @@ Stimulus --> Receptor --> Coordinator --> Effector --> Response
 
 **Examples of negative feedback in the body:**
 
-| Physiological Variable | Set Point (Approximate) | Receptor             | Coordinator      | Effector               | Response                                   |
+| Physiological Variable | Set Point (Approximate) | Receptor | Coordinator | Effector | Response |
 | --------------------- | ----------------------- | -------------------- | ---------------- | ---------------------- | ------------------------------------------ |
-| Blood glucose         | 90 mg/100 cm$^3$        | Pancreas ($\beta$/$\alpha$ cells) | Pancreas (hormonal) | Liver, muscles        | Glycogenesis/glycogenolysis               |
-| Body temperature      | 37 degrees C             | Hypothalamus (thermoreceptors) | Hypothalamus    | Skin, blood vessels   | Sweating, vasodilation/shivering, vasoconstriction |
-| Blood water potential | Normal osmolarity        | Hypothalamus (osmoreceptors) | Hypothalamus --> posterior pituitary | Kidneys (collecting duct) | ADH release; water reabsorption           |
-| Blood pH              | 7.35-7.45               | Chemoreceptors (aorta, carotid, medulla) | Medulla (breathing centre) | Lungs, kidneys    | Changes in breathing rate; bicarbonate excretion |
+| Blood glucose | 90 mg/100 cm$^3$ | Pancreas ($\beta$/$\alpha$ cells) | Pancreas (hormonal) | Liver, muscles | Glycogenesis/glycogenolysis |
+| Body temperature | 37 degrees C | Hypothalamus (thermoreceptors) | Hypothalamus | Skin, blood vessels | Sweating, vasodilation/shivering, vasoconstriction |
+| Blood water potential | Normal osmolarity | Hypothalamus (osmoreceptors) | Hypothalamus --> posterior pituitary | Kidneys (collecting duct) | ADH release; water reabsorption |
+| Blood pH | 7.35-7.45 | Chemoreceptors (aorta, carotid, medulla) | Medulla (breathing centre) | Lungs, kidneys | Changes in breathing rate; bicarbonate excretion |
 
 ### Positive Feedback
 
@@ -52,10 +52,10 @@ Positive feedback amplifies a change from the set point, pushing the variable fu
 
 **Examples of positive feedback:**
 
-| Process               | Mechanism                                                                                                                                                        |
+| Process | Mechanism |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ovulation             | Rising oestrogen levels stimulate LH release (positive feedback); the LH surge triggers ovulation. After ovulation, the positive feedback loop ends.             |
-| Blood clotting        | When a vessel is damaged, clotting factors are activated in a cascade; each step activates more factors, amplifying the response until a clot forms.             |
+| Ovulation | Rising oestrogen levels stimulate LH release (positive feedback); the LH surge triggers ovulation. After ovulation, the positive feedback loop ends. |
+| Blood clotting | When a vessel is damaged, clotting factors are activated in a cascade; each step activates more factors, amplifying the response until a clot forms. |
 | Childbirth (parturition) | The baby's head pushes against the cervix, stimulating stretch receptors. Impulses cause the posterior pituitary to release oxytocin, which causes stronger uterine contractions. Stronger contractions push the baby further against the cervix, stimulating more oxytocin release. This cycle continues until birth. |
 
 :::warning
@@ -64,13 +64,13 @@ A common DSE pitfall is to assume all feedback loops are negative. The DSE speci
 
 ### Components of a Homeostatic Control System
 
-| Component    | Role                                                                                                   | Example                                                                                             |
+| Component | Role | Example |
 | ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Receptor     | Detects changes in the internal environment (stimuli)                                                  | Thermoreceptors in the hypothalamus and skin detect temperature changes                             |
-| Coordinator  | Processes information from receptors and sends signals to effectors                                    | Hypothalamus processes temperature information and sends nerve impulses to effectors                |
-| Effector      | Carries out the response that restores the variable to its set point                                  | Sweat glands secrete sweat; blood vessels dilate or constrict; muscles shiver                       |
-| Set point    | The normal value or range of the physiological variable                                                | Body temperature: 37 degrees C; blood glucose: approximately 90 mg/100 cm$^3$                         |
-| Feedback     | The output of the effector is monitored by the receptor, allowing the system to self-regulate           | As body temperature falls back to normal, thermoreceptors reduce their firing rate                  |
+| Receptor | Detects changes in the internal environment (stimuli) | Thermoreceptors in the hypothalamus and skin detect temperature changes |
+| Coordinator | Processes information from receptors and sends signals to effectors | Hypothalamus processes temperature information and sends nerve impulses to effectors |
+| Effector | Carries out the response that restores the variable to its set point | Sweat glands secrete sweat; blood vessels dilate or constrict; muscles shiver |
+| Set point | The normal value or range of the physiological variable | Body temperature: 37 degrees C; blood glucose: approximately 90 mg/100 cm$^3$ |
+| Feedback | The output of the effector is monitored by the receptor, allowing the system to self-regulate | As body temperature falls back to normal, thermoreceptors reduce their firing rate |
 
 ---
 
@@ -86,12 +86,12 @@ Blood glucose concentration is maintained at approximately **90 mg/100 cm$^3$** 
 2. $\beta$ cells in the islets of Langerhans detect the elevated glucose
 3. $\beta$ cells secrete more **insulin** into the blood
 4. Insulin binds to receptors on target cells (liver, muscle, adipose tissue), triggering:
-   - Increased glucose uptake by cells (via GLUT4 transporter proteins, which are translocated to the cell membrane in response to insulin)
-   - Increased rate of glycolysis (glucose respiration within cells)
-   - Increased glycogenesis (conversion of glucose to glycogen for storage in liver and muscle)
-   - Decreased glycogenolysis (inhibition of glycogen breakdown)
-   - Increased lipogenesis (conversion of glucose to fat for long-term storage)
-   - Decreased gluconeogenesis (inhibition of new glucose synthesis)
+ - Increased glucose uptake by cells (via GLUT4 transporter proteins, which are translocated to the cell membrane in response to insulin)
+ - Increased rate of glycolysis (glucose respiration within cells)
+ - Increased glycogenesis (conversion of glucose to glycogen for storage in liver and muscle)
+ - Decreased glycogenolysis (inhibition of glycogen breakdown)
+ - Increased lipogenesis (conversion of glucose to fat for long-term storage)
+ - Decreased gluconeogenesis (inhibition of new glucose synthesis)
 5. Blood glucose concentration decreases back to the set point
 6. As blood glucose falls, $\beta$ cells detect this and reduce insulin secretion (**negative feedback**)
 
@@ -101,9 +101,9 @@ Blood glucose concentration is maintained at approximately **90 mg/100 cm$^3$** 
 2. $\alpha$ cells in the islets of Langerhans detect the low glucose
 3. $\alpha$ cells secrete more **glucagon** into the blood
 4. Glucagon binds to receptors on liver cells (hepatocytes), triggering:
-   - Increased glycogenolysis (breakdown of glycogen into glucose in the liver)
-   - Increased gluconeogenesis (conversion of amino acids and glycerol to glucose in the liver)
-   - Increased lipolysis (breakdown of fat into fatty acids and glycerol)
+ - Increased glycogenolysis (breakdown of glycogen into glucose in the liver)
+ - Increased gluconeogenesis (conversion of amino acids and glycerol to glucose in the liver)
+ - Increased lipolysis (breakdown of fat into fatty acids and glycerol)
 5. Blood glucose concentration increases back to the set point
 6. As blood glucose rises, $\alpha$ cells reduce glucagon secretion (**negative feedback**)
 
@@ -111,11 +111,11 @@ Blood glucose concentration is maintained at approximately **90 mg/100 cm$^3$** 
 
 The liver is the central organ in blood glucose homeostasis. It acts as a "glucose buffer," removing glucose from the blood when levels are high and releasing glucose when levels are low.
 
-| Process           | Trigger                 | Description                                                                                           | Direction            |
+| Process | Trigger | Description | Direction |
 | ----------------- | ----------------------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
-| Glycogenesis      | High blood glucose      | Conversion of glucose to glycogen for storage                                                          | Stores glucose       |
-| Glycogenolysis    | Low blood glucose       | Breakdown of glycogen to glucose-6-phosphate, then to free glucose (liver has glucose-6-phosphatase)  | Releases glucose     |
-| Gluconeogenesis   | Low blood glucose       | Synthesis of glucose from non-carbohydrate sources (lactate, amino acids, glycerol)                    | Produces new glucose |
+| Glycogenesis | High blood glucose | Conversion of glucose to glycogen for storage | Stores glucose |
+| Glycogenolysis | Low blood glucose | Breakdown of glycogen to glucose-6-phosphate, then to free glucose (liver has glucose-6-phosphatase) | Releases glucose |
+| Gluconeogenesis | Low blood glucose | Synthesis of glucose from non-carbohydrate sources (lactate, amino acids, glycerol) | Produces new glucose |
 
 **Critical distinction -- liver vs muscle:**
 
@@ -146,26 +146,26 @@ The hypothalamus compares the input from these receptors with the set point (app
 
 When the body temperature rises above the set point:
 
-| Response             | Mechanism                                                                                                                                                      |
+| Response | Mechanism |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vasodilation         | Arterioles supplying the skin dilate, increasing blood flow to the skin surface. More heat is lost by radiation from the blood to the environment.             |
-| Sweating             | Sweat glands secrete sweat onto the skin surface. Water in sweat evaporates, absorbing latent heat of vaporisation from the skin (approximately 2.4 kJ per gram of water). This cools the blood in the skin capillaries. |
-| Increased breathing  | Panting or faster breathing increases evaporative heat loss from the lungs and respiratory tract.                                                              |
-| Behavioural changes  | Removing clothing; seeking shade; drinking cold fluids                                                                                                         |
-| Decreased metabolic rate | Cells reduce their rate of respiration, producing less heat as a by-product                                                                                 |
+| Vasodilation | Arterioles supplying the skin dilate, increasing blood flow to the skin surface. More heat is lost by radiation from the blood to the environment. |
+| Sweating | Sweat glands secrete sweat onto the skin surface. Water in sweat evaporates, absorbing latent heat of vaporisation from the skin (approximately 2.4 kJ per gram of water). This cools the blood in the skin capillaries. |
+| Increased breathing | Panting or faster breathing increases evaporative heat loss from the lungs and respiratory tract. |
+| Behavioural changes | Removing clothing; seeking shade; drinking cold fluids |
+| Decreased metabolic rate | Cells reduce their rate of respiration, producing less heat as a by-product |
 
 ### Response to Cold (Warming Mechanisms)
 
 When the body temperature falls below the set point:
 
-| Response                  | Mechanism                                                                                                                                                                                                 |
+| Response | Mechanism |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vasoconstriction          | Arterioles supplying the skin constrict, reducing blood flow to the skin surface. Less heat is lost from the blood to the environment. More blood is diverted to the core organs to maintain their temperature. |
-| Shivering (thermogenesis) | Rapid, involuntary contractions of skeletal muscles. Muscle respiration generates heat as a by-product, warming the body. Shivering can increase heat production by 2-5 times the resting rate.                       |
-| Piloerection              | Hair erector muscles contract, causing body hairs to stand upright. This traps a layer of insulating air next to the skin (more significant in furry animals than in humans).                                      |
-| Increased metabolic rate  | Thyroid gland releases more thyroxine, increasing the basal metabolic rate of cells. Cells respire more, producing more heat. Adrenaline also increases metabolic rate.                                         |
-| Behavioural changes       | Putting on warm clothing; curling up to reduce surface area; seeking shelter; drinking hot drinks                                                                                                            |
-| Brown fat metabolism      | Brown adipose tissue (especially in newborns) contains many mitochondria that can uncouple respiration from ATP production, releasing energy directly as heat (non-shivering thermogenesis).                   |
+| Vasoconstriction | Arterioles supplying the skin constrict, reducing blood flow to the skin surface. Less heat is lost from the blood to the environment. More blood is diverted to the core organs to maintain their temperature. |
+| Shivering (thermogenesis) | Rapid, involuntary contractions of skeletal muscles. Muscle respiration generates heat as a by-product, warming the body. Shivering can increase heat production by 2-5 times the resting rate. |
+| Piloerection | Hair erector muscles contract, causing body hairs to stand upright. This traps a layer of insulating air next to the skin (more significant in furry animals than in humans). |
+| Increased metabolic rate | Thyroid gland releases more thyroxine, increasing the basal metabolic rate of cells. Cells respire more, producing more heat. Adrenaline also increases metabolic rate. |
+| Behavioural changes | Putting on warm clothing; curling up to reduce surface area; seeking shelter; drinking hot drinks |
+| Brown fat metabolism | Brown adipose tissue (especially in newborns) contains many mitochondria that can uncouple respiration from ATP production, releasing energy directly as heat (non-shivering thermogenesis). |
 
 ### Worked Example: Thermoregulation Calculation
 
@@ -226,13 +226,13 @@ The kidneys regulate the water potential of the blood by adjusting the volume an
 
 The nephron is the functional unit of the kidney. Each kidney contains approximately one million nephrons.
 
-| Region                         | Function                                                                                                                                      |
+| Region | Function |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Renal (Bowman's) capsule       | Ultrafiltration: high blood pressure in the glomerulus forces small molecules (water, glucose, urea, ions) out of the blood into the capsule  |
+| Renal (Bowman's) capsule | Ultrafiltration: high blood pressure in the glomerulus forces small molecules (water, glucose, urea, ions) out of the blood into the capsule |
 | Proximal convoluted tubule (PCT) | Selective reabsorption: reabsorbs ALL glucose, ALL amino acids, approximately 85% of water, and most $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ by active transport and co-transport |
-| Loop of Henle                  | Creates a concentration gradient in the medulla via the counter-current multiplier. Descending limb: permeable to water (water out). Ascending limb: actively transports $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ out (impermeable to water). |
-| Distal convoluted tubule (DCT) | Fine-tuning of water and ion balance; regulated by aldosterone ($\mathrm{Na}^+$ reabsorption)                                              |
-| Collecting duct                | Regulated by ADH: water reabsorption depends on ADH level; permeability controlled by aquaporin channels                                       |
+| Loop of Henle | Creates a concentration gradient in the medulla via the counter-current multiplier. Descending limb: permeable to water (water out). Ascending limb: actively transports $\mathrm{Na}^+$ and $\mathrm{Cl}^-$ out (impermeable to water). |
+| Distal convoluted tubule (DCT) | Fine-tuning of water and ion balance; regulated by aldosterone ($\mathrm{Na}^+$ reabsorption) |
+| Collecting duct | Regulated by ADH: water reabsorption depends on ADH level; permeability controlled by aquaporin channels |
 
 ### The Counter-Current Multiplier
 
@@ -264,14 +264,14 @@ A buffer resists changes in pH by minimising the effect of adding acid or alkali
 
 $$\mathrm{H}^+ + \mathrm{HCO}_3^- \rightleftharpoons \mathrm{H}_2\mathrm{CO}_3 \rightleftharpoons \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$$
 
-- When $\mathrm{H}^+$ ions are added (acid): they combine with $\mathrm{HCO}_3^-$ to form $\mathrm{H}_2\mathrm{CO}_3$, which dissociates into $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$. The $\mathrm{CO}_2$ is exhaled by the lungs.
-- When $\mathrm{H}^+$ ions are removed (alkali): $\mathrm{H}_2\mathrm{CO}_3$ dissociates to release more $\mathrm{H}^+$, restoring pH.
+- When $\mathrm{H}^+$ ions are added (acid): they combine with $\mathrm{HCO}_3^-$ to form $\mathrm{H}_2\mathrm{CO}_3$Which dissociates into $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$. The $\mathrm{CO}_2$ is exhaled by the lungs.
+- When $\mathrm{H}^+$ ions are removed (alkali): $\mathrm{H}_2\mathrm{CO}_3$ dissociates to release more $\mathrm{H}^+$Restoring pH.
 
 **Haemoglobin as a buffer:**
 
 - Haemoglobin can bind $\mathrm{H}^+$ ions, acting as a buffer against acidification.
-- In the tissues: $\mathrm{CO}_2$ diffuses into red blood cells and is converted to $\mathrm{HCO}_3^-$ and $\mathrm{H}^+$ by carbonic anhydrase. Haemoglobin binds the $\mathrm{H}^+$, preventing a large pH drop.
-- In the lungs: the reaction reverses; $\mathrm{H}^+$ is released, combines with $\mathrm{HCO}_3^-$, and $\mathrm{CO}_2$ is exhaled.
+- In the tissues: $\mathrm{CO}_2$ diffuses into red blood cells and is converted to $\mathrm{HCO}_3^-$ and $\mathrm{H}^+$ by carbonic anhydrase. Haemoglobin binds the $\mathrm{H}^+$Preventing a large pH drop.
+- In the lungs: the reaction reverses; $\mathrm{H}^+$ is released, combines with $\mathrm{HCO}_3^-$And $\mathrm{CO}_2$ is exhaled.
 
 ### Respiratory Regulation of pH
 
@@ -296,9 +296,9 @@ The kidneys provide a slower but more powerful mechanism for pH regulation (take
 
 | Feature | Detail |
 |---------|--------|
-| Cause   | Autoimmune destruction of $\beta$ cells in the islets of Langerhans |
+| Cause | Autoimmune destruction of $\beta$ cells in the islets of Langerhans |
 | Insulin | NOT produced (absolute insulin deficiency) |
-| Onset   | Usually in childhood or adolescence |
+| Onset | in childhood or adolescence |
 | Treatment | Insulin injections (lifelong); blood glucose monitoring; dietary management |
 | Mechanism | Without insulin, cells cannot take up glucose; blood glucose rises; glucose appears in urine (glycosuria) when it exceeds the renal threshold (approximately 180 mg/100 cm$^3$) |
 
@@ -306,9 +306,9 @@ The kidneys provide a slower but more powerful mechanism for pH regulation (take
 
 | Feature | Detail |
 |---------|--------|
-| Cause   | Body cells become resistant to insulin (reduced sensitivity of insulin receptors); $\beta$ cells may gradually decline |
+| Cause | Body cells become resistant to insulin (reduced sensitivity of insulin receptors); $\beta$ cells may gradually decline |
 | Insulin | Initially produced (sometimes at higher levels than normal); eventually production may decrease |
-| Onset   | Usually in adults (increasingly seen in younger people); strongly linked to obesity, physical inactivity, and diet |
+| Onset | in adults (increasingly seen in younger people); strongly linked to obesity, physical inactivity, and diet |
 | Treatment | Lifestyle changes (diet, exercise); oral medication (e.g., metformin, which increases insulin sensitivity and reduces hepatic glucose production); insulin may be needed in advanced cases |
 | Risk factors | Obesity, sedentary lifestyle, family history, high-calorie diet, ageing |
 
@@ -327,13 +327,13 @@ The kidneys provide a slower but more powerful mechanism for pH regulation (take
 
 ### Long-Term Complications of Diabetes
 
-| Complication             | Mechanism                                                                                                               |
+| Complication | Mechanism |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| Cardiovascular disease   | Damage to blood vessels from chronic hyperglycaemia; increased atherosclerosis; increased risk of heart attack and stroke |
-| Kidney damage (nephropathy) | High glucose damages the glomerular filtration membrane, reducing kidney function; can lead to kidney failure          |
-| Nerve damage (neuropathy) | High glucose damages peripheral nerves, causing numbness, tingling, and pain, especially in the extremities             |
-| Retinopathy             | Damage to blood vessels in the retina; can cause blindness                                                              |
-| Foot ulcers and amputation | Reduced sensation (neuropathy) and poor circulation lead to undetected injuries and poor healing                       |
+| Cardiovascular disease | Damage to blood vessels from chronic hyperglycaemia; increased atherosclerosis; increased risk of heart attack and stroke |
+| Kidney damage (nephropathy) | High glucose damages the glomerular filtration membrane, reducing kidney function; can lead to kidney failure |
+| Nerve damage (neuropathy) | High glucose damages peripheral nerves, causing numbness, tingling, and pain, especially in the extremities |
+| Retinopathy | Damage to blood vessels in the retina; can cause blindness |
+| Foot ulcers and amputation | Reduced sensation (neuropathy) and poor circulation lead to undetected injuries and poor healing |
 
 ### Worked Example: Diabetes and Kidney Function
 
@@ -420,24 +420,24 @@ If you get this wrong, revise: Diabetes Mellitus -- Type 1 Diabetes; Type 2 Diab
 <details>
 <summary>Solution</summary>
 
-| Feature       | Type 1 Diabetes                                          | Type 2 Diabetes                                                          |
+| Feature | Type 1 Diabetes | Type 2 Diabetes |
 | ------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Cause         | Autoimmune destruction of $\beta$ cells                   | Insulin resistance (reduced receptor sensitivity); genetic and lifestyle factors |
-| Insulin       | Not produced (absolute deficiency)                        | Initially normal or elevated; may decrease over time (relative deficiency) |
-| Onset         | Usually childhood/adolescence                             | Usually adulthood (but increasingly in younger people)                     |
-| Treatment     | Insulin injections (lifelong)                             | Diet, exercise, oral medication; insulin in advanced cases                 |
-| Mechanism     | No insulin means cells cannot take up glucose; glucose accumulates in blood | Cells become resistant to insulin; glucose uptake is impaired despite insulin presence |
+| Cause | Autoimmune destruction of $\beta$ cells | Insulin resistance (reduced receptor sensitivity); genetic and lifestyle factors |
+| Insulin | Not produced (absolute deficiency) | Initially normal or elevated; may decrease over time (relative deficiency) |
+| Onset | childhood/adolescence | adulthood (but increasingly in younger people) |
+| Treatment | Insulin injections (lifelong) | Diet, exercise, oral medication; insulin in advanced cases |
+| Mechanism | No insulin means cells cannot take up glucose; glucose accumulates in blood | Cells become resistant to insulin; glucose uptake is impaired despite insulin presence |
 
 In both types, blood glucose rises because glucose cannot enter cells efficiently. Excess glucose is excreted in the urine (glycosuria), causing water loss (polyuria) and thirst (polydipsia). Long-term complications (cardiovascular disease, kidney damage, nerve damage, retinopathy) result from chronic hyperglycaemia damaging blood vessels and tissues.
 
 ### Gestational Diabetes
 
-Gestational diabetes mellitus (GDM) is a form of diabetes that develops during pregnancy and usually resolves after childbirth.
+Gestational diabetes mellitus (GDM) is a form of diabetes that develops during pregnancy and resolves after childbirth.
 
 | Feature | Detail |
 |---------|--------|
-| Cause   | Placental hormones (human placental lactogen, progesterone, cortisol) cause insulin resistance in maternal tissues; the pancreas may not produce enough additional insulin to compensate |
-| Onset   | Typically during the second or third trimester (24-28 weeks) |
+| Cause | Placental hormones (human placental lactogen, progesterone, cortisol) cause insulin resistance in maternal tissues; the pancreas may not produce enough additional insulin to compensate |
+| Onset | during the second or third trimester (24-28 weeks) |
 | Risk factors | Obesity, family history of Type 2 diabetes, previous GDM, maternal age over 35, certain ethnicities |
 | Risks to mother | Increased risk of pre-eclampsia; increased risk of developing Type 2 diabetes later in life |
 | Risks to foetus | Macrosomia (excessive birth weight); hypoglycaemia after birth; respiratory distress syndrome; increased risk of obesity and Type 2 diabetes in adulthood |
@@ -453,7 +453,7 @@ Gestational diabetes mellitus (GDM) is a form of diabetes that develops during p
 
 | Feature | Detail |
 |---------|--------|
-| Cause   | Graves' disease (autoimmune); thyroid nodule; excessive TSH |
+| Cause | Graves' disease (autoimmune); thyroid nodule; excessive TSH |
 | Hormone | Excess thyroxine ($\mathrm{T}_4$) and triiodothyronine ($\mathrm{T}_3$) |
 | Symptoms | Increased BMR; weight loss despite increased appetite; rapid heart rate (tachycardia); anxiety; tremor; heat intolerance; sweating; exophthalmos (bulging eyes in Graves' disease) |
 | Treatment | Anti-thyroid drugs (e.g., carbimazole); radioactive iodine; surgical removal of part or all of the thyroid |
@@ -462,7 +462,7 @@ Gestational diabetes mellitus (GDM) is a form of diabetes that develops during p
 
 | Feature | Detail |
 |---------|--------|
-| Cause   | Hashimoto's thyroiditis (autoimmune); iodine deficiency; surgical removal; radioactive iodine treatment |
+| Cause | Hashimoto's thyroiditis (autoimmune); iodine deficiency; surgical removal; radioactive iodine treatment |
 | Hormone | Insufficient thyroxine ($\mathrm{T}_4$) and triiodothyronine ($\mathrm{T}_3$) |
 | Symptoms | Decreased BMR; weight gain; fatigue; cold intolerance; dry skin; slow heart rate (bradycardia); depression; myxoedema (swelling of skin and tissues) |
 | Treatment | Thyroxine replacement therapy (daily levothyroxine tablets) |
@@ -515,55 +515,55 @@ The thyroid gland is not producing enough $\mathrm{T}_4$ (low $\mathrm{T}_4$). T
 
 Ectotherms (reptiles, amphibians, fish, invertebrates) rely primarily on behavioural and physiological mechanisms rather than metabolic heat production to regulate their body temperature.
 
-| Mechanism                | Description                                                                                                        | Example                                 |
+| Mechanism | Description | Example |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Basking                   | Moving to a warm area and exposing the body surface to direct sunlight                                           | Lizards on rocks; snakes in sunlight   |
-| Sheltering                 | Moving to shade, burrows, or crevices during hot periods                                                 | Snakes in rock crevices; toads in burrows |
-| Nocturnal activity        | Being active at night when temperatures are lower                                                               | Geckos; desert rodents                  |
-| Countercurrent heat exchange | Alternating the direction of blood flow in limbs to either conserve or lose heat depending on need                       | Dolphin flukes; woodpecker feet           |
-| Altering body shape        | Flattening the body to increase surface area for heat loss or reducing it to conserve heat                            | Horned vipers flatten to increase surface area for heat absorption |
-| Adjusting heart rate        | Increasing heart rate to deliver more blood to the body surface for heat loss                                    | Lizards in sun increase heart rate     |
-| Changing colour           | Some reptiles can darken their skin to absorb more heat                                                                | Bearded dragons darken when cold         |
+| Basking | Moving to a warm area and exposing the body surface to direct sunlight | Lizards on rocks; snakes in sunlight |
+| Sheltering | Moving to shade, burrows, or crevices during hot periods | Snakes in rock crevices; toads in burrows |
+| Nocturnal activity | Being active at night when temperatures are lower | Geckos; desert rodents |
+| Countercurrent heat exchange | Alternating the direction of blood flow in limbs to either conserve or lose heat depending on need | Dolphin flukes; woodpecker feet |
+| Altering body shape | Flattening the body to increase surface area for heat loss or reducing it to conserve heat | Horned vipers flatten to increase surface area for heat absorption |
+| Adjusting heart rate | Increasing heart rate to deliver more blood to the body surface for heat loss | Lizards in sun increase heart rate |
+| Changing colour | Some reptiles can darken their skin to absorb more heat | Bearded dragons darken when cold |
 
 ### Temperature Regulation in Endotherms
 
 Birds and mammals generate heat internally through metabolism and use insulation and behavioural mechanisms to maintain body temperature.
 
-| Mechanism                | Description                                                                                                        | Example                                 |
+| Mechanism | Description | Example |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Shivering thermogenesis   | Rapid, involuntary muscle contractions that generate heat as a by-product of respiration                            | Mammals in cold environments            |
+| Shivering thermogenesis | Rapid, involuntary muscle contractions that generate heat as a by-product of respiration | Mammals in cold environments |
 | Non-shivering thermogenesis | Brown adipose tissue (BAT) uncouples respiration from ATP production, releasing energy directly as heat; stimulated by sympathetic nervous system | Newborn human infants; hibernating mammals |
-| Piloerection              | Hair erector muscles contract, trapping insulating air next to the skin                                               | Goosebumps in humans; mammals fluffing fur |
-| Vasoconstriction          | Reducing blood flow to the skin surface to reduce heat loss                                                       | Mammals in cold environments            |
-| Insulation (fur/blubber)  | Trapped air in fur or fat provides effective insulation against heat loss                                        | Arctic mammals have thick blubber layers     |
-| Huddling                 | Group behaviour to reduce surface area to volume ratio; reduces heat loss per individual                                | Penguins in the Antarctic; macaques       |
-| Nest building            | Constructing insulated structures to reduce heat loss                                                            | Birds building insulated nests             |
-| Countercurrent exchange    | Arterial blood flowing to limbs passes close to venous blood returning from limbs, allowing heat exchange between them                              | Dolphin flukes; wolf paws               |
+| Piloerection | Hair erector muscles contract, trapping insulating air next to the skin | Goosebumps in humans; mammals fluffing fur |
+| Vasoconstriction | Reducing blood flow to the skin surface to reduce heat loss | Mammals in cold environments |
+| Insulation (fur/blubber) | Trapped air in fur or fat provides effective insulation against heat loss | Arctic mammals have thick blubber layers |
+| Huddling | Group behaviour to reduce surface area to volume ratio; reduces heat loss per individual | Penguins in the Antarctic; macaques |
+| Nest building | Constructing insulated structures to reduce heat loss | Birds building insulated nests |
+| Countercurrent exchange | Arterial blood flowing to limbs passes close to venous blood returning from limbs, allowing heat exchange between them | Dolphin flukes; wolf paws |
 
 ### Hibernation and Aestivation
 
 **Hibernation:** A state of reduced metabolic rate and body temperature during winter, allowing animals to survive when food is scarce.
 
-| Feature                  | Description                                                                                                        |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Body temperature          | Drops to near ambient (1-5 degrees C in many mammals); dramatically reduces metabolic rate (to approximately 2-5% of normal)                     |
-| Heart rate               | Drops to approximately 5% of normal                                                                               |
-| Breathing rate            | Very slow and shallow                                                                                           |
-| Fat reserves             | Accumulated brown fat provides energy throughout hibernation                                                    |
-| Periodic arousal         | Animals periodically wake up to urinate, feed briefly, and restore normal body temperature                            |
-| Animals that hibernate   | Bats, hedgehogs, marmots, ground squirrels, dormice, bears (shallow hibernation)                                |
+| Body temperature | Drops to near ambient (1-5 degrees C in many mammals); dramatically reduces metabolic rate (to approximately 2-5% of normal) |
+| Heart rate | Drops to approximately 5% of normal |
+| Breathing rate | Very slow and shallow |
+| Fat reserves | Accumulated brown fat provides energy throughout hibernation |
+| Periodic arousal | Animals periodically wake up to urinate, feed briefly, and restore normal body temperature |
+| Animals that hibernate | Bats, hedgehogs, marmots, ground squirrels, dormice, bears (shallow hibernation) |
 
 **Aestivation:** A similar state of reduced metabolic rate during summer, triggered by heat and drought. Common in desert animals (e.g., desert tortoise, African lungfish).
 
 ### Adaptations of Arctic Animals
 
-| Adaptation                | Mechanism for Heat Conservation                                                                                    |
+| Adaptation | Mechanism for Heat Conservation |
 | ------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Thick blubber layer         | 5-10 cm of subcutaneous fat; very effective insulation (thermal conductivity approximately 0.25 W/m/K)                  |
-| Dense underfur             | Trapped air in dense fur provides insulation; hollow guard hairs in polar bears increase insulation further               |
-| Small ears and tail         | Reduced surface area to volume ratio minimises heat loss                                                |
+| Thick blubber layer | 5-10 cm of subcutaneous fat; very effective insulation (thermal conductivity approximately 0.25 W/m/K) |
+| Dense underfur | Trapped air in dense fur provides insulation; hollow guard hairs in polar bears increase insulation further |
+| Small ears and tail | Reduced surface area to volume ratio minimises heat loss |
 | Counter-current heat exchange | Arterioles in legs are wrapped by veins, allowing heat exchange; warm arterial blood transfers heat to returning venous blood near the body, minimising heat loss at the extremities |
-| Behavioural adaptations   | Huddling; building snow dens; reducing activity; sheltering from wind                                         |
+| Behavioural adaptations | Huddling; building snow dens; reducing activity; sheltering from wind |
 
 
 ---
@@ -574,50 +574,50 @@ Birds and mammals generate heat internally through metabolism and use insulation
 
 Ectotherms (reptiles, amphibians, fish, invertebrates) rely primarily on behavioural and physiological mechanisms to regulate their body temperature rather than metabolic heat production.
 
-| Mechanism                | Description                                                                                                        | Example                                 |
+| Mechanism | Description | Example |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Basking                   | Moving to a warm area and exposing the body surface to direct sunlight                                           | Lizards on rocks; snakes in sunlight   |
-| Sheltering                 | Moving to shade, burrows, or crevices during hot periods                                                 | Snakes in rock crevices; toads in burrows |
-| Nocturnal activity        | Being active at night when temperatures are lower                                                               | Geckos; desert rodents                  |
-| Countercurrent exchange     | Alternating the direction of blood flow in limbs to either conserve or lose heat depending on need                       | Dolphin flukes; woodpecker feet           |
-| Altering body shape        | Flattening the body to increase surface area for heat loss or reducing it to conserve heat                            | Horned vipers flatten to absorb more heat |
-| Adjusting heart rate        | Increasing heart rate to deliver more blood to the body surface for heat loss                                    | Lizards in sun increase heart rate     |
+| Basking | Moving to a warm area and exposing the body surface to direct sunlight | Lizards on rocks; snakes in sunlight |
+| Sheltering | Moving to shade, burrows, or crevices during hot periods | Snakes in rock crevices; toads in burrows |
+| Nocturnal activity | Being active at night when temperatures are lower | Geckos; desert rodents |
+| Countercurrent exchange | Alternating the direction of blood flow in limbs to either conserve or lose heat depending on need | Dolphin flukes; woodpecker feet |
+| Altering body shape | Flattening the body to increase surface area for heat loss or reducing it to conserve heat | Horned vipers flatten to absorb more heat |
+| Adjusting heart rate | Increasing heart rate to deliver more blood to the body surface for heat loss | Lizards in sun increase heart rate |
 
 ### Temperature Regulation in Endotherms
 
-| Mechanism                | Description                                                                                                        | Example                                 |
+| Mechanism | Description | Example |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Shivering thermogenesis   | Rapid, involuntary muscle contractions that generate heat as a by-product of respiration                            | Mammals in cold environments            |
+| Shivering thermogenesis | Rapid, involuntary muscle contractions that generate heat as a by-product of respiration | Mammals in cold environments |
 | Non-shivering thermogenesis | Brown adipose tissue (BAT) uncouples respiration from ATP production, releasing energy directly as heat; stimulated by sympathetic nervous system | Newborn human infants; hibernating mammals |
-| Piloerection              | Hair erector muscles contract, trapping insulating air next to the skin                                               | Goosebumps in humans; mammals fluffing fur |
-| Vasoconstriction          | Reducing blood flow to the skin surface to reduce heat loss                                                       | Mammals in cold environments            |
-| Insulation (fur/blubber)  | Trapped air in fur or fat provides effective insulation against heat loss                                        | Arctic mammals have thick blubber layers     |
-| Huddling                 | Group behaviour to reduce surface area to volume ratio; reduces heat loss per individual                                | Penguins in the Antarctic; macaques       |
+| Piloerection | Hair erector muscles contract, trapping insulating air next to the skin | Goosebumps in humans; mammals fluffing fur |
+| Vasoconstriction | Reducing blood flow to the skin surface to reduce heat loss | Mammals in cold environments |
+| Insulation (fur/blubber) | Trapped air in fur or fat provides effective insulation against heat loss | Arctic mammals have thick blubber layers |
+| Huddling | Group behaviour to reduce surface area to volume ratio; reduces heat loss per individual | Penguins in the Antarctic; macaques |
 
 ### Hibernation and Aestivation
 
 **Hibernation:** A state of reduced metabolic rate and body temperature during winter.
 
-| Feature                  | Description                                                                                                        |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Body temperature          | Drops to near ambient (1-5 degrees C); metabolic rate drops to approximately 2-5% of normal                        |
-| Heart rate               | Drops to approximately 5% of normal                                                                               |
-| Breathing rate            | Very slow and shallow                                                                                           |
-| Fat reserves             | Accumulated brown fat provides energy throughout hibernation                                                    |
-| Periodic arousal         | Animals periodically wake to urinate, feed briefly, and restore normal body temperature                            |
-| Animals that hibernate   | Bats, hedgehogs, marmots, ground squirrels, dormice, bears (shallow hibernation)                                |
+| Body temperature | Drops to near ambient (1-5 degrees C); metabolic rate drops to approximately 2-5% of normal |
+| Heart rate | Drops to approximately 5% of normal |
+| Breathing rate | Very slow and shallow |
+| Fat reserves | Accumulated brown fat provides energy throughout hibernation |
+| Periodic arousal | Animals periodically wake to urinate, feed briefly, and restore normal body temperature |
+| Animals that hibernate | Bats, hedgehogs, marmots, ground squirrels, dormice, bears (shallow hibernation) |
 
 **Aestivation:** Similar state of reduced metabolic rate during summer, triggered by heat and drought. Common in desert animals (e.g., desert tortoise, African lungfish).
 
 ### Adaptations of Arctic Animals
 
-| Adaptation                | Mechanism for Heat Conservation                                                                                    |
+| Adaptation | Mechanism for Heat Conservation |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Thick blubber layer         | 5-10 cm of subcutaneous fat; very effective insulation (thermal conductivity approximately 0.25 W/m/K)                  |
-| Dense underfur             | Trapped air in dense fur provides insulation; hollow guard hairs in polar bears increase insulation further               |
-| Small ears and tail         | Reduced surface area to volume ratio minimises heat loss                                                |
+| Thick blubber layer | 5-10 cm of subcutaneous fat; very effective insulation (thermal conductivity approximately 0.25 W/m/K) |
+| Dense underfur | Trapped air in dense fur provides insulation; hollow guard hairs in polar bears increase insulation further |
+| Small ears and tail | Reduced surface area to volume ratio minimises heat loss |
 | Counter-current exchange | Arterioles in legs wrapped by veins allows heat exchange; warm arterial blood transfers heat to returning venous blood near the body, minimising heat loss at extremities |
-| Behavioural adaptations   | Huddling; building snow dens; reducing activity; sheltering from wind                                         |
+| Behavioural adaptations | Huddling; building snow dens; reducing activity; sheltering from wind |
 
 
 ---
@@ -626,16 +626,16 @@ Ectotherms (reptiles, amphibians, fish, invertebrates) rely primarily on behavio
 
 ### Structure of the Nephron
 
-| Component              | Location in Kidney                                                                                                        | Description                                                                                                               |
+| Component | Location in Kidney | Description |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Renal (Bowman's) capsule | Cortex                                                                                                                  | Cup-shaped structure that surrounds the glomerulus; consists of an outer parietal layer (simple squamous epithelium) and an inner visceral layer (podocytes) |
-| Glomerulus              | Cortex                                                                                                                  | Knot of capillaries between the afferent and efferent arterioles; high pressure due to the wide afferent and narrow efferent arteriole; site of ultrafiltration |
-| Proximal convoluted tubule (PCT) | Cortex                                                                                                            | Highly coiled tube immediately after the renal capsule; lined with cuboidal epithelial cells with microvilli (brush border) and many mitochondria |
-| Loop of Henle            | Medulla (descending limb and thin ascending limb); cortex (thick ascending limb)                                         | Hairpin loop that creates a concentration gradient in the medulla; essential for producing concentrated urine              |
-| Distal convoluted tubule (DCT) | Cortex                                                                                                            | Coiled tube after the loop of Henle; lined with cuboidal epithelial cells (fewer microvilli than PCT); site of selective reabsorption and secretion |
-| Collecting duct          | Passes from cortex through the medulla to the renal pelvis                                                              | Receives filtrate from multiple nephrons; permeability to water is controlled by ADH; delivers urine to the renal pelvis |
-| Peritubular capillaries  | Surround the PCT and DCT; arise from the efferent arteriole                                                             | Reabsorb water, glucose, amino acids, and ions from the tubules back into the blood; secrete waste products into the tubules |
-| Vasa recta               | Hairpin-shaped capillaries that run alongside the loop of Henle                                                         | Maintain the medullary concentration gradient by counter-current exchange                                                |
+| Renal (Bowman's) capsule | Cortex | Cup-shaped structure that surrounds the glomerulus; consists of an outer parietal layer (simple squamous epithelium) and an inner visceral layer (podocytes) |
+| Glomerulus | Cortex | Knot of capillaries between the afferent and efferent arterioles; high pressure due to the wide afferent and narrow efferent arteriole; site of ultrafiltration |
+| Proximal convoluted tubule (PCT) | Cortex | Highly coiled tube immediately after the renal capsule; lined with cuboidal epithelial cells with microvilli (brush border) and many mitochondria |
+| Loop of Henle | Medulla (descending limb and thin ascending limb); cortex (thick ascending limb) | Hairpin loop that creates a concentration gradient in the medulla; essential for producing concentrated urine |
+| Distal convoluted tubule (DCT) | Cortex | Coiled tube after the loop of Henle; lined with cuboidal epithelial cells (fewer microvilli than PCT); site of selective reabsorption and secretion |
+| Collecting duct | Passes from cortex through the medulla to the renal pelvis | Receives filtrate from multiple nephrons; permeability to water is controlled by ADH; delivers urine to the renal pelvis |
+| Peritubular capillaries | Surround the PCT and DCT; arise from the efferent arteriole | Reabsorb water, glucose, amino acids, and ions from the tubules back into the blood; secrete waste products into the tubules |
+| Vasa recta | Hairpin-shaped capillaries that run alongside the loop of Henle | Maintain the medullary concentration gradient by counter-current exchange |
 
 ### Ultrafiltration
 
@@ -643,35 +643,35 @@ Ultrafiltration is the process by which blood is filtered in the glomerulus to f
 
 **Conditions for ultrafiltration:**
 
-| Condition                | Description                                                                                                               |
+| Condition | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| High blood pressure        | The afferent arteriole is wider than the efferent arteriole, creating high hydrostatic pressure (~55 mmHg) in the glomerulus that forces fluid out of the capillaries |
-| Fenestrated endothelium    | The capillary walls of the glomerulus have pores (fenestrations) that allow water and small solutes to pass through but restrict large molecules and cells |
-| Basement membrane          | A thick, negatively charged glycoprotein layer between the endothelium and the podocytes; acts as an additional filter; repels large proteins (which are negatively charged) |
-| Podocytes                 | Specialised epithelial cells of the renal capsule with foot processes (pedicels) that wrap around the capillaries; filtration slits between the foot processes act as a final filter |
+| High blood pressure | The afferent arteriole is wider than the efferent arteriole, creating high hydrostatic pressure (~55 mmHg) in the glomerulus that forces fluid out of the capillaries |
+| Fenestrated endothelium | The capillary walls of the glomerulus have pores (fenestrations) that allow water and small solutes to pass through but restrict large molecules and cells |
+| Basement membrane | A thick, negatively charged glycoprotein layer between the endothelium and the podocytes; acts as an additional filter; repels large proteins (which are negatively charged) |
+| Podocytes | Specialised epithelial cells of the renal capsule with foot processes (pedicels) that wrap around the capillaries; filtration slits between the foot processes act as a final filter |
 
-**What is filtered?** Water, glucose, amino acids, urea, ions (Na$^+$, K$^+$, Cl$^-$, Ca$^{2+}$, HCO$_3^-$), vitamins -- everything in blood plasma EXCEPT large proteins (e.g., albumin, globulins) and blood cells.
+**What is filtered?** Water, glucose, amino acids, urea, ions (Na$^+$K$^+$Cl$^-$Ca$^{2+}$HCO$_3^-$), vitamins -- everything in blood plasma EXCEPT large proteins (e.g., albumin, globulins) and blood cells.
 
 ### Selective Reabsorption
 
-| Substance               | PCT Reabsorption (approximate %)                                                                                          | Mechanism                                                                                                                 |
+| Substance | PCT Reabsorption (approximate %) | Mechanism |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Water                    | ~65%                                                                                                                     | Osmosis (following the reabsorption of solutes)                                                                           |
-| Sodium ions (Na$^+$)      | ~65%                                                                                                                     | Active transport (Na$^+$/K$^+$-ATPase pump on the basolateral membrane); co-transport with glucose and amino acids on the apical membrane |
-| Glucose                  | 100% (in healthy kidneys)                                                                                                | Secondary active transport (co-transport with Na$^+$ via SGLT transporters on the apical membrane)                       |
-| Amino acids              | 100% (in healthy kidneys)                                                                                                | Secondary active transport (co-transport with Na$^+$)                                                                   |
-| Potassium ions (K$^+$)    | ~65%                                                                                                                     | Active transport and diffusion                                                                                           |
-| Calcium ions (Ca$^{2+}$)  | ~65%                                                                                                                     | Active transport (regulated by parathyroid hormone)                                                                       |
-| Bicarbonate (HCO$_3^-$)   | ~85%                                                                                                                     | Reabsorbed as CO$_2$ (converted to H$_2$CO$_3$ then CO$_2$ and H$_2$O inside the cell; CO$_2$ diffuses across and is reconverted to HCO$_3^-$ on the other side) |
-| Urea                     | ~50%                                                                                                                     | Passive diffusion (reabsorbed along with water)                                                                          |
+| Water | ~65% | Osmosis (following the reabsorption of solutes) |
+| Sodium ions (Na$^+$) | ~65% | Active transport (Na$^+$/K$^+$-ATPase pump on the basolateral membrane); co-transport with glucose and amino acids on the apical membrane |
+| Glucose | 100% (in healthy kidneys) | Secondary active transport (co-transport with Na$^+$ via SGLT transporters on the apical membrane) |
+| Amino acids | 100% (in healthy kidneys) | Secondary active transport (co-transport with Na$^+$) |
+| Potassium ions (K$^+$) | ~65% | Active transport and diffusion |
+| Calcium ions (Ca$^{2+}$) | ~65% | Active transport (regulated by parathyroid hormone) |
+| Bicarbonate (HCO$_3^-$) | ~85% | Reabsorbed as CO$_2$ (converted to H$_2$CO$_3$ then CO$_2$ and H$_2$O inside the cell; CO$_2$ diffuses across and is reconverted to HCO$_3^-$ on the other side) |
+| Urea | ~50% | Passive diffusion (reabsorbed along with water) |
 
 ### The Countercurrent Multiplier
 
 The loop of Henle acts as a countercurrent multiplier to create a concentration gradient in the medulla:
 
 1. **Descending limb:** Permeable to water but NOT to ions. As the filtrate descends into the increasingly concentrated medulla, water leaves the filtrate by osmosis; the filtrate becomes more concentrated
-2. **Thin ascending limb:** Permeable to ions (Na$^+$, Cl$^-$) but NOT to water. Na$^+$ and Cl$^-$ diffuse out into the medulla, making the medullary interstitial fluid more concentrated; the filtrate becomes less concentrated
-3. **Thick ascending limb:** Impermeable to water; actively transports Na$^+$, K$^+$, and Cl$^-$ OUT of the filtrate (using Na$^+$/K$^+$-ATPase and the Na$^+$-K$^+$-2Cl$^-$ co-transporter). This further increases the concentration of the medullary interstitial fluid
+2. **Thin ascending limb:** Permeable to ions (Na$^+$Cl$^-$) but NOT to water. Na$^+$ and Cl$^-$ diffuse out into the medulla, making the medullary interstitial fluid more concentrated; the filtrate becomes less concentrated
+3. **Thick ascending limb:** Impermeable to water; actively transports Na$^+$K$^+$And Cl$^-$ OUT of the filtrate (using Na$^+$/K$^+$-ATPase and the Na$^+$-K$^+$-2Cl$^-$ co-transporter). This further increases the concentration of the medullary interstitial fluid
 4. The countercurrent flow (descending and ascending limbs flowing in opposite directions) amplifies the concentration gradient
 5. Result: the medullary interstitial fluid at the bottom of the loop is hypertonic (up to 1200 mOsm/L, compared to ~300 mOsm/L in the cortex)
 6. This gradient allows the collecting duct to reabsorb water and produce concentrated urine (when ADH is present)
@@ -682,42 +682,42 @@ The loop of Henle acts as a countercurrent multiplier to create a concentration 
 
 ### Skin Structure
 
-| Layer                   | Components                                                                                                                | Functions                                                                                                                |
+| Layer | Components | Functions |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Epidermis               | Keratinocytes (produce keratin for waterproofing); melanocytes (produce melanin for UV protection); Langerhans cells (immune defence); Merkel cells (touch receptors) | Waterproof barrier; protection against pathogens and UV radiation; vitamin D synthesis (7-dehydrocholesterol $\rightarrow$ cholecalciferol by UV light) |
-| Dermis                  | Blood vessels; nerves; hair follicles; sebaceous glands; sweat glands (eccrine and apocrine); sensory receptors (Meissner's corpuscles, Pacinian corpuscles) | Nourishment; sensation; thermoregulation; lubrication of hair and skin; structural support (collagen and elastin fibres) |
-| Hypodermis              | Adipose tissue (fat); connective tissue                                                                                   | Insulation; energy storage; cushioning                                                                                   |
+| Epidermis | Keratinocytes (produce keratin for waterproofing); melanocytes (produce melanin for UV protection); Langerhans cells (immune defence); Merkel cells (touch receptors) | Waterproof barrier; protection against pathogens and UV radiation; vitamin D synthesis (7-dehydrocholesterol $\rightarrow$ cholecalciferol by UV light) |
+| Dermis | Blood vessels; nerves; hair follicles; sebaceous glands; sweat glands (eccrine and apocrine); sensory receptors (Meissner's corpuscles, Pacinian corpuscles) | Nourishment; sensation; thermoregulation; lubrication of hair and skin; structural support (collagen and elastin fibres) |
+| Hypodermis | Adipose tissue (fat); connective tissue | Insulation; energy storage; cushioning |
 
 ### Thermoregulation Pathways
 
 **When body temperature RISES (e.g., during exercise, in hot weather):**
 
-| Response                 | Mechanism                                                                                                                 |
+| Response | Mechanism |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Vasodilation              | Blood vessels in the dermis dilate (smooth muscle in the vessel walls relaxes); more blood flows near the skin surface; heat is lost by radiation and convection from the skin surface |
-| Sweating                   | Sweat glands secrete sweat onto the skin surface; water in sweat evaporates, taking latent heat of vaporisation from the skin; this is the most effective cooling mechanism; can lose up to 1-2 litres of sweat per hour during intense exercise |
-| Decreased metabolic rate   | Cells reduce their rate of respiration, producing less heat as a by-product                                              |
-| Behavioural responses      | Removing clothing; seeking shade; drinking cold fluids; fanning                                                           |
+| Vasodilation | Blood vessels in the dermis dilate (smooth muscle in the vessel walls relaxes); more blood flows near the skin surface; heat is lost by radiation and convection from the skin surface |
+| Sweating | Sweat glands secrete sweat onto the skin surface; water in sweat evaporates, taking latent heat of vaporisation from the skin; this is the most effective cooling mechanism; can lose up to 1-2 litres of sweat per hour during intense exercise |
+| Decreased metabolic rate | Cells reduce their rate of respiration, producing less heat as a by-product |
+| Behavioural responses | Removing clothing; seeking shade; drinking cold fluids; fanning |
 
 **When body temperature FALLS (e.g., in cold weather):**
 
-| Response                 | Mechanism                                                                                                                 |
+| Response | Mechanism |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Vasoconstriction           | Blood vessels in the dermis constrict (smooth muscle contracts); less blood flows near the skin surface; less heat is lost from the body surface; blood is diverted to the core to protect vital organs |
-| Shivering                  | Rapid, involuntary contractions of skeletal muscles; respiration in the muscle cells increases, producing more heat as a by-product |
-| Piloerection               | Hair erector muscles contract; hairs stand upright, trapping a layer of still air next to the skin (insulating layer); effective in furry animals but limited effect in humans (goosebumps) |
-| Increased metabolic rate    | Cells increase their rate of respiration; thyroid hormones (T3, T4) stimulate basal metabolic rate; brown adipose tissue (in newborns and hibernating mammals) generates heat through non-shivering thermogenesis |
-| Behavioural responses      | Adding clothing; seeking shelter; curling up (reducing surface area to volume ratio); huddling                          |
+| Vasoconstriction | Blood vessels in the dermis constrict (smooth muscle contracts); less blood flows near the skin surface; less heat is lost from the body surface; blood is diverted to the core to protect vital organs |
+| Shivering | Rapid, involuntary contractions of skeletal muscles; respiration in the muscle cells increases, producing more heat as a by-product |
+| Piloerection | Hair erector muscles contract; hairs stand upright, trapping a layer of still air next to the skin (insulating layer); effective in furry animals but limited effect in humans (goosebumps) |
+| Increased metabolic rate | Cells increase their rate of respiration; thyroid hormones (T3, T4) stimulate basal metabolic rate; brown adipose tissue (in newborns and hibernating mammals) generates heat through non-shivering thermogenesis |
+| Behavioural responses | Adding clothing; seeking shelter; curling up (reducing surface area to volume ratio); huddling |
 
 ### Negative Feedback in Thermoregulation
 
 1. **Normal body temperature:** approximately 37 degrees C (core temperature)
 2. **Temperature receptors:** Thermoreceptors in the skin (detect external temperature changes) and in the hypothalamus (detect blood temperature changes) send nerve impulses to the thermoregulatory centre in the hypothalamus
 3. **Thermoregulatory centre:** The hypothalamus processes the information and sends nerve impulses to effectors:
-   - Sweat glands (via sympathetic nervous system)
-   - Blood vessels in the skin (via sympathetic nervous system)
-   - Skeletal muscles (via motor neurons)
-   - Adrenal medulla (triggers adrenaline release for metabolic effects)
+ - Sweat glands (via sympathetic nervous system)
+ - Blood vessels in the skin (via sympathetic nervous system)
+ - Skeletal muscles (via motor neurons)
+ - Adrenal medulla (triggers adrenaline release for metabolic effects)
 4. **Negative feedback:** When the corrective response brings body temperature back to normal, the thermoreceptors detect this change and the hypothalamus reduces the corrective signals
 
 ---
@@ -730,7 +730,7 @@ The loop of Henle acts as a countercurrent multiplier to create a concentration 
 - **ADH increases water reabsorption, NOT decreases it.** More ADH = more concentrated urine (less volume); less ADH = more dilute urine (more volume)
 - **Sweating cools the body through EVAPORATION, not through the production of sweat itself.** If sweat drips off the skin without evaporating, it does not cool the body. This is why fans help with cooling (they increase evaporation rate)**
 :::tip
-tip
+Tip
 Ready to test your understanding of **Homeostasis**? Review the [Human Reproduction and Homeostasis diagnostic test](/docs/dse/Biology/diagnostics/diag-human-reproduction-homeostasis) which covers homeostatic topics within the DSE specification.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
@@ -751,42 +751,42 @@ If untreated, toxic levels of urea accumulate (**uraemia**), causing nausea, con
 
 ### Haemodialysis
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Principle                | Blood is pumped out of the body, passed through a dialyser (artificial kidney), and returned. Waste products diffuse from the blood across a partially permeable membrane into the dialysis fluid |
-| Dialysis membrane        | Made of cellulose acetate or synthetic polymer; permeable to small molecules (urea, ions, glucose) but not to large molecules (proteins, blood cells) |
+| Principle | Blood is pumped out of the body, passed through a dialyser (artificial kidney), and returned. Waste products diffuse from the blood across a partially permeable membrane into the dialysis fluid |
+| Dialysis membrane | Made of cellulose acetate or synthetic polymer; permeable to small molecules (urea, ions, glucose) but not to large molecules (proteins, blood cells) |
 | Dialysis fluid (dialysate) | Contains the same concentration of useful substances (glucose, ions) as normal blood plasma but NO urea -- this creates a concentration gradient for urea to diffuse from blood into dialysate |
-| Flow                     | Blood flows in one direction through the dialyser; dialysate flows in the opposite direction (**counter-current exchange**) -- this maintains the concentration gradient along the entire length of the dialyser, maximising diffusion efficiency |
-| Frequency                | Typically 3 sessions per week, each lasting 3-5 hours                                                                   |
-| Access                   | An arteriovenous fistula (surgical connection between an artery and vein) provides a high-flow blood vessel for repeated needle insertion |
-| Anticoagulant            | Heparin is added to prevent blood clotting in the dialyser                                                              |
+| Flow | Blood flows in one direction through the dialyser; dialysate flows in the opposite direction (**counter-current exchange**) -- this maintains the concentration gradient along the entire length of the dialyser, maximising diffusion efficiency |
+| Frequency | 3 sessions per week, each lasting 3-5 hours |
+| Access | An arteriovenous fistula (surgical connection between an artery and vein) provides a high-flow blood vessel for repeated needle insertion |
+| Anticoagulant | Heparin is added to prevent blood clotting in the dialyser |
 
 ### Peritoneal Dialysis
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Principle                | The peritoneum (lining of the abdominal cavity) acts as the dialysis membrane. Dialysis fluid is introduced into the abdominal cavity through a catheter; waste products diffuse from the blood in the peritoneal capillaries into the dialysis fluid |
-| Exchange                 | After several hours (dwell time), the dialysis fluid (now containing waste) is drained and replaced with fresh fluid       |
-| Frequency                | Continuous (CAPD -- continuous ambulatory peritoneal dialysis): 4-5 exchanges per day; automated (APD): machine performs exchanges overnight |
-| Advantages               | Can be performed at home; no need for a machine (CAPD); more gentle on the body; preserves remaining kidney function better |
-| Disadvantages            | Risk of peritonitis (infection of the abdominal cavity); less efficient than haemodialysis for large patients or those with high urea levels |
+| Principle | The peritoneum (lining of the abdominal cavity) acts as the dialysis membrane. Dialysis fluid is introduced into the abdominal cavity through a catheter; waste products diffuse from the blood in the peritoneal capillaries into the dialysis fluid |
+| Exchange | After several hours (dwell time), the dialysis fluid (now containing waste) is drained and replaced with fresh fluid |
+| Frequency | Continuous (CAPD -- continuous ambulatory peritoneal dialysis): 4-5 exchanges per day; automated (APD): machine performs exchanges overnight |
+| Advantages | Can be performed at home; no need for a machine (CAPD); more gentle on the body; preserves remaining kidney function better |
+| Disadvantages | Risk of peritonitis (infection of the abdominal cavity); less efficient than haemodialysis for large patients or those with high urea levels |
 
 ### Haemodialysis vs Peritoneal Dialysis
 
-| Aspect               | Haemodialysis                          | Peritoneal Dialysis                          |
+| Aspect | Haemodialysis | Peritoneal Dialysis |
 | -------------------- | -------------------------------------- | -------------------------------------------- |
-| Location             | Hospital or dialysis centre            | Home                                         |
-| Membrane             | Artificial (dialyser)                  | Natural (peritoneum)                         |
-| Efficiency           | Higher; removes waste more quickly     | Lower; slower process                        |
-| Convenience          | Requires travel to centre 3x/week      | Can be done at home; more independence       |
-| Infection risk       | Low (sterile procedure)                | Higher (peritonitis risk)                    |
-| Diet restrictions    | Strict (fluid, potassium, phosphate)   | Less strict                                  |
-| Suitable for         | Most patients; acute renal failure     | Patients who prefer home treatment; children  |
+| Location | Hospital or dialysis centre | Home |
+| Membrane | Artificial (dialyser) | Natural (peritoneum) |
+| Efficiency | Higher; removes waste more quickly | Lower; slower process |
+| Convenience | Requires travel to centre 3x/week | Can be done at home; more independence |
+| Infection risk | Low (sterile procedure) | Higher (peritonitis risk) |
+| Diet restrictions | Strict (fluid, potassium, phosphate) | Less strict |
+| Suitable for | Most patients; acute renal failure | Patients who prefer home treatment; children |
 
 ### Kidney Transplant
 
 - The best treatment for end-stage renal failure
-- A healthy kidney from a living donor (usually a relative) or a deceased donor is transplanted into the patient's lower abdomen
+- A healthy kidney from a living donor ( a relative) or a deceased donor is transplanted into the patient's lower abdomen
 - The donor kidney is connected to the recipient's blood vessels and ureter
 - Advantages over dialysis: no need for regular dialysis sessions; better quality of life; longer life expectancy; fewer dietary restrictions
 - Disadvantages: risk of surgical complications; need for lifelong immunosuppressive drugs (increased risk of infections); risk of rejection; shortage of donor organs
@@ -799,33 +799,33 @@ If untreated, toxic levels of urea accumulate (**uraemia**), causing nausea, con
 ### Osmoregulation Pathway
 
 1. **Stimulus:** Blood water potential decreases (blood becomes more concentrated; osmolarity increases above normal ~300 mOsm/L). This can be caused by:
-   - Sweating (water loss through skin)
-   - Insufficient water intake (dehydration)
-   - High salt intake (increases blood osmolarity)
-   - Diarrhoea or vomiting (water loss)
+ - Sweating (water loss through skin)
+ - Insufficient water intake (dehydration)
+ - High salt intake (increases blood osmolarity)
+ - Diarrhoea or vomiting (water loss)
 
 2. **Detection:** Osmoreceptors in the **hypothalamus** detect the decrease in blood water potential. Osmoreceptors are specialised neurons that shrink when the surrounding fluid becomes more concentrated, triggering nerve impulses.
 
 3. **Coordination:**
-   - The hypothalamus sends nerve impulses to the **posterior pituitary gland**, stimulating it to release **antidiuretic hormone (ADH, vasopressin)** into the blood
-   - Simultaneously, the hypothalamus stimulates the **thirst centre** in the brain, creating the sensation of thirst and motivating water-drinking behaviour
+ - The hypothalamus sends nerve impulses to the **posterior pituitary gland**, stimulating it to release **antidiuretic hormone (ADH, vasopressin)** into the blood
+ - Simultaneously, the hypothalamus stimulates the **thirst centre** in the brain, creating the sensation of thirst and motivating water-drinking behaviour
 
 4. **Effector response (kidneys):**
-   - ADH binds to receptors on the cells of the **collecting ducts** and **distal convoluted tubules** in the nephrons
-   - This triggers the insertion of **aquaporin water channels** into the luminal membrane of these cells
-   - Water is now reabsorbed from the filtrate into the blood by osmosis (the medullary interstitial fluid is hypertonic due to the counter-current multiplier in the loop of Henle)
-   - More concentrated urine is produced (small volume, high urea concentration)
-   - Blood water potential returns to normal
+ - ADH binds to receptors on the cells of the **collecting ducts** and **distal convoluted tubules** in the nephrons
+ - This triggers the insertion of **aquaporin water channels** into the luminal membrane of these cells
+ - Water is now reabsorbed from the filtrate into the blood by osmosis (the medullary interstitial fluid is hypertonic due to the counter-current multiplier in the loop of Henle)
+ - More concentrated urine is produced (small volume, high urea concentration)
+ - Blood water potential returns to normal
 
 5. **Negative feedback:** As blood water potential returns to normal, osmoreceptors in the hypothalamus detect the change and reduce ADH secretion. Aquaporin channels are removed from the collecting duct membranes, reducing water reabsorption.
 
 ### ADH Levels and Urine Output
 
-| Condition              | Blood Osmolarity | ADH Level | Aquaporin Channels | Water Reabsorption | Urine Volume | Urine Concentration |
+| Condition | Blood Osmolarity | ADH Level | Aquaporin Channels | Water Reabsorption | Urine Volume | Urine Concentration |
 | ---------------------- | ----------------- | --------- | ------------------ | ------------------ | ------------ | ------------------- |
-| Dehydrated             | High              | High      | Many inserted      | High               | Low          | High (concentrated)  |
-| Normal hydration       | Normal            | Normal    | Moderate           | Moderate           | Normal       | Normal              |
-| Over-hydrated          | Low               | Low       | Few                | Low                | High          | Low (dilute)         |
+| Dehydrated | High | High | Many inserted | High | Low | High (concentrated) |
+| Normal hydration | Normal | Normal | Moderate | Moderate | Normal | Normal |
+| Over-hydrated | Low | Low | Few | Low | High | Low (dilute) |
 
 ### Diabetes Insipidus
 
@@ -842,31 +842,31 @@ If untreated, toxic levels of urea accumulate (**uraemia**), causing nausea, con
 
 The pancreas has both exocrine and endocrine functions:
 
-| Function           | Description                                                                                                               |
+| Function | Description |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Exocrine           | Acinar cells produce digestive enzymes (amylase, lipase, trypsinogen) and bicarbonate, secreted into the duodenum via the pancreatic duct |
-| Endocrine           | Islets of Langerhans produce hormones released into the blood: $\alpha$ cells produce **glucagon**; $\beta$ cells produce **insulin** |
+| Exocrine | Acinar cells produce digestive enzymes (amylase, lipase, trypsinogen) and bicarbonate, secreted into the duodenum via the pancreatic duct |
+| Endocrine | Islets of Langerhans produce hormones released into the blood: $\alpha$ cells produce **glucagon**; $\beta$ cells produce **insulin** |
 
 ### Insulin and Glucagon Actions
 
-| Aspect               | Insulin ($\beta$ cells)                 | Glucagon ($\alpha$ cells)                  |
+| Aspect | Insulin ($\beta$ cells) | Glucagon ($\alpha$ cells) |
 | -------------------- | ---------------------------------------- | ------------------------------------------ |
-| Trigger              | Blood glucose concentration rises above normal (~5 mmol/L) | Blood glucose concentration falls below normal (~5 mmol/L) |
-| Effect on blood glucose | Decreases (lowers blood glucose)       | Increases (raises blood glucose)           |
-| Target organs        | Liver, muscle cells, adipose tissue     | Liver                                       |
-| Key mechanisms       | -- Increases glucose uptake by cells (by stimulating translocation of GLUT4 transporters to the cell membrane in muscle and fat cells) | -- Stimulates glycogenolysis (breakdown of glycogen to glucose) in the liver |
-|                      | -- Stimulates glycogenesis (conversion of glucose to glycogen) in the liver and muscles                              | -- Stimulates gluconeogenesis (synthesis of glucose from amino acids and lactate) in the liver |
-|                      | -- Stimulates lipogenesis (conversion of glucose to fat for storage) in adipose tissue                             | -- Stimulates lipolysis (breakdown of fat to fatty acids and glycerol) in adipose tissue |
-|                      | -- Inhibits gluconeogenesis and glycogenolysis in the liver                                                        | -- Increases blood glucose                    |
-|                      | -- Increases rate of glucose uptake and use by cells (increases respiration rate)                                 |                                          |
+| Trigger | Blood glucose concentration rises above normal (~5 mmol/L) | Blood glucose concentration falls below normal (~5 mmol/L) |
+| Effect on blood glucose | Decreases (lowers blood glucose) | Increases (raises blood glucose) |
+| Target organs | Liver, muscle cells, adipose tissue | Liver |
+| Key mechanisms | -- Increases glucose uptake by cells (by stimulating translocation of GLUT4 transporters to the cell membrane in muscle and fat cells) | -- Stimulates glycogenolysis (breakdown of glycogen to glucose) in the liver |
+| | -- Stimulates glycogenesis (conversion of glucose to glycogen) in the liver and muscles | -- Stimulates gluconeogenesis (synthesis of glucose from amino acids and lactate) in the liver |
+| | -- Stimulates lipogenesis (conversion of glucose to fat for storage) in adipose tissue | -- Stimulates lipolysis (breakdown of fat to fatty acids and glycerol) in adipose tissue |
+| | -- Inhibits gluconeogenesis and glycogenolysis in the liver | -- Increases blood glucose |
+| | -- Increases rate of glucose uptake and use by cells (increases respiration rate) | |
 
 ### Glycogenesis, Glycogenolysis, and Gluconeogenesis
 
-| Process              | Meaning                      | Direction           | Stimulated By | Inhibited By |
+| Process | Meaning | Direction | Stimulated By | Inhibited By |
 | -------------------- | ---------------------------- | ------------------- | ------------- | ------------ |
-| Glycogenesis         | Glycogen **formation**      | Glucose $\rightarrow$ Glycogen | Insulin       | Glucagon     |
-| Glycogenolysis       | Glycogen **breakdown**      | Glycogen $\rightarrow$ Glucose | Glucagon     | Insulin      |
-| Gluconeogenesis       | New glucose **synthesis**   | Amino acids/lactate $\rightarrow$ Glucose | Glucagon     | Insulin      |
+| Glycogenesis | Glycogen **formation** | Glucose $\rightarrow$ Glycogen | Insulin | Glucagon |
+| Glycogenolysis | Glycogen **breakdown** | Glycogen $\rightarrow$ Glucose | Glucagon | Insulin |
+| Gluconeogenesis | New glucose **synthesis** | Amino acids/lactate $\rightarrow$ Glucose | Glucagon | Insulin |
 
 ### Adrenaline and Blood Glucose
 
@@ -892,3 +892,11 @@ During the fight-or-flight response, the adrenal medulla releases adrenaline, wh
 - **Diabetes insipidus is NOT related to blood glucose.** It is a disorder of water balance (ADH deficiency or resistance), causing dilute urine. It should not be confused with diabetes mellitus
 - **The renal threshold is the blood glucose concentration at which glucose first appears in the urine (~9-10 mmol/L), NOT the normal blood glucose level (~5 mmol/L)**
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

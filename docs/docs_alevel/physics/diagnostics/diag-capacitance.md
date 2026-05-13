@@ -60,7 +60,7 @@ The energy increased by $0.92\,\mu\text{J}$. This extra energy came from the wor
 
 A capacitor of capacitance $C = 100\,\mu\text{F}$ is charged from a $12\,\text{V}$ battery through a resistor.
 
-(a) Calculate the energy stored on the capacitor using each of the three formulae: $\frac{1}{2}CV^2$, $\frac{1}{2}QV$, and $\frac{Q^2}{2C}$.
+(a) Calculate the energy stored on the capacitor using each of the three formulae: $\frac{1}{2}CV^2$$\frac{1}{2}QV$And $\frac{Q^2}{2C}$.
 
 (b) Calculate the total energy supplied by the battery during charging.
 
@@ -86,7 +86,7 @@ $$E_{\text{battery}} = QV = 1.2 \times 10^{-3} \times 12 = 14.4 \times 10^{-3}\,
 
 Percentage $= 7.2/14.4 \times 100 = 50\%$
 
-Exactly half the energy supplied by the battery is stored on the capacitor, and half is dissipated as heat in the resistor. This is a general result for RC charging: regardless of the value of $R$, exactly half the energy is always lost.
+Exactly half the energy supplied by the battery is stored on the capacitor, and half is dissipated as heat in the resistor. This is a general result for RC charging: regardless of the value of $R$Exactly half the energy is always lost.
 
 ---
 ### UT-3: RC Discharge Through a Changing Resistance
@@ -120,7 +120,7 @@ At $t = 2\tau = 94\,\text{s}$: $I = I_0 e^{-2} = 0.20 \times e^{-2} = 0.20 \time
 
 $$Q = Q_0 e^{-3} = CV_0 e^{-3} = 470 \times 10^{-6} \times 20 \times 0.0498 = 4.68 \times 10^{-4}\,\text{C}$$
 
-After $3\tau$, only $4.98\%$ of the original charge remains. After $5\tau$, less than $1\%$ remains.
+After $3\tau$Only $4.98\%$ of the original charge remains. After $5\tau$Less than $1\%$ remains.
 
 ## Integration Tests
 
@@ -132,7 +132,7 @@ An RC circuit with $R = 10\,\text{k}\Omega$ and $C = 100\,\text{nF}$ is driven b
 
 (a) Calculate the time constant. For what frequency would the capacitor voltage just reach $63\%$ of the supply voltage during each half-cycle?
 
-(b) If the driving frequency is $1.0\,\text{kHz}$, sketch the voltage across the capacitor over two complete cycles.
+(b) If the driving frequency is $1.0\,\text{kHz}$Sketch the voltage across the capacitor over two complete cycles.
 
 (c) Explain how this circuit can be used to convert a square wave into an approximate triangular wave.
 
@@ -144,9 +144,9 @@ For the capacitor to reach $63\%$ during one half-cycle: $\tau = T/2 = 1/(2f)$
 
 $$f = \frac◆LB◆1◆RB◆◆LB◆2\tau◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2 \times 10^{-3}◆RB◆ = 500\,\text{Hz}$$
 
-(b) At $f = 1.0\,\text{kHz}$, the period is $T = 1.0\,\text{ms}$ and the half-cycle is $0.50\,\text{ms}$.
+(b) At $f = 1.0\,\text{kHz}$The period is $T = 1.0\,\text{ms}$ and the half-cycle is $0.50\,\text{ms}$.
 
-Since $\tau = 1.0\,\text{ms}$ and the half-cycle is $0.5\tau$, the capacitor charges to only:
+Since $\tau = 1.0\,\text{ms}$ and the half-cycle is $0.5\tau$The capacitor charges to only:
 
 $$V_C = V_0(1 - e^{-0.5}) = 5.0(1 - 0.6065) = 5.0 \times 0.3935 = 1.97\,\text{V}$$
 
@@ -154,7 +154,7 @@ The voltage across the capacitor rises exponentially to $1.97\,\text{V}$ during 
 
 (c) When the time constant is much longer than the half-period of the square wave ($\tau \gg T/2$), the capacitor only charges (or discharges) through a small fraction of its range during each half-cycle. Over this small range, the exponential curve is approximately linear, so the voltage across the capacitor approximates a triangular wave. The amplitude of the triangular wave is approximately $V_0 T/(2\tau)$ for $\tau \gg T/2$.
 
-For example, with $\tau = 10T/2 = 5T$, the capacitor charges to only $V_0(1 - e^{-0.2}) \approx 0.18V_0$ during each half-cycle, and this portion of the exponential is nearly linear.
+For example, with $\tau = 10T/2 = 5T$The capacitor charges to only $V_0(1 - e^{-0.2}) \approx 0.18V_0$ during each half-cycle, and this portion of the exponential is nearly linear.
 
 ---
 ### IT-2: Capacitor Microphone (with Wave Properties)
@@ -191,7 +191,7 @@ Peak-to-peak variation across the resistor $\approx 20\,\text{V}$.
 
 $1/f = 1.0\,\text{ms}$
 
-Since $\tau = 8.85\,\text{ms} \gg 1.0\,\text{ms} = 1/f$, the condition is satisfied. The time constant must be much longer than the period of the sound wave so that the capacitor voltage cannot follow the rapid changes in capacitance. This means the charge on the capacitor remains approximately constant, and the voltage changes are caused by the changing capacitance, producing an AC signal across the resistor that faithfully reproduces the sound wave.
+Since $\tau = 8.85\,\text{ms} \gg 1.0\,\text{ms} = 1/f$The condition is satisfied. The time constant must be much longer than the period of the sound wave so that the capacitor voltage cannot follow the rapid changes in capacitance. This means the charge on the capacitor remains approximately constant, and the voltage changes are caused by the changing capacitance, producing an AC signal across the resistor that faithfully reproduces the sound wave.
 
 ---
 ### IT-3: Energy Transfer in a Two-Capacitor System (with DC Circuits)
@@ -222,7 +222,7 @@ Energy lost $= 12.5 - 2.5 = 10.0\,\text{mJ}$
 
 This energy is dissipated as heat in the connecting wires (or resistor) and as electromagnetic radiation during the transient current flow. This is a fundamental result: connecting two capacitors always results in energy loss.
 
-(c) At $t = 0$, $C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$, so the full voltage difference appears across $R$:
+(c) At $t = 0$$C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$So the full voltage difference appears across $R$:
 
 $$I_0 = \frac{V_1}{R} = \frac{50}{100} = 0.50\,\text{A}$$
 
@@ -230,4 +230,4 @@ The time constant for the discharge: $\tau = R \times \frac{C_1 C_2}{C_1 + C_2} 
 
 Total energy dissipated in the resistor $= 10.0\,\text{mJ}$ (same as the energy lost, regardless of $R$).
 
-This confirms that the energy loss is independent of the resistance value -- even with $R = 0$, the same amount of energy would be lost (as radiation rather than heat).
+This confirms that the energy loss is independent of the resistance value -- even with $R = 0$The same amount of energy would be lost (as radiation rather than heat).

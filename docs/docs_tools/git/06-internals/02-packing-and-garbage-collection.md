@@ -28,7 +28,7 @@ flowchart LR
 
 ### 1. Loose Objects
 
-When you run `git add` or `git commit`, Git creates objects as individual zlib-compressed files under `.git/objects/`. These are called **loose objects**.
+When you run `git add` or `git commit`Git creates objects as individual zlib-compressed files under `.git/objects/`. These are called **loose objects**.
 
 **Performance characteristics**:
 
@@ -55,11 +55,11 @@ $ git gc --aggressive
 
 A packfile (`.git/objects/pack/pack-<hash>.pack`) contains:
 
-| Section | Description                                                 |
+| Section | Description |
 | ------- | ----------------------------------------------------------- |
-| Header  | Magic bytes (`PACK`), version (2), number of objects        |
+| Header | Magic bytes (`PACK`), version (2), number of objects |
 | Objects | Compressed objects (delta-compressed against other objects) |
-| Trailer | SHA-1 checksum of all preceding content                     |
+| Trailer | SHA-1 checksum of all preceding content |
 
 #### Delta Compression
 
@@ -90,11 +90,11 @@ Deep delta chains (depth > 50) degrade performance because Git must decompress t
 
 Each packfile has a corresponding `.idx` (index) file that enables $O(1)$ lookup of objects by SHA-1 hash. The index is a sorted binary table:
 
-| Offset | SHA-1      | CRC32     |
+| Offset | SHA-1 | CRC32 |
 | ------ | ---------- | --------- |
-| 0      | a3f2b1c... | 0x8a7f... |
-| 234    | b7e9d4f... | 0x3c2d... |
-| 567    | c1d2e3f... | 0x9e1b... |
+| 0 | a3f2b1c... | 0x8a7f... |
+| 234 | b7e9d4f... | 0x3c2d... |
+| 567 | c1d2e3f... | 0x9e1b... |
 
 ### 3. Unreachable and Pruned Objects
 
@@ -134,18 +134,18 @@ flowchart TD
 
 ### gc Configuration
 
-| Setting               | Default       | Meaning                                       |
+| Setting | Default | Meaning |
 | --------------------- | ------------- | --------------------------------------------- |
-| `gc.auto`             | 6700          | Number of loose objects that triggers auto-gc |
-| `gc.autoPackLimit`    | 50            | Number of packfiles that triggers auto-repack |
-| `gc.pruneExpire`      | `2.weeks.ago` | Age threshold for pruning unreachable objects |
-| `gc.reflogExpire`     | `90.days.ago` | Age threshold for expiring reflog entries     |
-| `gc.aggressiveWindow` | 250           | Window size for aggressive delta compression  |
-| `gc.pack.depth`       | 50            | Maximum delta chain depth                     |
+| `gc.auto` | 6700 | Number of loose objects that triggers auto-gc |
+| `gc.autoPackLimit` | 50 | Number of packfiles that triggers auto-repack |
+| `gc.pruneExpire` | `2.weeks.ago` | Age threshold for pruning unreachable objects |
+| `gc.reflogExpire` | `90.days.ago` | Age threshold for expiring reflog entries |
+| `gc.aggressiveWindow` | 250 | Window size for aggressive delta compression |
+| `gc.pack.depth` | 50 | Maximum delta chain depth |
 
 ### When GC Runs Automatically
 
-Git runs auto-gc in certain operations (`git commit`, `git merge`, `git rebase`) when the loose object count exceeds `gc.auto`. You can disable auto-gc:
+Git runs auto-gc in certain operations (`git commit``git merge``git rebase`) when the loose object count exceeds `gc.auto`. You can disable auto-gc:
 
 ```bash
 $ git config gc.auto 0
@@ -159,7 +159,7 @@ $ git config gc.auto 0
 - Deeper delta chains (up to 250 instead of 50).
 - Recompresses all objects (not just loose ones).
 
-Use `--aggressive` for repositories that are archived or infrequently updated. For active repositories, the overhead is usually not worth the marginal compression improvement.
+Use `--aggressive` for repositories that are archived or infrequently updated. For active repositories, the overhead is not worth the marginal compression improvement.
 
 ## Maintenance
 
@@ -182,12 +182,12 @@ $ git maintenance run --task=gc
 
 ### Recommended Maintenance Schedule
 
-| Task            | Frequency                 | Command                   |
+| Task | Frequency | Command |
 | --------------- | ------------------------- | ------------------------- |
-| Loose objects   | Daily (auto)              | `git gc` (auto-triggered) |
-| Reflog expiry   | 90 days                   | `git reflog expire --all` |
-| Full GC         | Monthly                   | `git gc --aggressive`     |
-| Integrity check | After suspicious behavior | `git fsck --full`         |
+| Loose objects | Daily (auto) | `git gc` (auto-triggered) |
+| Reflog expiry | 90 days | `git reflog expire --all` |
+| Full GC | Monthly | `git gc --aggressive` |
+| Integrity check | After suspicious behavior | `git fsck --full` |
 
 ## Performance Implications
 
@@ -212,4 +212,16 @@ $ git repack -a -d --write-bitmap-index
 $ git prune-packed
 ```
 
-The **bitmap index** is a Bloom-filter-like structure that enables $O(1)$ reachability queries, significantly speeding up `git clone`, `git fetch`, and `git gc` on large repositories.
+The **bitmap index** is a Bloom-filter-like structure that enables $O(1)$ reachability queries, significantly speeding up `git clone``git fetch`And `git gc` on large repositories.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -23,11 +23,11 @@ In Cartesian coordinates the component equations are straightforward:
 
 $$F_x = m\ddot{x}, \quad F_y = m\ddot{y}, \quad F_z = m\ddot{z}$$
 
-In planar polar coordinates $(r, \phi)$, the acceleration decomposes into radial and transverse components:
+In planar polar coordinates $(r, \phi)$The acceleration decomposes into radial and transverse components:
 
 $$\mathbf{'\{'}a{'\}'} = (\ddot{r} - r\dot{\phi}^2)\,\hat{\mathbf{'\{'}r{'\}'}} + (r\ddot{\phi} + 2\dot{r}\dot{\phi})\,\hat{\boldsymbol{'\{'}\phi{'\}'}}$$
 
-so Newton's second law becomes:
+So Newton's second law becomes:
 
 $$F_r = m(\ddot{r} - r\dot{\phi}^2), \quad F_\phi = m(r\ddot{\phi} + 2\dot{r}\dot{\phi})$$
 
@@ -75,7 +75,7 @@ The period is $T = 2\pi/\omega = 2\pi\sqrt{l\cos\theta/g}$. $\blacksquare$
 
 $$\mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = m_i \dot{\mathbf{'\{'}v{'\}'}}_i$$
 
-where $\mathbf{'\{'}F{'\}'}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third law, $\mathbf{'\{'}F{'\}'}_{ij} = -\mathbf{'\{'}F{'\}'}_{ji}$. Summing over all particles:
+Where $\mathbf{'\{'}F{'\}'}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third law, $\mathbf{'\{'}F{'\}'}_{ij} = -\mathbf{'\{'}F{'\}'}_{ji}$. Summing over all particles:
 
 $$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{'\{'}v{'\}'}_i$$
 
@@ -99,7 +99,7 @@ $$W = \int m\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}v{'\}'}\, dt = \int m \frac{
 
 $\blacksquare$
 
-**Definition.** A force is **conservative** if the work done is path-independent, equivalently $\nabla \times \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$, equivalently $\mathbf{'\{'}F{'\}'} = -\nabla V$ for some scalar potential $V(\mathbf{'\{'}r{'\}'})$.
+**Definition.** A force is **conservative** if the work done is path-independent, equivalently $\nabla \times \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$Equivalently $\mathbf{'\{'}F{'\}'} = -\nabla V$ for some scalar potential $V(\mathbf{'\{'}r{'\}'})$.
 
 **Theorem 1.3 (Conservation of Mechanical Energy).** If all forces are conservative, $E = T + V$ is conserved.
 
@@ -117,7 +117,7 @@ $\blacksquare$
 
 $$\dot{\mathbf{'\{'}L{'\}'}}_i = \dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i + \mathbf{'\{'}r{'\}'}_i \times m_i \dot{\mathbf{'\{'}v{'\}'}}_i = \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i$$
 
-since $\dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}v{'\}'}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}0{'\}'}$. Summing over all particles:
+Since $\dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}v{'\}'}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}0{'\}'}$. Summing over all particles:
 
 $$\dot{\mathbf{'\{'}L{'\}'}} = \sum_i \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_{ij}$$
 
@@ -125,13 +125,13 @@ The double sum represents internal torques. For central internal forces ($\mathb
 
 $$\dot{\mathbf{'\{'}L{'\}'}} = \boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})}$$
 
-If $\boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})} = \mathbf{'\{'}0{'\}'}$, then $\mathbf{'\{'}L{'\}'} = \mathrm{const{}$. $\blacksquare$
+If $\boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})} = \mathbf{'\{'}0{'\}'}$Then $\mathbf{'\{'}L{'\}'} = \mathrm{const{}$. $\blacksquare$
 
 ### 1.8 The Rocket Equation
 
 **Definition.** The **rocket equation** (Tsiolkovsky equation) describes the motion of a rocket that expels mass at a constant exhaust velocity.
 
-Consider a rocket of mass $m$ moving with velocity $v$ in one dimension. In time $dt$, it ejects mass $dm$ (where $dm \lt{} 0$) at exhaust velocity $u_e$ relative to the rocket. The ejected mass has velocity $v - u_e$ in the lab frame. By conservation of momentum:
+Consider a rocket of mass $m$ moving with velocity $v$ in one dimension. In time $dt$It ejects mass $dm$ (where $dm \lt{} 0$) at exhaust velocity $u_e$ relative to the rocket. The ejected mass has velocity $v - u_e$ in the lab frame. By conservation of momentum:
 
 $$mv = (m + dm)(v + dv) + (-dm)(v - u_e)$$
 
@@ -153,7 +153,7 @@ This is the **Tsiolkovsky rocket equation**.
 
 $$\Delta v = u_e \ln\frac{m_0}{m_f} - g\, \Delta t$$
 
-where $\Delta t$ is the burn time.
+Where $\Delta t$ is the burn time.
 
 ### 1.9 Worked Example: Rocket in Free Space
 
@@ -173,17 +173,17 @@ $\blacksquare$
 ### 1.10 From Newton to Variational Principles
 
 Newton's laws work well in Cartesian coordinates but become cumbersome in constrained systems or
-non-Cartesian coordinates. The **Lagrangian** and **Hamiltonian** formulations provide a more general
-and elegant framework based on energy principles.
+Non-Cartesian coordinates. The **Lagrangian** and **Hamiltonian** formulations provide a more general
+And elegant framework based on energy principles.
 
 The key insight: instead of tracking forces, track the **energy** of the system. The trajectory is the
-one that **minimises** (or more precisely, makes stationary) the **action**.
+One that **minimises** (or more precisely, makes stationary) the **action**.
 
 :::caution
 Common Pitfall
 Newton's laws in curvilinear coordinates introduce fictitious forces (centrifugal, Coriolis) that
-are artifacts of the coordinate choice. The Lagrangian formulation automatically accounts for these
-through the coordinate transformation of the kinetic energy, without any ad-hoc force terms.
+Are artifacts of the coordinate choice. The Lagrangian formulation automatically accounts for these
+Through the coordinate transformation of the kinetic energy, without any ad-hoc force terms.
 :::
 
 ## 2. Generalised Coordinates and Constraints
@@ -191,8 +191,8 @@ through the coordinate transformation of the kinetic energy, without any ad-hoc 
 ### 2.1 Generalised Coordinates
 
 A system with $n$ degrees of freedom can be described by $n$ **generalised coordinates**
-$q_1, q_2, \ldots, q_n$, which may be angles, arc lengths, or any other set of parameters that
-uniquely determines the configuration.
+$q_1, q_2, \ldots, q_n$Which may be angles, arc lengths, or any other set of parameters that
+Uniquely determines the configuration.
 
 The Cartesian coordinates are functions of the generalised coordinates (and possibly time):
 
@@ -203,7 +203,7 @@ The velocities are:
 $$\dot{\mathbf{'\{'}r{'\}'}}_i = \sum_{j=1}^n \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\dot{q}_j + \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial t}$$
 
 **Example.** A simple pendulum has one degree of freedom. We can use the angle $\theta$ from the
-vertical as the generalised coordinate, rather than the Cartesian coordinates $(x, y)$ of the bob.
+Vertical as the generalised coordinate, rather than the Cartesian coordinates $(x, y)$ of the bob.
 
 ### 2.2 Constraints
 
@@ -217,7 +217,7 @@ A holonomic constraint reduces the number of degrees of freedom.
 
 $$\sum_j a_j(q, t)\, dq_j + a_t(q, t)\, dt = 0$$
 
-which cannot be integrated to yield a relation among the $q_j$ alone.
+Which cannot be integrated to yield a relation among the $q_j$ alone.
 
 **Scleronomic constraints** do not depend explicitly on time. **Rheonomic constraints** do.
 
@@ -226,7 +226,7 @@ A bead on a wire that moves with time: holonomic and rheonomic.
 
 ### 2.3 Worked Example: Classifying Constraints
 
-**Problem.** Classify the following constraints: (a) a particle on the surface of a sphere of radius $R$, (b) a rolling disk (vertical), (c) a particle constrained to $z \geq 0$, (d) a pendulum whose pivot oscillates as $x_0(t) = A\cos(\omega t)$.
+**Problem.** Classify the following constraints: (a) a particle on the surface of a sphere of radius $R$(b) a rolling disk (vertical), (c) a particle constrained to $z \geq 0$(d) a pendulum whose pivot oscillates as $x_0(t) = A\cos(\omega t)$.
 
 <details>
 <summary>Solution</summary>
@@ -237,7 +237,7 @@ A bead on a wire that moves with time: holonomic and rheonomic.
 
 (c) Constraint: $z \geq 0$. This is a non-holonomic constraint (an inequality, not an equation).
 
-(d) The constraint is $x = A\cos(\omega t) + l\sin\theta$, which depends explicitly on $t$. Holonomic (can be written as an equation), rheonomic (explicit time dependence).
+(d) The constraint is $x = A\cos(\omega t) + l\sin\theta$Which depends explicitly on $t$. Holonomic (can be written as an equation), rheonomic (explicit time dependence).
 
 $\blacksquare$
 
@@ -269,7 +269,7 @@ $\blacksquare$
 ### 2.5 Virtual Work and D'Alembert's Principle
 
 A **virtual displacement** $\delta \mathbf{'\{'}r{'\}'}_i$ is an infinitesimal change in position consistent with
-the constraints at a fixed instant in time ($\delta t = 0$).
+The constraints at a fixed instant in time ($\delta t = 0$).
 
 **Definition (Virtual Work).** The virtual work of the forces is:
 
@@ -279,7 +279,7 @@ $$\delta W = \sum_{i=1}^N \mathbf{'\{'}F{'\}'}_i \cdot \delta \mathbf{'\{'}r{'\}
 
 $$\sum_{i=1}^N \mathbf{'\{'}C{'\}'}_i \cdot \delta \mathbf{'\{'}r{'\}'}_i = 0$$
 
-where $\mathbf{'\{'}C{'\}'}_i$ is the constraint force on particle $i$.
+Where $\mathbf{'\{'}C{'\}'}_i$ is the constraint force on particle $i$.
 
 **Theorem 2.1 (Principle of Virtual Work).** A system is in static equilibrium if and only if the virtual work of the applied forces vanishes for all virtual displacements consistent with the constraints.
 
@@ -287,20 +287,20 @@ where $\mathbf{'\{'}C{'\}'}_i$ is the constraint force on particle $i$.
 
 $$\sum_i (\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
 
-For ideal constraints, $\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$, so $\sum_i \mathbf{'\{'}F{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$. Conversely, if the virtual work of applied forces vanishes for all admissible virtual displacements, the system must be in equilibrium (otherwise one could choose a virtual displacement in the direction of net force to get non-zero work). $\blacksquare$
+For ideal constraints, $\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$So $\sum_i \mathbf{'\{'}F{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$. Conversely, if the virtual work of applied forces vanishes for all admissible virtual displacements, the system must be in equilibrium (otherwise one could choose a virtual displacement in the direction of net force to get non-zero work). $\blacksquare$
 
 **Theorem 2.2 (D'Alembert's Principle).** For a system of $N$ particles:
 
 $$\sum_{i=1}^N (\mathbf{'\{'}F{'\}'}_i - m_i \ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta \mathbf{'\{'}r{'\}'}_i = 0$$
 
-where $\mathbf{'\{'}F{'\}'}_i$ includes both applied and constraint forces. For ideal constraints, the
-constraint forces do no virtual work, so only the applied forces contribute.
+Where $\mathbf{'\{'}F{'\}'}_i$ includes both applied and constraint forces. For ideal constraints, the
+Constraint forces do no virtual work, so only the applied forces contribute.
 
 *Proof.* D'Alembert's principle extends the principle of virtual work to dynamics by treating $-m_i \ddot{\mathbf{'\{'}r{'\}'}}_i$ as a "fictitious force" (the **inertia force**). Starting from Newton's second law $\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i = m_i \ddot{\mathbf{'\{'}r{'\}'}}_i$:
 
 $$\sum_i (\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
 
-This is trivially true. For ideal constraints $\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$, giving:
+This is true. For ideal constraints $\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$Giving:
 
 $$\sum_i (\mathbf{'\{'}F{'\}'}_i - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
 
@@ -314,7 +314,7 @@ The **Lagrangian** of a system is defined as
 
 $$L(q_1, \ldots, q_n, \dot{q}_1, \ldots, \dot{q}_n, t) = T - V$$
 
-where $T$ is the kinetic energy and $V$ is the potential energy.
+Where $T$ is the kinetic energy and $V$ is the potential energy.
 
 ### 3.2 Derivation of the Euler-Lagrange Equation from D'Alembert's Principle
 
@@ -330,11 +330,11 @@ Express the virtual displacement in terms of generalised coordinates:
 
 $$\delta\mathbf{'\{'}r{'\}'}_i = \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j$$
 
-**First term (applied forces).** For a conservative system, $\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} = -\nabla_i V$, so:
+**First term (applied forces).** For a conservative system, $\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} = -\nabla_i V$So:
 
 $$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} \cdot \delta\mathbf{'\{'}r{'\}'}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
 
-Defining the **generalised force** $Q_j = \sum_i \mathbf{'\{'}F{'\}'}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$, for conservative forces $Q_j = -\partial V/\partial q_j$.
+Defining the **generalised force** $Q_j = \sum_i \mathbf{'\{'}F{'\}'}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$For conservative forces $Q_j = -\partial V/\partial q_j$.
 
 **Second term (inertia).** Using $\frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$ (which holds when $\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q, t)$):
 
@@ -367,11 +367,11 @@ $\blacksquare$
 ### 3.3 Hamilton's Principle (Action Formulation)
 
 **Theorem 3.2 (Hamilton's Principle).** The actual path of a system between times $t_1$ and $t_2$ is
-the one that makes the **action**
+The one that makes the **action**
 
 $$S = \int_{t_1}^{t_2} L(q, \dot{q}, t)\, dt$$
 
-stationary.
+Stationary.
 
 **Theorem 3.3 (Euler-Lagrange Equation from Hamilton's Principle).** The path $q(t)$ that makes $S$ stationary satisfies
 
@@ -386,8 +386,8 @@ Integrating the second term by parts:
 
 $$\delta S = \int_{t_1}^{t_2} \left(\frac{\partial L}{\partial q} - \frac{d}{dt}\frac{\partial L}{\partial \dot{q}}\right) \eta\, dt + \left[\frac{\partial L}{\partial \dot{q}}\eta\right]_{t_1}^{t_2}$$
 
-The boundary term vanishes since $\eta(t_1) = \eta(t_2) = 0$. For $\delta S = 0$ for all $\eta$, by
-the fundamental lemma of the calculus of variations:
+The boundary term vanishes since $\eta(t_1) = \eta(t_2) = 0$. For $\delta S = 0$ for all $\eta$By
+The fundamental lemma of the calculus of variations:
 
 $$\frac{\partial L}{\partial q} - \frac{d}{dt}\frac{\partial L}{\partial \dot{q}} = 0$$
 
@@ -414,12 +414,12 @@ $$\frac{\partial L}{\partial \theta} = -mgl\sin\theta, \quad \frac{\partial L}{\
 
 $$\frac{d}{dt}(ml^2\dot{\theta}) + mgl\sin\theta = 0 \implies \ddot{\theta} + \frac{g}{l}\sin\theta = 0$$
 
-For small angles ($\sin\theta \approx \theta$): $\ddot{\theta} + \frac{g}{l}\theta = 0$, giving simple
-harmonic motion with $\omega = \sqrt{g/l}$. $\blacksquare$
+For small angles ($\sin\theta \approx \theta$): $\ddot{\theta} + \frac{g}{l}\theta = 0$Giving simple
+Harmonic motion with $\omega = \sqrt{g/l}$. $\blacksquare$
 
 ### 3.5 Worked Example: Double Pendulum
 
-**Problem.** Derive the equations of motion for a double pendulum: mass $m_1$ on rod $l_1$, mass $m_2$ on rod $l_2$ attached to $m_1$.
+**Problem.** Derive the equations of motion for a double pendulum: mass $m_1$ on rod $l_1$Mass $m_2$ on rod $l_2$ attached to $m_1$.
 
 *Solution.* Generalised coordinates: angles $\theta_1, \theta_2$ from the vertical. Position of $m_1$:
 
@@ -445,7 +445,7 @@ Potential energy:
 
 $$V = -m_1 g l_1\cos\theta_1 - m_2 g(l_1\cos\theta_1 + l_2\cos\theta_2)$$
 
-The Euler-Lagrange equations for $\theta_1$ and $\theta_2$ yield two coupled second-order ODEs. For equal masses and lengths ($m_1 = m_2 = m$, $l_1 = l_2 = l$):
+The Euler-Lagrange equations for $\theta_1$ and $\theta_2$ yield two coupled second-order ODEs. For equal masses and lengths ($m_1 = m_2 = m$$l_1 = l_2 = l$):
 
 $$(m + m)l^2\ddot{\theta}_1 + ml^2\ddot{\theta}_2\cos(\theta_1 - \theta_2) + ml^2\dot{\theta}_2^2\sin(\theta_1 - \theta_2) + 2mgl\sin\theta_1 = 0$$
 
@@ -513,7 +513,7 @@ $$mR^2\ddot{\theta} = mR^2\omega^2\sin\theta\cos\theta - mgR\sin\theta$$
 
 $$\ddot{\theta} = \sin\theta\left(\omega^2\cos\theta - \frac{g}{R}\right)$$
 
-Equilibrium ($\ddot{\theta} = 0$, $\dot{\theta} = 0$): $\sin\theta = 0$ giving $\theta = 0$ (bottom), or $\cos\theta = g/(R\omega^2)$ which exists only when $\omega^2 \gt{} g/R$.
+Equilibrium ($\ddot{\theta} = 0$$\dot{\theta} = 0$): $\sin\theta = 0$ giving $\theta = 0$ (bottom), or $\cos\theta = g/(R\omega^2)$ which exists only when $\omega^2 \gt{} g/R$.
 
 For $\omega^2 \lt{} g/R$: only $\theta = 0$ is stable.
 For $\omega^2 \gt{} g/R$: the bottom becomes unstable and the new equilibria at $\cos\theta = g/(R\omega^2)$ are stable.
@@ -561,13 +561,13 @@ The $\ddot{q}_j$ terms cancel. Using the Euler-Lagrange equation $\frac{d}{dt}\f
 
 $$\frac{dh}{dt} = -\frac{\partial L}{\partial t}$$
 
-If $\partial L/\partial t = 0$, then $dh/dt = 0$.
+If $\partial L/\partial t = 0$Then $dh/dt = 0$.
 
 For the second part, when $\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q)$ (scleronomic) and $V = V(q)$:
 
 $$T = \frac{1}{2}\sum_{i,j,k} m_i \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_k}\dot{q}_j\dot{q}_k$$
 
-is a homogeneous quadratic form in $\dot{q}_j$. By Euler's theorem for homogeneous functions:
+Is a homogeneous quadratic form in $\dot{q}_j$. By Euler's theorem for homogeneous functions:
 
 $$\sum_j \dot{q}_j \frac{\partial T}{\partial \dot{q}_j} = 2T$$
 
@@ -579,9 +579,9 @@ $\blacksquare$
 
 :::caution Common Pitfall
 The energy function $h$ equals $T + V$ only for natural systems (scleronomic constraints and
-velocity-independent potentials). For a bead on a rotating hoop (rheonomic constraint), $h$ is
-conserved but $h \neq T + V$. Always check whether the system is natural before identifying $h$
-with the total energy.
+Velocity-independent potentials). For a bead on a rotating hoop (rheonomic constraint), $h$ is
+Conserved but $h \neq T + V$. Always check whether the system is natural before identifying $h$
+With the total energy.
 :::
 
 ## 4. Hamiltonian Mechanics
@@ -599,10 +599,10 @@ The **Hamiltonian** is defined by the **Legendre transform**:
 $$H(q_1, \ldots, q_n, p_1, \ldots, p_n, t) = \sum_{j=1}^n p_j \dot{q}_j - L$$
 
 When the transformation is regular (i.e., the Hessian $\partial^2 L / \partial \dot{q}_j \partial \dot{q}_k$
-is non-singular), this is well-defined.
+Is non-singular), this is well-defined.
 
 If $L$ does not depend explicitly on time and $V$ is velocity-independent, then $H = T + V$ (total
-energy).
+Energy).
 
 ### 4.3 Worked Example: Legendre Transform for the Harmonic Oscillator
 
@@ -623,7 +623,7 @@ This is $T + V$ as expected for a natural system. Hamilton's equations give:
 
 $$\dot{x} = \frac{\partial H}{\partial p} = \frac{p}{m}, \quad \dot{p} = -\frac{\partial H}{\partial x} = -kx$$
 
-Combining: $\ddot{x} = \dot{p}/m = -kx/m$, i.e., $\ddot{x} + (k/m)x = 0$. $\blacksquare$
+Combining: $\ddot{x} = \dot{p}/m = -kx/m$I.e., $\ddot{x} + (k/m)x = 0$. $\blacksquare$
 
 </details>
 
@@ -664,7 +664,7 @@ These are $2n$ first-order ODEs (compared to $n$ second-order ODEs in the Lagran
 
 $$dH = \sum \dot{q}_j\, dp_j + \sum p_j\, d\dot{q}_j - \sum \frac{\partial L}{\partial q_j}\, dq_j - \sum \frac{\partial L}{\partial \dot{q}_j}\, d\dot{q}_j - \frac{\partial L}{\partial t}\, dt$$
 
-Since $p_j = \partial L / \partial \dot{q}_j$, the $d\dot{q}_j$ terms cancel:
+Since $p_j = \partial L / \partial \dot{q}_j$The $d\dot{q}_j$ terms cancel:
 
 $$dH = \sum \dot{q}_j\, dp_j - \sum \dot{p}_j\, dq_j - \frac{\partial L}{\partial t}\, dt$$
 
@@ -676,9 +676,9 @@ $\blacksquare$
 
 ### 4.6 Phase Space
 
-Hamiltonian mechanics naturally lives in **phase space**: the $2n$-dimensional space with coordinates
+Hamiltonian mechanics lives in **phase space**: the $2n$-dimensional space with coordinates
 $(q_1, \ldots, q_n, p_1, \ldots, p_n)$. Each point in phase space represents a complete state of the
-system (positions and momenta).
+System (positions and momenta).
 
 A **phase portrait** is the collection of trajectories in phase space. For a 1D harmonic oscillator, the trajectories are ellipses in the $(x, p)$ plane.
 
@@ -696,11 +696,11 @@ By the continuity equation in $2n$ dimensions:
 
 $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{'\{'}v{'\}'}) = 0$$
 
-where $\mathbf{'\{'}v{'\}'} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the phase space velocity. Using Hamilton's equations:
+Where $\mathbf{'\{'}v{'\}'} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the phase space velocity. Using Hamilton's equations:
 
 $$\nabla \cdot \mathbf{'\{'}v{'\}'} = \sum_j \frac{\partial \dot{q}_j}{\partial q_j} + \sum_j \frac{\partial \dot{p}_j}{\partial p_j} = \sum_j \frac{\partial^2 H}{\partial q_j \partial p_j} - \sum_j \frac{\partial^2 H}{\partial p_j \partial q_j} = 0$$
 
-by equality of mixed partial derivatives. Therefore:
+By equality of mixed partial derivatives. Therefore:
 
 $$\frac{\partial \rho}{\partial t} + \rho\,(\nabla \cdot \mathbf{'\{'}v{'\}'}) + \mathbf{'\{'}v{'\}'} \cdot \nabla\rho = \frac{\partial \rho}{\partial t} + \mathbf{'\{'}v{'\}'} \cdot \nabla\rho = \frac{d\rho}{dt} = 0$$
 
@@ -769,7 +769,7 @@ This is a first-order nonlinear PDE in $n + 1$ variables.
 
 $$\frac{dS}{dt} = L$$
 
-But $S = S(q_1(t), \ldots, q_n(t), t)$, so by the chain rule:
+But $S = S(q_1(t), \ldots, q_n(t), t)$So by the chain rule:
 
 $$\frac{dS}{dt} = \sum_j \frac{\partial S}{\partial q_j}\dot{q}_j + \frac{\partial S}{\partial t} = L$$
 
@@ -781,15 +781,15 @@ Since $dS/dt = L$:
 
 $$H + \frac{\partial S}{\partial t} = L = \sum_j p_j\dot{q}_j + \frac{\partial S}{\partial t}$$
 
-which gives $H + \partial S/\partial t = 0$. $\blacksquare$
+Which gives $H + \partial S/\partial t = 0$. $\blacksquare$
 
 *Intuition.* The Hamilton-Jacobi equation is the bridge between classical and quantum mechanics. Schrodinger's equation can be obtained from it via the substitution $S = -i\hbar \ln\psi$ (up to constants), making $S$ the classical limit of the quantum phase.
 
-**Separation of Variables.** If $H$ does not depend explicitly on $t$, write $S(q, t) = W(q) - Et$. Then the time-independent Hamilton-Jacobi equation is:
+**Separation of Variables.** If $H$ does not depend explicitly on $t$Write $S(q, t) = W(q) - Et$. Then the time-independent Hamilton-Jacobi equation is:
 
 $$H\left(q_1, \ldots, q_n, \frac{\partial W}{\partial q_1}, \ldots, \frac{\partial W}{\partial q_n}\right) = E$$
 
-where $W$ is **Hamilton's characteristic function** and $E$ is the constant energy.
+Where $W$ is **Hamilton's characteristic function** and $E$ is the constant energy.
 
 ### 4.10 Worked Example: Hamilton-Jacobi for the Harmonic Oscillator
 
@@ -808,11 +808,11 @@ Integrating:
 
 $$W(x) = \int \sqrt{2mE - mkx^2}\, dx$$
 
-Let $x = \sqrt{2E/k}\sin\alpha$, then $dx = \sqrt{2E/k}\cos\alpha\, d\alpha$:
+Let $x = \sqrt{2E/k}\sin\alpha$Then $dx = \sqrt{2E/k}\cos\alpha\, d\alpha$:
 
 $$W = \frac{2E}{\omega}\int_0^\alpha \cos^2\alpha'\, d\alpha' = \frac{E}{\omega}\left(\alpha + \frac{1}{2}\sin 2\alpha\right)$$
 
-where $\omega = \sqrt{k/m}$. The solution gives $x(t) = \sqrt{2E/k}\sin(\omega t + \delta)$ as expected.
+Where $\omega = \sqrt{k/m}$. The solution gives $x(t) = \sqrt{2E/k}\sin(\omega t + \delta)$ as expected.
 
 $\blacksquare$
 
@@ -820,9 +820,9 @@ $\blacksquare$
 
 :::caution Common Pitfall
 The Lagrangian and Hamiltonian formulations are equivalent only when the Legendre transform from $L$
-to $H$ is regular. If $\det(\partial^2 L / \partial \dot{q}_i \partial \dot{q}_j) = 0$, the system
-has **constraints** and the Hamiltonian formulation requires special treatment (Dirac brackets or
-constraint analysis).
+To $H$ is regular. If $\det(\partial^2 L / \partial \dot{q}_i \partial \dot{q}_j) = 0$The system
+Has **constraints** and the Hamiltonian formulation requires special treatment (Dirac brackets or
+Constraint analysis).
 :::
 
 ## 5. Noether's Theorem and Conservation Laws
@@ -830,14 +830,14 @@ constraint analysis).
 ### 5.1 Statement of Noether's Theorem
 
 **Theorem 5.1 (Noether's Theorem).** For every continuous symmetry of the action, there is a
-corresponding conserved quantity.
+Corresponding conserved quantity.
 
 More precisely: if the action is invariant (up to a boundary term) under the infinitesimal transformation
-$q_j \to q_j + \epsilon f_j(q, \dot{q}, t)$, then
+$q_j \to q_j + \epsilon f_j(q, \dot{q}, t)$Then
 
 $$Q = \sum_j \frac{\partial L}{\partial \dot{q}_j} f_j$$
 
-is a constant of motion.
+Is a constant of motion.
 
 ### 5.2 Full Proof of Noether's Theorem
 
@@ -845,17 +845,17 @@ is a constant of motion.
 
 $$L \to L + \epsilon \frac{dF}{dt}$$
 
-for some function $F(q, t)$. Then the quantity
+For some function $F(q, t)$. Then the quantity
 
 $$Q = \sum_j p_j\, \delta q_j - F$$
 
-is conserved.
+Is conserved.
 
 *Proof.* The variation of the action is:
 
 $$\delta S = \int_{t_1}^{t_2} \left[\sum_j \left(\frac{\partial L}{\partial q_j}\delta q_j + \frac{\partial L}{\partial \dot{q}_j}\delta\dot{q}_j\right)\right] dt = \int_{t_1}^{t_2} \frac{dF}{dt}\, dt$$
 
-where the second equality uses the assumption that the action changes by at most a boundary term. Using the Euler-Lagrange equations $\frac{\partial L}{\partial q_j} = \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}$:
+Where the second equality uses the assumption that the action changes by at most a boundary term. Using the Euler-Lagrange equations $\frac{\partial L}{\partial q_j} = \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_j}$:
 
 $$\delta S = \int_{t_1}^{t_2} \sum_j \left[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right)\delta q_j + \frac{\partial L}{\partial \dot{q}_j}\frac{d}{dt}\delta q_j\right] dt$$
 
@@ -874,9 +874,9 @@ Therefore $Q = \sum_j p_j\, \delta q_j - F$ is constant. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Consider an infinitesimal translation $x \to x + \epsilon$, i.e., $\delta x = 1$, $\delta y = 0$, $\delta z = 0$.
+Consider an infinitesimal translation $x \to x + \epsilon$I.e., $\delta x = 1$$\delta y = 0$$\delta z = 0$.
 
-For a free particle, $L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2)$, which is clearly invariant ($\delta L = 0$, so $F = 0$).
+For a free particle, $L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2)$Which is invariant ($\delta L = 0$So $F = 0$).
 
 By Noether's theorem:
 
@@ -897,7 +897,7 @@ Consider an infinitesimal rotation by angle $\epsilon$ about the $z$-axis:
 
 $$\delta x = -\epsilon y, \quad \delta y = \epsilon x, \quad \delta z = 0$$
 
-For a free particle, $\delta L = m(\dot{x}\,\delta\dot{x} + \dot{y}\,\delta\dot{y}) = m(\dot{x}(-\epsilon\dot{y}) + \dot{y}(\epsilon\dot{x})) = 0$, so $F = 0$.
+For a free particle, $\delta L = m(\dot{x}\,\delta\dot{x} + \dot{y}\,\delta\dot{y}) = m(\dot{x}(-\epsilon\dot{y}) + \dot{y}(\epsilon\dot{x})) = 0$So $F = 0$.
 
 By Noether's theorem:
 
@@ -914,13 +914,13 @@ This is the $z$-component of angular momentum. Full rotational invariance gives 
 <details>
 <summary>Solution</summary>
 
-Consider an infinitesimal time translation $t \to t + \epsilon$. The coordinates transform as $q_j(t) \to q_j(t + \epsilon) \approx q_j(t) + \epsilon \dot{q}_j(t)$, so $\delta q_j = \dot{q}_j$.
+Consider an infinitesimal time translation $t \to t + \epsilon$. The coordinates transform as $q_j(t) \to q_j(t + \epsilon) \approx q_j(t) + \epsilon \dot{q}_j(t)$So $\delta q_j = \dot{q}_j$.
 
 If $L$ does not depend explicitly on time, then:
 
 $$\delta L = \sum_j \left(\frac{\partial L}{\partial q_j}\dot{q}_j + \frac{\partial L}{\partial \dot{q}_j}\ddot{q}_j\right)\epsilon = \frac{dL}{dt}\epsilon = \frac{d}{dt}\left(\epsilon L\right)$$
 
-So $F = \epsilon L$, giving $F = L$ (per unit $\epsilon$).
+So $F = \epsilon L$Giving $F = L$ (per unit $\epsilon$).
 
 By Noether's theorem:
 
@@ -952,14 +952,14 @@ Since $L$ does not depend on $\phi$ (rotational symmetry about the $z$-axis):
 $$p_\phi = \frac{\partial L}{\partial \dot{\phi}} = mr^2\sin^2\theta\,\dot{\phi} = \mathrm{const{}$$
 
 This is the $z$-component of angular momentum. By Noether's theorem, the full angular momentum vector
-is conserved for any central potential. $\blacksquare$
+Is conserved for any central potential. $\blacksquare$
 
 ## 6. Central Force Problems
 
 ### 6.1 Reduction to One Dimension
 
-For a particle of mass $m$ in a central potential $V(r)$, using polar coordinates $(r, \phi)$ in the
-plane of motion:
+For a particle of mass $m$ in a central potential $V(r)$Using polar coordinates $(r, \phi)$ in the
+Plane of motion:
 
 $$L = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\phi}^2) - V(r)$$
 
@@ -967,8 +967,8 @@ The angular momentum $l = mr^2\dot{\phi}$ is conserved. Substituting $\dot{\phi}
 
 $$L = \frac{1}{2}m\dot{r}^2 + \frac{l^2}{2mr^2} - V(r)$$
 
-The effective potential is $V_{\mathrm{eff{}}(r) = V(r) + \frac{l^2}{2mr^2}$, where the second term is
-the **centrifugal barrier**.
+The effective potential is $V_{\mathrm{eff{}}(r) = V(r) + \frac{l^2}{2mr^2}$Where the second term is
+The **centrifugal barrier**.
 
 ### 6.2 Effective Potential Analysis
 
@@ -992,7 +992,7 @@ $$V_{\mathrm{eff{}}'(r) = \frac{k}{r^2} - \frac{l^2}{mr^3} = 0 \implies r_0 = \f
 
 $$V_{\mathrm{eff{}}''(r_0) = -\frac{2k}{r_0^3} + \frac{3l^2}{mr_0^4} = \frac{m^3k^2}{l^4} \gt{} 0$$
 
-so the circular orbit is always stable for the Kepler problem.
+So the circular orbit is always stable for the Kepler problem.
 
 ### 6.3 The Orbit Equation
 
@@ -1028,11 +1028,11 @@ This is an inhomogeneous ODE with solution:
 
 $$u(\phi) = \frac{mk}{l^2}(1 + e\cos(\phi - \phi_0))$$
 
-where $e$ is the **eccentricity** and $\phi_0$ is a constant. Setting $\phi_0 = 0$:
+Where $e$ is the **eccentricity** and $\phi_0$ is a constant. Setting $\phi_0 = 0$:
 
 $$r(\phi) = \frac{l^2/(mk)}{1 + e\cos\phi} = \frac{p}{1 + e\cos\phi}$$
 
-where $p = l^2/(mk)$ is the **semi-latus rectum**.
+Where $p = l^2/(mk)$ is the **semi-latus rectum**.
 
 The eccentricity is determined by the energy:
 
@@ -1064,7 +1064,7 @@ $V(r) \propto 1/r$ (Kepler/Coulomb) and $V(r) \propto r^2$ (harmonic oscillator)
 
 The semi-major axis is $a = (r_p + r_a)/2 = (7000 + 42000)/2 = 24500\,\mathrm{km{}$.
 
-From the orbit equation, at perigee ($\phi = 0$): $r_p = p/(1 + e)$, and at apogee ($\phi = \pi$): $r_a = p/(1 - e)$.
+From the orbit equation, at perigee ($\phi = 0$): $r_p = p/(1 + e)$And at apogee ($\phi = \pi$): $r_a = p/(1 - e)$.
 
 Therefore:
 
@@ -1093,7 +1093,7 @@ The angular momentum is $l = mv_\infty b$ where $v_\infty = \sqrt{2E/m}$. The ec
 
 $$e = \sqrt{1 + \frac{2El^2}{mk^2}} = \sqrt{1 + \left(\frac{2Eb}{k/m}\right)^2}$$
 
-The orbit is a hyperbola. The asymptotic angles satisfy $r \to \infty$, i.e., $1 + e\cos\phi = 0$, giving $\phi_{\pm} = \pi \pm \arccos(1/e)$. The scattering angle is:
+The orbit is a hyperbola. The asymptotic angles satisfy $r \to \infty$I.e., $1 + e\cos\phi = 0$Giving $\phi_{\pm} = \pi \pm \arccos(1/e)$. The scattering angle is:
 
 $$\Theta = \pi - 2\arccos(1/e) = 2\arcsin(1/e)$$
 
@@ -1113,9 +1113,9 @@ At a stable equilibrium, $V$ has a local minimum. Expanding around equilibrium (
 
 $$L \approx \frac{1}{2}\sum_{j,k} T_{jk}\dot{\eta}_j\dot{\eta}_k - \frac{1}{2}\sum_{j,k} V_{jk}\eta_j\eta_k$$
 
-where $T_{jk} = \frac{\partial^2 T}{\partial \dot{q}_j \partial \dot{q}_k}\bigg|_0$ is the (constant)
-mass matrix and $V_{jk} = \frac{\partial^2 V}{\partial q_j \partial q_k}\bigg|_0$ is the (constant)
-stiffness matrix.
+Where $T_{jk} = \frac{\partial^2 T}{\partial \dot{q}_j \partial \dot{q}_k}\bigg|_0$ is the (constant)
+Mass matrix and $V_{jk} = \frac{\partial^2 V}{\partial q_j \partial q_k}\bigg|_0$ is the (constant)
+Stiffness matrix.
 
 Both $T_{jk}$ and $V_{jk}$ are symmetric matrices. $T$ is positive definite (kinetic energy is always positive), and $V$ is positive definite at a stable equilibrium.
 
@@ -1131,7 +1131,7 @@ $$\mathbf{'\{'}T{'\}'}\, \ddot{\boldsymbol{'\{'}\eta{'\}'}} + \mathbf{'\{'}V{'\}
 
 ### 7.3 Normal Modes and the Secular Equation
 
-Assuming solutions of the form $\eta_j = a_j e^{i\omega t}$, the eigenvalue problem is:
+Assuming solutions of the form $\eta_j = a_j e^{i\omega t}$The eigenvalue problem is:
 
 $$(\mathbf{'\{'}V{'\}'} - \omega^2 \mathbf{'\{'}T{'\}'})\mathbf{'\{'}a{'\}'} = \mathbf{'\{'}0{'\}'}$$
 
@@ -1142,9 +1142,9 @@ $$\det(\mathbf{'\{'}V{'\}'} - \omega^2 \mathbf{'\{'}T{'\}'}) = 0$$
 This is a polynomial of degree $n$ in $\omega^2$ whose roots are the squared normal mode frequencies $\omega_\alpha^2$.
 
 **Theorem 7.1.** For a stable system, all normal mode frequencies are real and positive. The normal
-modes are orthogonal with respect to both $\mathbf{'\{'}T{'\}'}$ and $\mathbf{'\{'}V{'\}'}$.
+Modes are orthogonal with respect to both $\mathbf{'\{'}T{'\}'}$ and $\mathbf{'\{'}V{'\}'}$.
 
-*Proof.* Since $\mathbf{'\{'}T{'\}'}$ is positive definite, we can write $\mathbf{'\{'}T{'\}'} = \mathbf{'\{'}L{'\}'}\mathbf{'\{'}L{'\}'}^T$ (Cholesky decomposition). Defining $\boldsymbol{'\{'}\xi{'\}'} = \mathbf{'\{'}L{'\}'}^T\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}W{'\}'} = \mathbf{'\{'}L{'\}'}^{-1}\mathbf{'\{'}V{'\}'}\mathbf{'\{'}L{'\}'}^{-T}$, the eigenvalue problem becomes $\mathbf{'\{'}W{'\}'}\boldsymbol{'\{'}\xi{'\}'} = \omega^2\boldsymbol{'\{'}\xi{'\}'}$. Since $\mathbf{'\{'}W{'\}'}$ is symmetric and $\mathbf{'\{'}V{'\}'}$ is positive definite, all eigenvalues $\omega^2$ are real and positive. Orthogonality follows from the symmetry of $\mathbf{'\{'}W{'\}'}$. $\blacksquare$
+*Proof.* Since $\mathbf{'\{'}T{'\}'}$ is positive definite, we can write $\mathbf{'\{'}T{'\}'} = \mathbf{'\{'}L{'\}'}\mathbf{'\{'}L{'\}'}^T$ (Cholesky decomposition). Defining $\boldsymbol{'\{'}\xi{'\}'} = \mathbf{'\{'}L{'\}'}^T\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}W{'\}'} = \mathbf{'\{'}L{'\}'}^{-1}\mathbf{'\{'}V{'\}'}\mathbf{'\{'}L{'\}'}^{-T}$The eigenvalue problem becomes $\mathbf{'\{'}W{'\}'}\boldsymbol{'\{'}\xi{'\}'} = \omega^2\boldsymbol{'\{'}\xi{'\}'}$. Since $\mathbf{'\{'}W{'\}'}$ is symmetric and $\mathbf{'\{'}V{'\}'}$ is positive definite, all eigenvalues $\omega^2$ are real and positive. Orthogonality follows from the symmetry of $\mathbf{'\{'}W{'\}'}$. $\blacksquare$
 
 ### 7.4 Orthogonality of Normal Modes
 
@@ -1152,7 +1152,7 @@ modes are orthogonal with respect to both $\mathbf{'\{'}T{'\}'}$ and $\mathbf{'\
 
 $$\sum_{j,k} a_j^{(\alpha)} T_{jk} a_k^{(\beta)} = T_\alpha\, \delta_{\alpha\beta}, \quad \sum_{j,k} a_j^{(\alpha)} V_{jk} a_k^{(\beta)} = \omega_\alpha^2 T_\alpha\, \delta_{\alpha\beta}$$
 
-where $T_\alpha$ is a normalisation constant.
+Where $T_\alpha$ is a normalisation constant.
 
 This allows us to expand any motion as a superposition of normal modes.
 
@@ -1163,7 +1163,7 @@ This allows us to expand any motion as a superposition of normal modes.
 <details>
 <summary>Solution</summary>
 
-Let $\theta_1$ and $\theta_2$ be the small angles from vertical. The separation between bobs (to first order) is approximately $l(\theta_2 - \theta_1)$, so the spring potential energy is $\frac{1}{2}k l^2(\theta_2 - \theta_1)^2$.
+Let $\theta_1$ and $\theta_2$ be the small angles from vertical. The separation between bobs (to first order) is approximately $l(\theta_2 - \theta_1)$So the spring potential energy is $\frac{1}{2}k l^2(\theta_2 - \theta_1)^2$.
 
 Kinetic energy:
 
@@ -1240,7 +1240,7 @@ In matrix form, for a discrete system:
 
 $$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} I_{xx} & I_{xy} & I_{xz} \\ I_{xy} & I_{yy} & I_{yz} \\ I_{xz} & I_{yz} & I_{zz} \end{pmatrix}$$
 
-where:
+Where:
 
 $$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad \mathrm{etc.{}$$
 
@@ -1248,7 +1248,7 @@ $$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad 
 
 $$I_{jk}' = I_{jk}^{(\mathrm{CM{})} + M(a^2\delta_{jk} - a_j a_k)$$
 
-where $M$ is the total mass.
+Where $M$ is the total mass.
 
 *Proof.* Writing $\mathbf{'\{'}r{'\}'}_i' = \mathbf{'\{'}r{'\}'}_i + \mathbf{'\{'}a{'\}'}$ where $\mathbf{'\{'}r{'\}'}_i$ is measured from the centre of mass:
 
@@ -1262,7 +1262,7 @@ $\blacksquare$
 
 ### 8.4 Principal Axes
 
-**Definition.** The **principal axes** are the eigenvectors of $\mathbf{'\{'}I{'\}'}$, and the **principal moments of inertia** $I_1, I_2, I_3$ are the corresponding eigenvalues.
+**Definition.** The **principal axes** are the eigenvectors of $\mathbf{'\{'}I{'\}'}$And the **principal moments of inertia** $I_1, I_2, I_3$ are the corresponding eigenvalues.
 
 In the principal axis frame, the inertia tensor is diagonal:
 
@@ -1288,7 +1288,7 @@ Transforming to the body frame using $\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\rig
 
 $$\mathbf{'\{'}I{'\}'}\,\dot{\boldsymbol{'\{'}\omega{'\}'}} + \boldsymbol{'\{'}\omega{'\}'} \times (\mathbf{'\{'}I{'\}'}\,\boldsymbol{'\{'}\omega{'\}'}) = \boldsymbol{'\{'}\tau{'\}'}$$
 
-In the principal axis frame with $\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}0{'\}'}$, this gives Euler's equations directly. $\blacksquare$
+In the principal axis frame with $\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}0{'\}'}$This gives Euler's equations directly. $\blacksquare$
 
 ### 8.6 Stability of Torque-Free Rotation
 
@@ -1300,13 +1300,13 @@ $$I_2\dot{\epsilon}_2 = (I_3 - I_1)\omega_1\epsilon_3, \quad I_3\dot{\epsilon}_3
 
 Combining: $\ddot{\epsilon}_2 = \frac{(I_3 - I_1)(I_1 - I_2)}{I_2 I_3}\omega_1^2\,\epsilon_2$.
 
-For stability, the coefficient must be negative. This requires $(I_1 - I_3)(I_1 - I_2) \gt{} 0$, i.e., $I_1$ is either the largest or smallest. If $I_1$ is intermediate, the perturbation grows exponentially. $\blacksquare$
+For stability, the coefficient must be negative. This requires $(I_1 - I_3)(I_1 - I_2) \gt{} 0$I.e., $I_1$ is either the largest or smallest. If $I_1$ is intermediate, the perturbation grows exponentially. $\blacksquare$
 
 :::caution Common Pitfall
 The intermediate axis theorem (tennis racket theorem / Dzhanibekov effect) is counterintuitive: a
-rigid body spinning about its intermediate axis is unstable. This is not a violation of angular
-momentum conservation --- the angular momentum vector remains fixed in space, but the body
-tumbles relative to it.
+Rigid body spinning about its intermediate axis is unstable. This is not a violation of angular
+Momentum conservation --- the angular momentum vector remains fixed in space, but the body
+Tumbles relative to it.
 :::
 
 ### 8.7 Worked Example: The Spinning Top
@@ -1348,7 +1348,7 @@ This is a quadratic in $\Omega$:
 
 $$\Omega_\pm = \frac{I_3 n \pm \sqrt{(I_3 n)^2 - 4I_1 Mgl\cos\theta}}{2I_1\cos\theta}$$
 
-Real solutions exist when $(I_3 n)^2 \geq 4I_1 Mgl\cos\theta$. This is the condition for steady precession. For fast spinning ($n$ large), $\Omega_\approx \approx I_3 n / (I_1\cos\theta)$ (slow precession) and $\Omega_\approx \approx Mgl / (I_3 n)$ (fast precession). The slow precession is the one usually observed.
+Real solutions exist when $(I_3 n)^2 \geq 4I_1 Mgl\cos\theta$. This is the condition for steady precession. For fast spinning ($n$ large), $\Omega_\approx \approx I_3 n / (I_1\cos\theta)$ (slow precession) and $\Omega_\approx \approx Mgl / (I_3 n)$ (fast precession). The slow precession is the one observed.
 
 $\blacksquare$
 
@@ -1400,7 +1400,7 @@ The inertia tensor is:
 
 $$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & ML^2/3 & 0 \\ 0 & 0 & ML^2/3 \end{pmatrix}$$
 
-The principal moments about one end are $0$, $ML^2/3$, $ML^2/3$. By the parallel axis theorem, about the centre of mass they would be $0$, $ML^2/12$, $ML^2/12$.
+The principal moments about one end are $0$$ML^2/3$$ML^2/3$. By the parallel axis theorem, about the centre of mass they would be $0$$ML^2/12$$ML^2/12$.
 
 $\blacksquare$
 
@@ -1444,7 +1444,7 @@ $$T = \frac{1}{2}(m_1 + m_2)\dot{x}^2, \quad V = -m_2 g x$$
 
 $$L = \frac{1}{2}(m_1 + m_2)\dot{x}^2 + m_2 g x$$
 
-Euler-Lagrange: $(m_1 + m_2)\ddot{x} = m_2 g$, so $a = m_2 g / (m_1 + m_2) = g/3 \approx 3.27\,\mathrm{m/s{}^2$.
+Euler-Lagrange: $(m_1 + m_2)\ddot{x} = m_2 g$So $a = m_2 g / (m_1 + m_2) = g/3 \approx 3.27\,\mathrm{m/s{}^2$.
 
 **If you get this wrong, revise:** Section 3.5 (Atwood machine example), Section 3.1 (Lagrangian construction).
 
@@ -1483,7 +1483,7 @@ $$(1 + 4\alpha^2 r^2)\ddot{r} = \frac{l^2}{m^2 r^3} - 2g\alpha r$$
 
 ### Problem 4
 
-For the double pendulum with $m_1 = m_2 = m$ and $l_1 = l_2 = l$, find the Lagrangian and verify the equations of motion in the small-angle limit reduce to coupled harmonic oscillators.
+For the double pendulum with $m_1 = m_2 = m$ and $l_1 = l_2 = l$Find the Lagrangian and verify the equations of motion in the small-angle limit reduce to coupled harmonic oscillators.
 
 <details>
 <summary>Solution</summary>
@@ -1494,7 +1494,7 @@ $$T = ml^2\dot{\theta}_1^2 + \frac{1}{2}ml^2\dot{\theta}_2^2 + ml^2\dot{\theta}_
 
 $$V = -2mgl\cos\theta_1 - mgl\cos\theta_2$$
 
-In the small-angle limit ($\cos(\theta_1 - \theta_2) \approx 1$, $\cos\theta_i \approx 1 - \theta_i^2/2$):
+In the small-angle limit ($\cos(\theta_1 - \theta_2) \approx 1$$\cos\theta_i \approx 1 - \theta_i^2/2$):
 
 $$T \approx ml^2\dot{\theta}_1^2 + \frac{1}{2}ml^2\dot{\theta}_2^2 + ml^2\dot{\theta}_1\dot{\theta}_2$$
 
@@ -1504,7 +1504,7 @@ The mass and stiffness matrices:
 
 $$\mathbf{'\{'}T{'\}'} = ml^2\begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}, \quad \mathbf{'\{'}V{'\}'} = mgl\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$$
 
-The secular equation gives $\omega_1^2 = (2-\sqrt{2})g/l$ and $\omega_2^2 = (2+\sqrt{2})g/l$, confirming coupled harmonic oscillators.
+The secular equation gives $\omega_1^2 = (2-\sqrt{2})g/l$ and $\omega_2^2 = (2+\sqrt{2})g/l$Confirming coupled harmonic oscillators.
 
 **If you get this wrong, revise:** Section 3.5 (double pendulum), Section 7.1 (small oscillations).
 
@@ -1559,27 +1559,27 @@ A particle of mass $m$ moves in one dimension with potential $V(x) = V_0(\lvert 
 <details>
 <summary>Solution</summary>
 
-The Lagrangian is $L = \frac{1}{2}m\dot{x}^2 - V_0\lvert x/a\rvert^n$. For oscillation with amplitude $A$, the energy is $E = V_0(A/a)^n$.
+The Lagrangian is $L = \frac{1}{2}m\dot{x}^2 - V_0\lvert x/a\rvert^n$. For oscillation with amplitude $A$The energy is $E = V_0(A/a)^n$.
 
-By dimensional analysis, the period $T$ can only depend on $m$, $V_0$, $a$, $n$, and $A$. Writing $[T] = [m]^\alpha [V_0]^\beta [a]^\gamma [A]^\delta$ and noting $[V_0] = ML^2T^{-2}$:
+By dimensional analysis, the period $T$ can only depend on $m$$V_0$$a$$n$And $A$. Writing $[T] = [m]^\alpha [V_0]^\beta [a]^\gamma [A]^\delta$ and noting $[V_0] = ML^2T^{-2}$:
 
 $$T = M^{-\alpha}L^{-2\beta-\gamma-\delta}T^{2\beta} \cdot M^\alpha(V_0)^\beta a^\gamma A^\delta$$
 
-Matching dimensions: $-\alpha + \beta = 0$, $-2\beta - \gamma - \delta = 0$, $2\beta = 1$. So $\beta = 1/2$, $\alpha = 1/2$.
+Matching dimensions: $-\alpha + \beta = 0$$-2\beta - \gamma - \delta = 0$$2\beta = 1$. So $\beta = 1/2$$\alpha = 1/2$.
 
 $$T \propto \sqrt{m/V_0}\, a^\gamma A^\delta \quad \mathrm{with{} \quad -1 - \gamma - \delta = 0$$
 
-Since $n$ is dimensionless, we need $\delta = n\gamma$ (to make $A/a$ appear with power $n$ in the energy). Then $-1 - \gamma(1 + n) = 0$, giving $\gamma = -1/(1+n)$, $\delta = -n/(1+n)$.
+Since $n$ is dimensionless, we need $\delta = n\gamma$ (to make $A/a$ appear with power $n$ in the energy). Then $-1 - \gamma(1 + n) = 0$Giving $\gamma = -1/(1+n)$$\delta = -n/(1+n)$.
 
 $$T \propto A^{-n/(1+n)} = \frac{1}{A^{n/(1+n)}}$$
 
 For $n = 2$ (harmonic oscillator): $T$ is independent of $A$ (isochronous). For $n = 4$: $T \propto A^{-4/5}$.
 
-Alternatively, via the virial theorem for $V \propto x^n$: $\langle T \rangle = \frac{n}{2}\langle V \rangle$, and $E = \langle T \rangle + \langle V \rangle = \frac{n+2}{2}\langle V \rangle$, so the average kinetic energy scales as $\langle T \rangle \propto E \propto A^n$. The period scales as $T \propto \sqrt{\langle T \rangle} / A \propto A^{n/2 - 1} = A^{-(2-n)/2}$. Wait --- let me redo this more carefully.
+Alternatively, via the virial theorem for $V \propto x^n$: $\langle T \rangle = \frac{n}{2}\langle V \rangle$And $E = \langle T \rangle + \langle V \rangle = \frac{n+2}{2}\langle V \rangle$So the average kinetic energy scales as $\langle T \rangle \propto E \propto A^n$. The period scales as $T \propto \sqrt{\langle T \rangle} / A \propto A^{n/2 - 1} = A^{-(2-n)/2}$. Wait --- let me redo this more carefully.
 
 Using $E = V_0(A/a)^n$ and $\langle T \rangle = \frac{n}{n+2}E \propto A^n$. The RMS velocity scales as $v_{\mathrm{rms{}} \propto A^{n/2}$. The period is $T \propto A/v_{\mathrm{rms{}} \propto A^{1-n/2} = A^{-(n-2)/2} = A^{-n/(n+2)} \cdot A^{\cdot}$.
 
-Actually, the cleanest result from dimensional analysis is $T \propto A^{1 - n/2}$, giving $T \propto A^{-1/2}$ for $n = 3$ (cubic potential).
+Actually, the cleanest result from dimensional analysis is $T \propto A^{1 - n/2}$Giving $T \propto A^{-1/2}$ for $n = 3$ (cubic potential).
 
 **If you get this wrong, revise:** Section 1.6 (energy conservation), Section 3.1 (Lagrangian).
 
@@ -1587,7 +1587,7 @@ Actually, the cleanest result from dimensional analysis is $T \propto A^{1 - n/2
 
 ### Problem 8
 
-Find the Hamiltonian for a charged particle (mass $m$, charge $q$) in an electromagnetic field with vector potential $\mathbf{'\{'}A{'\}'}$ and scalar potential $\phi$.
+Find the Hamiltonian for a charged particle (mass $m$Charge $q$) in an electromagnetic field with vector potential $\mathbf{'\{'}A{'\}'}$ and scalar potential $\phi$.
 
 <details>
 <summary>Solution</summary>
@@ -1637,9 +1637,9 @@ $$(8-\lambda)^3 - 27 - 27 + 3(8-\lambda)(9) = 0$$
 
 Trying $\lambda = 2$: $216 - 54 = 162 \neq 0$. Trying $\lambda = 11$: $(-3)^3 - 54 + 3(-3)(9) = -27 - 54 - 81 = -162 \neq 0$.
 
-The eigenvalues are $\lambda_1 = 2$ (with eigenvector $(1,1,1)$, the body diagonal) and $\lambda_{2,3} = 11$ (degenerate, in the plane perpendicular to the body diagonal).
+The eigenvalues are $\lambda_1 = 2$ (with eigenvector $(1,1,1)$The body diagonal) and $\lambda_{2,3} = 11$ (degenerate, in the plane perpendicular to the body diagonal).
 
-Principal moments: $I_1 = Ma^2/6$, $I_2 = I_3 = 11Ma^2/12$.
+Principal moments: $I_1 = Ma^2/6$$I_2 = I_3 = 11Ma^2/12$.
 
 **If you get this wrong, revise:** Section 8.3 (inertia tensor), Section 8.4 (principal axes).
 
@@ -1685,7 +1685,7 @@ Then $\mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}R{'\}'} + \frac{m_2}{M}\mathbf{'\{'}
 
 $$L = \frac{1}{2}M\dot{\mathbf{'\{'}R{'\}'}}^2 + \frac{1}{2}\mu\dot{\mathbf{'\{'}r{'\}'}}^2 - V(r)$$
 
-where $\mu = m_1 m_2 / (m_1 + m_2)$ is the **reduced mass**.
+Where $\mu = m_1 m_2 / (m_1 + m_2)$ is the **reduced mass**.
 
 The centre of mass moves freely (uniform motion or at rest), and the relative motion is equivalent to a single particle of mass $\mu$ in the potential $V(r)$.
 
@@ -1700,18 +1700,18 @@ Show that the Poisson brackets $\{L_x, L_y\} = L_z$ and its cyclic permutations 
 <details>
 <summary>Solution</summary>
 
-$L_x = yp_z - zp_y$, $L_y = zp_x - xp_z$, $L_z = xp_y - yp_x$.
+$L_x = yp_z - zp_y$$L_y = zp_x - xp_z$$L_z = xp_y - yp_x$.
 
 $$\{L_x, L_y\} = \frac{\partial L_x}{\partial x}\frac{\partial L_y}{\partial p_x} - \frac{\partial L_x}{\partial p_x}\frac{\partial L_y}{\partial x} + \frac{\partial L_x}{\partial y}\frac{\partial L_y}{\partial p_y} - \frac{\partial L_x}{\partial p_y}\frac{\partial L_y}{\partial y} + \frac{\partial L_x}{\partial z}\frac{\partial L_y}{\partial p_z} - \frac{\partial L_x}{\partial p_z}\frac{\partial L_y}{\partial z}$$
 
 Computing each term:
 
-- $\partial L_x/\partial x = 0$, $\partial L_y/\partial p_x = z$: contributes $0$
-- $\partial L_x/\partial p_x = 0$, $\partial L_y/\partial x = -p_z$: contributes $0$
-- $\partial L_x/\partial y = p_z$, $\partial L_y/\partial p_y = 0$: contributes $0$
-- $\partial L_x/\partial p_y = -z$, $\partial L_y/\partial y = 0$: contributes $0$
-- $\partial L_x/\partial z = -p_y$, $\partial L_y/\partial p_z = -x$: contributes $p_y x$
-- $\partial L_x/\partial p_z = y$, $\partial L_y/\partial z = p_x$: contributes $-y p_x$
+- $\partial L_x/\partial x = 0$$\partial L_y/\partial p_x = z$: contributes $0$
+- $\partial L_x/\partial p_x = 0$$\partial L_y/\partial x = -p_z$: contributes $0$
+- $\partial L_x/\partial y = p_z$$\partial L_y/\partial p_y = 0$: contributes $0$
+- $\partial L_x/\partial p_y = -z$$\partial L_y/\partial y = 0$: contributes $0$
+- $\partial L_x/\partial z = -p_y$$\partial L_y/\partial p_z = -x$: contributes $p_y x$
+- $\partial L_x/\partial p_z = y$$\partial L_y/\partial z = p_x$: contributes $-y p_x$
 
 $$\{L_x, L_y\} = xp_y - yp_x = L_z \quad \blacksquare$$
 
@@ -1728,7 +1728,7 @@ A particle of mass $m$ is constrained to move on the surface of a cone $z = \alp
 <details>
 <summary>Solution</summary>
 
-In cylindrical coordinates, the constraint is $z = \alpha r$, so $\dot{z} = \alpha\dot{r}$. The Lagrangian has two degrees of freedom, $r$ and $\phi$:
+In cylindrical coordinates, the constraint is $z = \alpha r$So $\dot{z} = \alpha\dot{r}$. The Lagrangian has two degrees of freedom, $r$ and $\phi$:
 
 $$T = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\phi}^2 + \alpha^2\dot{r}^2) = \frac{1}{2}m(1+\alpha^2)\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2$$
 
@@ -1742,7 +1742,7 @@ The energy is:
 
 $$E = \frac{1}{2}m(1+\alpha^2)\dot{r}^2 + V_{\mathrm{eff{}}(r)$$
 
-where the effective potential is:
+Where the effective potential is:
 
 $$V_{\mathrm{eff{}}(r) = \frac{l^2}{2mr^2} + mg\alpha r$$
 
@@ -1759,7 +1759,7 @@ Derive the Hamilton-Jacobi equation for a particle in a central potential $V(r)$
 <details>
 <summary>Solution</summary>
 
-In spherical coordinates $(r, \theta, \phi)$, the Hamiltonian is:
+In spherical coordinates $(r, \theta, \phi)$The Hamiltonian is:
 
 $$H = \frac{1}{2m}\left(p_r^2 + \frac{p_\theta^2}{r^2} + \frac{p_\phi^2}{r^2\sin^2\theta}\right) + V(r)$$
 
@@ -1841,7 +1841,7 @@ The steady-state solution is $x(t) = X\cos(\omega t)$ where:
 
 $$X = \frac{mA\omega^2}{k - m\omega^2} = \frac{A\omega^2}{\omega_0^2 - \omega^2}$$
 
-where $\omega_0 = \sqrt{k/m}$. **Resonance** occurs at $\omega = \omega_0$ where the amplitude diverges (without damping).
+Where $\omega_0 = \sqrt{k/m}$. **Resonance** occurs at $\omega = \omega_0$ where the amplitude diverges (without damping).
 
 **If you get this wrong, revise:** Section 3.2 (Euler-Lagrange equation), forced oscillation theory.
 
@@ -1858,7 +1858,7 @@ For $\{H, H\}$:
 
 $$\{H, H\} = \sum_j \left(\frac{\partial H}{\partial q_j}\frac{\partial H}{\partial p_j} - \frac{\partial H}{\partial p_j}\frac{\partial H}{\partial q_j}\right) = 0$$
 
-by antisymmetry of the Poisson bracket. (Also follows from Theorem 4.5 since $H$ is conserved when $\partial H/\partial t = 0$.)
+By antisymmetry of the Poisson bracket. (Also follows from Theorem 4.5 since $H$ is conserved when $\partial H/\partial t = 0$.)
 
 For $\{q_j, p_k\}$:
 
@@ -1881,13 +1881,13 @@ Prove Bertrand's theorem: the only central potentials for which all bounded orbi
 
 We sketch the key steps of the proof.
 
-**Step 1: Orbit equation.** From the Binet equation $u'' + u = -\frac{m}{l^2 u^2}V'(1/u)$, write $V'(1/u) = -f(u)/u^2$ where $f(u)$ is the force law. The orbit equation becomes $u'' + u = J(u)$ where $J(u) = \frac{m}{l^2}f(1/u)/u^2$... actually let me use the standard approach.
+**Step 1: Orbit equation.** From the Binet equation $u'' + u = -\frac{m}{l^2 u^2}V'(1/u)$Write $V'(1/u) = -f(u)/u^2$ where $f(u)$ is the force law. The orbit equation becomes $u'' + u = J(u)$ where $J(u) = \frac{m}{l^2}f(1/u)/u^2$... Actually let me use the standard approach.
 
-For a nearly circular orbit at radius $r_0$, write $u = u_0 + x$ where $u_0 = 1/r_0$ and $x$ is small. Linearising the Binet equation:
+For a nearly circular orbit at radius $r_0$Write $u = u_0 + x$ where $u_0 = 1/r_0$ and $x$ is small. Linearising the Binet equation:
 
 $$x'' + \beta^2 x = 0$$
 
-where $\beta^2 = 3 + \frac{r_0}{f(r_0)}\frac{df}{dr}\bigg|_{r_0}$ and $f(r) = -dV/dr$.
+Where $\beta^2 = 3 + \frac{r_0}{f(r_0)}\frac{df}{dr}\bigg|_{r_0}$ and $f(r) = -dV/dr$.
 
 The orbit closes after a finite number of oscillations if $\beta^2$ is a positive rational number for **all** $r_0$ (i.e., for all energies). This is a very restrictive condition.
 
@@ -1895,11 +1895,11 @@ The orbit closes after a finite number of oscillations if $\beta^2$ is a positiv
 
 $$\beta^2 = 3 - n$$
 
-For the orbit to close for all energies, $\beta^2$ must be rational for all $r_0$, and since it is energy-independent for power laws, we need $\beta^2 = p^2/q^2$ for integers $p, q$.
+For the orbit to close for all energies, $\beta^2$ must be rational for all $r_0$And since it is energy-independent for power laws, we need $\beta^2 = p^2/q^2$ for integers $p, q$.
 
 The apsidal angle is $\Delta\phi = \pi/\beta = \pi q/p$. For the orbit to close, $\Delta\phi$ must be a rational multiple of $\pi$.
 
-**Step 3: Only two possibilities.** For the orbit to be closed (not just the apsidal angle to be rational, but the orbit to close for all initial conditions), a deeper analysis shows only $n = -1$ ($V \propto -1/r$, Kepler) and $n = 2$ ($V \propto r^2$, harmonic oscillator) work. For $n = -1$: $\beta^2 = 4$, $\beta = 2$, $\Delta\phi = \pi/2$ (ellipse closes after 2 oscillations, 4 quadrants). For $n = 2$: $\beta^2 = 1$, $\beta = 1$, $\Delta\phi = \pi$ (ellipse closes after 1 oscillation, 2 half-turns).
+**Step 3: Only two possibilities.** For the orbit to be closed (not just the apsidal angle to be rational, but the orbit to close for all initial conditions), a deeper analysis shows only $n = -1$ ($V \propto -1/r$Kepler) and $n = 2$ ($V \propto r^2$Harmonic oscillator) work. For $n = -1$: $\beta^2 = 4$$\beta = 2$$\Delta\phi = \pi/2$ (ellipse closes after 2 oscillations, 4 quadrants). For $n = 2$: $\beta^2 = 1$$\beta = 1$$\Delta\phi = \pi$ (ellipse closes after 1 oscillation, 2 half-turns).
 
 $\blacksquare$
 
@@ -1919,7 +1919,7 @@ $$I_2\dot{\omega}_2 - (I_3 - I_1)\omega_3\omega_1 = 0$$
 
 $$I_3\dot{\omega}_3 - (I_1 - I_2)\omega_1\omega_2 = 0$$
 
-where $I_1, I_2, I_3$ are the principal moments of inertia and $\omega_1, \omega_2, \omega_3$ are the angular velocity components in the body frame.
+Where $I_1, I_2, I_3$ are the principal moments of inertia and $\omega_1, \omega_2, \omega_3$ are the angular velocity components in the body frame.
 
 **First integral:** The kinetic energy $T = \frac{1}{2}(I_1\omega_1^2 + I_2\omega_2^2 + I_3\omega_3^2)$ and the angular momentum magnitude $L^2 = I_1^2\omega_1^2 + I_2^2\omega_2^2 + I_3^2\omega_3^2$ are both conserved.
 
@@ -1929,7 +1929,7 @@ For an axisymmetric body ($I_1 = I_2 \neq I_3$):
 
 - **Rotation about the symmetry axis** ($\omega_3$): The body is stable if $I_3$ is either the largest or smallest moment. This explains why a spinning top is stable but rotation about the intermediate axis is not.
 
-- **Tennis racket theorem (Dzhanibekov effect):** Rotation about the intermediate axis ($I_1 < I_2 < I_3$, spinning about the $I_2$ axis) is unstable. Small perturbations cause the body to flip periodically.
+- **Tennis racket theorem (Dzhanibekov effect):** Rotation about the intermediate axis ($I_1 < I_2 < I_3$Spinning about the $I_2$ axis) is unstable. Small perturbations cause the body to flip periodically.
 
 **Proof of instability for intermediate axis.** Linearise Euler's equations about $\boldsymbol{'\{'}\omega{'\}'} = (0, \Omega, 0)$:
 
@@ -1937,7 +1937,7 @@ $$I_1\dot{\omega}_1 = (I_2 - I_3)\Omega\,\omega_3$$
 
 $$I_3\dot{\omega}_3 = (I_1 - I_2)\Omega\,\omega_1$$
 
-Combining: $\ddot{\omega}_1 = \frac{(I_2 - I_3)(I_1 - I_2)}{I_1 I_3}\Omega^2\,\omega_1$. Since $I_1 < I_2 < I_3$, both factors in the numerator are negative, giving a positive coefficient: $\omega_1$ grows exponentially. The motion is unstable. $\blacksquare$
+Combining: $\ddot{\omega}_1 = \frac{(I_2 - I_3)(I_1 - I_2)}{I_1 I_3}\Omega^2\,\omega_1$. Since $I_1 < I_2 < I_3$Both factors in the numerator are negative, giving a positive coefficient: $\omega_1$ grows exponentially. The motion is unstable. $\blacksquare$
 
 ### 9.3 The Symmetric Top with One Point Fixed
 
@@ -1964,7 +1964,7 @@ This is independent of $\theta$ to leading order (steady precession).
 <details>
 <summary>Worked Example 9.1: Precession of a Gyroscope</summary>
 
-A gyroscope has $I_3 = 5 \times 10^{-4}$ kg$\cdot$m$^2$, mass $M = 0.5$ kg, distance from pivot to centre of mass $d = 0.05$ m, and spins at $\omega_3 = 300$ rad/s.
+A gyroscope has $I_3 = 5 \times 10^{-4}$ kg$\cdot$M$^2$Mass $M = 0.5$ kg, distance from pivot to centre of mass $d = 0.05$ m, and spins at $\omega_3 = 300$ rad/s.
 
 The precession rate:
 
@@ -1982,15 +1982,15 @@ If the spin is reduced to $\omega_3 = 30$ rad/s (10 times slower), the precessio
 
 A **canonical transformation** from $(q, p)$ to $(Q, P)$ preserves the form of Hamilton's equations. It is generated by a **generating function** $F$.
 
-**Type 1** ($F_1(q, Q, t)$): $p = \partial F_1/\partial q$, $P = -\partial F_1/\partial Q$, $K = H + \partial F_1/\partial t$.
+**Type 1** ($F_1(q, Q, t)$): $p = \partial F_1/\partial q$$P = -\partial F_1/\partial Q$$K = H + \partial F_1/\partial t$.
 
-**Type 2** ($F_2(q, P, t)$): $p = \partial F_2/\partial q$, $Q = \partial F_2/\partial P$, $K = H + \partial F_2/\partial t$.
+**Type 2** ($F_2(q, P, t)$): $p = \partial F_2/\partial q$$Q = \partial F_2/\partial P$$K = H + \partial F_2/\partial t$.
 
 The transformation is canonical if and only if:
 
 $$\sum_i p_i\,dq_i - \sum_i P_i\,dQ_i = dF$$
 
-**Action-angle variables.** For a periodic system with frequency $\omega$, define the action:
+**Action-angle variables.** For a periodic system with frequency $\omega$Define the action:
 
 $$J_i = \oint p_i\,dq_i$$
 
@@ -2047,9 +2047,9 @@ So $E = J\omega/2$ and the Hamiltonian in action-angle form is:
 
 $$H(J) = J\omega$$
 
-The angle variable evolves as $\dot{\theta} = \partial H/\partial J = \omega$, giving $\theta(t) = \omega t + \theta_0$.
+The angle variable evolves as $\dot{\theta} = \partial H/\partial J = \omega$Giving $\theta(t) = \omega t + \theta_0$.
 
-The frequency is $\omega = \partial H/\partial J = \text{const{}$, independent of $J$ (harmonic oscillator has no frequency shift with amplitude --- a special property).
+The frequency is $\omega = \partial H/\partial J = \text{const{}$Independent of $J$ (harmonic oscillator has no frequency shift with amplitude --- a special property).
 
 </details>
 
@@ -2068,7 +2068,7 @@ $$x_{n+1} = r\,x_n(1 - x_n), \quad 0 \leq x \leq 1$$
 - $r_c \approx 3.56995$: Onset of chaos (period doubling cascade)
 - $r > r_c$: Chaotic regime (with periodic windows)
 
-**Feigenbaum constants:** The ratio of successive bifurcation intervals converges to $\delta = 4.669\ldots$, a universal constant for all period-doubling transitions.
+**Feigenbaum constants:** The ratio of successive bifurcation intervals converges to $\delta = 4.669\ldots$A universal constant for all period-doubling transitions.
 
 ### 11.2 Lyapunov Exponents
 
@@ -2095,7 +2095,7 @@ For certain parameter ranges, this system exhibits deterministic chaos despite b
 <details>
 <summary>Worked Example 11.1: Period Doubling in the Logistic Map</summary>
 
-At $r = 3.2$, the logistic map has a stable period-2 cycle.
+At $r = 3.2$The logistic map has a stable period-2 cycle.
 
 Starting from $x_0 = 0.2$:
 
@@ -2115,7 +2115,7 @@ $$r^2 x(1-x)[1 - rx(1-x)] = x$$
 
 $$r[r(1-x)(1 - rx + rx^2)] = 1$$
 
-At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$, matching our numerical result.
+At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$Matching our numerical result.
 
 </details>
 
@@ -2136,7 +2136,7 @@ At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$, matching our 
 <details>
 <summary>Problem 19: Euler's Equations for an Asymmetric Body</summary>
 
-A rigid body with principal moments $I_1 = 1$, $I_2 = 2$, $I_3 = 3$ (in kg$\cdot$m$^2$) rotates freely with initial angular velocity $\boldsymbol{'\{'}\omega{'\}'}(0) = (0.1, 0.5, 1.0)$ rad/s.
+A rigid body with principal moments $I_1 = 1$$I_2 = 2$$I_3 = 3$ (in kg$\cdot$M$^2$) rotates freely with initial angular velocity $\boldsymbol{'\{'}\omega{'\}'}(0) = (0.1, 0.5, 1.0)$ rad/s.
 
 (a) Verify that $T$ and $L^2$ are conserved by computing them at $t = 0$.
 
@@ -2148,7 +2148,7 @@ A rigid body with principal moments $I_1 = 1$, $I_2 = 2$, $I_3 = 3$ (in kg$\cdot
 
 (a) $T = \frac{1}{2}(1 \times 0.01 + 2 \times 0.25 + 3 \times 1.00) = \frac{1}{2}(0.01 + 0.50 + 3.00) = 1.755$ J.
 
-$L^2 = 1 \times 0.01 + 4 \times 0.25 + 9 \times 1.00 = 0.01 + 1.00 + 9.00 = 10.01$ (kg$\cdot$m$^2$/s$)^2$.
+$L^2 = 1 \times 0.01 + 4 \times 0.25 + 9 \times 1.00 = 0.01 + 1.00 + 9.00 = 10.01$ (kg$\cdot$M$^2$/s$)^2$.
 
 (b) $\dot{\omega}_1 = \frac{(I_2 - I_3)}{I_1}\omega_2\omega_3 = \frac{(2-3)}{1}(0.5)(1.0) = -0.5$ rad/s$^2$.
 
@@ -2156,7 +2156,7 @@ $\dot{\omega}_2 = \frac{(I_3 - I_1)}{I_2}\omega_3\omega_1 = \frac{(3-1)}{2}(1.0)
 
 $\dot{\omega}_3 = \frac{(I_1 - I_2)}{I_3}\omega_1\omega_2 = \frac{(1-2)}{3}(0.1)(0.5) = -0.0167$ rad/s$^2$.
 
-(c) The initial $\omega_2 = 0.5$ is the largest component, so the rotation is predominantly about the intermediate axis. Since $I_1 < I_2 < I_3$, rotation about the intermediate axis is **unstable** (tennis racket theorem). The body will exhibit periodic flipping, with $\omega_1$ and $\omega_3$ growing at the expense of $\omega_2$, then reversing. This is the Dzhanibekov effect.
+(c) The initial $\omega_2 = 0.5$ is the largest component, so the rotation is predominantly about the intermediate axis. Since $I_1 < I_2 < I_3$Rotation about the intermediate axis is **unstable** (tennis racket theorem). The body will exhibit periodic flipping, with $\omega_1$ and $\omega_3$ growing at the expense of $\omega_2$Then reversing. This is the Dzhanibekov effect.
 
 </details>
 
@@ -2199,7 +2199,7 @@ The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkm
 
 ### 12.1 Lagrangian Field Theory
 
-For a field $\phi(\mathbf{'\{'}r{'\}'}, t)$, the Lagrangian density $\mathcal{'\{'}L{'\}'}$ replaces the discrete Lagrangian $L = \sum_i T_i - V_i$:
+For a field $\phi(\mathbf{'\{'}r{'\}'}, t)$The Lagrangian density $\mathcal{'\{'}L{'\}'}$ replaces the discrete Lagrangian $L = \sum_i T_i - V_i$:
 
 $$S = \int \mathcal{'\{'}L{'\}'}(\phi, \partial_\mu\phi)\,d^4x, \quad \delta S = 0 \implies \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial\phi} - \partial_\mu\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)} = 0$$
 
@@ -2232,7 +2232,7 @@ For the complex Klein--Gordon field, the conserved current is:
 
 $$j^\mu = i(\phi^*\partial^\mu\phi - \phi\partial^\mu\phi^*)$$
 
-with conserved charge $Q = \int(i\phi^*\dot{\phi} - \phi\dot{\phi}^*)\,d^3x$.
+With conserved charge $Q = \int(i\phi^*\dot{\phi} - \phi\dot{\phi}^*)\,d^3x$.
 
 ### 12.4 Hamiltonian Density and Energy-Momentum Tensor
 
@@ -2259,12 +2259,16 @@ Using the E-L equation $\partial\mathcal{'\{'}L{'\}'}/\partial\phi = \partial_\m
 
 $$\delta\mathcal{'\{'}L{'\}'} = -i\epsilon\,\partial_\mu\!\left(\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)}\phi\right) = \partial_\mu(-\epsilon\,j^\mu)$$
 
-where $j^\mu = i[\phi^*(\partial^\mu\phi) - (\partial^\mu\phi^*)\phi]$ (using the complex Klein--Gordon Lagrangian for generality).
+Where $j^\mu = i[\phi^*(\partial^\mu\phi) - (\partial^\mu\phi^*)\phi]$ (using the complex Klein--Gordon Lagrangian for generality).
 
-By Noether's theorem: $\partial_\mu j^\mu = 0$, and the conserved charge:
+By Noether's theorem: $\partial_\mu j^\mu = 0$And the conserved charge:
 
 $$Q = \int j^0\,d^3x = \int i(\phi^*\dot{\phi} - \dot{\phi}^*\phi)\,d^3x$$
 
 For a plane wave $\phi = e^{-i\omega t + i\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'}}$: $Q \propto 2\omega > 0$ (positive frequency modes have positive charge).
 
 </details>
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

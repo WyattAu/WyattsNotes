@@ -11,14 +11,14 @@ description: "Rigorous IB mathematics notes covering Trigonometry. Includes defi
 ### Definition
 
 The radian is the standard unit of angular measure. An angle $\theta$ in radians is defined as the
-ratio of the arc length $s$ subtended by the angle to the radius $r$:
+Ratio of the arc length $s$ subtended by the angle to the radius $r$:
 
 $$
 \theta = \frac{s}{r}
 $$
 
 One radian is the angle subtended at the centre of a circle by an arc equal in length to the radius.
-Since the circumference of a circle is $2\pi r$, a full revolution is $2\pi$ radians.
+Since the circumference of a circle is $2\pi r$A full revolution is $2\pi$ radians.
 
 ### Conversion Between Degrees and Radians
 
@@ -43,7 +43,7 @@ $$
 For a circle of radius $r$ with a central angle $\theta$ (in radians):
 
 $$
-s = r\theta
+S = r\theta
 $$
 
 ### Sector Area
@@ -57,14 +57,14 @@ $$
 ### Worked Example: Arc Length and Sector Area
 
 **Problem:** A sector has radius $5$ cm and central angle $\frac{3\pi}{4}$ radians. Find the arc
-length and the area of the sector.
+Length and the area of the sector.
 
 **Solution:**
 
 Arc length:
 
 $$
-s = r\theta = 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78 \mathrm{ cm}
+S = r\theta = 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78 \mathrm{ cm}
 $$
 
 Sector area:
@@ -93,17 +93,17 @@ These are defined wherever the denominator is non-zero.
 
 ### Graphs of Reciprocal Functions
 
-| Function     | Domain                        | Range                   | Asymptotes                 | $x$-intercepts             |
+| Function | Domain | Range | Asymptotes | $x$-intercepts |
 | ------------ | ----------------------------- | ----------------------- | -------------------------- | -------------------------- |
-| $y = \csc x$ | $x \neq n\pi$                 | $y \le -1$ or $y \ge 1$ | $x = n\pi$                 | none                       |
-| $y = \sec x$ | $x \neq \frac{\pi}{2} + n\pi$ | $y \le -1$ or $y \ge 1$ | $x = \frac{\pi}{2} + n\pi$ | none                       |
-| $y = \cot x$ | $x \neq n\pi$                 | all real $y$            | $x = n\pi$                 | $x = \frac{\pi}{2} + n\pi$ |
+| $y = \csc x$ | $x \neq n\pi$ | $y \le -1$ or $y \ge 1$ | $x = n\pi$ | none |
+| $y = \sec x$ | $x \neq \frac{\pi}{2} + n\pi$ | $y \le -1$ or $y \ge 1$ | $x = \frac{\pi}{2} + n\pi$ | none |
+| $y = \cot x$ | $x \neq n\pi$ | all real $y$ | $x = n\pi$ | $x = \frac{\pi}{2} + n\pi$ |
 
 ## The Unit Circle
 
 The unit circle is a circle of radius $1$ centred at the origin. Any point on the unit circle has
-coordinates $(\cos\theta, \sin\theta)$, where $\theta$ is the angle measured anticlockwise from the
-positive $x$-axis.
+Coordinates $(\cos\theta, \sin\theta)$Where $\theta$ is the angle measured anticlockwise from the
+Positive $x$-axis.
 
 This definition extends trigonometric functions to all real numbers, not just acute angles. The
 Pythagorean identity follows directly from the fact that every point on the unit circle satisfies
@@ -111,11 +111,11 @@ $x^2 + y^2 = 1$.
 
 ### Key Values
 
-| $\theta$     | $0$ | $\frac{\pi}{6}$      | $\frac{\pi}{4}$      | $\frac{\pi}{3}$      | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| $\theta$ | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
 | ------------ | --- | -------------------- | -------------------- | -------------------- | --------------- | ----- | ---------------- | ------ |
-| $\sin\theta$ | $0$ | $\frac{1}{2}$        | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$             | $0$   | $-1$             | $0$    |
-| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$        | $0$             | $-1$  | $0$              | $1$    |
-| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$                  | $\sqrt{3}$           | undefined       | $0$   | undefined        | $0$    |
+| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$ | $0$ | $-1$ | $0$ |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ | $0$ | $-1$ | $0$ | $1$ |
+| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ | undefined | $0$ | undefined | $0$ |
 
 ### All, Sine, Tan, Cos (ASTC)
 
@@ -160,13 +160,13 @@ For $y = a\sin(bx + c) + d$:
 
 :::tip
 Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-and show at least one full period clearly.
+And show at least one full period .
 :::
 
 <DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
-Use the sliders to see how changing $a$, $b$, $c$, and $d$ in $y = a\sin(bx + c) + d$ affects the
-graph.
+Use the sliders to see how changing $a$$b$$c$And $d$ in $y = a\sin(bx + c) + d$ affects the
+Graph.
 
 ## Trigonometric Identities
 
@@ -183,8 +183,8 @@ $$
 ### Proof of $\sin^2\theta + \cos^2\theta = 1$
 
 By the unit circle definition, a point on the unit circle at angle $\theta$ has coordinates
-$(\cos\theta, \sin\theta)$. Since every point on the unit circle satisfies $x^2 + y^2 = 1$, we
-substitute:
+$(\cos\theta, \sin\theta)$. Since every point on the unit circle satisfies $x^2 + y^2 = 1$We
+Substitute:
 
 $$
 \cos^2\theta + \sin^2\theta = 1
@@ -194,7 +194,7 @@ This completes the proof.
 
 ### Proof of $1 + \tan^2\theta = \sec^2\theta$
 
-Starting from $\sin^2\theta + \cos^2\theta = 1$, divide both sides by $\cos^2\theta$:
+Starting from $\sin^2\theta + \cos^2\theta = 1$Divide both sides by $\cos^2\theta$:
 
 $$
 \frac{\sin^2\theta}{\cos^2\theta} + \frac{\cos^2\theta}{\cos^2\theta} = \frac{1}{\cos^2\theta}
@@ -206,7 +206,7 @@ $$
 
 ### Proof of $1 + \cot^2\theta = \csc^2\theta$
 
-Starting from $\sin^2\theta + \cos^2\theta = 1$, divide both sides by $\sin^2\theta$:
+Starting from $\sin^2\theta + \cos^2\theta = 1$Divide both sides by $\sin^2\theta$:
 
 $$
 \frac{\sin^2\theta}{\sin^2\theta} + \frac{\cos^2\theta}{\sin^2\theta} = \frac{1}{\sin^2\theta}
@@ -231,7 +231,7 @@ $$
 Consider rotating the point $(1, 0)$ by angle $A + B$ anticlockwise. The resulting coordinates are
 $(\cos(A + B), \sin(A + B))$.
 
-Equivalently, we can first rotate by $B$, then by $A$. The rotation matrix for angle $\alpha$ is:
+Equivalently, we can first rotate by $B$Then by $A$. The rotation matrix for angle $\alpha$ is:
 
 $$
 R(\alpha) = \begin`\{pmatrix}` \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end`\{pmatrix}`
@@ -257,7 +257,7 @@ $$
 \cos(A + B) = \cos A \cos B - \sin A \sin B, \quad \sin(A + B) = \sin A \cos B + \cos A \sin B
 $$
 
-The formulas for $A - B$ follow by substituting $-B$ and using $\sin(-B) = -\sin B$,
+The formulas for $A - B$ follow by substituting $-B$ and using $\sin(-B) = -\sin B$
 $\cos(-B) = \cos B$.
 
 ### Double Angle Identities
@@ -294,11 +294,11 @@ $$
 
 ## Inverse Trigonometric Functions
 
-| Function    | Meaning                          | Domain           | Range                                            |
+| Function | Meaning | Domain | Range |
 | ----------- | -------------------------------- | ---------------- | ------------------------------------------------ |
-| $\arcsin x$ | "the angle whose sine is $x$"    | $-1 \le x \le 1$ | $-\frac{\pi}{2} \le \arcsin x \le \frac{\pi}{2}$ |
-| $\arccos x$ | "the angle whose cosine is $x$"  | $-1 \le x \le 1$ | $0 \le \arccos x \le \pi$                        |
-| $\arctan x$ | "the angle whose tangent is $x$" | all real $x$     | $-\frac{\pi}{2} \lt \arctan x \lt \frac{\pi}{2}$ |
+| $\arcsin x$ | "the angle whose sine is $x$" | $-1 \le x \le 1$ | $-\frac{\pi}{2} \le \arcsin x \le \frac{\pi}{2}$ |
+| $\arccos x$ | "the angle whose cosine is $x$" | $-1 \le x \le 1$ | $0 \le \arccos x \le \pi$ |
+| $\arctan x$ | "the angle whose tangent is $x$" | all real $x$ | $-\frac{\pi}{2} \lt \arctan x \lt \frac{\pi}{2}$ |
 
 ### Properties
 
@@ -334,8 +334,8 @@ $$
 
 **Solution:**
 
-Let $\theta = \arccos\frac{1}{3}$, so $\cos\theta = \frac{1}{3}$ with $\theta \in [0, \pi]$. Since
-$\cos\theta \gt 0$, we have $\theta$ in the first quadrant, so $\sin\theta \ge 0$:
+Let $\theta = \arccos\frac{1}{3}$So $\cos\theta = \frac{1}{3}$ with $\theta \in [0, \pi]$. Since
+$\cos\theta \gt 0$We have $\theta$ in the first quadrant, so $\sin\theta \ge 0$:
 
 $$
 \sin\theta = \sqrt{1 - \frac{1}{9}} = \frac{2\sqrt{2}}{3}
@@ -343,8 +343,8 @@ $$
 
 :::tip
 Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
-principal value -- you may need to find other solutions using the periodic properties or the ASTC
-rule.
+Principal value -- you may need to find other solutions using the periodic properties or the ASTC
+Rule.
 :::
 
 ## Sine and Cosine Rules
@@ -363,7 +363,7 @@ Used when you know:
 ### Cosine Rule
 
 $$
-c^2 = a^2 + b^2 - 2ab\cos C
+C^2 = a^2 + b^2 - 2ab\cos C
 $$
 
 Or equivalently:
@@ -385,17 +385,17 @@ $$
 
 ### Worked Example: Sine Rule
 
-**Problem:** In triangle $ABC$, $a = 8$ cm, $A = 45^\circ$, $B = 30^\circ$. Find $b$.
+**Problem:** In triangle $ABC$$a = 8$ cm, $A = 45^\circ$$B = 30^\circ$. Find $b$.
 
 **Solution:**
 
 $$
-b = \frac{8\sin 30^{\circ}}{\sin 45^{\circ}} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
+B = \frac{8\sin 30^{\circ}}{\sin 45^{\circ}} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
 $$
 
 ### Worked Example: Cosine Rule
 
-**Problem:** Find the angle $C$ in a triangle with sides $a = 5$, $b = 7$, $c = 8$.
+**Problem:** Find the angle $C$ in a triangle with sides $a = 5$$b = 7$$c = 8$.
 
 **Solution:**
 
@@ -410,7 +410,7 @@ $$
 ## Ambiguous Case of the Sine Rule
 
 When using the sine rule with SSA (two sides and a non-included angle), there may be **two possible
-triangles**, **one triangle**, or **no triangle**.
+Triangles**, **one triangle**, or **no triangle**.
 
 ### Condition for Ambiguity
 
@@ -423,18 +423,18 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 
 ### Why Two Triangles?
 
-When $\sin B = k$ where $0 \lt k \lt 1$, there are two possible values for $B$:
+When $\sin B = k$ where $0 \lt k \lt 1$There are two possible values for $B$:
 
 $$
 B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180^{\circ} - \arcsin(k)
 $$
 
-Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$, check whether
+Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$Check whether
 $A + B_2 \lt 180^\circ$ as well).
 
 ### Worked Example: Ambiguous Case
 
-**Problem:** In triangle $ABC$, $a = 7$, $b = 10$, $A = 40^\circ$. Find all possible triangles.
+**Problem:** In triangle $ABC$$a = 7$$b = 10$$A = 40^\circ$. Find all possible triangles.
 
 **Solution:**
 
@@ -444,7 +444,7 @@ $$
 \frac{\sin B}{10} = \frac{\sin 40^{\circ}}{7} \implies \sin B = \frac{10\sin 40^{\circ}}{7} \approx 0.919
 $$
 
-Since $0 \lt 0.919 \lt 1$, there are two possible values for $B$:
+Since $0 \lt 0.919 \lt 1$There are two possible values for $B$:
 
 $$
 B_1 = \arcsin(0.919) \approx 66.8^{\circ}, \quad B_2 = 180^{\circ} - 66.8^{\circ} = 113.2^{\circ}
@@ -452,10 +452,10 @@ $$
 
 Check both: $A + B_1 = 106.8^{\circ} \lt 180^\circ$ and $A + B_2 = 153.2^{\circ} \lt 180^\circ$. Both are valid.
 
-**Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$,
+**Triangle 1:** $B = 66.8^\circ$$C = 73.2^\circ$
 $c_1 = \frac{7\sin 73.2^{\circ}}{\sin 40^{\circ}} \approx 10.4$
 
-**Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$,
+**Triangle 2:** $B = 113.2^\circ$$C = 26.8^\circ$
 $c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 ## Non-Right-Angled Triangle Problems
@@ -470,7 +470,7 @@ $c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 ### Worked Example: Multi-Step Triangle Problem
 
-**Problem:** In triangle $ABC$, $a = 12$, $b = 8$, $A = 65^\circ$. Find the area of the triangle.
+**Problem:** In triangle $ABC$$a = 12$$b = 8$$A = 65^\circ$. Find the area of the triangle.
 
 **Solution:**
 
@@ -480,7 +480,7 @@ $$
 \frac{\sin B}{8} = \frac{\sin 65^{\circ}}{12} \implies \sin B = \frac{2\sin 65^{\circ}}{3} \approx 0.604
 $$
 
-Since $b \lt a$, there is only one solution: $B \approx 37.2^\circ$, so $C = 77.8^\circ$.
+Since $b \lt a$There is only one solution: $B \approx 37.2^\circ$So $C = 77.8^\circ$.
 
 $$
 \mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8^{\circ} \approx 47.0 \mathrm{ square units}
@@ -488,8 +488,8 @@ $$
 
 ### Worked Example: Bearing Problem
 
-**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$, then
-on a bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to
+**Problem:** A ship sails from port $A$ on a bearing of $050^\circ$ for $15$ km to point $B$Then
+On a bearing of $110^\circ$ for $20$ km to point $C$. Find the distance and bearing from $C$ back to
 $A$.
 
 **Solution:**
@@ -523,7 +523,7 @@ $$
 \end`\{aligned}`
 $$
 
-where $n \in \mathbb{'\{'}Z{'\}'}$.
+Where $n \in \mathbb{'\{'}Z{'\}'}$.
 
 ### Worked Example: Basic Trig Equation
 
@@ -531,18 +531,18 @@ where $n \in \mathbb{'\{'}Z{'\}'}$.
 
 **Solution:**
 
-Let $u = 2x$, so $u \in [0, 4\pi]$.
+Let $u = 2x$So $u \in [0, 4\pi]$.
 
 $$
 \sin u = \frac{1}{2} \implies u = \frac{\pi}{6}, \frac{5\pi}{6}, 2\pi + \frac{\pi}{6}, 2\pi + \frac{5\pi}{6}
 $$
 
 $$
-u = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \frac{17\pi}{6}
+U = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \frac{17\pi}{6}
 $$
 
 $$
-x = \frac{u}{2} = \frac{\pi}{12}, \frac{5\pi}{12}, \frac{13\pi}{12}, \frac{17\pi}{12}
+X = \frac{u}{2} = \frac{\pi}{12}, \frac{5\pi}{12}, \frac{13\pi}{12}, \frac{17\pi}{12}
 $$
 
 ### Worked Example: Factoring
@@ -558,7 +558,7 @@ $$
 $$
 
 $$
-u = -\frac{1}{2} \mathrm{ or } u = 1
+U = -\frac{1}{2} \mathrm{ or } u = 1
 $$
 
 - $\cos x = -\frac{1}{2} \implies x = \frac{2\pi}{3}, \frac{4\pi}{3}$
@@ -585,7 +585,7 @@ $$
 Since $\sin x \gt 0$ in quadrants I and II, and $\sin x \lt 0$ in quadrants III and IV:
 
 $$
-x = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}
+X = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}
 $$
 
 ### Worked Example: Equations Involving $\tan$
@@ -594,11 +594,11 @@ $$
 
 **Solution:**
 
-Since $\tan$ has period $\pi$, $\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for
+Since $\tan$ has period $\pi$$\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for
 $n \in \mathbb{'\{'}Z{'\}'}$.
 
 $$
-x = \frac{\pi}{8} + \frac{n\pi}{2}
+X = \frac{\pi}{8} + \frac{n\pi}{2}
 $$
 
 For $x \in [0, \pi]$:
@@ -614,16 +614,16 @@ So $x = \frac{\pi}{8}, \frac{5\pi}{8}$.
 Expressions of the form $a\sin x + b\cos x$ can be written as a single trigonometric function:
 
 $$
-a\sin x + b\cos x = R\sin(x + \alpha)
+A\sin x + b\cos x = R\sin(x + \alpha)
 $$
 
-where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \frac{b}{a}$.
+Where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \frac{b}{a}$.
 
 This is useful for finding maximum/minimum values and for solving equations.
 
 ### Worked Example: Harmonic Form
 
-**Problem:** Express $3\sin x + 4\cos x$ in the form $R\sin(x + \alpha)$, and hence solve
+**Problem:** Express $3\sin x + 4\cos x$ in the form $R\sin(x + \alpha)$And hence solve
 $3\sin x + 4\cos x = 5$ for $x \in [0, 2\pi]$.
 
 **Solution:**
@@ -645,7 +645,7 @@ $$
 $$
 
 $$
-x = \frac{\pi}{2} - 0.927 + 2n\pi \approx 0.644 + 2n\pi
+X = \frac{\pi}{2} - 0.927 + 2n\pi \approx 0.644 + 2n\pi
 $$
 
 For $x \in [0, 2\pi]$: $x \approx 0.644$ rad (the next value $0.644 + 2\pi$ exceeds $2\pi$).
@@ -653,7 +653,7 @@ For $x \in [0, 2\pi]$: $x \approx 0.644$ rad (the next value $0.644 + 2\pi$ exce
 ## 3D Trigonometry
 
 3D trigonometry involves applying trigonometric ratios in three-dimensional problems. The key is to
-identify right-angled triangles within the 3D shape.
+Identify right-angled triangles within the 3D shape.
 
 ### Strategy
 
@@ -665,7 +665,7 @@ identify right-angled triangles within the 3D shape.
 ### Worked Example: 3D Problem
 
 **Problem:** A pyramid has a square base of side $6$ cm and vertical height $4$ cm. Find the angle
-between a sloping edge and the base.
+Between a sloping edge and the base.
 
 **Solution:**
 
@@ -679,10 +679,10 @@ $$
 
 ### General Approach
 
-In IB exams, trigonometric proofs typically ask you to show that one expression equals another. The
-standard approach is:
+In IB exams, trigonometric proofs ask you to show that one expression equals another. The
+Standard approach is:
 
-1. **Start with one side** -- usually the more complex side (LHS).
+1. **Start with one side** -- the more complex side (LHS).
 2. **Apply known identities** to transform it step by step toward the other side.
 3. **Never assume what you are trying to prove** -- work forward from a known truth.
 
@@ -690,10 +690,10 @@ standard approach is:
 
 - **Factor:** Look for common factors, e.g., $\sin x + \sin x\cos x = \sin x(1 + \cos x)$.
 - **Use $\sin^2 + \cos^2 = 1$:** Convert everything to sines or everything to cosines.
-- **Convert to $\sin$ and $\cos$:** When $\tan$, $\sec$, $\csc$, or $\cot$ appear, express them in
-  terms of $\sin$ and $\cos$.
+- **Convert to $\sin$ and $\cos$:** When $\tan$$\sec$$\csc$Or $\cot$ appear, express them in
+ terms of $\sin$ and $\cos$.
 - **Look for compound angle structure:** Recognise when an expression matches $\sin(A \pm B)$ or
-  $\cos(A \pm B)$.
+ $\cos(A \pm B)$.
 - **Common denominator:** When fractions appear, combine them over a single denominator.
 
 ### Worked Example: Proof by Multiplication
@@ -736,14 +736,14 @@ $$
 
 ### Forgetting to Check All Solutions
 
-When solving $\sin\theta = k$ or $\cos\theta = k$, there are always (at least) two solutions per
-period. A common mistake is to find $\arcsin(k)$ but forget $\pi - \arcsin(k)$.
+When solving $\sin\theta = k$ or $\cos\theta = k$There are always (at least) two solutions per
+Period. A common mistake is to find $\arcsin(k)$ but forget $\pi - \arcsin(k)$.
 
 ### Mixing Up Degrees and Radians
 
-Ensure your calculator is in the correct mode. If an angle is given as $\frac{\pi}{3}$, it is in
-radians; if given as $60^\circ$, it is in degrees. Forgetting to convert is one of the most frequent
-errors.
+Ensure your calculator is in the correct mode. If an angle is given as $\frac{\pi}{3}$It is in
+Radians; if given as $60^\circ$It is in degrees. Forgetting to convert is one of the most frequent
+Errors.
 
 ### Wrong Sign in Compound Angle Formulas
 
@@ -754,7 +754,7 @@ $$
 $$
 
 The $\sin A \sin B$ term is **positive** (the $\mp$ from the $\pm$ formula flips). Students often
-incorrectly write a minus sign here.
+Incorrectly write a minus sign here.
 
 ### Ambiguous Case of the Sine Rule
 
@@ -763,8 +763,8 @@ $\sin B = k$ with $0 \lt k \lt 1$ and $B$ is acute, then $180^{\circ} - B$ may a
 
 ### Domain of Inverse Functions
 
-$\arcsin x$ and $\arctan x$ return values in $[-\frac{\pi}{2}, \frac{\pi}{2}]$, while $\arccos x$
-returns values in $[0, \pi]$. If the actual angle is in a different quadrant, you must adjust using
+$\arcsin x$ and $\arctan x$ return values in $[-\frac{\pi}{2}, \frac{\pi}{2}]$While $\arccos x$
+Returns values in $[0, \pi]$. If the actual angle is in a different quadrant, you must adjust using
 ASTC.
 
 ## Problem Set
@@ -773,7 +773,7 @@ ASTC.
 <summary>Problem 1: Radian Measure</summary>
 
 **Problem:** A circle has radius $r = 8$ cm. A sector of the circle has area $48$ cm$^2$. Find the
-exact arc length of the sector.
+Exact arc length of the sector.
 
 **Solution:**
 
@@ -790,13 +790,13 @@ Arc length $s = r\theta = 8 \times \frac{3}{2} = 12$ cm.
 <details>
 <summary>Problem 2: Compound Angle Identity</summary>
 
-**Problem:** Given that $\sin\alpha = \frac{3}{5}$ and $\cos\beta = \frac{12}{13}$, where $\alpha$
-and $\beta$ are acute angles, find the exact value of $\sin(\alpha + \beta)$.
+**Problem:** Given that $\sin\alpha = \frac{3}{5}$ and $\cos\beta = \frac{12}{13}$Where $\alpha$
+And $\beta$ are acute angles, find the exact value of $\sin(\alpha + \beta)$.
 
 **Solution:**
 
 Since $\alpha$ is acute: $\cos\alpha = \sqrt{1 - \frac{9}{25}} = \frac{4}{5}$. Since $\beta$ is
-acute: $\sin\beta = \sqrt{1 - \frac{144}{169}} = \frac{5}{13}$.
+Acute: $\sin\beta = \sqrt{1 - \frac{144}{169}} = \frac{5}{13}$.
 
 $$
 \sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta = \frac{3}{5} \cdot \frac{12}{13} + \frac{4}{5} \cdot \frac{5}{13} = \frac{36}{65} + \frac{20}{65} = \frac{56}{65}
@@ -842,8 +842,8 @@ So $x = 0, \frac{2\pi}{3}, \frac{4\pi}{3}, 2\pi$.
 <details>
 <summary>Problem 5: Non-Right-Angled Triangle</summary>
 
-**Problem:** In triangle $PQR$, $p = 13$, $q = 14$, $r = 15$. Find the largest angle of the
-triangle.
+**Problem:** In triangle $PQR$$p = 13$$q = 14$$r = 15$. Find the largest angle of the
+Triangle.
 
 **Solution:**
 
@@ -880,7 +880,7 @@ $$
 <summary>Problem 7: Harmonic Form</summary>
 
 **Problem:** Express $\sin x + \sqrt{3}\cos x$ in the form $R\sin(x + \alpha)$ and state the maximum
-value.
+Value.
 
 **Solution:**
 
@@ -894,7 +894,7 @@ $$
 
 So $\sin x + \sqrt{3}\cos x = 2\sin\left(x + \frac{\pi}{3}\right)$.
 
-The maximum value is $R = 2$, occurring when $x + \frac{\pi}{3} = \frac{\pi}{2} + 2n\pi$, i.e.,
+The maximum value is $R = 2$Occurring when $x + \frac{\pi}{3} = \frac{\pi}{2} + 2n\pi$I.e.,
 $x = \frac{\pi}{6} + 2n\pi$.
 
 </details>
@@ -903,7 +903,7 @@ $x = \frac{\pi}{6} + 2n\pi$.
 <summary>Problem 8: 3D Trigonometry</summary>
 
 **Problem:** A cuboid has dimensions $5 \times 4 \times 3$ cm. Find the angle that the diagonal of
-the cuboid makes with the base.
+The cuboid makes with the base.
 
 **Solution:**
 
@@ -912,7 +912,7 @@ The space diagonal has length $\sqrt{5^2 + 4^2 + 3^2} = \sqrt{50} = 5\sqrt{2}$ c
 The projection of this diagonal onto the base has length $\sqrt{5^2 + 4^2} = \sqrt{41}$ cm.
 
 The angle $\theta$ between the space diagonal and its projection onto the base is the angle with the
-base:
+Base:
 
 $$
 \sin\theta = \frac{3}{5\sqrt{2}} = \frac{3\sqrt{2}}{10}
@@ -947,3 +947,11 @@ Ready to test your understanding of **Trigonometry**? The [diagnostic test](/doc
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

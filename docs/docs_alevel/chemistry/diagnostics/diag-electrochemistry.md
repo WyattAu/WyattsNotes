@@ -50,7 +50,7 @@ $$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{RT}{nF}\ln Q$$
 
 $$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0592}{n}\log Q$$
 
-For the cell: $\text{Ag}^+(aq) + \text{Fe}^{2+}(aq) \rightleftharpoons \text{Ag}(s) + \text{Fe}^{3+}(aq)$, $n = 1$
+For the cell: $\text{Ag}^+(aq) + \text{Fe}^{2+}(aq) \rightleftharpoons \text{Ag}(s) + \text{Fe}^{3+}(aq)$$n = 1$
 
 $$Q = \frac◆LB◆[\text{Fe}^{3+}]◆RB◆◆LB◆[\text{Ag}^+][\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1.00◆RB◆◆LB◆1.00 \times [\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆$$
 
@@ -102,7 +102,7 @@ Volume of $\text{O}_2$: $V = 0.009328 \times 24.0 = 0.224\,\text{dm}^3 = 224\,\t
 - **Cathode:** $\text{Cu}^{2+} + 2e^- \to \text{Cu}(s)$ (copper deposited as before)
 - **Anode:** The copper anode itself undergoes oxidation: $\text{Cu}(s) \to \text{Cu}^{2+}(aq) + 2e^-$
 
-The copper anode dissolves, releasing $\text{Cu}^{2+}$ ions into solution. The concentration of $\text{CuSO}_4$ remains constant because copper is deposited at the cathode at the same rate as it dissolves at the anode. This is the principle behind **electrorefining** of copper. No oxygen is produced at the anode because copper is more easily oxidised than water or hydroxide ions.
+The copper anode dissolves, releasing $\text{Cu}^{2+}$ ions into solution. The concentration of $\text{CuSO}_4$ remains constant because copper is deposited at the cathode at the same rate as it dissolves at the anode. This is the principle behind **electrorefining** of copper. No oxygen is produced at the anode because copper is more oxidised than water or hydroxide ions.
 
 ---
 ### UT-3: Predicting Feasibility of Redox Reactions
@@ -127,13 +127,13 @@ Use the following standard electrode potentials to determine which of the follow
 
 **Solution:**
 
-A reaction is feasible under standard conditions if $E^\circ_{\text{cell}} \gt 0$ (typically $E^\circ_{\text{cell}} \gt 0.3\,\text{V}$ for the reaction to proceed to a significant extent).
+A reaction is feasible under standard conditions if $E^\circ_{\text{cell}} \gt 0$ ( $E^\circ_{\text{cell}} \gt 0.3\,\text{V}$ for the reaction to proceed to a significant extent).
 
 (a) $\text{MnO}_4^-/\text{Mn}^{2+}$ is reduced ($E^\circ = +1.51\,\text{V}$), $\text{Fe}^{3+}/\text{Fe}^{2+}$ is reversed (oxidation, $E^\circ = +0.77\,\text{V}$).
 
 $$E^\circ_{\text{cell}} = 1.51 - 0.77 = +0.74\,\text{V}$$
 
-$E^\circ_{\text{cell}} \gt 0.3\,\text{V}$, so this reaction is **feasible**. This is the basis of redox titrations using potassium manganate(VII).
+$E^\circ_{\text{cell}} \gt 0.3\,\text{V}$So this reaction is **feasible**. This is the basis of redox titrations using potassium manganate(VII).
 
 (b) $\text{Cl}_2/\text{Cl}^-$ is reduced ($E^\circ = +1.36\,\text{V}$), $\text{Br}_2/\text{Br}^-$ is reversed (oxidation, $E^\circ = +1.07\,\text{V}$).
 
@@ -145,7 +145,7 @@ $E^\circ_{\text{cell}}$ is positive but only marginally above zero and below $0.
 
 $$E^\circ_{\text{cell}} = 1.07 - 0.54 = +0.53\,\text{V}$$
 
-$E^\circ_{\text{cell}} \gt 0.3\,\text{V}$, so this reaction is **feasible**. Bromine can oxidise iodide to iodine. This explains the trend in reactivity: $\text{Cl}_2 \gt \text{Br}_2 \gt \text{I}_2$ as oxidising agents.
+$E^\circ_{\text{cell}} \gt 0.3\,\text{V}$So this reaction is **feasible**. Bromine can oxidise iodide to iodine. This explains the trend in reactivity: $\text{Cl}_2 \gt \text{Br}_2 \gt \text{I}_2$ as oxidising agents.
 
 ## Integration Tests
 
@@ -194,7 +194,7 @@ The cell potential is higher than standard because the lower $[\text{Zn}^{2+}]$ 
 
 **Question:**
 
-A solution containing $\text{Cu}^{2+}$, $\text{Ag}^+$, and $\text{Zn}^{2+}$ ions (all at $0.10\,\text{mol dm}^{-3}$) is electrolysed using carbon electrodes.
+A solution containing $\text{Cu}^{2+}$$\text{Ag}^+$And $\text{Zn}^{2+}$ ions (all at $0.10\,\text{mol dm}^{-3}$) is electrolysed using carbon electrodes.
 
 Relevant electrode potentials:
 - $\text{Ag}^+ + e^- \rightleftharpoons \text{Ag}$: $E^\circ = +0.80\,\text{V}$
@@ -211,9 +211,9 @@ Relevant electrode potentials:
 
 (a) Metals are deposited at the cathode in order of their **reduction potential** (most positive first):
 
-1. **Silver** ($\text{Ag}^+$, $E^\circ = +0.80\,\text{V}$) -- deposited first (most easily reduced)
-2. **Copper** ($\text{Cu}^{2+}$, $E^\circ = +0.34\,\text{V}$) -- deposited second
-3. **Zinc** ($\text{Zn}^{2+}$, $E^\circ = -0.76\,\text{V}$) -- zinc would only be deposited after all copper is removed, and in practice hydrogen gas would be produced instead (from water reduction) because $\text{H}_2\text{O}/\text{H}_2$ has a less negative effective potential than $\text{Zn}^{2+}/\text{Zn}$ under these conditions.
+1. **Silver** ($\text{Ag}^+$$E^\circ = +0.80\,\text{V}$) -- deposited first (most reduced)
+2. **Copper** ($\text{Cu}^{2+}$$E^\circ = +0.34\,\text{V}$) -- deposited second
+3. **Zinc** ($\text{Zn}^{2+}$$E^\circ = -0.76\,\text{V}$) -- zinc would only be deposited after all copper is removed, and in practice hydrogen gas would be produced instead (from water reduction) because $\text{H}_2\text{O}/\text{H}_2$ has a less negative effective potential than $\text{Zn}^{2+}/\text{Zn}$ under these conditions.
 
 (b) $\text{Ag}^+ + e^- \to \text{Ag}$
 
@@ -230,7 +230,7 @@ $$t = \frac{Q}{I} = \frac{96.6}{0.200} = 483\,\text{s} = 8.05\,\text{min}$$
 - $2\text{H}_2\text{O}(l) \to \text{O}_2(g) + 4\text{H}^+(aq) + 4e^-$
 - $2\text{Cl}^- \to \text{Cl}_2(g) + 2e^-$ (if chloride present, which it is not specified here)
 
-Since the anions present are sulfate (from the salts, typically) and the cations are being reduced at the cathode, the species oxidised at the anode is **water**, producing **oxygen gas**:
+Since the anions present are sulfate (from the salts, ) and the cations are being reduced at the cathode, the species oxidised at the anode is **water**, producing **oxygen gas**:
 
 $$2\text{H}_2\text{O}(l) \to \text{O}_2(g) + 4\text{H}^+(aq) + 4e^-$$
 
@@ -283,7 +283,7 @@ $$m(\text{H}_2) = 0.1865 \times 2.02 = 0.377\,\text{g}$$
 
 (c)
 1. **Higher efficiency**: Fuel cells convert chemical energy directly to electrical energy with no intermediate thermal step, achieving efficiencies of 40--60% compared to 20--30% for internal combustion engines (which lose energy as heat).
-2. **Zero direct emissions**: The only product is water ($\text{H}_2\text{O}$), producing no $\text{CO}_2$, $\text{NO}_x$, or particulate matter. (Note: the source of hydrogen matters for overall carbon footprint.)
+2. **Zero direct emissions**: The only product is water ($\text{H}_2\text{O}$), producing no $\text{CO}_2$$\text{NO}_x$Or particulate matter. (Note: the source of hydrogen matters for overall carbon footprint.)
 
 ---
 
@@ -325,13 +325,13 @@ $$m(\mathrm{Cu}) = 4.66 \times 10^{-3} \times 63.5 = 0.296\,\mathrm{g}$$ (1 mark
 
 (c) $\mathrm{Fe}^{2+}(aq) + \mathrm{Ag}^+(aq) \to \mathrm{Fe}^{3+}(aq) + \mathrm{Ag}(s)$
 
-Standard electrode potentials: $E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\mathrm{V}$, $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\,\mathrm{V}$, $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\,\mathrm{V}$, $E^\circ(\mathrm{Fe}^{3+}/\mathrm{Fe}^{2+}) = +0.77\,\mathrm{V}$.
+Standard electrode potentials: $E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\mathrm{V}$$E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\,\mathrm{V}$$E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\,\mathrm{V}$$E^\circ(\mathrm{Fe}^{3+}/\mathrm{Fe}^{2+}) = +0.77\,\mathrm{V}$.
 
 **Solution:**
 
-(a) $E^\circ_{\text{cell}} = 0.34 - (-0.76) = +1.10\,\mathrm{V}$. $E^\circ_{\text{cell}} > 0$, so the reaction is **feasible** (1 mark).
+(a) $E^\circ_{\text{cell}} = 0.34 - (-0.76) = +1.10\,\mathrm{V}$. $E^\circ_{\text{cell}} > 0$So the reaction is **feasible** (1 mark).
 
-(b) $E^\circ_{\text{cell}} = 0.80 - 0.34 = +0.46\,\mathrm{V}$. $E^\circ_{\text{cell}} > 0$, so the reaction is **feasible** (1 mark).
+(b) $E^\circ_{\text{cell}} = 0.80 - 0.34 = +0.46\,\mathrm{V}$. $E^\circ_{\text{cell}} > 0$So the reaction is **feasible** (1 mark).
 
 (c) $E^\circ_{\text{cell}} = 0.80 - 0.77 = +0.03\,\mathrm{V}$. $E^\circ_{\text{cell}} > 0$ but very small. The reaction is **marginally feasible** under standard conditions, but the equilibrium constant is small ($K = \exp(nFE^\circ/RT) = \exp(1 \times 96500 \times 0.03/(8.314 \times 298)) = \exp(1.17) = 3.2$). The reaction will proceed but not go to completion (1 mark).
 
@@ -343,7 +343,7 @@ Standard electrode potentials: $E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\
 
 (b) Calculate the volume of bromine gas produced at STP when a current of $2.00\,\mathrm{A}$ is passed for $15.0$ minutes.
 
-(c) If the actual volume of bromine collected is $0.85\,\mathrm{dm}^3$, calculate the current efficiency.
+(c) If the actual volume of bromine collected is $0.85\,\mathrm{dm}^3$Calculate the current efficiency.
 
 **Solution:**
 
@@ -361,4 +361,4 @@ $$V(\mathrm{Br}_2) = 9.33 \times 10^{-3} \times 22.4 = 0.209\,\mathrm{dm}^3$$ (1
 
 (c) Current efficiency $= \frac◆LB◆\text{actual volume}◆RB◆◆LB◆\text{theoretical volume}◆RB◆ \times 100 = \frac{0.85}{0.209} \times 100 = 407\%$
 
-This is impossible (>100%), suggesting an error in the question data or experimental conditions. A realistic current efficiency for bromine production is typically 85--95%. If the collected volume were $0.185\,\mathrm{dm}^3$, the efficiency would be $88.5\%$ (1 mark).
+This is impossible (>100%), suggesting an error in the question data or experimental conditions. A realistic current efficiency for bromine production is 85--95%. If the collected volume were $0.185\,\mathrm{dm}^3$The efficiency would be $88.5\%$ (1 mark).

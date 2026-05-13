@@ -85,12 +85,12 @@ If air temperature increases, the speed of sound increases (particles move faste
 
 (a) $\lambda = v/f = 3 \times 10^8 / (1800 \times 10^6) = 3 \times 10^8 / 1.8 \times 10^9 = 0.167$ m.
 
-(b) Time $= 5000 / (3 \times 10^8) = 1.67 \times 10^{-5}$ s $= 16.7$ $\mu$s.
+(b) Time $= 5000 / (3 \times 10^8) = 1.67 \times 10^{-5}$ s $= 16.7$ $\mu$S.
 
 (c) Intensity at distance 5 km: $I = P/(4\pi r^2) = 1/(4\pi \times 25,000,000) = 1/314,159,265 = 3.18 \times 10^{-9}$ W/m$^2$.
 Power captured by $0.5 \text{ m{}^2$ receiver $= 3.18 \times 10^{-9} \times 0.5 = 1.59 \times 10^{-9}$ W $= 1.59$ nW.
 
-(d) Microwaves offer a balance between range and data capacity: (1) Higher frequency than radio waves means they can carry more information (higher bandwidth). (2) Shorter wavelength allows smaller antennas (practical for handheld devices). (3) They can be directed in narrow beams between towers, reducing interference. (4) They are not easily absorbed by the atmosphere. Radio waves have longer wavelengths, which limits data capacity and requires larger antennas, but they can travel longer distances and penetrate obstacles better.
+(d) Microwaves offer a balance between range and data capacity: (1) Higher frequency than radio waves means they can carry more information (higher bandwidth). (2) Shorter wavelength allows smaller antennas (practical for handheld devices). (3) They can be directed in narrow beams between towers, reducing interference. (4) They are not absorbed by the atmosphere. Radio waves have longer wavelengths, which limits data capacity and requires larger antennas, but they can travel longer distances and penetrate obstacles better.
 
 ### IT-3: Wave Interference and Applications (with Energy)
 **Question:** (a) Explain the conditions needed for constructive and destructive interference. (b) Two coherent sources produce waves of wavelength 0.5 m. At a point P, the path difference is 1.5 m. Determine whether the interference at P is constructive or destructive. (c) Explain how noise-cancelling headphones work using the principle of superposition. (d) Ultrasound waves of frequency 2 MHz are used in medical imaging. Calculate the wavelength in tissue (speed $= 1540$ m/s) and explain why high-frequency ultrasound is preferred for detailed images.
@@ -107,4 +107,4 @@ Power captured by $0.5 \text{ m{}^2$ receiver $= 3.18 \times 10^{-9} \times 0.5 
 
 (d) $\lambda = v/f = 1540/(2 \times 10^6) = 7.7 \times 10^{-4}$ m $= 0.77$ mm.
 
-High-frequency ultrasound has a short wavelength, which means it can detect smaller structures and produce sharper images (better resolution). This is analogous to optical microscopy -- shorter wavelengths provide finer detail. However, higher frequency ultrasound is more rapidly absorbed by tissue, limiting penetration depth. Medical imaging balances resolution and penetration by selecting appropriate frequencies (typically 1--15 MHz depending on the application).
+High-frequency ultrasound has a short wavelength, which means it can detect smaller structures and produce sharper images (better resolution). This is analogous to optical microscopy -- shorter wavelengths provide finer detail. However, higher frequency ultrasound is more rapidly absorbed by tissue, limiting penetration depth. Medical imaging balances resolution and penetration by selecting appropriate frequencies ( 1--15 MHz depending on the application).

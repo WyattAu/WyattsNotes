@@ -10,24 +10,24 @@ slug: futures-promises-async-flows
 ---
 # Futures, Promises, and Async Flows
 
-This section covers `std::future<T>`, `std::promise<T>`, `std::async` launch policies, the
-future/promise pair as a basic async primitive, composability limitations, async file reading,
-parallel computation with `std::async`, cancellation via `std::stop_token` integration, and
-exception propagation through coroutines.
+This section covers `std::future<T>``std::promise<T>``std::async` launch policies, the
+Future/promise pair as a basic async primitive, composability limitations, async file reading,
+Parallel computation with `std::async`Cancellation via `std::stop_token` integration, and
+Exception propagation through coroutines.
 
 ## `std::future<T>` [N4950 §33.6.4]
 
 `std::future<T>` [N4950 §33.6.4] is a synchronization primitive that provides access to a result
-that will be available in the future. The caller can:
+That will be available in the future. The caller can:
 
-- **Block** on the result with `get()`, which waits until the result is ready and then moves or
-  copies it.
-- **Wait** with `wait()`, which blocks until the result is ready.
-- **Poll** with `wait_for(duration)` or `wait_until(time_point)`, which return the readiness status
-  without blocking indefinitely.
+- **Block** on the result with `get()`Which waits until the result is ready and then moves or
+ copies it.
+- **Wait** with `wait()`Which blocks until the result is ready.
+- **Poll** with `wait_for(duration)` or `wait_until(time_point)`Which return the readiness status
+ without blocking indefinitely.
 
 `std::future` is **move-only** — it cannot be copied. After `get()` is called, the future is
-invalidated (subsequent calls to `get()` throw `std::future_error` with
+Invalidated (subsequent calls to `get()` throw `std::future_error` with
 `std::future_errc::no_state`).
 
 ```cpp
@@ -53,7 +53,7 @@ int main() {
 ## `std::promise<T>` [N4950 §33.6.5]
 
 `std::promise<T>` [N4950 §33.6.5] is the **producer** side of the future/promise pair. The promise
-provides:
+Provides:
 
 - `set_value(val)`: stores the result and makes it available to the waiting future.
 - `set_exception(eptr)`: stores an exception, which is rethrown when `future::get()` is called.
@@ -71,26 +71,26 @@ $$
 ## `std::async` for Launching Coroutines with Policy
 
 `std::async` [N4950 §33.6.8] launches an asynchronous task and returns a `std::future`. The launch
-policy controls execution:
+Policy controls execution:
 
-| Policy                                                  | Behavior                                                       |
+| Policy | Behavior |
 | :------------------------------------------------------ | :------------------------------------------------------------- |
-| `std::launch::async`                                    | Runs on a new thread (or thread pool); guaranteed asynchronous |
-| `std::launch::deferred`                                 | Lazy — runs when `get()` is called on the calling thread       |
-| `std::launch::async \| std::launch::deferred` (default) | Implementation chooses (may be either)                         |
+| `std::launch::async` | Runs on a new thread (or thread pool); guaranteed asynchronous |
+| `std::launch::deferred` | Lazy — runs when `get()` is called on the calling thread |
+| `std::launch::async \| std::launch::deferred` (default) | Implementation chooses (may be either) |
 
 :::warning
 With the default launch policy, the implementation is free to choose `deferred`
-execution. This means the task might run synchronously on the calling thread when `get()` is called,
-defeating the purpose of asynchronous execution. Always use `std::launch::async` explicitly if you
-need guaranteed asynchronous execution.
+Execution. This means the task might run synchronously on the calling thread when `get()` is called,
+Defeating the purpose of asynchronous execution. Always use `std::launch::async` explicitly if you
+Need guaranteed asynchronous execution.
 :::
 
 ## Future/Promise Pair as the Basic Async Primitive
 
 The future/promise pair is the fundamental building block for asynchronous computation in C++. The
-promise is held by the producer (the code performing the computation), and the future is held by the
-consumer (the code awaiting the result). They communicate through a **shared state** [N4950
+Promise is held by the producer (the code performing the computation), and the future is held by the
+Consumer (the code awaiting the result). They communicate through a **shared state** [N4950
 §33.6.4]:
 
 $$
@@ -106,7 +106,7 @@ The shared state transitions through these phases:
 ## Limitations: No Composability
 
 The primary limitation of `std::future` is **lack of composability** [N4950 §33.6.4]. Unlike
-JavaScript `Promise.then()` or Rust's `Future`, C++ `std::future`:
+JavaScript `Promise.then()` or Rust's `Future`C++ `std::future`:
 
 - Has no `.then()` method for chaining.
 - Cannot be combined with `when_all` or `when_any` from the standard library.
@@ -114,16 +114,16 @@ JavaScript `Promise.then()` or Rust's `Future`, C++ `std::future`:
 - Is not a coroutine awaitable (no `operator co_await`).
 
 This is why C++20 coroutines are essential for real-world asynchronous programming — they provide
-the composability that `std::future` lacks. Libraries like `cppcoro` (now archived) and the proposed
+The composability that `std::future` lacks. Libraries like `cppcoro` (now archived) and the proposed
 `std::execution` (P2300) aim to bridge this gap.
 
-| Feature              | `std::future` (C++11) | `std::execution::sender` (P2300) | JavaScript `Promise`    |
+| Feature | `std::future` (C++11) | `std::execution::sender` (P2300) | JavaScript `Promise` |
 | :------------------- | :-------------------- | :------------------------------- | :---------------------- |
-| Chaining (`.then()`) | No                    | Yes (via `then`)                 | Yes                     |
-| Cancellation         | No                    | Yes (via stop tokens)            | Yes (`AbortController`) |
-| `co_await`           | No (without library)  | Yes (via `awaitable`)            | Yes (native)            |
-| Error handling       | Exception propagation | Via `set_error`                  | `.catch()`              |
-| Structured conc.     | No                    | Yes (`when_all`, `transfer`)     | `Promise.all()`         |
+| Chaining (`.then()`) | No | Yes (via `then`) | Yes |
+| Cancellation | No | Yes (via stop tokens) | Yes (`AbortController`) |
+| `co_await` | No (without library) | Yes (via `awaitable`) | Yes (native) |
+| Error handling | Exception propagation | Via `set_error` | `.catch()` |
+| Structured conc. | No | Yes (`when_all``transfer`) | `Promise.all()` |
 
 ## Complete Example: Async File Reading with Future/Promise
 
@@ -241,42 +241,42 @@ int main() {
 ```
 
 :::tip
-When using `std::async` with `std::launch::async`, be aware that the C++ standard does
+When using `std::async` with `std::launch::async`Be aware that the C++ standard does
 **not** require implementations to use a thread pool. Some implementations (notably GCC's libstdc++)
-spawn a new thread for each `std::async` call, which can be expensive. For high-throughput
-scenarios, use a dedicated thread pool or a coroutine-based executor.
+Spawn a new thread for each `std::async` call, which can be expensive. For high-throughput
+Scenarios, use a dedicated thread pool or a coroutine-based executor.
 :::
 
 ## Cancellation via `std::stop_token` Integration
 
 C++20 introduced `std::stop_token` [N4950 §33.5.1] as a cooperative cancellation mechanism. A
 `std::stop_token` is a non-owning observer that can check whether a `std::stop_source` has requested
-cancellation.
+Cancellation.
 
 The key types [N4950 §33.5]:
 
-| Type                 | Role                                           |
+| Type | Role |
 | :------------------- | :--------------------------------------------- |
-| `std::stop_token`    | Non-owning observer; checks `stop_requested()` |
-| `std::stop_source`   | Owner; calls `request_stop()` to signal        |
-| `std::stop_callback` | Registers a callback invoked on cancellation   |
+| `std::stop_token` | Non-owning observer; checks `stop_requested()` |
+| `std::stop_source` | Owner; calls `request_stop()` to signal |
+| `std::stop_callback` | Registers a callback invoked on cancellation |
 
-To integrate cancellation with coroutines, the `stop_token` is typically passed as a parameter to
-the coroutine or stored in the promise type. The coroutine periodically checks `stop_requested()` at
-suspension points.
+To integrate cancellation with coroutines, the `stop_token` is passed as a parameter to
+The coroutine or stored in the promise type. The coroutine periodically checks `stop_requested()` at
+Suspension points.
 
 ## Exception Propagation Through Coroutines
 
 When an exception is thrown inside a coroutine and not caught within the coroutine body, the
-standard machinery handles it as follows [N4950 §8.5.3]:
+Standard machinery handles it as follows [N4950 §8.5.3]:
 
 1. The exception is caught by the coroutine machinery.
 2. `promise.unhandled_exception()` is called. The default behavior stores the exception via
-   `std::current_exception()`.
-3. When the coroutine is `co_await`ed, `await_resume()` rethrows the stored exception.
+ `std::current_exception()`.
+3. When the coroutine is `co_await`Ed, `await_resume()` rethrows the stored exception.
 
-This means that exceptions propagate naturally through coroutine chains, just as they would through
-synchronous call chains:
+This means that exceptions propagate through coroutine chains, just as they would through
+Synchronous call chains:
 
 $$
 \mathrm{inner throws{} \rightarrow \mathrm{inner.unhandled\_exception(){} \rightarrow \mathrm{outer.await\_resume() rethrows{}
@@ -360,27 +360,27 @@ int main() {
 ## Unhandled Exceptions in Coroutines
 
 If `unhandled_exception()` does not store the exception and instead rethrows it, the behavior
-depends on context [N4950 §8.5.3]:
+Depends on context [N4950 §8.5.3]:
 
-- If the coroutine has not yet reached `final_suspend`, the exception propagates out of `resume()`.
+- If the coroutine has not yet reached `final_suspend`The exception propagates out of `resume()`.
 - If the coroutine has no caller waiting (e.g., it was detached), `std::terminate()` is called.
 
 :::warning
 Always store exceptions in `unhandled_exception()` and rethrow them at an appropriate
 `await_resume()` point. Letting exceptions escape `resume()` makes the coroutine interface fragile
-and can lead to `std::terminate()` in detached scenarios.
+And can lead to `std::terminate()` in detached scenarios.
 :::
 
 ## Cleanup on Cancellation
 
 When a coroutine is cancelled, all local variables that are still alive must be destroyed. The
-compiler-generated state machine ensures that destructors run for variables whose lifetime spans the
-current suspension point [N4950 §8.5.2]. This is analogous to stack unwinding in regular exception
-handling.
+Compiler-generated state machine ensures that destructors run for variables whose lifetime spans the
+Current suspension point [N4950 §8.5.2]. This is analogous to stack unwinding in regular exception
+Handling.
 
 The cleanup order follows the reverse construction order, just like normal function scope exit.
 Variables constructed before the suspension point and still live at that point will have their
-destructors called when `destroy()` is invoked on the coroutine handle.
+Destructors called when `destroy()` is invoked on the coroutine handle.
 
 ## Complete Example: Cancellable Async Operation
 
@@ -545,24 +545,24 @@ int main() {
 :::info
 The P2300 `std::execution` proposal (targeting a future C++ standard) integrates
 `std::stop_token` directly into the sender/receiver model, providing a unified cancellation
-mechanism that propagates through entire async computation graphs. Until P2300 is standardized,
-manual `stop_token` integration as shown above is the recommended approach.
+Mechanism that propagates through entire async computation graphs. Until P2300 is standardized,
+Manual `stop_token` integration as shown above is the recommended approach.
 :::
 
 ## Summary
 
-| Concept                          | Standard Reference | Key Feature                                          |
+| Concept | Standard Reference | Key Feature |
 | :------------------------------- | :----------------- | :--------------------------------------------------- |
-| Coroutine definition             | [N4950 §8.5]       | Stackless, compiler-transformed into state machine   |
-| `co_await`                       | [N4950 §8.5.5]     | Suspension via awaiter protocol                      |
-| `co_yield`                       | [N4950 §8.5.5]     | Syntactic sugar for `co_await promise.yield_value()` |
-| `std::coroutine_handle&lt;P&gt;` | [N4950 §21.4.4]    | Non-owning handle; manual `destroy()` required       |
-| `std::generator&lt;T&gt;`        | [N4950 §25.4.4]    | C++23 lazy input range via `co_yield`                |
-| `std::future&lt;T&gt;`           | [N4950 §33.6.4]    | Blocking async result; no composability              |
-| `std::promise&lt;T&gt;`          | [N4950 §33.6.5]    | Sets async result for a future                       |
-| `std::async`                     | [N4950 §33.6.8]    | Launches async task; returns future                  |
-| `std::stop_token`                | [N4950 §33.5.1]    | Cooperative cancellation mechanism                   |
-| P2300 `std::execution`           | N4984 proposal     | Structured concurrency with senders/receivers        |
+| Coroutine definition | [N4950 §8.5] | Stackless, compiler-transformed into state machine |
+| `co_await` | [N4950 §8.5.5] | Suspension via awaiter protocol |
+| `co_yield` | [N4950 §8.5.5] | Syntactic sugar for `co_await promise.yield_value()` |
+| `std::coroutine_handle&lt;P&gt;` | [N4950 §21.4.4] | Non-owning handle; manual `destroy()` required |
+| `std::generator&lt;T&gt;` | [N4950 §25.4.4] | C++23 lazy input range via `co_yield` |
+| `std::future&lt;T&gt;` | [N4950 §33.6.4] | Blocking async result; no composability |
+| `std::promise&lt;T&gt;` | [N4950 §33.6.5] | Sets async result for a future |
+| `std::async` | [N4950 §33.6.8] | Launches async task; returns future |
+| `std::stop_token` | [N4950 §33.5.1] | Cooperative cancellation mechanism |
+| P2300 `std::execution` | N4984 proposal | Structured concurrency with senders/receivers |
 
 ## See Also
 
@@ -577,3 +577,11 @@ manual `stop_token` integration as shown above is the recommended approach.
 :::
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

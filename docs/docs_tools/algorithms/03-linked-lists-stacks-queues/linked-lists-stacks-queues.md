@@ -7,8 +7,8 @@ slug: linked-lists-stacks-queues
 ## Singly Linked Lists
 
 A singly linked list is a sequence of nodes where each node contains a value and a reference to the
-next node. The list is accessed through a head pointer; traversal requires following pointers from
-the head.
+Next node. The list is accessed through a head pointer; traversal requires following pointers from
+The head.
 
 ```python
 class ListNode:
@@ -53,9 +53,9 @@ def delete_node(head, val):
 :::info
 
 The critical advantage of linked lists over arrays is $O(1)$ insertion and deletion at any known
-position (given a pointer to the preceding node). The critical disadvantage is $O(n)$ random access
-and poor cache locality. In practice, arrays dominate because cache effects matter more than
-theoretical complexity for typical data sizes.
+Position (given a pointer to the preceding node). The critical disadvantage is $O(n)$ random access
+And poor cache locality. In practice, arrays dominate because cache effects matter more than
+Theoretical complexity for typical data sizes.
 
 :::
 
@@ -94,7 +94,7 @@ def reverse_recursive(head):
 ### Cycle Detection (Floyd's Tortoise and Hare)
 
 Floyd's algorithm uses two pointers moving at different speeds. If there is a cycle, the fast
-pointer will eventually catch up to the slow pointer.
+Pointer will eventually catch up to the slow pointer.
 
 ```python
 def has_cycle(head):
@@ -132,11 +132,11 @@ def find_cycle_start(head):
 ```
 
 **Why this works:** Let $\mu$ be the distance from head to cycle start, and $\lambda$ be the cycle
-length. When slow and fast meet, slow has travelled $\mu + a\lambda$ steps and fast has travelled
+Length. When slow and fast meet, slow has travelled $\mu + a\lambda$ steps and fast has travelled
 $\mu + a\lambda + b\lambda$ steps for some non-negative integers $a, b$. Since fast moves twice as
-fast: $2(\mu + a\lambda) = \mu + a\lambda + b\lambda$, which gives $\mu = (b - a)\lambda$. So the
-distance from the meeting point to the cycle start (going around the cycle) is exactly $\mu$ — the
-same as the distance from head to cycle start.
+Fast: $2(\mu + a\lambda) = \mu + a\lambda + b\lambda$Which gives $\mu = (b - a)\lambda$. So the
+Distance from the meeting point to the cycle start (going around the cycle) is exactly $\mu$ — the
+Same as the distance from head to cycle start.
 
 ### Fast and Slow Pointer Technique
 
@@ -199,8 +199,8 @@ class DoublyListNode:
 ```
 
 Doubly linked lists support $O(1)$ deletion given a pointer to the node (no need to find the
-predecessor) and reverse traversal. The trade-off is extra memory per node (one pointer) and more
-complex insertion/deletion logic.
+Predecessor) and reverse traversal. The trade-off is extra memory per node (one pointer) and more
+Complex insertion/deletion logic.
 
 ```python
 def delete_doubly_node(node):
@@ -219,8 +219,8 @@ def delete_doubly_node(node):
 ## Skip Lists
 
 A skip list is a probabilistic data structure that provides $O(\log n)$ expected-time search,
-insertion, and deletion — the same asymptotic complexity as a balanced BST, but with simpler
-implementation.
+Insertion, and deletion — the same asymptotic complexity as a balanced BST, but with simpler
+Implementation.
 
 The structure consists of multiple levels of linked lists. The bottom level contains all elements.
 Each higher level is a "fast lane" that contains a random subset of elements from the level below.
@@ -283,16 +283,16 @@ class SkipList:
 :::info
 
 Skip lists are used in Redis (as the underlying data structure for sorted sets) and in the Linux
-kernel (for process address space management). They are preferred over balanced BSTs in these
-contexts because they are simpler to implement correctly in concurrent settings — insertion and
-deletion only need to lock the nodes being modified, not the entire structure.
+Kernel (for process address space management). They are preferred over balanced BSTs in these
+Contexts because they are simpler to implement correctly in concurrent settings — insertion and
+Deletion only need to lock the nodes being modified, not the entire structure.
 
 :::
 
 ## Stacks
 
 A stack is a LIFO (Last In, First Out) data structure with two primary operations: `push` (add to
-top) and `pop` (remove from top).
+Top) and `pop` (remove from top).
 
 ### Implementation
 
@@ -330,7 +330,7 @@ class Stack:
 **Expression Evaluation (Shunting-Yard Algorithm):**
 
 Dijkstra's shunting-yard algorithm converts infix notation to postfix (Reverse Polish Notation),
-which can then be evaluated with a simple stack-based algorithm.
+Which can then be evaluated with a simple stack-based algorithm.
 
 ```python
 def evaluate_expression(expr):
@@ -407,8 +407,8 @@ def is_valid_parentheses(s):
 **Call Stack:**
 
 Every recursive function call is pushed onto the call stack. Deep recursion can cause stack overflow
-(the call stack has limited size, typically 1-8 MB). Iterative solutions using an explicit stack
-avoid this limit.
+(the call stack has limited size, 1-8 MB). Iterative solutions using an explicit stack
+Avoid this limit.
 
 ## Queues
 
@@ -461,9 +461,9 @@ class CircularQueue:
 :::info
 
 Circular buffers are used pervasively in systems programming: ring buffers for network packet
-queues, audio playback buffers, log rotation, producer-consumer patterns, and pipe implementations.
+Queues, audio playback buffers, log rotation, producer-consumer patterns, and pipe implementations.
 The key advantage is that enqueue and dequeue never require memory allocation or copying — they just
-advance indices modulo the capacity.
+Advance indices modulo the capacity.
 
 :::
 
@@ -486,13 +486,13 @@ d[0]               # O(1) — access by index (slower than list for large deques
 ## Priority Queues
 
 A priority queue supports insertion of elements with associated priorities and extraction of the
-minimum (or maximum) priority element. The standard implementation uses a binary heap.
+Minimum (or maximum) priority element. The standard implementation uses a binary heap.
 
 ### Binary Heap
 
 A binary heap is a complete binary tree where every node is less than or equal to its children
 (min-heap) or greater than or equal to its children (max-heap). Stored as an array where for node at
-index $i$: parent is at $(i-1)/2$, left child is at $2i+1$, right child is at $2i+2$.
+Index $i$: parent is at $(i-1)/2$Left child is at $2i+1$Right child is at $2i+2$.
 
 ```python
 class MinHeap:
@@ -559,18 +559,18 @@ class MinHeap:
             self._sift_down(i)
 ```
 
-| Operation        | Binary Heap | Sorted Array  | Unsorted Array |
+| Operation | Binary Heap | Sorted Array | Unsorted Array |
 | ---------------- | ----------- | ------------- | -------------- |
-| Insert           | $O(\log n)$ | $O(n)$        | $O(1)$         |
-| Extract min      | $O(\log n)$ | $O(1)$        | $O(n)$         |
-| Peek             | $O(1)$      | $O(1)$        | $O(n)$         |
-| Build from array | $O(n)$      | $O(n \log n)$ | $O(1)$         |
+| Insert | $O(\log n)$ | $O(n)$ | $O(1)$ |
+| Extract min | $O(\log n)$ | $O(1)$ | $O(n)$ |
+| Peek | $O(1)$ | $O(1)$ | $O(n)$ |
+| Build from array | $O(n)$ | $O(n \log n)$ | $O(1)$ |
 
 ## Monotonic Stack
 
 A monotonic stack maintains elements in either strictly increasing or strictly decreasing order. It
-is used to find the next greater/lesser element, previous greater/lesser element, and similar
-patterns.
+Is used to find the next greater/lesser element, previous greater/lesser element, and similar
+Patterns.
 
 ### Next Greater Element
 
@@ -621,7 +621,7 @@ def largest_rectangle_histogram(heights):
 ## Monotonic Queue
 
 A monotonic queue (deque) maintains elements in monotonic order and is used for sliding window
-maximum/minimum problems.
+Maximum/minimum problems.
 
 ### Sliding Window Maximum
 
@@ -656,16 +656,16 @@ def sliding_window_maximum(arr, k):
 :::info
 
 The key insight is that elements smaller than the current element and to its left can never be the
-maximum of any future window that includes the current element. Removing them from the deque
-maintains the invariant that the deque contains a decreasing sequence of values, and the maximum is
-always at the front.
+Maximum of any future window that includes the current element. Removing them from the deque
+Maintains the invariant that the deque contains a decreasing sequence of values, and the maximum is
+Always at the front.
 
 :::
 
 ## Union-Find (Disjoint Set Union)
 
 Union-Find is a data structure that tracks a partition of elements into disjoint sets, supporting
-two operations: `find` (which set does an element belong to?) and `union` (merge two sets).
+Two operations: `find` (which set does an element belong to?) and `union` (merge two sets).
 
 ```python
 class UnionFind:
@@ -705,17 +705,17 @@ class UnionFind:
 
 ### Time Complexity
 
-The amortised time complexity of both `find` and `union` is $O(\alpha(n))$, where $\alpha$ is the
-inverse Ackermann function. For all practical values of $n$ (up to $2^{2^{2^{65536}}}$),
+The amortised time complexity of both `find` and `union` is $O(\alpha(n))$Where $\alpha$ is the
+Inverse Ackermann function. For all practical values of $n$ (up to $2^{2^{2^{65536}}}$),
 $\alpha(n) \le 4$. This is effectively constant time.
 
 The two optimisations work together:
 
-- **Path compression**: During `find`, make every node on the path point directly to the root
-- **Union by rank**: During `union`, attach the shorter tree under the root of the taller tree
+- **Path compression**: During `find`Make every node on the path point directly to the root
+- **Union by rank**: During `union`Attach the shorter tree under the root of the taller tree
 
 Without either optimisation, `find` is $O(\log n)$ and `union` is $O(\log n)$. Without both, worst
-case is $O(n)$.
+Case is $O(n)$.
 
 ### Applications
 
@@ -749,8 +749,8 @@ def detect_cycle_undirected(n, edges):
 ### 1. Losing the Head Pointer
 
 The most common linked list bug is modifying the head pointer (e.g., during insertion at head or
-reversal) and losing the reference to the entire list. Always use a dummy head node or return the
-new head explicitly. For operations that might modify the head, use:
+Reversal) and losing the reference to the entire list. Always use a dummy head node or return the
+New head explicitly. For operations that might modify the head, use:
 
 ```python
 dummy = ListNode(0, head)
@@ -767,7 +767,7 @@ Always check for `None` before accessing `.next` or `.val`. The pattern
 ### 3. Using a Stack When a Queue Is Needed (or Vice Versa)
 
 Stacks are LIFO, queues are FIFO. Using the wrong one produces incorrect results for
-ordering-sensitive problems. BFS requires a queue; DFS can use either a stack or recursion.
+Ordering-sensitive problems. BFS requires a queue; DFS can use either a stack or recursion.
 Level-order traversal requires a queue. Expression evaluation uses a stack.
 
 ### 4. Forgetting to Handle the Sentinel in Monotonic Stack/Queue
@@ -779,19 +779,27 @@ Forgetting the sentinel means elements at the end of the array are never process
 ### 5. Union-Find Without Path Compression
 
 Without path compression, Union-Find degrades to $O(\log n)$ per operation. Without union by rank,
-it degrades to $O(n)$ worst case. Always use both optimisations. The code overhead is minimal (3
-extra lines) and the performance difference is enormous for large inputs.
+It degrades to $O(n)$ worst case. Always use both optimisations. The code overhead is minimal (3
+Extra lines) and the performance difference is enormous for large inputs.
 
 ### 6. Stack Overflow from Recursion Depth
 
 Python's default recursion limit is 1000. For linked lists with more than 1000 nodes, recursive
-solutions (recursive reversal, recursive palindrome check) will crash with `RecursionError`. Use
-iterative solutions for production code, or increase the limit with `sys.setrecursionlimit()` if you
-are certain the input size is bounded.
+Solutions (recursive reversal, recursive palindrome check) will crash with `RecursionError`. Use
+Iterative solutions for production code, or increase the limit with `sys.setrecursionlimit()` if you
+Are certain the input size is bounded.
 
 ### 7. Priority Queue Inefficiency for Update Operations
 
 Standard binary heaps do not support efficient decrease-key operations (common in Dijkstra's
-algorithm). The workaround — insert a new entry and ignore stale entries — works but increases the
-heap size. For algorithms that require frequent decrease-key, a Fibonacci heap provides $O(1)$
-amortised decrease-key, but has large constant factors and is rarely used in practice.
+Algorithm). The workaround — insert a new entry and ignore stale entries — works but increases the
+Heap size. For algorithms that require frequent decrease-key, a Fibonacci heap provides $O(1)$
+Amortised decrease-key, but has large constant factors and is rarely used in practice.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -40,7 +40,7 @@ These diagnostic tests target the most challenging content within the A-Level Bi
 ## Unit Tests vs Integration Tests
 
 - **Unit tests (UT)** probe depth of understanding within a single topic. Mastering these confirms your recall and application of core principles.
-- **Integration tests (IT)** require you to combine knowledge from two or more topics. These reflect the style of synoptic questions on A-Level papers and are typically the highest-tariff items.
+- **Integration tests (IT)** require you to combine knowledge from two or more topics. These reflect the style of synoptic questions on A-Level papers and are the highest-tariff items.
 
 ## Key Misconceptions Targeted
 

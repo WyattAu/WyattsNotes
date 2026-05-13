@@ -173,10 +173,22 @@ $ git switch temp-wip
 
 ## Stash Limitations
 
-| Limitation                            | Workaround                                                     |
+| Limitation | Workaround |
 | ------------------------------------- | -------------------------------------------------------------- |
-| Cannot stash merge conflicts          | Resolve conflicts or abort merge first                         |
-| Stashes are not visible in `git log`  | Use `git stash list` and `git stash show -p`                   |
-| Stashes can be accidentally dropped   | Use descriptive messages; reflog retains dropped stashes       |
-| Binary files in stashes take up space | Use `git stash --keep-index` to avoid re-staging binaries      |
-| No automatic expiry                   | Periodically `git stash clear` or `git stash drop` old entries |
+| Cannot stash merge conflicts | Resolve conflicts or abort merge first |
+| Stashes are not visible in `git log` | Use `git stash list` and `git stash show -p` |
+| Stashes can be accidentally dropped | Use descriptive messages; reflog retains dropped stashes |
+| Binary files in stashes take up space | Use `git stash --keep-index` to avoid re-staging binaries |
+| No automatic expiry | Periodically `git stash clear` or `git stash drop` old entries |
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

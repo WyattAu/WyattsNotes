@@ -11,16 +11,16 @@ slug: data-representation
 ---
 ## Board Coverage
 
-| Board      | Paper   | Notes                                         |
+| Board | Paper | Notes |
 | ---------- | ------- | --------------------------------------------- |
-| AQA        | Paper 1 | Measures of location and spread, coding       |
-| Edexcel    | P1      | Similar                                       |
-| OCR (A)    | Paper 1 | Includes outlier detection                    |
-| CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
+| AQA | Paper 1 | Measures of location and spread, coding |
+| Edexcel | P1 | Similar |
+| OCR (A) | Paper 1 | Includes outlier detection |
+| CIE (9709) | P1, P6 | Data handling in P1; further statistics in P6 |
 
 :::info
 You must know when to use the sample variance formula (dividing by $n-1$) versus the
-population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
+Population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
 :::
 
 <hr />
@@ -46,11 +46,11 @@ $$\frac{dS}{da} = -2\sum x_i + 2na$$
 
 Setting $\dfrac{dS}{da} = 0$: $2na = 2\sum x_i \implies a = \dfrac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆ = \bar{x}$.
 
-Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$, so this is a minimum. $\blacksquare$
+Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$So this is a minimum. $\blacksquare$
 
 **Intuition.** The mean is the "centre of mass" of the data. It is the single value that best
-represents all the data points in the sense of least squares — no other value produces a smaller
-total squared error. This is why the mean is the foundation of regression and estimation theory.
+Represents all the data points in the sense of least squares — no other value produces a smaller
+Total squared error. This is why the mean is the foundation of regression and estimation theory.
 
 ### 1.3 Median
 
@@ -62,7 +62,7 @@ The **median** is the middle value when data are arranged in order. For $n$ valu
 ### 1.4 Mode
 
 The **mode** is the most frequently occurring value. A dataset can be unimodal, bimodal, or have no
-mode.
+Mode.
 
 ### 1.5 Comparing measures
 
@@ -71,8 +71,8 @@ mode.
 - The mode is useful for categorical data.
 
 :::warning
-warning
-mean. A few extreme values can pull the mean far from the centre of the data.
+Warning
+Mean. A few extreme values can pull the mean far from the centre of the data.
 :::
 
 <hr />
@@ -104,7 +104,7 @@ $$
 
 :::tip
 This formula is computationally more efficient and is the one you should use in exams. Just
-remember: "mean of squares minus square of mean."
+Remember: "mean of squares minus square of mean."
 :::
 
 ### 2.3 Sample variance
@@ -114,7 +114,7 @@ For sample data, the **unbiased estimator** of the population variance is
 $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 = \frac◆LB◆\sum x_i^2 - n\bar{x}^2◆RB◆◆LB◆n-1◆RB◆$$
 
 The division by $n-1$ (Bessel's correction) accounts for the fact that $\bar{x}$ is estimated from
-the same data, losing one degree of freedom.
+The same data, losing one degree of freedom.
 
 <hr />
 
@@ -133,7 +133,7 @@ The **interquartile range** (IQR) is $Q_3 - Q_1$.
 A box plot displays:
 
 - Minimum and maximum values (or whisker endpoints)
-- $Q_1$, $Q_2$ (median), $Q_3$
+- $Q_1$$Q_2$ (median), $Q_3$
 - The box spans from $Q_1$ to $Q_3$
 - The median is marked inside the box
 
@@ -147,7 +147,7 @@ $$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 Values outside these fences are potential outliers.
 
 :::warning
-warning
+Warning
 Some use $1.5 \times$ IQR, others use different multipliers.
 :::
 
@@ -162,7 +162,7 @@ Some use $1.5 \times$ IQR, others use different multipliers.
 
 ### 4.2 Effect on summary statistics
 
-If $y_i = \dfrac{x_i - a}{c}$, then:
+If $y_i = \dfrac{x_i - a}{c}$Then:
 
 $$\bar{y} = \frac◆LB◆\bar{x} - a◆RB◆◆LB◆c◆RB◆, \qquad \sigma_y = \frac◆LB◆\sigma_x◆RB◆◆LB◆|c|◆RB◆$$
 
@@ -176,8 +176,8 @@ Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
 :::tip
 Coding makes computation easier when data values are large. Always work with coded data to
-find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
-but does not affect the spread.
+Find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
+But does not affect the spread.
 :::
 
 <hr />
@@ -193,7 +193,7 @@ $$\bar{x} = \frac◆LB◆\sum f_i x_i◆RB◆◆LB◆\sum f_i◆RB◆, \qquad \s
 ### 5.2 Grouped continuous data
 
 Use the **midpoint** of each class as the representative value. This introduces an approximation
-since we lose information about the distribution within each class.
+Since we lose information about the distribution within each class.
 
 <hr />
 
@@ -224,9 +224,9 @@ $$S_2 = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
 - $S = 0$: symmetric distribution.
 
 :::info
-info
-useful when quartiles are already known and the standard deviation has not been calculated. Both
-give the same sign of skewness but may differ in magnitude.
+Info
+Useful when quartiles are already known and the standard deviation has not been calculated. Both
+Give the same sign of skewness but may differ in magnitude.
 :::
 
 ### 6.3 Relationship between measures of central tendency
@@ -238,7 +238,7 @@ For a unimodal distribution:
 - **Negatively skewed**: mean $\lt{}$ median $\lt{}$ mode.
 
 The mean is pulled in the direction of the longer tail, while the mode remains at the peak and the
-median lies between them.
+Median lies between them.
 
 <hr />
 
@@ -247,10 +247,10 @@ median lies between them.
 ### 7.1 The IQR method — mild and extreme outliers
 
 As introduced in Section 3.3, the $1.5 \times \mathrm{IQR}$ rule defines fences. Some boards further
-distinguish between mild and extreme outliers:
+Distinguish between mild and extreme outliers:
 
 - **Mild outlier**: a value between $1.5 \times \mathrm{IQR}$ and $3 \times \mathrm{IQR}$ from the
-  nearest quartile.
+ nearest quartile.
 - **Extreme outlier**: a value more than $3 \times \mathrm{IQR}$ from the nearest quartile.
 
 $$\mathrm{Extreme lower fence} = Q_1 - 3 \times \mathrm{IQR}$$
@@ -270,18 +270,18 @@ $$M_i = \frac◆LB◆0.6745\left(x_i - \tilde{x}\right)◆RB◆◆LB◆\mathrm{M
 An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
 
 :::tip
-tip
+Tip
 MAD, which are themselves resistant to outliers. The factor $0.6745$ is the $0.75$-quantile of the
-standard normal distribution, so the modified z-score is on a comparable scale to the standard
-z-score for normally distributed data.
+Standard normal distribution, so the modified z-score is on a comparable scale to the standard
+Z-score for normally distributed data.
 :::
 
 ### 7.3 Choosing an outlier method
 
-| Method             | Strengths                                         | Limitations                             |
+| Method | Strengths | Limitations |
 | ------------------ | ------------------------------------------------- | --------------------------------------- |
-| IQR ($1.5 \times$) | Standard at A-level; easy to apply from quartiles | Less effective with very small samples  |
-| Modified z-score   | Robust to multiple or clustered outliers          | Requires computing the MAD, less common |
+| IQR ($1.5 \times$) | Standard at A-level; easy to apply from quartiles | Less effective with very small samples |
+| Modified z-score | Robust to multiple or clustered outliers | Requires computing the MAD, less common |
 
 <hr />
 
@@ -295,13 +295,13 @@ To construct a box plot:
 2. Draw a rectangular box from $Q_1$ to $Q_3$.
 3. Mark the median $Q_2$ as a line inside the box.
 4. Extend a whisker from $Q_1$ to the smallest data value within the lower fence, and from $Q_3$ to
-   the largest data value within the upper fence.
+ the largest data value within the upper fence.
 5. Plot any values outside the fences as individual points (these are the outliers).
 
 :::warning
-warning
-fences themselves. If no values lie outside the fences, the whiskers extend to the minimum and
-maximum of the dataset.
+Warning
+Fences themselves. If no values lie outside the fences, the whiskers extend to the minimum and
+Maximum of the dataset.
 :::
 
 ### 8.2 Interpreting skewness from a box plot
@@ -324,9 +324,9 @@ When two or more box plots are drawn on the same scale, compare:
 - **Outliers**: does one distribution have more extreme values?
 
 :::warning
-warning
-such as "distribution A has a higher median" is incomplete without also addressing how the spreads
-compare.
+Warning
+Such as "distribution A has a higher median" is incomplete without also addressing how the spreads
+Compare.
 :::
 
 <hr />
@@ -336,7 +336,7 @@ compare.
 ### 9.1 Back-to-back stem-and-leaf diagrams
 
 A **back-to-back stem-and-leaf diagram** places two distributions on either side of a shared stem,
-enabling direct visual comparison of shape, spread, and outliers.
+Enabling direct visual comparison of shape, spread, and outliers.
 
 **Example.** Comparing test scores of two classes (Class A | Stem | Class B):
 
@@ -348,23 +348,23 @@ enabling direct visual comparison of shape, spread, and outliers.
        | 9 | 1 7
 ```
 
-Reading from the diagram: Class A has scores 55, 57, 58, 61, 63, 64, ... while Class B has 53, 54,
+Reading from the diagram: Class A has scores 55, 57, 58, 61, 63, 64, ... While Class B has 53, 54,
 56, 60, 62, 67, ... Both classes share the stem (tens digit), with Class A on the left and Class B
-on the right.
+On the right.
 
 ### 9.2 Cumulative frequency curves
 
 A **cumulative frequency curve** (ogive) plots cumulative frequency against the upper class boundary
-of each group. To compare two distributions:
+Of each group. To compare two distributions:
 
 1. Plot both ogives on the same axes.
 2. Read off medians, quartiles, and percentiles from each curve.
 3. Compare location (medians), spread (IQR), and shape (skewness).
 
 :::tip
-tip
-to the curve, then drop a vertical line to the $x$-axis. The reverse process gives the cumulative
-frequency for a given $x$-value.
+Tip
+To the curve, then drop a vertical line to the $x$-axis. The reverse process gives the cumulative
+Frequency for a given $x$-value.
 :::
 
 ### 9.3 Structuring a comparison
@@ -389,7 +389,7 @@ $p$-th percentile:
 
 $$x_p = L + \left(\frac◆LB◆p \cdot n◆RB◆◆LB◆100◆RB◆ - c_f\right) \cdot \frac{w}{f}$$
 
-where:
+Where:
 
 - $L$ = lower class boundary of the class containing the $p$-th percentile
 - $n$ = total frequency
@@ -409,13 +409,13 @@ $$Q_1 = L + \left(\frac{n}{4} - c_f\right) \cdot \frac{w}{f}, \qquad Q_3 = L + \
 
 Find the median from the following grouped frequency distribution:
 
-| Class                 | Frequency |
+| Class | Frequency |
 | --------------------- | --------- |
-| $0 \lt{} x \le{} 10$  | 5         |
-| $10 \lt{} x \le{} 20$ | 12        |
-| $20 \lt{} x \le{} 30$ | 18        |
-| $30 \lt{} x \le{} 40$ | 8         |
-| $40 \lt{} x \le{} 50$ | 4         |
+| $0 \lt{} x \le{} 10$ | 5 |
+| $10 \lt{} x \le{} 20$ | 12 |
+| $20 \lt{} x \le{} 30$ | 18 |
+| $30 \lt{} x \le{} 40$ | 8 |
+| $40 \lt{} x \le{} 50$ | 4 |
 
 $n = 47$. The median position is $n/2 = 23.5$.
 
@@ -425,8 +425,8 @@ $20 \lt{} x \le{} 30$.
 $$Q_2 = 20 + \left(23.5 - 17\right) \cdot \frac{10}{18} = 20 + 6.5 \cdot \frac{10}{18} = 20 + \frac{65}{18} \approx 23.6$$
 
 :::info
-info
-approximation; the true quantile may differ if the data are not uniformly spread within the class.
+Info
+Approximation; the true quantile may differ if the data are not uniformly spread within the class.
 :::
 
 <hr />
@@ -435,7 +435,7 @@ approximation; the true quantile may differ if the data are not uniformly spread
 
 <details>
 <summary>Problem 1</summary>
-For the dataset $\{3, 5, 7, 2, 8, 4, 6, 5\}$, find the mean, median, and mode.
+For the dataset $\{3, 5, 7, 2, 8, 4, 6, 5\}$Find the mean, median, and mode.
 </details>
 
 <details>
@@ -460,7 +460,7 @@ Find the variance and standard deviation of $\{4, 8, 6, 5, 3, 7, 9, 2\}$ using t
 
 <details>
 <summary>Solution 2</summary>
-$\sum x = 44$, $n = 8$, $\bar{x} = 44/8 = 5.5$.
+$\sum x = 44$$n = 8$$\bar{x} = 44/8 = 5.5$.
 
 $\sum x^2 = 16 + 64 + 36 + 25 + 9 + 49 + 81 + 4 = 284$.
 
@@ -489,12 +489,12 @@ $\sigma_y = \sigma_x/5 = 3 \implies \sigma_x = 15$.
 
 <details>
 <summary>Problem 4</summary>
-For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$, find $Q_1$, $Q_2$, $Q_3$, and the IQR. Identify any outliers.
+For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$Find $Q_1$$Q_2$$Q_3$And the IQR. Identify any outliers.
 </details>
 
 <details>
 <summary>Solution 4</summary>
-$n = 9$ (odd). $Q_2 = 5$th value $= 8$.
+$n = 9$ (odd). $Q_2 = 5$Th value $= 8$.
 
 Lower half: $\{2, 3, 5, 7\}$. $Q_1 = (3+5)/2 = 4$. Upper half: $\{11, 14, 18, 23\}$.
 $Q_3 = (14+18)/2 = 16$.
@@ -503,7 +503,7 @@ $\mathrm{IQR} = 16 - 4 = 12$.
 
 Lower fence: $4 - 1.5(12) = -14$. Upper fence: $16 + 1.5(12) = 34$.
 
-All values are within $[-14, 34]$, so no outliers.
+All values are within $[-14, 34]$So no outliers.
 
 **If you get this wrong, revise:** [Quartiles, IQR, and Box Plots](#3-quartiles-iqr-and-box-plots) —
 Section 3.
@@ -516,11 +516,11 @@ The following frequency table shows the number of goals scored in 20 football ma
 
 | Goals | Frequency |
 | ----- | --------- |
-| 0     | 3         |
-| 1     | 7         |
-| 2     | 5         |
-| 3     | 3         |
-| 4     | 2         |
+| 0 | 3 |
+| 1 | 7 |
+| 2 | 5 |
+| 3 | 3 |
+| 4 | 2 |
 
 </details>
 
@@ -572,7 +572,7 @@ Given that $\bar{x} = 20$ and $\sum(x_i - 20)^2 = 360$ for $n = 10$ observations
 
 <details>
 <summary>Solution 8</summary>
-$\sigma^2 = 360/10 = 36$, so $\sigma = 6$.
+$\sigma^2 = 360/10 = 36$So $\sigma = 6$.
 
 $s^2 = 360/9 = 40$.
 
@@ -603,7 +603,7 @@ Explain why the median is preferred to the mean for measuring average income in 
 
 <details>
 <summary>Solution 10</summary>
-Income distributions are typically right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30\,000$, the mean would be vastly inflated while the median would remain close to $30\,000$.
+Income distributions are right-skewed — a small number of very high earners pull the mean upward. The median, being the middle value, is unaffected by extreme values and gives a more representative "typical" income. For example, if one billionaire lives in a village of 1000 people earning $30\,000$The mean would be vastly inflated while the median would remain close to $30\,000$.
 
 **If you get this wrong, revise:** [Comparing Measures](#15-comparing-measures) — Section 1.5.
 
@@ -611,14 +611,14 @@ Income distributions are typically right-skewed — a small number of very high 
 
 <details>
 <summary>Problem 11</summary>
-For the dataset $\{2, 4, 5, 6, 7, 8, 12, 15, 28\}$, find $Q_1$, $Q_2$, $Q_3$, $\bar{x}$, and $\sigma$. Hence calculate Pearson's first coefficient of skewness and interpret the result.
+For the dataset $\{2, 4, 5, 6, 7, 8, 12, 15, 28\}$Find $Q_1$$Q_2$$Q_3$$\bar{x}$And $\sigma$. Hence calculate Pearson's first coefficient of skewness and interpret the result.
 </details>
 
 <details>
 <summary>Solution 11</summary>
 $n = 9$. Ordered data: $\{2, 4, 5, 6, 7, 8, 12, 15, 28\}$.
 
-$Q_2 = 5$th value $= 7$.
+$Q_2 = 5$Th value $= 7$.
 
 Lower half: $\{2, 4, 5, 6\}$. $Q_1 = (4+5)/2 = 4.5$. Upper half: $\{8, 12, 15, 28\}$.
 $Q_3 = (12+15)/2 = 13.5$.
@@ -627,13 +627,13 @@ $\bar{x} = (2+4+5+6+7+8+12+15+28)/9 = 87/9 = 9.67$.
 
 $\sum x^2 = 4 + 16 + 25 + 36 + 49 + 64 + 144 + 225 + 784 = 1347$.
 
-$\sigma^2 = 1347/9 - 9.67^2 = 149.67 - 93.51 = 56.16$, so $\sigma = 7.49$.
+$\sigma^2 = 1347/9 - 9.67^2 = 149.67 - 93.51 = 56.16$So $\sigma = 7.49$.
 
 Pearson's first coefficient:
 $$S_1 = \frac{3(9.67 - 7)}{7.49} = \frac◆LB◆3 \times 2.67◆RB◆◆LB◆7.49◆RB◆ = \frac{8.01}{7.49} \approx 1.07$$
 
-Since $S_1 \gt{} 0$, the distribution is positively skewed. This is consistent with the right tail
-produced by the value 28.
+Since $S_1 \gt{} 0$The distribution is positively skewed. This is consistent with the right tail
+Produced by the value 28.
 
 **If you get this wrong, revise:** [Skewness](#6-skewness) — Section 6.
 
@@ -641,8 +641,8 @@ produced by the value 28.
 
 <details>
 <summary>Problem 12</summary>
-A box plot shows: minimum = 5, $Q_1 = 12$, $Q_2 = 18$, $Q_3 = 25$, maximum = 34, with one outlier
-at 42. Calculate the IQR, the upper fence, and describe the skewness of the distribution.
+A box plot shows: minimum = 5, $Q_1 = 12$$Q_2 = 18$$Q_3 = 25$Maximum = 34, with one outlier
+At 42. Calculate the IQR, the upper fence, and describe the skewness of the distribution.
 </details>
 
 <details>
@@ -654,7 +654,7 @@ Upper fence $= Q_3 + 1.5 \times \mathrm{IQR} = 25 + 1.5 \times 13 = 25 + 19.5 = 
 Skewness: $Q_3 - Q_2 = 25 - 18 = 7$ and $Q_2 - Q_1 = 18 - 12 = 6$.
 
 Since $7 \gt{} 6$ (and there is an outlier at 42 on the upper side), the distribution is positively
-skewed, though only slightly so from the quartiles alone.
+Skewed, though only slightly so from the quartiles alone.
 
 **If you get this wrong, revise:**
 [Box Plots — Drawing and Interpreting](#8-box-plots--drawing-and-interpreting) — Section 8.
@@ -683,8 +683,8 @@ Compare the distributions of the two classes.
 Class A: $\{43, 47, 49, 54, 55, 58, 60, 62, 66, 74\}$. $n = 10$.
 Median $= (55 + 58)/2 = 56.5$. Range $= 74 - 43 = 31$.
 
-Class B: $\{41, 42, 45, 50, 53, 56, 58, 61, 64, 67, 72, 75, 79, 83, 86\}$. $n = 15$. Median $= 8$th
-value $= 61$. Range $= 86 - 41 = 45$.
+Class B: $\{41, 42, 45, 50, 53, 56, 58, 61, 64, 67, 72, 75, 79, 83, 86\}$. $n = 15$. Median $= 8$Th
+Value $= 61$. Range $= 86 - 41 = 45$.
 
 Comparison:
 
@@ -701,15 +701,15 @@ Section 9.
 <details>
 <summary>Problem 14</summary>
 Estimate the median and interquartile range from the following grouped frequency distribution using
-linear interpolation:
+Linear interpolation:
 
-| Class                 | Frequency |
+| Class | Frequency |
 | --------------------- | --------- |
-| $10 \lt{} x \le{} 20$ | 8         |
-| $20 \lt{} x \le{} 30$ | 15        |
-| $30 \lt{} x \le{} 40$ | 22        |
-| $40 \lt{} x \le{} 50$ | 10        |
-| $50 \lt{} x \le{} 60$ | 5         |
+| $10 \lt{} x \le{} 20$ | 8 |
+| $20 \lt{} x \le{} 30$ | 15 |
+| $30 \lt{} x \le{} 40$ | 22 |
+| $40 \lt{} x \le{} 50$ | 10 |
+| $50 \lt{} x \le{} 60$ | 5 |
 
 </details>
 
@@ -717,16 +717,16 @@ linear interpolation:
 <summary>Solution 14</summary>
 $n = 60$.
 
-**Median** ($n/2 = 30$th value). Cumulative frequencies: 8, 23, 45, 55, 60. The 30th value falls in
-the class $30 \lt{} x \le{} 40$.
+**Median** ($n/2 = 30$Th value). Cumulative frequencies: 8, 23, 45, 55, 60. The 30th value falls in
+The class $30 \lt{} x \le{} 40$.
 
 $$Q_2 = 30 + \left(\frac{60}{2} - 23\right) \cdot \frac{10}{22} = 30 + (30 - 23) \cdot \frac{10}{22} = 30 + 7 \cdot \frac{10}{22} = 30 + \frac{70}{22} \approx 33.18$$
 
-**Lower quartile** ($n/4 = 15$th value). The 15th value falls in $20 \lt{} x \le{} 30$.
+**Lower quartile** ($n/4 = 15$Th value). The 15th value falls in $20 \lt{} x \le{} 30$.
 
 $$Q_1 = 20 + \left(15 - 8\right) \cdot \frac{10}{15} = 20 + 7 \cdot \frac{10}{15} = 20 + \frac{70}{15} \approx 24.67$$
 
-**Upper quartile** ($3n/4 = 45$th value). The 45th value falls in $30 \lt{} x \le{} 40$.
+**Upper quartile** ($3n/4 = 45$Th value). The 45th value falls in $30 \lt{} x \le{} 40$.
 
 $$Q_3 = 30 + \left(45 - 23\right) \cdot \frac{10}{22} = 30 + 22 \cdot \frac{10}{22} = 30 + 10 = 40$$
 
@@ -740,7 +740,7 @@ $\mathrm{IQR} = Q_3 - Q_1 = 40 - 24.67 = 15.33$.
 <details>
 <summary>Problem 15</summary>
 The ordered dataset $\{4, 6, 8, 10, 12, 13, 15, 16, 48\}$ has median 12 and MAD = 4. Use the
-modified z-score method to determine whether the value 48 is an outlier.
+Modified z-score method to determine whether the value 48 is an outlier.
 </details>
 
 <details>
@@ -750,8 +750,8 @@ $\tilde{x} = 12$ (median). $\mathrm{MAD} = 4$.
 For $x = 48$:
 $$M = \frac{0.6745(48 - 12)}{4} = \frac◆LB◆0.6745 \times 36◆RB◆◆LB◆4◆RB◆ = \frac{24.282}{4} = 6.07$$
 
-Since $|M| = 6.07 \gt{} 3.5$, the value 48 is classified as an outlier by the modified z-score
-method.
+Since $|M| = 6.07 \gt{} 3.5$The value 48 is classified as an outlier by the modified z-score
+Method.
 
 **If you get this wrong, revise:** [Outliers in Depth](#7-outliers-in-depth) — Section 7.2.
 
@@ -760,8 +760,8 @@ method.
 <details>
 <summary>Problem 16</summary>
 A grouped frequency distribution has class $50 \lt{} w \le{} 60$ with frequency 14. The cumulative
-frequency below this class is 32, and the total frequency is 80. Use linear interpolation to
-estimate $Q_3$.
+Frequency below this class is 32, and the total frequency is 80. Use linear interpolation to
+Estimate $Q_3$.
 </details>
 
 <details>
@@ -770,7 +770,7 @@ $Q_3$ is at position $3n/4 = 3 \times 80 / 4 = 60$.
 
 The 60th value falls in the class $50 \lt{} w \le{} 60$.
 
-$L = 50$, $c_f = 32$, $f = 14$, $w = 10$.
+$L = 50$$c_f = 32$$f = 14$$w = 10$.
 
 $$Q_3 = 50 + \left(60 - 32\right) \cdot \frac{10}{14} = 50 + 28 \cdot \frac{10}{14} = 50 + \frac{280}{14} = 50 + 20 = 70$$
 
@@ -781,13 +781,13 @@ $$Q_3 = 50 + \left(60 - 32\right) \cdot \frac{10}{14} = 50 + 28 \cdot \frac{10}{
 
 <details>
 <summary>Problem 17</summary>
-For the dataset $\{3, 5, 6, 7, 8, 9, 10, 12, 45\}$, compute both Pearson's first and second
-coefficients of skewness. Do they agree on the direction of skewness?
+For the dataset $\{3, 5, 6, 7, 8, 9, 10, 12, 45\}$Compute both Pearson's first and second
+Coefficients of skewness. Do they agree on the direction of skewness?
 </details>
 
 <details>
 <summary>Solution 17</summary>
-$n = 9$. $Q_2 = 5$th value $= 8$.
+$n = 9$. $Q_2 = 5$Th value $= 8$.
 
 Lower half: $\{3, 5, 6, 7\}$. $Q_1 = (5+6)/2 = 5.5$. Upper half: $\{9, 10, 12, 45\}$.
 $Q_3 = (10+12)/2 = 11$.
@@ -796,7 +796,7 @@ $\bar{x} = (3+5+6+7+8+9+10+12+45)/9 = 105/9 = 11.67$.
 
 $\sum x^2 = 9 + 25 + 36 + 49 + 64 + 81 + 100 + 144 + 2025 = 2533$.
 
-$\sigma^2 = 2533/9 - 11.67^2 = 281.44 - 136.19 = 145.25$, so $\sigma = 12.05$.
+$\sigma^2 = 2533/9 - 11.67^2 = 281.44 - 136.19 = 145.25$So $\sigma = 12.05$.
 
 **Pearson's first coefficient:**
 $$S_1 = \frac{3(11.67 - 8)}{12.05} = \frac{11.01}{12.05} \approx 0.91$$
@@ -805,8 +805,8 @@ $$S_1 = \frac{3(11.67 - 8)}{12.05} = \frac{11.01}{12.05} \approx 0.91$$
 $$S_2 = \frac◆LB◆11 + 5.5 - 2 \times 8◆RB◆◆LB◆11 - 5.5◆RB◆ = \frac{16.5 - 16}{5.5} = \frac{0.5}{5.5} \approx 0.09$$
 
 Both coefficients are positive, so they agree on positive skew. However, $S_1$ is much larger
-because the mean (11.67) is strongly pulled by the outlier 45, whereas $S_2$ depends only on the
-quartiles, which are less affected by that extreme value.
+Because the mean (11.67) is strongly pulled by the outlier 45, whereas $S_2$ depends only on the
+Quartiles, which are less affected by that extreme value.
 
 **If you get this wrong, revise:** [Skewness](#6-skewness) — Section 6.
 
@@ -835,3 +835,15 @@ Ready to test your understanding of **Data Representation**? The [diagnostic tes
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

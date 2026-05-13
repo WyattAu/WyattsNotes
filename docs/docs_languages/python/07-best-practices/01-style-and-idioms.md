@@ -12,27 +12,27 @@ slug: style-and-idioms
 
 Python's design philosophy famously states that "there should be one-- and preferably only one
 --obvious way to do it." This is not merely aesthetic guidance. In a language where indentation is
-syntactically significant, where dynamic typing defers error detection, and where the same
-abstraction can be expressed through functions, classes, generators, or metaclasses, consistent
-style is what makes large codebases maintainable. A Python project without enforced style
-conventions will inevitably fracture into incompatible dialects as different contributors make
-different implicit choices about naming, structure, and error handling.
+Syntactically significant, where dynamic typing defers error detection, and where the same
+Abstraction can be expressed through functions, classes, generators, or metaclasses, consistent
+Style is what makes large codebases maintainable. A Python project without enforced style
+Conventions will inevitably fracture into incompatible dialects as different contributors make
+Different implicit choices about naming, structure, and error handling.
 
 The practical consequences are severe: inconsistent code is harder to review, harder to refactor,
-and harder to onboard new contributors into. The tools and conventions described in this document
-exist to eliminate these problems at the mechanical level, freeing developers to focus on logic
-rather than formatting.
+And harder to onboard new contributors into. The tools and conventions described in this document
+Exist to eliminate these problems at the mechanical level, freeing developers to focus on logic
+Rather than formatting.
 
 ## PEP 8 Essentials
 
 [PEP 8](https://peps.python.org/pep-0008/) is the foundational style guide for Python code. It is a
-community standard, not a language mandate -- the Python interpreter does not enforce any of these
-rules. This means enforcement depends entirely on tooling and team discipline.
+Community standard, not a language mandate -- the Python interpreter does not enforce any of these
+Rules. This means enforcement depends entirely on tooling and team discipline.
 
 ### Naming Conventions
 
 Naming conventions exist so that a reader can determine the role of a name from its form alone,
-without needing to look up its definition.
+Without needing to look up its definition.
 
 ```python
 # Module names: short, lowercase, no underscores for readability if single word
@@ -84,22 +84,22 @@ class Derived(Base):
 ```
 
 The distinction between `_private` and `__mangled` is worth understanding precisely. A single
-leading underscore is a convention that signals "this is an implementation detail, don't use it from
-outside the class." It is not enforced by the interpreter -- any code can access `_private`
-attributes freely. A double leading underscore triggers name mangling: the interpreter rewrites
-`__name` to `_ClassName__name`, which makes it harder (but not impossible) to accidentally access
-from subclasses.
+Leading underscore is a convention that signals "this is an implementation detail, don't use it from
+Outside the class." It is not enforced by the interpreter -- any code can access `_private`
+Attributes freely. A double leading underscore triggers name mangling: the interpreter rewrites
+`__name` to `_ClassName__name`Which makes it harder (but not impossible) to accidentally access
+From subclasses.
 
 ### Line Length and Formatting
 
 PEP 8 recommends a maximum line length of 79 characters for code and 72 for docstrings. These limits
-originate from the era of 80-column terminals and side-by-side diff reviews. Many modern teams use
+Originate from the era of 80-column terminals and side-by-side diff reviews. Many modern teams use
 88 or 100 characters instead (88 is the default in Black, chosen because it fits more code without
-significantly reducing readability on modern displays).
+Significantly reducing readability on modern displays).
 
 The key insight is that the specific number matters less than having a consistent limit enforced by
-tooling. Arguments over 79 vs 88 vs 120 are less productive than just picking one and running a
-formatter.
+Tooling. Arguments over 79 vs 88 vs 120 are less productive than just picking one and running a
+Formatter.
 
 ```python
 # Implicit line continuation inside brackets -- the preferred way
@@ -144,8 +144,8 @@ if (
 ### Imports
 
 Imports should be grouped in three sections separated by blank lines, in this order: standard
-library, third-party packages, local application modules. Within each group, imports should be
-sorted alphabetically. `isort` and `ruff` enforce this automatically.
+Library, third-party packages, local application modules. Within each group, imports should be
+Sorted alphabetically. `isort` and `ruff` enforce this automatically.
 
 ```python
 # Standard library
@@ -189,9 +189,9 @@ from myapp.models import User
 ## Type Annotations
 
 Type annotations make contracts between code units explicit. In a dynamically-typed language, they
-are the most cost-effective tool for preventing a large class of bugs: passing the wrong type to a
-function, returning an inconsistent type from a method, or misinterpreting the shape of a data
-structure.
+Are the most cost-effective tool for preventing a large class of bugs: passing the wrong type to a
+Function, returning an inconsistent type from a method, or misinterpreting the shape of a data
+Structure.
 
 ### Basic Annotations
 
@@ -274,22 +274,22 @@ def render_all(objects: list[Drawable], surface: Any) -> None:
 ### When to Use `# type: ignore`
 
 The `# type: ignore` comment should be a last resort, used only when the type checker is genuinely
-wrong and the code is correct. Every `# type: ignore` should have a brief explanation:
+Wrong and the code is correct. Every `# type: ignore` should have a brief explanation:
 
 ```python
 result = complex_third_party_function(data)  # type: ignore[return-value]  # bug in library stubs
 ```
 
 If you find yourself writing `# type: ignore` frequently, the problem is likely with your type
-annotations or the library's stubs, not the type checker. File issues upstream or contribute fixes
-to `typeshed`.
+Annotations or the library's stubs, not the type checker. File issues upstream or contribute fixes
+To `typeshed`.
 
 ## Virtual Environments
 
 A virtual environment is an isolated Python installation directory that contains its own interpreter
-executable and its own `site-packages` directory. Without virtual environments, every project on a
-system shares the same global `site-packages`, which means installing a package for one project can
-break another project that depends on a different version of the same package.
+Executable and its own `site-packages` directory. Without virtual environments, every project on a
+System shares the same global `site-packages`Which means installing a package for one project can
+Break another project that depends on a different version of the same package.
 
 ```bash
 # Create a virtual environment
@@ -315,21 +315,21 @@ deactivate
 ### Why Not Use the System Python
 
 The system Python is managed by the OS package manager (apt, brew, etc.). Installing packages into
-it with `pip` can overwrite files that the OS depends on. More importantly, the system Python's
-package versions are pinned to whatever the OS distributor chose, which may conflict with your
-project's requirements. Virtual environments eliminate both problems.
+It with `pip` can overwrite files that the OS depends on. More importantly, the system Python's
+Package versions are pinned to whatever the OS distributor chose, which may conflict with your
+Project's requirements. Virtual environments eliminate both problems.
 
 ### venv vs conda vs pyenv
 
-| Tool    | Purpose                                      | Isolation Scope                                         |
+| Tool | Purpose | Isolation Scope |
 | ------- | -------------------------------------------- | ------------------------------------------------------- |
-| `venv`  | Creates virtual environments                 | Python packages only                                    |
+| `venv` | Creates virtual environments | Python packages only |
 | `conda` | Manages environments with multiple languages | Python + non-Python dependencies (C libraries, R, Node) |
-| `pyenv` | Installs multiple Python versions            | Python interpreters only (no package isolation)         |
+| `pyenv` | Installs multiple Python versions | Python interpreters only (no package isolation) |
 
 For most Python projects, `venv` is sufficient. Use `conda` when your project depends on non-Python
-scientific libraries (NumPy, SciPy) that need specific C/Fortran compilers. Use `pyenv` when you
-need to test against multiple Python interpreter versions.
+Scientific libraries (NumPy, SciPy) that need specific C/Fortran compilers. Use `pyenv` when you
+Need to test against multiple Python interpreter versions.
 
 ## Dependency Management
 
@@ -351,13 +351,13 @@ pip freeze > requirements-lock.txt  # pin all transitive deps
 
 **Limitations:** `requirements.txt` does not distinguish between direct and transitive dependencies.
 It cannot specify metadata like entry points, optional dependency groups, or build system
-requirements. It provides no mechanism for managing development vs production dependency groups.
+Requirements. It provides no mechanism for managing development vs production dependency groups.
 
 ### pyproject.toml and Modern Tooling
 
 PEP 517 and PEP 621 established `pyproject.toml` as the single source of truth for project metadata,
-build configuration, dependency specification, and tool configuration. It replaces the fragmented
-ecosystem of `setup.py`, `setup.cfg`, `requirements.txt`, `tox.ini`, `.flake8`, `.mypy.ini`, and
+Build configuration, dependency specification, and tool configuration. It replaces the fragmented
+Ecosystem of `setup.py``setup.cfg``requirements.txt``tox.ini``.flake8``.mypy.ini`And
 `.isort.cfg` with one file.
 
 ```toml
@@ -407,39 +407,39 @@ addopts = "-v --tb=short"
 
 ### Poetry vs PDM vs uv
 
-| Feature            | Poetry                        | PDM                           | uv                   |
+| Feature | Poetry | PDM | uv |
 | ------------------ | ----------------------------- | ----------------------------- | -------------------- |
-| Lock file          | `poetry.lock`                 | `pdm.lock`                    | `uv.lock`            |
-| Resolver speed     | Slow (Python implementation)  | Medium (Rust-based since 2.x) | Fast (Rust-based)    |
-| PEP 621 compliance | Partial (own metadata format) | Full                          | Full                 |
-| Package manager    | pip (via virtualenv)          | pip (via virtualenv)          | Own installer (Rust) |
-| Workspace support  | Yes                           | Yes                           | Yes                  |
-| Build backend      | poetry-core                   | pdm-backend                   | hatchling (default)  |
+| Lock file | `poetry.lock` | `pdm.lock` | `uv.lock` |
+| Resolver speed | Slow (Python implementation) | Medium (Rust-based since 2.x) | Fast (Rust-based) |
+| PEP 621 compliance | Partial (own metadata format) | Full | Full |
+| Package manager | pip (via virtualenv) | pip (via virtualenv) | Own installer (Rust) |
+| Workspace support | Yes | Yes | Yes |
+| Build backend | poetry-core | pdm-backend | hatchling (default) |
 
 ### WHY pyproject.toml Over setup.py
 
 `setup.py` has several fundamental problems:
 
-1. **Execution at import time.** `setup.py` is executed by running `python setup.py`, which means
-   arbitrary code runs during package inspection. This makes it impossible to safely determine a
-   package's metadata without executing potentially malicious code. PEP 517 solved this by defining
-   a standard interface where the build frontend tells the build backend what to do via subprocess
-   calls, rather than executing the project's code directly.
+1. **Execution at import time.** `setup.py` is executed by running `python setup.py`Which means
+ arbitrary code runs during package inspection. This makes it impossible to safely determine a
+ package's metadata without executing potentially malicious code. PEP 517 solved this by defining
+ a standard interface where the build frontend tells the build backend what to do via subprocess
+ calls, rather than executing the project's code directly.
 
-2. **Scattered configuration.** Before `pyproject.toml`, project metadata lived in `setup.py` or
-   `setup.cfg`, tool configuration lived in `.flake8`, `.mypy.ini`, `.isort.cfg`, `tox.ini`,
-   `pytest.ini`, `MANIFEST.in`, and `pyproject.toml` (for build system). A single project could have
-   ten or more configuration files. `pyproject.toml` consolidates all tool configuration under
-   `[tool.*]` sections.
+2. **Scattered configuration.** Before `pyproject.toml`Project metadata lived in `setup.py` or
+ `setup.cfg`Tool configuration lived in `.flake8``.mypy.ini``.isort.cfg``tox.ini`
+ `pytest.ini``MANIFEST.in`And `pyproject.toml` (for build system). A single project could have
+ ten or more configuration files. `pyproject.toml` consolidates all tool configuration under
+ `[tool.*]` sections.
 
 3. **No standard dependency format.** `install_requires` in `setup.py` and `requirements.txt` used
-   different formats. `pyproject.toml` provides `[project.dependencies]` and
-   `[project.optional-dependencies]` as the standard format.
+ different formats. `pyproject.toml` provides `[project.dependencies]` and
+ `[project.optional-dependencies]` as the standard format.
 
 4. **Dynamic vs static metadata.** `setup.py` encourages dynamic metadata generation (computing the
-   version from git tags, reading README files at build time), which makes it impossible to
-   determine the package's metadata without executing code. PEP 621 defines static metadata fields
-   in `pyproject.toml` that can be read without execution.
+ version from git tags, reading README files at build time), which makes it impossible to
+ determine the package's metadata without executing code. PEP 621 defines static metadata fields
+ in `pyproject.toml` that can be read without execution.
 
 `setup.py` is still supported for backward compatibility, but new projects should use
 `pyproject.toml` exclusively.
@@ -482,20 +482,20 @@ myproject/
 ### WHY src Layout Over Flat Layout
 
 The `src` layout places the importable package inside a `src/` directory. This seems like
-unnecessary nesting, but it solves a subtle and serious problem.
+Unnecessary nesting, but it solves a subtle and serious problem.
 
 When you run `pip install -e .` (editable install) with a flat layout, Python adds the project root
-to `sys.path`. This means `import myproject` resolves to the local directory **before** any
-installed version. If you have `requests` installed globally and also have a file called
+To `sys.path`. This means `import myproject` resolves to the local directory **before** any
+Installed version. If you have `requests` installed globally and also have a file called
 `requests.py` in your project root, your local file shadows the real package. This can cause
-extremely confusing import errors, especially when the shadowing only happens during testing
+Extremely confusing import errors, especially when the shadowing only happens during testing
 (because test runners often add the project root to `sys.path`).
 
-The `src` layout prevents this entirely. The project root is on `sys.path`, but there is no
+The `src` layout prevents this entirely. The project root is on `sys.path`But there is no
 `myproject/` directory at the root -- it is nested inside `src/`. The only way to import `myproject`
-is through the installed package entry in `site-packages`, which points to `src/myproject/` via a
+Is through the installed package entry in `site-packages`Which points to `src/myproject/` via a
 `.pth` file or symlink. This guarantees that imports are always resolved through the installed
-package, exactly as they would be in production.
+Package, exactly as they would be in production.
 
 ```python
 # With flat layout, this can happen during testing:
@@ -511,8 +511,8 @@ import myproject.models  # resolves to .venv/lib/.../myproject/models.py (instal
 ```
 
 A secondary benefit: the `src` layout makes it obvious which files are part of the package and which
-are project configuration. Everything under `src/` is package code. Everything at the root is
-project infrastructure.
+Are project configuration. Everything under `src/` is package code. Everything at the root is
+Project infrastructure.
 
 ### Recommended Directory Structure
 
@@ -543,9 +543,9 @@ myproject/
 ### Why pytest Over unittest
 
 The standard library `unittest` framework uses class-based test organization with verbose assertion
-methods (`self.assertEqual`, `self.assertTrue`, `self.assertRaises`). `pytest` uses plain functions
-with native `assert` statements and provides powerful features like parametrized tests, fixtures,
-and plugin-based discovery -- all without requiring inheritance from a test base class.
+Methods (`self.assertEqual``self.assertTrue``self.assertRaises`). `pytest` uses plain functions
+With native `assert` statements and provides powerful features like parametrized tests, fixtures,
+And plugin-based discovery -- all without requiring inheritance from a test base class.
 
 ```python
 # unittest style -- verbose and rigid
@@ -570,12 +570,12 @@ def test_divide_by_zero():
 
 The `assert` statement in pytest is rewritten at import time to provide detailed failure messages.
 When `assert x == y` fails, pytest displays the values of `x` and `y` automatically, without any
-special assertion methods.
+Special assertion methods.
 
 ### Fixtures
 
 Fixtures are pytest's dependency injection system. They provide a reusable way to set up and tear
-down test resources.
+Down test resources.
 
 ```python
 import pytest
@@ -612,18 +612,18 @@ def test_user_update(db_session, sample_user):
 
 Fixtures have scopes that control when they are created and torn down:
 
-| Scope      | Created once per... | Common use                              |
+| Scope | Created once per... | Common use |
 | ---------- | ------------------- | --------------------------------------- |
-| `function` | test function       | Database sessions, mock objects         |
-| `class`    | test class          | Shared class-level setup                |
-| `module`   | test module         | Expensive resources (Docker containers) |
-| `package`  | test package        | Package-level state                     |
-| `session`  | test run            | Global services, process-level state    |
+| `function` | test function | Database sessions, mock objects |
+| `class` | test class | Shared class-level setup |
+| `module` | test module | Expensive resources (Docker containers) |
+| `package` | test package | Package-level state |
+| `session` | test run | Global services, process-level state |
 
 ### Parametrize
 
 Parametrized tests replace copy-pasted test functions with a data-driven approach. One test function
-can cover dozens of input combinations.
+Can cover dozens of input combinations.
 
 ```python
 import pytest
@@ -669,9 +669,9 @@ def test_external_api_call():
 ```
 
 Mocking has a critical danger: if you mock the wrong path, your test can pass even when the real
-code is broken. Always mock at the boundary where the dependency is used, not where it is defined.
-If `services.py` imports `httpx`, mock `myproject.services.httpx` (where it is used), not `httpx`
-directly (where it is defined).
+Code is broken. Always mock at the boundary where the dependency is used, not where it is defined.
+If `services.py` imports `httpx`Mock `myproject.services.httpx` (where it is used), not `httpx`
+Directly (where it is defined).
 
 ### Coverage
 
@@ -684,9 +684,9 @@ pytest --cov=myproject --cov-fail-under=80 tests/
 ```
 
 Coverage is a useful metric, but treat it as a minimum bar, not a quality target. 100% coverage does
-not mean bug-free code -- it means every line was executed, not that every meaningful input
-combination was tested. Conversely, 60% coverage on a well-tested critical path is more valuable
-than 95% coverage achieved by testing trivial getters and setters.
+Not mean bug-free code -- it means every line was executed, not that every meaningful input
+Combination was tested. Conversely, 60% coverage on a well-tested critical path is more valuable
+Than 95% coverage achieved by testing trivial getters and setters.
 
 ### Configuration
 
@@ -709,41 +709,41 @@ markers = [
 
 ### Comparison of Linting and Formatting Tools
 
-| Tool             | Language          | Checks                                  | Formatter                   | Speed                      | Notes                                               |
+| Tool | Language | Checks | Formatter | Speed | Notes |
 | ---------------- | ----------------- | --------------------------------------- | --------------------------- | -------------------------- | --------------------------------------------------- |
-| **ruff**         | Rust              | Flake8 + isort + pydocstyle + many more | Built-in (Black-compatible) | Very fast (10-100x flake8) | Replaces flake8, isort, Black, pydocstyle, and more |
-| **flake8**       | Python            | PEP 8 + pycodestyle + pyflakes          | No                          | Slow                       | Requires plugins for isort, Black, etc.             |
-| **pylint**       | Python            | Deep analysis, refactoring suggestions  | No                          | Very slow                  | Many false positives; highly configurable           |
-| **Black**        | Python            | Formatting only                         | Yes                         | Medium                     | Uncompromising formatting; no linting               |
-| **isort**        | Python            | Import sorting only                     | Yes                         | Medium                     | Replaced by ruff's import sorting                   |
-| **mypy**         | Python            | Static type checking                    | No                          | Medium                     | Reference type checker                              |
-| **pyright**      | TypeScript/Python | Static type checking                    | No                          | Fast                       | Microsoft's type checker; stricter by default       |
-| **basedpyright** | TypeScript/Python | Static type checking                    | No                          | Fast                       | Fork of pyright with additional features            |
+| **ruff** | Rust | Flake8 + isort + pydocstyle + many more | Built-in (Black-compatible) | Very fast (10-100x flake8) | Replaces flake8, isort, Black, pydocstyle, and more |
+| **flake8** | Python | PEP 8 + pycodestyle + pyflakes | No | Slow | Requires plugins for isort, Black, etc. |
+| **pylint** | Python | Deep analysis, refactoring suggestions | No | Very slow | Many false positives; highly configurable |
+| **Black** | Python | Formatting only | Yes | Medium | Uncompromising formatting; no linting |
+| **isort** | Python | Import sorting only | Yes | Medium | Replaced by ruff's import sorting |
+| **mypy** | Python | Static type checking | No | Medium | Reference type checker |
+| **pyright** | TypeScript/Python | Static type checking | No | Fast | Microsoft's type checker; stricter by default |
+| **basedpyright** | TypeScript/Python | Static type checking | No | Fast | Fork of pyright with additional features |
 
 ### WHY Ruff Over flake8/pylint
 
 `ruff` replaces an entire pipeline of separate tools (flake8, isort, Black, pydocstyle, pyupgrade,
-and dozens of flake8 plugins) with a single Rust binary. The practical advantages are:
+And dozens of flake8 plugins) with a single Rust binary. The practical advantages are:
 
 1. **Speed.** `ruff` is 10-100x faster than flake8 because it is written in Rust. On a large
-   codebase, `ruff` completes in milliseconds where flake8 takes seconds. This makes it practical to
-   run on every file save in an editor, providing instant feedback.
+ codebase, `ruff` completes in milliseconds where flake8 takes seconds. This makes it practical to
+ run on every file save in an editor, providing instant feedback.
 
 2. **No plugin management.** With flake8, each additional check requires installing and configuring
-   a separate plugin (flake8-bugbear, flake8-comprehensions, flake8-simplify, etc.). Each plugin has
-   its own version constraints and configuration format. `ruff` includes equivalent rules for all of
-   these out of the box, selectable via rule codes.
+ a separate plugin (flake8-bugbear, flake8-comprehensions, flake8-simplify, etc.). Each plugin has
+ its own version constraints and configuration format. `ruff` includes equivalent rules for all of
+ these out of the box, selectable via rule codes.
 
 3. **Unified configuration.** `ruff` is configured entirely through `pyproject.toml`. There is no
-   separate `.flake8`, `.isort.cfg`, or `pyproject.toml` `[tool.black]` section. One tool, one
-   configuration block.
+ separate `.flake8``.isort.cfg`Or `pyproject.toml` `[tool.black]` section. One tool, one
+ configuration block.
 
 4. **Built-in formatting.** `ruff format` is compatible with Black's formatting style (and can be
-   configured to diverge where desired). This eliminates the need to run Black as a separate step.
+ configured to diverge where desired). This eliminates the need to run Black as a separate step.
 
 5. **Autofix.** `ruff` can automatically fix many issues (`ruff check --fix`), including import
-   sorting, unused imports, and simple refactoring suggestions. This reduces the cycle of "run
-   linter, see errors, manually fix, re-run linter."
+ sorting, unused imports, and simple refactoring suggestions. This reduces the cycle of "run
+ linter, see errors, manually fix, re-run linter."
 
 ```toml
 # pyproject.toml
@@ -786,9 +786,9 @@ typeCheckingMode = "strict"
 ```
 
 Run both in CI. `mypy` and `pyright` catch different categories of errors. `mypy` is more permissive
-by default (even in `strict` mode), while `pyright` is more aggressive about catching potential
+By default (even in `strict` mode), while `pyright` is more aggressive about catching potential
 `None` dereferences and type narrowing edge cases. When both pass, you have high confidence in your
-type annotations.
+Type annotations.
 
 ```bash
 mypy src/
@@ -800,10 +800,10 @@ pyright src/
 ### Exceptions Over Return Codes
 
 Python uses exceptions for error handling, not return codes. This is a fundamental design choice:
-exceptions propagate automatically through the call stack, while return codes require explicit
-checking at every level. A function ten frames deep that encounters an error cannot communicate it
-to the caller through a return value without every intermediate function explicitly checking and
-re-raising.
+Exceptions propagate automatically through the call stack, while return codes require explicit
+Checking at every level. A function ten frames deep that encounters an error cannot communicate it
+To the caller through a return value without every intermediate function explicitly checking and
+Re-raising.
 
 ```python
 # Bad: return code pattern (Java/C style, un-Pythonic)
@@ -901,9 +901,9 @@ Use `raise ... from None` to suppress the original exception's traceback when it
 ### The Problem Context Managers Solve
 
 When a function acquires a resource (file handle, database connection, network socket, lock), it
-must release that resource regardless of whether the function completes normally or raises an
-exception. Manual release requires a `try/finally` block, which is verbose and error-prone -- it is
-easy to forget the `finally` clause.
+Must release that resource regardless of whether the function completes normally or raises an
+Exception. Manual release requires a `try/finally` block, which is verbose and error-prone -- it is
+Easy to forget the `finally` clause.
 
 ```python
 # Manual resource management -- verbose and easy to forget
@@ -1006,7 +1006,7 @@ with closing(urllib.request.urlopen("https://example.com")) as response:
 
 Unit tests verify that a function produces the correct output for specific, hand-picked inputs.
 Property-based testing verifies that a function satisfies a property for **arbitrary** inputs
-generated automatically. This finds edge cases that a human tester would never think to write.
+Generated automatically. This finds edge cases that a human tester would never think to write.
 
 ```python
 from hypothesis import given, strategies as st, assume
@@ -1063,9 +1063,9 @@ def test_encode_decode_roundtrip(text):
 
 The key insight of property-based testing is that you identify **properties** of your code
 (invariants, round-trip behaviors, idempotency) rather than specific input/output pairs. The testing
-framework then generates thousands of random inputs and verifies that the property holds for all of
-them. When a failure is found, Hypothesis automatically minimizes the failing input to the smallest
-counterexample, making it easy to understand and fix the bug.
+Framework then generates thousands of random inputs and verifies that the property holds for all of
+Them. When a failure is found, Hypothesis automatically minimizes the failing input to the smallest
+Counterexample, making it easy to understand and fix the bug.
 
 ## Docstrings
 
@@ -1156,10 +1156,10 @@ def parse_config(path):
 ### Which Style to Choose
 
 Pick one style and apply it consistently across the entire project. Google style is the most
-readable for documentation generated by tools like Sphinx (with the Napoleon extension) or MkDocs
+Readable for documentation generated by tools like Sphinx (with the Napoleon extension) or MkDocs
 (with the mkdocstrings plugin). NumPy style is standard in scientific computing. Sphinx style is the
-oldest and most verbose. All three convey the same information; the differences are purely
-formatting.
+Oldest and most verbose. All three convey the same information; the differences are purely
+Formatting.
 
 ## Packaging
 
@@ -1206,12 +1206,12 @@ Repository = "https://github.com/janedoe/myapp"
 
 ### Build Backends
 
-| Backend       | Maintainer | Notes                                                         |
+| Backend | Maintainer | Notes |
 | ------------- | ---------- | ------------------------------------------------------------- |
-| `hatchling`   | Hatch      | Simple, fast, good default choice                             |
-| `setuptools`  | pypa       | Legacy; still widely used, supports setup.py fallback         |
-| `flit-core`   | flit       | Minimal; for pure-Python packages with no complex build needs |
-| `pdm-backend` | PDM        | PEP 621 compliant; good for complex packages                  |
+| `hatchling` | Hatch | Simple, fast, good default choice |
+| `setuptools` | pypa | Legacy; still widely used, supports setup.py fallback |
+| `flit-core` | flit | Minimal; for pure-Python packages with no complex build needs |
+| `pdm-backend` | PDM | PEP 621 compliant; good for complex packages |
 
 ### Build and Publish
 
@@ -1234,7 +1234,7 @@ python -m build --upload
 ### setup.py Legacy
 
 `setup.py` still exists in many projects and is required by some older tools. If you encounter it,
-you should understand what it does, but you should not create new projects with it.
+You should understand what it does, but you should not create new projects with it.
 
 ```python
 # Legacy setup.py -- do not use for new projects
@@ -1253,25 +1253,25 @@ setup(
 
 This file has three problems that `pyproject.toml` solves: it requires execution to read metadata
 (security risk), it mixes logic with declaration (the `setup()` call can contain arbitrary Python
-code), and it cannot store tool configuration. Migrate to `pyproject.toml` when you encounter
+Code), and it cannot store tool configuration. Migrate to `pyproject.toml` when you encounter
 `setup.py` in existing projects.
 
 ## Putting It All Together
 
 A well-configured Python project uses these tools in concert. The development workflow looks like
-this:
+This:
 
 1. **Editor integration.** Your editor runs `ruff` on save for instant linting and formatting
-   feedback. It runs `pyright` or `mypy` in the background for type checking.
+ feedback. It runs `pyright` or `mypy` in the background for type checking.
 
-2. **Pre-commit hooks.** `pre-commit` runs `ruff check --fix`, `ruff format`, `mypy`, and `pytest`
-   before every commit, preventing violations from entering the repository.
+2. **Pre-commit hooks.** `pre-commit` runs `ruff check --fix``ruff format``mypy`And `pytest`
+ before every commit, preventing violations from entering the repository.
 
-3. **CI pipeline.** GitHub Actions runs the full suite: `ruff check`, `ruff format --check`, `mypy`,
-   `pytest --cov`, and any integration tests. The pipeline fails if any step fails.
+3. **CI pipeline.** GitHub Actions runs the full suite: `ruff check``ruff format --check``mypy`
+ `pytest --cov`And any integration tests. The pipeline fails if any step fails.
 
 4. **Dependency management.** Dependencies are declared in `pyproject.toml` and locked in `uv.lock`
-   (or `poetry.lock`). The lock file ensures reproducible installs across all environments.
+ (or `poetry.lock`). The lock file ensures reproducible installs across all environments.
 
 ```yaml
 # .github/workflows/ci.yml
@@ -1294,6 +1294,18 @@ jobs:
 ```
 
 This layered approach catches problems at the earliest possible stage: the editor catches them as
-you type, pre-commit catches them before they are committed, and CI catches anything that slips
-through both. The result is a codebase where style violations, type errors, and failing tests are
-fixed immediately, not discovered weeks later during code review.
+You type, pre-commit catches them before they are committed, and CI catches anything that slips
+Through both. The result is a codebase where style violations, type errors, and failing tests are
+Fixed immediately, not discovered weeks later during code review.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

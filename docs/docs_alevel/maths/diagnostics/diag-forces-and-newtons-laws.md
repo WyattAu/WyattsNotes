@@ -21,11 +21,11 @@ A block of mass $8$ kg rests on a rough horizontal surface. The coefficient of f
 
 **(b)** When $P = 20$ N, find the magnitude and direction of the frictional force acting on the block.
 
-**(c)** A student, upon seeing the value $\mu = 0.4$, immediately writes $F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force $P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student overestimates the friction.
+**(c)** A student, upon seeing the value $\mu = 0.4$Immediately writes $F = \mu R = 0.4 \times 78.4 = 31.36$ N for the frictional force, regardless of the applied force $P$. Explain why this is incorrect for $P = 20$ N, and calculate the percentage by which the student overestimates the friction.
 
 **(d)** The force $P$ is now applied at an angle of $30°$ above the horizontal. Find the maximum value of $P$ for which the block remains in equilibrium, and explain why this maximum is greater than the answer in part (a).
 
-[Difficulty: hard. Tests the critical distinction between $F \leq \mu R$ and $F = \mu R$, requiring the student to recognise when friction is not at its limiting value, and how an angled force changes the normal reaction.]
+[Difficulty: hard. Tests the critical distinction between $F \leq \mu R$ and $F = \mu R$Requiring the student to recognise when friction is not at its limiting value, and how an angled force changes the normal reaction.]
 
 **Solution:**
 
@@ -47,7 +47,7 @@ $$F = P = 20 \text{ N}$$
 
 The frictional force acts in the direction opposite to $P$ (i.e., opposing the tendency to move).
 
-**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $P = 20 \text{ N} \lt 31.36 \text{ N}$, so the block is not even close to sliding. The friction adjusts to match the applied force.
+**(c)** The student writes $F = 31.36$ N, but the actual friction is only $20$ N. The student has assumed the block is on the point of sliding, but $P = 20 \text{ N} \lt 31.36 \text{ N}$So the block is not even close to sliding. The friction adjusts to match the applied force.
 
 $$\text{Percentage overestimate} = \frac{31.36 - 20}{20} \times 100\% = 56.8\%$$
 
@@ -63,7 +63,7 @@ $$0.866P = 31.36 - 0.2P$$
 
 $$1.066P = 31.36 \implies P = \frac{31.36}{1.066} \approx 29.42 \text{ N}$$
 
-This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$, the reduction in $R$ means the maximum available horizontal force is reduced overall.
+This is **less** than $31.36$ N, not greater. Applying the force at an angle above the horizontal reduces the normal reaction ($R = 78.4 - 0.5P \lt 78.4$), which in turn reduces the maximum friction. Although the horizontal component of $P$ is only $P\cos 30° \approx 0.866P$The reduction in $R$ means the maximum available horizontal force is reduced overall.
 
 ---
 
@@ -77,7 +77,7 @@ Two particles $A$ (mass $5$ kg) and $B$ (mass $3$ kg) are connected by a light i
 
 **(b)** If the system does move, find the speed of $B$ when it has descended $1.5$ m.
 
-**(c)** A student assumes $A$ moves up the plane and writes the equation $T - 5g\sin 30° - \mu(5g\cos 30°) = 5a$. Show that this assumption leads to $a \lt 0$, and explain what this means physically.
+**(c)** A student assumes $A$ moves up the plane and writes the equation $T - 5g\sin 30° - \mu(5g\cos 30°) = 5a$. Show that this assumption leads to $a \lt 0$And explain what this means physically.
 
 [Difficulty: hard. Tests the full connected-particle-on-inclined-plane problem including the initial check for whether the system moves, the correct assignment of friction direction, and interpretation of a negative acceleration.]
 
@@ -91,7 +91,7 @@ Force trying to pull $A$ up the plane $= 3g = 29.4$ N.
 
 Force opposing this $= 5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 0.3(42.43) = 24.5 + 12.73 = 37.23$ N.
 
-Since $29.4 \lt 37.23$, the system does **not** move with $B$ descending and $A$ ascending.
+Since $29.4 \lt 37.23$The system does **not** move with $B$ descending and $A$ ascending.
 
 Now check if $A$ slides down the plane and $B$ ascends:
 
@@ -103,7 +103,7 @@ Net force driving $A$ down $= 24.5 - 12.73 = 11.77$ N.
 
 Weight of $B = 29.4$ N, which opposes $A$'s downward motion.
 
-Since $11.77 \lt 29.4$, $A$ does not slide down either.
+Since $11.77 \lt 29.4$$A$ does not slide down either.
 
 **The system is in equilibrium.** The tension in the string equals the weight of $B$:
 
@@ -133,7 +133,7 @@ A car of mass $1200$ kg tows a trailer of mass $400$ kg along a horizontal road 
 
 **(a)** Find the acceleration of the system and the tension in the tow bar.
 
-**(b)** Identify the Newton's Third Law pair for the tension in the tow bar, stating clearly the body on which each force acts.
+**(b)** Identify the Newton's Third Law pair for the tension in the tow bar, stating the body on which each force acts.
 
 **(c)** A student states: "The tension in the tow bar is a Newton's Third Law pair with the pull of the trailer on the car." Explain why this statement is ambiguous and potentially incorrect.
 
@@ -191,7 +191,7 @@ The negative tension means the tow bar is now in **compression** rather than ten
 
 **Question:**
 
-A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds, the force acting on the particle is $F = (3t^2 - 12t + 9)$ N in the direction of motion. When $t = 0$, the particle is at rest at the origin.
+A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds, the force acting on the particle is $F = (3t^2 - 12t + 9)$ N in the direction of motion. When $t = 0$The particle is at rest at the origin.
 
 **(a)** Find the velocity of the particle at time $t$.
 
@@ -199,13 +199,13 @@ A particle of mass $2$ kg moves along the positive $x$-axis. At time $t$ seconds
 
 **(c)** Find the total distance travelled from $t = 0$ to $t = 4$.
 
-**(d)** Find the work done by the force from $t = 0$ to $t = 4$, and verify that it equals the change in kinetic energy.
+**(d)** Find the work done by the force from $t = 0$ to $t = 4$And verify that it equals the change in kinetic energy.
 
 [Difficulty: hard. Combines variable force with integration for velocity, identification of turning points, distance calculation, and verification of the work-energy theorem.]
 
 **Solution:**
 
-**(a)** By Newton's Second Law: $F = ma$, so $a = \frac{F}{m} = \frac{3t^2 - 12t + 9}{2}$.
+**(a)** By Newton's Second Law: $F = ma$So $a = \frac{F}{m} = \frac{3t^2 - 12t + 9}{2}$.
 
 $$v = \int a\,dt = \int \frac{3t^2 - 12t + 9}{2}\,dt = \frac{t^3}{2} - 3t^2 + \frac{9t}{2} + C$$
 
@@ -215,7 +215,7 @@ $$v = \frac{t^3}{2} - 3t^2 + \frac{9t}{2} = \frac{t}{2}(t^2 - 6t + 9) = \frac{t}
 
 **(b)** $v = 0 \implies \frac{t}{2}(t-3)^2 = 0 \implies t = 0$ or $t = 3$.
 
-The particle is at rest at $t = 0$ and $t = 3$ s. For $0 \lt t \lt 3$: $v \gt 0$ (the particle moves in the positive direction). For $t \gt 3$: $(t-3)^2 \gt 0$ and $t \gt 0$, so $v \gt 0$. The particle never reverses direction.
+The particle is at rest at $t = 0$ and $t = 3$ s. For $0 \lt t \lt 3$: $v \gt 0$ (the particle moves in the positive direction). For $t \gt 3$: $(t-3)^2 \gt 0$ and $t \gt 0$So $v \gt 0$. The particle never reverses direction.
 
 **(c)** Since the particle never reverses direction, the total distance equals the magnitude of the displacement.
 
@@ -249,7 +249,7 @@ Therefore $W = 4$ J, consistent with the work-energy theorem.
 
 **Question:**
 
-A uniform beam $AB$ of length $4$ m and weight $120$ N is hinged at $A$ to a vertical wall. The beam is held in a horizontal position by a light inextensible string $BC$, where $C$ is a point on the wall vertically above $A$ with $AC = 3$ m. A particle of weight $80$ N is suspended from the beam at a point $D$, where $AD = 3$ m.
+A uniform beam $AB$ of length $4$ m and weight $120$ N is hinged at $A$ to a vertical wall. The beam is held in a horizontal position by a light inextensible string $BC$Where $C$ is a point on the wall vertically above $A$ with $AC = 3$ m. A particle of weight $80$ N is suspended from the beam at a point $D$Where $AD = 3$ m.
 
 **(a)** Find the tension in the string $BC$ and the magnitude and direction of the reaction at the hinge $A$.
 

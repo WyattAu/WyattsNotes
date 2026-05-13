@@ -12,7 +12,7 @@ slug: classes-and-inheritance
 
 Dart is an **object-oriented language with single inheritance**. Every class implicitly extends
 `Object`. Unlike Java, Dart has no interfaces as a separate construct — classes themselves serve as
-interfaces.
+Interfaces.
 
 ### Class Declaration
 
@@ -132,15 +132,15 @@ class Rectangle {
 :::tip
 
 Prefer initializer lists over constructor bodies for field initialization. Initializer lists are
-more efficient — they initialize fields directly, while the constructor body runs after all fields
-have been initialized (to their default values first).
+More efficient — they initialize fields directly, while the constructor body runs after all fields
+Have been initialized (to their default values first).
 
 :::
 
 ## Inheritance
 
 Dart supports **single inheritance** with the `extends` keyword. Multiple inheritance of
-implementation is not supported, but a class can implement multiple interfaces.
+Implementation is not supported, but a class can implement multiple interfaces.
 
 ```dart
 class Animal {
@@ -168,7 +168,7 @@ class Dog extends Animal {
 ### Abstract Classes
 
 Abstract classes define interfaces that **cannot be instantiated** directly. They may or may not
-contain implementation:
+Contain implementation:
 
 ```dart
 abstract class Shape {
@@ -199,7 +199,7 @@ class Square extends Shape {
 ### Interfaces
 
 In Dart, **every class implicitly defines an interface**. Any class can `implement` another class's
-interface without inheriting its implementation:
+Interface without inheriting its implementation:
 
 ```dart
 // A class defines both an implementation and an interface
@@ -244,7 +244,7 @@ flowchart LR
 ## Mixins
 
 Mixins provide a way to **inject reusable code** into classes without using inheritance. A mixin is
-declared with the `mixin` keyword and applied with `with`:
+Declared with the `mixin` keyword and applied with `with`:
 
 ```dart
 mixin Serializable {
@@ -287,19 +287,19 @@ mixin Persistable on Serializable {
 
 ### Mixin vs Inheritance vs Interface
 
-| Feature                 | `extends`         | `implements`            | `with` (mixin)            |
+| Feature | `extends` | `implements` | `with` (mixin) |
 | ----------------------- | ----------------- | ----------------------- | ------------------------- |
-| Inherit implementation  | Yes               | No                      | Yes                       |
-| Require method override | Optional          | All methods             | Optional                  |
-| Multiple                | No (single)       | Yes                     | Yes                       |
-| Can have constructors   | Yes               | No (if mixin)           | No                        |
-| Use case                | Is-a relationship | Has-capability contract | Code reuse across classes |
+| Inherit implementation | Yes | No | Yes |
+| Require method override | Optional | All methods | Optional |
+| Multiple | No (single) | Yes | Yes |
+| Can have constructors | Yes | No (if mixin) | No |
+| Use case | Is-a relationship | Has-capability contract | Code reuse across classes |
 
 :::tip
 
 Use mixins for cross-cutting concerns (logging, serialization, validation) that don't fit in a
-single inheritance chain. Use `implements` for polymorphism (defining a contract). Use `extends` for
-true is-a relationships.
+Single inheritance chain. Use `implements` for polymorphism (defining a contract). Use `extends` for
+True is-a relationships.
 
 :::
 
@@ -334,8 +334,8 @@ print(a.dot(b));   // 11.0
 
 :::warning
 
-When overriding `==`, you **must** also override `hashCode`. Two objects that are equal must have
-the same hash code. Use `Object.hash()` or `Object.hashAll()` for combining multiple values.
+When overriding `==`You **must** also override `hashCode`. Two objects that are equal must have
+The same hash code. Use `Object.hash()` or `Object.hashAll()` for combining multiple values.
 
 :::
 
@@ -371,7 +371,19 @@ extension ListX<T> on List<T> {
 :::info
 
 Extensions are resolved **statically** at compile time. They are not true methods — they are
-syntactic sugar for static function calls. This means they cannot be used polymorphically (a
+Syntactic sugar for static function calls. This means they cannot be used polymorphically (a
 `dynamic` variable won't have access to extension methods).
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -12,11 +12,11 @@ slug: alkenes
 # Alkenes
 
 Alkenes are unsaturated hydrocarbons containing at least one C=C double bond. The general formula
-for acyclic alkenes with one double bond is $\mathrm{C}_n\mathrm{H}_{2n}$. The C=C bond consists of
-one $\sigma$ bond (formed by $sp^2$--$sp^2$ head-on overlap) and one $\pi$ bond (formed by sideways
-overlap of unhybridised $p$ orbitals). The $\pi$ bond is weaker than the $\sigma$ bond
+For acyclic alkenes with one double bond is $\mathrm{C}_n\mathrm{H}_{2n}$. The C=C bond consists of
+One $\sigma$ bond (formed by $sp^2$--$sp^2$ head-on overlap) and one $\pi$ bond (formed by sideways
+Overlap of unhybridised $p$ orbitals). The $\pi$ bond is weaker than the $\sigma$ bond
 ($\approx 268\,\mathrm{kJ/mol}$ vs $\approx 347\,\mathrm{kJ/mol}$ for a C--C $\sigma$ bond) and is
-the primary site of reactivity.
+The primary site of reactivity.
 
 ## Structure and Properties
 
@@ -25,29 +25,29 @@ $120^\circ$. The C=C bond length ($134\,\mathrm{pm}$) is shorter than the C--C s
 ($154\,\mathrm{pm}$) because the $\pi$ bond draws the atoms closer together.
 
 The $\pi$ bond restricts rotation about the C=C axis, which has two critical consequences: E/Z
-isomerism (discussed in the [introduction](./organic-chemistry-introduction)) and the existence of a
-substantial barrier to rotation ($\approx 270\,\mathrm{kJ/mol}$ for ethene).
+Isomerism (discussed in the [introduction](./organic-chemistry-introduction)) and the existence of a
+Substantial barrier to rotation ($\approx 270\,\mathrm{kJ/mol}$ for ethene).
 
 ### Physical Properties
 
 Alkenes are non-polar, insoluble in water, and have boiling points slightly lower than the
-corresponding alkanes (the $\pi$ electrons do not significantly enhance London forces). Boiling
-points increase with chain length and decrease with branching, as with alkanes.
+Corresponding alkanes (the $\pi$ electrons do not significantly enhance London forces). Boiling
+Points increase with chain length and decrease with branching, as with alkanes.
 
 ## Electrophilic Addition
 
 The $\pi$ bond is a region of high electron density above and below the plane of the molecule. It
-acts as a nucleophile, attacking electrophilic species. This is the defining reaction class of
-alkenes: **electrophilic addition**.
+Acts as a nucleophile, attacking electrophilic species. This is the defining reaction class of
+Alkenes: **electrophilic addition**.
 
 ### General Mechanism
 
 1. The $\pi$ electrons attack an electrophile, breaking the $\pi$ bond and forming a new $\sigma$
-   bond between one alkene carbon and the electrophile. The other carbon becomes a carbocation.
+ bond between one alkene carbon and the electrophile. The other carbon becomes a carbocation.
 2. A nucleophile attacks the carbocation, forming the final product.
 
 The rate-determining step is step 1 (formation of the carbocation). The stability of the carbocation
-intermediate determines the regiochemistry of the reaction.
+Intermediate determines the regiochemistry of the reaction.
 
 ### Addition of Hydrogen Halides (HX)
 
@@ -60,17 +60,17 @@ $$
 **Mechanism:**
 
 Step 1 (rate-determining): The $\pi$ bond attacks the $\delta^+$ hydrogen of HBr. The H--Br bond
-breaks heterolytically, producing a carbocation and $\mathrm{Br}^-$.
+Breaks heterolytically, producing a carbocation and $\mathrm{Br}^-$.
 
 $$
 \mathrm{CH}_3\mathrm{CH}=\mathrm{CH}_2 + \mathrm{H}\mathrm{-}\mathrm{Br} \to \mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3 + \mathrm{Br}^-
 $$
 
 The secondary carbocation ($\mathrm{CH}_3\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{HCH}_3$) is formed in
-preference to the primary carbocation
+Preference to the primary carbocation
 ($\mathrm{CH}_3\mathrm{CH}_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{H}_2$) because it is more stable. The
-methyl group donates electron density through the inductive effect and hyperconjugation (the
-adjacent C--H $\sigma$ bonds overlap with the empty $p$ orbital of the carbocation).
+Methyl group donates electron density through the inductive effect and hyperconjugation (the
+Adjacent C--H $\sigma$ bonds overlap with the empty $p$ orbital of the carbocation).
 
 Step 2 (fast): $\mathrm{Br}^-$ attacks the carbocation from either face:
 
@@ -81,13 +81,13 @@ $$
 ### Markovnikov's Rule
 
 When HX adds to an unsymmetrical alkene, the hydrogen atom attaches to the carbon of the double bond
-that already has the greater number of hydrogen atoms. Equivalently: the electrophile adds to the
-less substituted carbon, and the nucleophile adds to the more substituted carbon.
+That already has the greater number of hydrogen atoms. Equivalently: the electrophile adds to the
+Less substituted carbon, and the nucleophile adds to the more substituted carbon.
 
 Markovnikov's rule is a consequence of carbocation stability. The more substituted carbocation
 (tertiary $>$ secondary $>$ primary $>$ methyl) is lower in energy and therefore forms
-preferentially. The Hammond postulate tells us that the transition state leading to a more stable
-intermediate is itself lower in energy.
+Preferentially. The Hammond postulate tells us that the transition state leading to a more stable
+Intermediate is itself lower in energy.
 
 Carbocation stability order:
 $(\mathrm{CH}_3)_3\mathrm{C}^+ \gt (\mathrm{CH}_3)_2\mathrm{CH}^+ \gt \mathrm{CH}_3\mathrm{CH}_2^+ \gt \mathrm{CH}_3^+$
@@ -99,7 +99,7 @@ $$
 $$
 
 The hydrogen adds to the less substituted carbon (the $=\mathrm{CH}_2$ carbon, which already has
-more hydrogens), producing a tertiary carbocation intermediate that is then attacked by
+More hydrogens), producing a tertiary carbocation intermediate that is then attacked by
 $\mathrm{Cl}^-$. The product is 2-chloro-2-methylpropane (tert-butyl chloride).
 
 ### Addition of Sulphuric Acid
@@ -117,13 +117,13 @@ $$
 $$
 
 This two-step process was historically important for industrial alcohol production (the "indirect
-hydration" of alkenes) but has been superseded by direct catalytic hydration over a phosphoric acid
-catalyst at $300^\circ\mathrm{C}$ and high pressure.
+Hydration" of alkenes) but has been superseded by direct catalytic hydration over a phosphoric acid
+Catalyst at $300^\circ\mathrm{C}$ and high pressure.
 
 ### Addition of Halogens
 
 Alkenes decolourise bromine water (orange to colourless) and chlorine water. This is used as the
-standard test for unsaturation.
+Standard test for unsaturation.
 
 **Addition of Br$_2$:**
 
@@ -133,48 +133,48 @@ $$
 
 **Mechanism:** The $\pi$ electrons attack one bromine atom, causing heterolytic fission of the
 Br--Br bond. A bromonium ion intermediate (three-membered ring) forms rather than a simple
-carbocation. The second $\mathrm{Br}^-$ then attacks the bromonium ion from the opposite side,
-giving anti addition (stereospecific trans addition).
+Carbocation. The second $\mathrm{Br}^-$ then attacks the bromonium ion from the opposite side,
+Giving anti addition (stereospecific trans addition).
 
 The bromonium ion mechanism explains the observed stereospecificity. For cyclic alkenes, this means
-the two bromine atoms end up on opposite faces of the ring (anti addition), which would not be the
-case with a free carbocation intermediate.
+The two bromine atoms end up on opposite faces of the ring (anti addition), which would not be the
+Case with a free carbocation intermediate.
 
 ## Addition Polymerisation
 
 Alkenes with a C=C double bond can undergo addition polymerisation, in which the double bond opens
-and monomer units link together to form a long-chain polymer.
+And monomer units link together to form a long-chain polymer.
 
 ### General Equation
 
 $$
-n\,\mathrm{CH}_2=\mathrm{CHR} \to \mathrm{--}(\mathrm{CH}_2\mathrm{CHR})_n\mathrm{--}
+N\,\mathrm{CH}_2=\mathrm{CHR} \to \mathrm{--}(\mathrm{CH}_2\mathrm{CHR})_n\mathrm{--}
 $$
 
 The repeating unit is enclosed in parentheses with the subscript $n$. The double bond is consumed in
-the polymerisation.
+The polymerisation.
 
 ### Key Polymers
 
-| Monomer                                           | Polymer                          | Uses                  |
+| Monomer | Polymer | Uses |
 | ------------------------------------------------- | -------------------------------- | --------------------- |
-| Ethene ($\mathrm{CH}_2=\mathrm{CH}_2$)            | Poly(ethene) (PE)                | Plastic bags, bottles |
-| Propene ($\mathrm{CH}_2=\mathrm{CHCH}_3$)         | Poly(propene) (PP)               | Ropes, containers     |
-| Chloroethene ($\mathrm{CH}_2=\mathrm{CHCl}$)      | Poly(chloroethene) (PVC)         | Pipes, window frames  |
-| Tetrafluoroethene ($\mathrm{CF}_2=\mathrm{CF}_2$) | PTFE                             | Non-stick coatings    |
-| Phenylethene (styrene)                            | Poly(phenylethene) (polystyrene) | Packaging, insulation |
+| Ethene ($\mathrm{CH}_2=\mathrm{CH}_2$) | Poly(ethene) (PE) | Plastic bags, bottles |
+| Propene ($\mathrm{CH}_2=\mathrm{CHCH}_3$) | Poly(propene) (PP) | Ropes, containers |
+| Chloroethene ($\mathrm{CH}_2=\mathrm{CHCl}$) | Poly(chloroethene) (PVC) | Pipes, window frames |
+| Tetrafluoroethene ($\mathrm{CF}_2=\mathrm{CF}_2$) | PTFE | Non-stick coatings |
+| Phenylethene (styrene) | Poly(phenylethene) (polystyrene) | Packaging, insulation |
 
 ### Properties and Structure
 
 **Low-density poly(ethene) (LDPE):** Produced at high pressure ($1000$--$3000\,\mathrm{atm}$) with
-an oxygen initiator. The free radical mechanism produces a branched polymer with lower
-crystallinity, lower density ($0.91$--$0.94\,\mathrm{g/cm}^3$), lower melting point, and greater
-flexibility.
+An oxygen initiator. The free radical mechanism produces a branched polymer with lower
+Crystallinity, lower density ($0.91$--$0.94\,\mathrm{g/cm}^3$), lower melting point, and greater
+Flexibility.
 
 **High-density poly(ethene) (HDPE):** Produced at lower pressure using a Ziegler-Natta catalyst
 (titanium(IV) chloride with triethylaluminium). The ionic mechanism produces a largely unbranched
-polymer with higher crystallinity, higher density ($0.94$--$0.97\,\mathrm{g/cm}^3$), higher melting
-point, and greater strength.
+Polymer with higher crystallinity, higher density ($0.94$--$0.97\,\mathrm{g/cm}^3$), higher melting
+Point, and greater strength.
 
 ### Disposal of Polymers
 
@@ -182,12 +182,12 @@ The persistence of synthetic polymers in the environment is a major problem. Dis
 
 - **Landfill:** Slow decomposition (decades to centuries). Leaching of additives into groundwater.
 - **Incineration:** Recovers energy but produces $\mathrm{CO}_2$ and, for halogenated polymers
-  (PVC), toxic hydrogen halides and dioxins.
+ (PVC), toxic hydrogen halides and dioxins.
 - **Recycling:** Mechanical recycling (melting and reforming) degrades polymer quality over cycles.
-  Chemical recycling (depolymerisation back to monomers) is more promising but energy-intensive.
+ Chemical recycling (depolymerisation back to monomers) is more promising but energy-intensive.
 - **Biodegradable polymers:** Polylactic acid (PLA, from corn starch) and polyhydroxyalkanoates
-  (PHAs, produced by bacteria) degrade under appropriate conditions. Their use is growing but
-  limited by cost and performance relative to conventional polymers.
+ (PHAs, produced by bacteria) degrade under appropriate conditions. Their use is growing but
+ limited by cost and performance relative to conventional polymers.
 
 ### Test for Unsaturation
 
@@ -198,8 +198,8 @@ Bromine water is the standard test for C=C double bonds:
 - If the solution decolourises (turns colourless), a C=C double bond is present.
 
 The reaction is the addition of $\mathrm{Br}_2$ across the double bond, as described above. Alkanes
-do not react with bromine water at room temperature (they require UV light for radical
-substitution).
+Do not react with bromine water at room temperature (they require UV light for radical
+Substitution).
 
 ## Stereochemistry of Alkenes
 
@@ -221,7 +221,7 @@ The **Cahn-Ingold-Prelog (CIP) priority rules** assign priority to substituents 
 
 Left carbon of the double bond: substituents are $\mathrm{CH}_3$ and $\mathrm{H}$. Priority: $\mathrm{CH}_3 \gt \mathrm{H}$ (atomic number of $\mathrm{C} \gt \mathrm{H}$).
 
-Right carbon: substituents are $\mathrm{CH}_3$ and $\mathrm{COOH}$. For $\mathrm{COOH}$: the atoms directly bonded are $\mathrm{C}$, $\mathrm{O}$, $\mathrm{O}$; for $\mathrm{CH}_3$: the atoms directly bonded are $\mathrm{H}$, $\mathrm{H}$, $\mathrm{H}$. Since $\mathrm{O} \gt \mathrm{H}$, $\mathrm{COOH}$ has higher priority than $\mathrm{CH}_3$.
+Right carbon: substituents are $\mathrm{CH}_3$ and $\mathrm{COOH}$. For $\mathrm{COOH}$: the atoms directly bonded are $\mathrm{C}$$\mathrm{O}$$\mathrm{O}$; for $\mathrm{CH}_3$: the atoms directly bonded are $\mathrm{H}$$\mathrm{H}$$\mathrm{H}$. Since $\mathrm{O} \gt \mathrm{H}$$\mathrm{COOH}$ has higher priority than $\mathrm{CH}_3$.
 
 If the higher-priority groups ($\mathrm{CH}_3$ on the left, $\mathrm{COOH}$ on the right) are on the same side: $Z$. If on opposite sides: $E$.
 
@@ -234,7 +234,7 @@ $E$ and $Z$ isomers have different physical properties:
 - Different $R_f$ values in chromatography.
 - Different NMR spectra (different coupling constants between vinyl protons).
 
-The coupling constant $J$ between the two vinyl protons is typically larger for trans ($E$) isomers ($J \approx 12$--$18\,\mathrm{Hz}$) than for cis ($Z$) isomers ($J \approx 6$--$12\,\mathrm{Hz}$).
+The coupling constant $J$ between the two vinyl protons is larger for trans ($E$) isomers ($J \approx 12$--$18\,\mathrm{Hz}$) than for cis ($Z$) isomers ($J \approx 6$--$12\,\mathrm{Hz}$).
 
 ### Hydrogenation of Alkenes
 
@@ -291,7 +291,7 @@ $$
 \mathrm{CH}_2=\mathrm{CH}_2 + [\mathrm{O}] + \mathrm{H}_2\mathrm{O} \to \mathrm{CH}_2\mathrm{OHCH}_2\mathrm{OH}
 $$
 
-The purple $\mathrm{MnO}_4^-$ is reduced to colourless $\mathrm{Mn}^{2+}$, providing a second test for unsaturation alongside bromine water.
+The purple $\mathrm{MnO}_4^-$ is reduced to colourless $\mathrm{Mn}^{2+}$Providing a second test for unsaturation alongside bromine water.
 
 ### Oxidative Cleavage with Hot Concentrated $\mathrm{KMnO}_4$
 
@@ -336,24 +336,24 @@ Ethene is the most important organic chemical in industry:
 ## Common Pitfalls
 
 1. **Violating Markovnikov's rule.** The hydrogen of HX always adds to the carbon with more
-   hydrogens. If you find yourself attaching H to the more substituted carbon, check again. This
-   rule is a direct consequence of carbocation stability.
+ hydrogens. If you find yourself attaching H to the more substituted carbon, check again. This
+ rule is a direct consequence of carbocation stability.
 
 2. **Confusing the bromine water test with radical bromination.** Bromine water reacts with alkenes
-   via electrophilic addition at room temperature (no UV needed). Bromine reacts with alkanes only
-   under UV light via radical substitution. These are fundamentally different mechanisms.
+ via electrophilic addition at room temperature (no UV needed). Bromine reacts with alkanes only
+ under UV light via radical substitution. These are fundamentally different mechanisms.
 
 3. **Drawing the polymer repeating unit incorrectly.** The repeating unit must show the opened
-   double bond. The monomer $\mathrm{CH}_2=\mathrm{CHCl}$ becomes the repeating unit
-   $-\mathrm{CH}_2\mathrm{CHCl}-$, not $-\mathrm{CH}_2=\mathrm{CHCl}-$.
+ double bond. The monomer $\mathrm{CH}_2=\mathrm{CHCl}$ becomes the repeating unit
+ $-\mathrm{CH}_2\mathrm{CHCl}-$Not $-\mathrm{CH}_2=\mathrm{CHCl}-$.
 
 4. **Assuming all polymerisations produce the same type of poly(ethene).** LDPE (radical, branched)
-   and HDPE (ionic, linear) have very different properties. The mechanism determines the polymer
-   structure.
+ and HDPE (ionic, linear) have very different properties. The mechanism determines the polymer
+ structure.
 
 5. **Forgetting the stereochemistry of halogen addition.** Bromine adds anti (trans) across the
-   double bond via a bromonium ion intermediate, not syn (cis). For cyclic alkenes, this has
-   consequences for the stereochemistry of the product.
+ double bond via a bromonium ion intermediate, not syn (cis). For cyclic alkenes, this has
+ consequences for the stereochemistry of the product.
 
 ## Practice Problems
 
@@ -361,7 +361,7 @@ Ethene is the most important organic chemical in industry:
 <summary>Problem 1</summary>
 
 Predict the major organic product(s) when 2-methylbut-2-ene reacts with HBr. Show the mechanism and
-explain the regiochemistry.
+Explain the regiochemistry.
 
 **Solution:**
 
@@ -370,16 +370,16 @@ $$
 $$
 
 The $\pi$ bond attacks the $\delta^+$ hydrogen of HBr. Following Markovnikov's rule, the hydrogen
-adds to the less substituted carbon of the double bond. There are two carbons in the double bond:
+Adds to the less substituted carbon of the double bond. There are two carbons in the double bond:
 
 - $\mathrm{C}_1$: $(\mathrm{CH}_3)_2\mathrm{C}=$ -- bonded to two methyl groups (0 hydrogens on this
-  carbon directly from the double bond? No, each of the two methyls is a substituent). The carbon
-  has zero hydrogens directly attached.
+ carbon directly from the double bond? No, each of the two methyls is a substituent). The carbon
+ has zero hydrogens directly attached.
 - $\mathrm{C}_2$: $=\mathrm{CHCH}_3$ -- bonded to one hydrogen and one methyl group.
 
 The hydrogen adds to $\mathrm{C}_2$ (which has more hydrogens), producing a tertiary carbocation at
 $\mathrm{C}_1$: $(\mathrm{CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C}◆RB◆\mathrm{CH}_2\mathrm{CH}_3$. The bromide
-ion then attacks this tertiary carbocation to give 2-bromo-2-methylbutane.
+Ion then attacks this tertiary carbocation to give 2-bromo-2-methylbutane.
 
 </details>
 
@@ -387,7 +387,7 @@ ion then attacks this tertiary carbocation to give 2-bromo-2-methylbutane.
 <summary>Problem 2</summary>
 
 A sample of poly(propene) has an average chain length of $n = 5000$. Calculate the molecular mass of
-one average chain. The molar mass of the propene monomer ($\mathrm{C}_3\mathrm{H}_6$) is
+One average chain. The molar mass of the propene monomer ($\mathrm{C}_3\mathrm{H}_6$) is
 $42.08\,\mathrm{g/mol}$.
 
 **Solution:**
@@ -397,7 +397,7 @@ M_{\mathrm{polymer}} = n \times M_{\mathrm{monomer}} = 5000 \times 42.08 = 210,4
 $$
 
 Each repeating unit has the same molar mass as the monomer (the double bond opens but no atoms are
-lost or gained in addition polymerisation).
+Lost or gained in addition polymerisation).
 
 </details>
 
@@ -475,7 +475,7 @@ Carbocation formed: $(\mathrm{CH}_3)_2\overset◆LB◆+◆RB◆◆LB◆\mathrm{C
 
 **Mechanism:**
 
-Step 1: The $\pi$ electrons of cyclohexene attack one bromine atom of $\mathrm{Br}_2$, forming a bromonium ion intermediate. The bromonium ion is a three-membered ring with a positive charge distributed over the bromine and both carbons.
+Step 1: The $\pi$ electrons of cyclohexene attack one bromine atom of $\mathrm{Br}_2$Forming a bromonium ion intermediate. The bromonium ion is a three-membered ring with a positive charge distributed over the bromine and both carbons.
 
 Step 2: $\mathrm{Br}^-$ attacks the bromonium ion from the **opposite side** (anti addition) at either carbon of the three-membered ring.
 
@@ -506,9 +506,9 @@ An unknown alkene $\mathrm{C}_7\mathrm{H}_{12}$ is treated with hot, concentrate
 
 Reconstructing: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}=\mathrm{CHCH}_3$
 
-**Identity:** Hept-2-ene ($\mathrm{C}_7\mathrm{H}_{14}$... wait, check). $\mathrm{C}_7\mathrm{H}_{12}$ has $\text{DoU} = \frac{2(7) + 2 - 12}{2} = 1$. Hept-2-ene is $\mathrm{C}_7\mathrm{H}_{14}$ with $\text{DoU} = 1$.
+**Identity:** Hept-2-ene ($\mathrm{C}_7\mathrm{H}_{14}$... Wait, check). $\mathrm{C}_7\mathrm{H}_{12}$ has $\text{DoU} = \frac{2(7) + 2 - 12}{2} = 1$. Hept-2-ene is $\mathrm{C}_7\mathrm{H}_{14}$ with $\text{DoU} = 1$.
 
-The formula must be $\mathrm{C}_7\mathrm{H}_{14}$, not $\mathrm{C}_7\mathrm{H}_{12}$. If the problem states $\mathrm{C}_7\mathrm{H}_{12}$, the molecule has an additional degree of unsaturation (a ring or a second double bond). In this case, the product analysis is still valid, and the structure would be hept-2-ene (the given formula may contain a typo; in an exam, use the product information to deduce the structure).
+The formula must be $\mathrm{C}_7\mathrm{H}_{14}$Not $\mathrm{C}_7\mathrm{H}_{12}$. If the problem states $\mathrm{C}_7\mathrm{H}_{12}$The molecule has an additional degree of unsaturation (a ring or a second double bond). In this case, the product analysis is still valid, and the structure would be hept-2-ene (the given formula may contain a typo; in an exam, use the product information to deduce the structure).
 
 ### Example 5: E/Z Assignment with CIP Rules
 
@@ -654,7 +654,7 @@ An alkene $\mathrm{C}_5\mathrm{H}_{10}$ is treated with hot, concentrated $\math
 - Propanoic acid ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$) indicates the fragment $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}=$ on one side (1 mark).
 - Ethanoic acid ($\mathrm{CH}_3\mathrm{COOH}$) indicates the fragment $=\mathrm{CHCH}_3$ on the other side (1 mark).
 - Combining: $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}=\mathrm{CHCH}_3$ (pent-2-ene) (1 mark).
-- Verification: $\mathrm{C}_5\mathrm{H}_{10}$, one degree of unsaturation, consistent with one C=C bond (1 mark).
+- Verification: $\mathrm{C}_5\mathrm{H}_{10}$One degree of unsaturation, consistent with one C=C bond (1 mark).
 
 </details>
 
@@ -666,7 +666,7 @@ Explain why the addition polymerisation of ethene requires an initiator, whereas
 **Mark Scheme:**
 
 4 marks:
-- Addition polymerisation involves free radical initiation (1 mark). The C=C bond in ethene has a high bond enthalpy and will not spontaneously open; an initiator (e.g. organic peroxide or oxygen under high pressure) generates free radicals that attack the C=C bond (1 mark).
+- Addition polymerisation involves free radical initiation (1 mark). The C=C bond in ethene has a high bond enthalpy and will not spontaneously open; an initiator (e.g. Organic peroxide or oxygen under high pressure) generates free radicals that attack the C=C bond (1 mark).
 - Bromine addition is an electrophilic addition (1 mark). The $\mathrm{Br}_2$ molecule is polarised by the $\pi$ electrons of ethene ($\mathrm{Br}^{\delta+}\text{-}\mathrm{Br}^{\delta-}$), and the electrophilic $\mathrm{Br}^{\delta+}$ is attacked directly by the nucleophilic $\pi$ bond without any initiator (1 mark).
 
 </details>
@@ -727,3 +727,7 @@ Ready to test your understanding of **Alkenes**? The [diagnostic test](/docs/ale
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

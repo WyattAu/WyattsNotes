@@ -11,7 +11,7 @@ categories: [TypeScript]
 ### Fields, Constructors, Methods
 
 A TypeScript class declares fields, a constructor, and methods. Unlike JavaScript, TypeScript
-requires that all fields accessed in the class body be declared explicitly (under
+Requires that all fields accessed in the class body be declared explicitly (under
 `strictPropertyInitialization`).
 
 ```ts
@@ -36,8 +36,8 @@ class Point {
 }
 ```
 
-Under `strictPropertyInitialization`, the compiler verifies that all declared fields are assigned in
-the constructor or have a definite assignment assertion (`!`):
+Under `strictPropertyInitialization`The compiler verifies that all declared fields are assigned in
+The constructor or have a definite assignment assertion (`!`):
 
 ```ts
 class Example {
@@ -58,16 +58,16 @@ class Lazy {
 ```
 
 The `!` definite assignment assertion tells the compiler that the field will be assigned before use,
-even though the constructor does not assign it.
+Even though the constructor does not assign it.
 
 ### Access Modifiers
 
-TypeScript supports three access modifiers: `public`, `private`, and `protected`.
+TypeScript supports three access modifiers: `public``private`And `protected`.
 
-| Modifier    | Accessibility                                            |
+| Modifier | Accessibility |
 | ----------- | -------------------------------------------------------- |
-| `public`    | Accessible from anywhere (default)                       |
-| `private`   | Accessible only within the declaring class               |
+| `public` | Accessible from anywhere (default) |
+| `private` | Accessible only within the declaring class |
 | `protected` | Accessible within the declaring class and its subclasses |
 
 ```ts
@@ -136,13 +136,13 @@ p.x = 3;
 ```
 
 `readonly` is shallow: it prevents reassignment of the field itself but does not prevent mutation of
-the field's value if it is an object.
+The field's value if it is an object.
 
 ## Parameter Properties
 
 TypeScript provides a shorthand for declaring and initialising fields in the constructor parameter
-list. A parameter prefixed with an access modifier is automatically declared as a field and assigned
-from the constructor argument.
+List. A parameter prefixed with an access modifier is automatically declared as a field and assigned
+From the constructor argument.
 
 ```ts
 class Point {
@@ -173,13 +173,13 @@ class Point {
 }
 ```
 
-Parameter properties can use any combination of modifiers: `public`, `private`, `protected`,
+Parameter properties can use any combination of modifiers: `public``private``protected`
 `readonly`.
 
 ## Abstract Classes and Abstract Methods
 
 An abstract class cannot be instantiated directly. It is designed to be extended by concrete
-subclasses. Abstract methods have no implementation and must be implemented by subclasses.
+Subclasses. Abstract methods have no implementation and must be implemented by subclasses.
 
 ```ts
 abstract class Shape {
@@ -253,8 +253,8 @@ class Derived extends Base {
 ## Implementing Interfaces
 
 Classes implement interfaces using the `implements` keyword. A class may implement multiple
-interfaces. The class must provide concrete implementations for all members declared in the
-interfaces.
+Interfaces. The class must provide concrete implementations for all members declared in the
+Interfaces.
 
 ```ts
 interface Serializable {
@@ -286,13 +286,13 @@ class UserFactory implements Deserializable<User> {
 
 ### Interface vs Abstract Class
 
-| Feature                 | Interface                                       | Abstract Class                             |
+| Feature | Interface | Abstract Class |
 | ----------------------- | ----------------------------------------------- | ------------------------------------------ |
-| Multiple implementation | A class can implement many interfaces           | A class can extend only one abstract class |
-| Instance fields         | Cannot have instance fields (only declarations) | Can have instance fields                   |
-| Constructor             | No constructor                                  | Can have a constructor                     |
-| Method implementations  | All methods are abstract (no body)              | Can mix abstract and concrete methods      |
-| Access modifiers        | No access modifiers on members                  | Supports `public`, `private`, `protected`  |
+| Multiple implementation | A class can implement many interfaces | A class can extend only one abstract class |
+| Instance fields | Cannot have instance fields (only declarations) | Can have instance fields |
+| Constructor | No constructor | Can have a constructor |
+| Method implementations | All methods are abstract (no body) | Can mix abstract and concrete methods |
+| Access modifiers | No access modifiers on members | Supports `public``private``protected` |
 
 ## Static Members and Static Factory Patterns
 
@@ -344,7 +344,7 @@ const entry = LogEntry.info('Server started');
 ```
 
 Making the constructor private ensures that instances can only be created through the static factory
-methods.
+Methods.
 
 ### Static Members in Interfaces
 
@@ -401,8 +401,8 @@ console.log(temp.celsius);
 ```
 
 **Common Pitfall:** A getter without a setter produces a readonly-like effect at runtime but the
-field is not `readonly` in the type system. If a setter exists but is omitted from a subclass, the
-getter is still accessible.
+Field is not `readonly` in the type system. If a setter exists but is omitted from a subclass, the
+Getter is still accessible.
 
 ## Class Expressions vs Class Declarations
 
@@ -423,7 +423,7 @@ const Bar = class {
 ```
 
 Class expressions are useful for one-off classes or when the class is used as a value (e.g., passed
-to a function):
+To a function):
 
 ```ts
 function createClass(methodBody: string) {
@@ -441,7 +441,7 @@ new Dynamic().execute();
 ## Mixins and Composition with Classes
 
 TypeScript does not have a native mixin keyword, but mixins can be implemented using a combination
-of class expressions, intersection types, and generic factory functions.
+Of class expressions, intersection types, and generic factory functions.
 
 ### Mixin Pattern
 
@@ -551,8 +551,8 @@ interface RegistrationData {
 ## Decorators
 
 Decorators are a Stage 3 ECMAScript proposal. TypeScript supports an experimental implementation of
-decorators via the `experimentalDecorators` compiler option. As of TypeScript 5.0, the language also
-supports the TC39 Stage 3 decorator proposal.
+Decorators via the `experimentalDecorators` compiler option. As of TypeScript 5.0, the language also
+Supports the TC39 Stage 3 decorator proposal.
 
 ### Method Decorators
 
@@ -609,15 +609,15 @@ class Config {
 ```
 
 **Common Pitfall:** The `experimentalDecorators` flag and the TC39 Stage 3 proposal use different
-decorator semantics. Code written for one will not work with the other. New projects should prefer
-the TC39 Stage 3 proposal (no `experimentalDecorators` flag needed in TS 5.0+).
+Decorator semantics. Code written for one will not work with the other. New projects should prefer
+The TC39 Stage 3 proposal (no `experimentalDecorators` flag needed in TS 5.0+).
 
 ## Structural Typing and Nominal Typing for Classes
 
 ### Structural Typing (Default)
 
 TypeScript uses structural typing for classes. Two classes are compatible if they have the same
-shape, regardless of their declaration heritage:
+Shape, regardless of their declaration heritage:
 
 ```ts
 class Point2D {
@@ -642,7 +642,7 @@ This compiles because `Vector2D` has the same public shape as `Point2D`.
 ### Simulating Nominal Typing with Branded Types
 
 When nominal typing is required (i.e., type compatibility based on the name rather than the shape),
-use branded types:
+Use branded types:
 
 ```ts
 type Brand<T, B extends string> = T & { __brand: B };
@@ -668,13 +668,13 @@ getUser(userId);
 getUser(orderId);
 ```
 
-The last call is a compile error because `OrderId` is not assignable to `UserId`, even though both
-are branded `string` types.
+The last call is a compile error because `OrderId` is not assignable to `UserId`Even though both
+Are branded `string` types.
 
 ### Private Fields and Structural Typing
 
 Private fields affect structural typing. Two classes with incompatible private fields are not
-structurally compatible, even if their public shapes are identical:
+Structurally compatible, even if their public shapes are identical:
 
 ```ts
 class Secret {
@@ -712,7 +712,7 @@ This is an error. `super()` must be called first.
 ### Pitfall 2: Structural Typing Surprises
 
 Because of structural typing, classes with the same public shape are interchangeable. This can lead
-to subtle bugs when the classes have different internal behaviour:
+To subtle bugs when the classes have different internal behaviour:
 
 ```ts
 class Celsius {
@@ -753,10 +753,18 @@ new Timer().start();
 ```
 
 At runtime, `this` inside `tick` will be `undefined` (in strict mode) because the method was
-extracted from its object. Use arrow functions or `bind`:
+Extracted from its object. Use arrow functions or `bind`:
 
 ```ts
 start(): void {
   setInterval(() => this.tick(), 1000);
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

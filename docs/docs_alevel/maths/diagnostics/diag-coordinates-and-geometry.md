@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-Find the equation of the circle passing through the three points $A(1, 2)$, $B(5, 4)$, and $C(3, 8)$.
+Find the equation of the circle passing through the three points $A(1, 2)$$B(5, 4)$And $C(3, 8)$.
 
 Express your answer in the form $(x-a)^2 + (y-b)^2 = r^2$ and in the expanded form $x^2 + y^2 + px + qy + r = 0$.
 
@@ -31,7 +31,7 @@ Gradient of $AB$: $m_{AB} = \frac{4-2}{5-1} = \frac{1}{2}$.
 
 Gradient of perpendicular bisector: $m_1 = -2$.
 
-Equation: $y - 3 = -2(x - 3)$, i.e. $y = -2x + 9$.
+Equation: $y - 3 = -2(x - 3)$I.e. $y = -2x + 9$.
 
 **Step 2: Find the perpendicular bisector of $BC$.**
 
@@ -41,7 +41,7 @@ Gradient of $BC$: $m_{BC} = \frac{8-4}{3-5} = \frac{4}{-2} = -2$.
 
 Gradient of perpendicular bisector: $m_2 = \frac{1}{2}$.
 
-Equation: $y - 6 = \frac{1}{2}(x - 4)$, i.e. $y = \frac{1}{2}x + 4$.
+Equation: $y - 6 = \frac{1}{2}(x - 4)$I.e. $y = \frac{1}{2}x + 4$.
 
 **Step 3: Find the centre (intersection of perpendicular bisectors).**
 
@@ -63,7 +63,7 @@ $$r = |OA| = \sqrt{(2-1)^2 + (5-2)^2} = \sqrt{1 + 9} = \sqrt{10}$$
 
 Standard form: $(x - 2)^2 + (y - 5)^2 = 10$.
 
-Expanded form: $x^2 - 4x + 4 + y^2 - 10y + 25 = 10$, giving:
+Expanded form: $x^2 - 4x + 4 + y^2 - 10y + 25 = 10$Giving:
 
 $$x^2 + y^2 - 4x - 10y + 19 = 0$$
 
@@ -97,7 +97,7 @@ $$k = 0$$
 
 **Step 3: Find the point of tangency.**
 
-With $k = 0$, the line is $y = 5$. Substituting into the circle:
+With $k = 0$The line is $y = 5$. Substituting into the circle:
 
 $$x^2 + 25 - 4x - 30 + 9 = 0$$
 $$x^2 - 4x + 4 = 0$$
@@ -124,7 +124,7 @@ $$R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad S = \begin{pmatrix} 0
 
 **(c)** The point $P(3, 1)$ is first reflected in the line $y = x$ and then rotated $90°$ anticlockwise about the origin. Find the coordinates of the image of $P$.
 
-**(d)** The triangle with vertices $(0, 0)$, $(4, 0)$, $(0, 3)$ is transformed by $RS$. Find the area of the image and explain why it is preserved.
+**(d)** The triangle with vertices $(0, 0)$$(4, 0)$$(0, 3)$ is transformed by $RS$. Find the area of the image and explain why it is preserved.
 
 [Difficulty: hard. Tests understanding that matrix multiplication is not commutative for transformations, and the relationship between determinant and area.]
 
@@ -142,7 +142,7 @@ $$SR = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & -1 \\ 1 &
 
 This is a reflection in the $x$-axis.
 
-**Note:** $RS \neq SR$, confirming that transformations do not generally commute.
+**Note:** $RS \neq SR$Confirming that transformations do not generally commute.
 
 **(c)** Applying $S$ first, then $R$: the image is $R \cdot S \cdot \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
 
@@ -206,7 +206,7 @@ $$2x^3 - 12x^2 + 15x + 3 = 0$$
 
 **Step 3: Solve the cubic.** Testing $x = 1$: $2 - 12 + 15 + 3 = 8 \neq 0$. Testing $x = -1$: $-2 - 12 - 15 + 3 = -26$. Testing $x = 3$: $54 - 108 + 45 + 3 = -6$. Testing $x = \frac{1}{2}$: $\frac{1}{4} - 3 + \frac{15}{2} + 3 = 7.25$. Testing $x = 0$: $3$.
 
-By the intermediate value theorem, there is a root between $x = -1$ and $x = 0$, and possibly others.
+By the intermediate value theorem, there is a root between $x = -1$ and $x = 0$And possibly others.
 
 Testing $x = -\frac{1}{2}$: $-\frac{1}{4} - 3 - \frac{15}{2} + 3 = -\frac{1}{4} - \frac{15}{2} = -\frac{31}{4}$. Between $x = 0$ ($D' = 3$) and $x = 1$ ($D' = 8$), no root. Between $x = 3$ ($D' = -6$) and $x = 4$ ($D' = 128-192+60+3 = -1$), and $x = 5$ ($D' = 250-300+75+3=28$), so a root between $x = 4$ and $x = 5$.
 
@@ -224,15 +224,15 @@ The closest point is approximately $(2.11, 3.01)$.
 
 **Question:**
 
-In triangle $ABC$, the point $D$ lies on $BC$ such that $BD : DC = 2 : 1$. The point $E$ is the midpoint of $AC$. The lines $AD$ and $BE$ intersect at point $F$.
+In triangle $ABC$The point $D$ lies on $BC$ such that $BD : DC = 2 : 1$. The point $E$ is the midpoint of $AC$. The lines $AD$ and $BE$ intersect at point $F$.
 
-Using position vectors with origin at $A$, and taking $\overrightarrow{AB} = \mathbf{b}$ and $\overrightarrow{AC} = \mathbf{c}$:
+Using position vectors with origin at $A$And taking $\overrightarrow{AB} = \mathbf{b}$ and $\overrightarrow{AC} = \mathbf{c}$:
 
 **(a)** Find the position vector of $F$ in terms of $\mathbf{b}$ and $\mathbf{c}$.
 
 **(b)** Find the ratio $AF : FD$.
 
-**(c)** If $|\mathbf{b}| = 5$, $|\mathbf{c}| = 7$, and $\mathbf{b} \cdot \mathbf{c} = 15$, find $|\overrightarrow{AF}|$.
+**(c)** If $|\mathbf{b}| = 5$$|\mathbf{c}| = 7$And $\mathbf{b} \cdot \mathbf{c} = 15$Find $|\overrightarrow{AF}|$.
 
 [Difficulty: hard. Tests vector methods for concurrency problems and application of the dot product.]
 
@@ -240,7 +240,7 @@ Using position vectors with origin at $A$, and taking $\overrightarrow{AB} = \ma
 
 **(a)** Express all points in terms of $\mathbf{b}$ and $\mathbf{c}$:
 
-- $\overrightarrow{OB} = \mathbf{b}$, $\overrightarrow{OC} = \mathbf{c}$ (since origin is at $A$)
+- $\overrightarrow{OB} = \mathbf{b}$$\overrightarrow{OC} = \mathbf{c}$ (since origin is at $A$)
 - $\overrightarrow{OD} = \overrightarrow{OB} + \frac{2}{3}\overrightarrow{BC} = \mathbf{b} + \frac{2}{3}(\mathbf{c} - \mathbf{b}) = \frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}$
 - $\overrightarrow{OE} = \frac{1}{2}\mathbf{c}$
 
@@ -254,11 +254,11 @@ $$\frac{s}{3} = 1 - t \quad \text{and} \quad \frac{2s}{3} = \frac{t}{2}$$
 
 From the second equation: $t = \frac{4s}{3}$.
 
-Substituting into the first: $\frac{s}{3} = 1 - \frac{4s}{3}$, giving $\frac{5s}{3} = 1$, so $s = \frac{3}{5}$.
+Substituting into the first: $\frac{s}{3} = 1 - \frac{4s}{3}$Giving $\frac{5s}{3} = 1$So $s = \frac{3}{5}$.
 
 $$\overrightarrow{OF} = \frac{3}{5}\left(\frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}\right) = \frac{1}{5}\mathbf{b} + \frac{2}{5}\mathbf{c}$$
 
-**(b)** $AF : FD$. Since $s = 3/5$, point $F$ divides $AD$ in the ratio $s : (1-s) = 3/5 : 2/5 = 3 : 2$.
+**(b)** $AF : FD$. Since $s = 3/5$Point $F$ divides $AD$ in the ratio $s : (1-s) = 3/5 : 2/5 = 3 : 2$.
 
 So $AF : FD = 3 : 2$.
 
@@ -288,7 +288,7 @@ A curve is defined parametrically by:
 
 $$x = t^2 - 2t, \quad y = (t^2 - 2t)^2 - 2(t^2 - 2t)$$
 
-for $t \in \mathbb{R}$.
+For $t \in \mathbb{R}$.
 
 **(a)** Show that $y = x^2 - 2x$ and hence identify the curve as a standard form.
 
@@ -306,17 +306,17 @@ Then $x = f(t)$ and $y = f(f(t)) = f(x)$.
 
 Therefore $y = x^2 - 2x = (x-1)^2 - 1$.
 
-This is a parabola with vertex at $(1, -1)$, opening upward.
+This is a parabola with vertex at $(1, -1)$Opening upward.
 
-**(b)** $y = x^2 - 2x$. Since $x = (t-1)^2 - 1 \geq -1$ for all $t$, the domain of the curve is $x \geq -1$.
+**(b)** $y = x^2 - 2x$. Since $x = (t-1)^2 - 1 \geq -1$ for all $t$The domain of the curve is $x \geq -1$.
 
 $\frac{dy}{dx} = 2x - 2$. Setting this to zero: $x = 1$.
 
 At $x = 1$: $y = 1 - 2 = -1$. This is the vertex.
 
-$\frac{d^2y}{dx^2} = 2 > 0$, confirming a minimum at $(1, -1)$.
+$\frac{d^2y}{dx^2} = 2 > 0$Confirming a minimum at $(1, -1)$.
 
-The turning point is $(1, -1)$, which is a minimum.
+The turning point is $(1, -1)$Which is a minimum.
 
 Note: there are no other turning points. The curve is a standard parabola restricted to $x \geq -1$.
 
@@ -324,7 +324,7 @@ At $x = -1$ (when $t = 1$): $y = 1 + 2 = 3$. This is an endpoint of the parametr
 
 **(c)** The translation moves $(1, -1)$ to $(0, 0)$. The translation vector is $(-1, 1)$.
 
-Let $X = x - 1$ and $Y = y + 1$. Then $y = (x-1)^2 - 1$ becomes $Y - 1 = X^2 - 1$, i.e.:
+Let $X = x - 1$ and $Y = y + 1$. Then $y = (x-1)^2 - 1$ becomes $Y - 1 = X^2 - 1$I.e.:
 
 $$Y = X^2$$
 
@@ -332,4 +332,4 @@ In terms of the original variables (after translation, using $x$ and $y$ for the
 
 $$y = x^2$$
 
-So $a = 1$, $b = 0$, $c = 0$.
+So $a = 1$$b = 0$$c = 0$.

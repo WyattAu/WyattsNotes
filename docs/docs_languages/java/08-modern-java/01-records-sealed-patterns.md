@@ -9,8 +9,8 @@ slug: records-sealed-patterns
 ## Records (JEP 395, Java 16)
 
 A record is a transparent carrier for immutable data. The compiler generates the constructor, field
-accessors, `equals`, `hashCode`, and `toString` from a single declaration. This eliminates the
-single largest source of boilerplate in Java: the dumb data class.
+Accessors, `equals``hashCode`And `toString` from a single declaration. This eliminates the
+Single largest source of boilerplate in Java: the dumb data class.
 
 ### Syntax and Basic Usage
 
@@ -24,15 +24,15 @@ p.y();  // 4.0
 System.out.println(p);  // Point[x=3.0, y=4.0]
 ```
 
-The record components (`x`, `y`) are declared in the state space of the class. The compiler
-generates a `final` private field for each component, a public accessor method with the same name
+The record components (`x``y`) are declared in the state space of the class. The compiler
+Generates a `final` private field for each component, a public accessor method with the same name
 (no `get` prefix), and a canonical constructor that assigns each parameter to its corresponding
-field. The accessor is a method, not a field access -- this distinction matters for binary
-compatibility and for frameworks that rely on JavaBeans conventions.
+Field. The accessor is a method, not a field access -- this distinction matters for binary
+Compatibility and for frameworks that rely on JavaBeans conventions.
 
 ### The Generated Methods
 
-For `record Point(double x, double y)`, the compiler generates:
+For `record Point(double x, double y)`The compiler generates:
 
 ```java
 public final class Point extends java.lang.Record {
@@ -67,13 +67,13 @@ public final class Point extends java.lang.Record {
 ```
 
 The `equals` implementation uses `==` for primitive components and `Objects.equals` for reference
-components. This is a structural equality comparison, not identity comparison. The `hashCode`
-implementation is consistent with `equals` by contract.
+Components. This is a structural equality comparison, not identity comparison. The `hashCode`
+Implementation is consistent with `equals` by contract.
 
 ### Compact Constructors
 
 A compact constructor lets you validate or normalize components without repeating the parameter
-list:
+List:
 
 ```java
 public record Age(int value) {
@@ -86,8 +86,8 @@ public record Age(int value) {
 ```
 
 The compact constructor does not declare parameters -- it implicitly has access to all record
-components. Any assignment to a component in the compact constructor is treated as an assignment to
-the corresponding field in the canonical constructor. This means you can normalize values:
+Components. Any assignment to a component in the compact constructor is treated as an assignment to
+The corresponding field in the canonical constructor. This means you can normalize values:
 
 ```java
 public record NormalizedString(String value) {
@@ -118,12 +118,12 @@ public record Circle(double radius) {
 ```
 
 Overriding an accessor does not change the field storage. The field `radius` is still stored
-directly. The accessor intercept is the only change.
+Directly. The accessor intercept is the only change.
 
 ### Additional Fields and Methods
 
 Records can have static fields, static methods, and instance methods. They cannot have instance
-fields beyond the record components:
+Fields beyond the record components:
 
 ```java
 public record Money(long cents) {
@@ -140,15 +140,15 @@ public record Money(long cents) {
 ```
 
 Instance fields that are not record components are prohibited because records are shallowly
-immutable. Allowing mutable instance state would violate that contract.
+Immutable. Allowing mutable instance state would violate that contract.
 
 ### Serialization
 
 Records implement `java.io.Serializable` if they choose to (by declaring `implements Serializable`).
 The serialization mechanism is different from regular classes: the canonical constructor is used for
-deserialization, which means validation in the compact constructor is enforced during
-deserialization. This closes a long-standing attack vector where malicious serialized data could
-bypass constructor validation.
+Deserialization, which means validation in the compact constructor is enforced during
+Deserialization. This closes a long-standing attack vector where malicious serialized data could
+Bypass constructor validation.
 
 ```java
 public record AuthToken(String token, long expiryEpochMs) implements Serializable {
@@ -164,25 +164,25 @@ public record AuthToken(String token, long expiryEpochMs) implements Serializabl
 
 ### Records vs Lombok `@Value`
 
-| Feature                 | Records                | Lombok `@Value`                  |
+| Feature | Records | Lombok `@Value` |
 | ----------------------- | ---------------------- | -------------------------------- |
-| Language support        | Built-in since Java 16 | Annotation processor (library)   |
-| Equals/hashCode         | Structural, generated  | Structural, generated            |
-| Mutability              | Enforced immutable     | Enforced immutable               |
-| Extensibility           | Can extend `Record`    | Can extend any class             |
-| Compact constructors    | Yes                    | No (use `@Builder` etc.)         |
-| Deserialization safety  | Validates on read      | Uses reflection, can be bypassed |
-| IDE support             | Native                 | Requires plugin                  |
-| Framework compatibility | Full (standard Java)   | May need annotation processing   |
+| Language support | Built-in since Java 16 | Annotation processor (library) |
+| Equals/hashCode | Structural, generated | Structural, generated |
+| Mutability | Enforced immutable | Enforced immutable |
+| Extensibility | Can extend `Record` | Can extend any class |
+| Compact constructors | Yes | No (use `@Builder` etc.) |
+| Deserialization safety | Validates on read | Uses reflection, can be bypassed |
+| IDE support | Native | Requires plugin |
+| Framework compatibility | Full (standard Java) | May need annotation processing |
 
 Records are the standard mechanism going forward. Lombok remains useful in codebases that need
-features records do not support (mutable data carriers, builders with complex logic, etc.), but for
-new code, records should be the default.
+Features records do not support (mutable data carriers, builders with complex logic, etc.), but for
+New code, records should be the default.
 
 ### Nested Records
 
 Records can be nested inside other records or classes. This is useful for modeling hierarchical
-data:
+Data:
 
 ```java
 public record Person(String name, Address address) {
@@ -215,7 +215,7 @@ public record Result<T, E>(T value, E error) {
 ## Sealed Classes (JEP 409, Java 17)
 
 A sealed class restricts which other classes or interfaces can extend or implement it. This makes
-class hierarchies explicit and enables the compiler to enforce exhaustiveness in pattern matching.
+Class hierarchies explicit and enables the compiler to enforce exhaustiveness in pattern matching.
 
 ### Syntax
 
@@ -238,8 +238,8 @@ public final class Triangle extends Shape {
 ```
 
 Permitted subclasses must be in the same module (if the sealed class is in a named module) or the
-same package (if in the unnamed module). Each permitted subclass must use exactly one of three
-modifiers:
+Same package (if in the unnamed module). Each permitted subclass must use exactly one of three
+Modifiers:
 
 - **`final`** -- cannot be extended further
 - **`sealed`** -- continues the sealed hierarchy
@@ -308,9 +308,9 @@ public final class JsonCodec implements Codec {
 ### Migration from Abstract Classes
 
 Before sealed classes, modeling a closed hierarchy required either abstract classes with
-package-private constructors (fragile, not enforced by the compiler) or enum singletons (verbose for
-stateful types). Sealed classes give you the closed hierarchy guarantee of enums with the
-flexibility of regular class hierarchies:
+Package-private constructors (fragile, not enforced by the compiler) or enum singletons (verbose for
+Stateful types). Sealed classes give you the closed hierarchy guarantee of enums with the
+Flexibility of regular class hierarchies:
 
 ```java
 // Before: abstract class with package-private constructor
@@ -330,13 +330,13 @@ public final class Delete extends Command { }
 ```
 
 The sealed version is both more readable and more correct. Any attempt to extend `Command` from
-outside the permitted list is a compile-time error.
+Outside the permitted list is a compile-time error.
 
 ## Pattern Matching for `instanceof` (JEP 394, Java 16)
 
 Pattern matching for `instanceof` eliminates the need for explicit casting when type-checking. The
-pattern variable is bound only if the `instanceof` test succeeds, and it is in scope only in the
-branch where it is guaranteed to be non-null.
+Pattern variable is bound only if the `instanceof` test succeeds, and it is in scope only in the
+Branch where it is guaranteed to be non-null.
 
 ### Basic Usage
 
@@ -354,7 +354,7 @@ if (obj instanceof String s) {
 ```
 
 The pattern variable `s` is only in scope inside the `if` block. The compiler guarantees that `s` is
-non-null when the block executes -- the `instanceof` check already ruled out `null`.
+Non-null when the block executes -- the `instanceof` check already ruled out `null`.
 
 ### Pattern Variables in Conditions
 
@@ -365,8 +365,8 @@ if (obj instanceof String s && s.length() &gt; 5) {
 ```
 
 The pattern variable `s` is in scope for the remainder of the enclosing expression after it is
-introduced. This works with `&&` but not with `||` -- the right operand of `||` executes when the
-left operand is false, which would mean `s` is not bound.
+Introduced. This works with `&&` but not with `||` -- the right operand of `||` executes when the
+Left operand is false, which would mean `s` is not bound.
 
 ### Pattern Matching in Expressions
 
@@ -390,13 +390,13 @@ if (obj instanceof String s) {  // Compile error: s already defined
 ```
 
 This is intentional -- it prevents confusing rebindings where a variable name suddenly refers to a
-different value.
+Different value.
 
 ## Switch Expressions (JEP 441, Java 21)
 
 Switch expressions are a major evolution of the traditional `switch` statement. They can return a
-value, use arrow syntax, and the compiler can verify exhaustiveness when switching on sealed types
-or enums.
+Value, use arrow syntax, and the compiler can verify exhaustiveness when switching on sealed types
+Or enums.
 
 ### Arrow Syntax and `yield`
 
@@ -412,7 +412,7 @@ String result = switch (status) {
 ```
 
 Arrow syntax (`->`) means "if this case matches, evaluate the expression on the right." There is no
-fall-through. When you need a block with multiple statements, use `yield` to return a value:
+Fall-through. When you need a block with multiple statements, use `yield` to return a value:
 
 ```java
 String result = switch (status) {
@@ -431,7 +431,7 @@ String result = switch (status) {
 ### Pattern Matching in Switch
 
 JEP 441 extends switch to work with type patterns, guarded patterns, and record patterns. This is
-where sealed classes become truly powerful:
+Where sealed classes become truly powerful:
 
 ```java
 public static double area(Shape shape) {
@@ -445,8 +445,8 @@ public static double area(Shape shape) {
 ```
 
 The compiler knows all permitted subclasses of `Shape` and verifies that every case is covered. If
-you add a new `Shape` subtype and forget to update the switch, it is a compile-time error, not a
-runtime bug.
+You add a new `Shape` subtype and forget to update the switch, it is a compile-time error, not a
+Runtime bug.
 
 ### Guarded Patterns
 
@@ -496,7 +496,7 @@ public static String deepDescribe(Expr expr) {
 ### Null Handling in Switch
 
 A traditional `switch` on `null` throws `NullPointerException`. Switch expressions (with JEP 441)
-allow an explicit `null` case:
+Allow an explicit `null` case:
 
 ```java
 return switch (shape) {
@@ -510,7 +510,7 @@ return switch (shape) {
 ### Exhaustiveness and Sealed Types
 
 When switching on a sealed type, the compiler performs exhaustiveness checking. It considers the
-permitted subtypes, their record components, and any `default` or `null` cases. This transforms the
+Permitted subtypes, their record components, and any `default` or `null` cases. This transforms the
 Visitor pattern from a runtime dispatch mechanism into a compile-time guarantee:
 
 ```java
@@ -534,7 +534,7 @@ static void process(Shape shape) {
 ## Text Blocks (JEP 378, Java 15)
 
 Text blocks provide a way to write multi-line strings without escape sequences for newlines and
-quotes. They use triple double quotes as delimiters.
+Quotes. They use triple double quotes as delimiters.
 
 ### Basic Syntax
 
@@ -549,15 +549,15 @@ String json = """
 ```
 
 The closing `"""` determines the indentation. The compiler removes the common leading whitespace
-from all lines based on the position of the closing delimiter. In the example above, the content is
-indented 4 spaces relative to the closing `"""`, so 4 spaces are stripped from every line.
+From all lines based on the position of the closing delimiter. In the example above, the content is
+Indented 4 spaces relative to the closing `"""`So 4 spaces are stripped from every line.
 
 ### Escaping Rules
 
 Most escape sequences work the same inside text blocks as in regular strings. The key differences:
 
 - **No need to escape `"` inside a text block** -- a single `"` or `""` does not terminate the text
-  block. Only `"""` terminates it.
+ block. Only `"""` terminates it.
 - **`\` at end of line** prevents a line break, joining the lines:
   ```java
   String query = """
@@ -568,12 +568,12 @@ Most escape sequences work the same inside text blocks as in regular strings. Th
       name""";
   ```
 - **`\s`** translates to a single ASCII space, useful for preserving trailing whitespace that would
-  otherwise be stripped.
+ otherwise be stripped.
 
 ### Common Pitfalls
 
 **Trailing whitespace is stripped.** The compiler removes all trailing whitespace from each line in
-a text block. If you need trailing spaces, use `\s`:
+A text block. If you need trailing spaces, use `\s`:
 
 ```java
 String table = """
@@ -586,8 +586,8 @@ String table = """
 ```
 
 **Closing delimiter position matters.** The closing `"""` must be on its own line (or on the last
-line of content) for the indentation algorithm to work correctly. Placing it at column 0 removes no
-indentation:
+Line of content) for the indentation algorithm to work correctly. Placing it at column 0 removes no
+Indentation:
 
 ```java
 // 0 indentation stripped (closing """ at column 0)
@@ -604,7 +604,7 @@ String b = """
 ```
 
 **Inconsistent indentation causes errors.** If the closing delimiter is more indented than some
-content lines, the content lines have negative indentation, which is a compile error:
+Content lines, the content lines have negative indentation, which is a compile error:
 
 ```java
 String bad = """
@@ -618,8 +618,8 @@ String bad = """
 ### Records Are Not Always a Drop-In Replacement
 
 Records cannot extend other classes (they implicitly extend `java.lang.Record`). If you need
-inheritance, use a regular class. Records also cannot have mutable state -- if your data carrier
-needs to be mutated after construction, a record is the wrong tool.
+Inheritance, use a regular class. Records also cannot have mutable state -- if your data carrier
+Needs to be mutated after construction, a record is the wrong tool.
 
 ```java
 // This does NOT compile
@@ -633,8 +633,8 @@ public record MutablePoint(double x, double y) {
 ### Sealed Class Permits Must Be Accessible
 
 The permitted subclasses must be accessible to the sealed class at compile time. If they are in a
-different package, they must be `public`. If they are in the same package but not public, they must
-be at least package-private.
+Different package, they must be `public`. If they are in the same package but not public, they must
+Be at least package-private.
 
 ### Pattern Variables and Effectively Final
 
@@ -649,7 +649,7 @@ if (obj instanceof String s) {
 ### Switch Expression Fall-Through
 
 Arrow syntax in switch expressions does not fall through. If you use colon syntax (the traditional
-style), fall-through still applies, and you must use `break` or `yield` explicitly:
+Style), fall-through still applies, and you must use `break` or `yield` explicitly:
 
 ```java
 // Arrow: no fall-through
@@ -671,30 +671,38 @@ Always prefer arrow syntax unless you deliberately need fall-through.
 
 ## JEP Reference Table
 
-| JEP | Feature                          | Java Version | Status   |
+| JEP | Feature | Java Version | Status |
 | --- | -------------------------------- | ------------ | -------- |
-| 355 | Text Blocks (preview)            | 13           | Preview  |
-| 368 | Text Blocks (second preview)     | 14           | Preview  |
-| 378 | Text Blocks                      | 15           | Standard |
-| 305 | Pattern Matching for instanceof  | 14           | Preview  |
-| 375 | Pattern Matching for instanceof  | 15           | Preview  |
-| 394 | Pattern Matching for instanceof  | 16           | Standard |
-| 325 | Switch Expressions (preview)     | 12           | Preview  |
-| 361 | Switch Expressions (second prev) | 13           | Preview  |
-| 394 | Switch Expressions               | 14           | Standard |
-| 409 | Sealed Classes                   | 17           | Standard |
-| 395 | Records                          | 16           | Standard |
-| 440 | Record Patterns (preview)        | 19           | Preview  |
-| 441 | Pattern Matching for switch      | 21           | Standard |
-| 443 | Unnamed Patterns and Variables   | 22           | Standard |
+| 355 | Text Blocks (preview) | 13 | Preview |
+| 368 | Text Blocks (second preview) | 14 | Preview |
+| 378 | Text Blocks | 15 | Standard |
+| 305 | Pattern Matching for instanceof | 14 | Preview |
+| 375 | Pattern Matching for instanceof | 15 | Preview |
+| 394 | Pattern Matching for instanceof | 16 | Standard |
+| 325 | Switch Expressions (preview) | 12 | Preview |
+| 361 | Switch Expressions (second prev) | 13 | Preview |
+| 394 | Switch Expressions | 14 | Standard |
+| 409 | Sealed Classes | 17 | Standard |
+| 395 | Records | 16 | Standard |
+| 440 | Record Patterns (preview) | 19 | Preview |
+| 441 | Pattern Matching for switch | 21 | Standard |
+| 443 | Unnamed Patterns and Variables | 22 | Standard |
 
 ## See Also
 
 - [Concurrency](../06-concurrency/01-concurrency.md) -- pattern matching and sealed classes
-  integrate with concurrent data structures
+ integrate with concurrent data structures
 - [Collections Framework](../04-collections/01-collections-framework.md) -- records as collection
-  element types
+ element types
 - [Style and Patterns](../07-best-practices/01-style-and-patterns.md) -- when to use records vs
-  regular classes in production code
+ regular classes in production code
 - [Virtual Threads and Structured Concurrency](../08-modern-java/02-virtual-threads-structured-concurrency.md)
-  -- modern concurrency features
+ -- modern concurrency features
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

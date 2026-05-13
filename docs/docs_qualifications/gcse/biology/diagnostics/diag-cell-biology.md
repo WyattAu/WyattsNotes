@@ -36,7 +36,7 @@ hide_table_of_contents: true
 
 **Nucleus:** Contains genetic material (DNA) as chromosomes. It controls cell activities by regulating gene expression (which proteins are made). The nuclear envelope has pores for mRNA to exit.
 
-(d) Two differences: (1) Prokaryotes have no membrane-bound organelles (no nucleus, mitochondria, or ER); their DNA is a single circular chromosome in the cytoplasm. Eukaryotes have membrane-bound organelles and linear chromosomes in a nucleus. (2) Prokaryotes are generally much smaller (1--5 $\mu$m) than eukaryotes (10--100 $\mu$m). Prokaryotes may also have plasmids (small extra DNA rings) and a capsule, which eukaryotes lack.
+(d) Two differences: (1) Prokaryotes have no membrane-bound organelles (no nucleus, mitochondria, or ER); their DNA is a single circular chromosome in the cytoplasm. Eukaryotes have membrane-bound organelles and linear chromosomes in a nucleus. (2) Prokaryotes are generally much smaller (1--5 $\mu$M) than eukaryotes (10--100 $\mu$M). Prokaryotes may also have plasmids (small extra DNA rings) and a capsule, which eukaryotes lack.
 
 ### UT-2: Specialised Cells
 **Question:** Describe how each of the following cells is specialised for its function: (a) red blood cell, (b) sperm cell, (c) root hair cell, (d) nerve cell (neuron).
@@ -52,17 +52,17 @@ hide_table_of_contents: true
 (d) **Nerve cell (neuron):** Has long axons to transmit electrical impulses over long distances. The axon is insulated by a myelin sheath that speeds up impulse transmission. Has branched endings (dendrites) to connect to many other neurons, forming complex networks for processing information.
 
 ### UT-3: Microscopy and Magnification
-**Question:** (a) Calculate the total magnification of a microscope with a 10x eyepiece lens and a 40x objective lens. (b) A cell is observed to be 4.2 mm across the eyepiece scale. If the total magnification is 400x, calculate the actual size of the cell in $\mu$m. (c) Explain the difference between resolution and magnification. (d) Describe two advantages of electron microscopy over light microscopy.
+**Question:** (a) Calculate the total magnification of a microscope with a 10x eyepiece lens and a 40x objective lens. (b) A cell is observed to be 4.2 mm across the eyepiece scale. If the total magnification is 400x, calculate the actual size of the cell in $\mu$M. (c) Explain the difference between resolution and magnification. (d) Describe two advantages of electron microscopy over light microscopy.
 
 **Solution:**
 
 (a) Total magnification $= 10 \times 40 = 400\times$.
 
-(b) Actual size $= \text{image size{} / \text{magnification{} = 4.2 \text{ mm{} / 400 = 0.0105 \text{ mm{} = 10.5 \mu$m.
+(b) Actual size $= \text{image size{} / \text{magnification{} = 4.2 \text{ mm{} / 400 = 0.0105 \text{ mm{} = 10.5 \mu$M.
 
 (c) **Magnification** is how much larger the image appears compared to the actual object (e.g., $400\times$ means 400 times larger). **Resolution** is the ability to distinguish between two closely spaced objects as separate -- the minimum distance at which two points can be seen as distinct. Higher resolution means finer detail is visible.
 
-(d) Two advantages: (1) **Much higher resolution:** Electron microscopes use electrons (much shorter wavelength than light) and can resolve structures down to about 0.2 nm, compared to about 200 nm for light microscopes. This reveals organelles like ribosomes, the structure of membranes, and internal details of mitochondria. (2) **Much higher effective magnification:** Electron microscopes can achieve magnifications of up to $2,000,000\times$, compared to about $2000\times$ for light microscopes. Disadvantages: specimens must be in a vacuum (dead), preparation is complex, and images are black and white.
+(d) Two advantages: (1) **Much higher resolution:** Electron microscopes use electrons (much shorter wavelength than light) and can resolve structures down to about 0.2 nm, compared to about 200 nm for light microscopes. This reveals organelles like ribosomes, the structure of membranes, and internal details of mitochondria. (2) **Much higher effective magnification:** Electron microscopes can achieve magnifications of up to $2,000,000\times$Compared to about $2000\times$ for light microscopes. Disadvantages: specimens must be in a vacuum (dead), preparation is complex, and images are black and white.
 
 ---
 
@@ -100,7 +100,7 @@ hide_table_of_contents: true
 (d) Mitosis is important for: (1) **Growth:** A multicellular organism grows by producing more cells through mitosis, increasing the number of cells while maintaining the same chromosome number and genetic information. (2) **Repair:** Damaged or worn-out cells are replaced by new cells produced by mitosis (e.g., skin cells, blood cells, stomach lining cells). (3) **Asexual reproduction:** Some organisms reproduce by mitosis, producing offspring genetically identical to the parent.
 
 ### IT-3: Microscopy and Cell Size (with Bioenergetics)
-**Question:** (a) The diameter of a typical animal cell is 20 $\mu$m. Calculate how many cells would fit along a line 1 mm long. (b) An electron micrograph shows a mitochondrion with a length of 5 mm on the image. The actual length is 1.5 $\mu$m. Calculate the magnification. (c) A chloroplast is observed to be 3.8 mm long at a magnification of 15,000x. Calculate the actual length in $\mu$m. (d) Explain why most cells are small (typically 10--100 $\mu$m) rather than large, relating your answer to the surface area to volume ratio.
+**Question:** (a) The diameter of a typical animal cell is 20 $\mu$M. Calculate how many cells would fit along a line 1 mm long. (b) An electron micrograph shows a mitochondrion with a length of 5 mm on the image. The actual length is 1.5 $\mu$M. Calculate the magnification. (c) A chloroplast is observed to be 3.8 mm long at a magnification of 15,000x. Calculate the actual length in $\mu$M. (d) Explain why most cells are small ( 10--100 $\mu$M) rather than large, relating your answer to the surface area to volume ratio.
 
 **Solution:**
 

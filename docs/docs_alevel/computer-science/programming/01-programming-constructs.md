@@ -14,16 +14,16 @@ slug: programming-constructs
 ### Variables
 
 A **variable** is a named storage location in memory that holds a value which can change during
-program execution.
+Program execution.
 
 ### Primitive Data Types
 
-| Type      | Typical Size | Range                     | Python equivalent |
+| Type | Typical Size | Range | Python equivalent |
 | --------- | ------------ | ------------------------- | ----------------- |
-| Integer   | 4 bytes      | $[-2^{31}, 2^{31}-1]$     | `int` (unbounded) |
-| Float     | 8 bytes      | IEEE 754 double precision | `float`           |
-| Character | 1 byte       | ASCII/Unicode             | `str` (length 1)  |
-| Boolean   | 1 byte       | True / False              | `bool`            |
+| Integer | 4 bytes | $[-2^{31}, 2^{31}-1]$ | `int` (unbounded) |
+| Float | 8 bytes | IEEE 754 double precision | `float` |
+| Character | 1 byte | ASCII/Unicode | `str` (length 1) |
+| Boolean | 1 byte | True / False | `bool` |
 
 ### Constants
 
@@ -67,7 +67,7 @@ else:
 ### Nested Selection
 
 Selection statements can be nested, but excessive nesting reduces readability. Use guard clauses or
-early returns where possible.
+Early returns where possible.
 
 ```python
 def classify_grade(score):
@@ -85,7 +85,7 @@ def classify_grade(score):
 ### Case/Switch Statements
 
 Some languages (not Python without `match`/`case` in 3.10+) provide switch statements for multi-way
-branching.
+Branching.
 
 <hr />
 
@@ -100,8 +100,8 @@ for i in range(n):
     print(i)
 ```
 
-**Invariant for `for i in range(n)`:** At the start of iteration $i$, the loop body has executed
-exactly $i$ times.
+**Invariant for `for i in range(n)`:** At the start of iteration $i$The loop body has executed
+Exactly $i$ times.
 
 ### Indefinite Iteration (While Loop)
 
@@ -132,15 +132,15 @@ def sum_n(n):
 
 **Proof:**
 
-- _Init:_ Before the first iteration, $i = 1$, `total = 0`. Sum of empty set = 0. ✓
-- _Maintenance:_ `total` increases by $i$, then $i$ increases by 1. After: `total = 1 + ... + i`,
-  and next $i' = i + 1$, so invariant holds.
+- _Init:_ Before the first iteration, $i = 1$`total = 0`. Sum of empty set = 0. ✓
+- _Maintenance:_ `total` increases by $i$Then $i$ increases by 1. After: `total = 1 + ... + i`
+ and next $i' = i + 1$So invariant holds.
 - _Termination:_ $i = n + 1$. `total = 1 + 2 + ... + n = n(n+1)/2`. ✓
 
 ### Do-While / Repeat-Until
 
 Executes the body at least once, then checks the condition. Python does not have a native do-while;
-emulate with:
+Emulate with:
 
 ```python
 while True:
@@ -151,10 +151,10 @@ while True:
 
 :::info
 Board-specific **AQA** uses specific pseudocode format with `IF ... THEN ... ELSE ... ENDIF`
-and `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
-function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
-local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
-requires subroutines with parameters.
+And `WHILE ... ENDWHILE`. **CIE (9618)** uses its own pseudocode format; requires procedure and
+Function definitions with parameters. **OCR (A)** uses OCR-specific pseudocode format; requires
+Local and global variable scope understanding. **Edexcel** uses pseudocode similar to Python-style;
+Requires subroutines with parameters.
 :::
 
 <hr />
@@ -197,8 +197,8 @@ $$\mathrm{factorial}(n+1) = (n+1) \times \mathrm{factorial}(n) = (n+1) \times n!
 
 **Proof.** Define a **variant function** $V(n) = n$. Each recursive call decreases $V$ by 1:
 $V(n-1) = n - 1 \lt{} n = V(n)$. $V$ is a non-negative integer that strictly decreases. By the
-well-ordering principle, $V$ must eventually reach a base case ($V = 0$ or $V = 1$). Therefore, the
-recursion terminates. $\square$
+Well-ordering principle, $V$ must eventually reach a base case ($V = 0$ or $V = 1$). Therefore, the
+Recursion terminates. $\square$
 
 ### Example: Fibonacci
 
@@ -212,13 +212,13 @@ def fib(n):
 **Complexity:** $T(n) = T(n-1) + T(n-2) + O(1)$. This gives $T(n) = \Theta(\phi^n)$ where
 $\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.618$ (the golden ratio).
 
-**Proof sketch.** The recurrence has characteristic equation $r^2 = r + 1$, giving roots $\phi$ and
-$\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$,
+**Proof sketch.** The recurrence has characteristic equation $r^2 = r + 1$Giving roots $\phi$ and
+$\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since $|\psi| \lt{} 1$
 $T(n) = \Theta(\phi^n)$. $\square$
 
 :::warning
-warning
-iteration for $O(n)$ time:
+Warning
+Iteration for $O(n)$ time:
 
 ```python
 def fib_iter(n):
@@ -256,11 +256,11 @@ Minimum moves = $2^n - 1$. $\square$
 
 ### Procedures vs Functions
 
-| Feature      | Procedure                       | Function        |
+| Feature | Procedure | Function |
 | ------------ | ------------------------------- | --------------- |
-| Return value | None                            | Returns a value |
-| Purpose      | Perform an action (side effect) | Compute a value |
-| Called as    | Statement                       | Expression      |
+| Return value | None | Returns a value |
+| Purpose | Perform an action (side effect) | Compute a value |
+| Called as | Statement | Expression |
 
 ```python
 def print_report(data):    # Procedure
@@ -274,9 +274,9 @@ def calculate_average(data):  # Function
 ### Parameters
 
 - **By value:** A copy of the argument is passed. Changes inside the function do not affect the
-  original. (Default in Python for immutable types.)
+ original. (Default in Python for immutable types.)
 - **By reference:** A reference to the original is passed. Changes affect the original. (Python
-  passes object references; mutable objects like lists can be modified.)
+ passes object references; mutable objects like lists can be modified.)
 
 ```python
 def modify_list(lst):
@@ -293,7 +293,7 @@ print(my_list)  # [1, 2, 3, 4]
 ## Problem Set
 
 **Problem 1.** Write a recursive function to compute the sum of digits of a positive integer. Prove
-its correctness by induction.
+Its correctness by induction.
 
 <details>
 <summary>Answer</summary>
@@ -307,15 +307,15 @@ def sum_digits(n):
 
 **Correctness.** By induction on the number of digits $d$.
 
-Base case ($d = 1$): $n \lt{} 10$, returns $n$. Sum of digits = $n$. ✓
+Base case ($d = 1$): $n \lt{} 10$Returns $n$. Sum of digits = $n$. ✓
 
 Inductive step: Assume correct for all numbers with $\leq d$ digits. For a $(d+1)$-digit number $n$:
 $n \bmod 10$ gives the last digit, and $n // 10$ gives the remaining $d$ digits. By the inductive
-hypothesis, `sum_digits(n // 10)` correctly sums those $d$ digits. Adding the last digit gives the
-total sum. ✓
+Hypothesis, `sum_digits(n // 10)` correctly sums those $d$ digits. Adding the last digit gives the
+Total sum. ✓
 
 **Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor \lt{} n$
-for $n \geq 10$. ✓
+For $n \geq 10$. ✓
 
 </details>
 
@@ -362,29 +362,29 @@ $\square$
 </details>
 
 **Problem 4.** Explain the difference between iteration and recursion. When would you prefer one
-over the other?
+Over the other?
 
 <details>
 <summary>Answer</summary>
 
-| Aspect      | Iteration               | Recursion                          |
+| Aspect | Iteration | Recursion |
 | ----------- | ----------------------- | ---------------------------------- |
-| Mechanism   | Loop constructs         | Function calls itself              |
-| Memory      | $O(1)$ extra            | $O(n)$ stack frames                |
-| Overhead    | Minimal                 | Function call overhead per step    |
+| Mechanism | Loop constructs | Function calls itself |
+| Memory | $O(1)$ extra | $O(n)$ stack frames |
+| Overhead | Minimal | Function call overhead per step |
 | Readability | Better for simple loops | Better for tree/divide-and-conquer |
-| Risk        | Infinite loop           | Stack overflow                     |
+| Risk | Infinite loop | Stack overflow |
 
 Prefer iteration when: the problem has a natural loop structure, memory is constrained, or
-performance is critical.
+Performance is critical.
 
 Prefer recursion when: the problem has a natural recursive structure (trees, divide-and-conquer),
-the depth is bounded (e.g., $\log n$), or readability is paramount.
+The depth is bounded (e.g., $\log n$), or readability is paramount.
 
 </details>
 
 **Problem 5.** Write a function that uses recursion to check if a string is a palindrome. Prove
-termination.
+Termination.
 
 <details>
 <summary>Answer</summary>
@@ -400,7 +400,7 @@ def is_palindrome(s):
 
 **Termination.** Variant function: $V(s) = \mathrm{len}(s)$. Each recursive call:
 $V(s[1:-1]) = \mathrm{len}(s) - 2 \lt{} V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a
-non-negative integer that strictly decreases, the function must reach a base case. ✓
+Non-negative integer that strictly decreases, the function must reach a base case. ✓
 
 </details>
 
@@ -419,15 +419,15 @@ print(x)
 
 Output: `10`
 
-Explanation: Python passes the integer `10` by object reference. Inside `modify`, `x = 20` rebinds
-the local parameter `x` to a new integer object `20`. This does not affect the global `x`, which
-remains `10`. Integers are immutable in Python, so there is no way to modify the original value
-through the parameter.
+Explanation: Python passes the integer `10` by object reference. Inside `modify``x = 20` rebinds
+The local parameter `x` to a new integer object `20`. This does not affect the global `x`Which
+Remains `10`. Integers are immutable in Python, so there is no way to modify the original value
+Through the parameter.
 
 </details>
 
 **Problem 7.** Write a function `gcd(a, b)` using Euclid's algorithm. Prove it terminates and
-returns the GCD.
+Returns the GCD.
 
 <details>
 <summary>Answer</summary>
@@ -445,13 +445,13 @@ $b = 0$. ✓
 
 **Correctness.** We prove $\gcd(a, b) = \gcd(b, a \bmod b)$.
 
-Let $d = \gcd(a, b)$. Then $d | a$ and $d | b$, so $d | (a - q \cdot b) = a \bmod b$. Hence
+Let $d = \gcd(a, b)$. Then $d | a$ and $d | b$So $d | (a - q \cdot b) = a \bmod b$. Hence
 $d | \gcd(b, a \bmod b)$.
 
-Conversely, let $e = \gcd(b, a \bmod b)$. Then $e | b$ and $e | (a \bmod b)$, so
+Conversely, let $e = \gcd(b, a \bmod b)$. Then $e | b$ and $e | (a \bmod b)$So
 $e | (q \cdot b + a \bmod b) = a$. Hence $e | \gcd(a, b)$.
 
-Since $d | e$ and $e | d$, $d = e$. ✓
+Since $d | e$ and $e | d$$d = e$. ✓
 
 Base case: $\gcd(a, 0) = a$. ✓
 
@@ -514,11 +514,11 @@ for i in range(1, 4):
 
 **Trace:**
 
-| Iteration | `i` | `j` range                   | Output             |
+| Iteration | `i` | `j` range | Output |
 | --------- | --- | --------------------------- | ------------------ |
-| Outer 1   | 1   | `range(1, 2)` — j = 1       | `*` then newline   |
-| Outer 2   | 2   | `range(1, 3)` — j = 1, 2    | `**` then newline  |
-| Outer 3   | 3   | `range(1, 4)` — j = 1, 2, 3 | `***` then newline |
+| Outer 1 | 1 | `range(1, 2)` — j = 1 | `*` then newline |
+| Outer 2 | 2 | `range(1, 3)` — j = 1, 2 | `**` then newline |
+| Outer 3 | 3 | `range(1, 4)` — j = 1, 2, 3 | `***` then newline |
 
 **Output:**
 
@@ -531,7 +531,7 @@ for i in range(1, 4):
 ### Worked Example: Input Validation Loop
 
 Write a function that repeatedly asks the user for an integer between 1 and 100 (inclusive) until
-valid input is provided.
+Valid input is provided.
 
 ```python
 def get_valid_score():
@@ -598,12 +598,12 @@ factorial(4)
 
 Stack at deepest point (4 frames):
 
-| Frame | `n` | Waiting for                      |
+| Frame | `n` | Waiting for |
 | ----- | --- | -------------------------------- |
-| 1     | 4   | `factorial(3)`                   |
-| 2     | 3   | `factorial(2)`                   |
-| 3     | 2   | `factorial(1)`                   |
-| 4     | 1   | (base case, returns immediately) |
+| 1 | 4 | `factorial(3)` |
+| 2 | 3 | `factorial(2)` |
+| 3 | 2 | `factorial(1)` |
+| 4 | 1 | (base case, returns immediately) |
 
 ### Trace: Fibonacci of 5
 
@@ -639,7 +639,7 @@ returns 5
 ```
 
 Note: `fib(3)` is computed twice, `fib(2)` is computed three times. This redundancy is why naive
-recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeatedly.
+Recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeatedly.
 
 <hr />
 
@@ -649,11 +649,11 @@ recursive Fibonacci is $O(\phi^n)$ — it recomputes the same subproblems repeat
 
 Off-by-one errors occur when a loop iterates one time too many or one time too few.
 
-| Error               | Code                                       | Fix                                                   |
+| Error | Code | Fix |
 | ------------------- | ------------------------------------------ | ----------------------------------------------------- |
-| Fencepost           | `for i in range(1, n)` — iterates 1 to n-1 | Use `range(1, n + 1)` if you need 1 to n              |
-| Off-by-one in while | `while i &lt; n` vs `while i &lt;= n`      | Decide whether the boundary is inclusive or exclusive |
-| Array indexing      | `array[len(array)]` — IndexError           | Valid indices are 0 to `len(array) - 1`               |
+| Fencepost | `for i in range(1, n)` — iterates 1 to n-1 | Use `range(1, n + 1)` if you need 1 to n |
+| Off-by-one in while | `while i &lt; n` vs `while i &lt;= n` | Decide whether the boundary is inclusive or exclusive |
+| Array indexing | `array[len(array)]` — IndexError | Valid indices are 0 to `len(array) - 1` |
 
 ### Infinite Loops
 
@@ -746,22 +746,22 @@ Trace each `(i, j)` pair:
 
 | `i` | `j` | Condition | `result` change | `result` |
 | --- | --- | --------- | --------------- | -------- |
-| 0   | 0   | i == j    | +1              | 1        |
-| 0   | 1   | else      | +3              | 4        |
-| 0   | 2   | else      | +3              | 7        |
-| 1   | 0   | i &gt; j  | +2              | 9        |
-| 1   | 1   | i == j    | +1              | 10       |
-| 1   | 2   | else      | +3              | 13       |
-| 2   | 0   | i &gt; j  | +2              | 15       |
-| 2   | 1   | i &gt; j  | +2              | 17       |
-| 2   | 2   | i == j    | +1              | 18       |
+| 0 | 0 | i == j | +1 | 1 |
+| 0 | 1 | else | +3 | 4 |
+| 0 | 2 | else | +3 | 7 |
+| 1 | 0 | i &gt; j | +2 | 9 |
+| 1 | 1 | i == j | +1 | 10 |
+| 1 | 2 | else | +3 | 13 |
+| 2 | 0 | i &gt; j | +2 | 15 |
+| 2 | 1 | i &gt; j | +2 | 17 |
+| 2 | 2 | i == j | +1 | 18 |
 
 Output: `18`
 
 </details>
 
 **Problem 2.** Write a recursive function `binary_search(arr, target, low, high)` that returns the
-index of `target` in a sorted array, or `-1` if not found. Prove that it terminates.
+Index of `target` in a sorted array, or `-1` if not found. Prove that it terminates.
 
 <details>
 <summary>Answer</summary>
@@ -785,13 +785,13 @@ Each recursive call either:
 
 - Returns (base case `low &gt; high`), or
 - Calls with `mid - 1` as the new high: $V' = (mid - 1) - low + 1 = mid - low$. Since
-  `mid &gt;= low`, $V' \leq V - 1$.
+ `mid &gt;= low`$V' \leq V - 1$.
 - Calls with `mid + 1` as the new low:
-  $V' = high - (mid + 1) + 1 = high - mid`. Since
-  `mid \lt{}= high`, $V' \leq V - 1$.
+ $V' = high - (mid + 1) + 1 = high - mid`. Since
+ `mid \lt{}= high`$V' \leq V - 1$.
 
 In both recursive cases, $V$ strictly decreases. Since $V$ is a non-negative integer, the function
-must eventually reach the base case. ✓
+Must eventually reach the base case. ✓
 
 </details>
 
@@ -836,12 +836,12 @@ def sum_even(n):
 This halves the number of iterations.
 
 **Verification:** For `n = 6`: sum = 2 + 4 + 6 = 12. Original code gives 2 + 4 = 6 (wrong). Fixed
-code gives 2 + 4 + 6 = 12 (correct).
+Code gives 2 + 4 + 6 = 12 (correct).
 
 </details>
 
 **Problem 4.** Write a function `validate_password(password)` that returns `True` if the password
-meets all of the following rules, and `False` otherwise:
+Meets all of the following rules, and `False` otherwise:
 
 - At least 8 characters long
 - Contains at least one uppercase letter
@@ -887,7 +887,7 @@ $O(n)$ time complexity.
 </details>
 
 **Problem 5.** Explain the output of the following code. Why does the second call behave
-unexpectedly?
+Unexpectedly?
 
 ```python
 def append_to(element, target=[]):
@@ -909,8 +909,8 @@ print(append_to(2))
 ```
 
 **Explanation:** In Python, default arguments are evaluated **once** when the function is defined,
-not each time the function is called. The list `[]` is created at definition time and shared across
-all calls that use the default.
+Not each time the function is called. The list `[]` is created at definition time and shared across
+All calls that use the default.
 
 First call: `target` is the default list `[]`. After appending 1, it becomes `[1]`.
 
@@ -929,3 +929,7 @@ def append_to(element, target=None):
 Now each call that omits `target` gets a fresh empty list.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

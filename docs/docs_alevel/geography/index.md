@@ -20,6 +20,6 @@ This section is under active development. Topics will include:
 
 :::
 
-status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
-12 (Prohibited Subjects as standalone topics). expansion_criteria: Content must be aligned to
+Status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
+12 (Prohibited Subjects as standalone topics). Expansion_criteria: Content must be aligned to
 A-Level exam specification. General humanities content not in scope.

@@ -67,9 +67,9 @@ p {
 
 **Padding** is inside the border -- it creates space between the element's content and its border. **Margin** is outside the border -- it creates space between the element's border and neighbouring elements. Increasing padding makes the element larger; increasing margin pushes other elements away.
 
-(d) **Block-level elements** occupy the full width available and start on a new line. Examples: `<p>`, `<div>`, `<h1>`--`<h6>`, `<ul>`, `<section>`.
+(d) **Block-level elements** occupy the full width available and start on a new line. Examples: `<p>``<div>``<h1>`--`<h6>``<ul>``<section>`.
 
-**Inline elements** only occupy as much width as necessary and do not start a new line. Examples: `<span>`, `<a>`, `<strong>`, `<em>`, `<img>`.
+**Inline elements** only occupy as much width as necessary and do not start a new line. Examples: `<span>``<a>``<strong>``<em>``<img>`.
 
 ### UT-2: Multimedia File Formats
 **Question:** (a) Compare JPEG, PNG, and GIF in terms of: compression type, colour support, transparency, and typical use cases. (b) A website needs a company logo. Which format is most appropriate and why? (c) Explain the difference between lossy and lossless compression with examples. (d) Calculate the approximate file size of a 10-second audio clip at CD quality (44.1 kHz, 16-bit, stereo) before and after MP3 compression at 128 kbps.
@@ -84,7 +84,7 @@ p {
 | Animation | No | No | Yes (simple frame animation) |
 | Best for | Photographs | Graphics with text, logos, screenshots | Simple animations, low-colour graphics |
 
-(b) **PNG** is most appropriate because: (1) Logos typically have flat areas of colour and sharp edges -- PNG handles these perfectly with lossless compression. (2) Logos often need transparency (to be placed on different backgrounds) -- PNG supports full alpha channel transparency. (3) JPEG would introduce compression artefacts around text and sharp edges. (4) GIF is limited to 256 colours, which may be insufficient for complex logos.
+(b) **PNG** is most appropriate because: (1) Logos have flat areas of colour and sharp edges -- PNG handles these perfectly with lossless compression. (2) Logos often need transparency (to be placed on different backgrounds) -- PNG supports full alpha channel transparency. (3) JPEG would introduce compression artefacts around text and sharp edges. (4) GIF is limited to 256 colours, which may be insufficient for complex logos.
 
 (c) **Lossy compression** permanently discards data to achieve smaller file sizes. The original cannot be perfectly reconstructed. Example: JPEG, MP3, H.264 video.
 

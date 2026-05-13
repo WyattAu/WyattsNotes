@@ -11,11 +11,11 @@ Rust's memory management rests on three rules enforced at compile time:
 1. Each value in Rust has a single **owner**.
 2. When the owner goes out of scope, the value is **dropped** (memory is freed).
 3. There can be **zero or more immutable references** (`&T`) OR **exactly one mutable reference**
-   (`&mut T`) to a value at any point in its lifetime.
+ (`&mut T`) to a value at any point in its lifetime.
 
 These rules are checked by the borrow checker, which operates on MIR (Mid-level Intermediate
 Representation). The borrow checker does not exist at runtime — there is zero overhead for ownership
-tracking in the compiled binary.
+Tracking in the compiled binary.
 
 ```rust
 fn main() {
@@ -27,7 +27,7 @@ fn main() {
 ```
 
 The move is a compile-time transfer of ownership. No memory is copied — only the pointer, length,
-and capacity (24 bytes for `String` on 64-bit) are copied. The original binding is invalidated.
+And capacity (24 bytes for `String` on 64-bit) are copied. The original binding is invalidated.
 
 ## Move Semantics
 
@@ -35,14 +35,14 @@ and capacity (24 bytes for `String` on 64-bit) are copied. The original binding 
 
 Types are divided into two categories based on whether assignment copies or moves:
 
-| Category     | Examples                                                                   | Behavior                       |
+| Category | Examples | Behavior |
 | ------------ | -------------------------------------------------------------------------- | ------------------------------ |
-| `Copy` types | `i32`, `f64`, `bool`, `char`, `(i32, i32)`, `&T`                           | Assignment copies the value    |
-| Move types   | `String`, `Vec<T>`, `Box<T>`, `File`, user-defined structs (unless `Copy`) | Assignment transfers ownership |
+| `Copy` types | `i32``f64``bool``char``(i32, i32)``&T` | Assignment copies the value |
+| Move types | `String``Vec<T>``Box<T>``File`User-defined structs (unless `Copy`) | Assignment transfers ownership |
 
 A type implements `Copy` if and only if every bit pattern of its memory representation is a valid
-value. This is why types containing heap pointers (like `String`) cannot be `Copy` — a bitwise copy
-would create two owners of the same heap allocation.
+Value. This is why types containing heap pointers (like `String`) cannot be `Copy` — a bitwise copy
+Would create two owners of the same heap allocation.
 
 ### The `Copy` Trait
 
@@ -64,7 +64,7 @@ println!("{} {}", p1.x, p2.y);  // OK
 Types that cannot be `Copy`:
 
 - Any type with a `Drop` implementation (destructor)
-- Any type containing a heap pointer (`String`, `Vec`, `Box`)
+- Any type containing a heap pointer (`String``Vec``Box`)
 - Any type containing a mutable reference (`&mut T`)
 
 ### Partial Moves
@@ -88,7 +88,7 @@ println!("{}", person.age);   // OK — age is Copy, was never moved
 ```
 
 After a partial move, the struct itself is no longer usable as a whole, but its `Copy` fields remain
-accessible.
+Accessible.
 
 ### Moves in Function Calls
 
@@ -139,7 +139,7 @@ fn takes_and_gives(s: String) -> String {
 ### Immutable References
 
 An immutable reference `&T` allows reading but not modifying the referenced data. You can create any
-number of immutable references simultaneously:
+Number of immutable references simultaneously:
 
 ```rust
 let s = String::from("hello");
@@ -153,7 +153,7 @@ println!("{} {} {}", r1, r2, r3);  // OK — multiple immutable borrows
 ### Mutable References
 
 A mutable reference `&mut T` allows reading and modifying. Only one mutable reference can exist at a
-time, and no immutable references can coexist with a mutable one:
+Time, and no immutable references can coexist with a mutable one:
 
 ```rust
 let mut s = String::from("hello");
@@ -165,8 +165,8 @@ println!("{}", r1);
 ```
 
 This is the core rule that prevents data races at compile time. The NLL (Non-Lexical Lifetimes)
-borrow checker understands that `r1` is no longer in use after its last usage point, not just at the
-end of the lexical scope:
+Borrow checker understands that `r1` is no longer in use after its last usage point, not just at the
+End of the lexical scope:
 
 ```rust
 let mut s = String::from("hello");
@@ -183,7 +183,7 @@ println!("{}", r2);
 ### Dangling Reference Prevention
 
 The borrow checker guarantees that references always point to valid data. This is one of Rust's most
-important safety guarantees:
+Important safety guarantees:
 
 ```rust
 fn dangle() -> &String {
@@ -198,7 +198,7 @@ fn no_dangle() -> String {
 ```
 
 The compiler error is: `missing lifetime specifier` — it is telling you that it cannot prove the
-reference will outlive its referent.
+Reference will outlive its referent.
 
 ### Reference Rules Summary
 
@@ -216,13 +216,13 @@ At any given lifetime scope for a value:
 ## Lifetimes
 
 Lifetimes are Rust's way of tracking how long a reference is valid. Every reference has a lifetime,
-but in most cases the compiler can infer it (lifetime elision rules). Explicit lifetime annotations
-are needed when the compiler cannot determine the relationship between input and output lifetimes.
+But in most cases the compiler can infer it (lifetime elision rules). Explicit lifetime annotations
+Are needed when the compiler cannot determine the relationship between input and output lifetimes.
 
 ### Lifetime Annotation Syntax
 
 Lifetimes are denoted with a leading apostrophe. By convention, `'a` is the first lifetime, `'b` the
-second, etc.
+Second, etc.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -235,13 +235,13 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```
 
 The annotation `<'a>` says: "there exists some lifetime `'a` such that both `x` and `y` live at
-least as long as `'a`, and the return value also lives at least as long as `'a`." The caller gets to
-choose what `'a` is, constrained by the actual lifetimes of the arguments.
+Least as long as `'a`And the return value also lives at least as long as `'a`." The caller gets to
+Choose what `'a` is, constrained by the actual lifetimes of the arguments.
 
 ### Lifetime Elision Rules
 
 The compiler applies three rules to elide (omit) lifetime annotations. If after applying all three
-rules, the compiler still cannot determine lifetimes, it errors.
+Rules, the compiler still cannot determine lifetimes, it errors.
 
 **Rule 1:** Each parameter that is a reference gets its own lifetime parameter.
 
@@ -251,14 +251,14 @@ fn foo(x: &str, y: &str)  →  fn foo<'a, 'b>(x: &'a str, y: &'b str)
 ```
 
 **Rule 2:** If there is exactly one input lifetime parameter, that lifetime is assigned to all
-output parameters.
+Output parameters.
 
 ```rust
 fn foo(x: &str) -> &str    →  fn foo<'a>(x: &'a str) -> &'a str
 ```
 
 **Rule 3:** If there are multiple input lifetime parameters but one of them is `&self` or
-`&mut self`, the lifetime of `self` is assigned to all output parameters.
+`&mut self`The lifetime of `self` is assigned to all output parameters.
 
 ```rust
 impl Foo {
@@ -278,7 +278,7 @@ fn print<'a, 'b: 'a>(x: &'b str, y: &'a str) {
 ```
 
 This is useful when a struct holds a reference and you need to ensure the struct does not outlive
-the referent.
+The referent.
 
 ### Struct Lifetimes
 
@@ -303,7 +303,7 @@ let first_sentence;
 ### Function Lifetimes
 
 Lifetimes in function signatures establish relationships between input and output references. The
-compiler does not change the actual lifetimes — it only verifies that the constraints are satisfied.
+Compiler does not change the actual lifetimes — it only verifies that the constraints are satisfied.
 
 ```rust
 // The returned reference lives as long as the shorter of the two inputs
@@ -329,9 +329,9 @@ let s: &'static str = "hello";  // embedded in the binary
 :::warning
 
 Do not annotate everything with `'static` as a shortcut. The compiler will suggest `'static` when it
-cannot infer a shorter lifetime, but adding `'static` constraints reduces the function's
-flexibility. A function taking `&'static str` cannot accept locally-owned `String` references, only
-string literals and values explicitly annotated with `'static`.
+Cannot infer a shorter lifetime, but adding `'static` constraints reduces the function's
+Flexibility. A function taking `&'static str` cannot accept locally-owned `String` references, only
+String literals and values explicitly annotated with `'static`.
 
 :::
 
@@ -340,8 +340,8 @@ string literals and values explicitly annotated with `'static`.
 Lifetimes are covariant in their position. Given `'a: 'b` (a outlives b), `&'a T` is a subtype of
 `&'b T`. This means a longer-lived reference can be used where a shorter-lived one is expected.
 
-For `&mut T`, lifetimes are **invariant** — you cannot substitute a `&'a mut T` where a `&'b mut T`
-is expected, even if `'a: 'b`. This prevents soundness issues with mutable aliasing.
+For `&mut T`Lifetimes are **invariant** — you cannot substitute a `&'a mut T` where a `&'b mut T`
+Is expected, even if `'a: 'b`. This prevents soundness issues with mutable aliasing.
 
 ```rust
 fn mutate<'a>(r: &'a mut i32) {
@@ -355,12 +355,12 @@ let r: &'static mut i32 = &mut x;  // ERROR: expected 'static, got shorter lifet
 ## Interior Mutability
 
 The borrow checker's rule "either many immutable or one mutable" is strict. Sometimes you need to
-mutate data through a shared reference. Interior mutability types provide this capability safely.
+Mutate data through a shared reference. Interior mutability types provide this capability safely.
 
 ### `Cell<T>`
 
 `Cell<T>` provides copy-based interior mutability for `Copy` types. It stores the value inline (no
-heap allocation) and provides `get()` (returns a copy) and `set()` (replaces the value):
+Heap allocation) and provides `get()` (returns a copy) and `set()` (replaces the value):
 
 ```rust
 use std::cell::Cell;
@@ -371,12 +371,12 @@ assert_eq!(counter.get(), 1);
 ```
 
 `Cell<T>` does not allow borrowing the inner value — you can only copy it out or replace it. This
-means there is no risk of creating a dangling reference to the interior.
+Means there is no risk of creating a dangling reference to the interior.
 
 ### `RefCell<T>`
 
 `RefCell<T>` provides reference-based interior mutability for any type. It tracks borrows at runtime
-with a reference count and panics if the borrowing rules are violated:
+With a reference count and panics if the borrowing rules are violated:
 
 ```rust
 use std::cell::RefCell;
@@ -396,7 +396,7 @@ borrow3.push(4);
 :::warning
 
 `RefCell` enforces the borrow rules at **runtime**, not compile time. A `borrow_mut()` while an
-immutable borrow is active will panic. This trades compile-time safety for runtime flexibility. Use
+Immutable borrow is active will panic. This trades compile-time safety for runtime flexibility. Use
 `try_borrow()` and `try_borrow_mut()` to get `Result` instead of panicking.
 
 :::
@@ -404,7 +404,7 @@ immutable borrow is active will panic. This trades compile-time safety for runti
 ### `RefCell` Use Cases
 
 1. **Graph data structures** where nodes need to reference each other (cycles prevent compile-time
-   borrow checking).
+ borrow checking).
 2. **Mocking in tests** where you need to mutate internal state through a shared reference.
 3. **Builder patterns** where the builder is shared across multiple configuration steps.
 
@@ -426,9 +426,9 @@ b.neighbors.borrow_mut().push(&a);
 ### `UnsafeCell<T>`
 
 `UnsafeCell<T>` is the primitive underlying both `Cell` and `RefCell`. It is the only type in Rust
-that allows safe code to obtain a mutable reference to its interior through a shared reference.
+That allows safe code to obtain a mutable reference to its interior through a shared reference.
 Using `UnsafeCell` directly requires `unsafe` code and is the foundation for all interior mutability
-abstractions.
+Abstractions.
 
 ```rust
 use std::cell::UnsafeCell;
@@ -455,8 +455,8 @@ impl Counter {
 :::danger
 
 Implementing `Sync` for a type containing `UnsafeCell` without proper synchronization is undefined
-behavior. Only do this if you can prove that mutation is properly synchronized (e.g., via atomics or
-platform-specific memory barriers).
+Behavior. Only do this if you can prove that mutation is properly synchronized (e.g., via atomics or
+Platform-specific memory barriers).
 
 :::
 
@@ -465,7 +465,7 @@ platform-specific memory barriers).
 ### `Rc<T>` — Reference Counted
 
 `Rc<T>` enables multiple ownership of the same data via reference counting. It is single-threaded —
-the compiler will prevent you from sending an `Rc` across thread boundaries.
+The compiler will prevent you from sending an `Rc` across thread boundaries.
 
 ```rust
 use std::rc::Rc;
@@ -478,8 +478,8 @@ assert_eq!(Rc::strong_count(&a), 3);
 println!("{}", a);  // OK — all three bindings are valid
 ```
 
-When the last `Rc` is dropped, the inner value is deallocated. `Rc` is not `Send` or `Sync`, so the
-compiler prevents sharing it between threads.
+When the last `Rc` is dropped, the inner value is deallocated. `Rc` is not `Send` or `Sync`So the
+Compiler prevents sharing it between threads.
 
 ### `Rc` with `RefCell`
 
@@ -499,7 +499,7 @@ assert_eq!(data2.borrow().len(), 4);
 ### `Arc<T>` — Atomic Reference Counted
 
 `Arc<T>` is the thread-safe equivalent of `Rc<T>`. It uses atomic operations for reference counting,
-making it `Send` and `Sync`. `Arc` is the foundation of shared ownership in concurrent Rust.
+Making it `Send` and `Sync`. `Arc` is the foundation of shared ownership in concurrent Rust.
 
 ```rust
 use std::sync::Arc;
@@ -545,7 +545,7 @@ assert_eq!(*counter.lock().unwrap(), 10);
 ### `Weak<T>`
 
 Both `Rc` and `Arc` support weak references via `Weak<T>`. A `Weak` does not increment the strong
-reference count and does not prevent the value from being dropped. This prevents reference cycles
+Reference count and does not prevent the value from being dropped. This prevents reference cycles
 (which would cause memory leaks):
 
 ```rust
@@ -579,7 +579,7 @@ parent.children.borrow_mut().push(Rc::clone(&child));
 ## Borrowing in Loops
 
 Loops are a common source of borrow checker errors. The key issue is that the borrow must not
-outlive the value being borrowed:
+Outlive the value being borrowed:
 
 ```rust
 let mut v = vec![1, 2, 3, 4, 5];
@@ -609,8 +609,8 @@ println!("{}", first);
 ```
 
 The problem: `push` may reallocate the vector's buffer, invalidating all existing references. The
-borrow checker conservatively rejects this because it cannot prove (at compile time) that `push`
-will not reallocate.
+Borrow checker conservatively rejects this because it cannot prove (at compile time) that `push`
+Will not reallocate.
 
 ### Fixing Loop Borrow Issues
 
@@ -636,7 +636,7 @@ let v2: Vec<i32> = v.iter().map(|&x| x + 1).collect();
 
 When you have a mutable reference and you pass it to a function, Rust performs an implicit
 "reborrow." The mutable reference is temporarily borrowed, and the callee receives a new mutable
-reference with a potentially shorter lifetime:
+Reference with a potentially shorter lifetime:
 
 ```rust
 fn push(item: &mut String) {
@@ -650,8 +650,8 @@ push(r);       // reborrow: r is temporarily borrowed by push
 println!("{}", r);  // OK — the reborrow ended, r is valid again
 ```
 
-Without reborrows, the above code would fail because `push(r)` would move `r`, making it unusable
-afterward. The reborrow mechanism makes `&mut` references behave more ergonomically.
+Without reborrows, the above code would fail because `push(r)` would move `r`Making it unusable
+Afterward. The reborrow mechanism makes `&mut` references behave more ergonomically.
 
 ### Explicit Reborrows
 
@@ -677,7 +677,7 @@ println!("{}", r);
 ### Lexical Lifetimes (pre-Rust 2018)
 
 The original borrow checker tied borrows to lexical scopes. A borrow lived until the end of the
-scope in which it was created, regardless of actual usage:
+Scope in which it was created, regardless of actual usage:
 
 ```rust
 fn main() {
@@ -692,7 +692,7 @@ fn main() {
 ### Non-Lexical Lifetimes (NLL, Rust 2018+)
 
 NLL analyzes the control flow graph to determine when a reference is last used. The borrow ends at
-the last usage point, not at the end of the lexical scope:
+The last usage point, not at the end of the lexical scope:
 
 ```rust
 fn main() {
@@ -708,9 +708,9 @@ fn main() {
 ### Polonius (Future)
 
 Polonius is the next-generation borrow checker, named after the character from Hamlet ("I have of
-late, but wherefore I know not, lost all my mirth"). It uses a dataflow analysis approach that is
-both more precise and easier to reason about than NLL. As of Rust 1.85, Polonius is available as an
-experimental feature (`-Zpolonius`) and is expected to become the default in a future edition.
+Late, but wherefore I know not, lost all my mirth"). It uses a dataflow analysis approach that is
+Both more precise and easier to reason about than NLL. As of Rust 1.85, Polonius is available as an
+Experimental feature (`-Zpolonius`) and is expected to become the default in a future edition.
 
 Polonius enables patterns that NLL rejects, such as:
 
@@ -727,49 +727,49 @@ fn filter_map(vec: &mut Vec<i32>) {
 ## Common Pitfalls
 
 1. **Fighting the borrow checker with `clone()`.** While `clone()` works, it often indicates a
-   design problem. Before cloning, consider: can you restructure ownership? Can you use indices
-   instead of references? Can you borrow for a shorter lifetime? Clone is correct when you genuinely
-   need a second independent copy of the data.
+ design problem. Before cloning, consider: can you restructure ownership? Can you use indices
+ instead of references? Can you borrow for a shorter lifetime? Clone is correct when you genuinely
+ need a second independent copy of the data.
 
 2. **Self-referential structs.** Rust cannot express structs that hold references to their own
-   fields because the lifetime of the reference and the lifetime of the struct are the same. Use
-   indices instead, or crates like `pin-project` and `owning-ref` for self-referential patterns.
+ fields because the lifetime of the reference and the lifetime of the struct are the same. Use
+ indices instead, or crates like `pin-project` and `owning-ref` for self-referential patterns.
 
 3. **`RefCell` panics in production.** `RefCell::borrow_mut()` panics at runtime if there is an
-   outstanding immutable borrow. In a long-running service, this can bring down the process. Use
-   `try_borrow_mut()` and handle the error, or restructure your code to avoid the need for
-   `RefCell`.
+ outstanding immutable borrow. In a long-running service, this can bring down the process. Use
+ `try_borrow_mut()` and handle the error, or restructure your code to avoid the need for
+ `RefCell`.
 
 4. **`Rc` reference cycles.** If two `Rc` values reference each other, neither will ever be dropped.
-   Use `Weak<T>` to break cycles. Profile your application with tools like `valgrind` or `heaptrack`
-   to detect reference cycle leaks.
+ Use `Weak<T>` to break cycles. Profile your application with tools like `valgrind` or `heaptrack`
+ to detect reference cycle leaks.
 
 5. **Borrowing across await points.** Holding a reference across an `.await` point is an error
-   because the future may be dropped or moved between yields, invalidating the reference.
-   Restructure the code to drop the borrow before awaiting.
+ because the future may be dropped or moved between yields, invalidating the reference.
+ Restructure the code to drop the borrow before awaiting.
 
 6. **Ignoring lifetime variance.** Lifetimes are covariant in output position and invariant in
-   mutable reference position. Misunderstanding this leads to subtle soundness bugs when writing
-   generic code over lifetimes. The compiler errors in these cases are often confusing.
+ mutable reference position. Misunderstanding this leads to subtle soundness bugs when writing
+ generic code over lifetimes. The compiler errors in these cases are often confusing.
 
 7. **Using `unsafe` to bypass the borrow checker.** `unsafe` lets you create raw pointers and
-   convert them to references, but you are now responsible for maintaining all borrow checker
-   invariants manually. A single violation (e.g., creating two mutable references to the same data)
-   is undefined behavior, even if it appears to work.
+ convert them to references, but you are now responsible for maintaining all borrow checker
+ invariants manually. A single violation (e.g., creating two mutable references to the same data)
+ is undefined behavior, even if it appears to work.
 
 8. **Over-borrowing in closures.** Closures capture variables by the least-permissive mode needed.
-   `&x` for immutable access, `&mut x` for mutable access, `x` for ownership. A closure that
-   modifies a captured variable will capture it by `&mut`, preventing any other borrow of the same
-   variable while the closure exists. Use `move` closures to transfer ownership into the closure and
-   avoid borrow conflicts.
+ `&x` for immutable access, `&mut x` for mutable access, `x` for ownership. A closure that
+ modifies a captured variable will capture it by `&mut`Preventing any other borrow of the same
+ variable while the closure exists. Use `move` closures to transfer ownership into the closure and
+ avoid borrow conflicts.
 
 9. **Confusing `'a` lifetime names with actual lifetimes.** The name `'a` is just a placeholder. The
-   compiler substitutes the actual lifetime at each call site. Two functions using `'a` in their
-   signatures do not necessarily share the same lifetime — the compiler resolves each independently.
+ compiler substitutes the actual lifetime at each call site. Two functions using `'a` in their
+ signatures do not necessarily share the same lifetime — the compiler resolves each independently.
 
 10. **Not understanding NLL.** If the borrow checker rejects your code, check whether the borrow is
-    actually needed past the point where the compiler thinks it ends. Often, adding an explicit
-    block scope `{}` or dropping a reference early fixes the issue without restructuring.
+ actually needed past the point where the compiler thinks it ends. Often, adding an explicit
+ block scope `{}` or dropping a reference early fixes the issue without restructuring.
 
 ## Borrow Checker Decision Flow
 
@@ -793,7 +793,7 @@ graph TD
 ## Lifetime Bounds in Generics
 
 Lifetimes interact with generics in ways that can be subtle. When a generic type parameter is
-bounded by a lifetime, it constrains which concrete types can be used:
+Bounded by a lifetime, it constrains which concrete types can be used:
 
 ```rust
 // T must outlive 'a — T must be a type that can be borrowed for 'a
@@ -805,8 +805,8 @@ fn process<'a, T: 'a>(value: &'a T) -> &'a T {
 // because the compiler cannot prove T is valid for 'a
 ```
 
-This bound is automatically added in many cases (lifetime elision), but you may need to write it
-explicitly when working with trait objects or complex generic constraints:
+This bound is automatically added (lifetime elision), but you may need to write it
+Explicitly when working with trait objects or complex generic constraints:
 
 ```rust
 trait Processor {
@@ -841,8 +841,8 @@ where
 ```
 
 The `for<'a>` syntax means "for all lifetimes 'a." The closure must be valid regardless of what
-lifetime `'a` the caller chooses. This is a more restrictive bound than specifying a single lifetime
-because the closure cannot capture references with a specific lifetime.
+Lifetime `'a` the caller chooses. This is a more restrictive bound than specifying a single lifetime
+Because the closure cannot capture references with a specific lifetime.
 
 HRTBs are also used in the standard library for `Iterator::find`:
 
@@ -860,8 +860,8 @@ impl<I: Iterator> Iterator for I {
 ## Struct Self-References
 
 One of the most common borrow checker challenges is creating structs that reference their own
-fields. This is fundamentally impossible in safe Rust because the struct and its field share the
-same lifetime, but the borrow checker treats them as independent:
+Fields. This is fundamentally impossible in safe Rust because the struct and its field share the
+Same lifetime, but the borrow checker treats them as independent:
 
 ```rust
 // This does NOT compile:
@@ -918,13 +918,13 @@ struct SelfReferential {
 ## Lifetime Variance in Practice
 
 Understanding variance is critical when writing generic code over lifetimes. Variance determines
-whether a longer lifetime can be substituted for a shorter one.
+Whether a longer lifetime can be substituted for a shorter one.
 
 ### Covariance (Read-Only Contexts)
 
 `&'a T` is covariant in `'a`. If `'long: 'short` (long outlives short), then `&'long T` can be used
-where `&'short T` is expected. This is safe because a longer-lived reference is a subtype of a
-shorter-lived one when you only read through it.
+Where `&'short T` is expected. This is safe because a longer-lived reference is a subtype of a
+Shorter-lived one when you only read through it.
 
 ```rust
 fn takes_short<'a>(r: &'a str) {}
@@ -937,8 +937,8 @@ takes_short(long);  // OK — 'static can be shortened to 'a
 
 `&'a mut T` is invariant in `'a`. You cannot substitute a longer-lived `&'long mut T` where a
 `&'short mut T` is expected. This prevents soundness issues where a mutable reference to a
-shorter-lived value could be used to write a longer-lived reference, extending its lifetime beyond
-its valid scope.
+Shorter-lived value could be used to write a longer-lived reference, extending its lifetime beyond
+Its valid scope.
 
 ```rust
 fn takes_short_mut<'a>(r: &'a mut i32) {}
@@ -952,12 +952,12 @@ let r: &'static mut i32 = unsafe { &mut *Box::into_raw(Box::new(x)) };
 
 `fn(&'a T) -> &'a T` is contravariant in the argument lifetime and covariant in the return lifetime.
 This means you can pass a function expecting a shorter lifetime where a function expecting a longer
-lifetime is needed (because it accepts a superset of lifetimes).
+Lifetime is needed (because it accepts a superset of lifetimes).
 
 ## The Drop Checker
 
 The borrow checker also enforces drop order correctness. When a struct contains a reference, the
-compiler must ensure that the struct does not outlive the referenced data, even during destruction:
+Compiler must ensure that the struct does not outlive the referenced data, even during destruction:
 
 ```rust
 struct Context<'a> {
@@ -969,5 +969,13 @@ struct Context<'a> {
 ```
 
 The drop checker can be overly conservative. If your struct contains a raw pointer that does not
-actually reference the lifetime parameter, you can use the `#[may_dangle]` attribute (unsafe) to
-relax the drop check. This is advanced and should be used only when you can prove safety manually.
+Actually reference the lifetime parameter, you can use the `#[may_dangle]` attribute (unsafe) to
+Relax the drop check. This is advanced and should be used only when you can prove safety manually.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

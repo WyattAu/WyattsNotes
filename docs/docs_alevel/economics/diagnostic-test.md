@@ -10,7 +10,7 @@ categories:
 slug: economics-diagnostic-test
 ---
 This diagnostic test covers all A Level Economics micro and macro topics. Each question tests a
-specific concept, requires 2–5 steps, and includes a revision redirect to the relevant topic.
+Specific concept, requires 2–5 steps, and includes a revision redirect to the relevant topic.
 
 <hr />
 
@@ -20,18 +20,18 @@ specific concept, requires 2–5 steps, and includes a revision redirect to the 
 
 **Q1.** A student can spend 5 hours revising for Economics and Maths. Her expected marks are
 $E_E = 30\sqrt{h_E}$ and $E_M = 20\sqrt{h_M}$ where $h_E + h_M = 5$. What is the opportunity cost of
-spending the third hour on Economics (increasing $h_E$ from 2 to 3)?
+Spending the third hour on Economics (increasing $h_E$ from 2 to 3)?
 
 <details>
 <summary>Answer</summary>
-At $h_E = 2$: $E_E = 30\sqrt{2} \approx 42.4$, $h_M = 3$: $E_M = 20\sqrt{3} \approx 34.6$. Total = 77.0.<br />
-At $h_E = 3$: $E_E = 30\sqrt{3} \approx 51.96$, $h_M = 2$: $E_M = 20\sqrt{2} \approx 28.3$. Total = 80.3.<br />
-The third hour on Economics raises total marks from 77.0 to 80.3. The opportunity cost is the Maths marks forgone: $34.6 - 28.3 = 6.3$ marks. (Note: the marginal gain in Economics is $51.96 - 42.4 = 9.6$, net gain = 3.3.)
+At $h_E = 2$: $E_E = 30\sqrt{2} \approx 42.4$$h_M = 3$: $E_M = 20\sqrt{3} \approx 34.6$. Total = 77.0.<br />
+At $h_E = 3$: $E_E = 30\sqrt{3} \approx 51.96$$h_M = 2$: $E_M = 20\sqrt{2} \approx 28.3$. Total = 80.3.<br />
+The third hour on Economics raises total marks from 77.0 to 80.3. The opportunity cost is the Maths marks forgone: $34.6 - 28.3 = 6.3$ marks. (Note: the marginal gain in Economics is $51.96 - 42.4 = 9.6$Net gain = 3.3.)
 <i>Revision: [The Economic Problem](/docs/alevel/economics/microeconomics/the-economic-problem)</i>
 </details>
 
 **Q2.** "The government should subsidise renewable energy." Classify this statement and explain your
-reasoning.
+Reasoning.
 
 <details>
 <summary>Answer</summary>
@@ -40,11 +40,11 @@ This is a **normative** statement. It uses "should," which expresses a value jud
 </details>
 
 **Q3.** An economy's PPF is $C = 100 - F^2/50$ where $C$ is consumer goods and $F$ is food. Is the
-opportunity cost of food increasing, constant, or decreasing? Prove your answer.
+Opportunity cost of food increasing, constant, or decreasing? Prove your answer.
 
 <details>
 <summary>Answer</summary>
-$\frac{dC}{dF} = -\frac{2F}{50} = -\frac{F}{25}$. The absolute value of the slope is $\frac{F}{25}$, which increases as $F$ increases. Therefore the opportunity cost of food (in terms of consumer goods) is **increasing**. At $F = 5$: OC = $5/25 = 0.2$. At $F = 25$: OC = $25/25 = 1.0$. The PPF is concave to the origin.
+$\frac{dC}{dF} = -\frac{2F}{50} = -\frac{F}{25}$. The absolute value of the slope is $\frac{F}{25}$Which increases as $F$ increases. Therefore the opportunity cost of food (in terms of consumer goods) is **increasing**. At $F = 5$: OC = $5/25 = 0.2$. At $F = 25$: OC = $25/25 = 1.0$. The PPF is concave to the origin.
 <i>Revision: [The Economic Problem](/docs/alevel/economics/microeconomics/the-economic-problem)</i>
 </details>
 
@@ -52,11 +52,11 @@ $\frac{dC}{dF} = -\frac{2F}{50} = -\frac{F}{25}$. The absolute value of the slop
 
 **Q4.** The demand function is $Q_D = 120 - 2P$ and the supply function is $Q_S = 20 + 3P$. A tax of
 £6 per unit is imposed on producers. Calculate (a) the original equilibrium, (b) the new equilibrium
-price consumers pay and producers receive, and (c) the tax incidence on consumers vs producers.
+Price consumers pay and producers receive, and (c) the tax incidence on consumers vs producers.
 
 <details>
 <summary>Answer</summary>
-(a) $120 - 2P = 20 + 3P \Rightarrow 100 = 5P \Rightarrow P^* = 20$, $Q^* = 80$.<br />
+(a) $120 - 2P = 20 + 3P \Rightarrow 100 = 5P \Rightarrow P^* = 20$$Q^* = 80$.<br />
 (b) With tax, the supply curve shifts up: $Q_S = 20 + 3(P - 6) = 2 + 3P$. New equilibrium: $120 - 2P = 2 + 3P \Rightarrow 118 = 5P \Rightarrow P_C = 23.60$. Producers receive $P_P = 23.60 - 6 = 17.60$. $Q_{new} = 120 - 2(23.60) = 72.8$.<br />
 (c) Consumers pay $23.60 - 20 = £3.60$ more (60% of the tax). Producers receive $20 - 17.60 = £2.40$ less (40% of the tax). Total tax revenue = $6 \times 72.8 = £436.80$. The side with the more inelastic curve bears more of the burden.
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
@@ -64,18 +64,18 @@ price consumers pay and producers receive, and (c) the tax incidence on consumer
 
 **Q5.** If the price elasticity of demand for bus travel is –0.4 and the bus company raises fares by
 10%, what happens to (a) the quantity demanded, and (b) total revenue? Explain the implication for
-the bus company's pricing strategy.
+The bus company's pricing strategy.
 
 <details>
 <summary>Answer</summary>
 (a) $E_d = \frac◆LB◆\%\Delta Q◆RB◆◆LB◆\%\Delta P◆RB◆ = -0.4$. $\%\Delta Q = -0.4 \times 10\% = -4\%$. Quantity demanded falls by 4%.<br />
 (b) Total revenue = $P \times Q$. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue rises by 5.6%.<br />
-Since $|E_d| = 0.4 \lt{} 1$, demand is **inelastic**. A price increase raises total revenue. The bus company should raise fares to maximise revenue (though this ignores welfare and equity considerations).
+Since $|E_d| = 0.4 \lt{} 1$Demand is **inelastic**. A price increase raises total revenue. The bus company should raise fares to maximise revenue (though this ignores welfare and equity considerations).
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
 </details>
 
 **Q6.** Explain why the demand curve slopes downward. In your answer, use the concepts of the
-substitution effect, income effect, and diminishing marginal utility.
+Substitution effect, income effect, and diminishing marginal utility.
 
 <details>
 <summary>Answer</summary>
@@ -88,63 +88,63 @@ All three effects reinforce the downward slope. The only exception is Giffen goo
 
 ### Topic 3: Market Failure
 
-**Q7.** A factory produces steel and pollutes a river. The private marginal cost is $MPC = 20 + 2Q$,
-the marginal benefit (demand) is $MB = 100 - Q$, and the marginal external cost of pollution is
+**Q7.** A factory produces steel and pollutes a river. The private marginal cost is $MPC = 20 + 2Q$
+The marginal benefit (demand) is $MB = 100 - Q$And the marginal external cost of pollution is
 $MEC = 10 + Q$. (a) Calculate the market equilibrium quantity and price. (b) Calculate the socially
-optimal quantity and price. (c) Calculate the deadweight loss of the market outcome.
+Optimal quantity and price. (c) Calculate the deadweight loss of the market outcome.
 
 <details>
 <summary>Answer</summary>
-(a) Market: $MPC = MB \Rightarrow 20 + 2Q = 100 - Q \Rightarrow 3Q = 80 \Rightarrow Q_m = 26.67$, $P_m = 100 - 26.67 = 73.33$.<br />
-(b) Social optimum: $MSC = MPC + MEC = 20 + 2Q + 10 + Q = 30 + 3Q$. Set $MSC = MB$: $30 + 3Q = 100 - Q \Rightarrow 4Q = 70 \Rightarrow Q^* = 17.5$, $P^* = 100 - 17.5 = 82.5$.<br />
+(a) Market: $MPC = MB \Rightarrow 20 + 2Q = 100 - Q \Rightarrow 3Q = 80 \Rightarrow Q_m = 26.67$$P_m = 100 - 26.67 = 73.33$.<br />
+(b) Social optimum: $MSC = MPC + MEC = 20 + 2Q + 10 + Q = 30 + 3Q$. Set $MSC = MB$: $30 + 3Q = 100 - Q \Rightarrow 4Q = 70 \Rightarrow Q^* = 17.5$$P^* = 100 - 17.5 = 82.5$.<br />
 (c) DWL = area of triangle between MSC and MB from $Q^*$ to $Q_m$: $\frac{1}{2}(Q_m - Q^*) \times (MSC(Q_m) - MB(Q_m))$. $MSC(26.67) = 30 + 3(26.67) = 110$. $MB(26.67) = 73.33$. DWL $= \frac{1}{2}(26.67 - 17.5)(110 - 73.33) = \frac{1}{2}(9.17)(36.67) = 168.1$. The market overproduces by 9.17 units.
 <i>Revision: [Market Failure](/docs/alevel/economics/microeconomics/market-failure)</i>
 </details>
 
 **Q8.** "Public goods should always be provided by the government." Evaluate this statement with
-reference to the characteristics of public goods and the concept of government failure.
+Reference to the characteristics of public goods and the concept of government failure.
 
 <details>
 <summary>Answer</summary>
-Public goods are **non-excludable** and **non-rivalrous** → free-rider problem → markets underprovide or fail to provide them. Government provision can solve this. However: (1) Not all goods are pure public goods — many are quasi-public (congestible). (2) Government failure: inefficiency due to lack of profit motive (X-inefficiency), information problems, political bias. (3) Some public goods can be provided privately (lighthouses were historically private — Coase, 1974). (4) Public-private partnerships may combine efficiency incentives with public goods provision. (5) The optimal level of public good provision is determined by Samuelson's condition: $\sum MRS = MRT$, which is difficult to implement in practice (preference revelation problem). Conclusion: government has a role but should consider efficiency, cost-benefit analysis, and alternative provision mechanisms.
+Public goods are **non-excludable** and **non-rivalrous** → free-rider problem → markets underprovide or fail to provide them. Government provision can solve this. However: (1) Not all goods are pure public goods — many are quasi-public (congestible). (2) Government failure: inefficiency due to lack of profit motive (X-inefficiency), information problems, political bias. (3) Some public goods can be provided privately (lighthouses were historically private — Coase, 1974). (4) Public-private partnerships may combine efficiency incentives with public goods provision. (5) The optimal level of public good provision is determined by Samuelson's condition: $\sum MRS = MRT$Which is difficult to implement in practice (preference revelation problem). Conclusion: government has a role but should consider efficiency, cost-benefit analysis, and alternative provision mechanisms.
 <i>Revision: [Market Failure](/docs/alevel/economics/microeconomics/market-failure)</i>
 </details>
 
 ### Topic 4: Theory of the Firm
 
 **Q9.** A firm has total cost $TC = 100 + 10Q + Q^2$. Calculate (a) the output at which average cost
-is minimised, (b) the minimum average cost, and (c) the output at which marginal cost equals average
-cost. Explain the relationship between MC and AC.
+Is minimised, (b) the minimum average cost, and (c) the output at which marginal cost equals average
+Cost. Explain the relationship between MC and AC.
 
 <details>
 <summary>Answer</summary>
 (a) $AC = TC/Q = 100/Q + 10 + Q$. Minimise: $\frac{dAC}{dQ} = -100/Q^2 + 1 = 0 \Rightarrow Q^2 = 100 \Rightarrow Q = 10$.<br />
 (b) $AC(10) = 100/10 + 10 + 10 = 30$. Minimum average cost = £30.<br />
 (c) $MC = dTC/dQ = 10 + 2Q$. Set $MC = AC$: $10 + 2Q = 100/Q + 10 + Q \Rightarrow 2Q = 100/Q + Q \Rightarrow Q = 100/Q \Rightarrow Q^2 = 100 \Rightarrow Q = 10$.<br />
-**Relationship**: MC cuts AC at its minimum point. When $MC \lt{} AC$, AC is falling. When $MC \gt{} AC$, AC is rising. This is a mathematical identity: $\frac{dAC}{dQ} = \frac{MC - AC}{Q}$.
+**Relationship**: MC cuts AC at its minimum point. When $MC \lt{} AC$AC is falling. When $MC \gt{} AC$AC is rising. This is a mathematical identity: $\frac{dAC}{dQ} = \frac{MC - AC}{Q}$.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
 
 **Q10.** A monopoly faces demand $P = 50 - Q$ and has $MC = 10$. Calculate (a) the profit-maximising
-price and quantity, (b) the consumer surplus, (c) the deadweight loss compared with perfect
-competition, and (d) the Lerner index of market power.
+Price and quantity, (b) the consumer surplus, (c) the deadweight loss compared with perfect
+Competition, and (d) the Lerner index of market power.
 
 <details>
 <summary>Answer</summary>
-(a) $MR = 50 - 2Q$. Set $MR = MC$: $50 - 2Q = 10 \Rightarrow Q = 20$, $P = 50 - 20 = 30$.<br />
+(a) $MR = 50 - 2Q$. Set $MR = MC$: $50 - 2Q = 10 \Rightarrow Q = 20$$P = 50 - 20 = 30$.<br />
 (b) $CS = \frac{1}{2}(50 - 30)(20) = 200$.<br />
-(c) Under competition: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q_c = 40$, $P_c = 10$. DWL $= \frac{1}{2}(30 - 10)(40 - 20) = 200$.<br />
+(c) Under competition: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q_c = 40$$P_c = 10$. DWL $= \frac{1}{2}(30 - 10)(40 - 20) = 200$.<br />
 (d) Lerner index: $\frac{P - MC}{P} = \frac{30 - 10}{30} = 0.667$. This indicates significant market power (the monopoly price is 66.7% above marginal cost). The Lerner index equals $1/|E_d|$ at the profit-maximising output, so $|E_d| = 1.5$.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
 
 **Q11.** Explain why firms in a perfectly competitive market earn zero economic profit in the long
-run. Why might a firm in monopolistic competition also earn zero economic profit, despite having
-market power?
+Run. Why might a firm in monopolistic competition also earn zero economic profit, despite having
+Market power?
 
 <details>
 <summary>Answer</summary>
-**Perfect competition**: Free entry and exit. If existing firms earn supernormal profit, new firms enter → market supply increases → price falls → profit is competed away. If firms make losses, some exit → supply decreases → price rises → remaining firms break even. Long-run equilibrium: $P = AC_{min}$, zero economic profit.<br />
+**Perfect competition**: Free entry and exit. If existing firms earn supernormal profit, new firms enter → market supply increases → price falls → profit is competed away. If firms make losses, some exit → supply decreases → price rises → remaining firms break even. Long-run equilibrium: $P = AC_{min}$Zero economic profit.<br />
 **Monopolistic competition**: Despite product differentiation (downward-sloping demand), free entry and exit drive long-run profit to zero. If firms earn supernormal profit, new firms enter with similar but differentiated products → demand for each firm's product shifts left (consumers have more substitutes) → price falls until $P = AC$. The firm still produces where $MR = MC$ and charges $P \gt{} MC$ (some market power), but $P = AC$ (zero profit). Result: excess capacity — the firm produces less than the output that minimises AC.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
@@ -152,10 +152,10 @@ market power?
 ### Topic 5: Labour Markets
 
 **Q12.** A profit-maximising firm operates in a perfectly competitive product market (price = £20)
-and is a monopsonist in the labour market. The labour supply is $w = 10 + 2L$ and the marginal
-product of labour is $MP_L = 30 - L$. Calculate (a) the profit-maximising employment and wage, and
+And is a monopsonist in the labour market. The labour supply is $w = 10 + 2L$ and the marginal
+Product of labour is $MP_L = 30 - L$. Calculate (a) the profit-maximising employment and wage, and
 (b) the employment and wage if the labour market were perfectly competitive. (c) Calculate the
-deadweight loss.
+Deadweight loss.
 
 <details>
 <summary>Answer</summary>
@@ -166,8 +166,8 @@ deadweight loss.
 </details>
 
 **Q13.** Explain the difference between the substitution effect and the income effect of a wage
-increase on the individual's labour supply. Under what condition does the labour supply curve bend
-backwards?
+Increase on the individual's labour supply. Under what condition does the labour supply curve bend
+Backwards?
 
 <details>
 <summary>Answer</summary>
@@ -181,18 +181,18 @@ backwards?
 
 **Q14.** A country has five income groups with annual incomes: £15,000, £25,000, £35,000, £60,000,
 £165,000. (a) Calculate the Gini coefficient. (b) If the government introduces a 20% flat tax and
-redistributes it equally, what happens to the Gini coefficient?
+Redistributes it equally, what happens to the Gini coefficient?
 
 <details>
 <summary>Answer</summary>
-(a) Total income = £300,000. Share of each quintile (one person each): 5%, 8.3%, 11.7%, 20%, 55%. Cumulative: 5%, 13.3%, 25%, 45%, 100%. Line of equality: 20%, 40%, 60%, 80%, 100%. Gini = 1 - 2B where B is area under Lorenz curve. Using trapezoidal rule: $B = 0.5(0 + 0.05) + 0.5(0.05 + 0.133) + 0.5(0.133 + 0.25) + 0.5(0.25 + 0.45) + 0.5(0.45 + 1.0) = 0.025 + 0.0915 + 0.1915 + 0.35 + 0.725 = 1.383$. $A = 0.5 - B = -0.883$. Gini $= 2A = 2(0.5 - 1.383/2)$... Let me use the standard formula: Gini $= \frac◆LB◆2 \sum i \cdot y_i◆RB◆◆LB◆n \sum y_i◆RB◆ - \frac{n+1}{n}$. Or more simply, using the exact cumulative approach: Gini $\approx 0.38$ (a moderately unequal distribution).<br />
+(a) Total income = £300,000. Share of each quintile (one person each): 5%, 8.3%, 11.7%, 20%, 55%. Cumulative: 5%, 13.3%, 25%, 45%, 100%. Line of equality: 20%, 40%, 60%, 80%, 100%. Gini = 1 - 2B where B is area under Lorenz curve. Using trapezoidal rule: $B = 0.5(0 + 0.05) + 0.5(0.05 + 0.133) + 0.5(0.133 + 0.25) + 0.5(0.25 + 0.45) + 0.5(0.45 + 1.0) = 0.025 + 0.0915 + 0.1915 + 0.35 + 0.725 = 1.383$. $A = 0.5 - B = -0.883$. Gini $= 2A = 2(0.5 - 1.383/2)$... Let me use the standard formula: Gini $= \frac◆LB◆2 \sum i \cdot y_i◆RB◆◆LB◆n \sum y_i◆RB◆ - \frac{n+1}{n}$. Or more , using the exact cumulative approach: Gini $\approx 0.38$ (a moderately unequal distribution).<br />
 (b) 20% tax: revenue = £60,000. Redistribution = £12,000 each. New incomes: £24,000, £32,000, £40,000, £60,000, £144,000. The distribution is more equal → Gini coefficient falls. The tax is proportional, so the redistribution effect (equal per capita transfer) is progressive, reducing inequality.
 <i>Revision: [Distribution of Income](/docs/alevel/economics/microeconomics/distribution-of-income)</i>
 </details>
 
 **Q15.** Explain why a progressive income tax system is considered more equitable than a
-proportional or regressive system. In your answer, refer to the concepts of horizontal equity,
-vertical equity, and the ability-to-pay principle.
+Proportional or regressive system. In your answer, refer to the concepts of horizontal equity,
+Vertical equity, and the ability-to-pay principle.
 
 <details>
 <summary>Answer</summary>
@@ -206,7 +206,7 @@ Regressive taxes (e.g., VAT) violate vertical equity — the poor pay a higher s
 ### Cross-Topic Micro Questions
 
 **Q16.** Explain how a minimum wage set above the equilibrium wage creates a deadweight loss. Under
-what conditions might a minimum wage actually increase employment (citing Card and Krueger)?
+What conditions might a minimum wage actually increase employment (citing Card and Krueger)?
 
 <details>
 <summary>Answer</summary>
@@ -216,11 +216,11 @@ Card & Krueger (1994): In a **monopsonistic labour market**, a moderate minimum 
 </details>
 
 **Q17.** "A monopoly is always worse for consumers than perfect competition." Evaluate using the
-concepts of consumer surplus, deadweight loss, and dynamic efficiency.
+Concepts of consumer surplus, deadweight loss, and dynamic efficiency.
 
 <details>
 <summary>Answer</summary>
-Static efficiency: monopoly charges $P \gt{} MC$, produces $Q \lt{} Q_c$, creates DWL, and reduces consumer surplus. By these measures, monopoly is worse.<br />
+Static efficiency: monopoly charges $P \gt{} MC$Produces $Q \lt{} Q_c$Creates DWL, and reduces consumer surplus. By these measures, monopoly is worse.<br />
 Dynamic efficiency: monopoly may invest more in R&D because (1) supernormal profits fund innovation, (2) the promise of monopoly power incentivises innovation (Schumpeter, 1942). If innovation creates new products or lowers costs, long-run consumer welfare may be higher under monopoly. Examples: pharmaceutical patents (high prices in short run, but new drugs developed).<br />
 Natural monopoly: where economies of scale are so large that one firm can supply the entire market at lowest cost (e.g., water, electricity grids). Competition would be wasteful (duplication of infrastructure). Regulation (price cap regulation, RPI-X) is needed rather than competition.<br />
 Conclusion: monopoly is statically inefficient but may be dynamically efficient and is appropriate for natural monopolies. Policy should regulate, not necessarily prevent, monopoly.
@@ -228,8 +228,8 @@ Conclusion: monopoly is statically inefficient but may be dynamically efficient 
 </details>
 
 **Q18.** A negative externality in production leads to overproduction. Explain why a Pigouvian tax
-can achieve the socially optimal output, while a tradable permit scheme can achieve the same
-outcome. Compare the two approaches.
+Can achieve the socially optimal output, while a tradable permit scheme can achieve the same
+Outcome. Compare the two approaches.
 
 <details>
 <summary>Answer</summary>
@@ -240,7 +240,7 @@ Comparison: Pigouvian tax gives certainty about price but not quantity. Permits 
 </details>
 
 **Q19.** Explain how income and substitution effects determine the shape of a demand curve. Under
-what conditions is the demand curve Giffen (upward-sloping)?
+What conditions is the demand curve Giffen (upward-sloping)?
 
 <details>
 <summary>Answer</summary>
@@ -251,7 +251,7 @@ Conditions for Giffen behaviour: (1) The good must be inferior (strong income ef
 </details>
 
 **Q20.** Evaluate the argument that privatisation of natural monopolies necessarily improves
-economic welfare.
+Economic welfare.
 
 <details>
 <summary>Answer</summary>
@@ -260,7 +260,7 @@ Not necessarily. Natural monopoly: $AC$ falls over the relevant output range →
 </details>
 
 **Q21.** Using the concept of marginal revenue product, explain why a footballer might earn £300,000
-per week while a nurse earns £600 per week. Is this outcome economically efficient? Is it equitable?
+Per week while a nurse earns £600 per week. Is this outcome economically efficient? Is it equitable?
 
 <details>
 <summary>Answer</summary>
@@ -269,7 +269,7 @@ In a competitive labour market, wage = $MRP_L = MP_L \times MR$. The footballer'
 </details>
 
 **Q22.** A government is considering banning a pollutant. Using cost-benefit analysis, explain how
-to determine the optimal level of pollution (which is unlikely to be zero).
+To determine the optimal level of pollution (which is unlikely to be zero).
 
 <details>
 <summary>Answer</summary>
@@ -284,9 +284,9 @@ The optimal level of pollution is where **marginal social cost of pollution = ma
 ### Topic 1: Macroeconomic Performance
 
 **Q23.** An economy produces two goods: tea and biscuits. Base year (2020): tea 50 units at £2,
-biscuits 100 units at £1. Current year (2024): tea 60 units at £3, biscuits 90 units at £2.
+Biscuits 100 units at £1. Current year (2024): tea 60 units at £3, biscuits 90 units at £2.
 Calculate (a) nominal GDP in both years, (b) real GDP in 2024, (c) the GDP deflator, and (d) the
-inflation rate.
+Inflation rate.
 
 <details>
 <summary>Answer</summary>
@@ -298,7 +298,7 @@ inflation rate.
 </details>
 
 **Q24.** Distinguish between cyclical, structural, and frictional unemployment. Explain why the
-existence of frictional unemployment does not imply market failure.
+Existence of frictional unemployment does not imply market failure.
 
 <details>
 <summary>Answer</summary>
@@ -312,14 +312,14 @@ Frictional unemployment is not market failure because: (1) It is productive — 
 ### Topic 2: Aggregate Demand and Aggregate Supply
 
 **Q25.** An economy has MPC = 0.6, MPT = 0.2, MPM = 0.15. The government increases spending by £80
-billion. Calculate (a) the complex multiplier, (b) the total change in GDP, and (c) the change in
-imports induced by the spending increase.
+Billion. Calculate (a) the complex multiplier, (b) the total change in GDP, and (c) the change in
+Imports induced by the spending increase.
 
 <details>
 <summary>Answer</summary>
 (a) $k = 1/(MPS + MPT + MPM) = 1/(0.4 + 0.2 + 0.15) = 1/0.75 = 1.333$.<br />
-(b) $\Delta Y = 1.333 \times 80 = £106.7$bn.<br />
-(c) Imports increase by $MPM \times \Delta Y = 0.15 \times 106.7 = £16.0$bn. This is the leakage abroad — a significant fraction of the stimulus benefits foreign economies, reducing the domestic multiplier.
+(b) $\Delta Y = 1.333 \times 80 = £106.7$Bn.<br />
+(c) Imports increase by $MPM \times \Delta Y = 0.15 \times 106.7 = £16.0$Bn. This is the leakage abroad — a significant fraction of the stimulus benefits foreign economies, reducing the domestic multiplier.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
 
@@ -328,18 +328,18 @@ imports induced by the spending increase.
 <details>
 <summary>Answer</summary>
 The paradox of thrift: if all households simultaneously increase saving (reduce consumption), AD falls → output falls (via multiplier) → total income falls → saving actually decreases. What is rational for the individual is collectively self-defeating. Formally: $\Delta S = MPS \times \Delta Y = MPS \times k \times \Delta C$. Since $k \gt{} 1$ and $\Delta C \lt{} 0$: $|\Delta S| \gt{} |\Delta C|$.<br />
-Conditions where it does NOT hold: (1) In a small open economy with a flexible exchange rate, increased saving reduces interest rates → currency depreciates → net exports rise → AD may not fall (the saving is channeled abroad and returns as export demand). (2) At full employment, if the economy is at $Y^*$, resources are reallocated from consumption to investment (Say's Law). (3) If saving finances productive investment (rather than hoarding), it may raise future output rather than reduce current output.
+Conditions where it does NOT hold: (1) In a small open economy with a flexible exchange rate, increased saving reduces interest rates → currency depreciates → net exports rise → AD may not fall (the saving is channeled abroad and returns as export demand). (2) At full employment, if the economy is at $Y^*$Resources are reallocated from consumption to investment (Say's Law). (3) If saving finances productive investment (rather than hoarding), it may raise future output rather than reduce current output.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
 
 **Q27.** "An economy in long-run equilibrium experiences an increase in consumer confidence. Trace
-through the short-run and long-run effects using AD/AS analysis. What determines the long-run effect
-on the price level?"
+Through the short-run and long-run effects using AD/AS analysis. What determines the long-run effect
+On the price level?"
 
 <details>
 <summary>Answer</summary>
 **SR**: Consumer confidence rises → $C$ rises → AD shifts right → $Y$ rises above $Y^*$ (inflationary gap), $P$ rises.<br />
-**LR adjustment**: $Y \gt{} Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$, $P$ rises further.<br />
+**LR adjustment**: $Y \gt{} Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further.<br />
 **Final outcome**: $Y$ unchanged at $Y^*$ (long-run neutrality of demand shocks). $P$ is higher. The long-run price level is determined by the intersection of AD and the vertical LRAS, which depends on the money supply (if monetary policy accommodates the shock) or the initial position of AD. The key insight: demand shocks have no long-run effect on output, only on prices.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
@@ -347,7 +347,7 @@ on the price level?"
 ### Topic 3: The Financial Sector
 
 **Q28.** Explain the process of credit creation by commercial banks. If the reserve ratio is 5% and
-a customer deposits £1,000, what is the maximum amount of new money that can be created?
+A customer deposits £1,000, what is the maximum amount of new money that can be created?
 
 <details>
 <summary>Answer</summary>
@@ -360,7 +360,7 @@ This assumes: (1) no cash leakages (all money stays in the banking system), (2) 
 </details>
 
 **Q29.** Explain why the Bank of England targets inflation rather than the money supply. Refer to
-the instability of the velocity of money and the concept of Goodhart's Law.
+The instability of the velocity of money and the concept of Goodhart's Law.
 
 <details>
 <summary>Answer</summary>
@@ -372,18 +372,18 @@ Monetarists argued for targeting money supply growth (Friedman's $k\%$ rule). Bu
 
 **Q30.** The government increases income tax by £50 billion. MPC = 0.75, MPT = 0.2, MPM = 0.1. (a)
 Calculate the change in consumption. (b) Calculate the total change in GDP. (c) Calculate the change
-in the government's tax revenue (assuming the tax is proportional and GDP changes affect revenue).
+In the government's tax revenue (assuming the tax is proportional and GDP changes affect revenue).
 
 <details>
 <summary>Answer</summary>
-(a) The tax increase reduces disposable income by £50bn. $\Delta C = MPC \times \Delta Y_D = 0.75 \times (-50) = -£37.5$bn.<br />
-(b) $k = 1/(0.25 + 0.2 + 0.1) = 1/0.55 = 1.818$. $\Delta Y = k \times \Delta C_{initial} = 1.818 \times (-37.5) = -£68.2$bn.<br />
-(c) The tax increase is £50bn. But GDP falls by £68.2bn, which reduces tax revenue by $MPT \times \Delta Y = 0.2 \times (-68.2) = -£13.6$bn. So net revenue change $\approx 50 - 13.6 = £36.4$bn. The actual revenue gain is less than the nominal tax increase because the contractionary effect reduces the tax base.
+(a) The tax increase reduces disposable income by £50bn. $\Delta C = MPC \times \Delta Y_D = 0.75 \times (-50) = -£37.5$Bn.<br />
+(b) $k = 1/(0.25 + 0.2 + 0.1) = 1/0.55 = 1.818$. $\Delta Y = k \times \Delta C_{initial} = 1.818 \times (-37.5) = -£68.2$Bn.<br />
+(c) The tax increase is £50bn. But GDP falls by £68.2bn, which reduces tax revenue by $MPT \times \Delta Y = 0.2 \times (-68.2) = -£13.6$Bn. So net revenue change $\approx 50 - 13.6 = £36.4$Bn. The actual revenue gain is less than the nominal tax increase because the contractionary effect reduces the tax base.
 <i>Revision: [Fiscal Policy](/docs/alevel/economics/macro/fiscal-policy)</i>
 </details>
 
 **Q31.** "A budget deficit is always harmful to the economy." Evaluate this statement with reference
-to the concepts of crowding out, automatic stabilisers, and the debt-to-GDP ratio.
+To the concepts of crowding out, automatic stabilisers, and the debt-to-GDP ratio.
 
 <details>
 <summary>Answer</summary>
@@ -406,8 +406,8 @@ The statement is largely correct: only supply-side policies shift LRAS right, ra
 
 **Q33.** Country A can produce 8 cars or 4 tonnes of wheat per worker per day. Country B can produce
 3 cars or 3 tonnes of wheat per worker per day. (a) Which country has a comparative advantage in
-which good? (b) If they specialise and trade at an exchange rate of 1.5 wheat per car, show that
-both gain from trade.
+Which good? (b) If they specialise and trade at an exchange rate of 1.5 wheat per car, show that
+Both gain from trade.
 
 <details>
 <summary>Answer</summary>
@@ -417,7 +417,7 @@ both gain from trade.
 </details>
 
 **Q34.** Explain the J-curve effect. Why might a currency depreciation worsen the current account
-before improving it? How does the Marshall-Lerner condition relate to this?
+Before improving it? How does the Marshall-Lerner condition relate to this?
 
 <details>
 <summary>Answer</summary>
@@ -428,7 +428,7 @@ before improving it? How does the Marshall-Lerner condition relate to this?
 </details>
 
 **Q35.** Evaluate the impact of globalisation on a developing country. In your answer, consider the
-roles of comparative advantage, technology transfer, and the Prebisch-Singer hypothesis.
+Roles of comparative advantage, technology transfer, and the Prebisch-Singer hypothesis.
 
 <details>
 <summary>Answer</summary>
@@ -440,9 +440,9 @@ Overall: globalisation has lifted billions out of poverty (especially in East As
 
 ### Topic 7: Macroeconomic Policy Debates
 
-**Q36.** Using the Taylor Rule with $r^* = 1.5\%$, $\pi^* = 2\%$, and equal weights of 0.5,
-calculate the prescribed policy rate when inflation is 1% and the output gap is –2%. What does this
-tell you about the central bank's dilemma at the ZLB?
+**Q36.** Using the Taylor Rule with $r^* = 1.5\%$$\pi^* = 2\%$And equal weights of 0.5,
+Calculate the prescribed policy rate when inflation is 1% and the output gap is –2%. What does this
+Tell you about the central bank's dilemma at the ZLB?
 
 <details>
 <summary>Answer</summary>
@@ -452,7 +452,7 @@ The Taylor Rule prescribes 1.0%. If the ZLB means the rate cannot go below 0%, t
 </details>
 
 **Q37.** "The Lucas critique implies that econometric policy evaluation is useless." Evaluate this
-statement.
+Statement.
 
 <details>
 <summary>Answer</summary>
@@ -464,18 +464,18 @@ The Lucas critique argues that policy evaluation using models with parameters es
 
 **Q38.** An economy is at full employment. The government increases spending on infrastructure by
 £100 billion. Analyse the short-run and long-run effects on output, prices, interest rates, and
-private investment. Under what conditions might this policy be beneficial?
+Private investment. Under what conditions might this policy be beneficial?
 
 <details>
 <summary>Answer</summary>
-**SR**: AD shifts right → $Y$ temporarily rises above $Y^*$, $P$ rises. Government borrowing → demand for loanable funds rises → $r$ rises → private investment falls (crowding out).<br />
-**LR**: If the economy was at full employment, wages rise → SRAS shifts left → $Y$ returns to $Y^*$, $P$ rises further. Crowding out may be substantial (full crowding out in the classical model).<br />
+**SR**: AD shifts right → $Y$ temporarily rises above $Y^*$$P$ rises. Government borrowing → demand for loanable funds rises → $r$ rises → private investment falls (crowding out).<br />
+**LR**: If the economy was at full employment, wages rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further. Crowding out may be substantial (full crowding out in the classical model).<br />
 **Beneficial conditions**: (1) The infrastructure has high social returns → LRAS shifts right in the long run (supply-side benefit) → potential output rises. (2) The spending replaces worn-out infrastructure (maintenance) rather than adding new capacity. (3) The central bank accommodates by increasing money supply (preventing $r$ from rising). (4) The economy has slack in specific sectors (e.g., construction unemployment). Without supply-side benefits, the policy is purely inflationary at full employment.
 <i>Revision: [Fiscal Policy](/docs/alevel/economics/macro/fiscal-policy) and [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
 
 **Q39.** "The UK would benefit from joining the Eurozone." Evaluate using the theory of optimal
-currency areas and the impossible trinity.
+Currency areas and the impossible trinity.
 
 <details>
 <summary>Answer</summary>
@@ -487,17 +487,17 @@ The impossible trinity: joining the Euro means giving up monetary independence a
 </details>
 
 **Q40.** Explain how an appreciation of the exchange rate could simultaneously reduce inflation and
-increase unemployment. Is this a desirable outcome?
+Increase unemployment. Is this a desirable outcome?
 
 <details>
 <summary>Answer</summary>
 **Mechanism**: Appreciation → imports cheaper (disinflationary) → SRAS shifts right (lower costs) → $P$ falls. Also: exports more expensive → net exports fall → AD shifts left → $Y$ falls, unemployment rises. And: import-competing industries lose competitiveness → structural unemployment.<br />
-**Desirable?** It depends on the starting point. If the economy is overheating (high inflation, output above potential): the appreciation is helpful — it cools the economy and reduces inflation. If the economy is at or below full employment: the appreciation worsens unemployment unnecessarily. The net welfare effect depends on: (1) the initial output gap, (2) the share of trade in GDP, (3) the elasticity of export and import demand, (4) whether the appreciation is temporary or permanent. Policy response: if undesirable, the central bank could cut rates to offset the contractionary effect.
+**Desirable?** on the starting point. If the economy is overheating (high inflation, output above potential): the appreciation is helpful — it cools the economy and reduces inflation. If the economy is at or below full employment: the appreciation worsens unemployment unnecessarily. The net welfare effect depends on: (1) the initial output gap, (2) the share of trade in GDP, (3) the elasticity of export and import demand, (4) whether the appreciation is temporary or permanent. Policy response: if undesirable, the central bank could cut rates to offset the contractionary effect.
 <i>Revision: [The International Economy](/docs/alevel/economics/macro/the-international-economy) and [Macroeconomic Performance](/docs/alevel/economics/macro/macroeconomic-performance)</i>
 </details>
 
 **Q41.** "The 2021–2023 inflation surge was primarily caused by supply-side factors, so monetary
-policy was the wrong response." Evaluate this statement.
+Policy was the wrong response." Evaluate this statement.
 
 <details>
 <summary>Answer</summary>
@@ -507,7 +507,7 @@ However: (1) **Demand also surged** — fiscal stimulus, pent-up demand, savings
 </details>
 
 **Q42.** Compare the effectiveness of fiscal policy and monetary policy in (a) a deep recession with
-the ZLB binding, and (b) an overheating economy with rising inflation.
+The ZLB binding, and (b) an overheating economy with rising inflation.
 
 <details>
 <summary>Answer</summary>
@@ -518,7 +518,7 @@ the ZLB binding, and (b) an overheating economy with rising inflation.
 </details>
 
 **Q43.** A developing country has high inflation (25%), a current account deficit (8% of GDP), and
-low growth (1%). Recommend a policy mix and justify your choices.
+Low growth (1%). Recommend a policy mix and justify your choices.
 
 <details>
 <summary>Answer</summary>
@@ -533,7 +533,7 @@ The IMF would likely recommend a structural adjustment programme combining all o
 </details>
 
 **Q44.** Explain how the concept of hysteresis challenges the natural rate hypothesis. What are the
-implications for macroeconomic policy?
+Implications for macroeconomic policy?
 
 <details>
 <summary>Answer</summary>
@@ -544,7 +544,7 @@ implications for macroeconomic policy?
 </details>
 
 **Q45.** "The UK's decision to leave the EU has reduced its long-run economic growth rate." Evaluate
-using the concepts of comparative advantage, trade creation/diversion, and supply-side policy.
+Using the concepts of comparative advantage, trade creation/diversion, and supply-side policy.
 
 <details>
 <summary>Answer</summary>
@@ -570,7 +570,7 @@ using the concepts of comparative advantage, trade creation/diversion, and suppl
 (e) Current account balance $= X - M = 280 - 310 = -\pounds 30\text{bn}$ (deficit).
 </details>
 
-**Q47.** The consumption function is $C = 150 + 0.75Y_d$, investment $I = 100$, government spending $G = 200$, taxes $T = 0.2Y$, and imports $M = 40 + 0.1Y$. Exports $X = 60$. Calculate: (a) the equilibrium level of income, (b) the government spending multiplier, (c) the tax multiplier, (d) whether the government budget is in surplus or deficit.
+**Q47.** The consumption function is $C = 150 + 0.75Y_d$Investment $I = 100$Government spending $G = 200$Taxes $T = 0.2Y$And imports $M = 40 + 0.1Y$. Exports $X = 60$. Calculate: (a) the equilibrium level of income, (b) the government spending multiplier, (c) the tax multiplier, (d) whether the government budget is in surplus or deficit.
 
 <details>
 <summary>Answer</summary>
@@ -611,7 +611,7 @@ $P = 100 - 2(22.5) = 55$.
 
 <details>
 <summary>Answer</summary>
-(a) $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$, $Q = 500 - 240 = 260$.
+(a) $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$$Q = 500 - 240 = 260$.
 
 (b) With tax: supply shifts up. $Q_S = 3(P - 10) - 100 = 3P - 130$.
 $500 - 2P = 3P - 130 \Rightarrow 630 = 5P \Rightarrow P = 126$ (price paid by consumers).
@@ -643,12 +643,12 @@ $20 + 0.1L = 100 - 0.2L \Rightarrow 0.3L = 80 \Rightarrow L = 266.67$.
 $w = 20 + 0.1(266.67) = 46.67$.
 
 (c) DWL: This is the area between the MRPL and labour supply curves from $L = 200$ to $L = 266.67$.
-At $L = 200$: $MRPL = 100 - 40 = 60$, $w = 40$.
+At $L = 200$: $MRPL = 100 - 40 = 60$$w = 40$.
 At $L = 266.67$: $MRPL = w = 46.67$.
 DWL $= \frac{1}{2}(60 - 46.67)(266.67 - 200) = \frac{1}{2}(13.33)(66.67) = 444.4$.
 
 (d) Minimum wage at $\pounds 50$:
-If $w = 50$, the labour supply curve becomes horizontal at $w = 50$ up to the point where the original supply curve equals 50: $50 = 20 + 0.1L \Rightarrow L = 300$.
+If $w = 50$The labour supply curve becomes horizontal at $w = 50$ up to the point where the original supply curve equals 50: $50 = 20 + 0.1L \Rightarrow L = 300$.
 For $L \leq 300$: $MFCL = 50$ (horizontal supply means MFCL = wage).
 $MFCL = MRPL$: $50 = 100 - 0.2L \Rightarrow 0.2L = 50 \Rightarrow L = 250$.
 The monopsonist now hires 250 workers at $\pounds 50$ each.
@@ -659,19 +659,19 @@ This is between the monopsony level (200 workers) and the competitive level (266
 
 <details>
 <summary>Answer</summary>
-Year 0: $u = 5\%$, $\pi^e = 3\%$, $\pi = 3\%$.
+Year 0: $u = 5\%$$\pi^e = 3\%$$\pi = 3\%$.
 
-Year 1: $u = 3\%$, $\pi^e = 3\%$. $\pi = 3 - 0.4(3 - 5) = 3 + 0.8 = 3.8\%$.
+Year 1: $u = 3\%$$\pi^e = 3\%$. $\pi = 3 - 0.4(3 - 5) = 3 + 0.8 = 3.8\%$.
 
-Year 2: $u = 3\%$, $\pi^e = 3.8\%$. $\pi = 3.8 - 0.4(3 - 5) = 3.8 + 0.8 = 4.6\%$.
+Year 2: $u = 3\%$$\pi^e = 3.8\%$. $\pi = 3.8 - 0.4(3 - 5) = 3.8 + 0.8 = 4.6\%$.
 
-Year 3: $u = 3\%$, $\pi^e = 4.6\%$. $\pi = 4.6 + 0.8 = 5.4\%$.
+Year 3: $u = 3\%$$\pi^e = 4.6\%$. $\pi = 4.6 + 0.8 = 5.4\%$.
 
-Year 4: $u = 3\%$, $\pi^e = 5.4\%$. $\pi = 5.4 + 0.8 = 6.2\%$.
+Year 4: $u = 3\%$$\pi^e = 5.4\%$. $\pi = 5.4 + 0.8 = 6.2\%$.
 
-Year 5: $u = 3\%$, $\pi^e = 6.2\%$. $\pi = 6.2 + 0.8 = 7.0\%$.
+Year 5: $u = 3\%$$\pi^e = 6.2\%$. $\pi = 6.2 + 0.8 = 7.0\%$.
 
-Year 6: $u = 3\%$, $\pi^e = 7.0\%$. $\pi = 7.0 + 0.8 = 7.8\%$.
+Year 6: $u = 3\%$$\pi^e = 7.0\%$. $\pi = 7.0 + 0.8 = 7.8\%$.
 
 Inflation accelerates by 0.8 percentage points per year. This is **accelerating inflation** -- the inevitable result of attempting to hold unemployment below the natural rate. The government cannot permanently exploit the Phillips curve trade-off because expectations adjust.
 
@@ -711,7 +711,7 @@ $-170 + \text{Capital account} + \text{Financial account} = 0$.
 The capital and financial accounts together must show a surplus of USD 170bn. This means the country is a net borrower from the rest of the world (capital inflows of USD 170bn).
 </details>
 
-**Q54.** Using the Solow growth model, an economy has savings rate $s = 0.25$, depreciation $\delta = 0.05$, population growth $n = 0.02$, and production function $y = k^{0.5}$ (per worker). Calculate: (a) the steady-state capital per worker, (b) steady-state output per worker, (c) steady-state consumption per worker, (d) the golden rule savings rate.
+**Q54.** Using the Solow growth model, an economy has savings rate $s = 0.25$Depreciation $\delta = 0.05$Population growth $n = 0.02$And production function $y = k^{0.5}$ (per worker). Calculate: (a) the steady-state capital per worker, (b) steady-state output per worker, (c) steady-state consumption per worker, (d) the golden rule savings rate.
 
 <details>
 <summary>Answer</summary>
@@ -733,7 +733,7 @@ $s_{GR} = (n + \delta)k / y = 0.07 \times 51.02 / 7.143 = 3.571 / 7.143 = 0.5$.
 The golden rule savings rate is 50%, which is much higher than the current 25%. The economy is saving too little -- consumption per worker could be higher if the savings rate were increased to 50%.
 </details>
 
-**Q55.** A bond has a face value of $\pounds 100$, pays an annual coupon of $\pounds 4$, and has 3 years to maturity. Market interest rates are 5%. Calculate: (a) the current price of the bond, (b) the current yield, (c) the yield to maturity, (d) what happens to the price if market interest rates rise to 6%.
+**Q55.** A bond has a face value of $\pounds 100$Pays an annual coupon of $\pounds 4$And has 3 years to maturity. Market interest rates are 5%. Calculate: (a) the current price of the bond, (b) the current yield, (c) the yield to maturity, (d) what happens to the price if market interest rates rise to 6%.
 
 <details>
 <summary>Answer</summary>
@@ -749,20 +749,20 @@ At 5%: $PV = 97.28$. Since the coupon rate (4%) is below the market rate (5%), t
 The price falls from $\pounds 97.28$ to $\pounds 94.67$ (a fall of $\pounds 2.61$ or 2.68%). This illustrates the inverse relationship between bond prices and interest rates.
 </details>
 
-**Q56.** The UK experiences a simultaneous increase in government spending and a decrease in consumer confidence. AD is initially $Y = 800 - 4P$, SRAS is $Y = 2P + 200$. (a) Find the initial equilibrium. (b) Government spending increases by 50, shifting AD right. Consumer confidence falls, reducing autonomous consumption by 30, shifting AD left. Calculate the net shift in AD and the new equilibrium. (c) If potential output is 500, describe the output gap and appropriate policy response.
+**Q56.** The UK experiences a simultaneous increase in government spending and a decrease in consumer confidence. AD is initially $Y = 800 - 4P$SRAS is $Y = 2P + 200$. (a) Find the initial equilibrium. (b) Government spending increases by 50, shifting AD right. Consumer confidence falls, reducing autonomous consumption by 30, shifting AD left. Calculate the net shift in AD and the new equilibrium. (c) If potential output is 500, describe the output gap and appropriate policy response.
 
 <details>
 <summary>Answer</summary>
-(a) $800 - 4P = 2P + 200 \Rightarrow 600 = 6P \Rightarrow P = 100$, $Y = 400$.
+(a) $800 - 4P = 2P + 200 \Rightarrow 600 = 6P \Rightarrow P = 100$$Y = 400$.
 
 (b) Net AD shift: $+50 - 30 = +20$. New AD: $Y = 820 - 4P$.
-$820 - 4P = 2P + 200 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 406.67$.
+$820 - 4P = 2P + 200 \Rightarrow 620 = 6P \Rightarrow P = 103.33$$Y = 406.67$.
 
 The net effect is a small rightward shift in AD (output rises from 400 to 406.67, price rises from 100 to 103.33). The fiscal expansion was partially offset by the fall in consumer confidence.
 
 (c) Output gap $= 500 - 406.67 = 93.33$ (recessionary gap). The economy is producing well below potential.
 
-Policy response: expansionary monetary policy (cut interest rates to stimulate investment and consumption) or further expansionary fiscal policy (increase $G$ or cut $T$). The required AD shift to close the gap: at $Y = 500$, $P = 150$ (from SRAS). AD must pass through $(150, 500)$. New AD: $Y = a - 4P$. $500 = a - 600 \Rightarrow a = 1100$. The AD intercept must increase from 820 to 1100 -- a shift of 280.
+Policy response: expansionary monetary policy (cut interest rates to stimulate investment and consumption) or further expansionary fiscal policy (increase $G$ or cut $T$). The required AD shift to close the gap: at $Y = 500$$P = 150$ (from SRAS). AD must pass through $(150, 500)$. New AD: $Y = a - 4P$. $500 = a - 600 \Rightarrow a = 1100$. The AD intercept must increase from 820 to 1100 -- a shift of 280.
 
 This is a large shift, suggesting that demand-side policy alone may not be sufficient. Supply-side policies to shift SRAS right (and LRAS right from 500 to a higher level) would also be beneficial.
 </details>
@@ -828,3 +828,15 @@ This is a large shift, suggesting that demand-side policy alone may not be suffi
 - "There is no such thing as a free lunch." -- Friedman (opportunity cost)
 - "The powerful idea is that markets are efficient." -- Lucas (rational expectations)
 - "Poverty is not an accident. Like slavery and apartheid, it is man-made." -- Mandela (development)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

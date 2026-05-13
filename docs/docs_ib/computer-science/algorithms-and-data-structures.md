@@ -13,39 +13,39 @@ description: "Rigorous IB computer science notes covering Algorithms and Data St
 ### The Four Pillars of Computational Thinking
 
 Computational thinking is the process of formulating problems and their solutions so that the
-solutions are representable as information-processing steps that can be executed by an
-information-processing agent. The IB syllabus identifies four foundational pillars: decomposition,
-pattern recognition, abstraction, and algorithm design.
+Solutions are representable as information-processing steps that can be executed by an
+Information-processing agent. The IB syllabus identifies four foundational pillars: decomposition,
+Pattern recognition, abstraction, and algorithm design.
 
 **Decomposition** is the practice of breaking a complex problem into smaller, more manageable
-sub-problems. Each sub-problem can be solved independently and the solutions composed back together.
+Sub-problems. Each sub-problem can be solved independently and the solutions composed back together.
 For instance, building a search engine requires decomposing the system into a web crawler, an
-indexer, a ranking algorithm, and a query parser. Decomposition enables parallel development,
-simplifies testing, and makes large problems tractable.
+Indexer, a ranking algorithm, and a query parser. Decomposition enables parallel development,
+Simplifies testing, and makes large problems tractable.
 
 **Pattern recognition** involves identifying similarities or recurring themes within or across
-problems. Once a pattern is identified, the same solution strategy can be reused. In sorting, the
-recurring sub-problem of placing one element in its correct position relative to already-sorted
-elements appears in insertion sort; the same pattern of comparing adjacent elements appears in
-bubble sort. Recognizing that two problems share a structural pattern allows the transfer of proven
-techniques.
+Problems. Once a pattern is identified, the same solution strategy can be reused. In sorting, the
+Recurring sub-problem of placing one element in its correct position relative to already-sorted
+Elements appears in insertion sort; the same pattern of comparing adjacent elements appears in
+Bubble sort. Recognizing that two problems share a structural pattern allows the transfer of proven
+Techniques.
 
 **Abstraction** is the process of filtering out irrelevant details and focusing on the essential
-characteristics of a problem. A map abstracts away individual buildings and trees to show roads and
-boundaries; similarly, an algorithm abstracts away hardware specifics to describe logic. In
-computational thinking, abstraction means defining what data is needed and how it transforms,
-without specifying every low-level operation. This enables the creation of general-purpose
-solutions.
+Characteristics of a problem. A map abstracts away individual buildings and trees to show roads and
+Boundaries; similarly, an algorithm abstracts away hardware specifics to describe logic. In
+Computational thinking, abstraction means defining what data is needed and how it transforms,
+Without specifying every low-level operation. This enables the creation of general-purpose
+Solutions.
 
 **Algorithm design** is the construction of a step-by-step procedure that solves a given problem. A
-well-designed algorithm must be unambiguous, finite (terminating), and correct. Design techniques
-include brute force, greedy strategies, divide and conquer, dynamic programming, and backtracking.
+Well-designed algorithm must be unambiguous, finite (terminating), and correct. Design techniques
+Include brute force, greedy strategies, divide and conquer, dynamic programming, and backtracking.
 The IB syllabus primarily examines the first three.
 
 ### Pseudocode Conventions (IB Style)
 
 The IB uses a specific pseudocode standard that must be understood for examinations. The key
-conventions are as follows.
+Conventions are as follows.
 
 **Variable assignment** uses the left arrow:
 
@@ -70,7 +70,7 @@ IF mark >= 50
 END IF
 ```
 
-**Looping** includes counted loops (`FOR ... END FOR`) and conditional loops (`WHILE ... END WHILE`,
+**Looping** includes counted loops (`FOR ... END FOR`) and conditional loops (`WHILE ... END WHILE`
 `REPEAT ... UNTIL`):
 
 ```python
@@ -98,7 +98,7 @@ ENDCASE
 ```
 
 **Modular programming** uses `FUNCTION` and `PROCEDURE`. Functions return a value; procedures do
-not:
+Not:
 
 ```python
 FUNCTION calculateArea(length, width) RETURNS REAL
@@ -111,14 +111,14 @@ END PROCEDURE
 ```
 
 **Array access** uses zero-indexed square brackets. Multi-dimensional arrays use comma-separated
-indices:
+Indices:
 
 ```python
 arr[0] ← 5
 matrix[i, j] ← i + j
 ```
 
-**String operations** use functions like `LENGTH()`, `SUBSTRING()`, and concatenation with `+`:
+**String operations** use functions like `LENGTH()``SUBSTRING()`And concatenation with `+`:
 
 ```python
 len ← LENGTH(name)
@@ -129,10 +129,10 @@ full ← first + " " + last
 ### Flowcharts
 
 Flowcharts provide a visual representation of an algorithm. The IB standard defines six flowchart
-symbols, each with a specific shape and meaning:
+Symbols, each with a specific shape and meaning:
 
 The **terminator** (rounded rectangle or oval) marks the start or end of the algorithm. Every
-flowchart begins with a "Start" terminator and ends with an "End" terminator.
+Flowchart begins with a "Start" terminator and ends with an "End" terminator.
 
 The **process** (rectangle) represents a single computation step or assignment, such as
 `count ← count + 1`.
@@ -141,22 +141,22 @@ The **input/output parallelogram** represents data entering or leaving the algor
 `INPUT x` or `OUTPUT result`.
 
 The **decision** (diamond) represents a conditional branch. It contains a Boolean expression and has
-two outgoing arrows: one labeled "Yes" (or "True") and one labeled "No" (or "False").
+Two outgoing arrows: one labeled "Yes" (or "True") and one labeled "No" (or "False").
 
 The **flow line** (arrow) shows the direction of control flow. Flow lines connect symbols and
-indicate the sequence of execution.
+Indicate the sequence of execution.
 
 The **predefined process** (double-sided rectangle) represents a call to a subroutine or module.
 
 Flowcharts are especially useful for illustrating the control flow of algorithms with complex
-branching, such as sorting algorithms. However, they become unwieldy for large algorithms and lack
-the precision of pseudocode for expressing data structures and detailed computations.
+Branching, such as sorting algorithms. However, they become unwieldy for large algorithms and lack
+The precision of pseudocode for expressing data structures and detailed computations.
 
 ### Trace Tables
 
 A trace table is a systematic method for verifying the correctness of an algorithm by simulating its
-execution with specific input values. Each column represents a variable, and each row represents a
-step of execution.
+Execution with specific input values. Each column represents a variable, and each row represents a
+Step of execution.
 
 Consider the following algorithm to find the sum of integers from 1 to `n`:
 
@@ -172,22 +172,22 @@ FUNCTION sumToN(n) RETURNS INTEGER
 END FUNCTION
 ```
 
-With input `n = 4`, the trace table is:
+With input `n = 4`The trace table is:
 
-| Step | i   | n   | total | i `$\le$` n |
+| Step | i | n | total | i `$\le$` n |
 | ---- | --- | --- | ----- | -------- |
-| 1    | 1   | 4   | 0     | True     |
-| 2    | 1   | 4   | 1     | True     |
-| 3    | 2   | 4   | 1     | True     |
-| 4    | 2   | 4   | 3     | True     |
-| 5    | 3   | 4   | 3     | True     |
-| 6    | 3   | 4   | 6     | True     |
-| 7    | 4   | 4   | 6     | True     |
-| 8    | 4   | 4   | 10    | False    |
+| 1 | 1 | 4 | 0 | True |
+| 2 | 1 | 4 | 1 | True |
+| 3 | 2 | 4 | 1 | True |
+| 4 | 2 | 4 | 3 | True |
+| 5 | 3 | 4 | 3 | True |
+| 6 | 3 | 4 | 6 | True |
+| 7 | 4 | 4 | 6 | True |
+| 8 | 4 | 4 | 10 | False |
 
 The final value of `total` is 10, which equals $1 + 2 + 3 + 4 = 10$. The algorithm is correct for
-this input. A trace table does not prove correctness for all inputs, but it builds confidence and
-helps identify off-by-one errors and infinite loops.
+This input. A trace table does not prove correctness for all inputs, but it builds confidence and
+Helps identify off-by-one errors and infinite loops.
 
 **Worked Example: Trace table for finding the maximum value**
 
@@ -205,20 +205,20 @@ FUNCTION findMax(arr) RETURNS INTEGER
 END FUNCTION
 ```
 
-With input `arr = [3, 7, 2, 9, 4]`, construct the trace table.
+With input `arr = [3, 7, 2, 9, 4]`Construct the trace table.
 
 <details>
 <summary>Solution</summary>
 
-| Step | i   | arr[i] | max | arr[i] `>` max |
+| Step | i | arr[i] | max | arr[i] `>` max |
 | ---- | --- | ------ | --- | -------------- |
-| 1    | --  | --     | 3   | --             |
-| 2    | 1   | 7      | 3   | True           |
-| 3    | 1   | 7      | 7   | --             |
-| 4    | 2   | 2      | 7   | False          |
-| 5    | 3   | 9      | 7   | True           |
-| 6    | 3   | 9      | 9   | --             |
-| 7    | 4   | 4      | 9   | False          |
+| 1 | -- | -- | 3 | -- |
+| 2 | 1 | 7 | 3 | True |
+| 3 | 1 | 7 | 7 | -- |
+| 4 | 2 | 2 | 7 | False |
+| 5 | 3 | 9 | 7 | True |
+| 6 | 3 | 9 | 9 | -- |
+| 7 | 4 | 4 | 9 | False |
 
 The function returns 9. Total comparisons: 4 (one per loop iteration).
 
@@ -249,7 +249,7 @@ A school library needs a system that: (a) allows students to search for books by
 ### Linear Search
 
 Linear search is the simplest search algorithm. It examines each element of a collection
-sequentially until the target is found or the end of the collection is reached.
+Sequentially until the target is found or the end of the collection is reached.
 
 **IB Pseudocode:**
 
@@ -264,30 +264,30 @@ FUNCTION linearSearch(arr, target) RETURNS INTEGER
 END FUNCTION
 ```
 
-**Trace with `arr = [7, 3, 9, 1, 5]`, `target = 9`:**
+**Trace with `arr = [7, 3, 9, 1, 5]``target = 9`:**
 
-| Step | i   | arr[i] | arr[i] = target | Action   |
+| Step | i | arr[i] | arr[i] = target | Action |
 | ---- | --- | ------ | --------------- | -------- |
-| 1    | 0   | 7      | False           | Continue |
-| 2    | 1   | 3      | False           | Continue |
-| 3    | 2   | 9      | True            | Return 2 |
+| 1 | 0 | 7 | False | Continue |
+| 2 | 1 | 3 | False | Continue |
+| 3 | 2 | 9 | True | Return 2 |
 
 The target is found at index 2. If the target were 6, the algorithm would examine all five elements
-and return -1.
+And return -1.
 
 **Time complexity:** In the worst case, the target is the last element or is not present, requiring
 $n$ comparisons. In the best case, the target is the first element, requiring 1 comparison. On
-average, $\frac{n}{2}$ comparisons are needed. Therefore, the worst-case time complexity is $O(n)$.
+Average, $\frac{n}{2}$ comparisons are needed. Therefore, the worst-case time complexity is $O(n)$.
 
-**Space complexity:** $O(1)$, as no additional data structures are required beyond a few variables.
+**Space complexity:** $O(1)$As no additional data structures are required beyond a few variables.
 
 **Key properties:** Linear search works on any collection, sorted or unsorted. It requires no
-preprocessing. However, its performance degrades linearly with input size, making it impractical for
-large datasets.
+Preprocessing. However, its performance degrades linearly with input size, making it impractical for
+Large datasets.
 
 **Worked Example: Counting occurrences with linear search**
 
-Modify linear search to count how many times a target value appears in an array. Trace with `arr = [3, 7, 3, 1, 3, 9]`, `target = 3`.
+Modify linear search to count how many times a target value appears in an array. Trace with `arr = [3, 7, 3, 1, 3, 9]``target = 3`.
 
 <details>
 <summary>Solution</summary>
@@ -304,14 +304,14 @@ FUNCTION countOccurrences(arr, target) RETURNS INTEGER
 END FUNCTION
 ```
 
-| Step | i   | arr[i] | arr[i] = target | count |
+| Step | i | arr[i] | arr[i] = target | count |
 | ---- | --- | ------ | --------------- | ----- |
-| 1    | 0   | 3      | True            | 1     |
-| 2    | 1   | 7      | False           | 1     |
-| 3    | 2   | 3      | True            | 2     |
-| 4    | 3   | 1      | False           | 2     |
-| 5    | 4   | 3      | True            | 3     |
-| 6    | 5   | 9      | False           | 3     |
+| 1 | 0 | 3 | True | 1 |
+| 2 | 1 | 7 | False | 1 |
+| 3 | 2 | 3 | True | 2 |
+| 4 | 3 | 1 | False | 2 |
+| 5 | 4 | 3 | True | 3 |
+| 6 | 5 | 9 | False | 3 |
 
 The function returns 3. The target 3 appears at indices 0, 2, and 4.
 
@@ -319,14 +319,14 @@ The function returns 3. The target 3 appears at indices 0, 2, and 4.
 
 **Common Pitfalls -- Linear Search**
 
-- **Forgetting to return -1:** If the loop completes without finding the target, the function must return a sentinel value (typically -1) to indicate "not found." Returning nothing or returning 0 is incorrect because 0 is a valid index.
-- **Off-by-one errors in loop bounds:** The loop must go from 0 to `LENGTH(arr) - 1`, inclusive. Using `LENGTH(arr)` as the upper bound would cause an out-of-bounds error in languages with fixed arrays.
+- **Forgetting to return -1:** If the loop completes without finding the target, the function must return a sentinel value ( -1) to indicate "not found." Returning nothing or returning 0 is incorrect because 0 is a valid index.
+- **Off-by-one errors in loop bounds:** The loop must go from 0 to `LENGTH(arr) - 1`Inclusive. Using `LENGTH(arr)` as the upper bound would cause an out-of-bounds error in languages with fixed arrays.
 - **Confusing "not found" with index 0:** When the target is at index 0, the function returns 0. Client code must check for -1 specifically, not use `if result:` (which would treat 0 as false in some languages).
 
 ### Binary Search
 
 Binary search exploits the property of sorted data to achieve logarithmic search time. It repeatedly
-divides the search interval in half by comparing the target to the middle element.
+Divides the search interval in half by comparing the target to the middle element.
 
 **IB Pseudocode:**
 
@@ -349,41 +349,41 @@ END FUNCTION
 ```
 
 **Precondition:** The array must be sorted in ascending order. If the array is not sorted, binary
-search will produce incorrect results. This is a critical distinction from linear search.
+Search will produce incorrect results. This is a critical distinction from linear search.
 
-**Trace with `arr = [1, 3, 5, 7, 9, 11, 13]`, `target = 7`:**
+**Trace with `arr = [1, 3, 5, 7, 9, 11, 13]``target = 7`:**
 
-| Step | low | high | mid | arr[mid] | Comparison | Action   |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | ---------- | -------- |
-| 1    | 0   | 6    | 3   | 7        | 7 = 7      | Return 3 |
+| 1 | 0 | 6 | 3 | 7 | 7 = 7 | Return 3 |
 
 The target is found immediately in the first iteration. Now consider `target = 11`:
 
-| Step | low | high | mid | arr[mid] | Comparison  | Action   |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | ----------- | -------- |
-| 1    | 0   | 6    | 3   | 7        | 7 `&lt;` 11 | low = 4  |
-| 2    | 4   | 6    | 5   | 11       | 11 = 11     | Return 5 |
+| 1 | 0 | 6 | 3 | 7 | 7 `&lt;` 11 | low = 4 |
+| 2 | 4 | 6 | 5 | 11 | 11 = 11 | Return 5 |
 
 And `target = 4` (not present):
 
-| Step | low | high | mid | arr[mid] | Comparison      | Action    |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | --------------- | --------- |
-| 1    | 0   | 6    | 3   | 7        | 7 `&gt;` 4      | high = 2  |
-| 2    | 0   | 2    | 1   | 3        | 3 `&lt;` 4      | low = 2   |
-| 3    | 2   | 2    | 2   | 5        | 5 `&gt;` 4      | high = 1  |
-| 4    | 2   | 1    | --  | --       | low `&gt;` high | Return -1 |
+| 1 | 0 | 6 | 3 | 7 | 7 `&gt;` 4 | high = 2 |
+| 2 | 0 | 2 | 1 | 3 | 3 `&lt;` 4 | low = 2 |
+| 3 | 2 | 2 | 2 | 5 | 5 `&gt;` 4 | high = 1 |
+| 4 | 2 | 1 | -- | -- | low `&gt;` high | Return -1 |
 
-When `low` exceeds `high`, the search space is empty and the target is confirmed absent.
+When `low` exceeds `high`The search space is empty and the target is confirmed absent.
 
 **Time complexity:** Each iteration halves the search space. After $k$ iterations, the remaining
-search space has size $\frac{n}{2^k}$. The search terminates when $\frac{n}{2^k} \lt 1$, i.e.,
-$2^k \gt n$, i.e., $k \gt \log_2 n$. Therefore, the worst-case and average-case time complexity is
+Search space has size $\frac{n}{2^k}$. The search terminates when $\frac{n}{2^k} \lt 1$I.e.,
+$2^k \gt n$I.e., $k \gt \log_2 n$. Therefore, the worst-case and average-case time complexity is
 $O(\log n)$.
 
 **Space complexity:** $O(1)$ for the iterative version. A recursive version would use $O(\log n)$
-stack space.
+Stack space.
 
-**Best case:** $O(1)$, when the middle element is the target on the first comparison.
+**Best case:** $O(1)$When the middle element is the target on the first comparison.
 
 **Worked Example: Binary search -- longer trace**
 
@@ -392,13 +392,13 @@ Perform binary search on `arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]` for `targ
 <details>
 <summary>Solution</summary>
 
-| Step | low | high | mid | arr[mid] | Comparison | Action  |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | ---------- | ------- |
-| 1    | 0   | 9    | 4   | 16       | 16 `&lt;` 23 | low = 5 |
-| 2    | 5   | 9    | 7   | 56       | 56 `&gt;` 23 | high = 6 |
-| 3    | 5   | 6    | 5   | 23       | 23 = 23   | Return 5 |
+| 1 | 0 | 9 | 4 | 16 | 16 `&lt;` 23 | low = 5 |
+| 2 | 5 | 9 | 7 | 56 | 56 `&gt;` 23 | high = 6 |
+| 3 | 5 | 6 | 5 | 23 | 23 = 23 | Return 5 |
 
-Found at index 5 in 3 iterations. The array has 10 elements, and $\lvert \log_2 10 \rvert = 4$, so 3 iterations is within the expected $O(\log n)$ bound.
+Found at index 5 in 3 iterations. The array has 10 elements, and $\lvert \log_2 10 \rvert = 4$So 3 iterations is within the expected $O(\log n)$ bound.
 
 </details>
 
@@ -409,13 +409,13 @@ Perform binary search on `arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]` for `targ
 <details>
 <summary>Solution</summary>
 
-| Step | low | high | mid | arr[mid] | Comparison      | Action  |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | --------------- | ------- |
-| 1    | 0   | 9    | 4   | 16       | 16 `&gt;` 15    | high = 3 |
-| 2    | 0   | 3    | 1   | 5        | 5 `&lt;` 15     | low = 2  |
-| 3    | 2   | 3    | 2   | 8        | 8 `&lt;` 15     | low = 3  |
-| 4    | 3   | 3    | 3   | 12       | 12 `&lt;` 15    | low = 4  |
-| 5    | 4   | 3    | --  | --       | low `&gt;` high | Return -1 |
+| 1 | 0 | 9 | 4 | 16 | 16 `&gt;` 15 | high = 3 |
+| 2 | 0 | 3 | 1 | 5 | 5 `&lt;` 15 | low = 2 |
+| 3 | 2 | 3 | 2 | 8 | 8 `&lt;` 15 | low = 3 |
+| 4 | 3 | 3 | 3 | 12 | 12 `&lt;` 15 | low = 4 |
+| 5 | 4 | 3 | -- | -- | low `&gt;` high | Return -1 |
 
 After 4 iterations, `low = 4` exceeds `high = 3`. The search interval is empty. At this point, the algorithm has eliminated all possible positions for 15. Specifically, element 12 (index 3) is the largest element smaller than 15, and element 16 (index 4) is the smallest element larger than 15. There is no gap between them for 15 to occupy.
 
@@ -429,26 +429,26 @@ After 4 iterations, `low = 4` exceeds `high = 3`. The search interval is empty. 
 
 ### Comparison of Search Algorithms
 
-| Property               | Linear Search | Binary Search       |
+| Property | Linear Search | Binary Search |
 | ---------------------- | ------------- | ------------------- |
-| Worst-case time        | $O(n)$        | $O(\log n)$         |
-| Best-case time         | $O(1)$        | $O(1)$              |
-| Average-case time      | $O(n)$        | $O(\log n)$         |
-| Space complexity       | $O(1)$        | $O(1)$              |
-| Precondition           | None          | Data must be sorted |
-| Works on unsorted?     | Yes           | No                  |
-| Works on linked lists? | Yes           | No (without tricks) |
+| Worst-case time | $O(n)$ | $O(\log n)$ |
+| Best-case time | $O(1)$ | $O(1)$ |
+| Average-case time | $O(n)$ | $O(\log n)$ |
+| Space complexity | $O(1)$ | $O(1)$ |
+| Precondition | None | Data must be sorted |
+| Works on unsorted? | Yes | No |
+| Works on linked lists? | Yes | No (without tricks) |
 
 The choice between linear and binary search depends on the data characteristics. If data is unsorted
-and only searched occasionally, linear search is appropriate. If data is sorted or can be
-preprocessed by sorting, binary search is vastly superior for repeated queries. For a dataset of one
-million elements, binary search requires at most 20 comparisons versus up to one million for linear
-search.
+And only searched occasionally, linear search is appropriate. If data is sorted or can be
+Preprocessed by sorting, binary search is vastly superior for repeated queries. For a dataset of one
+Million elements, binary search requires at most 20 comparisons versus up to one million for linear
+Search.
 
 ### Hash-Based Search (Brief Overview)
 
 A hash table provides average-case $O(1)$ search time by using a hash function to compute an index
-directly from the key. The hash function maps the key to an integer in the range $[0, m - 1]$, where
+Directly from the key. The hash function maps the key to an integer in the range $[0, m - 1]$Where
 $m$ is the table size. A simple hash function for integer keys is:
 
 $h(k) = k \mod m$
@@ -458,17 +458,17 @@ For string keys, a common approach is to sum the ASCII values of characters and 
 $h(s) = \left(\sum_{i=0}^{n-1} s_i \right) \mod m$
 
 The main challenge is **collision resolution**: two different keys may hash to the same index. Two
-primary strategies exist: chaining (each table slot holds a linked list of colliding elements) and
-open addressing (on collision, probe for the next available slot). Hash tables are covered in more
-detail in the Data Structures section of this document.
+Primary strategies exist: chaining (each table slot holds a linked list of colliding elements) and
+Open addressing (on collision, probe for the next available slot). Hash tables are covered in more
+Detail in the Data Structures section of this document.
 
 ## Sorting Algorithms
 
 ### Bubble Sort
 
 Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they
-are in the wrong order. The pass is repeated until no swaps are needed, indicating that the list is
-sorted. The algorithm is named because smaller elements "bubble" to the top of the list.
+Are in the wrong order. The pass is repeated until no swaps are needed, indicating that the list is
+Sorted. The algorithm is named because smaller elements "bubble" to the top of the list.
 
 **IB Pseudocode:**
 
@@ -493,50 +493,50 @@ END PROCEDURE
 ```
 
 The `swapped` flag is an optimization: if a full pass completes without any swaps, the array is
-sorted and the algorithm terminates early. The variable `n` is decremented each pass because the
-largest unsorted element is guaranteed to be in its final position after each pass.
+Sorted and the algorithm terminates early. The variable `n` is decremented each pass because the
+Largest unsorted element is guaranteed to be in its final position after each pass.
 
 **Trace with `arr = [5, 1, 4, 2, 8]`:**
 
 Pass 1:
 
-| Comparison | arr[i] | arr[i+1] | Swap? | Array State     |
+| Comparison | arr[i] | arr[i+1] | Swap? | Array State |
 | ---------- | ------ | -------- | ----- | --------------- |
-| i = 0      | 5      | 1        | Yes   | [1, 5, 4, 2, 8] |
-| i = 1      | 5      | 4        | Yes   | [1, 4, 5, 2, 8] |
-| i = 2      | 5      | 2        | Yes   | [1, 4, 2, 5, 8] |
-| i = 3      | 5      | 8        | No    | [1, 4, 2, 5, 8] |
+| i = 0 | 5 | 1 | Yes | [1, 5, 4, 2, 8] |
+| i = 1 | 5 | 4 | Yes | [1, 4, 5, 2, 8] |
+| i = 2 | 5 | 2 | Yes | [1, 4, 2, 5, 8] |
+| i = 3 | 5 | 8 | No | [1, 4, 2, 5, 8] |
 
 After Pass 1: [1, 4, 2, 5, 8]. Swaps occurred, so continue.
 
 Pass 2:
 
-| Comparison | arr[i] | arr[i+1] | Swap? | Array State     |
+| Comparison | arr[i] | arr[i+1] | Swap? | Array State |
 | ---------- | ------ | -------- | ----- | --------------- |
-| i = 0      | 1      | 4        | No    | [1, 4, 2, 5, 8] |
-| i = 1      | 4      | 2        | Yes   | [1, 2, 4, 5, 8] |
-| i = 2      | 4      | 5        | No    | [1, 2, 4, 5, 8] |
+| i = 0 | 1 | 4 | No | [1, 4, 2, 5, 8] |
+| i = 1 | 4 | 2 | Yes | [1, 2, 4, 5, 8] |
+| i = 2 | 4 | 5 | No | [1, 2, 4, 5, 8] |
 
 After Pass 2: [1, 2, 4, 5, 8]. Swaps occurred, so continue.
 
 Pass 3:
 
-| Comparison | arr[i] | arr[i+1] | Swap? | Array State     |
+| Comparison | arr[i] | arr[i+1] | Swap? | Array State |
 | ---------- | ------ | -------- | ----- | --------------- |
-| i = 0      | 1      | 2        | No    | [1, 2, 4, 5, 8] |
-| i = 1      | 2      | 4        | No    | [1, 2, 4, 5, 8] |
+| i = 0 | 1 | 2 | No | [1, 2, 4, 5, 8] |
+| i = 1 | 2 | 4 | No | [1, 2, 4, 5, 8] |
 
 After Pass 3: [1, 2, 4, 5, 8]. No swaps occurred; algorithm terminates.
 
 **Time complexity:** In the worst case (reverse-sorted input), the algorithm performs
 $\frac{n(n-1)}{2}$ comparisons and swaps, giving $O(n^2)$. In the best case (already sorted), with
-the early-termination optimization, only $n - 1$ comparisons are made, giving $O(n)$. The average
-case is $O(n^2)$.
+The early-termination optimization, only $n - 1$ comparisons are made, giving $O(n)$. The average
+Case is $O(n^2)$.
 
-**Space complexity:** $O(1)$, as sorting is performed in-place.
+**Space complexity:** $O(1)$As sorting is performed in-place.
 
 **Stability:** Bubble sort is stable because it only swaps adjacent elements when the left element
-is strictly greater. Equal elements maintain their relative order.
+Is strictly greater. Equal elements maintain their relative order.
 
 **Worked Example: Bubble sort -- counting comparisons and swaps**
 
@@ -547,39 +547,39 @@ Trace bubble sort on `arr = [4, 2, 5, 1, 3]` and count the total number of compa
 
 Pass 1 (n = 5, comparing indices 0--3):
 
-| i   | arr[i] | arr[i+1] | Swap? | Array State     |
+| i | arr[i] | arr[i+1] | Swap? | Array State |
 | --- | ------ | -------- | ----- | --------------- |
-| 0   | 4      | 2        | Yes   | [2, 4, 5, 1, 3] |
-| 1   | 4      | 5        | No    | [2, 4, 5, 1, 3] |
-| 2   | 5      | 1        | Yes   | [2, 4, 1, 5, 3] |
-| 3   | 5      | 3        | Yes   | [2, 4, 1, 3, 5] |
+| 0 | 4 | 2 | Yes | [2, 4, 5, 1, 3] |
+| 1 | 4 | 5 | No | [2, 4, 5, 1, 3] |
+| 2 | 5 | 1 | Yes | [2, 4, 1, 5, 3] |
+| 3 | 5 | 3 | Yes | [2, 4, 1, 3, 5] |
 
 Comparisons: 4, Swaps: 3
 
 Pass 2 (n = 4, comparing indices 0--2):
 
-| i   | arr[i] | arr[i+1] | Swap? | Array State     |
+| i | arr[i] | arr[i+1] | Swap? | Array State |
 | --- | ------ | -------- | ----- | --------------- |
-| 0   | 2      | 4        | No    | [2, 4, 1, 3, 5] |
-| 1   | 4      | 1        | Yes   | [2, 1, 4, 3, 5] |
-| 2   | 4      | 3        | Yes   | [2, 1, 3, 4, 5] |
+| 0 | 2 | 4 | No | [2, 4, 1, 3, 5] |
+| 1 | 4 | 1 | Yes | [2, 1, 4, 3, 5] |
+| 2 | 4 | 3 | Yes | [2, 1, 3, 4, 5] |
 
 Comparisons: 3, Swaps: 2
 
 Pass 3 (n = 3, comparing indices 0--1):
 
-| i   | arr[i] | arr[i+1] | Swap? | Array State     |
+| i | arr[i] | arr[i+1] | Swap? | Array State |
 | --- | ------ | -------- | ----- | --------------- |
-| 0   | 2      | 1        | Yes   | [1, 2, 3, 4, 5] |
-| 1   | 2      | 3        | No    | [1, 2, 3, 4, 5] |
+| 0 | 2 | 1 | Yes | [1, 2, 3, 4, 5] |
+| 1 | 2 | 3 | No | [1, 2, 3, 4, 5] |
 
 Comparisons: 2, Swaps: 1
 
 Pass 4 (n = 2, comparing indices 0--0):
 
-| i   | arr[i] | arr[i+1] | Swap? | Array State     |
+| i | arr[i] | arr[i+1] | Swap? | Array State |
 | --- | ------ | -------- | ----- | --------------- |
-| 0   | 1      | 2        | No    | [1, 2, 3, 4, 5] |
+| 0 | 1 | 2 | No | [1, 2, 3, 4, 5] |
 
 Comparisons: 1, Swaps: 0
 
@@ -592,14 +592,14 @@ No swaps in pass 4, so the algorithm terminates.
 **Common Pitfalls -- Bubble Sort**
 
 - **Forgetting the early-termination optimization:** Without the `swapped` flag, bubble sort always performs $\frac{n(n-1)}{2}$ comparisons even on an already-sorted array. The IB pseudocode includes this optimization, and exam questions often ask about its effect on the best-case complexity (changing it from $O(n^2)$ to $O(n)$).
-- **Confusing the loop bound:** The inner loop compares `arr[i]` with `arr[i + 1]`, so `i` must stop at `n - 2` (not `n - 1`), otherwise `arr[i + 1]` would be out of bounds on the last iteration.
-- **Miscounting passes:** Each pass places one more element in its final position at the end of the array. After pass $k$, the last $k$ elements are sorted. The inner loop range should shrink accordingly.
+- **Confusing the loop bound:** The inner loop compares `arr[i]` with `arr[i + 1]`So `i` must stop at `n - 2` (not `n - 1`), otherwise `arr[i + 1]` would be out of bounds on the last iteration.
+- **Miscounting passes:** Each pass places one more element in its final position at the end of the array. After pass $k$The last $k$ elements are sorted. The inner loop range should shrink accordingly.
 
 ### Selection Sort
 
 Selection sort divides the array into a sorted portion (initially empty) and an unsorted portion. In
-each pass, it finds the minimum element in the unsorted portion and swaps it with the first element
-of the unsorted portion, thereby extending the sorted portion by one.
+Each pass, it finds the minimum element in the unsorted portion and swaps it with the first element
+Of the unsorted portion, thereby extending the sorted portion by one.
 
 **IB Pseudocode:**
 
@@ -625,22 +625,22 @@ END PROCEDURE
 
 **Trace with `arr = [64, 25, 12, 22, 11]`:**
 
-| Pass | Unsorted Portion     | minIndex | Swap With | Array State          |
+| Pass | Unsorted Portion | minIndex | Swap With | Array State |
 | ---- | -------------------- | -------- | --------- | -------------------- |
-| 0    | [64, 25, 12, 22, 11] | 4        | index 0   | [11, 25, 12, 22, 64] |
-| 1    | [25, 12, 22, 64]     | 2        | index 1   | [11, 12, 25, 22, 64] |
-| 2    | [25, 22, 64]         | 3        | index 2   | [11, 12, 22, 25, 64] |
-| 3    | [25, 64]             | 3        | No swap   | [11, 12, 22, 25, 64] |
+| 0 | [64, 25, 12, 22, 11] | 4 | index 0 | [11, 25, 12, 22, 64] |
+| 1 | [25, 12, 22, 64] | 2 | index 1 | [11, 12, 25, 22, 64] |
+| 2 | [25, 22, 64] | 3 | index 2 | [11, 12, 22, 25, 64] |
+| 3 | [25, 64] | 3 | No swap | [11, 12, 22, 25, 64] |
 
 **Time complexity:** Selection sort always performs $\frac{n(n-1)}{2}$ comparisons regardless of
-input order, giving $O(n^2)$ in all cases. The number of swaps is at most $n - 1$, which is
-advantageous when swap operations are expensive.
+Input order, giving $O(n^2)$ in all cases. The number of swaps is at most $n - 1$Which is
+Advantageous when swap operations are expensive.
 
-**Space complexity:** $O(1)$, in-place sorting.
+**Space complexity:** $O(1)$In-place sorting.
 
 **Stability:** The basic selection sort is not stable. Consider the array `[4_a, 4_b, 2]`. The
-minimum is 2 at index 2, which swaps with `4_a` at index 0, producing `[2, 4_b, 4_a]` and reversing
-the relative order of the equal elements.
+Minimum is 2 at index 2, which swaps with `4_a` at index 0, producing `[2, 4_b, 4_a]` and reversing
+The relative order of the equal elements.
 
 **Worked Example: Selection sort -- demonstrating instability**
 
@@ -649,11 +649,11 @@ Sort `arr = [4, 4, 2, 1]` using selection sort, tracking the position of the two
 <details>
 <summary>Solution</summary>
 
-| Pass | minIndex | Swap | Array State            | Note                      |
+| Pass | minIndex | Swap | Array State | Note |
 | ---- | -------- | ---- | ---------------------- | ------------------------- |
-| 0    | 3        | Yes  | `[1, 4_b, 2, 4_a]`     | $4_a$ moved to index 3    |
-| 1    | 2        | Yes  | `[1, 2, 4_b, 4_a]`     |                           |
-| 2    | 2        | No   | `[1, 2, 4_b, 4_a]`     | minIndex = i, no swap     |
+| 0 | 3 | Yes | `[1, 4_b, 2, 4_a]` | $4_a$ moved to index 3 |
+| 1 | 2 | Yes | `[1, 2, 4_b, 4_a]` | |
+| 2 | 2 | No | `[1, 2, 4_b, 4_a]` | minIndex = i, no swap |
 
 Final result: `[1, 2, 4_b, 4_a]`. Originally, $4_a$ came before $4_b$. After sorting, $4_b$ comes before $4_a$. The relative order of equal elements has been reversed, confirming that selection sort is not stable.
 
@@ -662,8 +662,8 @@ Final result: `[1, 2, 4_b, 4_a]`. Originally, $4_a$ came before $4_b$. After sor
 ### Insertion Sort
 
 Insertion sort builds the sorted array one element at a time. It takes each element from the
-unsorted portion and inserts it into its correct position in the sorted portion by shifting larger
-elements to the right.
+Unsorted portion and inserts it into its correct position in the sorted portion by shifting larger
+Elements to the right.
 
 **IB Pseudocode:**
 
@@ -684,26 +684,26 @@ END PROCEDURE
 
 **Trace with `arr = [12, 11, 13, 5, 6]`:**
 
-| Pass | key | Sorted Before Insertion | Shifts | Array State        |
+| Pass | key | Sorted Before Insertion | Shifts | Array State |
 | ---- | --- | ----------------------- | ------ | ------------------ |
-| 1    | 11  | [12]                    | 1      | [11, 12, 13, 5, 6] |
-| 2    | 13  | [11, 12]                | 0      | [11, 12, 13, 5, 6] |
-| 3    | 5   | [11, 12, 13]            | 3      | [5, 11, 12, 13, 6] |
-| 4    | 6   | [5, 11, 12, 13]         | 3      | [5, 6, 11, 12, 13] |
+| 1 | 11 | [12] | 1 | [11, 12, 13, 5, 6] |
+| 2 | 13 | [11, 12] | 0 | [11, 12, 13, 5, 6] |
+| 3 | 5 | [11, 12, 13] | 3 | [5, 11, 12, 13, 6] |
+| 4 | 6 | [5, 11, 12, 13] | 3 | [5, 6, 11, 12, 13] |
 
 **Time complexity:** In the worst case (reverse-sorted), each insertion shifts all previously sorted
-elements, requiring $\frac{n(n-1)}{2}$ comparisons and shifts, giving $O(n^2)$. In the best case
+Elements, requiring $\frac{n(n-1)}{2}$ comparisons and shifts, giving $O(n^2)$. In the best case
 (already sorted), each element requires only one comparison, giving $O(n)$. Average case is
 $O(n^2)$.
 
-**Space complexity:** $O(1)$, in-place sorting.
+**Space complexity:** $O(1)$In-place sorting.
 
 **Stability:** Insertion sort is stable. Elements are only shifted to the right when they are
-strictly greater than the key, so equal elements maintain their relative order.
+Strictly greater than the key, so equal elements maintain their relative order.
 
 **Practical advantage:** Insertion sort is highly efficient for small datasets or nearly sorted
-data. Many hybrid algorithms (such as Timsort, used in Python and Java) switch to insertion sort for
-small subarrays within a merge sort or quick sort framework.
+Data. Many hybrid algorithms (such as Timsort, used in Python and Java) switch to insertion sort for
+Small subarrays within a merge sort or quick sort framework.
 
 **Worked Example: Insertion sort on a nearly sorted array**
 
@@ -712,17 +712,17 @@ Trace insertion sort on `arr = [1, 2, 4, 5, 3]` and count the total number of co
 <details>
 <summary>Solution</summary>
 
-| Pass | key | Sorted Before       | j values checked | Shifts | Array State        |
+| Pass | key | Sorted Before | j values checked | Shifts | Array State |
 | ---- | --- | ------------------- | ---------------- | ------ | ------------------ |
-| 1    | 2   | [1]                 | j = 0            | 0      | [1, 2, 4, 5, 3]   |
-| 2    | 4   | [1, 2]              | j = 1            | 0      | [1, 2, 4, 5, 3]   |
-| 3    | 5   | [1, 2, 4]           | j = 2            | 0      | [1, 2, 4, 5, 3]   |
-| 4    | 3   | [1, 2, 4, 5]        | j = 3, 2         | 2      | [1, 2, 3, 4, 5]   |
+| 1 | 2 | [1] | j = 0 | 0 | [1, 2, 4, 5, 3] |
+| 2 | 4 | [1, 2] | j = 1 | 0 | [1, 2, 4, 5, 3] |
+| 3 | 5 | [1, 2, 4] | j = 2 | 0 | [1, 2, 4, 5, 3] |
+| 4 | 3 | [1, 2, 4, 5] | j = 3, 2 | 2 | [1, 2, 3, 4, 5] |
 
 Detailed trace for pass 4 (key = 3):
-- j = 3: `arr[3] = 5 > 3`, so shift: `arr[4] = 5`, j becomes 2. Array: `[1, 2, 4, 5, 5]`
-- j = 2: `arr[2] = 4 > 3`, so shift: `arr[3] = 4`, j becomes 1. Array: `[1, 2, 4, 4, 5]`
-- j = 1: `arr[1] = 2 < 3`, loop exits. Place key: `arr[2] = 3`. Array: `[1, 2, 3, 4, 5]`
+- j = 3: `arr[3] = 5 > 3`So shift: `arr[4] = 5`J becomes 2. Array: `[1, 2, 4, 5, 5]`
+- j = 2: `arr[2] = 4 > 3`So shift: `arr[3] = 4`J becomes 1. Array: `[1, 2, 4, 4, 5]`
+- j = 1: `arr[1] = 2 < 3`Loop exits. Place key: `arr[2] = 3`. Array: `[1, 2, 3, 4, 5]`
 
 **Totals:** Comparisons: $1 + 1 + 1 + 3 = 6$. Shifts: $0 + 0 + 0 + 2 = 2$.
 
@@ -733,8 +733,8 @@ This demonstrates why insertion sort is efficient for nearly sorted data: the fi
 ### Merge Sort (HL)
 
 Merge sort is a divide-and-conquer algorithm. It recursively divides the array into two halves,
-sorts each half, and then merges the two sorted halves back together. The merge operation is the key
-step: it compares the front elements of each half and places the smaller one into the result array.
+Sorts each half, and then merges the two sorted halves back together. The merge operation is the key
+Step: it compares the front elements of each half and places the smaller one into the result array.
 
 **IB Pseudocode:**
 
@@ -797,34 +797,34 @@ END PROCEDURE
             [3, 9, 10, 27, 38, 43, 82]
 ```
 
-**Time complexity:** The recurrence relation is $T(n) = 2T\!\left(\frac{n}{2}\right) + O(n)$, where
-the $O(n)$ term accounts for the merge step. By the Master Theorem, this yields $T(n) = O(n \log n)$
-in all cases (best, average, worst). This is because the divide step always produces halves
+**Time complexity:** The recurrence relation is $T(n) = 2T\!\left(\frac{n}{2}\right) + O(n)$Where
+The $O(n)$ term accounts for the merge step. By the Master Theorem, this yields $T(n) = O(n \log n)$
+In all cases (best, average, worst). This is because the divide step always produces halves
 (regardless of input), and the merge step always processes $n$ elements.
 
 **Space complexity:** $O(n)$ auxiliary space is required for the temporary arrays used during
-merging. This is a significant disadvantage compared to in-place sorts like quick sort and insertion
-sort.
+Merging. This is a significant disadvantage compared to in-place sorts like quick sort and insertion
+Sort.
 
 **Stability:** Merge sort is stable because the merge step uses `left[i] `&lt;`= right[j]`
 (less-than-or-equal), ensuring that equal elements from the left half are placed before equal
-elements from the right half, preserving their original relative order.
+Elements from the right half, preserving their original relative order.
 
 **Worked Example: Merge sort -- detailed merge step**
 
-Given two sorted sub-arrays `left = [2, 7, 11]` and `right = [4, 8, 15]`, trace the `merge` procedure step by step to produce the merged result.
+Given two sorted sub-arrays `left = [2, 7, 11]` and `right = [4, 8, 15]`Trace the `merge` procedure step by step to produce the merged result.
 
 <details>
 <summary>Solution</summary>
 
-| Step | i | j | k | left[i] | right[j] | Comparison | arr[k] | Merged so far    |
+| Step | i | j | k | left[i] | right[j] | Comparison | arr[k] | Merged so far |
 | ---- | - | - | - | ------- | -------- | ---------- | ------ | ---------------- |
-| 1    | 0 | 0 | 0 | 2       | 4        | 2 `&lt;` 4  | 2      | [2, ?, ?, ?, ?, ?] |
-| 2    | 1 | 0 | 1 | 7       | 4        | 7 `&gt;` 4  | 4      | [2, 4, ?, ?, ?, ?] |
-| 3    | 1 | 1 | 2 | 7       | 8        | 7 `&lt;` 8  | 7      | [2, 4, 7, ?, ?, ?] |
-| 4    | 2 | 1 | 3 | 11      | 8        | 11 `&gt;` 8 | 8      | [2, 4, 7, 8, ?, ?] |
-| 5    | 2 | 2 | 4 | 11      | 15       | 11 `&lt;` 15 | 11     | [2, 4, 7, 8, 11, ?] |
-| 6    | 3 | 2 | 5 | --      | 15       | i exhausted | 15     | [2, 4, 7, 8, 11, 15] |
+| 1 | 0 | 0 | 0 | 2 | 4 | 2 `&lt;` 4 | 2 | [2, ?, ?, ?, ?, ?] |
+| 2 | 1 | 0 | 1 | 7 | 4 | 7 `&gt;` 4 | 4 | [2, 4, ?, ?, ?, ?] |
+| 3 | 1 | 1 | 2 | 7 | 8 | 7 `&lt;` 8 | 7 | [2, 4, 7, ?, ?, ?] |
+| 4 | 2 | 1 | 3 | 11 | 8 | 11 `&gt;` 8 | 8 | [2, 4, 7, 8, ?, ?] |
+| 5 | 2 | 2 | 4 | 11 | 15 | 11 `&lt;` 15 | 11 | [2, 4, 7, 8, 11, ?] |
+| 6 | 3 | 2 | 5 | -- | 15 | i exhausted | 15 | [2, 4, 7, 8, 11, 15] |
 
 Final merged array: `[2, 4, 7, 8, 11, 15]`. Total comparisons: 5. The merge step always processes all $n = 6$ elements in $O(n)$ time.
 
@@ -833,8 +833,8 @@ Final merged array: `[2, 4, 7, 8, 11, 15]`. Total comparisons: 5. The merge step
 ### Quick Sort (HL)
 
 Quick sort is another divide-and-conquer algorithm. It selects a **pivot** element, partitions the
-array so that all elements less than the pivot come before it and all elements greater come after
-it, and then recursively sorts the sub-arrays on either side of the pivot.
+Array so that all elements less than the pivot come before it and all elements greater come after
+It, and then recursively sorts the sub-arrays on either side of the pivot.
 
 **IB Pseudocode (Lomuto partition scheme):**
 
@@ -868,11 +868,11 @@ END FUNCTION
 ```
 
 **Pivot selection** is critical to performance. The Lomuto scheme above uses the last element. Other
-strategies include: first element, middle element, random element, and median-of-three (median of
-first, middle, and last elements). Median-of-three provides good protection against already-sorted
-or reverse-sorted worst-case inputs.
+Strategies include: first element, middle element, random element, and median-of-three (median of
+First, middle, and last elements). Median-of-three provides good protection against already-sorted
+Or reverse-sorted worst-case inputs.
 
-**Trace with `arr = [10, 80, 30, 90, 40, 50, 70]`, pivot = 70 (last element):**
+**Trace with `arr = [10, 80, 30, 90, 40, 50, 70]`Pivot = 70 (last element):**
 
 Partition step: elements `$\le$` 70 are [10, 30, 40, 50], elements `>` 70 are [80, 90].
 
@@ -881,16 +881,16 @@ After partition: [10, 30, 40, 50, 70, 90, 80], pivot index = 4.
 Recursively sort [10, 30, 40, 50] and [90, 80].
 
 **Time complexity:** The average case is $O(n \log n)$ when the pivot consistently divides the array
-into roughly equal halves. The worst case is $O(n^2)$, which occurs when the pivot is always the
-smallest or largest element (e.g., already-sorted input with last-element pivot). The best case is
+Into roughly equal halves. The worst case is $O(n^2)$Which occurs when the pivot is always the
+Smallest or largest element (e.g., already-sorted input with last-element pivot). The best case is
 $O(n \log n)$ when partitions are perfectly balanced.
 
 **Space complexity:** $O(\log n)$ for the recursive call stack in the average case, $O(n)$ in the
-worst case. Quick sort is an in-place sort, requiring only $O(1)$ additional memory beyond the call
-stack.
+Worst case. Quick sort is an in-place sort, requiring only $O(1)$ additional memory beyond the call
+Stack.
 
 **Stability:** The basic quick sort is not stable. Partitioning can change the relative order of
-equal elements.
+Equal elements.
 
 **Worked Example: Quick sort -- Lomuto partition in detail**
 
@@ -901,19 +901,19 @@ Apply the Lomuto partition scheme to `arr = [7, 2, 1, 6, 8, 5, 3, 4]` with pivot
 
 Initial: pivot = 4, i = -1
 
-| j | arr[j] | arr[j] `$\le$` 4? | Action                     | i  | Array State               |
+| j | arr[j] | arr[j] `$\le$` 4? | Action | i | Array State |
 | - | ------ | ------------ | -------------------------- | -- | ------------------------- |
-| 0 | 7      | No           | Skip                       | -1 | [7, 2, 1, 6, 8, 5, 3, 4] |
-| 1 | 2      | Yes          | i=0, swap arr[0] and arr[1]| 0  | [2, 7, 1, 6, 8, 5, 3, 4] |
-| 2 | 1      | Yes          | i=1, swap arr[1] and arr[2]| 1  | [2, 1, 7, 6, 8, 5, 3, 4] |
-| 3 | 6      | No           | Skip                       | 1  | [2, 1, 7, 6, 8, 5, 3, 4] |
-| 4 | 8      | No           | Skip                       | 1  | [2, 1, 7, 6, 8, 5, 3, 4] |
-| 5 | 5      | No           | Skip                       | 1  | [2, 1, 7, 6, 8, 5, 3, 4] |
-| 6 | 3      | Yes          | i=2, swap arr[2] and arr[6]| 2  | [2, 1, 3, 6, 8, 5, 7, 4] |
+| 0 | 7 | No | Skip | -1 | [7, 2, 1, 6, 8, 5, 3, 4] |
+| 1 | 2 | Yes | i=0, swap arr[0] and arr[1]| 0 | [2, 7, 1, 6, 8, 5, 3, 4] |
+| 2 | 1 | Yes | i=1, swap arr[1] and arr[2]| 1 | [2, 1, 7, 6, 8, 5, 3, 4] |
+| 3 | 6 | No | Skip | 1 | [2, 1, 7, 6, 8, 5, 3, 4] |
+| 4 | 8 | No | Skip | 1 | [2, 1, 7, 6, 8, 5, 3, 4] |
+| 5 | 5 | No | Skip | 1 | [2, 1, 7, 6, 8, 5, 3, 4] |
+| 6 | 3 | Yes | i=2, swap arr[2] and arr[6]| 2 | [2, 1, 3, 6, 8, 5, 7, 4] |
 
-Final step: swap arr[i+1] and arr[high], i.e. swap arr[3] and arr[7]:
+Final step: swap arr[i+1] and arr[high], i.e. Swap arr[3] and arr[7]:
 
-Result: `[2, 1, 3, 4, 8, 5, 7, 6]`, pivot index = 3.
+Result: `[2, 1, 3, 4, 8, 5, 7, 6]`Pivot index = 3.
 
 Left sub-array: `[2, 1, 3]` (all $\le$ 4). Right sub-array: `[8, 5, 7, 6]` (all $\ge$ 4).
 
@@ -926,9 +926,9 @@ Explain what happens when quick sort (with last-element pivot) is applied to `[1
 <details>
 <summary>Solution</summary>
 
-Partition `[1, 2, 3, 4, 5]` with pivot = 5: no element except 5 is $\le$ 5 at index 4, so the pivot stays at position 4. Left = `[1, 2, 3, 4]`, right = `[]`.
+Partition `[1, 2, 3, 4, 5]` with pivot = 5: no element except 5 is $\le$ 5 at index 4, so the pivot stays at position 4. Left = `[1, 2, 3, 4]`Right = `[]`.
 
-Partition `[1, 2, 3, 4]` with pivot = 4: similarly, left = `[1, 2, 3]`, right = `[]`.
+Partition `[1, 2, 3, 4]` with pivot = 4: similarly, left = `[1, 2, 3]`Right = `[]`.
 
 This pattern continues: each partition produces one sub-array of size $n-1$ and one empty sub-array. Total comparisons:
 
@@ -943,24 +943,24 @@ The recursion depth is $n = 5$ (vs $\log n$ in the average case). The pivot is a
 - **Confusing stability with correctness:** A stable sort preserves the relative order of equal elements. An unstable sort still produces a correctly sorted array. Not all problems require stability.
 - **Assuming quick sort is always $O(n \log n)$:** Quick sort's worst case is $O(n^2)$. In an exam, state both average and worst case. If guaranteed $O(n \log n)$ is needed, merge sort is the answer.
 - **Comparing best-case of one algorithm with worst-case of another:** Always compare like with like (average with average, worst with worst) when evaluating algorithms.
-- **Forgetting the sorted precondition for binary search:** If an exam question says "sort the data then search," the total cost is $O(n \log n) + O(\log n) = O(n \log n)$, not just $O(\log n)$.
+- **Forgetting the sorted precondition for binary search:** If an exam question says "sort the data then search," the total cost is $O(n \log n) + O(\log n) = O(n \log n)$Not just $O(\log n)$.
 
 ### Sorting Algorithm Comparison
 
-| Algorithm      | Best Case     | Average Case  | Worst Case    | Stable | Space       |
+| Algorithm | Best Case | Average Case | Worst Case | Stable | Space |
 | -------------- | ------------- | ------------- | ------------- | ------ | ----------- |
-| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Selection Sort | $O(n^2)$      | $O(n^2)$      | $O(n^2)$      | No     | $O(1)$      |
-| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
-| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
+| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Selection Sort | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | No | $O(1)$ |
+| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes | $O(n)$ |
+| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | No | $O(\log n)$ |
 
 :::info
 **HL Examination Tip:** When asked to choose a sorting algorithm for a given scenario,
-consider the data size, whether the data is nearly sorted, memory constraints, and whether stability
-is required. Merge sort guarantees $O(n \log n)$ but uses extra space. Quick sort is often faster in
-practice but has a worst case of $O(n^2)$. Insertion sort is unbeatable for small or nearly sorted
-arrays.
+Consider the data size, whether the data is nearly sorted, memory constraints, and whether stability
+Is required. Merge sort guarantees $O(n \log n)$ but uses extra space. Quick sort is often faster in
+Practice but has a worst case of $O(n^2)$. Insertion sort is unbeatable for small or nearly sorted
+Arrays.
 :::
 
 ## Data Structures
@@ -968,10 +968,10 @@ arrays.
 ### Arrays
 
 An **array** is a contiguous block of memory that stores a fixed number of elements of the same data
-type, accessed by their index. Arrays are the most fundamental data structure in computer science.
+Type, accessed by their index. Arrays are the most fundamental data structure in computer science.
 
 **Static arrays** have a fixed size determined at the time of creation. The size cannot be changed
-during program execution. In languages like C, static arrays are allocated on the stack:
+During program execution. In languages like C, static arrays are allocated on the stack:
 
 ```python
 INT arr[10]
@@ -979,29 +979,29 @@ INT arr[10]
 
 **Dynamic arrays** (also called resizable arrays or vectors) can grow or shrink during execution.
 They are implemented by allocating a larger block of memory when the current block is full and
-copying elements over. The typical strategy is to double the capacity when full, which gives
-amortized $O(1)$ insertion at the end.
+Copying elements over. The typical strategy is to double the capacity when full, which gives
+Amortized $O(1)$ insertion at the end.
 
 **Operations and their complexities:**
 
-| Operation          | Time Complexity  | Notes                                     |
+| Operation | Time Complexity | Notes |
 | ------------------ | ---------------- | ----------------------------------------- |
-| Access by index    | $O(1)$           | Direct memory address calculation         |
-| Search (unsorted)  | $O(n)$           | Linear scan required                      |
-| Search (sorted)    | $O(\log n)$      | Binary search applicable                  |
-| Insert at end      | $O(1)$ amortized | Dynamic array; $O(n)$ worst case (resize) |
-| Insert at position | $O(n)$           | Shifts all subsequent elements            |
-| Delete at position | $O(n)$           | Shifts all subsequent elements            |
+| Access by index | $O(1)$ | Direct memory address calculation |
+| Search (unsorted) | $O(n)$ | Linear scan required |
+| Search (sorted) | $O(\log n)$ | Binary search applicable |
+| Insert at end | $O(1)$ amortized | Dynamic array; $O(n)$ worst case (resize) |
+| Insert at position | $O(n)$ | Shifts all subsequent elements |
+| Delete at position | $O(n)$ | Shifts all subsequent elements |
 
 The $O(1)$ access time is the defining advantage of arrays. The memory address of element `arr[i]`
-is computed as:
+Is computed as:
 
 $\mathrm{address}(\mathrm{arr}[i]) = \mathrm{base address} + i \times \mathrm{element size}$
 
 This calculation is constant-time, regardless of the array size or the index accessed.
 
 **Disadvantages:** Fixed size (for static arrays), expensive insertion and deletion in the middle,
-homogeneous elements (all elements must be the same type in statically typed languages).
+Homogeneous elements (all elements must be the same type in statically typed languages).
 
 **Worked Example: Array memory address calculation**
 
@@ -1039,14 +1039,14 @@ $\mathrm{matrix}[1][2] = 2000 + (1 \times 4 + 2) \times 4 = 2000 + 6 \times 4 = 
 ### Linked Lists
 
 A **linked list** is a dynamic data structure consisting of nodes, where each node contains a data
-field and a reference (pointer) to the next node. Unlike arrays, linked list elements are not stored
-contiguously in memory.
+Field and a reference (pointer) to the next node. Unlike arrays, linked list elements are not stored
+Contiguously in memory.
 
 **Singly linked list:** Each node has one pointer to the next node. The last node points to `null`
 (or `NIL` in IB pseudocode).
 
 **Doubly linked list:** Each node has two pointers: one to the next node and one to the previous
-node. This allows traversal in both directions.
+Node. This allows traversal in both directions.
 
 **Node structure (singly linked):**
 
@@ -1081,27 +1081,27 @@ END PROCEDURE
 
 **Operations and their complexities:**
 
-| Operation                   | Singly Linked | Doubly Linked | Array            |
+| Operation | Singly Linked | Doubly Linked | Array |
 | --------------------------- | ------------- | ------------- | ---------------- |
-| Access by index             | $O(n)$        | $O(n)$        | $O(1)$           |
-| Insert at head              | $O(1)$        | $O(1)$        | $O(n)$           |
-| Insert at tail              | $O(n)$        | $O(1)$        | $O(1)$ amortized |
-| Delete at head              | $O(1)$        | $O(1)$        | $O(n)$           |
-| Delete at tail              | $O(n)$        | $O(1)$        | $O(n)$           |
-| Insert after given node     | $O(1)$        | $O(1)$        | $O(n)$           |
-| Search                      | $O(n)$        | $O(n)$        | $O(n)$           |
-| Memory overhead per element | 1 pointer     | 2 pointers    | 0                |
+| Access by index | $O(n)$ | $O(n)$ | $O(1)$ |
+| Insert at head | $O(1)$ | $O(1)$ | $O(n)$ |
+| Insert at tail | $O(n)$ | $O(1)$ | $O(1)$ amortized |
+| Delete at head | $O(1)$ | $O(1)$ | $O(n)$ |
+| Delete at tail | $O(n)$ | $O(1)$ | $O(n)$ |
+| Insert after given node | $O(1)$ | $O(1)$ | $O(n)$ |
+| Search | $O(n)$ | $O(n)$ | $O(n)$ |
+| Memory overhead per element | 1 pointer | 2 pointers | 0 |
 
 **Advantages of linked lists:** Dynamic size, $O(1)$ insertion and deletion at the head (and tail
-for doubly linked lists with a tail pointer), no need for contiguous memory, no wasted memory from
-pre-allocation.
+For doubly linked lists with a tail pointer), no need for contiguous memory, no wasted memory from
+Pre-allocation.
 
 **Disadvantages:** $O(n)$ access time (no random access), extra memory for pointers, poor cache
-locality (nodes are scattered in memory), cannot perform binary search efficiently.
+Locality (nodes are scattered in memory), cannot perform binary search efficiently.
 
 **Worked Example: Linked list insertion in the middle**
 
-Given a singly linked list `Head -> 10 -> 20 -> 30 -> 40 -> NIL`, insert the value 25 between 20 and 30. Show the steps and the resulting list.
+Given a singly linked list `Head -> 10 -> 20 -> 30 -> 40 -> NIL`Insert the value 25 between 20 and 30. Show the steps and the resulting list.
 
 <details>
 <summary>Solution</summary>
@@ -1127,7 +1127,7 @@ The operation is $O(1)$ once the node to insert after has been found. However, f
 
 **Worked Example: Linked list deletion**
 
-Given a singly linked list `Head -> 5 -> 15 -> 25 -> 35 -> NIL`, delete the node with value 15. Show the steps.
+Given a singly linked list `Head -> 5 -> 15 -> 25 -> 35 -> NIL`Delete the node with value 15. Show the steps.
 
 <details>
 <summary>Solution</summary>
@@ -1145,15 +1145,15 @@ Result: `Head -> 5 -> 25 -> 35 -> NIL`
 
 The deleted node (value 15) is no longer reachable from the head. In languages with garbage collection, its memory will be reclaimed automatically. In languages like C, it must be freed explicitly: `free(current)`.
 
-**Edge case -- deleting the head:** If the target is the first node, we cannot find a predecessor. Instead, we simply set `Head = Head.next`. This is a special case that must be handled separately.
+**Edge case -- deleting the head:** If the target is the first node, we cannot find a predecessor. Instead, we set `Head = Head.next`. This is a special case that must be handled separately.
 
 </details>
 
 ### Stacks
 
 A **stack** is a linear data structure that follows the Last-In, First-Out (LIFO) principle. The
-most recently added element is the first one to be removed. Think of a stack of plates: you can only
-add or remove the top plate.
+Most recently added element is the first one to be removed. Think of a stack of plates: you can only
+Add or remove the top plate.
 
 **Core operations:**
 
@@ -1206,20 +1206,20 @@ END CLASS
 **Applications of stacks:**
 
 **Function call management:** The call stack stores return addresses, local variables, and
-parameters for each active function call. When a function is called, a new stack frame is pushed;
-when it returns, the frame is popped. Recursion relies entirely on the call stack.
+Parameters for each active function call. When a function is called, a new stack frame is pushed;
+When it returns, the frame is popped. Recursion relies entirely on the call stack.
 
 **Undo/Redo operations:** Text editors and drawing applications use two stacks: one for undo
 (pushing each action) and one for redo (popping from the undo stack and pushing to the redo stack
-when an undo is performed).
+When an undo is performed).
 
 **Expression evaluation:** Stacks are used to evaluate postfix (Reverse Polish Notation) expressions
-and to convert infix expressions to postfix. For example, evaluating `3 4 + 2 *` (which equals 14):
-push 3, push 4, pop 4 and 3, add to get 7, push 7, push 2, pop 2 and 7, multiply to get 14, push 14.
+And to convert infix expressions to postfix. For example, evaluating `3 4 + 2 *` (which equals 14):
+Push 3, push 4, pop 4 and 3, add to get 7, push 7, push 2, pop 2 and 7, multiply to get 14, push 14.
 
 **Bracket matching:** Compilers and interpreters use stacks to verify that parentheses, brackets,
-and braces are properly balanced. Each opening symbol is pushed; each closing symbol should match
-the top of the stack.
+And braces are properly balanced. Each opening symbol is pushed; each closing symbol should match
+The top of the stack.
 
 **Worked Example: Bracket matching with a stack**
 
@@ -1228,16 +1228,16 @@ Use a stack to determine whether `"{[()()]}"` is balanced. Show the stack after 
 <details>
 <summary>Solution</summary>
 
-| Step | Character | Action           | Stack (top on right) |
+| Step | Character | Action | Stack (top on right) |
 | ---- | --------- | ---------------- | -------------------- |
-| 1    | `{`         | `Push {`           | `{`                    |
-| 2    | [         | Push [           | `{, [`                 |
-| 3    | (         | Push (           | `{, [, (`              |
-| 4    | )         | Pop (, matches ) | `{, [`                 |
-| 5    | (         | Push (           | `{, [, (`              |
-| 6    | )         | Pop (, matches ) | `{, [`                 |
-| 7    | ]         | Pop [, matches ] | `{`                    |
-| 8    | `}`         | `Pop {, matches }` | (empty)              |
+| 1 | `{` | `Push {` | `{` |
+| 2 | [ | Push [ | `{, [` |
+| 3 | ( | Push ( | `{, [, (` |
+| 4 | ) | Pop (, matches ) | `{, [` |
+| 5 | ( | Push ( | `{, [, (` |
+| 6 | ) | Pop (, matches ) | `{, [` |
+| 7 | ] | Pop [, matches ] | `{` |
+| 8 | `}` | `Pop {, matches }` | (empty) |
 
 The stack is empty at the end, so the expression is balanced.
 
@@ -1250,15 +1250,15 @@ Evaluate the postfix expression `5 3 2 * + 4 -` using a stack. Show the stack af
 <details>
 <summary>Solution</summary>
 
-| Step | Token | Action                          | Stack (top on right) |
+| Step | Token | Action | Stack (top on right) |
 | ---- | ----- | ------------------------------- | -------------------- |
-| 1    | 5     | Push 5                          | 5                    |
-| 2    | 3     | Push 3                          | 5, 3                 |
-| 3    | 2     | Push 2                          | 5, 3, 2              |
-| 4    | *     | Pop 2 and 3, push 3 * 2 = 6    | 5, 6                 |
-| 5    | +     | Pop 6 and 5, push 5 + 6 = 11   | 11                   |
-| 6    | 4     | Push 4                          | 11, 4                |
-| 7    | -     | Pop 4 and 11, push 11 - 4 = 7  | 7                    |
+| 1 | 5 | Push 5 | 5 |
+| 2 | 3 | Push 3 | 5, 3 |
+| 3 | 2 | Push 2 | 5, 3, 2 |
+| 4 | * | Pop 2 and 3, push 3 * 2 = 6 | 5, 6 |
+| 5 | + | Pop 6 and 5, push 5 + 6 = 11 | 11 |
+| 6 | 4 | Push 4 | 11, 4 |
+| 7 | - | Pop 4 and 11, push 11 - 4 = 7 | 7 |
 
 Result: 7. Verification: `5 + (3 * 2) - 4 = 5 + 6 - 4 = 7`. Correct.
 
@@ -1274,7 +1274,7 @@ Result: 7. Verification: `5 + (3 * 2) - 4 = 5 + 6 - 4 = 7`. Correct.
 
 A **queue** is a linear data structure that follows the First-In, First-Out (FIFO) principle.
 Elements are added at the rear and removed from the front. Think of a queue at a ticket counter: the
-first person in line is the first person served.
+First person in line is the first person served.
 
 **Core operations:**
 
@@ -1331,13 +1331,13 @@ END CLASS
 ```
 
 The circular array implementation uses the modulo operator to wrap the indices around, avoiding the
-need to shift elements when the front of the queue advances.
+Need to shift elements when the front of the queue advances.
 
 **Applications of queues:**
 
 **Breadth-First Search (BFS):** BFS explores a graph level by level, visiting all neighbors of a
-node before moving to the next level. A queue stores the nodes to be visited, ensuring FIFO ordering
-so that closer nodes are processed before more distant ones.
+Node before moving to the next level. A queue stores the nodes to be visited, ensuring FIFO ordering
+So that closer nodes are processed before more distant ones.
 
 **Process scheduling:** Operating systems use ready queues to manage processes waiting for CPU time.
 The scheduler dequeues the next process to run and enqueues newly created or unblocked processes.
@@ -1345,11 +1345,11 @@ The scheduler dequeues the next process to run and enqueues newly created or unb
 **Print spooling:** Print jobs are queued in the order they are received and processed sequentially.
 
 **Buffering:** Queues buffer data between producers and consumers when they operate at different
-speeds (e.g., keyboard input buffered for the CPU to process).
+Speeds (e.g., keyboard input buffered for the CPU to process).
 
 **Worked Example: Circular queue operations**
 
-A circular queue (array size 5) has front = 0, rear = 2, count = 3, with items `[A, B, C, _, _]`. Perform: `dequeue()`, `enqueue(D)`, `enqueue(E)`. Show the state after each operation.
+A circular queue (array size 5) has front = 0, rear = 2, count = 3, with items `[A, B, C, _, _]`. Perform: `dequeue()``enqueue(D)``enqueue(E)`. Show the state after each operation.
 
 <details>
 <summary>Solution</summary>
@@ -1375,11 +1375,11 @@ A print spooler manages jobs: Job1 (3 pages), Job2 (1 page), Job3 (5 pages). The
 
 FIFO ordering means jobs print in arrival order:
 
-| Job  | Pages | Start Time | End Time |
+| Job | Pages | Start Time | End Time |
 | ---- | ----- | ---------- | -------- |
-| Job1 | 3     | 0 min      | 3 min    |
-| Job2 | 1     | 3 min      | 4 min    |
-| Job3 | 5     | 4 min      | 9 min    |
+| Job1 | 3 | 0 min | 3 min |
+| Job2 | 1 | 3 min | 4 min |
+| Job3 | 5 | 4 min | 9 min |
 
 Total: 9 minutes. The queue ensures strict FIFO ordering. A priority queue would be needed if jobs had different priorities.
 
@@ -1394,8 +1394,8 @@ Total: 9 minutes. The queue ensures strict FIFO ordering. A priority queue would
 ### Binary Trees
 
 A **binary tree** is a hierarchical data structure in which each node has at most two children,
-referred to as the left child and the right child. The topmost node is the root; nodes with no
-children are leaves.
+Referred to as the left child and the right child. The topmost node is the root; nodes with no
+Children are leaves.
 
 **Node structure:**
 
@@ -1410,7 +1410,7 @@ END CLASS
 **Tree traversals** visit every node in the tree exactly once. The three depth-first traversals are:
 
 **In-order traversal** (Left, Root, Right): Visit the left subtree, then the root, then the right
-subtree.
+Subtree.
 
 ```python
 PROCEDURE inorder(node)
@@ -1424,7 +1424,7 @@ END PROCEDURE
 ```
 
 **Pre-order traversal** (Root, Left, Right): Visit the root, then the left subtree, then the right
-subtree.
+Subtree.
 
 ```python
 PROCEDURE preorder(node)
@@ -1438,7 +1438,7 @@ END PROCEDURE
 ```
 
 **Post-order traversal** (Left, Right, Root): Visit the left subtree, then the right subtree, then
-the root.
+The root.
 
 ```python
 PROCEDURE postorder(node)
@@ -1470,8 +1470,8 @@ Pre-order: 8, 3, 1, 6, 4, 7, 10, 14, 13
 Post-order: 1, 4, 7, 6, 3, 13, 14, 10, 8
 
 **Binary Search Tree (BST):** A BST is a binary tree with the ordering property: for every node, all
-values in its left subtree are less than the node's value, and all values in its right subtree are
-greater. This property enables efficient search, insertion, and deletion.
+Values in its left subtree are less than the node's value, and all values in its right subtree are
+Greater. This property enables efficient search, insertion, and deletion.
 
 **BST search:**
 
@@ -1510,15 +1510,15 @@ END PROCEDURE
 
 **BST complexities:**
 
-| Operation | Average Case | Worst Case | Notes                                |
+| Operation | Average Case | Worst Case | Notes |
 | --------- | ------------ | ---------- | ------------------------------------ |
-| Search    | $O(\log n)$  | $O(n)$     | Worst case: degenerate (skewed) tree |
-| Insert    | $O(\log n)$  | $O(n)$     | Same as search                       |
-| Delete    | $O(\log n)$  | $O(n)$     | Requires finding inorder successor   |
+| Search | $O(\log n)$ | $O(n)$ | Worst case: degenerate (skewed) tree |
+| Insert | $O(\log n)$ | $O(n)$ | Same as search |
+| Delete | $O(\log n)$ | $O(n)$ | Requires finding inorder successor |
 
 The worst case occurs when the tree becomes degenerate (essentially a linked list), which happens
-when elements are inserted in sorted order. Self-balancing BSTs (AVL trees, Red-Black trees)
-guarantee $O(\log n)$ operations by maintaining balance, but these are beyond the IB syllabus.
+When elements are inserted in sorted order. Self-balancing BSTs (AVL trees, Red-Black trees)
+Guarantee $O(\log n)$ operations by maintaining balance, but these are beyond the IB syllabus.
 
 **Worked Example: BST insertion and search**
 
@@ -1546,7 +1546,7 @@ Searching for 40:
 
 **Worked Example: Tree traversal -- reconstructing from traversals**
 
-Given in-order traversal `4, 2, 5, 1, 6, 3, 7` and pre-order traversal `1, 2, 4, 5, 3, 6, 7`, reconstruct the binary tree.
+Given in-order traversal `4, 2, 5, 1, 6, 3, 7` and pre-order traversal `1, 2, 4, 5, 3, 6, 7`Reconstruct the binary tree.
 
 <details>
 <summary>Solution</summary>
@@ -1580,11 +1580,11 @@ Pre-order for right: `3, 6, 7`. Root = 3. In-order `6, 3, 7` means 6 is left of 
 ### Hash Tables
 
 A **hash table** (or hash map) is a data structure that maps keys to values for highly efficient
-lookup. It uses a hash function to compute an index into an array of buckets, from which the desired
-value can be found.
+Lookup. It uses a hash function to compute an index into an array of buckets, from which the desired
+Value can be found.
 
 **Hash functions** take a key and return an integer index within the range of the table. Properties
-of a good hash function:
+Of a good hash function:
 
 It is **deterministic**: the same key always produces the same hash value.
 
@@ -1594,8 +1594,8 @@ It is **efficient** to compute: $O(1)$ time.
 
 **Common hash functions:**
 
-For integer keys: $h(k) = k \mod m$, where $m$ is the table size. Choosing $m$ as a prime number
-helps distribute keys more uniformly.
+For integer keys: $h(k) = k \mod m$Where $m$ is the table size. Choosing $m$ as a prime number
+Helps distribute keys more uniformly.
 
 For string keys: accumulate character codes and take the modulus.
 
@@ -1611,26 +1611,26 @@ END FUNCTION
 
 The multiplication by a prime (31 in this example) helps spread out similar strings.
 
-**Load factor:** $\alpha = \frac{n}{m}$, where $n$ is the number of stored elements and $m$ is the
-table size. When the load factor exceeds a threshold (typically 0.7 or 0.75), the table is resized
-(usually doubled) and all elements are rehashed. This keeps the average lookup time low.
+**Load factor:** $\alpha = \frac{n}{m}$Where $n$ is the number of stored elements and $m$ is the
+Table size. When the load factor exceeds a threshold ( 0.7 or 0.75), the table is resized
+( doubled) and all elements are rehashed. This keeps the average lookup time low.
 
 **Collision resolution:**
 
 **Chaining (separate chaining):** Each bucket in the hash table is a linked list. When a collision
-occurs, the new key-value pair is appended to the list at that index. To search for a key, hash to
-find the bucket, then traverse the linked list.
+Occurs, the new key-value pair is appended to the list at that index. To search for a key, hash to
+Find the bucket, then traverse the linked list.
 
 Advantages: simple to implement, deletion is straightforward, works well with high load factors.
 
 Disadvantages: requires extra memory for pointers, degraded performance when many collisions cluster
-in a single bucket.
+In a single bucket.
 
 **Open addressing:** All elements are stored directly in the hash table array. When a collision
-occurs, the algorithm probes for the next available slot using a probing sequence.
+Occurs, the algorithm probes for the next available slot using a probing sequence.
 
-**Linear probing:** $h(k, i) = (h'(k) + i) \mod m$, where $i = 0, 1, 2, \ldots$ Checks consecutive
-slots.
+**Linear probing:** $h(k, i) = (h'(k) + i) \mod m$Where $i = 0, 1, 2, \ldots$ Checks consecutive
+Slots.
 
 **Quadratic probing:** $h(k, i) = (h'(k) + c_1 i + c_2 i^2) \mod m$. Spreads probes more widely.
 
@@ -1642,13 +1642,13 @@ Disadvantages: more complex deletion, susceptible to clustering, sensitive to lo
 
 | Operation | Average Case | Worst Case |
 | --------- | ------------ | ---------- |
-| Search    | $O(1)$       | $O(n)$     |
-| Insert    | $O(1)$       | $O(n)$     |
-| Delete    | $O(1)$       | $O(n)$     |
+| Search | $O(1)$ | $O(n)$ |
+| Insert | $O(1)$ | $O(n)$ |
+| Delete | $O(1)$ | $O(n)$ |
 
 Average-case $O(1)$ assumes a good hash function and a load factor bounded by a constant. The worst
-case $O(n)$ occurs when all keys hash to the same bucket, reducing the hash table to a single linked
-list.
+Case $O(n)$ occurs when all keys hash to the same bucket, reducing the hash table to a single linked
+List.
 
 **Worked Example: Hash table with chaining -- insertion and search**
 
@@ -1659,26 +1659,26 @@ A hash table with $m = 7$ buckets uses the hash function $h(k) = k \mod 7$ and c
 
 **Insertions:**
 
-| Key | $h(k) = k \mod 7$ | Bucket | Action              |
+| Key | $h(k) = k \mod 7$ | Bucket | Action |
 | --- | ----------------- | ------ | ------------------- |
-| 15  | 15 mod 7 = 1      | 1      | Insert at head      |
-| 11  | 11 mod 7 = 4      | 4      | Insert at head      |
-| 22  | 22 mod 7 = 1      | 1      | Collision; chain    |
-| 8   | 8 mod 7 = 1       | 1      | Collision; chain    |
-| 29  | 29 mod 7 = 1      | 1      | Collision; chain    |
-| 1   | 1 mod 7 = 1       | 1      | Collision; chain    |
+| 15 | 15 mod 7 = 1 | 1 | Insert at head |
+| 11 | 11 mod 7 = 4 | 4 | Insert at head |
+| 22 | 22 mod 7 = 1 | 1 | Collision; chain |
+| 8 | 8 mod 7 = 1 | 1 | Collision; chain |
+| 29 | 29 mod 7 = 1 | 1 | Collision; chain |
+| 1 | 1 mod 7 = 1 | 1 | Collision; chain |
 
 **Table state after all insertions:**
 
 | Bucket | Linked List (head first) |
 | ------ | ------------------------ |
-| 0      | (empty)                  |
-| 1      | 1 -> 29 -> 8 -> 22 -> 15 |
-| 2      | (empty)                  |
-| 3      | (empty)                  |
-| 4      | 11                       |
-| 5      | (empty)                  |
-| 6      | (empty)                  |
+| 0 | (empty) |
+| 1 | 1 -> 29 -> 8 -> 22 -> 15 |
+| 2 | (empty) |
+| 3 | (empty) |
+| 4 | 11 |
+| 5 | (empty) |
+| 6 | (empty) |
 
 **Search for 22:**
 1. Compute $h(22) = 22 \mod 7 = 1$. Go to bucket 1.
@@ -1695,14 +1695,14 @@ A hash table with $m = 10$ buckets uses $h(k) = k \mod 10$ with linear probing. 
 <details>
 <summary>Solution</summary>
 
-| Step | Key | $h(k)$ | Probe Sequence       | Final Slot | Table (0--9)                                             |
+| Step | Key | $h(k)$ | Probe Sequence | Final Slot | Table (0--9) |
 | ---- | --- | ------ | -------------------- | ---------- | -------------------------------------------------------- |
-| 1    | 42  | 2      | 2                    | 2          | `[_, _, 42, _, _, _, _, _, _, _]`                        |
-| 2    | 23  | 3      | 3                    | 3          | `[_, _, 42, 23, _, _, _, _, _, _]`                      |
-| 3    | 34  | 4      | 4                    | 4          | `[_, _, 42, 23, 34, _, _, _, _, _]`                     |
-| 4    | 52  | 2      | 2 (full), 3 (full), 4 (full), 5 | 5 | `[_, _, 42, 23, 34, 52, _, _, _, _]` |
-| 5    | 15  | 5      | 5 (full), 6          | 6          | `[_, _, 42, 23, 34, 52, 15, _, _, _]`                  |
-| 6    | 22  | 2      | 2, 3, 4, 5, 6, 7    | 7          | `[_, _, 42, 23, 34, 52, 15, 22, _, _]`                 |
+| 1 | 42 | 2 | 2 | 2 | `[_, _, 42, _, _, _, _, _, _, _]` |
+| 2 | 23 | 3 | 3 | 3 | `[_, _, 42, 23, _, _, _, _, _, _]` |
+| 3 | 34 | 4 | 4 | 4 | `[_, _, 42, 23, 34, _, _, _, _, _]` |
+| 4 | 52 | 2 | 2 (full), 3 (full), 4 (full), 5 | 5 | `[_, _, 42, 23, 34, 52, _, _, _, _]` |
+| 5 | 15 | 5 | 5 (full), 6 | 6 | `[_, _, 42, 23, 34, 52, 15, _, _, _]` |
+| 6 | 22 | 2 | 2, 3, 4, 5, 6, 7 | 7 | `[_, _, 42, 23, 34, 52, 15, 22, _, _]` |
 
 Note how 52, 15, and 22 all hash to low-indexed buckets but get placed further away due to clustering. This illustrates the **primary clustering** problem of linear probing.
 
@@ -1712,21 +1712,21 @@ Note how 52, 15, and 22 all hash to low-indexed buckets but get placed further a
 
 - **Using a non-prime table size:** When $m$ has common factors with the keys, collisions increase. For example, with $m = 10$ and integer keys that are multiples of 5, half the buckets will never be used.
 - **Confusing chaining with open addressing:** In chaining, all colliding elements go into the same bucket (linked list). In open addressing, they probe for the next empty slot. The search process is different: chaining searches the linked list at the hashed index; open addressing probes consecutive slots.
-- **Forgetting to rehash on resize:** When the load factor exceeds the threshold, the table must be resized and all keys rehashed (their indices change because $m$ changes). Simply copying elements to a larger array is incorrect.
+- **Forgetting to rehash on resize:** When the load factor exceeds the threshold, the table must be resized and all keys rehashed (their indices change because $m$ changes). Copying elements to a larger array is incorrect.
 
 ## Computational Complexity (HL)
 
 ### Big-O Notation: Formal Definition
 
 Big-O notation provides an upper bound on the growth rate of a function as its input grows
-arbitrarily large. Formally, a function $f(n)$ is said to be $O(g(n))$ if there exist positive
-constants $c$ and $n_0$ such that:
+Arbitrarily large. Formally, a function $f(n)$ is said to be $O(g(n))$ if there exist positive
+Constants $c$ and $n_0$ such that:
 
 $$f(n) \leq c \cdot g(n) \quad \mathrm{for all } n \geq n_0$$
 
 In other words, $g(n)$ is an asymptotic upper bound for $f(n)$. Big-O describes the worst-case
-growth rate; it says that $f(n)$ grows no faster than $g(n)$, up to a constant factor, for
-sufficiently large inputs.
+Growth rate; it says that $f(n)$ grows no faster than $g(n)$Up to a constant factor, for
+Sufficiently large inputs.
 
 **Related notations:**
 
@@ -1741,7 +1741,7 @@ $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$. Big-Theta provides a tight bound.
 **Drop constants:** $O(5n^2) = O(n^2)$. Constant factors are irrelevant to asymptotic growth.
 
 **Drop lower-order terms:** $O(n^2 + 3n + 7) = O(n^2)$. The dominant term determines the growth
-rate.
+Rate.
 
 **Product rule:** $O(f(n)) \times O(g(n)) = O(f(n) \cdot g(n))$. For example, a nested loop of
 $O(n)$ inside $O(n)$ gives $O(n^2)$.
@@ -1793,7 +1793,7 @@ END WHILE
 
 The variable `i` starts at 1 and doubles each iteration: 1, 2, 4, 8, 16, ..., until `i $\ge$ n`.
 
-After $k$ iterations, $i = 2^k$. The loop terminates when $2^k \geq n$, i.e., $k \geq \log_2 n$.
+After $k$ iterations, $i = 2^k$. The loop terminates when $2^k \geq n$I.e., $k \geq \log_2 n$.
 
 The number of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$.
 
@@ -1823,38 +1823,38 @@ This proves $f(n) = O(n^2)$. Many valid choices of $c$ and $n_0$ exist; for exam
 ### Time Complexity Classes
 
 The following are the most common complexity classes encountered in the IB syllabus, ordered from
-fastest to slowest:
+Fastest to slowest:
 
 **$O(1)$ -- Constant time:** The operation takes the same time regardless of input size. Examples:
-array access by index, hash table lookup (average case), stack push and pop.
+Array access by index, hash table lookup (average case), stack push and pop.
 
 **$O(\log n)$ -- Logarithmic time:** The operation time grows logarithmically with input size. Each
-step reduces the problem size by a constant fraction. Examples: binary search, finding an element in
-a balanced BST. For $n = 1000000$, $\log_2 n \approx 20$.
+Step reduces the problem size by a constant fraction. Examples: binary search, finding an element in
+A balanced BST. For $n = 1000000$$\log_2 n \approx 20$.
 
 **$O(n)$ -- Linear time:** The operation time grows linearly with input size. Examples: linear
-search, iterating through an array, finding the maximum element.
+Search, iterating through an array, finding the maximum element.
 
 **$O(n \log n)$ -- Linearithmic time:** Commonly achieved by efficient divide-and-conquer
-algorithms. Examples: merge sort, quick sort (average case), heap sort. This is the best achievable
-complexity for comparison-based sorting, as proven by the comparison sort lower bound.
+Algorithms. Examples: merge sort, quick sort (average case), heap sort. This is the best achievable
+Complexity for comparison-based sorting, as proven by the comparison sort lower bound.
 
 **$O(n^2)$ -- Quadratic time:** The operation time grows with the square of the input size.
 Examples: bubble sort, selection sort, insertion sort (worst case), comparing all pairs of elements.
-For $n = 10000$, $n^2 = 100000000$.
+For $n = 10000$$n^2 = 100000000$.
 
 **$O(2^n)$ -- Exponential time:** The operation time doubles with each additional input element.
 Examples: brute-force solutions to the traveling salesman problem, recursive Fibonacci without
-memoization, generating all subsets of a set. These algorithms become infeasible even for moderate
-input sizes.
+Memoization, generating all subsets of a set. These algorithms become infeasible even for moderate
+Input sizes.
 
 **$O(n!)$ -- Factorial time:** Even faster growth than exponential. Examples: brute-force
-permutation generation, the naive traveling salesman solution.
+Permutation generation, the naive traveling salesman solution.
 
 :::warning
-warning
-$n \log n$ is significantly larger than $n$. For example, when $n = 1000000$,
-$n \log_2 n \approx 20000000$, which is 20 times larger than $n$.
+Warning
+$n \log n$ is significantly larger than $n$. For example, when $n = 1000000$
+$n \log_2 n \approx 20000000$Which is 20 times larger than $n$.
 :::
 
 ### Space Complexity
@@ -1863,11 +1863,11 @@ Space complexity measures the amount of memory an algorithm uses as a function o
 Like time complexity, it is expressed using Big-O notation.
 
 **Auxiliary space** refers to the extra space used by the algorithm, not including the space used by
-the input. For example, merge sort uses $O(n)$ auxiliary space for temporary arrays, while the input
-itself also occupies $O(n)$ space, giving total space complexity of $O(n)$.
+The input. For example, merge sort uses $O(n)$ auxiliary space for temporary arrays, while the input
+Itself also occupies $O(n)$ space, giving total space complexity of $O(n)$.
 
 **In-place algorithms** use $O(1)$ auxiliary space. Bubble sort, selection sort, insertion sort, and
-quick sort are in-place algorithms. Merge sort is not in-place.
+Quick sort are in-place algorithms. Merge sort is not in-place.
 
 **Examples:**
 
@@ -1880,69 +1880,69 @@ Binary search uses $O(1)$ space (iterative) or $O(\log n)$ space (recursive).
 A hash table with $n$ elements and load factor $\alpha$ uses $O(n/\alpha) = O(n)$ space.
 
 **Time-space tradeoff:** Often, algorithms can be made faster by using more memory, or use less
-memory by being slower. Memoization trades space for time by caching results. Hash tables trade
-space (for the table) for time ($O(1)$ lookup vs $O(n)$ linear search). In memory-constrained
-environments (embedded systems), the choice of algorithm may be dictated by space rather than time
-considerations.
+Memory by being slower. Memoization trades space for time by caching results. Hash tables trade
+Space (for the table) for time ($O(1)$ lookup vs $O(n)$ linear search). In memory-constrained
+Environments (embedded systems), the choice of algorithm may be dictated by space rather than time
+Considerations.
 
 ### Best, Average, and Worst Case Analysis
 
 An algorithm's performance can vary depending on the specific input. Analysis must consider all
-three cases.
+Three cases.
 
 **Best case:** The input that minimizes the running time. For linear search, the best case occurs
-when the target is the first element: $O(1)$. Best-case analysis is rarely useful in practice
-because it represents an optimistic scenario that may not occur.
+When the target is the first element: $O(1)$. Best-case analysis is rarely useful in practice
+Because it represents an optimistic scenario that may not occur.
 
 **Worst case:** The input that maximizes the running time. For linear search, the worst case occurs
-when the target is the last element or not present: $O(n)$. Worst-case analysis provides a
-guarantee: the algorithm will never take longer than this. It is the most commonly cited complexity
-in the IB syllabus.
+When the target is the last element or not present: $O(n)$. Worst-case analysis provides a
+Guarantee: the algorithm will never take longer than this. It is the most commonly cited complexity
+In the IB syllabus.
 
 **Average case:** The expected running time over all possible inputs, assuming some probability
-distribution. For linear search with uniformly distributed data, the target is equally likely to be
-at any position, so the expected number of comparisons is
+Distribution. For linear search with uniformly distributed data, the target is equally likely to be
+At any position, so the expected number of comparisons is
 $\frac{1 + 2 + \cdots + n}{n} = \frac{n + 1}{2} = O(n)$.
 
 **Quick sort case study:**
 
-Best case: $O(n \log n)$, when the pivot always divides the array into nearly equal halves.
+Best case: $O(n \log n)$When the pivot always divides the array into nearly equal halves.
 
-Average case: $O(n \log n)$, assuming random pivot selection or random input ordering.
+Average case: $O(n \log n)$Assuming random pivot selection or random input ordering.
 
-Worst case: $O(n^2)$, when the pivot is always the minimum or maximum element, producing one
-sub-array of size $n - 1$ and one of size 0.
+Worst case: $O(n^2)$When the pivot is always the minimum or maximum element, producing one
+Sub-array of size $n - 1$ and one of size 0.
 
-The difference between quick sort's average and worst case is dramatic: for $n = 1000000$,
+The difference between quick sort's average and worst case is dramatic: for $n = 1000000$
 $n \log_2 n \approx 20000000$ operations versus $n^2 = 10^{12}$ operations. This is why pivot
-selection strategies (random pivot, median-of-three) are critical.
+Selection strategies (random pivot, median-of-three) are critical.
 
 ### Empirical vs Theoretical Analysis
 
 **Theoretical analysis** uses Big-O notation to characterize an algorithm's performance independent
-of hardware, programming language, and implementation details. It describes how the running time
-scales with input size in the limit. Theoretical analysis is essential for comparing algorithms,
-understanding their fundamental limits, and predicting behavior on inputs larger than can be tested.
+Of hardware, programming language, and implementation details. It describes how the running time
+Scales with input size in the limit. Theoretical analysis is essential for comparing algorithms,
+Understanding their fundamental limits, and predicting behavior on inputs larger than can be tested.
 
 **Empirical analysis** involves implementing the algorithm and measuring its actual running time on
-specific inputs using a physical computer. It captures real-world factors that theoretical analysis
-ignores: cache effects, branch prediction, compiler optimizations, constant factors, and input data
-characteristics.
+Specific inputs using a physical computer. It captures real-world factors that theoretical analysis
+Ignores: cache effects, branch prediction, compiler optimizations, constant factors, and input data
+Characteristics.
 
 **Strengths and limitations:**
 
 Theoretical analysis is machine-independent and predicts asymptotic behavior, but it ignores
-constant factors and lower-order terms that can be significant for practical input sizes. An
+Constant factors and lower-order terms that can be significant for practical input sizes. An
 $O(n \log n)$ algorithm with a large constant factor may be slower than an $O(n^2)$ algorithm for
-small $n$.
+Small $n$.
 
 Empirical analysis measures actual performance but depends on the specific hardware, compiler, input
-data, and implementation quality. Results may not generalize to other environments or input
-distributions.
+Data, and implementation quality. Results may not generalize to other environments or input
+Distributions.
 
 **Best practice:** Use theoretical analysis to select candidate algorithms, then use empirical
-analysis (benchmarking) to choose the best implementation for the specific use case. Both approaches
-complement each other.
+Analysis (benchmarking) to choose the best implementation for the specific use case. Both approaches
+Complement each other.
 
 **Worked Example: Big-O analysis of nested loops**
 
@@ -1989,7 +1989,7 @@ END WHILE
 
 The variable `i` doubles each iteration: 1, 2, 4, 8, ..., $2^k$.
 
-The loop terminates when $2^k \geq n$, i.e. $k \geq \log_2 n$.
+The loop terminates when $2^k \geq n$I.e. $k \geq \log_2 n$.
 
 Total iterations: $\lfloor \log_2 n \rfloor + 1$. Time complexity: $O(\log n)$.
 
@@ -1999,7 +1999,7 @@ This is the same logarithmic pattern as binary search: each iteration halves the
 
 **Common Pitfalls -- Computational Complexity**
 
-- **Confusing $O(n \log n)$ with $O(n)$:** These are different classes. For $n = 10^6$, $n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
+- **Confusing $O(n \log n)$ with $O(n)$:** These are different classes. For $n = 10^6$$n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
 - **Adding complexities incorrectly:** Sequential loops use the sum rule: $O(f) + O(g) = O(\max(f, g))$. Only multiply for nested loops.
 - **Ignoring the worst case:** An algorithm that is $O(n)$ average but $O(n^2)$ worst case may be unacceptable if worst-case inputs occur frequently.
 - **Forgetting space complexity:** An $O(n \log n)$ time algorithm with $O(n^2)$ space may be impractical for large inputs.
@@ -2009,40 +2009,40 @@ This is the same logarithmic pattern as binary search: each iteration halves the
 ### The ADT Concept
 
 An **Abstract Data Type** defines a data type by its behavior (the operations it supports) rather
-than by its implementation. An ADT specifies two things:
+Than by its implementation. An ADT specifies two things:
 
 **An interface:** the set of operations that can be performed on the data, including their names,
-parameters, return types, and preconditions/postconditions.
+Parameters, return types, and preconditions/postconditions.
 
 **An invariant or contract:** the semantic properties that the operations must maintain, but without
-specifying how these properties are achieved.
+Specifying how these properties are achieved.
 
 The implementation is hidden from the user. This separation of interface from implementation is the
-essence of **encapsulation** and **information hiding**.
+Essence of **encapsulation** and **information hiding**.
 
 **Why ADTs matter:**
 
 The implementation can be changed without affecting code that uses the ADT, as long as the interface
-remains the same. A stack might be implemented with an array, a linked list, or even a dynamic
-array, but the `push`, `pop`, and `peek` operations remain the same from the caller's perspective.
+Remains the same. A stack might be implemented with an array, a linked list, or even a dynamic
+Array, but the `push``pop`And `peek` operations remain the same from the caller's perspective.
 
 ADTs reduce complexity by hiding implementation details. A programmer using a stack does not need to
-know how memory is managed or how pointers are updated.
+Know how memory is managed or how pointers are updated.
 
 ADTs promote code reuse and modularity. The same ADT can be used in many different contexts.
 
 ADTs facilitate testing. The interface defines a clear contract that can be tested independently of
-the implementation.
+The implementation.
 
 ### Stack ADT
 
 The Stack ADT defines a LIFO collection with the following operations:
 
 `push(item)` -- adds `item` to the top of the stack. Postcondition: `item` is the new top element,
-and the stack size increases by 1.
+And the stack size increases by 1.
 
 `pop()` -- removes and returns the top element. Precondition: the stack is not empty. Postcondition:
-the stack size decreases by 1.
+The stack size decreases by 1.
 
 `peek()` -- returns the top element without removing it. Precondition: the stack is not empty.
 
@@ -2051,15 +2051,15 @@ the stack size decreases by 1.
 `size()` -- returns the number of elements in the stack.
 
 **Possible implementations:** Array-based (using an index for the top), linked-list-based (using a
-head pointer), dynamic array-based (with resizing). Each has different performance characteristics,
-but all satisfy the Stack ADT contract.
+Head pointer), dynamic array-based (with resizing). Each has different performance characteristics,
+But all satisfy the Stack ADT contract.
 
 ### Queue ADT
 
 The Queue ADT defines a FIFO collection with the following operations:
 
 `enqueue(item)` -- adds `item` to the rear of the queue. Postcondition: `item` is the new rear
-element, and the queue size increases by 1.
+Element, and the queue size increases by 1.
 
 `dequeue()` -- removes and returns the front element. Precondition: the queue is not empty.
 Postcondition: the queue size decreases by 1.
@@ -2071,8 +2071,8 @@ Postcondition: the queue size decreases by 1.
 `size()` -- returns the number of elements in the queue.
 
 **Possible implementations:** Array-based with circular indexing, linked-list-based (with head and
-tail pointers), dynamic array-based. The circular array implementation avoids the wasted space of a
-linear array when elements are dequeued from the front.
+Tail pointers), dynamic array-based. The circular array implementation avoids the wasted space of a
+Linear array when elements are dequeued from the front.
 
 ### List ADT
 
@@ -2084,10 +2084,10 @@ $0 \leq \mathrm{index} \lt \mathrm{size}$.
 `set(index, item)` -- replaces the element at position `index` with `item`. Precondition:
 $0 \leq \mathrm{index} \lt \mathrm{size}$.
 
-`add(index, item)` -- inserts `item` at position `index`, shifting subsequent elements.
+`add(index, item)` -- inserts `item` at position `index`Shifting subsequent elements.
 Precondition: $0 \leq \mathrm{index} \leq \mathrm{size}$.
 
-`remove(index)` -- removes the element at position `index`, shifting subsequent elements.
+`remove(index)` -- removes the element at position `index`Shifting subsequent elements.
 Precondition: $0 \leq \mathrm{index} \lt \mathrm{size}$.
 
 `size()` -- returns the number of elements.
@@ -2097,45 +2097,45 @@ Precondition: $0 \leq \mathrm{index} \lt \mathrm{size}$.
 **Comparison of implementations:**
 
 An array-based list provides $O(1)$ access by index but $O(n)$ insertion and deletion at arbitrary
-positions.
+Positions.
 
 A linked-list-based list provides $O(1)$ insertion and deletion at known positions but $O(n)$ access
-by index.
+By index.
 
 The choice depends on the expected usage pattern: if the application frequently accesses elements by
-index, an array is preferable. If it frequently inserts and deletes, a linked list is preferable.
+Index, an array is preferable. If it frequently inserts and deletes, a linked list is preferable.
 
 ### Encapsulation and Information Hiding
 
 **Encapsulation** is the bundling of data and the methods that operate on that data into a single
-unit (a class or module). The internal representation of the data is hidden from the outside world,
-and access is only possible through the defined interface.
+Unit (a class or module). The internal representation of the data is hidden from the outside world,
+And access is only possible through the defined interface.
 
 **Information hiding** is the principle that the implementation details of a module should be hidden
-from other modules. Only the essential interface is exposed. This principle has several benefits:
+From other modules. Only the essential interface is exposed. This principle has several benefits:
 
 **Protection against invalid states:** If the internal array of a stack is private, external code
-cannot corrupt it by directly modifying array elements. All modifications go through `push` and
-`pop`, which maintain the stack invariant.
+Cannot corrupt it by directly modifying array elements. All modifications go through `push` and
+`pop`Which maintain the stack invariant.
 
 **Reduced coupling:** Modules that use a stack depend only on its interface, not its implementation.
 Changing the implementation (e.g., from array to linked list) does not require changes to the client
-code.
+Code.
 
 **Simplified reasoning:** A programmer using a stack only needs to understand the LIFO semantics of
-`push` and `pop`, not the memory management details of the underlying array or linked list.
+`push` and `pop`Not the memory management details of the underlying array or linked list.
 
 **Enhanced maintainability:** Bugs in the implementation can be fixed without affecting other parts
-of the system. The implementation can be optimized (e.g., switching to a more efficient algorithm)
-without breaking the interface.
+Of the system. The implementation can be optimized (e.g., switching to a more efficient algorithm)
+Without breaking the interface.
 
 In the IB pseudocode, encapsulation is expressed using `PRIVATE` and `PUBLIC` access modifiers.
 Private attributes and methods can only be accessed within the class; public methods define the
-interface available to external code.
+Interface available to external code.
 
 **Worked Example: Implementing a Stack ADT with a linked list**
 
-Implement the Stack ADT using a singly linked list instead of an array. Write IB pseudocode for `push`, `pop`, `peek`, and `isEmpty`.
+Implement the Stack ADT using a singly linked list instead of an array. Write IB pseudocode for `push``pop``peek`And `isEmpty`.
 
 <details>
 <summary>Solution</summary>
@@ -2214,10 +2214,10 @@ A text editor needs to implement undo/redo functionality. Which ADT is most appr
 </details>
 
 :::note
-note
-class structure with `PRIVATE` and `PUBLIC` sections, a constructor, and all specified operations.
+Note
+Class structure with `PRIVATE` and `PUBLIC` sections, a constructor, and all specified operations.
 Ensure preconditions are checked (e.g., do not pop from an empty stack). The choice of underlying
-data structure (array vs linked list) should be stated and justified.
+Data structure (array vs linked list) should be stated and justified.
 :::
 
 ## Problem Set
@@ -2244,11 +2244,11 @@ Perform a binary search for the value 18 in `[2, 5, 8, 12, 15, 18, 21, 25, 30, 3
 <details>
 <summary>Solution</summary>
 
-| Step | low | high | mid | arr[mid] | Comparison  | Action   |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | ----------- | -------- |
-| 1    | 0   | 9    | 4   | 15       | 15 `&lt;` 18 | low = 5  |
-| 2    | 5   | 9    | 7   | 25       | 25 `&gt;` 18 | high = 6 |
-| 3    | 5   | 6    | 5   | 18       | 18 = 18    | Return 5 |
+| 1 | 0 | 9 | 4 | 15 | 15 `&lt;` 18 | low = 5 |
+| 2 | 5 | 9 | 7 | 25 | 25 `&gt;` 18 | high = 6 |
+| 3 | 5 | 6 | 5 | 18 | 18 = 18 | Return 5 |
 
 Found at index 5 after 3 comparisons.
 
@@ -2372,7 +2372,7 @@ END FOR
 <details>
 <summary>Solution</summary>
 
-Outer loop: $n$ iterations. Inner loop: `j` doubles each time (1, 2, 4, ..., $2^k$), terminates when $2^k \geq n$, so $O(\log n)$ iterations.
+Outer loop: $n$ iterations. Inner loop: `j` doubles each time (1, 2, 4, ..., $2^k$), terminates when $2^k \geq n$So $O(\log n)$ iterations.
 
 Total: $O(n \times \log n) = O(n \log n)$.
 
@@ -2423,7 +2423,7 @@ Use a stack to reverse the string "HELLO". Show the stack after each push and po
 <details>
 <summary>Solution</summary>
 
-Push phase: H, E, L, L, O (stack: `H, E, L, L, O`, top on right)
+Push phase: H, E, L, L, O (stack: `H, E, L, L, O`Top on right)
 
 Pop phase: pop O (output "O"), pop L ("OL"), pop L ("OLL"), pop E ("OLLE"), pop H ("OLLEH")
 
@@ -2435,19 +2435,19 @@ Output: "OLLEH" -- "HELLO" reversed. The LIFO property reverses element order.
 
 ### Problem 12: Queue Simulation
 
-A queue initially contains `[A, B, C]` (front = A). Perform: `dequeue()`, `enqueue(D)`, `enqueue(E)`, `dequeue()`, `enqueue(F)`. Show the queue after each operation.
+A queue initially contains `[A, B, C]` (front = A). Perform: `dequeue()``enqueue(D)``enqueue(E)``dequeue()``enqueue(F)`. Show the queue after each operation.
 
 <details>
 <summary>Solution</summary>
 
-| Step | Operation   | Queue State   |
+| Step | Operation | Queue State |
 | ---- | ----------- | ------------- |
-| 0    | Initial     | [A, B, C]     |
-| 1    | dequeue()   | [B, C]        |
-| 2    | enqueue(D)  | [B, C, D]     |
-| 3    | enqueue(E)  | [B, C, D, E]  |
-| 4    | dequeue()   | [C, D, E]     |
-| 5    | enqueue(F)  | [C, D, E, F]  |
+| 0 | Initial | [A, B, C] |
+| 1 | dequeue() | [B, C] |
+| 2 | enqueue(D) | [B, C, D] |
+| 3 | enqueue(E) | [B, C, D, E] |
+| 4 | dequeue() | [C, D, E] |
+| 5 | enqueue(F) | [C, D, E, F] |
 
 FIFO maintained: elements removed in arrival order.
 
@@ -2489,9 +2489,9 @@ A hash table of size 5 uses linear probing with $h(k) = k \mod 5$. Insert keys 1
 
 Insertions: 12->slot 2, 7->slot 2(collision)->slot 3, 15->slot 0, 22->slot 2(collision)->3(collision)->4, 3->slot 3(collision)->4(collision)->0(collision)->1.
 
-| Slot | 0  | 1 | 2  | 3 | 4  |
+| Slot | 0 | 1 | 2 | 3 | 4 |
 | ---- | -- | - | -- | - | -- |
-| Key  | 15 | 3 | 12 | 7 | 22 |
+| Key | 15 | 3 | 12 | 7 | 22 |
 
 Search for 22: $h(22) = 2$. Slot 2: 12 != 22. Slot 3: 7 != 22. Slot 4: 22 = 22. Found in 3 probes.
 
@@ -2533,14 +2533,14 @@ Given adjacency list: A:[B,C], B:[A,D,E], C:[A,F], D:[B], E:[B,F], F:[C,E]. Perf
 <details>
 <summary>Solution</summary>
 
-| Step | Dequeue | Visit | Enqueue        | Queue      |
+| Step | Dequeue | Visit | Enqueue | Queue |
 | ---- | ------- | ----- | -------------- | ---------- |
-| 0    | --      | A     | B, C           | [B, C]     |
-| 1    | B       | B     | D, E           | [C, D, E]  |
-| 2    | C       | C     | F              | [D, E, F]  |
-| 3    | D       | D     | (all visited)  | [E, F]     |
-| 4    | E       | E     | (F already q'd)| [F]        |
-| 5    | F       | F     | (all visited)  | []         |
+| 0 | -- | A | B, C | [B, C] |
+| 1 | B | B | D, E | [C, D, E] |
+| 2 | C | C | F | [D, E, F] |
+| 3 | D | D | (all visited) | [E, F] |
+| 4 | E | E | (F already q'd)| [F] |
+| 5 | F | F | (all visited) | [] |
 
 BFS order: **A, B, C, D, E, F** (level-by-level: distance 0, then 1, then 2).
 
@@ -2599,23 +2599,23 @@ C --2-- E --1-- F
 <details>
 <summary>Solution</summary>
 
-| Step | Visit | Distances updated                    |
+| Step | Visit | Distances updated |
 | ---- | ----- | ------------------------------------ |
-| 1    | A     | B=3, C=5                             |
-| 2    | B     | D=5, E=4                             |
-| 3    | E     | C=6(no), F=5                         |
-| 4    | C     | No improvements                      |
-| 5    | D     | F=9(no improvement)                  |
-| 6    | F     | Complete                             |
+| 1 | A | B=3, C=5 |
+| 2 | B | D=5, E=4 |
+| 3 | E | C=6(no), F=5 |
+| 4 | C | No improvements |
+| 5 | D | F=9(no improvement) |
+| 6 | F | Complete |
 
-| Vertex | Distance | Path            |
+| Vertex | Distance | Path |
 | ------ | -------- | --------------- |
-| A      | 0        | A               |
-| B      | 3        | A -> B          |
-| C      | 5        | A -> C          |
-| D      | 5        | A -> B -> D     |
-| E      | 4        | A -> B -> E     |
-| F      | 5        | A -> B -> E -> F |
+| A | 0 | A |
+| B | 3 | A -> B |
+| C | 5 | A -> C |
+| D | 5 | A -> B -> D |
+| E | 4 | A -> B -> E |
+| F | 5 | A -> B -> E -> F |
 
 </details>
 
@@ -2627,3 +2627,15 @@ C --2-- E --1-- F
 
 - **A-Level Algorithms:** [Computer Science](https://alevel.wyattau.com/docs/computer-science/computer-science)
 - **University Algorithms:** [Algorithms and Data Structures](https://university.wyattau.com/docs/computing/algorithms-and-data-structures)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -47,15 +47,15 @@ Since the discriminant is negative, the ball **never reaches** the height of $B$
 
 $$h_{\max} = \frac{u_y^2}{2g} = \frac{25.38^2}{2 \times 9.81} = \frac{644.1}{19.62} = 32.83\,\text{m}$$
 
-Since $32.83\,\text{m} \lt 35\,\text{m}$, the ball cannot reach $B$. The student must recognise when the mathematics reveals a physical impossibility rather than blindly computing.
+Since $32.83\,\text{m} \lt 35\,\text{m}$The ball cannot reach $B$. The student must recognise when the mathematics reveals a physical impossibility rather than blindly computing.
 
 (b) Not applicable -- the ball does not reach $B$.
 
-(c) The maximum height is $32.83\,\text{m}$, reached at time $t = u_y/g = 25.38/9.81 = 2.586\,\text{s}$.
+(c) The maximum height is $32.83\,\text{m}$Reached at time $t = u_y/g = 25.38/9.81 = 2.586\,\text{s}$.
 
 At maximum height, $v_y = 0$ and $v_x = 11.83\,\text{m}\,\text{s}^{-1}$ (unchanged), so the speed is $11.83\,\text{m}\,\text{s}^{-1}$ horizontally.
 
-The question asks for the speed at height $B$, which is unattainable. This is the key challenge: recognising the physical constraint from the mathematics.
+The question asks for the speed at height $B$Which is unattainable. This is the key challenge: recognising the physical constraint from the mathematics.
 
 ---
 
@@ -89,7 +89,7 @@ $= (400 - 250) - (160 - 40) = 150 - 120 = 30\,\text{m}$
 
 At $t = 10$: $v = 40 - 50 = -10\,\text{m}\,\text{s}^{-1}$.
 
-**Region III** ($10 \lt t \le 14$): $v = -10$, so $s_{III} = -10 \times 4 = -40\,\text{m}$
+**Region III** ($10 \lt t \le 14$): $v = -10$So $s_{III} = -10 \times 4 = -40\,\text{m}$
 
 **Total displacement:** $s = 32 + 30 - 40 = 22\,\text{m}$
 
@@ -127,15 +127,15 @@ Cumulative displacement at $t = 10$: $s = 32 + 30 = 62\,\text{m}$
 
 From $t = 10$ to $t = 14$: displacement decreases at $10\,\text{m}\,\text{s}^{-1}$.
 
-Time to return to origin from $t = 10$: $62/10 = 6.2\,\text{s}$, i.e. at $t = 16.2\,\text{s}$.
+Time to return to origin from $t = 10$: $62/10 = 6.2\,\text{s}$I.e. At $t = 16.2\,\text{s}$.
 
-But the motion only continues to $t = 14\,\text{s}$, at which point $s = 22\,\text{m}$.
+But the motion only continues to $t = 14\,\text{s}$At which point $s = 22\,\text{m}$.
 
 The car does **not** return to its starting position within the given time interval.
 
 We must also check during Region I. At $t = 4/3$: $s = -32/27 = -1.19\,\text{m}$ (not zero). At $t = 0$: $s = 0$. The car starts at the origin but moves backward first, then forward. Setting the integral to zero within Region I:
 
-$t^3 - 2t^2 = 0 \Rightarrow t^2(t - 2) = 0$, giving $t = 0$ or $t = 2\,\text{s}$.
+$t^3 - 2t^2 = 0 \Rightarrow t^2(t - 2) = 0$Giving $t = 0$ or $t = 2\,\text{s}$.
 
 At $t = 2$: $v = 3(4) - 8 = 4\,\text{m}\,\text{s}^{-1}$ and $s = 8 - 8 = 0$.
 
@@ -147,7 +147,7 @@ So the car returns to its starting position at **$t = 2.0\,\text{s}$** (the only
 
 **Question:**
 
-A small ball is projected vertically upwards with speed $18.0\,\text{m}\,\text{s}^{-1}$ from a height of $2.0\,\text{m}$ above the ground. It reaches its maximum height, then falls and bounces off the ground. The coefficient of restitution is $e = 0.75$, meaning the speed immediately after bouncing is $0.75$ times the speed immediately before bouncing.
+A small ball is projected vertically upwards with speed $18.0\,\text{m}\,\text{s}^{-1}$ from a height of $2.0\,\text{m}$ above the ground. It reaches its maximum height, then falls and bounces off the ground. The coefficient of restitution is $e = 0.75$Meaning the speed immediately after bouncing is $0.75$ times the speed immediately before bouncing.
 
 (a) Calculate the maximum height above the ground reached on the first ascent.
 
@@ -159,7 +159,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 18.0$, $a = -9.81$:
+(a) Using $v^2 = u^2 + 2as$ with $v = 0$$u = 18.0$$a = -9.81$:
 
 $$0 = 18.0^2 - 2(9.81)s \Rightarrow s = \frac{324}{19.62} = 16.52\,\text{m}$$
 
@@ -219,7 +219,7 @@ Ignoring $t = 0$:
 
 $$t = \frac{2u(\sin\theta - \cos\theta\tan\alpha)}{g} = \frac{2u(\sin\theta\cos\alpha - \cos\theta\sin\alpha)}{g\cos\alpha} = \frac{2u\sin(\theta - \alpha)}{g\cos\alpha}$$
 
-as required.
+As required.
 
 (b) Substituting: $t = \frac{2 \times 25 \times \sin(30^\circ - 20^\circ)}{9.81 \times \cos 20^\circ} = \frac{50 \times \sin 10^\circ}{9.81 \times \cos 20^\circ}$
 
@@ -259,7 +259,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 (a) For $B$ (downward positive): $5.0g - T = 5.0a$
 
-For $A$ (horizontal, rightward positive): $T - F_r = 3.0a$, where $F_r = \mu R = 0.40 \times 3.0g = 1.2g$
+For $A$ (horizontal, rightward positive): $T - F_r = 3.0a$Where $F_r = \mu R = 0.40 \times 3.0g = 1.2g$
 
 Adding: $5.0g - 1.2g = 8.0a$
 

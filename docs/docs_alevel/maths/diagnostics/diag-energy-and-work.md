@@ -63,7 +63,7 @@ $$\text{Percentage error} = \frac{735 - 529.8}{529.8} \times 100\% \approx 38.7\
 
 A car of mass $800$ kg travels on a level road. The engine works at constant power $40$ kW. The resistance to motion is a constant $200$ N.
 
-**(a)** Show that the acceleration of the car is given by $a = \frac{P}{mv} - \frac{R}{m}$, where $P$ is the power, $v$ is the speed, and $R$ is the resistance.
+**(a)** Show that the acceleration of the car is given by $a = \frac{P}{mv} - \frac{R}{m}$Where $P$ is the power, $v$ is the speed, and $R$ is the resistance.
 
 **(b)** Find the maximum speed of the car.
 
@@ -105,7 +105,7 @@ $$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
-Let $u = 40000 - 200v$, $du = -200\,dv$, $dv = -\frac{du}{200}$, $v = \frac{40000 - u}{200}$:
+Let $u = 40000 - 200v$$du = -200\,dv$$dv = -\frac{du}{200}$$v = \frac{40000 - u}{200}$:
 
 $$t = 800\int \frac{(40000 - u)/200}{u} \cdot \left(-\frac{du}{200}\right) = 800 \times \frac{-1}{40000}\int \frac{40000 - u}{u}\,du$$
 
@@ -137,7 +137,7 @@ A particle of mass $3$ kg is attached to one end of a light elastic spring of na
 
 **Solution:**
 
-**(a)** At maximum extension $x_{\max}$, the speed is zero. Taking the natural length position as the reference for GPE (so the particle falls a distance $x_{\max}$):
+**(a)** At maximum extension $x_{\max}$The speed is zero. Taking the natural length position as the reference for GPE (so the particle falls a distance $x_{\max}$):
 
 Loss in GPE $= mgx_{\max} = 3 \times 9.8 \times x_{\max} = 29.4x_{\max}$.
 
@@ -149,7 +149,7 @@ $$x_{\max}(150x_{\max} - 29.4) = 0$$
 
 $$x_{\max} = \frac{29.4}{150} = 0.196 \text{ m}$$
 
-(Ignoring $x_{\max} = 0$, the trivial solution.)
+(Ignoring $x_{\max} = 0$The trivial solution.)
 
 **(b)** The speed is maximum when the acceleration is zero, i.e., when the net force on the particle is zero. This occurs at the equilibrium extension $x_e$ where:
 
@@ -165,7 +165,7 @@ Gain in KE $= 2.8812 - 1.4406 = 1.4406$ J.
 
 $$\frac{1}{2}(3)v_{\max}^2 = 1.4406 \implies v_{\max}^2 = 0.9604 \implies v_{\max} = 0.98 \text{ m/s}$$
 
-**(c)** At the natural length, the spring exerts no force, so the only force on the particle is gravity ($mg = 29.4$ N downward). The particle is still accelerating at $g = 9.8$ m/s$^2$ at this point. The particle continues to accelerate until the restoring force of the spring equals gravity (at $x_e = 0.098$ m). Beyond this point, the spring force exceeds gravity and the particle decelerates. The maximum speed occurs at $x_e$, not at the natural length.
+**(c)** At the natural length, the spring exerts no force, so the only force on the particle is gravity ($mg = 29.4$ N downward). The particle is still accelerating at $g = 9.8$ m/s$^2$ at this point. The particle continues to accelerate until the restoring force of the spring equals gravity (at $x_e = 0.098$ m). Beyond this point, the spring force exceeds gravity and the particle decelerates. The maximum speed occurs at $x_e$Not at the natural length.
 
 ---
 
@@ -181,7 +181,7 @@ A particle moves along the $x$-axis under the action of a variable force $F(x) =
 
 **(a)** Find the work done by the force as the particle moves from $x = 0$ to $x = 3$.
 
-**(b)** Given that the particle has mass $2$ kg and starts from rest at $x = 0$, find its speed at $x = 3$.
+**(b)** Given that the particle has mass $2$ kg and starts from rest at $x = 0$Find its speed at $x = 3$.
 
 **(c)** Find the positions where the force is zero, and determine whether the force does positive or negative work in each region.
 
@@ -201,13 +201,13 @@ $$21 = \frac{1}{2}(2)v^2 \implies v^2 = 21 \implies v = \sqrt{21} \approx 4.58 \
 
 **(c)** $F(x) = 0 \implies 3x^2 + 2x - 5 = 0 \implies (3x + 5)(x - 1) = 0 \implies x = -\frac{5}{3}$ or $x = 1$.
 
-For $x \lt -5/3$: test $x = -2$, $F = 12 - 4 - 5 = 3 \gt 0$ (force in positive $x$-direction).
+For $x \lt -5/3$: test $x = -2$$F = 12 - 4 - 5 = 3 \gt 0$ (force in positive $x$-direction).
 
-For $-5/3 \lt x \lt 1$: test $x = 0$, $F = -5 \lt 0$ (force in negative $x$-direction).
+For $-5/3 \lt x \lt 1$: test $x = 0$$F = -5 \lt 0$ (force in negative $x$-direction).
 
-For $x \gt 1$: test $x = 2$, $F = 12 + 4 - 5 = 11 \gt 0$ (force in positive $x$-direction).
+For $x \gt 1$: test $x = 2$$F = 12 + 4 - 5 = 11 \gt 0$ (force in positive $x$-direction).
 
-The force does positive work in $(-\infty, -5/3)$ and $(1, \infty)$, and negative work in $(-5/3, 1)$.
+The force does positive work in $(-\infty, -5/3)$ and $(1, \infty)$And negative work in $(-5/3, 1)$.
 
 **(d)** $$W = \int_{-2}^3 (3x^2 + 2x - 5)\,dx = \left[x^3 + x^2 - 5x\right]_{-2}^3$$
 
@@ -223,13 +223,13 @@ Note that the work from $-2$ to $3$ ($15$ J) is less than from $0$ to $3$ ($21$ 
 
 **Question:**
 
-**(a)** Starting from Newton's Second Law $F = ma$, derive the work-energy theorem in one dimension:
+**(a)** Starting from Newton's Second Law $F = ma$Derive the work-energy theorem in one dimension:
 
 $$W = \int_{s_1}^{s_2} F\,ds = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 Show every step and justify each substitution.
 
-**(b)** Extend the derivation to two dimensions, where the force is $\mathbf{F} = (F_x, F_y)$ and the displacement is $\mathbf{s} = (x, y)$, to show that:
+**(b)** Extend the derivation to two dimensions, where the force is $\mathbf{F} = (F_x, F_y)$ and the displacement is $\mathbf{s} = (x, y)$To show that:
 
 $$W = \int \mathbf{F} \cdot d\mathbf{s} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
@@ -247,11 +247,11 @@ Multiply both sides by $ds$ (the infinitesimal displacement):
 
 $$F\,ds = m\frac{dv}{dt}\,ds$$
 
-Since $v = \frac{ds}{dt}$, we have $ds = v\,dt$, so $\frac{ds}{dt} = v$. Rearranging:
+Since $v = \frac{ds}{dt}$We have $ds = v\,dt$So $\frac{ds}{dt} = v$. Rearranging:
 
 $$F\,ds = m\frac{dv}{dt} \cdot v\,dt = mv\,dv$$
 
-This step uses the chain rule: $\frac{dv}{dt} = \frac{dv}{ds} \cdot \frac{ds}{dt} = v\frac{dv}{ds}$, so $F = mv\frac{dv}{ds}$ and $F\,ds = mv\,dv$.
+This step uses the chain rule: $\frac{dv}{dt} = \frac{dv}{ds} \cdot \frac{ds}{dt} = v\frac{dv}{ds}$So $F = mv\frac{dv}{ds}$ and $F\,ds = mv\,dv$.
 
 Integrating both sides from the initial state $(s_1, v_1)$ to the final state $(s_2, v_2)$:
 
@@ -275,7 +275,7 @@ Adding:
 
 $$W = \frac{1}{2}m(v_{x,2}^2 + v_{y,2}^2) - \frac{1}{2}m(v_{x,1}^2 + v_{y,1}^2) = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2 \quad \blacksquare$$
 
-**(c)** The work-energy theorem $W_{\text{net}} = \Delta\mathrm{KE}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{net}}$, and the change in KE correctly reflects this energy loss.
+**(c)** The work-energy theorem $W_{\text{net}} = \Delta\mathrm{KE}$ is a direct consequence of $F = ma$ (as proven above). It accounts for **all** forces, whether conservative or non-conservative. When friction acts, the work done by friction (which is negative) is included in $W_{\text{net}}$And the change in KE correctly reflects this energy loss.
 
 Conservation of mechanical energy ($\mathrm{KE} + \mathrm{PE} = \text{constant}$) applies only when all forces are conservative. A conservative force is one whose work done is path-independent (depends only on initial and final positions). Gravity is conservative; friction is not (the work done by friction depends on the path length). When friction is present, mechanical energy is not conserved -- some is converted to thermal energy. The work-energy theorem still holds because it accounts for the friction work explicitly.
 
@@ -329,7 +329,7 @@ $$\frac{1}{2}(5)v^2 = 142.3 \implies v^2 = 56.9 \implies v \approx 7.54 \text{ m
 
 $$a = -g\sin 30° - \mu g\cos 30° = -4.9 - 2.121 = -7.021 \text{ m/s}^2$$
 
-Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 12$:
+Using $v^2 = u^2 + 2as$ with $v = 0$$u = 12$:
 
 $$0 = 144 + 2(-7.021)d \implies d = \frac{144}{14.042} \approx 10.25 \text{ m}$$
 

@@ -8,8 +8,8 @@ sidebar_position: 2
 ## cron Daemon
 
 The cron daemon (`crond`) is a time-based job scheduler that runs commands at specified times and
-intervals. It wakes up every minute, checks all crontab files for matching time specifications, and
-executes due commands.
+Intervals. It wakes up every minute, checks all crontab files for matching time specifications, and
+Executes due commands.
 
 ```bash
 # Check if cron is running
@@ -52,16 +52,16 @@ systemctl enable --now crond
 
 ### Special Strings
 
-| String      | Equivalent  | Description                     |
+| String | Equivalent | Description |
 | ----------- | ----------- | ------------------------------- |
-| `@yearly`   | `0 0 1 1 *` | Once per year                   |
-| `@annually` | `0 0 1 1 *` | Same as @yearly                 |
-| `@monthly`  | `0 0 1 * *` | Once per month                  |
-| `@weekly`   | `0 0 * * 0` | Once per week                   |
-| `@daily`    | `0 0 * * *` | Once per day                    |
-| `@midnight` | `0 0 * * *` | Same as @daily                  |
-| `@hourly`   | `0 * * * *` | Once per hour                   |
-| `@reboot`   | (special)   | Run once at cron daemon startup |
+| `@yearly` | `0 0 1 1 *` | Once per year |
+| `@annually` | `0 0 1 1 *` | Same as @yearly |
+| `@monthly` | `0 0 1 * *` | Once per month |
+| `@weekly` | `0 0 * * 0` | Once per week |
+| `@daily` | `0 0 * * *` | Once per day |
+| `@midnight` | `0 0 * * *` | Same as @daily |
+| `@hourly` | `0 * * * *` | Once per hour |
+| `@reboot` | (special) | Run once at cron daemon startup |
 
 ```bash
 # System backup every day at midnight
@@ -255,8 +255,8 @@ chmod 755 /etc/cron.daily/my-daily-job
 ## anacron
 
 `anacron` (anachronistic cron) is designed for systems that are not running 24/7. Unlike cron, which
-assumes the system is always on, anacron ensures that jobs run at the specified intervals relative
-to the last run, even if the system was off.
+Assumes the system is always on, anacron ensures that jobs run at the specified intervals relative
+To the last run, even if the system was off.
 
 ```bash
 # anacron configuration
@@ -289,18 +289,18 @@ ls -la /var/spool/anacron/
 
 ### cron vs anacron
 
-| Feature      | cron                  | anacron                     |
+| Feature | cron | anacron |
 | ------------ | --------------------- | --------------------------- |
-| System type  | 24/7 servers          | Desktops, laptops           |
-| Missed jobs  | Skipped               | Run at next opportunity     |
-| Granularity  | 1-minute precision    | Daily minimum               |
-| Runs at      | Exact specified times | After boot (with delay)     |
-| Per-user     | Yes                   | No (system-wide only)       |
-| Suitable for | Precise scheduling    | Ensuring periodic tasks run |
+| System type | 24/7 servers | Desktops, laptops |
+| Missed jobs | Skipped | Run at next opportunity |
+| Granularity | 1-minute precision | Daily minimum |
+| Runs at | Exact specified times | After boot (with delay) |
+| Per-user | Yes | No (system-wide only) |
+| Suitable for | Precise scheduling | Ensuring periodic tasks run |
 
 ## systemd Timers
 
-systemd timers provide an alternative to cron with tighter integration into the systemd ecosystem.
+Systemd timers provide an alternative to cron with tighter integration into the systemd ecosystem.
 
 ### Timer Unit Files
 
@@ -396,31 +396,31 @@ systemctl show backup.timer --property=NextElapseUSecRealtime
 
 ### systemd Timers vs cron
 
-| Feature             | cron                     | systemd timer            |
+| Feature | cron | systemd timer |
 | ------------------- | ------------------------ | ------------------------ |
-| Boot catch-up       | No (missed jobs skipped) | Yes (`Persistent=true`)  |
-| Logging             | Email or /var/log/syslog | journald                 |
-| Dependencies        | None                     | Full systemd dependency  |
-| Resource limits     | System defaults          | Per-service limits       |
-| Randomized delay    | No                       | `RandomizedDelaySec`     |
-| Calendar syntax     | cron expression          | systemd calendar events  |
-| Per-user timers     | Yes                      | Yes (`--user`)           |
-| Precision           | 1 minute                 | 1 minute (`AccuracySec`) |
-| Built-in monitoring | No                       | Yes (`systemctl status`) |
-| Timezone handling   | System timezone          | Per-timer `Timezone=`    |
+| Boot catch-up | No (missed jobs skipped) | Yes (`Persistent=true`) |
+| Logging | Email or /var/log/syslog | journald |
+| Dependencies | None | Full systemd dependency |
+| Resource limits | System defaults | Per-service limits |
+| Randomized delay | No | `RandomizedDelaySec` |
+| Calendar syntax | cron expression | systemd calendar events |
+| Per-user timers | Yes | Yes (`--user`) |
+| Precision | 1 minute | 1 minute (`AccuracySec`) |
+| Built-in monitoring | No | Yes (`systemctl status`) |
+| Timezone handling | System timezone | Per-timer `Timezone=` |
 
 :::info
 
 For new deployments, systemd timers are generally preferred over cron because they provide better
-logging, dependency management, and missed-job handling. However, cron remains ubiquitous and is
-still the default on many distributions for user-level scheduling.
+Logging, dependency management, and missed-job handling. However, cron remains ubiquitous and is
+Still the default on many distributions for user-level scheduling.
 
 :::
 
 ## at and batch
 
 `at` schedules one-time execution of commands at a specified time. `batch` executes commands when
-system load drops below a threshold.
+System load drops below a threshold.
 
 ### at
 
@@ -932,3 +932,11 @@ done
 # OnCalendar=*-*-* *:*:00/5
 # AccuracySec=1s
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

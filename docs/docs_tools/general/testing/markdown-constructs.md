@@ -15,9 +15,9 @@ sidebar_position: 1
 
 ~~Usage of
 [root remark-grid-table](https://github.com/zestedesavoir/zmarkdown/tree/HEAD/packages/remark-grid-tables#readme)
-is discouraged with Docusaurus, use
+Is discouraged with Docusaurus, use
 [Adobe remark-gridtables](https://github.com/adobe/remark-gridtables) instead.~~ Remark Grid tables
-seems to be broken at the moment, the following does not seem to work:
+Seems to be broken at the moment, the following does not seem to work:
 
 ````
 +----+----+
@@ -57,8 +57,20 @@ seems to be broken at the moment, the following does not seem to work:
 ### Math
 
 Using remark math with rehype Katex, equations written in LaTeX can be rendered, however LaTeX
-packages cannot be included.
+Packages cannot be included.
 
 $$
 \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0
 $$
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -29,7 +29,7 @@ $$V = \frac{4988.4}{1.013 \times 10^7} = 4.92 \times 10^{-4}\,\text{m}^3 = 0.492
 
 **Van der Waals equation:** $\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT$
 
-This must be solved numerically. Substituting $P = 1.013 \times 10^7\,\text{Pa}$, $n = 2.0$, $T = 300\,\text{K}$:
+This must be solved numerically. Substituting $P = 1.013 \times 10^7\,\text{Pa}$$n = 2.0$$T = 300\,\text{K}$:
 
 $$\left(1.013 \times 10^7 + \frac{0.137 \times 4.0}{V^2}\right)(V - 7.74 \times 10^{-5}) = 4988.4$$
 
@@ -162,7 +162,7 @@ This is zero, as expected for a reversible (Carnot) cycle. A real engine would h
 
 (c) Theoretically, as $T_C \to 0$: $\eta = 1 - T_C/T_H \to 1 = 100\%$. The third law of thermodynamics states that absolute zero cannot be reached by any finite number of processes, so $T_C = 0\,\text{K}$ is unattainable. Practically, even if it were approachable, no process can be perfectly reversible, so $100\%$ efficiency is impossible.
 
-However, the **theoretical** limit of efficiency does approach $100\%$ as $T_C \to 0$, which is why reaching very low temperatures requires increasingly sophisticated and energy-intensive cooling methods.
+However, the **theoretical** limit of efficiency does approach $100\%$ as $T_C \to 0$Which is why reaching very low temperatures requires increasingly sophisticated and energy-intensive cooling methods.
 
 ## Integration Tests
 
@@ -192,7 +192,7 @@ Adiabatic relation: $P_1V_1^\gamma = P_2V_2^\gamma$
 
 $$P_2 = P_1\left(\frac{V_1}{V_2}\right)^\gamma = 4.0 \times 10^5 \times \left(\frac{1}{2}\right)^{5/3} = 4.0 \times 10^5 \times 0.3150 = 1.26 \times 10^5\,\text{Pa}$$
 
-(b) For an adiabatic process, $Q = 0$, so $W = -\Delta U$:
+(b) For an adiabatic process, $Q = 0$So $W = -\Delta U$:
 
 $$\Delta U = nC_v(T_2 - T_1) = 3.0 \times \frac{3}{2}R \times (252 - 400)$$
 
@@ -215,7 +215,7 @@ The isothermal work ($6915\,\text{J}$) is greater than the adiabatic work ($5537
 **Question:**
 
 A gas undergoes a cycle consisting of three processes:
-- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$, $V$ increases from $1.0 \times 10^{-3}\,\text{m}^3$ to $3.0 \times 10^{-3}\,\text{m}^3$
+- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$$V$ increases from $1.0 \times 10^{-3}\,\text{m}^3$ to $3.0 \times 10^{-3}\,\text{m}^3$
 - 2 to 3: Isochoric cooling, $P$ decreases to $1.0 \times 10^5\,\text{Pa}$
 - 3 to 1: Isothermal compression back to state 1
 
@@ -235,23 +235,23 @@ Temperature at state 1: $T_1 = P_1V_1/(nR) = 3.0 \times 10^5 \times 1.0 \times 1
 
 Temperature at state 2: $T_2 = P_2V_2/(nR) = 3.0 \times 10^5 \times 3.0 \times 10^{-3}/(nR) = 900/(nR)$
 
-Since $T_2 = 3T_1$, and $\Delta U = nC_v(T_2 - T_1)$:
+Since $T_2 = 3T_1$And $\Delta U = nC_v(T_2 - T_1)$:
 
-Without knowing $n$ or the gas type, let $nR = 300/T_1$, so $nR = 300/T_1$. Let $T_1$ be the reference. We can work in ratios.
+Without knowing $n$ or the gas type, let $nR = 300/T_1$So $nR = 300/T_1$. Let $T_1$ be the reference. We can work in ratios.
 
 $\Delta U_{12} = nC_v(T_2 - T_1) = nC_v \times 2T_1$
 
 $Q_{12} = nC_p(T_2 - T_1) = nC_p \times 2T_1$
 
-For a monatomic ideal gas: $C_v = 3R/2$, $C_p = 5R/2$.
+For a monatomic ideal gas: $C_v = 3R/2$$C_p = 5R/2$.
 
-$nR = P_1V_1/T_1 = 300/T_1$, so $n = 300/(RT_1)$.
+$nR = P_1V_1/T_1 = 300/T_1$So $n = 300/(RT_1)$.
 
 Let us use specific values. Let $T_1 = 100\,\text{K}$ (choosing for convenience, the ratios will be the same).
 
-Then $nR = 3.0$, $n = 3.0/8.314 = 0.361\,\text{mol}$.
+Then $nR = 3.0$$n = 3.0/8.314 = 0.361\,\text{mol}$.
 
-$T_2 = 300\,\text{K}$, $T_3 = P_3V_3/(nR) = 1.0 \times 10^5 \times 3.0 \times 10^{-3}/3.0 = 100\,\text{K} = T_1$.
+$T_2 = 300\,\text{K}$$T_3 = P_3V_3/(nR) = 1.0 \times 10^5 \times 3.0 \times 10^{-3}/3.0 = 100\,\text{K} = T_1$.
 
 $\Delta U_{12} = 0.361 \times 1.5 \times 8.314 \times (300 - 100) = 0.361 \times 12.471 \times 200 = 900\,\text{J}$
 

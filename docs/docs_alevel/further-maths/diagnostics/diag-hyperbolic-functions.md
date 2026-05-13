@@ -63,7 +63,7 @@ $\frac{d}{dx}\cosh x = \frac{d}{dx}\frac{e^x + e^{-x}}{2} = \frac{e^x - e^{-x}}{
 
 (b) $\int \text{sech}^2 x\,dx = \tanh x + C$.
 
-(c) $x = 2\sinh u$, $dx = 2\cosh u\,du$. $\sqrt{x^2+4} = 2\cosh u$.
+(c) $x = 2\sinh u$$dx = 2\cosh u\,du$. $\sqrt{x^2+4} = 2\cosh u$.
 $\int \frac◆LB◆2\cosh u◆RB◆◆LB◆2\cosh u◆RB◆\,du = \int 1\,du = u + C = \text{arcsinh}\frac{x}{2} + C = \ln\left(\frac{x}{2} + \sqrt◆LB◆\frac{x^2}{4}+1◆RB◆\right) + C$.
 
 (d) $\cosh x = \frac{e^x + e^{-x}}{2} = \frac{1}{2}\left(1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + \frac{x^6}{6!} + 1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \frac{x^4}{4!} - \frac{x^5}{5!} + \frac{x^6}{6!}\right)$
@@ -74,7 +74,7 @@ $= \frac{1}{2}\left(2 + \frac{2x^4}{4!} + \frac{2x^6}{6!}\right) = 1 + \frac{x^2
 
 **Solution:**
 
-(a) **Osborn's rule:** Replace every $\sin$ in a trigonometric identity with $\sinh$ and every $\cos$ with $\cosh$, and change the sign of every term containing a product of two $\sinh$s. The resulting identity holds for hyperbolic functions.
+(a) **Osborn's rule:** Replace every $\sin$ in a trigonometric identity with $\sinh$ and every $\cos$ with $\cosh$And change the sign of every term containing a product of two $\sinh$S. The resulting identity holds for hyperbolic functions.
 
 (b) From $\cos 3x = 4\cos^3 x - 3\cos x$: replace $\cos \to \cosh$ (no $\sin$ terms):
 $\cosh 3x = 4\cosh^3 x - 3\cosh x$.
@@ -84,7 +84,7 @@ $\frac{d}{dx}\text{cosech}\,x = \frac{-2(e^x + e^{-x})}{(e^x - e^{-x})^2} = \fra
 
 (d) $\int_0^{\ln 2} \text{sech}\,x\,dx = \int_0^{\ln 2} \frac{2}{e^x + e^{-x}}\,dx = \int_0^{\ln 2} \frac{2e^x}{e^{2x} + 1}\,dx$.
 
-Let $u = e^x$: $du = e^x\,dx$, $dx = du/u$. $= \int_1^2 \frac{2}{u^2+1}\,du = 2[\arctan u]_1^2 = 2(\arctan 2 - \pi/4)$.
+Let $u = e^x$: $du = e^x\,dx$$dx = du/u$. $= \int_1^2 \frac{2}{u^2+1}\,du = 2[\arctan u]_1^2 = 2(\arctan 2 - \pi/4)$.
 
 ### IT-3: Hyperbolic Functions and DEs (with Differential Equations)
 **Question:** The catenary curve is given by $y = a\cosh(x/a)$. (a) Find $\frac{dy}{dx}$ and $\frac{d^2y}{dx^2}$. (b) Show that the catenary satisfies the DE $\frac{d^2y}{dx^2} = \frac{1}{a}\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆$. (c) Find the arc length of the catenary from $x = 0$ to $x = a$. (d) A hanging chain forms a catenary. Explain why the hyperbolic cosine models this shape.
@@ -97,4 +97,4 @@ Let $u = e^x$: $du = e^x\,dx$, $dx = du/u$. $= \int_1^2 \frac{2}{u^2+1}\,du = 2[
 
 (c) $s = \int_0^a \sqrt◆LB◆1 + \sinh^2(x/a)◆RB◆\,dx = \int_0^a \cosh(x/a)\,dx = a[\sinh(x/a)]_0^a = a\sinh(1)$.
 
-(d) A hanging chain under uniform gravity takes the shape that minimises potential energy. This shape satisfies the differential equation of a catenary, whose solution is $y = a\cosh(x/a) + c$. The chain hangs with the lowest point at the vertex of the catenary (where $\cosh(0) = 1$), and the curve rises symmetrically on both sides. The hyperbolic cosine arises naturally from the equilibrium of forces: the horizontal component of tension is constant, while the vertical component varies with the weight of the chain below each point.
+(d) A hanging chain under uniform gravity takes the shape that minimises potential energy. This shape satisfies the differential equation of a catenary, whose solution is $y = a\cosh(x/a) + c$. The chain hangs with the lowest point at the vertex of the catenary (where $\cosh(0) = 1$), and the curve rises symmetrically on both sides. The hyperbolic cosine arises from the equilibrium of forces: the horizontal component of tension is constant, while the vertical component varies with the weight of the chain below each point.

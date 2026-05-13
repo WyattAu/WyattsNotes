@@ -9,10 +9,10 @@ slug: further-complex-numbers-extended
 ## Complex Numbers (Extended Treatment)
 
 This document provides a rigorous treatment of modulus-argument form, De Moivre's theorem, roots of
-complex numbers, loci in the Argand diagram, and Euler's formula.
+Complex numbers, loci in the Argand diagram, and Euler's formula.
 
 :::info Complex numbers unify algebra and geometry in a powerful way. Many results that are
-difficult to prove in real analysis become straightforward when extended to the complex plane. :::
+Difficult to prove in real analysis become straightforward when extended to the complex plane. :::
 
 <hr />
 
@@ -24,14 +24,14 @@ Any non-zero complex number $z = x + iy$ can be written in **modulus-argument fo
 
 $$z = r(\cos\theta + i\sin\theta) = r\,\mathrm{cis}\,\theta$$
 
-where $r = |z| = \sqrt{x^2 + y^2}$ and $\theta = \arg(z)$.
+Where $r = |z| = \sqrt{x^2 + y^2}$ and $\theta = \arg(z)$.
 
 The argument is multi-valued: $\arg(z) = \theta + 2k\pi$ for $k \in \mathbb{Z}$. The **principal
-argument** $\mathrm{Arg}(z)$ satisfies $-\pi \lt \mathrm{Arg}(z) \leq \pi$.
+Argument** $\mathrm{Arg}(z)$ satisfies $-\pi \lt \mathrm{Arg}(z) \leq \pi$.
 
 ### 1.2 Multiplication and division in polar form
 
-If $z_1 = r_1(\cos\theta_1 + i\sin\theta_1)$ and $z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$, then:
+If $z_1 = r_1(\cos\theta_1 + i\sin\theta_1)$ and $z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$Then:
 
 $$z_1 z_2 = r_1 r_2\bigl(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2)\bigr)$$
 
@@ -49,10 +49,10 @@ This confirms: $|z_1 z_2| = |z_1||z_2|$ and $\arg(z_1 z_2) = \arg(z_1) + \arg(z_
 
 **Problem.** Express $\dfrac◆LB◆1 + i\sqrt{3}◆RB◆◆LB◆1 - i◆RB◆$ in modulus-argument form.
 
-Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$,
+Numerator: $1 + i\sqrt{3}$. $r_1 = \sqrt{1 + 3} = 2$
 $\theta_1 = \arctan\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆1◆RB◆\right) = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
-Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$,
+Denominator: $1 - i$. $r_2 = \sqrt{1 + 1} = \sqrt{2}$
 $\theta_2 = \arctan\!\left(\dfrac{-1}{1}\right) = -\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 $$\frac{z_1}{z_2} = \frac◆LB◆2◆RB◆◆LB◆\sqrt{2}◆RB◆\left(\cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \left(-\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)\right) + i\sin\!\left(\frac◆LB◆7\pi◆RB◆◆LB◆12◆RB◆\right)\right)$$
@@ -77,13 +77,13 @@ $$= (\cos k\theta + i\sin k\theta)(\cos\theta + i\sin\theta)$$
 
 $$= \cos(k+1)\theta + i\sin(k+1)\theta$$
 
-by the compound angle formulas. True for $n = k + 1$. $\blacksquare$
+By the compound angle formulas. True for $n = k + 1$. $\blacksquare$
 
 For negative integers, note that:
 
 $$(\cos\theta + i\sin\theta)^{-1} = \cos(-\theta) + i\sin(-\theta) = \cos\theta - i\sin\theta$$
 
-and the result follows by applying the positive case to the reciprocal.
+And the result follows by applying the positive case to the reciprocal.
 
 ### 1.5 Worked example: large powers
 
@@ -122,7 +122,7 @@ $$z = R^{1/n}\!\left(\cos\frac◆LB◆\alpha + 2k\pi◆RB◆◆LB◆n◆RB◆ + 
 ### 2.2 Geometric interpretation
 
 The $n$ roots of $w$ lie on a circle of radius $R^{1/n}$ centred at the origin, equally spaced at
-angles of $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$ apart.
+Angles of $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$ apart.
 
 ### 2.3 Sum of roots
 
@@ -195,7 +195,7 @@ $\alpha \lt \arg(z - z_0) \lt \beta$: the region between two half-lines (an angu
 $0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 $|z - 2| \leq 3$ is a closed disc centred at $2 + 0i$ with radius 3. Combined with the angular
-constraint, the region is the portion of this disc lying between the positive real axis and the line
+Constraint, the region is the portion of this disc lying between the positive real axis and the line
 $\arg z = \pi/4$.
 
 The disc extends from $x = -1$ to $x = 5$ on the real axis. The line $\arg z = \pi/4$ is $y = x$.
@@ -243,7 +243,7 @@ This connects the exponential function with trigonometric functions via the imag
 
 $$e^{i\theta} = \sum_{n=0}^{\infty}\frac◆LB◆(i\theta)^n◆RB◆◆LB◆n!◆RB◆ = 1 + i\theta + \frac◆LB◆(i\theta)^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆(i\theta)^3◆RB◆◆LB◆3!◆RB◆ + \cdots$$
 
-Since $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, and this pattern repeats with period 4:
+Since $i^2 = -1$$i^3 = -i$$i^4 = 1$And this pattern repeats with period 4:
 
 $$= \left(1 - \frac◆LB◆\theta^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆\theta^4◆RB◆◆LB◆4!◆RB◆ - \cdots\right) + i\left(\theta - \frac◆LB◆\theta^3◆RB◆◆LB◆3!◆RB◆ + \frac◆LB◆\theta^5◆RB◆◆LB◆5!◆RB◆ - \cdots\right)$$
 
@@ -255,13 +255,13 @@ $$= \cos\theta + i\sin\theta \quad \blacksquare$$
 
 $$e^{i\pi} + 1 = 0$$
 
-This connects five fundamental constants: $e$, $i$, $\pi$, $1$, and $0$.
+This connects five fundamental constants: $e$$i$$\pi$$1$And $0$.
 
 **Complex exponential form:** Any complex number can be written as:
 
 $$z = re^{i\theta}$$
 
-where $r = |z|$ and $\theta = \arg(z)$.
+Where $r = |z|$ and $\theta = \arg(z)$.
 
 ### 4.4 Exponential form of De Moivre
 
@@ -281,7 +281,7 @@ $$\sin\theta = \frac◆LB◆e^{i\theta} - e^{-i\theta}◆RB◆◆LB◆2i◆RB◆
 
 **Problem.** Express $\dfrac{(1 + i)^5}{(1 - i)^3}$ in the form $a + bi$ and in exponential form.
 
-$1 + i = \sqrt{2}\,e^{i\pi/4}$, $1 - i = \sqrt{2}\,e^{-i\pi/4}$.
+$1 + i = \sqrt{2}\,e^{i\pi/4}$$1 - i = \sqrt{2}\,e^{-i\pi/4}$.
 
 $$\frac{(1 + i)^5}{(1 - i)^3} = \frac◆LB◆(\sqrt{2})^5\,e^{i5\pi/4}◆RB◆◆LB◆(\sqrt{2})^3\,e^{-i3\pi/4}◆RB◆ = 4\sqrt{2}\,e^{i2\pi} = 4\sqrt{2}$$
 
@@ -301,8 +301,8 @@ Equating arguments: $y = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2k\pi$ for
 
 $$z = \ln 2 + i\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ + 2k\pi\right), \quad k \in \mathbb{Z}$$
 
-:::warning Common Pitfall The complex exponential is periodic with period $2\pi i$, so equations of
-the form $e^z = w$ have infinitely many solutions. Always include the general solution with $2k\pi$.
+:::warning Common Pitfall The complex exponential is periodic with period $2\pi i$So equations of
+The form $e^z = w$ have infinitely many solutions. Always include the general solution with $2k\pi$.
 :::
 
 <hr />
@@ -316,7 +316,7 @@ Express $z = -\sqrt{3} + i$ in modulus-argument form and hence find $z^8$.
 <details>
 <summary>Solution</summary>
 
-$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
+$r = \sqrt{3 + 1} = 2$$\theta = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
 
 $z = 2\,e^{i5\pi/6}$.
 
@@ -335,7 +335,7 @@ $16 + 16i = 16\sqrt{2}\,e^{i\pi/4}$.
 
 $z_k = (16\sqrt{2})^{1/5}\,e^{i(\pi/4 + 2k\pi)/5} = 2^{1/2 + 3/5}\,e^{i(\pi + 8k\pi)/20} = 2^{11/10}\,e^{i(\pi + 8k\pi)/20}$
 
-for $k = 0, 1, 2, 3, 4$.
+For $k = 0, 1, 2, 3, 4$.
 
 The sum is
 $2^{11/10}\displaystyle\sum_{k=0}^{4}e^{i(\pi + 8k\pi)/20} = 2^{11/10} \cdot e^{i\pi/20}\sum_{k=0}^{4}(e^{i8\pi/20})^k$.
@@ -375,7 +375,7 @@ $\cos^4\theta = \dfrac◆LB◆3 + 4\cos 2\theta + \cos 4\theta◆RB◆◆LB◆8�
 <details>
 <summary>Solution</summary>
 
-$\cos\theta = \dfrac◆LB◆e^{i\theta} + e^{-i\theta}◆RB◆◆LB◆2◆RB◆$, so
+$\cos\theta = \dfrac◆LB◆e^{i\theta} + e^{-i\theta}◆RB◆◆LB◆2◆RB◆$So
 $\cos^4\theta = \dfrac{1}{16}(e^{i\theta} + e^{-i\theta})^4$.
 
 $= \dfrac{1}{16}(e^{4i\theta} + 4e^{2i\theta} + 6 + 4e^{-2i\theta} + e^{-4i\theta})$
@@ -395,13 +395,13 @@ $= \dfrac◆LB◆3 + 4\cos 2\theta + \cos 4\theta◆RB◆◆LB◆8◆RB◆$.
 **Theorem.** The product of all $n$-th roots of unity is $(-1)^{n-1}$.
 
 **Proof.** The $n$-th roots of unity are the roots of $z^n - 1 = 0$. By Vieta's formulas, the
-product of all $n$ roots equals the constant term (up to sign):
+Product of all $n$ roots equals the constant term (up to sign):
 
 $$\prod_{k=0}^{n-1} z_k = (-1)^n \cdot \frac{-1}{1} = (-1)^{n-1} \quad \blacksquare$$
 
 ### 6.2 Proof: conjugate root theorem for real polynomials
 
-**Theorem.** If $p(z)$ is a polynomial with real coefficients and $p(\alpha) = 0$, then
+**Theorem.** If $p(z)$ is a polynomial with real coefficients and $p(\alpha) = 0$Then
 $p(\overline{\alpha}) = 0$.
 
 **Proof.** Let $p(z) = a_n z^n + \cdots + a_1 z + a_0$ with all $a_i \in \mathbb{R}$.
@@ -418,7 +418,7 @@ $$|z_1 + z_2|^2 = (z_1 + z_2)\overline{(z_1 + z_2)} = |z_1|^2 + |z_2|^2 + z_1\ov
 
 $$= |z_1|^2 + |z_2|^2 + 2\,\mathrm{Re}(z_1\overline{z_2}) \leq |z_1|^2 + |z_2|^2 + 2|z_1||z_2| = (|z_1| + |z_2|)^2$$
 
-since $\mathrm{Re}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result.
+Since $\mathrm{Re}(w) \leq |w|$ for any complex $w$. Taking square roots gives the result.
 $\blacksquare$
 
 ---
@@ -428,14 +428,14 @@ $\blacksquare$
 :::warning warning
 
 1. **Argument range:** Always specify whether your argument is the principal value $(-\pi, \pi]$ or
-   the general value. When multiplying or dividing complex numbers, the resulting argument may fall
-   outside the principal range and must be adjusted.
+ the general value. When multiplying or dividing complex numbers, the resulting argument may fall
+ outside the principal range and must be adjusted.
 2. **Roots of negative numbers:** When finding roots of negative real numbers, the argument is $\pi$
-   (not $-\pi$), and the roots are distributed starting from angle $\pi/n$.
+ (not $-\pi$), and the roots are distributed starting from angle $\pi/n$.
 3. **Locus regions:** $|z - z_0| = r$ is a circle (boundary only). Use $\leq$ or $\geq$ for the
-   interior or exterior including the boundary. Shade carefully in Argand diagrams.
-4. **Forgetting all roots:** For $z^n = w$, there are exactly $n$ distinct roots. Do not forget to
-   include $k = 0, 1, \ldots, n-1$. :::
+ interior or exterior including the boundary. Shade carefully in Argand diagrams.
+4. **Forgetting all roots:** For $z^n = w$There are exactly $n$ distinct roots. Do not forget to
+ include $k = 0, 1, \ldots, n-1$. :::
 
 ---
 
@@ -452,7 +452,7 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 <details>
 <summary>Solution</summary>
 
-**(a)** $z_1 = \sqrt{2}\,e^{i\pi/4}$, $z_2 = 2\,e^{-i\pi/3}$.
+**(a)** $z_1 = \sqrt{2}\,e^{i\pi/4}$$z_2 = 2\,e^{-i\pi/3}$.
 
 $z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
 
@@ -470,12 +470,12 @@ $e^{i5\pi/3} = \cos\dfrac◆LB◆5\pi◆RB◆◆LB◆3◆RB◆ + i\sin\dfrac◆L
 $z = \sqrt{2}\,e^{i(\pi + 2k\pi)/4}$ for $k = 0, 1, 2, 3$.
 
 **(b)** Find the Cartesian equations of the perpendicular bisector of the line segment joining two
-consecutive roots.
+Consecutive roots.
 
 <details>
 <summary>Solution</summary>
 
-**(a)** $z^4 = -16 = 16\,e^{i\pi}$, so
+**(a)** $z^4 = -16 = 16\,e^{i\pi}$So
 $z = 16^{1/4}\,e^{i(\pi + 2k\pi)/4} = 2\,e^{i(\pi + 2k\pi)/4}$ for $k = 0, 1, 2, 3$.
 
 Note: $\sqrt{2}$ in the question is incorrect; it should be $2$ (since $16^{1/4} = 2$).
@@ -490,7 +490,7 @@ The four roots are:
 **(b)** Consecutive roots $z_0 = \sqrt{2} + i\sqrt{2}$ and $z_1 = -\sqrt{2} + i\sqrt{2}$.
 
 The midpoint is $(0, \sqrt{2})$ and the segment is horizontal, so the perpendicular bisector is the
-vertical line $x = 0$ (the imaginary axis).
+Vertical line $x = 0$ (the imaginary axis).
 
 </details>
 
@@ -517,14 +517,14 @@ $x^2 + y^2 + 4y = \dfrac{17}{3}$
 
 $x^2 + (y + 2)^2 = \dfrac{17}{3} + 4 = \dfrac{29}{3}$
 
-Centre: $(0, -2)$, radius: $\sqrt{29/3}$.
+Centre: $(0, -2)$Radius: $\sqrt{29/3}$.
 
 **(b)** $|z|$ is the distance from the origin to a point on the circle.
 
 Distance from origin to centre: $\sqrt{0^2 + (-2)^2} = 2$.
 
-Minimum $|z| = 2 - \sqrt{29/3}$. Since $\sqrt{29/3} \approx 3.11 > 2$, this is negative, so the
-minimum is $|\text{radius} - d| = \sqrt{29/3} - 2$.
+Minimum $|z| = 2 - \sqrt{29/3}$. Since $\sqrt{29/3} \approx 3.11 > 2$This is negative, so the
+Minimum is $|\text{radius} - d| = \sqrt{29/3} - 2$.
 
 Maximum $|z| = 2 + \sqrt{29/3}$.
 
@@ -537,14 +537,14 @@ Maximum $|z| = 2 + \sqrt{29/3}$.
 ### Example 9.1: Roots of unity and polynomial factorisation
 
 **Problem.** The sixth roots of unity are the roots of $z^6 - 1 = 0$. Show that $z^6 - 1$ can be
-factorised as $(z-1)(z+1)(z^2-z+1)(z^2+z+1)$.
+Factorised as $(z-1)(z+1)(z^2-z+1)(z^2+z+1)$.
 
 **Solution.** The sixth roots of unity are $e^{ik\pi/3}$ for $k = 0, 1, \ldots, 5$:
 
-$k = 0$: $z = 1$, factor $(z - 1)$. $k = 3$: $z = e^{i\pi} = -1$, factor $(z + 1)$. $k = 1, 5$:
-$z = e^{i\pi/3}$ and $z = e^{i5\pi/3}$, which are conjugate. Their combined factor is
-$z^2 - 2\cos(\pi/3)z + 1 = z^2 - z + 1$. $k = 2, 4$: $z = e^{i2\pi/3}$ and $z = e^{i4\pi/3}$, which
-are conjugate. Their combined factor is $z^2 - 2\cos(2\pi/3)z + 1 = z^2 + z + 1$.
+$k = 0$: $z = 1$Factor $(z - 1)$. $k = 3$: $z = e^{i\pi} = -1$Factor $(z + 1)$. $k = 1, 5$:
+$z = e^{i\pi/3}$ and $z = e^{i5\pi/3}$Which are conjugate. Their combined factor is
+$z^2 - 2\cos(\pi/3)z + 1 = z^2 - z + 1$. $k = 2, 4$: $z = e^{i2\pi/3}$ and $z = e^{i4\pi/3}$Which
+Are conjugate. Their combined factor is $z^2 - 2\cos(2\pi/3)z + 1 = z^2 + z + 1$.
 
 Therefore $z^6 - 1 = (z-1)(z+1)(z^2 - z + 1)(z^2 + z + 1)$. $\blacksquare$
 
@@ -579,7 +579,7 @@ The constraint $0 \leq \arg(z - i) \leq \pi/4$ means the region between the posi
 $i$) and the line at $45^\circ$ (from $i$).
 
 The intersection of the disc with this sector gives $R$. The line $\arg(z - i) = \pi/4$ is the ray
-from $i$ along the direction $(1, 1)$, which has Cartesian equation $y - 1 = x$, i.e., $y = x + 1$.
+From $i$ along the direction $(1, 1)$Which has Cartesian equation $y - 1 = x$I.e., $y = x + 1$.
 
 The disc boundary $(x)^2 + (y - 3)^2 = 4$ intersects $y = x + 1$ at:
 
@@ -598,7 +598,7 @@ $$w = \frac{2 + iy + 1}{2 + iy - 1} = \frac{3 + iy}{1 + iy} = \frac{(3 + iy)(1 -
 
 So $u = \dfrac{3 + y^2}{1 + y^2}$ and $v = \dfrac{-2y}{1 + y^2}$.
 
-Note that $u = 1 + \dfrac{2}{1 + y^2}$, so $u \geq 1$ (since $1 + y^2 \geq 1$).
+Note that $u = 1 + \dfrac{2}{1 + y^2}$So $u \geq 1$ (since $1 + y^2 \geq 1$).
 
 Also $u - 1 = \dfrac{2}{1 + y^2}$ and $v^2 = \dfrac{4y^2}{(1+y^2)^2} = \dfrac{4y^2}{(1+y^2)^2}$.
 
@@ -606,27 +606,27 @@ $$v^2 = (u-1)\cdot\frac{2y^2}{1+y^2}$$
 
 From $v = \dfrac{-2y}{1+y^2}$: $v^2 = \dfrac{4y^2}{(1+y^2)^2}$.
 
-Since $u - 1 = \dfrac{2}{1+y^2}$: $(u-1)(1+y^2) = 2$, so $1+y^2 = \dfrac{2}{u-1}$.
+Since $u - 1 = \dfrac{2}{1+y^2}$: $(u-1)(1+y^2) = 2$So $1+y^2 = \dfrac{2}{u-1}$.
 
 $$v^2 = \frac{4y^2}{(1+y^2)^2} = \frac◆LB◆4\!\left(\frac{2}{u-1} - 1\right)◆RB◆◆LB◆\frac{4}{(u-1)^2}◆RB◆ = \frac◆LB◆\frac{8 - 2(u-1)}{u-1}◆RB◆◆LB◆\frac{4}{(u-1)^2}◆RB◆ = \frac{(10 - 2u)(u-1)}{4} = \frac{(5-u)(u-1)}{2}$$
 
-The image is the arc of the circle defined by $2v^2 = (5-u)(u-1)$ for $u \geq 1$, which is a circle
-with centre $(3, 0)$ and radius $2$ in the $w$-plane.
+The image is the arc of the circle defined by $2v^2 = (5-u)(u-1)$ for $u \geq 1$Which is a circle
+With centre $(3, 0)$ and radius $2$ in the $w$-plane.
 
 ### Example 9.5: Solving $z^n = w$ with non-trivial arguments
 
 **Problem.** Find all solutions to $z^5 = 4\sqrt{2}(1 + i)$.
 
-**Solution.** $1 + i = \sqrt{2}\,e^{i\pi/4}$, so $4\sqrt{2}(1 + i) = 8\,e^{i\pi/4}$.
+**Solution.** $1 + i = \sqrt{2}\,e^{i\pi/4}$So $4\sqrt{2}(1 + i) = 8\,e^{i\pi/4}$.
 
 $$z_k = 8^{1/5}\,e^{i(\pi/4 + 2k\pi)/5} = 2^{3/5}\,e^{i(\pi + 8k\pi)/20}, \quad k = 0, 1, 2, 3, 4$$
 
-The five roots lie on a circle of radius $2^{3/5}$, equally spaced starting from angle $\pi/20$.
+The five roots lie on a circle of radius $2^{3/5}$Equally spaced starting from angle $\pi/20$.
 
 ### Example 9.6: Complex conjugate roots and polynomial equations
 
 **Problem.** The cubic equation $z^3 + az^2 + bz + 12 = 0$ has a root $z = 1 + 2i$ where $a, b$ are
-real. Find $a$, $b$, and all roots.
+Real. Find $a$$b$And all roots.
 
 **Solution.** Since $a, b$ are real, the conjugate $1 - 2i$ is also a root.
 
@@ -638,33 +638,33 @@ $$z^3 + az^2 + bz + 12 = (z^2 - 2z + 5)(z - c)$$
 
 Expanding: $z^3 - cz^2 - 2z^2 + 2cz + 5z - 5c = z^3 + (-c-2)z^2 + (2c+5)z - 5c$.
 
-Comparing coefficients: $-c - 2 = a$, $2c + 5 = b$, $-5c = 12$, so $c = -12/5$.
+Comparing coefficients: $-c - 2 = a$$2c + 5 = b$$-5c = 12$So $c = -12/5$.
 
-$a = 12/5 - 2 = 2/5$, $b = -24/5 + 5 = 1/5$.
+$a = 12/5 - 2 = 2/5$$b = -24/5 + 5 = 1/5$.
 
 The third root is $z = c = -12/5$.
 
-Check: $(2/5)(-12/5)(12/5) \neq -12$ ... let me recheck. Product of roots
-$= (1+2i)(1-2i)(-12/5) = 5 \times (-12/5) = -12$. Constant term $= -12$, so product
-$= -(-12)/1 = 12$. Wait, the product should be $-d/a = -12/1 = -12$, but we got $12$. The equation
-is $z^3 + az^2 + bz + 12 = 0$, so $d = 12$ and $\alpha\beta\gamma = -12/1 = -12$. But
+Check: $(2/5)(-12/5)(12/5) \neq -12$ ... Let me recheck. Product of roots
+$= (1+2i)(1-2i)(-12/5) = 5 \times (-12/5) = -12$. Constant term $= -12$So product
+$= -(-12)/1 = 12$. Wait, the product should be $-d/a = -12/1 = -12$But we got $12$. The equation
+Is $z^3 + az^2 + bz + 12 = 0$So $d = 12$ and $\alpha\beta\gamma = -12/1 = -12$. But
 $5 \times (-12/5) = -12$. Correct. $\blacksquare$
 
 ### Example 9.7: Geometry in the Argand diagram
 
-**Problem.** The points $A$, $B$, $C$ in the Argand diagram represent the complex numbers
-$z_A = 2 + i$, $z_B = 4 + 5i$, $z_C = 6 + 2i$. Show that triangle $ABC$ is isosceles and find its
-area.
+**Problem.** The points $A$$B$$C$ in the Argand diagram represent the complex numbers
+$z_A = 2 + i$$z_B = 4 + 5i$$z_C = 6 + 2i$. Show that triangle $ABC$ is isosceles and find its
+Area.
 
-**Solution.** $\overrightarrow{AB} = z_B - z_A = 2 + 4i$,
+**Solution.** $\overrightarrow{AB} = z_B - z_A = 2 + 4i$
 $|\overrightarrow{AB}| = \sqrt{4 + 16} = 2\sqrt{5}$.
 
-$\overrightarrow{BC} = z_C - z_B = 2 - 3i$, $|\overrightarrow{BC}| = \sqrt{4 + 9} = \sqrt{13}$.
+$\overrightarrow{BC} = z_C - z_B = 2 - 3i$$|\overrightarrow{BC}| = \sqrt{4 + 9} = \sqrt{13}$.
 
-$\overrightarrow{AC} = z_C - z_A = 4 + i$, $|\overrightarrow{AC}| = \sqrt{16 + 1} = \sqrt{17}$.
+$\overrightarrow{AC} = z_C - z_A = 4 + i$$|\overrightarrow{AC}| = \sqrt{16 + 1} = \sqrt{17}$.
 
 All three sides have different lengths, so the triangle is **scalene**, not isosceles. (If the
-question intended different points, the same method applies.)
+Question intended different points, the same method applies.)
 
 The area is $\dfrac{1}{2}|\mathrm{Im}(\overline{z_{AB}} \cdot z_{AC})|$:
 
@@ -680,13 +680,13 @@ $\text{Area} = \dfrac{1}{2}|-14| = 7$.
 
 The matrix representation of complex numbers:
 $a + bi \longleftrightarrow \begin{pmatrix}a & -b \\ b & a\end{pmatrix}$. Multiplication of complex
-numbers corresponds to matrix multiplication. See
+Numbers corresponds to matrix multiplication. See
 [Matrices and Transformations](/docs/alevel/further-maths/pure/matrices-and-transformations-extended).
 
 ### 10.2 Complex numbers and polar coordinates
 
 Modulus-argument form is equivalent to polar coordinates. The polar area formula applies to curves
-described by $|z - z_0| = r(\theta)$. See
+Described by $|z - z_0| = r(\theta)$. See
 [Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/polar-coordinates).
 
 ### 10.3 Euler's formula and Maclaurin series
@@ -766,7 +766,7 @@ $\cos(\pi/6) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ and $\sin(\pi/6)
 Let $\cos(\pi/12) + i\sin(\pi/12) = a + bi$ where $a > 0$. Then
 $(a + bi)^2 = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \dfrac{i}{2}$.
 
-$a^2 - b^2 = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ and $2ab = \dfrac{1}{2}$, so $b = \dfrac{1}{4a}$.
+$a^2 - b^2 = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$ and $2ab = \dfrac{1}{2}$So $b = \dfrac{1}{4a}$.
 
 $a^2 - \dfrac{1}{16a^2} = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
 
@@ -796,7 +796,7 @@ This is the sum of the $n$-th roots of $-1$ (not unity).
 **Base case ($n = 1$):** Sum $= e^{i\pi} = -1 \neq 0$.
 
 Let us reconsider: $\displaystyle\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n}$ is a geometric series with first
-term $e^{i\pi/n}$ and ratio $e^{i2\pi/n}$.
+Term $e^{i\pi/n}$ and ratio $e^{i2\pi/n}$.
 
 $$\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n} = e^{i\pi/n}\cdot\frac◆LB◆1 - e^{i2\pi}◆RB◆◆LB◆1 - e^{i2\pi/n}◆RB◆ = e^{i\pi/n}\cdot\frac◆LB◆1 - 1◆RB◆◆LB◆1 - e^{i2\pi/n}◆RB◆ = 0 \quad \blacksquare$$
 
@@ -806,13 +806,13 @@ $$\sum_{k=0}^{n-1}e^{i(2k+1)\pi/n} = e^{i\pi/n}\cdot\frac◆LB◆1 - e^{i2\pi}�
 
 ### Question 12
 
-Given $z_1 = 2 + 3i$ and $z_2 = 1 - i$, find the complex number $z$ such that $z_1$, $z$, $z_2$ form
-an equilateral triangle, giving both possible values of $z$.
+Given $z_1 = 2 + 3i$ and $z_2 = 1 - i$Find the complex number $z$ such that $z_1$$z$$z_2$ form
+An equilateral triangle, giving both possible values of $z$.
 
 <details>
 <summary>Solution</summary>
 
-If $z_1$, $z$, $z_2$ form an equilateral triangle, then $z$ is obtained by rotating $z_2 - z_1$ by
+If $z_1$$z$$z_2$ form an equilateral triangle, then $z$ is obtained by rotating $z_2 - z_1$ by
 $\pm\pi/3$ about $z_1$:
 
 $$z = z_1 + (z_2 - z_1)\,e^{\pm i\pi/3}$$
@@ -871,7 +871,7 @@ This is a circle with centre $(1, -2)$ and radius $3$.
 **Problem.** $z$ satisfies $|z-3i| = 2$. Find the minimum value of $|z|$.
 
 **Solution.** The locus is a circle centred at $3i$ with radius $2$. The minimum distance from the
-origin to any point on this circle is:
+Origin to any point on this circle is:
 
 $$|3i| - 2 = 3 - 2 = \boxed{1}$$
 
@@ -891,11 +891,11 @@ $\boxed{x = -1,\; x = -1+2i,\; x = -1-2i}$
 
 ### Example 12.6: Transformation — inversion
 
-**Problem.** Under the transformation $w = \dfrac{1}{z}$, find the image of the line $x = 2$.
+**Problem.** Under the transformation $w = \dfrac{1}{z}$Find the image of the line $x = 2$.
 
-**Solution.** $z = 2 + iy$, $w = u + iv = \dfrac{1}{2+iy} = \dfrac{2-iy}{4+y^2}$.
+**Solution.** $z = 2 + iy$$w = u + iv = \dfrac{1}{2+iy} = \dfrac{2-iy}{4+y^2}$.
 
-$u = \dfrac{2}{4+y^2}$, $v = \dfrac{-y}{4+y^2}$.
+$u = \dfrac{2}{4+y^2}$$v = \dfrac{-y}{4+y^2}$.
 
 Note: $u^2 + v^2 = \dfrac{4+y^2}{(4+y^2)^2} = \dfrac{1}{4+y^2} = \dfrac{u}{2}$.
 
@@ -932,8 +932,8 @@ $z_k = e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$.
 
 $|z_k| = 1$ for all $k$ (on the unit circle).
 
-The angular separation between consecutive roots is $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$, which is
-constant.
+The angular separation between consecutive roots is $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$Which is
+Constant.
 
 Therefore the roots are the vertices of a regular $n$-gon inscribed in the unit circle.
 $\blacksquare$
@@ -1028,9 +1028,9 @@ Let $z = 2 + iy$.
 
 $w = \dfrac{1+iy}{3+iy} = \dfrac{(1+iy)(3-iy)}{9+y^2} = \dfrac{3+y^2+i(3y-y)}{9+y^2} = \dfrac{3+y^2}{9+y^2} + i\dfrac{2y}{9+y^2}$.
 
-Let $w = u+iv$: $u = \dfrac{3+y^2}{9+y^2}$, $v = \dfrac{2y}{9+y^2}$.
+Let $w = u+iv$: $u = \dfrac{3+y^2}{9+y^2}$$v = \dfrac{2y}{9+y^2}$.
 
-Eliminating $y$: note that $u = 1 - \dfrac{6}{9+y^2}$, so $9+y^2 = \dfrac{6}{1-u}$.
+Eliminating $y$: note that $u = 1 - \dfrac{6}{9+y^2}$So $9+y^2 = \dfrac{6}{1-u}$.
 
 $v^2 = \dfrac{4y^2}{(9+y^2)^2}$. Substituting
 $y^2 = \dfrac{6}{1-u}-9 = \dfrac{6-9+9u}{1-u} = \dfrac{9u-3}{1-u}$:
@@ -1045,15 +1045,15 @@ This is a circle (after simplification).
 
 ### 15.1 De Moivre and roots of unity — applications
 
-The $n$th roots of unity are equally spaced on the unit circle and have important properties:
+The $n$Th roots of unity are equally spaced on the unit circle and have important properties:
 
 - They form a cyclic group under multiplication
-- The sum of all $n$th roots is zero: $\displaystyle\sum_{k=0}^{n-1} e^{2\pi ik/n} = 0$
+- The sum of all $n$Th roots is zero: $\displaystyle\sum_{k=0}^{n-1} e^{2\pi ik/n} = 0$
 - Products of roots of unity are also roots of unity
 
 ### 15.2 Complex logarithms
 
-$\ln z = \ln|z| + i\arg z$, where $\arg z$ is multi-valued.
+$\ln z = \ln|z| + i\arg z$Where $\arg z$ is multi-valued.
 
 $\ln z = \ln|z| + i(\theta + 2k\pi)$ for $k \in \mathbb{Z}$.
 
@@ -1065,7 +1065,7 @@ $e^{i\theta} + e^{-i\theta} = 2\cos\theta$
 
 $e^{i\theta} - e^{-i\theta} = 2i\sin\theta$
 
-$\cos\theta = \dfrac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆$,
+$\cos\theta = \dfrac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆$
 $\sin\theta = \dfrac◆LB◆e^{i\theta}-e^{-i\theta}◆RB◆◆LB◆2i◆RB◆$
 
 ---
@@ -1085,3 +1085,7 @@ $\displaystyle\sum_{k=0}^{n-1} r^k = \frac{r^n - 1}{r - 1} = \frac◆LB◆e^{2\p
 $\blacksquare$
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

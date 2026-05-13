@@ -175,13 +175,13 @@ class LifecycleTest {
 By default, JUnit 5 creates a new test instance for each test method (PER_METHOD lifecycle).
 Use `@TestInstance(Lifecycle.PER_CLASS)` to create a single instance shared across all test methods.
 This allows non-static `@BeforeAll`/`@AfterAll` methods, but tests share instance state, which can
-cause interference.
+Cause interference.
 :::
 
 ### Parameterized Tests
 
 Parameterized tests run the same test logic with different inputs, eliminating test method
-proliferation.
+Proliferation.
 
 ```java
 import org.junit.jupiter.params.*;
@@ -259,7 +259,7 @@ class ParameterizedTestExamples {
 ## Mockito
 
 Mockito is the dominant mocking framework for Java. It creates mock objects (proxies) that return
-configurable values and verify interactions.
+Configurable values and verify interactions.
 
 ### Mocking and Stubbing
 
@@ -401,8 +401,8 @@ System.out.println(spyList.get(0));   // "real" (real method called)
 
 :::warning
 When spying, use `doReturn().when(spy)` instead of `when(spy).thenReturn()`. The latter
-calls the real method to get the return value before stubbing, which can have side effects or throw
-exceptions.
+Calls the real method to get the return value before stubbing, which can have side effects or throw
+Exceptions.
 :::
 
 ## Integration Testing
@@ -439,7 +439,7 @@ class OrderServiceIntegrationTest {
 ### Testcontainers
 
 Testcontainers provides lightweight, throwaway database, message broker, and service containers for
-integration tests:
+Integration tests:
 
 ```java
 import org.testcontainers.containers.PostgreSQLContainer;
@@ -551,7 +551,7 @@ void expiredSubscriptionDeniesAccess() {
 
 ### Test Fixtures
 
-Shared test data and setup using `@BeforeAll`, `@BeforeEach`, or test utility classes:
+Shared test data and setup using `@BeforeAll``@BeforeEach`Or test utility classes:
 
 ```java
 class OrderProcessorTest {
@@ -607,7 +607,7 @@ void shouldActivateUser() {
 ### JaCoCo
 
 JaCoCo (Java Code Coverage) is the standard coverage tool. It instruments bytecode to track which
-lines, branches, and methods are exercised by tests.
+Lines, branches, and methods are exercised by tests.
 
 **Gradle configuration:**
 
@@ -690,19 +690,19 @@ tasks.check {
 
 ### Coverage Metrics
 
-| Metric                   | Description                                           |
+| Metric | Description |
 | ------------------------ | ----------------------------------------------------- |
-| **Line coverage**        | Percentage of source lines exercised by tests         |
-| **Branch coverage**      | Percentage of `if`/`else` branches taken              |
-| **Method coverage**      | Percentage of methods called                          |
-| **Class coverage**       | Percentage of classes with at least one method called |
-| **Instruction coverage** | Percentage of bytecode instructions executed          |
+| **Line coverage** | Percentage of source lines exercised by tests |
+| **Branch coverage** | Percentage of `if`/`else` branches taken |
+| **Method coverage** | Percentage of methods called |
+| **Class coverage** | Percentage of classes with at least one method called |
+| **Instruction coverage** | Percentage of bytecode instructions executed |
 
 :::warning
 100% coverage does not mean bug-free code. Coverage measures execution paths, not
-correctness. A test that calls a method with wrong inputs and asserts wrong values still contributes
-to coverage. Focus on meaningful tests, not the coverage number. Use coverage as a tool to find
-untested code, not as a target to gamify.
+Correctness. A test that calls a method with wrong inputs and asserts wrong values still contributes
+To coverage. Focus on meaningful tests, not the coverage number. Use coverage as a tool to find
+Untested code, not as a target to gamify.
 :::
 
 ## Flaky Tests
@@ -710,15 +710,15 @@ untested code, not as a target to gamify.
 ### Causes of Flakiness
 
 1. **Non-deterministic order** — tests that depend on execution order, hash map iteration order, or
-   `HashSet` ordering.
+ `HashSet` ordering.
 2. **Time-dependent behavior** — tests that depend on wall-clock time, sleep durations, or timeout
-   thresholds.
-3. **Concurrency** — tests that use threads, `CompletableFuture`, or async operations without proper
-   synchronization.
+ thresholds.
+3. **Concurrency** — tests that use threads, `CompletableFuture`Or async operations without proper
+ synchronization.
 4. **External dependencies** — tests that depend on databases, network services, or file system
-   state.
+ state.
 5. **Non-deterministic random** — tests that use `Math.random()` or `ThreadLocalRandom` without
-   seeds.
+ seeds.
 
 ### Strategies for Reliable Tests
 
@@ -768,7 +768,7 @@ class IsolatedTest {
 ### Retry Mechanism
 
 JUnit 5 does not have a built-in retry mechanism. Use the `junit-pioneer` library or implement a
-custom extension:
+Custom extension:
 
 ```java
 // Using junit-pioneer
@@ -914,3 +914,10 @@ void shouldWriteToTempFile() throws IOException {
 }
 ```
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

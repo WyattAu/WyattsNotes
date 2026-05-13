@@ -27,9 +27,9 @@ hide_table_of_contents: true
 
 **(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is prioritised for $u$.
 
-Set $u = \ln x$, $\frac{dv}{dx} = x^3$.
+Set $u = \ln x$$\frac{dv}{dx} = x^3$.
 
-$du = \frac{1}{x}\, dx$, $v = \frac{x^4}{4}$.
+$du = \frac{1}{x}\, dx$$v = \frac{x^4}{4}$.
 
 $$\int x^3 \ln x\, dx = \frac{x^4}{4}\ln x - \int \frac{x^4}{4} \cdot \frac{1}{x}\, dx$$
 
@@ -41,7 +41,7 @@ $$= \frac{x^4}{16}(4\ln x - 1) + C$$
 
 **(b)** If the student chooses $u = x^3$ and $\frac{dv}{dx} = \ln x$:
 
-$du = 3x^2\, dx$, but $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts to find).
+$du = 3x^2\, dx$But $v = \int \ln x\, dx = x\ln x - x$ (which itself requires integration by parts to find).
 
 Then:
 
@@ -85,7 +85,7 @@ $$= \frac{3e^4}{16} - \left(-\frac{1}{16}\right) = \frac{3e^4 + 1}{16}$$
 
 **Solution:**
 
-**(a)** $u = 1 + x^2$, $du = 2x\, dx$, so $x\, dx = \frac{1}{2}\, du$.
+**(a)** $u = 1 + x^2$$du = 2x\, dx$So $x\, dx = \frac{1}{2}\, du$.
 
 When $x = 0$: $u = 1$. When $x = 1$: $u = 2$.
 
@@ -101,7 +101,7 @@ Evaluating from $x = 0$ to $x = 1$:
 
 $$\frac{1}{3}(2^{3/2}) - \frac{1}{3}(1^{3/2}) = \frac◆LB◆2\sqrt{2} - 1◆RB◆◆LB◆3◆RB◆$$
 
-This gives the same answer as part (a). Back-substitution always works because it restores the original variable, and the Fundamental Theorem of Calculus applies regardless of which variable is used. The error of forgetting limits occurs only when the student evaluates in $u$-space with the original $x$-limits (e.g., evaluating $\frac{1}{3}u^{3/2}$ from $u = 0$ to $u = 1$, which is wrong).
+This gives the same answer as part (a). Back-substitution always works because it restores the original variable, and the Fundamental Theorem of Calculus applies regardless of which variable is used. The error of forgetting limits occurs only when the student evaluates in $u$-space with the original $x$-limits (e.g., evaluating $\frac{1}{3}u^{3/2}$ from $u = 0$ to $u = 1$Which is wrong).
 
 **(c)** Correct answer: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 1 \approx 0.5708$.
 
@@ -125,7 +125,7 @@ The third student's answer is $175.2\%$ too large — a catastrophic error from 
 
 **(d)** Evaluate $\int_{-1}^{1} \frac{1}{x}\, dx$ or show that it does not exist.
 
-[Difficulty: hard. Tests the absolute value in the antiderivative of $\frac{1}{x}$, and the improper integral when the integrand has a singularity within the interval.]
+[Difficulty: hard. Tests the absolute value in the antiderivative of $\frac{1}{x}$And the improper integral when the integrand has a singularity within the interval.]
 
 **Solution:**
 
@@ -133,9 +133,9 @@ The third student's answer is $175.2\%$ too large — a catastrophic error from 
 
 The result is negative because the integrand $\frac{2}{x}$ is negative on $[-2, -1]$ (since $x \lt 0$).
 
-**(b)** The student writes $\ln x$ instead of $\ln\lvert x \rvert$. Since $x$ is negative in this interval, $\ln x$ is undefined. The correct antiderivative is $\ln\lvert x \rvert$, which is defined for $x \neq 0$.
+**(b)** The student writes $\ln x$ instead of $\ln\lvert x \rvert$. Since $x$ is negative in this interval, $\ln x$ is undefined. The correct antiderivative is $\ln\lvert x \rvert$Which is defined for $x \neq 0$.
 
-The correct answer is $-2\ln 2$, as computed in part (a).
+The correct answer is $-2\ln 2$As computed in part (a).
 
 **(c)** Note that $f(x) = \frac{x}{x^2+1}$ is an odd function: $f(-x) = \frac{-x}{x^2+1} = -f(x)$.
 
@@ -199,17 +199,17 @@ $$= \int_0^3 t\sqrt{t^2 - 4t + 8}\, dt$$
 
 Completing the square: $t^2 - 4t + 8 = (t-2)^2 + 4$.
 
-Use the substitution $u = t^2 - 4t + 8$, $du = (2t - 4)\, dt$.
+Use the substitution $u = t^2 - 4t + 8$$du = (2t - 4)\, dt$.
 
-Then $t\, dt = \frac{du + 4\, dt}{2}$, which is not directly useful. Instead, write:
+Then $t\, dt = \frac{du + 4\, dt}{2}$Which is not directly useful. Instead, write:
 
 $$\int_0^3 t\sqrt{(t-2)^2 + 4}\, dt$$
 
-Let $w = t - 2$, so $t = w + 2$, $dt = dw$. When $t = 0$: $w = -2$. When $t = 3$: $w = 1$.
+Let $w = t - 2$So $t = w + 2$$dt = dw$. When $t = 0$: $w = -2$. When $t = 3$: $w = 1$.
 
 $$= \int_{-2}^{1} (w+2)\sqrt{w^2 + 4}\, dw = \int_{-2}^{1} w\sqrt{w^2+4}\, dw + 2\int_{-2}^{1}\sqrt{w^2+4}\, dw$$
 
-First integral: substitute $u = w^2 + 4$, $du = 2w\, dw$.
+First integral: substitute $u = w^2 + 4$$du = 2w\, dw$.
 
 $$\int_{-2}^{1} w\sqrt{w^2+4}\, dw = \frac{1}{2}\int_{8}^{5}\sqrt{u}\, du = \frac{1}{2}\left[\frac{2}{3}u^{3/2}\right]_8^5 = \frac{1}{3}(5\sqrt{5} - 16\sqrt{2})$$
 
@@ -251,7 +251,7 @@ $$\int \sin^2 x\, dx = \int \frac◆LB◆1 - \cos 2x◆RB◆◆LB◆2◆RB◆\, 
 
 **(b)** $\int_0^{\pi} \sin^2 x\, dx = \left[\frac{1}{2}x - \frac{1}{4}\sin 2x\right]_0^{\pi} = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 0 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
-Geometrically, this is the area between the curve $y = \sin^2 x$ and the $x$-axis from $x = 0$ to $x = \pi$. Since $\sin^2 x \geq 0$, the area equals the integral. The result $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ equals the area of a semicircle of radius 1, which is a coincidence related to the fact that $\sin^2 x$ and $\cos^2 x$ each average to $\frac{1}{2}$ over a full period.
+Geometrically, this is the area between the curve $y = \sin^2 x$ and the $x$-axis from $x = 0$ to $x = \pi$. Since $\sin^2 x \geq 0$The area equals the integral. The result $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ equals the area of a semicircle of radius 1, which is a coincidence related to the fact that $\sin^2 x$ and $\cos^2 x$ each average to $\frac{1}{2}$ over a full period.
 
 **(c)** $\sin^2 x\cos^2 x = \frac{1}{4}\sin^2 2x = \frac{1}{4} \cdot \frac◆LB◆1 - \cos 4x◆RB◆◆LB◆2◆RB◆ = \frac{1}{8}(1 - \cos 4x)$.
 
@@ -275,7 +275,7 @@ A student claims that $\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, d
 
 **(a)** Verify this result by differentiation.
 
-**(b)** Find the integral $\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ using the substitution $u = \sqrt{x+1}$, and confirm the student's answer.
+**(b)** Find the integral $\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ using the substitution $u = \sqrt{x+1}$And confirm the student's answer.
 
 **(c)** Hence evaluate $\int_0^3 \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ exactly.
 
@@ -297,7 +297,7 @@ $$= \frac{2}{3} \cdot \frac{2(x+1) + (x-2)}{2(x+1)^{1/2}} = \frac{2}{3} \cdot \f
 
 Confirmed.
 
-**(b)** $u = \sqrt{x+1}$, so $u^2 = x + 1$, giving $x = u^2 - 1$ and $dx = 2u\, du$.
+**(b)** $u = \sqrt{x+1}$So $u^2 = x + 1$Giving $x = u^2 - 1$ and $dx = 2u\, du$.
 
 $$\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \int \frac{u^2-1}{u} \cdot 2u\, du = 2\int(u^2 - 1)\, du$$
 

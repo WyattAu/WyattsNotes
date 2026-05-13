@@ -177,7 +177,7 @@ resolvectl status eth0
 ### dnsmasq
 
 `dnsmasq` is a lightweight DNS forwarder, DHCP server, and TFTP server. It is commonly used as a
-local DNS cache and for small network management.
+Local DNS cache and for small network management.
 
 ```ini
 # /etc/dnsmasq.conf
@@ -824,3 +824,11 @@ dig @10.0.0.1 db.internal
 # The internal resolver does not have the zone, or the
 # external resolver is being queried instead
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

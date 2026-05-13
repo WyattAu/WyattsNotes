@@ -6,53 +6,53 @@ slug: github-actions-patterns
 ## What is GitHub Actions
 
 GitHub Actions is an event-driven continuous integration and continuous deployment (CI/CD) platform
-embedded directly into GitHub repositories. Workflows are defined as YAML files stored in
+Embedded directly into GitHub repositories. Workflows are defined as YAML files stored in
 `.github/workflows/` and are triggered by repository events such as pushes, pull requests, issue
-comments, scheduled cron expressions, and manual dispatches.
+Comments, scheduled cron expressions, and manual dispatches.
 
 ### Core Concepts
 
-| Concept      | Description                                                                                                              |
+| Concept | Description |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| **Workflow** | An automated process defined in a YAML file under `.github/workflows/`                                                   |
-| **Event**    | A specific activity that triggers a workflow run (e.g., `push`, `pull_request`, `schedule`)                              |
-| **Job**      | A set of steps executed on the same runner; jobs run in parallel unless linked with `needs`                              |
-| **Step**     | An individual task within a job — either a `run` (shell command) or `uses` (action reference)                            |
-| **Action**   | A reusable unit of code packaged for use in workflows, sourced from the Marketplace or custom                            |
-| **Runner**   | The server that executes the workflow — GitHub-hosted (`ubuntu-latest`, `windows-latest`, `macos-latest`) or self-hosted |
-| **Artifact** | A file or collection of files produced during a workflow run, persisted after the run completes                          |
-| **Secret**   | An encrypted environment variable accessible only within the workflow context                                            |
+| **Workflow** | An automated process defined in a YAML file under `.github/workflows/` |
+| **Event** | A specific activity that triggers a workflow run (e.g., `push``pull_request``schedule`) |
+| **Job** | A set of steps executed on the same runner; jobs run in parallel unless linked with `needs` |
+| **Step** | An individual task within a job — either a `run` (shell command) or `uses` (action reference) |
+| **Action** | A reusable unit of code packaged for use in workflows, sourced from the Marketplace or custom |
+| **Runner** | The server that executes the workflow — GitHub-hosted (`ubuntu-latest``windows-latest``macos-latest`) or self-hosted |
+| **Artifact** | A file or collection of files produced during a workflow run, persisted after the run completes |
+| **Secret** | An encrypted environment variable accessible only within the workflow context |
 
 ### Runner Taxonomy
 
 GitHub-hosted runners are ephemeral virtual machines provisioned per job and destroyed after
-completion. They come in three operating system families:
+Completion. They come in three operating system families:
 
-| Runner identifier  | OS                  | Architecture | Notes                            |
+| Runner identifier | OS | Architecture | Notes |
 | ------------------ | ------------------- | ------------ | -------------------------------- |
-| `ubuntu-latest`    | Ubuntu 24.04 LTS    | x64          | Most common; fastest startup     |
-| `ubuntu-24.04-arm` | Ubuntu 24.04        | arm64        | For ARM-native workloads         |
-| `windows-latest`   | Windows Server 2022 | x64          | Uses PowerShell as default shell |
-| `macos-latest`     | macOS 14 (Sonoma)   | arm64 (M1)   | 10× billing multiplier vs ubuntu |
-| `macos-13`         | macOS Ventura       | x64          | Intel-based macOS                |
+| `ubuntu-latest` | Ubuntu 24.04 LTS | x64 | Most common; fastest startup |
+| `ubuntu-24.04-arm` | Ubuntu 24.04 | arm64 | For ARM-native workloads |
+| `windows-latest` | Windows Server 2022 | x64 | Uses PowerShell as default shell |
+| `macos-latest` | macOS 14 (Sonoma) | arm64 (M1) | 10× billing multiplier vs ubuntu |
+| `macos-13` | macOS Ventura | x64 | Intel-based macOS |
 
 Self-hosted runners allow execution on custom infrastructure and are not subject to the 6-hour job
-timeout or IP egress restrictions, but require the operator to manage security, isolation, and
-cleanup.
+Timeout or IP egress restrictions, but require the operator to manage security, isolation, and
+Cleanup.
 
 ### Actions Marketplace
 
 The [Actions Marketplace](https://github.com/marketplace?type=actions) provides community-maintained
-and official actions. First-party actions live under the `actions/` organization (e.g.,
-`actions/checkout@v4`, `actions/cache@v4`, `actions/upload-artifact@v4`). Third-party actions should
-be audited for supply-chain security before adoption.
+And official actions. First-party actions live under the `actions/` organization (e.g.,
+`actions/checkout@v4``actions/cache@v4``actions/upload-artifact@v4`). Third-party actions should
+Be audited for supply-chain security before adoption.
 
 ---
 
 ## Basic Workflow Structure
 
 Every workflow file begins with `name` and `on` at the top level, followed by `jobs`. Each job has
-an identifier, runs on a `runs-on` runner, and contains an ordered list of `steps`.
+An identifier, runs on a `runs-on` runner, and contains an ordered list of `steps`.
 
 ### Minimal Anatomy
 
@@ -74,24 +74,24 @@ jobs:
 ### Step Anatomy
 
 A step is either an action reference (`uses`) or a shell command (`run`). The two are mutually
-exclusive within a single step.
+Exclusive within a single step.
 
-| Key                 | Purpose                                                                                    |
+| Key | Purpose |
 | ------------------- | ------------------------------------------------------------------------------------------ |
-| `name`              | Human-readable label displayed in the workflow run log                                     |
-| `uses`              | Reference to an action (`owner/repo@ref` or `./local/path`)                                |
-| `run`               | Shell command to execute; shell defaults to `bash` on Linux/macOS, `pwsh` on Windows       |
-| `with`              | Input parameters passed to an `uses` action                                                |
-| `env`               | Environment variables scoped to the step                                                   |
-| `if`                | Conditional expression; step is skipped when the expression evaluates to `false`           |
-| `id`                | Unique identifier so subsequent steps can reference outputs via `steps.&lt;id&gt;.outputs` |
-| `timeout-minutes`   | Maximum time before the step is killed (overrides job-level timeout)                       |
-| `continue-on-error` | If `true`, the workflow treats a failure in this step as a success                         |
+| `name` | Human-readable label displayed in the workflow run log |
+| `uses` | Reference to an action (`owner/repo@ref` or `./local/path`) |
+| `run` | Shell command to execute; shell defaults to `bash` on Linux/macOS, `pwsh` on Windows |
+| `with` | Input parameters passed to an `uses` action |
+| `env` | Environment variables scoped to the step |
+| `if` | Conditional expression; step is skipped when the expression evaluates to `false` |
+| `id` | Unique identifier so subsequent steps can reference outputs via `steps.&lt;id&gt;.outputs` |
+| `timeout-minutes` | Maximum time before the step is killed (overrides job-level timeout) |
+| `continue-on-error` | If `true`The workflow treats a failure in this step as a success |
 
 ### Environment Variables
 
-Variables can be set at four levels of decreasing precedence: step-level `env`, job-level `env`,
-workflow-level `env`, and runner-level environment.
+Variables can be set at four levels of decreasing precedence: step-level `env`Job-level `env`
+Workflow-level `env`And runner-level environment.
 
 ```yaml
 name: Environment Variables Demo
@@ -168,7 +168,7 @@ jobs:
 ## Trigger Patterns
 
 The `on` key defines what events activate the workflow. Triggers can be filtered by branch, tag,
-path, file type, or event type.
+Path, file type, or event type.
 
 ### Push and Pull Request Triggers
 
@@ -184,12 +184,12 @@ on:
 ```
 
 The `synchronize` type fires when the source branch of a pull request is updated (new commits
-pushed). This is critical for ensuring that CI re-runs when additional commits are added.
+Pushed). This is critical for ensuring that CI re-runs when additional commits are added.
 
 ### Path Filtering
 
 Path filters limit execution to changes within specific directories or file patterns. A workflow
-with `paths` triggers only when at least one modified file matches the filter.
+With `paths` triggers only when at least one modified file matches the filter.
 
 ```yaml
 on:
@@ -208,8 +208,8 @@ on:
 ```
 
 Path filtering operates on the **full diff** against the base ref. On a pull request, the base is
-the target branch. On a push, the base is the previous commit on the same branch. For the first
-commit on a new branch, all files are considered changed.
+The target branch. On a push, the base is the previous commit on the same branch. For the first
+Commit on a new branch, all files are considered changed.
 
 ### Scheduled Triggers (Cron)
 
@@ -221,9 +221,9 @@ on:
 ```
 
 Cron syntax follows POSIX: `minute hour day-of-month month day-of-week`. GitHub Actions cron is not
-guaranteed to run at the exact minute — scheduled workflows are queued and may be delayed under
-heavy load. If a scheduled run is skipped due to infrastructure issues, GitHub does not re-schedule
-it.
+Guaranteed to run at the exact minute — scheduled workflows are queued and may be delayed under
+Heavy load. If a scheduled run is skipped due to infrastructure issues, GitHub does not re-schedule
+It.
 
 ### Manual Dispatch
 
@@ -247,7 +247,7 @@ on:
 ```
 
 The `workflow_dispatch` event enables a "Run workflow" button in the GitHub Actions tab. Input
-values are accessible via `${{ github.event.inputs.environment }}` (legacy) or
+Values are accessible via `${{ github.event.inputs.environment }}` (legacy) or
 `${{ inputs.environment }}` (preferred in newer API versions).
 
 ### Repository Dispatch
@@ -260,7 +260,7 @@ on:
 
 Repository dispatch allows one workflow to trigger another via the GitHub API
 (`POST /repos/{owner}/{repo}/dispatches`). The receiving workflow filters on `types`. This is the
-primary mechanism for cross-repository orchestration in monorepo setups.
+Primary mechanism for cross-repository orchestration in monorepo setups.
 
 ### Trigger Combinations
 
@@ -278,14 +278,14 @@ on:
 ```
 
 When combining `push` and `pull_request` triggers, use `${{ github.event_name }}` to differentiate
-behavior at runtime.
+Behavior at runtime.
 
 ---
 
 ## Job Dependencies
 
 By default, all jobs in a workflow run in parallel. The `needs` keyword creates a directed acyclic
-graph (DAG) of dependencies.
+Graph (DAG) of dependencies.
 
 ### Sequential Jobs
 
@@ -335,7 +335,7 @@ jobs:
 ```
 
 `deploy` waits for all three upstream jobs. If any upstream job fails, `deploy` is skipped by
-default (implicit `if: success()`).
+Default (implicit `if: success()`).
 
 ### Conditional Execution on Upstream Status
 
@@ -362,17 +362,17 @@ jobs:
       - run: echo "This always runs"
 ```
 
-| Condition function | Meaning                                   |
+| Condition function | Meaning |
 | ------------------ | ----------------------------------------- |
-| `success()`        | All dependency jobs succeeded (default)   |
-| `failure()`        | At least one dependency job failed        |
-| `always()`         | Run regardless of dependency job outcomes |
-| `cancelled()`      | The workflow was cancelled                |
+| `success()` | All dependency jobs succeeded (default) |
+| `failure()` | At least one dependency job failed |
+| `always()` | Run regardless of dependency job outcomes |
+| `cancelled()` | The workflow was cancelled |
 
 ### Concurrency Control
 
 Concurrency groups ensure that only one workflow run (or job) proceeds at a time within a named
-group. This is essential for preventing race conditions in deployment workflows.
+Group. This is essential for preventing race conditions in deployment workflows.
 
 ```yaml
 concurrency:
@@ -387,8 +387,8 @@ jobs:
 ```
 
 When a new run is triggered with the same concurrency group key, `cancel-in-progress: true` aborts
-any in-progress run sharing that key. Setting it to `false` (the default) queues the new run until
-the existing one completes.
+Any in-progress run sharing that key. Setting it to `false` (the default) queues the new run until
+The existing one completes.
 
 For pull requests, use the PR number to scope concurrency:
 
@@ -405,8 +405,8 @@ This ensures each PR gets its own concurrency slot, while pushes to the same bra
 ## Caching
 
 Caching intermediate build artifacts (dependencies, compiled objects) across workflow runs
-dramatically reduces execution time. GitHub Actions provides the `actions/cache@v4` action for this
-purpose.
+Dramatically reduces execution time. GitHub Actions provides the `actions/cache@v4` action for this
+Purpose.
 
 ### Cache Key Strategy
 
@@ -420,20 +420,20 @@ purpose.
       pip-
 ```
 
-| Key component  | Purpose                                                |
+| Key component | Purpose |
 | -------------- | ------------------------------------------------------ |
-| `key`          | Primary cache key; exact match required                |
+| `key` | Primary cache key; exact match required |
 | `restore-keys` | Fallback prefix keys used when no exact match is found |
-| `path`         | File or directory to cache                             |
+| `path` | File or directory to cache |
 
 Cache lookup proceeds as follows:
 
 1. An exact match for `key` is sought. If found, the cache is restored and marked as a **cache
-   hit**.
+ hit**.
 2. If no exact match, `restore-keys` are searched in order by most recent creation date. The first
-   match is restored and marked as a **partial hit**.
+ match is restored and marked as a **partial hit**.
 3. If no match at all, no cache is restored (cache miss). A new cache entry is written at the end of
-   the job using the `key`.
+ the job using the `key`.
 
 ### Language-Specific Cache Patterns
 
@@ -498,22 +498,22 @@ Cache lookup proceeds as follows:
 
 ### Cache Invalidation
 
-Caches are immutable once written. To invalidate, change the `key` — typically by bumping a version
-prefix:
+Caches are immutable once written. To invalidate, change the `key` — by bumping a version
+Prefix:
 
 ```yaml
 key: v2-${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
 ```
 
 GitHub evicts repository caches using a least-recently-used (LRU) policy when the total cache size
-exceeds 10 GB. Branches can only access caches from the default branch or the same branch.
+Exceeds 10 GB. Branches can only access caches from the default branch or the same branch.
 
 ---
 
 ## Artifacts
 
 Artifacts are persistent files produced during a workflow run. Unlike caches, artifacts are intended
-for human consumption or cross-job data transfer and are retained after the run completes.
+For human consumption or cross-job data transfer and are retained after the run completes.
 
 ### Uploading Artifacts
 
@@ -528,13 +528,13 @@ for human consumption or cross-job data transfer and are retained after the run 
     compression-level: 6
 ```
 
-| Parameter           | Description                                             |
+| Parameter | Description |
 | ------------------- | ------------------------------------------------------- |
-| `name`              | Artifact name (unique within the run)                   |
-| `path`              | File or directory to upload; supports glob patterns     |
-| `retention-days`    | Days to retain (default 90, max 90 on free plans)       |
-| `if-no-files-found` | Behavior when no files match: `warn`, `error`, `ignore` |
-| `compression-level` | 0 (none) to 9 (max); default 6                          |
+| `name` | Artifact name (unique within the run) |
+| `path` | File or directory to upload; supports glob patterns |
+| `retention-days` | Days to retain (default 90, max 90 on free plans) |
+| `if-no-files-found` | Behavior when no files match: `warn``error``ignore` |
+| `compression-level` | 0 (none) to 9 (max); default 6 |
 
 ### Downloading Artifacts
 
@@ -559,7 +559,7 @@ To download a specific artifact:
 ### Sharing Data Between Jobs
 
 Artifacts are the primary mechanism for passing data between jobs (since each job runs on a fresh
-runner):
+Runner):
 
 ```yaml
 jobs:
@@ -586,11 +586,11 @@ jobs:
 
 ### Artifact Size Limits
 
-| Limit                           | Value                                 |
+| Limit | Value |
 | ------------------------------- | ------------------------------------- |
-| Single artifact max size        | 5 GB                                  |
-| Total artifacts per run         | No hard cap (storage billing applies) |
-| Max number of artifacts per run | 500                                   |
+| Single artifact max size | 5 GB |
+| Total artifacts per run | No hard cap (storage billing applies) |
+| Max number of artifacts per run | 500 |
 
 ---
 
@@ -599,7 +599,7 @@ jobs:
 ### Linting and Type Checking
 
 Linting should be a fast, early gate in the pipeline. Run linters and type checkers in parallel when
-possible.
+Possible.
 
 **Python (ruff + mypy):**
 
@@ -692,19 +692,19 @@ jobs:
 ### Branch Protection Integration
 
 Branch protection rules can require specific workflow jobs to pass before allowing a merge. To use
-this:
+This:
 
 1. Navigate to **Settings &gt; Branches &gt; Branch protection rules**
 2. Select the target branch (e.g., `main`)
 3. Enable **Require status checks to pass before merging**
-4. Add the job names as required checks (e.g., `lint`, `test`, `security`)
+4. Add the job names as required checks (e.g., `lint``test``security`)
 
 Jobs must have unique names across the workflow for status checks to identify them correctly.
 
 ### Matrix Testing
 
 Matrix strategies run a job multiple times with different variable combinations. This is the
-standard approach for testing across language versions, operating systems, or dependency versions.
+Standard approach for testing across language versions, operating systems, or dependency versions.
 
 ```yaml
 jobs:
@@ -730,12 +730,12 @@ jobs:
       - run: python --version
 ```
 
-| Matrix option  | Purpose                                                           |
+| Matrix option | Purpose |
 | -------------- | ----------------------------------------------------------------- |
-| `fail-fast`    | If `true` (default), cancel all in-progress jobs on first failure |
-| `exclude`      | Remove specific combinations from the matrix                      |
-| `include`      | Add specific combinations to the matrix                           |
-| `max-parallel` | Limit the number of concurrent matrix job runs                    |
+| `fail-fast` | If `true` (default), cancel all in-progress jobs on first failure |
+| `exclude` | Remove specific combinations from the matrix |
+| `include` | Add specific combinations to the matrix |
+| `max-parallel` | Limit the number of concurrent matrix job runs |
 
 ---
 
@@ -844,7 +844,7 @@ jobs:
 
 Blue-green deployment maintains two identical production environments. At any time, one is active
 ("blue") and the other is idle ("green"). A new release deploys to the idle environment, and traffic
-is switched atomically.
+Is switched atomically.
 
 ```yaml
 jobs:
@@ -886,7 +886,7 @@ jobs:
 ### Canary Deployment
 
 Canary deployment routes a small percentage of traffic to the new version, monitors for errors, and
-gradually increases traffic if metrics are healthy.
+Gradually increases traffic if metrics are healthy.
 
 ```yaml
 jobs:
@@ -923,7 +923,7 @@ jobs:
 ## Reusable Workflows
 
 Reusable workflows allow teams to centralize workflow logic in a single file and reference it from
-multiple workflows, potentially across repositories.
+Multiple workflows, potentially across repositories.
 
 ### Calling a Reusable Workflow
 
@@ -993,12 +993,12 @@ jobs:
 ```
 
 The calling repository must have access to the source repository, and the `secrets: inherit` keyword
-passes all repository and organization secrets to the reusable workflow.
+Passes all repository and organization secrets to the reusable workflow.
 
 ### Composite Actions
 
 For reusable logic smaller than a full workflow, composite actions package multiple steps into a
-single action defined by an `action.yml` file:
+Single action defined by an `action.yml` file:
 
 ```yaml
 name: 'Setup Python Environment'
@@ -1035,8 +1035,8 @@ steps:
 ### GitHub Secrets
 
 Secrets are encrypted environment variables stored at the repository, environment, or organization
-level. They are decrypted and injected into the workflow runtime and are not exposed to forked
-repository pull requests.
+Level. They are decrypted and injected into the workflow runtime and are not exposed to forked
+Repository pull requests.
 
 ```yaml
 jobs:
@@ -1052,11 +1052,11 @@ jobs:
 
 ### Secret Scoping
 
-| Scope        | Visibility                           | Use case                                  |
+| Scope | Visibility | Use case |
 | ------------ | ------------------------------------ | ----------------------------------------- |
-| Repository   | All workflows in the repository      | Deploy credentials, API tokens            |
-| Environment  | Workflows using that environment     | Per-environment secrets (staging vs prod) |
-| Organization | All repositories in the organization | Shared SSO tokens, registry credentials   |
+| Repository | All workflows in the repository | Deploy credentials, API tokens |
+| Environment | Workflows using that environment | Per-environment secrets (staging vs prod) |
+| Organization | All repositories in the organization | Shared SSO tokens, registry credentials |
 
 Environment-level secrets require the job to specify the `environment` key:
 
@@ -1093,23 +1093,23 @@ jobs:
 ```
 
 Default `GITHUB_TOKEN` permissions are read-only. To grant write access, declare `permissions` at
-the workflow or job level:
+The workflow or job level:
 
-| Permission      | Scope                                  |
+| Permission | Scope |
 | --------------- | -------------------------------------- |
-| `contents`      | Repository content (commits, releases) |
-| `pull-requests` | Pull request operations                |
-| `issues`        | Issue operations                       |
-| `packages`      | Container and package registry         |
-| `id-token`      | OIDC token generation (for cloud auth) |
-| `actions`       | Workflow operations                    |
-| `pages`         | GitHub Pages deployment                |
+| `contents` | Repository content (commits, releases) |
+| `pull-requests` | Pull request operations |
+| `issues` | Issue operations |
+| `packages` | Container and package registry |
+| `id-token` | OIDC token generation (for cloud auth) |
+| `actions` | Workflow operations |
+| `pages` | GitHub Pages deployment |
 
 ### Variables vs Secrets
 
 Variables (`vars`) are non-secret, plain-text configuration values stored alongside secrets. They
-are appropriate for non-sensitive configuration such as deployment URLs, environment names, or
-feature flags.
+Are appropriate for non-sensitive configuration such as deployment URLs, environment names, or
+Feature flags.
 
 ```yaml
 env:
@@ -1118,14 +1118,14 @@ env:
 ```
 
 Variables are visible to anyone with read access to the repository, unlike secrets which are
-write-only.
+Write-only.
 
 ---
 
 ## Environment Protection Rules
 
 Environment protection rules add governance gates that must be satisfied before a job targeting that
-environment can proceed.
+Environment can proceed.
 
 ### Required Reviewers
 
@@ -1140,14 +1140,14 @@ jobs:
 ```
 
 When configured, the workflow run pauses in a "waiting" state until at least one required reviewer
-approves. Reviewers must have write access to the repository.
+Approves. Reviewers must have write access to the repository.
 
 ### Required Status Checks
 
 Branch protection can require specific workflow jobs to pass. Combine this with environment
-protection for defense-in-depth:
+Protection for defense-in-depth:
 
-1. **Branch protection**: requires `test`, `lint`, and `security` jobs to pass
+1. **Branch protection**: requires `test``lint`And `security` jobs to pass
 2. **Environment protection**: requires manual approval for the `production` environment
 
 ### Wait Timer
@@ -1157,20 +1157,20 @@ A wait timer introduces a mandatory delay between the workflow trigger and job e
 - Configured in **Settings &gt; Environments &gt; [environment name] &gt; Protection rules**
 - Range: 0 to 43,200 minutes (30 days)
 - Use case: cool-down period before production deployments, allowing reviewers time to inspect
-  changes
+ changes
 
 ### Branch Restrictions
 
 Deployment protection can be combined with branch restrictions to ensure only specific branches can
-deploy to an environment:
+Deploy to an environment:
 
 1. **Settings &gt; Environments &gt; production &gt; Deployment branches and tags**
-2. Select "Selected branches and tags" and choose the allowed branches (e.g., `main`, `release/*`)
+2. Select "Selected branches and tags" and choose the allowed branches (e.g., `main``release/*`)
 
 ### Deployment Protection with OIDC
 
 GitHub Actions supports OIDC (OpenID Connect) for authentication to cloud providers without storing
-long-lived credentials:
+Long-lived credentials:
 
 ```yaml
 jobs:
@@ -1192,7 +1192,7 @@ jobs:
 ```
 
 The OIDC exchange eliminates the need for `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` secrets
-entirely, replacing them with a short-lived token scoped to the specific workflow run.
+Entirely, replacing them with a short-lived token scoped to the specific workflow run.
 
 ---
 
@@ -1201,7 +1201,7 @@ entirely, replacing them with a short-lived token scoped to the specific workflo
 ### Shell Quoting in YAML
 
 Multiline `run` blocks in YAML are prone to quoting issues. The pipe (`|`) operator preserves
-newlines and is the safest choice for multi-line scripts:
+Newlines and is the safest choice for multi-line scripts:
 
 ```yaml
 # Correct: pipe preserves newlines
@@ -1218,7 +1218,7 @@ newlines and is the safest choice for multi-line scripts:
 ```
 
 Embedding JSON inside YAML requires extra care with nested quotes. Use the `>` operator with
-explicit escaping or pipe to a heredoc:
+Explicit escaping or pipe to a heredoc:
 
 ```yaml
 - run: |
@@ -1244,12 +1244,12 @@ Hardcoded paths break cross-platform workflows.
 ```
 
 Use `actions/cache` and `actions/upload-artifact` path inputs, which handle path normalization
-internally. Avoid constructing paths manually.
+Internally. Avoid constructing paths manually.
 
 ### GITHUB_TOKEN Permissions
 
 The default `GITHUB_TOKEN` has read-only permissions. If a workflow needs to push commits, create
-releases, or write to the package registry, permissions must be explicitly declared:
+Releases, or write to the package registry, permissions must be explicitly declared:
 
 ```yaml
 # At the top level (applies to all jobs)
@@ -1266,13 +1266,13 @@ jobs:
 ```
 
 On pull requests from **forked repositories**, the `GITHUB_TOKEN` is read-only and severely
-restricted regardless of the permissions declaration. This is a security measure to prevent fork PRs
-from exfiltrating secrets or modifying the upstream repository.
+Restricted regardless of the permissions declaration. This is a security measure to prevent fork PRs
+From exfiltrating secrets or modifying the upstream repository.
 
 ### Action Version Pinning
 
 Pinning actions by tag (e.g., `@v4`) is convenient but vulnerable to supply-chain attacks if the tag
-is moved. Pinning by commit SHA is the most secure approach:
+Is moved. Pinning by commit SHA is the most secure approach:
 
 ```yaml
 # Less secure: tag-based (mutable)
@@ -1283,7 +1283,7 @@ is moved. Pinning by commit SHA is the most secure approach:
 ```
 
 However, SHA-based pinning makes updates manual and opaque. A balanced approach uses dependabot to
-automatically update action versions:
+Automatically update action versions:
 
 ```yaml
 # .github/dependabot.yml
@@ -1315,25 +1315,25 @@ jobs:
 
 GitHub-hosted runners have finite resources:
 
-| Resource       | Limit (2-core runner) | Limit (larger runners) |
+| Resource | Limit (2-core runner) | Limit (larger runners) |
 | -------------- | --------------------- | ---------------------- |
-| CPU            | 2 cores               | Up to 64 cores         |
-| Memory         | 7 GB RAM              | Up to 512 GB RAM       |
-| Disk (SSD)     | 14 GB free            | Up to 32 TB            |
-| Network egress | ~250 Mbps             | Same                   |
+| CPU | 2 cores | Up to 64 cores |
+| Memory | 7 GB RAM | Up to 512 GB RAM |
+| Disk (SSD) | 14 GB free | Up to 32 TB |
+| Network egress | ~250 Mbps | Same |
 
 Long-running builds that compile large codebases, run heavy test suites, or process large datasets
-should consider self-hosted runners or larger runner types.
+Should consider self-hosted runners or larger runner types.
 
 ### Cost Management
 
 GitHub Actions bills per minute of runner usage, with multipliers per OS:
 
-| Runner  | Multiplier |
+| Runner | Multiplier |
 | ------- | ---------- |
-| Linux   | 1×         |
-| Windows | 2×         |
-| macOS   | 10×        |
+| Linux | 1× |
+| Windows | 2× |
+| macOS | 10× |
 
 Cost optimization strategies:
 
@@ -1354,9 +1354,9 @@ Pull requests from forks run in the context of the fork, which means:
 - `write` permissions on `GITHUB_TOKEN` are silently downgraded to `read`
 
 If a workflow must access secrets on fork PRs, use a separate workflow triggered by
-`pull_request_target`, which runs in the context of the base repository. However, this introduces a
-security risk: an untrusted fork can exfiltrate secrets by modifying the checked-out code. Always
-pin the checkout ref explicitly:
+`pull_request_target`Which runs in the context of the base repository. However, this introduces a
+Security risk: an untrusted fork can exfiltrate secrets by modifying the checked-out code. Always
+Pin the checkout ref explicitly:
 
 ```yaml
 on:
@@ -1374,12 +1374,12 @@ jobs:
 ```
 
 This pattern should only be used when the build step does not execute user-supplied code (e.g.,
-building a container image from a Dockerfile without running it).
+Building a container image from a Dockerfile without running it).
 
 ### Mutable Checkout Ref on pull_request_target
 
-When using `pull_request_target`, the default checkout is the base branch, not the PR head. To check
-out the PR head:
+When using `pull_request_target`The default checkout is the base branch, not the PR head. To check
+Out the PR head:
 
 ```yaml
 - uses: actions/checkout@v4
@@ -1389,4 +1389,12 @@ out the PR head:
 ```
 
 This is safe only when the subsequent steps do not execute arbitrary code from the PR (e.g., running
-a static analysis tool on the source code, not running the source code itself).
+A static analysis tool on the source code, not running the source code itself).
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

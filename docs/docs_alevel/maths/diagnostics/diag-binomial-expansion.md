@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-**(a)** Find the binomial expansion of $(1 + 2x)^{1/2}$ up to and including the term in $x^3$, stating the range of values of $x$ for which the expansion is valid.
+**(a)** Find the binomial expansion of $(1 + 2x)^{1/2}$ up to and including the term in $x^3$Stating the range of values of $x$ for which the expansion is valid.
 
 **(b)** Use your expansion to estimate $\sqrt{1.02}$ to 6 decimal places, and determine whether your answer is an overestimate or underestimate.
 
@@ -45,11 +45,11 @@ $$(1 + 2x)^{1/2} = 1 + \frac{1}{2}(2x) + \left(-\frac{1}{8}\right)(2x)^2 + \frac
 
 $$= 1 + x - \frac{1}{2}x^2 + \frac{1}{2}x^3 + \cdots$$
 
-The expansion is valid when $|2x| < 1$, i.e. $|x| < \frac{1}{2}$.
+The expansion is valid when $|2x| < 1$I.e. $|x| < \frac{1}{2}$.
 
-**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$, set $1 + 2x = 1.02$, giving $2x = 0.02$, $x = 0.01$.
+**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$Set $1 + 2x = 1.02$Giving $2x = 0.02$$x = 0.01$.
 
-Since $|0.01| < 0.5$, the expansion is valid.
+Since $|0.01| < 0.5$The expansion is valid.
 
 $$\sqrt{1.02} \approx 1 + 0.01 - \frac{1}{2}(0.0001) + \frac{1}{2}(0.000001)$$
 
@@ -59,11 +59,11 @@ $$= 1.0099505$$
 
 The next term in the expansion involves $x^4$: the coefficient of $x^4$ is $\binom{1/2}{4}(2)^4$. Computing $\binom{1/2}{4} = \frac{(1/2)(-1/2)(-3/2)(-5/2)}{24} = \frac{-15/16}{24} = -\frac{5}{128}$. So the $x^4$ term is $-\frac{5}{128} \cdot 16x^4 = -\frac{5}{8}x^4$.
 
-At $x = 0.01$: $-\frac{5}{8}(10^{-8}) \approx -6.25 \times 10^{-9}$, which does not affect the 6th decimal place.
+At $x = 0.01$: $-\frac{5}{8}(10^{-8}) \approx -6.25 \times 10^{-9}$Which does not affect the 6th decimal place.
 
 So $\sqrt{1.02} \approx 1.009950$ to 6 decimal places.
 
-**Overestimate or underestimate?** The next term is negative ($-5x^4/8$), so the partial sum up to $x^3$ is an overestimate. (The terms alternate in sign: $+x$, $-x^2/2$, $+x^3/2$, $-5x^4/8$, $...$.)
+**Overestimate or underestimate?** The next term is negative ($-5x^4/8$), so the partial sum up to $x^3$ is an overestimate. (The terms alternate in sign: $+x$$-x^2/2$$+x^3/2$$-5x^4/8$$...$.)
 
 **(c)** The generalised binomial coefficient:
 
@@ -125,7 +125,7 @@ Coefficient of $x^4$: $15 + 100 + 240 + 240 + 80 = 675$.
 
 **Question:**
 
-**(a)** Find the first four terms in the expansion of $(2 - 3x)^{-2}$ in ascending powers of $x$, stating the range of validity.
+**(a)** Find the first four terms in the expansion of $(2 - 3x)^{-2}$ in ascending powers of $x$Stating the range of validity.
 
 **(b)** If the coefficient of $x^2$ in the expansion of $(2 - 3x)^{-2}(1 + ax)$ is zero, find the value of $a$.
 
@@ -157,7 +157,7 @@ Multiplying by $\frac{1}{4}$:
 
 $$(2-3x)^{-2} = \frac{1}{4} + \frac{3x}{4} + \frac{27x^2}{16} + \frac{27x^3}{8} + \cdots$$
 
-Valid when $|\frac{3x}{2}| < 1$, i.e. $|x| < \frac{2}{3}$.
+Valid when $|\frac{3x}{2}| < 1$I.e. $|x| < \frac{2}{3}$.
 
 **(b)** $(2-3x)^{-2}(1+ax) = \left(\frac{1}{4} + \frac{3x}{4} + \frac{27x^2}{16} + \cdots\right)(1 + ax)$.
 
@@ -167,39 +167,39 @@ $$\frac{27}{16} + \frac{3a}{4} = 0 \implies \frac{3a}{4} = -\frac{27}{16} \impli
 
 **(c)** The series $1 + \frac{3}{2} + \frac{27}{8} + \frac{135}{16} + \cdots$ can be compared with the expansion.
 
-Note that $1 = \frac{1}{4} \cdot 4$, $\frac{3}{2} = \frac{3}{4} \cdot 2$, $\frac{27}{8} = \frac{27}{16} \cdot 2$, $\frac{135}{16} = \frac{27}{8} \cdot 5$.
+Note that $1 = \frac{1}{4} \cdot 4$$\frac{3}{2} = \frac{3}{4} \cdot 2$$\frac{27}{8} = \frac{27}{16} \cdot 2$$\frac{135}{16} = \frac{27}{8} \cdot 5$.
 
-The series $(2-3x)^{-2} = \frac{1}{4} + \frac{3x}{4} + \frac{27x^2}{16} + \frac{27x^3}{8} + \cdots$ evaluated at $x = 1$ would give $\frac{1}{4} + \frac{3}{4} + \frac{27}{16} + \frac{27}{8} + \cdots$, which does not match.
+The series $(2-3x)^{-2} = \frac{1}{4} + \frac{3x}{4} + \frac{27x^2}{16} + \frac{27x^3}{8} + \cdots$ evaluated at $x = 1$ would give $\frac{1}{4} + \frac{3}{4} + \frac{27}{16} + \frac{27}{8} + \cdots$Which does not match.
 
 Let me re-examine. The series $(1 - \frac{3x}{2})^{-2} = 1 + 3x + \frac{27x^2}{4} + \frac{27x^3}{2} + \cdots$. At $x = \frac{1}{2}$:
 
 $1 + \frac{3}{2} + \frac{27}{16} + \frac{27}{16} + \cdots$
 
-That gives $1 + 3/2 + 27/16 + 27/16 + \cdots$, not matching.
+That gives $1 + 3/2 + 27/16 + 27/16 + \cdots$Not matching.
 
 At $x = 1$: $1 + 3 + 27/4 + 27/2 + \cdots = 1 + 3 + 6.75 + 13.5 + \cdots$. Not matching either.
 
-Let me check the given series: $1, 3/2, 27/8, 135/16$. The ratio between consecutive terms: $3/2$, $9/4$, $5/2$. These aren't constant, so it's not a geometric series.
+Let me check the given series: $1, 3/2, 27/8, 135/16$. The ratio between consecutive terms: $3/2$$9/4$$5/2$. These aren't constant, so it's not a geometric series.
 
 Consider $(2-3x)^{-2}$ at $x = 1/2$: $(2 - 3/2)^{-2} = (1/2)^{-2} = 4$.
 
-The expansion at $x = 1/2$ (note $|1/2| < 2/3$, so valid):
+The expansion at $x = 1/2$ (note $|1/2| < 2/3$So valid):
 
 $$\frac{1}{4} + \frac{3}{8} + \frac{27}{64} + \frac{27}{64} + \cdots$$
 
 This sums to 4, but doesn't match the given series.
 
-The given series is $(1 - 3/2)^{-2}$ evaluated via the expansion of $(1 + y)^{-2}$ at $y = -3/2$, but this is outside the radius of convergence ($|y| < 1$ required).
+The given series is $(1 - 3/2)^{-2}$ evaluated via the expansion of $(1 + y)^{-2}$ at $y = -3/2$But this is outside the radius of convergence ($|y| < 1$ required).
 
 Let me reconsider: the series might correspond to $(1 - x)^{-3}$ evaluated at some point. $(1-x)^{-3} = 1 + 3x + 6x^2 + 10x^3 + \cdots$. At $x = 1/2$: $1 + 3/2 + 3/2 + 5/4 + \cdots$. Not matching.
 
-Actually, the series $1 + 3/2 + 27/8 + 135/16 + \cdots$: checking $r_n = a_n/a_{n-1}$: $3/2$, $9/4$, $5/2$. The general term appears to be $(2n-1) \cdot 3^n / (2^{n+1})$ for $n \geq 0$.
+Actually, the series $1 + 3/2 + 27/8 + 135/16 + \cdots$: checking $r_n = a_n/a_{n-1}$: $3/2$$9/4$$5/2$. The general term appears to be $(2n-1) \cdot 3^n / (2^{n+1})$ for $n \geq 0$.
 
 At $n = 0$: $(1)(1)/2 = 1/2 \neq 1$. So the formula needs adjustment.
 
 Actually: term $n$ = $\frac{(2n+1)!!}{(2n)!!} \cdot \frac{3^n}{2^{n+1}}$... This is getting complicated. The simplest approach: the series is $(1-3/2)^{-2} = (-1/2)^{-2} = 4$ if we formally sum it, but the expansion doesn't converge there.
 
-The correct identification: the series $1 + 3/2 + 27/8 + 135/16 + \cdots$ is the expansion of $(1 - 3x/2)^{-2}$ at $x = 1$, giving the sum $(1 - 3/2)^{-2} = 4$. Although the series diverges at $x = 1$ (since $|3/2| > 1$), the value can be assigned by analytic continuation. For the purpose of this question, the sum is $\boxed{4}$.
+The correct identification: the series $1 + 3/2 + 27/8 + 135/16 + \cdots$ is the expansion of $(1 - 3x/2)^{-2}$ at $x = 1$Giving the sum $(1 - 3/2)^{-2} = 4$. Although the series diverges at $x = 1$ (since $|3/2| > 1$), the value can be assigned by analytic continuation. For the purpose of this question, the sum is $\boxed{4}$.
 
 ---
 
@@ -253,7 +253,7 @@ $$= 0.1 - 0.003333... + 0.000185...$$
 
 $$= 0.096851851...$$
 
-The next term involves $\binom{-2/3}{3}x^3$, which integrates to give a term of order $10^{-5}$, not affecting 8 decimal places.
+The next term involves $\binom{-2/3}{3}x^3$Which integrates to give a term of order $10^{-5}$Not affecting 8 decimal places.
 
 To 8 decimal places: $\boxed{0.09685185}$.
 
@@ -267,7 +267,7 @@ To 8 decimal places: $\boxed{0.09685185}$.
 
 **(b)** Hence prove that $3^{2n} - 1$ is divisible by 8 for all positive integers $n$.
 
-**(c)** Prove that $7^n - 1$ is divisible by 6 for all positive integers $n$, using a similar method.
+**(c)** Prove that $7^n - 1$ is divisible by 6 for all positive integers $n$Using a similar method.
 
 **(d)** Prove by induction that $3^{2n} + 2^{n+2}$ is divisible by 7 for all $n \geq 1$.
 

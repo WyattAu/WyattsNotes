@@ -22,8 +22,8 @@ A **probability space** is a triple $(\Omega, \mathcal{'\{'}F{'\}'}, P)$ where:
 **Definition.** A **sigma-algebra** $\mathcal{'\{'}F{'\}'}$ on $\Omega$ is a collection of subsets satisfying:
 
 1. $\Omega \in \mathcal{'\{'}F{'\}'}$.
-2. If $A \in \mathcal{'\{'}F{'\}'}$, then $A^c \in \mathcal{'\{'}F{'\}'}$ (closed under complementation).
-3. If $A_1, A_2, \ldots \in \mathcal{'\{'}F{'\}'}$, then $\bigcup_{i=1}^{\infty} A_i \in \mathcal{'\{'}F{'\}'}$ (closed under countable unions).
+2. If $A \in \mathcal{'\{'}F{'\}'}$Then $A^c \in \mathcal{'\{'}F{'\}'}$ (closed under complementation).
+3. If $A_1, A_2, \ldots \in \mathcal{'\{'}F{'\}'}$Then $\bigcup_{i=1}^{\infty} A_i \in \mathcal{'\{'}F{'\}'}$ (closed under countable unions).
 
 **Definition.** A **probability measure** $P$ satisfies:
 
@@ -37,12 +37,12 @@ A **probability space** is a triple $(\Omega, \mathcal{'\{'}F{'\}'}, P)$ where:
 
 1. $P(\emptyset) = 0$.
 2. $P(A^c) = 1 - P(A)$.
-3. If $A \subseteq B$, then $P(A) \leq P(B)$.
+3. If $A \subseteq B$Then $P(A) \leq P(B)$.
 4. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (inclusion-exclusion).
 5. **Boole's inequality:** $P\left(\bigcup_{i=1}^{n} A_i\right) \leq \sum_{i=1}^{n} P(A_i)$.
 6. **Bonferroni inequality:** $P\left(\bigcap_{i=1}^{n} A_i\right) \geq 1 - \sum_{i=1}^{n} (1 - P(A_i))$.
 
-*Proof.* (1) Apply countable additivity to the disjoint union $\Omega = \Omega \cup \emptyset \cup \emptyset \cup \cdots$: $1 = 1 + P(\emptyset) + P(\emptyset) + \cdots$, so $P(\emptyset) = 0$.
+*Proof.* (1) Apply countable additivity to the disjoint union $\Omega = \Omega \cup \emptyset \cup \emptyset \cup \cdots$: $1 = 1 + P(\emptyset) + P(\emptyset) + \cdots$So $P(\emptyset) = 0$.
 
 (3) $B = A \cup (B \setminus A)$ is a disjoint union, so $P(B) = P(A) + P(B \setminus A) \geq P(A)$.
 
@@ -54,7 +54,7 @@ A **probability space** is a triple $(\Omega, \mathcal{'\{'}F{'\}'}, P)$ where:
 
 $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 
-**Theorem 1.2 (Law of Total Probability).** If $B_1, \ldots, B_n$ form a partition of $\Omega$ with $P(B_i) > 0$ for all $i$, then
+**Theorem 1.2 (Law of Total Probability).** If $B_1, \ldots, B_n$ form a partition of $\Omega$ with $P(B_i) > 0$ for all $i$Then
 
 $$P(A) = \sum_{i=1}^{n} P(A \mid B_i)\, P(B_i)$$
 
@@ -64,7 +64,7 @@ $$P(B_j \mid A) = \frac{P(A \mid B_j)\, P(B_j)}{\sum_{i=1}^{n} P(A \mid B_i)\, P
 
 **Definition.** Events $A$ and $B$ are **independent** if $P(A \cap B) = P(A)\,P(B)$.
 
-**Proposition 1.4.** If $A$ and $B$ are independent with $P(B) > 0$, then $P(A \mid B) = P(A)$.
+**Proposition 1.4.** If $A$ and $B$ are independent with $P(B) > 0$Then $P(A \mid B) = P(A)$.
 
 *Proof.* $P(A \mid B) = P(A \cap B)/P(B) = P(A)P(B)/P(B) = P(A)$. $\blacksquare$
 
@@ -83,11 +83,11 @@ $P(A) = P(B) = P(C) = 1/2$.
 
 $P(A \cap B) = 1/4 = P(A)P(B)$. $P(A \cap C) = P(\text{first even, sum even{}) = P(\text{second even{}) = 1/4 = P(A)P(C)$.
 
-$P(B \cap C) = 1/4 = P(B)P(C)$. So $A$, $B$, $C$ are pairwise independent.
+$P(B \cap C) = 1/4 = P(B)P(C)$. So $A$$B$$C$ are pairwise independent.
 
 But $P(A \cap B \cap C) = P(\text{both even, sum even{}) = P(\text{both even{}) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
 
-So $A$, $B$, $C$ are pairwise independent but not mutually independent. $\blacksquare$
+So $A$$B$$C$ are pairwise independent but not mutually independent. $\blacksquare$
 
 </details>
 
@@ -101,15 +101,15 @@ $$F_X(x) = P(X \leq x)$$
 
 **Proposition 2.1 (Properties of the CDF).**
 
-1. $F$ is non-decreasing: if $a \leq b$, then $F(a) \leq F(b)$.
+1. $F$ is non-decreasing: if $a \leq b$Then $F(a) \leq F(b)$.
 2. $\lim_{x \to -\infty} F(x) = 0$ and $\lim_{x \to +\infty} F(x) = 1$.
 3. $F$ is right-continuous: $\lim_{x \to a^+} F(x) = F(a)$.
 
-*Proof.* (1) If $a \leq b$, then $\{X \leq a\} \subseteq \{X \leq b\}$, so $F(a) = P(X \leq a) \leq P(X \leq b) = F(b)$ by Proposition 1.1(3).
+*Proof.* (1) If $a \leq b$Then $\{X \leq a\} \subseteq \{X \leq b\}$So $F(a) = P(X \leq a) \leq P(X \leq b) = F(b)$ by Proposition 1.1(3).
 
-(2) As $x \to -\infty$, the events $\{X \leq x\}$ decrease to $\emptyset$, so by continuity from above of probability measures, $F(x) \to 0$. As $x \to +\infty$, the events increase to $\Omega$, so $F(x) \to 1$.
+(2) As $x \to -\infty$The events $\{X \leq x\}$ decrease to $\emptyset$So by continuity from above of probability measures, $F(x) \to 0$. As $x \to +\infty$The events increase to $\Omega$So $F(x) \to 1$.
 
-(3) As $x \to a^+$, the events $\{X \leq x\}$ decrease to $\{X \leq a\}$, giving right-continuity. $\blacksquare$
+(3) As $x \to a^+$The events $\{X \leq x\}$ decrease to $\{X \leq a\}$Giving right-continuity. $\blacksquare$
 
 ### 2.2 Discrete Random Variables
 
@@ -119,11 +119,11 @@ A random variable is **discrete** if its range is countable. The **probability m
 
 $$E[X] = \sum_{x} x\, p_X(x)$$
 
-provided the sum converges absolutely.
+Provided the sum converges absolutely.
 
 **Definition (Variance).** $\mathrm{Var{}(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
-**Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random variables $X$, $Y$ and constants $a$, $b$.
+**Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random variables $X$$Y$ and constants $a$$b$.
 
 *Proof.* Direct computation from the definition of expected value. For the discrete case:
 
@@ -150,28 +150,28 @@ $$F_X(x) = \int_{-\infty}^{x} f_X(t)\, dt$$
 
 | Distribution | PMF | $E[X]$ | $\mathrm{Var{}(X)$ |
 |---|---|---|---|
-| Bernoulli$(p)$ | $p^x(1-p)^{1-x}$, $x \in \{0,1\}$ | $p$ | $p(1-p)$ |
+| Bernoulli$(p)$ | $p^x(1-p)^{1-x}$$x \in \{0,1\}$ | $p$ | $p(1-p)$ |
 | Binomial$(n,p)$ | $\binom{n}{x}p^x(1-p)^{n-x}$ | $np$ | $np(1-p)$ |
 | Poisson$(\lambda)$ | $e^{-\lambda}\lambda^x / x!$ | $\lambda$ | $\lambda$ |
-| Geometric$(p)$ | $(1-p)^{x-1}p$, $x \geq 1$ | $1/p$ | $(1-p)/p^2$ |
+| Geometric$(p)$ | $(1-p)^{x-1}p$$x \geq 1$ | $1/p$ | $(1-p)/p^2$ |
 
 **Continuous distributions:**
 
 | Distribution | PDF | $E[X]$ | $\mathrm{Var{}(X)$ |
 |---|---|---|---|
 | Uniform$(a,b)$ | $1/(b-a)$ on $[a,b]$ | $(a+b)/2$ | $(b-a)^2/12$ |
-| Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $1/\lambda$ | $1/\lambda^2$ |
+| Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$$x \geq 0$ | $1/\lambda$ | $1/\lambda^2$ |
 | $N(\mu, \sigma^2)$ | $\frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}$ | $\mu$ | $\sigma^2$ |
 
 ### 2.5 The Normal Distribution
 
 **Definition.** $X \sim N(\mu, \sigma^2)$ if $X$ has PDF $f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)$.
 
-**Theorem 2.3 (Standardisation).** If $X \sim N(\mu, \sigma^2)$, then $Z = (X - \mu)/\sigma \sim N(0, 1)$.
+**Theorem 2.3 (Standardisation).** If $X \sim N(\mu, \sigma^2)$Then $Z = (X - \mu)/\sigma \sim N(0, 1)$.
 
-*Proof.* The CDF of $Z$: $P(Z \leq z) = P(X \leq \mu + \sigma z) = \int_{-\infty}^{\mu + \sigma z} \frac{1}{\sigma\sqrt{2\pi}} e^{-t^2/2}\, dt$. Substituting $u = (t - \mu)/\sigma$: $= \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}} e^{-u^2/2}\, du$, which is the CDF of $N(0, 1)$. $\blacksquare$
+*Proof.* The CDF of $Z$: $P(Z \leq z) = P(X \leq \mu + \sigma z) = \int_{-\infty}^{\mu + \sigma z} \frac{1}{\sigma\sqrt{2\pi}} e^{-t^2/2}\, dt$. Substituting $u = (t - \mu)/\sigma$: $= \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}} e^{-u^2/2}\, du$Which is the CDF of $N(0, 1)$. $\blacksquare$
 
-**Theorem 2.4 (Moment Generating Function).** If $X \sim N(\mu, \sigma^2)$, then
+**Theorem 2.4 (Moment Generating Function).** If $X \sim N(\mu, \sigma^2)$Then
 
 $$M_X(t) = E[e^{tX}] = \exp\left(\mu t + \frac{\sigma^2 t^2}{2}\right)$$
 
@@ -235,7 +235,7 @@ $$\mathrm{Cov{}(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
 
 $$\rho(X, Y) = \frac{\mathrm{Cov{}(X, Y)}{\sqrt{\mathrm{Var{}(X)\,\mathrm{Var{}(Y)}}$$
 
-**Theorem 2.7 (Cauchy--Schwarz for Random Variables).** $|\rho(X, Y)| \leq 1$, with equality if and only if $Y = aX + b$ almost surely for some $a, b$.
+**Theorem 2.7 (Cauchy--Schwarz for Random Variables).** $|\rho(X, Y)| \leq 1$With equality if and only if $Y = aX + b$ almost surely for some $a, b$.
 
 ### 3.3 Independence of Random Variables
 
@@ -250,7 +250,7 @@ For continuous random variables, this is equivalent to $f_{X,Y}(x, y) = f_X(x)\,
 
 *Solution.* Let $X \sim N(0, 1)$ and $Y = X^2$. Then $\mathrm{Cov{}(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard normal is 0).
 
-But $Y$ is completely determined by $X$, so they are not independent. $\blacksquare$
+But $Y$ is completely determined by $X$So they are not independent. $\blacksquare$
 
 </details>
 
@@ -258,7 +258,7 @@ But $Y$ is completely determined by $X$, so they are not independent. $\blacksqu
 
 ### 4.1 The Law of Large Numbers
 
-**Theorem 4.1 (Weak Law of Large Numbers).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
+**Theorem 4.1 (Weak Law of Large Numbers).** Let $X_1, X_2, \ldots$ be i.i.d. With $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
 
 $$\lim_{n \to \infty} P\left(\left|\frac{1}{n}\sum_{i=1}^{n} X_i - \mu\right| \geq \varepsilon\right) = 0$$
 
@@ -276,17 +276,17 @@ The sample mean converges to the population mean almost surely.
 
 ### 4.2 The Central Limit Theorem
 
-**Theorem 4.3 (Central Limit Theorem).** Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 \in (0, \infty)$. Then
+**Theorem 4.3 (Central Limit Theorem).** Let $X_1, X_2, \ldots$ be i.i.d. With $E[X_i] = \mu$ and $\mathrm{Var{}(X_i) = \sigma^2 \in (0, \infty)$. Then
 
 $$\frac{S_n - n\mu}{\sigma\sqrt{n}} \xrightarrow{d} N(0, 1)$$
 
-where $S_n = \sum_{i=1}^{n} X_i$ and $\xrightarrow{d}$ denotes convergence in distribution.
+Where $S_n = \sum_{i=1}^{n} X_i$ and $\xrightarrow{d}$ denotes convergence in distribution.
 
 Equivalently, for large $n$:
 
 $$P\left(\frac{S_n - n\mu}{\sigma\sqrt{n}} \leq z\right) \approx \Phi(z)$$
 
-where $\Phi$ is the CDF of the standard normal.
+Where $\Phi$ is the CDF of the standard normal.
 
 *Proof (using characteristic functions).* Let $\varphi_X(t) = E[e^{itX}]$ be the characteristic function of $X_1$. The characteristic function of $(S_n - n\mu)/(\sigma\sqrt{n})$ is:
 
@@ -336,7 +336,7 @@ $\blacksquare$
 
 ### 4.4 Common Pitfalls
 
-- **The CLT does not apply to small samples.** The CLT is an asymptotic result. For small $n$ (typically $n < 30$), the normal approximation can be poor unless the underlying distribution is already close to normal. Use the Berry--Esseen theorem for finite-sample bounds.
+- **The CLT does not apply to small samples.** The CLT is an asymptotic result. For small $n$ ( $n < 30$), the normal approximation can be poor unless the underlying distribution is already close to normal. Use the Berry--Esseen theorem for finite-sample bounds.
 - **Independence is critical for the LLN and CLT.** If the $X_i$ are dependent, the sample mean may not converge to the population mean, or the convergence rate may differ. For stationary sequences with weak dependence, versions of these theorems still hold, but the proofs are more involved.
 - **Convergence in distribution is weaker than convergence in probability.** The CLT gives convergence in distribution of the standardised sum, not convergence of the sum itself. The LLN gives the latter (convergence in probability).
 
@@ -377,4 +377,12 @@ Differentiating: $f_Z(z) = \int_{-\infty}^{\infty} f_X(x)\, f_Y(z - x)\, dx$. $\
 
 **Corollary 5.4.** The sum of independent normals is normal: if $X \sim N(\mu_1, \sigma_1^2)$ and $Y \sim N(\mu_2, \sigma_2^2)$ are independent, then $X + Y \sim N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$.
 
-*Proof.* The convolution of two Gaussian PDFs is Gaussian. This follows from the MGF: $M_{X+Y}(t) = M_X(t)M_Y(t) = \exp((\mu_1 + \mu_2)t + (\sigma_1^2 + \sigma_2^2)t^2/2)$, which is the MGF of $N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. $\blacksquare$
+*Proof.* The convolution of two Gaussian PDFs is Gaussian. This follows from the MGF: $M_{X+Y}(t) = M_X(t)M_Y(t) = \exp((\mu_1 + \mu_2)t + (\sigma_1^2 + \sigma_2^2)t^2/2)$Which is the MGF of $N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. $\blacksquare$
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -12,19 +12,31 @@ slug: remove-commit-history
 
 - Clone Git repository
 - Create orphan branch
-  - `git checkout --orphan temp`
+ - `git checkout --orphan temp`
 - Stage all changes
-  - `git add -A`
-  - `git commit -m "init commit (cleaned history)"`
+ - `git add -A`
+ - `git commit -m "init commit (cleaned history)"`
 - Delete old branch
-  - `git branch -D main`
+ - `git branch -D main`
 - Rename current temp branch to main
-  - `git branch -m main`
+ - `git branch -m main`
 - Force-push current branch to GitHub
-  - `git push -f origin main`
+ - `git push -f origin main`
 - Delete all other branches and tags if needed
   ```bash
   git tag | xargs git tag -d  # Delete local tags
   git push origin --delete --tags  # Delete remote tags
   git push origin --delete old-branch  # Repeat for historical branches
   ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

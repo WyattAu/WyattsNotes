@@ -33,12 +33,12 @@ Gene $E$ determines pigment deposition: $EE$ or $Ee$ = pigment deposited; $ee$ =
 
 Cross: $BbEe \times BbEe$
 
-| Genotype    | Phenotype | Count | Combined  |
+| Genotype | Phenotype | Count | Combined |
 | ----------- | --------- | ----- | --------- |
-| $B\_E\_$    | Black     | 9     | 9 black   |
-| $bbE\_$     | Brown     | 3     | 3 brown   |
-| $B\_ee$     | Golden    | 3     | 4 golden  |
-| $bbee$      | Golden    | 1     |           |
+| $B\_E\_$ | Black | 9 | 9 black |
+| $bbE\_$ | Brown | 3 | 3 brown |
+| $B\_ee$ | Golden | 3 | 4 golden |
+| $bbee$ | Golden | 1 | |
 
 The homozygous recessive $ee$ masks the $B/b$ locus, so both $B\_ee$ and $bbee$ are golden. Ratio: **9:3:4**.
 
@@ -51,12 +51,12 @@ Gene $Y$: $Y\_$ = yellow; $yy$ = green.
 
 Cross: $WwYy \times WwYy$
 
-| Genotype    | Phenotype | Count | Combined    |
+| Genotype | Phenotype | Count | Combined |
 | ----------- | --------- | ----- | ----------- |
-| $W\_Y\_$    | White     | 9     | 12 white    |
-| $W\_yy$     | White     | 3     |             |
-| $wwY\_$     | Yellow    | 3     | 3 yellow    |
-| $wwyy$      | Green     | 1     | 1 green     |
+| $W\_Y\_$ | White | 9 | 12 white |
+| $W\_yy$ | White | 3 | |
+| $wwY\_$ | Yellow | 3 | 3 yellow |
+| $wwyy$ | Green | 1 | 1 green |
 
 The dominant allele $W$ masks the $Y/y$ locus. Ratio: **12:3:1**.
 
@@ -68,23 +68,23 @@ Gene $C$ and gene $P$ are both required for purple flowers. $cc\_$ or $\_pp$ = w
 
 Cross: $CcPp \times CcPp$
 
-| Genotype        | Phenotype | Count |
+| Genotype | Phenotype | Count |
 | --------------- | --------- | ----- |
-| $C\_P\_$        | Purple    | 9     |
-| $ccP\_$ or $C\_pp$ or $ccpp$ | White | 7     |
+| $C\_P\_$ | Purple | 9 |
+| $ccP\_$ or $C\_pp$ or $ccpp$ | White | 7 |
 
 Ratio: **9:7**.
 
 ### 1.3 Summary of Epistatic Ratios
 
-| Ratio  | Type of Epistasis          | Pattern                                                                 |
+| Ratio | Type of Epistasis | Pattern |
 | ------ | --------------------------- | ----------------------------------------------------------------------- |
-| 9:3:4  | Recessive epistasis         | Homozygous recessive at epistatic locus masks hypostatic locus          |
-| 12:3:1 | Dominant epistasis          | Dominant allele at epistatic locus masks hypostatic locus               |
-| 9:7    | Duplicate recessive epistasis | Homozygous recessive at either locus masks the other                  |
-| 9:6:1  | Duplicate gene interaction  | Both dominant alleles needed for enhanced phenotype                      |
-| 15:1   | Duplicate dominant epistasis | Dominant allele at either locus sufficient for trait expression         |
-| 13:3   | Inhibitory gene interaction | One dominant allele inhibits the expression of the other gene          |
+| 9:3:4 | Recessive epistasis | Homozygous recessive at epistatic locus masks hypostatic locus |
+| 12:3:1 | Dominant epistasis | Dominant allele at epistatic locus masks hypostatic locus |
+| 9:7 | Duplicate recessive epistasis | Homozygous recessive at either locus masks the other |
+| 9:6:1 | Duplicate gene interaction | Both dominant alleles needed for enhanced phenotype |
+| 15:1 | Duplicate dominant epistasis | Dominant allele at either locus sufficient for trait expression |
+| 13:3 | Inhibitory gene interaction | One dominant allele inhibits the expression of the other gene |
 
 :::warning
 Common Pitfall Students often confuse epistasis with dominance. Dominance is an interaction between **alleles at the same locus** (one allele masks another at the same gene). Epistasis is an interaction between **genes at different loci** (one gene masks or modifies another gene). They are fundamentally different genetic phenomena.
@@ -115,14 +115,14 @@ The recombination frequency is approximately equal to the **map distance** betwe
 
 | Phenotype | Number |
 | --------- | ------ |
-| $ABD$     | 380    |
-| $abd$     | 370    |
-| $Abd$     | 25     |
-| $aBD$     | 20     |
-| $ABd$     | 80     |
-| $abD$     | 85     |
-| $AbD$     | 15     |
-| $aBd$     | 25     |
+| $ABD$ | 380 |
+| $abd$ | 370 |
+| $Abd$ | 25 |
+| $aBD$ | 20 |
+| $ABd$ | 80 |
+| $abD$ | 85 |
+| $AbD$ | 15 |
+| $aBd$ | 25 |
 
 Total = 1000. Parental phenotypes: $ABD$ (380) + $abd$ (370) = 750.
 Recombinant phenotypes: 250.
@@ -133,7 +133,7 @@ Recombinant phenotypes: 250.
 
 **Distance A--D:** Recombinants between A and D = all non-parental = $25 + 20 + 80 + 85 + 15 + 25 = 250$. Distance = $250/1000 \times 100 = 25\ \mathrm{cM}$.
 
-**Double cross-overs:** The rarest recombinant classes are the double cross-over products ($AbD$ and $aBd$, total 40). The map distance A--D calculated directly (25 cM) is less than A--B + B--D (41.5 cM) because double cross-overs between A and D are counted as non-recombinant for the A--D comparison but are recombinant for both A--B and B--D. The corrected A--D distance = A--B + B--D + 2 $\times$ (double cross-over frequency) = $21 + 20.5 + 2 \times 4 = 49.5\ \mathrm{cM}$, but this exceeds 50 cM, indicating multiple cross-overs.
+**Double cross-overs:** The rarest recombinant classes are the double cross-over products ($AbD$ and $aBd$Total 40). The map distance A--D calculated directly (25 cM) is less than A--B + B--D (41.5 cM) because double cross-overs between A and D are counted as non-recombinant for the A--D comparison but are recombinant for both A--B and B--D. The corrected A--D distance = A--B + B--D + 2 $\times$ (double cross-over frequency) = $21 + 20.5 + 2 \times 4 = 49.5\ \mathrm{cM}$But this exceeds 50 cM, indicating multiple cross-overs.
 
 ### 2.3 Sex Linkage with Linkage
 
@@ -143,7 +143,7 @@ When a gene is on the X chromosome, males are hemizygous (they have only one cop
 
 $$X^HX^h \times X^HY$$
 
-|       | $X^H$            | $Y$             |
+| | $X^H$ | $Y$ |
 | ----- | ---------------- | --------------- |
 | $X^H$ | $X^HX^H$ (normal) | $X^HY$ (normal) |
 | $X^h$ | $X^HX^h$ (carrier) | $X^hY$ (haemophilic) |
@@ -164,16 +164,16 @@ A dihybrid cross $AaBb \times AaBb$ (with genes $A$ and $B$ on the same chromoso
 
 | Phenotype | Observed | Expected (9:3:3:1) | $(O-E)^2/E$ |
 | --------- | -------- | ------------------- | ----------- |
-| $A\_B\_$  | 120      | 112.5               | 0.50        |
-| $A\_bb$   | 10       | 37.5                | 20.17       |
-| $aaB\_$   | 12       | 37.5                | 17.33       |
-| $aabb$    | 58       | 12.5                | 16.56       |
+| $A\_B\_$ | 120 | 112.5 | 0.50 |
+| $A\_bb$ | 10 | 37.5 | 20.17 |
+| $aaB\_$ | 12 | 37.5 | 17.33 |
+| $aabb$ | 58 | 12.5 | 16.56 |
 
 $\chi^2 = 0.50 + 20.17 + 17.33 + 16.56 = 54.56$.
 
 $\mathrm{df} = 3$. Critical value at $p = 0.05$ for 3 df = 7.82.
 
-Since $\chi^2 = 54.56 \gg 7.82$, we reject the null hypothesis. The genes are **linked**. The excess of parental phenotypes ($A\_B\_$ = 120 and $aabb$ = 58) and deficit of recombinant phenotypes ($A\_bb$ = 10 and $aaB\_$ = 12) confirms linkage.
+Since $\chi^2 = 54.56 \gg 7.82$We reject the null hypothesis. The genes are **linked**. The excess of parental phenotypes ($A\_B\_$ = 120 and $aabb$ = 58) and deficit of recombinant phenotypes ($A\_bb$ = 10 and $aaB\_$ = 12) confirms linkage.
 
 Recombination frequency $= \frac{10 + 12}{200} \times 100\% = 11\%$. Map distance = $11\ \mathrm{cM}$.
 
@@ -197,7 +197,7 @@ A population has allele frequencies $p = 0.8$ ($A$) and $q = 0.2$ ($a$). The rec
 
 Genotype frequencies: $p^2 = 0.64$ ($AA$), $2pq = 0.32$ ($Aa$), $q^2 = 0.04$ ($aa$).
 
-Fitness: $w_{AA} = 1$, $w_{Aa} = 1$, $w_{aa} = 1 - s = 0.5$.
+Fitness: $w_{AA} = 1$$w_{Aa} = 1$$w_{aa} = 1 - s = 0.5$.
 
 Mean fitness: $\bar{w} = p^2 \cdot 1 + 2pq \cdot 1 + q^2 \cdot 0.5 = 0.64 + 0.32 + 0.02 = 0.98$.
 
@@ -215,9 +215,9 @@ The rate of allele frequency change due to drift can be approximated by the stan
 
 $$\sigma_q = \sqrt◆LB◆\frac{pq}{2N}◆RB◆$$
 
-where $N$ is the effective population size.
+Where $N$ is the effective population size.
 
-**Worked Example.** In a population of $N = 100$ with $p = 0.5$, $q = 0.5$:
+**Worked Example.** In a population of $N = 100$ with $p = 0.5$$q = 0.5$:
 
 $$\sigma_q = \sqrt◆LB◆\frac{0.5 \times 0.5}{2 \times 100}◆RB◆ = \sqrt◆LB◆\frac{0.25}{200}◆RB◆ = \sqrt{0.00125} = 0.0354$$
 
@@ -237,7 +237,7 @@ Gene flow (migration) changes allele frequencies when individuals move between p
 
 $$\Delta p = m(p_m - p)$$
 
-where $m$ is the migration rate (proportion of the population that are migrants), $p_m$ is the allele frequency in the migrant population, and $p$ is the allele frequency in the resident population.
+Where $m$ is the migration rate (proportion of the population that are migrants), $p_m$ is the allele frequency in the migrant population, and $p$ is the allele frequency in the resident population.
 
 **Worked Example.** A resident population has $p = 0.9$ for allele $A$. Migrants arrive with $p_m = 0.3$. The migration rate is $m = 0.1$ (10% migrants).
 
@@ -277,21 +277,21 @@ Sympatric speciation occurs without geographic separation.
 
 **Pre-zygotic barriers** (prevent mating or fertilisation):
 
-| Type                | Example                                    |
+| Type | Example |
 | ------------------- | ------------------------------------------ |
-| Habitat isolation   | Different microhabitats within same area   |
-| Temporal isolation  | Different breeding seasons                |
-| Behavioural isolation | Different courtship dances/songs          |
-| Mechanical isolation | Incompatible genital structures           |
-| Gametic isolation   | Sperm cannot fertilise egg (e.g., sea urchins) |
+| Habitat isolation | Different microhabitats within same area |
+| Temporal isolation | Different breeding seasons |
+| Behavioural isolation | Different courtship dances/songs |
+| Mechanical isolation | Incompatible genital structures |
+| Gametic isolation | Sperm cannot fertilise egg (e.g., sea urchins) |
 
 **Post-zygotic barriers** (reduce fitness of hybrid offspring):
 
-| Type                  | Example                                        |
+| Type | Example |
 | --------------------- | ---------------------------------------------- |
-| Hybrid inviability    | Zygote does not develop properly               |
-| Hybrid sterility      | Mule (horse $\times$ donkey): healthy but sterile |
-| Hybrid breakdown      | F1 hybrids are fertile, but F2 generation has reduced fitness |
+| Hybrid inviability | Zygote does not develop properly |
+| Hybrid sterility | Mule (horse $\times$ donkey): healthy but sterile |
+| Hybrid breakdown | F1 hybrids are fertile, but F2 generation has reduced fitness |
 
 ## 6. Selection and Evolution
 
@@ -309,9 +309,9 @@ The **selection coefficient ($s$)** measures the reduction in fitness of a genot
 
 | Genotype | Relative Fitness ($w$) | Selection Coefficient ($s$) |
 | -------- | ---------------------- | -------------------------- |
-| $AA$     | 1.0                    | 0                          |
-| $Aa$     | 1.0                    | 0                          |
-| $aa$     | $1 - s$                | $s$                        |
+| $AA$ | 1.0 | 0 |
+| $Aa$ | 1.0 | 0 |
+| $aa$ | $1 - s$ | $s$ |
 
 If $s = 1$ (lethal recessive): $aa$ individuals die before reproducing. The frequency of $a$ decreases by approximately $sq^2$ per generation (for small $q$).
 
@@ -331,7 +331,7 @@ The molecular clock hypothesis states that mutations accumulate in DNA at a roug
 
 $$\text{Divergence time} = \frac◆LB◆d◆RB◆◆LB◆2\mu◆RB◆$$
 
-where $d$ is the proportion of nucleotide sites that differ between two species, and $\mu$ is the mutation rate per site per year. The factor of 2 accounts for independent accumulation of mutations in both lineages.
+Where $d$ is the proportion of nucleotide sites that differ between two species, and $\mu$ is the mutation rate per site per year. The factor of 2 accounts for independent accumulation of mutations in both lineages.
 
 **Worked Example.** Two species of primate differ at 3.6% of nucleotide sites in a non-coding region. The mutation rate is estimated at $\mu = 2.5 \times 10^{-9}$ substitutions per site per year.
 
@@ -359,7 +359,7 @@ In summer squash, fruit colour is determined by two genes. Gene $W$ (dominant) p
 
 Degrees of freedom = $3 - 1 = 2$. Critical value at $p = 0.05$ for 2 df = 5.99.
 
-Since $\chi^2 = 0.167 \ll 5.99$, we accept the null hypothesis. The observed results fit the 12:3:1 ratio for dominant epistasis.
+Since $\chi^2 = 0.167 \ll 5.99$We accept the null hypothesis. The observed results fit the 12:3:1 ratio for dominant epistasis.
 
 <b>If you get this wrong, revise:</b> [Types of Epistasis](#12-types-of-epistasis)
 
@@ -367,7 +367,7 @@ Since $\chi^2 = 0.167 \ll 5.99$, we accept the null hypothesis. The observed res
 
 <details>
 <summary>Problem 2</summary>
-Two genes, $G$ and $H$, are linked on the same chromosome. A test cross $GgHh \times gghh$ produces 1000 offspring: $GgHh$ = 410, $gghh$ = 390, $Gghh$ = 105, $ggHh$ = 95. (a) Calculate the recombination frequency and the map distance between $G$ and $H$. (b) Are the genes linked? Justify your answer with a chi-squared test against the 1:1:1:1 ratio expected for unlinked genes.
+Two genes, $G$ and $H$Are linked on the same chromosome. A test cross $GgHh \times gghh$ produces 1000 offspring: $GgHh$ = 410, $gghh$ = 390, $Gghh$ = 105, $ggHh$ = 95. (a) Calculate the recombination frequency and the map distance between $G$ and $H$. (b) Are the genes linked? Justify your answer with a chi-squared test against the 1:1:1:1 ratio expected for unlinked genes.
 
 **Answer.** (a) Parental phenotypes: $GgHh$ (410) + $gghh$ (390) = 800. Recombinant phenotypes: $Gghh$ (105) + $ggHh$ (95) = 200. Recombination frequency = $200/1000 \times 100\% = 20\%$. Map distance = $20\ \mathrm{cM}$.
 
@@ -381,7 +381,7 @@ $= 102.4 + 78.4 + 84.1 + 96.1 = 361.0$.
 
 Degrees of freedom = 3. Critical value at $p = 0.05$ for 3 df = 7.82.
 
-Since $\chi^2 = 361 \gg 7.82$, the genes are clearly linked. The enormous excess of parental types and deficit of recombinant types confirms strong linkage.
+Since $\chi^2 = 361 \gg 7.82$The genes are linked. The enormous excess of parental types and deficit of recombinant types confirms strong linkage.
 
 <b>If you get this wrong, revise:</b> [Linkage](#2-genetic-linkage-and-crossing-over)
 
@@ -434,7 +434,7 @@ Despite a census population of 500, the effective population size is only about 
 
 ### 8.2 The Bottleneck Effect
 
-A **population bottleneck** occurs when a population is drastically reduced in size, typically by a catastrophic event (natural disaster, hunting, habitat destruction). The surviving individuals carry only a subset of the original population's genetic diversity.
+A **population bottleneck** occurs when a population is drastically reduced in size, by a catastrophic event (natural disaster, hunting, habitat destruction). The surviving individuals carry only a subset of the original population's genetic diversity.
 
 Consequences:
 
@@ -541,7 +541,7 @@ $$\text{Recombination frequency (RF)} = \frac◆LB◆\text{Number of recombinant
 
 $1\%$ recombination frequency $= 1$ centimorgan (cM) $= 1$ map unit.
 
-**Worked Example.** In a test cross of $AaBb$ (both dominant alleles on the same chromosome, _cis_ configuration) with $aabb$, the following offspring are produced:
+**Worked Example.** In a test cross of $AaBb$ (both dominant alleles on the same chromosome, _cis_ configuration) with $aabb$The following offspring are produced:
 
 | Phenotype | Count | Type |
 | --------- | ----- | ---- |
@@ -564,7 +564,7 @@ $$\text{Expected DCO frequency} = \text{RF}_{AB} \times \text{RF}_{BC}$$
 
 $$\text{Interference} = 1 - \text{Coincidence}$$
 
-**Worked Example.** Three genes ($A$, $B$, $C$) are mapped. $\text{RF}_{AB} = 15\%$, $\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
+**Worked Example.** Three genes ($A$$B$$C$) are mapped. $\text{RF}_{AB} = 15\%$$\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
 
 Expected DCO $= 0.15 \times 0.10 = 0.015 = 1.5\%$.
 
@@ -588,7 +588,7 @@ This means 67% of expected double crossovers did not occur because the first cro
 
 **Worked Example: Pedigree analysis.** A normal woman whose father was haemophilic marries a normal man. What is the probability that their first son will be haemophilic?
 
-The woman's father was $X^hY$, so she must have inherited $X^h$ from him. Her mother was presumably $X^HX^H$ or $X^HX^h$. The woman is $X^HX^h$ (carrier). The man is $X^HY$.
+The woman's father was $X^hY$So she must have inherited $X^h$ from him. Her mother was presumably $X^HX^H$ or $X^HX^h$. The woman is $X^HX^h$ (carrier). The man is $X^HY$.
 
 Cross: $X^HX^h \times X^HY$
 
@@ -599,7 +599,7 @@ Cross: $X^HX^h \times X^HY$
 
 Probability of a haemophiliac son $= \frac{1}{4}$.
 
-However, the question asks specifically about the first son. The probability of having a son is $\frac{1}{2}$, and given it is a son, the probability he is haemophiliac is $\frac{1}{2}$. So $P = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$.
+However, the question asks specifically about the first son. The probability of having a son is $\frac{1}{2}$And given it is a son, the probability he is haemophiliac is $\frac{1}{2}$. So $P = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$.
 
 ## 11. Selection and Fitness
 
@@ -617,13 +617,13 @@ However, the question asks specifically about the first son. The probability of 
 
 Selection against a recessive allele is inefficient when the allele is rare because most copies of the recessive allele are "hidden" in heterozygotes, where they are not exposed to selection.
 
-**Worked Example.** A population has genotype frequencies: $AA = 0.64$, $Aa = 0.32$, $aa = 0.04$. The $aa$ genotype has a fitness of 0 (lethal recessive). What is the allele frequency of $a$ after one generation of selection?
+**Worked Example.** A population has genotype frequencies: $AA = 0.64$$Aa = 0.32$$aa = 0.04$. The $aa$ genotype has a fitness of 0 (lethal recessive). What is the allele frequency of $a$ after one generation of selection?
 
-Before selection: $p = 0.64 + \frac{0.32}{2} = 0.80$, $q = 0.04 + \frac{0.32}{2} = 0.20$.
+Before selection: $p = 0.64 + \frac{0.32}{2} = 0.80$$q = 0.04 + \frac{0.32}{2} = 0.20$.
 
 After selection (all $aa$ die): the surviving population consists of $AA$ (0.64) and $Aa$ (0.32), total $= 0.96$.
 
-Relative frequencies after selection: $AA = \frac{0.64}{0.96} = 0.667$, $Aa = \frac{0.32}{0.96} = 0.333$.
+Relative frequencies after selection: $AA = \frac{0.64}{0.96} = 0.667$$Aa = \frac{0.32}{0.96} = 0.333$.
 
 New allele frequency: $q' = \frac{0.333}{2} = 0.167$.
 
@@ -661,7 +661,7 @@ So the equilibrium frequency of $Hb^S$ is approximately 0.143 ($\approx 14\%$), 
 
 ### 12.1 The ABO Blood Group System
 
-The ABO blood group is determined by a single gene ($I$) with three alleles: $I^A$, $I^B$, and $i$.
+The ABO blood group is determined by a single gene ($I$) with three alleles: $I^A$$I^B$And $i$.
 
 | Genotype | Blood Group | Antigens on RBC | Antibodies in Plasma |
 | -------- | ---------- | --------------- | ------------------- |
@@ -727,14 +727,14 @@ Most monosomies are lethal in humans. Trisomies of chromosomes 13, 18, and 21 ar
 | Patau syndrome | 13 | 47,XX,+13 or 47,XY,+13 | Cleft lip/palate, polydactyly, heart defects; most die within first year |
 | Klinefelter syndrome | X | 47,XXY | Male, tall, small testes, infertile, gynaecomastia |
 | Turner syndrome | X | 45,X | Female, short stature, webbed neck, streak ovaries, infertile |
-| Triple X syndrome | X | 47,XXX | Female, usually normal, may have learning difficulties |
-| XYY syndrome | Y | 47,XYY | Male, usually normal, tall |
+| Triple X syndrome | X | 47,XXX | Female, normal, may have learning difficulties |
+| XYY syndrome | Y | 47,XYY | Male, normal, tall |
 
 ### 13.3 Translocation
 
 A **translocation** occurs when a segment of one chromosome breaks off and attaches to a non-homologous chromosome. In **reciprocal translocation**, two non-homologous chromosomes exchange segments.
 
-**Robertsonian translocation** involves two acrocentric chromosomes (13, 14, 15, 21, 22) fusing at their centromeres. The short arms are usually lost (they contain multiple copies of rRNA genes, so the loss is tolerated).
+**Robertsonian translocation** involves two acrocentric chromosomes (13, 14, 15, 21, 22) fusing at their centromeres. The short arms are lost (they contain multiple copies of rRNA genes, so the loss is tolerated).
 
 **Worked Example: Familial Down syndrome.** A carrier of a Robertsonian translocation between chromosomes 14 and 21 has the karyotype 45,XX,der(14;21)(q10;q10). Despite having only 45 chromosomes, the carrier is phenotypically normal because all essential genetic material is present.
 
@@ -810,13 +810,13 @@ Mitochondrial DNA is inherited maternally (only from the mother's egg; the sperm
 | Affected father $\times$ unaffected mother | No children affected |
 | Carrier mother (heteroplasmy) $\times$ unaffected father | Some children may be affected, depending on the proportion of mutant mitochondria in the egg |
 
-**Heteroplasmy**: a cell can contain a mixture of normal and mutant mitochondria. The proportion of mutant mitochondria determines the severity of the disease. If the proportion exceeds a threshold (typically 60--90%), symptoms appear.
+**Heteroplasmy**: a cell can contain a mixture of normal and mutant mitochondria. The proportion of mutant mitochondria determines the severity of the disease. If the proportion exceeds a threshold ( 60--90%), symptoms appear.
 
 ### 16.3 Dihybrid Cross with Linkage
 
 When two genes are linked on the same chromosome, the dihybrid ratio deviates from 9:3:3:1 because the alleles do not assort independently.
 
-**Worked Example.** In sweet peas, genes for flower colour ($P/p$, purple/white) and pollen shape ($L/l$, long/round) are linked on the same chromosome. A test cross of $PpLl$ (both dominant alleles on the same chromosome, _cis_) with $ppll$ produces:
+**Worked Example.** In sweet peas, genes for flower colour ($P/p$Purple/white) and pollen shape ($L/l$Long/round) are linked on the same chromosome. A test cross of $PpLl$ (both dominant alleles on the same chromosome, _cis_) with $ppll$ produces:
 
 | Phenotype | Observed | Type |
 | --------- | -------- | ---- |
@@ -835,7 +835,7 @@ The genes are 16.7 cM apart. Without linkage, the expected ratio would be 1:1:1:
 
 Some genes have more than two alleles in the population. The Hardy-Weinberg principle can be extended to multiple alleles.
 
-**Worked Example: ABO blood groups.** The alleles are $I^A$, $I^B$, and $i$, with frequencies $p$, $q$, and $r$ respectively, where $p + q + r = 1$.
+**Worked Example: ABO blood groups.** The alleles are $I^A$$I^B$And $i$With frequencies $p$$q$And $r$ respectively, where $p + q + r = 1$.
 
 Genotype frequencies: $p^2$ ($I^A I^A$), $q^2$ ($I^B I^B$), $r^2$ ($ii$), $2pq$ ($I^A I^B$), $2pr$ ($I^A i$), $2qr$ ($I^B i$).
 
@@ -843,7 +843,7 @@ Blood group frequencies: $p^2 + 2pr$ (A), $q^2 + 2qr$ (B), $2pq$ (AB), $r^2$ (O)
 
 **Worked Example.** In a population of 10,000, the blood group frequencies are: A = 4200, B = 1500, AB = 300, O = 4000.
 
-$r^2 = \frac{4000}{10000} = 0.40$, so $r = \sqrt{0.40} = 0.632$.
+$r^2 = \frac{4000}{10000} = 0.40$So $r = \sqrt{0.40} = 0.632$.
 
 $p^2 + 2pr = 0.42$.
 
@@ -877,7 +877,7 @@ Check: $p + q + r = 0.262 + 0.106 + 0.632 = 1.000$.
 
 After the bottleneck, the population recovers to 10,000, but the allele frequency remains at $p = 0.70$ (assuming no selection or migration).
 
-Loss of heterozygosity during bottleneck: $H' = H \times (1 - \frac{1}{2N})$, where $N = 10$.
+Loss of heterozygosity during bottleneck: $H' = H \times (1 - \frac{1}{2N})$Where $N = 10$.
 
 $H' = H \times (1 - \frac{1}{20}) = H \times 0.95$.
 
@@ -911,7 +911,7 @@ Common Pitfall Students often assume that similar structures in different organi
 
 ### 19.1 Measuring the Strength of Selection
 
-The **selection coefficient** ($s$) measures the reduction in fitness of a genotype relative to the fittest genotype. If the fittest genotype has fitness $w = 1.0$, then:
+The **selection coefficient** ($s$) measures the reduction in fitness of a genotype relative to the fittest genotype. If the fittest genotype has fitness $w = 1.0$Then:
 
 $$s = 1 - w$$
 
@@ -931,7 +931,7 @@ The change in allele frequency per generation due to selection against a recessi
 
 $$\Delta q \approx \frac{-spq^2}{1 - sq^2}$$
 
-**Worked Example.** $p = 0.60$, $q = 0.40$, $s = 0.10$.
+**Worked Example.** $p = 0.60$$q = 0.40$$s = 0.10$.
 
 $\Delta q \approx \frac◆LB◆-0.10 \times 0.60 \times 0.16◆RB◆◆LB◆1 - 0.10 \times 0.16◆RB◆ = \frac{-0.0096}{0.984} = -0.0098$.
 
@@ -1029,7 +1029,7 @@ Comparing genomes between species provides insights into evolution:
 
 - Humans and chimpanzees share approximately 98.8% of their DNA sequence.
 - The number of chromosomal differences between species can indicate evolutionary distance (e.g., humans have 46 chromosomes; chimpanzees have 48, reflecting a fusion event of two ancestral ape chromosomes to form human chromosome 2).
-- Genes conserved across widely divergent species (e.g., homeobox/Hox genes) are typically involved in fundamental developmental processes.
+- Genes conserved across widely divergent species (e.g., homeobox/Hox genes) are involved in fundamental developmental processes.
 
 ## 18. Gene Expression Regulation: Beyond Epigenetics
 
@@ -1097,7 +1097,7 @@ The **selection coefficient ($s$)** measures the reduction in fitness of a genot
 | -------- | ------------- | --------------------------- |
 | AA | 1.0 | 0 (reference) |
 | Aa | 1.0 | 0 |
-| aa | $1 - s$ | $s$ (e.g., if $s = 0.5$, aa individuals produce 50% fewer offspring) |
+| aa | $1 - s$ | $s$ (e.g., if $s = 0.5$Aa individuals produce 50% fewer offspring) |
 
 **Selection against a recessive allele:** when $s$ is small, the change in allele frequency per generation ($\Delta q$) is approximately:
 
@@ -1115,7 +1115,7 @@ The frequency of the recessive allele decreases by approximately 0.0125 per gene
 
 **Bottleneck effect:** a population is reduced to a small number of individuals, and genetic diversity is lost. The surviving population is not representative of the original population.
 
-**Example:** A population of 100,000 is reduced to 10 individuals by a natural disaster. If the original population had 3 alleles at a locus with frequencies $p = 0.6$, $q = 0.3$, $r = 0.1$, after the bottleneck some alleles may be lost entirely (especially rare alleles like $r$).
+**Example:** A population of 100,000 is reduced to 10 individuals by a natural disaster. If the original population had 3 alleles at a locus with frequencies $p = 0.6$$q = 0.3$$r = 0.1$After the bottleneck some alleles may be lost entirely (especially rare alleles like $r$).
 
 **Probability of allele loss in a bottleneck:** the probability that an allele with frequency $q$ is lost in a population of $N$ individuals after a bottleneck is approximately:
 
@@ -1129,7 +1129,7 @@ There is approximately a 12% chance that allele $r$ is lost after this bottlenec
 
 ### 19.4 Effective Population Size ($N_e$)
 
-The effective population size is usually smaller than the actual (census) population size because:
+The effective population size is smaller than the actual (census) population size because:
 
 1. Unequal sex ratio: if there are 100 males and 900 females, $N_e$ is much less than 1000.
 
@@ -1162,8 +1162,8 @@ $$\frac{1}{N_e} = \frac{1}{t}\left(\frac{1}{N_1} + \frac{1}{N_2} + \cdots + \fra
 | Patau syndrome | 47,XX,+13 or 47,XY,+13 | M or F | Severe brain and facial abnormalities; heart defects; most die within first 3 months |
 | Turner syndrome | 45,X | F | Short stature; webbed neck; infertility (streak ovaries); normal intelligence |
 | Klinefelter syndrome | 47,XXY | M | Tall stature; small testes; infertility; gynaecomastia (breast development); mild learning difficulties |
-| Triple X syndrome | 47,XXX | F | Usually asymptomatic; may have tall stature and mild learning difficulties |
-| Jacob's syndrome | 47,XYY | M | Usually asymptomatic; taller than average; normal fertility |
+| Triple X syndrome | 47,XXX | F | asymptomatic; may have tall stature and mild learning difficulties |
+| Jacob's syndrome | 47,XYY | M | asymptomatic; taller than average; normal fertility |
 
 ### 20.3 Karyotyping
 
@@ -1180,7 +1180,7 @@ Uses: diagnosing chromosomal abnormalities (aneuploidy, translocations, deletion
 
 | Pattern | Interpretation | Key Features |
 | ------- | -------------- | ------------ |
-| Autosomal dominant | Affected individuals in every generation; both sexes affected equally; affected individual usually has at least one affected parent | Non-affected individuals do not transmit the condition |
+| Autosomal dominant | Affected individuals in every generation; both sexes affected equally; affected individual has at least one affected parent | Non-affected individuals do not transmit the condition |
 | Autosomal recessive | May skip generations; both sexes affected equally; affected individuals often have unaffected parents | More common in consanguineous marriages |
 | X-linked recessive | More males than females affected; affected males pass the allele to all daughters (who are carriers) but not to sons; carrier females pass to 50% of sons | Cannot be transmitted from father to son |
 | X-linked dominant | Affected males pass to all daughters; affected females pass to 50% of children; more females than males affected | Can be transmitted from father to daughter |
@@ -1486,11 +1486,11 @@ Epistasis occurs when the allele of one gene masks or modifies the expression of
 
 | Type | Description | Example | Ratio (dihybrid cross) |
 | ---- | ----------- | ------- | ---------------------- |
-| Recessive epistasis | Homozygous recessive at one locus (aa) masks expression of alleles at the other locus | Coat colour in mice: B (black) > b (brown); C (colour pigment) > c (no pigment, albino). cc masks B/b | 9:3:4 |
+| Recessive epistasis | Homozygous recessive at one locus (aa) masks expression of alleles at the other locus | Coat colour in mice: B (black) > b (brown); C (colour pigment) > c (no pigment, albino). Cc masks B/b | 9:3:4 |
 | Dominant epistasis | Dominant allele at one locus (A) masks expression of alleles at the other locus | Feather colour in poultry: I (inhibits colour) > i (allows colour); B (black) > b (brown). I_ masks B/b | 12:3:1 |
 | Complementary gene action | Both dominant alleles (A_ and B_) are needed for a trait | Flower colour in sweet peas: C and P both needed for purple flowers. C_pp or ccP_ = white | 9:7 |
 | Duplicate gene action | Either dominant allele alone (A_ or B_) is sufficient | Seed shape in shepherd's purse: A_ or B_ gives triangular seeds; aabb gives oval seeds | 15:1 |
-| Supplementary gene action | One dominant allele (A_) produces a trait; B_ modifies it (9:3:4 but with modification) | Coat colour in Labrador retrievers: E (pigment) > e (no pigment, yellow); B (black) > b (brown). ee = yellow; E_B_ = black; E_bb = brown | 9:3:4 |
+| Supplementary gene action | One dominant allele (A_) produces a trait; B_ modifies it (9:3:4 but with modification) | Coat colour in Labrador retrievers: E (pigment) > e (no pigment, yellow); B (black) > b (brown). Ee = yellow; E_B_ = black; E_bb = brown | 9:3:4 |
 
 ### 28.2 Worked Example: Recessive Epistasis in Mice
 
@@ -1604,7 +1604,7 @@ Degrees of freedom = number of categories - 1 = 2 - 1 = 1.
 
 Critical value at $p = 0.05$ with 1 df = 3.841.
 
-Since $0.48 < 3.841$, we accept the null hypothesis: the observed results are consistent with the expected 3:1 ratio.
+Since $0.48 < 3.841$We accept the null hypothesis: the observed results are consistent with the expected 3:1 ratio.
 
 ### 31.3 Chi-Squared Rules
 
@@ -1643,7 +1643,7 @@ Height is a classic example of polygenic inheritance:
 
 ### 33.1 The lac Operon
 
-The lac operon in _E. coli_ controls the metabolism of lactose:
+The lac operon in _E. Coli_ controls the metabolism of lactose:
 
 | Component | Description |
 | --------- | ----------- |
@@ -1853,3 +1853,15 @@ Where:
 
 ---
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

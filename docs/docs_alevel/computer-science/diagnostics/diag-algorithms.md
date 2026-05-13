@@ -80,18 +80,18 @@ After pass 2: [27, 3, 9, 38, 10, 43, 82].
 
 ---
 ### UT-3: Binary Search Trace
-**Question:** The sorted array is: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]. Perform a binary search for the value 23. Show the values of `low`, `high`, `mid`, and the comparison at each step. How many comparisons are needed? State the maximum number of comparisons for binary search on an array of size $n$.
+**Question:** The sorted array is: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]. Perform a binary search for the value 23. Show the values of `low``high``mid`And the comparison at each step. How many comparisons are needed? State the maximum number of comparisons for binary search on an array of size $n$.
 
 **Solution:**
 
-Array indices: 0  1  2  3   4   5   6   7   8   9
-Values:      [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+Array indices: 0 1 2 3 4 5 6 7 8 9
+Values: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
 
-Step 1: low $= 0$, high $= 9$. mid $= (0 + 9) / 2 = 4$. A[4] $= 16$. $16 \lt 23$, search right half.
+Step 1: low $= 0$High $= 9$. Mid $= (0 + 9) / 2 = 4$. A[4] $= 16$. $16 \lt 23$Search right half.
 
-Step 2: low $= 5$, high $= 9$. mid $= (5 + 9) / 2 = 7$. A[7] $= 56$. $56 \gt 23$, search left half.
+Step 2: low $= 5$High $= 9$. Mid $= (5 + 9) / 2 = 7$. A[7] $= 56$. $56 \gt 23$Search left half.
 
-Step 3: low $= 5$, high $= 6$. mid $= (5 + 6) / 2 = 5$. A[5] $= 23$. $23 = 23$. Found!
+Step 3: low $= 5$High $= 6$. Mid $= (5 + 6) / 2 = 5$. A[5] $= 23$. $23 = 23$. Found!
 
 Total comparisons: 3.
 
@@ -191,9 +191,9 @@ def fib(n):
 
 (b) `fib(2)` is called 3 times: once from `fib(4)` and once from `fib(3)` on the left, and once from `fib(3)` on the right. More precisely: in the tree above, `fib(2)` appears at three distinct nodes.
 
-(c) At each level of recursion, the number of function calls approximately doubles (each call spawns two more, except the base cases). The depth is $n$, giving approximately $2^n$ nodes. More precisely, the number of calls follows the Fibonacci sequence itself: $T(n) = T(n-1) + T(n-2) + 1$, which gives $T(n) \approx 2 \times \text{fib}(n+1) - 1$, growing as $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$. This is commonly stated as $O(2^n)$ as an upper bound.
+(c) At each level of recursion, the number of function calls approximately doubles (each call spawns two more, except the base cases). The depth is $n$Giving approximately $2^n$ nodes. More precisely, the number of calls follows the Fibonacci sequence itself: $T(n) = T(n-1) + T(n-2) + 1$Which gives $T(n) \approx 2 \times \text{fib}(n+1) - 1$Growing as $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$. This is commonly stated as $O(2^n)$ as an upper bound.
 
-Memoisation stores the result of `fib(k)` the first time it is computed. Subsequent calls to `fib(k)` simply retrieve the stored value in $O(1)$ time. Since there are only $n$ distinct values of `fib(k)` to compute ($k = 0, 1, \ldots, n$), the total work is $O(n)$.
+Memoisation stores the result of `fib(k)` the first time it is computed. Subsequent calls to `fib(k)` retrieve the stored value in $O(1)$ time. Since there are only $n$ distinct values of `fib(k)` to compute ($k = 0, 1, \ldots, n$), the total work is $O(n)$.
 
 (d) Iterative version:
 

@@ -20,7 +20,7 @@ hide_table_of_contents: true
 
 **Trojan:** Malware disguised as legitimate software. Does not self-replicate. Tricks users into installing it (e.g., fake software download). May create backdoors for attackers.
 
-**Ransomware:** Encrypts the victim's files and demands payment (usually cryptocurrency) for the decryption key. Can spread as a worm (e.g., WannaCry) or be delivered via phishing.
+**Ransomware:** Encrypts the victim's files and demands payment ( cryptocurrency) for the decryption key. Can spread as a worm (e.g., WannaCry) or be delivered via phishing.
 
 (b) **Phishing:** Attackers send fraudulent emails (or messages) appearing to be from trusted sources (banks, colleagues, services) to trick recipients into revealing sensitive information (passwords, credit card numbers) or clicking malicious links.
 
@@ -62,7 +62,7 @@ Two indicators: (1) The sender's email address does not match the claimed organi
 
 (b) Two ethical issues: (1) **Bias and discrimination:** AI systems trained on biased data may perpetuate or amplify existing societal biases (e.g., hiring algorithms that discriminate against certain groups). (2) **Privacy and surveillance:** AI-powered facial recognition and data analysis can enable mass surveillance, eroding individual privacy and autonomy.
 
-(c) Individual rights typically include: (1) Right of access -- to know what personal data is held. (2) Right to rectification -- to correct inaccurate data. (3) Right to erasure ("right to be forgotten") -- to request deletion of data. (4) Right to data portability -- to receive data in a structured, machine-readable format. (5) Right to object -- to processing based on legitimate interests or for direct marketing.
+(c) Individual rights include: (1) Right of access -- to know what personal data is held. (2) Right to rectification -- to correct inaccurate data. (3) Right to erasure ("right to be forgotten") -- to request deletion of data. (4) Right to data portability -- to receive data in a structured, machine-readable format. (5) Right to object -- to processing based on legitimate interests or for direct marketing.
 
 (d) **Ethical concerns:** (1) Continuous location tracking enables detailed profiling of users' movements, habits, and associations without meaningful consent. (2) Users may not fully understand or appreciate the extent of surveillance, making "consent" questionable.
 
@@ -127,4 +127,4 @@ Both are necessary because they protect against different attack vectors: AES ag
 
 Legal consequences: The company may face substantial fines (under GDPR, up to 4% of global turnover), lawsuits from affected employees, regulatory investigation, mandatory notification to affected individuals, and reputational damage.
 
-(d) **Responsible disclosure** is the practice of reporting security vulnerabilities to the affected organisation privately, giving them a reasonable timeframe to fix the issue before public disclosure. The process typically involves: (1) Discovering a vulnerability. (2) Notifying the organisation through a secure channel. (3) Allowing adequate time (typically 30--90 days) for a fix. (4) Not exploiting the vulnerability or sharing details publicly before the fix is deployed. This balances the need for public awareness with the organisation's ability to protect its users.
+(d) **Responsible disclosure** is the practice of reporting security vulnerabilities to the affected organisation privately, giving them a reasonable timeframe to fix the issue before public disclosure. The process involves: (1) Discovering a vulnerability. (2) Notifying the organisation through a secure channel. (3) Allowing adequate time ( 30--90 days) for a fix. (4) Not exploiting the vulnerability or sharing details publicly before the fix is deployed. This balances the need for public awareness with the organisation's ability to protect its users.

@@ -47,7 +47,7 @@ The claim is correct.
 
 $$P(X = 10) = \binom{20}{10}\left(\frac{1}{2}\right)^{20} = \frac{184756}{1048576} \approx 0.176$$
 
-The mode of a binomial distribution is $\lfloor (n+1)p \rfloor$. Here $\lfloor 21 \times 0.5 \rfloor = \lfloor 10.5 \rfloor = 10$, confirming $X = 10$ is the mode.
+The mode of a binomial distribution is $\lfloor (n+1)p \rfloor$. Here $\lfloor 21 \times 0.5 \rfloor = \lfloor 10.5 \rfloor = 10$Confirming $X = 10$ is the mode.
 
 **(c)** The conditions are:
 1. Fixed $n = 20$ draws. (Yes)
@@ -82,7 +82,7 @@ From standard normal tables: $\Phi(1.25) = 0.8944$.
 
 $$P(X \gt 185) = 1 - 0.8944 = 0.1056$$
 
-**(b)** The second student is correct. The student who got $0.8944$ looked up $P(Z \lt 1.25)$, which gives the probability of being **shorter** than $185\,\mathrm{cm}$, not taller. The question asks for $P(X \gt 185)$, so the answer is $1 - 0.8944 = 0.1056$.
+**(b)** The second student is correct. The student who got $0.8944$ looked up $P(Z \lt 1.25)$Which gives the probability of being **shorter** than $185\,\mathrm{cm}$Not taller. The question asks for $P(X \gt 185)$So the answer is $1 - 0.8944 = 0.1056$.
 
 ---
 
@@ -96,18 +96,18 @@ A student claims this follows $\mathrm{Poi}(2)$ directly without justification.
 
 **(a)** Explain what assumptions must be verified.
 
-**(b)** Compute the probability and compare it with the exact binomial probability if $n = 200$, $p = 0.01$.
+**(b)** Compute the probability and compare it with the exact binomial probability if $n = 200$$p = 0.01$.
 
 [Difficulty: hard. Tests the conditions for Poisson approximation and comparison with exact binomial.]
 
 **Solution:**
 
 **(a)** For the Poisson approximation to the binomial, we need:
-1. $n$ is large (typically $n \geq 50$).
-2. $p$ is small (typically $p \leq 0.1$).
-3. $np$ is moderate (typically $np \leq 15$).
+1. $n$ is large ( $n \geq 50$).
+2. $p$ is small ( $p \leq 0.1$).
+3. $np$ is moderate ( $np \leq 15$).
 
-For the call centre, if we model each second as a Bernoulli trial with $p = \frac{2}{60} = \frac{1}{30}$ and $n = 60$, then $np = 2$. The conditions are satisfied since $n = 60 \geq 50$, $p = \frac{1}{30} \lt 0.1$, and $np = 2 \leq 15$.
+For the call centre, if we model each second as a Bernoulli trial with $p = \frac{2}{60} = \frac{1}{30}$ and $n = 60$Then $np = 2$. The conditions are satisfied since $n = 60 \geq 50$$p = \frac{1}{30} \lt 0.1$And $np = 2 \leq 15$.
 
 However, the student's claim that this is "directly $\mathrm{Poi}(2)$" is incomplete — the Poisson is an approximation that must be justified.
 
@@ -135,7 +135,7 @@ The weights of apples from orchard $A$ follow $N(150, 12)$ and from orchard $B$ 
 
 **(a)** Find the probability that the total weight of the bag exceeds $750\,\mathrm{g}$.
 
-**(b)** A student claims that since the apples are independent, the total weight is simply $3 \times 150 + 2 \times 140 = 730\,\mathrm{g}$ and the probability of exceeding $750\,\mathrm{g}$ is $50\%$ since $750$ is close to the mean. Explain why this reasoning is wrong.
+**(b)** A student claims that since the apples are independent, the total weight is $3 \times 150 + 2 \times 140 = 730\,\mathrm{g}$ and the probability of exceeding $750\,\mathrm{g}$ is $50\%$ since $750$ is close to the mean. Explain why this reasoning is wrong.
 
 [Difficulty: hard. Combines linear combinations of normal distributions with probability calculations.]
 
@@ -157,4 +157,4 @@ $$P(T \gt 750) = P\!\left(Z \gt \frac{750 - 730}{\sqrt{882}}\right) = P\!\left(Z
 
 $$= 1 - \Phi(0.673) \approx 1 - 0.7495 = 0.2505$$
 
-**(b)** The student's error is confusing the mean with the distribution. While the mean total weight is indeed $730\,\mathrm{g}$, the total weight is a random variable with spread (standard deviation $\approx 29.7\,\mathrm{g}$). The probability of exceeding $750\,\mathrm{g}$ is not $50\%$ — it is approximately $25\%$. The student failed to account for the variance of the sum. The probability is $50\%$ only at the mean ($730\,\mathrm{g}$), not at $750\,\mathrm{g}$.
+**(b)** The student's error is confusing the mean with the distribution. While the mean total weight is indeed $730\,\mathrm{g}$The total weight is a random variable with spread (standard deviation $\approx 29.7\,\mathrm{g}$). The probability of exceeding $750\,\mathrm{g}$ is not $50\%$ — it is approximately $25\%$. The student failed to account for the variance of the sum. The probability is $50\%$ only at the mean ($730\,\mathrm{g}$), not at $750\,\mathrm{g}$.

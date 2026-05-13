@@ -11,19 +11,19 @@ slug: thread-local-storage
 # Thread-Local Storage (TLS)
 
 This section covers the `thread_local` keyword, TLS implementation mechanisms, performance
-characteristics, initialization guarantees, TLS in thread pools, and practical patterns such as
-thread-local random number generators.
+Characteristics, initialization guarantees, TLS in thread pools, and practical patterns such as
+Thread-local random number generators.
 
 ## `thread_local` Keyword and Storage Duration
 
 The `thread_local` keyword [N4950 §6.7.3] specifies that a variable has **thread storage duration**:
-a new instance of the variable is created for each thread, and it is destroyed when the thread
-exits. The variable is initialized before its first use in each thread.
+A new instance of the variable is created for each thread, and it is destroyed when the thread
+Exits. The variable is initialized before its first use in each thread.
 
 $$\mathrm{thread\_local {} T\, x \implies \forall\, t \in \mathrm{Threads{}: \exists!\, x_t$$
 
 Thread-local variables can be declared at namespace scope, at block scope, or as `static` class
-members [N4950 §6.7.3]:
+Members [N4950 §6.7.3]:
 
 ```cpp
 #include <iostream>
@@ -47,28 +47,28 @@ int main() {
 
 Each thread sees its own independent copy of `thread_id_value`. The output of the main thread's
 `print_id()` call depends on whether it runs before or after the worker threads' calls, but each
-thread always sees the value `42` after its own assignment.
+Thread always sees the value `42` after its own assignment.
 
 ### Formal Storage Duration Hierarchy
 
 C++ defines four storage durations [N4950 §6.7.3]:
 
-| Storage Duration | Allocation      | Deallocation         | Instance Count |
+| Storage Duration | Allocation | Deallocation | Instance Count |
 | :--------------- | :-------------- | :------------------- | :------------- |
-| **automatic**    | On block entry  | On block exit        | Per invocation |
-| **static**       | Before `main`   | After `main` returns | Exactly one    |
-| **thread**       | On thread entry | On thread exit       | Per thread     |
-| **dynamic**      | `operator new`  | `operator delete`    | As requested   |
+| **automatic** | On block entry | On block exit | Per invocation |
+| **static** | Before `main` | After `main` returns | Exactly one |
+| **thread** | On thread entry | On thread exit | Per thread |
+| **dynamic** | `operator new` | `operator delete` | As requested |
 
 Thread storage duration sits between static and dynamic: like static, the variable persists across
-function calls; like dynamic, each thread gets its own independent instance. The standard does not
-specify _when_ within a thread's lifetime the storage is allocated, only that it must be available
-before the variable's first odr-use [N4950 §6.7.3].
+Function calls; like dynamic, each thread gets its own independent instance. The standard does not
+Specify _when_ within a thread's lifetime the storage is allocated, only that it must be available
+Before the variable's first odr-use [N4950 §6.7.3].
 
 ### `thread_local` at Class Scope
 
-When a `static` class member is declared `thread_local`, each thread gets its own copy of that
-static member. The member is shared across all instances of the class _within the same thread_:
+When a `static` class member is declared `thread_local`Each thread gets its own copy of that
+Static member. The member is shared across all instances of the class _within the same thread_:
 
 ```cpp
 #include <iostream>
@@ -101,7 +101,7 @@ int main() {
 ## `std::this_thread::get_id()`
 
 `std::this_thread::get_id()` [N4950 §31.4.4.1.6] returns a unique identifier for the current thread.
-The return type is `std::thread::id`, which is a lightweight, copyable, and comparable type [N4950
+The return type is `std::thread::id`Which is a lightweight, copyable, and comparable type [N4950
 §31.4.4.1.5].
 
 ```cpp
@@ -138,12 +138,12 @@ int main() {
 ## TLS Implementation Mechanisms
 
 Different platforms implement TLS differently, which affects access cost and initialization
-behavior.
+Behavior.
 
 ### `__thread` Keyword (GCC/Clang Extension)
 
 The `__thread` keyword is a compiler extension that provides TLS with static initialization only. It
-cannot be used with types that require dynamic initialization (non-trivial constructors).
+Cannot be used with types that require dynamic initialization (non-trivial constructors).
 
 ```cpp
 __thread int per_thread_counter = 0;  // Static init only
@@ -151,7 +151,7 @@ __thread int per_thread_counter = 0;  // Static init only
 ```
 
 `__thread` generates efficient code: the variable address is computed from the thread pointer
-register with a fixed offset, requiring a single load instruction.
+Register with a fixed offset, requiring a single load instruction.
 
 ### `pthread_key_create` (POSIX API)
 
@@ -188,13 +188,13 @@ int get_tls() {
 ```
 
 `pthread_key_create` is slower than `__thread` because it involves a function call and a hash table
-lookup. However, it supports dynamic initialization and destruction callbacks.
+Lookup. However, it supports dynamic initialization and destruction callbacks.
 
 ### Segment Registers on x86-64 (Linux/glibc)
 
 On x86-64 Linux, glibc implements `thread_local` using the `fs` segment register (or `gs` on some
-systems). The `fs` register points to the `thread_control_block` (TCB), which contains a pointer to
-the TLS area:
+Systems). The `fs` register points to the `thread_control_block` (TCB), which contains a pointer to
+The TLS area:
 
 ```
 fs:0x00  -> Thread pointer (TCB)
@@ -209,54 +209,54 @@ mov rax, fs:[tls_offset_for_var]
 ```
 
 This is a single instruction with a fixed offset, making it nearly as fast as accessing a global
-variable. The overhead compared to a regular global is typically 1 extra cycle (the segment register
-load).
+Variable. The overhead compared to a regular global is 1 extra cycle (the segment register
+Load).
 
 ### Initial Exec vs. General Dynamic TLS Models
 
 The TLS access model determines how the TLS offset is resolved:
 
 - **Initial Exec (IE):** The TLS offset is embedded directly in the code (via a GOT entry resolved
-  at load time). Fast access, but the executable cannot be loaded via `dlopen` with new TLS
-  variables. Used when the TLS variable is defined in the executable or a library loaded at startup.
+ at load time). Fast access, but the executable cannot be loaded via `dlopen` with new TLS
+ variables. Used when the TLS variable is defined in the executable or a library loaded at startup.
 - **General Dynamic (GD):** The TLS offset is resolved via a function call (`__tls_get_addr`) at
-  runtime. Slower (function call + possible allocation), but works with dynamically loaded
-  libraries.
+ runtime. Slower (function call + possible allocation), but works with dynamically loaded
+ libraries.
 
 The compiler selects the model based on whether the variable is in the executable, a startup
-library, or a dynamically loaded library. The `-ftls-model=initial-exec` flag forces the fast model
-when you know the library will not be `dlopen`ed.
+Library, or a dynamically loaded library. The `-ftls-model=initial-exec` flag forces the fast model
+When you know the library will not be `dlopen`Ed.
 
 ### ELF TLS Sections
 
 On ELF platforms (Linux, BSD), `thread_local` variables are stored in special sections of the
-executable or shared object:
+Executable or shared object:
 
-| Section  | Purpose                                                      |
+| Section | Purpose |
 | :------- | :----------------------------------------------------------- |
 | `.tdata` | TLS data for initialized variables (zero-cost: memory image) |
-| `.tbss`  | TLS BSS for zero-initialized variables                       |
-| `.tbss`  | Thread-local BSS for zero-initialized variables              |
+| `.tbss` | TLS BSS for zero-initialized variables |
+| `.tbss` | Thread-local BSS for zero-initialized variables |
 
 The linker combines `.tdata` and `.tbss` from all participating modules into a **TLS template**
-described by the `PT_TLS` program header. Each new thread gets a copy of this template at thread
-creation time. The `__tls_get_addr` function is used for dynamically loaded modules where the offset
-cannot be computed at load time.
+Described by the `PT_TLS` program header. Each new thread gets a copy of this template at thread
+Creation time. The `__tls_get_addr` function is used for dynamically loaded modules where the offset
+Cannot be computed at load time.
 
 ## TLS Performance Characteristics
 
 ### Access Cost
 
-| TLS Model           | Access Cost                      | Use Case                              |
+| TLS Model | Access Cost | Use Case |
 | :------------------ | :------------------------------- | :------------------------------------ |
-| **Local Exec**      | ~0 cycles (offset from TP known) | `thread_local` in the main executable |
-| **Initial Exec**    | ~1 cycle (segment register load) | Executables, startup-linked libraries |
-| **General Dynamic** | ~20-50 cycles (function call)    | Dynamically loaded libraries (`.so`)  |
+| **Local Exec** | ~0 cycles (offset from TP known) | `thread_local` in the main executable |
+| **Initial Exec** | ~1 cycle (segment register load) | Executables, startup-linked libraries |
+| **General Dynamic** | ~20-50 cycles (function call) | Dynamically loaded libraries (`.so`) |
 
 ### Initialization Overhead
 
 The first access to a `thread_local` variable with dynamic initialization triggers a guard check and
-possibly a constructor call. The compiler generates code equivalent to:
+Possibly a constructor call. The compiler generates code equivalent to:
 
 ```cpp
 // Conceptual: what the compiler generates for thread_local std::string s;
@@ -281,13 +281,13 @@ std::string& get_s() {
 This means:
 
 - The first access in each thread has a higher cost (guard check + possible initialization).
-- Subsequent accesses are cheap (just the guard check, typically branch-predicted).
+- Subsequent accesses are cheap (just the guard check, branch-predicted).
 - If the constructor throws, initialization is retried on the next access.
 
 :::tip
-tip
-variable's address in a local variable at the start of the function. The compiler may optimize this
-automatically, but explicit caching can help in complex functions.
+Tip
+Variable's address in a local variable at the start of the function. The compiler may optimize this
+Automatically, but explicit caching can help in complex functions.
 :::
 
 ## Initialization Ordering Across Threads
@@ -297,27 +297,27 @@ automatically, but explicit caching can help in complex functions.
 We prove that `thread_local` initialization is **eager per thread** and **lazy across threads**.
 
 **Claim:** A `thread_local` variable with dynamic initialization is initialized on first odr-use in
-each thread, and not before [N4950 §6.7.3].
+Each thread, and not before [N4950 §6.7.3].
 
 **Proof:**
 
 1. [N4950 §6.7.3] states: "A variable with thread storage duration is initialized before its first
-   odr-use (6.3)."
+ odr-use (6.3)."
 2. "Odr-use" is defined in [N4950 §6.3] as any use of a variable's name or reference that requires a
-   definition to exist.
+ definition to exist.
 3. The standard specifies that the initialization is "performed before its first odr-use" — meaning
-   it occurs no later than the first access.
+ it occurs no later than the first access.
 4. The compiler may initialize the variable _earlier_ within the same thread (e.g., at thread
-   start), but never in a _different_ thread.
+ start), but never in a _different_ thread.
 5. Therefore: initialization is guaranteed to occur before the first access in each thread, and no
-   cross-thread initialization ordering is guaranteed.
+ cross-thread initialization ordering is guaranteed.
 
 $\square$
 
 ### Comparison: `thread_local` vs Function-Local `static`
 
 Function-local `static` variables are initialized exactly once, globally, on first call to the
-function. `thread_local` variables are initialized once per thread, on first use in each thread.
+Function. `thread_local` variables are initialized once per thread, on first use in each thread.
 This distinction has important consequences:
 
 ```cpp
@@ -346,23 +346,23 @@ int main() {
 }
 ```
 
-| Property                       | Function-Local `static`              | `thread_local`                        |
+| Property | Function-Local `static` | `thread_local` |
 | :----------------------------- | :----------------------------------- | :------------------------------------ |
-| Instance count                 | 1 (global)                           | 1 per thread                          |
-| Initialization thread          | Whichever thread calls first         | Each thread, independently            |
+| Instance count | 1 (global) | 1 per thread |
+| Initialization thread | Whichever thread calls first | Each thread, independently |
 | Initialization synchronization | Thread-safe (guaranteed by standard) | Thread-safe per thread [N4950 §6.7.3] |
-| Destruction                    | After `main` returns                 | When each thread exits                |
+| Destruction | After `main` returns | When each thread exits |
 
 The standard guarantees thread-safe initialization for both `static` locals [N4950 §9.8.1] and
 `thread_local` variables. The compiler generates a guard variable with atomic operations to ensure
-that if two threads race to initialize the same `thread_local` instance (within the same thread's
-execution — which cannot happen for `thread_local`), exactly one initialization occurs. For
-function-local `static`, this matters because multiple threads can call the function concurrently.
+That if two threads race to initialize the same `thread_local` instance (within the same thread's
+Execution — which cannot happen for `thread_local`), exactly one initialization occurs. For
+Function-local `static`This matters because multiple threads can call the function concurrently.
 
 ### Dynamic Initialization with `thread_local` and `static` Combined
 
 A `static thread_local` variable combines both storage durations. It is initialized once per thread
-but is also shared across all calls within that thread:
+But is also shared across all calls within that thread:
 
 ```cpp
 void example() {
@@ -422,12 +422,12 @@ int main() {
 ```
 
 Each thread constructs its own `ExpensiveResource` on first use and destroys it when the thread
-exits.
+Exits.
 
 ## TLS in Thread Pools
 
 Thread pools complicate TLS usage because threads are reused across tasks. A `thread_local` variable
-initialized by one task persists into the next task on the same thread:
+Initialized by one task persists into the next task on the same thread:
 
 ```cpp
 #include <iostream>
@@ -457,7 +457,7 @@ int main() {
 
 **Problem:** If task A sets `task_context = 1` and task B runs on the same thread later,
 `task_context` still has the value 1 from task A. If task B forgets to reset it, it reads stale
-data.
+Data.
 
 **Solutions:**
 
@@ -491,29 +491,29 @@ void run_task_safely(int task_id) {
 
 Thread-local variables are destroyed in the **reverse order of construction** within each thread
 [N4950 §6.7.3]. This is analogous to how automatic variables are destroyed in reverse order of
-construction when a block scope exits [N4950 §9.3.4].
+Construction when a block scope exits [N4950 §9.3.4].
 
 ### Proof: Reverse Destruction Order
 
 **Claim:** If `thread_local` variable `A` is initialized before `thread_local` variable `B` in the
-same thread, then `B` is destroyed before `A`.
+Same thread, then `B` is destroyed before `A`.
 
 **Proof:**
 
 1. [N4950 §6.7.3] specifies that thread-local variables with ordered initialization are initialized
-   in the order of their definitions.
+ in the order of their definitions.
 2. [N4950 §6.7.3] states that destruction of thread-local variables occurs "in the reverse order of
-   construction."
-3. If `A` is constructed before `B`, then by (2), `B` is destroyed before `A`.
+ construction."
+3. If `A` is constructed before `B`Then by (2), `B` is destroyed before `A`.
 
 $\square$
 
 ### Cross-Translation-Unit Ordering Is Unspecified
 
 The standard does **not** guarantee initialization order of `thread_local` variables across
-translation units. This is the same problem as the static initialization order fiasco, but per
-thread. If `thread_local` variable `A` in `a.cpp` is initialized before `thread_local` variable `B`
-in `b.cpp`, the behavior is unspecified [N4950 §6.7.3]:
+Translation units. This is the same problem as the static initialization order fiasco, but per
+Thread. If `thread_local` variable `A` in `a.cpp` is initialized before `thread_local` variable `B`
+In `b.cpp`The behavior is unspecified [N4950 §6.7.3]:
 
 ```cpp
 // a.cpp
@@ -543,13 +543,13 @@ thread_local Logger logger;  // Logger constructor calls config_key()
 
 When `std::exit()` is called, thread-local variables in threads other than the calling thread are
 **not** destroyed [N4950 §6.9.3.4]. Only the calling thread's thread-local variables are destroyed
-during the `std::exit()` process. This is because `std::exit()` does not join or terminate other
-threads — it simply terminates the process.
+During the `std::exit()` process. This is because `std::exit()` does not join or terminate other
+Threads — it terminates the process.
 
 ## Interaction with Dynamic Loading (`dlopen`)
 
-When a shared library is loaded via `dlopen`, any `thread_local` variables defined in that library
-must be initialized for threads that already exist. The implementation uses `__tls_get_addr` for
+When a shared library is loaded via `dlopen`Any `thread_local` variables defined in that library
+Must be initialized for threads that already exist. The implementation uses `__tls_get_addr` for
 General Dynamic TLS model to handle this:
 
 ```cpp
@@ -558,29 +558,29 @@ thread_local int lib_tls = 42;
 ```
 
 If `mylib.so` is loaded after threads have been created, those threads will trigger initialization
-of `lib_tls` on their first access. The dynamic linker handles this by allocating TLS storage for
-the new module and running its initializers lazily.
+Of `lib_tls` on their first access. The dynamic linker handles this by allocating TLS storage for
+The new module and running its initializers lazily.
 
 :::warning
-warning
-dangerous. If any thread still has references to the TLS storage (e.g., via a pointer obtained
-before the unload), the behavior is undefined. The standard does not define safe unloading semantics
-for TLS [N4950 §6.7.3].
+Warning
+Dangerous. If any thread still has references to the TLS storage (e.g., via a pointer obtained
+Before the unload), the behavior is undefined. The standard does not define safe unloading semantics
+For TLS [N4950 §6.7.3].
 :::
 
 ### TLS Slot Exhaustion
 
-POSIX systems limit the number of TLS slots per process via `PTHREAD_KEYS_MAX` (typically 1024).
+POSIX systems limit the number of TLS slots per process via `PTHREAD_KEYS_MAX` ( 1024).
 Each `pthread_key_create` call consumes one slot, and slots are never reclaimed. The C++
 `thread_local` keyword does not use `pthread_key_create` (it uses the compiler's TLS mechanism
-instead), but libraries that use the POSIX API directly can exhaust the limit.
+Instead), but libraries that use the POSIX API directly can exhaust the limit.
 
 ## Common Pitfalls
 
 ### TLS with `std::call_once`
 
 `std::call_once` operates on a shared `std::once_flag`. Combining it with `thread_local` can cause
-confusion because the `once_flag` is shared across threads but the `thread_local` variable is not:
+Confusion because the `once_flag` is shared across threads but the `thread_local` variable is not:
 
 ```cpp
 std::once_flag flag;
@@ -596,13 +596,13 @@ void init() {
 ```
 
 The `std::call_once` body runs exactly once, but the `thread_local` variable is per-thread. Other
-threads will see an empty `data` vector. Use a regular `static` variable inside `call_once` instead.
+Threads will see an empty `data` vector. Use a regular `static` variable inside `call_once` instead.
 
 ### Destruction Order
 
 Thread-local variables are destroyed in the **reverse order of construction** within each thread
 [N4950 §6.7.3]. If a destructor of one `thread_local` variable accesses another `thread_local`
-variable that has already been destroyed, the behavior is undefined.
+Variable that has already been destroyed, the behavior is undefined.
 
 ```cpp
 thread_local std::string logger_prefix = "INFO";
@@ -613,31 +613,31 @@ thread_local Logger logger;  // Destructor may use logger_prefix
 ```
 
 **Fix:** Ensure destruction order by declaring variables in the desired destruction order (later
-declarations are destroyed first).
+Declarations are destroyed first).
 
 ### `thread_local` and Detached Threads
 
 If a thread with `thread_local` variables is detached, the variables remain alive until the thread
-exits. If the process exits before detached threads complete, the destructors may not run at all.
+Exits. If the process exits before detached threads complete, the destructors may not run at all.
 
 ### TLS and `fork()`
 
-After `fork()`, only the calling thread survives. `thread_local` variables in other threads are not
-copied to the child process. The child process has only the forking thread's TLS state. Accessing
+After `fork()`Only the calling thread survives. `thread_local` variables in other threads are not
+Copied to the child process. The child process has only the forking thread's TLS state. Accessing
 TLS variables that were initialized by other threads (before `fork`) may lead to stale or
-inconsistent state.
+Inconsistent state.
 
 ### TLS in `constexpr` Contexts
 
 `thread_local` variables cannot be used in `constexpr` functions because `constexpr` evaluation
-occurs at compile time, where threads do not exist. A `thread_local` variable is inherently a
-runtime construct [N4950 §6.7.3].
+Occurs at compile time, where threads do not exist. A `thread_local` variable is inherently a
+Runtime construct [N4950 §6.7.3].
 
 ### Performance Pitfall: Dynamic Initialization in Hot Paths
 
 If a `thread_local` variable with a non-trivial constructor is accessed for the first time inside a
-tight loop, the initialization cost is paid on the first iteration. This is usually fine, but if the
-constructor acquires a lock or performs I/O, the cost can be significant:
+Tight loop, the initialization cost is paid on the first iteration. This is fine, but if the
+Constructor acquires a lock or performs I/O, the cost can be significant:
 
 ```cpp
 thread_local std::mt19937 rng{std::random_device{}()};
@@ -700,19 +700,19 @@ int main() {
 ```
 
 Each thread has its own `std::mt19937` instance, so there is no contention for the random number
-generator. This is both **faster** (no lock contention) and **more correct** (the generator state is
-not shared, so the random sequence quality is preserved).
+Generator. This is both **faster** (no lock contention) and **more correct** (the generator state is
+Not shared, so the random sequence quality is preserved).
 
 :::tip
-tip
-simulations and other embarrassingly parallel stochastic computations. Each thread's generator is
-independent, so there are no synchronization overheads or sequence quality concerns.
+Tip
+Simulations and other embarrassingly parallel stochastic computations. Each thread's generator is
+Independent, so there are no synchronization overheads or sequence quality concerns.
 :::
 
 ## Thread-Local Memory Pool (Advanced Pattern)
 
 A common performance pattern is to use `thread_local` to implement a per-thread memory pool,
-avoiding contention on a global allocator:
+Avoiding contention on a global allocator:
 
 ```cpp
 #include <iostream>
@@ -789,23 +789,27 @@ int main() {
 ```
 
 This pattern provides fast bump-pointer allocation within each thread, completely eliminating
-allocator contention. The trade-off is that individual deallocations are not supported — only bulk
-deallocation of the entire pool.
+Allocator contention. The trade-off is that individual deallocations are not supported — only bulk
+Deallocation of the entire pool.
 
 ## Summary of Synchronization Primitives
 
-| Primitive                 | C++ Standard      | Use Case                 | Reusable |
+| Primitive | C++ Standard | Use Case | Reusable |
 | ------------------------- | ----------------- | ------------------------ | -------- |
-| `std::mutex`              | C++11 [§31.4.3.3] | Mutual exclusion         | Yes      |
-| `std::shared_mutex`       | C++17 [§31.4.3.4] | Reader-writer locking    | Yes      |
-| `std::condition_variable` | C++11 [§31.5.4]   | Waiting on conditions    | Yes      |
-| `std::latch`              | C++20 [§31.4.4.3] | One-shot barrier         | No       |
-| `std::barrier`            | C++20 [§31.4.4.5] | Reusable phase barrier   | Yes      |
-| `std::jthread`            | C++20 [§31.4.4.4] | Auto-join + cancellation | N/A      |
-| `thread_local`            | C++11 [§6.7.3]    | Per-thread data          | N/A      |
+| `std::mutex` | C++11 [§31.4.3.3] | Mutual exclusion | Yes |
+| `std::shared_mutex` | C++17 [§31.4.3.4] | Reader-writer locking | Yes |
+| `std::condition_variable` | C++11 [§31.5.4] | Waiting on conditions | Yes |
+| `std::latch` | C++20 [§31.4.4.3] | One-shot barrier | No |
+| `std::barrier` | C++20 [§31.4.4.5] | Reusable phase barrier | Yes |
+| `std::jthread` | C++20 [§31.4.4.4] | Auto-join + cancellation | N/A |
+| `thread_local` | C++11 [§6.7.3] | Per-thread data | N/A |
 
 ## See Also
 
 - [Thread Execution (std::jthread) and Hardware Mapping](./1_threads_jthread.md)
 - [Data Races and Critical Sections](./2_data_races.md)
 - [Mutexes, Shared Locks, and Deadlock Prevention](./3_mutexes_deadlocks.md)
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

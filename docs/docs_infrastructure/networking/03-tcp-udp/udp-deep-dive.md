@@ -11,13 +11,13 @@ categories:
 ## Overview
 
 UDP (User Datagram Protocol, RFC 768) is the simplest transport-layer protocol in the TCP/IP suite:
-an 8-byte header, no handshake, no state, no guarantees. Despite (or because of) this simplicity,
+An 8-byte header, no handshake, no state, no guarantees. Despite (or because of) this simplicity,
 UDP is the foundation for some of the most critical and high-performance protocols on the Internet.
 DNS, DHCP, NTP, SNMP, streaming media, gaming, VPNs, and QUIC all ride on UDP.
 
 This document dissects UDP internals, explains when and why UDP is the right choice, covers
-broadcast and multicast, and examines the reliability patterns that UDP-based protocols implement at
-the application layer.
+Broadcast and multicast, and examines the reliability patterns that UDP-based protocols implement at
+The application layer.
 
 ## UDP Header Structure
 
@@ -35,27 +35,27 @@ The UDP header is exactly 8 bytes -- the minimum of any transport protocol:
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-| Field            | Bits | Description                                                                         |
+| Field | Bits | Description |
 | ---------------- | ---- | ----------------------------------------------------------------------------------- |
-| Source Port      | 16   | Optional. Identifies the sender. Zero means "not specified."                        |
-| Destination Port | 16   | Required. Identifies the intended receiver.                                         |
-| Length           | 16   | Total UDP datagram length: header (8) + data. Minimum 8. Maximum 65535.             |
-| Checksum         | 16   | Coverage includes pseudo-header + UDP header + data. Zero = "no check" (IPv4 only). |
+| Source Port | 16 | Optional. Identifies the sender. Zero means "not specified." |
+| Destination Port | 16 | Required. Identifies the intended receiver. |
+| Length | 16 | Total UDP datagram length: header (8) + data. Minimum 8. Maximum 65535. |
+| Checksum | 16 | Coverage includes pseudo-header + UDP header + data. Zero = "no check" (IPv4 only). |
 
 ### Source Port Considerations
 
 The source port is optional. If the sender does not need a reply, it can set the source port to
-zero. This is rare in practice because most applications need responses, and the source port is how
-the receiver knows where to send them.
+Zero. This is rare in practice because most applications need responses, and the source port is how
+The receiver knows where to send them.
 
-When the source port is non-zero, it is typically an ephemeral port chosen by the kernel from the
-range defined by `net.ipv4.ip_local_port_range` (default: 32768-60999 on Linux).
+When the source port is non-zero, it is an ephemeral port chosen by the kernel from the
+Range defined by `net.ipv4.ip_local_port_range` (default: 32768-60999 on Linux).
 
 ### Maximum Datagram Size
 
 The Length field is 16 bits, so the maximum UDP datagram is 65,535 bytes. Subtracting the 8-byte
-header gives a maximum payload of 65,527 bytes. However, IP fragmentation limits the practical
-maximum to the path MTU minus IP and UDP headers (typically 1472 bytes over standard Ethernet).
+Header gives a maximum payload of 65,527 bytes. However, IP fragmentation limits the practical
+Maximum to the path MTU minus IP and UDP headers ( 1472 bytes over standard Ethernet).
 
 ```bash
 # View current UDP buffer sizes
@@ -79,7 +79,7 @@ The UDP checksum covers three things:
 3. **Data payload:** Everything after the header
 
 The checksum is the ones-complement of the ones-complement sum of all 16-bit words. If the data
-length is odd, a zero byte is appended for computation purposes only.
+Length is odd, a zero byte is appended for computation purposes only.
 
 ### IPv4 vs IPv6 Pseudo-Headers
 
@@ -127,24 +127,24 @@ length is odd, a zero byte is appended for computation purposes only.
 
 Key differences: IPv6 pseudo-header uses 32-bit length (instead of 16-bit), 128-bit addresses
 (instead of 32-bit), and "Next Header" field (instead of Protocol). The IPv6 pseudo-header is 40
-bytes vs 12 bytes for IPv4.
+Bytes vs 12 bytes for IPv4.
 
 ### Why Checksum Can Be Zero (IPv4 Only)
 
 In IPv4, a checksum of zero means "no checksum computed." The sender explicitly sets the checksum
-field to zero to indicate this. The receiver must accept datagrams with a zero checksum without
-verification.
+Field to zero to indicate this. The receiver must accept datagrams with a zero checksum without
+Verification.
 
 In IPv6, the checksum is **mandatory**. A zero checksum in IPv6 UDP is not valid. This was a
-deliberate design decision in IPv6 because the 128-bit addresses make the pseudo-header much larger,
-and the probability of an undetected corruption affecting the pseudo-header is non-trivial.
+Deliberate design decision in IPv6 because the 128-bit addresses make the pseudo-header much larger,
+And the probability of an undetected corruption affecting the pseudo-header is non-trivial.
 
 ### UDP-Lite (RFC 3828)
 
 UDP-Lite modifies the checksum to cover only a partial payload. The "Checksum Coverage" field
-replaces the Length field and specifies how many bytes of the payload are covered by the checksum.
+Replaces the Length field and specifies how many bytes of the payload are covered by the checksum.
 Applications that tolerate bit errors in the payload (voice, video) can use UDP-Lite to reduce the
-probability of a datagram being discarded due to a checksum failure in non-critical data.
+Probability of a datagram being discarded due to a checksum failure in non-critical data.
 
 ```bash
 # Check if UDP-Lite is supported
@@ -156,39 +156,39 @@ grep UDP-LITE /proc/net/protocols
 ### DNS (Port 53)
 
 DNS uses UDP for queries and responses under 512 bytes (originally; EDNS0 extends this). If the
-response exceeds the limit, the server sets the TC (Truncation) bit, and the client retries over
+Response exceeds the limit, the server sets the TC (Truncation) bit, and the client retries over
 TCP.
 
 Why UDP: DNS queries are small, a single request-response pair, and the overhead of TCP's three-way
-handshake (3 packets) would exceed the query itself (1 packet). UDP gets the answer in one round
-trip instead of three.
+Handshake (3 packets) would exceed the query itself (1 packet). UDP gets the answer in one round
+Trip instead of three.
 
 ### DHCP (Ports 67/68)
 
 DHCP uses UDP because the client does not yet have an IP address and cannot establish a TCP
-connection. The client sends from 0.0.0.0:68 to 255.255.255.255:67 (broadcast).
+Connection. The client sends from 0.0.0.0:68 to 255.255.255.255:67 (broadcast).
 
 ### NTP (Port 123)
 
 NTP uses UDP because time synchronization requires low-latency, lightweight exchanges. A single NTP
-packet is 48 bytes. TCP's handshake would add 100ms+ of latency on a WAN link, directly degrading
-time accuracy.
+Packet is 48 bytes. TCP's handshake would add 100ms+ of latency on a WAN link, directly degrading
+Time accuracy.
 
 ### SNMP (Port 161/162)
 
 SNMP uses UDP because management queries are small and periodic. A manager sends a GET request, the
-agent responds with a GET-RESPONSE. No persistent connection is needed.
+Agent responds with a GET-RESPONSE. No persistent connection is needed.
 
 ### Streaming Media
 
 RTP (Real-time Transport Protocol, RFC 3550) uses UDP because:
 
 - Latency is more important than reliability. A dropped video frame is acceptable; a delayed frame
-  is not.
+ is not.
 - Retransmission is pointless for real-time data. By the time a lost packet is retransmitted, its
-  playback window has passed.
+ playback window has passed.
 - Application-level forward error correction (FEC) and adaptive bitrate are more appropriate than
-  TCP's reliability.
+ TCP's reliability.
 
 ### Gaming
 
@@ -204,19 +204,19 @@ Multiplayer games use UDP because:
 QUIC (RFC 9000) runs over UDP because:
 
 - Bypassing middlebox ossification. Deploying a new transport protocol at the IP layer is
-  effectively impossible due to firewalls and NATs that only understand TCP and UDP. Running QUIC
-  over UDP means it traverses existing infrastructure.
+ effectively impossible due to firewalls and NATs that only understand TCP and UDP. Running QUIC
+ over UDP means it traverses existing infrastructure.
 - Connection migration. QUIC's connection IDs allow a connection to survive IP address changes (WiFi
-  to cellular), which is impossible with TCP's 4-tuple identification.
+ to cellular), which is impossible with TCP's 4-tuple identification.
 - 0-RTT connection establishment. QUIC combines the transport handshake with TLS 1.3, reducing
-  connection setup to a single round trip (or zero for repeat connections).
+ connection setup to a single round trip (or zero for repeat connections).
 
 ## Broadcast
 
 ### Limited Broadcast (255.255.255.255)
 
 Limited broadcast is sent to all hosts on the local network segment. It is never forwarded by
-routers. Used by DHCP clients that do not yet know their network address.
+Routers. Used by DHCP clients that do not yet know their network address.
 
 ```bash
 # Send a limited broadcast
@@ -229,7 +229,7 @@ tcpdump -i eth0 'dst 255.255.255.255'
 ### Directed Broadcast
 
 Directed broadcast is sent to the broadcast address of a specific subnet (e.g., `192.168.1.255/24`).
-Routers may forward directed broadcasts (though this is typically disabled by default, RFC 2644).
+Routers may forward directed broadcasts (though this is disabled by default, RFC 2644).
 
 ```bash
 # Directed broadcast example
@@ -240,7 +240,7 @@ ping -b 192.168.1.255
 ### Subnet Broadcast
 
 Every subnet has a broadcast address: the last address in the subnet (all host bits set to 1). For
-`10.0.0.0/24`, the broadcast is `10.0.0.255`. For `10.0.0.0/23`, the broadcast is `10.0.1.255`.
+`10.0.0.0/24`The broadcast is `10.0.0.255`. For `10.0.0.0/23`The broadcast is `10.0.1.255`.
 
 :::warning
 
@@ -254,25 +254,25 @@ Many modern operating systems do not respond to broadcast pings by default. Linu
 ### Overview
 
 Multicast delivers packets to a group of interested receivers rather than all hosts (broadcast) or a
-single host (unicast). The sender transmits once, and the network replicates the packet only where
-needed.
+Single host (unicast). The sender transmits once, and the network replicates the packet only where
+Needed.
 
 ### Multicast Address Ranges
 
-| Range                     | Purpose                                          |
+| Range | Purpose |
 | ------------------------- | ------------------------------------------------ |
-| 224.0.0.0/24              | Local network control (not forwarded by routers) |
-| 224.0.1.0/24              | Internetwork control                             |
-| 224.0.2.0 - 224.0.255.255 | Ad-hoc multicast                                 |
-| 224.1.0.0 - 224.1.255.255 | Source-specific multicast (SSM)                  |
-| 225.0.0.0/8               | Reserved                                         |
-| 226.0.0.0/8               | Reserved                                         |
-| 227.0.0.0/8               | Reserved                                         |
-| 228.0.0.0/8               | GLOP addressing (RFC 3180, based on AS numbers)  |
-| 232.0.0.0/8               | Source-specific multicast (SSM, RFC 4607)        |
-| 233.0.0.0/8               | GLOP addressing                                  |
-| 234.0.0.0/8               | Reserved                                         |
-| 239.0.0.0/8               | Administratively scoped (local use)              |
+| 224.0.0.0/24 | Local network control (not forwarded by routers) |
+| 224.0.1.0/24 | Internetwork control |
+| 224.0.2.0 - 224.0.255.255 | Ad-hoc multicast |
+| 224.1.0.0 - 224.1.255.255 | Source-specific multicast (SSM) |
+| 225.0.0.0/8 | Reserved |
+| 226.0.0.0/8 | Reserved |
+| 227.0.0.0/8 | Reserved |
+| 228.0.0.0/8 | GLOP addressing (RFC 3180, based on AS numbers) |
+| 232.0.0.0/8 | Source-specific multicast (SSM, RFC 4607) |
+| 233.0.0.0/8 | GLOP addressing |
+| 234.0.0.0/8 | Reserved |
+| 239.0.0.0/8 | Administratively scoped (local use) |
 
 ### IGMP (Internet Group Management Protocol)
 
@@ -304,24 +304,24 @@ ip mroute show
 
 Multicast packets have a TTL that limits how far they propagate:
 
-| TTL      | Scope                        |
+| TTL | Scope |
 | -------- | ---------------------------- |
-| 0        | Restricted to same host      |
-| 1        | Restricted to same subnet    |
-| &lt; 32  | Restricted to same site      |
-| &lt; 64  | Restricted to same region    |
+| 0 | Restricted to same host |
+| 1 | Restricted to same subnet |
+| &lt; 32 | Restricted to same site |
+| &lt; 64 | Restricted to same region |
 | &lt; 128 | Restricted to same continent |
-| &lt; 255 | Unrestricted                 |
+| &lt; 255 | Unrestricted |
 
 ### Multicast Routing: PIM
 
 PIM (Protocol Independent Multicast) is the dominant multicast routing protocol. Two modes:
 
 **PIM Sparse Mode (PIM-SM, RFC 4601):** Receivers explicitly join groups. Traffic is only forwarded
-where needed. Uses a Rendezvous Point (RP). Default for most deployments.
+Where needed. Uses a Rendezvous Point (RP). Default for most deployments.
 
 **PIM Dense Mode (PIM-DM, RFC 3973):** Floods traffic everywhere, then prunes branches where no
-receivers exist. Suitable for small networks with many receivers. Rarely used in production.
+Receivers exist. Suitable for small networks with many receivers. Rarely used in production.
 
 ```bash
 # Check PIM neighbors
@@ -335,12 +335,12 @@ ip mroute show         # Linux
 ## UDP Reliability Patterns
 
 Since UDP provides no reliability, applications that need it must implement it themselves. Several
-patterns exist:
+Patterns exist:
 
 ### Application-Level ACKs
 
 The receiver sends an acknowledgment for each datagram (or batch of datagrams). The sender
-retransmits if no ACK is received within a timeout.
+Retransmits if no ACK is received within a timeout.
 
 ```
 Sender                              Receiver
@@ -369,7 +369,7 @@ Every datagram includes a sequence number. The receiver uses sequence numbers to
 
 Instead of retransmitting everything from the gap, the receiver can send a NACK (Negative
 Acknowledgment) specifying exactly which sequence numbers are missing. This is more efficient than
-go-back-N for high-latency, lossy links.
+Go-back-N for high-latency, lossy links.
 
 ### Example: TFTP
 
@@ -382,31 +382,31 @@ TFTP (Trivial File Transfer Protocol, RFC 1350) is a minimal example of UDP reli
 - No windowing -- one outstanding block at a time
 
 TFTP is intentionally simple, which makes it useful for bootstrap (PXE boot) but unsuitable for
-high-performance transfers.
+High-performance transfers.
 
 ## UDP Fragmentation
 
 ### The Problem
 
 When a UDP datagram exceeds the path MTU, the IP layer fragments it. Each fragment is a separate IP
-packet that must be reassembled at the receiver. If any fragment is lost, the entire datagram is
-lost.
+Packet that must be reassembled at the receiver. If any fragment is lost, the entire datagram is
+Lost.
 
 Fragmentation is especially problematic for UDP because:
 
 1. **No retransmission.** TCP retransmits lost segments; UDP does not. A single lost fragment means
-   a lost datagram.
+ a lost datagram.
 2. **Firewall interference.** Many firewalls drop fragments or only inspect the first fragment.
-   Non-first fragments lack the UDP header, so stateful firewalls cannot match them to a connection.
+ Non-first fragments lack the UDP header, so stateful firewalls cannot match them to a connection.
 3. **Performance.** Fragmentation and reassembly consume CPU and memory on both endpoints and
-   intermediate routers.
+ intermediate routers.
 
 ### Path MTU Discovery (PMTUD)
 
 UDP applications should perform Path MTU Discovery to avoid fragmentation. The sender sets the DF
 (Don't Fragment) bit. If a router encounters a packet larger than the next-hop MTU, it drops the
-packet and sends an ICMP "Fragmentation Needed" (Type 3, Code 4) message. The sender reduces its
-packet size and retries.
+Packet and sends an ICMP "Fragmentation Needed" (Type 3, Code 4) message. The sender reduces its
+Packet size and retries.
 
 ```bash
 # Test path MTU to a destination
@@ -420,9 +420,9 @@ ip route get 8.8.8.8
 :::warning
 
 ICMP "Fragmentation Needed" messages are frequently filtered by firewalls, breaking PMTUD. If PMTUD
-fails, the sender never learns the correct MTU and silently drops packets. This is one of the most
-insidious networking problems because the connection appears to work for small packets but fails for
-large ones. Use TCP MSS clamping or UDP packet size limits as a workaround.
+Fails, the sender never learns the correct MTU and silently drops packets. This is one of the most
+Insidious networking problems because the connection appears to work for small packets but fails for
+Large ones. Use TCP MSS clamping or UDP packet size limits as a workaround.
 
 :::
 
@@ -431,15 +431,15 @@ large ones. Use TCP MSS clamping or UDP packet size limits as a workaround.
 ### The Problem
 
 NAT (Network Address Translation) maps internal IP:port pairs to external IP:port pairs. For TCP,
-the NAT tracks the connection state (SYN, ESTABLISHED, FIN) and creates a mapping when the SYN is
-seen. For UDP, there is no handshake, so the NAT must heuristically create a mapping when it sees
-the first outbound datagram.
+The NAT tracks the connection state (SYN, ESTABLISHED, FIN) and creates a mapping when the SYN is
+Seen. For UDP, there is no handshake, so the NAT must heuristically create a mapping when it sees
+The first outbound datagram.
 
 ### NAT Mapping Timeout
 
-UDP NAT mappings have a timeout (typically 30-120 seconds). If no traffic is sent in either
-direction within the timeout, the mapping is deleted. The next outbound datagram creates a new
-mapping, potentially with a different external port.
+UDP NAT mappings have a timeout ( 30-120 seconds). If no traffic is sent in either
+Direction within the timeout, the mapping is deleted. The next outbound datagram creates a new
+Mapping, potentially with a different external port.
 
 This is a problem for long-lived UDP sessions (VPN tunnels, gaming) where traffic may be sparse.
 Applications must send periodic keepalive packets to refresh the NAT mapping.
@@ -449,11 +449,11 @@ Applications must send periodic keepalive packets to refresh the NAT mapping.
 For peer-to-peer UDP communication (e.g., WebRTC, gaming):
 
 1. **STUN (Session Traversal Utilities for NAT, RFC 5389):** A server on the public internet tells
-   the client what its public IP:port is. This works for "full cone" NATs.
+ the client what its public IP:port is. This works for "full cone" NATs.
 2. **TURN (Traversal Using Relays around NAT, RFC 5766):** When direct communication fails
-   (symmetric NAT), TURN relays all traffic through a public server.
+ (symmetric NAT), TURN relays all traffic through a public server.
 3. **ICE (Interactive Connectivity Establishment, RFC 8445):** A framework that tries STUN first,
-   falls back to TURN if needed. Used by WebRTC.
+ falls back to TURN if needed. Used by WebRTC.
 
 ```bash
 # Test NAT type with stun-client
@@ -463,8 +463,8 @@ stun-client stun.l.google.com:19302
 ### IPv6 and NAT
 
 IPv6 was designed to eliminate NAT (every device gets a globally routable address). In practice,
-many IPv6 deployments still use NPTv6 (Network Prefix Translation, RFC 6296) or provider-side NAT
-due to addressing policies. However, end-to-end connectivity is much more achievable with IPv6.
+Many IPv6 deployments still use NPTv6 (Network Prefix Translation, RFC 6296) or provider-side NAT
+Due to addressing policies. However, end-to-end connectivity is much more achievable with IPv6.
 
 ## QUIC Overview
 
@@ -473,35 +473,35 @@ UDP. It is the transport for HTTP/3.
 
 ### Key Features
 
-| Feature               | TCP        | QUIC                                     |
+| Feature | TCP | QUIC |
 | --------------------- | ---------- | ---------------------------------------- |
-| Transport             | IP layer   | UDP (port 443)                           |
-| Handshake             | TCP + TLS  | Integrated (TLS 1.3)                     |
-| Connection setup      | 2-3 RTT    | 1 RTT (0-RTT for repeats)                |
-| Head-of-line blocking | Yes (TCP)  | No (per-stream)                          |
-| Connection ID         | 4-tuple    | Connection ID (stable across IP changes) |
-| Multiplexing          | No HOL fix | Independent streams                      |
-| Loss recovery         | Global     | Per-stream                               |
-| Middlebox traversal   | Good       | UDP (good)                               |
-| Congestion control    | Cubic/BBR  | Cubic/BBR (same algorithms)              |
+| Transport | IP layer | UDP (port 443) |
+| Handshake | TCP + TLS | Integrated (TLS 1.3) |
+| Connection setup | 2-3 RTT | 1 RTT (0-RTT for repeats) |
+| Head-of-line blocking | Yes (TCP) | No (per-stream) |
+| Connection ID | 4-tuple | Connection ID (stable across IP changes) |
+| Multiplexing | No HOL fix | Independent streams |
+| Loss recovery | Global | Per-stream |
+| Middlebox traversal | Good | UDP (good) |
+| Congestion control | Cubic/BBR | Cubic/BBR (same algorithms) |
 
 ### Connection Migration
 
 QUIC's connection ID decouples the connection from the 4-tuple. When a mobile device switches from
 WiFi to cellular, its IP address changes. With TCP, this would terminate the connection. With QUIC,
-the connection ID remains the same, and the connection survives.
+The connection ID remains the same, and the connection survives.
 
 ### 0-RTT
 
 On repeat connections, QUIC can send application data in the first flight (0-RTT). The client uses a
-cached session ticket from a previous connection to derive the encryption keys immediately, without
-waiting for the server's handshake response.
+Cached session ticket from a previous connection to derive the encryption keys immediately, without
+Waiting for the server's handshake response.
 
 :::warning
 
 0-RTT data is vulnerable to replay attacks. An attacker who captures the 0-RTT data can replay it to
-the server. Applications must not use 0-RTT for non-idempotent operations (POST requests, financial
-transactions).
+The server. Applications must not use 0-RTT for non-idempotent operations (POST requests, financial
+Transactions).
 
 :::
 
@@ -511,14 +511,14 @@ Use this decision tree:
 
 1. **Do you need reliable, ordered delivery?** If yes, TCP (or QUIC for HTTP/3).
 2. **Is latency more important than reliability?** If yes, UDP (with application-level retry for
-   critical data).
+ critical data).
 3. **Do you need multicast or broadcast?** If yes, UDP (TCP does not support it).
 4. **Is the data real-time?** (voice, video, gaming) If yes, UDP (old data is worthless).
 5. **Is the payload small and request-response?** (DNS, NTP) If yes, UDP (TCP handshake overhead
-   exceeds the payload).
+ exceeds the payload).
 6. **Do you need congestion control?** If yes, TCP (or implement it in your UDP application).
 7. **Do you need to traverse restrictive firewalls?** If yes, TCP (UDP is more likely to be
-   blocked).
+ blocked).
 
 ### When to Choose UDP
 
@@ -545,24 +545,24 @@ Use this decision tree:
 ### DCCP (Datagram Congestion Control Protocol, RFC 4340)
 
 DCCP provides congestion control without reliability. It fills the gap between raw UDP (no
-congestion control) and TCP (full reliability + congestion control). Use cases: streaming media
-where congestion control is needed but retransmission is not.
+Congestion control) and TCP (full reliability + congestion control). Use cases: streaming media
+Where congestion control is needed but retransmission is not.
 
 DCCP is rarely deployed in practice. Most applications that need congestion control over UDP
-implement it themselves (QUIC, WebRTC).
+Implement it themselves (QUIC, WebRTC).
 
 ### SCTP (Stream Control Transmission Protocol, RFC 4960)
 
 SCTP provides message-oriented, reliable, multi-stream transport with features like multi-homing
 (sending over multiple paths simultaneously). It was designed for telephony signaling (SS7 over IP)
-and is used by WebRTC data channels (via DTLS-SCTP).
+And is used by WebRTC data channels (via DTLS-SCTP).
 
 Key features:
 
 - **Multi-streaming:** Multiple independent streams within one association. Loss on one stream does
-  not block others (no head-of-line blocking).
+ not block others (no head-of-line blocking).
 - **Multi-homing:** Endpoints can have multiple IP addresses. If one path fails, traffic
-  automatically fails over to another.
+ automatically fails over to another.
 - **Message-oriented:** Preserves message boundaries (unlike TCP's byte stream).
 - **Four-way handshake:** Uses a cookie mechanism to prevent SYN-flood-style attacks.
 
@@ -575,15 +575,15 @@ ss -sctp -an
 ```
 
 SCTP is rarely used directly by applications outside of telecommunications. Linux supports it
-natively (socket type `SOCK_STREAM` with protocol `IPPROTO_SCTP`).
+Natively (socket type `SOCK_STREAM` with protocol `IPPROTO_SCTP`).
 
 ## Common Pitfalls
 
 ### 1. UDP Buffer Overflows
 
 The kernel's UDP receive buffer has a fixed size (default 212992 bytes on Linux). If the receiver
-cannot read fast enough, the buffer fills up and new datagrams are silently dropped. The sender
-receives no notification.
+Cannot read fast enough, the buffer fills up and new datagrams are silently dropped. The sender
+Receives no notification.
 
 ```bash
 # Monitor UDP buffer overflows
@@ -600,53 +600,53 @@ sysctl -w net.core.rmem_default=2621440
 ### 2. Fragmentation Fires
 
 Sending UDP datagrams larger than the path MTU causes fragmentation. Each fragment that arrives
-consumes reassembly buffer space. A flood of fragments can exhaust the reassembly buffer, causing
-all UDP traffic to fail. Many operating systems limit the number of concurrent reassembly attempts
-and the total reassembly memory.
+Consumes reassembly buffer space. A flood of fragments can exhaust the reassembly buffer, causing
+All UDP traffic to fail. Many operating systems limit the number of concurrent reassembly attempts
+And the total reassembly memory.
 
 Mitigation: keep UDP datagrams under 1400 bytes to safely fit within any reasonable MTU.
 
 ### 3. DNS and 512-Byte Limit
 
 The original DNS specification (RFC 1035) limits UDP responses to 512 bytes. EDNS0 (RFC 6891)
-extends this, but not all networks support it. If a DNS response is truncated (TC bit set), the
-client must retry over TCP. Misconfigured firewalls that block TCP port 53 break this fallback.
+Extends this, but not all networks support it. If a DNS response is truncated (TC bit set), the
+Client must retry over TCP. Misconfigured firewalls that block TCP port 53 break this fallback.
 
 ### 4. Assuming UDP Packets Arrive in Order
 
 UDP provides no ordering guarantee. If you send packets 1, 2, 3, they may arrive as 3, 1, 2.
 Applications that assume ordering (e.g., a protocol that sends a command in packet N and its
-argument in packet N+1) will break. Include sequence numbers and handle reordering.
+Argument in packet N+1) will break. Include sequence numbers and handle reordering.
 
 ### 5. Forgetting About NAT Timeouts
 
 UDP NAT mappings expire. If your application sends datagrams sporadically (e.g., a heartbeat every
 10 minutes), the NAT mapping may expire between heartbeats. The next datagram creates a new mapping
-with a different external port, and the peer's responses go to the old (now invalid) port. Send
-keepalives more frequently than the NAT timeout (typically every 20-30 seconds).
+With a different external port, and the peer's responses go to the old (now invalid) port. Send
+Keepalives more frequently than the NAT timeout ( every 20-30 seconds).
 
 ### 6. Not Handling ICMP Errors
 
 When a router cannot deliver a UDP datagram (network unreachable, port unreachable, TTL exceeded),
-it sends an ICMP error message back to the sender. The sender's kernel delivers this as an error on
-the socket (e.g., `ECONNREFUSED` for port unreachable). Many applications ignore socket errors or do
-not handle ICMP-derived errors correctly.
+It sends an ICMP error message back to the sender. The sender's kernel delivers this as an error on
+The socket (e.g., `ECONNREFUSED` for port unreachable). Many applications ignore socket errors or do
+Not handle ICMP-derived errors correctly.
 
 ### 7. Asymmetric Routing and Stateful Firewalls
 
 Stateful firewalls track UDP "connections" by observing the first outbound datagram and creating a
-state entry. If return traffic arrives via a different path (asymmetric routing) and hits a
-different firewall that has no state entry, the return traffic is dropped. Ensure symmetric routing
-for UDP traffic through firewalls, or use UDP keepalives to maintain state entries on all firewall
-paths.
+State entry. If return traffic arrives via a different path (asymmetric routing) and hits a
+Different firewall that has no state entry, the return traffic is dropped. Ensure symmetric routing
+For UDP traffic through firewalls, or use UDP keepalives to maintain state entries on all firewall
+Paths.
 
 ## UDP in Container and Microservice Environments
 
 ### Container DNS Resolution
 
 Containers use UDP for DNS resolution by default. When a container resolves a service name, the DNS
-query goes to the embedded DNS server (127.0.0.11 in Docker, CoreDNS in Kubernetes) over UDP. If DNS
-resolution fails, the container cannot discover services.
+Query goes to the embedded DNS server (127.0.0.11 in Docker, CoreDNS in Kubernetes) over UDP. If DNS
+Resolution fails, the container cannot discover services.
 
 ```bash
 # Test DNS resolution inside a container
@@ -660,14 +660,14 @@ kubectl logs -n kube-system -l k8s-app=kube-dns
 ### Service Mesh Sidecar Proxies
 
 Service meshes like Istio and Linkerd inject sidecar proxies (Envoy) that intercept all traffic,
-including UDP. The sidecar handles service discovery, load balancing, and observability for UDP
-services.
+Including UDP. The sidecar handles service discovery, load balancing, and observability for UDP
+Services.
 
 ### UDP Health Checks
 
 Load balancers and service discovery systems have limited support for UDP health checks. Unlike TCP
 (where a successful connection proves the service is alive), UDP has no connection. Health checks
-must either:
+Must either:
 
 1. Send a probe and expect a response (application-dependent)
 2. Check if the port is open (using ICMP port unreachable as a negative signal)
@@ -709,8 +709,8 @@ recvfrom(sockfd, buffer, sizeof(buffer), 0,
 ### connect() with UDP
 
 Calling `connect()` on a UDP socket does not send any packets. It sets the default destination
-address for `send()` and filters incoming packets to only those from the connected address. This is
-useful for applications that communicate with a single peer.
+Address for `send()` and filters incoming packets to only those from the connected address. This is
+Useful for applications that communicate with a single peer.
 
 ```c
 connect(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr));
@@ -723,14 +723,14 @@ recv(sockfd, buffer, sizeof(buffer), 0);
 ### UDP and EPOLL Edge-Triggered Mode
 
 UDP sockets with `epoll` in edge-triggered mode require reading in a loop until `EAGAIN` is
-returned. Otherwise, datagrams that arrive between `epoll_wait` calls may be missed (they will be
-delivered on the next trigger, but the application may not call `epoll_wait` again if it thinks
-there is nothing to do).
+Returned. Otherwise, datagrams that arrive between `epoll_wait` calls may be missed (they will be
+Delivered on the next trigger, but the application may not call `epoll_wait` again if it thinks
+There is nothing to do).
 
 ### MSG_TRUNC
 
 If the receive buffer is smaller than the datagram, the datagram is truncated and the `MSG_TRUNC`
-flag is set. The rest of the datagram is silently discarded. Check for truncation:
+Flag is set. The rest of the datagram is silently discarded. Check for truncation:
 
 ```c
 ssize_t n = recvfrom(sockfd, buffer, sizeof(buffer), MSG_PEEK,
@@ -762,7 +762,7 @@ ping6 -I eth0 ff02::1
 ### Dual-Stack Considerations
 
 On dual-stack systems, both IPv4 and IPv6 sockets can handle traffic. However, the `IPV6_V6ONLY`
-socket option controls whether an IPv6 socket can also accept IPv4 connections (mapped addresses):
+Socket option controls whether an IPv6 socket can also accept IPv4 connections (mapped addresses):
 
 ```bash
 # Check default IPv6-only setting
@@ -809,18 +809,26 @@ The `Udp` line in `/proc/net/snmp` provides kernel-level UDP statistics:
 Udp: InDatagrams NoPorts InErrors OutDatagrams RcvbufErrors SndbufErrors InCsumErrors IgnoredMulti
 ```
 
-| Counter      | Meaning                                         |
+| Counter | Meaning |
 | ------------ | ----------------------------------------------- |
-| InDatagrams  | Total datagrams received                        |
-| NoPorts      | Datagrams for ports with no listener            |
-| InErrors     | Total errors (includes buffer errors, checksum) |
-| OutDatagrams | Total datagrams sent                            |
-| RcvbufErrors | Receive buffer overflow (datagrams dropped)     |
-| SndbufErrors | Send buffer overflow                            |
-| InCsumErrors | Checksum validation failures                    |
-| IgnoredMulti | Multicast packets dropped (socket not joined)   |
+| InDatagrams | Total datagrams received |
+| NoPorts | Datagrams for ports with no listener |
+| InErrors | Total errors (includes buffer errors, checksum) |
+| OutDatagrams | Total datagrams sent |
+| RcvbufErrors | Receive buffer overflow (datagrams dropped) |
+| SndbufErrors | Send buffer overflow |
+| InCsumErrors | Checksum validation failures |
+| IgnoredMulti | Multicast packets dropped (socket not joined) |
 
 ```bash
 # Watch UDP error counters in real-time
 watch -n 1 'cat /proc/net/snmp | grep Udp'
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

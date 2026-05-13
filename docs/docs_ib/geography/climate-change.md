@@ -59,7 +59,7 @@ The enhanced greenhouse effect refers to the additional warming caused by human 
 | $\mathrm{N_2O}$ | 270 ppb | 336 ppb | Agricultural fertilisers, industrial processes, fossil fuel combustion | 265 |
 | Fluorinated gases (CFCs, HFCs, SF$_6$) | Negligible | Variable | Industrial processes, refrigeration, air conditioning | Up to 23 000 (SF$_6$) |
 
-Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas absorbs relative to $\mathrm{CO_2}$ over a specified time horizon (typically 100 years). Methane has a GWP of 28, meaning that 1 tonne of methane traps 28 times as much heat as 1 tonne of $\mathrm{CO_2}$ over a 100-year period, though methane has a much shorter atmospheric lifetime (approximately 12 years) than $\mathrm{CO_2}$ (approximately 100--1000 years).
+Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas absorbs relative to $\mathrm{CO_2}$ over a specified time horizon ( 100 years). Methane has a GWP of 28, meaning that 1 tonne of methane traps 28 times as much heat as 1 tonne of $\mathrm{CO_2}$ over a 100-year period, though methane has a much shorter atmospheric lifetime (approximately 12 years) than $\mathrm{CO_2}$ (approximately 100--1000 years).
 
 ## Causes of Climate Change
 
@@ -75,7 +75,7 @@ Global Warming Potential (GWP) is a measure of how much energy a greenhouse gas 
 
 The Intergovernmental Panel on Climate Change (IPCC) Sixth Assessment Report (2021--2023) states with very high confidence that "human influence has warmed the atmosphere, ocean and land." The primary anthropogenic causes are:
 
-**Fossil fuel combustion.** Burning coal, oil, and natural gas for energy, transport, and industry is the single largest source of anthropogenic $\mathrm{CO_2}$, accounting for approximately 73% of total anthropogenic greenhouse gas emissions. Global $\mathrm{CO_2}$ emissions from fossil fuels reached approximately 36.8 billion tonnes in 2023.
+**Fossil fuel combustion.** Burning coal, oil, and natural gas for energy, transport, and industry is the single largest source of anthropogenic $\mathrm{CO_2}$Accounting for approximately 73% of total anthropogenic greenhouse gas emissions. Global $\mathrm{CO_2}$ emissions from fossil fuels reached approximately 36.8 billion tonnes in 2023.
 
 **Deforestation.** Forests store approximately 860 billion tonnes of carbon. Deforestation releases stored carbon as $\mathrm{CO_2}$ when trees are burned or left to decay, and reduces the capacity of the land surface to absorb $\mathrm{CO_2}$ through photosynthesis. Deforestation and land-use change account for approximately 11% of total anthropogenic greenhouse gas emissions.
 
@@ -107,7 +107,7 @@ At $2.0^\circ$C, impacts are significantly more severe:
 
 ### Regional Impacts
 
-**The Arctic.** The Arctic is warming at approximately 2--4 times the global average rate (Arctic amplification), driven by several feedback mechanisms: reduced ice and snow cover decreases surface albedo (reflectivity), exposing darker ocean water that absorbs more solar radiation; thawing permafrost releases $\mathrm{CH_4}$ and $\mathrm{CO_2}$, further amplifying warming. Arctic sea ice extent has declined by approximately 13% per decade since satellite observations began in 1979. Some models project ice-free Arctic summers (sea ice extent below 1 million km$^2$) as early as the 2030s.
+**The Arctic.** The Arctic is warming at approximately 2--4 times the global average rate (Arctic amplification), driven by several feedback mechanisms: reduced ice and snow cover decreases surface albedo (reflectivity), exposing darker ocean water that absorbs more solar radiation; thawing permafrost releases $\mathrm{CH_4}$ and $\mathrm{CO_2}$Further amplifying warming. Arctic sea ice extent has declined by approximately 13% per decade since satellite observations began in 1979. Some models project ice-free Arctic summers (sea ice extent below 1 million km$^2$) as early as the 2030s.
 
 **Small island developing states (SIDS).** Low-lying atoll nations (Maldives, Tuvalu, Kiribati, Marshall Islands) face existential threats from sea level rise, saltwater intrusion into freshwater aquifers, increased storm damage, and coral reef degradation. At current rates, some atoll islands could become uninhabitable by mid-century.
 
@@ -126,10 +126,10 @@ At $2.0^\circ$C, impacts are significantly more severe:
 
 ### Carbon Capture and Storage (CCS)
 
-CCS involves capturing $\mathrm{CO_2}$ from point sources (power plants, industrial facilities) or directly from the atmosphere (direct air capture, DAC), compressing it, and transporting it to a storage site (typically deep saline aquifers or depleted oil and gas reservoirs), where it is injected and permanently sequestered underground.
+CCS involves capturing $\mathrm{CO_2}$ from point sources (power plants, industrial facilities) or directly from the atmosphere (direct air capture, DAC), compressing it, and transporting it to a storage site ( deep saline aquifers or depleted oil and gas reservoirs), where it is injected and permanently sequestered underground.
 
 - **Current capacity:** approximately 40 million tonnes of $\mathrm{CO_2}$ captured per year globally (2023), representing a tiny fraction of annual emissions (approximately 0.1%)
-- **Limitations:** high cost (DAC is estimated to cost USD 250-600 per tonne of $\mathrm{CO_2}$, compared to approximately USD 50-150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{CO_2}$; public acceptance concerns
+- **Limitations:** high cost (DAC is estimated to cost USD 250-600 per tonne of $\mathrm{CO_2}$Compared to approximately USD 50-150 for point-source CCS); energy-intensive; storage site availability and long-term liability for sequestered $\mathrm{CO_2}$; public acceptance concerns
 
 ### Renewable Energy
 
@@ -234,3 +234,15 @@ The Netherlands, with approximately 26% of its land below sea level and 59% susc
 Mitigation reduces the causes of climate change (greenhouse gas emissions); adaptation reduces the impacts. Both are necessary, but they are distinct. A solar panel is a mitigation measure (it reduces $\mathrm{CO_2}$ emissions). A sea wall is an adaptation measure (it protects against the consequences of sea level rise, which is driven by warming already locked into the system). Some strategies have both mitigation and adaptation co-benefits: mangrove restoration sequesters carbon (mitigation) and provides coastal protection (adaptation). Be precise in distinguishing the two categories in examination responses.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

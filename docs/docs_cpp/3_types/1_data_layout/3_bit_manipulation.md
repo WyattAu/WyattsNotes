@@ -8,28 +8,28 @@ categories:
   - cpp
 slug: bit-manipulation
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Systems programming frequently requires bypassing the C++ type system to manipulate the raw binary
-representation of data. This includes parsing network protocols, inspecting floating-point
-representations, or optimizing algorithms via bitwise intrinsics.
+Representation of data. This includes parsing network protocols, inspecting floating-point
+Representations, or optimizing algorithms via bitwise intrinsics.
 
 Historically, these operations relied on Undefined Behavior (pointer casting), Compiler Intrinsics
 (`__builtin_popcount`), or C headers. C++20 and C++23 standardized these operations into the `<bit>`
-header, providing a portable, type-safe, and `constexpr`-friendly interface to hardware
-capabilities.
+Header, providing a portable, type-safe, and `constexpr`-friendly interface to hardware
+Capabilities.
 
 ## 1. Safe Type Punning (`std::bit_cast`)
 
 **Type Punning** is the act of interpreting the bits of one type as if they were another type (e.g.,
-viewing a `float` as a `uint32_t` to inspect the exponent).
+Viewing a `float` as a `uint32_t` to inspect the exponent).
 
 ### The Strict Aliasing Rule (TBAA)
 
 The C++ memory model enforces **Strict Aliasing**. A pointer to type `T` can only alias a pointer to
-type `U` if types are similar (mostly). Accessing an `int` through a `float*` is **Undefined
+Type `U` if types are similar (mostly). Accessing an `int` through a `float*` is **Undefined
 Behavior**. The compiler optimizer assumes these pointers never alias, leading to aggressive
-reordering of loads and stores.
+Reordering of loads and stores.
 
 ### Legacy Approaches (Broken)
 
@@ -56,7 +56,7 @@ std::memcpy(&i3, &f, sizeof(float));
 ### The C++20 Solution: `std::bit_cast`
 
 `std::bit_cast` is the only mechanism that allows reinterpreting bits between types of the same size
-that is safe, portable, and `constexpr` (computable at compile time).
+That is safe, portable, and `constexpr` (computable at compile time).
 
 ```cpp
 #include <bit>
@@ -75,24 +75,24 @@ constexpr uint32_t bits = inspect_float_bits(1.0f);
 ```
 
 <div className="godbolt-container">
-  <iframe
-    width="100%"
-    height="800"
-    src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:49,endLineNumber:6,positionColumn:49,positionLineNumber:6,selectionStartColumn:49,selectionStartLineNumber:6,startColumn:49,startLineNumber:6),source:'%23include+%3Cbit%3E%0A%23include+%3Ccstdint%3E%0A%23include+%3Ciostream%3E%0A%0A//+Function+to+convert+float+to+uint32_t%0Aconstexpr+uint32_t+inspect_float_bits(float+f)+%7B%0A++++static_assert(sizeof(float)+%3D%3D+sizeof(uint32_t))%3B+//+Ensure+sizes+match%0A++++return+std::bit_cast%3Cuint32_t%3E(f)%3B+//+Cast+to+uint32_t%0A%7D%0A%0A//+Function+to+convert+uint32_t+back+to+float%0Aconstexpr+float+uint32_to_float(uint32_t+u)+%7B%0A++++return+std::bit_cast%3Cfloat%3E(u)%3B+//+Cast+back+to+float%0A%7D%0A%0A//+Result+is+computed+at+compile-time%0Aconstexpr+uint32_t+bits+%3D+inspect_float_bits(1.0f)%3B%0Aconstexpr+float+original_float+%3D+uint32_to_float(bits)%3A%0A%0Aint+main()+%7B%0A++++std::cout+%3C%3C+%22Bits:+%22+%3C%3C+bits+%3C%3C+%22%5Cn%22%3B%0A++++std::cout+%3C%3C+%22Original+Float:+%22+%3C%3C+original_float%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:59.77147360126084,l:'4',m:46.19787408013082,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'0',compiler:g152,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'-std%3Dc%2B%2B23',overrides:!(),runtimeTools:!(),source:1,stdinPanelShown:'1',tree:0,wrap:'1'),l:'5',n:'0',o:'Executor+x86-64+gcc+15.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),l:'4',m:53.80212591986917,n:'0',o:'',s:0,t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"
-    title="Compiler Explorer"
-    sandbox="allow-scripts allow-same-origin"
-    loading="lazy"
-  ></iframe>
+ <iframe
+ width="100%"
+ height="800"
+ src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:49,endLineNumber:6,positionColumn:49,positionLineNumber:6,selectionStartColumn:49,selectionStartLineNumber:6,startColumn:49,startLineNumber:6),source:'%23include+%3Cbit%3E%0A%23include+%3Ccstdint%3E%0A%23include+%3Ciostream%3E%0A%0A//+Function+to+convert+float+to+uint32_t%0Aconstexpr+uint32_t+inspect_float_bits(float+f)+%7B%0A++++static_assert(sizeof(float)+%3D%3D+sizeof(uint32_t))%3B+//+Ensure+sizes+match%0A++++return+std::bit_cast%3Cuint32_t%3E(f)%3B+//+Cast+to+uint32_t%0A%7D%0A%0A//+Function+to+convert+uint32_t+back+to+float%0Aconstexpr+float+uint32_to_float(uint32_t+u)+%7B%0A++++return+std::bit_cast%3Cfloat%3E(u)%3B+//+Cast+back+to+float%0A%7D%0A%0A//+Result+is+computed+at+compile-time%0Aconstexpr+uint32_t+bits+%3D+inspect_float_bits(1.0f)%3B%0Aconstexpr+float+original_float+%3D+uint32_to_float(bits)%3A%0A%0Aint+main()+%7B%0A++++std::cout+%3C%3C+%22Bits:+%22+%3C%3C+bits+%3C%3C+%22%5Cn%22%3B%0A++++std::cout+%3C%3C+%22Original+Float:+%22+%3C%3C+original_float%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:59.77147360126084,l:'4',m:46.19787408013082,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'0',compiler:g152,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'-std%3Dc%2B%2B23',overrides:!(),runtimeTools:!(),source:1,stdinPanelShown:'1',tree:0,wrap:'1'),l:'5',n:'0',o:'Executor+x86-64+gcc+15.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),l:'4',m:53.80212591986917,n:'0',o:'',s:0,t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"
+ title="Compiler Explorer"
+ sandbox="allow-scripts allow-same-origin"
+ loading="lazy"
+ ></iframe>
 </div>
 
 **Architectural Note:** `std::bit_cast` acts as a compile-time `memcpy`. It does not perform numeric
-conversion (like `static_cast<int>(3.14f)` would). It preserves the exact bit pattern.
+Conversion (like `static_cast<int>(3.14f)` would). It preserves the exact bit pattern.
 
 ### `std::bit_cast` Constraints
 
-`std::bit_cast` requires that both the source and destination types are **Trivially Copyable**
+`std::bit_cast` requires that both the source and destination types are ** Copyable**
 [N4950 §20.15.4.6]. This excludes types with virtual functions, non-trivial
-constructors/destructors, or reference members. The sizes must also be equal.
+Constructors/destructors, or reference members. The sizes must also be equal.
 
 ```cpp
 struct NonTrivial {
@@ -106,10 +106,10 @@ struct NonTrivial {
 ### `std::bit_cast` with Padding Bits
 
 When punning between types that have different internal padding, `std::bit_cast` preserves the
-entire bit pattern including padding. This means that padding bits in the destination type are set
-to whatever bits occupy those positions in the source representation. Reading padding bits is
-technically UB in C++ [N4950 §6.9], but `std::bit_cast` itself is well-defined because it operates
-on the object representation, not the value representation.
+Entire bit pattern including padding. This means that padding bits in the destination type are set
+To whatever bits occupy those positions in the source representation. Reading padding bits is
+Technically UB in C++ [N4950 §6.9], but `std::bit_cast` itself is well-defined because it operates
+On the object representation, not the value representation.
 
 ```cpp
 #include <bit>
@@ -145,13 +145,13 @@ The `<bit>` header standardizes these operations.
 
 ### Key Primitives
 
-| Function                  | Description                                | x86_64 Instruction | ARM64 Instruction |
+| Function | Description | x86_64 Instruction | ARM64 Instruction |
 | :------------------------ | :----------------------------------------- | :----------------- | :---------------- |
-| **`std::popcount`**       | Counts number of set bits (1s).            | `POPCNT`           | `CNT`             |
-| **`std::countl_zero`**    | Counts consecutive zeros from MSB (Left).  | `LZCNT` / `BSR`    | `CLZ`             |
-| **`std::countr_zero`**    | Counts consecutive zeros from LSB (Right). | `TZCNT` / `BSF`    | `RBIT` + `CLZ`    |
-| **`std::has_single_bit`** | Checks if value is power of two.           | `POPCNT` / Logic   | Logic             |
-| **`std::bit_width`**      | Minimum bits required to represent value.  | `LZCNT`            | `CLZ`             |
+| **`std::popcount`** | Counts number of set bits (1s). | `POPCNT` | `CNT` |
+| **`std::countl_zero`** | Counts consecutive zeros from MSB (Left). | `LZCNT` / `BSR` | `CLZ` |
+| **`std::countr_zero`** | Counts consecutive zeros from LSB (Right). | `TZCNT` / `BSF` | `RBIT` + `CLZ` |
+| **`std::has_single_bit`** | Checks if value is power of two. | `POPCNT` / Logic | Logic |
+| **`std::bit_width`** | Minimum bits required to represent value. | `LZCNT` | `CLZ` |
 
 ### Architectural Usage: Bitmasks and Pools
 
@@ -182,7 +182,7 @@ struct ResourcePool {
 ```
 
 This compiles to branchless machine code relying on hardware bit-scan instructions, significantly
-faster than a loop-based check.
+Faster than a loop-based check.
 
 ### Rotations: `std::rotl` and `std::rotr`
 
@@ -240,8 +240,8 @@ int main() {
 }
 ```
 
-These are `constexpr`, enabling compile-time capacity planning for containers that require
-power-of-two bucket counts.
+These are `constexpr`Enabling compile-time capacity planning for containers that require
+Power-of-two bucket counts.
 
 ### `std::countl_one` and `std::countr_one`
 
@@ -266,7 +266,7 @@ int main() {
 ## 3. Endianness (C++20/23)
 
 As discussed in [Fundamental Types](1_fundamental_types.md), dealing with Endianness is critical for
-cross-platform serialization.
+Cross-platform serialization.
 
 ### Detection (`std::endian`)
 
@@ -284,7 +284,7 @@ if constexpr (std::endian::native == std::endian::little) {
 
 ### Manipulation (`std::byteswap`)
 
-C++23 introduces `std::byteswap`, enabling zero-overhead byte reversal [N4950 §23.16.8].
+C++23 introduces `std::byteswap`Enabling zero-overhead byte reversal [N4950 §23.16.8].
 
 **Use Case:** Parsing a Network Packet (Network Byte Order is **Big Endian**).
 
@@ -315,8 +315,8 @@ void process_packet(PacketHeader h) {
 ### Endianness and `std::bit_cast`
 
 When using `std::bit_cast` to interpret multi-byte values read from a byte stream, the result
-depends on the host endianness. If you read 4 bytes `[0x01, 0x02, 0x03, 0x04]` into a `uint32_t` via
-`bit_cast`, the result differs between little-endian and big-endian hosts:
+Depends on the host endianness. If you read 4 bytes `[0x01, 0x02, 0x03, 0x04]` into a `uint32_t` via
+`bit_cast`The result differs between little-endian and big-endian hosts:
 
 ```cpp
 #include <bit>
@@ -330,33 +330,33 @@ constexpr uint32_t interpret_le(const uint8_t (&bytes)[4]) {
 ```
 
 For portable deserialization, always use `std::byteswap` or explicit byte-level construction rather
-than relying on `std::bit_cast` with raw byte arrays.
+Than relying on `std::bit_cast` with raw byte arrays.
 
 ## 4. `std::bitset` vs. Integer Flags
 
 When managing sets of flags, C++ offers two primary mechanisms: `std::bitset` and raw integers with
-enum masks.
+Enum masks.
 
 ### `std::bitset<N>`
 
 - **Storage:** Fixed size at compile time.
-- **Interface:** Provides `test()`, `set()`, `flip()`. Bounds checked.
-- **Pros:** Safe, readable (`b[5] = true`), prints easily to streams.
-- **Cons:** Not trivially copyable in all implementations (though usually is). Cannot be easily
-  iterated by hardware instructions (`popcount` on bitset is slower than on `uint64_t`).
+- **Interface:** Provides `test()``set()``flip()`. Bounds checked.
+- **Pros:** Safe, readable (`b[5] = true`), prints to streams.
+- **Cons:** Not copyable in all implementations (though is). Cannot be 
+ iterated by hardware instructions (`popcount` on bitset is slower than on `uint64_t`).
 
 ### Raw Integer Masks (`enum class`)
 
 - **Storage:** `uint8_t` to `uint64_t`.
-- **Interface:** Bitwise operators `|`, `&`, `^`, `~`.
+- **Interface:** Bitwise operators `|``&``^``~`.
 - **Pros:** Fits directly in registers. Compatible with C APIs. Fastest possible performance using
-  `<bit>` intrinsics.
+ `<bit>` intrinsics.
 - **Cons:** Manual management of bit positions.
 
 ### Recommendation
 
 - Use **Raw Integers** for low-level systems logic, serialization, and high-performance algorithms
-  (using `<bit>`).
+ (using `<bit>`).
 - Use **`std::bitset`** for application-level logic requiring &gt;64 flags or formatted output.
 
 ### C++23: `std::bitset::reference`
@@ -371,7 +371,7 @@ auto y = val;    // y is a proxy. If b dies, y dangles? (No, proxy refers to int
 ```
 
 This proxy behavior can break type deduction in templates (`auto` vs `auto&`). Always cast to `bool`
-explicitly when storing the value.
+Explicitly when storing the value.
 
 ### Type-Safe Bitmasks with `enum class`
 
@@ -416,8 +416,8 @@ int main() {
 ```
 
 This pattern provides the ergonomics of `std::bitset` with the ABI compatibility and register-level
-performance of raw integers. The `constexpr` qualification ensures the operations are computed at
-compile time when possible.
+Performance of raw integers. The `constexpr` qualification ensures the operations are computed at
+Compile time when possible.
 
 ## 5. Bit Fields and ABI Concerns
 
@@ -435,11 +435,11 @@ struct PacketFlags {
 ### The ABI Problem
 
 The C++ Standard does not define the layout of bit fields across allocation units (bytes/words). The
-order of bit field allocation, whether bits are packed from MSB or LSB, and whether bit fields can
-span allocation unit boundaries are all implementation-defined [N4950 §11.4.1].
+Order of bit field allocation, whether bits are packed from MSB or LSB, and whether bit fields can
+Span allocation unit boundaries are all implementation-defined [N4950 §11.4.1].
 
 This means that the same bit field struct has **different memory layouts** on different compilers or
-architectures:
+Architectures:
 
 ```cpp
 // On x86_64 GCC: bits packed LSB-first within allocation units
@@ -448,8 +448,8 @@ architectures:
 ```
 
 **Rule:** Never use bit fields in structures that are serialized, sent over the network, or shared
-between processes compiled with different compilers. Use explicit masking with `std::bit_cast` and
-manual shift operations instead.
+Between processes compiled with different compilers. Use explicit masking with `std::bit_cast` and
+Manual shift operations instead.
 
 ### Practical Alternative: Explicit Masking
 
@@ -471,12 +471,12 @@ struct PacketFlags {
 ```
 
 This approach is portable, deterministic, and produces identical assembly to bit fields on any
-platform.
+Platform.
 
 ## 6. Practical Example: Bloom Filter
 
 A Bloom filter is a probabilistic data structure that tests set membership with a controlled
-false-positive rate and zero false negatives. It is implemented entirely with bit manipulation.
+False-positive rate and zero false negatives. It is implemented entirely with bit manipulation.
 
 ```cpp
 #include <bit>
@@ -544,13 +544,13 @@ int main() {
 ```
 
 The core operation — setting and testing individual bits within a `uint64_t` array — relies on the
-shift (`&lt;&lt;`) and bitwise AND (`&amp;`) operations. The modulo operation for index calculation
-is optimized by the compiler into a bitmask when the table size is a power of two.
+Shift (`&lt;&lt;`) and bitwise AND (`&amp;`) operations. The modulo operation for index calculation
+Is optimized by the compiler into a bitmask when the table size is a power of two.
 
 ## 7. `constexpr` Bit Manipulation Patterns
 
-Since all `<bit>` functions are `constexpr`, complex bit-level logic can be evaluated entirely at
-compile time:
+Since all `<bit>` functions are `constexpr`Complex bit-level logic can be evaluated entirely at
+Compile time:
 
 ```cpp
 #include <bit>
@@ -598,7 +598,7 @@ static_assert(priv.is_private() == true);
 ### 1. Signed Integer Bit Operations
 
 The behavior of bitwise operations on negative signed integers is well-defined in C++20 (two's
-complement is mandated), but the results can be surprising due to sign extension during shifts.
+Complement is mandated), but the results can be surprising due to sign extension during shifts.
 Prefer unsigned types for all bit manipulation:
 
 ```cpp
@@ -622,7 +622,7 @@ uint32_t ok = val << 31;    // OK: shift amount < bit width
 ### 3. `std::bit_cast` Size Mismatch
 
 `std::bit_cast` is a compile-time error if the sizes differ. This is by design — it prevents
-accidental truncation or zero-extension. If you need to convert between different-sized types, use
+Accidental truncation or zero-extension. If you need to convert between different-sized types, use
 `memcpy` or explicit masking.
 
 ### 4. Endianness Assumptions in Serialization
@@ -630,3 +630,11 @@ accidental truncation or zero-extension. If you need to convert between differen
 Never assume the host endianness when serializing data. Always convert to a known byte order
 (network byte order / big endian) before writing to a wire format, and convert back on read.
 `std::byteswap` makes this trivial.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

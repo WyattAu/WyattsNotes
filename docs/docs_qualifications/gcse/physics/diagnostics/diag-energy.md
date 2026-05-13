@@ -33,7 +33,7 @@ hide_table_of_contents: true
 
 (c) $c = \frac{\Delta E}{m\Delta T} = \frac{45000}{0.5 \times (225 - 25)} = \frac{45000}{0.5 \times 200} = \frac{45000}{100} = 450$ J/(kg $^\circ$C).
 
-(d) Water has strong hydrogen bonds between molecules, which must be partially broken to increase molecular motion (temperature). Metals have metallic bonding with free electrons that transfer energy easily. Water's high SHC means it can absorb large amounts of energy with small temperature changes. This moderates coastal climates (oceans heat up slowly in summer, cool slowly in winter) and makes water effective as a coolant in engines and nuclear reactors.
+(d) Water has strong hydrogen bonds between molecules, which must be partially broken to increase molecular motion (temperature). Metals have metallic bonding with free electrons that transfer energy . Water's high SHC means it can absorb large amounts of energy with small temperature changes. This moderates coastal climates (oceans heat up slowly in summer, cool slowly in winter) and makes water effective as a coolant in engines and nuclear reactors.
 
 ### UT-3: Efficiency
 **Question:** (a) Define efficiency. (b) A power station burns $5 \times 10^8$ J of chemical energy per second and produces $1.5 \times 10^8$ W of electrical power. Calculate the efficiency. (c) Explain why it is impossible for a machine to have 100% efficiency. (d) A heat engine operates between a hot reservoir at $500^\circ\text{C{}$ and a cold reservoir at $25^\circ\text{C{}$. Calculate the maximum theoretical efficiency.
@@ -93,7 +93,7 @@ Cost of microwave $= 144,000 / 3,600,000 \times 28 = 0.04 \times 28 = 1.12$ p.
 The kettle is more efficient (85% vs 54.3%) and costs 4.73p vs 1.12p, but the kettle heats more water to a higher temperature.
 
 ### IT-3: Energy Resources and Environmental Impact (with Waves)
-**Question:** (a) Compare solar and wind energy in terms of: energy source type, reliability, environmental impact, and typical output. (b) A solar panel has an area of $10 \text{ m{}^2$ and an efficiency of 18%. If the solar irradiance is $800 \text{ W/m{}^2$, calculate the power output. (c) A wind turbine has blades of length 40 m. If the wind speed is 12 m/s and the air density is $1.2 \text{ kg/m{}^3$, calculate the maximum theoretical power (use $P = \frac{1}{2}\rho A v^3$ where $A = \pi r^2$). (d) Explain why no energy resource is completely free of environmental impact.
+**Question:** (a) Compare solar and wind energy in terms of: energy source type, reliability, environmental impact, and typical output. (b) A solar panel has an area of $10 \text{ m{}^2$ and an efficiency of 18%. If the solar irradiance is $800 \text{ W/m{}^2$Calculate the power output. (c) A wind turbine has blades of length 40 m. If the wind speed is 12 m/s and the air density is $1.2 \text{ kg/m{}^3$Calculate the maximum theoretical power (use $P = \frac{1}{2}\rho A v^3$ where $A = \pi r^2$). (d) Explain why no energy resource is completely free of environmental impact.
 
 **Solution:**
 

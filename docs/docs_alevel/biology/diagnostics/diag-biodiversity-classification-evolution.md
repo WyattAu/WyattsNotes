@@ -69,7 +69,7 @@ The cichlid fish of Lake Victoria show remarkable species diversity, with over 5
 
 (a) **Allopatric speciation** occurs when populations of a species are separated by a geographical barrier (e.g., mountain range, river, ocean), preventing gene flow between them. The populations evolve independently and accumulate genetic differences until they can no longer interbreed to produce fertile offspring.
 
-**Sympatric speciation** occurs without geographical separation — populations within the same geographic area become reproductively isolated and diverge into separate species. This is rarer and typically involves mechanisms such as polyploidy (in plants), behavioural isolation, ecological niche specialisation, or sexual selection.
+**Sympatric speciation** occurs without geographical separation — populations within the same geographic area become reproductively isolated and diverge into separate species. This is rarer and involves mechanisms such as polyploidy (in plants), behavioural isolation, ecological niche specialisation, or sexual selection.
 
 (b) In cichlid fish, sympatric speciation can occur through several mechanisms:
 - **Sexual selection**: female cichlids often choose mates based on male colouration. If a mutation arises that produces a different colour pattern, females with a preference for that colour will mate selectively with males displaying it. Over time, this assortative mating (preference for similar mates) leads to reproductive isolation between colour morphs.
@@ -80,10 +80,10 @@ Once reproductive isolation is established (pre-zygotic barriers prevent mating,
 
 (c) In allopatric speciation, a **geographical barrier** (e.g., a river forming, a mountain range rising, continental drift, or the formation of an island) physically separates a population into two or more isolated groups. This prevents **gene flow** between the groups (individuals cannot migrate between them to interbreed). Once isolated, each population experiences different environmental conditions, different selection pressures, and different mutations. Over many generations, natural selection favours different alleles in each population, and genetic drift causes random changes in allele frequencies. Mutations that arise in one population do not spread to the other. Eventually, the populations diverge so much genetically that if they were brought back together, they would not be able to interbreed to produce fertile offspring — they have become separate species. The key point is that **geographical isolation leads to reproductive isolation** as a consequence of independent evolution.
 
-(d) **Polyploidy** is a condition in which an organism has more than two complete sets of chromosomes (e.g., tetraploid — 4n). Polyploidy can arise from errors in meiosis (e.g., failure of chromosomes to separate during anaphase, producing diploid gametes instead of haploid gametes). If a diploid gamete fuses with a normal haploid gamete, the resulting offspring is triploid (3n), which is usually sterile. However, if two diploid gametes fuse, the offspring is tetraploid (4n) and may be fertile. The tetraploid individual can reproduce with other tetraploids but **cannot interbreed with the original diploid population** because any offspring would be triploid (sterile). This instant reproductive isolation makes polyploidy a powerful mechanism of sympatric speciation in plants.
+(d) **Polyploidy** is a condition in which an organism has more than two complete sets of chromosomes (e.g., tetraploid — 4n). Polyploidy can arise from errors in meiosis (e.g., failure of chromosomes to separate during anaphase, producing diploid gametes instead of haploid gametes). If a diploid gamete fuses with a normal haploid gamete, the resulting offspring is triploid (3n), which is sterile. However, if two diploid gametes fuse, the offspring is tetraploid (4n) and may be fertile. The tetraploid individual can reproduce with other tetraploids but **cannot interbreed with the original diploid population** because any offspring would be triploid (sterile). This instant reproductive isolation makes polyploidy a powerful mechanism of sympatric speciation in plants.
 
 Polyploidy is less common in animals because:
-1. Animals typically have chromosomal sex determination systems (e.g., XX/XY). Polyploidy disrupts the balance of sex chromosomes, leading to sterility.
+1. Animals have chromosomal sex determination systems (e.g., XX/XY). Polyploidy disrupts the balance of sex chromosomes, leading to sterility.
 2. Animal development is more sensitive to gene dosage imbalances caused by extra chromosome sets.
 3. Animals generally have more complex developmental processes that are disrupted by polyploidy.
 4. Many plants can self-fertilise (or reproduce asexually), allowing a polyploid individual to reproduce alone and establish a new population. Most animals require a mate of the same ploidy, which is unlikely to arise simultaneously.
@@ -145,7 +145,7 @@ The evolution of antibiotic resistance in bacteria is a significant public healt
 
 **Solution:**
 
-(a) In a population of *S. aureus*, random mutations arise naturally. Occasionally, a mutation (or acquisition of the **mecA** gene) confers resistance to methicillin. Before antibiotic exposure, resistant bacteria may be at a slight disadvantage (see part d). When methicillin is applied: (1) susceptible bacteria are killed or inhibited; (2) resistant bacteria survive and reproduce; (3) the resistant bacteria pass the resistance gene to their offspring (vertical gene transfer); (4) the proportion of resistant bacteria in the population increases over successive generations. This is natural selection in action: the antibiotic acts as a selective pressure, and resistant bacteria have a selective advantage (higher fitness) in the presence of the antibiotic. Over time, the population evolves to become predominantly resistant.
+(a) In a population of *S. Aureus*, random mutations arise . Occasionally, a mutation (or acquisition of the **mecA** gene) confers resistance to methicillin. Before antibiotic exposure, resistant bacteria may be at a slight disadvantage (see part d). When methicillin is applied: (1) susceptible bacteria are killed or inhibited; (2) resistant bacteria survive and reproduce; (3) the resistant bacteria pass the resistance gene to their offspring (vertical gene transfer); (4) the proportion of resistant bacteria in the population increases over successive generations. This is natural selection in action: the antibiotic acts as a selective pressure, and resistant bacteria have a selective advantage (higher fitness) in the presence of the antibiotic. Over time, the population evolves to become predominantly resistant.
 
 (b) **Horizontal gene transfer (HGT)** allows bacteria to acquire resistance genes from other bacteria, even from different species, without being their descendant. This is much faster than waiting for a resistance mutation to arise de novo in each lineage. In the context of MRSA:
 - **Conjugation**: a donor bacterium transfers a copy of the SCC*mec* element (carrying **mecA**) to a recipient through a pilus.
@@ -181,7 +181,7 @@ Scientists studying the evolutionary relationships between five species of prima
 (a) Cytochrome c is a suitable protein because:
 1. It is **ubiquitous** — it is found in almost all aerobic organisms, from bacteria to humans, allowing comparisons across a wide range of species.
 2. It is **functionally conserved** — it plays a critical role in the electron transport chain (carrying electrons between complex III and complex IV), so its function has been conserved over billions of years. This means the protein has changed very slowly over evolutionary time, and differences between species represent ancient divergences.
-3. It is of **appropriate length** — approximately 104 amino acids in mammals, long enough to provide statistically meaningful comparisons but short enough to sequence easily.
+3. It is of **appropriate length** — approximately 104 amino acids in mammals, long enough to provide statistically meaningful comparisons but short enough to sequence .
 4. Its slow rate of change means it is useful for comparing **deeply divergent lineages** (e.g., between kingdoms), whereas faster-evolving proteins (e.g., fibrinopeptides) are better for comparing closely related species.
 
 (b) The number of amino acid differences from human cytochrome c indicates evolutionary distance (fewer differences $=$ more closely related):
@@ -228,7 +228,7 @@ A conservation organisation wants to compare the biodiversity of two nature rese
 
 (a) Explain the difference between **species richness** and **species evenness**, and explain why both are needed to give a complete picture of biodiversity.
 
-(b) Describe how **Simpson's Diversity Index** is calculated, and explain the advantage of using an index rather than simply counting the number of species.
+(b) Describe how **Simpson's Diversity Index** is calculated, and explain the advantage of using an index rather than counting the number of species.
 
 (c) The following data were collected using quadrats in each reserve:
 
@@ -245,9 +245,9 @@ Calculate Simpson's Diversity Index ($D$) for each reserve using $D = 1 - \sum\l
 
 Both are needed because two habitats can have the same species richness but very different biodiversity. For example, a habitat with 5 species where one species makes up 95% of individuals has lower biodiversity than a habitat with 5 species where each makes up approximately 20%. Species richness alone does not capture this difference — evenness provides the additional information needed.
 
-(b) **Simpson's Diversity Index**: $D = 1 - \sum\left(\frac{n}{N}\right)^2$, where $n$ is the number of individuals of a particular species and $N$ is the total number of individuals of all species. $D$ ranges from 0 (no diversity — only one species present) to approaching 1 (maximum diversity — many species, all equally abundant).
+(b) **Simpson's Diversity Index**: $D = 1 - \sum\left(\frac{n}{N}\right)^2$Where $n$ is the number of individuals of a particular species and $N$ is the total number of individuals of all species. $D$ ranges from 0 (no diversity — only one species present) to approaching 1 (maximum diversity — many species, all equally abundant).
 
-The advantage of using an index rather than simply counting species (species richness) is that the index accounts for both species richness **and** species evenness. A single number provides a more comprehensive measure of biodiversity, allowing easy comparison between different habitats or the same habitat at different times.
+The advantage of using an index rather than counting species (species richness) is that the index accounts for both species richness **and** species evenness. A single number provides a more comprehensive measure of biodiversity, allowing easy comparison between different habitats or the same habitat at different times.
 
 (c) **Reserve X:**
 

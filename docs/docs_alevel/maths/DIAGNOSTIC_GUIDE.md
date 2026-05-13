@@ -9,22 +9,22 @@ hide_table_of_contents: true
 ## 1. Purpose
 
 This document defines the diagnostic testing framework for A-Level Mathematics. The
-diagnostic tests are the hardest questions within the specification, designed to
-determine whether a student has genuine understanding of a topic rather than
-surface-level familiarity. They are not practice quizzes for beginners.
+Diagnostic tests are the hardest questions within the specification, designed to
+Determine whether a student has genuine understanding of a topic rather than
+Surface-level familiarity. They are not practice quizzes for beginners.
 
 The diagnostic system is partitioned into two categories:
 
 - **Unit tests:** Targeted questions that probe edge cases, boundary conditions,
-  and subtle misconceptions within a single topic. Each unit test isolates one
-  concept and applies maximum pressure to it.
+ and subtle misconceptions within a single topic. Each unit test isolates one
+ concept and applies maximum pressure to it.
 - **Integration tests:** Multi-topic synthesis problems that require combining
-  concepts from multiple units without explicit guidance on which techniques to
-  apply. These mirror the hardest questions found on actual examination papers.
+ concepts from multiple units without explicit guidance on which techniques to
+ apply. These mirror the hardest questions found on actual examination papers.
 
 These tests are static. They are not interactive. Each question is presented in
-full, followed by a complete worked solution below. The student is responsible
-for self-marking against the grading rubric defined in Section 3.
+Full, followed by a complete worked solution below. The student is responsible
+For self-marking against the grading rubric defined in Section 3.
 
 ---
 
@@ -33,22 +33,22 @@ for self-marking against the grading rubric defined in Section 3.
 Follow these steps in order. Do not skip steps.
 
 1. **Attempt each question under exam conditions.** No notes, no textbook, no
-   calculator unless the question explicitly permits one. Time yourself.
+ calculator unless the question explicitly permits one. Time yourself.
 2. **Check your answer against the worked solution.** Do not rationalise
-   partial credit that the rubric does not award. Be strict.
+ partial credit that the rubric does not award. Be strict.
 3. **Mark yourself using the grading rubric.** Apply the definitions in
-   Section 3 without exception. Record the result.
+ Section 3 without exception. Record the result.
 4. **Record results in your test matrix.** Use the template in Section 4.
-   Update it after every diagnostic session.
+ Update it after every diagnostic session.
 5. **Use the test matrix to identify weak areas for revision.** The
-   interpretation guide in Section 9 explains how to prioritise.
+ interpretation guide in Section 9 explains how to prioritise.
 
 ---
 
 ## 3. Grading Rubric
 
 All diagnostic questions are graded on a three-tier system. There is no
-numerical score. The tiers are mutually exclusive and collectively exhaustive.
+Numerical score. The tiers are mutually exclusive and collectively exhaustive.
 
 | Grade | Definition |
 |-------|-----------|
@@ -70,7 +70,7 @@ numerical score. The tiers are mutually exclusive and collectively exhaustive.
 ### 4.1 What is the test matrix?
 
 The test matrix is a structured record of your diagnostic results. It provides a
-single-source-of-truth view of your strengths and weaknesses across all 24 A-Level
+Single-source-of-truth view of your strengths and weaknesses across all 24 A-Level
 Mathematics topics.
 
 ### 4.2 Matrix schema
@@ -121,7 +121,7 @@ Each row represents one topic. Each row contains:
 ### Definition
 
 A unit test probes a single topic in isolation. It targets the hardest questions
-within that topic's specification boundary.
+Within that topic's specification boundary.
 
 ### Design principles
 
@@ -144,7 +144,7 @@ within that topic's specification boundary.
 
 - Whether the student has automated the correct procedure for the topic.
 - Whether the student recognises when a standard technique applies in a
-  non-obvious form.
+ non-obvious form.
 - Whether the student has internalised common pitfalls and avoids them.
 
 ---
@@ -155,7 +155,7 @@ within that topic's specification boundary.
 
 An integration test combines concepts from multiple topics into a single problem.
 The student is not told which techniques to use. Identifying the correct approach
-is part of the test.
+Is part of the test.
 
 ### Design principles
 
@@ -178,11 +178,11 @@ is part of the test.
 ### What integration tests reveal
 
 - Whether the student can identify relevant techniques from an unconstrained
-  problem statement.
+ problem statement.
 - Whether the student understands the relationships between topics deeply
-  enough to combine them.
+ enough to combine them.
 - Whether the student can manage the complexity of a multi-step solution without
-  external scaffolding.
+ external scaffolding.
 
 ---
 
@@ -232,8 +232,8 @@ is part of the test.
 ## 8. Timing Recommendations
 
 The following time allocations are guidelines. Adjust based on personal pace,
-but do not reduce them. If a question takes significantly longer than the upper
-bound, that is itself diagnostic information.
+But do not reduce them. If a question takes significantly longer than the upper
+Bound, that is itself diagnostic information.
 
 | Task | Time Allocation |
 |------|----------------|
@@ -246,10 +246,10 @@ bound, that is itself diagnostic information.
 ### Session planning
 
 - Do not attempt more than 4 topics per session. Cognitive fatigue will
-  degrade the validity of self-marking.
+ degrade the validity of self-marking.
 - Schedule a break of at least 10 minutes between topics.
 - Record the date and time of each session in the test matrix for longitudinal
-  tracking.
+ tracking.
 
 ---
 
@@ -258,13 +258,13 @@ bound, that is itself diagnostic information.
 ### 9.1 Identifying weak areas
 
 After completing a diagnostic session, scan the test matrix for any row that
-contains a FAIL or PARTIAL. These are your priority targets.
+Contains a FAIL or PARTIAL. These are your priority targets.
 
 ### 9.2 Prioritisation by prerequisite chain
 
 Not all topics are independent. Fixing upstream dependencies before downstream
-topics is more efficient than patching symptoms. The following dependency chains
-apply:
+Topics is more efficient than patching symptoms. The following dependency chains
+Apply:
 
 ```
 Algebraic Expressions -> Quadratics -> Equations and Inequalities -> Functions
@@ -280,27 +280,27 @@ Probability -> Statistical Distributions -> Hypothesis Testing
 ```
 
 **Rule:** If a prerequisite topic has a FAIL score, do not attempt the dependent
-topic's integration test until the prerequisite achieves at least PARTIAL.
+Topic's integration test until the prerequisite achieves at least PARTIAL.
 
 ### 9.3 Revision cycle
 
 1. Identify FAIL/PARTIAL topics from the test matrix.
 2. Sort by prerequisite chain. Address upstream failures first.
 3. For each weak topic: review the reference notes, re-attempt the diagnostic
-   question under exam conditions.
+ question under exam conditions.
 4. Re-mark. Update the test matrix with the new score and date.
 5. If the score improves from FAIL to PARTIAL or from PARTIAL to PASS, proceed
-   to the next topic.
+ to the next topic.
 6. If the score does not improve, review the worked solution step-by-step and
-   identify the specific point of failure. Re-learn that sub-topic.
+ identify the specific point of failure. Re-learn that sub-topic.
 
 ### 9.4 Longitudinal tracking
 
 The Date column in the test matrix enables progress tracking over time. Re-run
-diagnostics at regular intervals (recommended: every 2 weeks for topics with
+Diagnostics at regular intervals (recommended: every 2 weeks for topics with
 FAIL scores, every 4 weeks for topics with PASS scores). A PASS that degrades
-to PARTIAL indicates that the material has not been consolidated into long-term
-memory and requires spaced repetition.
+To PARTIAL indicates that the material has not been consolidated into long-term
+Memory and requires spaced repetition.
 
 ---
 
@@ -375,14 +375,14 @@ Each `diag-<topic-slug>.md` file follows this structure:
 ### 10.3 Combined papers
 
 The `papers/` directory contains assembled exam papers that draw questions from
-multiple topics, simulating actual examination conditions. These are optional
-and should only be attempted after achieving PASS on the majority of individual
-unit tests.
+Multiple topics, simulating actual examination conditions. These are optional
+And should only be attempted after achieving PASS on the majority of individual
+Unit tests.
 
 ---
 
 ## Appendix: Test Matrix Template
 
 Copy this template into a personal notes file. Populate it as you complete each
-diagnostic. Use one row per topic with columns: Unit Test, Integration Test,
+Diagnostic. Use one row per topic with columns: Unit Test, Integration Test,
 Notes, Date. All 24 topics are listed in the Coverage Map (Section 7).

@@ -108,7 +108,7 @@ National Income and Macroeconomic Indicators
 
 (a) Under a fixed exchange rate with free capital mobility, the impossible trinity means monetary policy is not independent. Any attempt to lower interest rates would cause capital outflow and put pressure on the exchange rate peg. The central bank would be forced to sell foreign reserves and buy domestic currency, reversing the interest rate cut. Monetary policy is effectively determined by the anchor currency's central bank.
 
-(b) Required output increase $= 5\%$ of potential GDP. If multiplier $= 2$, required fiscal injection $= \frac{5\%}{2} = 2.5\%$ of GDP. This could be achieved through increased government spending, tax cuts, or a combination. For a GDP of $\$500$ billion, the required injection $= \$12.5$ billion.
+(b) Required output increase $= 5\%$ of potential GDP. If multiplier $= 2$Required fiscal injection $= \frac{5\%}{2} = 2.5\%$ of GDP. This could be achieved through increased government spending, tax cuts, or a combination. For a GDP of $\$500$ billion, the required injection $= \$12.5$ billion.
 
 (c) The fiscal expansion increases aggregate demand, which increases imports (as domestic residents spend more, including on foreign goods). Since the exchange rate is fixed, there is no automatic exchange rate adjustment to correct the trade imbalance. The current account deficit would widen. This is the **twin deficits** problem: fiscal expansion worsens the current account.
 
@@ -124,7 +124,7 @@ National Income and Macroeconomic Indicators
 
 **Solution:**
 
-(a) $500 - 0.1P = -200 + 0.2P$, $700 = 0.3P$, $P^* = 2333.3$ (i.e., HK$23,333$). $Q^* = 500 - 233.3 = 266.7$ thousand units.
+(a) $500 - 0.1P = -200 + 0.2P$$700 = 0.3P$$P^* = 2333.3$ (i.e., HK$23,333$). $Q^* = 500 - 233.3 = 266.7$ thousand units.
 
 (b) At $P = 1500$: $Q_d = 500 - 150 = 350$. $Q_s = -200 + 300 = 100$. Shortage $= 350 - 100 = 250$ thousand units.
 
@@ -132,7 +132,7 @@ CS before $= \frac{1}{2}(5000 - 2333.3)(266.7) = \frac{1}{2}(2666.7)(266.7) = 35
 
 CS after $= \frac{1}{2}(5000 - 1500 + 3500 - 1500)(100) = \frac{1}{2}(3500 + 2000)(100) = 275\,000$.
 
-Note: The demand price at $Q = 100$ is $P = 500 - 1000/0.1 = 500 - 1000 = $ wait, recalculate: $Q_d = 500 - 0.1P$, so $P = (500 - Q)/0.1 = 5000 - 10Q$. At $Q = 100$: $P = 5000 - 1000 = 4000$.
+Note: The demand price at $Q = 100$ is $P = 500 - 1000/0.1 = 500 - 1000 = $ wait, recalculate: $Q_d = 500 - 0.1P$So $P = (500 - Q)/0.1 = 5000 - 10Q$. At $Q = 100$: $P = 5000 - 1000 = 4000$.
 
 CS after $= \frac{1}{2}(4000 - 1500)(100) + (4000 - 1500)(0) = $ Actually, CS with price ceiling: $CS = \frac{1}{2}(P_{max} - P_{ceiling} + P_{demand\_at\_Q_s} - P_{ceiling}) \times Q_s$. No -- the correct formula for CS under a binding ceiling is the area below the demand curve and above the ceiling price, up to the quantity traded ($Q_s$):
 
@@ -158,15 +158,15 @@ DWL $= (355\,556 + 177\,778) - (300\,000 + 25\,000) = 533\,334 - 325\,000 = 208\
 
 ### SQ-3: Development Economics and the DSE
 
-**Question:** Compare Country A (GDP per capita $\$50,000$, growth rate 2%, HDI 0.92, literacy rate 99%, life expectancy 83) with Country B (GDP per capita $\$5,000$, growth rate 7%, HDI 0.65, literacy rate 75%, life expectancy 68). (a) Calculate how many years it will take for Country B's GDP per capita to equal Country A's current level, assuming constant growth rates. (b) Explain three reasons why GDP per capita alone is an inadequate measure of development. (c) Using the HDI components, suggest specific policies Country B should prioritise. (d) Discuss the role of international trade in development, referring to Hong Kong's experience.
+**Question:** Compare Country A (GDP per capita $\$50,000$, growth rate 2%, HDI 0.92, literacy rate 99%, life expectancy 83) with Country B (GDP per capita $\$5,000$Growth rate 7%, HDI 0.65, literacy rate 75%, life expectancy 68). (a) Calculate how many years it will take for Country B's GDP per capita to equal Country A's current level, assuming constant growth rates. (b) Explain three reasons why GDP per capita alone is an inadequate measure of development. (c) Using the HDI components, suggest specific policies Country B should prioritise. (d) Discuss the role of international trade in development, referring to Hong Kong's experience.
 
 **Solution:**
 
 (a) Using the rule of 70 or the compound growth formula: $50\,000 = 5\,000 \times (1.07)^n$.
 
-$(1.07)^n = 10$, $n = \frac{\ln 10}{\ln 1.07} = \frac{2.3026}{0.0677} = 34.0$ years.
+$(1.07)^n = 10$$n = \frac{\ln 10}{\ln 1.07} = \frac{2.3026}{0.0677} = 34.0$ years.
 
-It would take approximately 34 years for Country B to reach Country A's current GDP per capita, assuming constant 7% growth (which is very optimistic -- growth rates typically slow as economies develop, as predicted by the Solow convergence model).
+It would take approximately 34 years for Country B to reach Country A's current GDP per capita, assuming constant 7% growth (which is very optimistic -- growth rates slow as economies develop, as predicted by the Solow convergence model).
 
 (b) Three reasons GDP per capita is inadequate:
 1. **Distribution:** GDP per capita is a mean that hides inequality. Country B could have high GDP per capita concentrated among a small elite, with most of the population in poverty.
@@ -215,12 +215,12 @@ It would take approximately 34 years for Country B to reach Country A's current 
 
 1. **Always show working for calculations:** DSE markers award method marks even if the final answer is wrong. For PED calculations, show the formula, the values substituted, and the final answer with the correct sign and interpretation (elastic vs inelastic).
 
-2. **Use diagrams where possible:** Microeconomic questions almost always require a diagram. Label axes ($P$, $Q$), curves ($D$, $S$, $MR$, $MC$, $ATC$, $AVC$), equilibrium points, and shaded areas (CS, PS, DWL, tax revenue). An unlabelled diagram earns minimal marks.
+2. **Use diagrams where possible:** Microeconomic questions almost always require a diagram. Label axes ($P$$Q$), curves ($D$$S$$MR$$MC$$ATC$$AVC$), equilibrium points, and shaded areas (CS, PS, DWL, tax revenue). An unlabelled diagram earns minimal marks.
 
 3. **Define key terms at the start of each answer:** Begin by defining the economic concept in the question (e.g., "Opportunity cost is the value of the next best alternative forgone"). This demonstrates understanding and secures definition marks.
 
 4. **Use real-world Hong Kong examples:** DSE examiners reward answers that apply economic theory to Hong Kong's context. Examples include: the Linked Exchange Rate, public housing, the MPC, HKMA, Competition Ordinance, Cross-Border Trade, and the Greater Bay Area.
 
-5. **Address both sides of evaluation questions:** For 7--8 mark questions, always include evaluation: discuss advantages and disadvantages, short-run vs long-run effects, and conditions under which the analysis may or may not hold. Use phrases like "however," "on the other hand," "it depends on," and "in the long run."
+5. **Address both sides of evaluation questions:** For 7--8 mark questions, always include evaluation: discuss advantages and disadvantages, short-run vs long-run effects, and conditions under which the analysis may or may not hold. Use phrases like "however," "on the other hand," " on," and "in the long run."
 
 6. **Distinguish between equity and efficiency:** Many government intervention questions require weighing equity (fairness) against efficiency (maximising total surplus). Acknowledge the trade-off and explain why the optimal policy depends on society's preferences.

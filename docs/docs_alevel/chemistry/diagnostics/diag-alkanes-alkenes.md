@@ -43,9 +43,9 @@ $$\text{CH}_3^\bullet + \text{Cl}^\bullet \to \text{CH}_3\text{Cl}$$
 $$\text{Cl}^\bullet + \text{CH}_3\text{Cl} \to \text{HCl} + \bullet\text{CH}_2\text{Cl}$$
 $$\bullet\text{CH}_2\text{Cl} + \text{Cl}_2 \to \text{CH}_2\text{Cl}_2 + \text{Cl}^\bullet$$
 
-This process continues, with each chlorinated product being susceptible to further substitution. The C--H bonds in chloromethane are slightly weaker than in methane (due to the electron-withdrawing effect of Cl, which weakens the remaining C--H bonds), making further substitution competitive. A mixture of $\text{CH}_3\text{Cl}$, $\text{CH}_2\text{Cl}_2$, $\text{CHCl}_3$, and $\text{CCl}_4$ is always obtained.
+This process continues, with each chlorinated product being susceptible to further substitution. The C--H bonds in chloromethane are slightly weaker than in methane (due to the electron-withdrawing effect of Cl, which weakens the remaining C--H bonds), making further substitution competitive. A mixture of $\text{CH}_3\text{Cl}$$\text{CH}_2\text{Cl}_2$$\text{CHCl}_3$And $\text{CCl}_4$ is always obtained.
 
-(c) The Cl--Cl bond has a bond enthalpy of $+242\,\text{kJ mol}^{-1}$, which requires significant energy to break homolytically. At room temperature, the average kinetic energy of molecules is insufficient ($\approx 2.5\,\text{kJ mol}^{-1}$ at $298\,\text{K}$) to break this bond. UV light provides photons with sufficient energy (UV photons at $\lambda \approx 400\,\text{nm}$ have energy $\approx 300\,\text{kJ mol}^{-1}$) to break the Cl--Cl bond. The reaction does not proceed in the dark because no Cl radicals are generated without the UV energy input, and the propagation steps cannot begin without these radicals.
+(c) The Cl--Cl bond has a bond enthalpy of $+242\,\text{kJ mol}^{-1}$Which requires significant energy to break homolytically. At room temperature, the average kinetic energy of molecules is insufficient ($\approx 2.5\,\text{kJ mol}^{-1}$ at $298\,\text{K}$) to break this bond. UV light provides photons with sufficient energy (UV photons at $\lambda \approx 400\,\text{nm}$ have energy $\approx 300\,\text{kJ mol}^{-1}$) to break the Cl--Cl bond. The reaction does not proceed in the dark because no Cl radicals are generated without the UV energy input, and the propagation steps cannot begin without these radicals.
 
 ---
 ### UT-2: Electrophilic Addition Mechanism and Carbocation Stability
@@ -142,7 +142,7 @@ Starting from propene, propose a synthesis of 1,2-dibromopropane.
 
 (b) Explain why the addition of bromine to propene gives 1,2-dibromopropane rather than 1,3-dibromopropane.
 
-(c) If propene is first converted to propan-2-ol and then treated with concentrated $\text{H}_2\text{SO}_4$ and $\text{NaBr}$, what product would be formed? Explain the mechanism.
+(c) If propene is first converted to propan-2-ol and then treated with concentrated $\text{H}_2\text{SO}_4$ and $\text{NaBr}$What product would be formed? Explain the mechanism.
 
 **Solution:**
 
@@ -158,7 +158,7 @@ This is a single-step reaction: electrophilic addition of bromine across the dou
 
 1,3-Dibromopropane would require bromine atoms on non-adjacent carbons, which is impossible from a single addition across a C$=$C bond.
 
-(c) If propene is first hydrated to propan-2-ol ($\text{CH}_3\text{CH}(\text{OH})\text{CH}_3$) and then treated with concentrated $\text{H}_2\text{SO}_4$ and $\text{NaBr}$, the product is **2-bromopropane** ($\text{CH}_3\text{CHBrCH}_3$).
+(c) If propene is first hydrated to propan-2-ol ($\text{CH}_3\text{CH}(\text{OH})\text{CH}_3$) and then treated with concentrated $\text{H}_2\text{SO}_4$ and $\text{NaBr}$The product is **2-bromopropane** ($\text{CH}_3\text{CHBrCH}_3$).
 
 The mechanism is **SN1 nucleophilic substitution**:
 - Concentrated $\text{H}_2\text{SO}_4$ protonates the $-$OH group
@@ -219,13 +219,13 @@ $$\text{C}_2\text{H}_6(g) \to \text{C}_2\text{H}_4(g) + \text{H}_2(g) \quad \Del
 
 (b) In a cracking experiment, $10.0\,\text{mol}$ of ethane is heated at $800\,^\circ\text{C}$. At equilibrium, $3.00\,\text{mol}$ of ethene is present. Calculate $K_p$ if the total pressure is $1.00\,\text{atm}$.
 
-(c) Explain why cracking is typically carried out at low pressure despite Le Chatelier's principle suggesting that low pressure would reduce the yield.
+(c) Explain why cracking is carried out at low pressure despite Le Chatelier's principle suggesting that low pressure would reduce the yield.
 
 **Solution:**
 
 (a) **Equilibrium consideration:** The forward reaction is endothermic ($\Delta H = +137\,\text{kJ mol}^{-1}$), so high temperature shifts the equilibrium towards the products (ethene and hydrogen). This increases the equilibrium yield.
 
-**Kinetic consideration:** Cracking involves breaking strong C--C and C--H bonds, which requires significant activation energy. High temperatures provide more molecules with energy $\geq E_a$, dramatically increasing the rate of reaction (Arrhenius equation).
+**Kinetic consideration:** Cracking involves breaking strong C--C and C--H bonds, which requires significant activation energy. High temperatures provide more molecules with energy $\geq E_a$Dramatically increasing the rate of reaction (Arrhenius equation).
 
 Both factors (equilibrium and kinetics) favour high temperature.
 
@@ -294,7 +294,7 @@ The meso compound $(2R,3R)$-2,3-dibromobutane is NOT formed because anti additio
 
 Total moles of $\mathrm{CO}_2$: $15.4/44.0 = 0.350\,\mathrm{mol}$
 
-The alkene component reacts with bromine water (the alkane does not). Mass of alkene $= 2.50\,\mathrm{g}$, mass of alkane $= 5.00 - 2.50 = 2.50\,\mathrm{g}$ (1 mark).
+The alkene component reacts with bromine water (the alkane does not). Mass of alkene $= 2.50\,\mathrm{g}$Mass of alkane $= 5.00 - 2.50 = 2.50\,\mathrm{g}$ (1 mark).
 
 The alkene reacts with $\mathrm{Br}_2$ to give a dibromo compound. If the alkene is $\mathrm{C}_n\mathrm{H}_{2n}$:
 
@@ -304,6 +304,6 @@ The alkane is $\mathrm{C}_m\mathrm{H}_{2m+2}$. Moles of alkane: $2.50/(14m + 2)$
 
 Total moles of C from both: $n \times n(\text{alkene}) + m \times n(\text{alkane}) = 0.350$
 
-Since both components have equal mass ($2.50\,\mathrm{g}$ each), try equal carbon numbers first. If both are $\mathrm{C}_4$: ethene and butane? But ethene is a gas ($M = 28$), $n = 2.50/28 = 0.0893\,\mathrm{mol}$, contributing $0.179\,\mathrm{mol}$ C. Butane: $n = 2.50/58 = 0.0431\,\mathrm{mol}$, contributing $0.172\,\mathrm{mol}$ C. Total C $= 0.179 + 0.172 = 0.351\,\mathrm{mol}$ (matches $0.350$) (1 mark).
+Since both components have equal mass ($2.50\,\mathrm{g}$ each), try equal carbon numbers first. If both are $\mathrm{C}_4$: ethene and butane? But ethene is a gas ($M = 28$), $n = 2.50/28 = 0.0893\,\mathrm{mol}$Contributing $0.179\,\mathrm{mol}$ C. Butane: $n = 2.50/58 = 0.0431\,\mathrm{mol}$Contributing $0.172\,\mathrm{mol}$ C. Total C $= 0.179 + 0.172 = 0.351\,\mathrm{mol}$ (matches $0.350$) (1 mark).
 
 The mixture is **ethene** ($\mathrm{C}_2\mathrm{H}_4$) and **butane** ($\mathrm{C}_4\mathrm{H}_{10}$) (1 mark).

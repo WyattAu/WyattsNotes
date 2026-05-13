@@ -59,7 +59,7 @@ $$\text{Median} = \frac{50 + 51}{2} = 50.5 \text{ cm}$$
 
 $$s = \sqrt◆LB◆\frac{\sum(x_i - \bar{x})^2}{n-1}◆RB◆$$
 
-The outlier 180 is very far from the mean (about 111 cm away), so $(180 - 68.83)^2 \approx 12370$ contributes enormously to the sum of squared deviations. The interquartile range (IQR), by contrast, only uses $Q_1$ and $Q_3$, which depend on the middle 50% of the data. The outlier at 180 does not affect $Q_1$ or $Q_3$ at all, so the IQR is completely unchanged.
+The outlier 180 is very far from the mean (about 111 cm away), so $(180 - 68.83)^2 \approx 12370$ contributes enormously to the sum of squared deviations. The interquartile range (IQR), by contrast, only uses $Q_1$ and $Q_3$Which depend on the middle 50% of the data. The outlier at 180 does not affect $Q_1$ or $Q_3$ at all, so the IQR is completely unchanged.
 
 This is the fundamental advantage of the IQR over the standard deviation for skewed data or data with outliers: it is resistant (robust) to extreme values.
 
@@ -138,7 +138,7 @@ The employee's claim is supported in the sense that the largest **number** of em
 
 - In the class $35 \lt t \leq 60$ (width 25, frequency 65): the fraction beyond 50 minutes is $\frac{60 - 50}{25} = \frac{10}{25} = 0.4$.
 
-  Estimated frequency for $35 \lt t \leq 60$ with $t > 50$: $65 \times 0.4 = 26$.
+ Estimated frequency for $35 \lt t \leq 60$ with $t > 50$: $65 \times 0.4 = 26$.
 
 - In the class $60 \lt t \leq 90$: all 29 employees commute for more than 50 minutes.
 
@@ -162,9 +162,9 @@ The data is coded using the formula $y = \frac{x - 10}{5}$.
 
 **(a)** Find the mean and standard deviation of the coded data $y$.
 
-**(b)** A student claims that the standard deviation of $y$ equals the standard deviation of $x$ divided by 5. Another student claims it equals the standard deviation of $x$ divided by $|5| = 5$, so they agree. A third student says the standard deviation of $y$ equals the standard deviation of $x$ divided by $b$ where $y = \frac{x - a}{b}$, and asks: "Does it matter whether $b$ is positive or negative?" Resolve this dispute with a clear explanation.
+**(b)** A student claims that the standard deviation of $y$ equals the standard deviation of $x$ divided by 5. Another student claims it equals the standard deviation of $x$ divided by $|5| = 5$So they agree. A third student says the standard deviation of $y$ equals the standard deviation of $x$ divided by $b$ where $y = \frac{x - a}{b}$And asks: "Does it matter whether $b$ is positive or negative?" Resolve this dispute with a clear explanation.
 
-**(c)** A second weather station uses the coding $z = 3 - 2x$. Without recalculating from the raw data, find the mean and variance of $z$. Show that the variance of $z$ is the same as the variance of $w$ where $w = 2x - 3$, and explain why this is the case.
+**(c)** A second weather station uses the coding $z = 3 - 2x$. Without recalculating from the raw data, find the mean and variance of $z$. Show that the variance of $z$ is the same as the variance of $w$ where $w = 2x - 3$And explain why this is the case.
 
 [Difficulty: hard. Tests the precise effect of coding on variance, particularly the role of $b^2$ vs $b$.]
 
@@ -184,7 +184,7 @@ For the coded data $y = \frac{x - 10}{5} = \frac{1}{5}x - 2$:
 
 $$\bar{y} = \frac{1}{5}\bar{x} - 2 = \frac{19}{5} - 2 = 3.8 - 2 = 1.8$$
 
-For the standard deviation: if $y = \frac{x - a}{b}$, then $\text{SD}(y) = \frac◆LB◆\text{SD}(x)◆RB◆◆LB◆|b|◆RB◆$.
+For the standard deviation: if $y = \frac{x - a}{b}$Then $\text{SD}(y) = \frac◆LB◆\text{SD}(x)◆RB◆◆LB◆|b|◆RB◆$.
 
 $$\text{SD}(y) = \frac◆LB◆1◆RB◆◆LB◆|5|◆RB◆ \times \sqrt◆LB◆\frac{185}{7}◆RB◆ = \frac{1}{5}\sqrt◆LB◆\frac{185}{7}◆RB◆ = \sqrt◆LB◆\frac{185}{175}◆RB◆ = \sqrt◆LB◆\frac{37}{35}◆RB◆$$
 
@@ -204,9 +204,9 @@ $$\text{Var}(y) = \left(\frac{1}{5}\right)^2 \text{Var}(x) = \frac{1}{25}\text{V
 
 So $\text{SD}(y) = \frac{1}{5}\text{SD}(x)$.
 
-The question about whether $b$ being positive or negative matters: **it does not**. Since the variance scales by $a^2 = \left(\frac{1}{b}\right)^2 = \frac{1}{b^2}$, and $b^2 = (-b)^2$, the sign of $b$ is irrelevant. If we had coded as $y = \frac{x - 10}{-5}$, the variance would be the same. The mean would flip ($\bar{y}$ becomes $-1.8$ instead of $1.8$), but the spread is identical.
+The question about whether $b$ being positive or negative matters: **it does not**. Since the variance scales by $a^2 = \left(\frac{1}{b}\right)^2 = \frac{1}{b^2}$And $b^2 = (-b)^2$The sign of $b$ is irrelevant. If we had coded as $y = \frac{x - 10}{-5}$The variance would be the same. The mean would flip ($\bar{y}$ becomes $-1.8$ instead of $1.8$), but the spread is identical.
 
-The first two students are correct that SD($y$) = SD($x$) / 5. The third student is correct to ask the question, and the answer is: it does not matter because variance depends on $b^2$, not $b$.
+The first two students are correct that SD($y$) = SD($x$) / 5. The third student is correct to ask the question, and the answer is: it does not matter because variance depends on $b^2$Not $b$.
 
 **(c)** For $z = 3 - 2x = -2x + 3$:
 
@@ -222,7 +222,7 @@ $$\text{Var}(w) = 2^2 \text{Var}(x) = 4 \times \frac{185}{7} = \frac{740}{7}$$
 
 The variances are equal: $\text{Var}(z) = \text{Var}(w)$.
 
-This is because variance depends on the square of the scaling factor. Since both $z$ and $w$ use a scaling factor of magnitude 2, and $(-2)^2 = 2^2 = 4$, the variances are the same. The additive constant (3 or $-3$) and the sign of the multiplier only affect the mean, not the spread.
+This is because variance depends on the square of the scaling factor. Since both $z$ and $w$ use a scaling factor of magnitude 2, and $(-2)^2 = 2^2 = 4$The variances are the same. The additive constant (3 or $-3$) and the sign of the multiplier only affect the mean, not the spread.
 
 ---
 
@@ -292,7 +292,7 @@ $$z = \frac◆LB◆\bar{x} - \mu◆RB◆◆LB◆\sigma / \sqrt{n}◆RB◆ = \fra
 
 For a two-tailed test at the 5% level, the critical values are $z = \pm 1.96$.
 
-Since $-1.96 \lt -1.305 \lt 1.96$, the test statistic does not fall in the critical region.
+Since $-1.96 \lt -1.305 \lt 1.96$The test statistic does not fall in the critical region.
 
 **Conclusion:** There is insufficient evidence to reject $H_0$. The data is consistent with the factory's claim that the mean bolt length is 25.5 mm.
 
@@ -333,7 +333,7 @@ The regression line of $r$ on $d$ is $r = 12.08 - 0.953d$.
 | 7 | 5.0 | 5.409 | -0.409 |
 | 8 | 4.9 | 4.456 | 0.444 |
 
-Rounded to 2 d.p.: 0.97, $-0.37$, $-1.02$, $-0.77$, $-1.22$, $-1.06$, $-0.41$, 0.44.
+Rounded to 2 d.p.: 0.97, $-0.37$$-1.02$$-0.77$$-1.22$$-1.06$$-0.41$0.44.
 
 Stem-and-leaf (key: $1 \mid -2 = -1.2$):
 
@@ -344,7 +344,7 @@ Stem-and-leaf (key: $1 \mid -2 = -1.2$):
  1 | 0
 ```
 
-**(b)** Ordered residuals: $-1.22$, $-1.06$, $-1.02$, $-0.77$, $-0.41$, $-0.37$, 0.44, 0.97. ($n = 8$)
+**(b)** Ordered residuals: $-1.22$$-1.06$$-1.02$$-0.77$$-0.41$$-0.37$0.44, 0.97. ($n = 8$)
 
 $Q_1$ = median of lower half $= \frac{-1.06 + (-1.02)}{2} = -1.04$
 
@@ -384,11 +384,11 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 
 **(a)** Verify that $f(x)$ is a valid probability density function.
 
-**(b)** Find the median of $X$, giving your answer to 3 significant figures.
+**(b)** Find the median of $X$Giving your answer to 3 significant figures.
 
 **(c)** Find the interquartile range of $X$.
 
-**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$ and $\mathrm{SD}(X) = \frac◆LB◆3◆RB◆◆LB◆\sqrt{5}◆RB◆$. Comment on the accuracy of the grouped estimates.
+**(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes $0 \leq x \lt 1$$1 \leq x \lt 2$$2 \leq x \lt 3$$3 \leq x \lt 4$. Estimate the mean and standard deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$ and $\mathrm{SD}(X) = \frac◆LB◆3◆RB◆◆LB◆\sqrt{5}◆RB◆$. Comment on the accuracy of the grouped estimates.
 
 [Difficulty: hard. Combines integration of a PDF, quartile calculation, and comparison of grouped vs exact statistics.]
 
@@ -396,7 +396,7 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 
 **(a)** A valid PDF must satisfy $f(x) \geq 0$ for all $x$ and $\int_{-\infty}^{\infty} f(x)\,dx = 1$.
 
-Since $x^2 \geq 0$ and $\frac{3}{64} > 0$, we have $f(x) \geq 0$ on $[0, 4]$ and $f(x) = 0$ elsewhere.
+Since $x^2 \geq 0$ and $\frac{3}{64} > 0$We have $f(x) \geq 0$ on $[0, 4]$ and $f(x) = 0$ elsewhere.
 
 $$\int_{0}^{4} \frac{3}{64}x^2\,dx = \frac{3}{64}\left[\frac{x^3}{3}\right]_0^4 = \frac{3}{64} \cdot \frac{64}{3} = 1 \checkmark$$
 

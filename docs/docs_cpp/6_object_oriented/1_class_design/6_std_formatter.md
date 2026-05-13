@@ -10,8 +10,8 @@ slug: std-formatter
 ---
 # Custom Formatting: Extending `std::formatter`
 
-C++20 introduced `<format>`, providing type-safe text formatting through `std::format`. To enable
-formatting for user-defined types, you specialize `std::formatter<T, CharT>` in namespace `std`.
+C++20 introduced `<format>`Providing type-safe text formatting through `std::format`. To enable
+Formatting for user-defined types, you specialize `std::formatter<T, CharT>` in namespace `std`.
 This section covers the specialization API, custom format specifiers, and practical examples.
 
 ## 6.1 `std::formatter<T, CharT>` Specialization [N4950 §22.14.4]
@@ -20,9 +20,9 @@ To enable formatting for a user-defined type, you specialize `std::formatter<T, 
 `std`. The specialization must provide two member functions:
 
 1. **`constexpr auto parse(format_parse_context& ctx)`**: Parses format specifiers from the format
-   string. Returns an iterator pointing past the last character consumed.
+ string. Returns an iterator pointing past the last character consumed.
 2. **`auto format(const T& obj, format_context& ctx) const`**: Formats the object and writes the
-   output. Returns an iterator past the last character written.
+ output. Returns an iterator past the last character written.
 
 ## 6.2 Formatter for an Enum Class
 
@@ -148,7 +148,7 @@ Paren:      (0.3333, 0.6667, 1.4142)
 ## 6.4 Format Specifiers: Width, Fill, and Alignment
 
 Standard format specifiers support width, fill character, and alignment. A custom formatter can
-forward these to the underlying `format_to` call:
+Forward these to the underlying `format_to` call:
 
 ```cpp
 #include <format>
@@ -184,9 +184,9 @@ int main() {
 ```
 
 :::info
-C++23 Extension C++23 adds `std::formatter` specializations for `std::optional<T>`,
-`std::variant<Ts...>`, and other standard library types, reducing the need for custom
-specializations in many cases.
+C++23 Extension C++23 adds `std::formatter` specializations for `std::optional<T>`
+`std::variant<Ts...>`And other standard library types, reducing the need for custom
+Specializations .
 :::
 
 ## See Also
@@ -197,7 +197,7 @@ specializations in many cases.
 ## 6.5 Formatter for Containers and Compound Types
 
 Formatting containers requires iterating over their elements. The formatter can delegate to the
-element type's formatter for each item.
+Element type's formatter for each item.
 
 ### Container Formatter
 
@@ -314,7 +314,7 @@ int main() {
 ## 6.6 Integration with `std::format` and `std::print`
 
 Once a `std::formatter` specialization exists for a type, it works seamlessly with all formatting
-facilities:
+Facilities:
 
 ```cpp
 #include <format>
@@ -366,7 +366,7 @@ int main() {
 ## 6.7 Debugging Formatters
 
 A common pattern is to provide a detailed debug formatter that shows all fields, distinct from the
-default human-readable format. Use format specifiers to switch between modes:
+Default human-readable format. Use format specifiers to switch between modes:
 
 ```cpp
 #include <format>
@@ -455,27 +455,27 @@ int main() {
 
 ## 6.8 Comparison with `operator<<`
 
-| Aspect                | `operator<<`                    | `std::formatter`                                   |
+| Aspect | `operator<<` | `std::formatter` |
 | :-------------------- | :------------------------------ | :------------------------------------------------- |
-| Defined in            | Global scope (free function)    | `namespace std` (specialization)                   |
-| Format control        | None (fixed format)             | Format specifiers (width, precision, custom flags) |
-| Compile-time checking | None                            | Format string checked at compile time              |
-| Return type           | `std::ostream&`                 | Iterator (composable with `std::format_to`)        |
-| Composability         | Chained via `<<`                | Nested via `std::format` calls                     |
-| Performance           | Virtual dispatch per `<<`       | No virtual dispatch; compile-time resolved         |
-| C++ standard          | C++98                           | C++20                                              |
-| Output target         | `std::ostream` only             | Any output iterator (string, file, stdout, etc.)   |
-| Locale support        | Via `std::locale` imbued stream | Via `std::format` locale parameter                 |
-| Default formatting    | Required for many types         | Required only for `std::format` usage              |
+| Defined in | Global scope (free function) | `namespace std` (specialization) |
+| Format control | None (fixed format) | Format specifiers (width, precision, custom flags) |
+| Compile-time checking | None | Format string checked at compile time |
+| Return type | `std::ostream&` | Iterator (composable with `std::format_to`) |
+| Composability | Chained via `<<` | Nested via `std::format` calls |
+| Performance | Virtual dispatch per `<<` | No virtual dispatch; compile-time resolved |
+| C++ standard | C++98 | C++20 |
+| Output target | `std::ostream` only | Any output iterator (string, file, stdout, etc.) |
+| Locale support | Via `std::locale` imbued stream | Via `std::format` locale parameter |
+| Default formatting | Required for many types | Required only for `std::format` usage |
 
 ### When to Use Which
 
 - **Use `std::formatter`** when you need format control, compile-time checking, or integration with
-  `std::format`/`std::print`. This should be the default for new code.
-- **Use `operator<<`** when interfacing with legacy code that uses `std::ostream`, or when you need
-  streaming output (e.g., logging frameworks that accept `std::ostream&`).
+ `std::format`/`std::print`. This should be the default for new code.
+- **Use `operator<<`** when interfacing with legacy code that uses `std::ostream`Or when you need
+ streaming output (e.g., logging frameworks that accept `std::ostream&`).
 - **Provide both** for maximum compatibility. The formatter can delegate to a common formatting
-  function.
+ function.
 
 ```cpp
 #include <format>
@@ -529,17 +529,25 @@ int main() {
 ## Common Pitfalls
 
 - **Specializing `std::formatter` in the wrong namespace.** The specialization must be in
-  `namespace std`. Defining it in your own namespace will not be found by argument-dependent lookup
-  for `std::format`.
+ `namespace std`. Defining it in your own namespace will not be found by argument-dependent lookup
+ for `std::format`.
 - **Returning the wrong iterator from `parse`.** `parse` must return an iterator pointing past the
-  last consumed character, typically `ctx.end()` or the position of `}`. Returning the wrong
-  iterator causes format string parsing errors.
+ last consumed character, `ctx.end()` or the position of `}`. Returning the wrong
+ iterator causes format string parsing errors.
 - **Throwing from `parse` for valid specifiers.** Only throw `std::format_error` for genuinely
-  invalid specifiers. Valid specifiers should be consumed silently.
-- **Not handling empty format specifiers.** When the format string is `{:}`, the `parse` function is
-  called with `ctx.begin() == ctx.end()` (before the `}`). Always handle this case.
+ invalid specifiers. Valid specifiers should be consumed silently.
+- **Not handling empty format specifiers.** When the format string is `{:}`The `parse` function is
+ called with `ctx.begin() == ctx.end()` (before the `}`). Always handle this case.
 - **Format specifiers in `std::formatter` for `std::optional`.** C++23 provides a built-in formatter
-  for `std::optional<T>` that delegates to `T`'s formatter. Do not specialize `std::formatter` for
-  `std::optional` yourself unless you have a specific reason.
+ for `std::optional<T>` that delegates to `T`'s formatter. Do not specialize `std::formatter` for
+ `std::optional` yourself unless you have a specific reason.
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

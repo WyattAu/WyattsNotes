@@ -11,19 +11,19 @@ slug: spaceship-operator
 # The Spaceship Operator (`<=>`) and Default Comparisons
 
 C++20 introduced the three-way comparison operator `<=>` (the "spaceship operator") as a unified
-mechanism for defining all relational comparisons in a single declaration. Combined with
-`= default`, it dramatically reduces boilerplate for comparable types.
+Mechanism for defining all relational comparisons in a single declaration. Combined with
+`= default`It dramatically reduces boilerplate for comparable types.
 
 ## 5.1 Three-Way Comparison [N4950 §11.4.5.4]
 
 C++20 introduced the **spaceship operator** `<=>` as a unified comparison mechanism. It returns one
-of three comparison category types from `<compare>`:
+Of three comparison category types from `<compare>`:
 
-| Category                | Meaning                                      | Total ordering? | Equality substitutable? |
+| Category | Meaning | Total ordering? | Equality substitutable? |
 | ----------------------- | -------------------------------------------- | :-------------: | :---------------------: |
-| `std::strong_ordering`  | Total, with substitutable equality           |       Yes       |           Yes           |
-| `std::weak_ordering`    | Total, but equality may not be substitutable |       Yes       |           No            |
-| `std::partial_ordering` | Partial (incomparable values possible)       |       No        |           No            |
+| `std::strong_ordering` | Total, with substitutable equality | Yes | Yes |
+| `std::weak_ordering` | Total, but equality may not be substitutable | Yes | No |
+| `std::partial_ordering` | Partial (incomparable values possible) | No | No |
 
 $$
 \texttt{strong\_ordering} \subset \texttt{weak\_ordering} \subset \texttt{partial\_ordering}
@@ -31,14 +31,14 @@ $$
 
 The implicit conversion rules allow a `strong_ordering` to be used where a `weak_ordering` or
 `partial_ordering` is expected, and a `weak_ordering` to be used where a `partial_ordering` is
-expected.
+Expected.
 
 ## 5.2 Default Comparisons with `= default`
 
-When you write `auto operator<=>(const T&) const = default;`, the compiler generates the `<=>`
-operator by lexicographically comparing each non-static data member in declaration order [N4950
-§11.4.5.4]. Furthermore, if `<=>` is defaulted and returns `std::strong_ordering`, the compiler also
-synthesizes the six relational operators: `==`, `!=`, `<`, `>`, `<=`, `>=`.
+When you write `auto operator<=>(const T&) const = default;`The compiler generates the `<=>`
+Operator by lexicographically comparing each non-static data member in declaration order [N4950
+§11.4.5.4]. Furthermore, if `<=>` is defaulted and returns `std::strong_ordering`The compiler also
+Synthesizes the six relational operators: `==``!=``<``>``<=``>=`.
 
 ```cpp
 #include <compare>
@@ -172,8 +172,8 @@ int main() {
 
 :::warning
 Performance Note The above implementation allocates temporary strings for each
-comparison. For performance-critical code, implement a locale-aware character-by-character
-comparison that avoids allocation.
+Comparison. For performance-critical code, implement a locale-aware character-by-character
+Comparison that avoids allocation.
 :::
 
 ## See Also
@@ -183,19 +183,19 @@ comparison that avoids allocation.
 
 ## 5.5 Auto-Generation of Comparison Operators
 
-When `operator<=>` is defaulted and returns `std::strong_ordering`, the compiler **automatically
-synthesizes** all six relational operators: `==`, `!=`, `<`, `>`, `<=`, `>=` [N4950 §11.4.5.4]. The
-synthesized operators use the `<=>` result and `==` for equality.
+When `operator<=>` is defaulted and returns `std::strong_ordering`The compiler **automatically
+Synthesizes** all six relational operators: `==``!=``<``>``<=``>=` [N4950 §11.4.5.4]. The
+Synthesized operators use the `<=>` result and `==` for equality.
 
 ### When Synthesis Does Not Occur
 
-| Condition                              | Synthesized Operators?                                          |
+| Condition | Synthesized Operators? |
 | :------------------------------------- | :-------------------------------------------------------------- |
-| `= default` returns `strong_ordering`  | Yes — all six operators                                         |
-| `= default` returns `weak_ordering`    | Yes — all six operators                                         |
-| `= default` returns `partial_ordering` | Yes — all six operators                                         |
-| `operator<=>` is user-defined          | Only `!=`, `<`, `>`, `<=`, `>=` (if `==` is separately defined) |
-| Only `operator==` is defined           | `!=` is synthesized, but not ordering operators                 |
+| `= default` returns `strong_ordering` | Yes — all six operators |
+| `= default` returns `weak_ordering` | Yes — all six operators |
+| `= default` returns `partial_ordering` | Yes — all six operators |
+| `operator<=>` is user-defined | Only `!=``<``>``<=``>=` (if `==` is separately defined) |
+| Only `operator==` is defined | `!=` is synthesized, but not ordering operators |
 
 ```cpp
 #include <compare>
@@ -248,7 +248,7 @@ The three comparison category types form a hierarchy with different guarantees:
 
 ### `std::strong_ordering`
 
-A **total ordering** where equivalent values are fully substitutable. If `a == b`, then
+A **total ordering** where equivalent values are fully substitutable. If `a == b`Then
 `f(a) == f(b)` for all operations `f`.
 
 **Use when:** The type has natural, unambiguous ordering (integers, strings, version numbers).
@@ -273,8 +273,8 @@ int main() {
 ### `std::weak_ordering`
 
 A **total ordering** where equivalent values may not be substitutable. This arises with types that
-use case-insensitive comparison: `"ABC"` and `"abc"` are equivalent for ordering purposes, but are
-not the same value.
+Use case-insensitive comparison: `"ABC"` and `"abc"` are equivalent for ordering purposes, but are
+Not the same value.
 
 **Use when:** You need a total order but equality has a broader definition than identity.
 
@@ -313,10 +313,10 @@ int main() {
 ### `std::partial_ordering`
 
 A **partial ordering** where some pairs of values are incomparable. The classic example is
-floating-point numbers with NaN.
+Floating-point numbers with NaN.
 
 **Use when:** The type may contain values that cannot be meaningfully compared (floating-point NaN,
-optional values, etc.).
+Optional values, etc.).
 
 ```cpp
 #include <compare>
@@ -375,8 +375,8 @@ int main() {
 ## 5.7 Integration with `std::set` and `std::map`
 
 `std::set` and `std::map` require a strict weak ordering (`operator<`). The spaceship operator
-provides this automatically when defaulted, but the interaction with associative containers has
-nuances.
+Provides this automatically when defaulted, but the interaction with associative containers has
+Nuances.
 
 ### Defaulted `<=>` with `std::set`
 
@@ -457,7 +457,7 @@ int main() {
 ## 5.8 Comparison with Legacy `<` Overloading
 
 Before C++20, comparison operators had to be individually overloaded. The spaceship operator
-replaces this with a single declaration.
+Replaces this with a single declaration.
 
 ### Legacy Approach (C++98–C++17)
 
@@ -517,14 +517,22 @@ int main() {
 ## Common Pitfalls
 
 - **Defaulting `<=>` on types with `bool` and floating-point members.** `bool` uses
-  `strong_ordering`, but `double` uses `partial_ordering`. When mixed in a struct, the defaulted
-  `<=>` returns `partial_ordering` (the weakest category among the members).
+ `strong_ordering`But `double` uses `partial_ordering`. When mixed in a struct, the defaulted
+ `<=>` returns `partial_ordering` (the weakest category among the members).
 - **Using `<=>` with `std::optional` members.** `std::optional` has a defaulted `<=>` that returns
-  `partial_ordering` when the value type has `partial_ordering`. Be aware of the propagation.
+ `partial_ordering` when the value type has `partial_ordering`. Be aware of the propagation.
 - **Defining `operator==` separately from `<=>`.** If you define both, they must agree. If they
-  disagree, `std::set` and `std::map` will behave inconsistently.
-- **Forgetting `<compare>` header.** `std::strong_ordering`, `std::weak_ordering`, and
-  `std::partial_ordering` are defined in `<compare>`. Forgetting to include it causes compilation
-  errors.
+ disagree, `std::set` and `std::map` will behave inconsistently.
+- **Forgetting `<compare>` header.** `std::strong_ordering``std::weak_ordering`And
+ `std::partial_ordering` are defined in `<compare>`. Forgetting to include it causes compilation
+ errors.
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

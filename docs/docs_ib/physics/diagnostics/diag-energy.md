@@ -55,7 +55,7 @@ A particle of mass $m_1 = 2.0\,\text{kg}$ moving at $4.0\,\text{m}\,\text{s}^{-1
 
 (b) Verify that the collision is elastic by checking conservation of kinetic energy.
 
-(c) A student claims that if $m_2$ were much larger than $m_1$, then $m_1$ would rebound with nearly the same speed. Show that this claim is correct for the limiting case $m_2 \to \infty$.
+(c) A student claims that if $m_2$ were much larger than $m_1$Then $m_1$ would rebound with nearly the same speed. Show that this claim is correct for the limiting case $m_2 \to \infty$.
 
 **Solution:**
 
@@ -73,11 +73,11 @@ $$m_2 = \frac{6.0}{3.0} = 2.0\,\text{kg}$$
 
 Kinetic energy after: $KE_f = \frac{1}{2}(2.0)(1.0)^2 + \frac{1}{2}(2.0)(3.0)^2 = 1.0 + 9.0 = 10.0\,\text{J}$
 
-$KE_i \neq KE_f$, so the collision is **not** elastic.
+$KE_i \neq KE_f$So the collision is **not** elastic.
 
 This is a critical trap: the problem statement says to "verify" elasticity, but the calculation shows it is inelastic. The student must trust the calculation over the implication of the wording.
 
-Note: For a truly elastic collision with these initial conditions ($m_1 = m_2 = 2.0\,\text{kg}$, $u_2 = 0$), $m_1$ should stop and $m_2$ should move at $4.0\,\text{m}\,\text{s}^{-1}$. The given post-collision velocities ($1.0$ and $3.0\,\text{m}\,\text{s}^{-1}$) are inconsistent with an elastic collision.
+Note: For a truly elastic collision with these initial conditions ($m_1 = m_2 = 2.0\,\text{kg}$$u_2 = 0$), $m_1$ should stop and $m_2$ should move at $4.0\,\text{m}\,\text{s}^{-1}$. The given post-collision velocities ($1.0$ and $3.0\,\text{m}\,\text{s}^{-1}$) are inconsistent with an elastic collision.
 
 (c) For a head-on elastic collision with $m_2$ initially at rest:
 
@@ -233,7 +233,7 @@ $$4.0 \times 6.0 = (4.0 + 6.0) v$$
 
 $$v = \frac{24.0}{10.0} = 2.4\,\text{m}\,\text{s}^{-1}$$
 
-The combined block then compresses the spring. At maximum compression $x$, all kinetic energy converts to elastic potential energy:
+The combined block then compresses the spring. At maximum compression $x$All kinetic energy converts to elastic potential energy:
 
 $$\frac{1}{2}(m_1 + m_2)v^2 = \frac{1}{2}kx^2$$
 
@@ -261,7 +261,7 @@ Fraction of original KE: $\frac{28.8}{72.0} = 0.40 = 40\%$
 
 A cyclist of total mass (cyclist + bicycle) $80\,\text{kg}$ travels along a road whose elevation profile is given by $h(x) = 0.002x^2 - 0.05x$ where $h$ is in metres and $x$ is the horizontal distance in metres. The cyclist maintains constant power output $P = 250\,\text{W}$. The total resistive force (air resistance + rolling friction) is $F_r = 15 + 0.5v^2\,\text{N}$.
 
-At position $x = 50\,\text{m}$, the cyclist is moving at $v = 8.0\,\text{m}\,\text{s}^{-1}$.
+At position $x = 50\,\text{m}$The cyclist is moving at $v = 8.0\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate the gradient of the road at $x = 50\,\text{m}$ and determine whether the cyclist is going uphill or downhill.
 
@@ -275,7 +275,7 @@ At position $x = 50\,\text{m}$, the cyclist is moving at $v = 8.0\,\text{m}\,\te
 
 At $x = 50\,\text{m}$: $\frac{dh}{dx} = 0.004 \times 50 - 0.05 = 0.20 - 0.05 = 0.15$
 
-Since $dh/dx \gt 0$, the cyclist is going **uphill**.
+Since $dh/dx \gt 0$The cyclist is going **uphill**.
 
 The angle of the incline: $\sin\theta \approx \tan\theta \approx 0.15$ (small angle approximation is valid here since $\theta \approx 8.5^\circ$).
 
@@ -294,6 +294,6 @@ The cyclist decelerates significantly. At this gradient, the constant power of $
 (c) Even on a downhill section where gravity assists, the speed is limited by the power equation $P = Fv$. As speed increases:
 - The driving force from the cyclist's power decreases ($F = P/v$)
 - The resistive force increases ($F_r = 15 + 0.5v^2$)
-- Eventually, $F_d + mg\sin\theta_{\text{down}} = F_r$, and acceleration becomes zero
+- Eventually, $F_d + mg\sin\theta_{\text{down}} = F_r$And acceleration becomes zero
 
 The cyclist reaches a terminal velocity where the power output equals the rate of energy dissipation against resistance. The quadratic nature of the air resistance term ensures this equilibrium always exists at finite speed.

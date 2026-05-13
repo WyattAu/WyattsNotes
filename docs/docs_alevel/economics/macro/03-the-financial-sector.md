@@ -17,85 +17,85 @@ sidebar_position: 3
 Commercial banks perform four key functions:
 
 1. **Financial intermediation**: channel funds from savers (depositors) to borrowers (loans). This
-   converts small, liquid deposits into large, illiquid loans — overcoming the mismatch between
-   savers' and borrowers' needs.
+ converts small, liquid deposits into large, illiquid loans — overcoming the mismatch between
+ savers' and borrowers' needs.
 
 2. **Maturity transformation**: borrow short-term (demand deposits) and lend long-term (mortgages,
-   business loans). This creates liquidity for depositors while providing long-term finance for
-   borrowers.
+ business loans). This creates liquidity for depositors while providing long-term finance for
+ borrowers.
 
 3. **Risk transformation**: pool many deposits to diversify risk. Individual depositors face lower
-   risk than if they lent directly to a single borrower.
+ risk than if they lent directly to a single borrower.
 
 4. **Payment system**: facilitate transactions through cheque clearing, electronic transfers, and
-   card payments.
+ card payments.
 
 #### Deeper Analysis: Financial Intermediation
 
 Financial intermediation is critical because it solves the **dual problem** that savers and
-borrowers face. Savers want safety, liquidity, and a return. Borrowers want large sums, long
-maturities, and lower interest rates. No individual transaction between a saver and a borrower can
-satisfy both parties simultaneously.
+Borrowers face. Savers want safety, liquidity, and a return. Borrowers want large sums, long
+Maturities, and lower interest rates. No individual transaction between a saver and a borrower can
+Satisfy both parties simultaneously.
 
 **Real-world example:** Suppose a household wishes to save £200 per month from their salary. They
-cannot lend directly to a property developer who needs GBP 50 million over 25 years. A commercial
-bank aggregates thousands of small deposits, transforms the maturity (short deposits into a
-long-term mortgage), and assumes the credit risk. The saver gets instant-access deposits; the
-developer gets a 25-year loan. Both parties are better off than without intermediation.
+Cannot lend directly to a property developer who needs GBP 50 million over 25 years. A commercial
+Bank aggregates thousands of small deposits, transforms the maturity (short deposits into a
+Long-term mortgage), and assumes the credit risk. The saver gets instant-access deposits; the
+Developer gets a 25-year loan. Both parties are better off than without intermediation.
 
 **Types of intermediation:**
 
-| Type                           | Description                                                           | Example                                              |
+| Type | Description | Example |
 | ------------------------------ | --------------------------------------------------------------------- | ---------------------------------------------------- |
-| **Maturity intermediation**    | Matching short-term liabilities with long-term assets                 | Current accounts funding 25-year mortgages           |
-| **Size intermediation**        | Aggregating small deposits into large loans                           | Retail deposits funding corporate loans              |
-| **Risk intermediation**        | Diversifying and managing credit risk                                 | Banks spreading default risk across a loan portfolio |
-| **Information intermediation** | Assessing borrower creditworthiness (reducing asymmetric information) | Banks performing credit checks before lending        |
+| **Maturity intermediation** | Matching short-term liabilities with long-term assets | Current accounts funding 25-year mortgages |
+| **Size intermediation** | Aggregating small deposits into large loans | Retail deposits funding corporate loans |
+| **Risk intermediation** | Diversifying and managing credit risk | Banks spreading default risk across a loan portfolio |
+| **Information intermediation** | Assessing borrower creditworthiness (reducing asymmetric information) | Banks performing credit checks before lending |
 
 The problem of **asymmetric information** is central to financial intermediation. Borrowers know
-more about their own risk than lenders do. This leads to **adverse selection** (risky borrowers are
-most eager to borrow) and **moral hazard** (borrowers may take excessive risks after receiving a
-loan). Banks mitigate both through screening, monitoring, and collateral requirements.
+More about their own risk than lenders do. This leads to **adverse selection** (risky borrowers are
+Most eager to borrow) and **moral hazard** (borrowers may take excessive risks after receiving a
+Loan). Banks mitigate both through screening, monitoring, and collateral requirements.
 
 ### 1.2 Central Banks
 
 The **central bank** (Bank of England, ECB, Federal Reserve) performs:
 
 1. **Lender of last resort**: provides emergency liquidity to commercial banks facing temporary
-   liquidity shortages (Bagehot's rule: lend freely at a penalty rate against good collateral)
+ liquidity shortages (Bagehot's rule: lend freely at a penalty rate against good collateral)
 
 2. **Banker to the government**: manages government accounts, conducts debt issuance
 
 3. **Monetary policy**: sets interest rates, conducts open market operations to control the money
-   supply and achieve the inflation target
+ supply and achieve the inflation target
 
 4. **Financial stability**: regulates and supervises banks, manages systemic risk (macroprudential
-   regulation)
+ regulation)
 
 5. **Issuer of currency**: has the monopoly on note issuance
 
 :::info
 Board-Specific Note AQA and Edexcel require detailed knowledge of the Bank of England's
 Monetary Policy Committee (MPC): 9 members, meets 8 times per year, sets the Bank Rate to achieve
-the 2% CPI inflation target. CIE (9708) focuses more on the _functions_ of central banks in general
-rather than a specific institution. OCR expects you to distinguish between the central bank's roles
-in monetary stability and financial stability, and to evaluate whether these roles can conflict.
+The 2% CPI inflation target. CIE (9708) focuses more on the _functions_ of central banks 
+Rather than a specific institution. OCR expects you to distinguish between the central bank's roles
+In monetary stability and financial stability, and to evaluate whether these roles can conflict.
 :::
 
 **Real-world example — the Bank of England during COVID-19 (2020):** In March 2020, the BoE cut Bank
 Rate from 0.75% to 0.1% (an emergency 0.65 percentage point cut) and launched a GBP 200 billion QE
-programme. Simultaneously, it introduced the COVID Corporate Financing Facility (CCFF) to buy
-short-term corporate debt directly from firms. This illustrates multiple central bank functions
-operating at once: monetary policy (rate cut), financial stability (supporting corporate bond
-markets to prevent fire sales), and lender of last resort (supporting commercial paper markets).
+Programme. Simultaneously, it introduced the COVID Corporate Financing Facility (CCFF) to buy
+Short-term corporate debt directly from firms. This illustrates multiple central bank functions
+Operating at once: monetary policy (rate cut), financial stability (supporting corporate bond
+Markets to prevent fire sales), and lender of last resort (supporting commercial paper markets).
 
 **Evaluation — independence vs accountability:** Central bank independence (adopted by the BoE
-in 1997) is argued to improve policy credibility and anchor inflation expectations. However, critics
-argue that unelected officials setting interest rates is democratically illegitimate, and that QE
-decisions (which redistribute wealth and affect government borrowing costs) are fiscal policy by
-another name. During the 2022 cost-of-living crisis, the BoE faced criticism for being slow to raise
-rates despite inflation exceeding 10%, raising questions about whether independence truly delivers
-better outcomes.
+In 1997) is argued to improve policy credibility and anchor inflation expectations. However, critics
+Argue that unelected officials setting interest rates is democratically illegitimate, and that QE
+Decisions (which redistribute wealth and affect government borrowing costs) are fiscal policy by
+Another name. During the 2022 cost-of-living crisis, the BoE faced criticism for being slow to raise
+Rates despite inflation exceeding 10%, raising questions about whether independence truly delivers
+Better outcomes.
 
 ## 2. Money Supply
 
@@ -103,35 +103,35 @@ better outcomes.
 
 Money serves three functions: medium of exchange, store of value, unit of account.
 
-| Measure                | Components (UK)                                                                            |
+| Measure | Components (UK) |
 | ---------------------- | ------------------------------------------------------------------------------------------ |
 | **M0 (monetary base)** | Cash (notes and coins) in circulation + banks' operational deposits at the Bank of England |
-| **M2**                 | Cash + retail bank deposits (current accounts, instant-access savings)                     |
-| **M4 (broad money)**   | Cash + all retail and wholesale bank deposits + certificates of deposit                    |
+| **M2** | Cash + retail bank deposits (current accounts, instant-access savings) |
+| **M4 (broad money)** | Cash + all retail and wholesale bank deposits + certificates of deposit |
 
 :::info
 Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
 M2, M4. Edexcel emphasises M0 and M4. AQA focuses on broad vs narrow money. Always use the
-definitions in your specification.
+Definitions in your specification.
 :::
 
 ### 2.2 Money Creation: The Money Multiplier
 
 **Fractional reserve banking**: banks are required (or choose) to hold only a fraction of deposits
-as reserves, lending out the rest.
+As reserves, lending out the rest.
 
 We define the **reserve ratio** as $rr = \frac{R}{D}$ where $R$ = reserves and $D$ = deposits.
 
 **Derivation of the money multiplier.** Suppose the central bank injects £1,000 of new reserves into
-the banking system:
+The banking system:
 
-| Round    | Deposits                      | Reserves ($rr \times D$)    | Loans                     |
+| Round | Deposits | Reserves ($rr \times D$) | Loans |
 | -------- | ----------------------------- | --------------------------- | ------------------------- |
-| 1        | £1,000                        | $rr \times 1\,000$         | $(1-rr) \times 1\,000$   |
-| 2        | $(1-rr) \times 1\,000$       | $rr(1-rr) \times 1\,000$   | $(1-rr)^2 \times 1\,000$ |
-| 3        | $(1-rr)^2 \times 1\,000$     | $rr(1-rr)^2 \times 1\,000$ | $(1-rr)^3 \times 1\,000$ |
-| $\vdots$ | $\vdots$                      | $\vdots$                    | $\vdots$                  |
-| $n$      | $(1-rr)^{n-1} \times 1\,000$ |                             |                           |
+| 1 | £1,000 | $rr \times 1\,000$ | $(1-rr) \times 1\,000$ |
+| 2 | $(1-rr) \times 1\,000$ | $rr(1-rr) \times 1\,000$ | $(1-rr)^2 \times 1\,000$ |
+| 3 | $(1-rr)^2 \times 1\,000$ | $rr(1-rr)^2 \times 1\,000$ | $(1-rr)^3 \times 1\,000$ |
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+| $n$ | $(1-rr)^{n-1} \times 1\,000$ | | |
 
 Total deposits created:
 
@@ -143,10 +143,10 @@ $$
 \end{aligned}
 $$
 
-where $m = \frac{1}{rr}$ is the **simple money multiplier**.
+Where $m = \frac{1}{rr}$ is the **simple money multiplier**.
 
 If $rr = 0.1$ (10% reserve ratio): $m = 10$. A £1,000 increase in reserves creates £10,000 of new
-deposits.
+Deposits.
 
 ### 2.3 Limitations of the Simple Money Multiplier
 
@@ -154,29 +154,29 @@ In practice, the actual money multiplier differs from $1/rr$ because:
 
 1. **Banks may hold excess reserves** (above the required minimum), reducing the multiplier
 2. **Not all loans are redeposited** (some is held as cash, "cash leakages"), reducing the
-   multiplier
+ multiplier
 3. **Capital requirements** (Basel III) constrain lending based on risk-weighted assets, not just
-   reserves
+ reserves
 4. **Liquidity preference**: banks may not lend even when they have reserves if demand for loans is
-   weak (as after 2008)
+ weak (as after 2008)
 5. **The modern view**: banks create deposits by making loans first, then seek reserves later
-   (endogenous money theory)
+ (endogenous money theory)
 
 **Evaluation — which model is correct?** The textbook money multiplier model implies a causal chain:
-central bank creates reserves, banks lend, money supply expands. The endogenous money model reverses
-this: banks lend first (creating deposits), then obtain reserves as needed from the interbank market
-or central bank. In the UK, Canada, and many other modern banking systems, there are no binding
-reserve requirements, lending is capital-constrained rather than reserve-constrained, and the
-central bank sets the price of reserves (the interest rate) rather than the quantity. This supports
-the endogenous money view. However, for exam purposes, the money multiplier remains the standard
-model on most A Level specifications.
+Central bank creates reserves, banks lend, money supply expands. The endogenous money model reverses
+This: banks lend first (creating deposits), then obtain reserves as needed from the interbank market
+Or central bank. In the UK, Canada, and many other modern banking systems, there are no binding
+Reserve requirements, lending is capital-constrained rather than reserve-constrained, and the
+Central bank sets the price of reserves (the interest rate) rather than the quantity. This supports
+The endogenous money view. However, for exam purposes, the money multiplier remains the standard
+Model on most A Level specifications.
 
 :::info
 Board-Specific Note AQA and Edexcel teach the traditional money multiplier model. CIE (9708)
-has recently moved towards acknowledging endogenous money but still primarily examines the
-multiplier approach. OCR tends to focus on the practical implications (why QE did not cause
-hyperinflation) rather than the theoretical debate. When answering, use the multiplier model but
-acknowledge its limitations for evaluation marks.
+Has recently moved towards acknowledging endogenous money but still primarily examines the
+Multiplier approach. OCR tends to focus on the practical implications (why QE did not cause
+Hyperinflation) rather than the theoretical debate. When answering, use the multiplier model but
+Acknowledge its limitations for evaluation marks.
 :::
 
 **Credit creation process (step-by-step balance sheets):**
@@ -193,7 +193,7 @@ Customer 1 deposits £900 in Bank B:
 - Reserves: £90 | Loans: £810 | Deposits: £900
 
 And so on. Total new money = £10,000 (deposits) + £9,000 (loans) — the deposit is money, the loan
-creates the deposit.
+Creates the deposit.
 
 ## 3. Interest Rates
 
@@ -235,24 +235,24 @@ $$M^s = M^d \implies \bar{M} = (k+j)Y - hi \implies i = \frac◆LB◆(k+j)Y - \b
 The **yield curve** plots interest rates against the maturity of bonds.
 
 - **Normal (upward-sloping)**: long-term rates > short-term rates (compensation for risk and
-  inflation uncertainty)
+ inflation uncertainty)
 - **Inverted (downward-sloping)**: short-term rates > long-term rates (signals expectation of future
-  rate cuts, often precedes recession)
+ rate cuts, often precedes recession)
 - **Flat**: rates are similar across maturities
 
 **Real-world example — the inverted yield curve:** In August 2019, the US 2-year Treasury yield
-exceeded the 10-year yield (an inverted yield curve), which has historically preceded every US
-recession since WWII. The inversion reflected market expectations that the Federal Reserve would
-need to cut rates to combat an impending downturn. The 2020 COVID recession followed, though the
-causality is debated (the curve may have anticipated COVID-related disruptions). In the UK, the
-yield curve also inverted briefly in 2019, signalling expectations of BoE rate cuts.
+Exceeded the 10-year yield (an inverted yield curve), which has historically preceded every US
+Recession since WWII. The inversion reflected market expectations that the Federal Reserve would
+Need to cut rates to combat an impending downturn. The 2020 COVID recession followed, though the
+Causality is debated (the curve may have anticipated COVID-related disruptions). In the UK, the
+Yield curve also inverted briefly in 2019, signalling expectations of BoE rate cuts.
 
 :::info
 Board-Specific Note AQA often asks students to explain the yield curve and its significance
-as a predictor. Edexcel may link the yield curve to business investment decisions (firms use
-long-term rates to evaluate projects). OCR emphasises the expectations theory and liquidity
-preference theory of the term structure. CIE generally does not examine the yield curve in depth but
-may ask about the relationship between bond prices and interest rates.
+As a predictor. Edexcel may link the yield curve to business investment decisions (firms use
+Long-term rates to evaluate projects). OCR emphasises the expectations theory and liquidity
+Preference theory of the term structure. CIE generally does not examine the yield curve in depth but
+May ask about the relationship between bond prices and interest rates.
 :::
 
 ## 4. Monetary Policy
@@ -280,76 +280,76 @@ $$
 #### Detailed Transmission Channels
 
 The diagram above summarises the main channels, but exam answers should demonstrate deeper
-understanding of each pathway:
+Understanding of each pathway:
 
 1. **Interest rate channel (cost of borrowing):** Higher policy rates increase commercial banks'
-   funding costs, which are passed on to households (mortgages, personal loans, credit cards) and
-   firms (business loans, overdrafts). The effect depends on the _interest elasticity of investment_
-   — investment is more responsive to rate changes when firms are highly leveraged and when rates
-   rise from a low base. In the UK, approximately 35% of mortgages are variable-rate, so rate
-   changes transmit relatively quickly to household disposable income.
+ funding costs, which are passed on to households (mortgages, personal loans, credit cards) and
+ firms (business loans, overdrafts). The effect depends on the _interest elasticity of investment_
+ — investment is more responsive to rate changes when firms are highly leveraged and when rates
+ rise from a low base. In the UK, approximately 35% of mortgages are variable-rate, so rate
+ changes transmit relatively quickly to household disposable income.
 
 2. **Exchange rate channel:** Higher UK interest rates attract foreign capital inflows ("hot
-   money"), increasing demand for sterling and causing appreciation. This makes UK exports more
-   expensive and imports cheaper, reducing net exports ($X - M$) and hence AD. The effectiveness
-   depends on the _Marshall-Lerner condition_ (in the short run, the J-curve effect may cause a
-   temporary worsening of the trade balance).
+ money"), increasing demand for sterling and causing appreciation. This makes UK exports more
+ expensive and imports cheaper, reducing net exports ($X - M$) and hence AD. The effectiveness
+ depends on the _Marshall-Lerner condition_ (in the short run, the J-curve effect may cause a
+ temporary worsening of the trade balance).
 
 3. **Wealth effect:** Higher interest rates reduce asset prices (bonds, equities, property).
-   Households feel less wealthy and reduce consumption. The Bank of England estimates that a 1
-   percentage point rate rise reduces UK house prices by around 1-2% over two years, with knock-on
-   effects on consumer spending through the housing wealth effect.
+ Households feel less wealthy and reduce consumption. The Bank of England estimates that a 1
+ percentage point rate rise reduces UK house prices by around 1-2% over two years, with knock-on
+ effects on consumer spending through the housing wealth effect.
 
 4. **Expectations channel (forward guidance):** If the central bank signals that rates will remain
-   high for an extended period, households and firms adjust their expectations of future inflation
-   and economic conditions. This can be powerful — expectations of lower future inflation reduce
-   wage demands and price-setting behaviour, reinforcing the central bank's inflation target.
+ high for an extended period, households and firms adjust their expectations of future inflation
+ and economic conditions. This can be powerful — expectations of lower future inflation reduce
+ wage demands and price-setting behaviour, reinforcing the central bank's inflation target.
 
 5. **Credit channel:** Higher interest rates tighten banks' lending standards. Banks become more
-   risk-averse, reducing credit availability even for borrowers willing to pay higher rates. This is
-   particularly relevant for small and medium-sized enterprises (SMEs) that depend on bank lending
-   and cannot access capital markets directly.
+ risk-averse, reducing credit availability even for borrowers willing to pay higher rates. This is
+ particularly relevant for small and medium-sized enterprises (SMEs) that depend on bank lending
+ and cannot access capital markets directly.
 
 :::info
 Board-Specific Note AQA expects you to identify at least three transmission channels with
-diagrams. Edexcel requires a clear chain of reasoning from the interest rate change to the final
-impact on AD, inflation, and employment. OCR is particularly interested in the _limitations_ of
-monetary policy transmission — time lags, interest elasticity, and the liquidity trap. CIE expects a
-more formal diagrammatic analysis using the IS-LM framework (though not all centres teach IS-LM, so
-check with your teacher).
+Diagrams. Edexcel requires a clear chain of reasoning from the interest rate change to the final
+Impact on AD, inflation, and employment. OCR is particularly interested in the _limitations_ of
+Monetary policy transmission — time lags, interest elasticity, and the liquidity trap. CIE expects a
+More formal diagrammatic analysis using the IS-LM framework (though not all centres teach IS-LM, so
+Check with your teacher).
 :::
 
 **Evaluation — how effective is monetary policy?**
 
 - **Time lags:** Monetary policy operates with long and variable time lags. The BoE estimates that a
-  rate change takes 12-24 months to fully affect inflation. This means policy is inherently
-  backward-looking (responding to past data) and can be pro-cyclical if misjudged.
+ rate change takes 12-24 months to fully affect inflation. This means policy is inherently
+ backward-looking (responding to past data) and can be pro-cyclical if misjudged.
 - **Interest elasticity:** In a recession, investment may be interest-inelastic — firms won't invest
-  regardless of how low rates go if they lack confidence about future demand (as Keynes argued, "you
-  can't push on a string").
+ regardless of how low rates go if they lack confidence about future demand (as Keynes argued, "you
+ can't push on a string").
 - **Conflicting objectives:** Tightening monetary policy to control inflation may worsen
-  unemployment and economic growth. The Phillips curve trade-off means the central bank must judge
-  the appropriate balance.
+ unemployment and economic growth. The Phillips curve trade-off means the central bank must judge
+ the appropriate balance.
 - **Global factors:** In a small open economy like the UK, exchange rate effects can be
-  destabilising — an appreciating currency helps control inflation (cheaper imports) but harms
-  exporters.
+ destabilising — an appreciating currency helps control inflation (cheaper imports) but harms
+ exporters.
 - **Distributional effects:** Rate rises benefit savers but hurt borrowers. Since younger households
-  tend to be net borrowers and older households net savers, monetary policy redistributes across
-  generations.
+ tend to be net borrowers and older households net savers, monetary policy redistributes across
+ generations.
 
 ### 4.2 Tools of Monetary Policy
 
 1. **Interest rate (Bank Rate)**: the rate at which the central bank lends to commercial banks. The
-   primary tool of UK monetary policy.
+ primary tool of UK monetary policy.
 
 2. **Open market operations (OMO)**: the central bank buys/sells government bonds to
-   increase/decrease the money supply.
-   - Buying bonds $\Rightarrow$ pays money to sellers $\Rightarrow$ money supply $\uparrow$
-   - Selling bonds $\Rightarrow$ takes money from buyers $\Rightarrow$ money supply $\downarrow$
+ increase/decrease the money supply.
+ - Buying bonds $\Rightarrow$ pays money to sellers $\Rightarrow$ money supply $\uparrow$
+ - Selling bonds $\Rightarrow$ takes money from buyers $\Rightarrow$ money supply $\downarrow$
 
 3. **Quantitative easing (QE)**: large-scale asset purchases (government bonds, corporate bonds) by
-   the central bank to increase the money supply and lower long-term interest rates when the policy
-   rate is at or near zero.
+ the central bank to increase the money supply and lower long-term interest rates when the policy
+ rate is at or near zero.
 
 4. **Reserve requirements**: changing the minimum reserve ratio (rarely used in the UK).
 
@@ -367,7 +367,7 @@ QE was first used extensively after the 2008 financial crisis and again during C
 4. Bond prices rise $\Rightarrow$ yields (interest rates) fall
 5. Lower long-term rates stimulate investment and consumption
 6. Portfolio rebalancing: investors shift from bonds to equities and corporate bonds $\Rightarrow$
-   lower borrowing costs for firms
+ lower borrowing costs for firms
 
 **Limitations:**
 
@@ -379,25 +379,25 @@ QE was first used extensively after the 2008 financial crisis and again during C
 **Evaluation — was QE effective?**
 
 Evidence from the UK: the BoE's own estimates suggest that the GBP 895 billion of QE conducted
-between 2009 and 2022 boosted GDP by around 1.5-2% and raised inflation by 0.75-1.5 percentage
-points. However, the distributional effects were significant: the Bank of England estimated in 2012
-that its QE programme had increased the wealth of the top 5% of households by up to 40%, while the
-bottom 50% saw minimal benefit. This is because the top 5% hold the majority of financial assets
-whose prices were inflated by QE.
+Between 2009 and 2022 boosted GDP by around 1.5-2% and raised inflation by 0.75-1.5 percentage
+Points. However, the distributional effects were significant: the Bank of England estimated in 2012
+That its QE programme had increased the wealth of the top 5% of households by up to 40%, while the
+Bottom 50% saw minimal benefit. This is because the top 5% hold the majority of financial assets
+Whose prices were inflated by QE.
 
 **Real-world example — QE and the COVID-19 recovery:** Between March 2020 and late 2021, the BoE
-purchased an additional GBP 450 billion of government bonds. Despite this massive expansion of the
-money supply, CPI inflation remained below the 2% target until mid-2021, when supply chain
-disruptions and energy price shocks drove inflation higher. This illustrates that QE alone does not
-cause high inflation — the broader macroeconomic context matters.
+Purchased an additional GBP 450 billion of government bonds. Despite this massive expansion of the
+Money supply, CPI inflation remained below the 2% target until mid-2021, when supply chain
+Disruptions and energy price shocks drove inflation higher. This illustrates that QE alone does not
+Cause high inflation — the broader macroeconomic context matters.
 
 :::info
 Board-Specific Note AQA and Edexcel both require evaluation of QE. CIE (9708) Paper 4
-frequently includes questions on unconventional monetary policy. Key evaluation points: QE is less
-effective when banks are unwilling to lend (liquidity trap), the impact on the real economy is
-uncertain and hard to measure, and the exit strategy (quantitative tightening) is politically and
-economically risky. OCR may also ask about the interaction between QE and fiscal policy (monetary
-financing).
+Frequently includes questions on unconventional monetary policy. Key evaluation points: QE is less
+Effective when banks are unwilling to lend (liquidity trap), the impact on the real economy is
+Uncertain and hard to measure, and the exit strategy (quantitative tightening) is politically and
+Economically risky. OCR may also ask about the interaction between QE and fiscal policy (monetary
+Financing).
 :::
 
 ## 5. Financial Markets
@@ -405,76 +405,76 @@ financing).
 ### 5.1 Bonds
 
 A **bond** is a debt instrument: the issuer promises to pay the holder a fixed coupon (interest)
-periodically and repay the face value at maturity.
+Periodically and repay the face value at maturity.
 
 **Key relationship: bond prices and yields are inversely related.**
 
 _Proof._ Let $P$ = bond price, $C$ = annual coupon, $F$ = face value, $n$ = years to maturity, $r$ =
-yield (required return).
+Yield (required return).
 
 $$P = \sum_{t=1}^{n} \frac{C}{(1+r)^t} + \frac{F}{(1+r)^n}$$
 
 $\frac{dP}{dr} < 0$ (each term is decreasing in $r$). If market interest rates rise, existing bonds
-with lower coupons become less attractive, so their price falls to offer a competitive yield.
+With lower coupons become less attractive, so their price falls to offer a competitive yield.
 $\blacksquare$
 
 **Yield to maturity**: the discount rate that equates the present value of future cash flows to the
-current price.
+Current price.
 
 ### 5.2 Shares (Equities)
 
 A **share** represents ownership in a company. Shareholders receive dividends and may benefit from
-capital gains.
+Capital gains.
 
 **Share price valuation** (simplified dividend discount model):
 
 $$P_0 = \frac{D_1}{r - g}$$
 
-where $D_1$ = expected dividend next year, $r$ = required return, $g$ = expected growth rate of
-dividends.
+Where $D_1$ = expected dividend next year, $r$ = required return, $g$ = expected growth rate of
+Dividends.
 
 #### The Role of Financial Markets in the Economy
 
 Financial markets perform crucial functions beyond matching buyers and sellers:
 
 1. **Price discovery:** markets aggregate dispersed information from millions of participants into a
-   single price. A share price reflects the market's collective expectation of a firm's future
-   profitability.
+ single price. A share price reflects the market's collective expectation of a firm's future
+ profitability.
 
 2. **Risk transfer:** derivatives (options, futures, swaps) allow firms and investors to hedge
-   risks. For example, an airline can buy fuel futures to lock in the price of jet fuel, reducing
-   uncertainty about future costs.
+ risks. For example, an airline can buy fuel futures to lock in the price of jet fuel, reducing
+ uncertainty about future costs.
 
 3. **Corporate governance:** share prices provide a signal about managerial performance. Persistent
-   underperformance leads to a falling share price, making the firm a takeover target — disciplining
-   management.
+ underperformance leads to a falling share price, making the firm a takeover target — disciplining
+ management.
 
 4. **Capital allocation:** financial markets direct savings towards the most productive investments.
-   In theory, capital flows to firms offering the highest risk-adjusted returns, improving
-   allocative efficiency.
+ In theory, capital flows to firms offering the highest risk-adjusted returns, improving
+ allocative efficiency.
 
 **Real-world example — the 2021 GameStop short squeeze:** In January 2021, retail investors
-coordinated through Reddit to buy shares in GameStop, driving the price from USD 18 to USD 483 in
-weeks. This forced hedge funds that had shorted the stock to buy shares to cover their positions,
-amplifying the price rise. The episode illustrates both the power of market sentiment (prices can
-deviate far from fundamentals) and the role of financial market regulation (trading was temporarily
-restricted by brokerages, raising questions about market fairness).
+Coordinated through Reddit to buy shares in GameStop, driving the price from USD 18 to USD 483 in
+Weeks. This forced hedge funds that had shorted the stock to buy shares to cover their positions,
+Amplifying the price rise. The episode illustrates both the power of market sentiment (prices can
+Deviate far from fundamentals) and the role of financial market regulation (trading was temporarily
+Restricted by brokerages, raising questions about market fairness).
 
 ## 6. Critical Evaluation
 
 ### The 2008 Financial Crisis
 
 The crisis originated in the US subprime mortgage market and spread globally through interconnected
-financial markets. Key lessons:
+Financial markets. Key lessons:
 
 1. **Systemic risk**: individual bank risk management is insufficient — the system as a whole can be
-   fragile (Minsky's financial instability hypothesis)
+ fragile (Minsky's financial instability hypothesis)
 2. **Too big to fail**: large banks' failure would cause systemic collapse $\Rightarrow$ moral
-   hazard (banks take excessive risks expecting bailouts)
+ hazard (banks take excessive risks expecting bailouts)
 3. **Regulatory failure**: light-touch regulation allowed excessive leverage, complex derivatives,
-   and inadequate capital buffers
+ and inadequate capital buffers
 4. **Liquidity vs solvency**: banks faced both liquidity crises (couldn't meet short-term
-   obligations) and solvency crises (assets < liabilities)
+ obligations) and solvency crises (assets < liabilities)
 
 **Post-crisis reforms:**
 
@@ -488,50 +488,50 @@ financial markets. Key lessons:
 On one hand, the UK banking system is significantly more resilient than in 2008. The Common Equity
 Tier 1 (CET1) capital ratio of major UK banks rose from around 4-5% pre-crisis to over 15% by 2023.
 The 2023 banking turmoil (Silicon Valley Bank, Credit Suisse) did not spread to the UK, suggesting
-reforms worked.
+Reforms worked.
 
 On the other hand, risks have shifted rather than disappeared. The growth of **shadow banking**
 (non-bank financial intermediaries such as money market funds, hedge funds, and private equity) now
-accounts for nearly 50% of global financial intermediation. These entities are less regulated than
-banks, less transparent, and can be sources of systemic risk (as the 2022 UK Gilt Crisis, triggered
-by liability-driven investments in pension funds, demonstrated). The Bank of England's intervention
-in the gilt market during the mini-budget crisis showed that systemic risk now originates outside
-the traditional banking sector.
+Accounts for nearly 50% of global financial intermediation. These entities are less regulated than
+Banks, less transparent, and can be sources of systemic risk (as the 2022 UK Gilt Crisis, triggered
+By liability-driven investments in pension funds, demonstrated). The Bank of England's intervention
+In the gilt market during the mini-budget crisis showed that systemic risk now originates outside
+The traditional banking sector.
 
 Furthermore, moral hazard persists. The implicit guarantee that governments will bail out large
-financial institutions ("too big to fail") has not been fully resolved. The failure of Credit Suisse
-in 2023 was resolved through a government-brokered takeover by UBS, reinforcing the perception that
-large banks will always be rescued.
+Financial institutions ("too big to fail") has not been fully resolved. The failure of Credit Suisse
+In 2023 was resolved through a government-brokered takeover by UBS, reinforcing the perception that
+Large banks will always be rescued.
 
 :::tip
 Exam Technique When analysing monetary policy, always distinguish between the _transmission
-mechanism_ (how the policy affects the economy) and the _effectiveness_ (how well it works in
-practice). Consider time lags, the interest elasticity of investment, and the shape of the liquidity
-preference curve.
+Mechanism_ (how the policy affects the economy) and the _effectiveness_ (how well it works in
+Practice). Consider time lags, the interest elasticity of investment, and the shape of the liquidity
+Preference curve.
 :::
 
 :::tip
-Exam Technique For evaluation questions (typically worth 12-25 marks), structure your answer
-as: (1) identify the issue, (2) explain the mechanism with a diagram, (3) evaluate using
+Exam Technique For evaluation questions ( worth 12-25 marks), structure your answer
+As: (1) identify the issue, (2) explain the mechanism with a diagram, (3) evaluate using
 **however/on the other hand/significantly** to introduce counterarguments, (4) conclude with a
-justified judgement. Always consider short-run vs long-run effects and the context (e.g., the state
-of the economy at the time).
+Justified judgement. Always consider short-run vs long-run effects and the context (e.g., the state
+Of the economy at the time).
 :::
 
 ## 7. Problem Set
 
 **Problem 1.** If the reserve ratio is 8% and the central bank injects £500 million of new reserves
-into the banking system, what is the maximum increase in the money supply? What assumptions does
-this calculation rely on?
+Into the banking system, what is the maximum increase in the money supply? What assumptions does
+This calculation rely on?
 
 <details>
 <summary>Hint</summary>
-$m = 1/0.08 = 12.5$. Maximum increase $= 12.5 \times 500 = £6\,250$m. Assumptions: no cash leakages, no excess reserves held, all loans are redeposited in the banking system, demand for loans is infinite at the prevailing interest rate.
+$m = 1/0.08 = 12.5$. Maximum increase $= 12.5 \times 500 = £6\,250$M. Assumptions: no cash leakages, no excess reserves held, all loans are redeposited in the banking system, demand for loans is infinite at the prevailing interest rate.
 </details>
 
 **Problem 2.** The nominal interest rate on a savings account is 3% and inflation is 5%. Calculate
-the real interest rate. Should the saver be happy or unhappy? What does this imply for the central
-bank's policy stance?
+The real interest rate. Should the saver be happy or unhappy? What does this imply for the central
+Bank's policy stance?
 
 <details>
 <summary>Hint</summary>
@@ -539,7 +539,7 @@ Real rate $\approx 3\% - 5\% = -2\%$. The saver is losing purchasing power (nega
 </details>
 
 **Problem 3.** A 5-year government bond with face value £100 and annual coupon of £4 is currently
-priced at £95. Calculate the current yield. Explain why the yield is higher than the coupon rate.
+Priced at £95. Calculate the current yield. Explain why the yield is higher than the coupon rate.
 
 <details>
 <summary>Hint</summary>
@@ -547,8 +547,8 @@ Current yield $= 4/95 \times 100 = 4.21\%$. The yield exceeds the coupon rate (4
 </details>
 
 **Problem 4.** Using the liquidity preference framework, explain what happens to the interest rate
-when (a) the central bank increases the money supply, and (b) national income increases. Use a
-diagram in your explanation.
+When (a) the central bank increases the money supply, and (b) national income increases. Use a
+Diagram in your explanation.
 
 <details>
 <summary>Hint</summary>
@@ -556,7 +556,7 @@ diagram in your explanation.
 </details>
 
 **Problem 5.** Explain the process of quantitative easing. Why might QE be less effective in a
-liquidity trap? Evaluate the risks of QE for (a) asset price inflation and (b) wealth inequality.
+Liquidity trap? Evaluate the risks of QE for (a) asset price inflation and (b) wealth inequality.
 
 <details>
 <summary>Hint</summary>
@@ -564,16 +564,16 @@ QE: central bank buys assets (mainly government bonds) $\Rightarrow$ bond prices
 </details>
 
 **Problem 6.** A commercial bank has £500m in deposits, £50m in reserves, and £450m in loans. The
-reserve ratio is 10%. (a) Is the bank meeting its reserve requirement? (b) What is the maximum new
-loan the bank can make? (c) If the reserve ratio is increased to 15%, what happens?
+Reserve ratio is 10%. (a) Is the bank meeting its reserve requirement? (b) What is the maximum new
+Loan the bank can make? (c) If the reserve ratio is increased to 15%, what happens?
 
 <details>
 <summary>Hint</summary>
-(a) Required reserves $= 10\% \times 500 = £50$m. Actual reserves = £50m. Yes, exactly meeting. (b) Maximum new loan = £0 (no excess reserves). (c) Required reserves $= 15\% \times 500 = £75$m. The bank has only £50m, so it must reduce lending by £25m to meet the new requirement (or borrow reserves).
+(a) Required reserves $= 10\% \times 500 = £50$M. Actual reserves = £50m. Yes, exactly meeting. (b) Maximum new loan = £0 (no excess reserves). (c) Required reserves $= 15\% \times 500 = £75$M. The bank has only £50m, so it must reduce lending by £25m to meet the new requirement (or borrow reserves).
 </details>
 
 **Problem 7.** "Banks create money out of thin air." Evaluate this statement with reference to the
-credit creation process and the role of central bank reserves.
+Credit creation process and the role of central bank reserves.
 
 <details>
 <summary>Hint</summary>
@@ -581,8 +581,8 @@ Technically true: when a bank makes a loan, it simultaneously creates a deposit 
 </details>
 
 **Problem 8.** Explain how an increase in the Bank of England's base rate would affect (a) mortgage
-holders, (b) savers, (c) exporters, (d) the government's debt servicing costs, and (e) the exchange
-rate.
+Holders, (b) savers, (c) exporters, (d) the government's debt servicing costs, and (e) the exchange
+Rate.
 
 <details>
 <summary>Hint</summary>
@@ -590,7 +590,7 @@ rate.
 </details>
 
 **Problem 9.** Compare and contrast the use of interest rates and quantitative easing as tools of
-monetary policy. In what circumstances would each be more appropriate?
+Monetary policy. In what circumstances would each be more appropriate?
 
 <details>
 <summary>Hint</summary>
@@ -607,7 +607,7 @@ Evaluate this statement, considering the roles of (a) banks, (b) regulators, (c)
 </details>
 
 **Problem 11.** Explain the inverse relationship between bond prices and interest rates. If a bond
-with face value £100 and coupon 5% has 3 years to maturity and the market interest rate rises from
+With face value £100 and coupon 5% has 3 years to maturity and the market interest rate rises from
 5% to 6%, calculate the new bond price.
 
 <details>
@@ -616,7 +616,7 @@ At 5%: $P = 5/1.05 + 5/1.05^2 + 105/1.05^3 = 4.76 + 4.54 + 90.70 = £100$ (par).
 </details>
 
 **Problem 12.** Discuss the argument that "fractional reserve banking is inherently unstable and
-should be replaced by full reserve banking." What are the counterarguments?
+Should be replaced by full reserve banking." What are the counterarguments?
 
 <details>
 <summary>Hint</summary>
@@ -624,20 +624,20 @@ For: fractional reserve banking creates credit booms and busts (Minsky cycle), b
 </details>
 
 **Problem 13.** In 2022, UK CPI inflation reached 11.1% while the Bank of England's Bank Rate was
-raised from 0.25% to 3.0%. (a) Calculate the real interest rate at the start and end of this
-tightening cycle, assuming inflation of 5.4% at the start. (b) Explain why the BoE was criticised
-for being "behind the curve." (c) Evaluate the argument that the BoE should have raised rates
-earlier.
+Raised from 0.25% to 3.0%. (a) Calculate the real interest rate at the start and end of this
+Tightening cycle, assuming inflation of 5.4% at the start. (b) Explain why the BoE was criticised
+For being "behind the curve." (c) Evaluate the argument that the BoE should have raised rates
+Earlier.
 
 <details>
 <summary>Hint</summary>
-(a) Start: real rate $\approx 0.25\% - 5.4\% = -5.15\%$. End: real rate $\approx 3.0\% - 11.1\% = -8.1\%$. Real rates were deeply negative throughout, even after significant tightening. (b) The BoE was criticised because inflation had been rising since late 2021, but it kept rates at 0.25% until December 2021 and raised them only gradually. By the time rates reached meaningful levels, inflation had already become entrenched. (c) For raising earlier: pre-emptive tightening could have anchored expectations, prevented a wage-price spiral, and reduced the peak inflation rate. Against raising earlier: the inflation was primarily driven by external supply shocks (energy, post-COVID supply chains) which monetary policy cannot easily address. Raising rates earlier risked unnecessarily choking the recovery from COVID-19 when the inflation spike might have proved transitory. The judgement depends on whether the inflation was viewed as demand-pull or cost-push in nature.
+(a) Start: real rate $\approx 0.25\% - 5.4\% = -5.15\%$. End: real rate $\approx 3.0\% - 11.1\% = -8.1\%$. Real rates were deeply negative throughout, even after significant tightening. (b) The BoE was criticised because inflation had been rising since late 2021, but it kept rates at 0.25% until December 2021 and raised them only gradually. By the time rates reached meaningful levels, inflation had already become entrenched. (c) For raising earlier: pre-emptive tightening could have anchored expectations, prevented a wage-price spiral, and reduced the peak inflation rate. Against raising earlier: the inflation was primarily driven by external supply shocks (energy, post-COVID supply chains) which monetary policy cannot address. Raising rates earlier risked unnecessarily choking the recovery from COVID-19 when the inflation spike might have proved transitory. The judgement depends on whether the inflation was viewed as demand-pull or cost-push in nature.
 </details>
 
 **Problem 14.** Explain how a central bank could use each of the following to implement
-contractionary monetary policy: (a) open market operations, (b) the reserve requirement, (c) forward
-guidance. For each, explain one reason why it might be less effective than simply raising the policy
-interest rate.
+Contractionary monetary policy: (a) open market operations, (b) the reserve requirement, (c) forward
+Guidance. For each, explain one reason why it might be less effective than raising the policy
+Interest rate.
 
 <details>
 <summary>Hint</summary>
@@ -645,7 +645,7 @@ interest rate.
 </details>
 
 **Problem 15.** "The growth of shadow banking poses a greater threat to financial stability than
-traditional banking." Evaluate this statement with reference to the 2008 financial crisis, the 2022
+Traditional banking." Evaluate this statement with reference to the 2008 financial crisis, the 2022
 UK Gilt Crisis, and the failure of Silicon Valley Bank in 2023.
 
 <details>
@@ -654,10 +654,10 @@ For the statement: (1) Shadow banking entities (hedge funds, money market funds,
 </details>
 
 **Problem 16.** A country's money supply is currently GBP 2 trillion. The central bank wants to
-increase it by GBP 200 billion through open market operations. If the current reserve ratio is 5%
-but banks choose to hold 3% excess reserves and the public holds 10% of any new deposits as cash,
-calculate (a) the effective money multiplier and (b) the value of bonds the central bank must
-purchase to achieve its target.
+Increase it by GBP 200 billion through open market operations. If the current reserve ratio is 5%
+But banks choose to hold 3% excess reserves and the public holds 10% of any new deposits as cash,
+Calculate (a) the effective money multiplier and (b) the value of bonds the central bank must
+Purchase to achieve its target.
 
 <details>
 <summary>Hint</summary>
@@ -718,7 +718,7 @@ $$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac◆LB◆1000◆RB◆◆LB◆1
 **Effective money multiplier:**
 $$m = \frac{D}{R} = \frac{4255}{1000} = 4.26$$
 
-Compared to the simple multiplier of $1/rr = 10$, cash leakages and excess reserves reduce the multiplier by more than half.
+Compared to the simple multiplier of $1/rr = 10$Cash leakages and excess reserves reduce the multiplier by more than half.
 
 ### 8.2 Bond Yield Calculations: Comprehensive Worked Examples
 
@@ -889,10 +889,10 @@ Money multiplier $= \frac{1 + c}{rr + c} = \frac{1.05}{0.15} = 7$.
 **If the Bank Rate rises by 2 percentage points:**
 - Asset returns: fixed-rate mortgages and bonds are UNCHANGED (2% and 3% respectively). Variable-rate loans reprice to 7%.
 - New asset value: fixed-rate assets lose market value as yields rise.
-  Bond value: GBP 80bn of 10-year bonds at 2% yield. At 4% yield: $PV = \frac◆LB◆80 \times 0.02◆RB◆◆LB◆0.04◆RB◆ \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$. Approximately, bond prices fall by 15-20% for a 2% yield rise on 10-year bonds. New bond value: approximately 64bn. Loss: 16bn.
-  Mortgage value: similarly, fixed-rate mortgages lose approximately 10% of value. Loss: 20bn.
+ Bond value: GBP 80bn of 10-year bonds at 2% yield. At 4% yield: $PV = \frac◆LB◆80 \times 0.02◆RB◆◆LB◆0.04◆RB◆ \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$. Approximately, bond prices fall by 15-20% for a 2% yield rise on 10-year bonds. New bond value: approximately 64bn. Loss: 16bn.
+ Mortgage value: similarly, fixed-rate mortgages lose approximately 10% of value. Loss: 20bn.
 
-- Liability costs: instant-access deposits may not reprice immediately, but wholesale funding rolls over at higher rates. Additional interest cost: $80 \times 0.02 = 1.6$bn per year.
+- Liability costs: instant-access deposits may not reprice immediately, but wholesale funding rolls over at higher rates. Additional interest cost: $80 \times 0.02 = 1.6$Bn per year.
 
 **Impact on equity:** Asset losses of approximately 36bn reduce equity from 50bn to 14bn. The capital adequacy ratio falls from $50/390 = 12.8\%$ to $14/354 = 4.0\%$. This is below the Basel III minimum requirement of 8% (including capital conservation buffer).
 
@@ -908,13 +908,13 @@ Money multiplier $= \frac{1 + c}{rr + c} = \frac{1.05}{0.15} = 7$.
 **Example.** A UK exporter expects to receive USD 10 million in 3 months. The current exchange rate is $1.25/\pounds$. The exporter is concerned that sterling may appreciate, reducing the pound value of the dollar receivables.
 
 **Unhedged position:**
-If the exchange rate in 3 months is $1.30/\pounds$: the exporter receives $10/1.30 = \pounds 7.69$m.
-If the exchange rate is $1.20/\pounds$: the exporter receives $10/1.20 = \pounds 8.33$m.
+If the exchange rate in 3 months is $1.30/\pounds$: the exporter receives $10/1.30 = \pounds 7.69$M.
+If the exchange rate is $1.20/\pounds$: the exporter receives $10/1.20 = \pounds 8.33$M.
 Uncertainty: the exporter does not know the pound value of the receivables.
 
 **Hedge using a forward contract:**
 The exporter enters a 3-month forward contract to sell USD 10m at $1.25/\pounds$ (the forward rate).
-In 3 months: the exporter receives exactly $10/1.25 = \pounds 8.0$m regardless of the spot rate.
+In 3 months: the exporter receives exactly $10/1.25 = \pounds 8.0$M regardless of the spot rate.
 The exporter has eliminated exchange rate risk.
 
 **Cost of the hedge:**
@@ -927,7 +927,7 @@ The exporter buys a put option on USD (right to sell USD at a strike price of $1
 
 If spot > 1.25 (sterling appreciated): the exporter exercises the put option, selling at 1.25. Receives: 8.0m - 0.05m (premium) = 7.95m.
 
-If spot < 1.25 (sterling depreciated): the exporter lets the option expire and sells at the spot rate. Receives: $10/\text{spot} - 0.05$m. For example, at 1.20: 8.33 - 0.05 = 8.28m.
+If spot < 1.25 (sterling depreciated): the exporter lets the option expire and sells at the spot rate. Receives: $10/\text{spot} - 0.05$M. For example, at 1.20: 8.33 - 0.05 = 8.28m.
 
 **Comparison:**
 
@@ -1063,7 +1063,7 @@ Annual cost increase: GBP 7,500 per household.
 Total for 3.15 million variable-rate households: $7\,500 \times 3.15\text{m} = \pounds 23.6\text{bn}$.
 
 **Indirect channel (fixed-rate mortgages):**
-Approximately 65% of UK mortgages are fixed-rate (typically 2 or 5 years). These do not reprice immediately but reprice when the fixed term ends.
+Approximately 65% of UK mortgages are fixed-rate ( 2 or 5 years). These do not reprice immediately but reprice when the fixed term ends.
 
 If 1 million fixed-rate mortgages reprice each year, and the average increase is 3 percentage points (because some were taken out at higher rates):
 Annual cost increase per household: $150\,000 \times 0.03/12 = \pounds 375$.
@@ -1089,3 +1089,11 @@ Higher rates increase the cost of development finance. House builders reduce con
 - Total: approximately GBP 44bn per year (approximately 1.8% of GDP), phased in over 2-3 years.
 
 This illustrates why the housing market is one of the most important transmission channels of monetary policy in the UK, where 65% of households own their home and housing wealth represents the largest component of household wealth.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

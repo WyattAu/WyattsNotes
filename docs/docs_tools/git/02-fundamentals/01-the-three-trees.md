@@ -17,7 +17,7 @@ Git manipulates three distinct data structures, conventionally called **trees** 
 2. **The Index** (also called the **staging area** or **cache**) — a binary file at `.git/index` that encodes a snapshot of what the _next_ commit will contain.
 3. **The Repository** (the `.git/` directory) — the committed history, stored as a directed acyclic graph of objects.
 
-Almost every Git command is a transformation between these three trees. Understanding this model makes Git's behavior predictable, even for commands that appear confusing (like `git checkout`, which can mean different things depending on context).
+Almost every Git command is a transformation between these three trees. Understanding this model makes Git's behavior predictable, even for commands that appear confusing (like `git checkout`Which can mean different things depending on context).
 
 ```mermaid
 stateDiagram-v2
@@ -55,10 +55,10 @@ The working directory is the directory on your filesystem where you edit files. 
 
 Git classifies files in the working directory into two categories:
 
-| State         | Definition                                                                         | Shown by                                      |
+| State | Definition | Shown by |
 | ------------- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
-| **Tracked**   | File is in the index (either as a new addition or inherited from the last commit). | `git diff` (modified), `git status` (deleted) |
-| **Untracked** | File is not in the index and not in `.gitignore`.                                  | `git status` (untracked files)                |
+| **Tracked** | File is in the index (either as a new addition or inherited from the last commit). | `git diff` (modified), `git status` (deleted) |
+| **Untracked** | File is not in the index and not in `.gitignore`. | `git status` (untracked files) |
 
 Files listed in `.gitignore` are **ignored** — they are not tracked and `git status` will not mention them.
 
@@ -70,18 +70,18 @@ Files listed in `.gitignore` are **ignored** — they are not tracked and `git s
 
 ## The Index
 
-The index is perhaps the most misunderstood part of Git. It is **not** a diff or a list of changes — it is a **complete snapshot** of the next commit's tree. When you run `git add file.txt`, Git does not record "file.txt was modified"; it computes the SHA-1 hash of the file's current content, creates (or reuses) a blob object in `.git/objects/`, and updates the index to point to that blob.
+The index is perhaps the most misunderstood part of Git. It is **not** a diff or a list of changes — it is a **complete snapshot** of the next commit's tree. When you run `git add file.txt`Git does not record "file.txt was modified"; it computes the SHA-1 hash of the file's current content, creates (or reuses) a blob object in `.git/objects/`And updates the index to point to that blob.
 
 ### Internal Structure
 
 The index is stored as a binary file at `.git/index`. Its structure (version 4, as of Git 2.x) contains:
 
-| Section    | Purpose                                                     |
+| Section | Purpose |
 | ---------- | ----------------------------------------------------------- |
-| Header     | Signature (`DIRC`), version (2, 3, or 4), number of entries |
-| Entries    | Sorted list of `(pathname, stat info, SHA-1, stage)` tuples |
-| Extensions | Optional: tree cache, untracked cache, conflict markers     |
-| Checksum   | SHA-1 of all preceding content                              |
+| Header | Signature (`DIRC`), version (2, 3, or 4), number of entries |
+| Entries | Sorted list of `(pathname, stat info, SHA-1, stage)` tuples |
+| Extensions | Optional: tree cache, untracked cache, conflict markers |
+| Checksum | SHA-1 of all preceding content |
 
 Each entry contains:
 
@@ -111,7 +111,7 @@ The repository is the `.git/` directory (or a bare repository, which _is_ the `.
 - **The object store** (`.git/objects/`): All blobs, trees, commits, and tags, identified by their SHA-1 hashes.
 - **References** (`.git/refs/`): Named pointers to commits — branches, tags, HEAD.
 - **Configuration** (`.git/config`): Repository-local settings.
-- **Various metadata**: `description`, `info/exclude`, `hooks/`, etc.
+- **Various metadata**: `description``info/exclude``hooks/`Etc.
 
 The repository is the **authoritative source of truth** for the project's history. The working directory and index are derived from it; they are caches that can be reconstructed at any time.
 
@@ -119,29 +119,29 @@ The repository is the **authoritative source of truth** for the project's histor
 
 Every common Git command can be understood as a transformation between the three trees. This table is the most important reference in this guide:
 
-| Command                       | From → To                                     | Effect                                                                        |
+| Command | From → To | Effect |
 | ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
-| `git init`                    | — → Repository + Working Directory            | Creates empty repository and working directory                                |
-| `git clone`                   | Remote → Repository → Working Directory       | Copies remote repository and checks out default branch                        |
-| `git add <file>`              | Working Directory → Index                     | Computes blob hash, updates index entry                                       |
-| `git add -p <file>`           | Working Directory → Index (partial)           | Stages selected hunks only                                                    |
-| `git rm <file>`               | Working Directory + Index → —                 | Removes from index and working directory                                      |
-| `git rm --cached <file>`      | Index → —                                     | Removes from index only (file remains on disk)                                |
-| `git commit`                  | Index → Repository                            | Creates commit object pointing to current index tree                          |
-| `git status`                  | Reads all three                               | Shows differences between the trees                                           |
-| `git diff`                    | Working Directory vs Index                    | Shows unstaged changes                                                        |
-| `git diff --cached`           | Index vs HEAD commit                          | Shows staged changes                                                          |
-| `git diff HEAD`               | Working Directory vs HEAD                     | Shows all changes (staged + unstaged)                                         |
-| `git checkout <branch>`       | Repository → Working Directory + Index        | Updates both to match target commit                                           |
-| `git restore <file>`          | Index → Working Directory                     | Discards working directory changes                                            |
-| `git restore --staged <file>` | HEAD → Index                                  | Unstages file (reverts index to HEAD version)                                 |
-| `git reset HEAD <file>`       | HEAD → Index                                  | Same as `git restore --staged`                                                |
-| `git reset --soft HEAD~1`     | HEAD → Repository (move)                      | Moves branch pointer back; index and working directory unchanged              |
-| `git reset --mixed HEAD~1`    | HEAD → Repository + Index                     | Moves branch pointer back and resets index                                    |
-| `git reset --hard HEAD~1`     | HEAD → Repository + Index + Working Directory | **Destructive**: moves branch back, resets index and discards working changes |
-| `git stash`                   | Working Directory + Index → Stash stack       | Temporarily saves changes; resets to HEAD                                     |
-| `git stash pop`               | Stash stack → Working Directory + Index       | Restores most recent stash                                                    |
-| `git merge <branch>`          | Repository + Working Directory + Index        | Three-way merge into current branch                                           |
+| `git init` | — → Repository + Working Directory | Creates empty repository and working directory |
+| `git clone` | Remote → Repository → Working Directory | Copies remote repository and checks out default branch |
+| `git add <file>` | Working Directory → Index | Computes blob hash, updates index entry |
+| `git add -p <file>` | Working Directory → Index (partial) | Stages selected hunks only |
+| `git rm <file>` | Working Directory + Index → — | Removes from index and working directory |
+| `git rm --cached <file>` | Index → — | Removes from index only (file remains on disk) |
+| `git commit` | Index → Repository | Creates commit object pointing to current index tree |
+| `git status` | Reads all three | Shows differences between the trees |
+| `git diff` | Working Directory vs Index | Shows unstaged changes |
+| `git diff --cached` | Index vs HEAD commit | Shows staged changes |
+| `git diff HEAD` | Working Directory vs HEAD | Shows all changes (staged + unstaged) |
+| `git checkout <branch>` | Repository → Working Directory + Index | Updates both to match target commit |
+| `git restore <file>` | Index → Working Directory | Discards working directory changes |
+| `git restore --staged <file>` | HEAD → Index | Unstages file (reverts index to HEAD version) |
+| `git reset HEAD <file>` | HEAD → Index | Same as `git restore --staged` |
+| `git reset --soft HEAD~1` | HEAD → Repository (move) | Moves branch pointer back; index and working directory unchanged |
+| `git reset --mixed HEAD~1` | HEAD → Repository + Index | Moves branch pointer back and resets index |
+| `git reset --hard HEAD~1` | HEAD → Repository + Index + Working Directory | **Destructive**: moves branch back, resets index and discards working changes |
+| `git stash` | Working Directory + Index → Stash stack | Temporarily saves changes; resets to HEAD |
+| `git stash pop` | Stash stack → Working Directory + Index | Restores most recent stash |
+| `git merge <branch>` | Repository + Working Directory + Index | Three-way merge into current branch |
 
 ### Visualizing `git reset` Variants
 
@@ -226,10 +226,10 @@ Understanding these states is critical for using Git safely:
 
 Git commands are divided into two categories:
 
-| Category      | Purpose                   | Examples                                                                   |
+| Category | Purpose | Examples |
 | ------------- | ------------------------- | -------------------------------------------------------------------------- |
-| **Porcelain** | User-facing, high-level   | `git add`, `git commit`, `git checkout`, `git merge`                       |
-| **Plumbing**  | Low-level building blocks | `git hash-object`, `git update-index`, `git write-tree`, `git commit-tree` |
+| **Porcelain** | User-facing, high-level | `git add``git commit``git checkout``git merge` |
+| **Plumbing** | Low-level building blocks | `git hash-object``git update-index``git write-tree``git commit-tree` |
 
 The three-tree model is implemented entirely by plumbing commands. `git add file.txt` is equivalent to:
 
@@ -259,3 +259,15 @@ git update-ref refs/heads/main $COMMIT
 Understanding plumbing commands is not necessary for daily use, but it demystifies Git's behavior and enables scripting. When a porcelain command does something unexpected, breaking it down into plumbing steps reveals exactly what happened.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

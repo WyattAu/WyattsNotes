@@ -8,11 +8,11 @@ sidebar_position: 1
 ## Process Lifecycle
 
 Every running program in Linux is a **process** — an instance of an executing program with its own
-virtual address space, file descriptors, and execution context. The kernel manages processes through
-a `task_struct` (in `include/linux/sched.h`), which tracks PID, state, scheduling priority, open
-files, signal handlers, and more.
+Virtual address space, file descriptors, and execution context. The kernel manages processes through
+A `task_struct` (in `include/linux/sched.h`), which tracks PID, state, scheduling priority, open
+Files, signal handlers, and more.
 
-### Creating Processes: `fork`, `exec`, `wait`
+### Creating Processes: `fork``exec``wait`
 
 The POSIX process creation model consists of three operations:
 
@@ -35,8 +35,8 @@ sequenceDiagram
 #### `fork(2)`
 
 `fork` creates a new process by duplicating the calling process. The child is an exact copy — same
-code, same data, same open file descriptors, same signal dispositions. The only difference is the
-return value (parent gets child PID, child gets 0).
+Code, same data, same open file descriptors, same signal dispositions. The only difference is the
+Return value (parent gets child PID, child gets 0).
 
 ```c
 pid_t pid = fork();
@@ -53,14 +53,14 @@ if (pid == -1) {
 ```
 
 Modern Linux uses **Copy-on-Write (COW)** pages for `fork`: the parent's page tables are duplicated,
-but the physical pages are shared and marked read-only. When either process writes to a page, a copy
-is made. This means `fork` is O(n) in page table size, not O(n) in memory.
+But the physical pages are shared and marked read-only. When either process writes to a page, a copy
+Is made. This means `fork` is O(n) in page table size, not O(n) in memory.
 
 #### `execve(2)`
 
 `execve` replaces the current process's memory image with a new program. The PID remains the same,
-but the code, data, heap, and stack are replaced. Open file descriptors with the close-on-exec flag
-cleared remain open across `exec`.
+But the code, data, heap, and stack are replaced. Open file descriptors with the close-on-exec flag
+Cleared remain open across `exec`.
 
 ```c
 // In the child process after fork:
@@ -72,14 +72,14 @@ perror("execve");
 exit(1);
 ```
 
-Variants of `exec`: `execl`, `execlp`, `execle`, `execv`, `execvp`, `execvpe` — they differ in how
-arguments and environment are passed.
+Variants of `exec`: `execl``execlp``execle``execv``execvp``execvpe` — they differ in how
+Arguments and environment are passed.
 
 #### `wait(2)` / `waitpid(2)`
 
 A parent must call `wait` (or `waitpid`) to collect the child's exit status. If a child terminates
-and the parent does not wait, the child becomes a **zombie** (state `Z`) — it retains its PID and
-exit status in the kernel's process table until the parent waits.
+And the parent does not wait, the child becomes a **zombie** (state `Z`) — it retains its PID and
+Exit status in the kernel's process table until the parent waits.
 
 ```c
 int status;
@@ -96,20 +96,20 @@ if (WIFEXITED(status)) {
 
 ### Process Identification
 
-| Identifier   | Field in `task_struct` | Description                               |
+| Identifier | Field in `task_struct` | Description |
 | ------------ | ---------------------- | ----------------------------------------- |
-| **PID**      | `pid`                  | Process identifier (unique system-wide)   |
-| **TID**      | `pid`                  | Thread identifier (same namespace as PID) |
-| **PPID**     | `real_parent->pid`     | Parent process ID                         |
-| **PGID**     | `group_leader->pid`    | Process group ID (for signal delivery)    |
-| **SID**      | `signal->leader->pid`  | Session ID (for job control)              |
-| **UID/EUID** | `real_cred/cred`       | Real and effective user ID                |
-| **GID/EGID** | `real_cred/cred`       | Real and effective group ID               |
+| **PID** | `pid` | Process identifier (unique system-wide) |
+| **TID** | `pid` | Thread identifier (same namespace as PID) |
+| **PPID** | `real_parent->pid` | Parent process ID |
+| **PGID** | `group_leader->pid` | Process group ID (for signal delivery) |
+| **SID** | `signal->leader->pid` | Session ID (for job control) |
+| **UID/EUID** | `real_cred/cred` | Real and effective user ID |
+| **GID/EGID** | `real_cred/cred` | Real and effective group ID |
 
 In Linux, threads are implemented as processes that share certain resources (address space, file
-descriptors, signal handlers). Each thread has its own TID, but all threads in a process share the
-same PID (the thread group leader's TID). The `clone(2)` system call controls exactly what is
-shared:
+Descriptors, signal handlers). Each thread has its own TID, but all threads in a process share the
+Same PID (the thread group leader's TID). The `clone(2)` system call controls exactly what is
+Shared:
 
 ```c
 // Create a thread (shares address space, FDs, signal handlers)
@@ -151,15 +151,15 @@ stateDiagram-v2
     ZOMBIE --> [*]: parent calls wait
 ```
 
-| State                    | Code | Description                                                    |
+| State | Code | Description |
 | ------------------------ | ---- | -------------------------------------------------------------- |
-| **TASK_RUNNING**         | R    | Runnable (either executing or on a run queue)                  |
-| **TASK_INTERRUPTIBLE**   | S    | Sleeping, waiting for an event (can be interrupted by signals) |
-| **TASK_UNINTERRUPTIBLE** | D    | Sleeping, waiting for disk I/O (cannot be interrupted)         |
-| **TASK_STOPPED**         | T    | Stopped by `SIGSTOP`, `SIGTSTP`, or ptrace                     |
-| **TASK_TRACED**          | t    | Stopped by debugger (ptrace)                                   |
-| **EXIT_ZOMBIE**          | Z    | Terminated, parent has not called `wait`                       |
-| **EXIT_DEAD**            | X    | Completely dead, waiting to be reaped                          |
+| **TASK_RUNNING** | R | Runnable (either executing or on a run queue) |
+| **TASK_INTERRUPTIBLE** | S | Sleeping, waiting for an event (can be interrupted by signals) |
+| **TASK_UNINTERRUPTIBLE** | D | Sleeping, waiting for disk I/O (cannot be interrupted) |
+| **TASK_STOPPED** | T | Stopped by `SIGSTOP``SIGTSTP`Or ptrace |
+| **TASK_TRACED** | t | Stopped by debugger (ptrace) |
+| **EXIT_ZOMBIE** | Z | Terminated, parent has not called `wait` |
+| **EXIT_DEAD** | X | Completely dead, waiting to be reaped |
 
 ```bash
 # View process states
@@ -179,49 +179,49 @@ ps -eo pid,stat,comm
 
 :::warning
 
-A process in the **D state** (uninterruptible sleep) cannot be killed with `SIGKILL`. This typically
-means it is waiting for disk I/O that will never complete (e.g., NFS server down, failed disk). The
-only way to clear it is to fix the underlying I/O or reboot.
+A process in the **D state** (uninterruptible sleep) cannot be killed with `SIGKILL`. This 
+Means it is waiting for disk I/O that will never complete (e.g., NFS server down, failed disk). The
+Only way to clear it is to fix the underlying I/O or reboot.
 
 :::
 
 ## Signals
 
 Signals are asynchronous notifications delivered to processes. They are the kernel's primary
-mechanism for communicating exceptional conditions (segfault, termination request, I/O available) to
-user-space processes.
+Mechanism for communicating exceptional conditions (segfault, termination request, I/O available) to
+User-space processes.
 
 ### Standard Signals
 
-| Signal    | Number | Default Action | Description                                    |
+| Signal | Number | Default Action | Description |
 | --------- | ------ | -------------- | ---------------------------------------------- |
-| `SIGHUP`  | 1      | Terminate      | Terminal hangup (daemon reload convention)     |
-| `SIGINT`  | 2      | Terminate      | Terminal interrupt (Ctrl+C)                    |
-| `SIGQUIT` | 3      | Core dump      | Terminal quit (Ctrl+\)                         |
-| `SIGILL`  | 4      | Core dump      | Illegal instruction                            |
-| `SIGABRT` | 6      | Core dump      | Abort (from `abort()`)                         |
-| `SIGFPE`  | 8      | Core dump      | Floating-point exception                       |
-| `SIGKILL` | 9      | Terminate      | Kill (cannot be caught or ignored)             |
-| `SIGSEGV` | 11     | Core dump      | Segmentation fault                             |
-| `SIGPIPE` | 13     | Terminate      | Broken pipe (write to closed pipe)             |
-| `SIGALRM` | 14     | Terminate      | Alarm clock (from `alarm()`)                   |
-| `SIGTERM` | 15     | Terminate      | Termination (polite kill — default for `kill`) |
-| `SIGUSR1` | 10     | Terminate      | User-defined signal 1                          |
-| `SIGUSR2` | 12     | Terminate      | User-defined signal 2                          |
-| `SIGCHLD` | 17     | Ignore         | Child process status changed                   |
-| `SIGCONT` | 18     | Continue       | Continue if stopped                            |
-| `SIGSTOP` | 19     | Stop           | Stop (cannot be caught or ignored)             |
-| `SIGTSTP` | 20     | Stop           | Terminal stop (Ctrl+Z)                         |
-| `SIGTTIN` | 21     | Stop           | Background read from terminal                  |
-| `SIGTTOU` | 22     | Stop           | Background write to terminal                   |
+| `SIGHUP` | 1 | Terminate | Terminal hangup (daemon reload convention) |
+| `SIGINT` | 2 | Terminate | Terminal interrupt (Ctrl+C) |
+| `SIGQUIT` | 3 | Core dump | Terminal quit (Ctrl+\) |
+| `SIGILL` | 4 | Core dump | Illegal instruction |
+| `SIGABRT` | 6 | Core dump | Abort (from `abort()`) |
+| `SIGFPE` | 8 | Core dump | Floating-point exception |
+| `SIGKILL` | 9 | Terminate | Kill (cannot be caught or ignored) |
+| `SIGSEGV` | 11 | Core dump | Segmentation fault |
+| `SIGPIPE` | 13 | Terminate | Broken pipe (write to closed pipe) |
+| `SIGALRM` | 14 | Terminate | Alarm clock (from `alarm()`) |
+| `SIGTERM` | 15 | Terminate | Termination (polite kill — default for `kill`) |
+| `SIGUSR1` | 10 | Terminate | User-defined signal 1 |
+| `SIGUSR2` | 12 | Terminate | User-defined signal 2 |
+| `SIGCHLD` | 17 | Ignore | Child process status changed |
+| `SIGCONT` | 18 | Continue | Continue if stopped |
+| `SIGSTOP` | 19 | Stop | Stop (cannot be caught or ignored) |
+| `SIGTSTP` | 20 | Stop | Terminal stop (Ctrl+Z) |
+| `SIGTTIN` | 21 | Stop | Background read from terminal |
+| `SIGTTOU` | 22 | Stop | Background write to terminal |
 
 ### Real-Time Signals
 
 Linux supports real-time signals (signals 32-64, or `SIGRTMIN` to `SIGRTMAX`). Unlike standard
-signals, real-time signals:
+Signals, real-time signals:
 
 - Are **queued** — multiple instances of the same signal are delivered (standard signals collapse
-  into one)
+ into one)
 - Have a **defined delivery order** — lower-numbered signals are delivered first
 - Can carry **additional data** (`sigqueue(2)` sends a `union sigval` with the signal)
 - Are guaranteed to be delivered in FIFO order within the same signal number
@@ -267,11 +267,11 @@ sigaction(SIGTERM, &amp;sa, NULL);
 ```
 
 **Signal-safe functions**: Only async-signal-safe functions may be called from within a signal
-handler. Calling non-signal-safe functions (like `printf`, `malloc`, `free`) from a handler is
-undefined behavior if the handler interrupts one of those functions in the main program.
+Handler. Calling non-signal-safe functions (like `printf``malloc``free`) from a handler is
+Undefined behavior if the handler interrupts one of those functions in the main program.
 
-Signal-safe functions include: `write`, `read`, `_exit`, `kill`, `sigaction`, `sigprocmask`,
-`sigaddset`, `sigemptyset`, `sigfillset`.
+Signal-safe functions include: `write``read``_exit``kill``sigaction``sigprocmask`
+`sigaddset``sigemptyset``sigfillset`.
 
 ```c
 // CORRECT signal handler
@@ -316,8 +316,8 @@ kill -TERM -$(ps -o pgid= -p 1234 | tr -d ' ')
 ### `SIGPIPE` and Broken Pipes
 
 When a process writes to a pipe whose reader has closed its end, the kernel sends `SIGPIPE` to the
-writer. The default action is to terminate the writer process. This is a common source of unexpected
-process death in pipelines:
+Writer. The default action is to terminate the writer process. This is a common source of unexpected
+Process death in pipelines:
 
 ```c
 // Ignore SIGPIPE — write() will return EPIPE instead
@@ -426,12 +426,12 @@ pkill -TERM -f "nginx: worker"
 
 The Linux kernel's default scheduler for normal (non-real-time) processes is the **Completely Fair
 Scheduler** (CFS). CFS uses a red-black tree to track the "virtual runtime" (`vruntime`) of each
-process and always selects the task with the lowest `vruntime` to run next.
+Process and always selects the task with the lowest `vruntime` to run next.
 
 ### Nice Values
 
 The nice value ranges from -20 (highest priority) to 19 (lowest priority). Only root can set
-negative nice values. Each unit of nice changes the process's weight and thus its share of CPU time.
+Negative nice values. Each unit of nice changes the process's weight and thus its share of CPU time.
 
 ```bash
 # View nice values
@@ -457,12 +457,12 @@ ionice -c 3 command             # idle (only uses I/O when no one else is)
 
 ### Real-Time Scheduling Policies
 
-| Policy           | `sched_setscheduler` | Description                                          |
+| Policy | `sched_setscheduler` | Description |
 | ---------------- | -------------------- | ---------------------------------------------------- |
-| `SCHED_FIFO`     | 1                    | First-in, first-out, runs until blocked or preempted |
-| `SCHED_RR`       | 2                    | Round-robin with configurable time quantum           |
-| `SCHED_DEADLINE` | 6                    | Earliest Deadline First (EDF) scheduling             |
-| `SCHED_OTHER`    | 0                    | Default CFS policy                                   |
+| `SCHED_FIFO` | 1 | First-in, first-out, runs until blocked or preempted |
+| `SCHED_RR` | 2 | Round-robin with configurable time quantum |
+| `SCHED_DEADLINE` | 6 | Earliest Deadline First (EDF) scheduling |
+| `SCHED_OTHER` | 0 | Default CFS policy |
 
 ```bash
 # View scheduling policy
@@ -479,26 +479,26 @@ chrt -d 1000000 5000000 200000 command  # runtime, deadline, period (ns)
 :::warning
 
 Real-time scheduling policies can starve the system. A `SCHED_FIFO` process that never blocks will
-consume 100% CPU and lock out all other processes, including the kernel's management threads. Use
-only for well-understood, bounded workloads (audio processing, industrial control).
+Consume 100% CPU and lock out all other processes, including the kernel's management threads. Use
+Only for well-understood, bounded workloads (audio processing, industrial control).
 
 :::
 
 ## cgroups
 
 Control groups (cgroups) are a kernel mechanism for grouping processes and applying resource limits,
-accounting, and isolation to those groups. They are the foundation for container runtimes (Docker,
+Accounting, and isolation to those groups. They are the foundation for container runtimes (Docker,
 Kubernetes, systemd).
 
 ### cgroups v1 vs v2
 
-| Aspect      | cgroups v1                     | cgroups v2                         |
+| Aspect | cgroups v1 | cgroups v2 |
 | ----------- | ------------------------------ | ---------------------------------- |
-| Hierarchy   | Multiple (one per controller)  | Single unified hierarchy           |
-| Mount point | `/sys/fs/cgroup/memory/`, etc. | `/sys/fs/cgroup/`                  |
-| Controllers | Independent, per-subsystem     | Unified, coordinated               |
-| Delegation  | Complex                        | Simplified                         |
-| Default     | Legacy systems                 | Modern distributions (since ~2020) |
+| Hierarchy | Multiple (one per controller) | Single unified hierarchy |
+| Mount point | `/sys/fs/cgroup/memory/`Etc. | `/sys/fs/cgroup/` |
+| Controllers | Independent, per-subsystem | Unified, coordinated |
+| Delegation | Complex | Simplified |
+| Default | Legacy systems | Modern distributions (since ~2020) |
 
 ```bash
 # Check cgroups version
@@ -542,8 +542,8 @@ cat /sys/fs/cgroup/mygroup/io.stat
 
 ### systemd and cgroups
 
-systemd manages cgroups automatically. Each service gets its own cgroup, which means resource limits
-can be configured directly in the unit file:
+Systemd manages cgroups automatically. Each service gets its own cgroup, which means resource limits
+Can be configured directly in the unit file:
 
 ```ini
 # /etc/systemd/system/myapp.service
@@ -564,7 +564,7 @@ systemctl status myapp    # shows cgroup memory usage
 ## Resource Limits (`ulimit`)
 
 The `ulimit` mechanism (implemented via `setrlimit(2)`) sets per-process resource limits. These
-limits are inherited by child processes.
+Limits are inherited by child processes.
 
 ```bash
 # View all limits
@@ -591,24 +591,24 @@ ulimit -u 4096     # increase max processes
 # root      hard  nproc   unlimited
 ```
 
-| Limit Type  | Soft Limit                     | Hard Limit                              |
+| Limit Type | Soft Limit | Hard Limit |
 | ----------- | ------------------------------ | --------------------------------------- |
-| Definition  | Enforced for the process       | Maximum the soft limit can be raised to |
-| Who can set | Any process (up to hard limit) | Root (can lower from any value)         |
-| Per-process | Yes                            | Yes                                     |
+| Definition | Enforced for the process | Maximum the soft limit can be raised to |
+| Who can set | Any process (up to hard limit) | Root (can lower from any value) |
+| Per-process | Yes | Yes |
 
 :::warning
 
-`ulimit` settings in `/etc/security/limits.conf` apply to PAM sessions (login, `su`, `sudo`). They
-do NOT apply to services started by systemd. For systemd services, configure limits in the unit file
-or systemd's override mechanism (`systemctl edit`).
+`ulimit` settings in `/etc/security/limits.conf` apply to PAM sessions (login, `su``sudo`). They
+Do NOT apply to services started by systemd. For systemd services, configure limits in the unit file
+Or systemd's override mechanism (`systemctl edit`).
 
 :::
 
 ## Zombie Processes
 
 A zombie process (state `Z`) has completed execution but its parent has not yet called `wait` to
-collect its exit status. The zombie retains its PID and minimal kernel data structures, preventing
+Collect its exit status. The zombie retains its PID and minimal kernel data structures, preventing
 PID reuse.
 
 ```bash
@@ -624,13 +624,13 @@ ps aux | awk '$8 ~ /Z/' | wc -l
 
 1. **Find the parent**: `ps -eo pid,ppid,stat,comm | grep Z`
 2. **Kill the parent**: `kill -TERM $PPID` — when the parent dies, its children are reparented to
-   PID 1 (or a subreaper), which automatically reaps zombies.
+ PID 1 (or a subreaper), which automatically reaps zombies.
 3. **Fix the parent**: If the parent is your application, add a `SIGCHLD` handler or call `waitpid`
-   in a loop.
+ in a loop.
 
 Long-lived zombies are always a bug in the parent process. They are not a resource concern (each
-zombie uses ~1 KiB of kernel memory), but they consume PIDs, and if PID exhaustion occurs (PID max
-default: 32768 on 32-bit, 4194304 on 64-bit), new processes cannot be created.
+Zombie uses ~1 KiB of kernel memory), but they consume PIDs, and if PID exhaustion occurs (PID max
+Default: 32768 on 32-bit, 4194304 on 64-bit), new processes cannot be created.
 
 ## Process Tracing
 
@@ -679,8 +679,8 @@ ltrace -e strlen,strcpy ./myprogram
 ### Pitfall: `SIGKILL` Cannot Be Caught
 
 `SIGKILL` (9) and `SIGSTOP` (19) cannot be caught, blocked, or ignored. If a process does not
-respond to `SIGKILL`, it is almost certainly in the **D state** (uninterruptible sleep), waiting for
-kernel resources that will never become available.
+Respond to `SIGKILL`It is almost certainly in the **D state** (uninterruptible sleep), waiting for
+Kernel resources that will never become available.
 
 ```bash
 # Check process state
@@ -692,9 +692,9 @@ cat /proc/$PID/stack    # kernel stack trace (requires CONFIG_STACKTRACE)
 
 ### Pitfall: `waitpid` and Signal Races
 
-If a child terminates before the parent calls `waitpid`, the child becomes a zombie. If the parent
-terminates before the child, the child is reparented to PID 1. In neither case is the exit status
-lost, but zombies accumulate if the parent never waits:
+If a child terminates before the parent calls `waitpid`The child becomes a zombie. If the parent
+Terminates before the child, the child is reparented to PID 1. In neither case is the exit status
+Lost, but zombies accumulate if the parent never waits:
 
 ```bash
 # In bash, wait for background processes
@@ -725,8 +725,8 @@ Protection: `ulimit -u 4096` or systemd's `TasksMax=4096`.
 ### Pitfall: PID Recycling and Race Conditions
 
 After a process exits and its parent waits, the PID can be reused. If you store a PID in a file and
-later send it a signal, you may target the wrong process. This is particularly dangerous for lock
-files and daemon management.
+Later send it a signal, you may target the wrong process. This is particularly dangerous for lock
+Files and daemon management.
 
 ```bash
 # Safer: check both PID and command line before sending signal
@@ -756,7 +756,7 @@ trap "wait" SIGCHLD
 ### Pitfall: `ulimit` Not Applied to systemd Services
 
 Setting `nofile` in `/etc/security/limits.conf` has no effect on systemd services because systemd
-does not use PAM. Instead, configure limits in the service unit:
+Does not use PAM. Instead, configure limits in the service unit:
 
 ```ini
 # systemctl edit myservice
@@ -768,15 +768,15 @@ LimitNPROC=4096
 ### Pitfall: Real-Time Priorities and System Stability
 
 Setting a process to `SCHED_FIFO` with priority 99 gives it higher priority than virtually
-everything else in the system, including kernel threads that handle disk I/O and memory management.
+Everything else in the system, including kernel threads that handle disk I/O and memory management.
 A CPU-bound FIFO process at priority 99 will lock the system. Always start with lower priorities
 (50-80) and test thoroughly.
 
 ### Pitfall: Cgroup Memory Limits and OOM
 
 When a cgroup hits its memory limit, the kernel's OOM killer selects a process within that cgroup to
-kill. If the application does not handle `SIGKILL` gracefully (by restarting, checkpointing, etc.),
-the service will simply stop. Monitor `memory.events` for `oom_kill` events:
+Kill. If the application does not handle `SIGKILL` gracefully (by restarting, checkpointing, etc.),
+The service will stop. Monitor `memory.events` for `oom_kill` events:
 
 ```bash
 # Check for OOM kills in a cgroup
@@ -784,3 +784,11 @@ cat /sys/fs/cgroup/myapp/memory.events
 # oom_kill 0    → no kills
 # oom_kill 3    → 3 processes were killed
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

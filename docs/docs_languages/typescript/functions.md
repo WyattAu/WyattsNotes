@@ -12,7 +12,7 @@ categories: [TypeScript]
 ### Parameter Annotations
 
 Every function parameter may carry a type annotation. When the annotation is present, the compiler
-verifies that all call sites provide arguments of the correct type.
+Verifies that all call sites provide arguments of the correct type.
 
 ```ts
 function greet(name: string): string {
@@ -28,8 +28,8 @@ The second call is a compile error because `42` is not assignable to `string`.
 ### Return Type Annotations
 
 Return type annotations specify the type of the value a function produces. When omitted, TypeScript
-infers the return type from the function body. Explicit annotations are recommended for public API
-surfaces because they serve as documented contracts.
+Infers the return type from the function body. Explicit annotations are recommended for public API
+Surfaces because they serve as documented contracts.
 
 ```ts
 function add(a: number, b: number): number {
@@ -42,7 +42,7 @@ function log(msg: string): void {
 ```
 
 When `noImplicitReturns` is enabled, the compiler reports an error if any code path in a non-`void`
-function does not return a value.
+Function does not return a value.
 
 ```ts
 function absolute(x: number): number {
@@ -65,7 +65,7 @@ function inferred(x: number) {
 ```
 
 The inferred return type is `number`. Explicit annotation is optional but improves readability and
-catches accidental type changes:
+Catches accidental type changes:
 
 ```ts
 function explicit(x: number): number {
@@ -73,15 +73,15 @@ function explicit(x: number): number {
 }
 ```
 
-If the implementation later changes to return a `string`, the explicit annotation produces a compile
-error, whereas inference would silently accept the change.
+If the implementation later changes to return a `string`The explicit annotation produces a compile
+Error, whereas inference would silently accept the change.
 
 ## Optional and Default Parameters
 
 ### Optional Parameters
 
 A parameter is optional when its name is followed by `?`. Optional parameters must appear **after**
-all required parameters.
+All required parameters.
 
 ```ts
 function buildName(first: string, last?: string): string {
@@ -113,7 +113,7 @@ buildName('Ada', 'Lovelace');
 ```
 
 Default parameters are not required to appear after required parameters in TypeScript (unlike in
-strict JavaScript mode). However, placing them after required parameters is conventional.
+Strict JavaScript mode). However, placing them after required parameters is conventional.
 
 ### Optional vs Default
 
@@ -122,9 +122,9 @@ function a(x?: number): void {}
 function b(x: number = 0): void {}
 ```
 
-Both functions can be called with zero arguments. The difference: in `a`, the type of `x` within the
-body is `number | undefined`; in `b`, the type of `x` is `number` (the default ensures it is always
-defined).
+Both functions can be called with zero arguments. The difference: in `a`The type of `x` within the
+Body is `number | undefined`; in `b`The type of `x` is `number` (the default ensures it is always
+Defined).
 
 ## Rest Parameters
 
@@ -157,8 +157,8 @@ The type of `result` is `["hello", 42]` -- a tuple, not an array.
 ## Function Overloading
 
 Function overloading allows a single function name to have multiple signatures with different
-parameter and return types. The implementation signature must be compatible with all overload
-signatures.
+Parameter and return types. The implementation signature must be compatible with all overload
+Signatures.
 
 ### Declaration
 
@@ -182,7 +182,7 @@ The overload signatures (lines 1-2) declare the public contract. The implementat
 ### Overload Resolution
 
 When an overloaded function is called, TypeScript resolves the call by checking each overload
-signature in declaration order. The first matching signature is used.
+Signature in declaration order. The first matching signature is used.
 
 ```ts
 function parse(input: string): number;
@@ -215,8 +215,8 @@ const div = getElement('div');
 ```
 
 **Common Pitfall:** The implementation signature's return type is not visible to callers. Only the
-overload signatures determine the inferred return type. If the implementation signature does not
-cover all overload cases, the compiler may produce unexpected results.
+Overload signatures determine the inferred return type. If the implementation signature does not
+Cover all overload cases, the compiler may produce unexpected results.
 
 ## Function Type Expressions
 
@@ -300,7 +300,7 @@ const lengths = map(['a', 'bb', 'ccc'], (s) => s.length);
 ## `this` Typing
 
 By default, TypeScript infers `this` as `any` inside function bodies. To enforce correct `this`
-usage, provide an explicit `this` parameter as the **first parameter** of the function.
+Usage, provide an explicit `this` parameter as the **first parameter** of the function.
 
 ### The `this` Parameter
 
@@ -325,13 +325,13 @@ const handler = new Handler('button');
 ```
 
 The `this` parameter in `onClick` ensures that `this` is typed as `Handler` inside the function
-body. When the function is passed as a callback, TypeScript verifies that the `this` context is
-correct.
+Body. When the function is passed as a callback, TypeScript verifies that the `this` context is
+Correct.
 
 ### Arrow Functions and `this`
 
 Arrow functions capture `this` from their enclosing lexical scope. They do not have their own `this`
-binding, so the `this` parameter is not applicable:
+Binding, so the `this` parameter is not applicable:
 
 ```ts
 class Timer {
@@ -364,8 +364,8 @@ class Button {
 ```
 
 This compiles because the `this` parameter annotation informs TypeScript of the expected binding. At
-runtime, however, `addEventListener` will invoke `handleClick` with `this` set to the DOM element,
-not the `Button` instance. Use an arrow function or `bind` to fix this:
+Runtime, however, `addEventListener` will invoke `handleClick` with `this` set to the DOM element,
+Not the `Button` instance. Use an arrow function or `bind` to fix this:
 
 ```ts
 button.addEventListener('click', this.handleClick.bind(this));
@@ -375,7 +375,7 @@ button.addEventListener('click', (event) => this.handleClick(event));
 ## Type Narrowing in Function Bodies
 
 Type narrowing applies within function bodies just as it does in any other scope. Narrowing
-information flows from parameters to the function body and from earlier statements to later ones.
+Information flows from parameters to the function body and from earlier statements to later ones.
 
 ### Control-Flow Narrowing
 
@@ -415,7 +415,7 @@ function firstElement<T>(arr: T[]): T {
 }
 ```
 
-After the `if` block, TypeScript narrows control flow to the case where `arr.length > 0`, ensuring
+After the `if` block, TypeScript narrows control flow to the case where `arr.length > 0`Ensuring
 `arr[0]` is `T` (not `T | undefined` under strict mode).
 
 ## Conditional Types in Return Types
@@ -437,7 +437,7 @@ const b = unwrap(Promise.resolve('hello'));
 ```
 
 This pattern is especially useful with overloads, where each overload signature maps a specific
-input type to a specific output type.
+Input type to a specific output type.
 
 ## Practical Patterns
 
@@ -491,15 +491,15 @@ const allAdults = users.every((u) => u.age >= 18);
 const found = users.find((u) => u.name === 'Ada');
 ```
 
-TypeScript infers the callback parameter types from the array element type. For `filter`, TypeScript
-uses a special type to preserve the predicate's narrowing:
+TypeScript infers the callback parameter types from the array element type. For `filter`TypeScript
+Uses a special type to preserve the predicate's narrowing:
 
 ```ts
 const strings = [1, 'two', 3, 'four', 5];
 const onlyStrings = strings.filter((s): s is string => typeof s === 'string');
 ```
 
-The type of `onlyStrings` is `string[]`, not `(string | number)[]`.
+The type of `onlyStrings` is `string[]`Not `(string | number)[]`.
 
 ### Curried Functions
 
@@ -540,7 +540,7 @@ log('hello');
 ### Pitfall 1: Implementation Signature Mismatch
 
 The implementation signature of an overloaded function must be assignable from all overload
-signatures. A common error is making the implementation signature too narrow:
+Signatures. A common error is making the implementation signature too narrow:
 
 ```ts
 function format(x: string): string;
@@ -551,14 +551,14 @@ function format(x: string | number): string | number {
 }
 ```
 
-This is correct. But if the implementation returns only `string`, it does not satisfy the `number`
-overload.
+This is correct. But if the implementation returns only `string`It does not satisfy the `number`
+Overload.
 
 ### Pitfall 2: Forgetting to Annotate `this`
 
 When a class method is passed as a callback without binding, `this` is lost at runtime. Always
-annotate `this` in method signatures that may be used as callbacks, and bind or wrap in an arrow
-function at the call site.
+Annotate `this` in method signatures that may be used as callbacks, and bind or wrap in an arrow
+Function at the call site.
 
 ### Pitfall 3: Rest Parameter Type Errors
 
@@ -589,3 +589,11 @@ Or more concisely:
 ```ts
 return data.map((item) => callback?.(item) ?? item);
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

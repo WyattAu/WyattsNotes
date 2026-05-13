@@ -55,3 +55,15 @@ Complete revision notes for IB Physics, covering the full syllabus with worked e
 - **A-Level Physics:** [A-Level Physics](https://alevel.wyattau.com/docs/physics)
 - **DSE Physics:** [DSE Physics](https://academics.wyattau.com/docs/dse/physics)
 - **University Physics:** [University Physics](https://university.wyattau.com/docs/physics)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

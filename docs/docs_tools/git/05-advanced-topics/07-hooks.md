@@ -6,41 +6,41 @@ slug: git-hooks
 ## Hook Lifecycle
 
 Git hooks are scripts that Git executes automatically before or after specific events in the
-repository lifecycle — commits, pushes, rebases, checkouts, and so on. They live at the boundary
-between your workflow and Git's internal state machine, and they are the primary mechanism for
-enforcing local policy without requiring a central server.
+Repository lifecycle — commits, pushes, rebases, checkouts, and so on. They live at the boundary
+Between your workflow and Git's internal state machine, and they are the primary mechanism for
+Enforcing local policy without requiring a central server.
 
 ### When Hooks Run
 
 Hooks execute at precisely defined points in Git's operation. There is no ambiguity about when they
-fire: the hook name encodes the event, and Git invokes it synchronously at that exact point in the
-control flow. A hook either succeeds (exit code 0) or fails (non-zero exit code). If a hook fails,
+Fire: the hook name encodes the event, and Git invokes it synchronously at that exact point in the
+Control flow. A hook either succeeds (exit code 0) or fails (non-zero exit code). If a hook fails,
 Git aborts the operation — this is the entire enforcement mechanism.
 
 Hooks are divided into two categories based on where they execute:
 
 **Client-side hooks** run on the local machine performing the Git operation. They are triggered by
-commands like `git commit`, `git push`, `git checkout`, and `git rebase`. Client-side hooks cannot
-be enforced remotely — a user with filesystem access can always bypass them with `--no-verify`.
+Commands like `git commit``git push``git checkout`And `git rebase`. Client-side hooks cannot
+Be enforced remotely — a user with filesystem access can always bypass them with `--no-verify`.
 Their purpose is **convenience and local policy**, not security.
 
 **Server-side hooks** run on the remote repository when it receives a push. They are triggered by
-the `git-receive-pack` process. Server-side hooks are the only hooks that can be truly enforced,
-because the remote administrator controls the filesystem. A malicious client cannot bypass a
-server-side `pre-receive` hook.
+The `git-receive-pack` process. Server-side hooks are the only hooks that can be truly enforced,
+Because the remote administrator controls the filesystem. A malicious client cannot bypass a
+Server-side `pre-receive` hook.
 
 ### Hook Discovery
 
 Git discovers hooks through a well-defined search path:
 
 1. **`.git/hooks/`** — the default location. When you `git init` a repository, Git populates this
-   directory with sample hook scripts (all suffixed with `.sample` so they do not execute). Git only
-   looks for files that are **exactly named** after the hook event — no extensions, no suffixes. A
-   file named `pre-commit.sh` will never run; it must be named `pre-commit`.
+ directory with sample hook scripts (all suffixed with `.sample` so they do not execute). Git only
+ looks for files that are **exactly named** after the hook event — no extensions, no suffixes. A
+ file named `pre-commit.sh` will never run; it must be named `pre-commit`.
 
 2. **`core.hooksPath`** — a configuration override that points Git to an alternative directory. This
-   is the mechanism that tools like Husky and Lefthook use to redirect hook execution to a managed
-   directory:
+ is the mechanism that tools like Husky and Lefthook use to redirect hook execution to a managed
+ directory:
 
 ```bash
 # Point Git to a custom hooks directory
@@ -52,27 +52,27 @@ $ git config core.hooksPath
 ```
 
 When `core.hooksPath` is set, Git does **not** fall through to `.git/hooks/`. The override is
-absolute. If the directory does not exist or the named hook file is absent, Git simply skips the
-hook (it does not error).
+Absolute. If the directory does not exist or the named hook file is absent, Git skips the
+Hook (it does not error).
 
 ### Hook Naming Convention
 
 Every hook has a fixed name. Git iterates through the hooks directory and matches filenames against
-a hardcoded list. The naming is not configurable:
+A hardcoded list. The naming is not configurable:
 
-| Hook Name            | Type   | Trigger Point                   |
+| Hook Name | Type | Trigger Point |
 | -------------------- | ------ | ------------------------------- |
-| `pre-commit`         | Client | Before commit, after staging    |
-| `prepare-commit-msg` | Client | Before commit message editor    |
-| `commit-msg`         | Client | After message written, pre-save |
-| `post-commit`        | Client | After commit completes          |
-| `pre-rebase`         | Client | Before rebase begins            |
-| `post-checkout`      | Client | After checkout/switch           |
-| `post-merge`         | Client | After merge completes           |
-| `pre-push`           | Client | Before push to remote           |
-| `pre-receive`        | Server | Before refs are updated         |
-| `update`             | Server | Once per ref being updated      |
-| `post-receive`       | Server | After refs are updated          |
+| `pre-commit` | Client | Before commit, after staging |
+| `prepare-commit-msg` | Client | Before commit message editor |
+| `commit-msg` | Client | After message written, pre-save |
+| `post-commit` | Client | After commit completes |
+| `pre-rebase` | Client | Before rebase begins |
+| `post-checkout` | Client | After checkout/switch |
+| `post-merge` | Client | After merge completes |
+| `pre-push` | Client | Before push to remote |
+| `pre-receive` | Server | Before refs are updated |
+| `update` | Server | Once per ref being updated |
+| `post-receive` | Server | After refs are updated |
 
 ### What Happens When a Hook Fails
 
@@ -85,31 +85,31 @@ error: failed to push some refs to 'origin'
 hint: Updates were rejected because the pre-push hook exited with error code 1.
 ```
 
-Post-hooks (`post-commit`, `post-receive`, etc.) are informational. If a post-hook fails, Git prints
-a warning but does **not** abort the operation — the commit or push has already succeeded.
+Post-hooks (`post-commit``post-receive`Etc.) are informational. If a post-hook fails, Git prints
+A warning but does **not** abort the operation — the commit or push has already succeeded.
 
 ## Client-Side Hooks
 
 ### Full Reference Table
 
-| Hook                 | Arguments                                                                                        | stdin                                                                                | Fail Aborts? | Typical Use                                |
+| Hook | Arguments | stdin | Fail Aborts? | Typical Use |
 | -------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------ | ------------------------------------------ |
-| `pre-commit`         | None                                                                                             | None                                                                                 | Yes          | Linting, formatting, tests on staged files |
-| `prepare-commit-msg` | `$1`=msg file, `$2`=source (`message`/`template`/`merge`/`squash`/`commit`), `$3`=SHA (if amend) | None                                                                                 | No           | Template manipulation, ticket injection    |
-| `commit-msg`         | `$1`=path to commit message file                                                                 | None                                                                                 | Yes          | Message validation, conventional commits   |
-| `post-commit`        | None                                                                                             | None                                                                                 | No           | Notifications, CI trigger                  |
-| `pre-rebase`         | `$1`=upstream, `$2`=branch being rebased                                                         | None                                                                                 | Yes          | Prevent rebasing protected branches        |
-| `post-checkout`      | `$1`=prev HEAD, `$2`=new HEAD, `$3`=flag (1=branch, 0=file checkout)                             | None                                                                                 | No           | Environment setup, submodule init          |
-| `post-merge`         | `$1`=flag (1=squash merge)                                                                       | None                                                                                 | No           | Submodule update, dependency install       |
-| `pre-push`           | None                                                                                             | Lines: `&lt;local ref&gt; &lt;local sha1&gt; &lt;remote ref&gt; &lt;remote sha1&gt;` | Yes          | Test suite, prevent force-push to main     |
-| `pre-auto-gc`        | None                                                                                             | None                                                                                 | Yes          | Prevent automatic garbage collection       |
+| `pre-commit` | None | None | Yes | Linting, formatting, tests on staged files |
+| `prepare-commit-msg` | `$1`=msg file, `$2`=source (`message`/`template`/`merge`/`squash`/`commit`), `$3`=SHA (if amend) | None | No | Template manipulation, ticket injection |
+| `commit-msg` | `$1`=path to commit message file | None | Yes | Message validation, conventional commits |
+| `post-commit` | None | None | No | Notifications, CI trigger |
+| `pre-rebase` | `$1`=upstream, `$2`=branch being rebased | None | Yes | Prevent rebasing protected branches |
+| `post-checkout` | `$1`=prev HEAD, `$2`=new HEAD, `$3`=flag (1=branch, 0=file checkout) | None | No | Environment setup, submodule init |
+| `post-merge` | `$1`=flag (1=squash merge) | None | No | Submodule update, dependency install |
+| `pre-push` | None | Lines: `&lt;local ref&gt; &lt;local sha1&gt; &lt;remote ref&gt; &lt;remote sha1&gt;` | Yes | Test suite, prevent force-push to main |
+| `pre-auto-gc` | None | None | Yes | Prevent automatic garbage collection |
 
 ### pre-commit
 
 The `pre-commit` hook runs **after** `git commit` is invoked but **before** the commit object is
-created. At this point, the staging area (index) is locked — you cannot modify it from within the
-hook. The hook receives no arguments and reads no stdin. To inspect what is about to be committed,
-you must query the index directly:
+Created. At this point, the staging area (index) is locked — you cannot modify it from within the
+Hook. The hook receives no arguments and reads no stdin. To inspect what is about to be committed,
+You must query the index directly:
 
 ```bash
 #!/usr/bin/env bash
@@ -136,14 +136,14 @@ fi
 ```
 
 The critical detail: `pre-commit` sees the **staged** content, not the working tree. If you modified
-a file after staging it, the hook inspects the staged version, not the working copy. This is by
-design — the commit reflects the index, not the working tree.
+A file after staging it, the hook inspects the staged version, not the working copy. This is by
+Design — the commit reflects the index, not the working tree.
 
 ### prepare-commit-msg
 
 This hook fires **after** the default commit message is prepared but **before** the editor is opened
 (or before the `-m` message is finalized). It receives the path to a temporary file containing the
-message. You can modify this file in-place to inject content:
+Message. You can modify this file in-place to inject content:
 
 ```bash
 #!/usr/bin/env bash
@@ -170,13 +170,13 @@ The `COMMIT_SOURCE` argument tells you where the message came from:
 - `template` — from `.git/commit-template` or `commit.template` config
 - `merge` — a merge commit
 - `squash` — a squash commit
-- `commit` — the default (usually means the editor will open)
+- `commit` — the default ( means the editor will open)
 
 ### commit-msg
 
 The `commit-msg` hook receives the path to the file containing the final commit message (after the
-editor has closed or `-m` was used). This is your last chance to reject the commit based on message
-content:
+Editor has closed or `-m` was used). This is your last chance to reject the commit based on message
+Content:
 
 ```bash
 #!/usr/bin/env bash
@@ -212,7 +212,7 @@ fi
 ### post-commit
 
 This hook runs after the commit object is created and HEAD is updated. Since the commit is already
-finalized, a non-zero exit cannot undo it. Use this for side effects:
+Finalized, a non-zero exit cannot undo it. Use this for side effects:
 
 ```bash
 #!/usr/bin/env bash
@@ -230,8 +230,8 @@ curl -s -X POST "https://ci.example.com/hooks/git" \
 ### pre-rebase
 
 The `pre-rebase` hook runs before `git rebase` begins. It receives two arguments: the upstream
-branch and the branch being rebased. You can use it to prevent rebasing branches that should never
-be rebased:
+Branch and the branch being rebased. You can use it to prevent rebasing branches that should never
+Be rebased:
 
 ```bash
 #!/usr/bin/env bash
@@ -248,8 +248,8 @@ fi
 
 ### post-checkout
 
-This hook fires after `git checkout`, `git switch`, or `git clone`. It receives the previous HEAD,
-the new HEAD, and a flag indicating whether it was a branch checkout (1) or a file checkout (0):
+This hook fires after `git checkout``git switch`Or `git clone`. It receives the previous HEAD,
+The new HEAD, and a flag indicating whether it was a branch checkout (1) or a file checkout (0):
 
 ```bash
 #!/usr/bin/env bash
@@ -273,7 +273,7 @@ fi
 ### post-merge
 
 This hook runs after a successful `git merge`. It receives a single argument: 1 if the merge was a
-squash merge, 0 otherwise:
+Squash merge, 0 otherwise:
 
 ```bash
 #!/usr/bin/env bash
@@ -293,7 +293,7 @@ fi
 ### pre-push
 
 The `pre-push` hook runs after the local objects have been packed and before they are sent to the
-remote. It receives no arguments, but reads from stdin a series of lines, each formatted as:
+Remote. It receives no arguments, but reads from stdin a series of lines, each formatted as:
 
 ```
 <local ref> <local sha1> <remote ref> <remote sha1>
@@ -331,19 +331,19 @@ fi
 
 Server-side hooks live in the bare repository on the remote. They execute within the
 `git-receive-pack` process on the server. A client cannot bypass them because the server controls
-the filesystem.
+The filesystem.
 
 ### pre-receive
 
 The `pre-receive` hook runs **once** before any refs are updated. It reads from stdin all ref
-updates that are about to be applied:
+Updates that are about to be applied:
 
 ```
 <old sha> <new sha> <ref name>
 ```
 
 If this hook exits non-zero, **all** ref updates are rejected. This is atomic — either everything
-updates or nothing does:
+Updates or nothing does:
 
 ```bash
 #!/usr/bin/env bash
@@ -382,8 +382,8 @@ exit 0
 ### update
 
 The `update` hook runs **once per ref** being updated. It receives three arguments: the ref name,
-the old SHA, and the new SHA. Unlike `pre-receive`, this hook can reject individual refs without
-rejecting the entire push:
+The old SHA, and the new SHA. Unlike `pre-receive`This hook can reject individual refs without
+Rejecting the entire push:
 
 ```bash
 #!/usr/bin/env bash
@@ -411,7 +411,7 @@ fi
 ### post-receive
 
 The `post-receive` hook runs after all refs have been updated successfully. It reads the same stdin
-format as `pre-receive`. This is the standard hook for deployment triggers:
+Format as `pre-receive`. This is the standard hook for deployment triggers:
 
 ```bash
 #!/usr/bin/env bash
@@ -443,8 +443,8 @@ echo "Running pre-commit checks..."
 exit 0
 ```
 
-The shebang line matters. If you write `#!/bin/bash`, the hook will fail on systems where bash is
-not at `/bin/bash` (Alpine Linux, for example). Use `#!/usr/bin/env bash` for portability.
+The shebang line matters. If you write `#!/bin/bash`The hook will fail on systems where bash is
+Not at `/bin/bash` (Alpine Linux, for example). Use `#!/usr/bin/env bash` for portability.
 
 ### Python Scripts
 
@@ -506,7 +506,7 @@ try {
 ### Making Hooks Executable
 
 Git will not run a hook that is not executable. This is the single most common reason hooks silently
-fail:
+Fail:
 
 ```bash
 $ chmod +x .git/hooks/pre-commit
@@ -516,24 +516,24 @@ $ chmod +x .githooks/pre-commit
 ### Hook Environment Variables
 
 Git sets several environment variables before invoking a hook. These provide context about the
-repository and the operation in progress:
+Repository and the operation in progress:
 
-| Variable              | Available In    | Description                                 |
+| Variable | Available In | Description |
 | --------------------- | --------------- | ------------------------------------------- |
-| `GIT_DIR`             | All hooks       | Path to the `.git` directory                |
-| `GIT_WORK_TREE`       | All hooks       | Path to the working tree                    |
-| `GIT_AUTHOR_NAME`     | `commit-msg`    | The author's name from config               |
-| `GIT_AUTHOR_EMAIL`    | `commit-msg`    | The author's email from config              |
-| `GIT_AUTHOR_DATE`     | `commit-msg`    | The author date                             |
-| `GIT_COMMITTER_NAME`  | `commit-msg`    | The committer's name                        |
-| `GIT_COMMITTER_EMAIL` | `commit-msg`    | The committer's email                       |
-| `GIT_COMMIT`          | `post-commit`   | SHA of the newly created commit             |
-| `GIT_PREFIX`          | `post-checkout` | The path to the worktree root (for subdirs) |
-| `GIT_REFLOG_ACTION`   | All hooks       | The operation being performed               |
+| `GIT_DIR` | All hooks | Path to the `.git` directory |
+| `GIT_WORK_TREE` | All hooks | Path to the working tree |
+| `GIT_AUTHOR_NAME` | `commit-msg` | The author's name from config |
+| `GIT_AUTHOR_EMAIL` | `commit-msg` | The author's email from config |
+| `GIT_AUTHOR_DATE` | `commit-msg` | The author date |
+| `GIT_COMMITTER_NAME` | `commit-msg` | The committer's name |
+| `GIT_COMMITTER_EMAIL` | `commit-msg` | The committer's email |
+| `GIT_COMMIT` | `post-commit` | SHA of the newly created commit |
+| `GIT_PREFIX` | `post-checkout` | The path to the worktree root (for subdirs) |
+| `GIT_REFLOG_ACTION` | All hooks | The operation being performed |
 
 **Important**: the `PATH` environment variable in hooks is often minimal. If your hook invokes tools
-like `eslint`, `shellcheck`, or custom binaries, they may not be found. Either use absolute paths or
-explicitly set `PATH` at the top of your hook:
+Like `eslint``shellcheck`Or custom binaries, they may not be found. Either use absolute paths or
+Explicitly set `PATH` at the top of your hook:
 
 ```bash
 #!/usr/bin/env bash
@@ -545,9 +545,9 @@ export PATH="/usr/local/bin:$HOME/.local/bin:$HOME/.nvm/versions/node/$(ls $HOME
 ### The Fundamental Problem
 
 Hooks in `.git/hooks/` are not tracked by Git. They are local to each clone. This means every
-developer on a team must manually install and maintain their own hooks. This is unmaintainable at
-scale. The industry has converged on two solutions: store hooks in the repository and redirect Git
-to them, or use a framework.
+Developer on a team must manually install and maintain their own hooks. This is unmaintainable at
+Scale. The industry has converged on two solutions: store hooks in the repository and redirect Git
+To them, or use a framework.
 
 ### Redirecting with core.hooksPath
 
@@ -571,13 +571,13 @@ $ git commit -m "chore: add shared hooks directory"
 ```
 
 **Caveat**: `git config core.hooksPath` is a local config change — it is not automatically applied
-when someone clones the repo. New contributors must still run the config command manually. This is
-typically documented in `README.md` or automated in a `make setup` target.
+When someone clones the repo. New contributors must still run the config command manually. This is
+ documented in `README.md` or automated in a `make setup` target.
 
 ### Husky
 
 Husky is an npm package that manages Git hooks through the `core.hooksPath` mechanism. It installs a
-thin `.husky/` directory and patches the `prepare` npm lifecycle script to set up hooks:
+Thin `.husky/` directory and patches the `prepare` npm lifecycle script to set up hooks:
 
 ```bash
 $ npm install husky --save-dev
@@ -585,7 +585,7 @@ $ npx husky init
 ```
 
 This creates `.husky/` and sets `core.hooksPath` to `.husky/`. Individual hooks are files in that
-directory:
+Directory:
 
 ```bash
 # .husky/pre-commit
@@ -593,7 +593,7 @@ npx lint-staged
 ```
 
 Husky works, but it ties your hook infrastructure to npm. If your project is not a Node.js project,
-or if contributors do not have npm available, Husky adds unnecessary friction.
+Or if contributors do not have npm available, Husky adds unnecessary friction.
 
 ### Lefthook
 
@@ -633,7 +633,7 @@ $ lefthook run pre-commit
 ## The pre-commit Framework
 
 The `pre-commit` Python package is a dedicated hook management framework. It provides a declarative
-configuration file, a library of community-maintained hooks, and CI integration.
+Configuration file, a library of community-maintained hooks, and CI integration.
 
 ### Configuration
 
@@ -671,18 +671,18 @@ repos:
 
 The `pre-commit-hooks` repository provides widely-used, battle-tested hooks:
 
-| Hook ID                                | What It Does                                     | Fix? |
+| Hook ID | What It Does | Fix? |
 | -------------------------------------- | ------------------------------------------------ | ---- |
-| `trailing-whitespace`                  | Removes trailing whitespace from all lines       | Yes  |
-| `end-of-file-fixer`                    | Ensures files end with a single newline          | Yes  |
-| `check-yaml`                           | Validates YAML syntax with `pyyaml`              | No   |
-| `check-json`                           | Validates JSON syntax                            | No   |
-| `check-merge-conflict`                 | Detects unresolved merge conflict markers        | No   |
-| `detect-private-key`                   | Scans for files containing private key material  | No   |
-| `check-added-large-files`              | Rejects files over a configurable size limit     | No   |
-| `check-case-conflict`                  | Detects filename case conflicts (Linux vs macOS) | No   |
-| `check-executables-have-shebangs`      | Ensures executable files have shebangs           | No   |
-| `check-shebang-scripts-are-executable` | Ensures files with shebangs are executable       | No   |
+| `trailing-whitespace` | Removes trailing whitespace from all lines | Yes |
+| `end-of-file-fixer` | Ensures files end with a single newline | Yes |
+| `check-yaml` | Validates YAML syntax with `pyyaml` | No |
+| `check-json` | Validates JSON syntax | No |
+| `check-merge-conflict` | Detects unresolved merge conflict markers | No |
+| `detect-private-key` | Scans for files containing private key material | No |
+| `check-added-large-files` | Rejects files over a configurable size limit | No |
+| `check-case-conflict` | Detects filename case conflicts (Linux vs macOS) | No |
+| `check-executables-have-shebangs` | Ensures executable files have shebangs | No |
+| `check-shebang-scripts-are-executable` | Ensures files with shebangs are executable | No |
 
 ### Running in CI
 
@@ -745,7 +745,7 @@ repos:
 ```
 
 The `language` field determines how the hook is executed. `system` runs the entry directly on the
-host. Other options include `python`, `node`, `docker`, and `docker_image` for sandboxed execution.
+Host. Other options include `python``node``docker`And `docker_image` for sandboxed execution.
 
 ## Hook Debugging
 
@@ -833,7 +833,7 @@ Legitimate uses of `--no-verify`:
 
 Files in `.git/hooks/` are ignored by Git. If you want version-controlled hooks, you must use
 `core.hooksPath` to point to a tracked directory. Forgetting this and wondering why teammates don't
-have your hooks is the single most common hook-related mistake.
+Have your hooks is the single most common hook-related mistake.
 
 ### Non-Executable Hook Files
 
@@ -850,20 +850,20 @@ $ chmod +x .githooks/pre-commit
 
 ### PATH Differences in Hooks
 
-Hooks run with a minimal `PATH`. Tools installed in `~/.local/bin`, `~/go/bin`, or via `nvm` may not
-be found. Always explicitly set `PATH` or use absolute paths to tools in your hook scripts.
+Hooks run with a minimal `PATH`. Tools installed in `~/.local/bin``~/go/bin`Or via `nvm` may not
+Be found. Always explicitly set `PATH` or use absolute paths to tools in your hook scripts.
 
 ### pre-commit Sees Staged Content, Not Working Tree
 
 If you edit a file after staging it, the hook inspects the **staged** version. This causes confusion
-when developers run `git add file.py`, then fix a lint error, then commit — the hook still sees the
-old staged content. Run `git add` again after fixing.
+When developers run `git add file.py`Then fix a lint error, then commit — the hook still sees the
+Old staged content. Run `git add` again after fixing.
 
 ### Hooks Do Not Apply to Amended Commits by Default
 
 `git commit --amend` does trigger `pre-commit` and `commit-msg` hooks, but the `prepare-commit-msg`
-hook receives `COMMIT_SOURCE=commit`, which is the same as a new commit. If your hook tries to
-inject a ticket number based on the branch, it may double-inject on amend. Check for the amend case:
+Hook receives `COMMIT_SOURCE=commit`Which is the same as a new commit. If your hook tries to
+Inject a ticket number based on the branch, it may double-inject on amend. Check for the amend case:
 
 ```bash
 if [ "$COMMIT_SOURCE" = "commit" ]; then
@@ -877,13 +877,13 @@ fi
 ### Server-Side Hooks and Non-Zero Exit
 
 A server-side `pre-receive` hook that exits non-zero rejects the **entire** push atomically. If you
-want to reject some refs but accept others, use the `update` hook instead, which is called per-ref.
+Want to reject some refs but accept others, use the `update` hook instead, which is called per-ref.
 
 ### pre-commit Framework: Virtual Environment Isolation
 
 The `pre-commit` framework creates isolated virtual environments for each hook repository. This
-means hooks run with their own dependencies, not your project's dependencies. If a hook needs access
-to your project's Python environment, use `language: system` and manage dependencies yourself.
+Means hooks run with their own dependencies, not your project's dependencies. If a hook needs access
+To your project's Python environment, use `language: system` and manage dependencies yourself.
 
 ### Hook Performance and Large Monorepos
 
@@ -892,7 +892,7 @@ Hooks that scan every staged file can be slow in large repositories. Mitigate th
 1. Using glob patterns to limit which files each hook processes
 2. Running hooks in parallel (Lefthook does this automatically)
 3. Caching results (the `pre-commit` framework caches hook results and skips unchanged files)
-4. Only running expensive checks (full test suites) on `pre-push`, not `pre-commit`
+4. Only running expensive checks (full test suites) on `pre-push`Not `pre-commit`
 
 ### Windows Line Endings in Hooks
 
@@ -905,3 +905,11 @@ $ git config core.autocrlf input
 ```
 
 Or configure your text editor to save files in `.githooks/` with LF line endings.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

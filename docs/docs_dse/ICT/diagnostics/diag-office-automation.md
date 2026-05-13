@@ -24,7 +24,7 @@ Or using SUMPRODUCT: `=SUMPRODUCT((B:B="Laptop")*(A:A>=DATE(2025,1,1))*(A:A<=DAT
 
 (d) **Relative reference** (e.g., `A1`): When copied to another cell, the reference adjusts relative to the new position. Copying `=A1` from B2 to C2 changes it to `=B1`.
 
-**Absolute reference** (e.g., `$A$1`): The reference does not change when copied. Used when referring to a fixed cell like a tax rate or conversion factor. Example: `=B2*$D$1` copies correctly as `=B3*$D$1`, `=B4*$D$1`, always multiplying by the value in D1.
+**Absolute reference** (e.g., `$A$1`): The reference does not change when copied. Used when referring to a fixed cell like a tax rate or conversion factor. Example: `=B2*$D$1` copies correctly as `=B3*$D$1``=B4*$D$1`Always multiplying by the value in D1.
 
 ### UT-2: Spreadsheet Data Analysis
 **Question:** A spreadsheet contains student exam scores: Column A (Name), B (Maths), C (English), D (Science). Rows 2--101 contain 100 students. (a) Write a formula to calculate each student's average score. (b) Write a formula to count how many students scored above 80 in Maths. (c) Write a formula to find the highest average score. (d) Explain what a pivot table is and how it could summarise this data.
@@ -74,7 +74,7 @@ Or using SUMPRODUCT: `=SUMPRODUCT((B:B="Laptop")*(A:A>=DATE(2025,1,1))*(A:A<=DAT
 
 (c) Overall $= 85 \times 0.6 + 72 \times 0.3 + 90 \times 0.1 = 51 + 21.6 + 9 = 81.6$.
 
-(d) **Mail merge:** The word processor template contains merge fields (e.g., `<<StudentName>>`, `<<MathsGrade>>`, `<<OverallGrade>>`). The data source (spreadsheet or database export) contains one row per student with columns matching the merge fields. During the merge, the word processor replaces each merge field with the corresponding value from the current data row, producing one document per student. This automates what would otherwise be a tedious manual process of copying data into 500+ individual documents.
+(d) **Mail merge:** The word processor template contains merge fields (e.g., `<<StudentName>>``<<MathsGrade>>``<<OverallGrade>>`). The data source (spreadsheet or database export) contains one row per student with columns matching the merge fields. During the merge, the word processor replaces each merge field with the corresponding value from the current data row, producing one document per student. This automates what would otherwise be a tedious manual process of copying data into 500+ individual documents.
 
 ### IT-2: Data Presentation and Analysis (with Data Representation)
 **Question:** A company's quarterly sales data is: Q1: \$2.5M, Q2: \$3.1M, Q3: \$2.8M, Q4: \$4.2M. (a) In a spreadsheet, calculate the percentage change between consecutive quarters. (b) Create a formula to calculate the year-on-year growth rate if last year's total was \$10M. (c) Explain why a line chart is more appropriate than a pie chart for showing quarterly trends. (d) The data is exported to a CSV file. Calculate the file size if each quarter entry uses: date (10 chars), label (5 chars), amount (8 chars), and a newline.
@@ -108,4 +108,4 @@ Formula: `=(SUM(B1:E1)-10000000)/10000000`.
 
 (c) **RBAC implementation:** Define roles such as: Owner (full control -- edit, share, delete), Editor (can modify content), Commenter (can add comments but not edit), Viewer (read-only). The document owner assigns roles to each team member. For the project: the project manager is Owner, 3 writers are Editors, 1 reviewer is Commenter, stakeholders are Viewers. This follows the principle of least privilege -- each user has only the access needed for their role.
 
-(d) **Recommended method:** Use a dedicated file sharing service (e.g., company SharePoint, Dropbox Business, or OneDrive) with password-protected links. Justification: (1) Email attachments are limited (typically 25 MB) and would require splitting the file. (2) Cloud storage provides a download link rather than attaching the file to an email, keeping mailbox sizes manageable. (3) Access can be controlled (password, expiry date, download limit). (4) The link can be shared via email or messaging, keeping the actual file on secure servers. For sensitive video, encrypt before uploading.
+(d) **Recommended method:** Use a dedicated file sharing service (e.g., company SharePoint, Dropbox Business, or OneDrive) with password-protected links. Justification: (1) Email attachments are limited ( 25 MB) and would require splitting the file. (2) Cloud storage provides a download link rather than attaching the file to an email, keeping mailbox sizes manageable. (3) Access can be controlled (password, expiry date, download limit). (4) The link can be shared via email or messaging, keeping the actual file on secure servers. For sensitive video, encrypt before uploading.

@@ -12,7 +12,7 @@ slug: algorithms-and-programming
 # Algorithms and Programming
 
 This topic covers algorithm design, programming constructs, searching and sorting algorithms, and
-computational problem solving.
+Computational problem solving.
 
 ## What is an Algorithm? (OL/HL)
 
@@ -27,16 +27,16 @@ An algorithm is a step-by-step procedure for solving a problem. It must:
 
 - **Pseudocode:** structured English-like description.
 - **Flowcharts:** visual diagram using standard symbols (oval for start/end, rectangle for process,
-  diamond for decision, parallelogram for I/O).
+ diamond for decision, parallelogram for I/O).
 
 **Choosing a representation:**
 
-| Representation   | Precision | Readability | Executable |
+| Representation | Precision | Readability | Executable |
 | ---------------- | --------- | ----------- | ---------- |
-| Natural language | Low       | High        | No         |
-| Pseudocode       | Medium    | Medium      | No         |
-| Flowchart        | Medium    | High        | No         |
-| Programming code | High      | Low         | Yes        |
+| Natural language | Low | High | No |
+| Pseudocode | Medium | Medium | No |
+| Flowchart | Medium | High | No |
+| Programming code | High | Low | Yes |
 
 ## Programming Constructs (OL/HL)
 
@@ -111,10 +111,10 @@ for num in range(2, 20):
 
 **Proof that is_prime is correct.** The function checks all integers $i$ from 2 to
 $\lfloor\sqrt{n}\rfloor$. If $n$ is composite, it has a factor $f \le \sqrt{n}$. The loop checks
-every such $f$, so it will find a divisor. If no divisor is found, $n$ has no factor $\le
+Every such $f$So it will find a divisor. If no divisor is found, $n$ has no factor $\le
 \sqrt{n}$,
-and therefore no factor at all (since if $n = a \times b$ with $a \gt \sqrt{n}$, then
-$b \lt \sqrt{n}$, contradicting no divisor found). Hence $n$ is prime. $\blacksquare$
+And therefore no factor at all (since if $n = a \times b$ with $a \gt \sqrt{n}$Then
+$b \lt \sqrt{n}$Contradicting no divisor found). Hence $n$ is prime. $\blacksquare$
 
 ## Data Structures (OL/HL)
 
@@ -166,10 +166,10 @@ print(f"Stack: {stack}")  # [10, 20]
 
 | Operation | Time Complexity |
 | --------- | --------------- |
-| push      | $O(1)$          |
-| pop       | $O(1)$          |
-| peek      | $O(1)$          |
-| search    | $O(n)$          |
+| push | $O(1)$ |
+| pop | $O(1)$ |
+| peek | $O(1)$ |
+| search | $O(n)$ |
 
 ### Queues (HL)
 
@@ -209,8 +209,8 @@ print(f"Found at index: {result}")  # 3
 **Time complexity:** $O(n)$.
 
 **Proof of correctness.** The loop examines every element from index 0 to $n-1$. If the target is at
-index $k$, the loop reaches index $k$ and returns $k$. If the target is not in the array, the loop
-completes without finding it and returns -1. $\blacksquare$
+Index $k$The loop reaches index $k$ and returns $k$. If the target is not in the array, the loop
+Completes without finding it and returns -1. $\blacksquare$
 
 ### Binary Search (HL)
 
@@ -238,10 +238,10 @@ print(f"Found at index: {result}")  # 4
 **Time complexity:** $O(\log n)$.
 
 **Worked Example (HL).** Trace binary search on [2, 5, 8, 12, 16, 23, 38, 56, 72, 91] searching
-for 23.
+For 23.
 
-Initial: low=0, high=9. mid=4, arr[4]=16. 16 &lt; 23, so low=5. low=5, high=9. mid=7, arr[7]=56. 56
-&gt; 23, so high=6. low=5, high=6. mid=5, arr[5]=23. Found at index 5.
+Initial: low=0, high=9. Mid=4, arr[4]=16. 16 &lt; 23, so low=5. Low=5, high=9. Mid=7, arr[7]=56. 56
+&gt; 23, so high=6. Low=5, high=6. Mid=5, arr[5]=23. Found at index 5.
 
 ## Sorting Algorithms (OL/HL)
 
@@ -267,7 +267,7 @@ print(bubble_sort(numbers))
 ```
 
 **Time complexity:** $O(n^2)$ worst and average. $O(n)$ best (already sorted, with early
-termination).
+Termination).
 
 ### Insertion Sort (HL)
 
@@ -293,7 +293,7 @@ print(insertion_sort(numbers))
 ### Quick Sort (HL)
 
 Divide and conquer. Choose a pivot, partition into elements less than and greater than the pivot,
-then recursively sort.
+Then recursively sort.
 
 ```python
 def quick_sort(arr):
@@ -313,25 +313,25 @@ print(quick_sort(numbers))
 
 ### Sorting Algorithm Comparison (HL)
 
-| Algorithm      | Best          | Average       | Worst         | Stable | Space       |
+| Algorithm | Best | Average | Worst | Stable | Space |
 | -------------- | ------------- | ------------- | ------------- | ------ | ----------- |
-| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
-| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
+| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | No | $O(\log n)$ |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes | $O(n)$ |
 
 ## Big O Notation (HL)
 
 Big O notation describes the worst-case time complexity of an algorithm.
 
-| Complexity    | Name         | Example                             |
+| Complexity | Name | Example |
 | ------------- | ------------ | ----------------------------------- |
-| $O(1)$        | Constant     | Accessing an array element by index |
-| $O(\log n)$   | Logarithmic  | Binary search                       |
-| $O(n)$        | Linear       | Linear search                       |
-| $O(n \log n)$ | Linearithmic | Merge sort, quick sort (average)    |
-| $O(n^2)$      | Quadratic    | Bubble sort, insertion sort         |
-| $O(2^n)$      | Exponential  | Recursive Fibonacci                 |
+| $O(1)$ | Constant | Accessing an array element by index |
+| $O(\log n)$ | Logarithmic | Binary search |
+| $O(n)$ | Linear | Linear search |
+| $O(n \log n)$ | Linearithmic | Merge sort, quick sort (average) |
+| $O(n^2)$ | Quadratic | Bubble sort, insertion sort |
+| $O(2^n)$ | Exponential | Recursive Fibonacci |
 
 **Rules for analysing code:**
 
@@ -368,7 +368,7 @@ for i in range(10):
 ```
 
 **Why recursive Fibonacci is $O(2^n)$.** Each call spawns two subcalls. The recursion tree has $2^n$
-nodes. Many values are recomputed redundantly.
+Nodes. Many values are recomputed redundantly.
 
 **Efficient iterative Fibonacci:**
 
@@ -464,12 +464,12 @@ def quick_sort(arr):
 
 ### Sorting Algorithm Comparison Table (HL)
 
-| Algorithm      | Best          | Average       | Worst         | Stable | Space       |
+| Algorithm | Best | Average | Worst | Stable | Space |
 | -------------- | ------------- | ------------- | ------------- | ------ | ----------- |
-| Bubble Sort    | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | Yes    | $O(1)$      |
-| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | No     | $O(\log n)$ |
-| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes    | $O(n)$      |
+| Bubble Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | Yes | $O(1)$ |
+| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | No | $O(\log n)$ |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | Yes | $O(n)$ |
 
 ### Recursion in Detail (HL)
 
@@ -484,9 +484,9 @@ def gcd(a, b):
 print(gcd(48, 18))  # 6
 ```
 
-**Proof of termination.** At each recursive call, `b` becomes `a % b`, which is strictly less than
+**Proof of termination.** At each recursive call, `b` becomes `a % b`Which is strictly less than
 `b`. Since `b` is a non-negative integer that decreases, it must eventually reach 0, triggering the
-base case. $lacksquare$
+Base case. $lacksquare$
 
 **Towers of Hanoi:**
 
@@ -555,30 +555,30 @@ class LinkedList:
 
 **Linked list complexity:**
 
-| Operation  | Time Complexity |
+| Operation | Time Complexity |
 | ---------- | --------------- |
-| Append     | $O(n)$          |
-| Delete     | $O(n)$          |
-| Search     | $O(n)$          |
-| Insert head| $O(1)$          |
+| Append | $O(n)$ |
+| Delete | $O(n)$ |
+| Search | $O(n)$ |
+| Insert head| $O(1)$ |
 
 ## Additional Practice Questions
 
 5. Write a Python function that checks whether a string is a palindrome. What is the time
-   complexity?
+ complexity?
 
 6. Explain why merge sort has $O(n \log n)$ time complexity in all cases.
 
 7. Write pseudocode for a procedure that removes duplicates from a sorted array in-place.
 
 8. Prove that bubble sort correctly sorts an array by showing that after $k$ passes, the $k$ largest
-   elements are in their final positions.
+ elements are in their final positions.
 
 9. Write a Python function that implements a linked list with append, delete, and search methods.
-   What is the time complexity of each?
+ What is the time complexity of each?
 
 10. Explain the difference between recursion and iteration. Give an example where recursion is more
-    natural.
+ natural.
 
 11. Write a Python function that finds all pairs in an array that sum to a given target.
 
@@ -649,13 +649,13 @@ print(binary_search_string(words, "date"))  # 3
 
 **Trace on [5, 2, 4, 6, 1, 3]:**
 
-| Step | Array State     | Key | Shifts | Comparisons |
+| Step | Array State | Key | Shifts | Comparisons |
 | ---- | --------------- | --- | ------ | ----------- |
-| 1    | [5, 2, 4, 6, 1, 3] | 2   | 1      | 1           |
-| 2    | [2, 5, 4, 6, 1, 3] | 4   | 1      | 2           |
-| 3    | [2, 4, 5, 6, 1, 3] | 6   | 0      | 1           |
-| 4    | [2, 4, 5, 6, 1, 3] | 1   | 4      | 4           |
-| 5    | [1, 2, 4, 5, 6, 3] | 3   | 2      | 3           |
+| 1 | [5, 2, 4, 6, 1, 3] | 2 | 1 | 1 |
+| 2 | [2, 5, 4, 6, 1, 3] | 4 | 1 | 2 |
+| 3 | [2, 4, 5, 6, 1, 3] | 6 | 0 | 1 |
+| 4 | [2, 4, 5, 6, 1, 3] | 1 | 4 | 4 |
+| 5 | [1, 2, 4, 5, 6, 3] | 3 | 2 | 3 |
 
 Final: [1, 2, 3, 4, 5, 6]. Total comparisons: $1 + 2 + 1 + 4 + 3 = 11$.
 
@@ -716,10 +716,10 @@ for i in range(n):
 2. **Binary search** requires a sorted array.
 3. **Bubble sort** can be optimised by stopping early if no swaps occur.
 4. **Recursion** -- always include a base case; recursive Fibonacci is $O(2^n)$ (use iteration for
-   efficiency).
+ efficiency).
 5. **Big O** -- describe the worst case, not the best case.
 6. **Confusing validation and verification.** Validation checks if data is reasonable; verification
-   checks if data was entered correctly.
+ checks if data was entered correctly.
 7. **Integer division in Python** -- use `//` for integer division, `/` for float division.
 
 ## Practice Questions
@@ -734,14 +734,22 @@ for i in range(n):
 ### Higher Level
 
 1. Implement binary search in Python and trace its execution on the array [2, 5, 8, 12, 16, 23, 38,
-   56, 72, 91] searching for 23.
+ 56, 72, 91] searching for 23.
 2. Write a recursive function in Python to calculate the nth triangular number.
 3. Compare the time complexities of bubble sort, insertion sort, and quick sort.
 4. Implement a queue using two stacks in Python.
 
 5. Write a Python function that checks whether a string is a palindrome. What is the time
-   complexity?
+ complexity?
 6. Explain why merge sort has $O(n \log n)$ time complexity in all cases.
 7. Write pseudocode for a procedure that removes duplicates from a sorted array in-place.
 8. Prove that bubble sort correctly sorts an array by showing that after $k$ passes, the $k$ largest
-   elements are in their final positions.
+ elements are in their final positions.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

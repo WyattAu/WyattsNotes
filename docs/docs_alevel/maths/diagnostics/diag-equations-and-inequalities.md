@@ -19,7 +19,7 @@ Solve the inequality:
 
 $$\frac{x^2 - 3x + 2}{x^2 + x - 6} \geq 0$$
 
-State your answer using set notation, clearly identifying all excluded values.
+State your answer using set notation, identifying all excluded values.
 
 [Difficulty: hard. Tests the common error of cross-multiplying without considering sign changes of the denominator.]
 
@@ -41,7 +41,7 @@ Excluded value: $x = 2$ (makes denominator zero). Also $x = -3$ is excluded.
 
 $$\frac{(x-1)(x-2)}{(x+3)(x-2)} = \frac{(x-1)(x-2)}{(x+3)(x-2)}$$
 
-For $x \neq 2$, we can cancel $(x-2)$ but must remember the sign changes. Instead, analyse using a sign table:
+For $x \neq 2$We can cancel $(x-2)$ but must remember the sign changes. Instead, analyse using a sign table:
 
 | Interval | $(x+3)$ | $(x-1)$ | $(x-2)$ | Expression |
 |----------|---------|---------|---------|------------|
@@ -66,7 +66,7 @@ Sign analysis:
 
 **Step 5: Assemble the solution.**
 
-The expression is non-negative when $x < -3$, $1 \leq x < 2$, or $x > 2$.
+The expression is non-negative when $x < -3$$1 \leq x < 2$Or $x > 2$.
 
 $$x \in (-\infty, -3) \cup [1, 2) \cup (2, \infty)$$
 
@@ -80,7 +80,7 @@ Solve the equation:
 
 $$|x^2 - 5x + 6| = |2x - 4|$$
 
-giving all real solutions in exact form.
+Giving all real solutions in exact form.
 
 [Difficulty: hard. Tests systematic case analysis for modulus equations with quadratics inside absolute values.]
 
@@ -103,9 +103,9 @@ $$x = 1 \quad \text{or} \quad x = 2$$
 
 **Verification:**
 
-- $x = 1$: $|1-5+6| = |2| = 2$, $|2-4| = 2$. Valid.
-- $x = 2$: $|4-10+6| = 0$, $|4-4| = 0$. Valid.
-- $x = 5$: $|25-25+6| = 6$, $|10-4| = 6$. Valid.
+- $x = 1$: $|1-5+6| = |2| = 2$$|2-4| = 2$. Valid.
+- $x = 2$: $|4-10+6| = 0$$|4-4| = 0$. Valid.
+- $x = 5$: $|25-25+6| = 6$$|10-4| = 6$. Valid.
 
 The solutions are $x = 1, 2, 5$.
 
@@ -123,7 +123,7 @@ Then find the smallest positive value of $k$ such that the system:
 
 $$\begin{cases} x^2 + y^2 = 1 \\ x + y = k \end{cases}$$
 
-has exactly one real solution, and state that solution.
+Has exactly one real solution, and state that solution.
 
 [Difficulty: hard. Tests algebraic proof of impossibility and understanding the geometric interpretation of constrained optimisation.]
 
@@ -139,7 +139,7 @@ $$2x^2 - 4x + 3 = 0$$
 
 Discriminant: $\Delta = 16 - 24 = -8 < 0$.
 
-Since $\Delta < 0$, there are no real values of $x$, hence no real solutions to the system.
+Since $\Delta < 0$There are no real values of $x$Hence no real solutions to the system.
 
 **Finding the critical value of $k$:**
 
@@ -156,7 +156,7 @@ $$-4k^2 + 8 = 0$$
 $$k^2 = 2$$
 $$k = \sqrt{2}$$
 
-(Since we want the smallest positive $k$, $k = \sqrt{2}$.)
+(Since we want the smallest positive $k$$k = \sqrt{2}$.)
 
 **The solution:** When $\Delta = 0$:
 
@@ -183,9 +183,9 @@ This confirms our algebraic result.
 
 The function $f$ is defined by $f(x) = \frac{2x+3}{x-1}$ for $x > 1$.
 
-**(a)** Find $f^{-1}(x)$, stating its domain and range.
+**(a)** Find $f^{-1}(x)$Stating its domain and range.
 
-**(b)** Solve the equation $f(x) = f^{-1}(x)$, giving all solutions in the domain of $f$.
+**(b)** Solve the equation $f(x) = f^{-1}(x)$Giving all solutions in the domain of $f$.
 
 **(c)** Without further calculation, explain why $f(x) = f^{-1}(x)$ is equivalent to $f(x) = x$ for this particular function.
 
@@ -202,9 +202,9 @@ $$x = \frac{y+3}{y-2}$$
 
 So $f^{-1}(x) = \frac{x+3}{x-2}$.
 
-Domain of $f^{-1}$: Since the range of $f$ (for $x > 1$) needs to be determined first. As $x \to 1^+$, $f(x) \to +\infty$. As $x \to +\infty$, $f(x) \to 2$. So range of $f$ is $(2, +\infty)$, meaning domain of $f^{-1}$ is $x > 2$.
+Domain of $f^{-1}$: Since the range of $f$ (for $x > 1$) needs to be determined first. As $x \to 1^+$$f(x) \to +\infty$. As $x \to +\infty$$f(x) \to 2$. So range of $f$ is $(2, +\infty)$Meaning domain of $f^{-1}$ is $x > 2$.
 
-Range of $f^{-1}$: This equals the domain of $f$, so $(1, +\infty)$.
+Range of $f^{-1}$: This equals the domain of $f$So $(1, +\infty)$.
 
 **(b)** Solve $\frac{2x+3}{x-1} = \frac{x+3}{x-2}$:
 
@@ -224,11 +224,11 @@ Now check the domain restriction $x > 1$:
 
 The solution is $x = \frac◆LB◆3 + \sqrt{21}◆RB◆◆LB◆2◆RB◆$.
 
-**(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$ (the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$, and if $f(x) = c$ then $f(c) = x$. When $f(x) = x$, clearly $f^{-1}(x) = x = f(x)$.
+**(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$ (the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$And if $f(x) = c$ then $f(c) = x$. When $f(x) = x$$f^{-1}(x) = x = f(x)$.
 
 For this specific M\"obius transformation, since $f$ is a strictly decreasing function on $(1, \infty)$ (its derivative $f'(x) = \frac{-5}{(x-1)^2} < 0$), the graph of $f$ crosses $y = x$ exactly once, and this crossing point is the unique solution to $f(x) = f^{-1}(x)$.
 
-Verification: $f(x) = x$ gives $\frac{2x+3}{x-1} = x$, i.e. $2x+3 = x^2-x$, i.e. $x^2-3x-3 = 0$, which is the same equation we obtained in part (b).
+Verification: $f(x) = x$ gives $\frac{2x+3}{x-1} = x$I.e. $2x+3 = x^2-x$I.e. $x^2-3x-3 = 0$Which is the same equation we obtained in part (b).
 
 ---
 
@@ -250,7 +250,7 @@ The sequence $(a_n)$ is defined by $a_n = \frac{n^2 + n}{n + 2}$ for $n \geq 1$.
 
 **(a)** We need to show $\frac{n^2 + n}{n+2} > n - 1$ for all $n \geq 1$.
 
-Since $n + 2 > 0$ for all $n \geq 1$, we can multiply both sides by $n + 2$ without flipping the inequality:
+Since $n + 2 > 0$ for all $n \geq 1$We can multiply both sides by $n + 2$ without flipping the inequality:
 
 $$n^2 + n > (n-1)(n+2) = n^2 + 2n - n - 2 = n^2 + n - 2$$
 
@@ -269,7 +269,7 @@ Roots of $n^2 - 99n - 200 = 0$:
 
 $$n = \frac◆LB◆99 \pm \sqrt{9801 + 800}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆99 \pm \sqrt{10601}◆RB◆◆LB◆2◆RB◆$$
 
-$\sqrt{10601} \approx 102.96$, so:
+$\sqrt{10601} \approx 102.96$So:
 
 $$n \approx \frac{99 + 102.96}{2} \approx 100.98$$
 
@@ -277,7 +277,7 @@ Since the quadratic opens upward, $n^2 - 99n - 200 > 0$ for $n > \frac◆LB◆99
 
 The smallest integer $N$ is $\boxed{101}$.
 
-**(c)** $N = 101$, so we need $\sum_{n=1}^{100} a_n = \sum_{n=1}^{100} \frac{n^2+n}{n+2}$.
+**(c)** $N = 101$So we need $\sum_{n=1}^{100} a_n = \sum_{n=1}^{100} \frac{n^2+n}{n+2}$.
 
 Perform the division $\frac{n^2+n}{n+2}$:
 
@@ -291,13 +291,13 @@ $$\sum_{n=1}^{100} a_n = \sum_{n=1}^{100}\left(n - 1 + \frac{2}{n+2}\right) = \s
 
 $$= \sum_{k=0}^{99} k + 2\sum_{m=3}^{102}\frac{1}{m}$$
 
-where $k = n-1$ and $m = n+2$.
+Where $k = n-1$ and $m = n+2$.
 
 $$= \frac◆LB◆99 \times 100◆RB◆◆LB◆2◆RB◆ + 2\sum_{m=3}^{102}\frac{1}{m}$$
 
 $$= 4950 + 2\left(H_{102} - 1 - \frac{1}{2}\right)$$
 
-where $H_n = \sum_{k=1}^{n} \frac{1}{k}$ is the $n$-th harmonic number.
+Where $H_n = \sum_{k=1}^{n} \frac{1}{k}$ is the $n$-th harmonic number.
 
 $$= 4950 + 2H_{102} - 3$$
 
@@ -341,19 +341,19 @@ For $x = 1 - \sqrt{6}/2 \approx -0.225$: $y = 4 - (1-\sqrt{6}/2)^2 = 3/2 - \sqrt
 
 **Intersection of Curve 1 and Curve 3:**
 
-For $x \geq 2$: $|x-2| = x-2$, so $x^2-4x+3 = x-3$, giving $x^2-5x+6 = 0$, so $x = 2$ or $x = 3$.
+For $x \geq 2$: $|x-2| = x-2$So $x^2-4x+3 = x-3$Giving $x^2-5x+6 = 0$So $x = 2$ or $x = 3$.
 - At $x = 2$: $y = -1$.
 - At $x = 3$: $y = 0$.
 
-For $x < 2$: $|x-2| = 2-x$, so $x^2-4x+3 = 2-x-1 = 1-x$, giving $x^2-3x+2 = 0$, so $x = 1$ or $x = 2$.
+For $x < 2$: $|x-2| = 2-x$So $x^2-4x+3 = 2-x-1 = 1-x$Giving $x^2-3x+2 = 0$So $x = 1$ or $x = 2$.
 - At $x = 1$: $y = 0$.
 
 **Intersection of Curve 2 and Curve 3:**
 
-For $x \geq 2$: $4-x^2 = x-3$, giving $x^2+x-7 = 0$, so $x = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ \approx 2.193$.
+For $x \geq 2$: $4-x^2 = x-3$Giving $x^2+x-7 = 0$So $x = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ \approx 2.193$.
 $y = \frac◆LB◆-1+\sqrt{29}◆RB◆◆LB◆2◆RB◆ - 3 = \frac◆LB◆-7+\sqrt{29}◆RB◆◆LB◆2◆RB◆$.
 
-For $x < 2$: $4-x^2 = 1-x$, giving $x^2-x-3 = 0$, so $x = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx 2.303$. But this is $> 2$, contradicting $x < 2$. So $x = \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx -1.303$.
+For $x < 2$: $4-x^2 = 1-x$Giving $x^2-x-3 = 0$So $x = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx 2.303$. But this is $> 2$Contradicting $x < 2$. So $x = \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ \approx -1.303$.
 $y = 1 - \frac◆LB◆1-\sqrt{13}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1+\sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 **Vertices of $R$:** The region $R$ is bounded. Its vertices are approximately:

@@ -75,7 +75,7 @@ The isotope $\text{U-235}$ has atomic mass $235.0439\,\text{u}$. It undergoes fi
 
 (a) Calculate the mass defect of the fission products and the energy released.
 
-(b) Calculate the binding energy per nucleon of $\text{U-235}$, $\text{Ba-141}$, and $\text{Kr-92}$, and explain why fission releases energy.
+(b) Calculate the binding energy per nucleon of $\text{U-235}$$\text{Ba-141}$And $\text{Kr-92}$And explain why fission releases energy.
 
 (c) A student claims that "nuclear fission converts mass directly into energy, which is why it releases so much energy." Discuss whether this is an accurate statement.
 
@@ -93,19 +93,19 @@ Energy released: $E = 0.1859 \times 931.5 = 173.2\,\text{MeV}$
 
 (b) Binding energy per nucleon:
 
-$\text{U-235}$: $Z = 92$, $N = 143$. Mass of constituent nucleons: $92(1.0073) + 143(1.0087) = 92.6716 + 144.2441 = 236.9157\,\text{u}$
+$\text{U-235}$: $Z = 92$$N = 143$. Mass of constituent nucleons: $92(1.0073) + 143(1.0087) = 92.6716 + 144.2441 = 236.9157\,\text{u}$
 
 Mass defect: $236.9157 - 235.0439 = 1.8718\,\text{u}$
 
 BE per nucleon: $1.8718 \times 931.5/235 = 7.41\,\text{MeV/nucleon}$
 
-$\text{Ba-141}$: $Z = 56$, $N = 85$. Constituent mass: $56(1.0073) + 85(1.0087) = 56.4088 + 85.7395 = 142.1483\,\text{u}$
+$\text{Ba-141}$: $Z = 56$$N = 85$. Constituent mass: $56(1.0073) + 85(1.0087) = 56.4088 + 85.7395 = 142.1483\,\text{u}$
 
 Mass defect: $142.1483 - 140.9144 = 1.2339\,\text{u}$
 
 BE per nucleon: $1.2339 \times 931.5/141 = 8.15\,\text{MeV/nucleon}$
 
-$\text{Kr-92}$: $Z = 36$, $N = 56$. Constituent mass: $36(1.0073) + 56(1.0087) = 36.2628 + 56.4872 = 92.7500\,\text{u}$
+$\text{Kr-92}$: $Z = 36$$N = 56$. Constituent mass: $36(1.0073) + 56(1.0087) = 36.2628 + 56.4872 = 92.7500\,\text{u}$
 
 Mass defect: $92.7500 - 91.9262 = 0.8238\,\text{u}$
 
@@ -113,7 +113,7 @@ BE per nucleon: $0.8238 \times 931.5/92 = 8.34\,\text{MeV/nucleon}$
 
 The fission products ($\sim 8.1$ and $8.3\,\text{MeV/nucleon}$) have higher binding energy per nucleon than U-235 ($7.4\,\text{MeV/nucleon}$). The "missing" binding energy is released as kinetic energy of the fission products and radiation. This is why fission releases energy: moving to nuclei with higher binding energy per nucleon.
 
-(c) The statement is partially correct but misleading. The energy released is not because mass "directly converts" to energy. Rather, the fission products have a different (more tightly bound) nuclear configuration, and the total mass of the system decreases because the binding energy increases. The mass defect is a measure of the binding energy difference, and by $E = \Delta mc^2$, this mass difference corresponds to the energy release.
+(c) The statement is partially correct but misleading. The energy released is not because mass "directly converts" to energy. Rather, the fission products have a different (more tightly bound) nuclear configuration, and the total mass of the system decreases because the binding energy increases. The mass defect is a measure of the binding energy difference, and by $E = \Delta mc^2$This mass difference corresponds to the energy release.
 
 The energy appears as kinetic energy of the fission fragments, neutrons, and gamma radiation -- not as "pure energy."
 
@@ -129,7 +129,7 @@ A sample contains $N_0 = 1.0 \times 10^{20}$ radioactive nuclei of a particular 
 
 (b) Calculate the probability that any given nucleus will decay within the next $1.0\,\text{hour}$.
 
-(c) After $20\,\text{hours}$, the activity is measured to be $A = 3.2 \times 10^{14}\,\text{Bq}$ with an uncertainty of $\pm 5\%$. Explain why this measurement is consistent with the theoretical prediction, and discuss whether a single nucleus can be said to have a half-life.
+(c) After $20\,\text{hours}$The activity is measured to be $A = 3.2 \times 10^{14}\,\text{Bq}$ with an uncertainty of $\pm 5\%$. Explain why this measurement is consistent with the theoretical prediction, and discuss whether a single nucleus can be said to have a half-life.
 
 **Solution:**
 
@@ -207,11 +207,11 @@ A radioactive source emits alpha particles, beta-minus particles, and gamma rays
 
 **Solution:**
 
-(a) **Alpha particles** ($^4_2\text{He}^{2+}$, positive charge $+2e$):
+(a) **Alpha particles** ($^4_2\text{He}^{2+}$Positive charge $+2e$):
 - Magnetic force: $\vec{F} = q\vec{v} \times \vec{B}$. For positive charge moving right with $\vec{B}$ into the page, the force is upward (by right-hand rule). Path curves upward (circular).
 - Electric force: $\vec{F} = q\vec{E}$. For positive charge, force is in the direction of $\vec{E}$ (downward). This opposes the magnetic force.
 
-**Beta-minus particles** ($e^-$, negative charge $-e$):
+**Beta-minus particles** ($e^-$Negative charge $-e$):
 - Magnetic force: negative charge moving right with $\vec{B}$ into page. Force is downward (opposite to alpha). Path curves downward (circular, opposite direction).
 - Electric force: negative charge, force opposite to $\vec{E}$ (upward). This opposes the magnetic force.
 
@@ -220,7 +220,7 @@ A radioactive source emits alpha particles, beta-minus particles, and gamma rays
 - No electric force ($q = 0$).
 - Travel in a straight line, undeflected.
 
-(b) Magnetic force provides centripetal force: $qvB = mv^2/r$, so $r = mv/(qB)$.
+(b) Magnetic force provides centripetal force: $qvB = mv^2/r$So $r = mv/(qB)$.
 
 For alpha: $r_\alpha = m_\alpha v/(2eB) = 0.20\,\text{m}$
 
@@ -259,7 +259,7 @@ A wooden artefact is found to have a carbon-14 activity of $0.25\,\text{Bq}$ per
 
 (a) Activity ratio: $A/A_0 = 0.25/0.23 = 1.087$.
 
-This gives $A/A_0 \gt 1$, meaning the artefact appears to have **more** C-14 than living wood. This is physically impossible for a genuine ancient artefact, indicating either contamination or measurement error. The data is inconsistent with radioactive decay.
+This gives $A/A_0 \gt 1$Meaning the artefact appears to have **more** C-14 than living wood. This is physically impossible for a genuine ancient artefact, indicating either contamination or measurement error. The data is inconsistent with radioactive decay.
 
 If instead the numbers were swapped (a common exam scenario where $A = 0.23$ and $A_0 = 0.25$):
 

@@ -23,7 +23,7 @@ A particle moves in a straight line so that its velocity $v$ m/s at time $t$ sec
 
 **(c)** A student calculates the displacement over $[0, 7]$ by evaluating $\int_0^7 v\,dt$ and obtains a positive answer. The student then claims this integral equals the total distance. Calculate the percentage error in the student's answer.
 
-[Difficulty: hard. Tests whether the student identifies direction changes from $v = 0$, splits the integral accordingly, and takes absolute values of each segment to find total distance rather than displacement.]
+[Difficulty: hard. Tests whether the student identifies direction changes from $v = 0$Splits the integral accordingly, and takes absolute values of each segment to find total distance rather than displacement.]
 
 **Solution:**
 
@@ -33,17 +33,17 @@ The particle is at rest at $t = 1$ s and $t = 5$ s.
 
 **(b)** First, determine the sign of $v$ in each interval.
 
-For $0 \lt t \lt 1$: test $t = 0.5$, $v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
+For $0 \lt t \lt 1$: test $t = 0.5$$v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
 
-For $1 \lt t \lt 5$: test $t = 3$, $v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
+For $1 \lt t \lt 5$: test $t = 3$$v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
 
-For $t \gt 5$: test $t = 6$, $v = 36 - 36 - 5 = -5 \lt 0$ (moving in negative direction).
+For $t \gt 5$: test $t = 6$$v = 36 - 36 - 5 = -5 \lt 0$ (moving in negative direction).
 
-The particle reverses direction at $t = 1$ and $t = 5$. Total distance requires integrating $\lvert v \rvert$, which means splitting at the turning points and taking the magnitude of each segment.
+The particle reverses direction at $t = 1$ and $t = 5$. Total distance requires integrating $\lvert v \rvert$Which means splitting at the turning points and taking the magnitude of each segment.
 
 $$s(t) = \int v\,dt = \int (6t - t^2 - 5)\,dt = 3t^2 - \frac{t^3}{3} - 5t + C$$
 
-With $s(0) = 0$: $C = 0$, so $s(t) = 3t^2 - \frac{t^3}{3} - 5t$.
+With $s(0) = 0$: $C = 0$So $s(t) = 3t^2 - \frac{t^3}{3} - 5t$.
 
 $s(1) = 3 - \frac{1}{3} - 5 = -\frac{7}{3}$ m.
 
@@ -79,7 +79,7 @@ A projectile is launched from a cliff of height $80$ m above sea level with spee
 
 **(b)** Find the horizontal distance from the launch point to the point of impact.
 
-**(c)** A student sets up the problem with upwards as positive and writes the vertical equation as $s = ut - \frac{1}{2}gt^2$, using $s = -80$ (below the launch point) and $u = 30\sin 25°$. Show that this gives the same quadratic as taking downwards as positive.
+**(c)** A student sets up the problem with upwards as positive and writes the vertical equation as $s = ut - \frac{1}{2}gt^2$Using $s = -80$ (below the launch point) and $u = 30\sin 25°$. Show that this gives the same quadratic as taking downwards as positive.
 
 **(d)** Find the speed and direction of motion at the instant of impact.
 
@@ -125,7 +125,7 @@ Angle below horizontal $= \arctan\!\left(\frac{41.51}{27.19}\right) \approx 56.8
 
 **Question:**
 
-A particle moves in a straight line. Its acceleration $a$ m/s$^2$ is related to its displacement $s$ metres from a fixed point $O$ by $a = 12 - 3s$. When $s = 0$, the particle has velocity $v = 2$ m/s.
+A particle moves in a straight line. Its acceleration $a$ m/s$^2$ is related to its displacement $s$ metres from a fixed point $O$ by $a = 12 - 3s$. When $s = 0$The particle has velocity $v = 2$ m/s.
 
 **(a)** Find an expression for $v^2$ in terms of $s$.
 
@@ -133,7 +133,7 @@ A particle moves in a straight line. Its acceleration $a$ m/s$^2$ is related to 
 
 **(c)** A student attempts part (a) by writing $a = \frac{dv}{dt} = 12 - 3s$ and then substituting $dt = \frac{ds}{v}$ to get $v\,dv = (12 - 3s)\,ds$. Explain why this is the correct approach, and show that a student who instead tries $a = \frac{d^2s}{dt^2} = 12 - 3s$ and attempts to solve this second-order ODE directly will obtain the same result but with significantly more work.
 
-[Difficulty: hard. Tests the chain rule identity $a = v\,\frac{dv}{ds}$ for acceleration given in terms of displacement, identification of the turning point from $v = 0$, and understanding of why the separable ODE approach is preferred.]
+[Difficulty: hard. Tests the chain rule identity $a = v\,\frac{dv}{ds}$ for acceleration given in terms of displacement, identification of the turning point from $v = 0$And understanding of why the separable ODE approach is preferred.]
 
 **Solution:**
 
@@ -149,7 +149,7 @@ $$\int v\,dv = \int (12 - 3s)\,ds$$
 
 $$\frac{v^2}{2} = 12s - \frac{3s^2}{2} + C$$
 
-When $s = 0$, $v = 2$: $\frac{4}{2} = C \implies C = 2$.
+When $s = 0$$v = 2$: $\frac{4}{2} = C \implies C = 2$.
 
 $$\frac{v^2}{2} = 12s - \frac{3s^2}{2} + 2$$
 
@@ -161,7 +161,7 @@ $$0 = 24s - 3s^2 + 4 \implies 3s^2 - 24s - 4 = 0$$
 
 $$s = \frac◆LB◆24 + \sqrt{576 + 48}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆24 + \sqrt{624}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆24 + 4\sqrt{39}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆12 + 2\sqrt{39}◆RB◆◆LB◆3◆RB◆ \approx 8.16 \text{ m}$$
 
-(The negative root gives $s \lt 0$, which corresponds to the particle having passed through $O$ in the opposite direction -- not relevant for the first turning point.)
+(The negative root gives $s \lt 0$Which corresponds to the particle having passed through $O$ in the opposite direction -- not relevant for the first turning point.)
 
 **(c)** The approach via $a = v\,\frac{dv}{ds}$ works because it reduces the problem to a first-order separable ODE. The substitution $dt = \frac{ds}{v}$ is valid because $v = \frac{ds}{dt} \neq 0$ during the motion (except at the turning point, which is handled by the boundary condition).
 
@@ -181,7 +181,7 @@ $v = \frac{ds}{dt} = 4\sqrt{3}\sin(\sqrt{3}\,t) + B\sqrt{3}\cos(\sqrt{3}\,t)$.
 
 Applying $v(0) = 2$: $B\sqrt{3} = 2 \implies B = \frac◆LB◆2◆RB◆◆LB◆\sqrt{3}◆RB◆$.
 
-This gives the full $s(t)$ and $v(t)$, but to find $v^2$ in terms of $s$ you must then eliminate $t$ between them -- which requires substituting back and using $\sin^2 + \cos^2 = 1$. The chain rule method bypasses this entirely and is the intended technique for the A-Level specification.
+This gives the full $s(t)$ and $v(t)$But to find $v^2$ in terms of $s$ you must then eliminate $t$ between them -- which requires substituting back and using $\sin^2 + \cos^2 = 1$. The chain rule method bypasses this entirely and is the intended technique for the A-Level specification.
 
 ---
 
@@ -205,9 +205,9 @@ A particle is projected from a point $A$ with position vector $\begin{pmatrix} 0
 
 **Solution:**
 
-**(a)** Horizontal: $x = 8t$, so $v_x = 8$ (constant).
+**(a)** Horizontal: $x = 8t$So $v_x = 8$ (constant).
 
-Vertical: $v_y = 4 - 9.8t$, $y = 10 + 4t - 4.9t^2$.
+Vertical: $v_y = 4 - 9.8t$$y = 10 + 4t - 4.9t^2$.
 
 Position vector: $\mathbf{r}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pmatrix}$.
 
@@ -215,7 +215,7 @@ Position vector: $\mathbf{r}(t) = \begin{pmatrix} 8t \\ 10 + 4t - 4.9t^2 \end{pm
 
 $$D^2 = (8t)^2 + (10 + 4t - 4.9t^2)^2 = 64t^2 + (10 + 4t - 4.9t^2)^2$$
 
-To minimise $D$, we minimise $D^2$. Setting $\frac{d(D^2)}{dt} = 0$:
+To minimise $D$We minimise $D^2$. Setting $\frac{d(D^2)}{dt} = 0$:
 
 $$\frac{d(D^2)}{dt} = 128t + 2(10 + 4t - 4.9t^2)(4 - 9.8t) = 0$$
 
@@ -245,7 +245,7 @@ This is the same equation. Let us solve numerically.
 
 Define $f(t) = 48.02t^3 - 58.8t^2 + 46t + 40$.
 
-$f(-0.5) = -3.70$, $f(-0.4) = 48.02(-0.064) - 58.8(0.16) + 46(-0.4) + 40 = -3.07 - 9.41 - 18.4 + 40 = 9.12$.
+$f(-0.5) = -3.70$$f(-0.4) = 48.02(-0.064) - 58.8(0.16) + 46(-0.4) + 40 = -3.07 - 9.41 - 18.4 + 40 = 9.12$.
 
 Root between $t = -0.5$ and $t = -0.4$.
 
@@ -267,7 +267,7 @@ $\mathbf{r} \cdot \mathbf{v} = (-3.696)(8) + (7.106)(8.528) = -29.57 + 60.62 = 3
 
 This should be zero at the exact root. The discrepancy is due to rounding $t$ to three decimal places. Using a more precise root $t \approx -0.4626$:
 
-$x = -3.701$, $y = 7.101$, $v_y = 8.533$.
+$x = -3.701$$y = 7.101$$v_y = 8.533$.
 
 $\mathbf{r} \cdot \mathbf{v} = -3.701(8) + 7.101(8.533) = -29.61 + 60.60 = 30.99$.
 
@@ -293,7 +293,7 @@ A particle of mass $0.5$ kg is projected vertically upwards from ground level wi
 
 **(a)** Work-energy principle: the work done by all forces equals the change in kinetic energy.
 
-At maximum height, $v = 0$, so $\Delta\mathrm{KE} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
+At maximum height, $v = 0$So $\Delta\mathrm{KE} = 0 - \frac{1}{2}(0.5)(20^2) = -100$ J.
 
 Forces acting on the particle during the ascent:
 - Weight $= mg = 0.5 \times 9.8 = 4.9$ N (downward).
@@ -305,7 +305,7 @@ Both forces act opposite to the displacement (which is upward), so both do negat
 
 $$W_{\text{net}} = -5.3h$$
 
-where $h$ is the maximum height.
+Where $h$ is the maximum height.
 
 By the work-energy principle:
 
@@ -317,7 +317,7 @@ $$F_{\text{net}} = -mg - F_{\text{air}} = -4.9 - 0.4 = -5.3 \text{ N}$$
 
 $$ma = -5.3 \implies a = \frac{-5.3}{0.5} = -10.6 \text{ m/s}^2$$
 
-Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 20$, $a = -10.6$:
+Using $v^2 = u^2 + 2as$ with $v = 0$$u = 20$$a = -10.6$:
 
 $$0 = 400 + 2(-10.6)h \implies 21.2h = 400 \implies h = \frac{400}{21.2} = \frac{100}{5.3} \approx 18.87 \text{ m}$$
 
@@ -347,21 +347,21 @@ A particle moves in a straight line. Its velocity $v$ m/s at time $t$ seconds ($
 
 **Solution:**
 
-**(a)** Testing $t = 1$: $v(1) = 1 - 6 + 11 - 6 = 0$, so $(t - 1)$ is a factor.
+**(a)** Testing $t = 1$: $v(1) = 1 - 6 + 11 - 6 = 0$So $(t - 1)$ is a factor.
 
 $$t^3 - 6t^2 + 11t - 6 = (t - 1)(t^2 - 5t + 6) = (t - 1)(t - 2)(t - 3)$$
 
-The particle is at rest at $t = 1$, $t = 2$, and $t = 3$ s.
+The particle is at rest at $t = 1$$t = 2$And $t = 3$ s.
 
 **(b)** The cubic $(t-1)(t-2)(t-3)$ has positive leading coefficient and roots at $1, 2, 3$.
 
-For $0 \leq t \lt 1$: test $t = 0.5$, $v = (−0.5)(−1.5)(−2.5) = −1.875 \lt 0$.
+For $0 \leq t \lt 1$: test $t = 0.5$$v = (−0.5)(−1.5)(−2.5) = −1.875 \lt 0$.
 
-For $1 \lt t \lt 2$: test $t = 1.5$, $v = (0.5)(−0.5)(−1.5) = 0.375 \gt 0$.
+For $1 \lt t \lt 2$: test $t = 1.5$$v = (0.5)(−0.5)(−1.5) = 0.375 \gt 0$.
 
-For $2 \lt t \lt 3$: test $t = 2.5$, $v = (1.5)(0.5)(−0.5) = −0.375 \lt 0$.
+For $2 \lt t \lt 3$: test $t = 2.5$$v = (1.5)(0.5)(−0.5) = −0.375 \lt 0$.
 
-For $t \gt 3$: test $t = 4$, $v = (3)(2)(1) = 6 \gt 0$.
+For $t \gt 3$: test $t = 4$$v = (3)(2)(1) = 6 \gt 0$.
 
 The particle moves in the positive direction for $1 \lt t \lt 2$ and $t \gt 3$.
 
@@ -385,14 +385,14 @@ $$= 2.25 + 0.25 + 0.25 + 16 = 18.75 \text{ m}$$
 
 $\frac{da}{dt} = 6t - 12 = 0 \implies t = 2$.
 
-$\frac{d^2a}{dt^2} = 6 \gt 0$, confirming a minimum of acceleration at $t = 2$.
+$\frac{d^2a}{dt^2} = 6 \gt 0$Confirming a minimum of acceleration at $t = 2$.
 
-Since $\frac{da}{dt} = 6t - 12$ and the coefficient of $t$ is positive, the acceleration has a minimum (not maximum) at $t = 2$. The acceleration decreases for $0 \lt t \lt 2$ and increases for $t \gt 2$, so the maximum acceleration on the interval $[0, 5]$ occurs at an endpoint.
+Since $\frac{da}{dt} = 6t - 12$ and the coefficient of $t$ is positive, the acceleration has a minimum (not maximum) at $t = 2$. The acceleration decreases for $0 \lt t \lt 2$ and increases for $t \gt 2$So the maximum acceleration on the interval $[0, 5]$ occurs at an endpoint.
 
-$a(0) = 11$ m/s$^2$, $a(5) = 75 - 60 + 11 = 26$ m/s$^2$.
+$a(0) = 11$ m/s$^2$$a(5) = 75 - 60 + 11 = 26$ m/s$^2$.
 
 The maximum acceleration on $[0, 5]$ is $26$ m/s$^2$ at $t = 5$.
 
 At $t = 5$: $v = 6 \gt 0$ and $a = 26 \gt 0$. Since velocity and acceleration have the same sign, the particle is **speeding up** at $t = 5$.
 
-Note: the question asks about the rate of change of **speed** (a scalar), not velocity. Speed increases when $v$ and $a$ have the same sign, and decreases when they have opposite signs. At $t = 5$, both are positive, so the particle is speeding up.
+Note: the question asks about the rate of change of **speed** (a scalar), not velocity. Speed increases when $v$ and $a$ have the same sign, and decreases when they have opposite signs. At $t = 5$Both are positive, so the particle is speeding up.

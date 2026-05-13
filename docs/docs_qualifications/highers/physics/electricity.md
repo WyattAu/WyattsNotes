@@ -29,7 +29,7 @@ $e = 1.6 \times 10^{-19} \mathrm{ C{}$.
 $$I = \frac{Q}{t}$$
 
 Conventional current flows from positive to negative. In metals, the charge carriers are electrons,
-which flow from negative to positive -- opposite to the conventional current direction.
+Which flow from negative to positive -- opposite to the conventional current direction.
 
 **Example:** A current of $3 \mathrm{ A{}$ flows for $2 \mathrm{ minutes{}$. Calculate the total charge.
 
@@ -44,16 +44,16 @@ $$n = \frac{Q}{e} = \frac{50}{1.6 \times 10^{-19}} = 3.125 \times 10^{20} \mathr
 ### Drift Velocity
 
 The current in a wire can be expressed in terms of the microscopic properties of the charge
-carriers:
+Carriers:
 
 $$I = nAve$$
 
-where $n$ is the number density of free electrons (per m$^3$), $A$ is the cross-sectional area, $v$
-is the drift velocity, and $e$ is the elementary charge.
+Where $n$ is the number density of free electrons (per m$^3$), $A$ is the cross-sectional area, $v$
+Is the drift velocity, and $e$ is the elementary charge.
 
 For copper, $n \approx 8.5 \times 10^{28}$ m$^{-3}$. A 1 A current in a wire of area $10^{-6}$ m$^2$
-gives a drift velocity of about $7 \times 10^{-5}$ m/s -- less than 0.1 mm/s. The signal propagates
-at nearly the speed of light, but the electrons themselves move extraordinarily slowly.
+Gives a drift velocity of about $7 \times 10^{-5}$ m/s -- less than 0.1 mm/s. The signal propagates
+At nearly the speed of light, but the electrons themselves move extraordinarily slowly.
 
 ### Potential Difference, EMF, and Resistance
 
@@ -71,9 +71,9 @@ $$\varepsilon = \frac{E}{Q}$$
 
 ### Why Ohm's Law Is Not a Universal Law
 
-Ohm's law applies only to ohmic conductors (typically metals at constant temperature). Many
-components violate it: filament lamps (resistance increases with temperature), diodes (conduct only
-in one direction), thermistors (resistance changes with temperature), and semiconductors. The term
+Ohm's law applies only to ohmic conductors ( metals at constant temperature). Many
+Components violate it: filament lamps (resistance increases with temperature), diodes (conduct only
+In one direction), thermistors (resistance changes with temperature), and semiconductors. The term
 "law" is historical.
 
 ### Resistivity
@@ -82,11 +82,11 @@ The resistance of a wire depends on its material and dimensions:
 
 $$R = \frac{\rho L}{A}$$
 
-where $\rho$ is resistivity (measured in $\Omega \mathrm{m{}$), $L$ is length, and $A$ is
-cross-sectional area.
+Where $\rho$ is resistivity (measured in $\Omega \mathrm{m{}$), $L$ is length, and $A$ is
+Cross-sectional area.
 
 Resistivity is an intrinsic property of the material, independent of the dimensions of the wire. It
-depends on temperature: for metals, resistivity increases approximately linearly with temperature.
+Depends on temperature: for metals, resistivity increases approximately linearly with temperature.
 
 **Example:** A copper wire of length $10 \mathrm{ m{}$ and diameter $0.5 \mathrm{ mm{}$ has resistivity
 $1.7 \times 10^{-8} \Omega \mathrm{m{}$. Find its resistance.
@@ -118,29 +118,29 @@ $$R = 4 \Omega$$
 ### Why Parallel Resistance Is Less Than Any Individual Resistance
 
 Adding a parallel branch provides an additional path for current. More paths means less total
-opposition, so the total resistance decreases. Adding a second identical resistor in parallel halves
-the total resistance.
+Opposition, so the total resistance decreases. Adding a second identical resistor in parallel halves
+The total resistance.
 
 ### Kirchhoff's Laws
 
 **First Law (Current Law):** The sum of currents entering a junction equals the sum of currents
-leaving it. This is a statement of conservation of charge.
+Leaving it. This is a statement of conservation of charge.
 
 **Second Law (Voltage Law):** The sum of EMFs around any closed loop equals the sum of PDs around
-that loop. This is a statement of conservation of energy.
+That loop. This is a statement of conservation of energy.
 
 ### Applying Kirchhoff's Laws Systematically
 
 1. Label the currents in each branch (choose a direction; if the actual direction is opposite, the
-   calculated value will be negative).
+ calculated value will be negative).
 2. Apply the first law at each junction.
 3. Apply the second law to each independent loop (choose a direction for each loop).
 4. Solve the resulting system of equations.
 
 **Example:** In a circuit with a $12 \mathrm{ V{}$ battery, a $4 \Omega$ resistor in series with a
-parallel combination of $6 \Omega$ and $3 \Omega$ resistors, find the current through each resistor.
+Parallel combination of $6 \Omega$ and $3 \Omega$ resistors, find the current through each resistor.
 
-Parallel combination: $\dfrac{1}{R_p} = \dfrac{1}{6} + \dfrac{1}{3} = \dfrac{1}{2}$, so
+Parallel combination: $\dfrac{1}{R_p} = \dfrac{1}{6} + \dfrac{1}{3} = \dfrac{1}{2}$So
 $R_p = 2 \Omega$.
 
 Total resistance: $R_{\mathrm{total{}} = 4 + 2 = 6 \Omega$.
@@ -161,14 +161,14 @@ A real battery has internal resistance $r$. The terminal PD is:
 
 $$V = \varepsilon - Ir$$
 
-where $\varepsilon$ is the EMF and $I$ is the current.
+Where $\varepsilon$ is the EMF and $I$ is the current.
 
 ### Why Terminal PD Decreases with Current
 
 The battery's internal resistance dissipates energy as heat. The energy available to the external
-circuit is the total EMF minus the energy lost internally. As the current increases, the internal
-loss ($Ir$) increases, and the terminal PD decreases. If the battery is short-circuited ($R = 0$),
-all the EMF is dropped across the internal resistance, and the terminal PD is zero.
+Circuit is the total EMF minus the energy lost internally. As the current increases, the internal
+Loss ($Ir$) increases, and the terminal PD decreases. If the battery is short-circuited ($R = 0$),
+All the EMF is dropped across the internal resistance, and the terminal PD is zero.
 
 **Example:** A battery of EMF $9 \mathrm{ V{}$ and internal resistance $0.5 \Omega$ is connected to a
 $4 \Omega$ external resistor. Find the current and terminal PD.
@@ -180,7 +180,7 @@ $$V = \varepsilon - Ir = 9 - 2(0.5) = 8 \mathrm{ V{}$$
 ### Maximum Power Transfer Theorem
 
 The maximum power is delivered to the external load when the load resistance equals the internal
-resistance: $R = r$.
+Resistance: $R = r$.
 
 Proof: $P = VI = \frac{\varepsilon^2 R}{(R+r)^2}$. Setting $\frac{dP}{dR} = 0$ gives $R = r$.
 
@@ -212,9 +212,9 @@ $$V_{\mathrm{out{}} = 12 \times \frac{2}{10 + 2} = 12 \times \frac{1}{6} = 2 \ma
 ### Sensing Circuits with Potential Dividers
 
 Replacing one resistor with a thermistor or LDR creates a circuit whose output voltage varies with
-temperature or light level. A thermistor (NTC) decreases in resistance as temperature increases, so
-the voltage across it decreases as temperature rises. An LDR decreases in resistance as light
-intensity increases.
+Temperature or light level. A thermistor (NTC) decreases in resistance as temperature increases, so
+The voltage across it decreases as temperature rises. An LDR decreases in resistance as light
+Intensity increases.
 
 ---
 
@@ -224,7 +224,7 @@ intensity increases.
 
 $$C = \frac{Q}{V}$$
 
-where $C$ is capacitance (farads, F), $Q$ is charge (coulombs), and $V$ is potential difference.
+Where $C$ is capacitance (farads, F), $Q$ is charge (coulombs), and $V$ is potential difference.
 
 **Energy stored in a capacitor:**
 
@@ -244,7 +244,7 @@ $$E = \frac{1}{2}CV^2 = \frac{1}{2} \times 100 \times 10^{-6} \times 40000 = 2 \
 
 **Discharging:** $Q = Q_0 e^{-t/RC}$
 
-where $\tau = RC$ is the **time constant**.
+Where $\tau = RC$ is the **time constant**.
 
 At $t = \tau$: $Q = Q_0(1 - e^{-1}) \approx 0.632 Q_0$ (about 63.2% of full charge).
 
@@ -252,17 +252,17 @@ At $t = 5\tau$: $Q \approx 0.993 Q_0$ (effectively fully charged or discharged).
 
 ### Voltage and Current During Charging/Discharging
 
-Since $V = Q/C$, the voltage follows the same exponential as the charge:
+Since $V = Q/C$The voltage follows the same exponential as the charge:
 
 - Charging: $V = V_0(1 - e^{-t/RC})$
 - Discharging: $V = V_0 e^{-t/RC}$
 
-The current during charging is: $I = I_0 e^{-t/RC}$ (starts at $I_0 = V_0/R$, decays to zero).
+The current during charging is: $I = I_0 e^{-t/RC}$ (starts at $I_0 = V_0/R$Decays to zero).
 
 The current during discharging is: $I = -I_0 e^{-t/RC}$ (flows in the opposite direction).
 
 **Example:** A $470 \mu\mathrm{F{}$ capacitor is charged through a $100 \mathrm{ k{}\Omega$ resistor from
-a $9 \mathrm{ V{}$ supply. Find the time constant and the time to reach 95% of full charge.
+A $9 \mathrm{ V{}$ supply. Find the time constant and the time to reach 95% of full charge.
 
 $$\tau = RC = 100000 \times 470 \times 10^{-6} = 47 \mathrm{ s{}$$
 
@@ -275,7 +275,7 @@ $$t = -47 \ln(0.05) = -47 \times (-2.996) \approx 140.8 \mathrm{ s{}$$
 ### Capacitors in Series and Parallel
 
 **Series:** $\dfrac{1}{C_{\mathrm{total{}}} = \dfrac{1}{C_1} + \dfrac{1}{C_2}$ (analogous to resistors
-in parallel)
+In parallel)
 
 **Parallel:** $C_{\mathrm{total{}} = C_1 + C_2$ (analogous to resistors in series)
 
@@ -284,69 +284,69 @@ in parallel)
 ## Common Pitfalls
 
 1. **Confusing EMF and terminal PD:** EMF is the total energy per unit charge supplied; terminal PD
-   is what is available to the external circuit.
+ is what is available to the external circuit.
 
 2. **Incorrect parallel resistance formula:** It is
-   $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, not $R = R_1 + R_2$.
+ $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$Not $R = R_1 + R_2$.
 
-3. **Units:** Ensure consistent units (volts, amperes, ohms). Convert millivolts, kilo-ohms, etc. as
-   needed.
+3. **Units:** Ensure consistent units (volts, amperes, ohms). Convert millivolts, kilo-ohms, etc. As
+ needed.
 
 4. **Internal resistance sign:** The formula $V = \varepsilon - Ir$ applies when the battery is
-   supplying current.
+ supplying current.
 
 5. **Time constant:** $\tau = RC$ has units of seconds when $R$ is in ohms and $C$ is in farads.
 
 6. **Forgetting that the current through a capacitor during charging starts at a maximum and decays
-   to zero**, not the other way around.
+ to zero**, not the other way around.
 
 7. **Using $P = IV$ with the terminal PD** when the problem asks for the total power output of the
-   battery. The total power is $P = \varepsilon I$, where $\varepsilon$ is the EMF.
+ battery. The total power is $P = \varepsilon I$Where $\varepsilon$ is the EMF.
 
 ---
 
 ## Practice Questions
 
 1. A wire of length $5 \mathrm{ m{}$ and cross-sectional area $2 \times 10^{-6} \mathrm{ m{}^2$ has
-   resistance $0.85 \Omega$. Calculate the resistivity of the material.
+ resistance $0.85 \Omega$. Calculate the resistivity of the material.
 
 2. Find the current through each resistor in a circuit with a $24 \mathrm{ V{}$ battery connected to
-   $3 \Omega$, $6 \Omega$, and $12 \Omega$ resistors all in parallel.
+ $3 \Omega$$6 \Omega$And $12 \Omega$ resistors all in parallel.
 
 3. A battery of EMF $15 \mathrm{ V{}$ and internal resistance $1.2 \Omega$ is connected to an external
-   circuit. The terminal PD is $13.8 \mathrm{ V{}$. Find the current and external resistance.
+ circuit. The terminal PD is $13.8 \mathrm{ V{}$. Find the current and external resistance.
 
 4. Design a potential divider using a $12 \mathrm{ V{}$ supply to produce an output of $3.6 \mathrm{ V{}$
-   using a $10 \mathrm{ k{}\Omega$ resistor as $R_1$.
+ using a $10 \mathrm{ k{}\Omega$ resistor as $R_1$.
 
 5. A $220 \mu\mathrm{F{}$ capacitor is charged to $50 \mathrm{ V{}$ and then discharged through a
-   $33 \mathrm{ k{}\Omega$ resistor. Find the time constant and the charge remaining after
-   $15 \mathrm{ s{}$.
+ $33 \mathrm{ k{}\Omega$ resistor. Find the time constant and the charge remaining after
+ $15 \mathrm{ s{}$.
 
-6. Three resistors of $4 \Omega$, $6 \Omega$, and $12 \Omega$ are connected to a $12 \mathrm{ V{}$
-   battery. Find the total resistance and current if (a) all are in series, (b) all are in parallel.
+6. Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected to a $12 \mathrm{ V{}$
+ battery. Find the total resistance and current if (a) all are in series, (b) all are in parallel.
 
-7. A lamp rated $60 \mathrm{ W{}$, $240 \mathrm{ V{}$ is connected to a $200 \mathrm{ V{}$ supply. Calculate
-   the actual power dissipated, assuming the resistance of the lamp is constant.
+7. A lamp rated $60 \mathrm{ W{}$$240 \mathrm{ V{}$ is connected to a $200 \mathrm{ V{}$ supply. Calculate
+ the actual power dissipated, assuming the resistance of the lamp is constant.
 
 8. A $470 \mu\mathrm{F{}$ capacitor stores $0.5 \mathrm{ J{}$ of energy. Find the voltage across it and
-   the charge stored.
+ the charge stored.
 
 9. Two capacitors of $10 \mu\mathrm{F{}$ and $22 \mu\mathrm{F{}$ are connected in series across a
-   $12 \mathrm{ V{}$ supply. Find the charge on each capacitor and the PD across each.
+ $12 \mathrm{ V{}$ supply. Find the charge on each capacitor and the PD across each.
 
 10. A battery of EMF $12 \mathrm{ V{}$ and internal resistance $0.8 \Omega$ is connected to an external
-    circuit. The maximum power is delivered to the external load. Find the load resistance, the
-    current, and the power delivered to the load.
+ circuit. The maximum power is delivered to the external load. Find the load resistance, the
+ current, and the power delivered to the load.
 
 ## 11. Worked Example: Complex Circuit with Kirchhoff's Laws
 
 A circuit contains two cells: Cell A has EMF $12 \mathrm{ V{}$ and internal resistance $1 \Omega$; Cell
 B has EMF $6 \mathrm{ V{}$ and internal resistance $2 \Omega$. The positive terminals are connected
-through a $4 \Omega$ resistor.
+Through a $4 \Omega$ resistor.
 
 **Step 1:** Define current direction. Assume current $I$ flows clockwise (from Cell A through the
-resistor to Cell B).
+Resistor to Cell B).
 
 **Step 2:** Apply Kirchhoff's second law around the loop (clockwise):
 
@@ -363,26 +363,26 @@ The positive result confirms the assumed direction is correct: current flows fro
 Cell A: $V_A = 12 - 0.857 \times 1 = 11.14 \mathrm{ V{}$
 
 Cell B: $V_B = 6 + 0.857 \times 2 = 7.71 \mathrm{ V{}$ (current flows into the positive terminal, so
-the terminal PD is EMF plus $Ir$)
+The terminal PD is EMF plus $Ir$)
 
 **Step 4:** Power dissipated in the resistor: $P = I^2 R = 0.857^2 \times 4 = 2.94 \mathrm{ W{}$.
 
 ## 12. Worked Example: Resistivity and Wire Dimensions
 
 A nichrome wire has resistivity $1.10 \times 10^{-6} \Omega\mathrm{m{}$. A length of this wire must
-have a resistance of $15 \Omega$ and carry a maximum current of $2 \mathrm{ A{}$ without overheating.
-If the wire must not exceed a power dissipation of $20 \mathrm{ W{}$, find the minimum cross-sectional
-area and the corresponding length.
+Have a resistance of $15 \Omega$ and carry a maximum current of $2 \mathrm{ A{}$ without overheating.
+If the wire must not exceed a power dissipation of $20 \mathrm{ W{}$Find the minimum cross-sectional
+Area and the corresponding length.
 
 From $P = I^2R$: $R_{\max} = \frac{P}{I^2} = \frac{20}{4} = 5 \Omega$.
 
-But we need $R = 15 \Omega$, and $P = I^2R = 4 \times 15 = 60 \mathrm{ W{}$, which exceeds the limit.
+But we need $R = 15 \Omega$And $P = I^2R = 4 \times 15 = 60 \mathrm{ W{}$Which exceeds the limit.
 We need to reduce the resistance or the current. If we use two identical wires in parallel, each has
-$R = 30 \Omega$, and the current through each is $1 \mathrm{ A{}$, giving
+$R = 30 \Omega$And the current through each is $1 \mathrm{ A{}$Giving
 $P = 1^2 \times 30 = 30 \mathrm{ W{}$ per wire. Still too high.
 
 This illustrates the constraints that real-world design must satisfy: the resistance must be
-achieved with wire dimensions that keep the power dissipation within thermal limits.
+Achieved with wire dimensions that keep the power dissipation within thermal limits.
 
 ## 13. Capacitors: Extended Analysis (Advanced Higher)
 
@@ -420,9 +420,9 @@ $$t = -10.34 \times \ln(0.167) = -10.34 \times (-1.79) = 18.5 \mathrm{ s{}$$
 
 ### Energy Stored in a Charged Capacitor: Why the Factor of One-Half
 
-The energy stored in a capacitor is $E = \frac{1}{2}CV^2$, not $CV^2$. The factor of one-half arises
-because the voltage increases linearly as charge builds up: at the start, $V = 0$, and at the end,
-$V = V_0$. The average voltage during charging is $V_0/2$, and
+The energy stored in a capacitor is $E = \frac{1}{2}CV^2$Not $CV^2$. The factor of one-half arises
+Because the voltage increases linearly as charge builds up: at the start, $V = 0$And at the end,
+$V = V_0$. The average voltage during charging is $V_0/2$And
 $E = Q \times V_{\mathrm{avg{}} = QV_0/2$.
 
 Using calculus:
@@ -458,8 +458,8 @@ Check: $8.25 + 3.75 = 12 \mathrm{ V{}$. Correct.
 
 Design a circuit that turns on a fan when the temperature exceeds $30^{\circ}\mathrm{C{}$. Use a
 $9 \mathrm{ V{}$ supply, a $10 \mathrm{ k{}\Omega$ fixed resistor, and an NTC thermistor with the
-following characteristics: $R = 20 \mathrm{ k{}\Omega$ at $20^{\circ}\mathrm{C{}$,
-$R = 10 \mathrm{ k{}\Omega$ at $30^{\circ}\mathrm{C{}$, $R = 5 \mathrm{ k{}\Omega$ at $40^{\circ}\mathrm{C{}$.
+Following characteristics: $R = 20 \mathrm{ k{}\Omega$ at $20^{\circ}\mathrm{C{}$
+$R = 10 \mathrm{ k{}\Omega$ at $30^{\circ}\mathrm{C{}$$R = 5 \mathrm{ k{}\Omega$ at $40^{\circ}\mathrm{C{}$.
 
 Place the thermistor as $R_2$ (top of the divider). The output voltage across the thermistor is:
 
@@ -476,67 +476,67 @@ $4.5 \mathrm{ V{}$ would switch on the fan when the temperature exceeds $30^{\ci
 
 ## 15. Summary Table: Key Electricity Formulas
 
-| Topic               | Formula                                        | Variables                     | Notes                         |
+| Topic | Formula | Variables | Notes |
 | ------------------- | ---------------------------------------------- | ----------------------------- | ----------------------------- |
-| Current             | $I = Q/t$                                      | $Q$, $t$                      | $I = nAve$ for drift velocity |
-| Ohm's law           | $V = IR$                                       | $V$, $I$, $R$                 | Only for ohmic conductors     |
-| Resistivity         | $R = \rho L / A$                               | $\rho$, $L$, $A$              | $\rho$ depends on temperature |
-| Power               | $P = IV = I^2R = V^2/R$                        | $V$, $I$, $R$                 | Three equivalent forms        |
-| Internal resistance | $V = \varepsilon - Ir$                         | $\varepsilon$, $I$, $r$       | Terminal PD                   |
-| Capacitance         | $C = Q/V$                                      | $Q$, $V$                      | Unit: farad                   |
-| Capacitor energy    | $E = \frac{1}{2}CV^2$                          | $C$, $V$                      | Three equivalent forms        |
-| RC time constant    | $\tau = RC$                                    | $R$, $C$                      | 63.2% charge in one $\tau$    |
-| Potential divider   | $V_{\mathrm{out{}} = V_{\mathrm{in{}} R_2/(R_1+R_2)$ | $V_{\mathrm{in{}}$, $R_1$, $R_2$ | For sensing circuits          |
+| Current | $I = Q/t$ | $Q$$t$ | $I = nAve$ for drift velocity |
+| Ohm's law | $V = IR$ | $V$$I$$R$ | Only for ohmic conductors |
+| Resistivity | $R = \rho L / A$ | $\rho$$L$$A$ | $\rho$ depends on temperature |
+| Power | $P = IV = I^2R = V^2/R$ | $V$$I$$R$ | Three equivalent forms |
+| Internal resistance | $V = \varepsilon - Ir$ | $\varepsilon$$I$$r$ | Terminal PD |
+| Capacitance | $C = Q/V$ | $Q$$V$ | Unit: farad |
+| Capacitor energy | $E = \frac{1}{2}CV^2$ | $C$$V$ | Three equivalent forms |
+| RC time constant | $\tau = RC$ | $R$$C$ | 63.2% charge in one $\tau$ |
+| Potential divider | $V_{\mathrm{out{}} = V_{\mathrm{in{}} R_2/(R_1+R_2)$ | $V_{\mathrm{in{}}$$R_1$$R_2$ | For sensing circuits |
 
 ## 16. Practice Questions (Additional)
 
 11. A copper wire of length $20 \mathrm{ m{}$ and diameter $1.0 \mathrm{ mm{}$ has a resistance of
-    $0.35 \Omega$. Calculate the resistivity of copper.
+ $0.35 \Omega$. Calculate the resistivity of copper.
 
 12. In a circuit, a $24 \mathrm{ V{}$ battery with internal resistance $0.6 \Omega$ is connected to two
-    parallel resistors of $8 \Omega$ and $12 \Omega$ in series with a $4 \Omega$ resistor. Find the
-    current through each resistor and the power dissipated in the $4 \Omega$ resistor.
+ parallel resistors of $8 \Omega$ and $12 \Omega$ in series with a $4 \Omega$ resistor. Find the
+ current through each resistor and the power dissipated in the $4 \Omega$ resistor.
 
 13. A $470 \mu\mathrm{F{}$ capacitor is charged to $25 \mathrm{ V{}$ and then discharged through a
-    $22 \mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
-    $15 \mathrm{ s{}$, (c) the current after $15 \mathrm{ s{}$, and (d) the energy remaining in the
-    capacitor after $15 \mathrm{ s{}$.
+ $22 \mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
+ $15 \mathrm{ s{}$(c) the current after $15 \mathrm{ s{}$And (d) the energy remaining in the
+ capacitor after $15 \mathrm{ s{}$.
 
 14. A potential divider consists of a $15 \mathrm{ k{}\Omega$ resistor and an LDR in series with a
-    $9 \mathrm{ V{}$ supply. The LDR has resistance $100 \mathrm{ k{}\Omega$ in darkness and
-    $1 \mathrm{ k{}\Omega$ in bright light. Calculate the output voltage (across the LDR) in both
-    conditions.
+ $9 \mathrm{ V{}$ supply. The LDR has resistance $100 \mathrm{ k{}\Omega$ in darkness and
+ $1 \mathrm{ k{}\Omega$ in bright light. Calculate the output voltage (across the LDR) in both
+ conditions.
 
 15. Two capacitors of $47 \mu\mathrm{F{}$ and $100 \mu\mathrm{F{}$ are connected in series and charged
-    from a $12 \mathrm{ V{}$ supply. Find (a) the total capacitance, (b) the charge on each capacitor,
-    (c) the PD across each capacitor, and (d) the total energy stored.
+ from a $12 \mathrm{ V{}$ supply. Find (a) the total capacitance, (b) the charge on each capacitor,
+ (c) the PD across each capacitor, and (d) the total energy stored.
 
 16. Explain why the total capacitance of capacitors in parallel is greater than any individual
-    capacitance, whereas the total resistance of resistors in parallel is less than any individual
-    resistance.
+ capacitance, whereas the total resistance of resistors in parallel is less than any individual
+ resistance.
 
 17. A battery of unknown EMF is connected to a $6 \Omega$ resistor and the current is
-    $1.5 \mathrm{ A{}$. When a $12 \Omega$ resistor is connected instead, the current is
-    $0.85 \mathrm{ A{}$. Calculate the EMF and internal resistance of the battery.
+ $1.5 \mathrm{ A{}$. When a $12 \Omega$ resistor is connected instead, the current is
+ $0.85 \mathrm{ A{}$. Calculate the EMF and internal resistance of the battery.
 
 18. A $100 \mu\mathrm{F{}$ capacitor charged to $50 \mathrm{ V{}$ is connected across an uncharged
-    $47 \mu\mathrm{F{}$ capacitor. Calculate the final voltage across both capacitors and the energy
-    lost in the process.
+ $47 \mu\mathrm{F{}$ capacitor. Calculate the final voltage across both capacitors and the energy
+ lost in the process.
 
 19. Design a potential divider circuit using a $12 \mathrm{ V{}$ supply that produces an output of
-    $4 \mathrm{ V{}$ when a thermistor has resistance $8 \mathrm{ k{}\Omega$. Specify the value of the
-    fixed resistor.
+ $4 \mathrm{ V{}$ when a thermistor has resistance $8 \mathrm{ k{}\Omega$. Specify the value of the
+ fixed resistor.
 
 20. Explain how a capacitor can be used to smooth the output of a half-wave rectifier. Include a
-    sketch of the output waveform before and after smoothing.
+ sketch of the output waveform before and after smoothing.
 
 ## Extended Worked Examples
 
 ### Example 21: Maximum Power Transfer Theorem
 
 A battery has EMF $12 \mathrm{ V{}$ and internal resistance $2 \Omega$. It is connected to a variable
-external resistor $R$. Find the value of $R$ that maximises the power delivered to $R$, and
-calculate this maximum power.
+External resistor $R$. Find the value of $R$ that maximises the power delivered to $R$And
+Calculate this maximum power.
 
 **Step 1: Express the power in $R$**
 
@@ -562,16 +562,16 @@ $$\eta = \frac{P_R}{P_{\mathrm{total{}}} = \frac{IR}{\mathcal{'\{'}E{'\}'}} = \f
 
 :::info
 The maximum power transfer theorem states that maximum power is delivered to the load when
-the load resistance equals the internal resistance ($R = r$). However, the efficiency is only 50%.
+The load resistance equals the internal resistance ($R = r$). However, the efficiency is only 50%.
 In power distribution, we want high efficiency, so $R \gg r$. In audio systems, we want maximum
-power transfer, so impedance matching is used.
+Power transfer, so impedance matching is used.
 :::
 
 ### Example 22: RC Circuit with AC Supply
 
 A $100 \Omega$ resistor and a $50 \mu\mathrm{F{}$ capacitor are connected in series with an AC supply
-of $V_{\mathrm{rms{}} = 240 \mathrm{ V{}$ at $50 \mathrm{ Hz{}$. Calculate the impedance, current, voltage
-across each component, and the phase angle.
+Of $V_{\mathrm{rms{}} = 240 \mathrm{ V{}$ at $50 \mathrm{ Hz{}$. Calculate the impedance, current, voltage
+Across each component, and the phase angle.
 
 **Step 1: Calculate capacitive reactance**
 
@@ -604,11 +604,11 @@ The current leads the voltage by $32.5^\circ$.
 
 ### Example 23: Wheatstone Bridge Analysis
 
-A Wheatstone bridge has the following resistors: $P = 100 \Omega$, $Q = 200 \Omega$,
-$R = 150 \Omega$, and $S$ is unknown. A galvanometer of negligible resistance is connected between
-the junction of $P$ and $Q$ and the junction of $R$ and $S$. The bridge is balanced when
+A Wheatstone bridge has the following resistors: $P = 100 \Omega$$Q = 200 \Omega$
+$R = 150 \Omega$And $S$ is unknown. A galvanometer of negligible resistance is connected between
+The junction of $P$ and $Q$ and the junction of $R$ and $S$. The bridge is balanced when
 $S = 300 \Omega$. Verify this and calculate the current through each resistor when a $12 \mathrm{ V{}$
-battery is connected across the bridge.
+Battery is connected across the bridge.
 
 **Step 1: Balance condition**
 
@@ -642,20 +642,20 @@ $$I_2 = \frac{12}{450} = 0.0267 \mathrm{ A{} = 26.7 \mathrm{ mA{} \quad \mathrm{
 ### Pitfall 6: Forgetting That Capacitors Block DC in Steady State
 
 After a long time connected to a DC supply, a fully charged capacitor draws zero current. All the
-supply voltage appears across the capacitor and none across any series resistor. This is a common
-source of error in circuit analysis problems.
+Supply voltage appears across the capacitor and none across any series resistor. This is a common
+Source of error in circuit analysis problems.
 
 ### Pitfall 7: Incorrectly Combining AC Voltages
 
 In AC circuits with reactive components, the voltages across individual components are **not** in
-phase and cannot be added algebraically. They must be added as phasors (vectorially):
+Phase and cannot be added algebraically. They must be added as phasors (vectorially):
 
 $$V_{\mathrm{total{}} = \sqrt{V_R^2 + (V_L - V_C)^2}$$
 
 ### Pitfall 8: Confusing EMF with Terminal PD
 
 EMF ($\mathcal{'\{'}E{'\}'}$) is the total energy per unit charge supplied by the cell. Terminal PD ($V$) is
-the energy per unit charge delivered to the external circuit. They are related by:
+The energy per unit charge delivered to the external circuit. They are related by:
 
 $$V = \mathcal{'\{'}E{'\}'} - Ir$$
 
@@ -664,33 +664,33 @@ When $I = 0$ (open circuit), $V = \mathcal{'\{'}E{'\}'}$. As current increases, 
 ## Additional Practice Problems
 
 21. A $470 \mu\mathrm{F{}$ capacitor is charged to $20 \mathrm{ V{}$ and then discharged through a
-    $33 \mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the time for the voltage to
-    fall to $5 \mathrm{ V{}$, and (c) the energy dissipated in the resistor during the complete
-    discharge.
+ $33 \mathrm{ k{}\Omega$ resistor. Calculate (a) the time constant, (b) the time for the voltage to
+ fall to $5 \mathrm{ V{}$And (c) the energy dissipated in the resistor during the complete
+ discharge.
 
-22. Three resistors of $10 \Omega$, $20 \Omega$, and $30 \Omega$ are connected to a $24 \mathrm{ V{}$
-    battery with internal resistance $1 \Omega$. Find the current and power delivered for each
-    possible connection arrangement (all series, all parallel, and series-parallel combinations).
+22. Three resistors of $10 \Omega$$20 \Omega$And $30 \Omega$ are connected to a $24 \mathrm{ V{}$
+ battery with internal resistance $1 \Omega$. Find the current and power delivered for each
+ possible connection arrangement (all series, all parallel, and series-parallel combinations).
 
-23. An AC circuit has $R = 80 \Omega$, $X_L = 100 \Omega$, and $X_C = 40 \Omega$ in series with a
-    $230 \mathrm{ V{}$, $50 \mathrm{ Hz{}$ supply. Calculate the impedance, current, power factor, and
-    true power dissipated.
+23. An AC circuit has $R = 80 \Omega$$X_L = 100 \Omega$And $X_C = 40 \Omega$ in series with a
+ $230 \mathrm{ V{}$$50 \mathrm{ Hz{}$ supply. Calculate the impedance, current, power factor, and
+ true power dissipated.
 
 24. Design a potential divider using a $9 \mathrm{ V{}$ battery and two resistors to produce an output
-    voltage of $3 \mathrm{ V{}$ that can supply up to $20 \mathrm{ mA{}$ without the voltage dropping by
-    more than 5%. Specify the resistor values and justify your choice.
+ voltage of $3 \mathrm{ V{}$ that can supply up to $20 \mathrm{ mA{}$ without the voltage dropping by
+ more than 5%. Specify the resistor values and justify your choice.
 
 25. Explain why domestic appliances are connected in parallel rather than series. Include
-    quantitative reasoning about what happens when one appliance is switched on or off in each
-    configuration.
+ quantitative reasoning about what happens when one appliance is switched on or off in each
+ configuration.
 
 ## Further Worked Examples
 
 ### Example 26: Internal Resistance from Two Load Conditions
 
-A battery is connected first to a $4 \Omega$ resistor, giving a terminal PD of $5.6 \mathrm{ V{}$, and
-then to a $10 \Omega$ resistor, giving a terminal PD of $7.2 \mathrm{ V{}$. Find the EMF and internal
-resistance.
+A battery is connected first to a $4 \Omega$ resistor, giving a terminal PD of $5.6 \mathrm{ V{}$And
+Then to a $10 \Omega$ resistor, giving a terminal PD of $7.2 \mathrm{ V{}$. Find the EMF and internal
+Resistance.
 
 **Step 1: Set up equations**
 
@@ -716,7 +716,7 @@ $$\mathcal{'\{'}E{'\}'} = 5.6 + 1.4 \times 2.35 = 5.6 + 3.29 = 8.89 \mathrm{ V{}
 
 A $220 \mu\mathrm{F{}$ capacitor is charged to $12 \mathrm{ V{}$ and then discharged through a
 $15 \mathrm{ k{}\Omega$ resistor. Calculate (a) the initial energy stored, (b) the time constant, (c)
-the energy remaining after one time constant, and (d) the total energy dissipated in the resistor.
+The energy remaining after one time constant, and (d) the total energy dissipated in the resistor.
 
 **Step 1: Initial energy**
 
@@ -743,8 +743,8 @@ All the initial stored energy is eventually dissipated as heat in the resistor.
 ### Example 28: Diode Circuit Analysis
 
 A silicon diode (forward voltage $0.7 \mathrm{ V{}$) is connected in series with a $470 \Omega$
-resistor and a $9 \mathrm{ V{}$ battery. Calculate the current, the voltage across the resistor, and
-the power dissipated in the resistor.
+Resistor and a $9 \mathrm{ V{}$ battery. Calculate the current, the voltage across the resistor, and
+The power dissipated in the resistor.
 
 **Step 1: Apply Kirchhoff's voltage law**
 
@@ -768,7 +768,7 @@ Both methods give the same result.
 
 :::info
 When analysing diode circuits, always subtract the forward voltage drop from the supply
-voltage before applying Ohm's law to the series resistor. Silicon diodes drop approximately
+Voltage before applying Ohm's law to the series resistor. Silicon diodes drop approximately
 $0.7 \mathrm{ V{}$ and LED forward voltages depend on colour ($1.8\mathrm{--{}2.2 \mathrm{ V{}$ for red,
 $2.8\mathrm{--{}3.3 \mathrm{ V{}$ for blue).
 :::
@@ -781,8 +781,8 @@ The current in a conductor can be expressed as:
 
 $$I = nAve$$
 
-where $n$ is the number density of charge carriers (per $\mathrm{m{}^3$), $A$ is the cross-sectional
-area, $v$ is the drift velocity, and $e$ is the charge of an electron.
+Where $n$ is the number density of charge carriers (per $\mathrm{m{}^3$), $A$ is the cross-sectional
+Area, $v$ is the drift velocity, and $e$ is the charge of an electron.
 
 For copper: $n \approx 8.5 \times 10^{28} \mathrm{ m{}^{-3}$.
 
@@ -792,27 +792,27 @@ $$v = \frac{I}{nAe} = \frac{5}{8.5 \times 10^{28} \times \pi(0.0005)^2 \times 1.
 
 $$v = \frac{5}{8.5 \times 10^{28} \times 7.854 \times 10^{-7} \times 1.602 \times 10^{-19}} = \frac{5}{1.068 \times 10^4} = 4.68 \times 10^{-4} \mathrm{ m/s{}$$
 
-The drift velocity is less than $1 \mathrm{ mm/s{}$, even though the current signal propagates at near
-the speed of light.
+The drift velocity is less than $1 \mathrm{ mm/s{}$Even though the current signal propagates at near
+The speed of light.
 
 ## Additional Practice Problems
 
 26. A battery with EMF $15 \mathrm{ V{}$ and internal resistance $0.8 \Omega$ is connected to an
-    external circuit of two $6 \Omega$ resistors in parallel. Calculate the current from the
-    battery, the terminal PD, the current through each resistor, and the power delivered to each
-    resistor.
+ external circuit of two $6 \Omega$ resistors in parallel. Calculate the current from the
+ battery, the terminal PD, the current through each resistor, and the power delivered to each
+ resistor.
 
 27. A $100 \mu\mathrm{F{}$ capacitor is charged to $30 \mathrm{ V{}$ and then connected across a
-    $200 \mu\mathrm{F{}$ uncharged capacitor. Calculate the final voltage across both, the charge on
-    each, and the energy lost.
+ $200 \mu\mathrm{F{}$ uncharged capacitor. Calculate the final voltage across both, the charge on
+ each, and the energy lost.
 
 28. An AC circuit has a $60 \Omega$ resistor and a $0.1 \mathrm{ H{}$ inductor in series with a
-    $230 \mathrm{ V{}$, $50 \mathrm{ Hz{}$ supply. Calculate the reactance of the inductor, the impedance,
-    the current, the power factor, and the phase angle.
+ $230 \mathrm{ V{}$$50 \mathrm{ Hz{}$ supply. Calculate the reactance of the inductor, the impedance,
+ the current, the power factor, and the phase angle.
 
 29. A potential divider circuit uses a $10 \mathrm{ k{}\Omega$ variable resistor and an LDR. In
-    darkness the LDR has resistance $1 \mathrm{ M{}\Omega$ and in bright light $500 \Omega$. The supply
-    is $9 \mathrm{ V{}$. Calculate the output voltage in each condition.
+ darkness the LDR has resistance $1 \mathrm{ M{}\Omega$ and in bright light $500 \Omega$. The supply
+ is $9 \mathrm{ V{}$. Calculate the output voltage in each condition.
 
 30. Explain the difference between EMF and potential difference. Why can a voltmeter give a reading
-    less than the EMF when connected across a battery supplying current to a circuit?
+ less than the EMF when connected across a battery supplying current to a circuit?

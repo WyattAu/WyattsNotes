@@ -10,52 +10,52 @@ hide_table_of_contents: true
 
 ### UT-1: Price Elasticity of Demand Calculation
 
-**Question:** When the price of cinema tickets rises from $\$80$ to $\$100$, the quantity demanded
-falls from 500 to 350 tickets per week. Calculate the PED using the midpoint method. Is demand
-elastic or inelastic? A second cinema raises its price from $\$60$ to $\$66$ and quantity demanded
-falls from 400 to 380. Compare the elasticities and explain the difference using determinants of
+**Question:** When the price of cinema tickets rises from $\$80$ to $\$100$The quantity demanded
+Falls from 500 to 350 tickets per week. Calculate the PED using the midpoint method. Is demand
+Elastic or inelastic? A second cinema raises its price from $\$60$ to $\$66$ and quantity demanded
+Falls from 400 to 380. Compare the elasticities and explain the difference using determinants of
 PED.
 
 **Solution:**
 
 Midpoint method: $PED = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$
 
-**Cinema 1:** $\Delta Q = 350 - 500 = -150$, $\bar{Q} = (500 + 350)/2 = 425$.
-$\Delta P = 100 - 80 = 20$, $\bar{P} = (80 + 100)/2 = 90$.
+**Cinema 1:** $\Delta Q = 350 - 500 = -150$$\bar{Q} = (500 + 350)/2 = 425$.
+$\Delta P = 100 - 80 = 20$$\bar{P} = (80 + 100)/2 = 90$.
 
 $PED = \frac{-150/425}{20/90} = \frac{-0.3529}{0.2222} = -1.59$
 
 $|PED| = 1.59 \gt 1$: Demand is **elastic**.
 
-**Cinema 2:** $\Delta Q = 380 - 400 = -20$, $\bar{Q} = (400 + 380)/2 = 390$.
-$\Delta P = 66 - 60 = 6$, $\bar{P} = (60 + 66)/2 = 63$.
+**Cinema 2:** $\Delta Q = 380 - 400 = -20$$\bar{Q} = (400 + 380)/2 = 390$.
+$\Delta P = 66 - 60 = 6$$\bar{P} = (60 + 66)/2 = 63$.
 
 $PED = \frac{-20/390}{6/63} = \frac{-0.0513}{0.0952} = -0.54$
 
 $|PED| = 0.54 \lt 1$: Demand is **inelastic**.
 
 Cinema 1 has elastic demand while Cinema 2 has inelastic demand. Possible explanations using PED
-determinants:
+Determinants:
 
 - **Availability of substitutes**: Cinema 2 may face less competition (fewer entertainment
-  alternatives in the area), while Cinema 1 has many substitutes (streaming, other cinemas, other
-  activities).
+ alternatives in the area), while Cinema 1 has many substitutes (streaming, other cinemas, other
+ activities).
 - **Proportion of income**: At $\$60$, cinema tickets represent a smaller proportion of income than
-  at $\$80$, making demand less elastic at lower price points.
+ at $\$80$, making demand less elastic at lower price points.
 - **Necessity vs luxury**: Cinema 2's audience may view it as more of a routine activity (less
-  elastic), while Cinema 1's audience may see it as a luxury (more elastic).
+ elastic), while Cinema 1's audience may see it as a luxury (more elastic).
 
 ### UT-2: Consumer and Producer Surplus with Price Control
 
 **Question:** The market for rental housing has demand $P = 8000 - 20Q$ and supply $P = 2000 + 20Q$
 (where $P$ is monthly rent in HKD and $Q$ is in thousands of units). (a) Calculate equilibrium price
-and quantity. (b) Calculate consumer surplus and producer surplus at equilibrium. (c) The government
-imposes a rent ceiling at $\$4000$. Calculate the new quantity traded, consumer surplus, producer
-surplus, and deadweight loss.
+And quantity. (b) Calculate consumer surplus and producer surplus at equilibrium. (c) The government
+Imposes a rent ceiling at $\$4000$. Calculate the new quantity traded, consumer surplus, producer
+Surplus, and deadweight loss.
 
 **Solution:**
 
-(a) Equilibrium: $8000 - 20Q = 2000 + 20Q$, so $6000 = 40Q$, $Q^* = 150$ (thousand units),
+(a) Equilibrium: $8000 - 20Q = 2000 + 20Q$So $6000 = 40Q$$Q^* = 150$ (thousand units),
 $P^* = 8000 - 20(150) = HK\$5000$.
 
 (b) Consumer surplus
@@ -67,7 +67,7 @@ $= \frac{1}{2} \times Q^* \times (P^* - P_{\min}) = \frac{1}{2} \times 150 \time
 
 Total surplus $= 225,000 + 225,000 = HK\$450,000$.
 
-(c) At $P = 4000$: $Q_d = (8000 - 4000)/20 = 200$, $Q_s = (4000 - 2000)/20 = 100$.
+(c) At $P = 4000$: $Q_d = (8000 - 4000)/20 = 200$$Q_s = (4000 - 2000)/20 = 100$.
 
 The binding ceiling creates a shortage of $200 - 100 = 100$ thousand units. Quantity traded
 $= Q_s = 100$.
@@ -90,9 +90,9 @@ $= \frac{1}{2} \times (150 - 100) \times (6000 - 4000) = \frac{1}{2} \times 50 \
 
 **Question:** A seafood restaurant's supply of fresh fish per day is given by $Q_s = -20 + 5P$ where
 $P$ is in HKD. (a) Calculate the PES when price rises from $\$50$ to $\$70$. (b) At what price does
-the restaurant start supplying fish? Explain the economic meaning. (c) If a new competitor opens
-nearby and the supply shifts to $Q_s = -20 + 7P$, compare the new PES over the same price range and
-explain the change.
+The restaurant start supplying fish? Explain the economic meaning. (c) If a new competitor opens
+Nearby and the supply shifts to $Q_s = -20 + 7P$Compare the new PES over the same price range and
+Explain the change.
 
 **Solution:**
 
@@ -102,18 +102,18 @@ $PES = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}} = \frac{100/280}{20/60} = \
 
 $PES \approx 1.07 \gt 1$: Supply is **unit elastic / slightly elastic**.
 
-(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$, $P = 4$. The restaurant needs a
-minimum price of $\$4$ to cover its variable costs before it begins supplying. Below this price, the
-restaurant would shut down in the short run.
+(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$$P = 4$. The restaurant needs a
+Minimum price of $\$4$ to cover its variable costs before it begins supplying. Below this price, the
+Restaurant would shut down in the short run.
 
 (c) New supply at $P = 50$: $Q_s = -20 + 7(50) = 330$. At $P = 70$: $Q_s = -20 + 7(70) = 470$.
 
 $PES_n = \frac{140/400}{20/60} = \frac{0.35}{0.333} = 1.05$.
 
 The PES is similar, but the restaurant now supplies more at every price. The entry of a competitor
-increases overall market supply, but for this individual restaurant, the more elastic supply
+Increases overall market supply, but for this individual restaurant, the more elastic supply
 (steeper slope coefficient, 7 vs 5) means it can respond more to price changes. The total market
-supply would be more elastic, meaning the market can adjust more quickly to changes in demand.
+Supply would be more elastic, meaning the market can adjust more quickly to changes in demand.
 
 ---
 
@@ -122,14 +122,14 @@ supply would be more elastic, meaning the market can adjust more quickly to chan
 ### IT-1: Taxation and Welfare (with Government Policy)
 
 **Question:** The government imposes a specific tax of $\$10$ per unit on cigarettes. Demand:
-$P = 120 - 0.5Q$, Supply: $P = 20 + 0.5Q$. (a) Calculate the pre-tax and post-tax equilibrium. (b)
+$P = 120 - 0.5Q$Supply: $P = 20 + 0.5Q$. (a) Calculate the pre-tax and post-tax equilibrium. (b)
 Calculate the tax incidence on consumers and producers. (c) Calculate the deadweight loss and tax
-revenue. (d) Explain why the government might choose to tax cigarettes despite the deadweight loss,
-using the concept of negative externalities.
+Revenue. (d) Explain why the government might choose to tax cigarettes despite the deadweight loss,
+Using the concept of negative externalities.
 
 **Solution:**
 
-(a) Pre-tax: $120 - 0.5Q = 20 + 0.5Q$, $100 = Q$, $Q^* = 100$, $P^* = \$70$.
+(a) Pre-tax: $120 - 0.5Q = 20 + 0.5Q$$100 = Q$$Q^* = 100$$P^* = \$70$.
 
 Post-tax: supply shifts up by $\$10$. $120 - 0.5Q = 30 + 0.5Q$, $90 = Q$, $Q_t = 90$.
 $P_b = 120 - 0.5(90) = \$75$. $P_s = 75 - 10 = \$65$.
@@ -138,81 +138,81 @@ $P_b = 120 - 0.5(90) = \$75$. $P_s = 75 - 10 = \$65$.
 Equal incidence because demand and supply have equal slope magnitudes.
 
 (c) $DWL = \frac{1}{2} \times 10 \times (100 - 90) = \frac{1}{2} \times 10 \times 10 = \$50$. Tax
-revenue $= 10 \times 90 = \$900$.
+Revenue $= 10 \times 90 = \$900$.
 
 (d) Cigarette consumption creates negative externalities: second-hand smoke harms non-smokers'
-health, smoking-related illnesses increase public healthcare costs, and productivity losses affect
-the economy. In an unregulated market, consumers overconsume cigarettes because they do not bear the
-full social cost. The tax internalises the externality by raising the price closer to the social
-cost. If the tax equals the marginal external cost, the deadweight loss from overconsumption is
-eliminated, and the remaining deadweight loss from reduced trade is offset by the gain from
-correcting the externality. This is an example of a Pigouvian tax.
+Health, smoking-related illnesses increase public healthcare costs, and productivity losses affect
+The economy. In an unregulated market, consumers overconsume cigarettes because they do not bear the
+Full social cost. The tax internalises the externality by raising the price closer to the social
+Cost. If the tax equals the marginal external cost, the deadweight loss from overconsumption is
+Eliminated, and the remaining deadweight loss from reduced trade is offset by the gain from
+Correcting the externality. This is an example of a Pigouvian tax.
 
 ### IT-2: Market Equilibrium Shifts (with Basic Economic Concepts)
 
 **Question:** The market for public transport in Hong Kong has the following demand and supply
-schedules:
+Schedules:
 
 | Price (HKD) | $Q_d$ (thousand rides/day) | $Q_s$ (thousand rides/day) |
 | ----------- | -------------------------- | -------------------------- |
-| 10          | 600                        | 200                        |
-| 20          | 500                        | 300                        |
-| 30          | 400                        | 400                        |
-| 40          | 300                        | 500                        |
-| 50          | 200                        | 600                        |
+| 10 | 600 | 200 |
+| 20 | 500 | 300 |
+| 30 | 400 | 400 |
+| 40 | 300 | 500 |
+| 50 | 200 | 600 |
 
 (a) Determine equilibrium price and quantity. (b) If the MTR extends a new line, causing supply to
-increase by 100 thousand rides at every price, calculate the new equilibrium. (c) Calculate PED
-between the original and new equilibrium for consumers. (d) Explain how this relates to the concept
-of opportunity cost for commuters who switch from taxis to MTR.
+Increase by 100 thousand rides at every price, calculate the new equilibrium. (c) Calculate PED
+Between the original and new equilibrium for consumers. (d) Explain how this relates to the concept
+Of opportunity cost for commuters who switch from taxis to MTR.
 
 **Solution:**
 
-(a) Equilibrium at $P = 30$, $Q = 400$ (where $Q_d = Q_s$).
+(a) Equilibrium at $P = 30$$Q = 400$ (where $Q_d = Q_s$).
 
 (b) New supply schedule adds 100 to each $Q_s$:
 
 | Price | $Q_d$ | $Q_s$ (new) |
 | ----- | ----- | ----------- |
-| 10    | 600   | 300         |
-| 20    | 500   | 400         |
-| 30    | 400   | 500         |
-| 40    | 300   | 600         |
-| 50    | 200   | 700         |
+| 10 | 600 | 300 |
+| 20 | 500 | 400 |
+| 30 | 400 | 500 |
+| 40 | 300 | 600 |
+| 50 | 200 | 700 |
 
-New equilibrium: Between $P = 20$ ($Q_d = 500$, $Q_s = 400$) and $P = 30$ ($Q_d = 400$,
+New equilibrium: Between $P = 20$ ($Q_d = 500$$Q_s = 400$) and $P = 30$ ($Q_d = 400$
 $Q_s = 500$). At equilibrium: $Q_d = Q_s$. Interpolating: $Q = 450$ at $P = 25$.
 
-(c) Original: $P = 30$, $Q = 400$. New: $P = 25$, $Q = 450$.
+(c) Original: $P = 30$$Q = 400$. New: $P = 25$$Q = 450$.
 
 $PED = \frac{(450-400)/425}{(25-30)/27.5} = \frac{50/425}{-5/27.5} = \frac{0.1176}{-0.1818} = -0.647$.
 
 $|PED| = 0.647 \lt 1$: Demand is **inelastic**. A 16.7% price decrease leads to only a 12.5%
-increase in quantity demanded.
+Increase in quantity demanded.
 
 (d) When the MTR expands, the opportunity cost of using public transport decreases (the same trip
-now takes less time or is more convenient). Commuters who previously used taxis face a trade-off:
-the taxi saves time but costs more. The lower MTR price and improved convenience shift the
-opportunity cost balance in favour of MTR. This demonstrates opportunity cost in action -- choosing
+Now takes less time or is more convenient). Commuters who previously used taxis face a trade-off:
+The taxi saves time but costs more. The lower MTR price and improved convenience shift the
+Opportunity cost balance in favour of MTR. This demonstrates opportunity cost in action -- choosing
 MTR means forgoing the speed of a taxi, but the benefit of saving money now outweighs the cost of
-slightly longer travel time for many commuters.
+Slightly longer travel time for many commuters.
 
 ### IT-3: Subsidy and Surplus Analysis (with Market Structure)
 
 **Question:** The government provides a per-unit subsidy of $\$8$ to rice farmers. Demand:
-$P = 60 - 0.4Q$, Supply: $P = 10 + 0.4Q$. (a) Calculate the pre-subsidy and post-subsidy
-equilibrium. (b) Calculate the change in consumer surplus and producer surplus. (c) Calculate the
-government expenditure and deadweight loss. (d) If the rice market is perfectly competitive, explain
-how the subsidy affects individual farmer behaviour and market output in the long run.
+$P = 60 - 0.4Q$Supply: $P = 10 + 0.4Q$. (a) Calculate the pre-subsidy and post-subsidy
+Equilibrium. (b) Calculate the change in consumer surplus and producer surplus. (c) Calculate the
+Government expenditure and deadweight loss. (d) If the rice market is perfectly competitive, explain
+How the subsidy affects individual farmer behaviour and market output in the long run.
 
 **Solution:**
 
-(a) Pre-subsidy: $60 - 0.4Q = 10 + 0.4Q$, $50 = 0.8Q$, $Q^* = 62.5$, $P^* = 60 - 0.4(62.5) = \$35$.
+(a) Pre-subsidy: $60 - 0.4Q = 10 + 0.4Q$$50 = 0.8Q$$Q^* = 62.5$$P^* = 60 - 0.4(62.5) = \$35$.
 
 Post-subsidy: supply shifts down by $\$8$. New supply from buyer's perspective:
 $P = 10 + 0.4Q - 8 = 2 + 0.4Q$.
 
-$60 - 0.4Q = 2 + 0.4Q$, $58 = 0.8Q$, $Q_s = 72.5$. $P_b = 60 - 0.4(72.5) = \$31$.
+$60 - 0.4Q = 2 + 0.4Q$$58 = 0.8Q$$Q_s = 72.5$. $P_b = 60 - 0.4(72.5) = \$31$.
 $P_s = 31 + 8 = \$39$.
 
 (b) Pre-subsidy CS $= \frac{1}{2}(60 - 35)(62.5) = \frac{1}{2}(25)(62.5) = \$781.25$. New CS
@@ -225,12 +225,12 @@ $= \frac{1}{2}(39 - 10)(72.5) = \frac{1}{2}(29)(72.5) = \$1051.25$. Change in PS
 $DWL = \frac{1}{2} \times 8 \times (72.5 - 62.5) = \frac{1}{2} \times 8 \times 10 = \$40$.
 
 (d) In a perfectly competitive market, individual farmers are price takers. The subsidy effectively
-increases the price they receive per unit from $\$35$ to $\$39$. In the short run, each farmer
-increases output along their MC curve until MC $= \$39$ (rather than MC $= \$35$). In the long run,
-the higher price attracts new farmers to enter the market (since economic profit is now positive),
-shifting supply further to the right. This continues until economic profit returns to zero. The
-subsidy ultimately benefits consumers (lower prices) and farmers (higher effective prices), but at a
-cost to taxpayers and with a deadweight loss from overproduction.
+Increases the price they receive per unit from $\$35$ to $\$39$. In the short run, each farmer
+Increases output along their MC curve until MC $= \$39$ (rather than MC $= \$35$). In the long run,
+The higher price attracts new farmers to enter the market (since economic profit is now positive),
+Shifting supply further to the right. This continues until economic profit returns to zero. The
+Subsidy ultimately benefits consumers (lower prices) and farmers (higher effective prices), but at a
+Cost to taxpayers and with a deadweight loss from overproduction.
 
 ## Additional DSE Exam-Style Questions
 
@@ -288,7 +288,7 @@ $\frac{\partial Q_{taxi}}{\partial P_{uber}} = 0.5$.
 
 $XED = 0.5 \times \frac{60}{170} = 0.176$.
 
-(b) Since $XED > 0$, taxis and Uber are **substitutes**. An increase in Uber's price leads to an increase in taxi demand (consumers switch from Uber to taxis). The positive but small value (0.176) suggests weak substitutability -- the two services are not perfect substitutes, possibly because they differ in service quality, availability, and consumer preferences.
+(b) Since $XED > 0$Taxis and Uber are **substitutes**. An increase in Uber's price leads to an increase in taxi demand (consumers switch from Uber to taxis). The positive but small value (0.176) suggests weak substitutability -- the two services are not perfect substitutes, possibly because they differ in service quality, availability, and consumer preferences.
 
 (c) Uber price falls by 20%: new $P_{uber} = 60 \times 0.80 = 48$.
 
@@ -308,11 +308,11 @@ Taxi supply: $Q_s = 100 + P_s$ (where $P_s$ is the price sellers receive).
 
 With tax of 10: $P_b = P_s + 10$. So $Q_d = 330 - 2(P_s + 10) = 310 - 2P_s$.
 
-Equilibrium: $310 - 2P_s = 100 + P_s$, $210 = 3P_s$, $P_s = 70$, $P_b = 80$. $Q = 170$.
+Equilibrium: $310 - 2P_s = 100 + P_s$$210 = 3P_s$$P_s = 70$$P_b = 80$. $Q = 170$.
 
 The taxi price paid by consumers was already HK$80. With the tax, consumers still pay HK$80 but drivers receive HK$70 (down from HK$80). The full tax burden falls on taxi drivers because demand was perfectly matched at the current price.
 
-Actually, let me redo this properly. Pre-tax taxi equilibrium: $330 - 2P = 100 + P$, $230 = 3P$, $P^* = 76.67$, $Q^* = 176.67$.
+Actually, let me redo this properly. Pre-tax taxi equilibrium: $330 - 2P = 100 + P$$230 = 3P$$P^* = 76.67$$Q^* = 176.67$.
 
 Post-tax: $P_b = P_s + 10$. $330 - 2P_b = 100 + P_s$. $330 - 2(P_s + 10) = 100 + P_s$. $310 - 2P_s = 100 + P_s$. $210 = 3P_s$. $P_s = 70$. $P_b = 80$. $Q = 170$.
 
@@ -320,9 +320,9 @@ Consumer burden $= 80 - 76.67 = 3.33$. Driver burden $= 76.67 - 70 = 6.67$. Tota
 
 Taxi demand falls from 176.67 to 170 (3.8% decrease).
 
-**Uber market:** Demand: $Q_d = 50 + P_{uber}$ is actually supply. We need Uber demand. Let's assume Uber demand is $Q_d = 400 - 3P_{uber}$ (implied from the cross-elasticity relationship). Pre-tax: $400 - 3P = 50 + P$, $350 = 4P$, $P^* = 87.5$, $Q^* = 137.5$.
+**Uber market:** Demand: $Q_d = 50 + P_{uber}$ is actually supply. We need Uber demand. Let's assume Uber demand is $Q_d = 400 - 3P_{uber}$ (implied from the cross-elasticity relationship). Pre-tax: $400 - 3P = 50 + P$$350 = 4P$$P^* = 87.5$$Q^* = 137.5$.
 
-Post-tax: $400 - 3P_b = 50 + P_s$, $P_b = P_s + 10$. $400 - 3(P_s + 10) = 50 + P_s$. $370 - 3P_s = 50 + P_s$. $320 = 4P_s$. $P_s = 80$. $P_b = 90$. $Q = 130$.
+Post-tax: $400 - 3P_b = 50 + P_s$$P_b = P_s + 10$. $400 - 3(P_s + 10) = 50 + P_s$. $370 - 3P_s = 50 + P_s$. $320 = 4P_s$. $P_s = 80$. $P_b = 90$. $Q = 130$.
 
 Consumer burden $= 90 - 87.5 = 2.5$. Driver burden $= 87.5 - 80 = 7.5$.
 
@@ -334,19 +334,19 @@ Consumer burden $= 90 - 87.5 = 2.5$. Driver burden $= 87.5 - 80 = 7.5$.
 
 (a) Midpoint method: $YED = \frac{\Delta Q / \bar{Q}}{\Delta Y / \bar{Y}}$.
 
-**Food:** $\Delta Q = 1000$, $\bar{Q} = 4500$. $\Delta Y = 10\,000$, $\bar{Y} = 25\,000$.
+**Food:** $\Delta Q = 1000$$\bar{Q} = 4500$. $\Delta Y = 10\,000$$\bar{Y} = 25\,000$.
 $YED_{food} = \frac{1000/4500}{10\,000/25\,000} = \frac{0.2222}{0.40} = 0.556$.
 
-**Restaurant meals:** $\Delta Q = 1000$, $\bar{Q} = 1500$. $\Delta Y = 10\,000$, $\bar{Y} = 25\,000$.
+**Restaurant meals:** $\Delta Q = 1000$$\bar{Q} = 1500$. $\Delta Y = 10\,000$$\bar{Y} = 25\,000$.
 $YED_{restaurant} = \frac{1000/1500}{10\,000/25\,000} = \frac{0.6667}{0.40} = 1.667$.
 
-**Public transport:** $\Delta Q = 300$, $\bar{Q} = 1650$. $\Delta Y = 10\,000$, $\bar{Y} = 25\,000$.
+**Public transport:** $\Delta Q = 300$$\bar{Q} = 1650$. $\Delta Y = 10\,000$$\bar{Y} = 25\,000$.
 $YED_{transport} = \frac{300/1650}{10\,000/25\,000} = \frac{0.1818}{0.40} = 0.455$.
 
 (b) Classification:
-- **Food:** $YED = 0.556$, $0 < YED < 1$: **Normal necessity** (demand rises with income but less than proportionally). This is consistent with Engel's Law.
-- **Restaurant meals:** $YED = 1.667$, $YED > 1$: **Normal luxury** (demand rises more than proportionally with income).
-- **Public transport:** $YED = 0.455$, $0 < YED < 1$: **Normal necessity** (weak necessity, demand rises slowly with income).
+- **Food:** $YED = 0.556$$0 < YED < 1$: **Normal necessity** (demand rises with income but less than proportionally). This is consistent with Engel's Law.
+- **Restaurant meals:** $YED = 1.667$$YED > 1$: **Normal luxury** (demand rises more than proportionally with income).
+- **Public transport:** $YED = 0.455$$0 < YED < 1$: **Normal necessity** (weak necessity, demand rises slowly with income).
 
 None of the goods are inferior ($YED < 0$).
 
@@ -364,13 +364,13 @@ None of the goods are inferior ($YED < 0$).
 
 **Solution:**
 
-(a) Free market: $500 - 5W = -200 + 10W$, $700 = 15W$, $W^* = 46.67$, $L^* = 500 - 5(46.67) = 266.67$ thousand workers.
+(a) Free market: $500 - 5W = -200 + 10W$$700 = 15W$$W^* = 46.67$$L^* = 500 - 5(46.67) = 266.67$ thousand workers.
 
 Wait, the minimum wage of 37.50 is *below* the market equilibrium wage of 46.67. This means the minimum wage is **not binding** -- the market already pays above the minimum. Let me adjust the demand and supply to make the minimum wage binding.
 
 Let demand be $L_d = 500 - 10W$ and supply $L_s = -100 + 10W$.
 
-Free market: $500 - 10W = -100 + 10W$, $600 = 20W$, $W^* = 30$, $L^* = 500 - 300 = 200$ thousand.
+Free market: $500 - 10W = -100 + 10W$$600 = 20W$$W^* = 30$$L^* = 500 - 300 = 200$ thousand.
 
 Now the minimum wage of HK$37.50 is binding (above equilibrium).
 
@@ -416,9 +416,9 @@ Hmm, this gives a large price drop, which seems too large. Let me use a more pre
 
 Let demand: $Q_d = a - bP$ where $b = |PED| \times Q/P = 0.8 \times 60/15 = 3.2$. Supply: $Q_s = c + dP$ where $d = PES \times Q/P = 0.4 \times 60/15 = 1.6$.
 
-$Q_d = a - 3.2P$. At equilibrium: $60 = a - 3.2(15)$, $a = 60 + 48 = 108$. So $Q_d = 108 - 3.2P$.
+$Q_d = a - 3.2P$. At equilibrium: $60 = a - 3.2(15)$$a = 60 + 48 = 108$. So $Q_d = 108 - 3.2P$.
 
-$Q_s = c + 1.6P$. At equilibrium: $60 = c + 1.6(15)$, $c = 60 - 24 = 36$. So $Q_s = 36 + 1.6P$.
+$Q_s = c + 1.6P$. At equilibrium: $60 = c + 1.6(15)$$c = 60 - 24 = 36$. So $Q_s = 36 + 1.6P$.
 
 Supply shifts right by 15%: new supply at every price is $Q_s' = 1.15 \times (36 + 1.6P) = 41.4 + 1.84P$.
 
@@ -452,7 +452,7 @@ Supply must increase by at least 23.3% to keep prices stable given a 20% demand 
 
 ## Common Pitfalls
 
-1. **Using the initial price and quantity instead of the midpoint for PED:** The midpoint (arc elasticity) method uses the average of the initial and final values: $PED = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$. Using only the initial values gives a different (and technically incorrect for large changes) elasticity. The DSE typically expects the midpoint method unless stated otherwise.
+1. **Using the initial price and quantity instead of the midpoint for PED:** The midpoint (arc elasticity) method uses the average of the initial and final values: $PED = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$. Using only the initial values gives a different (and technically incorrect for large changes) elasticity. The DSE expects the midpoint method unless stated otherwise.
 
 2. **Confusing the slope of the demand curve with elasticity:** A steep demand curve has low elasticity (inelastic) while a flat demand curve has high elasticity (elastic). However, slope and elasticity are not the same thing. A linear demand curve has constant slope but varying elasticity (elastic at high prices, inelastic at low prices). At the midpoint of a linear demand curve, $|PED| = 1$.
 

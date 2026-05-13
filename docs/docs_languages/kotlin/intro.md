@@ -11,30 +11,30 @@ categories:
 ## Overview
 
 Kotlin is a statically typed language targeting the JVM, Android, JavaScript, and native platforms
-via LLVM. Developed by JetBrains, it was designed to address Java's verbosity, null safety issues,
-and lack of modern language features while maintaining full interoperability.
+Via LLVM. Developed by JetBrains, it was designed to address Java's verbosity, null safety issues,
+And lack of modern language features while maintaining full interoperability.
 
 Key design goals:
 
 - **Null safety at the type level** -- nullable and non-nullable types are distinct;
-  `NullPointerException` is largely eliminated at compile time.
+ `NullPointerException` is largely eliminated at compile time.
 - **Concise syntax** -- type inference, data classes, default parameters, extension functions reduce
-  boilerplate significantly versus Java.
+ boilerplate significantly versus Java.
 - **Full Java interoperability** -- Kotlin compiles to JVM bytecode and can call any Java library
-  without wrappers or adapters.
+ without wrappers or adapters.
 - **Coroutines for async** -- first-class language support for suspending functions replaces
-  callback hell and reactive boilerplate.
+ callback hell and reactive boilerplate.
 
 ## JVM vs Kotlin/Native vs Kotlin/JS
 
-| Target        | Runtime              | Output            | Use Case                       |
+| Target | Runtime | Output | Use Case |
 | ------------- | -------------------- | ----------------- | ------------------------------ |
-| JVM           | Java Virtual Machine | `.class` bytecode | Server, Android, existing Java |
-| Kotlin/Native | LLVM                 | Native binaries   | iOS, macOS, Linux, embedded    |
-| Kotlin/JS     | JavaScript engines   | `.js` / IR        | Frontend, Node.js              |
+| JVM | Java Virtual Machine | `.class` bytecode | Server, Android, existing Java |
+| Kotlin/Native | LLVM | Native binaries | iOS, macOS, Linux, embedded |
+| Kotlin/JS | JavaScript engines | `.js` / IR | Frontend, Node.js |
 
 All three targets share the same language syntax and standard library. Platform-specific APIs are
-accessed through `expect`/`actual` declarations.
+Accessed through `expect`/`actual` declarations.
 
 ```kotlin
 // Common code (shared across all targets)
@@ -56,11 +56,11 @@ actual fun platformName(): String = "Kotlin/Native"
 ### When to Use Each Target
 
 - **JVM**: Default choice. Leverages the mature JVM ecosystem, garbage collector, and existing Java
-  libraries. Android uses the JVM target (with ART/Dalvik as the runtime).
+ libraries. Android uses the JVM target (with ART/Dalvik as the runtime).
 - **Kotlin/Native**: Required for iOS targets. No garbage collector -- uses reference counting with
-  an automated cycle collector. Interop with C/Objective-C/Swift via cinterop.
+ an automated cycle collector. Interop with C/Objective-C/Swift via cinterop.
 - **Kotlin/JS**: Use Kotlin Multiplatform with Compose Multiplatform or when sharing logic between
-  backend and browser. IR compiler produces optimizable JavaScript.
+ backend and browser. IR compiler produces optimizable JavaScript.
 
 ## Installation
 
@@ -116,8 +116,8 @@ kotlin hello.kt
 ## Kotlin Koans
 
 The [Kotlin Koans](https://play.kotlinlang.org/koans/overview) are a series of interactive exercises
-covering syntax features from basic to advanced. Each koan is a failing test that you fix by
-implementing the correct Kotlin code.
+Covering syntax features from basic to advanced. Each koan is a failing test that you fix by
+Implementing the correct Kotlin code.
 
 ## Build Tools
 
@@ -154,7 +154,7 @@ tasks.test {
 ## Language Version and Compatibility
 
 Kotlin uses a **stable backward compatibility** policy. Code compiled with Kotlin 1.x will run on
-future 1.x releases without recompilation. Major version bumps (rare) may break compatibility.
+Future 1.x releases without recompilation. Major version bumps (rare) may break compatibility.
 
 ```kotlin
 // build.gradle.kts
@@ -172,8 +172,8 @@ kotlin {
 ## Common Pitfalls
 
 - \*\* Mixing JVM and Native targets in the same module without Kotlin Multiplatform. Use KMP
-  explicitly or keep targets in separate modules.
+ explicitly or keep targets in separate modules.
 - \*_ Assuming Kotlin/JS has the same runtime characteristics as JVM. No `java._` packages,
-  different concurrency model, different performance profile.
+ different concurrency model, different performance profile.
 - \*\* Using `kotlinc` directly for production builds. Always use Gradle or Maven for dependency
-  management, incremental compilation, and reproducible builds.
+ management, incremental compilation, and reproducible builds.

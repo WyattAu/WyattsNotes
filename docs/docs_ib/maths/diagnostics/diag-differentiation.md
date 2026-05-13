@@ -107,7 +107,7 @@ Still $\frac{0}{0}$:
 
 $$\lim_{x \to 0}\frac{e^x}{6} = \frac{1}{6}$$
 
-**(b)** Direct substitution of $x \to \infty$ gives $\frac{\infty}{\infty}$, so L'Hopital technically applies.
+**(b)** Direct substitution of $x \to \infty$ gives $\frac{\infty}{\infty}$So L'Hopital technically applies.
 
 $$\lim_{x \to \infty}\frac{1 + \cos x}{1} = \lim_{x \to \infty}(1 + \cos x)$$
 
@@ -115,7 +115,7 @@ This limit does not exist because $\cos x$ oscillates between $-1$ and $1$. The 
 
 $$\frac{x + \sin x}{x} = 1 + \frac{\sin x}{x}$$
 
-Since $\lvert \sin x \rvert \le 1$ and $x \to \infty$, we have $\frac{\sin x}{x} \to 0$ by the squeeze theorem.
+Since $\lvert \sin x \rvert \le 1$ and $x \to \infty$We have $\frac{\sin x}{x} \to 0$ by the squeeze theorem.
 
 So $\displaystyle\lim_{x \to \infty}\frac{x + \sin x}{x} = 1$.
 
@@ -137,7 +137,7 @@ Let $f(x) = x^2 e^{3x} \sin x$.
 
 **Solution:**
 
-**(a)** Treat $f(x) = u \cdot v \cdot w$ where $u = x^2$, $v = e^{3x}$, $w = \sin x$.
+**(a)** Treat $f(x) = u \cdot v \cdot w$ where $u = x^2$$v = e^{3x}$$w = \sin x$.
 
 Using the product rule for three functions:
 
@@ -187,9 +187,9 @@ $$\frac{dy}{dx} = y(\ln x + 1) = x^x(1 + \ln x)$$
 
 **(b)** Stationary points: $f'(x) = 0 \implies x^x(1 + \ln x) = 0$.
 
-Since $x^x \gt 0$ for all $x \gt 0$, we need $1 + \ln x = 0 \implies \ln x = -1 \implies x = e^{-1} = \frac{1}{e}$.
+Since $x^x \gt 0$ for all $x \gt 0$We need $1 + \ln x = 0 \implies \ln x = -1 \implies x = e^{-1} = \frac{1}{e}$.
 
-To determine the nature: for $0 \lt x \lt \frac{1}{e}$, $\ln x \lt -1$ so $1 + \ln x \lt 0$ (decreasing). For $x \gt \frac{1}{e}$, $1 + \ln x \gt 0$ (increasing).
+To determine the nature: for $0 \lt x \lt \frac{1}{e}$$\ln x \lt -1$ so $1 + \ln x \lt 0$ (decreasing). For $x \gt \frac{1}{e}$$1 + \ln x \gt 0$ (increasing).
 
 So $x = \frac{1}{e}$ is a **local minimum**.
 
@@ -207,4 +207,4 @@ At $x = \frac{1}{e}$:
 
 $$f''\!\left(\frac{1}{e}\right) = \left(\frac{1}{e}\right)^{1/e}\!\left[0 + e\right] = e \cdot e^{-1/e} = e^{1 - 1/e} \gt 0$$
 
-Since $f''\!\left(\frac{1}{e}\right) \gt 0$, the stationary point is confirmed as a local minimum by the second derivative test.
+Since $f''\!\left(\frac{1}{e}\right) \gt 0$The stationary point is confirmed as a local minimum by the second derivative test.

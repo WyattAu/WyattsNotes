@@ -37,11 +37,11 @@ The tax cut produces a smaller effect ($\$200$B vs $\$250$B) because households 
 3. **Asset price channel**: Higher interest rates reduce the present value of future cash flows, lowering asset prices (stocks, bonds, property). The resulting decline in household wealth reduces consumption through the wealth effect.
 
 (b) Change in money supply $= Money multiplier \times Change in monetary base$.
-$\Delta M = m \times \Delta B$. $100 = 5 \times \Delta B$, so $\Delta B = \$20$ billion.
+$\Delta M = m \times \Delta B$. $100 = 5 \times \Delta B$So $\Delta B = \$20$ billion.
 
 The central bank should sell $\$20$ billion of government bonds, reducing bank reserves by $\$20$ billion, which contracts the money supply by $\$100$ billion through the money multiplier.
 
-(c) In a deep recession (liquidity trap), interest rates may already be near zero and cannot be lowered further (zero lower bound). Even if the central bank increases the money supply, banks may be unwilling to lend (due to risk aversion) and consumers/firms may be unwilling to borrow (due to pessimistic expectations). The extra money may simply be held as idle balances rather than spent, making monetary policy ineffective. Keynes argued that in this situation, fiscal policy is more reliable because it directly injects spending into the economy regardless of interest rate conditions.
+(c) In a deep recession (liquidity trap), interest rates may already be near zero and cannot be lowered further (zero lower bound). Even if the central bank increases the money supply, banks may be unwilling to lend (due to risk aversion) and consumers/firms may be unwilling to borrow (due to pessimistic expectations). The extra money may be held as idle balances rather than spent, making monetary policy ineffective. Keynes argued that in this situation, fiscal policy is more reliable because it directly injects spending into the economy regardless of interest rate conditions.
 
 ### UT-3: Fiscal Policy Tools and Budget Balance
 **Question:** An economy has the following data: GDP $= \$5000$B, Tax revenue $= \$1000$B, Government spending $= \$1200$B, Interest payments on debt $= \$150$B. The marginal propensity to import is 0.2 and MPC $= 0.75$. (a) Calculate the budget balance and the primary balance. (b) Calculate the full fiscal multiplier accounting for imports. (c) The government wants to achieve a balanced budget by cutting spending. Calculate the required spending cut and its effect on GDP. (d) Explain the paradox of thrift/austerity in this context.
@@ -62,7 +62,7 @@ Primary balance $= T - G + Interest payments = 1000 - 1200 + 150 = -\$50$B (prim
 ## Integration Tests
 
 ### IT-1: Policy Mix and AD-AS Analysis (with National Income)
-**Question:** An economy has GDP $= \$800$B, potential GDP $= \$900$B, inflation $= 6\%$, unemployment $= 9\%$. The government decides to use a combination of fiscal and monetary policy. (a) Calculate the output gap and identify the type of gap. (b) The government increases spending by $\$15$B (multiplier $= 2.5$) and the central bank simultaneously lowers interest rates to stimulate $\$20$B of additional investment. Calculate the total impact on GDP. (c) What risk does this combined expansionary approach create for inflation? (d) Explain how the policy mix could be designed to close the output gap while controlling inflation.
+**Question:** An economy has GDP $= \$800$B, potential GDP $= \$900$B, inflation $= 6\%$Unemployment $= 9\%$. The government decides to use a combination of fiscal and monetary policy. (a) Calculate the output gap and identify the type of gap. (b) The government increases spending by $\$15$B (multiplier $= 2.5$) and the central bank simultaneously lowers interest rates to stimulate $\$20$B of additional investment. Calculate the total impact on GDP. (c) What risk does this combined expansionary approach create for inflation? (d) Explain how the policy mix could be designed to close the output gap while controlling inflation.
 
 **Solution:**
 
@@ -81,7 +81,7 @@ Primary balance $= T - G + Interest payments = 1000 - 1200 + 150 = -\$50$B (prim
 
 (a) Debt-to-GDP ratio $= 3000/5000 = 60\%$.
 
-(b) Debt dynamics: the change in debt-to-GDP ratio depends on: $\Delta d \approx primary deficit/Y + (r - g) \times d$, where $r = 4\%$, $g = 2\%$, $d = 0.6$.
+(b) Debt dynamics: the change in debt-to-GDP ratio depends on: $\Delta d \approx primary deficit/Y + (r - g) \times d$Where $r = 4\%$$g = 2\%$$d = 0.6$.
 
 $\Delta d = 50/5000 + (0.04 - 0.02) \times 0.6 = 0.01 + 0.012 = 0.022$.
 
@@ -104,13 +104,13 @@ The debt ratio is **rising** by approximately 2.2 percentage points per year. Th
 
 (iii) **Labour market deregulation**: Reduces hiring and firing costs, increases labour market flexibility. This reduces structural unemployment (easier for firms to hire during recovery, workers more willing to accept jobs) and shifts LRAS right by making the labour market more efficient.
 
-(c) The critic's argument has some merit but oversimplifies. Corporate tax cuts do primarily benefit business owners and shareholders in the short run. However, the economic argument is that lower corporate taxes: (1) increase investment (firms have more funds and higher after-tax returns), which increases the capital stock and wages; (2) make the country more attractive for foreign direct investment; (3) reduce the incentive for profit shifting and tax avoidance. The key question is whether the supply-side response is large enough to offset the revenue loss. If the tax cut is well-designed and the economy has room for investment, it can increase total tax revenue through a larger tax base (Laffer curve effect). However, if corporate taxes are already low or if firms simply pocket the savings without investing, the benefits may not trickle down.
+(c) The critic's argument has some merit but oversimplifies. Corporate tax cuts do primarily benefit business owners and shareholders in the short run. However, the economic argument is that lower corporate taxes: (1) increase investment (firms have more funds and higher after-tax returns), which increases the capital stock and wages; (2) make the country more attractive for foreign direct investment; (3) reduce the incentive for profit shifting and tax avoidance. The key question is whether the supply-side response is large enough to offset the revenue loss. If the tax cut is well-designed and the economy has room for investment, it can increase total tax revenue through a larger tax base (Laffer curve effect). However, if corporate taxes are already low or if firms pocket the savings without investing, the benefits may not trickle down.
 
 ## Additional DSE Exam-Style Questions
 
 ### EQ-1: Budget Deficit and National Debt Dynamics
 
-**Question:** An economy has GDP $= HK\$3\,000$ billion, government revenue $= HK\$600$ billion, government expenditure $= HK\$750$ billion, and outstanding national debt $= HK\$1\,800$ billion. The average interest rate on government debt is $3\%$ and the GDP growth rate is $4\%$. (a) Calculate the budget deficit as a percentage of GDP. (b) Calculate the debt-to-GDP ratio. (c) Using the debt dynamics equation $\Delta d = (r - g) \cdot d_0 + p$, where $p$ is the primary deficit-to-GDP ratio, determine whether the debt ratio is rising or falling. (d) If the government wants to stabilise the debt ratio at its current level, what primary balance (as a percentage of GDP) must it achieve?
+**Question:** An economy has GDP $= HK\$3\,000$ billion, government revenue $= HK\$600$ billion, government expenditure $= HK\$750$ billion, and outstanding national debt $= HK\$1\,800$ billion. The average interest rate on government debt is $3\%$ and the GDP growth rate is $4\%$. (a) Calculate the budget deficit as a percentage of GDP. (b) Calculate the debt-to-GDP ratio. (c) Using the debt dynamics equation $\Delta d = (r - g) \cdot d_0 + p$Where $p$ is the primary deficit-to-GDP ratio, determine whether the debt ratio is rising or falling. (d) If the government wants to stabilise the debt ratio at its current level, what primary balance (as a percentage of GDP) must it achieve?
 
 **Solution:**
 
@@ -118,19 +118,19 @@ The debt ratio is **rising** by approximately 2.2 percentage points per year. Th
 
 (b) Debt-to-GDP ratio $= \frac{1800}{3000} = 60\%$.
 
-(c) Primary deficit $= $ Budget deficit $-$ Interest payments $= 150 - (0.03 \times 1800) = 150 - 54 = HK\$96$ billion. Primary deficit ratio $p = \frac{96}{3000} = 3.2\%$.
+(c) Primary deficit $= $ Budget deficit $-$ Interest payments $= 150 - (0.03 \times 1800) = 150 - 54 = HK\$96$ billion. Primary deficit ratio $P = \frac{96}{3000} = 3.2\%$.
 
 $\Delta d = (r - g) \cdot d_0 + p = (0.03 - 0.04) \times 0.60 + 0.032 = -0.006 + 0.032 = 0.026$.
 
 The debt ratio is **rising** by approximately 2.6 percentage points per year. Despite the favourable interest-growth differential ($g \gt r$), the large primary deficit drives the debt ratio upward.
 
-(d) For a stable debt ratio, $\Delta d = 0$: $(r - g) \cdot d_0 + p = 0$, so $p = -(r - g) \cdot d_0 = -(0.03 - 0.04) \times 0.60 = 0.006 = 0.6\%$.
+(d) For a stable debt ratio, $\Delta d = 0$: $(r - g) \cdot d_0 + p = 0$So $p = -(r - g) \cdot d_0 = -(0.03 - 0.04) \times 0.60 = 0.006 = 0.6\%$.
 
-The government needs a **primary deficit** of at most $0.6\%$ of GDP, or equivalently a primary surplus of $-0.6\%$. Current primary deficit is $3.2\%$, so it must reduce spending or increase revenue by $(3.2\% - 0.6\%) \times 3000 = HK\$78$ billion.
+The government needs a **primary deficit** of at most $0.6\%$ of GDP, or equivalently a primary surplus of $-0.6\%$. Current primary deficit is $3.2\%$So it must reduce spending or increase revenue by $(3.2\% - 0.6\%) \times 3000 = HK\$78$ billion.
 
 ### EQ-2: Discretionary Fiscal Policy with the AD-AS Model
 
-**Question:** An economy is in long-run equilibrium at price level $P = 100$ and real output $Y = HK\$2\,000$ billion. Potential output is $Y^* = HK\$2\,000$ billion. The government increases spending by $HK\$80$ billion. The MPC $= 0.75$, the tax rate $t = 0.2$, and the MPM $= 0.15$. (a) Calculate the full fiscal multiplier. (b) Calculate the change in equilibrium output. (c) If the SRAS is upward-sloping with a price sensitivity such that the price level rises by 5% when output rises by 10%, estimate the new equilibrium price level and output, accounting for the crowding out effect through rising prices. (d) Evaluate the effectiveness of this fiscal expansion.
+**Question:** An economy is in long-run equilibrium at price level $P = 100$ and real output $Y = HK\$2\,000$ billion. Potential output is $Y^* = HK\$2\,000$ billion. The government increases spending by $HK\$80$ billion. The MPC $= 0.75$, the tax rate $T = 0.2$, and the MPM $= 0.15$. (a) Calculate the full fiscal multiplier. (b) Calculate the change in equilibrium output. (c) If the SRAS is upward-sloping with a price sensitivity such that the price level rises by 5% when output rises by 10%, estimate the new equilibrium price level and output, accounting for the crowding out effect through rising prices. (d) Evaluate the effectiveness of this fiscal expansion.
 
 **Solution:**
 
@@ -186,7 +186,7 @@ After 3 years, fiscal reserves $= HK\$500$ billion (a 37.5% decline).
 
 ### EQ-5: Taxation and Labour Supply -- Income and Substitution Effects
 
-**Question:** A worker earns HK\$30,000 per month and works 160 hours. The government introduces a flat tax of 10% on income above HK\$15,000 (the personal allowance). The worker's after-tax hourly wage falls from HK\$187.5 to HK\$175. (a) Calculate the worker's monthly tax payment and after-tax income. (b) Using the income and substitution effects framework, explain how the tax might affect the worker's labour supply. (c) If the worker's elasticity of labour supply is $-0.2$, calculate the percentage change in hours worked. (d) Explain the Laffer curve concept and identify the tax rate at which revenue is maximised, assuming a revenue-maximising tax rate of 40%.
+**Question:** A worker earns HK\$30,000 per month and works 160 hours. The government introduces a flat tax of 10% on income above HK\$15,000 (the personal allowance). The worker's after-tax hourly wage falls from HK\$187.5 to HK\$175. (a) Calculate the worker's monthly tax payment and after-tax income. (b) Using the income and substitution effects framework, explain how the tax might affect the worker's labour supply. (c) If the worker's elasticity of labour supply is $-0.2$Calculate the percentage change in hours worked. (d) Explain the Laffer curve concept and identify the tax rate at which revenue is maximised, assuming a revenue-maximising tax rate of 40%.
 
 **Solution:**
 
@@ -206,7 +206,7 @@ $\%\Delta H = -0.2 \times (-6.67\%) = 1.33\%$. Hours increase by $1.33\%$ to $16
 
 ### EQ-6: Monetary Policy in a Small Open Economy
 
-**Question:** Country S is a small open economy with a floating exchange rate. The central bank raises the policy interest rate by 1 percentage point. (a) Explain the effect on the exchange rate, using the interest rate parity condition. (b) If exports are HK\$400 billion and imports are HK\$500 billion, and the Marshall-Lerner condition holds with PED of exports $= 0.8$ and PED of imports $= 1.2$, calculate the effect of a 5% currency appreciation on the trade balance. (c) Explain why the impact on GDP differs between a small open economy and a large closed economy. (d) The central bank simultaneously sells domestic bonds worth HK\$50 billion. Calculate the combined effect on the money supply given a money multiplier of 5.
+**Question:** Country S is a small open economy with a floating exchange rate. The central bank raises the policy interest rate by 1 percentage point. (a) Explain the effect on the exchange rate, using the interest rate parity condition. (b) If exports are HK\$400 billion and imports are HK\$500 billion, and the Marshall-Lerner condition holds with PED of exports $= 0.8$ and PED of imports $= 1.2$Calculate the effect of a 5% currency appreciation on the trade balance. (c) Explain why the impact on GDP differs between a small open economy and a large closed economy. (d) The central bank simultaneously sells domestic bonds worth HK\$50 billion. Calculate the combined effect on the money supply given a money multiplier of 5.
 
 **Solution:**
 
@@ -236,7 +236,7 @@ New trade balance $= 384 - 530 = -HK\$146$ billion. The deficit **widens** by HK
 
 4. **Forgetting the impossible trinity:** Under a fixed exchange rate with free capital mobility, monetary policy is not independent. Students often prescribe interest rate changes for Hong Kong without recognising the Currency Board constraint.
 
-5. **Assuming the full multiplier materialises:** Time lags (recognition lag, decision lag, implementation lag, impact lag), crowding out, and behavioural responses mean the actual multiplier is typically 30--50% of the theoretical maximum in empirical studies.
+5. **Assuming the full multiplier materialises:** Time lags (recognition lag, decision lag, implementation lag, impact lag), crowding out, and behavioural responses mean the actual multiplier is 30--50% of the theoretical maximum in empirical studies.
 
 ## Additional DSE Exam-Style Questions
 
@@ -260,7 +260,7 @@ Tax revenue increases from $\$150$B to $\$170$B. The Laffer curve predicts that 
 
 (c) The revenue-maximising tax rate is where $\frac{dR}{dt} = 0$. With a taxable income elasticity of $e = 0.4$:
 
-Revenue $R = t \times B(t)$, where $B(t)$ is the tax base.
+Revenue $R = t \times B(t)$Where $B(t)$ is the tax base.
 
 $\frac{dR}{dt} = B + t \times \frac{dB}{dt} = 0$.
 
@@ -270,11 +270,11 @@ $B + t \times \frac{-eB}{1-t} = 0$. $1 - \frac{et}{1-t} = 0$. $1 - t = et$. $1 =
 
 The revenue-maximising tax rate is approximately 71.4%.
 
-(d) The revenue-maximising tax rate is not optimal from a welfare perspective because: (i) at a 71.4% tax rate, the deadweight loss is enormous -- a large amount of economic activity is discouraged purely to raise revenue; (ii) the marginal cost of public funds (the welfare cost of raising an additional dollar of revenue) exceeds 1 at high tax rates, meaning each dollar of revenue costs society more than a dollar in welfare; (iii) high tax rates create incentives for tax avoidance and evasion, distorting economic decisions. The optimal tax rate balances the marginal benefit of government spending against the marginal deadweight loss of taxation. For most economies, this optimal rate is well below the revenue-maximising rate -- typically in the range of 30--50% for income taxes.
+(d) The revenue-maximising tax rate is not optimal from a welfare perspective because: (i) at a 71.4% tax rate, the deadweight loss is enormous -- a large amount of economic activity is discouraged purely to raise revenue; (ii) the marginal cost of public funds (the welfare cost of raising an additional dollar of revenue) exceeds 1 at high tax rates, meaning each dollar of revenue costs society more than a dollar in welfare; (iii) high tax rates create incentives for tax avoidance and evasion, distorting economic decisions. The optimal tax rate balances the marginal benefit of government spending against the marginal deadweight loss of taxation. For most economies, this optimal rate is well below the revenue-maximising rate -- in the range of 30--50% for income taxes.
 
 ### EQ-8: Phillips Curve and the Trade-off Between Inflation and Unemployment
 
-**Question:** An economy has the following Phillips curve: $\pi = \pi^e - 0.5(u - 5) + 0.1x$, where $\pi$ is inflation, $\pi^e$ is expected inflation, $u$ is the unemployment rate, and $x$ is a supply shock (0 in normal times). The natural rate of unemployment is 5%. (a) If expected inflation is 3% and actual unemployment is 5%, calculate the inflation rate. (b) If the government uses expansionary policy to reduce unemployment to 3%, calculate the inflation rate in the short run (assuming expectations are unchanged). (c) In the long run, expectations adjust. Calculate the long-run inflation rate if the government permanently maintains unemployment at 3%. (d) Explain why there is no long-run trade-off between inflation and unemployment.
+**Question:** An economy has the following Phillips curve: $\pi = \pi^e - 0.5(u - 5) + 0.1x$Where $\pi$ is inflation, $\pi^e$ is expected inflation, $u$ is the unemployment rate, and $x$ is a supply shock (0 in normal times). The natural rate of unemployment is 5%. (a) If expected inflation is 3% and actual unemployment is 5%, calculate the inflation rate. (b) If the government uses expansionary policy to reduce unemployment to 3%, calculate the inflation rate in the short run (assuming expectations are unchanged). (c) In the long run, expectations adjust. Calculate the long-run inflation rate if the government permanently maintains unemployment at 3%. (d) Explain why there is no long-run trade-off between inflation and unemployment.
 
 **Solution:**
 

@@ -86,7 +86,7 @@ hide_table_of_contents: true
 **Fatty acids and glycerol:** Used to build cell membranes (phospholipid bilayer), stored as fat for energy reserves, or used in hormone synthesis.
 
 ### IT-2: Circulation and Gas Exchange Combined (with Cell Biology)
-**Question:** Red blood cells contain haemoglobin and no nucleus. (a) Explain how the structure of red blood cells relates to their function in gas transport. (b) A red blood cell has a diameter of 7 $\mu$m and must pass through a capillary of diameter 5 $\mu$m. Explain how this is possible and why it is beneficial for gas exchange. (c) Haemoglobin binds oxygen in the lungs and releases it in the tissues. Explain how the different conditions (high O$_2$ in lungs, high CO$_2$ in tissues) drive this process. (d) Calculate how many red blood cells would fit along 1 cm of a capillary of diameter 5 $\mu$m.
+**Question:** Red blood cells contain haemoglobin and no nucleus. (a) Explain how the structure of red blood cells relates to their function in gas transport. (b) A red blood cell has a diameter of 7 $\mu$M and must pass through a capillary of diameter 5 $\mu$M. Explain how this is possible and why it is beneficial for gas exchange. (c) Haemoglobin binds oxygen in the lungs and releases it in the tissues. Explain how the different conditions (high O$_2$ in lungs, high CO$_2$ in tissues) drive this process. (d) Calculate how many red blood cells would fit along 1 cm of a capillary of diameter 5 $\mu$M.
 
 **Solution:**
 
@@ -98,7 +98,7 @@ hide_table_of_contents: true
 
 In the **tissues:** Low oxygen concentration and high CO$_2$ concentration (from cellular respiration) cause oxyhaemoglobin to release oxygen. The lower pH (due to dissolved CO$_2$ forming carbonic acid) reduces haemoglobin's oxygen affinity, promoting unloading.
 
-(d) Capillary diameter $= 5 \mu$m. Cell diameter $= 7 \mu$m. Since cells deform, they pass through single file. Length of capillary $= 10,000 \mu$m. If each cell occupies approximately 7 $\mu$m when deformed: $10,000/7 \approx 1429$ cells.
+(d) Capillary diameter $= 5 \mu$M. Cell diameter $= 7 \mu$M. Since cells deform, they pass through single file. Length of capillary $= 10,000 \mu$M. If each cell occupies approximately 7 $\mu$M when deformed: $10,000/7 \approx 1429$ cells.
 
 ### IT-3: Nervous System and Homeostasis (with Organisation)
 **Question:** (a) Describe the pathway of a nerve impulse in a reflex arc from touching a hot object to withdrawing the hand. (b) Explain the difference between sensory, relay, and motor neurons. (c) Calculate the speed of a nerve impulse that travels 1.5 m in 0.012 seconds. (d) Explain why reflex actions are faster than voluntary actions.

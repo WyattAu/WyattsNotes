@@ -28,9 +28,9 @@ Claude Bernard (19th century) first proposed the concept of the "milieu interieu
 
 All homeostatic mechanisms share the same general structure:
 
-1. **Receptor (detector)**: detects changes in the internal environment (the **stimulus**). Receptors are typically specialised cells or proteins that convert the stimulus into an electrical signal (transduction).
+1. **Receptor (detector)**: detects changes in the internal environment (the **stimulus**). Receptors are specialised cells or proteins that convert the stimulus into an electrical signal (transduction).
 
-2. **Coordination centre (controller)**: receives information from the receptor, processes it, and sends signals to effectors. In mammals, the coordination centre is typically the **brain** (hypothalamus, medulla oblongata) or **endocrine glands** (pancreas).
+2. **Coordination centre (controller)**: receives information from the receptor, processes it, and sends signals to effectors. In mammals, the coordination centre is the **brain** (hypothalamus, medulla oblongata) or **endocrine glands** (pancreas).
 
 3. **Effector**: carries out the response that restores the internal environment to its optimum value. Effectors may be **muscles** (which contract or relax) or **glands** (which secrete hormones or other substances).
 
@@ -51,7 +51,7 @@ Negative feedback prevents overcorrection and maintains stability. Examples: blo
 
 ### 1.4 Positive Feedback
 
-**Positive feedback** amplifies a deviation from the set point, pushing the parameter further from its optimum. This is less common and typically occurs in situations where a rapid, self-amplifying response is beneficial.
+**Positive feedback** amplifies a deviation from the set point, pushing the parameter further from its optimum. This is less common and occurs in situations where a rapid, self-amplifying response is beneficial.
 
 Examples:
 
@@ -76,10 +76,10 @@ Glucose regulation involves the **pancreas**, which functions as both an exocrin
 
 The endocrine tissue of the pancreas consists of clusters of cells called the **islets of Langerhans**, which contain two types of cell:
 
-| Cell Type          | Hormone Secreted | Effect on Blood Glucose | Stimulus for Secretion        |
+| Cell Type | Hormone Secreted | Effect on Blood Glucose | Stimulus for Secretion |
 | ----------------- | ---------------- | ----------------------- | ------------------------------ |
-| $\alpha$ cells    | Glucagon          | Increases               | Low blood glucose             |
-| $\beta$ cells     | Insulin           | Decreases               | High blood glucose            |
+| $\alpha$ cells | Glucagon | Increases | Low blood glucose |
+| $\beta$ cells | Insulin | Decreases | High blood glucose |
 
 ### 2.3 Mechanism: Blood Glucose Too High (After a Meal)
 
@@ -89,9 +89,9 @@ The endocrine tissue of the pancreas consists of clusters of cells called the **
 4. Insulin binds to receptors on the cell surface of target cells (especially liver cells, muscle cells, and adipose tissue).
 5. Insulin activates the translocation of **GLUT4 glucose transporters** to the cell membrane, increasing the uptake of glucose from the blood into cells.
 6. In the **liver**, insulin stimulates:
-   - Glycogenesis: conversion of glucose to glycogen (storage).
-   - Increased glycolysis: increased respiration of glucose.
-   - Decreased gluconeogenesis: reduced synthesis of glucose from amino acids and glycerol.
+ - Glycogenesis: conversion of glucose to glycogen (storage).
+ - Increased glycolysis: increased respiration of glucose.
+ - Decreased gluconeogenesis: reduced synthesis of glucose from amino acids and glycerol.
 7. Blood glucose concentration decreases towards the set point.
 8. As glucose returns to normal, $\beta$ cells reduce insulin secretion (negative feedback).
 
@@ -102,9 +102,9 @@ The endocrine tissue of the pancreas consists of clusters of cells called the **
 3. $\alpha$ cells secrete **glucagon** into the blood.
 4. Glucagon binds to receptors on the cell surface of **liver cells** (the primary target).
 5. Glucagon stimulates:
-   - **Glycogenolysis**: conversion of glycogen to glucose (release from storage).
-   - **Gluconeogenesis**: synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol).
-   - The release of glucose from liver cells into the blood.
+ - **Glycogenolysis**: conversion of glycogen to glucose (release from storage).
+ - **Gluconeogenesis**: synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol).
+ - The release of glucose from liver cells into the blood.
 6. Blood glucose concentration increases towards the set point.
 7. As glucose returns to normal, $\alpha$ cells reduce glucagon secretion (negative feedback).
 
@@ -116,32 +116,32 @@ Both insulin and glucagon act through **second messenger systems**:
 
 **Insulin signalling**: insulin binds to a receptor tyrosine kinase on the cell membrane. This activates an intracellular phosphorylation cascade (involving IRS proteins, PI3K, and Akt), which ultimately triggers the translocation of GLUT4 vesicles to the cell membrane.
 
-**Glucagon signalling**: glucagon binds to a G-protein coupled receptor on liver cells. This activates adenylate cyclase, which converts ATP to **cyclic AMP (cAMP)**, the second messenger. cAMP activates protein kinase A (PKA), which phosphorylates enzymes involved in glycogenolysis and gluconeogenesis.
+**Glucagon signalling**: glucagon binds to a G-protein coupled receptor on liver cells. This activates adenylate cyclase, which converts ATP to **cyclic AMP (cAMP)**, the second messenger. CAMP activates protein kinase A (PKA), which phosphorylates enzymes involved in glycogenolysis and gluconeogenesis.
 
 ### 2.6 Diabetes Mellitus
 
 **Type 1 diabetes (insulin-dependent):**
 
 - **Cause**: autoimmune destruction of $\beta$ cells in the islets of Langerhans, resulting in little or no insulin production.
-- **Onset**: typically in childhood or adolescence (juvenile-onset).
+- **Onset**: in childhood or adolescence (juvenile-onset).
 - **Mechanism**: without insulin, glucose cannot be taken up by cells. Blood glucose rises to very high levels (hyperglycaemia). The kidneys cannot reabsorb all the glucose, so glucose appears in the urine (glycosuria), causing water to follow by osmosis (polyuria, excessive urine production). Cells are starved of glucose despite high blood levels, causing fatigue and weight loss. The body resorts to breaking down fat and protein for energy, producing ketones (ketosis), which can lower blood pH (ketoacidosis), a medical emergency.
 - **Treatment**: insulin injections (subcutaneous), blood glucose monitoring, careful diet.
 
 **Type 2 diabetes (non-insulin-dependent):**
 
 - **Cause**: target cells become less responsive to insulin (**insulin resistance**); $\beta$ cells may initially produce more insulin to compensate but eventually become exhausted.
-- **Onset**: typically in adulthood, strongly associated with obesity, sedentary lifestyle, and genetic predisposition.
+- **Onset**: in adulthood, strongly associated with obesity, sedentary lifestyle, and genetic predisposition.
 - **Mechanism**: insulin receptors or downstream signalling pathways become less responsive. Blood glucose rises but $\beta$ cells continue to produce insulin (initially). Risk factors include obesity (adipose tissue releases inflammatory cytokines that impair insulin signalling), age, family history, and ethnicity.
-- **Treatment**: lifestyle changes (diet, exercise), oral medication (metformin increases insulin sensitivity), and in some cases insulin therapy.
+- **Treatment**: lifestyle changes (diet, exercise), oral medication (metformin increases insulin sensitivity), and insulin therapy.
 
-| Feature            | Type 1 Diabetes                         | Type 2 Diabetes                              |
+| Feature | Type 1 Diabetes | Type 2 Diabetes |
 | ------------------ | --------------------------------------- | ------------------------------------------- |
-| Age of onset        | Childhood/adolescence                   | Usually adulthood                           |
-| Insulin production  | None or very low                         | Initially normal; may decline over time     |
-| Insulin resistance  | No                                      | Yes                                         |
-| Body weight         | Often normal or underweight              | Usually overweight or obese                 |
-| Treatment          | Insulin injections essential             | Diet, exercise, oral drugs, sometimes insulin |
-| Ketoacidosis risk   | High                                    | Low                                         |
+| Age of onset | Childhood/adolescence | adulthood |
+| Insulin production | None or very low | Initially normal; may decline over time |
+| Insulin resistance | No | Yes |
+| Body weight | Often normal or underweight | overweight or obese |
+| Treatment | Insulin injections essential | Diet, exercise, oral drugs, sometimes insulin |
+| Ketoacidosis risk | High | Low |
 
 For more on the immune system and autoimmunity, see [Immunology](/docs/alevel/biology/immunology).
 
@@ -170,13 +170,13 @@ When the hypothalamus detects a fall in core body temperature:
 
 **Physiological responses** (involuntary, negative feedback):
 
-| Response                     | Mechanism                                                                                  |
+| Response | Mechanism |
 | ---------------------------- | ------------------------------------------------------------------------------------------ |
-| **Vasoconstriction**         | Arterioles supplying the skin surface constrict (smooth muscle contraction, controlled by the sympathetic nervous system). This reduces blood flow near the skin surface, reducing heat loss by radiation and convection. |
+| **Vasoconstriction** | Arterioles supplying the skin surface constrict (smooth muscle contraction, controlled by the sympathetic nervous system). This reduces blood flow near the skin surface, reducing heat loss by radiation and convection. |
 | **Piloerection** (goose bumps) | Hair erector muscles contract, raising hairs and trapping a layer of insulating air next to the skin. |
-| **Shivering**                | Rapid, involuntary contraction and relaxation of skeletal muscles. Muscle contraction generates heat as a by-product of respiration. |
-| **Increased metabolic rate**  | The thyroid gland releases more thyroxine, which increases the basal metabolic rate, generating more heat from cellular respiration. |
-| **Behavioural changes**      | Seeking warmth, curling up, reduced activity to conserve energy                           |
+| **Shivering** | Rapid, involuntary contraction and relaxation of skeletal muscles. Muscle contraction generates heat as a by-product of respiration. |
+| **Increased metabolic rate** | The thyroid gland releases more thyroxine, which increases the basal metabolic rate, generating more heat from cellular respiration. |
+| **Behavioural changes** | Seeking warmth, curling up, reduced activity to conserve energy |
 
 ### 3.3 Response to Heat (Above Set Point)
 
@@ -186,12 +186,12 @@ When the hypothalamus detects a rise in core body temperature:
 
 **Physiological responses** (involuntary, negative feedback):
 
-| Response                     | Mechanism                                                                                  |
+| Response | Mechanism |
 | ---------------------------- | ------------------------------------------------------------------------------------------ |
-| **Vasodilation**             | Arterioles supplying the skin surface dilate (smooth muscle relaxation). This increases blood flow near the skin surface, increasing heat loss by radiation. |
-| **Sweating**                 | Sweat glands (eccrine glands) secrete sweat onto the skin surface. Water in sweat evaporates, absorbing latent heat of vaporisation ($2.26\ \mathrm{kJ\ g^{-1}}$), cooling the skin. |
-| **Decreased metabolic rate** | Reduced thyroxine secretion, lowering the basal metabolic rate.                            |
-| **Behavioural changes**      | Reducing activity, seeking shade                                                       |
+| **Vasodilation** | Arterioles supplying the skin surface dilate (smooth muscle relaxation). This increases blood flow near the skin surface, increasing heat loss by radiation. |
+| **Sweating** | Sweat glands (eccrine glands) secrete sweat onto the skin surface. Water in sweat evaporates, absorbing latent heat of vaporisation ($2.26\ \mathrm{kJ\ g^{-1}}$), cooling the skin. |
+| **Decreased metabolic rate** | Reduced thyroxine secretion, lowering the basal metabolic rate. |
+| **Behavioural changes** | Reducing activity, seeking shade |
 
 **Sweat as a negative feedback mechanism**: as sweat evaporates and cools the skin, skin thermoreceptors detect the reduced temperature and send signals to the hypothalamus, which reduces the stimulation of sweat glands. This is a classic negative feedback loop.
 
@@ -241,14 +241,14 @@ The **kidney** contains approximately one million **nephrons**, the functional u
 
 **Structure of the nephron:**
 
-| Region                            | Function                                                         |
+| Region | Function |
 | --------------------------------- | ---------------------------------------------------------------- |
-| Bowman's capsule + glomerulus     | Ultrafiltration: high-pressure filtration of blood plasma        |
-| Proximal convoluted tubule (PCT)  | Selective reabsorption: all glucose, all amino acids, most $\mathrm{Na^+}$ and water, by active transport and co-transport |
-| Loop of Henle (descending limb)   | Water permeable; water passes out by osmosis into the hypertonic medulla |
-| Loop of Henle (ascending limb)    | Impermeable to water; actively transports $\mathrm{Na^+}$ and $\mathrm{Cl^-}$ out, creating a salt gradient in the medulla |
-| Distal convoluted tubule (DCT)    | Fine-tuning of $\mathrm{Na^+}$ and water reabsorption; regulated by ADH and aldosterone |
-| Collecting duct                   | Final water reabsorption regulated by ADH                         |
+| Bowman's capsule + glomerulus | Ultrafiltration: high-pressure filtration of blood plasma |
+| Proximal convoluted tubule (PCT) | Selective reabsorption: all glucose, all amino acids, most $\mathrm{Na^+}$ and water, by active transport and co-transport |
+| Loop of Henle (descending limb) | Water permeable; water passes out by osmosis into the hypertonic medulla |
+| Loop of Henle (ascending limb) | Impermeable to water; actively transports $\mathrm{Na^+}$ and $\mathrm{Cl^-}$ out, creating a salt gradient in the medulla |
+| Distal convoluted tubule (DCT) | Fine-tuning of $\mathrm{Na^+}$ and water reabsorption; regulated by ADH and aldosterone |
+| Collecting duct | Final water reabsorption regulated by ADH |
 
 **Ultrafiltration** at the glomerulus is driven by **hydrostatic pressure** of the blood in the glomerular capillaries. The filtrate passes through the basement membrane and the pores in the podocytes (cells of the Bowman's capsule). Large molecules (proteins, blood cells) are too large to pass through and remain in the blood.
 
@@ -302,8 +302,8 @@ This reaction is catalysed by **carbonic anhydrase** in red blood cells. When $p
 
 Changes in ventilation rate can compensate for pH disturbances:
 
-- **Respiratory acidosis** (high $p\mathrm{CO_2}$, low pH): increased ventilation rate removes $\mathrm{CO_2}$ from the blood, shifting the equilibrium to the left and raising pH.
-- **Respiratory alkalosis** (low $p\mathrm{CO_2}$, high pH, e.g., due to hyperventilation): decreased ventilation rate allows $\mathrm{CO_2}$ to accumulate, shifting the equilibrium to the right and lowering pH.
+- **Respiratory acidosis** (high $p\mathrm{CO_2}$Low pH): increased ventilation rate removes $\mathrm{CO_2}$ from the blood, shifting the equilibrium to the left and raising pH.
+- **Respiratory alkalosis** (low $p\mathrm{CO_2}$High pH, e.g., due to hyperventilation): decreased ventilation rate allows $\mathrm{CO_2}$ to accumulate, shifting the equilibrium to the right and lowering pH.
 
 ### 6.3 Renal Compensation
 
@@ -328,7 +328,7 @@ Describe how insulin and glucagon work together to regulate blood glucose concen
 <summary>Problem 2</summary>
 Explain how the body responds to a decrease in core body temperature. Describe the role of the hypothalamus, thermoreceptors, and effectors. (5 marks)
 
-**Answer.** A decrease in core body temperature is detected by central thermoreceptors (in the hypothalamus) and peripheral thermoreceptors (in the skin). Impulses are sent to the thermoregulatory centre in the hypothalamus, which coordinates the response. The hypothalamus sends impulses via the sympathetic nervous system to effectors: (1) **vasoconstriction** of arterioles supplying the skin surface, reducing blood flow near the skin and minimising heat loss by radiation; (2) **piloerection**, where hair erector muscles contract, raising body hairs and trapping an insulating layer of air; (3) **shivering**, where skeletal muscles contract and relax rapidly, generating heat from increased metabolic activity; (4) increased secretion of **thyroxine** from the thyroid gland, raising the basal metabolic rate and increasing heat production from cellular respiration. As body temperature returns towards $37\ ^\circ\mathrm{C}$, the thermoreceptors send fewer impulses, reducing the hypothalamic response (negative feedback).
+**Answer.** A decrease in core body temperature is detected by central thermoreceptors (in the hypothalamus) and peripheral thermoreceptors (in the skin). Impulses are sent to the thermoregulatory centre in the hypothalamus, which coordinates the response. The hypothalamus sends impulses via the sympathetic nervous system to effectors: (1) **vasoconstriction** of arterioles supplying the skin surface, reducing blood flow near the skin and minimising heat loss by radiation; (2) **piloerection**, where hair erector muscles contract, raising body hairs and trapping an insulating layer of air; (3) **shivering**, where skeletal muscles contract and relax rapidly, generating heat from increased metabolic activity; (4) increased secretion of **thyroxine** from the thyroid gland, raising the basal metabolic rate and increasing heat production from cellular respiration. As body temperature returns towards $37\ ^\circ\mathrm{C}$The thermoreceptors send fewer impulses, reducing the hypothalamic response (negative feedback).
 
 <b>If you get this wrong, revise:</b> [Response to Cold](#32-response-to-cold-below-set-point)
 
@@ -397,7 +397,7 @@ The loop of Henle creates a **gradient of increasing osmolarity** in the medulla
 
 **Descending limb**: permeable to water (aquaporins), impermeable to ions. As the filtrate descends deeper into the medulla, the increasing osmolarity of the interstitial fluid draws water out by osmosis. The filtrate becomes progressively more concentrated.
 
-**Ascending limb**: impermeable to water, actively transports $\mathrm{Na^+}$, $\mathrm{K^+}$, and $\mathrm{Cl^-}$ out of the filtrate (via the $\mathrm{Na^+/K^+/2Cl^-}$ co-transporter in the thick segment). This dilutes the filtrate and adds ions to the medullary interstitial fluid, maintaining the osmotic gradient.
+**Ascending limb**: impermeable to water, actively transports $\mathrm{Na^+}$$\mathrm{K^+}$And $\mathrm{Cl^-}$ out of the filtrate (via the $\mathrm{Na^+/K^+/2Cl^-}$ co-transporter in the thick segment). This dilutes the filtrate and adds ions to the medullary interstitial fluid, maintaining the osmotic gradient.
 
 This arrangement is called a **countercurrent multiplier** because the two limbs run in opposite directions (countercurrent), and the active transport in the ascending limb multiplies (amplifies) the osmotic gradient established by the descending limb.
 
@@ -410,7 +410,7 @@ ADH (antidiuretic hormone, vasopressin) acts through a **second messenger system
 1. ADH binds to **V2 receptors** on the basolateral membrane of collecting duct cells (a G-protein-coupled receptor).
 2. The receptor activates a G-protein ($\mathrm{G_s}$), which activates **adenylate cyclase**.
 3. Adenylate cyclase converts ATP to **cyclic AMP (cAMP)**, the second messenger.
-4. cAMP activates **protein kinase A (PKA)**.
+4. CAMP activates **protein kinase A (PKA)**.
 5. PKA phosphorylates vesicles containing **aquaporin-2** water channel proteins, triggering their fusion with the apical (luminal) membrane.
 6. Aquaporin channels are inserted into the luminal membrane, increasing water permeability.
 7. Water is reabsorbed from the filtrate into the medullary interstitium and then into the vasa recta.
@@ -458,7 +458,7 @@ Both people excrete approximately the same amount of solute (within normal varia
 | Vasoconstriction | Contraction of smooth muscle in skin arterioles | Less blood near surface, reducing heat loss |
 | Shivering | Rapid involuntary contraction and relaxation of skeletal muscles | Muscle contraction generates heat as a by-product of respiration |
 | Piloerection | Erector pili muscles contract, raising body hairs | Traps a layer of insulating air next to the skin |
-| Increased metabolic rate | Thyroid hormones ($\mathrm{T_3}$, $\mathrm{T_4}$) stimulate basal metabolic rate | More heat generated by cellular respiration |
+| Increased metabolic rate | Thyroid hormones ($\mathrm{T_3}$$\mathrm{T_4}$) stimulate basal metabolic rate | More heat generated by cellular respiration |
 | Non-shivering thermogenesis | Brown adipose tissue (brown fat) is stimulated by noradrenaline to oxidise fatty acids | Uncoupling protein 1 (UCP1) in brown fat mitochondria uncouples electron transport from ATP synthesis, releasing energy as heat |
 | Behavioural responses | Curling up, huddling, seeking warmth, putting on clothes | Reduces surface area exposed, gains heat from environment |
 
@@ -477,7 +477,7 @@ The hypothalamus integrates signals from both peripheral and central thermorecep
 
 ### 8.4 Negative Feedback with a Threshold
 
-Thermoregulation demonstrates an important feature of negative feedback: the **set point** is not a single value but a range. The body does not respond to tiny deviations from 37 degrees C; there is a **threshold** (typically $\pm 0.5$ degrees C) below which no response is triggered. This prevents unnecessary oscillations (the system would constantly overcorrect if it responded to every tiny fluctuation).
+Thermoregulation demonstrates an important feature of negative feedback: the **set point** is not a single value but a range. The body does not respond to tiny deviations from 37 degrees C; there is a **threshold** ( $\pm 0.5$ degrees C) below which no response is triggered. This prevents unnecessary oscillations (the system would constantly overcorrect if it responded to every tiny fluctuation).
 
 ## 9. Hormonal Control of the Menstrual Cycle
 
@@ -579,7 +579,7 @@ Many physiological processes are controlled by both nervous and hormonal mechani
 ### 12.1 Type 1 Diabetes Mellitus (T1DM)
 
 - **Cause**: autoimmune destruction of $\beta$ cells in the islets of Langerhans. T lymphocytes (T killer cells) recognise $\beta$ cell antigens as foreign and destroy them.
-- **Onset**: typically in childhood or adolescence (juvenile-onset).
+- **Onset**: in childhood or adolescence (juvenile-onset).
 - **Genetics**: associated with HLA-DR3 and HLA-DR4 genes (major histocompatibility complex on chromosome 6).
 - **Treatment**: lifelong insulin injections (subcutaneous). Insulin cannot be taken orally because it is a peptide hormone and would be digested by proteases in the stomach and small intestine.
 - **Insulin delivery**: multiple daily injections, insulin pens, or insulin pumps (continuous subcutaneous insulin infusion, CSII).
@@ -589,7 +589,7 @@ Many physiological processes are controlled by both nervous and hormonal mechani
 
 - **Cause**: insulin resistance (target cells become less responsive to insulin) combined with progressive $\beta$ cell failure.
 - **Risk factors**: obesity (especially visceral fat), sedentary lifestyle, diet high in refined carbohydrates, age, family history, ethnicity (higher risk in South Asian, Afro-Caribbean populations).
-- **Mechanism**: excess adipose tissue releases pro-inflammatory cytokines (TNF-$\alpha$, IL-6) and free fatty acids, which interfere with insulin receptor signalling. The $\mathrm{PI3K}$ pathway is disrupted, reducing GLUT4 translocation to the cell membrane.
+- **Mechanism**: excess adipose tissue releases pro-inflammatory cytokines (TNF-$\alpha$IL-6) and free fatty acids, which interfere with insulin receptor signalling. The $\mathrm{PI3K}$ pathway is disrupted, reducing GLUT4 translocation to the cell membrane.
 - **Treatment**: lifestyle changes (diet, exercise), oral medication (metformin reduces hepatic glucose production and increases insulin sensitivity), GLP-1 receptor agonists, SGLT2 inhibitors (increase glucose excretion in urine), and eventually insulin if $\beta$ cell function deteriorates.
 
 ### 12.3 Complications of Diabetes
@@ -624,10 +624,10 @@ When insulin binds to its receptor (a receptor tyrosine kinase, RTK) on the targ
 4. PI3K converts PIP2 to PIP3, which activates **PDK1**.
 5. PDK1 phosphorylates and activates **PKB** (protein kinase B, also called Akt).
 6. PKB phosphorylates multiple targets:
-   - **GLUT4 vesicles**: PKB triggers the translocation of GLUT4 glucose transporters from intracellular vesicles to the cell membrane, increasing glucose uptake (especially in muscle and adipose tissue).
-   - **Glycogen synthase**: PKB inhibits GSK-3 (glycogen synthase kinase-3), which normally inhibits glycogen synthase. The net effect is activation of glycogen synthase, promoting glycogen synthesis.
-   - **Acetyl-CoA carboxylase**: promotes fatty acid synthesis.
-   - **mTOR pathway**: stimulates protein synthesis and cell growth.
+ - **GLUT4 vesicles**: PKB triggers the translocation of GLUT4 glucose transporters from intracellular vesicles to the cell membrane, increasing glucose uptake (especially in muscle and adipose tissue).
+ - **Glycogen synthase**: PKB inhibits GSK-3 (glycogen synthase kinase-3), which normally inhibits glycogen synthase. The net effect is activation of glycogen synthase, promoting glycogen synthesis.
+ - **Acetyl-CoA carboxylase**: promotes fatty acid synthesis.
+ - **mTOR pathway**: stimulates protein synthesis and cell growth.
 
 ### 13.2 Glucagon Signalling
 
@@ -635,11 +635,11 @@ Glucagon binds to a G-protein-coupled receptor on the target cell (primarily hep
 
 1. Glucagon binding activates $\mathrm{G_s}$ protein, which activates **adenylate cyclase**.
 2. Adenylate cyclase converts ATP to **cAMP** (second messenger).
-3. cAMP activates **protein kinase A (PKA)**.
+3. CAMP activates **protein kinase A (PKA)**.
 4. PKA phosphorylates targets that promote:
-   - **Glycogenolysis**: phosphorylation of glycogen phosphorylase kinase, which activates glycogen phosphorylase, breaking glycogen into glucose-1-phosphate.
-   - **Gluconeogenesis**: activation of key enzymes (PEP carboxykinase, fructose-1,6-bisphosphatase).
-   - **Lipolysis**: in adipose tissue, PKA activates hormone-sensitive lipase, breaking triglycerides into fatty acids and glycerol.
+ - **Glycogenolysis**: phosphorylation of glycogen phosphorylase kinase, which activates glycogen phosphorylase, breaking glycogen into glucose-1-phosphate.
+ - **Gluconeogenesis**: activation of key enzymes (PEP carboxykinase, fructose-1,6-bisphosphatase).
+ - **Lipolysis**: in adipose tissue, PKA activates hormone-sensitive lipase, breaking triglycerides into fatty acids and glycerol.
 
 ### 13.3 Second Messengers Compared
 
@@ -709,7 +709,7 @@ The **pituitary gland** (hypophysis) is the "master gland" located at the base o
 1. **Receptor**: $\beta$ cells in the islets of Langerhans detect increased blood glucose (via GLUT2 glucose transporters and glucokinase).
 2. **Coordination centre**: $\beta$ cells are both the receptor and the coordination centre -- they process the information and secrete insulin directly.
 3. **Effector response**: insulin stimulates glucose uptake (GLUT4 translocation), glycogen synthesis, glycolysis, and lipogenesis in target cells.
-4. **Negative feedback**: as blood glucose falls back towards 90 $\mathrm{mg\ dL^{-1}}$, the stimulus to $\beta$ cells decreases, insulin secretion decreases, and the response diminishes.
+4. **Negative feedback**: as blood glucose falls back towards 90 $\mathrm{mg\ dL^{-1}}$The stimulus to $\beta$ cells decreases, insulin secretion decreases, and the response diminishes.
 
 If blood glucose falls below 90 $\mathrm{mg\ dL^{-1}}$ (e.g., during fasting):
 
@@ -726,7 +726,7 @@ However, negative feedback can produce **oscillations** (overcorrection) if the 
 
 ### 15.3 Positive Feedback: When It Occurs
 
-Positive feedback amplifies a change rather than opposing it. It is less common than negative feedback and typically drives processes to completion:
+Positive feedback amplifies a change rather than opposing it. It is less common than negative feedback and drives processes to completion:
 
 | Example | Mechanism | Why It Is Useful |
 | ------- | --------- | ---------------- |
@@ -761,15 +761,15 @@ The dialyser contains:
 - **Semi-permeable membrane** between the two compartments.
 
 Dialysis fluid composition:
-- Same concentration of glucose and salts ($\mathrm{Na^+}$, $\mathrm{K^+}$, $\mathrm{Ca^{2+}}$, $\mathrm{HCO_3^-}$) as normal blood plasma.
+- Same concentration of glucose and salts ($\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{Ca^{2+}}$$\mathrm{HCO_3^-}$) as normal blood plasma.
 - **No urea**: creates a concentration gradient so urea diffuses from blood to dialysis fluid.
 - **No excess $\mathrm{K^+}$**: allows excess $\mathrm{K^+}$ to diffuse from blood to dialysis fluid.
 
-Dialysis is typically performed 3 times per week for 4--5 hours per session.
+Dialysis is performed 3 times per week for 4--5 hours per session.
 
 ### 16.4 Kidney Transplantation
 
-The best treatment for end-stage renal failure. A donor kidney (from a living relative or a cadaver) is transplanted into the patient's pelvis (the original kidneys are usually left in place).
+The best treatment for end-stage renal failure. A donor kidney (from a living relative or a cadaver) is transplanted into the patient's pelvis (the original kidneys are left in place).
 
 - Advantages over dialysis: better quality of life, no dialysis sessions required, longer life expectancy.
 - Disadvantages: risk of surgical complications; lifelong immunosuppressive medication (to prevent rejection); shortage of donor organs; risk of transplant rejection.
@@ -880,7 +880,7 @@ Diagnostic Test
 **Hypothesis:** Auxin stimulates root growth at low concentrations but inhibits it at high concentrations.
 
 **Method:**
-1. Prepare Petri dishes with agar containing different concentrations of IAA (indole-3-acetic acid): 0, $10^{-6}$, $10^{-5}$, $10^{-4}$, $10^{-3}\ \mathrm{mol\ dm^{-3}}$.
+1. Prepare Petri dishes with agar containing different concentrations of IAA (indole-3-acetic acid): 0, $10^{-6}$$10^{-5}$$10^{-4}$$10^{-3}\ \mathrm{mol\ dm^{-3}}$.
 2. Place 10 germinated cress seedlings (with radicles of equal length, approximately 5 mm) on each dish.
 3. Incubate in the dark at 25 degrees C for 3 days.
 4. Measure the increase in radicle length for each seedling.
@@ -897,9 +897,9 @@ $$t = \frac◆LB◆\bar{x}_1 - \bar{x}_2◆RB◆◆LB◆\sqrt{\frac{s_1^2}{n_1} 
 
 Where $\bar{x}_1, \bar{x}_2$ = mean radicle lengths in the two groups, $s_1, s_2$ = standard deviations, $n_1, n_2$ = sample sizes.
 
-If the calculated $t$ value exceeds the critical value (at $p = 0.05$, with appropriate degrees of freedom), the difference is statistically significant.
+If the calculated $t$ value exceeds the critical value (at $p = 0.05$With appropriate degrees of freedom), the difference is statistically significant.
 
-**Worked Example.** Control group ($n = 10$): mean radicle growth $= 12.0\ \mathrm{mm}$, SD $= 2.5\ \mathrm{mm}$. Treatment group ($10^{-4}\ \mathrm{mol\ dm^{-3}}$ IAA, $n = 10$): mean $= 5.0\ \mathrm{mm}$, SD $= 2.0\ \mathrm{mm}$.
+**Worked Example.** Control group ($n = 10$): mean radicle growth $= 12.0\ \mathrm{mm}$SD $= 2.5\ \mathrm{mm}$. Treatment group ($10^{-4}\ \mathrm{mol\ dm^{-3}}$ IAA, $n = 10$): mean $= 5.0\ \mathrm{mm}$SD $= 2.0\ \mathrm{mm}$.
 
 $t = \frac◆LB◆12.0 - 5.0◆RB◆◆LB◆\sqrt{\frac{2.5^2}{10} + \frac{2.0^2}{10}}◆RB◆ = \frac◆LB◆7.0◆RB◆◆LB◆\sqrt{\frac{6.25 + 4.00}{10}}◆RB◆ = \frac◆LB◆7.0◆RB◆◆LB◆\sqrt{1.025}◆RB◆ = \frac{7.0}{1.012} = 6.92$.
 
@@ -907,7 +907,7 @@ Degrees of freedom $= n_1 + n_2 - 2 = 18$.
 
 Critical value at $p = 0.05$ for 18 df $= 2.10$.
 
-Since $t = 6.92 > 2.10$, the difference is statistically significant. Auxin at $10^{-4}\ \mathrm{mol\ dm^{-3}}$ significantly inhibits root growth.
+Since $t = 6.92 > 2.10$The difference is statistically significant. Auxin at $10^{-4}\ \mathrm{mol\ dm^{-3}}$ significantly inhibits root growth.
 
 ## 22. Excretion: The Liver and Kidneys
 
@@ -1090,7 +1090,7 @@ Nastic movements are non-directional responses to stimuli (e.g., touch, light in
 
 | Pathogen Type | Examples | Diseases | Key Features |
 | ------------- | -------- | -------- | ------------ |
-| Bacteria | _Mycobacterium tuberculosis_, _Vibrio cholerae_, _S. aureus_ | Tuberculosis, cholera, bacterial meningitis | Prokaryotic; treated with antibiotics; can produce toxins (endotoxins or exotoxins) |
+| Bacteria | _Mycobacterium tuberculosis_, _Vibrio cholerae_, _S. Aureus_ | Tuberculosis, cholera, bacterial meningitis | Prokaryotic; treated with antibiotics; can produce toxins (endotoxins or exotoxins) |
 | Viruses | HIV, influenza virus, SARS-CoV-2, tobacco mosaic virus (TMV) | AIDS, flu, COVID-19, TMV disease in plants | Obligate intracellular parasites; not affected by antibiotics; protein coat + nucleic acid |
 | Fungi | _Histoplasma_, _Candida albicans_, _Puccinia_ spp. | Histoplasmosis, thrush, wheat stem rust | Eukaryotic; chitin cell walls; produce spores; treated with antifungals |
 | Protoctista | _Plasmodium falciparum_, _Trypanosoma brucei_ | Malaria, sleeping sickness | Eukaryotic; often have complex life cycles involving multiple hosts |
@@ -1104,7 +1104,7 @@ Nastic movements are non-directional responses to stimuli (e.g., touch, light in
 | Waterborne | Cholera, typhoid, dysentery | Clean water supply; sanitation; water treatment (filtration, chlorination) |
 | Airborne (droplets, aerosols) | Influenza, TB, COVID-19, measles | Ventilation; masks; vaccination; isolation of infected individuals |
 | Vector-borne | Malaria (mosquito), dengue (mosquito), Lyme disease (tick) | Vector control (insecticide-treated bed nets, spraying); habitat management; vaccines |
-| Foodborne | Salmonella, _E. coli_ O157, botulism | Food hygiene; proper cooking; pasteurisation; HACCP systems |
+| Foodborne | Salmonella, _E. Coli_ O157, botulism | Food hygiene; proper cooking; pasteurisation; HACCP systems |
 
 ### 22.3 Epidemiology
 
@@ -1133,7 +1133,7 @@ Nastic movements are non-directional responses to stimuli (e.g., touch, light in
 ### 23.1 Type 1 Diabetes (Autoimmune)
 
 - **Cause:** autoimmune destruction of $\beta$ cells in the islets of Langerhans in the pancreas. T cells (CD8+ cytotoxic T cells) recognise $\beta$ cell antigens as foreign and destroy the $\beta$ cells. Autoantibodies (anti-GAD, anti-IA-2, anti-insulin) are present in blood.
-- **Onset:** typically in childhood or adolescence (but can occur at any age).
+- **Onset:** in childhood or adolescence (but can occur at any age).
 - **Pathophysiology:** no insulin is produced. Without insulin, glucose cannot enter muscle and adipose cells (via GLUT4 transporters, which require insulin signalling). Blood glucose rises (hyperglycaemia). Cells switch to using fat and protein for energy.
 - **Symptoms:** polyuria (excessive urination, due to osmotic diuresis when blood glucose exceeds the renal threshold of approximately $10\ \mathrm{mmol\ L^{-1}}$); polydipsia (excessive thirst); weight loss (despite increased appetite); fatigue; ketoacidosis (breakdown of fat produces ketones, which lower blood pH; can be fatal if untreated).
 - **Treatment:** insulin injections (or insulin pump); blood glucose monitoring; carbohydrate counting; management of hypoglycaemia (low blood glucose from excess insulin).
@@ -1141,7 +1141,7 @@ Nastic movements are non-directional responses to stimuli (e.g., touch, light in
 ### 23.2 Type 2 Diabetes (Insulin Resistance)
 
 - **Cause:** insulin resistance (target cells respond poorly to insulin) combined with progressive $\beta$ cell dysfunction. Strongly associated with obesity (especially visceral fat), physical inactivity, and genetic predisposition.
-- **Onset:** typically in adults over 40 (but increasingly in younger people due to rising obesity).
+- **Onset:** in adults over 40 (but increasingly in younger people due to rising obesity).
 - **Pathophysiology:** initially, $\beta$ cells produce extra insulin to compensate for insulin resistance. Over time, $\beta$ cells become exhausted and insulin production declines. Blood glucose rises.
 - **Symptoms:** similar to type 1 but often milder and more gradual; may be asymptomatic initially.
 - **Treatment:** lifestyle changes (weight loss, exercise, dietary modification); metformin (reduces hepatic glucose production, increases insulin sensitivity); other oral medications (sulfonylureas, GLP-1 agonists, SGLT2 inhibitors); insulin therapy if $\beta$ cell function is severely impaired.
@@ -1336,8 +1336,8 @@ Blood is taken from an artery, passed through a dialysis machine (dialyser), and
 
 | Component | Function |
 | --------- | -------- |
-| Dialysis membrane | Partially permeable membrane; allows exchange of small molecules (urea, $\mathrm{K^+}$, $\mathrm{Na^+}$, $\mathrm{Ca^{2+}}$) between blood and dialysis fluid by diffusion |
-| Dialysis fluid | Contains the same concentration of useful substances ($\mathrm{Na^+}$, $\mathrm{K^+}$, $\mathrm{Ca^{2+}}$, glucose, bicarbonate) as healthy blood; contains no urea (creating a concentration gradient for urea to diffuse from blood to dialysis fluid) |
+| Dialysis membrane | Partially permeable membrane; allows exchange of small molecules (urea, $\mathrm{K^+}$$\mathrm{Na^+}$$\mathrm{Ca^{2+}}$) between blood and dialysis fluid by diffusion |
+| Dialysis fluid | Contains the same concentration of useful substances ($\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{Ca^{2+}}$Glucose, bicarbonate) as healthy blood; contains no urea (creating a concentration gradient for urea to diffuse from blood to dialysis fluid) |
 | Blood pump | Moves blood through the dialyser |
 | Anticoagulant | Heparin prevents blood clotting during dialysis |
 
@@ -1345,7 +1345,7 @@ Blood is taken from an artery, passed through a dialysis machine (dialyser), and
 - Requires 3 sessions per week, 4--6 hours per session.
 - Does not replace all kidney functions (e.g., erythropoietin production, vitamin D activation).
 - Increased risk of infection (via the vascular access site).
-- Dietary restrictions (limited $\mathrm{K^+}$, phosphate, fluid intake).
+- Dietary restrictions (limited $\mathrm{K^+}$Phosphate, fluid intake).
 
 ### 27.4 Peritoneal Dialysis
 
@@ -1378,7 +1378,7 @@ Negative feedback is the primary mechanism for maintaining homeostasis. A change
 
 ### 28.2 Positive Feedback
 
-Positive feedback amplifies a change, moving the variable further from the set point. It is less common than negative feedback and usually leads to a definitive outcome (not a stable state).
+Positive feedback amplifies a change, moving the variable further from the set point. It is less common than negative feedback and leads to a definitive outcome (not a stable state).
 
 | Process | Stimulus | Positive Feedback Loop | Outcome |
 | ------- | -------- | ---------------------- | ------- |
@@ -1490,7 +1490,7 @@ Every negative feedback system has the same components:
 | Feature | Type 1 Diabetes | Type 2 Diabetes |
 | ------- | --------------- | --------------- |
 | Cause | Autoimmune destruction of $\beta$ cells in islets of Langerhans | Insulin resistance (target cells become less responsive to insulin); relative insulin deficiency |
-| Onset | Usually childhood/adolescence (but can occur at any age) | Usually adulthood (but increasingly diagnosed in younger people due to obesity) |
+| Onset | childhood/adolescence (but can occur at any age) | adulthood (but increasingly diagnosed in younger people due to obesity) |
 | Insulin production | None (or very little) | Reduced (initially may be normal or even high) |
 | Treatment | Insulin injections (lifelong); blood glucose monitoring; careful diet | Diet and exercise (first-line); oral medication (metformin); may eventually require insulin |
 | Prevalence | ~10% of diabetes cases | ~90% of diabetes cases |
@@ -1728,7 +1728,7 @@ Without negative feedback:
 | Feature | Description |
 | ------- | ----------- |
 | Type | Eccrine (distributed across the body) and apocrine (armpits, groin) |
-| Mechanism | Sweat (water, $\mathrm{Na^+}$, $\mathrm{Cl^-}$, urea) is produced by coiled secretory portion; secreted onto the skin surface via a duct |
+| Mechanism | Sweat (water, $\mathrm{Na^+}$$\mathrm{Cl^-}$Urea) is produced by coiled secretory portion; secreted onto the skin surface via a duct |
 | Evaporation | Water in sweat evaporates; heat is absorbed from the skin surface (high latent heat of vaporisation); this is the primary cooling mechanism in humans |
 | Control | Sympathetic nervous system stimulates sweat gland secretion |
 
@@ -1848,3 +1848,15 @@ Diagnostic Test
 :::
 :::
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

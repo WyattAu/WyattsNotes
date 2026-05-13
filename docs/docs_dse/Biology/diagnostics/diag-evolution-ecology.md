@@ -36,13 +36,13 @@ hide_table_of_contents: true
 
 1. **Comparative anatomy (homologous structures)**: Structures in different species that share a similar underlying anatomy (same basic bone arrangement) despite different functions are called **homologous structures**. For example, the pentadactyl limb (five-digit limb) is found in the human arm, the wing of a bat, the flipper of a whale, and the leg of a horse. These suggest these species share a **common ancestor**; the structures have been modified by natural selection for different functions.
 
-2. **Molecular evidence (DNA/protein comparison)**: Comparing the DNA sequences or protein sequences (e.g. cytochrome c) of different species shows that more closely related species have **more similar DNA/protein sequences**. The degree of similarity reflects evolutionary relatedness and can be used to construct phylogenetic trees.
+2. **Molecular evidence (DNA/protein comparison)**: Comparing the DNA sequences or protein sequences (e.g. Cytochrome c) of different species shows that more closely related species have **more similar DNA/protein sequences**. The degree of similarity reflects evolutionary relatedness and can be used to construct phylogenetic trees.
 
 (Alternative: embryological evidence -- early embryos of vertebrates are very similar; biogeographical evidence -- species on oceanic islands are more similar to nearby mainland species than to species on distant islands with similar environments.)
 
 (c) In **everyday language**, "theory" means a guess or speculation (e.g. "I have a theory about who stole the cookies").
 
-In **science**, a "theory" is a well-substantiated, comprehensive explanation supported by a large body of evidence, observations, and experiments. The **theory of evolution by natural selection** is one of the most well-supported scientific theories, with evidence from fossils, genetics, comparative anatomy, molecular biology, and direct observation (e.g. antibiotic resistance). It is not a guess or speculation.
+In **science**, a "theory" is a well-substantiated, comprehensive explanation supported by a large body of evidence, observations, and experiments. The **theory of evolution by natural selection** is one of the most well-supported scientific theories, with evidence from fossils, genetics, comparative anatomy, molecular biology, and direct observation (e.g. Antibiotic resistance). It is not a guess or speculation.
 
 ---
 
@@ -92,7 +92,7 @@ Approximately **10%** of the energy at one trophic level is transferred to the n
 
 (a) **Photosynthesis**: Green plants and algae absorb carbon dioxide ($CO_{2}$) from the atmosphere (or dissolved $CO_{2}$ from water) and incorporate it into organic molecules (glucose, then other organic compounds) through the process of photosynthesis. This converts inorganic carbon into organic carbon, moving carbon from the atmosphere/biosphere into living organisms.
 
-**Respiration**: All living organisms carry out respiration, breaking down organic molecules (e.g. glucose) to release energy (ATP). As a by-product, $CO_{2}$ is released back into the atmosphere (or into water). This converts organic carbon back into inorganic carbon, returning carbon to the atmosphere.
+**Respiration**: All living organisms carry out respiration, breaking down organic molecules (e.g. Glucose) to release energy (ATP). As a by-product, $CO_{2}$ is released back into the atmosphere (or into water). This converts organic carbon back into inorganic carbon, returning carbon to the atmosphere.
 
 (b) **Decomposers** (bacteria and fungi) break down dead organic matter (dead plants, animals, and waste products) through extracellular digestion. They secrete enzymes onto dead material, digesting it and absorbing the soluble products. In doing so, they release $CO_{2}$ back into the atmosphere through their own respiration. Decomposers are essential for **recycling carbon** (and other elements) from dead organisms back into the ecosystem.
 
@@ -154,7 +154,7 @@ The low dissolved oxygen concentration caused by decomposer respiration means th
 
 2. **Creating buffer zones**: Plant strips of vegetation (trees, grass) between the field and the water body. Buffer zones absorb and filter runoff water before it reaches the lake, trapping nitrates and preventing them from entering the water body.
 
-(Alternative: using slow-release fertilisers; applying fertiliser when rain is not expected; crop rotation with legumes to naturally fix nitrogen, reducing the need for artificial fertiliser.)
+(Alternative: using slow-release fertilisers; applying fertiliser when rain is not expected; crop rotation with legumes to fix nitrogen, reducing the need for artificial fertiliser.)
 
 ---
 
@@ -174,9 +174,9 @@ The low dissolved oxygen concentration caused by decomposer respiration means th
 
 (a) **Allopatric speciation**:
 
-1. **Geographical isolation**: A physical barrier (e.g. a mountain range, a river, an ocean) separates a population of a species into **two or more geographically isolated populations**. This prevents interbreeding between the populations (no gene flow).
+1. **Geographical isolation**: A physical barrier (e.g. A mountain range, a river, an ocean) separates a population of a species into **two or more geographically isolated populations**. This prevents interbreeding between the populations (no gene flow).
 
-2. **Different selection pressures**: The two isolated populations experience **different environmental conditions** (e.g. different climate, food sources, predators). Different selection pressures act on each population.
+2. **Different selection pressures**: The two isolated populations experience **different environmental conditions** (e.g. Different climate, food sources, predators). Different selection pressures act on each population.
 
 3. **Natural selection**: In each population, natural selection favours different alleles and traits that are advantageous in their respective environments. Over many generations, the **allele frequencies** in each population change in different directions.
 

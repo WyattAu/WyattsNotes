@@ -11,16 +11,16 @@ slug: proof
 ---
 ## Board Coverage
 
-| Board      | Paper      | Notes                                                         |
+| Board | Paper | Notes |
 | ---------- | ---------- | ------------------------------------------------------------- |
-| AQA        | Paper 1    | Proof by deduction, contradiction, exhaustion, counterexample |
-| Edexcel    | P1, P2     | Similar; induction in P2                                      |
-| OCR (A)    | Paper 1, 2 | Proof is integrated throughout                                |
-| CIE (9709) | P1, P2, P3 | Various methods across papers                                 |
+| AQA | Paper 1 | Proof by deduction, contradiction, exhaustion, counterexample |
+| Edexcel | P1, P2 | Similar; induction in P2 |
+| OCR (A) | Paper 1, 2 | Proof is integrated throughout |
+| CIE (9709) | P1, P2, P3 | Various methods across papers |
 
 :::info
 Proof questions appear on every paper. You must be able to identify the appropriate proof
-method and execute it clearly, with every step justified.
+Method and execute it , with every step justified.
 :::
 
 <hr />
@@ -30,7 +30,7 @@ method and execute it clearly, with every step justified.
 ### 1.1 Method
 
 Proof by deduction starts from known axioms, definitions, or previously proved results, and uses
-logical steps to arrive at the desired conclusion.
+Logical steps to arrive at the desired conclusion.
 
 ### 1.2 Example: the sum of an arithmetic series
 
@@ -45,7 +45,7 @@ S_n &= (a+(n-1)d) + (a+(n-2)d) + \cdots + a
 \end{aligned}
 $$
 
-Adding the two rows term by term, each pair sums to $2a + (n-1)d$, and there are $n$ such pairs:
+Adding the two rows term by term, each pair sums to $2a + (n-1)d$And there are $n$ such pairs:
 
 $$2S_n = n[2a + (n-1)d] \implies S_n = \frac{n}{2}[2a + (n-1)d] \quad \blacksquare$$
 
@@ -78,18 +78,18 @@ $p_1, p_2, \ldots, p_n$.
 
 Consider $N = p_1 p_2 \cdots p_n + 1$.
 
-- $N$ is not divisible by any $p_i$: if $p_i \mid N$, then $p_i \mid (N - p_1 \cdots p_n) = 1$,
-  which is impossible since $p_i \geq 2$.
+- $N$ is not divisible by any $p_i$: if $p_i \mid N$Then $p_i \mid (N - p_1 \cdots p_n) = 1$
+ which is impossible since $p_i \geq 2$.
 
 So $N$ is either prime itself or divisible by a prime not in our list. Either way, there exists a
-prime not among $p_1, \ldots, p_n$. This contradicts our assumption that the list was complete.
+Prime not among $p_1, \ldots, p_n$. This contradicts our assumption that the list was complete.
 $\blacksquare$
 
 ### 2.3 $\sqrt{2}$ is irrational
 
 **Theorem.** $\sqrt{2}$ is irrational.
 
-**Proof.** Suppose $\sqrt{2} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}$, $b \neq 0$, and
+**Proof.** Suppose $\sqrt{2} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}$$b \neq 0$And
 $\gcd(a,b) = 1$ (the fraction is in lowest terms).
 
 $$2 = \frac{a^2}{b^2} \implies a^2 = 2b^2$$
@@ -99,7 +99,7 @@ $a = 2k$.
 
 $$(2k)^2 = 2b^2 \implies 4k^2 = 2b^2 \implies b^2 = 2k^2$$
 
-So $b^2$ is even, meaning $b$ is even. But then $\gcd(a,b) \geq 2$, contradicting $\gcd(a,b) = 1$.
+So $b^2$ is even, meaning $b$ is even. But then $\gcd(a,b) \geq 2$Contradicting $\gcd(a,b) = 1$.
 $\blacksquare$
 
 ### 2.4 $\log_2 3$ is irrational
@@ -133,23 +133,23 @@ So not all primes less than 10 are odd. The claim is **false**. The counterexamp
 
 ### 3.3 Example: sum of two squares
 
-**Claim.** For all integers $n$ with $1 \leq n \leq 5$, $n^2 + (n+1)^2$ is odd.
+**Claim.** For all integers $n$ with $1 \leq n \leq 5$$n^2 + (n+1)^2$ is odd.
 
 **Proof.** Check each case:
 
 | $n$ | $n^2 + (n+1)^2$ | Odd? |
 | --- | --------------- | ---- |
-| 1   | 1 + 4 = 5       | Yes  |
-| 2   | 4 + 9 = 13      | Yes  |
-| 3   | 9 + 16 = 25     | Yes  |
-| 4   | 16 + 25 = 41    | Yes  |
-| 5   | 25 + 36 = 61    | Yes  |
+| 1 | 1 + 4 = 5 | Yes |
+| 2 | 4 + 9 = 13 | Yes |
+| 3 | 9 + 16 = 25 | Yes |
+| 4 | 16 + 25 = 41 | Yes |
+| 5 | 25 + 36 = 61 | Yes |
 
 All five cases confirmed. $\blacksquare$
 
 :::warning
-warning
-manageable. You cannot use exhaustion for "all integers" or "all real numbers."
+Warning
+Manageable. You cannot use exhaustion for "all integers" or "all real numbers."
 :::
 
 <hr />
@@ -162,10 +162,10 @@ To disprove a universal statement, it suffices to find **one** example where the
 
 ### 4.2 Examples
 
-**Claim.** "For all real $x$, $x^2 \gt{} x$." Counterexample: $x = 0.5$, since $0.25 \not> 0.5$.
+**Claim.** "For all real $x$$x^2 \gt{} x$." Counterexample: $x = 0.5$Since $0.25 \not> 0.5$.
 
 **Claim.** "All quadratics have two distinct real roots." Counterexample: $x^2 + 1 = 0$ has no real
-roots (discriminant $= -4 \lt{} 0$).
+Roots (discriminant $= -4 \lt{} 0$).
 
 **Claim.** "If $n$ is prime, then $2^n - 1$ is prime." Counterexample: $n = 11$ is prime, but
 $2^{11}-1 = 2047 = 23 \times 89$.
@@ -184,10 +184,10 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 4. **Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all $n \geq n_0$.
 
 :::info
-info
-non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
+Info
+Non-empty set of positive integers has a least element. If $P(n_0)$ is true but some $P(m)$ with
 $m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least element,
-contradicting the inductive step.
+Contradicting the inductive step.
 :::
 
 ### 5.2 Sum of the first $n$ integers
@@ -247,7 +247,7 @@ This is the formula with $n = k+1$. ✓ $\blacksquare$
 
 **Proof.**
 
-_Base case ($n=1$):_ $3^1 - 1 = 2$, which is divisible by 2. ✓
+_Base case ($n=1$):_ $3^1 - 1 = 2$Which is divisible by 2. ✓
 
 _Hypothesis:_ Assume $3^k - 1 = 2m$ for some integer $m$.
 
@@ -259,7 +259,7 @@ This is divisible by 2. ✓ $\blacksquare$
 
 **Proof.**
 
-_Base case ($n=1$):_ $4-1 = 3$, divisible by 3. ✓
+_Base case ($n=1$):_ $4-1 = 3$Divisible by 3. ✓
 
 _Hypothesis:_ $4^k - 1 = 3m$.
 
@@ -290,7 +290,7 @@ _Hypothesis:_ $k! \gt{} 2^k$ for $k \geq 4$.
 _Step:_
 $(k+1)! = (k+1) \cdot k! \gt{} (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt{} 2 \cdot 2^k = 2^{k+1}$.
 
-Since $k \geq 4$, we have $k+1 \geq 5 \gt{} 2$. ✓ $\blacksquare$
+Since $k \geq 4$We have $k+1 \geq 5 \gt{} 2$. ✓ $\blacksquare$
 
 <hr />
 
@@ -338,7 +338,7 @@ Prove by contradiction that there is no greatest even integer.
 Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb{Z}$.
 
 But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt{} N$. This contradicts $N$ being the
-greatest even integer. $\blacksquare$
+Greatest even integer. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 
@@ -380,13 +380,13 @@ Prove that $\sqrt{3}$ is irrational.
 
 <details>
 <summary>Solution 4</summary>
-Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{Z}^+$, $\gcd(a,b) = 1$.
+Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{Z}^+$$\gcd(a,b) = 1$.
 
-$3 = a^2/b^2 \implies a^2 = 3b^2$, so $3 \mid a^2$, hence $3 \mid a$. Write $a = 3k$.
+$3 = a^2/b^2 \implies a^2 = 3b^2$So $3 \mid a^2$Hence $3 \mid a$. Write $a = 3k$.
 
-$9k^2 = 3b^2 \implies b^2 = 3k^2$, so $3 \mid b^2$, hence $3 \mid b$.
+$9k^2 = 3b^2 \implies b^2 = 3k^2$So $3 \mid b^2$Hence $3 \mid b$.
 
-But $\gcd(a,b) \geq 3$, contradicting $\gcd(a,b) = 1$. $\blacksquare$
+But $\gcd(a,b) \geq 3$Contradicting $\gcd(a,b) = 1$. $\blacksquare$
 
 **If you get this wrong, revise:** [$\sqrt{2}$ is irrational](#23-sqrt2-is-irrational) — Section
 2.3.
@@ -395,7 +395,7 @@ But $\gcd(a,b) \geq 3$, contradicting $\gcd(a,b) = 1$. $\blacksquare$
 
 <details>
 <summary>Problem 5</summary>
-Disprove by counterexample: "For all real $x$, $\sin(2x) = 2\sin x$."
+Disprove by counterexample: "For all real $x$$\sin(2x) = 2\sin x$."
 </details>
 
 <details>
@@ -416,7 +416,7 @@ Prove by induction that $5^n + 3$ is divisible by 4 for all $n \geq 1$.
 
 <details>
 <summary>Solution 6</summary>
-*Base case ($n=1$):* $5 + 3 = 8$, divisible by 4. ✓
+*Base case ($n=1$):* $5 + 3 = 8$Divisible by 4. ✓
 
 _Hypothesis:_ $5^k + 3 = 4m$.
 
@@ -435,7 +435,7 @@ Prove by contradiction that $\log_3 5$ is irrational.
 
 <details>
 <summary>Solution 7</summary>
-Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{Z}^+$, $\gcd(a,b)=1$.
+Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{Z}^+$$\gcd(a,b)=1$.
 
 $3^{a/b} = 5 \implies 3^a = 5^b$.
 
@@ -458,8 +458,8 @@ Use proof by exhaustion to show that all integers $n$ with $1 \leq n \leq 6$ sat
 <summary>Solution 8</summary>
 Primes in range: 2, 3, 5.
 
-$n=2$: $n^2-1 = 3$, not divisible by 24 (special case $n=2$). $n=3$: $n^2-1 = 8$, not divisible by
-24 (special case $n=3$). $n=5$: $n^2-1 = 24$, divisible by 24. ✓
+$n=2$: $n^2-1 = 3$Not divisible by 24 (special case $n=2$). $n=3$: $n^2-1 = 8$Not divisible by
+24 (special case $n=3$). $n=5$: $n^2-1 = 24$Divisible by 24. ✓
 
 So the claim holds: primes 2 and 3 are exceptions, and $5^2 - 1 = 24$ is divisible by 24.
 
@@ -474,7 +474,7 @@ Prove by induction that $n^3 - n$ is divisible by 6 for all $n \geq 1$.
 
 <details>
 <summary>Solution 9</summary>
-*Base case ($n=1$):* $1-1=0$, divisible by 6. ✓
+*Base case ($n=1$):* $1-1=0$Divisible by 6. ✓
 
 _Hypothesis:_ $k^3 - k = 6m$.
 
@@ -489,17 +489,17 @@ $(k+1)^3 - (k+1) = 6m + 6n = 6(m+n)$. ✓ $\blacksquare$
 
 <details>
 <summary>Problem 10</summary>
-Prove that if $a^2 + b^2 = c^2$ for integers $a, b, c$, then at least one of $a, b$ is even.
+Prove that if $a^2 + b^2 = c^2$ for integers $a, b, c$Then at least one of $a, b$ is even.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-Proof by contradiction. Suppose both $a$ and $b$ are odd. Write $a = 2m+1$, $b = 2n+1$.
+Proof by contradiction. Suppose both $a$ and $b$ are odd. Write $a = 2m+1$$b = 2n+1$.
 
 $$a^2 + b^2 = (2m+1)^2 + (2n+1)^2 = 4m^2+4m+1 + 4n^2+4n+1 = 2(2m^2+2m+2n^2+2n+1)$$
 
 This is even but not divisible by 4. So $c^2$ is even but not divisible by 4, meaning $c$ is even
-(if $c = 2p$, $c^2 = 4p^2$, which IS divisible by 4). Contradiction. $\blacksquare$
+(if $c = 2p$$c^2 = 4p^2$Which IS divisible by 4). Contradiction. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 
@@ -548,3 +548,15 @@ Ready to test your understanding of **Proof**? The [diagnostic test](/docs/aleve
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

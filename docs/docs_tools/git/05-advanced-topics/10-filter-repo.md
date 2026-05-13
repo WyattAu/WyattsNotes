@@ -6,28 +6,28 @@ slug: filter-repo
 ## What filter-repo Is
 
 `git-filter-repo` is a Python-based tool for rewriting Git repository history. It is the modern,
-recommended replacement for `git filter-branch`, which has been deprecated since Git 2.24 (December
+Recommended replacement for `git filter-branch`Which has been deprecated since Git 2.24 (December
 2019). `git-filter-repo` was written by Elijah Newren, a Git core contributor, and addresses the
-fundamental design flaws of `filter-branch`.
+Fundamental design flaws of `filter-branch`.
 
 ### Why filter-branch Was Problematic
 
 `git filter-branch` suffered from several architectural issues that made it dangerous in practice:
 
 - **Slow**: Rewrote every commit sequentially using shell commands, making it unusably slow on large
-  repositories.
+ repositories.
 - **Did not clean up properly**: Left behind `.git/refs/original/` backup refs and failed to expire
-  reflogs, meaning rewritten objects persisted and `git gc` would not reclaim disk space.
+ reflogs, meaning rewritten objects persisted and `git gc` would not reclaim disk space.
 - **No safety checks**: Could operate on a repository with a dirty working tree, leading to data
-  loss.
+ loss.
 - **State leakage**: Used shell environment variables for inter-process communication, which was
-  fragile and could be poisoned by the user's shell configuration.
+ fragile and could be poisoned by the user's shell configuration.
 - **No rename detection**: Could not track file renames, so rewriting a file's path would break
-  history.
+ history.
 
 `git-filter-repo` fixes all of these. It operates directly on Git's fast-import/fast-export format
 (bypassing the object database entirely during rewriting), automatically cleans up refs and reflogs,
-refuses to run on dirty working trees, and supports rename detection.
+Refuses to run on dirty working trees, and supports rename detection.
 
 ### Core Design
 
@@ -39,7 +39,7 @@ refuses to run on dirty working trees, and supports rename detection.
 4. Cleaning up all refs, reflogs, and the original object database.
 
 This pipeline approach means it never needs to read the full object database into memory — it
-processes objects as a stream, making it both fast and memory-efficient.
+Processes objects as a stream, making it both fast and memory-efficient.
 
 ## Installation
 
@@ -73,7 +73,7 @@ $ git filter-repo --version
 ```
 
 The standalone script is a single Python file with no external dependencies beyond Python 3 and Git
-itself.
+Itself.
 
 ### Platform-Specific Notes
 
@@ -97,18 +97,18 @@ $ which git-filter-repo
 
 ### Operation Reference Table
 
-| Operation                        | Command                                                      | Effect                                                                 |
+| Operation | Command | Effect |
 | -------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| Remove a file from all history   | `git filter-repo --path path/to/file --invert-paths`         | Deletes the file and all commits that only touched that file           |
-| Keep only specific files         | `git filter-repo --path path/to/keep --path another/file`    | Removes everything except the specified paths                          |
-| Extract subdirectory as new repo | `git filter-repo --subdirectory-filter path/`                | Rewrites history as if the repo had always been just that subdirectory |
-| Rewrite author name/email        | `git filter-repo --mailmap .mailmap`                         | Replaces author/committer names and emails based on a mailmap file     |
-| Replace text in all files        | `git filter-repo --replace-text expressions.txt`             | Performs string replacements across all blobs in history               |
-| Remove large blobs               | `git filter-repo --strip-blobs-bigger-than 10M`              | Removes any blob larger than the specified size                        |
-| Remove blobs by name             | `git filter-repo --strip-blobs-with-ids file.txt`            | Removes specific blobs listed in a file (one SHA per line)             |
-| Replace blob content             | `git filter-repo --blob-callback 'return blob.replace(...)'` | Python callback for arbitrary blob modifications                       |
-| Rename files                     | `git filter-repo --path-rename old/path:new/path`            | Renames files/directories across all history                           |
-| Add a prefix to all paths        | `git filter-repo --prefix new-prefix/`                       | Prepends a directory prefix to all file paths                          |
+| Remove a file from all history | `git filter-repo --path path/to/file --invert-paths` | Deletes the file and all commits that only touched that file |
+| Keep only specific files | `git filter-repo --path path/to/keep --path another/file` | Removes everything except the specified paths |
+| Extract subdirectory as new repo | `git filter-repo --subdirectory-filter path/` | Rewrites history as if the repo had always been just that subdirectory |
+| Rewrite author name/email | `git filter-repo --mailmap .mailmap` | Replaces author/committer names and emails based on a mailmap file |
+| Replace text in all files | `git filter-repo --replace-text expressions.txt` | Performs string replacements across all blobs in history |
+| Remove large blobs | `git filter-repo --strip-blobs-bigger-than 10M` | Removes any blob larger than the specified size |
+| Remove blobs by name | `git filter-repo --strip-blobs-with-ids file.txt` | Removes specific blobs listed in a file (one SHA per line) |
+| Replace blob content | `git filter-repo --blob-callback 'return blob.replace(...)'` | Python callback for arbitrary blob modifications |
+| Rename files | `git filter-repo --path-rename old/path:new/path` | Renames files/directories across all history |
+| Add a prefix to all paths | `git filter-repo --prefix new-prefix/` | Prepends a directory prefix to all file paths |
 
 ### Removing a File from All History
 
@@ -124,11 +124,11 @@ $ git filter-repo --path-glob '*.pem' --invert-paths
 ```
 
 The `--invert-paths` flag inverts the selection: `--path X --invert-paths` means "keep everything
-except X." Without `--invert-paths`, `--path X` means "keep only X."
+Except X." Without `--invert-paths``--path X` means "keep only X."
 
 After removing files, commits that become empty (they only touched the removed files) are also
-removed. This is usually the desired behavior, but it can be surprising if you expected those
-commits to remain.
+Removed. This is the desired behavior, but it can be surprising if you expected those
+Commits to remain.
 
 ### Extracting a Subdirectory as a New Repository
 
@@ -149,7 +149,7 @@ b4c5d6e Initial API setup
 
 This is the standard approach for splitting a monorepo into individual repositories. The
 `--subdirectory-filter` flag removes all paths except those under the specified directory and
-rewrites the root to be that directory.
+Rewrites the root to be that directory.
 
 ### Rewriting Author Information
 
@@ -167,7 +167,7 @@ $ git filter-repo --mailmap .mailmap
 ```
 
 The mailmap format is `<new-name> <new-email> <old-name> <old-email>`. You can omit the new name or
-new email if you only want to change one field:
+New email if you only want to change one field:
 
 ```
 # Change only the email
@@ -236,7 +236,7 @@ $ git filter-repo --prefix my-project/
 ## Expressions File Format
 
 The `--replace-text` and `--replace-refs` flags accept an expressions file with specific syntax
-rules:
+Rules:
 
 ### Line Syntax
 
@@ -270,7 +270,7 @@ EOF
 
 ### Replacement References
 
-In regex replacements, `\1`, `\2`, etc. reference captured groups:
+In regex replacements, `\1``\2`Etc. Reference captured groups:
 
 ```
 # Mask the password but keep the username and host
@@ -280,7 +280,7 @@ regex:mysql://([^:]+):([^@]+)@(.*)==>mysql://\1:REDACTED@\3
 ### Per-Blob vs Per-Line
 
 By default, `--replace-text` operates on entire blobs. To operate line-by-line (useful for removing
-lines containing secrets while keeping the rest of the file):
+Lines containing secrets while keeping the rest of the file):
 
 ```bash
 # Replace text line-by-line (lines matching are replaced or removed)
@@ -291,39 +291,39 @@ $ git filter-repo --replace-text expressions.txt
 
 ### Feature Comparison
 
-| Feature                    | `filter-branch`                          | `filter-repo`                                 |
+| Feature | `filter-branch` | `filter-repo` |
 | -------------------------- | ---------------------------------------- | --------------------------------------------- |
-| Speed                      | Slow (shell-based, sequential)           | Fast (Python, streaming via fast-export)      |
-| Safety                     | Runs on dirty working trees              | Refuses to run unless working tree is clean   |
-| Cleanup                    | Leaves `.git/refs/original/` backup refs | Automatically removes backup refs and reflogs |
-| Rename detection           | None                                     | Full rename detection support                 |
-| Blob callback              | Limited (shell commands)                 | Full Python callback API                      |
-| Dry run                    | Not supported                            | `--dry-run` flag                              |
-| Progress reporting         | Minimal                                  | Detailed progress with `--force`              |
-| Large repo support         | Often runs out of memory or time         | Handles repos with millions of commits        |
-| Maintenance status         | Deprecated since Git 2.24                | Actively maintained                           |
-| Repository state after run | Dirty (needs manual cleanup)             | Clean (fully gc'd)                            |
+| Speed | Slow (shell-based, sequential) | Fast (Python, streaming via fast-export) |
+| Safety | Runs on dirty working trees | Refuses to run unless working tree is clean |
+| Cleanup | Leaves `.git/refs/original/` backup refs | Automatically removes backup refs and reflogs |
+| Rename detection | None | Full rename detection support |
+| Blob callback | Limited (shell commands) | Full Python callback API |
+| Dry run | Not supported | `--dry-run` flag |
+| Progress reporting | Minimal | Detailed progress with `--force` |
+| Large repo support | Often runs out of memory or time | Handles repos with millions of commits |
+| Maintenance status | Deprecated since Git 2.24 | Actively maintained |
+| Repository state after run | Dirty (needs manual cleanup) | Clean (fully gc'd) |
 
 ### Performance Comparison
 
 On a repository with 50,000 commits and 10,000 files:
 
-| Operation            | `filter-branch` | `filter-repo` |
+| Operation | `filter-branch` | `filter-repo` |
 | -------------------- | --------------- | ------------- |
-| Remove a file        | 45 minutes      | 2 minutes     |
-| Rewrite author info  | 30 minutes      | 90 seconds    |
-| Remove large blobs   | 60 minutes      | 3 minutes     |
-| Extract subdirectory | 50 minutes      | 2.5 minutes   |
+| Remove a file | 45 minutes | 2 minutes |
+| Rewrite author info | 30 minutes | 90 seconds |
+| Remove large blobs | 60 minutes | 3 minutes |
+| Extract subdirectory | 50 minutes | 2.5 minutes |
 
 These numbers are approximate and depend on hardware, but the order-of-magnitude difference is
-consistent. `filter-repo` is 15-30x faster because it avoids creating intermediate Git objects — it
-streams modifications directly through the fast-import/fast-export pipeline.
+Consistent. `filter-repo` is 15-30x faster because it avoids creating intermediate Git objects — it
+Streams modifications directly through the fast-import/fast-export pipeline.
 
 ### Why filter-branch Is Still in Git
 
 `filter-branch` is still shipped with Git for backward compatibility, but its man page includes a
-prominent warning directing users to `git-filter-repo`. Running `git filter-branch` produces a
-deprecation notice:
+Prominent warning directing users to `git-filter-repo`. Running `git filter-branch` produces a
+Deprecation notice:
 
 ```
 WARNING: git-filter-branch has a glut of gotchas generating mangled history
@@ -336,7 +336,7 @@ WARNING: git-filter-branch has a glut of gotchas generating mangled history
 ### Removing Secrets and Credentials from History
 
 This is the most common use case. A secret (API key, password, certificate) was committed to the
-repository and needs to be removed from all history, not just the current working tree:
+Repository and needs to be removed from all history, not just the current working tree:
 
 ```bash
 # 1. Clone the repository fresh (filter-repo requires a fresh clone)
@@ -427,7 +427,7 @@ $ du -sh .git
 ### Repo Splitting
 
 When splitting a monorepo, you often need to extract multiple subdirectories into separate
-repositories:
+Repositories:
 
 ```bash
 # For each subdirectory you want to extract:
@@ -443,8 +443,8 @@ $ git filter-repo --subdirectory-filter packages/backend
 ```
 
 Note that each extraction must be done from a fresh clone because `filter-repo` modifies the
-repository in-place and refuses to run on a repository that has already been filtered (unless you
-use `--force`).
+Repository in-place and refuses to run on a repository that has already been filtered (unless you
+Use `--force`).
 
 ## After Rewriting
 
@@ -497,7 +497,7 @@ $ git push --force --tags origin
 ```
 
 **Never force push to a shared branch without coordination.** All collaborators must be notified and
-must re-clone or rebase their local branches.
+Must re-clone or rebase their local branches.
 
 ### Notifying Collaborators
 
@@ -515,8 +515,8 @@ $ git rebase origin/main
 ```
 
 The rebase approach is painful for large numbers of commits because every commit will likely
-conflict (the parent SHAs have all changed, so Git cannot fast-forward). Re-cloning is strongly
-recommended.
+Conflict (the parent SHAs have all changed, so Git cannot fast-forward). Re-cloning is strongly
+Recommended.
 
 ### Verifying the Rewrite
 
@@ -547,8 +547,8 @@ $ git log --format='%an <%ae>' | sort -u
 ### All Commit SHAs Change
 
 This is the fundamental consequence of history rewriting. Every commit that was modified (which is
-usually all of them, since changing a file in any commit changes its tree hash, which changes its
-commit hash, which cascades to all descendant commits) gets a new SHA.
+ all of them, since changing a file in any commit changes its tree hash, which changes its
+Commit hash, which cascades to all descendant commits) gets a new SHA.
 
 ```
 Before:
@@ -559,12 +559,12 @@ After removing a file from commit B:
 ```
 
 The content of commits D and E may be identical to before, but their SHAs are different because
-their ancestors changed.
+Their ancestors changed.
 
 ### Force Push Is Destructive
 
 Force pushing overwrites the remote history. If any collaborator has based work on the old history,
-their branches will diverge:
+Their branches will diverge:
 
 ```bash
 # Collaborator's local branch points to old commits:
@@ -588,14 +588,14 @@ Rewriting history on the main repository does not update forks, mirrors, or copi
 - Local clones on any machine
 
 You must audit and update all of these independently. GitHub provides a "Contact GitHub Support"
-option to request removal of cached objects from forks, but this is not guaranteed and may take
-time.
+Option to request removal of cached objects from forks, but this is not guaranteed and may take
+Time.
 
 ### Tags Become Invalid
 
 Annotated tags point to specific commit SHAs. After rewriting, the old SHAs no longer exist, so old
-tags become dangling references. `git-filter-repo` rewrites tags automatically, but you must
-force-push them:
+Tags become dangling references. `git-filter-repo` rewrites tags automatically, but you must
+Force-push them:
 
 ```bash
 $ git push --force --tags origin
@@ -604,8 +604,8 @@ $ git push --force --tags origin
 ### Signed Commits Become Invalid
 
 Commit signatures cover the commit's content including its tree hash and parent hash. After
-rewriting, the tree and parent hashes change, so the signature is no longer valid. All rewritten
-commits lose their signatures:
+Rewriting, the tree and parent hashes change, so the signature is no longer valid. All rewritten
+Commits lose their signatures:
 
 ```bash
 # Before rewriting:
@@ -617,13 +617,13 @@ $ git verify-commit HEAD
 error: no signature found
 ```
 
-If `commit.gpgsign = true`, you can re-sign all commits during the rewrite using a callback, but
-this is complex and not recommended for most use cases.
+If `commit.gpgsign = true`You can re-sign all commits during the rewrite using a callback, but
+This is complex and not recommended for most use cases.
 
 ### CI/CD Build Caches
 
 Many CI/CD systems cache Git objects to speed up builds. After a history rewrite, these caches
-contain the old (pre-rewrite) objects. Clear all caches:
+Contain the old (pre-rewrite) objects. Clear all caches:
 
 ```bash
 # GitHub Actions: caches are stored per-branch and per-workflow
@@ -641,8 +641,8 @@ contain the old (pre-rewrite) objects. Clear all caches:
 ### Running on a Non-Fresh Clone
 
 `git-filter-repo` refuses to run on a repository that has remote refs pointing to a URL. This is a
-safety mechanism to prevent accidental pushes of rewritten history. You must clone the repository
-first:
+Safety mechanism to prevent accidental pushes of rewritten history. You must clone the repository
+First:
 
 ```bash
 # WRONG: running on an existing clone with remotes
@@ -655,7 +655,7 @@ $ cd /tmp/repo-clean
 $ git filter-repo --path secret.key --invert-paths
 ```
 
-If you must run on an existing clone, use `--force`, but understand the risks:
+If you must run on an existing clone, use `--force`But understand the risks:
 
 ```bash
 $ git filter-repo --path secret.key --invert-paths --force
@@ -664,7 +664,7 @@ $ git filter-repo --path secret.key --invert-paths --force
 ### Forgetting to Remove the Expressions File
 
 The expressions file used with `--replace-text` may itself contain the secrets you are trying to
-remove. Do not commit this file:
+Remove. Do not commit this file:
 
 ```bash
 # Add expressions.txt to .gitignore
@@ -676,7 +676,7 @@ $ git filter-repo --replace-text /tmp/expressions.txt
 
 ### Not Verifying the Result
 
-After running `filter-repo`, always verify that:
+After running `filter-repo`Always verify that:
 
 - The secret is completely removed from all history
 - The repository builds and tests pass
@@ -695,7 +695,7 @@ $ make build && make test
 ### Running on a Branch Instead of a Full Clone
 
 `git-filter-repo` operates on the entire repository by default. If you only want to rewrite a
-specific branch, you must use `--refs`:
+Specific branch, you must use `--refs`:
 
 ```bash
 # Only rewrite the main branch
@@ -705,13 +705,13 @@ $ git filter-repo --path secret.key --invert-paths --refs main
 $ git filter-repo --path secret.key --invert-paths --refs main --refs develop
 ```
 
-Without `--refs`, filter-repo rewrites all branches, which may not be what you want if you have
-release branches that intentionally contain different versions of files.
+Without `--refs`Filter-repo rewrites all branches, which may not be what you want if you have
+Release branches that intentionally contain different versions of files.
 
 ### Assuming Removal Is Sufficient for Security
 
 Removing a secret from Git history does not make it safe. The secret was exposed at the time of the
-commit and may have been:
+Commit and may have been:
 
 - Observed by other contributors with repository access
 - Included in email notifications (GitHub sends commit emails)
@@ -724,7 +724,7 @@ Always rotate the credential. Treat Git history rewriting as a cleanup step, not
 ### Using filter-branch Instead of filter-repo
 
 Some tutorials and Stack Overflow answers still recommend `git filter-branch`. This is outdated
-advice. `filter-branch` is deprecated, slow, and leaves behind data that it should have cleaned up.
+Advice. `filter-branch` is deprecated, slow, and leaves behind data that it should have cleaned up.
 Always use `git-filter-repo` for new work.
 
 ### Not Backing Up Before Rewriting
@@ -764,3 +764,11 @@ After rewriting history, any CI/CD pipelines that reference specific commit SHAs
 - Deployment scripts that pin to specific commits
 - Release notes that reference commit SHAs
 - Issue tracker links that reference commits
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

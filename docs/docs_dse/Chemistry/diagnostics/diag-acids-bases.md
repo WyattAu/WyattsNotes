@@ -62,7 +62,7 @@ The claim is **incorrect** for weak acids. Diluting by a factor of 10 increases 
 
 **Question**
 
-A buffer solution is prepared by mixing 100 cm$^{3}$ of 0.20 mol/dm$^{3}$ ethanoic acid ($CH_{3}COOH$, $K_{a} = 1.8 \times 10^{-5}$) with 100 cm$^{3}$ of 0.10 mol/dm$^{3}$ sodium ethanoate ($CH_{3}COONa$).
+A buffer solution is prepared by mixing 100 cm$^{3}$ of 0.20 mol/dm$^{3}$ ethanoic acid ($CH_{3}COOH$$K_{a} = 1.8 \times 10^{-5}$) with 100 cm$^{3}$ of 0.10 mol/dm$^{3}$ sodium ethanoate ($CH_{3}COONa$).
 
 (a) Calculate the pH of this buffer solution. [4 marks]
 
@@ -114,7 +114,7 @@ $$[CH_{3}COO^{-}] = \frac{0.00200}{0.0550} = 0.0364 \text{ mol/dm}^{3}$$
 
 $$pH = 4.74 + \log\frac{0.0364}{0.100} = 4.74 + \log(0.364) = 4.74 - 0.439 = 4.30$$
 
-(c) The buffer contains a weak acid ($CH_{3}COOH$) and its conjugate base ($CH_{3}COO^{-}$). When a strong acid ($H^{+}$) is added, the $H^{+}$ ions react with $CH_{3}COO^{-}$ to form $CH_{3}COOH$, consuming most of the added $H^{+}$ and preventing a significant drop in pH.
+(c) The buffer contains a weak acid ($CH_{3}COOH$) and its conjugate base ($CH_{3}COO^{-}$). When a strong acid ($H^{+}$) is added, the $H^{+}$ ions react with $CH_{3}COO^{-}$ to form $CH_{3}COOH$Consuming most of the added $H^{+}$ and preventing a significant drop in pH.
 
 ---
 
@@ -162,7 +162,7 @@ Both $Na^{+}$ (conjugate acid of the strong base $NaOH$) and $Cl^{-}$ (conjugate
 
 **Question**
 
-25.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ ammonia solution ($NH_{3}$, $K_{b} = 1.8 \times 10^{-5}$) is titrated with 0.100 mol/dm$^{3}$ hydrochloric acid.
+25.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ ammonia solution ($NH_{3}$$K_{b} = 1.8 \times 10^{-5}$) is titrated with 0.100 mol/dm$^{3}$ hydrochloric acid.
 
 (a) Calculate the pH of the ammonia solution before any acid is added. [3 marks]
 
@@ -282,7 +282,7 @@ The buffer needs $[CH_{3}COO^{-}]/[CH_{3}COOH] = 1.82$.
 
 To prepare 250 cm$^{3}$ (0.250 dm$^{3}$): choose $[CH_{3}COOH] = 0.20$ mol/dm$^{3}$ (from the 0.50 mol/dm$^{3}$ stock by dilution).
 
-Volume of stock needed: $V = \frac{0.20 \times 250}{0.50} = 100$ cm$^{3}$ of 0.50 mol/dm$^{3}$ $CH_{3}COOH$, diluted to 250 cm$^{3}$.
+Volume of stock needed: $V = \frac{0.20 \times 250}{0.50} = 100$ cm$^{3}$ of 0.50 mol/dm$^{3}$ $CH_{3}COOH$Diluted to 250 cm$^{3}$.
 
 $[CH_{3}COO^{-}] = 1.82 \times 0.20 = 0.364$ mol/dm$^{3}$
 
@@ -292,7 +292,7 @@ $n(CH_{3}COO^{-}) = 0.364 \times 0.250 = 0.0910$ mol
 
 Procedure: Dissolve 7.46 g of sodium ethanoate in approximately 150 cm$^{3}$ of distilled water. Add 100 cm$^{3}$ of 0.50 mol/dm$^{3}$ ethanoic acid. Transfer to a 250 cm$^{3}$ volumetric flask and make up to the mark with distilled water. Mix thoroughly.
 
-(c) **Buffer capacity** is the amount of strong acid or strong base that can be added to a buffer solution before the pH changes significantly (typically defined as the amount needed to change the pH by 1 unit).
+(c) **Buffer capacity** is the amount of strong acid or strong base that can be added to a buffer solution before the pH changes significantly ( defined as the amount needed to change the pH by 1 unit).
 
 Buffer capacity can be increased by:
 1. Increasing the **total concentration** of the weak acid and its conjugate base (higher concentrations provide more $H^{+}$ or $OH^{-}$ to absorb).

@@ -73,7 +73,7 @@ The **coordination number** is the total number of coordinate bonds to the centr
 
 | Type | Description | Examples | Denticity |
 |---|---|---|---|
-| Monodentate | One lone pair donor | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$, $\mathrm{CN}^-$ | 1 |
+| Monodentate | One lone pair donor | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$$\mathrm{CN}^-$ | 1 |
 | Bidentate | Two lone pair donors | $\mathrm{NH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{NH}_2$ (en), $\mathrm{C}_2\mathrm{O}_4^{2-}$ (oxalate) | 2 |
 | Hexadentate | Six lone pair donors | $\mathrm{EDTA}^{4-}$ | 6 |
 
@@ -84,8 +84,8 @@ The **chelate effect**: multidentate ligands form more stable complexes than an 
 | Coordination number | Geometry | Example |
 |---|---|---|
 | 4 | Tetrahedral | $[\mathrm{CoCl}_4]^{2-}$ |
-| 6 | Octahedral | $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$, $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ |
-| 4 | Square planar | $[\mathrm{PtCl}_4]^{2-}$, $[\mathrm{Ni(CN})_4]^{2-}$ |
+| 6 | Octahedral | $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$$[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ |
+| 4 | Square planar | $[\mathrm{PtCl}_4]^{2-}$$[\mathrm{Ni(CN})_4]^{2-}$ |
 
 Most first-row transition metal complexes are octahedral or tetrahedral. Square planar geometry is typical for $d^8$ configurations with strong-field ligands (e.g. $\mathrm{Ni}^{2+}$ with $\mathrm{CN}^-$).
 
@@ -93,12 +93,12 @@ Most first-row transition metal complexes are octahedral or tetrahedral. Square 
 
 ### d-Orbital Splitting
 
-In a free ion, all five $d$ orbitals are degenerate (same energy). In an octahedral complex, the six ligands approach along the $x$, $y$, and $z$ axes. The $d$ orbitals that point along these axes ($d_{z^2}$ and $d_{x^2-y^2}$, collectively the $e_g$ set) experience greater electrostatic repulsion from the ligand lone pairs than those that point between the axes ($d_{xy}$, $d_{xz}$, $d_{yz}$, collectively the $t_{2g}$ set).
+In a free ion, all five $d$ orbitals are degenerate (same energy). In an octahedral complex, the six ligands approach along the $x$$y$And $z$ axes. The $d$ orbitals that point along these axes ($d_{z^2}$ and $d_{x^2-y^2}$Collectively the $e_g$ set) experience greater electrostatic repulsion from the ligand lone pairs than those that point between the axes ($d_{xy}$$d_{xz}$$d_{yz}$Collectively the $t_{2g}$ set).
 
 This splits the $d$ orbitals into two energy levels:
 
-- **$e_g$ (higher energy):** $d_{z^2}$, $d_{x^2-y^2}$ -- 2 orbitals
-- **$t_{2g}$ (lower energy):** $d_{xy}$, $d_{xz}$, $d_{yz}$ -- 3 orbitals
+- **$e_g$ (higher energy):** $d_{z^2}$$d_{x^2-y^2}$ -- 2 orbitals
+- **$t_{2g}$ (lower energy):** $d_{xy}$$d_{xz}$$d_{yz}$ -- 3 orbitals
 
 The energy separation is the **crystal field splitting parameter** $\Delta_o$ (octahedral).
 
@@ -106,8 +106,8 @@ The energy separation is the **crystal field splitting parameter** $\Delta_o$ (o
 
 Electrons occupy the $d$ orbitals according to Hund's rule (maximise parallel spins) but must also respect the energy gap $\Delta_o$.
 
-- **Weak-field ligands** (e.g. $\mathrm{H}_2\mathrm{O}$, $\mathrm{F}^-$): $\Delta_o$ is small. Electrons occupy all five orbitals singly before pairing (high-spin configuration). Maximum number of unpaired electrons.
-- **Strong-field ligands** (e.g. $\mathrm{CN}^-$, $\mathrm{NH}_3$ for certain metals): $\Delta_o$ is large. Electrons pair in the lower $t_{2g}$ orbitals before occupying $e_g$ (low-spin configuration). Fewer unpaired electrons.
+- **Weak-field ligands** (e.g. $\mathrm{H}_2\mathrm{O}$$\mathrm{F}^-$): $\Delta_o$ is small. Electrons occupy all five orbitals singly before pairing (high-spin configuration). Maximum number of unpaired electrons.
+- **Strong-field ligands** (e.g. $\mathrm{CN}^-$$\mathrm{NH}_3$ for certain metals): $\Delta_o$ is large. Electrons pair in the lower $t_{2g}$ orbitals before occupying $e_g$ (low-spin configuration). Fewer unpaired electrons.
 
 **Spectrochemical series** (weak field to strong field):
 
@@ -117,7 +117,7 @@ $$
 
 ### Colour of Transition Metal Complexes
 
-Transition metal complexes are coloured because the $d$-$d$ energy gap corresponds to photon energies in the visible region of the electromagnetic spectrum ($\Delta E \approx 1.8\mathrm{--}3.1\,\mathrm{eV}$, corresponding to $\lambda \approx 400\mathrm{--}700\,\mathrm{nm}$).
+Transition metal complexes are coloured because the $d$-$d$ energy gap corresponds to photon energies in the visible region of the electromagnetic spectrum ($\Delta E \approx 1.8\mathrm{--}3.1\,\mathrm{eV}$Corresponding to $\lambda \approx 400\mathrm{--}700\,\mathrm{nm}$).
 
 When white light passes through a complex, photons of energy matching $\Delta_o$ are absorbed to promote electrons from $t_{2g}$ to $e_g$. The complementary colour of the absorbed wavelength is observed.
 
@@ -130,19 +130,19 @@ When white light passes through a complex, photons of energy matching $\Delta_o$
 
 **Key point:** $d^0$ and $d^{10}$ complexes are colourless because there are no $d$-$d$ transitions possible. This is why $\mathrm{Sc}^{3+}$ ($d^0$) and $\mathrm{Zn}^{2+}$ ($d^{10}$) complexes are colourless.
 
-**Effect of ligand substitution on colour:** Changing the ligand changes $\Delta_o$, which shifts the wavelength of light absorbed, changing the observed colour.
+**Effect of ligand substitution on colour:** Changing the ligand changes $\Delta_o$Which shifts the wavelength of light absorbed, changing the observed colour.
 
 $$
 [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + 4\mathrm{NH}_3 \to [\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+} + 4\mathrm{H}_2\mathrm{O}
 $$
 
-Pale blue solution $\to$ deep blue solution (because $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$, increasing $\Delta_o$).
+Pale blue solution $\to$ deep blue solution (because $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$Increasing $\Delta_o$).
 
 ## Ligand Substitution Reactions
 
 Ligand substitution involves the replacement of one ligand by another. The rate depends on the complex:
 
-- **Labile complexes:** substitution is rapid (e.g. most first-row transition metal complexes).
+- **Labile complexes:** substitution is rapid (e.g. Most first-row transition metal complexes).
 - **Inert complexes:** substitution is slow (e.g. $\mathrm{Cr}^{3+}$ and low-spin $\mathrm{Co}^{3+}$ complexes).
 
 ### Acidified Potassium Dichromate(VI)
@@ -153,7 +153,7 @@ $$
 2[\mathrm{Cr}(\mathrm{H}_2\mathrm{O})_6]^{3+} + 3\mathrm{H}_2\mathrm{O}_2 + 8\mathrm{H}^+ \to \mathrm{Cr}_2\mathrm{O}_7^{2-} + 3\mathrm{H}_2\mathrm{O} + 14\mathrm{H}_2\mathrm{O}
 $$
 
-The orange dichromate is reduced back to green $\mathrm{Cr}^{3+}$ by reducing agents (e.g. $\mathrm{Zn}$, $\mathrm{Fe}^{2+}$).
+The orange dichromate is reduced back to green $\mathrm{Cr}^{3+}$ by reducing agents (e.g. $\mathrm{Zn}$$\mathrm{Fe}^{2+}$).
 
 ### Cobalt Complexes
 
@@ -193,7 +193,7 @@ $$
 
 $\mathrm{Fe}^{3+}$ is a moderate oxidising agent; $\mathrm{Fe}^{2+}$ is a moderate reducing agent.
 
-**Test for $\mathrm{Fe}^{2+}$:** Add $\mathrm{NaOH}$ -- green precipitate of $\mathrm{Fe}(\mathrm{OH})_2$, which turns brown on standing as it oxidises to $\mathrm{Fe}(\mathrm{OH})_3$.
+**Test for $\mathrm{Fe}^{2+}$:** Add $\mathrm{NaOH}$ -- green precipitate of $\mathrm{Fe}(\mathrm{OH})_2$Which turns brown on standing as it oxidises to $\mathrm{Fe}(\mathrm{OH})_3$.
 
 **Test for $\mathrm{Fe}^{3+}$:** Add $\mathrm{NaOH}$ -- brown precipitate of $\mathrm{Fe}(\mathrm{OH})_3$. Add $\mathrm{KSCN}$ -- blood-red colour due to $[\mathrm{Fe}(\mathrm{SCN})(\mathrm{H}_2\mathrm{O})_5]^{2+}$.
 
@@ -217,11 +217,11 @@ $$
 2\mathrm{SO}_2 + \mathrm{O}_2 \rightleftharpoons 2\mathrm{SO}_3
 $$
 
-$\mathrm{V}_2\mathrm{O}_5$ provides a surface for the reaction. The mechanism involves reduction of $\mathrm{V}^{5+}$ to $\mathrm{V}^{4+}$ by $\mathrm{SO}_2$, then reoxidation of $\mathrm{V}^{4+}$ to $\mathrm{V}^{5+}$ by $\mathrm{O}_2$.
+$\mathrm{V}_2\mathrm{O}_5$ provides a surface for the reaction. The mechanism involves reduction of $\mathrm{V}^{5+}$ to $\mathrm{V}^{4+}$ by $\mathrm{SO}_2$Then reoxidation of $\mathrm{V}^{4+}$ to $\mathrm{V}^{5+}$ by $\mathrm{O}_2$.
 
 ### Homogeneous Catalysis
 
-The catalyst is in the same phase as the reactants, typically forming an intermediate.
+The catalyst is in the same phase as the reactants, forming an intermediate.
 
 **Autocatalysis:** A reaction in which one of the products catalyses the reaction itself. Example: the $\mathrm{Mn}^{2+}$-catalysed reaction between oxalic acid and potassium manganate(VII). As $\mathrm{Mn}^{2+}$ is produced, it catalyses further reaction, causing an initial slow rate that accelerates.
 
@@ -269,31 +269,31 @@ $$
 | 1 | 1.73 | $\mathrm{Cu}^{2+}$ ($d^9$) |
 | 2 | 2.83 | $\mathrm{V}^{3+}$ ($d^2$) |
 | 3 | 3.87 | $\mathrm{Cr}^{3+}$ ($d^3$), $\mathrm{V}^{2+}$ ($d^3$) |
-| 4 | 4.90 | $\mathrm{Mn}^{2+}$ ($d^5$, high-spin), $\mathrm{Cr}^{2+}$ ($d^4$, high-spin) |
-| 5 | 5.92 | $\mathrm{Mn}^{2+}$ ($d^5$, high-spin), $\mathrm{Fe}^{3+}$ ($d^5$, high-spin) |
+| 4 | 4.90 | $\mathrm{Mn}^{2+}$ ($d^5$High-spin), $\mathrm{Cr}^{2+}$ ($d^4$High-spin) |
+| 5 | 5.92 | $\mathrm{Mn}^{2+}$ ($d^5$High-spin), $\mathrm{Fe}^{3+}$ ($d^5$High-spin) |
 
-Experimental magnetic moments may differ slightly from spin-only values due to orbital contribution (spin-orbit coupling), which adds a small positive correction. For first-row transition metals, the spin-only approximation is usually adequate.
+Experimental magnetic moments may differ slightly from spin-only values due to orbital contribution (spin-orbit coupling), which adds a small positive correction. For first-row transition metals, the spin-only approximation is adequate.
 
 ### Using Magnetism to Distinguish High-Spin and Low-Spin
 
 Magnetic measurements provide experimental evidence for high-spin vs low-spin configurations. Consider $\mathrm{Fe}^{2+}$ ($d^6$):
 
-- **High-spin** (weak field, e.g. $\mathrm{H}_2\mathrm{O}$): $t_{2g}^4\,e_g^2$, 4 unpaired electrons, $\mu \approx 4.90\,\mu_\mathrm{BM}$.
-- **Low-spin** (strong field, e.g. $\mathrm{CN}^-$): $t_{2g}^6\,e_g^0$, 0 unpaired electrons, $\mu \approx 0\,\mu_\mathrm{BM}$.
+- **High-spin** (weak field, e.g. $\mathrm{H}_2\mathrm{O}$): $t_{2g}^4\,e_g^2$4 unpaired electrons, $\mu \approx 4.90\,\mu_\mathrm{BM}$.
+- **Low-spin** (strong field, e.g. $\mathrm{CN}^-$): $t_{2g}^6\,e_g^0$0 unpaired electrons, $\mu \approx 0\,\mu_\mathrm{BM}$.
 
 The difference is dramatic and unambiguous. A $\mathrm{Fe}^{2+}$ complex with $\mu \approx 5\,\mu_\mathrm{BM}$ must be high-spin; one with $\mu \approx 0$ must be low-spin.
 
 **Worked Example.** $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ has $\mu = 5.1\,\mu_\mathrm{BM}$. $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ has $\mu = 0\,\mu_\mathrm{BM}$. Explain.
 
-$[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$: $\mathrm{Fe}^{2+}$ is $d^6$. $\mathrm{H}_2\mathrm{O}$ is a weak-field ligand, so $\Delta_o$ is small. The electrons occupy the $t_{2g}$ set singly first ($t_{2g}^4$), then the $e_g$ set ($e_g^2$), giving 4 unpaired electrons (high-spin). The spin-only value for $n = 4$ is $\sqrt◆LB◆4 \times 6◆RB◆ = 4.90\,\mu_\mathrm{BM}$, close to the experimental $5.1\,\mu_\mathrm{BM}$ (the slight excess is from orbital contribution).
+$[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$: $\mathrm{Fe}^{2+}$ is $d^6$. $\mathrm{H}_2\mathrm{O}$ is a weak-field ligand, so $\Delta_o$ is small. The electrons occupy the $t_{2g}$ set singly first ($t_{2g}^4$), then the $e_g$ set ($e_g^2$), giving 4 unpaired electrons (high-spin). The spin-only value for $n = 4$ is $\sqrt◆LB◆4 \times 6◆RB◆ = 4.90\,\mu_\mathrm{BM}$Close to the experimental $5.1\,\mu_\mathrm{BM}$ (the slight excess is from orbital contribution).
 
 $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$: $\mathrm{CN}^-$ is a strong-field ligand, so $\Delta_o$ is large. All 6 electrons pair in the $t_{2g}$ set ($t_{2g}^6\,e_g^0$), giving 0 unpaired electrons (low-spin, diamagnetic).
 
 ### Tetrahedral Splitting
 
-In a tetrahedral complex, the splitting is the inverse of the octahedral case. The $d$ orbitals pointing between the axes ($t_2$: $d_{xy}$, $d_{xz}$, $d_{yz}$) are closer to the ligands and are higher energy. The orbitals pointing along the axes ($e$: $d_{z^2}$, $d_{x^2-y^2}$) are lower energy. The splitting parameter $\Delta_t \approx \frac{4}{9}\Delta_o$.
+In a tetrahedral complex, the splitting is the inverse of the octahedral case. The $d$ orbitals pointing between the axes ($t_2$: $d_{xy}$$d_{xz}$$d_{yz}$) are closer to the ligands and are higher energy. The orbitals pointing along the axes ($e$: $d_{z^2}$$d_{x^2-y^2}$) are lower energy. The splitting parameter $\Delta_t \approx \frac{4}{9}\Delta_o$.
 
-Because $\Delta_t$ is much smaller than $\Delta_o$, tetrahedral complexes are almost always high-spin. Low-spin tetrahedral complexes are essentially unknown for first-row transition metals.
+Because $\Delta_t$ is much smaller than $\Delta_o$Tetrahedral complexes are almost always high-spin. Low-spin tetrahedral complexes are essentially unknown for first-row transition metals.
 
 ## Detailed Colour and Spectroscopy
 
@@ -305,7 +305,7 @@ $$
 \Delta E = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆
 $$
 
-where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$, $c = 3.00 \times 10^8\,\mathrm{m/s}$, and $\lambda$ is the wavelength in metres.
+Where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$$c = 3.00 \times 10^8\,\mathrm{m/s}$And $\lambda$ is the wavelength in metres.
 
 **Worked Example.** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs at $\lambda = 510\,\mathrm{nm}$ (green). Calculate $\Delta_o$ in $\mathrm{kJ/mol}$.
 
@@ -339,7 +339,7 @@ The observed colour of a complex is the complementary colour of the light absorb
 
 In addition to $d$-$d$ transitions, some complexes exhibit **charge transfer** transitions, which involve the transfer of an electron between the metal and the ligand. These are generally much more intense than $d$-$d$ transitions.
 
-- **Ligand-to-metal charge transfer (LMCT):** An electron moves from a ligand-based orbital to a metal-based orbital. Common in oxoanions: $\mathrm{MnO}_4^-$ (deep purple, $\mathrm{Mn}^{7+}$, $d^0$ -- no $d$-$d$ transitions possible; the colour is entirely due to LMCT), $\mathrm{CrO}_4^{2-}$ (yellow).
+- **Ligand-to-metal charge transfer (LMCT):** An electron moves from a ligand-based orbital to a metal-based orbital. Common in oxoanions: $\mathrm{MnO}_4^-$ (deep purple, $\mathrm{Mn}^{7+}$$d^0$ -- no $d$-$d$ transitions possible; the colour is entirely due to LMCT), $\mathrm{CrO}_4^{2-}$ (yellow).
 - **Metal-to-ligand charge transfer (MLCT):** An electron moves from the metal to the ligand. Less common at A-Level.
 
 Charge transfer transitions explain why some $d^0$ complexes (like $\mathrm{MnO}_4^-$) are intensely coloured despite having no $d$-$d$ transitions.
@@ -413,8 +413,8 @@ Cobalt(II) complexes provide classic examples of both octahedral and tetrahedral
 
 | Complex | Geometry | Colour | Explanation |
 |---|---|---|---|
-| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | Octahedral | Pink | $d^7$, high-spin, 3 unpaired electrons |
-| $[\mathrm{CoCl}_4]^{2-}$ | Tetrahedral | Blue | $d^7$, always high-spin (tetrahedral) |
+| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | Octahedral | Pink | $d^7$High-spin, 3 unpaired electrons |
+| $[\mathrm{CoCl}_4]^{2-}$ | Tetrahedral | Blue | $d^7$Always high-spin (tetrahedral) |
 
 The equilibrium between these two forms is temperature-dependent:
 
@@ -430,13 +430,13 @@ The forward reaction is endothermic, so heating shifts equilibrium to the right 
 
 2. **Writing wrong electron configurations for ions.** Remove $4s$ electrons before $3d$ when forming cations.
 
-3. **Confusing $e_g$ and $t_{2g}$.** The $e_g$ set ($d_{z^2}$, $d_{x^2-y^2}$) is higher energy in octahedral complexes. The $t_{2g}$ set is lower energy.
+3. **Confusing $e_g$ and $t_{2g}$.** The $e_g$ set ($d_{z^2}$$d_{x^2-y^2}$) is higher energy in octahedral complexes. The $t_{2g}$ set is lower energy.
 
 4. **Stating that colour is due to $d$-$d$ transitions without specifying the mechanism.** Be precise: photons are absorbed when electrons are promoted from lower-energy $d$ orbitals to higher-energy $d$ orbitals. The observed colour is the complementary colour of the absorbed light.
 
 5. **Forgetting that $d^0$ and $d^{10}$ complexes are colourless.** There are no $d$-$d$ transitions if there are no $d$ electrons or the $d$ subshell is full.
 
-6. **Assuming tetrahedral complexes can be low-spin.** Because $\Delta_t \approx \frac{4}{9}\Delta_o$, tetrahedral complexes are almost always high-spin for first-row transition metals.
+6. **Assuming tetrahedral complexes can be low-spin.** Because $\Delta_t \approx \frac{4}{9}\Delta_o$Tetrahedral complexes are almost always high-spin for first-row transition metals.
 
 7. **Confusing LMCT with $d$-$d$ transitions.** $\mathrm{MnO}_4^-$ is coloured ($d^0$) due to ligand-to-metal charge transfer, not $d$-$d$ transitions. Always check the $d$ count first.
 
@@ -470,7 +470,7 @@ $$
 \beta_4 = K_1 \times K_2 \times K_3 \times K_4
 $$
 
-Typically $K_1 \gt K_2 \gt K_3 \gt K_4$ because each successive ligand added experiences increasing steric and electrostatic repulsion from the ligands already present.
+ $K_1 \gt K_2 \gt K_3 \gt K_4$ because each successive ligand added experiences increasing steric and electrostatic repulsion from the ligands already present.
 
 ### Haemoglobin and Oxygen Transport
 
@@ -498,8 +498,8 @@ The equilibrium constant for $\mathrm{CO}$ binding is approximately 200 times th
 | $\mathrm{Fe}^{2+}$ | Add $\mathrm{NaOH}$ | Green precipitate of $\mathrm{Fe(OH)}_2$; turns brown on standing (oxidised to $\mathrm{Fe(OH)}_3$) |
 | $\mathrm{Fe}^{3+}$ | Add $\mathrm{NaOH}$ | Red-brown precipitate of $\mathrm{Fe(OH)}_3$ |
 | $\mathrm{Fe}^{3+}$ | Add $\mathrm{KSCN}$ | Blood red solution of $[\mathrm{Fe}(\mathrm{SCN})(\mathrm{H}_2\mathrm{O})_5]^{2+}$ |
-| $\mathrm{Mn}^{2+}$ | Add $\mathrm{NaOH}$, then $\mathrm{H}_2\mathrm{O}_2$ | White precipitate darkens to brown $\mathrm{MnO}_2$ |
-| $\mathrm{Cr}^{3+}$ | Add $\mathrm{NaOH}$ then $\mathrm{H}_2\mathrm{O}_2$, heat | Green solution turns yellow ($\mathrm{CrO}_4^{2-}$) |
+| $\mathrm{Mn}^{2+}$ | Add $\mathrm{NaOH}$Then $\mathrm{H}_2\mathrm{O}_2$ | White precipitate darkens to brown $\mathrm{MnO}_2$ |
+| $\mathrm{Cr}^{3+}$ | Add $\mathrm{NaOH}$ then $\mathrm{H}_2\mathrm{O}_2$Heat | Green solution turns yellow ($\mathrm{CrO}_4^{2-}$) |
 | $\mathrm{Ni}^{2+}$ | Add dimethylglyoxime + $\mathrm{NH}_3$ | Bright red precipitate |
 | $\mathrm{Co}^{2+}$ | Add $\mathrm{SCN}^-$ in acetone | Blue organic layer of $[\mathrm{Co}(\mathrm{SCN})_4]^{2-}$ |
 
@@ -532,7 +532,7 @@ $\mathrm{Ti}^{4+}$ has the configuration $[\mathrm{Ar}]\,3d^0$. With zero $d$ el
 <details>
 <summary>Problem 2</summary>
 
-Write equations for the reactions of $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ with (a) excess $\mathrm{NH}_3$, (b) concentrated $\mathrm{HCl}$, and (c) $\mathrm{NaOH}$. State any observations.
+Write equations for the reactions of $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ with (a) excess $\mathrm{NH}_3$(b) concentrated $\mathrm{HCl}$And (c) $\mathrm{NaOH}$. State any observations.
 
 **Solution:**
 
@@ -569,9 +569,9 @@ $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ is diamagnetic. Explain this observation a
 
 **Solution:**
 
-$\mathrm{Co}^{3+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$. In $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$, $\mathrm{NH}_3$ is a strong-field ligand (high in the spectrochemical series). The large $\Delta_o$ means it is energetically favourable for all 6 electrons to pair in the $t_{2g}$ orbitals ($t_{2g}^6\,e_g^0$) rather than promoting electrons to the $e_g$ set. With zero unpaired electrons, the complex is diamagnetic ($\mu = 0\,\mu_\mathrm{BM}$).
+$\mathrm{Co}^{3+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$. In $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$$\mathrm{NH}_3$ is a strong-field ligand (high in the spectrochemical series). The large $\Delta_o$ means it is energetically favourable for all 6 electrons to pair in the $t_{2g}$ orbitals ($t_{2g}^6\,e_g^0$) rather than promoting electrons to the $e_g$ set. With zero unpaired electrons, the complex is diamagnetic ($\mu = 0\,\mu_\mathrm{BM}$).
 
-Since $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$, $\Delta_o$ is larger for $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ than for $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$. A larger $\Delta_o$ means absorption of higher-energy (shorter wavelength) photons. The absorbed light shifts from the green region (observed: pink) to the blue/violet region, so $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ appears yellow-orange.
+Since $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$$\Delta_o$ is larger for $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ than for $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$. A larger $\Delta_o$ means absorption of higher-energy (shorter wavelength) photons. The absorbed light shifts from the green region (observed: pink) to the blue/violet region, so $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ appears yellow-orange.
 
 </details>
 
@@ -584,7 +584,7 @@ Explain why $\mathrm{MnO}_4^-$ is an intense purple colour despite $\mathrm{Mn}^
 
 $\mathrm{Mn}^{7+}$ has the configuration $[\mathrm{Ar}]\,3d^0$. With zero $d$ electrons, no $d$-$d$ transitions are possible. The intense purple colour of $\mathrm{MnO}_4^-$ is due to **ligand-to-metal charge transfer (LMCT)**. An electron is transferred from a lone pair on one of the oxygen atoms into an empty $d$ orbital on the manganese. This charge transfer transition involves a much larger change in dipole moment than a $d$-$d$ transition, giving it a much higher extinction coefficient (more intense colour).
 
-By contrast, $[\mathrm{Mn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($\mathrm{Mn}^{2+}$, $d^5$, high-spin) is a very pale pink because $d$-$d$ transitions are Laporte-forbidden (centrosymmetric complexes have very weak $d$-$d$ absorption) and because the high-spin $d^5$ configuration has all $d$ orbitals singly occupied, so every $d$-$d$ transition requires an electron to change spin as well as orbital, making it additionally spin-forbidden.
+By contrast, $[\mathrm{Mn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($\mathrm{Mn}^{2+}$$d^5$High-spin) is a very pale pink because $d$-$d$ transitions are Laporte-forbidden (centrosymmetric complexes have very weak $d$-$d$ absorption) and because the high-spin $d^5$ configuration has all $d$ orbitals singly occupied, so every $d$-$d$ transition requires an electron to change spin as well as orbital, making it additionally spin-forbidden.
 
 </details>
 
@@ -634,7 +634,7 @@ $$
 2. The $\mathrm{V}_2\mathrm{O}_5$ is reduced: $\mathrm{V}^{5+} \to \mathrm{V}^{4+}$ as oxygen is transferred to $\mathrm{SO}_2$ to form $\mathrm{SO}_3$.
 3. $\mathrm{O}_2$ from the gas phase re-oxidises the catalyst: $\mathrm{V}^{4+} \to \mathrm{V}^{5+}$.
 
-The catalyst provides an alternative pathway with lower activation energy. The oxidation state of vanadium cycles between +4 and +5. The catalyst is heterogeneous (solid surface), so it provides adsorption sites that weaken the S--O bonds in $\mathrm{SO}_2$ and the O=O bond in $\mathrm{O}_2$, facilitating the reaction.
+The catalyst provides an alternative pathway with lower activation energy. The oxidation state of vanadium cycles between +4 and +5. The catalyst is heterogeneous (solid surface), so it provides adsorption sites that weaken the S--O bonds in $\mathrm{SO}_2$ and the O=O bond in $\mathrm{O}_2$Facilitating the reaction.
 
 </details>
 
@@ -644,14 +644,14 @@ The catalyst provides an alternative pathway with lower activation energy. The o
 
 When a transition metal ion is surrounded by six ligands in an octahedral arrangement, the five degenerate $d$-orbitals split into two energy levels:
 
-- **$t_{2g}$ orbitals** ($d_{xy}$, $d_{xz}$, $d_{yz}$): Lower energy. These orbitals point between the ligands and experience less repulsion.
-- **$e_g$ orbitals** ($d_{x^2-y^2}$, $d_{z^2}$): Higher energy. These orbitals point directly at the ligands and experience more repulsion.
+- **$t_{2g}$ orbitals** ($d_{xy}$$d_{xz}$$d_{yz}$): Lower energy. These orbitals point between the ligands and experience less repulsion.
+- **$e_g$ orbitals** ($d_{x^2-y^2}$$d_{z^2}$): Higher energy. These orbitals point directly at the ligands and experience more repulsion.
 
 The energy difference between the two sets is the crystal field splitting energy, $\Delta_o$ (or $10\mathrm{Dq}$).
 
 ### Crystal Field Stabilisation Energy (CFSE)
 
-The CFSE is the net energy lowering of the $d$-electrons relative to the hypothetical spherical field (where all five $d$-orbitals are degenerate). Each $t_{2g}$ electron stabilises the complex by $-0.4\Delta_o$, and each $e_g$ electron destabilises it by $+0.6\Delta_o$.
+The CFSE is the net energy lowering of the $d$-electrons relative to the hypothetical spherical field (where all five $d$-orbitals are degenerate). Each $t_{2g}$ electron stabilises the complex by $-0.4\Delta_o$And each $e_g$ electron destabilises it by $+0.6\Delta_o$.
 
 **Worked Example: CFSE of $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{2+}$**
 
@@ -663,7 +663,7 @@ $$t_{2g}^4\,e_g^2$$
 
 $$\text{CFSE} = 4(-0.4\Delta_o) + 2(0.6\Delta_o) = -1.6\Delta_o + 1.2\Delta_o = -0.4\Delta_o$$
 
-For $\mathrm{H}_2\mathrm{O}$, $\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
+For $\mathrm{H}_2\mathrm{O}$$\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -0.4 \times 10400 = -4160\,\mathrm{cm}^{-1}$$
 
@@ -677,7 +677,7 @@ $$t_{2g}^6\,e_g^0$$
 
 $$\text{CFSE} = 6(-0.4\Delta_o) + 0(0.6\Delta_o) = -2.4\Delta_o$$
 
-For $\mathrm{CN}^-$, $\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
+For $\mathrm{CN}^-$$\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -2.4 \times 33000 = -79200\,\mathrm{cm}^{-1}$$
 
@@ -725,17 +725,17 @@ Ligand exchange involves the substitution of one ligand for another in a transit
 
 $$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq) + 4\mathrm{NH}_3(aq) \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l)$$
 
-This reaction is easily observed: the pale blue $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ion turns deep blue when $\mathrm{NH}_3$ is added.
+This reaction is observed: the pale blue $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ion turns deep blue when $\mathrm{NH}_3$ is added.
 
 ### Factors Affecting Ligand Exchange
 
-1. **Ligand field strength:** Stronger ligands (higher in the spectrochemical series) displace weaker ligands. $\mathrm{CN}^-$ displaces $\mathrm{H}_2\mathrm{O}$, but $\mathrm{H}_2\mathrm{O}$ does not displace $\mathrm{CN}^-$.
+1. **Ligand field strength:** Stronger ligands (higher in the spectrochemical series) displace weaker ligands. $\mathrm{CN}^-$ displaces $\mathrm{H}_2\mathrm{O}$But $\mathrm{H}_2\mathrm{O}$ does not displace $\mathrm{CN}^-$.
 
 2. **Concentration:** Adding a large excess of the incoming ligand drives the equilibrium towards the substituted complex.
 
 3. **Steric effects:** Bulky ligands may be unable to coordinate due to steric hindrance, even if they are stronger field ligands.
 
-4. **Entropy:** If the exchange increases the number of particles (e.g. bidentate replacing two monodentate ligands), the entropy change favours the substitution (chelate effect).
+4. **Entropy:** If the exchange increases the number of particles (e.g. Bidentate replacing two monodentate ligands), the entropy change favours the substitution (chelate effect).
 
 ### The Chelate Effect
 
@@ -749,7 +749,7 @@ The chelate effect is partly entropic: one bidentate ligand replacing two monode
 
 ### Worked Example: Stepwise Ligand Exchange
 
-When concentrated $\mathrm{HCl}$ is added to $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq)$, the following stepwise substitutions occur:
+When concentrated $\mathrm{HCl}$ is added to $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}(aq)$The following stepwise substitutions occur:
 
 $$[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + \mathrm{Cl}^- \rightleftharpoons [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_5\mathrm{Cl}]^+ + \mathrm{H}_2\mathrm{O}$$
 
@@ -842,7 +842,7 @@ Explain what is meant by the term ligand. Give one example of a bidentate ligand
 
 A ligand is a molecule or ion that can donate a lone pair of electrons to a transition metal ion to form a coordinate (dative covalent) bond (1 mark).
 
-Example of a bidentate ligand: ethane-1,2-diamine ($\mathrm{H}_2\mathrm{NCH}_2\mathrm{CH}_2\mathrm{NH}_2$, "en") or oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$) (1 mark).
+Example of a bidentate ligand: ethane-1,2-diamine ($\mathrm{H}_2\mathrm{NCH}_2\mathrm{CH}_2\mathrm{NH}_2$"en") or oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$) (1 mark).
 
 Bidentate ligands form more stable complexes because of the chelate effect: the entropy change is more favourable (one ligand replaces two, releasing two molecules) and the chelate ring structure provides additional stability through the macrocyclic effect (1 mark for entropy, 1 mark for ring structure).
 
@@ -857,9 +857,9 @@ The complex $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ is diamagnetic, whereas $[\mat
 
 $\mathrm{Co}^{3+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$ (1 mark).
 
-$\mathrm{NH}_3$ is a strong-field ligand (high in the spectrochemical series), so $\Delta_o$ is large (1 mark). The pairing energy is less than $\Delta_o$, so all six $d$-electrons pair in the $t_{2g}$ orbitals: $t_{2g}^6\,e_g^0$ (low-spin, diamagnetic) (1 mark).
+$\mathrm{NH}_3$ is a strong-field ligand (high in the spectrochemical series), so $\Delta_o$ is large (1 mark). The pairing energy is less than $\Delta_o$So all six $d$-electrons pair in the $t_{2g}$ orbitals: $t_{2g}^6\,e_g^0$ (low-spin, diamagnetic) (1 mark).
 
-$\mathrm{F}^-$ is a weak-field ligand, so $\Delta_o$ is small (1 mark). The pairing energy is greater than $\Delta_o$, so the electrons occupy both $t_{2g}$ and $e_g$ orbitals following Hund's rule: $t_{2g}^4\,e_g^2$ (high-spin, paramagnetic with four unpaired electrons) (1 mark).
+$\mathrm{F}^-$ is a weak-field ligand, so $\Delta_o$ is small (1 mark). The pairing energy is greater than $\Delta_o$So the electrons occupy both $t_{2g}$ and $e_g$ orbitals following Hund's rule: $t_{2g}^4\,e_g^2$ (high-spin, paramagnetic with four unpaired electrons) (1 mark).
 
 </details>
 
@@ -873,3 +873,7 @@ Ready to test your understanding of **Transition Metals**? The [diagnostic test]
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

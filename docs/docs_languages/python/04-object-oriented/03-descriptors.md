@@ -6,16 +6,16 @@ slug: descriptors
 ---
 ## Descriptor Protocol
 
-Descriptors are the mechanism behind `property`, `classmethod`, `staticmethod`, and the entire
-attribute access system in Python. A descriptor is any object that implements at least one of
-`__get__`, `__set__`, or `__delete__`.
+Descriptors are the mechanism behind `property``classmethod``staticmethod`And the entire
+Attribute access system in Python. A descriptor is any object that implements at least one of
+`__get__``__set__`Or `__delete__`.
 
 ### Data vs Non-Data Descriptors
 
-| Type                | Methods                               | Behavior                                       |
+| Type | Methods | Behavior |
 | ------------------- | ------------------------------------- | ---------------------------------------------- |
-| Non-data descriptor | `__get__` only                        | Instance attribute takes precedence            |
-| Data descriptor     | `__get__` + `__set__` or `__delete__` | Descriptor always wins over instance attribute |
+| Non-data descriptor | `__get__` only | Instance attribute takes precedence |
+| Data descriptor | `__get__` + `__set__` or `__delete__` | Descriptor always wins over instance attribute |
 
 This distinction is fundamental to understanding Python's attribute lookup.
 
@@ -60,7 +60,7 @@ print(e.data)        # DataDescriptor for data (descriptor wins)
 
 ### Attribute Lookup Order
 
-When you access `obj.attr`, Python follows this order:
+When you access `obj.attr`Python follows this order:
 
 1. **`type(obj).__mro__`** — Search the MRO for a data descriptor with name `attr`.
 2. **`obj.__dict__`** — Check the instance dictionary.
@@ -165,7 +165,7 @@ class Property:
 ### cached_property
 
 `functools.cached_property` (Python 3.8+) caches the result of a property on the instance. It is a
-non-data descriptor:
+Non-data descriptor:
 
 ```python
 from functools import cached_property
@@ -209,7 +209,7 @@ Both are implemented as descriptors.
 ### classmethod
 
 `classmethod` transforms a method so it receives the class as its first argument instead of the
-instance:
+Instance:
 
 ```python
 class Database:
@@ -274,7 +274,7 @@ print(MathUtils.is_prime(17))         # True
 ```
 
 `staticmethod` is also a descriptor, but a simple one — it just returns the original function
-without binding:
+Without binding:
 
 ```python
 class StaticMethod:
@@ -287,14 +287,14 @@ class StaticMethod:
 
 :::tip
 Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
-when you need the class (e.g., for alternative constructors). Use a regular method when you need the
-instance.
+When you need the class (e.g., for alternative constructors). Use a regular method when you need the
+Instance.
 :::
 
 ## \_\_slots\_\_
 
 `__slots__` replaces the instance `__dict__` with a fixed set of attribute descriptors, saving
-memory and preventing dynamic attribute creation:
+Memory and preventing dynamic attribute creation:
 
 ```python
 class Point:
@@ -337,18 +337,18 @@ wsl_list = [WithSlots(i, i) for i in range(100000)]
 ```
 
 On CPython 3.12, a slotted instance with two attributes uses ~48 bytes versus ~56 bytes for a
-regular instance (which includes the `__dict__` overhead). The savings are more significant when you
-have many instances.
+Regular instance (which includes the `__dict__` overhead). The savings are more significant when you
+Have many instances.
 
 ### **slots** Rules
 
-1. **All parent classes must also use `__slots__`** — If a parent has `__dict__`, the child will
-   too, negating the benefit.
+1. **All parent classes must also use `__slots__`** — If a parent has `__dict__`The child will
+ too, negating the benefit.
 2. **`__slots__` is inherited** — A child class gets the parent's slots plus its own.
 3. **You cannot add attributes not in `__slots__`** — This is the whole point.
 4. **`__slots__` must contain strings** — Not expressions.
 5. **`__dict__` and `__weakref__` are special** — You can add them to `__slots__` to enable dynamic
-   attributes or weak references.
+ attributes or weak references.
 
 ```python
 class Base:
@@ -373,7 +373,7 @@ f.dynamic = "allowed"  # Stored in __dict__
 
 :::warning
 `__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
-work correctly. Always test serialization with your chosen protocol when using `__slots__`.
+Work correctly. Always test serialization with your chosen protocol when using `__slots__`.
 :::
 
 ## \_\_getattr\_\_ and \_\_getattribute\_\_
@@ -424,9 +424,9 @@ print(s.x)        # Works
 ```
 
 :::danger
-When implementing `__getattribute__`, you **must** use
+When implementing `__getattribute__`You **must** use
 `object.__getattribute__(self, name)` for any attribute access within the method. Using `self.name`
-will cause infinite recursion because it triggers `__getattribute__` again.
+Will cause infinite recursion because it triggers `__getattribute__` again.
 :::
 
 ## \_\_setattr\_\_ and \_\_delattr\_\_
@@ -499,7 +499,7 @@ print(dir(client))  # Shows only public attributes and methods
 ### functools.total_ordering
 
 `@total_ordering` fills in the remaining comparison methods when you define `__eq__` and one of
-`__lt__`, `__le__`, `__gt__`, or `__ge__`:
+`__lt__``__le__``__gt__`Or `__ge__`:
 
 ```python
 from functools import total_ordering
@@ -535,13 +535,13 @@ print(v1 >= v2)  # False (generated)
 
 :::warning
 `@total_ordering` adds overhead because each generated method calls the others. For
-performance-critical code, implement all six comparison methods explicitly.
+Performance-critical code, implement all six comparison methods explicitly.
 :::
 
 ### functools.singledispatchmethod
 
 `@singledispatchmethod` (Python 3.8+) provides method overloading based on the type of the first
-argument:
+Argument:
 
 ```python
 from functools import singledispatchmethod
@@ -800,7 +800,7 @@ print(e.value)  # 0 — the descriptor's __set__ ignores the assignment
 
 If you need to allow override, make it a non-data descriptor (implement only `__get__`).
 
-### 3. cached_property and Pickle
+### 3. Cached_property and Pickle
 
 ```python
 from functools import cached_property
@@ -860,7 +860,7 @@ class Good:
 ### 6. Descriptor on the Instance
 
 Descriptors only work when defined on the **class** (or a base class). Assigning a descriptor to an
-instance attribute does nothing special:
+Instance attribute does nothing special:
 
 ```python
 class Desc:
@@ -878,7 +878,7 @@ print(e.class_level)     # descriptor
 print(e.instance_level)  # <Desc object at 0x...> — just a regular object
 ```
 
-### 7. property Getter Returning None vs Not Set
+### 7. Property Getter Returning None vs Not Set
 
 ```python
 class Tricky:
@@ -894,3 +894,11 @@ t = Tricky()
 print(t.value)  # None — was it set to None or never set?
 # There's no way to tell with property alone. Track state explicitly if needed.
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

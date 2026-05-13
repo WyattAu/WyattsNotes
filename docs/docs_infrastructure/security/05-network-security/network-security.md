@@ -8,23 +8,23 @@ sidebar_position: 6
 ## Firewalls
 
 A firewall is a network security device or software that monitors and filters incoming and outgoing
-network traffic based on an organization's security policies.
+Network traffic based on an organization's security policies.
 
 ### Firewall Types
 
-| Type                   | OSI Layer    | Inspection Depth                       | Example                              |
+| Type | OSI Layer | Inspection Depth | Example |
 | ---------------------- | ------------ | -------------------------------------- | ------------------------------------ |
-| Packet filtering       | L3 (Network) | Source/destination IP, port, protocol  | iptables, nftables, PF               |
-| Stateful inspection    | L3-L4        | Connection state tracking              | iptables with conntrack, PF          |
-| Application-layer      | L7           | Application protocol content           | ModSecurity, AWS WAF                 |
-| Next-generation (NGFW) | L3-L7        | All of the above + IPS, TLS inspection | Palo Alto, Fortinet, pfSense         |
-| Web Application (WAF)  | L7           | HTTP/HTTPS request/response            | Cloudflare WAF, AWS WAF, ModSecurity |
+| Packet filtering | L3 (Network) | Source/destination IP, port, protocol | iptables, nftables, PF |
+| Stateful inspection | L3-L4 | Connection state tracking | iptables with conntrack, PF |
+| Application-layer | L7 | Application protocol content | ModSecurity, AWS WAF |
+| Next-generation (NGFW) | L3-L7 | All of the above + IPS, TLS inspection | Palo Alto, Fortinet, pfSense |
+| Web Application (WAF) | L7 | HTTP/HTTPS request/response | Cloudflare WAF, AWS WAF, ModSecurity |
 
 ### Stateful Inspection
 
 Stateful firewalls maintain a connection table that tracks the state of each connection. They
-understand the difference between a new connection, an established connection, and a related
-connection.
+Understand the difference between a new connection, an established connection, and a related
+Connection.
 
 ```bash
 # nftables example: stateful firewall rules
@@ -52,18 +52,18 @@ nft add rule inet filter input log prefix "nft-drop: " drop
 ### Web Application Firewall (WAF)
 
 A WAF operates at layer 7 and inspects HTTP/HTTPS traffic for malicious payloads. It is the last
-line of defense against web application attacks (after secure coding practices and input
-validation).
+Line of defense against web application attacks (after secure coding practices and input
+Validation).
 
 **WAF rules target specific attack patterns:**
 
-| Attack Type      | WAF Detection Pattern                         |
+| Attack Type | WAF Detection Pattern |
 | ---------------- | --------------------------------------------- |
-| SQL injection    | `' OR`, `UNION SELECT`, `--`, `; DROP`        |
-| XSS              | `<script`, `onerror=`, `javascript:`          |
-| Path traversal   | `../`, `%2e%2e%2f`, `..%2f`                   |
-| Remote code exec | `eval(`, `exec(`, `system(`, `cmd=`           |
-| SSRF             | `169.254.169.254`, `metadata.google.internal` |
+| SQL injection | `' OR``UNION SELECT``--``; DROP` |
+| XSS | `<script``onerror=``javascript:` |
+| Path traversal | `../``%2e%2e%2f``..%2f` |
+| Remote code exec | `eval(``exec(``system(``cmd=` |
+| SSRF | `169.254.169.254``metadata.google.internal` |
 
 **WAF limitations:**
 
@@ -76,8 +76,8 @@ validation).
 ### Default Deny
 
 The most important firewall principle: **default deny**. All traffic is denied unless explicitly
-allowed. The alternative (default allow) requires you to enumerate every possible attack, which is
-impossible.
+Allowed. The alternative (default allow) requires you to enumerate every possible attack, which is
+Impossible.
 
 ```bash
 # Default deny (correct)
@@ -93,15 +93,15 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ## Network Segmentation
 
 Network segmentation divides a network into smaller zones with different security policies. Each
-zone represents a trust boundary.
+Zone represents a trust boundary.
 
 ### Segmentation Models
 
 #### VLAN-based Segmentation
 
 VLANs (Virtual Local Area Networks) operate at layer 2 and segment a physical network into logical
-broadcast domains. Traffic between VLANs must pass through a router or layer 3 switch, where
-firewall rules can be applied.
+Broadcast domains. Traffic between VLANs must pass through a router or layer 3 switch, where
+Firewall rules can be applied.
 
 ```
 VLAN 10: Management (switches, hypervisors, IPMI)
@@ -123,7 +123,7 @@ bridge vlan add dev br0 vid 10 pvid untagged
 #### DMZ Architecture
 
 A DMZ (Demilitarized Zone) is a network segment that sits between the internal network and the
-internet, hosting publicly accessible services.
+Internet, hosting publicly accessible services.
 
 ```mermaid
 graph LR
@@ -140,27 +140,27 @@ graph LR
 
 **DMZ firewall rules:**
 
-| Direction            | Rule                             |
+| Direction | Rule |
 | -------------------- | -------------------------------- |
-| Internet to DMZ      | Allow specific ports (80, 443)   |
-| DMZ to Internet      | Allow established connections    |
-| DMZ to Internal      | Allow specific ports to app tier |
-| Internal to DMZ      | Allow established connections    |
-| Internal to Internet | Allow outbound (proxy/NAT)       |
-| Internet to Internal | Deny all                         |
+| Internet to DMZ | Allow specific ports (80, 443) |
+| DMZ to Internet | Allow established connections |
+| DMZ to Internal | Allow specific ports to app tier |
+| Internal to DMZ | Allow established connections |
+| Internal to Internet | Allow outbound (proxy/NAT) |
+| Internet to Internal | Deny all |
 
 #### Microsegmentation
 
 Microsegmentation applies security policies at the workload level (container, VM, process) rather
-than the network level. It is the network-level implementation of zero trust.
+Than the network level. It is the network-level implementation of zero trust.
 
-| Technology               | Environment    | Mechanism                     |
+| Technology | Environment | Mechanism |
 | ------------------------ | -------------- | ----------------------------- |
-| Kubernetes NetworkPolicy | Kubernetes     | Pod-to-pod rules              |
-| Istio/Envoy              | Service mesh   | mTLS + authorization policies |
-| Calico                   | Kubernetes     | eBPF-based network policy     |
-| VMware NSX               | Virtualization | VM-level microsegmentation    |
-| AWS Security Groups      | Cloud          | ENI-level rules               |
+| Kubernetes NetworkPolicy | Kubernetes | Pod-to-pod rules |
+| Istio/Envoy | Service mesh | mTLS + authorization policies |
+| Calico | Kubernetes | eBPF-based network policy |
+| VMware NSX | Virtualization | VM-level microsegmentation |
+| AWS Security Groups | Cloud | ENI-level rules |
 
 ```yaml
 # Kubernetes NetworkPolicy: deny all ingress to database, allow only from app pod
@@ -188,22 +188,22 @@ spec:
 ## Virtual Private Networks (VPN)
 
 A VPN creates an encrypted tunnel over a public network, allowing secure communication between
-remote hosts and a private network.
+Remote hosts and a private network.
 
 ### VPN Protocols
 
-| Protocol  | Encryption        | Speed     | Audit Status            | Key Feature                         |
+| Protocol | Encryption | Speed | Audit Status | Key Feature |
 | --------- | ----------------- | --------- | ----------------------- | ----------------------------------- |
-| WireGuard | ChaCha20-Poly1305 | Very fast | Small, audited codebase | Modern, minimal, kernel-integrated  |
-| IPsec     | AES-GCM, IKEv2    | Fast      | Mature, complex         | Suite of protocols, OS-native       |
-| OpenVPN   | AES-256-GCM       | Moderate  | Mature, audited         | Flexible, TLS-based                 |
-| SSTP      | TLS 1.2+          | Moderate  | Microsoft               | Windows-native, traverses firewalls |
+| WireGuard | ChaCha20-Poly1305 | Very fast | Small, audited codebase | Modern, minimal, kernel-integrated |
+| IPsec | AES-GCM, IKEv2 | Fast | Mature, complex | Suite of protocols, OS-native |
+| OpenVPN | AES-256-GCM | Moderate | Mature, audited | Flexible, TLS-based |
+| SSTP | TLS 1.2+ | Moderate | Microsoft | Windows-native, traverses firewalls |
 
 ### WireGuard
 
 WireGuard is the recommended VPN protocol for new deployments. It is simple (4,000 lines of kernel
-code vs OpenVPN's 100,000+), fast (in-kernel, modern crypto), and secure (formally verified subset,
-small attack surface).
+Code vs OpenVPN's 100,000+), fast (in-kernel, modern crypto), and secure (formally verified subset,
+Small attack surface).
 
 ```ini
 # /etc/wireguard/wg0.conf (server)
@@ -236,7 +236,7 @@ PersistentKeepalive = 25
 ### IPsec
 
 IPsec operates at the network layer (L3) and provides site-to-site and remote access VPN. It
-consists of two protocols:
+Consists of two protocols:
 
 - **IKE (Internet Key Exchange)**: Manages key negotiation (IKEv2 is current)
 - **ESP (Encapsulating Security Payload)**: Provides encryption and authentication
@@ -266,21 +266,21 @@ conn site-to-site
 
 ### IDS vs IPS
 
-| Aspect     | IDS (Detection)               | IPS (Prevention)                       |
+| Aspect | IDS (Detection) | IPS (Prevention) |
 | ---------- | ----------------------------- | -------------------------------------- |
-| Action     | Alerts on suspicious activity | Actively blocks suspicious traffic     |
-| Deployment | Span port, tap (passive)      | Inline (active)                        |
-| Risk       | Low (no traffic impact)       | Higher (false positives block traffic) |
-| Visibility | Full traffic visibility       | May miss encrypted traffic             |
+| Action | Alerts on suspicious activity | Actively blocks suspicious traffic |
+| Deployment | Span port, tap (passive) | Inline (active) |
+| Risk | Low (no traffic impact) | Higher (false positives block traffic) |
+| Visibility | Full traffic visibility | May miss encrypted traffic |
 
 ### Detection Methods
 
-| Method          | How It Works                                    | Strengths                | Weaknesses                  |
+| Method | How It Works | Strengths | Weaknesses |
 | --------------- | ----------------------------------------------- | ------------------------ | --------------------------- |
-| Signature-based | Matches known attack patterns                   | Low false positive rate  | Cannot detect novel attacks |
-| Anomaly-based   | Establishes baseline, flags deviations          | Detects unknown attacks  | High false positive rate    |
-| Heuristic-based | Analyzes protocol behavior and traffic patterns | Good at protocol attacks | Requires tuning             |
-| Behavior-based  | Monitors system/process behavior                | Detects lateral movement | Complex to configure        |
+| Signature-based | Matches known attack patterns | Low false positive rate | Cannot detect novel attacks |
+| Anomaly-based | Establishes baseline, flags deviations | Detects unknown attacks | High false positive rate |
+| Heuristic-based | Analyzes protocol behavior and traffic patterns | Good at protocol attacks | Requires tuning |
+| Behavior-based | Monitors system/process behavior | Detects lateral movement | Complex to configure |
 
 ### Snort / Suricata
 
@@ -301,8 +301,8 @@ drop ip [192.0.2.1, 198.51.100.0/24] any -> $HOME_NET any (msg:"Known Malicious 
 ### Zeek (Bro)
 
 Zeek is a network analysis framework that provides protocol-level analysis rather than signature
-matching. It logs all network activity and generates detailed connection, DNS, HTTP, SSL, and file
-transfer logs.
+Matching. It logs all network activity and generates detailed connection, DNS, HTTP, SSL, and file
+Transfer logs.
 
 ```zeek
 # Zeek script to detect SSH brute force
@@ -322,17 +322,17 @@ event ssh_auth_failed(c: connection, auth: bool, msg: string) {
 ## Zero Trust Networking
 
 Zero trust networking eliminates implicit trust based on network location. Every request must be
-authenticated, authorized, and encrypted regardless of where it originates.
+Authenticated, authorized, and encrypted regardless of where it originates.
 
 ### BeyondCorp Model
 
 Google's BeyondCorp (published in 2014) is the foundational model for zero trust networking. Its
-principles:
+Principles:
 
 1. **Authenticate, not authorize**: Every device and user must authenticate before accessing any
-   resource
+ resource
 2. **Access based on device and user state**: Not just credentials, but device posture, location,
-   and behavior
+ and behavior
 3. **No special network access**: VPNs are replaced by per-application access
 4. **Dynamic access control**: Policies are evaluated per-request, not per-connection
 
@@ -352,13 +352,13 @@ graph TD
 
 **Components:**
 
-| Component                | Purpose                                   | Implementation                   |
+| Component | Purpose | Implementation |
 | ------------------------ | ----------------------------------------- | -------------------------------- |
-| Identity Provider        | Centralized authentication + device trust | Okta, Azure AD, Keycloak         |
-| Policy Engine            | Evaluate access requests against policies | OPA, Cedar, custom               |
-| Policy Enforcement Point | Enforce decisions at the resource         | Envoy, service mesh, API gateway |
-| Access Proxy             | Per-application secure access             | BeyondCorp Enterprise, Tailscale |
-| Device Trust             | Evaluate device health and compliance     | MDM, certificates, posture       |
+| Identity Provider | Centralized authentication + device trust | Okta, Azure AD, Keycloak |
+| Policy Engine | Evaluate access requests against policies | OPA, Cedar, custom |
+| Policy Enforcement Point | Enforce decisions at the resource | Envoy, service mesh, API gateway |
+| Access Proxy | Per-application secure access | BeyondCorp Enterprise, Tailscale |
+| Device Trust | Evaluate device health and compliance | MDM, certificates, posture |
 
 ### Tailscale as Zero Trust
 
@@ -391,14 +391,14 @@ Tailscale is a WireGuard-based mesh VPN that implements zero trust principles:
 ### DNSSEC
 
 DNSSEC (Domain Name System Security Extensions) adds cryptographic signatures to DNS records,
-enabling DNS response authentication. It prevents DNS cache poisoning and spoofing.
+Enabling DNS response authentication. It prevents DNS cache poisoning and spoofing.
 
-| Record Type | Purpose                                                 |
+| Record Type | Purpose |
 | ----------- | ------------------------------------------------------- |
-| DNSKEY      | Public key for the zone                                 |
-| RRSIG       | Signature over a record set (RRset)                     |
-| DS          | Delegation signer — links child zone to parent          |
-| NSEC/NSEC3  | Proves non-existence of a record (authenticated denial) |
+| DNSKEY | Public key for the zone |
+| RRSIG | Signature over a record set (RRset) |
+| DS | Delegation signer — links child zone to parent |
+| NSEC/NSEC3 | Proves non-existence of a record (authenticated denial) |
 
 **Chain of trust:**
 
@@ -413,18 +413,18 @@ Root Zone (trust anchor)
 
 | Protocol | Port | Encryption | Standard |
 | -------- | ---- | ---------- | -------- |
-| DoH      | 443  | HTTPS      | RFC 8484 |
-| DoT      | 853  | TLS        | RFC 7858 |
+| DoH | 443 | HTTPS | RFC 8484 |
+| DoT | 853 | TLS | RFC 7858 |
 
 Both encrypt DNS queries between the client and the resolver, preventing eavesdropping and
-manipulation of DNS responses in transit. They do not encrypt queries between the resolver and the
-authoritative name server.
+Manipulation of DNS responses in transit. They do not encrypt queries between the resolver and the
+Authoritative name server.
 
 :::warning
 
 DoH/DoT protect against network-level DNS interception but do not prevent the resolver itself from
-logging, filtering, or manipulating queries. Choose a resolver you trust (e.g., your own), and
-understand the privacy policy of any third-party resolver.
+Logging, filtering, or manipulating queries. Choose a resolver you trust (e.g., your own), and
+Understand the privacy policy of any third-party resolver.
 
 :::
 
@@ -434,11 +434,11 @@ understand the privacy policy of any third-party resolver.
 
 These three standards work together to prevent email spoofing and phishing.
 
-| Standard | Full Name                    | Purpose                                              |
+| Standard | Full Name | Purpose |
 | -------- | ---------------------------- | ---------------------------------------------------- |
-| SPF      | Sender Policy Framework      | Authorizes which mail servers can send from a domain |
-| DKIM     | DomainKeys Identified Mail   | Cryptographically signs outgoing email               |
-| DMARC    | Domain-based Message Auth... | Policy for handling unauthenticated email            |
+| SPF | Sender Policy Framework | Authorizes which mail servers can send from a domain |
+| DKIM | DomainKeys Identified Mail | Cryptographically signs outgoing email |
+| DMARC | Domain-based Message Auth... | Policy for handling unauthenticated email |
 
 **SPF record:**
 
@@ -460,62 +460,62 @@ selector._domainkey.example.com. IN TXT (
 _dmarc.example.com. IN TXT "v=DMARC1; p=reject; rua=mailto:dmarc@example.com; pct=100"
 ```
 
-| DMARC Policy | Action                            |
+| DMARC Policy | Action |
 | ------------ | --------------------------------- |
-| `none`       | Monitor only, deliver all mail    |
+| `none` | Monitor only, deliver all mail |
 | `quarantine` | Send unauthenticated mail to spam |
-| `reject`     | Reject unauthenticated mail       |
+| `reject` | Reject unauthenticated mail |
 
 ### Email Encryption
 
-| Protocol       | Purpose                            | Standard |
+| Protocol | Purpose | Standard |
 | -------------- | ---------------------------------- | -------- |
 | TLS (STARTTLS) | Encrypt in transit between servers | RFC 3207 |
-| S/MIME         | End-to-end encryption + signing    | RFC 5751 |
-| PGP/GPG        | End-to-end encryption + signing    | RFC 4880 |
+| S/MIME | End-to-end encryption + signing | RFC 5751 |
+| PGP/GPG | End-to-end encryption + signing | RFC 4880 |
 
 ## Network Monitoring and SIEM
 
 ### Security Information and Event Management (SIEM)
 
 A SIEM system collects, aggregates, and correlates security events from across the infrastructure to
-detect threats, investigate incidents, and demonstrate compliance.
+Detect threats, investigate incidents, and demonstrate compliance.
 
-| SIEM Component | Function                                                     |
+| SIEM Component | Function |
 | -------------- | ------------------------------------------------------------ |
-| Collection     | Ingest logs from servers, firewalls, applications, endpoints |
-| Normalization  | Parse logs into a common format                              |
-| Correlation    | Identify related events across sources                       |
-| Detection      | Apply rules and ML models to identify threats                |
-| Alerting       | Notify security team of detected threats                     |
-| Investigation  | Provide search, visualization, and timeline tools            |
-| Reporting      | Generate compliance and operational reports                  |
+| Collection | Ingest logs from servers, firewalls, applications, endpoints |
+| Normalization | Parse logs into a common format |
+| Correlation | Identify related events across sources |
+| Detection | Apply rules and ML models to identify threats |
+| Alerting | Notify security team of detected threats |
+| Investigation | Provide search, visualization, and timeline tools |
+| Reporting | Generate compliance and operational reports |
 
 ### SIEM Tools
 
-| Tool                   | Deployment         | Best For                            |
+| Tool | Deployment | Best For |
 | ---------------------- | ------------------ | ----------------------------------- |
-| Splunk                 | Self-hosted, cloud | Large enterprises, custom use cases |
-| Elastic Security (ELK) | Self-hosted, cloud | Open source, log analytics          |
-| Microsoft Sentinel     | Cloud              | Microsoft/Azure environments        |
-| Datadog Security       | Cloud              | Datadog users, cloud-native         |
-| Wazuh                  | Self-hosted        | Open source, compliance-focused     |
-| Graylog                | Self-hosted        | Open source, simpler setup          |
+| Splunk | Self-hosted, cloud | Large enterprises, custom use cases |
+| Elastic Security (ELK) | Self-hosted, cloud | Open source, log analytics |
+| Microsoft Sentinel | Cloud | Microsoft/Azure environments |
+| Datadog Security | Cloud | Datadog users, cloud-native |
+| Wazuh | Self-hosted | Open source, compliance-focused |
+| Graylog | Self-hosted | Open source, simpler setup |
 
 ### Log Sources
 
 Every security-relevant system should feed into the SIEM:
 
-| Source                 | Events                                            |
+| Source | Events |
 | ---------------------- | ------------------------------------------------- |
-| Firewalls              | Allowed/denied connections, NAT translations      |
-| DNS servers            | Queries, responses, NXDOMAIN records              |
-| Web servers            | Access logs, error logs, WAF logs                 |
+| Firewalls | Allowed/denied connections, NAT translations |
+| DNS servers | Queries, responses, NXDOMAIN records |
+| Web servers | Access logs, error logs, WAF logs |
 | Authentication systems | Login success/failure, MFA events, token issuance |
-| Endpoint detection     | Process creation, file modification, registry     |
-| Cloud audit logs       | AWS CloudTrail, Azure Activity Log, GCP Audit     |
-| Network IDS/IPS        | Alerts, blocked connections                       |
-| Email gateway          | SMTP logs, spam/phishing detections               |
+| Endpoint detection | Process creation, file modification, registry |
+| Cloud audit logs | AWS CloudTrail, Azure Activity Log, GCP Audit |
+| Network IDS/IPS | Alerts, blocked connections |
+| Email gateway | SMTP logs, spam/phishing detections |
 
 ### Key Metrics
 
@@ -552,28 +552,28 @@ nmap -sV -p 22,80,443 target.example.com
 ## Certificate Pinning
 
 Certificate pinning associates a service with a specific certificate or public key, preventing
-man-in-the-middle attacks even if a CA is compromised.
+Man-in-the-middle attacks even if a CA is compromised.
 
 ### Pinning Methods
 
-| Method              | Granularity     | Flexibility | Security |
+| Method | Granularity | Flexibility | Security |
 | ------------------- | --------------- | ----------- | -------- |
-| Public key pinning  | Per key         | Low         | High     |
-| Certificate pinning | Per certificate | Very low    | High     |
-| CA pinning          | Per CA          | Medium      | Medium   |
+| Public key pinning | Per key | Low | High |
+| Certificate pinning | Per certificate | Very low | High |
+| CA pinning | Per CA | Medium | Medium |
 
 ### HTTP Public Key Pinning (HPKP) — Deprecated
 
 HPKP was deprecated due to the risk of hosts pinning themselves out of existence (losing the pinned
-key with no recovery mechanism). If the pin was wrong, the site became permanently inaccessible for
-all visitors.
+Key with no recovery mechanism). If the pin was wrong, the site became permanently inaccessible for
+All visitors.
 
 ### Modern Alternatives
 
 - **Expect-CT header**: Reports/Enforces CT log inclusion
 - **Application-level pinning**: Pin certificates in the application code (mobile apps, API clients)
 - **DNS-based Authentication of Named Entities (DANE)**: Publishes certificate information in
-  DNSSEC-signed DNS records
+ DNSSEC-signed DNS records
 
 ```bash
 # Check CT log inclusion
@@ -588,20 +588,20 @@ curl "https://crt.sh/?q=example.com&output=json"
 
 ### DDoS Attack Types
 
-| Type              | Target            | Method                                   |
+| Type | Target | Method |
 | ----------------- | ----------------- | ---------------------------------------- |
-| Volumetric        | Bandwidth         | UDP flood, ICMP flood, DNS amplification |
-| Protocol          | Server resources  | SYN flood, Ping of Death, Smurf          |
-| Application Layer | Application logic | HTTP flood, Slowloris, API abuse         |
+| Volumetric | Bandwidth | UDP flood, ICMP flood, DNS amplification |
+| Protocol | Server resources | SYN flood, Ping of Death, Smurf |
+| Application Layer | Application logic | HTTP flood, Slowloris, API abuse |
 
 ### Mitigation Strategies
 
-| Layer        | Strategy                                         | Tool/Service                   |
+| Layer | Strategy | Tool/Service |
 | ------------ | ------------------------------------------------ | ------------------------------ |
-| Network      | Anycast distribution, BGP blackholing, scrubbing | Cloudflare, AWS Shield, Akamai |
-| Transport    | SYN cookies, connection rate limiting            | iptables, nginx, HAProxy       |
-| Application  | Rate limiting, CAPTCHA, challenge pages          | Cloudflare, reCAPTCHA          |
-| Architecture | Auto-scaling, CDN, caching                       | Cloud load balancers, Varnish  |
+| Network | Anycast distribution, BGP blackholing, scrubbing | Cloudflare, AWS Shield, Akamai |
+| Transport | SYN cookies, connection rate limiting | iptables, nginx, HAProxy |
+| Application | Rate limiting, CAPTCHA, challenge pages | Cloudflare, reCAPTCHA |
+| Architecture | Auto-scaling, CDN, caching | Cloud load balancers, Varnish |
 
 ```bash
 # SYN flood protection (sysctl)
@@ -617,79 +617,79 @@ iptables -A INPUT -p tcp --dport 443 -m conntrack --ctstate NEW -m limit --limit
 ### Amplification Attacks
 
 Amplification attacks exploit services that return large responses to small requests. The attacker
-spoofs the victim's IP as the source, and the reflector sends a large response to the victim.
+Spoofs the victim's IP as the source, and the reflector sends a large response to the victim.
 
-| Protocol  | Amplification Factor |
+| Protocol | Amplification Factor |
 | --------- | -------------------- |
-| DNS       | 28-54x               |
-| NTP       | 556x                 |
-| Memcached | 51,000x              |
-| SSDP      | 30x                  |
+| DNS | 28-54x |
+| NTP | 556x |
+| Memcached | 51,000x |
+| SSDP | 30x |
 
 Prevention: Disable open resolvers/reflectors, implement BCP 38 (ingress filtering) to block spoofed
-source addresses at network edges.
+Source addresses at network edges.
 
 ## Common Pitfalls
 
 ### Pitfall 1: Flat Networks
 
 A flat network with no segmentation means a compromised workstation has unrestricted access to all
-servers, databases, and management interfaces. Segment your network with firewalls between zones,
-even in small environments.
+Servers, databases, and management interfaces. Segment your network with firewalls between zones,
+Even in small environments.
 
 ### Pitfall 2: Unencrypted Internal Traffic
 
 "Internal traffic is safe" is a dangerous assumption. Lateral movement, insider threats, and
-compromised switches all expose internal traffic. Encrypt all traffic with TLS, even within your
-data center. Use service mesh mTLS for microservices.
+Compromised switches all expose internal traffic. Encrypt all traffic with TLS, even within your
+Data center. Use service mesh mTLS for microservices.
 
 ### Pitfall 3: Missing Egress Filtering
 
 Firewalls often focus on ingress rules and ignore egress. Without egress filtering, compromised
-servers can exfiltrate data, communicate with C2 servers, and participate in DDoS attacks. Implement
-default-deny egress with explicit allow rules.
+Servers can exfiltrate data, communicate with C2 servers, and participate in DDoS attacks. Implement
+Default-deny egress with explicit allow rules.
 
 ### Pitfall 4: Ignoring DNS Security
 
 DNS is a foundational protocol that is rarely secured. Without DNSSEC, DNS responses can be spoofed.
 Without monitoring, DNS tunneling can exfiltrate data. Implement DNSSEC, use DoH/DoT for client
-resolution, and monitor DNS logs for anomalies.
+Resolution, and monitor DNS logs for anomalies.
 
 ### Pitfall 5: No Network Monitoring
 
 You cannot detect what you cannot see. Without network monitoring (flow data, packet capture, IDS),
-attacks can operate undetected for months. Implement SIEM integration for all network devices and
-security systems.
+Attacks can operate undetected for months. Implement SIEM integration for all network devices and
+Security systems.
 
 ### Pitfall 6: VPN as the Only Remote Access Control
 
 A VPN provides network-level access but does not provide application-level authorization. A user
-connected to the VPN has access to everything on the VPN network. Replace VPN-centric access with
-zero trust per-application access where possible.
+Connected to the VPN has access to everything on the VPN network. Replace VPN-centric access with
+Zero trust per-application access where possible.
 
 ### Pitfall 7: Stale Firewall Rules
 
 Firewall rules accumulate over time. Rules created for temporary access, specific projects, or
-long-departed employees often remain indefinitely. Audit firewall rules quarterly, document the
-business justification for each rule, and remove rules that are no longer needed.
+Long-departed employees often remain indefinitely. Audit firewall rules quarterly, document the
+Business justification for each rule, and remove rules that are no longer needed.
 
 ### Pitfall 8: No Egress Monitoring
 
 Monitoring inbound traffic without monitoring outbound traffic misses data exfiltration. An attacker
-who has compromised an internal server may use DNS tunneling, HTTPS to cloud storage, or encrypted
+Who has compromised an internal server may use DNS tunneling, HTTPS to cloud storage, or encrypted
 ICMP to exfiltrate data. Monitor egress traffic volume, destinations, and protocols.
 
 ### Pitfall 9: Ignoring IPv6
 
 IPv6 is enabled by default on modern operating systems. If your firewall rules only cover IPv4, IPv6
-traffic may bypass all controls. Either properly secure IPv6 or disable it on interfaces where it is
-not needed.
+Traffic may bypass all controls. Either properly secure IPv6 or disable it on interfaces where it is
+Not needed.
 
 ### Pitfall 10: Single Point of Failure in Network Security
 
 A single firewall, IDS, or VPN concentrator is a single point of failure. If it fails (hardware
-fault, misconfiguration, DDoS), the entire network is either exposed or inaccessible. Deploy in
-high-availability pairs and ensure failover is tested regularly.
+Fault, misconfiguration, DDoS), the entire network is either exposed or inaccessible. Deploy in
+High-availability pairs and ensure failover is tested regularly.
 
 ## Network Hardening Checklist
 
@@ -741,13 +741,13 @@ AllowTcpForwarding no
 ### Network Access Control (802.1X)
 
 802.1X provides port-based network access control. Devices must authenticate before gaining access
-to the network.
+To the network.
 
-| Component             | Role                                 |
+| Component | Role |
 | --------------------- | ------------------------------------ |
-| Supplicant            | The device requesting network access |
-| Authenticator         | The switch or wireless access point  |
-| Authentication Server | RADIUS server (FreeRADIUS, ISE)      |
+| Supplicant | The device requesting network access |
+| Authenticator | The switch or wireless access point |
+| Authentication Server | RADIUS server (FreeRADIUS, ISE) |
 
 ```bash
 # FreeRADIUS client configuration (on the switch/AP)
@@ -759,13 +759,13 @@ to the network.
 
 ### Common Security-Related Network Issues
 
-| Symptom                         | Possible Cause                           | Diagnostic Command                     |
+| Symptom | Possible Cause | Diagnostic Command |
 | ------------------------------- | ---------------------------------------- | -------------------------------------- |
-| Intermittent connection drops   | Firewall rate limiting, IDS alert        | `tcpdump -i eth0 -nn host target`      |
-| DNS resolution failures         | DNS hijacking, DNSSEC validation failure | `dig +dnssec example.com @8.8.8.8`     |
-| TLS handshake failures          | Certificate expired, cipher mismatch     | `openssl s_client -connect host:443`   |
-| Unexpected outbound connections | Malware C2, compromised service          | `ss -tulpn`, `netstat -an`             |
-| High latency on specific routes | BGP hijacking, route leaks               | `traceroute`, `mtr`, BGP looking glass |
+| Intermittent connection drops | Firewall rate limiting, IDS alert | `tcpdump -i eth0 -nn host target` |
+| DNS resolution failures | DNS hijacking, DNSSEC validation failure | `dig +dnssec example.com @8.8.8.8` |
+| TLS handshake failures | Certificate expired, cipher mismatch | `openssl s_client -connect host:443` |
+| Unexpected outbound connections | Malware C2, compromised service | `ss -tulpn``netstat -an` |
+| High latency on specific routes | BGP hijacking, route leaks | `traceroute``mtr`BGP looking glass |
 
 ### Network Forensics
 
@@ -787,7 +787,7 @@ tshark -r capture.pcap -q -z io,phs
 ### DNS Monitoring for Security
 
 DNS is a critical but often overlooked monitoring domain. Anomalous DNS behavior can indicate
-malware C2 communication, data exfiltration via DNS tunneling, or phishing domains:
+Malware C2 communication, data exfiltration via DNS tunneling, or phishing domains:
 
 ```bash
 # Monitor DNS queries for suspicious patterns
@@ -799,13 +799,13 @@ malware C2 communication, data exfiltration via DNS tunneling, or phishing domai
 # Look for high entropy subdomains (indicative of DGA or DNS tunneling)
 ```
 
-| DNS Anomaly                  | Possible Cause                            | Detection Method               |
+| DNS Anomaly | Possible Cause | Detection Method |
 | ---------------------------- | ----------------------------------------- | ------------------------------ |
-| High volume to single domain | DNS tunneling for data exfiltration       | Query volume per domain        |
-| High entropy subdomains      | DGA (Domain Generation Algorithm) malware | Entropy analysis on subdomains |
-| NXDOMAIN burst               | DGA malware, recon scanning               | NXDOMAIN response rate         |
-| Queries to TLDs not in use   | Malware C2, suspicious resolution         | TLD distribution analysis      |
-| Late-night DNS activity      | Compromised host beaconing                | Time-based query analysis      |
+| High volume to single domain | DNS tunneling for data exfiltration | Query volume per domain |
+| High entropy subdomains | DGA (Domain Generation Algorithm) malware | Entropy analysis on subdomains |
+| NXDOMAIN burst | DGA malware, recon scanning | NXDOMAIN response rate |
+| Queries to TLDs not in use | Malware C2, suspicious resolution | TLD distribution analysis |
+| Late-night DNS activity | Compromised host beaconing | Time-based query analysis |
 
 :::info
 
@@ -815,3 +815,11 @@ Architecture), RFC 6014 (DNSSEC Operational Practices), RFC 7208 (SPF), RFC 6376
 Control), MITRE ATT&CK (Tactic: Lateral Movement).
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

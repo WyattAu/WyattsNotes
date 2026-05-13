@@ -8,16 +8,16 @@ categories:
   - cpp
 slug: build-caching
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compiling C++ is computationally expensive. Each Translation Unit (TU) must be preprocessed, parsed
-into an Abstract Syntax Tree (AST), optimized, and assembled into machine code. In a typical
-workflow, changing a single header file can force the recompilation of hundreds of source files.
+Into an Abstract Syntax Tree (AST), optimized, and assembled into machine code. In a typical
+Workflow, changing a single header file can force the recompilation of hundreds of source files.
 
 **Build Caching** intercepts compiler calls. It hashes the inputs (source code, compiler flags, and
-environment variables). If a hash matches an entry in the local or remote cache, the compilation
-step is skipped entirely, and the cached object file is retrieved. This results in **zero-cost
-compilation** for unchanged units.
+Environment variables). If a hash matches an entry in the local or remote cache, the compilation
+Step is skipped entirely, and the cached object file is retrieved. This results in **zero-cost
+Compilation** for unchanged units.
 
 ## 1. The Caching Landscape
 
@@ -27,9 +27,9 @@ compilation** for unchanged units.
 - **Support:** GCC, Clang.
 - **Platform:** Linux, macOS, MinGW.
 - **Mechanism:**
-  - **Preprocessor Mode:** Runs the preprocessor (`-E`) and hashes the output. Accurate but slower.
-  - **Direct Mode:** Hashes the source file stats and includes. Fast but requires strict header
-    hygiene.
+ - **Preprocessor Mode:** Runs the preprocessor (`-E`) and hashes the output. Accurate but slower.
+ - **Direct Mode:** Hashes the source file stats and includes. Fast but requires strict header
+ hygiene.
 
 ### 1.2 Sccache (Shared Compiler Cache)
 
@@ -37,41 +37,41 @@ compilation** for unchanged units.
 - **Architecture:** Local or **Distributed** (S3, GCS, Azure, Redis).
 - **Support:** GCC, Clang, **MSVC**.
 - **Mechanism:** Written in Rust, designed specifically for CI/CD environments where ephemeral build
-  agents need access to a shared cache. It effectively supports Microsoft's PDB generation
-  constraints.
+ agents need access to a shared cache. It effectively supports Microsoft's PDB generation
+ constraints.
 
 ### 1.3 BuildCache
 
 - **Architecture:** Local or remote (HTTP/S3-compatible).
 - **Support:** GCC, Clang, MSVC.
 - **Mechanism:** Written in Rust. Key differentiator: supports **remote execution** of compiler
-  jobs, not just cache storage. Can distribute compilation across the network.
+ jobs, not just cache storage. Can distribute compilation across the network.
 
 ### 1.4 Bazel / bazel-remote
 
 - **Architecture:** Content-addressable cache with remote backends.
 - **Mechanism:** Bazel builds include caching as a first-class concept. The `bazel-remote` project
-  provides a gRPC/HTTP cache server. Bazel's caching is fine-grained — it caches individual build
-  actions, not just compiler invocations.
+ provides a gRPC/HTTP cache server. Bazel's caching is fine-grained — it caches individual build
+ actions, not just compiler invocations.
 
 ### Comparison Table
 
-| Feature             | CCache          | Sccache        | BuildCache   | Bazel          |
+| Feature | CCache | Sccache | BuildCache | Bazel |
 | :------------------ | :-------------- | :------------- | :----------- | :------------- |
-| Language            | C/C++           | C/C++, Rust    | C/C++, Rust  | Any (Starlark) |
-| Remote backend      | No (local only) | S3, GCS, Azure | HTTP, S3     | gRPC, HTTP     |
-| MSVC support        | No              | Yes            | Yes          | Via rules_msvc |
-| Remote execution    | No              | No             | Yes          | Yes            |
-| Cache key           | Content hash    | Content hash   | Content hash | Content hash   |
-| Precompiled headers | Limited         | Yes            | Yes          | Yes            |
-| Locking             | Filesystem      | Internal       | Internal     | Internal       |
+| Language | C/C++ | C/C++, Rust | C/C++, Rust | Any (Starlark) |
+| Remote backend | No (local only) | S3, GCS, Azure | HTTP, S3 | gRPC, HTTP |
+| MSVC support | No | Yes | Yes | Via rules_msvc |
+| Remote execution | No | No | Yes | Yes |
+| Cache key | Content hash | Content hash | Content hash | Content hash |
+| Precompiled headers | Limited | Yes | Yes | Yes |
+| Locking | Filesystem | Internal | Internal | Internal |
 
 ## 2. Installation
 
 ### CCache
 
 <Tabs>
-  <TabItem value="linux" label="Linux" default>
+ <TabItem value="linux" label="Linux" default>
 
 ```bash
 # Debian/Ubuntu
@@ -84,21 +84,21 @@ sudo pacman -S ccache
 sudo dnf install ccache
 ```
 
-  </TabItem>
-  <TabItem value="macos" label="macOS">
+ </TabItem>
+ <TabItem value="macos" label="macOS">
 
 ```bash
 brew install ccache
 ```
 
-  </TabItem>
-  <TabItem value="windows" label="Windows (MSYS2)">
+ </TabItem>
+ <TabItem value="windows" label="Windows (MSYS2)">
 
 ```bash
 pacman -S mingw-w64-ucrt-x86_64-ccache
 ```
 
-  </TabItem>
+ </TabItem>
 </Tabs>
 
 ### Sccache
@@ -106,7 +106,7 @@ pacman -S mingw-w64-ucrt-x86_64-ccache
 Sccache is recommended for Windows (MSVC) users or distributed CI pipelines.
 
 <Tabs>
-  <TabItem value="windows" label="Windows">
+ <TabItem value="windows" label="Windows">
 
 ```powershell
 # Via Scoop
@@ -116,8 +116,8 @@ scoop install sccache
 cargo install sccache
 ```
 
-  </TabItem>
-  <TabItem value="linux" label="Linux/macOS">
+ </TabItem>
+ <TabItem value="linux" label="Linux/macOS">
 
 ```bash
 # Via Brew
@@ -127,59 +127,59 @@ brew install sccache
 cargo install sccache
 ```
 
-  </TabItem>
+ </TabItem>
 </Tabs>
 
 ## 3. How Caching Works: Hash Computation
 
 The cache key is a cryptographic hash of all inputs that affect compilation output. Understanding
-what goes into this hash is critical for debugging cache misses.
+What goes into this hash is critical for debugging cache misses.
 
 ### CCache Preprocessor Mode
 
 In preprocessor mode, ccache runs the full preprocessor and hashes the resulting `.i` file plus the
-compiler flags. The hash input is:
+Compiler flags. The hash input is:
 
 $$
 \mathrm{hash{} = H(\mathrm{preprocessed source{}, \mathrm{compiler path{}, \mathrm{flags{}, \mathrm{include paths{})
 $$
 
 This is robust but slow: preprocessing can take 30-50% of total compilation time for heavily
-templated C++ code.
+Templated C++ code.
 
 ### CCache Direct Mode
 
-In direct mode, ccache hashes the source file directly and recursively hashes all `#include`d
-headers using their file content (not preprocessor output). It falls back to preprocessor mode if it
-detects macros that might affect the output (e.g., `#define` in the including file).
+In direct mode, ccache hashes the source file directly and recursively hashes all `#include`D
+Headers using their file content (not preprocessor output). It falls back to preprocessor mode if it
+Detects macros that might affect the output (e.g., `#define` in the including file).
 
 $$
 \mathrm{hash{} = H(\mathrm{source{}, \{H(\mathrm{header{}_1), H(\mathrm{header{}_2), \ldots\}, \mathrm{flags{})
 $$
 
 Direct mode is significantly faster but can produce false positives (cache hits when the output
-would differ) if the compiler's include resolution differs from ccache's. The `-o` flag in direct
-mode sets the level of safety.
+Would differ) if the compiler's include resolution differs from ccache's. The `-o` flag in direct
+Mode sets the level of safety.
 
 ### Proof of Cache Correctness
 
 **Claim:** If the cache key matches, the cached object file is semantically identical to the output
-of a fresh compilation.
+Of a fresh compilation.
 
 **Proof:**
 
 1. The cache key is a cryptographic hash (SHA-256 in ccache) of all inputs that affect compilation
-   output: source code content, all included header content, compiler flags, compiler binary path,
-   and the compiler's output of `--version`.
+ output: source code content, all included header content, compiler flags, compiler binary path,
+ and the compiler's output of `--version`.
 2. A cryptographic hash function $H$ has the property that $H(x) = H(y) \implies x = y$ (collision
-   resistance). In practice, SHA-256 has no known collisions.
+ resistance). In practice, SHA-256 has no known collisions.
 3. If the cache key for the current compilation matches a stored key, then by collision resistance,
-   all inputs are identical.
+ all inputs are identical.
 4. Compilation is a deterministic function of its inputs (source, flags, compiler binary).
-   Therefore, the output must be identical. QED.
+ Therefore, the output must be identical. QED.
 
 **Caveat:** This proof assumes the compiler itself is deterministic. In practice, compilers can
-produce non-deterministic output due to:
+Produce non-deterministic output due to:
 
 - Hash randomization (e.g., `-frandom-seed` or missing `-fno-guess-branch-probability`).
 - Parallel compilation with shared file system state.
@@ -190,12 +190,12 @@ These sources of non-determinism must be controlled for the cache to be correct.
 ## 4. CMake Integration
 
 Modern CMake (3.4+) supports caching via the `<LANG>_COMPILER_LAUNCHER` property. This injects the
-caching tool command _before_ the compiler command in the build system execution.
+Caching tool command _before_ the compiler command in the build system execution.
 
 ### Strategy 1: Global Configuration (User-Level)
 
 Do not modify the project `CMakeLists.txt`. Instead, modify the **CMake Preset** or pass the flag
-during configuration. This ensures developers who lack caching tools can still build the project.
+During configuration. This ensures developers who lack caching tools can still build the project.
 
 **Using CMake Presets (`CMakePresets.json`):**
 
@@ -235,7 +235,7 @@ endif()
 ### Strategy 3: Per-Target Caching
 
 Not all targets benefit equally from caching. Frequently-modified targets may not see cache hits at
-all, while stable dependency targets benefit enormously. You can selectively enable caching:
+All, while stable dependency targets benefit enormously. You can selectively enable caching:
 
 ```cmake
 # Only cache compilation of third-party dependencies
@@ -250,12 +250,12 @@ endif()
 ## 5. Configuring Sccache for MSVC
 
 MSVC presents a unique challenge due to **PDB (Program Database)** generation. Standard PDB
-generation (`/Zi`) is stateful and not thread-safe for distributed caching.
+Generation (`/Zi`) is stateful and not thread-safe for distributed caching.
 
 To use Sccache with MSVC effectively:
 
 1. **Force Embedded Debug Info (`/Z7`):** This embeds debug info into the `.obj` files rather than a
-   separate `.pdb` during compilation.
+ separate `.pdb` during compilation.
 2. **Start the Server:** Sccache runs as a background daemon.
 
 ### CMake Configuration for MSVC/Sccache
@@ -339,9 +339,9 @@ sccache --start-server
 
 ## 7. Cache Eviction and Size Management
 
-Caches grow without bound unless explicitly managed. Each cached object is typically 100 KB to 10 MB
-depending on the translation unit. A large C++ project with 500 TUs can easily consume 2-5 GB of
-cache.
+Caches grow without bound unless explicitly managed. Each cached object is 100 KB to 10 MB
+Depending on the translation unit. A large C++ project with 500 TUs can consume 2-5 GB of
+Cache.
 
 ### CCache Size Configuration
 
@@ -369,18 +369,18 @@ sccache --set-max-size 10G
 ### LRU vs Content-Addressable Eviction
 
 Both ccache and sccache use content-addressable storage: the cache key is a hash of the input, and
-the value is the output object file. When the cache exceeds its size limit, both tools use an LRU
+The value is the output object file. When the cache exceeds its size limit, both tools use an LRU
 (Least Recently Used) eviction policy. This means infrequently used cache entries are evicted first,
-which is generally optimal for development workflows.
+Which is generally optimal for development workflows.
 
 **Proof that LRU is optimal for development:**
 
 1. In a development workflow, recently compiled files are the most likely to be recompiled (you are
-   working on them).
+ working on them).
 2. Files that have not been accessed in a long time are unlikely to be recompiled soon.
 3. LRU evicts the least recently accessed entries, preserving the entries most likely to be needed.
 4. This is an instance of the **stack algorithm** (Belady's optimal page replacement), which is
-   optimal for the class of workloads where future accesses follow a recency pattern. QED.
+ optimal for the class of workloads where future accesses follow a recency pattern. QED.
 
 ## 8. Verification
 
@@ -434,14 +434,14 @@ Key fields:
 ### Incremental Builds
 
 An incremental build recompiles only the translation units whose dependencies have changed. The
-build system tracks file modification times and recompiles when a source or header is newer than the
-corresponding object file.
+Build system tracks file modification times and recompiles when a source or header is newer than the
+Corresponding object file.
 
 ### Clean Builds (`cmake --fresh`)
 
 CMake 3.25+ supports `cmake --fresh` which re-runs the configure step from scratch, then performs a
-clean build. This is useful when the build system state is corrupted or when switching branches with
-significant CMake changes:
+Clean build. This is useful when the build system state is corrupted or when switching branches with
+Significant CMake changes:
 
 ```bash
 cmake --fresh -S . -B build
@@ -451,7 +451,7 @@ cmake --build build
 ### Build Reproducibility
 
 A build is reproducible if the same source code, compiler, and flags produce byte-identical output
-every time. Reproducibility is a prerequisite for effective caching:
+Every time. Reproducibility is a prerequisite for effective caching:
 
 ```bash
 # Ensure reproducible builds
@@ -466,25 +466,25 @@ Key factors that affect reproducibility:
 2. **`__TIME__` and `__DATE__`:** Avoid using these macros; use build-system-provided version info.
 3. **Random seeds:** Use `-frandom-seed=0` or `-fno-guess-branch-probability`.
 4. **File system ordering:** Some build systems iterate over files in directory order, which varies
-   across platforms.
+ across platforms.
 
 ## Common Pitfalls
 
 ### 1. Timestamp Mismatches
 
 If the build system touches files without changing content, ccache might miss. This happens when
-build systems regenerate headers or configuration files on every invocation.
+Build systems regenerate headers or configuration files on every invocation.
 
 **Diagnosis:** Use `ccache -s` to monitor hit rates. If the miss rate is unexpectedly high, check
-for files being regenerated with identical content.
+For files being regenerated with identical content.
 
 **Fix:** Use `ccache -C` to clear the cache and rebuild. Ensure build systems don't regenerate files
-unnecessarily.
+Unnecessarily.
 
 ### 2. `__TIME__` and `__DATE__` Macros
 
 Using `__TIME__` or `__DATE__` in source code defeats caching because the preprocessor output
-changes every second.
+Changes every second.
 
 ```cpp
 // BAD: Changes every compilation
@@ -495,12 +495,12 @@ const char* build_id = BUILD_VERSION;
 ```
 
 **Fix:** Pass version information via compiler definitions (`-DBUILD_VERSION="1.2.3"`) that only
-change on actual releases.
+Change on actual releases.
 
 ### 3. Absolute Paths in Debug Symbols
 
 Debug symbols often contain absolute paths. Use `-fdebug-prefix-map` (GCC/Clang) to map local paths
-to generic ones to improve cache sharing across different users.
+To generic ones to improve cache sharing across different users.
 
 ```bash
 cmake -DCMAKE_CXX_FLAGS="-fdebug-prefix-map=${PWD}=." -B build
@@ -509,7 +509,7 @@ cmake -DCMAKE_CXX_FLAGS="-fdebug-prefix-map=${PWD}=." -B build
 ### 4. Random or Non-Deterministic Code
 
 Code that includes random elements (UUIDs, timestamps in generated code) produces different output
-on every compilation. Isolate such code into separate translation units that are not cached.
+On every compilation. Isolate such code into separate translation units that are not cached.
 
 ### 5. `__FILE__` Macro
 
@@ -523,14 +523,14 @@ cmake -DCMAKE_CXX_FLAGS="-fmacro-prefix-map=${PWD}=src" -B build
 ### 6. Non-Reproducible Builds
 
 If different compilers or compiler versions are used (e.g., GCC 12 on one machine, GCC 13 on
-another), the cached objects are incompatible. Ensure all cache participants use the same compiler
-version.
+Another), the cached objects are incompatible. Ensure all cache participants use the same compiler
+Version.
 
 ### 7. Cache Poisoning
 
 If a compilation succeeds but produces a corrupted object file (due to a compiler bug, filesystem
-error, or OOM during compilation), the corrupted output is cached. Subsequent cache hits will
-retrieve the corrupted object. Mitigation:
+Error, or OOM during compilation), the corrupted output is cached. Subsequent cache hits will
+Retrieve the corrupted object. Mitigation:
 
 1. Use `ccache -C` to clear the cache when you suspect corruption.
 2. Monitor build failures for patterns that suggest cache corruption.
@@ -539,7 +539,7 @@ retrieve the corrupted object. Mitigation:
 ## 10. Distributed Caching Architecture
 
 For large organizations, a centralized cache provides the greatest benefit. The typical architecture
-is:
+Is:
 
 ```
 Developer A ──┐                    ┌── CI Agent 1
@@ -551,13 +551,13 @@ Developer C ──┘   (cache backend)  └── CI Agent 3
 
 Cached compilation costs approximately USD 0.02 per GB per month on S3 (Standard storage). For a 50
 GB cache accessed by 100 developers, the monthly storage cost is approximately USD 1.00. The
-bandwidth costs for cache reads depend on hit rate and team size, but are typically under USD
+Bandwidth costs for cache reads depend on hit rate and team size, but are under USD
 10/month for a medium-sized team. This is negligible compared to developer time saved.
 
 ### Cache Warmup Strategy
 
 When onboarding a new developer or setting up a new CI runner, the cache is cold (empty). To warm
-the cache:
+The cache:
 
 1. Run a full clean build on one machine.
 2. The cache is now populated with all object files.
@@ -585,7 +585,7 @@ This prevents one project's cache from evicting another project's entries.
 ## 11. Advanced: CCache Sloppiness
 
 The `CCACHE_SLOPPINESS` environment variable relaxes ccache's strictness, trading correctness for
-higher hit rates. Use with extreme caution:
+Higher hit rates. Use with extreme caution:
 
 ```bash
 # Allow caching even when __TIME__, __DATE__, or __FILE__ change
@@ -600,7 +600,7 @@ Available sloppiness options:
 - `pch_defines`: Ignore differences in precompiled header defines.
 - `locale`: Ignore locale settings (affects string literals in some locales).
 - `system_headers`: Don't hash system headers (risky — system header updates won't invalidate
-  cache).
+ cache).
 
 ### When to Use Sloppiness
 
@@ -609,7 +609,7 @@ Sloppiness should be used only as a last resort. Each option trades correctness 
 - `time_macros`: Safe if your build timestamps are not embedded in the binary for auditing.
 - `file_macro`: Safe if you do not use `__FILE__` for logging or error reporting.
 - `system_headers`: Dangerous. A system header update (e.g., glibc security patch) will not
-  invalidate the cache, potentially building against an outdated header.
+ invalidate the cache, potentially building against an outdated header.
 
 ## 12. CCache Configuration File
 
@@ -624,30 +624,30 @@ compression_level = 6
 ```
 
 The `compression` option reduces disk usage at the cost of slight CPU overhead. For SSD-based
-systems, the I/O savings usually outweigh the compression cost.
+Systems, the I/O savings outweigh the compression cost.
 
 ### CCache Environment Variables
 
-| Variable               | Purpose                                            | Default          |
+| Variable | Purpose | Default |
 | :--------------------- | :------------------------------------------------- | :--------------- |
-| `CCACHE_DIR`           | Cache storage directory                            | `~/.ccache`      |
-| `CCACHE_MAXSIZE`       | Maximum cache size                                 | 5G               |
-| `CCACHE_MAXFILES`      | Maximum number of cache files                      | Unlimited        |
-| `CCACHE_TEMPDIR`       | Temporary directory for in-progress operations     | `CCACHE_DIR/tmp` |
-| `CCACHE_COMPRESS`      | Enable/disable compression                         | `false`          |
-| `CCACHE_COMPRESSLEVEL` | Compression level (1-9)                            | 6                |
-| `CCACHE_SLOPPINESS`    | Relax correctness checks for higher hit rates      | (empty)          |
-| `CCACHE_DEBUG`         | Enable debug logging                               | (disabled)       |
-| `CCACHE_LOGFILE`       | Log file path                                      | (stderr)         |
-| `CCACHE_NOHASHDIR`     | Ignore directory components in the hash            | `false`          |
-| `CCACHE_PREFIX_KEY`    | Additional hash key (e.g., compiler flags)         | (empty)          |
-| `CCACHE_BASEDIR`       | Base directory for path normalization              | (empty)          |
-| `CCACHE_DISABLE`       | Disable ccache entirely (pass through to compiler) | `false`          |
+| `CCACHE_DIR` | Cache storage directory | `~/.ccache` |
+| `CCACHE_MAXSIZE` | Maximum cache size | 5G |
+| `CCACHE_MAXFILES` | Maximum number of cache files | Unlimited |
+| `CCACHE_TEMPDIR` | Temporary directory for in-progress operations | `CCACHE_DIR/tmp` |
+| `CCACHE_COMPRESS` | Enable/disable compression | `false` |
+| `CCACHE_COMPRESSLEVEL` | Compression level (1-9) | 6 |
+| `CCACHE_SLOPPINESS` | Relax correctness checks for higher hit rates | (empty) |
+| `CCACHE_DEBUG` | Enable debug logging | (disabled) |
+| `CCACHE_LOGFILE` | Log file path | (stderr) |
+| `CCACHE_NOHASHDIR` | Ignore directory components in the hash | `false` |
+| `CCACHE_PREFIX_KEY` | Additional hash key (e.g., compiler flags) | (empty) |
+| `CCACHE_BASEDIR` | Base directory for path normalization | (empty) |
+| `CCACHE_DISABLE` | Disable ccache entirely (pass through to compiler) | `false` |
 
 ### CCache with Precompiled Headers
 
 Precompiled headers (PCH) complicate caching because the PCH file depends on the same headers as the
-TU, and the cache key must account for this dependency. ccache supports PCH caching with the
+TU, and the cache key must account for this dependency. Ccache supports PCH caching with the
 `pch_defines` sloppiness option and by detecting `#include` of PCH files:
 
 ```bash
@@ -656,7 +656,7 @@ export CCACHE_SLOPPINESS="pch_defines"
 ```
 
 Without this sloppiness, changes to the PCH defines may not properly invalidate the cache for TUs
-that include the PCH.
+That include the PCH.
 
 ## 13. Sccache Advanced Configuration
 
@@ -686,7 +686,7 @@ Cache location                      Local disk: /home/user/.cache/sccache
 
 ### Sccache and Rust
 
-sccache also caches Rust compilation (cargo). This makes it useful for mixed C++/Rust projects:
+Sccache also caches Rust compilation (cargo). This makes it useful for mixed C++/Rust projects:
 
 ```bash
 export RUSTC_WRAPPER=sccache
@@ -715,17 +715,17 @@ Common causes of unexpected misses:
 ### Reproducible Builds: Formal Requirements
 
 A build is reproducible if, given the same source code, compiler, flags, and toolchain, the output
-is byte-identical every time. This is a prerequisite for meaningful caching in a distributed
-environment.
+Is byte-identical every time. This is a prerequisite for meaningful caching in a distributed
+Environment.
 
 The following conditions must hold for reproducible builds:
 
 1. **Deterministic compiler output:** The compiler must produce the same object file given the same
-   inputs. Use `-frandom-seed=0` to disable randomization in GCC/Clang.
+ inputs. Use `-frandom-seed=0` to disable randomization in GCC/Clang.
 2. **Deterministic file ordering:** Filesystem iteration order must not affect the build. Use
-   `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` to ensure deterministic TU ordering.
-3. **No timestamps in output:** Avoid `__TIME__`, `__DATE__`, and similar macros. Use build-system-
-   provided version definitions.
+ `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` to ensure deterministic TU ordering.
+3. **No timestamps in output:** Avoid `__TIME__``__DATE__`And similar macros. Use build-system-
+ provided version definitions.
 4. **No absolute paths in debug info:** Use `-fdebug-prefix-map` and `-fmacro-prefix-map`.
 5. **Same compiler version:** All cache participants must use the exact same compiler version.
 
@@ -742,9 +742,17 @@ diff <(find build1 -name '*.o' -exec md5sum {} \; | sort) \
 ```
 
 If the diff is empty, the builds are reproducible. Any difference indicates a source of
-non-determinism that will cause cache misses in a distributed environment.
+Non-determinism that will cause cache misses in a distributed environment.
 
 ## See Also
 
 - [CMake Presets and Toolchain Files](../2_build_system/3_cmake_presets_and_toolchain_files.md)
 - [Ninja and Parallelism](../2_build_system/2_ninja_and_parallelism.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -11,24 +11,24 @@ slug: sfinae-vs-concepts
 # SFINAE vs Concepts
 
 **SFINAE** (Substitution Failure Is Not An Error) was the primary mechanism for constraining
-templates from C++98 through C++17. C++20 concepts provide a cleaner, more expressive alternative
-with better error messages, built-in overload ordering via subsumption, and first-class syntax. This
-section compares the two approaches and shows how to migrate from SFINAE to concepts.
+Templates from C++98 through C++17. C++20 concepts provide a cleaner, more expressive alternative
+With better error messages, built-in overload ordering via subsumption, and first-class syntax. This
+Section compares the two approaches and shows how to migrate from SFINAE to concepts.
 
 ## How SFINAE Works
 
 **SFINAE** (Substitution Failure Is Not An Error) is a C++98-era mechanism that allows template
-argument deduction to discard overloads where substituting the deduced type would produce an invalid
-type or expression [N4950 §13.10.3.6]. The key idea is:
+Argument deduction to discard overloads where substituting the deduced type would produce an invalid
+Type or expression [N4950 §13.10.3.6]. The key idea is:
 
 > If a type or expression used in the function type or template parameter declaration is invalid
-> after substitution, the program is not ill-formed --- instead, the overload is simply removed from
+> after substitution, the program is not ill-formed --- instead, the overload is removed from
 > the candidate set.
 
 SFINAE applies strictly to the **immediate context** of template argument substitution [N4950
 §13.10.3.6]. Errors in the body of a template function, or in the definition of a nested type that
-is not directly in the function signature, are **hard errors**, not substitution failures. This
-distinction is critical and is the source of many subtle bugs.
+Is not directly in the function signature, are **hard errors**, not substitution failures. This
+Distinction is critical and is the source of many subtle bugs.
 
 The two primary SFINAE techniques are:
 
@@ -36,7 +36,7 @@ The two primary SFINAE techniques are:
 2. **SFINAE via a dummy template parameter:** using `std::enable_if` as a default template argument.
 
 A third technique, the **`void_t` idiom** (C++17), uses a detection pattern to check for the
-validity of an expression:
+Validity of an expression:
 
 ```cpp
 #include <iostream>
@@ -84,7 +84,7 @@ int main() {
 ### Immediate Context: The Hard Error Boundary
 
 SFINAE only protects the **immediate context** of substitution. If the substitution failure occurs
-inside the body of the function, it is a hard compilation error:
+Inside the body of the function, it is a hard compilation error:
 
 ```cpp
 #include <type_traits>
@@ -113,7 +113,7 @@ int main() {
 SFINAE has several significant problems that motivated the introduction of concepts:
 
 **1. Poor error messages.** When no overload is viable, the compiler reports the substitution
-failure in the `enable_if` machinery, not the actual semantic requirement that was violated.
+Failure in the `enable_if` machinery, not the actual semantic requirement that was violated.
 
 ```
 error: no matching function for call to 'safe_abs'
@@ -130,26 +130,26 @@ note: 'safe_abs' requires 'std::integral<T>' or 'std::floating_point<T>'
 ```
 
 **2. No subsumption ordering.** Two overloads constrained by `enable_if` with different conditions
-are **always ambiguous** if both conditions are true --- the compiler cannot determine which is more
-constrained [N4950 §13.10.3.2]. This forces the use of tag dispatch or other workarounds.
+Are **always ambiguous** if both conditions are true --- the compiler cannot determine which is more
+Constrained [N4950 §13.10.3.2]. This forces the use of tag dispatch or other workarounds.
 
 **3. Syntax is verbose and hard to read.**
 `typename std::enable_if<std::is_integral<T>::value, T>::type` is far less readable than
 `std::integral<T>`.
 
 **4. Constraints are invisible in the function signature.** With `enable_if` in the return type or a
-defaulted template parameter, the constraint is buried in the type system rather than being a
-first-class part of the interface.
+Defaulted template parameter, the constraint is buried in the type system rather than being a
+First-class part of the interface.
 
 **5. Interaction with `auto` return types is problematic.** SFINAE via the return type does not work
-with `auto` return type deduction, requiring awkward workarounds. You must use the
-trailing-return-type syntax or a dummy parameter to apply SFINAE with `auto`.
+With `auto` return type deduction, requiring awkward workarounds. You must use the
+Trailing-return-type syntax or a dummy parameter to apply SFINAE with `auto`.
 
 **6. The dummy-parameter pitfall.** When using SFINAE via a defaulted template parameter, the dummy
-parameter participates in overload resolution. Two overloads with the same function signature but
-different `enable_if` conditions on a defaulted parameter are **ambiguous** when both conditions are
-satisfied, because the defaulted parameter is not part of the function signature used for partial
-ordering [N4950 §13.10.3.2].
+Parameter participates in overload resolution. Two overloads with the same function signature but
+Different `enable_if` conditions on a defaulted parameter are **ambiguous** when both conditions are
+Satisfied, because the defaulted parameter is not part of the function signature used for partial
+Ordering [N4950 §13.10.3.2].
 
 ```cpp
 #include <type_traits>
@@ -172,14 +172,14 @@ With concepts, this problem disappears because subsumption provides a well-defin
 
 ## How Concepts Solve SFINAE Problems
 
-| Problem               | SFINAE                                             | Concepts                                                     |
+| Problem | SFINAE | Concepts |
 | --------------------- | -------------------------------------------------- | ------------------------------------------------------------ |
-| Error messages        | Show substitution failure in `enable_if`           | Show the concept name and which requirement failed           |
-| Overload ordering     | No subsumption; ambiguous when multiple are viable | Partial ordering by subsumption selects the most constrained |
-| Syntax                | `enable_if<cond, T>::type`                         | `requires cond` or `concept T`                               |
-| Readability           | Constraint hidden in type manipulation             | Constraint is explicit in the signature                      |
-| Composability         | Boolean logic in template parameters               | Named concepts composed with `&&`, `\|\|`                    |
-| Interacts with `auto` | Problematic                                        | Works naturally                                              |
+| Error messages | Show substitution failure in `enable_if` | Show the concept name and which requirement failed |
+| Overload ordering | No subsumption; ambiguous when multiple are viable | Partial ordering by subsumption selects the most constrained |
+| Syntax | `enable_if<cond, T>::type` | `requires cond` or `concept T` |
+| Readability | Constraint hidden in type manipulation | Constraint is explicit in the signature |
+| Composability | Boolean logic in template parameters | Named concepts composed with `&&``\|\|` |
+| Interacts with `auto` | Problematic | Works |
 
 ## Migration Path
 
@@ -281,8 +281,8 @@ Output:
 
 Subsumption is the partial ordering rule for constraints [N4950 §13.5.4]. A constraint `P`
 **subsumes** constraint `Q` if, for every substitution, `P` being satisfied implies `Q` is
-satisfied. When two overloads are both viable, the compiler selects the one whose constraint is
-subsumed by the other (i.e., the more specific one).
+Satisfied. When two overloads are both viable, the compiler selects the one whose constraint is
+Subsumed by the other (i.e., the more specific one).
 
 ```cpp
 #include <iostream>
@@ -399,7 +399,7 @@ int main() {
 ## Detection Idiom: SFINAE to Concepts
 
 The C++17 detection idiom (`std::void_t`) maps directly to requires-expressions in C++20. The
-requires-expression is both more readable and more expressive:
+Requires-expression is both more readable and more expressive:
 
 ```cpp
 #include <iostream>
@@ -441,8 +441,8 @@ int main() {
 
 :::tip
 When to Still Use SFINAE Concepts cannot replace all SFINAE use cases. In particular, SFINAE
-is still needed when the constraint depends on the **function's return type** in a way that cannot
-be expressed as a simple boolean predicate, or when working with C++17 or earlier codebases.
+Is still needed when the constraint depends on the **function's return type** in a way that cannot
+Be expressed as a simple boolean predicate, or when working with C++17 or earlier codebases.
 However, for new C++20 code, concepts should be the default choice for template constraints.
 :::
 
@@ -451,7 +451,7 @@ However, for new C++20 code, concepts should be the default choice for template 
 ### 1. SFINAE on Dependent Names Requires `typename`
 
 When SFINAE involves a dependent type name, you must use the `typename` keyword. Forgetting this
-produces a hard error rather than a substitution failure:
+Produces a hard error rather than a substitution failure:
 
 ```cpp
 #include <type_traits>
@@ -489,8 +489,8 @@ concept BadCheck = requires(T t) {
 ### 3. `std::enable_if` in Class Template Partial Specialization
 
 SFINAE via `std::enable_if` works differently in class template partial specializations. The
-condition must appear as a non-type template parameter, not a type parameter, because the
-specialization is selected based on the template arguments:
+Condition must appear as a non-type template parameter, not a type parameter, because the
+Specialization is selected based on the template arguments:
 
 ```cpp
 #include <iostream>
@@ -520,8 +520,8 @@ int main() {
 ### 4. Concepts Require Explicit `requires` for Complex Logic
 
 When a concept involves multiple conditions, prefer composing named concepts rather than embedding
-complex boolean logic in a single requires-clause. This produces better error messages and is more
-readable:
+Complex boolean logic in a single requires-clause. This produces better error messages and is more
+Readable:
 
 ```cpp
 #include <concepts>
@@ -554,3 +554,11 @@ int main() {
 - [Type Traits and Static Reflection Patterns](../3_compile_time_computation/4_type_traits.md)
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

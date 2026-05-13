@@ -11,29 +11,29 @@ slug: rtti-dynamic-cast-typeid
 # RTTI, dynamic_cast, and Typeid
 
 Run-Time Type Information (RTTI) allows programs to query the dynamic type of polymorphic objects at
-runtime. This section covers `dynamic_cast` for safe downcasting, the `typeid` operator for type
-identification, and practical patterns for type-based dispatch.
+Runtime. This section covers `dynamic_cast` for safe downcasting, the `typeid` operator for type
+Identification, and practical patterns for type-based dispatch.
 
 ## 4.1 Run-Time Type Information (RTTI)
 
 RTTI is the mechanism by which the type of a polymorphic object can be queried at runtime [N4950
 S7.6]. It is enabled by default on most compilers and can be disabled with `-fno-rtti` (GCC/Clang)
-or `/GR-` (MSVC).
+Or `/GR-` (MSVC).
 
 RTTI provides two primary operators:
 
-| Operator       | Purpose                                               |
+| Operator | Purpose |
 | -------------- | ----------------------------------------------------- |
-| `dynamic_cast` | Safe downcast with runtime type check                 |
-| `typeid`       | Returns a `const std::type_info&` describing the type |
+| `dynamic_cast` | Safe downcast with runtime type check |
+| `typeid` | Returns a `const std::type_info&` describing the type |
 
 RTTI relies on the same vtable infrastructure used for virtual dispatch. Each polymorphic class's
-vtable contains a pointer to its `std::type_info` object.
+Vtable contains a pointer to its `std::type_info` object.
 
 ### RTTI Implementation in the Itanium ABI
 
 Under the Itanium C++ ABI, the vtable layout includes a pointer to the `std::type_info` object for
-the class. The vtable structure is:
+The class. The vtable structure is:
 
 ```
 vtable for class C:
@@ -51,19 +51,19 @@ The `type_info` object stores:
 - A pointer to the base class type_info list (for `dynamic_cast` hierarchy traversal).
 
 This structure enables `dynamic_cast` to walk the base class chain and compute pointer adjustments
-at runtime.
+At runtime.
 
 :::warning
 RTTI Overhead Disabling RTTI (`-fno-rtti`) reduces binary size (by removing type_info
-metadata) and may enable further optimizations. However, it also makes `dynamic_cast` and `typeid`
-unavailable for polymorphic types. Disabling RTTI does **not** eliminate the vtable or vptr --
-virtual dispatch still works.
+Metadata) and may enable further optimizations. However, it also makes `dynamic_cast` and `typeid`
+Unavailable for polymorphic types. Disabling RTTI does **not** eliminate the vtable or vptr --
+Virtual dispatch still works.
 :::
 
 ## 4.2 `dynamic_cast<T*>(ptr)` -- Safe Downcast
 
 `dynamic_cast<T*>(ptr)` converts a base-class pointer to a derived-class pointer. If the cast is
-invalid (the object is not of type `T` or a type derived from `T`), the result is `nullptr` [N4950
+Invalid (the object is not of type `T` or a type derived from `T`), the result is `nullptr` [N4950
 S7.6.1.7].
 
 ```cpp
@@ -131,19 +131,19 @@ The cost of `dynamic_cast<T*>(p)` depends on the inheritance relationship betwee
 `*p` and `T`:
 
 **Down-cast (single inheritance):** `T` is derived from the static type of `*p`. The implementation
-compares `p`'s `type_info` pointer against `T`'s `type_info` pointer. This is a single pointer
-comparison -- $O(1)$.
+Compares `p`'s `type_info` pointer against `T`'s `type_info` pointer. This is a single pointer
+Comparison -- $O(1)$.
 
 **Down-cast (multiple inheritance):** `T` is derived from the static type of `*p` through a
-non-primary base. The implementation walks the base class list stored in `type_info` and computes
-the pointer offset. Cost is $O(d)$ where $d$ is the number of direct base classes (typically 1--3).
+Non-primary base. The implementation walks the base class list stored in `type_info` and computes
+The pointer offset. Cost is $O(d)$ where $d$ is the number of direct base classes ( 1--3).
 
 **Cross-cast:** `T` is a sibling base class of the static type of `*p`. The implementation finds the
-most-derived type, then walks the base class list to find `T` and compute the offset. Cost is $O(b)$
-where $b$ is the total number of base classes in the most-derived type.
+Most-derived type, then walks the base class list to find `T` and compute the offset. Cost is $O(b)$
+Where $b$ is the total number of base classes in the most-derived type.
 
 **Cast to `void*`:** Returns a pointer to the most-derived object. Cost is $O(1)$ -- a single offset
-lookup.
+Lookup.
 
 ## 4.3 `dynamic_cast<T&>(ref)` -- Reference Downcast
 
@@ -185,15 +185,15 @@ Cast failed: std::bad_cast
 
 :::info
 `dynamic_cast<T&>` cannot return `nullptr` because references cannot be null. Throwing an
-exception is the only way to signal failure. This is why `dynamic_cast` on pointers is generally
-preferred -- it allows the caller to check for failure without exception overhead.
+Exception is the only way to signal failure. This is why `dynamic_cast` on pointers is generally
+Preferred -- it allows the caller to check for failure without exception overhead.
 :::
 
 ## 4.4 `typeid` Operator
 
 The `typeid` operator [N4950 S7.6.1.8] returns a `const std::type_info&` describing the **dynamic
-type** of a polymorphic object (when applied to a dereferenced pointer or reference) or the **static
-type** (when applied to a type name or non-polymorphic object).
+Type** of a polymorphic object (when applied to a dereferenced pointer or reference) or the **static
+Type** (when applied to a type name or non-polymorphic object).
 
 ```cpp
 #include <iostream>
@@ -240,14 +240,14 @@ Key points:
 - `typeid(*ptr)` uses the **dynamic type** when `ptr` points to a polymorphic type.
 - `typeid(T)` uses the **static type** -- it is evaluated at compile time.
 - `typeid` returns a reference to a `std::type_info` object, whose lifetime extends for the entire
-  program.
+ program.
 - `std::type_index` (from `<typeindex>`) is a wrapper around `std::type_info` that provides value
-  semantics and can be used as a key in associative containers.
+ semantics and can be used as a key in associative containers.
 
 :::warning
 The `name()` member of `std::type_info` returns an implementation-defined string. It is
-useful for debugging but should not be parsed or compared. Use `std::type_index` for type
-comparisons.
+Useful for debugging but should not be parsed or compared. Use `std::type_index` for type
+Comparisons.
 :::
 
 ## 4.5 RTTI and `dynamic_cast` for the Visitor Pattern
@@ -348,22 +348,22 @@ int main() {
 
 :::tip
 The `dynamic_cast`-based approach is simpler to implement than the classic Visitor pattern
-for small, stable type hierarchies. However, adding a new derived type requires updating every
+For small, stable type hierarchies. However, adding a new derived type requires updating every
 `dynamic_cast` chain. The Visitor pattern localizes changes: adding a new visitor doesn't modify
-existing types, and adding a new type doesn't modify existing visitors (it only requires extending
-the visitor interface).
+Existing types, and adding a new type doesn't modify existing visitors (it only requires extending
+The visitor interface).
 :::
 
 ## 4.6 `dynamic_cast` with Multiple and Virtual Inheritance
 
 When multiple or virtual inheritance is involved, `dynamic_cast` performs a more complex traversal
-of the class hierarchy. The Itanium C++ ABI stores base-to-derived offset information in the vtable
+Of the class hierarchy. The Itanium C++ ABI stores base-to-derived offset information in the vtable
 (through `typeinfo` and base class offset tables), and `dynamic_cast` walks these structures to
-determine whether a cast is valid and to compute the pointer adjustment.
+Determine whether a cast is valid and to compute the pointer adjustment.
 
 **Cross-cast (casting across sibling branches):** A `dynamic_cast` from one base to another base
-within the same derived object (a "cross-cast") is valid only when both bases are accessible and the
-derived object actually exists. This requires the object to be polymorphic:
+Within the same derived object (a "cross-cast") is valid only when both bases are accessible and the
+Derived object actually exists. This requires the object to be polymorphic:
 
 ```cpp
 #include <iostream>
@@ -405,26 +405,26 @@ Impl::B
 ```
 
 The cross-cast succeeds because `dynamic_cast` inspects the `typeinfo` to determine that the actual
-object (`Impl`) derives from both `InterfaceA` and `InterfaceB`. The pointer is adjusted by the
-offset between the `InterfaceA` subobject and the `InterfaceB` subobject within `Impl`. For single
-inheritance, `dynamic_cast` is a single `typeinfo` pointer comparison -- $O(1)$. For cross-casts and
-casts through virtual bases, the cost is $O(d)$ where $d$ is the depth of the DAG [N4950 S7.6.1.7].
+Object (`Impl`) derives from both `InterfaceA` and `InterfaceB`. The pointer is adjusted by the
+Offset between the `InterfaceA` subobject and the `InterfaceB` subobject within `Impl`. For single
+Inheritance, `dynamic_cast` is a single `typeinfo` pointer comparison -- $O(1)$. For cross-casts and
+Casts through virtual bases, the cost is $O(d)$ where $d$ is the depth of the DAG [N4950 S7.6.1.7].
 
 ### Down-cast vs Cross-cast
 
-| Cast Type    | Source and Target           | Cost                          | Mechanism                               |
+| Cast Type | Source and Target | Cost | Mechanism |
 | ------------ | --------------------------- | ----------------------------- | --------------------------------------- |
-| Down-cast    | Base* to Derived*           | $O(1)$ (single inheritance)   | `type_info` pointer comparison          |
-| Down-cast    | Base* to Derived*           | $O(b)$ (multiple inheritance) | Walk base class list                    |
-| Cross-cast   | Base1* to Base2* (siblings) | $O(b)$                        | Find most-derived, walk to target base  |
-| Up-cast      | Derived* to Base*           | $O(1)$                        | Compile-time offset (use `static_cast`) |
-| `void*` cast | Base* to `void*`            | $O(1)$                        | Offset to most-derived object           |
+| Down-cast | Base* to Derived* | $O(1)$ (single inheritance) | `type_info` pointer comparison |
+| Down-cast | Base* to Derived* | $O(b)$ (multiple inheritance) | Walk base class list |
+| Cross-cast | Base1* to Base2* (siblings) | $O(b)$ | Find most-derived, walk to target base |
+| Up-cast | Derived* to Base* | $O(1)$ | Compile-time offset (use `static_cast`) |
+| `void*` cast | Base* to `void*` | $O(1)$ | Offset to most-derived object |
 
 ## 4.7 `dynamic_cast` to `void*`: The Most-Derived Type
 
 A `dynamic_cast&lt;void*>(expr)` where `expr` is a pointer to a polymorphic type yields a pointer to
-the **most-derived object** [N4950 S7.6.1.7]. This is useful for implementing `memcmp`-style
-identity checks or determining the root of an object's allocation:
+The **most-derived object** [N4950 S7.6.1.7]. This is useful for implementing `memcmp`-style
+Identity checks or determining the root of an object's allocation:
 
 ```cpp
 #include <iostream>
@@ -451,7 +451,7 @@ int main() {
 ```
 
 This cast is the only `dynamic_cast` that does not require the target type to be related to the
-source type. It is often used in debugging, custom memory management, and implementing
+Source type. It is often used in debugging, custom memory management, and implementing
 `std::pointer_traits`.
 
 ## 4.8 `typeid` on Null Pointers and Non-Polymorphic Types
@@ -459,12 +459,12 @@ source type. It is often used in debugging, custom memory management, and implem
 The behavior of `typeid` depends critically on whether the operand is a type or an expression:
 
 - **`typeid(T)`** (type operand): Always well-formed, returns `std::type_info` for the static type
-  `T`. Evaluated at compile time.
+ `T`. Evaluated at compile time.
 - **`typeid(expr)`** (expression operand, `expr` is a dereferenced pointer to a polymorphic type):
-  Returns `std::type_info` for the **dynamic type** at runtime.
+ Returns `std::type_info` for the **dynamic type** at runtime.
 - **`typeid(*p)` where `p` is null:** If `p` is a null pointer to a polymorphic type, `typeid(*p)`
-  throws `std::bad_typeid` [N4950 S7.6.1.8]. This is because the dereference would require accessing
-  the vtable, which does not exist for a null pointer.
+ throws `std::bad_typeid` [N4950 S7.6.1.8]. This is because the dereference would require accessing
+ the vtable, which does not exist for a null pointer.
 
 ```cpp
 #include <iostream>
@@ -494,7 +494,7 @@ int main() {
 
 When applied to a non-polymorphic type (or a dereferenced pointer to a non-polymorphic type),
 `typeid` returns the `std::type_info` for the **static type** [N4950 S7.6.1.8]. No runtime type
-information is consulted because there is no vtable to provide it:
+Information is consulted because there is no vtable to provide it:
 
 ```cpp
 #include <iostream>
@@ -518,7 +518,7 @@ int main() {
 
 Disabling RTTI removes the `type_info` metadata from the binary and makes `dynamic_cast` and
 `typeid` unavailable for polymorphic types. This is common in performance-sensitive or embedded
-contexts.
+Contexts.
 
 ```bash
 # GCC / Clang
@@ -531,7 +531,7 @@ cl /GR- /O2 main.cpp
 ### Alternatives to `dynamic_cast`
 
 When RTTI is disabled, or when `dynamic_cast` is too expensive for hot paths, consider these
-alternatives:
+Alternatives:
 
 #### Alternative 1: Manual Type Tags (enum)
 
@@ -580,7 +580,7 @@ int main() {
 ```
 
 Cost: $O(1)$ per dispatch (switch on enum). Downside: requires manual maintenance of the enum and
-does not handle deep hierarchies well.
+Does not handle deep hierarchies well.
 
 #### Alternative 2: `std::variant` (Closed Type Set)
 
@@ -608,7 +608,7 @@ int main() {
 ```
 
 Cost: $O(1)$ per dispatch (index check + jump table). Downside: the set of types must be known at
-compile time; cannot add new types without modifying the variant.
+Compile time; cannot add new types without modifying the variant.
 
 #### Alternative 3: Visitor Pattern (Double Dispatch)
 
@@ -660,17 +660,17 @@ int main() {
 ```
 
 Cost: $O(1)$ per dispatch (two virtual calls). Downside: adding a new `Shape` type requires
-modifying all visitors; adding a new visitor requires modifying all shapes.
+Modifying all visitors; adding a new visitor requires modifying all shapes.
 
 ### Alternative Comparison Table
 
-| Approach                      | RTTI Required | Closed Set | Cost                     | Extensibility          |
+| Approach | RTTI Required | Closed Set | Cost | Extensibility |
 | ----------------------------- | ------------- | ---------- | ------------------------ | ---------------------- |
-| `dynamic_cast` chain          | Yes           | No         | $O(d)$ hierarchy depth   | Add types freely       |
-| Manual type tag               | No            | No         | $O(1)$ switch            | Manual maintenance     |
-| `std::variant` + `std::visit` | No            | Yes        | $O(1)$                   | Compile-time only      |
-| Visitor pattern               | No            | No         | $O(1)$ (2 virtual calls) | Both axes need changes |
-| CRTP / deducing this          | No            | Yes        | $O(0)$ (inlined)         | Compile-time only      |
+| `dynamic_cast` chain | Yes | No | $O(d)$ hierarchy depth | Add types freely |
+| Manual type tag | No | No | $O(1)$ switch | Manual maintenance |
+| `std::variant` + `std::visit` | No | Yes | $O(1)$ | Compile-time only |
+| Visitor pattern | No | No | $O(1)$ (2 virtual calls) | Both axes need changes |
+| CRTP / deducing this | No | Yes | $O(0)$ (inlined) | Compile-time only |
 
 ## 4.10 RTTI Overhead Measurement
 
@@ -735,45 +735,53 @@ int main() {
 ```
 
 Typical results show `dynamic_cast` is 2--5x slower than a manual tag check for single inheritance,
-but the absolute cost is still only a few nanoseconds per call. The overhead becomes significant
-only in tight inner loops processing millions of objects.
+But the absolute cost is still only a few nanoseconds per call. The overhead becomes significant
+Only in tight inner loops processing millions of objects.
 
 ## Common Pitfalls
 
 **1. `dynamic_cast` on non-polymorphic types:** `dynamic_cast` requires the source type to be
-polymorphic (have at least one virtual function). Attempting `dynamic_cast&lt;Derived*>(base_ptr)`
-where `Base` has no virtual functions is a **compile-time error** [N4950 S7.6.1.7]. Use
+Polymorphic (have at least one virtual function). Attempting `dynamic_cast&lt;Derived*>(base_ptr)`
+Where `Base` has no virtual functions is a **compile-time error** [N4950 S7.6.1.7]. Use
 `static_cast` instead for downcasting non-polymorphic types (at your own risk -- no runtime check).
 
 **2. `dynamic_cast` and undefined behavior:** The Standard specifies that if the object pointed to
-by the operand is not actually of the target type (or a type derived from it), the behavior of
+By the operand is not actually of the target type (or a type derived from it), the behavior of
 `dynamic_cast&lt;T*>(p)` is **implementation-defined** when `p` points to an incomplete type, and
-returns `nullptr` otherwise [N4950 S7.6.1.7]. Never rely on `dynamic_cast` succeeding with
-incomplete types.
+Returns `nullptr` otherwise [N4950 S7.6.1.7]. Never rely on `dynamic_cast` succeeding with
+Incomplete types.
 
 **3. Performance in tight loops:** Each `dynamic_cast` may traverse the class hierarchy and perform
-pointer comparisons. In a tight inner loop processing millions of objects, this overhead is
-measurable. If the type hierarchy is small and stable, consider a manual type tag (enum) or the
+Pointer comparisons. In a tight inner loop processing millions of objects, this overhead is
+Measurable. If the type hierarchy is small and stable, consider a manual type tag (enum) or the
 Visitor pattern instead.
 
 **4. `dynamic_cast` across shared library boundaries:** When the base and derived classes are
-defined in different shared libraries, `type_info` comparison may fail because the `type_info`
-objects are not unified across library boundaries. This is implementation-specific and can cause
+Defined in different shared libraries, `type_info` comparison may fail because the `type_info`
+Objects are not unified across library boundaries. This is implementation-specific and can cause
 `dynamic_cast` to return `nullptr` even when the cast is valid. Use the Visitor pattern or manual
-type tags for cross-library polymorphism.
+Type tags for cross-library polymorphism.
 
 **5. Using `typeid` for type comparison:** `typeid(a) == typeid(b)` compares `type_info` objects,
-which is well-defined. However, `typeid(a).name() == typeid(b).name()` compares
-implementation-defined strings and may fail even when the types are the same (different name
-mangling, whitespace, etc.). Always use `std::type_index` or direct `type_info` comparison.
+Which is well-defined. However, `typeid(a).name() == typeid(b).name()` compares
+Implementation-defined strings and may fail even when the types are the same (different name
+Mangling, whitespace, etc.). Always use `std::type_index` or direct `type_info` comparison.
 
 **6. RTTI and binary size:** Each polymorphic class generates a `type_info` object and associated
-metadata. In a large codebase with many polymorphic classes, this can add tens of kilobytes to the
-binary. If binary size is critical (e.g., embedded systems), consider `-fno-rtti` and use manual
-type tags.
+Metadata. In a large codebase with many polymorphic classes, this can add tens of kilobytes to the
+Binary. If binary size is critical (e.g., embedded systems), consider `-fno-rtti` and use manual
+Type tags.
 
 ## See Also
 
 - [Virtual Functions and vtables](./1_vtables.md)
 - [Inheritance, Object Slicing, and Virtual Destructors](./2_inheritance_slicing.md)
 - [Devirtualization and Final Specifiers](./3_devirtualization.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -11,7 +11,7 @@ categories:
 ## Classes
 
 Classes in Kotlin are declared with the `class` keyword. They are final by default -- use `open` to
-allow inheritance.
+Allow inheritance.
 
 ```kotlin
 class User(val name: String, var age: Int)
@@ -23,7 +23,7 @@ This single line declares a class with a primary constructor, two properties (`n
 ### Primary Constructor
 
 The primary constructor is declared in the class header. Constructor parameters can also declare
-properties.
+Properties.
 
 ```kotlin
 class Person(
@@ -41,7 +41,7 @@ class Person(
 ```
 
 The `init` block is the primary constructor body. Multiple `init` blocks execute in declaration
-order.
+Order.
 
 ### Secondary Constructors
 
@@ -56,17 +56,17 @@ class Person(val name: String) {
 ```
 
 Every secondary constructor must delegate to the primary constructor (or another secondary
-constructor that eventually delegates to the primary). This ensures properties are initialized
-exactly once.
+Constructor that eventually delegates to the primary). This ensures properties are initialized
+Exactly once.
 
 ### Visibility Modifiers
 
-| Modifier    | Class Member                 | Top-Level Declaration        |
+| Modifier | Class Member | Top-Level Declaration |
 | ----------- | ---------------------------- | ---------------------------- |
-| `public`    | Visible everywhere (default) | Visible everywhere (default) |
-| `private`   | Inside class only            | Inside file only             |
-| `protected` | Inside class + subclasses    | N/A                          |
-| `internal`  | Inside module                | Inside module                |
+| `public` | Visible everywhere (default) | Visible everywhere (default) |
+| `private` | Inside class only | Inside file only |
+| `protected` | Inside class + subclasses | N/A |
+| `internal` | Inside module | Inside module |
 
 A module is a set of Kotlin files compiled together -- a Gradle project, a Maven project, or an
 IntelliJ module.
@@ -123,7 +123,7 @@ class Service {
 ```
 
 `lateinit` bypasses null safety. Use it only when initialization is guaranteed to happen before
-first access, typically in frameworks that call lifecycle methods after construction.
+First access, in frameworks that call lifecycle methods after construction.
 
 ## Inheritance
 
@@ -183,8 +183,8 @@ class Button : Clickable, Focusable {
 
 ## Data Classes
 
-Data classes are designed to hold data. The compiler generates `equals()`, `hashCode()`,
-`toString()`, `componentN()` functions, and a `copy()` method.
+Data classes are designed to hold data. The compiler generates `equals()``hashCode()`
+`toString()``componentN()` functions, and a `copy()` method.
 
 ```kotlin
 data class User(
@@ -208,13 +208,13 @@ println(user)  // User(id=1, name=Alice, email=alice@example.com, active=true)
 
 - The primary constructor must have at least one parameter.
 - All primary constructor parameters must be `val` or `var`.
-- Data classes cannot be `open`, `abstract`, `inner`, or `sealed`.
+- Data classes cannot be `open``abstract``inner`Or `sealed`.
 - The generated `equals()` compares all primary constructor properties structurally.
 
 ### Copy Semantics
 
 `copy()` performs a shallow copy. Mutable properties in the copy reference the same objects as the
-original.
+Original.
 
 ```kotlin
 data class Config(val tags: MutableList<String>)
@@ -227,7 +227,7 @@ val modified = original.copy(tags = original.tags.apply { add("c") })
 ## Sealed Classes
 
 Sealed classes restrict inheritance to a finite set of subclasses declared in the same package. This
-enables exhaustive `when` expressions.
+Enables exhaustive `when` expressions.
 
 ```kotlin
 sealed class Result<out T> {
@@ -246,7 +246,7 @@ fun handle(result: Result<String>) {
 ```
 
 In Kotlin 1.5+, sealed class subclasses can be defined in the same package but not necessarily the
-same file. In Kotlin 1.7+, sealed interfaces are supported.
+Same file. In Kotlin 1.7+, sealed interfaces are supported.
 
 ## Enum Classes
 
@@ -305,7 +305,7 @@ object ConsoleLogger : Logger {
 ### Anonymous Objects
 
 Anonymous objects replace Java anonymous inner classes. They can implement interfaces or extend
-classes.
+Classes.
 
 ```kotlin
 val listener = object : MouseAdapter() {
@@ -316,12 +316,12 @@ val listener = object : MouseAdapter() {
 ```
 
 Anonymous objects used as local variables have an anonymous type. If you need to pass the object
-outside its declaration scope, declare the type explicitly or use an interface.
+Outside its declaration scope, declare the type explicitly or use an interface.
 
 ## Companion Objects
 
 A companion object is an object declaration tied to a class. Members declared in it are accessed via
-the class name -- analogous to Java static members.
+The class name -- analogous to Java static members.
 
 ```kotlin
 class User private constructor(
@@ -344,7 +344,7 @@ val user2 = User.fromJson("""{"name": "Bob", "email": "bob@example.com"}""")
 ```
 
 The companion object can have a name (e.g., `Factory`) or use the default name `Companion`. A class
-can have only one companion object.
+Can have only one companion object.
 
 Companion objects can implement interfaces:
 
@@ -366,13 +366,21 @@ val user = spawn(User)  // User(name=default)
 ## Common Pitfalls
 
 - \*\* Forgetting that classes are final by default. Mark classes and methods as `open` when
-  designing for inheritance.
+ designing for inheritance.
 - \*\* Using `data class` for mutable entities. `equals()` and `hashCode()` include mutable
-  properties, which breaks the contract if the object is mutated after being placed in a `HashSet`
-  or `HashMap`.
+ properties, which breaks the contract if the object is mutated after being placed in a `HashSet`
+ or `HashMap`.
 - \*\* Storing references to mutable collections in data classes. The `copy()` method performs a
-  shallow copy, so mutations to the copy's collections affect the original.
+ shallow copy, so mutations to the copy's collections affect the original.
 - \*\* Using `object` declarations for dependency injection. Singletons make testing harder because
-  they cannot be replaced or mocked. Prefer constructor injection with regular classes.
+ they cannot be replaced or mocked. Prefer constructor injection with regular classes.
 - \*\* Confusing `object` declarations with anonymous objects. `object` creates a named singleton;
-  `object : SomeInterface { ... }` creates an anonymous instance.
+ `object : SomeInterface { ... }` creates an anonymous instance.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

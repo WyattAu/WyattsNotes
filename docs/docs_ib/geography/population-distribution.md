@@ -32,7 +32,7 @@ Population distribution refers to the spatial pattern of where people live acros
 
 **Economic opportunities.** Urban-industrial regions offer employment in manufacturing and services, drawing migrants from rural areas. The Pearl River Delta in China, for instance, experienced rapid population growth after economic liberalisation in the 1980s, as factories attracted migrant workers from inland provinces.
 
-**Transport networks.** Coastal zones, navigable rivers, and transport corridors concentrate population because they reduce the cost of moving goods and people. The corridor from Boston to Washington D.C. on the US east coast contains over 50 million people along a continuous urban strip.
+**Transport networks.** Coastal zones, navigable rivers, and transport corridors concentrate population because they reduce the cost of moving goods and people. The corridor from Boston to Washington D.C. On the US east coast contains over 50 million people along a continuous urban strip.
 
 **Political factors.** Government policies can encourage or restrict settlement. Brazil's relocation of its capital to Brasilia (1960) was designed to open the interior to settlement. Conversely, Cold War border zones (the Korean DMZ) and restricted military areas create depopulated zones.
 
@@ -41,7 +41,7 @@ Population distribution refers to the spatial pattern of where people live acros
 <details>
 <summary>Common Pitfalls: Density vs Distribution</summary>
 
-Students frequently confuse density with distribution. Population density is a numerical average calculated for a defined area; population distribution describes the spatial pattern of settlement. A country can have a low arithmetic density yet have regions of very high local density (e.g., Egypt: national density of approximately 100 people per km$^2$, but over 1000 people per km$^2$ in the Nile Valley). Always distinguish between the two concepts and be prepared to explain why arithmetic density can be misleading.
+Students frequently confuse density with distribution. Population density is a numerical average calculated for a defined area; population distribution describes the spatial pattern of settlement. A country can have a low arithmetic density yet have regions of very high local density (e.g., Egypt: national density of approximately 100 people per km$^2$But over 1000 people per km$^2$ in the Nile Valley). Always distinguish between the two concepts and be prepared to explain why arithmetic density can be misleading.
 
 </details>
 
@@ -87,7 +87,7 @@ India illustrates a protracted and spatially uneven demographic transition. Kera
 
 ## Population Pyramids
 
-A population pyramid (also called an age-sex structure diagram) graphically represents the age and sex composition of a population. The horizontal axis shows the number or percentage of people in each age cohort, while the vertical axis shows age groups, typically in five-year bands.
+A population pyramid (also called an age-sex structure diagram) graphically represents the age and sex composition of a population. The horizontal axis shows the number or percentage of people in each age cohort, while the vertical axis shows age groups, in five-year bands.
 
 ### Interpreting Population Pyramids
 
@@ -121,7 +121,7 @@ Governments implement population policies to influence birth rates, death rates,
 
 ### Pro-Natalist Policies
 
-Pro-natalist policies aim to increase birth rates, typically in response to fertility below replacement level and population ageing.
+Pro-natalist policies aim to increase birth rates, in response to fertility below replacement level and population ageing.
 
 | Country | Policy Measures | Outcomes |
 |---|---|---|
@@ -133,7 +133,7 @@ Pro-natalist policies aim to increase birth rates, typically in response to fert
 
 ### Anti-Natalist Policies
 
-Anti-natalist policies aim to reduce birth rates, typically in response to rapid population growth that strains resources and infrastructure.
+Anti-natalist policies aim to reduce birth rates, in response to rapid population growth that strains resources and infrastructure.
 
 **China's One-Child Policy (1979--2015).** The most extensive anti-natalist policy in history. Key features:
 
@@ -249,13 +249,13 @@ The distinction between refugees and economic migrants is legally significant bu
 
 Thomas Malthus, in *An Essay on the Principle of Population* (1798), argued that population grows geometrically ($1, 2, 4, 8, 16, \ldots$) while food production grows arithmetically ($1, 2, 3, 4, 5, \ldots$). He predicted that population would inevitably outstrip food supply, resulting in "positive checks" (famine, disease, war) that would reduce the population back to a level that resources could support.
 
-Malthus's argument can be formalised: if population at time $t$ is $P(t)$ and food supply is $F(t)$, then:
+Malthus's argument can be formalised: if population at time $t$ is $P(t)$ and food supply is $F(t)$Then:
 
 $$P(t) = P_0 \cdot r^t$$
 
 $$F(t) = F_0 + k \cdot t$$
 
-where $r \gt 1$ is the geometric growth rate and $k$ is the arithmetic increment. For sufficiently large $t$, $P(t) \gt F(t)$.
+Where $r \gt 1$ is the geometric growth rate and $k$ is the arithmetic increment. For sufficiently large $t$$P(t) \gt F(t)$.
 
 ### Criticisms of Malthus
 
@@ -272,17 +272,17 @@ Boserup's model is more consistent with the historical record than Malthus's. Th
 
 ### Carrying Capacity
 
-Carrying capacity is the maximum population that can be supported indefinitely by a given environment without degrading the resource base. It is not a fixed quantity; it depends on technology, consumption patterns, and distribution systems.
+Carrying capacity is the maximum population that can be supported indefinitely by a given environment without degrading the resource base. It is not a fixed quantity; on technology, consumption patterns, and distribution systems.
 
 - **Optimistic estimates** suggest Earth can support $10$--$15$ billion people with current or near-future technology, assuming equitable distribution and plant-based diets.
 - **Pessimistic estimates** argue that current consumption patterns, particularly of meat and fossil fuels, have already exceeded carrying capacity, as evidenced by ecological overshoot (humanity's ecological footprint exceeded Earth's biocapacity by approximately 70% in 2023).
 
-The concept of carrying capacity is most useful as a heuristic rather than a precise calculation, because it depends on assumptions about technology, lifestyle, and equity that are inherently uncertain.
+The concept of carrying capacity is most useful as a heuristic rather than a precise calculation, because on assumptions about technology, lifestyle, and equity that are inherently uncertain.
 
 <details>
 <summary>Case Study: Bangladesh -- Testing Malthus and Boserup</summary>
 
-Bangladesh is often cited as a Malthusian nightmare that did not materialise. With a population of approximately 170 million (2023) and a land area of 147 570 km$^2$, Bangladesh has one of the highest population densities in the world (approximately 1150 people per km$^2$). Despite this:
+Bangladesh is often cited as a Malthusian nightmare that did not materialise. With a population of approximately 170 million (2023) and a land area of 147 570 km$^2$Bangladesh has one of the highest population densities in the world (approximately 1150 people per km$^2$). Despite this:
 
 - Bangladesh has achieved food self-sufficiency in rice production through Green Revolution technologies (high-yield varieties, irrigation, fertiliser).
 - The TFR has fallen from 6.3 (1975) to 2.0 (2023), one of the steepest fertility declines in history, driven by effective family planning programmes and female education.
@@ -291,3 +291,15 @@ Bangladesh is often cited as a Malthusian nightmare that did not materialise. Wi
 However, Bangladesh remains highly vulnerable to climate change: sea-level rise threatens to inundate up to 17% of its land area by 2050, potentially displacing 20 million people. This illustrates that carrying capacity is dynamic and can be reduced as well as increased by environmental change.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

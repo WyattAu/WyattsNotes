@@ -16,9 +16,9 @@ hide_table_of_contents: true
 
 Midpoint method: $\text{PED} = \frac◆LB◆\% \Delta Q_d◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 600 - 800 = -200$, $\bar{Q} = (800 + 600)/2 = 700$
+$\Delta Q = 600 - 800 = -200$$\bar{Q} = (800 + 600)/2 = 700$
 
-$\Delta P = 3.00 - 2.50 = 0.50$, $\bar{P} = (2.50 + 3.00)/2 = 2.75$
+$\Delta P = 3.00 - 2.50 = 0.50$$\bar{P} = (2.50 + 3.00)/2 = 2.75$
 
 $\text{PED} = \frac{-200/700}{0.50/2.75} = \frac{-0.2857}{0.1818} = -1.57$
 
@@ -40,9 +40,9 @@ At $P = 5$: $Q_s = -100 + 50(5) = 150$
 
 Midpoint method: $\text{PES} = \frac◆LB◆\% \Delta Q_s◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 150 - 50 = 100$, $\bar{Q} = (50 + 150)/2 = 100$
+$\Delta Q = 150 - 50 = 100$$\bar{Q} = (50 + 150)/2 = 100$
 
-$\Delta P = 5 - 3 = 2$, $\bar{P} = (3 + 5)/2 = 4$
+$\Delta P = 5 - 3 = 2$$\bar{P} = (3 + 5)/2 = 4$
 
 $\text{PES} = \frac{100/100}{2/4} = \frac{1}{0.5} = 2.0$
 
@@ -60,7 +60,7 @@ In the very short run, supply is less elastic because: (1) firms have limited st
 
 $20 - 0.5Q = 2 + 0.5Q$
 
-$18 = Q$, so $Q^* = 18$.
+$18 = Q$So $Q^* = 18$.
 
 $P^* = 20 - 0.5(18) = 20 - 9 = \pounds 11$.
 
@@ -80,18 +80,18 @@ $\text{PS} = \frac{1}{2} \times 18 \times (11 - 2) = \frac{1}{2} \times 18 \time
 
 **Price ceiling at $\pounds 8$:**
 
-Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$, $Q_d = 24$.
-Quantity supplied at $\pounds 8$: $8 = 2 + 0.5Q_s$, $Q_s = 12$.
+Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$$Q_d = 24$.
+Quantity supplied at $\pounds 8$: $8 = 2 + 0.5Q_s$$Q_s = 12$.
 
-Since $Q_s \lt Q_d$, the binding price ceiling creates a shortage of $24 - 12 = 12$ units. The quantity traded is $Q = 12$.
+Since $Q_s \lt Q_d$The binding price ceiling creates a shortage of $24 - 12 = 12$ units. The quantity traded is $Q = 12$.
 
-New CS: area below the demand curve and above $\pounds 8$, from $Q = 0$ to $Q = 12$.
+New CS: area below the demand curve and above $\pounds 8$From $Q = 0$ to $Q = 12$.
 
 Demand price at $Q = 0$: $\pounds 20$. Demand price at $Q = 12$: $20 - 6 = \pounds 14$.
 
 $\text{CS}_{\text{new}}$ is a trapezoid: $\frac{1}{2}(20 + 14 - 2 \times 8) \times 12 = \frac{1}{2}(34 - 16) \times 12 = \frac{1}{2} \times 18 \times 12 = \pounds 108$.
 
-New PS: area above supply and below $\pounds 8$, from $Q = 0$ to $Q = 12$:
+New PS: area above supply and below $\pounds 8$From $Q = 0$ to $Q = 12$:
 
 Supply price at $Q = 0$: $\pounds 2$. Supply price at $Q = 12$: $2 + 6 = \pounds 8$.
 
@@ -101,7 +101,7 @@ New total surplus: $108 + 36 = \pounds 144$.
 
 Deadweight loss $= 162 - 144 = \pounds 18$.
 
-Alternatively, DWL as a triangle: base $= 18 - 12 = 6$, height $= 14 - 8 = 6$.
+Alternatively, DWL as a triangle: base $= 18 - 12 = 6$Height $= 14 - 8 = 6$.
 
 $\text{DWL} = \frac{1}{2} \times 6 \times 6 = \pounds 18$.
 
@@ -112,11 +112,11 @@ $\text{DWL} = \frac{1}{2} \times 6 \times 6 = \pounds 18$.
 
 **Solution:**
 
-(a) Pre-tax equilibrium: $50 - Q = 10 + Q$, so $40 = 2Q$, $Q^* = 20$, $P^* = \pounds 30$.
+(a) Pre-tax equilibrium: $50 - Q = 10 + Q$So $40 = 2Q$$Q^* = 20$$P^* = \pounds 30$.
 
 Post-tax: supply shifts up by $\pounds 4$. New supply: $P = 14 + Q$.
 
-$50 - Q = 14 + Q$, so $36 = 2Q$, $Q_t = 18$, $P_{\text{buyer}} = 50 - 18 = \pounds 32$.
+$50 - Q = 14 + Q$So $36 = 2Q$$Q_t = 18$$P_{\text{buyer}} = 50 - 18 = \pounds 32$.
 
 $P_{\text{seller}} = P_{\text{buyer}} - \text{tax} = 32 - 4 = \pounds 28$.
 
@@ -130,19 +130,19 @@ The equal incidence arises because demand and supply have the same slope magnitu
 
 (d) Tax revenue $= \text{tax} \times Q_t = 4 \times 18 = \pounds 72$.
 
-The deadweight loss occurs because the tax discourages 2 units of mutually beneficial trade. For these 2 units, the marginal benefit to consumers (given by the demand curve) exceeds the marginal cost to producers (given by the supply curve), but the tax makes these trades unprofitable. The surplus that would have been gained from these trades is lost to society -- it is not transferred to the government as revenue, but simply destroyed.
+The deadweight loss occurs because the tax discourages 2 units of mutually beneficial trade. For these 2 units, the marginal benefit to consumers (given by the demand curve) exceeds the marginal cost to producers (given by the supply curve), but the tax makes these trades unprofitable. The surplus that would have been gained from these trades is lost to society -- it is not transferred to the government as revenue, but destroyed.
 
 ---
 ### IT-2: Subsidy Analysis (with Theory of the Firm)
-**Question:** The government provides a production subsidy of $\pounds 6$ per unit to wheat farmers. Demand: $P = 40 - 0.5Q$, Supply: $P = 4 + 0.5Q$. Calculate the change in consumer surplus, producer surplus, government expenditure, and deadweight loss. Discuss why subsidies can lead to overproduction.
+**Question:** The government provides a production subsidy of $\pounds 6$ per unit to wheat farmers. Demand: $P = 40 - 0.5Q$Supply: $P = 4 + 0.5Q$. Calculate the change in consumer surplus, producer surplus, government expenditure, and deadweight loss. Discuss why subsidies can lead to overproduction.
 
 **Solution:**
 
-Pre-subsidy equilibrium: $40 - 0.5Q = 4 + 0.5Q$, $36 = Q$, $Q^* = 36$, $P^* = \pounds 22$.
+Pre-subsidy equilibrium: $40 - 0.5Q = 4 + 0.5Q$$36 = Q$$Q^* = 36$$P^* = \pounds 22$.
 
-With subsidy: effective supply shifts down by $\pounds 6$. New supply (from seller's perspective, the price they receive): $P_{\text{seller}} = 4 + 0.5Q$, but they receive $P_{\text{buyer}} + 6$.
+With subsidy: effective supply shifts down by $\pounds 6$. New supply (from seller's perspective, the price they receive): $P_{\text{seller}} = 4 + 0.5Q$But they receive $P_{\text{buyer}} + 6$.
 
-Equilibrium: $40 - 0.5Q = 4 + 0.5Q - 6 = -2 + 0.5Q$. So $42 = Q$, $Q_s = 42$.
+Equilibrium: $40 - 0.5Q = 4 + 0.5Q - 6 = -2 + 0.5Q$. So $42 = Q$$Q_s = 42$.
 
 $P_{\text{buyer}} = 40 - 0.5(42) = \pounds 19$.
 $P_{\text{seller}} = 4 + 0.5(42) = \pounds 25$ (which is $P_{\text{buyer}} + 6 = 19 + 6 = 25$. Correct.)
@@ -171,20 +171,20 @@ Supply with subsidy: $P = 10 + Q - 5 = 5 + Q$ (fishermen receive $\pounds 5$ ext
 
 At the price floor of $\pounds 40$:
 
-Quantity demanded: $40 = 60 - Q_d$, $Q_d = 20$.
-Quantity supplied (with subsidy): fishermen receive $40 + 5 = \pounds 45$ per unit. So $45 = 10 + Q_s$, $Q_s = 35$.
+Quantity demanded: $40 = 60 - Q_d$$Q_d = 20$.
+Quantity supplied (with subsidy): fishermen receive $40 + 5 = \pounds 45$ per unit. So $45 = 10 + Q_s$$Q_s = 35$.
 
-The subsidy means the effective price received by fishermen is $\pounds 40 + \pounds 5 = \pounds 45$ per unit. The quantity supplied at this effective price: $45 = 10 + Q_s$, $Q_s = 35$.
+The subsidy means the effective price received by fishermen is $\pounds 40 + \pounds 5 = \pounds 45$ per unit. The quantity supplied at this effective price: $45 = 10 + Q_s$$Q_s = 35$.
 
-Since $Q_s = 35 \gt Q_d = 20$, there is excess supply (surplus) of $35 - 20 = 15$ units. The quantity traded is determined by demand: $Q = 20$.
+Since $Q_s = 35 \gt Q_d = 20$There is excess supply (surplus) of $35 - 20 = 15$ units. The quantity traded is determined by demand: $Q = 20$.
 
-Consumer surplus at $P = 40$, $Q = 20$:
+Consumer surplus at $P = 40$$Q = 20$:
 
-$P_{\text{demand}}$ at $Q = 0$ is $\pounds 60$, at $Q = 20$ is $\pounds 40$.
+$P_{\text{demand}}$ at $Q = 0$ is $\pounds 60$At $Q = 20$ is $\pounds 40$.
 
 $\text{CS} = \frac{1}{2}(60 - 40)(20) = \frac{1}{2}(20)(20) = \pounds 200$.
 
-Producer surplus: producers receive $\pounds 45$ per unit. The supply price at $Q = 0$ is $\pounds 10$, at $Q = 20$ is $10 + 20 = \pounds 30$.
+Producer surplus: producers receive $\pounds 45$ per unit. The supply price at $Q = 0$ is $\pounds 10$At $Q = 20$ is $10 + 20 = \pounds 30$.
 
 $\text{PS}$ is the area above the supply curve and below the effective price received ($\pounds 45$), from $Q = 0$ to $Q = 20$:
 
@@ -194,7 +194,7 @@ $\text{PS} = \frac{1}{2}(45 - 10 + 45 - 30)(20) = \frac{1}{2}(35 + 15)(20) = \fr
 
 Government subsidy cost $= 5 \times 20 = \pounds 100$.
 
-**Are the policies contradictory?** Yes, partially. The price floor is designed to help producers by keeping prices high (and typically reduces quantity traded). The subsidy also helps producers but encourages more production. The combination means consumers pay a high price ($\pounds 40$) while producers receive an even higher effective price ($\pounds 45$). The government spends on the subsidy while the price floor creates unsold surplus (15 units). This is inefficient: the price floor reduces quantity traded below equilibrium, while the subsidy pushes supply beyond what the market demands at that price, creating waste. A simpler approach would be to use either the price floor or the subsidy, not both.
+**Are the policies contradictory?** Yes, partially. The price floor is designed to help producers by keeping prices high (and reduces quantity traded). The subsidy also helps producers but encourages more production. The combination means consumers pay a high price ($\pounds 40$) while producers receive an even higher effective price ($\pounds 45$). The government spends on the subsidy while the price floor creates unsold surplus (15 units). This is inefficient: the price floor reduces quantity traded below equilibrium, while the subsidy pushes supply beyond what the market demands at that price, creating waste. A simpler approach would be to use either the price floor or the subsidy, not both.
 
 ---
 
@@ -204,9 +204,9 @@ Government subsidy cost $= 5 \times 20 = \pounds 100$.
 
 **Solution:**
 
-Pre-subsidy: $120 - P = 2P - 40 \Rightarrow 160 = 3P \Rightarrow P = 53.33$, $Q = 66.67$.
+Pre-subsidy: $120 - P = 2P - 40 \Rightarrow 160 = 3P \Rightarrow P = 53.33$$Q = 66.67$.
 
-Post-subsidy: consumers pay $P_c$, producers receive $P_c + 8$. Supply: $Q_S = 2(P_c + 8) - 40 = 2P_c - 24$.
+Post-subsidy: consumers pay $P_c$Producers receive $P_c + 8$. Supply: $Q_S = 2(P_c + 8) - 40 = 2P_c - 24$.
 $120 - P_c = 2P_c - 24 \Rightarrow 144 = 3P_c \Rightarrow P_c = 48$. $Q = 72$.
 Producers receive $48 + 8 = 56$.
 
@@ -245,7 +245,7 @@ Bus revenue falls by 17.5% because demand is inelastic (PED = -0.4). The council
 
 **Solution:**
 
-(a) $200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$, $Q = 88$.
+(a) $200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$$Q = 88$.
 
 (b) At $P = 20$: $Q_D = 200 - 80 = 120$. $Q_S = 120 - 80 = 40$.
 Quantity traded $= \min(120, 40) = 40$ (supply is the binding constraint).
@@ -268,7 +268,7 @@ The price ceiling creates a DWL of 192 because 48 units that were valued above c
 
 **Solution:**
 
-(a) Market equilibrium: $100 - Q = 20 + Q \Rightarrow 80 = 2Q \Rightarrow Q = 40$, $P = 60$.
+(a) Market equilibrium: $100 - Q = 20 + Q \Rightarrow 80 = 2Q \Rightarrow Q = 40$$P = 60$.
 Social optimum: $MSC = MPC + MEC = (20 + Q) + 0.1Q = 20 + 1.1Q$.
 Set $MSB = MSC$: $100 - Q = 20 + 1.1Q \Rightarrow 80 = 2.1Q \Rightarrow Q = 38.10$.
 Socially optimal output is 38.10, below the market output of 40.
@@ -278,7 +278,7 @@ $MSC_{40} = 20 + 1.1(40) = 64$. $MSB_{40} = 60$.
 DWL $= \frac{1}{2}(64 - 60)(1.90) = \frac{1}{2}(4)(1.90) = 3.81$.
 
 (c) With subsidy of $\pounds 5$: supply shifts down to $P = 15 + Q$.
-$100 - Q = 15 + Q \Rightarrow 85 = 2Q \Rightarrow Q = 42.5$, $P = 57.5$.
+$100 - Q = 15 + Q \Rightarrow 85 = 2Q \Rightarrow Q = 42.5$$P = 57.5$.
 Output INCREASES from 40 to 42.5, making the externality worse.
 
 (d) A production subsidy encourages MORE production, which increases the negative externality (pollution). The DWL increases because the gap between market output and socially optimal output widens. The correct policy for a negative externality is a tax (Pigouvian tax), not a subsidy. A subsidy is appropriate for positive externalities.

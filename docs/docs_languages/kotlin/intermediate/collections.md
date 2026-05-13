@@ -23,8 +23,8 @@ MutableCollection extends Collection
   |-- MutableMap
 ```
 
-Read-only interfaces do not guarantee immutability -- they simply expose no mutation methods. The
-underlying collection may still be mutable through a different reference.
+Read-only interfaces do not guarantee immutability -- they expose no mutation methods. The
+Underlying collection may still be mutable through a different reference.
 
 ## List
 
@@ -39,7 +39,7 @@ mutable[0] = 10
 ```
 
 `List` is an ordered collection with index-based access. `listOf()` returns an immutable list
-implementation. `mutableListOf()` returns a `MutableList`.
+Implementation. `mutableListOf()` returns a `MutableList`.
 
 ### List Operations
 
@@ -245,7 +245,7 @@ val byNameV3 = users.associateBy(keySelector = { it.name }, valueTransform = { i
 ## Sequence
 
 Sequences are lazy -- transformations are not executed until a terminal operation is invoked. For
-large collections or chains of operations, sequences avoid creating intermediate collections.
+Large collections or chains of operations, sequences avoid creating intermediate collections.
 
 ```kotlin
 val result = (1..1_000_000)
@@ -265,7 +265,7 @@ list.filter { ... }.map { ... }.take(5)
 ```
 
 With a sequence, each element flows through the entire pipeline before the next element is
-processed:
+Processed:
 
 ```kotlin
 list.asSequence().filter { ... }.map { ... }.take(5)
@@ -275,7 +275,7 @@ list.asSequence().filter { ... }.map { ... }.take(5)
 ### When to Use Sequences
 
 - \*\* Use sequences when the collection is large and you have multiple chained operations.
-- \*\* Use sequences when you need only a subset of the result (e.g., `first`, `take`).
+- \*\* Use sequences when you need only a subset of the result (e.g., `first``take`).
 - \*\* Use lists when the collection is small or you need to transform the entire collection.
 
 ### Sequence Creation
@@ -290,12 +290,20 @@ val seq4 = generateSequence(seed = 0) { if (it < 100) it + 1 else null }  // 0..
 ## Common Pitfalls
 
 - \*\* Chaining multiple operations on large lists without using sequences. This creates
-  intermediate collections at each step, increasing memory pressure and GC overhead.
+ intermediate collections at each step, increasing memory pressure and GC overhead.
 - \*\* Using `associateBy` when keys are not unique. Only the last value for each key is retained.
-  Use `groupBy` when you need to keep all values.
+ Use `groupBy` when you need to keep all values.
 - \*\* Modifying a mutable collection while iterating over it. This throws
-  `ConcurrentModificationException`. Use `toList()` to create a snapshot or `removeIf` for
-  conditional removal.
+ `ConcurrentModificationException`. Use `toList()` to create a snapshot or `removeIf` for
+ conditional removal.
 - \*\* Assuming read-only collections are immutable. `List<Int>` is a read-only interface; the
-  underlying implementation may be mutable. Use `toList()` or `toImmutableList()` (Kotlinx
-  Collections) for defensive copies.
+ underlying implementation may be mutable. Use `toList()` or `toImmutableList()` (Kotlinx
+ Collections) for defensive copies.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -7,19 +7,19 @@ slug: channels-and-message-passing
 ## Channel Fundamentals
 
 Channels implement the actor model — concurrent tasks communicate by sending messages rather than
-sharing memory. Rust provides several channel types, each optimized for different communication
-patterns. The sender and receiver are separate endpoints; messages are moved from sender to
-receiver, transferring ownership.
+Sharing memory. Rust provides several channel types, each optimized for different communication
+Patterns. The sender and receiver are separate endpoints; messages are moved from sender to
+Receiver, transferring ownership.
 
 ### Channel Categories
 
-| Type                | Producers | Consumers | Buffering         | Use Case                 |
+| Type | Producers | Consumers | Buffering | Use Case |
 | ------------------- | --------- | --------- | ----------------- | ------------------------ |
-| `std::sync::mpsc`   | Multiple  | Single    | Bounded/Unbounded | Simple work distribution |
-| `tokio::sync::mpsc` | Multiple  | Single    | Bounded/Unbounded | Async work distribution  |
-| `oneshot`           | Single    | Single    | None              | Single response          |
-| `broadcast`         | Single    | Multiple  | Bounded           | Pub/sub notifications    |
-| `watch`             | Single    | Multiple  | Single value      | Configuration updates    |
+| `std::sync::mpsc` | Multiple | Single | Bounded/Unbounded | Simple work distribution |
+| `tokio::sync::mpsc` | Multiple | Single | Bounded/Unbounded | Async work distribution |
+| `oneshot` | Single | Single | None | Single response |
+| `broadcast` | Single | Multiple | Bounded | Pub/sub notifications |
+| `watch` | Single | Multiple | Single value | Configuration updates |
 
 ## `std::sync::mpsc`
 
@@ -82,12 +82,12 @@ let (tx, rx) = mpsc::sync_channel(10);   // bounded — capacity 10
 
 ### Send and Recv Semantics
 
-| Method                 | Blocking?                        | Returns                       |
+| Method | Blocking? | Returns |
 | ---------------------- | -------------------------------- | ----------------------------- |
-| `tx.send(val)`         | Yes (if bounded and full)        | `Result<(), SendError<T>>`    |
-| `rx.recv()`            | Yes (if empty and senders exist) | `Result<T, RecvError>`        |
-| `rx.try_recv()`        | No                               | `Result<T, TryRecvError>`     |
-| `rx.recv_timeout(dur)` | Yes (with timeout)               | `Result<T, RecvTimeoutError>` |
+| `tx.send(val)` | Yes (if bounded and full) | `Result<(), SendError<T>>` |
+| `rx.recv()` | Yes (if empty and senders exist) | `Result<T, RecvError>` |
+| `rx.try_recv()` | No | `Result<T, TryRecvError>` |
+| `rx.recv_timeout(dur)` | Yes (with timeout) | `Result<T, RecvTimeoutError>` |
 
 ## `tokio::sync::mpsc`
 
@@ -124,8 +124,8 @@ let (tx, rx) = mpsc::unbounded_channel(); // unbounded — grows as needed
 :::warning
 
 Unbounded channels can cause memory exhaustion if producers send faster than consumers process.
-Prefer bounded channels with an appropriate buffer size. If the buffer fills, backpressure naturally
-slows producers.
+Prefer bounded channels with an appropriate buffer size. If the buffer fills, backpressure 
+Slows producers.
 
 :::
 
@@ -147,7 +147,7 @@ async fn main() {
 ```
 
 `tx.send()` returns `Err(SendError<T>)` when the receiver has been dropped. The error contains the
-unsent value.
+Unsent value.
 
 ## Oneshot Channels
 
@@ -173,7 +173,7 @@ async fn main() {
 ```
 
 Oneshot channels are zero-cost — they use a single slot with no buffer. They are ideal for
-request-response patterns where each request gets exactly one response.
+Request-response patterns where each request gets exactly one response.
 
 ### Oneshot as a Cancellation Token
 
@@ -240,7 +240,7 @@ async fn main() {
 
 - Each `subscribe()` creates a new receiver
 - Receivers that lag behind (buffer full) receive `RecvError::Lagged(n)` indicating how many
-  messages were skipped
+ messages were skipped
 - The sender does NOT wait for receivers — messages are fire-and-forget
 - The buffer is per-channel, not per-receiver
 
@@ -261,7 +261,7 @@ assert_eq!(rx.recv().await.unwrap(), 3);
 ## Watch Channels
 
 Watch channels broadcast the latest value to all receivers. Unlike broadcast, watch retains only the
-most recent value — there is no message queue:
+Most recent value — there is no message queue:
 
 ```rust
 use tokio::sync::watch;
@@ -295,12 +295,12 @@ async fn main() {
 
 ### Watch vs Broadcast
 
-| Property     | `watch`                | `broadcast`             |
+| Property | `watch` | `broadcast` |
 | ------------ | ---------------------- | ----------------------- |
-| Messages     | Single latest value    | All messages in a queue |
-| Buffer       | 1 (always)             | Configurable            |
-| Lag handling | No lag — always latest | `RecvError::Lagged`     |
-| Use case     | Configuration updates  | Event streams, logs     |
+| Messages | Single latest value | All messages in a queue |
+| Buffer | 1 (always) | Configurable |
+| Lag handling | No lag — always latest | `RecvError::Lagged` |
+| Use case | Configuration updates | Event streams, logs |
 
 ## Channel Patterns
 
@@ -368,8 +368,8 @@ async fn main() {
 
 ### Backpressure
 
-Bounded channels naturally provide backpressure — when the buffer is full, `send()` blocks (or
-awaits) until the receiver consumes a message:
+Bounded channels provide backpressure — when the buffer is full, `send()` blocks (or
+Awaits) until the receiver consumes a message:
 
 ```rust
 use tokio::sync::mpsc;
@@ -558,19 +558,19 @@ match rx.try_recv() {
 
 ### Buffer Size Selection
 
-| Buffer Size | Behavior                                          |
+| Buffer Size | Behavior |
 | ----------- | ------------------------------------------------- |
-| 0           | Synchronous handoff — sender waits for receiver   |
-| 1           | Minimal buffering — good for ping-pong            |
-| 10-100      | General purpose — balances throughput and latency |
-| 1000+       | High throughput — producers rarely block          |
-| Unbounded   | No backpressure — risk of memory exhaustion       |
+| 0 | Synchronous handoff — sender waits for receiver |
+| 1 | Minimal buffering — good for ping-pong |
+| 10-100 | General purpose — balances throughput and latency |
+| 1000+ | High throughput — producers rarely block |
+| Unbounded | No backpressure — risk of memory exhaustion |
 
 ### Throughput Considerations
 
 Bounded channels with larger buffers generally have higher throughput because senders block less
-often. However, larger buffers increase memory usage and latency (messages sit in the buffer longer
-before being processed).
+Often. However, larger buffers increase memory usage and latency (messages sit in the buffer longer
+Before being processed).
 
 ```rust
 // High-throughput scenario — large buffer
@@ -618,38 +618,38 @@ let (tx2, mut rx2) = mpsc::channel(1);
 ## Common Pitfalls
 
 1. **Forgetting to drop the sender.** The receiver's `recv()` loop never terminates if any sender is
-   still alive. Drop all senders when done producing.
+ still alive. Drop all senders when done producing.
 
 2. **Unbounded channels causing OOM.** Unbounded channels grow without limit if producers outpace
-   consumers. Use bounded channels with appropriate buffer sizes.
+ consumers. Use bounded channels with appropriate buffer sizes.
 
 3. **Blocking send in async code.** `std::sync::mpsc::Sender::send()` blocks the thread. Use
-   `tokio::sync::mpsc::Sender::send().await` in async contexts.
+ `tokio::sync::mpsc::Sender::send().await` in async contexts.
 
 4. **Broadcast receivers lagging.** If a broadcast receiver is too slow, messages are dropped and it
-   receives `RecvError::Lagged`. Handle this error explicitly.
+ receives `RecvError::Lagged`. Handle this error explicitly.
 
 5. **Watch channels and initial values.** `watch::channel()` takes an initial value. The first
-   `changed().await` returns immediately because the initial value counts as a "change." Use
-   `rx.borrow()` to check the current value without waiting.
+ `changed().await` returns immediately because the initial value counts as a "change." Use
+ `rx.borrow()` to check the current value without waiting.
 
 6. **Channel leaks.** If a task holding a channel sender panics without dropping it, the channel
-   stays open. Use `scopeguard` or explicit `drop()` in cleanup code.
+ stays open. Use `scopeguard` or explicit `drop()` in cleanup code.
 
 7. **Sending non-`Send` types across async channels.** `tokio::sync::mpsc` requires `T: Send`. Use
-   `tokio::sync::mpsc::unbounded_channel()` for local channels within a single task, or wrap the
-   type in `Arc`.
+ `tokio::sync::mpsc::unbounded_channel()` for local channels within a single task, or wrap the
+ type in `Arc`.
 
 8. **Ignoring `SendError`.** `tx.send()` returns `Result`. If the receiver is dropped, the send
-   fails. Ignoring this error silently loses messages.
+ fails. Ignoring this error silently loses messages.
 
 9. **Using channels for fine-grained communication.** Channels have overhead (allocation, atomic
-   operations, context switches). For very frequent communication between tasks, consider shared
-   state with `Arc<Mutex<T>>` or atomics.
+ operations, context switches). For very frequent communication between tasks, consider shared
+ state with `Arc<Mutex<T>>` or atomics.
 
 10. **Actor mailbox overflow.** If messages arrive faster than the actor processes them, the channel
-    buffer fills up and senders block. Size the buffer appropriately and consider backpressure
-    mechanisms.
+ buffer fills up and senders block. Size the buffer appropriately and consider backpressure
+ mechanisms.
 
 ## Channel Selection Guide
 
@@ -946,7 +946,7 @@ async fn graceful_shutdown() {
 
 ### When to Use Shared State
 
-- Simple flags or counters (use `AtomicBool`, `AtomicUsize`)
+- Simple flags or counters (use `AtomicBool``AtomicUsize`)
 - Configuration that changes infrequently (use `Arc<RwLock<T>>` or `watch`)
 - Data structures that need coordinated access (use `Arc<Mutex<T>>`)
 
@@ -971,3 +971,11 @@ async fn hybrid() {
     config_tx.send(Config { verbose: true }).unwrap();
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

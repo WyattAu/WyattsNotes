@@ -52,7 +52,7 @@ $$u_{\text{total}} = \frac{1}{2}\left[(0 + 100) \times 0.50 + (100 + 200) \times
 $$= \frac{1}{2}\left[50 + 150 + 250 + 195 + 375 + 574 + 1275\right] \times 10^3$$
 $$= \frac{1}{2} \times 2869 \times 10^3 = 1.435 \times 10^6\,\text{J}\,\text{m}^{-3}$$
 
-The elastic energy recoverable (if unloaded from $300\,\text{MPa}$) is only $2.25 \times 10^5\,\text{J}\,\text{m}^{-3}$, so the majority of the energy is dissipated as heat during plastic deformation.
+The elastic energy recoverable (if unloaded from $300\,\text{MPa}$) is only $2.25 \times 10^5\,\text{J}\,\text{m}^{-3}$So the majority of the energy is dissipated as heat during plastic deformation.
 
 ---
 ### UT-2: Composite Wire Under Load
@@ -114,7 +114,7 @@ The loading data are the first 8 readings and the unloading data are the last 8 
 
 (a) For Hooke's law to apply, force must be proportional to extension (constant gradient).
 
-Checking ratios: $F/x = 1.0/15 = 0.067$, $2.0/35 = 0.057$, $3.0/60 = 0.050$, $4.0/90 = 0.044$
+Checking ratios: $F/x = 1.0/15 = 0.067$$2.0/35 = 0.057$$3.0/60 = 0.050$$4.0/90 = 0.044$
 
 The ratio decreases, so the rubber band **does not obey Hooke's law** at any point during loading. The spring constant (gradient) continuously decreases, meaning the rubber becomes easier to stretch as it extends. This is characteristic of non-Hookean materials like rubber and polymers.
 
@@ -135,7 +135,7 @@ $$= 275 + 135 + 70 + 50 + 30 + 15 + 0 = 575\,\text{mJ} = 0.575\,\text{J}$$
 
 (c) Energy dissipated per cycle $= W_{\text{load}} - W_{\text{unload}} = 1.115 - 0.575 = 0.540\,\text{J}$
 
-This energy is dissipated as heat due to internal friction within the rubber (hysteresis). The loading-unloading curve forms a hysteresis loop, and the area enclosed represents the energy lost per cycle. This is why rubber gets warm when repeatedly stretched and released. The fraction of energy dissipated is $0.540/1.115 = 48\%$, meaning the rubber band returns only about $52\%$ of the energy stored in it.
+This energy is dissipated as heat due to internal friction within the rubber (hysteresis). The loading-unloading curve forms a hysteresis loop, and the area enclosed represents the energy lost per cycle. This is why rubber gets warm when repeatedly stretched and released. The fraction of energy dissipated is $0.540/1.115 = 48\%$Meaning the rubber band returns only about $52\%$ of the energy stored in it.
 
 ## Integration Tests
 
@@ -143,11 +143,11 @@ This energy is dissipated as heat due to internal friction within the rubber (hy
 
 **Question:**
 
-A steel wire of length $3.0\,\text{m}$, cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$, and Young's modulus $2.0 \times 10^{11}\,\text{Pa}$ is fixed between two rigid supports. The linear expansivity of steel is $1.2 \times 10^{-5}\,\text{K}^{-1}$.
+A steel wire of length $3.0\,\text{m}$Cross-sectional area $2.0 \times 10^{-6}\,\text{m}^2$And Young's modulus $2.0 \times 10^{11}\,\text{Pa}$ is fixed between two rigid supports. The linear expansivity of steel is $1.2 \times 10^{-5}\,\text{K}^{-1}$.
 
 (a) The temperature increases by $40\,\text{K}$. Calculate the stress that develops in the wire if it is not allowed to expand.
 
-(b) The wire is now allowed to expand freely by $\Delta T = 40\,\text{K}$, and then a mass of $50\,\text{kg}$ is hung from it. Calculate the total extension.
+(b) The wire is now allowed to expand freely by $\Delta T = 40\,\text{K}$And then a mass of $50\,\text{kg}$ is hung from it. Calculate the total extension.
 
 (c) Calculate the elastic potential energy stored in the wire in part (b).
 
@@ -211,7 +211,7 @@ Stress: $\sigma = T/A = \rho R^2\omega^2$
 
 $$\omega = \sqrt◆LB◆\frac{\sigma}{\rho R^2}◆RB◆ = \sqrt◆LB◆\frac{200 \times 10^6}{7800 \times 0.25}◆RB◆ = \sqrt◆LB◆\frac{200 \times 10^6}{1950}◆RB◆ = \sqrt◆LB◆1.026 \times 10^5◆RB◆ = 320\,\text{rad}\,\text{s}^{-1}$$
 
-This is about $3060\,\text{rpm}$, or $51\,\text{rev}\,\text{s}^{-1}$.
+This is about $3060\,\text{rpm}$Or $51\,\text{rev}\,\text{s}^{-1}$.
 
 (c) Strain: $\varepsilon = \sigma/E = 200 \times 10^6/(2.0 \times 10^{11}) = 1.0 \times 10^{-3}$
 
@@ -224,7 +224,7 @@ The circumference also increases by $0.10\%$.
 
 **Question:**
 
-A steel wire of length $10\,\text{m}$, cross-sectional area $1.0 \times 10^{-6}\,\text{m}^2$, Young's modulus $2.0 \times 10^{11}\,\text{Pa}$, and density $7800\,\text{kg}\,\text{m}^{-3}$ hangs vertically from a fixed support.
+A steel wire of length $10\,\text{m}$Cross-sectional area $1.0 \times 10^{-6}\,\text{m}^2$Young's modulus $2.0 \times 10^{11}\,\text{Pa}$And density $7800\,\text{kg}\,\text{m}^{-3}$ hangs vertically from a fixed support.
 
 (a) Calculate the total extension of the wire under its own weight.
 
@@ -238,7 +238,7 @@ A steel wire of length $10\,\text{m}$, cross-sectional area $1.0 \times 10^{-6}\
 
 $$\sigma(y) = \frac◆LB◆\rho A g y◆RB◆◆LB◆A◆RB◆ = \rho g y$$
 
-where $y$ is measured from the bottom ($0 \le y \le L$).
+Where $y$ is measured from the bottom ($0 \le y \le L$).
 
 The strain at position $y$: $\varepsilon(y) = \sigma(y)/E = \rho g y/E$
 
@@ -258,7 +258,7 @@ $$U = \int_0^L u(y) \times A\,dy = \frac{A}{2E}\int_0^L (\rho g y)^2\,dy = \frac
 
 $$= \frac◆LB◆1.0 \times 10^{-6} \times (7800)^2 \times (9.81)^2 \times 1000◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆$$
 
-where $7800^2 = 6.084 \times 10^7$, $9.81^2 = 96.24$, $L^3 = 1000$:
+Where $7800^2 = 6.084 \times 10^7$$9.81^2 = 96.24$$L^3 = 1000$:
 
 $$= \frac◆LB◆1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆5.855 \times 10^6◆RB◆◆LB◆1.2 \times 10^{12}◆RB◆ = 4.879 \times 10^{-6}\,\text{J}$$
 

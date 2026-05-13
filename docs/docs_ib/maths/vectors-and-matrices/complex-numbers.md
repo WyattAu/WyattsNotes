@@ -12,8 +12,8 @@ A complex number $z$ is written:
 
 $$z = a + bi, \quad a, b \in \mathbb{'\{'}R{'\}'}$$
 
-where $a = \mathrm{Re}(z)$ is the real part and $b = \mathrm{Im}(z)$ is the imaginary part. The set
-of all complex numbers is $\mathbb{'\{'}C{'\}'}$.
+Where $a = \mathrm{Re}(z)$ is the real part and $b = \mathrm{Im}(z)$ is the imaginary part. The set
+Of all complex numbers is $\mathbb{'\{'}C{'\}'}$.
 
 ### Complex Arithmetic
 
@@ -34,7 +34,7 @@ The conjugate of $z = a + bi$ is $\bar{z} = a - bi$.
 - $z\bar{z} = a^2 + b^2 = |z|^2$
 - $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$
 - $\overline{z_1 z_2} = \bar{z}_1 \bar{z}_2$
-- $z + \bar{z} = 2\mathrm{Re}(z)$, $z - \bar{z} = 2i\,\mathrm{Im}(z)$
+- $z + \bar{z} = 2\mathrm{Re}(z)$$z - \bar{z} = 2i\,\mathrm{Im}(z)$
 
 ### Modulus and Argument
 
@@ -43,7 +43,7 @@ The **modulus** (absolute value) of $z = a + bi$:
 $$|z| = \sqrt{a^2 + b^2}$$
 
 The **argument** $\arg(z) = \theta$ is the angle from the positive real axis, measured
-anticlockwise, where:
+Anticlockwise, where:
 
 $$\tan\theta = \frac{b}{a}$$
 
@@ -60,12 +60,12 @@ Any non-zero complex number can be written in polar form:
 
 $$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$
 
-where $r = |z|$ and $\theta = \arg(z)$.
+Where $r = |z|$ and $\theta = \arg(z)$.
 
 ### Conversion
 
-- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$, $\theta = \arctan\!\left(\dfrac{b}{a}\right)$ (adjusting for quadrant).
-- **Polar to Cartesian:** $a = r\cos\theta$, $b = r\sin\theta$.
+- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$$\theta = \arctan\!\left(\dfrac{b}{a}\right)$ (adjusting for quadrant).
+- **Polar to Cartesian:** $a = r\cos\theta$$b = r\sin\theta$.
 
 **Example.** Express $z = 1 + i\sqrt{3}$ in polar form.
 
@@ -85,7 +85,7 @@ Multiplication: moduli multiply, arguments add. Division: moduli divide, argumen
 
 **Example.** Compute $\dfrac{1 + i}{\sqrt{3} - i}$.
 
-$1 + i = \sqrt{2}\,e^{i\pi/4}$, $\sqrt{3} - i = 2\,e^{-i\pi/6}$.
+$1 + i = \sqrt{2}\,e^{i\pi/4}$$\sqrt{3} - i = 2\,e^{-i\pi/6}$.
 
 $$\frac{1 + i}{\sqrt{3} - i} = \frac{\sqrt{2}}{2}\, e^{i(\pi/4 + \pi/6)} = \frac{\sqrt{2}}{2}\, e^{i5\pi/12}$$
 
@@ -141,7 +141,7 @@ The $n$ solutions to $z^n = w$ where $w = re^{i\theta}$ are:
 $$z_k = r^{1/n}\, \exp\!\left(\frac{i(\theta + 2k\pi)}{n}\right), \qquad k = 0, 1, 2, \ldots, n - 1$$
 
 These $n$ roots lie on a circle of radius $r^{1/n}$ in the complex plane, equally spaced at angles
-of $\dfrac{2\pi}{n}$.
+Of $\dfrac{2\pi}{n}$.
 
 **Example.** Find the cube roots of $-8$.
 
@@ -198,7 +198,7 @@ Setting $\theta = \pi$:
 
 $$e^{i\pi} + 1 = 0$$
 
-This elegantly relates five fundamental constants: $e$, $i$, $\pi$, $1$, and $0$.
+This elegantly relates five fundamental constants: $e$$i$$\pi$$1$And $0$.
 
 ### Connections Between Exponential and Trigonometric Functions
 
@@ -248,8 +248,8 @@ Taking real and imaginary parts gives the formulas above.
 
 ### Integrals of Powers of Sine and Cosine
 
-Using $\cos\theta = \dfrac{e^{i\theta} + e^{-i\theta}}{2}$ and $\sin\theta = \dfrac{e^{i\theta} - e^{-i\theta}}{2i}$,
-powers of trig functions can be expanded and integrated term by term.
+Using $\cos\theta = \dfrac{e^{i\theta} + e^{-i\theta}}{2}$ and $\sin\theta = \dfrac{e^{i\theta} - e^{-i\theta}}{2i}$
+Powers of trig functions can be expanded and integrated term by term.
 
 **Example.** Evaluate $\displaystyle\int \cos^4\theta\,d\theta$.
 
@@ -271,7 +271,7 @@ $$\int \sin^3\theta\,d\theta = -\frac{3}{4}\cos\theta + \frac{1}{12}\cos 3\theta
 
 $$\int \cos m\theta \cos n\theta\,d\theta = \frac{1}{2}\int \bigl[\cos(m+n)\theta + \cos(m-n)\theta\bigr]\,d\theta$$
 
-provided $m \ne \pm n$. When $m = n$:
+Provided $m \ne \pm n$. When $m = n$:
 
 $$\int \cos^2 n\theta\,d\theta = \int \frac{1 + \cos 2n\theta}{2}\,d\theta = \frac{\theta}{2} + \frac{\sin 2n\theta}{4n} + C$$
 
@@ -290,7 +290,7 @@ These orthogonality relations are fundamental to Fourier analysis.
 ### Geometric Interpretation
 
 The complex number $z = a + bi$ is represented by the point $(a, b)$ in the plane. The modulus $|z|$
-is the distance from the origin, and $\arg(z)$ is the angle from the positive real axis.
+Is the distance from the origin, and $\arg(z)$ is the angle from the positive real axis.
 
 ### Regions in the Complex Plane
 
@@ -305,7 +305,7 @@ is the distance from the origin, and $\arg(z)$ is the angle from the positive re
 ### Loci
 
 $|z - a| = |z - b|$ represents the perpendicular bisector of the segment joining $a$ and $b$ in the
-complex plane.
+Complex plane.
 
 $|z - a| = k|z - b|$ (with $k \ne 1$) represents a circle (Apollonius circle).
 
@@ -315,8 +315,8 @@ $|z - a| = k|z - b|$ (with $k \ne 1$) represents a circle (Apollonius circle).
 
 ### Differentiating Complex Functions
 
-If $f(z) = u(x, y) + iv(x, y)$ is differentiable at $z_0$, it satisfies the **Cauchy-Riemann
-equations**:
+If $f(z) = u(x, y) + iv(x, y)$ is differentiable at $z_0$It satisfies the **Cauchy-Riemann
+Equations**:
 
 $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
@@ -325,11 +325,11 @@ A function satisfying these equations at every point of an open set is called **
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$.
 
-$u = x^2 - y^2$, $v = 2xy$.
+$u = x^2 - y^2$$v = 2xy$.
 
 $\dfrac{\partial u}{\partial x} = 2x = \dfrac{\partial v}{\partial y}$ and
 $\dfrac{\partial u}{\partial y} = -2y = -\dfrac{\partial v}{\partial x}$. The Cauchy-Riemann
-equations are satisfied, so $z^2$ is analytic.
+Equations are satisfied, so $z^2$ is analytic.
 
 ### Integration in the Complex Plane
 
@@ -338,12 +338,12 @@ The integral of $f(z)$ along a contour $\gamma$ from $z_1$ to $z_2$ is:
 $$\int_\gamma f(z)\,dz$$
 
 For analytic functions, the integral is **path-independent** (by Cauchy's theorem): the integral over
-any closed contour of an analytic function is zero.
+Any closed contour of an analytic function is zero.
 
 ### Applications to Real Integration
 
 Certain difficult real integrals can be evaluated using complex analysis. A standard technique
-involves integrating $f(z)$ around a semicircular contour in the upper half-plane and applying the
+Involves integrating $f(z)$ around a semicircular contour in the upper half-plane and applying the
 **residue theorem**.
 
 **Example.** Evaluate $\displaystyle\int_{-\infty}^{\infty} \frac{1}{x^2 + 1}\,dx$.
@@ -365,11 +365,11 @@ This matches the known result: $[\arctan x]_{-\infty}^{\infty} = \dfrac{\pi}{2} 
 ### The Fundamental Theorem of Algebra
 
 Every polynomial $p(z) = a_n z^n + a_{n-1}z^{n-1} + \cdots + a_0$ of degree $n \ge 1$ with complex
-coefficients has at least one root in $\mathbb{'\{'}C{'\}'}$. Equivalently, it factorises completely:
+Coefficients has at least one root in $\mathbb{'\{'}C{'\}'}$. Equivalently, it factorises completely:
 
 $$p(z) = a_n(z - z_1)(z - z_2)\cdots(z - z_n)$$
 
-where $z_1, z_2, \ldots, z_n$ are the roots (not necessarily distinct).
+Where $z_1, z_2, \ldots, z_n$ are the roots (not necessarily distinct).
 
 ### Complex Roots of Real Polynomials
 
@@ -392,7 +392,7 @@ $z^3 = 1 = e^{2k\pi i}$ for $k = 0, 1, 2$.
 
 $$z_k = e^{2k\pi i/3}, \qquad k = 0, 1, 2$$
 
-$z_0 = 1$, $z_1 = e^{2\pi i/3} = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$, $z_2 = e^{4\pi i/3} = -\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}i$.
+$z_0 = 1$$z_1 = e^{2\pi i/3} = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$$z_2 = e^{4\pi i/3} = -\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}i$.
 
 These are the **cube roots of unity**, forming an equilateral triangle on the unit circle.
 
@@ -402,8 +402,8 @@ These are the **cube roots of unity**, forming an equilateral triangle on the un
 
 ### Solving ODEs with Complex Characteristic Roots
 
-When the characteristic equation of a second order ODE has complex roots $\alpha \pm i\beta$, the
-general solution is:
+When the characteristic equation of a second order ODE has complex roots $\alpha \pm i\beta$The
+General solution is:
 
 $$y = e^{\alpha x}(A\cos\beta x + B\sin\beta x)$$
 
@@ -431,7 +431,7 @@ $$y = e^{-2x}(A\cos 3x + B\sin 3x)$$
 Sketch the region defined by $|z - 2 - 3i| \le 3$ and $\arg(z - 2 - 3i) \le \dfrac{\pi}{4}$.
 
 $|z - (2 + 3i)| \le 3$ is the closed disk of radius $3$ centred at $2 + 3i$. Combined with the
-argument condition, this is the sector of the disk bounded by the positive real axis direction from
+Argument condition, this is the sector of the disk bounded by the positive real axis direction from
 $2 + 3i$ and the line at $\pi/4$ from that point.
 
 ### Problem: De Moivre with Large Exponents
@@ -450,7 +450,7 @@ $$\frac{(1 + i)^{10}}{(1 - i)^8} = \frac{32i}{16} = 2i$$
 Common Pitfall
 
 When computing arguments, always verify the quadrant. $\arctan(b/a)$ alone gives the correct angle
-only when $a \gt 0$. For other quadrants, add or subtract $\pi$ as needed. Using $\mathrm{atan2}(b, a)$
+Only when $a \gt 0$. For other quadrants, add or subtract $\pi$ as needed. Using $\mathrm{atan2}(b, a)$
 (if available) handles this automatically.
 
 :::
@@ -484,7 +484,7 @@ $$|w| = 4, \qquad \arg(w) = -\frac{2\pi}{3}$$
 
 $$z = \pm 2\, e^{-i\pi/3} = \pm\left(1 - i\sqrt{3}\right)$$
 
-The four roots are $1 + i\sqrt{3}$, $-1 - i\sqrt{3}$, $1 - i\sqrt{3}$, $-1 + i\sqrt{3}$.
+The four roots are $1 + i\sqrt{3}$$-1 - i\sqrt{3}$$1 - i\sqrt{3}$$-1 + i\sqrt{3}$.
 
 </details>
 
@@ -563,7 +563,7 @@ Therefore:
 
 $$\cos^6\theta = \frac{1}{32}\cos 6\theta + \frac{3}{16}\cos 4\theta + \frac{15}{32}\cos 2\theta + \frac{5}{16}$$
 
-Integrating over $[0, 2\pi]$, the cosine terms vanish:
+Integrating over $[0, 2\pi]$The cosine terms vanish:
 
 $$\int_0^{2\pi} \cos^6\theta\,d\theta = \int_0^{2\pi} \frac{5}{16}\,d\theta = \frac{5}{16} \cdot 2\pi = \frac{5\pi}{8}$$
 
@@ -580,15 +580,15 @@ $|z + 1| \ge 1$.
 $|z - (1 + i)| \le 2$ is the closed disk of radius $2$ centred at $(1, 1)$.
 
 $|z - (-1)| \ge 1$ is the exterior of the open disk of radius $1$ centred at $(-1, 0)$ (including
-the boundary).
+The boundary).
 
 The region satisfying both conditions is the part of the disk $|z - 1 - i| \le 2$ that lies
-outside the disk $|z + 1| \lt 1$.
+Outside the disk $|z + 1| \lt 1$.
 
 The distance between the two centres is $|(1 + i) - (-1)| = |2 + i| = \sqrt{5} \approx 2.24$. Since
-the radii are $2$ and $1$, and $\sqrt{5} \lt 2 + 1 = 3$, the disks overlap. The distance between
-centres $2.24$ is greater than the difference of radii $|2 - 1| = 1$, so neither disk is contained
-within the other. The region is a disk with a smaller circular cut-out near $(-1, 0)$.
+The radii are $2$ and $1$And $\sqrt{5} \lt 2 + 1 = 3$The disks overlap. The distance between
+Centres $2.24$ is greater than the difference of radii $|2 - 1| = 1$So neither disk is contained
+Within the other. The region is a disk with a smaller circular cut-out near $(-1, 0)$.
 
 </details>
 
@@ -596,34 +596,34 @@ within the other. The region is a disk with a smaller circular cut-out near $(-1
 
 ## Common Pitfalls
 
-1. **Wrong quadrant for the argument.** When $\mathrm{Re}(z) \lt 0$ and $\mathrm{Im}(z) \gt 0$, the
-   point lies in the second quadrant and the argument is $\pi - \arctan\!\left(\dfrac{|\mathrm{Im}(z)|}{|\mathrm{Re}(z)|}\right)$,
-   not $\arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right)$.
+1. **Wrong quadrant for the argument.** When $\mathrm{Re}(z) \lt 0$ and $\mathrm{Im}(z) \gt 0$The
+ point lies in the second quadrant and the argument is $\pi - \arctan\!\left(\dfrac{|\mathrm{Im}(z)|}{|\mathrm{Re}(z)|}\right)$
+ not $\arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right)$.
 
 2. **Forgetting all $n$ roots.** An equation $z^n = w$ has exactly $n$ complex roots (counting
-   multiplicity). Always list all $n$ roots by using $k = 0, 1, \ldots, n-1$.
+ multiplicity). Always list all $n$ roots by using $k = 0, 1, \ldots, n-1$.
 
 3. **De Moivre with negative $n$.** $(\cos\theta + i\sin\theta)^{-1} = \cos(-\theta) + i\sin(-\theta)
-   = \cos\theta - i\sin\theta$. This is equivalent to the conjugate, and the formula holds for all
-   integers $n$.
+ = \cos\theta - i\sin\theta$. This is equivalent to the conjugate, and the formula holds for all
+ integers $n$.
 
 4. **Assuming $|z_1 + z_2| = |z_1| + |z_2|$.** The triangle inequality states
-   $|z_1 + z_2| \le |z_1| + |z_2|$, with equality only when $z_1$ and $z_2$ have the same argument
-   (point in the same direction).
+ $|z_1 + z_2| \le |z_1| + |z_2|$With equality only when $z_1$ and $z_2$ have the same argument
+ (point in the same direction).
 
-5. **Conjugate confusion in division.** To simplify $\dfrac{z_1}{z_2}$, multiply numerator and
-   denominator by $\bar{z}_2$, not by $z_2$. Multiplying by $z_2$ does not make the denominator real.
+5. **Conjugate confusion in division.** To simplify $\dfrac{z_1}{z_2}$Multiply numerator and
+ denominator by $\bar{z}_2$Not by $z_2$. Multiplying by $z_2$ does not make the denominator real.
 
 6. **Roots of unity sum misconception.** The sum of **all** $n$-th roots of unity is zero, but the
-   sum of a **subset** is generally not zero. For example, the sum of the primitive 4th roots of
-   unity ($i$ and $-i$) is $0$, but the sum of the primitive 6th roots of unity is $-1$.
+ sum of a **subset** is generally not zero. For example, the sum of the primitive 4th roots of
+ unity ($i$ and $-i$) is $0$But the sum of the primitive 6th roots of unity is $-1$.
 
 7. **Incorrect use of Euler's formula for integration.** When using $e^{i\theta}$ to integrate
-   $\cos^n\theta$ or $\sin^n\theta$, the intermediate expressions involve complex exponentials. Always
-   collect terms carefully and verify that the final integrand is real before integrating.
+ $\cos^n\theta$ or $\sin^n\theta$The intermediate expressions involve complex exponentials. Always
+ collect terms carefully and verify that the final integrand is real before integrating.
 
 8. **Confusing $z^n = 1$ with $z^n = -1$.** The roots of $z^n = -1$ are obtained by writing
-   $-1 = e^{i\pi}$ (not $e^{i0}$), giving $z_k = e^{i(\pi + 2k\pi)/n}$.
+ $-1 = e^{i\pi}$ (not $e^{i0}$), giving $z_k = e^{i(\pi + 2k\pi)/n}$.
 
 ---
 
@@ -632,21 +632,21 @@ within the other. The region is a disk with a smaller circular cut-out near $(-1
 1. Express $z = -\sqrt{3} + i$ in polar form and hence compute $z^{12}$.
 
 2. Find the cube roots of $-27i$ and show that they form an equilateral triangle in the Argand
-   diagram.
+ diagram.
 
 3. Use De Moivre's theorem to express $\sin 4\theta$ in terms of $\sin\theta$ and $\cos\theta$.
 
 4. Solve $z^4 - 2z^3 + 5z^2 - 8z + 4 = 0$ given that $z = 1 + i$ is a root.
 
 5. The complex number $z$ satisfies $|z - 2| = |z + 2i|$. Describe the locus of $z$ and find the
-   complex number on this locus with the smallest modulus.
+ complex number on this locus with the smallest modulus.
 
 6. Evaluate $\displaystyle\int_0^{\pi} \sin^4\theta\,d\theta$ using complex exponentials.
 
 7. Prove that $\cos^4\theta + \sin^4\theta = \dfrac{3}{4} + \dfrac{1}{4}\cos 4\theta$.
 
 8. The 5th roots of unity are $1, \omega, \omega^2, \omega^3, \omega^4$. Show that
-   $(1 - \omega)(1 - \omega^2)(1 - \omega^3)(1 - \omega^4) = 5$.
+ $(1 - \omega)(1 - \omega^2)(1 - \omega^3)(1 - \omega^4) = 5$.
 
 ---
 
@@ -656,3 +656,7 @@ within the other. The region is a disk with a smaller circular cut-out near $(-1
 - **Differential equations** with complex characteristic roots: see [Differential Equations](../calculus/differential-equations)
 - **Sequences and series** including power series for Euler's formula proof: see [Sequences and Series](../calculus/sequences-and-series)
 - **Integration techniques** for trigonometric powers: see [Integration](../calculus/integration-techniques)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

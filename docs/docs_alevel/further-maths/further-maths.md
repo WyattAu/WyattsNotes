@@ -14,30 +14,30 @@ sidebar_position: 3
 ## A Level Further Mathematics — Course Overview
 
 A Level Further Mathematics extends the tools of pure mathematics to more abstract and powerful
-settings, introduces advanced statistical methods, and deepens the study of mechanics. It is the
-natural next step for students who intend to study mathematics, physics, engineering, or computer
-science at university.
+Settings, introduces advanced statistical methods, and deepens the study of mechanics. It is the
+Natural next step for students who intend to study mathematics, physics, engineering, or computer
+Science at university.
 
 ### Board Coverage
 
-| Topic                                        | AQA     | Edexcel  | OCR (A) | CIE (9231) |
+| Topic | AQA | Edexcel | OCR (A) | CIE (9231) |
 | -------------------------------------------- | ------- | -------- | ------- | ---------- |
-| Pure: Complex Numbers                        | Paper 1 | FP1, FP2 | Paper 1 | P1         |
-| Pure: Matrices                               | Paper 1 | FP1      | Paper 1 | P1         |
-| Pure: Further Algebra & Functions            | Paper 1 | FP1      | Paper 1 | P1         |
-| Pure: Further Calculus                       | Paper 1 | FP1, FP2 | Paper 1 | P1, P2     |
-| Pure: Polar Coordinates                      | Paper 1 | FP2      | —       | P2         |
-| Pure: Hyperbolic Functions                   | Paper 1 | FP2      | Paper 1 | P2         |
-| Pure: Differential Equations                 | Paper 1 | FP2      | Paper 1 | P2         |
-| Pure: Maclaurin & Taylor Series              | Paper 1 | FP2      | Paper 1 | P2         |
-| Pure: Vectors in 3D                          | Paper 1 | FP1      | Paper 1 | P1         |
-| Further Statistics: Poisson & Geometric      | Paper 2 | S2, S3   | Paper 2 | S2         |
-| Further Statistics: Exponential & Continuous | —       | S3, S4   | —       | S2         |
-| Further Statistics: Chi-squared Tests        | Paper 2 | S3       | Paper 2 | S2         |
-| Further Mechanics: Projectiles               | Paper 2 | M2       | Paper 2 | M2         |
-| Further Mechanics: Circular Motion           | —       | M2       | —       | M2         |
-| Further Mechanics: Centres of Mass           | Paper 2 | M2       | Paper 2 | M2         |
-| Further Mechanics: Elastic Collisions        | —       | M2       | —       | M2         |
+| Pure: Complex Numbers | Paper 1 | FP1, FP2 | Paper 1 | P1 |
+| Pure: Matrices | Paper 1 | FP1 | Paper 1 | P1 |
+| Pure: Further Algebra & Functions | Paper 1 | FP1 | Paper 1 | P1 |
+| Pure: Further Calculus | Paper 1 | FP1, FP2 | Paper 1 | P1, P2 |
+| Pure: Polar Coordinates | Paper 1 | FP2 | — | P2 |
+| Pure: Hyperbolic Functions | Paper 1 | FP2 | Paper 1 | P2 |
+| Pure: Differential Equations | Paper 1 | FP2 | Paper 1 | P2 |
+| Pure: Maclaurin & Taylor Series | Paper 1 | FP2 | Paper 1 | P2 |
+| Pure: Vectors in 3D | Paper 1 | FP1 | Paper 1 | P1 |
+| Further Statistics: Poisson & Geometric | Paper 2 | S2, S3 | Paper 2 | S2 |
+| Further Statistics: Exponential & Continuous | — | S3, S4 | — | S2 |
+| Further Statistics: Chi-squared Tests | Paper 2 | S3 | Paper 2 | S2 |
+| Further Mechanics: Projectiles | Paper 2 | M2 | Paper 2 | M2 |
+| Further Mechanics: Circular Motion | — | M2 | — | M2 |
+| Further Mechanics: Centres of Mass | Paper 2 | M2 | Paper 2 | M2 |
+| Further Mechanics: Elastic Collisions | — | M2 | — | M2 |
 
 ### Course Structure
 
@@ -47,15 +47,15 @@ The further pure core extends A Level mathematics into territory that is essenti
 STEM courses:
 
 - **Complex numbers** — Argand diagrams, De Moivre's theorem, roots of unity, exponential form
-  $e^{i\theta}$
+ $e^{i\theta}$
 - **Matrices** — determinants, inverses, transformations in 2D and 3D, eigenvalues (AQA)
 - **Further algebra** — roots of polynomial equations, partial fractions with irreducible quadratics
 - **Further calculus** — integration by parts (repeated), inverse trigonometric integration, volumes
-  of revolution, parametric differentiation
+ of revolution, parametric differentiation
 - **Polar coordinates** — conversion, sketching curves, area enclosed by polar curves
-- **Hyperbolic functions** — definitions, identities, calculus with $\sinh$, $\cosh$, $\tanh$
+- **Hyperbolic functions** — definitions, identities, calculus with $\sinh$$\cosh$$\tanh$
 - **Differential equations** — first-order (separable, integrating factor), second-order linear with
-  constant coefficients
+ constant coefficients
 - **Maclaurin and Taylor series** — expansion, convergence, standard series
 - **Vectors in 3D** — scalar product, vector product, equations of lines and planes
 
@@ -76,12 +76,12 @@ STEM courses:
 
 ### Assessment
 
-| Board   | Papers                                             | Weighting       |
+| Board | Papers | Weighting |
 | ------- | -------------------------------------------------- | --------------- |
-| AQA     | Paper 1 (Pure), Paper 2 (Stat/Mech)                | 50% each        |
+| AQA | Paper 1 (Pure), Paper 2 (Stat/Mech) | 50% each |
 | Edexcel | FP1, FP2, FP3 (Pure), S2, S3, S4 (Stat), M2 (Mech) | Varies by route |
-| OCR (A) | Paper 1 (Pure), Paper 2 (Stat/Mech)                | 50% each        |
-| CIE     | P1, P2 (Pure), S2 (Stat), M2 (Mech)                | Varies          |
+| OCR (A) | Paper 1 (Pure), Paper 2 (Stat/Mech) | 50% each |
+| CIE | P1, P2 (Pure), S2 (Stat), M2 (Mech) | Varies |
 
 ### How to Use These Notes
 
@@ -96,3 +96,15 @@ Follow the sidebar order. Each topic page contains:
 
 > **Prerequisite:** These notes assume full mastery of A Level Mathematics. If you have not yet
 > completed the standard maths course, start with the [Mathematics](../maths/maths) notes first.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

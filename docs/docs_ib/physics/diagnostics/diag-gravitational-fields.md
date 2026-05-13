@@ -23,7 +23,7 @@ A planet of mass $M = 6.0 \times 10^{24}\,\text{kg}$ and radius $R = 6.4 \times 
 
 **Solution:**
 
-(a) For a uniform sphere of density $\rho$, the mass enclosed within radius $r$ is:
+(a) For a uniform sphere of density $\rho$The mass enclosed within radius $r$ is:
 
 $$M_{\text{enc}} = \frac{4}{3}\pi r^3 \rho = M\frac{r^3}{R^3}$$
 
@@ -57,7 +57,7 @@ $$T = 2\pi\sqrt{\frac{(6.4 \times 10^6)^3}{6.67 \times 10^{-11} \times 6.0 \time
 
 $$= 2\pi \times 809.4 = 5087\,\text{s} \approx 84.8\,\text{minutes}$$
 
-Note: this period is independent of the tunnel direction (it only depends on $R^3/GM$, not on the chord chosen). It equals the period of a low-altitude circular orbit.
+Note: this period is independent of the tunnel direction (it only depends on $R^3/GM$Not on the chord chosen). It equals the period of a low-altitude circular orbit.
 
 ---
 
@@ -71,7 +71,7 @@ Note: this period is independent of the tunnel direction (it only depends on $R^
 
 (c) Calculate the minimum energy required to move a satellite of mass $500\,\text{kg}$ from a circular orbit of radius $r_1 = 2R_E$ to one of radius $r_2 = 5R_E$.
 
-Take $M_E = 6.0 \times 10^{24}\,\text{kg}$, $R_E = 6.4 \times 10^6\,\text{m}$, $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
+Take $M_E = 6.0 \times 10^{24}\,\text{kg}$$R_E = 6.4 \times 10^6\,\text{m}$$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
 
 **Solution:**
 
@@ -79,7 +79,7 @@ Take $M_E = 6.0 \times 10^{24}\,\text{kg}$, $R_E = 6.4 \times 10^6\,\text{m}$, $
 
 $$V = -\frac{GM}{r}$$
 
-The zero of potential is defined at infinity (where the gravitational field is zero). Since work must be done against gravity to move a mass from distance $r$ to infinity, the potential at $r$ must be lower than at infinity. Since $V(\infty) = 0$ and $V(r) \lt V(\infty)$, the potential is negative at all finite distances.
+The zero of potential is defined at infinity (where the gravitational field is zero). Since work must be done against gravity to move a mass from distance $r$ to infinity, the potential at $r$ must be lower than at infinity. Since $V(\infty) = 0$ and $V(r) \lt V(\infty)$The potential is negative at all finite distances.
 
 The potential is a scalar quantity (unlike field strength, which is a vector). It represents the gravitational PE per unit mass. A negative potential means a mass at that position has negative PE relative to infinity -- it is "bound" and would need energy input to escape.
 
@@ -111,7 +111,7 @@ Energy required: $\Delta E = E_2 - E_1 = -3.13 \times 10^9 - (-7.82 \times 10^9)
 
 (a) Derive the expression for escape velocity from the surface of a planet of mass $M$ and radius $R$.
 
-(b) Calculate the escape velocity from the surface of the Moon ($M_M = 7.35 \times 10^{22}\,\text{kg}$, $R_M = 1.74 \times 10^6\,\text{m}$).
+(b) Calculate the escape velocity from the surface of the Moon ($M_M = 7.35 \times 10^{22}\,\text{kg}$$R_M = 1.74 \times 10^6\,\text{m}$).
 
 (c) A student argues that "a projectile launched at escape velocity will escape to infinity and then stop." Explain why this is misleading.
 
@@ -137,7 +137,7 @@ $$v_e \approx 2.37\,\text{km}\,\text{s}^{-1}$$
 
 1. "At infinity" is an idealisation. In practice, escape velocity means the object reaches a distance where the gravitational influence of the planet is negligible compared to other bodies. It never truly "reaches infinity."
 
-2. More precisely, escape velocity is the speed at which the total energy (KE + PE) is exactly zero. The object asymptotically approaches zero speed as $r \to \infty$, but never actually stops at any finite distance. At any finite distance, the object still has some residual KE.
+2. More precisely, escape velocity is the speed at which the total energy (KE + PE) is exactly zero. The object asymptotically approaches zero speed as $r \to \infty$But never actually stops at any finite distance. At any finite distance, the object still has some residual KE.
 
 The escape velocity is a **threshold**: above this speed, the object is unbound (hyperbolic trajectory); below it, the object is bound (elliptical trajectory); at exactly escape velocity, the trajectory is parabolic.
 
@@ -166,7 +166,7 @@ $$\frac{GMm}{r^2} = m\omega^2 r$$
 
 $$r^3 = \frac{GM}{\omega^2}$$
 
-The orbital period is $T = 2\pi/\omega$, so $\omega = 2\pi/T$ where $T = 86164\,\text{s}$ (one sidereal day).
+The orbital period is $T = 2\pi/\omega$So $\omega = 2\pi/T$ where $T = 86164\,\text{s}$ (one sidereal day).
 
 $$r^3 = \frac{GMT^2}{4\pi^2}$$
 
@@ -292,6 +292,6 @@ $$= -\frac{2.001 \times 10^{16}}{4.0 \times 10^6} - \frac{2.001 \times 10^{16}}{
 
 $$= -5.00 \times 10^9 - 4.35 \times 10^8 = -5.44 \times 10^9\,\text{J}$$
 
-The probe needs to go from PE $= -1.60 \times 10^9\,\text{J}$ to PE $= -5.44 \times 10^9\,\text{J}$, a decrease of $3.84 \times 10^9\,\text{J}$.
+The probe needs to go from PE $= -1.60 \times 10^9\,\text{J}$ to PE $= -5.44 \times 10^9\,\text{J}$A decrease of $3.84 \times 10^9\,\text{J}$.
 
 Since PE decreases (becomes more negative), the probe gains KE. It needs zero initial speed -- gravity will pull it to the surface. The probe at the zero-field point is at a gravitational potential "ridge" (unstable equilibrium). Any perturbation towards either planet will cause it to fall. The minimum speed is zero (it is at an unstable equilibrium point).

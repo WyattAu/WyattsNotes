@@ -12,90 +12,90 @@ slug: arenes
 # Arenes (Aromatic Compounds)
 
 Arenes are hydrocarbons containing one or more benzene rings. Benzene ($\mathrm{C}_6\mathrm{H}_6$)
-is the archetypal aromatic compound. Its structure and reactivity differ fundamentally from those of
-alkenes, despite both containing $\pi$ electrons. The key distinction is that benzene's $\pi$
-electrons are **delocalised** over the entire ring, forming an aromatic system with exceptional
-thermodynamic stability.
+Is the archetypal aromatic compound. Its structure and reactivity differ fundamentally from those of
+Alkenes, despite both containing $\pi$ electrons. The key distinction is that benzene's $\pi$
+Electrons are **delocalised** over the entire ring, forming an aromatic system with exceptional
+Thermodynamic stability.
 
 ## Benzene Structure
 
 ### Molecular Formula and Degree of Unsaturation
 
-Benzene has the molecular formula $\mathrm{C}_6\mathrm{H}_6$, corresponding to four degrees of
-unsaturation. This immediately rules out an acyclic structure and indicates significant multiple
-bonding or ring formation.
+Benzene has the molecular formula $\mathrm{C}_6\mathrm{H}_6$Corresponding to four degrees of
+Unsaturation. This immediately rules out an acyclic structure and indicates significant multiple
+Bonding or ring formation.
 
 ### The Kekule Structure
 
 August Kekule proposed a cyclic structure with alternating single and double bonds in 1865. While
-this was a productive historical hypothesis, it fails to explain several key observations and is now
-known to be incorrect.
+This was a productive historical hypothesis, it fails to explain several key observations and is now
+Known to be incorrect.
 
 ### Evidence for Delocalisation
 
 **1. Bond lengths are identical.** X-ray diffraction shows that all six C--C bonds in benzene have
-the same length: $139\,\mathrm{pm}$. A Kekule structure with alternating single ($154\,\mathrm{pm}$)
-and double ($134\,\mathrm{pm}$) bonds would show two distinct bond lengths. The experimental value
-is intermediate between single and double, consistent with bond order of 1.5.
+The same length: $139\,\mathrm{pm}$. A Kekule structure with alternating single ($154\,\mathrm{pm}$)
+And double ($134\,\mathrm{pm}$) bonds would show two distinct bond lengths. The experimental value
+Is intermediate between single and double, consistent with bond order of 1.5.
 
 **2. No isomers of 1,2-disubstituted benzene.** The Kekule structure predicts two distinct isomers
-of 1,2-dibromobenzene (bromines on a "single" bond vs on a "double" bond). Only one compound is
-observed.
+Of 1,2-dibromobenzene (bromines on a "single" bond vs on a "double" bond). Only one compound is
+Observed.
 
 **3. Thermochemical evidence.** The experimental enthalpy of hydrogenation of benzene
 ($-208\,\mathrm{kJ/mol}$) is significantly less exothermic than the theoretical value for three
-isolated double bonds ($3 \times -120 = -360\,\mathrm{kJ/mol}$). The difference of approximately
+Isolated double bonds ($3 \times -120 = -360\,\mathrm{kJ/mol}$). The difference of approximately
 $152\,\mathrm{kJ/mol}$ is the **delocalisation energy** (also called resonance energy or aromatic
-stabilisation energy).
+Stabilisation energy).
 
 **4. Resistance to addition reactions.** Unlike alkenes, benzene does not readily undergo addition
-reactions that would destroy the aromatic $\pi$ system. It favours substitution, which preserves the
-delocalised ring.
+Reactions that would destroy the aromatic $\pi$ system. It favours substitution, which preserves the
+Delocalised ring.
 
 ### The Delocalised Model
 
 In the modern model:
 
 - Each carbon is $sp^2$ hybridised, forming three $\sigma$ bonds (two C--C and one C--H) at
-  $120^\circ$ angles in a planar arrangement.
+ $120^\circ$ angles in a planar arrangement.
 - Each carbon has one remaining electron in an unhybridised $p_z$ orbital, perpendicular to the ring
-  plane.
+ plane.
 - The six $p_z$ orbitals overlap laterally, forming a delocalised $\pi$ molecular orbital that
-  extends over all six carbons, above and below the ring.
+ extends over all six carbons, above and below the ring.
 - The electron density is distributed uniformly (shown experimentally by X-ray and electron
-  diffraction).
+ diffraction).
 - The ring current induced by an external magnetic field explains the diamagnetic ring current
-  (detectable by NMR spectroscopy: aromatic protons are deshielded and appear at
-  $\delta \approx 7.2\,\mathrm{ppm}$).
+ (detectable by NMR spectroscopy: aromatic protons are deshielded and appear at
+ $\delta \approx 7.2\,\mathrm{ppm}$).
 
 ### Huckel's Rule
 
 A planar, cyclic, fully conjugated system with $4n + 2$ $\pi$ electrons (where $n$ is a non-negative
-integer) is aromatic. Benzene has $6\,\pi$ electrons ($n = 1$), satisfying the rule. Cyclobutadiene
+Integer) is aromatic. Benzene has $6\,\pi$ electrons ($n = 1$), satisfying the rule. Cyclobutadiene
 ($4\,\pi$ electrons) and cyclooctatetraene ($8\,\pi$ electrons) are not aromatic because they have
 $4n\,\pi$ electrons (anti-aromatic or non-aromatic).
 
 ## Electrophilic Aromatic Substitution
 
 The defining reaction of arenes is electrophilic substitution, not addition. The mechanism involves
-two steps:
+Two steps:
 
 1. **Attack:** The electrophile attacks the delocalised $\pi$ system, forming a cyclohexadienyl
-   cation intermediate (also called a sigma complex or arenium ion). This step is endothermic
-   because it destroys the aromatic stabilisation.
+ cation intermediate (also called a sigma complex or arenium ion). This step is endothermic
+ because it destroys the aromatic stabilisation.
 2. **Deprotonation:** A base removes a proton from the arenium ion, restoring aromaticity. This step
-   is exothermic.
+ is exothermic.
 
 The overall reaction is thermodynamically favourable because the aromatic system is regenerated. The
-rate-determining step is the initial electrophilic attack.
+Rate-determining step is the initial electrophilic attack.
 
 ### Nitration
 
 **Reagents:** Concentrated nitric acid and concentrated sulphuric acid (the latter acts as a
-catalyst and dehydrating agent).
+Catalyst and dehydrating agent).
 
 **Conditions:** $50$--$60^\circ\mathrm{C}$ (gentle heating). Higher temperatures produce di- and
-tri-nitration.
+Tri-nitration.
 
 **Generation of the electrophile** (the nitronium ion, $\mathrm{NO}_2^+$):
 
@@ -104,7 +104,7 @@ $$
 $$
 
 The sulphuric acid protonates nitric acid, which then loses water to form the nitronium ion. This is
-a strong electrophile because the positive charge is delocalised over three atoms
+A strong electrophile because the positive charge is delocalised over three atoms
 ($\mathrm{O}=\mathrm{N}^+=\mathrm{O}$).
 
 **Overall reaction:**
@@ -131,17 +131,17 @@ $$
 $$
 
 The product is an aryl ketone. Friedel-Crafts acylation is preferred over Friedel-Crafts alkylation
-because:
+Because:
 
 - The acylium ion is a weaker electrophile, reducing over-alkylation.
 - The ketone product is electron-withdrawing and deactivates the ring, preventing further
-  substitution.
+ substitution.
 - No carbocation rearrangement occurs (the acylium ion is resonance-stabilised:
-  $\mathrm{R}-\mathrm{C}\equiv\mathrm{O}^+ \leftrightarrow \mathrm{R}-\mathrm{C}^+=\mathrm{O}$).
+ $\mathrm{R}-\mathrm{C}\equiv\mathrm{O}^+ \leftrightarrow \mathrm{R}-\mathrm{C}^+=\mathrm{O}$).
 
-**Limitations:** Does not work on deactivated rings (e.g. nitrobenzene, phenol derivatives with
-electron-withdrawing groups). The $\mathrm{AlCl}_3$ catalyst is destroyed by water and must be used
-under anhydrous conditions.
+**Limitations:** Does not work on deactivated rings (e.g. Nitrobenzene, phenol derivatives with
+Electron-withdrawing groups). The $\mathrm{AlCl}_3$ catalyst is destroyed by water and must be used
+Under anhydrous conditions.
 
 ### Halogenation
 
@@ -161,28 +161,28 @@ $$
 $$
 
 Note: Benzene does not react with bromine water or chlorine water (no Lewis acid catalyst). This is
-a critical distinction from alkenes, which decolourise bromine water rapidly.
+A critical distinction from alkenes, which decolourise bromine water rapidly.
 
 ## Phenol
 
 Phenol ($\mathrm{C}_6\mathrm{H}_5\mathrm{OH}$) is benzene with a hydroxyl group directly attached to
-the ring. The $-\mathrm{OH}$ group donates electron density into the ring through resonance, making
-the ring much more reactive toward electrophilic substitution than benzene itself.
+The ring. The $-\mathrm{OH}$ group donates electron density into the ring through resonance, making
+The ring much more reactive toward electrophilic substitution than benzene itself.
 
 ### Increased Reactivity
 
 The oxygen lone pair is delocalised into the ring, increasing electron density at the ortho and para
-positions. This has two consequences:
+Positions. This has two consequences:
 
 1. **Faster reactions:** Phenol reacts with bromine water without a catalyst (whereas benzene
-   requires $\mathrm{FeBr}_3$).
+ requires $\mathrm{FeBr}_3$).
 2. **Ortho/para directing:** Substitution occurs preferentially at the 2- (ortho) and 4- (para)
-   positions relative to the $-\mathrm{OH}$ group.
+ positions relative to the $-\mathrm{OH}$ group.
 
 ### Bromination of Phenol
 
 Phenol decolourises bromine water immediately at room temperature, producing 2,4,6-tribromophenol as
-a white precipitate:
+A white precipitate:
 
 $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{OH} + 3\mathrm{Br}_2 \to \mathrm{C}_6\mathrm{H}_2\mathrm{Br}_3\mathrm{OH} + 3\mathrm{HBr}
@@ -195,14 +195,14 @@ The tribromo derivative precipitates because it is much less soluble in water th
 Phenol is a weak acid ($\mathrm{p}K_a \approx 10$) compared with carboxylic acids
 ($\mathrm{p}K_a \approx 4\mathrm{--}5$) but is more acidic than alcohols
 ($\mathrm{p}K_a \approx 16$). The phenoxide ion ($\mathrm{C}_6\mathrm{H}_5\mathrm{O}^-$) is
-stabilised by delocalisation of the negative charge over the aromatic ring:
+Stabilised by delocalisation of the negative charge over the aromatic ring:
 
 $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{OH} \rightleftharpoons \mathrm{C}_6\mathrm{H}_5\mathrm{O}^- + \mathrm{H}^+
 $$
 
 Phenol reacts with sodium hydroxide (but not sodium carbonate or sodium hydrogencarbonate) to form
-sodium phenoxide:
+Sodium phenoxide:
 
 $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{NaOH} \to \mathrm{C}_6\mathrm{H}_5\mathrm{ONa} + \mathrm{H}_2\mathrm{O}
@@ -216,7 +216,7 @@ $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{OH} + \mathrm{HCO}_3^- \rightleftharpoons \mathrm{C}_6\mathrm{H}_5\mathrm{O}^- + \mathrm{H}_2\mathrm{CO}_3
 $$
 
-lies to the left because $\mathrm{H}_2\mathrm{CO}_3$ is a stronger acid than phenol. In contrast, carboxylic acids ($\mathrm{p}K_a \approx 4$) are stronger than $\mathrm{H}_2\mathrm{CO}_3$ and do react with $\mathrm{NaHCO}_3$, producing $\mathrm{CO}_2$. This distinction is a useful chemical test.
+Lies to the left because $\mathrm{H}_2\mathrm{CO}_3$ is a stronger acid than phenol. In contrast, carboxylic acids ($\mathrm{p}K_a \approx 4$) are stronger than $\mathrm{H}_2\mathrm{CO}_3$ and do react with $\mathrm{NaHCO}_3$Producing $\mathrm{CO}_2$. This distinction is a useful chemical test.
 
 ## Directing Effects of Substituents
 
@@ -228,7 +228,7 @@ These groups donate electron density into the ring, activating it toward electro
 
 | Group | Mechanism | Relative activating power |
 |---|---|---|
-| $-\mathrm{NH}_2$, $-\mathrm{NHR}$ | Resonance donation (strong) | Very strong |
+| $-\mathrm{NH}_2$$-\mathrm{NHR}$ | Resonance donation (strong) | Very strong |
 | $-\mathrm{OH}$ | Resonance donation (strong) | Strong |
 | $-\mathrm{OR}$ | Resonance donation | Strong |
 | $-\mathrm{R}$ (alkyl) | Inductive donation (weak) | Weak |
@@ -244,10 +244,10 @@ These groups withdraw electron density from the ring, deactivating it toward ele
 |---|---|---|
 | $-\mathrm{NO}_2$ | Resonance withdrawal (strong) | Very strong |
 | $-\mathrm{CN}$ | Resonance withdrawal | Strong |
-| $-\mathrm{COOH}$, $-\mathrm{COR}$ | Resonance withdrawal | Strong |
+| $-\mathrm{COOH}$$-\mathrm{COR}$ | Resonance withdrawal | Strong |
 | $-\mathrm{SO}_3\mathrm{H}$ | Resonance withdrawal | Strong |
 | $-\mathrm{CF}_3$ | Inductive withdrawal | Moderate |
-| Halogens ($-\mathrm{Cl}$, $-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation |
+| Halogens ($-\mathrm{Cl}$$-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation |
 
 **Why meta?** The resonance structures of the arenium ion for ortho or para attack place the positive charge on the carbon bearing the electron-withdrawing group, which further destabilises the already electron-deficient intermediate. Meta attack avoids placing the positive charge adjacent to the electron-withdrawing group.
 
@@ -265,32 +265,32 @@ Halogens are **deactivating** (they withdraw electrons inductively because they 
 
 | Group type | Effect on rate | Directing |
 |---|---|---|
-| $-\mathrm{NH}_2$, $-\mathrm{OH}$, $-\mathrm{OR}$ | Activates strongly | Ortho/para |
+| $-\mathrm{NH}_2$$-\mathrm{OH}$$-\mathrm{OR}$ | Activates strongly | Ortho/para |
 | Alkyl ($-\mathrm{R}$) | Activates weakly | Ortho/para |
 | Halogens | Deactivates weakly | Ortho/para |
-| $-\mathrm{NO}_2$, $-\mathrm{CN}$, $-\mathrm{COR}$, $-\mathrm{COOH}$ | Deactivates strongly | Meta |
+| $-\mathrm{NO}_2$$-\mathrm{CN}$$-\mathrm{COR}$$-\mathrm{COOH}$ | Deactivates strongly | Meta |
 
 ## Common Pitfalls
 
 1. **Drawing the Kekule structure.** The Kekule structure (alternating single/double bonds) is
-   incorrect and should not be used. Draw a hexagon with a circle inside to represent the
-   delocalised $\pi$ system.
+ incorrect and should not be used. Draw a hexagon with a circle inside to represent the
+ delocalised $\pi$ system.
 
 2. **Confusing addition and substitution for benzene.** Benzene undergoes electrophilic substitution
-   (preserving the aromatic ring), not addition (which would destroy the delocalisation energy).
-   Alkenes undergo electrophilic addition.
+ (preserving the aromatic ring), not addition (which would destroy the delocalisation energy).
+ Alkenes undergo electrophilic addition.
 
 3. **Assuming benzene reacts with bromine water.** Benzene does not react with bromine water. It
-   requires $\mathrm{Br}_2$ with a Lewis acid catalyst ($\mathrm{FeBr}_3$). Phenol does react with
-   bromine water.
+ requires $\mathrm{Br}_2$ with a Lewis acid catalyst ($\mathrm{FeBr}_3$). Phenol does react with
+ bromine water.
 
 4. **Forgetting the catalyst in Friedel-Crafts reactions.** $\mathrm{AlCl}_3$ (or equivalent Lewis
-   acid) is essential for generating the electrophile. Without it, the reaction does not proceed.
+ acid) is essential for generating the electrophile. Without it, the reaction does not proceed.
 
 5. **Misunderstanding the role of $\mathrm{H}_2\mathrm{SO}_4$ in nitration.** Concentrated
-   $\mathrm{H}_2\mathrm{SO}_4$ generates the nitronium ion and is not simply a "catalyst" in the
-   usual sense -- it is consumed stoichiometrically in generating the electrophile (one mole per
-   mole of $\mathrm{NO}_2^+$), though it is regenerated when the arenium ion is deprotonated.
+ $\mathrm{H}_2\mathrm{SO}_4$ generates the nitronium ion and is not a "catalyst" in the
+ usual sense -- it is consumed stoichiometrically in generating the electrophile (one mole per
+ mole of $\mathrm{NO}_2^+$), though it is regenerated when the arenium ion is deprotonated.
 
 ## Friedel-Crafts Reactions in Detail
 
@@ -304,9 +304,9 @@ $$
 
 **Mechanism:**
 
-1. $\mathrm{AlCl}_3$ coordinates to the chlorine of $\mathrm{CH}_3\mathrm{Cl}$, generating a carbocation-like electrophile ($\mathrm{CH}_3^+$) or a polarised complex.
+1. $\mathrm{AlCl}_3$ coordinates to the chlorine of $\mathrm{CH}_3\mathrm{Cl}$Generating a carbocation-like electrophile ($\mathrm{CH}_3^+$) or a polarised complex.
 2. The electrophile attacks the benzene ring, forming a sigma complex (arenium ion).
-3. The $\mathrm{H}^+$ is removed by $\mathrm{AlCl}_4^-$, restoring aromaticity.
+3. The $\mathrm{H}^+$ is removed by $\mathrm{AlCl}_4^-$Restoring aromaticity.
 
 **Limitations:**
 
@@ -360,21 +360,21 @@ When a benzene ring already has one substituent and a second electrophilic subst
 
 These groups donate electron density to the ring, activating it and directing substitution to the ortho (positions 2 and 6) and para (position 4) positions:
 
-- $-\mathrm{OH}$, $-\mathrm{OR}$ (strong activators)
-- $-\mathrm{NH}_2$, $-\mathrm{NHR}$, $-\mathrm{NR}_2$ (strong activators)
-- $-\mathrm{CH}_3$, $-\mathrm{R}$ (moderate activators)
-- Halogens: $-\mathrm{F}$, $-\mathrm{Cl}$, $-\mathrm{Br}$, $-\mathrm{I}$ (deactivators but ortho/para directors)
+- $-\mathrm{OH}$$-\mathrm{OR}$ (strong activators)
+- $-\mathrm{NH}_2$$-\mathrm{NHR}$$-\mathrm{NR}_2$ (strong activators)
+- $-\mathrm{CH}_3$$-\mathrm{R}$ (moderate activators)
+- Halogens: $-\mathrm{F}$$-\mathrm{Cl}$$-\mathrm{Br}$$-\mathrm{I}$ (deactivators but ortho/para directors)
 
 ### Meta Directors (Deactivating)
 
 These groups withdraw electron density from the ring, deactivating it and directing substitution to the meta position (position 3 and 5):
 
 - $-\mathrm{NO}_2$ (very strong deactivator)
-- $-\mathrm{CF}_3$, $-\mathrm{CCl}_3$
+- $-\mathrm{CF}_3$$-\mathrm{CCl}_3$
 - $-\mathrm{CN}$
 - $-\mathrm{SO}_3\mathrm{H}$
-- $-\mathrm{CHO}$, $-\mathrm{COR}$
-- $-\mathrm{COOH}$, $-\mathrm{COOR}$
+- $-\mathrm{CHO}$$-\mathrm{COR}$
+- $-\mathrm{COOH}$$-\mathrm{COOR}$
 
 ### Worked Examples
 
@@ -384,7 +384,7 @@ Methyl is an ortho/para director and activator. Nitration gives a mixture of ort
 
 **Example 2:** Nitration of nitrobenzene.
 
-$-\mathrm{NO}_2$ is a meta director and strong deactivator. Nitration gives meta-dinitrobenzene. The reaction requires more vigorous conditions (fuming $\mathrm{HNO}_3$/$\mathrm{H}_2\mathrm{SO}_4$, higher temperature) and is slower than nitration of benzene.
+$-\mathrm{NO}_2$ is a meta director and strong deactivator. Nitration gives meta-dinitrobenzene. The reaction requires more vigorous conditions (fuming $\mathrm{HNO}_3$/$\mathrm{H}_2\mathrm{SO}_4$Higher temperature) and is slower than nitration of benzene.
 
 ### Phenol: Special Reactivity
 
@@ -396,7 +396,7 @@ $$
 
 ### Phenol vs Toluene: Acidity Distinction
 
-Phenol ($\mathrm{p}K_a \approx 10$) is a weak acid and reacts with $\mathrm{NaOH}$ to form sodium phenoxide, but does **not** react with $\mathrm{NaHCO}_3$ ($\mathrm{p}K_a \approx 6.4$). Carboxylic acids ($\mathrm{p}K_a \approx 4$--$5$) do react with $\mathrm{NaHCO}_3$, producing $\mathrm{CO}_2$. This provides a clean experimental test to distinguish phenols from carboxylic acids.
+Phenol ($\mathrm{p}K_a \approx 10$) is a weak acid and reacts with $\mathrm{NaOH}$ to form sodium phenoxide, but does **not** react with $\mathrm{NaHCO}_3$ ($\mathrm{p}K_a \approx 6.4$). Carboxylic acids ($\mathrm{p}K_a \approx 4$--$5$) do react with $\mathrm{NaHCO}_3$Producing $\mathrm{CO}_2$. This provides a clean experimental test to distinguish phenols from carboxylic acids.
 
 ## Practice Problems
 
@@ -406,11 +406,11 @@ Phenol ($\mathrm{p}K_a \approx 10$) is a weak acid and reacts with $\mathrm{NaOH
 Calculate the delocalisation energy of benzene using the following hydrogenation data:
 
 - $\Delta H$ for
-  $\mathrm{C}_6\mathrm{H}_6(g) + 3\mathrm{H}_2(g) \to \mathrm{C}_6\mathrm{H}_{12}(g)$:
-  $-208\,\mathrm{kJ/mol}$
+ $\mathrm{C}_6\mathrm{H}_6(g) + 3\mathrm{H}_2(g) \to \mathrm{C}_6\mathrm{H}_{12}(g)$:
+ $-208\,\mathrm{kJ/mol}$
 - $\Delta H$ for $\mathrm{C}_6\mathrm{H}_{12}(g)$: cyclohexane
 - Mean C=C bond enthalpy: $612\,\mathrm{kJ/mol}$ (note: this is for a double bond, consisting of one
-  $\sigma$ and one $\pi$ component)
+ $\sigma$ and one $\pi$ component)
 - Mean C--C bond enthalpy: $348\,\mathrm{kJ/mol}$
 - Mean C--H bond enthalpy: $413\,\mathrm{kJ/mol}$
 - H--H bond enthalpy: $436\,\mathrm{kJ/mol}$
@@ -418,7 +418,7 @@ Calculate the delocalisation energy of benzene using the following hydrogenation
 **Solution:**
 
 Benzene has 6 C--C bonds (effectively bond order 1.5), 6 C--H bonds, and we break 3 H--H bonds. We
-form cyclohexane with 6 C--C bonds (single) and 12 C--H bonds.
+Form cyclohexane with 6 C--C bonds (single) and 12 C--H bonds.
 
 Expected $\Delta H$ if benzene had 3 isolated C=C bonds:
 
@@ -433,7 +433,7 @@ Expected $\Delta H = 6666 - 7044 = -378\,\mathrm{kJ/mol}$.
 Delocalisation energy = expected $-$ actual = $-378 - (-208) = -170\,\mathrm{kJ/mol}$.
 
 The benzene ring is stabilised by approximately $170\,\mathrm{kJ/mol}$ relative to the Kekule
-structure with three isolated double bonds.
+Structure with three isolated double bonds.
 
 </details>
 
@@ -441,21 +441,21 @@ structure with three isolated double bonds.
 <summary>Problem 2</summary>
 
 Explain why Friedel-Crafts acylation of nitrobenzene fails, while Friedel-Crafts acylation of phenol
-proceeds readily.
+Proceeds readily.
 
 **Solution:**
 
 The $-\mathrm{NO}_2$ group is strongly electron-withdrawing through both the inductive effect (the
-nitrogen is electron-deficient) and resonance (the $\pi$ electrons of the ring are delocalised onto
-the oxygen atoms of the nitro group). This deactivates the ring toward electrophilic attack by
-reducing the electron density in the $\pi$ system. Additionally, the $-\mathrm{NO}_2$ group makes
-the ring less nucleophilic, so the electrophilic attack step (already the rate-determining step)
-becomes prohibitively slow.
+Nitrogen is electron-deficient) and resonance (the $\pi$ electrons of the ring are delocalised onto
+The oxygen atoms of the nitro group). This deactivates the ring toward electrophilic attack by
+Reducing the electron density in the $\pi$ system. Additionally, the $-\mathrm{NO}_2$ group makes
+The ring less nucleophilic, so the electrophilic attack step (already the rate-determining step)
+Becomes prohibitively slow.
 
 The $-\mathrm{OH}$ group on phenol is electron-donating through resonance (the oxygen lone pair
-delocalises into the ring, increasing electron density at ortho and para positions). This activates
-the ring toward electrophilic substitution, making the reaction much faster than for unsubstituted
-benzene.
+Delocalises into the ring, increasing electron density at ortho and para positions). This activates
+The ring toward electrophilic substitution, making the reaction much faster than for unsubstituted
+Benzene.
 
 </details>
 
@@ -486,7 +486,7 @@ $$
 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CH}_3)(\mathrm{NO}_2) \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{COOH})(\mathrm{NO}_2)
 $$
 
-Step 4: Conversion of carboxylic acid to aldehyde. This is tricky as direct reduction of an aromatic carboxylic acid typically gives the primary alcohol. A suitable route is to reduce the acid to alcohol ($\mathrm{LiAlH}_4$), then oxidise to the aldehyde (distillation with $\mathrm{PCC}$ or acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$):
+Step 4: Conversion of carboxylic acid to aldehyde. This is tricky as direct reduction of an aromatic carboxylic acid gives the primary alcohol. A suitable route is to reduce the acid to alcohol ($\mathrm{LiAlH}_4$), then oxidise to the aldehyde (distillation with $\mathrm{PCC}$ or acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$):
 
 $$
 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{COOH})(\mathrm{NO}_2) \xrightarrow{\mathrm{LiAlH}_4} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CH}_2\mathrm{OH})(\mathrm{NO}_2) \xrightarrow{[\mathrm{O}],\,\text{distillation}} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CHO})(\mathrm{NO}_2)
@@ -506,11 +506,11 @@ The nitronium ion is formed by the reaction of concentrated nitric acid with con
 
 $$\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}$$
 
-Electron flow: The lone pair on the oxygen of $\mathrm{HNO}_3$ attacks the hydrogen of $\mathrm{H}_2\mathrm{SO}_4$, forming $\mathrm{H}_2\mathrm{NO}_3^+$. Water is eliminated, leaving $\mathrm{NO}_2^+$.
+Electron flow: The lone pair on the oxygen of $\mathrm{HNO}_3$ attacks the hydrogen of $\mathrm{H}_2\mathrm{SO}_4$Forming $\mathrm{H}_2\mathrm{NO}_3^+$. Water is eliminated, leaving $\mathrm{NO}_2^+$.
 
 **Step 2: Electrophilic attack on benzene.**
 
-The $\pi$ electrons of benzene attack the nitrogen of $\mathrm{NO}_2^+$, forming the sigma complex (arenium ion). The positive charge is delocalised over three carbon atoms (the carbon bearing the nitro group and the two ortho carbons).
+The $\pi$ electrons of benzene attack the nitrogen of $\mathrm{NO}_2^+$Forming the sigma complex (arenium ion). The positive charge is delocalised over three carbon atoms (the carbon bearing the nitro group and the two ortho carbons).
 
 **Step 3: Deprotonation.**
 
@@ -558,11 +558,11 @@ This synthesis requires careful ordering: the methyl group directs the first nit
 
 **Calculate the delocalisation energy of benzene from hydrogenation data.**
 
-Hydrogenation of cyclohexene: $\mathrm{C}_6\mathrm{H}_{10} + \mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -120\,\mathrm{kJ/mol}$
+Hydrogenation of cyclohexene: $\mathrm{C}_6\mathrm{H}_{10} + \mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$$\Delta H = -120\,\mathrm{kJ/mol}$
 
 If benzene had three isolated C=C bonds, expected $\Delta H_\mathrm{hydrogenation} = 3 \times (-120) = -360\,\mathrm{kJ/mol}$
 
-Experimental: $\mathrm{C}_6\mathrm{H}_6 + 3\mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -208\,\mathrm{kJ/mol}$
+Experimental: $\mathrm{C}_6\mathrm{H}_6 + 3\mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$$\Delta H = -208\,\mathrm{kJ/mol}$
 
 $$\text{Delocalisation energy} = -360 - (-208) = -152\,\mathrm{kJ/mol}$$
 
@@ -632,7 +632,7 @@ Note: Controlling mono-bromination of phenol requires careful control of bromine
 
 **Procedure (nitration of methylbenzene):**
 1. In a fume cupboard, add $10\,\mathrm{cm}^3$ of concentrated $\mathrm{HNO}_3$ to a conical flask and cool in an ice bath.
-2. Slowly add $10\,\mathrm{cm}^3$ of concentrated $\mathrm{H}_2\mathrm{SO}_4$, with stirring, maintaining the temperature below $20^\circ\mathrm{C}$.
+2. Slowly add $10\,\mathrm{cm}^3$ of concentrated $\mathrm{H}_2\mathrm{SO}_4$With stirring, maintaining the temperature below $20^\circ\mathrm{C}$.
 3. Cool the nitrating mixture to $0$--$5^\circ\mathrm{C}$.
 4. Add $5\,\mathrm{cm}^3$ of methylbenzene dropwise, with vigorous stirring, keeping the temperature below $10^\circ\mathrm{C}$.
 5. After addition, allow the mixture to stand at room temperature for 15 minutes, then pour onto crushed ice.
@@ -668,7 +668,7 @@ Describe the mechanism for the nitration of benzene. Include the formation of th
 
 5 marks:
 - Formation of $\mathrm{NO}_2^+$: $\mathrm{HNO}_3 + \mathrm{H}_2\mathrm{SO}_4 \to \mathrm{NO}_2^+ + \mathrm{HSO}_4^- + \mathrm{H}_2\mathrm{O}$ (1 mark).
-- Electrophilic attack: $\pi$ electrons attack $\mathrm{NO}_2^+$, forming the sigma complex (arenium ion) with the positive charge delocalised over three carbons (1 mark).
+- Electrophilic attack: $\pi$ electrons attack $\mathrm{NO}_2^+$Forming the sigma complex (arenium ion) with the positive charge delocalised over three carbons (1 mark).
 - Deprotonation: $\mathrm{HSO}_4^-$ removes $\mathrm{H}^+$ from the sigma complex, restoring aromaticity (1 mark).
 - Overall equation: $\mathrm{C}_6\mathrm{H}_6 + \mathrm{HNO}_3 \to \mathrm{C}_6\mathrm{H}_5\mathrm{NO}_2 + \mathrm{H}_2\mathrm{O}$ (1 mark).
 - Curly arrow diagram showing electron flow for the electrophilic attack and deprotonation steps (1 mark).
@@ -774,3 +774,7 @@ See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for 
 :::
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

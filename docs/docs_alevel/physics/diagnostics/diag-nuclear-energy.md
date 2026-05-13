@@ -62,7 +62,7 @@ Masses:
 
 (c) Compare this energy with the energy released by burning $1.0\,\text{kg}$ of coal (approximately $3.0 \times 10^7\,\text{J}$).
 
-Take $1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$, $1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
+Take $1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
 
 **Solution:**
 
@@ -99,7 +99,7 @@ The dominant overall reaction in the Sun is:
 
 $$4p \to {}^4_2\text{He} + 2e^+ + 2\nu_e + 26.7\,\text{MeV}$$
 
-Masses: $m_p = 1.00728\,\text{u}$, $m_{{}^{4}\text{He}} = 4.00150\,\text{u}$, $m_{e^+} = 0.00055\,\text{u}$.
+Masses: $m_p = 1.00728\,\text{u}$$m_{{}^{4}\text{He}} = 4.00150\,\text{u}$$m_{e^+} = 0.00055\,\text{u}$.
 
 (a) Verify the Q-value of the overall reaction using mass data.
 
@@ -107,7 +107,7 @@ Masses: $m_p = 1.00728\,\text{u}$, $m_{{}^{4}\text{He}} = 4.00150\,\text{u}$, $m
 
 (c) The Sun's luminosity is $3.85 \times 10^{26}\,\text{W}$. Estimate the mass of hydrogen consumed per second.
 
-Take $1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$, $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$.
+Take $1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$.
 
 **Solution:**
 
@@ -119,7 +119,7 @@ Mass defect: $\Delta m = 4.02912 - 4.00260 = 0.02652\,\text{u}$
 
 $Q = 0.02652 \times 931.5 = 24.70\,\text{MeV}$
 
-The stated value is $26.7\,\text{MeV}$, which includes the annihilation energy of the two positrons with electrons ($2 \times 0.511 = 1.02\,\text{MeV}$). Since the hydrogen atoms include electrons, the net reaction includes $e^+ + e^- \to 2\gamma$, adding $1.02\,\text{MeV}$:
+The stated value is $26.7\,\text{MeV}$Which includes the annihilation energy of the two positrons with electrons ($2 \times 0.511 = 1.02\,\text{MeV}$). Since the hydrogen atoms include electrons, the net reaction includes $e^+ + e^- \to 2\gamma$Adding $1.02\,\text{MeV}$:
 
 $24.70 + 1.02 = 25.72\,\text{MeV}$
 
@@ -145,7 +145,7 @@ A nuclear reactor uses ${}^{235}\text{U}$ fuel. Each fission releases $200\,\tex
 
 (a) Calculate the fission rate (fissions per second).
 
-(b) If the neutron multiplication factor is $k = 1.003$, calculate the reactor period (the time for the power to double).
+(b) If the neutron multiplication factor is $k = 1.003$Calculate the reactor period (the time for the power to double).
 
 (c) Explain the role of control rods and the moderator in maintaining $k = 1$.
 
@@ -159,19 +159,19 @@ $$= \frac◆LB◆3.0 \times 10^9◆RB◆◆LB◆3.20 \times 10^{-11}◆RB◆ = 9
 
 $$P(t) = P_0 e^{t(1-k^{-1})/\ell}$$
 
-where $\ell$ is the mean neutron generation time. For thermal neutrons in a moderated reactor, $\ell \approx 10^{-4}\,\text{s}$.
+Where $\ell$ is the mean neutron generation time. For thermal neutrons in a moderated reactor, $\ell \approx 10^{-4}\,\text{s}$.
 
 For $k = 1.003$: $(k - 1)/k \approx 0.003$
 
 Doubling time: $T = \ell/(k - 1) = 10^{-4}/0.003 = 0.033\,\text{s}$
 
-The power doubles every $33\,\text{ms}$, which is extremely fast. This is why prompt supercritical excursions are dangerous and why delayed neutrons are essential for controllable reactor operation.
+The power doubles every $33\,\text{ms}$Which is extremely fast. This is why prompt supercritical excursions are dangerous and why delayed neutrons are essential for controllable reactor operation.
 
 (c) **Control rods** (made of neutron-absorbing materials like boron or cadmium) are inserted or withdrawn to absorb neutrons and control the reaction rate. Inserting rods reduces $k$ (absorbing more neutrons reduces the multiplication factor); withdrawing rods increases $k$.
 
 The **moderator** (water, graphite, or heavy water) slows down fast neutrons from fission to thermal energies, where the fission cross-section of ${}^{235}\text{U}$ is much higher. Without a moderator, most neutrons would escape or be captured without causing further fission, and $k$ would be below 1.
 
-For stable operation at constant power, $k = 1$ exactly (critical state). This is maintained by a negative temperature coefficient: if the reactor gets too hot, thermal expansion and Doppler broadening reduce $k$, providing automatic negative feedback.
+For stable operation at constant power, $k = 1$ exactly (critical state). This is maintained by a negative temperature coefficient: if the reactor gets too hot, thermal expansion and Doppler broadening reduce $k$Providing automatic negative feedback.
 
 ---
 ### IT-2: Binding Energy Curve and Stability (with Radioactivity)
@@ -194,7 +194,7 @@ The following binding energies per nucleon are given:
 
 (a) For ${}^{235}\text{U}$: total binding energy $= 235 \times 7.59 = 1783.7\,\text{MeV}$
 
-The fission of ${}^{235}\text{U}$ does not directly produce two ${}^{56}\text{Fe}$ nuclei ($2 \times 56 = 112$ nucleons, not $235$). Fission fragments are typically in the mass range 90--140. For a more realistic calculation, consider the approximate symmetric fission ${}^{235}\text{U} \to {}^{118}\text{Pd} + {}^{117}\text{Pd} + n$:
+The fission of ${}^{235}\text{U}$ does not directly produce two ${}^{56}\text{Fe}$ nuclei ($2 \times 56 = 112$ nucleons, not $235$). Fission fragments are in the mass range 90--140. For a more realistic calculation, consider the approximate symmetric fission ${}^{235}\text{U} \to {}^{118}\text{Pd} + {}^{117}\text{Pd} + n$:
 
 Assuming the products have BE/A $\approx 8.5\,\text{MeV}$ (average for medium-mass nuclei):
 
@@ -229,7 +229,7 @@ The deuterium-tritium fusion reaction is:
 
 $${}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He} + {}^{1}_{0}\text{n} + 17.6\,\text{MeV}$$
 
-Masses: ${}^{2}\text{H} = 2.01410\,\text{u}$, ${}^{3}\text{H} = 3.01605\,\text{u}$, ${}^{4}\text{He} = 4.00260\,\text{u}$, ${}^{1}\text{n} = 1.00867\,\text{u}$.
+Masses: ${}^{2}\text{H} = 2.01410\,\text{u}$${}^{3}\text{H} = 3.01605\,\text{u}$${}^{4}\text{He} = 4.00260\,\text{u}$${}^{1}\text{n} = 1.00867\,\text{u}$.
 
 (a) Verify the Q-value using mass data.
 
@@ -237,7 +237,7 @@ Masses: ${}^{2}\text{H} = 2.01410\,\text{u}$, ${}^{3}\text{H} = 3.01605\,\text{u
 
 (c) The oceans contain approximately $4.6 \times 10^{13}\,\text{kg}$ of deuterium. If all this deuterium were used in D-T fusion (with sufficient tritium), calculate the total energy available and compare it with the world's annual energy consumption (approximately $6.0 \times 10^{20}\,\text{J}$).
 
-Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$, $1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
+Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$$1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
 
 **Solution:**
 
@@ -265,6 +265,6 @@ $E_{\text{total}} = 4.6 \times 10^{13} \times 3.37 \times 10^{14} = 1.55 \times 
 
 Years of world energy: $1.55 \times 10^{28}/(6.0 \times 10^{20}) = 2.58 \times 10^7 = 25.8\,\text{million years}$
 
-The deuterium in the oceans could theoretically supply the world's energy needs for about 26 million years. This highlights the enormous potential of nuclear fusion as a virtually limitless energy source. The challenge is achieving the conditions (temperature $\approx 10^8\,\text{K}$, confinement, and density) for sustained fusion reactions.
+The deuterium in the oceans could theoretically supply the world's energy needs for about 26 million years. This highlights the enormous potential of nuclear fusion as a virtually limitless energy source. The challenge is achieving the conditions (temperature $\approx 10^8\,\text{K}$Confinement, and density) for sustained fusion reactions.
 
-Note: In practice, tritium must be "bred" from lithium using the fusion neutrons, and the achievable efficiency is much lower than $100\%$, but the resource is still effectively limitless on human timescales.
+Note: In practice, tritium must be "bred" from lithium using the fusion neutrons, and the achievable efficiency is much lower than $100\%$But the resource is still effectively limitless on human timescales.

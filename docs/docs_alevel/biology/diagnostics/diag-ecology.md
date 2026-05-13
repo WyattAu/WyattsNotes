@@ -81,12 +81,12 @@ These percentages are low because:
 - **Only certain wavelengths are used**: photosynthetic pigments absorb primarily red and blue light; green light is reflected (which is why plants appear green).
 - **Limiting factors**: the rate of photosynthesis is limited by factors such as CO$_2$ concentration, temperature, and water availability.
 - **Energy lost as heat**: some absorbed light energy is converted to heat and lost, rather than being used to fix carbon.
-- **Photorespiration**: Rubisco can react with oxygen instead of CO$_2$, wasting energy.
-- **Plant respiration**: plants use a significant portion of the GPP (in this case, 20,000 - 16,000 = 4,000 kJ m$^{-2}$ year$^{-1}$, or 20% of GPP) for their own metabolic processes (respiration).
+- **Photorespiration**: Rubisco can react with oxygen instead of CO$_2$Wasting energy.
+- **Plant respiration**: plants use a significant portion of the GPP (in this case, 20,000 - 16,000 = 4,000 kJ m$^{-2}$ year$^{-1}$Or 20% of GPP) for their own metabolic processes (respiration).
 
 (c) An **ecological niche** describes the role and position of a species within its ecosystem, including all biotic and abiotic factors it interacts with: what it eats, what eats it, its habitat, its reproductive behaviour, its interactions with other species, and the environmental conditions it requires. It is often summarised as "where an organism lives and what it does."
 
-The **competitive exclusion principle** states that two species cannot coexist in the same habitat if they occupy exactly the same ecological niche. If two species compete for exactly the same resources, one will eventually outcompete the other (be more efficient at obtaining resources or reproducing), leading to the local extinction of the less competitive species. In practice, coexisting species usually have slightly different niches (resource partitioning), which reduces direct competition.
+The **competitive exclusion principle** states that two species cannot coexist in the same habitat if they occupy exactly the same ecological niche. If two species compete for exactly the same resources, one will eventually outcompete the other (be more efficient at obtaining resources or reproducing), leading to the local extinction of the less competitive species. In practice, coexisting species have slightly different niches (resource partitioning), which reduces direct competition.
 
 (d) **Predator-prey dynamics cycle**:
 1. When prey are abundant, predators have plentiful food, so the predator population increases (more food supports more predators and higher survival/reproduction).
@@ -128,7 +128,7 @@ Succession is the process of change in the species composition of a community ov
 The key difference is that secondary succession begins with soil already present, so it generally proceeds faster than primary succession.
 
 (b) **Stages of primary succession on bare rock**:
-1. **Pioneer species** colonise the bare rock. These are typically hardy, stress-tolerant organisms such as lichens, algae, and mosses. Lichens secrete acids that chemically weather the rock, beginning soil formation.
+1. **Pioneer species** colonise the bare rock. These are hardy, stress-tolerant organisms such as lichens, algae, and mosses. Lichens secrete acids that chemically weather the rock, beginning soil formation.
 2. **Weathering and soil formation**: lichens and mosses trap wind-blown dust and organic matter from dead organisms, building up a thin layer of soil. Physical weathering (temperature changes, frost) also breaks rock into smaller particles.
 3. **Herbaceous plants** (grasses, ferns, small flowering plants) colonise the thin soil. Their roots further break up rock and contribute more organic matter when they die, deepening and enriching the soil. These outcompete the pioneers for light and water.
 4. **Shrubs and small woody plants** colonise as the soil deepens further. They shade out the herbaceous plants.
@@ -242,7 +242,7 @@ The population of a species of large mammal in a national park is monitored over
 
 Factors causing the growth rate to slow as the population approaches carrying capacity:
 - **Increased competition** for limited resources (food, water, nesting sites, light) — as population density increases, each individual has access to fewer resources.
-- **Increased disease and parasitism** — pathogens spread more easily in dense populations (transmission rate increases with contact rate).
+- **Increased disease and parasitism** — pathogens spread more in dense populations (transmission rate increases with contact rate).
 - **Increased predation** — predators are more likely to encounter prey in dense populations, and predator populations may increase in response to more prey.
 - **Accumulation of waste products** — toxic waste products can build up and increase mortality.
 - **Stress and behavioural changes** — crowding can induce stress, reduce reproductive rates, and increase aggression.
@@ -255,7 +255,7 @@ These are all **density-dependent factors** — their effect increases with popu
 3. Predation
 4. Accumulation of toxic waste
 
-**Density-independent factors** affect the population regardless of its size or density. They are typically abiotic factors. Examples:
+**Density-independent factors** affect the population regardless of its size or density. They are abiotic factors. Examples:
 1. Extreme weather events (drought, flood, frost, hurricane)
 2. Natural disasters (volcanic eruption, wildfire)
 3. Seasonal changes in temperature or day length
@@ -301,12 +301,12 @@ A farmer applies nitrate and phosphate fertilisers to a field of wheat. The fiel
 
 (b) Nitrate ions (NO$_3^-$) are absorbed by plant roots by **active transport**:
 1. **Root hair cells** are specialised epidermal cells with long, thin projections that greatly increase the surface area for absorption.
-2. The concentration of nitrate ions in the soil solution is usually lower than inside the root hair cell, so nitrates cannot enter by diffusion (the concentration gradient is in the wrong direction).
+2. The concentration of nitrate ions in the soil solution is lower than inside the root hair cell, so nitrates cannot enter by diffusion (the concentration gradient is in the wrong direction).
 3. **Carrier proteins** in the cell membrane of root hair cells actively transport nitrate ions into the cell, using energy from ATP (produced by aerobic respiration in the mitochondria of the root hair cell). This process moves nitrate ions against their concentration gradient.
 4. Once inside the root hair cell, nitrates can pass to neighbouring cells via the symplast pathway (through plasmodesmata) and eventually reach the xylem for transport to the shoots.
 5. The active uptake of nitrate ions lowers the water potential inside the root hair cell, promoting osmotic uptake of water from the soil.
 
-(c) **Nitrate ions (NO$_3^-$)** are highly soluble in water and are not strongly adsorbed to soil particles. When heavy rain falls, nitrate ions dissolve readily in the water percolating through the soil and are washed (leached) into drainage systems and rivers. Nitrate ions are negatively charged and are repelled by the negatively charged surfaces of clay particles in the soil (ion exchange sites preferentially bind positively charged cations), so they remain free in the soil solution and are easily leached.
+(c) **Nitrate ions (NO$_3^-$)** are highly soluble in water and are not strongly adsorbed to soil particles. When heavy rain falls, nitrate ions dissolve readily in the water percolating through the soil and are washed (leached) into drainage systems and rivers. Nitrate ions are negatively charged and are repelled by the negatively charged surfaces of clay particles in the soil (ion exchange sites preferentially bind positively charged cations), so they remain free in the soil solution and are leached.
 
 **Phosphate ions (PO$_4^{3-}$)** are much less soluble in water. They readily bind to positively charged ions in the soil (e.g., calcium ions, iron ions, aluminium ions) to form insoluble compounds (e.g., calcium phosphate, iron phosphate) that precipitate out of solution. Phosphates also bind strongly to soil particles (adsorption). This means that when it rains, most phosphate remains in the soil bound to particles or as insoluble precipitates, and relatively little is leached into waterways.
 

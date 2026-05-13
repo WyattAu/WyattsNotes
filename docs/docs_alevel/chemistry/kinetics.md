@@ -25,7 +25,7 @@ $$
 The negative sign for reactants ensures a positive rate value. For a general reaction:
 
 $$
-a\mathrm{A} + b\mathrm{B} \to c\mathrm{C} + d\mathrm{D}
+A\mathrm{A} + b\mathrm{B} \to c\mathrm{C} + d\mathrm{D}
 $$
 
 $$
@@ -38,12 +38,12 @@ Units of rate: $\mathrm{mol\,dm^{-3}\,s^{-1}}$.
 
 | Method | Observable | Suitable Reactions |
 |---|---|---|
-| Gas collection | Volume of gas vs time | Reactions producing gaseous products ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
+| Gas collection | Volume of gas vs time | Reactions producing gaseous products ($\mathrm{CO}_2$$\mathrm{H}_2$) |
 | Mass loss | Mass decrease vs time | Reactions producing gas from a solid in an open vessel |
 | Colorimetry | Absorbance vs time | Reactions involving coloured species |
 | Titration | Concentration by quenching | Slow reactions; samples withdrawn and quenched |
 | Conductivity | Conductance vs time | Reactions changing the number or type of ions |
-| Clock reactions | Time to reach a fixed point | Initial rate determination (e.g. iodine clock) |
+| Clock reactions | Time to reach a fixed point | Initial rate determination (e.g. Iodine clock) |
 
 ## Collision Theory
 
@@ -64,7 +64,7 @@ On an **enthalpy profile diagram**, $E_a$ is the difference between the energy o
 At a given temperature, the molecules in a gas have a distribution of kinetic energies described by the Maxwell-Boltzmann distribution:
 
 $$
-f(E) = 2\sqrt◆LB◆\frac{E}{\pi}◆RB◆ \left(\frac{1}{k_BT}\right)^{3/2} e^{-E/k_BT}
+F(E) = 2\sqrt◆LB◆\frac{E}{\pi}◆RB◆ \left(\frac{1}{k_BT}\right)^{3/2} e^{-E/k_BT}
 $$
 
 Key features:
@@ -106,13 +106,13 @@ On the Maxwell-Boltzmann distribution, a catalyst effectively shifts the activat
 
 ## Rate Equations
 
-For a reaction $a\mathrm{A} + b\mathrm{B} \to \mathrm{products}$, the **rate equation** has the form:
+For a reaction $a\mathrm{A} + b\mathrm{B} \to \mathrm{products}$The **rate equation** has the form:
 
 $$
 \mathrm{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n
 $$
 
-where:
+Where:
 - $k$ is the **rate constant** (temperature-dependent)
 - $m$ is the **order of reaction with respect to A**
 - $n$ is the **order of reaction with respect to B**
@@ -131,7 +131,7 @@ The units of $k$ depend on the overall order of reaction:
 | 2 | $\mathrm{Rate} = k[\mathrm{A}]^2$ | $\mathrm{mol^{-1}\,dm^3\,s^{-1}}$ |
 | 3 | $\mathrm{Rate} = k[\mathrm{A}]^3$ | $\mathrm{mol^{-2}\,dm^6\,s^{-1}}$ |
 
-In general: $\mathrm{Units of } k = (\mathrm{mol\,dm^{-3}})^{1-\mathrm{order}} \times \mathrm{s^{-1}}$.
+: $\mathrm{Units of } k = (\mathrm{mol\,dm^{-3}})^{1-\mathrm{order}} \times \mathrm{s^{-1}}$.
 
 ### Integrated Rate Equations
 
@@ -149,7 +149,7 @@ $$
 \ln[\mathrm{A}] = \ln[\mathrm{A}]_0 - kt
 $$
 
-or equivalently:
+Or equivalently:
 
 $$
 [\mathrm{A}] = [\mathrm{A}]_0 e^{-kt}
@@ -160,7 +160,7 @@ A plot of $\ln[\mathrm{A}]$ vs $t$ is linear with gradient $-k$.
 The **half-life** of a first-order reaction is:
 
 $$
-t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac{0.693}{k}
+T_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac{0.693}{k}
 $$
 
 The half-life is constant and independent of initial concentration for first-order reactions.
@@ -194,7 +194,7 @@ Comparing 1 and 3: $[\mathrm{B}]$ doubles, rate quadruples. Order with respect t
 Rate equation: $\mathrm{Rate} = k[\mathrm{A}][\mathrm{B}]^2$. Overall order = 3.
 
 $$
-k = \frac◆LB◆\mathrm{Rate}◆RB◆◆LB◆[\mathrm{A}][\mathrm{B}]^2◆RB◆ = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.10 \times 0.01◆RB◆ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}
+K = \frac◆LB◆\mathrm{Rate}◆RB◆◆LB◆[\mathrm{A}][\mathrm{B}]^2◆RB◆ = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.10 \times 0.01◆RB◆ = 1.2\,\mathrm{mol^{-2}\,dm^6\,s^{-1}}
 $$
 
 ### Continuous Monitoring
@@ -210,10 +210,10 @@ Monitor concentration continuously and plot against time. The shape of the curve
 The rate constant depends on temperature according to the Arrhenius equation:
 
 $$
-k = A e^{-E_a / RT}
+K = A e^{-E_a / RT}
 $$
 
-where:
+Where:
 - $A$ is the **pre-exponential factor** (frequency factor) -- related to the frequency of collisions and the probability of correct orientation
 - $E_a$ is the activation energy ($\mathrm{J/mol}$)
 - $R$ is the gas constant ($8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$)
@@ -267,7 +267,7 @@ Examples:
 - **Haber process:** Iron catalyst; $\mathrm{N}_2$ and $\mathrm{H}_2$ adsorb onto the iron surface, the $\mathrm{N}\equiv\mathrm{N}$ triple bond is weakened, and $\mathrm{NH}_3$ forms and desorbs.
 - **Contact process:** Vanadium(V) oxide ($\mathrm{V}_2\mathrm{O}_5$) catalyses the oxidation of $\mathrm{SO}_2$ to $\mathrm{SO}_3$.
 
-Heterogeneous catalysts can be poisoned by impurities that adsorb strongly to the active sites (e.g. lead in catalytic converters, arsenic in the Contact process).
+Heterogeneous catalysts can be poisoned by impurities that adsorb strongly to the active sites (e.g. Lead in catalytic converters, arsenic in the Contact process).
 
 ### Homogeneous Catalysts
 
@@ -306,7 +306,7 @@ The **rate-determining step** (RDS) is the slowest step in a reaction mechanism.
 
 **Step 2 (fast):** $\mathrm{NO}_3 + \mathrm{CO} \to \mathrm{NO}_2 + \mathrm{CO}_2$
 
-The rate equation depends on the RDS (Step 1): $\mathrm{Rate} = k_1[\mathrm{NO}_2]^2$, consistent with the experimental rate equation. Note that $\mathrm{CO}$ does not appear in the rate equation because it is not involved in the RDS.
+The rate equation depends on the RDS (Step 1): $\mathrm{Rate} = k_1[\mathrm{NO}_2]^2$Consistent with the experimental rate equation. Note that $\mathrm{CO}$ does not appear in the rate equation because it is not involved in the RDS.
 
 If a species appears in the rate equation, it must be involved in or before the rate-determining step. If a reactant does not appear in the rate equation, it must be involved only after the rate-determining step.
 
@@ -362,7 +362,7 @@ $$
 \frac◆LB◆d[\mathrm{NO}_3]◆RB◆◆LB◆dt◆RB◆ = k_1[\mathrm{N}_2\mathrm{O}_5] - k_{-1}[\mathrm{NO}_2][\mathrm{NO}_3] - k_2[\mathrm{NO}_2][\mathrm{NO}_3] - k_3[\mathrm{NO}][\mathrm{NO}_3] = 0
 $$
 
-This leads (after simplification) to a rate equation of the form $\mathrm{Rate} = k_\mathrm{eff}[\mathrm{N}_2\mathrm{O}_5]$, showing that the reaction is experimentally first-order, consistent with observation. The key insight is that the intermediate $\mathrm{NO}_3$ is consumed as fast as it is formed.
+This leads (after simplification) to a rate equation of the form $\mathrm{Rate} = k_\mathrm{eff}[\mathrm{N}_2\mathrm{O}_5]$Showing that the reaction is experimentally first-order, consistent with observation. The key insight is that the intermediate $\mathrm{NO}_3$ is consumed as fast as it is formed.
 
 ### Clock Reactions: The Iodine Clock
 
@@ -388,7 +388,7 @@ $$
 \mathrm{Rate} = \frac◆LB◆n_0 / 2◆RB◆◆LB◆t \times V◆RB◆
 $$
 
-where $t$ is the time for the colour change and $V$ is the total volume. By varying the initial concentrations of $\mathrm{S}_2\mathrm{O}_8^{2-}$ and $\mathrm{I}^-$ while keeping the thiosulphate amount constant, the orders of reaction with respect to each reactant can be determined.
+Where $t$ is the time for the colour change and $V$ is the total volume. By varying the initial concentrations of $\mathrm{S}_2\mathrm{O}_8^{2-}$ and $\mathrm{I}^-$ while keeping the thiosulphate amount constant, the orders of reaction with respect to each reactant can be determined.
 
 **Worked Example.** In an iodine clock experiment, the following data were obtained at constant temperature:
 
@@ -438,13 +438,13 @@ The catalyst increases the rate by a factor of approximately 24,000 at room temp
 
 4. **Assuming catalysts increase yield.** Catalysts increase rate, not yield. The equilibrium position is unchanged.
 
-5. **Plotting errors in Arrhenius plots.** The x-axis must be $1/T$ (in $\mathrm{K}^{-1}$), not $T$ in $^\circ\mathrm{C}$. The gradient is $-E_a/R$, so $E_a = -\mathrm{gradient} \times R$.
+5. **Plotting errors in Arrhenius plots.** The x-axis must be $1/T$ (in $\mathrm{K}^{-1}$), not $T$ in $^\circ\mathrm{C}$. The gradient is $-E_a/R$So $E_a = -\mathrm{gradient} \times R$.
 
 6. **Misapplying the steady-state approximation.** The steady-state approximation applies to reactive intermediates, not to reactants or products. Intermediates are species that appear in the mechanism but not in the overall equation.
 
 7. **Forgetting that clock reactions measure initial rate.** The iodine clock gives the initial rate (the rate at $t = 0$). The thiosulphate amount must be small relative to the reactants for this to be a good approximation.
 
-8. **Confusing zero-order and first-order half-life behaviour.** For a first-order reaction, $t_{1/2}$ is constant (independent of $[\mathrm{A}]_0$). For a zero-order reaction, $t_{1/2} = [\mathrm{A}]_0 / (2k)$, which depends on the initial concentration. This is a key experimental distinction.
+8. **Confusing zero-order and first-order half-life behaviour.** For a first-order reaction, $t_{1/2}$ is constant (independent of $[\mathrm{A}]_0$). For a zero-order reaction, $t_{1/2} = [\mathrm{A}]_0 / (2k)$Which depends on the initial concentration. This is a key experimental distinction.
 
 9. **Using the wrong rate expression for gas-phase reactions.** For gas reactions, rate can be expressed in terms of concentration change or pressure change. If the question asks for rate in terms of pressure, use partial pressures (consistent with $K_p$).
 
@@ -486,7 +486,7 @@ Only collisions satisfying both criteria lead to reaction. The rate is proportio
 The fraction is given by the Boltzmann factor:
 
 $$
-f = e^{-E_a/RT}
+F = e^{-E_a/RT}
 $$
 
 **Worked Example.** Calculate the fraction of molecules with energy exceeding $E_a = 50\,\mathrm{kJ/mol}$ at $298\,\mathrm{K}$ and at $400\,\mathrm{K}$.
@@ -494,13 +494,13 @@ $$
 At $298\,\mathrm{K}$:
 
 $$
-f = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-20.17) = 1.7 \times 10^{-9}
+F = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-20.17) = 1.7 \times 10^{-9}
 $$
 
 At $400\,\mathrm{K}$:
 
 $$
-f = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 400◆RB◆\right) = \exp(-15.03) = 3.2 \times 10^{-7}
+F = \exp\left(\frac◆LB◆-50000◆RB◆◆LB◆8.314 \times 400◆RB◆\right) = \exp(-15.03) = 3.2 \times 10^{-7}
 $$
 
 Increasing the temperature from $298\,\mathrm{K}$ to $400\,\mathrm{K}$ increases the fraction of reactive molecules by a factor of approximately 190, even though the temperature increased by only 34\%. This exponential temperature dependence explains why small temperature changes can have large effects on reaction rate.
@@ -510,10 +510,10 @@ Increasing the temperature from $298\,\mathrm{K}$ to $400\,\mathrm{K}$ increases
 Enzymes are biological catalysts (proteins) that follow Michaelis-Menten kinetics:
 
 $$
-v = \frac◆LB◆V_{\max}[S]◆RB◆◆LB◆K_m + [S]◆RB◆
+V = \frac◆LB◆V_{\max}[S]◆RB◆◆LB◆K_m + [S]◆RB◆
 $$
 
-where $V_{\max}$ is the maximum rate (when all enzyme active sites are occupied), $[S]$ is the substrate concentration, and $K_m$ is the Michaelis constant (substrate concentration at half $V_{\max}$).
+Where $V_{\max}$ is the maximum rate (when all enzyme active sites are occupied), $[S]$ is the substrate concentration, and $K_m$ is the Michaelis constant (substrate concentration at half $V_{\max}$).
 
 - At low $[S] \ll K_m$: $v \approx \frac◆LB◆V_{\max}◆RB◆◆LB◆K_m◆RB◆[S]$ -- rate is approximately first-order in $[S]$.
 - At high $[S] \gg K_m$: $v \approx V_{\max}$ -- rate is approximately zero-order in $[S]$ (enzyme is saturated).
@@ -571,9 +571,9 @@ The hydrolysis of a halogenoalkane $\mathrm{R-X}$ was monitored by measuring con
 
 The conductivity at $t = \infty$ (complete reaction) is $64.0$. The conductivity is proportional to the concentration of product.
 
-$[\mathrm{P}] \propto (\kappa_t - \kappa_0) = (\kappa_t - 12.0)$, and $[\mathrm{R-X}] \propto (\kappa_\infty - \kappa_t) = (64.0 - \kappa_t)$.
+$[\mathrm{P}] \propto (\kappa_t - \kappa_0) = (\kappa_t - 12.0)$And $[\mathrm{R-X}] \propto (\kappa_\infty - \kappa_t) = (64.0 - \kappa_t)$.
 
-| Time (s) | $[\mathrm{R-X}]$ (arb. units) | $\ln[\mathrm{R-X}]$ | $1/[\mathrm{R-X}]$ |
+| Time (s) | $[\mathrm{R-X}]$ (arb. Units) | $\ln[\mathrm{R-X}]$ | $1/[\mathrm{R-X}]$ |
 |---|---|---|---|
 | 0 | 52.0 | 3.951 | 0.0192 |
 | 60 | 38.2 | 3.643 | 0.0262 |
@@ -581,7 +581,7 @@ $[\mathrm{P}] \propto (\kappa_t - \kappa_0) = (\kappa_t - 12.0)$, and $[\mathrm{
 | 180 | 19.8 | 2.986 | 0.0505 |
 | 240 | 14.2 | 2.653 | 0.0704 |
 
-Plotting $\ln[\mathrm{R-X}]$ vs $t$: the points (0, 3.951), (60, 3.643), (120, 3.318), (180, 2.986), (240, 2.653) give an approximately straight line. The gradient is approximately $-0.0054\,\mathrm{s}^{-1}$, so $k \approx 0.0054\,\mathrm{s}^{-1}$ and the reaction is first-order with respect to $\mathrm{R-X}$.
+Plotting $\ln[\mathrm{R-X}]$ vs $t$: the points (0, 3.951), (60, 3.643), (120, 3.318), (180, 2.986), (240, 2.653) give an approximately straight line. The gradient is approximately $-0.0054\,\mathrm{s}^{-1}$So $k \approx 0.0054\,\mathrm{s}^{-1}$ and the reaction is first-order with respect to $\mathrm{R-X}$.
 
 ## Practice Problems
 
@@ -598,7 +598,7 @@ Step 1 (slow, RDS): $\mathrm{A} + \mathrm{B} \to \mathrm{X}$ (intermediate)
 
 Step 2 (fast): $\mathrm{X} + \mathrm{B} \to \mathrm{C}$
 
-Rate equation: $\mathrm{Rate} = k_1[\mathrm{A}][\mathrm{B}]$, which matches.
+Rate equation: $\mathrm{Rate} = k_1[\mathrm{A}][\mathrm{B}]$Which matches.
 
 </details>
 
@@ -610,7 +610,7 @@ A first-order reaction has a half-life of 120 s. Calculate the rate constant and
 **Solution:**
 
 $$
-k = \frac{0.693}{t_{1/2}} = \frac{0.693}{120} = 5.775 \times 10^{-3}\,\mathrm{s^{-1}}
+K = \frac{0.693}{t_{1/2}} = \frac{0.693}{120} = 5.775 \times 10^{-3}\,\mathrm{s^{-1}}
 $$
 
 For 90% consumption: $[\mathrm{A}] = 0.10[\mathrm{A}]_0$.
@@ -628,7 +628,7 @@ $$
 $$
 
 $$
-t = \frac◆LB◆2.303◆RB◆◆LB◆5.775 \times 10^{-3}◆RB◆ = 399\,\mathrm{s}
+T = \frac◆LB◆2.303◆RB◆◆LB◆5.775 \times 10^{-3}◆RB◆ = 399\,\mathrm{s}
 $$
 
 </details>
@@ -660,7 +660,7 @@ Comparing experiments 1 and 3 (A constant, B doubled): rate quadruples. Order wi
 Using experiment 1: $1.2 \times 10^{-3} = k(0.10)(0.10)^2 = k(0.001)$
 
 $$
-k = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.001◆RB◆ = 1.2\,\mathrm{dm}^6\,\mathrm{mol}^{-2}\,\mathrm{s}^{-1}
+K = \frac◆LB◆1.2 \times 10^{-3}◆RB◆◆LB◆0.001◆RB◆ = 1.2\,\mathrm{dm}^6\,\mathrm{mol}^{-2}\,\mathrm{s}^{-1}
 $$
 
 (c) $\text{rate} = 1.2 \times 0.15 \times (0.25)^2 = 1.2 \times 0.15 \times 0.0625 = 0.01125\,\mathrm{mol\,dm^{-3}\,s^{-1}} = 1.1 \times 10^{-2}\,\mathrm{mol\,dm^{-3}\,s^{-1}}$
@@ -752,7 +752,7 @@ Applying the steady-state approximation to the intermediates $\mathrm{NO}_2$ and
 
 $$\text{Rate} = k[\mathrm{N}_2\mathrm{O}_5]$$
 
-This is first-order with respect to $\mathrm{N}_2\mathrm{O}_5$, consistent with experimental observation.
+This is first-order with respect to $\mathrm{N}_2\mathrm{O}_5$Consistent with experimental observation.
 
 ### Catalysis in Detail
 
@@ -794,7 +794,7 @@ $$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = \frac{0.693}{k}$$
 
 ### Arrhenius Applications: Catalyst Effect on Activation Energy
 
-**Worked Example:** A reaction has $E_a = 75\,\mathrm{kJ/mol}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol}$ with a catalyst. Calculate the ratio of rate constants at $298\,\mathrm{K}$, assuming the pre-exponential factor $A$ is unchanged.
+**Worked Example:** A reaction has $E_a = 75\,\mathrm{kJ/mol}$ without a catalyst and $E_a = 50\,\mathrm{kJ/mol}$ with a catalyst. Calculate the ratio of rate constants at $298\,\mathrm{K}$Assuming the pre-exponential factor $A$ is unchanged.
 
 $$\frac◆LB◆k_\text{cat}◆RB◆◆LB◆k_\text{uncat}◆RB◆ = \frac◆LB◆Ae^{-E_{a,\text{cat}}/RT}◆RB◆◆LB◆Ae^{-E_{a,\text{uncat}}/RT}◆RB◆ = e^{(E_{a,\text{uncat}} - E_{a,\text{cat}})/RT}$$
 
@@ -873,7 +873,7 @@ $k = \frac{0.694}{120} = 5.78 \times 10^{-3}\,\mathrm{s}^{-1}$ (1 mark for equat
 
 (c) $0.025\,\mathrm{mol\,dm^{-3} = 0.200 \times \left(\frac{1}{2}\right)^n$ where $n$ is the number of half-lives.
 
-$\frac{0.025}{0.200} = 0.125 = \left(\frac{1}{2}\right)^3$, so $n = 3$ half-lives.
+$\frac{0.025}{0.200} = 0.125 = \left(\frac{1}{2}\right)^3$So $n = 3$ half-lives.
 
 $t = 3 \times 120 = 360\,\mathrm{s}$ (2 marks.)
 
@@ -889,3 +889,11 @@ Ready to test your understanding of **Chemical Kinetics**? The [diagnostic test]
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

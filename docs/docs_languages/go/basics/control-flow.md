@@ -11,7 +11,7 @@ categories:
 ## If / Else
 
 Go's `if` statements do not require parentheses but do require braces. The condition can include an
-initialization statement.
+Initialization statement.
 
 ```go
 if x > 0 {
@@ -36,7 +36,7 @@ if err := doSomething(); err != nil {
 ```
 
 This keeps the variable scoped to where it is needed and avoids polluting the enclosing function
-scope.
+Scope.
 
 ### Idiomatic Error Check
 
@@ -55,7 +55,7 @@ The `else` is on the same line as the closing brace of the `if` block. This is e
 ## Switch
 
 Go's `switch` is more flexible than C's. Cases break automatically -- no `fallthrough` unless
-explicitly requested.
+Explicitly requested.
 
 ```go
 switch os := runtime.GOOS; os {
@@ -71,7 +71,7 @@ default:
 ### Switch with No Condition
 
 A `switch` with no condition is equivalent to `switch true`. This is an idiomatic replacement for
-long `if-else` chains:
+Long `if-else` chains:
 
 ```go
 switch {
@@ -124,7 +124,7 @@ case 4:
 
 ## For Loops
 
-Go has exactly one looping construct: `for`. There is no `while`, no `do-while`, no `loop`.
+Go has exactly one looping construct: `for`. There is no `while`No `do-while`No `loop`.
 
 ### Classic For
 
@@ -215,7 +215,7 @@ for v := range ch {
 ### Range Semantics
 
 `range` copies the value for each iteration. For slices and arrays of pointers or structs, this
-means you get a copy of the element, not a reference:
+Means you get a copy of the element, not a reference:
 
 ```go
 items := []struct{ X int }{{1}, {2}, {3}}
@@ -246,8 +246,8 @@ for _, p := range items {
 
 ## Break and Continue
 
-`break` exits the innermost `for`, `switch`, or `select`. `continue` skips to the next iteration of
-the innermost `for` loop.
+`break` exits the innermost `for``switch`Or `select`. `continue` skips to the next iteration of
+The innermost `for` loop.
 
 ### Labeled Break
 
@@ -288,7 +288,7 @@ for i := 0; i < 3; i++ {
 ## Goto
 
 Go supports `goto` with restrictions. The label must be defined in the same function, and `goto`
-cannot jump over variable declarations or into inner blocks.
+Cannot jump over variable declarations or into inner blocks.
 
 ```go
 func process(items []int) {
@@ -305,12 +305,12 @@ invalid:
 }
 ```
 
-`goto` is rarely used in idiomatic Go. Prefer structured control flow (`for`, `if`, functions).
+`goto` is rarely used in idiomatic Go. Prefer structured control flow (`for``if`Functions).
 
 ## Defer
 
 `defer` schedules a function call to run when the surrounding function returns. Arguments are
-evaluated immediately, but the function call is deferred.
+Evaluated immediately, but the function call is deferred.
 
 ```go
 func readConfig(path string) ([]byte, error) {
@@ -356,15 +356,15 @@ fmt.Println(double(5)) // 10
 ```
 
 This works because `return` first assigns the value to the named return variable, then deferred
-functions execute.
+Functions execute.
 
 ## Common Pitfalls
 
 1. **Forgetting that `switch` cases break automatically.** Unlike C, Go does not fall through by
-   default. This is a feature, not a bug, but surprises C programmers.
+ default. This is a feature, not a bug, but surprises C programmers.
 
 2. **Modifying loop variable captures in closures.** The loop variable is reused across iterations.
-   Capturing it in a closure captures the same variable:
+ Capturing it in a closure captures the same variable:
 
    ```go
    for _, v := range values {
@@ -374,14 +374,22 @@ functions execute.
    }
    ```
 
-   Fix: pass as an argument `go func(val int) { ... }(v)`.
+ Fix: pass as an argument `go func(val int) { ... }(v)`.
 
 3. **Using `defer` in a loop.** Each `defer` in a loop accumulates until the function returns. For
-   large loops, this can exhaust memory. Use an immediately-invoked function or call the cleanup
-   directly.
+ large loops, this can exhaust memory. Use an immediately-invoked function or call the cleanup
+ directly.
 
 4. **Range over `nil` map/slice is safe.** `for range nil` does nothing -- it does not panic. This
-   is by design.
+ is by design.
 
 5. **Range copies values.** Modifying the range variable does not modify the original element. Use
-   index-based access for mutations.
+ index-based access for mutations.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

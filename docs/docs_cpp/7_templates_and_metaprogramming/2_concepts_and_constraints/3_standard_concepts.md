@@ -11,61 +11,61 @@ slug: standard-library-concepts
 # Standard Library Concepts
 
 The `<concepts>` header [N4950 §18.4] provides a comprehensive set of predefined concepts that serve
-as building blocks for user-defined constraints. These concepts cover core language relationships,
-comparisons, object properties, callable requirements, type categories, and iterator hierarchies.
+As building blocks for user-defined constraints. These concepts cover core language relationships,
+Comparisons, object properties, callable requirements, type categories, and iterator hierarchies.
 Using standard library concepts instead of ad-hoc constraints ensures interoperability and correct
-subsumption ordering.
+Subsumption ordering.
 
 ## The `<concepts>` Header
 
 ### Core Language Concepts
 
-| Concept                            | Description                                         |
+| Concept | Description |
 | ---------------------------------- | --------------------------------------------------- |
-| `std::same_as<T, U>`               | `T` and `U` are the same type [§18.4.2]             |
-| `std::derived_from<D, B>`          | `D` is derived from `B` [§18.4.2]                   |
-| `std::convertible_to<From, To>`    | `From` is implicitly convertible to `To` [§18.4.2]  |
+| `std::same_as<T, U>` | `T` and `U` are the same type [§18.4.2] |
+| `std::derived_from<D, B>` | `D` is derived from `B` [§18.4.2] |
+| `std::convertible_to<From, To>` | `From` is implicitly convertible to `To` [§18.4.2] |
 | `std::common_reference_with<T, U>` | `T` and `U` share a common reference type [§18.4.2] |
-| `std::common_with<T, U>`           | `T` and `U` share a common type [§18.4.2]           |
+| `std::common_with<T, U>` | `T` and `U` share a common type [§18.4.2] |
 
 ### Comparison Concepts
 
-| Concept                        | Description                                      |
+| Concept | Description |
 | ------------------------------ | ------------------------------------------------ |
-| `std::equality_comparable<T>`  | `==` is an equivalence relation on `T` [§18.4.5] |
-| `std::totally_ordered<T>`      | `<` defines a total order on `T` [§18.4.5]       |
-| `std::three_way_comparable<T>` | `<=>` is defined for `T` (C++20) [§18.4.5]       |
+| `std::equality_comparable<T>` | `==` is an equivalence relation on `T` [§18.4.5] |
+| `std::totally_ordered<T>` | `<` defines a total order on `T` [§18.4.5] |
+| `std::three_way_comparable<T>` | `<=>` is defined for `T` (C++20) [§18.4.5] |
 
 ### Object Concepts
 
-| Concept               | Description                                                                                |
+| Concept | Description |
 | --------------------- | ------------------------------------------------------------------------------------------ |
-| `std::copyable<T>`    | `T` is copyable (copy constructible + copy assignable + destructible) [§18.4.6]            |
-| `std::movable<T>`     | `T` is movable (move constructible + move assignable + destructible + swappable) [§18.4.6] |
-| `std::regular<T>`     | `T` is copyable, default-constructible, and equality-comparable [§18.4.6]                  |
-| `std::semiregular<T>` | `T` is copyable and default-constructible [§18.4.6]                                        |
+| `std::copyable<T>` | `T` is copyable (copy constructible + copy assignable + destructible) [§18.4.6] |
+| `std::movable<T>` | `T` is movable (move constructible + move assignable + destructible + swappable) [§18.4.6] |
+| `std::regular<T>` | `T` is copyable, default-constructible, and equality-comparable [§18.4.6] |
+| `std::semiregular<T>` | `T` is copyable and default-constructible [§18.4.6] |
 
 ### Callable Concepts
 
-| Concept                      | Description                                                     |
+| Concept | Description |
 | ---------------------------- | --------------------------------------------------------------- |
-| `std::invocable<F, Args...>` | `F` can be invoked with `Args...` [§18.4.8]                     |
+| `std::invocable<F, Args...>` | `F` can be invoked with `Args...` [§18.4.8] |
 | `std::predicate<F, Args...>` | `F` invoked with `Args...` returns `bool`-convertible [§18.4.8] |
-| `std::relation<R, T, U>`     | `R` defines an equivalence relation on `T` and `U` [§18.4.8]    |
+| `std::relation<R, T, U>` | `R` defines an equivalence relation on `T` and `U` [§18.4.8] |
 
 ### Type Categories
 
-| Concept                     | Description                                |
+| Concept | Description |
 | --------------------------- | ------------------------------------------ |
-| `std::integral<T>`          | `T` is an integral type [§18.4.3]          |
-| `std::signed_integral<T>`   | `T` is a signed integral type [§18.4.3]    |
+| `std::integral<T>` | `T` is an integral type [§18.4.3] |
+| `std::signed_integral<T>` | `T` is a signed integral type [§18.4.3] |
 | `std::unsigned_integral<T>` | `T` is an unsigned integral type [§18.4.3] |
-| `std::floating_point<T>`    | `T` is a floating-point type [§18.4.3]     |
+| `std::floating_point<T>` | `T` is a floating-point type [§18.4.3] |
 
 :::info
 `std::regular` and `std::semiregular` The concept `std::regular<T>` [N4950 §18.4.6] models
-types that behave like built-in values: they can be copied, default-constructed, and compared for
-equality. `int`, `double`, and `std::string` are all `std::regular`. `std::unique_ptr` is
+Types that behave like built-in values: they can be copied, default-constructed, and compared for
+Equality. `int``double`And `std::string` are all `std::regular`. `std::unique_ptr` is
 `std::movable` but not `std::regular` (not copyable). `std::mutex` is neither `std::movable` nor
 `std::copyable`. These concepts are the vocabulary types of generic programming.
 :::
@@ -113,8 +113,8 @@ This means private inheritance is correctly rejected by `std::derived_from` but 
 ## Understanding `std::convertible_to` vs `std::is_convertible`
 
 `std::convertible_to<From, To>` [N4950 §18.4.2] requires that `From` is both implicitly and
-explicitly convertible to `To`. The explicit conversion requirement means that types with only
-implicit conversion (but not explicit construction) are handled correctly:
+Explicitly convertible to `To`. The explicit conversion requirement means that types with only
+Implicit conversion (but not explicit construction) are handled correctly:
 
 ```cpp
 #include <iostream>
@@ -150,7 +150,7 @@ int main() {
 ```
 
 `std::is_convertible` only checks implicit conversion. `std::convertible_to` also checks explicit
-conversion (via `static_cast<To>(declval<From>())`), making it more permissive.
+Conversion (via `static_cast<To>(declval<From>())`), making it more permissive.
 
 ## Iterator Concepts
 
@@ -160,13 +160,13 @@ $$
 \mathrm{input\_iterator{} \prec \mathrm{forward\_iterator{} \prec \mathrm{bidirectional\_iterator{} \prec \mathrm{random\_access\_iterator{} \prec \mathrm{contiguous\_iterator{}
 $$
 
-| Concept                       | Key Requirements                                                                       |
+| Concept | Key Requirements |
 | ----------------------------- | -------------------------------------------------------------------------------------- |
-| `std::input_iterator`         | Can be dereferenced, pre/post-incremented, and compared to a sentinel [§18.4.4]        |
-| `std::forward_iterator`       | Input iterator + multi-pass guarantee (equality-preserving increment) [§18.4.4]        |
-| `std::bidirectional_iterator` | Forward iterator + decrementable [§18.4.4]                                             |
-| `std::random_access_iterator` | Bidirectional iterator + constant-time advancement with `+`, `-`, `+=`, `-=` [§18.4.4] |
-| `std::contiguous_iterator`    | Random access iterator + elements are stored contiguously in memory [§18.4.4]          |
+| `std::input_iterator` | Can be dereferenced, pre/post-incremented, and compared to a sentinel [§18.4.4] |
+| `std::forward_iterator` | Input iterator + multi-pass guarantee (equality-preserving increment) [§18.4.4] |
+| `std::bidirectional_iterator` | Forward iterator + decrementable [§18.4.4] |
+| `std::random_access_iterator` | Bidirectional iterator + constant-time advancement with `+``-``+=``-=` [§18.4.4] |
+| `std::contiguous_iterator` | Random access iterator + elements are stored contiguously in memory [§18.4.4] |
 
 Additionally, `std::output_iterator` is a separate concept for write-only iterators.
 
@@ -209,16 +209,16 @@ input_iterator -> forward -> bidirectional -> random_access -> contiguous
 
 C++20 also provides sentinel concepts for range-based iteration:
 
-| Concept                         | Description                                               |
+| Concept | Description |
 | ------------------------------- | --------------------------------------------------------- |
-| `std::sentinel_for<S, I>`       | `S` is a sentinel for iterator `I` (comparable with `==`) |
-| `std::sized_sentinel_for<S, I>` | `S` supports subtraction with `I` to get a difference     |
+| `std::sentinel_for<S, I>` | `S` is a sentinel for iterator `I` (comparable with `==`) |
+| `std::sized_sentinel_for<S, I>` | `S` supports subtraction with `I` to get a difference |
 
 ## Code Example: `std::totally_ordered` for Custom Types
 
-The `std::totally_ordered` concept [N4950 §18.4.5] requires that `<`, `>`, `<=`, `>=` all define a
-total order on the type. The easiest way to satisfy this concept is to define `operator<=>` (the
-spaceship operator, C++20) [N4950 §7.6.8]:
+The `std::totally_ordered` concept [N4950 §18.4.5] requires that `<``>``<=``>=` all define a
+Total order on the type. The easiest way to satisfy this concept is to define `operator<=>` (the
+Spaceship operator, C++20) [N4950 §7.6.8]:
 
 ```cpp
 #include <concepts>
@@ -272,18 +272,18 @@ true
 ```
 
 The default `operator<=>` performs lexicographic comparison on the data members in declaration order
-[N4950 §7.6.8]. Because `int` already supports `<=>`, the compiler generates the full comparison
-operator suite for `Version`, satisfying `std::totally_ordered`.
+[N4950 §7.6.8]. Because `int` already supports `<=>`The compiler generates the full comparison
+Operator suite for `Version`Satisfying `std::totally_ordered`.
 
 ### Three-Way Comparison Categories
 
 The `<=>` operator returns one of three comparison category types [N4950 §18.4.5]:
 
-| Category                | Properties                                          | Example                 |
+| Category | Properties | Example |
 | ----------------------- | --------------------------------------------------- | ----------------------- |
-| `std::strong_ordering`  | Substitutable (a == b implies f(a) == f(b))         | `int`, `std::string`    |
-| `std::weak_ordering`    | Equivalence but not substitutable                   | Case-insensitive string |
-| `std::partial_ordering` | Incomparable values possible (e.g., NaN with float) | `double`                |
+| `std::strong_ordering` | Substitutable (a == b implies f(a) == f(b)) | `int``std::string` |
+| `std::weak_ordering` | Equivalence but not substitutable | Case-insensitive string |
+| `std::partial_ordering` | Incomparable values possible (e.g., NaN with float) | `double` |
 
 ```cpp
 #include <iostream>
@@ -376,26 +376,26 @@ product = 362880
 Using Range Concepts The `std::ranges` namespace provides range versions of many concepts.
 Prefer `std::ranges::range` over manually checking `begin()`/`end()`. Prefer
 `std::ranges::range_value_t<R>` over `typename R::value_type` (it works with proxy iterators). Range
-concepts are defined in `<ranges>` [N4950 §26.2] and compose naturally with the concepts in
+Concepts are defined in `<ranges>` [N4950 §26.2] and compose with the concepts in
 `<concepts>`.
 :::
 
 ## Range Concepts
 
 The `<ranges>` header provides concepts that operate on ranges (pairs of iterators and sentinels)
-rather than individual iterators:
+Rather than individual iterators:
 
-| Concept                               | Description                                             |
+| Concept | Description |
 | ------------------------------------- | ------------------------------------------------------- |
-| `std::ranges::range<R>`               | `R` has `begin()` and `end()`                           |
-| `std::ranges::input_range<R>`         | Range whose iterator satisfies `input_iterator`         |
-| `std::ranges::forward_range<R>`       | Range whose iterator satisfies `forward_iterator`       |
+| `std::ranges::range<R>` | `R` has `begin()` and `end()` |
+| `std::ranges::input_range<R>` | Range whose iterator satisfies `input_iterator` |
+| `std::ranges::forward_range<R>` | Range whose iterator satisfies `forward_iterator` |
 | `std::ranges::bidirectional_range<R>` | Range whose iterator satisfies `bidirectional_iterator` |
 | `std::ranges::random_access_range<R>` | Range whose iterator satisfies `random_access_iterator` |
-| `std::ranges::contiguous_range<R>`    | Range whose iterator satisfies `contiguous_iterator`    |
-| `std::ranges::sized_range<R>`         | Range where `size()` is O(1)                            |
-| `std::ranges::view<R>`                | Range that is a view (cheap to copy/move)               |
-| `std::ranges::borrowed_range<R>`      | Range whose iterators outlive the range object          |
+| `std::ranges::contiguous_range<R>` | Range whose iterator satisfies `contiguous_iterator` |
+| `std::ranges::sized_range<R>` | Range where `size()` is O(1) |
+| `std::ranges::view<R>` | Range that is a view (cheap to copy/move) |
+| `std::ranges::borrowed_range<R>` | Range whose iterators outlive the range object |
 
 ```cpp
 #include <iostream>
@@ -428,8 +428,8 @@ int main() {
 
 `std::invocable<F, Args...>` checks that `F(Args...)` is a valid expression.
 `std::regular_invocable` adds the requirement that the invocation is equality-preserving — calling
-the same function with the same arguments produces the same result. This distinction matters for
-pure functions vs functions with side effects:
+The same function with the same arguments produces the same result. This distinction matters for
+Pure functions vs functions with side effects:
 
 ```cpp
 #include <iostream>
@@ -462,8 +462,8 @@ int main() {
 ### Pitfall 1: `std::integral` Excludes `bool`
 
 `std::integral<T>` does not include `bool` in C++20. This was a design decision because `bool` has
-different semantics (only two values, implicit conversion rules). Use `std::integral<T>` for
-arithmetic types and check for `bool` separately if needed:
+Different semantics (only two values, implicit conversion rules). Use `std::integral<T>` for
+Arithmetic types and check for `bool` separately if needed:
 
 ```cpp
 #include <iostream>
@@ -523,7 +523,7 @@ int main() {
 ### Pitfall 3: Concept Subsumption Order Matters for Overload Resolution
 
 When two overloads are constrained, the more specific constraint should subsume the less specific
-one. If constraints don't properly subsume, overload resolution becomes ambiguous:
+One. If constraints don't properly subsume, overload resolution becomes ambiguous:
 
 ```cpp
 #include <iostream>
@@ -553,3 +553,11 @@ The fix is to place the more specific overload first, since `std::signed_integra
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

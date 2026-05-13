@@ -28,7 +28,7 @@ The World Bank classifies countries by GNI per capita (2023 thresholds): low inc
 
 $$\mathrm{HDI} = \frac{I_{\mathrm{health}} + I_{\mathrm{education}} + I_{\mathrm{income}}}{3}$$
 
-where $I_{\mathrm{health}}$ is measured by life expectancy at birth, $I_{\mathrm{education}}$ is measured by mean years of schooling and expected years of schooling, and $I_{\mathrm{income}}$ is measured by GNI per capita (PPP).
+Where $I_{\mathrm{health}}$ is measured by life expectancy at birth, $I_{\mathrm{education}}$ is measured by mean years of schooling and expected years of schooling, and $I_{\mathrm{income}}$ is measured by GNI per capita (PPP).
 
 HDI scores range from 0 to 1. Countries are classified as: very high HDI ($\geq{0.800}$), high HDI ($0.700$--$0.799$), medium HDI ($0.550$--$0.699$), and low HDI ($\lt{0.550}$). Norway (HDI $0.966$) and Switzerland ($0.962$) consistently rank at the top; South Sudan (HDI $0.385$) and Chad ($0.394$) rank at the bottom.
 
@@ -72,7 +72,7 @@ Walt Whitman Rostow proposed a five-stage linear model of economic development:
 
 1. **Ethnocentric.** The model assumes all countries will follow the Western path, ignoring alternative development trajectories.
 2. **Ignores structural inequalities.** The model does not account for the role of colonialism, unequal trade relationships, or global power structures in constraining development.
-3. **Assumes a "trickle-down" effect.** Rostow assumed that economic growth would eventually benefit all members of society, but in many cases growth has been concentrated among elites while poverty persists.
+3. **Assumes a "trickle-down" effect.** Rostow assumed that economic growth would eventually benefit all members of society, but growth has been concentrated among elites while poverty persists.
 4. **Linear and deterministic.** The model implies that all countries will inevitably reach Stage 5, which is not guaranteed.
 
 ### Frank's Dependency Theory (1966)
@@ -139,7 +139,7 @@ Wallerstein argued that the positions of countries within the world system are n
 
 ### Foreign Direct Investment (FDI)
 
-FDI refers to investment by a firm or individual in one country into business interests in another country, typically involving the establishment of operations or acquisition of assets. FDI is a major source of capital for developing countries: global FDI flows exceeded US$1.3 trillion in 2022.
+FDI refers to investment by a firm or individual in one country into business interests in another country, involving the establishment of operations or acquisition of assets. FDI is a major source of capital for developing countries: global FDI flows exceeded US$1.3 trillion in 2022.
 
 **Benefits of FDI:** capital inflows, technology transfer, employment creation, access to export markets, productivity spillovers to domestic firms.
 
@@ -237,7 +237,7 @@ Examples include: treadle pumps for irrigation (Bangladesh), solar-powered lante
 
 ### Microfinance
 
-Microfinance provides small loans (typically $50--$500), savings accounts, and insurance to low-income individuals who lack access to conventional banking. The Grameen Bank, founded by Muhammad Yunus in Bangladesh in 1983, is the most prominent example.
+Microfinance provides small loans ( $50--$500), savings accounts, and insurance to low-income individuals who lack access to conventional banking. The Grameen Bank, founded by Muhammad Yunus in Bangladesh in 1983, is the most prominent example.
 
 **Effectiveness.** Randomised controlled trials have produced mixed evidence. A landmark study by Banerjee et al. (2015) in six countries found that microfinance had positive but modest effects on business activity and household expenditure but did not significantly increase income or empower women. Microfinance has also been criticised for high interest rates (effective annual rates of 20--40% are common) and for contributing to over-indebtedness among vulnerable borrowers (as in the Andhra Pradesh crisis in India in 2010).
 
@@ -275,3 +275,15 @@ India's information technology (IT) sector illustrates how a developing country 
 Economic growth (an increase in GDP or GNI) is necessary but not sufficient for development. A country can experience rapid economic growth while making little progress on social indicators (e.g., Equatorial Guinea, which has high GDP per capita but low HDI). Development encompasses improvements in health, education, political freedom, gender equality, and environmental quality, not just income. Always distinguish between growth and development and use composite indicators (HDI, MPI) alongside economic measures.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

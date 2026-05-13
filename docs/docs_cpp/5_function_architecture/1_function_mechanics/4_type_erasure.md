@@ -17,7 +17,7 @@ This section covers the progression from raw function pointers to `std::function
 ## 4.1 Function Pointers
 
 A function pointer is the most primitive type-erased callable. It stores the address of a free
-function or a `static` member function. It has zero overhead beyond the pointer indirection itself.
+Function or a `static` member function. It has zero overhead beyond the pointer indirection itself.
 
 ```cpp
 #include <cstdio>
@@ -46,13 +46,13 @@ int main() {
 ```
 
 **Limitations**: Function pointers cannot capture state. They cannot point to non-static member
-functions (those require a `this` pointer), and they cannot point to lambdas that capture anything
+Functions (those require a `this` pointer), and they cannot point to lambdas that capture anything
 (the closure type is not convertible to a function pointer unless the lambda is stateless).
 
 ### Stateless Lambda to Function Pointer Conversion
 
 A stateless lambda (no captures) is implicitly convertible to a function pointer with the same
-signature:
+Signature:
 
 ```cpp
 #include <cstdio>
@@ -72,13 +72,13 @@ int main() {
 ```
 
 This is the one case where a lambda and a function pointer intersect. The closure type for a
-stateless lambda has no non-static data members, so its size is 1 byte (the minimum object size in
+Stateless lambda has no non-static data members, so its size is 1 byte (the minimum object size in
 C++), and it is convertible to a function pointer pointing to its `operator()`.
 
 ## 4.2 `std::function<R(Args...)>` [N4950 §22.10]
 
 `std::function` is a polymorphic callable wrapper that can store, copy, and invoke any callable with
-a compatible signature.
+A compatible signature.
 
 ```cpp
 #include <functional>
@@ -138,13 +138,13 @@ int main() {
 ```
 
 Always check `if (f)` before invoking a `std::function` that may be empty, or initialize it with a
-default callable.
+Default callable.
 
 ## 4.3 Small Buffer Optimization (SBO)
 
-`std::function` typically allocates a small internal buffer (implementation-defined, commonly 16–24
-bytes on x86-64). If the stored callable fits within this buffer, no heap allocation occurs. This is
-the **Small Buffer Optimization**.
+`std::function` allocates a small internal buffer (implementation-defined, commonly 16–24
+Bytes on x86-64). If the stored callable fits within this buffer, no heap allocation occurs. This is
+The **Small Buffer Optimization**.
 
 ```cpp
 #include <functional>
@@ -174,23 +174,23 @@ int main() {
 ```
 
 :::warning
-The SBO threshold varies between standard library implementations. libstdc++ (GCC) uses
-16 bytes. libc++ (Clang) uses 24 bytes (on 64-bit). If avoiding heap allocation is critical, prefer
-passing lambdas as template parameters or using auto.
+The SBO threshold varies between standard library implementations. Libstdc++ (GCC) uses
+16 bytes. Libc++ (Clang) uses 24 bytes (on 64-bit). If avoiding heap allocation is critical, prefer
+Passing lambdas as template parameters or using auto.
 :::
 
 ### SBO Threshold Across Implementations
 
-| Implementation  | SBO Size | Notes                               |
+| Implementation | SBO Size | Notes |
 | :-------------- | :------- | :---------------------------------- |
-| libstdc++ (GCC) | 16 bytes | Fits two pointers + small captures  |
-| libc++ (Clang)  | 24 bytes | Three pointers + larger captures    |
-| MSVC STL        | 16 bytes | Consistent with libstdc++ on x86-64 |
+| libstdc++ (GCC) | 16 bytes | Fits two pointers + small captures |
+| libc++ (Clang) | 24 bytes | Three pointers + larger captures |
+| MSVC STL | 16 bytes | Consistent with libstdc++ on x86-64 |
 
 ### Detecting SBO at Compile Time
 
 There is no standard way to query the SBO threshold. You can empirically determine it by checking
-whether `operator new` is called during construction:
+Whether `operator new` is called during construction:
 
 ```cpp
 #include <functional>
@@ -225,8 +225,8 @@ int main() {
 ## 4.4 `std::move_only_function` (C++23) [N4950 §22.10.17]
 
 `std::function` requires its stored callable to be copyable. This is a problem for callables that
-own move-only resources (e.g., `std::unique_ptr`, file handles). C++23 introduces
-`std::move_only_function<R(Args...)>`, which is a move-only callable wrapper.
+Own move-only resources (e.g., `std::unique_ptr`File handles). C++23 introduces
+`std::move_only_function<R(Args...)>`Which is a move-only callable wrapper.
 
 ```cpp
 #include <functional>
@@ -269,8 +269,8 @@ int main() {
 
 :::info
 Relevance `std::move_only_function` is critical for callback-based APIs where the callback
-owns exclusive resources (file handles, network connections, GPU buffers). It enables zero-overhead
-move semantics where `std::function` would force a costly shared_ptr wrapping.
+Owns exclusive resources (file handles, network connections, GPU buffers). It enables zero-overhead
+Move semantics where `std::function` would force a costly shared_ptr wrapping.
 :::
 
 ### `std::move_only_function` with `noexcept` Qualification
@@ -293,7 +293,7 @@ int main() {
 ```
 
 This allows APIs to statically enforce that callbacks do not throw, which is critical for
-destructors, signal handlers, and real-time systems.
+Destructors, signal handlers, and real-time systems.
 
 ## 4.5 Overhead Comparison
 
@@ -334,8 +334,8 @@ int main() {
 ## 4.6 Member Function Pointers
 
 A **member function pointer** (MFP) is a distinct type from a regular function pointer. It stores
-enough information to call a member function on an object, but its internal representation varies
-significantly between compilers and ABIs.
+Enough information to call a member function on an object, but its internal representation varies
+Significantly between compilers and ABIs.
 
 ```cpp
 #include <cstdio>
@@ -385,25 +385,25 @@ int main() {
 ### Member Function Pointer Size and ABI
 
 The size of a member function pointer is **not standardized**. The Itanium C++ ABI (Linux, macOS)
-uses the following representation:
+Uses the following representation:
 
-| Scenario                        | Size        | Contents                                           |
+| Scenario | Size | Contents |
 | :------------------------------ | :---------- | :------------------------------------------------- |
-| Single inheritance, non-virtual | 8 bytes     | Function pointer only                              |
-| Multiple inheritance            | 16 bytes    | Function pointer + this-adjustment offset          |
-| Virtual inheritance             | 16-24 bytes | Function pointer + vtable offset + this-adjustment |
+| Single inheritance, non-virtual | 8 bytes | Function pointer only |
+| Multiple inheritance | 16 bytes | Function pointer + this-adjustment offset |
+| Virtual inheritance | 16-24 bytes | Function pointer + vtable offset + this-adjustment |
 
 On the MSVC ABI (Windows), member function pointers use a uniform representation that is always 16
-bytes (or larger for virtual inheritance), regardless of the inheritance model.
+Bytes (or larger for virtual inheritance), regardless of the inheritance model.
 
 **Implication:** Never store member function pointers in compact data structures (bit fields, packed
-structs) across platforms. Use `std::function` or custom type erasure for portable member function
-dispatch.
+Structs) across platforms. Use `std::function` or custom type erasure for portable member function
+Dispatch.
 
 ## 4.7 `std::invoke` and the INVOKE Protocol
 
 `std::invoke` [N4950 §22.10.4] is the uniform mechanism for invoking any callable with arguments. It
-implements the **INVOKE expression** defined by the C++ Standard:
+Implements the **INVOKE expression** defined by the C++ Standard:
 
 ```cpp
 #include <functional>
@@ -475,7 +475,7 @@ int main() {
 ## 4.8 Implementing a Minimal Type-Erased Callable
 
 Understanding the internal mechanism of `std::function` is valuable for implementing custom
-type-erased wrappers with specific constraints (e.g., fixed-size SBO, custom allocator, move-only).
+Type-erased wrappers with specific constraints (e.g., fixed-size SBO, custom allocator, move-only).
 
 ```cpp
 #include <cstddef>
@@ -588,14 +588,14 @@ int main() {
 ```
 
 This implementation demonstrates the core technique: function pointers stored alongside a buffer
-that holds the concrete callable. The function pointers encode the type-specific behavior (invoke,
-move, destroy) while the buffer provides type-erased storage.
+That holds the concrete callable. The function pointers encode the type-specific behavior (invoke,
+Move, destroy) while the buffer provides type-erased storage.
 
 ## 4.9 Non-Owning Function References
 
 For callback interfaces where the callable's lifetime is guaranteed to outlive the reference, a
-non-owning type-erased wrapper avoids both the heap allocation of `std::function` and the
-copyability requirement:
+Non-owning type-erased wrapper avoids both the heap allocation of `std::function` and the
+Copyability requirement:
 
 ```cpp
 #include <cstdio>
@@ -640,15 +640,15 @@ int main() {
 ```
 
 `FunctionRef` is 16 bytes (two pointers) on x86-64, has no heap allocation, and the call is indirect
-through a function pointer. The tradeoff: the caller must ensure the referenced callable outlives
-the `FunctionRef`.
+Through a function pointer. The tradeoff: the caller must ensure the referenced callable outlives
+The `FunctionRef`.
 
 ## Common Pitfalls
 
 ### 1. `std::function` Copies the Callable
 
 `std::function` stores a copy of the callable. If the lambda captures by value, each copy is
-independent. If it captures by reference, the references may dangle:
+Independent. If it captures by reference, the references may dangle:
 
 ```cpp
 #include <functional>
@@ -675,8 +675,8 @@ int main() {
 ### 2. Indirect Call Prevents Inlining
 
 `std::function` always performs an indirect call through a function pointer (or vtable). The
-compiler cannot inline the callable's body through `std::function`. If performance is critical and
-the callable type is known at the call site, pass the callable as a template parameter:
+Compiler cannot inline the callable's body through `std::function`. If performance is critical and
+The callable type is known at the call site, pass the callable as a template parameter:
 
 ```cpp
 #include <cstdio>
@@ -696,16 +696,24 @@ int main() {
 ### 3. SBO Threshold is Not Portable
 
 Code that relies on fitting within the SBO threshold of `std::function` may heap-allocate on
-different standard library implementations. If you need a guaranteed zero-allocation callable
-wrapper, implement a custom type-erased wrapper with a known buffer size (as shown in section 4.8)
-or pass lambdas as template parameters.
+Different standard library implementations. If you need a guaranteed zero-allocation callable
+Wrapper, implement a custom type-erased wrapper with a known buffer size (as shown in section 4.8)
+Or pass lambdas as template parameters.
 
 ### 4. `std::move_only_function` Cannot Be Copied into Containers
 
 Standard containers require copyable elements (unless you use move-only containers or
 `std::vector<std::unique_ptr<std::move_only_function<...>>>`). Plan your data structures accordingly
-when using move-only callables.
+When using move-only callables.
 
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -34,7 +34,7 @@ The diameter measurement dominates the uncertainty because of the $d^2$ term.
 
 ---
 ### UT-2: Significant Figures in Calculations
-**Question:** A student records the following data and performs calculations. Identify and correct all significant figure errors: (a) $0.0250 \times 4.00 = 0.1000$, (b) $12.4 / 3.2 = 3.875$, (c) $\log(2.5 \times 10^{-3}) = -2.6021$, (d) The pH is measured as 3.45. Calculate $[\text{H}^+] = 10^{-3.45} = 3.548 \times 10^{-4}$.
+**Question:** A student records the following data and performs calculations. Identify and correct all significant figure errors: (a) $0.0250 \times 4.00 = 0.1000$(b) $12.4 / 3.2 = 3.875$(c) $\log(2.5 \times 10^{-3}) = -2.6021$(d) The pH is measured as 3.45. Calculate $[\text{H}^+] = 10^{-3.45} = 3.548 \times 10^{-4}$.
 
 **Solution:**
 
@@ -44,15 +44,15 @@ The diameter measurement dominates the uncertainty because of the $d^2$ term.
 
 (c) $\log(2.5 \times 10^{-3}) = -2.60$. When taking a logarithm, the number of decimal places in the answer equals the number of significant figures in the original. $2.5 \times 10^{-3}$ has 2 s.f., so the log should have 2 decimal places: $-2.60$ (not $-2.6021$).
 
-(d) $[\text{H}^+] = 10^{-3.45} = 3.5 \times 10^{-4}$. When taking an antilogarithm, the number of significant figures in the answer equals the number of decimal places in the original. pH $= 3.45$ has 2 decimal places, so $[\text{H}^+]$ should have 2 s.f.: $3.5 \times 10^{-4}\ \text{mol dm}^{-3}$ (not $3.548 \times 10^{-4}$).
+(d) $[\text{H}^+] = 10^{-3.45} = 3.5 \times 10^{-4}$. When taking an antilogarithm, the number of significant figures in the answer equals the number of decimal places in the original. PH $= 3.45$ has 2 decimal places, so $[\text{H}^+]$ should have 2 s.f.: $3.5 \times 10^{-4}\ \text{mol dm}^{-3}$ (not $3.548 \times 10^{-4}$).
 
 ---
 ### UT-3: Graphical Analysis and Best-Fit Line
-**Question:** In an experiment to determine the molar mass of an unknown gas, a student measures the mass of gas at different pressures (constant $T$, $V$). The data should follow $m = \frac{PMV}{RT}$. The student plots $m$ vs $P$ and obtains a gradient of $0.0445\ \text{g kPa}^{-1}$. If $V = 250\ \text{cm}^3$ and $T = 298\ \text{K}$, calculate the molar mass. Identify whether the student should force the line through the origin and explain why.
+**Question:** In an experiment to determine the molar mass of an unknown gas, a student measures the mass of gas at different pressures (constant $T$$V$). The data should follow $m = \frac{PMV}{RT}$. The student plots $m$ vs $P$ and obtains a gradient of $0.0445\ \text{g kPa}^{-1}$. If $V = 250\ \text{cm}^3$ and $T = 298\ \text{K}$Calculate the molar mass. Identify whether the student should force the line through the origin and explain why.
 
 **Solution:**
 
-From $m = \frac{MV}{RT} \times P$, the gradient of $m$ vs $P$ is $\frac{MV}{RT}$.
+From $m = \frac{MV}{RT} \times P$The gradient of $m$ vs $P$ is $\frac{MV}{RT}$.
 
 $M = \frac{\text{gradient} \times RT}{V}$
 
@@ -62,18 +62,18 @@ Gradient $= 0.0445\ \text{g kPa}^{-1} = 4.45 \times 10^{-5}\ \text{kg Pa}^{-1}$.
 
 $M = \frac{4.45 \times 10^{-5} \times 8.314 \times 298}{2.50 \times 10^{-4}} = \frac{0.1103}{2.50 \times 10^{-4}} = 441\ \text{g mol}^{-1}$
 
-(Checking: $\text{CO}_2$ is $44\ \text{g mol}^{-1}$, so this is likely $\text{CO}_2$ with a unit issue. Rechecking: gradient should be $0.0445\ \text{g kPa}^{-1}$. Using $R = 8.314\ \text{J K}^{-1}\text{mol}^{-1} = 8.314 \times 10^{-3}\ \text{kJ K}^{-1}\text{mol}^{-1}$ but with pressure in kPa and volume in dm$^3$: $V = 0.250\ \text{dm}^3$.)
+(Checking: $\text{CO}_2$ is $44\ \text{g mol}^{-1}$So this is likely $\text{CO}_2$ with a unit issue. Rechecking: gradient should be $0.0445\ \text{g kPa}^{-1}$. Using $R = 8.314\ \text{J K}^{-1}\text{mol}^{-1} = 8.314 \times 10^{-3}\ \text{kJ K}^{-1}\text{mol}^{-1}$ but with pressure in kPa and volume in dm$^3$: $V = 0.250\ \text{dm}^3$.)
 
 $M = \frac{0.0445 \times 8.314 \times 298}{0.250} = \frac{110.3}{0.250} = 44.1\ \text{g mol}^{-1}$
 
 This gives $\text{CO}_2$ ($M = 44.01\ \text{g mol}^{-1}$), which is correct.
 
-**Origin question:** Yes, the line should be forced through the origin because when $P = 0$, there is no gas in the container, so $m$ must equal $0$. The relationship $m = (MV/RT)P$ has no intercept term. However, in practice, a best-fit line not forced through the origin may reveal systematic error (e.g., the container was not fully evacuated).
+**Origin question:** Yes, the line should be forced through the origin because when $P = 0$There is no gas in the container, so $m$ must equal $0$. The relationship $m = (MV/RT)P$ has no intercept term. However, in practice, a best-fit line not forced through the origin may reveal systematic error (e.g., the container was not fully evacuated).
 
 ## Integration Tests
 
 ### IT-1: Error Analysis in a Titration (with Acids and Bases)
-**Question:** In a titration of $\text{HCl}$ with $\text{NaOH}$, a student uses a burette ($\pm 0.05\ \text{cm}^3$) and a pipette ($\pm 0.05\ \text{cm}^3$). The pipette delivers $25.00\ \text{cm}^3$ of $0.100 \pm 0.001\ \text{mol dm}^{-3}$ HCl. The average titre is $24.85\ \text{cm}^3$. Calculate the concentration of NaOH with its absolute uncertainty. The titre range is $24.80$--$24.90\ \text{cm}^3$.
+**Question:** In a titration of $\text{HCl}$ with $\text{NaOH}$A student uses a burette ($\pm 0.05\ \text{cm}^3$) and a pipette ($\pm 0.05\ \text{cm}^3$). The pipette delivers $25.00\ \text{cm}^3$ of $0.100 \pm 0.001\ \text{mol dm}^{-3}$ HCl. The average titre is $24.85\ \text{cm}^3$. Calculate the concentration of NaOH with its absolute uncertainty. The titre range is $24.80$--$24.90\ \text{cm}^3$.
 
 **Solution:**
 
@@ -101,11 +101,11 @@ The concentration uncertainty is dominated by the uncertainty in the HCl concent
 
 ---
 ### IT-2: Propagation of Uncertainty in Kinetics (with Kinetics)
-**Question:** The Arrhenius equation $\ln k = \ln A - E_a/RT$ is used to determine $E_a$ from a plot of $\ln k$ vs $1/T$. A student obtains a gradient of $-8500\ \text{K}$ with a standard error of $\pm 200\ \text{K}$. Calculate $E_a$ and its uncertainty. If the y-intercept is $25.0 \pm 0.5$, calculate $A$ and its uncertainty.
+**Question:** The Arrhenius equation $\ln k = \ln A - E_a/RT$ is used to determine $E_a$ from a plot of $\ln k$ vs $1/T$. A student obtains a gradient of $-8500\ \text{K}$ with a standard error of $\pm 200\ \text{K}$. Calculate $E_a$ and its uncertainty. If the y-intercept is $25.0 \pm 0.5$Calculate $A$ and its uncertainty.
 
 **Solution:**
 
-$\text{Gradient} = -E_a/R$, so $E_a = -\text{gradient} \times R$.
+$\text{Gradient} = -E_a/R$So $E_a = -\text{gradient} \times R$.
 
 $E_a = 8500 \times 8.314 = 70669\ \text{J mol}^{-1} = 70.7\ \text{kJ mol}^{-1}$
 
@@ -119,7 +119,7 @@ $A = e^{25.0} = 7.20 \times 10^{10}$ (with units depending on the reaction order
 
 Uncertainty in $A$: The intercept uncertainty is $\pm 0.5$. Since $A = e^{\text{intercept}}$:
 
-$A_{\max} = e^{25.5} = 1.18 \times 10^{11}$, $A_{\min} = e^{24.5} = 4.39 \times 10^{10}$
+$A_{\max} = e^{25.5} = 1.18 \times 10^{11}$$A_{\min} = e^{24.5} = 4.39 \times 10^{10}$
 
 $\Delta A = \frac{1.18 \times 10^{11} - 4.39 \times 10^{10}}{2} = 3.71 \times 10^{10}$
 
@@ -129,7 +129,7 @@ The large relative uncertainty in $A$ (about 51%) reflects the exponential sensi
 
 ---
 ### IT-3: Statistical Analysis and Equilibrium (with Equilibrium)
-**Question:** A student measures $K_c$ for the reaction $\text{N}_2\text{O}_4 \rightleftharpoons 2\text{NO}_2$ five times and obtains: $4.2 \times 10^{-3}$, $4.8 \times 10^{-3}$, $4.5 \times 10^{-3}$, $4.1 \times 10^{-3}$, $4.6 \times 10^{-3}$. Calculate the mean, standard deviation, and 95% confidence interval. The literature value is $4.6 \times 10^{-3}$. Does the experimental value agree with the literature value?
+**Question:** A student measures $K_c$ for the reaction $\text{N}_2\text{O}_4 \rightleftharpoons 2\text{NO}_2$ five times and obtains: $4.2 \times 10^{-3}$$4.8 \times 10^{-3}$$4.5 \times 10^{-3}$$4.1 \times 10^{-3}$$4.6 \times 10^{-3}$. Calculate the mean, standard deviation, and 95% confidence interval. The literature value is $4.6 \times 10^{-3}$. Does the experimental value agree with the literature value?
 
 **Solution:**
 

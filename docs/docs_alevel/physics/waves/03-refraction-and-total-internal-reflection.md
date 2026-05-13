@@ -22,7 +22,7 @@ Explore the simulation above to develop intuition for this topic.
 ## 1. Refractive Index
 
 **Definition.** The **refractive index** $n$ of a medium is the ratio of the speed of light in
-vacuum to the speed of light in the medium:
+Vacuum to the speed of light in the medium:
 
 $$\boxed{n = \frac{c}{v}}$$
 
@@ -30,41 +30,41 @@ Since $v < c$ for all material media, $n > 1$. The refractive index is a dimensi
 
 | Material | Refractive Index |
 | -------- | ---------------- |
-| Air      | 1.00             |
-| Water    | 1.33             |
-| Glass    | 1.50             |
-| Diamond  | 2.42             |
+| Air | 1.00 |
+| Water | 1.33 |
+| Glass | 1.50 |
+| Diamond | 2.42 |
 
 **Intuition.** Light slows down in a denser medium because the electromagnetic wave interacts with
-the electrons in the material. The denser the material (more electrons per unit volume), the slower
-the light, and the higher the refractive index.
+The electrons in the material. The denser the material (more electrons per unit volume), the slower
+The light, and the higher the refractive index.
 
 ### Dispersion and the Refractive Index
 
-The refractive index of a material is not constant — it depends on the wavelength of light. Shorter
-wavelengths (blue/violet) are refracted more than longer wavelengths (red). This is because shorter
-wavelengths interact more strongly with the electrons in the material.
+The refractive index of a material is not constant — on the wavelength of light. Shorter
+Wavelengths (blue/violet) are refracted more than longer wavelengths (red). This is because shorter
+Wavelengths interact more strongly with the electrons in the material.
 
 For glass, a typical empirical relationship (Cauchy's equation) is:
 
 $$n(\lambda) = A + \frac◆LB◆B◆RB◆◆LB◆\lambda^2◆RB◆$$
 
-where $A$ and $B$ are constants specific to the material and $\lambda$ is the wavelength in vacuum.
+Where $A$ and $B$ are constants specific to the material and $\lambda$ is the wavelength in vacuum.
 This wavelength dependence is what causes white light to separate into a spectrum when passing
-through a prism.
+Through a prism.
 
 :::info
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
 
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
-and large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
-of the diamond strikes the internal facets at angles well above the critical angle
+And large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
+Of the diamond strikes the internal facets at angles well above the critical angle
 ($\theta_c = 24.4^\circ$). The light is trapped inside by repeated TIR and eventually exits through
-the top, directing brightness back towards the viewer. The large dispersion also splits white light
-into a rainbow of colours, creating the characteristic "fire" of a diamond. A well-cut diamond has a
-specific facet geometry (typically 57 facets in a round brilliant cut) optimised so that light
-entering through the crown always hits pavilion facets at angles exceeding the critical angle.
+The top, directing brightness back towards the viewer. The large dispersion also splits white light
+Into a rainbow of colours, creating the characteristic "fire" of a diamond. A well-cut diamond has a
+Specific facet geometry ( 57 facets in a round brilliant cut) optimised so that light
+Entering through the crown always hits pavilion facets at angles exceeding the critical angle.
 
 ## 2. Snell's Law
 
@@ -72,16 +72,16 @@ entering through the crown always hits pavilion facets at angles exceeding the c
 
 $$\boxed{n_1 \sin\theta_1 = n_2 \sin\theta_2}$$
 
-where $\theta_1$ is the angle of incidence and $\theta_2$ is the angle of refraction, both measured
-from the normal.
+Where $\theta_1$ is the angle of incidence and $\theta_2$ is the angle of refraction, both measured
+From the normal.
 
 ### Derivation from Wave Theory (Huygens' Construction)
 
 Consider a plane wavefront $AB$ arriving at the boundary between two media. Let the wave travel at
-speed $v_1$ in medium 1 and $v_2$ in medium 2.
+Speed $v_1$ in medium 1 and $v_2$ in medium 2.
 
-By the time point $B$ on the wavefront reaches the boundary at $B'$, point $A$ has already entered
-medium 2 and travelled a distance $v_2 t$ as a secondary wavelet, where $t = BB'/v_1$.
+By the time point $B$ on the wavefront reaches the boundary at $B'$Point $A$ has already entered
+Medium 2 and travelled a distance $v_2 t$ as a secondary wavelet, where $t = BB'/v_1$.
 
 The new wavefront is the tangent from $B'$ to the wavelet centred at $A$. The geometry gives:
 
@@ -99,8 +99,8 @@ $\square$
 **least time**.
 
 Consider a ray travelling from point $P$ in medium 1 to point $Q$ in medium 2, crossing the
-boundary. Let the boundary be the $x$-axis, with $P$ at $(0, h_1)$ and $Q$ at $(d, -h_2)$. The ray
-hits the boundary at $(x, 0)$.
+Boundary. Let the boundary be the $x$-axis, with $P$ at $(0, h_1)$ and $Q$ at $(d, -h_2)$. The ray
+Hits the boundary at $(x, 0)$.
 
 The total travel time is:
 
@@ -120,12 +120,12 @@ $\square$
 
 **Intuition.** When light enters a denser medium ($n_2 > n_1$), it bends **towards** the normal
 ($\theta_2 < \theta_1$). This is because one side of the wavefront slows down before the other,
-causing the wavefront to pivot towards the normal.
+Causing the wavefront to pivot towards the normal.
 
 ### Worked Example: Light through a Glass Slab
 
 A ray of light enters a glass slab ($n = 1.50$) from air at $\theta_1 = 40^\circ$. The slab has
-parallel faces.
+Parallel faces.
 
 **Step 1: At the first surface (air to glass).** $1.00 \times \sin 40° = 1.50 \times \sin\theta_2$.
 $\theta_2 = \arcsin(0.643/1.50) = 25.4^\circ$.
@@ -135,7 +135,7 @@ $\theta_3 = 25.4^\circ$ (equal to $\theta_2$ because the faces are parallel).
 $1.50 \times \sin 25.4° = 1.00 \times \sin\theta_4$. $\theta_4 = 40^\circ$.
 
 **Result.** The emergent ray is parallel to the incident ray but laterally displaced. This lateral
-displacement $d$ depends on the thickness $t$ of the slab:
+Displacement $d$ depends on the thickness $t$ of the slab:
 
 $$d = t \cdot \sin\theta_1 \left(1 - \frac◆LB◆\cos\theta_1◆RB◆◆LB◆\sqrt{n^2 - \sin^2\theta_1}◆RB◆\right)$$
 
@@ -166,15 +166,15 @@ For light going from a medium of refractive index $n$ into air ($n_2 \approx 1$)
 $$\boxed{\sin\theta_c = \frac{1}{n}}$$
 
 **Derivation of why TIR only occurs from denser to less dense.** Snell's law gives
-$\sin\theta_2 = \frac{n_1}{n_2}\sin\theta_1$. If $n_1 > n_2$, then $\frac{n_1}{n_2} > 1$ and
-$\sin\theta_2$ can exceed 1 for sufficiently large $\theta_1$, which is impossible — so the light is
-entirely reflected. If $n_1 < n_2$, then $\frac{n_1}{n_2} < 1$ and
-$\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$, so refraction always occurs.
+$\sin\theta_2 = \frac{n_1}{n_2}\sin\theta_1$. If $n_1 > n_2$Then $\frac{n_1}{n_2} > 1$ and
+$\sin\theta_2$ can exceed 1 for sufficiently large $\theta_1$Which is impossible — so the light is
+Entirely reflected. If $n_1 < n_2$Then $\frac{n_1}{n_2} < 1$ and
+$\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$So refraction always occurs.
 
 :::warning
-warning
-medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
-incidence.
+Warning
+Medium. Light going from air into glass can never undergo TIR, no matter how large the angle of
+Incidence.
 :::
 
 <details>
@@ -188,35 +188,35 @@ The refractive index of glass is 1.50. Calculate the critical angle for glass-ai
 ### Real-World Example: Mirages
 
 On a hot day, the ground heats the air immediately above it. Hot air is less dense and has a
-slightly lower refractive index than cooler air above. This creates a gradual decrease in refractive
-index with height, forming a continuous gradient rather than a sharp boundary.
+Slightly lower refractive index than cooler air above. This creates a gradual decrease in refractive
+Index with height, forming a continuous gradient rather than a sharp boundary.
 
 Light from the sky heading downward towards the ground encounters this gradient. The gradual bending
 (continuous refraction) can cause the light to curve upwards, eventually undergoing TIR-like
-behaviour when the angle relative to the horizontal exceeds the critical angle for the hot-to-cool
-air transition. An observer sees this light as if it came from the ground, interpreting it as a pool
-of water (a "mirage").
+Behaviour when the angle relative to the horizontal exceeds the critical angle for the hot-to-cool
+Air transition. An observer sees this light as if it came from the ground, interpreting it as a pool
+Of water (a "mirage").
 
 This is not true TIR (which requires a sharp boundary), but the principle is the same: light curves
-away from regions of higher refractive index and can be totally reflected if the gradient is steep
-enough.
+Away from regions of higher refractive index and can be totally reflected if the gradient is steep
+Enough.
 
 ### Evanescent Wave
 
 When light is incident at a boundary at exactly the critical angle, the transmitted wave travels
-along the boundary. For angles just beyond the critical angle, an **evanescent wave** penetrates a
-short distance into the second medium. This wave carries no energy away from the boundary and decays
-exponentially:
+Along the boundary. For angles just beyond the critical angle, an **evanescent wave** penetrates a
+Short distance into the second medium. This wave carries no energy away from the boundary and decays
+Exponentially:
 
 $$E = E_0 \, e^{-z/\delta}$$
 
-where $\delta$ is the penetration depth and $z$ is the distance into the second medium. The
-evanescent wave is exploited in technologies such as:
+Where $\delta$ is the penetration depth and $z$ is the distance into the second medium. The
+Evanescent wave is exploited in technologies such as:
 
 - **Frustrated total internal reflection**: placing another surface close to the boundary allows the
-  evanescent wave to "tunnel" across the gap, converting TIR back into transmission.
+ evanescent wave to "tunnel" across the gap, converting TIR back into transmission.
 - **Optical fibre sensors**: chemicals or biological molecules near the fibre surface can interact
-  with the evanescent wave, changing the propagation and allowing detection.
+ with the evanescent wave, changing the propagation and allowing detection.
 
 :::info
 Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
@@ -230,16 +230,16 @@ Optical fibres use total internal reflection to guide light along a curved path.
 
 An optical fibre consists of:
 
-- **Core**: denser medium (higher $n$), typically glass or plastic
+- **Core**: denser medium (higher $n$), glass or plastic
 - **Cladding**: less dense medium (lower $n$), surrounding the core
 
 Light enters the fibre and undergoes repeated TIR at the core-cladding boundary, propagating along
-the fibre with minimal loss.
+The fibre with minimal loss.
 
 ### Acceptance Angle and Numerical Aperture
 
 Light entering the fibre at too large an angle will not satisfy the TIR condition at the
-core-cladding boundary.
+Core-cladding boundary.
 
 For light entering from air into a fibre with core index $n_1$ and cladding index $n_2$:
 
@@ -259,61 +259,61 @@ Two main effects degrade the signal in optical fibres:
 
 1. **Absorption**: some light energy is absorbed by the fibre material, reducing signal intensity.
 2. **Dispersion**: different wavelengths travel at slightly different speeds, causing pulse
-   broadening.
-   - **Material dispersion**: the refractive index depends on wavelength.
-   - **Modal dispersion**: rays entering at different angles travel different path lengths (in
-     multimode fibres).
+ broadening.
+ - **Material dispersion**: the refractive index depends on wavelength.
+ - **Modal dispersion**: rays entering at different angles travel different path lengths (in
+ multimode fibres).
 
 :::tip
-tip
-higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
-lower signal loss over long distances.
+Tip
+Higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking risk,
+Lower signal loss over long distances.
 :::
 
 ### Types of Optical Fibre
 
 **Step-index multimode fibre.** The core has a uniform refractive index $n_1$ and the cladding has a
-lower uniform index $n_2$. Light rays travel in zigzag paths, reflecting off the core-cladding
-boundary. Rays entering at different angles take different path lengths, causing **modal
-dispersion** — different rays arrive at different times, broadening the signal pulse. Step-index
-fibres are suitable for short-distance communication (e.g., within buildings or vehicles).
+Lower uniform index $n_2$. Light rays travel in zigzag paths, reflecting off the core-cladding
+Boundary. Rays entering at different angles take different path lengths, causing **modal
+Dispersion** — different rays arrive at different times, broadening the signal pulse. Step-index
+Fibres are suitable for short-distance communication (e.g., within buildings or vehicles).
 
 **Graded-index fibre.** The refractive index of the core decreases gradually from the centre axis to
-the cladding. Light rays follow curved (approximately sinusoidal) paths rather than sharp zigzags.
+The cladding. Light rays follow curved (approximately sinusoidal) paths rather than sharp zigzags.
 Rays that travel further from the axis pass through regions of lower refractive index, where they
-travel faster. This compensates for the longer path length, significantly reducing modal dispersion.
+Travel faster. This compensates for the longer path length, significantly reducing modal dispersion.
 Graded-index fibres are used for medium-distance links (e.g., LANs, cable television).
 
-**Single-mode fibre.** The core is extremely narrow (typically 8 to 10 micrometres), so only one
-mode (the axial ray) can propagate. This eliminates modal dispersion entirely. Single-mode fibres
-are used for long-distance telecommunications (e.g., undersea cables spanning thousands of
-kilometres).
+**Single-mode fibre.** The core is extremely narrow ( 8 to 10 micrometres), so only one
+Mode (the axial ray) can propagate. This eliminates modal dispersion entirely. Single-mode fibres
+Are used for long-distance telecommunications (e.g., undersea cables spanning thousands of
+Kilometres).
 
-| Fibre Type             | Core Diameter       | Dispersion               | Typical Use            |
+| Fibre Type | Core Diameter | Dispersion | Typical Use |
 | ---------------------- | ------------------- | ------------------------ | ---------------------- |
-| Step-index multimode   | 50-200 micrometres  | High (modal)             | Short distance         |
-| Graded-index multimode | 50-62.5 micrometres | Moderate                 | LANs, CCTV             |
-| Single-mode            | 8-10 micrometres    | Very low (material only) | Long-distance telecoms |
+| Step-index multimode | 50-200 micrometres | High (modal) | Short distance |
+| Graded-index multimode | 50-62.5 micrometres | Moderate | LANs, CCTV |
+| Single-mode | 8-10 micrometres | Very low (material only) | Long-distance telecoms |
 
 ### Applications of TIR and Optical Fibres
 
 **Endoscopy.** Medical endoscopes use bundles of optical fibres (coherent and incoherent bundles) to
-view inside the body. A **coherent bundle** has the fibres arranged in the same spatial pattern at
-both ends, so an image is faithfully transmitted. An **incoherent bundle** carries illumination
-light from an external source to the internal area. The surgeon views the image through an eyepiece
-or on a screen. TIR ensures light stays within each individual fibre without leaking into
-neighbouring fibres, maintaining image quality.
+View inside the body. A **coherent bundle** has the fibres arranged in the same spatial pattern at
+Both ends, so an image is faithfully transmitted. An **incoherent bundle** carries illumination
+Light from an external source to the internal area. The surgeon views the image through an eyepiece
+Or on a screen. TIR ensures light stays within each individual fibre without leaking into
+Neighbouring fibres, maintaining image quality.
 
 **Periscopes.** Submarine periscopes and some military periscopes use prisms rather than mirrors. A
-right-angled triangular prism arranged so that light enters perpendicular to the hypotenuse face
-hits the two shorter faces at 45°. Since glass typically has a critical angle of about 42°, the 45°
-angle exceeds the critical angle, producing TIR. Prism periscopes are preferred over mirror
-periscopes because TIR gives 100% reflection (no absorption by a metallic coating), and the
-reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
+Right-angled triangular prism arranged so that light enters perpendicular to the hypotenuse face
+Hits the two shorter faces at 45°. Since glass has a critical angle of about 42°, the 45°
+Angle exceeds the critical angle, producing TIR. Prism periscopes are preferred over mirror
+Periscopes because TIR gives 100% reflection (no absorption by a metallic coating), and the
+Reflective surface is protected inside the glass, making it resistant to scratches and tarnishing.
 
 :::info
-info
-physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
+Info
+Physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
 :::
 
 ## Problem Set
@@ -346,8 +346,8 @@ A glass block has refractive index 1.52. Calculate the critical angle for a glas
 Light is incident on a glass-air boundary at $50^\circ$. The refractive index of the glass is 1.50.
 Determine whether total internal reflection occurs.
 
-**Answer.** $\theta_c = \arcsin(1/1.50) = 41.8^\circ$. Since $50° > 41.8^\circ$, total internal
-reflection occurs.
+**Answer.** $\theta_c = \arcsin(1/1.50) = 41.8^\circ$. Since $50° > 41.8^\circ$Total internal
+Reflection occurs.
 
 <b>If you get this wrong, revise:</b>
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
@@ -357,7 +357,7 @@ reflection occurs.
 <details>
 <summary>Problem 4</summary>
 A ray of light travels from glass ($n = 1.60$) into water ($n = 1.33$). Calculate the critical
-angle.
+Angle.
 
 **Answer.** $\sin\theta_c = n_2/n_1 = 1.33/1.60 = 0.831$. $\theta_c = \arcsin(0.831) = 56.2^\circ$.
 
@@ -384,11 +384,11 @@ $\mathrm{NA} = \sqrt{1.50^2 - 1.45^2} = \sqrt{2.25 - 2.1025} = \sqrt{0.1475} = 0
 <summary>Problem 6</summary>
 Explain why a diamond ($n = 2.42$) sparkles more than glass ($n = 1.50$).
 
-**Answer.** The critical angle of diamond is $\theta_c = \arcsin(1/2.42) = 24.4^\circ$, much smaller
-than glass ($41.8^\circ$). Light entering a diamond is much more likely to strike internal surfaces
-at angles exceeding the critical angle, causing repeated TIR. This traps light inside the diamond
-for longer and directs it back towards the observer, creating the sparkle effect. Additionally,
-diamond has high dispersion, separating white light into colours.
+**Answer.** The critical angle of diamond is $\theta_c = \arcsin(1/2.42) = 24.4^\circ$Much smaller
+Than glass ($41.8^\circ$). Light entering a diamond is much more likely to strike internal surfaces
+At angles exceeding the critical angle, causing repeated TIR. This traps light inside the diamond
+For longer and directs it back towards the observer, creating the sparkle effect. Additionally,
+Diamond has high dispersion, separating white light into colours.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle)
@@ -398,16 +398,16 @@ diamond has high dispersion, separating white light into colours.
 <details>
 <summary>Problem 7</summary>
 A light ray enters a rectangular glass block ($n = 1.50$) at an angle of $30^\circ$ to the normal. The
-block is surrounded by air. The ray strikes the opposite face. Calculate the angle of incidence at
-the opposite face and determine whether TIR occurs.
+Block is surrounded by air. The ray strikes the opposite face. Calculate the angle of incidence at
+The opposite face and determine whether TIR occurs.
 
 **Answer.** At entry: $1.00 \times \sin 30° = 1.50 \times \sin\theta_2$.
 $\sin\theta_2 = 0.5/1.50 = 0.333$. $\theta_2 = 19.5^\circ$.
 
 For a rectangular block with parallel faces, the angle of incidence at the opposite face equals the
-angle of refraction at the first face: $\theta_{\mathrm{opposite}} = 19.5^\circ$.
+Angle of refraction at the first face: $\theta_{\mathrm{opposite}} = 19.5^\circ$.
 
-Since $19.5° < \theta_c = 41.8^\circ$, TIR does not occur. The ray emerges from the block.
+Since $19.5° < \theta_c = 41.8^\circ$TIR does not occur. The ray emerges from the block.
 
 <b>If you get this wrong, revise:</b> [Snell's Law](#2-snells-law) and
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
@@ -417,8 +417,8 @@ Since $19.5° < \theta_c = 41.8^\circ$, TIR does not occur. The ray emerges from
 <details>
 <summary>Problem 8</summary>
 A prism has an apex angle of $60^\circ$ and refractive index 1.50. A ray enters one face at $45^\circ$ to the
-normal. Trace the ray through the prism, finding the angle of incidence at the second face and the
-angle of emergence.
+Normal. Trace the ray through the prism, finding the angle of incidence at the second face and the
+Angle of emergence.
 
 **Answer.** At the first face: $\sin\theta_2 = \sin 45° / 1.50 = 0.707 / 1.50 = 0.471$.
 $\theta_2 = 28.1^\circ$.
@@ -438,9 +438,9 @@ $\theta_4 = 52.5^\circ$.
 <summary>Problem 9</summary>
 An optical fibre has a core of refractive index 1.62 and cladding of refractive index 1.52. (a)
 Calculate the critical angle at the core-cladding boundary. (b) Calculate the maximum angle of
-incidence (acceptance angle) for light entering the fibre from air. (c) A pulse of light enters the
-fibre at the acceptance angle. Calculate the path length per metre of fibre length for this ray, and
-hence the additional distance compared to the axial ray.
+Incidence (acceptance angle) for light entering the fibre from air. (c) A pulse of light enters the
+Fibre at the acceptance angle. Calculate the path length per metre of fibre length for this ray, and
+Hence the additional distance compared to the axial ray.
 
 **Answer.** (a) $\theta_c = \arcsin(1.52/1.62) = \arcsin(0.938) = 69.6^\circ$.
 
@@ -450,10 +450,10 @@ $\sin\theta_{\max} = 1.62 \times \sin 20.4° = 1.62 \times 0.349 = 0.565$.
 $\theta_{\max} = \arcsin(0.565) = 34.4^\circ$.
 
 (c) For each zigzag segment, the ray travels a distance $\Delta s$ while advancing $\Delta z$ along
-the fibre axis. $\Delta z = \Delta s \cos(20.4°)$, so
+The fibre axis. $\Delta z = \Delta s \cos(20.4°)$So
 $\Delta s = \Delta z / \cos(20.4°) = 1.0 / 0.937 = 1.067$ m per metre of fibre. The additional
-distance is $1.067 - 1.0 = 0.067$ m, or 6.7% longer. This demonstrates modal dispersion: rays at
-larger angles travel further and arrive later.
+Distance is $1.067 - 1.0 = 0.067$ m, or 6.7% longer. This demonstrates modal dispersion: rays at
+Larger angles travel further and arrive later.
 
 <b>If you get this wrong, revise:</b> [Optical Fibres](#4-optical-fibres) and
 [Acceptance Angle and Numerical Aperture](#acceptance-angle-and-numerical-aperture)
@@ -463,21 +463,21 @@ larger angles travel further and arrive later.
 <details>
 <summary>Problem 10</summary>
 A 45°-90°-45° glass prism ($n = 1.50$) is used as a reflector. Light enters through one of the short
-faces perpendicular to the face, hits the hypotenuse, and exits through the other short face. Show
-that TIR occurs at the hypotenuse and determine the angle of the emergent ray.
+Faces perpendicular to the face, hits the hypotenuse, and exits through the other short face. Show
+That TIR occurs at the hypotenuse and determine the angle of the emergent ray.
 
 **Answer.** The ray enters perpendicular to the short face, so it passes through undeviated and
-strikes the hypotenuse at $45^\circ$ to the normal of that face.
+Strikes the hypotenuse at $45^\circ$ to the normal of that face.
 
-Since $\theta_c = \arcsin(1/1.50) = 41.8^\circ$ and $45° > 41.8^\circ$, TIR occurs at the
-hypotenuse.
+Since $\theta_c = \arcsin(1/1.50) = 41.8^\circ$ and $45° > 41.8^\circ$TIR occurs at the
+Hypotenuse.
 
 The reflected ray exits through the other short face perpendicular to it (by symmetry of the 45°
-reflection). The emergent ray is therefore perpendicular to the short face, i.e., the prism acts as
-a perfect retroreflector for this geometry. The deviation is $90^\circ$.
+Reflection). The emergent ray is therefore perpendicular to the short face, i.e., the prism acts as
+A perfect retroreflector for this geometry. The deviation is $90^\circ$.
 
 This is why such prisms are used in binoculars and periscopes — they give 100% reflection with no
-metallic coating needed.
+Metallic coating needed.
 
 <b>If you get this wrong, revise:</b>
 [Condition for Total Internal Reflection](#condition-for-total-internal-reflection)
@@ -487,18 +487,18 @@ metallic coating needed.
 <details>
 <summary>Problem 11</summary>
 Light travels from water ($n = 1.33$) into a glass block ($n = 1.50$). (a) Calculate the critical
-angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes the glass-water
-boundary at $55^\circ$ to the normal. Determine what happens.
+Angle for a water-glass boundary (if it exists). (b) A ray in the glass strikes the glass-water
+Boundary at $55^\circ$ to the normal. Determine what happens.
 
 **Answer.** (a) For TIR to be possible, light must travel from denser to less dense. Since
-$n_{\mathrm{glass}} = 1.50 > n_{\mathrm{water}} = 1.33$, TIR is possible for light going from glass
-to water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
+$n_{\mathrm{glass}} = 1.50 > n_{\mathrm{water}} = 1.33$TIR is possible for light going from glass
+To water. $\theta_c = \arcsin(1.33/1.50) = \arcsin(0.887) = 62.5^\circ$.
 
-(b) Since $55° < 62.5^\circ$, the angle of incidence is below the critical angle. Refraction occurs.
+(b) Since $55° < 62.5^\circ$The angle of incidence is below the critical angle. Refraction occurs.
 Using Snell's law: $1.50 \times \sin 55° = 1.33 \times \sin\theta_2$.
 $\sin\theta_2 = 1.50 \times 0.819 / 1.33 = 1.229 / 1.33 = 0.924$.
 $\theta_2 = \arcsin(0.924) = 67.5^\circ$. The ray refracts into the water, bending away from the
-normal.
+Normal.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of the Critical Angle](#derivation-of-the-critical-angle) and
@@ -509,24 +509,24 @@ normal.
 <details>
 <summary>Problem 12</summary>
 A swimming pool appears shallower than it actually is. A pool of true depth 2.0 m is viewed from
-above. (a) Calculate the apparent depth when viewed from directly above. (b) Calculate the apparent
-depth when viewed at an angle of $30^\circ$ to the vertical (from the normal). Take
+Above. (a) Calculate the apparent depth when viewed from directly above. (b) Calculate the apparent
+Depth when viewed at an angle of $30^\circ$ to the vertical (from the normal). Take
 $n_{\mathrm{water}} = 1.33$.
 
 **Answer.** (a) For near-normal viewing, the apparent depth is given by:
 $d_{\mathrm{apparent}} = d_{\mathrm{real}} / n = 2.0 / 1.33 = 1.50$ m.
 
 (b) At an angle of $30^\circ$ to the vertical, a ray from the bottom of the pool refracts at the
-surface. Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$, where $\theta_1$
-is the angle in water from the normal. The apparent position is found by tracing the refracted ray
-back. For a pool of depth $d$ and viewing angle $\theta_2$:
+Surface. Using Snell's law: $1.33 \times \sin\theta_1 = 1.00 \times \sin\theta_2$Where $\theta_1$
+Is the angle in water from the normal. The apparent position is found by tracing the refracted ray
+Back. For a pool of depth $d$ and viewing angle $\theta_2$:
 
 $d_{\mathrm{apparent}} = d \cdot \frac◆LB◆\cos\theta_2◆RB◆◆LB◆\cos\theta_1◆RB◆$
 
-where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1^\circ$.
+Where $\theta_1 = \arcsin(\sin 30° / 1.33) = \arcsin(0.376) = 22.1^\circ$.
 
 $d_{\mathrm{apparent}} = 2.0 \times \frac◆LB◆\cos 30°◆RB◆◆LB◆\cos 22.1°◆RB◆ = 2.0 \times \frac{0.866}{0.927} = 2.0 \times 0.934 = 1.87$
-m.
+M.
 
 Note that the pool appears deeper when viewed at an angle than when viewed from directly above.
 
@@ -538,19 +538,19 @@ Note that the pool appears deeper when viewed at an angle than when viewed from 
 <summary>Problem 13</summary>
 In a graded-index optical fibre, the refractive index varies as
 $n(r) = n_1\sqrt◆LB◆1 - 2\Delta(r/a)^2◆RB◆$ for $r \lt a$ (inside the core), where $n_1 = 1.48$ is the
-index on the axis, $a = 25$ micrometres is the core radius, and $\Delta = 0.01$. (a) Calculate the
-refractive index at the core-cladding boundary ($r = a$). (b) Explain qualitatively why graded-index
-fibres reduce modal dispersion compared to step-index fibres.
+Index on the axis, $a = 25$ micrometres is the core radius, and $\Delta = 0.01$. (a) Calculate the
+Refractive index at the core-cladding boundary ($r = a$). (b) Explain qualitatively why graded-index
+Fibres reduce modal dispersion compared to step-index fibres.
 
 **Answer.** (a) At $r = a$:
 $n(a) = 1.48\sqrt{1 - 2(0.01)(1)^2} = 1.48\sqrt{1 - 0.02} = 1.48\sqrt{0.98} = 1.48 \times 0.990 = 1.465$.
 
 (b) In a step-index fibre, rays at steep angles travel a significantly longer path than axial rays,
-arriving later and causing pulse broadening. In a graded-index fibre, rays that travel further from
-the axis pass through regions of lower refractive index and therefore travel faster. This speed
-increase partially compensates for the longer path length, so all rays arrive at approximately the
-same time. The result is much less modal dispersion and therefore higher bandwidth for the same
-fibre length.
+Arriving later and causing pulse broadening. In a graded-index fibre, rays that travel further from
+The axis pass through regions of lower refractive index and therefore travel faster. This speed
+Increase partially compensates for the longer path length, so all rays arrive at approximately the
+Same time. The result is much less modal dispersion and therefore higher bandwidth for the same
+Fibre length.
 
 <b>If you get this wrong, revise:</b> [Types of Optical Fibre](#types-of-optical-fibre) and
 [Signal Degradation](#signal-degradation)
@@ -569,7 +569,7 @@ fibre length.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Refraction and TIR**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-refraction-total-internal-reflection) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Refraction and TIR with other physics topics to test synthesis under exam conditions.
@@ -578,7 +578,7 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 :::
 
 :::danger
-danger
+Danger
 
 - **Confusing the critical angle with the angle of incidence:** The critical angle c is the MINIMUM angle of incidence (measured from the normal) at which total internal reflection occurs. TIR happens when the angle of incidence EXCEEDS the critical angle, not when it equals it. Light going from glass to air at an angle less than c is refracted, not totally reflected.
 
@@ -589,3 +589,15 @@ danger
 - **Confusing refractive index with angle of refraction:** Refractive index n = sin(i) / sin(r) relates the angles, but n is a PROPERTY of the material, not the angle. The refractive index is defined as the ratio of the speed of light in vacuum to the speed in the medium (n = c/v), and it is always greater than or equal to 1 for real materials.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

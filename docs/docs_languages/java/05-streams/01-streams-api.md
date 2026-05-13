@@ -11,14 +11,14 @@ sidebar_position: 1
 
 A `Collection` is an in-memory data structure that holds elements. A `Stream` is a sequence of elements supporting sequential and parallel aggregate operations computed on demand from a source. The distinction is fundamental and understanding it prevents entire categories of bugs.
 
-| Property      | Collection                                | Stream                                                      |
+| Property | Collection | Stream |
 | ------------- | ----------------------------------------- | ----------------------------------------------------------- |
-| Storage       | Holds elements in memory                  | Does not store elements; computes from a source             |
-| Evaluation    | Eager (all elements materialized at once) | Lazy (elements computed on demand)                          |
-| Consumability | Can be traversed multiple times           | Single-use; consuming a terminal operation closes it        |
-| Mutability    | Elements can be added, removed, replaced  | Elements are never modified; operations produce new streams |
-| Iteration     | External (user controls the loop)         | Internal (library controls the iteration)                   |
-| Purpose       | Store and organize data                   | Compute aggregate results and transform data                |
+| Storage | Holds elements in memory | Does not store elements; computes from a source |
+| Evaluation | Eager (all elements materialized at once) | Lazy (elements computed on demand) |
+| Consumability | Can be traversed multiple times | Single-use; consuming a terminal operation closes it |
+| Mutability | Elements can be added, removed, replaced | Elements are never modified; operations produce new streams |
+| Iteration | External (user controls the loop) | Internal (library controls the iteration) |
+| Purpose | Store and organize data | Compute aggregate results and transform data |
 
 ```java
 List<String> names = List.of("Alice", "Bob", "Charlie", "Diana");
@@ -44,7 +44,7 @@ stream.forEach(System.out::println);  // OK -- first consumption
 
 Streams are lazy for three reasons:
 
-1. **Performance -- avoid unnecessary work.** If you filter a million elements and then call `findFirst()`, a lazy stream processes only the elements up to the first match. An eager approach would filter all one million elements before returning the first. Laziness enables short-circuiting, which can turn an O(n) operation into an O(k) operation where k is the number of elements actually needed.
+1. **Performance -- avoid unnecessary work.** If you filter a million elements and then call `findFirst()`A lazy stream processes only the elements up to the first match. An eager approach would filter all one million elements before returning the first. Laziness enables short-circuiting, which can turn an O(n) operation into an O(k) operation where k is the number of elements actually needed.
 
 2. **Composability -- enable infinite streams.** `Stream.generate()` and `Stream.iterate()` can produce infinite sequences. These are only useful because intermediate operations are lazy -- they describe transformations without materializing elements. Only when a terminal operation is invoked does the pipeline begin pulling elements, and a short-circuiting terminal operation like `limit()` prevents infinite processing.
 
@@ -155,7 +155,7 @@ Stream<String> parallel = names.parallelStream();    // parallel stream
 
 ### Primitive Specializations
 
-`IntStream`, `LongStream`, and `DoubleStream` avoid the overhead of boxing and unboxing. Each provides range generation, summary statistics, and specialized reduction operations.
+`IntStream``LongStream`And `DoubleStream` avoid the overhead of boxing and unboxing. Each provides range generation, summary statistics, and specialized reduction operations.
 
 ```java
 IntStream intStream = IntStream.range(1, 10);          // 1..9 (exclusive end)
@@ -534,7 +534,7 @@ Optional<String> any = names.parallelStream()
 ```
 
 :::info
-In sequential streams, `findFirst()` and `findAny()` typically return the same element. In parallel streams, `findAny()` may return a different element than `findFirst()` because it can return any element that the parallel worker encounters first, without the synchronization overhead of maintaining encounter order. Use `findAny()` when you do not care about which element is returned -- it is faster in parallel streams because it avoids ordering constraints.
+In sequential streams, `findFirst()` and `findAny()` return the same element. In parallel streams, `findAny()` may return a different element than `findFirst()` because it can return any element that the parallel worker encounters first, without the synchronization overhead of maintaining encounter order. Use `findAny()` when you do not care about which element is returned -- it is faster in parallel streams because it avoids ordering constraints.
 :::
 
 ### toArray
@@ -827,7 +827,7 @@ long count = largeList.parallelStream()
     .count();
 ```
 
-**3. Poor sources for splitting.** `LinkedList`, `Stream.iterate()`, and `BufferedReader.lines()` are inherently sequential and cannot be efficiently split. Parallelizing them often makes things slower due to the splitting overhead.
+**3. Poor sources for splitting.** `LinkedList``Stream.iterate()`And `BufferedReader.lines()` are inherently sequential and cannot be efficiently split. Parallelizing them often makes things slower due to the splitting overhead.
 
 **4. Blocking operations.** If a lambda performs I/O (file reads, network calls, database queries), it blocks the ForkJoinPool worker thread. Since the common pool has only `availableProcessors - 1` threads, blocking a few of them can starve other parallel operations (or even other parts of the application that use the common pool).
 
@@ -856,17 +856,17 @@ List<String> fileContents = filePaths.parallelStream()
 
 ### Design Decision: Why Optional Exists (And When Not to Use It)
 
-`Optional` exists to make the **presence or absence of a value explicit at the type level**. Before `Optional`, API methods returned `null` to indicate "no result," and callers had to remember to check for null. This was the source of countless `NullPointerException`s. `Optional` forces the caller to explicitly handle both cases.
+`Optional` exists to make the **presence or absence of a value explicit at the type level**. Before `Optional`API methods returned `null` to indicate "no result," and callers had to remember to check for null. This was the source of countless `NullPointerException`S. `Optional` forces the caller to explicitly handle both cases.
 
 However, `Optional` was **not designed** for every use case. Brian Goetz (Java language architect) has stated that `Optional` is primarily intended for **return types** of methods, not for fields, method parameters, or collections.
 
-| Usage              | Recommended? | Reason                                                           |
+| Usage | Recommended? | Reason |
 | ------------------ | :----------: | ---------------------------------------------------------------- |
-| Method return type |     Yes      | Forces caller to handle absence                                  |
-| Method parameter   |      No      | Adds complexity without benefit; use method overloading instead  |
-| Field              |      No      | Increases memory overhead (wrapper object), breaks serialization |
-| Collection element |      No      | Use empty collection; `Optional` in collections is a code smell  |
-| Stream element     |      No      | Use `filter` and `flatMap` instead                               |
+| Method return type | Yes | Forces caller to handle absence |
+| Method parameter | No | Adds complexity without benefit; use method overloading instead |
+| Field | No | Increases memory overhead (wrapper object), breaks serialization |
+| Collection element | No | Use empty collection; `Optional` in collections is a code smell |
+| Stream element | No | Use `filter` and `flatMap` instead |
 
 ### Creating Optionals
 
@@ -897,7 +897,7 @@ String result4 = opt.orElseThrow(() -> new IllegalArgumentException("not found")
 ```
 
 :::danger
-The difference between `orElse()` and `orElseGet()` is critical. `orElse(defaultValue)` always evaluates `defaultValue`, even if the `Optional` is present. `orElseGet(supplier)` only invokes the supplier when the `Optional` is empty.
+The difference between `orElse()` and `orElseGet()` is critical. `orElse(defaultValue)` always evaluates `defaultValue`Even if the `Optional` is present. `orElseGet(supplier)` only invokes the supplier when the `Optional` is empty.
 
 ```java
 // BROKEN: computeExpensiveDefault() is always called, even when opt is present
@@ -945,7 +945,7 @@ opt.ifPresent(value -> System.out.println("Value: " + value));
 ```
 
 :::warning
-Avoid the `isPresent()` + `get()` pattern. It is functionally equivalent to a null check (`if (x != null) { x.foo() }`) and negates the purpose of `Optional`. Prefer `ifPresent()`, `map()`, `flatMap()`, `filter()`, or the `orElse*` family.
+Avoid the `isPresent()` + `get()` pattern. It is functionally equivalent to a null check (`if (x != null) { x.foo() }`) and negates the purpose of `Optional`. Prefer `ifPresent()``map()``flatMap()``filter()`Or the `orElse*` family.
 
 ```java
 // ANTI-PATTERN -- isPresent + get
@@ -1003,7 +1003,7 @@ return optional.isPresent();
 
 ### Optional in Streams
 
-`Optional` integrates naturally with the Streams API. `Optional.stream()` (Java 9+) converts an `Optional` to a `Stream` of zero or one elements, enabling flatMap-based composition.
+`Optional` integrates with the Streams API. `Optional.stream()` (Java 9+) converts an `Optional` to a `Stream` of zero or one elements, enabling flatMap-based composition.
 
 ```java
 // Optional.stream() -- converts to Stream<T> (0 or 1 element)
@@ -1048,3 +1048,11 @@ List<String> cities = List.of(user)
 4. **Parallel streams are not a silver bullet.** They help only for large, CPU-bound, embarrassingly parallel workloads with efficiently splittable sources. For small datasets, I/O-bound operations, or sequential data structures, they add overhead and can cause subtle bugs through shared mutable state or blocking the common ForkJoinPool.
 
 5. **Optional is for return types, not for fields or parameters.** It makes API contracts explicit: a method returning `Optional<T>` signals that the result may be absent and forces the caller to handle that case. Using `Optional` as a field or parameter adds memory overhead and complexity without corresponding benefit.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

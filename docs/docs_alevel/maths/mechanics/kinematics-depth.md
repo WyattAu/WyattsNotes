@@ -9,7 +9,7 @@ slug: kinematics-extended
 ## Kinematics (Extended Treatment)
 
 This document extends the core kinematics material with deeper derivations, multi-stage problems,
-projectile motion in two dimensions, and the calculus approach to variable acceleration.
+Projectile motion in two dimensions, and the calculus approach to variable acceleration.
 
 :::info
 This page complements the core kinematics notes. Readers should already be comfortable with the
@@ -34,7 +34,7 @@ This is **SUVAT equation 1**. We now derive the remaining four.
 
 **Equation 2: $s = ut + \tfrac{1}{2}at^2$**
 
-Since $v = \dfrac{ds}{dt} = u + at$, integrate:
+Since $v = \dfrac{ds}{dt} = u + at$Integrate:
 
 $$\int_0^s ds = \int_0^t (u + at)\,dt \implies s = ut + \frac{1}{2}at^2$$
 
@@ -46,7 +46,7 @@ $$s = ut + \frac{1}{2}(v - u)t = \frac{1}{2}(2u + v - u)t = \frac{1}{2}(u + v)t$
 
 **Equation 4: $v^2 = u^2 + 2as$**
 
-From $v = u + at$, square both sides:
+From $v = u + at$Square both sides:
 
 $$v^2 = (u + at)^2 = u^2 + 2uat + a^2t^2$$
 
@@ -64,19 +64,19 @@ $$s = (v - at)t + \frac{1}{2}at^2 = vt - \frac{1}{2}at^2$$
 
 The key skill is identifying which variable is **unknown** and which is **not needed**:
 
-| Unknown         | Do not use           |
+| Unknown | Do not use |
 | --------------- | -------------------- |
-| displacement $s$ | $v^2 = u^2 + 2as$  |
+| displacement $s$ | $v^2 = u^2 + 2as$ |
 | final velocity $v$ | $s = \tfrac{1}{2}(u+v)t$ |
-| time $t$        | $v^2 = u^2 + 2as$   |
+| time $t$ | $v^2 = u^2 + 2as$ |
 | acceleration $a$ | $s = \tfrac{1}{2}(u+v)t$ |
 | initial velocity $u$ | $s = vt - \tfrac{1}{2}at^2$ |
 
 ### 1.3 Worked example: multi-stage motion
 
 **Problem.** A car accelerates uniformly from rest at $2\;\mathrm{m\,s^{-2}}$ for 6 seconds, then
-decelerates uniformly at $3\;\mathrm{m\,s^{-2}}$ until it comes to rest. Find the total distance
-travelled.
+Decelerates uniformly at $3\;\mathrm{m\,s^{-2}}$ until it comes to rest. Find the total distance
+Travelled.
 
 **Stage 1: Acceleration.**
 
@@ -84,7 +84,7 @@ $$v = u + at = 0 + 2 \times 6 = 12\;\mathrm{m\,s^{-1}}$$
 
 $$s_1 = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\;\mathrm{m}$$
 
-**Stage 2: Deceleration.** Now $u = 12$, $v = 0$, $a = -3$.
+**Stage 2: Deceleration.** Now $u = 12$$v = 0$$a = -3$.
 
 $$t_2 = \frac{v - u}{a} = \frac{0 - 12}{-3} = 4\;\mathrm{s}$$
 
@@ -95,8 +95,8 @@ $$s_{\mathrm{total}} = 36 + 24 = 60\;\mathrm{m}$$
 :::warning
 Common Pitfall
 When a problem has multiple stages, the **final velocity of one stage becomes the initial velocity
-of the next**. Forgetting this connection is the most frequent error in multi-stage kinematics
-problems.
+Of the next**. Forgetting this connection is the most frequent error in multi-stage kinematics
+Problems.
 :::
 
 <hr />
@@ -106,12 +106,12 @@ problems.
 ### 2.1 The acceleration due to gravity
 
 Near the Earth's surface, all objects in free fall (neglecting air resistance) experience the same
-acceleration $g$. The standard value is:
+Acceleration $g$. The standard value is:
 
 $$g \approx 9.8\;\mathrm{m\,s^{-2}} \quad (\mathrm{or}\ 9.81\;\mathrm{m\,s^{-2}}\ \mathrm{for\ greater\ precision})$$
 
 The direction of $g$ is always **downward**. The sign convention must be established at the start
-of every problem.
+Of every problem.
 
 ### 2.2 Sign conventions
 
@@ -125,7 +125,7 @@ Both conventions are valid, but you must be consistent throughout a single probl
 
 **Problem.** A ball is thrown vertically upward at $15\;\mathrm{m\,s^{-1}}$ from a height of
 $2\;\mathrm{m}$ above the ground. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$ and upward as positive, find
-the speed with which it hits the ground.
+The speed with which it hits the ground.
 
 At the highest point, $v = 0$:
 
@@ -137,7 +137,7 @@ $$s_{\mathrm{up}} = \frac{v^2 - u^2}{2a} = \frac{0 - 225}{2(-9.8)} = \frac{225}{
 
 Total height above ground: $11.48 + 2 = 13.48\;\mathrm{m}$.
 
-On the way down: $u = 0$, $a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{m}$.
+On the way down: $u = 0$$a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{m}$.
 
 $$v^2 = 0 + 2(-9.8)(-13.48) = 264.21$$
 
@@ -146,9 +146,9 @@ $$v = -\sqrt{264.21} \approx -16.26\;\mathrm{m\,s^{-1}}$$
 The negative sign confirms downward motion. Speed $= 16.3\;\mathrm{m\,s^{-1}}$ (3 s.f.).
 
 :::info
-Note that the total time of flight can also be found directly: $s = -2$, $u = 15$, $a = -9.8$:
-$-2 = 15t - 4.9t^2$, giving $t \approx 3.15\;\mathrm{s}$. This is **not** $2 \times t_{\mathrm{max}}$
-because the ball was thrown from a height, not from ground level.
+Note that the total time of flight can also be found directly: $s = -2$$u = 15$$a = -9.8$:
+$-2 = 15t - 4.9t^2$Giving $t \approx 3.15\;\mathrm{s}$. This is **not** $2 \times t_{\mathrm{max}}$
+Because the ball was thrown from a height, not from ground level.
 :::
 
 <hr />
@@ -185,7 +185,7 @@ $$y = u\sin\theta \cdot \frac◆LB◆x◆RB◆◆LB◆u\cos\theta◆RB◆ - \fra
 $$\boxed{y = x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆}$$
 
 This is the equation of a **parabola**, confirming that the trajectory of a projectile (under
-constant gravity with no air resistance) is parabolic.
+Constant gravity with no air resistance) is parabolic.
 
 ### 3.4 Key results
 
@@ -201,19 +201,19 @@ $$H = \frac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$$
 
 $$R = \frac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$$
 
-**Maximum range** occurs when $\sin 2\theta = 1$, i.e. $\theta = 45^\circ$, giving $R_{\max} = \dfrac{u^2}{g}$.
+**Maximum range** occurs when $\sin 2\theta = 1$I.e. $\theta = 45^\circ$Giving $R_{\max} = \dfrac{u^2}{g}$.
 
 ### 3.5 Proof that complementary angles give the same range
 
-If $\theta_1 + \theta_2 = 90^\circ$, then $\sin 2\theta_1 = \sin(180^\circ - 2\theta_2) = \sin 2\theta_2$.
+If $\theta_1 + \theta_2 = 90^\circ$Then $\sin 2\theta_1 = \sin(180^\circ - 2\theta_2) = \sin 2\theta_2$.
 
 Therefore $R(\theta_1) = R(\theta_2)$.
 
 ### 3.6 Worked example
 
 **Problem.** A cricketer hits a ball at $25\;\mathrm{m\,s^{-1}}$ at $35^\circ$ above the horizontal
-from a height of $1.5\;\mathrm{m}$. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the horizontal distance
-travelled before the ball hits the ground.
+From a height of $1.5\;\mathrm{m}$. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$Find the horizontal distance
+Travelled before the ball hits the ground.
 
 $u_x = 25\cos 35^\circ \approx 20.48\;\mathrm{m\,s^{-1}}$
 
@@ -234,10 +234,10 @@ $$x = 20.48 \times 3.025 \approx 61.95\;\mathrm{m}$$
 The ball travels approximately $62.0\;\mathrm{m}$ horizontally.
 
 :::warning
-warning
+Warning
 When a projectile is launched from a height above the landing level, the trajectory is **not**
-symmetric. The time of ascent is less than the time of descent, and the landing angle is steeper
-than the launch angle.
+Symmetric. The time of ascent is less than the time of descent, and the landing angle is steeper
+Than the launch angle.
 :::
 
 <hr />
@@ -247,7 +247,7 @@ than the launch angle.
 ### 4.1 Resolving along arbitrary directions
 
 Sometimes it is convenient to resolve velocity or acceleration along non-horizontal/vertical
-directions, such as parallel and perpendicular to an inclined plane.
+Directions, such as parallel and perpendicular to an inclined plane.
 
 For an inclined plane at angle $\alpha$ to the horizontal:
 
@@ -257,8 +257,8 @@ For an inclined plane at angle $\alpha$ to the horizontal:
 ### 4.2 Worked example: projectile on an inclined plane
 
 **Problem.** A particle is projected up a plane inclined at $30^\circ$ to the horizontal with
-speed $20\;\mathrm{m\,s^{-1}}$ at an angle of $50^\circ$ to the horizontal. Taking $g = 9.8\;\mathrm{m\,s^{-1}}$,
-find the distance travelled up the plane before the particle lands on it.
+Speed $20\;\mathrm{m\,s^{-1}}$ at an angle of $50^\circ$ to the horizontal. Taking $g = 9.8\;\mathrm{m\,s^{-1}}$
+Find the distance travelled up the plane before the particle lands on it.
 
 Resolve parallel and perpendicular to the plane. The angle of projection relative to the plane is
 $50^\circ - 30^\circ = 20^\circ$.
@@ -288,14 +288,14 @@ $$s_{\parallel} = 18.79(1.611) + \tfrac{1}{2}(-4.9)(1.611)^2 = 30.27 - 6.36 \app
 ### 5.1 Using calculus for non-constant acceleration
 
 When acceleration is not constant, the SUVAT equations do not apply. Instead, we use the calculus
-relationships:
+Relationships:
 
 $$v = \frac{ds}{dt}, \qquad a = \frac{dv}{dt} = \frac{d^2s}{dt^2} = v\frac{dv}{ds}$$
 
 $$s = \int v\,dt, \qquad v = \int a\,dt$$
 
 The chain rule form $a = v\,\dfrac{dv}{ds}$ is particularly useful when acceleration is given as a
-function of displacement rather than time.
+Function of displacement rather than time.
 
 ### 5.2 Derivation of $a = v\,\dfrac{dv}{ds}$
 
@@ -310,12 +310,12 @@ $$v\,dv = a\,ds \implies \int v\,dv = \int a\,ds \implies \frac{1}{2}v^2 = \int 
 ### 5.3 Worked example: $a = f(t)$
 
 **Problem.** A particle moves in a straight line with acceleration $a = 6t - 2t^2\;\mathrm{m\,s^{-2}}$.
-At $t = 0$, $v = 3\;\mathrm{m\,s^{-1}}$ and $s = 0$. Find the distance travelled in the first
+At $t = 0$$v = 3\;\mathrm{m\,s^{-1}}$ and $s = 0$. Find the distance travelled in the first
 $4$ seconds.
 
 $$v = \int (6t - 2t^2)\,dt = 3t^2 - \frac{2}{3}t^3 + C$$
 
-When $t = 0$, $v = 3$: $C = 3$.
+When $t = 0$$v = 3$: $C = 3$.
 
 $$v = 3t^2 - \frac{2}{3}t^3 + 3$$
 
@@ -345,7 +345,7 @@ $$\int \frac{1}{v^2}\,dv = \int -0.1\,dt$$
 
 $$-\frac{1}{v} = -0.1t + C$$
 
-When $t = 0$, $v = 10$: $-\dfrac{1}{10} = C$.
+When $t = 0$$v = 10$: $-\dfrac{1}{10} = C$.
 
 $$-\frac{1}{v} = -0.1t - \frac{1}{10}$$
 
@@ -354,11 +354,11 @@ $$\frac{1}{v} = 0.1t + 0.1 = 0.1(t + 1)$$
 $$v = \frac{10}{t + 1}\;\mathrm{m\,s^{-1}}$$
 
 :::warning
-warning
+Warning
 For variable acceleration problems, **always include the constant of integration** and use the
-initial conditions to find it. Also check whether the particle changes direction by finding when
+Initial conditions to find it. Also check whether the particle changes direction by finding when
 $v = 0$ -- the total distance is not the same as the displacement if there is a change of
-direction.
+Direction.
 :::
 
 <hr />
@@ -384,7 +384,7 @@ $$t = \frac{v - u}{a} = \frac{-40}{-1} = 40\;\mathrm{s}$$
 ### Problem 2
 
 A projectile is launched from ground level at $30\;\mathrm{m\,s^{-1}}$ at $60^\circ$ to the horizontal.
-Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the maximum height and the range.
+Taking $g = 9.8\;\mathrm{m\,s^{-2}}$Find the maximum height and the range.
 
 <details>
 <summary>Solution</summary>
@@ -397,19 +397,19 @@ $$R = \frac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆900 \
 
 ### Problem 3
 
-A particle moves with acceleration $a = 12t\;\mathrm{m\,s^{-2}}$. At $t = 0$, it is at rest at the
-origin. Find its displacement when $t = 3\;\mathrm{s}$.
+A particle moves with acceleration $a = 12t\;\mathrm{m\,s^{-2}}$. At $t = 0$It is at rest at the
+Origin. Find its displacement when $t = 3\;\mathrm{s}$.
 
 <details>
 <summary>Solution</summary>
 
 $$v = \int 12t\,dt = 6t^2 + C_1$$
 
-When $t = 0$, $v = 0$: $C_1 = 0$, so $v = 6t^2$.
+When $t = 0$$v = 0$: $C_1 = 0$So $v = 6t^2$.
 
 $$s = \int 6t^2\,dt = 2t^3 + C_2$$
 
-When $t = 0$, $s = 0$: $C_2 = 0$, so $s = 2t^3$.
+When $t = 0$$s = 0$: $C_2 = 0$So $s = 2t^3$.
 
 At $t = 3$: $s = 2(27) = 54\;\mathrm{m}$.
 
@@ -418,19 +418,19 @@ At $t = 3$: $s = 2(27) = 54\;\mathrm{m}$.
 ### Problem 4
 
 A stone is thrown horizontally at $8\;\mathrm{m\,s^{-1}}$ from the top of a cliff $60\;\mathrm{m}$ high.
-Taking $g = 9.8\;\mathrm{m\,s^{-2}}$, find the horizontal distance from the base of the cliff where the
-stone lands, and the velocity (magnitude and direction) at impact.
+Taking $g = 9.8\;\mathrm{m\,s^{-2}}$Find the horizontal distance from the base of the cliff where the
+Stone lands, and the velocity (magnitude and direction) at impact.
 
 <details>
 <summary>Solution</summary>
 
-Vertical: $s = -60$, $u_y = 0$, $a = -9.8$.
+Vertical: $s = -60$$u_y = 0$$a = -9.8$.
 
 $$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt◆LB◆\frac{120}{9.8}◆RB◆ \approx 3.50\;\mathrm{s}$$
 
 Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{m}$.
 
-At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$, $v_x = 8\;\mathrm{m\,s^{-1}}$.
+At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$$v_x = 8\;\mathrm{m\,s^{-1}}$.
 
 $$|\mathbf{v}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
 
@@ -440,9 +440,9 @@ Angle below horizontal: $\theta = \arctan\!\left(\dfrac{34.3}{8}\right) \approx 
 
 ### Problem 5
 
-A particle moves in a straight line so that its acceleration is given by $a = 4 - 2s\;\mathrm{m\,s^{-2}}$,
-where $s$ is the displacement from a fixed point. When $s = 0$, $v = 2\;\mathrm{m\,s^{-1}}$. Find the
-maximum displacement.
+A particle moves in a straight line so that its acceleration is given by $a = 4 - 2s\;\mathrm{m\,s^{-2}}$
+Where $s$ is the displacement from a fixed point. When $s = 0$$v = 2\;\mathrm{m\,s^{-1}}$. Find the
+Maximum displacement.
 
 <details>
 <summary>Solution</summary>
@@ -457,7 +457,7 @@ $$\int v\,dv = \int (4 - 2s)\,ds$$
 
 $$\frac{1}{2}v^2 = 4s - s^2 + C$$
 
-When $s = 0$, $v = 2$: $\dfrac{1}{2}(4) = 0 + C \implies C = 2$.
+When $s = 0$$v = 2$: $\dfrac{1}{2}(4) = 0 + C \implies C = 2$.
 
 $$\frac{1}{2}v^2 = 4s - s^2 + 2$$
 
@@ -470,3 +470,15 @@ $$s = \frac◆LB◆4 \pm \sqrt{16 + 8}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆4
 Taking the positive root: $s_{\max} = 2 + \sqrt{6} \approx 4.45\;\mathrm{m}$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

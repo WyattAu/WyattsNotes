@@ -29,13 +29,13 @@ For each of the following statements, state whether the condition $P$ is necessa
 
 **Solution:**
 
-**(a)** **Both necessary and sufficient.** If $n$ is divisible by $4$, then $n = 4k$, so $n^2 = 16k^2$, which is divisible by $16$ (sufficient). Conversely, if $n^2$ is divisible by $16 = 2^4$, then $n^2$ has at least $4$ factors of $2$, so $n$ has at least $2$ factors of $2$, meaning $n$ is divisible by $4$ (necessary).
+**(a)** **Both necessary and sufficient.** If $n$ is divisible by $4$Then $n = 4k$So $n^2 = 16k^2$Which is divisible by $16$ (sufficient). Conversely, if $n^2$ is divisible by $16 = 2^4$Then $n^2$ has at least $4$ factors of $2$So $n$ has at least $2$ factors of $2$Meaning $n$ is divisible by $4$ (necessary).
 
-**(b)** **Sufficient but not necessary.** If $f''(x) \gt 0$ everywhere, then $f'(x)$ is strictly increasing. If $f'(c) = 0$ for some $c$, then $f'(x) \lt 0$ for $x \lt c$ and $f'(x) \gt 0$ for $x \gt c$, making $f$ strictly convex with a unique global minimum. This means $f$ is injective (sufficient). However, $f(x) = x^3$ is injective but $f''(0) = 0 \not\gt 0$ (not necessary).
+**(b)** **Sufficient but not necessary.** If $f''(x) \gt 0$ everywhere, then $f'(x)$ is strictly increasing. If $f'(c) = 0$ for some $c$Then $f'(x) \lt 0$ for $x \lt c$ and $f'(x) \gt 0$ for $x \gt c$Making $f$ strictly convex with a unique global minimum. This means $f$ is injective (sufficient). However, $f(x) = x^3$ is injective but $f''(0) = 0 \not\gt 0$ (not necessary).
 
 **(c)** **Both necessary and sufficient.** $\Delta = 0$ gives exactly one real root (sufficient). If the quadratic has exactly one real root, then $\Delta = 0$ (necessary, since $\Delta \gt 0$ gives two distinct roots and $\Delta \lt 0$ gives none).
 
-**(d)** This is the **fallacy of affirming the consequent**. $P \implies Q$ and $Q$ does not imply $P$. The correct inference from $P \implies Q$ and $Q$ is nothing — we cannot deduce $P$. The valid inference is *modus ponens*: from $P \implies Q$ and $P$, we deduce $Q$.
+**(d)** This is the **fallacy of affirming the consequent**. $P \implies Q$ and $Q$ does not imply $P$. The correct inference from $P \implies Q$ and $Q$ is nothing — we cannot deduce $P$. The valid inference is *modus ponens*: from $P \implies Q$ and $P$We deduce $Q$.
 
 ---
 
@@ -63,7 +63,7 @@ $$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{'
 
 **(b)** The student made two errors:
 1. The existential quantifier on $\delta$ should be universal ($\forall \delta \gt 0$), not existential.
-2. The negation of the implication was written incorrectly. The student wrote the "converse implication" with a negated conclusion, rather than the correct negation which is $(0 \lt |x-a| \lt \delta) \wedge (|f(x) - f(a)| \geq \varepsilon)$. The student kept the implication structure $\implies$, which is wrong.
+2. The negation of the implication was written incorrectly. The student wrote the "converse implication" with a negated conclusion, rather than the correct negation which is $(0 \lt |x-a| \lt \delta) \wedge (|f(x) - f(a)| \geq \varepsilon)$. The student kept the implication structure $\implies$Which is wrong.
 
 ---
 
@@ -71,12 +71,12 @@ $$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{'
 
 **Question:**
 
-Prove that if $n^3 + 5n$ is even for some integer $n$, then $n$ is even.
+Prove that if $n^3 + 5n$ is even for some integer $n$Then $n$ is even.
 
 A student writes:
 
 > We prove the contrapositive: if $n$ is odd, then $n^3 + 5n$ is odd.
-> If $n = 2k + 1$, then $n^3 + 5n = (2k+1)^3 + 5(2k+1) = 8k^3 + 12k^2 + 8k + 1 + 10k + 5 = 8k^3 + 12k^2 + 18k + 6 = 2(4k^3 + 6k^2 + 9k + 3)$, which is even.
+> If $n = 2k + 1$Then $n^3 + 5n = (2k+1)^3 + 5(2k+1) = 8k^3 + 12k^2 + 8k + 1 + 10k + 5 = 8k^3 + 12k^2 + 18k + 6 = 2(4k^3 + 6k^2 + 9k + 3)$Which is even.
 
 **(a)** Explain why the student's answer is self-contradictory.
 
@@ -88,7 +88,7 @@ A student writes:
 
 **(a)** The student set out to prove "if $n$ is odd, then $n^3 + 5n$ is odd" (the contrapositive), but the algebra showed that $n^3 + 5n$ is **even** when $n$ is odd. This contradicts what the student was trying to prove. The conclusion should be that $n^3 + 5n$ is even, which means the contrapositive is **false**, implying the original statement is **false**.
 
-In fact, the original statement "if $n^3 + 5n$ is even, then $n$ is even" **is false**: when $n$ is odd, $n^3 + 5n = 2(4k^3 + 6k^2 + 9k + 3)$ is always even. So $n^3 + 5n$ is even for ALL integers $n$, not just even ones. The original statement is false, and the student's work inadvertently proves this.
+In fact, the original statement "if $n^3 + 5n$ is even, then $n$ is even" **is false**: when $n$ is odd, $n^3 + 5n = 2(4k^3 + 6k^2 + 9k + 3)$ is always even. So $n^3 + 5n$ is even for ALL integers $n$Not just even ones. The original statement is false, and the student's work inadvertently proves this.
 
 **(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{'\{'}Z{'\}'}$ (as shown above), the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is $n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
 
@@ -114,7 +114,7 @@ The correct statement should be $3^{2n+1} + 2^{n+2}$. Verification: $3^{2(1)+1} 
 
 **Corrected problem:** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by $7$ for all $n \in \mathbb{'\{'}N{'\}'}$.
 
-**Base case ($n = 0$):** $3^1 + 2^2 = 3 + 4 = 7$, divisible by $7$. True.
+**Base case ($n = 0$):** $3^1 + 2^2 = 3 + 4 = 7$Divisible by $7$. True.
 
 **Inductive hypothesis:** Assume $3^{2k+1} + 2^{k+2} = 7m$ for some integer $m$.
 
@@ -148,12 +148,12 @@ Prove that $\sqrt{2} + \sqrt{3}$ is irrational.
 
 Assume $\sqrt{2} + \sqrt{3}$ is rational. Then $\sqrt{2} + \sqrt{3} = \frac{a}{b}$ for some coprime positive integers $a, b$.
 
-Squaring: $2 + 2\sqrt{6} + 3 = \frac{a^2}{b^2}$, so:
+Squaring: $2 + 2\sqrt{6} + 3 = \frac{a^2}{b^2}$So:
 
 $$2\sqrt{6} = \frac{a^2}{b^2} - 5$$
 
 $$\sqrt{6} = \frac{a^2 - 5b^2}{2b^2}$$
 
-Since $a, b$ are integers, the RHS is rational. So $\sqrt{6}$ is rational. But $\sqrt{6}$ is irrational (proved by the standard contradiction proof: if $\sqrt{6} = \frac{p}{q}$ in lowest terms, then $p^2 = 6q^2$, so $p$ is even, $p = 2r$, $4r^2 = 6q^2$, $2r^2 = 3q^2$, so $q$ is even, contradicting lowest terms).
+Since $a, b$ are integers, the RHS is rational. So $\sqrt{6}$ is rational. But $\sqrt{6}$ is irrational (proved by the standard contradiction proof: if $\sqrt{6} = \frac{p}{q}$ in lowest terms, then $p^2 = 6q^2$So $p$ is even, $p = 2r$$4r^2 = 6q^2$$2r^2 = 3q^2$So $q$ is even, contradicting lowest terms).
 
 This contradiction means our assumption is false. Therefore $\sqrt{2} + \sqrt{3}$ is irrational.

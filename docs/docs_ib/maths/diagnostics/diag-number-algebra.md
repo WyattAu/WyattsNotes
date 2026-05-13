@@ -21,7 +21,7 @@ $$\sum_{n=1}^{5} n = \sum_{n=0}^{4} n$$
 
 **(a)** Identify the error and write the correct identity for shifting the index by $-1$.
 
-**(b)** Evaluate $\displaystyle\sum_{k=3}^{20} (k - 2)$ by reindexing to start from $k = 1$, and verify your answer using the formula for the sum of the first $N$ positive integers.
+**(b)** Evaluate $\displaystyle\sum_{k=3}^{20} (k - 2)$ by reindexing to start from $k = 1$And verify your answer using the formula for the sum of the first $N$ positive integers.
 
 **(c)** Evaluate $\displaystyle\sum_{n=1}^{10} n(n+1) - \sum_{n=2}^{11} (n-1)^2$.
 
@@ -29,23 +29,23 @@ $$\sum_{n=1}^{5} n = \sum_{n=0}^{4} n$$
 
 **Solution:**
 
-**(a)** When shifting the index from $n$ to $n' = n - 1$ (so $n = n' + 1$), the bounds change from $n = 1$ to $n' = 0$ and $n = 5$ to $n' = 4$, but the general term must also change. The correct identity is:
+**(a)** When shifting the index from $n$ to $n' = n - 1$ (so $n = n' + 1$), the bounds change from $n = 1$ to $n' = 0$ and $n = 5$ to $n' = 4$But the general term must also change. The correct identity is:
 
 $$\sum_{n=1}^{5} n = \sum_{n'=0}^{4} (n' + 1)$$
 
 The student's error was writing $\sum_{n=0}^{4} n$ instead of $\sum_{n=0}^{4} (n + 1)$. The LHS equals $15$ but the student's RHS equals $10$.
 
-**(b)** Let $j = k - 2$, so when $k = 3$, $j = 1$, and when $k = 20$, $j = 18$:
+**(b)** Let $j = k - 2$So when $k = 3$$j = 1$And when $k = 20$$j = 18$:
 
 $$\sum_{k=3}^{20} (k - 2) = \sum_{j=1}^{18} j = \frac{18 \times 19}{2} = 171$$
 
-Verification: the original sum has 18 terms from $1$ to $18$, confirming the result.
+Verification: the original sum has 18 terms from $1$ to $18$Confirming the result.
 
 **(c)**
 
 $$\sum_{n=1}^{10} n(n+1) = \sum_{n=1}^{10}(n^2 + n) = \frac{10 \times 11 \times 21}{6} + \frac{10 \times 11}{2} = 385 + 55 = 440$$
 
-For the second sum, let $m = n - 1$, so when $n = 2$, $m = 1$, and when $n = 11$, $m = 10$:
+For the second sum, let $m = n - 1$So when $n = 2$$m = 1$And when $n = 11$$m = 10$:
 
 $$\sum_{n=2}^{11} (n-1)^2 = \sum_{m=1}^{10} m^2 = \frac{10 \times 11 \times 21}{6} = 385$$
 
@@ -81,13 +81,13 @@ $$\binom{-1/2}{3}(-2)^3 = -\frac{5}{16} \times (-8) = \frac{5}{2}$$
 
 So the coefficient of $x^3$ is $\dfrac{5}{2}$.
 
-**(b)** The expansion $(1 + x)^n$ for non-integer $n$ converges when $|x| \lt 1$. Here we have $(1 - 2x)^{-1/2}$, so we need $|-2x| \lt 1$, i.e., $|x| \lt \dfrac{1}{2}$.
+**(b)** The expansion $(1 + x)^n$ for non-integer $n$ converges when $|x| \lt 1$. Here we have $(1 - 2x)^{-1/2}$So we need $|-2x| \lt 1$I.e., $|x| \lt \dfrac{1}{2}$.
 
 **(c)** The student computed $\frac{n(n-1)}{2!}(-2)^2$ but used $n = -\frac{1}{2}$ incorrectly. The correct computation for the coefficient of $x^2$:
 
 $$\binom{-1/2}{2}(-2)^2 = \frac{(-1/2)(-3/2)}{2} \times 4 = \frac{3/4}{2} \times 4 = \frac{3}{8} \times 4 = \frac{3}{2}$$
 
-The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}$ only involves two factors $\frac{n(n-1)}{2!}$, not three. The correct coefficient is $\dfrac{3}{2}$, not $-3$.
+The student's error was multiplying three terms instead of two: $\binom{-1/2}{2}$ only involves two factors $\frac{n(n-1)}{2!}$Not three. The correct coefficient is $\dfrac{3}{2}$Not $-3$.
 
 ---
 
@@ -99,7 +99,7 @@ Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all $n \i
 
 A student presents the following proof:
 
-> **Base case ($n = 0$):** $7^0 - 1 = 0$, which is divisible by $6$.
+> **Base case ($n = 0$):** $7^0 - 1 = 0$Which is divisible by $6$.
 >
 > **Inductive step:** Assume $7^k - 1 = 6m$. Then $7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 6 = 6(7m + 1)$.
 
@@ -111,13 +111,13 @@ A student presents the following proof:
 
 **Solution:**
 
-**(a)** The statement claims "for all $n \in \mathbb{'\{'}Z{'\}'}^+$", meaning $n \geq 1$. The student verified the base case at $n = 0$, which is outside the domain of the claim. While $n = 0$ does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at $n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the claim.
+**(a)** The statement claims "for all $n \in \mathbb{'\{'}Z{'\}'}^+$", meaning $n \geq 1$. The student verified the base case at $n = 0$Which is outside the domain of the claim. While $n = 0$ does happen to satisfy the property, the proof must start at $n = 1$ to be valid. The base case at $n = 0$ is unnecessary and, if it were the only base case, would not constitute a valid proof of the claim.
 
 **(b)**
 
-**Base case ($n = 1$):** $7^1 - 1 = 6$, which is divisible by $6$. True.
+**Base case ($n = 1$):** $7^1 - 1 = 6$Which is divisible by $6$. True.
 
-**Inductive hypothesis:** Assume $7^k - 1 = 6m$ for some integer $m$, where $k \geq 1$.
+**Inductive hypothesis:** Assume $7^k - 1 = 6m$ for some integer $m$Where $k \geq 1$.
 
 **Inductive step:** We must show $7^{k+1} - 1$ is divisible by $6$.
 
@@ -163,7 +163,7 @@ Therefore:
 
 $$f(x) = \frac{1}{2}\sum_{n=0}^{\infty}\big(1 + (-1)^n\big)x^n$$
 
-This gives $f(x) = 1 + x^2 + x^4 + x^6 + \cdots$, a geometric series with first term $1$ and common ratio $x^2$, valid for $|x^2| \lt 1$, i.e., $x \in (-1, 1)$.
+This gives $f(x) = 1 + x^2 + x^4 + x^6 + \cdots$A geometric series with first term $1$ and common ratio $x^2$Valid for $|x^2| \lt 1$I.e., $x \in (-1, 1)$.
 
 **(b)** This is a geometric series with first term $1$ and common ratio $r = \dfrac{1}{4}$. Since $|r| \lt 1$:
 
@@ -173,7 +173,7 @@ $$S_{\infty} = \frac{1}{1 - \frac{1}{4}} = \frac{4}{3}$$
 
 This is a geometric series with first term $1$ and common ratio $r = \dfrac{x^2}{3}$.
 
-Convergence requires $|r| \lt 1$, so $\left|\dfrac{x^2}{3}\right| \lt 1$, giving $x^2 \lt 3$, i.e., $-\sqrt{3} \lt x \lt \sqrt{3}$.
+Convergence requires $|r| \lt 1$So $\left|\dfrac{x^2}{3}\right| \lt 1$Giving $x^2 \lt 3$I.e., $-\sqrt{3} \lt x \lt \sqrt{3}$.
 
 $$S_{\infty} = \frac{1}{1 - \frac{x^2}{3}} = \frac{3}{3 - x^2}$$
 
@@ -199,7 +199,7 @@ Given $f(x) = \log_3(x + 4)$ and $g(x) = x^2 - 5$:
 
 Domain restrictions:
 - From $g(x)$: $x \in \mathbb{'\{'}R{'\}'}$ (no restriction, polynomial).
-- From $f$: the argument must be positive, so $x^2 - 1 \gt 0$, giving $x \lt -1$ or $x \gt 1$.
+- From $f$: the argument must be positive, so $x^2 - 1 \gt 0$Giving $x \lt -1$ or $x \gt 1$.
 
 Domain of $f \circ g$: $(-\infty, -1) \cup (1, \infty)$.
 
@@ -209,7 +209,7 @@ Check against domain: $\sqrt{10} \approx 3.16 \gt 1$ (valid) and $-\sqrt{10} \ap
 
 Both solutions are valid: $x = \sqrt{10}$ and $x = -\sqrt{10}$.
 
-**(c)** The student solved $\log_3(x^2 - 1) = 2$ correctly, but without checking the domain. In this case both solutions are valid. However, if the equation were $\log_3(x - 1) = 2$, solving gives $x - 1 = 9 \implies x = 10$, but the domain requires $x \gt 1$, so $x = 10$ is valid. If instead the equation were $\log_3(1 - x) = 2$, then $1 - x = 9 \implies x = -8$, but the domain requires $1 - x \gt 0 \implies x \lt 1$, so $x = -8$ is valid. The key point is that logarithm arguments must always be positive, and extraneous solutions arise when the algebraic solution violates this constraint.
+**(c)** The student solved $\log_3(x^2 - 1) = 2$ correctly, but without checking the domain. In this case both solutions are valid. However, if the equation were $\log_3(x - 1) = 2$Solving gives $x - 1 = 9 \implies x = 10$But the domain requires $x \gt 1$So $x = 10$ is valid. If instead the equation were $\log_3(1 - x) = 2$Then $1 - x = 9 \implies x = -8$But the domain requires $1 - x \gt 0 \implies x \lt 1$So $x = -8$ is valid. The key point is that logarithm arguments must always be positive, and extraneous solutions arise when the algebraic solution violates this constraint.
 
 ---
 

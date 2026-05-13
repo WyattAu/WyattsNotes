@@ -12,13 +12,13 @@ slug: thermochemistry
 **Enthalpy** ($H$) is the heat content of a system at constant pressure.
 
 An **enthalpy change** ($\Delta H$) is the heat energy exchanged with the surroundings during a
-reaction at constant pressure.
+Reaction at constant pressure.
 
 ### Sign Convention
 
-| Type        | Sign             | Energy Flow                           |
+| Type | Sign | Energy Flow |
 | ----------- | ---------------- | ------------------------------------- |
-| Exothermic  | $\Delta H \lt 0$ | System releases heat to surroundings  |
+| Exothermic | $\Delta H \lt 0$ | System releases heat to surroundings |
 | Endothermic | $\Delta H \gt 0$ | System absorbs heat from surroundings |
 
 ### Standard Conditions
@@ -27,17 +27,17 @@ Standard enthalpy changes are measured under standard conditions:
 
 - Pressure: $100\mathrm{ kPa}$ (IB standard)
 - Concentration: $1\mathrm{ mol/L}$ for solutions
-- Temperature: usually $298\mathrm{ K}$ ($25\degree\mathrm{C}$)
+- Temperature: $298\mathrm{ K}$ ($25\degree\mathrm{C}$)
 - All substances in their standard states
 
 ### Types of Enthalpy Change
 
-| Type                                | Symbol                           | Definition                                                                        |
+| Type | Symbol | Definition |
 | ----------------------------------- | -------------------------------- | --------------------------------------------------------------------------------- |
-| Standard enthalpy of formation      | $\Delta H_f^\circ$               | Enthalpy change when 1 mol of compound forms from its elements in standard states |
-| Standard enthalpy of combustion     | $\Delta H_c^\circ$               | Enthalpy change when 1 mol of substance burns completely in oxygen                |
-| Standard enthalpy of neutralisation | $\Delta H_{\mathrm{neut}}^\circ$ | Enthalpy change when 1 mol of water forms from acid-base reaction                 |
-| Standard enthalpy of atomisation    | $\Delta H_{\mathrm{at}}^\circ$   | Enthalpy change to form 1 mol of gaseous atoms from element in standard state     |
+| Standard enthalpy of formation | $\Delta H_f^\circ$ | Enthalpy change when 1 mol of compound forms from its elements in standard states |
+| Standard enthalpy of combustion | $\Delta H_c^\circ$ | Enthalpy change when 1 mol of substance burns completely in oxygen |
+| Standard enthalpy of neutralisation | $\Delta H_{\mathrm{neut}}^\circ$ | Enthalpy change when 1 mol of water forms from acid-base reaction |
+| Standard enthalpy of atomisation | $\Delta H_{\mathrm{at}}^\circ$ | Enthalpy change to form 1 mol of gaseous atoms from element in standard state |
 
 :::warning[Exam Tip]
 
@@ -60,10 +60,10 @@ The amount of energy required to raise the temperature of $1\mathrm{ g}$ of a su
 $1\degree\mathrm{C}$:
 
 $$
-q = mc\Delta T
+Q = mc\Delta T
 $$
 
-where:
+Where:
 
 - $q$ = heat energy (J)
 - $m$ = mass (g)
@@ -72,11 +72,11 @@ where:
 
 | Substance | $c$ (J/g/$\degree$C) |
 | --------- | -------------------- |
-| Water     | 4.18                 |
-| Ice       | 2.09                 |
-| Aluminium | 0.90                 |
-| Copper    | 0.39                 |
-| Iron      | 0.45                 |
+| Water | 4.18 |
+| Ice | 2.09 |
+| Aluminium | 0.90 |
+| Copper | 0.39 |
+| Iron | 0.45 |
 
 ### Measuring Enthalpy of Reaction
 
@@ -97,19 +97,19 @@ The negative sign accounts for the convention: heat lost by the reaction is gain
 :::info[Example]
 
 $50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ HCl is mixed with $50.0\mathrm{ mL}$ of $1.0\mathrm{ M}$ NaOH
-in a calorimeter. The temperature rises from $21.0\degree\mathrm{C}$ to $27.5\degree\mathrm{C}$.
+In a calorimeter. The temperature rises from $21.0\degree\mathrm{C}$ to $27.5\degree\mathrm{C}$.
 Calculate the enthalpy of neutralisation.
 
 $$
-m = 100.0\mathrm{ g} \mathrm{ (assuming density of water)}
+M = 100.0\mathrm{ g} \mathrm{ (assuming density of water)}
 $$
 
 $$
-q = mc\Delta T = 100.0 \times 4.18 \times 6.5 = 2717\mathrm{ J} = 2.717\mathrm{ kJ}
+Q = mc\Delta T = 100.0 \times 4.18 \times 6.5 = 2717\mathrm{ J} = 2.717\mathrm{ kJ}
 $$
 
 $$
-n(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol} \mathrm{ (limited by the reagent volumes)}
+N(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol} \mathrm{ (limited by the reagent volumes)}
 $$
 
 $$
@@ -121,10 +121,10 @@ $$
 ### Bomb Calorimetry
 
 Used for combustion reactions. The calorimeter constant $C$ accounts for the heat absorbed by the
-calorimeter:
+Calorimeter:
 
 $$
-q_{\mathrm{reaction}} = -(mc\Delta T + C\Delta T)
+Q_{\mathrm{reaction}} = -(mc\Delta T + C\Delta T)
 $$
 
 ---
@@ -133,8 +133,8 @@ $$
 
 ### Statement
 
-The total enthalpy change for a reaction is independent of the route taken. It depends only on the
-initial and final states.
+The total enthalpy change for a reaction is independent of the route taken. Only on the
+Initial and final states.
 
 $$
 \Delta H_{\mathrm{total}} = \Delta H_1 + \Delta H_2 + \cdots
@@ -143,7 +143,7 @@ $$
 ### Using Enthalpy Cycles
 
 To find an unknown enthalpy change, construct a cycle with known enthalpy changes and apply Hess's
-law.
+Law.
 
 ### Using Standard Enthalpies of Formation
 
@@ -186,26 +186,26 @@ Note the reversed order compared to formation enthalpies.
 ### Definition
 
 The **bond enthalpy** (bond dissociation energy) is the enthalpy change when one mole of covalent
-bonds in the gas phase is broken.
+Bonds in the gas phase is broken.
 
 ### Average Bond Enthalpies
 
 Since bond enthalpies vary slightly depending on the molecular environment, tables give average
-values.
+Values.
 
-| Bond       | Average Enthalpy (kJ/mol) |
+| Bond | Average Enthalpy (kJ/mol) |
 | ---------- | ------------------------- |
-| C--C       | 347                       |
-| C=C        | 612                       |
-| C$\equiv$C | 838                       |
-| C--H       | 413                       |
-| C--O       | 358                       |
-| C=O        | 743                       |
-| O--H       | 463                       |
-| O=O        | 495                       |
-| H--H       | 436                       |
-| N$\equiv$N | 945                       |
-| N--H       | 391                       |
+| C--C | 347 |
+| C=C | 612 |
+| C$\equiv$C | 838 |
+| C--H | 413 |
+| C--O | 358 |
+| C=O | 743 |
+| O--H | 463 |
+| O=O | 495 |
+| H--H | 436 |
+| N$\equiv$N | 945 |
+| N--H | 391 |
 
 ### Calculating Enthalpy Change from Bond Enthalpies
 
@@ -232,8 +232,8 @@ $$
 :::warning[Exam Tip]
 
 Bond enthalpy calculations give approximate values because average bond enthalpies are used. Values
-from Hess's law with formation data are more accurate. Bond enthalpy calculations only apply to
-gases.
+From Hess's law with formation data are more accurate. Bond enthalpy calculations only apply to
+Gases.
 
 :::
 
@@ -248,7 +248,7 @@ Born-Haber cycles determine the **lattice energy** of an ionic compound using a 
 ### Lattice Energy
 
 The lattice energy $\Delta H_{\mathrm{latt}}$ is the enthalpy change when one mole of an ionic
-compound is formed from its gaseous ions.
+Compound is formed from its gaseous ions.
 
 ### Steps in a Born-Haber Cycle
 
@@ -257,7 +257,7 @@ For an ionic compound MX:
 1. $\Delta H_f^\circ$: Standard enthalpy of formation of MX(s)
 2. $\Delta H_{\mathrm{at}}(M)$: Enthalpy of atomisation of M(s) $\to$ M(g)
 3. $\Delta H_{\mathrm{at}}(X_2)$: Enthalpy of atomisation of $\frac{1}{2}$X$_2$(g) $\to$ X(g)
-4. IE$_1$, IE$_2$, ...: Ionisation energies of M
+4. IE$_1$IE$_2$...: Ionisation energies of M
 5. EA$_1$: Electron affinity of X (energy released when X gains an electron)
 6. $\Delta H_{\mathrm{latt}}$: Lattice energy (exothermic)
 
@@ -291,10 +291,10 @@ $$
 
 ### Factors Affecting Lattice Energy
 
-| Factor                | Effect                |
+| Factor | Effect |
 | --------------------- | --------------------- |
-| Larger ionic charges  | Higher lattice energy |
-| Smaller ionic radii   | Higher lattice energy |
+| Larger ionic charges | Higher lattice energy |
+| Smaller ionic radii | Higher lattice energy |
 | Higher charge density | Higher lattice energy |
 
 ---
@@ -307,12 +307,12 @@ $$
 
 ### Factors Affecting Entropy
 
-| Factor                       | Effect on Entropy  |
+| Factor | Effect on Entropy |
 | ---------------------------- | ------------------ |
-| More particles               | Higher entropy     |
-| Higher temperature           | Higher entropy     |
+| More particles | Higher entropy |
+| Higher temperature | Higher entropy |
 | Gas $\to$ liquid $\to$ solid | Decreasing entropy |
-| Dissolving solid in solvent  | Increasing entropy |
+| Dissolving solid in solvent | Increasing entropy |
 
 ### Standard Entropy Change
 
@@ -324,8 +324,8 @@ $$
 
 Calculate $\Delta S^\circ$ for: CaCO$_3$(s) $\to$ CaO(s) + CO$_2$(g)
 
-Given: $S^\circ$(CaCO$_3$) = $92.9\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(CaO) =
-$39.7\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(CO$_2$) = $213.7\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+Given: $S^\circ$(CaCO$_3$) = $92.9\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(CaO) =
+$39.7\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(CO$_2$) = $213.7\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
 \Delta S^\circ = (39.7 + 213.7) - 92.9 = 253.4 - 92.9 = 160.5\mathrm{ J/(mol}\cdot\mathrm{K)}
@@ -347,15 +347,15 @@ $$
 \Delta G = \Delta H - T\Delta S
 $$
 
-where $T$ is the temperature in Kelvin.
+Where $T$ is the temperature in Kelvin.
 
 ### Spontaneity
 
-| $\Delta G$       | Spontaneity                                |
+| $\Delta G$ | Spontaneity |
 | ---------------- | ------------------------------------------ |
 | $\Delta G \lt 0$ | Spontaneous (thermodynamically favourable) |
-| $\Delta G = 0$   | At equilibrium                             |
-| $\Delta G \gt 0$ | Non-spontaneous                            |
+| $\Delta G = 0$ | At equilibrium |
+| $\Delta G \gt 0$ | Non-spontaneous |
 
 ### Standard Gibbs Free Energy Change
 
@@ -369,25 +369,25 @@ $$
 \Delta G^\circ = -RT\ln K
 $$
 
-where $R = 8.314\mathrm{ J/(mol}\cdot\mathrm{K)}$ and $K$ is the equilibrium constant.
+Where $R = 8.314\mathrm{ J/(mol}\cdot\mathrm{K)}$ and $K$ is the equilibrium constant.
 
 ### Temperature Dependence
 
 A reaction that is non-spontaneous at low temperature may become spontaneous at high temperature if
 $\Delta S \gt 0$ (and vice versa).
 
-| $\Delta H$ | $\Delta S$ | Spontaneous when   |
+| $\Delta H$ | $\Delta S$ | Spontaneous when |
 | ---------- | ---------- | ------------------ |
-| Negative   | Positive   | Always spontaneous |
-| Negative   | Negative   | Low temperature    |
-| Positive   | Positive   | High temperature   |
-| Positive   | Negative   | Never spontaneous  |
+| Negative | Positive | Always spontaneous |
+| Negative | Negative | Low temperature |
+| Positive | Positive | High temperature |
+| Positive | Negative | Never spontaneous |
 
 :::info[Example]
 
 For the reaction: CaCO$_3$(s) $\to$ CaO(s) + CO$_2$(g)
 
-$\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +160.5\mathrm{ J/(mol}\cdot\mathrm{K)}$
+$\Delta H = +178\mathrm{ kJ/mol}$$\Delta S = +160.5\mathrm{ J/(mol}\cdot\mathrm{K)}$
 
 Find the temperature at which the reaction becomes spontaneous.
 
@@ -424,11 +424,11 @@ $26.5\degree\mathrm{C}$.
 **(a)** Calculate the enthalpy change of neutralisation per mole of water formed.
 
 $$
-q = 50.0 \times 4.18 \times 6.5 = 1359\mathrm{ J}
+Q = 50.0 \times 4.18 \times 6.5 = 1359\mathrm{ J}
 $$
 
 $$
-n = 0.025 \times 1.0 = 0.025\mathrm{ mol}
+N = 0.025 \times 1.0 = 0.025\mathrm{ mol}
 $$
 
 $$
@@ -439,7 +439,7 @@ $$
 $-57.1\mathrm{ kJ/mol}$.
 
 Heat loss to the surroundings, calorimeter absorbs some heat, incomplete reaction, or the assumption
-that the solution has the same properties as pure water.
+That the solution has the same properties as pure water.
 
 ### Question 3 (Paper 2 style)
 
@@ -468,20 +468,20 @@ H$_2$O(l) $\to$ Ca(OH)$_2$(s) D. N$_2$(g) + 3H$_2$(g) $\to$ 2NH$_3$(g)
 
 ## Summary
 
-| Formula                 | Expression                                                                              |
+| Formula | Expression |
 | ----------------------- | --------------------------------------------------------------------------------------- |
-| Heat energy             | $q = mc\Delta T$                                                                        |
+| Heat energy | $q = mc\Delta T$ |
 | Enthalpy from formation | $\Delta H_r = \sum \Delta H_f(\mathrm{products}) - \sum \Delta H_f(\mathrm{reactants})$ |
-| From bond enthalpies    | $\Delta H = \sum(\mathrm{bonds broken}) - \sum(\mathrm{bonds formed})$                  |
-| Entropy change          | $\Delta S = \sum S(\mathrm{products}) - \sum S(\mathrm{reactants})$                     |
-| Gibbs free energy       | $\Delta G = \Delta H - T\Delta S$                                                       |
-| Equilibrium relation    | $\Delta G^\circ = -RT\ln K$                                                             |
+| From bond enthalpies | $\Delta H = \sum(\mathrm{bonds broken}) - \sum(\mathrm{bonds formed})$ |
+| Entropy change | $\Delta S = \sum S(\mathrm{products}) - \sum S(\mathrm{reactants})$ |
+| Gibbs free energy | $\Delta G = \Delta H - T\Delta S$ |
+| Equilibrium relation | $\Delta G^\circ = -RT\ln K$ |
 
 :::tip[Exam Strategy]
 
-For Hess's law questions, draw the energy cycle clearly. For calorimetry, always account for the
-total mass of the solution. For Gibbs free energy, pay attention to units — $\Delta H$ is typically
-in kJ/mol while $\Delta S$ is in J/(mol$\cdot$K), so convert one before combining.
+For Hess's law questions, draw the energy cycle . For calorimetry, always account for the
+Total mass of the solution. For Gibbs free energy, pay attention to units — $\Delta H$ is 
+In kJ/mol while $\Delta S$ is in J/(mol$\cdot$K), so convert one before combining.
 
 :::
 
@@ -492,7 +492,7 @@ in kJ/mol while $\Delta S$ is in J/(mol$\cdot$K), so convert one before combinin
 ### Enthalpy of Solution
 
 The enthalpy change when one mole of solute dissolves in a solvent to form an infinitely dilute
-solution:
+Solution:
 
 $$
 \Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{lattice}} + \Delta H_{\mathrm{hydration}}
@@ -511,17 +511,17 @@ $$
 
 ### Trends in Lattice Energy
 
-| Trend                 | Effect on Lattice Energy |
+| Trend | Effect on Lattice Energy |
 | --------------------- | ------------------------ |
-| Higher ionic charge   | Increases                |
-| Smaller ionic radius  | Increases                |
-| Higher charge density | Increases                |
+| Higher ionic charge | Increases |
+| Smaller ionic radius | Increases |
+| Higher charge density | Increases |
 
-| Comparison       | Higher Lattice Energy                  |
+| Comparison | Higher Lattice Energy |
 | ---------------- | -------------------------------------- |
-| NaCl vs NaBr     | NaCl (Br$^-$ is larger)                |
+| NaCl vs NaBr | NaCl (Br$^-$ is larger) |
 | NaCl vs MgCl$_2$ | MgCl$_2$ (Mg$^{2+}$ has higher charge) |
-| NaCl vs Na$_2$O  | Na$_2$O (O$^{2-}$ has higher charge)   |
+| NaCl vs Na$_2$O | Na$_2$O (O$^{2-}$ has higher charge) |
 
 ### Using Born-Haber Cycles to Compare Compounds
 
@@ -532,8 +532,8 @@ NaCl ($-788\mathrm{ kJ/mol}$).
 
 MgO has Mg$^{2+}$ and O$^{2-}$ ions (both doubly charged), while NaCl has Na$^+$ and Cl$^-$ ions
 (singly charged). The electrostatic attraction between ions is proportional to the product of their
-charges, so the doubly charged ions in MgO have much stronger attraction (four times stronger by
-Coulomb's law). Additionally, Mg$^{2+}$ is smaller than Na$^+$, further increasing lattice energy.
+Charges, so the doubly charged ions in MgO have much stronger attraction (four times stronger by
+Coulomb's law). Additionally, Mg$^{2+}$ is smaller than Na$^+$Further increasing lattice energy.
 
 :::
 
@@ -543,14 +543,14 @@ Coulomb's law). Additionally, Mg$^{2+}$ is smaller than Na$^+$, further increasi
 
 ### Predicting Entropy Changes
 
-| Process                         | $\Delta S$       | Reason                |
+| Process | $\Delta S$ | Reason |
 | ------------------------------- | ---------------- | --------------------- |
-| Solid $\to$ liquid              | Positive         | More disorder         |
-| Liquid $\to$ gas                | Positive         | Much more disorder    |
-| Dissolving ionic solid in water | Usually positive | Ions become dispersed |
-| Gas $\to$ solid                 | Negative         | Much less disorder    |
-| Decreasing volume of gas        | Negative         | Fewer microstates     |
-| Increasing temperature          | Positive         | More molecular motion |
+| Solid $\to$ liquid | Positive | More disorder |
+| Liquid $\to$ gas | Positive | Much more disorder |
+| Dissolving ionic solid in water | positive | Ions become dispersed |
+| Gas $\to$ solid | Negative | Much less disorder |
+| Decreasing volume of gas | Negative | Fewer microstates |
+| Increasing temperature | Positive | More molecular motion |
 
 ### Calculating $\Delta S$ for Reactions
 
@@ -558,8 +558,8 @@ Coulomb's law). Additionally, Mg$^{2+}$ is smaller than Na$^+$, further increasi
 
 Calculate $\Delta S^\circ$ for: 2H$_2$(g) + O$_2$(g) $\to$ 2H$_2$O(l)
 
-$S^\circ$(H$_2$) $= 131\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(O$_2$)
-$= 205\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(H$_2$O) $= 70\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+$S^\circ$(H$_2$) $= 131\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(O$_2$)
+$= 205\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(H$_2$O) $= 70\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
 \Delta S^\circ = 2(70) - [2(131) + 205] = 140 - 467 = -327\mathrm{ J/(mol}\cdot\mathrm{K)}
@@ -583,7 +583,7 @@ $$
 
 Calculate $\Delta G^\circ$ for: C(s) + CO$_2$(g) $\to$ 2CO(g) at $298\mathrm{ K}$.
 
-Given: $\Delta G_f^\circ$(CO$_2$) $= -394\mathrm{ kJ/mol}$, $\Delta G_f^\circ$(CO)
+Given: $\Delta G_f^\circ$(CO$_2$) $= -394\mathrm{ kJ/mol}$$\Delta G_f^\circ$(CO)
 $= -137\mathrm{ kJ/mol}$.
 
 $$
@@ -609,7 +609,7 @@ $$
 K = e^{-(-5400)/(8.314 \times 298)} = e^{2.18} = 8.85
 $$
 
-Since $K \gt 1$, products are favoured at equilibrium.
+Since $K \gt 1$Products are favoured at equilibrium.
 
 :::
 
@@ -620,17 +620,17 @@ Since $K \gt 1$, products are favoured at equilibrium.
 ### Question 5 (Paper 2 style)
 
 The enthalpy of combustion of methanol is $-726\mathrm{ kJ/mol}$. A spirit burner containing
-methanol is used to heat $200\mathrm{ g}$ of water from $20.0\degree\mathrm{C}$ to
+Methanol is used to heat $200\mathrm{ g}$ of water from $20.0\degree\mathrm{C}$ to
 $65.0\degree\mathrm{C}$. The mass of methanol burned is $1.50\mathrm{ g}$.
 
 **(a)** Calculate the experimental enthalpy of combustion.
 
 $$
-q = 200 \times 4.18 \times 45 = 37620\mathrm{ J} = 37.62\mathrm{ kJ}
+Q = 200 \times 4.18 \times 45 = 37620\mathrm{ J} = 37.62\mathrm{ kJ}
 $$
 
 $$
-n(\mathrm{CH}_3\mathrm{OH}) = \frac{1.50}{32.04} = 0.0468\mathrm{ mol}
+N(\mathrm{CH}_3\mathrm{OH}) = \frac{1.50}{32.04} = 0.0468\mathrm{ mol}
 $$
 
 $$
@@ -646,12 +646,12 @@ $$
 **(c)** Explain two sources of error.
 
 Heat loss to the surroundings; incomplete combustion of methanol; not all heat transferred to the
-water; the calorimeter absorbs some heat.
+Water; the calorimeter absorbs some heat.
 
 ### Question 6 (Paper 1 style)
 
 For the reaction: N$_2$O$_4$(g) $\rightleftharpoons$ 2NO$_2$(g), $\Delta H = +57\mathrm{ kJ/mol}$
-and $\Delta S = +176\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+And $\Delta S = +176\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 At what temperature does the reaction become spontaneous?
 
@@ -698,48 +698,48 @@ $$
 ### Enthalpy of Atomisation of Elements
 
 The enthalpy of atomisation is the enthalpy change to form one mole of gaseous atoms from the
-element in its standard state under standard conditions.
+Element in its standard state under standard conditions.
 
-| Element      | Standard State | $\Delta H_{\mathrm{at}}$ (kJ/mol) |
+| Element | Standard State | $\Delta H_{\mathrm{at}}$ (kJ/mol) |
 | ------------ | -------------- | --------------------------------- |
-| Na           | Solid          | $+108$                            |
-| Mg           | Solid          | $+148$                            |
-| Al           | Solid          | $+330$                            |
-| Cl$_2$       | Gas            | $+122$                            |
-| H$_2$        | Gas            | $+218$                            |
-| C (graphite) | Solid          | $+717$                            |
-| O$_2$        | Gas            | $+249$                            |
+| Na | Solid | $+108$ |
+| Mg | Solid | $+148$ |
+| Al | Solid | $+330$ |
+| Cl$_2$ | Gas | $+122$ |
+| H$_2$ | Gas | $+218$ |
+| C (graphite) | Solid | $+717$ |
+| O$_2$ | Gas | $+249$ |
 
 ### Electron Affinity Trends
 
 Electron affinity is the enthalpy change when one mole of gaseous atoms gains one electron.
 
-| Trend                           | Effect                          |
+| Trend | Effect |
 | ------------------------------- | ------------------------------- |
 | Across a period (left to right) | Generally becomes more negative |
-| Down a group                    | Generally becomes less negative |
-| Noble gases                     | Positive (unfavourable)         |
-| Group 17                        | Most negative (most favourable) |
+| Down a group | Generally becomes less negative |
+| Noble gases | Positive (unfavourable) |
+| Group 17 | Most negative (most favourable) |
 
 ### Ionisation Energy Trends
 
-| Trend           | Effect                                               |
+| Trend | Effect |
 | --------------- | ---------------------------------------------------- |
 | Across a period | Increases (nuclear charge increases, same shielding) |
-| Down a group    | Decreases (atomic radius increases)                  |
-| Large jumps     | Occur when removing electron from new shell          |
+| Down a group | Decreases (atomic radius increases) |
+| Large jumps | Occur when removing electron from new shell |
 
 ### Successive Ionisation Energies
 
 Each successive ionisation energy is larger than the previous one. Large jumps indicate removal from
-a new shell.
+A new shell.
 
 :::info[Example]
 
 The first four ionisation energies of aluminium are (in kJ/mol): 578, 1817, 2745, 11578.
 
 The large jump between the 3rd and 4th IE indicates that the 4th electron is being removed from a
-new (inner) shell. This confirms Al has 3 valence electrons.
+New (inner) shell. This confirms Al has 3 valence electrons.
 
 :::
 
@@ -748,21 +748,21 @@ new (inner) shell. This confirms Al has 3 valence electrons.
 When using a calorimeter, account for the heat absorbed by the calorimeter itself:
 
 $$
-q_{\mathrm{reaction}} = -(m_{\mathrm{solution}} c_{\mathrm{solution}} \Delta T + C_{\mathrm{calorimeter}} \Delta T)
+Q_{\mathrm{reaction}} = -(m_{\mathrm{solution}} c_{\mathrm{solution}} \Delta T + C_{\mathrm{calorimeter}} \Delta T)
 $$
 
 :::info[Example]
 
 $50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ HCl and $50\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ NaOH are mixed
-in a calorimeter with heat capacity $15\mathrm{ J/K}$. The temperature rises from
+In a calorimeter with heat capacity $15\mathrm{ J/K}$. The temperature rises from
 $20.0\degree\mathrm{C}$ to $26.8\degree\mathrm{C}$.
 
 $$
-q_{\mathrm{total}} = (100)(4.18)(6.8) + 15(6.8) = 2842.4 + 102 = 2944.4\mathrm{ J}
+Q_{\mathrm{total}} = (100)(4.18)(6.8) + 15(6.8) = 2842.4 + 102 = 2944.4\mathrm{ J}
 $$
 
 $$
-n(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol}
+N(\mathrm{H}_2\mathrm{O}) = 0.050\mathrm{ mol}
 $$
 
 $$
@@ -792,7 +792,7 @@ Using the following data, calculate the enthalpy of reaction for:
 
 $\mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l)$
 
-Given bond enthalpies (kJ/mol): C--H $= 413$, O=O $= 495$, C=O $= 743$, O--H $= 463$.
+Given bond enthalpies (kJ/mol): C--H $= 413$O=O $= 495$C=O $= 743$O--H $= 463$.
 
 **Bonds broken**:
 $4(\mathrm{C--H}) + 2(\mathrm{O=O}) = 4(413) + 2(495) = 1652 + 990 = 2642\mathrm{ kJ/mol}$
@@ -806,17 +806,17 @@ $$
 
 ### Question 10 (Paper 2 style)
 
-For the reaction: $\mathrm{N}_2\mathrm{O}(g) \to \mathrm{N}_2(g) + \mathrm{O}_2(g)$,
+For the reaction: $\mathrm{N}_2\mathrm{O}(g) \to \mathrm{N}_2(g) + \mathrm{O}_2(g)$
 $\Delta H = -163\mathrm{ kJ/mol}$ and $\Delta S = +149\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 **(a)** Calculate $\Delta G^\circ$ at $298\mathrm{ K}$ and state whether the reaction is
-spontaneous.
+Spontaneous.
 
 $$
 \Delta G^\circ = -163000 - 298 \times 149 = -163000 - 44402 = -207402\mathrm{ J/mol} = -207.4\mathrm{ kJ/mol}
 $$
 
-Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\mathrm{ K}$.
+Since $\Delta G^\circ \lt 0$The reaction is spontaneous at $298\mathrm{ K}$.
 
 **(b)** At what temperature does $\Delta G^\circ$ become positive?
 
@@ -836,7 +836,7 @@ $\Delta G^\circ$ is negative at all positive temperatures — the reaction is al
 $50.0\mathrm{ cm}^3$ of $1.0\mathrm{ M}$ $\mathrm{HCl}$ is mixed with $50.0\mathrm{ cm}^3$ of
 $1.0\mathrm{ M}$ $\mathrm{NaOH}$ in a calorimeter. The temperature increases from
 $22.0\degree\mathrm{C}$ to $28.8\degree\mathrm{C}$. Calculate the enthalpy of neutralisation per
-mole of water formed.
+Mole of water formed.
 
 </details>
 
@@ -858,8 +858,8 @@ Using standard enthalpies of formation, calculate $\Delta H_r^\circ$ for the com
 
 $$\mathrm{C}_3\mathrm{H}_8(g) + 5\mathrm{O}_2(g) \to 3\mathrm{CO}_2(g) + 4\mathrm{H}_2\mathrm{O}(l)$$
 
-Given: $\Delta H_f^\circ(\mathrm{C}_3\mathrm{H}_8) = -104\mathrm{ kJ/mol}$,
-$\Delta H_f^\circ(\mathrm{CO}_2) = -394\mathrm{ kJ/mol}$,
+Given: $\Delta H_f^\circ(\mathrm{C}_3\mathrm{H}_8) = -104\mathrm{ kJ/mol}$
+$\Delta H_f^\circ(\mathrm{CO}_2) = -394\mathrm{ kJ/mol}$
 $\Delta H_f^\circ(\mathrm{H}_2\mathrm{O}) = -286\mathrm{ kJ/mol}$.
 
 </details>
@@ -882,8 +882,8 @@ Using average bond enthalpies, calculate $\Delta H$ for the reaction:
 
 $$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$$
 
-Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$,
-$\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
+Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$
+$\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$$\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
 
 </details>
 
@@ -897,7 +897,7 @@ Bonds formed: $6(\mathrm{N}-\mathrm{H}) = 6 \times 391 = 2346\mathrm{ kJ/mol}$
 
 $$\Delta H = 2253 - 2346 = -93\mathrm{ kJ/mol}$$
 
-The actual value is $-92\mathrm{ kJ/mol}$, so the bond enthalpy approximation is close.
+The actual value is $-92\mathrm{ kJ/mol}$So the bond enthalpy approximation is close.
 
 </details>
 
@@ -908,7 +908,7 @@ For the decomposition of calcium carbonate:
 
 $$\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$$
 
-$\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
+$\Delta H = +178\mathrm{ kJ/mol}$$\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
 
 (a) Calculate $\Delta G$ at $298\mathrm{ K}$ and state whether the reaction is spontaneous.
 
@@ -922,7 +922,7 @@ $\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
 (a)
 $$\Delta G = \Delta H - T\Delta S = 178000 - 298 \times 161 = 178000 - 47978 = +130\,022\mathrm{ J/mol} = +130\mathrm{ kJ/mol}$$
 
-Since $\Delta G \gt 0$, the reaction is **not spontaneous** at $298\mathrm{ K}$.
+Since $\Delta G \gt 0$The reaction is **not spontaneous** at $298\mathrm{ K}$.
 
 (b) At $\Delta G = 0$:
 
@@ -949,14 +949,22 @@ Predict the sign of $\Delta S$ for each of the following processes and explain:
 <summary>Answer</summary>
 
 (a) **Positive** $\Delta S$: One mole of solid produces two moles of gas, significantly increasing
-disorder.
+Disorder.
 
 (b) **Negative** $\Delta S$: Three moles of gas produce two moles of gas, decreasing the number of
-gaseous particles and thus disorder.
+Gaseous particles and thus disorder.
 
 (c) **Positive** $\Delta S$: An ordered solid lattice breaks apart into freely moving hydrated ions
-in solution, increasing disorder.
+In solution, increasing disorder.
 
 For the A-Level treatment of this topic, see [Thermodynamics & Energetics](https://alevel.wyattau.com/docs/chemistry/thermodynamics).
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

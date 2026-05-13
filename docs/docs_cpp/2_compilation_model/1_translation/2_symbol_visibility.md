@@ -8,15 +8,15 @@ categories:
   - cpp
 slug: symbol-visibility
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 While the compiler processes one Translation Unit (TU) at a time, the **Linker** fuses them
-together. To do this, it must determine which names (symbols) in `A.cpp` refer to the same entities
-in `B.cpp`. This logic is governed by **Linkage**.
+Together. To do this, it must determine which names (symbols) in `A.cpp` refer to the same entities
+In `B.cpp`. This logic is governed by **Linkage**.
 
 Simultaneously, the C++ standard enforces strict rules on how many times an entity can be defined,
-known as the **One Definition Rule (ODR)**. Violating these rules results in Linker Errors or, more
-dangerously, runtime Undefined Behavior.
+Known as the **One Definition Rule (ODR)**. Violating these rules results in Linker Errors or, more
+Dangerously, runtime Undefined Behavior.
 
 ## The One Definition Rule (ODR)
 
@@ -25,22 +25,22 @@ The ODR is the fundamental law of physical C++ architecture. It has two distinct
 ### 1. ODR within a Translation Unit
 
 A specific entity (class, enum, function, variable) can be declared multiple times but defined only
-once within a single `.cpp` file (after preprocessor expansion).
+Once within a single `.cpp` file (after preprocessor expansion).
 
 - _Enforcement:_ Compiler Error ("Redefinition of 'x'").
 
 ### 2. ODR within a Program
 
 A non-inline function or variable with **External Linkage** defined in one TU must not be defined in
-any other TU.
+Any other TU.
 
 - _Enforcement:_ Linker Error ("Multiple Definition" / "Symbol already defined").
 
 :::danger
 The ODR Violation Trap If two different TUs define the same class/struct `Foo` (e.g., via
-copy-pasted headers), but the definitions differ (e.g., different member order or types), the linker
+Copy-pasted headers), but the definitions differ (e.g., different member order or types), the linker
 **may not detect this**. This is **Undefined Behavior**. The runtime may crash or corrupt memory
-because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another.
+Because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another.
 :::
 
 ## Linkage Types
@@ -60,8 +60,8 @@ The name is accessible from anywhere within the **current TU**, but it is invisi
 The linker sees the symbol but marks it as local.
 
 - **Syntax:**
-  - **Legacy C:** `static` keyword on globals/functions.
-  - **Modern C++:** Anonymous Namespaces.
+ - **Legacy C:** `static` keyword on globals/functions.
+ - **Modern C++:** Anonymous Namespaces.
 
 ```cpp
 // Legacy Style (Deprecated for C++ code)
@@ -76,13 +76,13 @@ namespace {
 ```
 
 **Best Practice:** Always give helper functions and local constants Internal Linkage. This reduces
-the global symbol table size, speeds up linking, and allows the compiler to perform more aggressive
-inlining.
+The global symbol table size, speeds up linking, and allows the compiler to perform more aggressive
+Inlining.
 
 ### 3. External Linkage
 
 The name is accessible from other TUs. The linker expects to resolve references to this symbol from
-other object files.
+Other object files.
 
 - **Syntax:** Default for non-static global functions and variables.
 - **Declaration:** `extern int global_counter;` (in header).
@@ -91,15 +91,15 @@ other object files.
 ### 4. Module Linkage (C++20 Modules)
 
 Names declared in a module interface unit (`.cppm`) have module linkage unless exported. They are
-visible to the module's implementation units but not to importers of the module unless explicitly
-`export`ed.
+Visible to the module's implementation units but not to importers of the module unless explicitly
+`export`Ed.
 
 ## The `inline` Keyword and ODR
 
 In C++, `inline` does **not** primarily mean "optimize this function call away."
 
 **Architectural Definition:** `inline` instructs the linker that **multiple definitions are
-permitted**.
+Permitted**.
 
 If `header.h` contains a function definition:
 
@@ -108,14 +108,14 @@ If `header.h` contains a function definition:
 void log(const char* msg) { ... } // Violation if included in multiple .cpp files
 ```
 
-If included in `A.cpp` and `B.cpp`, the linker sees two symbols named `log`.
+If included in `A.cpp` and `B.cpp`The linker sees two symbols named `log`.
 
 - Without `inline`: Linker Error (Multiple Definition).
 - With `inline`: The linker picks one definition and discards the rest. It trusts that they are
-  identical.
+ identical.
 
 **C++17 Inline Variables:** Before C++17, `static const` members required out-of-line definitions in
-a `.cpp` file. C++17 allows `inline` variables, enabling header-only static members.
+A `.cpp` file. C++17 allows `inline` variables, enabling header-only static members.
 
 ```cpp
 struct Configuration {
@@ -127,20 +127,20 @@ struct Configuration {
 ## Symbol Visibility (Shared Libraries / DLLs)
 
 Linkage is a C++ Standard concept. **Visibility** is an Operating System / Loader concept. It
-determines which symbols with External Linkage are actually exposed in the Dynamic Symbol Table of a
+Determines which symbols with External Linkage are actually exposed in the Dynamic Symbol Table of a
 Shared Library (`.so` / `.dll`).
 
 ### The Visibility Asymmetry
 
 - **Windows (PE/COFF):** Symbols are **Hidden by Default**. You must explicitly `export` them to
-  make them usable by consumers of the DLL.
+ make them usable by consumers of the DLL.
 - **Linux (ELF):** Symbols are **Visible by Default**. Everything with external linkage is exported
-  unless you hide it.
+ unless you hide it.
 
 ### Unified Architecture (Best Practice)
 
 To create portable libraries, we force Linux to behave like Windows (Hidden by Default). This
-reduces binary size, improves load times, and prevents symbol collisions.
+Reduces binary size, improves load times, and prevents symbol collisions.
 
 **1. Compiler Flags:** Compile with `-fvisibility=hidden` (GCC/Clang). This hides everything.
 
@@ -210,7 +210,7 @@ Look for `External` vs `Static` in the attribute column.
 ### Link Map Files
 
 To diagnose deep ODR or visibility issues, instruct the linker to generate a **Map File**. This text
-file lists every symbol in the final binary and which object file provided it.
+File lists every symbol in the final binary and which object file provided it.
 
 **CMake:**
 
@@ -229,14 +229,14 @@ endif()
 ### Internal Linkage Mechanics
 
 When the compiler assigns internal linkage to a symbol, it emits that symbol with the `STB_LOCAL`
-binding in the ELF symbol table. The linker treats local symbols as invisible to other object files.
+Binding in the ELF symbol table. The linker treats local symbols as invisible to other object files.
 This has important consequences:
 
 1. **Name collisions are impossible:** Two TUs can each define a `static` function called `helper()`
-   without conflict.
+ without conflict.
 2. **The compiler can optimize more aggressively:** Since the symbol cannot be referenced from
-   outside the TU, the compiler knows all call sites and can inline, dead-code eliminate, or
-   specialize the function.
+ outside the TU, the compiler knows all call sites and can inline, dead-code eliminate, or
+ specialize the function.
 3. **Symbol table size is reduced:** The dynamic linker processes fewer symbols at startup.
 
 ```cpp
@@ -260,7 +260,7 @@ Both TUs compile and link successfully. Each TU has its own private `compute` fu
 ### Anonymous Namespaces vs `static`
 
 In C++, anonymous namespaces and `static` are functionally equivalent for functions and variables,
-but anonymous namespaces have advantages for types:
+But anonymous namespaces have advantages for types:
 
 ```cpp
 // Option A: static (works for functions and variables only)
@@ -282,7 +282,7 @@ The anonymous namespace is the preferred modern approach because:
 ### `extern` and Tentative Definitions
 
 The `extern` keyword declares a variable without defining it. The definition must exist in exactly
-one TU:
+One TU:
 
 ```cpp
 // header.h
@@ -300,12 +300,12 @@ int tentative_var;  // OK in C (tentative definitions can repeat), ill-formed in
 ```
 
 In C++, multiple tentative definitions in the same TU are ill-formed [N4950 §6.6.2]. Use `extern`
-declarations in headers and exactly one definition in a `.cpp` file.
+Declarations in headers and exactly one definition in a `.cpp` file.
 
 ### `inline` Variables and Linkage (C++17)
 
 C++17 extended `inline` from functions to variables. An `inline` variable can be defined in a header
-and included in multiple TUs without violating the ODR:
+And included in multiple TUs without violating the ODR:
 
 ```cpp
 // config.h (included in multiple TUs)
@@ -317,12 +317,12 @@ struct Config {
 ```
 
 The compiler and linker cooperate: each TU emits a definition, and the linker picks one (they must
-all be identical). The `inline` keyword tells the linker "multiple definitions are expected; merge
-them."
+All be identical). The `inline` keyword tells the linker "multiple definitions are expected; merge
+Them."
 
-Without `inline`, a static member defined in a header would cause "multiple definition" errors when
-included in multiple TUs (unless it was `const` or `constexpr`, which already had special ODR
-exemptions).
+Without `inline`A static member defined in a header would cause "multiple definition" errors when
+Included in multiple TUs (unless it was `const` or `constexpr`Which already had special ODR
+Exemptions).
 
 ---
 
@@ -332,24 +332,24 @@ exemptions).
 
 The ELF specification defines four visibility levels:
 
-| Visibility  | ELF Constant    | Behavior                                                      |
+| Visibility | ELF Constant | Behavior |
 | :---------- | :-------------- | :------------------------------------------------------------ |
-| `default`   | `STV_DEFAULT`   | Visible to all DSOs and the executable                        |
-| `hidden`    | `STV_HIDDEN`    | Not visible outside the defining DSO (prevents PLT/GOT entry) |
-| `internal`  | `STV_INTERNAL`  | Like hidden, but also prevents symbol interposition           |
-| `protected` | `STV_PROTECTED` | Visible, but cannot be preempted by other DSOs                |
+| `default` | `STV_DEFAULT` | Visible to all DSOs and the executable |
+| `hidden` | `STV_HIDDEN` | Not visible outside the defining DSO (prevents PLT/GOT entry) |
+| `internal` | `STV_INTERNAL` | Like hidden, but also prevents symbol interposition |
+| `protected` | `STV_PROTECTED` | Visible, but cannot be preempted by other DSOs |
 
 **`-fvisibility=hidden`** sets the default visibility to `STV_HIDDEN` for all external symbols. You
-then opt-in specific symbols with `__attribute__((visibility("default")))`.
+Then opt-in specific symbols with `__attribute__((visibility("default")))`.
 
 **`STV_INTERNAL`** is a stronger form of hidden. It guarantees that the symbol will always be
-resolved within the defining DSO, even if another DSO defines the same symbol. This enables the
-linker to convert GOT-relative accesses to direct PC-relative accesses (avoiding the GOT entirely),
-which is slightly faster.
+Resolved within the defining DSO, even if another DSO defines the same symbol. This enables the
+Linker to convert GOT-relative accesses to direct PC-relative accesses (avoiding the GOT entirely),
+Which is slightly faster.
 
 **`STV_PROTECTED`** is rarely used. It means the symbol is visible outside the DSO but cannot be
-preempted (replaced by a definition in another DSO or via `LD_PRELOAD`). This is useful for
-performance when you want to export a symbol but avoid the overhead of PLT/GOT indirection.
+Preempted (replaced by a definition in another DSO or via `LD_PRELOAD`). This is useful for
+Performance when you want to export a symbol but avoid the overhead of PLT/GOT indirection.
 
 ### Function-Level Visibility
 
@@ -377,10 +377,10 @@ public:
 By default, `inline` functions defined in headers are **not** exported from DSOs, even with
 `default` visibility. They are compiled into each TU that includes the header. However, if a
 `-fvisibility=hidden` compilation is in effect, inlines in a shared library are still available to
-consumers through the header — they are compiled into the consumer's TU.
+Consumers through the header — they are compiled into the consumer's TU.
 
 The CMake property `VISIBILITY_INLINES_HIDDEN YES` explicitly hides inline functions from the DSO's
-export table, reducing symbol table size:
+Export table, reducing symbol table size:
 
 ```cmake
 set_target_properties(MyLib PROPERTIES
@@ -402,11 +402,11 @@ Windows uses a different mechanism: `__declspec(dllexport)` and `__declspec(dlli
 ```
 
 The `dllexport` attribute places the symbol in the DLL's export table (analogous to the ELF dynamic
-symbol table). The `dllimport` attribute tells the compiler that the symbol is defined in a DLL,
-enabling it to generate an indirect call through the IAT (Import Address Table).
+Symbol table). The `dllimport` attribute tells the compiler that the symbol is defined in a DLL,
+Enabling it to generate an indirect call through the IAT (Import Address Table).
 
 CMake's `DEFINE_SYMBOL` property automatically defines the build symbol when compiling the library's
-own sources:
+Own sources:
 
 ```cmake
 add_library(MyLib SHARED src/lib.cpp)
@@ -473,7 +473,7 @@ Version definition section:
 ```
 
 A consumer compiled against `MYLIB_1.0` can still use `MYLIB_2.0` if the version script preserves
-the old symbols. This is how `glibc` maintains compatibility across decades.
+The old symbols. This is how `glibc` maintains compatibility across decades.
 
 ### ODR Violations in Practice
 
@@ -492,9 +492,9 @@ struct Point {
 ```
 
 If `a.cpp` and `b.cpp` are linked together and share a `Point` object through external linkage, one
-TU treats the first 8 bytes as `x` and the second 8 bytes as `y`, while the other TU interprets them
-in reverse order. The linker sees a single symbol `Point` and sees no error. This is **undefined
-behavior** and typically manifests as corrupted floating-point values or subtle numerical errors.
+TU treats the first 8 bytes as `x` and the second 8 bytes as `y`While the other TU interprets them
+In reverse order. The linker sees a single symbol `Point` and sees no error. This is **undefined
+Behavior** and manifests as corrupted floating-point values or subtle numerical errors.
 
 **Mitigation strategies:**
 
@@ -508,21 +508,29 @@ behavior** and typically manifests as corrupted floating-point values or subtle 
 ## Common Pitfalls
 
 - **Using `static` for constants in headers instead of `inline`.** In C++17 and later, prefer
-  `static inline` or `inline` for header-only constants. `static` creates a separate copy in every
-  TU, increasing binary size and potentially causing identity comparison failures (`&a != &b` when
-  they should be the same object).
+ `static inline` or `inline` for header-only constants. `static` creates a separate copy in every
+ TU, increasing binary size and potentially causing identity comparison failures (`&a != &b` when
+ they should be the same object).
 - **Forgetting `-fvisibility=hidden` on Linux shared libraries.** Without it, every external-linkage
-  symbol in your library is exported, polluting the global symbol namespace and slowing down dynamic
-  linking. Large projects (Chromium, Firefox) enforce hidden visibility by default.
+ symbol in your library is exported, polluting the global symbol namespace and slowing down dynamic
+ linking. Large projects (Chromium, Firefox) enforce hidden visibility by default.
 - **Mismatched export macros.** If the DLL consumer uses `__declspec(dllimport)` but the symbol is
-  not actually exported from the DLL, the linker fails with an unresolved external symbol error.
-  Ensure the `DEFINE_SYMBOL` CMake property matches the macro name in your header.
+ not actually exported from the DLL, the linker fails with an unresolved external symbol error.
+ Ensure the `DEFINE_SYMBOL` CMake property matches the macro name in your header.
 - **Relying on undefined behavior when violating the ODR.** The ODR is not a "soft rule." Violations
-  are undefined behavior per [N4950 §6.6]. The program may appear to work in debug builds but fail
-  in optimized builds where the compiler makes assumptions based on the ODR (e.g., assuming two
-  definitions of `inline` function are identical and merging them incorrectly).
+ are undefined behavior per [N4950 §6.6]. The program may appear to work in debug builds but fail
+ in optimized builds where the compiler makes assumptions based on the ODR (e.g., assuming two
+ definitions of `inline` function are identical and merging them incorrectly).
 - **Not checking symbol tables after refactoring.** After removing a function or renaming a class,
-  check `nm -C libmylib.so` to verify that stale symbols are not being exported. Stale exports
-  increase binary size and can confuse consumers who accidentally use deprecated symbols.
+ check `nm -C libmylib.so` to verify that stale symbols are not being exported. Stale exports
+ increase binary size and can confuse consumers who accidentally use deprecated symbols.
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

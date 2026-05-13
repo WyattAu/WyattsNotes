@@ -22,17 +22,17 @@ This chapter covers **Advanced Higher** Computing Science content, extending bey
 ### Big O Notation
 
 Big O notation describes the upper bound of an algorithm's time or space complexity as the input
-size grows.
+Size grows.
 
-| Big O         | Name         | Example                     |
+| Big O | Name | Example |
 | ------------- | ------------ | --------------------------- |
-| $O(1)$        | Constant     | Array access by index       |
-| $O(\log n)$   | Logarithmic  | Binary search               |
-| $O(n)$        | Linear       | Linear search               |
-| $O(n \log n)$ | Linearithmic | Merge sort                  |
-| $O(n^2)$      | Quadratic    | Bubble sort, selection sort |
-| $O(2^n)$      | Exponential  | Recursive Fibonacci         |
-| $O(n!)$       | Factorial    | Generating all permutations |
+| $O(1)$ | Constant | Array access by index |
+| $O(\log n)$ | Logarithmic | Binary search |
+| $O(n)$ | Linear | Linear search |
+| $O(n \log n)$ | Linearithmic | Merge sort |
+| $O(n^2)$ | Quadratic | Bubble sort, selection sort |
+| $O(2^n)$ | Exponential | Recursive Fibonacci |
+| $O(n!)$ | Factorial | Generating all permutations |
 
 ### Comparing Algorithms
 
@@ -48,7 +48,7 @@ size grows.
 - **Best case:** Minimum number of operations (e.g., linear search finds target at first position)
 - **Average case:** Expected number of operations across all inputs
 - **Worst case:** Maximum number of operations (e.g., linear search finds target at last position or
-  not at all)
+ not at all)
 
 ---
 
@@ -57,7 +57,7 @@ size grows.
 ### Bubble Sort
 
 Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the
-wrong order.
+Wrong order.
 
 **Pseudocode:**
 
@@ -124,7 +124,7 @@ END PROCEDURE
 ### Merge Sort
 
 A divide-and-conquer algorithm that divides the array in half, recursively sorts each half, then
-merges the sorted halves.
+Merges the sorted halves.
 
 **Pseudocode:**
 
@@ -188,10 +188,10 @@ def merge(left, right):
 ### Quick Sort
 
 A divide-and-conquer algorithm that selects a pivot, partitions the array around the pivot, and
-recursively sorts the partitions.
+Recursively sorts the partitions.
 
 **Complexity:** Time: $O(n \log n)$ average, $O(n^2)$ worst (poor pivot choice). Space: $O(\log n)$
-average.
+Average.
 
 **Python implementation:**
 
@@ -273,7 +273,7 @@ def binary_search(arr, target):
 ### Linked Lists
 
 A linear data structure where elements (nodes) are connected by pointers. Each node contains data
-and a reference to the next node.
+And a reference to the next node.
 
 **Advantages over arrays:** Dynamic size, efficient insertion and deletion.
 
@@ -386,7 +386,7 @@ class Queue:
 A hierarchical data structure where each node has at most two children (left and right).
 
 **Binary Search Tree (BST):** Left subtree contains values less than the node; right subtree
-contains values greater than the node.
+Contains values greater than the node.
 
 ```python
 class TreeNode:
@@ -499,7 +499,7 @@ $i$ to vertex $j$.
 
 Explores all neighbours at the current depth before moving to the next level. Uses a queue.
 
-**Complexity:** Time: $O(V + E)$, Space: $O(V)$.
+**Complexity:** Time: $O(V + E)$Space: $O(V)$.
 
 ```python
 from collections import deque
@@ -523,7 +523,7 @@ def bfs(graph, start):
 
 Explores as far as possible along each branch before backtracking. Uses a stack (or recursion).
 
-**Complexity:** Time: $O(V + E)$, Space: $O(V)$.
+**Complexity:** Time: $O(V + E)$Space: $O(V)$.
 
 ```python
 def dfs(graph, start):
@@ -542,7 +542,7 @@ def dfs(graph, start):
 ### Dijkstra's Algorithm
 
 Finds the shortest path from a single source to all other vertices in a weighted graph with
-non-negative weights.
+Non-negative weights.
 
 **Complexity:** $O((V + E) \log V)$ with a priority queue.
 
@@ -663,19 +663,19 @@ area (Triangle a b c) = let s = (a + b + c) / 2
 ## Common Pitfalls
 
 1. **Binary search on unsorted data:** Binary search requires a sorted array. Always sort first or
-   verify the array is sorted.
+ verify the array is sorted.
 
 2. **Off-by-one errors:** Be careful with array indices and loop boundaries. Python uses 0-based
-   indexing.
+ indexing.
 
 3. **Infinite recursion:** Always ensure a base case is reached. Forgetting the base case causes a
-   stack overflow.
+ stack overflow.
 
 4. **Quick sort worst case:** Choosing the first or last element as pivot on an already-sorted array
-   gives $O(n^2)$. Use the middle element or random pivot.
+ gives $O(n^2)$. Use the middle element or random pivot.
 
 5. **Hash collisions:** Different keys may hash to the same index. Use separate chaining or open
-   addressing to handle collisions.
+ addressing to handle collisions.
 
 ---
 
@@ -686,16 +686,24 @@ area (Triangle a b c) = let s = (a + b + c) / 2
 2. Implement a function that checks whether a binary tree is a valid BST.
 
 3. Trace Dijkstra's algorithm on the following graph to find the shortest path from A to all other
-   vertices: A-B: 4, A-C: 2, B-C: 1, B-D: 5, C-D: 8, C-E: 10, D-E: 2.
+ vertices: A-B: 4, A-C: 2, B-C: 1, B-D: 5, C-D: 8, C-E: 10, D-E: 2.
 
 4. Write a Haskell function `quickSort :: [Int] -> [Int]` that implements quicksort.
 
 5. Explain the difference between BFS and DFS, and give a scenario where each would be more
-   appropriate.
+ appropriate.
 
 6. Implement a hash table with separate chaining for collision resolution in Python.
 
 7. What is the time complexity of merge sort? Explain why it is $O(n \log n)$.
 
 8. Write a Haskell function that takes a list of integers and returns the list sorted in descending
-   order, using `sortBy` from `Data.List`.
+ order, using `sortBy` from `Data.List`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

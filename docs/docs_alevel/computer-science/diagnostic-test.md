@@ -12,8 +12,8 @@ slug: diagnostic-test
 ## Instructions
 
 This diagnostic test covers the full A Level Computer Science syllabus. There are **45 questions**
-across all topics. Attempt each question, then check your answers. Each question links to the
-relevant revision page for further study.
+Across all topics. Attempt each question, then check your answers. Each question links to the
+Relevant revision page for further study.
 
 **Recommended time:** 90 minutes.
 
@@ -71,7 +71,7 @@ $B \cdot (\overline{A} + A) = B \cdot 1 = B$ (by the identity law: $X + \overlin
 <summary>Answer</summary>
 
 The MAR holds the address of the memory location to be read from or written to. During the fetch
-phase, the PC is copied to the MAR so the CPU can read the instruction at that address.
+Phase, the PC is copied to the MAR so the CPU can read the instruction at that address.
 
 **Revision:**
 [Computer Architecture](/docs/alevel/computer-science/fundamentals/computer-architecture)
@@ -83,7 +83,7 @@ phase, the PC is copied to the MAR so the CPU can read the instruction at that a
 ## Data Structures
 
 **Q6.** An array has base address 500 and element size 8 bytes. What is the address of element at
-index 12?
+Index 12?
 
 <details>
 <summary>Answer</summary>
@@ -95,13 +95,13 @@ $500 + 12 \times 8 = 500 + 96 = 596$.
 </details>
 
 **Q7.** What is the worst-case time complexity of inserting at the beginning of a singly linked list
-with $n$ elements?
+With $n$ elements?
 
 <details>
 <summary>Answer</summary>
 
 $O(1)$ — insert at the head by updating the new node's next pointer to the current head and updating
-the head pointer. No traversal needed.
+The head pointer. No traversal needed.
 
 **Revision:** [Linked Lists](/docs/alevel/computer-science/data-structures/linked-lists)
 
@@ -137,7 +137,7 @@ $2^3 = 8$ nodes.
 <summary>Answer</summary>
 
 BFS (Breadth-First Search). BFS explores vertices level by level, so the first time a vertex is
-discovered, the path to it is the shortest.
+Discovered, the path to it is the shortest.
 
 **Revision:** [Graphs](/docs/alevel/computer-science/data-structures/graphs)
 
@@ -175,7 +175,7 @@ $O(\log n)$ — each comparison halves the search space.
 <summary>Answer</summary>
 
 Heap sort. (Merge sort is $O(n \log n)$ but not in-place; quick sort is in-place but $O(n^2)$ worst
-case.)
+Case.)
 
 **Revision:** [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms)
 
@@ -187,7 +187,7 @@ case.)
 <summary>Answer</summary>
 
 $\Omega(n \log n)$. Proved using the **decision tree model**: a decision tree for sorting $n$
-elements has at least $n!$ leaves, requiring height $\Omega(\log n!) = \Omega(n \log n)$.
+Elements has at least $n!$ leaves, requiring height $\Omega(\log n!) = \Omega(n \log n)$.
 
 **Revision:** [Sorting Algorithms](/docs/alevel/computer-science/algorithms/sorting-algorithms)
 
@@ -199,7 +199,7 @@ elements has at least $n!$ leaves, requiring height $\Omega(\log n!) = \Omega(n 
 <summary>Answer</summary>
 
 Graphs with **negative edge weights**. Dijkstra's greedy choice assumes that once a vertex is
-finalised, its distance cannot improve — this assumption fails with negative edges.
+Finalised, its distance cannot improve — this assumption fails with negative edges.
 
 **Revision:** [Graph Algorithms](/docs/alevel/computer-science/algorithms/graph-algorithms)
 
@@ -221,7 +221,7 @@ finalised, its distance cannot improve — this assumption fails with negative e
 <details>
 <summary>Answer</summary>
 
-$a = 2$, $b = 2$, $c = \log_2 2 = 1$. $f(n) = n = \Theta(n^1) = \Theta(n^c)$. Case 2:
+$a = 2$$b = 2$$c = \log_2 2 = 1$. $f(n) = n = \Theta(n^1) = \Theta(n^c)$. Case 2:
 $T(n) = \Theta(n \log n)$.
 
 **Revision:** [Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis)
@@ -250,7 +250,7 @@ $T(n) = \Theta(n \log n)$.
 <summary>Answer</summary>
 
 A **function** returns a value; a **procedure** performs an action (side effect) and does not return
-a value.
+A value.
 
 **Revision:**
 [Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs)
@@ -275,7 +275,7 @@ $O(\phi^n)$ where $\phi = (1+\sqrt{5})/2 \approx 1.618$ (exponential).
 <summary>Answer</summary>
 
 Encapsulation is the bundling of data and methods within a class, and restricting direct access to
-internal state through access modifiers (public, private, protected).
+Internal state through access modifiers (public, private, protected).
 
 **Revision:** [OOP](/docs/alevel/computer-science/programming/object-oriented-programming)
 
@@ -287,7 +287,7 @@ internal state through access modifiers (public, private, protected).
 <summary>Answer</summary>
 
 Objects of a superclass shall be replaceable with objects of a subclass without breaking the
-program.
+Program.
 
 **Revision:** [OOP](/docs/alevel/computer-science/programming/object-oriented-programming)
 
@@ -299,7 +299,7 @@ program.
 <summary>Answer</summary>
 
 For thread safety, hash stability (used as dictionary keys), security (prevent in-memory
-modification), and string interning (memory efficiency through reuse).
+Modification), and string interning (memory efficiency through reuse).
 
 **Revision:**
 [Data Representation in Programming](/docs/alevel/computer-science/programming/data-representation-in-programming)
@@ -311,7 +311,7 @@ modification), and string interning (memory efficiency through reuse).
 ## Software Engineering
 
 **Q24.** Which SDLC model is most appropriate for a project with well-understood, stable
-requirements?
+Requirements?
 
 <details>
 <summary>Answer</summary>
@@ -328,8 +328,8 @@ The **Waterfall** model — its sequential phases suit stable requirements with 
 <details>
 <summary>Answer</summary>
 
-A sprint is a time-boxed iteration (typically 2–4 weeks) in which the development team delivers a
-potentially shippable product increment.
+A sprint is a time-boxed iteration ( 2–4 weeks) in which the development team delivers a
+Potentially shippable product increment.
 
 **Revision:**
 [SDLC](/docs/alevel/computer-science/software-engineering/software-development-lifecycle)
@@ -354,7 +354,7 @@ potentially shippable product increment.
 <summary>Answer</summary>
 
 Boundary value analysis tests values at and around the boundaries of equivalence classes, where
-off-by-one errors are most likely. Example: for a function accepting ages 0–120, test -1, 0, 1 and
+Off-by-one errors are most likely. Example: for a function accepting ages 0–120, test -1, 0, 1 and
 119, 120, 121.
 
 **Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
@@ -367,8 +367,8 @@ off-by-one errors are most likely. Example: for a function accepting ages 0–12
 <summary>Answer</summary>
 
 No. Consider `if condition: x = 1`. A single test with `condition = True` achieves 100% statement
-coverage (both `x = 1` and subsequent code execute) but only 50% branch coverage (the false branch
-is never taken).
+Coverage (both `x = 1` and subsequent code execute) but only 50% branch coverage (the false branch
+Is never taken).
 
 **Revision:** [Testing](/docs/alevel/computer-science/software-engineering/testing)
 
@@ -408,7 +408,7 @@ Layer 3 (Network layer). Routers make forwarding decisions based on IP addresses
 <summary>Answer</summary>
 
 UDP has lower latency (no handshake, no retransmission). Delayed packets are useless for real-time
-communication — better to skip them than wait for retransmission.
+Communication — better to skip them than wait for retransmission.
 
 **Revision:** [Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 
@@ -420,7 +420,7 @@ communication — better to skip them than wait for retransmission.
 <summary>Answer</summary>
 
 DNS (Domain Name System) translates human-readable domain names (e.g., `www.example.com`) into IP
-addresses (e.g., `93.184.216.34`).
+Addresses (e.g., `93.184.216.34`).
 
 **Revision:** [Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 
@@ -432,8 +432,8 @@ addresses (e.g., `93.184.216.34`).
 <summary>Answer</summary>
 
 NAT (Network Address Translation) maps private IP addresses to a single public IP address, allowing
-multiple devices on a LAN to share one internet-facing IP. It conserves IPv4 addresses and provides
-a basic level of security by hiding internal addresses.
+Multiple devices on a LAN to share one internet-facing IP. It conserves IPv4 addresses and provides
+A basic level of security by hiding internal addresses.
 
 **Revision:** [Network Fundamentals](/docs/alevel/computer-science/networks/network-fundamentals)
 
@@ -444,7 +444,7 @@ a basic level of security by hiding internal addresses.
 <details>
 <summary>Answer</summary>
 
-RSA uses a public key $(e, n)$ to encrypt: $C = M^e \bmod n$, and a private key $(d, n)$ to decrypt:
+RSA uses a public key $(e, n)$ to encrypt: $C = M^e \bmod n$And a private key $(d, n)$ to decrypt:
 $M = C^d \bmod n$. The keys are derived from two large primes $p, q$ where $n = pq$ and
 $ed \equiv 1 \pmod{(p-1)(q-1)}$. Security relies on the difficulty of factoring $n$ into $p$ and
 $q$.
@@ -459,7 +459,7 @@ $q$.
 <summary>Answer</summary>
 
 **C**onfidentiality (data accessible only to authorised parties), **I**ntegrity (data not tampered
-with), **A**vailability (data accessible when needed).
+With), **A**vailability (data accessible when needed).
 
 **Revision:** [Network Security](/docs/alevel/computer-science/networks/network-security)
 
@@ -475,7 +475,7 @@ with), **A**vailability (data accessible when needed).
 <summary>Answer</summary>
 
 A **primary key** uniquely identifies each row in its table. A **foreign key** references the
-primary key of another table, establishing a relationship.
+Primary key of another table, establishing a relationship.
 
 **Revision:** [Relational Databases](/docs/alevel/computer-science/databases/relational-databases)
 
@@ -540,8 +540,8 @@ HAVING AVG(score) > 80;
 <summary>Answer</summary>
 
 A **DFA** has exactly one transition per state per input symbol. An **NFA** can have zero, one, or
-multiple transitions per state per input symbol, and accepts if ANY path leads to an accepting
-state.
+Multiple transitions per state per input symbol, and accepts if ANY path leads to an accepting
+State.
 
 **Revision:**
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
@@ -554,8 +554,8 @@ state.
 <summary>Answer</summary>
 
 No. Proved using the Pumping Lemma: choose $s = a^p b^p$; the pumped substring $y$ lies within the
-first $p$ symbols (all $a$'s); removing $y$ yields unequal numbers of $a$'s and $b$'s, which is not
-in $L$.
+First $p$ symbols (all $a$'s); removing $y$ yields unequal numbers of $a$'s and $b$'s, which is not
+In $L$.
 
 **Revision:**
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
@@ -567,9 +567,9 @@ in $L$.
 <details>
 <summary>Answer</summary>
 
-The halting problem asks: given a TM $M$ and input $w$, does $M$ halt on $w$? It is undecidable
-because assuming a decider $H$ exists leads to a contradiction when we construct a machine $D$ that
-does the opposite of $H$ when run on itself.
+The halting problem asks: given a TM $M$ and input $w$Does $M$ halt on $w$? It is undecidable
+Because assuming a decider $H$ exists leads to a contradiction when we construct a machine $D$ that
+Does the opposite of $H$ when run on itself.
 
 **Revision:**
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
@@ -582,7 +582,7 @@ does the opposite of $H$ when run on itself.
 <summary>Answer</summary>
 
 **P** = problems solvable in polynomial time. **NP** = problems whose solutions can be **verified**
-in polynomial time. P ⊆ NP. Whether P = NP is an open question.
+In polynomial time. P ⊆ NP. Whether P = NP is an open question.
 
 **Revision:**
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
@@ -595,7 +595,7 @@ in polynomial time. P ⊆ NP. Whether P = NP is an open question.
 <summary>Answer</summary>
 
 Every effectively computable function is computable by a Turing machine. It is a thesis (not a
-theorem) because "effectively computable" is an informal concept.
+Theorem) because "effectively computable" is an informal concept.
 
 **Revision:**
 [Automata and Computability](/docs/alevel/computer-science/theory-of-computation/automata-and-computability)
@@ -608,13 +608,25 @@ theorem) because "effectively computable" is an informal concept.
 
 Count your correct answers and identify weak areas:
 
-| Score | Grade | Recommendation                                        |
+| Score | Grade | Recommendation |
 | ----- | ----- | ----------------------------------------------------- |
-| 40–45 | A\*   | Excellent — focus on exam technique                   |
-| 35–39 | A     | Strong — review missed topics briefly                 |
-| 25–34 | B/C   | Good foundation — systematic revision needed          |
-| 15–24 | D/E   | Gaps exist — work through each topic's notes          |
-| 0–14  | U     | Significant revision needed — start with fundamentals |
+| 40–45 | A\* | Excellent — focus on exam technique |
+| 35–39 | A | Strong — review missed topics briefly |
+| 25–34 | B/C | Good foundation — systematic revision needed |
+| 15–24 | D/E | Gaps exist — work through each topic's notes |
+| 0–14 | U | Significant revision needed — start with fundamentals |
 
 **Next steps:** For each incorrect answer, follow the revision link and work through the full
-problem set on that page.
+Problem set on that page.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

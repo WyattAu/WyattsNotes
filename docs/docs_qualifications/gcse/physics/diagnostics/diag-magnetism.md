@@ -68,7 +68,7 @@ $\varepsilon = N\frac{\Delta \Phi}{\Delta t} = 500 \times \frac{0.06}{0.1} = 500
 
 (c) Power transmitted $= 400,000 \times 100 = 40,000,000$ W $= 40$ MW. At 25 kV: $I = 40,000,000/25,000 = 1600$ A. Power loss $= 1600^2 \times 10 = 25,600,000$ W $= 25,600$ kW $= 25.6$ MW.
 
-(d) Power loss in transmission lines $= I^2R$. By increasing the voltage (using a step-up transformer), the current is reduced for the same power ($P = VI$). Since power loss depends on $I^2$, reducing the current by a factor of 16 (from 1600 A to 100 A) reduces the power loss by a factor of $16^2 = 256$. This is why high-voltage transmission is far more efficient: losses at 400 kV (100 kW) are negligible compared to losses at 25 kV (25,600 kW).
+(d) Power loss in transmission lines $= I^2R$. By increasing the voltage (using a step-up transformer), the current is reduced for the same power ($P = VI$). Since power loss depends on $I^2$Reducing the current by a factor of 16 (from 1600 A to 100 A) reduces the power loss by a factor of $16^2 = 256$. This is why high-voltage transmission is far more efficient: losses at 400 kV (100 kW) are negligible compared to losses at 25 kV (25,600 kW).
 
 ### IT-2: Electromagnetic Devices in Daily Life (with Energy)
 **Question:** (a) Explain how an electric bell works using an electromagnet. (b) A relay uses an electromagnet to switch a 230 V circuit using a 12 V circuit. Explain the advantage of this arrangement. (c) An induction hob transfers energy to a metal pan using electromagnetic induction. Explain the process. (d) A metal detector generates an alternating magnetic field. Explain how it detects buried metal objects.

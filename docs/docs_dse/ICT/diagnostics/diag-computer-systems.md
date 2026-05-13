@@ -72,7 +72,7 @@ Total capacity $= 2,097,152 \times 512 \text{ bytes} = 1,073,741,824 \text{ byte
 ## Integration Tests
 
 ### IT-1: CPU and Performance (with Data Representation)
-**Question:** A 32-bit computer uses IEEE 754 single-precision floating-point format. (a) Explain how the number $-6.625$ is stored in binary floating-point format (sign, exponent, mantissa). (b) If the CPU needs to add $-6.625$ and $3.5$, describe the steps the ALU performs. (c) Why does floating-point arithmetic sometimes produce rounding errors, and how does this relate to the CPU's hardware design?
+**Question:** A 32-bit computer uses IEEE 754 single-precision floating-point format. (a) Explain how the number $-6.625$ is stored in binary floating-point format (sign, exponent, mantissa). (b) If the CPU needs to add $-6.625$ and $3.5$Describe the steps the ALU performs. (c) Why does floating-point arithmetic sometimes produce rounding errors, and how does this relate to the CPU's hardware design?
 
 **Solution:**
 
@@ -106,7 +106,7 @@ With a B-tree index: search depth $\approx \log_2(50,000) \approx 16$ levels. Wi
 (c) The database buffer cache keeps frequently accessed data and index pages in RAM. Since RAM access time ($\approx 100$ ns) is roughly 100,000 times faster than disk access ($\approx 10$ ms), caching dramatically reduces query latency. The memory hierarchy principle applies: the most frequently accessed database pages are kept in the fastest available storage. The database engine uses LRU (Least Recently Used) or similar algorithms to manage the buffer cache, evicting least-used pages when RAM is full.
 
 ### IT-3: Hardware Selection (with Network Security)
-**Question:** A small business needs to set up a file server for 20 employees. (a) Recommend minimum specifications for: CPU cores, RAM, and storage type, justifying each choice. (b) Explain why ECC (Error-Correcting Code) RAM is important for a server but not typically needed for a desktop. (c) The server will store sensitive client data. Explain how hardware-level security features (TPM, secure boot) complement software-level encryption.
+**Question:** A small business needs to set up a file server for 20 employees. (a) Recommend minimum specifications for: CPU cores, RAM, and storage type, justifying each choice. (b) Explain why ECC (Error-Correcting Code) RAM is important for a server but not needed for a desktop. (c) The server will store sensitive client data. Explain how hardware-level security features (TPM, secure boot) complement software-level encryption.
 
 **Solution:**
 

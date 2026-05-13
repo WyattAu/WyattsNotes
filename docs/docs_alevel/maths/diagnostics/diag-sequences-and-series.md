@@ -19,7 +19,7 @@ Evaluate the sum:
 
 $$S_n = \sum_{r=1}^{n} \frac{1}{r(r+1)(r+2)}$$
 
-Express your answer in terms of $n$, and hence find $\lim_{n \to \infty} S_n$.
+Express your answer in terms of $n$And hence find $\lim_{n \to \infty} S_n$.
 
 [Difficulty: hard. Tests partial fraction decomposition for a telescoping series with three factors in the denominator, where the cancellation pattern is commonly misidentified.]
 
@@ -27,7 +27,7 @@ Express your answer in terms of $n$, and hence find $\lim_{n \to \infty} S_n$.
 
 **Step 1: Partial fraction decomposition.**
 
-We seek constants $A$, $B$, $C$ such that:
+We seek constants $A$$B$$C$ such that:
 
 $$\frac{1}{r(r+1)(r+2)} = \frac{A}{r} + \frac{B}{r+1} + \frac{C}{r+2}$$
 
@@ -81,11 +81,11 @@ $$\lim_{n \to \infty} S_n = \frac{1}{4} + 0 = \frac{1}{4}$$
 
 **Question:**
 
-Given that $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$, find the value of:
+Given that $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$Find the value of:
 
 $$\sum_{r=4}^{n+3} (r-3)^2$$
 
-in terms of $n$.
+In terms of $n$.
 
 A common student error is to substitute $r - 3$ into the formula and write $\frac{(n+3)(n+4)(2n+7)}{6}$. Identify the mistake in this approach and give the correct answer.
 
@@ -97,7 +97,7 @@ A common student error is to substitute $r - 3$ into the formula and write $\fra
 
 **Correct approach — Method 1: Index shift.**
 
-Let $k = r - 3$. When $r = 4$, $k = 1$. When $r = n + 3$, $k = n$.
+Let $k = r - 3$. When $r = 4$$k = 1$. When $r = n + 3$$k = n$.
 
 $$\sum_{r=4}^{n+3} (r-3)^2 = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
 
@@ -115,7 +115,7 @@ $$= \sum_{k=1}^{n} k^2 + (-2)^2 + (-1)^2 - [4 + 1 + 0]$$
 
 $$= \sum_{k=1}^{n} k^2 + 4 + 1 - 5 = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
 
-**The student's answer** was $\frac{(n+3)(n+4)(2n+7)}{6}$, which equals $\sum_{r=1}^{n+3} r^2$, not $\sum_{r=4}^{n+3}(r-3)^2$. The student incorrectly treated the sum as starting from $r = 1$ with upper limit $n + 3$.
+**The student's answer** was $\frac{(n+3)(n+4)(2n+7)}{6}$Which equals $\sum_{r=1}^{n+3} r^2$Not $\sum_{r=4}^{n+3}(r-3)^2$. The student incorrectly treated the sum as starting from $r = 1$ with upper limit $n + 3$.
 
 ---
 
@@ -127,9 +127,9 @@ A sequence is defined by the recurrence relation:
 
 $$u_{n+2} = 5u_{n+1} - 6u_n, \quad n \geq 1$$
 
-with $u_1 = 1$ and $u_2 = 5$.
+With $u_1 = 1$ and $u_2 = 5$.
 
-**(a)** Find $u_3$, $u_4$, and $u_5$.
+**(a)** Find $u_3$$u_4$And $u_5$.
 
 **(b)** Find a closed-form expression for $u_n$ in terms of $n$.
 
@@ -177,7 +177,7 @@ $$u_n = 3^n - 2^n$$
 
 **(c)** We need $3^n - 2^n > 10000$.
 
-For large $n$, $3^n$ dominates $2^n$. We need $3^n \gtrapprox 10000$.
+For large $n$$3^n$ dominates $2^n$. We need $3^n \gtrapprox 10000$.
 
 $n = 8$: $3^8 - 2^8 = 6561 - 256 = 6305 < 10000$.
 
@@ -237,11 +237,11 @@ The function $f$ is defined by $f(x) = \cos x$ where $x$ is in radians.
 
 A sequence is defined by $x_0 = 1$ and $x_{n+1} = f(x_n) = \cos(x_n)$ for $n \geq 0$.
 
-**(a)** Find $x_1$, $x_2$, $x_3$, and $x_4$ to 6 decimal places.
+**(a)** Find $x_1$$x_2$$x_3$And $x_4$ to 6 decimal places.
 
 **(b)** Prove that the sequence $(x_n)$ is convergent.
 
-**(c)** The limit $L$ satisfies $L = \cos L$. By considering the function $g(x) = x - \cos x$, show that $L$ is the unique solution to this equation in $[0, \pi/2]$.
+**(c)** The limit $L$ satisfies $L = \cos L$. By considering the function $g(x) = x - \cos x$Show that $L$ is the unique solution to this equation in $[0, \pi/2]$.
 
 **(d)** Use the Newton-Raphson method with starting value $x_0 = 1$ to find $L$ to 8 decimal places.
 
@@ -258,15 +258,15 @@ $$x_4 = \cos(0.654290) = 0.793480$$
 
 **(b)** To prove convergence, we use the contraction mapping theorem. We need $|f'(x)| < 1$ on the relevant interval.
 
-$f'(x) = -\sin x$, so $|f'(x)| = |\sin x| \leq \sin(1) \approx 0.841 < 1$ for all $x \in [0, 1]$.
+$f'(x) = -\sin x$So $|f'(x)| = |\sin x| \leq \sin(1) \approx 0.841 < 1$ for all $x \in [0, 1]$.
 
-Since $x_0 = 1 \in [0, 1]$ and $f$ maps $[0, 1]$ into itself (because $\cos(0) = 1 \leq 1$ and $\cos(1) \approx 0.54 \geq 0$), and $|f'(x)| \leq k < 1$ for all $x \in [0, 1]$ where $k = \sin 1$, the sequence converges by the Banach fixed-point theorem.
+Since $x_0 = 1 \in [0, 1]$ and $f$ maps $[0, 1]$ into itself (because $\cos(0) = 1 \leq 1$ and $\cos(1) \approx 0.54 \geq 0$), and $|f'(x)| \leq k < 1$ for all $x \in [0, 1]$ where $k = \sin 1$The sequence converges by the Banach fixed-point theorem.
 
 **(c)** $g(x) = x - \cos x$. Then $g(0) = 0 - 1 = -1 < 0$ and $g(\pi/2) = \pi/2 - 0 = \pi/2 > 0$.
 
 By the intermediate value theorem, there exists $L \in (0, \pi/2)$ with $g(L) = 0$.
 
-For uniqueness: $g'(x) = 1 + \sin x > 0$ for all $x \in [0, \pi/2]$ (since $\sin x \geq 0$ in this interval). Therefore $g$ is strictly increasing on $[0, \pi/2]$, so $g(x) = 0$ has at most one solution in this interval.
+For uniqueness: $g'(x) = 1 + \sin x > 0$ for all $x \in [0, \pi/2]$ (since $\sin x \geq 0$ in this interval). Therefore $g$ is strictly increasing on $[0, \pi/2]$So $g(x) = 0$ has at most one solution in this interval.
 
 Combined: there is exactly one solution $L \in (0, \pi/2)$.
 
@@ -306,7 +306,7 @@ This is the Dottie number, the unique fixed point of the cosine function.
 
 $$\sum_{r=0}^{n} \binom{n}{r} = 2^n$$
 
-**(b)** By differentiating the binomial expansion of $(1 + x)^n$ and setting $x = 1$, show that:
+**(b)** By differentiating the binomial expansion of $(1 + x)^n$ and setting $x = 1$Show that:
 
 $$\sum_{r=1}^{n} r\binom{n}{r} = n \cdot 2^{n-1}$$
 

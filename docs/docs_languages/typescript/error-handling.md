@@ -12,8 +12,8 @@ categories: [TypeScript]
 ### Definition and Semantics
 
 The `never` type is the **bottom type** of the TypeScript type system. It has no inhabitants: no
-value of type `never` can exist at runtime. It is a subtype of every type, and no type is a subtype
-of `never` (except `never` itself).
+Value of type `never` can exist at runtime. It is a subtype of every type, and no type is a subtype
+Of `never` (except `never` itself).
 
 `never` appears in two principal contexts:
 
@@ -33,7 +33,7 @@ function infiniteLoop(): never {
 ```
 
 A function whose return type is `never` must either throw an exception, enter an infinite loop, or
-call another function of type `never`. If a `never`-returning function somehow returns (e.g., the
+Call another function of type `never`. If a `never`-returning function somehow returns (e.g., the
 `throw` is inside a `try` block), TypeScript considers the subsequent code unreachable:
 
 ```ts
@@ -44,12 +44,12 @@ function example(): number {
 ```
 
 The `return 42` line is unreachable. TypeScript does not report an error because the type of the
-function is inferred from the reachable code path.
+Function is inferred from the reachable code path.
 
 ### Exhaustive Switch Statements
 
 When a `switch` statement handles all members of a discriminated union, the `default` case receives
-a value of type `never`. Assigning this value to a variable of type `never` proves exhaustiveness:
+A value of type `never`. Assigning this value to a variable of type `never` proves exhaustiveness:
 
 ```ts
 type Shape =
@@ -73,26 +73,26 @@ function area(shape: Shape): number {
 ```
 
 If a new variant is added to `Shape` (e.g., `{ kind: "pentagon"; ... }`) without updating the
-`switch`, the assignment `_exhaustive: never` produces a compile error because the new variant is
-not assignable to `never`.
+`switch`The assignment `_exhaustive: never` produces a compile error because the new variant is
+Not assignable to `never`.
 
 ## `unknown` vs `any`
 
 ### Precise Semantics
 
-| Type      | Assignable to everything? | Everything assignable to it?  | Type narrowing required? |
+| Type | Assignable to everything? | Everything assignable to it? | Type narrowing required? |
 | --------- | ------------------------- | ----------------------------- | ------------------------ |
-| `any`     | Yes                       | Yes                           | No                       |
-| `unknown` | Yes                       | No (only `any` and `unknown`) | Yes                      |
+| `any` | Yes | Yes | No |
+| `unknown` | Yes | No (only `any` and `unknown`) | Yes |
 
 `any` disables the type system entirely. A value typed as `any` can be used as any type, and any
-value can be assigned to it. `unknown` is the type-safe alternative: it can hold any value, but it
-must be narrowed before use.
+Value can be assigned to it. `unknown` is the type-safe alternative: it can hold any value, but it
+Must be narrowed before use.
 
 ### `unknown` for Error Handling
 
 The `unknown` type is the correct choice for `catch` clause variables and for API responses whose
-shape is not known at compile time:
+Shape is not known at compile time:
 
 ```ts
 try {
@@ -136,7 +136,7 @@ try {
 ```
 
 If `somethingRisky()` throws a non-`Error` value (e.g., a string), `error.message` is `undefined` at
-runtime, and the `any` type prevents the compiler from catching this.
+Runtime, and the `any` type prevents the compiler from catching this.
 
 ## Error Types in TypeScript
 
@@ -144,18 +144,18 @@ runtime, and the `any` type prevents the compiler from catching this.
 
 JavaScript provides several built-in error classes, all of which TypeScript types natively:
 
-| Error Class      | Purpose                    |
+| Error Class | Purpose |
 | ---------------- | -------------------------- |
-| `Error`          | Generic error              |
-| `TypeError`      | Incorrect type operation   |
-| `RangeError`     | Value outside valid range  |
-| `SyntaxError`    | Invalid syntax (parser)    |
-| `ReferenceError` | Undefined variable access  |
-| `URIError`       | Invalid URI operation      |
-| `EvalError`      | Error in `eval()` (legacy) |
+| `Error` | Generic error |
+| `TypeError` | Incorrect type operation |
+| `RangeError` | Value outside valid range |
+| `SyntaxError` | Invalid syntax (parser) |
+| `ReferenceError` | Undefined variable access |
+| `URIError` | Invalid URI operation |
+| `EvalError` | Error in `eval()` (legacy) |
 
-All built-in error classes inherit from `Error`, which provides the `message`, `name`, and `stack`
-properties.
+All built-in error classes inherit from `Error`Which provides the `message``name`And `stack`
+Properties.
 
 ### Custom Error Classes
 
@@ -237,8 +237,8 @@ function handleAppError(error: AppError): void {
 }
 ```
 
-**Common Pitfall:** When extending `Error`, call `super(message)` in the constructor and set
-`this.name`. Without `super()`, the `message` property is not initialised. Without `this.name`,
+**Common Pitfall:** When extending `Error`Call `super(message)` in the constructor and set
+`this.name`. Without `super()`The `message` property is not initialised. Without `this.name`
 `instanceof` checks still work, but `error.name` defaults to `"Error"`.
 
 ## `try`/`catch`/`finally` Typing
@@ -246,7 +246,7 @@ function handleAppError(error: AppError): void {
 ### Catch Clause Type Narrowing
 
 The `catch` clause variable has type `unknown` by default (when `useUnknownInCatchVariables` is
-enabled, which is the default under `strict: true`):
+Enabled, which is the default under `strict: true`):
 
 ```ts
 try {
@@ -266,7 +266,7 @@ try {
 
 Type narrowing inside `try` does not automatically apply to the `catch` or `finally` blocks. The
 `catch` block receives the thrown value, and the `finally` block executes regardless of whether an
-error occurred:
+Error occurred:
 
 ```ts
 function safeParse(json: string): unknown {
@@ -283,7 +283,7 @@ function safeParse(json: string): unknown {
 ### The `finally` Block
 
 The `finally` block always executes, even when `try` or `catch` returns or throws. TypeScript does
-not narrow types across `finally` boundaries because the control flow is non-local:
+Not narrow types across `finally` boundaries because the control flow is non-local:
 
 ```ts
 function example(): string {
@@ -380,8 +380,8 @@ function App() {
 ```
 
 **Common Pitfall:** Error boundaries do not catch errors in event handlers, asynchronous code, or
-server-side rendering. They only catch errors during React's rendering lifecycle. Use `try`/`catch`
-for event handlers and async operations.
+Server-side rendering. They only catch errors during React's rendering lifecycle. Use `try`/`catch`
+For event handlers and async operations.
 
 ## Throw Expressions (TypeScript 4.0+)
 
@@ -455,7 +455,7 @@ function firstElement<T>(arr: T[]): T {
 ```
 
 After `assertDefined` returns normally, TypeScript narrows the type of `arr[0]` from `T | undefined`
-to `T`.
+To `T`.
 
 ### `assertEqual`
 
@@ -497,13 +497,13 @@ function processAction(action: Action): void {
 }
 ```
 
-If a new variant is added to `Action`, the `assertNever` call produces a compile error because the
-new variant is not assignable to `never`.
+If a new variant is added to `Action`The `assertNever` call produces a compile error because the
+New variant is not assignable to `never`.
 
 ## Result Type Pattern
 
 The Result type pattern models operations that can fail without using exceptions. It is an explicit,
-type-safe alternative to `try`/`catch`.
+Type-safe alternative to `try`/`catch`.
 
 ### Basic Result Type
 
@@ -629,19 +629,19 @@ async function safeFetch(url: string): AsyncResult<Response, NetworkError> {
 
 These three concepts are often conflated but have distinct meanings in TypeScript:
 
-| Concept           | Type       | Meaning                                |
+| Concept | Type | Meaning |
 | ----------------- | ---------- | -------------------------------------- | ------------------------------ |
 | Optional property | `prop?: T` | Property may be absent from the object |
-| Nullable          | `T         | null`                                  | Value may be explicitly `null` |
-| Undefined         | `T         | undefined`                             | Value may be `undefined`       |
+| Nullable | `T         | null` | Value may be explicitly `null` |
+| Undefined | `T         | undefined` | Value may be `undefined` |
 
 ### Optional Properties
 
 Under the default configuration, an optional property (`prop?: T`) has type `T | undefined`. The
-property may be absent or present with value `undefined`.
+Property may be absent or present with value `undefined`.
 
-Under `exactOptionalPropertyTypes`, an optional property may only be absent. To allow `undefined`,
-declare: `prop?: T | undefined`.
+Under `exactOptionalPropertyTypes`An optional property may only be absent. To allow `undefined`
+Declare: `prop?: T | undefined`.
 
 ```ts
 interface Config {
@@ -652,13 +652,13 @@ const a: Config = {};
 const b: Config = { host: 'localhost' };
 ```
 
-Under `exactOptionalPropertyTypes`, `const c: Config = { host: undefined }` is an error.
+Under `exactOptionalPropertyTypes``const c: Config = { host: undefined }` is an error.
 
 ### Null vs Undefined
 
 `null` represents an intentional absence of value. `undefined` represents a value that has not been
-assigned or does not exist. In practice, both are used for "no value," but distinguishing them
-enables more precise error handling:
+Assigned or does not exist. In practice, both are used for "no value," but distinguishing them
+Enables more precise error handling:
 
 ```ts
 function findUser(id: string): User | undefined {}
@@ -666,7 +666,7 @@ function deleteUser(id: string): User | null {}
 ```
 
 `findUser` returns `undefined` when the user is not found (the result is absent). `deleteUser`
-returns `null` when the operation explicitly produced no result.
+Returns `null` when the operation explicitly produced no result.
 
 ### NonNullable Utility
 
@@ -694,7 +694,7 @@ function applySettings(settings: Settings): void {
 ```
 
 `??` treats only `null` and `undefined` as nullish, making it the correct operator for default
-values when `0`, `""`, or `false` are valid values.
+Values when `0``""`Or `false` are valid values.
 
 ## Common Pitfalls
 
@@ -722,7 +722,7 @@ throw { code: 500 };
 ```
 
 This is legal JavaScript but makes error handling fragile. Always throw `Error` instances (or
-subclasses) to ensure consistent `message`, `name`, and `stack` properties.
+Subclasses) to ensure consistent `message``name`And `stack` properties.
 
 ### Pitfall 3: Swallowed Errors
 
@@ -753,3 +753,11 @@ Error boundaries in React do not catch errors in:
 
 Use error boundaries only for rendering errors. For all other error scenarios, use standard
 `try`/`catch` with the Result pattern or assert functions.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

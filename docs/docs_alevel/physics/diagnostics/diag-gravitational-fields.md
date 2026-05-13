@@ -29,11 +29,11 @@ Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
 
 $$g = \frac{GM_E}{r^2} = \frac{GM_E}{16R_E^2} = \frac{g_0}{16}$$
 
-where $g_0 = GM_E/R_E^2 = 9.81\,\text{m}\,\text{s}^{-2}$.
+Where $g_0 = GM_E/R_E^2 = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 $$g = \frac{9.81}{16} = 0.613\,\text{m}\,\text{s}^{-2}$$
 
-(b) At depth $d = R_E/2$, the distance from the centre is $r = R_E/2$.
+(b) At depth $d = R_E/2$The distance from the centre is $r = R_E/2$.
 
 By the shell theorem, only the mass within radius $r$ contributes:
 
@@ -70,7 +70,7 @@ $$\frac{T_D^2}{T_P^2} = \frac{r_D^3}{r_P^3}$$
 $$T_D = T_P \left(\frac{r_D}{r_P}\right)^{3/2} = 7.66 \times \left(\frac◆LB◆2.35 \times 10^7◆RB◆◆LB◆9.38 \times 10^6◆RB◆\right)^{3/2}$$
 $$= 7.66 \times (2.505)^{3/2} = 7.66 \times 3.965 = 30.4\,\text{hours}$$
 
-The accepted value is approximately $30.3\,\text{hours}$, confirming the calculation.
+The accepted value is approximately $30.3\,\text{hours}$Confirming the calculation.
 
 (b) From Phobos:
 
@@ -103,7 +103,7 @@ Phobos orbits Mars faster than Mars rotates. The tidal interaction causes a tran
 
 (c) A spacecraft is at the point where the gravitational field strengths of the Earth and Moon are equal in magnitude but opposite in direction (the Lagrange point L1). Calculate the distance of this point from the centre of the Earth.
 
-Take: $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $M_M = 7.35 \times 10^{22}\,\text{kg}$, $R_M = 1.74 \times 10^6\,\text{m}$, Earth-Moon distance $= 3.84 \times 10^8\,\text{m}$.
+Take: $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$M_M = 7.35 \times 10^{22}\,\text{kg}$$R_M = 1.74 \times 10^6\,\text{m}$Earth-Moon distance $= 3.84 \times 10^8\,\text{m}$.
 
 **Solution:**
 
@@ -129,7 +129,7 @@ The total potential at the point near the Moon is more negative than the surface
 
 $$\frac{GM_E}{r^2} = \frac{GM_M}{(d - r)^2}$$
 
-where $r$ is the distance from Earth and $d = 3.84 \times 10^8\,\text{m}$.
+Where $r$ is the distance from Earth and $d = 3.84 \times 10^8\,\text{m}$.
 
 $$\frac{r^2}{(d-r)^2} = \frac{M_E}{M_M} = \frac◆LB◆5.97 \times 10^{24}◆RB◆◆LB◆7.35 \times 10^{22}◆RB◆ = 81.22$$
 
@@ -153,7 +153,7 @@ The L1 point is approximately $3.46 \times 10^8\,\text{m}$ from the centre of th
 
 (c) A second satellite of mass $500\,\text{kg}$ is in a circular orbit at half the geostationary radius. Calculate the ratio of their orbital speeds and the ratio of their total energies per unit mass.
 
-Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $R_E = 6.37 \times 10^6\,\text{m}$.
+Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$R_E = 6.37 \times 10^6\,\text{m}$.
 
 **Solution:**
 
@@ -168,11 +168,11 @@ $$r = \sqrt[3]{7.488 \times 10^{22}} = 4.216 \times 10^7\,\text{m}$$
 
 $$E = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000◆RB◆◆LB◆2 \times 4.216 \times 10^7◆RB◆ = -\frac◆LB◆3.982 \times 10^{17}◆RB◆◆LB◆8.432 \times 10^7◆RB◆ = -4.723 \times 10^9\,\text{J}$$
 
-(c) For circular orbits: $v = \sqrt{GM/r}$, so $v \propto r^{-1/2}$.
+(c) For circular orbits: $v = \sqrt{GM/r}$So $v \propto r^{-1/2}$.
 
 Ratio of speeds: $\frac◆LB◆v_{\text{inner}}◆RB◆◆LB◆v_{\text{geo}}◆RB◆ = \sqrt◆LB◆\frac{r_{\text{geo}}}{r_{\text{inner}}}◆RB◆ = \sqrt◆LB◆\frac{r}{r/2}◆RB◆ = \sqrt{2}$
 
-Total energy per unit mass: $E/m = -\frac{GM}{2r}$, so $E/m \propto r^{-1}$.
+Total energy per unit mass: $E/m = -\frac{GM}{2r}$So $E/m \propto r^{-1}$.
 
 Ratio: $\frac◆LB◆E_{\text{inner}}/m_{\text{inner}}◆RB◆◆LB◆E_{\text{geo}}/m_{\text{geo}}◆RB◆ = \frac◆LB◆r_{\text{geo}}◆RB◆◆LB◆r_{\text{inner}}◆RB◆ = \frac{r}{r/2} = 2$
 
@@ -234,7 +234,7 @@ Check: $M_1 v_1 = M_2 v_2$ (centre of mass frame): $3 \times 10^{30} \times 9130
 
 **Question:**
 
-A spacecraft approaches Jupiter (mass $1.90 \times 10^{27}\,\text{kg}$, radius $6.99 \times 10^7\,\text{m}$) with speed $8.0 \times 10^3\,\text{m}\,\text{s}^{-1}$ relative to Jupiter. The closest approach distance is $3.0 \times 10^8\,\text{m}$ from Jupiter's centre. Jupiter orbits the Sun at speed $1.31 \times 10^4\,\text{m}\,\text{s}^{-1}$.
+A spacecraft approaches Jupiter (mass $1.90 \times 10^{27}\,\text{kg}$Radius $6.99 \times 10^7\,\text{m}$) with speed $8.0 \times 10^3\,\text{m}\,\text{s}^{-1}$ relative to Jupiter. The closest approach distance is $3.0 \times 10^8\,\text{m}$ from Jupiter's centre. Jupiter orbits the Sun at speed $1.31 \times 10^4\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate the speed of the spacecraft at closest approach to Jupiter, relative to Jupiter.
 
@@ -250,7 +250,7 @@ Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
 
 $$\frac{1}{2}v_{\infty}^2 = \frac{1}{2}v_{\min}^2 - \frac◆LB◆GM_J◆RB◆◆LB◆r_{\min}◆RB◆$$
 
-where $v_{\infty} = 8.0 \times 10^3\,\text{m}\,\text{s}^{-1}$ is the speed far from Jupiter.
+Where $v_{\infty} = 8.0 \times 10^3\,\text{m}\,\text{s}^{-1}$ is the speed far from Jupiter.
 
 $$\frac{1}{2}(8.0 \times 10^3)^2 = \frac{1}{2}v_{\min}^2 - \frac◆LB◆6.67 \times 10^{-11} \times 1.90 \times 10^{27}◆RB◆◆LB◆3.0 \times 10^8◆RB◆$$
 $$3.2 \times 10^7 = \frac{1}{2}v_{\min}^2 - 4.223 \times 10^8$$

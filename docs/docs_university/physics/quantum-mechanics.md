@@ -19,22 +19,22 @@ By the late 19th century, classical physics could not explain several phenomena:
 "ultraviolet catastrophe"). Experiment showed a peak that shifts with temperature.
 
 **Photoelectric effect.** Classical theory predicted that the kinetic energy of emitted electrons
-depends on the intensity of light. Experiment showed it depends on the frequency.
+Depends on the intensity of light. Experiment showed on the frequency.
 
 **Atomic spectra.** Atoms emit light at discrete frequencies, not the continuous spectrum predicted
-by classical electrodynamics.
+By classical electrodynamics.
 
 **Stability of atoms.** Classical electrodynamics predicts orbiting electrons radiate energy and
-spiral into the nucleus.
+Spiral into the nucleus.
 
 ### 1.2 Key Experiments
 
 **Planck's quantisation (1900).** Blackbody radiation is explained by assuming energy is emitted in
-discrete quanta: $E = h\nu$ where $h = 6.626 \times 10^{-34}$ J$\cdot$s is Planck's constant.
+Discrete quanta: $E = h\nu$ where $h = 6.626 \times 10^{-34}$ J$\cdot$S is Planck's constant.
 
 **Einstein's photon (1905).** Light consists of photons, each carrying energy $E = h\nu$ and momentum
 $p = h/\lambda = h\nu/c$. The photoelectric effect: $E_k = h\nu - \phi$ where $\phi$ is the work
-function.
+Function.
 
 **Compton scattering (1923).** X-rays scattered off electrons show a wavelength shift:
 
@@ -43,47 +43,47 @@ $$\Delta\lambda = \frac{h}{m_e c}(1 - \cos\theta)$$
 This confirms that photons carry momentum $p = h/\lambda$.
 
 **Davisson-Germer experiment (1927).** Electrons scattered off a nickel crystal produce a diffraction
-pattern, confirming de Broglie's hypothesis that matter has wave properties: $\lambda = h/p$.
+Pattern, confirming de Broglie's hypothesis that matter has wave properties: $\lambda = h/p$.
 
 ### 1.3 The Photoelectric Effect: Detailed Derivation
 
 The photoelectric effect provided the first direct evidence for the quantum nature of light. When
-monochromatic light of frequency $\nu$ strikes a metal surface, electrons are ejected with a maximum
-kinetic energy $K_{\max}$ that depends on $\nu$ but **not** on the intensity.
+Monochromatic light of frequency $\nu$ strikes a metal surface, electrons are ejected with a maximum
+Kinetic energy $K_{\max}$ that depends on $\nu$ but **not** on the intensity.
 
 **Einstein's quantum hypothesis (1905).** Each photon carries energy $E_\gamma = h\nu$. When a photon
-strikes the surface, it transfers all its energy to a single electron. By energy conservation:
+Strikes the surface, it transfers all its energy to a single electron. By energy conservation:
 
 $$h\nu = \phi + K_{\max}$$
 
-where $\phi$ is the work function (minimum energy to remove an electron from the metal).
+Where $\phi$ is the work function (minimum energy to remove an electron from the metal).
 
 **Key predictions:**
 
-1. **Threshold frequency.** No electrons are emitted if $\nu \lt{} \nu_0 = \phi/h$, regardless of
-   intensity. This is because each photon must supply at least $\phi$.
+1. **Threshold frequency.** No electrons are emitted if $\nu \lt{} \nu_0 = \phi/h$Regardless of
+ intensity. This is because each photon must supply at least $\phi$.
 
 2. **Linear dependence on frequency.** $K_{\max} = h\nu - \phi$ is linear in $\nu$ with slope $h$
-   (independent of the metal).
+ (independent of the metal).
 
 3. **Intensity affects current, not energy.** Higher intensity means more photons per unit time, so
-   more electrons are emitted, but each electron has the same maximum kinetic energy.
+ more electrons are emitted, but each electron has the same maximum kinetic energy.
 
 4. **No time delay.** Classically, an electron should accumulate energy gradually; quantum
-   mechanically, a single photon ejects an electron instantaneously.
+ mechanically, a single photon ejects an electron instantaneously.
 
 *Proof of the threshold frequency.* Setting $K_{\max} = 0$ in the energy balance:
 
 $$h\nu_0 = \phi \implies \nu_0 = \frac{\phi}{h}$$
 
-For frequencies $\nu \lt{} \nu_0$, the photon energy is insufficient to liberate an electron, and
-no photoelectric emission occurs regardless of intensity. $\blacksquare$
+For frequencies $\nu \lt{} \nu_0$The photon energy is insufficient to liberate an electron, and
+No photoelectric emission occurs regardless of intensity. $\blacksquare$
 
 **Millikan's experimental verification (1916).** Robert Millikan, who initially opposed Einstein's
-theory, performed careful experiments measuring $K_{\max}$ versus $\nu$ for various metals. His
-results confirmed the linear relation $K_{\max} = h\nu - \phi$ with a universal slope $h$ (Planck's
-constant), providing compelling evidence for the photon concept. Millikan's measured value of $h$
-agreed with Planck's value from blackbody radiation to within $0.5\%$.
+Theory, performed careful experiments measuring $K_{\max}$ versus $\nu$ for various metals. His
+Results confirmed the linear relation $K_{\max} = h\nu - \phi$ with a universal slope $h$ (Planck's
+Constant), providing compelling evidence for the photon concept. Millikan's measured value of $h$
+Agreed with Planck's value from blackbody radiation to within $0.5\%$.
 
 **Example 1.1.** Sodium has a work function $\phi = 2.28$ eV. Find the cutoff wavelength.
 
@@ -96,19 +96,19 @@ $= 5.51 \times 10^{14}$ Hz. The cutoff wavelength is:
 $$\lambda_0 = \frac{c}{\nu_0} = \frac{3.00 \times 10^8}{5.51 \times 10^{14}} = 544\;\mathrm{nm{}$$
 
 This lies in the green region of the visible spectrum, explaining why sodium is sensitive to visible
-light.
+Light.
 
 </details>
 
 ### 1.4 Compton Scattering: Derivation
 
 Compton scattering provides direct evidence that photons carry momentum. When an X-ray photon of
-wavelength $\lambda$ scatters off a free (or loosely bound) electron at rest, the scattered photon
-has a longer wavelength $\lambda'$.
+Wavelength $\lambda$ scatters off a free (or loosely bound) electron at rest, the scattered photon
+Has a longer wavelength $\lambda'$.
 
-**Setup.** Incident photon: energy $E = hc/\lambda$, momentum $p = h/\lambda$. Target electron:
-at rest, energy $m_e c^2$, momentum $0$. After scattering, the photon is deflected by angle $\theta$
-and the electron recoils at angle $\phi$.
+**Setup.** Incident photon: energy $E = hc/\lambda$Momentum $p = h/\lambda$. Target electron:
+At rest, energy $m_e c^2$Momentum $0$. After scattering, the photon is deflected by angle $\theta$
+And the electron recoils at angle $\phi$.
 
 **Energy conservation:**
 
@@ -119,7 +119,7 @@ $$\frac{hc}{\lambda} + m_e c^2 = \frac{hc}{\lambda'} + E_e$$
 $$\frac{h}{\lambda}\hat{n} = \frac{h}{\lambda'}\hat{n}' + \mathbf{'\{'}p{'\}'}_e$$
 
 *Derivation of the wavelength shift.* From the relativistic energy-momentum relation for the
-electron, $E_e^2 = (p_e c)^2 + (m_e c^2)^2$. Rearranging the energy conservation:
+Electron, $E_e^2 = (p_e c)^2 + (m_e c^2)^2$. Rearranging the energy conservation:
 
 $$E_e - m_e c^2 = hc\!\left(\frac{1}{\lambda} - \frac{1}{\lambda'}\right)$$
 
@@ -132,7 +132,7 @@ Using $E_e^2 = p_e^2 c^2 + m_e^2 c^4$ and writing $T_e = E_e - m_e c^2$:
 $$E_e^2 - m_e^2 c^4 = 2m_e c^2 T_e + T_e^2 = p_e^2 c^2$$
 
 Substituting $T_e = hc(1/\lambda - 1/\lambda')$ and $p_e^2$ from above, then dividing by $c^2$ and
-simplifying:
+Simplifying:
 
 $$2m_e c \cdot \frac{h}{\lambda\lambda'}(1 - \cos\theta) = 2h^2\!\left(\frac{1}{\lambda^2} + \frac{1}{\lambda'^2} - \frac{2\cos\theta}{\lambda\lambda'}\right)$$
 
@@ -143,19 +143,19 @@ Multiplying through by $\lambda\lambda'$ yields the **Compton formula**:
 $$\Delta\lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)$$
 
 The quantity $\lambda_C = h/(m_e c) \approx 2.426 \times 10^{-12}$ m is the **Compton wavelength** of
-the electron. $\blacksquare$
+The electron. $\blacksquare$
 
 **Classical limit.** In the classical limit ($\lambda \gg \lambda_C$), the wavelength shift
 $\Delta\lambda \to 0$ and the scattering reduces to classical Thomson scattering. The Compton
-effect is only significant for X-rays and gamma rays, where $\lambda$ is comparable to $\lambda_C$.
+Effect is only significant for X-rays and gamma rays, where $\lambda$ is comparable to $\lambda_C$.
 For visible light ($\lambda \sim 500$ nm), the Compton shift is negligible compared to the wavelength.
 
 **Physical interpretation.** The maximum shift $\Delta\lambda = 2\lambda_C \approx 4.85$ pm occurs at
 $\theta = \pi$ (backscattering). The shift is independent of the material and depends only on the
-scattering angle, confirming that the scattering involves individual photons and electrons.
+Scattering angle, confirming that the scattering involves individual photons and electrons.
 
 **Example 1.2.** X-rays of wavelength $0.100$ nm are Compton-scattered at $\theta = 90°$. Find the
-wavelength of the scattered photon and the kinetic energy of the recoil electron.
+Wavelength of the scattered photon and the kinetic energy of the recoil electron.
 
 <details>
 <summary>Solution</summary>
@@ -175,13 +175,13 @@ $$= \frac{(6.626 \times 10^{-34})(3.00 \times 10^8)(2.43 \times 10^{-12})}{(1.00
 ### 1.5 The Davisson-Germer Experiment
 
 The Davisson-Germer experiment (1927) provided the first direct confirmation of de Broglie's
-hypothesis that particles have wave-like properties.
+Hypothesis that particles have wave-like properties.
 
 **Experimental setup.** A beam of electrons is accelerated through a potential difference $V$ and
-directed at a nickel crystal. The scattered electrons are detected at various angles $\phi$.
+Directed at a nickel crystal. The scattered electrons are detected at various angles $\phi$.
 
 **de Broglie relation.** An electron accelerated through potential $V$ has kinetic energy $K = eV$
-and momentum:
+And momentum:
 
 $$p = \sqrt{2m_e eV}$$
 
@@ -194,109 +194,109 @@ Constructive interference occurs when:
 
 $$n\lambda = 2d\sin\phi$$
 
-where $\phi$ is the angle measured from the crystal surface.
+Where $\phi$ is the angle measured from the crystal surface.
 
 **The key observation.** At $V = 54$ V, a pronounced peak was observed at $\phi = 50°$. The
-de Broglie wavelength at this voltage is:
+De Broglie wavelength at this voltage is:
 
 $$\lambda = \frac{6.626 \times 10^{-34}}{\sqrt{2(9.109 \times 10^{-31})(1.602 \times 10^{-19})(54)}} = 0.167\;\mathrm{nm{}$$
 
 The Bragg condition with the nickel lattice spacing gives excellent agreement with this
-prediction, confirming that electrons exhibit wave-like diffraction.
+Prediction, confirming that electrons exhibit wave-like diffraction.
 
 **Significance.** The Davisson-Germer experiment established wave-particle duality for matter. The
-de Broglie relation $\lambda = h/p$ was subsequently confirmed for neutrons, atoms, and molecules
+De Broglie relation $\lambda = h/p$ was subsequently confirmed for neutrons, atoms, and molecules
 (C60 fullerenes in 1999), establishing it as a universal principle. In 2019, the de Broglie
-wavelength of molecules exceeding 25,000 atomic mass units was demonstrated, pushing the boundary
-of quantum mechanics to the macroscopic regime.
+Wavelength of molecules exceeding 25,000 atomic mass units was demonstrated, pushing the boundary
+Of quantum mechanics to the macroscopic regime.
 
 ## 2. Postulates of Quantum Mechanics
 
 ### 2.1 The Postulates
 
 **Postulate 1 (State Space).** The state of a quantum system is completely described by a normalised
-vector $|\psi\rangle$ in a complex Hilbert space $\mathcal{'\{'}H{'\}'}$.
+Vector $|\psi\rangle$ in a complex Hilbert space $\mathcal{'\{'}H{'\}'}$.
 
 *Physical motivation.* Superposition is observed in interference experiments (e.g., double-slit),
-where a particle can traverse multiple paths simultaneously. The complex-valued nature of the state
-is essential: relative phases between superposition components produce observable interference
-patterns that cannot be replicated with real amplitudes alone.
+Where a particle can traverse multiple paths simultaneously. The complex-valued nature of the state
+Is essential: relative phases between superposition components produce observable interference
+Patterns that cannot be replicated with real amplitudes alone.
 
 **Postulate 2 (Observables).** Every measurable quantity (observable) is represented by a Hermitian
 (self-adjoint) operator $\hat{A} = \hat{A}^\dagger$ acting on $\mathcal{'\{'}H{'\}'}$.
 
 *Physical motivation.* Hermitian operators have real eigenvalues, matching the fact that measurement
-outcomes are real numbers. The spectral theorem guarantees a complete set of eigenstates, providing a
-basis for expansion.
+Outcomes are real numbers. The spectral theorem guarantees a complete set of eigenstates, providing a
+Basis for expansion.
 
 **Postulate 3 (Measurement).** A measurement of observable $\hat{A}$ yields one of the eigenvalues
 $a_n$ of $\hat{A}$. The probability of measuring $a_n$ when the system is in state $|\psi\rangle$ is
 
 $$P(a_n) = |\langle a_n | \psi \rangle|^2$$
 
-where $|a_n\rangle$ is the eigenstate corresponding to $a_n$. After measurement, the state collapses
-to $|a_n\rangle$.
+Where $|a_n\rangle$ is the eigenstate corresponding to $a_n$. After measurement, the state collapses
+To $|a_n\rangle$.
 
 *Physical motivation.* The Born rule $P = |\langle a_n|\psi\rangle|^2$ was postulated by Born (1926)
-to connect wave functions to observable probabilities. It correctly predicts the intensity
-distribution in diffraction experiments and the statistics of particle detections.
+To connect wave functions to observable probabilities. It correctly predicts the intensity
+Distribution in diffraction experiments and the statistics of particle detections.
 
 **Postulate 4 (Time Evolution).** The time evolution of the state is governed by the **time-dependent
 Schrodinger equation**:
 
 $$i\hbar \frac{\partial}{\partial t}|\psi(t)\rangle = \hat{H}|\psi(t)\rangle$$
 
-where $\hat{H}$ is the Hamiltonian (energy operator).
+Where $\hat{H}$ is the Hamiltonian (energy operator).
 
 *Physical motivation.* This is the quantum analogue of Hamilton's equations in classical mechanics.
 The Schrodinger equation is linear, guaranteeing superposition is preserved. Energy conservation is
-built in: for a time-independent Hamiltonian, $\langle H \rangle$ is constant.
+Built in: for a time-independent Hamiltonian, $\langle H \rangle$ is constant.
 
 **Postulate 5 (Composite Systems).** The state space of a composite system is the tensor product of
-the state spaces of the components.
+The state spaces of the components.
 
-*Physical motivation.* This postulate naturally produces entangled states, which have been confirmed
-experimentally (Bell inequality violations, quantum teleportation). The tensor product structure
-ensures that measurements on subsystems can exhibit correlations stronger than any classical theory
-permits.
+*Physical motivation.* This postulate produces entangled states, which have been confirmed
+Experimentally (Bell inequality violations, quantum teleportation). The tensor product structure
+Ensures that measurements on subsystems can exhibit correlations stronger than any classical theory
+Permits.
 
 ### 2.2 The Measurement Problem
 
 The measurement postulate (Postulate 3) introduces a fundamental tension: the Schrodinger equation
-describes **deterministic, unitary** evolution, but measurement produces **probabilistic, non-unitary**
-collapse. This is the **measurement problem**.
+Describes **deterministic, unitary** evolution, but measurement produces **probabilistic, non-unitary**
+Collapse. This is the **measurement problem**.
 
 **The conflict.** Consider a system in a superposition $|\psi\rangle = \alpha|a_1\rangle + \beta|a_2\rangle$.
 Under unitary evolution, the state remains a superposition. But a measurement of $\hat{A}$ yields
-either $a_1$ or $a_2$ with probabilities $|\alpha|^2$ and $|\beta|^2$, and the state collapses to
-the corresponding eigenstate. No unitary operator can map a superposition to a single eigenstate
-with the correct probabilities.
+Either $a_1$ or $a_2$ with probabilities $|\alpha|^2$ and $|\beta|^2$And the state collapses to
+The corresponding eigenstate. No unitary operator can map a superposition to a single eigenstate
+With the correct probabilities.
 
 **Major interpretational approaches:**
 
 - **Copenhagen interpretation.** Collapse is a fundamental, irreducible process. The classical
-  measuring apparatus triggers the collapse. No further mechanism is specified.
+ measuring apparatus triggers the collapse. No further mechanism is specified.
 
 - **Many-worlds interpretation (Everett, 1957).** The universal wave function never collapses.
-  Instead, measurement causes the observer and system to entangle, branching into multiple
-  non-interacting "worlds," each corresponding to one measurement outcome.
+ Instead, measurement causes the observer and system to entangle, branching into multiple
+ non-interacting "worlds," each corresponding to one measurement outcome.
 
 - **Decoherence (Zurek).** Interaction with the environment rapidly suppresses off-diagonal
-  elements of the reduced density matrix in a preferred basis ("einselection"), explaining the
-  emergence of classical behaviour from unitary quantum mechanics.
+ elements of the reduced density matrix in a preferred basis ("einselection"), explaining the
+ emergence of classical behaviour from unitary quantum mechanics.
 
 - **Bohmian mechanics.** Particles have definite positions guided by the wave function via the
-  "pilot wave." The wave function never collapses, but the effective description reproduces the
-  Born rule.
+ "pilot wave." The wave function never collapses, but the effective description reproduces the
+ Born rule.
 
 The measurement problem remains an active area of research in the foundations of quantum mechanics.
 
 ### 2.3 Density Matrix Formalism
 
 For systems where the state is not known precisely (statistical mixtures), the **density operator**
-provides a more general description than the state vector.
+Provides a more general description than the state vector.
 
-**Definition.** For a pure state $|\psi\rangle$, the density operator is $\hat{\rho} = |\psi\rangle\langle\psi|$.
+**Definition.** For a pure state $|\psi\rangle$The density operator is $\hat{\rho} = |\psi\rangle\langle\psi|$.
 For a statistical mixture of states $|\psi_i\rangle$ with probabilities $p_i$:
 
 $$\hat{\rho} = \sum_i p_i\,|\psi_i\rangle\langle\psi_i|$$
@@ -310,7 +310,7 @@ $$\hat{\rho} = \sum_i p_i\,|\psi_i\rangle\langle\psi_i|$$
 **Time evolution:** $i\hbar\,d\hat{\rho}/dt = [\hat{H}, \hat{\rho}]$ (Liouville-von Neumann equation).
 
 The density matrix is essential for describing subsystems of entangled states (reduced density
-matrices via partial trace), open quantum systems, and decoherence.
+Matrices via partial trace), open quantum systems, and decoherence.
 
 ### 2.4 Implications
 
@@ -318,15 +318,15 @@ matrices via partial trace), open quantum systems, and decoherence.
 - **Uncertainty Principle:** Non-commuting observables cannot be simultaneously measured with arbitrary precision.
 - **Probabilistic Nature:** Quantum mechanics predicts probabilities, not deterministic outcomes.
 - **No-cloning theorem.** There is no unitary operation that copies an arbitrary unknown quantum
-  state $|\psi\rangle$. This follows from the linearity of quantum mechanics and has profound
-  implications for quantum information.
+ state $|\psi\rangle$. This follows from the linearity of quantum mechanics and has profound
+ implications for quantum information.
 
 ## 3. Wave Functions and the Schrodinger Equation
 
 ### 3.1 Wave Functions
 
-In the position representation, the state is described by a **wave function** $\psi(\mathbf{'\{'}r{'\}'}, t)$,
-where $|\psi(\mathbf{'\{'}r{'\}'}, t)|^2$ is the probability density:
+In the position representation, the state is described by a **wave function** $\psi(\mathbf{'\{'}r{'\}'}, t)$
+Where $|\psi(\mathbf{'\{'}r{'\}'}, t)|^2$ is the probability density:
 
 $$P(\mathbf{'\{'}r{'\}'} \in [\mathbf{'\{'}r{'\}'}, \mathbf{'\{'}r{'\}'} + d\mathbf{'\{'}r{'\}'}]) = |\psi(\mathbf{'\{'}r{'\}'}, t)|^2\, d^3\mathbf{'\{'}r{'\}'}$$
 
@@ -338,7 +338,7 @@ $$i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi = \left(-\frac{\hbar^2}{
 
 ### 3.3 Time-Independent Schrodinger Equation
 
-For time-independent potentials $V(\mathbf{'\{'}r{'\}'})$, separate variables: $\psi(\mathbf{'\{'}r{'\}'}, t) = \phi(\mathbf{'\{'}r{'\}'}) e^{-iEt/\hbar}$:
+For time-independent potentials $V(\mathbf{'\{'}r{'\}'})$Separate variables: $\psi(\mathbf{'\{'}r{'\}'}, t) = \phi(\mathbf{'\{'}r{'\}'}) e^{-iEt/\hbar}$:
 
 $$\hat{H}\phi = E\phi \quad \mathrm{i.e.,{} \quad -\frac{\hbar^2}{2m}\nabla^2\phi + V\phi = E\phi$$
 
@@ -346,18 +346,18 @@ This is an eigenvalue problem: $E$ is the energy eigenvalue, $\phi$ is the energ
 
 **Properties of energy eigenstates:**
 
-1. **Orthogonality.** If $\hat{H}\phi_n = E_n\phi_n$ and $\hat{H}\phi_m = E_m\phi_m$ with $E_n \neq E_m$,
-   then $\int \phi_n^*\phi_m\,dx = 0$ (since $\hat{H}$ is Hermitian).
+1. **Orthogonality.** If $\hat{H}\phi_n = E_n\phi_n$ and $\hat{H}\phi_m = E_m\phi_m$ with $E_n \neq E_m$
+ then $\int \phi_n^*\phi_m\,dx = 0$ (since $\hat{H}$ is Hermitian).
 
 2. **Completeness.** The energy eigenstates form a complete basis: any state can be expanded as
-   $\psi(x,0) = \sum_n c_n\phi_n(x)$ where $c_n = \int \phi_n^*(x)\psi(x,0)\,dx$.
+ $\psi(x,0) = \sum_n c_n\phi_n(x)$ where $c_n = \int \phi_n^*(x)\psi(x,0)\,dx$.
 
-3. **Stationary states.** If $\psi(x,0) = \phi_n(x)$, then $\psi(x,t) = \phi_n(x)e^{-iE_nt/\hbar}$.
-   The probability density $|\psi|^2 = |\phi_n|^2$ is time-independent.
+3. **Stationary states.** If $\psi(x,0) = \phi_n(x)$Then $\psi(x,t) = \phi_n(x)e^{-iE_nt/\hbar}$.
+ The probability density $|\psi|^2 = |\phi_n|^2$ is time-independent.
 
 4. **Reality of $\phi$.** If $V(x)$ is real and there is no magnetic field, $\phi_n(x)$ can be chosen
-   to be real. This is because if $\phi_n$ is a solution, so is $\phi_n^*$, and degenerate solutions
-   can be combined into real linear combinations.
+ to be real. This is because if $\phi_n$ is a solution, so is $\phi_n^*$And degenerate solutions
+ can be combined into real linear combinations.
 
 ### 3.4 Probability Current
 
@@ -365,8 +365,8 @@ The **probability current density** is
 
 $$\mathbf{'\{'}J{'\}'} = \frac{\hbar}{2mi}(\psi^* \nabla\psi - \psi \nabla\psi^*)$$
 
-It satisfies the continuity equation: $\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{'\{'}J{'\}'} = 0$,
-expressing conservation of probability.
+It satisfies the continuity equation: $\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{'\{'}J{'\}'} = 0$
+Expressing conservation of probability.
 
 *Derivation of the continuity equation.* Start with the Schrodinger equation and its complex conjugate:
 
@@ -374,7 +374,7 @@ $$i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2\psi + V\
 
 $$-i\hbar \frac{\partial \psi^*}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2\psi^* + V\psi^*$$
 
-Multiply the first by $\psi^*$ and the second by $\psi$, then subtract:
+Multiply the first by $\psi^*$ and the second by $\psi$Then subtract:
 
 $$i\hbar\!\left(\psi^*\frac{\partial \psi}{\partial t} + \psi\frac{\partial \psi^*}{\partial t}\right) = -\frac{\hbar^2}{2m}\!\left(\psi^*\nabla^2\psi - \psi\nabla^2\psi^*\right)$$
 
@@ -395,7 +395,7 @@ $$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{'\{'}J{'\}'} = 0 \
 ### 3.5 Unitarity of Time Evolution
 
 **Theorem 3.1.** Time evolution governed by the Schrodinger equation with a Hermitian Hamiltonian
-is unitary, and therefore preserves the norm of the state vector.
+Is unitary, and therefore preserves the norm of the state vector.
 
 *Proof.* The time evolution operator $\hat{U}(t, t_0)$ is defined by:
 
@@ -409,11 +409,11 @@ To prove unitarity, we show $\hat{U}^\dagger \hat{U} = \hat{I}$:
 
 $$\hat{U}^\dagger = \exp\!\left(\frac{i\hat{H}^\dagger(t - t_0)}{\hbar}\right) = \exp\!\left(\frac{i\hat{H}(t - t_0)}{\hbar}\right)$$
 
-since $\hat{H} = \hat{H}^\dagger$ (Hermitian). Therefore:
+Since $\hat{H} = \hat{H}^\dagger$ (Hermitian). Therefore:
 
 $$\hat{U}^\dagger \hat{U} = \exp\!\left(\frac{i\hat{H}(t - t_0)}{\hbar}\right)\exp\!\left(-\frac{i\hat{H}(t - t_0)}{\hbar}\right) = \hat{I}$$
 
-since commuting operators satisfy $e^A e^{-A} = I$.
+Since commuting operators satisfy $e^A e^{-A} = I$.
 
 **Consequence.** Norm preservation:
 
@@ -430,26 +430,26 @@ For a time-dependent Hamiltonian, the evolution operator is given by Dyson's tim
 
 $$\hat{U}(t, t_0) = \mathcal{'\{'}T{'\}'}\exp\!\left(-\frac{i}{\hbar}\int_{t_0}^{t}\hat{H}(t')\,dt'\right)$$
 
-where $\mathcal{'\{'}T{'\}'}$ denotes time ordering (later times appear to the left).
+Where $\mathcal{'\{'}T{'\}'}$ denotes time ordering (later times appear to the left).
 
 For a time-dependent Hamiltonian, the evolution operator satisfies $i\hbar\,\partial\hat{U}/\partial t = \hat{H}(t)\hat{U}$
-with $\hat{U}(t_0, t_0) = \hat{I}$. Unitarity still holds: $d(\hat{U}^\dagger\hat{U})/dt = 0$ since
+With $\hat{U}(t_0, t_0) = \hat{I}$. Unitarity still holds: $d(\hat{U}^\dagger\hat{U})/dt = 0$ since
 $\hat{H}(t) = \hat{H}^\dagger(t)$.
 
 ### 3.6 Normalisation of Wave Functions
 
 A physically valid wave function must satisfy $\int |\psi|^2\,dx = 1$. This determines the normalisation
-constant.
+Constant.
 
-**Example 3.1.** Normalise the wave function $\psi(x) = Ae^{-\alpha|x|}$ for $-\infty \lt x \lt \infty$,
-where $\alpha \gt 0$.
+**Example 3.1.** Normalise the wave function $\psi(x) = Ae^{-\alpha|x|}$ for $-\infty \lt x \lt \infty$
+Where $\alpha \gt 0$.
 
 <details>
 <summary>Solution</summary>
 
 $$\int_{-\infty}^{\infty} |A|^2 e^{-2\alpha|x|}\,dx = 2|A|^2 \int_0^{\infty} e^{-2\alpha x}\,dx = 2|A|^2 \cdot \frac{1}{2\alpha} = \frac{|A|^2}{\alpha} = 1$$
 
-Therefore $|A| = \sqrt{\alpha}$, and we choose $A = \sqrt{\alpha}$:
+Therefore $|A| = \sqrt{\alpha}$And we choose $A = \sqrt{\alpha}$:
 
 $$\psi(x) = \sqrt{\alpha}\,e^{-\alpha|x|}$$
 
@@ -457,14 +457,14 @@ To find $\langle x \rangle$:
 
 $$\langle x \rangle = \alpha \int_{-\infty}^{\infty} x\,e^{-2\alpha|x|}\,dx = 0$$
 
-by symmetry (the integrand is odd). For $\langle x^2 \rangle$:
+By symmetry (the integrand is odd). For $\langle x^2 \rangle$:
 
 $$\langle x^2 \rangle = 2\alpha \int_0^{\infty} x^2 e^{-2\alpha x}\,dx = 2\alpha \cdot \frac{2}{(2\alpha)^3} = \frac{1}{2\alpha^2}$$
 
 So $\Delta x = \sqrt{\langle x^2 \rangle - \langle x \rangle^2} = 1/(\sqrt{2}\,\alpha)$.
 
-The uncertainty product for this state is $\sigma_x\,\sigma_p = \hbar/(2\sqrt{2})$, which is larger
-than the minimum $\hbar/2$, showing this is not a minimum-uncertainty state.
+The uncertainty product for this state is $\sigma_x\,\sigma_p = \hbar/(2\sqrt{2})$Which is larger
+Than the minimum $\hbar/2$Showing this is not a minimum-uncertainty state.
 
 </details>
 
@@ -475,7 +475,7 @@ than the minimum $\hbar/2$, showing this is not a minimum-uncertainty state.
 
 $$\int_{-\infty}^{\infty} |A|^2 x^2 e^{-2\alpha x^2}\,dx = |A|^2 \cdot \frac{1}{4\alpha}\sqrt{\frac{\pi}{2\alpha}} = 1$$
 
-using the Gaussian integral $\int_{-\infty}^{\infty} x^2 e^{-ax^2}\,dx = \frac{1}{2a}\sqrt{\frac{\pi}{a}}$. Therefore:
+Using the Gaussian integral $\int_{-\infty}^{\infty} x^2 e^{-ax^2}\,dx = \frac{1}{2a}\sqrt{\frac{\pi}{a}}$. Therefore:
 
 $$A = 2\sqrt{\alpha}\left(\frac{2\alpha}{\pi}\right)^{1/4}$$
 
@@ -483,16 +483,16 @@ $$A = 2\sqrt{\alpha}\left(\frac{2\alpha}{\pi}\right)^{1/4}$$
 
 ### 3.7 Time-Dependent Perturbation Theory
 
-When the Hamiltonian has a time-dependent perturbation, $\hat{H}(t) = \hat{H}_0 + \hat{V}(t)$, the
-transition probability from initial state $|i\rangle$ to final state $|f\rangle$ (with
+When the Hamiltonian has a time-dependent perturbation, $\hat{H}(t) = \hat{H}_0 + \hat{V}(t)$The
+Transition probability from initial state $|i\rangle$ to final state $|f\rangle$ (with
 $E_i \neq E_f$) is computed in the interaction picture.
 
-**First-order transition amplitude.** If the system starts in $|i\rangle$ at $t = 0$, the probability
-amplitude for being in $|f\rangle$ at time $t$ is, to first order:
+**First-order transition amplitude.** If the system starts in $|i\rangle$ at $t = 0$The probability
+Amplitude for being in $|f\rangle$ at time $t$ is, to first order:
 
 $$c_f(t) = -\frac{i}{\hbar}\int_0^t \langle f | \hat{V}(t') | i \rangle\, e^{i\omega_{fi}t'}\,dt'$$
 
-where $\omega_{fi} = (E_f - E_i)/\hbar$ is the Bohr frequency.
+Where $\omega_{fi} = (E_f - E_i)/\hbar$ is the Bohr frequency.
 
 **Constant perturbation.** If $\hat{V}(t) = \hat{V}_0$ (constant) for $0 \lt t \lt T$:
 
@@ -504,34 +504,34 @@ $$P_{i \to f}(T) = \frac{|V_{fi}|^2}{\hbar^2}\,\frac{\sin^2(\omega_{fi}T/2)}{(\o
 
 This function is sharply peaked around $\omega_{fi} = 0$ (resonance), with width $\Delta\omega \sim 2\pi/T$.
 
-**Interpretation.** As $T \to \infty$, the function $\sin^2(\omega_{fi}T/2)/(\omega_{fi}/2)^2 \to 2\pi T\,\delta(\omega_{fi})$,
-so transitions occur only when energy is conserved ($E_f = E_i$). For finite $T$, energy conservation
-is approximate to within $\Delta E \sim \hbar/T$, a manifestation of the time-energy uncertainty
-relation.
+**Interpretation.** As $T \to \infty$The function $\sin^2(\omega_{fi}T/2)/(\omega_{fi}/2)^2 \to 2\pi T\,\delta(\omega_{fi})$
+So transitions occur only when energy is conserved ($E_f = E_i$). For finite $T$Energy conservation
+Is approximate to within $\Delta E \sim \hbar/T$A manifestation of the time-energy uncertainty
+Relation.
 
 **Fermi's Golden Rule.** For a transition to a continuum of final states with density of states
-$\rho(E_f)$, the transition **rate** (probability per unit time) is:
+$\rho(E_f)$The transition **rate** (probability per unit time) is:
 
 $$\Gamma_{i \to f} = \frac{2\pi}{\hbar}|\langle f | \hat{V} | i \rangle|^2\,\rho(E_f)$$
 
 This is one of the most important results in quantum mechanics, with applications to spontaneous
-emission, scattering theory, and condensed matter physics.
+Emission, scattering theory, and condensed matter physics.
 
 **Sudden and adiabatic approximations.**
 
 - **Sudden approximation.** If the Hamiltonian changes rapidly compared to the system's natural
-  timescale $\sim \hbar/\Delta E$, the state does not have time to adjust: $|\psi_{\mathrm{after{}}\rangle = |\psi_{\mathrm{before{}}\rangle$.
-  The probability of finding the system in the new $n$-th eigenstate is $P_n = |\langle n_{\mathrm{new{}}|\psi_{\mathrm{before{}}\rangle|^2$.
+ timescale $\sim \hbar/\Delta E$The state does not have time to adjust: $|\psi_{\mathrm{after{}}\rangle = |\psi_{\mathrm{before{}}\rangle$.
+ The probability of finding the system in the new $n$-th eigenstate is $P_n = |\langle n_{\mathrm{new{}}|\psi_{\mathrm{before{}}\rangle|^2$.
 
 - **Adiabatic theorem.** If the Hamiltonian changes slowly enough (specifically, if
-  $|\langle m|\partial\hat{H}/\partial t|n\rangle|/(\hbar\omega_{mn}^2) \ll 1$ for all $m \neq n$),
-  the system remains in an instantaneous eigenstate without transitions. The adiabatic condition
-  requires the rate of change to be much slower than the energy gap divided by $\hbar$.
+ $|\langle m|\partial\hat{H}/\partial t|n\rangle|/(\hbar\omega_{mn}^2) \ll 1$ for all $m \neq n$),
+ the system remains in an instantaneous eigenstate without transitions. The adiabatic condition
+ requires the rate of change to be much slower than the energy gap divided by $\hbar$.
 
-**Harmonic perturbation.** For a sinusoidal perturbation $\hat{V}(t) = \hat{V}_1\,e^{-i\omega t} + \hat{V}_1^\dagger\,e^{i\omega t}$,
-the first-order transition rate from $|i\rangle$ to $|f\rangle$ is significant only when $\omega \approx \omega_{fi}$
+**Harmonic perturbation.** For a sinusoidal perturbation $\hat{V}(t) = \hat{V}_1\,e^{-i\omega t} + \hat{V}_1^\dagger\,e^{i\omega t}$
+The first-order transition rate from $|i\rangle$ to $|f\rangle$ is significant only when $\omega \approx \omega_{fi}$
 (absorption) or $\omega \approx -\omega_{fi}$ (stimulated emission). The transition probability for
-resonant absorption ($\omega \approx \omega_{fi}$) is:
+Resonant absorption ($\omega \approx \omega_{fi}$) is:
 
 $$P_{i\to f}(t) = \frac{|\langle f|\hat{V}_1|i\rangle|^2}{\hbar^2}\,\frac{\sin^2((\omega - \omega_{fi})t/2)}{(\omega - \omega_{fi})^2/4}$$
 
@@ -566,25 +566,25 @@ Taking the complex conjugate:
 
 $$\langle a|\hat{A}|a\rangle^* = \langle a|\hat{A}^\dagger|a\rangle = \langle a|\hat{A}|a\rangle = a^*$$
 
-where the second equality uses $\hat{A} = \hat{A}^\dagger$. Therefore $a = a^*$, so $a$ is real. $\blacksquare$
+Where the second equality uses $\hat{A} = \hat{A}^\dagger$. Therefore $a = a^*$So $a$ is real. $\blacksquare$
 
 *Proof that eigenstates are orthogonal.* Let $\hat{A}|a\rangle = a|a\rangle$ and $\hat{A}|b\rangle = b|b\rangle$
-with $a \neq b$:
+With $a \neq b$:
 
 $$\langle b|\hat{A}|a\rangle = a\langle b|a\rangle$$
 
 $$\langle b|\hat{A}|a\rangle = \langle\hat{A}b|a\rangle = b^*\langle b|a\rangle = b\langle b|a\rangle$$
 
-where the last step uses $b^* = b$ (eigenvalues are real). Therefore:
+Where the last step uses $b^* = b$ (eigenvalues are real). Therefore:
 
 $$(a - b)\langle b|a\rangle = 0$$
 
-Since $a \neq b$, we must have $\langle b|a\rangle = 0$. $\blacksquare$
+Since $a \neq b$We must have $\langle b|a\rangle = 0$. $\blacksquare$
 
 **Theorem 4.2 (Spectral Theorem).** Every Hermitian operator on a finite-dimensional Hilbert space
-has a complete orthonormal set of eigenvectors. In infinite dimensions, this holds for
-self-adjoint operators with a discrete spectrum; operators with continuous spectra require the
-spectral theorem in its general form (resolution of the identity).
+Has a complete orthonormal set of eigenvectors. In infinite dimensions, this holds for
+Self-adjoint operators with a discrete spectrum; operators with continuous spectra require the
+Spectral theorem in its general form (resolution of the identity).
 
 ### 4.3 Commutators
 
@@ -605,21 +605,21 @@ $\blacksquare$
 ### 4.4 Proof of the Generalised Uncertainty Principle
 
 **Theorem 4.5 (Robertson-Schrodinger inequality).** For any state $|\psi\rangle$ and observables
-$\hat{A}$, $\hat{B}$:
+$\hat{A}$$\hat{B}$:
 
 $$\sigma_A^2\,\sigma_B^2 \geq \frac{1}{4}|\langle[\hat{A}, \hat{B}]\rangle|^2 + \frac{1}{4}\langle\{\Delta\hat{A}, \Delta\hat{B}\}\rangle^2$$
 
-where $\Delta\hat{A} = \hat{A} - \langle\hat{A}\rangle$ and $\sigma_A^2 = \langle\Delta\hat{A}^2\rangle$.
+Where $\Delta\hat{A} = \hat{A} - \langle\hat{A}\rangle$ and $\sigma_A^2 = \langle\Delta\hat{A}^2\rangle$.
 
 *Proof.* Define $|\alpha\rangle = (\Delta\hat{A} + i\lambda\Delta\hat{B})|\psi\rangle$ for a real
-parameter $\lambda$. Since $\langle\alpha|\alpha\rangle \geq 0$:
+Parameter $\lambda$. Since $\langle\alpha|\alpha\rangle \geq 0$:
 
 $$\langle\psi|(\Delta\hat{A} - i\lambda\Delta\hat{B})(\Delta\hat{A} + i\lambda\Delta\hat{B})|\psi\rangle \geq 0$$
 
 $$= \sigma_A^2 + i\lambda\langle[\Delta\hat{A}, \Delta\hat{B}]\rangle + \lambda^2\sigma_B^2 \geq 0$$
 
-This is a quadratic in $\lambda$ that is non-negative for all $\lambda$, so its discriminant must be
-non-positive:
+This is a quadratic in $\lambda$ that is non-negative for all $\lambda$So its discriminant must be
+Non-positive:
 
 $$(\langle[\Delta\hat{A}, \Delta\hat{B}]\rangle)^2 - 4\sigma_A^2\sigma_B^2 \leq 0$$
 
@@ -627,8 +627,8 @@ Since $[\Delta\hat{A}, \Delta\hat{B}] = [\hat{A}, \hat{B}]$ (constants commute w
 
 $$\sigma_A^2\,\sigma_B^2 \geq \frac{1}{4}|\langle[\hat{A}, \hat{B}]\rangle|^2 \qquad \blacksquare$$
 
-The stronger Robertson-Schrodinger form retains the anticommutator term $\langle\{\Delta\hat{A}, \Delta\hat{B}\}\rangle^2$,
-which is always non-negative and provides a tighter bound.
+The stronger Robertson-Schrodinger form retains the anticommutator term $\langle\{\Delta\hat{A}, \Delta\hat{B}\}\rangle^2$
+Which is always non-negative and provides a tighter bound.
 
 **Example 4.1.** Show that the uncertainty principle is saturated for the harmonic oscillator ground state.
 
@@ -665,21 +665,21 @@ For $\hat{A} = \hat{x}$ (no explicit time dependence), using $[\hat{p}^2, \hat{x
 
 $$\frac{d\langle \hat{x} \rangle}{dt} = \frac{i}{\hbar}\!\left\langle\left[\frac{\hat{p}^2}{2m}, \hat{x}\right]\right\rangle = \frac{i}{\hbar}\cdot\frac{-2i\hbar}{2m}\langle\hat{p}\rangle = \frac{\langle\hat{p}\rangle}{m}$$
 
-For $\hat{A} = \hat{p}$, using $[V(\hat{x}), \hat{p}] = i\hbar\,V'(\hat{x})$:
+For $\hat{A} = \hat{p}$Using $[V(\hat{x}), \hat{p}] = i\hbar\,V'(\hat{x})$:
 
 $$\frac{d\langle \hat{p} \rangle}{dt} = \frac{i}{\hbar}\langle[V(\hat{x}), \hat{p}]\rangle = -\left\langle\frac{\partial V}{\partial x}\right\rangle$$
 
 $\blacksquare$
 
 **Correspondence principle.** Ehrenfest's theorem embodies the **correspondence principle**: in the
-classical limit (large quantum numbers or $\hbar \to 0$), quantum expectation values follow
-classical trajectories. However, this is only exact for linear or quadratic potentials; for general
-potentials, $\langle V'(x) \rangle \neq V'(\langle x \rangle)$, so quantum corrections persist even
-for large systems.
+Classical limit (large quantum numbers or $\hbar \to 0$), quantum expectation values follow
+Classical trajectories. However, this is only exact for linear or quadratic potentials; for general
+Potentials, $\langle V'(x) \rangle \neq V'(\langle x \rangle)$So quantum corrections persist even
+For large systems.
 
 ### 4.6 Solving Eigenvalue Equations
 
-To find the eigenvalues and eigenvectors of an operator $\hat{A}$, solve:
+To find the eigenvalues and eigenvectors of an operator $\hat{A}$Solve:
 
 $$\hat{A}|\phi\rangle = a|\phi\rangle \implies \det(\hat{A} - a\hat{I}) = 0$$
 
@@ -700,7 +700,7 @@ Normalised: $|+\rangle_x = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix}$.
 For $a = -1$: $c_1 = -c_2$. Normalised: $|-\rangle_x = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-1\end{pmatrix}$.
 
 These are equal superpositions of the $S_z$ eigenstates. Note that measuring $S_x$ on a state of
-definite $S_z$ gives probabilistic outcomes, and vice versa.
+Definite $S_z$ gives probabilistic outcomes, and vice versa.
 
 </details>
 
@@ -714,21 +714,21 @@ A particle of mass $m$ in a potential $V(x) = 0$ for $0 \lt x \lt L$ and $V(x) =
 
 $$-\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2} = E\phi \implies \frac{d^2\phi}{dx^2} + k^2\phi = 0$$
 
-where $k = \sqrt{2mE}/\hbar$. The general solution is:
+Where $k = \sqrt{2mE}/\hbar$. The general solution is:
 
 $$\phi(x) = A\sin(kx) + B\cos(kx)$$
 
 **Boundary conditions:** $\phi(0) = \phi(L) = 0$.
 
-From $\phi(0) = 0$: $B = 0$, so $\phi(x) = A\sin(kx)$.
+From $\phi(0) = 0$: $B = 0$So $\phi(x) = A\sin(kx)$.
 
-From $\phi(L) = 0$: $\sin(kL) = 0$, which requires $kL = n\pi$ for $n = 1, 2, 3, \ldots$
+From $\phi(L) = 0$: $\sin(kL) = 0$Which requires $kL = n\pi$ for $n = 1, 2, 3, \ldots$
 
 Therefore $k_n = n\pi/L$ and:
 
 $$E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{n^2\pi^2\hbar^2}{2mL^2}$$
 
-**Normalisation.** $\int_0^L |A|^2\sin^2(n\pi x/L)\,dx = |A|^2 L/2 = 1$, giving $A = \sqrt{2/L}$.
+**Normalisation.** $\int_0^L |A|^2\sin^2(n\pi x/L)\,dx = |A|^2 L/2 = 1$Giving $A = \sqrt{2/L}$.
 
 **Solutions:**
 
@@ -741,9 +741,9 @@ $$\phi_n(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right), \quad E_n = \
 
 :::caution
 Common Pitfall
-The ground state has $n = 1$, not $n = 0$. The solution $n = 0$ gives $\phi(x) = 0$ everywhere,
-which is not normalisable. Furthermore, $E_1 > 0$ (zero-point energy) is a direct consequence of
-the uncertainty principle: confining the particle to a finite region requires kinetic energy.
+The ground state has $n = 1$Not $n = 0$. The solution $n = 0$ gives $\phi(x) = 0$ everywhere,
+Which is not normalisable. Furthermore, $E_1 > 0$ (zero-point energy) is a direct consequence of
+The uncertainty principle: confining the particle to a finite region requires kinetic energy.
 :::
 
 ### 5.2 The Quantum Harmonic Oscillator
@@ -768,9 +768,9 @@ $$\hat{x} = \sqrt{\frac{\hbar}{2m\omega}}(\hat{a} + \hat{a}^\dagger), \quad \hat
 
 $$\hat{H} = \hbar\omega\!\left(\hat{a}^\dagger\hat{a} + \frac{1}{2}\right)$$
 
-where we used $\hat{a}\hat{a}^\dagger = [\hat{a}, \hat{a}^\dagger] + \hat{a}^\dagger\hat{a} = 1 + \hat{a}^\dagger\hat{a}$.
+Where we used $\hat{a}\hat{a}^\dagger = [\hat{a}, \hat{a}^\dagger] + \hat{a}^\dagger\hat{a} = 1 + \hat{a}^\dagger\hat{a}$.
 
-**Number operator.** $\hat{N} = \hat{a}^\dagger\hat{a}$, so $\hat{H} = \hbar\omega(\hat{N} + 1/2)$.
+**Number operator.** $\hat{N} = \hat{a}^\dagger\hat{a}$So $\hat{H} = \hbar\omega(\hat{N} + 1/2)$.
 
 *Proof that $\hat{a}$ and $\hat{a}^\dagger$ lower and raise the energy.* Compute $[\hat{H}, \hat{a}]$:
 
@@ -792,7 +792,7 @@ Therefore:
 $$\hat{a}|n\rangle = \sqrt{n}\,|n-1\rangle, \quad \hat{a}^\dagger|n\rangle = \sqrt{n+1}\,|n+1\rangle$$
 
 **Ground state.** The lowering process must terminate: $\hat{a}|0\rangle = 0$. This gives the
-differential equation:
+Differential equation:
 
 $$\left(x + \frac{\hbar}{m\omega}\frac{d}{dx}\right)\phi_0(x) = 0 \implies \phi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4}\exp\!\left(-\frac{m\omega x^2}{2\hbar}\right)$$
 
@@ -805,7 +805,7 @@ The eigenfunctions involve Hermite polynomials $H_n$:
 
 $$\phi_n(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} \frac{1}{\sqrt{2^n n!}} H_n\!\left(\sqrt{\frac{m\omega}{\hbar}}\,x\right) e^{-m\omega x^2/(2\hbar)}$$
 
-The first few Hermite polynomials are $H_0(\xi) = 1$, $H_1(\xi) = 2\xi$, $H_2(\xi) = 4\xi^2 - 2$.
+The first few Hermite polynomials are $H_0(\xi) = 1$$H_1(\xi) = 2\xi$$H_2(\xi) = 4\xi^2 - 2$.
 
 **Example 5.1.** Using the ladder operators, find $\phi_1(x)$ from $\phi_0(x)$.
 
@@ -829,28 +829,28 @@ $$-\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2} = E\phi$$
 Solutions: $\phi_k(x) = \frac{1}{\sqrt{2\pi}} e^{ikx}$ with $E = \frac{\hbar^2 k^2}{2m}$.
 
 The energy spectrum is **continuous** (all $E \geq 0$). The eigenfunctions are not normalisable (plane
-waves); physical states are **wave packets** constructed by superposition.
+Waves); physical states are **wave packets** constructed by superposition.
 
 ### 5.3.1 Parity
 
 The **parity operator** $\hat{\Pi}$ reflects the coordinate: $\hat{\Pi}\psi(x) = \psi(-x)$.
 
 **Properties:**
-- $\hat{\Pi}^2 = \hat{I}$, so eigenvalues are $\pm 1$.
+- $\hat{\Pi}^2 = \hat{I}$So eigenvalues are $\pm 1$.
 - Even functions ($\psi(-x) = \psi(x)$) have parity $+1$.
 - Odd functions ($\psi(-x) = -\psi(x)$) have parity $-1$.
-- If $V(x) = V(-x)$ (symmetric potential), then $[\hat{H}, \hat{\Pi}] = 0$, so energy eigenstates
-  can be chosen to have definite parity.
+- If $V(x) = V(-x)$ (symmetric potential), then $[\hat{H}, \hat{\Pi}] = 0$So energy eigenstates
+ can be chosen to have definite parity.
 
-**Theorem 5.1.** For a symmetric potential $V(x) = V(-x)$, the energy eigenstates are either even
-or odd.
+**Theorem 5.1.** For a symmetric potential $V(x) = V(-x)$The energy eigenstates are either even
+Or odd.
 
-*Proof.* Since $[\hat{H}, \hat{\Pi}] = 0$, there exists a simultaneous eigenbasis. Let
-$\hat{H}\phi = E\phi$ and $\hat{\Pi}\phi = \pi\phi$ where $\pi = \pm 1$. Then $\phi(-x) = \pi\phi(x)$,
-so $\phi$ is either even ($\pi = +1$) or odd ($\pi = -1$). $\blacksquare$
+*Proof.* Since $[\hat{H}, \hat{\Pi}] = 0$There exists a simultaneous eigenbasis. Let
+$\hat{H}\phi = E\phi$ and $\hat{\Pi}\phi = \pi\phi$ where $\pi = \pm 1$. Then $\phi(-x) = \pi\phi(x)$
+So $\phi$ is either even ($\pi = +1$) or odd ($\pi = -1$). $\blacksquare$
 
 This theorem explains why the infinite square well, harmonic oscillator, and finite square well
-eigenstates all have definite parity: their potentials are all symmetric about the origin.
+Eigenstates all have definite parity: their potentials are all symmetric about the origin.
 
 ### 5.3.2 The Virial Theorem
 
@@ -859,13 +859,13 @@ $\hat{H} = \hat{p}^2/(2m) + V(\hat{x})$:
 
 $$2\langle T \rangle = \langle x\,V'(x) \rangle$$
 
-where $T$ is the kinetic energy.
+Where $T$ is the kinetic energy.
 
 *Proof.* Using Ehrenfest's theorem for the operator $\hat{G} = \hat{x}\hat{p}$:
 
 $$\frac{d}{dt}\langle\hat{x}\hat{p}\rangle = \frac{i}{\hbar}\langle[\hat{H}, \hat{x}\hat{p}]\rangle = 0$$
 
-for a stationary state. Computing the commutator:
+For a stationary state. Computing the commutator:
 
 $$[\hat{H}, \hat{x}\hat{p}] = \left[\frac{\hat{p}^2}{2m} + V, \hat{x}\hat{p}\right] = \frac{1}{2m}[\hat{p}^2, \hat{x}]\hat{p} + [\hat{x}\hat{p}, V] + \hat{x}[V, \hat{p}]$$
 
@@ -877,13 +877,13 @@ $$-\frac{\langle\hat{p}^2\rangle}{m} + 2\langle\hat{x}\,V'(\hat{x})\rangle = 0$$
 
 $$-2\langle T \rangle + \langle x\,V'(x) \rangle = 0 \implies 2\langle T \rangle = \langle x\,V'(x) \rangle \qquad \blacksquare$$
 
-**Applications.** For the harmonic oscillator ($V \propto x^2$): $2\langle T \rangle = 2\langle V \rangle$,
-so $\langle T \rangle = \langle V \rangle = E/2$. For the hydrogen atom ($V \propto -1/r$):
-$2\langle T \rangle = -\langle V \rangle$, so $\langle T \rangle = -E$ and $\langle V \rangle = 2E$.
+**Applications.** For the harmonic oscillator ($V \propto x^2$): $2\langle T \rangle = 2\langle V \rangle$
+So $\langle T \rangle = \langle V \rangle = E/2$. For the hydrogen atom ($V \propto -1/r$):
+$2\langle T \rangle = -\langle V \rangle$So $\langle T \rangle = -E$ and $\langle V \rangle = 2E$.
 
 ### 5.4 The Finite Square Well
 
-Consider $V(x) = -V_0$ for $|x| \lt a$ and $V(x) = 0$ for $|x| \gt a$, where $V_0 \gt 0$.
+Consider $V(x) = -V_0$ for $|x| \lt a$ and $V(x) = 0$ for $|x| \gt a$Where $V_0 \gt 0$.
 
 #### 5.4.1 Bound States ($E \lt 0$)
 
@@ -897,7 +897,7 @@ Matching $\phi$ and $\phi'$ at $x = a$ and dividing the two conditions:
 $$k\tan(ka) = \kappa$$
 
 **Odd parity solutions.** Inside: $\phi(x) = A\sin(kx)$. Outside: $\phi(x) = Be^{-\kappa|x|}$ (with sign
-for $x \lt 0$). Matching gives:
+For $x \lt 0$). Matching gives:
 
 $$-k\cot(ka) = \kappa$$
 
@@ -909,17 +909,17 @@ There is always at least one bound state (the even ground state).
 
 #### 5.4.2 Scattering States ($E \gt 0$)
 
-For $E \gt 0$, the particle has enough energy to escape. Define $k_1 = \sqrt{2mE}/\hbar$ (outside)
-and $k_2 = \sqrt{2m(E + V_0)}/\hbar$ (inside). The solutions are oscillatory everywhere. The
-transmission coefficient is:
+For $E \gt 0$The particle has enough energy to escape. Define $k_1 = \sqrt{2mE}/\hbar$ (outside)
+And $k_2 = \sqrt{2m(E + V_0)}/\hbar$ (inside). The solutions are oscillatory everywhere. The
+Transmission coefficient is:
 
 $$T = \frac{1}{1 + \dfrac{V_0^2}{4E(E + V_0)}\sin^2(2k_2 a)}$$
 
 **Resonances** occur when $2k_2 a = n\pi$ (integer multiples of $\pi$), giving $T = 1$: the well
-becomes perfectly transparent.
+Becomes perfectly transparent.
 
 **Example 5.3.** A finite square well has $V_0 = 5\,\mathrm{eV{}$ and $2a = 1\,\mathrm{nm{}$. Estimate the
-number of bound states for an electron.
+Number of bound states for an electron.
 
 <details>
 <summary>Solution</summary>
@@ -935,8 +935,8 @@ $$= (5 \times 10^{-10})(3.622 \times 10^{10}) = 18.11$$
 The number of bound states is $N = \lfloor 2z_0/\pi \rfloor + 1 = \lfloor 36.22/\pi \rfloor + 1 = \lfloor 11.53 \rfloor + 1 = 12$.
 
 (Actually, the formula is $N = \lfloor z_0/(\pi/2) \rfloor + 1$ only when counting the number of
-intersections. With $z_0/(\pi/2) = 18.11/1.571 = 11.53$, there are 11 full intersections plus one
-partial, giving about 11 or 12 bound states.)
+Intersections. With $z_0/(\pi/2) = 18.11/1.571 = 11.53$There are 11 full intersections plus one
+Partial, giving about 11 or 12 bound states.)
 
 </details>
 
@@ -946,8 +946,8 @@ Consider $V(x) = -\alpha\delta(x)$ where $\alpha \gt 0$.
 
 #### 5.5.1 Bound State ($E \lt 0$)
 
-The wave function is $\psi(x) = Ae^{\kappa x}$ for $x \lt 0$ and $\psi(x) = Be^{-\kappa x}$ for $x \gt 0$,
-where $\kappa = \sqrt{-2mE}/\hbar$.
+The wave function is $\psi(x) = Ae^{\kappa x}$ for $x \lt 0$ and $\psi(x) = Be^{-\kappa x}$ for $x \gt 0$
+Where $\kappa = \sqrt{-2mE}/\hbar$.
 
 **Matching conditions.**
 
@@ -957,7 +957,7 @@ where $\kappa = \sqrt{-2mE}/\hbar$.
 
 $$\psi'(0^+) - \psi'(0^-) = -\frac{2m\alpha}{\hbar^2}\psi(0)$$
 
-This gives $-\kappa B - \kappa A = -2m\alpha A/\hbar^2$, and since $A = B$:
+This gives $-\kappa B - \kappa A = -2m\alpha A/\hbar^2$And since $A = B$:
 
 $$\kappa = \frac{m\alpha}{\hbar^2}$$
 
@@ -988,9 +988,9 @@ The transmission and reflection coefficients:
 $$|T|^2 = \frac{1}{1 + (m\alpha)^2/(\hbar^4 k^2)} = \frac{1}{1 + m\alpha^2/(2\hbar^2 E)}, \quad |R|^2 = 1 - |T|^2$$
 
 Note that even for very high energies ($E \to \infty$), $|R|^2 \to (m\alpha)^2/(\hbar^4 k^2) \neq 0$:
-the delta function always reflects some probability, unlike a smooth potential which becomes
-transparent at high energies. This is because the delta function has an infinitely sharp feature
-at $x = 0$ that scatters waves of all wavelengths.
+The delta function always reflects some probability, unlike a smooth potential which becomes
+Transparent at high energies. This is because the delta function has an infinitely sharp feature
+At $x = 0$ that scatters waves of all wavelengths.
 
 ### 5.6 Quantum Tunnelling
 
@@ -1002,21 +1002,21 @@ Inside the barrier, the Schrodinger equation gives exponentially decaying and gr
 $$\psi(x) = Ce^{\kappa x} + De^{-\kappa x}, \quad \kappa = \sqrt{\frac{2m(V_0 - E)}{\hbar^2}}$$
 
 For a **thick barrier** ($\kappa a \gg 1$), the growing solution $Ce^{\kappa x}$ is negligible at the
-far edge, and the transmission coefficient simplifies to:
+Far edge, and the transmission coefficient simplifies to:
 
 $$T \approx \frac{16E(V_0 - E)}{V_0^2}\,e^{-2\kappa a}$$
 
 The exponential factor $e^{-2\kappa a}$ is the hallmark of quantum tunnelling: the probability of
-penetration decreases exponentially with barrier width and height.
+Penetration decreases exponentially with barrier width and height.
 
 :::caution Common Pitfall
 Tunnelling does not violate energy conservation. The particle does not "have" energy $V_0$ inside
-the barrier; rather, the wave function extends into the classically forbidden region with
-exponentially decreasing amplitude. The particle's energy is $E \lt V_0$ throughout.
+The barrier; rather, the wave function extends into the classically forbidden region with
+Exponentially decreasing amplitude. The particle's energy is $E \lt V_0$ throughout.
 :::
 
 **Example 5.2.** An electron with $E = 5$ eV approaches a barrier of height $V_0 = 10$ eV and
-width $a = 0.5$ nm. Calculate $T$.
+Width $a = 0.5$ nm. Calculate $T$.
 
 <details>
 <summary>Solution</summary>
@@ -1032,14 +1032,14 @@ The electron has roughly a $0.004\%$ chance of tunnelling through this barrier.
 </details>
 
 **Application: alpha decay.** Alpha decay can be understood as quantum tunnelling through the Coulomb
-barrier. The Geiger-Nuttall law, which relates the decay constant to the alpha particle energy,
-follows directly from the exponential dependence of $T$ on the barrier width.
+Barrier. The Geiger-Nuttall law, which relates the decay constant to the alpha particle energy,
+Follows directly from the exponential dependence of $T$ on the barrier width.
 
 **Application: scanning tunnelling microscope (STM).** In an STM, a small voltage is applied between
-a sharp tip and a conducting surface. Electrons tunnel across the gap, producing a current that
-depends exponentially on the tip-surface distance: $I \propto e^{-2\kappa d}$. This allows atomic-
-resolution imaging of surfaces, as a change in distance of $0.1$ nm changes the current by a factor
-of about 10.
+A sharp tip and a conducting surface. Electrons tunnel across the gap, producing a current that
+Depends exponentially on the tip-surface distance: $I \propto e^{-2\kappa d}$. This allows atomic-
+Resolution imaging of surfaces, as a change in distance of $0.1$ nm changes the current by a factor
+Of about 10.
 
 ## 6. Angular Momentum and the Hydrogen Atom
 
@@ -1057,7 +1057,7 @@ $$[\hat{L}^2, \hat{L}_i] = 0 \quad \mathrm{for\ all\ {} i$$
 
 $$\hat{L}^2|l,m\rangle = \hbar^2 l(l+1)|l,m\rangle, \quad \hat{L}_z|l,m\rangle = \hbar m|l,m\rangle$$
 
-where $l = 0, 1, 2, \ldots$ and $m = -l, -l+1, \ldots, l-1, l$.
+Where $l = 0, 1, 2, \ldots$ and $m = -l, -l+1, \ldots, l-1, l$.
 
 ### 6.2 Raising and Lowering Operators
 
@@ -1079,7 +1079,7 @@ Similarly, $[\hat{L}_z, \hat{L}_-] = -\hbar\hat{L}_-$. And:
 
 $$[\hat{L}^2, \hat{L}_+] = [\hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2, \hat{L}_+] = 0$$
 
-since $\hat{L}^2$ commutes with each component. $\blacksquare$
+Since $\hat{L}^2$ commutes with each component. $\blacksquare$
 
 **Action on eigenstates.** Since $[\hat{L}_z, \hat{L}_+] = \hbar\hat{L}_+$:
 
@@ -1110,13 +1110,13 @@ $$\hat{L}_-|l,m\rangle = \hbar\sqrt{l(l+1) - m(m-1)}\,|l,m-1\rangle$$
 - For a given $l$: $m = -l, -l+1, \ldots, l-1, l$ (there are $2l+1$ values)
 - For **orbital** angular momentum, $l$ is restricted to non-negative integers.
 
-*Proof.* Starting from a state $|l,m\rangle$, repeatedly applying $\hat{L}_+$ raises $m$ by 1 each time.
+*Proof.* Starting from a state $|l,m\rangle$Repeatedly applying $\hat{L}_+$ raises $m$ by 1 each time.
 The norm of the resulting state is:
 
 $$\|\hat{L}_+|l,m\rangle\|^2 = \hbar^2[l(l+1) - m(m+1)]$$
 
-This must remain non-negative, so $m(m+1) \leq l(l+1)$, giving $m \leq l$. The raising process must
-terminate at some maximum $m_{\max}$ where $\hat{L}_+|l, m_{\max}\rangle = 0$:
+This must remain non-negative, so $m(m+1) \leq l(l+1)$Giving $m \leq l$. The raising process must
+Terminate at some maximum $m_{\max}$ where $\hat{L}_+|l, m_{\max}\rangle = 0$:
 
 $$l(l+1) - m_{\max}(m_{\max} + 1) = 0$$
 
@@ -1125,13 +1125,13 @@ Similarly, the lowering process terminates at $m_{\min}$ where $\hat{L}_-|l, m_{
 $$l(l+1) - m_{\min}(m_{\min} - 1) = 0$$
 
 Subtracting: $m_{\max}(m_{\max}+1) - m_{\min}(m_{\min}-1) = 0$. Since we reach $m_{\max}$ from $m_{\min}$ in
-$N$ steps: $m_{\max} = m_{\min} + N$. Solving gives $m_{\max} = l$ and $m_{\min} = -l$, so
-$N = 2l$, meaning $2l$ must be a non-negative integer. Therefore $l = 0, 1/2, 1, 3/2, \ldots$ and
+$N$ steps: $m_{\max} = m_{\min} + N$. Solving gives $m_{\max} = l$ and $m_{\min} = -l$So
+$N = 2l$Meaning $2l$ must be a non-negative integer. Therefore $l = 0, 1/2, 1, 3/2, \ldots$ and
 $m$ takes $2l+1$ values from $-l$ to $l$. $\blacksquare$
 
 For orbital angular momentum (defined as $\hat{\mathbf{'\{'}L{'\}'}} = \hat{\mathbf{'\{'}r{'\}'}} \times \hat{\mathbf{'\{'}p{'\}'}}$),
-the wave function must be single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
-$e^{im\phi} = e^{im(\phi+2\pi)}$, so $m$ must be an integer, which restricts $l$ to integers.
+The wave function must be single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
+$e^{im\phi} = e^{im(\phi+2\pi)}$So $m$ must be an integer, which restricts $l$ to integers.
 
 ### 6.4 Spherical Harmonics
 
@@ -1140,7 +1140,7 @@ $Y_l^m(\theta, \phi)$:
 
 $$Y_l^m(\theta, \phi) = (-1)^m\sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}}\,P_l^m(\cos\theta)\,e^{im\phi}$$
 
-where $P_l^m$ are the associated Legendre functions.
+Where $P_l^m$ are the associated Legendre functions.
 
 **Properties:**
 - Orthonormality: $\int Y_l^m{}^*\, Y_{l'}^{m'}\,d\Omega = \delta_{ll'}\delta_{mm'}$
@@ -1158,7 +1158,7 @@ where $P_l^m$ are the associated Legendre functions.
 
 ### 6.5 The Hydrogen Atom
 
-The Hamiltonian for hydrogen (electron of mass $m_e$ and charge $-e$, proton of charge $+e$):
+The Hamiltonian for hydrogen (electron of mass $m_e$ and charge $-e$Proton of charge $+e$):
 
 $$\hat{H} = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\varepsilon_0 r}$$
 
@@ -1175,21 +1175,21 @@ The term $\hbar^2 l(l+1)/(2m_e r^2$ acts as an effective **centrifugal barrier**
 
 Substitute $u(r) = rR(r)$ and define the Bohr radius $a_0 = 4\pi\varepsilon_0\hbar^2/(m_e e^2)$ and the
 Rydberg energy $E_R = e^2/(8\pi\varepsilon_0 a_0) = m_e e^4/(8\varepsilon_0^2 h^2)$. With the substitution
-$\rho = 2r/(na_0)$, the radial equation becomes:
+$\rho = 2r/(na_0)$The radial equation becomes:
 
 $$\frac{d^2u}{d\rho^2} = \left[\frac{l(l+1)}{\rho^2} - \frac{1}{\rho} + \frac{n}{4}\left(\frac{1}{n^2} - \frac{E}{E_R}\right)\right]u$$
 
-For the solution to be well-behaved at both $\rho = 0$ and $\rho \to \infty$, we require:
+For the solution to be well-behaved at both $\rho = 0$ and $\rho \to \infty$We require:
 
 $$E = -\frac{E_R}{n^2} = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2\hbar^2}\cdot\frac{1}{n^2}$$
 
-with $n = 1, 2, 3, \ldots$ and $l = 0, 1, \ldots, n-1$.
+With $n = 1, 2, 3, \ldots$ and $l = 0, 1, \ldots, n-1$.
 
 The radial wave functions are:
 
 $$R_{nl}(r) = \sqrt{{\left(\frac{2}{na_0}\right)}^3\frac{(n-l-1)!}{2n[(n+l)!]^3}}\,e^{-r/(na_0)}\!\left(\frac{2r}{na_0}\right)^l L_{n-l-1}^{2l+1}\!\left(\frac{2r}{na_0}\right)$$
 
-where $L_q^p$ are the associated Laguerre polynomials.
+Where $L_q^p$ are the associated Laguerre polynomials.
 
 **Energy eigenvalues:**
 
@@ -1204,17 +1204,17 @@ The ground state wave function ($n = 1, l = 0, m_l = 0$):
 
 $$\psi_{100}(r, \theta, \phi) = \frac{1}{\sqrt{\pi a_0^3}} e^{-r/a_0}$$
 
-where $a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} \approx 0.529\,\mathrm{\AA{}$ is the Bohr radius.
+Where $a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} \approx 0.529\,\mathrm{\AA{}$ is the Bohr radius.
 
 #### 6.5.3 Expectation Values for the Ground State
 
-**Example 6.1.** Calculate $\langle r \rangle$, $\langle r^2 \rangle$, and $\langle 1/r \rangle$ for the
-hydrogen ground state.
+**Example 6.1.** Calculate $\langle r \rangle$$\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
+Hydrogen ground state.
 
 <details>
 <summary>Solution</summary>
 
-For $\psi_{100} = (\pi a_0^3)^{-1/2}e^{-r/a_0}$, all integrals involve radial integrals with $r^2 dr$:
+For $\psi_{100} = (\pi a_0^3)^{-1/2}e^{-r/a_0}$All integrals involve radial integrals with $r^2 dr$:
 
 $$\langle r \rangle = \frac{4\pi}{\pi a_0^3}\int_0^{\infty} r^3 e^{-2r/a_0}\,dr = \frac{4}{a_0^3}\cdot\frac{6}{(2/a_0)^4} = \frac{4 \cdot 6 \cdot a_0^4}{16} = \frac{3}{2}a_0$$
 
@@ -1231,7 +1231,7 @@ $\Delta r = \sqrt{3a_0^2 - (3a_0/2)^2} = \sqrt{3/4}\,a_0$.
 
 Electric dipole transitions between hydrogen states are governed by selection rules derived from the
 Wigner-Eckart theorem. For a transition $|n,l,m\rangle \to |n',l',m'\rangle$ induced by the electric
-dipole operator $\hat{\mathbf{'\{'}r{'\}'}}$:
+Dipole operator $\hat{\mathbf{'\{'}r{'\}'}}$:
 
 $$\Delta l = l' - l = \pm 1, \quad \Delta m = m' - m = 0, \pm 1$$
 
@@ -1239,7 +1239,7 @@ $\Delta n$ is unrestricted (energy conservation determines which transitions are
 
 *Proof sketch.* The matrix element $\langle n'l'm'|\hat{z}|nlm\rangle$ involves the integral
 $\int Y_{l'}^{m'*}(\theta,\phi)\cos\theta\,Y_l^m(\theta,\phi)\,d\Omega$. Using the addition theorem
-for spherical harmonics, $\cos\theta = \sqrt{4\pi/3}\,Y_1^0$, the integral becomes a product of
+For spherical harmonics, $\cos\theta = \sqrt{4\pi/3}\,Y_1^0$The integral becomes a product of
 Clebsch-Gordan coefficients that vanishes unless $l' = l \pm 1$ and $m' = m$. $\blacksquare$
 
 ### 6.6 Orbital Shapes and Quantum Numbers
@@ -1248,25 +1248,25 @@ The three quantum numbers characterise hydrogen atom eigenstates:
 
 - **$n$ (principal):** Determines the energy and overall size. The mean radius scales as $\langle r \rangle \propto n^2 a_0$.
 - **$l$ (orbital angular momentum):** Determines the shape. The spectroscopic notation is
-  $l = 0$ (s), $l = 1$ (p), $l = 2$ (d), $l = 3$ (f), etc.
+ $l = 0$ (s), $l = 1$ (p), $l = 2$ (d), $l = 3$ (f), etc.
 - **$m_l$ (magnetic):** Determines the spatial orientation. The angular dependence is
-  $Y_l^{m_l}(\theta, \phi)$.
+ $Y_l^{m_l}(\theta, \phi)$.
 
 **Radial probability distribution.** The probability of finding the electron between $r$ and $r+dr$ is
 $P(r)\,dr = |R_{nl}(r)|^2 r^2\,dr$. For the $1s$ state, the maximum is at $r = a_0$ (the Bohr radius).
-For $2s$, there is a node at $r = 2a_0$. For $2p$, the distribution peaks closer to the nucleus.
+For $2s$There is a node at $r = 2a_0$. For $2p$The distribution peaks closer to the nucleus.
 
 **Angular distributions.** The $s$ orbitals ($l = 0$) are spherically symmetric. The $p$ orbitals
 ($l = 1$) have dumbbell shapes aligned along the $x$-, $y$-, or $z$-axis depending on $m_l$. The $d$
-orbitals ($l = 2$) have more complex cloverleaf patterns.
+Orbitals ($l = 2$) have more complex cloverleaf patterns.
 
 **Radial nodes.** The radial wave function $R_{nl}(r)$ has $n - l - 1$ nodes (zeros excluding $r = 0$
-and $r = \infty$). The total number of nodes in the full wave function is $n - 1$, consistent with
-the general property that the $n$-th energy eigenstate has $n - 1$ nodes.
+And $r = \infty$). The total number of nodes in the full wave function is $n - 1$Consistent with
+The general property that the $n$-th energy eigenstate has $n - 1$ nodes.
 
 **Fine structure.** The non-relativistic Schrodinger equation gives energy levels depending only on $n$.
 Relativistic corrections (spin-orbit coupling, Darwin term, kinetic energy correction) split these
-into fine structure multiplets, removing the $l$-degeneracy. The fine structure shift is of order
+Into fine structure multiplets, removing the $l$-degeneracy. The fine structure shift is of order
 $\alpha^2 E_n$ where $\alpha \approx 1/137$ is the fine structure constant.
 
 ## 7. Spin
@@ -1278,7 +1278,7 @@ Spin is an **intrinsic** form of angular momentum with no classical analogue. Fo
 
 $$\hat{S}_x = \frac{\hbar}{2}\sigma_x, \quad \hat{S}_y = \frac{\hbar}{2}\sigma_y, \quad \hat{S}_z = \frac{\hbar}{2}\sigma_z$$
 
-where $\sigma_x, \sigma_y, \sigma_z$ are the **Pauli matrices**:
+Where $\sigma_x, \sigma_y, \sigma_z$ are the **Pauli matrices**:
 
 $$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
 
@@ -1294,10 +1294,10 @@ $|\downarrow\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$ (spin down, $m_s = -
 ### 7.3 Derivation of the Pauli Matrices
 
 The Pauli matrices are uniquely determined (up to unitary equivalence) by the angular momentum algebra
-for $j = 1/2$.
+For $j = 1/2$.
 
 **Requirements.** We seek $2 \times 2$ matrices $\sigma_x, \sigma_y, \sigma_z$ such that:
-1. $\sigma_i^2 = I$ (eigenvalues are $\pm 1$, corresponding to $S_z = \pm\hbar/2$)
+1. $\sigma_i^2 = I$ (eigenvalues are $\pm 1$Corresponding to $S_z = \pm\hbar/2$)
 2. $\sigma_i^\dagger = \sigma_i$ (Hermitian)
 3. $\mathrm{Tr{}(\sigma_i) = 0$ (traceless, since eigenvalues sum to zero)
 4. $[\sigma_x, \sigma_y] = 2i\sigma_z$ (and cyclic permutations)
@@ -1312,8 +1312,8 @@ $$\sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
 
 $$\sigma_x = \begin{pmatrix} a & b \\ b^* & -a \end{pmatrix}$$
 
-where $a \in \mathbb{'\{'}R{'\}'}$ and $b \in \mathbb{'\{'}C{'\}'}$. From $\sigma_x^2 = I$: $a^2 + |b|^2 = 1$ and $2ab = 0$.
-Since $|b| \neq 0$ (otherwise $\sigma_x$ is diagonal and commutes with $\sigma_z$, violating
+Where $a \in \mathbb{'\{'}R{'\}'}$ and $b \in \mathbb{'\{'}C{'\}'}$. From $\sigma_x^2 = I$: $a^2 + |b|^2 = 1$ and $2ab = 0$.
+Since $|b| \neq 0$ (otherwise $\sigma_x$ is diagonal and commutes with $\sigma_z$Violating
 $[\sigma_x, \sigma_z] \neq 0$), we have $a = 0$ and $|b| = 1$. Choosing $b = 1$ (by convention):
 
 $$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
@@ -1322,9 +1322,9 @@ $$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
 $$\sigma_x\sigma_y - \sigma_y\sigma_x = 2i\sigma_z$$
 
-Writing $\sigma_y = \begin{pmatrix} c & d \\ d^* & -c \end{pmatrix}$ and imposing $\sigma_y^2 = I$, $\sigma_y^\dagger = \sigma_y$,
-and the commutation relation, we find $c = 0$, $|d| = 1$, and the commutator gives $d - d^* = 2i$,
-so $d = i$:
+Writing $\sigma_y = \begin{pmatrix} c & d \\ d^* & -c \end{pmatrix}$ and imposing $\sigma_y^2 = I$$\sigma_y^\dagger = \sigma_y$
+And the commutation relation, we find $c = 0$$|d| = 1$And the commutator gives $d - d^* = 2i$
+So $d = i$:
 
 $$\sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}$$
 
@@ -1333,18 +1333,18 @@ $\blacksquare$
 ### 7.4 Spin-1/2 in a Magnetic Field
 
 A particle with magnetic moment $\boldsymbol{'\{'}\mu{'\}'} = \gamma\mathbf{'\{'}S{'\}'}$ (where $\gamma$ is the
-gyromagnetic ratio) in a magnetic field $\mathbf{'\{'}B{'\}'} = B_0\hat{z}$ has Hamiltonian:
+Gyromagnetic ratio) in a magnetic field $\mathbf{'\{'}B{'\}'} = B_0\hat{z}$ has Hamiltonian:
 
 $$\hat{H} = -\boldsymbol{'\{'}\mu{'\}'}\cdot\mathbf{'\{'}B{'\}'} = -\gamma B_0\hat{S}_z = -\frac{\hbar\gamma B_0}{2}\sigma_z$$
 
 The eigenstates are $|\uparrow\rangle$ and $|\downarrow\rangle$ with energies $E_\uparrow = -\hbar\gamma B_0/2$
-and $E_\downarrow = +\hbar\gamma B_0/2$. The energy splitting is $\Delta E = \hbar\gamma B_0$.
+And $E_\downarrow = +\hbar\gamma B_0/2$. The energy splitting is $\Delta E = \hbar\gamma B_0$.
 
 **Time evolution.** For an arbitrary initial state:
 
 $$|\psi(0)\rangle = \alpha|\uparrow\rangle + \beta|\downarrow\rangle$$
 
-the state at time $t$ is:
+The state at time $t$ is:
 
 $$|\psi(t)\rangle = \alpha e^{i\gamma B_0 t/2}|\uparrow\rangle + \beta e^{-i\gamma B_0 t/2}|\downarrow\rangle$$
 
@@ -1364,9 +1364,9 @@ For an electron, $\gamma = -e/(m_e)$ (negative charge), giving $\omega_L = eB_0/
 
 $$\omega_L = \frac{(1.602 \times 10^{-19})(1)}{9.109 \times 10^{-31}} = 1.76 \times 10^{11}\;\mathrm{rad/s{}$$
 
-corresponding to a frequency $\nu_L = \omega_L/(2\pi) = 28$ GHz (microwave range). This is the basis
-of Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy, where transitions
-between spin states are driven by oscillating magnetic fields at the Larmor frequency.
+Corresponding to a frequency $\nu_L = \omega_L/(2\pi) = 28$ GHz (microwave range). This is the basis
+Of Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy, where transitions
+Between spin states are driven by oscillating magnetic fields at the Larmor frequency.
 
 **Example 7.1.** An electron starts in the state $|\psi(0)\rangle = |\uparrow\rangle$. A magnetic field
 $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$ is applied. Find $|\psi(t)\rangle$.
@@ -1374,12 +1374,12 @@ $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$ is applied. Find $|\psi(t)\rangle$.
 <details>
 <summary>Solution</summary>
 
-With $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$, the Hamiltonian is $\hat{H} = -\gamma B_0\hat{S}_x = \omega_L\hat{S}_x$
-where $\omega_L = \gamma B_0$. The eigenstates of $\hat{S}_x$ are:
+With $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$The Hamiltonian is $\hat{H} = -\gamma B_0\hat{S}_x = \omega_L\hat{S}_x$
+Where $\omega_L = \gamma B_0$. The eigenstates of $\hat{S}_x$ are:
 
 $$|+\rangle_x = \frac{1}{\sqrt{2}}(|\uparrow\rangle + |\downarrow\rangle), \quad |-\rangle_x = \frac{1}{\sqrt{2}}(|\uparrow\rangle - |\downarrow\rangle)$$
 
-with eigenvalues $\pm\hbar\omega_L/2$.
+With eigenvalues $\pm\hbar\omega_L/2$.
 
 Expanding $|\uparrow\rangle = (|+\rangle_x + |-\rangle_x)/\sqrt{2}$ and evolving:
 
@@ -1387,7 +1387,7 @@ $$|\psi(t)\rangle = \frac{1}{\sqrt{2}}\!\left(e^{-i\omega_L t/2}|+\rangle_x + e^
 
 $$= \cos\!\left(\frac{\omega_L t}{2}\right)|\uparrow\rangle - i\sin\!\left(\frac{\omega_L t}{2}\right)|\downarrow\rangle$$
 
-The probability of measuring spin-up along $z$ oscillates as $\cos^2(\omega_L t/2)$, with period
+The probability of measuring spin-up along $z$ oscillates as $\cos^2(\omega_L t/2)$With period
 $T = 2\pi/\omega_L$.
 
 </details>
@@ -1395,14 +1395,14 @@ $T = 2\pi/\omega_L$.
 ### 7.5 Stern-Gerlach Experiment
 
 A beam of silver atoms passes through an inhomogeneous magnetic field and splits into two beams,
-confirming the quantisation of angular momentum (spin-1/2 for the outer electron).
+Confirming the quantisation of angular momentum (spin-1/2 for the outer electron).
 
 **Detailed analysis.** The force on a magnetic moment in an inhomogeneous field is:
 
 $$\mathbf{'\{'}F{'\}'} = \nabla(\boldsymbol{'\{'}\mu{'\}'}\cdot\mathbf{'\{'}B{'\}'})$$
 
-For a field $\mathbf{'\{'}B{'\}'} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$, the $z$-component of force
-is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$ and $m_s = \pm 1/2$:
+For a field $\mathbf{'\{'}B{'\}'} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$The $z$-component of force
+Is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$ and $m_s = \pm 1/2$:
 
 $$F_z = \pm\frac{\gamma\hbar}{2}\frac{\partial B_z}{\partial z}$$
 
@@ -1413,14 +1413,14 @@ The beam splits into two, corresponding to $m_s = +1/2$ (deflected up) and $m_s 
 1. First SG-Z: selects $|\uparrow\rangle$.
 2. Second SG-X: splits into $|+\rangle_x$ and $|-\rangle_x$ with equal probability $1/2$.
 3. Third SG-Z (on the $|-\rangle_x$ beam): again splits into $|\uparrow\rangle$ and $|\downarrow\rangle$
-   with equal probability $1/2$.
+ with equal probability $1/2$.
 
 This demonstrates that the intermediate $S_x$ measurement **erases** the information about the
-original $S_z$ state. The probabilities reflect the non-commutativity $[\hat{S}_x, \hat{S}_z] = i\hbar\hat{S}_y$.
+Original $S_z$ state. The probabilities reflect the non-commutativity $[\hat{S}_x, \hat{S}_z] = i\hbar\hat{S}_y$.
 
 **Example 7.2.** A spin-1/2 particle passes through SG-Z (selecting $|\uparrow\rangle$), then through
 SG-Z at angle $\theta$ from the $z$-axis. Find the probability of measuring $+1$ in the second
-apparatus.
+Apparatus.
 
 <details>
 <summary>Solution</summary>
@@ -1440,22 +1440,22 @@ For $\theta = 90°$ (i.e., measuring $S_x$): $P = 1/2$.
 ### 7.6 Addition of Angular Momenta
 
 Given two angular momenta $\hat{\mathbf{'\{'}J{'\}'}}_1$ and $\hat{\mathbf{'\{'}J{'\}'}}_2$ with quantum numbers
-$j_1, m_1$ and $j_2, m_2$, define the total $\hat{\mathbf{'\{'}J{'\}'}} = \hat{\mathbf{'\{'}J{'\}'}}_1 + \hat{\mathbf{'\{'}J{'\}'}}_2$.
+$j_1, m_1$ and $j_2, m_2$Define the total $\hat{\mathbf{'\{'}J{'\}'}} = \hat{\mathbf{'\{'}J{'\}'}}_1 + \hat{\mathbf{'\{'}J{'\}'}}_2$.
 
-**Compatible observables:** $\hat{J}^2$, $\hat{J}_z$, $\hat{J}_1^2$, $\hat{J}_2^2$ all commute. We label
-simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
+**Compatible observables:** $\hat{J}^2$$\hat{J}_z$$\hat{J}_1^2$$\hat{J}_2^2$ all commute. We label
+Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
 
 **Clebsch-Gordan decomposition.** The total angular momentum quantum numbers range over:
 
 $$j = |j_1 - j_2|, |j_1 - j_2| + 1, \ldots, j_1 + j_2$$
 
-in integer steps. For each $j$, the magnetic quantum number $m$ ranges from $-j$ to $j$.
+In integer steps. For each $j$The magnetic quantum number $m$ ranges from $-j$ to $j$.
 
 The transformation between the product basis and the total-$j$ basis is:
 
 $$|j_1, j_2; j, m\rangle = \sum_{m_1, m_2} C(j_1\,m_1\,j_2\,m_2|j\,m)\,|j_1, m_1\rangle|j_2, m_2\rangle$$
 
-where $C(j_1\,m_1\,j_2\,m_2|j\,m)$ are the **Clebsch-Gordan coefficients**.
+Where $C(j_1\,m_1\,j_2\,m_2|j\,m)$ are the **Clebsch-Gordan coefficients**.
 
 **Two spin-1/2 particles.** The composite system has $j_1 = j_2 = 1/2$. The possible total spins are:
 
@@ -1469,7 +1469,7 @@ where $C(j_1\,m_1\,j_2\,m_2|j\,m)$ are the **Clebsch-Gordan coefficients**.
 
 The triplet states are symmetric under particle exchange; the singlet is antisymmetric.
 
-**Total spin operator.** $\hat{S}^2 = \hat{S}_1^2 + \hat{S}_2^2 + 2\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2$, so:
+**Total spin operator.** $\hat{S}^2 = \hat{S}_1^2 + \hat{S}_2^2 + 2\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2$So:
 
 $$\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2 = \frac{1}{2}(\hat{S}^2 - \hat{S}_1^2 - \hat{S}_2^2)$$
 
@@ -1478,8 +1478,8 @@ $\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2 = -3\hbar^2/4$.
 
 **Complete set of commuting observables (CSCO).** For a two-spin system, the set
 $\\{\hat{S}^2, \hat{S}_z, \hat{S}_1^2, \hat{S}_2^2\\}$ forms a CSCO: their simultaneous eigenstates are
-uniquely labelled by the quantum numbers $(s, m_s, s_1, s_2)$. An alternative CSCO is
-$\\{\hat{S}_{1z}, \hat{S}_{2z}, \hat{S}_1^2, \hat{S}_2^2\\}$, which uses the product basis. The
+Uniquely labelled by the quantum numbers $(s, m_s, s_1, s_2)$. An alternative CSCO is
+$\\{\hat{S}_{1z}, \hat{S}_{2z}, \hat{S}_1^2, \hat{S}_2^2\\}$Which uses the product basis. The
 Clebsch-Gordan coefficients are the transformation matrix between these two bases.
 
 **Clebsch-Gordan table for $j_1 = j_2 = 1/2$:**
@@ -1492,15 +1492,15 @@ Clebsch-Gordan coefficients are the transformation matrix between these two base
 | $-1/2$ | $-1/2$ | $1$ | $0$ |
 
 **Example 7.3.** Two electrons are in the singlet state. If electron 1 is measured to have
-$S_z = +\hbar/2$, what is the state of electron 2 immediately after? What is the probability of
-measuring $S_x = +\hbar/2$ for electron 2?
+$S_z = +\hbar/2$What is the state of electron 2 immediately after? What is the probability of
+Measuring $S_x = +\hbar/2$ for electron 2?
 
 <details>
 <summary>Solution</summary>
 
 The singlet state is $|0,0\rangle = (|\uparrow_1\downarrow_2\rangle - |\downarrow_1\uparrow_2\rangle)/\sqrt{2}$.
 
-After measuring $S_1^z = +\hbar/2$, the state collapses to $|\uparrow_1\downarrow_2\rangle$.
+After measuring $S_1^z = +\hbar/2$The state collapses to $|\uparrow_1\downarrow_2\rangle$.
 Electron 2 is in $|\downarrow\rangle$.
 
 The probability of measuring $S_2^x = +\hbar/2$ is:
@@ -1514,7 +1514,7 @@ $$P = |\langle+_x|\downarrow\rangle|^2 = \left|\frac{1}{\sqrt{2}}\langle\uparrow
 ### 8.1 Time-Independent Perturbation Theory
 
 For a Hamiltonian $\hat{H} = \hat{H}_0 + \lambda \hat{H}'$ where $\hat{H}'$ is "small" and $\hat{H}_0$
-has known eigenstates $|n^{(0)}\rangle$ and eigenvalues $E_n^{(0)}$.
+Has known eigenstates $|n^{(0)}\rangle$ and eigenvalues $E_n^{(0)}$.
 
 **First-order energy correction:**
 
@@ -1529,11 +1529,11 @@ $$E_n^{(2)} = \sum_{m \neq n} \frac{|\langle m^{(0)} | \hat{H}' | n^{(0)} \rangl
 $$|n^{(1)}\rangle = \sum_{m \neq n} \frac{\langle m^{(0)} | \hat{H}' | n^{(0)} \rangle}{E_n^{(0)} - E_m^{(0)}} |m^{(0)}\rangle$$
 
 **Physical interpretation.** The first-order energy correction is the expectation value of the
-perturbation in the unperturbed state. The second-order correction accounts for virtual transitions
-to other states: if the perturbation mixes in state $|m\rangle$ with amplitude proportional to
-$V_{mn}/(E_n - E_m)$, the energy shift is the sum of $|V_{mn}|^2/(E_n - E_m)$ over all
-intermediate states. Lower-energy intermediate states ($E_m \lt E_n$) always lower the energy,
-while higher-energy ones raise it.
+Perturbation in the unperturbed state. The second-order correction accounts for virtual transitions
+To other states: if the perturbation mixes in state $|m\rangle$ with amplitude proportional to
+$V_{mn}/(E_n - E_m)$The energy shift is the sum of $|V_{mn}|^2/(E_n - E_m)$ over all
+Intermediate states. Lower-energy intermediate states ($E_m \lt E_n$) always lower the energy,
+While higher-energy ones raise it.
 
 **Higher-order corrections.** The perturbation series can be extended to arbitrary order:
 
@@ -1547,25 +1547,25 @@ In practice, low-order corrections often give excellent results for weak perturb
 ### 8.2 Degenerate Perturbation Theory
 
 When $E_n^{(0)}$ is degenerate, the corrections are found by diagonalising the perturbation matrix in
-the degenerate subspace.
+The degenerate subspace.
 
 **Theorem 8.1.** The correct zeroth-order states are the eigenvectors of the matrix
 $W_{ij} = \langle n_i^{(0)} | \hat{H}' | n_j^{(0)} \rangle$ within the degenerate subspace.
 
-*Proof.* In a $d$-dimensional degenerate subspace spanned by $\\{|n_1^{(0)}\rangle, \ldots, |n_d^{(0)}\rangle\\}$,
-the first-order correction to the states is undetermined by the non-degenerate formula (denominators
-vanish). The correct approach is to note that $\hat{H}$ restricted to this subspace is:
+*Proof.* In a $d$-dimensional degenerate subspace spanned by $\\{|n_1^{(0)}\rangle, \ldots, |n_d^{(0)}\rangle\\}$
+The first-order correction to the states is undetermined by the non-degenerate formula (denominators
+Vanish). The correct approach is to note that $\hat{H}$ restricted to this subspace is:
 
 $$\hat{H}_{\mathrm{sub{}} = E_n^{(0)}\hat{I} + \lambda \hat{W}$$
 
-where $W_{ij} = \langle n_i^{(0)}|\hat{H}'|n_j^{(0)}\rangle$. Diagonalising $\hat{W}$ gives the correct
-zeroth-order states and first-order energy splittings. $\blacksquare$
+Where $W_{ij} = \langle n_i^{(0)}|\hat{H}'|n_j^{(0)}\rangle$. Diagonalising $\hat{W}$ gives the correct
+Zeroth-order states and first-order energy splittings. $\blacksquare$
 
 ### 8.3 Worked Example: Perturbed Infinite Square Well
 
 **Problem.** A one-dimensional infinite square well of width $L$ has a small perturbation
 $H' = V_0$ for $0 \lt x \lt L/2$ and $H' = 0$ for $L/2 \lt x \lt L$. Find the first-order energy
-corrections.
+Corrections.
 
 <details>
 <summary>Solution</summary>
@@ -1582,9 +1582,9 @@ The first-order correction is $E_n^{(1)} = V_0/2$ for all $n$. $\blacksquare$
 
 :::caution Common Pitfall
 Perturbation theory assumes the perturbation is "small" compared to the level spacing. If
-$|\langle m | H' | n \rangle| \sim |E_n^{(0)} - E_m^{(0)}|$, the perturbation series may diverge. The
-method also fails for systems where the unperturbed Hamiltonian has closely spaced or degenerate
-levels that are not handled correctly.
+$|\langle m | H' | n \rangle| \sim |E_n^{(0)} - E_m^{(0)}|$The perturbation series may diverge. The
+Method also fails for systems where the unperturbed Hamiltonian has closely spaced or degenerate
+Levels that are not handled correctly.
 :::
 
 ### 8.4 Variational Principle
@@ -1593,7 +1593,7 @@ levels that are not handled correctly.
 
 $$\langle\phi|\hat{H}|\phi\rangle \geq E_0$$
 
-where $E_0$ is the true ground state energy. The equality holds if and only if $|\phi\rangle = |0\rangle$.
+Where $E_0$ is the true ground state energy. The equality holds if and only if $|\phi\rangle = |0\rangle$.
 
 *Proof.* Expand the trial state in the energy eigenbasis:
 
@@ -1603,14 +1603,14 @@ Then:
 
 $$\langle\phi|\hat{H}|\phi\rangle = \sum_n |c_n|^2 E_n \geq E_0\sum_n |c_n|^2 = E_0$$
 
-since $E_n \geq E_0$ for all $n$, and the inequality is strict unless $c_n = 0$ for all $n \geq 1$. $\blacksquare$
+Since $E_n \geq E_0$ for all $n$And the inequality is strict unless $c_n = 0$ for all $n \geq 1$. $\blacksquare$
 
 **Procedure.** Choose a trial wave function $\phi(x; \alpha_1, \alpha_2, \ldots)$ depending on variational
-parameters $\alpha_i$. Compute $E(\alpha_i) = \langle\phi|\hat{H}|\phi\rangle / \langle\phi|\phi\rangle$
-and minimise with respect to $\alpha_i$. The minimum provides an upper bound on $E_0$.
+Parameters $\alpha_i$. Compute $E(\alpha_i) = \langle\phi|\hat{H}|\phi\rangle / \langle\phi|\phi\rangle$
+And minimise with respect to $\alpha_i$. The minimum provides an upper bound on $E_0$.
 
 **Example 8.1.** Use a Gaussian trial function $\phi(x) = A\exp(-x^2/(2\alpha^2))$ to estimate the
-ground state energy of the anharmonic oscillator $V(x) = \frac{1}{2}m\omega^2 x^2 + \lambda x^4$.
+Ground state energy of the anharmonic oscillator $V(x) = \frac{1}{2}m\omega^2 x^2 + \lambda x^4$.
 
 <details>
 <summary>Solution</summary>
@@ -1629,7 +1629,7 @@ $$E(\alpha) = \frac{\hbar^2}{4m\alpha^2} + \frac{m\omega^2\alpha^2}{4} + \frac{3
 Minimising: $dE/d\alpha = 0$ gives $-\hbar^2/(2m\alpha^3) + m\omega^2\alpha/2 + 3\lambda\alpha^3 = 0$.
 
 For $\lambda = 0$ (harmonic oscillator), this gives $\alpha^2 = \hbar/(m\omega)$ and
-$E = \hbar\omega/2$, which is exact. For small $\lambda$, expand $\alpha^2 = \hbar/(m\omega)(1 - \delta)$:
+$E = \hbar\omega/2$Which is exact. For small $\lambda$Expand $\alpha^2 = \hbar/(m\omega)(1 - \delta)$:
 
 $$\alpha^2 \approx \frac{\hbar}{m\omega}\!\left(1 - \frac{3\lambda\hbar}{2m^2\omega^3}\right)$$
 
@@ -1652,22 +1652,22 @@ Actually, substituting directly into $-\hbar^2\psi''/(2m) + V\psi = E\psi$ and s
 
 **Leading order ($\hbar^0$):** $S'(x) = \pm p(x) = \pm\sqrt{2m(E - V(x))}$
 
-**Next order ($\hbar^1$):** $A'(x)/A(x) = -S''(x)/(2S'(x))$, giving $A(x) \propto 1/\sqrt{p(x)}$.
+**Next order ($\hbar^1$):** $A'(x)/A(x) = -S''(x)/(2S'(x))$Giving $A(x) \propto 1/\sqrt{p(x)}$.
 
 Therefore, in the classically allowed region ($E \gt V$):
 
 $$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\cos\!\left(\frac{1}{\hbar}\int_{x_1}^x p(x')\,dx' + \frac{\pi}{4}\right)$$
 
-where $x_1$ is a turning point ($E = V(x_1)$).
+Where $x_1$ is a turning point ($E = V(x_1)$).
 
 **Connection formulas.** At a turning point, the WKB solutions must be matched. The standard
-connection formula (for a linear turning point, $V(x) \approx E + V'(x_1)(x-x_1)$) gives:
+Connection formula (for a linear turning point, $V(x) \approx E + V'(x_1)(x-x_1)$) gives:
 
 - Approaching from the classically allowed side:
   $$\frac{2C}{\sqrt{p(x)}}\cos\!\left(\frac{1}{\hbar}\int_{x_1}^x p(x')\,dx' - \frac{\pi}{4}\right) \longleftrightarrow \frac{C}{\sqrt{|p(x)|}}\exp\!\left(-\frac{1}{\hbar}\int_x^{x_1} |p(x')|\,dx'\right)$$
 
-**Quantization condition.** For a potential well with turning points $x_1$ and $x_2$, applying the
-connection formulas at both ends yields:
+**Quantization condition.** For a potential well with turning points $x_1$ and $x_2$Applying the
+Connection formulas at both ends yields:
 
 $$\int_{x_1}^{x_2} p(x)\,dx = \left(n + \frac{1}{2}\right)\pi\hbar, \quad n = 0, 1, 2, \ldots$$
 
@@ -1676,22 +1676,22 @@ Equivalently, using the closed phase-space integral:
 $$\oint p\,dx = \left(n + \frac{1}{2}\right)h$$
 
 This is the Bohr-Sommerfeld quantization condition, corrected by the $1/2$ term from the connection
-formulas.
+Formulas.
 
-**Validity.** The WKB approximation requires $|d\lambda/dx| \ll 1$, where $\lambda = h/p(x)$ is the
-local de Broglie wavelength. Equivalently, the change in potential over one wavelength must be small
-compared to the kinetic energy: $|\hbar\,|V'(x)|/(2mp(x))| \ll 1$.
+**Validity.** The WKB approximation requires $|d\lambda/dx| \ll 1$Where $\lambda = h/p(x)$ is the
+Local de Broglie wavelength. Equivalently, the change in potential over one wavelength must be small
+Compared to the kinetic energy: $|\hbar\,|V'(x)|/(2mp(x))| \ll 1$.
 
 **Example 8.2.** Apply the WKB quantization condition to the harmonic oscillator.
 
 <details>
 <summary>Solution</summary>
 
-For $V(x) = \frac{1}{2}m\omega^2 x^2$, the turning points are at $x_{1,2} = \pm\sqrt{2E/(m\omega^2)}$.
+For $V(x) = \frac{1}{2}m\omega^2 x^2$The turning points are at $x_{1,2} = \pm\sqrt{2E/(m\omega^2)}$.
 
 $$\int_{x_1}^{x_2} \sqrt{2m\!\left(E - \frac{1}{2}m\omega^2 x^2\right)}\,dx = \sqrt{2mE}\int_{-a}^{a}\sqrt{1 - (x/a)^2}\,dx$$
 
-where $a = \sqrt{2E/(m\omega^2)}$. The integral equals $\pi a/2$ times $\sqrt{2mE}$:
+Where $a = \sqrt{2E/(m\omega^2)}$. The integral equals $\pi a/2$ times $\sqrt{2mE}$:
 
 $$= \sqrt{2mE}\cdot\frac{\pi a}{2} = \frac{\pi E}{\omega}$$
 
@@ -1700,16 +1700,16 @@ Setting this equal to $(n + 1/2)\pi\hbar$:
 $$\frac{\pi E}{\omega} = \left(n + \frac{1}{2}\right)\pi\hbar \implies E_n = \left(n + \frac{1}{2}\right)\hbar\omega$$
 
 This is the exact result! The WKB approximation gives the exact energy levels for the harmonic
-oscillator because the potential is quadratic, so the connection formulas are exact.
+Oscillator because the potential is quadratic, so the connection formulas are exact.
 
 **Validity and limitations.** The WKB method fails near turning points (where $E = V(x)$) because
 $p(x) \to 0$ and the local wavelength diverges. The linear approximation of the potential near
-turning points (used to derive the connection formulas) breaks down when the potential is not smooth.
+Turning points (used to derive the connection formulas) breaks down when the potential is not smooth.
 The method also fails for potentials with discontinuities or cusps.
 
 Despite these limitations, WKB is remarkably useful for estimating energy levels in potentials
-where exact solutions are not available, and it forms the basis of the JWKB approximation in
-scattering theory.
+Where exact solutions are not available, and it forms the basis of the JWKB approximation in
+Scattering theory.
 
 </details>
 
@@ -1718,87 +1718,87 @@ scattering theory.
 ### Problems
 
 **1.** (Photoelectric effect) A sodium surface has work function $\phi = 2.28$ eV. When illuminated
-with light of wavelength $\lambda = 400$ nm, find (a) the maximum kinetic energy of emitted
-electrons, and (b) the stopping potential.
+With light of wavelength $\lambda = 400$ nm, find (a) the maximum kinetic energy of emitted
+Electrons, and (b) the stopping potential.
 
 **2.** (Compton scattering) X-rays of wavelength $0.071$ nm are scattered at $\theta = 45°$ from a
-carbon target. Find (a) the wavelength of the scattered photons, and (b) the kinetic energy of
-the recoil electrons.
+Carbon target. Find (a) the wavelength of the scattered photons, and (b) the kinetic energy of
+The recoil electrons.
 
 **3.** (de Broglie wavelength) Electrons are accelerated through a potential difference of $200$ V.
 Calculate their de Broglie wavelength. If these electrons pass through a double slit with slit
-separation $d = 100$ nm, find the angular position of the first diffraction maximum. Hint: use the
-small-angle approximation $\sin\theta \approx \theta$ for the double-slit formula $d\sin\theta = \lambda$.
+Separation $d = 100$ nm, find the angular position of the first diffraction maximum. Hint: use the
+Small-angle approximation $\sin\theta \approx \theta$ for the double-slit formula $d\sin\theta = \lambda$.
 
 **4.** (Postulates) Explain why the state space of quantum mechanics must be a complex vector space
-rather than a real vector space. Give a physical example that demonstrates the necessity of
-complex amplitudes. Hint: consider the Mach-Zehnder interferometer with phase shifters.
+Rather than a real vector space. Give a physical example that demonstrates the necessity of
+Complex amplitudes. Hint: consider the Mach-Zehnder interferometer with phase shifters.
 
 **5.** (Continuity equation) Starting from the Schrodinger equation, derive the continuity equation
 $\partial|\psi|^2/\partial t + \nabla\cdot\mathbf{'\{'}J{'\}'} = 0$. Show that for a stationary state
-$\psi(\mathbf{'\{'}r{'\}'},t) = \phi(\mathbf{'\{'}r{'\}'})e^{-iEt/\hbar}$, the probability current is time-independent.
+$\psi(\mathbf{'\{'}r{'\}'},t) = \phi(\mathbf{'\{'}r{'\}'})e^{-iEt/\hbar}$The probability current is time-independent.
 What does this imply about the probability distribution?
 
 **6.** (Normalisation) Normalise the wave function $\psi(x) = N\,x(a-x)$ for $0 \lt x \lt a$ (and zero
-otherwise). Find $\langle x \rangle$, $\langle x^2 \rangle$, and $\langle p^2 \rangle$.
+Otherwise). Find $\langle x \rangle$$\langle x^2 \rangle$And $\langle p^2 \rangle$.
 
 **7.** (Hermitian operators) Prove that the momentum operator $\hat{p} = -i\hbar\,d/dx$ is Hermitian
-on the space of wave functions that vanish at infinity. What boundary conditions are required?
+On the space of wave functions that vanish at infinity. What boundary conditions are required?
 Show by counterexample that $\hat{p}$ is not Hermitian if the boundary terms do not vanish.
 
 **8.** (Uncertainty principle) For the harmonic oscillator ground state
-$\psi_0(x) = (m\omega/\pi\hbar)^{1/4}e^{-m\omega x^2/(2\hbar)}$, calculate $\langle x \rangle$,
-$\langle x^2 \rangle$, $\langle p \rangle$, $\langle p^2 \rangle$, and verify that
+$\psi_0(x) = (m\omega/\pi\hbar)^{1/4}e^{-m\omega x^2/(2\hbar)}$Calculate $\langle x \rangle$
+$\langle x^2 \rangle$$\langle p \rangle$$\langle p^2 \rangle$And verify that
 $\sigma_x\,\sigma_p = \hbar/2$. Also show that $\langle x \rangle = \langle p \rangle = 0$ by symmetry.
 
 **9.** (Eigenvalue problem) Find the eigenvalues and normalised eigenvectors of the matrix
 $\hat{A} = \begin{pmatrix}3 & 1\\1 & 3\end{pmatrix}$. Verify that the eigenvectors are orthogonal
-and that they form a complete basis for $\mathbb{'\{'}C{'\}'}^2$. Generalise: what are the eigenvalues of
+And that they form a complete basis for $\mathbb{'\{'}C{'\}'}^2$. Generalise: what are the eigenvalues of
 $\begin{pmatrix}a & b\\b & a\end{pmatrix}$?
 
 **10.** (Infinite square well) A particle is in the ground state of an infinite square well of
-width $L$. Suddenly, the well expands symmetrically to width $2L$ (the centre remains fixed).
+Width $L$. Suddenly, the well expands symmetrically to width $2L$ (the centre remains fixed).
 Find the probability that the particle is found in the ground state of the new well. Also find
-the probability that it is found in the first excited state.
+The probability that it is found in the first excited state.
 
-**11.** (Harmonic oscillator) Using the ladder operators, compute $\langle x^2 \rangle$,
-$\langle p^2 \rangle$, and $\langle x^4 \rangle$ for the state $|n\rangle$ of the harmonic
-oscillator. Express your answers in terms of $n$, $m$, $\omega$, and $\hbar$.
+**11.** (Harmonic oscillator) Using the ladder operators, compute $\langle x^2 \rangle$
+$\langle p^2 \rangle$And $\langle x^4 \rangle$ for the state $|n\rangle$ of the harmonic
+Oscillator. Express your answers in terms of $n$$m$$\omega$And $\hbar$.
 
 **12.** (Delta potential) A particle of mass $m$ and energy $E \gt 0$ is incident on the potential
 $V(x) = \alpha[\delta(x+a) + \delta(x-a)]$. Find the transmission coefficient. In the limit
-$a \to 0$, verify that you recover the single-delta-function result.
+$a \to 0$Verify that you recover the single-delta-function result.
 
 **13.** (Tunnelling) A proton with energy $3$ MeV approaches a rectangular barrier of height
 $10$ MeV and width $5 \times 10^{-15}$ m. Estimate the transmission coefficient. Compare with
-the alpha decay of a typical heavy nucleus and comment on the exponential dependence on barrier width.
+The alpha decay of a typical heavy nucleus and comment on the exponential dependence on barrier width.
 
 **14.** (Angular momentum algebra) Using the angular momentum commutation relations and the
-raising/lowering operators, prove that $[\hat{L}^2, \hat{L}_\pm] = 0$. Then show that
+Raising/lowering operators, prove that $[\hat{L}^2, \hat{L}_\pm] = 0$. Then show that
 $\hat{L}_+|l,l\rangle = 0$ and hence derive the normalisation constant for $\hat{L}_+|l,m\rangle$.
 
-**15.** (Hydrogen atom) Calculate $\langle r \rangle$, $\langle r^2 \rangle$, and
+**15.** (Hydrogen atom) Calculate $\langle r \rangle$$\langle r^2 \rangle$And
 $\langle 1/r \rangle$ for the hydrogen atom ground state $\psi_{100}$. Compare $\langle r \rangle$
-with the Bohr radius $a_0$. Use the virial theorem to relate $\langle T \rangle$ and $\langle V \rangle$ for
-the Coulomb potential.
+With the Bohr radius $a_0$. Use the virial theorem to relate $\langle T \rangle$ and $\langle V \rangle$ for
+The Coulomb potential.
 
 **16.** (Spin) An electron is in the spin state $|\psi\rangle = \frac{1}{\sqrt{3}}|\uparrow\rangle +
 \sqrt{\frac{2}{3}}|\downarrow\rangle$. (a) If $S_z$ is measured, what are the possible outcomes and
-their probabilities? (b) If $S_x$ is measured, what are the possible outcomes and their
-probabilities? (c) What is $\langle S_x \rangle$? (d) Write the density matrix $\hat{\rho}$ for this state and verify
+Their probabilities? (b) If $S_x$ is measured, what are the possible outcomes and their
+Probabilities? (c) What is $\langle S_x \rangle$? (d) Write the density matrix $\hat{\rho}$ for this state and verify
 $\mathrm{Tr{}(\hat{\rho}) = 1$ and $\hat{\rho}^2 = \hat{\rho}$ (pure state).
 
 **17.** (Singlet state) Two spin-1/2 particles are prepared in the singlet state. If particle 1 is
-measured to have $S_z^{(1)} = +\hbar/2$, what is the state of particle 2 immediately after? If
-particle 2's spin is then measured along the $x$-axis, what is the probability of obtaining
+Measured to have $S_z^{(1)} = +\hbar/2$What is the state of particle 2 immediately after? If
+Particle 2's spin is then measured along the $x$-axis, what is the probability of obtaining
 $+\hbar/2$? Explain how this result is consistent with Bell's theorem and the no-communication theorem.
 
 **18.** (Variational method) Use the variational principle with the trial function
 $\psi(x) = A(a^2 - x^2)$ for $|x| \lt a$ (and zero otherwise) to estimate the ground state
-energy of the infinite square well $V(x) = 0$ for $|x| \lt L$ and $V(x) = \infty$ otherwise.
+Energy of the infinite square well $V(x) = 0$ for $|x| \lt L$ and $V(x) = \infty$ otherwise.
 Take $a = L$ as a fixed parameter. Compare your result with the exact ground state energy
 $E_1 = \pi^2\hbar^2/(2mL^2)$ and calculate the percentage error. Comment on why the variational
-estimate is higher than the exact result.
+Estimate is higher than the exact result.
 
 ## 9. Identical Particles and Exchange Symmetry
 
@@ -1841,7 +1841,7 @@ $$E^{(1)} = \frac{5}{4}\frac{e^2}{4\pi\varepsilon_0 a_0} = \frac{5}{2}\times 13.
 
 The unperturbed ground state energy is $E^{(0)} = 2 \times (-54.4\ \text{eV{}) = -108.8$ eV (two electrons in $Z = 2$ Coulomb potential). Including perturbation: $E \approx -108.8 + 34.0 = -74.8$ eV. The experimental value is $-79.0$ eV.
 
-**Excited states:** When one electron is excited to $1s\,nl$, the spin configuration matters:
+**Excited states:** When one electron is excited to $1s\,nl$The spin configuration matters:
 
 - **Parahelium** (singlet, $S = 0$): symmetric spatial, antisymmetric spin. Lower energy for given configuration.
 - **Orthohelium** (triplet, $S = 1$): antisymmetric spatial, symmetric spin. Higher energy.
@@ -1852,7 +1852,7 @@ $$J = \iint |\psi_a(1)|^2\frac{e^2}{4\pi\varepsilon_0 r_{12}}|\psi_b(2)|^2\, d^3
 
 $$K = \iint \psi_a^*(1)\psi_b^*(2)\frac{e^2}{4\pi\varepsilon_0 r_{12}}\psi_b(1)\psi_a(2)\, d^3r_1 d^3r_2$$
 
-The energy splitting between singlet and triplet is $2K$, with the triplet lower by $2K$.
+The energy splitting between singlet and triplet is $2K$With the triplet lower by $2K$.
 
 <details>
 <summary>Worked Example 9.1: Helium $1s2s$ States</summary>
@@ -1869,7 +1869,7 @@ $$J_{1s,2s} \approx 0.42\ \text{Ry{} = 5.7\ \text{eV{}$$
 
 $$K_{1s,2s} \approx 0.032\ \text{Ry{} = 0.43\ \text{eV{}$$
 
-The singlet (parahelium) has energy $E = E_0 + J + K$, and the triplet (orthohelium) has $E = E_0 + J - K$.
+The singlet (parahelium) has energy $E = E_0 + J + K$And the triplet (orthohelium) has $E = E_0 + J - K$.
 
 The splitting: $E_{\text{singlet{}} - E_{\text{triplet{}} = 2K \approx 0.86$ eV. This is the exchange splitting.
 
@@ -1910,9 +1910,9 @@ The energies:
 
 $$E_\pm(R) = E_{1s} + \frac{e^2}{4\pi\varepsilon_0 R} + \frac{J \pm K}{1 \pm S}$$
 
-where $S = \langle\psi_A|\psi_B\rangle$ is the overlap integral, $J$ is the Coulomb integral, and $K$ is the exchange integral.
+Where $S = \langle\psi_A|\psi_B\rangle$ is the overlap integral, $J$ is the Coulomb integral, and $K$ is the exchange integral.
 
-- $E_-$ (bonding): has a minimum at $R \approx 2.5\,a_0$, giving a binding energy of $\sim 1.8$ eV (experiment: 2.8 eV).
+- $E_-$ (bonding): has a minimum at $R \approx 2.5\,a_0$Giving a binding energy of $\sim 1.8$ eV (experiment: 2.8 eV).
 - $E_+$ (antibonding): monotonically decreases, no bound state.
 
 ### 10.3 The Hydrogen Molecule $H_2$
@@ -1950,11 +1950,11 @@ The effective charge $Z_{\text{eff{}} = 1.375 < 2$ reflects the screening of the
 
 ### 11.1 Fermi's Golden Rule
 
-For a time-dependent perturbation $\hat{V}(t) = \hat{V}\,e^{-i\omega t}$ applied to an initial state $|i\rangle$, the transition rate to a continuum of final states $|f\rangle$ is:
+For a time-dependent perturbation $\hat{V}(t) = \hat{V}\,e^{-i\omega t}$ applied to an initial state $|i\rangle$The transition rate to a continuum of final states $|f\rangle$ is:
 
 $$\Gamma_{i \to f} = \frac{2\pi}{\hbar}|\langle f|\hat{V}|i\rangle|^2\rho(E_f)$$
 
-where $\rho(E_f)$ is the density of final states at energy $E_f = E_i + \hbar\omega$.
+Where $\rho(E_f)$ is the density of final states at energy $E_f = E_i + \hbar\omega$.
 
 **Derivation.** Using first-order time-dependent perturbation theory, the transition amplitude to state $|f\rangle$ is:
 
@@ -1964,7 +1964,7 @@ For a sinusoidal perturbation at frequency $\omega$:
 
 $$|c_f|^2 = \frac{|\langle f|\hat{V}|i\rangle|^2}{\hbar^2}\frac{\sin^2[(\omega_{fi} - \omega)t/2]}{(\omega_{fi} - \omega)^2/4}$$
 
-In the long-time limit, $\sin^2(xt)/x^2 \to 2\pi t\,\delta(x)$, giving:
+In the long-time limit, $\sin^2(xt)/x^2 \to 2\pi t\,\delta(x)$Giving:
 
 $$\frac{|c_f|^2}{t} = \frac{2\pi}{\hbar^2}|\langle f|\hat{V}|i\rangle|^2\,\delta(E_f - E_i - \hbar\omega)$$
 
@@ -1981,14 +1981,14 @@ $$\langle f|\hat{\mathbf{'\{'}d{'\}'}}|i\rangle = -e\langle f|\mathbf{'\{'}r{'\}
 For hydrogen-like atoms, the selection rules are:
 
 - $\Delta l = \pm 1$ (parity change required)
-- $\Delta m = 0, \pm 1$ (for $z$, $x \pm iy$ polarisation respectively)
+- $\Delta m = 0, \pm 1$ (for $z$$x \pm iy$ polarisation respectively)
 - $\Delta n$ unrestricted
 
 The transition rate for $2p \to 1s$ in hydrogen:
 
 $$A_{2p \to 1s} = \frac{\omega^3}{3\pi\varepsilon_0\hbar c^3}|\langle 1s|e\mathbf{'\{'}r{'\}'}|2p\rangle|^2$$
 
-With $|\langle 1s|z|2p, m=0\rangle| = \frac{2^7\sqrt{2}}{3^5}a_0$, this gives $A_{2p \to 1s} \approx 6.3 \times 10^8$ s$^{-1}$, corresponding to a lifetime $\tau \approx 1.6$ ns.
+With $|\langle 1s|z|2p, m=0\rangle| = \frac{2^7\sqrt{2}}{3^5}a_0$This gives $A_{2p \to 1s} \approx 6.3 \times 10^8$ s$^{-1}$Corresponding to a lifetime $\tau \approx 1.6$ ns.
 
 ### 11.3 Spontaneous Emission and Einstein Coefficients
 
@@ -2009,8 +2009,8 @@ By the Wigner--Eckart theorem and parity selection rules:
 - $\Delta l = 0 - 2 = -2 \neq \pm 1$: **forbidden for E1**
 
 The $3d \to 1s$ transition can proceed via:
-- **E2 (electric quadrupole):** $\Delta l = 0, \pm 2$, rate $\sim \alpha(kR)^2$ times slower than E1
-- **M1 (magnetic dipole):** requires $\Delta l = 0$, not applicable here
+- **E2 (electric quadrupole):** $\Delta l = 0, \pm 2$Rate $\sim \alpha(kR)^2$ times slower than E1
+- **M1 (magnetic dipole):** requires $\Delta l = 0$Not applicable here
 - **Two-photon decay:** $3d \to 2p \to 1s$ (two successive E1 transitions)
 
 The $3d \to 2p$ transition ($\Delta l = -1$) is E1-allowed and dominates, with $A_{3d \to 2p} \sim 6.4 \times 10^7$ s$^{-1}$.
@@ -2021,17 +2021,17 @@ The $3d \to 2p$ transition ($\Delta l = -1$) is E1-allowed and dominates, with $
 
 ### 12.1 Partial Wave Analysis
 
-For a spherically symmetric potential $V(r)$, the scattering amplitude can be expanded in partial waves:
+For a spherically symmetric potential $V(r)$The scattering amplitude can be expanded in partial waves:
 
 $$f(\theta) = \frac{1}{2ik}\sum_{l=0}^{\infty}(2l + 1)(e^{2i\delta_l} - 1)P_l(\cos\theta) = \frac{1}{k}\sum_{l=0}^{\infty}(2l + 1)e^{i\delta_l}\sin\delta_l\,P_l(\cos\theta)$$
 
-where $\delta_l$ is the phase shift for partial wave $l$.
+Where $\delta_l$ is the phase shift for partial wave $l$.
 
 **Optical theorem:**
 
 $$\sigma_{\text{total{}} = \frac{4\pi}{k}\,\text{Im{}\,f(0) = \frac{4\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)\sin^2\delta_l$$
 
-**Partial wave unitarity bound:** $\sin^2\delta_l \leq 1$, so the maximum contribution of partial wave $l$ to the cross section is:
+**Partial wave unitarity bound:** $\sin^2\delta_l \leq 1$So the maximum contribution of partial wave $l$ to the cross section is:
 
 $$\sigma_l^{\max} = \frac{4\pi}{k^2}(2l + 1)$$
 
@@ -2041,7 +2041,7 @@ For a weak potential, the scattering amplitude to first order is:
 
 $$f(\theta, \phi) \approx -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{'\{'}k{'\}'}'\cdot\mathbf{'\{'}r{'\}'}'}V(\mathbf{'\{'}r{'\}'}')\,d^3r'$$
 
-where $\mathbf{'\{'}k{'\}'}'$ is the scattered wave vector and $\mathbf{'\{'}q{'\}'} = \mathbf{'\{'}k{'\}'}' - \mathbf{'\{'}k{'\}'}$ is the momentum transfer.
+Where $\mathbf{'\{'}k{'\}'}'$ is the scattered wave vector and $\mathbf{'\{'}q{'\}'} = \mathbf{'\{'}k{'\}'}' - \mathbf{'\{'}k{'\}'}$ is the momentum transfer.
 
 For the Yukawa potential $V(r) = (V_0/r)e^{-\mu r}$:
 
@@ -2055,7 +2055,7 @@ When the scattering energy is near a quasi-bound state, the phase shift passes t
 
 $$\delta_l(E) \approx \delta_{\text{bg{}} + \arctan\!\left(\frac{\Gamma/2}{E_R - E}\right)$$
 
-where $E_R$ is the resonance energy and $\Gamma$ is the width. The cross section has the Breit--Wigner form:
+Where $E_R$ is the resonance energy and $\Gamma$ is the width. The cross section has the Breit--Wigner form:
 
 $$\sigma_l(E) = \frac{4\pi}{k^2}(2l+1)\frac{(\Gamma/2)^2}{(E - E_R)^2 + (\Gamma/2)^2}$$
 
@@ -2068,7 +2068,7 @@ For $s$-wave scattering ($l = 0$) at low energy ($ka \ll 1$), only the $l = 0$ p
 
 $$\sigma \approx \frac{4\pi}{k^2}\sin^2\delta_0 \approx 4\pi a_s^2$$
 
-where the **scattering length** $a_s$ is defined by $k\cot\delta_0 \to -1/a_s$ as $k \to 0$.
+Where the **scattering length** $a_s$ is defined by $k\cot\delta_0 \to -1/a_s$ as $k \to 0$.
 
 For a hard sphere of radius $a$: $\delta_0 = -ka$ (exact), giving $a_s = a$ and $\sigma = 4\pi a^2$ (four times the geometric cross section $\pi a^2$ --- a purely quantum result).
 
@@ -2093,7 +2093,7 @@ At low energy ($ka \ll 1$): $f \approx -\frac{mV_0}{\hbar^2}(2\pi)^{1/2}a^3$ (in
 
 $$\sigma \approx 4\pi\left(\frac{mV_0}{\hbar^2}\right)^2 2\pi\,a^6 = \frac{8\pi^2 m^2 V_0^2 a^6}{\hbar^4}$$
 
-The Born approximation is valid when $|V_0| \ll \hbar^2/(ma^2)$, i.e., the potential is weak compared to the kinetic energy associated with the length scale $a$.
+The Born approximation is valid when $|V_0| \ll \hbar^2/(ma^2)$I.e., the potential is weak compared to the kinetic energy associated with the length scale $a$.
 
 </details>
 
@@ -2145,7 +2145,7 @@ Consider scattering from the attractive square well $V(r) = -V_0$ for $r < a$ an
 
 $$\delta_0 = -ka + \arctan\!\left(\frac{k}{\kappa}\tan(\kappa a)\right)$$
 
-where $\kappa = \sqrt{2m(V_0 + E)}/\hbar$ and $k = \sqrt{2mE}/\hbar$.
+Where $\kappa = \sqrt{2m(V_0 + E)}/\hbar$ and $k = \sqrt{2mE}/\hbar$.
 
 (b) Show that a bound state exists at energy $E = -|E|$ when $\kappa_0 a = \pi/2$ where $\kappa_0 = \sqrt{2m(V_0 - |E|)}/\hbar$.
 
@@ -2167,13 +2167,13 @@ $$ka + \delta_0 = \arccot\!\left(\frac{\kappa}{k}\cot(\kappa a)\right) = \arctan
 
 $$\delta_0 = -ka + \arctan\!\left(\frac{k}{\kappa}\tan(\kappa a)\right)$$
 
-(b) A bound state has $E < 0$, so $k = i\kappa'$ where $\kappa' = \sqrt{2m|E|}/\hbar$. The bound state condition is that the exterior solution decays exponentially: $u(r) = Be^{-\kappa' r}$. Matching:
+(b) A bound state has $E < 0$So $k = i\kappa'$ where $\kappa' = \sqrt{2m|E|}/\hbar$. The bound state condition is that the exterior solution decays exponentially: $u(r) = Be^{-\kappa' r}$. Matching:
 
 $$\kappa\cot(\kappa a) = -\kappa'$$
 
-As $|E| \to 0$: $\kappa' \to 0$, so $\kappa\cot(\kappa a) \to 0$, giving $\kappa a = \pi/2$ (the threshold for the first bound state).
+As $|E| \to 0$: $\kappa' \to 0$So $\kappa\cot(\kappa a) \to 0$Giving $\kappa a = \pi/2$ (the threshold for the first bound state).
 
-(c) The scattering length $a_s = -\lim_{k \to 0}(\delta_0/k)$. As $\kappa a \to \pi/2$, $\tan(\kappa a) \to \infty$, so:
+(c) The scattering length $a_s = -\lim_{k \to 0}(\delta_0/k)$. As $\kappa a \to \pi/2$$\tan(\kappa a) \to \infty$So:
 
 $$\delta_0 \approx -ka + \arctan(\infty) = -ka + \pi/2$$
 
@@ -2228,11 +2228,11 @@ $$E_n \propto \left(n + \frac{1}{2}\right)^{2\alpha/(\alpha+2)}$$
 <details>
 <summary>Worked Example 13.1: WKB Tunnelling Through a Barrier</summary>
 
-For a potential barrier $V(x) = V_0(1 - x^2/a^2)$ for $|x| < a$, with $E < V_0$, the WKB transmission probability is:
+For a potential barrier $V(x) = V_0(1 - x^2/a^2)$ for $|x| < a$With $E < V_0$The WKB transmission probability is:
 
 $$T \approx \exp\!\left(-\frac{2}{\hbar}\int_{-a_0}^{a_0}\sqrt{2m(V_0(1 - x^2/a^2) - E)}\,dx\right)$$
 
-where $a_0 = a\sqrt{1 - E/V_0}$ is the classical turning point.
+Where $a_0 = a\sqrt{1 - E/V_0}$ is the classical turning point.
 
 $$T \approx \exp\!\left(-\frac{2}{\hbar}\sqrt{2mV_0}\int_{-a_0}^{a_0}\sqrt{1 - E/V_0 - x^2/a^2}\,dx\right)$$
 
@@ -2248,7 +2248,7 @@ $$= 0.479 \times 432.6 \times 0.8 = 165.7$$
 
 $$T \approx e^{-165.7} \approx 5 \times 10^{-73}$$
 
-This extremely small probability explains the enormously long half-lives of alpha-emitting nuclei ($\sim 10^9$ years for $^{238}$U). The Geiger--Nuttall law relates $\log T_{1/2}$ to $E^{-1/2}$, consistent with the WKB exponential dependence.
+This extremely small probability explains the enormously long half-lives of alpha-emitting nuclei ($\sim 10^9$ years for $^{238}$U). The Geiger--Nuttall law relates $\log T_{1/2}$ to $E^{-1/2}$Consistent with the WKB exponential dependence.
 
 </details>
 
@@ -2258,7 +2258,7 @@ This extremely small probability explains the enormously long half-lives of alph
 
 **Theorem 1:** The ground-state electron density $n(\mathbf{'\{'}r{'\}'})$ uniquely determines the external potential $V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})$ (up to an additive constant), and hence the full many-body Hamiltonian and all ground-state properties.
 
-**Theorem 2:** The ground-state energy is a functional of the density: $E[n] = F_{\text{HK{}}[n] + \int V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'})\,d^3r$, and the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{'\{'}r{'\}'})$.
+**Theorem 2:** The ground-state energy is a functional of the density: $E[n] = F_{\text{HK{}}[n] + \int V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'})\,d^3r$And the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{'\{'}r{'\}'})$.
 
 ### 14.2 Kohn--Sham Equations
 
@@ -2291,7 +2291,7 @@ The simplest density functional theory: the Thomas--Fermi model treats the kinet
 
 $$T_{\text{TF{}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{'\{'}r{'\}'})\,d^3r = C_{\text{TF{}}\int n^{5/3}\,d^3r$$
 
-For an atom with nuclear charge $Ze$, minimising $E[n] = T_{\text{TF{}}[n] - Ze^2\int n(\mathbf{'\{'}r{'\}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'}')/|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|\,d^3rd^3r'$:
+For an atom with nuclear charge $Ze$Minimising $E[n] = T_{\text{TF{}}[n] - Ze^2\int n(\mathbf{'\{'}r{'\}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'}')/|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|\,d^3rd^3r'$:
 
 The variational equation gives:
 
@@ -2304,3 +2304,7 @@ The Thomas--Fermi energy: $E_{\text{TF{}} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7
 This gives reasonable total energies for heavy atoms but fails qualitatively for light atoms (no shell structure, no chemical bonding).
 
 </details>
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

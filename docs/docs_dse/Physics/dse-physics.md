@@ -13,23 +13,23 @@ slug: dse-physics
 ## Course Overview
 
 The Hong Kong Diploma of Secondary Education (DSE) Physics examination assesses candidates'
-understanding of fundamental physics principles and their ability to apply these principles to
-solve problems. The syllabus is designed to provide a balanced coverage of both classical and
-modern physics.
+Understanding of fundamental physics principles and their ability to apply these principles to
+Solve problems. The syllabus is designed to provide a balanced coverage of both classical and
+Modern physics.
 
 The course is structured into **compulsory topics** (Papers 1A and 1B) and **elective topics**
 (Paper 2). All candidates must study the compulsory topics; candidates then choose ONE elective
-topic from the four available options.
+Topic from the four available options.
 
 ---
 
 ## Examination Structure
 
-| Paper | Component                                  | Duration | Weighting |
+| Paper | Component | Duration | Weighting |
 | ----- | ------------------------------------------ | -------- | --------- |
-| 1A    | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30%       |
-| 1B    | Compulsory Part -- Structured Questions    | 2 h      | 50%       |
-| 2     | Elective -- Structured Questions           | 1 h      | 20%       |
+| 1A | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30% |
+| 1B | Compulsory Part -- Structured Questions | 2 h | 50% |
+| 2 | Elective -- Structured Questions | 1 h | 20% |
 
 **Total: 100%**
 
@@ -114,15 +114,15 @@ See [./nuclear-physics](./nuclear-physics) for detailed notes.
 
 ## Elective Topics (Choose One)
 
-| Elective | Topic                                    |
+| Elective | Topic |
 | -------- | ---------------------------------------- |
-| E1       | Astronomy and Space Science              |
-| E2       | Atomic Physics (extended)                |
-| E3       | Energy and Use of Energy                 |
-| E4       | Medical Physics                          |
+| E1 | Astronomy and Space Science |
+| E2 | Atomic Physics (extended) |
+| E3 | Energy and Use of Energy |
+| E4 | Medical Physics |
 
 Paper 2 consists of structured questions based on the chosen elective. Each elective carries equal
-weighting (20% of the total mark).
+Weighting (20% of the total mark).
 
 ---
 
@@ -134,28 +134,28 @@ Candidates are expected to demonstrate the ability to:
 2. **Apply and analyse** physics knowledge to familiar and unfamiliar situations
 3. **Evaluate and synthesise** information, form reasoned arguments, and draw conclusions
 4. **Plan and carry out** investigations, interpret experimental data, and evaluate experimental
-   methods
+ methods
 
 ---
 
 ## Key Quantities and Units
 
-| Quantity              | Symbol | SI Unit     |
+| Quantity | Symbol | SI Unit |
 | --------------------- | ------ | ----------- |
-| Length                | $l$    | m           |
-| Mass                  | $m$    | kg          |
-| Time                  | $t$    | s           |
-| Temperature           | $T$    | K           |
-| Current               | $I$    | A           |
-| Amount of substance   | $n$    | mol         |
-| Luminous intensity    | $I_v$  | cd          |
-| Force                 | $F$    | N           |
-| Energy                | $E$    | J           |
-| Power                 | $P$    | W           |
-| Pressure              | $p$    | Pa          |
-| Electric charge       | $Q$    | C           |
-| Potential difference  | $V$    | V           |
-| Resistance            | $R$    | $\Omega$    |
+| Length | $l$ | m |
+| Mass | $m$ | kg |
+| Time | $t$ | s |
+| Temperature | $T$ | K |
+| Current | $I$ | A |
+| Amount of substance | $n$ | mol |
+| Luminous intensity | $I_v$ | cd |
+| Force | $F$ | N |
+| Energy | $E$ | J |
+| Power | $P$ | W |
+| Pressure | $p$ | Pa |
+| Electric charge | $Q$ | C |
+| Potential difference | $V$ | V |
+| Resistance | $R$ | $\Omega$ |
 
 ---
 
@@ -164,7 +164,7 @@ Candidates are expected to demonstrate the ability to:
 ### Worked Example 1 -- Mechanics (SUVAT)
 
 A car accelerates uniformly from rest to $20 \mathrm{ m/s}$ in $5 \mathrm{ s}$. Find the
-acceleration and the distance travelled.
+Acceleration and the distance travelled.
 
 <details>
 <summary>Solution</summary>
@@ -178,8 +178,8 @@ Using $s = ut + \frac{1}{2}at^2$: $s = 0 + \frac{1}{2}(4)(25) = 50 \mathrm{ m}$
 ### Worked Example 2 -- Electricity (Circuit)
 
 Two resistors of $6 \Omega$ and $12 \Omega$ are connected in series across a $9 \mathrm{ V}$
-battery with negligible internal resistance. Find the current and the power dissipated in each
-resistor.
+Battery with negligible internal resistance. Find the current and the power dissipated in each
+Resistor.
 
 <details>
 <summary>Solution</summary>
@@ -197,7 +197,7 @@ $P_{12} = I^2 R_{12} = 0.25 \times 12 = 3.0 \mathrm{ W}$
 ### Worked Example 3 -- Waves (Wave Equation)
 
 A sound wave of wavelength $0.68 \mathrm{ m}$ travels at $340 \mathrm{ m/s}$. Find the
-frequency and period.
+Frequency and period.
 
 <details>
 <summary>Solution</summary>
@@ -211,7 +211,7 @@ $$T = \frac{1}{f} = \frac{1}{500} = 0.002 \mathrm{ s} = 2.0 \mathrm{ ms}$$
 ### Worked Example 4 -- Energy (Conservation)
 
 A $0.5 \mathrm{ kg}$ ball is dropped from a height of $10 \mathrm{ m}$. Find its speed just
-before it hits the ground, neglecting air resistance.
+Before it hits the ground, neglecting air resistance.
 
 <details>
 <summary>Solution</summary>
@@ -223,7 +223,7 @@ $$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 10}
 ### Worked Example 5 -- Thermal Physics (Specific Heat)
 
 A $2 \mathrm{ kg}$ block of aluminium (specific heat capacity $900 \mathrm{ J/(kg\cdot}^\circ C)}$)
-is heated from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Find the energy required.
+Is heated from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Find the energy required.
 
 <details>
 <summary>Solution</summary>
@@ -237,15 +237,15 @@ $$Q = mc\Delta T = 2 \times 900 \times (100 - 20) = 2 \times 900 \times 80 = 144
 ## Examination Tips
 
 - Show all working in numerical calculations; method marks are often awarded even if the final
-  answer is incorrect.
+ answer is incorrect.
 - Pay attention to significant figures; generally, answers should be given to the same number of
-  significant figures as the least precise data in the question.
+ significant figures as the least precise data in the question.
 - Draw clear, labelled diagrams where appropriate; free-body diagrams should show forces with
-  correct directions and relative magnitudes.
-- For multiple-choice questions (Paper 1A), read each option carefully and eliminate clearly wrong
-  answers before deciding.
+ correct directions and relative magnitudes.
+- For multiple-choice questions (Paper 1A), read each option carefully and eliminate wrong
+ answers before deciding.
 - In structured questions (Paper 1B), use the space provided as a guide for the expected length of
-  the answer.
+ the answer.
 - Memorise key definitions precisely, as examiners look for specific terminology in mark schemes.
 
 ---
@@ -271,8 +271,8 @@ Total time in air: $2t = 3.06 \mathrm{ s}$
 If you get this wrong, revise: Mechanics / SUVAT equations
 
 **Problem 2.** A $5 \mathrm{ kg}$ object is pulled across a rough horizontal surface by a force
-of $40 \mathrm{ N}$ at $30^\circ$ above the horizontal. If the coefficient of kinetic friction
-is $0.4$, find the acceleration.
+Of $40 \mathrm{ N}$ at $30^\circ$ above the horizontal. If the coefficient of kinetic friction
+Is $0.4$Find the acceleration.
 
 <details>
 <summary>Solution</summary>
@@ -287,9 +287,9 @@ $$a = \frac{F\cos 30^\circ - f_k}{m} = \frac{34.64 - 11.62}{5} = \frac{23.02}{5}
 
 If you get this wrong, revise: Mechanics / Newton's Laws and Friction
 
-**Problem 3.** Three resistors of $2 \Omega$, $3 \Omega$, and $6 \Omega$ are connected in
-parallel. A $6 \mathrm{ V}$ battery with internal resistance $0.5 \Omega$ is connected across
-the combination. Find the total current from the battery.
+**Problem 3.** Three resistors of $2 \Omega$$3 \Omega$And $6 \Omega$ are connected in
+Parallel. A $6 \mathrm{ V}$ battery with internal resistance $0.5 \Omega$ is connected across
+The combination. Find the total current from the battery.
 
 <details>
 <summary>Solution</summary>
@@ -317,8 +317,8 @@ A wavelength of $1.0 \mathrm{ m}$ places this in the **radio wave** region of th
 If you get this wrong, revise: Waves / Electromagnetic Spectrum
 
 **Problem 5.** A $3 \mathrm{ kg}$ trolley moving at $4 \mathrm{ m/s}$ collides with a $1 \mathrm{ kg}$
-stationary trolley and they stick together. Find the velocity after collision and the kinetic
-energy lost.
+Stationary trolley and they stick together. Find the velocity after collision and the kinetic
+Energy lost.
 
 <details>
 <summary>Solution</summary>
@@ -337,8 +337,8 @@ If you get this wrong, revise: Mechanics / Momentum and Collisions
 
 **Problem 6.** A $200 \mathrm{ g}$ block of copper at $100^\circ\mathrm{C}$ is placed in
 $300 \mathrm{ g}$ of water at $20^\circ\mathrm{C}$. Find the final temperature, assuming no
-heat loss to the surroundings. (Specific heat capacity of copper $= 390 \mathrm{ J/(kg\cdot}^\circ C)}$,
-water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
+Heat loss to the surroundings. (Specific heat capacity of copper $= 390 \mathrm{ J/(kg\cdot}^\circ C)}$
+Water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
 
 <details>
 <summary>Solution</summary>
@@ -362,8 +362,8 @@ $$T_f = 24.7^\circ\mathrm{C}$$
 If you get this wrong, revise: Thermal Physics / Specific Heat Capacity
 
 **Problem 7.** A coil of 100 turns and area $0.005 \mathrm{ m}^2$ is placed in a magnetic
-field of $0.4 \mathrm{ T}$. The coil is removed from the field in $0.02 \mathrm{ s}$. Find
-the average induced EMF.
+Field of $0.4 \mathrm{ T}$. The coil is removed from the field in $0.02 \mathrm{ s}$. Find
+The average induced EMF.
 
 <details>
 <summary>Solution</summary>
@@ -401,21 +401,21 @@ If you get this wrong, revise: Waves / Sound Intensity
 All final answers should be given to an appropriate number of significant figures (s.f.):
 
 - Raw data is recorded to the precision of the measuring instrument.
-- Calculated results should have the same number of s.f. as the least precise input value.
-- Intermediate calculations should keep at least one extra s.f. to avoid rounding errors.
+- Calculated results should have the same number of s.f. As the least precise input value.
+- Intermediate calculations should keep at least one extra s.f. To avoid rounding errors.
 
 **Examples:**
 
-| Measurement          | Significant Figures |
+| Measurement | Significant Figures |
 | -------------------- | ------------------- |
-| $12.5 \mathrm{ cm}$  | 3                   |
+| $12.5 \mathrm{ cm}$ | 3 |
 | $0.0040 \mathrm{ kg}$ | 2 (leading zeros are not significant) |
-| $1500 \mathrm{ m}$   | Ambiguous (2, 3, or 4). Use scientific notation: $1.5 \times 10^3$ (2 s.f.) |
+| $1500 \mathrm{ m}$ | Ambiguous (2, 3, or 4). Use scientific notation: $1.5 \times 10^3$ (2 s.f.) |
 
 ### Uncertainty and Error Analysis
 
 **Absolute uncertainty:** The range within which the true value is expected to lie.
-e.g., $L = (25.0 \pm 0.5) \mathrm{ cm}$.
+E.g., $L = (25.0 \pm 0.5) \mathrm{ cm}$.
 
 **Percentage uncertainty:** $\frac{\Delta x}{x} \times 100\%$.
 
@@ -429,7 +429,7 @@ For multiplication/division and powers: add percentage uncertainties in quadratu
 
 $$z = x^a y^b \implies \frac{\Delta z}{z} = \sqrt{\left(a\frac{\Delta x}{x}\right)^2 + \left(b\frac{\Delta y}{y}\right)^2}$$
 
-**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg}$, $v = (3.0 \pm 0.1) \mathrm{ m/s}$:
+**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg}$$v = (3.0 \pm 0.1) \mathrm{ m/s}$:
 
 $$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J}$$
 
@@ -442,7 +442,7 @@ $$A = (0.90 \pm 0.06) \mathrm{ J}$$
 ### Graphical Analysis
 
 **Line of best fit:** Draw a straight line that passes through as many data points as possible,
-with approximately equal numbers of points above and below the line.
+With approximately equal numbers of points above and below the line.
 
 **Determining uncertainty from graphs:**
 1. Draw the line of best fit and calculate its gradient.
@@ -450,16 +450,16 @@ with approximately equal numbers of points above and below the line.
 3. The uncertainty in the gradient is half the difference between the worst-fit gradients.
 
 **Linearising data:** Many physical relationships are not linear. Plot transformed variables to
-obtain a straight line:
+Obtain a straight line:
 
-| Relationship        | Plot (y vs x)    | Gradient    | Intercept |
+| Relationship | Plot (y vs x) | Gradient | Intercept |
 | ------------------- | ---------------- | ----------- | --------- |
-| $y = ax + b$        | $y$ vs $x$       | $a$         | $b$       |
-| $y = ax^2$          | $y$ vs $x^2$     | $a$         | $0$       |
-| $y = a/x$           | $y$ vs $1/x$     | $a$         | $0$       |
-| $y = a\sqrt{x}$     | $y$ vs $\sqrt{x}$ | $a$       | $0$       |
-| $v^2 = u^2 + 2as$   | $v^2$ vs $s$     | $2a$        | $u^2$     |
-| $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$ | $\frac{4\pi^2}{g}$ | $0$  |
+| $y = ax + b$ | $y$ vs $x$ | $a$ | $b$ |
+| $y = ax^2$ | $y$ vs $x^2$ | $a$ | $0$ |
+| $y = a/x$ | $y$ vs $1/x$ | $a$ | $0$ |
+| $y = a\sqrt{x}$ | $y$ vs $\sqrt{x}$ | $a$ | $0$ |
+| $v^2 = u^2 + 2as$ | $v^2$ vs $s$ | $2a$ | $u^2$ |
+| $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$ | $\frac{4\pi^2}{g}$ | $0$ |
 
 ---
 
@@ -467,23 +467,23 @@ obtain a straight line:
 
 ### Measuring Instruments
 
-| Instrument              | Precision              | Notes                                     |
+| Instrument | Precision | Notes |
 | ----------------------- | ---------------------- | ----------------------------------------- |
-| Metre rule              | $\pm 1 \mathrm{ mm}$   | Parallax error possible                   |
-| Vernier calipers        | $\pm 0.05 \mathrm{ mm}$| For internal/external dimensions          |
-| Micrometer screw gauge  | $\pm 0.01 \mathrm{ mm}$| Zero error must be checked                |
-| Stopwatch               | $\pm 0.01 \mathrm{ s}$ | Reaction time dominates; use electronic   |
-| Thermometer             | $\pm 0.5^\circ\mathrm{C}$ | Mercury or alcohol                     |
-| Ammeter                 | $\pm$ half smallest division | Connected in series                  |
-| Voltmeter               | $\pm$ half smallest division | Connected in parallel                 |
-| Protractor              | $\pm 0.5^\circ$        | Align carefully with normal               |
+| Metre rule | $\pm 1 \mathrm{ mm}$ | Parallax error possible |
+| Vernier calipers | $\pm 0.05 \mathrm{ mm}$| For internal/external dimensions |
+| Micrometer screw gauge | $\pm 0.01 \mathrm{ mm}$| Zero error must be checked |
+| Stopwatch | $\pm 0.01 \mathrm{ s}$ | Reaction time dominates; use electronic |
+| Thermometer | $\pm 0.5^\circ\mathrm{C}$ | Mercury or alcohol |
+| Ammeter | $\pm$ half smallest division | Connected in series |
+| Voltmeter | $\pm$ half smallest division | Connected in parallel |
+| Protractor | $\pm 0.5^\circ$ | Align carefully with normal |
 
 ### Systematic vs Random Errors
 
-| Type        | Cause                         | Effect                           | Reduction                     |
+| Type | Cause | Effect | Reduction |
 | ----------- | ----------------------------- | -------------------------------- | ----------------------------- |
-| Systematic  | Faulty instrument, zero error | All readings shifted same way    | Calibrate, use different method |
-| Random      | Fluctuations, human judgement | Readings spread above and below  | Repeat and average             |
+| Systematic | Faulty instrument, zero error | All readings shifted same way | Calibrate, use different method |
+| Random | Fluctuations, human judgement | Readings spread above and below | Repeat and average |
 
 ### Zero Error Correction
 
@@ -492,7 +492,7 @@ A zero error occurs when an instrument does not read zero when it should. Always
 **Positive zero error:** Instrument reads too high. Subtract the zero error from all readings.
 
 **Negative zero error:** Instrument reads too low. Add the magnitude of the zero error to all
-readings.
+Readings.
 
 **Example:** A micrometer reads $0.03 \mathrm{ mm}$ when fully closed (positive zero error).
 A measurement of $5.47 \mathrm{ mm}$ gives a corrected value of $5.47 - 0.03 = 5.44 \mathrm{ mm}$.
@@ -503,35 +503,35 @@ A measurement of $5.47 \mathrm{ mm}$ gives a corrected value of $5.47 - 0.03 = 5
 
 ### Structured Questions
 
-DSE Physics Paper 1 contains structured questions. Each question typically has 3-8 parts, progressing
-from basic recall to calculation and explanation.
+DSE Physics Paper 1 contains structured questions. Each question has 3-8 parts, progressing
+From basic recall to calculation and explanation.
 
 **Approach:**
 1. Read the entire question before starting. Later parts may give hints for earlier parts.
-2. Show all working clearly. Method marks are awarded even if the final answer is wrong.
-3. Use the correct number of significant figures in final answers (usually 3 s.f.).
+2. Show all working . Method marks are awarded even if the final answer is wrong.
+3. Use the correct number of significant figures in final answers ( 3 s.f.).
 4. Include units in every calculated answer.
 5. For explanations, use precise physics terminology.
 
 ### Common Error Patterns in DSE Exams
 
-| Error Type                      | Example                                       | Correction                                    |
+| Error Type | Example | Correction |
 | ------------------------------- | --------------------------------------------- | --------------------------------------------- |
-| Unit conversion                 | $1 \mathrm{ cm} = 0.01 \mathrm{ m}$           | Always convert to SI before calculating       |
-| Wrong formula                   | Using $v = f\lambda$ for standing waves       | Check which formula applies to the situation  |
-| Sign errors                     | Forgetting negative sign in $v = u + at$      | Define positive direction clearly             |
-| Confusing quantities           | Speed vs velocity, mass vs weight             | Check definitions before answering            |
-| Missing steps                   | Jumping from $F = ma$ to numerical answer     | Show substitution clearly                     |
-| Incomplete explanations         | "Because of gravity"                          | State the principle and link to the scenario |
+| Unit conversion | $1 \mathrm{ cm} = 0.01 \mathrm{ m}$ | Always convert to SI before calculating |
+| Wrong formula | Using $v = f\lambda$ for standing waves | Check which formula applies to the situation |
+| Sign errors | Forgetting negative sign in $v = u + at$ | Define positive direction |
+| Confusing quantities | Speed vs velocity, mass vs weight | Check definitions before answering |
+| Missing steps | Jumping from $F = ma$ to numerical answer | Show substitution |
+| Incomplete explanations | "Because of gravity" | State the principle and link to the scenario |
 
 ### Multiple Choice Strategy
 
 DSE Physics Paper 2 consists of multiple choice questions. Key strategies:
 
-1. **Eliminate obviously wrong answers first.**
+1. **Eliminate wrong answers first.**
 2. **Check dimensions:** If the answer should be a force (N) and an option has units of energy (J), eliminate it.
 3. **Estimate:** Quick mental arithmetic can often eliminate wrong options.
-4. **Check extreme cases:** What happens if $m \to 0$, $R \to \infty$, etc.?
+4. **Check extreme cases:** What happens if $m \to 0$$R \to \infty$Etc.?
 5. **Do not leave blanks:** There is no penalty for wrong answers in DSE.
 
 ---
@@ -540,8 +540,8 @@ DSE Physics Paper 2 consists of multiple choice questions. Key strategies:
 
 **Problem 9.** A steel wire of length $2.0 \mathrm{ m}$ and cross-sectional area
 $2.0 \times 10^{-6} \mathrm{ m}^2$ is stretched by $1.0 \mathrm{ mm}$. The Young's modulus of
-steel is $2.0 \times 10^{11} \mathrm{ Pa}$. Calculate the tension in the wire and the elastic
-potential energy stored.
+Steel is $2.0 \times 10^{11} \mathrm{ Pa}$. Calculate the tension in the wire and the elastic
+Potential energy stored.
 
 <details>
 <summary>Solution</summary>
@@ -557,8 +557,8 @@ $$E_p = \frac{1}{2}Fx = \frac{1}{2} \times 200 \times 1.0 \times 10^{-3} = 0.10 
 If you get this wrong, revise: Mechanics / Elasticity
 
 **Problem 10.** A radioactive source has a half-life of $5.0 \mathrm{ years}$. The initial
-activity is $800 \mathrm{ Bq}$. Calculate the activity after $20 \mathrm{ years}$ and the time
-for the activity to fall to $50 \mathrm{ Bq}$.
+Activity is $800 \mathrm{ Bq}$. Calculate the activity after $20 \mathrm{ years}$ and the time
+For the activity to fall to $50 \mathrm{ Bq}$.
 
 <details>
 <summary>Solution</summary>
@@ -580,8 +580,8 @@ $$t/5 = 4 \implies t = 20 \mathrm{ years}$$
 If you get this wrong, revise: Nuclear Physics / Radioactive Decay
 
 **Problem 11.** In a Young's double-slit experiment, the fringe spacing is $0.80 \mathrm{ mm}$
-when light of wavelength $600 \mathrm{ nm}$ is used. The screen is $1.5 \mathrm{ m}$ from the
-slits. Find the slit separation.
+When light of wavelength $600 \mathrm{ nm}$ is used. The screen is $1.5 \mathrm{ m}$ from the
+Slits. Find the slit separation.
 
 <details>
 <summary>Solution</summary>
@@ -594,7 +594,7 @@ If you get this wrong, revise: Waves / Interference
 
 **Problem 12.** A convex mirror has a focal length of $15 \mathrm{ cm}$. An object of height
 $4.0 \mathrm{ cm}$ is placed $25 \mathrm{ cm}$ from the mirror. Find the image position,
-magnification, and nature.
+Magnification, and nature.
 
 <details>
 <summary>Solution</summary>
@@ -617,3 +617,10 @@ The image is **virtual**, **upright**, and **diminished**.
 
 If you get this wrong, revise: Optics / Curved Mirrors
 
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

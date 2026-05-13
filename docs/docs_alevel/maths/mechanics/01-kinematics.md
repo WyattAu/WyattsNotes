@@ -11,16 +11,16 @@ slug: kinematics
 ---
 ## Board Coverage
 
-| Board      | Paper   | Notes                          |
+| Board | Paper | Notes |
 | ---------- | ------- | ------------------------------ |
-| AQA        | Paper 1 | 1D kinematics, projectiles     |
-| Edexcel    | P1      | Similar                        |
-| OCR (A)    | Paper 1 | Includes variable acceleration |
-| CIE (9709) | P1, P4  | 1D in P1; 2D/projectiles in P4 |
+| AQA | Paper 1 | 1D kinematics, projectiles |
+| Edexcel | P1 | Similar |
+| OCR (A) | Paper 1 | Includes variable acceleration |
+| CIE (9709) | P1, P4 | 1D in P1; 2D/projectiles in P4 |
 
 :::info
 The formula booklet lists the SUVAT equations. You must be able to select the correct
-equation and apply it to multi-stage problems.
+Equation and apply it to multi-stage problems.
 :::
 
 <hr />
@@ -93,22 +93,22 @@ $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \mathrm{(useful whe
 
 :::tip
 The key insight is that **all five SUVAT equations follow from two integrations** of the
-constant acceleration $a = dv/dt$, using the initial conditions $v(0) = u$ and $s(0) = 0$.
+Constant acceleration $a = dv/dt$Using the initial conditions $v(0) = u$ and $s(0) = 0$.
 Memorising the derivation means you can recover any formula you forget.
 :::
 
 ### 2.2 Summary
 
-| Equation                   | Variables    | Missing |
+| Equation | Variables | Missing |
 | -------------------------- | ------------ | ------- |
-| $v = u + at$               | $v, u, a, t$ | $s$     |
-| $s = ut + \frac{1}{2}at^2$ | $s, u, a, t$ | $v$     |
-| $v^2 = u^2 + 2as$          | $v, u, a, s$ | $t$     |
-| $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
+| $v = u + at$ | $v, u, a, t$ | $s$ |
+| $s = ut + \frac{1}{2}at^2$ | $s, u, a, t$ | $v$ |
+| $v^2 = u^2 + 2as$ | $v, u, a, s$ | $t$ |
+| $s = \frac{1}{2}(u+v)t$ | $s, u, v, t$ | $a$ |
 
 :::tip
 Always write down what you know and what you need. Choose the equation that contains all
-known quantities and the unknown. Draw a diagram with positive direction clearly marked.
+Known quantities and the unknown. Draw a diagram with positive direction marked.
 :::
 
 <hr />
@@ -136,32 +136,32 @@ known quantities and the unknown. Draw a diagram with positive direction clearly
 ### 3.4 Interpreting displacement-time graphs in detail
 
 The gradient of an $s$-$t$ graph gives the velocity at that instant. The **sign** of the gradient
-tells you the direction of motion, and the **steepness** tells you the speed.
+Tells you the direction of motion, and the **steepness** tells you the speed.
 
 - **Positive, increasing gradient**: particle moves in the positive direction with increasing speed
-  (positive acceleration).
+ (positive acceleration).
 - **Positive, decreasing gradient**: particle moves in the positive direction but is decelerating.
 - **Zero gradient (horizontal)**: particle is instantaneously at rest ($v = 0$). This may be a
-  turning point.
+ turning point.
 - **Negative gradient**: particle moves in the negative direction.
 - **Concave-up curve** ($\frac{d^2s}{dt^2} \gt{} 0$): acceleration is positive.
 - **Concave-down curve** ($\frac{d^2s}{dt^2} \lt{} 0$): acceleration is negative.
 
 A common mistake is assuming a particle is at rest only when $s = 0$. In fact, the particle is at
-rest whenever the **gradient** is zero, regardless of the displacement value.
+Rest whenever the **gradient** is zero, regardless of the displacement value.
 
 ### 3.5 Interpreting velocity-time graphs in detail
 
 The area between the $v$-$t$ curve and the $t$-axis gives the **displacement** (with sign). To find
-the total **distance** travelled, you must take the absolute value of velocity in each region before
-integrating, or equivalently add the magnitudes of the areas above and below the axis.
+The total **distance** travelled, you must take the absolute value of velocity in each region before
+Integrating, or equivalently add the magnitudes of the areas above and below the axis.
 
 - **Area above the $t$-axis**: displacement in the positive direction.
 - **Area below the $t$-axis**: displacement in the negative direction.
 - **Total distance** = (area above) + |area below|.
 
 The **gradient** of the tangent to a $v$-$t$ curve gives the instantaneous acceleration. For a
-straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
+Straight-line $v$-$t$ graph, the acceleration is constant and equals the gradient of that line.
 
 :::warning
 Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
@@ -172,7 +172,7 @@ $v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas ad
 ### 3.6 Worked example: graphs
 
 A particle moves so that its displacement $s$ metres from a fixed point $O$ at time $t$ seconds is
-given by $s = t^3 - 9t^2 + 24t$.
+Given by $s = t^3 - 9t^2 + 24t$.
 
 The velocity is $v = ds/dt = 3t^2 - 18t + 24 = 3(t^2 - 6t + 8) = 3(t-2)(t-4)$.
 
@@ -183,10 +183,10 @@ The velocity is $v = ds/dt = 3t^2 - 18t + 24 = 3(t^2 - 6t + 8) = 3(t-2)(t-4)$.
 
 The acceleration is $a = dv/dt = 6t - 18 = 6(t - 3)$.
 
-- At $t = 3$: $a = 0$, the particle changes from decelerating to accelerating (in the positive
-  sense).
+- At $t = 3$: $a = 0$The particle changes from decelerating to accelerating (in the positive
+ sense).
 
-Displacement at key times: $s(0) = 0$, $s(2) = 8 - 36 + 48 = 20$, $s(4) = 64 - 144 + 96 = 16$,
+Displacement at key times: $s(0) = 0$$s(2) = 8 - 36 + 48 = 20$$s(4) = 64 - 144 + 96 = 16$
 $s(6) = 216 - 324 + 144 = 36$.
 
 <hr />
@@ -204,7 +204,7 @@ $s(6) = 216 - 324 + 144 = 36$.
 $$x = v\cos\theta \cdot t, \quad a_x = 0$$
 
 Since there is no horizontal acceleration, the horizontal velocity $v_x = v\cos\theta$ remains
-constant throughout the flight.
+Constant throughout the flight.
 
 ### 4.3 Vertical motion
 
@@ -221,7 +221,7 @@ $$y = v\sin\theta \cdot \frac◆LB◆x◆RB◆◆LB◆v\cos\theta◆RB◆ - \fra
 $$\boxed{y = x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2v^2\cos^2\theta◆RB◆}$$
 
 This is a parabola — all projectile trajectories are parabolic (under constant gravity, no air
-resistance).
+Resistance).
 
 ### 4.5 Maximum height
 
@@ -237,13 +237,13 @@ Time of flight: $y = 0 \implies t = \dfrac◆LB◆2v\sin\theta◆RB◆◆LB◆g�
 
 $$R = v\cos\theta \cdot \frac◆LB◆2v\sin\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆v^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$$
 
-Maximum range occurs when $\sin 2\theta = 1$, i.e., $\theta = 45^\circ$.
+Maximum range occurs when $\sin 2\theta = 1$I.e., $\theta = 45^\circ$.
 
 $$R_{\max} = \frac{v^2}{g}$$
 
 ### 4.7 Velocity at any point on the trajectory
 
-At any time $t$, the velocity vector is:
+At any time $t$The velocity vector is:
 
 $$\mathbf{v} = \begin{pmatrix} v\cos\theta \\ v\sin\theta - gt \end{pmatrix}$$
 
@@ -259,9 +259,9 @@ At the highest point ($t = v\sin\theta / g$), the velocity is purely horizontal:
 $\mathbf{v} = (v\cos\theta,\, 0)$. The speed at the highest point equals the horizontal component
 $v\cos\theta$.
 
-On landing ($t = 2v\sin\theta / g$), the vertical component is $-v\sin\theta$, so the speed equals
-the initial speed $v$. The landing angle with the horizontal equals the launch angle $\theta$ (by
-symmetry).
+On landing ($t = 2v\sin\theta / g$), the vertical component is $-v\sin\theta$So the speed equals
+The initial speed $v$. The landing angle with the horizontal equals the launch angle $\theta$ (by
+Symmetry).
 
 ### 4.8 Time to reach a given height
 
@@ -272,14 +272,14 @@ $$h = v\sin\theta \cdot t - \frac{1}{2}gt^2 \implies \frac{1}{2}gt^2 - v\sin\the
 $$t = \frac◆LB◆v\sin\theta \pm \sqrt{(v\sin\theta)^2 - 2gh}◆RB◆◆LB◆g◆RB◆$$
 
 - If $(v\sin\theta)^2 \gt{} 2gh$: two solutions — the projectile passes through height $h$ twice (on
-  the way up and on the way down).
+ the way up and on the way down).
 - If $(v\sin\theta)^2 = 2gh$: one solution — $h$ is the maximum height.
 - If $(v\sin\theta)^2 \lt{} 2gh$: no real solution — the projectile never reaches height $h$.
 
 ### 4.9 Projectiles launched from a height
 
 If a projectile is launched from height $H$ above ground level, set $y = -H$ at landing (taking
-upwards as positive):
+Upwards as positive):
 
 $$-H = v\sin\theta \cdot t - \frac{1}{2}gt^2$$
 
@@ -293,8 +293,8 @@ The horizontal range is then $R = v\cos\theta \cdot t$.
 
 :::tip
 When a projectile is launched from a height, the time of flight is **longer** than for level
-ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but
-beyond the core syllabus).
+Ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but
+Beyond the core syllabus).
 :::
 
 <hr />
@@ -311,7 +311,7 @@ Use initial conditions to find constants of integration.
 
 ### 5.1 Finding velocity from acceleration
 
-Given $a = f(t)$, integrate to find $v$:
+Given $a = f(t)$Integrate to find $v$:
 
 $$v = \int a\,dt = \int f(t)\,dt = F(t) + C$$
 
@@ -319,7 +319,7 @@ Use the initial velocity $v(0) = u$ to find $C$.
 
 ### 5.2 Finding displacement from velocity
 
-Given $v = g(t)$, integrate to find $s$:
+Given $v = g(t)$Integrate to find $s$:
 
 $$s = \int v\,dt = \int g(t)\,dt = G(t) + K$$
 
@@ -327,7 +327,7 @@ Use the initial displacement $s(0) = s_0$ to find $K$.
 
 ### 5.3 Acceleration in terms of displacement or velocity
 
-Sometimes acceleration is given as a function of $s$ or $v$, not $t$.
+Sometimes acceleration is given as a function of $s$ or $v$Not $t$.
 
 **Case 1:** $a = f(v)$.
 
@@ -354,20 +354,20 @@ When finding displacement over a time interval $[t_1, t_2]$:
 $$\Delta s = \int_{t_1}^{t_2} v\,dt$$
 
 When finding total distance, you must account for changes in direction. Find when $v = 0$ (turning
-points), split the integral at those times, and take absolute values:
+Points), split the integral at those times, and take absolute values:
 
 $$\mathrm{Distance} = \int_{t_1}^{t_2} |v|\,dt$$
 
 ### 5.5 Worked example: variable acceleration
 
 A particle moves in a straight line. At time $t$ seconds, its acceleration is
-$a = 6t - 4\,\mathrm{m/s}^2$. When $t = 0$, the particle is at rest at the origin. Find:
+$a = 6t - 4\,\mathrm{m/s}^2$. When $t = 0$The particle is at rest at the origin. Find:
 
 **(a)** The velocity at time $t$:
 
 $$v = \int (6t - 4)\,dt = 3t^2 - 4t + C$$
 
-Since $v = 0$ when $t = 0$: $C = 0$, so $v = 3t^2 - 4t$.
+Since $v = 0$ when $t = 0$: $C = 0$So $v = 3t^2 - 4t$.
 
 **(b)** When the particle is at rest:
 
@@ -377,7 +377,7 @@ $v = 0 \implies 3t^2 - 4t = 0 \implies t(3t - 4) = 0 \implies t = 0$ or $t = 4/3
 
 $$s = \int (3t^2 - 4t)\,dt = t^3 - 2t^2 + K$$
 
-Since $s = 0$ when $t = 0$: $K = 0$, so $s = t^3 - 2t^2$.
+Since $s = 0$ when $t = 0$: $K = 0$So $s = t^3 - 2t^2$.
 
 **(d)** The total distance travelled in the first 3 seconds:
 
@@ -401,7 +401,7 @@ A car accelerates from rest at $2\,\mathrm{m/s}^2$ for 8 seconds. Find the dista
 
 <details>
 <summary>Solution 1</summary>
-$u = 0$, $a = 2$, $t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
+$u = 0$$a = 2$$t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
 
 $s = 0 + \tfrac{1}{2}(2)(64) = 64\,\mathrm{m}$.
 
@@ -433,7 +433,7 @@ A projectile is launched at $30\,\mathrm{m/s}$ at an angle of $40^\circ$ above t
 
 <details>
 <summary>Solution 3</summary>
-$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
+$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$$v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
 
 $H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\mathrm{m}$.
 
@@ -450,7 +450,7 @@ A train decelerates uniformly from $25\,\mathrm{m/s}$ to $10\,\mathrm{m/s}$ over
 
 <details>
 <summary>Solution 4</summary>
-$u = 25$, $v = 10$, $s = 200$.
+$u = 25$$v = 10$$s = 200$.
 
 $v^2 = u^2 + 2as \implies 100 = 625 + 400a \implies a = -525/400 = -1.3125\,\mathrm{m/s}^2$.
 
@@ -482,8 +482,8 @@ Show that the maximum range of a projectile on level ground is achieved at $45^\
 <summary>Solution 6</summary>
 $R = \dfrac◆LB◆v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆$. To maximise: $\dfrac◆LB◆dR◆RB◆◆LB◆d\theta◆RB◆ = \dfrac◆LB◆2v^2 \cos 2\theta◆RB◆◆LB◆g◆RB◆ = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
 
-$\dfrac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = -\dfrac◆LB◆4v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆ \lt{} 0$ at $\theta = 45^\circ$, confirming
-a maximum. $\blacksquare$
+$\dfrac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = -\dfrac◆LB◆4v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆ \lt{} 0$ at $\theta = 45^\circ$Confirming
+A maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
 
@@ -506,7 +506,7 @@ $v = gt = 9.8(4.04) \approx 39.6\,\mathrm{m/s}$.
 
 <details>
 <summary>Problem 8</summary>
-A particle is projected from a point $O$ on horizontal ground. It passes through a point $P$ which is $10\,\mathrm{m}$ horizontally and $5\,\mathrm{m}$ vertically from $O$. If the initial speed is $15\,\mathrm{m/s}$, find the possible angles of projection.
+A particle is projected from a point $O$ on horizontal ground. It passes through a point $P$ which is $10\,\mathrm{m}$ horizontally and $5\,\mathrm{m}$ vertically from $O$. If the initial speed is $15\,\mathrm{m/s}$Find the possible angles of projection.
 </details>
 
 <details>
@@ -541,13 +541,13 @@ A car travels at $20\,\mathrm{m/s}$ for 30 seconds, then decelerates at $1.5\,\m
 
 <details>
 <summary>Solution 9</summary>
-Phase 1: $s_1 = 20 \times 30 = 600\,\mathrm{m}$, $t_1 = 30\,\mathrm{s}$.
+Phase 1: $s_1 = 20 \times 30 = 600\,\mathrm{m}$$t_1 = 30\,\mathrm{s}$.
 
 Phase 2: $v = u + at \implies 0 = 20 - 1.5t \implies t = 40/3 \approx 13.33\,\mathrm{s}$.
 
 $s_2 = ut + \tfrac{1}{2}at^2 = 20(40/3) - \tfrac{1}{2}(1.5)(1600/9) = 800/3 - 400/3 = 400/3 \approx 133.3\,\mathrm{m}$.
 
-Total: $s = 600 + 133.3 = 733.3\,\mathrm{m}$, $t = 30 + 13.33 = 43.33\,\mathrm{s}$.
+Total: $s = 600 + 133.3 = 733.3\,\mathrm{m}$$t = 30 + 13.33 = 43.33\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -589,7 +589,7 @@ Separation: $45 - 20.19 = 24.81\,\mathrm{m}$.
 
 <details>
 <summary>Problem 12</summary>
-A projectile is launched from ground level and just clears a wall $20\,\mathrm{m}$ high and $40\,\mathrm{m}$ away. If the launch angle is $50^\circ$, find the minimum launch speed.
+A projectile is launched from ground level and just clears a wall $20\,\mathrm{m}$ high and $40\,\mathrm{m}$ away. If the launch angle is $50^\circ$Find the minimum launch speed.
 </details>
 
 <details>
@@ -609,17 +609,17 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\mat
 
 <details>
 <summary>Problem 13</summary>
-A particle moves with acceleration $a = 4 - 2t\,\mathrm{m/s}^2$. When $t = 0$, $v = 3\,\mathrm{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
+A particle moves with acceleration $a = 4 - 2t\,\mathrm{m/s}^2$. When $t = 0$$v = 3\,\mathrm{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
 </details>
 
 <details>
 <summary>Solution 13</summary>
-$v = \int (4 - 2t)\,dt = 4t - t^2 + C$. Since $v(0) = 3$: $C = 3$, so $v = 4t - t^2 + 3$.
+$v = \int (4 - 2t)\,dt = 4t - t^2 + C$. Since $v(0) = 3$: $C = 3$So $v = 4t - t^2 + 3$.
 
-$s = \int (4t - t^2 + 3)\,dt = 2t^2 - t^3/3 + 3t + K$. Since $s(0) = 0$: $K = 0$, so
+$s = \int (4t - t^2 + 3)\,dt = 2t^2 - t^3/3 + 3t + K$. Since $s(0) = 0$: $K = 0$So
 $s = 2t^2 - t^3/3 + 3t$.
 
-At $t = 5$: $v = 20 - 25 + 3 = -2\,\mathrm{m/s}$,
+At $t = 5$: $v = 20 - 25 + 3 = -2\,\mathrm{m/s}$
 $s = 50 - 125/3 + 15 = 65 - 41.67 = 23.33\,\mathrm{m}$.
 
 At rest:
@@ -638,7 +638,7 @@ A projectile is launched from the top of a cliff $60\,\mathrm{m}$ high at $20\,\
 
 <details>
 <summary>Solution 14</summary>
-Horizontal: $v_x = 20\,\mathrm{m/s}$ (constant). Vertical: $u_y = 0$, $a_y = 9.8$, $s_y = 60$ (downwards positive).
+Horizontal: $v_x = 20\,\mathrm{m/s}$ (constant). Vertical: $u_y = 0$$a_y = 9.8$$s_y = 60$ (downwards positive).
 
 $s_y = \tfrac{1}{2}gt^2 \implies 60 = 4.9t^2 \implies t = \sqrt{60/4.9} \approx 3.50\,\mathrm{s}$.
 
@@ -669,9 +669,9 @@ $2t^3 - 9t^2 + 12t - 5 = (t-1)(2t^2 - 7t + 5) = (t-1)(2t-5)(t-1) = (t-1)^2(2t-5)
 
 So $v = 0$ at $t = 1$ and $t = 2.5$.
 
-Check the sign of $v$: for $0 \lt{} t \lt{} 1$, test $t = 0.5$:
-$v = 0.25 - 2.25 + 6 - 5 = -1 \lt{} 0$. For $1 \lt{} t \lt{} 2.5$, test $t = 2$:
-$v = 16 - 36 + 24 - 5 = -1 \lt{} 0$. For $t \gt{} 2.5$, test $t = 3$:
+Check the sign of $v$: for $0 \lt{} t \lt{} 1$Test $t = 0.5$:
+$v = 0.25 - 2.25 + 6 - 5 = -1 \lt{} 0$. For $1 \lt{} t \lt{} 2.5$Test $t = 2$:
+$v = 16 - 36 + 24 - 5 = -1 \lt{} 0$. For $t \gt{} 2.5$Test $t = 3$:
 $v = 54 - 81 + 36 - 5 = 4 \gt{} 0$.
 
 So $v \lt{} 0$ for $0 \lt{} t \lt{} 2.5$ and $v \gt{} 0$ for $t \gt{} 2.5$.
@@ -696,7 +696,7 @@ A ball is thrown at $12\,\mathrm{m/s}$ at an angle of $60^\circ$ above the horiz
 
 <details>
 <summary>Solution 16</summary>
-$v_x = 12\cos 60° = 6\,\mathrm{m/s}$, $v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\mathrm{m/s}$.
+$v_x = 12\cos 60° = 6\,\mathrm{m/s}$$v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\mathrm{m/s}$.
 
 Taking upwards as positive with launch at $s_y = 2$:
 
@@ -719,7 +719,7 @@ Angle below horizontal: $\arctan(12.05/6) \approx 63.5^\circ$.
 
 <details>
 <summary>Problem 17</summary>
-A particle moves so that $a = -6s\,\mathrm{m/s}^2$, where $s$ is the displacement from a fixed point. When $s = 0$, $v = 8\,\mathrm{m/s}$. Find the velocity when $s = 1$.
+A particle moves so that $a = -6s\,\mathrm{m/s}^2$Where $s$ is the displacement from a fixed point. When $s = 0$$v = 8\,\mathrm{m/s}$. Find the velocity when $s = 1$.
 </details>
 
 <details>
@@ -732,7 +732,7 @@ $$\int v\,dv = \int -6s\,ds$$
 
 $$\frac{v^2}{2} = -3s^2 + C$$
 
-When $s = 0$, $v = 8$: $64/2 = C \implies C = 32$.
+When $s = 0$$v = 8$: $64/2 = C \implies C = 32$.
 
 $$\frac{v^2}{2} = -3s^2 + 32$$
 
@@ -740,7 +740,7 @@ When $s = 1$:
 $v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\mathrm{m/s}$.
 
 The particle is still moving in the positive direction ($v \gt{} 0$) since it has not yet reached
-the turning point where $v = 0$ (which occurs at $s^2 = 32/3$, i.e., $s \approx 3.27\,\mathrm{m}$).
+The turning point where $v = 0$ (which occurs at $s^2 = 32/3$I.e., $s \approx 3.27\,\mathrm{m}$).
 
 **If you get this wrong, revise:**
 [Acceleration in Terms of Displacement](#53-acceleration-in-terms-of-displacement-or-velocity) —
@@ -755,46 +755,46 @@ A particle $P$ is projected from a point $A$ on horizontal ground with speed $u$
 
 <details>
 <summary>Solution 18</summary>
-Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$, at time
+Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$$y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$At time
 $t_1 = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$.
 
-After $t_1$, $P$ is in free fall with $v_y = 0$ at $t_1$, so for $t \geq t_1$:
+After $t_1$$P$ is in free fall with $v_y = 0$ at $t_1$So for $t \geq t_1$:
 
 $y_P = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ - \dfrac{1}{2}g(t - t_1)^2$.
 
 $x_P = u\cos\theta \cdot t$.
 
 For collision, $Q$ must be at the same $(x, y)$. Since $Q$ is projected vertically from directly
-below the highest point, $Q$'s horizontal position is always $x = u^2\sin 2\theta / (2g)$.
+Below the highest point, $Q$'s horizontal position is always $x = u^2\sin 2\theta / (2g)$.
 
 For $P$ to be at this $x$-coordinate at time $t$:
-$u\cos\theta \cdot t = u^2\sin 2\theta / (2g) = u^2\sin\theta\cos\theta / g$, so
+$u\cos\theta \cdot t = u^2\sin 2\theta / (2g) = u^2\sin\theta\cos\theta / g$So
 $t = u\sin\theta / g = t_1$.
 
-This means collision occurs at $t = t_1$, the instant of the highest point. But $Q$ is projected at
-that instant, so for collision we need $y_Q(0^+) = y_P(t_1) = H$.
+This means collision occurs at $t = t_1$The instant of the highest point. But $Q$ is projected at
+That instant, so for collision we need $y_Q(0^+) = y_P(t_1) = H$.
 
 $Q$ starts at ground level ($y_Q = 0$) and must reach $y = H = u^2\sin^2\theta / (2g)$.
 
-For $Q$: $v_Q = w - gt$, $y_Q = wt - \tfrac{1}{2}gt^2$, where $w$ is the projection speed.
+For $Q$: $v_Q = w - gt$$y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
 
 Collision at $y = H$ when $t = 0$ is impossible ($Q$ starts at $y = 0$). So collision must occur at
-some $\Delta t \gt{} 0$ after $t_1$.
+Some $\Delta t \gt{} 0$ after $t_1$.
 
 At time $t_1 + \Delta t$:
 
-$y_P = H - \tfrac{1}{2}g(\Delta t)^2$, $y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
+$y_P = H - \tfrac{1}{2}g(\Delta t)^2$$y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
 
 For collision: $H = w\,\Delta t$. Also, $x$ must match:
 $u\cos\theta(t_1 + \Delta t) = u^2\sin\theta\cos\theta/g + u\cos\theta\,\Delta t$. This is satisfied
-for all $\Delta t$ since $u\cos\theta \cdot t_1 = u^2\sin\theta\cos\theta/g$.
+For all $\Delta t$ since $u\cos\theta \cdot t_1 = u^2\sin\theta\cos\theta/g$.
 
 So any $w$ and $\Delta t$ with $w\,\Delta t = H$ gives a collision. The minimum speed is
-$w = H/\Delta t$ for $\Delta t \to 0^+$, but in practice we need a finite time.
+$w = H/\Delta t$ for $\Delta t \to 0^+$But in practice we need a finite time.
 
-If we require collision at the highest point itself ($\Delta t \to 0$), then $w \to \infty$, which
-is unphysical. The problem states they collide at some time after projection. Since no further
-constraint is given, we take $w$ as a free parameter satisfying
+If we require collision at the highest point itself ($\Delta t \to 0$), then $w \to \infty$Which
+Is unphysical. The problem states they collide at some time after projection. Since no further
+Constraint is given, we take $w$ as a free parameter satisfying
 $w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt{} 0$.
 
 **If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
@@ -809,10 +809,22 @@ $w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt{} 0$.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-kinematics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

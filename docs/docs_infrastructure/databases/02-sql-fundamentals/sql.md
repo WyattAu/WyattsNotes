@@ -14,7 +14,7 @@ categories:
 SQL is defined by ANSI/ISO standards (SQL-86, SQL-89, SQL-92, SQL:1999, SQL:2003, SQL:2006,
 SQL:2008, SQL:2011, SQL:2016, SQL:2019, SQL:2023). No database implements the full standard.
 PostgreSQL has the broadest standards compliance among open-source databases. MySQL diverges
-significantly. SQLite implements a large subset but omits many features (e.g., RIGHT JOIN, FULL
+Significantly. SQLite implements a large subset but omits many features (e.g., RIGHT JOIN, FULL
 OUTER JOIN were added in 3.39.0, 2022).
 
 When this document specifies behaviour, it defaults to PostgreSQL syntax unless otherwise noted.
@@ -43,7 +43,7 @@ CREATE TABLE employees (
 Key elements:
 
 - `SERIAL` (PostgreSQL) / `AUTO_INCREMENT` (MySQL) / `INTEGER PRIMARY KEY` (SQLite) for
-  auto-generating keys
+ auto-generating keys
 - `NOT NULL` -- the column must have a value
 - `UNIQUE` -- no two rows can have the same value in this column
 - `CHECK` -- an arbitrary boolean expression evaluated on insert/update
@@ -52,26 +52,26 @@ Key elements:
 
 ### Column Data Types
 
-| Type Category   | PostgreSQL Types                           | Notes                                                                           |
+| Type Category | PostgreSQL Types | Notes |
 | --------------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
-| Integers        | `SMALLINT`, `INTEGER`, `BIGINT`            | `INTEGER` is 4 bytes, `BIGINT` is 8 bytes                                       |
-| Fixed precision | `NUMERIC(p,s)`, `DECIMAL(p,s)`             | Exact arithmetic; `NUMERIC(10,2)` holds up to 99,999,999.99                     |
-| Floating point  | `REAL`, `DOUBLE PRECISION`                 | Inexact; avoid for financial data                                               |
-| Variable string | `VARCHAR(n)`, `TEXT`                       | `VARCHAR` with length is a constraint, not a storage optimisation in PostgreSQL |
-| Fixed string    | `CHAR(n)`                                  | Padded with spaces; rarely useful                                               |
-| Boolean         | `BOOLEAN`                                  | `TRUE`, `FALSE`, `NULL`                                                         |
-| Date/Time       | `DATE`, `TIME`, `TIMESTAMP`, `TIMESTAMPTZ` | `TIMESTAMPTZ` stores UTC; always prefer it over `TIMESTAMP`                     |
-| Binary          | `BYTEA`                                    | Variable-length binary data                                                     |
-| JSON            | `JSON`, `JSONB`                            | `JSONB` is stored in decomposed binary form; faster to query                    |
-| UUID            | `UUID`                                     | Requires the `uuid-ossp` or `pgcrypto` extension                                |
-| Array           | `INTEGER[]`, `TEXT[]`                      | PostgreSQL-specific extension                                                   |
-| Network         | `INET`, `CIDR`, `MACADDR`                  | PostgreSQL-specific; enforces valid IP/MAC formats                              |
+| Integers | `SMALLINT``INTEGER``BIGINT` | `INTEGER` is 4 bytes, `BIGINT` is 8 bytes |
+| Fixed precision | `NUMERIC(p,s)``DECIMAL(p,s)` | Exact arithmetic; `NUMERIC(10,2)` holds up to 99,999,999.99 |
+| Floating point | `REAL``DOUBLE PRECISION` | Inexact; avoid for financial data |
+| Variable string | `VARCHAR(n)``TEXT` | `VARCHAR` with length is a constraint, not a storage optimisation in PostgreSQL |
+| Fixed string | `CHAR(n)` | Padded with spaces; rarely useful |
+| Boolean | `BOOLEAN` | `TRUE``FALSE``NULL` |
+| Date/Time | `DATE``TIME``TIMESTAMP``TIMESTAMPTZ` | `TIMESTAMPTZ` stores UTC; always prefer it over `TIMESTAMP` |
+| Binary | `BYTEA` | Variable-length binary data |
+| JSON | `JSON``JSONB` | `JSONB` is stored in decomposed binary form; faster to query |
+| UUID | `UUID` | Requires the `uuid-ossp` or `pgcrypto` extension |
+| Array | `INTEGER[]``TEXT[]` | PostgreSQL-specific extension |
+| Network | `INET``CIDR``MACADDR` | PostgreSQL-specific; enforces valid IP/MAC formats |
 
 :::tip
 
 Always use `TIMESTAMPTZ` instead of `TIMESTAMP`. `TIMESTAMP` does not store timezone information, so
-you lose the context of when the event actually occurred. `TIMESTAMPTZ` converts to UTC on storage
-and back to the session timezone on retrieval.
+You lose the context of when the event actually occurred. `TIMESTAMPTZ` converts to UTC on storage
+And back to the session timezone on retrieval.
 
 :::
 
@@ -100,8 +100,8 @@ ALTER TABLE employees DROP CONSTRAINT chk_salary_range;
 :::warning
 
 `ALTER TABLE` acquires an `ACCESS EXCLUSIVE` lock in PostgreSQL, which blocks all reads and writes
-to the table for the duration of the operation. On large tables, adding a column with a default
-value or changing a column type can take hours. Use `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL`
+To the table for the duration of the operation. On large tables, adding a column with a default
+Value or changing a column type can take hours. Use `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL`
 (which is metadata-only in PostgreSQL 11+) or pg_partman for zero-downtime migrations.
 
 :::
@@ -179,8 +179,8 @@ WHERE e.emp_id = 42;
 :::warning
 
 An `UPDATE` without a `WHERE` clause modifies every row in the table. Always run a `SELECT` with the
-same `WHERE` clause first to verify which rows will be affected. Consider wrapping destructive
-updates in a transaction with a `SAVEPOINT` so you can roll back if the results are wrong.
+Same `WHERE` clause first to verify which rows will be affected. Consider wrapping destructive
+Updates in a transaction with a `SAVEPOINT` so you can roll back if the results are wrong.
 
 :::
 
@@ -280,8 +280,8 @@ WHERE (salary > 100000 OR department_id = 1) AND hire_date >= '2022-01-01'
 
 `NULL` comparisons behave unexpectedly. `NULL = NULL` evaluates to `NULL` (not `TRUE`), so
 `WHERE column = NULL` never matches any rows. Use `IS NULL` and `IS NOT NULL`. Similarly,
-`NULL AND TRUE` is `NULL`, `NULL OR FALSE` is `NULL`, and `NOT NULL` is `NULL`. This three-valued
-logic is the single greatest source of SQL bugs.
+`NULL AND TRUE` is `NULL``NULL OR FALSE` is `NULL`And `NOT NULL` is `NULL`. This three-valued
+Logic is the single greatest source of SQL bugs.
 
 :::
 
@@ -313,8 +313,8 @@ LIMIT 20;
 :::tip
 
 `OFFSET` requires the database to scan and discard `OFFSET` rows before returning results. For large
-offsets (e.g., `OFFSET 100000`), this is slow because the database still processes 100,000 rows. Use
-keyset pagination (also called seek pagination) instead:
+Offsets (e.g., `OFFSET 100000`), this is slow because the database still processes 100,000 rows. Use
+Keyset pagination (also called seek pagination) instead:
 `WHERE id &gt; last_seen_id ORDER BY id LIMIT 20`.
 
 :::
@@ -377,7 +377,7 @@ CROSS JOIN skills s;
 
 ### SELF JOIN
 
-A table joined to itself, typically for hierarchical data (employee-manager, bill-of-materials).
+A table joined to itself, for hierarchical data (employee-manager, bill-of-materials).
 
 ```sql
 SELECT e.first_name AS employee, m.first_name AS manager
@@ -431,7 +431,7 @@ WHERE e.salary > (
 :::warning
 
 Correlated subqueries execute the inner query once for each row in the outer query. For large
-tables, this is $O(n)$ subquery executions. Rewrite as a join or a window function when possible:
+Tables, this is $O(n)$ subquery executions. Rewrite as a join or a window function when possible:
 
 ```sql
 -- Equivalent join (usually faster):
@@ -449,7 +449,7 @@ WHERE e.salary > d.avg_salary;
 
 ### EXISTS and NOT EXISTS
 
-Tests whether a subquery returns any rows. Typically the most efficient form of subquery.
+Tests whether a subquery returns any rows. The most efficient form of subquery.
 
 ```sql
 -- Customers who have placed at least one order:
@@ -486,7 +486,7 @@ WHERE department_id NOT IN (SELECT dept_id FROM departments);
 :::warning
 
 `NOT IN` with a subquery that can return NULL yields zero rows, because `x NOT IN (1, 2, NULL)`
-evaluates to `x != 1 AND x != 2 AND x != NULL`, and `x != NULL` is `NULL` (not `TRUE`). Always use
+Evaluates to `x != 1 AND x != 2 AND x != NULL`And `x != NULL` is `NULL` (not `TRUE`). Always use
 `NOT EXISTS` instead of `NOT IN` when the subquery might return NULL values.
 
 :::
@@ -506,7 +506,7 @@ WHERE salary > ALL (SELECT salary FROM employees WHERE department_id = 5);
 ## Set Operations
 
 Combine the results of two or more queries. All queries must have the same number of columns and
-compatible data types.
+Compatible data types.
 
 ```sql
 UNION (removes duplicates):
@@ -547,7 +547,7 @@ MAX(column)       -- maximum non-NULL value
 :::info
 
 `AVG(salary)` excludes rows where `salary IS NULL` from both the sum and the count. If you need to
-treat NULL as zero, use `AVG(COALESCE(salary, 0))`, but understand that this changes the semantics:
+Treat NULL as zero, use `AVG(COALESCE(salary, 0))`But understand that this changes the semantics:
 NULL means "unknown," not "zero."
 
 :::
@@ -562,8 +562,8 @@ ORDER BY avg_salary DESC;
 ```
 
 Every column in the `SELECT` list must either appear in the `GROUP BY` clause or be wrapped in an
-aggregate function. PostgreSQL is strict about this; MySQL (with `ONLY_FULL_GROUP_BY` disabled)
-allows ambiguous queries.
+Aggregate function. PostgreSQL is strict about this; MySQL (with `ONLY_FULL_GROUP_BY` disabled)
+Allows ambiguous queries.
 
 ### HAVING
 
@@ -608,8 +608,8 @@ GROUP BY CUBE (region, channel, product_line);
 ## Window Functions
 
 Window functions perform a calculation across a set of table rows related to the current row. Unlike
-aggregate functions with `GROUP BY`, they do not collapse rows -- every input row produces an output
-row.
+Aggregate functions with `GROUP BY`They do not collapse rows -- every input row produces an output
+Row.
 
 ### Syntax
 
@@ -633,11 +633,11 @@ FROM employees;
 
 | salary | ROW_NUMBER | RANK | DENSE_RANK |
 | ------ | ---------- | ---- | ---------- |
-| 150000 | 1          | 1    | 1          |
-| 150000 | 2          | 1    | 1          |
-| 140000 | 3          | 3    | 2          |
-| 140000 | 4          | 3    | 2          |
-| 130000 | 5          | 5    | 3          |
+| 150000 | 1 | 1 | 1 |
+| 150000 | 2 | 1 | 1 |
+| 140000 | 3 | 3 | 2 |
+| 140000 | 4 | 3 | 2 |
+| 130000 | 5 | 5 | 3 |
 
 - `ROW_NUMBER`: assigns a unique sequential integer to each row within the partition
 - `RANK`: ties get the same rank; next rank skips (1, 1, 3, 3, 5)
@@ -686,16 +686,16 @@ FROM employees;
 :::warning
 
 The default frame clause for aggregate window functions with `ORDER BY` is
-`RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`, which includes all peers (rows with the same
+`RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`Which includes all peers (rows with the same
 ORDER BY value). This means `SUM(amount) OVER (ORDER BY date)` gives a running total that includes
-all rows with the same date. Use `ROWS` instead of `RANGE` if you want strict positional framing.
+All rows with the same date. Use `ROWS` instead of `RANGE` if you want strict positional framing.
 
 :::
 
 ## Common Table Expressions (CTEs)
 
 CTEs (the `WITH` clause) create named temporary result sets that exist for the duration of a single
-query. They improve readability and enable recursive queries.
+Query. They improve readability and enable recursive queries.
 
 ### Non-Recursive CTEs
 
@@ -734,7 +734,7 @@ SELECT * FROM archived;
 ### Recursive CTEs
 
 Recursive CTEs solve problems involving hierarchical or graph-like data: org charts,
-bill-of-materials, thread/comment trees, path finding.
+Bill-of-materials, thread/comment trees, path finding.
 
 ```sql
 -- Find all employees in the hierarchy under employee 42 (direct and indirect reports):
@@ -766,9 +766,9 @@ graph TD
 :::warning
 
 Recursive CTEs without a termination condition loop infinitely (until the database kills the query
-or the process runs out of memory). Always include a depth counter or a visited set. MySQL limits
-recursion depth to 100 by default (`cte_max_recursion_depth`). PostgreSQL has no recursion depth
-limit, so an unbounded recursive CTE will run until it OOMs.
+Or the process runs out of memory). Always include a depth counter or a visited set. MySQL limits
+Recursion depth to 100 by default (`cte_max_recursion_depth`). PostgreSQL has no recursion depth
+Limit, so an unbounded recursive CTE will run until it OOMs.
 
 :::
 
@@ -797,7 +797,7 @@ FROM employees;
 ```
 
 CASE is an expression, not a statement. It returns a value and can be used anywhere an expression is
-valid: in SELECT, WHERE, ORDER BY, and even inside other CASE expressions.
+Valid: in SELECT, WHERE, ORDER BY, and even inside other CASE expressions.
 
 ```sql
 -- CASE in ORDER BY for custom sorting:
@@ -838,7 +838,7 @@ WHERE commission_rate IS DISTINCT FROM 0;
 :::tip
 
 Use `COALESCE` to provide defaults for NULL values in application queries. Use `NULLIF` to prevent
-division-by-zero errors: `ratio = a / NULLIF(b, 0)` returns NULL instead of raising an error when
+Division-by-zero errors: `ratio = a / NULLIF(b, 0)` returns NULL instead of raising an error when
 `b` is zero.
 
 :::
@@ -848,37 +848,37 @@ division-by-zero errors: `ratio = a / NULLIF(b, 0)` returns NULL instead of rais
 ### Off-by-One Errors with BETWEEN
 
 `BETWEEN` is inclusive on both ends: `WHERE date BETWEEN '2024-01-01' AND '2024-01-31'` includes
-both endpoints. If `date` is a `TIMESTAMPTZ`, `BETWEEN '2024-01-01' AND '2024-01-31'` actually means
-up to `2024-01-31 00:00:00`, excluding all timestamps on January 31st after midnight. Use
+Both endpoints. If `date` is a `TIMESTAMPTZ``BETWEEN '2024-01-01' AND '2024-01-31'` actually means
+Up to `2024-01-31 00:00:00`Excluding all timestamps on January 31st after midnight. Use
 `WHERE date >= '2024-01-01' AND date &lt; '2024-02-01'` for date-range comparisons with timestamps.
 
 ### Assuming ORDER BY Without Explicit ORDER BY
 
 SQL tables and result sets have no guaranteed ordering unless you specify `ORDER BY`. A query
-without `ORDER BY` may return rows in any order, and that order may change between executions, after
-an `ANALYZE`, or after a version upgrade.
+Without `ORDER BY` may return rows in any order, and that order may change between executions, after
+An `ANALYZE`Or after a version upgrade.
 
 ### Using DISTINCT as a Substitute for Proper Joins
 
 `SELECT DISTINCT` to remove duplicates caused by an incorrect join is a performance anti-pattern. If
-your join produces duplicates, the join condition or the schema is wrong. Fix the root cause.
+Your join produces duplicates, the join condition or the schema is wrong. Fix the root cause.
 
 ### Forgetting That COUNT(column) Skips NULLs
 
 `COUNT(*)` counts rows. `COUNT(column)` counts non-NULL values. `COUNT(DISTINCT column)` counts
-unique non-NULL values. Confusing these produces incorrect results, especially in reports and
-dashboards.
+Unique non-NULL values. Confusing these produces incorrect results, especially in reports and
+Dashboards.
 
 ### Implicit Type Coercion
 
 PostgreSQL is strict about types: `WHERE id = '42'` works (string is cast to integer) but
 `WHERE name = 42` raises an error. MySQL silently coerces: `WHERE 'abc' = 0` evaluates to `TRUE`
-because the string is cast to zero. Always match types explicitly.
+Because the string is cast to zero. Always match types explicitly.
 
 ### Not Using Parameterised Queries
 
 String-concatenating values into SQL queries creates SQL injection vulnerabilities and prevents
-query plan caching. Always use parameterised queries (prepared statements) in application code:
+Query plan caching. Always use parameterised queries (prepared statements) in application code:
 
 ```text
 -- WRONG:
@@ -887,3 +887,11 @@ query plan caching. Always use parameterised queries (prepared statements) in ap
 -- CORRECT:
 "SELECT * FROM users WHERE email = $1", [user_input]
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

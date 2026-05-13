@@ -7,7 +7,7 @@ slug: concurrency-primitives
 ## threading Module
 
 The `threading` module provides low-level thread primitives. Python threads are OS-level threads
-managed by the platform's native threading implementation (pthreads on Linux, Windows threads on
+Managed by the platform's native threading implementation (pthreads on Linux, Windows threads on
 Windows).
 
 ### Creating Threads
@@ -83,7 +83,7 @@ r.join()  # Wait for regular thread
 
 :::warning
 Daemon threads are abruptly terminated when the main thread exits. They may not release
-locks, close files, or flush buffers. Use them only for non-critical background tasks.
+Locks, close files, or flush buffers. Use them only for non-critical background tasks.
 :::
 
 ## Lock and RLock
@@ -116,7 +116,7 @@ print(f"Counter: {counter}")  # Counter: 200000
 ```
 
 Without the lock, `counter += 1` is not atomic — it involves reading, incrementing, and writing,
-which can be interleaved between threads.
+Which can be interleaved between threads.
 
 ### RLock (Reentrant Lock)
 
@@ -137,16 +137,16 @@ def inner():
 outer()  # Works fine — RLock allows same thread to re-acquire
 ```
 
-| Feature               | `Lock`         | `RLock`                  |
+| Feature | `Lock` | `RLock` |
 | --------------------- | -------------- | ------------------------ |
-| Reentrant             | No (deadlocks) | Yes                      |
-| Release by any thread | Yes            | No (must be same thread) |
-| `acquire()` counting  | No             | Yes                      |
-| Overhead              | Lower          | Slightly higher          |
+| Reentrant | No (deadlocks) | Yes |
+| Release by any thread | Yes | No (must be same thread) |
+| `acquire()` counting | No | Yes |
+| Overhead | Lower | Slightly higher |
 
 :::warning
-With `Lock`, if the same thread tries to acquire it twice, it deadlocks. With `RLock`,
-the thread must call `release()` the same number of times it called `acquire()`.
+With `Lock`If the same thread tries to acquire it twice, it deadlocks. With `RLock`
+The thread must call `release()` the same number of times it called `acquire()`.
 :::
 
 ## Semaphore, Event, Condition, Barrier
@@ -285,7 +285,7 @@ if __name__ == "__main__":
 
 :::warning
 On Linux/macOS, `multiprocessing` uses `fork()` by default, which copies the entire
-parent process memory (copy-on-write). On Windows, it uses `spawn()`, which re-imports the module.
+Parent process memory (copy-on-write). On Windows, it uses `spawn()`Which re-imports the module.
 Always protect entry points with `if __name__ == "__main__"` to avoid infinite recursion on Windows.
 :::
 
@@ -395,13 +395,13 @@ if __name__ == "__main__":
 
 :::info
 `multiprocessing.Pipe()` creates a pair of connection objects. It supports duplex
-communication by default. For one-way communication, use `duplex=False`.
+Communication by default. For one-way communication, use `duplex=False`.
 :::
 
 ## concurrent.futures
 
 `concurrent.futures` provides a high-level interface for asynchronously executing callables using
-threads or processes.
+Threads or processes.
 
 ### ThreadPoolExecutor
 
@@ -547,20 +547,20 @@ print(pq.get())  # (3, 'low priority')
 
 :::info
 `PriorityQueue` orders items by the first element of the tuple. If the first elements are
-equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`.
+Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`.
 :::
 
 ## GIL Impact Analysis
 
 The Global Interpreter Lock (GIL) is a mutex that protects access to Python objects, preventing
-multiple native threads from executing Python bytecodes simultaneously.
+Multiple native threads from executing Python bytecodes simultaneously.
 
 ### CPU-Bound vs I/O-Bound
 
-| Workload  | Threading                         | Multiprocessing                   |
+| Workload | Threading | Multiprocessing |
 | --------- | --------------------------------- | --------------------------------- |
-| CPU-bound | No speedup (GIL bottleneck)       | Linear speedup (up to core count) |
-| I/O-bound | Speedup (GIL released during I/O) | Overkill (higher overhead)        |
+| CPU-bound | No speedup (GIL bottleneck) | Linear speedup (up to core count) |
+| I/O-bound | Speedup (GIL released during I/O) | Overkill (higher overhead) |
 
 ```python
 import threading
@@ -907,3 +907,11 @@ for t in threads: t.join()
 ```
 
 Use a `threading.Lock()` around `print()` calls or use the `logging` module which is thread-safe.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

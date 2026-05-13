@@ -7,35 +7,35 @@ slug: arrays-and-strings
 ## Array Fundamentals
 
 An array is a contiguous block of memory where each element occupies a fixed number of bytes and is
-indexed by an integer offset from the base address. This is the simplest and most cache-efficient
-data structure available. On modern hardware, accessing element $i$ of an array `arr` compiles to a
-single instruction: load from `base + i * element_size`.
+Indexed by an integer offset from the base address. This is the simplest and most cache-efficient
+Data structure available. On modern hardware, accessing element $i$ of an array `arr` compiles to a
+Single instruction: load from `base + i * element_size`.
 
 ### Memory Layout and Cache Behaviour
 
-Arrays have excellent spatial locality: accessing `arr[i]` loads the entire cache line (typically 64
-bytes) into L1 cache, so accessing `arr[i+1]`, `arr[i+2]`, etc. hits cache. This is why a linear
-scan through an array is typically 10-100x faster than following pointers through a linked list,
-even though both are $O(n)$ in theory.
+Arrays have excellent spatial locality: accessing `arr[i]` loads the entire cache line ( 64
+Bytes) into L1 cache, so accessing `arr[i+1]``arr[i+2]`Etc. Hits cache. This is why a linear
+Scan through an array is 10-100x faster than following pointers through a linked list,
+Even though both are $O(n)$ in theory.
 
-| Property         | Array                       | Linked List              |
+| Property | Array | Linked List |
 | ---------------- | --------------------------- | ------------------------ |
-| Access by index  | $O(1)$                      | $O(n)$                   |
-| Insert at front  | $O(n)$                      | $O(1)$                   |
-| Insert at back   | $O(1)$ amortised            | $O(1)$ with tail pointer |
-| Insert in middle | $O(n)$                      | $O(1)$ with pointer      |
-| Cache behaviour  | Excellent (contiguous)      | Poor (pointer chasing)   |
-| Memory overhead  | None (or small for dynamic) | One pointer per element  |
+| Access by index | $O(1)$ | $O(n)$ |
+| Insert at front | $O(n)$ | $O(1)$ |
+| Insert at back | $O(1)$ amortised | $O(1)$ with tail pointer |
+| Insert in middle | $O(n)$ | $O(1)$ with pointer |
+| Cache behaviour | Excellent (contiguous) | Poor (pointer chasing) |
+| Memory overhead | None (or small for dynamic) | One pointer per element |
 
 ### Dynamic Arrays
 
-Dynamic arrays (Python `list`, C++ `std::vector`, Java `ArrayList`) automatically resize when full.
+Dynamic arrays (Python `list`C++ `std::vector`Java `ArrayList`) automatically resize when full.
 The standard strategy is geometric growth: when capacity is exhausted, allocate a new array of
-capacity $c \cdot m$ (where $c$ is the growth factor, typically 2) and copy all elements.
+Capacity $c \cdot m$ (where $c$ is the growth factor, 2) and copy all elements.
 
 - **Growth factor of 2**: amortised $O(1)$ per append, but memory usage can be up to $2n$
 - **Growth factor of 1.5**: amortised $O(1)$ per append, and the old array can sometimes be reused
-  (for memory allocators that support in-place resizing)
+ (for memory allocators that support in-place resizing)
 
 ```python
 class DynamicArray:
@@ -72,8 +72,8 @@ class DynamicArray:
 :::warning
 
 Python `list` uses a growth factor of approximately 1.125 (9/8) plus some overallocation. This is
-more conservative than the textbook factor of 2, trading slightly more frequent reallocations for
-lower peak memory usage. C++ `std::vector` typically uses factor 2.
+More conservative than the textbook factor of 2, trading slightly more frequent reallocations for
+Lower peak memory usage. C++ `std::vector` uses factor 2.
 
 :::
 
@@ -82,47 +82,47 @@ lower peak memory usage. C++ `std::vector` typically uses factor 2.
 ### ASCII and Unicode
 
 ASCII encodes 128 characters in 7 bits (0-127). Extended ASCII uses 8 bits (0-255) but is not
-standardised. Unicode defines a unique code point for every character in every script, currently
-numbering over 149,000 characters across code points 0x0000 to 0x10FFFF.
+Standardised. Unicode defines a unique code point for every character in every script, currently
+Numbering over 149,000 characters across code points 0x0000 to 0x10FFFF.
 
 ### UTF-8 Encoding
 
 UTF-8 is a variable-width encoding of Unicode:
 
-| Code Point Range    | Byte Pattern | Binary Representation                 |
+| Code Point Range | Byte Pattern | Binary Representation |
 | ------------------- | ------------ | ------------------------------------- |
-| U+0000 to U+007F    | 1 byte       | `0xxxxxxx`                            |
-| U+0080 to U+07FF    | 2 bytes      | `110xxxxx 10xxxxxx`                   |
-| U+0800 to U+FFFF    | 3 bytes      | `1110xxxx 10xxxxxx 10xxxxxx`          |
-| U+10000 to U+10FFFF | 4 bytes      | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` |
+| U+0000 to U+007F | 1 byte | `0xxxxxxx` |
+| U+0080 to U+07FF | 2 bytes | `110xxxxx 10xxxxxx` |
+| U+0800 to U+FFFF | 3 bytes | `1110xxxx 10xxxxxx 10xxxxxx` |
+| U+10000 to U+10FFFF | 4 bytes | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` |
 
 Key properties of UTF-8:
 
 - **ASCII compatible**: the first 128 characters are identical to ASCII
 - **Self-synchronising**: you can start decoding from any byte boundary (if you land on a
-  continuation byte, skip backwards until you find a leading byte)
+ continuation byte, skip backwards until you find a leading byte)
 - **Prefix-free**: no valid UTF-8 sequence is a prefix of another valid sequence
 
 This matters for algorithms: iterating over a UTF-8 string by code point is $O(n)$ in bytes, but
-finding the $k$-th code point is $O(k)$ unless you build an index. In Python, strings are sequences
-of Unicode code points (so `len(s)` gives the number of code points), but the underlying storage is
+Finding the $k$-th code point is $O(k)$ unless you build an index. In Python, strings are sequences
+Of Unicode code points (so `len(s)` gives the number of code points), but the underlying storage is
 UTF-8 (in CPython 3.3+, PEP 393).
 
 ### String Complexity
 
-| Operation        | Python `str`        | C `char[]`             | Notes                     |
+| Operation | Python `str` | C `char[]` | Notes |
 | ---------------- | ------------------- | ---------------------- | ------------------------- |
-| Length           | $O(1)$              | $O(n)$ (with `strlen`) | Python stores length      |
-| Access by index  | $O(1)$              | $O(1)$                 | Code point, not byte      |
-| Concatenation    | $O(n+m)$            | $O(n+m)$               | Python creates new object |
-| Substring        | $O(k)$              | $O(k)$                 | $k$ = length of substring |
-| Split            | $O(n)$              | $O(n)$                 | Scans entire string       |
-| Find (substring) | $O(nm)$ to $O(n+m)$ | $O(nm)$ to $O(n+m)$    | Depends on algorithm      |
+| Length | $O(1)$ | $O(n)$ (with `strlen`) | Python stores length |
+| Access by index | $O(1)$ | $O(1)$ | Code point, not byte |
+| Concatenation | $O(n+m)$ | $O(n+m)$ | Python creates new object |
+| Substring | $O(k)$ | $O(k)$ | $k$ = length of substring |
+| Split | $O(n)$ | $O(n)$ | Scans entire string |
+| Find (substring) | $O(nm)$ to $O(n+m)$ | $O(nm)$ to $O(n+m)$ | Depends on algorithm |
 
 ## Two-Pointer Technique
 
 The two-pointer technique uses two indices that move through the array (or string) in a coordinated
-way. It is one of the most frequently used patterns in array problems.
+Way. It is one of the most frequently used patterns in array problems.
 
 ### Pattern 1: Opposite Ends (Sorted Array)
 
@@ -193,8 +193,8 @@ def is_palindrome(s):
 ## Sliding Window
 
 The sliding window technique maintains a contiguous subarray (window) that expands or contracts as
-it moves through the array. It is applicable when you need to find a subarray satisfying some
-constraint.
+It moves through the array. It is applicable when you need to find a subarray satisfying some
+Constraint.
 
 ### Fixed-Size Window
 
@@ -256,15 +256,15 @@ def longest_substring_without_repeats(s):
 :::info
 
 The key insight for sliding window is that the window boundary only moves forward — neither `left`
-nor `right` ever moves backward. This is what gives the $O(n)$ time bound: each element is added to
-and removed from the window at most once.
+Nor `right` ever moves backward. This is what gives the $O(n)$ time bound: each element is added to
+And removed from the window at most once.
 
 :::
 
 ## Prefix Sums
 
 A prefix sum array `prefix[i]` stores the sum of the first `i` elements of the original array. This
-precomputation enables $O(1)$ range sum queries.
+Precomputation enables $O(1)$ range sum queries.
 
 ### 1D Prefix Sums
 
@@ -325,7 +325,7 @@ class PrefixSum2D:
 ### Difference Arrays
 
 The inverse of prefix sums: a difference array `diff[i] = arr[i] - arr[i-1]` allows $O(1)$ range
-addition and $O(n)$ reconstruction.
+Addition and $O(n)$ reconstruction.
 
 ```python
 class DifferenceArray:
@@ -355,16 +355,16 @@ class DifferenceArray:
 ### Hash Maps and Hash Sets
 
 A hash map (dictionary, associative array) maps keys to values with average $O(1)$ insertion,
-lookup, and deletion. A hash set is a hash map without values, used for membership testing.
+Lookup, and deletion. A hash set is a hash map without values, used for membership testing.
 
 The core idea: compute `hash(key) % bucket_count` to determine which bucket stores the key.
 Collisions are inevitable (by the pigeonhole principle when there are more possible keys than
-buckets).
+Buckets).
 
 ### Collision Resolution
 
 **Separate chaining:** Each bucket is a linked list (or dynamic array). When a collision occurs, the
-new element is appended to the list.
+New element is appended to the list.
 
 ```python
 class HashMapChaining:
@@ -411,17 +411,17 @@ class HashMapChaining:
 ```
 
 **Open addressing:** All elements are stored in the array itself. When a collision occurs, probe for
-the next empty slot using a deterministic sequence.
+The next empty slot using a deterministic sequence.
 
-| Strategy          | Probe Sequence                          | Clustering           |
+| Strategy | Probe Sequence | Clustering |
 | ----------------- | --------------------------------------- | -------------------- |
-| Linear probing    | $h(k), h(k)+1, h(k)+2, \ldots$          | Primary clustering   |
-| Quadratic probing | $h(k), h(k)+1^2, h(k)+2^2, \ldots$      | Secondary clustering |
-| Double hashing    | $h(k), h(k)+h'(k), h(k)+2h'(k), \ldots$ | No clustering        |
+| Linear probing | $h(k), h(k)+1, h(k)+2, \ldots$ | Primary clustering |
+| Quadratic probing | $h(k), h(k)+1^2, h(k)+2^2, \ldots$ | Secondary clustering |
+| Double hashing | $h(k), h(k)+h'(k), h(k)+2h'(k), \ldots$ | No clustering |
 
 **Robin Hood hashing:** A variant of open addressing where elements with shorter probe distances are
-favoured. When inserting, if the new element has a longer probe distance than the existing element,
-swap them. This minimises the variance of probe lengths, giving more consistent performance.
+Favoured. When inserting, if the new element has a longer probe distance than the existing element,
+Swap them. This minimises the variance of probe lengths, giving more consistent performance.
 
 ### Hash Function Design
 
@@ -448,7 +448,7 @@ def murmurhash3_mix(key: int) -> int:
 :::warning
 
 Python's built-in `hash()` is not deterministic across process invocations (Python 3.3+ enables hash
-randomisation by default via `PYTHONHASHSEED`). This is a security measure against HashDoS attacks.
+Randomisation by default via `PYTHONHASHSEED`). This is a security measure against HashDoS attacks.
 For persistent hashing (e.g., on-disk hash tables), use `hashlib` or a deterministic hash function.
 
 :::
@@ -519,13 +519,13 @@ def rabin_karp(text, pattern, base=256, mod=10**9 + 7):
 ```
 
 **Complexity:** $O(n+m)$ average case, $O(nm)$ worst case (all positions are hash matches requiring
-verification). Using two independent hash functions reduces the probability of false positives to
-negligible levels.
+Verification). Using two independent hash functions reduces the probability of false positives to
+Negligible levels.
 
 ### Knuth-Morris-Pratt (KMP) Algorithm
 
 KMP preprocesses the pattern to build a "failure function" (also called the LPS array — longest
-proper prefix which is also suffix) that allows the algorithm to skip redundant comparisons.
+Proper prefix which is also suffix) that allows the algorithm to skip redundant comparisons.
 
 ```python
 def build_lps(pattern):
@@ -727,7 +727,7 @@ def diagonal_traverse(matrix):
 ### Dutch National Flag
 
 Partition an array into three sections (e.g., values less than, equal to, and greater than a pivot)
-in a single pass.
+In a single pass.
 
 ```python
 def dutch_national_flag(arr, pivot_idx):
@@ -835,44 +835,52 @@ def majority_element(arr):
 ### 1. Off-by-One Errors in Window Problems
 
 Sliding window problems are rife with off-by-one errors. The most common: confusing "exclusive upper
-bound" with "inclusive upper bound." Decide on a convention (Python-style `[left, right)` is
-recommended) and stick to it consistently. The number of elements in the window is always
-`right - left`, never `right - left + 1`.
+Bound" with "inclusive upper bound." Decide on a convention (Python-style `[left, right)` is
+Recommended) and stick to it consistently. The number of elements in the window is always
+`right - left`Never `right - left + 1`.
 
 ### 2. Integer Overflow in Rolling Hashes
 
 Rabin-Karp's rolling hash computation involves multiplication and addition that can overflow 64-bit
-integers for large inputs. Always use modular arithmetic with a large prime modulus (or use Python's
-arbitrary-precision integers, which do not overflow). For production use, consider using two
-independent hash functions to reduce collision probability.
+Integers for large inputs. Always use modular arithmetic with a large prime modulus (or use Python's
+Arbitrary-precision integers, which do not overflow). For production use, consider using two
+Independent hash functions to reduce collision probability.
 
 ### 3. Forgetting Edge Cases in Two-Pointer Problems
 
 Empty arrays, single-element arrays, arrays with all identical elements, and arrays where no valid
-pair exists are all edge cases that two-pointer solutions must handle. Test your solution with `[]`,
-`[1]`, `[1, 1, 1, 1]`, and a case where no solution exists.
+Pair exists are all edge cases that two-pointer solutions must handle. Test your solution with `[]`
+`[1]``[1, 1, 1, 1]`And a case where no solution exists.
 
 ### 4. Treating Strings as Arrays of Bytes
 
 In a world of UTF-8, string indexing does not give you bytes — it gives you code points. Reversing a
 UTF-8 string by swapping bytes produces invalid UTF-8. Reversing by code points is safe but does not
-handle grapheme clusters (e.g., the emoji flags sequence). Use language-appropriate string reversal.
+Handle grapheme clusters (e.g., the emoji flags sequence). Use language-appropriate string reversal.
 
 ### 5. Hash Map Key Mutability
 
 If you use a mutable object as a hash map key and then mutate it, the object's hash changes and you
-can no longer find it in the map. In Python, this manifests as a `dict` key becoming invisible after
-mutation. Always use immutable types (tuples, frozensets, strings) as keys, or ensure keys are never
-mutated after insertion.
+Can no longer find it in the map. In Python, this manifests as a `dict` key becoming invisible after
+Mutation. Always use immutable types (tuples, frozensets, strings) as keys, or ensure keys are never
+Mutated after insertion.
 
 ### 6. Prefix Sum Integer Overflow
 
 For large arrays, prefix sums can overflow 32-bit integers. A sum of $10^6$ elements each up to
-$10^9$ gives $10^{15}$, which exceeds 32-bit range. Use 64-bit integers (`int` in Python is always
-arbitrary precision, but in C/C++/Java, use `long long`/`long`).
+$10^9$ gives $10^{15}$Which exceeds 32-bit range. Use 64-bit integers (`int` in Python is always
+Arbitrary precision, but in C/C++/Java, use `long long`/`long`).
 
 ### 7. Ignoring the Difference Between "At Most k" and "Exactly k"
 
 In sliding window problems, "at most k distinct elements" requires shrinking the window when the
-count exceeds $k$, while "exactly k distinct elements" requires maintaining two windows (one for at
-most $k$ and one for at most $k-1$). Conflating these leads to incorrect solutions.
+Count exceeds $k$While "exactly k distinct elements" requires maintaining two windows (one for at
+Most $k$ and one for at most $k-1$). Conflating these leads to incorrect solutions.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

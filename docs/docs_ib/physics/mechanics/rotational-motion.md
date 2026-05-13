@@ -9,11 +9,11 @@ slug: rotational-motion
 
 ### Angular Quantities
 
-| Quantity             | Symbol   | SI Unit   | Relation to Linear |
+| Quantity | Symbol | SI Unit | Relation to Linear |
 | -------------------- | -------- | --------- | ------------------ |
-| Angular displacement | $\theta$ | rad       | $s = r\theta$      |
-| Angular velocity     | $\omega$ | rad/s     | $v = r\omega$      |
-| Angular acceleration | $\alpha$ | rad/s$^2$ | $a_t = r\alpha$    |
+| Angular displacement | $\theta$ | rad | $s = r\theta$ |
+| Angular velocity | $\omega$ | rad/s | $v = r\omega$ |
+| Angular acceleration | $\alpha$ | rad/s$^2$ | $a_t = r\alpha$ |
 
 ### Angular Velocity
 
@@ -29,25 +29,25 @@ $$
 T = \frac{2\pi}{\omega}, \quad f = \frac{1}{T} = \frac{\omega}{2\pi}
 $$
 
-where $T$ is the period (time for one revolution) and $f$ is the frequency (revolutions per second).
+Where $T$ is the period (time for one revolution) and $f$ is the frequency (revolutions per second).
 
 ### Relation to Linear Speed
 
 $$
-v = r\omega = \frac{2\pi r}{T} = 2\pi rf
+V = r\omega = \frac{2\pi r}{T} = 2\pi rf
 $$
 
 :::info[Example]
 
 A CD rotates at $200\mathrm{ rpm}$. Find the angular velocity in rad/s and the linear speed of a
-point $5\mathrm{ cm}$ from the centre.
+Point $5\mathrm{ cm}$ from the centre.
 
 $$
 \omega = 200 \times \frac{2\pi}{60} = \frac{400\pi}{60} = 20.9\mathrm{ rad/s}
 $$
 
 $$
-v = r\omega = 0.05 \times 20.9 = 1.05\mathrm{ m/s}
+V = r\omega = 0.05 \times 20.9 = 1.05\mathrm{ m/s}
 $$
 
 :::
@@ -57,12 +57,12 @@ $$
 ## Centripetal Acceleration
 
 An object in uniform circular motion has a constantly changing velocity (direction changes), so it
-is always accelerating toward the centre of the circle.
+Is always accelerating toward the centre of the circle.
 
 ### Magnitude
 
 $$
-a_c = \frac{v^2}{r} = \omega^2 r = \frac{4\pi^2 r}{T^2}
+A_c = \frac{v^2}{r} = \omega^2 r = \frac{4\pi^2 r}{T^2}
 $$
 
 ### Direction
@@ -73,14 +73,14 @@ Always directed toward the centre of the circular path (radially inward).
 
 - Centripetal acceleration changes the **direction** of velocity, not its magnitude.
 - If the centripetal force is removed, the object moves in a straight line (tangent to the circle)
-  by Newton's first law.
+ by Newton's first law.
 - The word "centripetal" means "centre-seeking."
 
 :::warning[Exam Tip]
 
 Centripetal force is NOT a new force — it is the NET force toward the centre provided by existing
-forces (gravity, tension, friction, normal force, etc.). Never include "centripetal force" as a
-separate force on a free-body diagram.
+Forces (gravity, tension, friction, normal force, etc.). Never include "centripetal force" as a
+Separate force on a free-body diagram.
 
 :::
 
@@ -100,14 +100,14 @@ Always directed toward the centre of the circle.
 
 ### Common Examples
 
-| Situation                              | Centripetal Force Provided By             |
+| Situation | Centripetal Force Provided By |
 | -------------------------------------- | ----------------------------------------- |
-| Car turning on a flat road             | Friction between tyres and road           |
-| Car on a banked curve                  | Horizontal component of normal force      |
-| Satellite in orbit                     | Gravitational force                       |
-| Object on a string (horizontal circle) | Tension in the string                     |
-| Conical pendulum                       | Horizontal component of tension           |
-| Motorcyclist in vertical circle        | Combination of weight and normal reaction |
+| Car turning on a flat road | Friction between tyres and road |
+| Car on a banked curve | Horizontal component of normal force |
+| Satellite in orbit | Gravitational force |
+| Object on a string (horizontal circle) | Tension in the string |
+| Conical pendulum | Horizontal component of tension |
+| Motorcyclist in vertical circle | Combination of weight and normal reaction |
 
 ---
 
@@ -121,12 +121,12 @@ $$
 T = \frac{mv^2}{r}
 $$
 
-where $T$ is the tension in the string (horizontal).
+Where $T$ is the tension in the string (horizontal).
 
 ### Conical Pendulum
 
 A mass $m$ on a string of length $L$ traces a horizontal circle of radius $r$ at angle $\theta$ to
-the vertical.
+The vertical.
 
 **Vertical**: $T\cos\theta = mg$
 
@@ -147,7 +147,7 @@ $$
 \tan\theta = \frac{v^2}`\{rg}` = \frac{9}{r \times 9.81}
 $$
 
-Also $r = L\sin\theta = \sin\theta$, so:
+Also $r = L\sin\theta = \sin\theta$So:
 
 $$
 \tan\theta = \frac{9}{9.81\sin\theta}
@@ -168,7 +168,7 @@ $$
 Let $u = \cos\theta$: $u^2 + 0.917u - 1 = 0$.
 
 $$
-u = \frac{-0.917 + \sqrt{0.841 + 4}}{2} = \frac{-0.917 + 2.200}{2} = 0.642
+U = \frac{-0.917 + \sqrt{0.841 + 4}}{2} = \frac{-0.917 + 2.200}{2} = 0.642
 $$
 
 $\theta = \arccos(0.642) = 50.1\degree$.
@@ -184,7 +184,7 @@ $$
 ## Vertical Circular Motion
 
 For an object moving in a vertical circle, the speed varies (it is fastest at the bottom, slowest at
-the top) because gravity does work.
+The top) because gravity does work.
 
 ### At the Bottom of the Circle
 
@@ -213,22 +213,22 @@ $$
 $$
 
 $$
-v_{\mathrm{bottom}}^2 = v_{\mathrm{top}}^2 + 4gr
+V_{\mathrm{bottom}}^2 = v_{\mathrm{top}}^2 + 4gr
 $$
 
 For minimum speed at the top ($v_{\mathrm{top}} = \sqrt{gr}$):
 
 $$
-v_{\mathrm{bottom}} = \sqrt{5gr}
+V_{\mathrm{bottom}} = \sqrt{5gr}
 $$
 
 :::info[Example]
 
 A $0.3\mathrm{ kg}$ ball on a string of length $0.8\mathrm{ m}$ is swung in a vertical circle. Find
-the minimum speed at the bottom for the ball to complete the circle.
+The minimum speed at the bottom for the ball to complete the circle.
 
 $$
-v_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5(9.81)(0.8)} = \sqrt{39.24} = 6.26\mathrm{ m/s}
+V_{\mathrm{bottom}} = \sqrt{5gr} = \sqrt{5(9.81)(0.8)} = \sqrt{39.24} = 6.26\mathrm{ m/s}
 $$
 
 :::
@@ -250,13 +250,13 @@ Dividing: $\tan\theta = \dfrac{v^2}{rg}$
 The ideal (no friction needed) speed:
 
 $$
-v = \sqrt{rg\tan\theta}
+V = \sqrt{rg\tan\theta}
 $$
 
 ### With Friction
 
 When friction is present, the car can travel at speeds above or below the ideal speed. Friction acts
-up the slope (to prevent sliding down) or down the slope (to prevent sliding up).
+Up the slope (to prevent sliding down) or down the slope (to prevent sliding up).
 
 ---
 
@@ -270,13 +270,13 @@ $$
 \tau = Fd\sin\theta = Fr_\perp
 $$
 
-where:
+Where:
 
 - $F$ is the force
 - $d$ is the distance from the axis (pivot) to the point of application
 - $\theta$ is the angle between the force and the line from pivot to application point
 - $r_\perp = d\sin\theta$ is the perpendicular distance from the axis to the line of action (moment
-  arm)
+ arm)
 
 ### SI Unit
 
@@ -290,7 +290,7 @@ $$
 \tau_{\mathrm{net}} = I\alpha
 $$
 
-where $I$ is the moment of inertia and $\alpha$ is the angular acceleration.
+Where $I$ is the moment of inertia and $\alpha$ is the angular acceleration.
 
 ### Equilibrium Conditions
 
@@ -352,27 +352,27 @@ $$
 
 ### Common Moments of Inertia
 
-| Object              | Axis                         | $I$                 |
+| Object | Axis | $I$ |
 | ------------------- | ---------------------------- | ------------------- |
-| Solid cylinder/disk | Central axis                 | $\dfrac{1}{2}MR^2$  |
-| Hollow cylinder     | Central axis                 | $MR^2$              |
-| Solid sphere        | Diameter                     | $\dfrac{2}{5}MR^2$  |
-| Hollow sphere       | Diameter                     | $\dfrac{2}{3}MR^2$  |
-| Thin rod (centre)   | Perpendicular through centre | $\dfrac{1}{12}ML^2$ |
-| Thin rod (end)      | Perpendicular through end    | $\dfrac{1}{3}ML^2$  |
-| Point mass          | At distance $r$              | $Mr^2$              |
+| Solid cylinder/disk | Central axis | $\dfrac{1}{2}MR^2$ |
+| Hollow cylinder | Central axis | $MR^2$ |
+| Solid sphere | Diameter | $\dfrac{2}{5}MR^2$ |
+| Hollow sphere | Diameter | $\dfrac{2}{3}MR^2$ |
+| Thin rod (centre) | Perpendicular through centre | $\dfrac{1}{12}ML^2$ |
+| Thin rod (end) | Perpendicular through end | $\dfrac{1}{3}ML^2$ |
+| Point mass | At distance $r$ | $Mr^2$ |
 
 ### Parallel Axis Theorem
 
 For a body of mass $M$ with moment of inertia $I_{\mathrm{cm}}$ about an axis through its centre of
-mass:
+Mass:
 
 $$
 I = I_{\mathrm{cm}} + Md^2
 $$
 
-where $d$ is the distance between the original axis and the parallel axis through the centre of
-mass.
+Where $d$ is the distance between the original axis and the parallel axis through the centre of
+Mass.
 
 ---
 
@@ -400,15 +400,15 @@ $$
 
 ### Applications
 
-- **Ice skater spinning**: Pulling arms in reduces $I$, so $\omega$ increases.
-- **Diving**: Tucking reduces $I$, increasing angular velocity for flips.
-- **Figure skater**: Extending arms increases $I$, decreasing $\omega$ for a controlled landing.
+- **Ice skater spinning**: Pulling arms in reduces $I$So $\omega$ increases.
+- **Diving**: Tucking reduces $I$Increasing angular velocity for flips.
+- **Figure skater**: Extending arms increases $I$Decreasing $\omega$ for a controlled landing.
 
 :::info[Example]
 
 A figure skater with arms extended has $I = 4.5\mathrm{ kg}\cdot\mathrm{m}^2$ and spins at
 $2\mathrm{ rad/s}$. She pulls her arms in, reducing $I$ to $1.5\mathrm{ kg}\cdot\mathrm{m}^2$. Find
-her new angular velocity.
+Her new angular velocity.
 
 $$
 I_1\omega_1 = I_2\omega_2
@@ -463,24 +463,24 @@ $$
 For an object rolling down a frictionless-free incline (rolling without slipping):
 
 $$
-mgh = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
+Mgh = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
 $$
 
 $$
-v = \sqrt{\frac{2gh}{1 + \frac{I}{Mr^2}}}
+V = \sqrt{\frac{2gh}{1 + \frac{I}{Mr^2}}}
 $$
 
 :::info[Example]
 
 Compare the speeds of a solid sphere, a hollow sphere, and a solid cylinder rolling down the same
-incline from the same height.
+Incline from the same height.
 
 - Solid sphere: $I = \dfrac{2}{5}Mr^2 \implies v = \sqrt{\dfrac{10gh}{7}}$
 - Hollow sphere: $I = \dfrac{2}{3}Mr^2 \implies v = \sqrt{\dfrac{6gh}{5}}$
 - Solid cylinder: $I = \dfrac{1}{2}Mr^2 \implies v = \sqrt{\dfrac{4gh}{3}}$
 
 The solid sphere is fastest, followed by the solid cylinder, then the hollow sphere. Objects with
-more mass concentrated near the centre (smaller $I$) roll faster.
+More mass concentrated near the centre (smaller $I$) roll faster.
 
 :::
 
@@ -488,18 +488,18 @@ more mass concentrated near the centre (smaller $I$) roll faster.
 
 ## Analogy: Linear vs Rotational
 
-| Linear Quantity         | Rotational Equivalent          |
+| Linear Quantity | Rotational Equivalent |
 | ----------------------- | ------------------------------ |
-| Displacement $s$        | Angular displacement $\theta$  |
-| Velocity $v$            | Angular velocity $\omega$      |
-| Acceleration $a$        | Angular acceleration $\alpha$  |
-| Mass $m$                | Moment of inertia $I$          |
-| Force $F$               | Torque $\tau$                  |
-| Momentum $p = mv$       | Angular momentum $L = I\omega$ |
-| $F = ma$                | $\tau = I\alpha$               |
-| $E_k = \frac{1}{2}mv^2$ | $E_k = \frac{1}{2}I\omega^2$   |
-| $W = Fs$                | $W = \tau\theta$               |
-| $P = Fv$                | $P = \tau\omega$               |
+| Displacement $s$ | Angular displacement $\theta$ |
+| Velocity $v$ | Angular velocity $\omega$ |
+| Acceleration $a$ | Angular acceleration $\alpha$ |
+| Mass $m$ | Moment of inertia $I$ |
+| Force $F$ | Torque $\tau$ |
+| Momentum $p = mv$ | Angular momentum $L = I\omega$ |
+| $F = ma$ | $\tau = I\alpha$ |
+| $E_k = \frac{1}{2}mv^2$ | $E_k = \frac{1}{2}I\omega^2$ |
+| $W = Fs$ | $W = \tau\theta$ |
+| $P = Fv$ | $P = \tau\omega$ |
 
 ---
 
@@ -524,10 +524,10 @@ A satellite orbits Earth at an altitude of $400\mathrm{ km}$ in a circular orbit
 
 **(a)** Calculate the orbital period.
 
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
-r = 6.77 \times 10^6\mathrm{ m}
+R = 6.77 \times 10^6\mathrm{ m}
 $$
 
 $$
@@ -541,22 +541,22 @@ $$
 **(b)** Calculate the centripetal acceleration.
 
 $$
-a_c = \frac{v^2}{r} = \frac{5.88 \times 10^7}{6.77 \times 10^6} = 8.68\mathrm{ m/s}^2
+A_c = \frac{v^2}{r} = \frac{5.88 \times 10^7}{6.77 \times 10^6} = 8.68\mathrm{ m/s}^2
 $$
 
 ### Question 3 (Paper 2 style)
 
 A $0.2\mathrm{ kg}$ ball is attached to a string of length $0.8\mathrm{ m}$ and whirled in a
-vertical circle.
+Vertical circle.
 
 **(a)** Find the minimum speed at the top of the circle for the ball to maintain contact.
 
 $$
-v_{\mathrm{min}} = \sqrt`\{gr}` = \sqrt{9.81 \times 0.8} = \sqrt{7.85} = 2.80\mathrm{ m/s}
+V_{\mathrm{min}} = \sqrt`\{gr}` = \sqrt{9.81 \times 0.8} = \sqrt{7.85} = 2.80\mathrm{ m/s}
 $$
 
-**(b)** If the speed at the bottom is $8\mathrm{ m/s}$, find the tension in the string at the
-bottom.
+**(b)** If the speed at the bottom is $8\mathrm{ m/s}$Find the tension in the string at the
+Bottom.
 
 $$
 T_{\mathrm{bottom}} = mg + \frac{mv^2}{r} = 0.2(9.81) + \frac{0.2(64)}{0.8} = 1.962 + 16 = 17.96\mathrm{ N}
@@ -575,7 +575,7 @@ $$
 $$
 
 $$
-v_{\mathrm{top}}^2 = 48.30 \implies v_{\mathrm{top}} = 6.95\mathrm{ m/s}
+V_{\mathrm{top}}^2 = 48.30 \implies v_{\mathrm{top}} = 6.95\mathrm{ m/s}
 $$
 
 $$
@@ -585,7 +585,7 @@ $$
 ### Question 4 (Paper 1 style)
 
 A disc of mass $2\mathrm{ kg}$ and radius $0.3\mathrm{ m}$ rotates at $10\mathrm{ rad/s}$. Find its
-rotational kinetic energy.
+Rotational kinetic energy.
 
 $$
 I = \frac{1}{2}MR^2 = \frac{1}{2}(2)(0.09) = 0.09\mathrm{ kg}\cdot\mathrm{m}^2
@@ -625,22 +625,22 @@ She can complete 1 full somersault and is partway through a second.
 
 ## Summary
 
-| Quantity                         | Formula                                   |
+| Quantity | Formula |
 | -------------------------------- | ----------------------------------------- |
-| Angular velocity                 | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
-| Centripetal acceleration         | $a_c = \dfrac{v^2}{r} = \omega^2 r$       |
-| Centripetal force                | $F_c = \dfrac{mv^2}{r} = m\omega^2 r$     |
-| Torque                           | $\tau = Fr_\perp$                         |
-| Newton's second law (rotation)   | $\tau = I\alpha$                          |
-| Angular momentum                 | $L = I\omega$                             |
-| Rotational kinetic energy        | $E_k = \dfrac{1}{2}I\omega^2$             |
-| Conservation of angular momentum | $I_1\omega_1 = I_2\omega_2$               |
+| Angular velocity | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
+| Centripetal acceleration | $a_c = \dfrac{v^2}{r} = \omega^2 r$ |
+| Centripetal force | $F_c = \dfrac{mv^2}{r} = m\omega^2 r$ |
+| Torque | $\tau = Fr_\perp$ |
+| Newton's second law (rotation) | $\tau = I\alpha$ |
+| Angular momentum | $L = I\omega$ |
+| Rotational kinetic energy | $E_k = \dfrac{1}{2}I\omega^2$ |
+| Conservation of angular momentum | $I_1\omega_1 = I_2\omega_2$ |
 
 :::tip[Exam Strategy]
 
 For circular motion problems, always draw a free-body diagram and identify which force(s) provide
-the centripetal force. For vertical circle problems, use energy conservation to relate speeds at
-different points. For torque problems, clearly identify the pivot and calculate the moment arm.
+The centripetal force. For vertical circle problems, use energy conservation to relate speeds at
+Different points. For torque problems, identify the pivot and calculate the moment arm.
 
 :::
 
@@ -691,7 +691,7 @@ $$
 **(c)** Find the linear speed of a point $0.3\mathrm{ m}$ from the axis.
 
 $$
-v = r\omega = 0.3 \times 10 = 3.0\mathrm{ m/s}
+V = r\omega = 0.3 \times 10 = 3.0\mathrm{ m/s}
 $$
 
 :::
@@ -719,13 +719,13 @@ $$
 ### Orbital Speed
 
 $$
-v = \sqrt{\frac`\{GM}`{r}}
+V = \sqrt{\frac`\{GM}`{r}}
 $$
 
 ### Orbital Period (Kepler's Third Law)
 
 $$
-T^2 = \frac{4\pi^2}`\{GM}`r^3
+T^2 = \frac{4\pi^2}`\{GM}`R^3
 $$
 
 $T^2$ is proportional to $r^3$ for all satellites orbiting the same body.
@@ -744,7 +744,7 @@ A geostationary satellite:
 ## Gyroscopic Effects
 
 A spinning gyroscope resists changes to its axis of rotation due to conservation of angular
-momentum. This principle is used in:
+Momentum. This principle is used in:
 
 - Navigation systems (gyrocompasses).
 - Stabilisation of ships and aircraft.
@@ -754,7 +754,7 @@ momentum. This principle is used in:
 ### Precession
 
 When a torque is applied to a spinning object, instead of tipping over, the axis of rotation moves
-perpendicular to the applied torque. This is called precession.
+Perpendicular to the applied torque. This is called precession.
 
 The precession angular velocity:
 
@@ -769,8 +769,8 @@ $$
 ### Question 6 (Paper 2 style)
 
 A disc of mass $5\mathrm{ kg}$ and radius $0.2\mathrm{ m}$ rotates about its central axis. A
-constant torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$, starting from
-rest.
+Constant torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$Starting from
+Rest.
 
 **(a)** Find the angular acceleration.
 
@@ -801,7 +801,7 @@ This equals the change in rotational kinetic energy, confirming the work-energy 
 ### Question 7 (Paper 2 style)
 
 A thin rod of mass $2\mathrm{ kg}$ and length $1\mathrm{ m}$ is pivoted at one end and held
-horizontally. It is released from rest.
+Horizontally. It is released from rest.
 
 **(a)** Find the moment of inertia about the pivot.
 
@@ -839,18 +839,18 @@ $$
 ### Question 8 (Paper 1 style)
 
 A horizontal turntable of radius $0.5\mathrm{ m}$ rotates at $3\mathrm{ rad/s}$. A coin is placed on
-the turntable at a distance $0.3\mathrm{ m}$ from the centre. If the coefficient of static friction
-is $0.4$, does the coin slip?
+The turntable at a distance $0.3\mathrm{ m}$ from the centre. If the coefficient of static friction
+Is $0.4$Does the coin slip?
 
 $$
-a_c = \omega^2 r = 9 \times 0.3 = 2.7\mathrm{ m/s}^2
+A_c = \omega^2 r = 9 \times 0.3 = 2.7\mathrm{ m/s}^2
 $$
 
 Required friction: $f = ma_c = m \times 2.7$.
 
 Maximum available friction: $f_{\max} = \mu_s mg = 0.4m(9.81) = 3.924m$.
 
-Since $2.7m \lt 3.924m$, the coin does not slip.
+Since $2.7m \lt 3.924m$The coin does not slip.
 
 For the A-Level treatment of this topic, see [Circular Motion](https://alevel.wyattau.com/docs/physics/mechanics/circular-motion).
 
@@ -864,3 +864,11 @@ Ready to test your understanding of **Rotational Motion**? The [diagnostic test]
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

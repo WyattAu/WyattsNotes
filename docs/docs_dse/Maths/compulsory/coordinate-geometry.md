@@ -53,12 +53,12 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1}$$
 
 ### Various Forms
 
-| Form            | Equation                                                  | When to Use                   |
+| Form | Equation | When to Use |
 | --------------- | --------------------------------------------------------- | ----------------------------- |
-| Slope-intercept | $y = mx + c$                                              | Slope and $y$-intercept known |
-| Point-slope     | $y - y_1 = m(x - x_1)$                                    | Slope and a point known       |
-| Two-point       | $\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1}$ | Two points known              |
-| General         | $Ax + By + C = 0$                                         | Standard form                 |
+| Slope-intercept | $y = mx + c$ | Slope and $y$-intercept known |
+| Point-slope | $y - y_1 = m(x - x_1)$ | Slope and a point known |
+| Two-point | $\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1}$ | Two points known |
+| General | $Ax + By + C = 0$ | Standard form |
 
 ### Parallel and Perpendicular Lines
 
@@ -90,7 +90,7 @@ $$d = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}} = \frac{|4(3) + 3(4) - 10|}{\sq
 ## Intersection of Lines
 
 Two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$ intersect at a unique point if they
-are not parallel. Solve the system of equations simultaneously.
+Are not parallel. Solve the system of equations simultaneously.
 
 ### Worked Example 4
 
@@ -119,7 +119,7 @@ Expanding: $x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0$
 
 $$x^2 + y^2 + Dx + Ey + F = 0$$
 
-Centre: $\left(-\dfrac{D}{2}, -\dfrac{E}{2}\right)$, Radius:
+Centre: $\left(-\dfrac{D}{2}, -\dfrac{E}{2}\right)$Radius:
 $r = \sqrt{\dfrac{D^2}{4} + \dfrac{E^2}{4} - F}$
 
 ### Worked Example 5
@@ -134,7 +134,7 @@ $$(x - 3)^2 - 9 + (y + 2)^2 - 4 = 12$$
 
 $$(x - 3)^2 + (y + 2)^2 = 25$$
 
-Centre: $(3, -2)$, Radius: $r = 5$.
+Centre: $(3, -2)$Radius: $r = 5$.
 
 ---
 
@@ -151,13 +151,13 @@ Equivalently, the tangent is perpendicular to the radius at the point of contact
 ### Finding Intersection Points
 
 Substitute the linear equation into the circle equation to obtain a quadratic in one variable. Use
-the discriminant to determine the nature of the intersection:
+The discriminant to determine the nature of the intersection:
 
-| $\Delta$       | Intersection                 |
+| $\Delta$ | Intersection |
 | -------------- | ---------------------------- |
 | $\Delta \gt 0$ | Two distinct points (secant) |
-| $\Delta = 0$   | One point (tangent)          |
-| $\Delta \lt 0$ | No intersection              |
+| $\Delta = 0$ | One point (tangent) |
+| $\Delta \lt 0$ | No intersection |
 
 ### Worked Example 6
 
@@ -167,7 +167,7 @@ Using the tangent formula: $x_1 x + y_1 y = r^2$:
 
 $$3x + 4y = 25$$
 
-Alternatively, the radius has slope $4/3$, so the tangent has slope $-3/4$:
+Alternatively, the radius has slope $4/3$So the tangent has slope $-3/4$:
 
 $$y - 4 = -\frac{3}{4}(x - 3) \implies 4(y - 4) = -3(x - 3) \implies 4y - 16 = -3x + 9 \implies 3x + 4y - 25 = 0$$
 
@@ -177,22 +177,22 @@ $$y - 4 = -\frac{3}{4}(x - 3) \implies 4(y - 4) = -3(x - 3) \implies 4y - 16 = -
 
 ### Area of a Triangle (Coordinate Formula)
 
-Given vertices $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$:
+Given vertices $A(x_1, y_1)$$B(x_2, y_2)$$C(x_3, y_3)$:
 
 $$\mathrm{Area} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
 
 ### Area of a Polygon
 
 For a polygon with vertices $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$ listed in order (clockwise
-or counterclockwise):
+Or counterclockwise):
 
 $$\mathrm{Area} = \frac{1}{2}\left|\sum_{i=1}^{n} (x_i y_{i+1} - x_{i+1} y_i)\right|$$
 
-where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
+Where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
 ### Worked Example 7
 
-Find the area of the triangle with vertices $A(1, 2)$, $B(5, 6)$, $C(3, -1)$.
+Find the area of the triangle with vertices $A(1, 2)$$B(5, 6)$$C(3, -1)$.
 
 $$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
 
@@ -201,25 +201,25 @@ $$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2
 ## Common Pitfalls
 
 - Forgetting the absolute value in the distance-from-point-to-line formula.
-- Confusing the perpendicular slope formula: $m_1 m_2 = -1$, not $m_1 m_2 = 1$.
+- Confusing the perpendicular slope formula: $m_1 m_2 = -1$Not $m_1 m_2 = 1$.
 - When finding the centre from the general circle equation, forgetting the negative signs: centre is
-  $(-D/2, -E/2)$, not $(D/2, E/2)$.
+ $(-D/2, -E/2)$Not $(D/2, E/2)$.
 - Forgetting to check that $r^2 \gt 0$ when converting the general form to the standard form. If
-  $r^2 \lt 0$, the equation does not represent a real circle.
+ $r^2 \lt 0$The equation does not represent a real circle.
 - Arithmetic errors when completing the square for circle equations. Always double-check.
 
 ---
 
 ## Summary Table
 
-| Topic                   | Key Formula                                                   |
+| Topic | Key Formula |
 | ----------------------- | ------------------------------------------------------------- | ------------------------------------------------ | -------------------- |
-| Distance                | $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$                    | | |
-| Midpoint                | $M = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right)$ | | |
-| Point to line           | $d = \dfrac{                                                  | Ax_0 + By_0 + C                                  | }{\sqrt{A^2 + B^2}}$ |
-| Circle (standard)       | $(x - a)^2 + (y - b)^2 = r^2$                                 | | |
-| Tangent at $(x_1, y_1)$ | $x_1 x + y_1 y = r^2$ (for circle at origin)                  | | |
-| Triangle area           | $\dfrac{1}{2}                                                 | x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) | $                    |
+| Distance | $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ | | |
+| Midpoint | $M = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right)$ | | |
+| Point to line | $d = \dfrac{                                                  | Ax_0 + By_0 + C                                  | }{\sqrt{A^2 + B^2}}$ |
+| Circle (standard) | $(x - a)^2 + (y - b)^2 = r^2$ | | |
+| Tangent at $(x_1, y_1)$ | $x_1 x + y_1 y = r^2$ (for circle at origin) | | |
+| Triangle area | $\dfrac{1}{2}                                                 | x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) | $ |
 
 ---
 
@@ -227,7 +227,7 @@ $$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2
 <summary>Wrap-up Questions</summary>
 
 1. **Question:** Find the equation of the perpendicular bisector of $AB$ where $A(2, 1)$ and
-   $B(6, 7)$.
+ $B(6, 7)$.
 
 Midpoint: $M = (4, 4)$. Slope of $AB$: $m = (7 - 1)/(6 - 2) = 6/4 = 3/2$.
 
@@ -235,7 +235,7 @@ Perpendicular slope: $m_\perp = -2/3$.
 
 $$y - 4 = -\frac{2}{3}(x - 4) \implies 3(y - 4) = -2(x - 4) \implies 3y - 12 = -2x + 8 \implies 2x + 3y - 20 = 0$$
 
-2. **Question:** Find the equation of the circle passing through $(1, 2)$, $(3, 4)$, and $(5, 2)$.
+2. **Question:** Find the equation of the circle passing through $(1, 2)$$(3, 4)$And $(5, 2)$.
 
 General form: $x^2 + y^2 + Dx + Ey + F = 0$.
 
@@ -253,34 +253,34 @@ $(3) - (1)$: $4D = -24 \implies D = -6$
 
 From (4): $E = -4$. From (1): $-6 - 8 + F = -5 \implies F = 9$.
 
-Equation: $x^2 + y^2 - 6x - 4y + 9 = 0$, i.e., $(x - 3)^2 + (y - 2)^2 = 4$.
+Equation: $x^2 + y^2 - 6x - 4y + 9 = 0$I.e., $(x - 3)^2 + (y - 2)^2 = 4$.
 
-Centre: $(3, 2)$, radius: $2$.
+Centre: $(3, 2)$Radius: $2$.
 
 3. **Question:** Show that the line $y = x + 1$ is a tangent to the circle $x^2 + y^2 = 2$ and find
-   the point of contact.
+ the point of contact.
 
 Substitute $y = x + 1$:
 $x^2 + (x + 1)^2 = 2 \implies x^2 + x^2 + 2x + 1 - 2 = 0 \implies 2x^2 + 2x - 1 = 0$.
 
 $\Delta = 4 + 8 = 12 \gt 0$. This is not a tangent -- there are two intersection points. Let me
-re-check. Actually $\Delta = 4 - 4(2)(-1) = 4 + 8 = 12 \neq 0$, so the line is not a tangent to this
-circle. Let me try the circle $x^2 + y^2 = 1$ instead:
+Re-check. Actually $\Delta = 4 - 4(2)(-1) = 4 + 8 = 12 \neq 0$So the line is not a tangent to this
+Circle. Let me try the circle $x^2 + y^2 = 1$ instead:
 
 $x^2 + (x+1)^2 = 1 \implies 2x^2 + 2x = 0 \implies 2x(x + 1) = 0$. $\Delta = 4 - 0 = 4 \gt 0$. Still
-not tangent.
+Not tangent.
 
 For $x^2 + y^2 = 1/2$:
 $x^2 + (x+1)^2 = 1/2 \implies 2x^2 + 2x + 1/2 = 0 \implies \Delta = 4 - 4 = 0$. Tangent. Point of
-contact: $x = -1/2$, $y = 1/2$. Point: $(-1/2, 1/2)$.
+Contact: $x = -1/2$$y = 1/2$. Point: $(-1/2, 1/2)$.
 
 4. **Question:** Find the distance between the parallel lines $3x + 4y - 5 = 0$ and
-   $3x + 4y + 11 = 0$.
+ $3x + 4y + 11 = 0$.
 
 Distance
 $= \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}} = \dfrac{|11 - (-5)|}{\sqrt{9 + 16}} = \dfrac{16}{5} = 3.2$.
 
-5. **Question:** The points $A(-1, 3)$, $B(2, k)$, and $C(5, -1)$ are collinear. Find $k$.
+5. **Question:** The points $A(-1, 3)$$B(2, k)$And $C(5, -1)$ are collinear. Find $k$.
 
 For collinearity, the slope of $AB$ equals the slope of $BC$:
 
@@ -288,8 +288,8 @@ $$\frac{k - 3}{2 - (-1)} = \frac{-1 - k}{5 - 2} \implies \frac{k - 3}{3} = \frac
 
 $$k - 3 = -1 - k \implies 2k = 2 \implies k = 1$$
 
-6. **Question:** Find the area of the quadrilateral with vertices $(0, 0)$, $(4, 0)$, $(5, 3)$, and
-   $(1, 4)$.
+6. **Question:** Find the area of the quadrilateral with vertices $(0, 0)$$(4, 0)$$(5, 3)$And
+ $(1, 4)$.
 
 Using the shoelace formula with vertices in order:
 
@@ -298,7 +298,7 @@ $\mathrm{Area} = \frac{1}{2}|(0 \cdot 0 - 4 \cdot 0) + (4 \cdot 3 - 5 \cdot 0) +
 $= \frac{1}{2}|0 + 12 + 17 + 0| = \frac{1}{2}(29) = 14.5$
 
 7. **Question:** A circle has centre $(2, -1)$ and passes through the point $(5, 3)$. Find its
-   equation.
+ equation.
 
 $r = \sqrt{(5 - 2)^2 + (3 - (-1))^2} = \sqrt{9 + 16} = 5$.
 
@@ -370,9 +370,9 @@ $$\Delta = 64m^4 - 64m^4 - 32m^2 + 32 = -32m^2 + 32 = 0$$
 
 $$m^2 = 1 \implies m = \pm 1$$
 
-Tangent 1: $y = x - 4$, i.e. $x - y - 4 = 0$.
+Tangent 1: $y = x - 4$I.e. $x - y - 4 = 0$.
 
-Tangent 2: $y = -x + 4$, i.e. $x + y - 4 = 0$.
+Tangent 2: $y = -x + 4$I.e. $x + y - 4 = 0$.
 
 Verification: distance from $(0,0)$ to $x - y - 4 = 0$ is $\dfrac{4}{\sqrt{2}} = 2\sqrt{2} = \sqrt{8}$. Correct.
 
@@ -380,18 +380,18 @@ Verification: distance from $(0,0)$ to $x - y - 4 = 0$ is $\dfrac{4}{\sqrt{2}} =
 
 **Worked Example 10: Triangle formed by three lines**
 
-Find the area of the triangle formed by $\ell_1: x + y = 6$, $\ell_2: x - y = 2$, and $\ell_3: 2x + y = 9$.
+Find the area of the triangle formed by $\ell_1: x + y = 6$$\ell_2: x - y = 2$And $\ell_3: 2x + y = 9$.
 
 <details>
 <summary>Solution</summary>
 
 Find the three vertices by pairwise intersection.
 
-$\ell_1 \cap \ell_2$: Adding the equations gives $2x = 8 \implies x = 4$, $y = 2$. Vertex $A(4, 2)$.
+$\ell_1 \cap \ell_2$: Adding the equations gives $2x = 8 \implies x = 4$$y = 2$. Vertex $A(4, 2)$.
 
-$\ell_1 \cap \ell_3$: Subtracting $\ell_1$ from $\ell_3$ gives $x = 3$, $y = 3$. Vertex $B(3, 3)$.
+$\ell_1 \cap \ell_3$: Subtracting $\ell_1$ from $\ell_3$ gives $x = 3$$y = 3$. Vertex $B(3, 3)$.
 
-$\ell_2 \cap \ell_3$: Adding the equations gives $3x = 11 \implies x = \dfrac{11}{3}$, $y = \dfrac{5}{3}$. Vertex $C\!\left(\dfrac{11}{3}, \dfrac{5}{3}\right)$.
+$\ell_2 \cap \ell_3$: Adding the equations gives $3x = 11 \implies x = \dfrac{11}{3}$$y = \dfrac{5}{3}$. Vertex $C\!\left(\dfrac{11}{3}, \dfrac{5}{3}\right)$.
 
 Using the area formula:
 
@@ -430,7 +430,7 @@ Reflection: $P'\!\left(\dfrac{8}{5}, \dfrac{24}{5}\right)$.
 
 **Worked Example 12: Circle through three points**
 
-Find the equation of the circle through $P(0, 1)$, $Q(2, 3)$, and $R(4, 1)$.
+Find the equation of the circle through $P(0, 1)$$Q(2, 3)$And $R(4, 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -443,7 +443,7 @@ Intersecting with $x = 2$: $y = 1$. Centre: $(2, 1)$.
 
 $$r^2 = (2-0)^2 + (1-1)^2 = 4$$
 
-Equation: $(x - 2)^2 + (y - 1)^2 = 4$, or $x^2 + y^2 - 4x - 2y + 1 = 0$.
+Equation: $(x - 2)^2 + (y - 1)^2 = 4$Or $x^2 + y^2 - 4x - 2y + 1 = 0$.
 
 Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
 
@@ -453,19 +453,19 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
 
 ## Additional Common Pitfalls
 
-1. **Sign error in the section formula.** The point dividing $AB$ in ratio $m:n$ (from $A$ towards $B$) has $x$-coordinate $\dfrac{nx_1 + mx_2}{m+n}$, not $\dfrac{mx_1 + nx_2}{m+n}$. The weight of $A$ is $n$, not $m$.
+1. **Sign error in the section formula.** The point dividing $AB$ in ratio $m:n$ (from $A$ towards $B$) has $x$-coordinate $\dfrac{nx_1 + mx_2}{m+n}$Not $\dfrac{mx_1 + nx_2}{m+n}$. The weight of $A$ is $n$Not $m$.
 
 2. **Dropping the absolute value in point-to-line distance.** The formula $\dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}$ always yields a non-negative result. Omitting the absolute value can produce a negative "distance".
 
-3. **Failing to normalise parallel lines.** Before using the distance-between-parallel-lines formula $d = \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}}$, ensure both equations have identical $A$ and $B$ coefficients. If one equation is a scalar multiple of the other, rescale first.
+3. **Failing to normalise parallel lines.** Before using the distance-between-parallel-lines formula $d = \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}}$Ensure both equations have identical $A$ and $B$ coefficients. If one equation is a scalar multiple of the other, rescale first.
 
-4. **Assuming two circles always intersect.** Two circles with centres $O_1$, $O_2$ and radii $r_1$, $r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$, where $d$ is the distance between centres.
+4. **Assuming two circles always intersect.** Two circles with centres $O_1$$O_2$ and radii $r_1$$r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$Where $d$ is the distance between centres.
 
 5. **Undefined slope of vertical lines.** The line $x = a$ has no defined slope. Never assign a numerical value such as $\infty$ to it; state that the slope is undefined.
 
 6. **Stopping at the midpoint for perpendicular bisectors.** The perpendicular bisector of $AB$ requires both the midpoint and the perpendicular slope. A common mistake is to find the midpoint and stop.
 
-7. **Confusing the tangent formula for circles not at the origin.** The shortcut $x_1 x + y_1 y = r^2$ only applies when the circle is $x^2 + y^2 = r^2$. For $(x-a)^2 + (y-b)^2 = r^2$, use the general formula $(x_1-a)(x-a) + (y_1-b)(y-b) = r^2$.
+7. **Confusing the tangent formula for circles not at the origin.** The shortcut $x_1 x + y_1 y = r^2$ only applies when the circle is $x^2 + y^2 = r^2$. For $(x-a)^2 + (y-b)^2 = r^2$Use the general formula $(x_1-a)(x-a) + (y_1-b)(y-b) = r^2$.
 
 8. **Arithmetic errors in the shoelace formula.** Always list vertices in consistent order (clockwise or anticlockwise). Mixing the order gives the wrong area or its negative.
 
@@ -473,7 +473,7 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
 
 ## Exam-Style Problems
 
-**Problem 1.** The points $A(-2, 3)$, $B(4, 7)$, and $C(k, -1)$ form a triangle with area $30$. Find the possible values of $k$.
+**Problem 1.** The points $A(-2, 3)$$B(4, 7)$And $C(k, -1)$ form a triangle with area $30$. Find the possible values of $k$.
 
 <details>
 <summary>Solution</summary>
@@ -529,9 +529,9 @@ Equation: $(x - 3)^2 + y^2 = 10$.
 <details>
 <summary>Solution</summary>
 
-$A$: set $y = 0$, giving $x = 4$. So $A(4, 0)$.
+$A$: set $y = 0$Giving $x = 4$. So $A(4, 0)$.
 
-$B$: set $x = 0$, giving $y = 3$. So $B(0, 3)$.
+$B$: set $x = 0$Giving $y = 3$. So $B(0, 3)$.
 
 Centre (midpoint of $AB$): $\left(\dfrac{4+0}{2}, \dfrac{0+3}{2}\right) = (2,\; 1.5)$.
 
@@ -543,7 +543,7 @@ Expanding: $x^2 + y^2 - 4x - 3y = 0$.
 
 </details>
 
-**Problem 5.** Determine whether the triangle with vertices $P(1, 2)$, $Q(5, 5)$, and $R(8, 1)$ is right-angled.
+**Problem 5.** Determine whether the triangle with vertices $P(1, 2)$$Q(5, 5)$And $R(8, 1)$ is right-angled.
 
 <details>
 <summary>Solution</summary>
@@ -554,13 +554,13 @@ $$m_{PQ} = \frac{5-2}{5-1} = \frac{3}{4}, \quad m_{QR} = \frac{1-5}{8-5} = -\fra
 
 $$m_{PQ} \cdot m_{QR} = \frac{3}{4} \cdot \left(-\frac{4}{3}\right) = -1$$
 
-Since the product is $-1$, $PQ \perp QR$. The triangle is right-angled at $Q$.
+Since the product is $-1$$PQ \perp QR$. The triangle is right-angled at $Q$.
 
-Verification by Pythagoras: $PQ^2 = 25$, $QR^2 = 25$, $PR^2 = 49 + 1 = 50$. Indeed $25 + 25 = 50$.
+Verification by Pythagoras: $PQ^2 = 25$$QR^2 = 25$$PR^2 = 49 + 1 = 50$. Indeed $25 + 25 = 50$.
 
 </details>
 
-**Problem 6.** Find the equation of the perpendicular bisector of the segment joining $(-1, 5)$ and $(3, -1)$, and verify that $(1, 2)$ lies on it.
+**Problem 6.** Find the equation of the perpendicular bisector of the segment joining $(-1, 5)$ and $(3, -1)$And verify that $(1, 2)$ lies on it.
 
 <details>
 <summary>Solution</summary>
@@ -630,7 +630,7 @@ For the A-Level treatment of this topic, see [Coordinates and Geometry](https://
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Coordinate Geometry**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-coordinate-geometry) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Coordinate Geometry with other DSE mathematics topics to test synthesis under exam conditions.
@@ -713,7 +713,7 @@ Find the shortest distance from $P(5, 3)$ to the circle $x^2 + y^2 - 4x + 2y - 4
 <details>
 <summary>Solution</summary>
 
-Centre: $(2, -1)$, $r^2 = 4 + 1 + 4 = 9 \implies r = 3$.
+Centre: $(2, -1)$$r^2 = 4 + 1 + 4 = 9 \implies r = 3$.
 
 Distance from $P$ to centre: $d = \sqrt{(5-2)^2 + (3-(-1))^2} = \sqrt{9 + 16} = 5$.
 
@@ -740,7 +740,7 @@ $$x^2 - 2x + 1 + y^2 - 6y + 9 = x^2 - 10x + 25 + y^2 - 14y + 49$$
 
 $$8x + 8y = 64 \implies x + y = 8$$
 
-This is the perpendicular bisector of $AB$, as expected.
+This is the perpendicular bisector of $AB$As expected.
 
 </details>
 
@@ -771,7 +771,7 @@ Actually, the distance from the centre $(0,0)$ to the line $mx - y + 1 = 0$ is:
 
 $$d = \frac{|1|}{\sqrt{m^2 + 1}} = \frac{1}{\sqrt{m^2 + 1}}$$
 
-For tangency: $d = r = 2$, i.e., $\dfrac{1}{\sqrt{m^2 + 1}} = 2 \implies \sqrt{m^2 + 1} = \dfrac{1}{2} \implies m^2 + 1 = \dfrac{1}{4} \implies m^2 = -\dfrac{3}{4}$.
+For tangency: $d = r = 2$I.e., $\dfrac{1}{\sqrt{m^2 + 1}} = 2 \implies \sqrt{m^2 + 1} = \dfrac{1}{2} \implies m^2 + 1 = \dfrac{1}{4} \implies m^2 = -\dfrac{3}{4}$.
 
 No real solution. Confirmed: the line is never tangent to the circle.
 
@@ -782,19 +782,19 @@ No real solution. Confirmed: the line is never tangent to the circle.
 <details>
 <summary>Solution</summary>
 
-Since the circle touches the $y$-axis at $(0, 3)$, the centre lies on the horizontal line $y = 3$, so the centre is $C(r, 3)$ where $r$ is the radius.
+Since the circle touches the $y$-axis at $(0, 3)$The centre lies on the horizontal line $y = 3$So the centre is $C(r, 3)$ where $r$ is the radius.
 
 Equation: $(x - r)^2 + (y - 3)^2 = r^2$.
 
 Substituting $(2, 1)$: $(2 - r)^2 + (1 - 3)^2 = r^2 \implies 4 - 4r + r^2 + 4 = r^2 \implies 8 - 4r = 0 \implies r = 2$.
 
-Centre: $(2, 3)$, radius: $2$.
+Centre: $(2, 3)$Radius: $2$.
 
-Equation: $(x - 2)^2 + (y - 3)^2 = 4$, or $x^2 + y^2 - 4x - 6y + 9 = 0$.
+Equation: $(x - 2)^2 + (y - 3)^2 = 4$Or $x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 </details>
 
-**DSE Practice 3.** Find the equation of the circle passing through $(1, 0)$, $(0, 1)$, and $(-1, 0)$.
+**DSE Practice 3.** Find the equation of the circle passing through $(1, 0)$$(0, 1)$And $(-1, 0)$.
 
 <details>
 <summary>Solution</summary>
@@ -813,11 +813,11 @@ From (i): $F = -1$.
 
 From (ii): $E = 0$.
 
-Equation: $x^2 + y^2 - 1 = 0$, i.e., $x^2 + y^2 = 1$ (the unit circle).
+Equation: $x^2 + y^2 - 1 = 0$I.e., $x^2 + y^2 = 1$ (the unit circle).
 
 </details>
 
-**DSE Practice 4.** The line $\ell$ passes through $A(2, 1)$ and $B(6, k)$. If the distance from the origin to $\ell$ is $\dfrac{6\sqrt{5}}{5}$, find $k$.
+**DSE Practice 4.** The line $\ell$ passes through $A(2, 1)$ and $B(6, k)$. If the distance from the origin to $\ell$ is $\dfrac{6\sqrt{5}}{5}$Find $k$.
 
 <details>
 <summary>Solution</summary>
@@ -875,7 +875,7 @@ $$(4k - 3)(k - 6) = 0 \implies k = \frac{3}{4} \;\text{or}\; k = 6$$
 
 The gradient of $2x + 3y = 7$ is $m = -\dfrac{2}{3}$.
 
-The tangent at $(x_1, y_1)$ on $x^2 + y^2 = 13$ is $x_1 x + y_1 y = 13$, with gradient $m = -\dfrac{x_1}{y_1}$.
+The tangent at $(x_1, y_1)$ on $x^2 + y^2 = 13$ is $x_1 x + y_1 y = 13$With gradient $m = -\dfrac{x_1}{y_1}$.
 
 Setting equal: $-\dfrac{x_1}{y_1} = -\dfrac{2}{3} \implies 3x_1 = 2y_1 \implies y_1 = \dfrac{3}{2}x_1$.
 

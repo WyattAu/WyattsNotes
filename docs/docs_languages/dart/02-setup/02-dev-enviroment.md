@@ -11,44 +11,44 @@ slug: development-enviroment
 ## Virtual Devices
 
 Virtual devices can be created by opening the command-palette and selecting
-`Flutter: Select Device`, and selecting `create android emulator`. However, the performance is not
-accurate and convenience is limited, therefore I recommend using a
+`Flutter: Select Device`And selecting `create android emulator`. However, the performance is not
+Accurate and convenience is limited, therefore I recommend using a
 [physical device](#physical-devices).
 
 ## Physical Devices
 
 Android devices can be use for running builds by enabling `USB debugging` from
-`Android developer settings`, this is done by:
+`Android developer settings`This is done by:
 
 1. Open settings and navigate to About Phone
 2. Tab on the build number 7 times until a confirmation message appear
 3. Then enter Developer Options and enable `USB debugging`
 4. Plug the phone into the computer with USB connection
 
-Now when selecting VSCode/command-palette/`Flutter: Select Device`, the identifier of the phone will
-appear.
+Now when selecting VSCode/command-palette/`Flutter: Select Device`The identifier of the phone will
+Appear.
 
 :::warning
 
 If running `Flutter: Select Device` does not show your physical device, try revoking the USB
 Debugging and disconnect the device. Then reconnect the device and check remember device when
-verifying.
+Verifying.
 
 :::
 
 ## Compiling and Running
 
 With everything setup and a `Flutter: new project` created, the code can now be compiled and ran
-with the device selected. Now simply clicking `F5` (VSCode's debug mode) will run the command of
+With the device selected. Now clicking `F5` (VSCode's debug mode) will run the command of
 `flutter run --debug` and a counter app will be visible on your device. This is JIT compiled, and
-can be hot-reloaded. If you want a release build use the `--release` flag instead, the profile mode
-is a bit more complex, refer to
+Can be hot-reloaded. If you want a release build use the `--release` flag instead, the profile mode
+Is a bit more complex, refer to
 [Flutter documentation](https://docs.flutter.dev/testing/build-modes#profile) for more detail.
 
 ## Project Structure
 
 Every Dart project is defined by a `pubspec.yaml` file at the root. This is the single source of
-truth for dependencies, metadata, and build configuration — similar to `package.json` (Node),
+Truth for dependencies, metadata, and build configuration — similar to `package.json` (Node),
 `Cargo.toml` (Rust), or `go.mod` (Go).
 
 ### pubspec.yaml
@@ -73,13 +73,13 @@ dev_dependencies:
 
 Key fields:
 
-| Field              | Purpose                                                             |
+| Field | Purpose |
 | ------------------ | ------------------------------------------------------------------- |
-| `name`             | Package identifier, must be lowercase_with_underscores              |
-| `environment.sdk`  | Dart SDK version constraint. Use caret syntax for compatible ranges |
-| `dependencies`     | Packages required at runtime                                        |
-| `dev_dependencies` | Packages required only for development (testing, linting, codegen)  |
-| `publish_to`       | Set to `'none'` for private packages                                |
+| `name` | Package identifier, must be lowercase_with_underscores |
+| `environment.sdk` | Dart SDK version constraint. Use caret syntax for compatible ranges |
+| `dependencies` | Packages required at runtime |
+| `dev_dependencies` | Packages required only for development (testing, linting, codegen) |
+| `publish_to` | Set to `'none'` for private packages |
 
 ### Typical project layout
 
@@ -102,13 +102,13 @@ my_app/
 ```
 
 The `bin/` directory is for executable entry points. The `lib/` directory contains reusable library
-code. The `test/` directory mirrors `lib/` structure for test files.
+Code. The `test/` directory mirrors `lib/` structure for test files.
 
 ## Packages and Dependencies
 
 ### pub get
 
-After editing `pubspec.yaml`, run:
+After editing `pubspec.yaml`Run:
 
 ```bash
 dart pub get
@@ -146,8 +146,8 @@ dart pub remove http
 ### Dependency resolution
 
 Dart uses a **pubspec lockfile** model. `pubspec.lock` pins exact versions. Commit `pubspec.lock` to
-version control for applications. For libraries (packages intended to be consumed by others), you
-typically do **not** commit `pubspec.lock` — consumers resolve versions themselves.
+Version control for applications. For libraries (packages intended to be consumed by others), you
+ do **not** commit `pubspec.lock` — consumers resolve versions themselves.
 
 ## Static Analysis: dart analyze
 
@@ -172,11 +172,11 @@ analyzer:
 
 Common lint packages:
 
-| Package              | Description                                                   |
+| Package | Description |
 | -------------------- | ------------------------------------------------------------- |
-| `lints`              | Official Google lint rules (`recommended.yaml` / `core.yaml`) |
-| `very_good_analysis` | Very Good Ventures' stricter ruleset                          |
-| `flutter_lints`      | Flutter-specific lint rules                                   |
+| `lints` | Official Google lint rules (`recommended.yaml` / `core.yaml`) |
+| `very_good_analysis` | Very Good Ventures' stricter ruleset |
+| `flutter_lints` | Flutter-specific lint rules |
 
 Run with info-level output:
 
@@ -195,7 +195,7 @@ dart format --output=show .  # dry-run, show diff
 ```
 
 Dart has an opinionated formatter (similar to `gofmt`). There are no configuration options — the
-formatter enforces a single canonical style. This eliminates style debates in code review.
+Formatter enforces a single canonical style. This eliminates style debates in code review.
 
 Line length defaults to 80 characters. Change it in `analysis_options.yaml`:
 
@@ -213,7 +213,7 @@ dart run bin/my_app.dart arg1 arg2
 ```
 
 `dart run` compiles and executes in one step. For JIT performance during development, this is the
-standard command.
+Standard command.
 
 ### dart compile
 
@@ -227,7 +227,7 @@ dart compile wasm bin/my_app.dart              # WebAssembly
 ```
 
 `dart compile exe` produces a self-contained binary with no VM dependency. Binary sizes are
-typically 3–10 MB for a minimal application.
+ 3–10 MB for a minimal application.
 
 ### flutter run
 
@@ -247,7 +247,7 @@ Hot reload during debug: press `r` in the terminal. Hot restart (full state rese
 ### VS Code Debugger
 
 Set breakpoints by clicking the gutter (line number area) or pressing `F9`. Press `F5` to start
-debugging. The debug panel shows variables, call stack, and breakpoints.
+Debugging. The debug panel shows variables, call stack, and breakpoints.
 
 ### Dart DevTools
 
@@ -270,7 +270,7 @@ DevTools provides:
 ### Observatory (Legacy)
 
 The VM service is available at `http://localhost:XXXXX/` when running in debug mode. DevTools
-connects to this service. You can also access it directly in a browser for low-level VM inspection.
+Connects to this service. You can also access it directly in a browser for low-level VM inspection.
 
 ## Testing Basics
 
@@ -333,11 +333,19 @@ expect(fn(), completion(equals(42)));          // Future completes with value
 ## Common Pitfalls
 
 - **Not committing `pubspec.lock` for applications**: For apps (not libraries), always commit
-  `pubspec.lock`. Without it, different developers or CI runs may resolve different dependency
-  versions, causing "works on my machine" issues.
+ `pubspec.lock`. Without it, different developers or CI runs may resolve different dependency
+ versions, causing "works on my machine" issues.
 - **Running `dart analyze` before `dart pub get`**: The analyzer needs the
-  `.dart_tool/package_config.json` generated by `pub get`. Run `pub get` first.
+ `.dart_tool/package_config.json` generated by `pub get`. Run `pub get` first.
 - **Ignoring `dev_dependencies` in production**: `dev_dependencies` like `test` and `lints` are not
-  included in release builds, but they must be present during development.
+ included in release builds, but they must be present during development.
 - **Using `flutter run` for benchmarking**: Debug mode has assertions enabled, no optimizations, and
-  uses JIT. Always use `--release` or `--profile` for performance measurements.
+ uses JIT. Always use `--release` or `--profile` for performance measurements.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

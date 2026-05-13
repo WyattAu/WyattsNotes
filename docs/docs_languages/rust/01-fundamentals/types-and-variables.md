@@ -7,20 +7,20 @@ slug: types-and-variables
 ## Integer Types
 
 Rust provides signed and unsigned integers at every power-of-two width from 8 to 128 bits, plus
-platform-dependent `isize` and `usize`:
+Platform-dependent `isize` and `usize`:
 
-| Type              | Size (bytes) | Range (signed)                                                                                              | Range (unsigned)                                         |
+| Type | Size (bytes) | Range (signed) | Range (unsigned) |
 | ----------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `i8` / `u8`       | 1            | -128 to 127                                                                                                 | 0 to 255                                                 |
-| `i16` / `u16`     | 2            | -32,768 to 32,767                                                                                           | 0 to 65,535                                              |
-| `i32` / `u32`     | 4            | -2,147,483,648 to 2,147,483,647                                                                             | 0 to 4,294,967,295                                       |
-| `i64` / `u64`     | 8            | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807                                                     | 0 to 18,446,744,073,709,551,615                          |
-| `i128` / `u128`   | 16           | -170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727 | 0 to 340,282,366,920,938,463,463,374,607,431,768,211,455 |
-| `isize` / `usize` | 4 or 8       | Pointer-sized                                                                                               | Pointer-sized                                            |
+| `i8` / `u8` | 1 | -128 to 127 | 0 to 255 |
+| `i16` / `u16` | 2 | -32,768 to 32,767 | 0 to 65,535 |
+| `i32` / `u32` | 4 | -2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
+| `i64` / `u64` | 8 | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
+| `i128` / `u128` | 16 | -170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727 | 0 to 340,282,366,920,938,463,463,374,607,431,768,211,455 |
+| `isize` / `usize` | 4 or 8 | Pointer-sized | Pointer-sized |
 
 The default integer type is `i32`. This is not an arbitrary choice — on x86-64, `i32` operations are
-as fast as any smaller integer width, and using `i32` avoids the implicit sign-extension or
-zero-extension overhead that `i8`/`u8` incur in many contexts.
+As fast as any smaller integer width, and using `i32` avoids the implicit sign-extension or
+Zero-extension overhead that `i8`/`u8` incur in many contexts.
 
 ### Integer Literals
 
@@ -33,7 +33,7 @@ let byte = b'A';        // u8 only
 ```
 
 The underscore separator is valid anywhere within a numeric literal for readability. It is ignored
-by the compiler.
+By the compiler.
 
 ### Integer Overflow
 
@@ -67,21 +67,21 @@ assert_eq!(std::mem::size_of::<bool>(), 1);
 ```
 
 Alignment determines the memory address at which a value must be stored. A `u64` with alignment 8
-must be placed at an address divisible by 8. Misaligned access on x86-64 works but may be slower; on
+Must be placed at an address divisible by 8. Misaligned access on x86-64 works but may be slower; on
 ARM without unaligned access support, it traps.
 
 ## Floating-Point Types
 
 Rust has two floating-point types conforming to IEEE 754-2008:
 
-| Type  | Size    | Precision             | Range (approximate) |
+| Type | Size | Precision | Range (approximate) |
 | ----- | ------- | --------------------- | ------------------- |
-| `f32` | 4 bytes | ~6-7 decimal digits   | plus/minus 3.4e38   |
-| `f64` | 8 bytes | ~15-16 decimal digits | plus/minus 1.8e308  |
+| `f32` | 4 bytes | ~6-7 decimal digits | plus/minus 3.4e38 |
+| `f64` | 8 bytes | ~15-16 decimal digits | plus/minus 1.8e308 |
 
 The default is `f64`. On modern x86-64 hardware, `f64` operations are as fast as `f32` — there is no
-performance penalty for using the larger type. Use `f32` only when you need to reduce memory
-bandwidth (e.g., GPU shaders, large arrays of floats in ML workloads).
+Performance penalty for using the larger type. Use `f32` only when you need to reduce memory
+Bandwidth (e.g., GPU shaders, large arrays of floats in ML workloads).
 
 ```rust
 let x = 2.0;        // f64
@@ -106,8 +106,8 @@ assert!(!nan.is_nan());        // false — use is_nan() for the check
 :::warning
 
 Floating-point types do not implement `Eq` or `Ord` because IEEE 754 semantics make total ordering
-impossible (NaN breaks reflexivity and transitivity). Use `f64::total_cmp()` (stable since 1.62) if
-you need a total ordering for sorting.
+Impossible (NaN breaks reflexivity and transitivity). Use `f64::total_cmp()` (stable since 1.62) if
+You need a total ordering for sorting.
 
 :::
 
@@ -121,20 +121,20 @@ sorted.sort_by(|a, b| a.total_cmp(b));
 ## Boolean Type
 
 `bool` is one byte, not one bit. This is because every byte in memory must be addressable, and a
-single-bit `bool` would require bit-packing overhead for every access.
+Single-bit `bool` would require bit-packing overhead for every access.
 
 ```rust
 let x: bool = true;
 assert_eq!(std::mem::size_of::<bool>(), 1);
 ```
 
-`bool` implements `Copy`, `Clone`, `Debug`, `Display`, and the bitwise operators (`!`, `&`, `|`,
-`^`) via the `BitAnd`, `BitOr`, `BitXor`, `Not` traits.
+`bool` implements `Copy``Clone``Debug``Display`And the bitwise operators (`!``&``|`
+`^`) via the `BitAnd``BitOr``BitXor``Not` traits.
 
 ## Character Type
 
 Rust's `char` is a Unicode scalar value, not a byte and not a code point. It is always 4 bytes and
-represents any Unicode code point from U+0000 to U+10FFFF, excluding surrogate code points
+Represents any Unicode code point from U+0000 to U+10FFFF, excluding surrogate code points
 (U+D800–U+DFFF).
 
 ```rust
@@ -148,15 +148,15 @@ assert_eq!(std::mem::size_of::<char>(), 4);
 
 A `char` is not a "character" in the text-processing sense. A single user-perceived grapheme cluster
 (like "é" which may be one code point U+00E9 or two code points U+0065 + U+0301) may require
-multiple `char` values. For text processing, work with `&str` slices and the `unicode-segmentation`
-crate.
+Multiple `char` values. For text processing, work with `&str` slices and the `unicode-segmentation`
+Crate.
 
 :::
 
 ### `char` vs `u8`
 
 A `u8` holds a byte value (0–255). A `char` holds a Unicode scalar value (0–1,114,111, excluding
-surrogates). Converting between them is explicit and fallible:
+Surrogates). Converting between them is explicit and fallible:
 
 ```rust
 let byte: u8 = 97;
@@ -187,7 +187,7 @@ assert_eq!(tuple.2, "hello");
 ### Unit Tuple
 
 `()` (the empty tuple, pronounced "unit") is Rust's void type. Functions that return nothing
-implicitly return `()`. It has size 0 and alignment 1.
+Implicitly return `()`. It has size 0 and alignment 1.
 
 ```rust
 assert_eq!(std::mem::size_of::<()>(), 0);
@@ -195,10 +195,10 @@ fn do_nothing() {}
 fn explicit_unit() -> () {}
 ```
 
-The zero-sized type (ZST) property of `()` is important for generic programming. In `Result<T, ()>`,
-the error variant carries no payload overhead since `()` is a ZST. Additionally, if `T` has a niche
+The zero-sized type (ZST) property of `()` is important for generic programming. In `Result<T, ()>`
+The error variant carries no payload overhead since `()` is a ZST. Additionally, if `T` has a niche
 (e.g., `Option<T>` where `None` is represented by a sentinel value), the compiler can eliminate the
-discriminant entirely through niche optimization.
+Discriminant entirely through niche optimization.
 
 ### Tuple Structs
 
@@ -210,8 +210,8 @@ let Point(x, y, z) = p;
 ```
 
 Tuple structs are named tuples. They are structurally similar to plain tuples but have a distinct
-type, which is critical for type safety — a `Point(f64, f64)` and a `Vector(f64, f64)` are different
-types even though they have the same layout.
+Type, which is critical for type safety — a `Point(f64, f64)` and a `Vector(f64, f64)` are different
+Types even though they have the same layout.
 
 ## Arrays
 
@@ -227,8 +227,8 @@ let slice: &[i32] = &arr[1..3]; // [2, 3]
 ### Array Bounds
 
 Out-of-bounds access panics in safe Rust. The compiler inserts bounds checks at runtime. In release
-mode with `--release`, bounds checks are still present by default (they are only elided when the
-compiler can prove the index is in bounds statically).
+Mode with `--release`Bounds checks are still present by default (they are only elided when the
+Compiler can prove the index is in bounds statically).
 
 ```rust
 let arr = [1, 2, 3];
@@ -248,7 +248,7 @@ if idx < arr.len() {
 ### Array Coercion to Slices
 
 Arrays coerce to slices (`&[T]` or `&mut [T]`). This is how most standard library APIs accept
-arrays:
+Arrays:
 
 ```rust
 fn sum(data: &[i32]) -> i32 {
@@ -273,7 +273,7 @@ assert_eq!(first(&arr), Some(&10));
 ```
 
 This is a significant improvement over the pre-const-generics era where you had to work with slices
-and lose the compile-time size information.
+And lose the compile-time size information.
 
 ## Vectors
 
@@ -308,8 +308,8 @@ let v = Vec::with_capacity(100); // pre-allocate, no reallocation until 101 elem
 ### Capacity and Reallocation
 
 When `push` would exceed capacity, the vector allocates a new buffer with `capacity * 2` (or a
-platform-specific growth factor) and copies all elements. This is amortized O(1) per push, but a
-single push can be O(n) when reallocation occurs.
+Platform-specific growth factor) and copies all elements. This is amortized O(1) per push, but a
+Single push can be O(n) when reallocation occurs.
 
 ```rust
 let mut v = Vec::with_capacity(4);
@@ -334,20 +334,20 @@ v.retain(|&x| x > 3);
 ```
 
 `drain` removes a range of elements and returns an iterator that yields ownership of them. `retain`
-removes elements that do not satisfy the predicate in-place.
+Removes elements that do not satisfy the predicate in-place.
 
 ## String vs `&str`
 
 This is one of the most common sources of confusion for new Rust programmers. Rust has two string
-types:
+Types:
 
-| Type     | Ownership | Location                       | Size                                 | Growable |
+| Type | Ownership | Location | Size | Growable |
 | -------- | --------- | ------------------------------ | ------------------------------------ | -------- |
-| `String` | Owned     | Heap                           | 24 bytes (ptr + len + cap on 64-bit) | Yes      |
-| `&str`   | Borrowed  | Anywhere (stack, heap, static) | 16 bytes (ptr + len)                 | No       |
+| `String` | Owned | Heap | 24 bytes (ptr + len + cap on 64-bit) | Yes |
+| `&str` | Borrowed | Anywhere (stack, heap, static) | 16 bytes (ptr + len) | No |
 
 `String` is a `Vec<u8>` guaranteed to hold valid UTF-8. `&str` is a slice of UTF-8 bytes. Every
-`String` can be dereferenced to `&str`, but not vice versa.
+`String` can be dereferenced to `&str`But not vice versa.
 
 ```rust
 let s: String = String::from("hello");
@@ -376,7 +376,7 @@ assert_eq!(s.chars().count(), 5);  // 5 characters
 ```
 
 Indexing into a string with `s[0]` is not valid because the index is byte-based, and a byte index
-may fall in the middle of a multi-byte character:
+May fall in the middle of a multi-byte character:
 
 ```rust
 let s = "こんにちは";
@@ -407,7 +407,7 @@ let combined = format!("{} {}", "hello", "world"); // "hello world"
 ### String Interning and `&'static str`
 
 String literals are `&'static str` — they live for the entire duration of the program. They are
-embedded in the binary's read-only data section.
+Embedded in the binary's read-only data section.
 
 ```rust
 let s: &'static str = "hello";  // lives forever
@@ -419,8 +419,8 @@ For interning strings at runtime (deduplicating identical strings), use the `str
 ## Type Inference
 
 Rust's type inference is local and flow-insensitive. The compiler infers types from usage within a
-single function body but does not perform interprocedural type inference. This is a deliberate
-design choice — it keeps compilation fast and error messages comprehensible.
+Single function body but does not perform interprocedural type inference. This is a deliberate
+Design choice — it keeps compilation fast and error messages comprehensible.
 
 ```rust
 let x = 42;            // i32 (default integer type)
@@ -469,8 +469,8 @@ let _ = expensive_call(); // call evaluated, result discarded
 ## Shadowing
 
 Rust allows you to declare a new variable with the same name as an existing one. The new variable
-shadows the previous one. This is not mutation — the old variable still exists but is no longer
-accessible by name.
+Shadows the previous one. This is not mutation — the old variable still exists but is no longer
+Accessible by name.
 
 ```rust
 let x = 5;
@@ -489,7 +489,7 @@ y = y + 1;           // mutation — same binding, modified in place
 ```
 
 Shadowing is useful for type transformations and for reusing a name after a value is no longer
-needed (e.g., after moving it):
+Needed (e.g., after moving it):
 
 ```rust
 let s = String::from("hello");
@@ -512,7 +512,7 @@ y = 6;     // OK
 
 Variable mutability (`let mut`) controls whether you can reassign the binding. Interior mutability
 (Cell, RefCell, Mutex) controls whether you can modify the value through a shared reference. These
-are orthogonal concepts.
+Are orthogonal concepts.
 
 ```rust
 let x = Cell::new(5);  // x is immutable
@@ -539,7 +539,7 @@ let p = Point { x: 1.0, y: 2.0 };
 ```
 
 There is no `let p = Point { mut x: 1.0, y: 2.0 }` syntax. Mutability is on the binding, not on the
-field.
+Field.
 
 ## Constants vs Static
 
@@ -568,7 +568,7 @@ static GREETING: &str = "hello";
 - Has a single memory address for the entire program
 - Lives for `'static` lifetime
 - Must be `Sync` (accessible from multiple threads)
-- Can be mutated with interior mutability (`AtomicUsize`, `Mutex`, `OnceLock`)
+- Can be mutated with interior mutability (`AtomicUsize``Mutex``OnceLock`)
 
 ```rust
 use std::sync::atomic::{AtomicUsize, Ordering};
@@ -583,15 +583,15 @@ fn increment() {
 :::warning
 
 Do not use `static mut`. It is the source of undefined behavior in multi-threaded contexts and
-requires `unsafe` blocks to access. Prefer `static` with `Mutex`, `AtomicUsize`, or `OnceLock`
-instead.
+Requires `unsafe` blocks to access. Prefer `static` with `Mutex``AtomicUsize`Or `OnceLock`
+Instead.
 
 :::
 
 ## Type Aliases
 
 Type aliases create an alias for an existing type. They do not create a new type — the alias is
-interchangeable with the original.
+Interchangeable with the original.
 
 ```rust
 type Kilometers = i32;
@@ -614,8 +614,8 @@ let x: i32 = distance.0;   // OK — explicit field access
 ## The Never Type `!`
 
 The never type `!` represents computations that never return. It has no values and cannot be
-instantiated. It coerces to any type, which is why diverging functions can be used in expression
-context:
+Instantiated. It coerces to any type, which is why diverging functions can be used in expression
+Context:
 
 ```rust
 fn diverge() -> ! {
@@ -639,7 +639,7 @@ Functions that return `!` are called "diverging functions." Common examples:
 - Infinite loops (`loop { ... }`) — if the loop has no break
 
 `!` is not yet a stable type in Rust's type system (it is a compiler-internal concept), but you can
-use it in function return types. RFC 2361 tracks its stabilization.
+Use it in function return types. RFC 2361 tracks its stabilization.
 
 ### `!` in Match Arms
 
@@ -716,7 +716,7 @@ println!("{} {}", p.x, p.y);   // OK — p is not moved
 ## Numeric Conversions
 
 Rust does not perform implicit numeric conversions. Every conversion between numeric types is
-explicit:
+Explicit:
 
 ```rust
 let x: i32 = 42;
@@ -738,8 +738,8 @@ let z: i8 = 128i32 as i8;       // -128 (wraps)
 :::warning
 
 `as` for integer-to-integer casts is well-defined (wrapping/truncation semantics). `as` for
-float-to-integer casts saturates: NaN and out-of-range values become 0 (for unsigned) or the minimum
-value (for signed). This behavior is documented in the reference but surprises people coming from C.
+Float-to-integer casts saturates: NaN and out-of-range values become 0 (for unsigned) or the minimum
+Value (for signed). This behavior is documented in the reference but surprises people coming from C.
 
 :::
 
@@ -758,7 +758,7 @@ let y: Result<u8, _> = 256u32.try_into(); // Err(TryFromIntError)
 
 ## Raw Pointers
 
-Raw pointers (`*const T`, `*mut T`) exist but are restricted to `unsafe` blocks:
+Raw pointers (`*const T``*mut T`) exist but are restricted to `unsafe` blocks:
 
 ```rust
 let x = 42;
@@ -773,55 +773,63 @@ unsafe {
 ```
 
 Raw pointers can be null, misaligned, or dangling — the compiler does not check them. They are
-necessary for FFI and for implementing safe abstractions over unsafe memory operations.
+Necessary for FFI and for implementing safe abstractions over unsafe memory operations.
 
 ## Visibility of Primitive Types
 
 All primitive types are in the prelude and are always in scope. You do not need to import them. The
-following is an approximate list of commonly used prelude items (see the
+Following is an approximate list of commonly used prelude items (see the
 [standard library prelude](https://doc.rust-lang.org/std/prelude/index.html) for the authoritative
-list): `Option`, `Result`, `Vec`, `String`, `Box`, `Drop`, `Clone`, `Copy`, `Deref`, `DerefMut`,
-`AsRef`, `AsMut`, `From`, `Into`, `IntoIterator`, `Fn`, `FnMut`, `FnOnce`, `Send`, `Sync`, `Unpin`,
-`Sized`, `Debug`, `Display`, `Iterator`, `Extend`, `PartialEq`, `PartialOrd`, `Eq`, `Ord`, `Hash`,
-`Default`, `ToString`, `println`, `eprintln`, `format`, `vec`, `drop`.
+List): `Option``Result``Vec``String``Box``Drop``Clone``Copy``Deref``DerefMut`
+`AsRef``AsMut``From``Into``IntoIterator``Fn``FnMut``FnOnce``Send``Sync``Unpin`
+`Sized``Debug``Display``Iterator``Extend``PartialEq``PartialOrd``Eq``Ord``Hash`
+`Default``ToString``println``eprintln``format``vec``drop`.
 
 ## Common Pitfalls
 
 1. **Assuming `char` is a byte.** `char` is always 4 bytes and represents a Unicode scalar value.
-   For byte-level text processing, use `u8` or `&[u8]`. For ASCII-only text, `char` works but wastes
-   3 bytes per character.
+ For byte-level text processing, use `u8` or `&[u8]`. For ASCII-only text, `char` works but wastes
+ 3 bytes per character.
 
 2. **Using `String` when `&str` suffices.** If a function only needs to read a string, take `&str`
-   as the parameter type. This allows the caller to pass both `&String` (auto-deref) and string
-   literals without allocation.
+ as the parameter type. This allows the caller to pass both `&String` (auto-deref) and string
+ literals without allocation.
 
 3. **Integer overflow in release mode.** The compiler does not check for overflow in release builds.
-   Use `wrapping_*`, `saturating_*`, `checked_*`, or `overflowing_*` methods explicitly when
-   overflow is possible and wrapping is not desired.
+ Use `wrapping_*``saturating_*``checked_*`Or `overflowing_*` methods explicitly when
+ overflow is possible and wrapping is not desired.
 
 4. **Floating-point equality.** Never use `==` to compare floats for equality. Use an epsilon
-   comparison or the `approx` crate. `f32` and `f64` do not implement `Eq` precisely because of
-   this.
+ comparison or the `approx` crate. `f32` and `f64` do not implement `Eq` precisely because of
+ this.
 
 5. **Indexing strings with byte offsets.** `s[i]` where `i` is a byte offset will panic if the index
-   falls on a non-ASCII character boundary. Use `s.chars().nth(i)` for character indexing (O(n)) or
-   `s.char_indices()` for byte-safe iteration.
+ falls on a non-ASCII character boundary. Use `s.chars().nth(i)` for character indexing (O(n)) or
+ `s.char_indices()` for byte-safe iteration.
 
 6. **Confusing `const` and `static`.** `const` values are inlined — they have no memory address. Use
-   `static` when you need a single address (e.g., for a global counter, FFI callback, or
-   `LazyLock`).
+ `static` when you need a single address (e.g., for a global counter, FFI callback, or
+ `LazyLock`).
 
 7. **Shadowing vs mutation.** Shadowing creates a new binding; it does not modify the old one. If
-   you need to observe the change through a reference or a closure, use `let mut` instead.
+ you need to observe the change through a reference or a closure, use `let mut` instead.
 
 8. **`as` casts silently truncating.** `300i32 as u8` becomes 44 without any warning. Use
-   `TryInto::try_into()` for fallible conversions that propagate errors.
+ `TryInto::try_into()` for fallible conversions that propagate errors.
 
 9. **`Vec` vs array misuse.** Arrays are stack-allocated with a compile-time known size. `Vec` is
-   heap-allocated with a runtime-determined size. If the size is known at compile time and small,
-   prefer arrays — they avoid heap allocation and have better cache locality.
+ heap-allocated with a runtime-determined size. If the size is known at compile time and small,
+ prefer arrays — they avoid heap allocation and have better cache locality.
 
 10. **Ignoring alignment.** On some platforms (notably ARM), misaligned access to multi-byte
-    integers causes a hardware trap (SIGBUS). Even on x86-64, misaligned access can be significantly
-    slower. Use `#[repr(C)]` or `#[repr(align(N))]` when interfacing with C or when alignment
-    matters.
+ integers causes a hardware trap (SIGBUS). Even on x86-64, misaligned access can be significantly
+ slower. Use `#[repr(C)]` or `#[repr(align(N))]` when interfacing with C or when alignment
+ matters.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

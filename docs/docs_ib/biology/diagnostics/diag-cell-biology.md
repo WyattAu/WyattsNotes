@@ -21,9 +21,9 @@ hide_table_of_contents: true
 | Ribosomes | 70S (30S + 50S subunits) | 80S (40S + 60S subunits); 70S in mitochondria/chloroplasts |
 | Organelles | None (no nucleus, mitochondria, ER, etc.) | Membrane-bound organelles present (nucleus, mitochondria, ER, Golgi) |
 | Cell division | Binary fission (no spindle) | Mitosis (and meiosis); spindle apparatus involved |
-| Size | 0.5--5 $\mu$m | 10--100 $\mu$m |
+| Size | 0.5--5 $\mu$M | 10--100 $\mu$M |
 
-Prokaryotes reproduce faster because: (1) binary fission is simpler than mitosis -- no spindle formation or nuclear envelope breakdown; (2) they have a smaller genome to replicate (circular DNA, no histones); (3) they have no membrane-bound organelles to distribute; (4) their small size means a high surface-area-to-volume ratio for rapid nutrient uptake; (5) generation times can be as short as 20 minutes (E. coli) compared to hours or days for eukaryotic cells.
+Prokaryotes reproduce faster because: (1) binary fission is simpler than mitosis -- no spindle formation or nuclear envelope breakdown; (2) they have a smaller genome to replicate (circular DNA, no histones); (3) they have no membrane-bound organelles to distribute; (4) their small size means a high surface-area-to-volume ratio for rapid nutrient uptake; (5) generation times can be as short as 20 minutes (E. Coli) compared to hours or days for eukaryotic cells.
 
 ---
 ### UT-2: Organelle Structure-Function Relationships
@@ -39,13 +39,13 @@ Prokaryotes reproduce faster because: (1) binary fission is simpler than mitosis
 
 ---
 ### UT-3: Fluid Mosaic Model and Membrane Transport
-**Question:** Describe the fluid mosaic model of membrane structure. Explain why small non-polar molecules (e.g., $\text{O}_2$, $\text{CO}_2$) can diffuse across the membrane easily, while ions (e.g., $\text{Na}^+$) require transport proteins. Include the roles of cholesterol and integral proteins.
+**Question:** Describe the fluid mosaic model of membrane structure. Explain why small non-polar molecules (e.g., $\text{O}_2$$\text{CO}_2$) can diffuse across the membrane , while ions (e.g., $\text{Na}^+$) require transport proteins. Include the roles of cholesterol and integral proteins.
 
 **Solution:**
 
 The fluid mosaic model (Singer and Nicolson, 1972) describes the membrane as a fluid bilayer of phospholipids with embedded proteins. The phospholipids have hydrophilic phosphate heads facing outward and hydrophobic fatty acid tails facing inward. The membrane is "fluid" because phospholipids can move laterally within their layer (but rarely flip-flop between layers), and proteins can drift within the bilayer. "Mosaic" refers to the scattered pattern of different proteins.
 
-Small non-polar molecules diffuse easily because the hydrophobic core of the bilayer (fatty acid tails) presents no energetic barrier to them -- they are soluble in the lipid environment. They move down their concentration gradient by simple diffusion.
+Small non-polar molecules diffuse because the hydrophobic core of the bilayer (fatty acid tails) presents no energetic barrier to them -- they are soluble in the lipid environment. They move down their concentration gradient by simple diffusion.
 
 Ions are charged and hydrophilic. The hydrophobic core is highly unfavourable for charged species -- the dielectric constant is very different from water. Ions cannot shed their hydration shell to enter the non-polar interior. Transport proteins (channel proteins or carrier proteins) provide a hydrophilic pathway through the membrane. Channel proteins form pores with polar amino acid linings; carrier proteins undergo conformational changes to shuttle ions across.
 
@@ -54,7 +54,7 @@ Cholesterol is embedded between phospholipids in animal cell membranes. It acts 
 ## Integration Tests
 
 ### IT-1: Cell Division and Cancer (with Molecular Biology)
-**Question:** Explain how a mutation in a proto-oncogene can lead to uncontrolled cell division. Include the roles of: (a) the normal proto-oncogene product, (b) how the mutation changes its function, (c) the cell cycle checkpoints that should prevent this, and (d) why multiple mutations are typically required for cancer development.
+**Question:** Explain how a mutation in a proto-oncogene can lead to uncontrolled cell division. Include the roles of: (a) the normal proto-oncogene product, (b) how the mutation changes its function, (c) the cell cycle checkpoints that should prevent this, and (d) why multiple mutations are required for cancer development.
 
 **Solution:**
 
@@ -67,7 +67,7 @@ Cholesterol is embedded between phospholipids in animal cell membranes. It acts 
 - G2 checkpoint: verifies DNA replication is complete and error-free before mitosis.
 - M checkpoint (spindle assembly checkpoint): ensures all chromosomes are properly attached to spindle fibres before anaphase.
 
-(d) Multiple mutations are required because cells have redundant tumour suppressor mechanisms. Typically, cancer requires: activation of at least one oncogene, inactivation of at least one tumour suppressor gene (e.g., p53, Rb), and mutations enabling angiogenesis and metastasis. A single mutation is usually insufficient because the remaining checkpoints can still halt division or trigger apoptosis.
+(d) Multiple mutations are required because cells have redundant tumour suppressor mechanisms. , cancer requires: activation of at least one oncogene, inactivation of at least one tumour suppressor gene (e.g., p53, Rb), and mutations enabling angiogenesis and metastasis. A single mutation is insufficient because the remaining checkpoints can still halt division or trigger apoptosis.
 
 ---
 ### IT-2: Endosymbiosis and Evolution (with Evolution and Genetics)
@@ -83,7 +83,7 @@ Three pieces of evidence:
 
 3. **Binary fission reproduction:** Both organelles divide by binary fission, the same process used by prokaryotes, rather than by mitosis. They cannot be synthesised de novo -- new organelles arise only from pre-existing ones.
 
-Maternal inheritance explanation: During fertilisation, the sperm contributes primarily nuclear DNA to the zygote. The sperm's midpiece contains mitochondria for powering flagellar movement, but these mitochondria (along with the rest of the tail) are typically excluded from the zygote upon fusion. The egg cell (ovum) is much larger and contains thousands of mitochondria in its cytoplasm. Therefore, the zygote inherits its mitochondria almost exclusively from the mother. Additionally, in many species, there is an active mechanism to selectively degrade sperm-derived mitochondria in the zygote through ubiquitin-mediated autophagy.
+Maternal inheritance explanation: During fertilisation, the sperm contributes primarily nuclear DNA to the zygote. The sperm's midpiece contains mitochondria for powering flagellar movement, but these mitochondria (along with the rest of the tail) are excluded from the zygote upon fusion. The egg cell (ovum) is much larger and contains thousands of mitochondria in its cytoplasm. Therefore, the zygote inherits its mitochondria almost exclusively from the mother. Additionally, in many species, there is an active mechanism to selectively degrade sperm-derived mitochondria in the zygote through ubiquitin-mediated autophagy.
 
 ---
 ### IT-3: Membrane Transport and Neurone Function (with Human Physiology)

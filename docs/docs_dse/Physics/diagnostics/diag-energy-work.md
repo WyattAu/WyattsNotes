@@ -180,7 +180,7 @@ Using energy conservation (taking bridge as zero GPE reference):
 
 $$mgd = \frac{1}{2}kx^2 + \frac{1}{2}mv_{\max}^2$$
 
-where $d = 38.73$ m and $x = 13.73$ m:
+Where $d = 38.73$ m and $x = 13.73$ m:
 
 $$70 \times 9.81 \times 38.73 = \frac{1}{2}(50)(13.73)^2 + \frac{1}{2}(70)v_{\max}^2$$
 
@@ -196,7 +196,7 @@ At maximum extension, velocity $= 0$ (all energy converted to spring PE and GPE 
 
 $$mg(d + x_{\max}) = \frac{1}{2}kx_{\max}^2$$
 
-where $d = 25$ m (natural length):
+Where $d = 25$ m (natural length):
 
 $$70 \times 9.81 \times (25 + x_{\max}) = \frac{1}{2}(50)x_{\max}^2$$
 
@@ -238,7 +238,7 @@ The normal force on the inclined section:
 
 $$N = mg \cos\alpha$$
 
-where $\cos\alpha = \frac{40}{41.76} = 0.9578$:
+Where $\cos\alpha = \frac{40}{41.76} = 0.9578$:
 
 $$N = 500 \times 9.81 \times 0.9578 = 4696.5 \text{ N}$$
 
@@ -266,6 +266,6 @@ $$v_{\text{top}} = \sqrt{\frac{2 \times 49060}{500}} = \sqrt{196.24} = 14.01 \te
 
 Minimum speed at top: $v_{\min} = \sqrt{gR} = \sqrt{9.81 \times 8} = \sqrt{78.48} = 8.86 \text{ m s}^{-1}$
 
-Since $14.01 \text{ m s}^{-1} \gt 8.86 \text{ m s}^{-1}$, **the car completes the loop**.
+Since $14.01 \text{ m s}^{-1} \gt 8.86 \text{ m s}^{-1}$**the car completes the loop**.
 
 **Key insight:** The minimum speed condition at the top of the loop requires the centripetal acceleration to be at least $g$ (so the normal force is just zero). Any higher speed means a positive normal force from the track.

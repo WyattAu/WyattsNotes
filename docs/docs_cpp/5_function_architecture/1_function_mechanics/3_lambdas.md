@@ -11,13 +11,13 @@ slug: lambda-expressions-capture-layouts-and-closure-types
 # Lambda Expressions: Capture Layouts and Closure Types
 
 A lambda expression produces a **closure object** — an unnamed object of an unnamed class type (the
-closure type). This section covers lambda syntax, capture modes, generic lambdas, stateful lambda
-lifetime issues, and the overhead of type erasure via `std::function`.
+Closure type). This section covers lambda syntax, capture modes, generic lambdas, stateful lambda
+Lifetime issues, and the overhead of type erasure via `std::function`.
 
 ## 3.1 Syntax and Structure [N4950 §8.1.5]
 
 A lambda expression produces a **closure object** — an unnamed object of an unnamed class type (the
-closure type). The closure type contains:
+Closure type). The closure type contains:
 
 - A public inline `operator()` corresponding to the lambda's parameters and body.
 - Data members corresponding to each captured entity.
@@ -91,16 +91,16 @@ int main() {
 
 ## 3.2 Capture Modes
 
-| Capture Syntax | Meaning                                       |
+| Capture Syntax | Meaning |
 | :------------- | :-------------------------------------------- |
-| `[]`           | No captures                                   |
-| `[=]`          | Capture all used variables by value (copy)    |
-| `[&]`          | Capture all used variables by reference       |
-| `[x]`          | Capture `x` by value                          |
-| `[&x]`         | Capture `x` by reference                      |
-| `[x, &y]`      | Capture `x` by value, `y` by reference        |
-| `[=, &x]`      | Capture all by value, except `x` by reference |
-| `[&, x]`       | Capture all by reference, except `x` by value |
+| `[]` | No captures |
+| `[=]` | Capture all used variables by value (copy) |
+| `[&]` | Capture all used variables by reference |
+| `[x]` | Capture `x` by value |
+| `[&x]` | Capture `x` by reference |
+| `[x, &y]` | Capture `x` by value, `y` by reference |
+| `[=, &x]` | Capture all by value, except `x` by reference |
+| `[&, x]` | Capture all by reference, except `x` by value |
 
 ```cpp
 #include <iostream>
@@ -193,12 +193,12 @@ int main() {
 ```
 
 Note that `[key, value]` alone in the capture list does NOT work for structured bindings — you must
-use init-capture syntax `[k = key, v = value]`.
+Use init-capture syntax `[k = key, v = value]`.
 
 ## 3.3 Mutable Lambdas
 
 By default, a lambda's `operator()` is `const`. The `mutable` keyword removes the `const` qualifier,
-allowing the lambda to modify its captured-by-value members:
+Allowing the lambda to modify its captured-by-value members:
 
 ```cpp
 #include <iostream>
@@ -224,14 +224,14 @@ int main() {
 ### Why `mutable` Exists
 
 The default `const` qualifier on `operator()` is a safety feature. It ensures that value captures
-are immutable by default, preventing accidental modification. The `mutable` keyword is an explicit
-opt-in that signals "I intend to modify the captured state." This mirrors the philosophy of `const`
-correctness throughout C++.
+Are immutable by default, preventing accidental modification. The `mutable` keyword is an explicit
+Opt-in that signals "I intend to modify the captured state." This mirrors the philosophy of `const`
+Correctness throughout C++.
 
 ### Stateful Lambdas as Function Objects
 
 A `mutable` lambda with captured state is a full function object. It can maintain state across
-invocations, making it useful for algorithms that need accumulation or filtering:
+Invocations, making it useful for algorithms that need accumulation or filtering:
 
 ```cpp
 #include <iostream>
@@ -259,12 +259,12 @@ int main() {
 ```
 
 Note: `std::transform` copies the lambda by value. Each copy has its own `total`. If you need a
-shared state across all copies, capture a `std::shared_ptr` or use a reference.
+Shared state across all copies, capture a `std::shared_ptr` or use a reference.
 
 ## 3.4 Generic Lambdas [N4950 §8.1.5.5]
 
 C++14 introduced generic lambdas with `auto` parameters. Each `auto` parameter generates a separate
-template parameter of the closure type's `operator()`.
+Template parameter of the closure type's `operator()`.
 
 ```cpp
 #include <iostream>
@@ -298,7 +298,7 @@ int main() {
 ### Generic Lambda with `auto&&` (Forwarding Reference)
 
 Using `auto&&` in a lambda parameter creates a forwarding reference, allowing the lambda to accept
-both lvalues and rvalues without unnecessary copies:
+Both lvalues and rvalues without unnecessary copies:
 
 ```cpp
 #include <iostream>
@@ -335,16 +335,16 @@ int main() {
 ```
 
 :::info
-Relevance Generic lambdas are the backbone of STL algorithms. `std::sort`, `std::transform`,
+Relevance Generic lambdas are the backbone of STL algorithms. `std::sort``std::transform`
 `std::find_if` all accept callable objects, and generic lambdas provide the most ergonomic way to
-pass custom comparators and predicates.
+Pass custom comparators and predicates.
 :::
 
 ## 3.5 Stateful Lambdas and Lifetime Issues
 
 A lambda that captures by reference holds references to local variables. If the lambda outlives
-those variables (e.g., by being returned or stored), the references become dangling — undefined
-behavior.
+Those variables (e.g., by being returned or stored), the references become dangling — undefined
+Behavior.
 
 ```cpp
 #include <functional>
@@ -377,8 +377,8 @@ int main() {
 
 ### Capturing `this` in Member Functions
 
-When a lambda is created inside a member function and captures `this`, it holds a raw pointer to the
-object. If the object is destroyed before the lambda executes, the pointer dangles:
+When a lambda is created inside a member function and captures `this`It holds a raw pointer to the
+Object. If the object is destroyed before the lambda executes, the pointer dangles:
 
 ```cpp
 #include <iostream>
@@ -431,7 +431,7 @@ int main() {
 ### `[*this]` Capture (C++17)
 
 C++17 introduced `[*this]` which captures the current object by value (calls the copy constructor),
-avoiding the dangling `this` pointer problem:
+Avoiding the dangling `this` pointer problem:
 
 ```cpp
 #include <iostream>
@@ -454,14 +454,14 @@ public:
 
 A lambda has a **unique, unnameable type**. Two lambdas with identical bodies have different types.
 This means lambdas cannot be stored in a heterogeneous container or returned as a specific type
-without type erasure.
+Without type erasure.
 
 `std::function<R(Args...)>` performs type erasure: it wraps any callable with a compatible signature
-behind a uniform interface. The cost of this flexibility is:
+Behind a uniform interface. The cost of this flexibility is:
 
 - **Indirection**: each invocation goes through a virtual dispatch or function pointer.
 - **Potential heap allocation**: large closures (exceeding the Small Buffer Optimization threshold)
-  are allocated on the heap.
+ are allocated on the heap.
 - **No inlining**: the call target is determined at runtime, preventing compiler optimization.
 
 ```cpp
@@ -503,8 +503,8 @@ int main() {
 ### `std::function` SBO Threshold
 
 The Small Buffer Optimization (SBO) threshold for `std::function` is implementation-defined but
-typically 1-3 machine words (8-24 bytes on 64-bit). Closures smaller than this are stored inline;
-larger ones are heap-allocated:
+ 1-3 machine words (8-24 bytes on 64-bit). Closures smaller than this are stored inline;
+Larger ones are heap-allocated:
 
 ```cpp
 #include <functional>
@@ -532,7 +532,7 @@ int main() {
 ### `std::function_ref`: Zero-Cost Type Erasure
 
 For non-owning references to callables, `std::function_ref` (C++26, or third-party implementations)
-provides type erasure without heap allocation:
+Provides type erasure without heap allocation:
 
 ```cpp
 #include <iostream>
@@ -572,8 +572,8 @@ int main() {
 
 ## 3.7 Lambda in Unevaluated Contexts
 
-Lambdas can appear in unevaluated contexts (`decltype`, `sizeof`, `noexcept`, `requires`), but with
-limitations:
+Lambdas can appear in unevaluated contexts (`decltype``sizeof``noexcept``requires`), but with
+Limitations:
 
 ```cpp
 #include <iostream>
@@ -601,7 +601,7 @@ int main() {
 ### Pitfall 1: Capturing by Reference in Async Code
 
 The most common source of dangling reference bugs is capturing local variables by reference in
-lambdas passed to asynchronous operations (threads, callbacks, futures):
+Lambdas passed to asynchronous operations (threads, callbacks, futures):
 
 ```cpp
 #include <iostream>
@@ -621,7 +621,7 @@ void async_bug() {
 ### Pitfall 2: Lambda Copy Semantics in STL Algorithms
 
 STL algorithms copy their callable arguments. If the lambda has mutable state, each copy has
-independent state:
+Independent state:
 
 ```cpp
 #include <iostream>
@@ -647,8 +647,8 @@ int main() {
 
 ### Pitfall 3: Overcapturing with `[=]` and `[&]`
 
-Default captures (`[=]`, `[&]`) capture everything that is used, which can inadvertently capture
-pointers, references to local variables, or `this`:
+Default captures (`[=]``[&]`) capture everything that is used, which can inadvertently capture
+Pointers, references to local variables, or `this`:
 
 ```cpp
 #include <iostream>
@@ -667,3 +667,11 @@ struct Handler {
 ```
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

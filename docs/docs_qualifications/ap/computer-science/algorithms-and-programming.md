@@ -57,15 +57,15 @@ PROCEDURE selectionSort(list)
 ```
 
 **Intuition.** Imagine picking cards from a shuffled deck one at a time. You scan all remaining
-cards, find the smallest, and place it next in your sorted hand. After $n$ passes, your hand is
-fully sorted.
+Cards, find the smallest, and place it next in your sorted hand. After $n$ passes, your hand is
+Fully sorted.
 
 **Why selection sort is $O(n^2)$.** The outer loop runs $n-1$ times. For each outer iteration, the
-inner loop scans the remaining unsorted portion. The total number of comparisons is
+Inner loop scans the remaining unsorted portion. The total number of comparisons is
 $(n-1) + (n-2) + \cdots + 1 = n(n-1)/2 = O(n^2)$.
 
 **Stability.** Selection sort is **not stable** because swapping `arr[i]` with `arr[minIdx]` can
-move an equal element past another equal element.
+Move an equal element past another equal element.
 
 **Worked Example.** Trace selection sort on `[5, 3, 8, 1, 2]`.
 
@@ -96,11 +96,11 @@ public static void insertionSort(int[] arr) {
 
 **Intuition.** Imagine sorting a hand of playing cards. You hold the first card in your left hand
 (sorted). You pick up the next card with your right hand and insert it into the correct position in
-your left hand by shifting larger cards to the right.
+Your left hand by shifting larger cards to the right.
 
 **Why insertion sort is $O(n^2)$ in the worst case.** If the array is in reverse order, each new
-element must be shifted all the way to the front. The $i$-th element requires up to $i$ shifts, so
-the total is $1 + 2 + \cdots + (n-1) = O(n^2)$.
+Element must be shifted all the way to the front. The $i$-th element requires up to $i$ shifts, so
+The total is $1 + 2 + \cdots + (n-1) = O(n^2)$.
 
 **Best case $O(n)$.** If the array is already sorted, each element requires zero shifts.
 
@@ -143,7 +143,7 @@ private static void merge(int[] arr, int left, int mid, int right) {
 ```
 
 **Complexity analysis.** The recursion tree has $\log_2 n$ levels. At each level, a total of $n$
-elements are merged.
+Elements are merged.
 
 $$T(n) = 2T(n/2) + O(n) \implies T(n) = O(n \log n)$$
 
@@ -151,15 +151,15 @@ This holds for best, average, and worst case.
 
 ### Comparing Sorting Algorithms
 
-| Algorithm      | Best          | Average       | Worst         | Space       | Stable |
+| Algorithm | Best | Average | Worst | Space | Stable |
 | -------------- | ------------- | ------------- | ------------- | ----------- | ------ |
-| Selection Sort | $O(n^2)$      | $O(n^2)$      | $O(n^2)$      | $O(1)$      | No     |
-| Insertion Sort | $O(n)$        | $O(n^2)$      | $O(n^2)$      | $O(1)$      | Yes    |
-| Merge Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$      | Yes    |
-| Quick Sort     | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$      | $O(\log n)$ | No     |
+| Selection Sort | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | No |
+| Insertion Sort | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes |
+| Quick Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No |
 
 **When to use each.** Insertion sort is best for small or nearly sorted arrays. Merge sort is
-reliable for large datasets. Quick sort is often faster in practice but has an $O(n^2)$ worst case.
+Reliable for large datasets. Quick sort is often faster in practice but has an $O(n^2)$ worst case.
 
 ## Searching Algorithms (CED Unit 3)
 
@@ -206,18 +206,18 @@ Requires the array to be sorted. Worst case: $O(\log n)$ comparisons.
 
 ### Proof of Binary Search Correctness (Invariant)
 
-**Loop invariant:** If `target` exists in `arr`, then `arr[low] <= target <= arr[high]` at the start
-of each iteration.
+**Loop invariant:** If `target` exists in `arr`Then `arr[low] <= target <= arr[high]` at the start
+Of each iteration.
 
-**Initialization:** Before the first iteration, `low = 0` and `high = n - 1`, so the invariant
-holds.
+**Initialization:** Before the first iteration, `low = 0` and `high = n - 1`So the invariant
+Holds.
 
-**Maintenance:** If `arr[mid] < target`, we set `low = mid + 1`. Since the array is sorted and
-`arr[mid] < target`, `target` must be in `arr[mid+1..high]`. Similarly for the other case.
+**Maintenance:** If `arr[mid] < target`We set `low = mid + 1`. Since the array is sorted and
+`arr[mid] < target``target` must be in `arr[mid+1..high]`. Similarly for the other case.
 
-**Termination:** The loop terminates when `low > high`, meaning the search space is empty. Since the
-invariant guarantees the target would be in `[low, high]` if it existed, the target is not in the
-array.
+**Termination:** The loop terminates when `low > high`Meaning the search space is empty. Since the
+Invariant guarantees the target would be in `[low, high]` if it existed, the target is not in the
+Array.
 
 $\blacksquare$
 
@@ -227,19 +227,19 @@ Big-O notation describes the upper bound of an algorithm's time or space complex
 
 ### Common Time Complexities
 
-| Complexity    | Name         | Example                        |
+| Complexity | Name | Example |
 | ------------- | ------------ | ------------------------------ |
-| $O(1)$        | Constant     | Array access by index          |
-| $O(\log n)$   | Logarithmic  | Binary search                  |
-| $O(n)$        | Linear       | Linear search                  |
-| $O(n \log n)$ | Linearithmic | Merge sort                     |
-| $O(n^2)$      | Quadratic    | Selection sort, insertion sort |
-| $O(2^n)$      | Exponential  | Recursive Fibonacci            |
+| $O(1)$ | Constant | Array access by index |
+| $O(\log n)$ | Logarithmic | Binary search |
+| $O(n)$ | Linear | Linear search |
+| $O(n \log n)$ | Linearithmic | Merge sort |
+| $O(n^2)$ | Quadratic | Selection sort, insertion sort |
+| $O(2^n)$ | Exponential | Recursive Fibonacci |
 
 ### Formal Definition
 
 $f(n) = O(g(n))$ if there exist positive constants $c$ and $n_0$ such that $f(n) \le c \cdot g(n)$
-for all $n \ge n_0$.
+For all $n \ge n_0$.
 
 ### Analyzing Code
 
@@ -355,12 +355,12 @@ reverse("abcd") = "dcba"
 
 **Trace of selection sort on [5, 3, 8, 1, 2]:**
 
-| Pass | Array State     | Comparisons | Swaps |
+| Pass | Array State | Comparisons | Swaps |
 | ---- | --------------- | ----------- | ----- |
-| 1    | [1, 3, 8, 5, 2] | 4           | 1     |
-| 2    | [1, 2, 8, 5, 3] | 3           | 1     |
-| 3    | [1, 2, 3, 5, 8] | 2           | 1     |
-| 4    | [1, 2, 3, 5, 8] | 1           | 0     |
+| 1 | [1, 3, 8, 5, 2] | 4 | 1 |
+| 2 | [1, 2, 8, 5, 3] | 3 | 1 |
+| 3 | [1, 2, 3, 5, 8] | 2 | 1 |
+| 4 | [1, 2, 3, 5, 8] | 1 | 0 |
 
 Total comparisons: $4 + 3 + 2 + 1 = 10 = n(n-1)/2$ for $n = 5$.
 
@@ -368,12 +368,12 @@ Total comparisons: $4 + 3 + 2 + 1 = 10 = n(n-1)/2$ for $n = 5$.
 
 **Trace of insertion sort on [4, 2, 7, 1, 3]:**
 
-| Step | Array State     | Key | Shifts | Comparisons |
+| Step | Array State | Key | Shifts | Comparisons |
 | ---- | --------------- | --- | ------ | ----------- |
-| 1    | [4, 2, 7, 1, 3] | 2   | 1      | 1           |
-| 2    | [4, 2, 7, 1, 3] | 7   | 0      | 1           |
-| 3    | [4, 2, 7, 1, 3] | 1   | 3      | 3           |
-| 4    | [1, 2, 4, 7, 3] | 3   | 0      | 1           |
+| 1 | [4, 2, 7, 1, 3] | 2 | 1 | 1 |
+| 2 | [4, 2, 7, 1, 3] | 7 | 0 | 1 |
+| 3 | [4, 2, 7, 1, 3] | 1 | 3 | 3 |
+| 4 | [1, 2, 4, 7, 3] | 3 | 0 | 1 |
 
 Total comparisons: $1 + 1 + 3 + 1 = 6$.
 
@@ -384,22 +384,22 @@ Total comparisons: $1 + 1 + 3 + 1 = 6$.
 Split: [38, 27] and [43, 3].
 
 Sort [38, 27]: split into [38] and [27], merge to [27, 38]. Sort [43, 3]: split into [43] and [3],
-merge to [3, 43].
+Merge to [3, 43].
 
 Merge [27, 38] and [3, 43]: [3, 27, 38, 43].
 
 ### Quick Sort Worst Case
 
 Quick sort has $O(n^2)$ worst case when the pivot is always the smallest or largest element. This
-happens when the array is already sorted (or reverse sorted) and the first or last element is used
-as the pivot.
+Happens when the array is already sorted (or reverse sorted) and the first or last element is used
+As the pivot.
 
 **Mitigation:** Choose the middle element or a random element as the pivot.
 
 ### Comparing Iterative and Recursive Binary Search
 
 **Iterative binary search uses $O(1)$ space.** The recursive version uses $O(\log n)$ stack space
-due to recursive calls.
+Due to recursive calls.
 
 ```java
 public static int binarySearchIterative(int[] arr, int target) {
@@ -418,7 +418,7 @@ public static int binarySearchIterative(int[] arr, int target) {
 ### Common Algorithm Design Patterns
 
 **Divide and conquer:** Break the problem into smaller subproblems, solve each recursively, combine
-results. Examples: merge sort, binary search.
+Results. Examples: merge sort, binary search.
 
 **Greedy:** Make the locally optimal choice at each step. Examples: Dijkstra's shortest path,
 Huffman coding, coin change (with standard denominations).
@@ -447,14 +447,14 @@ public static long fibMemo(int n) {
 Split: [38, 27] and [43, 3].
 
 Sort [38, 27]: split into [38] and [27], merge to [27, 38]. Sort [43, 3]: split into [43] and [3],
-merge to [3, 43].
+Merge to [3, 43].
 
 Merge [27, 38] and [3, 43]: [3, 27, 38, 43].
 
 ## Quick Sort
 
 A divide-and-conquer algorithm that picks a pivot, partitions elements around it, and recursively
-sorts each partition.
+Sorts each partition.
 
 **Java implementation:**
 
@@ -486,8 +486,8 @@ private static int partition(int[] arr, int low, int high) {
 ```
 
 **Quick Sort worst case.** $O(n^2)$ when the pivot is always the smallest or largest element. This
-happens when the array is already sorted (or reverse sorted) and the first or last element is used
-as the pivot.
+Happens when the array is already sorted (or reverse sorted) and the first or last element is used
+As the pivot.
 
 **Mitigation:** Choose the middle element or a random element as the pivot.
 
@@ -506,7 +506,7 @@ Final: [1, 2, 3, 5, 8].
 ## Comparing Iterative and Recursive Binary Search
 
 **Iterative binary search uses $O(1)$ space.** The recursive version uses $O(\log n)$ stack space
-due to recursive calls.
+Due to recursive calls.
 
 ```java
 public static int binarySearchIterative(int[] arr, int target) {
@@ -525,7 +525,7 @@ public static int binarySearchIterative(int[] arr, int target) {
 ## Common Algorithm Design Patterns
 
 **Divide and conquer:** Break the problem into smaller subproblems, solve each recursively, combine
-results. Examples: merge sort, binary search.
+Results. Examples: merge sort, binary search.
 
 **Greedy:** Make the locally optimal choice at each step. Examples: Dijkstra's shortest path,
 Huffman coding, coin change (with standard denominations).
@@ -567,9 +567,9 @@ public static boolean isPalindrome(String s) {
 **Time complexity:** $O(n)$ -- compares each pair of characters once.
 
 **Proof of correctness.** The loop compares characters at symmetric positions: position 0 with
-position n-1, position 1 with position n-2, etc. If any pair differs, the string is not a palindrome
-and the method returns false. If all pairs match, the string reads the same forwards and backwards,
-so it is a palindrome. $lacksquare$
+Position n-1, position 1 with position n-2, etc. If any pair differs, the string is not a palindrome
+And the method returns false. If all pairs match, the string reads the same forwards and backwards,
+So it is a palindrome. $lacksquare$
 
 **String reversal (iterative):**
 
@@ -648,61 +648,61 @@ for (int i = 0; i < n; i++) {
 ```
 
 6. Compare the number of comparisons made by linear search and binary search for an array of
-   1,048,576 elements when searching for an element that is not in the array.
+ 1,048,576 elements when searching for an element that is not in the array.
 
 7. Write pseudocode for insertion sort and trace it on the list `[4, 2, 7, 1, 3]`.
 
 8. Explain why merge sort is preferred over selection sort for sorting large datasets.
 
 9. Write a recursive Java method `gcd(int a, int b)` that computes the greatest common divisor using
-   Euclid's algorithm.
+ Euclid's algorithm.
 
 10. Explain the loop invariant for binary search and use it to prove correctness.
 
 11. Write a Java method `isSorted(int[] arr)` that returns true if the array is sorted in ascending
-    order. What is the time complexity?
+ order. What is the time complexity?
 
 12. Prove that insertion sort's best-case time complexity is $O(n)$ when the input is already
-    sorted.
+ sorted.
 
 13. Write a recursive method `power(int base, int exp)` that computes `base^exp` in $O(\log n)$ time
-    using the identity $b^n = (b^{n/2})^2$.
+ using the identity $b^n = (b^{n/2})^2$.
 
 14. Explain what makes an algorithm "stable" in the context of sorting. Give an example where
-    stability matters.
+ stability matters.
 
 15. Write pseudocode for a procedure that merges two sorted lists into one sorted list. What is the
-    time complexity?
+ time complexity?
 
 16. Analyze the space complexity of merge sort. Why does it use $O(n)$ extra space?
 
 17. Write a Java method to find the kth smallest element in an unsorted array. What is the time
-    complexity of a simple approach vs. an optimal approach?
+ complexity of a simple approach vs. An optimal approach?
 
 18. Explain the concept of divide and conquer using merge sort as an example. What are the three
-    steps, and what is the recurrence relation?
+ steps, and what is the recurrence relation?
 
 19. Trace quick sort on the array [10, 80, 30, 90, 40, 50, 70]. Use the last element as the pivot.
 
 20. Write a Java method that checks whether a sorted array contains two elements that sum to a
-    given target. Your solution should be $O(n)$.
+ given target. Your solution should be $O(n)$.
 
 ## Common Pitfalls
 
 1. **Forgetting the base case in recursion.** Causes infinite recursion and stack overflow.
 2. **Confusing binary search with linear search.** Binary search requires a sorted array.
 3. **Using selection sort or insertion sort for large datasets.** These $O(n^2)$ algorithms are too
-   slow; use merge sort ($O(n \log n)$) instead.
+ slow; use merge sort ($O(n \log n)$) instead.
 4. **Off-by-one errors in binary search.** The condition is `low <= high` (inclusive).
 5. **Confusing Big-O with exact running time.** Big-O describes growth rate, not actual time.
-6. **Forgetting that Big-O is an upper bound.** An $O(n)$ algorithm is also $O(n^2)$ and $O(n^3)$,
-   but $O(n)$ is the tightest (best) bound.
+6. **Forgetting that Big-O is an upper bound.** An $O(n)$ algorithm is also $O(n^2)$ and $O(n^3)$
+ but $O(n)$ is the tightest (best) bound.
 7. **Not recognizing that AP CSP pseudocode uses 1-based indexing** while Java uses 0-based
-   indexing.
+ indexing.
 8. **Integer overflow in `(low + high) / 2`.** Use `low + (high - low) / 2` instead.
 
 9. Trace the execution of selection sort on the array `[5, 3, 8, 1, 2]`. Show the array after each
-   pass.
+ pass.
 
 10. Write a recursive Java method `sumDigits(int n)` that returns the sum of the digits of `n`.
 
@@ -721,39 +721,39 @@ for (int i = 0; i < n; i++) {
 ```
 
 6. Compare the number of comparisons made by linear search and binary search for an array of
-   1,048,576 elements when searching for an element that is not in the array.
+ 1,048,576 elements when searching for an element that is not in the array.
 
 7. Write pseudocode for insertion sort and trace it on the list `[4, 2, 7, 1, 3]`.
 
 8. Explain why merge sort is preferred over selection sort for sorting large datasets.
 
 9. Write a recursive Java method `gcd(int a, int b)` that computes the greatest common divisor using
-   Euclid's algorithm.
+ Euclid's algorithm.
 
 10. Explain the loop invariant for binary search and use it to prove correctness.
 
 11. Write a Java method `isSorted(int[] arr)` that returns true if the array is sorted in ascending
-    order. What is the time complexity?
+ order. What is the time complexity?
 
 12. Prove that insertion sort's best-case time complexity is $O(n)$ when the input is already
-    sorted.
+ sorted.
 
 13. Write a recursive method `power(int base, int exp)` that computes `base^exp` in $O(\log n)$ time
-    using the identity $b^n = (b^{n/2})^2$.
+ using the identity $b^n = (b^{n/2})^2$.
 
 14. Explain what makes an algorithm "stable" in the context of sorting. Give an example where
-    stability matters.
+ stability matters.
 
 15. Write pseudocode for a procedure that merges two sorted lists into one sorted list. What is the
-    time complexity?
+ time complexity?
 
 16. Analyze the space complexity of merge sort. Why does it use $O(n)$ extra space?
 
 17. Write a Java method to find the kth smallest element in an unsorted array. What is the time
-    complexity of a simple approach vs. an optimal approach?
+ complexity of a simple approach vs. An optimal approach?
 
 18. Explain the concept of divide and conquer using merge sort as an example. What are the three
-    steps, and what is the recurrence relation?
+ steps, and what is the recurrence relation?
 
 ## Practice Problems
 
@@ -782,16 +782,16 @@ The outer loop runs $\log_2(n)$ times because `i` doubles each iteration. The in
 <details>
 <summary>Question 2: Binary search trace</summary>
 
-Trace binary search on `[2, 5, 8, 12, 16, 23, 38]` searching for `7`. Show `low`, `high`, and `mid` at each step.
+Trace binary search on `[2, 5, 8, 12, 16, 23, 38]` searching for `7`. Show `low``high`And `mid` at each step.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Step 1: low=0, high=6, mid=3. arr[3]=12 &gt; 7, high=2.
-Step 2: low=0, high=2, mid=1. arr[1]=5 &lt; 7, low=2.
-Step 3: low=2, high=2, mid=2. arr[2]=8 &gt; 7, high=1.
+Step 1: low=0, high=6, mid=3. Arr[3]=12 &gt; 7, high=2.
+Step 2: low=0, high=2, mid=1. Arr[1]=5 &lt; 7, low=2.
+Step 3: low=2, high=2, mid=2. Arr[2]=8 &gt; 7, high=1.
 Step 4: low=2 &gt; high=1. Not found, return -1.
 
 </details>
@@ -813,7 +813,7 @@ int mystery(int n) {
 <details>
 <summary>Answer</summary>
 
-mystery(27) = mystery(9) + 27 = (mystery(3) + 9) + 27 = ((mystery(1) + 3) + 9) + 27 = 40.
+Mystery(27) = mystery(9) + 27 = (mystery(3) + 9) + 27 = ((mystery(1) + 3) + 9) + 27 = 40.
 
 Time complexity: $O(\log n)$ since n is divided by 3 each call.
 
@@ -846,6 +846,14 @@ What is the maximum number of comparisons merge sort makes for 8 elements?
 <details>
 <summary>Answer</summary>
 
-Using $C(n) = 2C(n/2) + n - 1$: $C(1)=0$, $C(2)=1$, $C(4)=5$, $C(8)=17$. Maximum 17 comparisons.
+Using $C(n) = 2C(n/2) + n - 1$: $C(1)=0$$C(2)=1$$C(4)=5$$C(8)=17$. Maximum 17 comparisons.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

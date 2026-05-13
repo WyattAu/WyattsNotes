@@ -30,15 +30,15 @@ $$C_{2}H_{4} + Br_{2} \rightarrow C_{2}H_{4}Br_{2}$$
 
 (1,2-dibromoethane)
 
-(b) Ethane is an **alkane** containing only $C-C$ single bonds (sigma bonds). These are strong and do not easily break. Ethene is an **alkene** containing a $C=C$ double bond (one sigma + one pi bond). The pi bond is relatively weak and electron-rich, making it susceptible to attack by electrophiles like $Br_{2}$. The pi electrons are attracted to the electrophilic bromine molecule, initiating the addition reaction.
+(b) Ethane is an **alkane** containing only $C-C$ single bonds (sigma bonds). These are strong and do not break. Ethene is an **alkene** containing a $C=C$ double bond (one sigma + one pi bond). The pi bond is relatively weak and electron-rich, making it susceptible to attack by electrophiles like $Br_{2}$. The pi electrons are attracted to the electrophilic bromine molecule, initiating the addition reaction.
 
 (c) $C_{4}H_{8}$ with a $C=C$ double bond (alkene isomers):
 
 1. **But-1-ene**: $CH_{2}=CH-CH_{2}-CH_{3}$
 
 2. **But-2-ene** (cis/trans isomers possible):
-   - $CH_{3}-CH=CH-CH_{3}$ (cis-but-2-ene)
-   - $CH_{3}-CH=CH-CH_{3}$ (trans-but-2-ene)
+ - $CH_{3}-CH=CH-CH_{3}$ (cis-but-2-ene)
+ - $CH_{3}-CH=CH-CH_{3}$ (trans-but-2-ene)
 
 3. **2-Methylprop-1-ene**: $CH_{2}=C(CH_{3})_{2}$
 
@@ -49,8 +49,8 @@ $$C_{2}H_{4} + Br_{2} \rightarrow C_{2}H_{4}Br_{2}$$
 Since the question states $C$ decolourises bromine water, only the **alkene** isomers count:
 
 1. But-1-ene
-2. cis-But-2-ene
-3. trans-But-2-ene
+2. Cis-But-2-ene
+3. Trans-But-2-ene
 4. 2-Methylprop-1-ene
 
 That is **4 structural isomers** (3 positional + 1 branched chain; noting that cis/trans are stereoisomers of the same structural isomer, so structural isomers = 3: but-1-ene, but-2-ene, 2-methylprop-1-ene).
@@ -230,6 +230,6 @@ Consider the following alcohols:
 
 $$C \lt B \lt A$$
 
-The oxidation of alcohols involves removing a hydrogen atom from the carbon bearing the $-OH$ group. Primary alcohols are most easily oxidised because the $C-H$ bond on the alpha carbon is accessible. Tertiary alcohols are **not oxidised** at all by $K_{2}Cr_{2}O_{7}$ because the carbon bearing the $-OH$ group has no hydrogen atoms to remove. Secondary alcohols are oxidised to ketones.
+The oxidation of alcohols involves removing a hydrogen atom from the carbon bearing the $-OH$ group. Primary alcohols are most oxidised because the $C-H$ bond on the alpha carbon is accessible. Tertiary alcohols are **not oxidised** at all by $K_{2}Cr_{2}O_{7}$ because the carbon bearing the $-OH$ group has no hydrogen atoms to remove. Secondary alcohols are oxidised to ketones.
 
 (c) **$C$ (tertiary alcohol)** is **not oxidised** by acidified $K_{2}Cr_{2}O_{7}$. No reaction occurs (or only the orange-to-green colour change does not happen). The carbon bearing the $-OH$ group in a tertiary alcohol has no alpha hydrogen, so oxidation cannot proceed. The only way to break down a tertiary alcohol is through more drastic conditions such as dehydration to form an alkene, or complete combustion.

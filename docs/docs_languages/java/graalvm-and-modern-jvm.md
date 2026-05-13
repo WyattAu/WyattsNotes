@@ -11,33 +11,33 @@ slug: graalvm-and-modern-jvm
 ## Introduction
 
 GraalVM is a high-performance JDK distribution that extends the standard HotSpot JVM with an
-advanced just-in-time compiler (Graal), a native image generator, and polyglot execution
-capabilities. It compiles Java applications ahead-of-time into standalone native executables,
-dramatically reducing startup time and memory footprint compared to the traditional JVM. The foreign
-function and memory API (Project Panama) provides a modern, safe alternative to JNI for calling
-native code and managing off-heap memory.
+Advanced just-in-time compiler (Graal), a native image generator, and polyglot execution
+Capabilities. It compiles Java applications ahead-of-time into standalone native executables,
+Dramatically reducing startup time and memory footprint compared to the traditional JVM. The foreign
+Function and memory API (Project Panama) provides a modern, safe alternative to JNI for calling
+Native code and managing off-heap memory.
 
 These technologies matter because they address the three persistent complaints about Java: slow
-startup, high memory consumption, and painful native interop. GraalVM native images bring Java into
-territory previously reserved for Go and Rust -- sub-millisecond startup and single-digit MB RSS for
-microservices and CLI tools. The Foreign Function and Memory API replaces the brittle, error-prone
+Startup, high memory consumption, and painful native interop. GraalVM native images bring Java into
+Territory previously reserved for Go and Rust -- sub-millisecond startup and single-digit MB RSS for
+Microservices and CLI tools. The Foreign Function and Memory API replaces the brittle, error-prone
 JNI mechanism with a type-safe, allocation-tracking API that is practically usable.
 
 ### What GraalVM Provides
 
-| Component            | Purpose                                              | Status               |
+| Component | Purpose | Status |
 | -------------------- | ---------------------------------------------------- | -------------------- |
-| Graal JIT Compiler   | Replaces C2 as an advanced JIT compiler              | Production (JDK 17+) |
-| Native Image         | AOT compilation to standalone executables            | Production (JDK 22+) |
-| Polyglot Runtime     | Run JavaScript, Python, Ruby, R, LLVM alongside Java | Community Edition    |
-| Truffle Framework    | API for building high-performance language runtimes  | Production           |
-| VisualVM Integration | Profiling and diagnostics for Graal-compiled code    | Production           |
+| Graal JIT Compiler | Replaces C2 as an advanced JIT compiler | Production (JDK 17+) |
+| Native Image | AOT compilation to standalone executables | Production (JDK 22+) |
+| Polyglot Runtime | Run JavaScript, Python, Ruby, R, LLVM alongside Java | Community Edition |
+| Truffle Framework | API for building high-performance language runtimes | Production |
+| VisualVM Integration | Profiling and diagnostics for Graal-compiled code | Production |
 
 :::info
 GraalVM has been folded into the OpenJDK project. Starting with JDK 22, `native-image` ships
-as a standard JDK component. You no longer need a separate GraalVM distribution to build native
-images. The Graal JIT compiler has been available as an experimental tier-4 compiler in OpenJDK
-since JDK 10.
+As a standard JDK component. You no longer need a separate GraalVM distribution to build native
+Images. The Graal JIT compiler has been available as an experimental tier-4 compiler in OpenJDK
+Since JDK 10.
 :::
 
 ## The Graal Compiler
@@ -45,28 +45,28 @@ since JDK 10.
 ### Graal JIT vs C2 JIT
 
 HotSpot has historically used two JIT compilers: C1 (client compiler, fast compilation, less
-optimization) and C2 (server compiler, slower compilation, aggressive optimization). The tiered
-compilation strategy starts with the interpreter, promotes hot methods through C1, and eventually
-compiles with C2 for maximum throughput.
+Optimization) and C2 (server compiler, slower compilation, aggressive optimization). The tiered
+Compilation strategy starts with the interpreter, promotes hot methods through C1, and eventually
+Compiles with C2 for maximum throughput.
 
 Graal is a replacement for C2 written in Java. It is itself a Java program that compiles Java
-bytecode to machine code. Being written in Java means Graal benefits from the same JVM optimizations
-it produces, and its codebase is far more approachable for contributors than C2 (which is written in
+Bytecode to machine code. Being written in Java means Graal benefits from the same JVM optimizations
+It produces, and its codebase is far more approachable for contributors than C2 (which is written in
 C++).
 
 **Definition.** The Graal compiler is a graph-based JIT compiler implemented in Java that replaces
 C2 as the top-tier optimizing compiler. It operates on a sea-of-nodes intermediate representation
 (IR) that is more expressive than C2's ideal graph.
 
-| Feature             | C2                         | Graal                               |
+| Feature | C2 | Graal |
 | ------------------- | -------------------------- | ----------------------------------- |
-| Implementation      | C++                        | Java                                |
-| IR                  | Ideal graph (sea-of-nodes) | Sea-of-nodes (Graal IR)             |
-| Inlining heuristics | Fixed thresholds           | Profile-guided, more aggressive     |
-| Escape analysis     | Basic                      | Advanced (partial escape analysis)  |
-| Loop optimizations  | Limited                    | Extensive (loop peeling, unrolling) |
-| Deoptimization      | Speculative                | Speculative with better recovery    |
-| Extensibility       | Hard (C++ plugin system)   | Easy (Java plugin system)           |
+| Implementation | C++ | Java |
+| IR | Ideal graph (sea-of-nodes) | Sea-of-nodes (Graal IR) |
+| Inlining heuristics | Fixed thresholds | Profile-guided, more aggressive |
+| Escape analysis | Basic | Advanced (partial escape analysis) |
+| Loop optimizations | Limited | Extensive (loop peeling, unrolling) |
+| Deoptimization | Speculative | Speculative with better recovery |
+| Extensibility | Hard (C++ plugin system) | Easy (Java plugin system) |
 
 ### Compilation Tiers with Graal
 
@@ -86,7 +86,7 @@ On GraalVM, this is the default. On standard OpenJDK, you must explicitly enable
 ### Profile-Guided Optimization
 
 Graal can use profiling information from previous runs to guide compilation decisions. This is
-particularly impactful for native image builds:
+Particularly impactful for native image builds:
 
 ```bash
 # Step 1: Run the application with profiling enabled
@@ -99,43 +99,43 @@ native-image -H:ConfigurationFileDirectories=META-INF/native-image \
 ```
 
 The agent records which classes are instantiated, which methods are called, which reflection sites
-are used, and which resources are loaded. This information feeds the closed-world analysis during
-native image generation, producing a smaller and faster binary.
+Are used, and which resources are loaded. This information feeds the closed-world analysis during
+Native image generation, producing a smaller and faster binary.
 
 ### When Graal JIT Outperforms C2
 
-Graal typically outperforms C2 on workloads involving:
+Graal outperforms C2 on workloads involving:
 
 - **Frequent object allocation and escape analysis**: Graal's partial escape analysis can
-  scalar-replace objects that escape only on some paths, where C2 would give up entirely.
+ scalar-replace objects that escape only on some paths, where C2 would give up entirely.
 - **Complex control flow**: Graal's IR represents control flow more precisely, enabling
-  optimizations that C2 misses.
+ optimizations that C2 misses.
 - **Polymorphic call sites**: Graal makes better inlining decisions based on profile data.
 - **Loop-heavy numeric code**: Graal's loop optimizations (loop peeling, loop unrolling, loop
-  invariant code motion) are more comprehensive.
+ invariant code motion) are more comprehensive.
 
 ## Native Image
 
 ### How It Works
 
 **Definition.** Native Image performs ahead-of-time (AOT) compilation of a Java application into a
-standalone native executable using closed-world static analysis. It operates on the SubstrateVM, a
-minimal JVM runtime that replaces HotSpot entirely.
+Standalone native executable using closed-world static analysis. It operates on the SubstrateVM, a
+Minimal JVM runtime that replaces HotSpot entirely.
 
 The closed-world analysis works as follows:
 
 1. **Reachability analysis**: Starting from entry points (main method, JNI methods), the analysis
-   traces all reachable classes, methods, and fields. Anything not reachable is discarded.
+ traces all reachable classes, methods, and fields. Anything not reachable is discarded.
 2. **Points-to analysis**: Determines which concrete types each reference may hold at each program
-   point. This drives devirtualization -- turning virtual calls into direct calls.
+ point. This drives devirtualization -- turning virtual calls into direct calls.
 3. **Heap snapshot**: Objects allocated at build time are serialized into the image heap. This
-   includes static final fields, interned strings, and classes configured for build-time
-   initialization.
+ includes static final fields, interned strings, and classes configured for build-time
+ initialization.
 4. **Code compilation**: All reachable methods are compiled to native machine code. No bytecode is
-   included in the output.
+ included in the output.
 
 The result is a native executable with no JVM dependency, no class loading at runtime, and no JIT
-compilation overhead.
+Compilation overhead.
 
 ### Build Workflow
 
@@ -204,7 +204,7 @@ gradle nativeCompile
 ### Configuration: Reflection, Resources, Proxies, JNI
 
 The closed-world analysis is conservative. It cannot see reflective access, dynamic resource
-loading, or runtime proxy generation. You must provide explicit configuration for these.
+Loading, or runtime proxy generation. You must provide explicit configuration for these.
 
 **Reflection configuration** (`reflection-config.json`):
 
@@ -254,25 +254,25 @@ java -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/
 ```
 
 Run the application through all code paths (especially reflection-heavy paths like serialization,
-dependency injection, and ORM initialization). The agent writes the configuration files
-automatically.
+Dependency injection, and ORM initialization). The agent writes the configuration files
+Automatically.
 
 ### Class Initialization: Build Time vs Runtime
 
 Native image classifies every class into one of two initialization times:
 
 - **Build-time initialization**: The class's static initializer (`&lt;clinit&gt;`) runs during image
-  generation. The resulting static field values are baked into the image heap.
+ generation. The resulting static field values are baked into the image heap.
 - **Runtime initialization**: The class's static initializer runs at application startup, before
-  `main()`.
+ `main()`.
 
 By default, most JDK classes are initialized at build time. Application classes are initialized at
-runtime unless they are reachable from build-time-initialized classes.
+Runtime unless they are reachable from build-time-initialized classes.
 
 :::warning
 Build-time initialization of application classes can cause subtle bugs. If a class's
-static initializer opens a file, creates a thread, or accesses environment variables, these actions
-execute on the build machine, not the deployment target. Use `--initialize-at-build-time` and
+Static initializer opens a file, creates a thread, or accesses environment variables, these actions
+Execute on the build machine, not the deployment target. Use `--initialize-at-build-time` and
 `--initialize-at-run-time` flags explicitly to control this:
 
 ```bash
@@ -286,7 +286,7 @@ native-image --initialize-at-build-time=com.example.Config \
 ### Conditional Feature Analysis
 
 GraalVM native image supports conditional features through feature classes that hook into the build
-process:
+Process:
 
 ```java
 import org.graalvm.nativeimage.hosted.Feature;
@@ -320,51 +320,51 @@ Args = --features=org.graalvm.nativeimage.impl.InternalFeature \
 ### Startup Time
 
 Native image eliminates JIT warmup entirely. All code is compiled ahead of time, and the image heap
-contains pre-initialized objects. The result is startup times measured in single-digit milliseconds.
+Contains pre-initialized objects. The result is startup times measured in single-digit milliseconds.
 
-| Metric                | HotSpot (JVM) | Native Image | Improvement |
+| Metric | HotSpot (JVM) | Native Image | Improvement |
 | --------------------- | ------------- | ------------ | ----------- |
-| Startup (cold)        | 1-3 seconds   | 5-20 ms      | 100-500x    |
-| Time to first request | 2-5 seconds   | 15-50 ms     | 100-300x    |
-| RSS (idle)            | 100-300 MB    | 20-60 MB     | 3-10x       |
-| RSS (peak)            | 500 MB - 2 GB | 80-200 MB    | 3-10x       |
+| Startup (cold) | 1-3 seconds | 5-20 ms | 100-500x |
+| Time to first request | 2-5 seconds | 15-50 ms | 100-300x |
+| RSS (idle) | 100-300 MB | 20-60 MB | 3-10x |
+| RSS (peak) | 500 MB - 2 GB | 80-200 MB | 3-10x |
 
 ### Memory Footprint
 
 Native image has no JIT compiler, no garbage collector metadata for JIT-compiled code, and a compact
-image heap. The total memory footprint is typically 30-50 MB for a typical Spring Boot application,
-compared to 200-500 MB on HotSpot.
+Image heap. The total memory footprint is 30-50 MB for a typical Spring Boot application,
+Compared to 200-500 MB on HotSpot.
 
 The image heap is stored in the executable's data segment and mapped into memory at process start.
 Objects in the image heap are not subject to garbage collection (they are effectively immortal),
-which reduces GC pressure at runtime.
+Which reduces GC pressure at runtime.
 
 ### Peak Throughput Tradeoffs
 
 Native image does not match HotSpot's peak throughput for long-running, CPU-intensive workloads. The
-reasons are:
+Reasons are:
 
 1. **No profile-guided JIT optimization**: HotSpot collects profiling data during execution and
-   recompiles hot methods with increasingly aggressive optimizations. Native image makes all
-   optimization decisions at build time based on the agent's profile, which may not cover all
-   runtime scenarios.
+ recompiles hot methods with increasingly aggressive optimizations. Native image makes all
+ optimization decisions at build time based on the agent's profile, which may not cover all
+ runtime scenarios.
 2. **No speculative optimizations**: HotSpot can speculate based on runtime profiles and deoptimize
-   when speculation fails. Native image must produce code that works for all possible inputs.
+ when speculation fails. Native image must produce code that works for all possible inputs.
 3. **Fixed code layout**: HotSpot can reoptimize code layout based on actual execution frequency.
-   Native image's code layout is fixed at build time.
+ Native image's code layout is fixed at build time.
 
-| Workload             | HotSpot Throughput | Native Image Throughput |
+| Workload | HotSpot Throughput | Native Image Throughput |
 | -------------------- | ------------------ | ----------------------- |
-| I/O-bound REST API   | Baseline           | 90-110% of HotSpot      |
-| JSON parsing         | Baseline           | 80-100% of HotSpot      |
-| Numeric computation  | Baseline           | 60-85% of HotSpot       |
-| Crypto workloads     | Baseline           | 70-90% of HotSpot       |
-| Short-lived CLI tool | N/A (warmup kills) | 10-100x faster overall  |
+| I/O-bound REST API | Baseline | 90-110% of HotSpot |
+| JSON parsing | Baseline | 80-100% of HotSpot |
+| Numeric computation | Baseline | 60-85% of HotSpot |
+| Crypto workloads | Baseline | 70-90% of HotSpot |
+| Short-lived CLI tool | N/A (warmup kills) | 10-100x faster overall |
 
 :::info
 The throughput gap between HotSpot and native image has been narrowing with each GraalVM
-release. For I/O-bound server applications, native image now matches or exceeds HotSpot performance
-for most practical workloads. The gap is most noticeable in CPU-bound, long-running processes where
+Release. For I/O-bound server applications, native image now matches or exceeds HotSpot performance
+For most practical workloads. The gap is most noticeable in CPU-bound, long-running processes where
 HotSpot's adaptive optimization has time to produce highly specialized code.
 :::
 
@@ -374,23 +374,23 @@ HotSpot's adaptive optimization has time to produce highly specialized code.
 
 The Foreign Function and Memory API (JEP 424, standardized in Java 22) replaces JNI with a pure Java
 API for calling native functions and accessing native memory. It is safer, more ergonomic, and
-supports variadic functions, structs by value, and callbacks without writing C glue code.
+Supports variadic functions, structs by value, and callbacks without writing C glue code.
 
 **Definition.** The FFM API consists of two main abstractions: `Linker` for creating downcall method
-handles to native functions, and `MemorySegment` for modeling contiguous regions of native memory
-with deterministic deallocation.
+Handles to native functions, and `MemorySegment` for modeling contiguous regions of native memory
+With deterministic deallocation.
 
 ### Core Types
 
-| Type                 | Purpose                                         |
+| Type | Purpose |
 | -------------------- | ----------------------------------------------- |
-| `Linker`             | Creates native method handles (downcall/upcall) |
-| `SymbolLookup`       | Looks up symbols in native libraries            |
-| `MemorySegment`      | Models a contiguous region of native memory     |
-| `Arena`              | Controls the lifetime of memory segments        |
-| `ValueLayout`        | Describes the layout of values in memory        |
-| `FunctionDescriptor` | Describes the signature of a native function    |
-| `MethodHandle`       | Invokes a native function (downcall)            |
+| `Linker` | Creates native method handles (downcall/upcall) |
+| `SymbolLookup` | Looks up symbols in native libraries |
+| `MemorySegment` | Models a contiguous region of native memory |
+| `Arena` | Controls the lifetime of memory segments |
+| `ValueLayout` | Describes the layout of values in memory |
+| `FunctionDescriptor` | Describes the signature of a native function |
+| `MethodHandle` | Invokes a native function (downcall) |
 
 ### Calling a C Function from Java
 
@@ -591,22 +591,22 @@ public class LibCurlExample {
 
 ### FFM API vs JNI
 
-| Feature            | JNI                              | FFM API                                 |
+| Feature | JNI | FFM API |
 | ------------------ | -------------------------------- | --------------------------------------- |
-| Boilerplate        | C header generation + C code     | Pure Java                               |
-| Type safety        | Weak (jobject, jfieldID)         | Strong (MemorySegment, ValueLayout)     |
-| Memory management  | Manual (DeleteLocalRef, etc.)    | Arena-based, deterministic deallocation |
-| Variadic functions | Not supported                    | Supported via FunctionDescriptor        |
-| Structs by value   | Not supported                    | Supported via GroupLayout               |
-| Callbacks          | Manual JNI env + C trampoline    | Upcall handles                          |
-| Performance        | Good (direct call after linking) | Comparable (downcall stubs are fast)    |
-| Safety             | Undefined behavior on misuse     | Bounds-checked, null-checked            |
+| Boilerplate | C header generation + C code | Pure Java |
+| Type safety | Weak (jobject, jfieldID) | Strong (MemorySegment, ValueLayout) |
+| Memory management | Manual (DeleteLocalRef, etc.) | Arena-based, deterministic deallocation |
+| Variadic functions | Not supported | Supported via FunctionDescriptor |
+| Structs by value | Not supported | Supported via GroupLayout |
+| Callbacks | Manual JNI env + C trampoline | Upcall handles |
+| Performance | Good (direct call after linking) | Comparable (downcall stubs are fast) |
+| Safety | Undefined behavior on misuse | Bounds-checked, null-checked |
 
 :::warning
 The FFM API uses `restricted` methods (marked with `@Restricted`) that can crash the JVM
-if misused. These methods perform bounds checks and null checks, but cannot prevent all undefined
-behavior (e.g., passing a freed segment to a native function). The `@Restricted` annotation serves
-as a warning: you are leaving the safety guarantees of the Java platform.
+If misused. These methods perform bounds checks and null checks, but cannot prevent all undefined
+Behavior (e.g., passing a freed segment to a native function). The `@Restricted` annotation serves
+As a warning: you are leaving the safety guarantees of the Java platform.
 :::
 
 ## Foreign Memory Access
@@ -614,8 +614,8 @@ as a warning: you are leaving the safety guarantees of the Java platform.
 ### Arena-Based Memory Management
 
 The `Arena` class controls the lifetime of memory segments. When an arena is closed, all segments
-allocated from it are freed. This eliminates the class of bugs where native memory is leaked because
-the Java code forgot to call `free()`.
+Allocated from it are freed. This eliminates the class of bugs where native memory is leaked because
+The Java code forgot to call `free()`.
 
 ```java
 import java.lang.foreign.Arena;
@@ -696,7 +696,7 @@ public class MemorySegmentDemo {
 ### `ValueLayout` for Type-Safe Access
 
 `ValueLayout` describes how values are laid out in memory. Each primitive type has a corresponding
-layout with a specific byte order and alignment:
+Layout with a specific byte order and alignment:
 
 ```java
 import java.lang.foreign.ValueLayout;
@@ -729,7 +729,7 @@ ValueLayout.C_POINTER      // pointer (4 or 8 bytes)
 ### `VarHandle` Integration
 
 `VarHandle` provides atomic and volatile access to memory segments, integrating with the Java memory
-model:
+Model:
 
 ```java
 import java.lang.foreign.*;
@@ -763,7 +763,7 @@ public class VarHandleMemoryDemo {
 ### Off-Heap Data Structures
 
 Memory segments enable building high-performance data structures outside the Java heap, avoiding GC
-pressure:
+Pressure:
 
 ```java
 import java.lang.foreign.*;
@@ -802,8 +802,8 @@ public class OffHeapRingBuffer {
 
 :::warning
 The off-heap ring buffer above has a bug: the `Arena` used to allocate the buffer is
-closed in the constructor, making the segment inaccessible. In practice, the arena must outlive the
-data structure. Use a shared arena or hold a reference to the arena as a field.
+Closed in the constructor, making the segment inaccessible. In practice, the arena must outlive the
+Data structure. Use a shared arena or hold a reference to the arena as a field.
 :::
 
 ## Vector API (Incubator)
@@ -812,7 +812,7 @@ data structure. Use a shared arena or hold a reference to the arena as a field.
 
 The Vector API (JEP 448, incubating) provides SIMD (Single Instruction, Multiple Data) operations in
 Java. It allows developers to express data-parallel computations that the JVM maps to hardware SIMD
-instructions (AVX2, AVX-512, NEON, SVE) without writing intrinsics or architecture-specific code.
+Instructions (AVX2, AVX-512, NEON, SVE) without writing intrinsics or architecture-specific code.
 
 **Definition.** A `Vector&lt;E&gt;` represents a fixed number of values of a primitive type `E`
 (byte, short, int, long, float, double) packed into a single hardware register. A
@@ -895,13 +895,13 @@ public class LaneWiseOperations {
 ### Performance Benefits
 
 For compute-intensive loops operating on arrays of primitives, the Vector API can provide 4-8x
-speedup over scalar code on hardware with AVX2/AVX-512 support. The key advantage over manual
-intrinsics is portability: the same Java code runs on x86 (AVX2/AVX-512), ARM (NEON/SVE), and other
-architectures, with the JIT compiler selecting the appropriate instructions at runtime.
+Speedup over scalar code on hardware with AVX2/AVX-512 support. The key advantage over manual
+Intrinsics is portability: the same Java code runs on x86 (AVX2/AVX-512), ARM (NEON/SVE), and other
+Architectures, with the JIT compiler selecting the appropriate instructions at runtime.
 
 :::info
 The Vector API requires `--add-modules jdk.incubator.vector` on the command line. It is
-still in incubator status as of JDK 23. The API surface may change before final standardization.
+Still in incubator status as of JDK 23. The API surface may change before final standardization.
 :::
 
 ## Virtual Threads (Project Loom)
@@ -915,9 +915,9 @@ This section provides a condensed reference.
 - **JEP 444, Java 21**: Virtual threads are a standard feature.
 - **M:N scheduling**: Many virtual threads multiplex onto a small pool of carrier (OS) threads.
 - **Heap-allocated stacks**: Virtual thread stacks are continuations on the heap, not 1 MB stack
-  segments. A blocked virtual thread costs a few hundred bytes.
-- **Transparent blocking**: `Thread.sleep`, socket I/O, file I/O, and `Future.get` automatically
-  unmount the virtual thread from its carrier.
+ segments. A blocked virtual thread costs a few hundred bytes.
+- **Transparent blocking**: `Thread.sleep`Socket I/O, file I/O, and `Future.get` automatically
+ unmount the virtual thread from its carrier.
 
 ### Quick Reference
 
@@ -941,13 +941,13 @@ try { socket.read(buffer); } finally { lock.unlock(); }
 
 ### When to Use Virtual Threads
 
-| Scenario                     | Use Virtual Threads?                      |
+| Scenario | Use Virtual Threads? |
 | ---------------------------- | ----------------------------------------- |
-| HTTP server (I/O-bound)      | Yes                                       |
-| Database query orchestration | Yes                                       |
-| File processing pipeline     | Yes                                       |
-| CPU-bound computation        | No (use parallel streams or ForkJoinPool) |
-| Latency-critical path        | No (scheduling adds overhead)             |
+| HTTP server (I/O-bound) | Yes |
+| Database query orchestration | Yes |
+| File processing pipeline | Yes |
+| CPU-bound computation | No (use parallel streams or ForkJoinPool) |
+| Latency-critical path | No (scheduling adds overhead) |
 
 ## Structured Concurrency (Preview)
 
@@ -959,11 +959,11 @@ This section provides a condensed reference.
 
 - **JEP 453, Java 21**: Structured concurrency is a preview API.
 - **`StructuredTaskScope`**: Enforces parent-child task relationships. All children must complete
-  before the parent proceeds.
+ before the parent proceeds.
 - **Shutdown policies**: `ShutdownOnFailure` (cancel all on first error) and `ShutdownOnSuccess`
-  (cancel all on first success).
+ (cancel all on first success).
 - **Thread dumps**: Structured concurrency produces thread dumps that show the parent-child
-  relationship, making it easy to understand what a thread is waiting for.
+ relationship, making it easy to understand what a thread is waiting for.
 
 ### Quick Reference
 
@@ -1014,32 +1014,32 @@ return switch (shape) {
 ### Overview
 
 Project Valhalla introduces value types to Java -- classes that have identity-free, flattened
-instances. A value type's instances are compared by their contents, not by reference identity. They
-can be stored inline in fields and array elements, eliminating the memory indirection and cache
-misses of boxed types.
+Instances. A value type's instances are compared by their contents, not by reference identity. They
+Can be stored inline in fields and array elements, eliminating the memory indirection and cache
+Misses of boxed types.
 
 **Definition.** A value class is a class declared with the `value` keyword (or `inline` in earlier
-prototypes). Its instances have no identity -- there is no concept of reference equality, no
-synchronization, and no null instances. Two value instances with the same field values are
-considered equal.
+Prototypes). Its instances have no identity -- there is no concept of reference equality, no
+Synchronization, and no null instances. Two value instances with the same field values are
+Considered equal.
 
 :::info
 Project Valhalla is still in preview as of JDK 23. The syntax and semantics may change
-before finalization. The examples below reflect the current preview state.
+Before finalization. The examples below reflect the current preview state.
 :::
 
 ### Identity Classes vs Value Classes
 
-| Property            | Identity Class (today) | Value Class (Valhalla)       |
+| Property | Identity Class (today) | Value Class (Valhalla) |
 | ------------------- | ---------------------- | ---------------------------- |
-| Identity            | Has identity (`==`)    | No identity                  |
-| Nullability         | Can be null            | Cannot be null               |
-| Default value       | null                   | All-zero bits (like int 0)   |
-| Memory layout       | Reference (pointer)    | Flattened inline             |
-| `==` operator       | Reference equality     | Structural equality          |
-| Synchronization     | Can use `synchronized` | Not allowed                  |
-| Supertype           | `Object`               | Implicit abstract superclass |
-| Generic type params | Reference types only   | Can be used as type argument |
+| Identity | Has identity (`==`) | No identity |
+| Nullability | Can be null | Cannot be null |
+| Default value | null | All-zero bits (like int 0) |
+| Memory layout | Reference (pointer) | Flattened inline |
+| `==` operator | Reference equality | Structural equality |
+| Synchronization | Can use `synchronized` | Not allowed |
+| Supertype | `Object` | Implicit abstract superclass |
+| Generic type params | Reference types only | Can be used as type argument |
 
 ### Declaring a Value Class
 
@@ -1068,8 +1068,8 @@ public value class Line {
 ```
 
 A `Line` contains two `Point` instances inline -- there are no pointers. The entire `Line` is 32
-bytes (four doubles), stored contiguously in memory. Compare this to the identity class equivalent,
-which would be 16 bytes of references plus 32 bytes of heap-allocated `Point` objects.
+Bytes (four doubles), stored contiguously in memory. Compare this to the identity class equivalent,
+Which would be 16 bytes of references plus 32 bytes of heap-allocated `Point` objects.
 
 ### Flattened Memory Layout
 
@@ -1084,15 +1084,15 @@ value Point[] valuePoints = new value Point[1000];
 ```
 
 The flattened layout eliminates one level of indirection, which improves cache utilization for
-data-intensive workloads. For `double[]` arrays, the difference is negligible (doubles are already
-primitive), but for arrays of small compound types (points, complex numbers, 2D/3D vectors), the
-improvement is significant.
+Data-intensive workloads. For `double[]` arrays, the difference is negligible (doubles are already
+Primitive), but for arrays of small compound types (points, complex numbers, 2D/3D vectors), the
+Improvement is significant.
 
 ### Implications for Generics
 
 Value types solve a long-standing limitation of Java generics: primitive types cannot be used as
-type arguments. With value types, `List&lt;Point&gt;` can store `Point` instances inline (or at
-least more compactly) without boxing.
+Type arguments. With value types, `List&lt;Point&gt;` can store `Point` instances inline (or at
+Least more compactly) without boxing.
 
 ```java
 // Today: List<int> does not exist, must use List<Integer> (boxed)
@@ -1105,8 +1105,8 @@ unboxed.add(42); // no allocation
 ```
 
 The exact generic specialization strategy is still under discussion. The current Valhalla prototype
-uses a "value generic" approach where type arguments can be value types, and the JVM generates
-specialized code paths for value-carrying generic classes.
+Uses a "value generic" approach where type arguments can be value types, and the JVM generates
+Specialized code paths for value-carrying generic classes.
 
 ### Current Status
 
@@ -1114,8 +1114,8 @@ Valhalla has been in development for over a decade. As of JDK 23:
 
 - **Value classes**: Preview in recent builds. Syntax may change.
 - **Generic specialization**: Not yet implemented. This is the hardest part of Valhalla.
-- **Migration**: Existing wrapper types (`Integer`, `Long`, etc.) will eventually be migrated to
-  value classes, but this is a long-term goal that requires full generic specialization.
+- **Migration**: Existing wrapper types (`Integer``Long`Etc.) will eventually be migrated to
+ value classes, but this is a long-term goal that requires full generic specialization.
 
 ## Practical Setup
 
@@ -1139,7 +1139,7 @@ native-image --version
 :::info
 As of JDK 22, native-image is bundled with the standard JDK. You do not need a separate
 GraalVM distribution. Install a JDK that includes native-image support (look for "GraalVM" in the
-vendor name when using SDKMAN, or download from the GraalVM GitHub releases).
+Vendor name when using SDKMAN, or download from the GraalVM GitHub releases).
 :::
 
 ### Building a Native Image: Step by Step
@@ -1183,7 +1183,7 @@ native-image -H:Name=app -cp target/classes com.example.App
 ### Reflection Metadata Generation
 
 For applications that use reflection (Spring, Jackson, Hibernate, etc.), use the agent to collect
-metadata:
+Metadata:
 
 ```bash
 # Phase 1: Run with agent to collect configuration
@@ -1245,17 +1245,17 @@ mvn -Pnative native:compile
 
 :::warning
 Do not attempt to unit test the native image binary itself during development. The build
-takes 30-120 seconds, which makes the test cycle too slow. Test business logic in JVM mode, and use
-the native image binary only for integration tests and final validation.
+Takes 30-120 seconds, which makes the test cycle too slow. Test business logic in JVM mode, and use
+The native image binary only for integration tests and final validation.
 :::
 
 ## Common Pitfalls
 
 ### Reflection in Native Image
 
-The closed-world analysis cannot see reflective access. If you use `Class.forName()`,
-`getDeclaredMethod()`, or `newInstance()` on a class that is not otherwise reachable, it will not be
-included in the native image.
+The closed-world analysis cannot see reflective access. If you use `Class.forName()`
+`getDeclaredMethod()`Or `newInstance()` on a class that is not otherwise reachable, it will not be
+Included in the native image.
 
 ```java
 // This will fail at runtime in native image if MyDto is not otherwise reachable
@@ -1273,8 +1273,8 @@ java -agentlib:native-image-agent=config-output-dir=META-INF/native-image \
 ### Classpath Scanning Failures
 
 Frameworks like Spring and Hibernate scan the classpath at runtime to find annotated classes. This
-does not work in native image because there is no classpath at runtime -- all classes are statically
-linked.
+Does not work in native image because there is no classpath at runtime -- all classes are statically
+Linked.
 
 **Fix**: Use the agent, or configure the framework's native-image integration:
 
@@ -1287,8 +1287,8 @@ linked.
 ### Resource Loading
 
 `ClassLoader.getResource()` and `ClassLoader.getResourceAsStream()` work in native image only for
-resources registered in the resource configuration. Resources not listed are not included in the
-binary.
+Resources registered in the resource configuration. Resources not listed are not included in the
+Binary.
 
 **Fix**: Use the agent to detect resource access, or list resources explicitly in
 `resource-config.json`:
@@ -1304,17 +1304,17 @@ binary.
 ### JNI Limitations in Native Image
 
 JNI libraries loaded with `System.loadLibrary()` work in native image, but the JNI configuration
-must list all native methods and their signatures. Dynamically registered JNI methods (via
+Must list all native methods and their signatures. Dynamically registered JNI methods (via
 `RegisterNatives`) require additional configuration.
 
 The FFM API is the preferred mechanism for native interop in native image. It requires no JNI
-configuration and is fully supported.
+Configuration and is fully supported.
 
 ### Build-Time vs Runtime Initialization
 
 Classes initialized at build time have their static fields frozen into the image heap. If a static
-field holds a reference to a build-machine-specific value (a file path, a network address, a
-timestamp), that value persists in the deployed binary.
+Field holds a reference to a build-machine-specific value (a file path, a network address, a
+Timestamp), that value persists in the deployed binary.
 
 ```java
 // Dangerous: initialized at build time
@@ -1337,7 +1337,7 @@ native-image --initialize-at-run-time=com.example.Config -jar myapp.jar
 
 `java.lang.reflect.Proxy` requires explicit configuration. If you create dynamic proxies at runtime
 (e.g., for Mockito, Spring AOP, or Hibernate lazy loading), you must list the interfaces they
-implement in `proxy-config.json`:
+Implement in `proxy-config.json`:
 
 ```json
 [["com.example.Repository"]]
@@ -1346,45 +1346,45 @@ implement in `proxy-config.json`:
 ### Serialization
 
 Java serialization works in native image for classes that are reachable and registered. The agent
-handles most cases, but custom `readObject`/`writeObject` methods that use reflection internally may
-need additional configuration.
+Handles most cases, but custom `readObject`/`writeObject` methods that use reflection internally may
+Need additional configuration.
 
 ### Unsupported Features in Native Image
 
-| Feature                            | Supported? | Notes                                 |
+| Feature | Supported? | Notes |
 | ---------------------------------- | ---------- | ------------------------------------- |
-| `java.lang.reflect`                | Partial    | Requires explicit configuration       |
-| `java.lang.invoke` (lambdas)       | Yes        | Lambda metafactory is supported       |
-| `java.lang.instrument` (agents)    | No         | No runtime class redefinition         |
-| `java.security` (dynamic policies) | Partial    | Security providers must be registered |
-| `javax.script` (ScriptEngine)      | Partial    | JS engine available, others vary      |
-| `java.util.logging`                | Yes        |                                       |
-| `java.net.http.HttpClient`         | Yes        | Fully supported                       |
-| `java.net.URI`/`URL`               | Yes        |                                       |
-| `javax.crypto`                     | Partial    | Some providers need registration      |
+| `java.lang.reflect` | Partial | Requires explicit configuration |
+| `java.lang.invoke` (lambdas) | Yes | Lambda metafactory is supported |
+| `java.lang.instrument` (agents) | No | No runtime class redefinition |
+| `java.security` (dynamic policies) | Partial | Security providers must be registered |
+| `javax.script` (ScriptEngine) | Partial | JS engine available, others vary |
+| `java.util.logging` | Yes | |
+| `java.net.http.HttpClient` | Yes | Fully supported |
+| `java.net.URI`/`URL` | Yes | |
+| `javax.crypto` | Partial | Some providers need registration |
 
 ## Reference
 
 ### JEP Numbers and Java Versions
 
-| JEP | Feature                                | Java Version | Status    |
+| JEP | Feature | Java Version | Status |
 | --- | -------------------------------------- | ------------ | --------- |
-| 424 | Foreign Function and Memory API        | 22           | Standard  |
-| 444 | Virtual Threads                        | 21           | Standard  |
-| 446 | Scoped Values (preview)                | 21           | Preview   |
-| 448 | Vector API (incubator)                 | 16+          | Incubator |
-| 453 | Structured Concurrency (preview)       | 21           | Preview   |
-| 440 | Record Patterns                        | 21           | Standard  |
-| 441 | Pattern Matching for switch            | 21           | Standard  |
-| 443 | Unnamed Patterns and Variables         | 22           | Standard  |
-| 445 | Unnamed Classes and Instance Methods   | 22           | Standard  |
-| 459 | String Templates (preview)             | 21           | Preview   |
-| 477 | Implicitly Declared Classes/Instances  | 22           | Standard  |
-| 482 | Flexible Constructor Bodies (Valhalla) | 24           | Preview   |
-| 401 | Value Classes (Valhalla)               | TBD          | Preview   |
-| 412 | Foreign Function and Memory API (prev) | 19           | Preview   |
-| 395 | Records                                | 16           | Standard  |
-| 409 | Sealed Classes                         | 17           | Standard  |
+| 424 | Foreign Function and Memory API | 22 | Standard |
+| 444 | Virtual Threads | 21 | Standard |
+| 446 | Scoped Values (preview) | 21 | Preview |
+| 448 | Vector API (incubator) | 16+ | Incubator |
+| 453 | Structured Concurrency (preview) | 21 | Preview |
+| 440 | Record Patterns | 21 | Standard |
+| 441 | Pattern Matching for switch | 21 | Standard |
+| 443 | Unnamed Patterns and Variables | 22 | Standard |
+| 445 | Unnamed Classes and Instance Methods | 22 | Standard |
+| 459 | String Templates (preview) | 21 | Preview |
+| 477 | Implicitly Declared Classes/Instances | 22 | Standard |
+| 482 | Flexible Constructor Bodies (Valhalla) | 24 | Preview |
+| 401 | Value Classes (Valhalla) | TBD | Preview |
+| 412 | Foreign Function and Memory API (prev) | 19 | Preview |
+| 395 | Records | 16 | Standard |
+| 409 | Sealed Classes | 17 | Standard |
 
 ### Useful JVM Flags
 
@@ -1441,7 +1441,7 @@ need additional configuration.
 
 #### Linux
 
-- Native image requires `glibc-devel`, `zlib-devel`, and `libstdc++-static` on most distributions.
+- Native image requires `glibc-devel``zlib-devel`And `libstdc++-static` on most distributions.
 - The FFM API uses `dlopen`/`dlsym` for symbol lookup. Library paths follow `LD_LIBRARY_PATH`.
 
 #### macOS
@@ -1453,3 +1453,11 @@ need additional configuration.
 
 - Native image requires Visual Studio Build Tools with the C++ workload.
 - The FFM API uses `LoadLibrary`/`GetProcAddress`. DLLs must be on `PATH`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

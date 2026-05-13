@@ -10,15 +10,15 @@ slug: generators-std-generator
 ---
 # Generators (`std::generator<T>`) and Synchronous Yielding
 
-This section covers C++23's `std::generator<T>`, `co_yield` as syntactic sugar, lazy evaluation
-semantics, a comparison with Python generators, and a complete Fibonacci generator example with
-composable pipeline operations.
+This section covers C++23's `std::generator<T>``co_yield` as syntactic sugar, lazy evaluation
+Semantics, a comparison with Python generators, and a complete Fibonacci generator example with
+Composable pipeline operations.
 
 ## `std::generator<T>` (C++23)
 
 C++23 introduced `std::generator<T>` [N4950 §25.4.4], a standard library type that wraps a coroutine
-producing a sequence of values via `co_yield`. It is an input iterator whose `operator++` resumes
-the coroutine and whose `operator*` returns the yielded value.
+Producing a sequence of values via `co_yield`. It is an input iterator whose `operator++` resumes
+The coroutine and whose `operator*` returns the yielded value.
 
 The declaration (simplified) [N4950 §25.4.4]:
 
@@ -30,7 +30,7 @@ class generator : public ranges::view_interface<generator<Ref, V, Allocator>> {
 ```
 
 `std::generator<T>` is a **view** — it is lightweight, non-owning, and models `input_range`. Values
-are computed lazily on demand.
+Are computed lazily on demand.
 
 ## `co_yield` as Syntactic Sugar
 
@@ -41,31 +41,31 @@ $$
 $$
 
 This means that `co_yield` requires the promise type to have a `yield_value` method that returns an
-awaiter. The `std::generator` promise type internally stores the yielded value and returns a
+Awaiter. The `std::generator` promise type internally stores the yielded value and returns a
 `std::suspend_always` awaiter to suspend the coroutine until the caller requests the next value.
 
 ## Lazy Iteration
 
 The defining characteristic of a generator is **lazy evaluation**. No values are computed until the
-iterator is advanced. This makes generators suitable for representing potentially infinite
-sequences, large data pipelines, or expensive computations where only a prefix of the results is
-needed.
+Iterator is advanced. This makes generators suitable for representing potentially infinite
+Sequences, large data pipelines, or expensive computations where only a prefix of the results is
+Needed.
 
 The memory usage of a generator is $\mathcal{'\{'}O{'\}'}(d)$ where $d$ is the depth of the coroutine's local
-variable state that crosses a suspend point — typically constant and independent of the number of
-values produced.
+Variable state that crosses a suspend point — constant and independent of the number of
+Values produced.
 
 ## Comparison with Python Generators
 
-| Feature                     | Python `generator`                        | C++ `std::generator<T>` (C++23)                |
+| Feature | Python `generator` | C++ `std::generator<T>` (C++23) |
 | :-------------------------- | :---------------------------------------- | :--------------------------------------------- |
-| Syntax                      | `yield expr`                              | `co_yield expr`                                |
-| Return type                 | Implicit                                  | `std::generator<T>` or custom                  |
-| Type safety                 | Dynamically typed                         | Statically typed (templates)                   |
-| Lazy evaluation             | Yes                                       | Yes                                            |
-| Composable via `yield from` | Yes (`yield from gen`)                    | Via nested coroutine calls or range adapters   |
-| Exception propagation       | `throw` inside generator caught by caller | Same — exceptions propagate through `co_await` |
-| Standard library support    | Built-in since Python 2.2                 | C++23 (`<generator>`)                          |
+| Syntax | `yield expr` | `co_yield expr` |
+| Return type | Implicit | `std::generator<T>` or custom |
+| Type safety | Dynamically typed | Statically typed (templates) |
+| Lazy evaluation | Yes | Yes |
+| Composable via `yield from` | Yes (`yield from gen`) | Via nested coroutine calls or range adapters |
+| Exception propagation | `throw` inside generator caught by caller | Same — exceptions propagate through `co_await` |
+| Standard library support | Built-in since Python 2.2 | C++23 (`<generator>`) |
 
 ## Complete Example: Fibonacci Generator with `std::generator`
 
@@ -154,9 +154,9 @@ Sum: 4613732
 
 :::tip
 `std::generator` is composable with C++20 ranges. You can pipe a generator into
-`std::views::filter`, `std::views::transform`, etc. However, be aware that range adaptors are eager
-on the iteration step — each `++it` call on the adapted view will advance the underlying generator
-by one element.
+`std::views::filter``std::views::transform`Etc. However, be aware that range adaptors are eager
+On the iteration step — each `++it` call on the adapted view will advance the underlying generator
+By one element.
 :::
 
 ## See Also
@@ -176,10 +176,10 @@ When `co_yield expr` is executed, the coroutine:
 
 1. Evaluates `expr` and passes it to `promise.yield_value(expr)`.
 2. The promise stores the value (by reference, copy, or move depending on the signature).
-3. `yield_value` returns a suspend-awaiter (typically `std::suspend_always`), suspending the
-   coroutine.
-4. The caller advances the generator's iterator via `++it`, which resumes the coroutine.
-5. Execution continues after the `co_yield` until the next `co_yield`, `co_return`, or end of scope.
+3. `yield_value` returns a suspend-awaiter ( `std::suspend_always`), suspending the
+ coroutine.
+4. The caller advances the generator's iterator via `++it`Which resumes the coroutine.
+5. Execution continues after the `co_yield` until the next `co_yield``co_return`Or end of scope.
 
 ```cpp
 #include <generator>
@@ -260,21 +260,21 @@ int main() {
 
 ## Generator vs Iterator
 
-| Aspect             | Manual Iterator                                               | `std::generator`                           |
+| Aspect | Manual Iterator | `std::generator` |
 | :----------------- | :------------------------------------------------------------ | :----------------------------------------- |
-| State storage      | Manual (member variables)                                     | Automatic (coroutine frame)                |
-| Suspend/resume     | Not supported                                                 | Built-in (`co_yield` / `co_await`)         |
-| Complexity         | Boilerplate-heavy (`begin`, `end`, `operator++`, `operator*`) | Minimal — just write the body              |
-| Infinite sequences | Difficult (need sentinel tricks)                              | Natural (`while(true) { co_yield ...; }`)  |
-| Exception safety   | Manual                                                        | Stack unwinding on unhandled exception     |
-| Composability      | Limited                                                       | Nest coroutines, use range adaptors        |
-| Memory overhead    | `sizeof(iterator)`                                            | Coroutine frame (typically ~100-300 bytes) |
+| State storage | Manual (member variables) | Automatic (coroutine frame) |
+| Suspend/resume | Not supported | Built-in (`co_yield` / `co_await`) |
+| Complexity | Boilerplate-heavy (`begin``end``operator++``operator*`) | Minimal — just write the body |
+| Infinite sequences | Difficult (need sentinel tricks) | Natural (`while(true) { co_yield ...; }`) |
+| Exception safety | Manual | Stack unwinding on unhandled exception |
+| Composability | Limited | Nest coroutines, use range adaptors |
+| Memory overhead | `sizeof(iterator)` | Coroutine frame ( ~100-300 bytes) |
 
 ## Recursive Generators
 
 Generators can call themselves recursively. Each recursive invocation creates a new coroutine frame
-on the heap. This is useful for tree traversal, combinatorial generation, and recursive descent
-parsing.
+On the heap. This is useful for tree traversal, combinatorial generation, and recursive descent
+Parsing.
 
 ```cpp
 #include &lt;generator&gt;
@@ -348,7 +348,7 @@ int main() {
 ## Composing Generators
 
 Generators can be composed into pipelines. One generator can consume the output of another, and
-range adapters can be inserted between them.
+Range adapters can be inserted between them.
 
 ```cpp
 #include &lt;generator&gt;
@@ -411,18 +411,18 @@ int main() {
 
 ## Generator Performance Characteristics
 
-| Metric                     | Typical Value                                    |
+| Metric | Typical Value |
 | :------------------------- | :----------------------------------------------- |
-| Coroutine frame allocation | 1 heap allocation per `std::generator` creation  |
-| Frame size                 | ~100–300 bytes (depends on local variables)      |
-| Resume/suspend overhead    | ~10–50ns (comparable to a virtual function call) |
-| Memory usage (per element) | $\mathcal{'\{'}O{'\}'}(1)$ — no accumulation               |
-| Cache behavior             | Poor if frame is large and accessed infrequently |
+| Coroutine frame allocation | 1 heap allocation per `std::generator` creation |
+| Frame size | ~100–300 bytes (depends on local variables) |
+| Resume/suspend overhead | ~10–50ns (comparable to a virtual function call) |
+| Memory usage (per element) | $\mathcal{'\{'}O{'\}'}(1)$ — no accumulation |
+| Cache behavior | Poor if frame is large and accessed infrequently |
 
 :::warning
 Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For
-microsecond-latency systems, this can be a concern. C++26 is expected to add `std::generator` with
-allocator support to allow custom allocation strategies.
+Microsecond-latency systems, this can be a concern. C++26 is expected to add `std::generator` with
+Allocator support to allow custom allocation strategies.
 :::
 
 ## Practical Example: State Machine Generator
@@ -498,17 +498,25 @@ int main() {
 ## Common Pitfalls
 
 - **Dangling references in generators.** If `co_yield` yields a reference to a local variable that
-  is modified before the caller reads it, the caller sees the modified value. Always yield by value
-  or ensure the referenced object is stable.
+ is modified before the caller reads it, the caller sees the modified value. Always yield by value
+ or ensure the referenced object is stable.
 - **Forgetting to advance.** A generator's values are only computed when the iterator is advanced.
-  If you create a generator but never iterate it, the coroutine body never executes.
+ If you create a generator but never iterate it, the coroutine body never executes.
 - **Exception propagation.** If an exception is thrown inside a generator coroutine and not caught,
-  it propagates to the caller on the next `++it` call. Always handle exceptions or document them.
+ it propagates to the caller on the next `++it` call. Always handle exceptions or document them.
 - **Lifetime of captured references.** If a generator coroutine captures a reference (via lambda or
-  reference parameter), the referenced object must outlive the generator.
+ reference parameter), the referenced object must outlive the generator.
 - **Range adaptor eager materialization.** Some range adaptors (like `std::views::reverse`) may need
-  to buffer elements, defeating the lazy evaluation benefit of generators.
+ to buffer elements, defeating the lazy evaluation benefit of generators.
 
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

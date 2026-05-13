@@ -11,18 +11,18 @@ slug: debugging-and-profiling
 # Debugging and Profiling
 
 Debugging and profiling are not afterthoughts bolted onto a codebase after the fact. They are
-first-class engineering disciplines. A systems engineer does not guess about correctness or
-performance — they measure, instrument, and reason from evidence. This reference covers the full
-debugging and profiling stack in CPython, from the interactive debugger down to kernel-level
-sampling profilers, and explains the _why_ behind each tool's design.
+First-class engineering disciplines. A systems engineer does not guess about correctness or
+Performance — they measure, instrument, and reason from evidence. This reference covers the full
+Debugging and profiling stack in CPython, from the interactive debugger down to kernel-level
+Sampling profilers, and explains the _why_ behind each tool's design.
 
 ## pdb and breakpoint()
 
 The Python debugger (`pdb`) is a bytecode-level, line-oriented debugger implemented in pure Python.
 It operates by manipulating the frame objects that CPython creates for each function call, setting
 `sys.settrace` callbacks that fire on every call, line, return, and exception event. Understanding
-this is critical: `pdb` is not a separate process observing your program. It is your program, with a
-trace hook inserted.
+This is critical: `pdb` is not a separate process observing your program. It is your program, with a
+Trace hook inserted.
 
 ### Basic Entry Points
 
@@ -33,12 +33,12 @@ import pdb; pdb.set_trace()
 ```
 
 This one-liner is idiomatic in every Python codebase written before Python 3.7. `pdb.set_trace()`
-does three things:
+Does three things:
 
 1. Instantiates a `pdb.Pdb()` object (the debugger class).
 2. Calls `self.set_trace()` on that instance, which invokes `sys.settrace(self.trace_dispatch)`.
 3. Returns control to the Python interpreter, which now calls `trace_dispatch` on every bytecode
-   event.
+ event.
 
 Once the trace hook is active, execution halts at the next line and you are dropped into the pdb
 REPL.
@@ -53,11 +53,11 @@ def compute():
 ```
 
 `breakpoint()` is not syntax — it is a built-in function that calls `sys.breakpointhook()`. By
-default, `sys.breakpointhook` is set to `pdb.set_trace()`, but the crucial difference is that it is
+Default, `sys.breakpointhook` is set to `pdb.set_trace()`But the crucial difference is that it is
 _configurable_. You can set `PYTHONBREAKPOINT=0` in the environment to make all `breakpoint()` calls
-no-ops in production. You can set `PYTHONBREAKPOINT=ipdb.set_trace` to redirect all breakpoints to
+No-ops in production. You can set `PYTHONBREAKPOINT=ipdb.set_trace` to redirect all breakpoints to
 `ipdb` without changing a single line of code. This is a systems-level concern: your instrumentation
-should be deployable and removable through configuration, not code changes.
+Should be deployable and removable through configuration, not code changes.
 
 You can also start pdb from the command line, instrumenting the entire program from the start:
 
@@ -66,71 +66,71 @@ python -m pdb script.py
 ```
 
 This runs the script under pdb control from module load, which means you can set breakpoints before
-any user code runs. This is essential for debugging import-time side effects, which are invisible to
-inline `breakpoint()` calls placed inside functions.
+Any user code runs. This is essential for debugging import-time side effects, which are invisible to
+Inline `breakpoint()` calls placed inside functions.
 
 ### Core pdb Commands
 
 These commands form the irreducible set you need to operate effectively:
 
-| Command   | Action       | What It Actually Does                                                                                                                          |
+| Command | Action | What It Actually Does |
 | --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `n`       | Next         | Execute the current line, step over any function calls. Advances to the next line in the _current_ frame.                                      |
-| `s`       | Step         | Step into the next function call. Creates a new frame and stops at the first executable line inside it.                                        |
-| `c`       | Continue     | Resume execution until the next breakpoint or program termination.                                                                             |
-| `b`       | Breakpoint   | Set a breakpoint. `b` lists all breakpoints. `b 42` sets a breakpoint at line 42 of the current file. `b file.py:42` sets one in another file. |
-| `l`       | List         | Show source context around the current line. `l .` shows around the current line. `l 1,50` shows lines 1-50.                                   |
-| `p expr`  | Print        | Evaluate `expr` in the current frame's namespace and print the result.                                                                         |
-| `pp expr` | Pretty-print | Same as `p` but uses `pprint.pformat` for structured output. Essential for nested dicts, long lists, complex objects.                          |
-| `w`       | Where        | Print a stack trace from the current frame to the outermost frame. Shows the full call chain that led to the current position.                 |
-| `u`       | Up           | Move one frame up the call stack. You can now inspect local variables in the calling function.                                                 |
-| `d`       | Down         | Move one frame down the call stack (reverse of `u`).                                                                                           |
-| `q`       | Quit         | Terminate the program immediately. No cleanup, no finally blocks.                                                                              |
-| `r`       | Return       | Continue execution until the current function returns. Stops at the return statement.                                                          |
-| `args`    | Arguments    | Print the argument list and current values for the current function.                                                                           |
+| `n` | Next | Execute the current line, step over any function calls. Advances to the next line in the _current_ frame. |
+| `s` | Step | Step into the next function call. Creates a new frame and stops at the first executable line inside it. |
+| `c` | Continue | Resume execution until the next breakpoint or program termination. |
+| `b` | Breakpoint | Set a breakpoint. `b` lists all breakpoints. `b 42` sets a breakpoint at line 42 of the current file. `b file.py:42` sets one in another file. |
+| `l` | List | Show source context around the current line. `l .` shows around the current line. `l 1,50` shows lines 1-50. |
+| `p expr` | Print | Evaluate `expr` in the current frame's namespace and print the result. |
+| `pp expr` | Pretty-print | Same as `p` but uses `pprint.pformat` for structured output. Essential for nested dicts, long lists, complex objects. |
+| `w` | Where | Print a stack trace from the current frame to the outermost frame. Shows the full call chain that led to the current position. |
+| `u` | Up | Move one frame up the call stack. You can now inspect local variables in the calling function. |
+| `d` | Down | Move one frame down the call stack (reverse of `u`). |
+| `q` | Quit | Terminate the program immediately. No cleanup, no finally blocks. |
+| `r` | Return | Continue execution until the current function returns. Stops at the return statement. |
+| `args` | Arguments | Print the argument list and current values for the current function. |
 
 The distinction between `n` and `s` is the single most important concept in pdb. `n` advances the
-line pointer in the current frame and runs the line to completion. If the line contains a function
-call, that call executes in its entirety and you see the result. `s` descends into the called
-function, creating a new frame. When debugging, the question is always: "Do I care about the
-internals of this call?" If yes, `s`. If no, `n`.
+Line pointer in the current frame and runs the line to completion. If the line contains a function
+Call, that call executes in its entirety and you see the result. `s` descends into the called
+Function, creating a new frame. When debugging, the question is always: "Do I care about the
+Internals of this call?" If yes, `s`. If no, `n`.
 
 The `u` and `d` commands let you walk the call stack without actually executing any code. This is
-how you inspect the state of a calling function when you are deep inside a callee. You can `u` to
-the caller, `p local_var` to inspect its state, then `d` to return to the callee.
+How you inspect the state of a calling function when you are deep inside a callee. You can `u` to
+The caller, `p local_var` to inspect its state, then `d` to return to the callee.
 
 ### The Cost of pdb
 
-pdb is not free. `sys.settrace` inserts a Python-level callback on every bytecode event (call, line,
-return, exception). In CPython, this means:
+Pdb is not free. `sys.settrace` inserts a Python-level callback on every bytecode event (call, line,
+Return, exception). In CPython, this means:
 
 - Every function call incurs the overhead of calling the trace function.
 - Every line execution incurs the overhead of the trace function.
 - The trace function itself must determine the event type and decide what to do.
 
-This overhead is typically 10-100x slowdown for CPU-bound code. For I/O-bound code, the overhead is
-often negligible because the interpreter is already spending most of its time waiting for the
-kernel. Never leave `breakpoint()` or `pdb.set_trace()` in production code paths.
+This overhead is 10-100x slowdown for CPU-bound code. For I/O-bound code, the overhead is
+Often negligible because the interpreter is already spending most of its time waiting for the
+Kernel. Never leave `breakpoint()` or `pdb.set_trace()` in production code paths.
 
 ## Advanced pdb
 
 ### Conditional Breakpoints
 
 Setting a breakpoint at a line that executes thousands of times inside a loop is useless without a
-condition. pdb supports conditional breakpoints:
+Condition. Pdb supports conditional breakpoints:
 
 ```
 (Pdb) b 42, x > 100
 ```
 
 This sets a breakpoint at line 42 that only triggers when the local variable `x` is greater
-than 100. The condition is evaluated as a Python expression in the current frame's namespace every
-time line 42 is reached. If the condition is false, execution continues without stopping.
+Than 100. The condition is evaluated as a Python expression in the current frame's namespace every
+Time line 42 is reached. If the condition is false, execution continues without stopping.
 
 Why does this matter? Consider a loop processing 10 million records. You know the bug manifests when
-a record's `status` field is `'FAILED'` and its `retry_count` exceeds 3. Without a conditional
-breakpoint, you would have to hit `c` thousands of times. With
-`b 87, status == 'FAILED' and retry_count > 3`, you stop exactly where the bug manifests.
+A record's `status` field is `'FAILED'` and its `retry_count` exceeds 3. Without a conditional
+Breakpoint, you would have to hit `c` thousands of times. With
+`b 87, status == 'FAILED' and retry_count > 3`You stop exactly where the bug manifests.
 
 ### Temporary Breakpoints
 
@@ -139,8 +139,8 @@ breakpoint, you would have to hit `c` thousands of times. With
 ```
 
 `tbreak` sets a breakpoint that automatically removes itself after it is hit once. This is useful
-when you want to inspect state at a single point during a long execution without having to remember
-to delete the breakpoint afterward.
+When you want to inspect state at a single point during a long execution without having to remember
+To delete the breakpoint afterward.
 
 ### Ignoring Library Code
 
@@ -153,12 +153,12 @@ When debugging, you often step into library functions that you cannot or do not 
 ```
 
 This tells pdb to ignore breakpoint 1 for the next 999,999 hits. Combined with conditional
-breakpoints, you can effectively skip over noise.
+Breakpoints, you can effectively skip over noise.
 
 ### Commands on Breakpoint Hit
 
 The `commands` keyword lets you attach a sequence of pdb commands to a breakpoint that execute
-automatically every time the breakpoint is hit:
+Automatically every time the breakpoint is hit:
 
 ```
 (Pdb) b 42
@@ -169,15 +169,15 @@ automatically every time the breakpoint is hit:
 > end
 ```
 
-This attaches three commands to breakpoint 1: print `request_data`, print `response_status`, then
-continue. The `end` keyword terminates the command list. This is a crude but effective form of
-watchpoint. You can automate data collection during long runs without manually interacting with the
-debugger.
+This attaches three commands to breakpoint 1: print `request_data`Print `response_status`Then
+Continue. The `end` keyword terminates the command list. This is a crude but effective form of
+Watchpoint. You can automate data collection during long runs without manually interacting with the
+Debugger.
 
 ### .pdbrc for Startup Commands
 
-Place a `.pdbrc` file in your home directory or the current working directory. pdb reads this file
-on startup and executes each line as a pdb command. Common uses:
+Place a `.pdbrc` file in your home directory or the current working directory. Pdb reads this file
+On startup and executes each line as a pdb command. Common uses:
 
 ```
 # ~/.pdbrc
@@ -187,15 +187,15 @@ set ignore_raise 1
 ```
 
 This sets up aliases and configuration every time pdb starts. The `set ignore_raise 1` directive
-tells pdb not to stop on exceptions, which is useful when you only want to stop at explicit
-breakpoints.
+Tells pdb not to stop on exceptions, which is useful when you only want to stop at explicit
+Breakpoints.
 
 ### Post-Mortem Debugging
 
 When your program crashes with an unhandled exception, the traceback is printed and the process
-exits. But the traceback frame objects still exist in memory at the moment of the crash. `pdb.pm()`
+Exits. But the traceback frame objects still exist in memory at the moment of the crash. `pdb.pm()`
 (post-mortem) re-attaches pdb to the last exception's traceback, letting you inspect the state at
-the point of failure:
+The point of failure:
 
 ```python
 import pdb
@@ -213,12 +213,12 @@ python -i crashed_script.py
 ```
 
 The `-i` flag drops you into an interactive interpreter after the script exits (whether by crash or
-normal termination). You can then call `pdb.pm()` to inspect the failure state.
+Normal termination). You can then call `pdb.pm()` to inspect the failure state.
 
 The critical insight about post-mortem debugging is that it requires no advance planning. You do not
-need to have set breakpoints before the crash. The traceback is a first-class object in Python, and
-pdb can re-enter it at any time. This makes it indispensable for debugging production crashes where
-you cannot reproduce the failure interactively.
+Need to have set breakpoints before the crash. The traceback is a first-class object in Python, and
+Pdb can re-enter it at any time. This makes it indispensable for debugging production crashes where
+You cannot reproduce the failure interactively.
 
 You can also use `pdb.Pdb().interaction(None, sys.exc_info()[2])` for more fine-grained control, but
 `pdb.post_mortem()` is the standard entry point.
@@ -229,7 +229,7 @@ You can also use `pdb.Pdb().interaction(None, sys.exc_info()[2])` for more fine-
 
 VS Code uses the Debug Adapter Protocol (DAP), a standardized protocol for communication between an
 IDE and a language-specific debug server. For Python, the adapter is implemented by the `debugpy`
-package, which is maintained by Microsoft as part of the VS Code Python extension.
+Package, which is maintained by Microsoft as part of the VS Code Python extension.
 
 Configuration lives in `.vscode/launch.json`:
 
@@ -256,15 +256,15 @@ Key fields and their semantics:
 - `request`: `"launch"` starts a new process. `"attach"` connects to an existing one.
 - `program`: The script to run. `${file}` expands to the currently active file.
 - `console`: `"integratedTerminal"` runs in the VS Code terminal. `"internalConsole"` runs in the
-  debug console (no stdin support).
-- `justMyCode`: When `true`, the debugger skips library code. Under the hood, this sets
-  `step_over_pylib` in the debug adapter, which filters frames based on whether they belong to
-  site-packages or the standard library. When `false`, you step into everything.
+ debug console (no stdin support).
+- `justMyCode`: When `true`The debugger skips library code. Under the hood, this sets
+ `step_over_pylib` in the debug adapter, which filters frames based on whether they belong to
+ site-packages or the standard library. When `false`You step into everything.
 
 Watch expressions in VS Code are evaluated in the current frame's context on every pause. They are
-not free — each watch expression requires the debug adapter to serialize the result back to the IDE
-over DAP. If you have complex watch expressions and notice the debugger feels sluggish, reduce the
-number of watches.
+Not free — each watch expression requires the debug adapter to serialize the result back to the IDE
+Over DAP. If you have complex watch expressions and notice the debugger feels sluggish, reduce the
+Number of watches.
 
 The debug console in VS Code is a full Python REPL running in the context of the debugged process.
 You can execute arbitrary Python code, modify variables, call functions, and even import modules.
@@ -273,23 +273,23 @@ This is not a simulation — it is the actual process.
 ### PyCharm Debugger
 
 PyCharm's debugger is implemented using the Python Debug Server Protocol (a proprietary predecessor
-to DAP). It works similarly to the VS Code debugger but is tightly integrated with PyCharm's code
-analysis. PyCharm's debugger supports:
+To DAP). It works similarly to the VS Code debugger but is tightly integrated with PyCharm's code
+Analysis. PyCharm's debugger supports:
 
 - Evaluate expression on pause (same as VS Code watch expressions).
 - Force return from a function (construct an arbitrary return value and immediately return from the
-  current frame).
+ current frame).
 - Exception breakpoints (break on any exception, or on specific exception types).
 - Method breakpoints (break on entry to any method of a class).
 
 The "force return" feature is particularly powerful. If you have reached a point in the code where
-you understand the bug and want to skip the remaining computation with a known-good value, you can
-force return that value without modifying the source.
+You understand the bug and want to skip the remaining computation with a known-good value, you can
+Force return that value without modifying the source.
 
 ### Remote Debugging with debugpy
 
 Remote debugging lets you attach a debugger to a Python process running on another machine, in a
-container, or in a different environment. The `debugpy` package is the standard tool for this.
+Container, or in a different environment. The `debugpy` package is the standard tool for this.
 
 On the remote/target machine:
 
@@ -322,27 +322,27 @@ On your local machine, configure VS Code to attach:
 ```
 
 The `pathMappings` field is critical. The remote process has its own filesystem paths. The local IDE
-has different paths. `pathMappings` tells the debug adapter how to translate between them. If you
-set a breakpoint in `/home/user/project/main.py` locally but the remote process loaded
-`/app/main.py`, the path mapping ensures the breakpoint lands in the right place.
+Has different paths. `pathMappings` tells the debug adapter how to translate between them. If you
+Set a breakpoint in `/home/user/project/main.py` locally but the remote process loaded
+`/app/main.py`The path mapping ensures the breakpoint lands in the right place.
 
 ### Attaching to a Running Process
 
-debugpy can also attach to a process that is already running, without any code changes on the
-target:
+Debugpy can also attach to a process that is already running, without any code changes on the
+Target:
 
 ```bash
 python -m debugpy --listen 5678 --pid <PID>
 ```
 
 This injects debugpy into the target process by writing to `/proc/<PID>/mem` on Linux. It works
-because CPython's `importlib` machinery can be manipulated from outside the process. The debugpy
-module is loaded into the running process, sets up the trace hook, and begins accepting DAP
-connections.
+Because CPython's `importlib` machinery can be manipulated from outside the process. The debugpy
+Module is loaded into the running process, sets up the trace hook, and begins accepting DAP
+Connections.
 
 This is the correct approach for debugging production services. You do not need to restart the
-process with debug flags. You attach, inspect, detach, and the process continues running with
-minimal disruption.
+Process with debug flags. You attach, inspect, detach, and the process continues running with
+Minimal disruption.
 
 ## logging vs print
 
@@ -353,22 +353,22 @@ minimal disruption.
 - No timestamp. You have no idea when the message was emitted relative to other events.
 - No log level. You cannot distinguish between a routine status message and a critical error.
 - No source identification. The message does not include the module, function, or line number where
-  it was emitted.
+ it was emitted.
 - No structured metadata. You cannot attach request IDs, user IDs, or any other context.
 - No filtering. You cannot selectively enable or disable messages from specific modules.
-- No persistence. Output goes to stdout, which may be piped to `/dev/null`, captured by a process
-  manager, or lost entirely.
+- No persistence. Output goes to stdout, which may be piped to `/dev/null`Captured by a process
+ manager, or lost entirely.
 - No rotation. In a long-running process, print output grows without bound.
 - No thread/process identification. In concurrent systems, you cannot tell which thread emitted the
-  message.
+ message.
 
 In production systems, `print()` statements are not debugging — they are litter. They make
-post-incident analysis harder because they produce unstructured, unfilterable noise.
+Post-incident analysis harder because they produce unstructured, unfilterable noise.
 
 ### The logging Module
 
 The `logging` module is the standard library's structured logging system. It is designed for
-production use.
+Production use.
 
 ```python
 import logging
@@ -394,39 +394,39 @@ def process_order(order_id):
 Key design decisions in this code:
 
 1. `logging.getLogger(__name__)` creates a logger named after the current module. `__name__`
-   resolves to the fully qualified module name (e.g., `myapp.services.orders`). This gives you
-   per-module log granularity. You can set `myapp.services` to WARNING and `myapp.services.orders`
-   to DEBUG independently.
+ resolves to the fully qualified module name (e.g., `myapp.services.orders`). This gives you
+ per-module log granularity. You can set `myapp.services` to WARNING and `myapp.services.orders`
+ to DEBUG independently.
 
 2. `logging.basicConfig()` configures the root logger. It creates a `StreamHandler` attached to
-   `sys.stderr` with the specified format. `basicConfig` only works if the root logger has no
-   handlers yet — calling it after any `logging.getLogger()` has been configured is a no-op. This is
-   the single most common mistake with logging configuration.
+ `sys.stderr` with the specified format. `basicConfig` only works if the root logger has no
+ handlers yet — calling it after any `logging.getLogger()` has been configured is a no-op. This is
+ the single most common mistake with logging configuration.
 
 3. The format string uses `%s` style formatting, not f-strings. This is intentional. The `logging`
-   module uses lazy string formatting: the `%s` placeholder is only interpolated if the message
-   actually gets emitted (i.e., if the log level is enabled). With f-strings, the string is always
-   interpolated at the call site, even if the log level filters it out. In a hot loop with
-   DEBUG-level messages and an INFO-level threshold, f-strings waste CPU on string formatting that
-   is immediately discarded.
+ module uses lazy string formatting: the `%s` placeholder is only interpolated if the message
+ actually gets emitted (i.e., if the log level is enabled). With f-strings, the string is always
+ interpolated at the call site, even if the log level filters it out. In a hot loop with
+ DEBUG-level messages and an INFO-level threshold, f-strings waste CPU on string formatting that
+ is immediately discarded.
 
 4. `exc_info=True` appends the full traceback to the log message. The `logger.exception()` method is
-   a shortcut that does the same thing and sets the level to ERROR.
+ a shortcut that does the same thing and sets the level to ERROR.
 
 ### Log Levels
 
-| Level      | Numeric Value | When to Use                                                                                                                                                                                    |
+| Level | Numeric Value | When to Use |
 | ---------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DEBUG`    | 10            | Detailed diagnostic information. Variable values, control flow, internal state. Only enabled during active debugging or in development environments.                                           |
-| `INFO`     | 20            | Confirmation that things are working as expected. Request received, processing started, connection established. The default level for most production systems.                                 |
-| `WARNING`  | 30            | Something unexpected happened, or an indication of a problem in the near future. Deprecation warning, retry attempt, fallback to secondary path. The default level if no configuration is set. |
-| `ERROR`    | 40            | A serious problem. The current operation failed. An HTTP request returned 500, a database query raised an exception, a file could not be parsed.                                               |
-| `CRITICAL` | 50            | A fatal error. The process cannot continue. Out of memory, database connection permanently lost, unrecoverable corruption.                                                                     |
+| `DEBUG` | 10 | Detailed diagnostic information. Variable values, control flow, internal state. Only enabled during active debugging or in development environments. |
+| `INFO` | 20 | Confirmation that things are working as expected. Request received, processing started, connection established. The default level for most production systems. |
+| `WARNING` | 30 | Something unexpected happened, or an indication of a problem in the near future. Deprecation warning, retry attempt, fallback to secondary path. The default level if no configuration is set. |
+| `ERROR` | 40 | A serious problem. The current operation failed. An HTTP request returned 500, a database query raised an exception, a file could not be parsed. |
+| `CRITICAL` | 50 | A fatal error. The process cannot continue. Out of memory, database connection permanently lost, unrecoverable corruption. |
 
 The numeric values are not arbitrary. They define a total ordering: DEBUG &lt; INFO &lt; WARNING
 &lt; ERROR &lt; CRITICAL. A logger set to WARNING level will emit WARNING, ERROR, and CRITICAL
-messages, but suppress DEBUG and INFO. This is the mechanism that makes logging filterable at
-runtime.
+Messages, but suppress DEBUG and INFO. This is the mechanism that makes logging filterable at
+Runtime.
 
 ### Handlers
 
@@ -435,7 +435,7 @@ Handlers determine where log messages go. The standard library provides:
 - `StreamHandler`: Writes to a stream (defaults to `sys.stderr`).
 - `FileHandler`: Writes to a file. Opens the file in append mode.
 - `RotatingFileHandler`: Writes to a file with rotation. When the file reaches a specified size, it
-  is rotated (renamed with a `.1`, `.2`, etc. suffix) and a new file is created.
+ is rotated (renamed with a `.1``.2`Etc. Suffix) and a new file is created.
 - `TimedRotatingFileHandler`: Rotates based on time intervals (hourly, daily, weekly).
 
 ```python
@@ -454,14 +454,14 @@ logger.addHandler(handler)
 ```
 
 `maxBytes=10 * 1024 * 1024` sets a 10 MB rotation threshold. `backupCount=5` keeps at most 5 rotated
-files. The oldest file is deleted when a new rotation occurs. This is how you prevent log files from
-consuming all available disk space in production.
+Files. The oldest file is deleted when a new rotation occurs. This is how you prevent log files from
+Consuming all available disk space in production.
 
 ### Structured Logging
 
-Structured logging means emitting log messages as machine-parseable data (typically JSON) rather
-than free-text strings. This is essential for production systems that aggregate logs into
-observability platforms (ELK, Splunk, Datadog, Loki).
+Structured logging means emitting log messages as machine-parseable data ( JSON) rather
+Than free-text strings. This is essential for production systems that aggregate logs into
+Observability platforms (ELK, Splunk, Datadog, Loki).
 
 ```python
 import json
@@ -492,14 +492,14 @@ logger.error("Request failed", extra={"request_id": "abc123", "status_code": 500
 ```
 
 The `extra` parameter on log calls is the mechanism for attaching structured metadata. These fields
-are stored as attributes on the `LogRecord` object and can be accessed by custom formatters. This is
-how you attach request IDs, trace IDs, user IDs, and other operational metadata to log messages.
+Are stored as attributes on the `LogRecord` object and can be accessed by custom formatters. This is
+How you attach request IDs, trace IDs, user IDs, and other operational metadata to log messages.
 
 ## traceback Module
 
 The `traceback` module provides programmatic access to traceback objects. This is essential for
-building error handling infrastructure, logging unhandled exceptions, and constructing custom error
-reports.
+Building error handling infrastructure, logging unhandled exceptions, and constructing custom error
+Reports.
 
 ### Core Functions
 
@@ -513,7 +513,7 @@ except Exception:
 ```
 
 `traceback.print_exc()` prints the full traceback to `sys.stderr`. It is equivalent to what Python
-does automatically for unhandled exceptions, but you call it explicitly inside your `except` block.
+Does automatically for unhandled exceptions, but you call it explicitly inside your `except` block.
 This is useful when you catch an exception, log it, and then re-raise or handle it.
 
 ```python
@@ -525,21 +525,21 @@ except Exception:
 ```
 
 `traceback.format_exc()` returns the traceback as a string instead of printing it. This is the form
-you use when you want to store the traceback in a log, a database, or an error reporting service.
+You use when you want to store the traceback in a log, a database, or an error reporting service.
 
 ```python
 traceback.print_stack(file=sys.stdout)
 ```
 
 `traceback.print_stack()` prints the current call stack without requiring an exception. This is
-useful for answering "how did I get here?" when you are not in an exception handler. It shows the
-full frame chain from the current position back to the module level.
+Useful for answering "how did I get here?" when you are not in an exception handler. It shows the
+Full frame chain from the current position back to the module level.
 
 ### Custom Exception Hooks
 
 When an unhandled exception propagates to the top of the call stack, Python calls
 `sys.excepthook(exc_type, exc_value, exc_traceback)`. The default implementation prints the
-traceback to stderr and exits. You can replace this to implement custom error reporting:
+Traceback to stderr and exits. You can replace this to implement custom error reporting:
 
 ```python
 import sys
@@ -562,11 +562,11 @@ sys.excepthook = custom_excepthook
 ```
 
 Critical detail: always delegate to `sys.__excepthook__` at the end. If your custom hook raises an
-exception, Python enters an infinite loop of exception handling. The `sys.__excepthook__` reference
-is the original hook that Python saved at startup.
+Exception, Python enters an infinite loop of exception handling. The `sys.__excepthook__` reference
+Is the original hook that Python saved at startup.
 
 Also note the `KeyboardInterrupt` guard. `KeyboardInterrupt` is not an error — it is the user
-pressing Ctrl+C. Your error reporting hook should not fire for it.
+Pressing Ctrl+C. Your error reporting hook should not fire for it.
 
 ### Exception Chaining
 
@@ -580,7 +580,7 @@ except ValueError as e:
 ```
 
 The `raise ... from e` syntax sets the `__cause__` attribute on the new exception. This creates an
-explicit chain. The traceback shows both exceptions:
+Explicit chain. The traceback shows both exceptions:
 
 ```
 RuntimeError: Failed to parse input
@@ -590,7 +590,7 @@ ValueError: invalid literal for int() with base 10: 'not a number'
 ```
 
 If you use bare `raise` inside an `except` block, Python sets `__context__` automatically (implicit
-chaining). If you use `raise ... from None`, you suppress the chain entirely:
+Chaining). If you use `raise ... from None`You suppress the chain entirely:
 
 ```python
 try:
@@ -600,18 +600,18 @@ except ValueError:
 ```
 
 This produces a clean traceback with no mention of the original `ValueError`. Use `from None` when
-the original exception is an implementation detail that would confuse the user or operator.
+The original exception is an implementation detail that would confuse the user or operator.
 
 The `__cause__` and `__context__` attributes are set by the interpreter. `__suppress_context__` is
-set to `True` when you use `from e` or `from None`, which tells the traceback formatter to prefer
+Set to `True` when you use `from e` or `from None`Which tells the traceback formatter to prefer
 `__cause__` over `__context__`. You almost never need to manipulate these attributes directly — the
 `raise ... from` syntax handles everything.
 
 ## cProfile
 
 `cProfile` is CPython's deterministic, function-level profiler. It is implemented in C as a C
-extension (`_lsprof`), which makes it significantly faster than a pure-Python implementation but
-still imposes measurable overhead.
+Extension (`_lsprof`), which makes it significantly faster than a pure-Python implementation but
+Still imposes measurable overhead.
 
 ### Command-Line Usage
 
@@ -620,14 +620,14 @@ python -m cProfile -s sort=time script.py
 ```
 
 This runs `script.py` under cProfile and prints a sorted table of function calls at exit. The `-s`
-flag controls the sort key:
+Flag controls the sort key:
 
-| Sort Key     | What It Measures                                                                                                                                                                    |
+| Sort Key | What It Measures |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `cumulative` | Total time spent in a function including all functions it calls. This is the default. Use this to find the hot path — the function whose total cost (including callees) is highest. |
-| `tottime`    | Time spent in a function itself, excluding callees. Use this to find the function where the CPU is actually doing work, not just dispatching to other functions.                    |
-| `calls`      | Number of calls. Use this to find functions called surprisingly many times.                                                                                                         |
-| `time`       | Alias for `cumulative`.                                                                                                                                                             |
+| `tottime` | Time spent in a function itself, excluding callees. Use this to find the function where the CPU is actually doing work, not just dispatching to other functions. |
+| `calls` | Number of calls. Use this to find functions called surprisingly many times. |
+| `time` | Alias for `cumulative`. |
 
 ### Programmatic API
 
@@ -653,22 +653,22 @@ The programmatic API gives you fine-grained control:
 - You profile only the section of code you care about, not the entire program startup.
 - `stats.print_stats(20)` restricts output to the top 20 functions, reducing noise.
 - `stats.print_callers("process_record")` shows who called `process_record` and how much time each
-  caller spent in it. This is how you answer "where is this function being called from, and which
-  call site is the bottleneck?"
+ caller spent in it. This is how you answer "where is this function being called from, and which
+ call site is the bottleneck?"
 
 ### What cProfile Actually Measures
 
-cProfile uses `sys.setprofile()`, not `sys.settrace()`. `setprofile` fires on function call and
-return events only (not on every line). On each call, cProfile records a timestamp. On each return,
-it computes the elapsed time. This means:
+CProfile uses `sys.setprofile()`Not `sys.settrace()`. `setprofile` fires on function call and
+Return events only (not on every line). On each call, cProfile records a timestamp. On each return,
+It computes the elapsed time. This means:
 
 - cProfile measures _wall clock time_ by default, not CPU time. If your function blocks on I/O, that
-  I/O wait time is included in the profile.
+ I/O wait time is included in the profile.
 - cProfile does not measure time spent in C extension functions that do not call back into Python.
-  The profile hook only fires when Python frames are entered and exited.
+ The profile hook only fires when Python frames are entered and exited.
 - The `tottime` column shows time spent in the function body excluding callees. The `cumtime` column
-  shows total time including callees. The `percall` columns are the respective values divided by the
-  number of calls.
+ shows total time including callees. The `percall` columns are the respective values divided by the
+ number of calls.
 
 ### Restricting Output
 
@@ -679,13 +679,13 @@ stats.print_stats("myapp/")
 ```
 
 The argument to `print_stats()` can be a filename pattern. `print_stats("myapp/")` only shows
-functions whose filename starts with `myapp/`, filtering out standard library and third-party code.
+Functions whose filename starts with `myapp/`Filtering out standard library and third-party code.
 This is how you focus the profile on your code.
 
 ## timeit
 
 `timeit` is the standard library's microbenchmarking tool. It is designed to measure the execution
-time of small code snippets with high precision.
+Time of small code snippets with high precision.
 
 ### Command-Line Usage
 
@@ -694,7 +694,7 @@ python -m timeit -s "import json; data = {'key': 'value'}" "json.dumps(data)"
 ```
 
 The `-s` flag provides setup code that is not included in the timing. This is critical because you
-want to measure the operation, not the import or data preparation.
+Want to measure the operation, not the import or data preparation.
 
 ### Programmatic API
 
@@ -720,38 +720,38 @@ print(f"Median: {sorted(times)[len(times)//2]:.6f}s")
 ```
 
 `timeit.timeit()` runs the statement `number` times and returns the total time. `timeit.repeat()`
-runs `timeit()` multiple times (default 5) and returns a list of total times. Always use `repeat()`
-and report the minimum or median — the minimum is the most accurate because it represents the run
-with the least external interference from the OS scheduler, cache effects, and other noise.
+Runs `timeit()` multiple times (default 5) and returns a list of total times. Always use `repeat()`
+And report the minimum or median — the minimum is the most accurate because it represents the run
+With the least external interference from the OS scheduler, cache effects, and other noise.
 
 ### Common Gotchas
 
 1. **Measuring list creation including allocation**: `[x for x in range(1000)]` measures both the
-   iteration and the list allocation. If you want to benchmark the iteration, use a generator or
-   pre-allocate the list.
+ iteration and the list allocation. If you want to benchmark the iteration, use a generator or
+ pre-allocate the list.
 
 2. **Measuring dict creation**: `{"a": 1, "b": 2}` includes the cost of hash computation for keys
-   and the dict's internal resize operations. The first insertion into an empty dict triggers
-   allocation of the hash table. If you are benchmarking dict lookup, create the dict in the setup
-   phase.
+ and the dict's internal resize operations. The first insertion into an empty dict triggers
+ allocation of the hash table. If you are benchmarking dict lookup, create the dict in the setup
+ phase.
 
 3. **The first run is always slower**: CPython's bytecode compilation, import machinery, and memory
-   allocator all have cold-start effects. `timeit` runs the setup once and then the statement
-   multiple times. The first iteration of the statement may be slower due to cache coldness.
+ allocator all have cold-start effects. `timeit` runs the setup once and then the statement
+ multiple times. The first iteration of the statement may be slower due to cache coldness.
 
 4. **Garbage collection**: By default, `timeit` disables garbage collection during timing with
-   `gc.disable()`. If your benchmark creates and discards many objects, this can produce
-   misleadingly fast results. Use `timeit.timeit(..., setup="import gc; gc.enable()")` if GC is
-   relevant to your measurement.
+ `gc.disable()`. If your benchmark creates and discards many objects, this can produce
+ misleadingly fast results. Use `timeit.timeit(..., setup="import gc; gc.enable()")` if GC is
+ relevant to your measurement.
 
 5. **Timer precision**: `timeit` uses `time.perf_counter()` by default, which provides the highest
-   resolution timer available on the platform. On Linux, this is `clock_gettime(CLOCK_MONOTONIC)`,
-   which has nanosecond resolution.
+ resolution timer available on the platform. On Linux, this is `clock_gettime(CLOCK_MONOTONIC)`
+ which has nanosecond resolution.
 
 ## line_profiler
 
 `line_profiler` is a line-by-line profiler that measures the time spent on each individual line of a
-function, not just each function call. This is the tool you reach for when cProfile tells you that
+Function, not just each function call. This is the tool you reach for when cProfile tells you that
 `process_records()` is slow but you cannot tell which specific line is the bottleneck.
 
 ### Usage
@@ -807,27 +807,27 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 - `% Time`: Percentage of total function time spent on this line.
 
 In this example, `validate(record)` on line 5 accounts for 37.5% of the time. That is where you
-focus your optimization effort.
+Focus your optimization effort.
 
 ### line_profiler vs cProfile
 
-cProfile operates at function granularity. It tells you that `process_records` took 4 seconds, but
-not which line caused it. `line_profiler` operates at line granularity. It tells you exactly which
-line inside `process_records` is slow.
+CProfile operates at function granularity. It tells you that `process_records` took 4 seconds, but
+Not which line caused it. `line_profiler` operates at line granularity. It tells you exactly which
+Line inside `process_records` is slow.
 
 The tradeoff: `line_profiler` is significantly slower than cProfile because it inserts a trace
-callback on every _line_, not just every function call. Expect 100-1000x slowdown. Do not run
-line_profiler on production workloads or on very large input datasets. Use a representative but
-small subset.
+Callback on every _line_, not just every function call. Expect 100-1000x slowdown. Do not run
+Line_profiler on production workloads or on very large input datasets. Use a representative but
+Small subset.
 
 `line_profiler` uses `sys.settrace()` (line-level tracing), while cProfile uses `sys.setprofile()`
 (function-level tracing). This is the fundamental implementation difference that explains the
-performance gap.
+Performance gap.
 
 ## memory_profiler
 
 `memory_profiler` measures memory usage line by line, analogous to how `line_profiler` measures time
-line by line. It works by sampling the process's memory usage (via
+Line by line. It works by sampling the process's memory usage (via
 `psutil.Process().memory_info().rss`) at each line of the profiled function.
 
 ### Usage
@@ -872,12 +872,12 @@ Line #    Mem usage    Increment  Occurrences   Line Contents
 
 - `Mem usage`: Total RSS (Resident Set Size) of the process after executing the line.
 - `Increment`: Change in RSS caused by this line. Positive means memory was allocated. Negative
-  means memory was freed (garbage collector ran).
+ means memory was freed (garbage collector ran).
 
 In this example, `f.read()` on line 4 allocates 150.4 MiB, which is the file contents loaded into
-memory. `json.loads()` on line 5 adds another 49.8 MiB for the parsed data structure. The list
-comprehension on line 6 adds 50.4 MiB. The negative increment on line 7 indicates that the garbage
-collector freed memory when the function returned (local variables went out of scope).
+Memory. `json.loads()` on line 5 adds another 49.8 MiB for the parsed data structure. The list
+Comprehension on line 6 adds 50.4 MiB. The negative increment on line 7 indicates that the garbage
+Collector freed memory when the function returned (local variables went out of scope).
 
 ### Tracking Memory Growth
 
@@ -903,34 +903,34 @@ This produces a time series of memory usage that you can plot or analyze.
 ### Important Caveats
 
 - `memory_profiler` measures RSS, which includes memory shared with other processes (shared
-  libraries, mmap'd files). A process that maps a 1 GiB file via `mmap` will show a 1 GiB RSS spike
-  even though it did not allocate any private memory.
+ libraries, mmap'd files). A process that maps a 1 GiB file via `mmap` will show a 1 GiB RSS spike
+ even though it did not allocate any private memory.
 - The CPython garbage collector does not immediately return freed memory to the OS. Memory freed by
-  the GC remains in the process's heap and is available for reuse. RSS may not decrease even after
-  objects are freed. This is not a memory leak — it is the allocator's strategy.
+ the GC remains in the process's heap and is available for reuse. RSS may not decrease even after
+ objects are freed. This is not a memory leak — it is the allocator's strategy.
 - Memory profiling is inherently noisy. The OS may swap pages in and out, other processes may
-  compete for memory, and the measurement itself has overhead. Always run memory profiles multiple
-  times and look for trends, not individual measurements.
+ compete for memory, and the measurement itself has overhead. Always run memory profiles multiple
+ times and look for trends, not individual measurements.
 
 ## py-spy
 
 `py-spy` is a sampling profiler that does not require any instrumentation of the target process. It
-works by reading the process's memory via `/proc/<pid>/mem` and walking the CPython interpreter's
-internal data structures to reconstruct the call stack.
+Works by reading the process's memory via `/proc/<pid>/mem` and walking the CPython interpreter's
+Internal data structures to reconstruct the call stack.
 
 ### Why py-spy Exists
 
-`cProfile`, `line_profiler`, and `memory_profiler` all require you to modify your code (adding
-decorators, importing modules) or run your program under a wrapper (`python -m cProfile`). This is
-unacceptable for profiling production services because:
+`cProfile``line_profiler`And `memory_profiler` all require you to modify your code (adding
+Decorators, importing modules) or run your program under a wrapper (`python -m cProfile`). This is
+Unacceptable for profiling production services because:
 
 - You must restart the process with profiling enabled, losing all in-flight requests.
 - The profiling overhead (10-1000x) makes the results unrepresentative of actual production
-  behavior.
+ behavior.
 - You cannot profile a specific time window — you profile the entire run or nothing.
 
 `py-spy` solves all of these problems. It attaches to a running Python process with zero code
-changes and negligible overhead.
+Changes and negligible overhead.
 
 ### Usage
 
@@ -949,14 +949,14 @@ py-spy dump --pid 12345
 ```
 
 `py-spy top` works like `top` but for Python function calls. It samples the process at 100 Hz by
-default and displays the functions that appear most frequently on the call stack. This is a
-real-time view of where the process is spending its CPU time.
+Default and displays the functions that appear most frequently on the call stack. This is a
+Real-time view of where the process is spending its CPU time.
 
 `py-spy record` collects samples over a time window and generates a flame graph in SVG format. Flame
-graphs are the standard visualization for sampled profiling data. The x-axis is the proportion of
-samples (not time — the sampling rate is uniform). The y-axis is the call stack depth. Wider bars
-represent functions that consume more CPU time. You can read a flame graph by finding the widest
-bars at the bottom — those are the functions where most CPU time is spent.
+Graphs are the standard visualization for sampled profiling data. The x-axis is the proportion of
+Samples (not time — the sampling rate is uniform). The y-axis is the call stack depth. Wider bars
+Represent functions that consume more CPU time. You can read a flame graph by finding the widest
+Bars at the bottom — those are the functions where most CPU time is spent.
 
 ### How py-spy Works
 
@@ -967,24 +967,24 @@ bars at the bottom — those are the functions where most CPU time is spent.
 3. It finds the main interpreter thread's `PyThreadState` object.
 4. It walks the frame chain (`PyFrameObject.f_back`) to reconstruct the call stack.
 5. It maps frame code objects to filenames and line numbers using the process's loaded Python
-   bytecode.
+ bytecode.
 
 This is why py-spy requires no instrumentation. It is an external observer reading internal data
-structures. The overhead is limited to the cost of reading `/proc/<pid>/mem`, which is a kernel
-operation that does not disturb the target process.
+Structures. The overhead is limited to the cost of reading `/proc/<pid>/mem`Which is a kernel
+Operation that does not disturb the target process.
 
 ### Limitations
 
 - py-spy only profiles CPU time. It cannot measure wall-clock time or I/O wait.
 - py-spy requires the same Python version and build as the target process (the internal structures
-  must match).
+ must match).
 - py-spy does not work on processes running under PyPy, Stackless Python, or other non-CPython
-  implementations.
+ implementations.
 - py-spy requires root privileges to attach to processes owned by other users (or `CAP_SYS_PTRACE`).
 - Functions that execute too quickly to be caught by the sampler may be invisible in the profile. A
-  function that takes 1 microsecond will be missed by a 100 Hz sampler (which samples every 10
-  milliseconds). This is a fundamental limitation of sampling — it provides statistical accuracy,
-  not deterministic accuracy.
+ function that takes 1 microsecond will be missed by a 100 Hz sampler (which samples every 10
+ milliseconds). This is a fundamental limitation of sampling — it provides statistical accuracy,
+ not deterministic accuracy.
 
 ## Common Performance Anti-Patterns
 
@@ -998,8 +998,8 @@ for item in items:
 ```
 
 Python strings are immutable. Each `+=` creates a new string object, copies the old contents, and
-appends the new content. For `n` items, this is O(1 + 2 + 3 + ... + n) = O(n^2) total character
-copies.
+Appends the new content. For `n` items, this is O(1 + 2 + 3 + ... + n) = O(n^2) total character
+Copies.
 
 ```python
 # Good: O(n) via join
@@ -1014,7 +1014,7 @@ result = buf.getvalue()
 ```
 
 `str.join()` pre-computes the total length, allocates once, and copies each piece into the correct
-position. This is O(n). `io.StringIO` uses an internal buffer that amortizes allocations.
+Position. This is O(n). `io.StringIO` uses an internal buffer that amortizes allocations.
 
 For formatting, prefer f-strings:
 
@@ -1024,7 +1024,7 @@ result = f"Processing {count} items in {duration:.2f}s"
 ```
 
 F-strings are evaluated at runtime, compiled to efficient bytecode, and are faster than `%`
-formatting or `.format()` for most cases.
+Formatting or `.format()` for most cases.
 
 ### Unnecessary List Creation
 
@@ -1040,9 +1040,9 @@ The list comprehension `[x * 2 for x in range(10000000)]` allocates a list with 
 (approximately 80 MiB on 64-bit CPython). The generator expression
 `(x * 2 for x in range(10000000))` produces one value at a time, using O(1) memory.
 
-This applies to any function that accepts an iterable: `any()`, `all()`, `max()`, `min()`,
-`sorted()`, `list()`, `tuple()`, `set()`, `dict()`. All of these can consume generators. Only pass a
-list when you need random access or multiple iterations over the same data.
+This applies to any function that accepts an iterable: `any()``all()``max()``min()`
+`sorted()``list()``tuple()``set()``dict()`. All of these can consume generators. Only pass a
+List when you need random access or multiple iterations over the same data.
 
 ### Global Variable Lookups
 
@@ -1066,14 +1066,14 @@ def compute(values):
 ```
 
 In CPython, local variable access uses the `LOAD_FAST` bytecode instruction, which indexes directly
-into the frame's `fastlocals` array. This is an array lookup — O(1) with very low constant factor.
-Global variable access uses `LOAD_GLOBAL`, which performs a dictionary lookup in the module's
+Into the frame's `fastlocals` array. This is an array lookup — O(1) with very low constant factor.
+Global variable access uses `LOAD_GLOBAL`Which performs a dictionary lookup in the module's
 `__dict__`. Dictionary lookup involves hash computation, comparison, and potential collision
-resolution. For a hot loop, the difference is measurable.
+Resolution. For a hot loop, the difference is measurable.
 
 The `sqrt = math.sqrt` binding pattern is a well-known optimization in CPython. It transforms a
-global dictionary lookup into a local array lookup on every iteration. In tight loops, this can
-yield a 20-40% speedup.
+Global dictionary lookup into a local array lookup on every iteration. In tight loops, this can
+Yield a 20-40% speedup.
 
 ### Using `in` on List vs Set
 
@@ -1091,7 +1091,7 @@ List membership test (`x in my_list`) performs a linear scan: O(n) average case,
 (first element). Set membership test (`x in my_set`) performs a hash lookup: O(1) average case.
 
 If you are doing membership tests in a loop, converting the list to a set first is almost always
-faster:
+Faster:
 
 ```python
 # Bad: O(n*m)
@@ -1109,21 +1109,21 @@ for item in items:
 ### Premature Optimization
 
 The full quote from Donald Knuth: "Premature optimization is the root of all evil." The less-quoted
-second half: "Yet we should not pass up our opportunities in that critical 3%."
+Second half: "Yet we should not pass up our opportunities in that critical 3%."
 
 The engineering discipline is:
 
 1. **Write correct, clear code first.** Correctness is non-negotiable. Clarity is a force multiplier
-   — clear code is easier to debug, test, and maintain.
+ — clear code is easier to debug, test, and maintain.
 2. **Measure before optimizing.** Use cProfile or py-spy to identify the actual bottleneck. Your
-   intuition about what is slow is almost certainly wrong.
+ intuition about what is slow is almost certainly wrong.
 3. **Optimize the measured bottleneck.** Make one change, measure again, confirm the improvement. If
-   the change did not help, revert it.
+ the change did not help, revert it.
 4. **Stop when the bottleneck is elsewhere.** When the profile shows that function A is no longer
-   the hot path, stop optimizing it. Move to the new bottleneck.
+ the hot path, stop optimizing it. Move to the new bottleneck.
 
 The cost of premature optimization is not just wasted time. Over-optimized code is harder to read,
-harder to maintain, and more likely to contain bugs. A hand-rolled bit-manipulation trick that saves
+Harder to maintain, and more likely to contain bugs. A hand-rolled bit-manipulation trick that saves
 5% on a non-hot path is a net negative for the codebase.
 
 ### `__slots__` for Memory-Critical Objects
@@ -1143,89 +1143,89 @@ class Point:
         self.y = y
 ```
 
-Without `__slots__`, each instance has a `__dict__` (a Python dictionary) that stores its
-attributes. A `__dict__` has significant overhead: the dict object itself, the hash table, the hash
-array. For objects with a small, fixed set of attributes, this overhead can exceed the data stored.
+Without `__slots__`Each instance has a `__dict__` (a Python dictionary) that stores its
+Attributes. A `__dict__` has significant overhead: the dict object itself, the hash table, the hash
+Array. For objects with a small, fixed set of attributes, this overhead can exceed the data stored.
 
-With `__slots__`, Python allocates a fixed-size descriptor array for the declared attributes. There
-is no `__dict__`, no hash table, no dynamic attribute creation. Each instance is smaller and
-attribute access is faster (descriptor lookup vs dictionary lookup).
+With `__slots__`Python allocates a fixed-size descriptor array for the declared attributes. There
+Is no `__dict__`No hash table, no dynamic attribute creation. Each instance is smaller and
+Attribute access is faster (descriptor lookup vs dictionary lookup).
 
 The memory savings are significant at scale. An instance with `__slots__` uses approximately 48
-bytes on 64-bit CPython. Without `__slots__`, the same instance uses approximately 200+ bytes
+Bytes on 64-bit CPython. Without `__slots__`The same instance uses approximately 200+ bytes
 (depending on the number of attributes). If you are creating millions of instances, the difference
-is hundreds of megabytes.
+Is hundreds of megabytes.
 
 Tradeoffs:
 
 - You cannot add attributes not declared in `__slots__`. `obj.z = 42` raises `AttributeError`.
 - Instances with `__slots__` cannot be pickled by default unless you define `__getstate__` and
-  `__setstate__`.
+ `__setstate__`.
 - `__slots__` does not work well with multiple inheritance (both parent classes must have
-  `__slots__`, and they must not overlap).
+ `__slots__`And they must not overlap).
 
 ## Common Pitfalls
 
 ### 1. Leaving Breakpoints in Production
 
 `breakpoint()` and `pdb.set_trace()` halt the process and wait for stdin. In a production service,
-this means the process hangs indefinitely, requests time out, and health checks fail. The fix is
-simple: set `PYTHONBREAKPOINT=0` in your production environment. This makes all `breakpoint()` calls
-no-ops without requiring code changes. Better yet, use a linter rule that forbids `pdb` imports and
+This means the process hangs indefinitely, requests time out, and health checks fail. The fix is
+Simple: set `PYTHONBREAKPOINT=0` in your production environment. This makes all `breakpoint()` calls
+No-ops without requiring code changes. Better yet, use a linter rule that forbids `pdb` imports and
 `breakpoint()` calls in production code paths.
 
 ### 2. Trusting cProfile for I/O-Bound Code
 
-cProfile measures wall-clock time by default. If your function spends 90% of its time waiting for a
-database query, cProfile reports that the function is slow, but the bottleneck is the database, not
-your Python code. For I/O-bound profiling, you need to separate I/O time from CPU time. Use
+CProfile measures wall-clock time by default. If your function spends 90% of its time waiting for a
+Database query, cProfile reports that the function is slow, but the bottleneck is the database, not
+Your Python code. For I/O-bound profiling, you need to separate I/O time from CPU time. Use
 `cProfile` with `timer=time.process_time` (measures CPU time only) or use async profiling tools that
-distinguish between waiting and computing.
+Distinguish between waiting and computing.
 
 ### 3. Measuring with timeit Without Adequate Warmup
 
 CPython's bytecode compiler, JIT (in PyPy), memory allocator, and CPU caches all have warmup
-effects. The first few iterations of a benchmark are always slower than steady state. If you run
-`timeit` with `number=10`, your results are dominated by warmup noise. Always use `number=10000` or
-higher, and use `timeit.repeat()` to verify consistency across runs.
+Effects. The first few iterations of a benchmark are always slower than steady state. If you run
+`timeit` with `number=10`Your results are dominated by warmup noise. Always use `number=10000` or
+Higher, and use `timeit.repeat()` to verify consistency across runs.
 
 ### 4. Ignoring the GIL in Threaded Profiling
 
 The Global Interpreter Lock (GIL) means that only one thread executes Python bytecode at a time.
-cProfile profiles the thread that calls it, not all threads. If your program uses threading for
-concurrency, you may be profiling the wrong thread. For multi-threaded profiling, attach cProfile to
-each thread individually, or use py-spy which profiles all threads simultaneously.
+CProfile profiles the thread that calls it, not all threads. If your program uses threading for
+Concurrency, you may be profiling the wrong thread. For multi-threaded profiling, attach cProfile to
+Each thread individually, or use py-spy which profiles all threads simultaneously.
 
 ### 5. Using print() for Debugging and Forgetting to Remove It
 
 This is the most common debugging pitfall. `print()` statements in code are technical debt. They
-clutter logs, they have no metadata, and they cannot be controlled at runtime. The solution is to
-use `logging` from the start. If you must use print during development, establish a convention (grep
-for `print(` before committing) or use a pre-commit hook that rejects print statements outside of
+Clutter logs, they have no metadata, and they cannot be controlled at runtime. The solution is to
+Use `logging` from the start. If you must use print during development, establish a convention (grep
+For `print(` before committing) or use a pre-commit hook that rejects print statements outside of
 `__main__` blocks.
 
 ### 6. Profiling Debug Builds
 
 Always profile release builds. Debug builds of C extensions (NumPy, pandas, etc.) may be compiled
-without optimizations (`-O0`), which produces dramatically different performance characteristics.
+Without optimizations (`-O0`), which produces dramatically different performance characteristics.
 Verify that your profiling environment matches your production environment: same Python version,
-same C extension versions, same compiler flags.
+Same C extension versions, same compiler flags.
 
 ### 7. Not Accounting for Sampling Bias in py-spy
 
-py-spy is a statistical profiler. It samples at a fixed rate (default 100 Hz, one sample every 10
-milliseconds). Functions that execute in less than 10 milliseconds may never appear in the profile.
+Py-spy is a statistical profiler. It samples at a fixed rate (default 100 Hz, one sample every 10
+Milliseconds). Functions that execute in less than 10 milliseconds may never appear in the profile.
 If your bottleneck is a function that is called millions of times but takes 1 microsecond each,
-py-spy will not detect it. Use deterministic profilers (cProfile, line_profiler) for short-running
-functions and sampling profilers (py-spy) for long-running, CPU-intensive functions.
+Py-spy will not detect it. Use deterministic profilers (cProfile, line_profiler) for short-running
+Functions and sampling profilers (py-spy) for long-running, CPU-intensive functions.
 
 ### 8. Memory Profiler Reporting Leaks That Are Not Leaks
 
 Python's memory allocator (pymalloc) manages its own memory pool. When objects are freed, the memory
-is returned to pymalloc's pool, not to the OS. This means that RSS may not decrease after objects
-are freed. This is not a memory leak — it is the allocator retaining memory for future allocations.
+Is returned to pymalloc's pool, not to the OS. This means that RSS may not decrease after objects
+Are freed. This is not a memory leak — it is the allocator retaining memory for future allocations.
 To detect true memory leaks, use `tracemalloc` from the standard library, which tracks Python-level
-allocations at the object level:
+Allocations at the object level:
 
 ```python
 import tracemalloc
@@ -1241,12 +1241,12 @@ for stat in top_stats[:10]:
 ```
 
 `tracemalloc` tracks every object allocation and can show you exactly where memory is being
-allocated, by file and line number. This is the correct tool for diagnosing memory leaks in Python.
+Allocated, by file and line number. This is the correct tool for diagnosing memory leaks in Python.
 
 ### 9. Debugger Interference with Timing
 
 Never measure performance with the debugger attached. The debugger's trace hook (`sys.settrace`)
-adds overhead to every line execution. A function that takes 1 second without the debugger may take
+Adds overhead to every line execution. A function that takes 1 second without the debugger may take
 10 seconds with it. Always detach the debugger before running performance benchmarks.
 
 ### 10. Logging in Tight Loops
@@ -1262,7 +1262,15 @@ for item in items:
 ```
 
 In a loop processing 10 million items, the f-string version creates 10 million formatted strings
-that are immediately discarded (because the log level is likely INFO or above in production). The
+That are immediately discarded (because the log level is likely INFO or above in production). The
 `%s` version defers formatting to the logging framework, which only interpolates the string if the
-message passes the log level filter. This is not a micro-optimization — it is the difference between
-a function that runs in 1 second and one that runs in 10 seconds.
+Message passes the log level filter. This is not a micro-optimization — it is the difference between
+A function that runs in 1 second and one that runs in 10 seconds.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

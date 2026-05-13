@@ -20,7 +20,7 @@ mutable = "new value"
 ```
 
 `val` does **not** mean the object is immutable -- it means the reference cannot be reassigned. The
-underlying object may still be mutable.
+Underlying object may still be mutable.
 
 ```kotlin
 val list = mutableListOf(1, 2, 3)
@@ -33,18 +33,18 @@ Prefer `val` everywhere. Use `var` only when the variable genuinely must be reas
 ## Basic Types
 
 Kotlin represents all types as objects at the language level. The compiler maps them to JVM
-primitives when possible (no boxing overhead).
+Primitives when possible (no boxing overhead).
 
-| Kotlin Type | JVM Type  | Size (bits) |
+| Kotlin Type | JVM Type | Size (bits) |
 | ----------- | --------- | ----------: |
-| `Byte`      | `byte`    |           8 |
-| `Short`     | `short`   |          16 |
-| `Int`       | `int`     |          32 |
-| `Long`      | `long`    |          64 |
-| `Float`     | `float`   |          32 |
-| `Double`    | `double`  |          64 |
-| `Boolean`   | `boolean` |           1 |
-| `Char`      | `char`    |          16 |
+| `Byte` | `byte` | 8 |
+| `Short` | `short` | 16 |
+| `Int` | `int` | 32 |
+| `Long` | `long` | 64 |
+| `Float` | `float` | 32 |
+| `Double` | `double` | 64 |
+| `Boolean` | `boolean` | 1 |
+| `Char` | `char` | 16 |
 
 Numeric literals support underscores for readability:
 
@@ -68,8 +68,8 @@ val doubleVal: Double = intVal.toDouble()
 // val bad: Long = intVal  // compile error
 ```
 
-The `toXxx()` methods exist on all numeric types: `toByte()`, `toShort()`, `toInt()`, `toLong()`,
-`toFloat()`, `toDouble()`, `toChar()`.
+The `toXxx()` methods exist on all numeric types: `toByte()``toShort()``toInt()``toLong()`
+`toFloat()``toDouble()``toChar()`.
 
 ## Type Inference
 
@@ -84,7 +84,7 @@ val items = listOf(1, 2)   // inferred: List<Int>
 ```
 
 Type inference does not make Kotlin dynamically typed. The inferred type is concrete and enforced at
-compile time.
+Compile time.
 
 ```kotlin
 var x = 42      // inferred: Int
@@ -92,7 +92,7 @@ var x = 42      // inferred: Int
 ```
 
 Use explicit types when the inferred type is not obvious or when the type carries important semantic
-information.
+Information.
 
 ```kotlin
 val users: Map<Long, String> = emptyMap()
@@ -127,13 +127,13 @@ val text = """
 ```
 
 Raw strings (triple-quoted) do not support escape sequences. Use `${'$'}` to insert a literal dollar
-sign.
+Sign.
 
 ## Nullable Types and Null Safety
 
 This is the defining feature of Kotlin's type system. The type `String` is non-nullable; `String?`
-is nullable. The compiler prevents nullable values from being used where non-nullable values are
-expected.
+Is nullable. The compiler prevents nullable values from being used where non-nullable values are
+Expected.
 
 ```kotlin
 var nonNull: String = "always has a value"
@@ -149,7 +149,7 @@ val len2: Int? = nullable?.length  // OK: safe call, returns null if nullable is
 ### Safe Call Operator: `?.`
 
 Chains safely through potentially null references. Returns null if any receiver in the chain is
-null.
+Null.
 
 ```kotlin
 val city: String? = user?.address?.city
@@ -168,7 +168,7 @@ val length: Int = nullable?.length ?: 0
 ### Not-Null Assertion: `!!`
 
 Throws `KotlinNullPointerException` if the value is null. Use sparingly -- it bypasses the null
-safety system.
+Safety system.
 
 ```kotlin
 val name: String = nullableName!!  // throws if null
@@ -185,7 +185,7 @@ val str: String? = obj as? String  // null if obj is not a String
 ### Late-Initialized Properties
 
 Use `lateinit` for non-nullable properties that cannot be initialized in the constructor (dependency
-injection, framework callbacks).
+Injection, framework callbacks).
 
 ```kotlin
 class DatabaseService {
@@ -262,10 +262,18 @@ Type aliases are useful for domain modeling and reducing verbosity in complex ge
 ## Common Pitfalls
 
 - \*\* Using `!!` liberally. Each `!!` is a potential runtime crash. Prefer safe calls, Elvis
-  operator, or early returns.
+ operator, or early returns.
 - \*\* Forgetting that `val` does not imply immutability of the referenced object.
-  `val list = mutableListOf(1, 2)` is a mutable list behind a read-only reference.
+ `val list = mutableListOf(1, 2)` is a mutable list behind a read-only reference.
 - \*\* Confusing nullable collections with collections of nullable elements. `List<Int>?` vs
-  `List<Int?>` are fundamentally different types.
+ `List<Int?>` are fundamentally different types.
 - \*\* Using `lateinit` for properties that can be initialized in the constructor. If the value is
-  known at construction time, pass it as a constructor parameter.
+ known at construction time, pass it as a constructor parameter.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

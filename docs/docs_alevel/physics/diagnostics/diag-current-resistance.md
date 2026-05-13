@@ -27,7 +27,7 @@ A filament lamp is connected to a variable power supply. The following I-V data 
 
 **Solution:**
 
-(a) The I-V graph curves away from both axes (current increases more slowly as voltage increases). This is because the filament is a metal (tungsten) whose resistance increases with temperature. As current flows, the filament heats up, increasing its resistance. V=IR applies at every instant (Ohm's law is a property of the conductor at a specific operating point), but the resistance is not constant -- it depends on the applied voltage (through the resulting temperature).
+(a) The I-V graph curves away from both axes (current increases more slowly as voltage increases). This is because the filament is a metal (tungsten) whose resistance increases with temperature. As current flows, the filament heats up, increasing its resistance. V=IR applies at every instant (Ohm's law is a property of the conductor at a specific operating point), but the resistance is not constant -- on the applied voltage (through the resulting temperature).
 
 The graph is not a straight line through the origin, so the lamp is non-ohmic.
 
@@ -39,7 +39,7 @@ The resistance more than doubles between $2\,\text{V}$ and $12\,\text{V}$.
 
 (c) $P = VI = 12.0 \times 330 \times 10^{-3} = 3.96\,\text{W}$
 
-The resistance increases because the filament temperature increases with power dissipation ($P = I^2R$). For a metal, resistivity increases approximately linearly with temperature above the Debye temperature: $\rho(T) = \rho_0[1 + \alpha(T - T_0)]$, where $\alpha \approx 0.0045\,\text{K}^{-1}$ for tungsten. At $12\,\text{V}$, the filament temperature is around $2800\,\text{K}$, much higher than room temperature.
+The resistance increases because the filament temperature increases with power dissipation ($P = I^2R$). For a metal, resistivity increases approximately linearly with temperature above the Debye temperature: $\rho(T) = \rho_0[1 + \alpha(T - T_0)]$Where $\alpha \approx 0.0045\,\text{K}^{-1}$ for tungsten. At $12\,\text{V}$The filament temperature is around $2800\,\text{K}$Much higher than room temperature.
 
 ---
 ### UT-2: Resistivity and Temperature Dependence
@@ -63,11 +63,11 @@ $$1 + 80\alpha = 1.160$$
 $$80\alpha = 0.160$$
 $$\alpha = 0.00200\,\text{K}^{-1}$$
 
-The accepted value is approximately $0.00393\,\text{K}^{-1}$, but we use the data given.
+The accepted value is approximately $0.00393\,\text{K}^{-1}$But we use the data given.
 
 (b) $\rho = RA/l = 5.00 \times 1.0 \times 10^{-6}/10.0 = 5.00 \times 10^{-7}\,\Omega\,\text{m}$
 
-The accepted value is $1.68 \times 10^{-8}\,\Omega\,\text{m}$, so this copper has a much higher resistivity than pure copper, suggesting impurities or an alloy.
+The accepted value is $1.68 \times 10^{-8}\,\Omega\,\text{m}$So this copper has a much higher resistivity than pure copper, suggesting impurities or an alloy.
 
 (c) $R_3 = R_1[1 + \alpha(T_3 - T_1)]$
 
@@ -85,7 +85,7 @@ A semiconductor diode has the I-V characteristic approximated by the Shockley di
 
 $$I = I_0\left(e^{eV/(nkT)} - 1\right)$$
 
-where $I_0 = 5.0 \times 10^{-9}\,\text{A}$, $n = 1.5$ (ideality factor), $e = 1.60 \times 10^{-19}\,\text{C}$, $k = 1.38 \times 10^{-23}\,\text{J}\,\text{K}^{-1}$, and $T = 300\,\text{K}$.
+Where $I_0 = 5.0 \times 10^{-9}\,\text{A}$$n = 1.5$ (ideality factor), $e = 1.60 \times 10^{-19}\,\text{C}$$k = 1.38 \times 10^{-23}\,\text{J}\,\text{K}^{-1}$And $T = 300\,\text{K}$.
 
 (a) Calculate the current when $V = 0.60\,\text{V}$ is applied in the forward direction.
 
@@ -125,7 +125,7 @@ The lamp has resistance $100\,\Omega$ at the operating point in the balanced con
 
 (a) Calculate the current through each resistor when the bridge is balanced.
 
-(b) If $R_1$ increases to $110\,\Omega$, calculate the current through the galvanometer.
+(b) If $R_1$ increases to $110\,\Omega$Calculate the current through the galvanometer.
 
 (c) Explain how the Wheatstone bridge principle fails when non-ohmic components are used.
 
@@ -135,13 +135,13 @@ The lamp has resistance $100\,\Omega$ at the operating point in the balanced con
 
 $100/200 = 150/R_L \Rightarrow R_L = 300\,\Omega$
 
-But we are told $R_L = 100\,\Omega$ at the operating point, and $R_1/R_2 = 100/200 = 0.5$, while $R_3/R_L = 150/100 = 1.5$. Since $0.5 \ne 1.5$, the bridge is **not balanced**.
+But we are told $R_L = 100\,\Omega$ at the operating point, and $R_1/R_2 = 100/200 = 0.5$While $R_3/R_L = 150/100 = 1.5$. Since $0.5 \ne 1.5$The bridge is **not balanced**.
 
-For the bridge to be balanced with $R_L = 100\,\Omega$: $R_1/R_2 = R_3/R_L = 150/100 = 1.5$, so $R_1 = 1.5 \times 200 = 300\,\Omega$.
+For the bridge to be balanced with $R_L = 100\,\Omega$: $R_1/R_2 = R_3/R_L = 150/100 = 1.5$So $R_1 = 1.5 \times 200 = 300\,\Omega$.
 
 Since the bridge is not balanced, the galvanometer will carry current. This is actually the point of the question -- the bridge is deliberately unbalanced.
 
-The total circuit needs to be solved using Kirchhoff's laws. The potential at the top junction is $12\,\text{V}$, at the bottom is $0\,\text{V}$.
+The total circuit needs to be solved using Kirchhoff's laws. The potential at the top junction is $12\,\text{V}$At the bottom is $0\,\text{V}$.
 
 Left branch: $R_1$ and $R_3$ in series, midpoint at $V_{\text{mid,left}} = 12 \times 150/(100 + 150) = 12 \times 0.6 = 7.2\,\text{V}$
 
@@ -168,13 +168,13 @@ Galvanometer current (approximate): $I_g = (6.923 - 4.0)/50 = 2.923/50 = 0.0585\
 
 **Question:**
 
-A student determines the resistivity of a material using a wire of length $l$, diameter $d$, and measuring the resistance $R$ with a digital multimeter. They use $\rho = \pi d^2 R/(4l)$.
+A student determines the resistivity of a material using a wire of length $l$Diameter $d$And measuring the resistance $R$ with a digital multimeter. They use $\rho = \pi d^2 R/(4l)$.
 
-Their measurements are: $l = (1.000 \pm 0.001)\,\text{m}$, $d = (0.500 \pm 0.005)\,\text{mm}$, $R = (8.50 \pm 0.05)\,\Omega$.
+Their measurements are: $l = (1.000 \pm 0.001)\,\text{m}$$d = (0.500 \pm 0.005)\,\text{mm}$$R = (8.50 \pm 0.05)\,\Omega$.
 
 (a) Calculate the resistivity and its percentage uncertainty.
 
-(b) The student notices that the resistance measurement was made with the wire at $25^\circ\text{C}$, but the specification gives the resistivity at $20^\circ\text{C}$. If $\alpha = 0.004\,\text{K}^{-1}$, calculate the corrected resistivity at $20^\circ\text{C}$.
+(b) The student notices that the resistance measurement was made with the wire at $25^\circ\text{C}$But the specification gives the resistivity at $20^\circ\text{C}$. If $\alpha = 0.004\,\text{K}^{-1}$Calculate the corrected resistivity at $20^\circ\text{C}$.
 
 (c) The student then uses a micrometer screw gauge (resolution $0.01\,\text{mm}$) to re-measure the diameter, obtaining $d = (0.498 \pm 0.003)\,\text{mm}$. Recalculate the percentage uncertainty and comment on the improvement.
 
@@ -197,13 +197,13 @@ The dominant uncertainty is from the diameter measurement (which enters as $d^2$
 
 $$\rho_{20} = \frac◆LB◆\pi \times 2.500 \times 10^{-7} \times 8.333◆RB◆◆LB◆4◆RB◆ = 1.636 \times 10^{-6}\,\Omega\,\text{m}$$
 
-(c) New diameter: $d = 0.498\,\text{mm}$, $\Delta d = 0.003\,\text{mm}$
+(c) New diameter: $d = 0.498\,\text{mm}$$\Delta d = 0.003\,\text{mm}$
 
 $$\rho' = \frac◆LB◆\pi \times (4.98 \times 10^{-4})^2 \times 8.50◆RB◆◆LB◆4 \times 1.000◆RB◆ = \frac◆LB◆\pi \times 2.480 \times 10^{-7} \times 8.50◆RB◆◆LB◆4◆RB◆ = 1.657 \times 10^{-6}\,\Omega\,\text{m}$$
 
 $$\frac◆LB◆\Delta\rho'◆RB◆◆LB◆\rho'◆RB◆ = 2 \times \frac{0.003}{0.498} + 0.00588 + 0.001 = 0.01205 + 0.00588 + 0.001 = 0.01893 = 1.89\%$$
 
-The percentage uncertainty improved from $2.69\%$ to $1.89\%$. The micrometer reduced the fractional uncertainty in diameter from $1.0\%$ to $0.60\%$, and since diameter enters as $d^2$, this contributed $2 \times 0.40\% = 0.80\%$ improvement.
+The percentage uncertainty improved from $2.69\%$ to $1.89\%$. The micrometer reduced the fractional uncertainty in diameter from $1.0\%$ to $0.60\%$And since diameter enters as $d^2$This contributed $2 \times 0.40\% = 0.80\%$ improvement.
 
 ---
 ### IT-3: Power Dissipation in a Transmission Line (with Work-Energy)
@@ -232,4 +232,4 @@ New power loss: $P_{\text{loss}} = 5.0^2 \times 4.0 = 100\,\text{W} = 0.10\,\tex
 
 New efficiency $= (500 - 0.10)/500 \times 100 = 99.98\%$
 
-The power loss is reduced by a factor of $(10/100)^2 = 1/100$ when the voltage is increased by a factor of 10. This demonstrates why high-voltage transmission is essential for efficient power distribution: power loss scales as $I^2R$, and $I = P/V$, so $P_{\text{loss}} = P^2R/V^2$.
+The power loss is reduced by a factor of $(10/100)^2 = 1/100$ when the voltage is increased by a factor of 10. This demonstrates why high-voltage transmission is essential for efficient power distribution: power loss scales as $I^2R$And $I = P/V$So $P_{\text{loss}} = P^2R/V^2$.

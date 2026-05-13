@@ -12,37 +12,37 @@ slug: organic-chemistry
 # Organic Chemistry
 
 Organic chemistry is the study of carbon compounds. This topic covers homologous series, functional
-groups, nomenclature, reaction mechanisms, and the chemistry of major organic families.
+Groups, nomenclature, reaction mechanisms, and the chemistry of major organic families.
 
 ## Introduction to Organic Chemistry
 
 ### Why Carbon? (OL/HL)
 
 Carbon forms four covalent bonds and can catenate (form chains with itself), leading to an enormous
-variety of compounds.
+Variety of compounds.
 
 ### Homologous Series (OL/HL)
 
 A homologous series is a family of organic compounds with the same functional group and general
-formula, where each member differs from the next by $\mathrm{CH{}_2$.
+Formula, where each member differs from the next by $\mathrm{CH{}_2$.
 
 Members of a homologous series show a gradual change in physical properties and similar chemical
-properties.
+Properties.
 
 ### Functional Groups (OL/HL)
 
-| Functional group   | Name            | Example                     |
+| Functional group | Name | Example |
 | ------------------ | --------------- | --------------------------- |
-| C--C               | Alkane          | $\mathrm{CH{}_3\mathrm{CH{}_3$    |
-| C=C                | Alkene          | $\mathrm{CH{}_2=\mathrm{CH{}_2$   |
-| --OH               | Alcohol         | $\mathrm{CH{}_3\mathrm{OH{}$      |
-| --CHO              | Aldehyde        | $\mathrm{CH{}_3\mathrm{CHO{}$     |
-| --CO--             | Ketone          | $\mathrm{CH{}_3\mathrm{COCH{}_3$  |
-| --COOH             | Carboxylic acid | $\mathrm{CH{}_3\mathrm{COOH{}$    |
-| --COO--            | Ester           | $\mathrm{CH{}_3\mathrm{COOCH{}_3$ |
-| --COX (X = Cl, Br) | Acyl halide     | $\mathrm{CH{}_3\mathrm{COCl{}$    |
-| --NH$_2$           | Amine           | $\mathrm{CH{}_3\mathrm{NH{}_2$    |
-| --CO--NH--         | Amide           | $\mathrm{CH{}_3\mathrm{CONH{}_2$  |
+| C--C | Alkane | $\mathrm{CH{}_3\mathrm{CH{}_3$ |
+| C=C | Alkene | $\mathrm{CH{}_2=\mathrm{CH{}_2$ |
+| --OH | Alcohol | $\mathrm{CH{}_3\mathrm{OH{}$ |
+| --CHO | Aldehyde | $\mathrm{CH{}_3\mathrm{CHO{}$ |
+| --CO-- | Ketone | $\mathrm{CH{}_3\mathrm{COCH{}_3$ |
+| --COOH | Carboxylic acid | $\mathrm{CH{}_3\mathrm{COOH{}$ |
+| --COO-- | Ester | $\mathrm{CH{}_3\mathrm{COOCH{}_3$ |
+| --COX (X = Cl, Br) | Acyl halide | $\mathrm{CH{}_3\mathrm{COCl{}$ |
+| --NH$_2$ | Amine | $\mathrm{CH{}_3\mathrm{NH{}_2$ |
+| --CO--NH-- | Amide | $\mathrm{CH{}_3\mathrm{CONH{}_2$ |
 
 ### IUPAC Nomenclature (OL/HL)
 
@@ -144,7 +144,7 @@ $$
 $$
 
 **Markovnikov's Rule (HL):** When HX adds to an unsymmetrical alkene, the hydrogen attaches to the
-carbon with the greater number of hydrogens already attached.
+Carbon with the greater number of hydrogens already attached.
 
 **Addition of water (hydration):**
 
@@ -155,7 +155,7 @@ $$
 **Polymerisation:**
 
 $$
-n\mathrm{CH{}_2=\mathrm{CH{}_2 \to \mathrm{--(CH{}_2\mathrm{CH{}_2\mathrm{)--{}_n
+N\mathrm{CH{}_2=\mathrm{CH{}_2 \to \mathrm{--(CH{}_2\mathrm{CH{}_2\mathrm{)--{}_n
 $$
 
 ### Electrophilic Addition Mechanism (HL)
@@ -231,13 +231,13 @@ $$
 **Mechanism (SN2):**
 
 The nucleophile ($\mathrm{Br{}^-$) attacks the electrophilic carbon from the opposite side of the
-leaving group ($\mathrm{OH{}_2^+$), resulting in inversion of configuration.
+Leaving group ($\mathrm{OH{}_2^+$), resulting in inversion of configuration.
 
 ## Aldehydes and Ketones (OL/HL)
 
 ### Oxidation (OL/HL)
 
-Aldehydes are easily oxidised (Tollens' reagent, Fehling's solution). Ketones are not.
+Aldehydes are oxidised (Tollens' reagent, Fehling's solution). Ketones are not.
 
 **Tollens' test:** aldehyde gives a silver mirror.
 
@@ -273,7 +273,7 @@ Product: 2-hydroxypropanenitrile.
 
 - Weak acids (partially dissociate in water).
 - Higher boiling points than comparable alcohols (hydrogen bonding plus additional dipole-dipole
-  interactions).
+ interactions).
 
 ### Reactions
 
@@ -306,7 +306,7 @@ $$
 - **Chain isomers:** different carbon skeleton.
 - **Positional isomers:** functional group in different position.
 - **Functional group isomers:** different functional groups, same molecular formula (e.g.,
-  $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}$: propanal vs propanone).
+ $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}$: propanal vs propanone).
 
 ### Stereoisomerism
 
@@ -316,20 +316,20 @@ $$
 ### Optical Isomerism (HL)
 
 A chiral carbon has four different substituents. Optical isomers are non-superimposable mirror
-images.
+Images.
 
 - They rotate plane-polarised light in opposite directions.
 - A racemic mixture is a 50:50 mixture of enantiomers and shows no optical activity.
 
 **Example (HL):** Butan-2-ol ($\mathrm{CH{}_3\mathrm{CH(OH)CH{}_2\mathrm{CH{}_3$) has a chiral carbon (carbon
-2 has H, OH, $\mathrm{CH{}_3$, $\mathrm{CH{}_2\mathrm{CH{}_3$). It exists as two optical isomers.
+2 has H, OH, $\mathrm{CH{}_3$$\mathrm{CH{}_2\mathrm{CH{}_3$). It exists as two optical isomers.
 
 ## Common Pitfalls
 
 1. **Nomenclature** -- always find the longest chain containing the principal functional group.
 2. **Markovnikov's rule** -- the hydrogen adds to the less substituted carbon.
 3. **Oxidation of alcohols** -- primary gives aldehyde then acid; secondary gives ketone; tertiary
-   does not oxidise.
+ does not oxidise.
 4. **Ester names** -- the alkyl part comes from the alcohol, the acyl part from the acid.
 5. **Chirality** -- the carbon must have four _different_ groups to be chiral.
 
@@ -337,8 +337,8 @@ images.
 
 ### Ordinary Level
 
-1. Name the following: $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$, $\mathrm{CH{}_3\mathrm{COOH{}$,
-   $\mathrm{CH{}_3\mathrm{COCH{}_3$.
+1. Name the following: $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$$\mathrm{CH{}_3\mathrm{COOH{}$
+ $\mathrm{CH{}_3\mathrm{COCH{}_3$.
 2. Write the equation for the complete combustion of butane.
 3. Describe the test to distinguish between an aldehyde and a ketone.
 4. Write the equation for the formation of ethyl ethanoate from ethanoic acid and ethanol.
@@ -349,9 +349,9 @@ images.
 2. Draw and name all structural isomers of $\mathrm{C{}_4\mathrm{H{}_9\mathrm{Cl{}$.
 3. Explain why butan-2-ol is optically active but butan-1-ol is not.
 4. Describe the free radical substitution mechanism for the reaction of methane with chlorine,
-   including all three stages.
+ including all three stages.
 5. A carboxylic acid with molecular formula $\mathrm{C{}_4\mathrm{H{}_8\mathrm{O{}_2$ has the following NMR
-   data. Identify the acid and explain your reasoning.
+ data. Identify the acid and explain your reasoning.
 
 ---
 
@@ -375,7 +375,7 @@ $\mathrm{CH{}_3\mathrm{CHO{}$: 2 carbons, aldehyde. Name: ethanal.
 ### Naming with Multiple Functional Groups
 
 When multiple functional groups are present, the principal functional group (highest priority) gets
-the suffix. Others are named as prefixes.
+The suffix. Others are named as prefixes.
 
 Priority order (highest first): carboxylic acid, aldehyde, ketone, alcohol, alkene, alkyne, halide.
 
@@ -396,14 +396,14 @@ The secondary carbocation is more stable than the alternative primary carbocatio
 $$\mathrm{CH{}_3\mathrm{CH{}^+\mathrm{CH{}_3 + \mathrm{Br{}^- \to \mathrm{CH{}_3\mathrm{CHBrCH{}_3$$
 
 Product: 2-bromopropane (major product). The minor product, 1-bromopropane, forms from the less
-stable primary carbocation.
+Stable primary carbocation.
 
 ### Why Markovnikov's Rule Works
 
 The stability of carbocations follows the order: tertiary > secondary > primary > methyl. This is
-because alkyl groups are electron-donating (+I effect), stabilising the positive charge by
-distributing it. In Markovnikov addition, the hydrogen adds to the carbon with more hydrogens,
-placing the positive charge on the more substituted (more stable) carbon.
+Because alkyl groups are electron-donating (+I effect), stabilising the positive charge by
+Distributing it. In Markovnikov addition, the hydrogen adds to the carbon with more hydrogens,
+Placing the positive charge on the more substituted (more stable) carbon.
 
 ---
 
@@ -411,16 +411,16 @@ placing the positive charge on the more substituted (more stable) carbon.
 
 ### Classification Recap
 
-| Type      | Structure                  | Example              |
+| Type | Structure | Example |
 | --------- | -------------------------- | -------------------- |
-| Primary   | R-$\mathrm{CH{}_2\mathrm{OH{}$   | Ethanol, propan-1-ol |
-| Secondary | $\mathrm{R{}_2$-$\mathrm{CHOH{}$ | Propan-2-ol          |
-| Tertiary  | $\mathrm{R{}_3$-$\mathrm{COH{}$  | 2-methylpropan-2-ol  |
+| Primary | R-$\mathrm{CH{}_2\mathrm{OH{}$ | Ethanol, propan-1-ol |
+| Secondary | $\mathrm{R{}_2$-$\mathrm{CHOH{}$ | Propan-2-ol |
+| Tertiary | $\mathrm{R{}_3$-$\mathrm{COH{}$ | 2-methylpropan-2-ol |
 
 ### Oxidation: Detailed Conditions
 
 **Worked Example 9 (HL):** A student has propan-1-ol and propan-2-ol. Describe how to distinguish
-between them using acidified potassium dichromate.
+Between them using acidified potassium dichromate.
 
 **Test with distillation (gentle heating):**
 
@@ -433,8 +433,8 @@ Propan-2-ol $\to$ propanone (ketone). The dichromate also changes colour.
 $$\mathrm{CH{}_3\mathrm{CH(OH)CH{}_3 \xrightarrow{[O]} \mathrm{CH{}_3\mathrm{COCH{}_3$$
 
 **Distinguishing test:** The products can be distinguished using Tollens' reagent. Propanal gives a
-silver mirror; propanone does not. Alternatively, Fehling's solution can be used (propanal gives a
-brick-red precipitate).
+Silver mirror; propanone does not. Alternatively, Fehling's solution can be used (propanal gives a
+Brick-red precipitate).
 
 ### Esterification: Mechanism and Conditions
 
@@ -443,7 +443,7 @@ $$\mathrm{CH{}_3\mathrm{COOH{} + \mathrm{CH{}_3\mathrm{CH{}_2\mathrm{OH{} \right
 Conditions: concentrated $\mathrm{H{}_2\mathrm{SO{}_4$ catalyst, heat under reflux.
 
 The mechanism involves protonation of the carboxylic acid, nucleophilic attack by the alcohol,
-proton transfer, and loss of water.
+Proton transfer, and loss of water.
 
 ### Dehydration: Major and Minor Products
 
@@ -472,13 +472,13 @@ $$\mathrm{CH{}_3\mathrm{CHO{} + \mathrm{CN{}^- \to \mathrm{CH{}_3\mathrm{CH(OH)C
 $$\mathrm{CH{}_3\mathrm{CH(OH)CN{} + \mathrm{H{}^+ \to \mathrm{CH{}_3\mathrm{CH(OH)CN{}$$
 
 Product: 2-hydroxypropanenitrile. This reaction extends the carbon chain and creates a new chiral
-centre.
+Centre.
 
 ### 2,4-DNP Test
 
 2,4-dinitrophenylhydrazine (2,4-DNP) reacts with both aldehydes and ketones to form orange
-precipitates (2,4-dNP derivatives). The melting point of the derivative can be used to identify the
-specific carbonyl compound.
+Precipitates (2,4-dNP derivatives). The melting point of the derivative can be used to identify the
+Specific carbonyl compound.
 
 ---
 
@@ -487,17 +487,17 @@ specific carbonyl compound.
 ### Acidity
 
 Carboxylic acids are weak acids. They are stronger acids than alcohols because the carboxylate anion
-is stabilised by resonance delocalisation of the negative charge over two oxygen atoms.
+Is stabilised by resonance delocalisation of the negative charge over two oxygen atoms.
 
 ### Reactions of Carboxylic Acids
 
-| Reagent                           | Product                                               | Type           |
+| Reagent | Product | Type |
 | --------------------------------- | ----------------------------------------------------- | -------------- |
-| $\mathrm{NaOH{}$                     | Carboxylate salt + water                              | Neutralisation |
-| $\mathrm{Na{}$                       | Carboxylate salt + $\mathrm{H{}_2$                       | Redox          |
-| $\mathrm{Na{}_2\mathrm{CO{}_3$          | Carboxylate salt + $\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$ | Acid-base      |
-| Alcohol + $\mathrm{H{}_2\mathrm{SO{}_4$ | Ester + water                                         | Esterification |
-| $\mathrm{LiAlH{}_4$                  | Primary alcohol                                       | Reduction      |
+| $\mathrm{NaOH{}$ | Carboxylate salt + water | Neutralisation |
+| $\mathrm{Na{}$ | Carboxylate salt + $\mathrm{H{}_2$ | Redox |
+| $\mathrm{Na{}_2\mathrm{CO{}_3$ | Carboxylate salt + $\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$ | Acid-base |
+| Alcohol + $\mathrm{H{}_2\mathrm{SO{}_4$ | Ester + water | Esterification |
+| $\mathrm{LiAlH{}_4$ | Primary alcohol | Reduction |
 
 ---
 
@@ -508,17 +508,17 @@ is stabilised by resonance delocalisation of the negative charge over two oxygen
 Esters are named with the alkyl part (from the alcohol) first, then the acyl part (from the acid).
 
 **Example:** $\mathrm{CH{}_3\mathrm{COOCH{}_2\mathrm{CH{}_3$ is ethyl ethanoate (ethyl from ethanol,
-ethanoate from ethanoic acid).
+Ethanoate from ethanoic acid).
 
 ### Physical Properties
 
 Esters are volatile liquids with characteristic fruity odours. They have lower boiling points than
-carboxylic acids of similar molecular mass because they cannot form hydrogen bonds with each other.
+Carboxylic acids of similar molecular mass because they cannot form hydrogen bonds with each other.
 
 ### Hydrolysis
 
 **Acid hydrolysis:** Ester + water $\rightleftharpoons$ acid + alcohol (reversible, catalysed by
-acid).
+Acid).
 
 **Base hydrolysis (saponification):** Ester + NaOH $\to$ carboxylate salt + alcohol (irreversible).
 
@@ -544,12 +544,12 @@ acid).
 **Worked Example 11 (HL):** Explain why butan-2-ol is optically active but butan-1-ol is not.
 
 Butan-2-ol ($\mathrm{CH{}_3\mathrm{CH(OH)CH{}_2\mathrm{CH{}_3$): Carbon-2 has four different groups
-($\mathrm{H{}$, $\mathrm{OH{}$, $\mathrm{CH{}_3$, $\mathrm{CH{}_2\mathrm{CH{}_3$), making it a chiral centre. Two
-enantiomers exist.
+($\mathrm{H{}$$\mathrm{OH{}$$\mathrm{CH{}_3$$\mathrm{CH{}_2\mathrm{CH{}_3$), making it a chiral centre. Two
+Enantiomers exist.
 
 Butan-1-ol ($\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$): No carbon has four different
-groups. Carbon-1 has $\mathrm{H{}$, $\mathrm{H{}$, $\mathrm{OH{}$, $\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$ -- two
-of the substituents are identical (two H atoms). Not chiral.
+Groups. Carbon-1 has $\mathrm{H{}$$\mathrm{H{}$$\mathrm{OH{}$$\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{CH{}_3$ -- two
+Of the substituents are identical (two H atoms). Not chiral.
 
 ### E/Z Isomerism
 
@@ -561,10 +561,10 @@ Yes. Each carbon of the double bond has two different groups:
 - Right carbon: $\mathrm{CH{}_3$ and $\mathrm{H{}$
 
 (Z)-but-2-ene: both $\mathrm{CH{}_3$ groups on the same side. (E)-but-2-ene: $\mathrm{CH{}_3$ groups on
-opposite sides.
+Opposite sides.
 
 But-1-ene does NOT exhibit E/Z isomerism because one carbon of the double bond has two identical
-groups ($\mathrm{H{}$ and $\mathrm{H{}$).
+Groups ($\mathrm{H{}$ and $\mathrm{H{}$).
 
 ---
 
@@ -580,25 +580,25 @@ $$\mathrm{CH{}_2\mathrm{Cl{}_2 + \mathrm{Cl{}_2 \to \mathrm{CHCl{}_3 + \mathrm{H
 $$\mathrm{CHCl{}_3 + \mathrm{Cl{}_2 \to \mathrm{CCl{}_4 + \mathrm{HCl{}$$
 
 Controlling the product requires controlling the ratio of methane to chlorine (excess methane
-favours $\mathrm{CH{}_3\mathrm{Cl{}$).
+Favours $\mathrm{CH{}_3\mathrm{Cl{}$).
 
 ---
 
 ## Summary Table: Key Organic Reactions
 
-| Reactant                  | Reagent                             | Product               | Reaction type          |
+| Reactant | Reagent | Product | Reaction type |
 | ------------------------- | ----------------------------------- | --------------------- | ---------------------- |
-| Alkene                    | $\mathrm{Br{}_2$                       | Dibromoalkane         | Electrophilic addition |
-| Alkene                    | $\mathrm{HBr{}$                        | Bromoalkane           | Electrophilic addition |
-| Primary alcohol           | $[\mathrm{O{}]$, distil                | Aldehyde              | Oxidation              |
-| Primary alcohol           | $[\mathrm{O{}]$, reflux                | Carboxylic acid       | Oxidation              |
-| Secondary alcohol         | $[\mathrm{O{}]$                        | Ketone                | Oxidation              |
-| Alcohol                   | $\mathrm{conc. H{}_2\mathrm{SO{}_4$, heat | Alkene                | Dehydration            |
-| Carboxylic acid + alcohol | $\mathrm{conc. H{}_2\mathrm{SO{}_4$       | Ester + water         | Esterification         |
-| Ester + NaOH              | Heat                                | Carboxylate + alcohol | Saponification         |
-| Aldehyde                  | Tollens'                            | Silver mirror         | Oxidation (test)       |
-| Aldehyde                  | $\mathrm{NaBH{}_4$                     | Primary alcohol       | Reduction              |
-| Ketone                    | $\mathrm{NaBH{}_4$                     | Secondary alcohol     | Reduction              |
+| Alkene | $\mathrm{Br{}_2$ | Dibromoalkane | Electrophilic addition |
+| Alkene | $\mathrm{HBr{}$ | Bromoalkane | Electrophilic addition |
+| Primary alcohol | $[\mathrm{O{}]$Distil | Aldehyde | Oxidation |
+| Primary alcohol | $[\mathrm{O{}]$Reflux | Carboxylic acid | Oxidation |
+| Secondary alcohol | $[\mathrm{O{}]$ | Ketone | Oxidation |
+| Alcohol | $\mathrm{conc. H{}_2\mathrm{SO{}_4$Heat | Alkene | Dehydration |
+| Carboxylic acid + alcohol | $\mathrm{conc. H{}_2\mathrm{SO{}_4$ | Ester + water | Esterification |
+| Ester + NaOH | Heat | Carboxylate + alcohol | Saponification |
+| Aldehyde | Tollens' | Silver mirror | Oxidation (test) |
+| Aldehyde | $\mathrm{NaBH{}_4$ | Primary alcohol | Reduction |
+| Ketone | $\mathrm{NaBH{}_4$ | Secondary alcohol | Reduction |
 
 ---
 
@@ -607,14 +607,14 @@ favours $\mathrm{CH{}_3\mathrm{Cl{}$).
 1. **Nomenclature** -- always find the longest chain containing the principal functional group.
 2. **Markovnikov's rule** -- the hydrogen adds to the less substituted carbon.
 3. **Oxidation of alcohols** -- primary gives aldehyde then acid; secondary gives ketone; tertiary
-   does not oxidise.
+ does not oxidise.
 4. **Ester names** -- the alkyl part comes from the alcohol, the acyl part from the acid.
 5. **Chirality** -- the carbon must have four _different_ groups to be chiral.
 
 6. **E/Z isomerism** -- requires two different groups on EACH carbon of the double bond.
-7. **Ester vs. ether** -- esters have $-\mathrm{COO{}-$; ethers have $-\mathrm{O{}-$.
+7. **Ester vs. Ether** -- esters have $-\mathrm{COO{}-$; ethers have $-\mathrm{O{}-$.
 8. **Tollens' vs. Fehling's** -- both distinguish aldehydes from ketones. 2,4-DNP confirms the
-   presence of a carbonyl but does not distinguish between them.
+ presence of a carbonyl but does not distinguish between them.
 9. **Oxidation conditions** -- distillation gives the aldehyde; reflux gives the carboxylic acid.
 10. **Free radical substitution** -- produces a mixture of products, not a single product.
 
@@ -622,21 +622,21 @@ favours $\mathrm{CH{}_3\mathrm{Cl{}$).
 
 ## Practice Questions (Extended)
 
-6. Name the following compounds: (a) $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$, (b)
-   $\mathrm{CH{}_3\mathrm{COOH{}$, (c) $\mathrm{CH{}_3\mathrm{COCH{}_3$.
+6. Name the following compounds: (a) $\mathrm{CH{}_3\mathrm{CH{}_2\mathrm{CH{}_2\mathrm{OH{}$(b)
+ $\mathrm{CH{}_3\mathrm{COOH{}$(c) $\mathrm{CH{}_3\mathrm{COCH{}_3$.
 7. Write the equation for the complete combustion of butane.
 8. Describe the test to distinguish between an aldehyde and a ketone.
 9. Write the equation for the formation of ethyl ethanoate from ethanoic acid and ethanol.
 10. Draw and name all structural isomers of $\mathrm{C{}_4\mathrm{H{}_9\mathrm{Cl{}$.
 11. Explain why butan-2-ol is optically active but butan-1-ol is not.
 12. Describe the free radical substitution mechanism for the reaction of methane with chlorine,
-    including all three stages.
+ including all three stages.
 13. Write equations for the reaction of ethanoic acid with (a) sodium, (b) sodium hydroxide, (c)
-    sodium carbonate.
+ sodium carbonate.
 14. Explain the difference between addition and condensation polymerisation, giving an example of
-    each.
+ each.
 15. A compound $\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}$ gives a positive Tollens' test and decolourises
-    bromine water. Suggest a structure and explain.
+ bromine water. Suggest a structure and explain.
 
 ---
 
@@ -645,7 +645,7 @@ favours $\mathrm{CH{}_3\mathrm{Cl{}$).
 ### Addition Polymers
 
 Formed by joining monomers without eliminating any molecule. The repeating unit is the same as the
-monomer (with the double bond opened).
+Monomer (with the double bond opened).
 
 **Polythene (polyethylene):**
 
@@ -672,16 +672,16 @@ Example: Nylon-6,6 from hexanedioic acid and hexane-1,6-diamine.
 Polymers derived from renewable resources that can be broken down by microorganisms:
 
 - **PLA (polylactic acid):** Made from corn starch. Used in packaging and medical implants.
-- **PHB (polyhydroxybutyrate):** Produced by bacteria. Naturally biodegradable.
+- **PHB (polyhydroxybutyrate):** Produced by bacteria. Biodegradable.
 
 ### Problems with Conventional Polymers
 
-| Issue              | Explanation                                  |
+| Issue | Explanation |
 | ------------------ | -------------------------------------------- |
-| Non-biodegradable  | Persist in landfill for centuries            |
-| Microplastics      | Break into tiny particles, pollute oceans    |
-| Incineration       | Can release toxic gases (e.g., HCl from PVC) |
-| Resource depletion | Made from petroleum (non-renewable)          |
+| Non-biodegradable | Persist in landfill for centuries |
+| Microplastics | Break into tiny particles, pollute oceans |
+| Incineration | Can release toxic gases (e.g., HCl from PVC) |
+| Resource depletion | Made from petroleum (non-renewable) |
 
 ---
 
@@ -727,3 +727,7 @@ Three proton environments:
 1. $\mathrm{CH{}_3$ (3H): triplet at $\delta \approx 1.2$
 2. $\mathrm{CH{}_2$ (2H): quartet at $\delta \approx 3.7$
 3. $\mathrm{OH{}$ (1H): singlet at $\delta \approx 2.5$ (broad, exchanges with $\mathrm{D{}_2\mathrm{O{}$)
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

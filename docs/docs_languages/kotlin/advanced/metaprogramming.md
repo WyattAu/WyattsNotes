@@ -11,7 +11,7 @@ categories:
 ## Reflection
 
 Reflection allows inspection of classes, functions, properties, and annotations at runtime. Kotlin
-reflection requires an additional dependency.
+Reflection requires an additional dependency.
 
 ```kotlin
 dependencies {
@@ -92,7 +92,7 @@ Reflection has significant performance overhead compared to direct access. Use i
 ## Annotations
 
 Annotations attach metadata to declarations. They do not directly affect program behavior but can be
-read via reflection or used by the compiler.
+Read via reflection or used by the compiler.
 
 ### Declaration
 
@@ -107,22 +107,22 @@ annotation class Deprecated(val message: String, val replaceWith: String = "")
 
 ### Built-in Annotation Targets
 
-| Target                             | Applies To                                |
+| Target | Applies To |
 | ---------------------------------- | ----------------------------------------- |
-| `AnnotationTarget.CLASS`           | Classes, interfaces, objects, annotations |
-| `AnnotationTarget.FUNCTION`        | Functions (including constructors)        |
-| `AnnotationTarget.PROPERTY`        | Properties                                |
-| `AnnotationTarget.VALUE_PARAMETER` | Function/constructor parameters           |
-| `AnnotationTarget.FIELD`           | Backing fields                            |
-| `AnnotationTarget.TYPE`            | Types in type usages                      |
+| `AnnotationTarget.CLASS` | Classes, interfaces, objects, annotations |
+| `AnnotationTarget.FUNCTION` | Functions (including constructors) |
+| `AnnotationTarget.PROPERTY` | Properties |
+| `AnnotationTarget.VALUE_PARAMETER` | Function/constructor parameters |
+| `AnnotationTarget.FIELD` | Backing fields |
+| `AnnotationTarget.TYPE` | Types in type usages |
 
 ### Retention
 
-| Retention | Behavior                                          |
+| Retention | Behavior |
 | --------- | ------------------------------------------------- |
-| `SOURCE`  | Discarded by the compiler (not in bytecode)       |
-| `BINARY`  | Stored in bytecode but not visible via reflection |
-| `RUNTIME` | Stored in bytecode and accessible via reflection  |
+| `SOURCE` | Discarded by the compiler (not in bytecode) |
+| `BINARY` | Stored in bytecode but not visible via reflection |
+| `RUNTIME` | Stored in bytecode and accessible via reflection |
 
 ### Usage
 
@@ -136,7 +136,7 @@ fun getUser(@Path("id") id: Long): User {
 ### Annotation Parameters
 
 Annotation parameters are restricted to: primitive types, strings, classes, enums, other
-annotations, and arrays of these types.
+Annotations, and arrays of these types.
 
 ```kotlin
 annotation class Validate(
@@ -163,7 +163,7 @@ annotation class MinLength(val value: Int)
 ## Sealed Interfaces
 
 Kotlin 1.5+ supports sealed interfaces, enabling closed type hierarchies without requiring a common
-base class.
+Base class.
 
 ```kotlin
 sealed interface Message {
@@ -209,7 +209,7 @@ data class Success<T>(val value: T) : Result<T>(), Succeeded
 ## Value Classes (Inline Classes)
 
 Value classes provide a way to wrap a value with a distinct type without the runtime overhead of
-object allocation.
+Object allocation.
 
 ```kotlin
 @JvmInline
@@ -232,7 +232,7 @@ At runtime, `UserId` is represented as a plain `Long`. No object allocation occu
 
 - Must have exactly one property in the primary constructor.
 - Cannot have `init` blocks that access the backing property before it is initialized (validation in
-  `init` blocks is allowed).
+ `init` blocks is allowed).
 - Cannot extend other classes (but can implement interfaces).
 - Cannot be used as generic type arguments at runtime (they are erased).
 
@@ -338,32 +338,40 @@ val config = Config().invoke {
 
 ### Available Operators
 
-| Expression    | Operator Function    | Translation    |
+| Expression | Operator Function | Translation |
 | ------------- | -------------------- | -------------- |
-| `a + b`       | `a.plus(b)`          | Binary plus    |
-| `a - b`       | `a.minus(b)`         | Binary minus   |
-| `a * b`       | `a.times(b)`         | Multiplication |
-| `a / b`       | `a.div(b)`           | Division       |
-| `a % b`       | `a.rem(b)`           | Remainder      |
-| `-a`          | `a.unaryMinus()`     | Unary minus    |
-| `++a` / `a++` | `a.inc()`            | Increment      |
-| `a > b`       | `a.compareTo(b) > 0` | Comparison     |
-| `a in b`      | `b.contains(a)`      | Contains       |
-| `a[i]`        | `a.get(i)`           | Indexing       |
-| `a(i)`        | `a.invoke(i)`        | Function call  |
-| `a..b`        | `a.rangeTo(b)`       | Range          |
+| `a + b` | `a.plus(b)` | Binary plus |
+| `a - b` | `a.minus(b)` | Binary minus |
+| `a * b` | `a.times(b)` | Multiplication |
+| `a / b` | `a.div(b)` | Division |
+| `a % b` | `a.rem(b)` | Remainder |
+| `-a` | `a.unaryMinus()` | Unary minus |
+| `++a` / `a++` | `a.inc()` | Increment |
+| `a > b` | `a.compareTo(b) > 0` | Comparison |
+| `a in b` | `b.contains(a)` | Contains |
+| `a[i]` | `a.get(i)` | Indexing |
+| `a(i)` | `a.invoke(i)` | Function call |
+| `a..b` | `a.rangeTo(b)` | Range |
 
 ## Common Pitfalls
 
 - \*\* Overusing reflection for tasks that can be solved with compile-time mechanisms. Reflection
-  bypasses the type system and has significant performance cost. Prefer code generation, annotation
-  processors, or inline functions.
+ bypasses the type system and has significant performance cost. Prefer code generation, annotation
+ processors, or inline functions.
 - \*\* Using value classes where inheritance is needed. Value classes cannot extend other classes.
-  If you need a type hierarchy, use a regular class or sealed class.
+ If you need a type hierarchy, use a regular class or sealed class.
 - \*\* Overloading operators in ways that violate the principle of least surprise. The `+` operator
-  should represent addition or concatenation, not arbitrary behavior.
+ should represent addition or concatenation, not arbitrary behavior.
 - \*\* Forgetting that `equals()` and `hashCode()` are not generated for value classes implementing
-  interfaces that declare them. The interface equality is used instead of structural equality.
+ interfaces that declare them. The interface equality is used instead of structural equality.
 - \*\* Using reflection on value classes. Value classes are represented as their underlying type at
-  runtime. `KClass` for a value class may not behave as expected -- use the underlying type for
-  reflection operations.
+ runtime. `KClass` for a value class may not behave as expected -- use the underlying type for
+ reflection operations.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

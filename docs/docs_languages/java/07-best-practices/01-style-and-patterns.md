@@ -10,14 +10,14 @@ sidebar_position: 1
 ## Naming Conventions
 
 Naming is the single most visible signal of code quality. Java naming conventions are codified in
-the JLS and further elaborated in the Java Language Style Guide. These are not aesthetic
-preferences; they carry semantic weight that the compiler, runtime, and human readers all depend on.
+The JLS and further elaborated in the Java Language Style Guide. These are not aesthetic
+Preferences; they carry semantic weight that the compiler, runtime, and human readers all depend on.
 
 ### Packages
 
 Package names are all lowercase, with components separated by dots. No underscores, no mixed case.
 The reverse domain name convention (`com.example.project`) remains the standard, though many
-open-source projects use shorter forms (`org.apache.commons`, `io.netty`).
+Open-source projects use shorter forms (`org.apache.commons``io.netty`).
 
 ```java
 package com.example.project.domain;       // domain layer
@@ -26,9 +26,9 @@ package com.example.project.infrastructure.persistence; // infrastructure
 ```
 
 The JLS permits any valid identifier as a package component, but convention restricts this further:
-components should be nouns or very short adjectives, never verbs. A package named
+Components should be nouns or very short adjectives, never verbs. A package named
 `com.example.utils` is common but imprecise; `com.example.concurrent` or `com.example.text` is
-preferable because it describes the _domain_ of the types within.
+Preferable because it describes the _domain_ of the types within.
 
 ### Classes and Interfaces
 
@@ -45,13 +45,13 @@ public class RuntimeException extends Exception { }
 ```
 
 Abstract classes sometimes carry the `Abstract` prefix, and exception classes carry the `Exception`
-suffix. Utility classes (classes with only static methods) should be named for what they _provide_,
-not that they are utilities: `Collections`, not `CollectionUtils`.
+Suffix. Utility classes (classes with only static methods) should be named for what they _provide_,
+Not that they are utilities: `Collections`Not `CollectionUtils`.
 
 ### Methods
 
 Methods use **camelCase** (lowerCamelCase). Method names should be verbs or verb phrases because
-methods represent actions:
+Methods represent actions:
 
 ```java
 public void sendMessage(Message message) { }
@@ -60,9 +60,9 @@ public boolean isAuthenticated() { }
 public static <T> List<T> unmodifiableList(List<? extends T> list) { }
 ```
 
-Boolean-returning methods conventionally begin with `is`, `has`, `can`, `should`, or `will`.
+Boolean-returning methods conventionally begin with `is``has``can``should`Or `will`.
 Accessors for non-boolean fields use the `get` prefix; mutators use `set`. These conventions are
-required for JavaBeans property introspection and are relied upon by frameworks like Spring,
+Required for JavaBeans property introspection and are relied upon by frameworks like Spring,
 Jackson, and JPA.
 
 ### Constants
@@ -77,22 +77,22 @@ public static final Set<String> SUPPORTED_ALGORITHMS = Set.of("AES", "RSA");
 ```
 
 A `static final` reference to a mutable object (such as a `HashMap`) is not truly constant, because
-the object's state can change. In such cases, the field should either be private with no mutating
-accessors, or the object itself should be wrapped in an unmodifiable view.
+The object's state can change. In such cases, the field should either be private with no mutating
+Accessors, or the object itself should be wrapped in an unmodifiable view.
 
 ### Type Parameters
 
 Type parameters use a single uppercase letter. The standard letters carry domain-specific meaning:
 
-| Letter   | Meaning             | Example                        |
+| Letter | Meaning | Example |
 | -------- | ------------------- | ------------------------------ |
-| `T`      | Type                | `Box<T>`                       |
-| `E`      | Element             | `List<E>`                      |
-| `K`      | Key                 | `Map<K, V>`                    |
-| `V`      | Value               | `Map<K, V>`                    |
-| `S`, `U` | Second, third types | `Pair<S, U>`                   |
-| `R`      | Return type         | `Function<T, R>`               |
-| `N`      | Number              | `Calculator<N extends Number>` |
+| `T` | Type | `Box<T>` |
+| `E` | Element | `List<E>` |
+| `K` | Key | `Map<K, V>` |
+| `V` | Value | `Map<K, V>` |
+| `S``U` | Second, third types | `Pair<S, U>` |
+| `R` | Return type | `Function<T, R>` |
+| `N` | Number | `Calculator<N extends Number>` |
 
 When a single letter is insufficient, use a descriptive name prefixed with `T`:
 
@@ -103,7 +103,7 @@ public class Repository<TEntity, TId> { }
 ### Local Variables and Parameters
 
 Local variables and parameters use camelCase. Descriptive names are always preferable to
-abbreviations, with a small set of universally understood exceptions:
+Abbreviations, with a small set of universally understood exceptions:
 
 ```java
 // Good
@@ -125,10 +125,10 @@ long t;         // meaningless
 :::info
 JLS Reference
 [JLS §6.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.1) defines the rules
-for declaring names.
+For declaring names.
 [JLS §3.8](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.8) defines what
-constitutes a valid identifier. Unicode characters are permitted, but ASCII identifiers are the de
-facto standard.
+Constitutes a valid identifier. Unicode characters are permitted, but ASCII identifiers are the de
+Facto standard.
 :::
 
 ## Code Organization
@@ -136,7 +136,7 @@ facto standard.
 ### Package Structure
 
 There are two dominant approaches to organizing packages in Java applications: **layer-first** (also
-called technical packaging) and **feature-first** (also called domain packaging).
+Called technical packaging) and **feature-first** (also called domain packaging).
 
 Layer-first organization groups classes by their technical role:
 
@@ -166,14 +166,14 @@ com.example.project/
 ```
 
 Feature-first packaging has a significant advantage for projects of any non-trivial size: it
-localizes changes. When a requirement changes for the "user" domain, all the files you need to
-modify are in a single package. In layer-first packaging, a change to `User` might require edits
-across `controller/`, `service/`, `repository/`, and `model/` -- four separate directories that are
-far apart in the tree.
+Localizes changes. When a requirement changes for the "user" domain, all the files you need to
+Modify are in a single package. In layer-first packaging, a change to `User` might require edits
+Across `controller/``service/``repository/`And `model/` -- four separate directories that are
+Far apart in the tree.
 
 :::tip
 Recommendation Use feature-first packaging for any project with more than two bounded
-contexts. For small projects or libraries, layer-first packaging remains acceptable.
+Contexts. For small projects or libraries, layer-first packaging remains acceptable.
 :::
 
 ### Class Structure
@@ -190,29 +190,29 @@ The conventional ordering of members within a class, as recommended by the Googl
 8. Nested classes
 
 Within each group, accessibility should decrease: `public` before `protected` before package-private
-before `private`. This ordering places the most important, most-stable declarations at the top of
-the file.
+Before `private`. This ordering places the most important, most-stable declarations at the top of
+The file.
 
 ### One Top-Level Class Per File
 
 The Java Language Specification requires that a public top-level class have the same name as the
-file it resides in, and that only one public top-level class exist per compilation unit.
+File it resides in, and that only one public top-level class exist per compilation unit.
 Package-private top-level classes can coexist in the same file, but this is widely considered poor
-practice because it makes the types harder to discover.
+Practice because it makes the types harder to discover.
 
 ## Build Tools
 
 ### Maven vs Gradle
 
 Maven and Gradle are the two dominant build tools in the Java ecosystem. Both manage dependencies,
-compile code, run tests, and package artifacts, but they differ fundamentally in their approach.
+Compile code, run tests, and package artifacts, but they differ fundamentally in their approach.
 
 #### Maven: Convention Over Configuration
 
 Maven uses a declarative XML-based build lifecycle. A Maven project has a rigidly defined directory
-structure and a fixed set of lifecycle phases (`compile`, `test`, `package`, `install`, `deploy`).
-The `pom.xml` declares what the project is and what it depends on; the _how_ is handled by plugins
-bound to lifecycle phases.
+Structure and a fixed set of lifecycle phases (`compile``test``package``install``deploy`).
+The `pom.xml` declares what the project is and what on; the _how_ is handled by plugins
+Bound to lifecycle phases.
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -244,14 +244,14 @@ bound to lifecycle phases.
 ```
 
 Maven's rigidity is its strength and its weakness. New developers can understand any Maven project
-instantly because the structure is always the same. But complex build logic requires either verbose
-plugin configurations or jumping to external files (Groovy, Ant) which breaks the declarative model.
+Instantly because the structure is always the same. But complex build logic requires either verbose
+Plugin configurations or jumping to external files (Groovy, Ant) which breaks the declarative model.
 
 #### Gradle: Flexible and Performant
 
 Gradle uses a Groovy or Kotlin DSL to define builds as executable code rather than declarative
-configuration. It supports incremental builds, build caching, and a configuration avoidance API that
-significantly reduces build times for large projects.
+Configuration. It supports incremental builds, build caching, and a configuration avoidance API that
+Significantly reduces build times for large projects.
 
 ```kotlin
 plugins {
@@ -284,9 +284,9 @@ tasks.test {
 
 :::tip
 Recommendation Use Gradle with the Kotlin DSL for new projects. Gradle's build cache,
-incremental compilation, and configuration avoidance yield measurable performance improvements, and
-the Kotlin DSL provides type safety and IDE autocompletion. Use Maven when integrating with legacy
-enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear.
+Incremental compilation, and configuration avoidance yield measurable performance improvements, and
+The Kotlin DSL provides type safety and IDE autocompletion. Use Maven when integrating with legacy
+Enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear.
 :::
 
 ### Dependency Management
@@ -294,26 +294,26 @@ enterprise infrastructure that requires it, or when team familiarity makes the t
 #### Dependency Scopes
 
 Both Maven and Gradle categorize dependencies by scope, controlling when a dependency is available
-on the classpath:
+On the classpath:
 
-| Scope                | Available During  | Packaged Into | Purpose                        |
+| Scope | Available During | Packaged Into | Purpose |
 | -------------------- | ----------------- | ------------- | ------------------------------ |
-| `compile` / `api`    | compile + runtime | yes           | Required at all phases         |
-| `runtimeOnly`        | runtime only      | yes           | JDBC drivers, logging backends |
-| `provided`           | compile only      | no            | Servlet API, JPA API           |
-| `testImplementation` | test compile+run  | no            | JUnit, Mockito, testcontainers |
+| `compile` / `api` | compile + runtime | yes | Required at all phases |
+| `runtimeOnly` | runtime only | yes | JDBC drivers, logging backends |
+| `provided` | compile only | no | Servlet API, JPA API |
+| `testImplementation` | test compile+run | no | JUnit, Mockito, testcontainers |
 
 The distinction between `api` and `implementation` in Gradle is critical. A dependency declared as
 `api` is transitively exposed to consumers of your library. A dependency declared as
 `implementation` is not. Declaring everything as `api` bloats the dependency graph and creates
-version conflicts; the default should always be `implementation`.
+Version conflicts; the default should always be `implementation`.
 
 #### Transitive Dependency Conflicts
 
 When two dependencies require different versions of the same transitive library, the build tool must
-resolve the conflict. Maven uses "nearest definition wins" (the shortest path in the dependency tree
-takes precedence). Gradle uses the same strategy by default but allows explicit resolution
-strategies.
+Resolve the conflict. Maven uses "nearest definition wins" (the shortest path in the dependency tree
+Takes precedence). Gradle uses the same strategy by default but allows explicit resolution
+Strategies.
 
 ```kotlin
 configurations.all {
@@ -323,16 +323,16 @@ configurations.all {
 }
 ```
 
-Use dependency analysis tools (`mvn dependency:tree`, `gradle dependencies`) regularly to audit your
-dependency graph. Undesired transitive dependencies are a source of security vulnerabilities and
-classpath conflicts.
+Use dependency analysis tools (`mvn dependency:tree``gradle dependencies`) regularly to audit your
+Dependency graph. Undesired transitive dependencies are a source of security vulnerabilities and
+Classpath conflicts.
 
 ## Testing
 
 ### JUnit 5 Fundamentals
 
 JUnit 5 (Jupiter) is the standard testing framework for modern Java. It consists of three
-subprojects: JUnit Platform (the runtime foundation), JUnit Jupiter (the new API), and JUnit Vintage
+Subprojects: JUnit Platform (the runtime foundation), JUnit Jupiter (the new API), and JUnit Vintage
 (backward compatibility with JUnit 4).
 
 ```java
@@ -370,14 +370,14 @@ class UserServiceTest {
 }
 ```
 
-The lifecycle annotations `@BeforeEach`, `@AfterEach`, `@BeforeAll`, and `@AfterAll` control setup
-and teardown. `@BeforeAll` methods must be `static` unless the test class is annotated with
+The lifecycle annotations `@BeforeEach``@AfterEach``@BeforeAll`And `@AfterAll` control setup
+And teardown. `@BeforeAll` methods must be `static` unless the test class is annotated with
 `@TestInstance(Lifecycle.PER_CLASS)`.
 
 ### Assertions
 
 JUnit 5 assertions are static methods on `org.junit.jupiter.api.Assertions`. The assertion library
-provides variants for different comparison strategies:
+Provides variants for different comparison strategies:
 
 ```java
 assertEquals(expected, actual);              // value equality
@@ -392,13 +392,13 @@ assertAll(                                  // grouped assertions
 ```
 
 Grouped assertions with `assertAll` are critical: without them, the first failed assertion aborts
-the test and you only learn about one problem per run. With `assertAll`, all assertions execute and
-you see every failure in a single pass.
+The test and you only learn about one problem per run. With `assertAll`All assertions execute and
+You see every failure in a single pass.
 
 ### Parameterized Tests
 
 Parameterized tests run the same test logic with different inputs, eliminating copy-paste test
-methods:
+Methods:
 
 ```java
 import org.junit.jupiter.params.*;
@@ -431,14 +431,14 @@ class EmailValidatorTest {
 }
 ```
 
-`@MethodSource` accepts a factory method that returns a `Stream`, `Collection`, `Iterator`, or array
-of arguments. This is the most flexible parameterization strategy because the data source can be any
-method, including one that reads from a file or generates values programmatically.
+`@MethodSource` accepts a factory method that returns a `Stream``Collection``Iterator`Or array
+Of arguments. This is the most flexible parameterization strategy because the data source can be any
+Method, including one that reads from a file or generates values programmatically.
 
 ### Mocking with Mockito
 
 Mockito creates test doubles that verify interactions and stub return values. The goal of mocking is
-to isolate the unit under test from its collaborators:
+To isolate the unit under test from its collaborators:
 
 ```java
 import static org.mockito.Mockito.*;
@@ -476,14 +476,14 @@ class OrderServiceTest {
 ```
 
 The `verify` API with `never()` ensures that when an operation fails partway through, no side
-effects leak through. The `argThat` matcher enables assertions on the arguments passed to
-collaborators without requiring an equality implementation that may not exist on the domain object.
+Effects leak through. The `argThat` matcher enables assertions on the arguments passed to
+Collaborators without requiring an equality implementation that may not exist on the domain object.
 
 :::warning
 Over-Mocking If a test requires more than three mocks, the unit under test likely has too
-many responsibilities. Restructure the code rather than adding more mocks. Tests that mock
-extensively tend to be brittle: they break when implementation details change even when the
-externally observable behavior is correct.
+Many responsibilities. Restructure the code rather than adding more mocks. Tests that mock
+Extensively tend to be brittle: they break when implementation details change even when the
+Externally observable behavior is correct.
 :::
 
 ## Logging
@@ -491,8 +491,8 @@ externally observable behavior is correct.
 ### java.util.logging (JUL)
 
 `java.util.logging` is the JDK's built-in logging framework. It requires zero external dependencies
-and is always available. However, its API is verbose, its configuration mechanism (properties files
-and programmatic configuration) is unintuitive, and it lacks structured logging support.
+And is always available. However, its API is verbose, its configuration mechanism (properties files
+And programmatic configuration) is unintuitive, and it lacks structured logging support.
 
 ```java
 import java.util.logging.Level;
@@ -517,9 +517,9 @@ public class PaymentService {
 ### SLF4J + Logback
 
 SLF4J (Simple Logging Facade for Java) is a logging abstraction, not an implementation. Logback is a
-logging implementation that natively implements SLF4J. This separation means your code depends on
-the SLF4J API (which is stable and minimal) while the actual logging backend can be swapped without
-changing any application code.
+Logging implementation that natively implements SLF4J. This separation means your code depends on
+The SLF4J API (which is stable and minimal) while the actual logging backend can be swapped without
+Changing any application code.
 
 ```java
 import org.slf4j.Logger;
@@ -541,9 +541,9 @@ public class PaymentService {
 ```
 
 The `{}` parameterized formatting is the critical difference. SLF4J defers string concatenation to
-the logging framework, which first checks whether the log level is enabled. If `INFO` is disabled,
-the string concatenation never occurs. With JUL or `System.out.println`, the concatenation happens
-unconditionally, wasting CPU cycles and allocating objects that are immediately discarded.
+The logging framework, which first checks whether the log level is enabled. If `INFO` is disabled,
+The string concatenation never occurs. With JUL or `System.out.println`The concatenation happens
+Unconditionally, wasting CPU cycles and allocating objects that are immediately discarded.
 
 ```xml
 <!-- logback.xml -->
@@ -565,8 +565,8 @@ unconditionally, wasting CPU cycles and allocating objects that are immediately 
 
 :::tip
 Recommendation Always use SLF4J for application logging. Use JUL only in library code where
-adding external dependencies is undesirable. Never use `System.out.println` for logging in
-production code; it cannot be filtered by log level, redirected to files, or formatted consistently.
+Adding external dependencies is undesirable. Never use `System.out.println` for logging in
+Production code; it cannot be filtered by log level, redirected to files, or formatted consistently.
 :::
 
 ## Design Patterns
@@ -574,8 +574,8 @@ production code; it cannot be filtered by log level, redirected to files, or for
 ### Singleton
 
 The Singleton pattern restricts instantiation of a class to a single instance. In modern Java, the
-preferred approach is the **enum singleton**, which is immune to reflection-based attacks and
-serialization breakage:
+Preferred approach is the **enum singleton**, which is immune to reflection-based attacks and
+Serialization breakage:
 
 ```java
 public enum DatabaseConnectionPool {
@@ -597,23 +597,23 @@ public enum DatabaseConnectionPool {
 ```
 
 The enum approach works because the JVM guarantees that enum constants are initialized exactly once,
-and the serialization mechanism handles enum instances specially (they are identified by name, not
-by serialized field data). A traditional class-based singleton with a private constructor can be
-broken by reflection (`Constructor.setAccessible(true)`) and by deserialization (which creates a new
-instance unless `readResolve` is implemented).
+And the serialization mechanism handles enum instances specially (they are identified by name, not
+By serialized field data). A traditional class-based singleton with a private constructor can be
+Broken by reflection (`Constructor.setAccessible(true)`) and by deserialization (which creates a new
+Instance unless `readResolve` is implemented).
 
 :::caution
 When to Use Singleton Singletons are appropriate for stateless service objects and
-expensive resources (connection pools, thread pools). They are inappropriate for stateful objects
-that represent business domain concepts, because a global mutable singleton is essentially a hidden
-global variable that makes testing difficult and introduces hidden coupling between unrelated parts
-of the codebase.
+Expensive resources (connection pools, thread pools). They are inappropriate for stateful objects
+That represent business domain concepts, because a global mutable singleton is essentially a hidden
+Global variable that makes testing difficult and introduces hidden coupling between unrelated parts
+Of the codebase.
 :::
 
 ### Factory
 
 The Factory pattern encapsulates object creation behind an interface, decoupling the client from the
-concrete class:
+Concrete class:
 
 ```java
 public interface DocumentParser {
@@ -640,13 +640,13 @@ public class DocumentParserFactory {
 ```
 
 The Factory pattern is most valuable when the concrete type to instantiate depends on runtime
-conditions (configuration, input data, environment). If the concrete type is known at compile time
-and never changes, a factory adds unnecessary indirection.
+Conditions (configuration, input data, environment). If the concrete type is known at compile time
+And never changes, a factory adds unnecessary indirection.
 
 ### Builder
 
 The Builder pattern provides a fluent API for constructing objects that have many optional
-parameters or that require validation across multiple parameters.
+Parameters or that require validation across multiple parameters.
 
 #### Why Builder Over Telescoping Constructors
 
@@ -666,11 +666,11 @@ public class HttpRequest {
 This approach fails for three reasons:
 
 1. **Readability collapses.** A call like `new HttpRequest("/api", "POST", headers, timeout)` is
-   meaningless without checking the constructor signature to determine which argument is which.
+ meaningless without checking the constructor signature to determine which argument is which.
 2. **Combination explosion.** With 6 optional parameters, you need 2^6 = 64 constructors to cover
-   every combination, or callers must pass `null` for parameters they do not care about.
+ every combination, or callers must pass `null` for parameters they do not care about.
 3. **Type unsafety.** If two parameters have the same type, the compiler cannot catch a
-   transposition.
+ transposition.
 
 The Builder pattern eliminates all three problems:
 
@@ -736,8 +736,8 @@ public class HttpRequest {
 ```
 
 The builder allows named parameters (`method("POST")`), default values (timeout defaults to 30
-seconds), and cross-parameter validation in the `build()` method. The resulting client code is
-self-documenting:
+Seconds), and cross-parameter validation in the `build()` method. The resulting client code is
+Self-documenting:
 
 ```java
 var request = HttpRequest.builder("https://api.example.com/users")
@@ -750,7 +750,7 @@ var request = HttpRequest.builder("https://api.example.com/users")
 ```
 
 In Java 16+, a `record` can replace the mutable Builder inner class when combined with a separate
-builder:
+Builder:
 
 ```java
 public record HttpRequest(
@@ -770,7 +770,7 @@ public record HttpRequest(
 ### Strategy
 
 The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them
-interchangeable. The key insight is that it replaces conditional logic with polymorphism:
+Interchangeable. The key insight is that it replaces conditional logic with polymorphism:
 
 ```java
 public interface PricingStrategy {
@@ -817,16 +817,16 @@ public class BulkDiscountPricing implements PricingStrategy {
 ```
 
 Without Strategy, the pricing logic lives in a single class as a chain of `if-else` or `switch`
-statements. Each new pricing rule requires modifying that class, violating the Open/Closed
+Statements. Each new pricing rule requires modifying that class, violating the Open/Closed
 Principle. With Strategy, adding a new pricing rule means adding a new class that implements
 `PricingStrategy` -- no existing code is modified.
 
 ### Observer
 
 The Observer pattern defines a one-to-many dependency between objects so that when one object
-changes state, all its dependents are notified. Java has built-in support via `java.util.Observable`
+Changes state, all its dependents are notified. Java has built-in support via `java.util.Observable`
 (deprecated since Java 9) and the property change support in `java.beans`. In modern Java, the
-idiomatic approach uses functional interfaces or the Flow API:
+Idiomatic approach uses functional interfaces or the Flow API:
 
 ```java
 import java.util.concurrent.Flow;
@@ -872,8 +872,8 @@ public class OrderAuditLog implements Subscriber<OrderEvent> {
 ```
 
 The `Flow` API (Java 9+) provides reactive-streams-based pub/sub with backpressure, meaning
-subscribers control the rate at which they receive items. This prevents fast publishers from
-overwhelming slow subscribers.
+Subscribers control the rate at which they receive items. This prevents fast publishers from
+Overwhelming slow subscribers.
 
 ### Dependency Injection
 
@@ -908,16 +908,16 @@ public class OrderService {
 Dependency Injection is preferred for three reasons:
 
 1. **Explicitness.** The constructor signature declares every dependency. A Service Locator hides
-   dependencies inside method bodies; you must read every line of code to discover what an object
-   depends on. With DI, the dependencies are visible at the point of instantiation.
+ dependencies inside method bodies; you must read every line of code to discover what an object
+ depends on. With DI, the dependencies are visible at the point of instantiation.
 2. **Testability.** With constructor injection, tests pass mock or stub implementations directly.
-   With a Service Locator, tests must either modify global state (setting up the locator before each
-   test and tearing it down after) or use PowerMock/inline mocking to intercept the static `get()`
-   call. Modifying global state in tests causes test pollution when tests run in parallel.
+ With a Service Locator, tests must either modify global state (setting up the locator before each
+ test and tearing it down after) or use PowerMock/inline mocking to intercept the static `get()`
+ call. Modifying global state in tests causes test pollution when tests run in parallel.
 3. **Compile-time safety.** A missing dependency with DI produces a compilation error (the
-   constructor call fails). A missing dependency with a Service Locator produces a
-   `NullPointerException` or a `ClassCastException` at runtime -- precisely when you least want to
-   discover it.
+ constructor call fails). A missing dependency with a Service Locator produces a
+ `NullPointerException` or a `ClassCastException` at runtime -- precisely when you least want to
+ discover it.
 
 ```java
 // Test with DI -- direct, no framework, no global state
@@ -927,7 +927,7 @@ var service = new OrderService(repository, gateway);
 ```
 
 Frameworks like Spring and Jakarta EE provide runtime DI via reflection and annotations, but the
-principle is the same: dependencies are declared (through constructor parameters, `@Inject`, or
+Principle is the same: dependencies are declared (through constructor parameters, `@Inject`Or
 `@Autowired`) rather than looked up imperatively.
 
 ## Modern Java Idioms
@@ -936,7 +936,7 @@ principle is the same: dependencies are declared (through constructor parameters
 
 The `var` keyword (Java 10+) infers the type of local variables from the initializer. It does
 **not** make Java dynamically typed; the inferred type is a compile-time constant, and the variable
-cannot be reassigned to an incompatible type.
+Cannot be reassigned to an incompatible type.
 
 ```java
 // Good: the type is obvious from the right-hand side
@@ -951,13 +951,13 @@ var data = parse(jsonString);                  // String? Map? JsonNode?
 ```
 
 The rule of thumb: use `var` when the right-hand side makes the type obvious. When the type is a
-critical part of the expression's meaning (especially when the right-hand side is a method call with
-a non-obvious return type), spell out the type.
+Critical part of the expression's meaning (especially when the right-hand side is a method call with
+A non-obvious return type), spell out the type.
 
 ### Records
 
 Records (Java 16+) are immutable data carriers that eliminate boilerplate for classes that are
-primarily data holders:
+Primarily data holders:
 
 ```java
 public record Point(double x, double y) { }
@@ -970,18 +970,18 @@ public record User(Long id, String email, String name, Instant createdAt) {
 }
 ```
 
-A record automatically generates: a canonical constructor, accessor methods (`email()`, not
-`getEmail()`), `equals`, `hashCode`, and `toString`. The compact constructor syntax
+A record automatically generates: a canonical constructor, accessor methods (`email()`Not
+`getEmail()`), `equals``hashCode`And `toString`. The compact constructor syntax
 (`public User { ... }`) allows validation without declaring fields or assigning parameters.
 
 Records cannot extend other classes (they implicitly extend `java.lang.Record`), and their fields
-are implicitly `final`. This makes them unsuitable for mutable domain objects with complex lifecycle
-behavior, but ideal for DTOs, value objects, method return types, and keys in collections.
+Are implicitly `final`. This makes them unsuitable for mutable domain objects with complex lifecycle
+Behavior, but ideal for DTOs, value objects, method return types, and keys in collections.
 
 ### Sealed Classes
 
 Sealed classes (Java 17+) restrict which classes can extend or implement them, providing exhaustive
-pattern matching:
+Pattern matching:
 
 ```java
 public sealed interface Shape
@@ -993,14 +993,14 @@ public record Triangle(double base, double height) implements Shape { }
 ```
 
 The `permits` clause lists exactly which classes can implement the sealed interface. These permitted
-subclasses must be in the same module (if the sealed class is in a named module) or the same package
-(if in the unnamed module). Each permitted subclass must be declared `final`, `sealed`, or
+Subclasses must be in the same module (if the sealed class is in a named module) or the same package
+(if in the unnamed module). Each permitted subclass must be declared `final``sealed`Or
 `non-sealed`.
 
 ### Pattern Matching for `instanceof`
 
 Pattern matching for `instanceof` (Java 16+) combines type testing and casting into a single
-operation:
+Operation:
 
 ```java
 // Before Java 16
@@ -1016,7 +1016,7 @@ if (obj instanceof String s) {
 ```
 
 The pattern variable `s` is in scope only in the branch where the pattern matched, preventing
-accidental use of a potentially null cast result. This also works with record patterns:
+Accidental use of a potentially null cast result. This also works with record patterns:
 
 ```java
 if (shape instanceof Rectangle(double w, double h)) {
@@ -1040,7 +1040,7 @@ String result = switch (status) {
 ```
 
 The arrow form (`->`) does not fall through; each case is independent. If a case requires multiple
-statements, use a block with `yield`:
+Statements, use a block with `yield`:
 
 ```java
 String result = switch (shape) {
@@ -1054,7 +1054,7 @@ String result = switch (shape) {
 ```
 
 When combined with sealed classes, the compiler can verify that all permitted subclasses are
-covered, making the `default` branch unnecessary:
+Covered, making the `default` branch unnecessary:
 
 ```java
 double area = switch (shape) {
@@ -1090,16 +1090,16 @@ String query = """
 ```
 
 The closing `"""` determines the indentation: the compiler strips the common leading whitespace from
-all lines based on the position of the closing delimiter. Incidental trailing whitespace on each
-line is also stripped.
+All lines based on the position of the closing delimiter. Incidental trailing whitespace on each
+Line is also stripped.
 
 ## Effective Java Principles
 
 ### Prefer Immutability
 
 An immutable object is one whose state cannot be modified after construction. Immutability is
-preferred because it eliminates entire classes of bugs: race conditions in concurrent code,
-unexpected side effects in method calls, and inconsistent state after partial construction.
+Preferred because it eliminates entire classes of bugs: race conditions in concurrent code,
+Unexpected side effects in method calls, and inconsistent state after partial construction.
 
 ```java
 // Mutable -- prone to errors
@@ -1130,19 +1130,19 @@ public record ImmutableRange(int lower, int upper) {
 
 The mutable version has a temporal coupling bug: there is no atomic way to set both `lower` and
 `upper` simultaneously. If one thread calls `setLower(5)` and another calls `setUpper(3)`
-concurrently, the invariants can be violated even though each setter validates independently. The
-immutable version has no such problem because the state is fixed at construction time and validated
-atomically in the constructor.
+Concurrently, the invariants can be violated even though each setter validates independently. The
+Immutable version has no such problem because the state is fixed at construction time and validated
+Atomically in the constructor.
 
-To make a class immutable: declare all fields `final`, make the class `final` (or prevent
-subclassing by sealing), do not provide setters, and ensure that all mutable state reachable from
-the class (collections, arrays) is defensively copied or wrapped in unmodifiable views.
+To make a class immutable: declare all fields `final`Make the class `final` (or prevent
+Subclassing by sealing), do not provide setters, and ensure that all mutable state reachable from
+The class (collections, arrays) is defensively copied or wrapped in unmodifiable views.
 
 ### Favor Composition Over Inheritance
 
 Inheritance creates a tight coupling between the subclass and the superclass. A change in the
-superclass's implementation can break subclasses that depend on its internal behavior, even if the
-subclass never overrides the affected methods. This is known as the **fragile base class problem**.
+Superclass's implementation can break subclasses that depend on its internal behavior, even if the
+Subclass never overrides the affected methods. This is known as the **fragile base class problem**.
 
 ```java
 // Inheritance -- fragile coupling
@@ -1208,37 +1208,37 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 }
 ```
 
-In the inheritance version, `addAll` calls `super.addAll()`, which in `HashSet` internally iterates
-and calls `add()` -- our overridden `add()`. So each element is counted twice. The composition
-version delegates to the wrapped set, which calls its own `add()`, not the forwarding set's `add()`.
+In the inheritance version, `addAll` calls `super.addAll()`Which in `HashSet` internally iterates
+And calls `add()` -- our overridden `add()`. So each element is counted twice. The composition
+Version delegates to the wrapped set, which calls its own `add()`Not the forwarding set's `add()`.
 The count is correct.
 
 ### Minimize Accessibility
 
 The principle of information hiding states that a module should hide its implementation details
-behind a well-defined interface. In Java, this is enforced through access modifiers:
+Behind a well-defined interface. In Java, this is enforced through access modifiers:
 
-| Modifier        | Class | Package | Subclass | World |
+| Modifier | Class | Package | Subclass | World |
 | --------------- | ----- | ------- | -------- | ----- |
-| `public`        | yes   | yes     | yes      | yes   |
-| `protected`     | yes   | yes     | yes      | no    |
-| package-private | yes   | yes     | no       | no    |
-| `private`       | yes   | no      | no       | no    |
+| `public` | yes | yes | yes | yes |
+| `protected` | yes | yes | yes | no |
+| package-private | yes | yes | no | no |
+| `private` | yes | no | no | no |
 
 The rule is simple: make every field and method as inaccessible as possible. If a method is only
-used within its own class, make it `private`. If it is used by other classes in the same package,
-make it package-private. Only promote to `protected` or `public` when there is a clear, documented
-reason for wider access.
+Used within its own class, make it `private`. If it is used by other classes in the same package,
+Make it package-private. Only promote to `protected` or `public` when there is a clear, documented
+Reason for wider access.
 
 This matters because accessibility is a contract. A `public` method is part of your API; you are
-committing to maintaining its signature and behavior across versions. A `private` method can be
-changed, renamed, or deleted without any impact on callers.
+Committing to maintaining its signature and behavior across versions. A `private` method can be
+Changed, renamed, or deleted without any impact on callers.
 
 ### Program to Interfaces
 
 "Program to an interface, not an implementation" means that the declared type of a variable,
-parameter, or return value should be the most general interface or abstract class that provides the
-required behavior:
+Parameter, or return value should be the most general interface or abstract class that provides the
+Required behavior:
 
 ```java
 // Bad: coupled to a specific implementation
@@ -1249,9 +1249,9 @@ List<String> names = new ArrayList<>();
 ```
 
 This allows the implementation to be changed without modifying the client code. If profiling reveals
-that a `LinkedList` performs better for the access pattern in question, only the right-hand side
-changes. The declared type `List` remains, and all code that uses `names` continues to compile
-without modification.
+That a `LinkedList` performs better for the access pattern in question, only the right-hand side
+Changes. The declared type `List` remains, and all code that uses `names` continues to compile
+Without modification.
 
 This principle extends to method signatures and fields:
 
@@ -1273,8 +1273,8 @@ public class UserRepository {
 
 ### Essential JVM Flags
 
-The JVM's default settings are adequate for development, but production deployments typically
-require explicit configuration. The most important categories of flags are:
+The JVM's default settings are adequate for development, but production deployments 
+Require explicit configuration. The most important categories of flags are:
 
 **Memory allocation:**
 
@@ -1289,7 +1289,7 @@ require explicit configuration. The most important categories of flags are:
 ```
 
 Setting `-Xms` equal to `-Xmx` eliminates the overhead of heap resizing at runtime. The JVM will
-never need to expand or contract the heap, which reduces GC pauses caused by allocation failures.
+Never need to expand or contract the heap, which reduces GC pauses caused by allocation failures.
 
 **Garbage collection:**
 
@@ -1308,9 +1308,9 @@ never need to expand or contract the heap, which reduces GC pauses caused by all
 ```
 
 G1GC is the default for a reason: it provides a good balance of throughput and pause times for most
-workloads. ZGC and Shenandoah target sub-millisecond pause times and are appropriate for
-latency-sensitive applications (trading systems, real-time processing) where any noticeable pause is
-unacceptable.
+Workloads. ZGC and Shenandoah target sub-millisecond pause times and are appropriate for
+Latency-sensitive applications (trading systems, real-time processing) where any noticeable pause is
+Unacceptable.
 
 **Diagnostics:**
 
@@ -1338,15 +1338,15 @@ The two JIT compilers are C1 (client compiler, optimized for fast startup and lo
 ```
 
 Tiered compilation starts with the interpreter, profiles the code, compiles hot methods with C1, and
-then recompiles the hottest methods with C2 after extensive profiling. Disabling tiered compilation
-entirely (`-XX:-TieredCompilation`) forces all compilation to go through C2, which increases peak
-throughput but significantly increases warmup time.
+Then recompiles the hottest methods with C2 after extensive profiling. Disabling tiered compilation
+Entirely (`-XX:-TieredCompilation`) forces all compilation to go through C2, which increases peak
+Throughput but significantly increases warmup time.
 
 ### Container Awareness
 
 Modern JVMs (Java 8u191+, Java 11+) automatically detect container limits (cgroups) and set default
-memory limits accordingly. Older JVMs ignore container limits and default to the host machine's
-total memory, which causes containers to be killed by the OOM killer:
+Memory limits accordingly. Older JVMs ignore container limits and default to the host machine's
+Total memory, which causes containers to be killed by the OOM killer:
 
 ```bash
 # Explicit container limits (if auto-detection is insufficient)
@@ -1357,7 +1357,19 @@ total memory, which causes containers to be killed by the OOM killer:
 :::warning
 Production Advice Never set `-XX:+AlwaysPreTouch` without understanding its implications.
 This flag touches every page in the heap at JVM startup, which forces the operating system to
-allocate physical memory for the entire heap immediately. It eliminates page fault pauses during
-runtime, but it delays startup and can cause the container to be killed if the memory limit is
-tight.
+Allocate physical memory for the entire heap immediately. It eliminates page fault pauses during
+Runtime, but it delays startup and can cause the container to be killed if the memory limit is
+Tight.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

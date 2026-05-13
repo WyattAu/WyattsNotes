@@ -7,8 +7,8 @@ slug: inheritance-polymorphism
 ## Inheritance
 
 Inheritance allows a class (subclass) to extend another class (superclass), acquiring its fields and
-methods. The `extends` keyword establishes an "is-a" relationship. Java supports **single class
-inheritance** — a class can extend exactly one superclass — but can implement multiple interfaces.
+Methods. The `extends` keyword establishes an "is-a" relationship. Java supports **single class
+Inheritance** — a class can extend exactly one superclass — but can implement multiple interfaces.
 
 ### The `extends` Keyword
 
@@ -48,9 +48,9 @@ public class Dog extends Animal {
 ### Method Overriding with `@Override`
 
 A subclass can override a non-final, non-static method of its superclass. The `@Override` annotation
-tells the compiler to verify that you are actually overriding a superclass method. If you misspell
-the method name or get the signature wrong, the compiler will report an error instead of silently
-creating an overloaded method.
+Tells the compiler to verify that you are actually overriding a superclass method. If you misspell
+The method name or get the signature wrong, the compiler will report an error instead of silently
+Creating an overloaded method.
 
 ```java
 public class Dog extends Animal {
@@ -69,15 +69,15 @@ public class Dog extends Animal {
 
 - The method must have the same name, return type, and parameter list.
 - The access level cannot be more restrictive (can widen, not narrow).
-- Cannot override `static`, `final`, or `private` methods (static methods are hidden, not
-  overridden).
+- Cannot override `static``final`Or `private` methods (static methods are hidden, not
+ overridden).
 - Cannot throw checked exceptions that are broader than the superclass method's exceptions (can
-  narrow, not widen).
+ narrow, not widen).
 
 ### The `super` Keyword
 
 `super` has two uses: calling a superclass constructor and accessing a superclass member (field or
-method).
+Method).
 
 ```java
 public class Labrador extends Dog {
@@ -100,7 +100,7 @@ public class Labrador extends Dog {
 
 The first statement of every constructor is either an explicit `super(...)` call or an implicit
 `super()` (no-arg constructor). If the superclass has no no-arg constructor, the subclass **must**
-explicitly call a superclass constructor with arguments.
+Explicitly call a superclass constructor with arguments.
 
 ```java
 public class Base {
@@ -124,8 +124,8 @@ public class Derived extends Base {
 ```
 
 Constructor execution order: superclass constructor runs first, then subclass fields are
-initialized, then subclass constructor body executes. This ensures that the superclass part of the
-object is fully constructed before the subclass adds its own state.
+Initialized, then subclass constructor body executes. This ensures that the superclass part of the
+Object is fully constructed before the subclass adds its own state.
 
 ```java
 public class A {
@@ -151,18 +151,18 @@ new B();
 
 ## Access Modifiers
 
-| Modifier          | Class | Package | Subclass | World |
+| Modifier | Class | Package | Subclass | World |
 | ----------------- | ----- | ------- | -------- | ----- |
-| `public`          | Yes   | Yes     | Yes      | Yes   |
-| `protected`       | Yes   | Yes     | Yes      | No    |
-| (package-private) | Yes   | Yes     | No       | No    |
-| `private`         | Yes   | No      | No       | No    |
+| `public` | Yes | Yes | Yes | Yes |
+| `protected` | Yes | Yes | Yes | No |
+| (package-private) | Yes | Yes | No | No |
+| `private` | Yes | No | No | No |
 
 ### Package-Private (Default Access)
 
 If you specify no access modifier, the member is accessible within the same package only. This is
-often the right choice for implementation details that should be shared among classes in the same
-package but hidden from external code.
+Often the right choice for implementation details that should be shared among classes in the same
+Package but hidden from external code.
 
 ```java
 class PackagePrivateClass { // accessible within same package only
@@ -173,7 +173,7 @@ class PackagePrivateClass { // accessible within same package only
 ### `protected` vs Package-Private
 
 `protected` grants access to subclasses **regardless of package**. This is a wider scope than many
-developers expect. Use `protected` only when subclasses genuinely need direct access to the member.
+Developers expect. Use `protected` only when subclasses genuinely need direct access to the member.
 
 ```java
 public class Base {
@@ -191,11 +191,11 @@ public class Base {
 ### Compile-Time vs Runtime Polymorphism
 
 **Compile-time polymorphism** (method overloading) — the compiler resolves which method to call
-based on the static types of the arguments at compile time.
+Based on the static types of the arguments at compile time.
 
 **Runtime polymorphism** (method overriding) — the JVM resolves which method to call based on the
-actual type of the object at runtime. This is the polymorphism that matters for the "is-a"
-relationship.
+Actual type of the object at runtime. This is the polymorphism that matters for the "is-a"
+Relationship.
 
 ```java
 Animal animal = new Dog("Rex", 3, "Shepherd");
@@ -208,13 +208,13 @@ animal.eat(); // Calls Dog.eat() — runtime dispatch
 ### Virtual Method Dispatch
 
 In Java, all non-static, non-final instance methods are **virtual** by default. When you call a
-method on an object reference, the JVM looks up the method in the object's actual class (not the
-declared type of the reference). This is called **dynamic dispatch** or **virtual method
-invocation**.
+Method on an object reference, the JVM looks up the method in the object's actual class (not the
+Declared type of the reference). This is called **dynamic dispatch** or **virtual method
+Invocation**.
 
 The JVM uses a vtable (virtual method table) to implement this efficiently. Each class has a vtable
-containing pointers to its virtual methods. When a subclass overrides a method, its vtable entry is
-replaced with a pointer to the overriding method.
+Containing pointers to its virtual methods. When a subclass overrides a method, its vtable entry is
+Replaced with a pointer to the overriding method.
 
 ```java
 public class Shape {
@@ -243,8 +243,8 @@ s.area(); // The JVM calls the correct area() based on the actual object type
 ### Dynamic Binding and `final`
 
 The `final` keyword on a method prevents overriding and allows the JIT compiler to devirtualize the
-call — it can inline the method at the call site because it knows no subclass will override it. This
-can improve performance in hot paths.
+Call — it can inline the method at the call site because it knows no subclass will override it. This
+Can improve performance in hot paths.
 
 ```java
 public class Point {
@@ -318,16 +318,16 @@ Use abstract classes when:
 - You want to share code among closely related classes (common fields, utility methods).
 - You need to declare fields that subclasses will use.
 - You want to use the template method pattern (base class defines the algorithm skeleton, subclasses
-  fill in steps).
+ fill in steps).
 - You need to control access to state (fields can be `private`).
 
 Abstract classes provide "is-a" semantics with shared implementation. Interfaces provide "can-do"
-semantics with no shared state (prior to Java 8).
+Semantics with no shared state (prior to Java 8).
 
 ## Interfaces
 
 An interface defines a contract that implementing classes must fulfill. Since Java 8, interfaces can
-have default methods, static methods, and (since Java 9) private methods.
+Have default methods, static methods, and (since Java 9) private methods.
 
 ### Interface Evolution
 
@@ -359,8 +359,8 @@ public interface Drawable {
 ### Functional Interfaces
 
 A functional interface has exactly one abstract method. It can be used as the target of a lambda
-expression. The `@FunctionalInterface` annotation is optional but recommended — the compiler will
-verify the constraint.
+Expression. The `@FunctionalInterface` annotation is optional but recommended — the compiler will
+Verify the constraint.
 
 ```java
 @FunctionalInterface
@@ -375,20 +375,20 @@ int len = lengthExtractor.transform("hello"); // 5
 
 Built-in functional interfaces in `java.util.function`:
 
-| Interface                 | Abstract Method   | Signature       |
+| Interface | Abstract Method | Signature |
 | ------------------------- | ----------------- | --------------- |
-| `Predicate&lt;T&gt;`      | `boolean test(T)` | T -&gt; boolean |
-| `Function&lt;T,R&gt;`     | `R apply(T)`      | T -&gt; R       |
-| `Consumer&lt;T&gt;`       | `void accept(T)`  | T -&gt; void    |
-| `Supplier&lt;T&gt;`       | `T get()`         | () -&gt; T      |
-| `UnaryOperator&lt;T&gt;`  | `T apply(T)`      | T -&gt; T       |
-| `BinaryOperator&lt;T&gt;` | `T apply(T, T)`   | (T,T) -&gt; T   |
-| `BiFunction&lt;T,U,R&gt;` | `R apply(T, U)`   | (T,U) -&gt; R   |
+| `Predicate&lt;T&gt;` | `boolean test(T)` | T -&gt; boolean |
+| `Function&lt;T,R&gt;` | `R apply(T)` | T -&gt; R |
+| `Consumer&lt;T&gt;` | `void accept(T)` | T -&gt; void |
+| `Supplier&lt;T&gt;` | `T get()` | () -&gt; T |
+| `UnaryOperator&lt;T&gt;` | `T apply(T)` | T -&gt; T |
+| `BinaryOperator&lt;T&gt;` | `T apply(T, T)` | (T,T) -&gt; T |
+| `BiFunction&lt;T,U,R&gt;` | `R apply(T, U)` | (T,U) -&gt; R |
 
 ### Multiple Inheritance of Interfaces
 
 A class can implement multiple interfaces. If two interfaces declare the same default method, the
-implementing class must resolve the conflict:
+Implementing class must resolve the conflict:
 
 ```java
 interface Walkable {
@@ -409,14 +409,14 @@ class Duck implements Walkable, Swimmable {
 ```
 
 If a class extends a superclass and implements an interface that both define a method with the same
-signature, the **superclass method wins** (class wins over interface). This is called "class-first"
-rule.
+Signature, the **superclass method wins** (class wins over interface). This is called "class-first"
+Rule.
 
 ## Composition Over Inheritance
 
 Inheritance creates tight coupling between superclass and subclass. Changes to the superclass can
-break subclasses in unexpected ways. Composition — building complex objects from simpler ones —
-provides flexibility and loose coupling.
+Break subclasses in unexpected ways. Composition — building complex objects from simpler ones —
+Provides flexibility and loose coupling.
 
 ```java
 // INHERITANCE — tight coupling
@@ -456,8 +456,8 @@ public class FlyingVehicle {
 ## Liskov Substitution Principle
 
 The Liskov Substitution Principle (LSP) states that if S is a subtype of T, then objects of type T
-may be replaced with objects of type S without altering any of the desirable properties of the
-program. In practical terms: a subclass must be usable anywhere the superclass is expected.
+May be replaced with objects of type S without altering any of the desirable properties of the
+Program. In practical terms: a subclass must be usable anywhere the superclass is expected.
 
 ```java
 // LSP VIOLATION
@@ -494,19 +494,19 @@ void resize(Rectangle r, int w, int h) {
 
 :::info
 The classic Rectangle/Square example demonstrates that behavioral subtyping is stricter than
-structural subtyping. Just because a class can be made to extend another does not mean it should. If
-a subclass must violate the superclass's contract to work correctly, use composition instead.
+Structural subtyping. Just because a class can be made to extend another does not mean it should. If
+A subclass must violate the superclass's contract to work correctly, use composition instead.
 :::
 
 ## SOLID Principles Overview
 
-| Principle                     | Guideline                                                           |
+| Principle | Guideline |
 | ----------------------------- | ------------------------------------------------------------------- |
-| **S** — Single Responsibility | A class should have only one reason to change.                      |
-| **O** — Open/Closed           | Open for extension, closed for modification.                        |
-| **L** — Liskov Substitution   | Subtypes must be substitutable for their base types.                |
+| **S** — Single Responsibility | A class should have only one reason to change. |
+| **O** — Open/Closed | Open for extension, closed for modification. |
+| **L** — Liskov Substitution | Subtypes must be substitutable for their base types. |
 | **I** — Interface Segregation | Prefer many specific interfaces over one general-purpose interface. |
-| **D** — Dependency Inversion  | Depend on abstractions, not concretions.                            |
+| **D** — Dependency Inversion | Depend on abstractions, not concretions. |
 
 ### Single Responsibility Example
 
@@ -625,7 +625,7 @@ public String describe(Object obj) {
 
 - Case labels are matched top-to-bottom. More specific patterns must come before more general ones.
 - The `null` case must come first (or be handled with a nullable pattern `case String s` which
-  matches non-null strings).
+ matches non-null strings).
 - A `default` case is required if the switch expression does not cover all possible values.
 - Guards (`when` clauses) refine pattern matching with boolean conditions.
 
@@ -652,7 +652,7 @@ public double area(Shape shape) {
 ## Sealed Classes for Restricted Hierarchies
 
 Sealed classes (JDK 17) restrict which classes can extend or implement them. This enables the
-compiler to verify exhaustive pattern matching.
+Compiler to verify exhaustive pattern matching.
 
 ```java
 public sealed class Expr
@@ -681,10 +681,10 @@ public non-sealed class Multiply extends Expr {
 **Permitted subclass rules:**
 
 - The permitted subclasses must be in the same module (if the sealed class is in a named module) or
-  the same package (if in the unnamed module).
-- Permitted subclasses must use one of: `final`, `sealed`, or `non-sealed`.
+ the same package (if in the unnamed module).
+- Permitted subclasses must use one of: `final``sealed`Or `non-sealed`.
 - The sealed class and its permitted subclasses must co-compile (or be in the same compilation
-  unit).
+ unit).
 
 ## Record Patterns
 
@@ -721,7 +721,7 @@ static void printGeometry(Object obj) {
 ### Nested Record Patterns
 
 Record patterns can be nested arbitrarily deep, allowing you to match the internal structure of
-complex data:
+Complex data:
 
 ```java
 // Deep nesting
@@ -734,8 +734,8 @@ if (r instanceof Rectangle(
 
 :::info
 Record patterns work with any record class. The pattern variables are inferred from the
-record components. You can use `var` for type inference or specify the exact type. The number of
-pattern components must match the number of record components.
+Record components. You can use `var` for type inference or specify the exact type. The number of
+Pattern components must match the number of record components.
 :::
 
 ## Common Pitfalls
@@ -796,9 +796,9 @@ new Derived(); // throws NullPointerException
 
 :::warning
 Never call an overridable method from a constructor. The subclass constructor has not yet
-run, so its fields are uninitialized. If the overridden method accesses subclass fields, you get
+Run, so its fields are uninitialized. If the overridden method accesses subclass fields, you get
 `NullPointerException` or incorrect behavior. Mark the method `final` or `private` if you must call
-it from a constructor.
+It from a constructor.
 :::
 
 ### `instanceof` and `null`
@@ -830,14 +830,14 @@ Derived.describe(); // "Derived" — static dispatch, not virtual
 ```
 
 Static method dispatch is based on the declared type, not the actual object type. There is no
-polymorphism for static methods. This is why hiding static methods is almost always a mistake — it
-creates confusion.
+Polymorphism for static methods. This is why hiding static methods is almost always a mistake — it
+Creates confusion.
 
 ### Fragile Base Class Problem
 
 Changes to a superclass can silently break subclasses. If a new method is added to the superclass
-with the same name as a method in the subclass, the subclass method becomes an overload instead of
-an override:
+With the same name as a method in the subclass, the subclass method becomes an overload instead of
+An override:
 
 ```java
 // Version 1 of library
@@ -863,7 +863,7 @@ public class Base {
 ### Using Inheritance for Code Reuse Only
 
 If you extend a class solely to reuse its methods but there is no genuine "is-a" relationship, you
-are misusing inheritance. Use composition with delegation instead:
+Are misusing inheritance. Use composition with delegation instead:
 
 ```java
 // WRONG — Stack is NOT a List (you don't want random access, iteration at arbitrary positions)
@@ -882,3 +882,10 @@ public class Stack&lt;E&gt; {
 }
 ```
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

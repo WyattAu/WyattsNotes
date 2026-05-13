@@ -13,22 +13,22 @@ slug: platform-integration
 ## Why Platform Integration
 
 Flutter provides a rich set of widgets and plugins, but some capabilities require direct interaction
-with the underlying operating system. The device's camera, GPS receiver, Bluetooth radio,
-accelerometer, file system, biometric hardware, and notification system are all accessed through
-native platform APIs (Android's Java/Kotlin APIs, iOS's Objective-C/Swift APIs). Flutter's sandbox
-isolates Dart code from these native APIs, so a bridge mechanism is needed.
+With the underlying operating system. The device's camera, GPS receiver, Bluetooth radio,
+Accelerometer, file system, biometric hardware, and notification system are all accessed through
+Native platform APIs (Android's Java/Kotlin APIs, iOS's Objective-C/Swift APIs). Flutter's sandbox
+Isolates Dart code from these native APIs, so a bridge mechanism is needed.
 
 **Platform channels** are the fundamental bridge between Dart and native code. They allow
-bidirectional communication: Dart can invoke native methods and receive results, and native code can
-send messages or streams of events back to Dart.
+Bidirectional communication: Dart can invoke native methods and receive results, and native code can
+Send messages or streams of events back to Dart.
 
 The platform channel architecture uses a message-passing model. Data is serialized using a standard
-codec (typically the `StandardMethodCodec`, which supports null, booleans, numbers, strings, byte
-buffers, lists, and maps), transmitted across the platform channel, and deserialized on the other
-side. This serialization/deserialization is handled automatically for standard types.
+Codec ( the `StandardMethodCodec`Which supports null, booleans, numbers, strings, byte
+Buffers, lists, and maps), transmitted across the platform channel, and deserialized on the other
+Side. This serialization/deserialization is handled automatically for standard types.
 
-Most common use cases are covered by existing Flutter packages (`camera`, `geolocator`,
-`shared_preferences`, `url_launcher`, etc.). Platform channels are needed when:
+Most common use cases are covered by existing Flutter packages (`camera``geolocator`
+`shared_preferences``url_launcher`Etc.). Platform channels are needed when:
 
 - No suitable plugin exists for the native API you need.
 - You need to integrate with a proprietary native SDK.
@@ -40,7 +40,7 @@ Most common use cases are covered by existing Flutter packages (`camera`, `geolo
 ## Platform Checks
 
 Before invoking platform-specific behavior, you often need to determine which platform your app is
-running on.
+Running on.
 
 ### Platform Class
 
@@ -65,7 +65,7 @@ if (Platform.isAndroid) {
 ### defaultTargetPlatform
 
 `defaultTargetPlatform` from `package:flutter/foundation.dart` returns a `TargetPlatform` enum. This
-is useful for choosing between Material and Cupertino widgets:
+Is useful for choosing between Material and Cupertino widgets:
 
 ```dart
 import 'package:flutter/foundation.dart';
@@ -83,8 +83,8 @@ if (isApple) {
 ### Theme.of(context).platform
 
 `Theme.of(context).platform` returns the platform that the current theme is targeting. This can
-differ from the actual platform — for example, an Android user might prefer iOS-style UI. The
-theme's platform value respects the user's preference:
+Differ from the actual platform — for example, an Android user might prefer iOS-style UI. The
+Theme's platform value respects the user's preference:
 
 ```dart
 final platform = Theme.of(context).platform;
@@ -101,20 +101,20 @@ if (platform == TargetPlatform.iOS) {
 Platform checks are necessary for several reasons:
 
 - **UI conventions**: Material Design and Cupertino (iOS Human Interface Guidelines) have different
-  patterns for navigation bars, dialogs, date pickers, and scroll physics.
+ patterns for navigation bars, dialogs, date pickers, and scroll physics.
 - **Feature availability**: Some APIs are only available on certain platforms. The camera plugin,
-  for instance, does not work on desktop without a webcam. Biometric authentication works
-  differently (or not at all) across platforms.
+ for instance, does not work on desktop without a webcam. Biometric authentication works
+ differently (or not at all) across platforms.
 - **Permission models**: Android and iOS have different permission request flows. Android uses a
-  runtime permission model, while iOS requires `Info.plist` entries with usage descriptions.
+ runtime permission model, while iOS requires `Info.plist` entries with usage descriptions.
 - **File system layout**: Android and iOS store app data in different directory structures. Android
-  uses `/data/data/<package>/`, while iOS uses the sandbox's `Documents/` and `Library/`
-  directories.
+ uses `/data/data/<package>/`While iOS uses the sandbox's `Documents/` and `Library/`
+ directories.
 
 ### kIsWeb
 
 On the web platform, `dart:io` is not available. Use `kIsWeb` from `package:flutter/foundation.dart`
-to check for the web platform before importing `dart:io`:
+To check for the web platform before importing `dart:io`:
 
 ```dart
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -130,7 +130,7 @@ if (kIsWeb) {
 ```
 
 A cleaner pattern is to isolate platform-specific code into separate files using conditional
-imports:
+Imports:
 
 ```dart
 // platform_info.dart
@@ -142,8 +142,8 @@ export 'platform_info_mobile.dart' if (dart.library.html) 'platform_info_web.dar
 ## MethodChannel
 
 `MethodChannel` is the primary mechanism for invoking native methods from Dart and receiving
-results. It follows a request-response model: Dart sends a method call with optional arguments, the
-native side handles it and returns a result.
+Results. It follows a request-response model: Dart sends a method call with optional arguments, the
+Native side handles it and returns a result.
 
 ### Setup
 
@@ -173,7 +173,7 @@ class BatteryService {
 ```
 
 `invokeMethod` returns a `Future<T>`. The type parameter `T` is the expected return type. If the
-native side returns a different type, a cast error occurs at runtime.
+Native side returns a different type, a cast error occurs at runtime.
 
 ### Passing Arguments
 
@@ -269,19 +269,19 @@ import UIKit
 
 The `StandardMethodCodec` automatically serializes the following types between Dart and native:
 
-| Dart        | Android (Kotlin) | iOS (Swift)                        |
+| Dart | Android (Kotlin) | iOS (Swift) |
 | ----------- | ---------------- | ---------------------------------- |
-| `null`      | `null`           | `NSNull()`                         |
-| `bool`      | `Boolean`        | `NSNumber(value: bool)`            |
-| `int`       | `Int` / `Long`   | `NSNumber(value: Int)`             |
-| `double`    | `Double`         | `NSNumber(value: Double)`          |
-| `String`    | `String`         | `NSString`                         |
-| `Uint8List` | `ByteArray`      | `FlutterStandardTypedData(bytes:)` |
-| `List`      | `List`           | `NSArray`                          |
-| `Map`       | `HashMap`        | `NSDictionary`                     |
+| `null` | `null` | `NSNull()` |
+| `bool` | `Boolean` | `NSNumber(value: bool)` |
+| `int` | `Int` / `Long` | `NSNumber(value: Int)` |
+| `double` | `Double` | `NSNumber(value: Double)` |
+| `String` | `String` | `NSString` |
+| `Uint8List` | `ByteArray` | `FlutterStandardTypedData(bytes:)` |
+| `List` | `List` | `NSArray` |
+| `Map` | `HashMap` | `NSDictionary` |
 
 Complex nested structures (maps containing lists of maps, etc.) are supported as long as the leaf
-values are one of the above types.
+Values are one of the above types.
 
 ### Return Values
 
@@ -289,7 +289,7 @@ The native side has three ways to respond:
 
 - **`result.success(value)`**: Return a successful result.
 - **`result.error(code, message, details)`**: Return an error. This causes a `PlatformException` on
-  the Dart side.
+ the Dart side.
 - **`result.notImplemented()`**: Indicate the method is not recognized.
 
 ### Error Handling
@@ -310,7 +310,7 @@ try {
 ```
 
 `MissingPluginException` is thrown when the native side does not have a handler for the channel
-name. This typically happens when running on a platform where the plugin has not been implemented
+Name. This happens when running on a platform where the plugin has not been implemented
 (e.g., desktop) or when the plugin registration is missing.
 
 ---
@@ -318,7 +318,7 @@ name. This typically happens when running on a platform where the plugin has not
 ## EventChannel
 
 `EventChannel` is designed for streaming data from native to Dart. While `MethodChannel` follows a
-request-response model, `EventChannel` establishes a continuous stream of events — similar to a Dart
+Request-response model, `EventChannel` establishes a continuous stream of events — similar to a Dart
 `Stream`.
 
 ### Setup (Dart Side)
@@ -340,8 +340,8 @@ class SensorService {
 }
 ```
 
-`receiveBroadcastStream()` returns a `Stream<dynamic>`. You typically map or cast the events to the
-expected type.
+`receiveBroadcastStream()` returns a `Stream<dynamic>`. You map or cast the events to the
+Expected type.
 
 ### Consuming the Stream
 
@@ -468,21 +468,21 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
 
 ### EventChannel Lifecycle
 
-When Dart calls `receiveBroadcastStream()`, the channel sends a "listen" signal to the native side,
-triggering `onListen`. The native side should start producing events and pushing them through
+When Dart calls `receiveBroadcastStream()`The channel sends a "listen" signal to the native side,
+Triggering `onListen`. The native side should start producing events and pushing them through
 `EventSink.success()`. When all Dart listeners are cancelled (via `StreamSubscription.cancel()`),
-the channel sends a "cancel" signal, triggering `onCancel`. The native side should clean up
-resources.
+The channel sends a "cancel" signal, triggering `onCancel`. The native side should clean up
+Resources.
 
 If an error occurs on the native side, call `EventSink.error(code, message, details)` to send an
-error event through the stream. On the Dart side, this triggers the stream's `onError` handler.
+Error event through the stream. On the Dart side, this triggers the stream's `onError` handler.
 
 ---
 
 ## BasicMessageChannel
 
 `BasicMessageChannel` is the simplest form of platform channel. It supports asynchronous,
-bidirectional string or structured message passing. It does not have the method-name semantics of
+Bidirectional string or structured message passing. It does not have the method-name semantics of
 `MethodChannel` or the stream semantics of `EventChannel`.
 
 ### Setup and Usage
@@ -535,34 +535,34 @@ Use `BasicMessageChannel` when:
 
 Use `MethodChannel` when:
 
-- You have distinct named operations (e.g., `getBatteryLevel`, `openCamera`).
+- You have distinct named operations (e.g., `getBatteryLevel``openCamera`).
 - You need structured error handling with error codes.
 - You want the method-call semantics that `MethodChannel` provides.
 
 In practice, `MethodChannel` is far more common. `BasicMessageChannel` is used in a small number of
-plugins that need a simple bidirectional pipe.
+Plugins that need a simple bidirectional pipe.
 
 ---
 
 ## Pigeon
 
 Pigeon is a code generation tool that produces type-safe platform channel bindings. Instead of
-manually writing `MethodChannel` calls on the Dart side and handlers on the native side, you define
-your API in a Dart file and Pigeon generates the corresponding code for all platforms.
+Manually writing `MethodChannel` calls on the Dart side and handlers on the native side, you define
+Your API in a Dart file and Pigeon generates the corresponding code for all platforms.
 
 ### Why Pigeon
 
 Manual platform channels have several problems:
 
 - **No type safety**: Method names and argument types are strings checked at runtime. A typo in the
-  method name or a type mismatch causes a crash.
+ method name or a type mismatch causes a crash.
 - **Boilerplate**: Every method requires matching code in Dart, Kotlin, and Swift.
 - **Codec mismatches**: Serializing complex types (enums, nested objects) requires manual mapping on
-  each side.
+ each side.
 - **No compile-time validation**: Errors are only caught when the channel is invoked at runtime.
 
 Pigeon solves all of these by generating type-safe, compile-time-checked code from a single source
-of truth.
+Of truth.
 
 ### Defining the API
 
@@ -604,11 +604,11 @@ abstract class SearchCallback {
 ### Annotations
 
 - **`@HostApi()`**: Methods defined here are invoked from Dart and executed on the host (native)
-  platform. The native side implements these methods.
+ platform. The native side implements these methods.
 - **`@FlutterApi()`**: Methods defined here are invoked from the native side and executed in Dart.
-  The Dart side implements these methods.
+ The Dart side implements these methods.
 - **`@async`**: Marks a method as asynchronous. On the native side, the generated code wraps the
-  call in a coroutine (Kotlin) or completion handler (Swift).
+ call in a coroutine (Kotlin) or completion handler (Swift).
 
 ### Running Code Generation
 
@@ -689,28 +689,28 @@ class SearchApiImpl: SearchApi {
 ### Advantages of Pigeon
 
 1. **Type safety**: All method names, parameter types, and return types are checked at compile time.
-   A typo in a method name is a compile error, not a runtime crash.
+ A typo in a method name is a compile error, not a runtime crash.
 2. **Less boilerplate**: No need to manually serialize/deserialize arguments or write
-   `when`/`switch` dispatchers on the native side.
+ `when`/`switch` dispatchers on the native side.
 3. **Enum and nested object support**: Pigeon generates code for enums and complex nested data
-   classes automatically.
+ classes automatically.
 4. **Consistency**: The generated code ensures that Dart and native sides stay in sync. If you
-   change the API definition and re-run Pigeon, any mismatched implementations produce compile
-   errors.
+ change the API definition and re-run Pigeon, any mismatched implementations produce compile
+ errors.
 5. **Documentation**: The single API definition file serves as the contract documentation between
-   Dart and native.
+ Dart and native.
 
 ---
 
 ## Async Communication
 
 Platform channels are inherently asynchronous. Understanding the async model is critical for correct
-usage.
+Usage.
 
 ### invokeMethod Returns a Future
 
 Every call to `invokeMethod` returns a `Future`. The Dart event loop continues while the native side
-processes the request:
+Processes the request:
 
 ```dart
 Future<void> fetchUserData() async {
@@ -729,8 +729,8 @@ UI thread (the Dart isolate's event loop remains responsive).
 ### Handling Long-Running Native Operations
 
 If the native operation is long-running (e.g., a network request, file download, or image
-processing), the native side should perform the work asynchronously and call `result.success()` when
-done:
+Processing), the native side should perform the work asynchronously and call `result.success()` when
+Done:
 
 ```kotlin
 setMethodCallHandler { call, result ->
@@ -806,10 +806,10 @@ setMethodCallHandler { call, result ->
 
 ### Backpressure
 
-If you send many messages in rapid succession via `MethodChannel`, the platform channel does not
-provide built-in backpressure. Each `invokeMethod` call creates a pending message. If the native
-side cannot keep up, messages queue up in memory. For high-frequency data (sensor data, video
-frames), use `EventChannel` instead, which is designed for streaming.
+If you send many messages in rapid succession via `MethodChannel`The platform channel does not
+Provide built-in backpressure. Each `invokeMethod` call creates a pending message. If the native
+Side cannot keep up, messages queue up in memory. For high-frequency data (sensor data, video
+Frames), use `EventChannel` instead, which is designed for streaming.
 
 ---
 
@@ -858,7 +858,7 @@ final subscription = ConnectivityService.onConnectivityChanged.listen((connected
 
 ### Device Info
 
-Device information is typically a one-time request:
+Device information is a one-time request:
 
 ```dart
 class DeviceInfoService {
@@ -874,7 +874,7 @@ class DeviceInfoService {
 ### File Picking
 
 File picking involves both method calls (to open the picker) and potentially events (for ongoing
-file operations). In practice, use the `file_picker` package rather than implementing this yourself:
+File operations). In practice, use the `file_picker` package rather than implementing this yourself:
 
 ```dart
 // Using file_picker package
@@ -954,7 +954,7 @@ In practice, use the `share_plus` package for sharing, which handles all platfor
 ## Testing Platform Channels
 
 Testing platform channel code requires mocking the channel to avoid depending on the actual native
-platform during unit tests.
+Platform during unit tests.
 
 ### Mocking MethodChannel in Unit Tests
 
@@ -1041,7 +1041,7 @@ setUp(() {
 ```
 
 For EventChannel, a more practical approach is to abstract the stream behind an injectable service
-interface and mock the service directly:
+Interface and mock the service directly:
 
 ```dart
 abstract class SensorDataSource {
@@ -1082,8 +1082,8 @@ void main() {
 ### Integration Testing with Platform Views
 
 In integration tests that run on a real device or emulator, platform channels work normally — the
-test binary runs alongside the native code. No mocking is needed. However, you must handle the
-asynchronous nature of platform calls:
+Test binary runs alongside the native code. No mocking is needed. However, you must handle the
+Asynchronous nature of platform calls:
 
 ```dart
 testWidgets('battery level displays correctly', (tester) async {
@@ -1100,8 +1100,8 @@ testWidgets('battery level displays correctly', (tester) async {
 ### Testing Pigeon-Generated Code
 
 Pigeon-generated code is easier to test because the generated Dart API is a plain class that accepts
-a `BinaryMessenger`. You can mock the messenger the same way as with manual channels, or you can
-abstract the Pigeon API behind an interface:
+A `BinaryMessenger`. You can mock the messenger the same way as with manual channels, or you can
+Abstract the Pigeon API behind an interface:
 
 ```dart
 abstract class SearchDataSource {
@@ -1128,29 +1128,29 @@ class PigeonSearchDataSource implements SearchDataSource {
 ### Not Running on the Main Thread
 
 Platform channel handlers are invoked on the platform's main (UI) thread by default. If you block
-this thread with a long-running operation, the app's UI will freeze. Always offload heavy
-computation to a background thread and call `result.success()` back on the main thread.
+This thread with a long-running operation, the app's UI will freeze. Always offload heavy
+Computation to a background thread and call `result.success()` back on the main thread.
 
 ### Missing Plugin Registration
 
 If you see `MissingPluginException` at runtime, it means the native side has not registered a
-handler for the channel name. Common causes:
+Handler for the channel name. Common causes:
 
 - Forgetting to add `setMethodCallHandler` in `MainActivity` or `AppDelegate`.
 - The plugin is not included in the `pubspec.yaml` dependencies.
 - After adding a new plugin, you did not stop and re-run the app (hot restart is insufficient for
-  native code changes).
+ native code changes).
 
 ### Not Disposing EventChannel Subscriptions
 
 Forgetting to cancel `StreamSubscription` objects from `EventChannel` leads to:
 
 - Memory leaks: The subscription holds a reference to the Dart callback, preventing garbage
-  collection.
+ collection.
 - Native resource leaks: The native `onListen` handler registered listeners that are never cleaned
-  up because `onCancel` is never called.
+ up because `onCancel` is never called.
 - Duplicate streams: If the widget is rebuilt and creates a new subscription without cancelling the
-  old one, events are delivered multiple times.
+ old one, events are delivered multiple times.
 
 Always cancel in `dispose()`:
 
@@ -1165,8 +1165,8 @@ void dispose() {
 ### Type Mismatches in Serialization
 
 The `StandardMethodCodec` supports a fixed set of types. Passing unsupported types (custom Dart
-classes, closures, `BigInt`) causes a serialization error. Always convert to supported types before
-sending:
+Classes, closures, `BigInt`) causes a serialization error. Always convert to supported types before
+Sending:
 
 ```dart
 // Wrong: DateTime is not a supported type
@@ -1196,26 +1196,34 @@ Or use conditional imports to avoid the issue entirely.
 `PlatformException` includes a `code` field that varies by platform. Android might return
 `'PERMISSION_DENIED'` while iOS returns `'PERMISSION_NOT_GRANTED'` for the same logical error.
 Always handle both platform-specific codes and provide a user-friendly fallback for unrecognized
-codes.
+Codes.
 
 ### Channel Name Collisions
 
 Channel names are global to the application. If two plugins use the same channel name, messages are
-routed unpredictably. Always use a unique, namespaced channel name (e.g.,
+Routed unpredictably. Always use a unique, namespaced channel name (e.g.,
 `com.company.app.purpose`). This is especially important when using multiple third-party plugins
-that might have naming conflicts.
+That might have naming conflicts.
 
 ### Not Handling nil/Null Correctly
 
 On iOS, Swift optionals map to null in Dart. If the native side passes `nil` where Dart expects a
-non-null value, a cast error occurs. Always handle nullability on both sides. In Kotlin, Java's
+Non-null value, a cast error occurs. Always handle nullability on both sides. In Kotlin, Java's
 `null` maps to Dart's `null` transparently, but Kotlin's non-nullable types do not prevent `null`
-from being sent through the channel if the caller bypasses the type system.
+From being sent through the channel if the caller bypasses the type system.
 
 ### Overusing Platform Channels
 
 Before writing a platform channel, check if an existing Flutter package already provides the
-functionality. The Flutter ecosystem has thousands of plugins covering most common needs. Writing
-and maintaining custom platform channels across Android, iOS, macOS, Windows, and Linux is a
-significant maintenance burden. Use Pigeon if you must write custom channels to reduce the
-boilerplate and type-safety risks.
+Functionality. The Flutter ecosystem has thousands of plugins covering most common needs. Writing
+And maintaining custom platform channels across Android, iOS, macOS, Windows, and Linux is a
+Significant maintenance burden. Use Pigeon if you must write custom channels to reduce the
+Boilerplate and type-safety risks.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

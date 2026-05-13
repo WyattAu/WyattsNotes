@@ -29,12 +29,12 @@ val result = if (x > 0) {
 ```
 
 Using `if` as an expression requires both branches to return compatible types. Using it as a
-statement (as in Java) works without this constraint.
+Statement (as in Java) works without this constraint.
 
 ## when Expression
 
 `when` is Kotlin's replacement for the Java `switch` statement. It is an expression by default and
-supports arbitrary conditions, not just constant matching.
+Supports arbitrary conditions, not just constant matching.
 
 ### Basic Matching
 
@@ -51,7 +51,7 @@ val description = when (x) {
 ### Exhaustiveness
 
 When used as an expression, `when` must be exhaustive. If all cases are covered, the `else` branch
-is not required. With `sealed` classes or `enum` classes, the compiler verifies exhaustiveness.
+Is not required. With `sealed` classes or `enum` classes, the compiler verifies exhaustiveness.
 
 ```kotlin
 enum class Color { RED, GREEN, BLUE }
@@ -103,7 +103,7 @@ val result = when {
 ## for Loops
 
 Kotlin's `for` loop iterates over anything that provides an `iterator()` -- this includes ranges,
-collections, arrays, and sequences.
+Collections, arrays, and sequences.
 
 ### Range Iteration
 
@@ -214,7 +214,7 @@ outer@ for (i in 1..3) {
 ### Labeled Returns in Lambdas
 
 A `return` inside a lambda returns from the enclosing function, not just the lambda. Use a label to
-return from the lambda itself.
+Return from the lambda itself.
 
 ```kotlin
 fun findFirstEven(list: List<Int>): Int? {
@@ -232,8 +232,8 @@ fun findFirstEvenLambda(list: List<Int>): Int? {
 }
 ```
 
-In practice, prefer using `firstOrNull`, `find`, or other standard library functions over manual
-iteration with labeled returns.
+In practice, prefer using `firstOrNull``find`Or other standard library functions over manual
+Iteration with labeled returns.
 
 ### Implicit Labels
 
@@ -250,7 +250,7 @@ fun foo() {
 
 ## try/catch as Expression
 
-Like `if` and `when`, `try/catch` is an expression in Kotlin.
+Like `if` and `when``try/catch` is an expression in Kotlin.
 
 ```kotlin
 val result: Int = try {
@@ -265,7 +265,7 @@ val result: Int = try {
 ## Exception Handling
 
 Kotlin does not have checked exceptions. All exceptions are unchecked. This is a deliberate design
-decision to avoid the verbosity and abuse patterns seen with Java checked exceptions.
+Decision to avoid the verbosity and abuse patterns seen with Java checked exceptions.
 
 ```kotlin
 fun readConfig(path: String): Config {
@@ -285,7 +285,7 @@ fun divide(a: Int, b: Int): Double {
 ```
 
 The `Nothing` type represents a value that never exists. Functions that always throw have return
-type `Nothing`:
+Type `Nothing`:
 
 ```kotlin
 fun fail(message: String): Nothing {
@@ -298,8 +298,16 @@ val result: String = fail("unreachable")  // type-checks because Nothing is a su
 ## Common Pitfalls
 
 - \*\* Forgetting that `when` used as an expression must be exhaustive. If you add a new case to a
-  sealed class or enum, the compiler will flag all non-exhaustive `when` expressions.
+ sealed class or enum, the compiler will flag all non-exhaustive `when` expressions.
 - \*\* Using `return` inside a lambda expecting to return from the lambda. Use labeled returns or
-  restructure with standard library functions.
+ restructure with standard library functions.
 - \*\* Creating ranges with `..` that are accidentally empty. `10..1` is empty; use `10 downTo 1`.
 - \*\* Assuming `for (i in range)` mutates `i`. The loop variable is a new `val` on each iteration.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

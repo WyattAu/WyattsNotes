@@ -11,9 +11,9 @@ hide_table_of_contents: true
 
 | Diagnostic File | Topics Covered | Source Files |
 |---|---|---|
-| `diag-atomic-structure.md` | Electron configuration, quantum numbers, isotopes, ionisation energy | `atomic-structure-and-periodicity.md`, `atomic-theory.md` |
-| `diag-periodicity.md` | Periodic trends, electronegativity, atomic/ionic radii, ionisation energy anomalies | `periodicity.md`, `atomic-structure-and-periodicity.md` |
-| `diag-chemical-bonding.md` | VSEPR, hybridisation, intermolecular forces, bond polarity, solubility | `chemical-bonding-advanced.md`, `states-of-matter.md` |
+| `diag-atomic-structure.md` | Electron configuration, quantum numbers, isotopes, ionisation energy | `atomic-structure-and-periodicity.md``atomic-theory.md` |
+| `diag-periodicity.md` | Periodic trends, electronegativity, atomic/ionic radii, ionisation energy anomalies | `periodicity.md``atomic-structure-and-periodicity.md` |
+| `diag-chemical-bonding.md` | VSEPR, hybridisation, intermolecular forces, bond polarity, solubility | `chemical-bonding-advanced.md``states-of-matter.md` |
 | `diag-states-of-matter.md` | Gas laws, ideal gas deviations, Maxwell-Boltzmann, phase diagrams | `states-of-matter.md` |
 | `diag-acids-bases.md` | pH calculations, buffers, Ka/Kb, polyprotic acids, titration curves | `acids-bases-advanced.md` |
 | `diag-redox.md` | Oxidation numbers, balancing equations, electrochemical cells, Nernst equation | `redox-advanced.md` |

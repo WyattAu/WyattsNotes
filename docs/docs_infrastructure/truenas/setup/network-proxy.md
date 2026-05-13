@@ -14,7 +14,7 @@ slug: network-proxy
 
 - Obtain a DDNS domain (cloudflare, duckDNS, etc)
 - Dockge or portainer (prefered to install with custom docker compose as the app image from catalog
-  cause the Nginx Proxy Manager SSL certificate request to malfunction)
+ cause the Nginx Proxy Manager SSL certificate request to malfunction)
 - ISP port 443 and 80 being opened
 - Docker compose file, similar to the following:
 
@@ -106,3 +106,15 @@ networks:
     name: npm-network
     driver: bridge
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

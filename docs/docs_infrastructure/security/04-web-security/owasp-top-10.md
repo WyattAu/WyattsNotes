@@ -7,7 +7,7 @@ slug: owasp-top-10
 ## A01: Broken Access Control
 
 Broken access control is the most critical web application security risk. It occurs when users can
-act outside their intended permissions.
+Act outside their intended permissions.
 
 ### IDOR (Insecure Direct Object Reference)
 
@@ -79,18 +79,18 @@ def download():
 
 ### Detection and Remediation
 
-| Method                | Tool / Approach                      |
+| Method | Tool / Approach |
 | --------------------- | ------------------------------------ |
-| Automated scanning    | OWASP ZAP, Burp Suite Pro            |
-| Manual testing        | Modify IDs, roles, paths in requests |
-| Code review           | Check for missing authorization      |
-| Access control matrix | Document and test all routes         |
+| Automated scanning | OWASP ZAP, Burp Suite Pro |
+| Manual testing | Modify IDs, roles, paths in requests |
+| Code review | Check for missing authorization |
+| Access control matrix | Document and test all routes |
 
 :::tip
 
 Implement access control as a framework-level middleware, not per-route. Every route should require
-authentication by default, with explicit opt-in for public routes. This prevents the most common
-access control bug: forgetting to add `@require_auth` to a new route.
+Authentication by default, with explicit opt-in for public routes. This prevents the most common
+Access control bug: forgetting to add `@require_auth` to a new route.
 
 :::
 
@@ -162,12 +162,12 @@ server {
 
 ### Detection and Remediation
 
-| Method                 | Approach                                             |
+| Method | Approach |
 | ---------------------- | ---------------------------------------------------- |
-| Credential scanning    | TruffleHog, git-secrets, detect-secrets              |
-| TLS configuration      | SSL Labs, testssl.sh, nmap --script ssl-enum-ciphers |
-| Password storage audit | Code review for hashing algorithm used               |
-| Transport security     | Verify TLS 1.2+, HSTS, no mixed content              |
+| Credential scanning | TruffleHog, git-secrets, detect-secrets |
+| TLS configuration | SSL Labs, testssl.sh, nmap --script ssl-enum-ciphers |
+| Password storage audit | Code review for hashing algorithm used |
+| Transport security | Verify TLS 1.2+, HSTS, no mixed content |
 
 ## A03: Injection
 
@@ -237,17 +237,17 @@ ldap_filter = f"(uid={safe_username})"
 
 ### Detection and Remediation
 
-| Method                | Tool / Approach                                       |
+| Method | Tool / Approach |
 | --------------------- | ----------------------------------------------------- |
-| Automated scanning    | SQLMap, OWASP ZAP, Burp Suite                         |
-| SAST                  | Semgrep, CodeQL, Bandit (Python)                      |
+| Automated scanning | SQLMap, OWASP ZAP, Burp Suite |
+| SAST | Semgrep, CodeQL, Bandit (Python) |
 | Parameterized queries | Use prepared statements for ALL database interactions |
-| Input validation      | Whitelist allowed characters/values                   |
+| Input validation | Whitelist allowed characters/values |
 
 ## A04: Insecure Design
 
 Insecure design refers to fundamental flaws in the application's architecture and design, as opposed
-to implementation bugs.
+To implementation bugs.
 
 ### Missing Threat Modeling
 
@@ -277,12 +277,12 @@ Secure design checklist:
 
 ### Detection and Remediation
 
-| Method                | Approach                                         |
+| Method | Approach |
 | --------------------- | ------------------------------------------------ |
-| Threat modeling       | STRIDE, DREAD, attack trees                      |
-| Abuse cases           | Define what an attacker SHOULD NOT be able to do |
-| Security requirements | NIST SP 800-53, OWASP ASVS                       |
-| Design review         | Security-focused architecture review             |
+| Threat modeling | STRIDE, DREAD, attack trees |
+| Abuse cases | Define what an attacker SHOULD NOT be able to do |
+| Security requirements | NIST SP 800-53, OWASP ASVS |
+| Design review | Security-focused architecture review |
 
 ## A05: Security Misconfiguration
 
@@ -337,12 +337,12 @@ def handle_error(e):
 
 ### Detection and Remediation
 
-| Method                  | Approach                         |
+| Method | Approach |
 | ----------------------- | -------------------------------- |
-| Configuration audit     | CIS benchmarks, SCAP             |
-| Directory/file scanning | DirBuster, gobuster, ffuf        |
-| Header scanning         | SecurityHeaders.com, Observatory |
-| Automated compliance    | InSpec, Open Policy Agent        |
+| Configuration audit | CIS benchmarks, SCAP |
+| Directory/file scanning | DirBuster, gobuster, ffuf |
+| Header scanning | SecurityHeaders.com, Observatory |
+| Automated compliance | InSpec, Open Policy Agent |
 
 ## A06: Vulnerable and Outdated Components
 
@@ -435,14 +435,14 @@ def login():
 
 ### Brute Force Prevention
 
-| Defense                     | Implementation                         |
+| Defense | Implementation |
 | --------------------------- | -------------------------------------- |
-| Rate limiting               | Per-IP and per-account limits          |
-| Account lockout             | Temporary lock after N failed attempts |
-| CAPTCHA                     | After N failed attempts                |
-| MFA                         | TOTP, WebAuthn, push notification      |
-| Progressive delay           | Exponential backoff on failed attempts |
-| Breached password detection | Check against HaveIBeenPwned API       |
+| Rate limiting | Per-IP and per-account limits |
+| Account lockout | Temporary lock after N failed attempts |
+| CAPTCHA | After N failed attempts |
+| MFA | TOTP, WebAuthn, push notification |
+| Progressive delay | Exponential backoff on failed attempts |
+| Breached password detection | Check against HaveIBeenPwned API |
 
 ### Session Fixation
 
@@ -647,7 +647,7 @@ if parsed.scheme not in ('http', 'https'):
 
 Web Application Firewalls are defense-in-depth, not a substitute for secure coding. Attackers bypass
 WAFs with encoding tricks, chunked requests, and protocol-level manipulation. Fix the vulnerability,
-do not mask it.
+Do not mask it.
 
 ### Not Testing for All OWASP Categories
 
@@ -656,16 +656,24 @@ SSRF. Use a comprehensive testing methodology that covers all 10 categories.
 
 ### Ignoring Security Headers
 
-Missing security headers (`X-Content-Type-Options`, `X-Frame-Options`, `CSP`, `HSTS`) provides no
-defense against client-side attacks. Add them to every response.
+Missing security headers (`X-Content-Type-Options``X-Frame-Options``CSP``HSTS`) provides no
+Defense against client-side attacks. Add them to every response.
 
 ### Not Keeping Dependencies Updated
 
 Automated dependency scanning in CI/CD catches most known vulnerabilities. Not having this pipeline
-means you are flying blind. Integrate scanning into every pull request and deployment.
+Means you are flying blind. Integrate scanning into every pull request and deployment.
 
 ### Treating OWASP as a Checklist
 
 OWASP Top 10 is a awareness document, not a compliance checklist. It does not cover all
-vulnerabilities. Supplement with ASVS (Application Security Verification Standard), threat modeling,
-and regular penetration testing.
+Vulnerabilities. Supplement with ASVS (Application Security Verification Standard), threat modeling,
+And regular penetration testing.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

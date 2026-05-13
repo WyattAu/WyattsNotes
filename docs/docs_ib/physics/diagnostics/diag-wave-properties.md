@@ -77,7 +77,7 @@ New fundamental frequency: $f_1' = \frac{120}{3.0} = 40.0\,\text{Hz}$
 
 Percentage increase: $\frac{40.0 - 33.3}{33.3} \times 100 = 20.1\%$
 
-The student is wrong. Since $f \propto v \propto \sqrt{T}$, a $44\%$ increase in tension produces only a $\sqrt{1.44} - 1 = 1.20 - 1 = 20\%$ increase in frequency.
+The student is wrong. Since $f \propto v \propto \sqrt{T}$A $44\%$ increase in tension produces only a $\sqrt{1.44} - 1 = 1.20 - 1 = 20\%$ increase in frequency.
 
 ---
 
@@ -105,7 +105,7 @@ $$f = \frac{c}{\lambda_0} = \frac{3.0 \times 10^8}{550 \times 10^{-9}} = 5.45 \t
 
 (b) The frequency does NOT change when light enters a medium. The frequency is set by the source and remains constant. The wave equation $v = f\lambda$ shows that since $v$ decreases and $f$ stays the same, it is the **wavelength** that decreases. The student confused wavelength with frequency.
 
-(c) When light exits the glass back into vacuum, the wavelength returns to its original value of $550\,\text{nm}$. The wavelength change is a property of the medium, not a permanent change to the light. The speed, wavelength, and direction of propagation all change in the medium, but the frequency is invariant. Upon exiting, the wave simply returns to its vacuum characteristics.
+(c) When light exits the glass back into vacuum, the wavelength returns to its original value of $550\,\text{nm}$. The wavelength change is a property of the medium, not a permanent change to the light. The speed, wavelength, and direction of propagation all change in the medium, but the frequency is invariant. Upon exiting, the wave returns to its vacuum characteristics.
 
 ## Integration Tests
 
@@ -177,13 +177,13 @@ A closed pipe (closed at one end, open at the other) has length $0.85\,\text{m}$
 
 For a closed pipe, resonant wavelengths satisfy: $L = (2n - 1)\lambda/4$ for $n = 1, 2, 3, \ldots$
 
-Checking for $n = 1$: $\lambda_1 = 4L = 3.40\,\text{m}$, $f_1 = 100\,\text{Hz}$
+Checking for $n = 1$: $\lambda_1 = 4L = 3.40\,\text{m}$$f_1 = 100\,\text{Hz}$
 
-$n = 2$: $\lambda_2 = 4L/3 = 1.133\,\text{m}$, $f_2 = 300\,\text{Hz}$
+$n = 2$: $\lambda_2 = 4L/3 = 1.133\,\text{m}$$f_2 = 300\,\text{Hz}$
 
-$n = 3$: $\lambda_3 = 4L/5 = 0.680\,\text{m}$, $f_3 = 500\,\text{Hz}$
+$n = 3$: $\lambda_3 = 4L/5 = 0.680\,\text{m}$$f_3 = 500\,\text{Hz}$
 
-$n = 4$: $\lambda_4 = 4L/7 = 0.486\,\text{m}$, $f_4 = 700\,\text{Hz}$
+$n = 4$: $\lambda_4 = 4L/7 = 0.486\,\text{m}$$f_4 = 700\,\text{Hz}$
 
 The tuning fork frequency $512\,\text{Hz}$ is close to $f_3 = 500\,\text{Hz}$ but not exactly equal. For resonance, the frequency must match exactly. So the tuning fork does **not** cause exact resonance.
 
@@ -203,7 +203,7 @@ $$f_n = \frac{(2n - 1)v}{4L} = \frac{(2n - 1) \times 350}{3.4} = (2n - 1) \times
 - $n = 2$: $f_2 = 308.8\,\text{Hz}$
 - $n = 3$: $f_3 = 514.7\,\text{Hz}$
 
-The third harmonic at $514.7\,\text{Hz}$ is now very close to the tuning fork frequency of $512\,\text{Hz}$, and near-resonance would occur.
+The third harmonic at $514.7\,\text{Hz}$ is now very close to the tuning fork frequency of $512\,\text{Hz}$And near-resonance would occur.
 
 ---
 
@@ -239,10 +239,10 @@ $$I = \frac{I_0}{2}\cos^2 90^\circ = 0$$
 
 No light passes through. The result is counterintuitive: removing a filter **reduces** the transmitted intensity from $I_0/8$ to zero.
 
-(c) The middle filter is essential because it rotates the plane of polarisation by $45^\circ$, creating a non-zero component along the horizontal axis of the third filter. Without it, the vertically polarised light has zero component along the horizontal transmission axis.
+(c) The middle filter is essential because it rotates the plane of polarisation by $45^\circ$Creating a non-zero component along the horizontal axis of the third filter. Without it, the vertically polarised light has zero component along the horizontal transmission axis.
 
 This demonstrates that:
 - Polarisation is a vector property of the electric field
 - The electric field component along the transmission axis is what passes through
-- Filters do not simply "block" light; they project the electric field onto their transmission axis
+- Filters do not "block" light; they project the electric field onto their transmission axis
 - Intermediate rotations allow transmission through crossed polarisers, which is the principle behind liquid crystal displays and optical activity measurements

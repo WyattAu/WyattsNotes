@@ -52,9 +52,9 @@ Note: TLS is technically at OSI layer 6 (Presentation) as it handles encryption/
 
 (b) 4 subnets each with at least 50 hosts:
 
-For 50 hosts: need $2^h - 2 \geq 50$, so $h \geq 6$ (since $2^6 - 2 = 62 \geq 50$). Use 6 host bits.
+For 50 hosts: need $2^h - 2 \geq 50$So $h \geq 6$ (since $2^6 - 2 = 62 \geq 50$). Use 6 host bits.
 
-For 4 subnets: need $2^s \geq 4$, so $s \geq 2$ subnet bits.
+For 4 subnets: need $2^s \geq 4$So $s \geq 2$ subnet bits.
 
 Total bits: $s + h = 2 + 6 = 8$ (matches the 8 available host bits). Subnet mask: `/26` (255.255.255.192).
 
@@ -135,7 +135,7 @@ Data: d1 $= 1$ (pos 3), d2 $= 0$ (pos 5), d3 $= 1$ (pos 6), d4 $= 1$ (pos 7).
 
 Layout: P1 _ P2 d1 _ d2 d3 d4 = P1 _ P2 1 _ 0 1 1
 
-Positions:  1  2  3  4  5  6  7
+Positions: 1 2 3 4 5 6 7
 
 (a) Calculate parity bits:
 
@@ -187,4 +187,4 @@ This demonstrates the power of Hamming codes: single-bit errors are both detecte
 
 (c) **Video streaming:** UDP is commonly used for live streaming (low latency). Video codecs can tolerate some packet loss (display the previous frame or interpolate). TCP would cause buffering delays when retransmitting lost packets, which is worse for user experience than occasional visual artifacts. However, adaptive bitrate streaming (e.g., HLS) often uses TCP over HTTP for compatibility with firewalls and CDNs.
 
-(d) **DNS lookups:** UDP is the standard for DNS queries. DNS queries and responses are small (typically under 512 bytes for standard queries, fitting in a single UDP packet). The overhead of TCP's 3-way handshake is unnecessary for a single request-response. However, TCP is used for DNS zone transfers (large data) and for responses over 512 bytes (EDNS0 allows larger UDP packets, but TCP fallback exists for oversized responses).
+(d) **DNS lookups:** UDP is the standard for DNS queries. DNS queries and responses are small ( under 512 bytes for standard queries, fitting in a single UDP packet). The overhead of TCP's 3-way handshake is unnecessary for a single request-response. However, TCP is used for DNS zone transfers (large data) and for responses over 512 bytes (EDNS0 allows larger UDP packets, but TCP fallback exists for oversized responses).

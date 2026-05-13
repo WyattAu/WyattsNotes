@@ -7,8 +7,8 @@ slug: maps-and-sets
 ## The `Map` Interface
 
 `Map<K,V>` maps keys to values. It is not part of the `Collection` hierarchy — it models a
-fundamentally different abstraction. Each key maps to at most one value, and each key can appear
-only once.
+Fundamentally different abstraction. Each key maps to at most one value, and each key can appear
+Only once.
 
 ```java
 public interface Map<K, V> {
@@ -39,8 +39,8 @@ public interface Map<K, V> {
 ### `HashMap`
 
 The default general-purpose map. Uses an array of buckets (linked lists, converted to balanced trees
-when a bucket exceeds 8 entries — JDK 8+). Provides O(1) average-case for `put`, `get`, `remove`,
-and `containsKey`.
+When a bucket exceeds 8 entries — JDK 8+). Provides O(1) average-case for `put``get``remove`
+And `containsKey`.
 
 ```java
 Map<String, Integer> scores = new HashMap<>();
@@ -55,10 +55,10 @@ int missing = scores.getOrDefault("Dave", 0); // 0
 **Internal structure (JDK 8+):** `HashMap` stores entries in a `Node<K,V>[] table`. The index is
 `hash(key) & (table.length - 1)`. Each bucket starts as a linked list. When a bucket exceeds
 `TREEIFY_THRESHOLD` (default 8) entries, the list is converted to a red-black tree. When the tree
-shrinks below `UNTREEIFY_THRESHOLD` (default 6), it reverts to a linked list.
+Shrinks below `UNTREEIFY_THRESHOLD` (default 6), it reverts to a linked list.
 
 **Load factor:** `DEFAULT_LOAD_FACTOR` is 0.75. When `size / capacity` exceeds the load factor, the
-table is resized (doubled). The initial capacity defaults to 16.
+Table is resized (doubled). The initial capacity defaults to 16.
 
 ```java
 // Pre-size to avoid rehashing if you know the expected size
@@ -74,7 +74,7 @@ Map<String, Integer> map = new HashMap<>((int) (1000 / 0.75f) + 1);
 ### `LinkedHashMap`
 
 Extends `HashMap` and maintains a doubly-linked list running through all entries. Iteration order is
-insertion order (by default) or access order (if constructed with `accessOrder=true`).
+Insertion order (by default) or access order (if constructed with `accessOrder=true`).
 
 ```java
 // Insertion-order iteration
@@ -114,8 +114,8 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 ### `TreeMap`
 
 A `NavigableMap` implementation backed by a red-black tree. Keys are sorted by natural order or by a
-`Comparator` provided at construction. Provides O(log n) for `put`, `get`, `remove`, and range
-operations.
+`Comparator` provided at construction. Provides O(log n) for `put``get``remove`And range
+Operations.
 
 ```java
 // Natural ordering
@@ -141,23 +141,23 @@ NavigableMap<String, Integer> subMap =
 
 **Key methods on `NavigableMap`:**
 
-| Method                     | Description                             |
+| Method | Description |
 | -------------------------- | --------------------------------------- |
-| `firstKey()` / `lastKey()` | Lowest / highest key                    |
-| `lowerKey(K)`              | Greatest key strictly less than K       |
-| `floorKey(K)`              | Greatest key less than or equal to K    |
-| `higherKey(K)`             | Smallest key strictly greater than K    |
-| `ceilingKey(K)`            | Smallest key greater than or equal to K |
-| `descendingMap()`          | Reverse-ordered view                    |
-| `subMap(K1, K2)`           | View of keys in range [K1, K2)          |
-| `headMap(K)`               | View of keys less than K                |
-| `tailMap(K)`               | View of keys greater than or equal to K |
+| `firstKey()` / `lastKey()` | Lowest / highest key |
+| `lowerKey(K)` | Greatest key strictly less than K |
+| `floorKey(K)` | Greatest key less than or equal to K |
+| `higherKey(K)` | Smallest key strictly greater than K |
+| `ceilingKey(K)` | Smallest key greater than or equal to K |
+| `descendingMap()` | Reverse-ordered view |
+| `subMap(K1, K2)` | View of keys in range [K1, K2) |
+| `headMap(K)` | View of keys less than K |
+| `tailMap(K)` | View of keys greater than or equal to K |
 
 ### `ConcurrentHashMap`
 
 Thread-safe map designed for high-concurrency access. Uses fine-grained locking (lock stripping on
-buckets) to allow concurrent reads and writes to different segments. JDK 8+ uses CAS operations for
-even better concurrency.
+Buckets) to allow concurrent reads and writes to different segments. JDK 8+ uses CAS operations for
+Even better concurrency.
 
 ```java
 ConcurrentHashMap<String, AtomicInteger> counterMap = new ConcurrentHashMap<>();
@@ -175,7 +175,7 @@ counterMap.merge("requests", 1, (oldVal, newVal) -&gt; {
 ### `Hashtable`
 
 Legacy thread-safe map from JDK 1.0. Uses method-level synchronization (the entire map is locked for
-every operation). Do not use in new code — `ConcurrentHashMap` provides better concurrency and
+Every operation). Do not use in new code — `ConcurrentHashMap` provides better concurrency and
 `Collections.synchronizedMap` provides the same semantics with less overhead.
 
 ```java
@@ -188,10 +188,10 @@ ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
 
 ## Map Methods in Depth
 
-### `computeIfAbsent`, `computeIfPresent`, `compute`, `merge`
+### `computeIfAbsent``computeIfPresent``compute``merge`
 
 These methods (added in JDK 8) provide atomic compound operations that eliminate the check-then-act
-race condition:
+Race condition:
 
 ```java
 // computeIfAbsent — compute value only if key is absent
@@ -231,16 +231,16 @@ map.forEach((key, value) -&gt; System.out.println(key + "=" + value));
 ## The `Set` Interface
 
 `Set<E>` is a collection that cannot contain duplicate elements. It models the mathematical set
-abstraction. The `Set` interface extends `Collection` and adds no new methods — it only constrains
-behavior: `add` returns `false` if the element already exists.
+Abstraction. The `Set` interface extends `Collection` and adds no new methods — it only constrains
+Behavior: `add` returns `false` if the element already exists.
 
 ## Set Implementations
 
 ### `HashSet`
 
 Backed by a `HashMap` (each `Set` entry is stored as a key in the underlying `HashMap` with a dummy
-value). Provides O(1) average-case `add`, `contains`, and `remove`. Does not maintain insertion
-order.
+Value). Provides O(1) average-case `add``contains`And `remove`. Does not maintain insertion
+Order.
 
 ```java
 Set<String> names = new HashSet<>();
@@ -253,7 +253,7 @@ System.out.println(names.contains("Alice")); // true
 ### `TreeSet`
 
 A `NavigableSet` backed by a `TreeMap`. Maintains elements in sorted order (natural or
-`Comparator`). O(log n) for `add`, `contains`, and `remove`.
+`Comparator`). O(log n) for `add``contains`And `remove`.
 
 ```java
 Set<Integer> numbers = new TreeSet<>();
@@ -276,7 +276,7 @@ int higher = ((TreeSet<Integer>) numbers).higher(5); // 10
 
 Extends `HashSet` and maintains a linked list through all entries, preserving insertion order.
 Slightly more expensive than `HashSet` (due to the linked list overhead) but provides predictable
-iteration order.
+Iteration order.
 
 ```java
 Set<String> ordered = new LinkedHashSet<>();
@@ -289,8 +289,8 @@ ordered.add("B");
 ### `EnumSet`
 
 A specialized `Set` implementation for enum types. Backed by a bit vector. Extremely fast (O(1) for
-all operations) and memory-efficient. The iterator traverses elements in their natural enum
-declaration order.
+All operations) and memory-efficient. The iterator traverses elements in their natural enum
+Declaration order.
 
 ```java
 public enum Day { MON, TUE, WED, THU, FRI, SAT, SUN }
@@ -307,14 +307,14 @@ workPlusWeekend.addAll(weekend);
 
 :::info
 `EnumSet` is the fastest `Set` implementation for enums. Its internal representation is a
-single `long` (for enums with up to 64 values) or a `long[]` (for larger enums). All operations are
-simple bit manipulations.
+Single `long` (for enums with up to 64 values) or a `long[]` (for larger enums). All operations are
+Simple bit manipulations.
 :::
 
 ## Set Operations
 
 Java does not provide built-in union, intersection, or difference operators on sets, but the methods
-are straightforward:
+Are straightforward:
 
 ```java
 Set<Integer> a = new HashSet<>(Set.of(1, 2, 3, 4, 5));
@@ -342,20 +342,20 @@ symmetricDiff.removeAll(temp); // [1, 2, 6, 7]
 
 ## `equals` and `hashCode` Contract
 
-The contract between `equals` and `hashCode` is critical for `HashSet`, `HashMap`, and `Hashtable`.
+The contract between `equals` and `hashCode` is critical for `HashSet``HashMap`And `Hashtable`.
 The contract (from `Object.hashCode()` Javadoc):
 
-1. If two objects are equal according to `equals`, they **must** have the same hash code.
+1. If two objects are equal according to `equals`They **must** have the same hash code.
 2. If two objects have the same hash code, they are **not required** to be equal.
 3. If `equals` is called multiple times on the same object, it must consistently return the same
-   result (unless the object is modified).
+ result (unless the object is modified).
 4. `hashCode` must be consistent with `equals`.
 
 ### Why Both Must Be Overridden Together
 
 `HashMap` uses `hashCode` to find the bucket and `equals` to compare within the bucket. If you
-override `equals` without overriding `hashCode`, two equal objects may end up in different buckets,
-and `get` will fail to find the object.
+Override `equals` without overriding `hashCode`Two equal objects may end up in different buckets,
+And `get` will fail to find the object.
 
 ```java
 public class Person {
@@ -384,7 +384,7 @@ public class Person {
 :::warning
 Never use `Map&lt;List&lt;String&gt;, ...&gt;` or `Set&lt;List&lt;String&gt;&gt;` —
 `List.equals` compares element-by-element and `List.hashCode` depends on all elements. If you modify
-a list after using it as a key, the map will no longer find it. Use immutable collections as keys.
+A list after using it as a key, the map will no longer find it. Use immutable collections as keys.
 :::
 
 ### `Objects.hash` and `Arrays.hashCode`
@@ -471,7 +471,7 @@ List<String> sorted = names.stream()
 ## Immutable Collections
 
 JDK 9+ provides factory methods for compact, immutable collections. These are more memory-efficient
-than `Collections.unmodifiableList(wrap(Arrays.asList(...)))`:
+Than `Collections.unmodifiableList(wrap(Arrays.asList(...)))`:
 
 ```java
 // JDK 9+ immutable collections
@@ -494,7 +494,7 @@ Set<String> immutableSet = Set.copyOf(mutableSet);
 :::warning
 Immutable collections do not allow `null` elements or keys. `List.of(1, null)` throws
 `NullPointerException`. This is by design — nulls in collections are a common source of bugs, and
-the immutable factories enforce non-null.
+The immutable factories enforce non-null.
 :::
 
 ### Unmodifiable Wrappers
@@ -552,7 +552,7 @@ List<String> syncList = Collections.synchronizedList(mutableList);
 
 :::info
 `Collections.synchronizedList` returns a list where each method is synchronized. However,
-iteration requires external synchronization:
+Iteration requires external synchronization:
 `synchronized (syncList) { for (String s : syncList) { ... } }`. For better concurrency, use
 `CopyOnWriteArrayList`.
 :::
@@ -761,7 +761,7 @@ TreeMap<List<String>, String> treeMap2 = new TreeMap<>(
 
 ### Composite Key with Records
 
-When you need a compound key for a `HashMap`, use a record (or a properly implemented class with
+When you need a compound key for a `HashMap`Use a record (or a properly implemented class with
 `equals` and `hashCode`):
 
 ```java
@@ -774,13 +774,13 @@ orgChart.computeIfAbsent(new CompositeKey("Engineering", "Senior"),
 ```
 
 Records automatically generate correct `equals` and `hashCode` based on all components, making them
-ideal for use as map keys and set elements.
+Ideal for use as map keys and set elements.
 
 ### `IdentityHashMap`
 
 `IdentityHashMap` uses `==` (reference equality) instead of `equals()` for key comparison. This is
-useful for implementing object graphs, serialization frameworks, or proxy-based caching where you
-want distinct objects to remain distinct even if they are logically equal.
+Useful for implementing object graphs, serialization frameworks, or proxy-based caching where you
+Want distinct objects to remain distinct even if they are logically equal.
 
 ```java
 // Regular HashMap — two equal Integer objects map to the same entry
@@ -800,7 +800,7 @@ System.out.println(identity.size()); // 2 — different object references
 ### `EnumMap`
 
 `EnumMap` is a specialized map for enum keys. It is backed by an array indexed by the enum's ordinal
-values. All operations are O(1) with minimal overhead.
+Values. All operations are O(1) with minimal overhead.
 
 ```java
 public enum Day { MON, TUE, WED, THU, FRI, SAT, SUN }
@@ -818,14 +818,14 @@ for (Map.Entry<Day, String> entry : schedule.entrySet()) {
 ```
 
 `EnumMap` is faster and more memory-efficient than `HashMap` with enum keys. The internal array size
-is exactly the number of enum constants, and there is no hashing overhead. Always prefer `EnumMap`
-over `HashMap` when keys are enum values.
+Is exactly the number of enum constants, and there is no hashing overhead. Always prefer `EnumMap`
+Over `HashMap` when keys are enum values.
 
 ### `WeakHashMap`
 
 `WeakHashMap` uses weak references for keys. When a key is no longer strongly reachable from the
-application, the entry is eligible for GC. This is useful for metadata caches, where you want
-entries to be automatically cleaned up when the key object is no longer in use.
+Application, the entry is eligible for GC. This is useful for metadata caches, where you want
+Entries to be automatically cleaned up when the key object is no longer in use.
 
 ```java
 WeakHashMap<Object, String> metadata = new WeakHashMap<>();
@@ -840,7 +840,7 @@ System.out.println(metadata.size()); // possibly 0
 ```
 
 :::warning
-`WeakHashMap` is not suitable for caching in general. Entries are collected aggressively
+`WeakHashMap` is not suitable for caching . Entries are collected aggressively
 — as soon as the GC discovers that a key is weakly reachable. If you need size-bounded caching, use
 `LinkedHashMap` with `removeEldestEntry` or a dedicated cache library like Caffeine.
 :::
@@ -945,3 +945,10 @@ scores.entrySet().stream()
 // Bob: 87, Alice: 95
 ```
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

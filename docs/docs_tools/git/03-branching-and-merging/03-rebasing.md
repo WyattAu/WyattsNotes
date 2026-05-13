@@ -210,7 +210,7 @@ Use `squash` when you have a series of "WIP" commits that should be combined int
 
 #### `fixup` — Squash Without Editing
 
-Like `squash`, but discards the commit message of the squashed commit. The combined commit retains only the message of the previous commit. This is faster when you have many small commits to fold in:
+Like `squash`But discards the commit message of the squashed commit. The combined commit retains only the message of the previous commit. This is faster when you have many small commits to fold in:
 
 ```
 pick a3f2b1c Add user model
@@ -282,21 +282,21 @@ This is one of the most contentious debates in the Git community. Here is a bala
 
 ### Arguments for Rebase
 
-| Argument             | Explanation                                                      |
+| Argument | Explanation |
 | -------------------- | ---------------------------------------------------------------- |
-| **Clean history**    | Linear history is easier to read with `git log` and `git bisect` |
-| **No merge commits** | Eliminates noisy "Merge branch X into Y" commits                 |
-| **Easier bisect**    | `git bisect` works more reliably on linear history               |
-| **Smaller diff**     | Pull requests contain only feature changes, not merge noise      |
+| **Clean history** | Linear history is easier to read with `git log` and `git bisect` |
+| **No merge commits** | Eliminates noisy "Merge branch X into Y" commits |
+| **Easier bisect** | `git bisect` works more reliably on linear history |
+| **Smaller diff** | Pull requests contain only feature changes, not merge noise |
 
 ### Arguments for Merge
 
-| Argument              | Explanation                                                          |
+| Argument | Explanation |
 | --------------------- | -------------------------------------------------------------------- |
-| **Preserves truth**   | The history reflects what actually happened, not a sanitized version |
-| **Safe**              | Merge never rewrites history; rebase does                            |
-| **Preserves context** | Merge commits show when and why features were integrated             |
-| **Easier to revert**  | `git revert -m 1 <merge>` undoes an entire feature in one operation  |
+| **Preserves truth** | The history reflects what actually happened, not a sanitized version |
+| **Safe** | Merge never rewrites history; rebase does |
+| **Preserves context** | Merge commits show when and why features were integrated |
+| **Easier to revert** | `git revert -m 1 <merge>` undoes an entire feature in one operation |
 
 ### The Golden Rule of Rebasing
 
@@ -322,7 +322,7 @@ For most teams, a hybrid approach works best:
 
 - **Feature branches**: Rebase onto `main` frequently to stay up-to-date. Before merging, do a final rebase.
 - **Merging into `main`**: Use `git merge --no-ff` to create a merge commit (preserves branch topology).
-- **Shared branches** (`develop`, `staging`): Never rebase. Always merge.
+- **Shared branches** (`develop``staging`): Never rebase. Always merge.
 - **Personal branches**: Rebase freely — no one else is affected.
 
 ```bash
@@ -363,7 +363,7 @@ If you `git rebase --abort` after a conflict, your original commits are preserve
 
 ### 4. The "Empty Commit" Problem
 
-If a commit's changes are already present in the target branch (e.g., you cherry-picked a commit earlier), rebasing will create an empty commit. Git usually drops these automatically, but you can control this behavior:
+If a commit's changes are already present in the target branch (e.g., you cherry-picked a commit earlier), rebasing will create an empty commit. Git drops these automatically, but you can control this behavior:
 
 ```bash
 # Keep empty commits
@@ -372,3 +372,15 @@ $ git rebase --keep-empty main
 # Drop empty commits (default)
 $ git rebase main
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

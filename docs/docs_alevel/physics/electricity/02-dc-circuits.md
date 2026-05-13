@@ -24,7 +24,7 @@ Explore the simulation above to develop intuition for this topic.
 ### Kirchhoff's First Law (Current Law)
 
 **Definition.** Kirchhoff's first law states that the algebraic sum of currents entering any
-junction in an electrical circuit is zero, reflecting the conservation of electric charge:
+Junction in an electrical circuit is zero, reflecting the conservation of electric charge:
 $\sum I = 0$.
 
 **The sum of currents entering a junction equals the sum of currents leaving it.**
@@ -41,7 +41,7 @@ $\square$
 ### Kirchhoff's Second Law (Voltage Law)
 
 **Definition.** Kirchhoff's second law states that the algebraic sum of potential differences around
-any closed loop in an electrical circuit is zero, reflecting the conservation of energy:
+Any closed loop in an electrical circuit is zero, reflecting the conservation of energy:
 $\sum \mathcal{E} = \sum V$.
 
 **The sum of e.m.f.s around any closed loop equals the sum of p.d.s around that loop.**
@@ -49,8 +49,8 @@ $\sum \mathcal{E} = \sum V$.
 $$\sum \mathcal{E} = \sum V$$
 
 **Derivation from energy conservation.** As a unit charge moves around a closed loop, the total
-energy gained from sources must equal the total energy lost to components. Otherwise, energy would
-be created or destroyed:
+Energy gained from sources must equal the total energy lost to components. Otherwise, energy would
+Be created or destroyed:
 
 $$\frac◆LB◆W_{\mathrm{gained}}◆RB◆◆LB◆Q◆RB◆ = \frac◆LB◆W_{\mathrm{lost}}◆RB◆◆LB◆Q◆RB◆ \implies \sum \mathcal{E} = \sum IR$$
 
@@ -58,8 +58,8 @@ $\square$
 
 :::tip
 Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
-stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-if current flows through the resistor in your chosen direction.
+Stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
+If current flows through the resistor in your chosen direction.
 :::
 
 ## 2. Series and Parallel Resistors
@@ -96,29 +96,29 @@ For two resistors in parallel:
 
 $$R_{\mathrm{parallel}} = \frac{R_1 R_2}{R_1 + R_2}$$
 
-**Proof.** $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} = \frac{R_1 + R_2}{R_1 R_2}$, hence
+**Proof.** $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} = \frac{R_1 + R_2}{R_1 R_2}$Hence
 $R = \frac{R_1 R_2}{R_1 + R_2}$. $\square$
 
 **Intuition.** Adding resistors in series always increases total resistance (current must pass
-through all of them). Adding resistors in parallel always decreases total resistance (current has
-more paths to flow through). The parallel equivalent is always less than the smallest individual
-resistor.
+Through all of them). Adding resistors in parallel always decreases total resistance (current has
+More paths to flow through). The parallel equivalent is always less than the smallest individual
+Resistor.
 
 ## 3. Potential Dividers
 
 **Definition.** A potential divider is a circuit consisting of two or more resistors connected in
-series across a voltage supply, which produces an output voltage that is a fraction of the input
-voltage, determined by the ratio of resistances.
+Series across a voltage supply, which produces an output voltage that is a fraction of the input
+Voltage, determined by the ratio of resistances.
 
 A **potential divider** consists of two or more resistors in series across a voltage supply. The
-voltage is divided in proportion to the resistances.
+Voltage is divided in proportion to the resistances.
 
 For two resistors $R_1$ and $R_2$ in series across supply $V_{\mathrm{in}}$:
 
 $$V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
 
 **Derivation.** The current through both resistors is $I = V_{\mathrm{in}}/(R_1 + R_2)$. The p.d.
-across $R_2$ is:
+Across $R_2$ is:
 
 $$V_{\mathrm{out}} = IR_2 = \frac◆LB◆V_{\mathrm{in}}◆RB◆◆LB◆R_1 + R_2◆RB◆ \cdot R_2 = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}$$
 
@@ -127,38 +127,38 @@ $\square$
 ### Potentiometer
 
 A **potentiometer** is a continuous potential divider — a single resistive track with a sliding
-contact. It can provide any output voltage from 0 to $V_{\mathrm{in}}$.
+Contact. It can provide any output voltage from 0 to $V_{\mathrm{in}}$.
 
 ### Potential Divider with a Sensor
 
 A thermistor or LDR can replace one resistor, creating a voltage that varies with temperature or
-light intensity:
+Light intensity:
 
 $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{sensor}}◆RB◆◆LB◆R_{\mathrm{fixed}} + R_{\mathrm{sensor}}◆RB◆$$
 
 :::warning
 Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
-changes the effective resistance. The simple divider formula no longer applies — you must
-recalculate the parallel combination of $R_2$ and the load.
+Changes the effective resistance. The simple divider formula no longer applies — you must
+Recalculate the parallel combination of $R_2$ and the load.
 :::
 
 ## 4. Internal Resistance
 
 **Definition.** Internal resistance $r$ is the resistance within a power source that opposes the
-flow of current and causes energy to be dissipated within the source, reducing the terminal
-potential difference below the e.m.f.
+Flow of current and causes energy to be dissipated within the source, reducing the terminal
+Potential difference below the e.m.f.
 
 **Definition.** Terminal potential difference $V$ is the potential difference across the terminals
-of a power source when it is delivering current, equal to the e.m.f. minus the potential difference
-across the internal resistance: $V = \mathcal{E} - Ir$.
+Of a power source when it is delivering current, equal to the e.m.f. Minus the potential difference
+Across the internal resistance: $V = \mathcal{E} - Ir$.
 
-Real power sources have **internal resistance** $r$, which causes the terminal p.d. to drop as
-current increases.
+Real power sources have **internal resistance** $r$Which causes the terminal p.d. To drop as
+Current increases.
 
 ### Derivation of $V = \mathcal{E} - Ir$
 
 Consider a cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ connected to an external circuit
-of resistance $R$. The total resistance in the circuit is $R + r$.
+Of resistance $R$. The total resistance in the circuit is $R + r$.
 
 $$I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆$$
 
@@ -170,19 +170,19 @@ Alternatively, by Kirchhoff's second law around the full circuit:
 
 $$\mathcal{E} = V + Ir \implies \boxed{V = \mathcal{E} - Ir}$$
 
-The "lost volts" is $Ir$ — the p.d. across the internal resistance.
+The "lost volts" is $Ir$ — the p.d. Across the internal resistance.
 
 **Maximum power transfer.** The power delivered to the load is:
 
 $$P = I^2R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$$
 
 Differentiating with respect to $R$ and setting $dP/dR = 0$ gives $R = r$. Maximum power is
-delivered when the load resistance equals the internal resistance.
+Delivered when the load resistance equals the internal resistance.
 
 ### Measuring Internal Resistance
 
 **Method 1: Vary the load.** Measure $V$ and $I$ for several different values of $R$. Plot $V$
-against $I$.
+Against $I$.
 
 $$V = \mathcal{E} - Ir$$
 
@@ -195,7 +195,7 @@ $$r = \frac{V_1 - V_2}{I_2 - I_1}$$
 ## 5. Thevenin's Theorem
 
 **Thevenin's Theorem.** Any linear circuit with two terminals can be replaced by an equivalent
-circuit consisting of:
+Circuit consisting of:
 
 - A single voltage source $V_{\mathrm{Th}}$ (the Thevenin voltage)
 - A single series resistance $R_{\mathrm{Th}}$ (the Thevenin resistance)
@@ -203,21 +203,21 @@ circuit consisting of:
 ### Finding $V_{\mathrm{Th}}$
 
 The Thevenin voltage is the open-circuit voltage between the two terminals (i.e., the voltage when
-nothing is connected across them).
+Nothing is connected across them).
 
 ### Finding $R_{\mathrm{Th}}$
 
 The Thevenin resistance is the resistance between the two terminals when all independent voltage
-sources are replaced by short circuits (and current sources by open circuits).
+Sources are replaced by short circuits (and current sources by open circuits).
 
 **Intuition.** Thevenin's theorem is powerful because it lets you simplify any complex circuit into
-a simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$, you can
-predict the behaviour of the circuit for any load.
+A simple source-resistor pair. Once you know $V_{\mathrm{Th}}$ and $R_{\mathrm{Th}}$You can
+Predict the behaviour of the circuit for any load.
 
 <details>
 <summary>Example: Thevenin Equivalent</summary>
 Find the Thevenin equivalent of a circuit with a 12 V battery in series with two parallel resistors
-$R_1 = 6\,\Omega$ and $R_2 = 3\,\Omega$, across terminals A and B that are across $R_2$.
+$R_1 = 6\,\Omega$ and $R_2 = 3\,\Omega$Across terminals A and B that are across $R_2$.
 
 **Answer.** $V_{\mathrm{Th}}$ = open-circuit voltage across $R_2$ = potential divider:
 $V_{\mathrm{Th}} = 12 \times \frac{3}{6+3} = 4.0$ V.
@@ -232,29 +232,29 @@ The circuit is equivalent to a 4.0 V source with $2.0\,\Omega$ internal resistan
 ## 6. Wheatstone Bridge
 
 A **Wheatstone bridge** is a circuit arrangement of four resistors in a diamond configuration with a
-galvanometer connected between the midpoint nodes. It provides a precise method for measuring
-unknown resistances.
+Galvanometer connected between the midpoint nodes. It provides a precise method for measuring
+Unknown resistances.
 
 ### Balance Condition
 
 Consider four resistors $R_1, R_2, R_3, R_4$ arranged so that $R_1$ and $R_2$ form one branch, $R_3$
-and $R_4$ form another, with a galvanometer of resistance $R_g$ connected between the junction of
+And $R_4$ form another, with a galvanometer of resistance $R_g$ connected between the junction of
 $R_1$-$R_2$ and the junction of $R_3$-$R_4$.
 
 **Derivation.** At balance, no current flows through the galvanometer ($I_g = 0$).
 
 By KCL at each junction, the current through $R_1$ equals the current through $R_2$ (call it $I_1$),
-and the current through $R_3$ equals the current through $R_4$ (call it $I_2$).
+And the current through $R_3$ equals the current through $R_4$ (call it $I_2$).
 
-Since $I_g = 0$, the p.d. across the galvanometer is zero, so:
+Since $I_g = 0$The p.d. Across the galvanometer is zero, so:
 
 $$V_A = V_B$$
 
-where $A$ is the junction of $R_1$ and $R_3$, and $B$ is the junction of $R_2$ and $R_4$.
+Where $A$ is the junction of $R_1$ and $R_3$And $B$ is the junction of $R_2$ and $R_4$.
 
-The p.d. across $R_1$: $V_{R_1} = I_1 R_1$. The p.d. across $R_3$: $V_{R_3} = I_2 R_3$.
+The p.d. Across $R_1$: $V_{R_1} = I_1 R_1$. The p.d. Across $R_3$: $V_{R_3} = I_2 R_3$.
 
-For the galvanometer p.d. to be zero:
+For the galvanometer p.d. To be zero:
 
 $$I_1 R_1 = I_2 R_3 \quad \mathrm{...(i)}$$
 
@@ -277,39 +277,39 @@ A **meter bridge** is a practical form of the Wheatstone bridge. A uniform resis
 
 At balance: $\frac{R}{S} = \frac{l_1}{l_2} = \frac{l}{100 - l}$
 
-where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance length.
+Where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance length.
 
 <details>
 <summary>Example: Wheatstone Bridge Calculation</summary>
 
-A Wheatstone bridge has $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$, $R_3 = 150\,\Omega$. Find $R_4$
-for balance.
+A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$. Find $R_4$
+For balance.
 
 **Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆200 \times 150◆RB◆◆LB◆100◆RB◆ = 300\,\Omega$.
 
 </details>
 
 :::warning
-warning
-current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
-analysis) to find the galvanometer current.
+Warning
+Current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's laws (or Thevenin
+Analysis) to find the galvanometer current.
 :::
 
 ## 7. Norton's Theorem
 
 **Norton's Theorem.** Any linear two-terminal circuit can be replaced by an equivalent circuit
-consisting of a current source $I_N$ in parallel with a resistance $R_N$.
+Consisting of a current source $I_N$ in parallel with a resistance $R_N$.
 
 ### Finding $I_N$
 
 The Norton current is the short-circuit current between the two terminals (the current that flows
-when the terminals are directly connected).
+When the terminals are directly connected).
 
 ### Finding $R_N$
 
 The Norton resistance is the same as the Thevenin resistance: the resistance between the two
-terminals when all independent sources are replaced by their internal resistances (voltage sources
-short-circuited, current sources open-circuited).
+Terminals when all independent sources are replaced by their internal resistances (voltage sources
+Short-circuited, current sources open-circuited).
 
 ### Source Transformation
 
@@ -318,17 +318,17 @@ Thevenin and Norton equivalents are related by:
 $$I_N = \frac◆LB◆V_{\mathrm{Th}}◆RB◆◆LB◆R_{\mathrm{Th}}◆RB◆, \qquad R_N = R_{\mathrm{Th}}$$
 
 A voltage source $V_{\mathrm{Th}}$ in series with $R_{\mathrm{Th}}$ is equivalent to a current
-source $I_N$ in parallel with $R_N$.
+Source $I_N$ in parallel with $R_N$.
 
-**Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\mathrm{Th}}$, short-circuit
-current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-circuit current
-$= I_N$, open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$
-and $R_N = R_{\mathrm{Th}}$. $\square$
+**Proof.** For the Thevenin equivalent: open-circuit voltage $= V_{\mathrm{Th}}$Short-circuit
+Current $= V_{\mathrm{Th}}/R_{\mathrm{Th}}$. For the Norton equivalent: short-circuit current
+$= I_N$Open-circuit voltage $= I_N R_N$. For equivalence: $I_N = V_{\mathrm{Th}}/R_{\mathrm{Th}}$
+And $R_N = R_{\mathrm{Th}}$. $\square$
 
 :::tip
 Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
-sources, then convert back.
+Sources, then convert back.
 :::
 
 ## 8. Multi-Loop Circuit Analysis
@@ -378,16 +378,16 @@ For a circuit with $b$ branches and $n$ nodes:
 ### Ideal vs Real Instruments
 
 An **ideal voltmeter** has infinite resistance ($R_V \to \infty$) and draws zero current. A **real
-voltmeter** has finite resistance (typically $10\,\mathrm{k}\Omega$ to $10\,\mathrm{M}\Omega$ for
-digital meters).
+Voltmeter** has finite resistance ( $10\,\mathrm{k}\Omega$ to $10\,\mathrm{M}\Omega$ for
+Digital meters).
 
 An **ideal ammeter** has zero resistance ($R_A \to 0$) and drops zero voltage. A **real ammeter**
-has finite (but small) resistance.
+Has finite (but small) resistance.
 
 ### Loading Error
 
 When a voltmeter of resistance $R_V$ is connected across a resistor $R_2$ in a potential divider,
-the parallel combination changes the circuit:
+The parallel combination changes the circuit:
 
 $$R_{\mathrm{eff}} = \frac{R_2 R_V}{R_2 + R_V}$$
 
@@ -395,17 +395,17 @@ The measured voltage is:
 
 $$V_{\mathrm{measured}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{eff}}◆RB◆◆LB◆R_1 + R_{\mathrm{eff}}◆RB◆$$
 
-which is always less than the true voltage
+Which is always less than the true voltage
 $V_{\mathrm{true}} = V_{\mathrm{in}} \cdot R_2/(R_1 + R_2)$.
 
 **Proof that loading always reduces the reading.** Since $R_{\mathrm{eff}} \lt R_2$ (parallel
-resistance is less than the smallest), and $V_{\mathrm{out}}$ is an increasing function of the lower
-resistance in the divider, we have $V_{\mathrm{measured}} \lt V_{\mathrm{true}}$. $\square$
+Resistance is less than the smallest), and $V_{\mathrm{out}}$ is an increasing function of the lower
+Resistance in the divider, we have $V_{\mathrm{measured}} \lt V_{\mathrm{true}}$. $\square$
 
 ### Voltmeter Multiplier
 
-To extend the range of a galvanometer (full-scale current $I_g$, internal resistance $R_g$) to
-measure voltage up to $V_{\mathrm{range}}$:
+To extend the range of a galvanometer (full-scale current $I_g$Internal resistance $R_g$) to
+Measure voltage up to $V_{\mathrm{range}}$:
 
 A series "multiplier" resistor $R_s$ is added so that at full scale:
 
@@ -418,7 +418,7 @@ $$\boxed{R_s = \frac◆LB◆V_{\mathrm{range}}◆RB◆◆LB◆I_g◆RB◆ - R_g}
 To extend the range of a galvanometer to measure current up to $I_{\mathrm{range}}$:
 
 A parallel "shunt" resistor $R_{\mathrm{shunt}}$ diverts excess current so that $I_g$ flows through
-the galvanometer:
+The galvanometer:
 
 $$I_g R_g = (I_{\mathrm{range}} - I_g) R_{\mathrm{shunt}}$$
 
@@ -428,7 +428,7 @@ $$\boxed{R_{\mathrm{shunt}} = \frac◆LB◆R_g \cdot I_g◆RB◆◆LB◆I_{\math
 <summary>Example: Ammeter Shunt Calculation</summary>
 
 A galvanometer has $R_g = 50\,\Omega$ and full-scale current $I_g = 1.0$ mA. Calculate the shunt
-resistance to convert it to a 0--5 A ammeter.
+Resistance to convert it to a 0--5 A ammeter.
 
 **Answer.**
 $R_{\mathrm{shunt}} = \frac◆LB◆50 \times 1.0 \times 10^{-3}◆RB◆◆LB◆5.0 - 1.0 \times 10^{-3}◆RB◆ = \frac{0.050}{4.999} = 0.0100\,\Omega$.
@@ -438,8 +438,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 </details>
 
 :::warning
-warning
-the circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
+Warning
+The circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule of thumb:
 $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
 :::
 
@@ -447,8 +447,8 @@ $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
 
 <details>
 <summary>Problem 1</summary>
-Three resistors of 4 $\Omega$, 6 $\Omega$, and 12 $\Omega$ are connected in parallel. Calculate the
-equivalent resistance.
+Three resistors of 4 $\Omega$6 $\Omega$And 12 $\Omega$ are connected in parallel. Calculate the
+Equivalent resistance.
 
 **Answer.**
 $\frac{1}{R} = \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = \frac{3 + 2 + 1}{12} = \frac{6}{12} = \frac{1}{2}$.
@@ -461,7 +461,7 @@ $R = 2.0$ $\Omega$.
 <details>
 <summary>Problem 2</summary>
 A potential divider consists of a 10 k$\Omega$ and a 5.0 k$\Omega$ resistor in series across a 9.0 V
-supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
+Supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
 
 **Answer.** $V_{\mathrm{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0$ V.
 
@@ -472,8 +472,8 @@ supply. Calculate the output voltage across the 5.0 k$\Omega$ resistor.
 <details>
 <summary>Problem 3</summary>
 A cell of e.m.f. 12 V and internal resistance 0.50 $\Omega$ is connected to a 5.5 $\Omega$ external
-resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
-external resistor.
+Resistor. Calculate: (a) the current, (b) the terminal p.d., (c) the power dissipated in the
+External resistor.
 
 **Answer.** (a) $I = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R + r◆RB◆ = \frac{12}{5.5 + 0.5} = \frac{12}{6.0} = 2.0$ A.
 
@@ -488,9 +488,9 @@ external resistor.
 <details>
 <summary>Problem 4</summary>
 Using Kirchhoff's laws, find the current in each branch of a circuit where a 12 V battery and a 6 V
-battery (opposing) are connected with resistors of 2 $\Omega$ and 4 $\Omega$ as follows: 12 V
-battery in series with 2 $\Omega$ (branch 1), 6 V battery in series with 4 $\Omega$ (branch 2), both
-branches sharing common nodes.
+Battery (opposing) are connected with resistors of 2 $\Omega$ and 4 $\Omega$ as follows: 12 V
+Battery in series with 2 $\Omega$ (branch 1), 6 V battery in series with 4 $\Omega$ (branch 2), both
+Branches sharing common nodes.
 
 **Answer.** Let $I_1$ flow through branch 1 (12 V side) and $I_2$ through branch 2 (6 V side), with
 $I_3 = I_1 + I_2$ flowing in the connecting wire.
@@ -504,21 +504,21 @@ Let me use a clearer setup. Both branches meet at nodes A and B. Branch 1: 12 V 
 
 By KVL around the outer loop (travelling through branch 1 then back through branch 2):
 $12 - 2I_1 - 4I_2 + 6 = 0$ (assuming 6 V opposes in the return path). Actually, the sign depends on
-orientation. Let's say both batteries have their positive terminals facing the same direction
+Orientation. Let's say both batteries have their positive terminals facing the same direction
 (towards node A):
 
-Loop: $12 - 2I_1 + 6 - 4I_2 = 0$ ... wait, this depends on the circuit topology.
+Loop: $12 - 2I_1 + 6 - 4I_2 = 0$ ... Wait, this depends on the circuit topology.
 
 Assuming the batteries are in parallel (both driving current in the same direction) with their
-internal loops: $12 - 2I_1 = 6 - 4I_2 = V_{AB}$.
+Internal loops: $12 - 2I_1 = 6 - 4I_2 = V_{AB}$.
 
 So $12 - 2I_1 = 6 - 4I_2 \implies 6 = 2I_1 - 4I_2 \implies 3 = I_1 - 2I_2$ ... (i).
 
 KCL: $I_1 + I_2 = I_3$ (current into the external circuit). Without an external load between the
-common nodes, $I_3 = 0$, so $I_2 = -I_1$.
+Common nodes, $I_3 = 0$So $I_2 = -I_1$.
 
 From (i): $3 = I_1 + 2I_1 = 3I_1$. $I_1 = 1.0$ A. $I_2 = -1.0$ A (current flows opposite to assumed
-direction in branch 2).
+Direction in branch 2).
 
 This means the 12 V battery is driving current through the 6 V battery (charging it).
 
@@ -528,8 +528,8 @@ This means the 12 V battery is driving current through the 6 V battery (charging
 
 <details>
 <summary>Problem 5</summary>
-A battery with unknown e.m.f. and internal resistance is connected to a variable resistor. When
-$R = 4.0\,\Omega$, $I = 1.5$ A. When $R = 9.0\,\Omega$, $I = 0.80$ A. Find $\mathcal{E}$ and $r$.
+A battery with unknown e.m.f. And internal resistance is connected to a variable resistor. When
+$R = 4.0\,\Omega$$I = 1.5$ A. When $R = 9.0\,\Omega$$I = 0.80$ A. Find $\mathcal{E}$ and $r$.
 
 **Answer.** $\mathcal{E} = I_1(R_1 + r) = 1.5(4.0 + r) = 6.0 + 1.5r$ ... (i).
 
@@ -546,7 +546,7 @@ $\mathcal{E} = 6.0 + 1.5(1.71) = 6.0 + 2.57 = 8.57$ V $\approx 8.6$ V.
 <details>
 <summary>Problem 6</summary>
 Find the Thevenin equivalent of a voltage divider with $R_1 = 8\,\Omega$ and $R_2 = 4\,\Omega$
-across a 24 V supply, with terminals across $R_2$.
+Across a 24 V supply, with terminals across $R_2$.
 
 **Answer.** $V_{\mathrm{Th}} = 24 \times \frac{4}{8+4} = 24 \times \frac{1}{3} = 8.0$ V.
 
@@ -559,8 +559,8 @@ $R_{\mathrm{Th}} = R_1 \| R_2 = \frac◆LB◆8 \times 4◆RB◆◆LB◆8+4◆RB�
 <details>
 <summary>Problem 7</summary>
 Two 6 $\Omega$ resistors are connected in parallel and this combination is connected in series with
-a 3 $\Omega$ resistor across a 12 V supply. Calculate: (a) the total resistance, (b) the current
-from the supply, (c) the p.d. across the parallel combination.
+A 3 $\Omega$ resistor across a 12 V supply. Calculate: (a) the total resistance, (b) the current
+From the supply, (c) the p.d. Across the parallel combination.
 
 **Answer.** (a) $R_{\parallel} = \frac◆LB◆6 \times 6◆RB◆◆LB◆6+6◆RB◆ = 3\,\Omega$.
 $R_{\mathrm{total}} = 3 + 3 = 6\,\Omega$.
@@ -584,7 +584,7 @@ Calculate the current and determine whether the lamp operates at its rated volta
 Actual current: $I = \frac{9.0}{12 + 0.80} = \frac{9.0}{12.8} = 0.703$ A.
 
 Terminal p.d.: $V = IR_L = 0.703 \times 12 = 8.44$ V. This exceeds the rated 6.0 V, so the lamp is
-over-driven (it would likely burn out).
+Over-driven (it would likely burn out).
 
 <b>If you get this wrong, revise:</b> [Internal Resistance](#4-internal-resistance)
 
@@ -593,7 +593,7 @@ over-driven (it would likely burn out).
 <details>
 <summary>Problem 9</summary>
 In the circuit below, find the current through each resistor: $R_1 = 2\,\Omega$ and
-$R_2 = 4\,\Omega$ in parallel, connected in series with $R_3 = 3\,\Omega$, across a 10 V supply.
+$R_2 = 4\,\Omega$ in parallel, connected in series with $R_3 = 3\,\Omega$Across a 10 V supply.
 
 **Answer.** $R_{\parallel} = \frac◆LB◆2 \times 4◆RB◆◆LB◆2+4◆RB◆ = \frac{8}{6} = 1.33\,\Omega$.
 $R_{\mathrm{total}} = 1.33 + 3 = 4.33\,\Omega$.
@@ -613,12 +613,12 @@ A. $\checkmark$
 <details>
 <summary>Problem 10</summary>
 Explain why a voltmeter should have a very high resistance and an ammeter should have a very low
-resistance.
+Resistance.
 
 **Answer.** A voltmeter is connected in parallel across a component. To avoid drawing significant
-current and altering the circuit, its resistance should be very high (ideally infinite). An ammeter
-is connected in series with a component. To avoid dropping significant voltage and altering the
-circuit, its resistance should be very low (ideally zero).
+Current and altering the circuit, its resistance should be very high (ideally infinite). An ammeter
+Is connected in series with a component. To avoid dropping significant voltage and altering the
+Circuit, its resistance should be very low (ideally zero).
 
 <b>If you get this wrong, revise:</b> [Kirchhoff's Laws](#1-kirchhoffs-laws)
 
@@ -643,7 +643,7 @@ $V_{\mathrm{out}} = 15 \times \frac{500}{10000 + 500} = 15 \times \frac{500}{105
 <details>
 <summary>Problem 12</summary>
 A cell of e.m.f. $\mathcal{E}$ and internal resistance $r$ delivers maximum power to an external
-load. Prove that maximum power is delivered when $R = r$, and find the efficiency at this condition.
+Load. Prove that maximum power is delivered when $R = r$And find the efficiency at this condition.
 
 **Answer.** $P = \left(\frac◆LB◆\mathcal{E}◆RB◆◆LB◆R+r◆RB◆\right)^2 R = \frac◆LB◆\mathcal{E}^2 R◆RB◆◆LB◆(R+r)^2◆RB◆$.
 
@@ -663,7 +663,7 @@ $= P_{\mathrm{load}}/P_{\mathrm{total}} = 1/2 = 50\%$.
 
 <details>
 <summary>Problem 13</summary>
-A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$, and $R_3 = 200\,\Omega$. Find $R_4$ for balance.
+A Wheatstone bridge has $R_1 = 120\,\Omega$$R_2 = 180\,\Omega$And $R_3 = 200\,\Omega$. Find $R_4$ for balance.
 
 **Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆180 \times 200◆RB◆◆LB◆120◆RB◆ = 300\,\Omega$.
 
@@ -715,7 +715,7 @@ $R_s = \frac◆LB◆V_{\mathrm{range}}◆RB◆◆LB◆I_g◆RB◆ - R_g = \frac�
 
 <details>
 <summary>Problem 17</summary>
-In a two-loop circuit: Loop 1 has a 24 V battery with $R_1 = 3\,\Omega$, loop 2 has a 12 V battery with $R_2 = 6\,\Omega$, and the shared branch has $R_3 = 4\,\Omega$. Both batteries drive current clockwise. Find the current through $R_3$.
+In a two-loop circuit: Loop 1 has a 24 V battery with $R_1 = 3\,\Omega$Loop 2 has a 12 V battery with $R_2 = 6\,\Omega$And the shared branch has $R_3 = 4\,\Omega$. Both batteries drive current clockwise. Find the current through $R_3$.
 
 **Answer.** Assign $I_1$ (loop 1, CW) and $I_2$ (loop 2, CW).
 
@@ -753,7 +753,7 @@ $S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **DC Circuits**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dc-circuits) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits with other physics topics to test synthesis under exam conditions.
@@ -762,14 +762,26 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 :::
 
 :::danger
-danger
+Danger
 
-- **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The p.d. across each parallel branch equals the e.m.f. of the supply, not a fraction of it.
+- **Applying Kirchhoff's second law incorrectly to parallel circuits:** The sum of p.d.s around ANY closed loop equals the sum of e.m.f.s. In a parallel circuit, each branch is a separate loop. The p.d. Across each parallel branch equals the e.m.f. Of the supply, not a fraction of it.
 
 - **Confusing series and parallel resistance formulas:** For resistors in SERIES, resistances add (R_total = R1 + R2 + ...). For resistors in PARALLEL, the reciprocal formula applies (1/R_total = 1/R1 + 1/R2 + ...). Students frequently invert these. A useful check: the total parallel resistance is always LESS than the smallest individual resistor.
 
-- **Forgetting internal resistance in calculations:** When a battery has internal resistance r, the terminal p.d. (V = E - Ir) is LESS than the e.m.f. E. If a question gives both the e.m.f. and the terminal p.d., the difference is the p.d. across the internal resistance (lost volts = Ir).
+- **Forgetting internal resistance in calculations:** When a battery has internal resistance r, the terminal p.d. (V = E - Ir) is LESS than the e.m.f. E. If a question gives both the e.m.f. And the terminal p.d., the difference is the p.d. Across the internal resistance (lost volts = Ir).
 
 - **Misapplying the potential divider formula:** V_out = V_in * R2 / (R1 + R2) only works for two resistors in series with no load connected. If a load resistance is connected across R2, the effective resistance of the parallel combination must be used instead.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

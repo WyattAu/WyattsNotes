@@ -14,31 +14,31 @@ sidebar_position: 6
 
 :::info
 Board-Specific Note **CIE (9708)** requires formal proof of comparative advantage using
-numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
-from trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
-analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
-the impact of MNCs and requires evaluation of trade policies.
+Numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
+From trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
+Analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
+The impact of MNCs and requires evaluation of trade policies.
 :::
 
 ### 1.1 Absolute vs Comparative Advantage
 
 **Absolute advantage**: a country can produce more of a good with the same resources than another
-country (higher productivity).
+Country (higher productivity).
 
 **Comparative advantage** (Ricardo, 1817): a country should specialise in producing the goods for
-which it has the **lowest opportunity cost**, even if it has an absolute disadvantage in all goods.
+Which it has the **lowest opportunity cost**, even if it has an absolute disadvantage in all goods.
 
 ### 1.2 The Ricardian Model: Proof of Comparative Advantage
 
 **Proposition: Trade based on comparative advantage makes both countries better off.**
 
 _Setup._ Consider two countries, Home and Foreign, producing two goods, Cloth ($C$) and Wine ($W$),
-using one factor (labour). Unit labour requirements:
+Using one factor (labour). Unit labour requirements:
 
-|             | Cloth (labour per unit) | Wine (labour per unit) |
+| | Cloth (labour per unit) | Wine (labour per unit) |
 | ----------- | ----------------------- | ---------------------- |
-| **Home**    | $a_C = 2$               | $a_W = 4$              |
-| **Foreign** | $a_C = 6$               | $a_W = 3$              |
+| **Home** | $a_C = 2$ | $a_W = 4$ |
+| **Foreign** | $a_C = 6$ | $a_W = 3$ |
 
 Home has absolute advantage in Cloth ($2 \lt{} 6$). Foreign has absolute advantage in Wine
 ($3 \lt{} 4$).
@@ -51,7 +51,7 @@ $$\mathrm{OC of Cloth in terms of Wine:}$$
 - Foreign: $\frac{a_C}{a_W} = \frac{6}{3} = 2.0$ units of Wine per unit of Cloth
 
 Home has a **comparative advantage** in Cloth (lower OC: 0.5 &lt; 2.0). Foreign has a comparative
-advantage in Wine.
+Advantage in Wine.
 
 $$\mathrm{OC of Wine in terms of Cloth:}$$
 
@@ -64,18 +64,18 @@ Foreign has a comparative advantage in Wine (lower OC: 0.5 &lt; 2.0).
 
 _Autarky (no trade):_
 
-- Home: splits labour equally: $C = 1200/4 = 300$, $W = 1200/8 = 150$. Total: 300C + 150W.
-- Foreign: splits labour equally: $C = 1200/12 = 100$, $W = 1200/6 = 200$. Total: 100C + 200W.
+- Home: splits labour equally: $C = 1200/4 = 300$$W = 1200/8 = 150$. Total: 300C + 150W.
+- Foreign: splits labour equally: $C = 1200/12 = 100$$W = 1200/6 = 200$. Total: 100C + 200W.
 - World total: 400C + 350W.
 
 _Specialisation:_
 
-- Home specialises in Cloth: $C = 1200/2 = 600$, $W = 0$.
-- Foreign specialises in Wine: $C = 0$, $W = 1200/3 = 400$.
+- Home specialises in Cloth: $C = 1200/2 = 600$$W = 0$.
+- Foreign specialises in Wine: $C = 0$$W = 1200/3 = 400$.
 - World total: 600C + 400W.
 
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they
-trade at an exchange rate between the two opportunity cost ratios:
+Trade at an exchange rate between the two opportunity cost ratios:
 
 $$0.5 \mathrm{ W/C} \lt{} \mathrm{World price } p \lt{} 2.0 \mathrm{ W/C}$$
 
@@ -87,27 +87,27 @@ For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 Both are strictly better off. $\blacksquare$
 
 :::tip
-tip
-costs for both countries, (2) identify which country has the lower OC for each good, (3) show
-specialisation increases world output, (4) show a mutually beneficial exchange rate. Use a numerical
-example.
+Tip
+Costs for both countries, (2) identify which country has the lower OC for each good, (3) show
+Specialisation increases world output, (4) show a mutually beneficial exchange rate. Use a numerical
+Example.
 :::
 
 ### 1.3 Limitations of the Ricardian Model
 
 1. **Constant returns to scale**: assumes constant opportunity costs (linear PPF). In reality,
-   increasing opportunity costs (concave PPF) limit the degree of specialisation.
+ increasing opportunity costs (concave PPF) limit the degree of specialisation.
 2. **One factor of production**: ignores capital, land, and technology differences.
 3. **Zero transport costs**: in reality, transport costs reduce the gains from trade and may prevent
-   trade in some goods.
+ trade in some goods.
 4. **Perfect labour mobility within countries**: workers can move freely between sectors.
 5. **No trade barriers**: tariffs and quotas reduce the gains from trade.
 6. **Complete specialisation**: in practice, countries rarely specialise completely due to
-   increasing opportunity costs.
+ increasing opportunity costs.
 
 **Heckscher-Ohlin model** (more advanced): countries export goods that intensively use their
-abundant factor. A capital-abundant country exports capital-intensive goods; a labour-abundant
-country exports labour-intensive goods.
+Abundant factor. A capital-abundant country exports capital-intensive goods; a labour-abundant
+Country exports labour-intensive goods.
 
 ## 2. Terms of Trade
 
@@ -120,9 +120,9 @@ $$\mathrm{ToT} = \frac◆LB◆\mathrm{Index of Export Prices}◆RB◆◆LB◆\ma
 ### 2.2 Interpretation
 
 - **ToT > 100 (improvement)**: export prices have risen relative to import prices. A given quantity
-  of exports buys more imports. This is beneficial — "favourable" terms of trade.
+ of exports buys more imports. This is beneficial — "favourable" terms of trade.
 - **ToT &lt; 100 (deterioration)**: export prices have fallen relative to import prices. A given
-  quantity of exports buys fewer imports. This is harmful — "adverse" terms of trade.
+ quantity of exports buys fewer imports. This is harmful — "adverse" terms of trade.
 - **ToT = 100**: no change from the base year.
 
 ### 2.3 Calculation
@@ -137,35 +137,35 @@ Base year (2020): Export price index = 100, Import price index = 100. ToT = 100.
 $$\mathrm{ToT}_{2024} = \frac{115}{125} \times 100 = 92$$
 
 Terms of trade deteriorated by 8%. The country needs to export 8.7% more (115/105 = 1.087) just to
-buy the same quantity of imports as in 2020.
+Buy the same quantity of imports as in 2020.
 
 </details>
 
 ### 2.4 Factors Affecting the Terms of Trade
 
-| Factor                                  | Effect on ToT                                                          |
+| Factor | Effect on ToT |
 | --------------------------------------- | ---------------------------------------------------------------------- |
-| Exchange rate appreciation              | Export prices rise, import prices fall → ToT improves                  |
-| Higher global demand for exports        | Export prices rise → ToT improves                                      |
-| Rising commodity prices (for importers) | Import prices rise → ToT deteriorates                                  |
-| Inflation differentials                 | If domestic inflation > trading partners' inflation → ToT deteriorates |
-| Technological progress in export sector | Unit costs fall → export prices may fall → ToT deteriorates            |
+| Exchange rate appreciation | Export prices rise, import prices fall → ToT improves |
+| Higher global demand for exports | Export prices rise → ToT improves |
+| Rising commodity prices (for importers) | Import prices rise → ToT deteriorates |
+| Inflation differentials | If domestic inflation > trading partners' inflation → ToT deteriorates |
+| Technological progress in export sector | Unit costs fall → export prices may fall → ToT deteriorates |
 
 :::warning
-warning
-deterioration is caused by cheaper imports (e.g., due to technological progress abroad), consumers
-benefit from lower prices. Conversely, an improvement caused by a fall in export volumes (due to
-declining competitiveness) may actually reflect economic weakness.
+Warning
+Deterioration is caused by cheaper imports (e.g., due to technological progress abroad), consumers
+Benefit from lower prices. Conversely, an improvement caused by a fall in export volumes (due to
+Declining competitiveness) may actually reflect economic weakness.
 :::
 
 ## 3. Exchange Rates
 
 :::info
-info
+Info
 Marshall-Lerner condition, and J-curve effects. **CIE (9708)** covers exchange rate determination,
-purchasing power parity, and the effects of exchange rate changes on the balance of payments.
+Purchasing power parity, and the effects of exchange rate changes on the balance of payments.
 **Edexcel** emphasises the UK context including Brexit impacts on trade and the pound. **OCR (A)**
-links exchange rates to macroeconomic policy objectives and requires evaluation of intervention.
+Links exchange rates to macroeconomic policy objectives and requires evaluation of intervention.
 :::
 
 ### 3.1 Definition
@@ -188,10 +188,10 @@ $$\mathrm{If } e \gt{} \bar{e} \mathrm{ (depreciation pressure): central bank se
 $$\mathrm{If } e \lt{} \bar{e} \mathrm{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
 
 Advantages: certainty for trade and investment, discipline on monetary policy (cannot inflate away
-the peg), reduces speculative volatility.
+The peg), reduces speculative volatility.
 
 Disadvantages: requires large foreign reserves, loss of independent monetary policy (impossible
-trinity), vulnerability to speculative attacks (e.g., Soros vs Bank of England, 1992 — Black
+Trinity), vulnerability to speculative attacks (e.g., Soros vs Bank of England, 1992 — Black
 Wednesday).
 
 **2. Floating exchange rate:**
@@ -201,7 +201,7 @@ The exchange rate is determined by market forces (supply and demand for the curr
 $$e^* : \mathrm{Supply of } £ = \mathrm{Demand for } £$$
 
 Advantages: automatic adjustment to BoP imbalances (deficit → depreciation → exports cheaper,
-imports dearer → deficit narrows), independent monetary policy, no need for large reserves.
+Imports dearer → deficit narrows), independent monetary policy, no need for large reserves.
 
 Disadvantages: volatility creates uncertainty for trade and investment, may overshoot (Dornbusch,
 1976), can be manipulated for competitive advantage (competitive devaluation).
@@ -209,7 +209,7 @@ Disadvantages: volatility creates uncertainty for trade and investment, may over
 **3. Managed (dirty) float:**
 
 The central bank allows the market to set the exchange rate but intervenes occasionally to smooth
-excessive fluctuations or achieve policy objectives.
+Excessive fluctuations or achieve policy objectives.
 
 $$\bar{e}_{\min} \lt{} e \lt{} \bar{e}_{\max}$$
 
@@ -217,19 +217,19 @@ $$\bar{e}_{\min} \lt{} e \lt{} \bar{e}_{\max}$$
 
 $$e = f(P, r, Y, Y^*, \mathrm{expectations, speculation})$$
 
-| Factor                   | Mechanism                                                                                                                                |
+| Factor | Mechanism |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Relative inflation rates | Higher domestic inflation → exports less competitive, imports more attractive → $e$ rises (depreciation) — purchasing power parity (PPP) |
-| Relative interest rates  | Higher domestic interest rates → capital inflows (hot money) → demand for £ rises → $e$ falls (appreciation)                             |
-| Relative growth rates    | Faster domestic growth → higher import demand → current account worsens → $e$ rises (depreciation)                                       |
-| Speculation              | If markets expect depreciation → sell £ → self-fulfilling depreciation                                                                   |
-| Current account balance  | Persistent deficit → downward pressure on currency                                                                                       |
-| Government debt          | High debt → lower confidence → capital outflows → depreciation                                                                           |
+| Relative interest rates | Higher domestic interest rates → capital inflows (hot money) → demand for £ rises → $e$ falls (appreciation) |
+| Relative growth rates | Faster domestic growth → higher import demand → current account worsens → $e$ rises (depreciation) |
+| Speculation | If markets expect depreciation → sell £ → self-fulfilling depreciation |
+| Current account balance | Persistent deficit → downward pressure on currency |
+| Government debt | High debt → lower confidence → capital outflows → depreciation |
 
 ### 3.4 Purchasing Power Parity (PPP)
 
 **Absolute PPP**: the exchange rate should equalise the price of identical baskets of goods across
-countries:
+Countries:
 
 $$e = \frac{P_{domestic}}{P_{foreign}}$$
 
@@ -238,21 +238,21 @@ $$e = \frac{P_{domestic}}{P_{foreign}}$$
 $$\frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆ \approx \pi_{domestic} - \pi_{foreign}$$
 
 PPP holds approximately in the long run but fails in the short run due to: trade barriers,
-non-traded goods, price stickiness, and speculation.
+Non-traded goods, price stickiness, and speculation.
 
 ## 4. The Marshall-Lerner Condition
 
 ### 4.1 Derivation
 
 The Marshall-Lerner condition determines whether a currency depreciation improves or worsens the
-current account.
+Current account.
 
 **Proposition: A depreciation improves the current account if and only if the sum of the price
-elasticities of demand for exports and imports (in absolute value) exceeds unity.**
+Elasticities of demand for exports and imports (in absolute value) exceeds unity.**
 
 $$|E_X| + |E_M| \gt{} 1$$
 
-where:
+Where:
 
 - $E_X = \frac◆LB◆\% \Delta Q_X◆RB◆◆LB◆\% \Delta P_X◆RB◆$ = price elasticity of demand for exports
 - $E_M = \frac◆LB◆\% \Delta Q_M◆RB◆◆LB◆\% \Delta P_M◆RB◆$ = price elasticity of demand for imports
@@ -261,36 +261,36 @@ where:
 
 $$CA = P_X \cdot X - e \cdot P_M^* \cdot M$$
 
-where $X$ = export volume, $M$ = import volume, $P_X$ = domestic currency price of exports, $P_M^*$
+Where $X$ = export volume, $M$ = import volume, $P_X$ = domestic currency price of exports, $P_M^*$
 = foreign currency price of imports, $e$ = exchange rate.
 
 A depreciation ($e$ rises) makes exports cheaper for foreigners ($P_X/e$ falls) and imports more
-expensive for domestic consumers ($e \cdot P_M^*$ rises). The effect on $CA$ depends on whether the
-volume responses are large enough to outweigh the price changes:
+Expensive for domestic consumers ($e \cdot P_M^*$ rises). The effect on $CA$ depends on whether the
+Volume responses are large enough to outweigh the price changes:
 
 $$\Delta CA \approx \left(\frac◆LB◆E_X \cdot P_X \cdot X◆RB◆◆LB◆P_X \cdot X + e \cdot P_M^* \cdot M◆RB◆\right) \times \left(|E_X| + |E_M| - 1\right) \times \frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆$$
 
 If $|E_X| + |E_M| \gt{} 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt{} 1$:
-the price effect dominates → $CA$ worsens (the country spends more on imports because they are more
-expensive, without selling enough extra exports). $\blacksquare$
+The price effect dominates → $CA$ worsens (the country spends more on imports because they are more
+Expensive, without selling enough extra exports). $\blacksquare$
 
 ### 4.2 The J-Curve Effect
 
 In the short run, $|E_X|$ and $|E_M|$ are low because contracts are fixed, consumers are slow to
-change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt{} 1$ initially → the
-current account **worsens** after a depreciation.
+Change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt{} 1$ initially → the
+Current account **worsens** after a depreciation.
 
 Over time (6–18 months), elasticities increase as consumers find substitutes and firms adjust
-production → $|E_X| + |E_M| \gt{} 1$ → the current account **improves**.
+Production → $|E_X| + |E_M| \gt{} 1$ → the current account **improves**.
 
 The path of the current account traces a **J-shape**:
 
 $$CA \mathrm{ falls initially, then rises above the starting level}$$
 
 :::tip
-tip
-distinguish between the short run (J-curve — CA may worsen) and the long run (Marshall-Lerner — CA
-improves). Draw the J-curve diagram. State the Marshall-Lerner condition explicitly.
+Tip
+Distinguish between the short run (J-curve — CA may worsen) and the long run (Marshall-Lerner — CA
+Improves). Draw the J-curve diagram. State the Marshall-Lerner condition explicitly.
 :::
 
 ## 5. Globalisation
@@ -298,16 +298,16 @@ improves). Draw the J-curve diagram. State the Marshall-Lerner condition explici
 ### 5.1 Definition
 
 **Globalisation** is the increasing interdependence of national economies through the growth of
-international trade, investment, capital flows, and migration.
+International trade, investment, capital flows, and migration.
 
 ### 5.2 Drivers of Globalisation
 
 1. **Technological change**: containerisation (shipping costs fell 80% from 1950–2000), the
-   internet, communication technology
+ internet, communication technology
 2. **Trade liberalisation**: GATT/WTO rounds, regional trade agreements (EU, NAFTA/USMCA, CPTPP)
 3. **Capital mobility**: deregulation of financial markets, floating exchange rates
 4. **Multinational corporations (MNCs)**: production spread across multiple countries (global value
-   chains)
+ chains)
 5. **Transport improvements**: air freight, high-speed rail
 
 ### 5.3 Benefits of Globalisation
@@ -323,24 +323,24 @@ international trade, investment, capital flows, and migration.
 ### 5.4 Costs of Globalisation
 
 1. **Inequality**: globalisation may increase within-country inequality (skilled workers gain,
-   unskilled workers lose from import competition). Stolper-Samuelson theorem: trade liberalisation
-   reduces the real wage of the scarce factor.
+ unskilled workers lose from import competition). Stolper-Samuelson theorem: trade liberalisation
+ reduces the real wage of the scarce factor.
 2. **Job losses in import-competing industries**: structural unemployment in manufacturing (e.g.,
-   Rust Belt in the US, northern England)
+ Rust Belt in the US, northern England)
 3. **Environmental degradation**: "race to the bottom" in environmental standards; increased
-   transport emissions
+ transport emissions
 4. **Loss of sovereignty**: international institutions (WTO, IMF) constrain domestic policy
 5. **Cultural homogenisation**: dominance of Western (especially American) culture
 6. **Vulnerability to external shocks**: global financial crises, supply chain disruptions
-   (COVID-19)
+ (COVID-19)
 7. **Exploitation**: sweatshop labour in developing countries, tax avoidance by MNCs
 
 ### 5.5 Evaluation
 
 Globalisation is not an unambiguous good or bad — it creates winners and losers. The policy
-challenge is to capture the benefits while compensating the losers (retraining programmes, regional
-development, social safety nets). The retreat from globalisation since ~2016 (Brexit, US-China trade
-war, reshoring) reflects these tensions.
+Challenge is to capture the benefits while compensating the losers (retraining programmes, regional
+Development, social safety nets). The retreat from globalisation since ~2016 (Brexit, US-China trade
+War, reshoring) reflects these tensions.
 
 ## 6. Economic Development
 
@@ -350,14 +350,14 @@ war, reshoring) reflects these tensions.
 
 - GDP per capita (PPP-adjusted for comparability)
 - GNI per capita (World Bank classification: low &lt;$1,145, lower-middle $1,146–$4,515,
-  upper-middle $4,516–$14,005, high \gt{}$14,005)
+ upper-middle $4,516–$14,005, high \gt{}$14,005)
 - GDP growth rate
 - Industrial structure (share of agriculture/manufacturing/services)
 
 **Social indicators:**
 
 - Human Development Index (HDI): composite of life expectancy, education (mean years + expected
-  years), and GNI per capita. $0 \leq HDI \leq 1$.
+ years), and GNI per capita. $0 \leq HDI \leq 1$.
 - Poverty rates ($1.90/day extreme poverty line)
 - Access to clean water, sanitation, electricity
 - Infant mortality rate, maternal mortality rate
@@ -368,86 +368,86 @@ war, reshoring) reflects these tensions.
 - **HDI** ($0 \leq \mathrm{HDI} \leq 1$): health + education + income
 - **Multidimensional Poverty Index (MPI)**: health, education, and living standards
 - **Genuine Progress Indicator (GPI)**: adjusts GDP for environmental costs, inequality, and unpaid
-  work
+ work
 
 :::warning
-warning
-ignores income distribution, (2) it doesn't capture health, education, or political freedom, (3) it
-is biased toward market activity (excludes subsistence farming, unpaid work). Always use multiple
-indicators.
+Warning
+Ignores income distribution, (2) it doesn't capture health, education, or political freedom, (3) it
+Is biased toward market activity (excludes subsistence farming, unpaid work). Always use multiple
+Indicators.
 :::
 
 ### 6.2 Barriers to Economic Development
 
 1. **Poverty trap**: low income → low savings → low investment → low growth → low income (vicious
-   cycle)
+ cycle)
 2. **Institutional failure**: corruption, weak property rights, poor governance (Acemoglu &
-   Robinson, 2012: "Why Nations Fail")
+ Robinson, 2012: "Why Nations Fail")
 3. **Human capital deficiency**: poor education and health reduce labour productivity
 4. **Infrastructure deficit**: inadequate transport, energy, and communications
 5. **Geography**: landlocked countries, tropical climate, disease burden (Sachs, 2005)
 6. **Demographic trap**: high population growth outpaces economic growth → falling GDP per capita
 7. **Conflict and political instability**: war destroys physical and human capital, discourages
-   investment
+ investment
 8. **Terms of trade**: primary commodity exporters face volatile and declining terms of trade
-   (Prebisch-Singer hypothesis)
+ (Prebisch-Singer hypothesis)
 9. **Debt burden**: heavy debt servicing crowds out public spending on health and education
 10. **Brain drain**: skilled workers emigrate to developed countries
 
 ### 6.3 Strategies for Economic Development
 
 1. **Industrialisation**: moving from agriculture to manufacturing (Lewis dual-sector model). East
-   Asian "tiger" economies followed export-oriented industrialisation.
+ Asian "tiger" economies followed export-oriented industrialisation.
 2. **Import substitution industrialisation (ISI)**: replacing imports with domestic production
-   (Latin America, 1950s–70s). Often led to inefficient, uncompetitive industries.
+ (Latin America, 1950s–70s). Often led to inefficient, uncompetitive industries.
 3. **Export-oriented industrialisation**: focusing on producing goods for export (South Korea,
-   Taiwan, Singapore). Higher growth rates than ISI.
+ Taiwan, Singapore). Higher growth rates than ISI.
 4. **Agricultural reform**: land reform, investment in irrigation and seeds (Green Revolution in
-   India).
+ India).
 5. **Investment in human capital**: universal education, healthcare, gender equality (World Bank,
-   2018: 25% of GDP growth attributed to improved health and education).
+ 2018: 25% of GDP growth attributed to improved health and education).
 6. **Institutional reform**: anti-corruption measures, strengthening property rights, rule of law.
 7. **Foreign aid**: can provide capital, technology, and expertise. But may create dependency and be
-   misappropriated. Effective aid targets institutions and infrastructure, not just cash transfers.
+ misappropriated. Effective aid targets institutions and infrastructure, not just cash transfers.
 8. **Microfinance**: small loans to entrepreneurs in developing countries (Grameen Bank, Muhammad
-   Yunus).
+ Yunus).
 9. **Debt relief**: HIPC (Heavily Indebted Poor Countries) Initiative, cancelled debt for qualifying
-   countries.
+ countries.
 
 ## 7. Trading Blocs and Protectionism
 
 ### 7.1 Types of Trading Blocs
 
-| Type                | Definition                                                     | Example               |
+| Type | Definition | Example |
 | ------------------- | -------------------------------------------------------------- | --------------------- |
-| **Free trade area** | No tariffs between members, but each sets own external tariffs | NAFTA/USMCA           |
-| **Customs union**   | Free trade + common external tariff                            | EU (as customs union) |
-| **Common market**   | Customs union + free movement of factors of production         | EU single market      |
-| **Monetary union**  | Common market + single currency + common central bank          | Eurozone              |
-| **Economic union**  | Monetary union + harmonised fiscal and structural policies     | EU (partial)          |
+| **Free trade area** | No tariffs between members, but each sets own external tariffs | NAFTA/USMCA |
+| **Customs union** | Free trade + common external tariff | EU (as customs union) |
+| **Common market** | Customs union + free movement of factors of production | EU single market |
+| **Monetary union** | Common market + single currency + common central bank | Eurozone |
+| **Economic union** | Monetary union + harmonised fiscal and structural policies | EU (partial) |
 
 ### 7.2 Trade Creation vs Trade Diversion
 
 **Trade creation** (Viner, 1950): a trading bloc replaces high-cost domestic production with
-lower-cost imports from a member country. This increases efficiency.
+Lower-cost imports from a member country. This increases efficiency.
 
 **Trade diversion**: a trading bloc replaces low-cost imports from a non-member with higher-cost
-imports from a member country (due to preferential tariffs). This reduces efficiency.
+Imports from a member country (due to preferential tariffs). This reduces efficiency.
 
 ### 7.3 Protectionist Policies
 
-| Policy                      | Mechanism                                   | Effect                                                   |
+| Policy | Mechanism | Effect |
 | --------------------------- | ------------------------------------------- | -------------------------------------------------------- |
-| **Tariff**                  | Tax on imports                              | Raises import price → reduces imports, generates revenue |
-| **Quota**                   | Physical limit on imports                   | Restricts supply → raises import price                   |
-| **Subsidy**                 | Payment to domestic producers               | Lowers domestic cost → competitive vs imports            |
-| **Administrative barriers** | Health/safety standards, customs procedures | Raises cost/delay of importing                           |
-| **Embargo**                 | Complete ban on imports/exports             | Eliminates trade in the targeted good                    |
+| **Tariff** | Tax on imports | Raises import price → reduces imports, generates revenue |
+| **Quota** | Physical limit on imports | Restricts supply → raises import price |
+| **Subsidy** | Payment to domestic producers | Lowers domestic cost → competitive vs imports |
+| **Administrative barriers** | Health/safety standards, customs procedures | Raises cost/delay of importing |
+| **Embargo** | Complete ban on imports/exports | Eliminates trade in the targeted good |
 
 **Welfare analysis of a tariff**:
 
 Consumer surplus falls by more than producer surplus and government revenue increase → **net welfare
-loss** (deadweight loss from inefficient domestic production and reduced consumption).
+Loss** (deadweight loss from inefficient domestic production and reduced consumption).
 
 $$\mathrm{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{domestic}) = \frac{1}{2} t \times \Delta Q$$
 
@@ -456,7 +456,7 @@ $$\mathrm{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s
 **Problem 1.** Country A can produce 10 cars or 5 trucks per worker per month. Country B can produce
 6 cars or 6 trucks per worker per month. (a) Which country has an absolute advantage in each good?
 (b) Calculate opportunity costs. (c) Which country should specialise in which good? (d) Show that
-trade can benefit both countries.
+Trade can benefit both countries.
 
 <details>
 <summary>Hint</summary>
@@ -464,8 +464,8 @@ trade can benefit both countries.
 </details>
 
 **Problem 2.** A country's export price index rises from 120 to 132, while its import price index
-rises from 100 to 120. (a) Calculate the initial and new terms of trade. (b) Has the ToT improved or
-deteriorated? (c) Explain why this may not be entirely beneficial.
+Rises from 100 to 120. (a) Calculate the initial and new terms of trade. (b) Has the ToT improved or
+Deteriorated? (c) Explain why this may not be entirely beneficial.
 
 <details>
 <summary>Hint</summary>
@@ -473,9 +473,9 @@ deteriorated? (c) Explain why this may not be entirely beneficial.
 </details>
 
 **Problem 3.** The exchange rate falls from $1.50/£ to $1.20/£. (a) Has the pound appreciated or
-depreciated? (b) If the price elasticity of demand for exports is 0.6 and for imports is 0.8, use
-the Marshall-Lerner condition to determine the short-run effect on the current account. (c) Explain
-the J-curve effect.
+Depreciated? (b) If the price elasticity of demand for exports is 0.6 and for imports is 0.8, use
+The Marshall-Lerner condition to determine the short-run effect on the current account. (c) Explain
+The J-curve effect.
 
 <details>
 <summary>Hint</summary>
@@ -483,8 +483,8 @@ the J-curve effect.
 </details>
 
 **Problem 4.** Explain the advantages and disadvantages of a fixed exchange rate system compared
-with a floating exchange rate system. In your answer, refer to the concept of the "impossible
-trinity" (trilemma).
+With a floating exchange rate system. In your answer, refer to the concept of the "impossible
+Trinity" (trilemma).
 
 <details>
 <summary>Hint</summary>
@@ -492,7 +492,7 @@ The impossible trinity: a country cannot simultaneously have (1) free capital mo
 </details>
 
 **Problem 5.** Evaluate the argument that globalisation has increased income inequality both within
-and between countries.
+And between countries.
 
 <details>
 <summary>Hint</summary>
@@ -500,7 +500,7 @@ Between countries: globalisation has *reduced* inequality between nations — Ch
 </details>
 
 **Problem 6.** "Foreign aid is an effective strategy for promoting economic development." Evaluate
-this statement.
+This statement.
 
 <details>
 <summary>Hint</summary>
@@ -508,7 +508,7 @@ Arguments for: (1) Provides capital that poor countries cannot generate domestic
 </details>
 
 **Problem 7.** Using AD/AS analysis, explain the effects of a depreciation of the exchange rate on
-the domestic economy. Under what conditions might a depreciation be inflationary?
+The domestic economy. Under what conditions might a depreciation be inflationary?
 
 <details>
 <summary>Hint</summary>
@@ -516,7 +516,7 @@ AD effects: depreciation makes exports cheaper and imports dearer → net export
 </details>
 
 **Problem 8.** Explain the Prebisch-Singer hypothesis. Why might developing countries that
-specialise in primary commodity exports face a long-term deterioration in their terms of trade?
+Specialise in primary commodity exports face a long-term deterioration in their terms of trade?
 
 <details>
 <summary>Hint</summary>
@@ -524,8 +524,8 @@ Prebisch-Singer hypothesis: the terms of trade for primary commodity exporters d
 </details>
 
 **Problem 9.** A customs union is formed between three countries. Explain the difference between
-trade creation and trade diversion. Under what conditions is a customs union more likely to create
-trade than divert it?
+Trade creation and trade diversion. Under what conditions is a customs union more likely to create
+Trade than divert it?
 
 <details>
 <summary>Hint</summary>
@@ -533,7 +533,7 @@ Trade creation: the union replaces high-cost domestic production with lower-cost
 </details>
 
 **Problem 10.** "A country with a persistent current account deficit should devalue its currency to
-restore balance." Evaluate this policy recommendation.
+Restore balance." Evaluate this policy recommendation.
 
 <details>
 <summary>Hint</summary>
@@ -541,7 +541,7 @@ Devaluation could help: (1) Makes exports cheaper, imports dearer → improves t
 </details>
 
 **Problem 11.** Compare and contrast import substitution industrialisation (ISI) with
-export-oriented industrialisation (EOI). Use examples to illustrate your answer.
+Export-oriented industrialisation (EOI). Use examples to illustrate your answer.
 
 <details>
 <summary>Hint</summary>
@@ -549,7 +549,7 @@ ISI: replace imports with domestic production behind tariff walls. Examples: Lat
 </details>
 
 **Problem 12.** Explain how the UK's decision to leave the EU (Brexit) can be analysed using the
-theory of comparative advantage and the concept of trade creation and diversion.
+Theory of comparative advantage and the concept of trade creation and diversion.
 
 <details>
 <summary>Hint</summary>
@@ -593,7 +593,7 @@ $$|\text{PED}_X| + |\text{PED}_M| > 1$$
 
 $$CA = P_X \cdot X(P_X^*) - P_M^* \cdot e \cdot M$$
 
-where $P_X$ is the export price in domestic currency, $X$ is export volume, $P_M^*$ is the import price in foreign currency, $e$ is the exchange rate (domestic currency per foreign currency), and $M$ is import volume.
+Where $P_X$ is the export price in domestic currency, $X$ is export volume, $P_M^*$ is the import price in foreign currency, $e$ is the exchange rate (domestic currency per foreign currency), and $M$ is import volume.
 
 After depreciation ($e \uparrow$), export volumes rise ($\Delta X > 0$ since exports are cheaper abroad) and import volumes fall ($\Delta M < 0$ since imports are more expensive). The effect on the trade balance depends on whether the volume effect dominates the price effect.
 
@@ -605,9 +605,9 @@ If trade is initially balanced ($P_X \cdot X = P_M^* \cdot e \cdot M$), this sim
 
 $$\epsilon_X + \epsilon_M > 1$$
 
-Since $\epsilon_X = |\text{PED}_X|$ and $\epsilon_M = |\text{PED}_M|$, the condition is $|\text{PED}_X| + |\text{PED}_M| > 1$. $\blacksquare$
+Since $\epsilon_X = |\text{PED}_X|$ and $\epsilon_M = |\text{PED}_M|$The condition is $|\text{PED}_X| + |\text{PED}_M| > 1$. $\blacksquare$
 
-**Empirical estimates for the UK.** The UK's price elasticity of demand for exports is approximately 0.5-0.7 in the short run and 1.0-1.5 in the long run. The price elasticity of demand for imports is approximately 0.3-0.5 in the short run and 0.8-1.2 in the long run. In the short run, $|\text{PED}_X| + |\text{PED}_M| \approx 0.8 - 1.2$, which may be below 1, consistent with the J-curve effect. In the long run, the sum exceeds 1, so depreciation does improve the current account.
+**Empirical estimates for the UK.** The UK's price elasticity of demand for exports is approximately 0.5-0.7 in the short run and 1.0-1.5 in the long run. The price elasticity of demand for imports is approximately 0.3-0.5 in the short run and 0.8-1.2 in the long run. In the short run, $|\text{PED}_X| + |\text{PED}_M| \approx 0.8 - 1.2$Which may be below 1, consistent with the J-curve effect. In the long run, the sum exceeds 1, so depreciation does improve the current account.
 
 ### 13.2 J-Curve Effect: Worked Example
 
@@ -629,7 +629,7 @@ The **terms of trade (ToT)** measure the ratio of export prices to import prices
 
 $$\text{ToT} = \frac{P_X}{P_M} \times 100$$
 
-where $P_X$ is the export price index and $P_M$ is the import price index.
+Where $P_X$ is the export price index and $P_M$ is the import price index.
 
 **Improvement** ($\text{ToT} \uparrow$): export prices rise relative to import prices. Each unit of exports buys more imports. This is beneficial IF caused by higher export demand (increased quality, innovation). It may be harmful IF caused by falling import demand (global recession).
 
@@ -689,7 +689,7 @@ If UK inflation is 5% and US inflation is 3%, the pound should depreciate by app
 **Analysis of the mechanism (8 marks):**
 - Depreciation makes UK exports cheaper abroad and imports more expensive.
 - This should increase export volumes and decrease import volumes, improving the trade balance.
-- Chain of reasoning: $e \downarrow \Rightarrow P_X^* \downarrow \Rightarrow X \uparrow$, $P_M \uparrow \Rightarrow M \downarrow$, $(X - M) \uparrow$.
+- Chain of reasoning: $e \downarrow \Rightarrow P_X^* \downarrow \Rightarrow X \uparrow$$P_M \uparrow \Rightarrow M \downarrow$$(X - M) \uparrow$.
 - Diagram showing the effect on the trade balance over time (J-curve).
 
 **Conditions for correction (8 marks):**
@@ -823,8 +823,8 @@ Imports from B: $Q_D(80) - Q_S(80) = 140$ (same quantity). No tariff revenue (fr
 
 **Trade creation vs trade diversion:**
 - Trade creation: the removal of the tariff on B reduces the price from 100 (B's price + tariff) to 80. Previously, A produced some wheat domestically that it now imports from B more cheaply.
-  Domestic production falls from 100 to 80 (20 million tonnes of trade created).
-  Welfare gain from trade creation: $\frac{1}{2}(100 - 80)(20) = 200$.
+ Domestic production falls from 100 to 80 (20 million tonnes of trade created).
+ Welfare gain from trade creation: $\frac{1}{2}(100 - 80)(20) = 200$.
 
 - Trade diversion: previously, A imported from C at 80 (60 + 20). Now A imports from B at 80. The cost is the same! There is no trade diversion in this case.
 
@@ -832,27 +832,27 @@ Imports from B: $Q_D(80) - Q_S(80) = 140$ (same quantity). No tariff revenue (fr
 
 If the tariff on C were 10 (not 20): price from C = 70. Imports from C = $Q_D(70) - Q_S(70) = 230 - 70 = 160$. Tariff revenue = $10 \times 160 = 1600$.
 
-After customs union: A imports from B at 80 (no tariff). Price from C = 60 + 10 = 70. But A cannot import from C at 70 because... actually, in a customs union, the external tariff is common. If the common external tariff is 20: price from C = 80. Price from B = 80. No change.
+After customs union: A imports from B at 80 (no tariff). Price from C = 60 + 10 = 70. But A cannot import from C at 70 because... Actually, in a customs union, the external tariff is common. If the common external tariff is 20: price from C = 80. Price from B = 80. No change.
 
 If the common external tariff is 10: price from C = 70. Price from B = 80. A imports from C (cheaper). No trade diversion.
 
 **For trade diversion to occur, the partner's price must be between the world price (without tariff) and the world price (with tariff):**
-$P_C < P_B < P_C + t$. Here: $60 < 80 < 60 + 20 = 80$. Since $P_B = P_C + t$, trade diversion is marginal.
+$P_C < P_B < P_C + t$. Here: $60 < 80 < 60 + 20 = 80$. Since $P_B = P_C + t$Trade diversion is marginal.
 
-**Better example:** $P_C = 50$, $P_B = 80$, tariff on C = 20. Price from C = 70. Imports from C = 160.
+**Better example:** $P_C = 50$$P_B = 80$Tariff on C = 20. Price from C = 70. Imports from C = 160.
 After customs union (common tariff 20): price from C = 70. Price from B = 80. A imports from C (still cheaper). No trade diversion.
 
 **Trade diversion requires $P_B < P_C + t_{CU}$ but $P_B > P_C$:**
-$P_C = 50$, $P_B = 65$, tariff on C = 20. Before CU: price from C = 70, from B = 85 (with tariff 20). A imports from C: 160 million tonnes. Tariff revenue = $20 \times 160 = 3200$.
+$P_C = 50$$P_B = 65$Tariff on C = 20. Before CU: price from C = 70, from B = 85 (with tariff 20). A imports from C: 160 million tonnes. Tariff revenue = $20 \times 160 = 3200$.
 
 After CU (no tariff on B, tariff on C = 20): price from B = 65, from C = 70. A imports from B: 140 million tonnes. Tariff revenue = 0.
 
 Trade creation: domestic production falls from 70 to 65 (5 million tonnes). Gain $= \frac{1}{2}(65 - 65)... $ This is getting confused. Let me simplify.
 
 $Q_D = 300 - P$. $Q_S = P$.
-Before CU (import from C at 70): $Q_D = 230$, $Q_S = 70$. Imports = 160. CS = $\frac{1}{2}(300 - 70)(230) = 26450$. PS = $\frac{1}{2}(70)(70) = 2450$. Government revenue = 3200. Total welfare = 32100.
+Before CU (import from C at 70): $Q_D = 230$$Q_S = 70$. Imports = 160. CS = $\frac{1}{2}(300 - 70)(230) = 26450$. PS = $\frac{1}{2}(70)(70) = 2450$. Government revenue = 3200. Total welfare = 32100.
 
-After CU (import from B at 65): $Q_D = 235$, $Q_S = 65$. Imports = 170. CS = $\frac{1}{2}(300 - 65)(235) = 27612.5$. PS = $\frac{1}{2}(65)(65) = 2112.5$. Government revenue = 0. Total welfare = 29725.
+After CU (import from B at 65): $Q_D = 235$$Q_S = 65$. Imports = 170. CS = $\frac{1}{2}(300 - 65)(235) = 27612.5$. PS = $\frac{1}{2}(65)(65) = 2112.5$. Government revenue = 0. Total welfare = 29725.
 
 Net welfare change: $29725 - 32100 = -2375$. The customs union REDUCES welfare! This is because trade diversion (switching from low-cost C to higher-cost B) outweighs trade creation (lower domestic production).
 
@@ -981,7 +981,7 @@ If money growth is 15% per year (due to fiscal deficit financing) and the anchor
 After 1 year: $e_{shadow}/e_{peg} = 1.10$ (10% overvaluation).
 After 2 years: $e_{shadow}/e_{peg} = 1.21$ (21% overvaluation).
 
-**Speculative attack timing:** Speculators attack when $e_{shadow} > e_{peg}$, i.e., when the expected devaluation exceeds the cost of attacking (the interest rate differential).
+**Speculative attack timing:** Speculators attack when $e_{shadow} > e_{peg}$I.e., when the expected devaluation exceeds the cost of attacking (the interest rate differential).
 
 If the domestic interest rate is 15% and the US interest rate is 5%, the cost of borrowing pesos to sell is 10% per year. Speculators will attack if they expect a devaluation of more than 10%.
 
@@ -1001,3 +1001,11 @@ The speculative attack likely occurs in year 2 or 3, when reserves are still pos
 2. The first-generation model (Krugman, 1979) predicts that currency crises are inevitable when fundamentals deteriorate -- they are not random events.
 3. Early warning indicators: rapid reserve loss, large fiscal deficits, overvalued real exchange rate, widening current account deficit.
 4. The optimal policy is to abandon the peg BEFORE reserves are exhausted, rather than fighting a losing battle.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

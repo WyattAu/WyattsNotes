@@ -11,13 +11,13 @@ slug: io-nio-path-api
 ## Classic I/O (java.io)
 
 The `java.io` package has been part of the platform since JDK 1.0. It is stream-oriented: open a
-stream, read or write bytes or characters sequentially, and close it. Despite NIO (JDK 1.4) and
+Stream, read or write bytes or characters sequentially, and close it. Despite NIO (JDK 1.4) and
 NIO.2 (JDK 7), classic I/O remains the foundation for most Java programs.
 
 ### InputStream and OutputStream Hierarchy
 
 All byte-oriented I/O in `java.io` derives from `InputStream` and `OutputStream`. The concrete
-subclasses handle specific data sources and sinks.
+Subclasses handle specific data sources and sinks.
 
 ```
 InputStream (abstract)
@@ -39,9 +39,9 @@ OutputStream (abstract)
 └── PipedOutputStream      — writes to a PipedInputStream (inter-thread)
 ```
 
-The core contract is minimal: `read()` (one byte), `read(byte[])`, `read(byte[], off, len)` for
-input, and `write(int)`, `write(byte[])`, `write(byte[], off, len)` for output. The single-byte
-methods are slow; use the bulk methods or wrap with a buffered stream.
+The core contract is minimal: `read()` (one byte), `read(byte[])``read(byte[], off, len)` for
+Input, and `write(int)``write(byte[])``write(byte[], off, len)` for output. The single-byte
+Methods are slow; use the bulk methods or wrap with a buffered stream.
 
 ```java
 try (FileInputStream fis = new FileInputStream("data.bin")) {
@@ -54,7 +54,7 @@ try (FileInputStream fis = new FileInputStream("data.bin")) {
 ```
 
 `FilterInputStream` and `FilterOutputStream` implement the decorator pattern. You layer
-functionality by wrapping one stream inside another:
+Functionality by wrapping one stream inside another:
 
 ```java
 try (DataInputStream dis = new DataInputStream(
@@ -69,13 +69,13 @@ try (DataInputStream dis = new DataInputStream(
 ```
 
 The `FilterInputStream`/`FilterOutputStream` classes themselves are mostly pass-through; the
-interesting behavior is in their subclasses (`BufferedInputStream`, `DataInputStream`,
-`PushbackInputStream`, etc.).
+Interesting behavior is in their subclasses (`BufferedInputStream``DataInputStream`
+`PushbackInputStream`Etc.).
 
 ### Reader and Writer Hierarchy
 
 The `Reader`/`Writer` hierarchy (JDK 1.1) handles character I/O with charset conversion. The default
-encoding is the platform default charset, which is a source of subtle bugs.
+Encoding is the platform default charset, which is a source of subtle bugs.
 
 ```
 Reader (abstract)
@@ -141,15 +141,15 @@ try (var in = new BufferedInputStream(new FileInputStream("large.bin"));
 ```
 
 `BufferedWriter.newLine()` writes the platform-dependent line separator. `BufferedReader.readLine()`
-strips the line terminator and returns `null` at end-of-stream. If you need to distinguish between
-`\n`, `\r\n`, and `\r`, use character-level reading instead. `BufferedReader` also exposes `lines()`
-which returns a `Stream&lt;String&gt;`.
+Strips the line terminator and returns `null` at end-of-stream. If you need to distinguish between
+`\n``\r\n`And `\r`Use character-level reading instead. `BufferedReader` also exposes `lines()`
+Which returns a `Stream&lt;String&gt;`.
 
 ### File I/O Patterns with try-with-resources
 
 Try-with-resources (JDK 7) is the correct way to manage I/O resources. Every stream, reader, writer,
-channel, and `Scanner` implements `AutoCloseable`. Resources are closed in reverse declaration order
-even if an exception is thrown.
+Channel, and `Scanner` implements `AutoCloseable`. Resources are closed in reverse declaration order
+Even if an exception is thrown.
 
 ```java
 // Reading a text file line by line (the most common pattern)
@@ -182,11 +182,11 @@ try (InputStream in = new BufferedInputStream(new FileInputStream(src));
 ```
 
 `InputStream.transferTo(OutputStream)` (JDK 9) copies all bytes from one stream to another using an
-internal buffer. No need for buffered wrappers for the copy itself.
+Internal buffer. No need for buffered wrappers for the copy itself.
 
 **Common Pitfall:** Forgetting to close a resource leaks file descriptors. In long-running
-applications, unclosed descriptors accumulate until the process hits the OS limit (`ulimit -n`). GC
-finalization is unreliable for cleanup.
+Applications, unclosed descriptors accumulate until the process hits the OS limit (`ulimit -n`). GC
+Finalization is unreliable for cleanup.
 
 **Common Pitfall:** `BufferedWriter` data is not visible to other processes until `flush()` or
 `close()`.
@@ -194,7 +194,7 @@ finalization is unreliable for cleanup.
 ### Serialization and Externalizable
 
 Java serialization (`java.io.Serializable`) converts an object graph into a byte stream and back. It
-is deceptively easy to use and deceptively hard to use correctly.
+Is deceptively easy to use and deceptively hard to use correctly.
 
 ```java
 public class User implements Serializable {
@@ -209,19 +209,19 @@ public class User implements Serializable {
 ```
 
 Serialization serializes the entire reachable object graph. Serializing a `HashMap` also serializes
-every key and value object.
+Every key and value object.
 
 **Common Pitfalls with Serialization:**
 
 - **`serialVersionUID` mismatch.** Not declaring it means the compiler generates one from the class
-  structure. Any change breaks deserialization. Always declare it explicitly.
+ structure. Any change breaks deserialization. Always declare it explicitly.
 - **Transient fields** are not automatically deserialized. Implement `readObject()` to restore them.
 - **Security risk.** Deserializing untrusted data is an RCE vector. Use `ObjectInputFilter` (JDK
-  9+).
+ 9+).
 - **Performance.** Slow compared to protobuf, Avro, or Jackson. Produces large byte streams.
 
 For finer control, implement `Externalizable` instead of `Serializable`. You must implement
-`writeExternal(ObjectOutput)` and `readExternal(ObjectInput)`, and provide a zero-arg constructor:
+`writeExternal(ObjectOutput)` and `readExternal(ObjectInput)`And provide a zero-arg constructor:
 
 ```java
 public class Config implements Externalizable {
@@ -251,45 +251,45 @@ public class Config implements Externalizable {
 ```
 
 **Recommendation:** Avoid Java serialization in new code. Use JSON (Jackson), Protocol Buffers, or
-another cross-platform format. Java serialization is only appropriate for deep-copying within a
-single JVM or integrating with legacy APIs.
+Another cross-platform format. Java serialization is only appropriate for deep-copying within a
+Single JVM or integrating with legacy APIs.
 
 ### Common Pitfalls with Classic I/O
 
 1. **Encoding mismatches.** Reading a UTF-8 file with the platform default charset corrupts
-   multi-byte characters. Always specify `StandardCharsets.UTF_8`.
+ multi-byte characters. Always specify `StandardCharsets.UTF_8`.
 2. **Resource leaks in exception paths.** Use try-with-resources. This still applies to resources
-   that are not `AutoCloseable` (e.g., some third-party library types).
+ that are not `AutoCloseable` (e.g., some third-party library types).
 3. **Swallowing exceptions in close().** If the main operation throws and `close()` also throws,
-   try-with-resources suppresses the close exception as an add-suppressed.
+ try-with-resources suppresses the close exception as an add-suppressed.
 4. **Buffering without flushing.** Data stays in the buffer until `flush()` or `close()`. If the
-   program crashes first, the data is lost.
+ program crashes first, the data is lost.
 5. **Mixing Readers and Streams.** Wrapping a `Reader` around an `InputStream` that is also being
-   read directly causes data corruption, because the `Reader`'s internal buffer consumes bytes that
-   the `InputStream` never sees.
+ read directly causes data corruption, because the `Reader`'s internal buffer consumes bytes that
+ the `InputStream` never sees.
 
 ---
 
 ## NIO.2 (java.nio.file) — The Path API
 
 NIO.2, introduced in JDK 7 (JSR 203), is a modern file API that addresses the deficiencies of
-`java.io.File`. The core types are `Path`, `Paths`, and `Files`.
+`java.io.File`. The core types are `Path``Paths`And `Files`.
 
 ### Path vs File Comparison
 
-| Feature           | `java.io.File`                         | `java.nio.file.Path`                                    |
+| Feature | `java.io.File` | `java.nio.file.Path` |
 | ----------------- | -------------------------------------- | ------------------------------------------------------- |
-| Mutability        | Mutable (state changes on each call)   | Immutable                                               |
-| Path operations   | Manual string manipulation             | `resolve()`, `normalize()`, `relativize()`              |
-| Symbolic links    | `getCanonicalPath()` (throws on error) | `Files.readSymbolicLink()`, `LinkOption.NOFOLLOW_LINKS` |
-| Metadata          | `length()`, `lastModified()`           | `Files.getAttribute()`, `Files.readAttributes()`        |
-| File watching     | Not supported                          | `WatchService`                                          |
-| Atomic operations | Not supported                          | `Files.move()` with `ATOMIC_MOVE`                       |
-| Error reporting   | Returns `false` on failure             | Throws checked exceptions with details                  |
+| Mutability | Mutable (state changes on each call) | Immutable |
+| Path operations | Manual string manipulation | `resolve()``normalize()``relativize()` |
+| Symbolic links | `getCanonicalPath()` (throws on error) | `Files.readSymbolicLink()``LinkOption.NOFOLLOW_LINKS` |
+| Metadata | `length()``lastModified()` | `Files.getAttribute()``Files.readAttributes()` |
+| File watching | Not supported | `WatchService` |
+| Atomic operations | Not supported | `Files.move()` with `ATOMIC_MOVE` |
+| Error reporting | Returns `false` on failure | Throws checked exceptions with details |
 
 `Path` is immutable and separates locating a file (`Path`) from accessing it (`Files`).
 `java.io.File` conflates both: its methods like `exists()` and `isDirectory()` query the filesystem
-but do not declare `SecurityException`.
+But do not declare `SecurityException`.
 
 ```java
 // Old way (java.io.File)
@@ -337,7 +337,7 @@ p.getFileName();   // report.txt
 
 **Common Pitfall:** `relativize()` requires both paths to have the same root component. Calling
 `Path.of("/a/b").relativize(Path.of("c/d"))` throws `IllegalArgumentException`. If you need to
-relativize across roots, you must handle the logic manually.
+Relativize across roots, you must handle the logic manually.
 
 **Common Pitfall:** `normalize()` does not access the filesystem. It only removes `.` and resolves
 `..` syntactically. It does not resolve symbolic links. Use `toRealPath()` to resolve symlinks
@@ -374,7 +374,7 @@ Files.write(Path.of("output.txt"), data, StandardCharsets.UTF_8);
 ```
 
 `Files.readString()` and `Files.writeString()` (JDK 11) are the simplest way to handle small text
-files. For large files, use `Files.lines()` or `BufferedReader`.
+Files. For large files, use `Files.lines()` or `BufferedReader`.
 
 **Common Pitfall:** `Files.readAllLines()` loads the entire file into memory. For large files, use
 `Files.lines()` which returns a lazy `Stream&lt;String&gt;`.
@@ -399,12 +399,12 @@ boolean deleted = Files.deleteIfExists(path);
 ```
 
 `StandardCopyOption.ATOMIC_MOVE` moves the file atomically (on supported filesystems). Critical for
-safe file replacement (write to temp file, then atomic move).
+Safe file replacement (write to temp file, then atomic move).
 
 **Common Pitfall:** `Files.delete()` throws `NoSuchFileException` if the file does not exist, and
 `DirectoryNotEmptyException` if the directory is not empty. Use `Files.deleteIfExists()` if you want
-to ignore a missing file, and use `Files.walkFileTree()` with `DELETE_ON_CLOSE` or manual recursion
-to delete a non-empty directory.
+To ignore a missing file, and use `Files.walkFileTree()` with `DELETE_ON_CLOSE` or manual recursion
+To delete a non-empty directory.
 
 ```java
 // Delete a non-empty directory
@@ -425,8 +425,8 @@ Files.walkFileTree(dir, new SimpleFileVisitor<>() {
 
 ### File Attributes and Permissions
 
-NIO.2 provides a rich attribute API through `Files.getAttribute()`, `Files.readAttributes()`, and
-the `BasicFileAttributes` interface.
+NIO.2 provides a rich attribute API through `Files.getAttribute()``Files.readAttributes()`And
+The `BasicFileAttributes` interface.
 
 ```java
 // Read basic attributes in a single system call
@@ -552,7 +552,7 @@ try (Stream<Path> paths = Files.walk(Path.of("src"))) {
 ```
 
 **Common Pitfall:** `Files.walk()` opens a directory stream internally; use try-with-resources or
-handles leak. It follows symlinks by default, which can loop if a symlink points to an ancestor. Use
+Handles leak. It follows symlinks by default, which can loop if a symlink points to an ancestor. Use
 `LinkOption.NOFOLLOW_LINKS` with `walkFileTree()` to prevent this.
 
 ---
@@ -560,24 +560,24 @@ handles leak. It follows symlinks by default, which can loop if a symlink points
 ## NIO Channels and Buffers (java.nio)
 
 The `java.nio` package (JDK 1.4) introduces channels and buffers. Channels are bidirectional and can
-operate in non-blocking mode. Buffers provide direct control over memory layout, including off-heap
+Operate in non-blocking mode. Buffers provide direct control over memory layout, including off-heap
 (native) memory.
 
 ### Channel Abstraction
 
 A `Channel` represents an open connection to an I/O source or sink. Unlike streams, channels are
-bidirectional where supported and support scatter/gather I/O (multiple buffers in a single call).
+Bidirectional where supported and support scatter/gather I/O (multiple buffers in a single call).
 
 Key channel types:
 
-| Channel               | Direction   | Blocking/Non-blocking | Use case                   |
+| Channel | Direction | Blocking/Non-blocking | Use case |
 | --------------------- | ----------- | --------------------- | -------------------------- |
-| `FileChannel`         | Read/Write  | Blocking only         | File I/O                   |
-| `DatagramChannel`     | Read/Write  | Both                  | UDP                        |
-| `SocketChannel`       | Read/Write  | Both                  | TCP client                 |
-| `ServerSocketChannel` | Accept only | Both                  | TCP server                 |
-| `Pipe.SourceChannel`  | Read only   | Blocking only         | Inter-thread communication |
-| `Pipe.SinkChannel`    | Write only  | Blocking only         | Inter-thread communication |
+| `FileChannel` | Read/Write | Blocking only | File I/O |
+| `DatagramChannel` | Read/Write | Both | UDP |
+| `SocketChannel` | Read/Write | Both | TCP client |
+| `ServerSocketChannel` | Accept only | Both | TCP server |
+| `Pipe.SourceChannel` | Read only | Blocking only | Inter-thread communication |
+| `Pipe.SinkChannel` | Write only | Blocking only | Inter-thread communication |
 
 You obtain a `FileChannel` from a stream or directly:
 
@@ -598,7 +598,7 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
 ### ByteBuffer
 
 `ByteBuffer` is the fundamental buffer type. It wraps a block of memory (heap or direct) and
-maintains four pointers that control how data is read and written:
+Maintains four pointers that control how data is read and written:
 
 ```
 +-------------------+------------------+------------------+
@@ -612,7 +612,7 @@ maintains four pointers that control how data is read and written:
 - **capacity**: the total size of the buffer, set at creation and never changed.
 - **position**: the index of the next element to be read or written.
 - **limit**: the first index that should not be read or written.
-- **mark**: a saved position (optional, set with `mark()`, restored with `reset()`).
+- **mark**: a saved position (optional, set with `mark()`Restored with `reset()`).
 
 Invariant: `0 &lt;= mark &lt;= position &lt;= limit &lt;= capacity`
 
@@ -627,9 +627,9 @@ ByteBuffer direct = ByteBuffer.allocateDirect(8192);
 ```
 
 Heap buffers are cheaper to allocate (GC-managed) and faster for small operations. Direct buffers
-use native memory (`malloc`/`mmap`), avoid an extra copy during channel I/O, but are expensive to
-allocate and deallocate relies on a `Cleaner` (JDK 9+). Use heap by default; direct for large,
-repeated I/O.
+Use native memory (`malloc`/`mmap`), avoid an extra copy during channel I/O, but are expensive to
+Allocate and deallocate relies on a `Cleaner` (JDK 9+). Use heap by default; direct for large,
+Repeated I/O.
 
 #### Buffer Operations: flip, compact, rewind
 
@@ -671,7 +671,7 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"), StandardOpenOpt
 
 **Common Pitfall:** Forgetting to `flip()` before reading, or `clear()` before writing. Think of
 `flip()` as "switch from write mode to read mode" and `clear()` as "switch from read mode to write
-mode."
+Mode."
 
 ### FileChannel
 
@@ -693,8 +693,8 @@ try (FileChannel src = FileChannel.open(Path.of("source.bin"), StandardOpenOptio
 ```
 
 `transferTo()` uses `sendfile` (Linux) or `TransmitFile` (Windows) for zero-copy transfer from page
-cache to destination without copying through user space. This is how Netty and Tomcat serve static
-files efficiently.
+Cache to destination without copying through user space. This is how Netty and Tomcat serve static
+Files efficiently.
 
 **Common Pitfall:** `transferTo()` may not transfer all bytes in one call; loop until done.
 
@@ -723,15 +723,15 @@ Mapped byte buffers caveats:
 
 - `MapMode.PRIVATE` creates a copy-on-write mapping; changes are not visible to other processes.
 - No explicit way to unmap before GC (tied to `Cleaner`). Can exhaust virtual address space on
-  32-bit.
+ 32-bit.
 - `force()` flushes dirty pages but does not guarantee OS disk cache is flushed to persistent
-  storage (use `FileChannel.force(true)` for that).
+ storage (use `FileChannel.force(true)` for that).
 - If another process truncates the mapped file, accessing the buffer causes SIGBUS (JVM crash).
 
 ### SocketChannel and ServerSocketChannel
 
 `SocketChannel` and `ServerSocketChannel` provide non-blocking TCP I/O. In non-blocking mode,
-`connect()`, `accept()`, `read()`, and `write()` return immediately if they cannot complete; use a
+`connect()``accept()``read()`And `write()` return immediately if they cannot complete; use a
 `Selector` to determine readiness.
 
 ```java
@@ -772,12 +772,12 @@ try (ServerSocketChannel server = ServerSocketChannel.open()) {
 The polling loop above is inefficient. The proper pattern is to use a `Selector` (see next section).
 
 **Common Pitfall:** `write()` may write fewer bytes than the buffer contains; call `write()` again
-with the remaining bytes. Call `configureBlocking(false)` _before_ `connect()`, not after.
+With the remaining bytes. Call `configureBlocking(false)` _before_ `connect()`Not after.
 
 ### Selector and SelectionKey (Reactor Pattern)
 
 `Selector` (JDK 1.4) implements the reactor pattern: a single thread monitors multiple channels for
-readiness events and dispatches handlers. This is the foundation of Netty.
+Readiness events and dispatches handlers. This is the foundation of Netty.
 
 ```java
 try (Selector selector = Selector.open();
@@ -835,8 +835,8 @@ try (Selector selector = Selector.open();
 Key concepts:
 
 - **interestOps()** — the operations you registered for (modifiable at any time).
-- **readyOps()** — the operations currently ready (checked by `isAcceptable()`, `isReadable()`,
-  etc.).
+- **readyOps()** — the operations currently ready (checked by `isAcceptable()``isReadable()`
+ etc.).
 - **attachment()** — arbitrary per-connection state (e.g., an output buffer).
 
 **Common Pitfalls:**
@@ -937,12 +937,12 @@ try (FileChannel channel = FileChannel.open(
 ```
 
 **Common Pitfall:** If the JVM crashes before deletion, the file remains. Use `DELETE_ON_CLOSE` or
-register a shutdown hook as a fallback.
+Register a shutdown hook as a fallback.
 
 ### File Locking
 
 `FileLock` provides advisory locking — it only prevents other processes that also use `FileLock`. A
-process that ignores the lock can still read or write.
+Process that ignores the lock can still read or write.
 
 ```java
 // Exclusive lock (blocks until acquired)
@@ -971,25 +971,29 @@ try (FileChannel ch = FileChannel.open(Path.of("data.db"),
 **Common Pitfalls:**
 
 - Locks are released when the `FileChannel` is closed. If a thread deadlocks while holding a lock,
-  it remains held until the thread terminates or JVM exits.
+ it remains held until the thread terminates or JVM exits.
 - Unreliable on NFS. Use a distributed lock service (Zookeeper, etcd) instead.
 - Overlapping locks from the same JVM may or may not succeed. Use `ReentrantLock` for intra-JVM
-  coordination.
+ coordination.
 
 ---
 
 ## Common Pitfalls Summary
 
-| Pitfall                                 | Consequence                             | Fix                                              |
+| Pitfall | Consequence | Fix |
 | --------------------------------------- | --------------------------------------- | ------------------------------------------------ |
-| Not specifying charset                  | Silent character corruption             | Always use `StandardCharsets.UTF_8`              |
-| Not closing resources                   | File descriptor leak                    | Use try-with-resources                           |
-| `readAllLines()` on large files         | `OutOfMemoryError`                      | Use `Files.lines()` or `BufferedReader`          |
-| Forgetting to `flip()` a buffer         | Reading stale or no data                | Always `flip()` before reading                   |
-| Not removing `SelectionKey` from set    | Infinite loop in selector               | Call `iterator.remove()`                         |
-| Relying on platform default charset     | Platform-dependent behavior             | Explicit charset on every Reader/Writer          |
-| Mixing Reader and Stream on same source | Data corruption from buffer consumption | Use only one abstraction per source              |
-| Assuming `transferTo` transfers all     | Partial copy                            | Loop until all bytes transferred                 |
-| File locking on NFS                     | Lock not respected                      | Use a distributed lock service (Zookeeper, etcd) |
-| `WatchService` not resetting key        | No further events delivered             | Always call `key.reset()`                        |
-| Not closing `Files.lines()` stream      | File handle leak                        | Use try-with-resources                           |
+| Not specifying charset | Silent character corruption | Always use `StandardCharsets.UTF_8` |
+| Not closing resources | File descriptor leak | Use try-with-resources |
+| `readAllLines()` on large files | `OutOfMemoryError` | Use `Files.lines()` or `BufferedReader` |
+| Forgetting to `flip()` a buffer | Reading stale or no data | Always `flip()` before reading |
+| Not removing `SelectionKey` from set | Infinite loop in selector | Call `iterator.remove()` |
+| Relying on platform default charset | Platform-dependent behavior | Explicit charset on every Reader/Writer |
+| Mixing Reader and Stream on same source | Data corruption from buffer consumption | Use only one abstraction per source |
+| Assuming `transferTo` transfers all | Partial copy | Loop until all bytes transferred |
+| File locking on NFS | Lock not respected | Use a distributed lock service (Zookeeper, etcd) |
+| `WatchService` not resetting key | No further events delivered | Always call `key.reset()` |
+| Not closing `Files.lines()` stream | File handle leak | Use try-with-resources |
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

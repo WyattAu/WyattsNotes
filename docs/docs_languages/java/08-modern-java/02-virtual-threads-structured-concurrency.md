@@ -11,30 +11,30 @@ slug: virtual-threads-structured-concurrency
 ### The Problem with Platform Threads
 
 A platform thread in Java maps 1:1 to an operating system thread. OS threads are expensive
-resources: each consumes a stack (default 1 MB on 64-bit JVMs), kernel metadata, and scheduling
-overhead. A machine with 8 GB of RAM can run roughly 8,000 threads before exhausting memory on stack
-space alone. In practice, the scheduler overhead degrades performance long before that.
+Resources: each consumes a stack (default 1 MB on 64-bit JVMs), kernel metadata, and scheduling
+Overhead. A machine with 8 GB of RAM can run roughly 8,000 threads before exhausting memory on stack
+Space alone. In practice, the scheduler overhead degrades performance long before that.
 
 Most server workloads are I/O-bound. A thread handling an HTTP request spends the vast majority of
-its time waiting for database queries, network calls, or file I/O. During that wait, the thread's
-stack sits in memory doing nothing. The traditional solution -- thread pools bounded to some
-reasonable size (200-500 threads) -- works but introduces complexity: every blocking operation must
-be non-blocking or async, and async code is hard to write, hard to read, and hard to debug.
+Its time waiting for database queries, network calls, or file I/O. During that wait, the thread's
+Stack sits in memory doing nothing. The traditional solution -- thread pools bounded to some
+Reasonable size (200-500 threads) -- works but introduces complexity: every blocking operation must
+Be non-blocking or async, and async code is hard to write, hard to read, and hard to debug.
 
 Virtual threads solve this by decoupling the Java-level thread from the OS thread.
 
 ### What Is a Virtual Thread
 
 A virtual thread is a lightweight thread managed by the JVM rather than the operating system. It has
-its own stack, its own thread-local variables, and its own interrupt state -- but the stack is
-allocated on the heap as a linked list of stack frames (called "continuations"), not as a contiguous
-block of memory. When a virtual thread blocks on I/O, the JVM unmounts it from its carrier (the OS
-thread) and mounts a different virtual thread. When the I/O completes, the JVM remounts the original
-virtual thread, potentially on a different carrier.
+Its own stack, its own thread-local variables, and its own interrupt state -- but the stack is
+Allocated on the heap as a linked list of stack frames (called "continuations"), not as a contiguous
+Block of memory. When a virtual thread blocks on I/O, the JVM unmounts it from its carrier (the OS
+Thread) and mounts a different virtual thread. When the I/O completes, the JVM remounts the original
+Virtual thread, potentially on a different carrier.
 
 This means you can have millions of virtual threads running on a small number of carrier threads
-(typically matching the number of CPU cores). The memory footprint of a virtual thread that is
-blocked on I/O is a few hundred bytes, not 1 MB.
+( matching the number of CPU cores). The memory footprint of a virtual thread that is
+Blocked on I/O is a few hundred bytes, not 1 MB.
 
 ### Creating Virtual Threads
 
@@ -65,26 +65,26 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 `Executors.newVirtualThreadPerTaskExecutor()` creates a new virtual thread for every submitted task.
 There is no pooling -- virtual threads are cheap enough that pooling is unnecessary and
-counterproductive. The executor implements `AutoCloseable`; closing it waits for all submitted tasks
-to complete.
+Counterproductive. The executor implements `AutoCloseable`; closing it waits for all submitted tasks
+To complete.
 
 ### How Virtual Threads Work Internally
 
 The JVM maintains a pool of carrier threads ( ForkJoinPool worker threads, by default equal to the
-number of available processors). When a virtual thread performs a blocking operation:
+Number of available processors). When a virtual thread performs a blocking operation:
 
 1. **Mounting**: The virtual thread is mounted onto a carrier thread. Its stack frames are copied
-   onto the carrier's stack.
-2. **Blocking**: When the virtual thread calls a blocking operation (`Thread.sleep`, socket read,
-   file I/O), the JVM does not park the carrier thread. Instead, it saves the virtual thread's state
-   as a heap-allocated continuation and unmounts the virtual thread.
+ onto the carrier's stack.
+2. **Blocking**: When the virtual thread calls a blocking operation (`Thread.sleep`Socket read,
+ file I/O), the JVM does not park the carrier thread. Instead, it saves the virtual thread's state
+ as a heap-allocated continuation and unmounts the virtual thread.
 3. **Unmounting**: The carrier thread is now free to execute another virtual thread.
 4. **Remounting**: When the blocking operation completes (I/O is ready, sleep expires), the JVM
-   schedules the virtual thread to be mounted on any available carrier thread. It may not be the
-   same carrier that originally ran it.
+ schedules the virtual thread to be mounted on any available carrier thread. It may not be the
+ same carrier that originally ran it.
 
 This mounting/unmounting is transparent to the application code. From the virtual thread's
-perspective, it simply called a blocking method and the method returned. The thread identity
+Perspective, it called a blocking method and the method returned. The thread identity
 (`Thread.currentThread()`) remains consistent.
 
 ### When Virtual Threads Help
@@ -100,9 +100,9 @@ Examples:
 ### When Virtual Threads Do NOT Help
 
 Virtual threads provide no benefit for CPU-bound work. If your code is computing SHA-256 hashes,
-doing matrix multiplication, or sorting large arrays, the bottleneck is CPU, not thread count.
+Doing matrix multiplication, or sorting large arrays, the bottleneck is CPU, not thread count.
 Virtual threads cannot make a CPU do more work than it physically can. In fact, creating millions of
-virtual threads that all compete for CPU time will degrade performance due to scheduling overhead.
+Virtual threads that all compete for CPU time will degrade performance due to scheduling overhead.
 
 ```java
 // This gains nothing from virtual threads -- the bottleneck is CPU
@@ -120,9 +120,9 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 ### Pinning: The One Problem to Watch
 
 A virtual thread can get "pinned" to its carrier thread when it performs a blocking operation inside
-a `synchronized` block or method. The JVM cannot unmount a virtual thread while it holds a monitor
-lock because the lock state is tied to the carrier thread. If many virtual threads are pinned
-simultaneously, you effectively revert to platform thread behavior.
+A `synchronized` block or method. The JVM cannot unmount a virtual thread while it holds a monitor
+Lock because the lock state is tied to the carrier thread. If many virtual threads are pinned
+Simultaneously, you effectively revert to platform thread behavior.
 
 ```java
 // Pinning: virtual thread holds monitor lock during blocking I/O
@@ -154,15 +154,15 @@ public class UnpinnedExample {
 }
 ```
 
-`ReentrantLock` is j.u.c. aware -- the JVM can unmount a virtual thread that blocks while holding a
+`ReentrantLock` is j.u.c. Aware -- the JVM can unmount a virtual thread that blocks while holding a
 `ReentrantLock`. Starting in JDK 24, `synchronized` pinning is being eliminated, but for JDK 21-23,
-you should use `ReentrantLock` in hot paths.
+You should use `ReentrantLock` in hot paths.
 
 ### Thread-Local Variables and Virtual Threads
 
 `ThreadLocal` variables work with virtual threads, but using them heavily is a problem. Each virtual
-thread gets its own copy of every `ThreadLocal` variable. If you have 1 million virtual threads and
-a `ThreadLocal` holding a 1 KB `SimpleDateFormat`, that is 1 GB of heap just for thread locals.
+Thread gets its own copy of every `ThreadLocal` variable. If you have 1 million virtual threads and
+A `ThreadLocal` holding a 1 KB `SimpleDateFormat`That is 1 GB of heap just for thread locals.
 
 Use `ScopedValue` (discussed below) instead of `ThreadLocal` when working with virtual threads.
 
@@ -171,10 +171,10 @@ Use `ScopedValue` (discussed below) instead of `ThreadLocal` when working with v
 ### The Problem with Unstructured Concurrency
 
 Traditional Java concurrency is unstructured: you create a thread, submit tasks to an executor, and
-collect results with `Future.get()`. There is no relationship between the parent task and the child
-tasks. If a child task fails, the parent must manually cancel the remaining children. If the parent
-is interrupted, cleanup is manual. This leads to leaked threads, resource exhaustion, and subtle
-bugs.
+Collect results with `Future.get()`. There is no relationship between the parent task and the child
+Tasks. If a child task fails, the parent must manually cancel the remaining children. If the parent
+Is interrupted, cleanup is manual. This leads to leaked threads, resource exhaustion, and subtle
+Bugs.
 
 ```java
 // Unstructured: if fetchUser() fails, fetchOrders() keeps running
@@ -189,9 +189,9 @@ List&lt;Order&gt; orders = ordersFuture.get();
 ### `StructuredTaskScope`
 
 `StructuredTaskScope` (JEP 453, incubating in Java 21) enforces a parent-child relationship between
-tasks. All child tasks must complete (successfully or exceptionally) before the parent can proceed.
+Tasks. All child tasks must complete (successfully or exceptionally) before the parent can proceed.
 If the scope is closed, all child tasks are cancelled. If the parent thread is interrupted, the
-scope cancels all children.
+Scope cancels all children.
 
 ```java
 import java.util.concurrent.StructuredTaskScope;
@@ -219,9 +219,9 @@ public UserData fetchUserData(String userId) throws Exception {
 `StructuredTaskScope` provides two built-in shutdown policies:
 
 - **`ShutdownOnFailure`**: If any child task fails, cancel all remaining children. Useful when all
-  results are needed.
+ results are needed.
 - **`ShutdownOnSuccess`**: When the first child task succeeds, cancel all remaining children. Useful
-  for "first to respond" patterns like querying multiple caches or endpoints.
+ for "first to respond" patterns like querying multiple caches or endpoints.
 
 ```java
 // First successful result wins
@@ -240,8 +240,8 @@ public Config fetchConfig() throws Exception {
 ### Cancellation and Deadlines
 
 Child tasks are cooperative -- they must check for interruption. Standard blocking operations
-(`Thread.sleep`, I/O, `Future.get`) respond to interruption automatically. For long-running
-computations, periodically check `Thread.interrupted()`:
+(`Thread.sleep`I/O, `Future.get`) respond to interruption automatically. For long-running
+Computations, periodically check `Thread.interrupted()`:
 
 ```java
 public List&lt;String&gt; expensiveComputation() throws InterruptedException {
@@ -279,8 +279,8 @@ public UserData fetchUserDataWithDeadline(String userId) throws Exception {
 ### Virtual Threads + Structured Concurrency
 
 The combination of virtual threads and structured concurrency is the intended programming model for
-modern Java server applications. Virtual threads eliminate the resource cost of concurrent blocking
-operations, and structured concurrency provides lifecycle management:
+Modern Java server applications. Virtual threads eliminate the resource cost of concurrent blocking
+Operations, and structured concurrency provides lifecycle management:
 
 ```java
 public class OrderService {
@@ -317,16 +317,16 @@ public class OrderService {
 `ThreadLocal` provides per-thread state, but it has several problems in a virtual thread world:
 
 1. **Memory consumption**: Each virtual thread gets its own copy. With millions of virtual threads,
-   this is unsustainable.
+ this is unsustainable.
 2. **Inheritance**: `ThreadLocal` values are inherited by child threads, which is often undesirable.
 3. **Mutation**: `ThreadLocal` values are mutable, making it easy to introduce subtle bugs.
 4. **Lifetime**: `ThreadLocal` values live as long as the thread. Virtual threads in a per-task
-   executor are short-lived, so cleanup is frequent but not automatic.
+ executor are short-lived, so cleanup is frequent but not automatic.
 
 ### `ScopedValue` Basics
 
 `ScopedValue` (JEP 446) provides immutable, dynamically-scoped values that are bound for a bounded
-duration and automatically released when the scope exits:
+Duration and automatically released when the scope exits:
 
 ```java
 import java.lang.ScopedValue;
@@ -350,14 +350,14 @@ private void processRequest(Request request) {
 
 ### Scoped Values vs ThreadLocal
 
-| Feature          | `ThreadLocal`                  | `ScopedValue`                       |
+| Feature | `ThreadLocal` | `ScopedValue` |
 | ---------------- | ------------------------------ | ----------------------------------- |
-| Mutability       | Mutable                        | Immutable (bound once per scope)    |
-| Lifetime         | Thread lifetime                | Scope lifetime                      |
-| Memory footprint | Per-thread copy                | Shared reference                    |
-| Inheritance      | Inherited by child threads     | Inherited by child threads          |
-| Rebinding        | Can rebind per call            | Cannot rebind within active scope   |
-| Virtual thread   | Expensive (millions of copies) | Efficient (single shared reference) |
+| Mutability | Mutable | Immutable (bound once per scope) |
+| Lifetime | Thread lifetime | Scope lifetime |
+| Memory footprint | Per-thread copy | Shared reference |
+| Inheritance | Inherited by child threads | Inherited by child threads |
+| Rebinding | Can rebind per call | Cannot rebind within active scope |
+| Virtual thread | Expensive (millions of copies) | Efficient (single shared reference) |
 
 ### Binding and Rebinding
 
@@ -376,13 +376,13 @@ ScopedValue.where(CURRENT_USER, adminUser).run(() -> {
 ```
 
 Each `where` call creates a new binding that shadows the outer binding. When the inner scope exits,
-the outer binding is restored. This is stack-based scoping, not heap-based per-thread storage.
+The outer binding is restored. This is stack-based scoping, not heap-based per-thread storage.
 
 ### Scoped Values with Virtual Threads
 
 The key advantage: a `ScopedValue` is stored once per carrier thread, not once per virtual thread.
 When a virtual thread is unmounted and remounted on a different carrier, the scoped value is still
-accessible because it is stored in the virtual thread's scope, not in the carrier's `ThreadLocal`:
+Accessible because it is stored in the virtual thread's scope, not in the carrier's `ThreadLocal`:
 
 ```java
 try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
@@ -403,24 +403,24 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 ### Virtual Threads vs Go Goroutines
 
-| Feature             | Java Virtual Threads         | Go Goroutines                  |
+| Feature | Java Virtual Threads | Go Goroutines |
 | ------------------- | ---------------------------- | ------------------------------ |
-| Stack model         | Heap-allocated continuations | Heap-allocated growable stacks |
-| Scheduling          | FIFO (JDK 21+)               | Work-stealing                  |
-| Pinning risk        | Yes (`synchronized` blocks)  | No (no equivalent construct)   |
-| M:N scheduling      | Yes                          | Yes                            |
-| Typical concurrency | Millions                     | Hundreds of thousands          |
-| Blocking I/O        | Transparent unmount          | Transparent unmount            |
+| Stack model | Heap-allocated continuations | Heap-allocated growable stacks |
+| Scheduling | FIFO (JDK 21+) | Work-stealing |
+| Pinning risk | Yes (`synchronized` blocks) | No (no equivalent construct) |
+| M:N scheduling | Yes | Yes |
+| Typical concurrency | Millions | Hundreds of thousands |
+| Blocking I/O | Transparent unmount | Transparent unmount |
 
 Go goroutines are more mature (available since Go 1.0 in 2012) and have no pinning issue because Go
-does not have monitor-based locking. Java virtual threads are catching up, and the pinning issue is
-being addressed in JDK 24+.
+Does not have monitor-based locking. Java virtual threads are catching up, and the pinning issue is
+Being addressed in JDK 24+.
 
 ### Virtual Threads vs C# async/await
 
 C# uses `async/await` with state machines generated by the compiler. Java virtual threads are
-simpler: you write synchronous code and the JVM handles the asynchrony. There is no `async` keyword,
-no `Task` type, no state machine, no `ConfigureAwait`.
+Simpler: you write synchronous code and the JVM handles the asynchrony. There is no `async` keyword,
+No `Task` type, no state machine, no `ConfigureAwait`.
 
 ```csharp
 // C#: async/await with explicit Task types
@@ -442,21 +442,21 @@ public User getUser(String id) {
 ```
 
 The Java approach is simpler to understand and easier to retrofit in existing codebases. The C#
-approach is more explicit about where asynchrony occurs, which some developers prefer for
-performance reasoning.
+Approach is more explicit about where asynchrony occurs, which some developers prefer for
+Performance reasoning.
 
 ### Virtual Threads vs Kotlin Coroutines
 
 Kotlin coroutines are compiler-transformed suspending functions, similar to C# async/await. They use
 `suspend` keyword and `Dispatchers` for thread context. Virtual threads are a runtime feature with
-no language changes required.
+No language changes required.
 
 ## Common Pitfalls
 
 ### Do Not Pool Virtual Threads
 
 Virtual threads are designed to be created per-task. Pooling them defeats the purpose -- the whole
-point is that creation is nearly free and the JVM manages the scheduling:
+Point is that creation is nearly free and the JVM manages the scheduling:
 
 ```java
 // Wrong: pooling virtual threads
@@ -471,20 +471,20 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 ### Synchronized Still Pins (JDK 21-23)
 
 Any blocking operation inside a `synchronized` block pins the virtual thread to its carrier. Audit
-your codebase for `synchronized` blocks that contain I/O operations and replace with
+Your codebase for `synchronized` blocks that contain I/O operations and replace with
 `ReentrantLock`.
 
 ### `ThreadLocal` in Virtual Thread Per-Task Executors
 
-In a `newVirtualThreadPerTaskExecutor`, each task runs on a new virtual thread. If you set a
+In a `newVirtualThreadPerTaskExecutor`Each task runs on a new virtual thread. If you set a
 `ThreadLocal` in one task, it is not visible in another. If you set it in a parent and fork child
-tasks, the children inherit it, but the memory overhead is proportional to the number of virtual
-threads. Prefer `ScopedValue`.
+Tasks, the children inherit it, but the memory overhead is proportional to the number of virtual
+Threads. Prefer `ScopedValue`.
 
 ### Structured Concurrency Is Not Auto-Closeable on Errors
 
-`StructuredTaskScope` implements `AutoCloseable`, but closing the scope does not automatically throw
-exceptions. You must call `throwIfFailed()` explicitly after `join()`:
+`StructuredTaskScope` implements `AutoCloseable`But closing the scope does not automatically throw
+Exceptions. You must call `throwIfFailed()` explicitly after `join()`:
 
 ```java
 try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
@@ -498,7 +498,7 @@ try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
 ### Forgetting `join()`
 
 Forgetting to call `join()` means the scope's `close()` will wait for children, but you will not
-have access to their results:
+Have access to their results:
 
 ```java
 try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
@@ -519,23 +519,23 @@ A blocked virtual thread consumes roughly 200-500 bytes of heap. A blocked platf
 
 ### Throughput
 
-For I/O-bound workloads, virtual threads typically match or exceed the throughput of reactive
-frameworks (Netty, WebFlux) while using dramatically simpler code. The throughput improvement comes
-from eliminating context-switch overhead: the JVM does not need to make an expensive
+For I/O-bound workloads, virtual threads match or exceed the throughput of reactive
+Frameworks (Netty, WebFlux) while using dramatically simpler code. The throughput improvement comes
+From eliminating context-switch overhead: the JVM does not need to make an expensive
 `pthread_create` or kernel context switch for each new concurrent operation.
 
 ### CPU-Bound Work
 
 Virtual threads add scheduling overhead (mounting, unmounting, continuation management). For pure
 CPU-bound work, platform threads on a bounded thread pool are marginally faster. The difference is
-usually small (single-digit percentage) but measurable.
+ small (single-digit percentage) but measurable.
 
 ## StructuredTaskScope: Advanced Patterns
 
 ### Combining Results from Multiple Tasks
 
 A common pattern is collecting results from parallel tasks and combining them. `StructuredTaskScope`
-makes this safe:
+Makes this safe:
 
 ```java
 public record EnrichedOrder(Order order, User user, List&lt;Inventory&gt; inventory) { }
@@ -558,12 +558,12 @@ public EnrichedOrder enrichOrder(String orderId) throws Exception {
 ```
 
 If any of the three calls fails, the remaining calls are cancelled immediately. No leaked threads,
-no dangling futures.
+No dangling futures.
 
 ### Handling Partial Failures
 
 Sometimes you want to collect results from all tasks even if some fail. Use `ShutdownOnFailure` but
-check individual task states:
+Check individual task states:
 
 ```java
 public record PartialResults(
@@ -645,8 +645,8 @@ public class RaceScope&lt;T&gt; extends StructuredTaskScope&lt;T&gt; {
 
 ### Traditional Thread Dumps
 
-A traditional thread dump (`jstack`, `kill -3`, or `Thread.getAllStackTraces()`) shows platform
-threads. With virtual threads, a thread dump also shows virtual threads but in a different format:
+A traditional thread dump (`jstack``kill -3`Or `Thread.getAllStackTraces()`) shows platform
+Threads. With virtual threads, a thread dump also shows virtual threads but in a different format:
 
 ```bash
 # Dump all threads including virtual threads
@@ -654,7 +654,7 @@ jcmd &lt;pid&gt; Thread.dump_to_file -all threads.txt
 ```
 
 Virtual threads appear with a `VirtualThread` prefix. Carrier threads are the ForkJoinPool worker
-threads that actually run on OS threads.
+Threads that actually run on OS threads.
 
 ### Diagnosing Pinning
 
@@ -708,7 +708,7 @@ public void handle(Request req) throws Exception {
 ### Scoped Values in Structured Concurrency
 
 Scoped values propagate to child threads forked inside the binding scope. This makes them ideal for
-request-scoped context in server applications:
+Request-scoped context in server applications:
 
 ```java
 public void handleRequest(HttpExchange exchange) throws Exception {
@@ -765,10 +765,10 @@ try {
 ```
 
 **Step 3**: Replace `ThreadLocal` with `ScopedValue` for request-scoped data (logging context, auth
-tokens, tracing IDs).
+Tokens, tracing IDs).
 
 **Step 4**: Remove all `CompletableFuture` chaining that was introduced purely to avoid blocking
-threads. Synchronous code is now the correct approach:
+Threads. Synchronous code is now the correct approach:
 
 ```java
 // Before: async chain to avoid blocking a platform thread
@@ -789,8 +789,8 @@ public Response handle(Request req) {
 ### Migrating from CompletableFuture to StructuredTaskScope
 
 `CompletableFuture` is not going away -- it remains the right tool for fire-and-forget tasks and
-event-driven composition. But for fan-out/fan-in patterns where you need all results (or want to
-cancel on failure), `StructuredTaskScope` is strictly better:
+Event-driven composition. But for fan-out/fan-in patterns where you need all results (or want to
+Cancel on failure), `StructuredTaskScope` is strictly better:
 
 ```java
 // Before: CompletableFuture with manual cancellation
@@ -825,10 +825,18 @@ public UserData fetchUserData(String userId) throws Exception {
 ## See Also
 
 - [Concurrency](../06-concurrency/01-concurrency.md) -- traditional concurrency primitives,
-  `ReentrantLock`, `CompletableFuture`
+ `ReentrantLock``CompletableFuture`
 - [Collections Framework](../04-collections/01-collections-framework.md) -- thread-safe collections
-  for concurrent access
+ for concurrent access
 - [Records, Sealed Classes, and Pattern Matching](../08-modern-java/01-records-sealed-patterns.md)
-  -- pattern matching used in structured concurrency
+ -- pattern matching used in structured concurrency
 - [Class Loading and Memory Model](../09-jvm-internals/01-class-loading-memory.md) -- how the JVM
-  manages threads and memory
+ manages threads and memory
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

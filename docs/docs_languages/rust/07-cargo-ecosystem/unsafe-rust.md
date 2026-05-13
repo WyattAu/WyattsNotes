@@ -15,15 +15,15 @@ The `unsafe` keyword grants access to five capabilities that the compiler cannot
 5. **Access union fields** — unions require unsafe for field access
 
 `unsafe` does not disable the borrow checker. It does not bypass Rust's safety guarantees — it
-allows you to do things that the compiler cannot prove are safe. You are responsible for maintaining
-all invariants manually.
+Allows you to do things that the compiler cannot prove are safe. You are responsible for maintaining
+All invariants manually.
 
 ## Raw Pointers
 
 ### `*const T` and `*mut T`
 
 Raw pointers are like C pointers — they can be null, dangling, misaligned, or aliased. The compiler
-does not check them:
+Does not check them:
 
 ```rust
 let x = 42;
@@ -115,8 +115,8 @@ assert_eq!(arr, [20, 40, 60, 80, 100]);
 :::danger
 
 Pointer arithmetic that goes out of bounds of the allocated object is undefined behavior, even if
-the resulting pointer is not dereferenced. `ptr.add(len)` is UB if the pointer does not point to an
-allocation of at least `len` elements.
+The resulting pointer is not dereferenced. `ptr.add(len)` is UB if the pointer does not point to an
+Allocation of at least `len` elements.
 
 :::
 
@@ -141,7 +141,7 @@ fn caller() {
 ### Unsafe Blocks
 
 `unsafe` blocks delimit the region where unsafe operations are permitted. The compiler checks that
-all unsafe operations occur within an `unsafe` block:
+All unsafe operations occur within an `unsafe` block:
 
 ```rust
 fn split_at_mut(values: &mut [i32], mid: usize) -> (&mut [i32], &mut [i32]) {
@@ -160,8 +160,8 @@ fn split_at_mut(values: &mut [i32], mid: usize) -> (&mut [i32], &mut [i32]) {
 ```
 
 This function cannot be written in safe Rust because it creates two mutable references to
-overlapping regions. The `unsafe` block is justified because we guarantee the two slices do not
-overlap (the split point ensures this).
+Overlapping regions. The `unsafe` block is justified because we guarantee the two slices do not
+Overlap (the split point ensures this).
 
 ### Encapsulating Unsafe in Safe Abstractions
 
@@ -208,9 +208,9 @@ unsafe impl Sync for MyType {}
 :::danger
 
 Manually implementing `Send` or `Sync` incorrectly causes data races, which are undefined behavior.
-Only do this when you can rigorously prove thread safety. This typically requires that the raw
-pointer is only accessed through a synchronization mechanism (mutex, atomic, etc.) that the compiler
-cannot see.
+Only do this when you can rigorously prove thread safety. This requires that the raw
+Pointer is only accessed through a synchronization mechanism (mutex, atomic, etc.) that the compiler
+Cannot see.
 
 :::
 
@@ -316,7 +316,7 @@ cbindgen --config cbindgen.toml --crate my_lib --output my_lib.h
 2. C strings are null-terminated; Rust strings are not — use `CString`/`CStr`
 3. C does not have Move semantics — Rust values passed to C must be `Copy` or leaked
 4. C does not have destructors — resources allocated by Rust and passed to C must be freed manually
-   or through a callback
+ or through a callback
 5. The ABI must match — `"C"` is the most portable, but platform-specific ABIs exist
 
 ## Safety Invariants
@@ -389,8 +389,8 @@ Understanding how `Vec` works internally is essential for writing unsafe code co
 ### Arena Allocators
 
 Arena allocation allocates from a contiguous memory region. All allocations are freed at once when
-the arena is dropped. This eliminates per-allocation deallocation overhead and ensures all
-references have the same lifetime:
+The arena is dropped. This eliminates per-allocation deallocation overhead and ensures all
+References have the same lifetime:
 
 ```rust
 struct Arena {
@@ -463,15 +463,15 @@ impl<'a> Interner<'a> {
 :::danger
 
 The `intern` method uses `std::mem::forget` to leak memory intentionally. The returned `&'a str` has
-a lifetime tied to the arena, which is correct as long as the arena outlives all interned
-references. If the arena is dropped while interned references exist, they become dangling.
+A lifetime tied to the arena, which is correct as long as the arena outlives all interned
+References. If the arena is dropped while interned references exist, they become dangling.
 
 :::
 
 ## Undefined Behavior in Rust
 
 Undefined behavior (UB) means the compiler is free to assume the undefined operation never happens
-and can optimize based on that assumption. UB in Rust includes:
+And can optimize based on that assumption. UB in Rust includes:
 
 - Dereferencing a null pointer
 - Dereferencing a dangling pointer (use-after-free)
@@ -554,7 +554,7 @@ arbitrary = "1"
 ```
 
 Fuzz testing with `cargo-fuzz` or `proptest` is especially valuable for unsafe code because it
-exercises edge cases that hand-written tests may miss.
+Exercises edge cases that hand-written tests may miss.
 
 ## When to Use `unsafe`
 
@@ -562,52 +562,52 @@ exercises edge cases that hand-written tests may miss.
 
 1. **FFI** — calling C functions or exposing Rust functions to C
 2. **Performance-critical code** — after profiling shows a bottleneck
-3. **Implementing safe abstractions** — `Vec`, `String`, `Box` are all implemented with `unsafe`
+3. **Implementing safe abstractions** — `Vec``String``Box` are all implemented with `unsafe`
 4. **Interfacing with hardware** — memory-mapped I/O, raw device access
 5. **Custom allocators** — implementing `GlobalAlloc`
 
 ### Anti-Patterns
 
 1. **Bypassing the borrow checker** — if the borrow checker rejects your code, redesign the data
-   flow. `unsafe` to bypass borrow checking almost always introduces soundness bugs.
+ flow. `unsafe` to bypass borrow checking almost always introduces soundness bugs.
 2. **Premature optimization** — benchmark first, use `unsafe` only when profiling shows it is
-   necessary.
+ necessary.
 3. **Raw pointers for convenience** — use references and smart pointers unless you have a specific
-   reason for raw pointers.
+ reason for raw pointers.
 
 ## Common Pitfalls
 
 1. **Dereferencing null pointers.** Always check `ptr.is_null()` before dereferencing. Use
-   `ptr.as_ref()` which returns `Option<&T>` and handles null safely.
+ `ptr.as_ref()` which returns `Option<&T>` and handles null safely.
 
 2. **Use-after-free through raw pointers.** A raw pointer may outlive the data it points to. The
-   compiler does not track this — you must ensure the pointer's lifetime does not exceed the data's
-   lifetime.
+ compiler does not track this — you must ensure the pointer's lifetime does not exceed the data's
+ lifetime.
 
 3. **Aliasing violations.** Creating `&T` and `&mut T` to the same data is UB, even through raw
-   pointers. The `unsafe` block does not exempt you from Rust's aliasing rules.
+ pointers. The `unsafe` block does not exempt you from Rust's aliasing rules.
 
 4. **Uninitialized memory.** `MaybeUninit<T>` is the correct way to work with uninitialized memory.
-   Reading from uninitialized memory is UB, even for `u8`.
+ Reading from uninitialized memory is UB, even for `u8`.
 
 5. **Panic across FFI.** A Rust panic unwinding across a C callback is UB. Use
-   `std::panic::catch_unwind` at FFI boundaries or compile with `panic = "abort"`.
+ `std::panic::catch_unwind` at FFI boundaries or compile with `panic = "abort"`.
 
 6. **Not using `miri`.** Any code using `unsafe` should be tested with `miri` to catch undefined
-   behavior that may not manifest in normal testing.
+ behavior that may not manifest in normal testing.
 
 7. **Over-large `unsafe` blocks.** Keep `unsafe` blocks as small as possible. Each block should
-   contain exactly the operations that require `unsafe`, with clear comments explaining why they are
-   safe.
+ contain exactly the operations that require `unsafe`With clear comments explaining why they are
+ safe.
 
 8. **Assuming layout.** Unless `#[repr(C)]` is specified, the compiler may reorder struct fields and
-   add padding. Do not rely on field order or offset calculations without explicit `repr`.
+ add padding. Do not rely on field order or offset calculations without explicit `repr`.
 
 9. **Thread safety assertions without proof.** Manually implementing `Send` or `Sync` without a
-   rigorous proof of thread safety is a common source of data races. Document the proof.
+ rigorous proof of thread safety is a common source of data races. Document the proof.
 
-10. **Ignoring `#[no_mangle]` for FFI.** Without `#[no_mangle]`, Rust mangles function names, making
-    them inaccessible from C. Always use `#[no_mangle]` on `extern "C"` functions that C code calls.
+10. **Ignoring `#[no_mangle]` for FFI.** Without `#[no_mangle]`Rust mangles function names, making
+ them inaccessible from C. Always use `#[no_mangle]` on `extern "C"` functions that C code calls.
 
 ## Unsafe Code Checklist
 
@@ -635,8 +635,8 @@ graph TD
 ### `MaybeUninit<T>`
 
 `MaybeUninit<T>` is the correct way to work with uninitialized memory. It prevents reading
-uninitialized values and is the foundation for manually constructing types without calling their
-constructors:
+Uninitialized values and is the foundation for manually constructing types without calling their
+Constructors:
 
 ```rust
 use std::mem::MaybeUninit;
@@ -664,8 +664,8 @@ impl Buffer {
 :::danger
 
 `assume_init()` is `unsafe` because reading uninitialized memory is UB. You must ensure that every
-byte of the `MaybeUninit` has been written to before calling `assume_init()`. Use `write_bytes`,
-individual `write()` calls, or `ptr::copy_nonoverlapping` to initialize the memory.
+Byte of the `MaybeUninit` has been written to before calling `assume_init()`. Use `write_bytes`
+Individual `write()` calls, or `ptr::copy_nonoverlapping` to initialize the memory.
 
 :::
 
@@ -734,7 +734,7 @@ impl Drop for ManualBuffer {
 ### Transmuting Types
 
 `std::mem::transmute` reinterprets the bits of one type as another. It is extremely dangerous and
-should be avoided when alternatives exist:
+Should be avoided when alternatives exist:
 
 ```rust
 // Dangerous — use only when you understand the exact bit layout
@@ -850,7 +850,7 @@ fn from_ascii(s: &[u8]) -> String {
 ```
 
 Only use this when you can prove the bytes are valid UTF-8. The assertion above checks ASCII (which
-is a subset of UTF-8), so the conversion is safe.
+Is a subset of UTF-8), so the conversion is safe.
 
 ## Interoperability with C++
 
@@ -913,7 +913,7 @@ unsafe {
 
 ## `unsafe` Code Review Checklist
 
-When reviewing code that uses `unsafe`, verify:
+When reviewing code that uses `unsafe`Verify:
 
 1. The unsafe surface is as small as possible
 2. Every `unsafe` block has a SAFETY comment
@@ -925,3 +925,11 @@ When reviewing code that uses `unsafe`, verify:
 8. FFI boundaries handle panics correctly
 9. The code has been tested with `miri`
 10. The code has been fuzz tested for edge cases
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

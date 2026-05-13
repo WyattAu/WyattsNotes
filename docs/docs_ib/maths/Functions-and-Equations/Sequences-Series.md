@@ -30,13 +30,13 @@ Adjust the parameters in the graph above to explore the relationships between va
 An arithmetic sequence has a constant difference between consecutive terms:
 
 $$
-u_{n+1} - u_n = d
+U_{n+1} - u_n = d
 $$
 
 ### General Term
 
 $$
-u_n = u_1 + (n-1)d
+U_n = u_1 + (n-1)d
 $$
 
 ### Sum of the First $n$ Terms
@@ -49,10 +49,10 @@ $$
 
 Find the 20th term and the sum of the first 20 terms of the sequence $3, 7, 11, 15, \ldots$.
 
-$u_1 = 3$, $d = 4$.
+$u_1 = 3$$d = 4$.
 
 $$
-u_{20} = 3 + 19 \times 4 = 79
+U_{20} = 3 + 19 \times 4 = 79
 $$
 
 $$
@@ -70,14 +70,14 @@ If $a, b, c$ are consecutive terms of an arithmetic sequence, then $2b = a + c$.
 :::info[Example]
 
 The 5th term of an arithmetic sequence is $17$ and the 12th term is $38$. Find the first term and
-the common difference.
+The common difference.
 
 $$
-u_5 = u_1 + 4d = 17 \quad \mathrm{(1)}
+U_5 = u_1 + 4d = 17 \quad \mathrm{(1)}
 $$
 
 $$
-u_{12} = u_1 + 11d = 38 \quad \mathrm{(2)}
+U_{12} = u_1 + 11d = 38 \quad \mathrm{(2)}
 $$
 
 (2) $-$ (1): $7d = 21 \implies d = 3$.
@@ -99,7 +99,7 @@ $$
 ### General Term
 
 $$
-u_n = u_1 r^{n-1}
+U_n = u_1 r^{n-1}
 $$
 
 ### Sum of the First $n$ Terms
@@ -114,10 +114,10 @@ When $r = 1$: $S_n = nu_1$.
 
 Find the 8th term and the sum of the first 8 terms of $2, 6, 18, 54, \ldots$.
 
-$u_1 = 2$, $r = 3$.
+$u_1 = 2$$r = 3$.
 
 $$
-u_8 = 2 \times 3^7 = 2 \times 2187 = 4374
+U_8 = 2 \times 3^7 = 2 \times 2187 = 4374
 $$
 
 $$
@@ -138,19 +138,19 @@ If $a, b, c$ are consecutive terms of a geometric sequence, then $b^2 = ac$.
 
 ### Sum to Infinity
 
-If $|r| \lt 1$, the geometric series converges and the sum to infinity is:
+If $|r| \lt 1$The geometric series converges and the sum to infinity is:
 
 $$
 S_{\infty} = \frac{u_1}{1 - r}
 $$
 
-If $|r| \ge 1$, the series diverges (the sum to infinity does not exist).
+If $|r| \ge 1$The series diverges (the sum to infinity does not exist).
 
 :::info[Example]
 
 Find the sum to infinity of $1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots$.
 
-$u_1 = 1$, $r = \dfrac{1}{2}$. Since $|r| \lt 1$:
+$u_1 = 1$$r = \dfrac{1}{2}$. Since $|r| \lt 1$:
 
 $$
 S_{\infty} = \frac{1}{1 - \frac{1}{2}} = 2
@@ -182,7 +182,7 @@ $$
 0.\dot{2}\dot{7} = \frac{27}{100} + \frac{27}{10000} + \cdots
 $$
 
-$u_1 = \dfrac{27}{100}$, $r = \dfrac{1}{100}$.
+$u_1 = \dfrac{27}{100}$$r = \dfrac{1}{100}$.
 
 $$
 S_{\infty} = \frac{\frac{27}{100}}{1 - \frac{1}{100}} = \frac{\frac{27}{100}}{\frac{99}{100}} = \frac{27}{99} = \frac{3}{11}
@@ -192,12 +192,12 @@ $$
 
 ### Conditions for Convergence
 
-| Condition | Behaviour                     |
+| Condition | Behaviour |
 | --------- | ----------------------------- | ------ | ------------------------------- |
 | $         | r                             | \lt 1$ | Converges to $\dfrac{u_1}{1-r}$ |
-| $r = 1$   | Diverges (grows linearly)     | | |
-| $r = -1$  | Oscillates, does not converge | | |
-| $         | r                             | \gt 1$ | Diverges (grows exponentially)  |
+| $r = 1$ | Diverges (grows linearly) | | |
+| $r = -1$ | Oscillates, does not converge | | |
+| $         | r                             | \gt 1$ | Diverges (grows exponentially) |
 
 ---
 
@@ -325,7 +325,7 @@ $$
 (a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k
 $$
 
-where the **binomial coefficient** is:
+Where the **binomial coefficient** is:
 
 $$
 \binom{n}{k} = \frac{n!}{k!(n-k)!} = {}^nC_k
@@ -433,13 +433,13 @@ $$
 
 The expansion $(1+x)^n$ for non-integer $n$ converges when $|x| \lt 1$.
 
-To use this for expressions like $(2 + 3x)^{-1/2}$, factor out the constant:
+To use this for expressions like $(2 + 3x)^{-1/2}$Factor out the constant:
 
 $$
 (2+3x)^{-1/2} = 2^{-1/2}\left(1 + \frac{3x}{2}\right)^{-1/2}
 $$
 
-This converges when $\left|\dfrac{3x}{2}\right| \lt 1$, i.e., $|x| \lt \dfrac{2}{3}$.
+This converges when $\left|\dfrac{3x}{2}\right| \lt 1$I.e., $|x| \lt \dfrac{2}{3}$.
 
 ---
 
@@ -450,27 +450,27 @@ This converges when $\left|\dfrac{3x}{2}\right| \lt 1$, i.e., $|x| \lt \dfrac{2}
 A sequence defined by a recurrence relation gives each term in terms of previous terms.
 
 $$
-u_{n+1} = au_n + b
+U_{n+1} = au_n + b
 $$
 
 ### Solving First-Order Linear Recurrence Relations
 
 For $u_{n+1} = ru_n + d$ with $u_1$ given:
 
-If $r \neq 1$, the solution is:
+If $r \neq 1$The solution is:
 
 $$
-u_n = r^{n-1}u_1 + d\frac{r^{n-1} - 1}{r - 1}
+U_n = r^{n-1}u_1 + d\frac{r^{n-1} - 1}{r - 1}
 $$
 
 :::info[Example]
 
 A sequence is defined by $u_{n+1} = 3u_n + 2$ with $u_1 = 1$. Find $u_n$.
 
-$r = 3$, $d = 2$.
+$r = 3$$d = 2$.
 
 $$
-u_n = 3^{n-1} \cdot 1 + 2 \cdot \frac{3^{n-1} - 1}{3 - 1} = 3^{n-1} + 3^{n-1} - 1 = 2 \cdot 3^{n-1} - 1
+U_n = 3^{n-1} \cdot 1 + 2 \cdot \frac{3^{n-1} - 1}{3 - 1} = 3^{n-1} + 3^{n-1} - 1 = 2 \cdot 3^{n-1} - 1
 $$
 
 Verify: $u_1 = 2 \cdot 1 - 1 = 1$. $u_2 = 2 \cdot 3 - 1 = 5$. Check: $u_2 = 3(1) + 2 = 5$.
@@ -484,14 +484,14 @@ Verify: $u_1 = 2 \cdot 1 - 1 = 1$. $u_2 = 2 \cdot 3 - 1 = 5$. Check: $u_2 = 3(1)
 ### Question 1 (Paper 1 style)
 
 An arithmetic sequence has first term $5$ and common difference $3$. A geometric sequence has first
-term $3$ and common ratio $2$. Find the value of $n$ for which the $n$-th terms are equal.
+Term $3$ and common ratio $2$. Find the value of $n$ for which the $n$-th terms are equal.
 
 $$
-u_n = 5 + (n-1) \times 3 = 3n + 2
+U_n = 5 + (n-1) \times 3 = 3n + 2
 $$
 
 $$
-v_n = 3 \times 2^{n-1}
+V_n = 3 \times 2^{n-1}
 $$
 
 $$
@@ -511,8 +511,8 @@ $n = 4$: $14 \neq 24$.
 $n = 5$: $17 \neq 48$.
 
 The sequences do not have equal terms for small $n$. The geometric sequence grows much faster. The
-only possible solution is $n = 3$ approximately (left $= 11$, right $= 12$), so there is no exact
-integer solution.
+Only possible solution is $n = 3$ approximately (left $= 11$Right $= 12$), so there is no exact
+Integer solution.
 
 ### Question 2 (Paper 2 style)
 
@@ -534,18 +534,18 @@ $$
 $$
 
 $$
-r^3 + 1 = 91 \implies r^3 = 90
+R^3 + 1 = 91 \implies r^3 = 90
 $$
 
 Since $90 = 9 \times 10$ is not a perfect cube, this suggests the ratio might not be exact. Let us
-reconsider with $r^3 - 1 \neq 0$:
+Reconsider with $r^3 - 1 \neq 0$:
 
 $$
 \frac{(r^3 - 1)(r^3 + 1)}{r^3 - 1} = r^3 + 1 = 91
 $$
 
 $$
-r^3 = 90, \quad r = \sqrt[3]{90}
+R^3 = 90, \quad r = \sqrt[3]{90}
 $$
 
 From (1): $u_1 = \dfrac{52(r-1)}{r^3 - 1} = \dfrac{52(r-1)}{89}$.
@@ -564,8 +564,8 @@ $$
 
 ### Question 4 (Paper 2 style)
 
-The first three terms of a geometric sequence are $\sin\theta$, $\cos\theta$, and
-$\dfrac{1}{\sqrt{3}}$, where $0 \lt \theta \lt \dfrac{\pi}{2}$.
+The first three terms of a geometric sequence are $\sin\theta$$\cos\theta$And
+$\dfrac{1}{\sqrt{3}}$Where $0 \lt \theta \lt \dfrac{\pi}{2}$.
 
 **Find the value of $\theta$.**
 
@@ -602,10 +602,10 @@ $$
 $$
 
 $$
-u = \frac{-1 \pm \sqrt{1 + 12}}{2\sqrt{3}} = \frac{-1 \pm \sqrt{13}}{2\sqrt{3}}
+U = \frac{-1 \pm \sqrt{1 + 12}}{2\sqrt{3}} = \frac{-1 \pm \sqrt{13}}{2\sqrt{3}}
 $$
 
-Since $0 \lt \theta \lt \dfrac{\pi}{2}$, $\sin\theta \gt 0$:
+Since $0 \lt \theta \lt \dfrac{\pi}{2}$$\sin\theta \gt 0$:
 
 $$
 \sin\theta = \frac{-1 + \sqrt{13}}{2\sqrt{3}}
@@ -652,21 +652,21 @@ $$
 
 ## Summary
 
-| Topic                  | Key Formula                                                   |
+| Topic | Key Formula |
 | ---------------------- | ------------------------------------------------------------- | --- | ------ |
-| Arithmetic $n$-th term | $u_n = u_1 + (n-1)d$                                          | | |
-| Arithmetic sum         | $S_n = \dfrac{n}{2}[2u_1 + (n-1)d]$                           | | |
-| Geometric $n$-th term  | $u_n = u_1 r^{n-1}$                                           | | |
-| Geometric sum          | $S_n = \dfrac{u_1(1-r^n)}{1-r}$                               | | |
-| Sum to infinity        | $S_{\infty} = \dfrac{u_1}{1-r}$ for $                         | r   | \lt 1$ |
-| Binomial theorem       | $(a+b)^n = \displaystyle\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$ | | |
-| Sigma of $i$           | $\displaystyle\sum_{i=1}^{n}i = \dfrac{n(n+1)}{2}$            | | |
-| Sigma of $i^2$         | $\displaystyle\sum_{i=1}^{n}i^2 = \dfrac{n(n+1)(2n+1)}{6}$    | | |
+| Arithmetic $n$-th term | $u_n = u_1 + (n-1)d$ | | |
+| Arithmetic sum | $S_n = \dfrac{n}{2}[2u_1 + (n-1)d]$ | | |
+| Geometric $n$-th term | $u_n = u_1 r^{n-1}$ | | |
+| Geometric sum | $S_n = \dfrac{u_1(1-r^n)}{1-r}$ | | |
+| Sum to infinity | $S_{\infty} = \dfrac{u_1}{1-r}$ for $                         | r   | \lt 1$ |
+| Binomial theorem | $(a+b)^n = \displaystyle\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$ | | |
+| Sigma of $i$ | $\displaystyle\sum_{i=1}^{n}i = \dfrac{n(n+1)}{2}$ | | |
+| Sigma of $i^2$ | $\displaystyle\sum_{i=1}^{n}i^2 = \dfrac{n(n+1)(2n+1)}{6}$ | | |
 
 :::tip[Exam Strategy]
 
 For binomial expansion questions, always check the validity condition when $n$ is not a positive
-integer. For geometric series, always verify that $|r| \lt 1$ before computing $S_{\infty}$. In
+Integer. For geometric series, always verify that $|r| \lt 1$ before computing $S_{\infty}$. In
 Paper 2, show all steps of sigma notation manipulations.
 
 :::
@@ -683,9 +683,9 @@ Mathematical induction is a proof technique used to prove statements about natur
 
 1. **Base case**: Prove the statement is true for $n = 1$ (or the starting value).
 2. **Inductive hypothesis**: Assume the statement is true for $n = k$.
-3. **Inductive step**: Prove that if it is true for $n = k$, then it is true for $n = k + 1$.
+3. **Inductive step**: Prove that if it is true for $n = k$Then it is true for $n = k + 1$.
 4. **Conclusion**: By the principle of mathematical induction, the statement is true for all
-   $n \ge 1$.
+ $n \ge 1$.
 
 :::info[Example]
 
@@ -803,10 +803,10 @@ To 5 decimal places: $1.04060$.
 ### Question 8 (Paper 2 style)
 
 The sum of the first $n$ terms of a sequence is $S_n = n^2 + 2n$. Find an expression for the $n$-th
-term $u_n$.
+Term $u_n$.
 
 $$
-u_n = S_n - S_{n-1} = (n^2 + 2n) - ((n-1)^2 + 2(n-1))
+U_n = S_n - S_{n-1} = (n^2 + 2n) - ((n-1)^2 + 2(n-1))
 $$
 
 $$
@@ -830,10 +830,10 @@ Coefficient $= \dbinom{7}{4} \cdot 2^3 \cdot (-3)^4 = 35 \times 8 \times 81 = 22
 ### Question 10 (Paper 1 style)
 
 A geometric series has first term $a$ and common ratio $r$. The sum of the first three terms is $28$
-and the sum to infinity is $32$. Find $a$ and $r$.
+And the sum to infinity is $32$. Find $a$ and $r$.
 
 $$
-a + ar + ar^2 = 28 \quad \mathrm{(1)}
+A + ar + ar^2 = 28 \quad \mathrm{(1)}
 $$
 
 $$
@@ -851,11 +851,11 @@ $$
 $$
 
 $$
-r^3 = 1 - \frac{7}{8} = \frac{1}{8} \implies r = \frac{1}{2}
+R^3 = 1 - \frac{7}{8} = \frac{1}{8} \implies r = \frac{1}{2}
 $$
 
 $$
-a = 32\left(1 - \frac{1}{2}\right) = 16
+A = 32\left(1 - \frac{1}{2}\right) = 16
 $$
 
 Verify: $16 + 8 + 4 = 28$. And $S_\infty = 16/(1 - 1/2) = 32$. Correct.
@@ -865,10 +865,18 @@ For the A-Level treatment of this topic, see [Sequences and Series](https://alev
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-sequences-series) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

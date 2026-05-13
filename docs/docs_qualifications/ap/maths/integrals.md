@@ -15,10 +15,10 @@ An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefin
 
 
 <DesmosGraph
-  title="Definite Integral as Area Under a Curve"
-  expressions={["\int_{a}^{b} f(x) \, dx"]}
-  width={800}
-  height={500}
+ title="Definite Integral as Area Under a Curve"
+ expressions={["\int_{a}^{b} f(x) \, dx"]}
+ width={800}
+ height={500}
 />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
@@ -28,23 +28,23 @@ $$
 \int f(x)\, dx = F(x) + C
 $$
 
-where $C$ is the constant of integration.
+Where $C$ is the constant of integration.
 
 ### Basic Integration Rules
 
-| Function $f(x)$          | Antiderivative $F(x)$     |
+| Function $f(x)$ | Antiderivative $F(x)$ |
 | ------------------------ | ------------------------- | --- | ---- |
-| $x^n$ ($n \ne -1$)       | $\frac{x^{n+1}}{n+1} + C$ |
-| $\frac{1}{x}$            | $\ln                      | x   | + C$ |
-| $e^x$                    | $e^x + C$                 |
-| $\sin x$                 | $-\cos x + C$             |
-| $\cos x$                 | $\sin x + C$              |
-| $\sec^2 x$               | $\tan x + C$              |
-| $\csc^2 x$               | $-\cot x + C$             |
-| $\sec x \tan x$          | $\sec x + C$              |
-| $\csc x \cot x$          | $-\csc x + C$             |
-| $\frac{1}{1+x^2}$        | $\arctan x + C$           |
-| $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$           |
+| $x^n$ ($n \ne -1$) | $\frac{x^{n+1}}{n+1} + C$ |
+| $\frac{1}{x}$ | $\ln                      | x   | + C$ |
+| $e^x$ | $e^x + C$ |
+| $\sin x$ | $-\cos x + C$ |
+| $\cos x$ | $\sin x + C$ |
+| $\sec^2 x$ | $\tan x + C$ |
+| $\csc^2 x$ | $-\cot x + C$ |
+| $\sec x \tan x$ | $\sec x + C$ |
+| $\csc x \cot x$ | $-\csc x + C$ |
+| $\frac{1}{1+x^2}$ | $\arctan x + C$ |
+| $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$ |
 
 ### The Power Rule for Integration
 
@@ -52,13 +52,13 @@ $$
 \int x^n\, dx = \frac{x^{n+1}}{n+1} + C, \quad n \ne -1
 $$
 
-**Why the power rule excludes $n = -1$.** Substituting $n = -1$ gives $\frac{x^0}{0}$, which is
-undefined. The antiderivative of $\frac{1}{x}$ is $\ln|x|$, a fundamental result with deep
-connections to the natural logarithm.
+**Why the power rule excludes $n = -1$.** Substituting $n = -1$ gives $\frac{x^0}{0}$Which is
+Undefined. The antiderivative of $\frac{1}{x}$ is $\ln|x|$A fundamental result with deep
+Connections to the natural logarithm.
 
 **Why the absolute value in $\ln|x|$.** The derivative of $\ln x$ is $\frac{1}{x}$ for $x \gt 0$.
-For $x \lt 0$, the derivative of $\ln(-x)$ is $\frac{1}{-x} \cdot (-1) = \frac{1}{x}$. So the
-antiderivative of $\frac{1}{x}$ on any interval not containing $0$ is $\ln|x| + C$.
+For $x \lt 0$The derivative of $\ln(-x)$ is $\frac{1}{-x} \cdot (-1) = \frac{1}{x}$. So the
+Antiderivative of $\frac{1}{x}$ on any interval not containing $0$ is $\ln|x| + C$.
 
 :::info[Example]
 
@@ -97,20 +97,20 @@ $$
 \sum_{i=1}^{n} f(x_i^*) \Delta x
 $$
 
-where $\Delta x = \frac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$th subinterval.
+Where $\Delta x = \frac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$Th subinterval.
 
-| Type              | Sample Point $x_i^*$                              |
+| Type | Sample Point $x_i^*$ |
 | ----------------- | ------------------------------------------------- |
-| Left Riemann sum  | Left endpoint                                     |
-| Right Riemann sum | Right endpoint                                    |
-| Midpoint sum      | Midpoint of subinterval                           |
-| Trapezoidal sum   | Average of endpoints (trapezoids, not rectangles) |
+| Left Riemann sum | Left endpoint |
+| Right Riemann sum | Right endpoint |
+| Midpoint sum | Midpoint of subinterval |
+| Trapezoidal sum | Average of endpoints (trapezoids, not rectangles) |
 
-**Why Riemann sums matter.** They are the foundation of the definite integral. As $n \to \infty$,
-the approximation becomes exact (for continuous functions).
+**Why Riemann sums matter.** They are the foundation of the definite integral. As $n \to \infty$
+The approximation becomes exact (for continuous functions).
 
-**Theorem.** If $f$ is continuous on $[a, b]$, then the Riemann sum converges to the same value
-regardless of the choice of sample points $x_i^*$.
+**Theorem.** If $f$ is continuous on $[a, b]$Then the Riemann sum converges to the same value
+Regardless of the choice of sample points $x_i^*$.
 
 ### The Definite Integral
 
@@ -120,7 +120,7 @@ $$
 \int_a^b f(x)\, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x
 $$
 
-provided this limit exists. When it does, $f$ is said to be **integrable** on $[a, b]$.
+Provided this limit exists. When it does, $f$ is said to be **integrable** on $[a, b]$.
 
 ### Properties of Definite Integrals
 
@@ -131,21 +131,21 @@ provided this limit exists. When it does, $f$ is said to be **integrable** on $[
 5. $\displaystyle\int_a^b f(x)\, dx = \int_a^c f(x)\, dx + \int_c^b f(x)\, dx$ (Additivity)
 
 **Property 5 (Additivity) is powerful.** It allows splitting integrals at discontinuities. For
-example, if $f$ has a jump at $c \in (a, b)$, you can split:
+Example, if $f$ has a jump at $c \in (a, b)$You can split:
 
 $$
 \int_a^b f(x)\, dx = \int_a^c f(x)\, dx + \int_c^b f(x)\, dx
 $$
 
-**Comparison properties.** If $f(x) \ge g(x)$ on $[a, b]$, then
+**Comparison properties.** If $f(x) \ge g(x)$ on $[a, b]$Then
 $\displaystyle\int_a^b f(x)\, dx \ge \int_a^b g(x)\, dx$.
 
-In particular, if $m \le f(x) \le M$ on $[a, b]$, then
+In particular, if $m \le f(x) \le M$ on $[a, b]$Then
 $m(b-a) \le \displaystyle\int_a^b f(x)\, dx \le M(b-a)$.
 
 ### Integral as Net Area
 
-If $f(x) \ge 0$ on $[a, b]$, then $\displaystyle\int_a^b f(x)\, dx$ equals the area under the curve.
+If $f(x) \ge 0$ on $[a, b]$Then $\displaystyle\int_a^b f(x)\, dx$ equals the area under the curve.
 If $f$ changes sign, the integral gives the **net** (signed) area.
 
 The total area between $f$ and the $x$-axis on $[a, b]$ is:
@@ -178,16 +178,16 @@ $$
 
 ### FTC Part 1
 
-If $f$ is continuous on $[a, b]$, then the function $g$ defined by:
+If $f$ is continuous on $[a, b]$Then the function $g$ defined by:
 
 $$
-g(x) = \int_a^x f(t)\, dt
+G(x) = \int_a^x f(t)\, dt
 $$
 
-is differentiable on $(a, b)$, and:
+Is differentiable on $(a, b)$And:
 
 $$
-g'(x) = f(x)
+G'(x) = f(x)
 $$
 
 More generally, by the chain rule:
@@ -197,8 +197,8 @@ $$
 $$
 
 **Intuition.** FTC Part 1 says: the rate at which the accumulated area changes is just the height of
-the curve at that point. This connects the two halves of calculus: the derivative and the integral
-are inverse operations.
+The curve at that point. This connects the two halves of calculus: the derivative and the integral
+Are inverse operations.
 
 :::info[Example]
 
@@ -242,7 +242,7 @@ $$
 
 ### FTC Part 2
 
-If $f$ is continuous on $[a, b]$ and $F$ is any antiderivative of $f$, then:
+If $f$ is continuous on $[a, b]$ and $F$ is any antiderivative of $f$Then:
 
 $$
 \int_a^b f(x)\, dx = F(b) - F(a)
@@ -264,11 +264,11 @@ $$
 
 Let $F$ be an antiderivative of $f$. Define $g(x) = \int_a^x f(t)\, dt$.
 
-By FTC Part 1, $g'(x) = f(x) = F'(x)$, so $g(x) = F(x) + C$ for some constant $C$.
+By FTC Part 1, $g'(x) = f(x) = F'(x)$So $g(x) = F(x) + C$ for some constant $C$.
 
 At $x = a$: $g(a) = 0 = F(a) + C \implies C = -F(a)$.
 
-Therefore, $g(x) = F(x) - F(a)$, and:
+Therefore, $g(x) = F(x) - F(a)$And:
 
 $$
 \int_a^b f(t)\, dt = g(b) = F(b) - F(a)
@@ -280,20 +280,20 @@ $\blacksquare$
 
 ### $u$-Substitution
 
-If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$, let $u = g(x)$, $du = g'(x)\, dx$:
+If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$Let $u = g(x)$$du = g'(x)\, dx$:
 
 $$
 \int f(u)\, du = F(u) + C = F(g(x)) + C
 $$
 
 **Strategy for choosing $u$.** Look for a function and its derivative in the integrand. If you can
-spot $f(g(x))$ and $g'(x)$, set $u = g(x)$.
+Spot $f(g(x))$ and $g'(x)$Set $u = g(x)$.
 
 :::info[Example]
 
 Evaluate $\displaystyle\int 2x e^{x^2}\, dx$.
 
-Let $u = x^2$, $du = 2x\, dx$:
+Let $u = x^2$$du = 2x\, dx$:
 
 $$
 \int 2x e^{x^2}\, dx = \int e^u\, du = e^u + C = e^{x^2} + C
@@ -305,7 +305,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
 
-Let $u = x^2 + 1$, $du = 2x\, dx$, giving $\frac{1}{2}du = x\, dx$:
+Let $u = x^2 + 1$$du = 2x\, dx$Giving $\frac{1}{2}du = x\, dx$:
 
 $$
 \int \frac{x}{x^2 + 1}\, dx = \frac{1}{2}\int \frac{1}{u}\, du = \frac{1}{2}\ln|u| + C = \frac{1}{2}\ln(x^2 + 1) + C
@@ -317,7 +317,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{\ln x}{x}\, dx$.
 
-Let $u = \ln x$, $du = \frac{1}{x}\, dx$:
+Let $u = \ln x$$du = \frac{1}{x}\, dx$:
 
 $$
 \int \frac{\ln x}{x}\, dx = \int u\, du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C
@@ -337,7 +337,7 @@ $$
 
 Evaluate $\displaystyle\int_0^1 x\sqrt{1 + x^2}\, dx$.
 
-Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1, u = 2$.
+Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1, u = 2$.
 
 $$
 \int_0^1 x\sqrt{1 + x^2}\, dx = \frac{1}{2}\int_1^2 \sqrt{u}\, du = \frac{1}{2}\left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2\sqrt{2} - 1)
@@ -349,7 +349,7 @@ $$
 
 Evaluate $\displaystyle\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx$.
 
-Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1$, $u = 2$.
+Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1$$u = 2$.
 
 $$
 \int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx = \int_1^2 u^{-1/2}\, du = \left[2\sqrt{u}\right]_1^2 = 2\sqrt{2} - 2
@@ -366,19 +366,19 @@ $$
 Choose $u$ using **LIATE** priority: Logarithmic, Inverse trig, Algebraic, Trig, Exponential.
 
 **Why LIATE works.** The antiderivative of $u$ should be simpler than $u$ itself. Logarithmic and
-inverse trig functions simplify upon differentiation. Algebraic functions require integration by
-parts to reduce their degree.
+Inverse trig functions simplify upon differentiation. Algebraic functions require integration by
+Parts to reduce their degree.
 
 **Tabular integration (DI method).** For integrals of the form $\displaystyle\int f(x)g(x)\, dx$
-where $f(x)$ is a polynomial and $g(x)$ has an easily repeatable derivative pattern, use a table.
-Label columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$, $-$, $+$, $-$.
+Where $f(x)$ is a polynomial and $g(x)$ has an repeatable derivative pattern, use a table.
+Label columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$$-$$+$$-$.
 The result is the sum of diagonal products.
 
 :::info[Example]
 
 Evaluate $\displaystyle\int x e^x\, dx$.
 
-Let $u = x$, $dv = e^x\, dx$. Then $du = dx$, $v = e^x$.
+Let $u = x$$dv = e^x\, dx$. Then $du = dx$$v = e^x$.
 
 $$
 \int x e^x\, dx = xe^x - \int e^x\, dx = xe^x - e^x + C = e^x(x - 1) + C
@@ -390,14 +390,14 @@ $$
 
 Evaluate $\displaystyle\int x^2 e^x\, dx$.
 
-Let $u = x^2$, $dv = e^x\, dx$. Then $du = 2x\, dx$, $v = e^x$.
+Let $u = x^2$$dv = e^x\, dx$. Then $du = 2x\, dx$$v = e^x$.
 
 $$
 = x^2 e^x - \int 2x e^x\, dx
 $$
 
-Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$, $dv = e^x\, dx$,
-$du = 2\, dx$, $v = e^x$:
+Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$$dv = e^x\, dx$
+$du = 2\, dx$$v = e^x$:
 
 $$
 \int 2x e^x\, dx = 2xe^x - 2e^x + C
@@ -413,9 +413,9 @@ $$
 
 | Sign | D (derivatives) | I (integrals) |
 | ---- | --------------- | ------------- |
-| $+$  | $x^2$           | $e^x$         |
-| $-$  | $2x$            | $e^x$         |
-| $+$  | $2$             | $e^x$         |
+| $+$ | $x^2$ | $e^x$ |
+| $-$ | $2x$ | $e^x$ |
+| $+$ | $2$ | $e^x$ |
 
 Result: $x^2 e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2)$. Confirmed.
 
@@ -425,7 +425,7 @@ Result: $x^2 e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2)$. Confirmed.
 
 Evaluate $\displaystyle\int \ln x\, dx$.
 
-Let $u = \ln x$, $dv = dx$. Then $du = \frac{1}{x}dx$, $v = x$.
+Let $u = \ln x$$dv = dx$. Then $du = \frac{1}{x}dx$$v = x$.
 
 $$
 \int \ln x\, dx = x\ln x - \int x \cdot \frac{1}{x}\, dx = x\ln x - x + C
@@ -437,7 +437,7 @@ $$
 
 Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\, dx$.
 
-Let $u = x$, $dv = \sin x\, dx$, $du = dx$, $v = -\cos x$.
+Let $u = x$$dv = \sin x\, dx$$du = dx$$v = -\cos x$.
 
 $$
 = [-x\cos x]_0^{\pi/2} - \int_0^{\pi/2} (-\cos x)\, dx = \left(0 + \frac{\pi}{2}\cos 0\right) - [-\sin x]_0^{\pi/2} = \frac{\pi}{2} - 1
@@ -474,7 +474,7 @@ $$
 ### Improper Integrals
 
 An improper integral involves either an infinite limit of integration or an infinite discontinuity
-in the interval.
+In the interval.
 
 **Type 1: Infinite interval:**
 
@@ -512,7 +512,7 @@ $$
 
 Evaluate $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx$.
 
-Let $u = x^2$, $du = 2x\, dx$:
+Let $u = x^2$$du = 2x\, dx$:
 
 $$
 \int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}\int_0^{\infty} e^{-u}\, du = \frac{1}{2}\left[-e^{-u}\right]_0^{\infty} = \frac{1}{2}(0 + 1) = \frac{1}{2}
@@ -522,8 +522,8 @@ $$
 
 **The Gaussian integral.** The integral
 $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ is a celebrated result that
-cannot be evaluated by elementary methods. The standard technique uses a double integral in polar
-coordinates. The full Gaussian integral from $-\infty$ to $\infty$ equals $\sqrt{\pi}$.
+Cannot be evaluated by elementary methods. The standard technique uses a double integral in polar
+Coordinates. The full Gaussian integral from $-\infty$ to $\infty$ equals $\sqrt{\pi}$.
 
 Note that $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (computed above via
 $u$-substitution) is a different integral from
@@ -557,9 +557,9 @@ $$
 
 Find the area between $y = x^2$ and $y = 2x$.
 
-Find intersections: $x^2 = 2x$, so $x^2 - 2x = 0$, giving $x = 0$ and $x = 2$.
+Find intersections: $x^2 = 2x$So $x^2 - 2x = 0$Giving $x = 0$ and $x = 2$.
 
-Between $x = 0$ and $x = 2$, $2x \ge x^2$.
+Between $x = 0$ and $x = 2$$2x \ge x^2$.
 
 $$
 A = \int_0^2 (2x - x^2)\, dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
@@ -588,11 +588,11 @@ V = 2\pi \int_a^b x \cdot f(x)\, dx
 $$
 
 **When to use which method.** Use the disk/washer method when integrating perpendicular to the axis
-of rotation. Use the shell method when integrating parallel to the axis of rotation.
+Of rotation. Use the shell method when integrating parallel to the axis of rotation.
 
 :::info[Example]
 
-Find the volume of the solid obtained by rotating $y = \sqrt{x}$, $y = 0$, $x = 4$ about the
+Find the volume of the solid obtained by rotating $y = \sqrt{x}$$y = 0$$x = 4$ about the
 $x$-axis.
 
 Using the disk method:
@@ -606,7 +606,7 @@ $$
 :::info[Example]
 
 Find the volume of the solid obtained by rotating the region bounded by $y = x^2$ and $y = x$ about
-the $y$-axis.
+The $y$-axis.
 
 The curves intersect at $x = 0$ and $x = 1$. Using the shell method:
 
@@ -618,8 +618,8 @@ $$
 
 :::info[Example]
 
-Find the volume of the solid obtained by rotating the region bounded by $y = e^{-x}$, $y = 0$,
-$x = 0$, $x = 1$ about the $x$-axis.
+Find the volume of the solid obtained by rotating the region bounded by $y = e^{-x}$$y = 0$
+$x = 0$$x = 1$ about the $x$-axis.
 
 Using the disk method:
 
@@ -634,7 +634,7 @@ $$
 The average value of $f$ on $[a, b]$ is:
 
 $$
-f_{\mathrm{avg{}} = \frac{1}{b - a}\int_a^b f(x)\, dx
+F_{\mathrm{avg{}} = \frac{1}{b - a}\int_a^b f(x)\, dx
 $$
 
 By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\mathrm{avg{}}$.
@@ -644,7 +644,7 @@ By the MVT for integrals, there exists $c \in [a, b]$ such that $f(c) = f_{\math
 Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
 $$
-f_{\mathrm{avg{}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
+F_{\mathrm{avg{}} = \frac{1}{\pi}\int_0^{\pi} \sin x\, dx = \frac{1}{\pi}[-\cos x]_0^{\pi} = \frac{1}{\pi}(1 - (-1)) = \frac{2}{\pi}
 $$
 
 :::
@@ -667,7 +667,7 @@ $$
 L = \int_0^3 \sqrt{1 + x}\, dx
 $$
 
-Let $u = 1 + x$, $du = dx$:
+Let $u = 1 + x$$du = dx$:
 
 $$
 L = \int_1^4 \sqrt{u}\, du = \left[\frac{2u^{3/2}}{3}\right]_1^4 = \frac{2}{3}(8 - 1) = \frac{14}{3}
@@ -678,49 +678,49 @@ $$
 ## Common Pitfalls
 
 1. **Forgetting the constant of integration** in indefinite integrals. Without it, the answer is
-   incomplete.
+ incomplete.
 2. **Incorrect $u$-substitution limits.** When using $u$-substitution for definite integrals, always
-   change the limits or substitute back to the original variable.
+ change the limits or substitute back to the original variable.
 3. **Forgetting to change $dx$ to $du$** when performing $u$-substitution.
 4. **Applying FTC Part 2 to discontinuous functions.** $f$ must be continuous on $[a, b]$.
 5. **Confusing net area with total area.** Use absolute values for total area.
 6. **Incorrectly choosing $u$ in integration by parts.** Use LIATE: prioritize Logarithmic over
-   Inverse trig over Algebraic over Trig over Exponential.
+ Inverse trig over Algebraic over Trig over Exponential.
 7. **Sign errors with FTC Part 1 chain rule.** The derivative of $\int_a^{g(x)} f(t)\, dt$ is
-   $f(g(x)) \cdot g'(x)$, not $f(g(x))$.
+ $f(g(x)) \cdot g'(x)$Not $f(g(x))$.
 8. **Forgetting to split improper integrals at the discontinuity** when a singularity is in the
-   interval.
-9. **Choosing the disk vs. washer vs. shell method incorrectly.** Disk: rotate around $x$-axis using
-   radius. Shell: rotate around $y$-axis using height as the integrand. Washer: region between two
-   curves rotated about an axis.
+ interval.
+9. **Choosing the disk vs. Washer vs. Shell method incorrectly.** Disk: rotate around $x$-axis using
+ radius. Shell: rotate around $y$-axis using height as the integrand. Washer: region between two
+ curves rotated about an axis.
 10. **Dropping the absolute value in $\ln|x|$.** The antiderivative of $\frac{1}{x}$ is
-    $\ln|x| + C$, not $\ln x + C$. On intervals where $x \lt 0$, the integral is well-defined and
-    equals $\ln(-x) + C$.
+ $\ln|x| + C$Not $\ln x + C$. On intervals where $x \lt 0$The integral is well-defined and
+ equals $\ln(-x) + C$.
 11. **Confusing the Gaussian integrals.**
-    $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (evaluated via $u$-substitution),
-    but $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ (requires advanced
-    techniques).
+ $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}$ (evaluated via $u$-substitution),
+ but $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$ (requires advanced
+ techniques).
 
 ## Practice Questions
 
 1. Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
 
 2. Evaluate $\displaystyle\int_0^{\pi/2} \sin^2 x\, dx$. (Hint: use the identity
-   $\sin^2 x = \frac{1 - \cos 2x}{2}$.)
+ $\sin^2 x = \frac{1 - \cos 2x}{2}$.)
 
 3. Use integration by parts to evaluate $\displaystyle\int x^2 e^x\, dx$.
 
 4. Find the area between $y = x^2$ and $y = 2x$.
 
-5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$, $y = 0$,
-   $x = 1$ about the $y$-axis. (Use the shell method.)
+5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$$y = 0$
+ $x = 1$ about the $y$-axis. (Use the shell method.)
 
 6. Determine whether $\displaystyle\int_0^{\infty} e^{-x}\, dx$ converges, and find its value if it
-   does.
+ does.
 
 7. Find the average value of $f(x) = \sin x$ on $[0, \pi]$.
 
-8. Given $\displaystyle g(x) = \int_0^{x^3} \cos(t^2)\, dt$, find $g'(x)$.
+8. Given $\displaystyle g(x) = \int_0^{x^3} \cos(t^2)\, dt$Find $g'(x)$.
 
 9. Evaluate $\displaystyle\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx$.
 
@@ -728,8 +728,8 @@ $$
 
 11. Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\, dx$.
 
-12. Find the volume when the region bounded by $y = e^{-x}$, $y = 0$, $x = 0$, $x = 1$ is rotated
-    about the $x$-axis.
+12. Find the volume when the region bounded by $y = e^{-x}$$y = 0$$x = 0$$x = 1$ is rotated
+ about the $x$-axis.
 
 13. Evaluate $\displaystyle\int_0^1 \frac{1}{1 + x^2}\, dx$ and explain the result geometrically.
 
@@ -775,7 +775,7 @@ Evaluate $\displaystyle\int \frac{x^2}{\sqrt{9 - x^2}} \, dx$.
 <details>
 <summary>Answer</summary>
 
-Let $x = 3\sin\theta$, $dx = 3\cos\theta \, d\theta$, $\sqrt{9 - x^2} = 3\cos\theta$.
+Let $x = 3\sin\theta$$dx = 3\cos\theta \, d\theta$$\sqrt{9 - x^2} = 3\cos\theta$.
 
 $= \int \frac{9\sin^2\theta}{3\cos\theta} \cdot 3\cos\theta \, d\theta = 9\int \sin^2\theta \, d\theta = 9\int \frac{1 - \cos 2\theta}{2} \, d\theta$
 
@@ -797,9 +797,9 @@ Find the area enclosed by the curves $y = x^2$ and $y = 2x + 3$.
 <details>
 <summary>Answer</summary>
 
-Intersection: $x^2 = 2x + 3$, $x^2 - 2x - 3 = 0$, $(x-3)(x+1) = 0$. $x = -1$ and $x = 3$.
+Intersection: $x^2 = 2x + 3$$x^2 - 2x - 3 = 0$$(x-3)(x+1) = 0$. $x = -1$ and $x = 3$.
 
-On $[-1, 3]$, $2x + 3 \ge x^2$.
+On $[-1, 3]$$2x + 3 \ge x^2$.
 
 Area $= \int_{-1}^{3} [(2x + 3) - x^2] \, dx = \left[x^2 + 3x - \frac{x^3}{3}\right]_{-1}^{3}$
 
@@ -821,19 +821,19 @@ $\displaystyle\int_1^{\infty} \frac{1}{x^p} \, dx = \lim_{b \to \infty} \int_1^b
 
 For $p \ne 1$: $= \lim_{b \to \infty} \left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty} \frac{b^{1-p} - 1}{1-p}$.
 
-- If $p \gt 1$: $1 - p \lt 0$, so $b^{1-p} \to 0$. Integral converges to $\frac{1}{p - 1}$.
-- If $p \lt 1$: $1 - p \gt 0$, so $b^{1-p} \to \infty$. Integral diverges.
+- If $p \gt 1$: $1 - p \lt 0$So $b^{1-p} \to 0$. Integral converges to $\frac{1}{p - 1}$.
+- If $p \lt 1$: $1 - p \gt 0$So $b^{1-p} \to \infty$. Integral diverges.
 
 For $p = 1$: $\int_1^b \frac{1}{x} \, dx = \ln b \to \infty$. Diverges.
 
-The integral converges if and only if $p \gt 1$, with value $\frac{1}{p-1}$.
+The integral converges if and only if $p \gt 1$With value $\frac{1}{p-1}$.
 
 </details>
 
 <details>
 <summary>Question 5: Volume of revolution</summary>
 
-Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$, $y = 0$, and $x = 4$ about the x-axis.
+Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$ about the x-axis.
 
 </details>
 
@@ -856,3 +856,11 @@ Ready to test your understanding of **Integrals**? The [diagnostic test](/docs/q
 
 See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

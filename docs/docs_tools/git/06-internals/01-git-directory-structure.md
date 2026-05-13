@@ -102,7 +102,7 @@ Unnamed repository; edit this file 'description' to name the repository.
 
 ### info/exclude
 
-Local gitignore rules that are **not shared** with other developers (unlike `.gitignore`, which is tracked):
+Local gitignore rules that are **not shared** with other developers (unlike `.gitignore`Which is tracked):
 
 ```bash
 # .git/info/exclude
@@ -162,17 +162,17 @@ Git hooks are scripts that run automatically at specific points in the Git workf
 
 ### Available Hooks
 
-| Hook                 | Trigger                        | Use Case                           |
+| Hook | Trigger | Use Case |
 | -------------------- | ------------------------------ | ---------------------------------- |
-| `pre-commit`         | Before commit is created       | Linting, formatting, running tests |
-| `commit-msg`         | After message is written       | Validate commit message format     |
-| `post-commit`        | After commit is created        | Notifications                      |
-| `pre-push`           | Before pushing                 | Run full test suite, security scan |
-| `post-receive`       | On remote after receiving push | Deploy, send notifications         |
-| `pre-rebase`         | Before rebase starts           | Prevent rebasing published commits |
-| `post-checkout`      | After checkout                 | Rebuild generated files            |
-| `post-merge`         | After merge                    | Rebuild generated files            |
-| `prepare-commit-msg` | Before message editor opens    | Template commit messages           |
+| `pre-commit` | Before commit is created | Linting, formatting, running tests |
+| `commit-msg` | After message is written | Validate commit message format |
+| `post-commit` | After commit is created | Notifications |
+| `pre-push` | Before pushing | Run full test suite, security scan |
+| `post-receive` | On remote after receiving push | Deploy, send notifications |
+| `pre-rebase` | Before rebase starts | Prevent rebasing published commits |
+| `post-checkout` | After checkout | Rebuild generated files |
+| `post-merge` | After merge | Rebuild generated files |
+| `prepare-commit-msg` | Before message editor opens | Template commit messages |
 
 ### Hook Script Template
 
@@ -240,3 +240,15 @@ $ git gc --prune=now
 Always **back up** the `.git` directory before attempting recovery. Some operations (`git gc --prune=now`) are irreversible.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

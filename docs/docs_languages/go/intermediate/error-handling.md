@@ -19,7 +19,7 @@ type error interface {
 ```
 
 Any type implementing `Error() string` is an error. There is no exception mechanism -- errors are
-values, returned like any other value.
+Values, returned like any other value.
 
 ### Idiomatic Error Pattern
 
@@ -63,7 +63,7 @@ if errors.Is(err, ErrNotFound) {
 ```
 
 Use `errors.Is` (Go 1.13+) instead of `==` for comparison, because `errors.Is` unwraps wrapped
-errors:
+Errors:
 
 ```go
 if errors.Is(err, ErrNotFound) { ... }
@@ -112,7 +112,7 @@ func readConfig(path string) (*Config, error) {
 ```
 
 `fmt.Errorf("context: %w", err)` creates a new error that wraps `err`. The wrapped error is
-accessible via `errors.Is` and `errors.As`.
+Accessible via `errors.Is` and `errors.As`.
 
 ### `%w` vs `%v`
 
@@ -164,7 +164,7 @@ if errors.As(err, &terr) {
 
 ### Custom Unwrap
 
-To make a custom error type compatible with `errors.Is` and `errors.As`, implement the
+To make a custom error type compatible with `errors.Is` and `errors.As`Implement the
 `Unwrap() error` method:
 
 ```go
@@ -250,7 +250,7 @@ Panics are not appropriate for:
 ### Recover at the Top Level
 
 In servers, recover panics at the handler level to prevent a single panic from crashing the entire
-process:
+Process:
 
 ```go
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -267,22 +267,30 @@ func handler(w http.ResponseWriter, r *http.Request) {
 ## Common Pitfalls
 
 1. **Ignoring errors.** `result, _ := someFunc()` silently discards errors. At minimum, log the
-   error. In tests, use `t.Fatal(err)`.
+ error. In tests, use `t.Fatal(err)`.
 
 2. **Using `panic` for expected errors.** Panics are for bugs. If a file might not exist, return an
-   error. If a network request might time out, return an error.
+ error. If a network request might time out, return an error.
 
 3. **Comparing errors with `==`.** Use `errors.Is` instead. Direct comparison fails for wrapped
-   errors and for custom error types that are not sentinel values.
+ errors and for custom error types that are not sentinel values.
 
 4. **Creating error types without `Unwrap`.** If your error type wraps another error, implement
-   `Unwrap() error` so that `errors.Is` and `errors.As` can traverse the chain.
+ `Unwrap() error` so that `errors.Is` and `errors.As` can traverse the chain.
 
 5. **Using `%v` instead of `%w` when wrapping.** `%v` formats the error as a string, losing the
-   ability to inspect the chain with `errors.Is`/`errors.As`.
+ ability to inspect the chain with `errors.Is`/`errors.As`.
 
 6. **Recover outside of defer.** `recover` only works inside deferred functions. Calling it anywhere
-   else always returns `nil`.
+ else always returns `nil`.
 
 7. **String-based error matching.** Using `strings.Contains(err.Error(), "not found")` is fragile.
-   Use sentinel errors or custom error types with `errors.Is`/`errors.As`.
+ Use sentinel errors or custom error types with `errors.Is`/`errors.As`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -19,22 +19,22 @@ The three core functions are:
 
 ### VPN Types
 
-| Type          | Layer    | Use Case                          | Example                  |
+| Type | Layer | Use Case | Example |
 | ------------- | -------- | --------------------------------- | ------------------------ |
-| Remote access | L3 (IP)  | Employees connecting to corporate | WireGuard, OpenVPN       |
-| Site-to-site  | L3 (IP)  | Connecting office networks        | IPsec, WireGuard         |
-| SSL/TLS VPN   | L7 (app) | Browser-based access              | OpenVPN (TLS mode)       |
-| SSH tunneling | L7 (app) | Ad-hoc port forwarding            | SSH local/remote/dynamic |
+| Remote access | L3 (IP) | Employees connecting to corporate | WireGuard, OpenVPN |
+| Site-to-site | L3 (IP) | Connecting office networks | IPsec, WireGuard |
+| SSL/TLS VPN | L7 (app) | Browser-based access | OpenVPN (TLS mode) |
+| SSH tunneling | L7 (app) | Ad-hoc port forwarding | SSH local/remote/dynamic |
 
 ## WireGuard
 
 WireGuard is a modern, minimalist VPN protocol that uses the Noise protocol framework for key
-exchange and ChaCha20 for encryption.
+Exchange and ChaCha20 for encryption.
 
 ### Core Concepts
 
 WireGuard uses **cryptokey routing**: each peer has a public/private key pair, and each peer's
-allowed IP addresses define which packets are routed through the tunnel.
+Allowed IP addresses define which packets are routed through the tunnel.
 
 ```ini
 # /etc/wireguard/wg0.conf (server)
@@ -91,7 +91,7 @@ The `AllowedIPs` directive is the routing decision point:
 
 - On the **server**, `AllowedIPs = 10.0.0.2/32` means "accept packets FROM this IP only"
 - On the **client**, `AllowedIPs = 10.0.0.0/24` means "route packets TO this subnet through the
-  tunnel"
+ tunnel"
 - `AllowedIPs = 0.0.0.0/0` routes ALL traffic through the tunnel (full VPN)
 - `AllowedIPs = 10.0.0.0/24` routes only VPN subnet traffic (split tunnel)
 
@@ -99,11 +99,11 @@ The `AllowedIPs` directive is the routing decision point:
 
 WireGuard is significantly faster than OpenVPN and IPsec:
 
-| Protocol  | Throughput (approx) | CPU Usage | Code Size | Handshake Time |
+| Protocol | Throughput (approx) | CPU Usage | Code Size | Handshake Time |
 | --------- | ------------------- | --------- | --------- | -------------- |
-| WireGuard | Near line rate      | Very low  | ~4000 LOC | ~1 RTT         |
-| OpenVPN   | 100-600 Mbps        | Moderate  | ~100K LOC | 2-4 RTTs       |
-| IPsec     | 200-800 Mbps        | Moderate  | ~400K LOC | 2 RTTs         |
+| WireGuard | Near line rate | Very low | ~4000 LOC | ~1 RTT |
+| OpenVPN | 100-600 Mbps | Moderate | ~100K LOC | 2-4 RTTs |
+| IPsec | 200-800 Mbps | Moderate | ~400K LOC | 2 RTTs |
 
 ```bash
 # Enable WireGuard
@@ -122,7 +122,7 @@ wg-quick down wg0
 ## IPsec
 
 IPsec (Internet Protocol Security) operates at the network layer (L3) and is implemented in the
-kernel. It consists of two protocols:
+Kernel. It consists of two protocols:
 
 - **IKE (Internet Key Exchange):** manages key exchange (IKEv1 is deprecated; use IKEv2)
 - **ESP (Encapsulating Security Payload):** provides encryption and authentication for IP packets
@@ -161,16 +161,16 @@ alice : EAP "alice_password"
 
 ### IPsec Modes
 
-| Mode      | Encapsulation                 | Use Case                        |
+| Mode | Encapsulation | Use Case |
 | --------- | ----------------------------- | ------------------------------- |
-| Transport | Original IP header preserved  | Host-to-host communication      |
-| Tunnel    | Entire IP packet encapsulated | Site-to-site, remote access VPN |
+| Transport | Original IP header preserved | Host-to-host communication |
+| Tunnel | Entire IP packet encapsulated | Site-to-site, remote access VPN |
 
 ### SA and SPI
 
 IPsec uses **Security Associations (SAs)** to define the security parameters for a connection. Each
 SA is identified by a **Security Parameter Index (SPI)** in the packet header. There are two SAs per
-connection: one inbound, one outbound.
+Connection: one inbound, one outbound.
 
 ```bash
 # View IPsec SAs
@@ -382,13 +382,13 @@ Every node connects to every other node. Scales as O(n^2) with the number of nod
 
 ## VPN vs Zero-Trust
 
-| Aspect          | VPN                            | Zero-Trust                   |
+| Aspect | VPN | Zero-Trust |
 | --------------- | ------------------------------ | ---------------------------- |
-| Network model   | Perimeter-based                | Identity-based               |
-| Access model    | Full network access on connect | Least-privilege per resource |
-| Trust           | Trusted once connected         | Never trust, always verify   |
-| Scalability     | Hub-and-spoke bottlenecks      | Scales per service           |
-| User experience | Connect, then access all       | Authenticate per application |
+| Network model | Perimeter-based | Identity-based |
+| Access model | Full network access on connect | Least-privilege per resource |
+| Trust | Trusted once connected | Never trust, always verify |
+| Scalability | Hub-and-spoke bottlenecks | Scales per service |
+| User experience | Connect, then access all | Authenticate per application |
 
 ### When to Use Each
 
@@ -407,7 +407,7 @@ Use zero-trust when:
 ## Split Tunneling
 
 Split tunneling routes only specific traffic through the VPN, sending the rest directly to the
-internet:
+Internet:
 
 ```text
 Without split tunnel:
@@ -461,7 +461,7 @@ iptables -A OUTPUT -d vpn.example.com -p udp --dport 51820 -j ACCEPT
 ## MTU Issues
 
 VPN encapsulation adds overhead to each packet, which can cause fragmentation if the original MTU is
-too large:
+Too large:
 
 ```text
 Ethernet MTU:        1500 bytes
@@ -523,13 +523,13 @@ keepalive 10 120  # ping every 10s, restart after 120s silence
 
 ## Commercial vs Self-Hosted
 
-| Solution          | Type        | Ease of Use | Privacy | Cost             |
+| Solution | Type | Ease of Use | Privacy | Cost |
 | ----------------- | ----------- | ----------- | ------- | ---------------- |
-| WireGuard         | Self-hosted | Medium      | Full    | Server cost      |
-| OpenVPN           | Self-hosted | Medium      | Full    | Server cost      |
-| Tailscale         | Managed WG  | Easy        | Partial | Free tier + paid |
-| Headscale         | Self-hosted | Medium      | Full    | Server cost      |
-| Cloudflare Tunnel | Managed     | Easy        | Partial | Free tier + paid |
+| WireGuard | Self-hosted | Medium | Full | Server cost |
+| OpenVPN | Self-hosted | Medium | Full | Server cost |
+| Tailscale | Managed WG | Easy | Partial | Free tier + paid |
+| Headscale | Self-hosted | Medium | Full | Server cost |
+| Cloudflare Tunnel | Managed | Easy | Partial | Free tier + paid |
 
 ### Tailscale
 
@@ -579,8 +579,8 @@ Configure the VPN to push the correct DNS settings, or manually configure the cl
 
 ### Not Using PersistentKeepalive
 
-Without `PersistentKeepalive`, NAT mappings expire and the VPN connection drops silently. This is
-the most common cause of "VPN was working yesterday but stopped today."
+Without `PersistentKeepalive`NAT mappings expire and the VPN connection drops silently. This is
+The most common cause of "VPN was working yesterday but stopped today."
 
 ### MTU Mismatch
 
@@ -590,4 +590,12 @@ Reduce the MTU on the VPN interface to 1360-1420 and test.
 ### Using the Same Keys Across Environments
 
 WireGuard private keys must be unique per peer. Reusing keys across servers or clients causes
-routing conflicts and security vulnerabilities. Generate a new key pair for every peer.
+Routing conflicts and security vulnerabilities. Generate a new key pair for every peer.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

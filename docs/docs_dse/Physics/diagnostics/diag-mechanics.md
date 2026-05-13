@@ -115,7 +115,7 @@ $$N = mg = 65 \times 9.81 = 637.7 \text{ N}$$
 
 Scale reads $65.0$ kg (normal weight).
 
-**Phase 3: Decelerating ($a = -3 \text{ m s}^{-2}$, lift is moving up but slowing down)**
+**Phase 3: Decelerating ($a = -3 \text{ m s}^{-2}$Lift is moving up but slowing down)**
 
 $$N - mg = ma$$
 
@@ -177,7 +177,7 @@ Speed $= 12.0 \text{ m s}^{-1}$.
 
 **Question:**
 
-Block A (mass $4$ kg) rests on top of block B (mass $6$ kg), which rests on a smooth horizontal floor. A horizontal force of $30$ N is applied to block B. The coefficient of static friction between A and B is $0.3$, and the coefficient of kinetic friction is $0.25$. Determine whether the blocks move together or slide relative to each other, and find the acceleration of each block.
+Block A (mass $4$ kg) rests on top of block B (mass $6$ kg), which rests on a smooth horizontal floor. A horizontal force of $30$ N is applied to block B. The coefficient of static friction between A and B is $0.3$And the coefficient of kinetic friction is $0.25$. Determine whether the blocks move together or slide relative to each other, and find the acceleration of each block.
 
 **Solution:**
 
@@ -191,7 +191,7 @@ $$F = (m_A + m_B)a$$
 
 $$a = \frac{30}{4 + 6} = 3 \text{ m s}^{-2}$$
 
-For block A to accelerate at $3 \text{ m s}^{-2}$, the friction force on A must provide this acceleration:
+For block A to accelerate at $3 \text{ m s}^{-2}$The friction force on A must provide this acceleration:
 
 $$f = m_A \times a = 4 \times 3 = 12 \text{ N}$$
 
@@ -199,7 +199,7 @@ Maximum static friction:
 
 $$f_{\max} = \mu_s m_A g = 0.3 \times 4 \times 9.81 = 11.77 \text{ N}$$
 
-Since $12 \text{ N} \gt 11.77 \text{ N}$, the required friction exceeds the maximum static friction. **The blocks slide relative to each other.**
+Since $12 \text{ N} \gt 11.77 \text{ N}$The required friction exceeds the maximum static friction. **The blocks slide relative to each other.**
 
 **Step 2: Find actual accelerations**
 

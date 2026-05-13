@@ -21,10 +21,10 @@ When a bug is discovered in production, you may need to search through hundreds 
 
 | Commits to search | Linear steps | Binary steps |
 | ----------------- | ------------ | ------------ |
-| 100               | 100          | 7            |
-| 1,000             | 1,000        | 10           |
-| 10,000            | 10,000       | 14           |
-| 100,000           | 100,000      | 17           |
+| 100 | 100 | 7 |
+| 1,000 | 1,000 | 10 |
+| 10,000 | 10,000 | 14 |
+| 100,000 | 100,000 | 17 |
 
 ## Basic Usage
 
@@ -145,7 +145,7 @@ $ git bisect reset main
 
 ### 1. Use Good/Bad Markers Strategically
 
-- **Bad**: The commit where the bug is confirmed present (usually `HEAD` or a specific release tag).
+- **Bad**: The commit where the bug is confirmed present ( `HEAD` or a specific release tag).
 - **Good**: The most recent commit where the bug is confirmed absent. The closer this is to the bad commit, the fewer iterations needed.
 
 ### 2. Write Reproducible Test Scripts
@@ -190,3 +190,15 @@ Then examine the full commit:
 ```bash
 $ git show a3f2b1c0
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -75,12 +75,12 @@ val rect = createRectangle(
 ```
 
 When calling Java methods from Kotlin, named arguments cannot be used (the JVM does not preserve
-parameter names by default; use `-parameters` compiler flag to enable this).
+Parameter names by default; use `-parameters` compiler flag to enable this).
 
 ## Extension Functions
 
 Extension functions add functions to existing classes without modifying their source code or using
-inheritance. They are resolved statically -- they are not virtual.
+Inheritance. They are resolved statically -- they are not virtual.
 
 ```kotlin
 fun String.isPalindrome(): Boolean {
@@ -111,7 +111,7 @@ println("hello".orEmpty())  // "hello"
 ### Extension Functions vs Utility Functions
 
 Extension functions compile to static functions with the receiver as the first parameter. They do
-not modify the class.
+Not modify the class.
 
 ```kotlin
 // Kotlin
@@ -146,7 +146,7 @@ If a member function and an extension function have the same signature, the **me
 ## Infix Functions
 
 Functions marked `infix` can be called with infix notation (without parentheses and dots) when they
-have a single parameter.
+Have a single parameter.
 
 ```kotlin
 infix fun Int.power(exponent: Int): Long {
@@ -165,8 +165,8 @@ val contains = 5 in range
 ```
 
 Infix functions must have exactly one parameter and must be a member function or an extension
-function. The parameter cannot accept a variable number of arguments and cannot have a default
-value.
+Function. The parameter cannot accept a variable number of arguments and cannot have a default
+Value.
 
 ## Lambda Expressions
 
@@ -182,7 +182,7 @@ val noArgs: () -> Unit = { println("executed") }
 ### Trailing Lambda Syntax
 
 When a function's last parameter is a function type, the lambda can be placed outside the
-parentheses.
+Parentheses.
 
 ```kotlin
 list.filter({ it > 0 })
@@ -271,7 +271,7 @@ println(triple(5))  // 15
 
 Higher-order functions create anonymous classes for lambdas, causing allocation overhead. The
 `inline` modifier instructs the compiler to substitute the function body and the lambda at each call
-site.
+Site.
 
 ```kotlin
 inline fun measureTime(block: () -> Unit): Long {
@@ -282,7 +282,7 @@ inline fun measureTime(block: () -> Unit): Long {
 ```
 
 `noinline` prevents specific lambda parameters from being inlined (needed when the lambda is stored
-or passed to a non-inline function):
+Or passed to a non-inline function):
 
 ```kotlin
 inline fun runAndStore(block: () -> Unit, noinline later: () -> Unit) {
@@ -292,7 +292,7 @@ inline fun runAndStore(block: () -> Unit, noinline later: () -> Unit) {
 ```
 
 `crossinline` prevents non-local returns inside the lambda (required when the lambda is called in a
-different execution context, such as inside another lambda or an object expression).
+Different execution context, such as inside another lambda or an object expression).
 
 ### Local Functions
 
@@ -312,12 +312,20 @@ fun processUser(user: User) {
 ## Common Pitfalls
 
 - \*\* Using `it` implicitly when the lambda context is unclear. Name the parameter explicitly when
-  nesting lambdas or when `it` would be ambiguous.
+ nesting lambdas or when `it` would be ambiguous.
 - \*\* Capturing mutable variables in lambdas. Each captured variable is boxed, which adds
-  allocation overhead in loops.
+ allocation overhead in loops.
 - \*\* Forgetting that extension functions are resolved statically. If you call an extension
-  function on a variable declared as a supertype, the extension for the supertype is resolved, not
-  the actual runtime type.
+ function on a variable declared as a supertype, the extension for the supertype is resolved, not
+ the actual runtime type.
 - \*\* Using `inline` on large functions or functions with many lambda parameters. This increases
-  code size and can cause longer compilation times. Reserve `inline` for small, frequently called
-  functions where the allocation overhead matters.
+ code size and can cause longer compilation times. Reserve `inline` for small, frequently called
+ functions where the allocation overhead matters.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

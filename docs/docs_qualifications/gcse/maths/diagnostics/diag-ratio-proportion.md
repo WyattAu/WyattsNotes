@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Ratio Problems
-**Question:** (a) Divide $\pounds 360$ in the ratio 2:3:7. (b) The ratio of boys to girls in a class is 5:3. If there are 15 girls, how many boys are there? (c) A recipe for 6 people uses 240 g of flour. How much flour is needed for 10 people? (d) The ratio of the lengths of two rectangles is 3:5. If the smaller rectangle has an area of 27 cm$^2$, what is the area of the larger rectangle?
+**Question:** (a) Divide $\pounds 360$ in the ratio 2:3:7. (b) The ratio of boys to girls in a class is 5:3. If there are 15 girls, how many boys are there? (c) A recipe for 6 people uses 240 g of flour. How much flour is needed for 10 people? (d) The ratio of the lengths of two rectangles is 3:5. If the smaller rectangle has an area of 27 cm$^2$What is the area of the larger rectangle?
 
 **Solution:**
 
@@ -60,7 +60,7 @@ Larger area $= 27 \times \frac{25}{9} = 3 \times 25 = 75$ cm$^2$.
 
 **Solution:**
 
-(a) The graph has three sections: (1) a straight line from $(0,0)$ to $(10, 30)$, (2) a horizontal line from $(10, 30)$ to $(30, 30)$, (3) a straight line from $(30, 30)$ to $(38, 0)$.
+(a) The graph has three sections: (1) a straight line from $(0,0)$ to $(10, 30)$(2) a horizontal line from $(10, 30)$ to $(30, 30)$(3) a straight line from $(30, 30)$ to $(38, 0)$.
 
 (b) Distance $=$ area under the graph.
 Section 1: $\frac{1}{2} \times 10 \times 30 = 150$ m.
@@ -92,7 +92,7 @@ Volume of top $= \frac{1}{3}\pi(9)(5) = 15\pi$ cm$^3$.
 Mass $= 8.5 \times 15\pi = 127.5\pi \approx 400.6$ g.
 
 ### IT-3: Exchange Rates and Best Value (with Number)
-**Question:** Product X costs $\$45$ USD or $38$ euros or $\pounds 32$. Exchange rates: $\$1 = \pounds 0.79$, $\pounds 1 = 1.15$ euros. (a) Convert all prices to GBP and identify the cheapest option. (b) A tourist has $\pounds 200$ and buys as many units of X as possible at the cheapest price. How many can they buy and what change do they receive? (c) If the pound strengthens by 5% against the dollar (i.e., $\pounds 1 = \$1.27 \times 1.05$), recalculate the USD price in GBP. How much does the tourist save per unit? (d) Explain the concept of purchasing power parity in this context.
+**Question:** Product X costs $\$45$ USD or $38$ euros or $\pounds 32$. Exchange rates: $\$1 = \pounds 0.79$$\pounds 1 = 1.15$ euros. (a) Convert all prices to GBP and identify the cheapest option. (b) A tourist has $\pounds 200$ and buys as many units of X as possible at the cheapest price. How many can they buy and what change do they receive? (c) If the pound strengthens by 5% against the dollar (i.e., $\pounds 1 = \$1.27 \times 1.05$), recalculate the USD price in GBP. How much does the tourist save per unit? (d) Explain the concept of purchasing power parity in this context.
 
 **Solution:**
 

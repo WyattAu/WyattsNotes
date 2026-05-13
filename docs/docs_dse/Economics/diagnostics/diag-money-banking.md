@@ -37,10 +37,10 @@ Total after 3 rounds: Deposits $= 1000 + 900 + 810 = \$2710$. Loans $= 900 + 810
 
 (a) Three functions of money:
 1. **Medium of exchange**: Money eliminates the need for double coincidence of wants inherent in barter. Example: A baker buys flour from a miller using money, without needing to find a miller who wants bread.
-2. **Unit of account**: Money provides a standard measure of value, allowing prices to be expressed in a common unit. Example: A smartphone costs $\$5000$ and a meal costs $\$100$, making it easy to compare values.
+2. **Unit of account**: Money provides a standard measure of value, allowing prices to be expressed in a common unit. Example: A smartphone costs $\$5000$ and a meal costs $\$100$Making it easy to compare values.
 3. **Store of value**: Money allows purchasing power to be saved and used in the future. Example: A worker saves $\$2000$ per month in a bank account to buy a car next year.
 
-(b) Quantity theory: $MV = PY$. If velocity $V$ is constant: growth rate of $M$ $=$ growth rate of $P$ $+$ growth rate of $Y$. $\hat{M} = \hat{P} + \hat{Y}$. $15\% = \hat{P} + 3\%$, so $\hat{P} = 12\%$.
+(b) Quantity theory: $MV = PY$. If velocity $V$ is constant: growth rate of $M$ $=$ growth rate of $P$ $+$ growth rate of $Y$. $\hat{M} = \hat{P} + \hat{Y}$. $15\% = \hat{P} + 3\%$So $\hat{P} = 12\%$.
 
 Predicted inflation rate: **12%**.
 
@@ -50,7 +50,7 @@ Predicted inflation rate: **12%**.
 - **Store of value**: Money's purchasing power evaporates. Holding cash means guaranteed losses. People spend money immediately or convert to real assets.
 
 ### UT-3: Interest Rate Determination
-**Question:** The demand for money (liquidity preference) is $L = 500 - 20i + 0.5Y$, where $i$ is the interest rate (in %) and $Y$ is real income. The money supply is fixed at $\$600$ billion. (a) Calculate the equilibrium interest rate when $Y = 1000$. (b) If the central bank increases the money supply to $\$700$B, calculate the new equilibrium interest rate. (c) If real income rises to $Y = 1200$ with the original money supply, what happens to the interest rate? Explain the mechanism.
+**Question:** The demand for money (liquidity preference) is $L = 500 - 20i + 0.5Y$Where $i$ is the interest rate (in %) and $Y$ is real income. The money supply is fixed at $\$600$ billion. (a) Calculate the equilibrium interest rate when $Y = 1000$. (b) If the central bank increases the money supply to $\$700$B, calculate the new equilibrium interest rate. (c) If real income rises to $Y = 1200$ with the original money supply, what happens to the interest rate? Explain the mechanism.
 
 **Solution:**
 
@@ -195,11 +195,11 @@ This is contractionary because it reduces bank reserves, limiting banks' ability
 
 $$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
 
-where $P = 2,000,000$, $r = 0.035/12 = 0.002917$, $n = 300$.
+Where $P = 2,000,000$$r = 0.035/12 = 0.002917$$n = 300$.
 
 $M = 2\,000\,000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2\,000\,000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2\,000\,000 \times \frac{0.00702}{1.4066} = \text{HK}\$9\,983$
 
-After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$, $r = 0.04/12 = 0.003333$.
+After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$$r = 0.04/12 = 0.003333$.
 
 $M' = 2\,000\,000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2\,000\,000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2\,000\,000 \times \frac{0.009046}{1.7137} = \text{HK}\$10\,558$
 
@@ -231,7 +231,7 @@ A's currency appreciates: it now costs only 4.85 units of B's currency to buy 1 
 
 (c) Covered interest rate parity: $F = E \times \frac{1 + i_A}{1 + i_B} = 5 \times \frac{1.02}{1.05} = 5 \times 0.9714 = 4.857$.
 
-The theoretical forward rate is 4.857, but the actual forward rate is 4.9. Since $F_{actual} (4.9) > F_{theoretical} (4.857)$, there is an arbitrage opportunity:
+The theoretical forward rate is 4.857, but the actual forward rate is 4.9. Since $F_{actual} (4.9) > F_{theoretical} (4.857)$There is an arbitrage opportunity:
 
 1. Borrow in A's currency at 2%.
 2. Convert to B's currency at the spot rate (5.0).
@@ -275,7 +275,7 @@ Leverage ratio $= \frac{\text{Equity}}{\text{Total Assets}} = \frac{100}{550} = 
 - Tier 1 minimum: $6\% \times 350 = \text{HK}\$21$ billion.
 - Total capital minimum: $8\% \times 350 = \text{HK}\$28$ billion.
 
-Assuming all equity is CET1 capital (HK$100$ billion), the bank far exceeds all minimum ratios: CET1 ratio $= 100/350 = 28.6\%$, Tier 1 ratio $= 28.6\%$, Total capital ratio $= 28.6\%$. These all exceed the Basel III minima comfortably, plus the capital conservation buffer (2.5%) and countercyclical buffer (0--2.5%).
+Assuming all equity is CET1 capital (HK$100$ billion), the bank far exceeds all minimum ratios: CET1 ratio $= 100/350 = 28.6\%$Tier 1 ratio $= 28.6\%$Total capital ratio $= 28.6\%$. These all exceed the Basel III minima comfortably, plus the capital conservation buffer (2.5%) and countercyclical buffer (0--2.5%).
 
 (d) After HK$30$B losses: Equity falls to $100 - 30 = \text{HK}\$70$ billion. Total assets fall to $550 - 30 = \text{HK}\$520$ billion.
 
@@ -297,7 +297,7 @@ Inflation rate $= \frac{156.25 - 125}{125} \times 100\% = 25\%$.
 
 When $V$ and $Y$ are constant, the inflation rate equals the money supply growth rate (the "neutrality of money" result).
 
-(c) New $V = 5$, new $Y = 16 \times 0.90 = 14.4$. $M = 625$ (from part b). $MV = 625 \times 5 = 3125$. $P = 3125 / 14.4 = 217.0$.
+(c) New $V = 5$New $Y = 16 \times 0.90 = 14.4$. $M = 625$ (from part b). $MV = 625 \times 5 = 3125$. $P = 3125 / 14.4 = 217.0$.
 
 Inflation rate from original: $\frac{217.0 - 125}{125} \times 100\% = 73.6\%$.
 
@@ -317,7 +317,7 @@ The combination of money growth (25%), velocity increase (25%), and output decli
 
 6. **Currency abandonment:** People switch to foreign currency or barter. The domestic currency loses all three functions of money.
 
-**Why hyperinflation is hard to stop:** Once velocity is rising and expectations are unanchored, simply stopping money creation may not suffice. Stopping money printing requires eliminating the fiscal deficit, which is politically difficult (cutting spending or raising taxes during an economic crisis). The social costs (unemployment, poverty) of the necessary fiscal adjustment are severe. Additionally, the loss of confidence in the currency can persist even after money growth stops, keeping velocity elevated. Stabilisation typically requires: (1) a credible fiscal consolidation plan, (2) a new currency or dollarisation, (3) central bank independence, and (4) international support (IMF programmes).
+**Why hyperinflation is hard to stop:** Once velocity is rising and expectations are unanchored, stopping money creation may not suffice. Stopping money printing requires eliminating the fiscal deficit, which is politically difficult (cutting spending or raising taxes during an economic crisis). The social costs (unemployment, poverty) of the necessary fiscal adjustment are severe. Additionally, the loss of confidence in the currency can persist even after money growth stops, keeping velocity elevated. Stabilisation requires: (1) a credible fiscal consolidation plan, (2) a new currency or dollarisation, (3) central bank independence, and (4) international support (IMF programmes).
 
 **Real-world example -- Zimbabwe 2008:** The government printed money to finance land redistribution and military spending. Inflation reached an estimated 79.6 billion percent month-on-month in November 2008. The government abandoned the Zimbabwe dollar in 2009 in favour of the US dollar and South African rand, which immediately stabilised prices.
 

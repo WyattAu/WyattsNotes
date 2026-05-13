@@ -23,7 +23,7 @@ When the source is displaced toward $S_1$ by $0.2$ mm, the central maximum (zero
 
 $$y = \frac{D}{d} \times \Delta s$$
 
-where $\Delta s = 0.2$ mm is the source displacement:
+Where $\Delta s = 0.2$ mm is the source displacement:
 
 $$y = \frac{1500}{0.5} \times 0.2 = 3000 \times 0.2 = 600 \text{ mm} = 60 \text{ cm}$$
 
@@ -35,7 +35,7 @@ $$\Delta y = \frac{\lambda D}{d} = \frac{550 \times 10^{-9} \times 1.5}{0.5 \tim
 
 **Result:** The central maximum is displaced $60$ cm from the axis (toward the side opposite $S_1$), and the fringe spacing is $1.65$ mm. The entire interference pattern shifts by $60$ cm but the fringe spacing remains unchanged.
 
-**Key insight:** An off-axis source shifts the entire fringe pattern but does NOT change the fringe spacing. The fringe spacing depends only on $\lambda$, $D$, and $d$.
+**Key insight:** An off-axis source shifts the entire fringe pattern but does NOT change the fringe spacing. The fringe spacing depends only on $\lambda$$D$And $d$.
 
 ---
 
@@ -54,23 +54,23 @@ Grating spacing: $d = \frac{1}{500} \text{ mm} = 2 \times 10^{-6}$ m
 Grating equation: $d \sin\theta = n\lambda$
 
 *Red ($\lambda = 700$ nm):*
-- $n = 1$: $\sin\theta = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.35$, $\theta = 20.49°$
-- $n = 2$: $\sin\theta = 0.70$, $\theta = 44.43°$
+- $n = 1$: $\sin\theta = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.35$$\theta = 20.49°$
+- $n = 2$: $\sin\theta = 0.70$$\theta = 44.43°$
 
 *Violet ($\lambda = 400$ nm):*
-- $n = 1$: $\sin\theta = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.20$, $\theta = 11.54°$
-- $n = 2$: $\sin\theta = 0.40$, $\theta = 23.58°$
+- $n = 1$: $\sin\theta = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.20$$\theta = 11.54°$
+- $n = 2$: $\sin\theta = 0.40$$\theta = 23.58°$
 
 **(b) Highest visible order:**
 
 Maximum when $\sin\theta = 1$: $n_{\max} = \frac{d}{\lambda}$
 
-- Red: $n_{\max} = \frac{2 \times 10^{-6}}{700 \times 10^{-9}} = 2.86$, so $n = 2$
-- Violet: $n_{\max} = \frac{2 \times 10^{-6}}{400 \times 10^{-9}} = 5.00$, so $n = 5$
+- Red: $n_{\max} = \frac{2 \times 10^{-6}}{700 \times 10^{-9}} = 2.86$So $n = 2$
+- Violet: $n_{\max} = \frac{2 \times 10^{-6}}{400 \times 10^{-9}} = 5.00$So $n = 5$
 
 **(c) Overlap condition:**
 
-Overlap occurs when the $(n+1)$th order of violet coincides with the $n$th order of red:
+Overlap occurs when the $(n+1)$Th order of violet coincides with the $n$Th order of red:
 
 $$(n+1)\lambda_v = n\lambda_r$$
 
@@ -84,14 +84,14 @@ $$n = \frac{4}{3}$$
 
 Since $n$ must be an integer, the first overlap occurs between $n = 2$ (red) and $n = 3$ (violet):
 
-Check: $2 \times 700 = 1400$ nm, $3 \times 400 = 1200$ nm. Since $1200 \lt 1400$, the 3rd order
-violet ($\lambda_v = 400$ nm) falls at a smaller angle than the 2nd order red ($\lambda_r = 700$ nm).
+Check: $2 \times 700 = 1400$ nm, $3 \times 400 = 1200$ nm. Since $1200 \lt 1400$The 3rd order
+Violet ($\lambda_v = 400$ nm) falls at a smaller angle than the 2nd order red ($\lambda_r = 700$ nm).
 More precisely, overlap begins when the upper end of one order meets the lower end of the next. The
 2nd order of red ends at $44.43°$ and the 3rd order of violet begins at:
 
 $$\sin\theta = \frac{3 \times 400 \times 10^{-9}}{2 \times 10^{-6}} = 0.60, \quad \theta = 36.87°$$
 
-Since $36.87° \lt 44.43°$, the 3rd-order violet spectrum overlaps with the 2nd-order red spectrum.
+Since $36.87° \lt 44.43°$The 3rd-order violet spectrum overlaps with the 2nd-order red spectrum.
 
 ---
 
@@ -168,9 +168,9 @@ Missing orders occur when a double slit maximum coincides with a single slit min
 
 $$\frac{d}{a} = \frac{0.2}{0.04} = 5$$
 
-So every 5th order is missing: the 5th, 10th, 15th, ... orders are absent.
+So every 5th order is missing: the 5th, 10th, 15th, ... Orders are absent.
 
-Verification: At the 5th double slit maximum: $d \sin\theta = 5\lambda$, which gives $a \sin\theta = a \times \frac{5\lambda}{d} = 5\lambda \times \frac{a}{d} = 5\lambda \times \frac{1}{5} = \lambda$, which is exactly the condition for the first single slit minimum.
+Verification: At the 5th double slit maximum: $d \sin\theta = 5\lambda$Which gives $a \sin\theta = a \times \frac{5\lambda}{d} = 5\lambda \times \frac{a}{d} = 5\lambda \times \frac{1}{5} = \lambda$Which is exactly the condition for the first single slit minimum.
 
 **Key insight:** In a real double slit, the slits have finite width, producing a diffraction envelope that modulates the interference pattern. The ratio $d/a$ determines which interference orders are suppressed.
 

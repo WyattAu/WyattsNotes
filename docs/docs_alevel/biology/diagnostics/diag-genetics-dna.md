@@ -35,7 +35,7 @@ DNA replication is described as semi-conservative. The Meselson-Stahl experiment
 7. Each new DNA molecule consists of one original (parental) strand and one newly synthesised strand — hence "semi-conservative."
 
 (b) **Meselson-Stahl experiment**:
-1. **Stage 1**: *E. coli* bacteria were grown for many generations in a medium containing the heavy isotope $^{15}\text{N}$. All of the bacterial DNA incorporated $^{15}\text{N}$, making it "heavy" DNA.
+1. **Stage 1**: *E. Coli* bacteria were grown for many generations in a medium containing the heavy isotope $^{15}\text{N}$. All of the bacterial DNA incorporated $^{15}\text{N}$Making it "heavy" DNA.
 2. **Stage 2**: The bacteria were transferred to a medium containing the light isotope $^{14}\text{N}$ and allowed to replicate for one generation. DNA was extracted and analysed by **cesium chloride density gradient centrifugation**.
 3. **Result after 1 generation**: ALL DNA was of intermediate density ($^{15}\text{N}$-$^{14}\text{N}$ hybrid). This is consistent with semi-conservative replication (each molecule has one heavy and one light strand) but also with dispersive replication.
 4. **Stage 3**: The bacteria were allowed to replicate for a second generation in $^{14}\text{N}$ medium. DNA was extracted and centrifuged again.
@@ -72,9 +72,9 @@ In mice, coat colour is determined by two genes. Gene A controls the production 
 
 (b) Dihybrid cross: $AaBb \times AaBb$
 
-Punnett square (gametes: $AB$, $Ab$, $aB$, $ab$):
+Punnett square (gametes: $AB$$Ab$$aB$$ab$):
 
-|  | AB | Ab | aB | ab |
+| | AB | Ab | aB | ab |
 |--|----|----|----|----|
 | **AB** | AABB (black) | AABb (black) | AaBB (black) | AaBb (black) |
 | **Ab** | AABb (black) | AAbb (brown) | AaBb (black) | Aabb (brown) |
@@ -94,7 +94,7 @@ This is the classic 9:3:4 ratio for recessive epistasis.
 
 A dihybrid cross $PpQq \times PpQq$:
 
-|  | PQ | Pq | pQ | pq |
+| | PQ | Pq | pQ | pq |
 |--|----|----|----|----|
 | **PQ** | PPQQ (purple) | PPQq (purple) | PpQQ (purple) | PpQq (purple) |
 | **Pq** | PPQq (purple) | PPqq (white) | PpQq (purple) | Ppqq (white) |
@@ -103,11 +103,11 @@ A dihybrid cross $PpQq \times PpQq$:
 
 Phenotypes:
 - **Purple** ($P\_Q\_$): 9
-- **White** ($P\_qq$, $ppQ\_$, $ppqq$): 7 (3 + 3 + 1)
+- **White** ($P\_qq$$ppQ\_$$ppqq$): 7 (3 + 3 + 1)
 
 Expected phenotypic ratio: **9 purple : 7 white**
 
-(d) **Dominance** refers to the relationship between alleles of a **single gene** — one allele masks the expression of another allele at the same gene locus (e.g., in a heterozygote $Aa$, the dominant allele $A$ masks the recessive allele $a$). **Epistasis** refers to the interaction between **two or more different genes** — the allele of one gene masks or modifies the expression of alleles at a different gene locus. Epistasis is an inter-gene interaction, whereas dominance is an intra-gene interaction.
+(d) **Dominance** refers to the relationship between alleles of a **single gene** — one allele masks the expression of another allele at the same gene locus (e.g., in a heterozygote $Aa$The dominant allele $A$ masks the recessive allele $a$). **Epistasis** refers to the interaction between **two or more different genes** — the allele of one gene masks or modifies the expression of alleles at a different gene locus. Epistasis is an inter-gene interaction, whereas dominance is an intra-gene interaction.
 
 Understanding epistasis is important in human genetic diseases because many diseases are **polygenic** (influenced by multiple genes). The expression of a disease-causing allele at one locus may depend on the genotype at another locus (epistatic interaction). For example, the severity or penetrance of a genetic disorder may vary depending on the alleles present at modifier genes. This explains why individuals with the same disease-causing mutation may have different symptoms or severity, and why some carriers of a disease allele do not develop the disease at all. Epistasis also complicates genetic counselling and pedigree analysis, as the expected Mendelian ratios may be modified.
 
@@ -133,7 +133,7 @@ A forensic scientist uses PCR (polymerase chain reaction) and gel electrophoresi
 
 1. **Denaturation** (94-96 degrees Celsius): the DNA sample is heated to separate the two strands by breaking the hydrogen bonds between complementary bases, producing single-stranded DNA templates.
 
-2. **Annealing** (55-65 degrees Celsius): the temperature is lowered to allow **primers** (short, single-stranded DNA sequences, typically 18-25 bases long) to bind (anneal) to their complementary sequences on the single-stranded DNA templates by hydrogen bonding. The exact temperature depends on the primer sequence.
+2. **Annealing** (55-65 degrees Celsius): the temperature is lowered to allow **primers** (short, single-stranded DNA sequences, 18-25 bases long) to bind (anneal) to their complementary sequences on the single-stranded DNA templates by hydrogen bonding. The exact temperature depends on the primer sequence.
 
 3. **Extension/Elongation** (72 degrees Celsius): **Taq polymerase** (a thermostable DNA polymerase from *Thermus aquaticus*) binds to the primer-template complex and catalyses the synthesis of a new DNA strand by adding free nucleotides in the 5' to 3' direction. The optimal temperature for Taq polymerase is 72 degrees Celsius.
 
@@ -144,10 +144,10 @@ These three stages are repeated for 25-35 cycles, with each cycle doubling the a
 **Two different primers are needed** because DNA is double-stranded, and PCR amplifies a specific region of DNA defined by the positions of the two primers. One primer (the **forward primer**) is complementary to the 3' end of the target sequence on one strand, and the other primer (the **reverse primer**) is complementary to the 3' end of the target sequence on the other strand. The forward primer primes synthesis in one direction, and the reverse primer primes synthesis in the other direction. The region between the two primers is the fragment that gets amplified exponentially with each cycle.
 
 (c) **Gel electrophoresis** separates DNA fragments based on their size:
-1. A gel (typically agarose) is prepared with wells at one end.
+1. A gel ( agarose) is prepared with wells at one end.
 2. The DNA samples are loaded into the wells. A DNA ladder (fragments of known size) is loaded into a separate well for comparison.
 3. An electric current is applied across the gel. DNA fragments are negatively charged (due to the phosphate groups on the sugar-phosphate backbone) and migrate towards the positive electrode (anode).
-4. The gel matrix acts as a molecular sieve — smaller DNA fragments move through the pores more easily and migrate faster (further), while larger fragments are slowed by the matrix and migrate more slowly (less far).
+4. The gel matrix acts as a molecular sieve — smaller DNA fragments move through the pores more and migrate faster (further), while larger fragments are slowed by the matrix and migrate more slowly (less far).
 5. After electrophoresis, the DNA is visualised by staining with a fluorescent dye (e.g., ethidium bromide or a safer alternative such as GelRed) and viewing under UV light.
 
 **Fragment sizes are determined** by comparing the distance migrated by each unknown fragment with the distances migrated by the DNA ladder fragments of known size. A standard curve (log of fragment size vs distance migrated) can be plotted, and the sizes of unknown fragments read from this curve.
@@ -156,7 +156,7 @@ These three stages are repeated for 25-35 cycles, with each cycle doubling the a
 1. **Isolation of the gene**: the human gene of interest is identified and isolated. This may involve extracting mRNA from human cells, using reverse transcriptase to make complementary DNA (cDNA), and amplifying the gene by PCR. (Using cDNA is preferred for eukaryotic genes because it lacks introns, which bacteria cannot splice out.)
 2. **Cutting the gene and plasmid**: a **restriction enzyme** is used to cut the gene at specific recognition sequences, producing sticky ends. The same restriction enzyme is used to cut the bacterial **plasmid vector**, producing complementary sticky ends.
 3. **Ligation**: the gene and cut plasmid are mixed. The sticky ends anneal by complementary base pairing. **DNA ligase** seals the gene into the plasmid by forming phosphodiester bonds, creating a **recombinant plasmid**.
-4. **Transformation**: the recombinant plasmid is introduced into host bacterial cells (e.g., *E. coli*) by a process called transformation (e.g., heat shock or electroporation). The plasmid must contain: the gene of interest, a **promoter sequence** (recognised by bacterial RNA polymerase for transcription), and a **selectable marker** (e.g., an antibiotic resistance gene).
+4. **Transformation**: the recombinant plasmid is introduced into host bacterial cells (e.g., *E. Coli*) by a process called transformation (e.g., heat shock or electroporation). The plasmid must contain: the gene of interest, a **promoter sequence** (recognised by bacterial RNA polymerase for transcription), and a **selectable marker** (e.g., an antibiotic resistance gene).
 5. **Selection**: bacteria are grown on agar plates containing the antibiotic. Only bacteria that have taken up the plasmid (with the resistance gene) survive. These are then screened (e.g., using a gene probe or blue-white screening) to identify those carrying the gene of interest.
 6. **Expression**: the transformed bacteria are grown in large-scale fermenters. The promoter on the plasmid drives transcription of the gene into mRNA, which is translated by bacterial ribosomes to produce the recombinant protein. The protein is then extracted and purified.
 
@@ -223,10 +223,10 @@ A **male tortoiseshell cat** could occur in the rare circumstance of **Klinefelt
 
 (b) Cross: $X^OX^B$ (tortoiseshell female) $\times$ $X^BY$ (black male)
 
-Gametes from female: $X^O$, $X^B$
-Gametes from male: $X^B$, $Y$
+Gametes from female: $X^O$$X^B$
+Gametes from male: $X^B$$Y$
 
-|  | $X^B$ | $Y$ |
+| | $X^B$ | $Y$ |
 |--|-------|-----|
 | **$X^O$** | $X^OX^B$ (tortoiseshell female) | $X^OY$ (orange male) |
 | **$X^B$** | $X^BX^B$ (black female) | $X^BY$ (black male) |
@@ -252,7 +252,7 @@ Critical value at $p = 0.05$ with 3 degrees of freedom = **7.82**
 
 Since $\chi^2_{\text{calculated}}$ (15.37) $\gt$ $\chi^2_{\text{critical}}$ (7.82), the difference between observed and expected results **is statistically significant** ($p \lt 0.05$). The observed results do not fit the expected 1:1:1:1 ratio. There may be reduced viability of certain genotypes, sampling error, or other factors affecting the cross.
 
-(d) **Sex-linked inheritance** involves genes located on the sex chromosomes (typically the X chromosome, since the Y chromosome carries very few genes). The key difference from autosomal inheritance is that males have only one X chromosome (hemizygous), so they express whatever allele is present on their single X chromosome — there is no second allele to mask a recessive allele. Females have two X chromosomes, so recessive alleles on one X can be masked by dominant alleles on the other.
+(d) **Sex-linked inheritance** involves genes located on the sex chromosomes ( the X chromosome, since the Y chromosome carries very few genes). The key difference from autosomal inheritance is that males have only one X chromosome (hemizygous), so they express whatever allele is present on their single X chromosome — there is no second allele to mask a recessive allele. Females have two X chromosomes, so recessive alleles on one X can be masked by dominant alleles on the other.
 
 **X-linked recessive conditions are more common in males** because:
 1. Males need only one copy of the recessive allele (on their single X chromosome) to express the condition ($X^aY$).
@@ -278,7 +278,7 @@ Genetically modified (GM) crops have been developed that are resistant to herbic
 
 **Solution:**
 
-(a) *Agrobacterium tumefaciens* is a soil bacterium that naturally transfers a section of its Ti (tumour-inducing) plasmid (called T-DNA) into plant cells, where it integrates into the plant genome. The process for genetic engineering:
+(a) *Agrobacterium tumefaciens* is a soil bacterium that transfers a section of its Ti (tumour-inducing) plasmid (called T-DNA) into plant cells, where it integrates into the plant genome. The process for genetic engineering:
 
 1. The **T-DNA region** of the Ti plasmid is removed (using restriction enzymes) and replaced with the **Bt gene** along with a selectable marker gene (e.g., antibiotic resistance) and a plant promoter sequence that ensures the Bt gene is expressed in plant cells.
 2. This **recombinant Ti plasmid** is introduced into *Agrobacterium tumefaciens*.
@@ -303,9 +303,9 @@ In practice, strategies to reduce this risk include: creating buffer zones aroun
 
 (d) **Reverse transcriptase** is an enzyme (produced by retroviruses) that synthesises DNA from an RNA template. To produce recombinant human insulin:
 
-1. mRNA for the insulin gene is extracted from human pancreatic beta cells.
+1. MRNA for the insulin gene is extracted from human pancreatic beta cells.
 2. **Reverse transcriptase** is used to make a complementary DNA (cDNA) strand from the mRNA template.
 3. The mRNA is removed, and DNA polymerase is used to synthesise the second DNA strand, producing **double-stranded cDNA**.
 4. This cDNA contains only the coding sequences (exons) of the insulin gene, without introns.
 
-**cDNA is used instead of genomic DNA** because bacteria (prokaryotes) lack the machinery to remove introns from pre-mRNA (they do not have spliceosomes). If genomic DNA (containing introns) were inserted into a bacterium, the introns would be transcribed along with the exons, producing an mRNA that cannot be correctly translated — the bacterial ribosomes would try to translate the introns as part of the protein, producing a non-functional product. cDNA, being a copy of the processed mRNA (without introns), can be transcribed and translated directly by the bacterial cell to produce functional insulin.
+**cDNA is used instead of genomic DNA** because bacteria (prokaryotes) lack the machinery to remove introns from pre-mRNA (they do not have spliceosomes). If genomic DNA (containing introns) were inserted into a bacterium, the introns would be transcribed along with the exons, producing an mRNA that cannot be correctly translated — the bacterial ribosomes would try to translate the introns as part of the protein, producing a non-functional product. CDNA, being a copy of the processed mRNA (without introns), can be transcribed and translated directly by the bacterial cell to produce functional insulin.

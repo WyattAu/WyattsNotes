@@ -11,19 +11,19 @@ slug: weak-pointers-and-cyclic-references
 # Weak Pointers and Cyclic Reference Breaking
 
 `std::weak_ptr` is a non-owning observer of a `shared_ptr`-managed object. Its primary use case is
-breaking reference cycles in graph structures — the most common source of memory leaks in
+Breaking reference cycles in graph structures — the most common source of memory leaks in
 `shared_ptr`-heavy codebases.
 
 ## 4.1 Definition
 
 `std::weak_ptr<T>` is a non-owning observer of a `shared_ptr`-managed object. It does not
-participate in the reference count that determines when the object is destroyed. It holds a **weak
-count** in the control block [N4950 S20.11.3].
+Participate in the reference count that determines when the object is destroyed. It holds a **weak
+Count** in the control block [N4950 S20.11.3].
 
 ## 4.2 The `lock()` Method
 
-To access the object through a `weak_ptr`, you must call `lock()`, which returns a `shared_ptr`. If
-the object has already been destroyed, `lock()` returns an empty `shared_ptr`:
+To access the object through a `weak_ptr`You must call `lock()`Which returns a `shared_ptr`. If
+The object has already been destroyed, `lock()` returns an empty `shared_ptr`:
 
 ```cpp
 #include <memory>
@@ -54,13 +54,13 @@ void weak_ptr_demo() {
 The `lock()` method performs the following operations atomically [N4950 S20.11.3.3]:
 
 1. Load the current `strong_count` from the control block.
-2. If `strong_count == 0`, return an empty `shared_ptr`.
-3. If `strong_count &gt; 0`, atomically increment `strong_count` and return a `shared_ptr` sharing
-   the control block.
+2. If `strong_count == 0`Return an empty `shared_ptr`.
+3. If `strong_count &gt; 0`Atomically increment `strong_count` and return a `shared_ptr` sharing
+ the control block.
 
 The atomicity of step 3 is critical: it ensures that between checking the count and incrementing it,
-no other thread can destroy the object. This is what makes `lock()` safe for concurrent use, unlike
-the `expired()` + raw access pattern.
+No other thread can destroy the object. This is what makes `lock()` safe for concurrent use, unlike
+The `expired()` + raw access pattern.
 
 ```cpp
 // Conceptual implementation of weak_ptr::lock()
@@ -87,8 +87,8 @@ shared_ptr<T> lock() const noexcept {
 ## 4.3 The `expired()` Method
 
 `expired()` is a lightweight check that returns `true` if the managed object has been destroyed. It
-is equivalent to `wp.use_count() == 0` but may be faster because it does not need to return the
-actual count:
+Is equivalent to `wp.use_count() == 0` but may be faster because it does not need to return the
+Actual count:
 
 ```cpp
 #include <memory>
@@ -109,7 +109,7 @@ void expired_demo() {
 :::warning
 Never use `expired()` followed by raw access. There is a race condition between checking
 `expired()` and using the object — the object could be destroyed by another thread between the check
-and the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`.
+And the access. Always use `lock()` instead, which atomically checks and returns a `shared_ptr`.
 :::
 
 ### Formal Correctness: `expired()` vs `lock()` in Concurrent Code
@@ -144,10 +144,10 @@ Thread A:                          Thread B:
 
 The key difference: `lock()` atomically checks the strong count **and** increments it if nonzero.
 This makes the check-and-access a single atomic operation. `expired()` only checks without
-incrementing, leaving a window for another thread to destroy the object.
+Incrementing, leaving a window for another thread to destroy the object.
 
 **Corollary:** In single-threaded code, `expired()` is safe if no code between the check and the
-access can trigger a `shared_ptr` destruction (e.g., no function calls that might reset a
+Access can trigger a `shared_ptr` destruction (e.g., no function calls that might reset a
 `shared_ptr` on the stack). However, this is fragile and error-prone — always prefer `lock()`.
 
 ## 4.4 Control Block Reference Counting Details
@@ -168,10 +168,10 @@ Control Block:
 **Lifecycle:**
 
 1. The managed object is destroyed when `strong_count` reaches 0. At this point, the deleter runs,
-   but the control block is **not** deallocated if `weak_count` is nonzero.
+ but the control block is **not** deallocated if `weak_count` is nonzero.
 2. The control block is deallocated only when **both** `strong_count` and `weak_count` reach 0.
 3. If `strong_count` is nonzero, `weak_count` is always at least 1 (the control block itself counts
-   as a "weak" reference to keep itself alive while the object exists).
+ as a "weak" reference to keep itself alive while the object exists).
 
 ```cpp
 #include <memory>
@@ -205,7 +205,7 @@ void ref_counting_demo() {
 ### Control Block State Transition Diagram
 
 The control block moves through four distinct states during its lifetime. Each state determines
-which operations are valid and what happens when the last reference of each type is released:
+Which operations are valid and what happens when the last reference of each type is released:
 
 ```
                     ┌─────────────────────────────────────────────────────┐
@@ -256,26 +256,26 @@ which operations are valid and what happens when the last reference of each type
 
 **State invariants:**
 
-| State   | `strong_count` | `weak_count` | Object    | Control Block |
+| State | `strong_count` | `weak_count` | Object | Control Block |
 | :------ | :------------- | :----------- | :-------- | :------------ |
-| ACTIVE  | $s \gt 0$      | $w \ge 1$    | Alive     | Allocated     |
-| EXPIRED | $s = 0$        | $w \ge 1$    | Destroyed | Allocated     |
-| DEAD    | $s = 0$        | $w = 0$      | Destroyed | Freed         |
+| ACTIVE | $s \gt 0$ | $w \ge 1$ | Alive | Allocated |
+| EXPIRED | $s = 0$ | $w \ge 1$ | Destroyed | Allocated |
+| DEAD | $s = 0$ | $w = 0$ | Destroyed | Freed |
 
 **Transition constraints:**
 
 - ACTIVE $\to$ EXPIRED: triggered by the last `shared_ptr` destruction. The deleter runs atomically
-  with the count decrement.
+ with the count decrement.
 - EXPIRED $\to$ DEAD: triggered by the last `weak_ptr` destruction. The control block is freed via
-  the stored allocator.
+ the stored allocator.
 - ACTIVE $\to$ DEAD: impossible. When `s` reaches 0, `w$ must be $\ge 1$ (the self-reference weak
-  count), so the block transitions to EXPIRED first.
+ count), so the block transitions to EXPIRED first.
 - EXPIRED $\to$ ACTIVE: impossible. Once `s` reaches 0, no `lock()` can resurrect the object.
 
 ## 4.5 Breaking Cyclic References
 
 The primary use case for `weak_ptr` is breaking reference cycles. Consider a parent-child tree
-structure:
+Structure:
 
 ```cpp
 #include <memory>
@@ -303,9 +303,9 @@ struct Node {
 };
 ```
 
-The problem: inside `add_child`, we need a `shared_ptr` to `this` to set `child->parent`. But `this`
-is a raw pointer. Constructing a `shared_ptr` from `this` would create a **second** control block,
-leading to double-free.
+The problem: inside `add_child`We need a `shared_ptr` to `this` to set `child->parent`. But `this`
+Is a raw pointer. Constructing a `shared_ptr` from `this` would create a **second** control block,
+Leading to double-free.
 
 The solution is `std::enable_shared_from_this`:
 
@@ -366,14 +366,14 @@ root
 
 :::warning
 `std::enable_shared_from_this` only works when the object is **originally** managed by a
-`shared_ptr`. If the object is stack-allocated or managed by a `unique_ptr`, calling
+`shared_ptr`. If the object is stack-allocated or managed by a `unique_ptr`Calling
 `shared_from_this()` is undefined behavior.
 :::
 
 ## 4.6 `weak_ptr` as Observer in the Observer Pattern
 
 `weak_ptr` is the standard way to implement the observer (publish-subscribe) pattern without
-creating reference cycles between the subject and its observers:
+Creating reference cycles between the subject and its observers:
 
 ```cpp
 #include <memory>
@@ -479,16 +479,16 @@ public:
 
 :::warning
 The callback in the observer pattern is invoked while holding the mutex. If the callback
-attempts to subscribe or unsubscribe, it will deadlock. To avoid this, copy the observer list before
-iterating, or use a recursive mutex. Alternatively, collect callbacks into a local vector under the
-lock, then invoke them after releasing the lock.
+Attempts to subscribe or unsubscribe, it will deadlock. To avoid this, copy the observer list before
+Iterating, or use a recursive mutex. Alternatively, collect callbacks into a local vector under the
+Lock, then invoke them after releasing the lock.
 :::
 
 ## 4.7 `weak_ptr` with `shared_ptr::reset()`
 
-When a `shared_ptr` is reset, the `weak_ptr` does not become invalid immediately — it simply
-observes that the object is gone. The `weak_ptr` itself remains valid (it can be copied, compared,
-etc.) but `lock()` returns an empty `shared_ptr`:
+When a `shared_ptr` is reset, the `weak_ptr` does not become invalid immediately — it 
+Observes that the object is gone. The `weak_ptr` itself remains valid (it can be copied, compared,
+Etc.) but `lock()` returns an empty `shared_ptr`:
 
 ```cpp
 #include <memory>
@@ -524,21 +524,21 @@ void reset_demo() {
 
 ## 4.8 Comparison: `weak_ptr` vs Raw Observer Pointers
 
-| Aspect                 | `std::weak_ptr`                         | Raw pointer (`T*`)                  |
+| Aspect | `std::weak_ptr` | Raw pointer (`T*`) |
 | :--------------------- | --------------------------------------- | ----------------------------------- |
-| Ownership              | Non-owning                              | Non-owning                          |
-| Null check             | `expired()` / `lock()`                  | Manual `if (ptr)`                   |
-| Thread-safe `lock()`   | Yes (atomic check-and-increment)        | No (race between check and use)     |
-| Lifecycle awareness    | Knows if object is alive                | Cannot know (dangling pointer risk) |
-| Performance            | Atomic operation on lock, control block | Zero overhead                       |
-| Control block required | Yes (must come from `shared_ptr`)       | No                                  |
-| Use case               | Shared ownership graphs                 | Known-lifetime relationships        |
+| Ownership | Non-owning | Non-owning |
+| Null check | `expired()` / `lock()` | Manual `if (ptr)` |
+| Thread-safe `lock()` | Yes (atomic check-and-increment) | No (race between check and use) |
+| Lifecycle awareness | Knows if object is alive | Cannot know (dangling pointer risk) |
+| Performance | Atomic operation on lock, control block | Zero overhead |
+| Control block required | Yes (must come from `shared_ptr`) | No |
+| Use case | Shared ownership graphs | Known-lifetime relationships |
 
 ### When Raw Pointers Are Preferable
 
 Raw non-owning pointers are the correct choice when the lifetime relationship is statically known.
 The classic example is a parent-child tree where the parent owns the children via `unique_ptr` and
-the children hold a raw pointer to the parent:
+The children hold a raw pointer to the parent:
 
 ```cpp
 #include <memory>
@@ -572,40 +572,40 @@ int main() {
 ```
 
 This pattern is zero-overhead and type-safe because the invariant (parent outlives children) is
-structurally enforced by the ownership hierarchy. `weak_ptr` would add unnecessary atomic overhead
-without providing additional safety in this case.
+Structurally enforced by the ownership hierarchy. `weak_ptr` would add unnecessary atomic overhead
+Without providing additional safety in this case.
 
 ## 4.9 When NOT to Use `weak_ptr`
 
 1. **When the lifetime relationship is clear.** If a parent owns a child and the child only exists
-   while the parent exists, use a raw pointer (or reference) from parent to child. `weak_ptr` adds
-   unnecessary overhead.
+ while the parent exists, use a raw pointer (or reference) from parent to child. `weak_ptr` adds
+ unnecessary overhead.
 
 2. **When you need performance.** `weak_ptr::lock()` involves an atomic operation. In hot loops or
-   performance-critical code, raw pointers are faster.
+ performance-critical code, raw pointers are faster.
 
 3. **When the object is not managed by `shared_ptr`.** `weak_ptr` can only observe objects owned by
-   `shared_ptr`. If the object is stack-allocated or owned by `unique_ptr`, use raw pointers.
+ `shared_ptr`. If the object is stack-allocated or owned by `unique_ptr`Use raw pointers.
 
 4. **As a universal replacement for raw pointers.** `weak_ptr` does not replace all non-owning
-   pointer use cases. It is specifically for the "I need to observe an object whose lifetime I don't
-   control" scenario.
+ pointer use cases. It is specifically for the "I need to observe an object whose lifetime I don't
+ control" scenario.
 
 5. **For caching.** If you need a cache that evicts entries when memory is low, `weak_ptr` alone is
-   not sufficient — you need a cache structure that decides when to clear entries. `weak_ptr` just
-   tells you if the object is still alive, not whether you _should_ keep it alive.
+ not sufficient — you need a cache structure that decides when to clear entries. `weak_ptr` just
+ tells you if the object is still alive, not whether you _should_ keep it alive.
 
 ## 4.10 Thread Safety of `weak_ptr` Operations
 
 `weak_ptr` has specific thread safety guarantees [N4950 S20.11.3.6]:
 
 - **Distinct instances:** All operations on different `weak_ptr` objects observing the same managed
-  object are safe to call concurrently, including `lock()`, `reset()`, `expired()`, and copy/move
-  operations.
+ object are safe to call concurrently, including `lock()``reset()``expired()`And copy/move
+ operations.
 - **`lock()` is atomic:** It atomically checks the strong count and increments it if nonzero. This
-  is the only race-free way to access the managed object from multiple threads.
+ is the only race-free way to access the managed object from multiple threads.
 - **`expired()` is NOT atomic with access:** Calling `expired()` and then accessing the object
-  through a previously obtained raw pointer has a TOCTOU (time-of-check-time-of-use) race.
+ through a previously obtained raw pointer has a TOCTOU (time-of-check-time-of-use) race.
 
 ```cpp
 #include <memory>
@@ -648,8 +648,8 @@ void bad_expired_check(std::weak_ptr<int> wp) {
 ## 4.11 `owner_before` and Associative Containers
 
 `weak_ptr` provides `owner_before()` and the `std::owner_less` functor for use as keys in ordered
-associative containers. The comparison is based on the **identity of the control block**, not the
-pointed-to value:
+Associative containers. The comparison is based on the **identity of the control block**, not the
+Pointed-to value:
 
 ```cpp
 #include <memory>
@@ -678,15 +678,15 @@ int main() {
 }
 ```
 
-`std::owner_less` also enables heterogeneous comparison between `weak_ptr` and `shared_ptr`, so you
-can look up a `shared_ptr` key in a `set` of `weak_ptr` entries (or vice versa) without converting.
+`std::owner_less` also enables heterogeneous comparison between `weak_ptr` and `shared_ptr`So you
+Can look up a `shared_ptr` key in a `set` of `weak_ptr` entries (or vice versa) without converting.
 This is useful for registration/unregistration patterns where the subject holds `weak_ptr` observers
-but lookups are done with `shared_ptr`.
+But lookups are done with `shared_ptr`.
 
 ## 4.12 `weak_ptr` in Caches and Memoization
 
 `weak_ptr` can be used to implement caches where entries are evicted automatically when the original
-producer releases them. The pattern is called a **weak cache**:
+Producer releases them. The pattern is called a **weak cache**:
 
 ```cpp
 #include <memory>
@@ -782,19 +782,19 @@ cache size after cleanup: 0
 **Limitations of the weak cache pattern:**
 
 1. **No eviction policy.** The cache only evicts entries when the original owner releases them. If
-   the original owner never releases, the cache grows without bound.
+ the original owner never releases, the cache grows without bound.
 2. **Stale entries accumulate.** Expired `weak_ptr` entries remain in the map until `cleanup()` is
-   called or `get()` encounters them. This wastes memory proportional to the number of expired
-   entries.
+ called or `get()` encounters them. This wastes memory proportional to the number of expired
+ entries.
 3. **Not a replacement for LRU/LFU caches.** A proper cache needs an eviction policy (least recently
-   used, least frequently used, time-based expiration). `weak_ptr` only provides automatic cleanup
-   when the producer releases the value.
+ used, least frequently used, time-based expiration). `weak_ptr` only provides automatic cleanup
+ when the producer releases the value.
 
 :::info
 Relevance The weak cache pattern is most useful when the cache is a secondary store — the
-primary owner (e.g., a data loader) produces `shared_ptr` values, and the cache holds `weak_ptr`
-references to avoid extending their lifetime. This is common in image loaders, texture caches in
-game engines, and database connection pools.
+Primary owner (e.g., a data loader) produces `shared_ptr` values, and the cache holds `weak_ptr`
+References to avoid extending their lifetime. This is common in image loaders, texture caches in
+Game engines, and database connection pools.
 :::
 
 ## 4.13 Proof: `weak_ptr` Does Not Extend Object Lifetime
@@ -804,30 +804,30 @@ game engines, and database connection pools.
 **Argument from the standard [N4950 S20.11.3.5]:**
 
 1. The managed object is destroyed when `strong_count` reaches 0 [N4950 S20.11.3.5]. This is the
-   sole condition for object destruction.
+ sole condition for object destruction.
 
-2. `weak_ptr` operations modify only `weak_count`, never `strong_count`:
-   - `weak_ptr` constructor from `shared_ptr`: increments `weak_count` only.
-   - `weak_ptr` destructor: decrements `weak_count` only.
-   - `weak_ptr::lock()`: reads `strong_count` and conditionally increments it (returning a
-     `shared_ptr`), but the `weak_ptr` itself does not increment `strong_count`.
-   - `weak_ptr::reset()`: decrements `weak_count` only.
+2. `weak_ptr` operations modify only `weak_count`Never `strong_count`:
+ - `weak_ptr` constructor from `shared_ptr`: increments `weak_count` only.
+ - `weak_ptr` destructor: decrements `weak_count` only.
+ - `weak_ptr::lock()`: reads `strong_count` and conditionally increments it (returning a
+ `shared_ptr`), but the `weak_ptr` itself does not increment `strong_count`.
+ - `weak_ptr::reset()`: decrements `weak_count` only.
 
-3. Since `weak_ptr` never increments `strong_count`, and `strong_count` is the sole determinant of
-   object lifetime, `weak_ptr` cannot extend the object's lifetime.
+3. Since `weak_ptr` never increments `strong_count`And `strong_count` is the sole determinant of
+ object lifetime, `weak_ptr` cannot extend the object's lifetime.
 
 **Formal restatement:** For any sequence of operations on `shared_ptr` and `weak_ptr` instances
-sharing the same control block, the time at which `strong_count` reaches 0 (and the object is
-destroyed) depends only on the sequence of `shared_ptr` copies, moves, and destructions. Adding or
-removing `weak_ptr` instances to this sequence does not change the destruction time.
+Sharing the same control block, the time at which `strong_count` reaches 0 (and the object is
+Destroyed) depends only on the sequence of `shared_ptr` copies, moves, and destructions. Adding or
+Removing `weak_ptr` instances to this sequence does not change the destruction time.
 
 **Corollary:** `weak_ptr::lock()` can _temporarily_ extend the lifetime (because it returns a
-`shared_ptr`, which increments `strong_count`), but the `weak_ptr` itself does not. The caller
-controls whether the returned `shared_ptr` is kept alive.
+`shared_ptr`Which increments `strong_count`), but the `weak_ptr` itself does not. The caller
+Controls whether the returned `shared_ptr` is kept alive.
 
 ## 4.14 `weak_ptr` and `enable_shared_from_this` Interaction
 
-When a class inherits from `std::enable_shared_from_this&lt;T&gt;`, the internal mechanism stores a
+When a class inherits from `std::enable_shared_from_this&lt;T&gt;`The internal mechanism stores a
 `weak_ptr` in the base class. This has subtle implications:
 
 ```cpp
@@ -864,39 +864,39 @@ int main() {
 
 The `weak_from_this()` member function (added in C++17 [N4950 S20.11.3.6]) returns the internal
 `weak_ptr` directly, without creating an intermediate `shared_ptr`. This is more efficient than
-calling `shared_from_this()` when you only need to observe the object:
+Calling `shared_from_this()` when you only need to observe the object:
 
-| Method               | Returns               | Increments `strong_count`? | Use case                       |
+| Method | Returns | Increments `strong_count`? | Use case |
 | :------------------- | :-------------------- | :------------------------- | :----------------------------- |
-| `shared_from_this()` | `shared_ptr&lt;T&gt;` | Yes                        | Need to extend lifetime        |
-| `weak_from_this()`   | `weak_ptr&lt;T&gt;`   | No                         | Need to observe without owning |
+| `shared_from_this()` | `shared_ptr&lt;T&gt;` | Yes | Need to extend lifetime |
+| `weak_from_this()` | `weak_ptr&lt;T&gt;` | No | Need to observe without owning |
 
 ## Common Pitfalls
 
 1. **Using `expired()` instead of `lock()` in multithreaded code.** Between checking `expired()` and
-   accessing the object, another thread may destroy it. Always use `lock()`.
+ accessing the object, another thread may destroy it. Always use `lock()`.
 
 2. **Holding `shared_ptr` from `lock()` too long.** Every `shared_ptr` returned by `lock()`
-   temporarily extends the lifetime of the object. If you store it in a long-lived container, you
-   may inadvertently prevent destruction.
+ temporarily extends the lifetime of the object. If you store it in a long-lived container, you
+ may inadvertently prevent destruction.
 
-3. **Forgetting `enable_shared_from_this`.** If a class needs to produce `shared_ptr` from `this`,
-   it must inherit from `std::enable_shared_from_this`. Constructing a `shared_ptr` directly from
-   `this` creates a second control block and causes double-free.
+3. **Forgetting `enable_shared_from_this`.** If a class needs to produce `shared_ptr` from `this`
+ it must inherit from `std::enable_shared_from_this`. Constructing a `shared_ptr` directly from
+ `this` creates a second control block and causes double-free.
 
 4. **Using `weak_ptr` for optional ownership.** `weak_ptr` is for _observation_, not optional
-   ownership. If you sometimes want to own an object, use `shared_ptr` or `unique_ptr` directly.
+ ownership. If you sometimes want to own an object, use `shared_ptr` or `unique_ptr` directly.
 
 5. **Not cleaning up expired `weak_ptr` entries.** In caches, observer lists, and other containers
-   of `weak_ptr`, expired entries accumulate over time. Call `cleanup()` periodically or clean up
-   during iteration to prevent unbounded memory growth.
+ of `weak_ptr`Expired entries accumulate over time. Call `cleanup()` periodically or clean up
+ during iteration to prevent unbounded memory growth.
 
 6. **Using `weak_ptr` with stack-allocated or `unique_ptr`-managed objects.** `weak_ptr` can only
-   observe objects managed by `shared_ptr`. Constructing a `weak_ptr` from a non-`shared_ptr` source
-   is a compile error.
+ observe objects managed by `shared_ptr`. Constructing a `weak_ptr` from a non-`shared_ptr` source
+ is a compile error.
 
 7. **Calling `lock()` in a loop without backoff.** If the object is being destroyed and recreated
-   rapidly, a tight `lock()` loop can spin. Use appropriate synchronization or backoff strategies.
+ rapidly, a tight `lock()` loop can spin. Use appropriate synchronization or backoff strategies.
 
 ## See Also
 
@@ -904,3 +904,11 @@ calling `shared_from_this()` when you only need to observe the object:
 - [Common Pitfalls](5_custom_deleters.md)
 - [Unique Ownership (std::unique_ptr) and EBO](2_unique_ptr.md)
 - [RAII Patterns](1_raii_patterns.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

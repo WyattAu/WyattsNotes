@@ -114,11 +114,11 @@ Underwood (1957) demonstrated proactive interference by showing that participant
 
 Retrieval failure occurs when information is stored in LTM but cannot be accessed because the appropriate retrieval cues are absent. This is explained by the encoding specificity principle (Tulving and Thomson, 1973): recall is improved when the cues available at retrieval match the cues present at encoding.
 
-Tulving and Pearlstone (1966) demonstrated retrieval failure using category cues. Participants recalled more words when given category headings as cues than when asked for free recall, even though the words were clearly stored in memory. This suggests that forgetting is often a retrieval problem rather than a storage problem.
+Tulving and Pearlstone (1966) demonstrated retrieval failure using category cues. Participants recalled more words when given category headings as cues than when asked for free recall, even though the words were stored in memory. This suggests that forgetting is often a retrieval problem rather than a storage problem.
 
 ### Decay Theory
 
-Decay theory proposes that memories fade over time simply through the passage of time, as a result of the natural decay of neural traces. While decay is intuitively appealing, it is difficult to test empirically because the passage of time is inevitably confounded with the accumulation of intervening experiences (which could cause interference). Most contemporary psychologists consider interference to be a more important cause of forgetting than decay.
+Decay theory proposes that memories fade over time through the passage of time, as a result of the natural decay of neural traces. While decay is appealing, it is difficult to test empirically because the passage of time is inevitably confounded with the accumulation of intervening experiences (which could cause interference). Most contemporary psychologists consider interference to be a more important cause of forgetting than decay.
 
 ## Schema Theory
 
@@ -179,7 +179,7 @@ As described above, Bartlett's "War of the Ghosts" study demonstrated that memor
 
 Anderson and Pichert investigated the role of schemas in the retrieval of information. Participants read a story about two boys burglarising a house from the perspective of either a burglar or a homebuyer. After a delay, participants were asked to recall the story. Half were asked to recall from the same perspective, and half were asked to switch perspectives.
 
-Results: Participants recalled more information consistent with their assigned perspective. More importantly, when participants switched perspectives at recall, they recalled information that they had not previously reported but that was consistent with the new perspective. This demonstrates that information stored in memory is not simply lost; it can be retrieved if the appropriate schema is activated.
+Results: Participants recalled more information consistent with their assigned perspective. More importantly, when participants switched perspectives at recall, they recalled information that they had not previously reported but that was consistent with the new perspective. This demonstrates that information stored in memory is not lost; it can be retrieved if the appropriate schema is activated.
 
 ## Thinking and Decision Making
 
@@ -189,7 +189,7 @@ Heuristics are mental shortcuts or rules of thumb that reduce the cognitive effo
 
 | Heuristic | Definition | Example |
 |---|---|---|
-| Availability heuristic | Judging the frequency or probability of an event by how easily examples come to mind | Overestimating the risk of aeroplane crashes because they receive extensive media coverage |
+| Availability heuristic | Judging the frequency or probability of an event by how examples come to mind | Overestimating the risk of aeroplane crashes because they receive extensive media coverage |
 | Representativeness heuristic | Judging the probability that an object or event belongs to a category based on how similar it is to the prototype for that category | Assuming someone who wears glasses and reads a lot is a librarian, ignoring the much higher base rate of teachers in the population |
 | Anchoring heuristic | Relying too heavily on an initial piece of information (the "anchor") when making judgments | Negotiating a salary: the first number mentioned tends to anchor subsequent offers |
 
@@ -257,7 +257,7 @@ The reliability of eyewitness testimony is a critical issue at the intersection 
 
 **Estimator variables:** Factors that cannot be controlled by the criminal justice system, including the duration of exposure to the event, lighting conditions, the presence of a weapon (weapon focus effect), and the race of the perpetrator (cross-race identification effect).
 
-**System variables:** Factors that can be controlled by the criminal justice system, including the wording of questions (leading questions, as demonstrated by Loftus and Palmer), the format of lineups (simultaneous vs. sequential presentation), and the use of cognitive interview techniques.
+**System variables:** Factors that can be controlled by the criminal justice system, including the wording of questions (leading questions, as demonstrated by Loftus and Palmer), the format of lineups (simultaneous vs. Sequential presentation), and the use of cognitive interview techniques.
 
 ### The Cognitive Interview
 
@@ -297,3 +297,11 @@ Meta-analyses (Kohnken et al., 1999) have found that the cognitive interview pro
 - **Beck's cognitive triad and abnormal psychology:** Beck's cognitive theory of depression is a core component of the cognitive explanations of abnormality covered in [Abnormal Psychology](./abnormal-psychology).
 - **Festinger and cognitive dissonance:** While not strictly a cognitive-level study, Festinger and Carlsmith (1959) demonstrated that cognitive dissonance (the discomfort of holding contradictory cognitions) drives attitude change, connecting cognition to motivation and social influence.
 - **Research methods:** All of the experimental paradigms discussed here are covered in greater depth in [Research Methods](./research-methods).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

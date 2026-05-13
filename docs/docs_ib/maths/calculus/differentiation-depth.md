@@ -10,13 +10,13 @@ slug: differentiation-depth
 ### Intuitive Notion of a Limit
 
 The limit of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ approaches, regardless
-of whether $f(a)$ is defined:
+Of whether $f(a)$ is defined:
 
 $$
 \lim_{x \to a} f(x) = L
 $$
 
-This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$.
+This means that as $x$ gets arbitrarily close to $a$$f(x)$ gets arbitrarily close to $L$.
 
 ### Left-Hand and Right-Hand Limits
 
@@ -42,14 +42,14 @@ Since the one-sided limits are not equal, the limit does not exist.
 
 :::
 
-| Limit                                                             | Value |
+| Limit | Value |
 | ----------------------------------------------------------------- | ----- |
-| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$                    | $1$   |
-| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$                | $0$   |
-| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$                    | $0$   |
-| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$   |
-| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$                   | $1$   |
-| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$                  | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$ | $1$ |
+| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$ | $0$ |
+| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$ | $0$ |
+| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$ |
+| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$ | $1$ |
+| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$ | $1$ |
 
 ### The Squeeze Theorem
 
@@ -59,13 +59,13 @@ $$
 \lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L
 $$
 
-then $\displaystyle\lim_{x \to a} f(x) = L$.
+Then $\displaystyle\lim_{x \to a} f(x) = L$.
 
 :::info[Example]
 
 Show that $\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right) = 0$.
 
-Since $-1 \le \sin\!\left(\frac{1}{x}\right) \le 1$, we have
+Since $-1 \le \sin\!\left(\frac{1}{x}\right) \le 1$We have
 $-x^2 \le x^2 \sin\!\left(\frac{1}{x}\right) \le x^2$.
 
 Both $\displaystyle\lim_{x \to 0}(-x^2) = 0$ and $\displaystyle\lim_{x \to 0} x^2 = 0$.
@@ -85,7 +85,7 @@ A function $f$ is **continuous** at $x = a$ if all three conditions hold:
 :::warning[Exam Tip]
 
 When asked whether a piecewise function is continuous at a boundary point, always check that the
-left-hand limit, right-hand limit, and function value all agree.
+Left-hand limit, right-hand limit, and function value all agree.
 
 :::
 
@@ -98,22 +98,22 @@ left-hand limit, right-hand limit, and function value all agree.
 The derivative of $f$ at $x = a$ is defined as:
 
 $$
-f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+F'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
 $$
 
-This limit, when it exists, gives the instantaneous rate of change of $f$ at $x = a$, and equals the
-gradient of the tangent line to the curve $y = f(x)$ at that point.
+This limit, when it exists, gives the instantaneous rate of change of $f$ at $x = a$And equals the
+Gradient of the tangent line to the curve $y = f(x)$ at that point.
 
 ### Alternative Form
 
 $$
-f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
+F'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
 $$
 
 ### Differentiability Implies Continuity
 
-If $f$ is differentiable at $x = a$, then $f$ is continuous at $x = a$. The converse is not true: a
-function can be continuous but not differentiable (e.g., $f(x) = |x|$ at $x = 0$).
+If $f$ is differentiable at $x = a$Then $f$ is continuous at $x = a$. The converse is not true: a
+Function can be continuous but not differentiable (e.g., $f(x) = |x|$ at $x = 0$).
 
 :::info[Example]
 
@@ -121,7 +121,7 @@ Differentiate $f(x) = x^2$ from first principles.
 
 $$
 \begin`\{aligned}`
-f'(x) &= \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} \\[6pt]
+F'(x) &= \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} \\[6pt]
 &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\[6pt]
 &= \lim_{h \to 0} \frac{2xh + h^2}{h} \\[6pt]
 &= \lim_{h \to 0}(2x + h) \\[6pt]
@@ -166,7 +166,7 @@ $$
 
 ### The Product Rule
 
-If $u = f(x)$ and $v = g(x)$, then:
+If $u = f(x)$ and $v = g(x)$Then:
 
 $$
 \frac{d}`\{dx}`[uv] = u\frac`\{dv}``\{dx}` + v\frac`\{du}``\{dx}`
@@ -177,7 +177,7 @@ $$
 Differentiate $f(x) = x^3 \sin x$.
 
 $$
-f'(x) = 3x^2 \sin x + x^3 \cos x
+F'(x) = 3x^2 \sin x + x^3 \cos x
 $$
 
 :::
@@ -191,7 +191,7 @@ $$
 :::warning[Exam Tip]
 
 A useful mnemonic for the quotient rule: "low d-high minus high d-low, over the square of what's
-below."
+Below."
 
 :::
 
@@ -203,7 +203,7 @@ Let $u = x^2 + 1$ and $v = x - 3$. Then $u' = 2x$ and $v' = 1$.
 
 $$
 \begin`\{aligned}`
-f'(x) &= \frac{(x-3)(2x) - (x^2+1)(1)}{(x-3)^2} \\[6pt]
+F'(x) &= \frac{(x-3)(2x) - (x^2+1)(1)}{(x-3)^2} \\[6pt]
 &= \frac{2x^2 - 6x - x^2 - 1}{(x-3)^2} \\[6pt]
 &= \frac{x^2 - 6x - 1}{(x-3)^2}
 \end`\{aligned}`
@@ -213,7 +213,7 @@ $$
 
 ### The Chain Rule
 
-If $y = f(g(x))$, then:
+If $y = f(g(x))$Then:
 
 $$
 \frac`\{dy}``\{dx}` = f'(g(x)) \cdot g'(x)
@@ -229,7 +229,7 @@ $$
 
 Differentiate $f(x) = (3x^2 + 1)^5$.
 
-Let $u = 3x^2 + 1$, so $y = u^5$.
+Let $u = 3x^2 + 1$So $y = u^5$.
 
 $$
 \frac`\{dy}``\{dx}` = 5u^4 \cdot 6x = 30x(3x^2+1)^4
@@ -241,7 +241,7 @@ $$
 
 Differentiate $\displaystyle f(x) = \sin(2x^2 + 1)$.
 
-Let $u = 2x^2 + 1$, so $y = \sin u$.
+Let $u = 2x^2 + 1$So $y = \sin u$.
 
 $$
 \frac`\{dy}``\{dx}` = \cos u \cdot 4x = 4x\cos(2x^2+1)
@@ -253,28 +253,28 @@ $$
 
 ## Derivatives of Standard Functions
 
-| $f(x)$      | $f'(x)$                    |
+| $f(x)$ | $f'(x)$ |
 | ----------- | -------------------------- |
-| $x^n$       | $nx^{n-1}$                 |
-| $e^x$       | $e^x$                      |
-| $a^x$       | $a^x \ln a$                |
-| $\ln x$     | $\dfrac{1}{x}$             |
-| $\log_a x$  | $\dfrac{1}{x \ln a}$       |
-| $\sin x$    | $\cos x$                   |
-| $\cos x$    | $-\sin x$                  |
-| $\tan x$    | $\sec^2 x$                 |
-| $\csc x$    | $-\csc x \cot x$           |
-| $\sec x$    | $\sec x \tan x$            |
-| $\cot x$    | $-\csc^2 x$                |
-| $\arcsin x$ | $\dfrac{1}{\sqrt{1-x^2}}$  |
+| $x^n$ | $nx^{n-1}$ |
+| $e^x$ | $e^x$ |
+| $a^x$ | $a^x \ln a$ |
+| $\ln x$ | $\dfrac{1}{x}$ |
+| $\log_a x$ | $\dfrac{1}{x \ln a}$ |
+| $\sin x$ | $\cos x$ |
+| $\cos x$ | $-\sin x$ |
+| $\tan x$ | $\sec^2 x$ |
+| $\csc x$ | $-\csc x \cot x$ |
+| $\sec x$ | $\sec x \tan x$ |
+| $\cot x$ | $-\csc^2 x$ |
+| $\arcsin x$ | $\dfrac{1}{\sqrt{1-x^2}}$ |
 | $\arccos x$ | $\dfrac{-1}{\sqrt{1-x^2}}$ |
-| $\arctan x$ | $\dfrac{1}{1+x^2}$         |
+| $\arctan x$ | $\dfrac{1}{1+x^2}$ |
 
 :::warning[Exam Tip]
 
-The IB formula booklet provides the derivatives of $\sin x$, $\cos x$, $\tan x$, $e^x$, and $\ln x$.
+The IB formula booklet provides the derivatives of $\sin x$$\cos x$$\tan x$$e^x$And $\ln x$.
 Memorise the derivatives of the reciprocal trig functions and inverse trig functions as they may not
-be in all booklets.
+Be in all booklets.
 
 :::
 
@@ -282,12 +282,12 @@ be in all booklets.
 
 ## Implicit Differentiation
 
-When a function is not given explicitly as $y = f(x)$ but as a relation between $x$ and $y$, we
-differentiate both sides with respect to $x$ and solve for $\dfrac{dy}{dx}$.
+When a function is not given explicitly as $y = f(x)$ but as a relation between $x$ and $y$We
+Differentiate both sides with respect to $x$ and solve for $\dfrac{dy}{dx}$.
 
 ### Key Idea
 
-When differentiating a term involving $y$ with respect to $x$, use the chain rule:
+When differentiating a term involving $y$ with respect to $x$Use the chain rule:
 
 $$
 \frac{d}`\{dx}`[y^n] = ny^{n-1}\frac`\{dy}``\{dx}`
@@ -335,7 +335,7 @@ $$
 
 ### Second Derivatives Implicitly
 
-To find $\dfrac{d^2y}{dx^2}$, differentiate $\dfrac{dy}{dx}$ again, remembering that
+To find $\dfrac{d^2y}{dx^2}$Differentiate $\dfrac{dy}{dx}$ again, remembering that
 $\dfrac{dy}{dx}$ is an expression in both $x$ and $y$.
 
 :::info[Example]
@@ -374,7 +374,7 @@ When two or more quantities are related by an equation, their rates of change ar
 :::info[Example]
 
 A spherical balloon is being inflated at a rate of $10\mathrm{ cm}^3\mathrm{/s}$. Find the rate at
-which the radius is increasing when the radius is $5\mathrm{ cm}$.
+Which the radius is increasing when the radius is $5\mathrm{ cm}$.
 
 Volume of a sphere: $V = \dfrac{4}{3}\pi r^3$.
 
@@ -426,11 +426,11 @@ The negative sign means the top is sliding down.
 ### Notation
 
 $$
-f''(x) = \frac{d^2y}{dx^2} = \frac{d}`\{dx}`\left(\frac`\{dy}``\{dx}`\right)
+F''(x) = \frac{d^2y}{dx^2} = \frac{d}`\{dx}`\left(\frac`\{dy}``\{dx}`\right)
 $$
 
 $$
-f'''(x) = \frac{d^3y}{dx^3} = \frac{d}`\{dx}`\left(\frac{d^2y}{dx^2}\right)
+F'''(x) = \frac{d^3y}{dx^3} = \frac{d}`\{dx}`\left(\frac{d^2y}{dx^2}\right)
 $$
 
 :::info[Example]
@@ -438,15 +438,15 @@ $$
 Find $f''(x)$ for $f(x) = x^4 - 3x^3 + 2x - 7$.
 
 $$
-f'(x) = 4x^3 - 9x^2 + 2
+F'(x) = 4x^3 - 9x^2 + 2
 $$
 
 $$
-f''(x) = 12x^2 - 18x
+F''(x) = 12x^2 - 18x
 $$
 
 $$
-f'''(x) = 24x - 18
+F'''(x) = 24x - 18
 $$
 
 :::
@@ -460,14 +460,14 @@ $$
 The **tangent** to $y = f(x)$ at $x = a$ has gradient $f'(a)$ and equation:
 
 $$
-y - f(a) = f'(a)(x - a)
+Y - f(a) = f'(a)(x - a)
 $$
 
 The **normal** is perpendicular to the tangent, so its gradient is $-\dfrac{1}{f'(a)}$ (when
 $f'(a) \neq 0$):
 
 $$
-y - f(a) = -\frac{1}{f'(a)}(x - a)
+Y - f(a) = -\frac{1}{f'(a)}(x - a)
 $$
 
 :::info[Example]
@@ -476,7 +476,7 @@ Find the equation of the tangent and normal to $y = x^3 - 3x + 2$ at $x = 1$.
 
 At $x = 1$: $y = 1 - 3 + 2 = 0$ and $y' = 3x^2 - 3 = 0$.
 
-Since $y' = 0$, the tangent is horizontal: $y = 0$.
+Since $y' = 0$The tangent is horizontal: $y = 0$.
 
 The normal is vertical: $x = 1$.
 
@@ -492,16 +492,16 @@ The normal is vertical: $x = 1$.
 
 A **stationary point** occurs where $f'(x) = 0$. There are three types:
 
-| Type                | First Derivative Test        | Second Derivative Test            |
+| Type | First Derivative Test | Second Derivative Test |
 | ------------------- | ---------------------------- | --------------------------------- |
-| Local maximum       | $f'$ changes from $+$ to $-$ | $f''(x) \lt 0$                    |
-| Local minimum       | $f'$ changes from $-$ to $+$ | $f''(x) \gt 0$                    |
-| Point of inflection | $f'$ does not change sign    | $f''(x) = 0$ (inconclusive alone) |
+| Local maximum | $f'$ changes from $+$ to $-$ | $f''(x) \lt 0$ |
+| Local minimum | $f'$ changes from $-$ to $+$ | $f''(x) \gt 0$ |
+| Point of inflection | $f'$ does not change sign | $f''(x) = 0$ (inconclusive alone) |
 
 :::warning[Exam Tip]
 
 When $f''(x) = 0$ at a stationary point, the second derivative test is inconclusive. You must use
-the first derivative test or check the sign of $f'$ on either side.
+The first derivative test or check the sign of $f'$ on either side.
 
 :::
 
@@ -510,28 +510,28 @@ the first derivative test or check the sign of $f'$ on either side.
 Find and classify the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$.
 
 $$
-f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)
+F'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)
 $$
 
 Setting $f'(x) = 0$: $x = 1$ or $x = 3$.
 
 $$
-f''(x) = 6x - 12
+F''(x) = 6x - 12
 $$
 
-At $x = 1$: $f''(1) = -6 \lt 0$, so local maximum. $f(1) = 1 - 6 + 9 + 1 = 5$. Point: $(1, 5)$.
+At $x = 1$: $f''(1) = -6 \lt 0$So local maximum. $f(1) = 1 - 6 + 9 + 1 = 5$. Point: $(1, 5)$.
 
-At $x = 3$: $f''(3) = 6 \gt 0$, so local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$. Point: $(3, 1)$.
+At $x = 3$: $f''(3) = 6 \gt 0$So local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$. Point: $(3, 1)$.
 
 :::
 
 ### Concavity and Points of Inflection
 
 <DesmosGraph title="Stationary Points and Concavity" expressions={["f(x)=x^3-3x+1",
-"\frac{d}`\{dx}`f(x)"]} width={800} height={500} />
+"\frac{d}`\{dx}`F(x)"]} width={800} height={500} />
 
 Use the sliders to adjust coefficients of a polynomial and observe how $f'(x)$ and $f''(x)$
-determine stationary points and concavity.
+Determine stationary points and concavity.
 
 - $f$ is **concave up** on an interval if $f''(x) \gt 0$ (the graph curves upward).
 - $f$ is **concave down** on an interval if $f''(x) \lt 0$ (the graph curves downward).
@@ -549,22 +549,22 @@ Always verify by checking the sign of $f''(x)$ on either side.
 Find the points of inflection of $f(x) = x^4 - 4x^3$.
 
 $$
-f'(x) = 4x^3 - 12x^2
+F'(x) = 4x^3 - 12x^2
 $$
 
 $$
-f''(x) = 12x^2 - 24x = 12x(x - 2)
+F''(x) = 12x^2 - 24x = 12x(x - 2)
 $$
 
 $f''(x) = 0$ when $x = 0$ or $x = 2$.
 
-| Interval        | Sign of $f''$ | Concavity    |
+| Interval | Sign of $f''$ | Concavity |
 | --------------- | ------------- | ------------ |
-| $x \lt 0$       | $+$           | Concave up   |
-| $0 \lt x \lt 2$ | $-$           | Concave down |
-| $x \gt 2$       | $+$           | Concave up   |
+| $x \lt 0$ | $+$ | Concave up |
+| $0 \lt x \lt 2$ | $-$ | Concave down |
+| $x \gt 2$ | $+$ | Concave up |
 
-Concavity changes at both $x = 0$ and $x = 2$, so both are points of inflection.
+Concavity changes at both $x = 0$ and $x = 2$So both are points of inflection.
 
 At $x = 0$: $f(0) = 0$. Point: $(0, 0)$.
 
@@ -575,7 +575,7 @@ At $x = 2$: $f(2) = 16 - 32 = -16$. Point: $(2, -16)$.
 ### Optimization
 
 Optimization problems involve finding the maximum or minimum value of a quantity subject to
-constraints.
+Constraints.
 
 ### Strategy
 
@@ -588,9 +588,9 @@ constraints.
 :::info[Example]
 
 A piece of wire $100\mathrm{ cm}$ long is bent to form a rectangle. Find the dimensions that
-maximise the area.
+Maximise the area.
 
-Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$, so $y = 50 - x$.
+Let the dimensions be $x$ and $y$. Then $2x + 2y = 100$So $y = 50 - x$.
 
 Area: $A = xy = x(50 - x) = 50x - x^2$.
 
@@ -602,7 +602,7 @@ $$
 \frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum}
 $$
 
-So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area
+So $x = 25\mathrm{ cm}$$y = 25\mathrm{ cm}$. The rectangle is a square with area
 $625\mathrm{ cm}^2$.
 
 :::
@@ -610,9 +610,9 @@ $625\mathrm{ cm}^2$.
 :::info[Example]
 
 An open-top cylindrical can is to hold $500\mathrm{ cm}^3$ of liquid. Find the dimensions that
-minimise the surface area.
+Minimise the surface area.
 
-Volume: $V = \pi r^2 h = 500$, so $h = \dfrac{500}{\pi r^2}$.
+Volume: $V = \pi r^2 h = 500$So $h = \dfrac{500}{\pi r^2}$.
 
 Surface area (no top): $A = \pi r^2 + 2\pi r h = \pi r^2 + \dfrac{1000}{r}$.
 
@@ -625,14 +625,14 @@ $$
 $$
 
 $$
-r = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
+R = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
 $$
 
 $$
-h = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
+H = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
 $$
 
-The optimal open-top can has $h = r$, i.e., height equals radius.
+The optimal open-top can has $h = r$I.e., height equals radius.
 
 :::
 
@@ -641,25 +641,25 @@ The optimal open-top can has $h = r$, i.e., height equals radius.
 ## L'Hopital's Rule
 
 If $\displaystyle\lim_{x \to a}\frac{f(x)}{g(x)}$ gives an indeterminate form $\dfrac{0}{0}$ or
-$\dfrac{\pm\infty}{\pm\infty}$, then:
+$\dfrac{\pm\infty}{\pm\infty}$Then:
 
 $$
 \lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
 $$
 
-provided the limit on the right exists.
+Provided the limit on the right exists.
 
 :::info[Example]
 
 Evaluate $\displaystyle\lim_{x \to 0}\frac{e^x - 1 - x}{x^2}$.
 
-Direct substitution gives $\dfrac{0}{0}$, so apply L'Hopital's rule:
+Direct substitution gives $\dfrac{0}{0}$So apply L'Hopital's rule:
 
 $$
 \lim_{x \to 0}\frac{e^x - 1}{2x}
 $$
 
-Still $\dfrac{0}{0}$, apply again:
+Still $\dfrac{0}{0}$Apply again:
 
 $$
 \lim_{x \to 0}\frac{e^x}{2} = \frac{1}{2}
@@ -678,7 +678,7 @@ Let $f(x) = 2x^3 - 3x^2 - 36x + 5$.
 **(a)** Find $f'(x)$.
 
 $$
-f'(x) = 6x^2 - 6x - 36
+F'(x) = 6x^2 - 6x - 36
 $$
 
 **(b)** Find the $x$-coordinates of the stationary points.
@@ -692,34 +692,34 @@ $x = 3$ or $x = -2$.
 **(c)** Determine the nature of each stationary point.
 
 $$
-f''(x) = 12x - 6
+F''(x) = 12x - 6
 $$
 
-At $x = -2$: $f''(-2) = -30 \lt 0$, so local maximum.
+At $x = -2$: $f''(-2) = -30 \lt 0$So local maximum.
 
-At $x = 3$: $f''(3) = 30 \gt 0$, so local minimum.
+At $x = 3$: $f''(3) = 30 \gt 0$So local minimum.
 
 **(d)** Find the equation of the tangent to the curve at $x = 0$.
 
 $f(0) = 5$ and $f'(0) = -36$.
 
 $$
-y - 5 = -36(x - 0) \implies y = -36x + 5
+Y - 5 = -36(x - 0) \implies y = -36x + 5
 $$
 
 ### Question 2 (Paper 2 style)
 
 A rectangular garden is to be constructed adjacent to a house, with the house forming one side of
-the rectangle. Fencing is required for the other three sides. $60\mathrm{ m}$ of fencing is
-available.
+The rectangle. Fencing is required for the other three sides. $60\mathrm{ m}$ of fencing is
+Available.
 
-**(a)** If the side parallel to the house has length $x\mathrm{ m}$, show that the area is:
+**(a)** If the side parallel to the house has length $x\mathrm{ m}$Show that the area is:
 
 $$
 A = x\left(30 - \frac{x}{2}\right) = 30x - \frac{x^2}{2}
 $$
 
-The two perpendicular sides have total length $60 - x$, so each is
+The two perpendicular sides have total length $60 - x$So each is
 $\dfrac{60-x}{2} = 30 - \dfrac{x}{2}$.
 
 $$
@@ -784,7 +784,7 @@ $y = e^{-1} = \dfrac{1}{e}$.
 
 $\dfrac{d^2y}{dx^2} = -e^{-x}(1-x) + e^{-x}(-1) = e^{-x}(x - 2)$.
 
-At $x = 1$: $\dfrac{d^2y}{dx^2} = e^{-1}(-1) \lt 0$, so local maximum at
+At $x = 1$: $\dfrac{d^2y}{dx^2} = e^{-1}(-1) \lt 0$So local maximum at
 $\left(1, \dfrac{1}{e}\right)$.
 
 **(c)** Find the point of inflection.
@@ -793,7 +793,7 @@ $\dfrac{d^2y}{dx^2} = 0 \implies x = 2$.
 
 At $x = 2$: $y = 2e^{-2} = \dfrac{2}{e^2}$.
 
-Since $\dfrac{d^2y}{dx^2}$ changes sign at $x = 2$, this is a point of inflection at
+Since $\dfrac{d^2y}{dx^2}$ changes sign at $x = 2$This is a point of inflection at
 $\left(2, \dfrac{2}{e^2}\right)$.
 
 **(d)** Find the equation of the tangent at $x = 0$.
@@ -801,13 +801,13 @@ $\left(2, \dfrac{2}{e^2}\right)$.
 $y(0) = 0$ and $y'(0) = e^0(1) = 1$.
 
 $$
-y = x
+Y = x
 $$
 
 ### Question 5 (Paper 1 style)
 
 The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s}$. Find the rate of change of
-the area when the radius is $4\mathrm{ cm}$.
+The area when the radius is $4\mathrm{ cm}$.
 
 $$
 A = \pi r^2
@@ -823,10 +823,10 @@ Let $f(x) = \dfrac{x}{x^2 + 1}$.
 
 **(a)** Find $f'(x)$.
 
-Using the quotient rule with $u = x$, $v = x^2 + 1$:
+Using the quotient rule with $u = x$$v = x^2 + 1$:
 
 $$
-f'(x) = \frac{(x^2+1)(1) - x(2x)}{(x^2+1)^2} = \frac{1 - x^2}{(x^2+1)^2}
+F'(x) = \frac{(x^2+1)(1) - x(2x)}{(x^2+1)^2} = \frac{1 - x^2}{(x^2+1)^2}
 $$
 
 **(b)** Find the range of values of $x$ for which $f$ is increasing.
@@ -847,33 +847,33 @@ Since $f'$ changes from $-$ to $+$ at $x = -1$: local minimum at $\left(-1, -\df
 
 **(d)** Find the equations of the asymptotes.
 
-As $x \to \pm\infty$: $f(x) \to 0$, so $y = 0$ is a horizontal asymptote.
+As $x \to \pm\infty$: $f(x) \to 0$So $y = 0$ is a horizontal asymptote.
 
-The denominator $x^2 + 1 \neq 0$ for all real $x$, so there are no vertical asymptotes.
+The denominator $x^2 + 1 \neq 0$ for all real $x$So there are no vertical asymptotes.
 
 ---
 
 ## Summary of Key Results
 
-| Concept                | Formula                                                     |
+| Concept | Formula |
 | ---------------------- | ----------------------------------------------------------- |
-| First principles       | $\displaystyle f'(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ |
-| Power rule             | $\dfrac{d}{dx}[x^n] = nx^{n-1}$                             |
-| Product rule           | $(uv)' = u'v + uv'$                                         |
-| Quotient rule          | $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$       |
-| Chain rule             | $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$      |
-| Tangent at $(a, f(a))$ | $y - f(a) = f'(a)(x - a)$                                   |
-| Normal gradient        | $-\dfrac{1}{f'(a)}$                                         |
-| Increasing             | $f'(x) \gt 0$                                               |
-| Decreasing             | $f'(x) \lt 0$                                               |
-| Local max              | $f'(a) = 0$, $f''(a) \lt 0$                                 |
-| Local min              | $f'(a) = 0$, $f''(a) \gt 0$                                 |
+| First principles | $\displaystyle f'(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ |
+| Power rule | $\dfrac{d}{dx}[x^n] = nx^{n-1}$ |
+| Product rule | $(uv)' = u'v + uv'$ |
+| Quotient rule | $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$ |
+| Chain rule | $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$ |
+| Tangent at $(a, f(a))$ | $y - f(a) = f'(a)(x - a)$ |
+| Normal gradient | $-\dfrac{1}{f'(a)}$ |
+| Increasing | $f'(x) \gt 0$ |
+| Decreasing | $f'(x) \lt 0$ |
+| Local max | $f'(a) = 0$$f''(a) \lt 0$ |
+| Local min | $f'(a) = 0$$f''(a) \gt 0$ |
 
 :::tip[Exam Strategy]
 
-For Paper 2 differentiation questions, always show your working clearly. State which rule you are
-using (product, quotient, chain) and lay out the substitution. Examiners award method marks for
-correct application of rules even if arithmetic errors occur later.
+For Paper 2 differentiation questions, always show your working . State which rule you are
+Using (product, quotient, chain) and lay out the substitution. Examiners award method marks for
+Correct application of rules even if arithmetic errors occur later.
 
 :::
 
@@ -889,3 +889,11 @@ Ready to test your understanding of **Differentiation**? The [diagnostic test](/
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

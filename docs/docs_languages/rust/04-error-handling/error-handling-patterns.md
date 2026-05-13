@@ -7,19 +7,19 @@ slug: error-handling-patterns
 ## Error Design Philosophy
 
 Rust treats errors as values, not exceptions. This is a fundamental design choice: errors are not
-special control flow mechanisms that can jump across function boundaries. They are ordinary values
-that propagate through the type system via `Result<T, E>`. This makes error paths explicit and force
-the programmer to handle them.
+Special control flow mechanisms that can jump across function boundaries. They are ordinary values
+That propagate through the type system via `Result<T, E>`. This makes error paths explicit and force
+The programmer to handle them.
 
 The core principle: **make error states unrepresentable where possible, and where they are
-representable, make them unignorable.**
+Representable, make them unignorable.**
 
 ### Errors as Values vs Exceptions
 
 In exception-based languages (Java, Python, C++), error handling is opt-in — you can ignore
-exceptions and they propagate implicitly. In Rust, `Result` forces you to acknowledge errors at
-every level of the call stack. The `?` operator makes propagation ergonomic, but the type system
-still tracks the error type.
+Exceptions and they propagate implicitly. In Rust, `Result` forces you to acknowledge errors at
+Every level of the call stack. The `?` operator makes propagation ergonomic, but the type system
+Still tracks the error type.
 
 ```rust
 // Every error is visible in the type signature
@@ -74,7 +74,7 @@ impl std::error::Error for AppError {
 ### `From` Implementations for `?` Propagation
 
 Each `From` implementation enables the `?` operator to automatically convert the source error type
-into your error type:
+Into your error type:
 
 ```rust
 impl From<std::io::Error> for AppError {
@@ -111,7 +111,7 @@ fn load_config(path: &str) -> Result<Config, AppError> {
 ### `std::error::Error::source()`
 
 The `source()` method enables walking an error chain. Each error can optionally return a reference
-to the underlying error that caused it:
+To the underlying error that caused it:
 
 ```rust
 use std::error::Error;
@@ -169,8 +169,8 @@ impl fmt::Display for DetailedError {
 ```
 
 `Backtrace::capture()` captures the current stack trace. It is available when `RUST_BACKTRACE=1` is
-set. The backtrace is only captured if an environment variable enables it, so there is no overhead
-in production by default.
+Set. The backtrace is only captured if an environment variable enables it, so there is no overhead
+In production by default.
 
 ## `thiserror` vs `anyhow` Decision Framework
 
@@ -348,8 +348,8 @@ where
 :::warning
 
 Retry logic must be idempotent. If the operation has side effects (e.g., creating a database
-record), retrying may create duplicates. Design your operations to be idempotent before adding retry
-logic. Use idempotency keys for non-idempotent operations.
+Record), retrying may create duplicates. Design your operations to be idempotent before adding retry
+Logic. Use idempotency keys for non-idempotent operations.
 
 :::
 
@@ -620,7 +620,7 @@ mod tests {
 ### Fatal Errors
 
 Fatal errors indicate that the program cannot continue. Use `panic!` or return an error that the
-caller treats as fatal:
+Caller treats as fatal:
 
 ```rust
 fn main() {
@@ -656,42 +656,42 @@ fn handle_request(request: Request) -> Response {
 ## Common Pitfalls
 
 1. **Over-engineering error types in applications.** In a binary, you rarely need to match on
-   specific error variants. Use `anyhow` with `.context()` and avoid large error enums unless you
-   have a specific need.
+ specific error variants. Use `anyhow` with `.context()` and avoid large error enums unless you
+ have a specific need.
 
 2. **Under-engineering error types in libraries.** Library callers need to distinguish error kinds.
-   A single `String` error type or `Box<dyn Error>` prevents callers from handling specific error
-   cases. Use `thiserror` to define precise error enums.
+ A single `String` error type or `Box<dyn Error>` prevents callers from handling specific error
+ cases. Use `thiserror` to define precise error enums.
 
 3. **Swallowing errors with `let _ =`.** Silently discarding errors hides bugs. At minimum, log the
-   error. Use `if let Err(e) = result { log::error!("operation failed: {}", e); }`.
+ error. Use `if let Err(e) = result { log::error!("operation failed: {}", e); }`.
 
 4. **Error types that are not `Send + Sync`.** If your error type contains `Rc` or other
-   non-thread-safe types, it cannot be used with `?` in async contexts. Ensure all error fields are
-   `Send + Sync`.
+ non-thread-safe types, it cannot be used with `?` in async contexts. Ensure all error fields are
+ `Send + Sync`.
 
 5. **Not adding context to errors.** A bare `io::Error` tells you what went wrong but not where or
-   why. Use `.context()` (anyhow) or `.map_err()` to add contextual information as errors propagate
-   up the call stack.
+ why. Use `.context()` (anyhow) or `.map_err()` to add contextual information as errors propagate
+ up the call stack.
 
 6. **Retry without backoff.** Retrying immediately after failure can overwhelm the failing service.
-   Always use exponential backoff with jitter to distribute retry attempts.
+ Always use exponential backoff with jitter to distribute retry attempts.
 
 7. **Retry without idempotency.** If the retried operation has side effects, each retry may create
-   duplicate side effects. Design operations to be idempotent before adding retry logic.
+ duplicate side effects. Design operations to be idempotent before adding retry logic.
 
 8. **Panicking in library code.** Libraries should never panic on expected failure modes. Return
-   `Err` for invalid input, missing resources, and expected failures. Panics are for internal
-   invariant violations only.
+ `Err` for invalid input, missing resources, and expected failures. Panics are for internal
+ invariant violations only.
 
 9. **`Box<dyn Error>` losing type information.** When you use `Box<dyn Error>` as the error type,
-   the caller cannot match on specific variants. This is fine for applications but inappropriate for
-   libraries.
+ the caller cannot match on specific variants. This is fine for applications but inappropriate for
+ libraries.
 
 10. **Not testing error paths.** Error paths are often less tested than success paths. Write
-    explicit tests for each error variant, including edge cases and error chains. Use
-    `#[should_panic]` for testing panic conditions and property-based testing for error handling
-    robustness.
+ explicit tests for each error variant, including edge cases and error chains. Use
+ `#[should_panic]` for testing panic conditions and property-based testing for error handling
+ robustness.
 
 ## Error Strategy Decision Guide
 
@@ -900,7 +900,7 @@ impl std::error::Error for MultiError {
 ### Error Conversion at Module Boundaries
 
 Convert errors at module boundaries to maintain a clean internal API while providing rich errors at
-the external boundary:
+The external boundary:
 
 ```rust
 mod database {
@@ -953,7 +953,7 @@ fn process_order(order_id: u64) -> Result<Order> {
 ```
 
 Each `.context()` call adds a layer to the error chain, making it easy to trace the error back to
-its origin:
+Its origin:
 
 ```
 Error: payment processing failed for order 42
@@ -979,3 +979,11 @@ fn log_error(error: &anyhow::Error) {
     );
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

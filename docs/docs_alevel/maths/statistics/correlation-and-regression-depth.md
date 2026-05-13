@@ -9,12 +9,12 @@ slug: correlation-and-regression-extended
 ## Correlation and Regression (Extended Treatment)
 
 This document covers scatter diagrams, the product moment correlation coefficient, Spearman's rank
-correlation, least squares regression, and residual analysis.
+Correlation, least squares regression, and residual analysis.
 
 :::info
 Correlation measures the strength of a linear association. It does not imply causation, and it
-does not capture non-linear relationships. Always plot your data before interpreting correlation
-values.
+Does not capture non-linear relationships. Always plot your data before interpreting correlation
+Values.
 :::
 
 <hr />
@@ -24,7 +24,7 @@ values.
 ### 1.1 Interpretation
 
 A **scatter diagram** (scatter plot) displays pairs of values $(x_i, y_i)$ as points on a
-coordinate grid. Visual inspection reveals:
+Coordinate grid. Visual inspection reveals:
 
 - The **direction** of association (positive, negative, or none).
 - The **strength** of association (strong, moderate, weak).
@@ -33,14 +33,14 @@ coordinate grid. Visual inspection reveals:
 
 ### 1.2 Types of correlation
 
-| Pattern       | Description                                          |
+| Pattern | Description |
 | ------------- | ---------------------------------------------------- |
-| Strong +      | Points lie close to an upward-sloping line            |
-| Moderate +    | General upward trend with more scatter                |
-| Weak +        | Slight upward tendency, much scatter                  |
-| No correlation| No discernible pattern                                |
-| Strong -      | Points lie close to a downward-sloping line           |
-| Non-linear    | Clear pattern but not a straight line                 |
+| Strong + | Points lie close to an upward-sloping line |
+| Moderate + | General upward trend with more scatter |
+| Weak + | Slight upward tendency, much scatter |
+| No correlation| No discernible pattern |
+| Strong - | Points lie close to a downward-sloping line |
+| Non-linear | Clear pattern but not a straight line |
 
 ### 1.3 Outliers
 
@@ -52,7 +52,7 @@ An **outlier** is a data point that lies far from the general pattern. Outliers 
 :::warning
 Common Pitfall
 A single outlier can dramatically change the value of the correlation coefficient. Always examine
-your scatter diagram before relying on numerical measures.
+Your scatter diagram before relying on numerical measures.
 :::
 
 <hr />
@@ -62,11 +62,11 @@ your scatter diagram before relying on numerical measures.
 ### 2.1 Definition
 
 The **product moment correlation coefficient** (also called Pearson's correlation coefficient)
-for a sample of $n$ pairs $(x_i, y_i)$ is:
+For a sample of $n$ pairs $(x_i, y_i)$ is:
 
 $$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
 
-where:
+Where:
 
 $$S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y}) = \sum x_i y_i - n\bar{x}\bar{y}$$
 
@@ -81,8 +81,8 @@ $$S_{yy} = \sum(y_i - \bar{y})^2 = \sum y_i^2 - n\bar{y}^2$$
 - $r = -1$: perfect negative linear correlation.
 - $r = 0$: no linear correlation (but there may be a non-linear relationship).
 - $r$ is independent of the units of measurement.
-- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$, $y' = cy + d$ with
-  $a, c \gt 0$).
+- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$$y' = cy + d$ with
+ $a, c \gt 0$).
 
 ### 2.3 Proof that $|r| \leq 1$
 
@@ -100,19 +100,19 @@ $$r^2 = \frac{S_{xy}^2}{S_{xx}\,S_{yy}} \leq 1 \implies |r| \leq 1 \quad \blacks
 
 **Problem.** Find the PMCC for the following data:
 
-| $x$ | 2  | 4  | 6  | 8  | 10 |
+| $x$ | 2 | 4 | 6 | 8 | 10 |
 | --- | -- | -- | -- | -- | -- |
-| $y$ | 3  | 5  | 4  | 7  | 9  |
+| $y$ | 3 | 5 | 4 | 7 | 9 |
 
-$n = 5$, $\bar{x} = 6$, $\bar{y} = 5.6$.
+$n = 5$$\bar{x} = 6$$\bar{y} = 5.6$.
 
 $\sum x_i y_i = 6 + 20 + 24 + 56 + 90 = 196$
 
 $S_{xy} = 196 - 5(6)(5.6) = 196 - 168 = 28$
 
-$\sum x_i^2 = 4 + 16 + 36 + 64 + 100 = 220$, $S_{xx} = 220 - 5(36) = 40$
+$\sum x_i^2 = 4 + 16 + 36 + 64 + 100 = 220$$S_{xx} = 220 - 5(36) = 40$
 
-$\sum y_i^2 = 9 + 25 + 16 + 49 + 81 = 180$, $S_{yy} = 180 - 5(31.36) = 180 - 156.8 = 23.2$
+$\sum y_i^2 = 9 + 25 + 16 + 49 + 81 = 180$$S_{yy} = 180 - 5(31.36) = 180 - 156.8 = 23.2$
 
 $$r = \frac◆LB◆28◆RB◆◆LB◆\sqrt{40 \times 23.2}◆RB◆ = \frac◆LB◆28◆RB◆◆LB◆\sqrt{928}◆RB◆ = \frac{28}{30.46} \approx 0.919$$
 
@@ -132,11 +132,11 @@ The PMCC is unchanged by coding: $r_{xy} = r_{uv}$.
 ### 3.1 Definition
 
 **Spearman's rank correlation coefficient** $r_s$ measures the strength of the **monotonic**
-relationship between two variables:
+Relationship between two variables:
 
 $$r_s = 1 - \frac◆LB◆6\sum d_i^2◆RB◆◆LB◆n(n^2 - 1)◆RB◆$$
 
-where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th pair.
+Where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th pair.
 
 ### 3.2 When to use Spearman's rank
 
@@ -148,13 +148,13 @@ where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks
 ### 3.3 Handling tied ranks
 
 When values are tied, assign the **average rank** to all tied values. For example, if two values
-are tied for ranks 3 and 4, both receive rank 3.5.
+Are tied for ranks 3 and 4, both receive rank 3.5.
 
 When ties exist, the simplified formula is only approximate. A more accurate formula uses:
 
 $$r_s = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
 
-applied to the rank data.
+Applied to the rank data.
 
 ### 3.4 Worked example
 
@@ -162,8 +162,8 @@ applied to the rank data.
 
 | Competitor | A | B | C | D | E | F |
 | ---------- | - | - | - | - | - | - |
-| Judge 1    | 1 | 3 | 2 | 5 | 4 | 6 |
-| Judge 2    | 2 | 1 | 3 | 6 | 5 | 4 |
+| Judge 1 | 1 | 3 | 2 | 5 | 4 | 6 |
+| Judge 2 | 2 | 1 | 3 | 6 | 5 | 4 |
 
 | $d_i$ | -1 | 2 | -1 | -1 | -1 | 2 |
 | ----- | -- | - | -- | -- | -- | - |
@@ -180,7 +180,7 @@ This indicates moderate positive agreement between the judges.
 
 | $x$ | 10 | 20 | 20 | 30 | 40 |
 | --- | -- | -- | -- | -- | -- |
-| $y$ | 5  | 8  | 12 | 15 | 20 |
+| $y$ | 5 | 8 | 12 | 15 | 20 |
 
 Ranks of $x$: 1, 2.5, 2.5, 4, 5 (tied at 20).
 
@@ -201,7 +201,7 @@ Very strong positive monotonic relationship.
 ### 4.1 The regression line of $y$ on $x$
 
 The **least squares regression line** of $y$ on $x$ is the line $y = a + bx$ that minimises the
-sum of squared residuals:
+Sum of squared residuals:
 
 $$S = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
@@ -219,8 +219,8 @@ $$\frac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = -2\sum(y_i - a - b
 
 $$\frac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = -2\sum x_i(y_i - a - bx_i) = 0 \implies a\sum x_i + b\sum x_i^2 = \sum x_i y_i$$
 
-These are the **normal equations**. Dividing the first by $n$ gives $\bar{y} = a + b\bar{x}$,
-confirming the line passes through the mean point.
+These are the **normal equations**. Dividing the first by $n$ gives $\bar{y} = a + b\bar{x}$
+Confirming the line passes through the mean point.
 
 ### 4.3 Worked example
 
@@ -241,20 +241,20 @@ The regression line of $x$ on $y$ (used when predicting $x$ from $y$) is:
 $$x = \bar{x} + \frac{S_{xy}}{S_{yy}}(y - \bar{y})$$
 
 **Important:** The two regression lines are different unless $|r| = 1$. The line of $y$ on $x$
-minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residuals.
+Minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residuals.
 
 ### 4.5 Restrictions on using regression
 
 1. **Interpolation** (predicting within the data range) is generally reliable.
 2. **Extrapolation** (predicting outside the data range) is unreliable -- the relationship may
-   not hold.
+ not hold.
 3. The regression line assumes a **linear** relationship.
 4. The model assumes the residuals are independent and normally distributed with constant
-   variance (homoscedasticity).
+ variance (homoscedasticity).
 
 :::warning
-warning
-Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$, or vice versa.
+Warning
+Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$Or vice versa.
 Use the appropriate regression line for the direction of prediction.
 :::
 
@@ -265,7 +265,7 @@ Use the appropriate regression line for the direction of prediction.
 ### 5.1 Definition
 
 A **residual** for the $i$-th data point is the difference between the observed value and the
-predicted value:
+Predicted value:
 
 $$e_i = y_i - \hat{y}_i = y_i - (a + bx_i)$$
 
@@ -290,16 +290,16 @@ Using the data and regression line $y = 1.4 + 0.7x$ from Section 4.3:
 
 | $x$ | $y$ | $\hat{y}$ | Residual $e$ |
 | --- | --- | --------- | ------------ |
-| 2   | 3   | 2.8       | 0.2          |
-| 4   | 5   | 4.2       | 0.8          |
-| 6   | 4   | 5.6       | -1.6         |
-| 8   | 7   | 7.0       | 0.0          |
-| 10  | 9   | 8.4       | 0.6          |
+| 2 | 3 | 2.8 | 0.2 |
+| 4 | 5 | 4.2 | 0.8 |
+| 6 | 4 | 5.6 | -1.6 |
+| 8 | 7 | 7.0 | 0.0 |
+| 10 | 9 | 8.4 | 0.6 |
 
 Check: $\sum e = 0.2 + 0.8 - 1.6 + 0 + 0.6 = 0$.
 
 The residual at $x = 6$ is relatively large ($-1.6$), suggesting this point deviates most from
-the linear model.
+The linear model.
 
 <hr />
 
@@ -312,7 +312,7 @@ Find the PMCC for the data: (1, 2), (2, 3), (3, 5), (4, 4), (5, 7), (6, 8).
 <details>
 <summary>Solution</summary>
 
-$n = 6$, $\bar{x} = 3.5$, $\bar{y} = 4.833$.
+$n = 6$$\bar{x} = 3.5$$\bar{y} = 4.833$.
 
 $S_{xx} = 1 + 0.25 + 0.25 + 0.25 + 2.25 + 6.25 = 17.5$.
 
@@ -329,12 +329,12 @@ $r = \dfrac◆LB◆20.5◆RB◆◆LB◆\sqrt{17.5 \times 26.17}◆RB◆ = \dfrac
 ### Problem 2
 
 Find the equation of the regression line of $y$ on $x$ for the data in Problem 1, and predict $y$
-when $x = 7$.
+When $x = 7$.
 
 <details>
 <summary>Solution</summary>
 
-$b = \dfrac{20.5}{17.5} = 1.171$, $a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
+$b = \dfrac{20.5}{17.5} = 1.171$$a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
 
 $y = 0.734 + 1.171x$.
 
@@ -361,3 +361,15 @@ $\sum d_i^2 = 4 + 1 + 1 + 4 + 1 + 1 + 1 + 1 = 14$.
 $r_s = 1 - \dfrac◆LB◆6 \times 14◆RB◆◆LB◆8 \times 63◆RB◆ = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

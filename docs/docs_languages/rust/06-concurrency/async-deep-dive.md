@@ -7,7 +7,7 @@ slug: async-deep-dive
 ## The Future Trait
 
 The `Future` trait is the foundation of async programming in Rust. It represents a value that may
-become available at some point in the future:
+Become available at some point in the future:
 
 ```rust
 pub trait Future {
@@ -22,14 +22,14 @@ pub enum Poll<T> {
 ```
 
 A future does not do anything on its own. It must be polled by an executor. Each call to `poll`
-either returns `Ready(value)` if the computation is complete, or `Pending` if it needs more time.
-When returning `Pending`, the future registers the current `Waker` with the reactor, so the executor
-knows to poll it again when progress can be made.
+Either returns `Ready(value)` if the computation is complete, or `Pending` if it needs more time.
+When returning `Pending`The future registers the current `Waker` with the reactor, so the executor
+Knows to poll it again when progress can be made.
 
 ### `Context` and `Waker`
 
-`Context` provides access to the `Waker`, which is used to notify the executor that a future should
-be polled again:
+`Context` provides access to the `Waker`Which is used to notify the executor that a future should
+Be polled again:
 
 ```rust
 pub struct Context<'a> {
@@ -42,9 +42,9 @@ impl Waker {
 }
 ```
 
-When a future returns `Pending`, the executor records that the future is waiting. When the
-underlying I/O operation completes (e.g., a socket becomes readable), the reactor calls
-`waker.wake()`, which schedules the future for re-polling.
+When a future returns `Pending`The executor records that the future is waiting. When the
+Underlying I/O operation completes (e.g., a socket becomes readable), the reactor calls
+`waker.wake()`Which schedules the future for re-polling.
 
 ### Polling Model
 
@@ -76,7 +76,7 @@ Executor                    Future                    Reactor
 ## How `async fn` Desugars
 
 An `async fn` compiles into a state machine. Each `.await` point becomes a state transition. The
-compiler generates an anonymous enum type for the state machine:
+Compiler generates an anonymous enum type for the state machine:
 
 ```rust
 async fn fetch_data(url: &str) -> Result<String, Error> {
@@ -140,15 +140,15 @@ impl<'a> Future for FetchDataFuture<'a> {
 ```
 
 The key insight: each `.await` is a yield point where control returns to the executor. The future's
-state is saved across yield points so execution can resume from where it left off.
+State is saved across yield points so execution can resume from where it left off.
 
 ## Pin and Unpin
 
 ### Why Pin Exists
 
 The compiler-generated state machine for async blocks can contain self-referential data — a field
-that points to another field within the same struct. If the struct were moved, the pointer would
-become invalid. `Pin` prevents the wrapped value from being moved after it has been pinned.
+That points to another field within the same struct. If the struct were moved, the pointer would
+Become invalid. `Pin` prevents the wrapped value from being moved after it has been pinned.
 
 ```rust
 use std::pin::Pin;
@@ -173,13 +173,13 @@ impl SelfReferential {
 
 ### `Pin<P>` API
 
-| Method         | Description                                            |
+| Method | Description |
 | -------------- | ------------------------------------------------------ |
-| `new(pointer)` | Creates a `Pin` from a pointer (requires `Unpin`)      |
-| `as_ref()`     | Returns `Pin<&T>`                                      |
-| `as_mut()`     | Returns `Pin<&mut T>` (requires `Unpin`)               |
-| `get_ref()`    | Returns `&T`                                           |
-| `get_mut()`    | Returns `&mut T` (requires `Unpin`)                    |
+| `new(pointer)` | Creates a `Pin` from a pointer (requires `Unpin`) |
+| `as_ref()` | Returns `Pin<&T>` |
+| `as_mut()` | Returns `Pin<&mut T>` (requires `Unpin`) |
+| `get_ref()` | Returns `&T` |
+| `get_mut()` | Returns `&mut T` (requires `Unpin`) |
 | `into_inner()` | Unwraps and returns the inner value (requires `Unpin`) |
 
 ### `Unpin`
@@ -259,7 +259,7 @@ Tokio uses a multi-threaded work-stealing scheduler:
 ```
 
 Each worker thread has a local deque of tasks. When a worker exhausts its local queue, it steals
-tasks from other workers' queues. This provides automatic load balancing.
+Tasks from other workers' queues. This provides automatic load balancing.
 
 ### Task Scheduling
 
@@ -282,7 +282,7 @@ async fn main() {
 ```
 
 `tokio::spawn` creates a new task (not an OS thread). Tasks are cooperatively scheduled — they yield
-control at `.await` points.
+Control at `.await` points.
 
 ## Async I/O
 
@@ -290,16 +290,16 @@ control at `.await` points.
 
 Tokio's reactor maps to the OS's native async I/O mechanism:
 
-| Platform | Mechanism | Description                             |
+| Platform | Mechanism | Description |
 | -------- | --------- | --------------------------------------- |
-| Linux    | `epoll`   | Event notification for file descriptors |
-| macOS    | `kqueue`  | Event notification for file descriptors |
-| Windows  | IOCP      | I/O Completion Ports                    |
-| FreeBSD  | `kqueue`  | Event notification for file descriptors |
+| Linux | `epoll` | Event notification for file descriptors |
+| macOS | `kqueue` | Event notification for file descriptors |
+| Windows | IOCP | I/O Completion Ports |
+| FreeBSD | `kqueue` | Event notification for file descriptors |
 
 The reactor registers file descriptors with the OS and receives notifications when they become
-readable, writable, or error. When a notification arrives, the reactor wakes the corresponding
-future.
+Readable, writable, or error. When a notification arrives, the reactor wakes the corresponding
+Future.
 
 ### Async File I/O
 
@@ -314,8 +314,8 @@ async fn read_file(path: &str) -> Result<String, io::Error> {
 }
 ```
 
-On Linux with `io_uring`, file I/O can be truly async, but `io_uring` support in tokio is still
-evolving.
+On Linux with `io_uring`File I/O can be truly async, but `io_uring` support in tokio is still
+Evolving.
 
 ### Async Networking
 
@@ -342,7 +342,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### Drop-Based Cancellation
 
 In Rust, dropping a future cancels it. There is no explicit cancellation token — if you drop the
-`JoinHandle`, the task continues running but its result is ignored:
+`JoinHandle`The task continues running but its result is ignored:
 
 ```rust
 let handle = tokio::spawn(async {
@@ -386,11 +386,11 @@ handle.await?;
 ### Cancellation Safety
 
 Some async operations are cancellation-safe and some are not. An operation is cancellation-safe if
-dropping it at any await point leaves the system in a consistent state:
+Dropping it at any await point leaves the system in a consistent state:
 
 - **Cancellation-safe:** Reading from a channel, accepting a TCP connection
 - **Not cancellation-safe:** Writing to a channel (message may be partially sent), holding a lock
-  across await points
+ across await points
 
 The tokio documentation marks each function with its cancellation safety category.
 
@@ -452,7 +452,7 @@ async fn main() {
 :::warning
 
 `select!` drops all non-selected futures. If you need to retry a branch, restructure your code to
-loop and recreate the future.
+Loop and recreate the future.
 
 :::
 
@@ -534,7 +534,7 @@ async fn main() {
 ### The Problem with `async fn` in Traits
 
 Historically, you could not write `async fn` in trait definitions because the compiler could not
-generate the correct future type:
+Generate the correct future type:
 
 ```rust
 // This did NOT work before Rust 1.75
@@ -587,12 +587,12 @@ impl AsyncProcessor for MyProcessor {
 ```
 
 `async-trait` works by boxing the future (`Box<dyn Future<Output = T> + Send>`), which adds heap
-allocation overhead. RPITIT avoids this overhead.
+Allocation overhead. RPITIT avoids this overhead.
 
 ## `Send` Bounds on Futures
 
 A future must be `Send` to be spawned on tokio's multi-threaded runtime. If a future captures a
-non-`Send` type, spawning fails:
+Non-`Send` type, spawning fails:
 
 ```rust
 use std::rc::Rc;
@@ -614,19 +614,19 @@ Common non-`Send` types:
 
 ## Common Pitfalls
 
-1. **Blocking the async executor.** Calling `std::thread::sleep`, `std::fs::read_to_string`, or any
-   blocking operation inside an async task blocks the entire OS thread. Use `tokio::time::sleep`,
-   `tokio::fs`, or `tokio::task::spawn_blocking`.
+1. **Blocking the async executor.** Calling `std::thread::sleep``std::fs::read_to_string`Or any
+ blocking operation inside an async task blocks the entire OS thread. Use `tokio::time::sleep`
+ `tokio::fs`Or `tokio::task::spawn_blocking`.
 
 2. **Holding locks across `.await`.** Holding a `std::sync::Mutex` across an `.await` blocks the
-   thread even while the future is suspended. Use `tokio::sync::Mutex` for async contexts, or drop
-   the lock before awaiting.
+ thread even while the future is suspended. Use `tokio::sync::Mutex` for async contexts, or drop
+ the lock before awaiting.
 
 3. **`select!` dropping futures.** When `select!` completes, all non-selected branches are dropped.
-   If you need to retry a branch, restructure your code to loop and recreate the future.
+ If you need to retry a branch, restructure your code to loop and recreate the future.
 
 4. **Async recursion without `Box::pin`.** Async functions that call themselves create
-   infinitely-sized futures. Use `Box::pin` to break the cycle:
+ infinitely-sized futures. Use `Box::pin` to break the cycle:
 
    ```rust
    fn read_frames(stream: &mut TcpStream) -> Pin<Box<dyn Future<Output = Result<()>> + Send + '_>> {
@@ -637,26 +637,26 @@ Common non-`Send` types:
    ```
 
 5. **Not using `spawn_blocking` for CPU-intensive work.** CPU-bound work (encryption, compression,
-   parsing) should run on a dedicated blocking thread pool, not on the async executor.
+ parsing) should run on a dedicated blocking thread pool, not on the async executor.
 
 6. **Ignoring `JoinHandle` errors.** If a spawned task panics, `handle.await` returns `Err`. Always
-   handle the error or use a supervision mechanism.
+ handle the error or use a supervision mechanism.
 
 7. **`tokio::sync::Mutex` vs `std::sync::Mutex`.** `tokio::sync::Mutex` is designed for async
-   contexts — its `lock()` method returns a future. `std::sync::Mutex` blocks the thread. Use
-   `tokio::sync::Mutex` when the critical section contains `.await`, and `std::sync::Mutex` when the
-   critical section is short and synchronous.
+ contexts — its `lock()` method returns a future. `std::sync::Mutex` blocks the thread. Use
+ `tokio::sync::Mutex` when the critical section contains `.await`And `std::sync::Mutex` when the
+ critical section is short and synchronous.
 
 8. **Forgetting `move` in spawned tasks.** `tokio::spawn(async { ... })` captures variables by
-   reference by default. If the captured variable's lifetime is shorter than the task, you get a
-   compile error. Use `tokio::spawn(async move { ... })` to transfer ownership.
+ reference by default. If the captured variable's lifetime is shorter than the task, you get a
+ compile error. Use `tokio::spawn(async move { ... })` to transfer ownership.
 
 9. **Task starvation.** A task that never yields (no `.await` in a loop) prevents other tasks on the
-   same worker thread from running. Insert `.await` points in long-running loops using
-   `tokio::task::yield_now().await`.
+ same worker thread from running. Insert `.await` points in long-running loops using
+ `tokio::task::yield_now().await`.
 
 10. **Async testing.** Use `#[tokio::test]` instead of `#[test]` for async test functions. Use
-    `#[tokio::test(flavor = "multi_thread")]` for tests that need multi-threaded runtime.
+ `#[tokio::test(flavor = "multi_thread")]` for tests that need multi-threaded runtime.
 
 ## Async Concept Map
 
@@ -838,7 +838,7 @@ async fn fetch_user(id: u64) -> Result<User, Error> {
 ```
 
 The `#[instrument]` attribute creates a span that captures the function's arguments and measures
-execution time.
+Execution time.
 
 ### Inspecting Future State
 
@@ -889,7 +889,7 @@ tokio::spawn(async move {
 ### Buffer Sizing for Channels
 
 Async channels with too-small buffers cause excessive wakeups. Channels with too-large buffers waste
-memory. Benchmark to find the right size:
+Memory. Benchmark to find the right size:
 
 ```rust
 // Start with a reasonable default
@@ -911,3 +911,11 @@ async fn send_message(tx: &mpsc::Sender<Arc<String>>, msg: Arc<String>) {
     tx.send(msg).await.unwrap();
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

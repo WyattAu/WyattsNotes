@@ -8,7 +8,7 @@ sidebar_position: 2
 ## SSH Protocol Overview
 
 SSH (Secure Shell) protocol version 2 provides encrypted remote login and command execution. The
-protocol operates in three layers:
+Protocol operates in three layers:
 
 ```mermaid
 flowchart TD
@@ -47,7 +47,7 @@ flowchart TD
 ### ~/.ssh/config
 
 The SSH client configuration file supports per-host settings, pattern matching, and conditional
-blocks.
+Blocks.
 
 ```text
 # ~/.ssh/config
@@ -428,9 +428,9 @@ Host internal
 :::danger
 
 Agent forwarding allows the remote server to use your local SSH agent to authenticate to other
-servers. If the remote server is compromised, an attacker can use your forwarded agent to
-authenticate to any server your keys have access to. Only enable ForwardAgent when necessary, and
-prefer SSH certificates or ProxyJump for multi-hop access.
+Servers. If the remote server is compromised, an attacker can use your forwarded agent to
+Authenticate to any server your keys have access to. Only enable ForwardAgent when necessary, and
+Prefer SSH certificates or ProxyJump for multi-hop access.
 
 :::
 
@@ -864,3 +864,11 @@ MaxStartups 20:30:60
 # Start refusing at 20 unauthenticated connections,
 # Drop 30% probability at 20-60, refuse all above 60
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

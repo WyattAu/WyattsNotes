@@ -104,7 +104,7 @@ $$\ln k = 15.38 - \frac◆LB◆63930◆RB◆◆LB◆8.31 \times 320◆RB◆ = 15
 
 $$k = e^{-8.66} = 1.74 \times 10^{-4}\,\text{s}^{-1}$$
 
-(c) The Arrhenius equation in logarithmic form is $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, which has the form $y = mx + c$ where $y = \ln k$ and $x = 1/T$.
+(c) The Arrhenius equation in logarithmic form is $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$Which has the form $y = mx + c$ where $y = \ln k$ and $x = 1/T$.
 
 - **Gradient** $= -E_a/R$
 - **$y$-intercept** $= \ln A$
@@ -120,7 +120,7 @@ The negative gradient confirms that as temperature increases ($1/T$ decreases), 
 
 (b) Explain why a small increase in temperature can lead to a large increase in the rate of reaction, referencing the Maxwell-Boltzmann distribution.
 
-(c) A heterogeneous catalyst lowers the activation energy of a reaction from $120\,\text{kJ mol}^{-1}$ to $80\,\text{kJ mol}^{-1}$ at $500\,\text{K}$. Calculate the ratio of rate constants $k_{\text{catalysed}}/k_{\text{uncatalysed}}$, assuming the pre-exponential factor $A$ is unchanged. ($R = 8.31\,\text{J K}^{-1}\text{ mol}^{-1}$)
+(c) A heterogeneous catalyst lowers the activation energy of a reaction from $120\,\text{kJ mol}^{-1}$ to $80\,\text{kJ mol}^{-1}$ at $500\,\text{K}$. Calculate the ratio of rate constants $k_{\text{catalysed}}/k_{\text{uncatalysed}}$Assuming the pre-exponential factor $A$ is unchanged. ($R = 8.31\,\text{J K}^{-1}\text{ mol}^{-1}$)
 
 **Solution:**
 
@@ -130,7 +130,7 @@ The negative gradient confirms that as temperature increases ($1/T$ decreases), 
 - A longer tail extending to higher energies (more molecules with $E \gt E_a$)
 - The area under both curves is the same (same total number of molecules)
 
-(b) The rate depends on the number of molecules with energy $\geq E_a$. The Maxwell-Boltzmann distribution has a long exponential tail, so the proportion of molecules above $E_a$ increases exponentially with temperature. A small increase in temperature shifts the distribution so that a significantly larger fraction of molecules exceeds $E_a$ (the area under the curve beyond $E_a$ increases disproportionately). Combined with the increased collision frequency, this leads to a large increase in rate. The Arrhenius equation quantifies this: $k = Ae^{-E_a/RT}$, showing the exponential dependence of $k$ on $1/T$.
+(b) The rate depends on the number of molecules with energy $\geq E_a$. The Maxwell-Boltzmann distribution has a long exponential tail, so the proportion of molecules above $E_a$ increases exponentially with temperature. A small increase in temperature shifts the distribution so that a significantly larger fraction of molecules exceeds $E_a$ (the area under the curve beyond $E_a$ increases disproportionately). Combined with the increased collision frequency, this leads to a large increase in rate. The Arrhenius equation quantifies this: $k = Ae^{-E_a/RT}$Showing the exponential dependence of $k$ on $1/T$.
 
 (c) Using the Arrhenius equation:
 
@@ -156,7 +156,7 @@ The reaction is zero order with respect to $\text{OH}^-$.
 
 (b) Explain why this reaction is first order with respect to the halogenoalkane, while the reaction between bromoethane and NaOH follows the rate equation $\text{rate} = k[\text{CH}_3\text{CH}_2\text{Br}][\text{OH}^-]$.
 
-(c) The reaction of 2-bromo-2-methylpropane with NaOH produces 2-methylpropene. Explain why this product is formed under certain conditions rather than the alcohol.
+(c) The reaction of 2-bromo-2-methylpropane with NaOH produces 2-methylpropene. Explain why this product is formed rather than the alcohol.
 
 **Solution:**
 
@@ -196,9 +196,9 @@ At equilibrium, $k_f = 0.050\,\text{mol}^{-1}\text{ dm}^3\text{ s}^{-1}$ and the
 
 (a) Calculate $k_r$.
 
-(b) If the initial concentrations are $[A]_0 = [B]_0 = 0.50\,\text{mol dm}^{-3}$ and $[C]_0 = [D]_0 = 0$, calculate the equilibrium concentrations of all species.
+(b) If the initial concentrations are $[A]_0 = [B]_0 = 0.50\,\text{mol dm}^{-3}$ and $[C]_0 = [D]_0 = 0$Calculate the equilibrium concentrations of all species.
 
-(c) If the temperature is increased and $K_c$ increases to $8.0$, explain the effect on the forward and reverse rate constants.
+(c) If the temperature is increased and $K_c$ increases to $8.0$Explain the effect on the forward and reverse rate constants.
 
 **Solution:**
 
@@ -228,13 +228,13 @@ $$3x = 1.0$$
 
 $$x = 0.333\,\text{mol dm}^{-3}$$
 
-Equilibrium concentrations: $[A] = [B] = 0.167\,\text{mol dm}^{-3}$, $[C] = [D] = 0.333\,\text{mol dm}^{-3}$.
+Equilibrium concentrations: $[A] = [B] = 0.167\,\text{mol dm}^{-3}$$[C] = [D] = 0.333\,\text{mol dm}^{-3}$.
 
-(c) If $K_c$ increases from $4.0$ to $8.0$, the equilibrium shifts to the right, meaning the forward reaction is more favoured. Since $K_c = k_f/k_r$, and $K_c$ has increased:
+(c) If $K_c$ increases from $4.0$ to $8.0$The equilibrium shifts to the right, meaning the forward reaction is more favoured. Since $K_c = k_f/k_r$And $K_c$ has increased:
 
 - Either $k_f$ has increased, or $k_r$ has decreased, or both.
 - Since $K_c$ increased with temperature, the forward reaction is **endothermic** (Le Chatelier's principle: increasing temperature favours the endothermic direction).
-- Both rate constants increase with temperature (Arrhenius), but $k_f$ increases proportionally more than $k_r$, so the ratio $k_f/k_r$ increases.
+- Both rate constants increase with temperature (Arrhenius), but $k_f$ increases proportionally more than $k_r$So the ratio $k_f/k_r$ increases.
 
 ---
 ### IT-3: Catalyst and Rate Profile Analysis (with Thermodynamics)
@@ -253,7 +253,7 @@ $$2\text{H}_2\text{O}_2(aq) \xrightarrow{\text{MnO}_2} 2\text{H}_2\text{O}(l) + 
 
 **Solution:**
 
-(a) $\text{MnO}_2$ provides an alternative reaction pathway with a **lower activation energy**. On the Maxwell-Boltzmann distribution, this means a larger proportion of molecules now have energy $\geq$ the (lowered) $E_a$, so more successful collisions occur per unit time. The catalyst is not consumed because it participates in the reaction mechanism (reacting with $\text{H}_2\text{O}_2$ and then being regenerated in a subsequent step). The overall reaction is unchanged, and the catalyst is recovered in its original form.
+(a) $\text{MnO}_2$ provides an alternative reaction pathway with a **lower activation energy**. On the Maxwell-Boltzmann distribution, this means a larger proportion of molecules now have energy $\geq$ the (lowered) $E_a$So more successful collisions occur per unit time. The catalyst is not consumed because it participates in the reaction mechanism (reacting with $\text{H}_2\text{O}_2$ and then being regenerated in a subsequent step). The overall reaction is unchanged, and the catalyst is recovered in its original form.
 
 (b) Using the ideal gas equation to find moles of $\text{O}_2$:
 
@@ -322,11 +322,11 @@ $$E_a = \frac◆LB◆1.269◆RB◆◆LB◆2.083 \times 10^{-4}◆RB◆ \times 8.
 
 #### UT-4: Initial Rates and Mechanism
 
-**Question:** For the reaction $\mathrm{X}_2 + \mathrm{Y}_2 \to 2\mathrm{XY}$, the rate equation is found to be $\text{rate} = k[\mathrm{X}_2][\mathrm{Y}_2]$. Propose a two-step mechanism consistent with this rate equation and identify the rate-determining step.
+**Question:** For the reaction $\mathrm{X}_2 + \mathrm{Y}_2 \to 2\mathrm{XY}$The rate equation is found to be $\text{rate} = k[\mathrm{X}_2][\mathrm{Y}_2]$. Propose a two-step mechanism consistent with this rate equation and identify the rate-determining step.
 
 **Solution:**
 
-Since the rate equation shows first order with respect to both $\mathrm{X}_2$ and $\mathrm{Y}_2$, the rate-determining step must involve one molecule of each (1 mark).
+Since the rate equation shows first order with respect to both $\mathrm{X}_2$ and $\mathrm{Y}_2$The rate-determining step must involve one molecule of each (1 mark).
 
 Proposed mechanism:
 
@@ -334,7 +334,7 @@ Step 1 (slow, rate-determining): $\mathrm{X}_2 + \mathrm{Y}_2 \to \mathrm{X}_2\m
 
 Step 2 (fast): $\mathrm{X}_2\mathrm{Y}_2 \to 2\mathrm{XY}$
 
-The rate equation for step 1 is $\text{rate} = k_1[\mathrm{X}_2][\mathrm{Y}_2]$, which matches the observed rate equation (1 mark).
+The rate equation for step 1 is $\text{rate} = k_1[\mathrm{X}_2][\mathrm{Y}_2]$Which matches the observed rate equation (1 mark).
 
 Alternative mechanism:
 
@@ -344,4 +344,4 @@ Step 2 (fast): $\mathrm{X} + \mathrm{Y}_2 \to \mathrm{XY} + \mathrm{Y}$
 
 Step 3 (fast): $\mathrm{Y} + \mathrm{X} \to \mathrm{XY}$
 
-This would give rate $= k[\mathrm{X}_2]$, which does NOT match the observed rate equation (1 mark). The first mechanism is correct.
+This would give rate $= k[\mathrm{X}_2]$Which does NOT match the observed rate equation (1 mark). The first mechanism is correct.

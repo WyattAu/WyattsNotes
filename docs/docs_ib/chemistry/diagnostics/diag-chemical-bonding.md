@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: VSEPR and Molecular Geometry
-**Question:** Draw the Lewis structures and predict the shapes and bond angles of $\text{XeF}_4$, $\text{SF}_4$, and $\text{ClF}_3$. Identify the deviation from ideal bond angles where applicable.
+**Question:** Draw the Lewis structures and predict the shapes and bond angles of $\text{XeF}_4$$\text{SF}_4$And $\text{ClF}_3$. Identify the deviation from ideal bond angles where applicable.
 
 **Solution:**
 
@@ -22,7 +22,7 @@ $\text{ClF}_3$: Cl has 7 valence electrons. Three bonding pairs, two lone pairs.
 
 ---
 ### UT-2: Hybridisation Determination
-**Question:** Determine the hybridisation of the central atom in $\text{BF}_3$, $\text{NH}_3$, $\text{H}_2\text{O}$, $\text{XeF}_2$, and $\text{BrF}_5$. For each, state the number of electron domains and the predicted geometry.
+**Question:** Determine the hybridisation of the central atom in $\text{BF}_3$$\text{NH}_3$$\text{H}_2\text{O}$$\text{XeF}_2$And $\text{BrF}_5$. For each, state the number of electron domains and the predicted geometry.
 
 **Solution:**
 
@@ -42,7 +42,7 @@ Hybridisation rule: number of electron domains = number of hybrid orbitals: 2 ($
 
 **Solution:** For HCl, HBr, and HI, the only significant intermolecular forces are London dispersion forces (LDF). LDF increase with molecular mass (more electrons = larger, more polarisable electron cloud). So boiling point increases HCl $\lt$ HBr $\lt$ HI.
 
-HF is anomalous because it forms strong hydrogen bonds. The small size and high electronegativity of F create a highly polar H--F bond with a large partial positive charge on H and partial negative charge on F. The H atom in one HF molecule is strongly attracted to the lone pairs on F in a neighbouring molecule: $\text{F-H} \cdots \text{F-H}$. Hydrogen bonding (typically $5$--$40\ \text{kJ mol}^{-1}$) is much stronger than LDF ($0.05$--$40\ \text{kJ mol}^{-1}$) and dipole-dipole forces ($5$--$20\ \text{kJ mol}^{-1}$).
+HF is anomalous because it forms strong hydrogen bonds. The small size and high electronegativity of F create a highly polar H--F bond with a large partial positive charge on H and partial negative charge on F. The H atom in one HF molecule is strongly attracted to the lone pairs on F in a neighbouring molecule: $\text{F-H} \cdots \text{F-H}$. Hydrogen bonding ( $5$--$40\ \text{kJ mol}^{-1}$) is much stronger than LDF ($0.05$--$40\ \text{kJ mol}^{-1}$) and dipole-dipole forces ($5$--$20\ \text{kJ mol}^{-1}$).
 
 Force ranking:
 - HF: hydrogen bonding $\gg$ dipole-dipole $\gt$ LDF
@@ -65,7 +65,7 @@ Force ranking:
 
 ---
 ### IT-2: Hybridisation and Bond Strength (with Energetics)
-**Question:** The bond enthalpy of a C--C single bond is $347\ \text{kJ mol}^{-1}$, a C=C double bond is $614\ \text{kJ mol}^{-1}$, and a C$\equiv$C triple bond is $839\ \text{kJ mol}^{-1}$. The second bond (first $\pi$ bond) adds $267\ \text{kJ mol}^{-1}$ but the third bond (second $\pi$ bond) only adds $225\ \text{kJ mol}^{-1}$. Explain this trend using hybridisation concepts.
+**Question:** The bond enthalpy of a C--C single bond is $347\ \text{kJ mol}^{-1}$A C=C double bond is $614\ \text{kJ mol}^{-1}$And a C$\equiv$C triple bond is $839\ \text{kJ mol}^{-1}$. The second bond (first $\pi$ bond) adds $267\ \text{kJ mol}^{-1}$ but the third bond (second $\pi$ bond) only adds $225\ \text{kJ mol}^{-1}$. Explain this trend using hybridisation concepts.
 
 **Solution:**
 

@@ -8,38 +8,38 @@ categories:
   - cpp
 slug: unit-testing
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In a standard workflow, unit tests are compiled and executed as part of the build process. The build
-system must be capable of resolving testing dependencies, compiling test suites, and executing
-verification passes as part of the standard workflow.
+System must be capable of resolving testing dependencies, compiling test suites, and executing
+Verification passes as part of the standard workflow.
 
 This module introduces the integration of **CTest** (the standard CMake test runner) with the two
-dominant C++ testing frameworks: **GoogleTest (GTest)** and **Catch2**.
+Dominant C++ testing frameworks: **GoogleTest (GTest)** and **Catch2**.
 
 ## CTest Architecture
 
 **CTest** is the test orchestration tool distributed with CMake. It does not define how to write
-tests (syntax); rather, it defines how to _execute_ them.
+Tests (syntax); rather, it defines how to _execute_ them.
 
 CTest operates on a simple protocol:
 
 1. It invokes an executable.
-2. If the executable returns Exit Code `0`, the test **PASSED**.
+2. If the executable returns Exit Code `0`The test **PASSED**.
 3. If the executable returns non-zero, segfaults, or times out, the test **FAILED**.
 
-While one could manually write a C++ program with `assert()`, professional development requires
-frameworks that provide structured assertions, test fixtures, and machine-readable output (XML/JSON)
-for CI/CD pipelines.
+While one could manually write a C++ program with `assert()`Professional development requires
+Frameworks that provide structured assertions, test fixtures, and machine-readable output (XML/JSON)
+For CI/CD pipelines.
 
 ## Dependency Management Strategy
 
 To ensure build reproducibility, testing frameworks should **not** be installed globally on the
-system (e.g., via `apt` or `brew`). Version mismatches between the CI server and local machines
-cause divergent behaviors.
+System (e.g., via `apt` or `brew`). Version mismatches between the CI server and local machines
+Cause divergent behaviors.
 
 The architectural best practice is to compile the test framework from source as part of the project
-build using CMake's **FetchContent** module. This locks the framework version to the project commit.
+Build using CMake's **FetchContent** module. This locks the framework version to the project commit.
 
 ## 1. GoogleTest Integration
 
@@ -83,7 +83,7 @@ gtest_discover_tests(UnitTests)
 
 ### Discovery Mechanics (`gtest_discover_tests`)
 
-Legacy CMake used `add_test()`, which treated the entire `UnitTests` executable as a single test.
+Legacy CMake used `add_test()`Which treated the entire `UnitTests` executable as a single test.
 This is undesirable because a crash in test #1 prevents running test #100.
 
 `gtest_discover_tests`:
@@ -96,7 +96,7 @@ This is undesirable because a crash in test #1 prevents running test #100.
 
 Catch2 is favored for its modern syntax, requiring no compilation of test fixtures for simple cases.
 Version 3 (v3) is a significant architectural shift from v2; it is no longer header-only and
-requires compilation to improve build times.
+Requires compilation to improve build times.
 
 ### CMake Implementation
 
@@ -159,7 +159,7 @@ add_subdirectory(tests)
 ```
 
 **Linking Strategy:** The `UnitTests` target inside `tests/CMakeLists.txt` must link against the
-library defined in `src/`.
+Library defined in `src/`.
 
 ```cmake
 target_link_libraries(UnitTests
@@ -258,7 +258,7 @@ TEST_F(VectorTest, CapacityPreserved) {
 ```
 
 The `TEST_F` macro registers each test as a method of the `VectorTest` class. `SetUp()` runs before
-each test, and `TearDown()` runs after each test. Each test gets a fresh instance of the fixture.
+Each test, and `TearDown()` runs after each test. Each test gets a fresh instance of the fixture.
 
 ### Catch2 Fixtures
 
@@ -291,7 +291,7 @@ TEST_CASE_METHOD(VectorFixture, "Vector front is one") {
 ## Parameterized Tests
 
 Parameterized tests allow running the same test logic with different input data, avoiding copy-paste
-of test cases that differ only in their input values.
+Of test cases that differ only in their input values.
 
 ### GoogleTest Parameterized Tests
 
@@ -328,14 +328,14 @@ INSTANTIATE_TEST_SUITE_P(
 );
 ```
 
-With `gtest_discover_tests`, each instantiation appears as a separate test in CTest:
-`PrimeNumbers/PrimeTest.ReturnsCorrectResult/0`, `PrimeNumbers/PrimeTest.ReturnsCorrectResult/1`,
-etc.
+With `gtest_discover_tests`Each instantiation appears as a separate test in CTest:
+`PrimeNumbers/PrimeTest.ReturnsCorrectResult/0``PrimeNumbers/PrimeTest.ReturnsCorrectResult/1`
+Etc.
 
 ## CMake Test Properties
 
 CTest allows setting properties on individual tests via `set_tests_properties` or through the
-discovery commands:
+Discovery commands:
 
 ```cmake
 # Set timeout for long-running tests
@@ -378,7 +378,7 @@ ctest --timeout 120
 ## Code Coverage Analysis
 
 Coverage analysis measures which lines, branches, and functions of your source code are exercised by
-the test suite. This is critical for identifying untested code paths.
+The test suite. This is critical for identifying untested code paths.
 
 ### Using `llvm-cov` (Clang)
 
@@ -434,7 +434,7 @@ set(CMAKE_EXE_LINKER_FLAGS_COVERAGE "--coverage" CACHE STRING "")
 ## Mock Objects and Test Doubles
 
 When testing a component that depends on an external system (database, network, filesystem), you
-substitute the real dependency with a **mock** that records calls and returns predefined values.
+Substitute the real dependency with a **mock** that records calls and returns predefined values.
 
 ### GoogleMock (Included with GoogleTest)
 
@@ -544,20 +544,20 @@ jobs:
 ## Architectural Considerations
 
 1. **Macro Isolation:** Do not expose GTest/Catch2 macros in your public headers. Tests are
-   implementation details.
+ implementation details.
 2. **Private Visibility:** If you need to test private class members, prefer the **Friend Fixture**
-   pattern or compile private implementations as a separate `OBJECT` library rather than making
-   members public.
+ pattern or compile private implementations as a separate `OBJECT` library rather than making
+ members public.
 3. **Sanitizers:** Running tests with Address Sanitizer (ASan) enabled is the primary method for
-   detecting memory leaks. Ensure your `testPresets` inherit from sanitizer-enabled build
-   configurations.
+ detecting memory leaks. Ensure your `testPresets` inherit from sanitizer-enabled build
+ configurations.
 
 ## Common Pitfalls
 
 ### 1. Test Binary Size and Compile Time
 
 As the test suite grows, the test executable becomes large and slow to compile. Split tests into
-multiple executables grouped by module:
+Multiple executables grouped by module:
 
 ```cmake
 add_executable(EngineTests test_engine.cpp)
@@ -573,22 +573,30 @@ gtest_discover_tests(MathTests)
 ### 2. Global State Leakage Between Tests
 
 Tests that modify global state (singletons, environment variables, filesystem) can cause ordering
-dependencies: test B passes when run alone but fails when run after test A. Use fixtures with proper
-setup/teardown to isolate each test.
+Dependencies: test B passes when run alone but fails when run after test A. Use fixtures with proper
+Setup/teardown to isolate each test.
 
 ### 3. Flaky Tests and Timing
 
 Tests that depend on timing (sleep, timeout) are inherently non-deterministic. Avoid them. If timing
-is unavoidable, use generous timeouts and mark the test as flaky in CI.
+Is unavoidable, use generous timeouts and mark the test as flaky in CI.
 
 ### 4. `gtest_discover_tests` Requires the Binary to Run Post-Build
 
 If the test binary fails to execute during the discovery phase (e.g., missing shared library at
-runtime), CMake configuration fails. Ensure all runtime dependencies (`.so`/`.dll` files) are
-findable via `LD_LIBRARY_PATH`, `PATH`, or `CMAKE_INSTALL_RPATH`.
+Runtime), CMake configuration fails. Ensure all runtime dependencies (`.so`/`.dll` files) are
+Findable via `LD_LIBRARY_PATH``PATH`Or `CMAKE_INSTALL_RPATH`.
 
 ### 5. Catch2 v2 to v3 Migration
 
 Catch2 v3 is a compiled library, not header-only. If your project still uses `v2` patterns (e.g.,
 `CATCH_CONFIG_MAIN` without linking `Catch2::Catch2Main`), the build will fail. Update all test
-targets to link against `Catch2::Catch2WithMain` and remove the `CATCH_CONFIG_MAIN` define.
+Targets to link against `Catch2::Catch2WithMain` and remove the `CATCH_CONFIG_MAIN` define.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

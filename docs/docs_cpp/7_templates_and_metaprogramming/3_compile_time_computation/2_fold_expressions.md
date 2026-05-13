@@ -12,8 +12,8 @@ slug: fold-expressions-and-pack-expansion
 
 A **fold expression** reduces a parameter pack using a binary operator [N4950 §7.6.1], introduced in
 C++17. Fold expressions come in four forms (unary left/right, binary left/right) and provide a
-concise, readable way to perform operations across all elements of a parameter pack without manual
-recursion.
+Concise, readable way to perform operations across all elements of a parameter pack without manual
+Recursion.
 
 ## Formal Grammar and Semantics [N4950 §7.6.1]
 
@@ -39,7 +39,7 @@ A fold expression has the following semantics:
 3. If the pack is empty, the result depends on the operator (see Empty Pack Behavior).
 
 The expansion produces an expression tree whose shape is determined by the fold direction and the
-associativity of the operator.
+Associativity of the operator.
 
 ## Fold Expressions
 
@@ -129,14 +129,14 @@ int main() {
 
 Fold expressions support the following 32 binary operators [N4950 §7.6.1]:
 
-| Category   | Operators                                                                |
+| Category | Operators |
 | ---------- | ------------------------------------------------------------------------ |
-| Arithmetic | `+` `-` `*` `/` `%`                                                      |
-| Bitwise    | `&amp;` `\|` `^` `&lt;&lt;` `&gt;&gt;`                                   |
-| Logical    | `&&` `\|\|`                                                              |
-| Comparison | `==` `!=` `&lt;` `&gt;` `&lt;=` `&gt;=`                                  |
+| Arithmetic | `+` `-` `*` `/` `%` |
+| Bitwise | `&amp;` `\|` `^` `&lt;&lt;` `&gt;&gt;` |
+| Logical | `&&` `\|\|` |
+| Comparison | `==` `!=` `&lt;` `&gt;` `&lt;=` `&gt;=` |
 | Assignment | `=` `+=` `-=` `*=` `/=` `%=` `&amp;=` `\|=` `^=` `&lt;&lt;=` `&gt;&gt;=` |
-| Comma      | `,`                                                                      |
+| Comma | `,` |
 
 Note: the comma operator `,` has special behavior in folds (see below).
 
@@ -144,38 +144,38 @@ Note: the comma operator `,` has special behavior in folds (see below).
 
 For a pack $(e_1, e_2, e_3)$ and operator $\oplus$:
 
-| Fold Form    | Syntax                  | Expansion                                            | Example with `+`         |
+| Fold Form | Syntax | Expansion | Example with `+` |
 | ------------ | ----------------------- | ---------------------------------------------------- | ------------------------ |
-| Unary right  | `(pack op ...)`         | $e_1 \oplus (e_2 \oplus e_3)$                        | `(a + (b + c))`          |
-| Unary left   | `(... op pack)`         | $(e_1 \oplus e_2) \oplus e_3$                        | `((a + b) + c)`          |
+| Unary right | `(pack op ...)` | $e_1 \oplus (e_2 \oplus e_3)$ | `(a + (b + c))` |
+| Unary left | `(... op pack)` | $(e_1 \oplus e_2) \oplus e_3$ | `((a + b) + c)` |
 | Binary right | `(pack op ... op init)` | $e_1 \oplus (e_2 \oplus (e_3 \oplus \mathrm{init{}))$ | `(a + (b + (c + init)))` |
-| Binary left  | `(init op ... op pack)` | $((\mathrm{init{} \oplus e_1) \oplus e_2) \oplus e_3$ | `(((init + a) + b) + c)` |
+| Binary left | `(init op ... op pack)` | $((\mathrm{init{} \oplus e_1) \oplus e_2) \oplus e_3$ | `(((init + a) + b) + c)` |
 
 For a single-element pack $(e_1)$:
 
-| Fold Form    | Result                     |
+| Fold Form | Result |
 | ------------ | -------------------------- |
-| Unary right  | $e_1$                      |
-| Unary left   | $e_1$                      |
+| Unary right | $e_1$ |
+| Unary left | $e_1$ |
 | Binary right | $e_1 \oplus \mathrm{init{}$ |
-| Binary left  | $\mathrm{init{} \oplus e_1$ |
+| Binary left | $\mathrm{init{} \oplus e_1$ |
 
 For an empty pack `()`:
 
-| Fold Form    | Result                          | Operator-dependent   |
+| Fold Form | Result | Operator-dependent |
 | ------------ | ------------------------------- | -------------------- |
-| Unary right  | Operator identity or ill-formed | See empty pack table |
-| Unary left   | Operator identity or ill-formed | See empty pack table |
-| Binary right | `init`                          | Always well-defined  |
-| Binary left  | `init`                          | Always well-defined  |
+| Unary right | Operator identity or ill-formed | See empty pack table |
+| Unary left | Operator identity or ill-formed | See empty pack table |
+| Binary right | `init` | Always well-defined |
+| Binary left | `init` | Always well-defined |
 
 ### Choosing Between Left and Right Folds
 
-For **associative and commutative** operators (`+`, `*`, `&&`, `||`, `&amp;`, `|`), left and right
-folds produce the same result. The choice is a matter of taste.
+For **associative and commutative** operators (`+``*``&&``||``&amp;``|`), left and right
+Folds produce the same result. The choice is a matter of taste.
 
-For **non-associative** operators (`-`, `/`, `%`, `&lt;&lt;`, `&gt;&gt;`), the fold direction
-matters and produces different results:
+For **non-associative** operators (`-``/``%``&lt;&lt;``&gt;&gt;`), the fold direction
+Matters and produces different results:
 
 ```cpp
 #include <iostream>
@@ -196,30 +196,30 @@ int main() {
 ```
 
 **Guideline:** If the operator is not associative, explicitly choose the fold direction that matches
-the intended semantics. Document the expected associativity with a comment.
+The intended semantics. Document the expected associativity with a comment.
 
 ## Proof: Fold Expression Evaluation Order
 
 **Claim:** A unary right fold `(pack op ...)` expands to a right-associative expression tree, and a
-unary left fold `(... op pack)` expands to a left-associative expression tree.
+Unary left fold `(... op pack)` expands to a left-associative expression tree.
 
 **Proof for unary right fold:**
 
 By [N4950 §7.6.1], a unary right fold `(pack op ...)` with pack expansion $(e_1, e_2, \ldots, e_n)$
-is defined as:
+Is defined as:
 
 $$e_1 \oplus (e_2 \oplus (e_3 \oplus (\ldots \oplus e_n)))$$
 
 This can be proved by induction on the pack size $n$.
 
-**Base case** ($n = 1$): The fold `(e_1 op ...)` evaluates to `e_1`. This is trivially
-right-associative (no operator application).
+**Base case** ($n = 1$): The fold `(e_1 op ...)` evaluates to `e_1`. This is 
+Right-associative (no operator application).
 
-**Inductive step:** Assume the expansion holds for a pack of size $n$, producing:
+**Inductive step:** Assume the expansion holds for a pack of size $n$Producing:
 $e_1 \oplus (e_2 \oplus (\ldots \oplus e_n))$.
 
-For a pack of size $n + 1$, the Standard specifies that the first element is the left operand of the
-operator, and the remaining elements form the right operand via a nested fold:
+For a pack of size $n + 1$The Standard specifies that the first element is the left operand of the
+Operator, and the remaining elements form the right operand via a nested fold:
 $e_1 \oplus (\mathrm{fold of {} (e_2, \ldots, e_{n+1}))$.
 
 By the inductive hypothesis, the inner fold evaluates to
@@ -235,15 +235,15 @@ $(e_1, e_2, \ldots, e_n)$ expands to:
 $$(((e_1 \oplus e_2) \oplus e_3) \oplus \ldots) \oplus e_n$$
 
 The inductive structure is: the fold of the first $n$ elements forms the left operand, and $e_{n+1}$
-is the right operand. This produces a left-associative tree. $\blacksquare$
+Is the right operand. This produces a left-associative tree. $\blacksquare$
 
 **Corollary:** For an operator $\oplus$ that is not associative, left and right folds over the same
-pack produce different results. The programmer must choose the fold direction deliberately.
+Pack produce different results. The programmer must choose the fold direction deliberately.
 
 **Corollary:** The evaluation order of the operands within the fold follows the order of the
-parameter pack (left to right as declared), but the **tree structure** (the order in which operator
-applications are nested) depends on the fold direction. The operands are evaluated in pack order
-regardless of fold direction, but the operator precedence is determined by the tree structure.
+Parameter pack (left to right as declared), but the **tree structure** (the order in which operator
+Applications are nested) depends on the fold direction. The operands are evaluated in pack order
+Regardless of fold direction, but the operator precedence is determined by the tree structure.
 
 ## Unary Folds
 
@@ -318,7 +318,7 @@ int main() {
 ## Binary Folds
 
 Binary folds include an explicit initial value (`init`) that participates in the fold. The four
-forms are:
+Forms are:
 
 **Binary left fold** `(init op ... op pack)`:
 $$((\mathrm{init{} \oplus e_1) \oplus e_2) \oplus \ldots \oplus e_n$$
@@ -359,7 +359,7 @@ int main() {
 ### Binary Folds Guarantee Empty-Pack Safety
 
 Binary folds include an initial value, which means the fold is always well-defined even for empty
-packs. The expansion evaluates to the initial value when the pack is empty:
+Packs. The expansion evaluates to the initial value when the pack is empty:
 
 ```cpp
 #include <iostream>
@@ -392,17 +392,17 @@ int main() {
 
 The behavior of fold expressions with empty packs depends on the operator [N4950 §7.6.1]:
 
-| Operator   | Empty pack value (unary fold) | Notes                            |
+| Operator | Empty pack value (unary fold) | Notes |
 | ---------- | ----------------------------- | -------------------------------- |
-| `&&`       | `true`                        | Identity element for logical AND |
-| `\|\|`     | `false`                       | Identity element for logical OR  |
-| `,`        | `void()`                      | No-op                            |
-| All others | **Ill-formed**                | Must use binary fold with init   |
+| `&&` | `true` | Identity element for logical AND |
+| `\|\|` | `false` | Identity element for logical OR |
+| `,` | `void()` | No-op |
+| All others | **Ill-formed** | Must use binary fold with init |
 
 The identity element rule follows from the mathematical definition: for an operator $\oplus$ with
-identity element $e$, folding an empty sequence yields $e$. The logical operators `&&` and `||` have
-well-defined identity elements (`true` and `false` respectively), and the comma operator has the
-identity element `void()` (a no-op expression).
+Identity element $e$Folding an empty sequence yields $e$. The logical operators `&&` and `||` have
+Well-defined identity elements (`true` and `false` respectively), and the comma operator has the
+Identity element `void()` (a no-op expression).
 
 ```cpp
 #include <iostream>
@@ -437,17 +437,17 @@ int main() {
 }
 ```
 
-**Rationale for the three exceptions:** The Standard specifies identity elements only for `&&`,
-`||`, and `,` because these are the only operators where the identity element is unambiguous and
-type-independent. For `+`, the identity element depends on the type (`0` for integers, `""` for
-strings, `0.0` for doubles), so the Standard cannot choose one. For `*`, the identity element is
-`1`, but again, the type is unknown. The programmer must provide the initial value explicitly via a
-binary fold.
+**Rationale for the three exceptions:** The Standard specifies identity elements only for `&&`
+`||`And `,` because these are the only operators where the identity element is unambiguous and
+Type-independent. For `+`The identity element depends on the type (`0` for integers, `""` for
+Strings, `0.0` for doubles), so the Standard cannot choose one. For `*`The identity element is
+`1`But again, the type is unknown. The programmer must provide the initial value explicitly via a
+Binary fold.
 
 ## Fold with Comma Operator
 
 The comma operator is special in fold expressions. It evaluates each operand for its side effects
-and discards the values, making it ideal for "do something for each element" patterns:
+And discards the values, making it ideal for "do something for each element" patterns:
 
 ```cpp
 #include <iostream>
@@ -487,15 +487,15 @@ int main() {
 ```
 
 **Note on comma operator semantics:** The comma operator has a sequencing guarantee --- the left
-operand is fully evaluated before the right operand [N4950 §7.6.1]. This means that in a unary right
-fold `(expr1, (expr2, (expr3, ...)))`, the expressions are evaluated in order
+Operand is fully evaluated before the right operand [N4950 §7.6.1]. This means that in a unary right
+Fold `(expr1, (expr2, (expr3, ...)))`The expressions are evaluated in order
 $e_1, e_2, e_3, \ldots$ from left to right (the innermost expression is evaluated first within each
-pair, but the tree structure ensures left-to-right sequencing for the comma operator specifically).
+Pair, but the tree structure ensures left-to-right sequencing for the comma operator specifically).
 
 **Important caveat:** Do not confuse the comma operator fold with function argument lists. In
-`func(args...)`, the `args...` is a pack expansion, not a fold expression. The comma in a function
-call separates arguments; it is not the comma operator. The fold `(f(args), ...)` applies the comma
-operator to evaluate `f(args)` for each `args` element.
+`func(args...)`The `args...` is a pack expansion, not a fold expression. The comma in a function
+Call separates arguments; it is not the comma operator. The fold `(f(args), ...)` applies the comma
+Operator to evaluate `f(args)` for each `args` element.
 
 ## Fold with Logical Operators
 
@@ -541,10 +541,10 @@ int main() {
 
 ### Short-Circuit Evaluation in Folds
 
-The fold `(... && args)` evaluates left to right and short-circuits: if any element is `false`, the
-remaining elements are not evaluated. Similarly, `(... || args)` short-circuits on the first `true`
-element. This means that in a runtime fold, side effects after the short-circuit point are not
-executed.
+The fold `(... && args)` evaluates left to right and short-circuits: if any element is `false`The
+Remaining elements are not evaluated. Similarly, `(... || args)` short-circuits on the first `true`
+Element. This means that in a runtime fold, side effects after the short-circuit point are not
+Executed.
 
 ## Fold Expressions with Lambdas
 
@@ -594,7 +594,7 @@ int main() {
 ### Lambda-Based Accumulation Pattern
 
 When you need to accumulate a result across pack elements (beyond what simple operator folds
-provide), use a lambda that captures a reference to an accumulator:
+Provide), use a lambda that captures a reference to an accumulator:
 
 ```cpp
 #include <iostream>
@@ -618,7 +618,7 @@ int main() {
 ## Comparison with Recursive Template Patterns
 
 Before C++17 fold expressions, operating on parameter packs required manual recursion. Fold
-expressions eliminate the boilerplate:
+Expressions eliminate the boilerplate:
 
 ### Pre-C++17: Recursive Approach
 
@@ -675,15 +675,15 @@ int main() {
 ```
 
 The fold expression version is more concise, avoids the base-case boilerplate, and communicates
-intent more clearly. The recursive approach is still needed when the operation does not map cleanly
-to a binary fold operator.
+Intent more . The recursive approach is still needed when the operation does not map cleanly
+To a binary fold operator.
 
 ## Fold Expression Typing Rules
 
 The return type of a fold expression is determined by the operator and the types of the pack
-elements (and the initial value, for binary folds). For homogeneous packs, the result type is the
-common type. For heterogeneous packs, the usual arithmetic conversion rules apply. For binary folds
-with an initial value, the initial value participates in the type deduction.
+Elements (and the initial value, for binary folds). For homogeneous packs, the result type is the
+Common type. For heterogeneous packs, the usual arithmetic conversion rules apply. For binary folds
+With an initial value, the initial value participates in the type deduction.
 
 ```cpp
 #include <iostream>
@@ -707,12 +707,12 @@ int main() {
 ```
 
 **For comma folds:** The result type is `void` (the result of the comma operator). Comma folds are
-used purely for side effects.
+Used purely for side effects.
 
 ## Fold Expressions in Constraints
 
 Fold expressions are commonly used inside `requires`-expressions and concepts to express constraints
-over parameter packs:
+Over parameter packs:
 
 ```cpp
 #include <concepts>
@@ -757,8 +757,8 @@ int main() {
 ```
 
 Note the empty pack behavior in constraints: `(std::integral<Ts> && ...)` with an empty pack
-evaluates to `true` (the identity element for `&&`). This means `AllIntegral<>` is `true`. To
-require a non-empty pack, combine with `sizeof...(Ts) > 0`.
+Evaluates to `true` (the identity element for `&&`). This means `AllIntegral<>` is `true`. To
+Require a non-empty pack, combine with `sizeof...(Ts) > 0`.
 
 ## `hash_combine` with Fold Expressions
 
@@ -844,43 +844,51 @@ int main() {
 ## Common Pitfalls
 
 1. **Empty packs with non-identity operators.** A unary fold over `+` with an empty pack is
-   ill-formed. Always use a binary fold with an initial value (`0` for `+`, `1` for `*`) if the pack
-   might be empty.
+ ill-formed. Always use a binary fold with an initial value (`0` for `+``1` for `*`) if the pack
+ might be empty.
 
-2. **Non-associative operators.** Left and right folds over `-`, `/`, or `%` produce different
-   results. Be explicit about which fold direction you intend. For subtraction, a left fold
-   `(... - args)` computes $((a - b) - c)$ (conventional left-to-right), while a right fold
-   `(args - ...)` computes $a - (b - c)$ (alternating signs).
+2. **Non-associative operators.** Left and right folds over `-``/`Or `%` produce different
+ results. Be explicit about which fold direction you intend. For subtraction, a left fold
+ `(... - args)` computes $((a - b) - c)$ (conventional left-to-right), while a right fold
+ `(args - ...)` computes $a - (b - c)$ (alternating signs).
 
 3. **Comma fold discards values.** The comma operator evaluates for side effects only. If you need
-   to collect values, use a different approach (e.g., initializer list construction, or a lambda
-   that captures a reference to a container).
+ to collect values, use a different approach (e.g., initializer list construction, or a lambda
+ that captures a reference to a container).
 
 4. **Fold over `=` assignment operator.** While supported, assignment folds can be confusing. Prefer
-   comma folds with explicit assignment expressions. For example, `(x = args, ...)` is clearer than
-   `(x = ... = args)` (which is not valid syntax anyway --- assignment folds require the binary
-   form).
+ comma folds with explicit assignment expressions. For example, `(x = args, ...)` is clearer than
+ `(x = ... = args)` (which is not valid syntax anyway --- assignment folds require the binary
+ form).
 
 5. **Short-circuit evaluation.** Folds over `&&` and `||` preserve short-circuit semantics. If a
-   pack element causes a side effect (like throwing), later elements may not be evaluated. Be aware
-   of this when using folds for side-effect-heavy operations.
+ pack element causes a side effect (like throwing), later elements may not be evaluated. Be aware
+ of this when using folds for side-effect-heavy operations.
 
 6. **Fold expressions require a pack.** A fold expression must expand a parameter pack. You cannot
-   use a fold expression to "fold" over a container's elements (e.g., `(vec[i] + ...)` is not
-   valid). Use `std::accumulate` or a range-based algorithm for runtime containers.
+ use a fold expression to "fold" over a container's elements (e.g., `(vec[i] + ...)` is not
+ valid). Use `std::accumulate` or a range-based algorithm for runtime containers.
 
 7. **Operator precedence in complex fold expressions.** The fold expression has lower precedence
-   than most operators. If the pack expansion involves operators, parenthesize carefully:
-   `((a + b) * ...)` is not the same as `(a + (b * ...))`. Always wrap the pack expression in
-   parentheses when it contains operators.
+ than most operators. If the pack expansion involves operators, parenthesize carefully:
+ `((a + b) * ...)` is not the same as `(a + (b * ...))`. Always wrap the pack expression in
+ parentheses when it contains operators.
 
 8. **Binary fold with `&&` and `||` on empty packs.** While `(... && args)` on an empty pack yields
-   `true`, `(true && ... && args)` on an empty pack yields `true` (the init value). These agree, but
-   `(false && ... && args)` on an empty pack yields `false`. Choose the init value carefully to
-   match the intended semantics.
+ `true``(true && ... && args)` on an empty pack yields `true` (the init value). These agree, but
+ `(false && ... && args)` on an empty pack yields `false`. Choose the init value carefully to
+ match the intended semantics.
 
 ## See Also
 
 - [Parameter Packs and Variadic Templates](./1_parameter_packs.md)
 - [Compile-Time Branching (if constexpr)](./3_if_constexpr.md)
 - [Type Traits and Static Reflection Patterns](./4_type_traits.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -12,11 +12,11 @@ categories:
 ## Overview
 
 Network troubleshooting is a systematic process of isolating and identifying the root cause of
-connectivity, performance, or security issues. This section covers the primary tools used for
-network diagnostics on Linux systems and provides a methodology for approaching network problems.
+Connectivity, performance, or security issues. This section covers the primary tools used for
+Network diagnostics on Linux systems and provides a methodology for approaching network problems.
 
 The key principle is **start simple and work from layer 1 upward.** Do not jump to Wireshark before
-verifying that the cable is plugged in and the interface is up.
+Verifying that the cable is plugged in and the interface is up.
 
 ## Diagnostic Methodology
 
@@ -112,7 +112,7 @@ journalctl -u nginx --since "5 minutes ago"
 ## ping
 
 `ping` sends ICMP Echo Request messages and waits for ICMP Echo Reply messages. It tests basic
-reachability and measures round-trip time.
+Reachability and measures round-trip time.
 
 ### Basic Usage
 
@@ -136,14 +136,14 @@ ping -c 4 -s 1400 example.com
 ### TTL (Time to Live)
 
 The TTL field in the IP header is decremented by each router. When TTL reaches 0, the router sends
-an ICMP Time Exceeded message back to the source. The initial TTL reveals the operating system:
+An ICMP Time Exceeded message back to the source. The initial TTL reveals the operating system:
 
-| Initial TTL | OS                           |
+| Initial TTL | OS |
 | ----------- | ---------------------------- |
-| 64          | Linux, macOS, Android, iOS   |
-| 128         | Windows                      |
-| 255         | Cisco IOS, network equipment |
-| 254         | Some Solaris versions        |
+| 64 | Linux, macOS, Android, iOS |
+| 128 | Windows |
+| 255 | Cisco IOS, network equipment |
+| 254 | Some Solaris versions |
 
 ```bash
 # See TTL in ping output
@@ -164,20 +164,20 @@ ping -c 1 -t 1 8.8.8.8  # Will fail with "Time to live exceeded"
 
 Do not assume a host is down just because ping fails. Many networks block ICMP at firewalls. Use
 `nc -zv` or `curl` to test TCP connectivity as an alternative. ICMP blocking is common in cloud
-environments (AWS security groups do not allow ICMP by default).
+Environments (AWS security groups do not allow ICMP by default).
 
 :::
 
 ## traceroute / traceroute6
 
 `traceroute` discovers the path packets take to reach a destination by sending packets with
-incrementing TTL values. When a router decrements TTL to 0, it sends an ICMP Time Exceeded message,
-revealing the router's IP address.
+Incrementing TTL values. When a router decrements TTL to 0, it sends an ICMP Time Exceeded message,
+Revealing the router's IP address.
 
 ### ICMP vs UDP Probes
 
 Linux `traceroute` uses UDP probes by default (destination port 33434+). Windows `tracert` uses ICMP
-probes. Use `-I` for ICMP or `-T` for TCP probes on Linux.
+Probes. Use `-I` for ICMP or `-T` for TCP probes on Linux.
 
 ```bash
 # Standard traceroute (UDP probes)
@@ -214,18 +214,18 @@ traceroute to example.com (93.184.216.34), 30 hops max, 60 byte packets
  6  93.184.216.34 (93.184.216.34)  15.678 ms  14.567 ms  15.789 ms
 ```
 
-- `* * *`: The probe timed out. This usually means the router is configured to not respond to ICMP
-  Time Exceeded, or ICMP is filtered. It does **not** necessarily mean the packet is being dropped.
+- `* * *`: The probe timed out. This means the router is configured to not respond to ICMP
+ Time Exceeded, or ICMP is filtered. It does **not** necessarily mean the packet is being dropped.
 - High latency at a hop: The router may be slow to respond to ICMP Time Exceeded, but forwarding may
-  still be fast. Look at the latency of subsequent hops -- if they are normal, the high-latency hop
-  is just slow to respond to traceroute probes.
+ still be fast. Look at the latency of subsequent hops -- if they are normal, the high-latency hop
+ is just slow to respond to traceroute probes.
 - Increasing latency: May indicate congestion, a slow link, or a longer physical path.
 
 ## tcpdump
 
 `tcpdump` is the standard command-line packet capture tool. It uses BPF (Berkeley Packet Filter)
-expressions to filter captured packets and can capture packets for analysis or save them to a file
-for Wireshark.
+Expressions to filter captured packets and can capture packets for analysis or save them to a file
+For Wireshark.
 
 ### Basic Capture
 
@@ -252,7 +252,7 @@ tcpdump -i eth0 -tttt
 ### BPF Filter Expressions
 
 BPF expressions filter packets based on protocol fields. They are compiled to BPF bytecode and
-executed in the kernel for efficiency.
+Executed in the kernel for efficiency.
 
 ```bash
 # Capture traffic to/from a specific host
@@ -342,7 +342,7 @@ tcpdump -i eth0 -A -s 0 'tcp port 443 and (tcp[((tcp[12:1] & 0xf0) >> 2):1] = 0x
 ## Wireshark
 
 Wireshark is the graphical packet analysis tool. It reads pcap files captured by tcpdump or captures
-packets directly from a network interface.
+Packets directly from a network interface.
 
 ### Display Filters
 
@@ -402,9 +402,9 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0    # SYN only (not SYN-ACK)
 Wireshark can reassemble TCP streams into a readable format:
 
 - **Follow TCP Stream:** Right-click a TCP packet, select "Follow" -&gt; "TCP Stream." Shows the
-  full conversation in order.
+ full conversation in order.
 - **Follow TLS Stream:** Reassembles decrypted TLS data (requires the TLS session key or key log
-  file).
+ file).
 - **Follow HTTP Stream:** Reassembles HTTP request/response pairs.
 
 ### Statistics
@@ -436,7 +436,7 @@ curl https://example.com
 ## netcat (nc)
 
 `netcat` is a versatile networking utility for reading from and writing to network connections. It
-is often called the "TCP/IP Swiss army knife."
+Is often called the "TCP/IP Swiss army knife."
 
 ### Port Scanning
 
@@ -634,7 +634,7 @@ curl --retry 5 --retry-delay 2 --retry-max-time 60 https://example.com
 ## dig
 
 `dig` (Domain Information Groper) is the standard DNS query tool. It provides detailed DNS
-information and is more flexible than `nslookup`.
+Information and is more flexible than `nslookup`.
 
 ### Basic Queries
 
@@ -742,7 +742,7 @@ delv example.com
 ## nslookup
 
 `nslookup` is a simpler DNS query tool. It is less flexible than `dig` but is available on more
-systems (including Windows).
+Systems (including Windows).
 
 ```bash
 # Basic lookup
@@ -771,7 +771,7 @@ nslookup
 ## ss (Socket Statistics)
 
 `ss` replaces the older `netstat` command for examining network sockets. It is faster and provides
-more detailed information.
+More detailed information.
 
 ### Common Usage
 
@@ -825,9 +825,9 @@ ss -tanp
 ```
 
 - **Recv-Q:** For ESTABLISHED sockets, bytes in the receive buffer not yet read by the application.
-  For LISTEN sockets, the backlog (pending connections in the SYN queue).
+ For LISTEN sockets, the backlog (pending connections in the SYN queue).
 - **Send-Q:** For ESTABLISHED sockets, bytes in the send buffer not yet acknowledged by the peer.
-  For LISTEN sockets, the accept queue size (configured backlog).
+ For LISTEN sockets, the accept queue size (configured backlog).
 - **Process:** The process name, PID, and file descriptor that owns the socket.
 
 ### Debugging with ss
@@ -916,7 +916,7 @@ nmap --script ssl-enum-ciphers -p 443 192.168.1.100
 ## iperf3
 
 `iperf3` measures network throughput (bandwidth) between two hosts. One host runs as a server, the
-other as a client.
+Other as a client.
 
 ### Basic Usage
 
@@ -961,14 +961,14 @@ iperf3 -c 192.168.1.100 -J
 ```
 
 - **Bitrate &lt; expected:** Check for duplex mismatches, cable issues, NIC speed negotiation, or
-  congestion on the path.
+ congestion on the path.
 - **Significant retransmissions:** Packet loss on the path. Check with `ping` and `mtr`.
 - **High jitter (UDP):** Variable latency. Common on wireless links and congested networks.
 
 ## mtr (My Traceroute)
 
 `mtr` combines `ping` and `traceroute` into a single tool. It sends packets to every hop
-simultaneously and continuously updates the display, showing loss and latency at each hop.
+Simultaneously and continuously updates the display, showing loss and latency at each hop.
 
 ```bash
 # Standard mtr
@@ -1006,39 +1006,39 @@ Start: 2024-01-01T00:00:00+0000  HOST: example.com                        Loss% 
 ```
 
 - **Loss%:** Packet loss at that hop. Loss at intermediate hops that does not propagate to
-  subsequent hops is usually rate limiting of ICMP responses, not real packet loss.
+ subsequent hops is rate limiting of ICMP responses, not real packet loss.
 - **Last/Avg/Best/Worst:** Latency measurements. Look for sudden increases between hops.
 - **StDev:** Standard deviation of latency. High values indicate variable latency (jitter).
-- **???**: The hop is not responding. This is common and usually does not indicate a problem.
+- **???**: The hop is not responding. This is common and does not indicate a problem.
 
 ## Common Pitfalls
 
 1. **Capturing on the wrong interface.** On systems with multiple interfaces, `tcpdump -i any`
-   captures on all interfaces but may not show VLAN tags. Capture on the specific interface
-   (`tcpdump -i eth0`) for accurate results.
+ captures on all interfaces but may not show VLAN tags. Capture on the specific interface
+ (`tcpdump -i eth0`) for accurate results.
 
 2. **tcpdump dropping packets.** `tcpdump` may drop packets on high-throughput links because the
-   kernel buffer fills faster than userspace reads. Increase the buffer size with `-B` (buffer size
-   in bytes): `tcpdump -i eth0 -B 32768`. Use `-c` to limit the number of captured packets.
+ kernel buffer fills faster than userspace reads. Increase the buffer size with `-B` (buffer size
+ in bytes): `tcpdump -i eth0 -B 32768`. Use `-c` to limit the number of captured packets.
 
 3. **Confusing `ss` Recv-Q for established vs listening sockets.** For ESTABLISHED sockets, Recv-Q
-   is unread data. For LISTEN sockets, Recv-Q is the SYN backlog (pending connections). High Recv-Q
-   on LISTEN means the server is not accepting connections fast enough.
+ is unread data. For LISTEN sockets, Recv-Q is the SYN backlog (pending connections). High Recv-Q
+ on LISTEN means the server is not accepting connections fast enough.
 
 4. **nmap timing and IDS.** Default nmap scans can be slow. Use `-T4` or `-T5` for faster scans in
-   trusted environments. Aggressive scanning can trigger IDS/IPS alerts.
+ trusted environments. Aggressive scanning can trigger IDS/IPS alerts.
 
 5. **iperf3 single-stream vs multi-stream.** A single TCP stream is limited by congestion control.
-   Multi-stream tests (`-P 8`) can saturate higher-bandwidth links but do not represent real
-   application behavior. Use the appropriate number of streams for your workload.
+ Multi-stream tests (`-P 8`) can saturate higher-bandwidth links but do not represent real
+ application behavior. Use the appropriate number of streams for your workload.
 
 6. **Forgetting to check MTU.** MTU mismatches cause fragmented packets and "path MTU black holes"
-   when ICMP Fragmentation Needed messages are filtered. Test with:
-   `ping -c 3 -M do -s 1472 example.com` (1472 + 28 bytes IP+ICMP header = 1500 bytes). If this
-   fails, reduce the size until it succeeds to find the actual path MTU.
+ when ICMP Fragmentation Needed messages are filtered. Test with:
+ `ping -c 3 -M do -s 1472 example.com` (1472 + 28 bytes IP+ICMP header = 1500 bytes). If this
+ fails, reduce the size until it succeeds to find the actual path MTU.
 
 7. **DNS caching interfering with diagnostics.** When troubleshooting DNS, flush the resolver cache
-   to ensure you are testing against the authoritative server:
+ to ensure you are testing against the authoritative server:
 
 ```bash
 # Linux (systemd-resolved)
@@ -1056,5 +1056,13 @@ dig +trace example.com
 ```
 
 8. **Trusting tool output blindly.** Always verify with multiple tools. If `ping` fails but `curl`
-   succeeds, ICMP is filtered. If `dig` returns an IP but `curl` fails, there may be a firewall
-   blocking TCP. Cross-reference symptoms across tools and layers to isolate the root cause.
+ succeeds, ICMP is filtered. If `dig` returns an IP but `curl` fails, there may be a firewall
+ blocking TCP. Cross-reference symptoms across tools and layers to isolate the root cause.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

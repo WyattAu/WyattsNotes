@@ -25,7 +25,7 @@ $$(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4$$
 
 $$(x - 3)^2 + (y + 2)^2 = 25$$
 
-Centre: $(3,\; -2)$, Radius: $5$.
+Centre: $(3,\; -2)$Radius: $5$.
 
 ---
 
@@ -49,7 +49,7 @@ $$y + 1 = -x + 4$$
 
 $$y = -x + 3$$
 
-or $x + y - 3 = 0$.
+Or $x + y - 3 = 0$.
 
 ---
 
@@ -63,7 +63,7 @@ Find the length of the tangent from the point $P(8, 3)$ to the circle $x^2 + y^2
 
 Complete the square: $(x - 2)^2 + (y - 3)^2 = 4$.
 
-Centre $C = (2, 3)$, radius $r = 2$.
+Centre $C = (2, 3)$Radius $r = 2$.
 
 Distance from $P$ to $C$: $PC = \sqrt{(8-2)^2 + (3-3)^2} = \sqrt{36} = 6$.
 
@@ -175,9 +175,9 @@ $OA = OB = OC = 1$ (all on unit circle).
 
 Angle $AOB$: $\angle AOB$ where $A = (1, 0)$ and $B = (0, 1)$.
 
-$\cos \angle AOB = \dfrac{\vec{OA} \cdot \vec{OB}}{|OA||OB|} = \dfrac{0 + 0}{1} = 0$, so $\angle AOB = 90°$.
+$\cos \angle AOB = \dfrac{\vec{OA} \cdot \vec{OB}}{|OA||OB|} = \dfrac{0 + 0}{1} = 0$So $\angle AOB = 90°$.
 
-For an equilateral triangle inscribed in a circle, each angle is $60°$. But $\angle AOB = 90° \neq 60°$, so there is **no** equilateral triangle with vertices $A$, $B$, $C$ all on the unit circle.
+For an equilateral triangle inscribed in a circle, each angle is $60°$. But $\angle AOB = 90° \neq 60°$So there is **no** equilateral triangle with vertices $A$$B$$C$ all on the unit circle.
 
 This tests the misconception of assuming any three points on a circle can form an equilateral triangle.
 
@@ -187,7 +187,7 @@ This tests the misconception of assuming any three points on a circle can form a
 
 **Question:**
 
-The parabola $y = x^2 - 4x + 7$ has vertex $V$. Find the coordinates of $V$, and the equation of the axis of symmetry. If the parabola is reflected in the $y$-axis, find the equation of the reflected parabola.
+The parabola $y = x^2 - 4x + 7$ has vertex $V$. Find the coordinates of $V$And the equation of the axis of symmetry. If the parabola is reflected in the $y$-axis, find the equation of the reflected parabola.
 
 **Solution:**
 
@@ -211,7 +211,7 @@ The reflected parabola has vertex $(-2, 3)$ and axis $x = -2$.
 
 **Question:**
 
-$A(3, -1)$, $B(7, 5)$, and $C(11, -1)$ are three points.
+$A(3, -1)$$B(7, 5)$And $C(11, -1)$ are three points.
 
 (a) Show that triangle $ABC$ is isosceles. (2 marks)
 (b) Find the area of triangle $ABC$. (3 marks)
@@ -224,7 +224,7 @@ $BC = \sqrt{(11-7)^2 + (-1-5)^2} = \sqrt{16 + 36} = \sqrt{52} = 2\sqrt{13}$.
 
 $AC = \sqrt{(11-3)^2 + (-1-(-1))^2} = \sqrt{64} = 8$.
 
-Since $AB = BC$, triangle $ABC$ is isosceles.
+Since $AB = BC$Triangle $ABC$ is isosceles.
 
 (b) Base $AC = 8$. Height is the perpendicular from $B$ to $AC$.
 
@@ -264,7 +264,7 @@ Centre: $\left(\dfrac{7}{3},\; \dfrac{14}{3}\right)$.
 
 Radius squared: $\left(\dfrac{7}{3} - 1\right)^2 + \left(\dfrac{14}{3} - 3\right)^2 = \dfrac{16}{9} + \dfrac{25}{9} = \dfrac{41}{9}$.
 
-Equation: $\left(x - \dfrac{7}{3}\right)^2 + \left(y - \dfrac{14}{3}\right)^2 = \dfrac{41}{9}$, or $9x^2 + 9y^2 - 42x - 84y + 128 = 0$.
+Equation: $\left(x - \dfrac{7}{3}\right)^2 + \left(y - \dfrac{14}{3}\right)^2 = \dfrac{41}{9}$Or $9x^2 + 9y^2 - 42x - 84y + 128 = 0$.
 
 ---
 
@@ -302,9 +302,9 @@ Find the acute angle between the lines $3x - y + 2 = 0$ and $x + 2y - 7 = 0$.
 
 **Solution:**
 
-Line 1: $3x - y + 2 = 0 \implies y = 3x + 2$, slope $m_1 = 3$.
+Line 1: $3x - y + 2 = 0 \implies y = 3x + 2$Slope $m_1 = 3$.
 
-Line 2: $x + 2y - 7 = 0 \implies y = -\dfrac{1}{2}x + \dfrac{7}{2}$, slope $m_2 = -\dfrac{1}{2}$.
+Line 2: $x + 2y - 7 = 0 \implies y = -\dfrac{1}{2}x + \dfrac{7}{2}$Slope $m_2 = -\dfrac{1}{2}$.
 
 $$\tan \theta = \left|\frac{m_1 - m_2}{1 + m_1 m_2}\right| = \left|\frac{3 - (-1/2)}{1 + 3(-1/2)}\right| = \left|\frac{7/2}{1 - 3/2}\right| = \left|\frac{7/2}{-1/2}\right| = 7$$
 
@@ -359,9 +359,9 @@ Circle $C_1$: $x^2 + y^2 - 4x - 6y + 9 = 0$. Circle $C_2$: $x^2 + y^2 + 6x + 2y 
 
 **Solution:**
 
-(a) $C_1$: $(x-2)^2 + (y-3)^2 = 4$. Centre $O_1 = (2, 3)$, $r_1 = 2$.
+(a) $C_1$: $(x-2)^2 + (y-3)^2 = 4$. Centre $O_1 = (2, 3)$$r_1 = 2$.
 
-$C_2$: $(x+3)^2 + (y+1)^2 = 25$. Centre $O_2 = (-3, -1)$, $r_2 = 5$.
+$C_2$: $(x+3)^2 + (y+1)^2 = 25$. Centre $O_2 = (-3, -1)$$r_2 = 5$.
 
 (b) Distance between centres:
 
@@ -371,7 +371,7 @@ Sum of radii: $r_1 + r_2 = 2 + 5 = 7$.
 
 $\sqrt{41} \neq 7$ ($\sqrt{41} \approx 6.4$), so $C_1$ and $C_2$ do NOT touch externally.
 
-In fact, $O_1 O_2 = \sqrt{41} < 7 = r_1 + r_2$, so the circles **overlap** (intersect at two points).
+In fact, $O_1 O_2 = \sqrt{41} < 7 = r_1 + r_2$So the circles **overlap** (intersect at two points).
 
 ---
 
@@ -389,19 +389,19 @@ Slope of $AB$: $m = \dfrac{-1-5}{4-(-2)} = \dfrac{-6}{6} = -1$.
 
 Slope of perpendicular bisector: $m_{\perp} = 1$.
 
-Equation: $y - 2 = 1(x - 1) \implies y = x + 1$, or $x - y + 1 = 0$.
+Equation: $y - 2 = 1(x - 1) \implies y = x + 1$Or $x - y + 1 = 0$.
 
 ---
 
 ## Common Pitfalls
 
-1. **Incorrect sign when completing the square in circle equations.** When completing the square for $x^2 - 6x$, the result is $(x - 3)^2 - 9$, not $(x - 3)^2 + 9$. Remember: you add and subtract the same quantity. Always verify by expanding back.
+1. **Incorrect sign when completing the square in circle equations.** When completing the square for $x^2 - 6x$The result is $(x - 3)^2 - 9$Not $(x - 3)^2 + 9$. Remember: you add and subtract the same quantity. Always verify by expanding back.
 
-2. **Forgetting to square the distance formula.** When equating distances (e.g. for a locus problem), square both sides immediately to avoid messy square roots. A common error is trying to work with $\sqrt{\ldots} = \sqrt{\ldots}$ without squaring.
+2. **Forgetting to square the distance formula.** When equating distances (e.g. For a locus problem), square both sides immediately to avoid messy square roots. A common error is trying to work with $\sqrt{\ldots} = \sqrt{\ldots}$ without squaring.
 
-3. **Confusing the radius with the diameter in circle equations.** The standard form $(x - h)^2 + (y - k)^2 = r^2$ gives the radius squared on the right side. If the equation is $(x-h)^2 + (y-k)^2 = d^2$, then $d$ is the diameter, not the radius.
+3. **Confusing the radius with the diameter in circle equations.** The standard form $(x - h)^2 + (y - k)^2 = r^2$ gives the radius squared on the right side. If the equation is $(x-h)^2 + (y-k)^2 = d^2$Then $d$ is the diameter, not the radius.
 
-4. **Wrong slope for perpendicular lines.** If a line has slope $m$, the perpendicular line has slope $-\dfrac{1}{m}$, not $\dfrac{1}{m}$. This sign error is extremely common in DSE.
+4. **Wrong slope for perpendicular lines.** If a line has slope $m$The perpendicular line has slope $-\dfrac{1}{m}$Not $\dfrac{1}{m}$. This sign error is extremely common in DSE.
 
 5. **Not considering both intersection points of line and circle.** When a line intersects a circle, there can be 0, 1 (tangent), or 2 intersection points. Always check the discriminant of the resulting quadratic.
 
@@ -423,7 +423,7 @@ The equation of a circle $C$ is $x^2 + y^2 + 4x - 10y + 20 = 0$.
 
 $(x + 2)^2 + (y - 5)^2 = 9$.
 
-Centre $= (-2, 5)$, Radius $= 3$.
+Centre $= (-2, 5)$Radius $= 3$.
 
 (b) The tangent at $(-1, 5)$ is perpendicular to the radius from $(-2, 5)$ to $(-1, 5)$.
 
@@ -443,7 +443,7 @@ The line $L: y = mx + 1$ intersects the circle $x^2 + y^2 = 9$ at two distinct p
 
 (a) Show that $(1 + m^2)x^2 + 2mx - 8 = 0$. (2 marks)
 (b) Find the range of values of $m$ for which $L$ intersects the circle at two distinct points. (3 marks)
-(c) For $m = 1$, find the length of the chord of intersection. (3 marks)
+(c) For $m = 1$Find the length of the chord of intersection. (3 marks)
 
 **Solution:**
 
@@ -459,13 +459,13 @@ $(1 + m^2)x^2 + 2mx - 8 = 0$.
 
 $\Delta = (2m)^2 - 4(1+m^2)(-8) = 4m^2 + 32(1 + m^2) = 4m^2 + 32 + 32m^2 = 36m^2 + 32$.
 
-Since $36m^2 + 32 > 0$ for all real $m$, the line always intersects the circle at two distinct points for all $m$.
+Since $36m^2 + 32 > 0$ for all real $m$The line always intersects the circle at two distinct points for all $m$.
 
 (c) For $m = 1$: $(1 + 1)x^2 + 2x - 8 = 0 \implies 2x^2 + 2x - 8 = 0 \implies x^2 + x - 4 = 0$.
 
 $x = \dfrac{-1 \pm \sqrt{1 + 16}}{2} = \dfrac{-1 \pm \sqrt{17}}{2}$.
 
-$y$-coordinates: $y = x + 1$, so $y = \dfrac{1 \pm \sqrt{17}}{2}$.
+$y$-coordinates: $y = x + 1$So $y = \dfrac{1 \pm \sqrt{17}}{2}$.
 
 Chord length $= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2} = \sqrt{(\sqrt{17})^2 + (\sqrt{17})^2} = \sqrt{34}$.
 
@@ -495,13 +495,13 @@ $x + y - 7 = 0$.
 
 (b) Check $(3, 4)$: $3 + 4 - 7 = 0$. Yes, it lies on the locus.
 
-(c) The locus is the perpendicular bisector of the segment $AB$, which is a straight line.
+(c) The locus is the perpendicular bisector of the segment $AB$Which is a straight line.
 
 ---
 
 ### DSE-4
 
-The vertices of a triangle are $A(0, 0)$, $B(8, 0)$, and $C(4, 6)$.
+The vertices of a triangle are $A(0, 0)$$B(8, 0)$And $C(4, 6)$.
 
 (a) Find the equation of the median from $C$ to $AB$. (2 marks)
 (b) Find the equation of the altitude from $A$ to $BC$. (3 marks)
@@ -517,7 +517,7 @@ Median from $C(4, 6)$ to $M(4, 0)$: this is a vertical line $x = 4$.
 
 Slope of altitude from $A$: $m_{\perp} = \dfrac{2}{3}$.
 
-Equation: $y - 0 = \dfrac{2}{3}(x - 0) \implies y = \dfrac{2}{3}x$, or $2x - 3y = 0$.
+Equation: $y - 0 = \dfrac{2}{3}(x - 0) \implies y = \dfrac{2}{3}x$Or $2x - 3y = 0$.
 
 (c) Intersection of $x = 4$ and $2x - 3y = 0$: $2(4) - 3y = 0 \implies y = \dfrac{8}{3}$.
 
@@ -535,13 +535,13 @@ $C_1: (x-1)^2 + (y+2)^2 = 25$ and $C_2: (x-7)^2 + (y-4)^2 = 9$.
 
 **Solution:**
 
-(a) Centres: $O_1 = (1, -2)$, $O_2 = (7, 4)$.
+(a) Centres: $O_1 = (1, -2)$$O_2 = (7, 4)$.
 
 $O_1 O_2 = \sqrt{(7-1)^2 + (4-(-2))^2} = \sqrt{36 + 36} = \sqrt{72} = 6\sqrt{2}$.
 
-(b) $r_1 = 5$, $r_2 = 3$.
+(b) $r_1 = 5$$r_2 = 3$.
 
-$|r_1 - r_2| = 2$, $r_1 + r_2 = 8$.
+$|r_1 - r_2| = 2$$r_1 + r_2 = 8$.
 
 $2 < 6\sqrt{2} < 8$ (since $6\sqrt{2} \approx 8.49$), so actually $O_1 O_2 > r_1 + r_2$.
 

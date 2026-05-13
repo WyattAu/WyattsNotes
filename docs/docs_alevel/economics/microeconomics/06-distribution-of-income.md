@@ -15,14 +15,14 @@ sidebar_position: 6
 ### 1.1 The Lorenz Curve
 
 The **Lorenz curve** plots the cumulative proportion of total income received by the cumulative
-proportion of the population, ordered from poorest to richest.
+Proportion of the population, ordered from poorest to richest.
 
 Let the population be divided into quintiles (five equal groups of 20%). If the income shares are
-$(s_1, s_2, s_3, s_4, s_5)$ where $\sum s_i = 1$, the cumulative shares are:
+$(s_1, s_2, s_3, s_4, s_5)$ where $\sum s_i = 1$The cumulative shares are:
 
 $$L_k = \sum_{i=1}^{k} s_i, \quad k = 1, 2, 3, 4, 5$$
 
-The Lorenz curve passes through points $(0.2, L_1)$, $(0.4, L_2)$, $(0.6, L_3)$, $(0.8, L_4)$,
+The Lorenz curve passes through points $(0.2, L_1)$$(0.4, L_2)$$(0.6, L_3)$$(0.8, L_4)$
 $(1, 1)$.
 
 - The **line of perfect equality** is the 45° line from $(0,0)$ to $(1,1)$
@@ -32,7 +32,7 @@ $(1, 1)$.
 
 $$G = \frac{A}{A + B}$$
 
-where $A$ = area between the 45° line and the Lorenz curve, $B$ = area under the Lorenz curve.
+Where $A$ = area between the 45° line and the Lorenz curve, $B$ = area under the Lorenz curve.
 
 Since the total area under the 45° line is $\frac{1}{2}$:
 
@@ -43,20 +43,20 @@ $p_k = k/5$:
 
 $$B = \sum_{k=1}^{5} \frac{(L_{k-1} + L_k)(p_k - p_{k-1})}{2}$$
 
-where $L_0 = 0$, $p_0 = 0$.
+Where $L_0 = 0$$p_0 = 0$.
 
 $$G = 1 - 2B$$
 
-| Gini Coefficient   | Interpretation      |
+| Gini Coefficient | Interpretation |
 | ------------------ | ------------------- |
-| $G = 0$            | Perfect equality    |
-| $G = 1$            | Maximum inequality  |
-| $G < 0.3$          | Relatively equal    |
+| $G = 0$ | Perfect equality |
+| $G = 1$ | Maximum inequality |
+| $G < 0.3$ | Relatively equal |
 | $0.3 \leq G < 0.4$ | Moderate inequality |
-| $G \geq 0.4$       | High inequality     |
+| $G \geq 0.4$ | High inequality |
 
 :::info
-info
+Info
 
 - Denmark: 0.28 | Germany: 0.31 | UK: 0.35 | USA: 0.40 | Brazil: 0.52 | South Africa: 0.63
 :::
@@ -64,64 +64,64 @@ info
 ### 1.3 Limitations of the Gini Coefficient
 
 1. **Insensitive to changes at different parts of the distribution**: a transfer from a rich person
-   to a very rich person doesn't change $G$
+ to a very rich person doesn't change $G$
 2. **Doesn't capture absolute poverty**: a country can have a low Gini but widespread poverty
 3. **Different Lorenz curves can have the same Gini**: the Gini is a summary statistic that may mask
-   important distributional details
+ important distributional details
 4. **Doesn't account for non-market benefits**: public services, in-kind transfers
 
 ### 1.4 Other Measures
 
 - **Palma ratio**: ratio of the top 10%'s income share to the bottom 40%'s income share. More
-  sensitive to changes at the extremes.
+ sensitive to changes at the extremes.
 - **Theil index**: an entropy-based measure that decomposes inequality into within-group and
-  between-group components.
+ between-group components.
 - **Percentile ratios**: e.g., 90/10 ratio (income at the 90th percentile ÷ income at the 10th
-  percentile).
+ percentile).
 - **Income quintile share ratio** (S80/S20): total income of the top 20% ÷ total income of the
-  bottom 20%.
+ bottom 20%.
 
 ## 2. Causes of Inequality
 
 ### 2.1 Market Forces
 
 1. **Differences in human capital**: education, skills, experience $\Rightarrow$ different MRP
-   $\Rightarrow$ different wages
+ $\Rightarrow$ different wages
 2. **Differences in natural ability and talent**: some individuals are born with attributes that
-   command higher wages
+ command higher wages
 3. **Inheritance of wealth**: intergenerational transfer of assets creates persistent inequality
 4. **Discrimination**: taste-based and statistical discrimination reduce wages for certain groups
 5. **Labour market institutions**: declining union membership, minimum wage levels, deregulation
 6. **Technological change**: skill-biased technological change (computers, automation) increases
-   demand for skilled workers relative to unskilled workers $\Rightarrow$ wage inequality
+ demand for skilled workers relative to unskilled workers $\Rightarrow$ wage inequality
 7. **Globalisation**: trade with low-wage countries reduces demand for unskilled labour in developed
-   economies
+ economies
 
 ### 2.2 Wealth Inequality vs Income Inequality
 
-**Wealth inequality** is typically much greater than income inequality. Wealth is more concentrated
-because:
+**Wealth inequality** is much greater than income inequality. Wealth is more concentrated
+Because:
 
 - Wealth is accumulated over a lifetime (and across generations) while income is measured annually
 - Returns on wealth (interest, dividends, capital gains) generate more wealth
 - Inheritance concentrates wealth in fewer hands
 
 **Thomas Piketty (2014)**: if the rate of return on capital ($r$) exceeds the rate of economic
-growth ($g$), i.e., $r > g$, then wealth inequality will tend to increase over time. Historically,
-$r \approx 4\mathrm{--}5\%$ while $g \approx 1\mathrm{--}2\%$, suggesting growing inequality.
+Growth ($g$), i.e., $r > g$Then wealth inequality will tend to increase over time. Historically,
+$r \approx 4\mathrm{--}5\%$ while $g \approx 1\mathrm{--}2\%$Suggesting growing inequality.
 
 ### 2.3 Global Inequality
 
 Global inequality (inequality between all individuals worldwide) has _declined_ since the 1980s,
-primarily due to rapid growth in China and India. However, inequality _within_ most countries has
-increased.
+Primarily due to rapid growth in China and India. However, inequality _within_ most countries has
+Increased.
 
 ## 3. Poverty
 
 ### 3.1 Definitions
 
 **Absolute poverty**: a condition where individuals cannot afford basic necessities (food, shelter,
-clothing). The World Bank defines extreme absolute poverty as living on less than $2.15 per day
+Clothing). The World Bank defines extreme absolute poverty as living on less than $2.15 per day
 (2017 PPP).
 
 **Relative poverty**: a condition where individuals have significantly less income than the median.
@@ -134,7 +134,7 @@ $$\mathrm{Relative poverty line} = 0.6 \times \mathrm{median household income}$$
 - **Headcount ratio**: proportion of the population below the poverty line
 - **Poverty gap**: how far below the poverty line the average poor person falls
 - **Sen Index (Sen, 1976)**: combines the headcount ratio, poverty gap, and income distribution
-  among the poor
+ among the poor
 
 ## 4. Policies to Reduce Inequality
 
@@ -147,7 +147,7 @@ $$\frac{dT}{dY} > \frac{T}{Y}$$
 For a progressive tax system:
 
 - The **marginal tax rate** (MTR) $= \frac{dT}{dY}$ exceeds the **average tax rate** (ATR)
-  $= \frac{T}{Y}$
+ $= \frac{T}{Y}$
 - As income rises, ATR rises (by definition of progressivity)
 
 **Example**: UK income tax (2024-25):
@@ -158,12 +158,12 @@ For a progressive tax system:
 - Additional rate: 45% on above £125,140
 
 **Effective marginal tax rate (EMTR)**: the total rate at which additional income is taxed when all
-benefits and means-tested withdrawals are included.
+Benefits and means-tested withdrawals are included.
 
 $$\mathrm{EMTR} = \mathrm{income tax MTR} + \mathrm{NI MTR} + \mathrm{benefit withdrawal rate}$$
 
 High EMTRs (poverty traps) occur when means-tested benefits are withdrawn as income rises, creating
-disincentives to work.
+Disincentives to work.
 
 **Regressive taxation**: ATR falls as income rises (e.g., VAT at a flat rate takes a larger
 _proportion_ of low-income households' spending).
@@ -176,27 +176,27 @@ $$\frac{dT}{dY} < \frac{T}{Y}$$
 
 - **Universal benefits**: paid to all (e.g., state pension, NHS) — no poverty trap but costly
 - **Means-tested benefits**: targeted at low-income households (e.g., Universal Credit) — more
-  efficient but create poverty traps
+ efficient but create poverty traps
 - **In-kind transfers**: provision of goods/services rather than cash (e.g., free school meals,
-  social housing)
+ social housing)
 
 ### 4.3 Minimum Wage
 
 As discussed in Topic 5, a minimum wage compresses the wage distribution from below, reducing
-earnings inequality among the employed.
+Earnings inequality among the employed.
 
 ### 4.4 Education and Training
 
 Investment in human capital can reduce inequality by raising the productivity (and hence wages) of
-lower-skilled workers. However, if access to education is itself unequal, it may _reinforce_
-inequality.
+Lower-skilled workers. However, if access to education is itself unequal, it may _reinforce_
+Inequality.
 
 ## 5. The Equity-Efficiency Trade-Off
 
 ### 5.1 Okun's Leaky Bucket
 
 Arthur Okun (1975) argued that redistributing income from the rich to the poor involves "leaky
-bucket" losses:
+Bucket" losses:
 
 1. **Administrative costs**: collecting taxes and distributing benefits requires bureaucracy
 2. **Disincentive effects**: high taxes may reduce work effort, saving, and investment
@@ -204,7 +204,7 @@ bucket" losses:
 4. **Deadweight loss**: distortionary taxes create inefficiency
 
 The key insight: there is a trade-off between equity (fairness) and efficiency (maximising total
-output). More redistribution $\Rightarrow$ less total income to redistribute.
+Output). More redistribution $\Rightarrow$ less total income to redistribute.
 
 ### 5.2 The Laffer Curve
 
@@ -212,14 +212,14 @@ The **Laffer curve** illustrates the relationship between the tax rate and tax r
 
 $$T = t \times Y(t)$$
 
-where $t$ is the tax rate and $Y(t)$ is the tax base (income), which declines as $t$ increases (due
-to disincentive effects). At $t = 0$, $T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
-exists some $t^* \in (0, 1)$ that maximises revenue.
+Where $t$ is the tax rate and $Y(t)$ is the tax base (income), which declines as $t$ increases (due
+To disincentive effects). At $t = 0$$T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
+Exists some $t^* \in (0, 1)$ that maximises revenue.
 
 :::warning
 Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
 $t^*$ lies. Most empirical estimates for developed economies suggest that income tax rates are below
-the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
+The revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
 :::
 
 ### 5.3 Evaluating the Trade-Off
@@ -227,12 +227,12 @@ the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
 **Arguments that equity and efficiency can be complementary:**
 
 - Redistribution can improve health and education for the poor, increasing their productivity and
-  economic growth
+ economic growth
 - High inequality may reduce aggregate demand (the rich save more, the poor spend more of marginal
-  income)
+ income)
 - Extreme inequality can lead to social unrest, reducing investment and growth
 - Equality of opportunity (access to education) can enhance efficiency by allowing talent to
-  flourish regardless of background
+ flourish regardless of background
 
 **Arguments that the trade-off is real:**
 
@@ -242,7 +242,7 @@ the revenue-maximising rate, meaning tax cuts would _reduce_ revenue.
 
 :::tip
 Exam Technique When asked to evaluate inequality policies, consider: effectiveness (does it
-reduce inequality?), efficiency (does it create disincentives?), equity (is it fair?), fiscal cost
+Reduce inequality?), efficiency (does it create disincentives?), equity (is it fair?), fiscal cost
 (can the government afford it?), and unintended consequences (does it create poverty traps?).
 :::
 
@@ -261,15 +261,15 @@ reduce inequality?), efficiency (does it create disincentives?), equity (is it f
 - Government failure: inefficient targeting, bureaucratic waste, corruption
 - Poverty traps from means-testing
 - Redistribution may not address the _root causes_ of inequality (discrimination, unequal
-  opportunity)
+ opportunity)
 - Globalisation limits the effectiveness of national redistributive policies (mobile capital, tax
-  competition)
+ competition)
 
 :::info
 Board-Specific Note AQA requires detailed knowledge of the Lorenz curve and Gini
-coefficient, including calculations. Edexcel emphasises poverty measures and government policy. CIE
-covers inequality in the context of development economics. OCR (A) links distribution to market
-failure and government intervention.
+Coefficient, including calculations. Edexcel emphasises poverty measures and government policy. CIE
+Covers inequality in the context of development economics. OCR (A) links distribution to market
+Failure and government intervention.
 :::
 
 ## 7. Formal Derivations
@@ -277,7 +277,7 @@ failure and government intervention.
 ### 7.1 Derivation of the Gini Coefficient from the Lorenz Curve
 
 Let $L(p)$ be the Lorenz function, mapping the cumulative population proportion $p \in [0,1]$ to the
-cumulative income proportion. The line of perfect equality is $L(p) = p$.
+Cumulative income proportion. The line of perfect equality is $L(p) = p$.
 
 The area between the line of equality and the Lorenz curve is:
 
@@ -296,14 +296,14 @@ Substituting the integral form of $B$:
 $$\boxed{G = 1 - 2\int_0^1 L(p)\,dp}$$
 
 _Verification for discrete data._ Given cumulative shares $L_k$ at population proportions
-$p_k = k/n$, the trapezoidal approximation gives
-$B = \sum_{k=1}^{n} \frac{(L_{k-1} + L_k)(p_k - p_{k-1})}{2}$, which is the formula used in
-practice. For perfect equality ($L(p) = p$): $B = \int_0^1 p\,dp = \frac{1}{2}$, so $G = 0$. For
-maximum inequality ($L(p) = 0$ for $p < 1$, $L(1) = 1$): $B = 0$, so $G = 1$.
+$p_k = k/n$The trapezoidal approximation gives
+$B = \sum_{k=1}^{n} \frac{(L_{k-1} + L_k)(p_k - p_{k-1})}{2}$Which is the formula used in
+Practice. For perfect equality ($L(p) = p$): $B = \int_0^1 p\,dp = \frac{1}{2}$So $G = 0$. For
+Maximum inequality ($L(p) = 0$ for $p < 1$$L(1) = 1$): $B = 0$So $G = 1$.
 
 ### 7.2 Derivation of Lorenz Curve Properties
 
-**Proposition:** The Lorenz curve $L(p)$ satisfies: (i) $L(0) = 0$, (ii) $L(1) = 1$, (iii)
+**Proposition:** The Lorenz curve $L(p)$ satisfies: (i) $L(0) = 0$(ii) $L(1) = 1$(iii)
 $L'(p) \geq 0$ (monotonically non-decreasing), and (iv) $L(p) \leq p$ (convexity to the 45° line).
 
 _Proof._
@@ -317,15 +317,15 @@ Define $p = F(y)$ (the population proportion earning up to income $y$). Then:
 
 $$L(p) = \frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\int_0^y t \cdot f(t)\,dt$$
 
-where $\mu$ is mean income. Differentiating with respect to $p$ using $dp = f(y)\,dy$:
+Where $\mu$ is mean income. Differentiating with respect to $p$ using $dp = f(y)\,dy$:
 
 $$L'(p) = \frac{dL}{dp} = \frac{dL/dy}{dp/dy} = \frac◆LB◆y \cdot f(y)◆RB◆◆LB◆f(y)◆RB◆ = y \geq 0$$
 
-Since income $y \geq 0$, the Lorenz curve is monotonically non-decreasing. $\blacksquare$
+Since income $y \geq 0$The Lorenz curve is monotonically non-decreasing. $\blacksquare$
 
 (iv) From (iii), $L'(p) = y \leq \mu$ for the bottom $p$ proportion (since the poorest individuals
-earn less than or equal to the mean). Therefore $\frac{dL}{dp} \leq \frac{dp}{dp} = 1$, which
-implies $L(p) \leq p$ by integration from 0. Equality holds only under perfect equality.
+Earn less than or equal to the mean). Therefore $\frac{dL}{dp} \leq \frac{dp}{dp} = 1$Which
+Implies $L(p) \leq p$ by integration from 0. Equality holds only under perfect equality.
 $\blacksquare$
 
 $$\boxed{L(0) = 0, \quad L(1) = 1, \quad L'(p) = y(p) \geq 0, \quad L(p) \leq p}$$
@@ -341,8 +341,8 @@ Cumulative shares: (0.2, 0.05), (0.4, 0.15), (0.6, 0.30), (0.8, 0.55), (1.0, 1.0
 </details>
 
 **Problem 2.** A flat tax of 20% is proposed to replace the current progressive system. Explain why
-a flat tax is regressive when measured against _spending_ rather than income, even though it is
-proportional against income.
+A flat tax is regressive when measured against _spending_ rather than income, even though it is
+Proportional against income.
 
 <details>
 <summary>Hint</summary>
@@ -350,8 +350,8 @@ Low-income households spend a larger proportion of their income (sometimes more 
 </details>
 
 **Problem 3.** The median household income in a country is £30,000. The relative poverty line is 60%
-of median income. A household has income of £16,000. Is this household in relative poverty? If the
-median income rises to £35,000 but the household's income stays at £16,000, what happens?
+Of median income. A household has income of £16,000. Is this household in relative poverty? If the
+Median income rises to £35,000 but the household's income stays at £16,000, what happens?
 
 <details>
 <summary>Hint</summary>
@@ -359,9 +359,9 @@ Poverty line = $0.6 \times 30\,000 = £18\,000$. The household at £16,000 is in
 </details>
 
 **Problem 4.** A worker earns £40,000 and faces income tax at 20% and National Insurance at 12%. She
-also receives Universal Credit of £5,000, which is withdrawn at a rate of 55p for every extra £1
-earned. Calculate her effective marginal tax rate. How much does she keep from an extra £1,000
-earned?
+Also receives Universal Credit of £5,000, which is withdrawn at a rate of 55p for every extra £1
+Earned. Calculate her effective marginal tax rate. How much does she keep from an extra £1,000
+Earned?
 
 <details>
 <summary>Hint</summary>
@@ -369,7 +369,7 @@ EMTR = 20% (income tax) + 12% (NI) + 55% (benefit withdrawal) = 87%. From an ext
 </details>
 
 **Problem 5.** Using Piketty's framework ($r > g$), explain why wealth inequality tends to increase
-over time. Under what conditions might this trend be reversed?
+Over time. Under what conditions might this trend be reversed?
 
 <details>
 <summary>Hint</summary>
@@ -385,7 +385,7 @@ Inevitable: markets reward productivity differences, which reflect education, ef
 </details>
 
 **Problem 7.** Compare the advantages and disadvantages of universal vs means-tested benefits as
-tools for reducing poverty.
+Tools for reducing poverty.
 
 <details>
 <summary>Hint</summary>
@@ -393,7 +393,7 @@ Universal: advantages — no stigma, no poverty trap, universal coverage, simple
 </details>
 
 **Problem 8.** A country has a Gini coefficient of 0.25 for income but 0.65 for wealth. Explain why
-wealth is more unequally distributed than income, and discuss the implications for social mobility.
+Wealth is more unequally distributed than income, and discuss the implications for social mobility.
 
 <details>
 <summary>Hint</summary>
@@ -401,7 +401,7 @@ Wealth is accumulated over lifetimes and generations; income is measured annuall
 </details>
 
 **Problem 9.** Evaluate the argument that globalisation has increased inequality within developed
-countries.
+Countries.
 
 <details>
 <summary>Hint</summary>
@@ -422,34 +422,34 @@ Education addresses the *root cause* (productivity differences) rather than the 
 
 **Example.** A country has six income groups (sextiles) with the following shares of total income:
 
-| Group       | Population share | Income share |
+| Group | Population share | Income share |
 | ----------- | ---------------- | ------------ |
-| Poorest 1/6 | 16.7%            | 3%           |
-| 2nd 1/6     | 16.7%            | 7%           |
-| 3rd 1/6     | 16.7%            | 12%          |
-| 4th 1/6     | 16.7%            | 18%          |
-| 5th 1/6     | 16.7%            | 25%          |
-| Richest 1/6 | 16.7%            | 35%          |
+| Poorest 1/6 | 16.7% | 3% |
+| 2nd 1/6 | 16.7% | 7% |
+| 3rd 1/6 | 16.7% | 12% |
+| 4th 1/6 | 16.7% | 18% |
+| 5th 1/6 | 16.7% | 25% |
+| Richest 1/6 | 16.7% | 35% |
 
 **Answer.** Cumulative population and income shares:
 
 | Cumulative population | Cumulative income |
 | --------------------- | ----------------- |
-| 16.7%                 | 3%                |
-| 33.3%                 | 10%               |
-| 50.0%                 | 22%               |
-| 66.7%                 | 40%               |
-| 83.3%                 | 65%               |
-| 100%                  | 100%              |
+| 16.7% | 3% |
+| 33.3% | 10% |
+| 50.0% | 22% |
+| 66.7% | 40% |
+| 83.3% | 65% |
+| 100% | 100% |
 
 The Lorenz curve passes through these points. The significant bow below the 45-degree line indicates
-substantial inequality. The bottom half of the population earns only 22% of total income.
+Substantial inequality. The bottom half of the population earns only 22% of total income.
 
 ### 9.2 Comparing Two Lorenz Curves
 
 If country A's Lorenz curve is everywhere closer to the 45-degree line than country B's, then
-country A has unambiguously lower inequality. If the curves cross, the comparison is ambiguous: one
-country may have less inequality at the bottom of the distribution but more at the top.
+Country A has unambiguously lower inequality. If the curves cross, the comparison is ambiguous: one
+Country may have less inequality at the bottom of the distribution but more at the top.
 
 ## 10. Gini Coefficient: Extended Calculation
 
@@ -458,7 +458,7 @@ country may have less inequality at the bottom of the distribution but more at t
 **Example.** Income quintile shares: bottom 20% = 6%, second 20% = 11%, third 20% = 16%, fourth 20%
 = 23%, top 20% = 44%. Calculate the Gini coefficient.
 
-**Answer.** Cumulative shares: $(0.2, 0.06)$, $(0.4, 0.17)$, $(0.6, 0.33)$, $(0.8, 0.56)$,
+**Answer.** Cumulative shares: $(0.2, 0.06)$$(0.4, 0.17)$$(0.6, 0.33)$$(0.8, 0.56)$
 $(1.0, 1.0)$.
 
 Using the trapezoidal rule for $B$ (area under the Lorenz curve):
@@ -474,69 +474,69 @@ A Gini of $0.352$ indicates moderate inequality, comparable to the UK.
 ### 10.2 Effect of a Transfer on the Gini Coefficient
 
 **Example.** Suppose the government transfers $£5\,000$ from a person in the top quintile to a
-person in the bottom quintile. The bottom quintile share rises from 6% to 7%, and the top quintile
-share falls from 44% to 43%. Recalculate $G$.
+Person in the bottom quintile. The bottom quintile share rises from 6% to 7%, and the top quintile
+Share falls from 44% to 43%. Recalculate $G$.
 
-**Answer.** New cumulative shares: $(0.2, 0.07)$, $(0.4, 0.18)$, $(0.6, 0.34)$, $(0.8, 0.57)$,
+**Answer.** New cumulative shares: $(0.2, 0.07)$$(0.4, 0.18)$$(0.6, 0.34)$$(0.8, 0.57)$
 $(1.0, 1.0)$.
 
 $$B = 0.2 \times (0.035 + 0.125 + 0.260 + 0.455 + 0.785) = 0.2 \times 1.660 = 0.332$$
 
 $$G = 1 - 2(0.332) = 0.336$$
 
-The Gini coefficient falls from $0.352$ to $0.336$, confirming that progressive redistribution
-reduces measured inequality.
+The Gini coefficient falls from $0.352$ to $0.336$Confirming that progressive redistribution
+Reduces measured inequality.
 
 ## 11. Causes of Income Inequality: Extended Analysis
 
 ### 11.1 Demand-Side Factors
 
 1. **Skill-biased technological change**: Automation and digitalisation increase demand for highly
-   skilled workers (software engineers, data scientists) while reducing demand for routine manual
-   and cognitive tasks. This widens the wage gap between skilled and unskilled workers.
+ skilled workers (software engineers, data scientists) while reducing demand for routine manual
+ and cognitive tasks. This widens the wage gap between skilled and unskilled workers.
 
 2. **Globalisation**: Trade with low-wage countries reduces demand for unskilled manufacturing
-   labour in developed economies (Stolper-Samuelson theorem). Capital mobility allows firms to
-   relocate production, putting downward pressure on domestic wages.
+ labour in developed economies (Stolper-Samuelson theorem). Capital mobility allows firms to
+ relocate production, putting downward pressure on domestic wages.
 
 3. **Rise of the super-star economy**: Technology enables the most talented individuals to capture
-   global markets (e.g., top musicians, athletes, entrepreneurs), leading to winner-takes-all
-   outcomes.
+ global markets (e.g., top musicians, athletes, entrepreneurs), leading to winner-takes-all
+ outcomes.
 
 ### 11.2 Supply-Side Factors
 
 1. **Unequal access to education**: Quality of schooling varies dramatically by postcode and income.
-   Children from affluent families attend better schools, receive private tutoring, and have greater
-   access to extracurricular activities.
+ Children from affluent families attend better schools, receive private tutoring, and have greater
+ access to extracurricular activities.
 
 2. **Intergenerational wealth transfers**: Inheritance allows the wealthy to pass on advantages
-   (housing, capital, networks) to their children, perpetuating inequality across generations.
+ (housing, capital, networks) to their children, perpetuating inequality across generations.
 
 3. **Declining union membership**: Union density has fallen in most developed economies since the
-   1980s, reducing workers' bargaining power and compressing the wage distribution less effectively.
+ 1980s, reducing workers' bargaining power and compressing the wage distribution less effectively.
 
 ### 11.3 Institutional Factors
 
 1. **Tax policy**: Reductions in top income tax rates since the 1980s have increased post-tax
-   inequality.
+ inequality.
 
 2. **Minimum wage**: If the minimum wage does not keep pace with the cost of living, the lowest
-   earners fall further behind.
+ earners fall further behind.
 
 3. **Financial deregulation**: The growth of the financial sector has created highly paid jobs for a
-   small number of workers, contributing to top-end inequality.
+ small number of workers, contributing to top-end inequality.
 
 ## 12. Poverty Traps and the Welfare System
 
 ### 12.1 The Poverty Trap Mechanism
 
 A **poverty trap** occurs when the effective marginal tax rate (EMTR) on additional income is so
-high that work does not significantly increase net income. When means-tested benefits are withdrawn
-as earnings rise, the combined effect of income tax, National Insurance, and benefit withdrawal can
-create EMTRs exceeding 80%.
+High that work does not significantly increase net income. When means-tested benefits are withdrawn
+As earnings rise, the combined effect of income tax, National Insurance, and benefit withdrawal can
+Create EMTRs exceeding 80%.
 
 **Example.** A single parent earning $£15\,000$ receives $£8\,000$ in means-tested benefits. For
-every extra $£1$ earned:
+Every extra $£1$ earned:
 
 - Income tax: 20% ($£0.20$)
 - National Insurance: 12% ($£0.12$)
@@ -549,66 +549,66 @@ This creates almost no financial incentive to increase working hours or seek hig
 ### 12.2 Universal Credit and Taper Rates
 
 Universal Credit (UK) uses a single taper rate of 55% (as of 2024), meaning benefits are withdrawn
-at 55p for every extra $£1$ earned above the work allowance. This simplifies the system but still
-creates high EMTRs when combined with income tax and National Insurance.
+At 55p for every extra $£1$ earned above the work allowance. This simplifies the system but still
+Creates high EMTRs when combined with income tax and National Insurance.
 
 ## 13. Government Redistribution Policies: Extended Analysis
 
 ### 13.1 The Full Redistribution Toolkit
 
-| Policy                 | Mechanism                                  | Effect on Inequality                    | Potential Drawbacks                               |
+| Policy | Mechanism | Effect on Inequality | Potential Drawbacks |
 | ---------------------- | ------------------------------------------ | --------------------------------------- | ------------------------------------------------- |
-| Progressive income tax | Higher rates on higher incomes             | Reduces post-tax inequality             | Disincentive to work and invest                   |
-| Means-tested benefits  | Target transfers to the poor               | Reduces poverty directly                | Creates poverty traps, stigma                     |
-| Universal basic income | Flat payment to all adults                 | Reduces poverty without traps           | Very expensive, may reduce work incentive         |
-| Wealth tax             | Annual tax on net wealth above a threshold | Reduces wealth concentration            | Difficult to administer, capital flight           |
-| Inheritance tax        | Tax on wealth transferred at death         | Reduces intergenerational inequality    | Unpopular, avoidance through trusts               |
-| Free education         | State-funded schooling and university      | Promotes equality of opportunity        | Quality varies, regressive if richer benefit more |
-| National minimum wage  | Floor on hourly pay                        | Compresses wage distribution from below | May reduce employment if set too high             |
+| Progressive income tax | Higher rates on higher incomes | Reduces post-tax inequality | Disincentive to work and invest |
+| Means-tested benefits | Target transfers to the poor | Reduces poverty directly | Creates poverty traps, stigma |
+| Universal basic income | Flat payment to all adults | Reduces poverty without traps | Very expensive, may reduce work incentive |
+| Wealth tax | Annual tax on net wealth above a threshold | Reduces wealth concentration | Difficult to administer, capital flight |
+| Inheritance tax | Tax on wealth transferred at death | Reduces intergenerational inequality | Unpopular, avoidance through trusts |
+| Free education | State-funded schooling and university | Promotes equality of opportunity | Quality varies, regressive if richer benefit more |
+| National minimum wage | Floor on hourly pay | Compresses wage distribution from below | May reduce employment if set too high |
 
 ### 13.2 Evaluating Effectiveness
 
 The most effective redistribution strategies combine **predistribution** (reducing inequality before
-tax, through education, minimum wages, and competition policy) with **redistribution** (taxing and
-transferring after market incomes are determined). Over-reliance on either alone is less effective:
+Tax, through education, minimum wages, and competition policy) with **redistribution** (taxing and
+Transferring after market incomes are determined). Over-reliance on either alone is less effective:
 
 - Pure predistribution without redistribution leaves those unable to work (disabled, retired,
-  unemployed) without support
+ unemployed) without support
 - Pure redistribution without predistribution requires very high tax rates, creating large
-  deadweight losses
+ deadweight losses
 
 ## 14. Common Pitfalls
 
 1. **Confusing income and wealth inequality.** Wealth is far more unequally distributed than income.
-   A country with moderate income inequality may have extreme wealth inequality. Policies that
-   address income (progressive tax) may not address wealth (inheritance tax, wealth tax).
+ A country with moderate income inequality may have extreme wealth inequality. Policies that
+ address income (progressive tax) may not address wealth (inheritance tax, wealth tax).
 
 2. **Assuming a lower Gini always means a better outcome.** A lower Gini achieved by making everyone
-   equally poor is not desirable. The goal is to reduce inequality while maintaining (or increasing)
-   average incomes.
+ equally poor is not desirable. The goal is to reduce inequality while maintaining (or increasing)
+ average incomes.
 
 3. **Ignoring the difference between absolute and relative poverty.** A country can have very low
-   absolute poverty but high relative poverty. Policies to address each are different: absolute
-   poverty requires economic growth and direct transfers; relative poverty requires reducing the
-   income gap.
+ absolute poverty but high relative poverty. Policies to address each are different: absolute
+ poverty requires economic growth and direct transfers; relative poverty requires reducing the
+ income gap.
 
 4. **Overstating the poverty trap.** While high EMTRs exist, empirical evidence suggests that most
-   people still respond to financial incentives. The poverty trap is a real but often exaggerated
-   problem.
+ people still respond to financial incentives. The poverty trap is a real but often exaggerated
+ problem.
 
 5. **Treating the Gini coefficient as a complete measure.** The Gini is insensitive to changes at
-   different parts of the distribution. Two countries with the same Gini can have very different
-   income distributions (e.g., one with a large underclass, another with a small elite).
+ different parts of the distribution. Two countries with the same Gini can have very different
+ income distributions (e.g., one with a large underclass, another with a small elite).
 
 6. **Assuming redistribution necessarily reduces growth.** The equity-efficiency trade-off is real
-   but not absolute. Moderate redistribution (funding education, healthcare, infrastructure) can
-   enhance long-run growth by improving human capital and social stability.
+ but not absolute. Moderate redistribution (funding education, healthcare, infrastructure) can
+ enhance long-run growth by improving human capital and social stability.
 
 ## 15. Extension Problem Set
 
 **Problem 1.** A country has income quintile shares: 4%, 9%, 15%, 24%, 48%. Calculate the Gini
-coefficient. If a policy transfers income to equalise the bottom two quintiles (both at 6.5%), what
-is the new Gini?
+Coefficient. If a policy transfers income to equalise the bottom two quintiles (both at 6.5%), what
+Is the new Gini?
 
 <details>
 <summary>Hint</summary>
@@ -616,8 +616,8 @@ Cumulative: (0.2, 0.04), (0.4, 0.13), (0.6, 0.28), (0.8, 0.52), (1.0, 1.0). $B =
 </details>
 
 **Problem 2.** Explain why the Palma ratio may be a better measure of inequality than the Gini
-coefficient when comparing countries with similar middle-income shares but different extreme-income
-shares.
+Coefficient when comparing countries with similar middle-income shares but different extreme-income
+Shares.
 
 <details>
 <summary>Hint</summary>
@@ -625,16 +625,16 @@ The Palma ratio (top 10% / bottom 40%) focuses on the tails of the distribution 
 </details>
 
 **Problem 3.** A worker earns $£25\,000$ and faces income tax at 20%, National Insurance at 12%,
-and has Universal Credit withdrawn at 55%. Calculate the EMTR. How much does she keep from an extra
+And has Universal Credit withdrawn at 55%. Calculate the EMTR. How much does she keep from an extra
 $£200$ per month?
 
 <details>
 <summary>Hint</summary>
-EMTR $= 20 + 12 + 55 = 87\%$. From $£200$: tax $= £40$, NI $= £24$, UC withdrawal $= £110$. Net gain $= 200 - 40 - 24 - 110 = £26$. She keeps 13%. This is a severe poverty trap.
+EMTR $= 20 + 12 + 55 = 87\%$. From $£200$: tax $= £40$NI $= £24$UC withdrawal $= £110$. Net gain $= 200 - 40 - 24 - 110 = £26$. She keeps 13%. This is a severe poverty trap.
 </details>
 
 **Problem 4.** "A universal basic income would eliminate poverty without creating disincentives to
-work." Evaluate this statement.
+Work." Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
@@ -642,12 +642,12 @@ UBI eliminates the poverty trap (no means-testing, zero marginal withdrawal rate
 </details>
 
 **Problem 5.** Using Piketty's framework ($r > g$), explain why wealth inequality has increased in
-most developed economies since the 1980s. Discuss two policy responses and their potential
-effectiveness.
+Most developed economies since the 1980s. Discuss two policy responses and their potential
+Effectiveness.
 
 <details>
 <summary>Hint</summary>
-Since the 1980s, $r$ (return on capital: 4-6%) has consistently exceeded $g$ (economic growth: 1-3%) in developed economies. This means capital income grows faster than labour income, concentrating wealth among capital owners. Contributing factors: financial deregulation (increasing $r$), tax cuts on capital gains and inheritance (reducing the effective tax on $r$), slower productivity growth (reducing $g$). Policy responses: (1) Wealth tax: directly taxes accumulated capital, but faces valuation challenges and capital flight. Effective if well-designed and internationally coordinated. (2) Inheritance tax: prevents intergenerational concentration, but is easily avoided through trusts and gifts. (3) Progressive capital gains tax: aligns tax rates on capital income with labour income, reducing the $r - g$ gap. Most administratively feasible option.
+Since the 1980s, $r$ (return on capital: 4-6%) has consistently exceeded $g$ (economic growth: 1-3%) in developed economies. This means capital income grows faster than labour income, concentrating wealth among capital owners. Contributing factors: financial deregulation (increasing $r$), tax cuts on capital gains and inheritance (reducing the effective tax on $r$), slower productivity growth (reducing $g$). Policy responses: (1) Wealth tax: directly taxes accumulated capital, but faces valuation challenges and capital flight. Effective if well-designed and internationally coordinated. (2) Inheritance tax: prevents intergenerational concentration, but is avoided through trusts and gifts. (3) Progressive capital gains tax: aligns tax rates on capital income with labour income, reducing the $r - g$ gap. Most administratively feasible option.
 </details>
 
 ## 16. Advanced Topics in Inequality
@@ -660,13 +660,13 @@ While the Gini coefficient is the most widely used inequality measure, it has im
 
 $$\text{Palma} = \frac{S_{90}}{S_{40}}$$
 
-where $S_{90}$ is the income share of the top 10% and $S_{40}$ is the income share of the bottom 40%. The rationale is that the "middle" 50% of the income distribution (between the 40th and 90th percentiles) is relatively stable across countries and over time, at approximately 50% of total income. Therefore, changes in overall inequality are driven almost entirely by changes at the tails.
+Where $S_{90}$ is the income share of the top 10% and $S_{40}$ is the income share of the bottom 40%. The rationale is that the "middle" 50% of the income distribution (between the 40th and 90th percentiles) is relatively stable across countries and over time, at approximately 50% of total income. Therefore, changes in overall inequality are driven almost entirely by changes at the tails.
 
 **Worked example.** Country A has a top 10% share of 45% and a bottom 40% share of 10%. Country B has a top 10% share of 25% and a bottom 40% share of 18%.
 
 Palma(A) $= 45/10 = 4.5$. Palma(B) $= 25/18 = 1.39$.
 
-Country A has dramatically higher inequality, concentrated at the top and bottom. The Gini coefficient might not capture this distinction as clearly.
+Country A has dramatically higher inequality, concentrated at the top and bottom. The Gini coefficient might not capture this distinction as .
 
 **The S90/S10 ratio** compares the income at the 90th percentile to the income at the 10th percentile. In the UK (2023), this ratio is approximately 5.5, meaning someone at the 90th percentile earns 5.5 times more than someone at the 10th percentile.
 
@@ -690,7 +690,7 @@ The argument: early industrialisation draws labour from agriculture to industry,
 
 $$\text{IGE} = \frac◆LB◆\partial \ln(Y_{child})◆RB◆◆LB◆\partial \ln(Y_{parent})◆RB◆$$
 
-If IGE $= 0.5$, a 10% increase in parental income is associated with a 5% increase in the child's income. Higher IGE means less mobility.
+If IGE $= 0.5$A 10% increase in parental income is associated with a 5% increase in the child's income. Higher IGE means less mobility.
 
 The **Great Gatsby Curve** plots IGE against the Gini coefficient across countries. The positive correlation suggests that more unequal countries have less intergenerational mobility. Countries like Denmark (low Gini, low IGE) achieve both equality and mobility; countries like the US (high Gini, high IGE) achieve neither.
 
@@ -744,7 +744,7 @@ The UBI eliminates the poverty trap entirely. However, the fiscal cost is enormo
 - Progressive taxation provides immediate relief but may create disincentives. Education investment addresses causes but takes decades.
 - The two policies are complementary, not substitutes. Optimal: use taxation to fund education.
 - The Nordic model combines high progressive taxation with free universal education and healthcare, achieving both low inequality and high mobility.
-- However, the Nordic model requires high tax compliance, social trust, and cultural acceptance of redistribution -- not easily transferable.
+- However, the Nordic model requires high tax compliance, social trust, and cultural acceptance of redistribution -- not transferable.
 - Globalisation limits the effectiveness of progressive taxation (mobile capital and high earners can relocate).
 - Conclusion: a balanced approach using both is superior to relying on either alone.
 
@@ -912,7 +912,7 @@ Total deduction: 870.
 **Gini for wealth:** approximately 0.74.
 
 **Key observations:**
-- The top 10% hold 12.9% of wealth but earn only 44% of income (this is wrong, let me correct: top 10% hold $100 - 87.1 = 12.9\%$ of wealth). Actually the top decile holds $100 - 87.1 = 12.9\%$. Let me reconsider the data. The top 10% typically hold approximately 45% of wealth in the UK.
+- The top 10% hold 12.9% of wealth but earn only 44% of income (this is wrong, let me correct: top 10% hold $100 - 87.1 = 12.9\%$ of wealth). Actually the top decile holds $100 - 87.1 = 12.9\%$. Let me reconsider the data. The top 10% hold approximately 45% of wealth in the UK.
 
 The wealth distribution is far more unequal than the income distribution. The bottom 50% own only 10.1% of wealth but earn 20% of income. The top 10% own approximately 45% of wealth but earn approximately 30% of income.
 
@@ -1113,3 +1113,7 @@ AHC poverty rate is higher than BHC because housing costs reduce disposable inco
 - Iran (2010): a universal cash transfer of approximately USD 40/month to all households, funded by oil revenue. The programme reduced poverty by 10 percentage points and inequality (Gini fell from 0.44 to 0.38) before being eroded by inflation and fiscal pressure.
 
 These experiments suggest that UBI is most effective in developing countries (where the cash transfer represents a large share of income) and less transformative in developed countries (where it is too small to replace existing welfare systems). The political economy challenge is that the level of UBI needed to replace existing benefits in developed countries is fiscally very expensive.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

@@ -22,10 +22,10 @@ Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
 
 The nervous system contains three functional types of neurone:
 
-| Type                        | Structure                              | Function                                            |
+| Type | Structure | Function |
 | --------------------------- | -------------------------------------- | --------------------------------------------------- |
-| Sensory (afferent) neurone  | Long axon; cell body in ganglion near CNS | Carries impulses from receptors to the CNS         |
-| Motor (efferent) neurone    | Cell body in CNS; long axon to effector | Carries impulses from CNS to effectors (muscles, glands) |
+| Sensory (afferent) neurone | Long axon; cell body in ganglion near CNS | Carries impulses from receptors to the CNS |
+| Motor (efferent) neurone | Cell body in CNS; long axon to effector | Carries impulses from CNS to effectors (muscles, glands) |
 | Relay (intermediate) neurone | Short axon; cell body entirely within CNS | Connects sensory and motor neurones within the CNS |
 
 **Structural features common to all neurones:**
@@ -44,10 +44,10 @@ Myelination has two critical effects:
 1. **Electrical insulation**: the myelin sheath prevents ion leakage across the membrane, maintaining the potential difference along the axon.
 2. **Saltatory conduction**: action potentials jump from node to node (the only places where the axon membrane is exposed to the extracellular fluid), dramatically increasing the speed of transmission.
 
-| Feature            | Myelinated Neurone                 | Non-Myelinated Neurone       |
+| Feature | Myelinated Neurone | Non-Myelinated Neurone |
 | ------------------ | ---------------------------------- | ---------------------------- |
-| Speed              | $15$--$120\ \mathrm{m\ s^{-1}}$    | $0.5$--$2\ \mathrm{m\ s^{-1}}$ |
-| Conduction         | Saltatory (jumping between nodes)  | Continuous wave of depolarisation |
+| Speed | $15$--$120\ \mathrm{m\ s^{-1}}$ | $0.5$--$2\ \mathrm{m\ s^{-1}}$ |
+| Conduction | Saltatory (jumping between nodes) | Continuous wave of depolarisation |
 | Energy consumption | Lower (fewer ions need to be pumped) | Higher (more $\mathrm{Na^+/K^+}$ pump activity) |
 
 :::warning
@@ -68,10 +68,10 @@ The **resting potential** is the electrical potential difference across the memb
 
 This creates two concentration gradients:
 
-| Ion           | Extracellular Concentration | Intracellular Concentration | Gradient              |
+| Ion | Extracellular Concentration | Intracellular Concentration | Gradient |
 | ------------- | --------------------------- | --------------------------- | --------------------- |
-| $\mathrm{Na^+}$ | $\approx 145\ \mathrm{mmol\ dm^{-3}}$ | $\approx 12\ \mathrm{mmol\ dm^{-3}}$ | Outward (10:1)     |
-| $\mathrm{K^+}$  | $\approx 4\ \mathrm{mmol\ dm^{-3}}$  | $\approx 155\ \mathrm{mmol\ dm^{-3}}$ | Inward (40:1)      |
+| $\mathrm{Na^+}$ | $\approx 145\ \mathrm{mmol\ dm^{-3}}$ | $\approx 12\ \mathrm{mmol\ dm^{-3}}$ | Outward (10:1) |
+| $\mathrm{K^+}$ | $\approx 4\ \mathrm{mmol\ dm^{-3}}$ | $\approx 155\ \mathrm{mmol\ dm^{-3}}$ | Inward (40:1) |
 
 The resting membrane is much more permeable to $\mathrm{K^+}$ than to $\mathrm{Na^+}$ (due to more $\mathrm{K^+}$ leak channels). $\mathrm{K^+}$ diffuses out of the cell down its concentration gradient, carrying positive charge with it. This makes the inside negative relative to the outside. The resting potential is close to the equilibrium potential for $\mathrm{K^+}$ (approximately $-90\ \mathrm{mV}$), but is slightly less negative (around $-70\ \mathrm{mV}$) because of a small inward leak of $\mathrm{Na^+}$.
 
@@ -81,7 +81,7 @@ The equilibrium potential for an ion is given by the Nernst equation:
 
 $$E = \frac{RT}{zF} \ln\frac◆LB◆[\text{ion}]_{\text{out}}◆RB◆◆LB◆[\text{ion}]_{\text{in}}◆RB◆$$
 
-where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T$ is temperature in Kelvin, $z$ is the ion's charge, and $F = 96485\ \mathrm{C\ mol^{-1}}$.
+Where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$$T$ is temperature in Kelvin, $z$ is the ion's charge, and $F = 96485\ \mathrm{C\ mol^{-1}}$.
 
 At body temperature ($37\ ^\circ\mathrm{C} = 310\ \mathrm{K}$):
 
@@ -89,19 +89,19 @@ $$E_{\mathrm{K}} = \frac◆LB◆8.314 \times 310◆RB◆◆LB◆1 \times 96485�
 
 $$E_{\mathrm{Na}} = \frac◆LB◆8.314 \times 310◆RB◆◆LB◆1 \times 96485◆RB◆ \ln\frac{145}{12} = 0.0267 \times \ln(12.08) = 0.0267 \times 2.49 = +66.5\ \mathrm{mV}$$
 
-The actual resting potential ($-70\ \mathrm{mV}$) lies between $E_{\mathrm{K}}$ and $E_{\mathrm{Na}}$, weighted by the relative permeabilities.
+The actual resting potential ($-70\ \mathrm{mV}$) lies between $E_{\mathrm{K}}$ and $E_{\mathrm{Na}}$Weighted by the relative permeabilities.
 
 ## 3. Action Potentials
 
 ### 3.1 Depolarisation and the All-or-Nothing Principle
 
-An action potential is a rapid reversal of the membrane potential from approximately $-70\ \mathrm{mV}$ to approximately $+40\ \mathrm{mV}$, followed by a return to the resting potential.
+An action potential is a rapid reversal of the membrane potential from approximately $-70\ \mathrm{mV}$ to approximately $+40\ \mathrm{mV}$Followed by a return to the resting potential.
 
 **Stages of the action potential:**
 
 1. **Depolarisation**: a stimulus causes voltage-gated $\mathrm{Na^+}$ channels to open. $\mathrm{Na^+}$ ions rush into the axon down their electrochemical gradient (attracted by the negative interior and by the higher external concentration). The membrane potential rapidly depolarises from $-70\ \mathrm{mV}$ to $+40\ \mathrm{mV}$.
 
-2. **Repolarisation**: at approximately $+40\ \mathrm{mV}$, the voltage-gated $\mathrm{Na^+}$ channels close and voltage-gated $\mathrm{K^+}$ channels open. $\mathrm{K^+}$ ions rush out of the axon down their concentration gradient, carrying positive charge out and restoring the negative interior.
+2. **Repolarisation**: at approximately $+40\ \mathrm{mV}$The voltage-gated $\mathrm{Na^+}$ channels close and voltage-gated $\mathrm{K^+}$ channels open. $\mathrm{K^+}$ ions rush out of the axon down their concentration gradient, carrying positive charge out and restoring the negative interior.
 
 3. **Hyperpolarisation (overshoot)**: the $\mathrm{K^+}$ channels are slow to close, so $\mathrm{K^+}$ continues to diffuse out after the resting potential has been reached, making the inside temporarily more negative than $-70\ \mathrm{mV}$ (approximately $-80\ \mathrm{mV}$).
 
@@ -154,23 +154,23 @@ Key structures:
 4. The influx of $\mathrm{Ca^{2+}}$ causes synaptic vesicles to fuse with the presynaptic membrane (exocytosis), releasing neurotransmitter into the synaptic cleft.
 5. The neurotransmitter diffuses across the synaptic cleft and binds to specific **receptor proteins** on the postsynaptic membrane.
 6. Binding opens **ligand-gated ion channels** on the postsynaptic membrane:
-   - If $\mathrm{Na^+}$ channels open: $\mathrm{Na^+}$ enters the postsynaptic neurone, causing depolarisation (excitatory postsynaptic potential, EPSP).
-   - If $\mathrm{Cl^-}$ channels open: $\mathrm{Cl^-}$ enters (or $\mathrm{K^+}$ exits), causing hyperpolarisation (inhibitory postsynaptic potential, IPSP).
+ - If $\mathrm{Na^+}$ channels open: $\mathrm{Na^+}$ enters the postsynaptic neurone, causing depolarisation (excitatory postsynaptic potential, EPSP).
+ - If $\mathrm{Cl^-}$ channels open: $\mathrm{Cl^-}$ enters (or $\mathrm{K^+}$ exits), causing hyperpolarisation (inhibitory postsynaptic potential, IPSP).
 7. If the combined EPSPs reach threshold ($-55\ \mathrm{mV}$), an action potential is triggered in the postsynaptic neurone.
 8. The neurotransmitter is rapidly removed from the synaptic cleft by: enzymatic breakdown (e.g., acetylcholinesterase breaks down acetylcholine); reuptake into the presynaptic neurone; diffusion away from the synapse.
 
 ### 4.3 Excitatory and Inhibitory Synapses
 
-| Feature                 | Excitatory Synapse                                     | Inhibitory Synapse                                    |
+| Feature | Excitatory Synapse | Inhibitory Synapse |
 | ----------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
-| Neurotransmitter example| Acetylcholine (at neuromuscular junction), glutamate   | GABA (in the brain), glycine                          |
-| Ion channels opened     | $\mathrm{Na^+}$ channels (sometimes also $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-}$ channels (sometimes $\mathrm{K^+}$ channels) |
+| Neurotransmitter example| Acetylcholine (at neuromuscular junction), glutamate | GABA (in the brain), glycine |
+| Ion channels opened | $\mathrm{Na^+}$ channels (sometimes also $\mathrm{Ca^{2+}}$) | $\mathrm{Cl^-}$ channels (sometimes $\mathrm{K^+}$ channels) |
 | Effect on postsynaptic membrane | Depolarisation (EPSP) -- moves closer to threshold | Hyperpolarisation (IPSP) -- moves further from threshold |
-| Net effect              | Increases likelihood of action potential                | Decreases likelihood of action potential              |
+| Net effect | Increases likelihood of action potential | Decreases likelihood of action potential |
 
 ### 4.4 Summation
 
-A single EPSP is usually insufficient to reach threshold. The postsynaptic neurone integrates (sums) multiple inputs:
+A single EPSP is insufficient to reach threshold. The postsynaptic neurone integrates (sums) multiple inputs:
 
 - **Spatial summation**: multiple presynaptic neurones release neurotransmitter simultaneously onto the same postsynaptic neurone. The combined depolarisation from several EPSPs reaches threshold.
 - **Temporal summation**: a single presynaptic neurone fires action potentials in rapid succession. The EPSPs overlap and add together before the first one decays, reaching threshold.
@@ -193,14 +193,14 @@ ACh is synthesised from choline and acetyl-CoA by the enzyme choline acetyltrans
 
 ### 5.2 Other Important Neurotransmitters
 
-| Neurotransmitter | Location                     | Function                                          |
+| Neurotransmitter | Location | Function |
 | ---------------- | ---------------------------- | ------------------------------------------------- |
-| Noradrenaline    | Sympathetic nervous system   | Fight-or-flight response; increases heart rate    |
-| Dopamine          | Basal ganglia, reward pathways | Motor control, motivation, reward, pleasure       |
-| Serotonin         | Brainstem, GI tract          | Mood regulation, sleep, appetite, temperature     |
-| GABA             | Brain (most common inhibitory) | Reduces neuronal excitability; prevents overactivity |
-| Glutamate        | Brain (most common excitatory) | Major excitatory neurotransmitter; involved in learning |
-| Endorphins       | Brain, pituitary             | Natural pain relief; euphoria                     |
+| Noradrenaline | Sympathetic nervous system | Fight-or-flight response; increases heart rate |
+| Dopamine | Basal ganglia, reward pathways | Motor control, motivation, reward, pleasure |
+| Serotonin | Brainstem, GI tract | Mood regulation, sleep, appetite, temperature |
+| GABA | Brain (most common inhibitory) | Reduces neuronal excitability; prevents overactivity |
+| Glutamate | Brain (most common excitatory) | Major excitatory neurotransmitter; involved in learning |
+| Endorphins | Brain, pituitary | Natural pain relief; euphoria |
 
 ### 5.3 Drugs and the Nervous System
 
@@ -278,14 +278,14 @@ The generator potential is **graded**: stronger pressure produces larger depolar
 
 ### 7.2 Other Receptor Types
 
-| Receptor Type       | Stimulus Detected                    | Location                           |
+| Receptor Type | Stimulus Detected | Location |
 | ------------------- | ------------------------------------ | ---------------------------------- |
-| Mechanoreceptors    | Pressure, vibration, sound           | Skin, inner ear (cochlea)          |
-| Thermoreceptors     | Temperature changes                  | Skin, hypothalamus                 |
-| Chemoreceptors      | Chemical concentration (e.g., $\mathrm{O_2}$, $\mathrm{CO_2}$, glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
-| Photoreceptors      | Light                                | Retina (rods and cones)            |
-| Nociceptors         | Pain (tissue damage)                 | Skin, joints, internal organs      |
-| Proprioceptors      | Body position, limb movement         | Muscles, tendons, joints           |
+| Mechanoreceptors | Pressure, vibration, sound | Skin, inner ear (cochlea) |
+| Thermoreceptors | Temperature changes | Skin, hypothalamus |
+| Chemoreceptors | Chemical concentration (e.g., $\mathrm{O_2}$$\mathrm{CO_2}$Glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
+| Photoreceptors | Light | Retina (rods and cones) |
+| Nociceptors | Pain (tissue damage) | Skin, joints, internal organs |
+| Proprioceptors | Body position, limb movement | Muscles, tendons, joints |
 
 ## 8. Muscle Contraction: The Sliding Filament Mechanism
 
@@ -295,8 +295,8 @@ Skeletal muscle is composed of **muscle fibres** (multinucleated cells formed by
 
 - **Myofibrils**: parallel, cylindrical organelles running the length of the fibre, composed of repeating units called **sarcomeres**.
 - **Sarcomere**: the functional unit of muscle contraction, bounded by Z-lines. Contains two types of protein filament:
-  - **Thick filaments (myosin)**: composed of myosin molecules with globular heads that can bind to actin and hydrolyse ATP.
-  - **Thin filaments (actin)**: composed of actin monomers twisted into a double helix, with binding sites for myosin heads. Thin filaments also contain **tropomyosin** (which blocks myosin-binding sites on actin at rest) and **troponin** (which binds calcium and moves tropomyosin aside).
+ - **Thick filaments (myosin)**: composed of myosin molecules with globular heads that can bind to actin and hydrolyse ATP.
+ - **Thin filaments (actin)**: composed of actin monomers twisted into a double helix, with binding sites for myosin heads. Thin filaments also contain **tropomyosin** (which blocks myosin-binding sites on actin at rest) and **troponin** (which binds calcium and moves tropomyosin aside).
 
 **Banding pattern**: the alternating arrangement of thick and thin filaments produces characteristic bands visible under light microscopy:
 
@@ -321,7 +321,7 @@ Muscle contraction occurs by the sliding of thin filaments past thick filaments,
 
 5. **ATP binding and cross-bridge detachment**: a new ATP molecule binds to the myosin head, causing it to detach from actin.
 
-6. **ATP hydrolysis and re-cocking**: ATP is hydrolysed to ADP + $P_i$, and the energy released re-cocks the myosin head to its high-energy position, ready for another cycle.
+6. **ATP hydrolysis and re-cocking**: ATP is hydrolysed to ADP + $P_i$And the energy released re-cocks the myosin head to its high-energy position, ready for another cycle.
 
 This cycle continues as long as $\mathrm{Ca^{2+}}$ and ATP are available. One power stroke moves the thin filament approximately $5$--$10\ \mathrm{nm}$.
 
@@ -350,7 +350,7 @@ ATP is regenerated by:
 - **Anaerobic glycolysis**: produces ATP rapidly but also generates lactate (for intense, short-duration activity). See [Respiration](/docs/alevel/biology/respiration-depth).
 - **Creatine phosphate**: a rapidly mobilised phosphate store in muscle. Creatine phosphate transfers its phosphate group to ADP, regenerating ATP almost instantly:
   $$\mathrm{Creatine\ phosphate + ADP \rightleftharpoons creatine + ATP}$$
-  This provides ATP for approximately the first 5--10 seconds of intense activity.
+ This provides ATP for approximately the first 5--10 seconds of intense activity.
 
 ## 9. Nervous Control of Heart Rate
 
@@ -358,12 +358,12 @@ ATP is regenerated by:
 
 Heart rate is controlled involuntarily by the **autonomic nervous system (ANS)**, which has two antagonistic divisions:
 
-| Feature             | Sympathetic Nervous System                     | Parasympathetic Nervous System                  |
+| Feature | Sympathetic Nervous System | Parasympathetic Nervous System |
 | ------------------- | ---------------------------------------------- | ------------------------------------------------ |
-| General role        | Fight-or-flight; increases activity            | Rest-and-digest; decreases activity              |
-| Neurotransmitter at target | Noradrenaline                         | Acetylcholine                                    |
-| Effect on heart rate| Increases (accelerates)                        | Decreases (decelerates)                          |
-| Effect on cardiac output | Increases (via increased rate and stroke volume) | Decreases (via decreased rate)            |
+| General role | Fight-or-flight; increases activity | Rest-and-digest; decreases activity |
+| Neurotransmitter at target | Noradrenaline | Acetylcholine |
+| Effect on heart rate| Increases (accelerates) | Decreases (decelerates) |
+| Effect on cardiac output | Increases (via increased rate and stroke volume) | Decreases (via decreased rate) |
 
 ### 9.2 Control Centre: The Medulla Oblongata
 
@@ -376,7 +376,7 @@ The **cardiovascular centre** in the **medulla oblongata** (in the brainstem) co
 
 **Chemoreceptors** in the **aortic body** and **carotid body** detect changes in blood chemistry:
 
-- Low $p\mathrm{O_2}$, high $p\mathrm{CO_2}$, or low pH (high $\mathrm{H^+}$ concentration): detected by chemoreceptors, which send impulses to the cardiovascular centre. The centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate to increase blood flow to the lungs for gas exchange.
+- Low $p\mathrm{O_2}$High $p\mathrm{CO_2}$Or low pH (high $\mathrm{H^+}$ concentration): detected by chemoreceptors, which send impulses to the cardiovascular centre. The centre increases sympathetic stimulation and decreases parasympathetic stimulation, increasing heart rate to increase blood flow to the lungs for gas exchange.
 
 **Baroreceptors** (pressure receptors) in the **aortic arch** and **carotid sinus** detect changes in blood pressure:
 
@@ -389,14 +389,14 @@ For more detail on the cardiac cycle and pressure changes, see [Exchange and Tra
 
 ### 10.1 Major Brain Regions
 
-| Region                 | Location                  | Key Functions                                                                   |
+| Region | Location | Key Functions |
 | ---------------------- | ------------------------- | ------------------------------------------------------------------------------- |
-| Cerebrum               | Largest part; two hemispheres | Conscious thought, memory, language, decision-making, sensory processing, voluntary movement |
-| Cerebellum             | Below the cerebrum; at the back | Coordination of movement, balance, posture, fine motor control                  |
-| Medulla oblongata      | Base of the brainstem      | Control of breathing rate, heart rate, blood pressure (autonomic functions)      |
-| Hypothalamus           | Below the thalamus         | Thermoregulation, osmoregulation (ADH release), hunger, thirst, circadian rhythm |
-| Thalamus               | Above the hypothalamus     | Relay station for sensory information to the cerebrum; filters sensory input     |
-| Pituitary gland        | Below the hypothalamus     | Hormone secretion (ACTH, TSH, FSH, LH, growth hormone, ADH); "master gland"    |
+| Cerebrum | Largest part; two hemispheres | Conscious thought, memory, language, decision-making, sensory processing, voluntary movement |
+| Cerebellum | Below the cerebrum; at the back | Coordination of movement, balance, posture, fine motor control |
+| Medulla oblongata | Base of the brainstem | Control of breathing rate, heart rate, blood pressure (autonomic functions) |
+| Hypothalamus | Below the thalamus | Thermoregulation, osmoregulation (ADH release), hunger, thirst, circadian rhythm |
+| Thalamus | Above the hypothalamus | Relay station for sensory information to the cerebrum; filters sensory input |
+| Pituitary gland | Below the hypothalamus | Hormone secretion (ACTH, TSH, FSH, LH, growth hormone, ADH); "master gland" |
 
 ### 10.2 The Cerebral Cortex
 
@@ -484,7 +484,7 @@ A person's blood pressure rises sharply. Describe the sequence of events by whic
 <summary>Problem 5</summary>
 Explain how spatial and temporal summation enable a postsynaptic neurone to reach threshold and fire an action potential. (4 marks)
 
-**Answer.** A single excitatory postsynaptic potential (EPSP) typically produces a depolarisation of a few millivolts, which is insufficient to reach the threshold of approximately $-55\ \mathrm{mV}$. **Spatial summation** occurs when multiple presynaptic neurones release neurotransmitter simultaneously onto different parts of the same postsynaptic neurone. The EPSPs generated at different synapses on the postsynaptic neurone add together (summate), producing a larger depolarisation that may reach threshold. **Temporal summation** occurs when a single presynaptic neurone fires rapidly, releasing neurotransmitter in quick succession. Each EPSP begins before the previous one has fully decayed, so the depolarisations build on each other, producing a larger cumulative depolarisation. Both mechanisms allow the nervous system to integrate multiple inputs and fire action potentials only when sufficient excitatory input is received.
+**Answer.** A single excitatory postsynaptic potential (EPSP) produces a depolarisation of a few millivolts, which is insufficient to reach the threshold of approximately $-55\ \mathrm{mV}$. **Spatial summation** occurs when multiple presynaptic neurones release neurotransmitter simultaneously onto different parts of the same postsynaptic neurone. The EPSPs generated at different synapses on the postsynaptic neurone add together (summate), producing a larger depolarisation that may reach threshold. **Temporal summation** occurs when a single presynaptic neurone fires rapidly, releasing neurotransmitter in quick succession. Each EPSP begins before the previous one has fully decayed, so the depolarisations build on each other, producing a larger cumulative depolarisation. Both mechanisms allow the nervous system to integrate multiple inputs and fire action potentials only when sufficient excitatory input is received.
 
 <b>If you get this wrong, revise:</b> [Summation](#44-summation)
 
@@ -498,7 +498,7 @@ The refractory period has critical functional consequences:
 
 1. **Unidirectional propagation**: during the absolute refractory period, the sodium channels behind the action potential are inactivated. Local currents from the active region cannot depolarise this region to threshold because the channels cannot reopen. This forces the action potential to propagate in one direction only -- from the cell body towards the axon terminals.
 
-2. **Frequency coding**: the refractory period limits the maximum frequency at which action potentials can fire. If the absolute refractory period is approximately $1\ \mathrm{ms}$, the maximum firing rate is approximately $1000$ action potentials per second. In practice, the relative refractory period extends the minimum interval between action potentials, reducing the maximum rate further.
+2. **Frequency coding**: the refractory period limits the maximum frequency at which action potentials can fire. If the absolute refractory period is approximately $1\ \mathrm{ms}$The maximum firing rate is approximately $1000$ action potentials per second. In practice, the relative refractory period extends the minimum interval between action potentials, reducing the maximum rate further.
 
 3. **Prevention of tetanus**: skeletal muscles stimulated by nerve impulses at high frequency undergo sustained contraction (tetanus) because calcium remains in the sarcoplasm. However, individual action potentials remain discrete because each must wait for the refractory period before the next can be generated. This is why nerve impulses are always all-or-nothing events, not graded responses.
 
@@ -519,7 +519,7 @@ The distance an action potential can propagate without being too attenuated depe
 
 $$\lambda = \sqrt◆LB◆\frac{r_m}{r_i + r_o}◆RB◆$$
 
-where $r_m$ is the membrane resistance ($\Omega \cdot \mathrm{cm}$), $r_i$ is the intracellular (axial) resistance ($\Omega\ \mathrm{cm^{-1}}$), and $r_o$ is the extracellular resistance.
+Where $r_m$ is the membrane resistance ($\Omega \cdot \mathrm{cm}$), $r_i$ is the intracellular (axial) resistance ($\Omega\ \mathrm{cm^{-1}}$), and $r_o$ is the extracellular resistance.
 
 For myelinated axons, $r_m$ is very high (due to the insulating myelin sheath), so $\lambda$ is very large. This means the depolarisation can spread further without attenuation, and saltatory conduction is efficient.
 
@@ -560,7 +560,7 @@ The retina contains two types of photoreceptor:
 - Responsible for vision in low light (scotopic vision).
 - Approximately 120 million per eye, concentrated in the periphery.
 - Contain the pigment **rhodopsin** (composed of retinal and opsin).
-- Sensitive to a broad range of wavelengths (peak at approximately $500\ \mathrm{nm}$, blue-green light).
+- Sensitive to a broad range of wavelengths (peak at approximately $500\ \mathrm{nm}$Blue-green light).
 - Low spatial resolution (many rods converge onto a single bipolar cell via convergence).
 - Cannot distinguish colour (only one type of photopigment).
 
@@ -568,9 +568,9 @@ The retina contains two types of photoreceptor:
 - Responsible for colour vision and high-acuity vision (photopic vision).
 - Approximately 6 million per eye, concentrated in the fovea (centre of the retina).
 - Three types, each containing a different photopigment sensitive to different wavelengths:
-  - **S-cones** (blue): peak sensitivity at $\approx 430\ \mathrm{nm}$.
-  - **M-cones** (green): peak sensitivity at $\approx 530\ \mathrm{nm}$.
-  - **L-cones** (red): peak sensitivity at $\approx 560\ \mathrm{nm}$.
+ - **S-cones** (blue): peak sensitivity at $\approx 430\ \mathrm{nm}$.
+ - **M-cones** (green): peak sensitivity at $\approx 530\ \mathrm{nm}$.
+ - **L-cones** (red): peak sensitivity at $\approx 560\ \mathrm{nm}$.
 - High spatial resolution (fewer cones per bipolar cell in the fovea; 1:1 ratio).
 - Require brighter light to function (explain why colour vision is poor in dim light).
 
@@ -608,18 +608,18 @@ The adrenal glands sit on top of the kidneys and have two functionally distinct 
 
 Perceived threat $\to$ hypothalamus $\to$ sympathetic nervous system $\to$ adrenal medulla + target organs:
 
-| Effect                           | Mechanism                                                                |
+| Effect | Mechanism |
 | -------------------------------- | ------------------------------------------------------------------------ |
-| Increased heart rate              | Sympathetic stimulation of SAN; adrenaline on $\beta_1$ receptors  |
-| Increased ventilation             | Sympathetic stimulation of respiratory muscles                      |
-| Pupil dilation                   | Radial muscle contraction (sympathetic)                             |
-| Bronchodilation                  | Relaxation of bronchial smooth muscle                                 |
-| Vasoconstriction of skin         | Redirects blood to muscles and brain                                    |
-| Vasodilation of skeletal muscle  | Increased blood flow to muscles                                    |
-| Glycogenolysis in liver          | Adrenaline stimulates breakdown of glycogen to glucose                  |
-| Increased blood glucose            | Adrenaline inhibits insulin secretion; stimulates glucagon secretion       |
-| Inhibition of digestion          | Reduced blood flow to gut; decreased gut motility                    |
-| Increased mental alertness         | Adrenaline acts on the brain; pupils dilate for wider visual field     |
+| Increased heart rate | Sympathetic stimulation of SAN; adrenaline on $\beta_1$ receptors |
+| Increased ventilation | Sympathetic stimulation of respiratory muscles |
+| Pupil dilation | Radial muscle contraction (sympathetic) |
+| Bronchodilation | Relaxation of bronchial smooth muscle |
+| Vasoconstriction of skin | Redirects blood to muscles and brain |
+| Vasodilation of skeletal muscle | Increased blood flow to muscles |
+| Glycogenolysis in liver | Adrenaline stimulates breakdown of glycogen to glucose |
+| Increased blood glucose | Adrenaline inhibits insulin secretion; stimulates glucagon secretion |
+| Inhibition of digestion | Reduced blood flow to gut; decreased gut motility |
+| Increased mental alertness | Adrenaline acts on the brain; pupils dilate for wider visual field |
 
 For more on hormonal control of blood glucose, see [Homeostasis](/docs/alevel/biology/homeostasis).
 
@@ -627,13 +627,13 @@ For more on hormonal control of blood glucose, see [Homeostasis](/docs/alevel/bi
 
 ### 16.1 Comparison with Vertebrate Nervous Systems
 
-| Feature              | Vertebrate Nervous System                          | Invertebrate Nervous System (e.g., insect)    |
+| Feature | Vertebrate Nervous System | Invertebrate Nervous System (e.g., insect) |
 | ------------------- | --------------------------------------------------- | --------------------------------------------- |
-| Organisation        | Central (brain + spinal cord) + peripheral            | Ventral nerve cord + ganglia                 |
-| Neurone structure   | Myelinated; saltatory conduction                   | Non-myelinated; slower conduction              |
-| Speed               | Fast ($15$--$120\ \mathrm{m\ s^{-1}}$)          | Slower ($0.5$--$10\ \mathrm{m\ s^{-1}}$)      |
-| Giant axons         | Rare (some in vertebrates)                        | Common (squid giant axon, $500\ \mu\mathrm{m}$)  |
-| Cell bodies           | In CNS                                       | In ganglia (peripheral)                       |
+| Organisation | Central (brain + spinal cord) + peripheral | Ventral nerve cord + ganglia |
+| Neurone structure | Myelinated; saltatory conduction | Non-myelinated; slower conduction |
+| Speed | Fast ($15$--$120\ \mathrm{m\ s^{-1}}$) | Slower ($0.5$--$10\ \mathrm{m\ s^{-1}}$) |
+| Giant axons | Rare (some in vertebrates) | Common (squid giant axon, $500\ \mu\mathrm{m}$) |
+| Cell bodies | In CNS | In ganglia (peripheral) |
 
 ### 16.2 The Squid Giant Axon
 
@@ -727,7 +727,7 @@ Neuroplasticity is greatest during childhood (critical periods for language acqu
 | ------- | ---- | ----- |
 | Sensitivity | High (function well in low light) | Low (require bright light) |
 | Visual acuity | Low (many rods share a single ganglion cell, so signals are pooled) | High (each cone connects to its own ganglion cell via a bipolar cell, so signals are separate) |
-| Colour vision | No (only one type of rhodopsin pigment, maximally sensitive at $\approx 500\ \mathrm{nm}$) | Yes (three types: S-cones $\approx 420\ \mathrm{nm}$, M-cones $\approx 534\ \mathrm{nm}$, L-cones $\approx 564\ \mathrm{nm}$) |
+| Colour vision | No (only one type of rhodopsin pigment, maximally sensitive at $\approx 500\ \mathrm{nm}$) | Yes (three types: S-cones $\approx 420\ \mathrm{nm}$M-cones $\approx 534\ \mathrm{nm}$L-cones $\approx 564\ \mathrm{nm}$) |
 | Distribution | Concentrated in the periphery of the retina; absent from the fovea | Concentrated in the fovea; sparse in the periphery |
 | Response speed | Slow | Fast |
 | Number | $\approx 120$ million per eye | $\approx 6$ million per eye |
@@ -770,7 +770,7 @@ Colour blindness is X-linked recessive (genes for L-cones and M-cones are on the
 | ------- | ----------------- | ---------------- |
 | Gap junctions | Present (connexon channels) | Not present |
 | Speed | Very fast (no synaptic delay) | Slower (synaptic delay $\approx 0.5\ \mathrm{ms}$) |
-| Direction | Usually bidirectional | Unidirectional (presynaptic $\to$ postsynaptic) |
+| Direction | bidirectional | Unidirectional (presynaptic $\to$ postsynaptic) |
 | Transmission | Direct ionic current flow | Neurotransmitter release and receptor binding |
 | Modulation | Limited | Highly modifiable (basis of learning and memory) |
 | Location | Cardiac muscle, smooth muscle, some neurons | Most neurons in the CNS and all at neuromuscular junctions |
@@ -938,7 +938,7 @@ In a pathway with many synapses (e.g., a polysynaptic reflex arc with 3 synapses
 
 **Spatial summation**: if multiple presynaptic neurons fire simultaneously, their EPSPs add together at the postsynaptic membrane.
 
-**Worked Example.** A single EPSP depolarises the postsynaptic membrane by $5\ \mathrm{mV}$. The threshold for an action potential is $-55\ \mathrm{mV}$, and the resting potential is $-70\ \mathrm{mV}$. The membrane needs to be depolarised by $15\ \mathrm{mV}$ to reach threshold.
+**Worked Example.** A single EPSP depolarises the postsynaptic membrane by $5\ \mathrm{mV}$. The threshold for an action potential is $-55\ \mathrm{mV}$And the resting potential is $-70\ \mathrm{mV}$. The membrane needs to be depolarised by $15\ \mathrm{mV}$ to reach threshold.
 
 - Temporal summation: at least 3 rapid EPSPs from a single presynaptic neuron ($3 \times 5 = 15\ \mathrm{mV}$).
 - Spatial summation: at least 3 simultaneous EPSPs from 3 different presynaptic neurons ($3 \times 5 = 15\ \mathrm{mV}$).
@@ -997,7 +997,7 @@ In a pathway with many synapses (e.g., a polysynaptic reflex arc with 3 synapses
 | ------------- | -------- | -------- | ------- |
 | Mechanoreceptor | Mechanical deformation (pressure, stretch, vibration) | Skin, inner ear, muscles | Pacinian corpuscle, hair cells in cochlea |
 | Thermoreceptor | Temperature change | Skin, hypothalamus | Warm and cold receptors in dermis |
-| Chemoreceptor | Chemical concentration ($\mathrm{O_2}$, $\mathrm{CO_2}$, glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
+| Chemoreceptor | Chemical concentration ($\mathrm{O_2}$$\mathrm{CO_2}$Glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
 | Photoreceptor | Light intensity (rods) and wavelength (cones) | Retina | Rods and cones |
 | Baroreceptor | Blood pressure change | Aortic arch, carotid sinus | Aortic baroreceptors |
 
@@ -1038,9 +1038,9 @@ The cerebral cortex is divided into two hemispheres, each with four lobes:
 
 | Lobe | Location | Primary Functions |
 | ---- | -------- | ----------------- |
-| Frontal | Behind forehead | Motor control (primary motor cortex), decision-making, planning, personality, speech production (Broca's area, usually in left hemisphere) |
+| Frontal | Behind forehead | Motor control (primary motor cortex), decision-making, planning, personality, speech production (Broca's area, in left hemisphere) |
 | Parietal | Behind frontal lobe | Somatosensory processing (primary somatosensory cortex), spatial awareness |
-| Temporal | Below frontal and parietal lobes | Auditory processing (primary auditory cortex), memory (hippocampus), language comprehension (Wernicke's area, usually in left hemisphere) |
+| Temporal | Below frontal and parietal lobes | Auditory processing (primary auditory cortex), memory (hippocampus), language comprehension (Wernicke's area, in left hemisphere) |
 | Occipital | Back of brain | Visual processing (primary visual cortex) |
 
 **Lateralisation**: certain functions are predominantly processed in one hemisphere:
@@ -1079,7 +1079,7 @@ Memory involves three stages:
 ### 25.3 Motor Neurone Disease (MND / ALS)
 
 - **Cause**: progressive degeneration of upper and lower motor neurons.
-- **Symptoms**: progressive muscle weakness and wasting; difficulty speaking, swallowing, and breathing; eventually fatal (usually within 3--5 years of diagnosis).
+- **Symptoms**: progressive muscle weakness and wasting; difficulty speaking, swallowing, and breathing; eventually fatal ( within 3--5 years of diagnosis).
 - **Treatment**: riluzole (slows disease progression by reducing glutamate release); supportive care (ventilation, feeding tubes).
 
 ## 26. Synaptic Transmission: Detailed Mechanisms
@@ -1149,7 +1149,7 @@ Hormones bind to specific receptors on (or in) target cells. The type of recepto
 | Receptor Type | Hormone Type | Mechanism | Speed |
 | ------------- | ------------ | --------- | ----- |
 | Intracellular (nuclear) | Steroid hormones (testosterone, oestrogen, cortisol), thyroid hormones | Hormone diffuses through the membrane; binds to intracellular receptor; hormone-receptor complex enters nucleus; acts as a transcription factor, directly affecting gene expression | Slow (hours to days) |
-| Cell surface (GPCR) | Peptide hormones (insulin, glucagon, ADH), adrenaline | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$, $\mathrm{Ca^{2+}}$); amplifies signal | Fast (seconds to minutes) |
+| Cell surface (GPCR) | Peptide hormones (insulin, glucagon, ADH), adrenaline | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$$\mathrm{Ca^{2+}}$); amplifies signal | Fast (seconds to minutes) |
 | Cell surface (tyrosine kinase) | Insulin, growth factors | Hormone binds to receptor tyrosine kinase; autophosphorylation; activates intracellular signalling cascade (MAPK, PI3K) | Minutes to hours |
 
 ### 27.3 Second Messengers
@@ -1283,8 +1283,8 @@ When the hand touches a hot object:
 1. Heat receptors in the skin detect the stimulus and generate nerve impulses.
 2. Sensory neurones transmit impulses to the spinal cord.
 3. In the spinal cord, the sensory neurone synapses with:
-   - A relay neurone (which transmits impulses to the brain -- the brain becomes aware of the pain after the reflex has occurred).
-   - A motor neurone (which transmits impulses to the biceps muscle in the upper arm).
+ - A relay neurone (which transmits impulses to the brain -- the brain becomes aware of the pain after the reflex has occurred).
+ - A motor neurone (which transmits impulses to the biceps muscle in the upper arm).
 4. The biceps muscle contracts (flexor), pulling the hand away from the hot object.
 5. Simultaneously, a relay neurone synapses with an inhibitory interneurone that inhibits the motor neurone to the triceps (extensor). This is **reciprocal inhibition**: the antagonist muscle is inhibited to prevent conflicting movements.
 
@@ -1313,7 +1313,7 @@ Habituation is the simplest form of learning: an animal learns to ignore a repea
 An animal learns to associate a new stimulus with an existing reflex response.
 
 **Example (Pavlov's dogs):**
-1. Unconditioned stimulus (US): food (naturally causes salivation).
+1. Unconditioned stimulus (US): food ( causes salivation).
 2. Unconditioned response (UR): salivation.
 3. Conditioned stimulus (CS): bell (initially does not cause salivation).
 4. After repeated pairing of CS with US, the CS alone triggers the conditioned response (CR): salivation.
@@ -1351,7 +1351,7 @@ $$E = \frac{RT}{zF} \ln \frac◆LB◆[\text{ion}]_{\text{out}}◆RB◆◆LB◆[\
 
 For $\mathrm{K^+}$: $E_K \approx -90\ \mathrm{mV}$; for $\mathrm{Na^+}$: $E_{Na} \approx +60\ \mathrm{mV}$.
 
-The resting potential ($-70\ \mathrm{mV}$) is closer to $E_K$ than to $E_{Na}$, reflecting the greater permeability to $\mathrm{K^+}$.
+The resting potential ($-70\ \mathrm{mV}$) is closer to $E_K$ than to $E_{Na}$Reflecting the greater permeability to $\mathrm{K^+}$.
 
 ### 32.2 Action Potential Phases
 
@@ -1489,7 +1489,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | Region | Location | Function |
 | ------ | -------- | -------- |
 | Renal (Bowman's) capsule | Cortex | Site of ultrafiltration; encloses the glomerulus |
-| Proximal convoluted tubule (PCT) | Cortex | Selective reabsorption: ALL glucose, ALL amino acids, ~85% Na$^+$, ~80% water, ALL vitamins; microvilli increase surface area; many mitochondria for active transport |
+| Proximal convoluted tubule (PCT) | Cortex | Selective reabsorption: ALL glucose, ALL amino acids, ~85% Na$^+$~80% water, ALL vitamins; microvilli increase surface area; many mitochondria for active transport |
 | Loop of Henle (descending limb) | Medulla | Water reabsorption (permeable to water, impermeable to salts); water moves out by osmosis into the hypertonic medulla |
 | Loop of Henle (ascending limb) | Medulla | Active transport of Na$^+$ and Cl$^-$ out (Na$^+$/K$^+$ pump and Na$^+$/Cl$^-$ co-transporter); impermeable to water; creates the countercurrent multiplier |
 | Distal convoluted tubule (DCT) | Cortex | Selective reabsorption and secretion; regulated by aldosterone (Na$^+$ reabsorption, K$^+$ secretion) and ADH (water reabsorption if needed) |
@@ -1557,7 +1557,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | Feature | Description |
 | ------- | ----------- |
 | Cause | Progressive degeneration of upper and lower motor neurones |
-| Symptoms | Progressive muscle weakness and wasting; difficulty speaking, swallowing, and breathing; eventually fatal (usually within 2--5 years of diagnosis) |
+| Symptoms | Progressive muscle weakness and wasting; difficulty speaking, swallowing, and breathing; eventually fatal ( within 2--5 years of diagnosis) |
 | Pathology | TDP-43 protein aggregation in motor neurones |
 | Treatment | No cure; riluzole (slows progression slightly); supportive care (ventilation, feeding tube) |
 
@@ -1744,7 +1744,7 @@ The blind spot is where the optic nerve exits the retina. There are no photorece
 | Pathology | Inflammatory demyelination; scleroses (scar tissue) form where myelin has been destroyed |
 | Symptoms | Vision problems (optic neuritis); muscle weakness, numbness, tingling; fatigue; cognitive changes; problems with coordination and balance |
 | Progression | Relapsing-remitting (most common form): episodes of worsening (relapses) followed by periods of recovery (remissions) |
-| Treatment | No cure; disease-modifying therapies (e.g., interferon-$\beta$, natalizumab, fingolimod) reduce relapse rate; corticosteroids for acute relapses; physiotherapy |
+| Treatment | No cure; disease-modifying therapies (e.g., interferon-$\beta$Natalizumab, fingolimod) reduce relapse rate; corticosteroids for acute relapses; physiotherapy |
 
 ### 46.2 Parkinson's Disease
 
@@ -1845,3 +1845,11 @@ Diagnostic Test
 :::
 :::
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

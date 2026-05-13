@@ -7,7 +7,7 @@ slug: control-flow
 ## `if` / `else`
 
 Rust's `if` expression does not require parentheses around the condition, but braces around the body
-are mandatory. Unlike C or Java, `if` is an expression — it returns a value and can be used inline:
+Are mandatory. Unlike C or Java, `if` is an expression — it returns a value and can be used inline:
 
 ```rust
 let condition = true;
@@ -72,12 +72,12 @@ assert_eq!(y, ());
 ```
 
 This is not specific to `if` — it applies to `match` arms, `loop` bodies, function bodies, and any
-braced block.
+Braced block.
 
 ## `match` Expressions
 
 `match` is Rust's most powerful control flow construct. It performs exhaustive pattern matching
-against a value and executes the first matching arm.
+Against a value and executes the first matching arm.
 
 ```rust
 enum Coin {
@@ -103,7 +103,7 @@ fn value_in_cents(coin: &Coin) -> u8 {
 ### Exhaustiveness
 
 The compiler verifies that every possible value is covered. Adding a new variant to an enum causes
-every `match` on that enum to produce a compile error until updated:
+Every `match` on that enum to produce a compile error until updated:
 
 ```rust
 enum Color { Red, Green, Blue }
@@ -119,7 +119,7 @@ fn color_name(c: Color) -> &'static str {
 ```
 
 The `_` wildcard matches anything and is useful when you do not need to handle specific cases. It
-does not bind the value.
+Does not bind the value.
 
 ### Match Guards
 
@@ -136,7 +136,7 @@ match num {
 ```
 
 Match guards do not participate in exhaustiveness checking. The compiler cannot prove that a guard
-will always match, so you may still need a catch-all arm.
+Will always match, so you may still need a catch-all arm.
 
 ### Variable Shadowing in Match Arms
 
@@ -156,7 +156,7 @@ match x {
 ### Match on References (Match Ergonomics)
 
 Rust 2021 edition enables match ergonomics — the compiler automatically adds `&` when matching
-through a reference:
+Through a reference:
 
 ```rust
 let c = Coin::Penny;
@@ -208,7 +208,7 @@ match x {
 ### Guarding Against Variable Binding Conflicts
 
 A match guard can reference variables from the enclosing scope. If the guard's variable name shadows
-the pattern's binding, use `@` to bind and filter simultaneously:
+The pattern's binding, use `@` to bind and filter simultaneously:
 
 ```rust
 let age = 15;
@@ -241,7 +241,7 @@ assert_eq!(result, 20);
 ```
 
 `loop` is the only loop that returns a value from `break`. `while` and `for` loops do not support
-value-returning breaks (they return `()`).
+Value-returning breaks (they return `()`).
 
 ### `while`
 
@@ -255,12 +255,12 @@ while number != 0 {
 ```
 
 `while` evaluates the condition before each iteration. If the condition is false on the first check,
-the body never executes.
+The body never executes.
 
 ### `for` — Iterator-Based Looping
 
 `for` loops iterate over any type implementing `IntoIterator`. This includes arrays, vectors,
-ranges, strings, hash maps, and any custom iterator:
+Ranges, strings, hash maps, and any custom iterator:
 
 ```rust
 // Array
@@ -293,7 +293,7 @@ for ch in "hello".chars() {
 ### Iterating Over References
 
 `for item in &collection` borrows each element. `for item in &mut collection` borrows each element
-mutably. `for item in collection` moves each element:
+Mutably. `for item in collection` moves each element:
 
 ```rust
 let mut v = vec![1, 2, 3, 4, 5];
@@ -330,13 +330,13 @@ for (key, value) in &scores {
 ```
 
 HashMap iteration order is not guaranteed. If you need ordering, collect into a `BTreeMap` or sort
-the entries.
+The entries.
 
 ## `break` and `continue`
 
 ### `break`
 
-Exits the current loop immediately. In a `loop`, `break` can return a value:
+Exits the current loop immediately. In a `loop``break` can return a value:
 
 ```rust
 let mut i = 0;
@@ -428,7 +428,7 @@ match some_value {
 ```
 
 `if let` does not enforce exhaustiveness. Use it when you care about one pattern and want to ignore
-the rest. The `else` block handles the non-matching case:
+The rest. The `else` block handles the non-matching case:
 
 ```rust
 let some_value = Some(7);
@@ -460,8 +460,8 @@ fn parse_or_default(s: &str) -> u64 {
 }
 ```
 
-The `else` block can contain `return`, `break`, `continue`, `panic!`, or another diverging
-expression. It cannot simply be a non-diverging block.
+The `else` block can contain `return``break``continue``panic!`Or another diverging
+Expression. It cannot be a non-diverging block.
 
 ### `while let`
 
@@ -480,7 +480,7 @@ while let Some(top) = stack.pop() {
 ```
 
 `while let` is less common than `for` but useful when consuming values from an iterator with a
-specific pattern.
+Specific pattern.
 
 ## `match` Ergonomics in Depth
 
@@ -532,7 +532,7 @@ match origin {
 ### Binding with `ref` and `ref mut`
 
 When destructuring, values are moved by default. Use `ref` to borrow and `ref mut` to borrow
-mutably:
+Mutably:
 
 ```rust
 struct Person { name: String, age: u32 }
@@ -708,7 +708,7 @@ match config.max_connections {
 :::warning
 
 Match guards can introduce subtle bugs. A guard that references a variable from the enclosing scope
-that has the same name as a pattern binding will shadow the pattern binding:
+That has the same name as a pattern binding will shadow the pattern binding:
 
 ```rust
 let x = Some(5);
@@ -722,7 +722,7 @@ match x {
 ```
 
 This works correctly because the guard's `x` refers to the pattern binding, not the outer `x`. But
-if the guard references an outer variable with the same name, the outer variable takes precedence.
+If the guard references an outer variable with the same name, the outer variable takes precedence.
 
 :::
 
@@ -764,7 +764,7 @@ if let Err(e) = std::fs::create_dir("output") {
 ## `?` Operator and Control Flow
 
 The `?` operator is syntactic sugar for early return on `Err` (or `None` for `Option`). It is the
-idiomatic way to propagate errors:
+Idiomatic way to propagate errors:
 
 ```rust
 use std::fs;
@@ -804,7 +804,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 ```
 
 The `?` operator in `main` propagates errors to the runtime, which prints the error message and
-exits with a non-zero status code.
+Exits with a non-zero status code.
 
 ## Iterators and Control Flow
 
@@ -922,7 +922,7 @@ fn experimental_feature() {
 ## `return` as an Expression
 
 `return` exits the current function. It is an expression of type `!` (never type), which coerces to
-any type:
+Any type:
 
 ```rust
 fn abs(x: i32) -> i32 {
@@ -934,7 +934,7 @@ fn abs(x: i32) -> i32 {
 ```
 
 Use `return` only for early exits. Omit the trailing `return` for the final expression — Rust
-functions return the last expression automatically:
+Functions return the last expression automatically:
 
 ```rust
 // Idiomatic — no trailing return
@@ -992,46 +992,46 @@ fn not_implemented() -> i32 {
 ```
 
 `unreachable!` panics with a message indicating the code should never be reached. `todo!` is similar
-but indicates the code is intentionally incomplete. Both are useful during development but should
-not appear in production code.
+But indicates the code is intentionally incomplete. Both are useful during development but should
+Not appear in production code.
 
 ## Common Pitfalls
 
-1. **Using `if` without braces.** Rust requires braces around the body of `if`, `else`, `while`, and
-   `for`. Unlike C, `if (x) return;` is invalid — you must write `if x { return; }`.
+1. **Using `if` without braces.** Rust requires braces around the body of `if``else``while`And
+ `for`. Unlike C, `if (x) return;` is invalid — you must write `if x { return; }`.
 
 2. **Forgetting `match` exhaustiveness.** Adding a new enum variant without updating all `match`
-   expressions is a compile error. This is a feature, not a bug — it prevents silent logic errors.
-   Do not paper over it with `_ => {}` unless the variant genuinely does not matter.
+ expressions is a compile error. This is a feature, not a bug — it prevents silent logic errors.
+ Do not paper over it with `_ => {}` unless the variant genuinely does not matter.
 
 3. **`if let` hiding missing arms.** `if let Some(x) = val` ignores the `None` case by default. If
-   you need to handle both cases, use `match` or add an `else` block.
+ you need to handle both cases, use `match` or add an `else` block.
 
 4. **Shadowing in match arms.** Pattern bindings in match arms shadow outer variables with the same
-   name. This is intentional but can be confusing. Use distinct names if shadowing would be unclear.
+ name. This is intentional but can be confusing. Use distinct names if shadowing would be unclear.
 
 5. **Match guards not participating in exhaustiveness.** The compiler cannot prove that a guard will
-   always match, so `Some(x) if x > 0` does not cover all `Some` variants. You still need a
-   catch-all arm.
+ always match, so `Some(x) if x > 0` does not cover all `Some` variants. You still need a
+ catch-all arm.
 
 6. **Using `loop` when `for` suffices.** `for` is preferred over `loop { ... next() }` because it is
-   more idiomatic, handles iterator exhaustion automatically, and does not require manual `break`.
+ more idiomatic, handles iterator exhaustion automatically, and does not require manual `break`.
 
 7. **Labeled breaks on the wrong loop.** `'outer: loop { loop { break 'outer; } }` breaks the outer
-   loop. Forgetting the label breaks only the inner loop. Use labels intentionally and document
-   complex nesting.
+ loop. Forgetting the label breaks only the inner loop. Use labels intentionally and document
+ complex nesting.
 
 8. **Mutating through a `for` loop incorrectly.** `for item in &mut collection` requires `*item` to
-   modify the value. Writing `item = new_value` rebinds the local variable without modifying the
-   collection.
+ modify the value. Writing `item = new_value` rebinds the local variable without modifying the
+ collection.
 
 9. **Integer range off-by-one.** `1..5` produces `[1, 2, 3, 4]` (exclusive end). `1..=5` produces
-   `[1, 2, 3, 4, 5]` (inclusive end). Mixing these up is a common source of bugs.
+ `[1, 2, 3, 4, 5]` (inclusive end). Mixing these up is a common source of bugs.
 
 10. **Using `?` in `main` without proper error types.** `main` can return `Result<(), E>` where
-    `E: Debug`. Use `Box<dyn Error>` for heterogeneous errors, or a specific error type for
-    consistency. The runtime prints the `Debug` representation, so ensure your error type has a
-    useful `Debug` impl.
+ `E: Debug`. Use `Box<dyn Error>` for heterogeneous errors, or a specific error type for
+ consistency. The runtime prints the `Debug` representation, so ensure your error type has a
+ useful `Debug` impl.
 
 ## Control Flow Decision Guide
 
@@ -1050,3 +1050,11 @@ graph TD
     K -->|Single pattern, ignore rest| L[Use if let or let-else]
     K -->|Exhaustive handling| M[Use match or ? operator]
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -24,7 +24,7 @@ Are they equal?
 
 **Solution:**
 
-$P(B) = 0.6$, $P(F) = 0.3$, $P(B \cap F) = 0.2$.
+$P(B) = 0.6$$P(F) = 0.3$$P(B \cap F) = 0.2$.
 
 (a) $P(F \mid B) = \dfrac{P(B \cap F)}{P(B)} = \dfrac{0.2}{0.6} = \dfrac{1}{3}$
 
@@ -32,7 +32,7 @@ $P(B) = 0.6$, $P(F) = 0.3$, $P(B \cap F) = 0.2$.
 
 $\dfrac{1}{3} \neq \dfrac{2}{3}$. They are NOT equal.
 
-$P(A \mid B) \neq P(B \mid A)$ in general. This is a fundamental misconception.
+$P(A \mid B) \neq P(B \mid A)$ . This is a fundamental misconception.
 
 ---
 
@@ -48,9 +48,9 @@ If $A$ and $B$ are mutually exclusive, then $P(A \cap B) = 0$.
 
 If $A$ and $B$ are independent, then $P(A \cap B) = P(A) \times P(B)$.
 
-So we need $P(A) \times P(B) = 0$, which means at least one of $P(A)$ or $P(B)$ is zero.
+So we need $P(A) \times P(B) = 0$Which means at least one of $P(A)$ or $P(B)$ is zero.
 
-If both $P(A) > 0$ and $P(B) > 0$, then mutually exclusive events CANNOT be independent.
+If both $P(A) > 0$ and $P(B) > 0$Then mutually exclusive events CANNOT be independent.
 
 Only the trivial case (where one event has probability zero) allows both properties simultaneously.
 
@@ -95,7 +95,7 @@ After replacement, the bag always has 3 red and 5 blue (8 total).
 
 **Question:**
 
-Events $A$ and $B$ satisfy $P(A) = 0.4$, $P(B) = 0.7$, and $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and determine whether $A$ and $B$ are independent.
+Events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and determine whether $A$ and $B$ are independent.
 
 **Solution:**
 
@@ -107,7 +107,7 @@ $$P(A \cap B) = 0.25$$
 
 For independence: $P(A) \times P(B) = 0.4 \times 0.7 = 0.28$.
 
-Since $P(A \cap B) = 0.25 \neq 0.28$, the events are **not** independent.
+Since $P(A \cap B) = 0.25 \neq 0.28$The events are **not** independent.
 
 ---
 
@@ -135,7 +135,7 @@ $$P = \frac{420}{1287} = \frac{140}{429}$$
 
 **Question:**
 
-Events $A$ and $B$ are independent with $P(A) = p$ and $P(B) = 2p$. Given that $P(A \cap B) = \dfrac{1}{8}$, find $p$.
+Events $A$ and $B$ are independent with $P(A) = p$ and $P(B) = 2p$. Given that $P(A \cap B) = \dfrac{1}{8}$Find $p$.
 
 **Solution:**
 
@@ -145,7 +145,7 @@ $$P(A \cap B) = P(A) \times P(B) = p \times 2p = 2p^2$$
 
 $$2p^2 = \frac{1}{8} \implies p^2 = \frac{1}{16} \implies p = \frac{1}{4}$$
 
-($p > 0$ since it is a probability, and $2p \leq 1$ gives $p \leq \dfrac{1}{2}$, which is satisfied.)
+($p > 0$ since it is a probability, and $2p \leq 1$ gives $p \leq \dfrac{1}{2}$Which is satisfied.)
 
 ---
 
@@ -153,7 +153,7 @@ $$2p^2 = \frac{1}{8} \implies p^2 = \frac{1}{16} \implies p = \frac{1}{4}$$
 
 **Question:**
 
-A coin is tossed until the first head appears. If the probability of heads is $p$, find the probability that the first head appears on the $n$-th toss. Show that the total probability sums to 1.
+A coin is tossed until the first head appears. If the probability of heads is $p$Find the probability that the first head appears on the $n$-th toss. Show that the total probability sums to 1.
 
 **Solution:**
 
@@ -165,7 +165,7 @@ Total probability:
 
 $$\sum_{n=1}^{\infty} p(1-p)^{n-1} = p \cdot \frac{1}{1 - (1-p)} = p \cdot \frac{1}{p} = 1$$
 
-This is a geometric series with first term $p$ and ratio $(1-p)$, converging since $0 < 1-p < 1$ when $0 < p < 1$.
+This is a geometric series with first term $p$ and ratio $(1-p)$Converging since $0 < 1-p < 1$ when $0 < p < 1$.
 
 ---
 
@@ -179,9 +179,9 @@ A factory has two machines producing items. Machine $A$ produces $60\%$ of the i
 
 **Solution:**
 
-Define events: $A$ = produced by Machine $A$, $B$ = produced by Machine $B$, $D$ = defective.
+Define events: $A$ = produced by Machine $A$$B$ = produced by Machine $B$$D$ = defective.
 
-Given: $P(A) = 0.6$, $P(B) = 0.4$, $P(D \mid A) = 0.03$, $P(D \mid B) = 0.05$.
+Given: $P(A) = 0.6$$P(B) = 0.4$$P(D \mid A) = 0.03$$P(D \mid B) = 0.05$.
 
 By the law of total probability:
 
@@ -305,7 +305,7 @@ Net expected gain: $E(X) - 5 = \dfrac{10}{3} - 5 = -\dfrac{5}{3} \approx -\$1.67
 
 Since the expected net gain is negative, the game is **not fair**. The player loses on average $\dfrac{5}{3}$ dollars per game.
 
-A fair game would require the cost to equal the expected winnings, i.e. the cost should be $\dfrac{10}{3}$ dollars.
+A fair game would require the cost to equal the expected winnings, i.e. The cost should be $\dfrac{10}{3}$ dollars.
 
 ---
 
@@ -321,7 +321,7 @@ Exactly 3 draws means: first two are silver, third is gold.
 
 $$P = \frac{6}{10} \times \frac{5}{9} \times \frac{4}{8} = \frac{6 \times 5 \times 4}{10 \times 9 \times 8} = \frac{120}{720} = \frac{1}{6}$$
 
-**DSE Exam Technique:** Show each multiplication step clearly. Write the probability of each individual draw before combining them.
+**DSE Exam Technique:** Show each multiplication step . Write the probability of each individual draw before combining them.
 
 ---
 
@@ -349,7 +349,7 @@ $$P = \frac{\text{area of inner square}}{\text{area of outer square}} = \frac{2^
 
 4. **Not using the complement for "at least" problems.** For questions asking "at least one" or "at least two," always consider using $P(\text{at least } k) = 1 - P(\text{fewer than } k)$. Direct enumeration often leads to errors and missed cases.
 
-5. **Incorrect counting with identical objects.** When arranging letters or selecting items with identical elements, remember to divide by the factorial of the number of identical items. For example, the arrangements of "AABB" is $\dfrac{4!}{2! \times 2!} = 6$, not $4! = 24$.
+5. **Incorrect counting with identical objects.** When arranging letters or selecting items with identical elements, remember to divide by the factorial of the number of identical items. For example, the arrangements of "AABB" is $\dfrac{4!}{2! \times 2!} = 6$Not $4! = 24$.
 
 ---
 
@@ -452,11 +452,11 @@ $$P(X \geq 3) = 1 - (0.08235 + 0.24707 + 0.3177) = 1 - 0.64712 = 0.35288$$
 
 ### DSE-4
 
-A box contains $n$ red balls and $n$ blue balls. Three balls are drawn at random without replacement. Find, in terms of $n$, the probability that:
+A box contains $n$ red balls and $n$ blue balls. Three balls are drawn at random without replacement. Find, in terms of $n$The probability that:
 
 (a) All three balls are of the same colour. (3 marks)
 (b) The three balls are not all of the same colour. (2 marks)
-(c) For $n = 5$, evaluate the probability in part (a) as a fraction. (1 mark)
+(c) For $n = 5$Evaluate the probability in part (a) as a fraction. (1 mark)
 
 **Solution:**
 
@@ -482,7 +482,7 @@ $$P = \frac{5 - 2}{4(10 - 1)} = \frac{3}{36} = \frac{1}{12}$$
 
 ### DSE-5
 
-Events $A$ and $B$ are such that $P(A) = 0.5$, $P(B) = 0.6$, and $P(A \mid B) = 0.4$.
+Events $A$ and $B$ are such that $P(A) = 0.5$$P(B) = 0.6$And $P(A \mid B) = 0.4$.
 
 (a) Find $P(A \cap B)$. (1 mark)
 (b) Determine whether $A$ and $B$ are independent. Justify your answer. (3 marks)
@@ -495,7 +495,7 @@ Events $A$ and $B$ are such that $P(A) = 0.5$, $P(B) = 0.6$, and $P(A \mid B) = 
 
 (b) For independence: $P(A) \times P(B) = 0.5 \times 0.6 = 0.30$.
 
-Since $P(A \cap B) = 0.24 \neq 0.30 = P(A) \times P(B)$, the events are **not independent**.
+Since $P(A \cap B) = 0.24 \neq 0.30 = P(A) \times P(B)$The events are **not independent**.
 
 (c) $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.5 + 0.6 - 0.24 = 0.86$.
 

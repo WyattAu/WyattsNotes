@@ -62,7 +62,7 @@ The lattice energy of MgO is $-3845\,\text{kJ mol}^{-1}$.
 
 **Question:**
 
-The standard enthalpy change of combustion of ethanol is $-1367\,\text{kJ mol}^{-1}$. The standard enthalpy change of combustion of carbon is $-394\,\text{kJ mol}^{-1}$, and the standard enthalpy change of combustion of hydrogen is $-286\,\text{kJ mol}^{-1}$.
+The standard enthalpy change of combustion of ethanol is $-1367\,\text{kJ mol}^{-1}$. The standard enthalpy change of combustion of carbon is $-394\,\text{kJ mol}^{-1}$And the standard enthalpy change of combustion of hydrogen is $-286\,\text{kJ mol}^{-1}$.
 
 (a) Use Hess's law to calculate the standard enthalpy change of formation of ethanol, $\text{C}_2\text{H}_5\text{OH}(l)$.
 
@@ -100,7 +100,7 @@ For the decomposition of calcium carbonate:
 
 $$\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$$
 
-$\Delta H^\circ = +178\,\text{kJ mol}^{-1}$, $\Delta S^\circ = +161\,\text{J K}^{-1}\text{ mol}^{-1}$.
+$\Delta H^\circ = +178\,\text{kJ mol}^{-1}$$\Delta S^\circ = +161\,\text{J K}^{-1}\text{ mol}^{-1}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\text{K}$ and state whether the reaction is spontaneous at this temperature.
 
@@ -116,7 +116,7 @@ $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$$
 
 $$\Delta G^\circ = 178000 - 298 \times 161 = 178000 - 47978 = +130022\,\text{J mol}^{-1} = +130\,\text{kJ mol}^{-1}$$
 
-$\Delta G^\circ \gt 0$, so the reaction is **not spontaneous** at $298\,\text{K}$.
+$\Delta G^\circ \gt 0$So the reaction is **not spontaneous** at $298\,\text{K}$.
 
 (b) The reaction becomes feasible when $\Delta G^\circ \leq 0$:
 
@@ -142,11 +142,11 @@ The Contact process involves the oxidation of sulfur dioxide:
 
 $$2\text{SO}_2(g) + \text{O}_2(g) \rightleftharpoons 2\text{SO}_3(g)$$
 
-$\Delta H^\circ = -198\,\text{kJ mol}^{-1}$, $\Delta S^\circ = -190\,\text{J K}^{-1}\text{ mol}^{-1}$.
+$\Delta H^\circ = -198\,\text{kJ mol}^{-1}$$\Delta S^\circ = -190\,\text{J K}^{-1}\text{ mol}^{-1}$.
 
 (a) Calculate the temperature above which the reaction is no longer thermodynamically feasible.
 
-(b) Given that industrial conditions use $400$--$450\,^\circ\text{C}$, explain why this temperature range is chosen despite the thermodynamic considerations.
+(b) Given that industrial conditions use $400$--$450\,^\circ\text{C}$Explain why this temperature range is chosen despite the thermodynamic considerations.
 
 (c) Calculate $\Delta G^\circ$ at $700\,\text{K}$ and hence calculate $K_p$ at this temperature.
 
@@ -191,7 +191,7 @@ The entropy change involves competing factors:
 - **Positive contribution:** The ordered ionic lattice breaks down, and ions become dispersed in solution (increased disorder)
 - **Negative contribution:** Water molecules become more ordered around the hydrated ions (water molecules orient their partial charges towards the ions, restricting their freedom)
 
-For $\text{NaCl}$, the lattice breakdown slightly outweighs the ordering of water, giving a small positive $\Delta S$.
+For $\text{NaCl}$The lattice breakdown slightly outweighs the ordering of water, giving a small positive $\Delta S$.
 
 For $\text{CaCO}_3$: $\text{CaCO}_3(s) \to \text{Ca}^{2+}(aq) + \text{CO}_3^{2-}(aq)$
 
@@ -206,7 +206,7 @@ The process is endothermic ($\Delta H \gt 0$), but the entropy change is strongl
 
 The large positive $\Delta S$ makes $-T\Delta S$ more negative than $\Delta H$ is positive, giving $\Delta G \lt 0$ (spontaneous). This demonstrates that enthalpy alone does not determine spontaneity.
 
-(c) At the melting point, $\Delta G = 0$, so $\Delta S = \Delta H/T$:
+(c) At the melting point, $\Delta G = 0$So $\Delta S = \Delta H/T$:
 
 $$\Delta S = \frac{6010}{273} = 22.0\,\text{J K}^{-1}\text{ mol}^{-1}$$
 
@@ -225,7 +225,7 @@ The hydrogenation of ethene is:
 
 $$\text{C}_2\text{H}_4(g) + \text{H}_2(g) \to \text{C}_2\text{H}_6(g) \quad \Delta H = -137\,\text{kJ mol}^{-1}$$
 
-Bond enthalpies: C$=$C $= 612$, C--C $= 348$, C--H $= 412$, H--H $= 436$ (all in $\text{kJ mol}^{-1}$).
+Bond enthalpies: C$=$C $= 612$C--C $= 348$C--H $= 412$H--H $= 436$ (all in $\text{kJ mol}^{-1}$).
 
 (a) Use bond enthalpies to estimate $\Delta H$ for this reaction and explain why it differs from the given value.
 

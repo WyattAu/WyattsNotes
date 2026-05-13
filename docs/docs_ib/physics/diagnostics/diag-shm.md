@@ -25,9 +25,9 @@ A particle of mass $m$ moves in one dimension. In each of the following cases, d
 
 (a) The restoring force is $F = -kx + bx^3$.
 
-Newton's second law: $ma = -kx + bx^3$, so $a = -\frac{k}{m}x + \frac{b}{m}x^3$.
+Newton's second law: $ma = -kx + bx^3$So $a = -\frac{k}{m}x + \frac{b}{m}x^3$.
 
-This is **not** SHM because the acceleration is not proportional to displacement. The $bx^3$ term makes it anharmonic. The motion is approximately SHM only when $bx^3 \ll kx$, i.e. $x \ll \sqrt{k/b}$ (small oscillations). But strictly, the motion is not SHM.
+This is **not** SHM because the acceleration is not proportional to displacement. The $bx^3$ term makes it anharmonic. The motion is approximately SHM only when $bx^3 \ll kx$I.e. $x \ll \sqrt{k/b}$ (small oscillations). But strictly, the motion is not SHM.
 
 (b) The equation of motion for a simple pendulum is:
 
@@ -35,11 +35,11 @@ $$\frac{d^2\theta}{dt^2} + \frac{g}{L}\sin\theta = 0$$
 
 For SHM, we need $a = -\omega^2 x$ (or $\ddot{\theta} = -\omega^2 \theta$), which requires $\sin\theta \approx \theta$ (small angle approximation).
 
-Using $\sin\theta = \theta - \theta^3/6 + \ldots$, the exact equation is:
+Using $\sin\theta = \theta - \theta^3/6 + \ldots$The exact equation is:
 
 $$\ddot{\theta} = -\frac{g}{L}\theta + \frac{g}{6L}\theta^3 - \ldots$$
 
-This is SHM only when $\theta$ is small enough that $\theta^3/6 \ll \theta$, i.e. $\theta \ll \sqrt{6} \approx 2.45\,\text{rad}$ (about $140^\circ$). For practical purposes, $\theta_{\max} \lt 15^\circ$ ensures the error is less than $0.5\%$.
+This is SHM only when $\theta$ is small enough that $\theta^3/6 \ll \theta$I.e. $\theta \ll \sqrt{6} \approx 2.45\,\text{rad}$ (about $140^\circ$). For practical purposes, $\theta_{\max} \lt 15^\circ$ ensures the error is less than $0.5\%$.
 
 The motion is **approximately** SHM for small angles, but not exactly SHM. The period is $T = 2\pi\sqrt{L/g}$ only in the small angle limit.
 
@@ -53,7 +53,7 @@ $$a = \frac{F}{m} = \frac{-2\rho Ag x}{2\rho AL} = -\frac{g}{L}x$$
 
 This is of the form $a = -\omega^2 x$ with $\omega^2 = g/L$.
 
-The motion **is** SHM with period $T = 2\pi\sqrt{L/g}$, where $L$ is the total length of the liquid column. This is exact -- no approximation is needed.
+The motion **is** SHM with period $T = 2\pi\sqrt{L/g}$Where $L$ is the total length of the liquid column. This is exact -- no approximation is needed.
 
 ---
 
@@ -99,7 +99,7 @@ The KE equals PE at displacement $x = \pm A/\sqrt{2}$.
 
 (c) The claim is correct. The total mechanical energy is constant because the only force doing work is the spring force, which is conservative. A conservative force is defined as one for which the work done depends only on the initial and final positions, not the path. The spring force $F = -kx$ satisfies this criterion.
 
-In general, constant total energy implies all forces are conservative. If friction were present, the total energy would decrease over time as energy is dissipated as thermal energy.
+Constant total energy implies all forces are conservative. If friction were present, the total energy would decrease over time as energy is dissipated as thermal energy.
 
 ---
 
@@ -173,7 +173,7 @@ The equilibrium position shifts downward by $\Delta x = 0.0512 - 0.0392 = 0.012\
 
 (b) The angular frequency: $\omega = \sqrt{k/m} = \sqrt{500/2.0} = \sqrt{250} = 15.81\,\text{rad}\,\text{s}^{-1}$
 
-Note: the period of SHM depends only on $k$ and $m$, **not** on gravity or the lift's acceleration.
+Note: the period of SHM depends only on $k$ and $m$**not** on gravity or the lift's acceleration.
 
 Period: $T = 2\pi/\omega = 2\pi/15.81 = 0.397\,\text{s}$
 
@@ -191,7 +191,7 @@ Maximum acceleration: $a_{\max} = A\omega^2 = 0.05 \times 250 = 12.5\,\text{m}\,
 
 **Question:**
 
-A mass-spring system has $m = 0.50\,\text{kg}$, $k = 50\,\text{N}\,\text{m}^{-1}$, and is subject to a damping force $F_d = -bv$ where $b = 0.50\,\text{N}\,\text{s}\,\text{m}^{-1}$. A driving force $F = F_0\cos(\omega_d t)$ is applied.
+A mass-spring system has $m = 0.50\,\text{kg}$$k = 50\,\text{N}\,\text{m}^{-1}$And is subject to a damping force $F_d = -bv$ where $b = 0.50\,\text{N}\,\text{s}\,\text{m}^{-1}$. A driving force $F = F_0\cos(\omega_d t)$ is applied.
 
 (a) Calculate the natural frequency, the damping ratio, and determine whether the system is underdamped, critically damped, or overdamped.
 
@@ -209,7 +209,7 @@ Damping parameter: $\gamma = b/(2m) = 0.50/(2 \times 0.50) = 0.50\,\text{s}^{-1}
 
 Damping ratio: $\zeta = \gamma/\omega_0 = 0.50/10.0 = 0.05$
 
-Since $\zeta \lt 1$, the system is **underdamped**.
+Since $\zeta \lt 1$The system is **underdamped**.
 
 (b) The resonant frequency (where amplitude is maximum) is:
 
@@ -247,7 +247,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) At equilibrium: $T = mg$, so $kx_0 = mg$:
+(a) At equilibrium: $T = mg$So $kx_0 = mg$:
 
 $$x_0 = \frac{mg}{k} = \frac{2.0 \times 9.81}{100} = 0.1962\,\text{m}$$
 
@@ -285,7 +285,7 @@ At the lowest point (extension $x_{\max}$), all energy is elastic PE minus gravi
 
 $$\frac{1}{2}kx_{\max}^2 - mgx_{\max} = \frac{1}{2} \times 100 \times x_{\max}^2 - 19.62x_{\max}$$
 
-Setting equal to initial energy (at natural length, all energy is $mgx_{\max}$... but we need to be careful with reference).
+Setting equal to initial energy (at natural length, all energy is $mgx_{\max}$... But we need to be careful with reference).
 
 Using the total energy approach from the release point (natural length, zero spring PE, zero KE, height = $x_{\max}$ above lowest point):
 

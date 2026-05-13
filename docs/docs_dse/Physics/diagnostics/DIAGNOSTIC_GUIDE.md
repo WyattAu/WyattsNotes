@@ -133,7 +133,7 @@ Sum all 10 topic scores (max 240):
 ### Electrical Circuits
 - Confusing current direction with electron flow direction
 - Mixing up EMF and terminal PD
-- Wrong formula for parallel resistance ($1/R = 1/R_1 + 1/R_2$, not $R = R_1 + R_2$)
+- Wrong formula for parallel resistance ($1/R = 1/R_1 + 1/R_2$Not $R = R_1 + R_2$)
 - Ignoring internal resistance in calculations
 
 ### Electricity and Magnetism

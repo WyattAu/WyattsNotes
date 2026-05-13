@@ -11,16 +11,16 @@ slug: sealed-classes
 ## What Sealed Classes Are
 
 Sealed classes are a language-level constraint that restricts a class hierarchy to a known, finite
-set of subtypes, all of which must be declared in the same library. They are Dart 3's mechanism for
-implementing **algebraic data types (ADTs)** — specifically, sum types.
+Set of subtypes, all of which must be declared in the same library. They are Dart 3's mechanism for
+Implementing **algebraic data types (ADTs)** — specifically, sum types.
 
 ### The Systems Engineering Motivation
 
 In systems programming, you frequently model states that are mutually exclusive and exhaustive: a
-network request is either pending, successful, or failed. A packet is either a SYN, ACK, or DATA
-frame. A file descriptor is either open or closed. These are not just "different values" — they are
-entirely different structures with different fields, different invariants, and different handling
-logic.
+Network request is either pending, successful, or failed. A packet is either a SYN, ACK, or DATA
+Frame. A file descriptor is either open or closed. These are not just "different values" — they are
+Entirely different structures with different fields, different invariants, and different handling
+Logic.
 
 Before Dart 3, you had three options for modeling this:
 
@@ -29,13 +29,13 @@ Before Dart 3, you had three options for modeling this:
 3. **Ad-hoc tagged unions** — use an enum field as a discriminator, with `switch` and `default`.
 
 All three are deficient. Sealed classes solve this by combining the expressiveness of class
-hierarchies (each variant has its own fields) with the exhaustiveness of enums (the compiler knows
-all variants).
+Hierarchies (each variant has its own fields) with the exhaustiveness of enums (the compiler knows
+All variants).
 
 ### Sum Types in Language Design
 
 A sum type (tagged union, discriminated union) is a type that can be exactly one of a fixed set of
-variants. This is fundamental in languages like Rust (`enum`), Haskell (`data`), and Scala 3
+Variants. This is fundamental in languages like Rust (`enum`), Haskell (`data`), and Scala 3
 (`enum`/`sealed trait`). The key properties:
 
 - **Closed**: No new variants can be added outside the defining module.
@@ -70,13 +70,13 @@ The `sealed` modifier on `NetworkResult` means:
 
 1. `NetworkResult` cannot be instantiated directly (it is implicitly abstract).
 2. Direct subtypes of `NetworkResult` must be in the **same library** (same file, or files in the
-   same `part`/`part of` chain).
+ same `part`/`part of` chain).
 3. The compiler can enumerate all direct subtypes.
 
 ### The Same-Library Restriction
 
 This is the critical constraint. "Same library" in Dart means the same compilation unit — a file
-plus all its `part` files. It does **not** mean the same package or the same directory.
+Plus all its `part` files. It does **not** mean the same package or the same directory.
 
 ```dart
 // network_result.dart — the sealed class lives here
@@ -90,13 +90,13 @@ class Failure extends NetworkResult { ... }
 ```
 
 **Why same-library only**: The compiler needs to enumerate all direct subtypes for exhaustiveness
-checking. If subtypes could be in any library, the compiler would need whole-program analysis to
-find them — which is impossible for separately compiled packages. By restricting to the same
-library, the compiler has a complete, local view of the hierarchy.
+Checking. If subtypes could be in any library, the compiler would need whole-program analysis to
+Find them — which is impossible for separately compiled packages. By restricting to the same
+Library, the compiler has a complete, local view of the hierarchy.
 
 **Practical implication**: You cannot split sealed class subtypes across files in a package unless
-you use `part`/`part of`. This is a deliberate design trade-off — exhaustiveness is more valuable
-than distribution.
+You use `part`/`part of`. This is a deliberate design trade-off — exhaustiveness is more valuable
+Than distribution.
 
 ```dart
 // result.dart
@@ -132,7 +132,7 @@ abstract sealed class Shape {} // Legal but redundant
 ## Sealed Subtypes
 
 A sealed class can have subtypes that are classes, enums, or mixins. Each subtype relationship has
-specific rules.
+Specific rules.
 
 ### `extends` — Class Subtypes
 
@@ -158,12 +158,12 @@ class Mul extends Expr {
 ```
 
 Classes that `extend` a sealed class are direct subtypes. The compiler includes them in
-exhaustiveness checks.
+Exhaustiveness checks.
 
 ### `implements` — Interface Subtypes
 
 A class can `implement` a sealed class instead of extending it. This is still a direct subtype for
-exhaustiveness purposes:
+Exhaustiveness purposes:
 
 ```dart
 sealed class Shape {}
@@ -182,14 +182,14 @@ class Square implements Shape {
 The difference between `extends` and `implements` for sealed subtypes:
 
 - `extends`: Inherits implementation (methods, fields). Is a subtype in both the type hierarchy and
-  the sealed hierarchy.
+ the sealed hierarchy.
 - `implements`: Does not inherit implementation. Only commits to the interface contract. Is still a
-  direct subtype of the sealed class for exhaustiveness.
+ direct subtype of the sealed class for exhaustiveness.
 
 ### `enum` as Sealed Subtype
 
 Dart 3 enums are implicitly sealed. An enum can extend a sealed class, and each enum value becomes a
-direct subtype:
+Direct subtype:
 
 ```dart
 sealed class TokenType {}
@@ -247,7 +247,7 @@ class FlatButton extends Object with ButtonBehavior {
 ## Exhaustive Switch
 
 The primary value of sealed classes is enabling exhaustive switch expressions. The compiler verifies
-that every direct subtype is handled.
+That every direct subtype is handled.
 
 ### Basic Exhaustive Switch
 
@@ -270,7 +270,7 @@ T unwrapOr&lt;T&gt;(Result&lt;T&gt; result, T defaultValue) => switch (result) {
 };
 ```
 
-No `default` case. If you add `class Pending&lt;T&gt; extends Result&lt;T&gt;`, every switch on
+No `default` case. If you add `class Pending&lt;T&gt; extends Result&lt;T&gt;`Every switch on
 `Result&lt;T&gt;` fails to compile until you handle `Pending`.
 
 ### Switch Expression vs Switch Statement
@@ -309,7 +309,7 @@ String describe(Result&lt;int&gt; r) => switch (r) {
 ```
 
 This is a **breaking change at compile time**, not at runtime. You find out immediately when you add
-a new subtype, not when a user hits an unhandled case in production.
+A new subtype, not when a user hits an unhandled case in production.
 
 ### `default` Defeats Exhaustiveness
 
@@ -328,12 +328,12 @@ String describe(Result&lt;int&gt; r) => switch (r) {
 ```
 
 The only time `default` is acceptable with a sealed type is when you intentionally want to ignore
-new subtypes (which is almost never the right choice).
+New subtypes (which is almost never the right choice).
 
 ### Guard Clauses and Exhaustiveness
 
 Guards (`when`) do not contribute to exhaustiveness. If a subtype is only handled behind a guard,
-the compiler still considers it uncovered:
+The compiler still considers it uncovered:
 
 ```dart
 // ERROR — not exhaustive (Ok is guarded, Err is unguarded)
@@ -354,18 +354,18 @@ String describe(Result&lt;int&gt; r) => switch (r) {
 
 The key difference: abstract classes allow external subtypes; sealed classes do not.
 
-| Property                | `abstract class`              | `sealed class`            |
+| Property | `abstract class` | `sealed class` |
 | ----------------------- | ----------------------------- | ------------------------- |
-| Instantiable directly   | No                            | No                        |
-| External subtypes       | Yes (any library can extend)  | No (same library only)    |
-| Exhaustive switch       | No (must use `default`)       | Yes (compiler-enforced)   |
-| Type hierarchy openness | Open (extensible)             | Closed (fixed)            |
-| Use case                | Polymorphism, shared behavior | Sum types, state machines |
+| Instantiable directly | No | No |
+| External subtypes | Yes (any library can extend) | No (same library only) |
+| Exhaustive switch | No (must use `default`) | Yes (compiler-enforced) |
+| Type hierarchy openness | Open (extensible) | Closed (fixed) |
+| Use case | Polymorphism, shared behavior | Sum types, state machines |
 
 ### When to Use Abstract Classes
 
 Use abstract classes when you want to define a contract and allow any library to provide
-implementations:
+Implementations:
 
 ```dart
 // Anyone in any library can implement this
@@ -406,7 +406,7 @@ Ask yourself: "Will I ever need to add a new subtype from outside this library?"
 `abstract class`. If the subtypes are a closed set defined by this library, use `sealed class`.
 
 In practice, most "state" types and "result" types are closed — you know all possible states at
-design time. Most "interface" types are open — you want external implementations.
+Design time. Most "interface" types are open — you want external implementations.
 
 ## Sealed Classes vs Enums
 
@@ -450,15 +450,15 @@ class HttpLoading extends HttpResponse&lt;Never&gt; {}
 
 ### Comparison
 
-| Property                 | `enum`                             | `sealed class`                              |
+| Property | `enum` | `sealed class` |
 | ------------------------ | ---------------------------------- | ------------------------------------------- |
-| Variant-specific fields  | No (all variants share fields)     | Yes (each class has its own fields)         |
-| Variant-specific methods | Limited (no override per variant)  | Yes (each class has its own methods)        |
-| Exhaustive switch        | Yes                                | Yes                                         |
-| Compile-time constants   | Yes (`const` values)               | No                                          |
-| Memory overhead          | Minimal (single object per value)  | Higher (each instance is a separate object) |
-| Complexity               | Simple                             | More complex                                |
-| Use case                 | Fixed value sets with uniform data | Heterogeneous types with different shapes   |
+| Variant-specific fields | No (all variants share fields) | Yes (each class has its own fields) |
+| Variant-specific methods | Limited (no override per variant) | Yes (each class has its own methods) |
+| Exhaustive switch | Yes | Yes |
+| Compile-time constants | Yes (`const` values) | No |
+| Memory overhead | Minimal (single object per value) | Higher (each instance is a separate object) |
+| Complexity | Simple | More complex |
+| Use case | Fixed value sets with uniform data | Heterogeneous types with different shapes |
 
 ### When to Use Which
 
@@ -471,7 +471,7 @@ Use **enums** when:
 Use **sealed classes** when:
 
 - Each variant has a fundamentally different structure (Success has data, Error has message, Loading
-  has nothing).
+ has nothing).
 - Each variant needs its own methods.
 - The type hierarchy is more complex than a flat list of values.
 
@@ -483,7 +483,7 @@ All enum values share the same constructor parameters.
 ### Result Type (Success/Error)
 
 The most common use of sealed classes — replacing nullable returns or exceptions with explicit
-success/failure:
+Success/failure:
 
 ```dart
 sealed class Result&lt;T&gt; {
@@ -530,12 +530,12 @@ void main() async {
 **Why not use exceptions?** Exceptions are invisible in the type signature. A function
 `User fetchUser(int id)` does not tell you it can throw. A function
 `Result&lt;User&gt; fetchUser(int id)` makes the failure case explicit in the type. In systems
-engineering, this is the difference between "trust the documentation" and "trust the compiler."
+Engineering, this is the difference between "trust the documentation" and "trust the compiler."
 
 ### AST Representation
 
 Abstract syntax trees are the canonical use case for sealed classes — each node type has a different
-structure:
+Structure:
 
 ```dart
 sealed class AstNode {
@@ -739,8 +739,8 @@ String describe(Outcome&lt;int&gt; o) => switch (o) {
 ```
 
 Records are useful as fields within sealed subtypes when you want to group related values without
-declaring a separate class. They are value types (structural equality), which makes testing and
-comparison straightforward.
+Declaring a separate class. They are value types (structural equality), which makes testing and
+Comparison straightforward.
 
 ### Records as Sealed Subtype Payloads
 
@@ -769,8 +769,8 @@ Use classes when you need methods, validation, or identity semantics.
 ## Sealed Classes and Pattern Matching
 
 Sealed classes and pattern matching are two halves of the same feature. Sealed classes define the
-closed type hierarchy; pattern matching provides the exhaustive decomposition. Neither is fully
-useful without the other.
+Closed type hierarchy; pattern matching provides the exhaustive decomposition. Neither is fully
+Useful without the other.
 
 ### The Complete Pattern
 
@@ -843,7 +843,7 @@ String classify(Expr expr) => switch (expr) {
 ### Sealed Classes with Generics
 
 Generics and sealed classes compose well. The sealed constraint applies to the class hierarchy, not
-to the type parameter:
+To the type parameter:
 
 ```dart
 sealed class Either&lt;L, R&gt; {}
@@ -913,12 +913,12 @@ Forgetting to add `part 'new_file.dart'` in `main.dart` causes a compile error.
 ### 3. Using `default` with Sealed Types
 
 As discussed, `default` defeats exhaustiveness. The compiler will not warn you about missing cases
-if `default` is present. This is technically allowed but is always wrong for sealed types.
+If `default` is present. This is technically allowed but is always wrong for sealed types.
 
 ### 4. Exhaustiveness Only Applies to Direct Subtypes
 
 The compiler checks exhaustiveness of **direct** subtypes only. If a subtype has further subtypes,
-the compiler does not recurse:
+The compiler does not recurse:
 
 ```dart
 sealed class Animal {}
@@ -944,7 +944,7 @@ String describe(Animal a) => switch (a) {
 ```
 
 The compiler considers `Mammal` a sufficient match for `Dog` and `Cat` because `Mammal` is a
-supertype. To get fine-grained matching, you must pattern match on the leaf types.
+Supertype. To get fine-grained matching, you must pattern match on the leaf types.
 
 ### 5. Sealed Classes Cannot Be Constructed
 
@@ -1003,7 +1003,7 @@ void render(Component c) => switch (c) {
 ```
 
 The mixin application does not create a new sealed subtype — `Button` is the subtype, regardless of
-mixins.
+Mixins.
 
 ### 8. Generic Sealed Classes with Covariance
 
@@ -1025,7 +1025,7 @@ String describe(Box&lt;int&gt; box) => switch (box) {
 ```
 
 Generics do not interfere with exhaustiveness. The compiler checks the sealed hierarchy structure,
-not the generic type parameter.
+Not the generic type parameter.
 
 ### 9. Trying to Use Sealed Classes for Open Hierarchies
 
@@ -1075,4 +1075,12 @@ Event fromJson(Map&lt;String, dynamic&gt; json) => switch (json['type']) {
 
 The `switch` on the discriminator string is not exhaustive (strings are not sealed), so you need
 `default` here. This is the one place where sealed class exhaustiveness does not apply — at the
-serialization boundary where types are erased.
+Serialization boundary where types are erased.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

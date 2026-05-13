@@ -8,42 +8,42 @@ sidebar_position: 2
 ## Unix Permission Model
 
 Every file and directory on a Linux system carries a set of permission bits that control which users
-can read, write, or execute it. The kernel enforces these permissions during every file system
-operation.
+Can read, write, or execute it. The kernel enforces these permissions during every file system
+Operation.
 
 ### Permission Bits
 
 Each file has three categories of permissions, each with three bits:
 
-| Category      | Read (r)                                    | Write (w)                                     | Execute (x)                |
+| Category | Read (r) | Write (w) | Execute (x) |
 | ------------- | ------------------------------------------- | --------------------------------------------- | -------------------------- |
 | **Owner (u)** | Read file contents / List directory entries | Modify file / Create/delete directory entries | Run file / Enter directory |
-| **Group (g)** | Same as owner for group members             | Same                                          | Same                       |
-| **Other (o)** | Same for everyone else                      | Same                                          | Same                       |
+| **Group (g)** | Same as owner for group members | Same | Same |
+| **Other (o)** | Same for everyone else | Same | Same |
 
 ### Octal Notation
 
 | Octal | Binary | Permission |
 | ----- | ------ | ---------- |
-| 0     | 000    | ---        |
-| 1     | 001    | --x        |
-| 2     | 010    | -w-        |
-| 3     | 011    | -wx        |
-| 4     | 100    | r--        |
-| 5     | 101    | r-x        |
-| 6     | 110    | rw-        |
-| 7     | 111    | rwx        |
+| 0 | 000 | --- |
+| 1 | 001 | --x |
+| 2 | 010 | -w- |
+| 3 | 011 | -wx |
+| 4 | 100 | r-- |
+| 5 | 101 | r-x |
+| 6 | 110 | rw- |
+| 7 | 111 | rwx |
 
 Common permission sets:
 
-| Octal | Meaning   | Use Case                                    |
+| Octal | Meaning | Use Case |
 | ----- | --------- | ------------------------------------------- |
-| 755   | rwxr-xr-x | Executables, directories                    |
-| 644   | rw-r--r-- | Regular files                               |
-| 700   | rwx------ | Private scripts                             |
-| 600   | rw------- | SSH keys, config files                      |
-| 400   | r-------- | Read-only secrets                           |
-| 711   | rwx--x--x | Public directories (listable only by owner) |
+| 755 | rwxr-xr-x | Executables, directories |
+| 644 | rw-r--r-- | Regular files |
+| 700 | rwx------ | Private scripts |
+| 600 | rw------- | SSH keys, config files |
+| 400 | r-------- | Read-only secrets |
+| 711 | rwx--x--x | Public directories (listable only by owner) |
 
 ### Viewing Permissions
 
@@ -67,11 +67,11 @@ stat /etc/passwd
 
 Directory permissions have different semantics than file permissions:
 
-| Permission | File                 | Directory                                      |
+| Permission | File | Directory |
 | ---------- | -------------------- | ---------------------------------------------- |
-| r          | Read file contents   | List filenames (requires x)                    |
-| w          | Modify file contents | Create/delete/rename files (requires x)        |
-| x          | Execute as a program | Enter directory (cd), access inode information |
+| r | Read file contents | List filenames (requires x) |
+| w | Modify file contents | Create/delete/rename files (requires x) |
+| x | Execute as a program | Enter directory (cd), access inode information |
 
 ```text
 To list directory contents:    r + x
@@ -167,19 +167,19 @@ chown --reference=ref.txt target.txt
 :::info
 
 Only root can change the owner of a file. The owner can change the group to any group they are a
-member of. This is enforced by the kernel: the `chown(2)` system call checks `capable(CAP_CHOWN)`.
+Member of. This is enforced by the kernel: the `chown(2)` system call checks `capable(CAP_CHOWN)`.
 
 :::
 
 ## umask
 
 The umask (user file creation mask) determines the default permissions for newly created files and
-directories. It is a mask that is subtracted from the maximum permissions:
+Directories. It is a mask that is subtracted from the maximum permissions:
 
-| Creation     | Maximum | Applied as         | umask 0022 result |
+| Creation | Maximum | Applied as | umask 0022 result |
 | ------------ | ------- | ------------------ | ----------------- |
-| Regular file | 0666    | 0666 & ~022 = 0644 | rw-r--r--         |
-| Directory    | 0777    | 0777 & ~022 = 0755 | rwxr-xr-x         |
+| Regular file | 0666 | 0666 & ~022 = 0644 | rw-r--r-- |
+| Directory | 0777 | 0777 & ~022 = 0755 | rwxr-xr-x |
 
 ```bash
 # View current umask
@@ -202,8 +202,8 @@ echo 'umask 0027' >> ~/.profile
 :::warning
 
 `umask` only affects permissions at creation time. It does not modify existing files. If you need to
-tighten permissions on existing files, use `chmod` explicitly. Also, `umask` only removes bits — it
-never adds execute permission to files, which is why `touch newfile` creates files with 0666 &
+Tighten permissions on existing files, use `chmod` explicitly. Also, `umask` only removes bits — it
+Never adds execute permission to files, which is why `touch newfile` creates files with 0666 &
 ~umask (e.g., 0644), never with execute bits set.
 
 :::
@@ -213,8 +213,8 @@ never adds execute permission to files, which is why `touch newfile` creates fil
 ### setuid (SUID) — Octal 4000
 
 When the setuid bit is set on an executable, the process runs with the **effective UID of the file
-owner**, not the calling user. This allows non-root users to perform operations that require
-elevated privileges.
+Owner**, not the calling user. This allows non-root users to perform operations that require
+Elevated privileges.
 
 ```bash
 # Set setuid
@@ -245,7 +245,7 @@ How setuid works:
 On executables: the process runs with the **effective GID of the file's group**.
 
 On directories: new files created inside inherit the **directory's group** rather than the creator's
-primary group.
+Primary group.
 
 ```bash
 # Set setgid on directory
@@ -265,7 +265,7 @@ find / -perm -2000 -type d
 ### Sticky Bit — Octal 1000
 
 When set on a directory, only the file owner (or root) can delete or rename files within it,
-regardless of the directory's write permissions.
+Regardless of the directory's write permissions.
 
 ```bash
 # Set sticky bit
@@ -310,8 +310,8 @@ chmod u-s /path/to/binary
 :::danger
 
 Never set setuid on shell scripts. Shell scripts are interpreted by `/bin/bash` (or similar), which
-itself would need setuid. Instead, use a compiled wrapper or sudo. A setuid shell script is a
-privilege escalation vulnerability.
+Itself would need setuid. Instead, use a compiled wrapper or sudo. A setuid shell script is a
+Privilege escalation vulnerability.
 
 :::
 
@@ -377,7 +377,7 @@ setfacl -R -m g:devs:rx /var/www/html/
 ### ACL Mask
 
 The mask is a special ACL entry that limits the maximum effective permissions for named users, named
-groups, and the file group. It does not affect the owner or other permissions.
+Groups, and the file group. It does not affect the owner or other permissions.
 
 ```bash
 # The mask appears as the group permission in ls -l
@@ -437,23 +437,23 @@ setfacl --restore=data_acls.txt
 ## Capabilities
 
 Linux capabilities break root privileges into discrete units, allowing fine-grained privilege
-assignment without full root access.
+Assignment without full root access.
 
 ### Common Capabilities
 
-| Capability             | Description                                      |
+| Capability | Description |
 | ---------------------- | ------------------------------------------------ |
-| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt;1024)              |
-| `CAP_NET_RAW`          | Use raw and packet sockets                       |
-| `CAP_SYS_ADMIN`        | Mount, swapon, various admin operations          |
-| `CAP_SYS_PTRACE`       | Trace processes with ptrace                      |
-| `CAP_DAC_OVERRIDE`     | Bypass file read/write/execute permission checks |
-| `CAP_DAC_READ_SEARCH`  | Bypass file read permission and directory search |
-| `CAP_CHOWN`            | Change file ownership                            |
-| `CAP_SETUID`           | Set user ID                                      |
-| `CAP_SETGID`           | Set group ID                                     |
-| `CAP_KILL`             | Send signals to any process                      |
-| `CAP_SYSLOG`           | Use privileged syslog                            |
+| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt;1024) |
+| `CAP_NET_RAW` | Use raw and packet sockets |
+| `CAP_SYS_ADMIN` | Mount, swapon, various admin operations |
+| `CAP_SYS_PTRACE` | Trace processes with ptrace |
+| `CAP_DAC_OVERRIDE` | Bypass file read/write/execute permission checks |
+| `CAP_DAC_READ_SEARCH` | Bypass file read permission and directory search |
+| `CAP_CHOWN` | Change file ownership |
+| `CAP_SETUID` | Set user ID |
+| `CAP_SETGID` | Set group ID |
+| `CAP_KILL` | Send signals to any process |
+| `CAP_SYSLOG` | Use privileged syslog |
 
 ### setcap and getcap
 
@@ -513,20 +513,20 @@ capsh --drop="cap_net_raw" -- -c "ping -c 1 localhost"
 ## File Attributes
 
 File attributes (managed by `chattr`/`lsattr`) are separate from permissions. They are enforced by
-the ext4 filesystem (and others that support them) and cannot be overridden by root or capabilities.
+The ext4 filesystem (and others that support them) and cannot be overridden by root or capabilities.
 
 ### Common Attributes
 
-| Attribute | Description                                             |
+| Attribute | Description |
 | --------- | ------------------------------------------------------- |
-| `a`       | Append only — file can only be opened for append        |
-| `A`       | No atime updates — do not update access time            |
-| `i`       | Immutable — cannot be modified, deleted, or renamed     |
-| `j`       | Data journalling — write data to journal first          |
-| `s`       | Secure deletion — zero blocks on deletion               |
-| `S`       | Synchronous updates — write changes to disk immediately |
-| `e`       | Extents format — uses extents (ext4 default)            |
-| `d`       | No dump — exclude from dump backups                     |
+| `a` | Append only — file can only be opened for append |
+| `A` | No atime updates — do not update access time |
+| `i` | Immutable — cannot be modified, deleted, or renamed |
+| `j` | Data journalling — write data to journal first |
+| `s` | Secure deletion — zero blocks on deletion |
+| `S` | Synchronous updates — write changes to disk immediately |
+| `e` | Extents format — uses extents (ext4 default) |
+| `d` | No dump — exclude from dump backups |
 
 ### chattr and lsattr
 
@@ -563,9 +563,9 @@ lsattr -R /srv/data/
 :::warning
 
 `chattr +i` is a powerful security measure but can cause problems during automated configuration
-management. Ansible, Puppet, and similar tools may fail silently when trying to modify immutable
-files. Always ensure configuration management systems can remove the immutable bit before making
-changes.
+Management. Ansible, Puppet, and similar tools may fail silently when trying to modify immutable
+Files. Always ensure configuration management systems can remove the immutable bit before making
+Changes.
 
 :::
 
@@ -603,12 +603,12 @@ rsync -aX /src/ /dest/
 
 Common extended attribute namespaces:
 
-| Namespace   | Description                                    |
+| Namespace | Description |
 | ----------- | ---------------------------------------------- |
-| `user.`     | User-defined (any user can set on owned files) |
-| `system.`   | System-managed (POSIX ACLs stored here)        |
-| `security.` | SELinux labels stored here                     |
-| `trusted.`  | Kernel-managed, root only                      |
+| `user.` | User-defined (any user can set on owned files) |
+| `system.` | System-managed (POSIX ACLs stored here) |
+| `security.` | SELinux labels stored here |
+| `trusted.` | Kernel-managed, root only |
 
 ## Permission Checking Algorithm
 
@@ -638,9 +638,9 @@ flowchart TD
 :::info
 
 The kernel checks ACLs if they exist on the file. The check order is: owner, named users (most
-specific first), owning group or named groups, mask, other. The first matching entry that grants or
-denies the requested access determines the result. The mask limits the maximum effective permissions
-for all named users, named groups, and the owning group.
+Specific first), owning group or named groups, mask, other. The first matching entry that grants or
+Denies the requested access determines the result. The mask limits the maximum effective permissions
+For all named users, named groups, and the owning group.
 
 :::
 
@@ -719,8 +719,8 @@ find / -perm -4000 -type f ! -perm -u+s -writable 2>/dev/null
 :::danger
 
 A writable setuid binary is a critical vulnerability. An attacker can replace the binary with
-malicious code, and it will execute with the file owner's privileges. Regularly audit setuid and
-setgid binaries, and remove the setuid/setgid bit from any binary that does not strictly require it.
+Malicious code, and it will execute with the file owner's privileges. Regularly audit setuid and
+Setgid binaries, and remove the setuid/setgid bit from any binary that does not strictly require it.
 
 :::
 
@@ -811,3 +811,11 @@ getcap /tmp/myapp    # (empty — no capabilities)
 # Use install or tar with xattrs to preserve
 getfattr -d -m '.*' /usr/bin/myapp   # check security.capability xattr
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

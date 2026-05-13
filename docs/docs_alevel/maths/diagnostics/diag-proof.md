@@ -25,15 +25,15 @@ hide_table_of_contents: true
 
 **Solution:**
 
-**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$, and $\gcd(p, q) = 1$ (i.e. the fraction is in its lowest terms).
+**(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$$q \neq 0$And $\gcd(p, q) = 1$ (i.e. The fraction is in its lowest terms).
 
-Squaring: $2 = \frac{p^2}{q^2}$, so $p^2 = 2q^2$.
+Squaring: $2 = \frac{p^2}{q^2}$So $p^2 = 2q^2$.
 
-Since $p^2 = 2q^2$, $p^2$ is even. Since the square of an odd number is odd, $p$ must be even.
+Since $p^2 = 2q^2$$p^2$ is even. Since the square of an odd number is odd, $p$ must be even.
 
-Write $p = 2k$ for some integer $k$. Then $(2k)^2 = 2q^2$, so $4k^2 = 2q^2$, giving $q^2 = 2k^2$.
+Write $p = 2k$ for some integer $k$. Then $(2k)^2 = 2q^2$So $4k^2 = 2q^2$Giving $q^2 = 2k^2$.
 
-Since $q^2 = 2k^2$, $q^2$ is even, and by the same argument, $q$ is even.
+Since $q^2 = 2k^2$$q^2$ is even, and by the same argument, $q$ is even.
 
 So both $p$ and $q$ are even, contradicting $\gcd(p, q) = 1$.
 
@@ -47,13 +47,13 @@ Proof of contrapositive: If $p$ is odd, write $p = 2k + 1$ for some integer $k$.
 
 $$p^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
-which is odd (of the form $2m + 1$ where $m = 2k^2 + 2k$).
+Which is odd (of the form $2m + 1$ where $m = 2k^2 + 2k$).
 
 Since the contrapositive is logically equivalent to the original statement, and we have proved the contrapositive, the original statement is also proved.
 
 **(c)** Suppose $\sqrt{3} = \frac{p}{q}$ in lowest terms.
 
-$p^2 = 3q^2$, so $p^2$ is divisible by 3.
+$p^2 = 3q^2$So $p^2$ is divisible by 3.
 
 We need: "If $p^2$ is divisible by 3, then $p$ is divisible by 3."
 
@@ -64,9 +64,9 @@ If $p$ is not divisible by 3, then $p \equiv 1 \pmod 3$ or $p \equiv 2 \pmod 3$.
 - If $p \equiv 1 \pmod 3$: $p^2 \equiv 1 \pmod 3$.
 - If $p \equiv 2 \pmod 3$: $p^2 \equiv 4 \equiv 1 \pmod 3$.
 
-In either case, $p^2 \not\equiv 0 \pmod 3$, so $p^2$ is not divisible by 3.
+In either case, $p^2 \not\equiv 0 \pmod 3$So $p^2$ is not divisible by 3.
 
-Therefore $p$ is divisible by 3. Write $p = 3k$. Then $9k^2 = 3q^2$, so $q^2 = 3k^2$, and by the same argument, $q$ is divisible by 3.
+Therefore $p$ is divisible by 3. Write $p = 3k$. Then $9k^2 = 3q^2$So $q^2 = 3k^2$And by the same argument, $q$ is divisible by 3.
 
 Both $p$ and $q$ divisible by 3 contradicts $\gcd(p,q) = 1$. Therefore $\sqrt{3}$ is irrational.
 
@@ -82,7 +82,7 @@ A student is asked to prove that $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$ f
 
 **(b)** A different student claims the formula holds for all $n \geq 0$ and starts their base case at $n = 0$. Show that the formula also holds for $n = 0$ and explain why starting at $n = 0$ does not invalidate the proof.
 
-**(c)** A third student tries to prove that $2^n \gt n^2$ for all $n \geq 1$ by induction. Show that the inductive step fails at $n = 2 \to n = 3$, even though the statement is true for $n = 3$. Find the smallest value of $N$ such that $2^n \gt n^2$ for all $n \geq N$.
+**(c)** A third student tries to prove that $2^n \gt n^2$ for all $n \geq 1$ by induction. Show that the inductive step fails at $n = 2 \to n = 3$Even though the statement is true for $n = 3$. Find the smallest value of $N$ such that $2^n \gt n^2$ for all $n \geq N$.
 
 [Difficulty: hard. Tests the role of the base case in anchoring the induction, and the subtlety that the inductive step may require $n$ to be sufficiently large.]
 
@@ -110,7 +110,7 @@ This is $P(k+1)$. By induction, $P(n)$ is true for all $n \geq 1$.
 
 **(b)** At $n = 0$: LHS $= \sum_{r=1}^{0} r^2 = 0$ (empty sum). RHS $= \frac◆LB◆0 \cdot 1 \cdot 1◆RB◆◆LB◆6◆RB◆ = 0$. True.
 
-Starting at $n = 0$ is valid because the inductive step from $P(k)$ to $P(k+1)$ works for $k \geq 0$. The proof establishes the result for all $n \geq 0$, which is a stronger statement than $n \geq 1$. This does not invalidate the proof; it simply proves a more general result.
+Starting at $n = 0$ is valid because the inductive step from $P(k)$ to $P(k+1)$ works for $k \geq 0$. The proof establishes the result for all $n \geq 0$Which is a stronger statement than $n \geq 1$. This does not invalidate the proof; it proves a more general result.
 
 **(c)** **Check values:** $2^1 = 2 \gt 1 = 1^2$. True. $2^2 = 4 = 4 = 2^2$. Not strictly greater (equality, not inequality). $2^3 = 8 \gt 9 = 3^2$. False!
 
@@ -120,9 +120,9 @@ So the statement "$2^n \gt n^2$ for all $n \geq 1$" is actually **false** at $n 
 
 $2^{k+1} = 2 \cdot 2^k \gt 2k^2$ (by the inductive hypothesis).
 
-We need $2k^2 \geq (k+1)^2 = k^2 + 2k + 1$, i.e. $k^2 - 2k - 1 \geq 0$, i.e. $k \geq 1 + \sqrt{2} \approx 2.41$.
+We need $2k^2 \geq (k+1)^2 = k^2 + 2k + 1$I.e. $k^2 - 2k - 1 \geq 0$I.e. $k \geq 1 + \sqrt{2} \approx 2.41$.
 
-So the inductive step works for $k \geq 3$, meaning $2^n \gt n^2$ for all $n \geq 5$ (since we need to verify the base case at $n = 5$, or anchor at $n = 3$ and step forward).
+So the inductive step works for $k \geq 3$Meaning $2^n \gt n^2$ for all $n \geq 5$ (since we need to verify the base case at $n = 5$Or anchor at $n = 3$ and step forward).
 
 Wait, let me check: $2^4 = 16 \gt 16$? No, $16 = 16$. Not strictly greater.
 
@@ -156,17 +156,17 @@ For each of the following, state whether the condition is necessary, sufficient,
 
 **(a)** "$x \gt 2$" implies "$x^2 \gt 4$": if $x \gt 2$ then $x^2 \gt 4$. So "$x \gt 2$" is **sufficient** for "$x^2 \gt 4$".
 
-However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$, but $x \lt 2$.
+However, "$x \gt 2$" is not necessary: $x = -3$ gives $x^2 = 9 \gt 4$But $x \lt 2$.
 
 Answer: **sufficient but not necessary**.
 
-**(b)** If $n$ is prime and $n \neq 2$, then $n$ is odd. But $n = 2$ is prime and even.
+**(b)** If $n$ is prime and $n \neq 2$Then $n$ is odd. But $n = 2$ is prime and even.
 
 So "prime" does not imply "odd" (counterexample: 2). Also, "odd" does not imply "prime" (counterexample: 9).
 
 Answer: **neither necessary nor sufficient**.
 
-**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$, the sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
+**(c)** "$a^2 + b^2 = 0$": since $a^2 \geq 0$ and $b^2 \geq 0$The sum is zero only when both are zero. So $a^2 + b^2 = 0 \iff a = 0 \text{ and } b = 0$.
 
 Answer: **both necessary and sufficient** (the condition is equivalent).
 
@@ -178,7 +178,7 @@ Answer: Differentiability is **sufficient** (but not necessary) for continuity.
 
 **(e)** "$x^2 = 4$" is necessary for "$x = 2$": if $x = 2$ then $x^2 = 4$. (Every $x = 2$ satisfies $x^2 = 4$.)
 
-"$x^2 = 4$" is not sufficient for "$x = 2$": the counterexample is $x = -2$, since $(-2)^2 = 4$ but $-2 \neq 2$.
+"$x^2 = 4$" is not sufficient for "$x = 2$": the counterexample is $x = -2$Since $(-2)^2 = 4$ but $-2 \neq 2$.
 
 ---
 
@@ -198,7 +198,7 @@ A sequence $(a_n)$ is defined by $a_1 = 2$ and $a_{n+1} = \frac{a_n + 3}{2}$ for
 
 **(c)** State the limit of the sequence and justify your answer using the monotone convergence theorem.
 
-**(d)** Find $\sum_{r=1}^{n} a_r$ in terms of $n$, giving your answer in its simplest form.
+**(d)** Find $\sum_{r=1}^{n} a_r$ in terms of $n$Giving your answer in its simplest form.
 
 [Difficulty: hard. Combines proof by induction with recurrence relations, boundedness, monotonicity, and series summation.]
 
@@ -216,13 +216,13 @@ So $a_{k+1} \lt 3$. By induction, $a_n \lt 3$ for all $n \geq 1$.
 
 **(b)** Let $Q(n)$ be "$a_n \leq a_{n+1}$".
 
-**Base case ($n = 1$):** $a_1 = 2$, $a_2 = \frac{5}{2} = 2.5$. $2 \leq 2.5$. True.
+**Base case ($n = 1$):** $a_1 = 2$$a_2 = \frac{5}{2} = 2.5$. $2 \leq 2.5$. True.
 
 **Inductive step:** Assume $a_k \leq a_{k+1}$ for some $k \geq 1$. We need $a_{k+1} \leq a_{k+2}$.
 
 $a_{k+2} - a_{k+1} = \frac{a_{k+1} + 3}{2} - a_{k+1} = \frac{3 - a_{k+1}}{2}$.
 
-By part (a), $a_{k+1} \lt 3$, so $3 - a_{k+1} \gt 0$, giving $a_{k+2} - a_{k+1} \gt 0$.
+By part (a), $a_{k+1} \lt 3$So $3 - a_{k+1} \gt 0$Giving $a_{k+2} - a_{k+1} \gt 0$.
 
 So $a_{k+1} \lt a_{k+2}$. By induction, $a_n \lt a_{n+1}$ for all $n \geq 1$ (strictly increasing).
 
@@ -232,7 +232,7 @@ Let $L = \lim_{n \to \infty} a_n$. Then $L = \frac{L+3}{2} \implies 2L = L + 3 \
 
 **(d)** The recurrence can be solved: $a_{n+1} - 3 = \frac{a_n - 3}{2}$.
 
-This gives $a_n - 3 = \frac{a_1 - 3}{2^{n-1}} = \frac{-1}{2^{n-1}}$, so $a_n = 3 - \frac{1}{2^{n-1}}$.
+This gives $a_n - 3 = \frac{a_1 - 3}{2^{n-1}} = \frac{-1}{2^{n-1}}$So $a_n = 3 - \frac{1}{2^{n-1}}$.
 
 $$\sum_{r=1}^{n} a_r = \sum_{r=1}^{n}\left(3 - \frac{1}{2^{r-1}}\right) = 3n - \sum_{r=0}^{n-1}\frac{1}{2^r}$$
 
@@ -262,25 +262,25 @@ Either $a = b$ or $a^2 + ab + b^2 = 0$.
 
 Now $a^2 + ab + b^2 = \left(a + \frac{b}{2}\right)^2 + \frac{3b^2}{4} \geq 0$.
 
-Equality requires $a + \frac{b}{2} = 0$ and $b = 0$, giving $a = b = 0$.
+Equality requires $a + \frac{b}{2} = 0$ and $b = 0$Giving $a = b = 0$.
 
 So $a^2 + ab + b^2 = 0$ only when $a = b = 0$. In all cases, $a = b$.
 
 Therefore $f$ is injective.
 
-**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{R}$, with equality only at $x = 0$.
+**(ii) Calculus proof:** $f'(x) = 3x^2 \geq 0$ for all $x \in \mathbb{R}$With equality only at $x = 0$.
 
-$f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with $a \neq 0$, $f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
+$f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with $a \neq 0$$f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
 
 If $a \lt 0 \lt b$: $f(a) = a^3 \lt 0 \lt b^3 = f(b)$.
 
-Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{R}$, so $f$ is strictly increasing and hence injective.
+Therefore $a \lt b \implies f(a) \lt f(b)$ for all $a, b \in \mathbb{R}$So $f$ is strictly increasing and hence injective.
 
-**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$, but $1 \neq -1$. Therefore $g$ is not injective on $\mathbb{R}$.
+**(b)** $g(1) = 1^2 = 1 = (-1)^2 = g(-1)$But $1 \neq -1$. Therefore $g$ is not injective on $\mathbb{R}$.
 
 **(c)** Claim: $g(x) = x^2$ is injective on $[0, \infty)$.
 
-**Proof:** If $a, b \geq 0$ and $a^2 = b^2$, then $a^2 - b^2 = (a-b)(a+b) = 0$. Since $a + b \geq 0$, we need $a - b = 0$, giving $a = b$.
+**Proof:** If $a, b \geq 0$ and $a^2 = b^2$Then $a^2 - b^2 = (a-b)(a+b) = 0$. Since $a + b \geq 0$We need $a - b = 0$Giving $a = b$.
 
 Similarly, $g$ is injective on $(-\infty, 0]$.
 
@@ -320,7 +320,7 @@ So $(k+1)^3 - (k+1) = 6m + 6p = 6(m+p)$ for some integer $p$. Divisible by 6.
 
 By induction, $n^3 - n$ is divisible by 6 for all $n \geq 1$.
 
-**(Alternative proof:** $n^3 - n = n(n-1)(n+1) = (n-1)n(n+1)$, the product of three consecutive integers. Among any three consecutive integers, one is divisible by 3 and at least one is divisible by 2. So the product is divisible by $3 \times 2 = 6$.)
+**(Alternative proof:** $n^3 - n = n(n-1)(n+1) = (n-1)n(n+1)$The product of three consecutive integers. Among any three consecutive integers, one is divisible by 3 and at least one is divisible by 2. So the product is divisible by $3 \times 2 = 6$.)
 
 **(b)** Let $P(n)$ be "$3^{2n+1} + 2^{n+2}$ is divisible by 7."
 
@@ -347,4 +347,4 @@ Divisible by 7. By induction, $3^{2n+1} + 2^{n+2}$ is divisible by 7 for all $n 
 | 3 | 13 | Yes |
 | 4 | 21 | No ($21 = 3 \times 7$) |
 
-The smallest counterexample is $n = 4$: $4^2 + 4 + 1 = 21$, which is not prime.
+The smallest counterexample is $n = 4$: $4^2 + 4 + 1 = 21$Which is not prime.

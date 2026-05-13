@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 (b) The small intestine has numerous finger-like projections called villi. Describe **three** structural features of villi that increase the efficiency of absorption, and explain how each feature aids absorption. [6 marks]
 
-(c) A person has a condition in which the villi of the small intestine are flattened and shortened (e.g. coeliac disease). Explain the consequences of this condition on the absorption of (i) fatty acids and glycerol, and (ii) amino acids. [4 marks]
+(c) A person has a condition in which the villi of the small intestine are flattened and shortened (e.g. Coeliac disease). Explain the consequences of this condition on the absorption of (i) fatty acids and glycerol, and (ii) amino acids. [4 marks]
 
 ---
 
@@ -60,13 +60,13 @@ The oxygen dissociation curve shows the relationship between the partial pressur
 
 1. When the first oxygen molecule binds to one of the four haem groups, it induces a **conformational change** in the haemoglobin molecule (from the tense/T state to the relaxed/R state).
 2. This change **increases the affinity** of the remaining three haem groups for oxygen, making it easier for subsequent oxygen molecules to bind.
-3. At low $pO_{2}$, the curve rises slowly (binding of the first oxygen is difficult). In the middle range, the curve rises steeply (cooperative binding makes additional oxygen uptake rapid). At high $pO_{2}$, the curve flattens as haemoglobin approaches full saturation.
+3. At low $pO_{2}$The curve rises slowly (binding of the first oxygen is difficult). In the middle range, the curve rises steeply (cooperative binding makes additional oxygen uptake rapid). At high $pO_{2}$The curve flattens as haemoglobin approaches full saturation.
 
-(b) Fetal haemoglobin has a higher affinity for oxygen, meaning it binds oxygen more readily at a given $pO_{2}$. This is essential because the $pO_{2}$ in the maternal blood in the placenta is relatively **low** (oxygen has already been partially used by the mother's tissues). The higher affinity of HbF allows it to **effectively load oxygen** from the maternal blood even at this lower $pO_{2}$, ensuring the fetus receives an adequate oxygen supply. At the same $pO_{2}$, HbF has a higher percentage saturation than HbA.
+(b) Fetal haemoglobin has a higher affinity for oxygen, meaning it binds oxygen more readily at a given $pO_{2}$. This is essential because the $pO_{2}$ in the maternal blood in the placenta is relatively **low** (oxygen has already been partially used by the mother's tissues). The higher affinity of HbF allows it to **effectively load oxygen** from the maternal blood even at this lower $pO_{2}$Ensuring the fetus receives an adequate oxygen supply. At the same $pO_{2}$HbF has a higher percentage saturation than HbA.
 
 (c) **Mechanism of the Bohr effect**: During exercise, respiring tissues produce more **carbon dioxide** ($CO_{2}$), which reacts with water to form carbonic acid: $CO_{2} + H_{2}O \rightleftharpoons H_{2}CO_{3} \rightleftharpoons H^{+} + HCO_{3}^{-}$. This increases the concentration of $H^{+}$ ions (lowering pH). The increased $H^{+}$ concentration and increased $CO_{2}$ partial pressure cause haemoglobin to change its shape, **reducing its affinity for oxygen** and shifting the dissociation curve to the right.
 
-**Significance**: The rightward shift means that at any given tissue $pO_{2}$, haemoglobin releases **more oxygen** to the tissues. During exercise, muscles have a higher oxygen demand. The Bohr effect ensures that haemoglobin unloads oxygen more readily in the actively respiring muscles, meeting their increased metabolic requirements.
+**Significance**: The rightward shift means that at any given tissue $pO_{2}$Haemoglobin releases **more oxygen** to the tissues. During exercise, muscles have a higher oxygen demand. The Bohr effect ensures that haemoglobin unloads oxygen more readily in the actively respiring muscles, meeting their increased metabolic requirements.
 
 ---
 
@@ -134,7 +134,7 @@ The nerve impulse **jumps** from one node of Ranvier to the next -- this is call
 
 (b) Two features of the alveolar membrane:
 
-1. **Extremely thin diffusion pathway**: The alveolar wall is only one cell thick (squamous epithelium), and the capillary wall is also one cell thick. The total diffusion distance is very short (approximately 1 $\mu$m), allowing rapid diffusion of gases.
+1. **Extremely thin diffusion pathway**: The alveolar wall is only one cell thick (squamous epithelium), and the capillary wall is also one cell thick. The total diffusion distance is very short (approximately 1 $\mu$M), allowing rapid diffusion of gases.
 
 2. **Large surface area**: The millions of alveoli provide a very large total surface area (approximately 70 m$^{2}$) for gas exchange, increasing the rate of diffusion.
 
@@ -154,7 +154,7 @@ The rate of diffusion is proportional to surface area and inversely proportional
 
 (b) Explain why the double circulatory system in mammals is more efficient than the single circulatory system found in fish. [3 marks]
 
-(c) A person has a resting heart rate of 75 beats per minute, a stroke volume of 70 cm$^{3}$, and a blood pressure of 120/80 mmHg. Calculate the cardiac output. If the person begins vigorous exercise and the cardiac output increases to 15 dm$^{3}$/min while the stroke volume increases to 120 cm$^{3}$, calculate the new heart rate. [3 marks]
+(c) A person has a resting heart rate of 75 beats per minute, a stroke volume of 70 cm$^{3}$And a blood pressure of 120/80 mmHg. Calculate the cardiac output. If the person begins vigorous exercise and the cardiac output increases to 15 dm$^{3}$/min while the stroke volume increases to 120 cm$^{3}$Calculate the new heart rate. [3 marks]
 
 ---
 
@@ -208,7 +208,7 @@ A person accidentally touches a hot object and quickly withdraws their hand. Thi
 
 (b) Importance of reflex actions:
 
-1. **Speed**: Reflex arcs are fast because they involve only **three neurones** and typically only **one synapse** (or a few). The short pathway means the response is rapid, minimising tissue damage (e.g. quickly removing the hand from a hot object before serious burns occur).
+1. **Speed**: Reflex arcs are fast because they involve only **three neurones** and only **one synapse** (or a few). The short pathway means the response is rapid, minimising tissue damage (e.g. Quickly removing the hand from a hot object before serious burns occur).
 
 2. **Involuntary (automatic)**: Reflex actions do not require conscious thought or decision-making by the brain. This means the protective response occurs automatically and immediately, without any delay that would be caused by processing in the conscious part of the brain.
 

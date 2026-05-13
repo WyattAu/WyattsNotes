@@ -13,7 +13,7 @@ slug: thermal-physics
 
 ### 1.1 Zeroth Law and Temperature
 
-**Zeroth Law:** If system $A$ is in thermal equilibrium with system $B$, and $B$ is in thermal equilibrium with system $C$, then $A$ is in thermal equilibrium with $C$.
+**Zeroth Law:** If system $A$ is in thermal equilibrium with system $B$And $B$ is in thermal equilibrium with system $C$Then $A$ is in thermal equilibrium with $C$.
 
 This establishes **temperature** as a transitive equivalence relation: two systems are in thermal equilibrium if and only if they have the same temperature.
 
@@ -21,7 +21,7 @@ This establishes **temperature** as a transitive equivalence relation: two syste
 
 $$PV = Nk_BT$$
 
-where $k_B = 1.381 \times 10^{-23}$ J/K is Boltzmann's constant.
+Where $k_B = 1.381 \times 10^{-23}$ J/K is Boltzmann's constant.
 
 ### 1.2 First Law
 
@@ -39,7 +39,7 @@ $$dU = \delta Q - P\,dV$$
 
 $$C_V = \left(\frac{\partial U}{\partial T}\right)_V, \qquad C_P = \left(\frac{\partial H}{\partial T}\right)_P$$
 
-where $H = U + PV$ is the enthalpy.
+Where $H = U + PV$ is the enthalpy.
 
 **Proposition 1.2.** For an ideal gas: $C_P - C_V = Nk_B$.
 
@@ -61,15 +61,15 @@ $$dS = \frac{\delta Q_{\mathrm{rev{}}}{T}$$
 
 $$\oint \frac{\delta Q}{T} \leq 0$$
 
-with equality for reversible processes.
+With equality for reversible processes.
 
-*Proof.* Consider a system undergoing a cycle interacting with $n$ heat reservoirs at temperatures $T_1, \ldots, T_n$, exchanging heat $Q_i$ with reservoir $i$. The Clausius inequality follows from the impossibility of a perpetual motion machine of the second kind: a cycle that absorbs heat from a single reservoir and does work would violate the Kelvin-Planck statement. The detailed proof uses auxiliary Carnot engines operating between pairs of reservoirs. $\blacksquare$
+*Proof.* Consider a system undergoing a cycle interacting with $n$ heat reservoirs at temperatures $T_1, \ldots, T_n$Exchanging heat $Q_i$ with reservoir $i$. The Clausius inequality follows from the impossibility of a perpetual motion machine of the second kind: a cycle that absorbs heat from a single reservoir and does work would violate the Kelvin-Planck statement. The detailed proof uses auxiliary Carnot engines operating between pairs of reservoirs. $\blacksquare$
 
-**Corollary 1.4 (Principle of Increasing Entropy).** For an isolated system, $dS \geq 0$, with equality for reversible processes.
+**Corollary 1.4 (Principle of Increasing Entropy).** For an isolated system, $dS \geq 0$With equality for reversible processes.
 
 ### 1.4 Third Law
 
-**Third Law (Nernst):** As $T \to 0^+$, the entropy of a perfect crystal approaches a constant (which can be taken as zero):
+**Third Law (Nernst):** As $T \to 0^+$The entropy of a perfect crystal approaches a constant (which can be taken as zero):
 
 $$\lim_{T \to 0} S(T) = 0$$
 
@@ -93,7 +93,7 @@ $$\lim_{T \to 0} S(T) = 0$$
 
 ### 1.6 Maxwell Relations
 
-From the exactness of $dU = TdS - PdV$ (and similarly for $dH$, $dF$, $dG$), the equality of mixed partial derivatives gives four **Maxwell relations**:
+From the exactness of $dU = TdS - PdV$ (and similarly for $dH$$dF$$dG$), the equality of mixed partial derivatives gives four **Maxwell relations**:
 
 1. $\left(\frac{\partial T}{\partial V}\right)_S = -\left(\frac{\partial P}{\partial S}\right)_V$
 2. $\left(\frac{\partial T}{\partial P}\right)_S = \left(\frac{\partial V}{\partial S}\right)_P$
@@ -107,7 +107,7 @@ From the exactness of $dU = TdS - PdV$ (and similarly for $dH$, $dF$, $dG$), the
 
 $$\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{\partial S}{\partial V}\right)_T - P$$
 
-By the third Maxwell relation: $(\partial S/\partial V)_T = (\partial P/\partial T)_V$. For an ideal gas, $P = Nk_BT/V$, so $(\partial P/\partial T)_V = Nk_B/V$.
+By the third Maxwell relation: $(\partial S/\partial V)_T = (\partial P/\partial T)_V$. For an ideal gas, $P = Nk_BT/V$So $(\partial P/\partial T)_V = Nk_B/V$.
 
 Therefore:
 
@@ -119,7 +119,7 @@ This confirms that the internal energy of an ideal gas depends only on temperatu
 
 ### 1.7 Common Pitfalls
 
-- **$\delta Q$ and $\delta W$ are not exact differentials.** Unlike $dU$, the heat and work are path-dependent. Only $\delta Q_{\mathrm{rev{}}/T = dS$ is exact.
+- **$\delta Q$ and $\delta W$ are not exact differentials.** Unlike $dU$The heat and work are path-dependent. Only $\delta Q_{\mathrm{rev{}}/T = dS$ is exact.
 - **The second law prohibits certain processes but does not explain *why* they occur.** Statistical mechanics provides the microscopic explanation: entropy measures the number of microstates, and the system evolves toward the macrostate with the most microstates.
 - **Free energy minima determine equilibrium, not energy minima.** At constant temperature, the system minimises $F$ (or $G$), not $U$.
 
@@ -141,11 +141,11 @@ $$S = k_B \ln \Omega$$
 
 ### 2.2 The Boltzmann Distribution
 
-**Theorem 2.1 (Canonical Ensemble).** For a system in thermal equilibrium with a heat bath at temperature $T$, the probability of the system being in microstate $i$ with energy $E_i$ is
+**Theorem 2.1 (Canonical Ensemble).** For a system in thermal equilibrium with a heat bath at temperature $T$The probability of the system being in microstate $i$ with energy $E_i$ is
 
 $$P_i = \frac{1}{Z} e^{-E_i / (k_B T)}$$
 
-where the **partition function** is
+Where the **partition function** is
 
 $$Z = \sum_{i} e^{-E_i / (k_B T)}$$
 
@@ -155,7 +155,7 @@ $$P_i \propto \Omega_R(E_{\mathrm{tot{}} - E_i) = \exp\left(\frac{S_R(E_{\mathrm
 
 Expanding $S_R$ around $E_{\mathrm{tot{}}$: $S_R(E_{\mathrm{tot{}} - E_i) \approx S_R(E_{\mathrm{tot{}}) - E_i \left(\frac{\partial S_R}{\partial E}\right) = S_R(E_{\mathrm{tot{}}) - \frac{E_i}{T}$
 
-since $(\partial S_R / \partial E) = 1/T$. Therefore $P_i \propto e^{-E_i / (k_BT)}$, and normalising gives the result. $\blacksquare$
+Since $(\partial S_R / \partial E) = 1/T$. Therefore $P_i \propto e^{-E_i / (k_BT)}$And normalising gives the result. $\blacksquare$
 
 ### 2.3 Thermodynamic Quantities from the Partition Function
 
@@ -163,7 +163,7 @@ since $(\partial S_R / \partial E) = 1/T$. Therefore $P_i \propto e^{-E_i / (k_B
 
 $$\langle E \rangle = -\frac{\partial \ln Z}{\partial \beta}, \quad F = -k_B T \ln Z, \quad S = \frac{\langle E \rangle - F}{T}$$
 
-where $\beta = 1/(k_BT)$.
+Where $\beta = 1/(k_BT)$.
 
 *Proof.* $\langle E \rangle = \sum_i E_i P_i = \frac{1}{Z}\sum_i E_i e^{-\beta E_i} = -\frac{1}{Z}\frac{\partial Z}{\partial \beta} = -\frac{\partial \ln Z}{\partial \beta}$.
 
@@ -175,7 +175,7 @@ $F = -k_BT \ln Z$ follows from $F = U - TS = \langle E \rangle - TS$ and the ide
 
 $$Z_N = \frac{1}{N!}\left(\frac{V}{\lambda_{\mathrm{th{}}^3}\right)^N, \quad \lambda_{\mathrm{th{}} = \frac{h}{\sqrt{2\pi m k_B T}}$$
 
-where $\lambda_{\mathrm{th{}}$ is the **thermal de Broglie wavelength**.
+Where $\lambda_{\mathrm{th{}}$ is the **thermal de Broglie wavelength**.
 
 *Proof.* The single-particle energy levels in a 3D box of side $L$ ($V = L^3$) are:
 
@@ -187,13 +187,13 @@ $$z = \sum_{n_x, n_y, n_z = 0}^{\infty} e^{-\beta h^2(n_x^2 + n_y^2 + n_z^2)/(8m
 
 For $N$ indistinguishable particles (correct Boltzmann counting): $Z_N = z^N / N!$. $\blacksquare$
 
-**Corollary 2.4.** From $Z_N$, we recover the ideal gas law:
+**Corollary 2.4.** From $Z_N$We recover the ideal gas law:
 
 $$F = -k_BT \ln Z_N = -k_BT\left[N\ln\left(\frac{V}{\lambda_{\mathrm{th{}}^3}\right) - \ln N!\right]$$
 
 $$P = -\left(\frac{\partial F}{\partial V}\right)_T = \frac{Nk_BT}{V}$$
 
-giving $PV = Nk_BT$.
+Giving $PV = Nk_BT$.
 
 ### 2.5 The Equipartition Theorem
 
@@ -213,7 +213,7 @@ The same calculation for $bq^2$ gives another $k_BT/2$. $\blacksquare$
 
 $$\langle n_i \rangle = \frac{1}{e^{(E_i - \mu)/(k_BT)} + 1}$$
 
-where $\mu$ is the **chemical potential**.
+Where $\mu$ is the **chemical potential**.
 
 **Bose--Einstein Statistics** (for bosons, particles with integer spin):
 
@@ -231,9 +231,9 @@ The classical limit applies when the thermal de Broglie wavelength is much small
 
 $$\varepsilon_F = \frac{\hbar^2}{2m}\left(3\pi^2 n\right)^{2/3}$$
 
-where $n = N/V$ is the particle number density.
+Where $n = N/V$ is the particle number density.
 
-**Proposition 2.6.** At $T = 0$, all states with $E \leq \varepsilon_F$ are occupied and all states with $E > \varepsilon_F$ are empty. The ground-state energy of a 3D Fermi gas is:
+**Proposition 2.6.** At $T = 0$All states with $E \leq \varepsilon_F$ are occupied and all states with $E > \varepsilon_F$ are empty. The ground-state energy of a 3D Fermi gas is:
 
 $$U_0 = \frac{3}{5}N\varepsilon_F$$
 
@@ -253,7 +253,7 @@ $$j = \sigma T^4, \quad \sigma = \frac{\pi^2 k_B^4}{60 \hbar^3 c^2}$$
 
 ### 2.9 Worked Examples
 
-**Problem.** Calculate the Fermi energy and Fermi temperature for copper. Given: electron density $n \approx 8.5 \times 10^{28}\,\mathrm{m{}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
+**Problem.** Calculate the Fermi energy and Fermi temperature for copper. Given: electron density $n \approx 8.5 \times 10^{28}\,\mathrm{m{}^{-3}$$m_e = 9.109 \times 10^{-31}$ kg.
 
 <details>
 <summary>Solution</summary>
@@ -281,7 +281,7 @@ The Fermi temperature is much larger than room temperature, confirming that copp
 
 Before mixing: the total entropy is $2 \times Nk_B\left[\ln\left(\frac{V}{N\lambda^3}\right) + \frac{5}{2}\right]$ (for a monatomic gas).
 
-After mixing: each gas occupies volume $2V$, so the total entropy is:
+After mixing: each gas occupies volume $2V$So the total entropy is:
 
 $$S_f = 2 \times Nk_B\left[\ln\left(\frac{2V}{N\lambda^3}\right) + \frac{5}{2}\right]$$
 
@@ -295,7 +295,7 @@ For 1 mole of each gas: $\Delta S_{\mathrm{mix{}} = 2R\ln 2 \approx 11.5\,\mathr
 
 ### 2.10 Common Pitfalls
 
-- **The classical limit does not always apply.** When $\lambda_{\mathrm{th{}}^3 \gtrsim V/N$, quantum statistics (Fermi-Dirac or Bose-Einstein) must be used. This is critical for electrons in metals and for helium-4 at low temperatures.
+- **The classical limit does not always apply.** When $\lambda_{\mathrm{th{}}^3 \gtrsim V/N$Quantum statistics (Fermi-Dirac or Bose-Einstein) must be used. This is critical for electrons in metals and for helium-4 at low temperatures.
 - **The Boltzmann distribution applies to systems in contact with a heat bath, not isolated systems.** For isolated systems, use the microcanonical ensemble (all accessible microstates equally probable).
 - **The partition function must account for indistinguishability.** The $1/N!$ factor in $Z_N$ is essential for obtaining the correct entropy (otherwise the entropy is not extensive and the Gibbs paradox arises).
 
@@ -305,13 +305,13 @@ For 1 mole of each gas: $\Delta S_{\mathrm{mix{}} = 2R\ln 2 \approx 11.5\,\mathr
 
 ### 3.1 Definition and Motivation
 
-In many physical situations, a system exchanges both energy and particles with a reservoir. The **grand canonical ensemble** describes such open systems. The macroscopic variables are the chemical potential $\mu$, the volume $V$, and the temperature $T$.
+In many physical situations, a system exchanges both energy and particles with a reservoir. The **grand canonical ensemble** describes such open systems. The macroscopic variables are the chemical potential $\mu$The volume $V$And the temperature $T$.
 
 **Definition.** The **grand partition function** is
 
 $$\Xi = \sum_{N=0}^{\infty} \sum_{i} e^{-\beta(E_{i}^{(N)} - \mu N)}$$
 
-where the outer sum is over all possible particle numbers $N$ and the inner sum is over all states with $N$ particles.
+Where the outer sum is over all possible particle numbers $N$ and the inner sum is over all states with $N$ particles.
 
 The probability that the system is in state $i$ with $N$ particles is
 
@@ -345,15 +345,15 @@ $$\langle N^2 \rangle - \langle N \rangle^2 = k_BT \left(\frac{\partial \langle 
 
 *Proof.* $\langle N^2 \rangle - \langle N \rangle^2 = \frac{1}{\beta^2}\frac{\partial^2 \ln \Xi}{\partial \mu^2} = \frac{1}{\beta}\frac{\partial}{\partial \mu}\left(\frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu}\right) = \frac{1}{\beta}\frac{\partial \langle N \rangle}{\partial \mu}$. $\blacksquare$
 
-For an ideal gas, $\langle N \rangle = z e^{\beta \mu}$, so $\partial \langle N \rangle / \partial \mu = \beta \langle N \rangle$, giving relative fluctuations:
+For an ideal gas, $\langle N \rangle = z e^{\beta \mu}$So $\partial \langle N \rangle / \partial \mu = \beta \langle N \rangle$Giving relative fluctuations:
 
 $$\frac{\langle N^2 \rangle - \langle N \rangle^2}{\langle N \rangle^2} = \frac{1}{\langle N \rangle}$$
 
-This is Poisson statistics: fluctuations scale as $1/\sqrt{N}$, negligible for macroscopic systems.
+This is Poisson statistics: fluctuations scale as $1/\sqrt{N}$Negligible for macroscopic systems.
 
 ### 3.4 Worked Example: Ideal Gas in the Grand Canonical Ensemble
 
-**Problem.** Compute $\Xi$, $\langle N \rangle$, and $\langle E \rangle$ for a classical ideal gas in the grand canonical ensemble.
+**Problem.** Compute $\Xi$$\langle N \rangle$And $\langle E \rangle$ for a classical ideal gas in the grand canonical ensemble.
 
 <details>
 <summary>Solution</summary>
@@ -388,7 +388,7 @@ At finite temperature, the Fermi-Dirac distribution "smears out" the step functi
 
 $$I = \int_0^\infty \frac{f(\varepsilon)}{e^{\beta(\varepsilon - \mu)} + 1}\, d\varepsilon$$
 
-when $k_BT \ll \varepsilon_F$ (the degenerate limit).
+When $k_BT \ll \varepsilon_F$ (the degenerate limit).
 
 **Theorem 4.1 (Sommerfeld Expansion).** To leading order in $T/T_F$:
 
@@ -428,7 +428,7 @@ $$U \approx \frac{3}{5}N\varepsilon_F\left[1 + \frac{5\pi^2}{12}\left(\frac{k_BT
 
 $$C_V = \frac{\partial U}{\partial T} = Nk_B \cdot \frac{\pi^2}{2}\frac{k_BT}{\varepsilon_F} = Nk_B \cdot \frac{\pi^2}{2}\frac{T}{T_F}$$
 
-**Physical insight.** At room temperature ($T \approx 300$ K), $T/T_F \approx 0.006$ for copper, so $C_V \approx 0.03 Nk_B$, which is negligible compared to the lattice contribution $\approx 3Nk_B$. This explains why the Dulong-Petit law works for metals despite the presence of conduction electrons.
+**Physical insight.** At room temperature ($T \approx 300$ K), $T/T_F \approx 0.006$ for copper, so $C_V \approx 0.03 Nk_B$Which is negligible compared to the lattice contribution $\approx 3Nk_B$. This explains why the Dulong-Petit law works for metals despite the presence of conduction electrons.
 
 ### 4.4 Worked Example: Electronic Heat Capacity of Copper
 
@@ -449,7 +449,7 @@ The ratio is:
 
 $$\frac{C_V^{\mathrm{el{}}}{C_V^{\mathrm{lat{}}} \approx \frac{0.018}{3} \approx 0.006$$
 
-The electronic heat capacity is only about $0.6\%$ of the lattice contribution at room temperature. At very low temperatures ($T \ll \Theta_D$), the lattice contribution falls as $T^3$ while the electronic contribution falls as $T$, so the electronic term eventually dominates below a few kelvin.
+The electronic heat capacity is only about $0.6\%$ of the lattice contribution at room temperature. At very low temperatures ($T \ll \Theta_D$), the lattice contribution falls as $T^3$ while the electronic contribution falls as $T$So the electronic term eventually dominates below a few kelvin.
 
 $\blacksquare$
 
@@ -469,17 +469,17 @@ The chemical potential must satisfy $\mu \leq \varepsilon_0$ (the lowest single-
 
 ### 5.2 Density of States and Critical Temperature
 
-For a 3D free Bose gas with $\varepsilon = \hbar^2 k^2 / (2m)$, the density of states is $g(\varepsilon) = (V/4\pi^2)(2m/\hbar^2)^{3/2}\sqrt{\varepsilon}$. The number of particles in excited states ($\varepsilon > 0$) is
+For a 3D free Bose gas with $\varepsilon = \hbar^2 k^2 / (2m)$The density of states is $g(\varepsilon) = (V/4\pi^2)(2m/\hbar^2)^{3/2}\sqrt{\varepsilon}$. The number of particles in excited states ($\varepsilon > 0$) is
 
 $$N_{\mathrm{ex{}} = \int_0^\infty \frac{g(\varepsilon)\, d\varepsilon}{e^{\beta \varepsilon} - 1} = V\left(\frac{mk_BT}{2\pi\hbar^2}\right)^{3/2}\,\zeta\!\left(\frac{3}{2}\right)$$
 
-where $\zeta(3/2) \approx 2.612$ is the Riemann zeta function.
+Where $\zeta(3/2) \approx 2.612$ is the Riemann zeta function.
 
 **Theorem 5.1 (BEC critical temperature).** The maximum number of particles that can be accommodated in excited states is achieved at $\mu = 0$. When $N$ exceeds this maximum, the excess condenses into the ground state. The critical temperature is
 
 $$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}$$
 
-where $n = N/V$.
+Where $n = N/V$.
 
 *Proof.* Setting $N = N_{\mathrm{ex{}}^{\max}$ at $\mu = 0$ and solving for $T$:
 
@@ -489,7 +489,7 @@ $$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3} \qquad \
 
 ### 5.3 Condensate Fraction
 
-Below $T_c$, $\mu \approx 0$ and the condensate fraction is
+Below $T_c$$\mu \approx 0$ and the condensate fraction is
 
 $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
@@ -509,7 +509,7 @@ The heat capacity:
 
 $$C_V = \frac{15}{4}\,Nk_B\,\zeta\!\left(\frac{5}{2}\right)\Big/\zeta\!\left(\frac{3}{2}\right)\,\left(\frac{T}{T_c}\right)^{3/2} \propto T^{3/2}$$
 
-This contrasts with the constant $C_V = \frac{3}{2}Nk_B$ above $T_c$ (equipartition). There is a cusp (discontinuity in the derivative) at $T_c$, characteristic of a phase transition.
+This contrasts with the constant $C_V = \frac{3}{2}Nk_B$ above $T_c$ (equipartition). There is a cusp (discontinuity in the derivative) at $T_c$Characteristic of a phase transition.
 
 ### 5.5 Worked Example: BEC in Rubidium-87
 
@@ -542,7 +542,7 @@ The **Ising model** is the simplest model of a phase transition. On a lattice of
 
 $$H = -J\sum_{\langle i,j\rangle} s_i s_j - h\sum_i s_i$$
 
-where $J$ is the coupling constant, $\langle i,j\rangle$ denotes nearest-neighbour pairs, and $h$ is an external magnetic field.
+Where $J$ is the coupling constant, $\langle i,j\rangle$ denotes nearest-neighbour pairs, and $h$ is an external magnetic field.
 
 - $J > 0$: **ferromagnetic** (spins prefer to align).
 - $J < 0$: **antiferromagnetic** (spins prefer to anti-align).
@@ -567,7 +567,7 @@ In the thermodynamic limit ($N \to \infty$), $Z \approx \lambda_+^N$ and the fre
 
 $$f = -k_BT \ln(e^{\beta J} + e^{-\beta J}) = -k_BT \ln(2\cosh\beta J)$$
 
-The magnetisation $m = -\partial f/\partial h|_{h=0} = 0$ for all $T > 0$, confirming no spontaneous magnetisation and hence no phase transition. $\blacksquare$
+The magnetisation $m = -\partial f/\partial h|_{h=0} = 0$ for all $T > 0$Confirming no spontaneous magnetisation and hence no phase transition. $\blacksquare$
 
 ### 6.3 Mean Field Theory
 
@@ -575,7 +575,7 @@ The magnetisation $m = -\partial f/\partial h|_{h=0} = 0$ for all $T > 0$, confi
 
 $$H_{\mathrm{MF{}} = -Jz\, m\sum_i s_i - h\sum_i s_i$$
 
-where $z$ is the coordination number (number of nearest neighbours). Each spin behaves as if in an effective field $h_{\mathrm{eff{}} = h + Jz\,m$.
+Where $z$ is the coordination number (number of nearest neighbours). Each spin behaves as if in an effective field $h_{\mathrm{eff{}} = h + Jz\,m$.
 
 The self-consistency equation (mean field equation) is:
 
@@ -587,7 +587,7 @@ For $h = 0$: $m = \tanh(Jz\,m / k_BT)$.
 
 $$m = \frac{Jz\,m}{k_BT} - \frac{1}{3}\left(\frac{Jz\,m}{k_BT}\right)^3$$
 
-For $m \neq 0$, dividing by $m$:
+For $m \neq 0$Dividing by $m$:
 
 $$1 = \frac{Jz}{k_BT_c} - \frac{1}{3}\left(\frac{Jz}{k_BT_c}\right)^3$$
 
@@ -618,7 +618,7 @@ These are the **classical** critical exponents. They are independent of the spat
 <details>
 <summary>Solution</summary>
 
-Mean field: $T_c^{\mathrm{MF{}} = Jz/k_B = 4J/k_B$, so $k_BT_c^{\mathrm{MF{}}/J = 4$.
+Mean field: $T_c^{\mathrm{MF{}} = Jz/k_B = 4J/k_B$So $k_BT_c^{\mathrm{MF{}}/J = 4$.
 
 Exact (Onsager, 1944): $k_BT_c^{\mathrm{exact{}}/J = 2/\ln(1 + \sqrt{2}) \approx 2.269$.
 
@@ -635,7 +635,7 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-For small $h$ and $T > T_c$, expand $m = \tanh(\beta(h + Jz\,m))$ to first order in $h$ and $m$:
+For small $h$ and $T > T_c$Expand $m = \tanh(\beta(h + Jz\,m))$ to first order in $h$ and $m$:
 
 $$m \approx \beta(h + Jz\,m) = \frac{h}{k_BT} + \frac{Jz}{k_BT}m$$
 
@@ -659,13 +659,13 @@ In the classical (dilute) limit, both Fermi-Dirac and Bose-Einstein distribution
 
 $$e^{\beta(\varepsilon - \mu)} \gg 1$$
 
-for all relevant energies. This is equivalent to $n\lambda_{\mathrm{th{}}^3 \ll 1$ (the thermal de Broglie wavelength is much smaller than the inter-particle spacing).
+For all relevant energies. This is equivalent to $n\lambda_{\mathrm{th{}}^3 \ll 1$ (the thermal de Broglie wavelength is much smaller than the inter-particle spacing).
 
 **Theorem 7.1.** In the classical limit:
 
 $$f_{\mathrm{FD{}}(\varepsilon) \approx f_{\mathrm{BE{}}(\varepsilon) \approx f_{\mathrm{MB{}}(\varepsilon) = e^{-\beta(\varepsilon - \mu)}$$
 
-*Proof.* When $e^{\beta(\varepsilon - \mu)} \gg 1$, the $+1$ or $-1$ in the denominator is negligible:
+*Proof.* When $e^{\beta(\varepsilon - \mu)} \gg 1$The $+1$ or $-1$ in the denominator is negligible:
 
 $$\frac{1}{e^{\beta(\varepsilon - \mu)} \pm 1} \approx \frac{1}{e^{\beta(\varepsilon - \mu)}} = e^{-\beta(\varepsilon - \mu)}$$
 
@@ -736,7 +736,7 @@ This is $4/3$ times the bulk average $\frac{3}{2}k_BT$ --- effusing molecules ar
 
 ### Problem 1
 
-Calculate the Fermi energy and Fermi temperature for sodium. Given: electron density $n \approx 2.65 \times 10^{28}\,\mathrm{m{}^{-3}$, $m_e = 9.109 \times 10^{-31}$ kg.
+Calculate the Fermi energy and Fermi temperature for sodium. Given: electron density $n \approx 2.65 \times 10^{28}\,\mathrm{m{}^{-3}$$m_e = 9.109 \times 10^{-31}$ kg.
 
 <details>
 <summary>Solution</summary>
@@ -770,7 +770,7 @@ At $T = T_c^-$:
 
 $$C_V(T_c^-) = \frac{15}{4}Nk_B \cdot \frac{\zeta(5/2)}{\zeta(3/2)}$$
 
-$\zeta(5/2) \approx 1.341$, $\zeta(3/2) \approx 2.612$:
+$\zeta(5/2) \approx 1.341$$\zeta(3/2) \approx 2.612$:
 
 $$C_V(T_c^-) = \frac{15}{4} \times \frac{1.341}{2.612}\,Nk_B \approx 1.926\,Nk_B$$
 
@@ -782,7 +782,7 @@ The jump is $\Delta C_V = C_V(T_c^-) - C_V(T_c^+) \approx 0.426\,Nk_B$.
 
 ### Problem 3
 
-Derive the virial expansion for a non-ideal gas in terms of the second virial coefficient $B_2(T)$, and show that $B_2(T)$ can be expressed in terms of the two-particle interaction potential $V(r)$.
+Derive the virial expansion for a non-ideal gas in terms of the second virial coefficient $B_2(T)$And show that $B_2(T)$ can be expressed in terms of the two-particle interaction potential $V(r)$.
 
 <details>
 <summary>Solution</summary>
@@ -795,11 +795,11 @@ $$B_2(T) = -\frac{1}{2V}\int d^3\mathbf{'\{'}r{'\}'}_1\,d^3\mathbf{'\{'}r{'\}'}_
 
 $$= -2\pi \int_0^\infty \left[e^{-\beta V(r)} - 1\right] r^2\, dr$$
 
-For a hard-sphere gas ($V(r) = \infty$ for $r < d$, $V(r) = 0$ for $r > d$):
+For a hard-sphere gas ($V(r) = \infty$ for $r < d$$V(r) = 0$ for $r > d$):
 
 $$B_2 = -2\pi\int_0^d (-1)\,r^2\,dr = \frac{2\pi d^3}{3} = \frac{2\pi}{3}\left(\frac{d}{2}\right)^3 \cdot 8 = 4v_0$$
 
-where $v_0 = \pi d^3/6$ is the volume of one sphere. The van der Waals excluded volume parameter is $b = 4Nv_0 = N B_2$.
+Where $v_0 = \pi d^3/6$ is the volume of one sphere. The van der Waals excluded volume parameter is $b = 4Nv_0 = N B_2$.
 
 </details>
 
@@ -818,13 +818,13 @@ The total number of particles is:
 
 $$N = \int_0^\infty \frac{g(\varepsilon)}{e^{\beta(\varepsilon - \mu)} + 1}\, d\varepsilon$$
 
-In the classical limit $e^{\beta(\varepsilon - \mu)} \gg 1$, the $+1$ is negligible:
+In the classical limit $e^{\beta(\varepsilon - \mu)} \gg 1$The $+1$ is negligible:
 
 $$N \approx \int_0^\infty g(\varepsilon)\, e^{-\beta(\varepsilon - \mu)}\, d\varepsilon = e^{\beta\mu} \int_0^\infty g(\varepsilon)\, e^{-\beta\varepsilon}\, d\varepsilon$$
 
 $$e^{\beta\mu} = \frac{N}{\int_0^\infty g(\varepsilon)\, e^{-\beta\varepsilon}\, d\varepsilon} = \frac{N\lambda_{\mathrm{th{}}^3}{V}$$
 
-The classical limit requires $e^{\beta\mu} \ll 1$, i.e., $N\lambda_{\mathrm{th{}}^3/V \ll 1$, or equivalently, the average inter-particle spacing $(V/N)^{1/3}$ must be much larger than $\lambda_{\mathrm{th{}}$.
+The classical limit requires $e^{\beta\mu} \ll 1$I.e., $N\lambda_{\mathrm{th{}}^3/V \ll 1$Or equivalently, the average inter-particle spacing $(V/N)^{1/3}$ must be much larger than $\lambda_{\mathrm{th{}}$.
 
 </details>
 
@@ -855,7 +855,7 @@ A **phase transition** is a discontinuity in a thermodynamic quantity or its der
 | Second order | First derivatives continuous; second derivatives discontinuous | Superconducting transition |
 | Lambda ($\lambda$) | Divergent second derivatives | Helium-4 superfluid transition |
 
-For a first-order transition at temperature $T_c$, the **latent heat** is:
+For a first-order transition at temperature $T_c$The **latent heat** is:
 
 $$L = T_c \Delta S = T_c \left(S_{\text{phase 2{}} - S_{\text{phase 1{}}\right)$$
 
@@ -863,7 +863,7 @@ The **Clausius--Clapeyron equation** governs the slope of the coexistence curve:
 
 $$\frac{dP}{dT} = \frac{L}{T_c \Delta v}$$
 
-where $\Delta v = v_2 - v_1$ is the change in specific volume.
+Where $\Delta v = v_2 - v_1$ is the change in specific volume.
 
 ### 10.2 Van der Waals Equation and Critical Phenomena
 
@@ -871,7 +871,7 @@ The van der Waals equation of state modifies the ideal gas law to account for in
 
 $$\left(P + \frac{a}{v^2}\right)(v - b) = k_B T$$
 
-where $a$ accounts for attractive interactions and $b$ for the finite molecular volume. The critical point $(T_c, P_c, v_c)$ satisfies:
+Where $a$ accounts for attractive interactions and $b$ for the finite molecular volume. The critical point $(T_c, P_c, v_c)$ satisfies:
 
 $$\frac{\partial P}{\partial v}\bigg|_{T_c} = 0, \qquad \frac{\partial^2 P}{\partial v^2}\bigg|_{T_c} = 0$$
 
@@ -879,7 +879,7 @@ Solving gives:
 
 $$T_c = \frac{8a}{27bk_B}, \qquad P_c = \frac{a}{27b^2}, \qquad v_c = 3b$$
 
-Near the critical point, define the **reduced variables** $\tilde{T} = T/T_c$, $\tilde{P} = P/P_c$, $\tilde{v} = v/v_c$ to obtain the universal form:
+Near the critical point, define the **reduced variables** $\tilde{T} = T/T_c$$\tilde{P} = P/P_c$$\tilde{v} = v/v_c$ to obtain the universal form:
 
 $$\left(\tilde{P} + \frac{3}{\tilde{v}^2}\right)(3\tilde{v} - 1) = 8\tilde{T}$$
 
@@ -887,7 +887,7 @@ The **order parameter** $\phi = (v_{\text{gas{}} - v_{\text{liquid{}})/(v_c)$ va
 
 $$\phi \propto (T_c - T)^{\beta}$$
 
-where $\beta = 1/2$ is the **mean-field critical exponent** (van der Waals prediction).
+Where $\beta = 1/2$ is the **mean-field critical exponent** (van der Waals prediction).
 
 ### 10.3 Critical Exponents
 
@@ -900,7 +900,7 @@ Near a second-order phase transition, thermodynamic quantities follow power laws
 | $\gamma$ | $\chi \propto \|t\|^{-\gamma}$ | $1$ | $7/4$ | $\approx 1.237$ |
 | $\delta$ | $\phi \propto h^{1/\delta}$ at $t=0$ | $3$ | $15$ | $\approx 4.789$ |
 
-where $t = (T - T_c)/T_c$ is the reduced temperature and $h$ is the conjugate field.
+Where $t = (T - T_c)/T_c$ is the reduced temperature and $h$ is the conjugate field.
 
 <details>
 <summary>Worked Example 10.1: Clausius--Clapeyron for Water</summary>
@@ -916,7 +916,7 @@ This means increasing the boiling temperature by 1 K requires increasing the pre
 <details>
 <summary>Worked Example 10.2: Critical Parameters of CO$_2$</summary>
 
-For CO$_2$, $a = 0.364$ Pa$\cdot$m$^6$/mol$^2$, $b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the critical point formulas:
+For CO$_2$$a = 0.364$ Pa$\cdot$M$^6$/mol$^2$$b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the critical point formulas:
 
 $$T_c = \frac{8a}{27Rb} = \frac{8 \times 0.364}{27 \times 8.314 \times 4.27 \times 10^{-5}} = \frac{2.912}{9.585 \times 10^{-3}} \approx 303.7 \text{ K{}$$
 
@@ -942,7 +942,7 @@ $$f(\phi, T) = f_0(T) + \frac{1}{2}a(T)\phi^2 + \frac{1}{4}b\phi^4 + \frac{1}{6}
 - $b > 0$ for stability
 - $a(T) = a_0(T - T_c)$ changes sign at $T_c$
 
-With an external field $h$ conjugate to $\phi$, add $-h\phi$:
+With an external field $h$ conjugate to $\phi$Add $-h\phi$:
 
 $$f(\phi, T) = f_0 + \frac{1}{2}a(T)\phi^2 + \frac{1}{4}b\phi^4 - h\phi$$
 
@@ -969,8 +969,8 @@ The **susceptibility** $\chi = \partial\phi/\partial h|_{h=0}$ is obtained by ex
 
 $$a\phi + b\phi^3 - h = 0 \implies (a + 3b\phi_0^2)\chi = 1$$
 
-- **$T > T_c$**: $\phi_0 = 0$, so $\chi = 1/a = 1/[a_0(T - T_c)]$, giving $\gamma = 1$.
-- **$T < T_c$**: $\phi_0^2 = -a/b$, so $\chi = 1/(-2a) = 1/[2a_0(T_c - T)]$, giving $\gamma' = 1$.
+- **$T > T_c$**: $\phi_0 = 0$So $\chi = 1/a = 1/[a_0(T - T_c)]$Giving $\gamma = 1$.
+- **$T < T_c$**: $\phi_0^2 = -a/b$So $\chi = 1/(-2a) = 1/[2a_0(T_c - T)]$Giving $\gamma' = 1$.
 
 ### 11.4 Specific Heat
 
@@ -1001,7 +1001,7 @@ $$\frac{\partial f}{\partial \phi} = 50\phi + \phi^3 = 0 \implies \phi = 0 \text
 
 $$f_{\text{min{}} = 0$$
 
-The free energy drops by 625 units when going below $T_c = 100$, driving the transition.
+The free energy drops by 625 units when going below $T_c = 100$Driving the transition.
 
 </details>
 
@@ -1020,7 +1020,7 @@ The quartic factor has solutions when:
 
 $$\phi^2 = \frac{-b \pm \sqrt{b^2 - 4ac}}{2c}$$
 
-This requires $b^2 > 4ac$, which occurs when $T$ is below some temperature $T^* > T_c$. Between $T_c$ and $T^*$, the system undergoes a **first-order** transition because the order parameter jumps discontinuously from zero to a finite value.
+This requires $b^2 > 4ac$Which occurs when $T$ is below some temperature $T^* > T_c$. Between $T_c$ and $T^*$The system undergoes a **first-order** transition because the order parameter jumps discontinuously from zero to a finite value.
 
 </details>
 
@@ -1032,7 +1032,7 @@ The Ising model is the simplest model of interacting spins on a lattice. Each si
 
 $$\mathcal{'\{'}H{'\}'} = -J\sum_{\langle i,j \rangle}\sigma_i\sigma_j - h\sum_i \sigma_i$$
 
-where $J > 0$ is the ferromagnetic coupling, $\langle i,j \rangle$ denotes nearest-neighbor pairs, and $h$ is the external magnetic field.
+Where $J > 0$ is the ferromagnetic coupling, $\langle i,j \rangle$ denotes nearest-neighbor pairs, and $h$ is the external magnetic field.
 
 **Partition function** (in 1D with periodic boundary conditions, $N$ spins):
 
@@ -1060,7 +1060,7 @@ The effective Hamiltonian becomes:
 
 $$\mathcal{'\{'}H{'\}'}_{\text{MF{}} = -\sum_i \left(zJm + h\right)\sigma_i + \frac{1}{2}N zJ m^2$$
 
-where $z$ is the coordination number and $m = \langle\sigma\rangle$.
+Where $z$ is the coordination number and $m = \langle\sigma\rangle$.
 
 Each spin is independent, so:
 
@@ -1101,14 +1101,14 @@ For $J = 1$ (in units of $k_B$):
 | BCC | 8 | 8 |
 | FCC | 12 | 12 |
 
-Compare with the exact $T_c$: 1D has no transition, 2D square has $T_c \approx 2.269$, 3D (numerical) $T_c \approx 4.51$. Mean-field overestimates $T_c$ in all cases, with the error decreasing as $z$ (dimensionality) increases.
+Compare with the exact $T_c$: 1D has no transition, 2D square has $T_c \approx 2.269$3D (numerical) $T_c \approx 4.51$. Mean-field overestimates $T_c$ in all cases, with the error decreasing as $z$ (dimensionality) increases.
 
 </details>
 
 <details>
 <summary>Worked Example 12.2: 1D Ising Free Energy</summary>
 
-For the 1D Ising model with $h = 0$, the transfer matrix eigenvalues are:
+For the 1D Ising model with $h = 0$The transfer matrix eigenvalues are:
 
 $$\lambda_\pm = e^{\beta J} \pm e^{-\beta J}$$
 
@@ -1138,11 +1138,11 @@ Consider a Hamiltonian $\mathcal{'\{'}H{'\}'}_0$ perturbed by a time-dependent f
 
 $$\mathcal{'\{'}H{'\}'}(t) = \mathcal{'\{'}H{'\}'}_0 - f(t)A$$
 
-where $A$ is an observable conjugate to the field $f(t)$. The change in $\langle A(t) \rangle$ to first order in $f$ is:
+Where $A$ is an observable conjugate to the field $f(t)$. The change in $\langle A(t) \rangle$ to first order in $f$ is:
 
 $$\langle A(t) \rangle - \langle A \rangle_0 = \int_{-\infty}^{t} \chi_{AA}(t - t')\, f(t')\, dt'$$
 
-where the **response function** is:
+Where the **response function** is:
 
 $$\chi_{AA}(t) = \frac{i}{\hbar}\theta(t)\langle[A(t), A(0)]\rangle_0$$
 
@@ -1164,7 +1164,7 @@ The FDT predicts **thermal (Johnson--Nyquist) noise** in a resistor:
 
 $$\langle V^2 \rangle = 4k_B T R \Delta f$$
 
-where $R$ is the resistance and $\Delta f$ is the bandwidth. This noise is fundamental — it arises from thermal fluctuations of charge carriers and cannot be eliminated.
+Where $R$ is the resistance and $\Delta f$ is the bandwidth. This noise is fundamental — it arises from thermal fluctuations of charge carriers and cannot be eliminated.
 
 <details>
 <summary>Worked Example 13.1: Johnson--Nyquist Noise Calculation</summary>
@@ -1196,17 +1196,17 @@ $$\mu = \frac{1}{6\pi\eta r} \quad \text{(Stokes drag){}$$
 
 So $D = k_B T/(6\pi\eta r)$.
 
-For a $1$ $\mu$m diameter sphere in water ($\eta = 10^{-3}$ Pa$\cdot$s) at $T = 300$ K:
+For a $1$ $\mu$M diameter sphere in water ($\eta = 10^{-3}$ Pa$\cdot$S) at $T = 300$ K:
 
 $$D = \frac{1.38 \times 10^{-23} \times 300}{6\pi \times 10^{-3} \times 0.5 \times 10^{-6}} = \frac{4.14 \times 10^{-21}}{9.42 \times 10^{-9}} \approx 4.39 \times 10^{-13} \text{ m{}^2/\text{s{}$$
 
-The mean squared displacement in time $t$ is $\langle x^2 \rangle = 2Dt$. In 1 second: $\sqrt{\langle x^2 \rangle} \approx 0.94$ $\mu$m.
+The mean squared displacement in time $t$ is $\langle x^2 \rangle = 2Dt$. In 1 second: $\sqrt{\langle x^2 \rangle} \approx 0.94$ $\mu$M.
 
 </details>
 
 ## 14. Microcanonical Ensemble
 
-The **microcanonical ensemble** describes an isolated system with fixed total energy $E$, particle number $N$, and volume $V$.
+The **microcanonical ensemble** describes an isolated system with fixed total energy $E$Particle number $N$And volume $V$.
 
 ### 14.1 Density of States
 
@@ -1238,7 +1238,7 @@ From $1/T = \partial S/\partial E$:
 
 $$E = \frac{3}{2}Nk_B T$$
 
-reproducing the equipartition theorem.
+Reproducing the equipartition theorem.
 
 ### 14.3 Classical Virial Theorem
 
@@ -1248,7 +1248,7 @@ $$\left\langle \sum_i \mathbf{'\{'}p{'\}'}_i \cdot \frac{\partial \mathcal{'\{'}
 
 $$\left\langle \sum_i \mathbf{'\{'}r{'\}'}_i \cdot \frac{\partial \mathcal{'\{'}H{'\}'}}{\partial \mathbf{'\{'}r{'\}'}_i} \right\rangle = -3Nk_B T$$
 
-For a power-law potential $U \propto r^n$, this gives:
+For a power-law potential $U \propto r^n$This gives:
 
 $$\langle K \rangle = \frac{n}{2}\langle U \rangle$$
 
@@ -1257,7 +1257,7 @@ $$\langle K \rangle = \frac{n}{2}\langle U \rangle$$
 <details>
 <summary>Worked Example 14.1: Density of States for $N$ Harmonic Oscillators</summary>
 
-For $N$ independent harmonic oscillators with frequency $\omega$, total energy $E$:
+For $N$ independent harmonic oscillators with frequency $\omega$Total energy $E$:
 
 $$\Omega(E) = \frac{E^{N-1}}{(N-1)!\,(\hbar\omega)^N}$$
 
@@ -1265,7 +1265,7 @@ Proof: The number of ways to distribute $E/(\hbar\omega)$ energy quanta among $N
 
 $$\Omega = \binom{n + N - 1}{N - 1} = \frac{(n+N-1)!}{n!(N-1)!}$$
 
-where $n = E/(\hbar\omega)$. For large $n$ using Stirling's approximation:
+Where $n = E/(\hbar\omega)$. For large $n$ using Stirling's approximation:
 
 $$S = k_B\left[(n+N)\ln(n+N) - n\ln n - N\ln N\right]$$
 
@@ -1283,7 +1283,7 @@ For non-interacting quantum particles:
 
 $$\langle n_i \rangle = \frac{1}{e^{\beta(\epsilon_i - \mu)} \pm 1}$$
 
-where $+$ is for fermions (Fermi--Dirac) and $-$ for bosons (Bose--Einstein).
+Where $+$ is for fermions (Fermi--Dirac) and $-$ for bosons (Bose--Einstein).
 
 **Fermions** (half-integer spin): Pauli exclusion limits $\langle n_i \rangle \leq 1$.
 
@@ -1299,7 +1299,7 @@ The **Fermi energy** at $T = 0$:
 
 $$\epsilon_F = \frac{\hbar^2}{2m}(3\pi^2 n)^{2/3}$$
 
-where $n = N/V$ is the number density. The **Fermi temperature** is $T_F = \epsilon_F/k_B$.
+Where $n = N/V$ is the number density. The **Fermi temperature** is $T_F = \epsilon_F/k_B$.
 
 At low temperature ($T \ll T_F$), the Sommerfeld expansion gives:
 
@@ -1311,15 +1311,15 @@ The linear specific heat is a hallmark of degenerate Fermi systems.
 
 ### 15.3 The Bose Gas and Bose--Einstein Condensation
 
-For bosons, the chemical potential must satisfy $\mu \leq \epsilon_0$ (ground state energy). When $\mu \to \epsilon_0$, a macroscopic fraction of particles condenses into the ground state.
+For bosons, the chemical potential must satisfy $\mu \leq \epsilon_0$ (ground state energy). When $\mu \to \epsilon_0$A macroscopic fraction of particles condenses into the ground state.
 
 The **critical temperature** for BEC in 3D:
 
 $$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3}$$
 
-where $\zeta(3/2) \approx 2.612$.
+Where $\zeta(3/2) \approx 2.612$.
 
-Below $T_c$, the condensate fraction is:
+Below $T_c$The condensate fraction is:
 
 $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
@@ -1349,7 +1349,7 @@ This is enormously higher than room temperature, confirming that conduction elec
 
 For $N = 10^6$ rubidium-87 atoms in a harmonic trap with frequency $\bar{\omega}/(2\pi) = 100$ Hz:
 
-In a harmonic trap, the density of states is $g(\epsilon) = \epsilon^2/(2\hbar^3\bar{\omega}^3)$, giving:
+In a harmonic trap, the density of states is $g(\epsilon) = \epsilon^2/(2\hbar^3\bar{\omega}^3)$Giving:
 
 $$T_c = \frac{\hbar\bar{\omega}}{k_B}\left(\frac{6N}{\pi^2\zeta(3)}\right)^{1/3}$$
 
@@ -1371,13 +1371,13 @@ The **Einstein model** treats all atoms as independent quantum oscillators with 
 
 $$C_V = 3Nk_B\left(\frac{\theta_E}{T}\right)^2 \frac{e^{\theta_E/T}}{(e^{\theta_E/T} - 1)^2}$$
 
-where $\theta_E = \hbar\omega_E/k_B$. This correctly predicts $C_V \to 0$ as $T \to 0$, but gives $C_V \propto e^{-\theta_E/T}$ at low $T$, whereas experiments show $C_V \propto T^3$.
+Where $\theta_E = \hbar\omega_E/k_B$. This correctly predicts $C_V \to 0$ as $T \to 0$But gives $C_V \propto e^{-\theta_E/T}$ at low $T$Whereas experiments show $C_V \propto T^3$.
 
 The **Debye model** treats the lattice vibrations as a continuum of phonon modes with a cutoff frequency $\omega_D$:
 
 $$g(\omega) = \frac{3V\omega^2}{2\pi^2 v_s^3} \quad \text{for {} 0 \leq \omega \leq \omega_D$$
 
-where $v_s$ is the average sound speed. The cutoff is determined by the total number of modes:
+Where $v_s$ is the average sound speed. The cutoff is determined by the total number of modes:
 
 $$\int_0^{\omega_D} g(\omega)\,d\omega = 3N \implies \omega_D = v_s(6\pi^2 N/V)^{1/3}$$
 
@@ -1404,7 +1404,7 @@ $$C_V = \frac{12\pi^4}{5}Nk_B\left(\frac{T}{\theta_D}\right)^3 \propto T^3$$
 <details>
 <summary>Worked Example 16.1: Debye Temperature of Aluminum</summary>
 
-Aluminum has $M = 27$ g/mol, $\rho = 2.70$ g/cm$^3$, $v_s \approx 6420$ m/s.
+Aluminum has $M = 27$ g/mol, $\rho = 2.70$ g/cm$^3$$v_s \approx 6420$ m/s.
 
 $$n = \frac{\rho N_A}{M} = \frac{2.70 \times 10^3 \times 6.022 \times 10^{23}}{27 \times 10^{-3}} = 6.02 \times 10^{28} \text{ m{}^{-3}$$
 
@@ -1432,7 +1432,7 @@ These satisfy the identity:
 
 $$C_P - C_V = TV\frac{\alpha^2}{\kappa_T}$$
 
-For an ideal gas ($\alpha = 1/T$, $\kappa_T = 1/P$):
+For an ideal gas ($\alpha = 1/T$$\kappa_T = 1/P$):
 
 $$C_P - C_V = TV \cdot \frac{1}{T^2} \cdot P = Nk_B$$
 
@@ -1485,22 +1485,22 @@ $$\frac{C_P}{C_V} = 1 + \frac{Nk_B}{5Nk_B/2} = 1 + \frac{2}{5} = \frac{7}{5} = 1
 
 4. **Mean-field overestimates $T_c$**: The mean-field approximation $T_c^{\text{MF{}} = zJ/k_B$ systematically overestimates the true critical temperature because it neglects fluctuations. The error is largest in low dimensions (where fluctuations are strongest) and vanishes above the upper critical dimension ($d = 4$ for short-range Ising).
 
-5. **Classical vs. quantum statistics**: At temperatures much higher than the degeneracy temperature $T_F$ (fermions) or $T_c$ (bosons), both Fermi--Dirac and Bose--Einstein distributions reduce to the Maxwell--Boltzmann distribution. The quantum corrections are of order $n\lambda_{\text{dB{}}^3$ where $\lambda_{\text{dB{}} = h/\sqrt{2\pi mk_BT}$ is the thermal de Broglie wavelength.
+5. **Classical vs. Quantum statistics**: At temperatures much higher than the degeneracy temperature $T_F$ (fermions) or $T_c$ (bosons), both Fermi--Dirac and Bose--Einstein distributions reduce to the Maxwell--Boltzmann distribution. The quantum corrections are of order $n\lambda_{\text{dB{}}^3$ where $\lambda_{\text{dB{}} = h/\sqrt{2\pi mk_BT}$ is the thermal de Broglie wavelength.
 
 ## Problems
 
 <details>
 <summary>Problem 1: Entropy of Mixing</summary>
 
-Consider two ideal gases A and B, initially separated by a partition in a container of volume $V$. Gas A has $N_A$ particles in volume $V_A$; gas B has $N_B$ particles in volume $V_B$, with $V_A + V_B = V$. The partition is removed and the gases mix isothermally at temperature $T$.
+Consider two ideal gases A and B, initially separated by a partition in a container of volume $V$. Gas A has $N_A$ particles in volume $V_A$; gas B has $N_B$ particles in volume $V_B$With $V_A + V_B = V$. The partition is removed and the gases mix isothermally at temperature $T$.
 
 (a) Show that the entropy of mixing is:
 
 $$\Delta S_{\text{mix{}} = -Nk_B\left[x\ln x + (1-x)\ln(1-x)\right] - Nk_B\left[y\ln y + (1-y)\ln(1-y)\right]$$
 
-where $x = N_A/N$, $y = V_A/V$.
+Where $x = N_A/N$$y = V_A/V$.
 
-(b) Evaluate $\Delta S_{\text{mix{}}$ for $N_A = N_B = N_0$, $V_A = V_B = V/2$ and show $\Delta S_{\text{mix{}} = 2N_0k_B\ln 2$.
+(b) Evaluate $\Delta S_{\text{mix{}}$ for $N_A = N_B = N_0$$V_A = V_B = V/2$ and show $\Delta S_{\text{mix{}} = 2N_0k_B\ln 2$.
 
 (c) **Gibbs paradox**: If gases A and B are identical, the actual entropy change is zero. Explain how the factor of $1/N!$ in the partition function resolves this paradox.
 
@@ -1516,11 +1516,11 @@ $$\Delta S = -Nk_B[x\ln y + (1-x)\ln(1-y)]$$
 
 Note: The more general form includes contributions from the number of particles.
 
-(b) With $x = 1/2$, $y = 1/2$:
+(b) With $x = 1/2$$y = 1/2$:
 
 $$\Delta S = -2N_0k_B\left(\frac{1}{2}\ln\frac{1}{2}\right) = -2N_0k_B\left(-\frac{1}{2}\ln 2\right) = 2N_0k_B\ln 2$$
 
-(c) The Sackur--Tetrode equation includes $-Nk_B\ln N + Nk_B = -k_B\ln N!$, which accounts for the indistinguishability of particles. For identical gases, the "before" and "after" states are the same (same $N$, $V$, $E$), so $\Delta S = 0$. Without the $1/N!$ factor, we would get the same non-zero result for mixing identical gases — Gibbs' paradox.
+(c) The Sackur--Tetrode equation includes $-Nk_B\ln N + Nk_B = -k_B\ln N!$Which accounts for the indistinguishability of particles. For identical gases, the "before" and "after" states are the same (same $N$$V$$E$), so $\Delta S = 0$. Without the $1/N!$ factor, we would get the same non-zero result for mixing identical gases — Gibbs' paradox.
 
 </details>
 
@@ -1543,7 +1543,7 @@ For $t < 1$: $m$ satisfies $m = \tanh(m/t)$. For small $m/t$:
 
 $$m \approx \frac{m}{t} - \frac{1}{3}\left(\frac{m}{t}\right)^3 \implies m = \sqrt{3(1-t)}\, t \approx \sqrt{3}\,(1-t)^{1/2} \text{ near {} T_c$$
 
-(b) From the Landau analysis: $\chi \propto |T - T_c|^{-1}$, i.e., $\gamma = 1$.
+(b) From the Landau analysis: $\chi \propto |T - T_c|^{-1}$I.e., $\gamma = 1$.
 
 Explicitly: $\chi^{-1} = k_B T(1 - t^{-1}\text{sech{}^2(m/t))$. Near $T_c$: $\chi \sim 1/(T - T_c)$.
 
@@ -1593,11 +1593,11 @@ $$= 0.244 \times (1.193 \times 10^3)^3 \approx 0.244 \times 1.698 \times 10^9 \a
 <details>
 <summary>Problem 4: Chemical Equilibrium</summary>
 
-For the dissociation reaction $\text{H{}_2 \rightleftharpoons 2\text{H{}$, the equilibrium constant is:
+For the dissociation reaction $\text{H{}_2 \rightleftharpoons 2\text{H{}$The equilibrium constant is:
 
 $$K(T) = \frac{n_H^2}{n_{H_2}} = \left(\frac{m_H k_B T}{2\pi\hbar^2}\right)^{3/2}\frac{(j_H + 1)^2}{2j_{H_2} + 1}\frac{1}{Z_{\text{rot{}}Z_{\text{vib{}}}e^{-D/(k_BT)}$$
 
-where $D = 4.52$ eV is the dissociation energy, $j_H = 1/2$, $j_{H_2} = 1$.
+Where $D = 4.52$ eV is the dissociation energy, $j_H = 1/2$$j_{H_2} = 1$.
 
 (a) At $T = 3000$ K, estimate the fraction of hydrogen that is dissociated.
 
@@ -1605,7 +1605,7 @@ where $D = 4.52$ eV is the dissociation energy, $j_H = 1/2$, $j_{H_2} = 1$.
 
 **Solution:**
 
-(a) At $T = 3000$ K, $k_BT = 0.259$ eV, so $D/(k_BT) = 17.5$, giving $e^{-17.5} \approx 2.5 \times 10^{-8}$.
+(a) At $T = 3000$ K, $k_BT = 0.259$ eV, so $D/(k_BT) = 17.5$Giving $e^{-17.5} \approx 2.5 \times 10^{-8}$.
 
 The translational factor: $(m_H k_B T / 2\pi\hbar^2)^{3/2} \approx (2.5 \times 10^{30})^{3/2} \times (3000)^{3/2} \approx 10^{35}$ m$^{-3}$.
 
@@ -1624,17 +1624,17 @@ This suggests nearly complete dissociation at 3000 K and 1 atm (consistent with 
 <details>
 <summary>Problem 5: Grand Canonical Ensemble</summary>
 
-Consider a system in the grand canonical ensemble with chemical potential $\mu$, temperature $T$, and volume $V$.
+Consider a system in the grand canonical ensemble with chemical potential $\mu$Temperature $T$And volume $V$.
 
 (a) Derive the relation between the average particle number fluctuations and the isothermal compressibility:
 
 $$\frac{\langle N^2 \rangle - \langle N \rangle^2}{\langle N \rangle} = n k_B T \kappa_T$$
 
-where $n = N/V$.
+Where $n = N/V$.
 
 (b) Evaluate this for an ideal gas and show $\langle(\Delta N)^2\rangle = \langle N \rangle$.
 
-(c) For a Fermi gas at $T = 0$, show $\langle(\Delta N)^2\rangle = 0$ and explain physically.
+(c) For a Fermi gas at $T = 0$Show $\langle(\Delta N)^2\rangle = 0$ and explain physically.
 
 **Solution:**
 
@@ -1652,19 +1652,19 @@ Wait, more carefully:
 
 $$\langle(\Delta N)^2\rangle = k_BT \frac{\partial \langle N \rangle}{\partial \mu} = k_BT V \frac{\partial n}{\partial \mu} = k_BT V \frac{\partial n}{\partial P}\frac{\partial P}{\partial \mu}$$
 
-Since $(\partial P/\partial \mu)_T = n$ (from $dG = -SdT + VdP + \mu dN$, or $P = nk_BT$ for ideal gas):
+Since $(\partial P/\partial \mu)_T = n$ (from $dG = -SdT + VdP + \mu dN$Or $P = nk_BT$ for ideal gas):
 
 $$\frac{\langle(\Delta N)^2\rangle}{\langle N \rangle} = k_BT \frac{\partial n}{\partial P} = nk_B T\kappa_T$$
 
-where $\kappa_T = -\frac{1}{V}(\partial V/\partial P)_T = \frac{1}{n}(\partial n/\partial P)_T$.
+Where $\kappa_T = -\frac{1}{V}(\partial V/\partial P)_T = \frac{1}{n}(\partial n/\partial P)_T$.
 
-(b) For ideal gas: $\kappa_T = 1/P = 1/(nk_BT)$, so:
+(b) For ideal gas: $\kappa_T = 1/P = 1/(nk_BT)$So:
 
 $$\frac{\langle(\Delta N)^2\rangle}{\langle N \rangle} = nk_BT \cdot \frac{1}{nk_BT} = 1 \implies \langle(\Delta N)^2\rangle = \langle N \rangle$$
 
 This is the standard Poisson statistics result for non-interacting particles.
 
-(c) At $T = 0$, the Fermi gas is in its ground state with exactly $N$ particles filling all states up to $\epsilon_F$. There are no particle number fluctuations: $\langle(\Delta N)^2\rangle = 0$. Physically, this is because adding or removing a particle costs a finite energy $\epsilon_F$, so the chemical potential is infinitely sharp.
+(c) At $T = 0$The Fermi gas is in its ground state with exactly $N$ particles filling all states up to $\epsilon_F$. There are no particle number fluctuations: $\langle(\Delta N)^2\rangle = 0$. Physically, this is because adding or removing a particle costs a finite energy $\epsilon_F$So the chemical potential is infinitely sharp.
 
 </details>
 
@@ -1676,7 +1676,7 @@ The **density matrix** (or density operator) provides the most general descripti
 
 $$\hat{\rho} = \sum_i p_i\,|\psi_i\rangle\langle\psi_i|$$
 
-where $p_i$ is the probability of being in state $|\psi_i\rangle$.
+Where $p_i$ is the probability of being in state $|\psi_i\rangle$.
 
 **Properties:**
 - $\text{Tr{}(\hat{\rho}) = 1$ (normalisation)
@@ -1698,7 +1698,7 @@ For a system of non-interacting quantum particles, the grand canonical partition
 
 $$\ln\mathcal{'\{'}Z{'\}'} = \pm\sum_{\mathbf{'\{'}k{'\}'}}\ln(1 \mp e^{-\beta(\epsilon_{\mathbf{'\{'}k{'\}'}} - \mu)})$$
 
-where $+$ is for fermions and $-$ for bosons.
+Where $+$ is for fermions and $-$ for bosons.
 
 The thermodynamic quantities follow from:
 
@@ -1730,7 +1730,7 @@ The excited fraction: $N_{\text{ex{}}/N = (T/T_c)^{3/2}$.
 
 ### 18.4 Landau Levels and Quantum Oscillations
 
-In a magnetic field $\mathbf{'\{'}B{'\}'} = B\hat{z}$, the energy levels of a free electron gas become quantised into **Landau levels**:
+In a magnetic field $\mathbf{'\{'}B{'\}'} = B\hat{z}$The energy levels of a free electron gas become quantised into **Landau levels**:
 
 $$\epsilon_n = \left(n + \frac{1}{2}\right)\hbar\omega_c + \frac{\hbar^2 k_z^2}{2m_e}, \quad \omega_c = \frac{eB}{m_e}$$
 
@@ -1742,7 +1742,7 @@ $$g(\epsilon) = \frac{eB}{2\pi^2\hbar}\sum_n \frac{1}{\sqrt{\epsilon - (n + 1/2)
 
 $$\Delta\!\left(\frac{1}{B}\right) = \frac{2\pi e}{\hbar A_{\text{ext{}}}$$
 
-where $A_{\text{ext{}}$ is the extremal cross-sectional area of the Fermi surface perpendicular to $\mathbf{'\{'}B{'\}'}$.
+Where $A_{\text{ext{}}$ is the extremal cross-sectional area of the Fermi surface perpendicular to $\mathbf{'\{'}B{'\}'}$.
 
 **de Haas--van Alphen oscillations:** Similar oscillations in the magnetisation (and hence the susceptibility). These provide the most precise tool for mapping Fermi surface geometry.
 
@@ -1757,11 +1757,11 @@ The density matrix:
 
 $$\hat{\rho} = \frac{1}{Z}\begin{pmatrix} e^{\beta\gamma\hbar B/2} & 0 \\ 0 & e^{-\beta\gamma\hbar B/2} \end{pmatrix} = \begin{pmatrix} p_\uparrow & 0 \\ 0 & p_\downarrow \end{pmatrix}$$
 
-where $p_\uparrow = e^{\beta\gamma\hbar B/2}/(2\cosh(\beta\gamma\hbar B/2))$.
+Where $p_\uparrow = e^{\beta\gamma\hbar B/2}/(2\cosh(\beta\gamma\hbar B/2))$.
 
 At high $T$: $p_\uparrow \approx p_\downarrow \approx 1/2$ (maximally mixed, $S = k_B\ln 2$).
 
-At low $T$ ($\gamma\hbar B \gg k_BT$): $p_\uparrow \to 1$, $p_\downarrow \to 0$ (nearly pure, $S \to 0$).
+At low $T$ ($\gamma\hbar B \gg k_BT$): $p_\uparrow \to 1$$p_\downarrow \to 0$ (nearly pure, $S \to 0$).
 
 The magnetisation: $\langle S_z \rangle = \text{Tr{}(\hat{\rho}\hat{S}_z) = \frac{\hbar}{2}(p_\uparrow - p_\downarrow) = \frac{\hbar}{2}\tanh\!\left(\frac{\gamma\hbar B}{2k_BT}\right)$.
 
@@ -1802,7 +1802,7 @@ For example, the velocity autocorrelation function of a Brownian particle:
 
 $$\langle v(t)v(0)\rangle = \frac{k_BT}{m}e^{-t/\tau}$$
 
-gives the mobility $\mu = e\tau/m$ (Einstein relation).
+Gives the mobility $\mu = e\tau/m$ (Einstein relation).
 
 ### 19.2 Johnson--Nyquist Noise Spectrum
 
@@ -1822,12 +1822,12 @@ The **Jarzynski equality** (1997) connects non-equilibrium work to equilibrium f
 
 $$\langle e^{-\beta W}\rangle = e^{-\beta\Delta F}$$
 
-where the average is over many realisations of a process that drives the system from equilibrium state $A$ to equilibrium state $B$ in time $\tau$.
+Where the average is over many realisations of a process that drives the system from equilibrium state $A$ to equilibrium state $B$ in time $\tau$.
 
 **Consequences:**
 - By Jensen's inequality: $\langle W \rangle \geq \Delta F$ (the average work is never less than the free energy change).
 - For quasi-static processes: $\langle W \rangle = \Delta F$ and the distribution of $W$ is a delta function.
-- For fast (far-from-equilibrium) processes: $\langle W \rangle > \Delta F$, but the exponential average still equals $e^{-\beta\Delta F}$.
+- For fast (far-from-equilibrium) processes: $\langle W \rangle > \Delta F$But the exponential average still equals $e^{-\beta\Delta F}$.
 
 This remarkable result has been verified experimentally in single-molecule pulling experiments (RNA, DNA hairpins) using optical tweezers.
 
@@ -1837,7 +1837,7 @@ The **Crooks theorem** (1999) relates the work distributions for forward and rev
 
 $$\frac{P_F(W)}{P_R(-W)} = e^{\beta(W - \Delta F)}$$
 
-where $P_F(W)$ is the probability distribution of work for the forward process and $P_R(W)$ for the reverse process.
+Where $P_F(W)$ is the probability distribution of work for the forward process and $P_R(W)$ for the reverse process.
 
 This implies the Jarzynski equality as a special case:
 
@@ -1846,7 +1846,7 @@ $$\int P_F(W)\,e^{-\beta W}\,dW = \int P_R(-W)\,e^{-\beta\Delta F}\,dW = e^{-\be
 <details>
 <summary>Worked Example 19.1: Jarzynski Equality for a Two-Level System</summary>
 
-Consider a two-level system with $\epsilon_1 = 0$ and $\epsilon_2 = \epsilon$, initially in equilibrium at inverse temperature $\beta$.
+Consider a two-level system with $\epsilon_1 = 0$ and $\epsilon_2 = \epsilon$Initially in equilibrium at inverse temperature $\beta$.
 
 The free energy: $F = -k_BT\ln Z = -k_BT\ln(1 + e^{-\beta\epsilon})$.
 
@@ -1889,3 +1889,7 @@ $$E = \int_0^\tau \frac{\partial F}{\partial \lambda(t)}\,\dot{\lambda}(t)\,dt$$
 For a quasi-static process: $E \to \Delta F$ (minimum possible).
 
 **Fredkin and Toffoli gates** are examples of logically reversible logic gates. Any computation can be made reversible by saving all intermediate results and running the computation in reverse to restore the input tape.
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

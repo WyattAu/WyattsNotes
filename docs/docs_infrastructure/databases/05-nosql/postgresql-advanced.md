@@ -7,7 +7,7 @@ slug: postgresql-advanced
 ## Extensions Ecosystem
 
 Extensions add functionality to PostgreSQL through a well-defined API. They run in the same process
-as the server and have access to the same data, making them powerful but also a trust boundary.
+As the server and have access to the same data, making them powerful but also a trust boundary.
 
 ### Installing Extensions
 
@@ -182,13 +182,13 @@ LIMIT 10;
 
 ### Physical vs Logical Replication
 
-| Aspect           | Physical Replication                   | Logical Replication                        |
+| Aspect | Physical Replication | Logical Replication |
 | ---------------- | -------------------------------------- | ------------------------------------------ |
-| What replicates  | Entire WAL (all databases, all tables) | Selected tables (per-publication)          |
-| Granularity      | Database level (entire cluster)        | Table level (per publication/subscription) |
-| Cross-version    | Same major version only                | Can replicate between major versions       |
-| Write on replica | No (read-only)                         | Yes (subscription tables are writable)     |
-| Use case         | High availability, disaster recovery   | Data sharing, partial replication, CDC     |
+| What replicates | Entire WAL (all databases, all tables) | Selected tables (per-publication) |
+| Granularity | Database level (entire cluster) | Table level (per publication/subscription) |
+| Cross-version | Same major version only | Can replicate between major versions |
+| Write on replica | No (read-only) | Yes (subscription tables are writable) |
+| Use case | High availability, disaster recovery | Data sharing, partial replication, CDC |
 
 ### Setting Up Logical Replication
 
@@ -221,7 +221,7 @@ SELECT * FROM pg_stat_subscription;
 ### Conflict Resolution
 
 On the subscriber, conflicts can occur when the subscription table has local modifications that
-conflict with incoming replication changes:
+Conflict with incoming replication changes:
 
 ```sql
 -- Configure conflict resolution
@@ -305,8 +305,8 @@ GROUP BY u.name;
 :::warning
 
 FDW queries may fetch entire remote tables locally for joins, sorts, and aggregations that cannot be
-pushed down. Use `EXPLAIN (VERBOSE)` to verify what is pushed down and what is executed locally. For
-large datasets, consider materializing the data instead.
+Pushed down. Use `EXPLAIN (VERBOSE)` to verify what is pushed down and what is executed locally. For
+Large datasets, consider materializing the data instead.
 
 :::
 
@@ -406,8 +406,8 @@ WHERE created_at >= '2024-01-01' AND created_at &lt; '2024-07-01';
 :::warning
 
 Unique constraints on partitioned tables must include the partition key. A `UNIQUE(order_id)`
-constraint across all partitions is not supported. Instead, use `UNIQUE(order_id, created_at)` or
-enforce uniqueness at the application level.
+Constraint across all partitions is not supported. Instead, use `UNIQUE(order_id, created_at)` or
+Enforce uniqueness at the application level.
 
 :::
 
@@ -468,8 +468,8 @@ RESET ROLE;
 ### RLS Performance
 
 RLS policies are applied as security barrier quals, meaning the planner cannot push predicates
-through them. This can lead to suboptimal plans. Use `LEAKPROOF` functions in RLS policies and
-ensure the policy is selective.
+Through them. This can lead to suboptimal plans. Use `LEAKPROOF` functions in RLS policies and
+Ensure the policy is selective.
 
 ## Auditing with pgAudit
 
@@ -491,7 +491,7 @@ ALTER ROLE auditor SET pgaudit.log_catalog = ON;
 ```
 
 Audit logs are written to the PostgreSQL log (same destination as `log_destination`). Configure log
-collection (e.g., Filebeat, Fluentd) to forward audit logs to a centralized log management system.
+Collection (e.g., Filebeat, Fluentd) to forward audit logs to a centralized log management system.
 
 ## Backup and Recovery
 
@@ -561,8 +561,8 @@ archive_command = 'aws s3 cp %p s3://mydb-wal-archive/%f'
 
 ### pg_upgrade (Logical)
 
-pg_upgrade creates a new cluster with the target version, links or copies data files, and updates
-system catalogs. It is the fastest upgrade method but requires downtime.
+Pg_upgrade creates a new cluster with the target version, links or copies data files, and updates
+System catalogs. It is the fastest upgrade method but requires downtime.
 
 ```bash
 # Stop the old cluster
@@ -636,14 +636,14 @@ SHOW maintenance_work_mem;  -- e.g., 1GB
 SHOW effective_cache_size;  -- e.g., 12GB
 ```
 
-| Parameter              | Recommended Setting                        | Notes                               |
+| Parameter | Recommended Setting | Notes |
 | ---------------------- | ------------------------------------------ | ----------------------------------- |
-| `shared_buffers`       | 25% of RAM                                 | Up to ~8GB on Linux with huge pages |
-| `effective_cache_size` | 75% of RAM                                 | Planner hint, not allocated         |
-| `work_mem`             | 4-64MB (per-operation)                     | Higher = fewer disk spills          |
-| `maintenance_work_mem` | 1-4GB                                      | For VACUUM, index creation          |
-| `wal_buffers`          | 64MB (default -1 = 1/32 of shared_buffers) | WAL buffer size                     |
-| `huge_pages`           | `try`                                      | Reduces TLB misses                  |
+| `shared_buffers` | 25% of RAM | Up to ~8GB on Linux with huge pages |
+| `effective_cache_size` | 75% of RAM | Planner hint, not allocated |
+| `work_mem` | 4-64MB (per-operation) | Higher = fewer disk spills |
+| `maintenance_work_mem` | 1-4GB | For VACUUM, index creation |
+| `wal_buffers` | 64MB (default -1 = 1/32 of shared_buffers) | WAL buffer size |
+| `huge_pages` | `try` | Reduces TLB misses |
 
 ### WAL Configuration
 
@@ -721,38 +721,38 @@ ORDER BY datname;
 ### Not Setting wal_level Before Creating Replicas
 
 Changing `wal_level` requires a PostgreSQL restart. If you set up a database in production and later
-need replication, you must restart to enable `wal_level = replica`. Plan for replication from the
-start.
+Need replication, you must restart to enable `wal_level = replica`. Plan for replication from the
+Start.
 
 ### Extension Version Mismatches
 
 Extensions must be compatible with the PostgreSQL major version. After a major version upgrade,
-extensions must be upgraded too (often automatically by `pg_upgrade`, but not always). Check with
+Extensions must be upgraded too (often automatically by `pg_upgrade`But not always). Check with
 `SELECT * FROM pg_available_extension_versions`.
 
 ### FDW Query Performance
 
 FDW queries that cannot push down predicates, joins, or aggregations fetch entire tables across the
-network. Always verify with `EXPLAIN (VERBOSE)` what is executed remotely vs locally. For frequently
-accessed remote data, consider materializing it.
+Network. Always verify with `EXPLAIN (VERBOSE)` what is executed remotely vs locally. For frequently
+Accessed remote data, consider materializing it.
 
 ### RLS Policies Blocking the Table Owner
 
-By default, the table owner bypasses RLS. If you set `FORCE ROW LEVEL SECURITY`, the owner is also
-subject to RLS policies. This can break administrative queries if the owner's RLS context is not set
-correctly.
+By default, the table owner bypasses RLS. If you set `FORCE ROW LEVEL SECURITY`The owner is also
+Subject to RLS policies. This can break administrative queries if the owner's RLS context is not set
+Correctly.
 
 ### Backup Testing
 
 A backup that has not been tested is not a backup. Regularly restore backups to a test environment
-and run data integrity checks. Verify that PITR works to the expected recovery point.
+And run data integrity checks. Verify that PITR works to the expected recovery point.
 
 ## Background Workers and pg_cron
 
 ### pg_cron Extension
 
-pg_cron schedules PostgreSQL commands as periodic jobs, similar to cron but running inside the
-database:
+Pg_cron schedules PostgreSQL commands as periodic jobs, similar to cron but running inside the
+Database:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS pg_cron;
@@ -783,14 +783,14 @@ SELECT cron.unschedule('nightly-vacuum');
 
 :::info
 
-pg_cron requires `shared_preload_libraries = 'pg_cron'` and a PostgreSQL restart. Jobs run in the
-context of the database where pg_cron is installed. Cross-database scheduling is not supported.
+Pg_cron requires `shared_preload_libraries = 'pg_cron'` and a PostgreSQL restart. Jobs run in the
+Context of the database where pg_cron is installed. Cross-database scheduling is not supported.
 
 :::
 
 ### pg_background
 
-pg_background runs commands in the background, returning control to the client immediately:
+Pg_background runs commands in the background, returning control to the client immediately:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS pg_background;
@@ -914,7 +914,7 @@ Events include: before/after images, operation type, transaction metadata.
 :::warning
 
 Logical replication slots retain WAL until the consumer acknowledges all changes. If the consumer
-stops or falls behind, WAL accumulates on disk, potentially filling the storage. Monitor slot lag:
+Stops or falls behind, WAL accumulates on disk, potentially filling the storage. Monitor slot lag:
 
 ```sql
 SELECT slot_name, plugin, slot_type,
@@ -964,7 +964,7 @@ pg_dump -Fd -j 8 -f /backup/mydb_dir mydb
 ### Constraint Exclusion vs Partition Pruning
 
 PostgreSQL 10 used constraint exclusion for partition pruning, which was slow. PostgreSQL 11+ uses
-native partition pruning, which is much faster and happens at plan time:
+Native partition pruning, which is much faster and happens at plan time:
 
 ```sql
 -- Verify partition pruning is happening
@@ -993,7 +993,7 @@ ALTER TABLE orders ATTACH PARTITION orders_2023
 ### Default Partition Management
 
 The default partition catches rows that do not match any defined partition. Periodically check it
-for data that should be in a new partition:
+For data that should be in a new partition:
 
 ```sql
 SELECT COUNT(*) FROM orders_default;
@@ -1011,3 +1011,11 @@ WITH moved AS (
 )
 INSERT INTO orders_2025_q1 SELECT * FROM moved;
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

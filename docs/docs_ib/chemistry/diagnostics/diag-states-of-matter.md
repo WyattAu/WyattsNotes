@@ -10,11 +10,11 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Ideal Gas Law and Unit Conversion
-**Question:** A gas occupies $250\ \text{cm}^3$ at $25\ ^\circ\text{C}$ and $98.5\ \text{kPa}$. Calculate the volume it would occupy at STP ($0\ ^\circ\text{C}$, $101.3\ \text{kPa}$), giving your answer in $\text{dm}^3$ to three significant figures.
+**Question:** A gas occupies $250\ \text{cm}^3$ at $25\ ^\circ\text{C}$ and $98.5\ \text{kPa}$. Calculate the volume it would occupy at STP ($0\ ^\circ\text{C}$$101.3\ \text{kPa}$), giving your answer in $\text{dm}^3$ to three significant figures.
 
 **Solution:** Use the combined gas law: $\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$.
 
-$T_1 = 25 + 273.15 = 298.15\ \text{K}$, $T_2 = 273.15\ \text{K}$.
+$T_1 = 25 + 273.15 = 298.15\ \text{K}$$T_2 = 273.15\ \text{K}$.
 
 $V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{98.5 \times 250 \times 273.15}{101.3 \times 298.15}$
 
@@ -28,7 +28,7 @@ Common error: forgetting to convert $^\circ\text{C}$ to K. If Celsius were used 
 
 ---
 ### UT-2: Deviation from Ideal Gas Behaviour
-**Question:** For which gas under which conditions would deviation from ideal behaviour be greatest: (a) $\text{He}$ at $50\ \text{K}$ and $1\ \text{atm}$, or (b) $\text{NH}_3$ at $400\ \text{K}$ and $1\ \text{atm}$? Justify your answer using the van der Waals equation concepts of intermolecular forces and molecular volume.
+**Question:** For which gas under which conditions would deviation from ideal behaviour be greatest: (a) $\text{He}$ at $50\ \text{K}$ and $1\ \text{atm}$Or (b) $\text{NH}_3$ at $400\ \text{K}$ and $1\ \text{atm}$? Justify your answer using the van der Waals equation concepts of intermolecular forces and molecular volume.
 
 **Solution:** Deviation is greatest for (a) He at 50 K.
 
@@ -42,9 +42,9 @@ Therefore, deviation is greatest for **(b) $\text{NH}_3$ at 400 K and 1 atm**. D
 
 ---
 ### UT-3: Maxwell-Boltzmann Distribution Application
-**Question:** On a Maxwell-Boltzmann distribution curve, mark the most probable speed, mean speed, and root-mean-square speed. If the temperature of a gas is increased from $300\ \text{K}$ to $600\ \text{K}$, by what factor does the fraction of molecules with energy greater than the activation energy $E_a$ change, given that $E_a = 50\ \text{kJ mol}^{-1}$?
+**Question:** On a Maxwell-Boltzmann distribution curve, mark the most probable speed, mean speed, and root-mean-square speed. If the temperature of a gas is increased from $300\ \text{K}$ to $600\ \text{K}$By what factor does the fraction of molecules with energy greater than the activation energy $E_a$ change, given that $E_a = 50\ \text{kJ mol}^{-1}$?
 
-**Solution:** On the distribution: $v_{\text{mp}} \lt v_{\text{mean}} \lt v_{\text{rms}}$, all increasing with temperature. The peak shifts right and lowers.
+**Solution:** On the distribution: $v_{\text{mp}} \lt v_{\text{mean}} \lt v_{\text{rms}}$All increasing with temperature. The peak shifts right and lowers.
 
 The fraction of molecules with energy $\geq E_a$ is proportional to $\exp(-E_a/RT)$.
 
@@ -75,7 +75,7 @@ Key steps: (1) subtract water vapour pressure to get dry gas pressure, (2) use a
 
 ---
 ### IT-2: Phase Changes and Energetics (with Energetics)
-**Question:** The enthalpy of vaporisation of water is $40.7\ \text{kJ mol}^{-1}$ at $100\ ^\circ\text{C}$ and the enthalpy of fusion is $6.01\ \text{kJ mol}^{-1}$ at $0\ ^\circ\text{C}$. Calculate the total energy required to convert $50.0\ \text{g}$ of ice at $-10\ ^\circ\text{C}$ to steam at $110\ ^\circ\text{C}$. Use: $c_{\text{ice}} = 2.09\ \text{J g}^{-1}\text{K}^{-1}$, $c_{\text{water}} = 4.18\ \text{J g}^{-1}\text{K}^{-1}$, $c_{\text{steam}} = 2.01\ \text{J g}^{-1}\text{K}^{-1}$.
+**Question:** The enthalpy of vaporisation of water is $40.7\ \text{kJ mol}^{-1}$ at $100\ ^\circ\text{C}$ and the enthalpy of fusion is $6.01\ \text{kJ mol}^{-1}$ at $0\ ^\circ\text{C}$. Calculate the total energy required to convert $50.0\ \text{g}$ of ice at $-10\ ^\circ\text{C}$ to steam at $110\ ^\circ\text{C}$. Use: $c_{\text{ice}} = 2.09\ \text{J g}^{-1}\text{K}^{-1}$$c_{\text{water}} = 4.18\ \text{J g}^{-1}\text{K}^{-1}$$c_{\text{steam}} = 2.01\ \text{J g}^{-1}\text{K}^{-1}$.
 
 **Solution:** Five stages:
 
@@ -91,8 +91,8 @@ Note that vaporisation ($q_4$) accounts for about 74% of the total energy -- pha
 
 ---
 ### IT-3: Gas Behaviour and Bonding (with Chemical Bonding)
-**Question:** Explain why $\text{CO}_2$ sublimes rather than melts at $1\ \text{atm}$, referring to its phase diagram. Why does $\text{SiO}_2$ not have a triple point at accessible pressures? Relate both observations to the type of bonding in each substance.
+**Question:** Explain why $\text{CO}_2$ sublimes rather than melts at $1\ \text{atm}$Referring to its phase diagram. Why does $\text{SiO}_2$ not have a triple point at accessible pressures? Relate both observations to the type of bonding in each substance.
 
-**Solution:** $\text{CO}_2$ has a triple point at $-56.6\ ^\circ\text{C}$ and $5.11\ \text{atm}$. At $1\ \text{atm}$, the solid-gas equilibrium line lies below the solid-liquid line, meaning that at atmospheric pressure, solid $\text{CO}_2$ transforms directly to gas (sublimation) without passing through the liquid phase. This occurs because $\text{CO}_2$ consists of small, non-polar molecules with only weak London dispersion forces. Little energy is needed to separate molecules from the solid lattice, and at $1\ \text{atm}$ there is insufficient pressure to stabilise the liquid phase.
+**Solution:** $\text{CO}_2$ has a triple point at $-56.6\ ^\circ\text{C}$ and $5.11\ \text{atm}$. At $1\ \text{atm}$The solid-gas equilibrium line lies below the solid-liquid line, meaning that at atmospheric pressure, solid $\text{CO}_2$ transforms directly to gas (sublimation) without passing through the liquid phase. This occurs because $\text{CO}_2$ consists of small, non-polar molecules with only weak London dispersion forces. Little energy is needed to separate molecules from the solid lattice, and at $1\ \text{atm}$ there is insufficient pressure to stabilise the liquid phase.
 
 $\text{SiO}_2$ is a giant covalent (macromolecular) network solid where every Si atom is covalently bonded to four O atoms in a continuous tetrahedral framework. It does not have discrete molecules -- it has an extremely high melting point ($1713\ ^\circ\text{C}$). Any "triple point" would require extremely high temperatures and pressures far beyond normal laboratory conditions. The covalent bonds throughout the network must be broken (rather than merely overcome, as with intermolecular forces) to change state, making all phase transitions require enormous energy input.

@@ -17,9 +17,9 @@ hide_table_of_contents: true
 
 An economist collects data on the annual income (in thousands of pounds) and annual savings (in hundreds of pounds) for 7 households:
 
-| Income ($x$, in $\pounds 1000$) | 15 | 22 | 30 | 35 | 42 | 55 | 68 |
+| Income ($x$In $\pounds 1000$) | 15 | 22 | 30 | 35 | 42 | 55 | 68 |
 |---|---|---|---|---|---|---|---|
-| Savings ($y$, in $\pounds 100$) | 3 | 8 | 12 | 18 | 22 | 35 | 48 |
+| Savings ($y$In $\pounds 100$) | 3 | 8 | 12 | 18 | 22 | 35 | 48 |
 
 **(a)** Calculate the product moment correlation coefficient (PMCC) for this data.
 
@@ -33,7 +33,7 @@ An economist collects data on the annual income (in thousands of pounds) and ann
 
 **Solution:**
 
-**(a)** We need $\sum x$, $\sum y$, $\sum x^2$, $\sum y^2$, $\sum xy$.
+**(a)** We need $\sum x$$\sum y$$\sum x^2$$\sum y^2$$\sum xy$.
 
 $$\sum x = 15 + 22 + 30 + 35 + 42 + 55 + 68 = 267$$
 
@@ -55,7 +55,7 @@ $$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \f
 
 $$= \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{3111755.1}◆RB◆ = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
-**(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
+**(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$Which are linear transformations.
 
 To see why: the PMCC is defined as $r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆$. Under coding:
 
@@ -101,31 +101,31 @@ Spearman's rank would be preferred when:
 
 **Question:**
 
-The regression line of $y$ on $x$ for a dataset is given by $y = 4.2x - 3.1$, and the regression line of $x$ on $y$ is $x = 0.21y + 1.8$. The dataset has $n = 20$ observations with $\bar{x} = 5.0$ and $\bar{y} = 17.9$.
+The regression line of $y$ on $x$ for a dataset is given by $y = 4.2x - 3.1$And the regression line of $x$ on $y$ is $x = 0.21y + 1.8$. The dataset has $n = 20$ observations with $\bar{x} = 5.0$ and $\bar{y} = 17.9$.
 
 **(a)** Verify that the point $(\bar{x}, \bar{y})$ lies on both regression lines.
 
 **(b)** Calculate the PMCC for the dataset.
 
-**(c)** A student uses the regression line of $y$ on $x$ to predict $y$ when $x = 15$, obtaining $\hat{y} = 59.9$. Explain why this prediction may be unreliable, identifying the specific statistical concept that is violated.
+**(c)** A student uses the regression line of $y$ on $x$ to predict $y$ when $x = 15$Obtaining $\hat{y} = 59.9$. Explain why this prediction may be unreliable, identifying the specific statistical concept that is violated.
 
-**(d)** Show that the two regression lines intersect at the point $(\bar{x}, \bar{y})$, and explain geometrically why this must always be the case for any bivariate dataset.
+**(d)** Show that the two regression lines intersect at the point $(\bar{x}, \bar{y})$And explain geometrically why this must always be the case for any bivariate dataset.
 
 [Difficulty: hard. Tests understanding of regression line properties, the relationship between the two regression lines, and extrapolation.]
 
 **Solution:**
 
-**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$, $y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This matches $\bar{y}$. So $(\bar{x}, \bar{y}) = (5.0, 17.9)$ lies on the regression line of $y$ on $x$.
+**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$$y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This matches $\bar{y}$. So $(\bar{x}, \bar{y}) = (5.0, 17.9)$ lies on the regression line of $y$ on $x$.
 
-On the line $x = 0.21y + 1.8$: when $y = 17.9$, $x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This does **not** equal $\bar{x} = 5.0$.
+On the line $x = 0.21y + 1.8$: when $y = 17.9$$x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This does **not** equal $\bar{x} = 5.0$.
 
-This discrepancy means the regression coefficients as stated are not consistent with $\bar{x} = 5.0$ and $\bar{y} = 17.9$ simultaneously for both lines. Let me verify: if the regression line of $y$ on $x$ passes through $(5, 17.9)$, then $17.9 = 4.2(5) + c$, so $c = 17.9 - 21 = -3.1$. This checks out.
+This discrepancy means the regression coefficients as stated are not consistent with $\bar{x} = 5.0$ and $\bar{y} = 17.9$ simultaneously for both lines. Let me verify: if the regression line of $y$ on $x$ passes through $(5, 17.9)$Then $17.9 = 4.2(5) + c$So $c = 17.9 - 21 = -3.1$. This checks out.
 
-For the regression line of $x$ on $y$ to pass through $(5, 17.9)$: $5 = 0.21(17.9) + c$, so $c = 5 - 3.759 = 1.241$. But the given line has intercept $1.8$, not $1.241$. The given regression lines are not consistent.
+For the regression line of $x$ on $y$ to pass through $(5, 17.9)$: $5 = 0.21(17.9) + c$So $c = 5 - 3.759 = 1.241$. But the given line has intercept $1.8$Not $1.241$. The given regression lines are not consistent.
 
-For the remainder of this solution, I will use the corrected regression line of $x$ on $y$: $x = 0.21y + 1.241$, or equivalently I will derive $r$ from the $y$-on-$x$ line alone.
+For the remainder of this solution, I will use the corrected regression line of $x$ on $y$: $x = 0.21y + 1.241$Or equivalently I will derive $r$ from the $y$-on-$x$ line alone.
 
-**(b)** From the regression line of $y$ on $x$: $y = 4.2x - 3.1$, the regression coefficient is $b_{yx} = 4.2$.
+**(b)** From the regression line of $y$ on $x$: $y = 4.2x - 3.1$The regression coefficient is $b_{yx} = 4.2$.
 
 The formula for the regression coefficient is:
 
@@ -137,7 +137,7 @@ We can use the relationship between the two regression coefficients:
 
 $$b_{yx} \cdot b_{xy} = r^2$$
 
-where $b_{xy}$ is the gradient of the regression line of $x$ on $y$. From the corrected line $x = 0.21y + 1.241$: $b_{xy} = 0.21$.
+Where $b_{xy}$ is the gradient of the regression line of $x$ on $y$. From the corrected line $x = 0.21y + 1.241$: $b_{xy} = 0.21$.
 
 $$r^2 = 4.2 \times 0.21 = 0.882$$
 
@@ -153,13 +153,13 @@ The specific statistical concept violated is that the least squares regression m
 
 $$y - \bar{y} = b_{yx}(x - \bar{x})$$
 
-Setting $x = \bar{x}$ gives $y = \bar{y}$, confirming the line passes through $(\bar{x}, \bar{y})$.
+Setting $x = \bar{x}$ gives $y = \bar{y}$Confirming the line passes through $(\bar{x}, \bar{y})$.
 
 Similarly, the regression line of $x$ on $y$ is:
 
 $$x - \bar{x} = b_{xy}(y - \bar{y})$$
 
-Setting $y = \bar{y}$ gives $x = \bar{x}$, confirming this line also passes through $(\bar{x}, \bar{y})$.
+Setting $y = \bar{y}$ gives $x = \bar{x}$Confirming this line also passes through $(\bar{x}, \bar{y})$.
 
 Geometrically, the point of means $(\bar{x}, \bar{y})$ is the "centre of gravity" of the data. The least squares criterion minimises the sum of squared vertical distances (for $y$ on $x$) or horizontal distances (for $x$ on $y$) from the line. The line of best fit must pass through the centre of gravity because shifting the line away from $(\bar{x}, \bar{y})$ would increase the total sum of squared residuals. Both regression lines must pass through this common point, so they always intersect there.
 
@@ -209,7 +209,7 @@ Since $\sum y_i = n\bar{y}$ and $\sum x_i = n\bar{x}$:
 
 $$= n\bar{y} - n\bar{y} + nb\bar{x} - nb\bar{x} = 0$$
 
-The residuals always sum to zero because the regression line passes through $(\bar{x}, \bar{y})$, and the deviations from the mean sum to zero.
+The residuals always sum to zero because the regression line passes through $(\bar{x}, \bar{y})$And the deviations from the mean sum to zero.
 
 **(b)** Plotting residuals against $h$:
 
@@ -224,7 +224,7 @@ At $h = 8$: residual $= -1$
 At $h = 9$: residual $= -5$
 At $h = 10$: residual $= 5$
 
-The residual plot shows a clear **curved pattern**: residuals are negative at low $h$, rise to positive around $h = 5$--$7$, then dip negative again at $h = 9$ before rising at $h = 10$. This curved (U-shaped or S-shaped) pattern in the residuals indicates that the relationship between $h$ and $s$ is **not purely linear**. A linear model is systematically under-predicting at the extremes and over-predicting in the middle (or vice versa), which is the hallmark of a non-linear relationship.
+The residual plot shows a clear **curved pattern**: residuals are negative at low $h$Rise to positive around $h = 5$--$7$Then dip negative again at $h = 9$ before rising at $h = 10$. This curved (U-shaped or S-shaped) pattern in the residuals indicates that the relationship between $h$ and $s$ is **not purely linear**. A linear model is systematically under-predicting at the extremes and over-predicting in the middle (or vice versa), which is the hallmark of a non-linear relationship.
 
 If the residuals were randomly scattered around zero with no discernible pattern, this would support the linearity assumption.
 
@@ -239,7 +239,7 @@ The quadratic model would capture the curvature in the data, so the remaining va
 
 Minimising perpendicular distances would be inappropriate when:
 - The two variables have different units or scales (e.g., predicting exam score from hours of revision). A perpendicular distance would mix the two units in a way that has no meaningful interpretation.
-- One variable is clearly the predictor and the other the response. In prediction contexts, we care about vertical error (prediction error in $y$), not the geometric distance from the line.
+- One variable is the predictor and the other the response. In prediction contexts, we care about vertical error (prediction error in $y$), not the geometric distance from the line.
 - When there is substantial measurement error in both variables, neither "vertical" nor "perpendicular" least squares is ideal; techniques like Deming regression would be more appropriate, though this is beyond A-Level.
 
 ---
@@ -254,7 +254,7 @@ Minimising perpendicular distances would be inappropriate when:
 
 A researcher investigates whether there is a correlation between the number of hours of sleep ($s$) and performance on a cognitive test ($p$) for a random sample of 12 adults. She calculates the PMCC to be $r = 0.58$.
 
-**(a)** Stating your hypotheses clearly, test at the 5% significance level whether the population correlation coefficient $\rho$ is positive. Use the fact that the critical value for a one-tailed test with $n = 12$ at the 5% level is 0.497.
+**(a)** Stating your hypotheses , test at the 5% significance level whether the population correlation coefficient $\rho$ is positive. Use the fact that the critical value for a one-tailed test with $n = 12$ at the 5% level is 0.497.
 
 **(b)** A colleague suggests using a two-tailed test instead. Without recalculating, state whether the conclusion would change and explain why.
 
@@ -278,31 +278,31 @@ $H_1: \rho > 0$ (positive correlation in the population)
 
 **Test statistic:** $r = 0.58$
 
-Since $0.58 > 0.497$, the test statistic exceeds the critical value.
+Since $0.58 > 0.497$The test statistic exceeds the critical value.
 
 **Conclusion:** There is sufficient evidence to reject $H_0$ and conclude that there is evidence of a positive correlation between hours of sleep and cognitive test performance in the population.
 
-**(b)** For a two-tailed test at the 5% level, the critical value would be higher (typically the two-tailed 5% critical value for $n = 12$ is approximately 0.576).
+**(b)** For a two-tailed test at the 5% level, the critical value would be higher ( the two-tailed 5% critical value for $n = 12$ is approximately 0.576).
 
-Since $r = 0.58 > 0.576$, the test statistic still exceeds the critical value, so the conclusion would **not change**. There would still be sufficient evidence to reject $H_0$.
+Since $r = 0.58 > 0.576$The test statistic still exceeds the critical value, so the conclusion would **not change**. There would still be sufficient evidence to reject $H_0$.
 
 However, note that the two-tailed test is more conservative: it requires stronger evidence because it tests for any non-zero correlation (positive or negative) rather than just positive correlation.
 
 **(c)** **Hypotheses:**
 
-$H_0: \rho = 0$, $H_1: \rho > 0$
+$H_0: \rho = 0$$H_1: \rho > 0$
 
 **Critical value:** For $n = 30$ at the 5% level (one-tailed), the critical value is 0.306.
 
 **Test statistic:** $r = 0.35$
 
-Since $0.35 > 0.306$, we reject $H_0$.
+Since $0.35 > 0.306$We reject $H_0$.
 
-**Comparison:** Both tests lead to rejection of $H_0$, but in part (a) the correlation was stronger ($r = 0.58$) with a smaller sample ($n = 12$), while in part (c) the correlation is weaker ($r = 0.35$) but the larger sample ($n = 30$) provides more evidence. The critical value decreases as $n$ increases because with more data, even a weak correlation becomes statistically significant. This illustrates that **statistical significance depends on both the strength of the correlation and the sample size**. A small sample needs a stronger correlation to achieve significance.
+**Comparison:** Both tests lead to rejection of $H_0$But in part (a) the correlation was stronger ($r = 0.58$) with a smaller sample ($n = 12$), while in part (c) the correlation is weaker ($r = 0.35$) but the larger sample ($n = 30$) provides more evidence. The critical value decreases as $n$ increases because with more data, even a weak correlation becomes statistically significant. This illustrates that **statistical significance depends on both the strength of the correlation and the sample size**. A small sample needs a stronger correlation to achieve significance.
 
-**(d)** The PMCC follows a known sampling distribution (related to the $t$-distribution) under the null hypothesis $H_0: \rho = 0$, assuming the population is bivariate normal. This allows the construction of critical value tables specific to the PMCC.
+**(d)** The PMCC follows a known sampling distribution (related to the $t$-distribution) under the null hypothesis $H_0: \rho = 0$Assuming the population is bivariate normal. This allows the construction of critical value tables specific to the PMCC.
 
-Spearman's rank correlation coefficient, $r_s$, is based on the ranks of the data rather than the raw values. Its sampling distribution under $H_0: \rho_s = 0$ is different from that of the PMCC. For small samples, $r_s$ has a discrete distribution (since ranks are integers), and the exact critical values are tabulated separately. The PMCC critical values cannot be used for Spearman's test because the distributions are different.
+Spearman's rank correlation coefficient, $r_s$Is based on the ranks of the data rather than the raw values. Its sampling distribution under $H_0: \rho_s = 0$ is different from that of the PMCC. For small samples, $r_s$ has a discrete distribution (since ranks are integers), and the exact critical values are tabulated separately. The PMCC critical values cannot be used for Spearman's test because the distributions are different.
 
 ---
 
@@ -346,7 +346,7 @@ $$\mathrm{Var}(H) = \mathrm{E}(H^2) - [\mathrm{E}(H)]^2 = 11.35 - 3.15^2 = 11.35
 
 $$\mathrm{E}(M) = \mathrm{E}(5H + 20) = 5\mathrm{E}(H) + 20 = 5(3.15) + 20 = 15.75 + 20 = 35.75$$
 
-Alternatively, using the law of total expectation: the predicted mark for each value of $H$ is $5h + 20$, and we average these predictions weighted by the probability of each $h$. This gives the same result.
+Alternatively, using the law of total expectation: the predicted mark for each value of $H$ is $5h + 20$And we average these predictions weighted by the probability of each $h$. This gives the same result.
 
 **(c)** The total variance of $M$ has two components:
 1. Variance due to the variation in $H$ across students.
@@ -354,7 +354,7 @@ Alternatively, using the law of total expectation: the predicted mark for each v
 
 $$\mathrm{Var}(M) = \mathrm{Var}(5H + 20 + \varepsilon) = \mathrm{Var}(5H) + \mathrm{Var}(\varepsilon)$$
 
-where $\varepsilon$ represents the random scatter (residuals), assumed independent of $H$.
+Where $\varepsilon$ represents the random scatter (residuals), assumed independent of $H$.
 
 $$\mathrm{Var}(5H) = 5^2 \mathrm{Var}(H) = 25 \times 1.4275 = 35.6875$$
 
@@ -380,7 +380,7 @@ The probability is approximately 0.159 (15.9%).
 
 **Question:**
 
-The data below shows the temperature ($T$, in $^\circ$C) and ice cream sales ($S$, in $\pounds$) at a shop on 8 days:
+The data below shows the temperature ($T$In $^\circ$C) and ice cream sales ($S$In $\pounds$) at a shop on 8 days:
 
 | $T$ | 12 | 15 | 18 | 20 | 22 | 25 | 28 | 30 |
 |---|---|---|---|---|---|---|---|---|
@@ -390,7 +390,7 @@ The regression line of $S$ on $T$ is $S = 12.34T - 102.9$ with PMCC $r = 0.893$.
 
 **(a)** Identify the outlier in the data by examining the residuals. Explain why the value $S = 50$ when $T = 30$ is anomalous.
 
-**(b)** After removing the outlier, the new summary statistics are: $n = 7$, $\bar{T} = 20$, $\bar{S} = 160.7$, $S_{TT} = 238$, $S_{SS} = 46247$, $S_{TS} = 3292$. Calculate the new PMCC and regression line.
+**(b)** After removing the outlier, the new summary statistics are: $n = 7$$\bar{T} = 20$$\bar{S} = 160.7$$S_{TT} = 238$$S_{SS} = 46247$$S_{TS} = 3292$. Calculate the new PMCC and regression line.
 
 **(c)** Calculate the percentage change in the PMCC after removing the outlier. Comment on the sensitivity of the PMCC to outliers compared to Spearman's rank correlation coefficient.
 
@@ -413,7 +413,7 @@ The regression line of $S$ on $T$ is $S = 12.34T - 102.9$ with PMCC $r = 0.893$.
 | 28 | 310 | 242.7 | 67.3 |
 | 30 | 50 | 267.3 | $-217.3$ |
 
-The residual for $T = 30$ is $-217.3$, which is enormously negative. The predicted sales for $T = 30^\circ$C should be around $\pounds 267$, but the observed value is only $\pounds 50$. This is almost certainly a data entry error (perhaps the sales were $\pounds 350$ or the temperature was recorded incorrectly). The residual of $-217.3$ is an extreme outlier compared to all other residuals (which range from $-2.2$ to $67.3$).
+The residual for $T = 30$ is $-217.3$Which is enormously negative. The predicted sales for $T = 30^\circ$C should be around $\pounds 267$But the observed value is only $\pounds 50$. This is almost certainly a data entry error (perhaps the sales were $\pounds 350$ or the temperature was recorded incorrectly). The residual of $-217.3$ is an extreme outlier compared to all other residuals (which range from $-2.2$ to $67.3$).
 
 **(b)** After removing the outlier ($T = 30, S = 50$):
 

@@ -19,7 +19,7 @@ A small bead of mass $0.050\,\text{kg}$ is threaded on a smooth vertical circula
 
 (b) Calculate the minimum value of $u$ for the bead to reach the highest point of the circle.
 
-(c) For $u = 6.0\,\text{m}\,\text{s}^{-1}$, calculate the normal reaction from the wire at the highest point and at the lowest point.
+(c) For $u = 6.0\,\text{m}\,\text{s}^{-1}$Calculate the normal reaction from the wire at the highest point and at the lowest point.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -41,7 +41,7 @@ $$u \ge \sqrt{5gr}$$
 
 (b) $u_{\min} = \sqrt{5gr} = \sqrt◆LB◆5 \times 9.81 \times 0.40◆RB◆ = \sqrt{19.62} = 4.43\,\text{m}\,\text{s}^{-1}$
 
-(c) With $u = 6.0\,\text{m}\,\text{s}^{-1}$, using energy conservation:
+(c) With $u = 6.0\,\text{m}\,\text{s}^{-1}$Using energy conservation:
 
 At the top: $\frac{1}{2}(0.050)(36) = \frac{1}{2}(0.050)v_{\text{top}}^2 + 0.050 \times 9.81 \times 0.80$
 
@@ -66,9 +66,9 @@ Note: The normal reaction is directed toward the centre at all points. At the to
 
 A particle of mass $0.50\,\text{kg}$ is attached to one end of a light inextensible string of length $1.0\,\text{m}$. The other end is fixed. The particle moves in a horizontal circle of radius $r$ with the string making a constant angle $\theta$ with the vertical.
 
-(a) Show that $\cos\theta = g/\omega^2 l$, where $\omega$ is the angular velocity.
+(a) Show that $\cos\theta = g/\omega^2 l$Where $\omega$ is the angular velocity.
 
-(b) If the period of rotation is $1.2\,\text{s}$, calculate the angle $\theta$ and the tension in the string.
+(b) If the period of rotation is $1.2\,\text{s}$Calculate the angle $\theta$ and the tension in the string.
 
 (c) Calculate the speed of the particle.
 
@@ -88,14 +88,14 @@ Substituting into the vertical equation:
 
 $$m\omega^2 l\cos\theta = mg \Rightarrow \cos\theta = \frac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$$
 
-(b) Period $T_p = 1.2\,\text{s}$, so $\omega = 2\pi/T_p = 2\pi/1.2 = 5.236\,\text{rad}\,\text{s}^{-1}$
+(b) Period $T_p = 1.2\,\text{s}$So $\omega = 2\pi/T_p = 2\pi/1.2 = 5.236\,\text{rad}\,\text{s}^{-1}$
 
 $$\cos\theta = \frac◆LB◆9.81◆RB◆◆LB◆(5.236)^2 \times 1.0◆RB◆ = \frac{9.81}{27.42} = 0.3577$$
 $$\theta = \cos^{-1}(0.3577) = 69.0^\circ$$
 
 Tension: $T = m\omega^2 l = 0.50 \times 27.42 \times 1.0 = 13.7\,\text{N}$
 
-Check vertically: $T\cos\theta = 13.7 \times 0.3577 = 4.90\,\text{N}$, and $mg = 0.50 \times 9.81 = 4.91\,\text{N}$. Consistent.
+Check vertically: $T\cos\theta = 13.7 \times 0.3577 = 4.90\,\text{N}$And $mg = 0.50 \times 9.81 = 4.91\,\text{N}$. Consistent.
 
 (c) Speed $v = \omega r = \omega \times l\sin\theta = 5.236 \times 1.0 \times \sin 69.0^\circ = 5.236 \times 0.9339 = 4.89\,\text{m}\,\text{s}^{-1}$
 
@@ -108,7 +108,7 @@ A circular racing track of radius $80\,\text{m}$ is banked at an angle of $15^\c
 
 (a) Calculate the speed at which the car can travel around the track with no tendency to slip, assuming no friction.
 
-(b) If the coefficient of friction between the tyres and track is $\mu = 0.40$, calculate the maximum safe speed.
+(b) If the coefficient of friction between the tyres and track is $\mu = 0.40$Calculate the maximum safe speed.
 
 (c) Calculate the minimum safe speed (below which the car would tend to slide down the bank).
 
@@ -132,7 +132,7 @@ Resolving vertically: $R\cos\theta - F\sin\theta = mg$
 
 Resolving horizontally: $R\sin\theta + F\cos\theta = \frac◆LB◆mv_{\max}^2◆RB◆◆LB◆r◆RB◆$
 
-where $F = \mu R$:
+Where $F = \mu R$:
 
 $$R\cos\theta - \mu R\sin\theta = mg \Rightarrow R = \frac◆LB◆mg◆RB◆◆LB◆\cos\theta - \mu\sin\theta◆RB◆$$
 
@@ -172,7 +172,7 @@ A satellite of mass $200\,\text{kg}$ is in an elliptical orbit around the Earth.
 
 (c) Calculate the speed the satellite would need at perigee to escape from Earth's gravitational field.
 
-Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$.
+Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$.
 
 **Solution:**
 
@@ -214,7 +214,7 @@ A motorcyclist of total mass $250\,\text{kg}$ (rider plus motorcycle) rides on t
 
 (b) At this minimum speed, calculate the normal reaction force from the wall.
 
-(c) If the motorcyclist increases speed by $20\%$, calculate the new normal reaction and explain whether friction still prevents sliding.
+(c) If the motorcyclist increases speed by $20\%$Calculate the new normal reaction and explain whether friction still prevents sliding.
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -232,7 +232,7 @@ $$v_{\min} = \sqrt◆LB◆\frac{rg}{\mu_s}◆RB◆ = \sqrt◆LB◆\frac{8.0 \tim
 
 (b) $R = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ = \frac◆LB◆250 \times 98.1◆RB◆◆LB◆8.0◆RB◆ = 3066\,\text{N}$
 
-Check: $\mu_s R = 0.80 \times 3066 = 2453\,\text{N}$, and $mg = 250 \times 9.81 = 2453\,\text{N}$. Consistent.
+Check: $\mu_s R = 0.80 \times 3066 = 2453\,\text{N}$And $mg = 250 \times 9.81 = 2453\,\text{N}$. Consistent.
 
 (c) New speed: $v' = 1.20 \times 9.90 = 11.88\,\text{m}\,\text{s}^{-1}$
 
@@ -240,7 +240,7 @@ New normal reaction: $R' = \frac◆LB◆250 \times 11.88^2◆RB◆◆LB◆8.0◆
 
 Maximum friction: $F'_{\max} = 0.80 \times 4409 = 3527\,\text{N}$
 
-Since $3527 \gt 2453\,\text{N}$ (weight), friction easily prevents sliding. At higher speeds, the motorcyclist has a larger safety margin. The friction required to prevent sliding is still only $mg = 2453\,\text{N}$, but the maximum available friction has increased to $3527\,\text{N}$.
+Since $3527 \gt 2453\,\text{N}$ (weight), friction prevents sliding. At higher speeds, the motorcyclist has a larger safety margin. The friction required to prevent sliding is still only $mg = 2453\,\text{N}$But the maximum available friction has increased to $3527\,\text{N}$.
 
 ---
 ### IT-3: Object on a Rotating Platform with Springs (with Oscillations)
@@ -251,13 +251,13 @@ A small block of mass $0.30\,\text{kg}$ is placed on a horizontal turntable at a
 
 (a) Calculate the equilibrium radius of the block (where the spring force provides the centripetal force) as a function of $\omega$.
 
-(b) If the turntable rotates at $\omega = 15\,\text{rad}\,\text{s}^{-1}$, calculate the extension of the spring and the tension in it.
+(b) If the turntable rotates at $\omega = 15\,\text{rad}\,\text{s}^{-1}$Calculate the extension of the spring and the tension in it.
 
 (c) The block is displaced radially outward by $0.02\,\text{m}$ from its equilibrium position and released. Explain why it oscillates and calculate the period of small radial oscillations about the equilibrium position.
 
 **Solution:**
 
-(a) At equilibrium radius $r_0$, the spring extension is $(r_0 - l_0)$ where $l_0 = 0.10\,\text{m}$:
+(a) At equilibrium radius $r_0$The spring extension is $(r_0 - l_0)$ where $l_0 = 0.10\,\text{m}$:
 
 $$k(r_0 - l_0) = m\omega^2 r_0$$
 $$kr_0 - kl_0 = m\omega^2 r_0$$
@@ -270,13 +270,13 @@ This is valid only when $k \gt m\omega^2$ (otherwise the spring cannot provide e
 
 $$r_0 = \frac◆LB◆50 \times 0.10◆RB◆◆LB◆50 - 0.30 \times 225◆RB◆ = \frac{5.0}{50 - 67.5} = \frac{5.0}{-17.5} = -0.286\,\text{m}$$
 
-Since $r_0$ is negative, this means $k \lt m\omega^2$, so the spring cannot provide sufficient centripetal force and the block slides outward. The critical angular velocity is:
+Since $r_0$ is negative, this means $k \lt m\omega^2$So the spring cannot provide sufficient centripetal force and the block slides outward. The critical angular velocity is:
 
 $$\omega_c = \sqrt◆LB◆\frac{k}{m}◆RB◆ = \sqrt◆LB◆\frac{50}{0.30}◆RB◆ = 12.9\,\text{rad}\,\text{s}^{-1}$$
 
-At $\omega = 15\,\text{rad}\,\text{s}^{-1} \gt \omega_c$, the block cannot maintain a stable circular orbit. It will spiral outward.
+At $\omega = 15\,\text{rad}\,\text{s}^{-1} \gt \omega_c$The block cannot maintain a stable circular orbit. It will spiral outward.
 
-(c) For $\omega \lt \omega_c$, the restoring force for a small radial displacement $\delta$ from $r_0$ is:
+(c) For $\omega \lt \omega_c$The restoring force for a small radial displacement $\delta$ from $r_0$ is:
 
 $$F_{\text{restore}} = -k\delta + m\omega^2\delta = -(k - m\omega^2)\delta$$
 
@@ -290,4 +290,4 @@ For $\omega = 10\,\text{rad}\,\text{s}^{-1}$ (below critical):
 
 $$T = 2\pi\sqrt◆LB◆\frac{0.30}{50 - 0.30 \times 100}◆RB◆ = 2\pi\sqrt◆LB◆\frac{0.30}{20}◆RB◆ = 2\pi\sqrt{0.015} = 2\pi \times 0.1225 = 0.770\,\text{s}$$
 
-Note: as $\omega$ approaches $\omega_c$, the period diverges (the oscillation becomes infinitely slow), indicating the onset of instability.
+Note: as $\omega$ approaches $\omega_c$The period diverges (the oscillation becomes infinitely slow), indicating the onset of instability.

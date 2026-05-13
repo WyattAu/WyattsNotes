@@ -11,11 +11,11 @@ hide_table_of_contents: true
 
 | Diagnostic File | Topics Covered | Source Files |
 |---|---|---|
-| `diag-fundamentals.md` | Binary/hex, two's complement, floating point, Boolean algebra, logic gates | `01-number-systems.md`, `02-floating-point.md`, `03-boolean-algebra.md`, `04-computer-architecture.md` |
-| `diag-data-structures.md` | Arrays, linked lists, stacks, queues, hash tables, binary search trees, graphs | `01-arrays-and-records.md`, `02-linked-lists.md`, `03-stacks-and-queues.md`, `04-trees.md`, `05-graphs.md`, `06-hash-tables.md` |
-| `diag-algorithms.md` | Big O notation, bubble/merge/quicksort, binary search, recursion, graph algorithms | `01-searching-algorithms.md`, `02-sorting-algorithms.md`, `03-graph-algorithms.md`, `04-complexity-analysis.md` |
-| `diag-programming.md` | OOP, encapsulation, polymorphism, SQL queries, normalisation, recursion | `01-programming-constructs.md`, `02-object-oriented-programming.md`, `03-data-representation-in-programming.md`, `01-relational-databases.md` |
-| `diag-networks.md` | TCP/IP, OSI, IP addressing, subnetting, symmetric/asymmetric encryption, TCP vs UDP, web technologies | `01-network-fundamentals.md`, `02-network-security.md`, `05-web-technologies.md` |
+| `diag-fundamentals.md` | Binary/hex, two's complement, floating point, Boolean algebra, logic gates | `01-number-systems.md``02-floating-point.md``03-boolean-algebra.md``04-computer-architecture.md` |
+| `diag-data-structures.md` | Arrays, linked lists, stacks, queues, hash tables, binary search trees, graphs | `01-arrays-and-records.md``02-linked-lists.md``03-stacks-and-queues.md``04-trees.md``05-graphs.md``06-hash-tables.md` |
+| `diag-algorithms.md` | Big O notation, bubble/merge/quicksort, binary search, recursion, graph algorithms | `01-searching-algorithms.md``02-sorting-algorithms.md``03-graph-algorithms.md``04-complexity-analysis.md` |
+| `diag-programming.md` | OOP, encapsulation, polymorphism, SQL queries, normalisation, recursion | `01-programming-constructs.md``02-object-oriented-programming.md``03-data-representation-in-programming.md``01-relational-databases.md` |
+| `diag-networks.md` | TCP/IP, OSI, IP addressing, subnetting, symmetric/asymmetric encryption, TCP vs UDP, web technologies | `01-network-fundamentals.md``02-network-security.md``05-web-technologies.md` |
 | `diag-theory-of-computation.md` | FSM, regular expressions, Turing machines, halting problem, complexity classes | `01-automata-and-computability.md` |
 
 ### Topics Covered Through Integration Tests

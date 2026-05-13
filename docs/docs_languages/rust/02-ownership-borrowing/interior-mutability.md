@@ -7,21 +7,21 @@ slug: interior-mutability
 ## The Shared Reference Contract
 
 Rust's borrowing rules state that a shared reference (`&T`) is immutable — you cannot modify the
-data through it. This is a compile-time guarantee that prevents data races and enables safe
-concurrency. However, there are legitimate cases where you need to mutate data through a shared
-reference. Interior mutability types provide this capability while maintaining safety guarantees.
+Data through it. This is a compile-time guarantee that prevents data races and enables safe
+Concurrency. However, there are legitimate cases where you need to mutate data through a shared
+Reference. Interior mutability types provide this capability while maintaining safety guarantees.
 
 The core tension: `&T` promises the caller that the data will not change, but sometimes the data
-needs to change in response to operations that only have a shared reference available. Interior
-mutability resolves this by moving the mutation check from compile time to runtime (for
-single-threaded types) or by using synchronization primitives (for multi-threaded types).
+Needs to change in response to operations that only have a shared reference available. Interior
+Mutability resolves this by moving the mutation check from compile time to runtime (for
+Single-threaded types) or by using synchronization primitives (for multi-threaded types).
 
 ## `UnsafeCell<T>` — The Primitive
 
 `UnsafeCell<T>` is the foundation of all interior mutability in Rust. It is the only type in the
-standard library that allows you to obtain a mutable reference to its interior through a shared
-reference. All other interior mutability types (`Cell`, `RefCell`, `Mutex`, `RwLock`) are built on
-top of `UnsafeCell`.
+Standard library that allows you to obtain a mutable reference to its interior through a shared
+Reference. All other interior mutability types (`Cell``RefCell``Mutex``RwLock`) are built on
+Top of `UnsafeCell`.
 
 ```rust
 use std::cell::UnsafeCell;
@@ -52,16 +52,16 @@ impl Counter {
 :::danger
 
 Accessing `UnsafeCell` requires `unsafe` because the compiler cannot verify that you are not
-creating two mutable references to the same data simultaneously. You are responsible for maintaining
-the aliasing invariant. Violating this is undefined behavior.
+Creating two mutable references to the same data simultaneously. You are responsible for maintaining
+The aliasing invariant. Violating this is undefined behavior.
 
 :::
 
 ### Why `UnsafeCell` Exists
 
 The compiler assumes that `&T` never allows mutation. `UnsafeCell` is the escape hatch that tells
-the compiler "I will manage the aliasing rules myself." Without `UnsafeCell`, it would be impossible
-to implement `Cell`, `RefCell`, `Mutex`, or any other interior mutability type.
+The compiler "I will manage the aliasing rules myself." Without `UnsafeCell`It would be impossible
+To implement `Cell``RefCell``Mutex`Or any other interior mutability type.
 
 ### `UnsafeCell` and `Sync`
 
@@ -93,7 +93,7 @@ This is only sound if you can prove that all accesses to the interior are proper
 ## `Cell<T>` — Copy-Based Interior Mutability
 
 `Cell<T>` provides interior mutability for `Copy` types. The value is stored inline (no heap
-allocation), and you can only access it by copying:
+Allocation), and you can only access it by copying:
 
 ```rust
 use std::cell::Cell;
@@ -108,18 +108,18 @@ assert_eq!(counter.get(), 43);
 
 ### `Cell` API
 
-| Method           | Description                                        |
+| Method | Description |
 | ---------------- | -------------------------------------------------- |
-| `new(value)`     | Creates a new `Cell` containing `value`            |
-| `get()`          | Returns a copy of the value (requires `T: Copy`)   |
-| `set(value)`     | Replaces the interior value                        |
-| `replace(value)` | Replaces and returns the old value (any `T`)       |
-| `take()`         | Replaces with `Default::default()` and returns old |
-| `into_inner()`   | Consumes the `Cell` and returns the inner value    |
+| `new(value)` | Creates a new `Cell` containing `value` |
+| `get()` | Returns a copy of the value (requires `T: Copy`) |
+| `set(value)` | Replaces the interior value |
+| `replace(value)` | Replaces and returns the old value (any `T`) |
+| `take()` | Replaces with `Default::default()` and returns old |
+| `into_inner()` | Consumes the `Cell` and returns the inner value |
 
 ### `Cell` with Non-Copy Types
 
-`Cell` works with non-`Copy` types for `set`, `replace`, and `take`, but not `get`:
+`Cell` works with non-`Copy` types for `set``replace`And `take`But not `get`:
 
 ```rust
 use std::cell::Cell;
@@ -200,12 +200,12 @@ assert_eq!(f(), 3);
 ### `Cell` Performance
 
 `Cell` has zero overhead beyond the inline storage. There is no reference counting, no runtime
-borrow checking, and no heap allocation. The compiler typically inlines all `Cell` operations.
+Borrow checking, and no heap allocation. The compiler inlines all `Cell` operations.
 
 ## `RefCell<T>` — Reference-Based Interior Mutability
 
 `RefCell<T>` provides interior mutability for any type `T`. It tracks borrows at runtime using a
-reference count and panics if the borrowing rules are violated:
+Reference count and panics if the borrowing rules are violated:
 
 ```rust
 use std::cell::RefCell;
@@ -228,19 +228,19 @@ assert_eq!(*borrow3, vec![1, 2, 3, 4]);
 
 ### `RefCell` API
 
-| Method             | Returns          | Description                                    |
+| Method | Returns | Description |
 | ------------------ | ---------------- | ---------------------------------------------- |
-| `new(value)`       | `RefCell<T>`     | Creates a new `RefCell`                        |
-| `borrow()`         | `Ref<T>`         | Immutable borrow, panics if mutably borrowed   |
-| `borrow_mut()`     | `RefMut<T>`      | Mutable borrow, panics if any borrow exists    |
-| `try_borrow()`     | `Result<Ref>`    | Non-panicking immutable borrow                 |
-| `try_borrow_mut()` | `Result<RefMut>` | Non-panicking mutable borrow                   |
-| `into_inner()`     | `T`              | Consumes the `RefCell` and returns inner value |
+| `new(value)` | `RefCell<T>` | Creates a new `RefCell` |
+| `borrow()` | `Ref<T>` | Immutable borrow, panics if mutably borrowed |
+| `borrow_mut()` | `RefMut<T>` | Mutable borrow, panics if any borrow exists |
+| `try_borrow()` | `Result<Ref>` | Non-panicking immutable borrow |
+| `try_borrow_mut()` | `Result<RefMut>` | Non-panicking mutable borrow |
+| `into_inner()` | `T` | Consumes the `RefCell` and returns inner value |
 
 ### `Ref` and `RefMut` Guards
 
 `Ref<T>` and `RefMut<T>` are RAII guards that track the borrow. When the guard is dropped, the
-borrow count is decremented:
+Borrow count is decremented:
 
 ```rust
 use std::cell::RefCell;
@@ -330,7 +330,7 @@ let data = RefCell::new(vec![1, 2, 3]);
 ### `Mutex<T>`
 
 `Mutex<T>` provides mutual exclusion for interior mutability across threads. Only one thread can
-access the data at a time:
+Access the data at a time:
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -356,13 +356,13 @@ assert_eq!(*counter.lock().unwrap(), 10);
 
 ### `Mutex` vs `RefCell`
 
-| Property      | `RefCell<T>`         | `Mutex<T>`                |
+| Property | `RefCell<T>` | `Mutex<T>` |
 | ------------- | -------------------- | ------------------------- |
-| Thread safety | Single-threaded only | Multi-threaded            |
-| Borrow check  | Runtime (panic)      | Runtime (blocking)        |
-| Overhead      | Minimal (counters)   | System call on contention |
-| Poisoning     | No                   | Yes (panic while locked)  |
-| `Send + Sync` | Neither              | Both (when `T: Send`)     |
+| Thread safety | Single-threaded only | Multi-threaded |
+| Borrow check | Runtime (panic) | Runtime (blocking) |
+| Overhead | Minimal (counters) | System call on contention |
+| Poisoning | No | Yes (panic while locked) |
+| `Send + Sync` | Neither | Both (when `T: Send`) |
 
 ### `RwLock<T>`
 
@@ -405,7 +405,7 @@ Need interior mutability?
 ### `OnceCell<T>` (Stable since Rust 1.70)
 
 `OnceCell` stores a value that is initialized at most once. It is useful for lazy initialization and
-for storing values that are set during construction:
+For storing values that are set during construction:
 
 ```rust
 use std::cell::OnceCell;
@@ -453,18 +453,18 @@ fn main() {
 ```
 
 `LazyLock` is thread-safe — the initialization closure runs exactly once, even if multiple threads
-access the value concurrently.
+Access the value concurrently.
 
 ## `OnceCell` vs `OnceLock` vs `LazyLock`
 
-| Type          | Thread-safe | Lazy init | Set once |
+| Type | Thread-safe | Lazy init | Set once |
 | ------------- | ----------- | --------- | -------- |
-| `OnceCell<T>` | No          | No        | Yes      |
-| `OnceLock<T>` | Yes         | No        | Yes      |
-| `LazyLock<T>` | Yes         | Yes       | Yes      |
+| `OnceCell<T>` | No | No | Yes |
+| `OnceLock<T>` | Yes | No | Yes |
+| `LazyLock<T>` | Yes | Yes | Yes |
 
 Use `OnceCell` in single-threaded contexts, `OnceLock` for thread-safe one-time initialization with
-manual set, and `LazyLock` for thread-safe lazy initialization with a closure.
+Manual set, and `LazyLock` for thread-safe lazy initialization with a closure.
 
 ## Interior Mutability Patterns
 
@@ -506,7 +506,7 @@ impl EventSource {
 ### Graph Structures
 
 Graphs with back-references require interior mutability because nodes reference each other in
-cycles:
+Cycles:
 
 ```rust
 use std::cell::RefCell;
@@ -575,7 +575,7 @@ where
 ### `Cell` Overhead
 
 `Cell` has zero runtime overhead. All operations compile to direct memory access. The value is
-stored inline within the `Cell`, which itself has the same size as `T`.
+Stored inline within the `Cell`Which itself has the same size as `T`.
 
 ```rust
 assert_eq!(std::mem::size_of::<Cell<u64>>(), 8);
@@ -584,9 +584,9 @@ assert_eq!(std::mem::size_of::<Cell<[u8; 1024]>>(), 1024);
 
 ### `RefCell` Overhead
 
-`RefCell` stores the value inline plus a borrow counter (typically 2 bytes on 64-bit). Each
+`RefCell` stores the value inline plus a borrow counter ( 2 bytes on 64-bit). Each
 `borrow()` and `borrow_mut()` increments or decrements the counter. `try_borrow` variants have the
-same cost but return `Result` instead of panicking.
+Same cost but return `Result` instead of panicking.
 
 ```rust
 assert_eq!(std::mem::size_of::<RefCell<u64>>(), 16);  // 8 bytes value + overhead
@@ -595,8 +595,8 @@ assert_eq!(std::mem::size_of::<RefCell<u64>>(), 16);  // 8 bytes value + overhea
 ### `Mutex` Overhead
 
 `Mutex` has a system-level overhead: on Linux, it uses `pthread_mutex_t` (40 bytes). Locking is a
-system call on contention and a single atomic operation when uncontended. `Mutex` always allocates
-the value on the heap (it uses `alloc::sys::Exclusive::new` internally in some cases).
+System call on contention and a single atomic operation when uncontended. `Mutex` always allocates
+The value on the heap (it uses `alloc::sys::Exclusive::new` internally ).
 
 ```rust
 assert_eq!(std::mem::size_of::<Mutex<u64>>(), 40);  // platform-dependent
@@ -605,8 +605,8 @@ assert_eq!(std::mem::size_of::<Mutex<u64>>(), 40);  // platform-dependent
 ### `RwLock` Overhead
 
 `RwLock` is larger than `Mutex` (48 bytes on Linux) because it must track multiple readers. Read
-locks are cheaper than write locks but still involve atomic operations. Write locks are comparable
-to `Mutex` locks.
+Locks are cheaper than write locks but still involve atomic operations. Write locks are comparable
+To `Mutex` locks.
 
 ## `Cell` vs `RefCell` Decision Guide
 
@@ -618,7 +618,7 @@ Use `Cell<T>` when:
 
 Use `RefCell<T>` when:
 
-- `T` is not `Copy` (e.g., `String`, `Vec`, custom structs)
+- `T` is not `Copy` (e.g., `String``Vec`Custom structs)
 - You need to borrow the interior value (read or write) through a guard
 - You need dynamic borrow checking with error handling
 
@@ -631,52 +631,52 @@ Use `Mutex<T>` when:
 ## Common Pitfalls
 
 1. **`RefCell` panics in production.** `borrow_mut()` panics if there is an outstanding immutable
-   borrow. In a long-running service, this crashes the process. Use `try_borrow_mut()` and handle
-   the error, or restructure your code to avoid overlapping borrows.
+ borrow. In a long-running service, this crashes the process. Use `try_borrow_mut()` and handle
+ the error, or restructure your code to avoid overlapping borrows.
 
 2. **Using `RefCell` across threads.** `RefCell` is not `Send` or `Sync`. The compiler prevents
-   cross-thread use, but if you bypass this with `unsafe`, you will have data races. Use `Mutex` or
-   `RwLock` for multi-threaded interior mutability.
+ cross-thread use, but if you bypass this with `unsafe`You will have data races. Use `Mutex` or
+ `RwLock` for multi-threaded interior mutability.
 
 3. **Holding `Ref` guards too long.** A `Ref` or `RefMut` guard keeps the borrow active until it is
-   dropped. If you store the guard in a struct or return it from a function, the borrow persists,
-   potentially causing later `borrow_mut()` calls to panic. Drop guards as soon as possible.
+ dropped. If you store the guard in a struct or return it from a function, the borrow persists,
+ potentially causing later `borrow_mut()` calls to panic. Drop guards as soon as possible.
 
-4. **`Mutex` poisoning causing cascading failures.** If one thread panics while holding a `Mutex`,
-   the mutex becomes poisoned. Subsequent `lock()` calls return `Err`. Use
-   `lock().unwrap_or_else(|e| e.into_inner())` if you want to recover from poisoning, but be aware
-   that the data may be in an inconsistent state.
+4. **`Mutex` poisoning causing cascading failures.** If one thread panics while holding a `Mutex`
+ the mutex becomes poisoned. Subsequent `lock()` calls return `Err`. Use
+ `lock().unwrap_or_else(|e| e.into_inner())` if you want to recover from poisoning, but be aware
+ that the data may be in an inconsistent state.
 
 5. **Using `std::sync::Mutex` in async code.** A `std::sync::Mutex` blocks the OS thread while held.
-   If held across an `.await` point, it blocks all other async tasks on that thread. Use
-   `tokio::sync::Mutex` for async contexts, or restructure to drop the lock before awaiting.
+ If held across an `.await` point, it blocks all other async tasks on that thread. Use
+ `tokio::sync::Mutex` for async contexts, or restructure to drop the lock before awaiting.
 
 6. **`Cell` with non-Copy types and `get()`.** `Cell::get()` requires `T: Copy`. For non-Copy types,
-   use `borrow()` on a `RefCell` or `replace()`/`take()` on a `Cell`.
+ use `borrow()` on a `RefCell` or `replace()`/`take()` on a `Cell`.
 
 7. **Forgetting that `UnsafeCell` requires `unsafe`.** Direct access to `UnsafeCell::get()` returns
-   a raw pointer. Dereferencing it requires `unsafe` and you must maintain the aliasing invariant
-   manually. Prefer `Cell` or `RefCell` unless you are building a custom synchronization primitive.
+ a raw pointer. Dereferencing it requires `unsafe` and you must maintain the aliasing invariant
+ manually. Prefer `Cell` or `RefCell` unless you are building a custom synchronization primitive.
 
 8. **Overusing interior mutability.** Interior mutability should be a deliberate design choice, not
-   a default. If you find yourself wrapping everything in `RefCell`, consider restructuring your
-   ownership model. Interior mutability hides mutation from the type system, making code harder to
-   reason about.
+ a default. If you find yourself wrapping everything in `RefCell`Consider restructuring your
+ ownership model. Interior mutability hides mutation from the type system, making code harder to
+ reason about.
 
 9. **`LazyLock` initialization panics.** If the initialization closure panics, the `LazyLock` enters
-   a poisoned state and all subsequent accesses panic. Guard against initialization failures if the
-   closure can fail.
+ a poisoned state and all subsequent accesses panic. Guard against initialization failures if the
+ closure can fail.
 
 10. **Deadlocks with `Mutex` and `RwLock`.** Acquiring locks in inconsistent order across threads
-    causes deadlocks. Always define and follow a lock ordering protocol. Use `try_lock()` with
-    backoff for lock acquisition that can fail gracefully.
+ causes deadlocks. Always define and follow a lock ordering protocol. Use `try_lock()` with
+ backoff for lock acquisition that can fail gracefully.
 
 ## Interior Mutability and the Drop Order
 
 ### Dropping `RefCell` with Active Borrows
 
 When a `RefCell` is dropped while a `Ref` or `RefMut` guard exists, the guard keeps the borrow alive
-until it is dropped. This means the `RefCell`'s destructor runs after the guard is dropped:
+Until it is dropped. This means the `RefCell`'s destructor runs after the guard is dropped:
 
 ```rust
 use std::cell::RefCell;
@@ -797,16 +797,16 @@ assert_eq!(counter.get(), 2);
 
 :::warning
 
-`Cell<T>` is `Send` when `T: Send`, and `Sync` when `T: Copy`. This means `Arc<Cell<T>>` can be
-shared across threads when `T: Copy`, and concurrent `get` and `set` operations are safe because
+`Cell<T>` is `Send` when `T: Send`And `Sync` when `T: Copy`. This means `Arc<Cell<T>>` can be
+Shared across threads when `T: Copy`And concurrent `get` and `set` operations are safe because
 `Cell` uses interior mutability — `get` copies the value out and `set` replaces it in a single
-operation.
+Operation.
 
 :::
 
 ### `Arc<RefCell<T>>` — Not Thread-Safe
 
-`RefCell` is not `Sync`, so `Arc<RefCell<T>>` cannot be shared across threads:
+`RefCell` is not `Sync`So `Arc<RefCell<T>>` cannot be shared across threads:
 
 ```rust
 use std::sync::Arc;
@@ -848,7 +848,7 @@ assert_eq!(*data.lock().unwrap(), vec![1, 2, 3, 4, 5]);
 ## Interior Mutability and Serde
 
 Serde's `Deserialize` often requires interior mutability because deserializers need to mutate their
-state during parsing:
+State during parsing:
 
 ```rust
 use std::cell::RefCell;
@@ -866,7 +866,7 @@ fn default_port() -> u16 { 8080 }
 ```
 
 Serde uses `Cell` and `RefCell` internally for tracking state during deserialization. This is one of
-the reasons why `RefCell` is common in Rust codebases that do heavy serialization.
+The reasons why `RefCell` is common in Rust codebases that do heavy serialization.
 
 ## Interior Mutability in Testing
 
@@ -943,3 +943,11 @@ graph TD
     I -->|Yes, multi-threaded| K[OnceLock&lt;T&gt; or LazyLock&lt;T&gt;]
     I -->|No| B
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

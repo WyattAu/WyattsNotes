@@ -39,7 +39,7 @@ Jean Piaget proposed that cognitive development proceeds through four invariant 
 | Concrete operational | Approximately 7 to 11 years | Children can perform logical operations on concrete objects. They develop conservation (understanding that quantity remains the same despite changes in appearance), seriation (ordering objects by size), and reversibility. Egocentrism declines. |
 | Formal operational | Approximately 11 years and older | Individuals can think abstractly, reason hypothetically, and engage in systematic problem solving. Metacognition (thinking about thinking) develops. |
 
-**Conservation experiments:** Piaget demonstrated that preoperational children fail conservation tasks because they focus on one salient dimension (usually height) and fail to compensate by considering the other dimension (width). For example, if liquid is poured from a short, wide glass into a tall, narrow glass, a preoperational child will say that the tall glass contains more liquid, even though the quantity has not changed.
+**Conservation experiments:** Piaget demonstrated that preoperational children fail conservation tasks because they focus on one salient dimension ( height) and fail to compensate by considering the other dimension (width). For example, if liquid is poured from a short, wide glass into a tall, narrow glass, a preoperational child will say that the tall glass contains more liquid, even though the quantity has not changed.
 
 **Evaluation of Piaget's theory:**
 
@@ -131,7 +131,7 @@ Based on infants' behaviour during the SSP, Ainsworth identified three attachmen
 
 | Attachment Type | Behaviour in Strange Situation | Prevalence | Caregiver Behaviour |
 |---|---|---|---|
-| Secure (Type B) | Uses caregiver as a secure base for exploration; distressed by separation; seeks contact upon reunion; easily comforted | Approximately 65% | Sensitive, responsive, consistent |
+| Secure (Type B) | Uses caregiver as a secure base for exploration; distressed by separation; seeks contact upon reunion; comforted | Approximately 65% | Sensitive, responsive, consistent |
 | Insecure-avoidant (Type A) | Does not seek proximity to caregiver; shows little distress during separation; avoids contact upon reunion | Approximately 15--20% | Rejecting, emotionally distant |
 | Insecure-resistant/ambivalent (Type C) | Shows intense distress during separation; seeks contact upon reunion but simultaneously resists it; difficult to comfort | Approximately 10--15% | Inconsistent, unpredictable |
 
@@ -182,8 +182,8 @@ Bowlby proposed that early attachment experiences give rise to **internal workin
 Internal working models influence later relationships by shaping:
 
 - **Expectations:** How individuals expect others to behave in close relationships.
-- **Interpretation:** How individuals interpret others' behaviour (e.g., interpreting a partner's lateness as a sign of rejection vs. an unavoidable delay).
-- **Behaviour:** How individuals behave in close relationships (e.g., seeking closeness vs. maintaining distance).
+- **Interpretation:** How individuals interpret others' behaviour (e.g., interpreting a partner's lateness as a sign of rejection vs. An unavoidable delay).
+- **Behaviour:** How individuals behave in close relationships (e.g., seeking closeness vs. Maintaining distance).
 
 Hazan and Shaver (1987) demonstrated that adults' romantic attachment styles correspond closely to Ainsworth's infant attachment categories, supporting the continuity of internal working models from infancy to adulthood.
 
@@ -200,7 +200,7 @@ Lawrence Kohlberg proposed that moral reasoning develops through a series of six
 | Conventional | 3. Good interpersonal relationships | Moral behaviour is determined by social approval and conformity to expectations. |
 | | 4. Maintaining social order | Moral behaviour is determined by duty, respect for authority, and the maintenance of social order. |
 | Post-conventional | 5. Social contract orientation | Moral behaviour is determined by a social contract that balances individual rights with the common good. |
-| | 6. Universal ethical principles | Moral behaviour is determined by self-chosen ethical principles (justice, equality, human dignity) that are universal and in some cases may supersede law. |
+| | 6. Universal ethical principles | Moral behaviour is determined by self-chosen ethical principles (justice, equality, human dignity) that are universal and may supersede law. |
 
 Kohlberg assessed moral reasoning using the Heinz dilemma: a woman is dying of a rare disease, and the only drug that can save her is too expensive for her husband to afford. The husband breaks into the pharmacist's shop to steal the drug. Should he have done so, and why?
 
@@ -234,7 +234,7 @@ Gilligan's research suggested that women tend to approach moral dilemmas with a 
 
 Biological explanations of gender development focus on the role of chromosomes, hormones, and brain structure.
 
-- **Chromosomes:** Individuals with XX chromosomes typically develop as females, and individuals with XY chromosomes typically develop as males. The SRY gene on the Y chromosome triggers the development of testes, which produce testosterone, which in turn drives the development of male internal and external genitalia.
+- **Chromosomes:** Individuals with XX chromosomes develop as females, and individuals with XY chromosomes develop as males. The SRY gene on the Y chromosome triggers the development of testes, which produce testosterone, which in turn drives the development of male internal and external genitalia.
 - **Hormones:** Prenatal exposure to androgens (particularly testosterone) influences brain development and may contribute to gender-differentiated behaviour. Studies of individuals with congenital adrenal hyperplasia (CAH), who are exposed to high levels of androgens prenatally, have found that CAH females show more male-typical play behaviour than unaffected females.
 - **Brain structure:** Meta-analyses have identified small but consistent sex differences in brain structure (e.g., males tend to have larger total brain volume, females tend to have greater cortical thickness in certain regions), but the relationship between these differences and gender-differentiated behaviour is not well understood.
 
@@ -254,7 +254,7 @@ Martin and Halverson (1983) demonstrated that children who were shown pictures o
 
 ### Identity Formation
 
-Erik Erikson (1968) proposed that the primary developmental task of adolescence is the formation of a coherent sense of identity -- a stable, integrated understanding of who one is, what one values, and what direction one's life will take. Erikson described this as the stage of "identity vs. role confusion."
+Erik Erikson (1968) proposed that the primary developmental task of adolescence is the formation of a coherent sense of identity -- a stable, integrated understanding of who one is, what one values, and what direction one's life will take. Erikson described this as the stage of "identity vs. Role confusion."
 
 According to Erikson, successful identity formation requires a period of exploration (the "psychosocial moratorium") during which adolescents experiment with different roles, values, and beliefs before committing to a stable identity. Failure to achieve a coherent identity leads to role confusion, characterised by uncertainty about one's goals, values, and place in society.
 
@@ -305,3 +305,11 @@ Additional factors contributing to adolescent risk-taking include:
 - **Internal working models and sociocultural psychology:** The influence of attachment on later relationships connects to the discussion of social identity and interpersonal behaviour in the [Sociocultural Level of Analysis](./sociocultural-level-of-analysis).
 - **Learned helplessness and abnormal psychology:** The learned helplessness model, discussed in [Abnormal Psychology](./abnormal-psychology), has implications for understanding how early adverse experiences affect later mental health.
 - **Research methods:** Developmental research relies heavily on longitudinal and cross-sectional designs, which are discussed in [Research Methods](./research-methods).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

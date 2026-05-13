@@ -9,7 +9,7 @@ categories: [TypeScript]
 ## Numeric Enums
 
 Numeric enums assign auto-incrementing integer values to their members. By default, the first member
-has value `0`, and each subsequent member increments by `1`.
+Has value `0`And each subsequent member increments by `1`.
 
 ```ts
 enum Direction {
@@ -62,12 +62,12 @@ console.log(perms & FileAccess.Write);
 ```
 
 Computed enum members do not support reverse mapping because the compiler cannot determine the name
-at compile time.
+At compile time.
 
 ## String Enums
 
 String enums assign string literal values to their members. They do not support auto-incrementing or
-reverse mapping.
+Reverse mapping.
 
 ```ts
 enum LogLevel {
@@ -85,12 +85,12 @@ log(LogLevel.Error, 'Something went wrong');
 ```
 
 String enums are preferred over numeric enums in most cases because they produce more readable
-runtime values and are safer for serialisation (e.g., JSON).
+Runtime values and are safer for serialisation (e.g., JSON).
 
 ## Const Enums
 
 Const enums are inlined by the compiler. They are completely erased during compilation and replaced
-with their literal values at each use site.
+With their literal values at each use site.
 
 ```ts
 const enum Direction {
@@ -110,11 +110,11 @@ const dir = 'UP';
 ```
 
 No JavaScript `Direction` object is emitted. This makes const enums suitable for
-performance-critical code.
+Performance-critical code.
 
 **Common Pitfall:** Const enums cannot be used across module boundaries when `isolatedModules` is
-enabled (required by bundlers like esbuild, swc, and Babel). In those environments, use regular
-enums or `as const` objects instead.
+Enabled (required by bundlers like esbuild, swc, and Babel). In those environments, use regular
+Enums or `as const` objects instead.
 
 ### Const Enum Alternatives
 
@@ -140,7 +140,7 @@ move(Direction.Up);
 ## Heterogenous Enums
 
 Heterogenous enums mix string and numeric members. This pattern is generally discouraged because it
-reduces type safety and readability:
+Reduces type safety and readability:
 
 ```ts
 enum Mixed {
@@ -154,7 +154,7 @@ Prefer discriminated unions (see below) over heterogenous enums.
 ## Union Enum Pattern
 
 The **union enum pattern** uses string enums to create a type-safe, self-documenting set of values
-that integrates with TypeScript's narrowing system:
+That integrates with TypeScript's narrowing system:
 
 ```ts
 enum ShapeKind {
@@ -212,17 +212,17 @@ type Shape = Circle | Square | Triangle;
 ```
 
 This approach is sometimes preferred because it avoids the runtime overhead of enum objects and is
-compatible with `isolatedModules`.
+Compatible with `isolatedModules`.
 
 ### Enum Comparison Table
 
-| Feature                | Numeric Enum | String Enum | Const Enum    | `as const` Object |
+| Feature | Numeric Enum | String Enum | Const Enum | `as const` Object |
 | ---------------------- | ------------ | ----------- | ------------- | ----------------- |
-| Reverse mapping        | Yes          | No          | N/A (inlined) | No                |
-| Runtime object emitted | Yes          | Yes         | No            | Yes               |
-| `isolatedModules` safe | Yes          | Yes         | No            | Yes               |
-| Computed values        | Limited      | No          | No            | N/A               |
-| Tree-shakeable         | No           | No          | Yes (inlined) | Yes               |
+| Reverse mapping | Yes | No | N/A (inlined) | No |
+| Runtime object emitted | Yes | Yes | No | Yes |
+| `isolatedModules` safe | Yes | Yes | No | Yes |
+| Computed values | Limited | No | No | N/A |
+| Tree-shakeable | No | No | Yes (inlined) | Yes |
 
 ## ES Modules: Import and Export
 
@@ -296,7 +296,7 @@ export type { Vector };
 ```
 
 This is useful for avoiding circular dependencies and for ensuring that type imports do not produce
-runtime side effects.
+Runtime side effects.
 
 ### Import Assertions (TypeScript 4.5+)
 
@@ -340,7 +340,7 @@ declare module 'express' {
 ```
 
 After this declaration, all `Request` objects in the `express` module have an optional `userId`
-property.
+Property.
 
 ### Global Augmentation
 
@@ -359,7 +359,7 @@ Array.prototype.myCustomMethod = function () {
 ## Namespaces
 
 Namespaces (formerly called "internal modules") provide a way to organise code into scoped
-containers. They are an older pattern that has largely been superseded by ES modules.
+Containers. They are an older pattern that has largely been superseded by ES modules.
 
 ### Declaration
 
@@ -391,16 +391,16 @@ console.log(Geometry.distance(p1, p2));
 ### When to Use Namespaces
 
 Namespaces should be avoided in modern TypeScript. They exist primarily for backward compatibility
-and for declaring types that span multiple files (using `.d.ts` files). Use ES modules instead.
+And for declaring types that span multiple files (using `.d.ts` files). Use ES modules instead.
 
 **Common Pitfall:** Do not mix namespaces and ES modules in the same file. A file that contains a
-top-level `import` or `export` is an ES module, and any namespace within it is scoped to that module
-rather than being global.
+Top-level `import` or `export` is an ES module, and any namespace within it is scoped to that module
+Rather than being global.
 
 ## Triple-Slash Directives
 
 Triple-slash directives are single-line comments that serve as compiler instructions. They must
-appear at the top of the file.
+Appear at the top of the file.
 
 ### `/// <reference path="..."/>`
 
@@ -427,18 +427,18 @@ Instructs the compiler to include a built-in lib file:
 ```
 
 In modern TypeScript projects, triple-slash directives are rarely needed because the compiler
-resolves dependencies automatically through `tsconfig.json` and `node_modules`.
+Resolves dependencies automatically through `tsconfig.json` and `node_modules`.
 
 ## Module Resolution
 
 ### Classic vs Node Resolution
 
-| Strategy              | Description                                                                              |
+| Strategy | Description |
 | --------------------- | ---------------------------------------------------------------------------------------- |
-| `classic`             | Original TypeScript resolution; relative to importing file                               |
-| `node`                | Mimics Node.js resolution; checks `node_modules`, `package.json` `types`/`typings` field |
-| `node16` / `nodenext` | Node.js ESM-aware resolution (TypeScript 4.7+)                                           |
-| `bundler`             | Resolution for bundlers that handle module resolution themselves (TypeScript 5.0+)       |
+| `classic` | Original TypeScript resolution; relative to importing file |
+| `node` | Mimics Node.js resolution; checks `node_modules``package.json` `types`/`typings` field |
+| `node16` / `nodenext` | Node.js ESM-aware resolution (TypeScript 4.7+) |
+| `bundler` | Resolution for bundlers that handle module resolution themselves (TypeScript 5.0+) |
 
 ### Path Aliases in tsconfig
 
@@ -462,7 +462,7 @@ import { formatDate } from '@utils/date';
 import { Button } from '@components/Button';
 ```
 
-Path aliases must be mirrored in the bundler configuration (e.g., `vite.config.ts`,
+Path aliases must be mirrored in the bundler configuration (e.g., `vite.config.ts`
 `webpack.config.js`) to resolve at build time.
 
 ### `rootDirs`
@@ -476,14 +476,14 @@ Path aliases must be mirrored in the bundler configuration (e.g., `vite.config.t
 ```
 
 Multiple `rootDirs` entries are treated as a single virtual directory. This allows files from
-different directories to be imported as if they were co-located.
+Different directories to be imported as if they were co-located.
 
 ## Ambient Modules and Declaration Files
 
 ### Declaration Files (`.d.ts`)
 
 Declaration files describe the types of JavaScript modules or global variables without providing
-implementations. They use `declare` keywords:
+Implementations. They use `declare` keywords:
 
 ```ts
 declare function fetch(url: string): Promise<Response>;
@@ -504,8 +504,8 @@ declare module 'my-untyped-library' {
 }
 ```
 
-This tells the compiler: "when someone imports from `my-untyped-library`, treat it as having this
-shape."
+This tells the compiler: "when someone imports from `my-untyped-library`Treat it as having this
+Shape."
 
 ### `global.d.ts`
 
@@ -538,7 +538,7 @@ declare module '*.json' {
 ```
 
 These are called **wildcard module declarations** and are used to allow importing non-TypeScript
-files.
+Files.
 
 ## Barrel Files and Tree-Shaking
 
@@ -561,16 +561,16 @@ import { add, formatDate, log } from './lib';
 ### Tree-Shaking Implications
 
 Barrel files can interfere with tree-shaking in certain bundlers. When a barrel file re-exports from
-many modules, importing a single name may cause the bundler to include code for all re-exported
-names.
+Many modules, importing a single name may cause the bundler to include code for all re-exported
+Names.
 
 **Mitigation strategies:**
 
 1. Import directly from the source file rather than the barrel when only one or two names are
-   needed.
+ needed.
 2. Use named exports (not `export *`).
 3. Ensure the bundler supports side-effect-free tree-shaking (mark the package as
-   `"sideEffects": false` in `package.json`).
+ `"sideEffects": false` in `package.json`).
 
 ```json
 {
@@ -596,7 +596,7 @@ src/
 ```
 
 Each subdirectory has its own barrel file. The top-level `index.ts` re-exports from subdirectory
-barrels.
+Barrels.
 
 ## Common Pitfalls
 
@@ -617,8 +617,8 @@ Here, `Inactive` is `1` and `Pending` is also `1`. Use explicit values to avoid 
 ### Pitfall 2: Circular Dependencies
 
 Module A imports from B, and B imports from A. TypeScript can handle circular type dependencies, but
-runtime circular dependencies may cause `undefined` values at import time. Use type-only imports to
-break the cycle:
+Runtime circular dependencies may cause `undefined` values at import time. Use type-only imports to
+Break the cycle:
 
 ```ts
 import type { B } from './b';
@@ -627,7 +627,7 @@ import type { B } from './b';
 ### Pitfall 3: Missing Declaration Files
 
 Importing a JavaScript library without type definitions produces the error "Could not find
-declaration file for module 'X'". Solutions:
+Declaration file for module 'X'". Solutions:
 
 1. Install the `@types/X` package.
 2. Create a declaration file: `declare module "X";`.
@@ -636,5 +636,13 @@ declaration file for module 'X'". Solutions:
 ### Pitfall 4: `isolatedModules` and Const Enums
 
 When `isolatedModules` is enabled, const enums cannot be used across files because each file is
-transpiled independently and the compiler cannot inline values from other files. Use `as const`
-objects as an alternative.
+Transpiled independently and the compiler cannot inline values from other files. Use `as const`
+Objects as an alternative.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -60,14 +60,14 @@ After $n$ cycles, the theoretical number of copies is $2^n$ (assuming 100% effic
 
 After 30 cycles: $2^{30} = 1073741824 \approx 1.07 \times 10^9$ copies.
 
-Total time: 30 cycles $\times$ 3 minutes/cycle $= 90$ minutes, plus the initial denaturation step (typically 2--5 minutes) and final extension (5--10 minutes). Total: approximately 97--105 minutes.
+Total time: 30 cycles $\times$ 3 minutes/cycle $= 90$ minutes, plus the initial denaturation step ( 2--5 minutes) and final extension (5--10 minutes). Total: approximately 97--105 minutes.
 
-Primers are necessary because DNA polymerase cannot initiate synthesis de novo -- it can only extend from a pre-existing 3'-OH group. Primers are short single-stranded DNA oligonucleotides (typically 18--25 nucleotides) that are complementary to the regions flanking the target sequence. They provide the free 3'-OH group that DNA polymerase needs to begin synthesis.
+Primers are necessary because DNA polymerase cannot initiate synthesis de novo -- it can only extend from a pre-existing 3'-OH group. Primers are short single-stranded DNA oligonucleotides ( 18--25 nucleotides) that are complementary to the regions flanking the target sequence. They provide the free 3'-OH group that DNA polymerase needs to begin synthesis.
 
 The annealing temperature must be carefully chosen because:
 - If too low: primers may bind to non-target sequences (non-specific binding), producing unwanted amplification products. Primers may also bind to each other (primer-dimer formation).
 - If too high: primers may not bind at all to the target, resulting in no amplification.
-- The ideal annealing temperature is typically $3$--$5\ ^\circ\text{C}$ below the melting temperature ($T_m$) of the primers, where $T_m$ depends on primer length and GC content. For a 20-mer with 50% GC content, $T_m \approx 60\ ^\circ\text{C}$, so annealing at $55$--$57\ ^\circ\text{C}$ is appropriate.
+- The ideal annealing temperature is $3$--$5\ ^\circ\text{C}$ below the melting temperature ($T_m$) of the primers, where $T_m$ depends on primer length and GC content. For a 20-mer with 50% GC content, $T_m \approx 60\ ^\circ\text{C}$So annealing at $55$--$57\ ^\circ\text{C}$ is appropriate.
 
 ## Integration Tests
 
@@ -80,7 +80,7 @@ The lac operon contains three structural genes (lacZ, lacY, lacA) under the cont
 
 **Negative control (repressor):** In the absence of lactose, the lac repressor protein (encoded by lacI) binds to the operator site, physically blocking RNA polymerase from transcribing the structural genes. When lactose is present, it is converted to allolactose (by the basal level of beta-galactosidase). Allolactose acts as an inducer by binding to the repressor, causing a conformational change that reduces its affinity for the operator. The repressor dissociates, removing the blockade.
 
-**Positive control (CAP-cAMP):** When glucose is absent, intracellular cAMP levels rise. cAMP binds to the catabolite activator protein (CAP), forming a CAP-cAMP complex that binds to a site upstream of the promoter. This binding bends the DNA and facilitates the binding of RNA polymerase to the promoter, increasing transcription efficiency approximately 50-fold.
+**Positive control (CAP-cAMP):** When glucose is absent, intracellular cAMP levels rise. CAMP binds to the catabolite activator protein (CAP), forming a CAP-cAMP complex that binds to a site upstream of the promoter. This binding bends the DNA and facilitates the binding of RNA polymerase to the promoter, increasing transcription efficiency approximately 50-fold.
 
 **Combined effect:** When lactose is present AND glucose is absent:
 1. The repressor is inactivated (lactose/allolactose bound), allowing RNA polymerase access to the promoter (negative control relieved).
@@ -121,7 +121,7 @@ Once the correct target is found, Cas9 creates a double-strand break (DSB) 3 bp 
 
 **Solution:**
 
-**Cooperative binding:** Haemoglobin exists in two main conformational states: the T-state (tense, deoxygenated) with low affinity for $\text{O}_2$, and the R-state (relaxed, oxygenated) with high affinity for $\text{O}_2$.
+**Cooperative binding:** Haemoglobin exists in two main conformational states: the T-state (tense, deoxygenated) with low affinity for $\text{O}_2$And the R-state (relaxed, oxygenated) with high affinity for $\text{O}_2$.
 
 When the first $\text{O}_2$ molecule binds to a haem group in one subunit, it causes a conformational change in that subunit (the iron ion moves into the plane of the porphyrin ring, pulling the proximal histidine and shifting the position of the entire F helix). This conformational change is transmitted to the adjacent subunits through non-covalent interactions at the subunit interfaces (salt bridges between the C-termini of the subunits are broken in the T to R transition).
 
@@ -129,4 +129,4 @@ The shift from T to R state increases the $\text{O}_2$ affinity of the remaining
 
 **Bohr effect:** In active tissues, $\text{CO}_2$ is produced and converted to carbonic acid ($\text{H}_2\text{CO}_3$), which dissociates to $\text{H}^+$ and $\text{HCO}_3^-$. The increased $[\text{H}^+]$ (lower pH) stabilises the T-state of haemoglobin by promoting the formation of salt bridges that lock it in the low-affinity conformation. Additionally, $\text{CO}_2$ can directly bind to the N-terminal amino groups of the globin chains, forming carbaminohaemoglobin, which also stabilises the T-state.
 
-The combined effect: at lower pH and higher $\text{CO}_2$ (as found in actively respiring tissues), the oxygen dissociation curve shifts to the right. At any given partial pressure of $\text{O}_2$, haemoglobin releases more $\text{O}_2$. This ensures that oxygen delivery is matched to metabolic demand -- tissues that are respiring most actively receive the most oxygen.
+The combined effect: at lower pH and higher $\text{CO}_2$ (as found in actively respiring tissues), the oxygen dissociation curve shifts to the right. At any given partial pressure of $\text{O}_2$Haemoglobin releases more $\text{O}_2$. This ensures that oxygen delivery is matched to metabolic demand -- tissues that are respiring most actively receive the most oxygen.

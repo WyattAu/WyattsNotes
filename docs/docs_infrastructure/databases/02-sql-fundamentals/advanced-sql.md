@@ -7,8 +7,8 @@ slug: advanced-sql
 ## Window Functions Deep Dive
 
 Window functions compute values across a set of rows related to the current row without collapsing
-the result set. This section covers the framing mechanics, exclusion clauses, window groups, and
-window chains that give window functions their full power.
+The result set. This section covers the framing mechanics, exclusion clauses, window groups, and
+Window chains that give window functions their full power.
 
 ### Window Function Anatomy
 
@@ -22,13 +22,13 @@ function_name([arguments]) OVER (
 ```
 
 The three optional components -- partitioning, ordering, and framing -- work together to define the
-set of rows visible to the function.
+Set of rows visible to the function.
 
 ### Framing Clauses
 
 The frame clause defines the subset of rows within the partition that the function sees. It is only
-meaningful when `ORDER BY` is present (without `ORDER BY`, the default frame is the entire
-partition).
+Meaningful when `ORDER BY` is present (without `ORDER BY`The default frame is the entire
+Partition).
 
 ```sql
 -- Frame boundaries
@@ -117,12 +117,12 @@ SUM(amount) OVER (
 ) AS sum_excluding_ties_and_current
 ```
 
-| EXCLUDE Option | What It Removes                                 |
+| EXCLUDE Option | What It Removes |
 | -------------- | ----------------------------------------------- |
-| `CURRENT ROW`  | Only the current row                            |
-| `GROUP`        | Current row and all peers (same ORDER BY value) |
-| `TIES`         | Only the peers, keeps the current row           |
-| `NO OTHERS`    | Nothing (default)                               |
+| `CURRENT ROW` | Only the current row |
+| `GROUP` | Current row and all peers (same ORDER BY value) |
+| `TIES` | Only the peers, keeps the current row |
+| `NO OTHERS` | Nothing (default) |
 
 ### WINDOW Clause (Window Chains)
 
@@ -177,14 +177,14 @@ SELECT emp_id, salary,
 FROM employees;
 ```
 
-| Function       | Ties at 150k, 150k, 140k, 130k | Range      |
+| Function | Ties at 150k, 150k, 140k, 130k | Range |
 | -------------- | ------------------------------ | ---------- |
-| `ROW_NUMBER`   | 1, 2, 3, 4                     | N/A        |
-| `RANK`         | 1, 1, 3, 4                     | 1 to N     |
-| `DENSE_RANK`   | 1, 1, 2, 3                     | 1 to N     |
-| `NTILE(2)`     | 1, 1, 2, 2                     | 1 to n     |
-| `PERCENT_RANK` | 0.0, 0.0, 0.667, 1.0           | 0.0 to 1.0 |
-| `CUME_DIST`    | 0.5, 0.5, 0.75, 1.0            | 0.0 to 1.0 |
+| `ROW_NUMBER` | 1, 2, 3, 4 | N/A |
+| `RANK` | 1, 1, 3, 4 | 1 to N |
+| `DENSE_RANK` | 1, 1, 2, 3 | 1 to N |
+| `NTILE(2)` | 1, 1, 2, 2 | 1 to n |
+| `PERCENT_RANK` | 0.0, 0.0, 0.667, 1.0 | 0.0 to 1.0 |
+| `CUME_DIST` | 0.5, 0.5, 0.75, 1.0 | 0.0 to 1.0 |
 
 ## Advanced Common Table Expressions
 
@@ -222,14 +222,14 @@ JOIN audit_entry a ON TRUE;
 ```
 
 Execution order within a CTE chain is **not** guaranteed to follow the textual order. The optimizer
-may reorder data-modifying CTEs. If you need ordering, use triggers or application-level
-orchestration.
+May reorder data-modifying CTEs. If you need ordering, use triggers or application-level
+Orchestration.
 
 ### CTE Materialization (PostgreSQL 12+)
 
 Before PostgreSQL 12, every CTE was materialized (executed once, stored as a temporary result).
 PostgreSQL 12+ allows the optimizer to inline CTEs (fold them into the outer query like subqueries)
-when the CTE is referenced once and is non-recursive.
+When the CTE is referenced once and is non-recursive.
 
 ```sql
 -- Inlined (faster for single-reference CTEs):
@@ -247,11 +247,11 @@ SELECT
     (SELECT COUNT(*) FROM active_users WHERE email LIKE '%@company.com') AS company_users;
 ```
 
-| Strategy               | When to Use                        | Trade-off                                  |
+| Strategy | When to Use | Trade-off |
 | ---------------------- | ---------------------------------- | ------------------------------------------ |
-| Inlined                | CTE referenced once, simple filter | Planner can push predicates, use indexes   |
-| Materialized           | CTE referenced multiple times      | Computed once but cannot use outer indexes |
-| `MATERIALIZED` keyword | Explicit control over inlining     | Overrides the planner's decision           |
+| Inlined | CTE referenced once, simple filter | Planner can push predicates, use indexes |
+| Materialized | CTE referenced multiple times | Computed once but cannot use outer indexes |
+| `MATERIALIZED` keyword | Explicit control over inlining | Overrides the planner's decision |
 
 ### Recursive CTEs for Tree Traversal
 
@@ -322,15 +322,15 @@ ORDER BY shortest_path;
 
 Recursive CTEs can produce exponential result sets on dense graphs. Always include a depth limit
 (`hops &lt; N`) and a visited set to prevent infinite loops. For very large graphs, consider
-dedicated graph databases like Neo4j.
+Dedicated graph databases like Neo4j.
 
 :::
 
 ## LATERAL Joins
 
 `LATERAL` allows a subquery in a `FROM` or `JOIN` clause to reference columns from tables that
-appear earlier in the `FROM` list. This enables correlated subqueries that return multiple rows and
-columns.
+Appear earlier in the `FROM` list. This enables correlated subqueries that return multiple rows and
+Columns.
 
 ### Basic LATERAL
 
@@ -347,8 +347,8 @@ CROSS JOIN LATERAL (
 ) t;
 ```
 
-Without `LATERAL`, the subquery cannot reference `c.customer_id`. A correlated subquery in `SELECT`
-can only return one column and one row; `LATERAL` lifts both restrictions.
+Without `LATERAL`The subquery cannot reference `c.customer_id`. A correlated subquery in `SELECT`
+Can only return one column and one row; `LATERAL` lifts both restrictions.
 
 ### LATERAL with LEFT JOIN
 
@@ -391,14 +391,14 @@ CROSS JOIN LATERAL jsonb_each_text(e.attributes) AS kv;
 
 `LATERAL` is implicitly applied for function calls in the `FROM` list (e.g.,
 `FROM generate_series(1, 10)`). You only need the explicit keyword when the subquery references
-outer columns.
+Outer columns.
 
 :::
 
 ## Full-Text Search
 
 PostgreSQL's built-in full-text search provides ranked text search without external dependencies
-like Elasticsearch.
+Like Elasticsearch.
 
 ### tsvector and tsquery
 
@@ -458,14 +458,14 @@ ORDER BY normalized_rank DESC;
 
 The normalization flags for `ts_rank` and `ts_rank_cd`:
 
-| Flag | Meaning                                     |
+| Flag | Meaning |
 | ---- | ------------------------------------------- |
-| 0    | No normalization                            |
-| 1    | Normalize by document length                |
-| 2    | Normalize by unique terms                   |
-| 4    | Normalize by both length and unique terms   |
-| 8    | Normalize by document length + unique terms |
-| 16   | Normalize by log of document length         |
+| 0 | No normalization |
+| 1 | Normalize by document length |
+| 2 | Normalize by unique terms |
+| 4 | Normalize by both length and unique terms |
+| 8 | Normalize by document length + unique terms |
+| 16 | Normalize by log of document length |
 
 ### Highlighting Results
 
@@ -497,15 +497,15 @@ WHERE body % 'database performance tuning'
 ORDER BY sim DESC;
 ```
 
-| Method           | Best For                  | Index Type  |
+| Method | Best For | Index Type |
 | ---------------- | ------------------------- | ----------- |
-| tsvector/tsquery | Full-word search, ranking | GIN         |
-| pg_trgm          | Substring, fuzzy, ILIKE   | GIN or GiST |
+| tsvector/tsquery | Full-word search, ranking | GIN |
+| pg_trgm | Substring, fuzzy, ILIKE | GIN or GiST |
 
 ## Materialized Views
 
 A materialized view caches the result of a query physically on disk, allowing fast reads at the cost
-of stale data that must be refreshed.
+Of stale data that must be refreshed.
 
 ### Creating and Refreshing
 
@@ -560,12 +560,12 @@ ON CONFLICT (order_date) DO UPDATE SET
 
 ### When to Use Materialized Views
 
-| Scenario                              | Recommendation                         |
+| Scenario | Recommendation |
 | ------------------------------------- | -------------------------------------- |
-| Dashboard aggregates (updated hourly) | Materialized view, scheduled refresh   |
-| Real-time analytics                   | Regular view or live aggregate         |
-| Pre-join denormalized read model      | Materialized view, concurrent refresh  |
-| ETL staging                           | Temporary table, not materialized view |
+| Dashboard aggregates (updated hourly) | Materialized view, scheduled refresh |
+| Real-time analytics | Regular view or live aggregate |
+| Pre-join denormalized read model | Materialized view, concurrent refresh |
+| ETL staging | Temporary table, not materialized view |
 
 ## UPSERT Patterns
 
@@ -623,13 +623,13 @@ flowchart TD
 
 ### ON CONFLICT vs MERGE
 
-| Feature                    | ON CONFLICT             | MERGE                           |
+| Feature | ON CONFLICT | MERGE |
 | -------------------------- | ----------------------- | ------------------------------- |
-| Unique constraint required | Yes                     | No                              |
-| Match condition            | Only on unique columns  | Arbitrary join condition        |
-| Multiple actions           | One (UPDATE or NOTHING) | Multiple (INSERT/UPDATE/DELETE) |
-| Source                     | VALUES or subquery      | Table, subquery, or CTE         |
-| Standard                   | PostgreSQL extension    | SQL:2003 standard               |
+| Unique constraint required | Yes | No |
+| Match condition | Only on unique columns | Arbitrary join condition |
+| Multiple actions | One (UPDATE or NOTHING) | Multiple (INSERT/UPDATE/DELETE) |
+| Source | VALUES or subquery | Table, subquery, or CTE |
+| Standard | PostgreSQL extension | SQL:2003 standard |
 
 ## Advanced Aggregation
 
@@ -874,12 +874,12 @@ WHERE a.descendant_id = 10  -- new parent
   AND d.ancestor_id = 5;    -- moved node
 ```
 
-| Approach          | Read Performance | Write Performance | Storage  | Best For                   |
+| Approach | Read Performance | Write Performance | Storage | Best For |
 | ----------------- | ---------------- | ----------------- | -------- | -------------------------- |
-| Adjacency List    | O(depth)         | O(1)              | Minimal  | Write-heavy, shallow trees |
-| Nested Sets       | O(1)             | O(n)              | Minimal  | Read-heavy, no updates     |
-| Materialized Path | O(1) for prefix  | O(1)              | Path col | Deep trees, sortable       |
-| Closure Table     | O(depth)         | O(n\*depth)       | O(n^2)   | Frequent subtree queries   |
+| Adjacency List | O(depth) | O(1) | Minimal | Write-heavy, shallow trees |
+| Nested Sets | O(1) | O(n) | Minimal | Read-heavy, no updates |
+| Materialized Path | O(1) for prefix | O(1) | Path col | Deep trees, sortable |
+| Closure Table | O(depth) | O(n\*depth) | O(n^2) | Frequent subtree queries |
 
 ## Query Optimization
 
@@ -919,19 +919,19 @@ LIMIT 50;
 
 Key fields in `EXPLAIN ANALYZE` output:
 
-| Field              | Meaning                                          |
+| Field | Meaning |
 | ------------------ | ------------------------------------------------ |
-| `Seq Scan`         | Full table scan                                  |
-| `Index Scan`       | B-tree index scan, fetches heap tuples           |
-| `Index Only Scan`  | B-tree index scan, does NOT fetch heap tuples    |
-| `Bitmap Heap Scan` | Two-phase: bitmap from index, then heap fetch    |
-| `Hash Join`        | Build hash table on inner, probe with outer      |
-| `Merge Join`       | Both sides sorted, merge (good for large sorted) |
-| `Nested Loop`      | For each outer row, scan inner (good for small)  |
-| `actual time`      | Actual execution time in ms                      |
-| `rows`             | Actual number of rows produced                   |
-| `loops`            | Number of times the node was executed            |
-| `Shared Hit/Read`  | Buffer cache hits vs disk reads (BUFFERS option) |
+| `Seq Scan` | Full table scan |
+| `Index Scan` | B-tree index scan, fetches heap tuples |
+| `Index Only Scan` | B-tree index scan, does NOT fetch heap tuples |
+| `Bitmap Heap Scan` | Two-phase: bitmap from index, then heap fetch |
+| `Hash Join` | Build hash table on inner, probe with outer |
+| `Merge Join` | Both sides sorted, merge (good for large sorted) |
+| `Nested Loop` | For each outer row, scan inner (good for small) |
+| `actual time` | Actual execution time in ms |
+| `rows` | Actual number of rows produced |
+| `loops` | Number of times the node was executed |
+| `Shared Hit/Read` | Buffer cache hits vs disk reads (BUFFERS option) |
 
 ### Planner Hints (pg_hint_plan)
 
@@ -956,8 +956,8 @@ SELECT * FROM large_table GROUP BY category;
 :::warning
 
 Planner hints are a last resort. Fix the root cause first: update statistics (`ANALYZE`), create
-appropriate indexes, or rewrite the query. Hints become stale when data distributions change and can
-degrade performance over time.
+Appropriate indexes, or rewrite the query. Hints become stale when data distributions change and can
+Degrade performance over time.
 
 :::
 
@@ -1049,11 +1049,11 @@ ALTER TABLE measurements DETACH PARTITION measurements_2024_q1;
 CREATE INDEX idx_measurements_sensor ON measurements (sensor_id, recorded_at);
 ```
 
-| Partition Type | Best For                   | Data Distribution |
+| Partition Type | Best For | Data Distribution |
 | -------------- | -------------------------- | ----------------- |
-| Range          | Time-series, date ranges   | Uneven (natural)  |
-| List           | Categorical (region, type) | Defined by you    |
-| Hash           | Even distribution needed   | Uniform           |
+| Range | Time-series, date ranges | Uneven (natural) |
+| List | Categorical (region, type) | Defined by you |
+| Hash | Even distribution needed | Uniform |
 
 ## Generated Columns
 
@@ -1081,15 +1081,15 @@ VALUES ('Widget', 29.99, 0.20, 'A high-quality widget for industrial use');
 -- INSERT INTO products (name, price, price_with_tax) VALUES (...)  -- ERROR
 ```
 
-| Type    | Storage  | Read Cost | Write Cost | Indexable |
+| Type | Storage | Read Cost | Write Cost | Indexable |
 | ------- | -------- | --------- | ---------- | --------- |
-| Stored  | On disk  | Low       | Higher     | Yes       |
-| Virtual | Computed | Higher    | Low        | No        |
+| Stored | On disk | Low | Higher | Yes |
+| Virtual | Computed | Higher | Low | No |
 
 :::info
 
 PostgreSQL currently only supports `STORED` generated columns. `VIRTUAL` (computed on read) is in
-the SQL standard but not yet implemented. Other databases like MySQL and SQL Server support both.
+The SQL standard but not yet implemented. Other databases like MySQL and SQL Server support both.
 
 :::
 
@@ -1143,9 +1143,9 @@ SELECT * FROM orders WHERE status >= 'shipped';
 :::warning
 
 ENUM types in PostgreSQL are difficult to modify. Adding a value requires
-`ALTER TYPE ... ADD VALUE`, which cannot run inside a transaction in PostgreSQL 12+. Renaming or
-removing values is not straightforward. For rapidly changing sets of states, use a lookup table with
-a foreign key constraint instead.
+`ALTER TYPE ... ADD VALUE`Which cannot run inside a transaction in PostgreSQL 12+. Renaming or
+Removing values is not straightforward. For rapidly changing sets of states, use a lookup table with
+A foreign key constraint instead.
 
 :::
 
@@ -1180,7 +1180,7 @@ WHERE (shipping_address).state = 'CA';
 ### Using Window Functions in WHERE
 
 Window functions cannot be used in the `WHERE` clause because they are evaluated after `WHERE`. Wrap
-the query in a subquery or CTE:
+The query in a subquery or CTE:
 
 ```sql
 -- WRONG: window function in WHERE
@@ -1194,7 +1194,7 @@ WHERE rn <= 10;
 ### Forgetting the Default Frame Clause
 
 `SUM(amount) OVER (ORDER BY date)` uses `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW` by
-default, not the entire partition. If you want the grand total, omit `ORDER BY`:
+Default, not the entire partition. If you want the grand total, omit `ORDER BY`:
 
 ```sql
 -- Cumulative (default frame with ORDER BY)
@@ -1207,23 +1207,31 @@ SUM(amount) OVER ()
 ### Assuming CTEs Are Always Inlined
 
 PostgreSQL 12+ may inline CTEs, but this is not guaranteed. If a CTE is referenced multiple times or
-is recursive, it is materialized. Use `EXPLAIN` to verify, and use `MATERIALIZED` /
+Is recursive, it is materialized. Use `EXPLAIN` to verify, and use `MATERIALIZED` /
 `NOT MATERIALIZED` keywords for explicit control.
 
 ### Concurrent Refresh Requires a Unique Index
 
 `REFRESH MATERIALIZED VIEW CONCURRENTLY` fails without a unique index on the materialized view.
 Always create a unique index when creating the materialized view if you plan to refresh
-concurrently.
+Concurrently.
 
 ### Partition Pruning Requires Literal Values
 
 Partition pruning only works when the partition key is compared against a literal or a stable
-expression. If the partition key is compared against a parameter from a prepared statement, the
-planner may not be able to prune at plan time. Use `PREPARE` with parameters that allow generic
-plans, or use `EXECUTE` with literal values.
+Expression. If the partition key is compared against a parameter from a prepared statement, the
+Planner may not be able to prune at plan time. Use `PREPARE` with parameters that allow generic
+Plans, or use `EXECUTE` with literal values.
 
 ### OVER() Without PARTITION BY or ORDER BY
 
 `ROW_NUMBER() OVER ()` assigns a random, non-deterministic row number. The order depends on the
-physical scan order, which is not guaranteed. Always specify `ORDER BY` for deterministic results.
+Physical scan order, which is not guaranteed. Always specify `ORDER BY` for deterministic results.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

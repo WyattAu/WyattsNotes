@@ -9,13 +9,13 @@ slug: garbage-collection
 ### What Is Garbage?
 
 An object is garbage when it is no longer reachable from any live thread through any chain of
-references. The JVM determines this through **reachability analysis**, starting from a set of root
-objects and tracing all objects transitively reachable from those roots.
+References. The JVM determines this through **reachability analysis**, starting from a set of root
+Objects and tracing all objects transitively reachable from those roots.
 
 ### GC Roots
 
 GC roots are the starting points for reachability analysis. An object is reachable if there is a
-path from at least one GC root. The primary categories of GC roots:
+Path from at least one GC root. The primary categories of GC roots:
 
 1. **Stack-local variables and method parameters** — references on the call stack of each thread.
 2. **Static fields** — references stored in class metadata (loaded by any class loader).
@@ -40,7 +40,7 @@ public class GCDemo {
 ### Reachability Phases
 
 The JVM does not immediately collect objects when they become unreachable. The GC process involves
-three conceptual phases:
+Three conceptual phases:
 
 1. **Mark** — Identify all reachable objects starting from roots.
 2. **Sweep** — Identify all unreachable objects (garbage).
@@ -51,8 +51,8 @@ three conceptual phases:
 ### Heap Structure
 
 The heap is divided into generations based on the **generational hypothesis**: most objects are
-short-lived ("die young"). Separating the heap into generations allows the GC to focus collection
-effort on the young generation, where most garbage accumulates.
+Short-lived ("die young"). Separating the heap into generations allows the GC to focus collection
+Effort on the young generation, where most garbage accumulates.
 
 ```
 Heap
@@ -67,13 +67,13 @@ Heap
 ### Young Generation
 
 - **Eden:** All new objects (except very large ones) are allocated in Eden. When Eden fills up, a
-  **minor GC** (young GC) is triggered.
+ **minor GC** (young GC) is triggered.
 - **Survivor spaces:** Two equally-sized spaces (S0 and S1) that act as a holding area. After a
-  minor GC, surviving objects from Eden and one survivor space are copied to the other survivor
-  space. Objects accumulate an "age" counter; each time they survive a GC, the age increments.
+ minor GC, surviving objects from Eden and one survivor space are copied to the other survivor
+ space. Objects accumulate an "age" counter; each time they survive a GC, the age increments.
 
-- **Promotion:** When an object's age exceeds a threshold (`-XX:MaxTenuringThreshold`, default 15
-  for G1, 6 for Parallel), it is promoted to the old generation.
+- **Promotion:** When an object's age exceeds a threshold (`-XX:MaxTenuringThreshold`Default 15
+ for G1, 6 for Parallel), it is promoted to the old generation.
 
 ```bash
 # Young generation sizing
@@ -86,12 +86,12 @@ Heap
 
 Objects that survive multiple young GCs are promoted to the old generation. A **major GC** (or full
 GC) collects the entire heap, including the old generation. Major GCs are significantly more
-expensive than minor GCs because they must scan the entire heap.
+Expensive than minor GCs because they must scan the entire heap.
 
 ### Metaspace
 
 Stores class metadata (method bytecodes, constant pool, field/method definitions), static fields,
-and interned strings (moved from PermGen in JDK 8). Metaspace uses native memory and grows until
+And interned strings (moved from PermGen in JDK 8). Metaspace uses native memory and grows until
 `MaxMetaspaceSize` is reached.
 
 ```bash
@@ -102,7 +102,7 @@ and interned strings (moved from PermGen in JDK 8). Metaspace uses native memory
 ### Code Cache
 
 Stores JIT-compiled native code. When the code cache fills up, the JVM stops compiling (and may
-deoptimize). Monitor with:
+Deoptimize). Monitor with:
 
 ```bash
 -XX:ReservedCodeCacheSize=256m
@@ -116,25 +116,25 @@ The generational hypothesis states that:
 2. **Few objects survive many GC cycles** — the old generation is relatively stable.
 
 This hypothesis has been validated empirically across virtually all Java workloads. It justifies the
-generational heap layout: by collecting the young generation frequently and cheaply, the JVM avoids
-costly full heap collections.
+Generational heap layout: by collecting the young generation frequently and cheaply, the JVM avoids
+Costly full heap collections.
 
 Exceptions to the hypothesis: long-lived caches, large object graphs loaded at startup, and
-memory-mapped structures. These can cause premature promotion and increase old generation pressure.
+Memory-mapped structures. These can cause premature promotion and increase old generation pressure.
 
 ## GC Algorithms
 
 ### Serial GC
 
 The simplest collector. Uses a single thread for both minor and full GC. Stop-the-world (STW) for
-the entire duration of collection.
+The entire duration of collection.
 
 ```bash
 -XX:+UseSerialGC
 ```
 
 **When to use:** Small heap sizes (under ~1 GB), single-processor systems, or applications with low
-pause-time requirements where simplicity is preferred. Rarely used in production servers.
+Pause-time requirements where simplicity is preferred. Rarely used in production servers.
 
 **Algorithm:**
 
@@ -144,8 +144,8 @@ pause-time requirements where simplicity is preferred. Rarely used in production
 ### Parallel GC (Throughput Collector)
 
 The default collector in JDK 8 and earlier for server-class machines. Uses multiple threads for
-young GC and full GC but is still stop-the-world. Optimizes for **throughput** (maximize application
-time between GC pauses).
+Young GC and full GC but is still stop-the-world. Optimizes for **throughput** (maximize application
+Time between GC pauses).
 
 ```bash
 -XX:+UseParallelGC          # Enable Parallel GC (default in JDK 8)
@@ -160,13 +160,13 @@ time between GC pauses).
 - Full GC: parallel mark-sweep-compact.
 
 **Trade-off:** Higher throughput (more CPU time for application) but potentially long STW pauses,
-especially during full GC on large heaps.
+Especially during full GC on large heaps.
 
 ### G1 GC
 
-The default collector since JDK 9. Divides the heap into fixed-size regions (typically 2048 regions,
-each 1-32 MB). The collector can selectively collect regions, mixing young and old generation
-collection in a single pass ("mixed collection").
+The default collector since JDK 9. Divides the heap into fixed-size regions ( 2048 regions,
+Each 1-32 MB). The collector can selectively collect regions, mixing young and old generation
+Collection in a single pass ("mixed collection").
 
 ```bash
 -XX:+UseG1GC                      # Enable G1 GC (default since JDK 9)
@@ -180,10 +180,10 @@ collection in a single pass ("mixed collection").
 **G1 phases:**
 
 1. **Young-only collection** — collects Eden and survivor regions (same as minor GC in other
-   collectors).
+ collectors).
 2. **Concurrent marking** — while the application runs, G1 marks live objects across all regions.
 3. **Mixed collection** — collects some young regions AND some old regions with the most garbage.
-   Balances pause time against overall memory release.
+ Balances pause time against overall memory release.
 
 **G1 advantages:**
 
@@ -212,14 +212,14 @@ A scalable, low-latency collector designed for multi-TB heaps with pause times u
 **ZGC design:**
 
 - **Concurrent:** Almost all GC work (marking, relocation, compaction) happens concurrently with the
-  application. STW pauses are limited to root scanning and a few other operations, typically under 1
-  ms regardless of heap size.
+ application. STW pauses are limited to root scanning and a few other operations, under 1
+ ms regardless of heap size.
 - **Colored pointers:** ZGC uses 64-bit pointers with metadata bits (color bits) to track object
-  state (marked, relocated, finalized) without requiring per-object headers.
+ state (marked, relocated, finalized) without requiring per-object headers.
 - **Load barriers:** ZGC uses load barriers (triggered on every reference read) to detect and fix
-  stale references. This is the main concurrency mechanism.
+ stale references. This is the main concurrency mechanism.
 - **Region-based:** Like G1, the heap is divided into regions, but ZGC regions are more dynamic (2
-  MB, 32 MB, or N MB for large objects).
+ MB, 32 MB, or N MB for large objects).
 
 **ZGC limitations:**
 
@@ -230,7 +230,7 @@ A scalable, low-latency collector designed for multi-TB heaps with pause times u
 ### Shenandoah
 
 An open-source low-pause collector (backed by Red Hat). Similar goals to ZGC but uses a different
-implementation (Brooks pointers instead of colored pointers).
+Implementation (Brooks pointers instead of colored pointers).
 
 ```bash
 -XX:+UseShenandoahGC
@@ -241,21 +241,21 @@ implementation (Brooks pointers instead of colored pointers).
 ### Stop-the-World (STW)
 
 During an STW pause, all application threads are suspended. The JVM cannot execute application code
-while the GC is running. STW pauses directly impact application latency — if a GC pause takes 500
-ms, no requests can be served during that time.
+While the GC is running. STW pauses directly impact application latency — if a GC pause takes 500
+Ms, no requests can be served during that time.
 
 ### Concurrent Phases
 
 Modern collectors (G1, ZGC, Shenandoah) perform significant work concurrently with the application.
 Only specific phases require STW pauses:
 
-| Collector  | STW Phases                          | Concurrent Phases                  |
+| Collector | STW Phases | Concurrent Phases |
 | ---------- | ----------------------------------- | ---------------------------------- |
-| Serial     | All                                 | None                               |
-| Parallel   | All                                 | None                               |
-| G1         | Root scanning, evacuation (partial) | Marking, remembered set processing |
-| ZGC        | Root scanning (sub-ms)              | Marking, relocation, compaction    |
-| Shenandoah | Root scanning (sub-ms)              | Marking, evacuation, compaction    |
+| Serial | All | None |
+| Parallel | All | None |
+| G1 | Root scanning, evacuation (partial) | Marking, remembered set processing |
+| ZGC | Root scanning (sub-ms) | Marking, relocation, compaction |
+| Shenandoah | Root scanning (sub-ms) | Marking, evacuation, compaction |
 
 ## GC Tuning Flags
 
@@ -324,10 +324,10 @@ JDK 9+ uses the unified logging framework (`-Xlog`):
 ### Analyzing GC Logs
 
 Use tools like **GCViewer**, **GCEasy.io**, or **JDK Mission Control** to analyze GC logs. Key
-metrics to watch:
+Metrics to watch:
 
 - **Pause time distribution** — P50, P95, P99, P99.9.
-- **Throughput** — percentage of time the application is running vs. in GC.
+- **Throughput** — percentage of time the application is running vs. In GC.
 - **Allocation rate** — MB/s allocated (high rate drives frequent GC).
 - **Promotion rate** — MB/s promoted to old generation.
 - **Old generation growth** — if it grows linearly, you have a memory leak or insufficient heap.
@@ -344,10 +344,10 @@ metrics to watch:
 
 1. **Static collections** — accumulating entries without removal.
 2. **Unclosed resources** — holding references through unclosed streams, connections, or
-   `ThreadLocal` instances.
+ `ThreadLocal` instances.
 3. **Listener registration** — registering listeners but never unregistering.
 4. **Internal caches without eviction** — `HashMap` used as a cache without size limits or eviction
-   policy.
+ policy.
 5. **`ThreadLocal` in thread pools** — values not cleaned up when tasks complete.
 6. **String interning** — interning unbounded unique strings.
 
@@ -363,7 +363,7 @@ jmap -dump:live,format=b,file=heap.hprof <pid>
 ```
 
 Analyze heap dumps with **Eclipse MAT** (Memory Analyzer Tool), **VisualVM**, or **IntelliJ IDEA
-profiler**:
+Profiler**:
 
 1. Open the heap dump in MAT.
 2. Run the "Leak Suspects" report.
@@ -394,7 +394,7 @@ PhantomReference<byte[]> phantom = new PhantomReference<>(largeData, queue);
 ### Reference Queues
 
 Reference queues allow you to be notified when a reference is cleared by the GC. This is useful for
-cleanup:
+Cleanup:
 
 ```java
 ReferenceQueue<Object> queue = new ReferenceQueue<>();
@@ -426,17 +426,17 @@ cleaner.start();
 ## Finalizers
 
 `Object.finalize()` is called by the GC before an object's memory is reclaimed. **Do not use
-finalizers.** They are deprecated for removal since JDK 18.
+Finalizers.** They are deprecated for removal since JDK 18.
 
 ### Problems with Finalizers
 
 1. **Unpredictable timing** — there is no guarantee when (or if) the finalizer will run.
 2. **Performance** — finalizable objects require extra GC cycles.
 3. **Resurrection** — a finalizer can make the object reachable again by storing `this` in a static
-   field.
+ field.
 4. **Exceptions in finalizers are silently swallowed** — they do not propagate.
 5. **Finalizer thread bottleneck** — a single finalizer thread processes all finalizable objects,
-   creating a bottleneck.
+ creating a bottleneck.
 
 ```java
 // DEPRECATED — do not use
@@ -477,12 +477,12 @@ java -Xms4g -Xmx4g MyApp
 ### Ignoring GC Logs Until Production
 
 Never ship to production without GC logging. You cannot tune what you cannot measure. Enable GC
-logging from day one, even in development.
+Logging from day one, even in development.
 
 ### Premature Promotion
 
 If objects are promoted to the old generation too quickly, the old generation fills up and triggers
-expensive full GCs. Causes: young generation too small, survivor spaces too small, large objects
+Expensive full GCs. Causes: young generation too small, survivor spaces too small, large objects
 (allocated directly in old generation if they exceed the `PretenureSizeThreshold`).
 
 ```bash
@@ -493,7 +493,7 @@ expensive full GCs. Causes: young generation too small, survivor spaces too smal
 ### Using `System.gc()`
 
 `System.gc()` is a hint to the JVM to perform a full GC. It is not guaranteed to run, and it can
-trigger an unexpected long pause. Never call it in application code. Disable explicit GC calls with:
+Trigger an unexpected long pause. Never call it in application code. Disable explicit GC calls with:
 
 ```bash
 -XX:+DisableExplicitGC
@@ -502,22 +502,22 @@ trigger an unexpected long pause. Never call it in application code. Disable exp
 ### Over-Tuning GC
 
 Do not tune GC until you have measured and identified a problem. Many applications run fine with
-default settings. Start with G1 (the default) and only tune specific flags if you have concrete
-evidence of a problem (long pauses, low throughput, high memory usage).
+Default settings. Start with G1 (the default) and only tune specific flags if you have concrete
+Evidence of a problem (long pauses, low throughput, high memory usage).
 
 ### Full GC Under G1
 
 If G1 falls back to full GC, it means the concurrent cycle could not keep up with allocation
-pressure. This is a sign that the heap is too small, the marking threshold is too high, or the mixed
-collections are not reclaiming enough memory. Address the root cause rather than trying to tune
-around it.
+Pressure. This is a sign that the heap is too small, the marking threshold is too high, or the mixed
+Collections are not reclaiming enough memory. Address the root cause rather than trying to tune
+Around it.
 
 ### Large Objects and Humongous Allocations
 
 Objects larger than half a G1 region size are allocated directly in the old generation as
 "humongous" objects. This bypasses the young generation entirely, which defeats the generational
-hypothesis. Large byte arrays (e.g., pre-allocated buffers for I/O), large `String` objects, and big
-collections are typical culprits.
+Hypothesis. Large byte arrays (e.g., pre-allocated buffers for I/O), large `String` objects, and big
+Collections are typical culprits.
 
 ```bash
 # Monitor humongous allocations
@@ -530,14 +530,14 @@ collections are typical culprits.
 ```
 
 If your application allocates many objects larger than the humongous threshold, consider: increasing
-the region size, pooling large buffers, or using `MappedByteBuffer` for large data structures that
-do not need to live on the GC-managed heap.
+The region size, pooling large buffers, or using `MappedByteBuffer` for large data structures that
+Do not need to live on the GC-managed heap.
 
 ### String Deduplication in Detail
 
 G1's string deduplication identifies `String` objects in the old generation whose backing `byte[]`
-arrays are identical, and replaces duplicates with a single shared array. This operates at GC time
-and is transparent to the application.
+Arrays are identical, and replaces duplicates with a single shared array. This operates at GC time
+And is transparent to the application.
 
 ```bash
 -XX:+UseG1GC -XX:+StringDeduplication
@@ -545,25 +545,25 @@ and is transparent to the application.
 ```
 
 Deduplication works by maintaining a queue of candidate `String` objects. During a GC pause, the JVM
-compares the backing `byte[]` of candidate strings. If a duplicate is found, the JVM replaces the
-duplicate's reference to point to the canonical array. The old array becomes garbage and is
-collected in a subsequent GC cycle.
+Compares the backing `byte[]` of candidate strings. If a duplicate is found, the JVM replaces the
+Duplicate's reference to point to the canonical array. The old array becomes garbage and is
+Collected in a subsequent GC cycle.
 
 **When to enable:** Applications with high heap usage dominated by duplicate strings (web servers
-processing similar requests, XML/JSON parsers, log aggregation). The overhead is minimal — a few
-percent of GC pause time — but the memory savings can be substantial (20-30% reduction in live set
-size for string-heavy workloads).
+Processing similar requests, XML/JSON parsers, log aggregation). The overhead is minimal — a few
+Percent of GC pause time — but the memory savings can be substantial (20-30% reduction in live set
+Size for string-heavy workloads).
 
 **When NOT to enable:** Applications with few duplicate strings (the deduplication work has no
-benefit), or when using ZGC/Shenandoah (which do not support string deduplication).
+Benefit), or when using ZGC/Shenandoah (which do not support string deduplication).
 
 ## GC in Containers and Cloud Environments
 
 ### Container-Aware JVM
 
 Modern JVMs (JDK 8u191+, JDK 10+) automatically detect container limits (cgroups v1 and v2) and set
-heap size defaults accordingly. Earlier JVMs would use host machine memory, leading to OOM kills in
-containers.
+Heap size defaults accordingly. Earlier JVMs would use host machine memory, leading to OOM kills in
+Containers.
 
 ```bash
 # Verify container detection
@@ -588,15 +588,15 @@ java -XX:+UseZGC -XX:MaxRAMPercentage=75.0 -jar app.jar
 
 :::tip
 Use `-XX:MaxRAMPercentage` instead of fixed `-Xmx` for containerized deployments. This allows
-the same container image to work with different memory limits without rebuilding. A value of 70-80%
-is typical, leaving room for metaspace, native memory, and off-heap buffers.
+The same container image to work with different memory limits without rebuilding. A value of 70-80%
+Is typical, leaving room for metaspace, native memory, and off-heap buffers.
 :::
 
 ### Native Memory Tracking
 
 The JVM's heap is only part of the total memory used by a Java process. Native memory includes
-metaspace, thread stacks, direct buffers, code cache, and JNI allocations. In containers, native
-memory usage can cause OOM kills even when heap usage is low.
+Metaspace, thread stacks, direct buffers, code cache, and JNI allocations. In containers, native
+Memory usage can cause OOM kills even when heap usage is low.
 
 ```bash
 # Enable native memory tracking (small runtime overhead, ~5%)
@@ -612,14 +612,14 @@ jcmd <pid> VM.native_memory detail scale=MB
 
 A typical memory breakdown for a JVM process:
 
-| Component      | Typical Allocation                 |
+| Component | Typical Allocation |
 | -------------- | ---------------------------------- |
-| Java heap      | 60-75% of container memory         |
-| Metaspace      | 50-256 MB                          |
-| Thread stacks  | 1 MB per thread (default `-Xss1m`) |
-| Code cache     | 128-256 MB                         |
-| Direct buffers | Application-dependent              |
-| GC overhead    | 10-20% of heap                     |
+| Java heap | 60-75% of container memory |
+| Metaspace | 50-256 MB |
+| Thread stacks | 1 MB per thread (default `-Xss1m`) |
+| Code cache | 128-256 MB |
+| Direct buffers | Application-dependent |
+| GC overhead | 10-20% of heap |
 
 ## GC Troubleshooting Workflow
 
@@ -635,7 +635,7 @@ A typical memory breakdown for a JVM process:
 - **Low throughput** — check GC time ratio. If GC takes more than 5-10% of CPU time, investigate.
 - **Heap exhaustion** — check old generation growth. Is it linear (memory leak) or stable?
 - **Allocation failure** — check allocation rate. If the young generation fills too fast, increase
-  its size.
+ its size.
 
 ### Step 3: Analyze and Fix
 
@@ -659,7 +659,7 @@ After making changes, compare GC logs before and after. Look for:
 
 :::info
 JDK Mission Control (JMC) and Java Flight Recorder (JFR) provide the most comprehensive GC
-analysis. JFR has near-zero overhead and can be enabled in production:
+Analysis. JFR has near-zero overhead and can be enabled in production:
 `-XX:StartFlightRecording=duration=60s,filename=recording.jfr`
 :::
 
@@ -670,71 +670,71 @@ analysis. JFR has near-zero overhead and can be enabled in production:
 The classic GC algorithm used by Serial and Parallel collectors:
 
 1. **Mark phase** — Starting from GC roots, traverse the object graph and mark all reachable
-   objects. This requires a STW pause. The Parallel collector uses multiple threads for marking.
+ objects. This requires a STW pause. The Parallel collector uses multiple threads for marking.
 
 2. **Sweep phase** — Scan the heap linearly. Unmarked objects are garbage. Their memory is added to
-   free lists. Live objects are not moved.
+ free lists. Live objects are not moved.
 
 3. **Compact phase** — Move all live objects to the beginning of the heap, eliminating
-   fragmentation. Update all references to moved objects. This requires another STW pause.
+ fragmentation. Update all references to moved objects. This requires another STW pause.
 
 **Time complexity:** O(heap size) for mark, O(heap size) for sweep, O(live objects) for compact. The
-entire heap is scanned, so pause times scale linearly with heap size. This is why Serial and
+Entire heap is scanned, so pause times scale linearly with heap size. This is why Serial and
 Parallel GC are unsuitable for large heaps.
 
 ### G1 Region-Based Collection
 
 G1 divides the heap into fixed-size regions (1-32 MB). Each region can be Eden, Survivor, Old,
 Humongous, or Empty. The key insight: instead of collecting the entire heap, collect only the
-regions with the most garbage.
+Regions with the most garbage.
 
 **G1 concurrent marking cycle:**
 
 1. **Initial mark** — STW pause. Marks GC roots and marks the regions they point to as "dirty."
-   Piggybacks on a young GC pause (minimal additional cost).
+ Piggybacks on a young GC pause (minimal additional cost).
 
 2. **Root region scanning** — Concurrent. Scans the dirty regions from the initial mark to find
-   references to old generation regions.
+ references to old generation regions.
 
 3. **Concurrent marking** — Concurrent. Traces the object graph from roots to mark all live objects.
-   Uses a SATB (Snapshot-At-The-Beginning) write barrier to handle mutations during marking.
+ Uses a SATB (Snapshot-At-The-Beginning) write barrier to handle mutations during marking.
 
 4. **Remark** — STW pause. Processes any remaining SATB buffers and completes marking. Reclaims
-   completely empty regions.
+ completely empty regions.
 
 5. **Cleanup** — Optional concurrent phase. Resets region state and reclaims empty regions. May
-   trigger mixed collections.
+ trigger mixed collections.
 
 **Mixed collections:** After a marking cycle, G1 selects old regions with the most reclaimable space
 (along with all young regions) and collects them. The number of mixed collections per cycle is
-controlled by `-XX:G1MixedGCCountTarget` (default 8).
+Controlled by `-XX:G1MixedGCCountTarget` (default 8).
 
 ### ZGC Colored Pointers and Load Barriers
 
 ZGC's design is fundamentally different from G1 and Parallel:
 
 **Colored pointers:** On 64-bit platforms, ZGC uses the high bits of each reference (which are
-normally unused because no system has 2^48 bytes of addressable memory) to store metadata bits:
+Normally unused because no system has 2^48 bytes of addressable memory) to store metadata bits:
 
-| Bits  | Usage                                              |
+| Bits | Usage |
 | ----- | -------------------------------------------------- |
-| 0-41  | Object address (4 TB addressable)                  |
+| 0-41 | Object address (4 TB addressable) |
 | 42-43 | Metadata (Finalizable, Remapped, Marked1, Marked0) |
-| 44-62 | Unused (reserved for future use)                   |
-| 63    | Unused                                             |
+| 44-62 | Unused (reserved for future use) |
+| 63 | Unused |
 
 The metadata bits encode the state of the object: whether it has been marked, relocated, or
-finalized. No per-object header space is needed for GC metadata.
+Finalized. No per-object header space is needed for GC metadata.
 
 **Load barriers:** Every reference read from the heap triggers a load barrier. The load barrier
-checks the metadata bits of the loaded reference:
+Checks the metadata bits of the loaded reference:
 
 - If the reference points to a relocated object, the barrier fixes it to point to the new location.
 - If the reference points to a not-yet-marked object, the barrier marks it (or adds it to a marking
-  queue).
+ queue).
 
 This is how ZGC achieves concurrent relocation — the GC can move objects while the application is
-running, and the load barriers transparently fix any stale references the application encounters.
+Running, and the load barriers transparently fix any stale references the application encounters.
 
 **Phases:**
 
@@ -744,21 +744,21 @@ running, and the load barriers transparently fix any stale references the applic
 4. **Concurrent relocate prepare** — Concurrent. Identify regions to evacuate.
 5. **Pause relocate start** — STW (sub-ms). Select relocation set.
 6. **Concurrent relocate** — Concurrent. Move live objects to new regions. Load barriers fix stale
-   references.
+ references.
 
 ### Generational ZGC (JDK 21+)
 
 Generational ZGC separates the heap into young and old generations, like G1. Most objects are
-allocated in the young generation and collected frequently (young-only collections). Objects that
-survive multiple young collections are promoted to the old generation. This reduces the amount of
-data the GC must scan during old generation collections.
+Allocated in the young generation and collected frequently (young-only collections). Objects that
+Survive multiple young collections are promoted to the old generation. This reduces the amount of
+Data the GC must scan during old generation collections.
 
 ```bash
 -XX:+UseZGC -XX:+ZGenerational
 ```
 
-Generational ZGC is the default ZGC mode in JDK 21+. It typically uses 4-8x less memory for GC
-metadata compared to non-generational ZGC and achieves higher throughput for most workloads.
+Generational ZGC is the default ZGC mode in JDK 21+. It uses 4-8x less memory for GC
+Metadata compared to non-generational ZGC and achieves higher throughput for most workloads.
 
 ## Practical GC Tuning Examples
 
@@ -811,3 +811,10 @@ java -XX:+UseZGC \
      -jar microservice.jar
 ```
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

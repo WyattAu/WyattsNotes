@@ -8,12 +8,12 @@ sidebar_position: 1
 ## Package Formats
 
 A Linux package is an archive containing compiled software, configuration files, metadata (version,
-description, dependencies), and install/uninstall scripts. Two dominant package formats exist:
+Description, dependencies), and install/uninstall scripts. Two dominant package formats exist:
 
-| Format  | Specification     | Distributions                            | Extension |
+| Format | Specification | Distributions | Extension |
 | ------- | ----------------- | ---------------------------------------- | --------- |
-| **DEB** | Debian Policy     | Debian, Ubuntu, Mint, Proxmox            | `.deb`    |
-| **RPM** | RPM Specification | RHEL, Fedora, CentOS, SUSE, OpenMandriva | `.rpm`    |
+| **DEB** | Debian Policy | Debian, Ubuntu, Mint, Proxmox | `.deb` |
+| **RPM** | RPM Specification | RHEL, Fedora, CentOS, SUSE, OpenMandriva | `.rpm` |
 
 ### Package Anatomy
 
@@ -48,7 +48,7 @@ rpm -q --scripts package.rpm     # install/remove scripts
 ## APT (Debian/Ubuntu)
 
 APT (Advanced Package Tool) is the high-level package manager for `.deb` distributions. It handles
-dependency resolution, repository management, and package installation.
+Dependency resolution, repository management, and package installation.
 
 ### APT Commands
 
@@ -112,16 +112,16 @@ deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.
 ### APT Pinning
 
 APT pinning allows you to control which version of a package is installed when multiple sources
-provide different versions. Pins have a priority (0-1001):
+Provide different versions. Pins have a priority (0-1001):
 
-| Priority Range | Effect                                            |
+| Priority Range | Effect |
 | -------------- | ------------------------------------------------- |
-| 0              | Never install (used for blocking)                 |
-| 1-99           | Install only if no higher-priority version exists |
-| 100-499        | Install only if no installed version exists       |
-| 500            | Default priority (any version from this source)   |
-| 990            | Prefer over default priority                      |
-| 1001           | Install even if downgrading                       |
+| 0 | Never install (used for blocking) |
+| 1-99 | Install only if no higher-priority version exists |
+| 100-499 | Install only if no installed version exists |
+| 500 | Default priority (any version from this source) |
+| 990 | Prefer over default priority |
+| 1001 | Install even if downgrading |
 
 ```bash
 # /etc/apt/preferences.d/docker
@@ -170,7 +170,7 @@ dpkg-query -W -f='${Package} ${Version}\n'    # custom format
 ## DNF (RHEL/Fedora)
 
 DNF (Dandified YUM) is the package manager for RPM-based distributions, succeeding YUM with better
-dependency resolution, faster performance, and a plugin architecture.
+Dependency resolution, faster performance, and a plugin architecture.
 
 ### DNF Commands
 
@@ -301,8 +301,8 @@ rpm -Va | grep '^..5'   # find all files with changed checksums
 
 ## pacman (Arch Linux)
 
-pacman is the package manager for Arch Linux and its derivatives. It is simple, fast, and follows a
-rolling release model.
+Pacman is the package manager for Arch Linux and its derivatives. It is simple, fast, and follows a
+Rolling release model.
 
 ### pacman Commands
 
@@ -355,7 +355,7 @@ pacman -Rns $(pacman -Qdtq)
 ### AUR — Arch User Repository
 
 The AUR is a community-maintained repository of PKGBUILD scripts. It is not a binary repository —
-packages are built from source on the local machine.
+Packages are built from source on the local machine.
 
 ```bash
 # Using an AUR helper (e.g., paru)
@@ -372,7 +372,7 @@ makepkg -si               # build and install
 :::warning
 
 AUR packages are not vetted by Arch developers. Always review PKGBUILD scripts before installing,
-especially packages that modify system files or run install hooks. Use a helper that supports
+Especially packages that modify system files or run install hooks. Use a helper that supports
 PKGBUILD inspection.
 
 :::
@@ -380,9 +380,9 @@ PKGBUILD inspection.
 ## Nix — Functional Package Management
 
 Nix is a fundamentally different approach to package management. Instead of a global package
-database, Nix stores each package version in a unique path in the Nix store (`/nix/store/`),
-identified by a content hash. This means multiple versions of the same package can coexist without
-conflict, and package installations are reproducible.
+Database, Nix stores each package version in a unique path in the Nix store (`/nix/store/`),
+Identified by a content hash. This means multiple versions of the same package can coexist without
+Conflict, and package installations are reproducible.
 
 ### Core Concepts
 
@@ -398,13 +398,13 @@ graph TD
     G --> I["/nix/store/hash3-package-name/"]
 ```
 
-| Concept        | Description                                                  |
+| Concept | Description |
 | -------------- | ------------------------------------------------------------ |
 | **Derivation** | A build recipe (input sources, build commands, dependencies) |
-| **Store Path** | `/nix/store/hash-name/` — content-addressable storage        |
-| **Profile**    | A set of packages linked together in a user environment      |
-| **Channel**    | A named set of Nix expressions (like a repository)           |
-| **Shell**      | An isolated environment with specific packages               |
+| **Store Path** | `/nix/store/hash-name/` — content-addressable storage |
+| **Profile** | A set of packages linked together in a user environment |
+| **Channel** | A named set of Nix expressions (like a repository) |
+| **Shell** | An isolated environment with specific packages |
 
 ### Nix Commands
 
@@ -551,22 +551,22 @@ snap info firefox
 
 ### Flatpak vs Snap
 
-| Aspect                   | Flatpak                            | Snap                           |
+| Aspect | Flatpak | Snap |
 | ------------------------ | ---------------------------------- | ------------------------------ |
-| **Backend**              | OSTree (content-addressable)       | SquashFS (custom mount)        |
-| **Default store**        | Flathub (community)                | Snap Store (Canonical)         |
-| **Sandbox**              | Bubblewrap (portals for access)    | AppArmor, seccomp (interfaces) |
-| **Updates**              | User-controlled, no forced updates | Automatic, vendor-controlled   |
-| **Distribution support** | Most distributions                 | Primarily Ubuntu/Debian        |
-| **Disk usage**           | Shares runtimes between apps       | Each snap includes its runtime |
-| **Boot impact**          | None                               | Snap daemon starts at boot     |
+| **Backend** | OSTree (content-addressable) | SquashFS (custom mount) |
+| **Default store** | Flathub (community) | Snap Store (Canonical) |
+| **Sandbox** | Bubblewrap (portals for access) | AppArmor, seccomp (interfaces) |
+| **Updates** | User-controlled, no forced updates | Automatic, vendor-controlled |
+| **Distribution support** | Most distributions | Primarily Ubuntu/Debian |
+| **Disk usage** | Shares runtimes between apps | Each snap includes its runtime |
+| **Boot impact** | None | Snap daemon starts at boot |
 
 ## Dependency Resolution
 
 ### How Dependency Resolution Works
 
 Package managers must solve a **dependency graph** — finding a set of package versions that satisfy
-all dependency constraints simultaneously. This is a SAT problem (Boolean satisfiability), which is
+All dependency constraints simultaneously. This is a SAT problem (Boolean satisfiability), which is
 NP-complete in the worst case.
 
 ```mermaid
@@ -580,13 +580,13 @@ graph LR
 
 ### Resolution Algorithms
 
-| Manager     | Algorithm                       | Characteristics                                   |
+| Manager | Algorithm | Characteristics |
 | ----------- | ------------------------------- | ------------------------------------------------- |
-| **APT**     | C++ resolver                    | Greedy, deterministic, handles conflicts          |
-| **DNF**     | libsolv (SAT solver)            | More robust than YUM, handles complex constraints |
-| **pacman**  | Simple dependency following     | No SAT solver, less robust for complex conflicts  |
-| **Nix**     | Built-in (functional)           | No global conflicts by design                     |
-| **Portage** | C++ resolver with slot handling | Gentoo's package manager, handles slots           |
+| **APT** | C++ resolver | Greedy, deterministic, handles conflicts |
+| **DNF** | libsolv (SAT solver) | More robust than YUM, handles complex constraints |
+| **pacman** | Simple dependency following | No SAT solver, less robust for complex conflicts |
+| **Nix** | Built-in (functional) | No global conflicts by design |
+| **Portage** | C++ resolver with slot handling | Gentoo's package manager, handles slots |
 
 ### Common Dependency Issues
 
@@ -731,7 +731,7 @@ cd /var/repo && python3 -m http.server 8080
 ### Pitfall: Running `apt upgrade` Without `apt update`
 
 Installing or upgrading packages without first updating the package index can lead to installing
-outdated packages or missing security updates:
+Outdated packages or missing security updates:
 
 ```bash
 # WRONG — may install stale cached packages
@@ -744,7 +744,7 @@ apt update && apt upgrade
 ### Pitfall: `dpkg -i` Without Resolving Dependencies
 
 `dpkg -i` installs a package but does not resolve dependencies. If dependencies are missing, the
-package is in a "half-configured" state:
+Package is in a "half-configured" state:
 
 ```bash
 # WRONG — dpkg does not resolve dependencies
@@ -760,7 +760,7 @@ apt --fix-broken install
 ### Pitfall: Holding Packages Indefinitely
 
 Holding a package prevents upgrades, including security patches. Over time, the held version becomes
-increasingly vulnerable:
+Increasingly vulnerable:
 
 ```bash
 # Check what is held
@@ -775,8 +775,8 @@ apt upgrade
 
 ### Pitfall: Partial Upgrades with pacman
 
-pacman does not support partial upgrades. If you update only some packages, you can end up with
-incompatible library versions:
+Pacman does not support partial upgrades. If you update only some packages, you can end up with
+Incompatible library versions:
 
 ```bash
 # WRONG — partial upgrade
@@ -789,7 +789,7 @@ pacman -Syu
 ### Pitfall: Nix Disk Usage
 
 The Nix store grows continuously as new package versions are added. Without garbage collection, it
-can consume tens or hundreds of gigabytes:
+Can consume tens or hundreds of gigabytes:
 
 ```bash
 # Check Nix store size
@@ -808,8 +808,8 @@ nix store gc --optimize
 ### Pitfall: Mixing Repository Types
 
 On RPM-based systems, mixing EPEL, RPM Fusion, and third-party repositories can cause dependency
-conflicts. Use priorities or `includepkgs`/`excludepkgs` to control which packages come from which
-repository:
+Conflicts. Use priorities or `includepkgs`/`excludepkgs` to control which packages come from which
+Repository:
 
 ```ini
 # /etc/yum.repos.d/third-party.repo
@@ -824,7 +824,7 @@ includepkgs=specific-package  # only install this package from here
 ### Pitfall: Snap Store Without Network
 
 Snap packages require network access to the Snap Store for initial installation and updates. In
-air-gapped environments, snaps cannot be used without setting up a local snap store proxy:
+Air-gapped environments, snaps cannot be used without setting up a local snap store proxy:
 
 ```bash
 # Check snap store connectivity
@@ -835,7 +835,7 @@ snap info package     # check if cached locally
 ### Pitfall: APT Pinning Complexity
 
 Incorrect APT pinning can cause unexpected package versions or prevent security updates. Always
-verify pinning effects before applying:
+Verify pinning effects before applying:
 
 ```bash
 # Simulate the effect of pinning
@@ -855,3 +855,11 @@ flatpak list --runtime
 # Remove unused runtimes
 flatpak uninstall --unused
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

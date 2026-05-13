@@ -11,8 +11,8 @@ categories: [TypeScript]
 ### Distributive Conditional Types
 
 When a conditional type's checked type is a **naked type parameter** (a type parameter used
-directly, not wrapped in another type), the conditional distributes over union members. This is the
-most important rule governing conditional types.
+Directly, not wrapped in another type), the conditional distributes over union members. This is the
+Most important rule governing conditional types.
 
 ```ts
 type ToArray<T> = T extends any ? T[] : never;
@@ -39,17 +39,17 @@ type Result = (string | number)[];
 
 ### Distribution Rules Summary
 
-| Form                                                    | Distributes?    |
+| Form | Distributes? |
 | ------------------------------------------------------- | --------------- |
-| `T extends U ? X : Y`                                   | Yes (naked `T`) |
-| `[T] extends [U] ? X : Y`                               | No              |
-| `T extends U ? X : Y` where `T` is not a type parameter | No              |
-| `(T & {}) extends U ? X : Y`                            | No              |
+| `T extends U ? X : Y` | Yes (naked `T`) |
+| `[T] extends [U] ? X : Y` | No |
+| `T extends U ? X : Y` where `T` is not a type parameter | No |
+| `(T & {}) extends U ? X : Y` | No |
 
 ## Recursive Types
 
 TypeScript supports recursive type aliases, enabling type-level computations over arbitrarily nested
-data structures.
+Data structures.
 
 ### DeepPartial
 
@@ -135,18 +135,18 @@ type A = { a: string } & { b: number };
 ```
 
 This works by exploiting contravariance in function parameter types. Each union member is converted
-to a function type `(k: Member) => void`, and the union of these function types has an inferred
-parameter type that is the intersection of all members.
+To a function type `(k: Member) => void`And the union of these function types has an inferred
+Parameter type that is the intersection of all members.
 
 **Common Pitfall:** `UnionToIntersection` does not handle cases where union members share property
-names with different types. The intersection of `{ a: string }` and `{ a: number }` produces
-`{ a: never }`, not `{ a: string } & { a: number }`.
+Names with different types. The intersection of `{ a: string }` and `{ a: number }` produces
+`{ a: never }`Not `{ a: string } & { a: number }`.
 
 ## Branded Types / Opaque Types
 
 Branded types (also called opaque types or nominal types) attach a unique "brand" to an underlying
-type, preventing assignment between types that share the same structure but have different
-semantics.
+Type, preventing assignment between types that share the same structure but have different
+Semantics.
 
 ### Basic Branding
 
@@ -228,7 +228,7 @@ function createPositiveInt(value: number): PositiveInt {
 ## Builder Pattern with Type Safety
 
 The builder pattern constructs complex objects step by step. TypeScript can enforce that required
-steps are completed before the build method is called.
+Steps are completed before the build method is called.
 
 ### Step Builder
 
@@ -436,7 +436,7 @@ The last line is a compile error because `nonexistent` does not exist on the pay
 ## Variadic Tuple Types
 
 TypeScript 4.0 introduced variadic tuple types, which allow tuples to contain generic spreads. This
-enables type-safe manipulation of function parameter lists and tuple concatenation.
+Enables type-safe manipulation of function parameter lists and tuple concatenation.
 
 ### Tuple Spreading
 
@@ -637,7 +637,7 @@ type Result = 'hi world hi';
 ## Type-Level Arithmetic
 
 TypeScript does not natively support arithmetic on number types. However, type-level arithmetic can
-be implemented using tuple length as a representation of natural numbers.
+Be implemented using tuple length as a representation of natural numbers.
 
 ### Counting Tuple Length
 
@@ -688,9 +688,9 @@ type A = GreaterThan<5, 3>;
 type B = GreaterThan<3, 5>;
 ```
 
-**Common Pitfall:** Type-level arithmetic is limited to small numbers (typically up to around 9999)
-because TypeScript has a recursion depth limit. It is also slow for large numbers. Use these
-techniques for type-level constraints, not for runtime computation.
+**Common Pitfall:** Type-level arithmetic is limited to small numbers ( up to around 9999)
+Because TypeScript has a recursion depth limit. It is also slow for large numbers. Use these
+Techniques for type-level constraints, not for runtime computation.
 
 ## Utility Type Composition
 
@@ -770,8 +770,8 @@ type Methods = {
 
 ### Pitfall 1: Excessive Recursion Depth
 
-Recursive types hit TypeScript's recursion limit (typically around 50-100 levels). For deeply nested
-types, consider iterative approaches or accept shallower recursion:
+Recursive types hit TypeScript's recursion limit ( around 50-100 levels). For deeply nested
+Types, consider iterative approaches or accept shallower recursion:
 
 ```ts
 type DepthLimit<T, D extends number, Current extends any[] = []> = Current['length'] extends D
@@ -803,7 +803,7 @@ type Clean = NonNullFields<Data>;
 ### Pitfall 3: Branding at Runtime
 
 Branded types are erased at compile time. The `__brand` property does not exist at runtime. If
-runtime validation is needed, use a class or a validation function:
+Runtime validation is needed, use a class or a validation function:
 
 ```ts
 function isUSD(value: number): value is USD {
@@ -811,5 +811,13 @@ function isUSD(value: number): value is USD {
 }
 ```
 
-This assertion is trivially true because the brand is erased. For meaningful runtime validation, add
-actual checks.
+This assertion is true because the brand is erased. For meaningful runtime validation, add
+Actual checks.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -38,3 +38,15 @@ Complete revision notes for IB Biology, covering the full syllabus with worked e
 - **A-Level Biology:** [A-Level Biology](https://alevel.wyattau.com/docs/biology)
 - **DSE Biology:** [DSE Biology](https://academics.wyattau.com/docs/dse/biology)
 - **University Biology:** [University Biology](https://university.wyattau.com/docs/biology)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

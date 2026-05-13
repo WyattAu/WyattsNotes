@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.4$, $\mathrm{P}(B) = 0.5$, and $\mathrm{P}(A \cap B) = 0.1$.
+Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.4$$\mathrm{P}(B) = 0.5$And $\mathrm{P}(A \cap B) = 0.1$.
 
 **(a)** Determine whether $A$ and $B$ are mutually exclusive. Justify your answer.
 
@@ -31,15 +31,15 @@ Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.4$, $\mathrm{P}(B) = 0.5$, a
 
 **(a)** Events $A$ and $B$ are mutually exclusive if $\mathrm{P}(A \cap B) = 0$.
 
-Here $\mathrm{P}(A \cap B) = 0.1 \neq 0$, so $A$ and $B$ are **not mutually exclusive**.
+Here $\mathrm{P}(A \cap B) = 0.1 \neq 0$So $A$ and $B$ are **not mutually exclusive**.
 
 **(b)** Events $A$ and $B$ are independent if $\mathrm{P}(A \cap B) = \mathrm{P}(A) \times \mathrm{P}(B)$.
 
 $$\mathrm{P}(A) \times \mathrm{P}(B) = 0.4 \times 0.5 = 0.20$$
 
-But $\mathrm{P}(A \cap B) = 0.1 \neq 0.20$, so $A$ and $B$ are **not independent**.
+But $\mathrm{P}(A \cap B) = 0.1 \neq 0.20$So $A$ and $B$ are **not independent**.
 
-**(c)** Let $C$ and $D$ be events with $\mathrm{P}(C) = 0.3$, $\mathrm{P}(D) = 0.4$, $\mathrm{P}(C \cap D) = 0.15$.
+**(c)** Let $C$ and $D$ be events with $\mathrm{P}(C) = 0.3$$\mathrm{P}(D) = 0.4$$\mathrm{P}(C \cap D) = 0.15$.
 
 Not mutually exclusive: $\mathrm{P}(C \cap D) = 0.15 \neq 0$.
 
@@ -78,7 +78,7 @@ A person is randomly selected from the population and tests positive.
 
 **(c)** The hospital director wants the positive predictive value to be at least 50%. Find the minimum prevalence of the disease required to achieve this, keeping the test characteristics the same.
 
-**(d)** Explain why $\mathrm{P}(\text{disease} \mid \text{positive}) \neq \mathrm{P}(\text{positive} \mid \text{disease})$ in general, and state the condition under which they would be equal.
+**(d)** Explain why $\mathrm{P}(\text{disease} \mid \text{positive}) \neq \mathrm{P}(\text{positive} \mid \text{disease})$And state the condition under which they would be equal.
 
 [Difficulty: hard. Tests conditional probability, Bayes' theorem, and the critical distinction between the direction of conditioning.]
 
@@ -124,11 +124,11 @@ $$p \geq \frac{0.01}{0.485} = 0.02062...$$
 
 The minimum prevalence is approximately 2.06%. At this prevalence, exactly half of all positive tests are true positives.
 
-**(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ in general because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
+**(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
 
 $$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
 
-They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$, i.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
+They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$I.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
 
 ---
 
@@ -138,11 +138,11 @@ They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$, i.e., when the pr
 
 A bag contains 4 red balls and 6 blue balls. Three balls are drawn at random **without replacement**.
 
-**(a)** Find the probability distribution of $X$, the number of red balls drawn. Verify that your probabilities sum to 1.
+**(a)** Find the probability distribution of $X$The number of red balls drawn. Verify that your probabilities sum to 1.
 
 **(b)** Calculate $\mathrm{E}(X)$ and $\mathrm{Var}(X)$ directly from the probability distribution.
 
-**(c)** A student claims that since $\mathrm{P}(\text{at least one red}) = 1 - \mathrm{P}(\text{no red})$, this identity is only valid for independent events. Prove that this identity holds for any events (dependent or independent), using the addition rule.
+**(c)** A student claims that since $\mathrm{P}(\text{at least one red}) = 1 - \mathrm{P}(\text{no red})$This identity is only valid for independent events. Prove that this identity holds for any events (dependent or independent), using the addition rule.
 
 **(d)** In a modified version of the problem, balls are drawn with replacement. Find the probability that the first red ball appears on or before the 5th draw, and express your answer in terms of a geometric distribution.
 
@@ -218,7 +218,7 @@ $$\mathrm{P}(Y \leq 5) = \sum_{k=1}^{5} (0.6)^{k-1}(0.4) = 0.4 + 0.24 + 0.144 + 
 
 **Question:**
 
-The random variable $X$ follows a binomial distribution $X \sim B(n, p)$, where $n$ is a positive integer and $0 \lt p \lt 1$.
+The random variable $X$ follows a binomial distribution $X \sim B(n, p)$Where $n$ is a positive integer and $0 \lt p \lt 1$.
 
 **(a)** By writing $X = \sum_{i=1}^{n} X_i$ where each $X_i$ is an indicator random variable for the $i$-th trial being a success, show that $\mathrm{E}(X) = np$.
 
@@ -258,7 +258,7 @@ $$\mathrm{Var}(X) = \mathrm{Var}\left(\sum_{i=1}^{n} X_i\right) = \sum_{i=1}^{n}
 
 Note: This step requires independence. If the trials were dependent, we would need to add covariance terms, and the result would not simplify to $np(1-p)$.
 
-**(c)** For a fair coin: $n = 20$, $p = 0.5$.
+**(c)** For a fair coin: $n = 20$$p = 0.5$.
 
 $$\mathrm{E}(X) = 20 \times 0.5 = 10$$
 
@@ -272,7 +272,7 @@ $$\mathrm{E}(Y) = 3\mathrm{E}(X) - 5 = 3(10) - 5 = 25$$
 
 $$\mathrm{Var}(Y) = 3^2 \mathrm{Var}(X) = 9 \times 5 = 45$$
 
-Note that the additive constant $-5$ has no effect on the variance. This is a common source of error: students sometimes write $\mathrm{Var}(Y) = \mathrm{Var}(3X) + \mathrm{Var}(-5)$, which is incorrect. The variance of a constant is zero.
+Note that the additive constant $-5$ has no effect on the variance. This is a common source of error: students sometimes write $\mathrm{Var}(Y) = \mathrm{Var}(3X) + \mathrm{Var}(-5)$Which is incorrect. The variance of a constant is zero.
 
 ---
 
@@ -286,9 +286,9 @@ A fair six-sided die is rolled twice. Let $A$ be the event "the sum of the two s
 
 **(b)** Find the value of $k$ for which $\mathrm{P}(A) = \frac{1}{3}$.
 
-**(c)** For $k = 7$, determine whether events $A$ and $B$ are independent. Show all your working.
+**(c)** For $k = 7$Determine whether events $A$ and $B$ are independent. Show all your working.
 
-**(d)** Find the range of values of $k$ for which $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$, and explain the significance of this inequality in terms of dependence.
+**(d)** Find the range of values of $k$ for which $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$And explain the significance of this inequality in terms of dependence.
 
 [Difficulty: hard. Combines probability with algebraic equation solving and formal independence testing.]
 
@@ -356,13 +356,13 @@ $$\mathrm{P}(A \cap B) = \frac{4 + 4 + 1 + 2 + 0}{36} = \frac{11}{36}$$
 
 $$\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{5}{12} \times \frac{3}{4} = \frac{5}{16} = \frac{11.25}{36}$$
 
-Since $\frac{11}{36} \neq \frac{11.25}{36}$, events $A$ and $B$ are **not independent**.
+Since $\frac{11}{36} \neq \frac{11.25}{36}$Events $A$ and $B$ are **not independent**.
 
-**(d)** We need $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$, which means the events are **negatively dependent**: knowing $B$ occurred makes $A$ less likely.
+**(d)** We need $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$Which means the events are **negatively dependent**: knowing $B$ occurred makes $A$ less likely.
 
 Computing for different values of $k$:
 
-For $k = 7$: $\mathrm{P}(A \cap B) = \frac{11}{36} \approx 0.306$, $\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{5}{16} = 0.3125$. So $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$.
+For $k = 7$: $\mathrm{P}(A \cap B) = \frac{11}{36} \approx 0.306$$\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{5}{16} = 0.3125$. So $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$.
 
 For $k = 6$: $\mathrm{P}(A) = \frac{21}{36}$. We need $\mathrm{P}(A \cap B)$. Outcomes with sum $> 6$ and at least one prime: add the sum-7 outcomes (6 of them) with at least one prime: (1,6) no, (2,5) yes, (3,4) yes, (4,3) yes, (5,2) yes, (6,1) no. That is 4 more. Total: $\frac{11 + 4}{36} = \frac{15}{36}$. $\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{21}{36} \times \frac{3}{4} = \frac{63}{144} = \frac{15.75}{36}$. So $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$.
 
@@ -388,13 +388,13 @@ When this inequality holds, the events are **negatively dependent**: knowing tha
 
 $$\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B) - \mathrm{P}(A \cap B)$$
 
-**(b)** Hence prove that for three events $A$, $B$, and $C$:
+**(b)** Hence prove that for three events $A$$B$And $C$:
 
 $$\mathrm{P}(A \cup B \cup C) = \mathrm{P}(A) + \mathrm{P}(B) + \mathrm{P}(C) - \mathrm{P}(A \cap B) - \mathrm{P}(A \cap C) - \mathrm{P}(B \cap C) + \mathrm{P}(A \cap B \cap C)$$
 
 **(c)** In a class of 40 students: 18 study Mathematics, 15 study Physics, 12 study Chemistry, 7 study both Mathematics and Physics, 5 study both Mathematics and Chemistry, 4 study both Physics and Chemistry, and 2 study all three subjects. A student is chosen at random. Find the probability that the student studies exactly one of the three subjects.
 
-**(d)** A student claims that if $\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B)$, then $A$ and $B$ must be independent. Determine whether this claim is true, justifying with a counterexample or proof.
+**(d)** A student claims that if $\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B)$Then $A$ and $B$ must be independent. Determine whether this claim is true, justifying with a counterexample or proof.
 
 [Difficulty: hard. Requires a formal proof of the inclusion-exclusion principle and its application to a multi-set problem.]
 
@@ -456,9 +456,9 @@ This is the inclusion-exclusion principle for three events.
 
 Let $M$ = studies Mathematics, $P$ = studies Physics, $C$ = studies Chemistry.
 
-$\mathrm{P}(M) = \frac{18}{40}$, $\mathrm{P}(P) = \frac{15}{40}$, $\mathrm{P}(C) = \frac{12}{40}$
+$\mathrm{P}(M) = \frac{18}{40}$$\mathrm{P}(P) = \frac{15}{40}$$\mathrm{P}(C) = \frac{12}{40}$
 
-$\mathrm{P}(M \cap P) = \frac{7}{40}$, $\mathrm{P}(M \cap C) = \frac{5}{40}$, $\mathrm{P}(P \cap C) = \frac{4}{40}$
+$\mathrm{P}(M \cap P) = \frac{7}{40}$$\mathrm{P}(M \cap C) = \frac{5}{40}$$\mathrm{P}(P \cap C) = \frac{4}{40}$
 
 $\mathrm{P}(M \cap P \cap C) = \frac{2}{40}$
 
@@ -472,12 +472,12 @@ Total studying exactly one: $8 + 6 + 5 = 19$
 
 $$\mathrm{P}(\text{exactly one}) = \frac{19}{40}$$
 
-**(d)** The claim is **false**. If $\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B)$, then from the inclusion-exclusion principle:
+**(d)** The claim is **false**. If $\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B)$Then from the inclusion-exclusion principle:
 
 $$\mathrm{P}(A) + \mathrm{P}(B) = \mathrm{P}(A) + \mathrm{P}(B) - \mathrm{P}(A \cap B)$$
 
-This gives $\mathrm{P}(A \cap B) = 0$, meaning $A$ and $B$ are **mutually exclusive**, not independent.
+This gives $\mathrm{P}(A \cap B) = 0$Meaning $A$ and $B$ are **mutually exclusive**, not independent.
 
-Counterexample: Let $\mathrm{P}(A) = 0.3$, $\mathrm{P}(B) = 0.2$, $\mathrm{P}(A \cap B) = 0$. Then $\mathrm{P}(A \cup B) = 0.5 = 0.3 + 0.2$. But for independence we need $\mathrm{P}(A \cap B) = 0.3 \times 0.2 = 0.06 \neq 0$. The events are mutually exclusive but not independent.
+Counterexample: Let $\mathrm{P}(A) = 0.3$$\mathrm{P}(B) = 0.2$$\mathrm{P}(A \cap B) = 0$. Then $\mathrm{P}(A \cup B) = 0.5 = 0.3 + 0.2$. But for independence we need $\mathrm{P}(A \cap B) = 0.3 \times 0.2 = 0.06 \neq 0$. The events are mutually exclusive but not independent.
 
 As shown in UT-1 part (d), independent events with positive probability cannot be mutually exclusive. The student has confused two fundamentally different concepts.

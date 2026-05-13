@@ -25,9 +25,9 @@ A **red-black tree** is a self-balancing BST satisfying five invariants:
 
 *Proof.* By invariant 4, on any path from root to leaf, at most half the nodes (rounded up) can be red. So the length of any root-to-leaf path is at most twice the black-height $bh$ of the root. We now bound $bh$ in terms of $n$.
 
-Consider the subtree rooted at any node $x$. If this subtree has height $h_x$, then it contains at least $2^{bh(x)} - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has $0 = 2^0 - 1$ internal nodes; otherwise, each child has black-height at least $bh(x) - 1$ if it is red, or $bh(x)$ if it is black, so each child has at least $2^{bh(x)-1} - 1$ internal nodes, giving at least $2(2^{bh(x)-1} - 1) + 1 = 2^{bh(x)} - 1$ for $x$).
+Consider the subtree rooted at any node $x$. If this subtree has height $h_x$Then it contains at least $2^{bh(x)} - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has $0 = 2^0 - 1$ internal nodes; otherwise, each child has black-height at least $bh(x) - 1$ if it is red, or $bh(x)$ if it is black, so each child has at least $2^{bh(x)-1} - 1$ internal nodes, giving at least $2(2^{bh(x)-1} - 1) + 1 = 2^{bh(x)} - 1$ for $x$).
 
-Therefore $n \geq 2^{bh(\mathrm{root{})} - 1$, giving $bh(\mathrm{root{}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{root{})$, we have $h \leq 2\log_2(n+1)$. $\blacksquare$
+Therefore $n \geq 2^{bh(\mathrm{root{})} - 1$Giving $bh(\mathrm{root{}) \leq \log_2(n+1)$. Since $h \leq 2 \cdot bh(\mathrm{root{})$We have $h \leq 2\log_2(n+1)$. $\blacksquare$
 
 **Corollary.** Search, insert, and delete in a red-black tree take $O(\log n)$ time.
 
@@ -41,11 +41,11 @@ Insertion follows the standard BST insert, then colours the new node red. This m
 |------|-------------|---------------|-----|
 | 1 | Red | Any | Recolour $p$ and $u$ black, $g$ red; push problem up to $g$ |
 | 2 | Black | $z$ and $p$ same direction (left-left or right-right) | Single rotation at $g$; recolour $p$ black, $g$ red |
-| 3 | Black | $z$ and $p$ opposite directions (left-right or right-left) | Double rotation: first at $p$, then at $g$; recolour $z$ black, $g$ red |
+| 3 | Black | $z$ and $p$ opposite directions (left-right or right-left) | Double rotation: first at $p$Then at $g$; recolour $z$ black, $g$ red |
 
 **Theorem 1.2.** Insertion into a red-black tree with $n$ nodes takes $O(\log n)$ time and performs at most 2 rotations.
 
-*Proof.* The BST insert takes $O(\log n)$ time. The fix-up loop ascends the tree. Each iteration either terminates (cases 2 and 3 perform one or two rotations and terminate) or moves the problem two levels up (case 1 recolours and continues with $g$). Since the tree height is $O(\log n)$, the loop runs $O(\log n)$ times, but only cases 2 and 3 involve rotations, and at most one of these is reached. $\blacksquare$
+*Proof.* The BST insert takes $O(\log n)$ time. The fix-up loop ascends the tree. Each iteration either terminates (cases 2 and 3 perform one or two rotations and terminate) or moves the problem two levels up (case 1 recolours and continues with $g$). Since the tree height is $O(\log n)$The loop runs $O(\log n)$ times, but only cases 2 and 3 involve rotations, and at most one of these is reached. $\blacksquare$
 
 <details>
 <summary>Worked Example: Red-Black Tree Insertion</summary>
@@ -145,7 +145,7 @@ Deletion is more complex than insertion. The key difficulty arises when removing
 **Algorithm outline:**
 
 1. Perform standard BST deletion. If the removed node $y$ is black, let $x$ be the node that replaces $y$ in its position. The "extra black" is pushed onto $x$.
-2. If $x$ is red-black (red with an extra black), simply colour it black.
+2. If $x$ is red-black (red with an extra black), colour it black.
 3. Otherwise, fix the "double-black" violation at $x$ using the fix-up procedure.
 
 **Fix-up cases** (let $w$ be the sibling of $x$):
@@ -154,7 +154,7 @@ Deletion is more complex than insertion. The key difficulty arises when removing
 |------|------------|---------------|-----|
 | 1 | Red | Any | Left-rotate at parent, recolour; reduces to cases 2--4 |
 | 2 | Black | Both black | Recolour $w$ red; push double-black up to parent |
-| 3 | Black | Left child red, right child black | Right-rotate at $w$, recolour children; reduces to case 4 |
+| 3 | Black | Left child red, right child black | Right-rotate at $w$Recolour children; reduces to case 4 |
 | 4 | Black | Right child red | Left-rotate at parent, recolour $w$ and parent's parent; terminate |
 
 **Theorem 1.3.** Deletion from a red-black tree with $n$ nodes takes $O(\log n)$ time and performs at most 3 rotations.
@@ -194,7 +194,7 @@ Actually, let me reconsider. When we replace 18 with 22, the structure becomes:
              26(R)
 ```
 
-Wait -- we need to handle this more carefully. Let us replace 18's key with 22's key and remove the original 22 node. Node 22 had one right child (26, red). We replace 22 with 26 and colour 26 black (since 22 was black). No double-black violation arises because 26 was red and is simply recoloured to black.
+Wait -- we need to handle this more carefully. Let us replace 18's key with 22's key and remove the original 22 node. Node 22 had one right child (26, red). We replace 22 with 26 and colour 26 black (since 22 was black). No double-black violation arises because 26 was red and is recoloured to black.
 
 ```
           7(B)
@@ -230,7 +230,7 @@ A **B-tree of minimum degree $t$** (where $t \geq 2$) is a rooted tree satisfyin
 
 **Corollary.** The height of a B-tree storing $n$ keys is $h \leq \log_t \frac{n+1}{2} = O(\log_t n)$.
 
-For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_{1001}(5 \times 10^8) \approx 2.8$, so at most 3 disk accesses.
+For example, with $t = 1001$ and $n = 10^9$$h \leq \log_{1001}(5 \times 10^8) \approx 2.8$So at most 3 disk accesses.
 
 #### 1.2.2 B-Tree Operations
 
@@ -253,7 +253,7 @@ Insert keys: 10, 20, 5, 6, 12, 30, 7, 17.
 
 *Insert 5:* Root = [5, 10, 20]. (3 keys, valid)
 
-*Insert 6:* Root = [5, 6, 10, 20]. (4 keys = $2t$, overflow!) Split: promote 6, create [5] and [10, 20].
+*Insert 6:* Root = [5, 6, 10, 20]. (4 keys = $2t$Overflow!) Split: promote 6, create [5] and [10, 20].
 
 ```
       [6]
@@ -285,7 +285,7 @@ Final B-tree:
 
 **Deletion.** Deletion from a B-tree is more complex. The key cases are:
 
-1. **Key in a leaf with excess keys** ($> t - 1$): simply remove.
+1. **Key in a leaf with excess keys** ($> t - 1$): remove.
 2. **Key in a leaf with minimum keys** ($t - 1$): try to borrow from an immediate sibling (if the sibling has $> t - 1$ keys, rotate through the parent). If no sibling can lend, merge with a sibling (this reduces the parent's key count by 1, which may cascade upward).
 3. **Key in an internal node**: replace with the predecessor (or successor), then delete the predecessor from its leaf position (which reduces to cases 1 or 2).
 
@@ -303,7 +303,7 @@ Starting from the B-tree:
 
 Delete key 12. Key 12 is in an internal node. Find predecessor: 10 (in the same node, left of 12). Replace 12 with 10, then delete 10 from its position.
 
-Wait -- actually in this B-tree, 12 is in an internal node [10, 12, 17] which is also a leaf (it has no children). So case 1 applies: [10, 12, 17] has 3 keys > $t - 1 = 1$, so simply remove 12.
+Wait -- actually in this B-tree, 12 is in an internal node [10, 12, 17] which is also a leaf (it has no children). So case 1 applies: [10, 12, 17] has 3 keys > $t - 1 = 1$So remove 12.
 
 ```
         [6, 20]
@@ -311,9 +311,9 @@ Wait -- actually in this B-tree, 12 is in an internal node [10, 12, 17] which is
     [5,7] [10,17] [30]
 ```
 
-Now delete key 20. Key 20 is in the root [6, 20]. Replace with successor: 30 (from [30]). Delete 30 from its leaf: [30] has 1 key = $t - 1$, so we need to handle carefully.
+Now delete key 20. Key 20 is in the root [6, 20]. Replace with successor: 30 (from [30]). Delete 30 from its leaf: [30] has 1 key = $t - 1$So we need to handle carefully.
 
-Actually, we replace 20 with 30, and the leaf [30] becomes []. Since [30] is now empty and its sibling [10, 17] has 2 keys > $t - 1$, we can borrow. But [10, 17] is not an immediate sibling of [30] in terms of being a child of the same parent.
+Actually, we replace 20 with 30, and the leaf [30] becomes []. Since [30] is now empty and its sibling [10, 17] has 2 keys > $t - 1$We can borrow. But [10, 17] is not an immediate sibling of [30] in terms of being a child of the same parent.
 
 Let me reconsider. The parent of [30] is the root [6, 20]. [30]'s siblings are [5, 7] and [10, 17]. The right sibling does not exist; the left sibling is [10, 17].
 
@@ -484,13 +484,13 @@ First rotate 2:
    /
   1
 ```
-becomes
+Becomes
 ```
   2
    \
     3
 ```
-Then rotate 2 again (now parent of root... wait, let me redo).
+Then rotate 2 again (now parent of root... Wait, let me redo).
 
 Initial:
 ```
@@ -662,7 +662,7 @@ Rotate 3 right: 3 becomes root, 4 goes to 3's right. 4's left was 3, so 4's left
 
 Now zig-zig on chain 3-2-1: rotate 2 (right of 3), then rotate 1 (right of 2).
 
-Rotate 2 right: 2 becomes root, 3 goes to 2's right. 3's left becomes 2's right (which is NIL... wait, 2's right subtree was the subtree between 2 and 3, which is empty). Actually, 2's right child in the tree above is NIL (2 only has left child 1). So after rotating 2 right of 3:
+Rotate 2 right: 2 becomes root, 3 goes to 2's right. 3's left becomes 2's right (which is NIL... Wait, 2's right subtree was the subtree between 2 and 3, which is empty). Actually, 2's right child in the tree above is NIL (2 only has left child 1). So after rotating 2 right of 3:
 
 ```
     2
@@ -699,7 +699,7 @@ Now 1 is left of 2, and 2 is the root. This is a **zig** case. Rotate 1 right of
           5
 ```
 
-The tree is now right-skewed again! This is because zig-zig followed by zig on a completely skewed tree simply reverses the direction of skew. The amortised analysis guarantees good performance over a sequence, but individual operations can be $O(n)$.
+The tree is now right-skewed again! This is because zig-zig followed by zig on a completely skewed tree reverses the direction of skew. The amortised analysis guarantees good performance over a sequence, but individual operations can be $O(n)$.
 </details>
 
 ## 2. Advanced Priority Queues
@@ -766,7 +766,7 @@ A **Fibonacci heap** is a collection of min-heap-ordered trees supporting:
 | Find-min | $O(1)$ | Pointer to min root |
 | Extract-min | $O(\log n)$ | Consolidate trees |
 | Decrease-key | $O(1)$ | Cut and cascade |
-| Delete | $O(\log n)$ | Decrease-key to $-\infty$, then extract-min |
+| Delete | $O(\log n)$ | Decrease-key to $-\infty$Then extract-min |
 | Union | $O(1)$ | Concatenate root lists |
 
 **Key difference from binomial heaps:** Fibonacci heaps allow trees to have any structure (not just binomial trees). Trees are only restructured during extract-min (consolidation). Decrease-key may cut a subtree from its parent and add it to the root list ("cascading cut").
@@ -779,7 +779,7 @@ A **Fibonacci heap** is a collection of min-heap-ordered trees supporting:
 
 **Theorem 2.3.** $D(n) = O(\log_\phi n)$ where $\phi = (1 + \sqrt{5})/2$ is the golden ratio.
 
-*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{terms cancel{})$, giving $O(1)$ amortised. $\blacksquare$
+*Proof (outline).* Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in potential is at most $c + 2 - 2m'(H) \cdot (\text{terms cancel{})$Giving $O(1)$ amortised. $\blacksquare$
 
 :::caution Common Pitfall
 Fibonacci heaps have excellent amortised bounds but poor constant factors in practice due to the overhead of maintaining the root list, marking nodes, and consolidation. For this reason, binary heaps (or pairing heaps) are often preferred in practice despite worse theoretical amortised bounds for decrease-key.
@@ -799,7 +799,7 @@ A **pairing heap** is a simplified alternative to Fibonacci heaps. It is a singl
 
 **Theorem 2.4.** Insert, find-min, merge, and decrease-key take $O(1)$ amortised time. Delete-min takes $O(\log n)$ amortised time.
 
-*Proof sketch.* The potential function is $\Phi = \log n$ per subtree (where $n$ is the subtree size). The key insight is that the two-pass merge of delete-min reduces the potential by at least $\log n$, absorbing the $O(n)$ work of merging. $\blacksquare$
+*Proof sketch.* The potential function is $\Phi = \log n$ per subtree (where $n$ is the subtree size). The key insight is that the two-pass merge of delete-min reduces the potential by at least $\log n$Absorbing the $O(n)$ work of merging. $\blacksquare$
 
 **Note.** Whether pairing heaps achieve $O(\log n)$ amortised delete-min was an open problem for many years. It was resolved by Iacono and Ozturk (2018) who proved $O(\log n)$ for a variant called the "original pairing heap" and gave a $\Omega(\log \log n)$ lower bound for a simpler variant.
 
@@ -811,7 +811,7 @@ The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertic
 
 $$M_{v,e} = \begin{cases} 1 & \text{if vertex {} v \text{ is incident to edge {} e \\ 0 & \text{otherwise{} \end{cases}$$
 
-For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$, $M_{v,e} = -1$ if $v$ is the head of $e$, and $0$ otherwise.
+For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$$M_{v,e} = -1$ if $v$ is the head of $e$And $0$ otherwise.
 
 **Properties:**
 
@@ -833,7 +833,7 @@ Many graphs are not stored explicitly but defined by a rule or function. Example
 
 For massive graphs that do not fit in memory:
 
-- **CSR (Compressed Sparse Row):** Two arrays: `offsets` (size $|V|+1$) and `neighbours` (size $2|E|$). `offsets[i]` to `offsets[i+1]-1` gives the range of neighbours for vertex $i$. Space: $O(V + E)$, cache-friendly.
+- **CSR (Compressed Sparse Row):** Two arrays: `offsets` (size $|V|+1$) and `neighbours` (size $2|E|$). `offsets[i]` to `offsets[i+1]-1` gives the range of neighbours for vertex $i$. Space: $O(V + E)$Cache-friendly.
 - **WebGraph framework:** Compresses web graphs using gap encoding, reference chains, and interval encoding. Achieves 2--3 bits per edge for typical web graphs.
 
 <details>
@@ -865,7 +865,7 @@ $$A_k(j) = \begin{cases} 2j & \text{if {} k = 0 \\ 0 & \text{if {} j = 0 \text{ 
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
-**Key values:** $\alpha(1) = 0$, $\alpha(2) = 1$, $\alpha(4) = 2$, $\alpha(16) = 3$, $\alpha(2^{65536}) = 4$.
+**Key values:** $\alpha(1) = 0$$\alpha(2) = 1$$\alpha(4) = 2$$\alpha(16) = 3$$\alpha(2^{65536}) = 4$.
 
 For all practical purposes, $\alpha(n) \leq 4$.
 
@@ -879,7 +879,7 @@ Define the "level" of a node based on its rank. The key idea is to partition the
 
 Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if $\text{rank{}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
 
-For a Find operation along a path $x_1, x_2, \ldots, x_k$, path compression makes all nodes point to the root. We charge the cost of the Find as follows:
+For a Find operation along a path $x_1, x_2, \ldots, x_k$Path compression makes all nodes point to the root. We charge the cost of the Find as follows:
 
 - For each node $x_i$ that is not the root, if $x_i$'s parent changes, charge $O(1)$ to $x_i$.
 - We need to show each node is charged $O(\alpha(n))$ times total.
@@ -933,7 +933,7 @@ A **segment tree** stores an array $A[1..n]$ and supports:
 <details>
 <summary>Worked Example: Segment Tree Range Sum</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Build the segment tree for range sum queries:
 
@@ -972,7 +972,7 @@ All updates take $O(\log n) = O(3)$ steps.
 
 A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree for prefix sum queries and point updates.
 
-**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{lsb{}(i) = 2^k$, then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
+**Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{lsb{}(i) = 2^k$Then `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
 
 **Operations:**
 
@@ -989,7 +989,7 @@ A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree fo
 <details>
 <summary>Worked Example: Fenwick Tree Construction</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
@@ -1049,12 +1049,12 @@ The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP{}[i] =$ the length
 
 **Theorem 6.4 (Kasai).** The LCP array can be computed from the suffix array in $O(n)$ time.
 
-**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{SA{}^{-1}[\mathrm{SA{}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j]]$, the result is at least $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j-1]] - 1$.
+**Kasai's algorithm.** Uses the inverse suffix array $\mathrm{SA{}^{-1}[\mathrm{SA{}[i]] = i$ and processes suffixes in text order. When computing $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j]]$The result is at least $\mathrm{LCP{}[\mathrm{SA{}^{-1}[j-1]] - 1$.
 
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
 
-String $S = \text{banana\${}$, $n = 7$.
+String $S = \text{banana\${}$, $N = 7$.
 
 All suffixes:
 0: banana$
@@ -1148,7 +1148,7 @@ A **treap** is a BST where each node has a key (BST property) and a **priority**
 
 **Theorem 8.1.** Split and merge in a treap take $O(\log n)$ expected time.
 
-*Proof.* Split traverses a root-to-leaf path, performing rotations. The expected depth of any node is $O(\log n)$, so the expected path length is $O(\log n)$. Merge follows a single path from the root of one treap downward. $\blacksquare$
+*Proof.* Split traverses a root-to-leaf path, performing rotations. The expected depth of any node is $O(\log n)$So the expected path length is $O(\log n)$. Merge follows a single path from the root of one treap downward. $\blacksquare$
 
 <details>
 <summary>Worked Example: Treap Insertion</summary>
@@ -1205,7 +1205,7 @@ Now check: 4's priority (0.1) < parent 3's priority (0.2). Rotate 4 up past 3.
 (1, 0.5)         (7, 0.9)
 ```
 
-Verify: BST property holds (1 < 3 < 4 < 5 < 7). Min-heap property holds (0.1 < 0.2, 0.1 < 0.7; 0.2 > 0.5... wait, 0.5 > 0.2, so the min-heap property is violated between 3 and 1).
+Verify: BST property holds (1 < 3 < 4 < 5 < 7). Min-heap property holds (0.1 < 0.2, 0.1 < 0.7; 0.2 > 0.5... Wait, 0.5 > 0.2, so the min-heap property is violated between 3 and 1).
 
 Hmm, priority 0.5 > 0.2 (parent). This violates the min-heap. So 1 should rotate up past 3.
 
@@ -1228,15 +1228,15 @@ A **weight-balanced tree** (also known as BB[$\alpha$] tree or Adelson-Velsky-La
 
 $$\frac{1}{2 - \alpha} \leq \frac{|T_L|}{|T|} \leq \frac{1}{2}$$
 
-for some fixed $\alpha \in (1/4, 1 - \sqrt{2}/2)$, where $|T_L|$ is the size of the left subtree and $|T|$ is the total size.
+For some fixed $\alpha \in (1/4, 1 - \sqrt{2}/2)$Where $|T_L|$ is the size of the left subtree and $|T|$ is the total size.
 
 **Theorem 8.2.** A weight-balanced tree with $n$ nodes has height $O(\log n)$.
 
-*Proof.* At each level, the subtree size decreases by a factor of at least $\alpha$. After $h$ levels, the minimum size is $\alpha^h n \geq 1$, giving $h \leq \log_{1/\alpha} n = O(\log n)$. $\blacksquare$
+*Proof.* At each level, the subtree size decreases by a factor of at least $\alpha$. After $h$ levels, the minimum size is $\alpha^h n \geq 1$Giving $h \leq \log_{1/\alpha} n = O(\log n)$. $\blacksquare$
 
 ### 8.3 scapegoat Trees
 
-A **scapegoat tree** is a BST where no rebalancing is done during insertion (only during deletion if needed). When an insertion causes the height to exceed $\log_{3/2} n$, the algorithm finds a "scapegoat" ancestor whose subtree is unbalanced and rebuilds it.
+A **scapegoat tree** is a BST where no rebalancing is done during insertion (only during deletion if needed). When an insertion causes the height to exceed $\log_{3/2} n$The algorithm finds a "scapegoat" ancestor whose subtree is unbalanced and rebuilds it.
 
 **Height bound.** A scapegoat tree with $n$ nodes has height at most $\log_{3/2} n$ (the "scapegoat bound").
 
@@ -1250,11 +1250,11 @@ A **scapegoat tree** is a BST where no rebalancing is done during insertion (onl
 
 **Heavy-light decomposition (HLD)** partitions a tree into paths, enabling efficient path queries (sum, max, min) and updates on trees.
 
-**Definitions.** For each node $u$, the child $v$ with the largest subtree is the **heavy child**. All other children are **light children**.
+**Definitions.** For each node $u$The child $v$ with the largest subtree is the **heavy child**. All other children are **light children**.
 
 **Property.** Every root-to-leaf path has at most $O(\log n)$ light edges.
 
-*Proof.* When traversing a light edge from $u$ to its parent $p$, the subtree size at least doubles: $|\text{subtree{}(p)| \geq 2 \cdot |\text{subtree{}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
+*Proof.* When traversing a light edge from $u$ to its parent $p$The subtree size at least doubles: $|\text{subtree{}(p)| \geq 2 \cdot |\text{subtree{}(u)|$. Since the tree has $n$ nodes, there can be at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
 
 **Algorithm:**
 
@@ -1298,18 +1298,18 @@ Heavy paths:
 Path query from 6 to 8:
 1. LCA(6, 8) = 1.
 2. From 6 to 1: 6 -- 2 (light edge). Then 2 -- 1 (light edge, since 2 is heavy child of 1, going up).
-   Actually: 6 is a light child of 2. So we jump from 6 to the top of 6's heavy path (just 6), then from 2's heavy path.
-   Segments: [6], then [5, 2, 1] (reversed: 1, 2, 5) then [8] (but 8 is under 5).
-   
-   Let me be more precise. From 6 upward:
-   - 6 is in heavy path {6}. Top = 6, parent = 2. Move to 2.
-   - 2 is in heavy path {1, 2, 5, 8}. Top = 1. Segment: [2, 5, 8]... wait, the segment from 2 to the top of the heavy path (1) is just [2] (the part from 2 up to 1).
-   
-   Actually the segment tree stores each heavy path. To go from 6 to 8:
-   - 6 to LCA = 1: segments on the path from 6 to 1.
-   - 8 to LCA = 1: segments on the path from 8 to 1.
+ Actually: 6 is a light child of 2. So we jump from 6 to the top of 6's heavy path (just 6), then from 2's heavy path.
+ Segments: [6], then [5, 2, 1] (reversed: 1, 2, 5) then [8] (but 8 is under 5).
+ 
+ Let me be more precise. From 6 upward:
+ - 6 is in heavy path {6}. Top = 6, parent = 2. Move to 2.
+ - 2 is in heavy path {1, 2, 5, 8}. Top = 1. Segment: [2, 5, 8]... Wait, the segment from 2 to the top of the heavy path (1) is just [2] (the part from 2 up to 1).
+ 
+ Actually the segment tree stores each heavy path. To go from 6 to 8:
+ - 6 to LCA = 1: segments on the path from 6 to 1.
+ - 8 to LCA = 1: segments on the path from 8 to 1.
 
-This example is simplified. In practice, HLD requires careful implementation of the `decompose`, `query`, and `update` functions.
+This example is simplified. In practice, HLD requires careful implementation of the `decompose``query`And `update` functions.
 </details>
 
 ### 9.2 Centroid Decomposition
@@ -1318,11 +1318,11 @@ This example is simplified. In practice, HLD requires careful implementation of 
 
 **Theorem 9.2.** Every tree has a centroid.
 
-*Proof.* Start at any node and move toward the heaviest subtree. The subtree size strictly decreases (since we always move away from the heaviest child). When we reach a node where no subtree exceeds $n/2$, that node is the centroid. $\blacksquare$
+*Proof.* Start at any node and move toward the heaviest subtree. The subtree size strictly decreases (since we always move away from the heaviest child). When we reach a node where no subtree exceeds $n/2$That node is the centroid. $\blacksquare$
 
 **Theorem 9.3.** Centroid decomposition has depth $O(\log n)$.
 
-*Proof.* At each level, every component has at most $n/2$ nodes. After $k$ levels, the largest component has at most $n/2^k$ nodes. When $n/2^k < 1$, the decomposition is complete, giving depth $O(\log n)$. $\blacksquare$
+*Proof.* At each level, every component has at most $n/2$ nodes. After $k$ levels, the largest component has at most $n/2^k$ nodes. When $n/2^k < 1$The decomposition is complete, giving depth $O(\log n)$. $\blacksquare$
 
 **Applications:**
 
@@ -1359,7 +1359,7 @@ Version 0: Build segment tree for [3, 1, 4, 1].
 [0]:3  [1]:1  [2]:4  [3]:1
 ```
 
-Version 1: Update $A[2] = 10$. Create new nodes on path root -> [0,1]... wait, we need [2,3] -> [2].
+Version 1: Update $A[2] = 10$. Create new nodes on path root -> [0,1]... Wait, we need [2,3] -> [2].
 
 New path: root -> [2,3] -> [2]. Create new versions of these nodes.
 
@@ -1385,7 +1385,7 @@ A **functional queue** supports enqueue and dequeue in $O(1)$ amortised time usi
 **Structure:** Two lists: `front` (for dequeue) and `rear` (for enqueue).
 
 - **enqueue:** Add to `rear`. $O(1)$.
-- **dequeue:** If `front` is empty, reverse `rear` and set `front` = reversed `rear`, clear `rear`. Then pop from `front`. $O(1)$ amortised.
+- **dequeue:** If `front` is empty, reverse `rear` and set `front` = reversed `rear`Clear `rear`. Then pop from `front`. $O(1)$ amortised.
 
 **Theorem 10.2.** The batched functional queue supports enqueue and dequeue in $O(1)$ amortised time per operation.
 
@@ -1413,9 +1413,9 @@ A **functional queue** supports enqueue and dequeue in $O(1)$ amortised time usi
 
 ### 8.3 Advanced Structures (Problems 8--11)
 
-**Problem 8.** Given an array $A = [7, 2, 5, 1, 8, 3, 6, 4]$, build a segment tree for range minimum queries. Then query $\min(A[2..5])$, update $A[3] = 0$, and query $\min(A[1..6])$.
+**Problem 8.** Given an array $A = [7, 2, 5, 1, 8, 3, 6, 4]$Build a segment tree for range minimum queries. Then query $\min(A[2..5])$Update $A[3] = 0$And query $\min(A[1..6])$.
 
-**Problem 9.** Build a Fenwick tree for the array $A = [5, 3, 7, 1, 4, 6, 2]$. Compute the prefix sum up to index 5, the range sum $A[2..6]$, and show the effect of adding 10 to $A[4]$.
+**Problem 9.** Build a Fenwick tree for the array $A = [5, 3, 7, 1, 4, 6, 2]$. Compute the prefix sum up to index 5, the range sum $A[2..6]$And show the effect of adding 10 to $A[4]$.
 
 **Problem 10.** Compute the suffix array and LCP array for the string "mississippi$". Use the result to find the longest repeated substring.
 
@@ -1464,12 +1464,12 @@ Segment tree for range minimum:
 Query $\min(A[2..5])$:
 - Root [1,8]: need [2,5]. Split.
 - Left [1,4]: need [2,4]. Split.
-  - [1,2]: need [2,2]. Split. -> [2]:2.
-  - [3,4]: contained in [2,4]. -> min=1.
-  - min so far: min(2, 1) = 1.
+ - [1,2]: need [2,2]. Split. -> [2]:2.
+ - [3,4]: contained in [2,4]. -> min=1.
+ - min so far: min(2, 1) = 1.
 - Right [5,8]: need [5,5]. Split.
-  - [5,6]: need [5,5]. Split. -> [5]:8.
-  - min so far: min(1, 8) = 1.
+ - [5,6]: need [5,5]. Split. -> [5]:8.
+ - min so far: min(1, 8) = 1.
 
 Result: $\min(A[2..5]) = 1$. Verify: $\min(2, 5, 1, 8) = 1$. Correct.
 
@@ -1489,49 +1489,49 @@ If you get this wrong, revise: Section 5.2.
 <details>
 <summary>Solution to Problem 10</summary>
 
-String: "mississippi$" ($n = 12$).
+String: "mississippi$" ($N = 12$).
 
 All suffixes (with starting index):
-0:  mississippi$
-1:  ississippi$
-2:  ssissippi$
-3:  sissippi$
-4:  issippi$
-5:  ssippi$
-6:  sippi$
-7:  ippi$
-8:  ppi$
-9:  pi$
+0: mississippi$
+1: ississippi$
+2: ssissippi$
+3: sissippi$
+4: issippi$
+5: ssippi$
+6: sippi$
+7: ippi$
+8: ppi$
+9: pi$
 10: i$
 11: $
 
 Sorted suffixes:
 11: $
 10: i$
-7:  ippi$
-4:  issippi$
-1:  ississippi$
-9:  pi$
-8:  ppi$
-6:  sippi$
-3:  sissippi$
-5:  ssippi$
-2:  ssissippi$
-0:  mississippi$
+7: ippi$
+4: issippi$
+1: ississippi$
+9: pi$
+8: ppi$
+6: sippi$
+3: sissippi$
+5: ssippi$
+2: ssissippi$
+0: mississippi$
 
 SA = [11, 10, 7, 4, 1, 9, 8, 6, 3, 5, 2, 0]
 
 LCP array:
 LCP[0] = 0
-LCP[1] = 0  (LCP("$", "i$"))
-LCP[2] = 1  (LCP("i$", "ippi$"))
-LCP[3] = 1  (LCP("ippi$", "issippi$"))
-LCP[4] = 4  (LCP("issippi$", "ississippi$"))
-LCP[5] = 0  (LCP("ississippi$", "pi$"))
-LCP[6] = 0  (LCP("pi$", "ppi$"))
-LCP[7] = 0  (LCP("ppi$", "sippi$"))
-LCP[8] = 2  (LCP("sippi$", "sissippi$"))
-LCP[9] = 2  (LCP("sissippi$", "ssippi$"))
+LCP[1] = 0 (LCP("$", "i$"))
+LCP[2] = 1 (LCP("i$", "ippi$"))
+LCP[3] = 1 (LCP("ippi$", "issippi$"))
+LCP[4] = 4 (LCP("issippi$", "ississippi$"))
+LCP[5] = 0 (LCP("ississippi$", "pi$"))
+LCP[6] = 0 (LCP("pi$", "ppi$"))
+LCP[7] = 0 (LCP("ppi$", "sippi$"))
+LCP[8] = 2 (LCP("sippi$", "sissippi$"))
+LCP[9] = 2 (LCP("sissippi$", "ssippi$"))
 LCP[10] = 4 (LCP("ssippi$", "ssissippi$"))
 LCP[11] = 1 (LCP("ssissippi$", "mississippi$"))
 
@@ -1541,3 +1541,11 @@ Longest repeated substring: "issi" (length 4) or "ssip" (length 4). Both are val
 
 If you get this wrong, revise: Section 6.3.
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

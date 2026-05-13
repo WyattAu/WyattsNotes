@@ -7,28 +7,28 @@ slug: cherry-pick
 
 `git cherry-pick` applies the **diff** introduced by a specific commit onto the current branch as a
 **brand-new commit**. It does not move or copy the original commit object — it computes the patch
-that the source commit introduced (relative to its parent), then creates a new commit on the target
-branch with that same patch applied.
+That the source commit introduced (relative to its parent), then creates a new commit on the target
+Branch with that same patch applied.
 
 This distinction is critical. The original commit and the cherry-picked commit share the same
-author, message, and diff, but they have **different SHAs** because they have different parent
-commits and (usually) different committer timestamps. They are distinct objects in the DAG.
+Author, message, and diff, but they have **different SHAs** because they have different parent
+Commits and () different committer timestamps. They are distinct objects in the DAG.
 
 ### How It Differs from Merge and Rebase
 
-| Operation     | What it does                                                 | Commit topology change                      |
+| Operation | What it does | Commit topology change |
 | ------------- | ------------------------------------------------------------ | ------------------------------------------- |
-| `merge`       | Creates a merge commit joining two branch histories          | New merge commit, preserves both histories  |
-| `rebase`      | Replays a sequence of commits onto a new base                | Rewrites all replayed commits with new SHAs |
-| `cherry-pick` | Applies one or more specific commits onto the current branch | New commits with new SHAs, no merge commit  |
+| `merge` | Creates a merge commit joining two branch histories | New merge commit, preserves both histories |
+| `rebase` | Replays a sequence of commits onto a new base | Rewrites all replayed commits with new SHAs |
+| `cherry-pick` | Applies one or more specific commits onto the current branch | New commits with new SHAs, no merge commit |
 
 Merge preserves the full topological relationship between branches. Rebase rewrites an entire
-sequence linearly. Cherry-pick is surgical — it extracts individual commits without regard to branch
-topology.
+Sequence linearly. Cherry-pick is surgical — it extracts individual commits without regard to branch
+Topology.
 
 Internally, cherry-pick operates identically to a single-step rebase. `git cherry-pick <sha>` is
-roughly equivalent to `git rebase --onto HEAD <sha>^ <sha>`. The difference is one of intent: rebase
-is for moving an entire branch, cherry-pick is for selecting individual commits.
+Roughly equivalent to `git rebase --onto HEAD <sha>^ <sha>`. The difference is one of intent: rebase
+Is for moving an entire branch, cherry-pick is for selecting individual commits.
 
 ## Basic Usage
 
@@ -49,7 +49,7 @@ a4b5c6d Add rate limiting middleware
 ```
 
 The new commit has a different SHA but the same author, author date, and commit message as the
-original.
+Original.
 
 ### Picking Multiple Commits
 
@@ -69,10 +69,10 @@ $ git cherry-pick A^..B
 
 The difference between `A..B` and `A^..B` is a common source of confusion:
 
-| Syntax  | Meaning                                        | Includes A? |
+| Syntax | Meaning | Includes A? |
 | ------- | ---------------------------------------------- | ----------- |
-| `A..B`  | Commits reachable from B, not reachable from A | No          |
-| `A^..B` | Commits from A's parent through B              | Yes         |
+| `A..B` | Commits reachable from B, not reachable from A | No |
+| `A^..B` | Commits from A's parent through B | Yes |
 
 ```bash
 # Practical example: cherry-pick everything from commit X through Y, inclusive
@@ -107,8 +107,8 @@ $ git cherry-pick -S a3f2b1c
 $ git cherry-pick --no-commit a3f2b1c
 ```
 
-The `-x` flag is worth understanding in depth. When you use `-x`, Git appends a trailer to the
-commit message:
+The `-x` flag is worth understanding in depth. When you use `-x`Git appends a trailer to the
+Commit message:
 
 ```
 Fix authentication timeout
@@ -117,8 +117,8 @@ Fix authentication timeout
 ```
 
 This creates a traceable link back to the original commit, which is valuable for auditing and for
-understanding the provenance of changes. Many organizations require `-x` in their contribution
-guidelines.
+Understanding the provenance of changes. Many organizations require `-x` in their contribution
+Guidelines.
 
 ### Reversing a Cherry-Pick
 
@@ -133,8 +133,8 @@ $ git revert a3f2b1c
 ## Conflict Handling
 
 When the target branch has changes that conflict with the patch being applied, cherry-pick halts and
-requires manual resolution. The mechanics are identical to merge conflict resolution, but the state
-file is different.
+Requires manual resolution. The mechanics are identical to merge conflict resolution, but the state
+File is different.
 
 ### The CHERRY_PICK_HEAD File
 
@@ -148,9 +148,9 @@ a3f2b1c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a
 ```
 
 This file exists for the same reason `MERGE_HEAD` exists during a merge — it tells Git (and any
-tools reading the repository) that an operation is in progress and which commit is being applied.
+Tools reading the repository) that an operation is in progress and which commit is being applied.
 Git also sets `.git/MERGE_MSG` with the commit message from the cherry-picked commit, so the message
-is preserved through conflict resolution.
+Is preserved through conflict resolution.
 
 ### Resolving Conflicts
 
@@ -190,11 +190,11 @@ $ git cherry-pick --quit
 ```
 
 The difference between `--abort` and `--quit` matters when cherry-picking multiple commits. If you
-are cherry-picking A, B, C and the conflict occurs at B:
+Are cherry-picking A, B, C and the conflict occurs at B:
 
 - `--abort`: rolls back everything, including the successful cherry-pick of A.
 - `--quit`: keeps A's cherry-pick on the branch, drops the operation entirely (B and C are not
-  applied).
+ applied).
 
 ### Skipping a Conflicting Commit
 
@@ -216,8 +216,8 @@ $ git cherry-pick --continue
 ## Cherry-Picking Merges
 
 Cherry-picking a merge commit is fundamentally different from cherry-picking a regular commit
-because a merge commit has **two parents**. Git does not know which parent's changes you want — the
-diff of a merge commit is relative to the first parent, but that may not be what you intend.
+Because a merge commit has **two parents**. Git does not know which parent's changes you want — the
+Diff of a merge commit is relative to the first parent, but that may not be what you intend.
 
 ### The `--mainline` Flag
 
@@ -230,32 +230,32 @@ $ git cherry-pick --mainline 2 a3f2b1c
 ```
 
 The `--mainline` flag tells Git which parent to use as the base when computing the diff. This
-determines what changes the merge commit "introduces":
+Determines what changes the merge commit "introduces":
 
 - `--mainline 1` (default): The diff is computed as the changes between the merge commit and its
-  first parent. This captures everything that was different in the merged branch.
+ first parent. This captures everything that was different in the merged branch.
 - `--mainline 2`: The diff is computed against the second parent, which captures the changes from
-  the first parent's branch that the merge did not include.
+ the first parent's branch that the merge did not include.
 
 ### Why Cherry-Picking Merges Is Dangerous
 
 Cherry-picking a merge commit almost never does what you want because:
 
 1. **Merge commits are semantic, not functional**. The value of a merge commit is in the topology it
-   creates — it joins two histories. The actual diff of a merge commit relative to either parent is
-   often the empty set (if the merge was a clean fast-forward equivalent) or a large combined diff
-   that includes conflict resolutions.
+ creates — it joins two histories. The actual diff of a merge commit relative to either parent is
+ often the empty set (if the merge was a clean fast-forward equivalent) or a large combined diff
+ that includes conflict resolutions.
 
 2. **Conflict resolutions are not portable**. If the merge commit required manual conflict
-   resolution, those resolutions are specific to the state of both branches at the time of the
-   merge. Applying them to a different branch context will produce incorrect results.
+ resolution, those resolutions are specific to the state of both branches at the time of the
+ merge. Applying them to a different branch context will produce incorrect results.
 
 3. **The diff may be empty or enormous**. If the merge was a trivial merge (no conflicts,
-   fast-forward equivalent), the diff against the first parent is empty. If the merge was complex,
-   the diff may include unintended changes.
+ fast-forward equivalent), the diff against the first parent is empty. If the merge was complex,
+ the diff may include unintended changes.
 
 The correct approach is to cherry-pick the individual commits from the merged branch, not the merge
-commit itself.
+Commit itself.
 
 ```bash
 # WRONG: cherry-picking a merge commit
@@ -271,14 +271,14 @@ $ git cherry-pick b1c2d3e c4d5e6f
 
 ### Decision Framework
 
-| Factor              | Use Cherry-Pick                               | Use Rebase                             |
+| Factor | Use Cherry-Pick | Use Rebase |
 | ------------------- | --------------------------------------------- | -------------------------------------- |
-| Scope               | One or a few specific commits                 | Entire branch or large sequence        |
-| Intent              | Selectively bring changes across branches     | Move a branch to a new base            |
-| Commit order        | You control which commits and in what order   | Preserves original order of the branch |
-| History cleanliness | Can create a messy DAG with scattered commits | Produces a clean linear history        |
-| Merge conflicts     | Resolve per commit                            | Resolve once per conflicting commit    |
-| Traceability        | Needs `-x` for provenance tracking            | Branch topology provides context       |
+| Scope | One or a few specific commits | Entire branch or large sequence |
+| Intent | Selectively bring changes across branches | Move a branch to a new base |
+| Commit order | You control which commits and in what order | Preserves original order of the branch |
+| History cleanliness | Can create a messy DAG with scattered commits | Produces a clean linear history |
+| Merge conflicts | Resolve per commit | Resolve once per conflicting commit |
+| Traceability | Needs `-x` for provenance tracking | Branch topology provides context |
 
 ### When to Cherry-Pick
 
@@ -308,7 +308,7 @@ $ git rebase -i main
 ```
 
 Rebase is the correct tool when you want to maintain the full history of a branch. Cherry-pick is
-correct when you need to extract specific commits without pulling in the entire branch history.
+Correct when you need to extract specific commits without pulling in the entire branch history.
 
 ### Rebase Can Replace Cherry-Pick (But Not Always)
 
@@ -321,15 +321,15 @@ $ git rebase --onto HEAD a3f2b1c^ a3f2b1c
 ```
 
 But rebase operates on the entire state of the branch. If you are on `main` and want one commit from
-`feature`, `git rebase --onto` requires you to specify the correct base and range, which is more
-error-prone than a simple cherry-pick.
+`feature``git rebase --onto` requires you to specify the correct base and range, which is more
+Error-prone than a simple cherry-pick.
 
 ## Dangers of Cherry-Pick
 
 ### Duplicate Commits
 
 Cherry-pick creates a new commit with a different SHA but the same changes. If the same commit is
-later merged through normal branch topology, Git does not detect the duplication:
+Later merged through normal branch topology, Git does not detect the duplication:
 
 ```bash
 # On main:
@@ -343,12 +343,12 @@ $ git merge feature/login
 
 This is particularly insidious because the duplicate changes may not cause an immediate conflict —
 Git applies them cleanly since the second application is a no-op for most files. But the history now
-contains two commits making the same change, which confuses code review, bisect, and blame.
+Contains two commits making the same change, which confuses code review, bisect, and blame.
 
 ### Commit Graph Divergence
 
 Cherry-pick severs the topological relationship between the source commit and its new location. The
-cherry-picked commit has no parent link to the original commit or its ancestors:
+Cherry-picked commit has no parent link to the original commit or its ancestors:
 
 ```
 Before cherry-pick:
@@ -363,26 +363,26 @@ After cherry-pick of E onto main:
 ```
 
 `E'` on `main` and `E` on `feature` have no relationship in the DAG. `git log --graph` shows them as
-unrelated commits. There is no merge base connecting them. This makes it difficult to answer "is
-this change already in main?" without manual inspection.
+Unrelated commits. There is no merge base connecting them. This makes it difficult to answer "is
+This change already in main?" without manual inspection.
 
 ### Breaking git bisect
 
 Cherry-picked commits break `git bisect` because bisect relies on a clean linear history where each
-commit represents a discrete state change. When the same logical change exists in multiple commits
-across different branches:
+Commit represents a discrete state change. When the same logical change exists in multiple commits
+Across different branches:
 
 1. Bisect may identify the cherry-picked commit as the culprit instead of the original.
 2. The original commit may be in a range that bisect never examines.
 3. If the cherry-picked commit has a slightly different context (due to conflict resolution during
-   the pick), bisect may land on a commit that does not actually compile.
+ the pick), bisect may land on a commit that does not actually compile.
 
 ### Breaking git blame
 
 `git blame` traces line changes to their most recent commit on the current branch. If a fix was
-cherry-picked, blame shows the cherry-picked commit (new SHA) rather than the original commit. This
-severs the link between the code and its original context — the PR, the code review, and the
-discussion around the original commit.
+Cherry-picked, blame shows the cherry-picked commit (new SHA) rather than the original commit. This
+Severs the link between the code and its original context — the PR, the code review, and the
+Discussion around the original commit.
 
 ```bash
 # On feature branch, commit a3f2b1c fixed a bug in line 42
@@ -398,8 +398,8 @@ d4e5f6a (Author Name 2025-06-01 42) return nil, err
 ### Losing Commit Context
 
 Commits exist within a context of surrounding changes. A commit that introduces a function may
-depend on commits that introduce its callers, its types, or its tests. Cherry-picking a commit in
-isolation may produce code that does not compile or has broken references.
+Depend on commits that introduce its callers, its types, or its tests. Cherry-picking a commit in
+Isolation may produce code that does not compile or has broken references.
 
 ```bash
 # Commit A: adds type UserSession
@@ -416,8 +416,8 @@ error: undefined: UserSession
 ### Hotfix from Release to Main
 
 The canonical cherry-pick workflow is the hotfix: a critical bug is discovered in production (on the
-release branch), fixed there, and the fix needs to be applied to main and potentially other active
-branches.
+Release branch), fixed there, and the fix needs to be applied to main and potentially other active
+Branches.
 
 ```bash
 # 1. Fix the bug on the release branch
@@ -442,7 +442,7 @@ $ git push origin main release/v2.1 release/v2.2 release/v3.0
 ```
 
 Using `-x` here is critical — it records the provenance of each cherry-picked commit, so anyone
-reading the log can trace the fix back to its origin.
+Reading the log can trace the fix back to its origin.
 
 ### Backporting a Series of Commits
 
@@ -519,8 +519,8 @@ $ git revert d4e5f6a  # The cherry-picked commit's SHA on main
 ### How Signing Interacts with Cherry-Pick
 
 When you cherry-pick a signed commit, the new commit is **not automatically signed** with the
-original author's key. The signature is part of the commit object, and the new commit is a different
-object:
+Original author's key. The signature is part of the commit object, and the new commit is a different
+Object:
 
 ```bash
 # Original signed commit on feature branch
@@ -538,12 +538,12 @@ error: no signature found
 
 If `commit.gpgsign = true` is set in your configuration, Git signs the cherry-picked commit with
 **your** key, not the original author's key. This is correct behavior — you are the committer, and
-the signature proves that you (the committer) applied this change, not that the original author did.
+The signature proves that you (the committer) applied this change, not that the original author did.
 
 ### Preserving Author Information
 
 Cherry-pick always preserves the original author name, email, and author date. It sets the committer
-to you with the current timestamp:
+To you with the current timestamp:
 
 ```bash
 $ git log --format=fuller d4e5f6a
@@ -557,7 +557,7 @@ Fix authentication timeout
 ```
 
 If you want to override the author (e.g., when cherry-picking your own commits), you can use
-environment variables:
+Environment variables:
 
 ```bash
 # Cherry-pick and override the committer date to match the author date
@@ -570,7 +570,7 @@ $ git cherry-pick --author="You <you@example.com>" a3f2b1c
 ### Signed Tags and Cherry-Pick
 
 Cherry-pick operates on commits, not tags. If you cherry-pick a commit that a signed tag points to,
-the tag is not transferred:
+The tag is not transferred:
 
 ```bash
 # Tag points to a commit on the release branch
@@ -601,14 +601,14 @@ $ git cherry-pick a3f2b1c
 ```
 
 Git detects this and skips the commit with a message indicating it was already applied. However, if
-the commit was modified by a previous merge (conflict resolution changed the content), the
-cherry-pick may produce unexpected results — a non-empty commit with changes that duplicate or
-conflict with existing code.
+The commit was modified by a previous merge (conflict resolution changed the content), the
+Cherry-pick may produce unexpected results — a non-empty commit with changes that duplicate or
+Conflict with existing code.
 
 ### Cherry-Picking Reverts
 
 A revert commit undoes the changes of its parent. Cherry-picking a revert to a different branch
-undoes changes that may not exist there, or undoes changes that were applied differently:
+Undoes changes that may not exist there, or undoes changes that were applied differently:
 
 ```bash
 # On release branch: commit A introduces a feature, commit B reverts it
@@ -620,7 +620,7 @@ $ git cherry-pick B  # Dangerous: the revert context may not match
 ### Cherry-Pick Order Matters
 
 When cherry-picking multiple commits, the order must be topologically correct. Picking a commit
-before its dependencies (commits it builds on) will produce conflicts or broken code:
+Before its dependencies (commits it builds on) will produce conflicts or broken code:
 
 ```bash
 # Commit B depends on commit A (B calls a function introduced in A)
@@ -634,31 +634,39 @@ $ git cherry-pick B
 ```
 
 Git does not enforce topological ordering during cherry-pick. It applies commits in the order you
-specify them. This is unlike rebase, which preserves the original commit order.
+Specify them. This is unlike rebase, which preserves the original commit order.
 
 ### Forgetting `-x` in Shared Repositories
 
-Without `-x`, cherry-picked commits have no traceable link to their origin. In a large team, this
-makes it impossible to answer "where did this change come from?" without manually searching the
-history of all branches. Always use `-x` when cherry-picking in a shared repository.
+Without `-x`Cherry-picked commits have no traceable link to their origin. In a large team, this
+Makes it impossible to answer "where did this change come from?" without manually searching the
+History of all branches. Always use `-x` when cherry-picking in a shared repository.
 
 ### Cherry-Picking During a Rebase
 
 You should not start a cherry-pick while a rebase is in progress. Both operations manipulate the
-branch tip and use overlapping state files. If you need to cherry-pick during a rebase, complete or
-abort the rebase first.
+Branch tip and use overlapping state files. If you need to cherry-pick during a rebase, complete or
+Abort the rebase first.
 
 ### Accumulating Technical Debt
 
 Cherry-pick is a pragmatic tool, but overuse creates hidden dependencies between branches. If branch
 A relies on cherry-picks from branch B, and branch B is later rewritten or deleted, the provenance
-of those changes is lost. Over time, the DAG becomes a web of disconnected commits with no clear
-lineage. Prefer merge or rebase for structural changes; reserve cherry-pick for true hotfixes and
-backports.
+Of those changes is lost. Over time, the DAG becomes a web of disconnected commits with no clear
+Lineage. Prefer merge or rebase for structural changes; reserve cherry-pick for true hotfixes and
+Backports.
 
 ### Not Communicating Cherry-Picks to the Team
 
-Cherry-picks are invisible in the branch topology. A merge shows up clearly in `git log --graph`. A
-cherry-pick does not. If you cherry-pick a fix to main, notify the team — especially the author of
-the original commit, who may not realize their fix is being applied elsewhere and may re-merge the
-same changes.
+Cherry-picks are invisible in the branch topology. A merge shows up in `git log --graph`. A
+Cherry-pick does not. If you cherry-pick a fix to main, notify the team — especially the author of
+The original commit, who may not realize their fix is being applied elsewhere and may re-merge the
+Same changes.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

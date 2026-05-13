@@ -61,10 +61,10 @@ Upper quartile (60th value): approximately **169 cm**.
 
 (c) Interquartile range $= 169 - 158 = 11$ cm.
 
-(d) An outlier is typically defined as a value more than $1.5 \times \text{IQR{}$ below Q1 or above Q3.
+(d) An outlier is defined as a value more than $1.5 \times \text{IQR{}$ below Q1 or above Q3.
 $1.5 \times 11 = 16.5$.
 Upper fence $= 169 + 16.5 = 185.5$ cm.
-$182 \lt 185.5$, so 182 cm is **not** an outlier.
+$182 \lt 185.5$So 182 cm is **not** an outlier.
 
 ### UT-3: Scatter Graphs and Correlation
 **Question:** A teacher records the number of hours of revision and the exam score for 10 students:
@@ -134,9 +134,9 @@ The claim of "50% longer" is **not justified**. Brand A lasts approximately 17.5
 **Solution:**
 
 (a) Class widths: 2, 3, 5, 10.
-Frequency densities: $8/2 = 4$, $15/3 = 5$, $18/5 = 3.6$, $9/10 = 0.9$.
+Frequency densities: $8/2 = 4$$15/3 = 5$$18/5 = 3.6$$9/10 = 0.9$.
 
-(b) Linear model: $C = mw + c$. When $w = 3.5$, $C = 4$: $3.5m + c = 4$. When $w = 12$, $C = 12$: $12m + c = 12$. Subtracting: $8.5m = 8$, $m = 0.941$. $c = 4 - 3.5(0.941) = 4 - 3.294 = 0.706$.
+(b) Linear model: $C = mw + c$. When $w = 3.5$$C = 4$: $3.5m + c = 4$. When $w = 12$$C = 12$: $12m + c = 12$. Subtracting: $8.5m = 8$$m = 0.941$. $c = 4 - 3.5(0.941) = 4 - 3.294 = 0.706$.
 
 $C \approx 0.94w + 0.71$ (to 2 d.p.).
 
@@ -157,9 +157,9 @@ Total $= 9 + 8 = 17$ parcels. Proportion $= 17/50 = 0.34 = 34\%$.
 (a) Total counters $= r + b = n$. $P(\text{two red{}) = \frac{r(r-1)}{n(n-1)} = \frac{1}{6}$. $P(\text{two blue{}) = \frac{b(b-1)}{n(n-1)} = \frac{1}{3}$.
 
 (b) From $P(\text{two red{})$: $6r(r-1) = n(n-1)$. From $P(\text{two blue{})$: $3b(b-1) = n(n-1)$.
-So $6r(r-1) = 3b(b-1)$, giving $2r(r-1) = b(b-1)$.
+So $6r(r-1) = 3b(b-1)$Giving $2r(r-1) = b(b-1)$.
 
-Also: $\frac{1}{6} + \frac{1}{3} + P(\text{one of each{}) = 1$, so $P(\text{one of each{}) = 1 - \frac{1}{6} - \frac{1}{3} = \frac{1}{2}$.
+Also: $\frac{1}{6} + \frac{1}{3} + P(\text{one of each{}) = 1$So $P(\text{one of each{}) = 1 - \frac{1}{6} - \frac{1}{3} = \frac{1}{2}$.
 
 $P(\text{one of each{}) = \frac{2rb}{n(n-1)} = \frac{1}{2}$.
 
@@ -171,7 +171,7 @@ $8r(r-1) = (3r-3)(3r-5) = 9r^2 - 24r + 15$.
 
 $8r^2 - 8r = 9r^2 - 24r + 15$. $r^2 - 16r + 15 = 0$. $(r-1)(r-15) = 0$.
 
-$r = 15$ (since $r = 1$ gives $b = 0$, but then $P(\text{two blue{}) = 0$, not $1/3$).
+$r = 15$ (since $r = 1$ gives $b = 0$But then $P(\text{two blue{}) = 0$Not $1/3$).
 
 $b = (45 - 3)/2 = 21$. Total $n = 36$.
 

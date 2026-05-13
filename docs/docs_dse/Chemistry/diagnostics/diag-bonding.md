@@ -22,7 +22,7 @@ hide_table_of_contents: true
 
 (a) Chlorine is the central atom. $Cl$ has 7 valence electrons; each $F$ contributes 1 for bonding. Total valence electrons = $7 + 3 \times 7 = 28$.
 
-Lewis structure: $Cl$ forms three single bonds with three $F$ atoms (using 6 electrons). Remaining electrons = $28 - 6 = 22$, i.e. 11 lone pairs. Each $F$ gets 3 lone pairs (using $3 \times 6 = 18$ electrons). Remaining on $Cl$: $22 - 18 = 4$ electrons = 2 lone pairs.
+Lewis structure: $Cl$ forms three single bonds with three $F$ atoms (using 6 electrons). Remaining electrons = $28 - 6 = 22$I.e. 11 lone pairs. Each $F$ gets 3 lone pairs (using $3 \times 6 = 18$ electrons). Remaining on $Cl$: $22 - 18 = 4$ electrons = 2 lone pairs.
 
 Electron domain geometry: **trigonal bipyramidal** (5 domains: 3 bonding pairs + 2 lone pairs).
 
@@ -45,13 +45,13 @@ In $ClF_{3}$:
 
 **Question**
 
-Consider the following molecules: $CF_{4}$, $CH_{2}F_{2}$, $CHF_{3}$.
+Consider the following molecules: $CF_{4}$$CH_{2}F_{2}$$CHF_{3}$.
 
 (a) For each molecule, determine whether the $C-F$ bond is polar. [1 mark]
 
 (b) Determine which of the three molecules is/are polar overall. Explain your reasoning using molecular geometry. [4 marks]
 
-(c) Explain why $CF_{4}$ has a boiling point of $-128\degree C$ while $CH_{2}F_{2}$ has a boiling point of $-52\degree C$, even though $CF_{4}$ has a higher molar mass. [3 marks]
+(c) Explain why $CF_{4}$ has a boiling point of $-128\degree C$ while $CH_{2}F_{2}$ has a boiling point of $-52\degree C$Even though $CF_{4}$ has a higher molar mass. [3 marks]
 
 ---
 
@@ -63,7 +63,7 @@ Consider the following molecules: $CF_{4}$, $CH_{2}F_{2}$, $CHF_{3}$.
 
 **$CHF_{3}$**: Tetrahedral geometry. Three $C-F$ dipoles point towards $F$ atoms and one $C-H$ dipole points towards $H$. The three $C-F$ dipoles have a resultant that is partially cancelled by the $C-H$ dipole, but the cancellation is **not complete** because the magnitudes differ ($C-F$ dipole $\neq C-H$ dipole). **Polar**.
 
-**$CH_{2}F_{2}$**: Tetrahedral geometry. Two $C-F$ dipoles and two $C-H$ dipoles. The resultant dipole depends on the vector sum. In $CH_{2}F_{2}$, the $C-F$ and $C-H$ bonds can be arranged such that the dipole moments do not fully cancel (the molecule has $C_{2v}$ symmetry, not $T_{d}$). **Polar**.
+**$CH_{2}F_{2}$**: Tetrahedral geometry. Two $C-F$ dipoles and two $C-H$ dipoles. The resultant dipole depends on the vector sum. In $CH_{2}F_{2}$The $C-F$ and $C-H$ bonds can be arranged such that the dipole moments do not fully cancel (the molecule has $C_{2v}$ symmetry, not $T_{d}$). **Polar**.
 
 (c) $CF_{4}$ is non-polar and only has **London dispersion forces** between molecules. $CH_{2}F_{2}$ is polar and additionally has **permanent dipole-dipole interactions** between molecules. Although $CF_{4}$ has stronger London forces (higher molar mass), the dipole-dipole interactions in $CH_{2}F_{2}$ more than compensate, giving it a significantly higher boiling point.
 
@@ -73,11 +73,11 @@ Consider the following molecules: $CF_{4}$, $CH_{2}F_{2}$, $CHF_{3}$.
 
 **Question**
 
-(a) Explain why ammonia ($NH_{3}$) has a higher boiling point ($-33\degree C$) than phosphine ($PH_{3}$, $-88\degree C$), despite phosphine having a higher molar mass. [3 marks]
+(a) Explain why ammonia ($NH_{3}$) has a higher boiling point ($-33\degree C$) than phosphine ($PH_{3}$$-88\degree C$), despite phosphine having a higher molar mass. [3 marks]
 
 (b) A student claims that hydrogen bonding exists between molecules of hydrogen chloride ($HCl$). Evaluate this claim. [2 marks]
 
-(c) Explain why water ($H_{2}O$) has a significantly higher boiling point ($100\degree C$) than hydrogen sulphide ($H_{2}S$, $-60\degree C$), even though both are Group 16 hydrides. [3 marks]
+(c) Explain why water ($H_{2}O$) has a significantly higher boiling point ($100\degree C$) than hydrogen sulphide ($H_{2}S$$-60\degree C$), even though both are Group 16 hydrides. [3 marks]
 
 ---
 
@@ -89,7 +89,7 @@ Consider the following molecules: $CF_{4}$, $CH_{2}F_{2}$, $CHF_{3}$.
 
 $PH_{3}$ cannot form hydrogen bonds because phosphorus is **not sufficiently electronegative** ($EN = 2.1$). $PH_{3}$ only has London dispersion forces and weaker dipole-dipole interactions. The hydrogen bonding in $NH_{3}$ far outweighs the stronger London forces in $PH_{3}$.
 
-(b) The claim is **incorrect**. Although $HCl$ has a polar $H-Cl$ bond, **hydrogen bonding only occurs when hydrogen is bonded to fluorine, oxygen, or nitrogen** ($F$, $O$, $N$). Chlorine is not electronegative enough ($EN = 3.0$ vs $F = 4.0$, $O = 3.5$, $N = 3.0$ -- actually $N = 3.0$ is borderline, but nitrogen's small size allows orbital overlap; chlorine is too large). $HCl$ has dipole-dipole interactions and London dispersion forces only.
+(b) The claim is **incorrect**. Although $HCl$ has a polar $H-Cl$ bond, **hydrogen bonding only occurs when hydrogen is bonded to fluorine, oxygen, or nitrogen** ($F$$O$$N$). Chlorine is not electronegative enough ($EN = 3.0$ vs $F = 4.0$$O = 3.5$$N = 3.0$ -- actually $N = 3.0$ is borderline, but nitrogen's small size allows orbital overlap; chlorine is too large). $HCl$ has dipole-dipole interactions and London dispersion forces only.
 
 (c) $H_{2}O$ can form **extensive hydrogen bonding** because:
 1. Each water molecule has **two** $O-H$ bonds (two hydrogen bond donors) and **two lone pairs** on oxygen (two hydrogen bond acceptors).
@@ -107,14 +107,14 @@ Four substances have the following properties:
 
 | Substance | Melting Point ($\degree C$) | Electrical Conductivity (solid) | Electrical Conductivity (molten) | Solubility in Water |
 |-----------|----------------------------|-------------------------------|----------------------------------|---------------------|
-| $W$       | 801                        | No                            | Yes                              | High                |
-| $X$       | 170                        | No                            | No                               | Insoluble           |
-| $Y$       | $-183$                     | No                            | No                               | Slightly soluble    |
-| $Z$       | 1085                       | Yes                           | Yes                              | Insoluble           |
+| $W$ | 801 | No | Yes | High |
+| $X$ | 170 | No | No | Insoluble |
+| $Y$ | $-183$ | No | No | Slightly soluble |
+| $Z$ | 1085 | Yes | Yes | Insoluble |
 
 (a) Identify the type of bonding in each substance. [4 marks]
 
-(b) For substance $W$, explain why it conducts electricity when molten but not when solid. [2 marks]
+(b) For substance $W$Explain why it conducts electricity when molten but not when solid. [2 marks]
 
 (c) Substance $X$ has a higher melting point than substance $Y$. Explain this difference in terms of the types of intermolecular forces present. [3 marks]
 
@@ -132,7 +132,7 @@ Four substances have the following properties:
 
 (b) In solid $W$ (ionic lattice), the ions are fixed in position and cannot move, so electricity cannot be conducted. When molten, the ionic lattice breaks down and the ions become **mobile**, allowing them to carry charge.
 
-(c) $X$ has a higher melting point than $Y$, indicating **stronger intermolecular forces**. Possible explanations:
+(c) $X$ has a higher melting point than $Y$Indicating **stronger intermolecular forces**. Possible explanations:
 - $X$ has hydrogen bonding (e.g., a molecule with $O-H$ or $N-H$ groups) while $Y$ only has London dispersion forces.
 - Alternatively, $X$ may have a larger electron cloud or greater molecular mass giving stronger London forces.
 - $X$ may have strong permanent dipole-dipole interactions that $Y$ lacks.
@@ -222,4 +222,4 @@ $$\Delta H = \text{Bonds broken} - \text{Bonds formed} = 2620 - 3032 = -412 \tex
 
 The reaction is exothermic.
 
-(c) In $F_{2}$, the fluorine atoms are very small, so the two bonding electrons are very close together and experience strong **inter-electronic repulsion**. In $Cl_{2}$, the chlorine atoms are larger, so the bonding electrons are further apart and the repulsion is weaker. The small size of fluorine also means the lone pairs on each $F$ atom are close to the bonding region, creating additional **lone pair-bond pair repulsion** that weakens the $F-F$ bond.
+(c) In $F_{2}$The fluorine atoms are very small, so the two bonding electrons are very close together and experience strong **inter-electronic repulsion**. In $Cl_{2}$The chlorine atoms are larger, so the bonding electrons are further apart and the repulsion is weaker. The small size of fluorine also means the lone pairs on each $F$ atom are close to the bonding region, creating additional **lone pair-bond pair repulsion** that weakens the $F-F$ bond.

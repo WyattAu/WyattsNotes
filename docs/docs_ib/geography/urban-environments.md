@@ -82,7 +82,7 @@ All three classical urban models were developed based on cities in high-income c
 
 ### Megacities
 
-A megacity is typically defined as a city with a population exceeding 10 million. As of 2023, there are 33 megacities worldwide, the majority of which are in Asia and Africa. The largest megacities are Tokyo (37 million), Delhi (33 million), Shanghai (29 million), Dhaka (23 million), and Sao Paulo (22 million).
+A megacity is defined as a city with a population exceeding 10 million. As of 2023, there are 33 megacities worldwide, the majority of which are in Asia and Africa. The largest megacities are Tokyo (37 million), Delhi (33 million), Shanghai (29 million), Dhaka (23 million), and Sao Paulo (22 million).
 
 **Characteristics of megacities:**
 
@@ -284,4 +284,16 @@ Urban waste generation is increasing globally, driven by rising consumption and 
 4. **Recovery:** extracting energy from waste through incineration or anaerobic digestion
 5. **Disposal:** landfill (the least preferred option; methane emissions, leachate contamination, land consumption)
 
-Developed countries typically rely on recycling and incineration; many developing countries depend on open dumping and open burning, with severe environmental and health consequences. Informal waste pickers play a critical role in recycling in many developing-country cities but often work under hazardous conditions and receive low prices for recovered materials.
+Developed countries rely on recycling and incineration; many developing countries depend on open dumping and open burning, with severe environmental and health consequences. Informal waste pickers play a critical role in recycling in many developing-country cities but often work under hazardous conditions and receive low prices for recovered materials.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

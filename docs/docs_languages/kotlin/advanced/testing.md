@@ -71,7 +71,7 @@ class UserServiceTest {
 
 ### Assertion Libraries
 
-Kotlin provides its own assertion functions via `kotlin-test`, which work with any test framework.
+Kotlin provides its own assertion functions via `kotlin-test`Which work with any test framework.
 
 ```kotlin
 import kotlin.test.assertEquals
@@ -144,8 +144,8 @@ class StackTest {
 ## MockK
 
 MockK is the primary mocking library for Kotlin. It handles `final` classes (Kotlin classes are
-final by default), coroutines, object singletons, and companion objects -- all of which are
-problematic for Mockito.
+Final by default), coroutines, object singletons, and companion objects -- all of which are
+Problematic for Mockito.
 
 ### Basic Mocking
 
@@ -179,7 +179,7 @@ class OrderServiceTest {
 ### Relaxed Mocks
 
 A relaxed mock returns default values for all function calls without explicit stubbing. Useful when
-you only care about verifying specific interactions.
+You only care about verifying specific interactions.
 
 ```kotlin
 val repository = mockk<Repository>(relaxed = true)
@@ -319,7 +319,7 @@ fun `directions other than north`(direction: Direction) {
 ## Property-Based Testing with jqwik
 
 Property-based testing verifies that properties hold across a wide range of randomly generated
-inputs, rather than testing specific examples.
+Inputs, rather than testing specific examples.
 
 ```kotlin
 import net.jqwik.api.ForAll
@@ -371,7 +371,7 @@ class StringProperties {
 
 When jqwik finds a failing case, it automatically shrinks the input to the smallest failing example.
 For example, if a list of 100 elements triggers a failure, jqwik will try smaller lists to find the
-minimal failing input.
+Minimal failing input.
 
 ## Test Fixtures
 
@@ -431,7 +431,7 @@ class UserRepositoryTest {
 ```
 
 `runTest` provides control over virtual time -- `delay()` advances the virtual clock without actual
-waiting.
+Waiting.
 
 ```kotlin
 @Test
@@ -447,14 +447,22 @@ fun `timeout fires after delay`() = runTest {
 ## Common Pitfalls
 
 - \*\* Using Mockito with Kotlin classes. Mockito cannot mock final classes or `object` declarations
-  without the `mockito-inline` extension. Use MockK instead.
+ without the `mockito-inline` extension. Use MockK instead.
 - \*\* Forgetting `runTest` for coroutine tests. Calling suspend functions from a regular `@Test`
-  function requires a coroutine scope.
+ function requires a coroutine scope.
 - \*\* Not cleaning up mocks in `@AfterEach` or `@AfterAll`. Use `unmockkAll()` or `unmockkObject()`
-  to prevent mock state from leaking between tests.
+ to prevent mock state from leaking between tests.
 - \*\* Using `assertEquals` for data classes without understanding structural equality. Data classes
-  implement `equals()` structurally, so `assertEquals` compares all properties. This is correct but
-  may mask changes to unrelated fields.
+ implement `equals()` structurally, so `assertEquals` compares all properties. This is correct but
+ may mask changes to unrelated fields.
 - \*\* Over-relying on relaxed mocks. Relaxed mocks return default values for all interactions,
-  which means you may not notice when the code under test calls methods you did not expect. Use
-  strict mocks by default and relax only when necessary.
+ which means you may not notice when the code under test calls methods you did not expect. Use
+ strict mocks by default and relax only when necessary.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

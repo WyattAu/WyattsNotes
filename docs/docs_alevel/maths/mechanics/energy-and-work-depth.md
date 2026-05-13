@@ -9,11 +9,11 @@ slug: energy-and-work-extended
 ## Energy and Work (Extended Treatment)
 
 This document provides a thorough treatment of the work-energy principle, power, conservation of
-energy, and elastic potential energy with proofs and applications.
+Energy, and elastic potential energy with proofs and applications.
 
 :::info
 Energy methods often provide elegant shortcuts in mechanics problems. Where a Newton's-law approach
-requires solving differential equations, an energy approach may give the answer in a single step.
+Requires solving differential equations, an energy approach may give the answer in a single step.
 :::
 
 <hr />
@@ -27,7 +27,7 @@ $\mathbf{s}$ is:
 
 $$W = \mathbf{F} \cdot \mathbf{s} = Fs\cos\theta$$
 
-where $\theta$ is the angle between the force and the displacement.
+Where $\theta$ is the angle between the force and the displacement.
 
 The SI unit of work is the joule ($\mathrm{J} = \mathrm{Nm}$). Work is a **scalar** quantity.
 
@@ -42,8 +42,8 @@ For a variable force in one dimension:
 
 $$W = \int_{x_1}^{x_2} F\,dx$$
 
-**Proof.** For a small displacement $\delta x$, the work done is approximately $F\,\delta x$. In the
-limit as $\delta x \to 0$:
+**Proof.** For a small displacement $\delta x$The work done is approximately $F\,\delta x$. In the
+Limit as $\delta x \to 0$:
 
 $$W = \lim_{\delta x \to 0} \sum F\,\delta x = \int_{x_1}^{x_2} F\,dx \quad \blacksquare$$
 
@@ -68,8 +68,8 @@ Friction is a **non-conservative** force. The work done by friction depends on t
 
 $$W_{\mathrm{friction}} = -\mu R \times d$$
 
-where $d$ is the total distance travelled along the surface (not the displacement). Friction always
-does negative work (it opposes motion), so it always removes energy from the system.
+Where $d$ is the total distance travelled along the surface (not the displacement). Friction always
+Does negative work (it opposes motion), so it always removes energy from the system.
 
 <hr />
 
@@ -101,7 +101,7 @@ This is the **work-energy theorem**. $\blacksquare$
 
 **Problem.** A car of mass $1200\;\mathrm{kg}$ accelerates from $15\;\mathrm{m\,s^{-1}}$ to
 $25\;\mathrm{m\,s^{-1}}$ over a distance of $200\;\mathrm{m}$ on a level road. Find the average
-driving force, given that the total resistance to motion is $400\;\mathrm{N}$.
+Driving force, given that the total resistance to motion is $400\;\mathrm{N}$.
 
 Work-energy theorem:
 
@@ -118,7 +118,7 @@ $$F - 400 = 1200 \implies F = 1600\;\mathrm{N}$$
 ### 3.1 Definition
 
 The **gravitational potential energy** of a body of mass $m$ at height $h$ above a reference level
-is:
+Is:
 
 $$\boxed{\mathrm{GPE} = mgh}$$
 
@@ -127,7 +127,7 @@ This is valid near the Earth's surface where $g$ is approximately constant.
 ### 3.2 Reference level
 
 The choice of reference level (where $\mathrm{GPE} = 0$) is arbitrary. Only **changes** in GPE
-have physical significance:
+Have physical significance:
 
 $$\Delta\mathrm{GPE} = mg\Delta h$$
 
@@ -138,7 +138,7 @@ $$\Delta\mathrm{GPE} = mg\Delta h$$
 ### 4.1 Statement
 
 The **work-energy principle** states that the work done by the resultant force on a body equals the
-change in its kinetic energy:
+Change in its kinetic energy:
 
 $$W_{\mathrm{net}} = \Delta\mathrm{KE}$$
 
@@ -186,7 +186,7 @@ $$\mathrm{KE} + \mathrm{GPE} + \mathrm{EPE} = \mathrm{constant}$$
 
 **Problem.** A simple pendulum has a bob of mass $0.5\;\mathrm{kg}$ on a string of length $1.5\;\mathrm{m}$.
 It is released from rest when the string makes an angle of $40^\circ$ with the vertical. Find the
-speed of the bob at the lowest point, neglecting air resistance.
+Speed of the bob at the lowest point, neglecting air resistance.
 
 Height gain: $h = 1.5 - 1.5\cos 40^\circ = 1.5(1 - \cos 40^\circ) \approx 1.5(1 - 0.766) = 0.351\;\mathrm{m}$.
 
@@ -198,10 +198,10 @@ $$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 0.351◆RB◆ = \sqrt{6.88} 
 
 ### 5.3 Worked example: roller coaster
 
-**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point $A$, $30\;\mathrm{m}$
-above the ground. It descends to point $B$ at ground level, then rises to point $C$ at $20\;\mathrm{m}$
-above ground. The average frictional force is $200\;\mathrm{N}$ and the total track length from $A$
-to $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
+**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point $A$$30\;\mathrm{m}$
+Above the ground. It descends to point $B$ at ground level, then rises to point $C$ at $20\;\mathrm{m}$
+Above ground. The average frictional force is $200\;\mathrm{N}$ and the total track length from $A$
+To $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
 
 $$\mathrm{GPE}_A + \mathrm{KE}_A = \mathrm{GPE}_C + \mathrm{KE}_C + W_{\mathrm{friction}}$$
 
@@ -212,10 +212,10 @@ $$147000 = 98000 + 250v^2 + 60000$$
 $$250v^2 = 147000 - 158000 = -11000$$
 
 Since $250v^2$ cannot be negative, the car **cannot** reach point $C$. It comes to rest before
-reaching $C$.
+Reaching $C$.
 
-Let us find how far along the track it travels before stopping (let this be $d$ metres from $A$,
-at height $h$):
+Let us find how far along the track it travels before stopping (let this be $d$ metres from $A$
+At height $h$):
 
 $$500g(30) = 500gh + 200d$$
 
@@ -225,7 +225,7 @@ This illustrates the importance of knowing the track geometry.
 :::warning
 Common Pitfall
 The work-energy principle gives the change in kinetic energy, not the velocity directly. Remember
-to take the square root to find speed, and always check that the result is physically meaningful
+To take the square root to find speed, and always check that the result is physically meaningful
 (i.e., the quantity under the square root must be non-negative).
 :::
 
@@ -255,9 +255,9 @@ For motion in one dimension: $P = Fv$. $\blacksquare$
 
 **Problem.** A car of mass $1000\;\mathrm{kg}$ has an engine that produces a constant power of
 $40\;\mathrm{kW}$. The resistance to motion is $800\;\mathrm{N}$. Find the maximum speed of the car
-on a level road and the acceleration when the speed is $15\;\mathrm{m\,s^{-1}}$.
+On a level road and the acceleration when the speed is $15\;\mathrm{m\,s^{-1}}$.
 
-**Maximum speed:** At maximum speed, acceleration $= 0$, so driving force $=$ resistance.
+**Maximum speed:** At maximum speed, acceleration $= 0$So driving force $=$ resistance.
 
 $$P = Fv_{\max} = Rv_{\max}$$
 
@@ -274,7 +274,7 @@ $$2666.7 - 800 = 1000a \implies a = 1.867\;\mathrm{m\,s^{-2}}$$
 ### 6.4 Worked example: car on an incline
 
 **Problem.** A car of mass $800\;\mathrm{kg}$ travels up a hill inclined at $\sin^{-1}(0.05)$ to
-the horizontal. The engine works at a constant $30\;\mathrm{kW}$ and the resistance is $300\;\mathrm{N}$.
+The horizontal. The engine works at a constant $30\;\mathrm{kW}$ and the resistance is $300\;\mathrm{N}$.
 Find the maximum speed.
 
 At maximum speed: driving force $= 300 + 800g\sin\alpha = 300 + 800(9.8)(0.05) = 300 + 392 = 692\;\mathrm{N}$.
@@ -288,15 +288,15 @@ $$v_{\max} = \frac{P}{F} = \frac{30000}{692} \approx 43.4\;\mathrm{m\,s^{-1}}$$
 ### 7.1 Hooke's Law
 
 For an elastic spring (or string) that obeys **Hooke's Law**, the tension (or thrust) is
-proportional to the extension:
+Proportional to the extension:
 
 $$T = kx$$
 
-where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
-in metres.
+Where $k$ is the **stiffness** (or spring constant) in $\mathrm{N\,m^{-1}}$ and $x$ is the extension
+In metres.
 
 Alternatively, $T = \dfrac◆LB◆\lambda x◆RB◆◆LB◆l◆RB◆$ where $\lambda$ is the **modulus of elasticity** and $l$
-is the natural length.
+Is the natural length.
 
 ### 7.2 Elastic potential energy
 
@@ -315,7 +315,7 @@ This work is stored as elastic potential energy. $\blacksquare$
 **Problem.** A light elastic string of natural length $1.2\;\mathrm{m}$ and modulus of elasticity
 $60\;\mathrm{N}$ has one end fixed and a particle of mass $2\;\mathrm{kg}$ attached to the other.
 The particle is released from rest at the point where the string is just taut. Find the maximum
-extension and the maximum speed.
+Extension and the maximum speed.
 
 Let $x$ be the extension below the natural length position.
 
@@ -346,10 +346,10 @@ $$v^2 = 3.841 \implies v \approx 1.96\;\mathrm{m\,s^{-1}}$$
 ### 7.4 Worked example: two elastic strings
 
 **Problem.** A particle of mass $3\;\mathrm{kg}$ is attached to two elastic strings. One string has
-natural length $0.8\;\mathrm{m}$ and modulus $40\;\mathrm{N}$, and is fixed at a point $A$. The other
-has natural length $1.0\;\mathrm{m}$ and modulus $50\;\mathrm{N}$, and is fixed at a point $B$. The
-distance $AB$ is $3\;\mathrm{m}$. The particle hangs in equilibrium. Find the distance of the particle
-from $A$.
+Natural length $0.8\;\mathrm{m}$ and modulus $40\;\mathrm{N}$And is fixed at a point $A$. The other
+Has natural length $1.0\;\mathrm{m}$ and modulus $50\;\mathrm{N}$And is fixed at a point $B$. The
+Distance $AB$ is $3\;\mathrm{m}$. The particle hangs in equilibrium. Find the distance of the particle
+From $A$.
 
 Let the particle be at distance $d$ from $A$ (and $3 - d$ from $B$).
 
@@ -371,21 +371,21 @@ $$50d - 40 + 100 - 50d = 29.4$$
 $$60 = 29.4$$
 
 This is a contradiction, which means the particle does not hang directly below the line $AB$ in a
-simple 1D configuration, or one of the strings is slack. If string $A$ is slack, then $d \leq 0.8$:
+Simple 1D configuration, or one of the strings is slack. If string $A$ is slack, then $d \leq 0.8$:
 
 $$T_B = 3g \implies \frac{50(2 - d)}{1.0} = 29.4 \implies 2 - d = 0.588 \implies d = 1.412$$
 
-But $d = 1.412 \gt 0.8$, contradicting $d \leq 0.8$. If string $B$ is slack ($d \geq 2$):
+But $d = 1.412 \gt 0.8$Contradicting $d \leq 0.8$. If string $B$ is slack ($d \geq 2$):
 
 $$T_A = 3g \implies 50(d - 0.8) = 29.4 \implies d = 1.388\;\mathrm{m}$$
 
-But $1.388 \lt 2$, contradiction. This problem needs a 2D treatment with the particle hanging below
-the line, with both strings at angles.
+But $1.388 \lt 2$Contradiction. This problem needs a 2D treatment with the particle hanging below
+The line, with both strings at angles.
 
 :::warning
-warning
+Warning
 Elastic potential energy problems often require careful consideration of whether strings are taut or
-slack at different points in the motion. Always check the assumptions about extensions at each stage.
+Slack at different points in the motion. Always check the assumptions about extensions at each stage.
 :::
 
 <hr />
@@ -395,8 +395,8 @@ slack at different points in the motion. Always check the assumptions about exte
 ### Problem 1
 
 A crate of mass $50\;\mathrm{kg}$ is pushed $12\;\mathrm{m}$ up a rough ramp inclined at $15^\circ$
-to the horizontal by a force of $300\;\mathrm{N}$ acting parallel to the ramp. The coefficient of
-friction is $0.25$. Find the speed of the crate at the top if it starts from rest.
+To the horizontal by a force of $300\;\mathrm{N}$ acting parallel to the ramp. The coefficient of
+Friction is $0.25$. Find the speed of the crate at the top if it starts from rest.
 
 <details>
 <summary>Solution</summary>
@@ -416,8 +416,8 @@ $\frac{1}{2}(50)v^2 = 659.3 \implies v = \sqrt{26.37} \approx 5.14\;\mathrm{m\,s
 ### Problem 2
 
 A light elastic spring of natural length $0.5\;\mathrm{m}$ and stiffness $200\;\mathrm{N\,m^{-1}}$
-is compressed by $0.1\;\mathrm{m}$ and used to launch a particle of mass $0.4\;\mathrm{kg}$
-vertically upward from ground level. Find the maximum height reached by the particle.
+Is compressed by $0.1\;\mathrm{m}$ and used to launch a particle of mass $0.4\;\mathrm{kg}$
+Vertically upward from ground level. Find the maximum height reached by the particle.
 
 <details>
 <summary>Solution</summary>
@@ -435,8 +435,8 @@ Note: this neglects the spring's own mass and any energy lost during the launch 
 ### Problem 3
 
 A car of mass $900\;\mathrm{kg}$ travels at constant speed $20\;\mathrm{m\,s^{-1}}$ up a hill
-inclined at $\sin^{-1}(0.08)$ to the horizontal. The resistance is $250\;\mathrm{N}$. Find the power
-developed by the engine.
+Inclined at $\sin^{-1}(0.08)$ to the horizontal. The resistance is $250\;\mathrm{N}$. Find the power
+Developed by the engine.
 
 <details>
 <summary>Solution</summary>
@@ -450,18 +450,18 @@ $P = Fv = 955.6 \times 20 = 19112\;\mathrm{W} \approx 19.1\;\mathrm{kW}$.
 ### Problem 4
 
 A particle of mass $4\;\mathrm{kg}$ is attached to one end of a light elastic string of natural
-length $1.5\;\mathrm{m}$ and modulus $80\;\mathrm{N}$. The other end is fixed. The particle is held
-at a point $2.5\;\mathrm{m}$ below the fixed point and released from rest. Find: (a) the speed when
-the string first becomes slack; (b) the maximum height above the release point.
+Length $1.5\;\mathrm{m}$ and modulus $80\;\mathrm{N}$. The other end is fixed. The particle is held
+At a point $2.5\;\mathrm{m}$ below the fixed point and released from rest. Find: (a) the speed when
+The string first becomes slack; (b) the maximum height above the release point.
 
 <details>
 <summary>Solution</summary>
 
-(a) At the release point, extension $= 1.0\;\mathrm{m}$, so EPE $= \dfrac{80(1.0)^2}{2(1.5)} = 26.67\;\mathrm{J}$.
+(a) At the release point, extension $= 1.0\;\mathrm{m}$So EPE $= \dfrac{80(1.0)^2}{2(1.5)} = 26.67\;\mathrm{J}$.
 GPE (taking release point as reference) $= 0$. KE $= 0$.
 
 When the string becomes slack, the particle is at the natural length position, i.e. $1.0\;\mathrm{m}$
-above the release point.
+Above the release point.
 
 GPE gained $= 4g(1.0) = 39.2\;\mathrm{J}$.
 
@@ -470,12 +470,12 @@ Energy conservation: $26.67 = \frac{1}{2}(4)v^2 + 39.2$.
 $\frac{1}{2}(4)v^2 = 26.67 - 39.2 = -12.53$.
 
 Since this is negative, the string **never becomes slack** -- the particle oscillates without the
-string going slack. Let us verify: for the string to go slack, EPE $\gt$ GPE gain at natural length.
+String going slack. Let us verify: for the string to go slack, EPE $\gt$ GPE gain at natural length.
 
-$26.67 \lt 39.2$, so indeed the string remains taut.
+$26.67 \lt 39.2$So indeed the string remains taut.
 
 (b) At the lowest point (maximum extension), $v = 0$. The particle oscillates between two points
-where all energy is EPE $+$ GPE. At the lowest point, all initial energy $+$ GPE lost $=$ EPE.
+Where all energy is EPE $+$ GPE. At the lowest point, all initial energy $+$ GPE lost $=$ EPE.
 
 $26.67 + 4gx = \frac{80x^2}{3}$ where $x$ is the additional extension beyond $1.0\;\mathrm{m}$.
 Total extension $= 1.0 + x$.
@@ -489,6 +489,18 @@ $26.67x^2 + 42.4x = 0 \implies x(26.67x + 42.4) = 0$
 $x = 0$ (the initial position) or $x = -1.59$ (not physically meaningful for extension).
 
 This confirms the particle returns to its starting point. The motion is simple harmonic about the
-equilibrium position.
+Equilibrium position.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

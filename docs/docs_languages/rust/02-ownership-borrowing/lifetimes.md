@@ -7,8 +7,8 @@ slug: lifetimes
 ## Why Lifetimes Exist
 
 Rust's borrow checker must ensure that every reference is valid for its entire use. Without lifetime
-annotations, the compiler cannot prove that a reference outlives the scope in which it is used. This
-prevents dangling references — references to memory that has been freed or invalidated.
+Annotations, the compiler cannot prove that a reference outlives the scope in which it is used. This
+Prevents dangling references — references to memory that has been freed or invalidated.
 
 Consider the canonical dangling reference attempt:
 
@@ -19,19 +19,19 @@ fn dangle() -> &String {
 }
 ```
 
-The compiler rejects this because `s` is dropped at the end of `dangle`, but the function promises
-to return a reference. The returned reference would point to freed memory. Lifetimes are the
-mechanism by which the compiler tracks and enforces this constraint.
+The compiler rejects this because `s` is dropped at the end of `dangle`But the function promises
+To return a reference. The returned reference would point to freed memory. Lifetimes are the
+Mechanism by which the compiler tracks and enforces this constraint.
 
 Every reference in Rust has a lifetime — a region of code during which the reference is valid. In
-most cases, the compiler infers lifetimes automatically. Explicit annotations are needed when the
-relationship between input and output lifetimes is ambiguous.
+Most cases, the compiler infers lifetimes automatically. Explicit annotations are needed when the
+Relationship between input and output lifetimes is ambiguous.
 
 ## Lifetime Annotation Syntax
 
 Lifetimes use a leading apostrophe followed by a name. By convention, `'a` is the first lifetime,
 `'b` the second, and so on. The name is purely a compile-time label — it has no runtime
-representation.
+Representation.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -40,8 +40,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```
 
 This signature says: "there exists some lifetime `'a` such that both `x` and `y` live at least as
-long as `'a`, and the returned reference also lives at least as long as `'a`." The caller chooses
-the concrete lifetime, constrained by the actual lifetimes of the arguments.
+Long as `'a`And the returned reference also lives at least as long as `'a`." The caller chooses
+The concrete lifetime, constrained by the actual lifetimes of the arguments.
 
 ```rust
 let result;
@@ -65,14 +65,14 @@ fn first<'a, 'b>(x: &'a str, _y: &'b str) -> &'a str {
 ```
 
 The return type's lifetime is tied only to `'a`. The compiler does not require `'a` and `'b` to have
-any relationship — they are independent.
+Any relationship — they are independent.
 
 ## Function Lifetimes
 
 ### Input Lifetime Binding
 
 The relationship between input and output lifetimes determines how references flow through a
-function:
+Function:
 
 ```rust
 // Output lives as long as x
@@ -105,9 +105,9 @@ let s: &str = "hello";  // &'static is inferred for literals
 :::warning
 
 Do not annotate function parameters with `'static` unless the function truly requires a `'static`
-reference. Adding `'static` constraints reduces the function's flexibility — callers can no longer
-pass locally-owned string slices. The compiler may suggest `'static` when it cannot infer a shorter
-lifetime, but this is often a sign that the function signature needs redesign.
+Reference. Adding `'static` constraints reduces the function's flexibility — callers can no longer
+Pass locally-owned string slices. The compiler may suggest `'static` when it cannot infer a shorter
+Lifetime, but this is often a sign that the function signature needs redesign.
 
 :::
 
@@ -162,7 +162,7 @@ let pair = Pair {
 ### Lifetime Bounds on Struct Definitions
 
 When a struct has a lifetime parameter and also holds a type that references that lifetime, you may
-need a lifetime bound:
+Need a lifetime bound:
 
 ```rust
 struct Container<'a, T: 'a> {
@@ -170,8 +170,8 @@ struct Container<'a, T: 'a> {
 }
 ```
 
-The bound `T: 'a` says "T must outlive `'a`." This is automatically added in many cases by the
-compiler, but you may need to write it explicitly for complex generic constraints.
+The bound `T: 'a` says "T must outlive `'a`." This is automatically added by the
+Compiler, but you may need to write it explicitly for complex generic constraints.
 
 ## Method Lifetimes
 
@@ -179,7 +179,7 @@ compiler, but you may need to write it explicitly for complex generic constraint
 
 When implementing methods on a struct with a lifetime parameter, the compiler automatically assigns
 `&self`'s lifetime to all output lifetime parameters (elision rule 3). This means you rarely need
-explicit lifetime annotations on methods:
+Explicit lifetime annotations on methods:
 
 ```rust
 impl<'a> Excerpt<'a> {
@@ -216,7 +216,7 @@ impl<'a> Excerpt<'a> {
 ## Lifetime Elision Rules
 
 The compiler applies three rules to infer lifetimes. If after applying all three rules, the compiler
-still cannot determine lifetimes, it errors.
+Still cannot determine lifetimes, it errors.
 
 ### Rule 1: Each Reference Gets Its Own Lifetime
 
@@ -231,7 +231,7 @@ fn foo(x: &i32, y: &mut i32)  →  fn foo<'a, 'b>(x: &'a i32, y: &'b mut i32)
 ### Rule 2: Single Input Lifetime
 
 If there is exactly one input lifetime parameter, that lifetime is assigned to all output
-parameters:
+Parameters:
 
 ```rust
 fn foo(x: &str) -> &str    →  fn foo<'a>(x: &'a str) -> &'a str
@@ -240,8 +240,8 @@ fn foo(x: &str) -> (&str, &str)  →  fn foo<'a>(x: &'a str) -> (&'a str, &'a st
 
 ### Rule 3: `&self` or `&mut self` Lifetime
 
-If there are multiple input lifetime parameters but one of them is `&self` or `&mut self`, the
-lifetime of `self` is assigned to all output parameters:
+If there are multiple input lifetime parameters but one of them is `&self` or `&mut self`The
+Lifetime of `self` is assigned to all output parameters:
 
 ```rust
 impl Foo {
@@ -267,7 +267,7 @@ fn merge<'a>(x: &'a str, y: &'a str) -> &'a str {
 ## Lifetime Bounds
 
 Lifetimes can have bounds, just like type parameters. The syntax `'a: 'b` means "a outlives b" — the
-reference with lifetime `'a` must live at least as long as `'b`:
+Reference with lifetime `'a` must live at least as long as `'b`:
 
 ```rust
 // 'a must outlive 'b
@@ -303,18 +303,18 @@ where
 ```
 
 The `T: 'a` bound ensures that `T` does not contain references shorter than `'a`. This is necessary
-because the trait object might reference data with lifetime `'a`.
+Because the trait object might reference data with lifetime `'a`.
 
 ## Lifetime Variance
 
 Variance determines whether a longer lifetime can be substituted for a shorter one. This is critical
-for writing correct generic code.
+For writing correct generic code.
 
 ### Covariance
 
-`&'a T` is covariant in `'a`. If `'long: 'short`, then `&'long T` can be used where `&'short T` is
-expected. This is safe because a longer-lived reference is a subtype of a shorter-lived one when you
-only read through it:
+`&'a T` is covariant in `'a`. If `'long: 'short`Then `&'long T` can be used where `&'short T` is
+Expected. This is safe because a longer-lived reference is a subtype of a shorter-lived one when you
+Only read through it:
 
 ```rust
 fn takes_short<'a>(r: &'a str) {}
@@ -325,8 +325,8 @@ takes_short(long);  // OK — 'static can be shortened to 'a
 
 ### Contravariance
 
-Function types are contravariant in their argument lifetimes. If `'short: 'long`, then a function
-expecting a `'long` reference can be used where a function expecting a `'short` reference is needed:
+Function types are contravariant in their argument lifetimes. If `'short: 'long`Then a function
+Expecting a `'long` reference can be used where a function expecting a `'short` reference is needed:
 
 ```rust
 fn apply<'a, F>(f: F, arg: &'a str)
@@ -341,8 +341,8 @@ where
 
 `&mut T` is invariant in both `'a` and `T`. You cannot substitute a `&'long mut T` where a
 `&'short mut T` is expected. This prevents soundness issues where a mutable reference to a
-shorter-lived value could be used to write a longer-lived reference, extending its validity beyond
-its scope:
+Shorter-lived value could be used to write a longer-lived reference, extending its validity beyond
+Its scope:
 
 ```rust
 fn takes_short_mut<'a>(r: &'a mut i32) {
@@ -356,20 +356,20 @@ let r: &'static mut i32 = unsafe { &mut *Box::into_raw(Box::new(x)) };
 
 ### Variance Summary
 
-| Type             | Variance in `'a` | Variance in `T` |
+| Type | Variance in `'a` | Variance in `T` |
 | ---------------- | ---------------- | --------------- |
-| `&'a T`          | Covariant        | Covariant       |
-| `&'a mut T`      | Invariant        | Invariant       |
-| `Box&lt;T&gt;`   | —                | Covariant       |
-| `Cell&lt;T&gt;`  | —                | Invariant       |
-| `fn(&'a T) -> R` | Contravariant    | Contravariant   |
-| `fn(T) -> &'a R` | Covariant        | Covariant       |
+| `&'a T` | Covariant | Covariant |
+| `&'a mut T` | Invariant | Invariant |
+| `Box&lt;T&gt;` | — | Covariant |
+| `Cell&lt;T&gt;` | — | Invariant |
+| `fn(&'a T) -> R` | Contravariant | Contravariant |
+| `fn(T) -> &'a R` | Covariant | Covariant |
 
 ### Variance and Unsafe Code
 
 Violating variance assumptions in unsafe code causes undefined behavior. If you store a `&'long T`
-in a position that the compiler believes holds a `&'short T`, the short reference may be used after
-the long reference's referent is freed:
+In a position that the compiler believes holds a `&'short T`The short reference may be used after
+The long reference's referent is freed:
 
 ```rust
 use std::cell::Cell;
@@ -403,8 +403,8 @@ where
 apply(|s| s);
 ```
 
-The closure must work with any lifetime `'a`, not just a specific one. This is more restrictive than
-specifying a single lifetime because the closure cannot capture references with a specific lifetime.
+The closure must work with any lifetime `'a`Not just a specific one. This is more restrictive than
+Specifying a single lifetime because the closure cannot capture references with a specific lifetime.
 
 ### HRTBs with Trait Objects
 
@@ -435,7 +435,7 @@ where
 ## Lifetime Subtyping
 
 Lifetime subtyping means `'long: 'short` (long outlives short). A longer lifetime is a subtype of a
-shorter one. This is used implicitly by the compiler when checking borrow validity:
+Shorter one. This is used implicitly by the compiler when checking borrow validity:
 
 ```rust
 fn subtyping_example() {
@@ -446,15 +446,15 @@ fn subtyping_example() {
 ```
 
 The compiler performs subtyping during borrow checking. If a function expects `&'a T` and you pass
-`&'b T` where `'b: 'a`, the compiler accepts it because a longer-lived reference satisfies a
-shorter-lived requirement.
+`&'b T` where `'b: 'a`The compiler accepts it because a longer-lived reference satisfies a
+Shorter-lived requirement.
 
 ## Common Lifetime Patterns
 
 ### The Self-Referential Struct Problem
 
 Rust cannot express structs that hold references to their own fields in safe code. The struct and
-its field share the same lifetime, but the borrow checker treats them as independent:
+Its field share the same lifetime, but the borrow checker treats them as independent:
 
 ```rust
 // This does NOT compile:
@@ -556,7 +556,7 @@ impl<'a> Transformer<'a> for ToUpper {
 ### Zero-Cost Lifetime Abstractions
 
 Lifetimes have zero runtime cost. They are purely compile-time annotations. The compiler erases all
-lifetime information before code generation. A `&'a T` and a `&'b T` produce identical machine code
+Lifetime information before code generation. A `&'a T` and a `&'b T` produce identical machine code
 — the lifetimes exist only for the borrow checker's verification.
 
 ## Lifetime Parameters in Enums
@@ -581,7 +581,7 @@ match s {
 ## The Drop Checker and Lifetimes
 
 The borrow checker also verifies that structs are dropped before the data they reference. The drop
-checker can be overly conservative:
+Checker can be overly conservative:
 
 ```rust
 struct Context<'a> {
@@ -594,8 +594,8 @@ struct Context<'a> {
 ```
 
 If your struct contains a raw pointer that does not actually reference the lifetime parameter, you
-can use `#[may_dangle]` (unsafe) to relax the drop check. This is advanced and should be used only
-when you can prove safety manually.
+Can use `#[may_dangle]` (unsafe) to relax the drop check. This is advanced and should be used only
+When you can prove safety manually.
 
 ## Lifetime Bounds with `impl Trait`
 
@@ -608,7 +608,7 @@ fn get_parts(s: &str) -> impl Iterator<Item = &str> {
 ```
 
 The compiler infers the appropriate lifetime for the returned iterator. If the inference is
-ambiguous, you may need to write it explicitly:
+Ambiguous, you may need to write it explicitly:
 
 ```rust
 fn get_parts<'a>(s: &'a str) -> impl Iterator<Item = &'a str> + 'a {
@@ -619,49 +619,49 @@ fn get_parts<'a>(s: &'a str) -> impl Iterator<Item = &'a str> + 'a {
 ## Common Pitfalls
 
 1. **Over-annotating with `'static`.** The compiler suggests `'static` when it cannot infer a
-   shorter lifetime. Adding `'static` often reduces API flexibility. Instead, redesign the function
-   to take an explicit lifetime parameter or restructure ownership.
+ shorter lifetime. Adding `'static` often reduces API flexibility. Instead, redesign the function
+ to take an explicit lifetime parameter or restructure ownership.
 
 2. **Confusing lifetime names with actual lifetimes.** `'a` and `'b` are just labels. Two functions
-   using `'a` in their signatures do not share a lifetime — the compiler resolves each independently
-   at each call site.
+ using `'a` in their signatures do not share a lifetime — the compiler resolves each independently
+ at each call site.
 
 3. **Fighting the borrow checker with clones.** Cloning to satisfy lifetime constraints often
-   indicates a design issue. Consider whether you can restructure ownership, use indices instead of
-   references, or redesign the data flow.
+ indicates a design issue. Consider whether you can restructure ownership, use indices instead of
+ references, or redesign the data flow.
 
 4. **Not understanding variance.** Misunderstanding covariance and invariance leads to subtle
-   soundness bugs in generic code. If you are writing unsafe code that involves lifetimes, verify
-   variance carefully.
+ soundness bugs in generic code. If you are writing unsafe code that involves lifetimes, verify
+ variance carefully.
 
 5. **Self-referential structs without Pin.** Attempting to create a struct that references its own
-   fields will not compile in safe Rust. Use indices, arena allocation, or `Pin` for
-   self-referential patterns.
+ fields will not compile in safe Rust. Use indices, arena allocation, or `Pin` for
+ self-referential patterns.
 
 6. **Lifetime elision hiding complexity.** Elision rules make simple cases ergonomic, but can
-   obscure lifetime relationships in complex functions. When debugging lifetime errors, write out
-   the fully explicit lifetimes to understand what the compiler is doing.
+ obscure lifetime relationships in complex functions. When debugging lifetime errors, write out
+ the fully explicit lifetimes to understand what the compiler is doing.
 
 7. **Ignoring the `T: 'a` bound.** When a generic type `T` might contain references, the compiler
-   may require `T: 'a` to ensure that `T` does not contain references shorter than `'a`. This is
-   especially common with trait objects and `Box<dyn Trait>`.
+ may require `T: 'a` to ensure that `T` does not contain references shorter than `'a`. This is
+ especially common with trait objects and `Box<dyn Trait>`.
 
 8. **Assuming lifetimes affect runtime.** Lifetimes are erased at compile time. They have zero
-   runtime cost. A reference with a `'static` lifetime is not "better" or "more efficient" than one
-   with a shorter lifetime.
+ runtime cost. A reference with a `'static` lifetime is not "better" or "more efficient" than one
+ with a shorter lifetime.
 
 9. **Using `unsafe` to extend lifetimes.** Transmuting a shorter-lived reference to a longer-lived
-   one is undefined behavior. No amount of `unsafe` can make a dangling reference valid. If the
-   borrow checker rejects your code, the solution is restructuring, not bypassing.
+ one is undefined behavior. No amount of `unsafe` can make a dangling reference valid. If the
+ borrow checker rejects your code, the solution is restructuring, not bypassing.
 
 10. **Multiple lifetime parameters when one suffices.** If all references in a function can share a
-    single lifetime, use one lifetime parameter. Multiple lifetime parameters are needed only when
-    references have genuinely independent lifetimes.
+ single lifetime, use one lifetime parameter. Multiple lifetime parameters are needed only when
+ references have genuinely independent lifetimes.
 
 ## Lifetime Parameters in Closures
 
 Closures can capture references, and the compiler infers lifetimes for those captures. However, the
-lifetime rules for closures are different from functions because closures capture their environment:
+Lifetime rules for closures are different from functions because closures capture their environment:
 
 ```rust
 fn make_closure<'a>() -> Box<dyn Fn(&'a str) -> usize> {
@@ -670,7 +670,7 @@ fn make_closure<'a>() -> Box<dyn Fn(&'a str) -> usize> {
 ```
 
 The closure's return type is inferred from its body. When stored in a trait object, the lifetime
-must be explicitly specified. This is because the trait object has an implicit lifetime bound:
+Must be explicitly specified. This is because the trait object has an implicit lifetime bound:
 
 ```rust
 fn make_closure<'a>() -> Box<dyn Fn(&'a str) -> usize + 'a> {
@@ -681,7 +681,7 @@ fn make_closure<'a>() -> Box<dyn Fn(&'a str) -> usize + 'a> {
 ### Lifetime Bounds on Closures
 
 When a closure captures a reference, the closure's type carries a lifetime bound. This affects where
-the closure can be stored and used:
+The closure can be stored and used:
 
 ```rust
 fn with_callback<'a, F>(data: &'a str, callback: F)
@@ -728,7 +728,7 @@ let tree = build_tree(&data);
 ### Linked Lists with Lifetimes
 
 Linked lists in Rust are notoriously difficult because each node references the next node. The
-simplest approach uses indices instead of references:
+Simplest approach uses indices instead of references:
 
 ```rust
 struct LinkedList<T> {
@@ -763,7 +763,7 @@ impl<T> LinkedList<T> {
 ### `T: 'a` in Practice
 
 The bound `T: 'a` means "T does not contain any references with a lifetime shorter than 'a." This is
-automatically added by the compiler in many cases but may be needed explicitly:
+Automatically added by the compiler but may be needed explicitly:
 
 ```rust
 struct Wrapper<'a, T> {
@@ -777,7 +777,7 @@ fn get_wrapper<'a, T: 'a>(data: &'a T) -> Wrapper<'a, T> {
 ```
 
 When `T` contains references, the compiler must ensure those references are valid for the lifetime
-`'a`. Without `T: 'a`, the compiler cannot verify this:
+`'a`. Without `T: 'a`The compiler cannot verify this:
 
 ```rust
 struct RefWrapper<'a, T: 'a> {
@@ -830,7 +830,7 @@ impl<'a> SimpleParser<'a> {
 ```
 
 The returned `&'a str` borrows from the parser's `input` field, which has lifetime `'a`. This means
-the returned slices are valid as long as the parser's input is valid — zero-copy parsing.
+The returned slices are valid as long as the parser's input is valid — zero-copy parsing.
 
 ## `impl Trait` and Lifetimes
 
@@ -866,8 +866,8 @@ fn process<'a>(data: &'a str) -> impl Iterator<Item = &'a str> + 'a {
 ```
 
 The `+ 'a` bound on the return type tells the compiler that the returned iterator may contain
-references with lifetime `'a`. Without this bound, the compiler may not be able to infer the correct
-lifetime.
+References with lifetime `'a`. Without this bound, the compiler may not be able to infer the correct
+Lifetime.
 
 ## Lifetime Interactions with `Cow`
 
@@ -892,15 +892,15 @@ assert!(matches!(owned, Cow::Owned(_)));
 ```
 
 `Cow<'a, str>` is either `&'a str` (borrowed, no allocation) or `String` (owned, allocated). The
-lifetime `'a` applies only to the borrowed variant. When the function returns `Cow::Borrowed`, no
-allocation occurs.
+Lifetime `'a` applies only to the borrowed variant. When the function returns `Cow::Borrowed`No
+Allocation occurs.
 
 ## Lifetimes in Async Contexts
 
 ### Lifetimes Across `.await` Points
 
 Holding a reference across an `.await` point is an error because the future may be moved or dropped
-between yields:
+Between yields:
 
 ```rust
 // This does NOT compile
@@ -926,7 +926,7 @@ async fn fixed() {
 ### `Send` Bounds and Lifetimes
 
 Async functions that capture references must satisfy `'static` lifetime bounds when spawned on
-multi-threaded runtimes:
+Multi-threaded runtimes:
 
 ```rust
 // This does NOT compile
@@ -962,3 +962,11 @@ graph TD
     I -->|Yes| J[Elision rule 3 applies, no annotation needed]
     I -->|No| K[Write explicit lifetime annotation]
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

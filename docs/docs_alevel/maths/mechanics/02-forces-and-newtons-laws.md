@@ -11,16 +11,16 @@ slug: forces-and-newtons-laws
 ---
 ## Board Coverage
 
-| Board      | Paper   | Notes                                                 |
+| Board | Paper | Notes |
 | ---------- | ------- | ----------------------------------------------------- |
-| AQA        | Paper 1 | Newton's laws, friction, connected particles          |
-| Edexcel    | P1      | Similar                                               |
-| OCR (A)    | Paper 1 | Includes inclined planes                              |
-| CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
+| AQA | Paper 1 | Newton's laws, friction, connected particles |
+| Edexcel | P1 | Similar |
+| OCR (A) | Paper 1 | Includes inclined planes |
+| CIE (9709) | P1, P4 | Forces in P1; connected bodies, inclined planes in P4 |
 
 :::info
 Always draw a clear free body diagram before writing any equations. The quality of your
-diagram determines the quality of your solution.
+Diagram determines the quality of your solution.
 :::
 
 <hr />
@@ -30,7 +30,7 @@ diagram determines the quality of your solution.
 ### 1.1 Newton's First Law (Law of Inertia)
 
 **Law.** A body remains at rest or moves with constant velocity unless acted upon by a resultant
-external force.
+External force.
 
 **Implication.** If the resultant force on a body is zero, its acceleration is zero.
 
@@ -50,12 +50,12 @@ $$\boxed{\mathbf{F} = m\mathbf{a}}$$
 A.
 
 **Implication.** Forces always come in pairs: action and reaction. They act on **different** bodies
-and are the same type of force.
+And are the same type of force.
 
 :::warning
 Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
-normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-pair of the weight is the gravitational pull of the book on the Earth.
+Normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
+Pair of the weight is the gravitational pull of the book on the Earth.
 :::
 
 <hr />
@@ -66,13 +66,13 @@ pair of the weight is the gravitational pull of the book on the Earth.
 
 $$W = mg$$
 
-where $g \approx 9.8\,\mathrm{m/s}^2$ (or $9.81$ on some boards). Weight acts vertically downward
-through the centre of mass.
+Where $g \approx 9.8\,\mathrm{m/s}^2$ (or $9.81$ on some boards). Weight acts vertically downward
+Through the centre of mass.
 
 ### 2.2 Normal reaction
 
 The normal reaction $R$ (or $N$) is the perpendicular contact force exerted by a surface. Its
-direction is always perpendicular to the surface.
+Direction is always perpendicular to the surface.
 
 ### 2.3 Tension
 
@@ -117,29 +117,29 @@ At equilibrium perpendicular to the plane: $R = mg\cos\alpha$.
 
 $$F \leq \mu R$$
 
-where $\mu$ is the **coefficient of friction** and $R$ is the normal reaction.
+Where $\mu$ is the **coefficient of friction** and $R$ is the normal reaction.
 
 When the body is sliding (or on the point of sliding):
 
 $$F_{\max} = \mu R$$
 
-### 4.2 Static vs. kinetic friction
+### 4.2 Static vs. Kinetic friction
 
 - **Limiting friction** (on the point of sliding): $F = \mu_s R$ (static coefficient).
-- **Kinetic friction** (sliding): $F = \mu_k R$ (kinetic coefficient, typically
-  $\mu_k \lt{} \mu_s$).
+- **Kinetic friction** (sliding): $F = \mu_k R$ (kinetic coefficient, 
+ $\mu_k \lt{} \mu_s$).
 
-In A Level, we usually assume $\mu_s = \mu_k = \mu$.
+In A Level, we assume $\mu_s = \mu_k = \mu$.
 
 :::warning
-warning
-maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
+Warning
+Maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
 :::
 
 ### 4.3 Angle of friction
 
 The angle of friction $\lambda$ satisfies $\tan\lambda = \mu$. This is the steepest angle at which a
-body can rest on an inclined plane without sliding.
+Body can rest on an inclined plane without sliding.
 
 **Proof.** On an inclined plane at angle $\alpha$:
 
@@ -173,7 +173,7 @@ $T = 3(g/4 + g) = 15g/4 = 36.75\,\mathrm{N}$.
 ### 5.2 On an inclined plane
 
 The same method applies, but gravity must be resolved into components parallel and perpendicular to
-the plane.
+The plane.
 
 <hr />
 
@@ -203,8 +203,8 @@ These two forces are simultaneous, equal in magnitude, opposite in direction, co
 A valid Third Law pair must satisfy **all** of the following criteria:
 
 1. **Different bodies.** The two forces act on two different objects.
-2. **Same type.** Both forces are of the same physical type (e.g. both gravitational, both contact,
-   both frictional).
+2. **Same type.** Both forces are of the same physical type (e.g. Both gravitational, both contact,
+ both frictional).
 3. **Equal magnitude.** $|\mathbf{F}_{AB}| = |\mathbf{F}_{BA}|$.
 4. **Opposite direction.** $\mathbf{F}_{AB}$ and $\mathbf{F}_{BA}$ are antiparallel.
 
@@ -214,12 +214,12 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 The following are **not** Newton's Third Law pairs:
 :::
 
-| Situation             | Incorrect Pair (NOT Third Law)                | Why It Fails                                            | Correct Third Law Pair                               |
+| Situation | Incorrect Pair (NOT Third Law) | Why It Fails | Correct Third Law Pair |
 | --------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
-| Book on a table       | Weight and normal reaction                    | Both act on the book                                    | Weight of book / gravitational pull of book on Earth |
-| Person pushing a wall | Person's push on wall / wall's push on person | This IS a valid pair if different bodies are identified | Push of hand on wall / push of wall on hand          |
-| Car accelerating      | Driving force and friction                    | These are not the same type of force                    | Tyre pushes road backward / road pushes tyre forward |
-| Satellite in orbit    | Weight and centripetal force                  | Both act on the satellite                               | Earth pulls satellite / satellite pulls Earth        |
+| Book on a table | Weight and normal reaction | Both act on the book | Weight of book / gravitational pull of book on Earth |
+| Person pushing a wall | Person's push on wall / wall's push on person | This IS a valid pair if different bodies are identified | Push of hand on wall / push of wall on hand |
+| Car accelerating | Driving force and friction | These are not the same type of force | Tyre pushes road backward / road pushes tyre forward |
+| Satellite in orbit | Weight and centripetal force | Both act on the satellite | Earth pulls satellite / satellite pulls Earth |
 
 ### 7.4 Worked example: identifying pairs
 
@@ -236,7 +236,7 @@ A block of mass $m$ sits on the floor of a lift which is accelerating upward at 
 2. Lift floor pushes block up with $R$ $\longleftrightarrow$ block pushes lift floor down with $R$.
 
 Note that $W$ and $R$ are **not** a Third Law pair (both act on the block, and they are different
-types of force). In this case, applying Newton's Second Law to the block gives $R - mg = ma$, so
+Types of force). In this case, applying Newton's Second Law to the block gives $R - mg = ma$So
 $R = m(g + a) \gt{} mg$.
 
 <hr />
@@ -246,15 +246,15 @@ $R = m(g + a) \gt{} mg$.
 ### 8.1 Limiting equilibrium
 
 A body is in **limiting equilibrium** when it is on the point of moving. At this point the friction
-has reached its maximum value:
+Has reached its maximum value:
 
 $$F = \mu R$$
 
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt{} \mu R$.
 
 :::tip
-tip
-equilibrium" all mean the same thing: set $F = \mu R$.
+Tip
+Equilibrium" all mean the same thing: set $F = \mu R$.
 :::
 
 ### 8.2 Friction on a horizontal surface -- full analysis
@@ -270,7 +270,7 @@ $$R + P\sin\theta = mg \implies R = mg - P\sin\theta$$
 
 $$P\cos\theta - F = ma$$
 
-If the block is in limiting equilibrium ($a = 0$, $F = \mu R$):
+If the block is in limiting equilibrium ($a = 0$$F = \mu R$):
 
 $$P\cos\theta = \mu(mg - P\sin\theta)$$
 
@@ -280,35 +280,35 @@ $$P = \frac◆LB◆\mu mg◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆$$
 
 :::warning
 Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
-friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
-friction.
+Friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
+Friction.
 :::
 
 ### 8.3 Connected particles on rough surfaces
 
 When two particles are connected by a string and one or both surfaces are rough, friction must be
-included in the equations of motion for each particle.
+Included in the equations of motion for each particle.
 
 **Method:**
 
 1. Assume a direction of motion.
 2. Write $F = ma$ for each particle, including friction opposing the assumed motion.
 3. Solve the simultaneous equations.
-4. If $a \lt{} 0$, the assumed direction was wrong -- reconsider with friction reversed.
+4. If $a \lt{} 0$The assumed direction was wrong -- reconsider with friction reversed.
 
 **Example.** A particle of mass $4\,\mathrm{kg}$ on a rough horizontal table ($\mu = 0.3$) is
-connected by a light inextensible string over a smooth pulley at the table edge to a particle of
-mass $3\,\mathrm{kg}$ hanging vertically. Find the acceleration.
+Connected by a light inextensible string over a smooth pulley at the table edge to a particle of
+Mass $3\,\mathrm{kg}$ hanging vertically. Find the acceleration.
 
 For the $3\,\mathrm{kg}$ mass (assumed descending): $3g - T = 3a$.
 
-For the $4\,\mathrm{kg}$ mass: $R = 4g$, $F = \mu R = 0.3 \times 4g = 1.2g$.
+For the $4\,\mathrm{kg}$ mass: $R = 4g$$F = \mu R = 0.3 \times 4g = 1.2g$.
 
 $$T - 1.2g = 4a$$
 
 Adding: $3g - 1.2g = 7a \implies 1.8g = 7a \implies a = 1.8g/7 \approx 2.52\,\mathrm{m/s}^2$.
 
-Since $a \gt{} 0$, the assumption is correct: the $3\,\mathrm{kg}$ mass descends.
+Since $a \gt{} 0$The assumption is correct: the $3\,\mathrm{kg}$ mass descends.
 
 ### 8.4 Friction and the direction of motion
 
@@ -317,7 +317,7 @@ Friction always opposes **relative motion** (or the tendency to move). When sett
 - If the body is moving, friction opposes the velocity.
 - If the body is stationary, friction opposes the net applied force (up to $\mu R$).
 - If the direction of motion is unknown, assume one direction. If $a$ comes out negative, reverse
-  the assumed direction and recalculate with friction reversed.
+ the assumed direction and recalculate with friction reversed.
 
 <hr />
 
@@ -326,7 +326,7 @@ Friction always opposes **relative motion** (or the tendency to move). When sett
 ### 9.1 The Atwood machine
 
 Two masses $m_1$ and $m_2$ ($m_1 \gt{} m_2$) hang vertically from a light inextensible string
-passing over a smooth, light pulley.
+Passing over a smooth, light pulley.
 
 **Equations of motion:**
 
@@ -342,13 +342,13 @@ $$T = \frac{2m_1 m_2 g}{m_1 + m_2}$$
 
 **Verification of limits:**
 
-- If $m_1 = m_2$: $a = 0$, $T = mg$ (static equilibrium, as expected).
-- If $m_2 = 0$: $a = g$, $T = 0$ (free fall, as expected).
+- If $m_1 = m_2$: $a = 0$$T = mg$ (static equilibrium, as expected).
+- If $m_2 = 0$: $a = g$$T = 0$ (free fall, as expected).
 
 ### 9.2 Particle on a table with a pulley
 
 A particle of mass $m_1$ rests on a smooth horizontal table, connected by a light inextensible
-string over a smooth pulley at the edge to a particle of mass $m_2$ hanging freely.
+String over a smooth pulley at the edge to a particle of mass $m_2$ hanging freely.
 
 **Equations of motion:**
 
@@ -362,7 +362,7 @@ $$a = \frac{m_2 g}{m_1 + m_2}, \qquad T = \frac{m_1 m_2 g}{m_1 + m_2}$$
 
 ### 9.3 Particle on a table with a pulley -- rough surface
 
-If the table surface is rough with coefficient $\mu$, the equation for $m_1$ becomes:
+If the table surface is rough with coefficient $\mu$The equation for $m_1$ becomes:
 
 $$T - \mu m_1 g = m_1 a$$
 
@@ -371,8 +371,8 @@ Combined with $m_2 g - T = m_2 a$:
 $$a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
 :::warning
-If $m_2 \lt{} \mu m_1$, then $a \lt{} 0$, meaning the system does not move. The friction
-force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
+If $m_2 \lt{} \mu m_1$Then $a \lt{} 0$Meaning the system does not move. The friction
+Force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
 $T = m_2 g$.
 :::
 
@@ -398,7 +398,7 @@ $$a = \frac◆LB◆m_1 g(\sin\alpha - \mu_1\cos\alpha) - m_2 g(\sin\beta + \mu_2
 ### 10.1 Resolving forces on a rough inclined plane
 
 For a block of mass $m$ on a plane inclined at angle $\alpha$ to the horizontal, with coefficient of
-friction $\mu$:
+Friction $\mu$:
 
 **Perpendicular to the plane (equilibrium):**
 
@@ -416,9 +416,9 @@ The block remains stationary if:
 
 $$mg\sin\alpha \leq \mu mg\cos\alpha$$
 
-i.e. $\tan\alpha \leq \mu$, or $\alpha \leq \lambda$ where $\lambda$ is the angle of friction.
+I.e. $\tan\alpha \leq \mu$Or $\alpha \leq \lambda$ where $\lambda$ is the angle of friction.
 
-If $\alpha \gt{} \lambda$, the block slides and the acceleration down the slope is:
+If $\alpha \gt{} \lambda$The block slides and the acceleration down the slope is:
 
 $$a = g(\sin\alpha - \mu\cos\alpha)$$
 
@@ -447,7 +447,7 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
 :::tip
-tip
+Tip
 (or the tendency to move). Always draw a clear diagram and think about which way friction acts.
 :::
 
@@ -473,9 +473,9 @@ $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 $$P = \frac◆LB◆mg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB◆\cos\alpha - \mu\sin\alpha◆RB◆$$
 
 :::warning
-warning
-horizontal force can move the block up the slope (pushing horizontally jams the block into the
-surface).
+Warning
+Horizontal force can move the block up the slope (pushing horizontally jams the block into the
+Surface).
 :::
 
 <hr />
@@ -493,31 +493,31 @@ For coplanar forces, these conditions give:
 
 $$\Sigma F_x = 0, \qquad \Sigma F_y = 0, \qquad \Sigma M_O = 0$$
 
-where $O$ is any convenient point (often where an unknown force acts, to eliminate it from the
-moment equation).
+Where $O$ is any convenient point (often where an unknown force acts, to eliminate it from the
+Moment equation).
 
 ### 11.2 Coplanar forces -- three-force principle
 
 If a body in equilibrium is acted upon by exactly three coplanar forces, then:
 
 1. The forces must be **concurrent** (their lines of action meet at a single point), or all three
-   are parallel.
+ are parallel.
 2. The forces can be represented as a closed triangle when drawn head-to-tail (Lami's theorem).
 
 ### 11.3 Lami's theorem
 
-If three coplanar forces $F_1$, $F_2$, $F_3$ act on a body in equilibrium, and $\theta_1$ is the
-angle between $F_2$ and $F_3$, $\theta_2$ is the angle between $F_1$ and $F_3$, and $\theta_3$ is
-the angle between $F_1$ and $F_2$, then:
+If three coplanar forces $F_1$$F_2$$F_3$ act on a body in equilibrium, and $\theta_1$ is the
+Angle between $F_2$ and $F_3$$\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is
+The angle between $F_1$ and $F_2$Then:
 
 $$\frac◆LB◆F_1◆RB◆◆LB◆\sin\theta_1◆RB◆ = \frac◆LB◆F_2◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac◆LB◆F_3◆RB◆◆LB◆\sin\theta_3◆RB◆$$
 
 **Example.** A particle of mass $10\,\mathrm{kg}$ is suspended by two strings. One string makes an
-angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical.
+Angle of $30^\circ$ with the vertical and the other makes an angle of $60^\circ$ with the vertical.
 Find the tensions.
 
 The three forces are: $T_1$ (at $30^\circ$ from vertical), $T_2$ (at $60^\circ$ from vertical), and
-weight $W = 10g$ (vertically downward).
+Weight $W = 10g$ (vertically downward).
 
 Angles between the forces: the angle between $T_1$ and $T_2$ is $30° + 60° = 90^\circ$.
 
@@ -532,17 +532,17 @@ $$T_2 = 10g \sin 30° = 10g \times \frac{1}{2} = 5g = 49\,\mathrm{N}$$
 ### 11.4 Triangle of forces
 
 When three coplanar forces maintain a body in equilibrium, the forces can be drawn as a triangle
-with the forces as sides. The triangle is closed (the head of the last vector meets the tail of the
-first).
+With the forces as sides. The triangle is closed (the head of the last vector meets the tail of the
+First).
 
 This is equivalent to Lami's theorem and follows from the sine rule applied to the force triangle.
 
 ### 11.5 Worked example -- beam in equilibrium
 
 A uniform beam $AB$ of length $4\,\mathrm{m}$ and mass $20\,\mathrm{kg}$ is hinged at $A$ and
-supported by a wire attached at $B$, making an angle of $30^\circ$ with the beam. A particle of mass
+Supported by a wire attached at $B$Making an angle of $30^\circ$ with the beam. A particle of mass
 $30\,\mathrm{kg}$ hangs from the beam at a point $1.5\,\mathrm{m}$ from $A$. Find the tension in the
-wire and the reaction at the hinge.
+Wire and the reaction at the hinge.
 
 **Taking moments about $A$ (to eliminate the hinge reaction):**
 
@@ -577,7 +577,7 @@ A body of mass $5\,\mathrm{kg}$ is on a rough horizontal surface with $\mu = 0.4
 <summary>Solution 1</summary>
 $R = mg = 5(9.8) = 49\,\mathrm{N}$. $F_{\max} = \mu R = 0.4(49) = 19.6\,\mathrm{N}$.
 
-Since $30 \gt{} 19.6$, the body slides. Friction $= 19.6\,\mathrm{N}$ (opposing motion).
+Since $30 \gt{} 19.6$The body slides. Friction $= 19.6\,\mathrm{N}$ (opposing motion).
 
 $F_{\mathrm{net}} = 30 - 19.6 = 10.4\,\mathrm{N}$.
 $a = F_{\mathrm{net}}/m = 10.4/5 = 2.08\,\mathrm{m/s}^2$.
@@ -642,7 +642,7 @@ $R = mg\cos 40° = 5(9.8)(0.766) = 37.53\,\mathrm{N}$.
 $F_{\max} = 0.25(37.53) = 9.38\,\mathrm{N}$.
 Force down slope: $mg\sin 40° = 5(9.8)(0.643) = 31.49\,\mathrm{N}$.
 
-Since $31.49 \gt{} 9.38$, the block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.42\,\mathrm{m/s}^2$.
+Since $31.49 \gt{} 9.38$The block slides. $a = (31.49 - 9.38)/5 = 22.11/5 = 4.42\,\mathrm{m/s}^2$.
 
 **If you get this wrong, revise:**
 [Resolving on an Inclined Plane](#32-resolving-on-an-inclined-plane) — Section 3.2.
@@ -702,7 +702,7 @@ Two particles of masses $m$ and $3m$ are connected by a light inextensible strin
 
 <details>
 <summary>Solution 9</summary>
-$3mg - T = 3ma$, $T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
+$3mg - T = 3ma$$T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
 
 $s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \implies t = \sqrt{8/9.8} \approx 0.904\,\mathrm{s}$.
 
@@ -747,7 +747,7 @@ The critical angle is the angle of friction: $\tan\lambda = \mu$. $\blacksquare$
 
 <details>
 <summary>Problem 12</summary>
-A $4\,\mathrm{kg}$ block on a rough inclined plane ($\mu = 0.3$, angle $= 50^\circ$) is attached to a $2\,\mathrm{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
+A $4\,\mathrm{kg}$ block on a rough inclined plane ($\mu = 0.3$Angle $= 50^\circ$) is attached to a $2\,\mathrm{kg}$ block hanging freely over a pulley at the top. Find the acceleration.
 </details>
 
 <details>
@@ -807,7 +807,7 @@ By Lami's theorem:
 
 $$\frac◆LB◆T_1◆RB◆◆LB◆\sin 135°◆RB◆ = \frac◆LB◆T_2◆RB◆◆LB◆\sin 120°◆RB◆ = \frac◆LB◆5g◆RB◆◆LB◆\sin 105°◆RB◆$$
 
-$\sin 105° \approx 0.9659$, $\sin 135° = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \approx 0.7071$,
+$\sin 105° \approx 0.9659$$\sin 135° = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \approx 0.7071$
 $\sin 120° = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \approx 0.8660$.
 
 $T_1 = \frac◆LB◆5g \times 0.7071◆RB◆◆LB◆0.9659◆RB◆ = \frac{34.65}{0.9659} \approx 35.9\,\mathrm{N}$
@@ -820,7 +820,7 @@ $T_2 = \frac◆LB◆5g \times 0.8660◆RB◆◆LB◆0.9659◆RB◆ = \frac{42.43
 
 <details>
 <summary>Problem 15</summary>
-A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\mathrm{N}$ acting parallel to the plane. Find the acceleration of the block.
+A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$$\mu = 0.35$) is pulled up the slope by a force of $80\,\mathrm{N}$ acting parallel to the plane. Find the acceleration of the block.
 </details>
 
 <details>
@@ -828,7 +828,7 @@ A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0
 $R = mg\cos 35° = 7(9.8)(0.819) = 56.18\,\mathrm{N}$.
 
 $F = \mu R = 0.35(56.18) = 19.66\,\mathrm{N}$ (friction acts down the slope since the block moves
-up).
+Up).
 
 Parallel to the plane: $80 - mg\sin 35° - F = ma$
 
@@ -855,7 +855,7 @@ Check if the system moves: the weight of the hanging mass is $2g = 19.6\,\mathrm
 Maximum static friction on the $3\,\mathrm{kg}$ block:
 $F_{\max} = \mu m_1 g = 0.5 \times 3 \times 9.8 = 14.7\,\mathrm{N}$.
 
-Since $19.6 \gt{} 14.7$, the system moves.
+Since $19.6 \gt{} 14.7$The system moves.
 
 For $2\,\mathrm{kg}$ (descending): $2g - T = 2a$.
 
@@ -911,7 +911,7 @@ A $4\,\mathrm{kg}$ block is placed on a rough inclined plane at angle $30^\circ$
 <summary>Solution 18</summary>
 Without $P$: $mg\sin 30° = 4(9.8)(0.5) = 19.6\,\mathrm{N}$. $F_{\max} = \mu mg\cos 30° = 0.6(4)(9.8)(0.866) = 20.35\,\mathrm{N}$.
 
-Since $19.6 \lt{} 20.35$, the block is in equilibrium without the applied force.
+Since $19.6 \lt{} 20.35$The block is in equilibrium without the applied force.
 
 With $P = 50\,\mathrm{N}$ horizontal:
 
@@ -928,8 +928,8 @@ $43.3 - 19.6 - 35.37 = 4a$
 
 $-11.67 = 4a$
 
-Since $a \lt{} 0$, the block does not move up the slope with this force. The applied force is
-insufficient to overcome both gravity and friction.
+Since $a \lt{} 0$The block does not move up the slope with this force. The applied force is
+Insufficient to overcome both gravity and friction.
 
 **If you get this wrong, revise:**
 [Block on an inclined plane with a horizontal applied force](#104-block-on-an-inclined-plane-with-a-horizontal-applied-force)
@@ -951,12 +951,12 @@ Forces on the book:
 Third Law pairs:
 
 1. Weight pair: the gravitational pull of the book on the Earth (Earth on book $\leftrightarrow$
-   book on Earth), magnitude $1.5g$, directed upward toward the book.
+ book on Earth), magnitude $1.5g$Directed upward toward the book.
 2. Normal reaction pair: the contact force of the book pushing down on the table (table on book
-   $\leftrightarrow$ book on table), magnitude $1.5g$, directed downward.
+ $\leftrightarrow$ book on table), magnitude $1.5g$Directed downward.
 
 Note that $W$ and $R$ are not a Third Law pair: they are different types of force (gravitational vs
-contact) and both act on the book.
+Contact) and both act on the book.
 
 **If you get this wrong, revise:**
 [Newton's Third Law -- Detailed Treatment](#7-newtons-third-law----detailed-treatment) — Section 7.
@@ -990,8 +990,8 @@ $7.51 - 29.4 - 3a = 5a$
 
 $-21.89 = 8a \implies a = -2.74\,\mathrm{m/s}^2$
 
-Since $a \lt{} 0$, the assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead
-the $3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
+Since $a \lt{} 0$The assumption is wrong. The $5\,\mathrm{kg}$ block does not move down; instead
+The $3\,\mathrm{kg}$ mass descends and the $5\,\mathrm{kg}$ block moves up the slope.
 
 Re-do with the $5\,\mathrm{kg}$ block moving up the slope (friction now acts down the slope):
 
@@ -1012,14 +1012,14 @@ $29.4 - 3a - 41.49 = 5a$
 $-12.09 = 8a \implies a = -1.51\,\mathrm{m/s}^2$
 
 Since $a$ is still negative, the system does not move at all. The hanging mass is too light to
-overcome friction plus the component of weight down the slope.
+Overcome friction plus the component of weight down the slope.
 
 Check: the force trying to pull the $5\,\mathrm{kg}$ block up the slope is $3g = 29.4\,\mathrm{N}$.
 The force opposing this is $5g\sin 30° + \mu(5g\cos 30°) = 24.5 + 16.99 = 41.49\,\mathrm{N}$.
 
-Since $29.4 \lt{} 41.49$, the system remains in equilibrium. The tension is
-$T = 3g = 29.4\,\mathrm{N}$, and friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which
-is $\lt{} \mu R = 16.99\,\mathrm{N}$, confirming equilibrium).
+Since $29.4 \lt{} 41.49$The system remains in equilibrium. The tension is
+$T = 3g = 29.4\,\mathrm{N}$And friction $= T - 5g\sin 30° = 29.4 - 24.5 = 4.9\,\mathrm{N}$ (which
+Is $\lt{} \mu R = 16.99\,\mathrm{N}$Confirming equilibrium).
 
 **If you get this wrong, revise:**
 [Friction and the direction of motion](#84-friction-and-the-direction-of-motion) — Section 8.4.
@@ -1037,3 +1037,15 @@ Ready to test your understanding of **Forces and Newton's Laws**? The [diagnosti
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

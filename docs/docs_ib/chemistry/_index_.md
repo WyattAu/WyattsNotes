@@ -58,3 +58,15 @@ Complete revision notes for IB Chemistry, covering the full syllabus with worked
 - **A-Level Chemistry:** [A-Level Chemistry](https://alevel.wyattau.com/docs/chemistry)
 - **DSE Chemistry:** [DSE Chemistry](https://academics.wyattau.com/docs/dse/chemistry)
 - **University Chemistry:** [University Chemistry](https://university.wyattau.com/docs/chemistry)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

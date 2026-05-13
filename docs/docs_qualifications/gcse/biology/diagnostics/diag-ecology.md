@@ -68,7 +68,7 @@ hide_table_of_contents: true
 ## Integration Tests
 
 ### IT-1: Ecosystem Dynamics (with Bioenergetics)
-**Question:** A lake ecosystem has the following biomass values (in kg): phytoplankton $= 4000$, zooplankton $= 400$, small fish $= 40$, large fish $= 4$. (a) Calculate the percentage energy transfer at each level. (b) A farmer applies fertiliser to a field near the lake. Explain how this could lead to eutrophication. (c) Calculate the total biomass if the farmer introduces 500 kg of an invasive fish species that competes with small fish, reducing the small fish biomass by 60%. (d) Explain how the invasive species affects the stability of the ecosystem.
+**Question:** A lake ecosystem has the following biomass values (in kg): phytoplankton $= 4000$Zooplankton $= 400$Small fish $= 40$Large fish $= 4$. (a) Calculate the percentage energy transfer at each level. (b) A farmer applies fertiliser to a field near the lake. Explain how this could lead to eutrophication. (c) Calculate the total biomass if the farmer introduces 500 kg of an invasive fish species that competes with small fish, reducing the small fish biomass by 60%. (d) Explain how the invasive species affects the stability of the ecosystem.
 
 **Solution:**
 
@@ -81,7 +81,7 @@ hide_table_of_contents: true
 (d) The invasive species disrupts the existing food web by competing with native small fish for food and habitat. This cascading effect reduces the large fish population (less prey), may increase zooplankton (less predation from small fish), and potentially reduce phytoplankton (more consumers). The loss of native species reduces biodiversity and genetic diversity, making the ecosystem less resilient to environmental changes. The invasive species may have no natural predators, allowing it to dominate.
 
 ### IT-2: Biogeochemical Cycles and Climate Change (with Cell Biology)
-**Question:** (a) Explain how increasing atmospheric CO$_2$ contributes to global warming, including the mechanism of the greenhouse effect. (b) The concentration of CO$_2$ has increased from 280 ppm to 420 ppm since pre-industrial times. Calculate the percentage increase. (c) Explain how ocean acidification occurs as a result of increased CO$_2$, and its effect on marine organisms with calcium carbonate shells. (d) Describe two biological consequences of global warming on ecosystems.
+**Question:** (a) Explain how increasing atmospheric CO$_2$ contributes to global warming, including the mechanism of the greenhouse effect. (b) The concentration of CO$_2$ has increased from 280 ppm to 420 ppm since pre-industrial times. Calculate the percentage increase. (c) Explain how ocean acidification occurs as a result of increased CO$_2$And its effect on marine organisms with calcium carbonate shells. (d) Describe two biological consequences of global warming on ecosystems.
 
 **Solution:**
 

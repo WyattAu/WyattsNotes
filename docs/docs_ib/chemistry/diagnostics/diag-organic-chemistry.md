@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: $S_N1$ vs $S_N2$ Mechanism Prediction
-**Question:** For each substrate, predict whether it will react faster via $S_N1$ or $S_N2$ with aqueous NaOH, and explain why: (a) $(\text{CH}_3)_3\text{CBr}$, (b) $\text{CH}_3\text{CH}_2\text{Br}$, (c) $\text{C}_6\text{H}_5\text{CH}_2\text{Br}$ (benzyl bromide).
+**Question:** For each substrate, predict whether it will react faster via $S_N1$ or $S_N2$ with aqueous NaOH, and explain why: (a) $(\text{CH}_3)_3\text{CBr}$(b) $\text{CH}_3\text{CH}_2\text{Br}$(c) $\text{C}_6\text{H}_5\text{CH}_2\text{Br}$ (benzyl bromide).
 
 **Solution:**
 
@@ -79,7 +79,7 @@ $\text{C}_6\text{H}_5\text{CH}_3 + 2\text{KMnO}_4 \to \text{C}_6\text{H}_5\text{
 
 Oxidation number changes:
 
-In toluene: the methyl carbon has oxidation state approximately $-3$ (as in $\text{CH}_3-$). In benzoic acid: the carboxyl carbon has oxidation state $+3$ (two bonds to O at $-2$ each, one bond to C at $0$, one bond to O at $0$ using average: $0 + 0 + (-2) + (-2) + 3 = -1$; actually for $-\text{COOH}$: the carbon is bonded to one C ($0$), one $=\text{O}$ ($-2 \times 2 = -4$) and one $-\text{O}^-$ ($-1 \times 1 = -1$); sum $= -5$ but with the C--C bond and corrections: $+3$). The change is from $-3$ to $+3$, a 6-electron oxidation.
+In toluene: the methyl carbon has oxidation state approximately $-3$ (as in $\text{CH}_3-$). In benzoic acid: the carboxyl carbon has oxidation state $+3$ (two bonds to O at $-2$ each, one bond to C at $0$One bond to O at $0$ using average: $0 + 0 + (-2) + (-2) + 3 = -1$; actually for $-\text{COOH}$: the carbon is bonded to one C ($0$), one $=\text{O}$ ($-2 \times 2 = -4$) and one $-\text{O}^-$ ($-1 \times 1 = -1$); sum $= -5$ but with the C--C bond and corrections: $+3$). The change is from $-3$ to $+3$A 6-electron oxidation.
 
 Direct oxidation works because the benzylic position (carbon adjacent to the benzene ring) is activated. The benzene ring stabilises the intermediate benzylic radicals and cations through resonance, allowing the oxidising agent to sequentially remove hydrogen atoms from the methyl group, ultimately converting it to $-\text{COOH}$.
 
@@ -111,11 +111,11 @@ Changing to a more polar solvent increases the rate. A more polar solvent stabil
 
 Substrate: $(R)$-2-bromobutane, $\text{CH}_3-\text{CH}(\text{Br})-\text{CH}_2-\text{CH}_3$.
 
-In the $S_N2$ transition state, the nucleophile ($\text{CN}^-$) approaches from the back side (opposite the leaving group $\text{Br}^-$) along the axis of the $sp^3$ orbital containing the C--Br bond. The carbon is partially bonded to both $\text{CN}$ and $\text{Br}$, with the three other substituents in a trigonal planar arrangement:
+In the $S_N2$ transition state, the nucleophile ($\text{CN}^-$) approaches from the back side (opposite the leaving group $\text{Br}^-$) along the axis of the $sp^3$ orbital containing the C--Br bond. The carbon is partially bonded to both $\text{CN}$ and $\text{Br}$With the three other substituents in a trigonal planar arrangement:
 
 $$\text{CN}^\delta-\cdots\text{C}^\delta+\cdots\text{Br}^\delta-$$
 
-with $\text{CH}_3$, $\text{H}$, and $\text{CH}_2\text{CH}_3$ in a plane.
+With $\text{CH}_3$$\text{H}$And $\text{CH}_2\text{CH}_3$ in a plane.
 
 As the $\text{CN}^-$ bonds and $\text{Br}^-$ leaves, the three substituents flip like an umbrella inverting. This produces $(S)$-2-methylbutanenitrile.
 

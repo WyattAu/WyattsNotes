@@ -12,20 +12,20 @@ hide_table_of_contents: true
 
 **Question:** Two countries, Hong Kong and Vietnam, can produce the following per worker per day:
 
-|           | Electronics (units) | Garments (units) |
+| | Electronics (units) | Garments (units) |
 | --------- | ------------------- | ---------------- |
-| Hong Kong | 8                   | 4                |
-| Vietnam   | 2                   | 6                |
+| Hong Kong | 8 | 4 |
+| Vietnam | 2 | 6 |
 
 (a) Which country has an absolute advantage in each good? (b) Calculate the opportunity cost of 1
-unit of electronics in each country. (c) Which country has a comparative advantage in which good?
+Unit of electronics in each country. (c) Which country has a comparative advantage in which good?
 (d) If they specialise and trade at a rate of 1 electronics $=$ 2 garments, show that both countries
-gain compared to autarky (assuming each has 100 workers and splits them equally without trade).
+Gain compared to autarky (assuming each has 100 workers and splits them equally without trade).
 
 **Solution:**
 
 (a) Hong Kong has an **absolute advantage in electronics** (8 $\gt$ 2). Vietnam has an **absolute advantage
-in garments** (6 $\gt$ 4). Neither country has an absolute advantage in both goods.
+In garments** (6 $\gt$ 4). Neither country has an absolute advantage in both goods.
 
 (b) Opportunity cost of 1 unit of electronics:
 
@@ -33,25 +33,25 @@ in garments** (6 $\gt$ 4). Neither country has an absolute advantage in both goo
 - Vietnam: $6/2 = 3$ garments.
 
 (c) Hong Kong has a **comparative advantage in electronics** (lower opportunity cost: 0.5 garments
-vs 3 garments). Vietnam has a **comparative advantage in garments**.
+Vs 3 garments). Vietnam has a **comparative advantage in garments**.
 
 (d) Without trade: Hong Kong uses 50 workers for each good: $50 \times 8 = 400$ electronics,
 $50 \times 4 = 200$ garments. Vietnam: $50 \times 2 = 100$ electronics, $50 \times 6 = 300$
-garments. World total: 500 electronics, 500 garments.
+Garments. World total: 500 electronics, 500 garments.
 
 With specialisation: Hong Kong (100 workers on electronics) $= 800$ electronics. Vietnam (100
-workers on garments) $= 600$ garments. World total: 800 electronics, 600 garments. Gains: 300 extra
-electronics, 100 extra garments.
+Workers on garments) $= 600$ garments. World total: 800 electronics, 600 garments. Gains: 300 extra
+Electronics, 100 extra garments.
 
 If Hong Kong exports 300 electronics at 1:2, it receives 600 garments. Hong Kong consumes
 $800 - 300 = 500$ electronics and 600 garments (gains: 100 electronics, 400 garments). Vietnam
-consumes 300 electronics and $600 - 600 = 0$ garments -- that leaves Vietnam with nothing.
+Consumes 300 electronics and $600 - 600 = 0$ garments -- that leaves Vietnam with nothing.
 
 At the 1:2 exchange rate, both countries gain. For example, if Hong Kong exports 120 electronics and
-receives 240 garments: Hong Kong consumes 680 electronics and 240 garments (gains: 280 electronics, 40
-garments compared to autarky). Vietnam consumes 120 electronics and 360 garments (gains: 20
-electronics, 60 garments compared to autarky). Both are better off, confirming that trade at this rate
-is mutually beneficial.
+Receives 240 garments: Hong Kong consumes 680 electronics and 240 garments (gains: 280 electronics, 40
+Garments compared to autarky). Vietnam consumes 120 electronics and 360 garments (gains: 20
+Electronics, 60 garments compared to autarky). Both are better off, confirming that trade at this rate
+Is mutually beneficial.
 
 ### UT-2: Exchange Rate and Trade
 
@@ -59,39 +59,39 @@ is mutually beneficial.
 USD in the US and $\$5200$ HKD in Hong Kong. (a) Calculate the Hong Kong price of the US phone in
 HKD. (b) Is the smartphone cheaper in the US or Hong Kong? (c) If the HKD appreciates to 1 USD $=$
 7.0 HKD, recalculate and explain the effect on Hong Kong's exports. (d) Explain the concept of
-purchasing power parity (PPP).
+Purchasing power parity (PPP).
 
 **Solution:**
 
 (a) US price in HKD: $600 \times 7.8 = HK\$4680$.
 
 (b) In Hong Kong: HK\$5200. The US phone costs HK\$4680, which is cheaper than HK\$5200. The
-smartphone is cheaper in the US.
+Smartphone is cheaper in the US.
 
 (c) New US price in HKD: $600 \times 7.0 = HK\$4200$. The US phone is now even cheaper in HKD terms
 (HK\$4200 vs HK\$5200). HKD appreciation makes imports cheaper and exports more expensive. This
-reduces Hong Kong's export competitiveness -- foreign buyers need fewer USD to buy HKD, but Hong
+Reduces Hong Kong's export competitiveness -- foreign buyers need fewer USD to buy HKD, but Hong
 Kong's goods become more expensive in foreign currency. For example, a HK\$5200 phone now costs
 $5200/7.0 = \$743$ USD (vs $5200/7.8 = \$667$ USD before). Hong Kong's exports become 11% more
-expensive.
+Expensive.
 
 (d) Purchasing Power Parity (PPP) states that exchange rates should adjust so that identical baskets
-of goods cost the same in all countries. PPP exchange rate $= \frac{P_D}{P_F}$. If the PPP rate for
-the smartphone is $5200/600 = 8.67$ HKD per USD, but the actual rate is 7.8, the HKD is
+Of goods cost the same in all countries. PPP exchange rate $= \frac{P_D}{P_F}$. If the PPP rate for
+The smartphone is $5200/600 = 8.67$ HKD per USD, but the actual rate is 7.8, the HKD is
 **overvalued** relative to PPP (fewer HKD per dollar than PPP suggests). In the long run, PPP
-predicts the HKD should depreciate to equalise prices.
+Predicts the HKD should depreciate to equalise prices.
 
 ### UT-3: Tariff Analysis
 
 **Question:** A country imports shoes. World price $= \$40$ per pair. Domestic demand:
 $Q_d = 200 - 2P$. Domestic supply: $Q_s = 2P - 40$. (a) Calculate the quantity of imports before any
-tariff. (b) The government imposes a 25% tariff. Calculate the new domestic price, quantity of
-imports, tariff revenue, and deadweight loss. (c) Calculate the change in consumer surplus and
-producer surplus.
+Tariff. (b) The government imposes a 25% tariff. Calculate the new domestic price, quantity of
+Imports, tariff revenue, and deadweight loss. (c) Calculate the change in consumer surplus and
+Producer surplus.
 
 **Solution:**
 
-(a) At $P = 40$: $Q_d = 200 - 80 = 120$, $Q_s = 80 - 40 = 40$. Imports $= 120 - 40 = 80$.
+(a) At $P = 40$: $Q_d = 200 - 80 = 120$$Q_s = 80 - 40 = 40$. Imports $= 120 - 40 = 80$.
 
 (b) Tariff $= 25\% \times 40 = \$10$. New domestic price $= 40 + 10 = \$50$.
 
@@ -116,46 +116,46 @@ Net welfare change $= -1100 + 500 + 400 = -\$200$ (equals DWL).
 ### IT-1: Exchange Rates and Macroeconomic Policy (with Fiscal and Monetary Policy)
 
 **Question:** Country X has a fixed exchange rate of 1 USD $=$ 7.75 of local currency (LC). (a) If
-the central bank wants to maintain this peg but there is capital outflow (investors selling LC for
+The central bank wants to maintain this peg but there is capital outflow (investors selling LC for
 USD), explain what the central bank must do and the consequences for the domestic money supply. (b)
 If the country simultaneously faces high unemployment, explain why the fixed exchange rate
-constrains monetary policy (the impossible trinity). (c) Calculate the impact if the central bank
-must sell USD 5 billion from reserves to defend the peg, given a money multiplier of 4.
+Constrains monetary policy (the impossible trinity). (c) Calculate the impact if the central bank
+Must sell USD 5 billion from reserves to defend the peg, given a money multiplier of 4.
 
 **Solution:**
 
 (a) To maintain the peg, the central bank must buy LC (using its USD reserves) or sell USD. This
-reduces the domestic money supply as LC is taken out of circulation. The reduced money supply raises
-domestic interest rates, which should attract capital inflows and stabilise the exchange rate.
+Reduces the domestic money supply as LC is taken out of circulation. The reduced money supply raises
+Domestic interest rates, which should attract capital inflows and stabilise the exchange rate.
 
 (b) The **impossible trinity** (trilemma) states a country cannot simultaneously have: (1) a fixed
-exchange rate, (2) free capital mobility, and (3) independent monetary policy. To reduce
-unemployment, the central bank would want to lower interest rates (expansionary monetary policy),
-but this would cause capital outflow and put downward pressure on the exchange rate, threatening the
-peg. The central bank must choose between maintaining the peg or pursuing independent monetary
-policy.
+Exchange rate, (2) free capital mobility, and (3) independent monetary policy. To reduce
+Unemployment, the central bank would want to lower interest rates (expansionary monetary policy),
+But this would cause capital outflow and put downward pressure on the exchange rate, threatening the
+Peg. The central bank must choose between maintaining the peg or pursuing independent monetary
+Policy.
 
 (c) Selling USD 5 billion and buying LC removes LC 5 billion from circulation. With a money
-multiplier of 4: $\Delta M = m \times \Delta B = 4 \times (-5) = -LC 20$ billion. The domestic money
-supply contracts by LC 20 billion, which is contractionary and would worsen unemployment --
-illustrating the trilemma constraint.
+Multiplier of 4: $\Delta M = m \times \Delta B = 4 \times (-5) = -LC 20$ billion. The domestic money
+Supply contracts by LC 20 billion, which is contractionary and would worsen unemployment --
+Illustrating the trilemma constraint.
 
 ### IT-2: Trade Policy and Welfare (with Market Failure)
 
 **Question:** Country A imposes a quota of 30 units on imported steel. World price $= \$100$.
 Without the quota, domestic demand is $Q_d = 150 - 0.5P$ and supply is $Q_s = 0.5P - 25$. (a)
 Calculate the free trade imports and domestic price with the quota. (b) Calculate the change in
-consumer surplus, producer surplus, and deadweight loss compared to free trade. (c) Who gains the
-quota rent? How does this differ from a tariff? (d) If the steel industry generates positive
-externalities (strategic industry for defence), explain how this affects the welfare analysis.
+Consumer surplus, producer surplus, and deadweight loss compared to free trade. (c) Who gains the
+Quota rent? How does this differ from a tariff? (d) If the steel industry generates positive
+Externalities (strategic industry for defence), explain how this affects the welfare analysis.
 
 **Solution:**
 
-(a) Free trade: $Q_d = 150 - 50 = 100$, $Q_s = 50 - 25 = 25$. Imports $= 75$.
+(a) Free trade: $Q_d = 150 - 50 = 100$$Q_s = 50 - 25 = 25$. Imports $= 75$.
 
 With quota of 30: $Q_d - Q_s = 30$. $150 - 0.5P - (0.5P - 25) = 30$. $175 - P = 30$. $P = \$145$.
 
-$Q_d = 150 - 72.5 = 77.5$, $Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30$.
+$Q_d = 150 - 72.5 = 77.5$$Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30$.
 
 (b) CS loss (using the area method):
 
@@ -166,30 +166,30 @@ PS free trade $= \frac{1}{2}(100 - 50)(25) = \frac{1}{2}(50)(25) = \$625$. PS wi
 $= \frac{1}{2}(145 - 50)(47.5) = \frac{1}{2}(95)(47.5) = \$2256.25$. $\Delta PS = +\$1631.25$.
 
 Quota rent $= (145 - 100) \times 30 = 45 \times 30 = \$1350$ (goes to whoever holds the import
-licenses).
+Licenses).
 
 $DWL = |\Delta CS - \Delta PS - quota rent| = |{-3993.75} - 1631.25 - 1350| = |{-3993.75} + 1631.25 + 1350| = |-1012.5| = \$1012.5$.
 
 (c) Quota rent goes to **import licence holders** (foreign exporters if they hold the licences, or
-domestic importers if allocated by the government). With a tariff, the equivalent revenue goes to
-the **domestic government**. This is a key difference: tariffs generate government revenue while
-quotas create quota rents that may benefit foreign producers.
+Domestic importers if allocated by the government). With a tariff, the equivalent revenue goes to
+The **domestic government**. This is a key difference: tariffs generate government revenue while
+Quotas create quota rents that may benefit foreign producers.
 
 (d) If steel has positive externalities (e.g., national security, technology spillovers), the free
-market underprovides it. The protection (quota) moves production closer to the socially optimal
-level, and part of the "deadweight loss" may actually be a welfare gain from the externality
-correction. The net effect depends on whether the marginal external benefit of additional domestic
-steel production exceeds the marginal cost of the quota distortion. This is the strategic trade
-policy argument.
+Market underprovides it. The protection (quota) moves production closer to the socially optimal
+Level, and part of the "deadweight loss" may actually be a welfare gain from the externality
+Correction. The net effect depends on whether the marginal external benefit of additional domestic
+Steel production exceeds the marginal cost of the quota distortion. This is the strategic trade
+Policy argument.
 
 ### IT-3: Balance of Payments and National Income (with National Income)
 
-**Question:** An economy has the following BOP data (in billions): Exports of goods $= 300$, Imports
-of goods $= 400$, Exports of services $= 150$, Imports of services $= 100$, Net primary income
-$= -50$, Net secondary income $= 20$, Financial account surplus $= 80$. (a) Calculate the current
-account balance. (b) Calculate the capital and financial account balance. (c) Verify the BOP
-identity. (d) Explain how a persistent current account deficit relates to national savings and
-investment identity.
+**Question:** An economy has the following BOP data (in billions): Exports of goods $= 300$Imports
+Of goods $= 400$Exports of services $= 150$Imports of services $= 100$Net primary income
+$= -50$Net secondary income $= 20$Financial account surplus $= 80$. (a) Calculate the current
+Account balance. (b) Calculate the capital and financial account balance. (c) Verify the BOP
+Identity. (d) Explain how a persistent current account deficit relates to national savings and
+Investment identity.
 
 **Solution:**
 
@@ -197,7 +197,7 @@ investment identity.
 $= (300 - 400) + (150 - 100) + (-50) + 20$ $= -100 + 50 - 50 + 20 = -\$80$ billion (deficit).
 
 (b) Assuming no change in reserve assets: Capital and financial account $= +\$80$ billion (surplus
-to balance the current account deficit).
+To balance the current account deficit).
 
 (c) BOP identity: Current Account $+$ Capital Account $+$ Financial Account $+$ Reserve Assets
 $= 0$. $-80 + 0 + 80 + 0 = 0$. The identity holds.
@@ -205,11 +205,11 @@ $= 0$. $-80 + 0 + 80 + 0 = 0$. The identity holds.
 (d) From the national income identity: $(S - I) + (T - G) = (X - M)$.
 
 A current account deficit $(X \lt M)$ means the country is spending more on imports than it earns
-from exports. This must be financed by: (1) foreign borrowing (financial account surplus), or (2)
-running down foreign reserves. Equivalently, $S - I \lt 0$, meaning domestic investment exceeds
-domestic saving. The country is importing capital to finance investment that exceeds domestic
-savings. This is sustainable if the borrowed funds are invested productively (generating future
-export capacity), but unsustainable if used for consumption.
+From exports. This must be financed by: (1) foreign borrowing (financial account surplus), or (2)
+Running down foreign reserves. Equivalently, $S - I \lt 0$Meaning domestic investment exceeds
+Domestic saving. The country is importing capital to finance investment that exceeds domestic
+Savings. This is sustainable if the borrowed funds are invested productively (generating future
+Export capacity), but unsustainable if used for consumption.
 
 ## Additional DSE Exam-Style Questions
 
@@ -280,7 +280,7 @@ Long run: $1.4 + 1.1 = 2.5 > 1$. The condition is **satisfied**.
 - Import quantity decrease: $1.1 \times 15 = 16.5\%$. Import spending: $0.835 \times 1.15 - 1 = -0.0398$ ($-3.98\%$).
 - Net effect: trade balance improves (export revenue rises 2.85%, import spending falls 3.98%).
 
-(d) The duration of the J-curve depends on: (i) the flexibility of contracts (short-term contracts adjust faster), (ii) consumer search costs and brand loyalty (habitual consumers are slower to switch), (iii) the availability of domestic substitutes (more substitutes $=$ faster adjustment), (iv) the size of the depreciation (larger depreciations create stronger incentives to adjust), and (v) the state of the global economy (if trading partners are in recession, export demand may not respond strongly). Empirical evidence suggests the J-curve typically lasts 6--18 months for most economies.
+(d) The duration of the J-curve depends on: (i) the flexibility of contracts (short-term contracts adjust faster), (ii) consumer search costs and brand loyalty (habitual consumers are slower to switch), (iii) the availability of domestic substitutes (more substitutes $=$ faster adjustment), (iv) the size of the depreciation (larger depreciations create stronger incentives to adjust), and (v) the state of the global economy (if trading partners are in recession, export demand may not respond strongly). Empirical evidence suggests the J-curve lasts 6--18 months for most economies.
 
 ### EQ-4: Trading Blocs and Hong Kong
 
@@ -324,7 +324,7 @@ Net welfare effect depends on whether trade creation or trade diversion dominate
 
 ### EQ-5: Balance of Payments and Exchange Rate Determination
 
-**Question:** An economy has the following BOP data (in billions of USD): Merchandise exports $= 250$, Merchandise imports $= 350$, Services exports $= 180$, Services imports $= 120$, Primary income receipts $= 60$, Primary income payments $= 100$, Secondary income receipts $= 20$, Secondary income payments $= 10$, Direct investment inflows $= 80$, Portfolio investment inflows $= 50$, Portfolio investment outflows $= 30$, Reserve assets change $= -20$. (a) Construct the full BOP accounts and verify the identity. (b) Calculate the current account, capital account, and financial account balances. (c) Is the country accumulating or losing foreign reserves? (d) Explain the relationship between the current account and the capital/financial account.
+**Question:** An economy has the following BOP data (in billions of USD): Merchandise exports $= 250$Merchandise imports $= 350$Services exports $= 180$Services imports $= 120$Primary income receipts $= 60$Primary income payments $= 100$Secondary income receipts $= 20$Secondary income payments $= 10$Direct investment inflows $= 80$Portfolio investment inflows $= 50$Portfolio investment outflows $= 30$Reserve assets change $= -20$. (a) Construct the full BOP accounts and verify the identity. (b) Calculate the current account, capital account, and financial account balances. (c) Is the country accumulating or losing foreign reserves? (d) Explain the relationship between the current account and the capital/financial account.
 
 **Solution:**
 
@@ -334,7 +334,7 @@ Net welfare effect depends on whether trade creation or trade diversion dominate
 - Secondary income balance: $20 - 10 = +10$.
 - Current account $= -40 - 40 + 10 = -70$.
 
-**Capital Account:** Assumed negligible (typically very small) $= 0$.
+**Capital Account:** Assumed negligible ( very small) $= 0$.
 
 **Financial Account:**
 - Direct investment: $+80$.
@@ -350,7 +350,7 @@ Revised: Financial account $= 80 + 20 + (-10) = 90$. Total: $-70 + 0 + 90 + (-20
 
 (b) Current account $= -70$ billion (deficit). Capital account $= 0$. Financial account (excluding reserves) $= 90$. Reserve assets $= -20$ (accumulation).
 
-(c) The reserve assets change is $-20$, meaning the central bank is **accumulating** $\$20$ billion in foreign exchange reserves. (A negative sign in the BOP convention means an increase in reserve assets.)
+(c) The reserve assets change is $-20$Meaning the central bank is **accumulating** $\$20$ billion in foreign exchange reserves. (A negative sign in the BOP convention means an increase in reserve assets.)
 
 (d) The relationship is: Current Account $+$ Capital Account $+$ Financial Account $+$ Reserve Assets $= 0$.
 

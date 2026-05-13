@@ -58,7 +58,7 @@ $$= \frac◆LB◆2x \cdot (x^2-1)^2◆RB◆◆LB◆-4x \cdot (x^2-1)◆RB◆ = \
 
 **Final restrictions:** $x \neq -1, 1, 0$.
 
-**Verification:** If $x = 2$, the original expression gives $\frac◆LB◆\frac{1}{3}+\frac{1}{1}◆RB◆◆LB◆\frac{1}{9}-\frac{1}{1}◆RB◆ = \frac{4/3}{-8/9} = -\frac{3}{2}$, and our result gives $-\frac{4-1}{2} = -\frac{3}{2}$. Consistent.
+**Verification:** If $x = 2$The original expression gives $\frac◆LB◆\frac{1}{3}+\frac{1}{1}◆RB◆◆LB◆\frac{1}{9}-\frac{1}{1}◆RB◆ = \frac{4/3}{-8/9} = -\frac{3}{2}$And our result gives $-\frac{4-1}{2} = -\frac{3}{2}$. Consistent.
 
 ---
 
@@ -152,7 +152,7 @@ $$= -\frac{63}{44} - \frac{13}{22}\sqrt{15} + \frac{15}{11}\sqrt{3} + \frac{57}{
 
 **Question:**
 
-Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$, find the exact value of:
+Given that $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = 5$Find the exact value of:
 
 $$\frac◆LB◆a^{\frac{3}{2}} - a^{-\frac{3}{2}}◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆$$
 
@@ -168,7 +168,7 @@ Therefore the expression simplifies to:
 
 $$\frac◆LB◆\left(a^{\frac{1}{2}} - a^{-\frac{1}{2}}\right)\left(a + 1 + a^{-1}\right)◆RB◆◆LB◆a^{\frac{1}{2}} - a^{-\frac{1}{2}}◆RB◆ = a + 1 + a^{-1}$$
 
-provided $a^{1/2} - a^{-1/2} \neq 0$, i.e. $a \neq 1$. (If $a = 1$, the given condition would give $2 = 5$, a contradiction, so $a \neq 1$ is guaranteed.)
+Provided $a^{1/2} - a^{-1/2} \neq 0$I.e. $a \neq 1$. (If $a = 1$The given condition would give $2 = 5$A contradiction, so $a \neq 1$ is guaranteed.)
 
 **Step 2: Find $a + a^{-1}$ from the given condition.**
 
@@ -196,11 +196,11 @@ The binomial expansion of $(1 + 2x)^{-1}$ up to and including the term in $x^3$ 
 
 $$(1 + 2x)^{-1} = 1 - 2x + 4x^2 - 8x^3 + \cdots$$
 
-By writing $x = \frac{1}{y}$ for $y \geq 5$, find the exact rational expression for:
+By writing $x = \frac{1}{y}$ for $y \geq 5$Find the exact rational expression for:
 
 $$\frac{y^4}{y + 2} - \frac{y^4}{y^2 + 2y}$$
 
-in the form $A y^3 + B y^2 + C y + D + \frac{E}{y + 2}$, and hence verify that your result is consistent with the binomial expansion above.
+In the form $A y^3 + B y^2 + C y + D + \frac{E}{y + 2}$And hence verify that your result is consistent with the binomial expansion above.
 
 [Difficulty: hard. Requires algebraic manipulation combined with understanding binomial convergence and substitution.]
 
@@ -214,16 +214,16 @@ $$\frac{y^4}{y+2} - \frac{y^4}{y(y+2)} = \frac{y^4}{y+2} - \frac{y^3}{y+2} = \fr
 
 Using algebraic long division:
 
-- $y^4 \div y = y^3$, so multiply: $y^3(y+2) = y^4 + 2y^3$. Subtract from $y^4 - y^3$: remainder is $-3y^3$.
-- $-3y^3 \div y = -3y^2$, so multiply: $-3y^2(y+2) = -3y^3 - 6y^2$. Subtract: remainder is $6y^2$.
-- $6y^2 \div y = 6y$, so multiply: $6y(y+2) = 6y^2 + 12y$. Subtract: remainder is $-12y$.
-- $-12y \div y = -12$, so multiply: $-12(y+2) = -12y - 24$. Subtract: remainder is $24$.
+- $y^4 \div y = y^3$So multiply: $y^3(y+2) = y^4 + 2y^3$. Subtract from $y^4 - y^3$: remainder is $-3y^3$.
+- $-3y^3 \div y = -3y^2$So multiply: $-3y^2(y+2) = -3y^3 - 6y^2$. Subtract: remainder is $6y^2$.
+- $6y^2 \div y = 6y$So multiply: $6y(y+2) = 6y^2 + 12y$. Subtract: remainder is $-12y$.
+- $-12y \div y = -12$So multiply: $-12(y+2) = -12y - 24$. Subtract: remainder is $24$.
 
 Therefore:
 
 $$\frac{y^4 - y^3}{y+2} = y^3 - 3y^2 + 6y - 12 + \frac{24}{y+2}$$
 
-So $A = 1$, $B = -3$, $C = 6$, $D = -12$, $E = 24$.
+So $A = 1$$B = -3$$C = 6$$D = -12$$E = 24$.
 
 **Step 3: Verify with the binomial expansion.** Write $\frac{y^3}{1 + 2/y}$ and substitute $x = 1/y$:
 
@@ -231,7 +231,7 @@ $$\frac{y^3}{1 + 2/y} = y^3 \left(1 + \frac{2}{y}\right)^{-1} = y^3\left(1 - \fr
 
 $$= y^3 - 2y^2 + 4y - 8 + \cdots$$
 
-But our expression also has the term $-\frac{y^3}{y+2} = -y^3(1 + 2/y)^{-1}$, so we get $-(y^3 - 2y^2 + 4y - 8) = -y^3 + 2y^2 - 4y + 8$ plus the remainder terms. Adding $y^4/(y+2)$ back and collecting, the polynomial part is $y^3 - 3y^2 + 6y - 12$, consistent with our exact division.
+But our expression also has the term $-\frac{y^3}{y+2} = -y^3(1 + 2/y)^{-1}$So we get $-(y^3 - 2y^2 + 4y - 8) = -y^3 + 2y^2 - 4y + 8$ plus the remainder terms. Adding $y^4/(y+2)$ back and collecting, the polynomial part is $y^3 - 3y^2 + 6y - 12$Consistent with our exact division.
 
 The binomial expansion confirms the coefficients $1, -3, 6, -12$ for the polynomial part, and the remainder $\frac{24}{y+2}$ accounts for the terms beyond $x^3$ in the expansion.
 
@@ -243,11 +243,11 @@ The binomial expansion confirms the coefficients $1, -3, 6, -12$ for the polynom
 
 Given the function $f(x) = \frac{3x + 1}{x - 2}$ for $x \neq 2$:
 
-**(a)** Find $f^{-1}(x)$, stating its domain.
+**(a)** Find $f^{-1}(x)$Stating its domain.
 
 **(b)** Simplify $\frac{f(x) + f^{-1}(x)}{f(x) - f^{-1}(x)}$ to a constant.
 
-**(c)** If $g(x) = \frac{x}{x+1}$, simplify $f(g(x))$ and find the value of $x$ for which $f(g(x)) = x$.
+**(c)** If $g(x) = \frac{x}{x+1}$Simplify $f(g(x))$ and find the value of $x$ for which $f(g(x)) = x$.
 
 [Difficulty: hard. Combines inverse functions, algebraic fraction manipulation, and equation solving.]
 
@@ -279,9 +279,9 @@ $$\frac{f(x) + f^{-1}(x)}{f(x) - f^{-1}(x)} = \frac{5x^2 - 11x - 5}{x^2 - 5x - 1
 
 To check if this is a constant, perform polynomial division: $5x^2 - 11x - 5 = 5(x^2 - 5x - 1) + 14x$.
 
-This is not a constant for general $x$. However, let us verify by direct substitution. Take $x = 0$: $f(0) = -1/2$, $f^{-1}(0) = -1/3$. Then $\frac{-1/2 - 1/3}{-1/2 + 1/3} = \frac{-5/6}{-1/6} = 5$.
+This is not a constant for general $x$. However, let us verify by direct substitution. Take $x = 0$: $f(0) = -1/2$$f^{-1}(0) = -1/3$. Then $\frac{-1/2 - 1/3}{-1/2 + 1/3} = \frac{-5/6}{-1/6} = 5$.
 
-Take $x = 1$: $f(1) = -4$, $f^{-1}(1) = -3$. Then $\frac{-4-3}{-4+3} = 7$.
+Take $x = 1$: $f(1) = -4$$f^{-1}(1) = -3$. Then $\frac{-4-3}{-4+3} = 7$.
 
 The ratio is not constant. Let me reconsider the calculation. For $x = 1$:
 $$f(1) + f^{-1}(1) = \frac{4}{-1} + \frac{3}{-2} = -4 - \frac{3}{2} = -\frac{11}{2}$$
@@ -297,7 +297,7 @@ The ratio is not constant. Let me re-examine by a different approach. Note that 
 
 Let me correct the problem statement: the ratio $\frac◆LB◆f(x) \cdot f^{-1}(x)◆RB◆◆LB◆f(x) + f^{-1}(x)◆RB◆$ should be checked, or alternatively the expression simplifies when we use the property $f(f^{-1}(x)) = x$.
 
-Actually, re-examining: for a M\"obius transformation $f(x) = \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$ and $a = 3, b = 1, c = 1, d = -2$, we have $f^{-1}(x) = \frac{-dx+b}{cx-a} = \frac{2x+1}{x-3}$.
+Actually, re-examining: for a M\"obius transformation $f(x) = \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$ and $a = 3, b = 1, c = 1, d = -2$We have $f^{-1}(x) = \frac{-dx+b}{cx-a} = \frac{2x+1}{x-3}$.
 
 The question asks us to simplify. Let us instead compute:
 
@@ -328,7 +328,7 @@ By the quadratic formula:
 
 $$x = \frac◆LB◆-6 \pm \sqrt{36-4}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-6 \pm 4\sqrt{2}◆RB◆◆LB◆2◆RB◆ = -3 \pm 2\sqrt{2}$$
 
-Checking restrictions: $x \neq -1$ (domain of $g$) and $x \neq 2$ (domain of $f$). Neither $-3+2\sqrt{2}$ nor $-3-2\sqrt{2}$ equals $-1$ or $2$, so both solutions are valid.
+Checking restrictions: $x \neq -1$ (domain of $g$) and $x \neq 2$ (domain of $f$). Neither $-3+2\sqrt{2}$ nor $-3-2\sqrt{2}$ equals $-1$ or $2$So both solutions are valid.
 
 ---
 
@@ -338,17 +338,17 @@ Checking restrictions: $x \neq -1$ (domain of $g$) and $x \neq 2$ (domain of $f$
 
 The expression $\left(\sqrt◆LB◆a + \sqrt{b}◆RB◆ + \sqrt◆LB◆a - \sqrt{b}◆RB◆\right)^2$ simplifies to $2a + 2\sqrt{a^2 - b}$.
 
-Given that $a$ and $b$ are positive integers with $a^2 > b$, and that:
+Given that $a$ and $b$ are positive integers with $a^2 > b$And that:
 
 $$\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ = \sqrt{m} + \sqrt{n}$$
 
-where $m > n$ are positive integers:
+Where $m > n$ are positive integers:
 
 **(a)** Find the values of $m$ and $n$.
 
 **(b)** Hence find the exact value of $\sqrt◆LB◆7 - 4\sqrt{3}◆RB◆$.
 
-**(c)** Solve the equation $\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ \cdot x^2 - (m+n)x + \sqrt◆LB◆7 - 4\sqrt{3}◆RB◆ = 0$, giving your answer in the form $p + q\sqrt{r}$.
+**(c)** Solve the equation $\sqrt◆LB◆7 + 4\sqrt{3}◆RB◆ \cdot x^2 - (m+n)x + \sqrt◆LB◆7 - 4\sqrt{3}◆RB◆ = 0$Giving your answer in the form $p + q\sqrt{r}$.
 
 [Difficulty: hard. Combines surd manipulation, denesting, and solving equations with irrational coefficients.]
 
@@ -365,7 +365,7 @@ Equating rational and irrational parts:
 - $m + n = 7$
 - $2\sqrt{mn} = 4\sqrt{3} \implies \sqrt{mn} = 2\sqrt{3} \implies mn = 12$
 
-We need integers $m > n$ with $m + n = 7$ and $mn = 12$. By Vieta's formulas, $m$ and $n$ are roots of $t^2 - 7t + 12 = 0$, giving $(t-3)(t-4) = 0$.
+We need integers $m > n$ with $m + n = 7$ and $mn = 12$. By Vieta's formulas, $m$ and $n$ are roots of $t^2 - 7t + 12 = 0$Giving $(t-3)(t-4) = 0$.
 
 Since $m > n$: $\boxed{m = 4, n = 3}$.
 
@@ -377,7 +377,7 @@ Verification: $(2-\sqrt{3})^2 = 4 - 4\sqrt{3} + 3 = 7 - 4\sqrt{3}$. Confirmed.
 
 $$(\sqrt{m} + \sqrt{n})x^2 - (m+n)x + (\sqrt{m} - \sqrt{n}) = 0$$
 
-Substituting $m = 4$, $n = 3$:
+Substituting $m = 4$$n = 3$:
 
 $$(2+\sqrt{3})x^2 - 7x + (2-\sqrt{3}) = 0$$
 

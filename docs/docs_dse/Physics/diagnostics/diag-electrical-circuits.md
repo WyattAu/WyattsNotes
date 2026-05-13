@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In the circuit shown, three cells with EMFs $E_1 = 12$ V, $E_2 = 6$ V, and $E_3 = 4$ V are connected with resistors $R_1 = 4$ $\Omega$, $R_2 = 6$ $\Omega$, and $R_3 = 2$ $\Omega$. Cell $E_1$ is in series with $R_1$, cell $E_2$ is in series with $R_2$, and $R_3$ is the shared branch connecting the junctions. $E_1$ and $E_2$ have their positive terminals facing the same junction (opposing each other). $E_3$ is in the shared branch with its positive terminal facing the $E_1$ side. All cells have negligible internal resistance. Find the current in each branch.
+In the circuit shown, three cells with EMFs $E_1 = 12$ V, $E_2 = 6$ V, and $E_3 = 4$ V are connected with resistors $R_1 = 4$ $\Omega$$R_2 = 6$ $\Omega$And $R_3 = 2$ $\Omega$. Cell $E_1$ is in series with $R_1$Cell $E_2$ is in series with $R_2$And $R_3$ is the shared branch connecting the junctions. $E_1$ and $E_2$ have their positive terminals facing the same junction (opposing each other). $E_3$ is in the shared branch with its positive terminal facing the $E_1$ side. All cells have negligible internal resistance. Find the current in each branch.
 
 **Solution:**
 
@@ -23,7 +23,7 @@ Define currents: $I_1$ flows from $E_1$ through $R_1$ to the junction, $I_2$ flo
 
 $$I_1 + I_2 = I_3 \quad \text{--- (1)}$$
 
-**KVL for Loop 1** (through $E_1$, $R_1$, $R_3$, $E_3$):
+**KVL for Loop 1** (through $E_1$$R_1$$R_3$$E_3$):
 
 $$E_1 - I_1 R_1 - I_3 R_3 - E_3 = 0$$
 
@@ -31,7 +31,7 @@ $$12 - 4I_1 - 2I_3 - 4 = 0$$
 
 $$8 - 4I_1 - 2I_3 = 0 \quad \text{--- (2)}$$
 
-**KVL for Loop 2** (through $E_2$, $R_2$, $R_3$, $E_3$):
+**KVL for Loop 2** (through $E_2$$R_2$$R_3$$E_3$):
 
 $$E_2 - I_2 R_2 - I_3 R_3 - E_3 = 0$$
 
@@ -41,7 +41,7 @@ $$2 - 6I_2 - 2I_3 = 0 \quad \text{--- (3)}$$
 
 From (3): $I_2 = \frac{2 - 2I_3}{6} = \frac{1 - I_3}{3}$
 
-From (2): $4I_1 = 8 - 2I_3$, so $I_1 = 2 - 0.5I_3$
+From (2): $4I_1 = 8 - 2I_3$So $I_1 = 2 - 0.5I_3$
 
 Substituting into (1):
 
@@ -59,7 +59,7 @@ $$I_2 = \frac{1 - 1.273}{3} = \frac{-0.273}{3} = -0.0909 \text{ A}$$
 
 $I_2$ is negative, meaning current actually flows into $E_2$ (the $6$ V cell is being charged).
 
-**Key misconception:** Negative current in a branch does not indicate an error -- it simply means the assumed current direction was wrong. The magnitude is correct but the direction is reversed.
+**Key misconception:** Negative current in a branch does not indicate an error -- it means the assumed current direction was wrong. The magnitude is correct but the direction is reversed.
 
 ---
 
@@ -129,8 +129,8 @@ The potential drop across the full wire length equals the driver cell EMF (since
 $$\text{Potential gradient} = \frac{6}{100} = 0.06 \text{ V cm}^{-1}$$
 
 **Note:** The potential gradient of $6/100 = 0.06$ V/cm would place the null point for the standard
-cell at $1.018/0.06 = 16.97$ cm, but the problem states $34.0$ cm. This means there is a protective
-resistor in series with the potentiometer wire. Let $R_p$ be the protective resistance.
+Cell at $1.018/0.06 = 16.97$ cm, but the problem states $34.0$ cm. This means there is a protective
+Resistor in series with the potentiometer wire. Let $R_p$ be the protective resistance.
 
 $$I_{\text{driver}} = \frac{6}{R_p + 10}$$
 
@@ -162,13 +162,13 @@ $$I = \frac{6}{20.04} = 0.2994 \text{ A}$$
 
 **Question:**
 
-Two cells are connected in parallel across an external resistor $R = 5$ $\Omega$. Cell 1 has EMF $E_1 = 12$ V and internal resistance $r_1 = 1$ $\Omega$. Cell 2 has EMF $E_2 = 10$ V and internal resistance $r_2 = 2$ $\Omega$. Find (a) the current through $R$, (b) the current from each cell, (c) the terminal PD of each cell, and (d) the power dissipated in $R$.
+Two cells are connected in parallel across an external resistor $R = 5$ $\Omega$. Cell 1 has EMF $E_1 = 12$ V and internal resistance $r_1 = 1$ $\Omega$. Cell 2 has EMF $E_2 = 10$ V and internal resistance $r_2 = 2$ $\Omega$. Find (a) the current through $R$(b) the current from each cell, (c) the terminal PD of each cell, and (d) the power dissipated in $R$.
 
 **Solution:**
 
 **Equivalent circuit analysis using KVL:**
 
-Let the junction where both cells meet be at potential $V_A$, and the other end of $R$ be at $V_B$.
+Let the junction where both cells meet be at potential $V_A$And the other end of $R$ be at $V_B$.
 
 Current from cell 1: $I_1 = \frac{E_1 - V}{r_1}$ (flowing out of cell 1)
 
@@ -214,7 +214,7 @@ $$P = I^2 R = 4 \times 5 = 20 \text{ W}$$
 
 **Question:**
 
-A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$, $Q = 200$ $\Omega$, $R = 150$ $\Omega$, and the unknown resistance $S$. A galvanometer of resistance $50$ $\Omega$ is connected between the junction of $P$ and $Q$ and the junction of $R$ and $S$. A battery of EMF $6$ V (negligible internal resistance) is connected across the bridge. The galvanometer shows zero deflection. Find the value of $S$ and the current through each resistor.
+A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$$Q = 200$ $\Omega$$R = 150$ $\Omega$And the unknown resistance $S$. A galvanometer of resistance $50$ $\Omega$ is connected between the junction of $P$ and $Q$ and the junction of $R$ and $S$. A battery of EMF $6$ V (negligible internal resistance) is connected across the bridge. The galvanometer shows zero deflection. Find the value of $S$ and the current through each resistor.
 
 **Solution:**
 

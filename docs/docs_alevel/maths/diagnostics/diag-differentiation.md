@@ -19,7 +19,7 @@ hide_table_of_contents: true
 
 **(b)** A student writes $\frac{dy}{dx} = 2\sin(e^{3x}) \cdot 3e^{3x}$. Identify the errors in the student's working.
 
-**(c)** Find the value of $\frac{d^2y}{dx^2}$ when $x = 0$, giving an exact answer.
+**(c)** Find the value of $\frac{d^2y}{dx^2}$ when $x = 0$Giving an exact answer.
 
 [Difficulty: hard. Tests the chain rule applied through three layers of composition (square, sine, exponential), a common source of missing factors.]
 
@@ -44,11 +44,11 @@ $$\frac{dy}{dx} = 3e^{3x}\sin(2e^{3x})$$
 
 **(b)** The student's answer $2\sin(e^{3x}) \cdot 3e^{3x}$ has two errors:
 1. Missing the $\cos(e^{3x})$ factor from differentiating the middle function $\sin(e^{3x})$. The student differentiated $\sin$ to get $1$ instead of $\cos$.
-2. The student treated $\sin^2(e^{3x})$ as if the outer function were $\sin$ and the inner function were $e^{3x}$, completely missing the square.
+2. The student treated $\sin^2(e^{3x})$ as if the outer function were $\sin$ and the inner function were $e^{3x}$Completely missing the square.
 
 **(c)** Starting from $\frac{dy}{dx} = 3e^{3x}\sin(2e^{3x})$.
 
-Apply the product rule: $u = 3e^{3x}$, $v = \sin(2e^{3x})$.
+Apply the product rule: $u = 3e^{3x}$$v = \sin(2e^{3x})$.
 
 $$\frac{du}{dx} = 9e^{3x}$$
 
@@ -58,7 +58,7 @@ $$\frac{d^2y}{dx^2} = 9e^{3x}\sin(2e^{3x}) + 3e^{3x} \cdot 6e^{3x}\cos(2e^{3x})$
 
 $$= 9e^{3x}\sin(2e^{3x}) + 18e^{6x}\cos(2e^{3x})$$
 
-At $x = 0$: $e^0 = 1$, $2e^0 = 2$.
+At $x = 0$: $e^0 = 1$$2e^0 = 2$.
 
 $$\frac{d^2y}{dx^2}\bigg\rvert_{x=0} = 9\sin 2 + 18\cos 2$$
 
@@ -72,7 +72,7 @@ A curve is defined implicitly by the equation $x^2 + xy + y^2 = 12$.
 
 **(a)** Find $\frac{dy}{dx}$ in terms of $x$ and $y$.
 
-**(b)** A student differentiates $xy$ as $1 \cdot y = y$, forgetting the product rule. Write down the incorrect expression the student would obtain for $\frac{dy}{dx}$, and find the coordinates of the points where the student's answer agrees with the correct answer.
+**(b)** A student differentiates $xy$ as $1 \cdot y = y$Forgetting the product rule. Write down the incorrect expression the student would obtain for $\frac{dy}{dx}$And find the coordinates of the points where the student's answer agrees with the correct answer.
 
 **(c)** Find the coordinates of the points on the curve where the tangent is parallel to the $x$-axis.
 
@@ -98,7 +98,7 @@ $$2x + y + 2y\frac{dy}{dx} = 0 \implies \frac{dy}{dx} = -\frac{2x+y}{2y}$$
 
 The correct answer is $\frac{dy}{dx} = -\frac{2x+y}{x+2y}$.
 
-These agree when $x + 2y = 2y$, i.e. $x = 0$.
+These agree when $x + 2y = 2y$I.e. $x = 0$.
 
 When $x = 0$: $0 + 0 + y^2 = 12 \implies y = \pm 2\sqrt{3}$.
 
@@ -116,7 +116,7 @@ When $x = 2$: $y = -4$. Point: $(2, -4)$.
 
 When $x = -2$: $y = 4$. Point: $(-2, 4)$.
 
-Checking: at $(2, -4)$, $\frac{dy}{dx} = -\frac{4-4}{2-8} = 0$. At $(-2, 4)$, $\frac{dy}{dx} = -\frac{-4+4}{-2+8} = 0$. Confirmed.
+Checking: at $(2, -4)$$\frac{dy}{dx} = -\frac{4-4}{2-8} = 0$. At $(-2, 4)$$\frac{dy}{dx} = -\frac{-4+4}{-2+8} = 0$. Confirmed.
 
 ---
 
@@ -168,7 +168,7 @@ The fact that $\frac{d^2y}{dx^2} = 0$ at a minimum occurs because the function f
 
 **(d)** $y = x^4 - 4x^3 + 6x^2 - 4x + 1 = (x-1)^4$.
 
-This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$, with equality only at $x = 1$. So $(1, 0)$ is a global (and local) minimum.
+This is immediately obvious because $(x-1)^4 \geq 0$ for all $x$With equality only at $x = 1$. So $(1, 0)$ is a global (and local) minimum.
 
 ---
 
@@ -201,17 +201,17 @@ Sign of $f'(x)$:
 
 Since $f$ is not monotonic (it increases, then decreases, then increases), $f$ is not injective on $\mathbb{R}$.
 
-For example, $f(-1) = -1 + 3 + 1 = 3$ and $f(2) = 8 - 6 + 1 = 3$, so $f(-1) = f(2)$ with $-1 \neq 2$.
+For example, $f(-1) = -1 + 3 + 1 = 3$ and $f(2) = 8 - 6 + 1 = 3$So $f(-1) = f(2)$ with $-1 \neq 2$.
 
-**(b)** The largest interval containing $x = 0$ on which $f$ is monotonic is $[-1, 1]$ (where $f' \leq 0$, with equality only at the endpoints). Actually, on $(-1, 1)$, $f' \lt 0$, so $f$ is strictly decreasing and therefore injective.
+**(b)** The largest interval containing $x = 0$ on which $f$ is monotonic is $[-1, 1]$ (where $f' \leq 0$With equality only at the endpoints). Actually, on $(-1, 1)$$f' \lt 0$So $f$ is strictly decreasing and therefore injective.
 
 The largest such interval is $[-1, 1]$.
 
 **(c)** $g'(x) = 1 + e^x$.
 
-Since $e^x \gt 0$ for all $x$, $g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb{R}$.
+Since $e^x \gt 0$ for all $x$$g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb{R}$.
 
-Therefore $g$ is strictly increasing on $\mathbb{R}$, and hence injective.
+Therefore $g$ is strictly increasing on $\mathbb{R}$And hence injective.
 
 To find $g^{-1}(3)$: solve $x + e^x = 3$.
 
@@ -239,7 +239,7 @@ The curve $C_1$ has equation $y = x^2 - 4x + 5$ and the curve $C_2$ has equation
 
 **(a)** Find the equation of the tangent to $C_1$ at the point where $x = 1$.
 
-**(b)** Show that this tangent is also a tangent to $C_2$, and find the coordinates of the point of tangency on $C_2$.
+**(b)** Show that this tangent is also a tangent to $C_2$And find the coordinates of the point of tangency on $C_2$.
 
 **(c)** The two curves have a common normal (a line perpendicular to both tangents at the respective points of contact). Determine whether such a common normal exists.
 
@@ -247,9 +247,9 @@ The curve $C_1$ has equation $y = x^2 - 4x + 5$ and the curve $C_2$ has equation
 
 **Solution:**
 
-**(a)** $y = x^2 - 4x + 5$, $\frac{dy}{dx} = 2x - 4$.
+**(a)** $y = x^2 - 4x + 5$$\frac{dy}{dx} = 2x - 4$.
 
-At $x = 1$: $y = 1 - 4 + 5 = 2$, $\frac{dy}{dx} = -2$.
+At $x = 1$: $y = 1 - 4 + 5 = 2$$\frac{dy}{dx} = -2$.
 
 Tangent: $y - 2 = -2(x - 1) \implies y = -2x + 4$.
 
@@ -265,11 +265,11 @@ Let me re-examine. The line $y = -2x + 4$ intersects $C_2$ at two points, so it 
 
 The question states to "show that this tangent is also a tangent to $C_2$." This appears to be incorrect for the given curves. The tangent to $C_1$ at $x = 1$ intersects $C_2$ at two distinct points.
 
-Let me check: the discriminant is $16 + 12 = 28 \gt 0$, confirming two distinct intersection points. The line is not tangent to $C_2$.
+Let me check: the discriminant is $16 + 12 = 28 \gt 0$Confirming two distinct intersection points. The line is not tangent to $C_2$.
 
-For the line to be tangent to $C_2$, we would need the discriminant to be zero. The gradient of the tangent to $C_2$ is $2x + 2$. Setting this equal to $-2$: $2x + 2 = -2 \implies x = -2$.
+For the line to be tangent to $C_2$We would need the discriminant to be zero. The gradient of the tangent to $C_2$ is $2x + 2$. Setting this equal to $-2$: $2x + 2 = -2 \implies x = -2$.
 
-At $x = -2$ on $C_2$: $y = 4 - 4 + 1 = 1$, gradient $= -2$. Tangent: $y - 1 = -2(x + 2) \implies y = -2x - 3$.
+At $x = -2$ on $C_2$: $y = 4 - 4 + 1 = 1$Gradient $= -2$. Tangent: $y - 1 = -2(x + 2) \implies y = -2x - 3$.
 
 This is a different line from $y = -2x + 4$. The two curves do not share a common tangent at these points.
 
@@ -326,12 +326,12 @@ The second derivative changes sign, so $\left(2, \frac{2}{e^2}\right)$ is a poin
 - Local maximum at $(1, \frac{1}{e})$
 - Point of inflection at $(2, \frac{2}{e^2})$
 - As $x \to +\infty$: $e^{-x} \to 0$ dominates, so $y \to 0$ from above. The $x$-axis is a horizontal asymptote.
-- As $x \to -\infty$: $e^{-x} = e^{\lvert x \rvert} \to +\infty$ and $x \to -\infty$, so $y = xe^{-x} \to -\infty$.
+- As $x \to -\infty$: $e^{-x} = e^{\lvert x \rvert} \to +\infty$ and $x \to -\infty$So $y = xe^{-x} \to -\infty$.
 - For $x \lt 0$: $y \lt 0$ (below $x$-axis). For $x \gt 0$: $y \gt 0$ (above $x$-axis).
 
 **(d)** The line $y = mx$ intersects $C$ when $mx = xe^{-x}$.
 
-For $x \neq 0$: $m = e^{-x}$, giving $x = -\ln m$ (requiring $m \gt 0$).
+For $x \neq 0$: $m = e^{-x}$Giving $x = -\ln m$ (requiring $m \gt 0$).
 
 For tangency, the gradient of $C$ at this point must equal $m$:
 
@@ -341,6 +341,6 @@ Substituting $e^{-x} = m$: $m(1 - (-\ln m)) = m \implies m(1 + \ln m) = m$.
 
 If $m \neq 0$: $1 + \ln m = 1 \implies \ln m = 0 \implies m = 1$.
 
-At $m = 1$: $x = -\ln 1 = 0$, and the tangent at the origin has gradient $e^0(1-0) = 1 = m$. Confirmed.
+At $m = 1$: $x = -\ln 1 = 0$And the tangent at the origin has gradient $e^0(1-0) = 1 = m$. Confirmed.
 
 The only solution is $m = 1$.

@@ -47,7 +47,7 @@ Volume $= \frac{4}{3}\pi r^3 = \frac{4}{3}\pi(216) = 288\pi \approx 904.8$ cm$^3
 
 (b) Angle ABC $= \frac{1}{2} \times$ angle AOC $= \frac{130}{2} = 65^\circ$.
 
-(c) Angle in a semicircle $= 90^\circ$, so angle ABC $= 90^\circ$.
+(c) Angle in a semicircle $= 90^\circ$So angle ABC $= 90^\circ$.
 Angle BAC $= 32^\circ$. In triangle ABC: angle ACB $= 180 - 90 - 32 = 58^\circ$.
 Angle ADC $=$ angle ABC (angles in the same segment) $= 90^\circ$.
 
@@ -91,7 +91,7 @@ Total surface area $= 100 + 4 \times 65 = 100 + 260 = 360$ cm$^2$.
 
 Verifying the pattern: $x' = 2x + 1$? A: $2(1)+1 = 3 \checkmark$. B: $2(5)+1 = 11 \checkmark$. C: $2(3)+1 = 7 \checkmark$. $y' = 2y$? A: $2(2) = 4 \checkmark$. B: $2(2) = 4 \checkmark$. C: $2(6) = 12 \checkmark$.
 
-This is an **enlargement** with scale factor 2 and centre of enlargement at $(1, 0)$: each point is mapped such that $(x', y') = (2x + 1, 2y)$, which corresponds to an enlargement by factor 2 about centre $(-1, 0)$.
+This is an **enlargement** with scale factor 2 and centre of enlargement at $(1, 0)$: each point is mapped such that $(x', y') = (2x + 1, 2y)$Which corresponds to an enlargement by factor 2 about centre $(-1, 0)$.
 
 Verification: Centre $(-1, 0)$. A $(1, 2)$: distance from centre is $(2, 2)$. Scaled by 2: $(4, 4)$. New position: $(-1+4, 0+4) = (3, 4) \checkmark$.
 

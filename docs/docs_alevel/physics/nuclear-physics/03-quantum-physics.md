@@ -18,8 +18,8 @@ Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 ## 1. The Photoelectric Effect
 
 **Definition.** The photoelectric effect is the phenomenon in which electrons are emitted from a
-metal surface when electromagnetic radiation of frequency greater than a threshold frequency is
-incident upon it.
+Metal surface when electromagnetic radiation of frequency greater than a threshold frequency is
+Incident upon it.
 
 <PhetSimulation simulationId="photoelectric" title="Photoelectric Effect" />
 
@@ -28,31 +28,31 @@ Explore the simulation above to develop intuition for this topic.
 ### Observations
 
 When light of sufficiently high frequency is incident on a metal surface, electrons are emitted. Key
-observations:
+Observations:
 
 1. Electrons are emitted **instantaneously** (no time delay, even for very low intensity).
-2. **No electrons are emitted** if the frequency is below a threshold $f_0$, regardless of
-   intensity.
+2. **No electrons are emitted** if the frequency is below a threshold $f_0$Regardless of
+ intensity.
 3. The **maximum kinetic energy** of emitted electrons depends on frequency, not intensity.
 4. Increasing intensity increases the **number** of electrons, not their energy.
 
 ### Einstein's Explanation (1905)
 
 **Definition.** A photon is a discrete quantum of electromagnetic radiation that carries energy
-$E = hf$, where $h$ is Planck's constant and $f$ is the frequency of the radiation.
+$E = hf$Where $h$ is Planck's constant and $f$ is the frequency of the radiation.
 
 Light consists of discrete packets called **photons**, each with energy:
 
 $$E = hf$$
 
-where $h = 6.63 \times 10^{-34}$ J s is Planck's constant and $f$ is the frequency.
+Where $h = 6.63 \times 10^{-34}$ J s is Planck's constant and $f$ is the frequency.
 
 **Definition.** The work function $\phi$ of a metal is the minimum energy required to remove an
-electron from the surface of that metal.
+Electron from the surface of that metal.
 
 When a photon strikes the metal surface, it transfers **all** its energy to a single electron. The
-electron uses energy $\phi$ (the **work function**) to escape the metal, and the remainder becomes
-kinetic energy:
+Electron uses energy $\phi$ (the **work function**) to escape the metal, and the remainder becomes
+Kinetic energy:
 
 $$\boxed{hf = \phi + E_{k,\max}}$$
 
@@ -73,7 +73,7 @@ $\square$
 ### Threshold Frequency
 
 **Definition.** The threshold frequency $f_0$ is the minimum frequency of incident electromagnetic
-radiation below which no photoelectrons are emitted from a metal surface, regardless of intensity.
+Radiation below which no photoelectrons are emitted from a metal surface, regardless of intensity.
 
 The threshold frequency $f_0$ is the minimum frequency for photoemission. At this frequency,
 $E_{k,\max} = 0$:
@@ -83,13 +83,13 @@ $$hf_0 = \phi \implies \boxed{f_0 = \frac◆LB◆\phi◆RB◆◆LB◆h◆RB◆}$
 The threshold wavelength: $\lambda_0 = c/f_0 = hc/\phi$.
 
 **Why wave theory fails.** Classical wave theory predicts that energy accumulates over time and
-depends on intensity, so there should be a time delay and no frequency threshold. The instantaneous
-emission and frequency dependence can only be explained by the photon model.
+Depends on intensity, so there should be a time delay and no frequency threshold. The instantaneous
+Emission and frequency dependence can only be explained by the photon model.
 
 ### Stopping Potential
 
 The maximum kinetic energy can be measured using a stopping potential $V_s$ — the minimum reverse
-voltage needed to stop the most energetic photoelectrons:
+Voltage needed to stop the most energetic photoelectrons:
 
 $$eV_s = E_{k,\max} = hf - \phi$$
 
@@ -104,25 +104,25 @@ $$eV_s = E_{k,\max} = hf - \phi$$
 ### Atomic Energy Levels
 
 **Definition.** An energy level is a discrete, quantised energy state that an electron can occupy
-within an atom, characterised by a principal quantum number $n$.
+Within an atom, characterised by a principal quantum number $n$.
 
 Electrons in atoms can only occupy discrete **energy levels**. The energy of level $n$ is $E_n$
 (negative, with $E_\infty = 0$).
 
 ### Photon Emission
 
-When an electron transitions from a higher level $E_2$ to a lower level $E_1$, it emits a photon of
-energy:
+When an electron transitions from a higher level $E_2$ to a lower level $E_1$It emits a photon of
+Energy:
 
 $$\boxed{hf = E_2 - E_1}$$
 
 The frequency is uniquely determined by the energy difference, so each transition produces a photon
-of a specific frequency — a **spectral line**.
+Of a specific frequency — a **spectral line**.
 
 ### Photon Absorption
 
 An electron can absorb a photon and jump to a higher level, but **only** if the photon energy
-exactly matches an energy level difference:
+Exactly matches an energy level difference:
 
 $$hf = E_{\mathrm{upper}} - E_{\mathrm{lower}}$$
 
@@ -131,7 +131,7 @@ This is why absorption spectra show dark lines at the same frequencies as emissi
 ### The Hydrogen Spectrum
 
 **Definition.** The electronvolt (eV) is a unit of energy equal to the work done when an electron is
-accelerated through a potential difference of one volt: $1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
+Accelerated through a potential difference of one volt: $1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
 
 The energy levels of hydrogen are given by the **Bohr model**:
 
@@ -144,20 +144,20 @@ The Paschen series (IR): transitions to $n = 3$.
 
 $$\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = R\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
-where $R = 1.097 \times 10^7$ m$^{-1}$ is the Rydberg constant.
+Where $R = 1.097 \times 10^7$ m$^{-1}$ is the Rydberg constant.
 
 **Intuition.** Energy levels are like rungs on a ladder — electrons can stand on a rung or jump
-between rungs, but cannot hover in between. Each jump emits or absorbs a photon of a precise energy.
+Between rungs, but cannot hover in between. Each jump emits or absorbs a photon of a precise energy.
 
 ## 3. Wave-Particle Duality: de Broglie Wavelength
 
 **Definition.** Wave-particle duality is the concept that all matter and radiation exhibit both
-wave-like and particle-like properties, depending on the type of measurement performed.
+Wave-like and particle-like properties, depending on the type of measurement performed.
 
 ### de Broglie's Hypothesis (1924)
 
 **Definition.** The de Broglie wavelength is the wavelength $\lambda$ associated with a particle of
-momentum $p$, given by $\lambda = h/p$, where $h$ is Planck's constant.
+Momentum $p$Given by $\lambda = h/p$Where $h$ is Planck's constant.
 
 Every particle has an associated wave with wavelength:
 
@@ -169,21 +169,21 @@ $$\boxed{\lambda = \frac{h}{p} = \frac{h}{mv}}$$
 2. Planck-Einstein relation: $E = hf = hc/\lambda$.
 3. Equating: $pc = hc/\lambda$.
 4. Therefore: $\lambda = h/p$ for a photon.
-5. de Broglie postulated that this relation applies universally to **all** particles, not just
-   photons:
+5. De Broglie postulated that this relation applies universally to **all** particles, not just
+ photons:
 
 $$\boxed{\lambda = \frac{h}{p}}$$
 
 $\square$
 
 **Derivation from photon momentum.** For a photon: $E = hf = hc/\lambda$. Using $E = pc$ (for
-massless particles): $pc = hc/\lambda$, giving $\lambda = h/p$. de Broglie proposed this relation
-applies to **all** particles, not just photons.
+Massless particles): $pc = hc/\lambda$Giving $\lambda = h/p$. De Broglie proposed this relation
+Applies to **all** particles, not just photons.
 
 ### Electron Diffraction
 
 The de Broglie hypothesis was confirmed by Davisson and Germer (1927), who observed diffraction
-patterns when electrons were directed at a nickel crystal. The diffraction condition is:
+Patterns when electrons were directed at a nickel crystal. The diffraction condition is:
 
 $$n\lambda = d\sin\theta$$
 
@@ -194,8 +194,8 @@ $$d\sin\theta = \frac{nh}{mv}$$
 This showed that electrons — particles — exhibit wave behaviour, confirming wave-particle duality.
 
 **Intuition.** A cricket ball has a de Broglie wavelength of $\sim 10^{-34}$ m — far too small to
-detect. But electrons accelerated through $\sim 100$ V have $\lambda \sim 10^{-10}$ m, comparable to
-atomic spacing, so diffraction is observable.
+Detect. But electrons accelerated through $\sim 100$ V have $\lambda \sim 10^{-10}$ m, comparable to
+Atomic spacing, so diffraction is observable.
 
 ### Calculating Electron Wavelength
 
@@ -214,17 +214,17 @@ For $V = 100$ V: $\lambda = 1.23 \times 10^{-10}$ m $= 0.123$ nm.
 ### Emission Spectrum
 
 A hot gas emits light at specific frequencies (bright lines on a dark background). Each line
-corresponds to an electron transition from a higher to a lower energy level.
+Corresponds to an electron transition from a higher to a lower energy level.
 
 ### Absorption Spectrum
 
 When white light passes through a cool gas, the gas absorbs specific frequencies (dark lines on a
-continuous spectrum). The dark lines are at the same frequencies as the emission lines.
+Continuous spectrum). The dark lines are at the same frequencies as the emission lines.
 
 ### Continuous Spectrum
 
 A hot solid or dense gas emits a continuous spectrum (all frequencies), because the close proximity
-of atoms broadens the energy levels into bands.
+Of atoms broadens the energy levels into bands.
 
 :::tip
 Exam Technique When calculating photon wavelengths from energy level transitions, first find
@@ -238,37 +238,37 @@ $1\,\mathrm{eV} = 1.60 \times 10^{-19}$ J.
 
 The double-slit experiment, originally performed with light by Young, was extended to electrons by
 Jonsson (1961). When a beam of electrons is directed at a barrier with two narrow slits, the
-resulting pattern on a detector screen shows an **interference pattern** of alternating bright and
-dark fringes — exactly as expected for waves. This occurs even when electrons are sent one at a
-time: each electron arrives at a single point on the screen, but over many arrivals, the statistical
-distribution forms an interference pattern.
+Resulting pattern on a detector screen shows an **interference pattern** of alternating bright and
+Dark fringes — exactly as expected for waves. This occurs even when electrons are sent one at a
+Time: each electron arrives at a single point on the screen, but over many arrivals, the statistical
+Distribution forms an interference pattern.
 
 This is not a property of the electron "splitting in two" — each electron arrives whole at the
-detector. The interference pattern is a statistical property of the ensemble of many electrons.
+Detector. The interference pattern is a statistical property of the ensemble of many electrons.
 
 ### The Measurement Problem
 
 If a detector is placed at one slit to determine **which** slit each electron passes through, the
-interference pattern **disappears** and is replaced by two overlapping single-slit diffraction
-patterns. The act of measurement fundamentally alters the outcome.
+Interference pattern **disappears** and is replaced by two overlapping single-slit diffraction
+Patterns. The act of measurement fundamentally alters the outcome.
 
 This is not a limitation of the detector technology. It is a fundamental feature of nature: the
-measurement interaction disturbs the electron's wavefunction sufficiently to destroy the coherence
-between the two paths.
+Measurement interaction disturbs the electron's wavefunction sufficiently to destroy the coherence
+Between the two paths.
 
 **The critical insight.** An electron does not have a well-defined trajectory (slit position) and
-simultaneously exhibit interference. The experimental arrangement determines which aspect of the
-electron's behaviour is revealed.
+Simultaneously exhibit interference. The experimental arrangement determines which aspect of the
+Electron's behaviour is revealed.
 
 ### Complementarity Principle (Bohr)
 
 Bohr's complementarity principle states that wave-like and particle-like descriptions are
 **complementary**: a complete description of a quantum object requires both, but they cannot be
-observed simultaneously. Any experiment that reveals particle behaviour (which-slit detection)
-suppresses wave behaviour (interference), and vice versa.
+Observed simultaneously. Any experiment that reveals particle behaviour (which-slit detection)
+Suppresses wave behaviour (interference), and vice versa.
 
 This is not a statement about experimental imperfection — it is a statement about the nature of
-reality at the quantum level.
+Reality at the quantum level.
 
 ### Heisenberg Uncertainty Principle
 
@@ -277,45 +277,45 @@ $\Delta x$ and the uncertainty in momentum $\Delta p$ satisfies:
 
 $$\boxed{\Delta x \cdot \Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆}$$
 
-where $\hbar = h/(2\pi) = 1.055 \times 10^{-34}$ J s is the reduced Planck constant.
+Where $\hbar = h/(2\pi) = 1.055 \times 10^{-34}$ J s is the reduced Planck constant.
 
 This is an equality for Gaussian wave packets (minimum-uncertainty states) and an inequality for all
-others.
+Others.
 
 ### Derivation from Wave Packet Analysis (Simplified)
 
 A particle that is localised within a region of width $\Delta x$ cannot be described by a single
-plane wave (which extends over all space). It must be described by a **wave packet** — a
-superposition of many plane waves with different wavelengths (and hence different momenta, since
+Plane wave (which extends over all space). It must be described by a **wave packet** — a
+Superposition of many plane waves with different wavelengths (and hence different momenta, since
 $p = h/\lambda$).
 
 1. Consider a particle whose wavefunction is a superposition of plane waves with wave numbers
-   centred at $k_0 = p_0/\hbar$ and spread over a range $\Delta k$:
+ centred at $k_0 = p_0/\hbar$ and spread over a range $\Delta k$:
 
 $$\psi(x) = \int_{k_0 - \Delta k}^{k_0 + \Delta k} A(k) e^{ikx}\, dk$$
 
 2. The localisation of this wave packet is determined by the spread in $k$. For a Gaussian amplitude
-   $A(k)$, the resulting $\psi(x)$ is also Gaussian, and the widths satisfy:
+ $A(k)$The resulting $\psi(x)$ is also Gaussian, and the widths satisfy:
 
 $$\Delta x \cdot \Delta k = \frac{1}{2}$$
 
-3. Since $p = \hbar k$, we have $\Delta p = \hbar \, \Delta k$. Substituting:
+3. Since $p = \hbar k$We have $\Delta p = \hbar \, \Delta k$. Substituting:
 
 $$\Delta x \cdot \frac◆LB◆\Delta p◆RB◆◆LB◆\hbar◆RB◆ = \frac{1}{2}$$
 
 $$\boxed{\Delta x \cdot \Delta p = \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆}$$
 
 This is the minimum uncertainty product. For non-Gaussian wave packets, the product is larger, hence
-the general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
+The general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
 
 $\square$
 
 :::warning
-warning
-system." While this is a consequence, it is not the fundamental origin. The principle follows from
-the mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
-artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
-position and a well-defined momentum.
+Warning
+System." While this is a consequence, it is not the fundamental origin. The principle follows from
+The mathematics of wave superposition — it is intrinsic to the wave nature of matter, not an
+Artifact of clumsy measurement. A particle **does not simultaneously possess** a well-defined
+Position and a well-defined momentum.
 :::
 
 ### Consequences of the Uncertainty Principle
@@ -330,13 +330,13 @@ The corresponding kinetic energy (using $E_k = p^2/2m$ and taking $p \approx \De
 $$E_k \geq \frac◆LB◆(1.06 \times 10^{-20})^2◆RB◆◆LB◆2 \times 9.11 \times 10^{-31}◆RB◆ = 6.1 \times 10^{-11}\,\mathrm{J} \approx 382\,\mathrm{MeV}$$
 
 This is orders of magnitude larger than the binding energy of the atom ($\sim 13.6$ eV). The
-confinement energy alone would far exceed any attractive potential, so the electron cannot be
-confined to the nucleus.
+Confinement energy alone would far exceed any attractive potential, so the electron cannot be
+Confined to the nucleus.
 
 **Zero-point energy.** A particle confined to any finite region must have non-zero kinetic energy
-due to the uncertainty principle. Even at absolute zero temperature, a particle in a box has
+Due to the uncertainty principle. Even at absolute zero temperature, a particle in a box has
 $E_1 \gt 0$. This is the **zero-point energy**, and it is a direct consequence of wave mechanics,
-not thermal motion.
+Not thermal motion.
 
 ### Worked Example: Uncertainty in Position of an Electron Confined to a Nucleus
 
@@ -359,24 +359,24 @@ $$E_k \geq \frac◆LB◆(1.06 \times 10^{-20})^2◆RB◆◆LB◆2 \times 9.11 \t
 $$E_k \geq \frac◆LB◆6.15 \times 10^{-11}◆RB◆◆LB◆1.60 \times 10^{-19}◆RB◆ = 3.84 \times 10^8\,\mathrm{eV} = 384\,\mathrm{MeV}$$
 
 This is $\sim 28$ million times the ground-state binding energy of hydrogen (13.6 eV), confirming
-that the electron cannot exist inside the nucleus.
+That the electron cannot exist inside the nucleus.
 
 ## 6. Line Spectra — Quantitative Treatment
 
 ### Derivation of the Bohr Model
 
 The Bohr model (1913) was the first successful quantitative model of the hydrogen atom. It rests on
-two postulates.
+Two postulates.
 
 **Bohr's Postulates:**
 
 1. **Quantised angular momentum.** The electron can only occupy orbits where its angular momentum is
-   an integer multiple of $\hbar$:
+ an integer multiple of $\hbar$:
 
 $$L = m_e v r = n\hbar, \qquad n = 1, 2, 3, \ldots$$
 
 2. **Radiation condition.** An electron in a stationary orbit does not radiate. It emits or absorbs
-   a photon only when transitioning between orbits:
+ a photon only when transitioning between orbits:
 
 $$hf = E_{n_i} - E_{n_f}$$
 
@@ -388,7 +388,7 @@ Starting from the quantisation condition and the balance of Coulomb force and ce
 
 $$\frac{k e^2}{r^2} = \frac{m_e v^2}{r}$$
 
-where $k = 1/(4\pi\varepsilon_0)$.
+Where $k = 1/(4\pi\varepsilon_0)$.
 
 2. From the quantisation condition: $v = n\hbar/(m_e r)$.
 
@@ -400,7 +400,7 @@ $$\frac{k e^2}{r^2} = \frac{m_e}{r}\left(\frac◆LB◆n\hbar◆RB◆◆LB◆m_e 
 
 $$r^3 = \frac◆LB◆n^2 \hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ \cdot r^2 \implies \boxed{r_n = \frac◆LB◆n^2 \hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ = \frac{n^2}{Z} a_0}$$
 
-where the **Bohr radius** is:
+Where the **Bohr radius** is:
 
 $$\boxed{a_0 = \frac◆LB◆\hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ = 0.0529\,\mathrm{nm}}$$
 
@@ -412,7 +412,7 @@ $\square$
 
 The total energy of the electron in orbit $n$ is the sum of kinetic and potential energies:
 
-1. Kinetic energy: from the force balance, $m_e v^2/r = ke^2/r^2$, so:
+1. Kinetic energy: from the force balance, $m_e v^2/r = ke^2/r^2$So:
 
 $$E_k = \frac{1}{2}m_e v^2 = \frac{k e^2}{2r_n}$$
 
@@ -457,7 +457,7 @@ $\square$
 ### Series Limits
 
 Each spectral series has a **series limit** — the shortest wavelength (highest frequency)
-corresponding to the transition from $n = \infty$ to the series' final level:
+Corresponding to the transition from $n = \infty$ to the series' final level:
 
 - **Lyman** ($n_f = 1$): $\lambda_{\min} = 1/R = 91.18$ nm (UV)
 - **Balmer** ($n_f = 2$): $\lambda_{\min} = 4/(3R) = 364.6$ nm (near UV)
@@ -477,37 +477,37 @@ For hydrogen, this equals the ground state binding energy in magnitude.
 ### Franck-Hertz Experiment (1914)
 
 The Franck-Hertz experiment provided direct experimental evidence for quantised energy levels,
-independent of spectroscopy.
+Independent of spectroscopy.
 
 **Setup.** Electrons are emitted from a heated cathode and accelerated through a potential
-difference $V$ toward a grid. Beyond the grid is an anode held at a slightly lower potential
+Difference $V$ toward a grid. Beyond the grid is an anode held at a slightly lower potential
 ($\sim 0.5$ V less than the grid). The tube contains low-pressure mercury (Hg) vapour.
 
 **Observation.** As the accelerating voltage $V$ is increased from zero, the anode current rises —
-electrons reach the anode. At $V \approx 4.9$ V, the current **drops sharply**. The current then
-rises again, drops at $V \approx 9.8$ V, again at $V \approx 14.7$ V, and so on.
+Electrons reach the anode. At $V \approx 4.9$ V, the current **drops sharply**. The current then
+Rises again, drops at $V \approx 9.8$ V, again at $V \approx 14.7$ V, and so on.
 
 **Explanation.**
 
 1. At $V = 4.9$ V, electrons have just enough kinetic energy ($4.9$ eV) to excite a Hg atom from its
-   ground state to its first excited state via an inelastic collision.
+ ground state to its first excited state via an inelastic collision.
 2. The electron loses $4.9$ eV and no longer has enough energy to overcome the small retarding
-   potential between grid and anode — the current drops.
+ potential between grid and anode — the current drops.
 3. At higher voltages, the electron can undergo one excitation and still reach the anode (current
-   rises), then at $V = 9.8$ V it can excite two atoms, and so on.
+ rises), then at $V = 9.8$ V it can excite two atoms, and so on.
 
 The spacing of $4.9$ V between successive dips directly measures the energy gap to the first excited
-state of Hg. The emitted photon has wavelength:
+State of Hg. The emitted photon has wavelength:
 
 $$\lambda = \frac◆LB◆hc◆RB◆◆LB◆\Delta E◆RB◆ = \frac◆LB◆1240\,\mathrm{eV nm}◆RB◆◆LB◆4.9\,\mathrm{eV}◆RB◆ = 253\,\mathrm{nm}$$
 
-which is in the UV — consistent with the observed UV emission from the Hg vapour.
+Which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
 :::tip
-tip
-confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
-multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
-energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
+Tip
+Confirms quantised energy levels." The key points are: (1) the periodic current drops occur at
+Multiples of $4.9$ V, (2) this corresponds to a fixed energy loss per collision, (3) the fixed
+Energy loss can only be explained by discrete (quantised) energy levels in the Hg atom.
 :::
 
 ## 7. Wave Functions and Probability
@@ -515,14 +515,14 @@ energy loss can only be explained by discrete (quantised) energy levels in the H
 ### Born Interpretation
 
 **Definition.** The wave function $\psi(x)$ is a complex-valued function that completely describes
-the quantum state of a particle. Its physical significance is given by the Born rule.
+The quantum state of a particle. Its physical significance is given by the Born rule.
 
 The **Born interpretation** (1926) states that $|\psi(x)|^2$ is the **probability density** for
-finding the particle at position $x$:
+Finding the particle at position $x$:
 
 $$\boxed{P(x)\,dx = |\psi(x)|^2\,dx}$$
 
-where $P(x)\,dx$ is the probability of finding the particle between $x$ and $x + dx$.
+Where $P(x)\,dx$ is the probability of finding the particle between $x$ and $x + dx$.
 
 Since the particle must be somewhere, the total probability must equal 1:
 
@@ -532,14 +532,14 @@ This is the **normalisation condition**. A wave function that satisfies this con
 **normalised**.
 
 :::warning
-warning
+Warning
 Only $|\psi(x)|^2 = \psi^*(x)\psi(x)$ has physical meaning as a probability density. Also, $\psi(x)$
-is not directly measurable; only $|\psi(x)|^2$ is observable.
+Is not directly measurable; only $|\psi(x)|^2$ is observable.
 :::
 
 ### Electron in a Box: 1D Infinite Potential Well
 
-Consider an electron confined to a one-dimensional box of length $L$, with impenetrable walls at
+Consider an electron confined to a one-dimensional box of length $L$With impenetrable walls at
 $x = 0$ and $x = L$. Inside the box, $V = 0$; outside, $V = \infty$.
 
 **Boundary conditions.** The electron cannot exist outside the box, so:
@@ -549,7 +549,7 @@ $$\psi(0) = 0 \quad \mathrm{and} \quad \psi(L) = 0$$
 **Proof: Derivation of the wave functions and energy levels.**
 
 1. Inside the box ($0 \lt x \lt L$), the time-independent Schrodinger equation for a free particle
-   is:
+ is:
 
 $$-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ = E\psi$$
 
@@ -558,11 +558,11 @@ $$-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\frac◆LB◆d^2\psi◆RB◆◆
 $$\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ + \frac◆LB◆2mE◆RB◆◆LB◆\hbar^2◆RB◆\psi = 0$$
 
 3. This is the simple harmonic oscillator equation with $k^2 = 2mE/\hbar^2$. The general solution
-   is:
+ is:
 
 $$\psi(x) = A\sin(kx) + B\cos(kx)$$
 
-where $k = \sqrt{2mE}/\hbar$.
+Where $k = \sqrt{2mE}/\hbar$.
 
 4. Applying the boundary condition $\psi(0) = 0$:
 
@@ -574,12 +574,12 @@ So $\psi(x) = A\sin(kx)$.
 
 $$\psi(L) = A\sin(kL) = 0$$
 
-Since $A \neq 0$ (trivial solution), we require $\sin(kL) = 0$, which means:
+Since $A \neq 0$ (trivial solution), we require $\sin(kL) = 0$Which means:
 
 $$kL = n\pi, \qquad n = 1, 2, 3, \ldots$$
 
 Note: $n = 0$ gives $\psi(x) = 0$ everywhere (no particle), and $n \lt 0$ gives the same wave
-function as positive $n$.
+Function as positive $n$.
 
 6. Therefore:
 
@@ -598,44 +598,44 @@ $\square$
 **Key features of the solutions:**
 
 - **Quantised energy.** Only discrete energies $E_n = n^2 h^2/(8mL^2)$ are allowed — quantisation
-  emerges from boundary conditions, not from ad hoc postulates.
+ emerges from boundary conditions, not from ad hoc postulates.
 - **Zero-point energy.** $E_1 = h^2/(8mL^2) \gt 0$. The ground state energy is non-zero, a direct
-  consequence of the uncertainty principle: confining the particle to the box requires momentum
-  uncertainty, hence kinetic energy.
+ consequence of the uncertainty principle: confining the particle to the box requires momentum
+ uncertainty, hence kinetic energy.
 - **Nodes.** The wave function $\psi_n$ has $n - 1$ nodes (zero crossings) within the box. Higher
-  energy states have more nodes.
+ energy states have more nodes.
 
 ### Comparison with the Bohr Model
 
-| Feature                | Bohr Model               | Infinite Square Well          |
+| Feature | Bohr Model | Infinite Square Well |
 | ---------------------- | ------------------------ | ----------------------------- |
 | Origin of quantisation | Postulate ($L = n\hbar$) | Boundary conditions on $\psi$ |
-| Energy scaling         | $E_n \propto -1/n^2$     | $E_n \propto n^2$             |
-| Ground state           | $E_1 = -13.6$ eV         | $E_1 = h^2/(8mL^2)$           |
-| Angular momentum       | $L = n\hbar$             | Not defined (1D)              |
-| Validity               | Hydrogen-like atoms only | General confinement           |
+| Energy scaling | $E_n \propto -1/n^2$ | $E_n \propto n^2$ |
+| Ground state | $E_1 = -13.6$ eV | $E_1 = h^2/(8mL^2)$ |
+| Angular momentum | $L = n\hbar$ | Not defined (1D) |
+| Validity | Hydrogen-like atoms only | General confinement |
 
 The Bohr model and the infinite square well both give quantised energy levels, but the **mechanism**
-is fundamentally different. The Bohr model imposes quantisation as an axiom; in wave mechanics,
-quantisation **emerges naturally** from the requirement that the wave function satisfy boundary
-conditions. This is the deeper insight of quantum mechanics.
+Is fundamentally different. The Bohr model imposes quantisation as an axiom; in wave mechanics,
+Quantisation **emerges ** from the requirement that the wave function satisfy boundary
+Conditions. This is the deeper insight of quantum mechanics.
 
 ### Probability Density Plots
 
 For the first three states:
 
 - **$n = 1$:** $|\psi_1(x)|^2 = (2/L)\sin^2(\pi x/L)$. Maximum probability at the centre
-  ($x = L/2$). No nodes inside the box.
+ ($x = L/2$). No nodes inside the box.
 - **$n = 2$:** $|\psi_2(x)|^2 = (2/L)\sin^2(2\pi x/L)$. A node at $x = L/2$. Maxima at $x = L/4$ and
-  $x = 3L/4$. The particle is **never** found at the centre — this has no classical analogue.
+ $x = 3L/4$. The particle is **never** found at the centre — this has no classical analogue.
 - **$n = 3$:** $|\psi_3(x)|^2 = (2/L)\sin^2(3\pi x/L)$. Two nodes at $x = L/3$ and $x = 2L/3$. Three
-  maxima.
+ maxima.
 
 :::warning
-warning
+Warning
 (nodes), but the probability of finding the particle in an **interval** of finite width containing a
-node is not zero. When asked "what is the probability at position $x$," the correct answer is zero
-for any single point (probability densities are per unit length). Always integrate over an interval.
+Node is not zero. When asked "what is the probability at position $x$" the correct answer is zero
+For any single point (probability densities are per unit length). Always integrate over an interval.
 :::
 
 ## 8. Electron Microscopy
@@ -643,38 +643,38 @@ for any single point (probability densities are per unit length). Always integra
 ### Resolution Limit: The Abbe Criterion
 
 The resolution of any imaging system — the minimum distance between two points that can be
-distinguished — is limited by diffraction. The **Abbe criterion** states:
+Distinguished — is limited by diffraction. The **Abbe criterion** states:
 
 $$\boxed{\Delta x \approx \frac◆LB◆\lambda◆RB◆◆LB◆2\sin\theta◆RB◆}$$
 
-where $\lambda$ is the wavelength of the probing radiation and $\theta$ is the half-angle subtended
-by the objective lens. For the best possible resolution (large $\theta$), this simplifies to:
+Where $\lambda$ is the wavelength of the probing radiation and $\theta$ is the half-angle subtended
+By the objective lens. For the best possible resolution (large $\theta$), this simplifies to:
 
 $$\Delta x \sim \frac◆LB◆\lambda◆RB◆◆LB◆2◆RB◆$$
 
 **The key advantage of electron microscopes.** The resolving power is directly proportional to
-wavelength. Electrons can be given very short wavelengths by accelerating them to high energies:
+Wavelength. Electrons can be given very short wavelengths by accelerating them to high energies:
 
 $$\lambda_e = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆$$
 
 For $V = 100$ kV: $\lambda_e = 3.7 \times 10^{-12}$ m $= 0.0037$ nm.
 
 Compare with visible light ($\lambda \sim 500$ nm): the electron wavelength is $\sim 10^5$ times
-smaller, so the theoretical resolution is $\sim 10^5$ times better.
+Smaller, so the theoretical resolution is $\sim 10^5$ times better.
 
 ### TEM vs SEM
 
-| Feature              | TEM (Transmission)                        | SEM (Scanning)                            |
+| Feature | TEM (Transmission) | SEM (Scanning) |
 | -------------------- | ----------------------------------------- | ----------------------------------------- |
-| Principle            | Electrons transmitted through thin sample | Electrons scattered from surface          |
-| Image                | 2D projection of internal structure       | 3D surface topography                     |
-| Sample               | Must be very thin ($\lt 100$ nm)          | Can be bulk, coated with conductive layer |
-| Resolution           | $\sim 0.1$ nm                             | $\sim 1$ nm                               |
-| Accelerating voltage | 100--300 kV                               | 1--30 kV                                  |
+| Principle | Electrons transmitted through thin sample | Electrons scattered from surface |
+| Image | 2D projection of internal structure | 3D surface topography |
+| Sample | Must be very thin ($\lt 100$ nm) | Can be bulk, coated with conductive layer |
+| Resolution | $\sim 0.1$ nm | $\sim 1$ nm |
+| Accelerating voltage | 100--300 kV | 1--30 kV |
 
 ### Accelerating Voltage for a Given Resolution
 
-To achieve a resolution of $\Delta x$, we need $\lambda \lesssim 2\Delta x$:
+To achieve a resolution of $\Delta x$We need $\lambda \lesssim 2\Delta x$:
 
 $$\frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆ \leq 2\Delta x$$
 
@@ -687,14 +687,14 @@ $$2m_e eV \geq \frac◆LB◆h^2◆RB◆◆LB◆4(\Delta x)^2◆RB◆$$
 $$\boxed{V \geq \frac◆LB◆h^2◆RB◆◆LB◆8m_e e(\Delta x)^2◆RB◆}$$
 
 This gives the minimum accelerating voltage needed to achieve a target resolution, neglecting lens
-aberrations (which in practice further limit resolution).
+Aberrations (which in practice further limit resolution).
 
 ## Problem Set
 
 <details>
 <summary>Problem 1</summary>
 The work function of sodium is $2.28$ eV. Calculate: (a) the threshold frequency, (b) the maximum
-kinetic energy of photoelectrons when light of frequency $8.0 \times 10^{14}$ Hz is incident.
+Kinetic energy of photoelectrons when light of frequency $8.0 \times 10^{14}$ Hz is incident.
 
 **Answer.** (a)
 $f_0 = \phi/h = 2.28 \times 1.60 \times 10^{-19} / 6.63 \times 10^{-34} = 5.50 \times 10^{14}$ Hz.
@@ -730,7 +730,7 @@ Calculate the de Broglie wavelength of an electron moving at $2.0 \times 10^6$ m
 
 **Answer.**
 $\lambda = h/(m_e v) = 6.63 \times 10^{-34} / (9.11 \times 10^{-31} \times 2.0 \times 10^6) = 6.63 \times 10^{-34} / 1.822 \times 10^{-24} = 3.64 \times 10^{-10}$
-m $= 0.364$ nm.
+M $= 0.364$ nm.
 
 <b>If you get this wrong, revise:</b> [de Broglie's Hypothesis](#de-broglies-hypothesis-1924)
 
@@ -739,13 +739,13 @@ m $= 0.364$ nm.
 <details>
 <summary>Problem 4</summary>
 An electron in a hydrogen atom transitions from $n = 4$ to $n = 2$. Calculate the wavelength of the
-emitted photon.
+Emitted photon.
 
 **Answer.** $E_4 = -13.6/16 = -0.85$ eV. $E_2 = -13.6/4 = -3.40$ eV. $\Delta E = 3.40 - 0.85 = 2.55$
-eV $= 4.08 \times 10^{-19}$ J.
+EV $= 4.08 \times 10^{-19}$ J.
 
 $\lambda = hc/\Delta E = 6.63 \times 10^{-34} \times 3.0 \times 10^8 / 4.08 \times 10^{-19} = 4.87 \times 10^{-7}$
-m $= 487$ nm (blue-green, Balmer series).
+M $= 487$ nm (blue-green, Balmer series).
 
 <b>If you get this wrong, revise:</b> [Photon Emission](#photon-emission)
 
@@ -754,11 +754,11 @@ m $= 487$ nm (blue-green, Balmer series).
 <details>
 <summary>Problem 5</summary>
 Light of wavelength 200 nm is incident on a zinc plate with work function 4.30 eV. Determine whether
-photoelectrons are emitted and, if so, calculate their maximum kinetic energy.
+Photoelectrons are emitted and, if so, calculate their maximum kinetic energy.
 
 **Answer.** Photon energy $= hc/\lambda = 1240\,\mathrm{eV nm}/200\,\mathrm{nm} = 6.20$ eV.
 
-Since $6.20 \gt 4.30$, photoelectrons are emitted. $E_{k,\max} = 6.20 - 4.30 = 1.90$ eV.
+Since $6.20 \gt 4.30$Photoelectrons are emitted. $E_{k,\max} = 6.20 - 4.30 = 1.90$ eV.
 
 <b>If you get this wrong, revise:</b> [Threshold Frequency](#threshold-frequency)
 
@@ -767,14 +767,14 @@ Since $6.20 \gt 4.30$, photoelectrons are emitted. $E_{k,\max} = 6.20 - 4.30 = 1
 <details>
 <summary>Problem 6</summary>
 Calculate the de Broglie wavelength of a neutron moving with kinetic energy $0.025$ eV (thermal
-neutron).
+Neutron).
 
 **Answer.** $E_k = 0.025 \times 1.60 \times 10^{-19} = 4.0 \times 10^{-21}$ J.
 $v = \sqrt{2E_k/m_n} = \sqrt◆LB◆2 \times 4.0 \times 10^{-21} / 1.675 \times 10^{-27}◆RB◆ = \sqrt◆LB◆4.78 \times 10^6◆RB◆ = 2186$
-m s$^{-1}$.
+M s$^{-1}$.
 
 $\lambda = h/(m_n v) = 6.63 \times 10^{-34} / (1.675 \times 10^{-27} \times 2186) = 1.82 \times 10^{-10}$
-m $= 0.182$ nm.
+M $= 0.182$ nm.
 
 <b>If you get this wrong, revise:</b> [de Broglie's Hypothesis](#de-broglies-hypothesis-1924)
 
@@ -785,12 +785,12 @@ m $= 0.182$ nm.
 Explain why the photoelectric effect cannot be explained by classical wave theory.
 
 **Answer.** Classical wave theory predicts: (1) energy is proportional to intensity, so sufficient
-intensity at any frequency should eventually eject electrons — but there is a frequency threshold
-below which no electrons are emitted regardless of intensity. (2) Energy accumulates over time, so
-there should be a time delay at low intensities — but emission is instantaneous. (3) Maximum kinetic
-energy should depend on intensity — but it depends on frequency. These observations are explained by
-the photon model: each photon has energy $hf$; one photon interacts with one electron; the photon
-must have enough energy ($hf \gt \phi$) to liberate the electron.
+Intensity at any frequency should eventually eject electrons — but there is a frequency threshold
+Below which no electrons are emitted regardless of intensity. (2) Energy accumulates over time, so
+There should be a time delay at low intensities — but emission is instantaneous. (3) Maximum kinetic
+Energy should depend on intensity — but on frequency. These observations are explained by
+The photon model: each photon has energy $hf$; one photon interacts with one electron; the photon
+Must have enough energy ($hf \gt \phi$) to liberate the electron.
 
 <b>If you get this wrong, revise:</b> [Why wave theory fails](#threshold-frequency)
 
@@ -799,11 +799,11 @@ must have enough energy ($hf \gt \phi$) to liberate the electron.
 <details>
 <summary>Problem 8</summary>
 An electron is accelerated through a potential difference of 500 V. Calculate its de Broglie
-wavelength.
+Wavelength.
 
 **Answer.**
 $\lambda = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 500}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆\sqrt{1.458 \times 10^{-46}}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆1.208 \times 10^{-23}◆RB◆ = 5.49 \times 10^{-11}$
-m $= 0.0549$ nm.
+M $= 0.0549$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Calculating Electron Wavelength](#calculating-electron-wavelength)
@@ -813,7 +813,7 @@ m $= 0.0549$ nm.
 <details>
 <summary>Problem 9</summary>
 A hydrogen atom in the ground state ($n = 1$) absorbs a photon of wavelength 97.3 nm. To which
-energy level does the electron jump?
+Energy level does the electron jump?
 
 **Answer.** Photon energy $= hc/\lambda = 1240/97.3 = 12.75$ eV.
 
@@ -828,7 +828,7 @@ $E_n = -13.6/n^2 = -0.85$. $n^2 = 13.6/0.85 = 16$. $n = 4$.
 <details>
 <summary>Problem 10</summary>
 In a photoelectric effect experiment, the maximum kinetic energy of photoelectrons is plotted
-against the frequency of incident light. The graph has a gradient of $4.0 \times 10^{-15}$ J s and a
+Against the frequency of incident light. The graph has a gradient of $4.0 \times 10^{-15}$ J s and a
 $y$-intercept of $-3.2 \times 10^{-19}$ J. Calculate Planck's constant and the work function.
 
 **Answer.** From $E_{k,\max} = hf - \phi$: gradient $= h = 4.0 \times 10^{-15}$ J s.
@@ -865,12 +865,12 @@ The minimum uncertainty in velocity is $5.8 \times 10^5$ m s$^{-1}$.
 <details>
 <summary>Problem 12</summary>
 Starting from the Bohr postulates, derive the Bohr radius $a_0$ and the ground state energy of
-hydrogen.
+Hydrogen.
 
 **Answer.**
 
-From the quantised angular momentum postulate, $m_e v r = n\hbar$, and the Coulomb-centripetal force
-balance, $ke^2/r^2 = m_e v^2/r$:
+From the quantised angular momentum postulate, $m_e v r = n\hbar$And the Coulomb-centripetal force
+Balance, $ke^2/r^2 = m_e v^2/r$:
 
 1. From the force balance: $m_e v^2 = ke^2/r$.
 2. From quantisation: $v = n\hbar/(m_e r)$.
@@ -880,7 +880,7 @@ $$m_e \frac◆LB◆n^2\hbar^2◆RB◆◆LB◆m_e^2 r^2◆RB◆ = \frac{ke^2}{r} 
 
 $$r_n = \frac◆LB◆n^2\hbar^2◆RB◆◆LB◆m_e ke^2◆RB◆$$
 
-For $n = 1$, the Bohr radius:
+For $n = 1$The Bohr radius:
 
 $$a_0 = \frac◆LB◆\hbar^2◆RB◆◆LB◆m_e ke^2◆RB◆ = \frac◆LB◆(1.055 \times 10^{-34})^2◆RB◆◆LB◆9.11 \times 10^{-31} \times 8.99 \times 10^9 \times (1.60 \times 10^{-19})^2◆RB◆ = 5.29 \times 10^{-11}\,\mathrm{m} = 0.0529\,\mathrm{nm}$$
 
@@ -895,14 +895,14 @@ $$E_1 = -\frac{ke^2}{2a_0} = -\frac◆LB◆(8.99 \times 10^9)(1.60 \times 10^{-1
 <details>
 <summary>Problem 13</summary>
 In a Franck-Hertz experiment with mercury vapour, the anode current shows periodic dips at
-accelerating voltages of 4.9 V, 9.8 V, and 14.7 V. Calculate the energy of the first excited state
-of mercury (relative to the ground state) and the wavelength of the photon emitted when the atom
-de-excites.
+Accelerating voltages of 4.9 V, 9.8 V, and 14.7 V. Calculate the energy of the first excited state
+Of mercury (relative to the ground state) and the wavelength of the photon emitted when the atom
+De-excites.
 
 **Answer.**
 
 1. The spacing between consecutive dips is $9.8 - 4.9 = 4.9$ V, which corresponds to an energy of
-   $4.9$ eV. This is the energy of the first excited state above the ground state.
+ $4.9$ eV. This is the energy of the first excited state above the ground state.
 
 2. Wavelength of the emitted photon:
 
@@ -917,7 +917,7 @@ This is in the ultraviolet region, consistent with the observed UV emission.
 <details>
 <summary>Problem 14</summary>
 An electron is confined to a one-dimensional infinite potential well of width $L = 1.0$ nm. Calculate
-the energies of the ground state ($n = 1$) and the first three excited states ($n = 2, 3, 4$).
+The energies of the ground state ($n = 1$) and the first three excited states ($n = 2, 3, 4$).
 
 **Answer.**
 
@@ -975,9 +975,9 @@ Evaluating at $x = L/4$:
 
 $$P = \frac{1}{L}\left[\frac{L}{4} - \frac◆LB◆L◆RB◆◆LB◆4\pi◆RB◆\sin(\pi)\right] = \frac{1}{L} \cdot \frac{L}{4} = \frac{1}{4}$$
 
-The probability is exactly $1/4$ (or $25\%$). This makes sense by symmetry: for $n = 2$, the
-probability density has two identical lobes, and the first quarter contains exactly half of the
-first lobe.
+The probability is exactly $1/4$ (or $25\%$). This makes sense by symmetry: for $n = 2$The
+Probability density has two identical lobes, and the first quarter contains exactly half of the
+First lobe.
 
 <b>If you get this wrong, revise:</b> [Born Interpretation](#born-interpretation)
 
@@ -986,7 +986,7 @@ first lobe.
 <details>
 <summary>Problem 17</summary>
 An electron microscope is designed to achieve a resolution of $0.1$ nm. Calculate the minimum
-accelerating voltage required, assuming the Abbe criterion with $\sin\theta \approx 1$.
+Accelerating voltage required, assuming the Abbe criterion with $\sin\theta \approx 1$.
 
 **Answer.**
 
@@ -1002,7 +1002,7 @@ $$V = \frac◆LB◆4.396 \times 10^{-67}◆RB◆◆LB◆2 \times 9.11 \times 10^
 $$V = \frac◆LB◆4.396 \times 10^{-67}◆RB◆◆LB◆1.167 \times 10^{-68}◆RB◆ = 37.7\,\mathrm{V}$$
 
 In practice, a much higher voltage ($\gt 100$ kV) is used because lens aberrations further limit the
-resolution, but the diffraction-limited minimum is approximately $38$ V.
+Resolution, but the diffraction-limited minimum is approximately $38$ V.
 
 <b>If you get this wrong, revise:</b>
 [Accelerating Voltage for a Given Resolution](#accelerating-voltage-for-a-given-resolution)
@@ -1012,17 +1012,29 @@ resolution, but the diffraction-limited minimum is approximately $38$ V.
 <details>
 <summary>Problem 18</summary>
 Calculate the de Broglie wavelength of a C-60 fullerene molecule (buckminsterfullerene) with a
-mass of $1.20 \times 10^{-24}$ kg moving at $220$ m s$^{-1}$ (typical velocity in a molecular beam
-experiment at $\sim 900$ K).
+Mass of $1.20 \times 10^{-24}$ kg moving at $220$ m s$^{-1}$ (typical velocity in a molecular beam
+Experiment at $\sim 900$ K).
 
 **Answer.**
 
 $$\lambda = \frac{h}{mv} = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆1.20 \times 10^{-24} \times 220◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆2.64 \times 10^{-22}◆RB◆ = 2.51 \times 10^{-12}\,\mathrm{m} = 0.00251\,\mathrm{nm}$$
 
 This is comparable to the spacing between atoms in a crystal lattice. Remarkably, interference
-patterns for C-60 have been observed experimentally (Arndt et al., 1999), confirming wave-particle
-duality for molecules composed of 60 carbon atoms.
+Patterns for C-60 have been observed experimentally (Arndt et al., 1999), confirming wave-particle
+Duality for molecules composed of 60 carbon atoms.
 
 <b>If you get this wrong, revise:</b> [de Broglie's Hypothesis](#de-broglies-hypothesis-1924)
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

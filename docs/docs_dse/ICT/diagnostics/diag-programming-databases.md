@@ -48,7 +48,7 @@ END FUNCTION
 ```
 Time complexity: $O(n)$. For 1024 elements, worst case is 1024 comparisons. Binary search is exponentially faster for sorted data.
 
-(d) Binary search relies on the property that if `array[mid] < target`, the target must be in the right half (since the array is sorted). In an unsorted array, the target could be anywhere regardless of the mid-value comparison, so the divide-and-conquer strategy does not work.
+(d) Binary search relies on the property that if `array[mid] < target`The target must be in the right half (since the array is sorted). In an unsorted array, the target could be anywhere regardless of the mid-value comparison, so the divide-and-conquer strategy does not work.
 
 ### UT-2: SQL Queries
 **Question:** Given the following tables:
@@ -218,8 +218,8 @@ Example: Examine the inventory calculation function and design tests to ensure: 
 
 (c) Boundary value analysis for quantity $\times$ price (assuming quantity: 1--9999, price: 0.01--99999.99):
 
-1. **Minimum boundary:** quantity $= 1$, price $= 0.01$. Expected: total $= 0.01$. Test the minimum valid inputs.
-2. **Maximum boundary:** quantity $= 9999$, price $= 99999.99$. Expected: total $= 999,989,901.01$. Test for overflow or rounding errors.
+1. **Minimum boundary:** quantity $= 1$Price $= 0.01$. Expected: total $= 0.01$. Test the minimum valid inputs.
+2. **Maximum boundary:** quantity $= 9999$Price $= 99999.99$. Expected: total $= 999,989,901.01$. Test for overflow or rounding errors.
 3. **Boundary edge cases:** quantity $= 0$ (should be rejected or handled), quantity $= 10000$ (should be rejected), price $= 0$ (should be handled), price $= -1$ (should be rejected).
 
 (d) UAT is critical because: (1) Developers and testers may not fully understand business requirements or user workflows. (2) UAT is performed by actual end users who validate that the system meets their real-world needs. (3) It catches usability issues, workflow problems, and requirement misunderstandings that technical testing misses. (4) UAT sign-off provides business confidence before deployment, reducing the risk of costly post-release fixes. (5) Involving users in testing increases adoption and reduces resistance to the new system.

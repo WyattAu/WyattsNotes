@@ -7,28 +7,28 @@ slug: nio-deep-dive
 ## NIO Overview
 
 `java.nio` (New I/O, introduced in JDK 1.4) provides a buffer-oriented, non-blocking alternative to
-the stream-based `java.io` API. NIO is designed for high-throughput I/O scenarios: network servers
-handling thousands of connections, file operations on large files, and memory-mapped I/O.
+The stream-based `java.io` API. NIO is designed for high-throughput I/O scenarios: network servers
+Handling thousands of connections, file operations on large files, and memory-mapped I/O.
 
 ### Buffer vs Stream
 
-| Aspect          | Stream I/O (`java.io`)                    | NIO (`java.nio`)                            |
+| Aspect | Stream I/O (`java.io`) | NIO (`java.nio`) |
 | --------------- | ----------------------------------------- | ------------------------------------------- |
-| Data model      | Byte-by-byte or char-by-char              | Blocks of data (buffers)                    |
-| Direction       | Unidirectional (InputStream/OutputStream) | Bidirectional (channels)                    |
-| Blocking        | Always blocking                           | Blocking or non-blocking                    |
-| File operations | Sequential                                | Random access, memory-mapped                |
-| Threading model | One thread per connection                 | One thread for many connections (selectors) |
+| Data model | Byte-by-byte or char-by-char | Blocks of data (buffers) |
+| Direction | Unidirectional (InputStream/OutputStream) | Bidirectional (channels) |
+| Blocking | Always blocking | Blocking or non-blocking |
+| File operations | Sequential | Random access, memory-mapped |
+| Threading model | One thread per connection | One thread for many connections (selectors) |
 
 ## Buffers
 
 Buffers are the central data containers in NIO. A buffer is a fixed-capacity, in-memory container
-for data of a specific primitive type. All buffers extend `Buffer`.
+For data of a specific primitive type. All buffers extend `Buffer`.
 
 ### `ByteBuffer`
 
 `ByteBuffer` is the most commonly used buffer. It holds bytes and provides methods for reading and
-writing both primitive types and byte arrays.
+Writing both primitive types and byte arrays.
 
 ```java
 // Allocation
@@ -44,12 +44,12 @@ ByteBuffer wrapBuf = ByteBuffer.wrap(data);
 
 Every buffer has four core properties:
 
-| Property   | Description                                                                                                                            |
+| Property | Description |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `capacity` | Maximum number of elements the buffer can hold. Set at creation, never changes.                                                        |
-| `position` | Index of the next element to read or write. Starts at 0, increments on read/write.                                                     |
-| `limit`    | First index that should not be read or written. For write mode, equals capacity. For read mode, equals the number of elements written. |
-| `mark`     | An optional bookmark (set via `mark()`, reset via `reset()`).                                                                          |
+| `capacity` | Maximum number of elements the buffer can hold. Set at creation, never changes. |
+| `position` | Index of the next element to read or write. Starts at 0, increments on read/write. |
+| `limit` | First index that should not be read or written. For write mode, equals capacity. For read mode, equals the number of elements written. |
+| `mark` | An optional bookmark (set via `mark()`Reset via `reset()`). |
 
 **Invariants:** `0 <= mark <= position <= limit <= capacity`
 
@@ -103,9 +103,9 @@ ByteBuffer direct = ByteBuffer.allocateDirect(1024);
 
 :::info
 Use direct buffers when the buffer is long-lived and used for repeated I/O operations. The
-allocation cost is amortized over many I/O calls, and the avoidance of heap-to-native copies
-improves throughput. Use heap buffers for short-lived buffers where allocation speed matters more
-than I/O throughput.
+Allocation cost is amortized over many I/O calls, and the avoidance of heap-to-native copies
+Improves throughput. Use heap buffers for short-lived buffers where allocation speed matters more
+Than I/O throughput.
 :::
 
 ### `get` and `put` Operations
@@ -161,12 +161,12 @@ ByteBuffer byteBuf = encoder.encode(charBuf);
 ## Channels
 
 Channels represent open connections to I/O sources or sinks (files, sockets). Unlike streams,
-channels are bidirectional — a `FileChannel` can both read and write.
+Channels are bidirectional — a `FileChannel` can both read and write.
 
 ### `FileChannel`
 
-`FileChannel` provides random access to files. It is obtained from `FileInputStream`,
-`FileOutputStream`, `RandomAccessFile`, or `FileChannel.open()`.
+`FileChannel` provides random access to files. It is obtained from `FileInputStream`
+`FileOutputStream``RandomAccessFile`Or `FileChannel.open()`.
 
 ```java
 // From FileInputStream (read-only)
@@ -199,8 +199,8 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
 ### `transferTo` / `transferFrom`
 
 Zero-copy file operations that transfer data directly between channels without copying through
-user-space buffers. On supporting OS/filesystems, this is implemented with `sendfile` or `splice`
-system calls.
+User-space buffers. On supporting OS/filesystems, this is implemented with `sendfile` or `splice`
+System calls.
 
 ```java
 // Copy a file efficiently (zero-copy when possible)
@@ -214,15 +214,15 @@ try (FileChannel src = FileChannel.open(Path.of("source.bin"), StandardOpenOptio
 
 :::info
 `transferTo` may not transfer all requested bytes in a single call (it returns the actual
-number transferred). Loop until the return value is zero or an exception is thrown. On Linux with
-ext4/xfs, the entire transfer typically completes in a single system call.
+Number transferred). Loop until the return value is zero or an exception is thrown. On Linux with
+Ext4/xfs, the entire transfer completes in a single system call.
 :::
 
 ### File Locking
 
 `FileLock` provides advisory locking on files. Advisory means the lock is only enforced if all
-processes accessing the file cooperate by acquiring locks. The OS does not prevent a process without
-a lock from reading or writing.
+Processes accessing the file cooperate by acquiring locks. The OS does not prevent a process without
+A lock from reading or writing.
 
 ```java
 try (FileChannel channel = FileChannel.open(Path.of("data.lock"),
@@ -250,9 +250,9 @@ FileLock exclusiveLock = channel.tryLock(0L, Long.MAX_VALUE, false); // false = 
 
 :::warning
 File locks are JVM-scoped, not thread-scoped. If two threads in the same JVM try to
-acquire overlapping exclusive locks on the same file, the second `lock()` call throws
+Acquire overlapping exclusive locks on the same file, the second `lock()` call throws
 `OverlappingFileLockException`. Use `tryLock()` for non-blocking acquisition. Locks are
-automatically released when the channel is closed or the JVM exits.
+Automatically released when the channel is closed or the JVM exits.
 :::
 
 ### Socket Channels
@@ -297,8 +297,8 @@ try (DatagramChannel channel = DatagramChannel.open()) {
 ## Selectors
 
 A `Selector` allows a single thread to monitor multiple channels for readiness events (connect,
-accept, read, write). This is the foundation of scalable network servers — one thread can handle
-thousands of connections.
+Accept, read, write). This is the foundation of scalable network servers — one thread can handle
+Thousands of connections.
 
 ### `SelectionKey`
 
@@ -306,7 +306,7 @@ A `SelectionKey` represents the registration of a channel with a selector. It co
 
 - The channel being monitored.
 - The selector it is registered with.
-- The set of operations of interest (`OP_ACCEPT`, `OP_CONNECT`, `OP_READ`, `OP_WRITE`).
+- The set of operations of interest (`OP_ACCEPT``OP_CONNECT``OP_READ``OP_WRITE`).
 - The set of operations that are ready.
 - An attachment (arbitrary object).
 
@@ -397,7 +397,7 @@ private void writeToChannel(SelectionKey key) throws IOException {
 
 `selector.wakeup()` causes a currently blocked `select()` call to return immediately. If no
 `select()` is in progress, the next `select()` will return immediately. This is useful for thread
-coordination:
+Coordination:
 
 ```java
 // From another thread — wake up the selector loop
@@ -411,8 +411,8 @@ int readyCount = selector.select();
 ## Non-Blocking I/O
 
 In non-blocking mode, `read()` and `write()` return immediately. `read()` returns the number of
-bytes read (0 if none available, -1 if the channel is closed). `write()` returns the number of bytes
-written (may be less than requested).
+Bytes read (0 if none available, -1 if the channel is closed). `write()` returns the number of bytes
+Written (may be less than requested).
 
 ```java
 channel.configureBlocking(false);
@@ -431,14 +431,14 @@ while (buf.hasRemaining()) {
 
 :::warning
 When using non-blocking I/O, you must handle partial reads and writes. A single `read()`
-may return fewer bytes than requested, and a single `write()` may accept fewer bytes than provided.
+May return fewer bytes than requested, and a single `write()` may accept fewer bytes than provided.
 Always check the return value and manage the buffer position accordingly.
 :::
 
 ## `AsynchronousFileChannel`
 
 Introduced in JDK 7, `AsynchronousFileChannel` provides asynchronous file I/O operations. It
-supports two usage patterns: Future-based and callback-based.
+Supports two usage patterns: Future-based and callback-based.
 
 ### Future-Based Async I/O
 
@@ -493,7 +493,7 @@ try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(
 
 :::info
 The completion handler's callback methods are executed by the `AsynchronousFileChannel`'s
-thread pool. By default, this is the JVM-wide default `ForkJoinPool`. You can provide a custom
+Thread pool. By default, this is the JVM-wide default `ForkJoinPool`. You can provide a custom
 `ExecutorService` via `AsynchronousFileChannel.open(path, options, executor)`.
 :::
 
@@ -502,7 +502,7 @@ thread pool. By default, this is the JVM-wide default `ForkJoinPool`. You can pr
 ### `Path`
 
 `Path` (JDK 7+) replaces `File` as the primary way to represent file and directory paths. It
-supports operations on path components (root, parent, filename) and is immutable.
+Supports operations on path components (root, parent, filename) and is immutable.
 
 ```java
 Path absolute = Path.of("/usr/local/bin/java");
@@ -580,8 +580,8 @@ try (Stream<Path> found = Files.find(Path.of("src"), 10,
 ## Memory-Mapped Files
 
 `MappedByteBuffer` maps a region of a file directly into memory. Reads and writes to the buffer are
-reflected in the file. The OS handles paging — only the portions of the file that are actually
-accessed are loaded into physical memory.
+Reflected in the file. The OS handles paging — only the portions of the file that are actually
+Accessed are loaded into physical memory.
 
 ```java
 try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
@@ -604,25 +604,25 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
 
 ### Map Modes
 
-| Mode         | Description                                                                          |
+| Mode | Description |
 | ------------ | ------------------------------------------------------------------------------------ |
-| `READ_ONLY`  | Read-only mapping. Attempts to modify the buffer throw `ReadOnlyBufferException`.    |
-| `READ_WRITE` | Read-write mapping. Changes are written back to the file.                            |
-| `PRIVATE`    | Copy-on-write. Changes are not written to the file; they are private to this buffer. |
+| `READ_ONLY` | Read-only mapping. Attempts to modify the buffer throw `ReadOnlyBufferException`. |
+| `READ_WRITE` | Read-write mapping. Changes are written back to the file. |
+| `PRIVATE` | Copy-on-write. Changes are not written to the file; they are private to this buffer. |
 
 ### Use Cases
 
 - **Structured binary file access** — reading/writing fixed-format records at known offsets.
 - **Shared memory between processes** — two JVM processes can map the same file and communicate
-  through the mapped buffer.
+ through the mapped buffer.
 - **Large file processing** — process terabyte-scale files without loading them into JVM heap.
 
 :::warning
 `MappedByteBuffer` uses native memory, not the Java heap. It is not subject to GC heap
-limits, but it does consume address space. On 32-bit JVMs, you are limited to ~2 GB of mapped
-memory. On 64-bit JVMs, the limit is the available virtual address space. Closing the `FileChannel`
-does not immediately unmap the buffer — the mapped memory is released when the `MappedByteBuffer`
-object is GC'd, which may be delayed.
+Limits, but it does consume address space. On 32-bit JVMs, you are limited to ~2 GB of mapped
+Memory. On 64-bit JVMs, the limit is the available virtual address space. Closing the `FileChannel`
+Does not immediately unmap the buffer — the mapped memory is released when the `MappedByteBuffer`
+Object is GC'd, which may be delayed.
 :::
 
 ## Common Pitfalls
@@ -753,7 +753,7 @@ try (FileChannel fc = FileChannel.open(path, READ, WRITE)) {
 ### Buffer Pooling
 
 Allocating direct buffers is expensive (involves a JNI call to allocate native memory). In
-high-throughput servers, allocate buffers once and reuse them:
+High-throughput servers, allocate buffers once and reuse them:
 
 ```java
 public class BufferPool {
@@ -788,8 +788,8 @@ public class BufferPool {
 ### Scatter/Gather I/O
 
 Scatter/gather operations read from a channel into multiple buffers (scatter) or write from multiple
-buffers to a channel (gather) in a single system call. This reduces the number of context switches
-between user space and kernel space.
+Buffers to a channel (gather) in a single system call. This reduces the number of context switches
+Between user space and kernel space.
 
 ```java
 // Gather write — write headers and body from separate buffers
@@ -816,11 +816,11 @@ try (FileChannel fc = FileChannel.open(Path.of("request.bin"), READ)) {
 The classic Reactor pattern with selectors is effective but has limitations:
 
 - **Single selector thread** — all I/O events are processed on one thread. CPU-bound processing
-  blocks the selector.
+ blocks the selector.
 - **Multiple selector threads** — can process I/O events in parallel, but requires careful
-  coordination (e.g., `wakeup()` calls).
+ coordination (e.g., `wakeup()` calls).
 - **Selector + worker pool** — the selector thread dispatches I/O events; worker threads handle
-  business logic. This is the most common production pattern.
+ business logic. This is the most common production pattern.
 
 ```java
 ExecutorService workerPool = Executors.newFixedThreadPool(
@@ -849,7 +849,7 @@ while (true) {
 
 For sequential file reads, `FileInputStream` with `BufferedInputStream` is often faster than
 `FileChannel` because the buffer reduces the number of system calls. `FileChannel` excels at random
-access, `transferTo`/`transferFrom`, and memory-mapped I/O.
+Access, `transferTo`/`transferFrom`And memory-mapped I/O.
 
 ```java
 // Sequential read — BufferedInputStream is simpler and often faster
@@ -953,3 +953,10 @@ private static void processBuffer(ByteBuffer buffer) {
 }
 ```
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

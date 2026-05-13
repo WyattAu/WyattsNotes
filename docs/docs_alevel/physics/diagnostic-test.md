@@ -13,7 +13,7 @@ slug: diagnostic-test
 
 :::info
 Instructions This diagnostic test covers the entire A Level Physics syllabus. Attempt all 45
-questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes.
+Questions. Each question has an answer and a revision redirect. Time allowed: 90 minutes.
 :::
 
 ## Section A: Mechanics (Questions 1–5)
@@ -29,7 +29,7 @@ questions. Each question has an answer and a revision redirect. Time allowed: 90
 <details>
 <summary>Q2. A 2.0 kg object moving at 5.0 m s$^{-1}$ collides elastically with a stationary 3.0 kg object. Calculate the velocity of the 3.0 kg object after the collision.</summary>
 **Answer.** $v_2 = \frac{2m_1 u_1}{m_1 + m_2} = \frac◆LB◆2 \times 2.0 \times 5.0◆RB◆◆LB◆5.0◆RB◆ = 4.0$ m
-s$^{-1}$.
+S$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Momentum](/docs/alevel/physics/mechanics/momentum)
 
@@ -56,7 +56,7 @@ s$^{-1}$.
 <details>
 <summary>Q5. A mass on a spring oscillates with period 0.80 s and amplitude 4.0 cm. Calculate its maximum velocity.</summary>
 **Answer.** $v_{\max} = \omega A = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ \times A = \frac◆LB◆2\pi◆RB◆◆LB◆0.80◆RB◆ \times 0.040 = 0.314$
-m s$^{-1}$.
+M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Oscillations](/docs/alevel/physics/mechanics/oscillations)
 
@@ -68,7 +68,7 @@ m s$^{-1}$.
 <summary>Q6. Light of wavelength 580 nm passes through double slits 0.40 mm apart onto a screen 1.5 m away. What is the fringe spacing?</summary>
 **Answer.**
 $\Delta w = \frac◆LB◆\lambda D◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆580 \times 10^{-9} \times 1.5◆RB◆◆LB◆0.40 \times 10^{-3}◆RB◆ = 2.175 \times 10^{-3}$
-m $= 2.18$ mm.
+M $= 2.18$ mm.
 
 <b>If you get this wrong, revise:</b>
 [Superposition and Interference](/docs/alevel/physics/waves/superposition-and-interference)
@@ -94,7 +94,7 @@ $I = 100\cos^2 45° = 100 \times 0.5 = 50$ W m$^{-2}$.
 </details>
 
 <details>
-<summary>Q9. A stationary wave on a string has nodes 0.40 m apart. If the wave speed is 320 m s$^{-1}$, what is the frequency?</summary>
+<summary>Q9. A stationary wave on a string has nodes 0.40 m apart. If the wave speed is 320 m s$^{-1}$What is the frequency?</summary>
 **Answer.** Node separation $= \lambda/2 = 0.40$ m, so $\lambda = 0.80$ m.
 $f = v/\lambda = 320/0.80 = 400$ Hz.
 
@@ -175,7 +175,7 @@ $F = kq_1q_2/r^2 = 8.99 \times 10^9 \times 3 \times 10^{-6} \times 5 \times 10^{
 <summary>Q17. An electron enters a 0.50 T magnetic field perpendicular to its velocity of $4.0 \times 10^6$ m s$^{-1}$. What is the radius of its path?</summary>
 **Answer.**
 $r = mv/(Be) = 9.11 \times 10^{-31} \times 4.0 \times 10^6/(0.50 \times 1.60 \times 10^{-19}) = 4.56 \times 10^{-5}$
-m.
+M.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
 
@@ -193,7 +193,7 @@ m.
 <summary>Q19. Derive the speed of light from $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$ and $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$.</summary>
 **Answer.**
 $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆ = 1/\sqrt◆LB◆4\pi \times 10^{-7} \times 8.85 \times 10^{-12}◆RB◆ = 1/\sqrt◆LB◆1.113 \times 10^{-17}◆RB◆ = 3.00 \times 10^8$
-m s$^{-1}$.
+M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Electromagnetism Unification](/docs/alevel/physics/fields/electromagnetism-unification)
@@ -218,9 +218,9 @@ m s$^{-1}$.
 
 <details>
 <summary>Q22. State Faraday's law and Lenz's law.</summary>
-**Answer.** **Faraday's law:** the induced e.m.f. equals the negative rate of change of flux
-linkage: $\mathcal{E} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
-the change in flux that produced it.
+**Answer.** **Faraday's law:** the induced e.m.f. Equals the negative rate of change of flux
+Linkage: $\mathcal{E} = -d(N\Phi)/dt$. **Lenz's law:** the direction of the induced current opposes
+The change in flux that produced it.
 
 <b>If you get this wrong, revise:</b> [Magnetic Fields](/docs/alevel/physics/fields/magnetic-fields)
 
@@ -232,7 +232,7 @@ the change in flux that produced it.
 <summary>Q23. Calculate the rms speed of helium atoms ($M_r = 0.004$ kg mol$^{-1}$) at 300 K.</summary>
 **Answer.**
 $v_{\mathrm{rms}} = \sqrt{3RT/M_r} = \sqrt◆LB◆3 \times 8.31 \times 300/0.004◆RB◆ = \sqrt{1869750} = 1367$ m
-s$^{-1}$.
+S$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
 [Thermal Properties](/docs/alevel/physics/thermal-physics/thermal-properties)
@@ -311,7 +311,7 @@ $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}
 <summary>Q31. Calculate the de Broglie wavelength of an electron accelerated through 200 V.</summary>
 **Answer.**
 $\lambda = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 200◆RB◆ = 6.63 \times 10^{-34}/7.64 \times 10^{-24} = 8.68 \times 10^{-11}$
-m.
+M.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
@@ -323,7 +323,7 @@ m.
 **Answer.** $E_3 = -13.6/9 = -1.51$ eV. $E_1 = -13.6$ eV. $\Delta E = 12.09$ eV
 $= 1.934 \times 10^{-18}$ J.
 $\lambda = hc/\Delta E = 6.63 \times 10^{-34} \times 3.0 \times 10^8/1.934 \times 10^{-18} = 1.03 \times 10^{-7}$
-m $= 103$ nm.
+M $= 103$ nm.
 
 <b>If you get this wrong, revise:</b>
 [Quantum Physics](/docs/alevel/physics/nuclear-physics/quantum-physics)
@@ -333,10 +333,10 @@ m $= 103$ nm.
 <details>
 <summary>Q33. Explain what is meant by the binding energy per nucleon and why iron-56 is the most stable nucleus.</summary>
 **Answer.** The binding energy per nucleon is the total binding energy divided by the mass number —
-the average energy needed to remove one nucleon. Iron-56 has the highest binding energy per nucleon
+The average energy needed to remove one nucleon. Iron-56 has the highest binding energy per nucleon
 ($\sim 8.8$ MeV), meaning it requires the most energy per nucleon to disassemble. This corresponds
-to the maximum nuclear stability. Nuclei lighter than iron release energy by fusion; nuclei heavier
-release energy by fission — both processes move towards the iron peak.
+To the maximum nuclear stability. Nuclei lighter than iron release energy by fusion; nuclei heavier
+Release energy by fission — both processes move towards the iron peak.
 
 <b>If you get this wrong, revise:</b>
 [Nuclear Energy](/docs/alevel/physics/nuclear-physics/nuclear-energy)
@@ -345,7 +345,7 @@ release energy by fission — both processes move towards the iron peak.
 
 <details>
 <summary>Q34. The activity of a sample decreases from 400 Bq to 50 Bq in 30 minutes. What is the decay constant?</summary>
-**Answer.** $50/400 = 1/8 = 1/2^3$, so 3 half-lives. $t_{1/2} = 30/3 = 10$ min $= 600$ s.
+**Answer.** $50/400 = 1/8 = 1/2^3$So 3 half-lives. $t_{1/2} = 30/3 = 10$ min $= 600$ s.
 $\lambda = \ln 2/t_{1/2} = 0.693/600 = 1.16 \times 10^{-3}$ s$^{-1}$.
 
 <b>If you get this wrong, revise:</b>
@@ -387,9 +387,9 @@ $2(0.2/3.0) + 0.3/4.0 = 0.133 + 0.075 = 0.208 = 20.8\%$.
 <details>
 <summary>Q38. What is the difference between a systematic error and a random error?</summary>
 **Answer.** A systematic error is a consistent deviation from the true value, affecting all readings
-in the same direction (e.g., a zero error on a balance). A random error causes unpredictable scatter
-in repeated readings (e.g., reaction time with a stopwatch). Systematic errors affect accuracy;
-random errors affect precision.
+In the same direction (e.g., a zero error on a balance). A random error causes unpredictable scatter
+In repeated readings (e.g., reaction time with a stopwatch). Systematic errors affect accuracy;
+Random errors affect precision.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
@@ -397,7 +397,7 @@ random errors affect precision.
 </details>
 
 <details>
-<summary>Q39. To linearise $y = ax^n$, what should you plot?</summary>
+<summary>Q39. To linearise $y = ax^n$What should you plot?</summary>
 **Answer.** Taking logarithms: $\ln y = \ln a + n\ln x$. Plot $\ln y$ vs $\ln x$. The gradient is
 $n$ and the $y$-intercept is $\ln a$.
 
@@ -418,8 +418,8 @@ $n$ and the $y$-intercept is $\ln a$.
 <details>
 <summary>Q41. When measuring the diameter of a wire with a micrometer, why should you take readings at several positions along the wire?</summary>
 **Answer.** The wire may not have a perfectly uniform diameter. Taking readings at several positions
-and averaging reduces the effect of any local variations, giving a more representative value for the
-cross-sectional area.
+And averaging reduces the effect of any local variations, giving a more representative value for the
+Cross-sectional area.
 
 <b>If you get this wrong, revise:</b>
 [Experimental Design](/docs/alevel/physics/practical-skills/experimental-design)
@@ -429,10 +429,10 @@ cross-sectional area.
 <details>
 <summary>Q42. Explain why timing 20 oscillations of a pendulum gives a more precise result than timing one oscillation.</summary>
 **Answer.** Human reaction time ($\sim 0.2$ s) is a constant uncertainty regardless of the total
-time measured. For one oscillation ($\sim 2$ s), the percentage uncertainty is $\sim 20\%$. For 20
-oscillations ($\sim 40$ s), the uncertainty in the total time is $\sim 0.4$ s (start and stop),
-giving $\sim 1\%$ uncertainty in the total time, which translates to $\sim 1\%$ uncertainty in the
-period.
+Time measured. For one oscillation ($\sim 2$ s), the percentage uncertainty is $\sim 20\%$. For 20
+Oscillations ($\sim 40$ s), the uncertainty in the total time is $\sim 0.4$ s (start and stop),
+Giving $\sim 1\%$ uncertainty in the total time, which translates to $\sim 1\%$ uncertainty in the
+Period.
 
 <b>If you get this wrong, revise:</b>
 [Experimental Design](/docs/alevel/physics/practical-skills/experimental-design)
@@ -442,7 +442,7 @@ period.
 <details>
 <summary>Q43. A result is quoted as $9.6 \pm 0.4$ m s$^{-2}$. The accepted value is $9.81$ m s$^{-2}$. Does the accepted value lie within the uncertainty range?</summary>
 **Answer.** Yes. The range is $9.2$ to $10.0$ m s$^{-2}$. Since $9.81$ lies within this range, the
-result is consistent with the accepted value at this level of uncertainty.
+Result is consistent with the accepted value at this level of uncertainty.
 
 <b>If you get this wrong, revise:</b>
 [Measurements and Error Analysis](/docs/alevel/physics/practical-skills/measurements-and-error-analysis)
@@ -452,8 +452,8 @@ result is consistent with the accepted value at this level of uncertainty.
 <details>
 <summary>Q44. In a circuit experiment, a student uses an ammeter with resistance $0.5\,\Omega$ to measure current in a branch with resistance $5\,\Omega$. What percentage error does the ammeter introduce?</summary>
 **Answer.** The actual branch resistance is $5.0\,\Omega$. With the ammeter: total $= 5.5\,\Omega$.
-The current is reduced by a factor of $5.0/5.5 = 0.909$, an error of $\sim 9.1\%$. (The ammeter
-should ideally have zero resistance.)
+The current is reduced by a factor of $5.0/5.5 = 0.909$An error of $\sim 9.1\%$. (The ammeter
+Should ideally have zero resistance.)
 
 <b>If you get this wrong, revise:</b> [DC Circuits](/docs/alevel/physics/electricity/dc-circuits)
 
@@ -461,7 +461,7 @@ should ideally have zero resistance.)
 
 <details>
 <summary>Q45. A graph of $\ln I$ vs $t$ for a discharging capacitor gives a straight line with gradient $-0.125$ s$^{-1}$. What is the time constant?</summary>
-**Answer.** For discharging: $I = I_0 e^{-t/RC}$, so $\ln I = \ln I_0 - t/(RC)$. Gradient
+**Answer.** For discharging: $I = I_0 e^{-t/RC}$So $\ln I = \ln I_0 - t/(RC)$. Gradient
 $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 
 <b>If you get this wrong, revise:</b> [Capacitance](/docs/alevel/physics/electricity/capacitance)
@@ -472,12 +472,24 @@ $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 
 ## Scoring
 
-| Score | Grade | Recommendation                                          |
+| Score | Grade | Recommendation |
 | ----- | ----- | ------------------------------------------------------- |
-| 40–45 | A\*   | Excellent. Focus on extension problems.                 |
-| 35–39 | A     | Strong. Review topics where you lost marks.             |
-| 28–34 | B     | Good foundation. Systematic revision needed.            |
-| 20–27 | C     | Gaps exist. Prioritise weak sections.                   |
-| < 20  | D/U   | Significant revision required. Start with fundamentals. |
+| 40–45 | A\* | Excellent. Focus on extension problems. |
+| 35–39 | A | Strong. Review topics where you lost marks. |
+| 28–34 | B | Good foundation. Systematic revision needed. |
+| 20–27 | C | Gaps exist. Prioritise weak sections. |
+| < 20 | D/U | Significant revision required. Start with fundamentals. |
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

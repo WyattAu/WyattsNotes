@@ -59,7 +59,7 @@ Atomic and Nuclear Physics
 - Wave Properties is a prerequisite for SHM.
 - Electric and Magnetic Fields should be studied before Induction.
 - Thermodynamics and Atomic/Nuclear Physics are relatively independent but require algebra and graph skills from the mechanics topics.
-- Current Electricity is most naturally studied after Electric and Magnetic Fields.
+- Current Electricity is most studied after Electric and Magnetic Fields.
 
 ## Integration Test Cross-References
 
@@ -167,7 +167,7 @@ These diagnostic tests are designed to be attempted under exam conditions. Stude
 
 ### Significant Figures
 
-IB Physics expects answers to be given to an appropriate number of significant figures (typically 3, or consistent with the data provided). One mark is deducted for incorrect sig figs in the grading rubric.
+IB Physics expects answers to be given to an appropriate number of significant figures ( 3, or consistent with the data provided). One mark is deducted for incorrect sig figs in the grading rubric.
 
 ### Level of Difficulty
 

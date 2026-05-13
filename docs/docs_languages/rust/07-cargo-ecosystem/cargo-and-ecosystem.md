@@ -7,7 +7,7 @@ slug: cargo-and-ecosystem
 ## Cargo.toml Structure
 
 `Cargo.toml` is the manifest file that defines everything about your Rust project. It uses TOML
-format:
+Format:
 
 ```toml
 [package]
@@ -48,16 +48,16 @@ debug = true
 
 ### Package Metadata Fields
 
-| Field          | Purpose                                                  |
+| Field | Purpose |
 | -------------- | -------------------------------------------------------- |
-| `name`         | Crate name (must match `^[a-zA-Z0-9_-]+$`)               |
-| `version`      | SemVer version (e.g., `0.1.0`, `1.2.3-beta.1`)           |
-| `edition`      | Rust edition (`2015`, `2018`, `2021`, `2024`)            |
-| `rust-version` | Minimum supported Rust version (MSRV)                    |
-| `license`      | SPDX license identifier (`MIT`, `Apache-2.0`, `GPL-3.0`) |
-| `repository`   | Source code URL                                          |
-| `readme`       | Path to README file                                      |
-| `categories`   | crates.io categories (max 5)                             |
+| `name` | Crate name (must match `^[a-zA-Z0-9_-]+$`) |
+| `version` | SemVer version (e.g., `0.1.0``1.2.3-beta.1`) |
+| `edition` | Rust edition (`2015``2018``2021``2024`) |
+| `rust-version` | Minimum supported Rust version (MSRV) |
+| `license` | SPDX license identifier (`MIT``Apache-2.0``GPL-3.0`) |
+| `repository` | Source code URL |
+| `readme` | Path to README file |
+| `categories` | crates.io categories (max 5) |
 
 ## Workspace Management
 
@@ -139,7 +139,7 @@ cargo metadata --format-version 1  # machine-readable workspace metadata
 :::info
 
 Workspaces share a single `target/` directory and a single `Cargo.lock`. This means all crates use
-the same versions of shared dependencies, avoiding the diamond dependency problem.
+The same versions of shared dependencies, avoiding the diamond dependency problem.
 
 :::
 
@@ -184,8 +184,8 @@ pub struct Data {
 ### Feature Unification
 
 When two crates in the same dependency graph enable different features of a shared dependency, Cargo
-unifies them — all enabled features are active for all dependents. This can cause unexpected
-behavior:
+Unifies them — all enabled features are active for all dependents. This can cause unexpected
+Behavior:
 
 ```toml
 # crate-a/Cargo.toml
@@ -197,9 +197,9 @@ shared = { version = "1", features = ["feature-x"] }
 shared = { version = "1", features = ["feature-y"] }
 ```
 
-In a workspace depending on both `crate-a` and `crate-b`, `shared` will have both `feature-x` and
+In a workspace depending on both `crate-a` and `crate-b``shared` will have both `feature-x` and
 `feature-y` enabled. If `feature-y` has heavy dependencies, `crate-a` users pay the cost even though
-they only requested `feature-x`.
+They only requested `feature-x`.
 
 ### Feature Best Practices
 
@@ -259,14 +259,14 @@ cargo build --profile profiling
 ### LTO (Link-Time Optimization)
 
 LTO performs optimizations across crate boundaries. It increases compile time significantly but can
-reduce binary size by 10-20% and improve runtime performance by 5-10%.
+Reduce binary size by 10-20% and improve runtime performance by 5-10%.
 
 - `lto = false`: No LTO (default for dev)
 - `lto = "thin"`: Thin LTO — faster than full LTO, most of the benefit
 - `lto = true` (or `lto = "fat"`): Full LTO — best optimization, slowest compile
 
 For release builds in production, `lto = "thin"` is a good default. Use `lto = true` for maximum
-performance-critical builds.
+Performance-critical builds.
 
 ## Dependency Management
 
@@ -312,7 +312,7 @@ optional-dep = { version = "1", optional = true }
 - Libraries where exact reproducibility matters
 
 It should NOT be committed for library crates that are published to crates.io (the library's
-dependents should resolve their own compatible versions).
+Dependents should resolve their own compatible versions).
 
 ```bash
 cargo update              # update all dependencies within SemVer bounds
@@ -443,7 +443,7 @@ fn test_add_from_external() {
 ```
 
 Each file in `tests/` is compiled as a separate crate, so they cannot access `src/` internals (only
-the public API). The `tests/common/mod.rs` pattern allows sharing test utilities.
+The public API). The `tests/common/mod.rs` pattern allows sharing test utilities.
 
 ### Doc Tests
 
@@ -464,7 +464,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 ````
 
 Doc tests are run by `cargo test` and serve as both documentation and tests. They verify that
-examples in documentation actually compile and produce correct results.
+Examples in documentation actually compile and produce correct results.
 
 ### Property-Based Testing with `proptest`
 
@@ -504,8 +504,8 @@ mod tests {
 ```
 
 Proptest generates random inputs, finds minimal failing cases (shrinking), and can run thousands of
-test cases per second. It is particularly effective for finding edge cases that hand-written tests
-miss.
+Test cases per second. It is particularly effective for finding edge cases that hand-written tests
+Miss.
 
 ### Benchmarking with Criterion
 
@@ -537,7 +537,7 @@ cargo bench
 ```
 
 Criterion provides statistical analysis (mean, median, standard deviation), regression detection,
-and HTML reports with plots. It is the standard benchmarking tool in the Rust ecosystem.
+And HTML reports with plots. It is the standard benchmarking tool in the Rust ecosystem.
 
 ## Documentation with rustdoc
 
@@ -678,8 +678,8 @@ async fn process_request(id: u64) {
 ```
 
 The `#[instrument]` attribute automatically creates a span that logs function entry, exit, and
-elapsed time. It captures all function arguments by default (use `skip` and `fields` to control what
-is captured).
+Elapsed time. It captures all function arguments by default (use `skip` and `fields` to control what
+Is captured).
 
 ## Key Crates
 
@@ -716,7 +716,7 @@ let parsed: Config = serde_json::from_str(&json).unwrap();
 
 Serde is the de facto serialization framework. It supports JSON, YAML, TOML, MessagePack, CBOR,
 BSON, XML, and custom formats. The `#[serde]` attribute provides fine-grained control over field
-names, defaults, serialization behavior, and conditional compilation.
+Names, defaults, serialization behavior, and conditional compilation.
 
 ### `tokio` — Async Runtime
 
@@ -887,63 +887,71 @@ async fn main() {
 
 Before adding a dependency, evaluate it:
 
-| Criterion                 | How to Check                                                |
+| Criterion | How to Check |
 | ------------------------- | ----------------------------------------------------------- |
-| **Downloads**             | crates.io page — monthly downloads                          |
-| **Last update**           | crates.io — last publish date                               |
-| **Maintenance**           | GitHub — open issues, PRs, commit frequency                 |
-| **Dependencies**          | `cargo tree -p crate-name` — dependency count               |
-| **Binary size impact**    | `cargo bloat --release` — size contribution                 |
-| **Build time**            | `cargo build --timings` — incremental and clean build times |
-| **License compatibility** | crates.io — license field                                   |
-| **MSRV**                  | README or `Cargo.toml` `rust-version` field                 |
-| **Audit**                 | `cargo audit` — known CVEs                                  |
+| **Downloads** | crates.io page — monthly downloads |
+| **Last update** | crates.io — last publish date |
+| **Maintenance** | GitHub — open issues, PRs, commit frequency |
+| **Dependencies** | `cargo tree -p crate-name` — dependency count |
+| **Binary size impact** | `cargo bloat --release` — size contribution |
+| **Build time** | `cargo build --timings` — incremental and clean build times |
+| **License compatibility** | crates.io — license field |
+| **MSRV** | README or `Cargo.toml` `rust-version` field |
+| **Audit** | `cargo audit` — known CVEs |
 
 :::warning
 
 Every dependency is a liability. Dependencies can introduce bugs, security vulnerabilities, supply
-chain attacks, and licensing issues. Minimize your dependency tree. Audit regularly with
+Chain attacks, and licensing issues. Minimize your dependency tree. Audit regularly with
 `cargo audit`. For security-critical projects, consider `cargo-vet` (supply chain verification).
 
 :::
 
 ## Common Pitfalls
 
-1. **Not committing `Cargo.lock` for binaries.** Without `Cargo.lock`, different builds may resolve
-   different dependency versions, leading to non-reproducible builds. Always commit `Cargo.lock` for
-   applications and CLIs.
+1. **Not committing `Cargo.lock` for binaries.** Without `Cargo.lock`Different builds may resolve
+ different dependency versions, leading to non-reproducible builds. Always commit `Cargo.lock` for
+ applications and CLIs.
 
 2. **Feature flags causing unexpected compilation.** A dependency might enable a feature that pulls
-   in heavy transitive dependencies. Use `cargo tree --features feature-name` to inspect what
-   features enable. Use `default-features = false` and select only the features you need.
+ in heavy transitive dependencies. Use `cargo tree --features feature-name` to inspect what
+ features enable. Use `default-features = false` and select only the features you need.
 
 3. **Ignoring clippy warnings.** Clippy catches real bugs (unused results, redundant clones,
-   incorrect mutex usage). Set up CI to fail on clippy warnings: `cargo clippy -- -D warnings`.
+ incorrect mutex usage). Set up CI to fail on clippy warnings: `cargo clippy -- -D warnings`.
 
 4. **Not writing integration tests.** Unit tests verify internal logic but do not test the public
-   API. Integration tests exercise the crate as a consumer would, catching issues with module
-   visibility, feature gating, and API ergonomics.
+ API. Integration tests exercise the crate as a consumer would, catching issues with module
+ visibility, feature gating, and API ergonomics.
 
 5. **Unoptimized release builds.** The default `Cargo.toml` has minimal release profile settings.
-   Add `lto = "thin"` and `codegen-units = 1` for significant performance improvements in
-   production.
+ Add `lto = "thin"` and `codegen-units = 1` for significant performance improvements in
+ production.
 
 6. **Dependency bloat.** Adding `tokio` with `features = ["full"]` enables everything including the
-   full I/O driver, process spawning, signal handling, and more. Only enable the features you
-   actually use: `features = ["rt-multi-thread", "macros", "net"]`.
+ full I/O driver, process spawning, signal handling, and more. Only enable the features you
+ actually use: `features = ["rt-multi-thread", "macros", "net"]`.
 
 7. **Not using workspace inheritance.** Without workspace-level dependency management, different
-   crates in the workspace may use different versions of the same dependency, increasing compile
-   time and binary size.
+ crates in the workspace may use different versions of the same dependency, increasing compile
+ time and binary size.
 
 8. **Ignoring MSRV (Minimum Supported Rust Version).** If your crate is published, specify
-   `rust-version` in `Cargo.toml`. Users on older Rust compilers will get a clear error instead of
-   cryptic compilation failures.
+ `rust-version` in `Cargo.toml`. Users on older Rust compilers will get a clear error instead of
+ cryptic compilation failures.
 
 9. **Running benchmarks without `--release`.** Benchmarks compiled in debug mode are meaningless —
-   the optimizer has not run, and timings reflect debug assertion overhead, not actual performance.
-   Always run `cargo bench` (which uses the `bench` profile with `opt-level = 3`).
+ the optimizer has not run, and timings reflect debug assertion overhead, not actual performance.
+ Always run `cargo bench` (which uses the `bench` profile with `opt-level = 3`).
 
 10. **Not auditing dependencies.** Run `cargo audit` regularly to check for known security
-    vulnerabilities. Use `cargo-deny` to enforce license and advisory policies in CI. Consider
-    `cargo-vet` for supply chain integrity in critical projects.
+ vulnerabilities. Use `cargo-deny` to enforce license and advisory policies in CI. Consider
+ `cargo-vet` for supply chain integrity in critical projects.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

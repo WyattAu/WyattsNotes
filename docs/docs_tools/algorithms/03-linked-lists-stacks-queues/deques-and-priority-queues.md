@@ -7,25 +7,25 @@ slug: deques-and-priority-queues
 ## Deque ADT
 
 A deque (double-ended queue) is a linear collection that supports insertion and removal at both
-ends. It generalises both stacks (LIFO) and queues (FIFO).
+Ends. It generalises both stacks (LIFO) and queues (FIFO).
 
 ### Operations
 
-| Operation       | Description          | Array-backed | Linked-list |
+| Operation | Description | Array-backed | Linked-list |
 | --------------- | -------------------- | ------------ | ----------- |
-| `push_front(x)` | Insert at front      | $O(1)$       | $O(1)$      |
-| `push_back(x)`  | Insert at back       | $O(1)$       | $O(1)$      |
-| `pop_front()`   | Remove from front    | $O(1)$       | $O(1)$      |
-| `pop_back()`    | Remove from back     | $O(1)$       | $O(1)$      |
-| `front()`       | Access front element | $O(1)$       | $O(1)$      |
-| `back()`        | Access back element  | $O(1)$       | $O(1)$      |
-| `is_empty()`    | Check if empty       | $O(1)$       | $O(1)$      |
-| `size()`        | Number of elements   | $O(1)$       | $O(1)$      |
+| `push_front(x)` | Insert at front | $O(1)$ | $O(1)$ |
+| `push_back(x)` | Insert at back | $O(1)$ | $O(1)$ |
+| `pop_front()` | Remove from front | $O(1)$ | $O(1)$ |
+| `pop_back()` | Remove from back | $O(1)$ | $O(1)$ |
+| `front()` | Access front element | $O(1)$ | $O(1)$ |
+| `back()` | Access back element | $O(1)$ | $O(1)$ |
+| `is_empty()` | Check if empty | $O(1)$ | $O(1)$ |
+| `size()` | Number of elements | $O(1)$ | $O(1)$ |
 
 ### Circular Buffer Implementation
 
 A circular buffer (ring buffer) implements a deque using a fixed-size array with two indices (head
-and tail) that wrap around.
+And tail) that wrap around.
 
 ```python
 class CircularBufferDeque:
@@ -160,38 +160,38 @@ class LinkedListDeque:
 
 ### Standard Library Support
 
-| Language | Type                | Implementation  | Notes                        |
+| Language | Type | Implementation | Notes |
 | -------- | ------------------- | --------------- | ---------------------------- |
-| Python   | `collections.deque` | Circular buffer | $O(1)$ all operations        |
-| C++      | `std::deque`        | Segmented array | $O(1)$ all operations        |
-| Java     | `ArrayDeque`        | Circular buffer | $O(1)$ all operations        |
-| Rust     | `VecDeque`          | Ring buffer     | $O(1)$ all operations        |
-| Go       | None (use slice)    | N/A             | Manual implementation needed |
+| Python | `collections.deque` | Circular buffer | $O(1)$ all operations |
+| C++ | `std::deque` | Segmented array | $O(1)$ all operations |
+| Java | `ArrayDeque` | Circular buffer | $O(1)$ all operations |
+| Rust | `VecDeque` | Ring buffer | $O(1)$ all operations |
+| Go | None (use slice) | N/A | Manual implementation needed |
 
 :::info
 
 Python's `collections.deque` is implemented as a doubly-linked list of fixed-size blocks (default
-block size is 64 elements). This gives $O(1)$ amortised operations with good cache locality — much
-better than a naive linked list but slightly worse than a pure circular buffer for sequential
-access.
+Block size is 64 elements). This gives $O(1)$ amortised operations with good cache locality — much
+Better than a naive linked list but slightly worse than a pure circular buffer for sequential
+Access.
 
 :::
 
 ## Priority Queue ADT
 
 A priority queue supports inserting elements with associated priorities and extracting the element
-with the highest (or lowest) priority.
+With the highest (or lowest) priority.
 
 ### Operations
 
-| Operation            | Description                       | Binary Heap | Binomial Heap | Fibonacci Heap     |
+| Operation | Description | Binary Heap | Binomial Heap | Fibonacci Heap |
 | -------------------- | --------------------------------- | ----------- | ------------- | ------------------ |
-| `insert(x)`          | Insert element with priority      | $O(\log n)$ | $O(\log n)$   | $O(1)$ amort.      |
-| `extract_min()`      | Remove and return minimum element | $O(\log n)$ | $O(\log n)$   | $O(\log n)$ amort. |
-| `decrease_key(x, k)` | Decrease priority of element x    | $O(\log n)$ | $O(\log n)$   | $O(1)$ amort.      |
-| `find_min()`         | Return minimum without removing   | $O(1)$      | $O(1)$        | $O(1)$             |
-| `delete(x)`          | Remove arbitrary element          | $O(\log n)$ | $O(\log n)$   | $O(\log n)$ amort. |
-| `merge(q1, q2)`      | Merge two priority queues         | $O(n)$      | $O(\log n)$   | $O(1)$ amort.      |
+| `insert(x)` | Insert element with priority | $O(\log n)$ | $O(\log n)$ | $O(1)$ amort. |
+| `extract_min()` | Remove and return minimum element | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ amort. |
+| `decrease_key(x, k)` | Decrease priority of element x | $O(\log n)$ | $O(\log n)$ | $O(1)$ amort. |
+| `find_min()` | Return minimum without removing | $O(1)$ | $O(1)$ | $O(1)$ |
+| `delete(x)` | Remove arbitrary element | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ amort. |
+| `merge(q1, q2)` | Merge two priority queues | $O(n)$ | $O(\log n)$ | $O(1)$ amort. |
 
 ## Binary Heap
 
@@ -202,11 +202,11 @@ A binary heap is a complete binary tree that satisfies the heap property: each n
 
 For a node at index $i$ (0-based):
 
-| Relationship | Formula                       |
+| Relationship | Formula |
 | ------------ | ----------------------------- |
-| Parent       | $\lfloor (i - 1) / 2 \rfloor$ |
-| Left child   | $2i + 1$                      |
-| Right child  | $2i + 2$                      |
+| Parent | $\lfloor (i - 1) / 2 \rfloor$ |
+| Left child | $2i + 1$ |
+| Right child | $2i + 2$ |
 
 ```mermaid
 graph TD
@@ -260,7 +260,7 @@ def heapify(arr):
 
 :::tip
 
-**Why `heapify` is $O(n)$, not $O(n \log n)$**: The cost of sifting down a node at height $h$ is
+**Why `heapify` is $O(n)$Not $O(n \log n)$**: The cost of sifting down a node at height $h$ is
 $O(h)$. There are at most $\lceil n / 2^{h+1} \rceil$ nodes at height $h$. The total cost is
 $\sum_{h=0}^{\lfloor \log n \rfloor} \lceil n / 2^{h+1} \rceil \cdot O(h) = O(n \sum_{h=0}^{\infty} h / 2^{h}) = O(n)$.
 The key insight is that most nodes are near the bottom of the tree and require little or no sifting.
@@ -366,25 +366,25 @@ def heap_sort(arr):
 A d-ary heap is a generalisation where each node has up to $d$ children. For a node at index $i$
 (0-based):
 
-| Relationship | Formula                                 |
+| Relationship | Formula |
 | ------------ | --------------------------------------- |
-| Parent       | $\lfloor (i - 1) / d \rfloor$           |
-| Child $j$    | $d \cdot i + j + 1$ for $0 \le j \lt d$ |
+| Parent | $\lfloor (i - 1) / d \rfloor$ |
+| Child $j$ | $d \cdot i + j + 1$ for $0 \le j \lt d$ |
 
-| Metric         | Binary ($d=2$)  | 4-ary ($d=4$)   | Choice of $d$                               |
+| Metric | Binary ($d=2$) | 4-ary ($d=4$) | Choice of $d$ |
 | -------------- | --------------- | --------------- | ------------------------------------------- |
-| Height         | $O(\log_2 n)$   | $O(\log_4 n)$   | $d = E/V + 1$ optimises Dijkstra            |
+| Height | $O(\log_2 n)$ | $O(\log_4 n)$ | $d = E/V + 1$ optimises Dijkstra |
 | Sift-down cost | $O(d \log_d n)$ | $O(d \log_d n)$ | Larger $d$ = fewer levels but more compares |
-| Sift-up cost   | $O(\log_d n)$   | $O(\log_d n)$   | Smaller $d$ = cheaper sift-up               |
+| Sift-up cost | $O(\log_d n)$ | $O(\log_d n)$ | Smaller $d$ = cheaper sift-up |
 
 For Dijkstra's algorithm on sparse graphs ($E = O(V)$), $d = 2$ is optimal. For dense graphs
 ($E = O(V^2)$), $d \approx V/2$ gives the best performance because sift-down is called more often
-than sift-up.
+Than sift-up.
 
 ## Binomial Heap
 
 A binomial heap is a collection of binomial trees that supports efficient merge. It is the basis for
-the Fibonacci heap.
+The Fibonacci heap.
 
 ### Binomial Trees
 
@@ -395,11 +395,11 @@ A binomial tree $B_k$ is defined recursively:
 
 Properties of $B_k$:
 
-| Property         | Value                           |
+| Property | Value |
 | ---------------- | ------------------------------- |
-| Number of nodes  | $2^k$                           |
-| Height           | $k$                             |
-| Root degree      | $k$                             |
+| Number of nodes | $2^k$ |
+| Height | $k$ |
+| Root degree | $k$ |
 | Children of root | $B_{k-1}, B_{k-2}, \ldots, B_0$ |
 
 ### Merge Operation
@@ -517,30 +517,30 @@ class BinomialHeap:
 ## Fibonacci Heap
 
 A Fibonacci heap is a collection of min-heap-ordered trees that supports amortised $O(1)$ insert and
-decrease-key, making it asymptotically optimal for algorithms like Dijkstra's and Prim's.
+Decrease-key, making it asymptotically optimal for algorithms like Dijkstra's and Prim's.
 
 ### Key Insight: Lazy Merging
 
 Unlike binomial heaps, Fibonacci heaps do not consolidate trees on every operation. Instead, they
-perform consolidation only during `extract_min`. This laziness is what gives amortised $O(1)$ for
+Perform consolidation only during `extract_min`. This laziness is what gives amortised $O(1)$ for
 `insert` and `decrease_key`.
 
 ### Operations
 
-| Operation    | Amortised Time | Worst Case  | Mechanism                                  |
+| Operation | Amortised Time | Worst Case | Mechanism |
 | ------------ | -------------- | ----------- | ------------------------------------------ |
-| Insert       | $O(1)$         | $O(1)$      | Add tree to root list                      |
-| Find-min     | $O(1)$         | $O(1)$      | Pointer to minimum root                    |
-| Extract-min  | $O(\log n)$    | $O(n)$      | Consolidate trees during extraction        |
-| Decrease-key | $O(1)$         | $O(\log n)$ | Cut and cascade if parent marked           |
-| Delete       | $O(\log n)$    | $O(n)$      | Decrease-key to $-\infty$ then extract-min |
-| Merge        | $O(1)$         | $O(1)$      | Concatenate root lists                     |
+| Insert | $O(1)$ | $O(1)$ | Add tree to root list |
+| Find-min | $O(1)$ | $O(1)$ | Pointer to minimum root |
+| Extract-min | $O(\log n)$ | $O(n)$ | Consolidate trees during extraction |
+| Decrease-key | $O(1)$ | $O(\log n)$ | Cut and cascade if parent marked |
+| Delete | $O(\log n)$ | $O(n)$ | Decrease-key to $-\infty$ then extract-min |
+| Merge | $O(1)$ | $O(1)$ | Concatenate root lists |
 
 ### Marking and Cascading Cuts
 
 When a node loses its first child, it is marked. When it loses a second child, it is cut from its
-parent and added to the root list. This cascading ensures the tree structure does not degrade too
-badly — the degree of any node is bounded by $O(\log_\phi n)$ where $\phi = (1 + \sqrt{5}) / 2$.
+Parent and added to the root list. This cascading ensures the tree structure does not degrade too
+Badly — the degree of any node is bounded by $O(\log_\phi n)$ where $\phi = (1 + \sqrt{5}) / 2$.
 
 ```python
 class FibNode:
@@ -683,30 +683,30 @@ class FibonacciHeap:
 ### When to Use Fibonacci Heaps
 
 Fibonacci heaps have high constant factors (due to the complex pointer manipulation and lazy
-structure). They are asymptotically better than binary heaps only when `decrease_key` is called many
-times relative to `extract_min`. In practice:
+Structure). They are asymptotically better than binary heaps only when `decrease_key` is called many
+Times relative to `extract_min`. In practice:
 
-| Algorithm         | Binary Heap Time  | Fibonacci Heap Time | Practical Winner |
+| Algorithm | Binary Heap Time | Fibonacci Heap Time | Practical Winner |
 | ----------------- | ----------------- | ------------------- | ---------------- |
-| Dijkstra (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$   | Binary heap      |
-| Dijkstra (dense)  | $O(V^2 \log V)$   | $O(V^2)$            | Fibonacci heap   |
-| Prim (sparse)     | $O((V+E) \log V)$ | $O(V \log V + E)$   | Binary heap      |
-| Prim (dense)      | $O(V^2 \log V)$   | $O(V^2)$            | Fibonacci heap   |
+| Dijkstra (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$ | Binary heap |
+| Dijkstra (dense) | $O(V^2 \log V)$ | $O(V^2)$ | Fibonacci heap |
+| Prim (sparse) | $O((V+E) \log V)$ | $O(V \log V + E)$ | Binary heap |
+| Prim (dense) | $O(V^2 \log V)$ | $O(V^2)$ | Fibonacci heap |
 
 :::warning
 
 Fibonacci heaps are primarily of theoretical interest. The constant factors are so large that binary
-heaps (or 4-ary heaps) are almost always faster in practice. Pairing heaps are a simpler alternative
-that achieves the same amortised bounds for most operations.
+Heaps (or 4-ary heaps) are almost always faster in practice. Pairing heaps are a simpler alternative
+That achieves the same amortised bounds for most operations.
 
 :::
 
 ## Pairing Heap
 
 A pairing heap is a simplified alternative to Fibonacci heaps. It is a self-adjusting heap that
-supports all operations in amortised $O(\log n)$ except insert and find-min which are $O(1)$. The
-decrease-key operation is conjectured to be $O(1)$ amortised, but this has only been proven for
-special cases.
+Supports all operations in amortised $O(\log n)$ except insert and find-min which are $O(1)$. The
+Decrease-key operation is conjectured to be $O(1)$ amortised, but this has only been proven for
+Special cases.
 
 ```python
 class PairingNode:
@@ -957,7 +957,7 @@ std::priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(cmp)> pq(cmp)
 
 Python's `heapq` is a **min-heap**. For a max-heap, negate the values: push `(-x, x)` and pop
 `(-neg_x, x)`. C++ `std::priority_queue` is a **max-heap** by default; use `std::greater` for a
-min-heap.
+Min-heap.
 
 :::
 
@@ -966,14 +966,14 @@ min-heap.
 ### 1. Using the Wrong Heap Type
 
 Python's `heapq` is a min-heap, while C++ `std::priority_queue` is a max-heap by default. Forgetting
-this leads to extracting the wrong element. Always verify the heap property before using it in an
-algorithm.
+This leads to extracting the wrong element. Always verify the heap property before using it in an
+Algorithm.
 
 ### 2. Modifying Heap Elements In-Place
 
 Binary heaps do not support efficient `decrease_key` in their standard library implementations.
 Modifying an element's priority in-place and calling `heapify` is $O(n)$. If you need efficient
-`decrease_key`, use a Fibonacci heap or a custom heap with a position map.
+`decrease_key`Use a Fibonacci heap or a custom heap with a position map.
 
 ### 3. Integer Overflow in Priority Values
 
@@ -984,29 +984,37 @@ In competitive programming and systems code, use 64-bit integers. In Python, thi
 
 Dijkstra's algorithm requires non-negative edge weights. If the graph has negative weights, use
 Bellman-Ford ($O(VE)$) instead. A common mistake is to shift all weights to be positive (adding a
-constant to each edge), which changes the shortest paths.
+Constant to each edge), which changes the shortest paths.
 
-### 5. forgetting to Handle Ties in Priority Queue
+### 5. Forgetting to Handle Ties in Priority Queue
 
 When two elements have the same priority, the order of extraction depends on the tie-breaking rule.
 In Python, if the second element of the heap tuple is not comparable, you get a `TypeError`. Always
-include a unique identifier as a tiebreaker: `(priority, counter, data)`.
+Include a unique identifier as a tiebreaker: `(priority, counter, data)`.
 
 ### 6. Using `heapq.nlargest` on Small k
 
-`heapq.nlargest(k, iterable)` is $O(n \log k)$, but for small $k$ (e.g., $k = 1$), it is faster than
-sorting ($O(n \log n)$). However, if $k$ is close to $n$, sorting is faster. The threshold is
-approximately $k = n / 1000$.
+`heapq.nlargest(k, iterable)` is $O(n \log k)$But for small $k$ (e.g., $k = 1$), it is faster than
+Sorting ($O(n \log n)$). However, if $k$ is close to $n$Sorting is faster. The threshold is
+Approximately $k = n / 1000$.
 
 ### 7. Circular Buffer Off-by-One in Deque Implementation
 
 When implementing a circular buffer, the most common bugs are: (1) confusing full and empty states
 (both occur when `head == tail`), (2) incorrect modular arithmetic when resizing, and (3) forgetting
-to handle the wrap-around when iterating. Using a separate `size` counter (rather than inferring it
-from `head` and `tail`) avoids the full/empty ambiguity.
+To handle the wrap-around when iterating. Using a separate `size` counter (rather than inferring it
+From `head` and `tail`) avoids the full/empty ambiguity.
 
 ### 8. Fibonacci Heap Degree Bound
 
 The degree bound $D(n) = O(\log_\phi n)$ for Fibonacci heaps depends on the cascading cut mechanism
-working correctly. If you forget to mark a node when cutting its child, the degree can grow
-unbounded, and the amortised bounds break down.
+Working correctly. If you forget to mark a node when cutting its child, the degree can grow
+Unbounded, and the amortised bounds break down.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

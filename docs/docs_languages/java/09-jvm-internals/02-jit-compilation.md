@@ -9,40 +9,40 @@ slug: jit-compilation
 ## Interpreter vs JIT Compilation
 
 Java source code is compiled to bytecode (`.class` files) by `javac`. The JVM then has two ways to
-execute that bytecode: interpretation and JIT (Just-In-Time) compilation.
+Execute that bytecode: interpretation and JIT (Just-In-Time) compilation.
 
 **Interpretation** reads each bytecode instruction, decodes it, and executes it. It is simple and
-portable but slow -- each instruction dispatch has overhead, and there is no opportunity for
-optimization across instruction boundaries.
+Portable but slow -- each instruction dispatch has overhead, and there is no opportunity for
+Optimization across instruction boundaries.
 
 **JIT compilation** translates bytecode into native machine code at runtime. The compiled code runs
-at native speed, and the JIT can perform optimizations based on runtime profiling data that a static
-compiler (like `javac` or a C++ compiler) cannot see.
+At native speed, and the JIT can perform optimizations based on runtime profiling data that a static
+Compiler (like `javac` or a C++ compiler) cannot see.
 
 The JVM starts by interpreting all methods. As a method is executed repeatedly, the JVM's profiling
-infrastructure counts invocations and back-edge jumps (loop iterations). When a method crosses a
-compilation threshold, the JIT compiler compiles it to native code. Subsequent calls to that method
-execute the compiled native code directly, bypassing the interpreter entirely.
+Infrastructure counts invocations and back-edge jumps (loop iterations). When a method crosses a
+Compilation threshold, the JIT compiler compiles it to native code. Subsequent calls to that method
+Execute the compiled native code directly, bypassing the interpreter entirely.
 
 This hybrid approach gives you:
 
 - **Fast startup**: The JVM starts interpreting immediately without waiting for compilation.
 - **Peak performance**: Hot methods are compiled to optimized native code.
 - **Profile-guided optimization**: The JIT optimizes based on actual runtime behavior (which
-  branches are taken, which types appear, which methods are called).
+ branches are taken, which types appear, which methods are called).
 
 ## C1 and C2 Compilers
 
 HotSpot has two JIT compilers:
 
 **C1 (Client Compiler)**: Optimizes for fast compilation. Performs basic optimizations (inlining,
-null checks, simple constant folding). Compilation is fast (milliseconds), so methods are compiled
-sooner after they become hot. The compiled code is good but not optimal.
+Null checks, simple constant folding). Compilation is fast (milliseconds), so methods are compiled
+Sooner after they become hot. The compiled code is good but not optimal.
 
 **C2 (Server Compiler)**: Optimizes for maximum performance. Performs aggressive optimizations
 (escape analysis, loop unrolling, global value numbering, range check elimination). Compilation is
-slow (seconds), so methods must be very hot before C2 compiles them. The compiled code is
-near-optimal.
+Slow (seconds), so methods must be very hot before C2 compiles them. The compiled code is
+Near-optimal.
 
 ### Tiered Compilation
 
@@ -55,8 +55,8 @@ Modern HotSpot uses tiered compilation by default, combining C1 and C2:
 5. **Tier 4**: C2 compiled, fully optimized (no profiling).
 
 Methods start at tier 0 and advance through the tiers as they get hotter. C1 provides a quick
-performance boost for moderately hot methods, while C2 provides maximum throughput for the hottest
-methods. The profiling data collected at lower tiers feeds into C2's optimization decisions.
+Performance boost for moderately hot methods, while C2 provides maximum throughput for the hottest
+Methods. The profiling data collected at lower tiers feeds into C2's optimization decisions.
 
 ```bash
 # Tiered compilation is the default since Java 8
@@ -74,9 +74,9 @@ java -XX:TieredStopAtLevel=1 MyApp
 
 ### Method Invocation Counters
 
-Each method has an invocation counter. Each time the method is called (via `invokevirtual`,
-`invokeinterface`, `invokestatic`, or `invokespecial`), the counter increments. When the counter
-crosses the compilation threshold, the method is queued for compilation.
+Each method has an invocation counter. Each time the method is called (via `invokevirtual`
+`invokeinterface``invokestatic`Or `invokespecial`), the counter increments. When the counter
+Crosses the compilation threshold, the method is queued for compilation.
 
 ```bash
 # Default compilation threshold
@@ -84,19 +84,19 @@ crosses the compilation threshold, the method is queued for compilation.
 ```
 
 With tiered compilation, the thresholds are lower: C1 compiles at 1000-5000 invocations, and C2
-compiles at 10000-15000 invocations (exact values depend on the JVM version and platform).
+Compiles at 10000-15000 invocations (exact values depend on the JVM version and platform).
 
 ### Back-Edge Counters (OSR)
 
 Loops are the primary performance bottleneck in most programs. A method with a long-running loop
-might never be called enough times to cross the invocation threshold, but the loop body executes
-millions of times. The back-edge counter counts each iteration of a loop (each time control jumps
-back to the loop header).
+Might never be called enough times to cross the invocation threshold, but the loop body executes
+Millions of times. The back-edge counter counts each iteration of a loop (each time control jumps
+Back to the loop header).
 
 When the back-edge counter crosses the threshold, the JVM performs **On-Stack Replacement (OSR)**:
-it compiles the loop body while the loop is still executing and replaces the interpreted loop with
-the compiled version mid-execution. The stack frame is rewritten to continue execution in the
-compiled code.
+It compiles the loop body while the loop is still executing and replaces the interpreted loop with
+The compiled version mid-execution. The stack frame is rewritten to continue execution in the
+Compiled code.
 
 ```java
 public void hotLoop() {
@@ -110,22 +110,22 @@ public void hotLoop() {
 ```
 
 OSR is why Java programs "warm up": the first few iterations run interpreted, then the JIT kicks in
-and subsequent iterations run at full native speed. The transition is seamless -- the loop index and
-all local variables are preserved.
+And subsequent iterations run at full native speed. The transition is seamless -- the loop index and
+All local variables are preserved.
 
 ### Counter Decay
 
 Invocation counters decay over time. If a method is not called frequently enough, its counter is
-decremented. This prevents one-time startup methods from being compiled and wasting code cache
-space. The decay rate is controlled by `-XX:CompileThresholdScaling`.
+Decremented. This prevents one-time startup methods from being compiled and wasting code cache
+Space. The decay rate is controlled by `-XX:CompileThresholdScaling`.
 
 ## Optimization Techniques
 
 ### Inlining
 
 Inlining is the single most impactful optimization. It replaces a method call with the body of the
-callee, eliminating call overhead (parameter passing, stack frame setup, return value handling) and
-enabling downstream optimizations across the call boundary.
+Callee, eliminating call overhead (parameter passing, stack frame setup, return value handling) and
+Enabling downstream optimizations across the call boundary.
 
 ```java
 // Before inlining
@@ -156,11 +156,11 @@ Hot methods with frequent calls are inlined even if they exceed the size limit (
 ### Escape Analysis
 
 Escape analysis determines whether an object is accessible outside the method that created it. If an
-object does not escape (it is only used locally), the JIT can:
+Object does not escape (it is only used locally), the JIT can:
 
 1. **Eliminate the allocation entirely** (stack allocation or scalar replacement).
 2. **Remove synchronization** on objects that do not escape (because no other thread can access
-   them).
+ them).
 3. **Eliminate field accesses** and replace them with local variables.
 
 ```java
@@ -186,7 +186,7 @@ public int compute(Point p) {
 ### Scalar Replacement
 
 When escape analysis proves an object does not escape, scalar replacement breaks the object into its
-individual fields and treats them as separate scalar values stored on the stack or in registers.
+Individual fields and treats them as separate scalar values stored on the stack or in registers.
 This eliminates heap allocation, reduces GC pressure, and enables further optimizations.
 
 ```java
@@ -212,7 +212,7 @@ public int distance(int x1, int y1, int x2, int y2) {
 ### Loop Unrolling
 
 Loop unrolling reduces the overhead of loop control (branch prediction, counter increments, bounds
-checks) by executing multiple iterations per loop iteration:
+Checks) by executing multiple iterations per loop iteration:
 
 ```java
 // Before unrolling
@@ -230,8 +230,8 @@ for (int i = 0; i &lt; 1000; i += 4) {
 ```
 
 C2 performs loop unrolling based on heuristics: the loop body must be small, the iteration count
-must be known (or predictable), and unrolling must not increase code size beyond the benefit. The
-unroll factor is controlled by `-XX:LoopUnrollLimit`.
+Must be known (or predictable), and unrolling must not increase code size beyond the benefit. The
+Unroll factor is controlled by `-XX:LoopUnrollLimit`.
 
 ### Dead Code Elimination
 
@@ -240,7 +240,7 @@ Code that cannot be reached or whose results are never used is eliminated entire
 - Unreachable branches after constant condition evaluation.
 - Assignments to local variables that are never read.
 - Method calls whose return values are discarded and that have no side effects (after escape
-  analysis confirms the receiver does not escape).
+ analysis confirms the receiver does not escape).
 
 ```java
 public int optimized(boolean flag) {
@@ -266,8 +266,8 @@ int secondsPerDay = 86400;
 ```
 
 C2 also performs constant propagation: if a variable is assigned a constant value and never
-reassigned, all uses of that variable are replaced with the constant. This enables further
-optimizations like dead code elimination.
+Reassigned, all uses of that variable are replaced with the constant. This enables further
+Optimizations like dead code elimination.
 
 ### Null Check Elimination
 
@@ -284,8 +284,8 @@ public int length(String s) {
 ```
 
 In practice, the JVM uses implicit null checks via hardware traps: it dereferences the pointer and
-relies on a `SIGSEGV` signal handler to throw `NullPointerException`. This is faster than an
-explicit branch because the common case (non-null) has zero overhead.
+Relies on a `SIGSEGV` signal handler to throw `NullPointerException`. This is faster than an
+Explicit branch because the common case (non-null) has zero overhead.
 
 ### Range Check Elimination
 
@@ -310,21 +310,21 @@ for (int i = 0; i &lt; data.length; i++) {
 ### When Compiled Code Is Invalidated
 
 The JIT makes assumptions based on profiling data: that a virtual call always targets the same
-class, that a branch is always taken, that a type check always succeeds. If these assumptions become
-invalid (due to class loading, field modification, or changes in runtime behavior), the compiled
-code must be **deoptimized**: the JVM discards the compiled native code and reverts to interpreted
-execution.
+Class, that a branch is always taken, that a type check always succeeds. If these assumptions become
+Invalid (due to class loading, field modification, or changes in runtime behavior), the compiled
+Code must be **deoptimized**: the JVM discards the compiled native code and reverts to interpreted
+Execution.
 
 Common triggers:
 
 - **Class loading**: A new subclass is loaded that overrides a method that was inlined. The inlined
-  code is no longer correct.
+ code is no longer correct.
 - **Abstract method implementation**: An abstract method was called on a concrete type, and a new
-  implementation is loaded.
+ implementation is loaded.
 - **Interface method dispatch**: A class implements a new interface, changing the dispatch target.
 - **Field type change**: A field that always contained `String` suddenly contains `Integer`.
 - **OSR entry/exit**: OSR-compiled code may be deoptimized when the loop exits and execution returns
-  to the interpreter.
+ to the interpreter.
 
 ### How Deoptimization Works
 
@@ -333,32 +333,32 @@ When deoptimization is triggered:
 1. The JVM walks the stack of the thread executing the invalid compiled code.
 2. It identifies all frames that contain invalid assumptions.
 3. For each frame, it reconstructs the interpreter state (local variables, operand stack, program
-   counter) from the compiled code state.
+ counter) from the compiled code state.
 4. It replaces the compiled frames with interpreter frames.
 5. Execution continues in the interpreter from the point where the invalid assumption was detected.
 
 This process is called "unpacking" and it is relatively expensive (microseconds per frame), but it
-only happens when the profiling assumptions change, which is rare in steady-state execution.
+Only happens when the profiling assumptions change, which is rare in steady-state execution.
 
 ### Deoptimization Points
 
 The JIT inserts deoptimization points (also called "safepoints") at backward branches (loop headers)
-and method returns. These are points where the JVM has enough information to reconstruct the
-interpreter state. If deoptimization is needed, the JVM waits until the thread reaches the next
-safepoint.
+And method returns. These are points where the JVM has enough information to reconstruct the
+Interpreter state. If deoptimization is needed, the JVM waits until the thread reaches the next
+Safepoint.
 
 Rarely, a deoptimization is "urgent" (e.g., a field was modified and the compiled code reads stale
-data). In this case, the JVM can force deoptimization at the next safepoint poll, which is inserted
-at method calls, loop back edges, and return points.
+Data). In this case, the JVM can force deoptimization at the next safepoint poll, which is inserted
+At method calls, loop back edges, and return points.
 
 ## AOT Compilation: GraalVM Native Image
 
 ### How Native Image Works
 
 GraalVM Native Image performs ahead-of-time (AOT) compilation: it analyzes your application at build
-time, determines the closed-world set of classes and methods that are reachable, and compiles them
-to a standalone native executable. There is no JIT at runtime -- all code is already native machine
-code.
+Time, determines the closed-world set of classes and methods that are reachable, and compiles them
+To a standalone native executable. There is no JIT at runtime -- all code is already native machine
+Code.
 
 ```bash
 # Build a native image
@@ -372,25 +372,25 @@ native-image -H:Name=myapp -cp myapp.jar com.example.Main
 
 - **Instant startup**: No interpretation, no JIT warmup. The application starts at full speed.
 - **Small memory footprint**: No JIT compiler, no code cache, no profiling infrastructure. Typical
-  native images use 30-50 MB of RSS.
+ native images use 30-50 MB of RSS.
 - **Fast container startup**: Ideal for serverless, CLI tools, and Kubernetes where startup time
-  matters.
+ matters.
 - **No warmup phase**: Performance is predictable from the first request.
 
 ### Disadvantages
 
 - **No profile-guided optimization**: The AOT compiler does not have runtime profiling data. It
-  cannot inline virtual calls that are monomorphic at runtime, cannot eliminate branches that are
-  never taken, and cannot perform escape analysis based on actual allocation patterns.
+ cannot inline virtual calls that are monomorphic at runtime, cannot eliminate branches that are
+ never taken, and cannot perform escape analysis based on actual allocation patterns.
 - **Closed-world assumption**: All classes must be known at build time. Reflection, dynamic proxies,
-  and classpath scanning require explicit configuration (reflection configs, resource configs, proxy
-  configs). This is a significant maintenance burden for frameworks that rely heavily on reflection
-  (Spring, Hibernate, Jackson).
-- **Peak throughput is lower**: Native images typically achieve 60-80% of JIT peak throughput for
-  compute-bound workloads. For I/O-bound workloads, the difference is negligible.
+ and classpath scanning require explicit configuration (reflection configs, resource configs, proxy
+ configs). This is a significant maintenance burden for frameworks that rely heavily on reflection
+ (Spring, Hibernate, Jackson).
+- **Peak throughput is lower**: Native images achieve 60-80% of JIT peak throughput for
+ compute-bound workloads. For I/O-bound workloads, the difference is negligible.
 - **Longer build times**: AOT compilation is slow (seconds to minutes for large applications).
 - **Limited debugging**: Stack traces from native images are less informative than JIT stack traces.
-  Profiling tools (VisualVM, async profiler) have limited support.
+ Profiling tools (VisualVM, async profiler) have limited support.
 
 ### When to Use Native Image
 
@@ -444,7 +444,7 @@ Do not use native image when:
 ```
 
 These flags are useful for verifying that a specific optimization is responsible for a bug or a
-performance change. They should never be used in production.
+Performance change. They should never be used in production.
 
 ## Practical Profiling
 
@@ -469,13 +469,13 @@ jmap -dump:format=b,file=heap.hprof &lt;pid&gt;
 ```
 
 The heap histogram is invaluable for identifying memory leaks: if `byte[]` or `char[]` instances
-dominate, you likely have a `String` accumulation problem. If specific domain objects dominate, you
-likely have a collection leak.
+Dominate, you likely have a `String` accumulation problem. If specific domain objects dominate, you
+Likely have a collection leak.
 
 ### jhat: Heap Dump Analysis (Legacy)
 
 `jhat` parses a heap dump and provides a web-based object query interface. It is slow and largely
-superseded by Eclipse MAT and VisualVM:
+Superseded by Eclipse MAT and VisualVM:
 
 ```bash
 jhat -J-Xmx4g heap.hprof
@@ -486,7 +486,7 @@ jhat -J-Xmx4g heap.hprof
 
 Async Profiler is a low-overhead sampling profiler that uses `perf_events` (Linux), `dtrace`
 (macOS), or `getrusage` (fallback) to collect stack traces with minimal impact on application
-performance (&lt; 5% overhead).
+Performance (&lt; 5% overhead).
 
 ```bash
 # CPU profiling for 60 seconds
@@ -500,8 +500,8 @@ performance (&lt; 5% overhead).
 ```
 
 Async Profiler produces flame graphs that show where CPU time is spent. The flame graph is read
-bottom-up: the base is the root call (e.g., `Thread.run()`), and each layer above is a callee. Wide
-bars represent methods that consume more CPU time.
+Bottom-up: the base is the root call (e.g., `Thread.run()`), and each layer above is a callee. Wide
+Bars represent methods that consume more CPU time.
 
 ### Java Flight Recorder (JFR)
 
@@ -530,17 +530,17 @@ jmc app.jfr
 
 When profiling for performance:
 
-1. **Focus on the hottest method**. The Pareto principle applies: 80% of CPU time is usually spent
-   in 20% of methods.
+1. **Focus on the hottest method**. The Pareto principle applies: 80% of CPU time is spent
+ in 20% of methods.
 2. **Check inlining**. If a hot method is a small wrapper that calls another method, verify the
-   callee is inlined. Use `-XX:+PrintInlining` to check.
+ callee is inlined. Use `-XX:+PrintInlining` to check.
 3. **Check for GC pressure**. If GC pause times are a significant fraction of total runtime, the
-   application is allocating too much. Reduce allocation (object pooling, primitive arrays instead
-   of boxed types, reuse buffers).
+ application is allocating too much. Reduce allocation (object pooling, primitive arrays instead
+ of boxed types, reuse buffers).
 4. **Check for lock contention**. Thread dumps or JFR lock events show where threads are blocked.
-   Reduce lock scope, use `ConcurrentHashMap`, or switch to lock-free algorithms.
+ Reduce lock scope, use `ConcurrentHashMap`Or switch to lock-free algorithms.
 5. **Check for I/O waits**. If threads spend most of their time in `Socket` or `FileChannel` reads,
-   the bottleneck is I/O, not CPU. Optimize queries, add caching, or use async I/O.
+ the bottleneck is I/O, not CPU. Optimize queries, add caching, or use async I/O.
 
 ## Common Pitfalls
 
@@ -548,14 +548,14 @@ When profiling for performance:
 
 Do not optimize based on speculation. Profile first, identify the actual bottleneck, then optimize.
 The JIT compiler is already doing most of the optimizations you would think of (and many you would
-not). Micro-optimizations that fight the JIT (like manually inlining, adding redundant null checks,
-or unrolling loops) are usually counterproductive.
+Not). Micro-optimizations that fight the JIT (like manually inlining, adding redundant null checks,
+Or unrolling loops) are counterproductive.
 
 ### Megamorphic Call Sites
 
 A virtual call site that has been observed to target more than 2 (inline cache) or 5 (CHT) different
-classes is "megamorphic." The JIT cannot inline megamorphic calls and must use a hash table
-dispatch. This is significantly slower than monomorphic or bimorphic inlining.
+Classes is "megamorphic." The JIT cannot inline megamorphic calls and must use a hash table
+Dispatch. This is significantly slower than monomorphic or bimorphic inlining.
 
 ```java
 // Megamorphic: process() is called on many different Animal subclasses
@@ -567,7 +567,7 @@ public void processAnimals(List&lt;Animal&gt; animals) {
 ```
 
 Fix: use sealed interfaces with pattern matching (switch), which the JIT can optimize into a
-tableswitch:
+Tableswitch:
 
 ```java
 public void processAnimals(List&lt;Animal&gt; animals) {
@@ -584,8 +584,8 @@ public void processAnimals(List&lt;Animal&gt; animals) {
 ### Warmup Matters for Benchmarks
 
 Never measure performance in the first few seconds of execution. The JIT has not compiled the hot
-methods yet, and your measurements will reflect interpreted performance (5-20x slower than
-compiled). Use JMH (Java Microbenchmark Harness) for any microbenchmarking:
+Methods yet, and your measurements will reflect interpreted performance (5-20x slower than
+Compiled). Use JMH (Java Microbenchmark Harness) for any microbenchmarking:
 
 ```java
 @Benchmark
@@ -605,20 +605,28 @@ public class MyBenchmark {
 ### Code Cache Exhaustion
 
 If the JIT compiles too many methods (common in large applications with many small methods), the
-code cache fills up. Once full, the JVM stops compiling. Monitor code cache usage:
+Code cache fills up. Once full, the JVM stops compiling. Monitor code cache usage:
 
 ```bash
 jcmd &lt;pid&gt; Compiler.CodeHeap_Analytics none
 ```
 
 Fix: increase code cache size (`-XX:ReservedCodeCacheSize=512m`) or audit which methods are being
-compiled (use `-XX:+PrintCompilation`).
+Compiled (use `-XX:+PrintCompilation`).
 
 ## See Also
 
 - [Class Loading and Memory Model](../09-jvm-internals/01-class-loading-memory.md) -- how class
-  loading and GC interact with JIT compilation
+ loading and GC interact with JIT compilation
 - [Concurrency](../06-concurrency/01-concurrency.md) -- JIT optimization of concurrent code
 - [Virtual Threads and Structured Concurrency](../08-modern-java/02-virtual-threads-structured-concurrency.md)
-  -- JIT behavior with virtual threads
+ -- JIT behavior with virtual threads
 - [Style and Patterns](../07-best-practices/01-style-and-patterns.md) -- writing JIT-friendly code
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

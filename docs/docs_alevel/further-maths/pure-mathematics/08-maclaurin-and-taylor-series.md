@@ -13,9 +13,9 @@ sidebar_position: 8
 ## Maclaurin and Taylor Series
 
 Power series provide a way to represent functions as infinite sums, enabling computation,
-approximation, and analysis that would otherwise be impossible. The Maclaurin series expands a
-function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
-they are among the most powerful tools in analysis and applied mathematics.
+Approximation, and analysis that would otherwise be impossible. The Maclaurin series expands a
+Function about $x = 0$; the Taylor series generalises this to expansion about any point. Together
+They are among the most powerful tools in analysis and applied mathematics.
 
 <DesmosGraph title="Taylor Series Approximation of e^x" expressions={["e^x", "sum_{n=0}^{N} x^n/n!"]} width={800} height={500} />
 
@@ -23,16 +23,16 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 ### Board Coverage
 
-| Board   | Paper   | Notes                                                                                  |
+| Board | Paper | Notes |
 | ------- | ------- | -------------------------------------------------------------------------------------- |
-| AQA     | Paper 1 | Maclaurin series; standard series for $e^x$, $\sin x$, $\cos x$, $\ln(1+x)$, $(1+x)^n$ |
-| Edexcel | FP2     | Maclaurin + Taylor series about general $x = a$; convergence                           |
-| OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                        |
-| CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity                   |
+| AQA | Paper 1 | Maclaurin series; standard series for $e^x$$\sin x$$\cos x$$\ln(1+x)$$(1+x)^n$ |
+| Edexcel | FP2 | Maclaurin + Taylor series about general $x = a$; convergence |
+| OCR (A) | Paper 1 | Maclaurin series; standard series; applications |
+| CIE | P2 | Maclaurin series; expansion of compound functions; range of validity |
 
 :::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
-able to derive them and apply them. :::
+Able to derive them and apply them. :::
 
 <hr />
 
@@ -58,7 +58,7 @@ Differentiating repeatedly and evaluating at $x = 0$:
 - $f''(0) = 2a_2$
 - $f'''(0) = 6a_3 = 3!\,a_3$
 
-In general, $f^{(n)}(0) = n!\,a_n$, giving $a_n = \dfrac{f^{(n)}(0)}{n!}$.
+$f^{(n)}(0) = n!\,a_n$Giving $a_n = \dfrac{f^{(n)}(0)}{n!}$.
 
 Substituting back gives the Maclaurin series.
 
@@ -70,7 +70,7 @@ Substituting back gives the Maclaurin series.
 
 ### Proof of the Maclaurin series for $e^x$
 
-Let $f(x) = e^x$. Then $f^{(n)}(x) = e^x$ for all $n$, so $f^{(n)}(0) = 1$ for all $n$.
+Let $f(x) = e^x$. Then $f^{(n)}(x) = e^x$ for all $n$So $f^{(n)}(0) = 1$ for all $n$.
 
 $$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = \sum_{n=0}^{\infty}\frac{x^n}{n!}$$
 
@@ -84,7 +84,7 @@ $\square$
 
 ### Proof of the Maclaurin series for $\sin x$
 
-Let $f(x) = \sin x$. The derivatives cycle: $\sin x$, $\cos x$, $-\sin x$, $-\cos x$, $\sin x$, ...
+Let $f(x) = \sin x$. The derivatives cycle: $\sin x$$\cos x$$-\sin x$$-\cos x$$\sin x$...
 
 At $x = 0$: $0, 1, 0, -1, 0, 1, 0, -1, \ldots$
 
@@ -98,7 +98,7 @@ $\square$
 
 ### 2.3 Cosine function
 
-Let $f(x) = \cos x$. The derivatives cycle: $\cos x$, $-\sin x$, $-\cos x$, $\sin x$, $\cos x$, ...
+Let $f(x) = \cos x$. The derivatives cycle: $\cos x$$-\sin x$$-\cos x$$\sin x$$\cos x$...
 
 At $x = 0$: $1, 0, -1, 0, 1, 0, -1, 0, \ldots$
 
@@ -108,9 +108,9 @@ $$\boxed{\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots 
 
 Let $f(x) = \ln(1+x)$ for $|x| < 1$.
 
-$f'(x) = \dfrac{1}{1+x}$, $f''(x) = -\dfrac{1}{(1+x)^2}$, $f'''(x) = \dfrac{2}{(1+x)^3}$, ...
+$f'(x) = \dfrac{1}{1+x}$$f''(x) = -\dfrac{1}{(1+x)^2}$$f'''(x) = \dfrac{2}{(1+x)^3}$...
 
-$f^{(n)}(x) = \dfrac{(-1)^{n-1}(n-1)!}{(1+x)^n}$, so $f^{(n)}(0) = (-1)^{n-1}(n-1)!$.
+$f^{(n)}(x) = \dfrac{(-1)^{n-1}(n-1)!}{(1+x)^n}$So $f^{(n)}(0) = (-1)^{n-1}(n-1)!$.
 
 $$\boxed{\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots = \sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}} \quad \mathrm{for } -1 < x \leq 1$$
 
@@ -122,7 +122,7 @@ For $|x| < 1$ and any real $n$:
 
 $$\boxed{(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots = \sum_{k=0}^{\infty}\binom{n}{k}x^k}$$
 
-where $\dbinom{n}{k} = \dfrac◆LB◆n(n-1)(n-2)\cdots(n-k+1)◆RB◆◆LB◆k!◆RB◆$.
+Where $\dbinom{n}{k} = \dfrac◆LB◆n(n-1)(n-2)\cdots(n-k+1)◆RB◆◆LB◆k!◆RB◆$.
 
 **Radius of convergence:** 1.
 
@@ -133,18 +133,18 @@ $$\boxed{\arctan x = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots 
 **Radius of convergence:** 1. Converges at $x = \pm 1$ by the alternating series test.
 
 **Derivation.** Since $\dfrac{d}{dx}\arctan x = \dfrac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + \cdots$ for
-$|x| < 1$, integrate term by term.
+$|x| < 1$Integrate term by term.
 
 ### 2.7 Summary table
 
-| Function    | Maclaurin Series                                                  | Valid for       |
+| Function | Maclaurin Series | Valid for |
 | ----------- | ----------------------------------------------------------------- | --------------- | --- | ------- |
-| $e^x$       | $\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}$                  | all $x$         |
-| $\sin x$    | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | all $x$         |
-| $\cos x$    | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}$     | all $x$         |
-| $\ln(1+x)$  | $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$         | $-1 < x \leq 1$ |
-| $(1+x)^n$   | $\displaystyle\sum_{k=0}^{\infty}\binom{n}{k}x^k$                 | $               | x   | < 1$    |
-| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$    | $               | x   | \leq 1$ |
+| $e^x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}$ | all $x$ |
+| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | all $x$ |
+| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}$ | all $x$ |
+| $\ln(1+x)$ | $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$ | $-1 < x \leq 1$ |
+| $(1+x)^n$ | $\displaystyle\sum_{k=0}^{\infty}\binom{n}{k}x^k$ | $               | x   | < 1$ |
+| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$ | $               | x   | \leq 1$ |
 
 <hr />
 
@@ -160,24 +160,24 @@ The Maclaurin series is the special case $a = 0$.
 
 ### 3.2 Taylor's theorem with remainder
 
-**Theorem.** If $f$ is $(n+1)$-times differentiable on an interval containing $a$ and $x$, then
+**Theorem.** If $f$ is $(n+1)$-times differentiable on an interval containing $a$ and $x$Then
 
 $$f(x) = \sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k + R_n$$
 
-where the **remainder** in Lagrange form is
+Where the **remainder** in Lagrange form is
 
 $$\boxed{R_n = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}}$$
 
-for some $c$ between $a$ and $x$.
+For some $c$ between $a$ and $x$.
 
 **Intuition.** The remainder term tells us the error when truncating the series after $n$ terms. If
-$|R_n| \to 0$ as $n \to \infty$, then the Taylor series converges to $f(x)$.
+$|R_n| \to 0$ as $n \to \infty$Then the Taylor series converges to $f(x)$.
 
 ### 3.3 Worked example
 
 Find the Taylor series of $e^x$ about $x = 1$ up to the $x^3$ term.
 
-$f(x) = e^x$, $f'(x) = e^x$, $f''(x) = e^x$, $f'''(x) = e^x$.
+$f(x) = e^x$$f'(x) = e^x$$f''(x) = e^x$$f'''(x) = e^x$.
 
 At $x = 1$: $f(1) = f'(1) = f''(1) = f'''(1) = e$.
 
@@ -187,7 +187,7 @@ $$e^x = e + e(x-1) + \frac{e}{2}(x-1)^2 + \frac{e}{6}(x-1)^3 + \cdots = e\sum_{n
 
 **Example.** Find the Taylor series of $\ln x$ about $x = 1$.
 
-Let $u = x - 1$, so $\ln x = \ln(1 + u)$.
+Let $u = x - 1$So $\ln x = \ln(1 + u)$.
 
 $$\ln(1+u) = u - \frac{u^2}{2} + \frac{u^3}{3} - \cdots$$
 
@@ -201,14 +201,14 @@ $$\boxed{\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots} \quad \
 
 **Definition.** The **radius of convergence** $R$ of a power series
 $\displaystyle\sum_{n=0}^{\infty}a_n x^n$ is the value such that the series converges for $|x| < R$
-and diverges for $|x| > R$.
+And diverges for $|x| > R$.
 
 The **interval of convergence** is the set of all $x$ for which the series converges. The endpoints
 $x = \pm R$ must be tested separately.
 
 ### 4.2 The ratio test
 
-**Theorem (Ratio test).** For the series $\displaystyle\sum_{n=0}^{\infty}a_n x^n$, let
+**Theorem (Ratio test).** For the series $\displaystyle\sum_{n=0}^{\infty}a_n x^n$Let
 
 $$L = \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|$$
 
@@ -226,13 +226,13 @@ $L = \lim_{n\to\infty}\left|\dfrac{a_{n+1}x^{n+1}}{a_n x^n}\right| = |x|\lim_{n\
 **Example 1.** Find the radius of convergence of
 $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$.
 
-$a_n = \dfrac{(-1)^{n-1}}{n}$, $a_{n+1} = \dfrac{(-1)^n}{n+1}$.
+$a_n = \dfrac{(-1)^{n-1}}{n}$$a_{n+1} = \dfrac{(-1)^n}{n+1}$.
 
 $\left|\dfrac{a_{n+1}}{a_n}\right| = \dfrac{n}{n+1} \to 1$ as $n \to \infty$.
 
 $R = 1$. The series converges for $|x| < 1$.
 
-At $x = 1$: alternating harmonic series, converges. At $x = -1$: $-\sum 1/n$, diverges.
+At $x = 1$: alternating harmonic series, converges. At $x = -1$: $-\sum 1/n$Diverges.
 
 Interval of convergence: $-1 < x \leq 1$.
 
@@ -246,19 +246,19 @@ $R = \infty$. Converges for all $x$.
 
 ### Proof of convergence of the geometric series
 
-For $|x| < 1$, the geometric series is $\displaystyle\sum_{n=0}^{\infty}x^n$.
+For $|x| < 1$The geometric series is $\displaystyle\sum_{n=0}^{\infty}x^n$.
 
 The partial sum is $S_N = 1 + x + x^2 + \cdots + x^N$.
 
 $S_N = \dfrac{1 - x^{N+1}}{1 - x}$ (standard formula).
 
-Since $|x| < 1$: $x^{N+1} \to 0$ as $N \to \infty$, so $S_N \to \dfrac{1}{1-x}$.
+Since $|x| < 1$: $x^{N+1} \to 0$ as $N \to \infty$So $S_N \to \dfrac{1}{1-x}$.
 
 $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip tip $\dfrac{1}{1+x}$, $\ln(1+x)$, and $\arctan x$ all derive from it. :::
+:::tip tip $\dfrac{1}{1+x}$$\ln(1+x)$And $\arctan x$ all derive from it. :::
 
 <hr />
 
@@ -270,13 +270,13 @@ $\square$
 
 $e^{0.1} \approx 1 + 0.1 + \dfrac{0.01}{2} + \dfrac{0.001}{6} = 1 + 0.1 + 0.005 + 0.000167 \approx 1.10517$.
 
-The actual value is $\approx 1.10517$, so the error is negligible with just 4 terms.
+The actual value is $\approx 1.10517$So the error is negligible with just 4 terms.
 
 **Example.** Approximate $\sin(0.1)$ and bound the error.
 
 $\sin(0.1) \approx 0.1 - \dfrac{0.001}{6} = 0.1 - 0.000167 = 0.099833$.
 
-The next term is $\dfrac{(0.1)^5}{120} \approx 8.3 \times 10^{-8}$, so the error is at most this.
+The next term is $\dfrac{(0.1)^5}{120} \approx 8.3 \times 10^{-8}$So the error is at most this.
 
 ### 5.2 Evaluating limits using series
 
@@ -316,13 +316,13 @@ $= 1 + 2x + \dfrac{5}{2}x^2 + \dfrac{8}{3}x^3 + \cdots$
 
 ### 5.4 L'Hôpital's rule and series
 
-**Intuition.** L'Hôpital's rule is a consequence of Taylor's theorem. If $f(a) = g(a) = 0$, then
-near $a$:
+**Intuition.** L'Hôpital's rule is a consequence of Taylor's theorem. If $f(a) = g(a) = 0$Then
+Near $a$:
 
 $$\frac{f(x)}{g(x)} \approx \frac◆LB◆f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2◆RB◆◆LB◆g'(a)(x-a) + \frac{g''(a)}{2}(x-a)^2◆RB◆ = \frac◆LB◆f'(a) + \frac{f''(a)}{2}(x-a)◆RB◆◆LB◆g'(a) + \frac{g''(a)}{2}(x-a)◆RB◆$$
 
-Taking $x \to a$ gives $\dfrac{f'(a)}{g'(a)}$, which is L'Hôpital's rule. The series approach often
-gives more information (higher-order terms) than applying L'Hôpital's rule repeatedly.
+Taking $x \to a$ gives $\dfrac{f'(a)}{g'(a)}$Which is L'Hôpital's rule. The series approach often
+Gives more information (higher-order terms) than applying L'Hôpital's rule repeatedly.
 
 <hr />
 
@@ -330,18 +330,18 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 
 :::warning **Common errors:**
 
-1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$, not
-   $f^{(n)}(0)$. Always divide by the factorial.
+1. **Wrong coefficients.** The Maclaurin coefficient of $x^n$ is $\dfrac{f^{(n)}(0)}{n!}$Not
+ $f^{(n)}(0)$. Always divide by the factorial.
 
-2. **Forgetting the range of validity.** $\ln(1+x)$ is valid for $-1 < x \leq 1$, not all $x$. Using
-   it outside this range gives a wrong answer.
+2. **Forgetting the range of validity.** $\ln(1+x)$ is valid for $-1 < x \leq 1$Not all $x$. Using
+ it outside this range gives a wrong answer.
 
-3. **Incorrect substitution.** When expanding $e^{2x}$, substitute $2x$ into every term:
-   $e^{2x} = 1 + 2x + \dfrac{4x^2}{2} + \dfrac{8x^3}{6} + \cdots$, not
-   $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
+3. **Incorrect substitution.** When expanding $e^{2x}$Substitute $2x$ into every term:
+ $e^{2x} = 1 + 2x + \dfrac{4x^2}{2} + \dfrac{8x^3}{6} + \cdots$Not
+ $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
-   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
+ $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
 
 :::tip **Exam strategy:**
 
@@ -349,7 +349,7 @@ gives more information (higher-order terms) than applying L'Hôpital's rule repe
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
-  pattern. :::
+ pattern. :::
 
 <hr />
 
@@ -365,8 +365,8 @@ Find the Maclaurin series of $f(x) = \cos 2x$ up to the $x^6$ term.
 <details>
 <summary>Solution 1</summary>
 
-$f(0) = 1$, $f'(x) = -2\sin 2x$, $f'(0) = 0$, $f''(x) = -4\cos 2x$, $f''(0) = -4$,
-$f'''(x) = 8\sin 2x$, $f'''(0) = 0$, $f^{(4)}(x) = 16\cos 2x$, $f^{(4)}(0) = 16$, $f^{(5)}(0) = 0$,
+$f(0) = 1$$f'(x) = -2\sin 2x$$f'(0) = 0$$f''(x) = -4\cos 2x$$f''(0) = -4$
+$f'''(x) = 8\sin 2x$$f'''(0) = 0$$f^{(4)}(x) = 16\cos 2x$$f^{(4)}(0) = 16$$f^{(5)}(0) = 0$
 $f^{(6)}(0) = -64$.
 
 Alternatively, substitute $2x$ into
@@ -393,7 +393,7 @@ Substitute $-x^2$ into $\ln(1+u) = u - \dfrac{u^2}{2} + \dfrac{u^3}{3} - \cdots$
 $$\ln(1 - x^2) = -x^2 - \frac{x^4}{2} - \frac{x^6}{3} - \cdots$$
 
 Range: $|x^2| < 1 \implies |x| < 1$. Also converges at $x = \pm 1$ (alternating harmonic at $x = 1$
-when substituted, but here $-x^2 - x^4/2 - x^6/3 - \cdots$ at $x = 1$ is $-\sum 1/n$, diverges).
+When substituted, but here $-x^2 - x^4/2 - x^6/3 - \cdots$ at $x = 1$ is $-\sum 1/n$Diverges).
 
 Valid for $-1 < x < 1$.
 
@@ -424,16 +424,16 @@ Setting $x = 2$: $e^2 = \displaystyle\sum_{n=0}^{\infty}\dfrac{2^n}{n!}$. $\blac
 <summary>Problem 4</summary>
 
 Find the Taylor series of $\sin x$ about $x = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ up to the $(x - \pi/3)^3$
-term.
+Term.
 
 </details>
 
 <details>
 <summary>Solution 4</summary>
 
-$f(x) = \sin x$. $f(\pi/3) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$. $f'(x) = \cos x$,
-$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
-$f'''(x) = -\cos x$, $f'''(\pi/3) = -\dfrac{1}{2}$.
+$f(x) = \sin x$. $f(\pi/3) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$. $f'(x) = \cos x$
+$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$$f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+$f'''(x) = -\cos x$$f'''(\pi/3) = -\dfrac{1}{2}$.
 
 $$\sin x = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac{1}{2}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) - \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^2 - \frac{1}{12}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^3 + \cdots$$
 
@@ -457,7 +457,7 @@ $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 $\sin x - x = -\dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
 $\dfrac◆LB◆\sin x - x◆RB◆◆LB◆x^3◆RB◆ = -\dfrac{1}{6} + \dfrac{x^2}{120} - \cdots \to \boxed{-\dfrac{1}{6}}$
-as $x \to 0$.
+As $x \to 0$.
 
 **If you get this wrong, revise:** [Evaluating Limits](#52-evaluating-limits-using-series) — Section
 5.2.
@@ -503,7 +503,7 @@ Find the radius of convergence of $\displaystyle\sum_{n=0}^{\infty}\frac{(2x)^n}
 $a_n = \dfrac{2^n}{n^2+1}$.
 
 $\left|\dfrac{a_{n+1}}{a_n}\right| = \dfrac{2^{n+1}(n^2+1)}{2^n(n^2+2n+2)} = \dfrac{2(n^2+1)}{n^2+2n+2} \to 2$
-as $n \to \infty$.
+As $n \to \infty$.
 
 $R = \dfrac{1}{2}$. The series converges for $\boxed{|x| < \dfrac{1}{2}}$.
 
@@ -602,12 +602,12 @@ Substituting $u = x^2$:
 
 $$\frac◆LB◆1◆RB◆◆LB◆\sqrt{1+x^2}◆RB◆ = 1 - \frac{x^2}{2} + \frac{3x^4}{8} - \frac{5x^6}{16} + \cdots$$
 
-Valid for $|x^2| < 1$, i.e., $|x| < 1$.
+Valid for $|x^2| < 1$I.e., $|x| < 1$.
 
 ### Example 7.2: Taylor series and error bounds
 
 **Problem.** Use the Taylor series of $\cos x$ about $x = 0$ to approximate $\cos(0.2)$ and bound
-the error.
+The error.
 
 **Solution.** $\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \dfrac{x^6}{720} + \cdots$
 
@@ -674,10 +674,10 @@ $$f(x) = 1 + 4x + \frac{13x^2}{2} + \frac{17x^3}{3} + \cdots$$
 ### Example 7.7: Convergence of alternating series
 
 **Problem.** How many terms of $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}$ are needed to
-approximate $\ln 2$ with an error less than $0.001$?
+Approximate $\ln 2$ with an error less than $0.001$?
 
 **Solution.** This is the alternating harmonic series, with $S = \ln 2$. The error after $N$ terms
-is bounded by the absolute value of the $(N+1)$-th term:
+Is bounded by the absolute value of the $(N+1)$-th term:
 
 $$|\text{error}| \leq \frac{1}{N+1} < 0.001 \implies N + 1 > 1000 \implies N \geq 1000$$
 
@@ -708,13 +708,13 @@ So the integral $\approx 0.4613$ to 4 decimal places.
 ### 8.1 Maclaurin series and differential equations
 
 The Maclaurin series provides a method for solving differential equations by substituting a power
-series ansatz. See
+Series ansatz. See
 [Differential Equations](/docs/alevel/further-maths/pure-mathematics/differential-equations).
 
 ### 8.2 Taylor series and complex numbers
 
 Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ is the link between exponential series and
-trigonometric series. See
+Trigonometric series. See
 [Complex Numbers](/docs/alevel/further-maths/pure-mathematics/further-complex-numbers).
 
 ### 8.3 Binomial series and further algebra
@@ -853,7 +853,7 @@ $x^4$: from $(-\frac{1}{6}x^4)(1) + (x^4/24)(x/x)... $ Actually:
 - $x \times (-\frac{x^3}{6}) = -\frac{x^4}{6}$ ✓
 - $\frac{x^2}{2} \times x = \frac{x^3}{2}$ (not $x^4$)
 
-$x^4$ terms: $x \cdot (-\frac{x^3}{6}) = -\frac{x^4}{6}$ and $\frac{x^4}{24} \cdot x$... no, that's
+$x^4$ terms: $x \cdot (-\frac{x^3}{6}) = -\frac{x^4}{6}$ and $\frac{x^4}{24} \cdot x$... No, that's
 $x^5$.
 
 Actually $x^4$ comes from: $x \cdot (-\frac{x^3}{6}) = -\frac{x^4}{6}$.
@@ -866,10 +866,10 @@ $$\boxed{e^x\sin x = x + x^2 + \frac{x^3}{3} - \frac{x^4}{6} - \frac{x^5}{30} + 
 
 **Problem.** Find the Taylor series of $\ln x$ about $x = 1$ up to the term in $(x-1)^4$.
 
-**Solution.** $f(x) = \ln x$, $f(1) = 0$.
+**Solution.** $f(x) = \ln x$$f(1) = 0$.
 
-$f'(x) = \dfrac{1}{x}$, $f'(1) = 1$. $f''(x) = -\dfrac{1}{x^2}$, $f''(1) = -1$.
-$f'''(x) = \dfrac{2}{x^3}$, $f'''(1) = 2$. $f^{(4)}(x) = -\dfrac{6}{x^4}$, $f^{(4)}(1) = -6$.
+$f'(x) = \dfrac{1}{x}$$f'(1) = 1$. $f''(x) = -\dfrac{1}{x^2}$$f''(1) = -1$.
+$f'''(x) = \dfrac{2}{x^3}$$f'''(1) = 2$. $f^{(4)}(x) = -\dfrac{6}{x^4}$$f^{(4)}(1) = -6$.
 
 $$\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cdots$$
 
@@ -894,12 +894,12 @@ Ratio test: $\left|\dfrac{a_{n+1}}{a_n}\right| = \dfrac{n}{n+1}|x| \to |x|$.
 Converges when $|x| < 1$. At $x = 1$: alternating harmonic series (converges). At $x = -1$:
 $-\sum \dfrac{1}{n}$ (diverges).
 
-Radius of convergence: $\boxed{1}$, interval: $(-1, 1]$.
+Radius of convergence: $\boxed{1}$Interval: $(-1, 1]$.
 
 ### Example 10.5: Series solution to estimate a definite integral
 
 **Problem.** Use a Maclaurin series to estimate $\displaystyle\int_0^{0.5} e^{-x^2}\,dx$ to 4
-decimal places.
+Decimal places.
 
 **Solution.** $e^{-x^2} = 1 - x^2 + \dfrac{x^4}{2} - \dfrac{x^6}{6} + \dfrac{x^8}{24} - \cdots$
 
@@ -911,8 +911,8 @@ $= 0.5 - 0.04167 + 0.003125 - 0.000186 + 0.000009 = \boxed{0.4613}$ (4 d.p.)
 
 ### Example 10.6: Differentiating a known series
 
-**Problem.** By differentiating the Maclaurin series for $\dfrac{1}{1-x}$, find the Maclaurin series
-for $\dfrac{1}{(1-x)^2}$.
+**Problem.** By differentiating the Maclaurin series for $\dfrac{1}{1-x}$Find the Maclaurin series
+For $\dfrac{1}{(1-x)^2}$.
 
 **Solution.** $\dfrac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots$
 
@@ -942,12 +942,12 @@ $$\boxed{\cos x \cdot e^{-x} = 1 - x - \frac{x^3}{3} - \frac{x^4}{6} + O(x^5)}$$
 
 ## 11. Common Pitfalls
 
-| Pitfall                                                                   | Correct Approach                                                          |
+| Pitfall | Correct Approach |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Confusing the Maclaurin series (about $x=0$) with a general Taylor series | Maclaurin: $a=0$; Taylor: $f(x) = \sum \dfrac{f^{(n)}(a)}{n!}(x-a)^n$     |
-| Forgetting the factorial in the denominator                               | Each term has $\dfrac{f^{(n)}(0)}{n!}x^n$, not $\dfrac{f^{(n)}(0)}{n}x^n$ |
-| Using a series outside its radius of convergence                          | Always check: e.g., $\ln(1+x)$ converges only for $-1 < x \leq 1$         |
-| Incorrectly multiplying series                                            | Collect like powers carefully; use a table if needed                      |
+| Confusing the Maclaurin series (about $x=0$) with a general Taylor series | Maclaurin: $a=0$; Taylor: $f(x) = \sum \dfrac{f^{(n)}(a)}{n!}(x-a)^n$ |
+| Forgetting the factorial in the denominator | Each term has $\dfrac{f^{(n)}(0)}{n!}x^n$Not $\dfrac{f^{(n)}(0)}{n}x^n$ |
+| Using a series outside its radius of convergence | Always check: e.g., $\ln(1+x)$ converges only for $-1 < x \leq 1$ |
+| Incorrectly multiplying series | Collect like powers carefully; use a table if needed |
 
 ---
 
@@ -997,7 +997,7 @@ $\sin 0.1 = 0.1 - \dfrac{0.001}{6} + \dfrac{0.00001}{120} - \cdots = 0.1 - 0.000
 
 $\boxed{\sin 0.1 \approx 0.09983342}$
 
-The $x^7$ term contributes approximately $10^{-12}$, which is negligible.
+The $x^7$ term contributes approximately $10^{-12}$Which is negligible.
 
 </details>
 
@@ -1011,7 +1011,7 @@ The error in truncating a Taylor series after $n$ terms is:
 
 $$R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$$
 
-for some $c$ between $a$ and $x$. This gives a bound on the truncation error.
+For some $c$ between $a$ and $x$. This gives a bound on the truncation error.
 
 ### 13.2 Power series solutions of ODEs
 
@@ -1020,20 +1020,20 @@ $y = \sum a_n x^n$ into the ODE and equate coefficients.
 
 ### 13.3 Standard Maclaurin series (reference)
 
-| Function         | Series                                                              | Radius   |
+| Function | Series | Radius |
 | ---------------- | ------------------------------------------------------------------- | -------- |
-| $e^x$            | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$                   | $\infty$ |
-| $\sin x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$  | $\infty$ |
-| $\cos x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$      | $\infty$ |
-| $\ln(1+x)$       | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$          | $1$      |
-| $(1+x)^\alpha$   | $\displaystyle\sum_{n=0}^{\infty} \binom◆LB◆\alpha◆RB◆◆LB◆n◆RB◆x^n$ | $1$      |
-| $\arctan x$      | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$     | $1$      |
-| $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$                              | $1$      |
+| $e^x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}$ | $\infty$ |
+| $\sin x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$ | $\infty$ |
+| $\cos x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$ | $\infty$ |
+| $\ln(1+x)$ | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ | $1$ |
+| $(1+x)^\alpha$ | $\displaystyle\sum_{n=0}^{\infty} \binom◆LB◆\alpha◆RB◆◆LB◆n◆RB◆x^n$ | $1$ |
+| $\arctan x$ | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$ | $1$ |
+| $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$ | $1$ |
 
 ### 13.4 Using series to prove identities
 
 Many trigonometric identities can be derived from series. For example, $e^{ix} = \cos x + i\sin x$
-implies all the standard addition formulae.
+Implies all the standard addition formulae.
 
 ---
 
@@ -1062,8 +1062,8 @@ $\displaystyle\lim_{x \to 0} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆ = 1$ (
 <details>
 <summary>Solution</summary>
 
-The $n$-th derivative of $\cos x$ is one of $\pm\cos x$ or $\pm\sin x$, so $|f^{(n)}(c)| \leq 1$ for
-all $c$ and $n$.
+The $n$-th derivative of $\cos x$ is one of $\pm\cos x$ or $\pm\sin x$So $|f^{(n)}(c)| \leq 1$ for
+All $c$ and $n$.
 
 By the Lagrange remainder: $|R_n(x)| \leq \dfrac◆LB◆|x|^{n+1}◆RB◆◆LB◆(n+1)!◆RB◆$.
 
@@ -1095,10 +1095,10 @@ $\boxed{\displaystyle\lim_{x \to 0} \frac◆LB◆\tan x - x◆RB◆◆LB◆x^3�
 
 ### 15.1 Power series solutions of differential equations
 
-For an ODE $y'' + p(x)y' + q(x)y = 0$, assume $y = \sum_{n=0}^{\infty} a_n x^n$.
+For an ODE $y'' + p(x)y' + q(x)y = 0$Assume $y = \sum_{n=0}^{\infty} a_n x^n$.
 
 Substitute into the ODE and equate coefficients of each power of $x$ to zero. This gives a
-recurrence relation for $a_n$.
+Recurrence relation for $a_n$.
 
 ### 15.2 The exponential generating function
 
@@ -1116,7 +1116,7 @@ Example: $(1+x)^{1/2}$ converges at $x = 1$ (giving $\sqrt{2}$) but diverges at 
 ### 15.4 Series acceleration
 
 Techniques like Euler acceleration or Shanks transformation can speed up the convergence of slowly
-converging alternating series.
+Converging alternating series.
 
 ---
 
@@ -1135,7 +1135,7 @@ $\ln(1-x^2) = -\displaystyle\sum_{n=1}^{\infty} \frac{x^{2n}}{n} = -x^2 - \dfrac
 
 Radius of convergence: $|x^2| < 1 \implies |x| < 1$. At $x = 1$: $-\sum \dfrac{1}{n}$ diverges.
 
-$\boxed{\ln(1-x^2) = -x^2 - \dfrac{x^4}{2} - \dfrac{x^6}{3} + O(x^8)}$, radius $= 1$.
+$\boxed{\ln(1-x^2) = -x^2 - \dfrac{x^4}{2} - \dfrac{x^6}{3} + O(x^8)}$Radius $= 1$.
 
 </details>
 
@@ -1155,3 +1155,7 @@ So $\displaystyle\sum_{n=1}^{\infty} n x^n = \frac{x}{(1-x)^2}$.
 At $x = 1/2$: $S = \dfrac{1/2}{(1/2)^2} = \dfrac{1/2}{1/4} = 2$. $\blacksquare$
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

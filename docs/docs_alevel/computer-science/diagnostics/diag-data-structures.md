@@ -30,7 +30,7 @@ Result: 3 $\to$ 1 $\to$ 9 $\to$ 5.
 
 (c) Time complexity:
 - Insert at head: $O(1)$ -- just update the head pointer and the new node's next.
-- Insert at position $k$: $O(n)$ -- must traverse $k$ nodes to find the insertion point. Even if the insertion itself is $O(1)$, the traversal dominates.
+- Insert at position $k$: $O(n)$ -- must traverse $k$ nodes to find the insertion point. Even if the insertion itself is $O(1)$The traversal dominates.
 
 (d) A doubly linked list has both `next` and `prev` pointers. For a deque (double-ended queue), we need to add and remove from both ends efficiently. With a singly linked list, removing from the tail requires $O(n)$ traversal to find the second-to-last node. With a doubly linked list, the tail node's `prev` pointer gives direct access to the second-to-last node, making tail removal $O(1)$. Both head and tail operations become $O(1)$ with a doubly linked list.
 
@@ -40,7 +40,7 @@ Result: 3 $\to$ 1 $\to$ 9 $\to$ 5.
 
 **Solution:**
 
-Hash values: $h(14) = 0$, $h(21) = 0$, $h(28) = 0$, $h(35) = 0$, $h(42) = 0$, $h(15) = 1$, $h(22) = 1$.
+Hash values: $h(14) = 0$$h(21) = 0$$h(28) = 0$$h(35) = 0$$h(42) = 0$$h(15) = 1$$h(22) = 1$.
 
 (a) **Separate chaining:**
 
@@ -185,19 +185,19 @@ Note: `*` and `/` have the same precedence, so `*` is popped before pushing `/` 
 
 (b) **Dijkstra's algorithm from A:**
 
-Initial: dist $= [0, \infty, \infty, \infty, \infty]$, visited $= \{\}$, prev $= [-, -, -, -, -]$.
+Initial: dist $= [0, \infty, \infty, \infty, \infty]$Visited $= \{\}$Prev $= [-, -, -, -, -]$.
 
-Visit A (dist $= 0$): update B $= 4$, C $= 2$. dist $= [0, 4, 2, \infty, \infty]$.
+Visit A (dist $= 0$): update B $= 4$C $= 2$. Dist $= [0, 4, 2, \infty, \infty]$.
 
-Visit C (dist $= 2$): update B $= \min(4, 2+1) = 3$, D $= 2+8 = 10$, E $= 2+10 = 12$. dist $= [0, 3, 2, 10, 12]$.
+Visit C (dist $= 2$): update B $= \min(4, 2+1) = 3$D $= 2+8 = 10$E $= 2+10 = 12$. Dist $= [0, 3, 2, 10, 12]$.
 
-Visit B (dist $= 3$): update D $= \min(10, 3+5) = 8$. dist $= [0, 3, 2, 8, 12]$.
+Visit B (dist $= 3$): update D $= \min(10, 3+5) = 8$. Dist $= [0, 3, 2, 8, 12]$.
 
-Visit D (dist $= 8$): update E $= \min(12, 8+2) = 10$. dist $= [0, 3, 2, 8, 10]$.
+Visit D (dist $= 8$): update E $= \min(12, 8+2) = 10$. Dist $= [0, 3, 2, 8, 10]$.
 
 Visit E (dist $= 10$): no improvements.
 
-Final distances: A$=0$, B$=3$, C$=2$, D$=8$, E$=10$.
+Final distances: A$=0$B$=3$C$=2$D$=8$E$=10$.
 
 (c) Shortest path A to E: trace back using prev array.
 
@@ -213,7 +213,7 @@ The shortest path is A $\to$ C $\to$ B $\to$ D $\to$ E with total weight 10.
 
 ---
 ### IT-3: Tree Balancing and Complexity (with Complexity Analysis)
-**Question:** A binary search tree has $n$ nodes. (a) What is the worst-case height and best-case height? (b) If values 1, 2, 3, 4, 5, 6, 7 are inserted in sorted order, what is the resulting tree structure and height? (c) State the time complexity of searching in this tree vs a balanced tree. (d) If each comparison takes $1\ \mu\text{s}$, calculate the maximum search time for $n = 1000000$ in a balanced vs unbalanced tree.
+**Question:** A binary search tree has $n$ nodes. (a) What is the worst-case height and best-case height? (b) If values 1, 2, 3, 4, 5, 6, 7 are inserted in sorted order, what is the resulting tree structure and height? (c) State the time complexity of searching in this tree vs a balanced tree. (d) If each comparison takes $1\ \mu\text{s}$Calculate the maximum search time for $n = 1000000$ in a balanced vs unbalanced tree.
 
 **Solution:**
 

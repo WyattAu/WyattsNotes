@@ -7,17 +7,17 @@ slug: oauth-deep-dive
 ## OAuth 2.0 Overview
 
 OAuth 2.0 is an **authorization** framework defined in RFC 6749. It allows a third-party application
-to obtain limited access to a user's resources on a resource server without sharing the user's
-credentials. OAuth 2.0 is not an authentication protocol -- it delegates authorization.
+To obtain limited access to a user's resources on a resource server without sharing the user's
+Credentials. OAuth 2.0 is not an authentication protocol -- it delegates authorization.
 
 ### Roles
 
-| Role                 | Description                                                              |
+| Role | Description |
 | -------------------- | ------------------------------------------------------------------------ |
-| Resource Owner       | The user who owns the data (e.g., a Google account holder)               |
-| Client               | The application requesting access (e.g., a mobile app)                   |
+| Resource Owner | The user who owns the data (e.g., a Google account holder) |
+| Client | The application requesting access (e.g., a mobile app) |
 | Authorization Server | Issues access tokens after authenticating the user and obtaining consent |
-| Resource Server      | The API that holds the protected resources (e.g., Google API)            |
+| Resource Server | The API that holds the protected resources (e.g., Google API) |
 
 ```mermaid
 flowchart LR
@@ -32,7 +32,7 @@ flowchart LR
 ### Authorization Code Grant (with PKCE)
 
 The most secure grant type. The client redirects the user to the authorization server, the user
-authenticates and consents, and the authorization server redirects back with an authorization code.
+Authenticates and consents, and the authorization server redirects back with an authorization code.
 The client then exchanges the code for tokens via a back-channel request.
 
 ```mermaid
@@ -88,13 +88,13 @@ function base64URLEncode(buffer) {
 // Step 4: Send code_verifier in token request (server verifies challenge)
 ```
 
-| Step                 | What Happens                                           |
+| Step | What Happens |
 | -------------------- | ------------------------------------------------------ |
-| 1. Generate verifier | Client creates random `code_verifier`                  |
-| 2. Derive challenge  | Client hashes verifier with SHA-256 → `code_challenge` |
-| 3. Authorization     | Client sends `code_challenge` to auth server           |
-| 4. Token exchange    | Client sends `code_verifier` to auth server            |
-| 5. Verification      | Server verifies `SHA256(verifier) == challenge`        |
+| 1. Generate verifier | Client creates random `code_verifier` |
+| 2. Derive challenge | Client hashes verifier with SHA-256 → `code_challenge` |
+| 3. Authorization | Client sends `code_challenge` to auth server |
+| 4. Token exchange | Client sends `code_verifier` to auth server |
+| 5. Verification | Server verifies `SHA256(verifier) == challenge` |
 
 ### Authorization Code Flow Step-by-Step
 
@@ -172,19 +172,19 @@ For devices with limited input capability (CLI tools, IoT devices, smart TVs):
 
 ### Deprecated Grants
 
-| Grant                   | Why Deprecated                 | Replacement               |
+| Grant | Why Deprecated | Replacement |
 | ----------------------- | ------------------------------ | ------------------------- |
-| Implicit                | Token exposed in URL fragment  | Authorization Code + PKCE |
+| Implicit | Token exposed in URL fragment | Authorization Code + PKCE |
 | Resource Owner Password | Credentials shared with client | Authorization Code + PKCE |
 
 ## Access Tokens
 
 ### JWT vs Opaque Tokens
 
-| Format | Self-Contained | Revocation               | Performance                        | Use Case                          |
+| Format | Self-Contained | Revocation | Performance | Use Case |
 | ------ | -------------- | ------------------------ | ---------------------------------- | --------------------------------- |
-| JWT    | Yes            | Difficult (short TTL)    | Fast (no introspection needed)     | Stateless APIs, microservices     |
-| Opaque | No             | Easy (delete from store) | Requires introspection per request | APIs with strict revocation needs |
+| JWT | Yes | Difficult (short TTL) | Fast (no introspection needed) | Stateless APIs, microservices |
+| Opaque | No | Easy (delete from store) | Requires introspection per request | APIs with strict revocation needs |
 
 ### JWT Structure
 
@@ -196,15 +196,15 @@ SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c   # Signature
 
 ### Common JWT Claims
 
-| Claim   | Meaning                       | Example                    |
+| Claim | Meaning | Example |
 | ------- | ----------------------------- | -------------------------- |
-| `iss`   | Issuer                        | `https://auth.example.com` |
-| `sub`   | Subject (user ID)             | `user-12345`               |
-| `aud`   | Audience (intended recipient) | `https://api.example.com`  |
-| `exp`   | Expiration time               | `1700000000`               |
-| `iat`   | Issued at                     | `1700000000`               |
-| `jti`   | JWT ID (unique identifier)    | `abc123def456`             |
-| `scope` | Granted scopes/permissions    | `read:users write:orders`  |
+| `iss` | Issuer | `https://auth.example.com` |
+| `sub` | Subject (user ID) | `user-12345` |
+| `aud` | Audience (intended recipient) | `https://api.example.com` |
+| `exp` | Expiration time | `1700000000` |
+| `iat` | Issued at | `1700000000` |
+| `jti` | JWT ID (unique identifier) | `abc123def456` |
+| `scope` | Granted scopes/permissions | `read:users write:orders` |
 
 ### Token Validation Checklist
 
@@ -237,7 +237,7 @@ def validate_jwt(token, expected_issuer, expected_audience, jwks_uri):
 ### Token Rotation
 
 Refresh token rotation (RFC 6749 Section 6) issues a new refresh token every time the old one is
-used. The old token is immediately invalidated:
+Used. The old token is immediately invalidated:
 
 ```text
 1. POST /token with refresh_token=ABC
@@ -283,17 +283,17 @@ curl -X POST https://auth.example.com/introspect \
 ## OpenID Connect (OIDC)
 
 OIDC is an identity layer on top of OAuth 2.0, defined by OpenID Connect Core 1.0. It provides
-authentication (verifying who the user is) in addition to authorization.
+Authentication (verifying who the user is) in addition to authorization.
 
 ### OIDC Endpoints
 
-| Endpoint                            | Purpose                                             |
+| Endpoint | Purpose |
 | ----------------------------------- | --------------------------------------------------- |
-| `/authorize`                        | Authentication request (same as OAuth 2.0)          |
-| `/token`                            | Token exchange (same as OAuth 2.0)                  |
-| `/userinfo`                         | Get user profile information                        |
-| `/jwks`                             | JSON Web Key Set (public keys for JWT verification) |
-| `/.well-known/openid-configuration` | OIDC discovery document                             |
+| `/authorize` | Authentication request (same as OAuth 2.0) |
+| `/token` | Token exchange (same as OAuth 2.0) |
+| `/userinfo` | Get user profile information |
+| `/jwks` | JSON Web Key Set (public keys for JWT verification) |
+| `/.well-known/openid-configuration` | OIDC discovery document |
 
 ### id_token
 
@@ -315,34 +315,34 @@ The `id_token` is a JWT that contains identity claims about the authenticated us
 
 ### OIDC Scopes and Claims
 
-| Scope     | Claims Returned                                |
+| Scope | Claims Returned |
 | --------- | ---------------------------------------------- |
-| `openid`  | `sub` (required for all OIDC flows)            |
-| `profile` | `name`, `family_name`, `given_name`, `picture` |
-| `email`   | `email`, `email_verified`                      |
-| `address` | `address` (formatted address object)           |
-| `phone`   | `phone_number`, `phone_number_verified`        |
+| `openid` | `sub` (required for all OIDC flows) |
+| `profile` | `name``family_name``given_name``picture` |
+| `email` | `email``email_verified` |
+| `address` | `address` (formatted address object) |
+| `phone` | `phone_number``phone_number_verified` |
 
 ### OIDC Flows
 
 **Authorization Code Flow:** Most secure, for web apps and native apps.
 
 **Hybrid Flow:** Returns tokens from the authorization endpoint and the token endpoint. Rarely used;
-complex and provides minimal benefit over pure authorization code flow.
+Complex and provides minimal benefit over pure authorization code flow.
 
 **Implicit Flow (deprecated):** Returned tokens directly in the URL fragment. Vulnerable to token
-interception via URL history, referrer headers, and browser extensions.
+Interception via URL history, referrer headers, and browser extensions.
 
 ## Token Security
 
 ### Storage
 
-| Location          | Vulnerable to XSS? | Vulnerable to CSRF?         | Recommendation                    |
+| Location | Vulnerable to XSS? | Vulnerable to CSRF? | Recommendation |
 | ----------------- | ------------------ | --------------------------- | --------------------------------- |
-| `localStorage`    | Yes                | No                          | Never use for sensitive tokens    |
-| `sessionStorage`  | Yes                | No                          | Never use for sensitive tokens    |
-| `httpOnly` cookie | No                 | Yes (mitigated by SameSite) | Recommended for web apps          |
-| In-memory (SPA)   | No (until refresh) | N/A                         | Good for SPAs with silent refresh |
+| `localStorage` | Yes | No | Never use for sensitive tokens |
+| `sessionStorage` | Yes | No | Never use for sensitive tokens |
+| `httpOnly` cookie | No | Yes (mitigated by SameSite) | Recommended for web apps |
+| In-memory (SPA) | No (until refresh) | N/A | Good for SPAs with silent refresh |
 
 ```javascript
 // Recommended: httpOnly cookie for tokens (set by server)
@@ -446,7 +446,7 @@ Authorization codes in the URL can leak via:
 - Browser extensions
 
 The authorization code flow mitigates this because the code is exchanged server-side and is
-single-use. But if the code is intercepted, PKCE prevents the attacker from exchanging it.
+Single-use. But if the code is intercepted, PKCE prevents the attacker from exchanging it.
 
 ### CSRF via State Parameter
 
@@ -483,14 +483,14 @@ Always use `S256` (SHA-256) as the challenge method.
 
 OAuth 2.1 (draft) consolidates best practices from OAuth 2.0 security BCPs:
 
-| Change                        | Impact                                         |
+| Change | Impact |
 | ----------------------------- | ---------------------------------------------- |
-| Implicit grant removed        | All clients must use authorization code + PKCE |
-| Password grant removed        | No more credential sharing with clients        |
-| PKCE required for all clients | Even confidential clients must use PKCE        |
-| Redirect URI must use HTTPS   | HTTP redirect URIs no longer allowed           |
-| Exact redirect URI matching   | No partial/path-based matching                 |
-| Sender-constrained tokens     | DPoP or mTLS for proof-of-possession           |
+| Implicit grant removed | All clients must use authorization code + PKCE |
+| Password grant removed | No more credential sharing with clients |
+| PKCE required for all clients | Even confidential clients must use PKCE |
+| Redirect URI must use HTTPS | HTTP redirect URIs no longer allowed |
+| Exact redirect URI matching | No partial/path-based matching |
+| Sender-constrained tokens | DPoP or mTLS for proof-of-possession |
 
 ## Common Pitfalls
 
@@ -498,24 +498,24 @@ OAuth 2.1 (draft) consolidates best practices from OAuth 2.0 security BCPs:
 
 Access tokens are for authorization, not authentication. The `sub` claim may be absent. Use the
 `id_token` (OIDC) for identity information. Never use an access token to make authentication
-decisions.
+Decisions.
 
 ### Not Validating Tokens on Every Request
 
 Token validation must happen on every API request. Caching validation results is acceptable if you
-check the `exp` claim first. Never trust a token without verifying its signature, issuer, audience,
-and expiration.
+Check the `exp` claim first. Never trust a token without verifying its signature, issuer, audience,
+And expiration.
 
 ### Storing Refresh Tokens Without Rotation
 
 Without refresh token rotation, a stolen refresh token can be used indefinitely. Implement rotation:
-issue a new refresh token on every refresh, and revoke all tokens for the user if a rotated token is
-reused.
+Issue a new refresh token on every refresh, and revoke all tokens for the user if a rotated token is
+Reused.
 
 ### Missing Scope Enforcement
 
 Access tokens contain `scope` claims. The resource server must check that the token has the required
-scope for the requested operation:
+Scope for the requested operation:
 
 ```python
 def require_scope(required_scope):
@@ -538,5 +538,13 @@ def list_users():
 ### Accepting Tokens from Untrusted Issuers
 
 Always validate the `iss` claim against a known list of trusted issuers. If your API accepts tokens
-from `https://auth.example.com` but also accepts tokens from any issuer, an attacker can create
-their own authorization server and issue tokens with arbitrary claims.
+From `https://auth.example.com` but also accepts tokens from any issuer, an attacker can create
+Their own authorization server and issue tokens with arbitrary claims.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

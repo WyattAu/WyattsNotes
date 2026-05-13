@@ -8,7 +8,7 @@ slug: matrices-and-linear-transformations
 
 ### Notation
 
-An $m \times n$ matrix $A$ has $m$ rows and $n$ columns. The entry in row $i$, column $j$ is $a_{ij}$.
+An $m \times n$ matrix $A$ has $m$ rows and $n$ columns. The entry in row $i$Column $j$ is $a_{ij}$.
 
 ### Addition and Scalar Multiplication
 
@@ -18,7 +18,7 @@ $$(A + B)_{ij} = a_{ij} + b_{ij}, \qquad (\lambda A)_{ij} = \lambda a_{ij}$$
 
 ### Matrix Multiplication
 
-If $A$ is $m \times p$ and $B$ is $p \times n$, the product $C = AB$ is $m \times n$ with:
+If $A$ is $m \times p$ and $B$ is $p \times n$The product $C = AB$ is $m \times n$ with:
 
 $$c_{ij} = \sum_{k=1}^{p} a_{ik}b_{kj}$$
 
@@ -26,7 +26,7 @@ $$c_{ij} = \sum_{k=1}^{p} a_{ik}b_{kj}$$
 
 - $(AB)C = A(BC)$ (associative)
 - $A(B + C) = AB + AC$ (distributive)
-- $AB \ne BA$ in general (not commutative)
+- $AB \ne BA$ (not commutative)
 - $(AB)^T = B^T A^T$
 
 **Example.** If $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$:
@@ -78,18 +78,18 @@ $$A^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
 
 **Example.** Find the inverse of $A = \begin{pmatrix} 3 & 1 \\ 5 & 2 \end{pmatrix}$.
 
-$\det(A) = 6 - 5 = 1 \ne 0$, so $A$ is invertible.
+$\det(A) = 6 - 5 = 1 \ne 0$So $A$ is invertible.
 
 $$A^{-1} = \begin{pmatrix} 2 & -1 \\ -5 & 3 \end{pmatrix}$$
 
 ### Inverse via Row Reduction (Gauss-Jordan)
 
-To find $A^{-1}$, augment $A$ with $I$ and apply row operations:
+To find $A^{-1}$Augment $A$ with $I$ and apply row operations:
 
 $$\left[\,A \mid I\,\right] \xrightarrow{\mathrm{row\ ops}} \left[\,I \mid A^{-1}\,\right]$$
 
-If the left half reduces to $I$, the right half is $A^{-1}$. If the left half has a zero row, $A$ is
-singular.
+If the left half reduces to $I$The right half is $A^{-1}$. If the left half has a zero row, $A$ is
+Singular.
 
 **Example.** Find $A^{-1}$ for $A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 0 & 0 & 1 \end{pmatrix}$.
 
@@ -101,7 +101,7 @@ $R_1 \to R_1 - 2R_2$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & -5 & 1 & -2 & 0 \\ 0 & 1 & 4 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
-$R_1 \to R_1 + 5R_3$, $R_2 \to R_2 - 4R_3$:
+$R_1 \to R_1 + 5R_3$$R_2 \to R_2 - 4R_3$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & 0 & 1 & -2 & 5 \\ 0 & 1 & 0 & 0 & 1 & -4 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
@@ -115,16 +115,16 @@ $$A^{-1} = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$$
 
 The system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where $A$ is $n \times n$:
 
-- **Unique solution:** $\det(A) \ne 0$, giving $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$
+- **Unique solution:** $\det(A) \ne 0$Giving $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$
 - **No solution or infinitely many:** $\det(A) = 0$
 
 ### Cramer's Rule
 
-If $\det(A) \ne 0$, the $i$-th component of the solution is:
+If $\det(A) \ne 0$The $i$-th component of the solution is:
 
 $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
-where $A_i$ is $A$ with the $i$-th column replaced by $\mathbf{'\{'}b{'\}'}$.
+Where $A_i$ is $A$ with the $i$-th column replaced by $\mathbf{'\{'}b{'\}'}$.
 
 **Example.** Solve $\begin{cases} 2x + y = 5 \\ x - y = 1 \end{cases}$.
 
@@ -135,7 +135,7 @@ $$x = \frac{\det\begin{pmatrix} 5 & 1 \\ 1 & -1 \end{pmatrix}}{-3} = \frac{-6}{-
 ### Gaussian Elimination
 
 For systems of any size, use **row reduction** to transform the augmented matrix to row echelon
-form, then back-substitute.
+Form, then back-substitute.
 
 ---
 
@@ -157,11 +157,11 @@ Each linear transformation of $\mathbb{'\{'}R{'\}'}^2$ can be represented by a $
 
 ### Composition of Transformations
 
-If transformation $A$ is followed by transformation $B$, the combined transformation is represented
-by the matrix product $BA$ (note the order: apply $A$ first, then $B$).
+If transformation $A$ is followed by transformation $B$The combined transformation is represented
+By the matrix product $BA$ (note the order: apply $A$ first, then $B$).
 
 **Example.** Find the matrix for a rotation of $90\,{}^{\circ}$ anticlockwise about the origin,
-followed by a reflection in the $x$-axis.
+Followed by a reflection in the $x$-axis.
 
 $$A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \quad \mathrm{(rotation)}, \qquad B = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \quad \mathrm{(reflection)}$$
 
@@ -171,7 +171,7 @@ This is equivalent to a reflection in the line $y = -x$.
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}x{'\}'}$, i.e. $(A - I)\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}0{'\}'}$.
+An **invariant point** satisfies $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}x{'\}'}$I.e. $(A - I)\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}0{'\}'}$.
 An **invariant line** is a line mapped to itself (points on the line may move along it).
 
 ---
@@ -180,7 +180,7 @@ An **invariant line** is a line mapped to itself (points on the line may move al
 
 ### Definition
 
-For a square matrix $A$, a scalar $\lambda$ is an **eigenvalue** if there exists a non-zero vector
+For a square matrix $A$A scalar $\lambda$ is an **eigenvalue** if there exists a non-zero vector
 $\mathbf{'\{'}v{'\}'}$ such that:
 
 $$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$$
@@ -195,7 +195,7 @@ This is a polynomial equation of degree $n$ in $\lambda$ whose roots are the eig
 
 ### Finding Eigenvectors
 
-For each eigenvalue $\lambda_i$, solve $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+For each eigenvalue $\lambda_i$Solve $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
 
 ### Worked Examples
 
@@ -225,7 +225,7 @@ If $A$ has $n$ linearly independent eigenvectors, it can be **diagonalised**:
 
 $$A = PDP^{-1}$$
 
-where $D$ is the diagonal matrix of eigenvalues and $P$ has eigenvectors as columns.
+Where $D$ is the diagonal matrix of eigenvalues and $P$ has eigenvectors as columns.
 
 **Applications:**
 
@@ -253,14 +253,14 @@ $$(2 - \lambda)(\lambda^2 - 6\lambda + 8) = (2 - \lambda)(\lambda - 2)(\lambda -
 
 $\lambda_1 = 2$ (algebraic multiplicity 2), $\lambda_2 = 4$.
 
-For $\lambda = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives $\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$,
-so $v_2 = v_3$ with $v_1$ free. Two linearly independent eigenvectors: $\mathbf{'\{'}v{'\}'}_1 = (1, 0, 0)$
-and $\mathbf{'\{'}v{'\}'}_2 = (0, 1, 1)$.
+For $\lambda = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives $\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$
+So $v_2 = v_3$ with $v_1$ free. Two linearly independent eigenvectors: $\mathbf{'\{'}v{'\}'}_1 = (1, 0, 0)$
+And $\mathbf{'\{'}v{'\}'}_2 = (0, 1, 1)$.
 
-For $\lambda = 4$: $(A - 4I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives $-v_2 - v_3 = 0$ and $-v_1 = 0$,
-so $\mathbf{'\{'}v{'\}'}_3 = (0, 1, -1)$.
+For $\lambda = 4$: $(A - 4I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives $-v_2 - v_3 = 0$ and $-v_1 = 0$
+So $\mathbf{'\{'}v{'\}'}_3 = (0, 1, -1)$.
 
-The matrix is diagonalisable: $P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & -1 \end{pmatrix}$,
+The matrix is diagonalisable: $P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & -1 \end{pmatrix}$
 $D = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 4 \end{pmatrix}$.
 
 ---
@@ -270,7 +270,7 @@ $D = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 4 \end{pmatrix}$.
 ### Augmented Matrix Method
 
 For a system of $m$ equations in $n$ unknowns, write the augmented matrix $[A | \mathbf{'\{'}b{'\}'}]$ and apply
-elementary row operations to reach row echelon form.
+Elementary row operations to reach row echelon form.
 
 **Elementary row operations:**
 
@@ -290,7 +290,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 2 & -1 & 1 & 1 \\ 3 & 1 & 2 & 10 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
+$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - 3R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 0 & -5 & 3 & -5 \\ 0 & -5 & 5 & 1 \end{array}\right]$$
 
@@ -323,14 +323,14 @@ The determinant can be computed by expanding along any row $i$:
 
 $$\det(A) = \sum_{j=1}^{n} (-1)^{i+j}\, a_{ij}\, M_{ij}$$
 
-where $M_{ij}$ is the minor (determinant of the submatrix obtained by removing row $i$ and column $j$).
+Where $M_{ij}$ is the minor (determinant of the submatrix obtained by removing row $i$ and column $j$).
 Choosing a row or column with the most zeros minimises computation.
 
 ### Adjugate Method for $3 \times 3$ Inverse
 
 $$A^{-1} = \frac{1}{\det(A)}\,\mathrm{adj}(A)$$
 
-where the **adjugate** (adjoint) matrix is the transpose of the cofactor matrix.
+Where the **adjugate** (adjoint) matrix is the transpose of the cofactor matrix.
 
 **Example.** Find $A^{-1}$ for $A = \begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 3 \\ 1 & 0 & 1 \end{pmatrix}$.
 
@@ -348,12 +348,12 @@ $$A^{-1} = \frac{1}{7}\begin{pmatrix} 1 & -2 & 6 \\ 3 & 1 & -3 \\ -1 & 2 & 1 \en
 
 ### Powers of Matrices
 
-If $A = PDP^{-1}$, then $A^n = PD^nP^{-1}$, where $D^n$ is trivial to compute (just raise diagonal
-entries to the $n$-th power).
+If $A = PDP^{-1}$Then $A^n = PD^nP^{-1}$Where $D^n$ is trivial to compute (just raise diagonal
+Entries to the $n$-th power).
 
 **Example.** Compute $A^{10}$ for $A = \begin{pmatrix} 3 & 1 \\ 2 & 4 \end{pmatrix}$.
 
-From earlier, $\lambda_1 = 5$, $\lambda_2 = 2$, $P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$.
+From earlier, $\lambda_1 = 5$$\lambda_2 = 2$$P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$.
 
 $$D^{10} = \begin{pmatrix} 5^{10} & 0 \\ 0 & 2^{10} \end{pmatrix}$$
 
@@ -361,16 +361,16 @@ $$A^{10} = PD^{10}P^{-1}$$
 
 ### Systems of Differential Equations
 
-The system $\dfrac{d\mathbf{'\{'}x{'\}'}}{dt} = A\mathbf{'\{'}x{'\}'}$ has solution $\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}(0)$,
-which can be evaluated using diagonalisation: $e^{At} = Pe^{Dt}P^{-1}$.
+The system $\dfrac{d\mathbf{'\{'}x{'\}'}}{dt} = A\mathbf{'\{'}x{'\}'}$ has solution $\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}(0)$
+Which can be evaluated using diagonalisation: $e^{At} = Pe^{Dt}P^{-1}$.
 
 :::warning
 Common Pitfall
 
 A matrix is diagonalisable if and only if it has a full set of linearly independent eigenvectors. A
-matrix with repeated eigenvalues may or may not be diagonalisable. For example,
+Matrix with repeated eigenvalues may or may not be diagonalisable. For example,
 $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has eigenvalue $1$ with algebraic multiplicity $2$ but
-geometric multiplicity $1$; it is not diagonalisable.
+Geometric multiplicity $1$; it is not diagonalisable.
 
 :::
 
@@ -393,7 +393,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 2 & 4 & 6 & 8 \\ 1 & -1 & 1 & 1 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$:
+$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & -3 & -2 & -3 \end{array}\right]$$
 
@@ -401,12 +401,12 @@ Swap $R_2$ and $R_3$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & -3 & -2 & -3 \\ 0 & 0 & 0 & 0 \end{array}\right]$$
 
-Row 2 gives $-3y - 2z = -3$, so $y = \dfrac{3 - 2z}{3} = 1 - \dfrac{2z}{3}$.
+Row 2 gives $-3y - 2z = -3$So $y = \dfrac{3 - 2z}{3} = 1 - \dfrac{2z}{3}$.
 
-Row 1 gives $x + 2\!\left(1 - \dfrac{2z}{3}\right) + 3z = 4$, so $x + 2 - \dfrac{4z}{3} + 3z = 4$,
-hence $x = 2 - \dfrac{5z}{3}$.
+Row 1 gives $x + 2\!\left(1 - \dfrac{2z}{3}\right) + 3z = 4$So $x + 2 - \dfrac{4z}{3} + 3z = 4$
+Hence $x = 2 - \dfrac{5z}{3}$.
 
-Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$, $y = 1 - 2t$, $z = 3t$.
+Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$$y = 1 - 2t$$z = 3t$.
 
 The system has infinitely many solutions parametrised by $t \in \mathbb{'\{'}R{'\}'}$.
 
@@ -415,7 +415,7 @@ The system has infinitely many solutions parametrised by $t \in \mathbb{'\{'}R{'
 **Worked Example: Composition of Transformations**
 
 Find the matrix representing an enlargement by scale factor $2$ about the origin, followed by a
-reflection in the line $y = x$. Determine the image of the point $(3, 1)$.
+Reflection in the line $y = x$. Determine the image of the point $(3, 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -459,17 +459,17 @@ From $2 - \lambda = 0$: $\lambda_1 = 2$.
 
 From $\lambda^2 - 2\lambda + 2 = 0$: $\lambda = \dfrac{2 \pm \sqrt{4 - 8}}{2} = 1 \pm i$.
 
-The three eigenvalues are $\lambda = 2$, $\lambda = 1 + i$, $\lambda = 1 - i$.
+The three eigenvalues are $\lambda = 2$$\lambda = 1 + i$$\lambda = 1 - i$.
 
 Since complex eigenvalues of a real matrix come in conjugate pairs, this is consistent. The matrix
-is not diagonalisable over $\mathbb{'\{'}R{'\}'}$ but is diagonalisable over $\mathbb{'\{'}C{'\}'}$.
+Is not diagonalisable over $\mathbb{'\{'}R{'\}'}$ but is diagonalisable over $\mathbb{'\{'}C{'\}'}$.
 
 </details>
 
 **Worked Example: Adjugate Method for $3 \times 3$ Inverse**
 
 Find the inverse of $A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 1 \\ 0 & 1 & 2 \end{pmatrix}$ using the
-adjugate method.
+Adjugate method.
 
 <details>
 <summary>Solution</summary>
@@ -480,11 +480,11 @@ $$\det(A) = 2\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} - 1\begin{vmatrix} 1 &
 
 Now compute the cofactor matrix $C$:
 
-$C_{11} = +\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} = 5$, $C_{12} = -\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} = -2$, $C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
+$C_{11} = +\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} = 5$$C_{12} = -\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} = -2$$C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
 
-$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$$C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$$C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
 
-$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = -2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$$C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = -2$$C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
 
 $$C = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
@@ -503,8 +503,8 @@ Compute $A^5$ where $A = \begin{pmatrix} 3 & -1 \\ 2 & 0 \end{pmatrix}$.
 <details>
 <summary>Solution</summary>
 
-Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 0$, so
-$(\lambda - 1)(\lambda - 2) = 0$, giving $\lambda_1 = 1$, $\lambda_2 = 2$.
+Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 0$So
+$(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$$\lambda_2 = 2$.
 
 For $\lambda_1 = 1$: $\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies 2x = y$.
 Eigenvector: $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
@@ -526,70 +526,70 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 
 ## Common Pitfalls
 
-1. **Matrix multiplication is not commutative.** $AB \ne BA$ in general. When composing
-   transformations, the order matters: the matrix for "transform $A$ then transform $B$" is $BA$, not
-   $AB$.
+1. **Matrix multiplication is not commutative.** $AB \ne BA$ . When composing
+ transformations, the order matters: the matrix for "transform $A$ then transform $B$" is $BA$Not
+ $AB$.
 
 2. **Forgetting the factor of $\lambda^n$ in $\det(\lambda A)$.** Scaling a matrix by $\lambda$
-   multiplies the determinant by $\lambda^n$, where $n$ is the dimension. A common mistake is to
-   write $\det(\lambda A) = \lambda\det(A)$ instead of $\lambda^n\det(A)$.
+ multiplies the determinant by $\lambda^n$Where $n$ is the dimension. A common mistake is to
+ write $\det(\lambda A) = \lambda\det(A)$ instead of $\lambda^n\det(A)$.
 
 3. **Wrong sign in the $2 \times 2$ inverse.** The inverse of $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
-   is $\dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. The $-b$ and $-c$ are easily
-   misplaced.
+ is $\dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. The $-b$ and $-c$ are 
+ misplaced.
 
 4. **Confusing algebraic and geometric multiplicity.** The algebraic multiplicity of an eigenvalue is
-   its multiplicity as a root of the characteristic equation. The geometric multiplicity is the
-   dimension of the corresponding eigenspace. The geometric multiplicity is always less than or equal
-   to the algebraic multiplicity.
+ its multiplicity as a root of the characteristic equation. The geometric multiplicity is the
+ dimension of the corresponding eigenspace. The geometric multiplicity is always less than or equal
+ to the algebraic multiplicity.
 
 5. **Assuming every matrix is diagonalisable.** Only matrices with a full set of linearly independent
-   eigenvectors can be diagonalised. Matrices with defective eigenvalues (geometric multiplicity less
-   than algebraic multiplicity) require the Jordan normal form instead.
+ eigenvectors can be diagonalised. Matrices with defective eigenvalues (geometric multiplicity less
+ than algebraic multiplicity) require the Jordan normal form instead.
 
 6. **Row operation errors in Gauss-Jordan elimination.** When finding the inverse via augmented
-   matrices, remember that row operations must be applied to **both** sides simultaneously. A single
-   arithmetic mistake propagates through all remaining steps.
+ matrices, remember that row operations must be applied to **both** sides simultaneously. A single
+ arithmetic mistake propagates through all remaining steps.
 
 7. **Incorrect cofactor signs.** The sign of the cofactor $C_{ij}$ is $(-1)^{i+j}$. This follows a
-   checkerboard pattern starting with $+$ in the top-left corner. A common error is to use all
-   positive signs.
+ checkerboard pattern starting with $+$ in the top-left corner. A common error is to use all
+ positive signs.
 
 8. **Misidentifying invariant lines.** An invariant line is mapped to itself, but points on the line
-   may move. To find invariant lines, solve $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ where $\lambda$
-   is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
+ may move. To find invariant lines, solve $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ where $\lambda$
+ is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
 
 ---
 
 ## Exam-Style Problems
 
 1. Compute $AB - BA$ where $A = \begin{pmatrix} 1 & 2 \\ 0 & 3 \end{pmatrix}$ and
-   $B = \begin{pmatrix} 4 & -1 \\ 1 & 2 \end{pmatrix}$.
+ $B = \begin{pmatrix} 4 & -1 \\ 1 & 2 \end{pmatrix}$.
 
 2. Find the inverse of $\begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \\ 2 & 1 & 0 \end{pmatrix}$ using
-   row reduction, and verify your answer by multiplication.
+ row reduction, and verify your answer by multiplication.
 
 3. Find the eigenvalues and eigenvectors of
-   $A = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$. Use diagonalisation to find $A^6$.
+ $A = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$. Use diagonalisation to find $A^6$.
 
-4. A triangle has vertices at $(0, 0)$, $(2, 0)$, and $(1, 3)$. Find the matrix of the transformation
-   that reflects the triangle in the $y$-axis and then enlarges it by a factor of $2$ about the
-   origin. Determine the area of the image.
+4. A triangle has vertices at $(0, 0)$$(2, 0)$And $(1, 3)$. Find the matrix of the transformation
+ that reflects the triangle in the $y$-axis and then enlarges it by a factor of $2$ about the
+ origin. Determine the area of the image.
 
 5. Determine the values of $k$ for which the system
-   $\begin{cases} x + ky + z = 1 \\ x + y + kz = k \\ kx + y + z = 1 \end{cases}$
-   has (a) a unique solution, (b) no solution, (c) infinitely many solutions.
+ $\begin{cases} x + ky + z = 1 \\ x + y + kz = k \\ kx + y + z = 1 \end{cases}$
+ has (a) a unique solution, (b) no solution, (c) infinitely many solutions.
 
 6. Find the characteristic equation of
-   $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix}$ and explain why $A$ is
-   not diagonalisable.
+ $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix}$ and explain why $A$ is
+ not diagonalisable.
 
 7. The matrix $T = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$
-   represents a rotation. Find the eigenvalues when $\theta = \dfrac{\pi}{2}$ and interpret them
-   geometrically.
+ represents a rotation. Find the eigenvalues when $\theta = \dfrac{\pi}{2}$ and interpret them
+ geometrically.
 
 8. Use Cramer's rule to solve
-   $\begin{cases} 3x + 2y - z = 4 \\ x - y + 2z = -1 \\ 2x + 3y + z = 7 \end{cases}$.
+ $\begin{cases} 3x + 2y - z = 4 \\ x - y + 2z = -1 \\ 2x + 3y + z = 7 \end{cases}$.
 
 ---
 
@@ -608,3 +608,7 @@ Ready to test your understanding of **Matrices**? The [diagnostic test](/docs/ib
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

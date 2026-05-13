@@ -46,7 +46,7 @@ $$m_2 = -\frac{v_2}{u_2} = -\frac{-6}{10} = 0.6$$
 $$m_{\text{total}} = m_1 \times m_2 = -1 \times 0.6 = -0.6$$
 
 In the "real is positive" convention, $m = -0.6$ means the image is **inverted** and **diminished**
-to $0.6$ times the object size.
+To $0.6$ times the object size.
 
 **Key misconception:** Students often forget that the image from the first lens becomes the object for the second lens, and must correctly calculate $u_2$ accounting for the lens separation.
 
@@ -86,7 +86,7 @@ Critical angle: $\sin\theta_c = \frac{1}{n} = \frac{1}{1.5} = 0.6667$
 
 $$\theta_c = 41.81°$$
 
-Since $25.53° \lt 41.81°$, **total internal reflection does NOT occur** at this face.
+Since $25.53° \lt 41.81°$**total internal reflection does NOT occur** at this face.
 
 **Step 4: Refraction at the short face (exit):**
 
@@ -142,13 +142,13 @@ For angular magnification of a microscope (when the final image is at the near p
 
 $$M_{\text{angular}} = m_1 \times M_{\text{eyepiece}}$$
 
-where $M_{\text{eyepiece}} = 1 + \frac{D}{f_2} = 1 + \frac{25}{2.5} = 11$
+Where $M_{\text{eyepiece}} = 1 + \frac{D}{f_2} = 1 + \frac{25}{2.5} = 11$
 
 $$M_{\text{angular}} = 5 \times 11 = 55$$
 
 **(d) Image orientation:**
 
-$m_{\text{total}} = +1.19$ means the image is **upright** relative to the object. However, in a standard compound microscope, the image is typically inverted. The positive sign here arises because both individual magnifications are negative (both produce inverted images), and two inversions give an upright result. This is unusual for a microscope and occurs because the final image happens to be real rather than virtual at infinity.
+$m_{\text{total}} = +1.19$ means the image is **upright** relative to the object. However, in a standard compound microscope, the image is inverted. The positive sign here arises because both individual magnifications are negative (both produce inverted images), and two inversions give an upright result. This is unusual for a microscope and occurs because the final image happens to be real rather than virtual at infinity.
 
 ---
 
@@ -171,9 +171,9 @@ $$v_1 = -30 \text{ cm} \text{ (virtual image, 30 cm to the left of the lens)}$$
 **Step 2: Reflection from the mirror:**
 
 The light first passes through the lens, then reflects off the mirror, then passes through the lens
-again. The diverging rays from the lens continue to the right and hit the mirror. For the mirror, the
+Again. The diverging rays from the lens continue to the right and hit the mirror. For the mirror, the
 "object" is the virtual image of the lens at 30 cm to the left of the lens, which is $30 + 20 = 50$
-cm to the left of the mirror. This is a virtual object for the mirror.
+Cm to the left of the mirror. This is a virtual object for the mirror.
 
 For a plane mirror, image distance $=$ object distance (on the other side):
 
@@ -221,11 +221,11 @@ $$\text{NA} = \sqrt{n_{\text{core}}^2 - n_{\text{cladding}}^2} = 0.384$$
 
 For light travelling along the axis of a bent fibre, the condition for TIR at the outer edge of the core requires that the angle of incidence at the core-cladding boundary exceeds $\theta_c$.
 
-For a fibre bent with radius $R$, the critical condition for axial light is:
+For a fibre bent with radius $R$The critical condition for axial light is:
 
 $$\cos\left(\frac{d}{R}\right) \geq \cos\theta_c$$
 
-where $d$ is the core diameter. For light at the axis, the most demanding condition is at the outer edge. Approximating for small $d/R$:
+Where $d$ is the core diameter. For light at the axis, the most demanding condition is at the outer edge. Approximating for small $d/R$:
 
 $$\frac{d}{R} \leq \frac{\pi}{2} - \theta_c = 90° - 75.16° = 14.84° = 0.2591 \text{ rad}$$
 

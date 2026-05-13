@@ -14,7 +14,7 @@ Abnormality is defined in terms of deviation from the statistical norm. Any beha
 
 **Strengths:** Provides an objective, quantitative criterion that is relatively easy to apply.
 
-**Limitations:** Statistical rarity does not necessarily indicate pathology. A high IQ is statistically rare but is not considered a disorder. Conversely, depression is relatively common (affecting approximately 1 in 6 people during their lifetime) but is clearly considered abnormal. This definition also cannot account for the fact that the same behaviour may be considered abnormal in one context but not in another.
+**Limitations:** Statistical rarity does not necessarily indicate pathology. A high IQ is statistically rare but is not considered a disorder. Conversely, depression is relatively common (affecting approximately 1 in 6 people during their lifetime) but is considered abnormal. This definition also cannot account for the fact that the same behaviour may be considered abnormal in one context but not in another.
 
 ### Deviation from Social Norms
 
@@ -103,7 +103,7 @@ A phobia is an intense, persistent, and disproportionate fear of a specific obje
 
 ### Obsessive-Compulsive Disorder (OCD)
 
-OCD is characterised by the presence of obsessions (recurrent, intrusive, and distressing thoughts, images, or impulses) and compulsions (repetitive behaviours or mental acts performed in response to obsessions, typically according to rigid rules or to reduce distress). Common obsessions include fears of contamination, symmetry concerns, and aggressive or sexual thoughts. Common compulsions include hand-washing, checking, ordering, and counting.
+OCD is characterised by the presence of obsessions (recurrent, intrusive, and distressing thoughts, images, or impulses) and compulsions (repetitive behaviours or mental acts performed in response to obsessions, according to rigid rules or to reduce distress). Common obsessions include fears of contamination, symmetry concerns, and aggressive or sexual thoughts. Common compulsions include hand-washing, checking, ordering, and counting.
 
 Note: In the DSM-5, OCD was removed from the anxiety disorders category and placed in a separate category ("Obsessive-Compulsive and Related Disorders") alongside body dysmorphic disorder, hoarding disorder, and trichotillomania.
 
@@ -183,7 +183,7 @@ Sociocultural explanations focus on the role of social, environmental, and cultu
 | ECT (electroconvulsive therapy) | Induces seizure under general anaesthesia; mechanism not fully understood | Severe, treatment-resistant depression | Highly effective for severe depression; side effects include memory impairment; ethical concerns about consent |
 | Antipsychotics (e.g., chlorpromazine) | Block dopamine D2 receptors | Schizophrenia | Effective for positive symptoms; less effective for negative symptoms; side effects include tardive dyskinesia, weight gain |
 
-**SSRIs:** Selective serotonin reuptake inhibitors are the most commonly prescribed class of antidepressants. They increase synaptic serotonin levels by blocking the serotonin transporter (SERT), preventing the reuptake of serotonin from the synaptic cleft. While effective, SSRIs have a delayed onset of action (therapeutic effects typically begin after 2--4 weeks), which suggests that their antidepressant effect is not simply due to the immediate increase in synaptic serotonin but may involve downstream changes in receptor sensitivity and gene expression.
+**SSRIs:** Selective serotonin reuptake inhibitors are the most commonly prescribed class of antidepressants. They increase synaptic serotonin levels by blocking the serotonin transporter (SERT), preventing the reuptake of serotonin from the synaptic cleft. While effective, SSRIs have a delayed onset of action (therapeutic effects begin after 2--4 weeks), which suggests that their antidepressant effect is not due to the immediate increase in synaptic serotonin but may involve downstream changes in receptor sensitivity and gene expression.
 
 **Evaluation of biological treatments:**
 
@@ -196,7 +196,7 @@ Sociocultural explanations focus on the role of social, environmental, and cultu
 
 **Cognitive behavioural therapy (CBT):** CBT is a structured, time-limited form of psychotherapy that aims to identify and modify maladaptive cognitions (thoughts, beliefs, attitudes) and behaviours that contribute to psychological distress. It is based on the premise that it is not events themselves that cause distress but the individual's interpretation of those events.
 
-CBT for depression typically includes:
+CBT for depression includes:
 
 - **Cognitive restructuring:** Identifying automatic negative thoughts and cognitive distortions, and challenging them with evidence.
 - **Behavioural activation:** Encouraging the individual to engage in activities that they previously enjoyed, to break the cycle of inactivity and low mood.
@@ -309,3 +309,15 @@ The high rates of comorbidity in the DSM system (e.g., the frequent co-occurrenc
 - **Sociocultural factors and abnormal psychology:** Social identity theory, conformity, and prejudice, discussed in the [Sociocultural Level of Analysis](./sociocultural-level-of-analysis), are relevant to understanding the social determinants of mental health.
 - **Developmental psychology and abnormal psychology:** Early attachment experiences, discussed in [Developmental Psychology](./developmental-psychology), influence vulnerability to psychological disorders in later life.
 - **Research methods:** The evaluation of classification systems requires an understanding of reliability and validity, which are covered in detail in [Research Methods](./research-methods).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

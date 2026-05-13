@@ -15,26 +15,26 @@ Basic principles:
 
 ## The Complete Structure
 
-| Phase & Exercise                    | Sets | Repetitions / Duration | Rest      |
+| Phase & Exercise | Sets | Repetitions / Duration | Rest |
 | ----------------------------------- | :--: | :--------------------: | --------- |
-| Phase 1: Activation & Stability     |      |                        |           |
-| Side-Lying External Rotation        |  2   |       12-15/side       | 30 sec    |
-| Scapular Push-up                    |  2   |         12-15          | 30 sec    |
-| Prone "Y" Raise                     |  2   |         12-15          | 30 sec    |
-| Dumbbell Glute Bridge               |  2   |         15-20          | 45 sec    |
-| Phase 2: Primary Strength           |      |                        |           |
-| Bulgarian Split Squat               |  3   |       8-12/side        | 60-90 sec |
-| Dumbbell Romanian Deadlift (RDL)    |  3   |          8-12          | 60-90 sec |
-| Single-Arm Dumbbell Row             |  3   |       8-12/side        | 60-90 sec |
-| Dumbbell Bench Press                |  3   |          8-12          | 60-90 sec |
-| Phase 3: Core & Stability Finishing |      |                        |           |
-| Renegade Row                        |  3   |        6-8/side        | 60-90 sec |
-| Russian Twist                       |  3   |       10-15/side       | 60 sec    |
-| Phase 4: Post-Workout Cool-Down     |      |                        |           |
-| Doorway Chest Stretch               |  2   |     30-45 sec hold     | 15 sec    |
-| Cat-Cow Stretch                     |  1   |    8-10 slow cycles    | -         |
-| Kneeling Hip Flexor Stretch         |  2   |  30-45 sec hold/side   | 15 sec    |
-| Supine Hamstring Stretch            |  2   |  30-45 sec hold/side   | 15 sec    |
+| Phase 1: Activation & Stability | | | |
+| Side-Lying External Rotation | 2 | 12-15/side | 30 sec |
+| Scapular Push-up | 2 | 12-15 | 30 sec |
+| Prone "Y" Raise | 2 | 12-15 | 30 sec |
+| Dumbbell Glute Bridge | 2 | 15-20 | 45 sec |
+| Phase 2: Primary Strength | | | |
+| Bulgarian Split Squat | 3 | 8-12/side | 60-90 sec |
+| Dumbbell Romanian Deadlift (RDL) | 3 | 8-12 | 60-90 sec |
+| Single-Arm Dumbbell Row | 3 | 8-12/side | 60-90 sec |
+| Dumbbell Bench Press | 3 | 8-12 | 60-90 sec |
+| Phase 3: Core & Stability Finishing | | | |
+| Renegade Row | 3 | 6-8/side | 60-90 sec |
+| Russian Twist | 3 | 10-15/side | 60 sec |
+| Phase 4: Post-Workout Cool-Down | | | |
+| Doorway Chest Stretch | 2 | 30-45 sec hold | 15 sec |
+| Cat-Cow Stretch | 1 | 8-10 slow cycles | - |
+| Kneeling Hip Flexor Stretch | 2 | 30-45 sec hold/side | 15 sec |
+| Supine Hamstring Stretch | 2 | 30-45 sec hold/side | 15 sec |
 
 ## Procedure
 
@@ -140,3 +140,15 @@ The objective is to improve flexibility, facilitate recovery, and decrease muscl
 
 - Weeks 1-2: Foundation. Focus exclusively on mastering the technical execution of every exercise with light weights. Form is the only priority.
 - Weeks 3+: Progression. Once form is perfect, select a weight that makes the last two repetitions of a set challenging. When you can successfully complete all sets at the -top- of the prescribed repetition range (e.g., 12 reps for the BSS), you have earned the right to increase the weight slightly in your next workout. Continue this cycle.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

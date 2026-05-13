@@ -65,7 +65,7 @@ For block A (taking rightward toward pulley as positive):
 
 $$T - f = m_A a$$
 
-where $f = \mu m_A g = 0.4 \times 5 \times 9.81 = 19.62$ N
+Where $f = \mu m_A g = 0.4 \times 5 \times 9.81 = 19.62$ N
 
 $$T - 19.62 = 5a \quad \text{--- (2)}$$
 
@@ -186,13 +186,13 @@ $$T = 19.62 + 4(0.951) = 23.42 \text{ N}$$
 
 **Question:**
 
-A light inextensible string of length $2L$ has a small mass $m$ attached at its midpoint. One end is fixed at point A and the other at point B, where A and B are on the same horizontal level separated by distance $L$. The system rotates about the vertical axis AB with angular speed $\omega$. Find the tension in each half of the string in terms of $m$, $\omega$, $g$, and $L$.
+A light inextensible string of length $2L$ has a small mass $m$ attached at its midpoint. One end is fixed at point A and the other at point B, where A and B are on the same horizontal level separated by distance $L$. The system rotates about the vertical axis AB with angular speed $\omega$. Find the tension in each half of the string in terms of $m$$\omega$$g$And $L$.
 
 **Solution:**
 
-Let the mass be at the midpoint M. The string forms two segments AM and BM, each of length $L$. Since AB $= L$, triangle ABM is equilateral, so the angle each string makes with the vertical is $30°$.
+Let the mass be at the midpoint M. The string forms two segments AM and BM, each of length $L$. Since AB $= L$Triangle ABM is equilateral, so the angle each string makes with the vertical is $30°$.
 
-**Geometry check:** In the equilateral triangle, each side is $L$, and the height of the mass below AB is $L \cos 30° = \frac{L\sqrt{3}}{2}$.
+**Geometry check:** In the equilateral triangle, each side is $L$And the height of the mass below AB is $L \cos 30° = \frac{L\sqrt{3}}{2}$.
 
 By symmetry, both tensions are equal: $T_1 = T_2 = T$.
 

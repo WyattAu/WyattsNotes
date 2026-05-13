@@ -11,7 +11,7 @@ categories:
 ## Packages
 
 Every Go file belongs to a package, declared at the top of the file. A directory contains one
-package. Executables use `package main`; libraries use any other name.
+Package. Executables use `package main`; libraries use any other name.
 
 ```
 myproject/
@@ -28,10 +28,10 @@ myproject/
 
 ### Package Naming Conventions
 
-- Lowercase, single word: `http`, `json`, `strings`
+- Lowercase, single word: `http``json``strings`
 - No underscores or mixed case
 - The directory name matches the package name
-- Avoid repetition: `pkg/utils/utils.go` -> the package is `utils`, not `utilsutils`
+- Avoid repetition: `pkg/utils/utils.go` -> the package is `utils`Not `utilsutils`
 
 ### Import Paths
 
@@ -47,7 +47,7 @@ import (
 ### Internal Package
 
 Packages under a directory named `internal` cannot be imported by code outside the module tree
-rooted at the parent of `internal`:
+Rooted at the parent of `internal`:
 
 ```
 myproject/
@@ -113,12 +113,12 @@ import "github.com/you/myproject/v2"
 ```
 
 The `/v2` suffix is part of the module path, not the package path. This allows v1 and v2 to coexist
-in the same dependency graph.
+In the same dependency graph.
 
 ## go.sum
 
 The `go.sum` file records the cryptographic hashes (SHA-256) of every module version used. It
-ensures reproducible builds:
+Ensures reproducible builds:
 
 ```
 github.com/go-chi/chi/v5 v5.0.12 h1:exqT1FsjFNFK...
@@ -126,7 +126,7 @@ github.com/go-chi/chi/v5 v5.0.12/go.mod h1:DslCQbL2OYiznF/...
 ```
 
 Each module version has two entries: one for the `.zip` and one for `go.mod`. Always commit `go.sum`
-alongside `go.mod`.
+Alongside `go.mod`.
 
 ## Dependency Management Commands
 
@@ -176,11 +176,11 @@ go clean -modcache
 ## Minimal Version Selection (MVS)
 
 Go uses Minimal Version Selection, not SemVer resolution. For each dependency, Go selects the
-maximum version required by any module in the graph. It does not upgrade transitive dependencies to
-their latest version.
+Maximum version required by any module in the graph. It does not upgrade transitive dependencies to
+Their latest version.
 
 Example: if A requires C@v1.1.0 and B requires C@v1.2.0, Go uses C@v1.2.0 (the maximum required
-version). It does not use C@v1.3.0 even if that exists, because no module requires it.
+Version). It does not use C@v1.3.0 even if that exists, because no module requires it.
 
 MVS ensures reproducible builds: the same `go.mod` always produces the same dependency set.
 
@@ -199,8 +199,8 @@ use (
 )
 ```
 
-Workspace mode allows editing multiple modules simultaneously without publishing. `go build`,
-`go test`, and `go run` use the local modules in the workspace instead of the module cache.
+Workspace mode allows editing multiple modules simultaneously without publishing. `go build`
+`go test`And `go run` use the local modules in the workspace instead of the module cache.
 
 ```bash
 go work init ./backend ./frontend ./shared
@@ -209,7 +209,7 @@ go work sync               # sync go.mod files with workspace
 ```
 
 `go.work` should not be committed to the repository (add to `.gitignore`). It is a local development
-convenience.
+Convenience.
 
 ## Replacing Dependencies
 
@@ -240,7 +240,7 @@ replace github.com/orig/pkg => github.com/fork/pkg v1.2.3
 ## Vendor Directory
 
 `go mod vendor` copies dependencies into a `vendor/` directory. The build then uses the vendored
-copies instead of the module cache:
+Copies instead of the module cache:
 
 ```bash
 go mod vendor
@@ -253,22 +253,30 @@ CI with restricted internet).
 ## Common Pitfalls
 
 1. **Not running `go mod tidy` after changes.** After adding or removing imports, always run
-   `go mod tidy` to keep `go.mod` and `go.sum` synchronized.
+ `go mod tidy` to keep `go.mod` and `go.sum` synchronized.
 
 2. **V2+ without `/v2` suffix.** If you release v2 of a module without updating the module path to
-   include `/v2`, Go treats it as v1 and the version number is ignored.
+ include `/v2`Go treats it as v1 and the version number is ignored.
 
 3. **Committing `go.work`.** The workspace file is a local development tool. Commit it only for
-   monorepo setups where it is part of the intended workflow.
+ monorepo setups where it is part of the intended workflow.
 
 4. **Overusing `replace`.** `replace` directives in committed `go.mod` files break builds for other
-   developers. Use them only for local development or in `go.work`.
+ developers. Use them only for local development or in `go.work`.
 
 5. **Ignoring indirect dependencies.** `go mod tidy` manages indirect dependencies. Manually editing
-   them risks build inconsistencies.
+ them risks build inconsistencies.
 
 6. **Large `go.sum` files.** This is normal for projects with many dependencies. Do not try to
-   minimize it manually.
+ minimize it manually.
 
 7. **Forgetting `go.work sync`.** After adding modules to a workspace, run `go work sync` to update
-   `go.mod` files with workspace-relevant information.
+ `go.mod` files with workspace-relevant information.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -36,18 +36,18 @@ MAX_SCORE = 100
 ```
 
 **Why use constants?** If a value like the VAT rate (20%) appears in many places in your code, using
-a constant `VAT_RATE = 0.20` means you only need to change it in one place if the rate changes. This
-reduces errors and makes the code easier to maintain.
+A constant `VAT_RATE = 0.20` means you only need to change it in one place if the rate changes. This
+Reduces errors and makes the code easier to maintain.
 
 **Data types:**
 
-| Type       | Description                 | Example          |
+| Type | Description | Example |
 | ---------- | --------------------------- | ---------------- |
-| Integer    | Whole numbers               | 42, -7, 0        |
-| Real/Float | Numbers with decimal places | 3.14, -0.5       |
-| String     | Text enclosed in quotes     | "Hello", 'World' |
-| Character  | A single character          | 'A', '7'         |
-| Boolean    | True or False               | True, False      |
+| Integer | Whole numbers | 42, -7, 0 |
+| Real/Float | Numbers with decimal places | 3.14, -0.5 |
+| String | Text enclosed in quotes | "Hello", 'World' |
+| Character | A single character | 'A', '7' |
+| Boolean | True or False | True, False |
 
 **Type casting** converts a value from one type to another:
 
@@ -106,9 +106,9 @@ else:
 ```
 
 **Nested IF pitfall.** In the example above, the inner `if score >= 70` only executes when
-`score >= 50`. If `score = 80`, the output is "Grade A". If `score = 60`, the output is "Grade C".
-If `score = 40`, the output is "Fail". Think carefully about the nesting order to avoid unreachable
-branches.
+`score >= 50`. If `score = 80`The output is "Grade A". If `score = 60`The output is "Grade C".
+If `score = 40`The output is "Fail". Think carefully about the nesting order to avoid unreachable
+Branches.
 
 **CASE / SELECT statements (pseudocode):**
 
@@ -145,7 +145,7 @@ for i in range(1, 11):
 `range(start, stop)` generates integers from `start` up to but **not including** `stop`. So
 `range(1, 11)` gives 1, 2, 3, ..., 10.
 
-`range(n)` is shorthand for `range(0, n)`, giving 0, 1, ..., n-1.
+`range(n)` is shorthand for `range(0, n)`Giving 0, 1, ..., n-1.
 
 `range(start, stop, step)` allows a custom step:
 
@@ -199,7 +199,7 @@ $m$ iterations, the total number of iterations is $n \times m$.
 ### 2.1 One-Dimensional Arrays
 
 An **array** is a data structure that stores a fixed number of elements of the same data type,
-accessed by an index.
+Accessed by an index.
 
 ```python
 scores = [85, 92, 78, 95, 88]
@@ -257,7 +257,7 @@ for row in range(len(grid)):
 ```
 
 **Access pattern:** `grid[row][col]` -- the first index selects the row, the second selects the
-column. Think of a spreadsheet: you pick the row first, then the column.
+Column. Think of a spreadsheet: you pick the row first, then the column.
 
 **Practical example:** Representing a tic-tac-toe board:
 
@@ -279,7 +279,7 @@ print_board(board)
 ### 2.3 Records
 
 A **record** is a data structure that groups related data items of different types under a single
-name.
+Name.
 
 ```python
 student = {
@@ -294,14 +294,14 @@ student["age"] = 16
 ```
 
 Records are useful because they group related data. Instead of having separate variables
-`student_name`, `student_age`, `student_form`, a record keeps them together logically.
+`student_name``student_age``student_form`A record keeps them together logically.
 
 ## 3. Subprograms
 
 ### 3.1 Procedures and Functions
 
 A **procedure** performs a task but does not return a value. A **function** performs a task and
-returns a value.
+Returns a value.
 
 ```python
 # Procedure
@@ -329,7 +329,7 @@ print("Area:", room_area)
 ### 3.2 Parameters and Arguments
 
 **Parameters** are variables listed in the function definition. **Arguments** are the actual values
-passed when the function is called.
+Passed when the function is called.
 
 ```python
 def add_numbers(a, b):
@@ -338,15 +338,15 @@ def add_numbers(a, b):
 result = add_numbers(5, 3)  # a=5, b=3
 ```
 
-**Parameters by value vs. by reference:**
+**Parameters by value vs. By reference:**
 
 - **By value:** A copy of the argument is passed; changes inside the function do not affect the
-  original
+ original
 - **By reference:** A reference to the original is passed; changes inside the function affect the
-  original
+ original
 
 In Python, immutable types (int, float, string, tuple) are passed by value. Mutable types (list,
-dict) are passed by reference.
+Dict) are passed by reference.
 
 ```python
 def modify_list(items):
@@ -378,11 +378,11 @@ print(total)  # 10
 ```
 
 **Scope rules:** A variable created inside a function is **local** to that function and cannot be
-accessed from outside. A variable created outside any function is **global** and can be read by any
-function, but can only be modified with the `global` keyword.
+Accessed from outside. A variable created outside any function is **global** and can be read by any
+Function, but can only be modified with the `global` keyword.
 
 **Best practice:** Use local variables wherever possible to avoid unintended side effects. Global
-variables make code harder to debug because any function can modify them.
+Variables make code harder to debug because any function can modify them.
 
 ### 3.4 Recursion
 
@@ -403,15 +403,15 @@ print(factorial(5))  # 120
 
 - 4 _ 3 _ 2 _ factorial(1) = 5 _ 4 _ 3 _ 2 _ 1 _ factorial(0) = 5 _ 4 _ 3 _ 2 _ 1 \* 1 = 120.
 
-**The call stack.** Each recursive call adds a new frame to the call stack. For `factorial(5)`, the
-stack grows to 6 frames before the base case is reached. Then the frames are unwound as each call
-returns. If there is no base case, the stack grows until memory is exhausted, causing a
+**The call stack.** Each recursive call adds a new frame to the call stack. For `factorial(5)`The
+Stack grows to 6 frames before the base case is reached. Then the frames are unwound as each call
+Returns. If there is no base case, the stack grows until memory is exhausted, causing a
 **StackOverflowError**.
 
 **When to use recursion vs iteration:** Any recursive function can be rewritten as an iterative
-version (using a loop). Iteration is generally more memory-efficient because it does not add frames
-to the call stack. Recursion is more natural for problems with a self-similar structure, such as
-tree traversal or divide-and-conquer algorithms.
+Version (using a loop). Iteration is generally more memory-efficient because it does not add frames
+To the call stack. Recursion is more natural for problems with a self-similar structure, such as
+Tree traversal or divide-and-conquer algorithms.
 
 ## 4. String Manipulation
 
@@ -490,7 +490,7 @@ print(is_palindrome("Hello"))    # False
 ```
 
 The slice `word[::-1]` reverses the string. The `[::-1]` syntax means: start at the end, move
-backwards with a step of -1.
+Backwards with a step of -1.
 
 ## 5. File Handling
 
@@ -527,7 +527,7 @@ file.close()
 ### 5.3 The `with` Statement
 
 The `with` statement automatically closes the file, even if an exception occurs. This is the
-recommended approach.
+Recommended approach.
 
 ```python
 with open("data.txt", "r") as file:
@@ -558,13 +558,13 @@ with open("output.csv", "w", newline="") as file:
 
 **Validation** checks that data is sensible and reasonable (but not necessarily correct).
 
-| Type           | Check                               | Example                     |
+| Type | Check | Example |
 | -------------- | ----------------------------------- | --------------------------- |
-| Range check    | Value is within an acceptable range | Age between 0 and 120       |
-| Type check     | Correct data type                   | Input is an integer         |
-| Length check   | Correct number of characters        | Password is 8-20 characters |
-| Presence check | Data has been entered               | Name field is not empty     |
-| Format check   | Correct pattern (e.g. email format) | Contains @ symbol           |
+| Range check | Value is within an acceptable range | Age between 0 and 120 |
+| Type check | Correct data type | Input is an integer |
+| Length check | Correct number of characters | Password is 8-20 characters |
+| Presence check | Data has been entered | Name field is not empty |
+| Format check | Correct pattern (e.g. Email format) | Contains @ symbol |
 
 ```python
 def validate_age(age):
@@ -620,7 +620,7 @@ except ZeroDivisionError:
 ```
 
 **How try/except works:** Python attempts the code in the `try` block. If an error occurs, it
-immediately jumps to the matching `except` block. If no error occurs, the `except` block is skipped.
+Immediately jumps to the matching `except` block. If no error occurs, the `except` block is skipped.
 
 ### 7.2 Defensive Programming
 
@@ -665,52 +665,60 @@ random.shuffle(deck)
 ## Common Pitfalls
 
 - **Off-by-one errors with arrays.** Most languages use 0-based indexing; the last element is at
-  index $n-1$. Accessing `array[n]` causes an `IndexError`.
+ index $n-1$. Accessing `array[n]` causes an `IndexError`.
 - **Confusing = and ==.** A single `=` is assignment; `==` is comparison. Writing `if x = 5` in
-  Python is a syntax error, but in some pseudocode contexts it can cause subtle bugs.
+ Python is a syntax error, but in some pseudocode contexts it can cause subtle bugs.
 - **Forgetting to close files.** Always close files after use, or use a `with` statement. Leaving
-  files open can cause data corruption or resource leaks.
+ files open can cause data corruption or resource leaks.
 - **Infinite loops.** Ensure the condition in a WHILE loop will eventually become false. If the loop
-  variable never changes inside the loop body, the loop runs forever.
+ variable never changes inside the loop body, the loop runs forever.
 - **Not handling invalid input.** Always validate and handle potential errors in user input. A user
-  might type "abc" when asked for their age.
+ might type "abc" when asked for their age.
 - **Confusing local and global scope.** Use the `global` keyword only when necessary. Overusing
-  global variables makes code hard to debug and test.
+ global variables makes code hard to debug and test.
 - **Integer division in Python 2 vs Python 3.** In Python 3, `5 / 2` gives `2.5`. In Python 2, it
-  gives `2`. Use `//` for integer division in Python 3: `5 // 2` gives `2`.
+ gives `2`. Use `//` for integer division in Python 3: `5 // 2` gives `2`.
 - **String immutability.** Strings cannot be modified in place. Operations like `upper()` and
-  `replace()` return new strings; they do not modify the original.
+ `replace()` return new strings; they do not modify the original.
 
 ## Practice Questions
 
 1. Write a function that takes an array of integers and returns the average.
 
 2. Write a program that reads 20 numbers from a file, sorts them using bubble sort, and writes the
-   sorted list to another file.
+ sorted list to another file.
 
 3. Write a recursive function to calculate the $n$-th Fibonacci number.
 
 4. Write a program that validates a password: at least 8 characters, contains at least one digit and
-   one uppercase letter.
+ one uppercase letter.
 
 5. Write a function that takes a 2D array (3x3) and returns the sum of all elements in the main
-   diagonal.
+ diagonal.
 
 6. Write a program that uses a trace table to count the frequency of each character in a string.
 
 7. Explain the difference between validation and verification, giving an example of each.
 
 8. Write a program that reads student records from a CSV file and displays the names of students who
-   scored above 80.
+ scored above 80.
 
 9. Write a function that takes a string and returns True if it is a palindrome (reads the same
-   forwards and backwards).
+ forwards and backwards).
 
 10. Write a program that repeatedly asks the user for a number until they enter a valid positive
-    integer, then displays the square root.
+ integer, then displays the square root.
 
 11. **(Higher Tier)** Write a function that takes two arrays and returns a new array containing
-    elements that appear in both arrays (intersection).
+ elements that appear in both arrays (intersection).
 
 12. **(Higher Tier)** Write a program that simulates a simple quiz. It should read questions and
-    answers from a file, display each question, accept the user's answer, and keep score.
+ answers from a file, display each question, accept the user's answer, and keep score.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -43,7 +43,7 @@ $$2 + \lambda = 1 - \mu \implies \lambda + \mu = -1 \quad \text{(ii)}$$
 
 $$0 - \lambda = 4 + 2\mu \implies -\lambda - 2\mu = 4 \quad \text{(iii)}$$
 
-From (i) and (ii): adding gives $3\lambda = 1$, so $\lambda = \frac{1}{3}$, then $\mu = -\frac{4}{3}$.
+From (i) and (ii): adding gives $3\lambda = 1$So $\lambda = \frac{1}{3}$Then $\mu = -\frac{4}{3}$.
 
 Check (iii): $-\frac{1}{3} - 2\!\left(-\frac{4}{3}\right) = -\frac{1}{3} + \frac{8}{3} = \frac{7}{3} \neq 4$.
 
@@ -71,13 +71,13 @@ $$d = \frac{5}{\sqrt{35}} = \frac{5\sqrt{35}}{35} = \frac{\sqrt{35}}{7}$$
 
 **Question:**
 
-Three points are given: $A(1, 0, 2)$, $B(3, 1, -1)$, and $C(2, 2, 3)$.
+Three points are given: $A(1, 0, 2)$$B(3, 1, -1)$And $C(2, 2, 3)$.
 
-**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$, $B$, and $C$.
+**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$$B$And $C$.
 
 **(b)** Find the perpendicular distance from the origin to $\Pi$.
 
-**(c)** A student computes $\overrightarrow{AB} \times \overrightarrow{AC}$ and gets $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$, concluding the plane equation is $x + y + z = 3$. Identify the error.
+**(c)** A student computes $\overrightarrow{AB} \times \overrightarrow{AC}$ and gets $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$Concluding the plane equation is $x + y + z = 3$. Identify the error.
 
 [Difficulty: hard. Tests plane from three points, normal vector computation, and point-to-plane distance.]
 
@@ -103,11 +103,11 @@ $$7x - 5y + 3z = 13$$
 
 $$d = \frac{|7(0) - 5(0) + 3(0) - 13|}{\sqrt{49 + 25 + 9}} = \frac{13}{\sqrt{83}}$$
 
-**(c)** The student's cross product computation is wrong. The correct cross product is $\begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$, not $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$. Specifically:
+**(c)** The student's cross product computation is wrong. The correct cross product is $\begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$Not $\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$. Specifically:
 
-- The $x$-component: $1 \times 1 - (-3) \times 2 = 1 + 6 = 7$, not $3$.
-- The $y$-component: $-(2 \times 1 - (-3) \times 1) = -(2 + 3) = -5$, not $3$.
-- The $z$-component: $2 \times 2 - 1 \times 1 = 4 - 1 = 3$, which coincidentally matches.
+- The $x$-component: $1 \times 1 - (-3) \times 2 = 1 + 6 = 7$Not $3$.
+- The $y$-component: $-(2 \times 1 - (-3) \times 1) = -(2 + 3) = -5$Not $3$.
+- The $z$-component: $2 \times 2 - 1 \times 1 = 4 - 1 = 3$Which coincidentally matches.
 
 ---
 
@@ -119,7 +119,7 @@ $$d = \frac{|7(0) - 5(0) + 3(0) - 13|}{\sqrt{49 + 25 + 9}} = \frac{13}{\sqrt{83}
 
 **Question:**
 
-Four points are given: $O(0, 0, 0)$, $A(2, 1, 0)$, $B(1, 3, 2)$, and $C(0, 1, 4)$.
+Four points are given: $O(0, 0, 0)$$A(2, 1, 0)$$B(1, 3, 2)$And $C(0, 1, 4)$.
 
 **(a)** Find the volume of tetrahedron $OABC$.
 
@@ -129,7 +129,7 @@ Four points are given: $O(0, 0, 0)$, $A(2, 1, 0)$, $B(1, 3, 2)$, and $C(0, 1, 4)
 
 **Solution:**
 
-**(a)** The volume of a tetrahedron with vertices $O$, $A$, $B$, $C$ is:
+**(a)** The volume of a tetrahedron with vertices $O$$A$$B$$C$ is:
 
 $$V = \frac{1}{6}\lvert [\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] \rvert$$
 
@@ -143,11 +143,11 @@ $$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 2(10) + 1(-4
 
 $$V = \frac{16}{6} = \frac{8}{3}$$
 
-**(b)** The scalar triple product $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$ equals the volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$, $\mathbf{'\{'}b{'\}'}$, and $\mathbf{'\{'}c{'\}'}$.
+**(b)** The scalar triple product $[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$ equals the volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And $\mathbf{'\{'}c{'\}'}$.
 
-If the four points are coplanar, the three vectors $\overrightarrow{OA}$, $\overrightarrow{OB}$, $\overrightarrow{OC}$ all lie in the same plane, meaning the parallelepiped they span has zero volume (it is flat). Therefore $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
+If the four points are coplanar, the three vectors $\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning the parallelepiped they span has zero volume (it is flat). Therefore $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
-Conversely, if the scalar triple product is zero, then $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 0$, which means $\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$. Since $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$ is perpendicular to the plane containing $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$, it follows that $\mathbf{'\{'}a{'\}'}$ lies in the same plane as $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. Hence the four points are coplanar.
+Conversely, if the scalar triple product is zero, then $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 0$Which means $\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$. Since $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$ is perpendicular to the plane containing $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$It follows that $\mathbf{'\{'}a{'\}'}$ lies in the same plane as $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. Hence the four points are coplanar.
 
 ---
 
@@ -191,7 +191,7 @@ $$M = \frac{P + P'}{2} \implies P' = 2M - P = 2\begin{pmatrix} \frac{25}{9} \\ \
 
 Direction: $\begin{pmatrix} \frac{41}{9} - 1 \\ \frac{11}{9} - 3 \\ \frac{23}{9} + 1 \end{pmatrix} = \begin{pmatrix} \frac{32}{9} \\ -\frac{16}{9} \\ \frac{32}{9} \end{pmatrix} = \frac{16}{9}\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$
 
-This is parallel to $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$, confirming $PP'$ is perpendicular to $\Pi$.
+This is parallel to $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming $PP'$ is perpendicular to $\Pi$.
 
 Verify midpoint: $\frac{1}{2}\!\left[\begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}\right] = \begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix}$.
 

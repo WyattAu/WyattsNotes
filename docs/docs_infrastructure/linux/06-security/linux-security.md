@@ -8,18 +8,18 @@ sidebar_position: 1
 ## User and Group Model
 
 Linux security is fundamentally built on the user and group model. Every process runs under a
-specific UID (user ID) and GID (group ID), and every file and resource is owned by a UID/GID with
-associated permissions.
+Specific UID (user ID) and GID (group ID), and every file and resource is owned by a UID/GID with
+Associated permissions.
 
 ### User and Group Files
 
-| File              | Purpose                                                         |
+| File | Purpose |
 | ----------------- | --------------------------------------------------------------- |
-| `/etc/passwd`     | User accounts (UID, home dir, shell — password in shadow)       |
-| `/etc/shadow`     | Password hashes and aging (readable by root only)               |
-| `/etc/group`      | Group definitions (GID, members)                                |
-| `/etc/gshadow`    | Group password hashes (readable by root only)                   |
-| `/etc/skel/`      | Template directory for new user home directories                |
+| `/etc/passwd` | User accounts (UID, home dir, shell — password in shadow) |
+| `/etc/shadow` | Password hashes and aging (readable by root only) |
+| `/etc/group` | Group definitions (GID, members) |
+| `/etc/gshadow` | Group password hashes (readable by root only) |
+| `/etc/skel/` | Template directory for new user home directories |
 | `/etc/login.defs` | Default settings for user creation (UID range, password policy) |
 
 ```bash
@@ -59,25 +59,25 @@ chage -E 2025-12-31 username  # account expires
 
 :::warning
 
-Always use `usermod -aG group user` instead of `usermod -G group user`. Without `-a`, the `-G` flag
+Always use `usermod -aG group user` instead of `usermod -G group user`. Without `-a`The `-G` flag
 **replaces** all existing group memberships. This is one of the most common mistakes in Linux
-administration.
+Administration.
 
 :::
 
 ### Special UIDs
 
-| UID   | Name         | Description                                      |
+| UID | Name | Description |
 | ----- | ------------ | ------------------------------------------------ |
-| 0     | root         | Superuser — unrestricted access to all resources |
-| 1     | daemon       | System daemons                                   |
-| 65534 | nobody       | Unprivileged user (used for NFS, some services)  |
-| -1    | (4294967295) | `nobody` on some systems, overflow of 32-bit UID |
+| 0 | root | Superuser — unrestricted access to all resources |
+| 1 | daemon | System daemons |
+| 65534 | nobody | Unprivileged user (used for NFS, some services) |
+| -1 | (4294967295) | `nobody` on some systems, overflow of 32-bit UID |
 
 ### NSS — Name Service Switch
 
 The Name Service Switch (`/etc/nsswitch.conf`) determines the order of lookup for user/group/host
-information:
+Information:
 
 ```text
 passwd:     files sss
@@ -87,33 +87,33 @@ hosts:      files dns
 ```
 
 This means: look in local files first (`/etc/passwd`), then consult SSSD (for LDAP/AD). The order
-matters for performance and fallback behavior.
+Matters for performance and fallback behavior.
 
 ## PAM — Pluggable Authentication Modules
 
 PAM provides a modular authentication framework. Applications do not implement authentication
-themselves; they delegate to PAM via the `libpam` library. Configuration is stored in `/etc/pam.d/`
-or `/etc/pam.conf`.
+Themselves; they delegate to PAM via the `libpam` library. Configuration is stored in `/etc/pam.d/`
+Or `/etc/pam.conf`.
 
 ### PAM Module Types
 
-| Type       | Purpose                                                 |
+| Type | Purpose |
 | ---------- | ------------------------------------------------------- |
-| `auth`     | Verify the user's identity (password, token, biometric) |
-| `account`  | Account validity checks (expired, time restrictions)    |
-| `password` | Password change/verification                            |
-| `session`  | Session setup and teardown (logging, resource limits)   |
+| `auth` | Verify the user's identity (password, token, biometric) |
+| `account` | Account validity checks (expired, time restrictions) |
+| `password` | Password change/verification |
+| `session` | Session setup and teardown (logging, resource limits) |
 
 ### PAM Control Flags
 
-| Flag         | Behavior                                                                                      |
+| Flag | Behavior |
 | ------------ | --------------------------------------------------------------------------------------------- |
-| `required`   | Module must succeed. If it fails, the user is eventually denied (after remaining modules run) |
-| `requisite`  | Module must succeed. If it fails, immediately deny (skip remaining modules)                   |
+| `required` | Module must succeed. If it fails, the user is eventually denied (after remaining modules run) |
+| `requisite` | Module must succeed. If it fails, immediately deny (skip remaining modules) |
 | `sufficient` | If the module succeeds and no prior `required` module failed, success is returned immediately |
-| `optional`   | Module result is ignored unless it is the only module for the type                            |
-| `include`    | Include all lines from another PAM configuration file                                         |
-| `substack`   | Run another PAM stack independently                                                           |
+| `optional` | Module result is ignored unless it is the only module for the type |
+| `include` | Include all lines from another PAM configuration file |
+| `substack` | Run another PAM stack independently |
 
 ### PAM Configuration Example
 
@@ -147,16 +147,16 @@ session required    pam_unix.so
 
 ### Key PAM Modules
 
-| Module                        | Purpose                                                 |
+| Module | Purpose |
 | ----------------------------- | ------------------------------------------------------- |
-| `pam_unix.so`                 | Standard UNIX authentication (/etc/passwd, /etc/shadow) |
-| `pam_pwquality.so`            | Password strength checking (replaces `pam_cracklib`)    |
-| `pam_faillock.so`             | Account locking after failed login attempts             |
-| `pam_limits.so`               | Apply resource limits from `/etc/security/limits.conf`  |
-| `pam_access.so`               | Access control based on `/etc/security/access.conf`     |
-| `pam_mkhomedir.so`            | Auto-create home directories on first login             |
-| `pam_sssd.so`                 | Authentication via SSSD (LDAP, AD, IPA)                 |
-| `pam_google_authenticator.so` | TOTP two-factor authentication                          |
+| `pam_unix.so` | Standard UNIX authentication (/etc/passwd, /etc/shadow) |
+| `pam_pwquality.so` | Password strength checking (replaces `pam_cracklib`) |
+| `pam_faillock.so` | Account locking after failed login attempts |
+| `pam_limits.so` | Apply resource limits from `/etc/security/limits.conf` |
+| `pam_access.so` | Access control based on `/etc/security/access.conf` |
+| `pam_mkhomedir.so` | Auto-create home directories on first login |
+| `pam_sssd.so` | Authentication via SSSD (LDAP, AD, IPA) |
+| `pam_google_authenticator.so` | TOTP two-factor authentication |
 
 ### Password Policy with pam_pwquality
 
@@ -194,27 +194,27 @@ faillock --reset      # reset counter
 ## Capabilities
 
 Linux capabilities break down the monolithic root privilege into fine-grained units. Instead of
-granting a process full root access, you can grant only the specific capabilities it needs.
+Granting a process full root access, you can grant only the specific capabilities it needs.
 
 ### Common Capabilities
 
-| Capability             | Description                                            |
+| Capability | Description |
 | ---------------------- | ------------------------------------------------------ |
-| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt; 1024)                   |
-| `CAP_NET_RAW`          | Use raw and packet sockets (ping, capture)             |
-| `CAP_SYS_ADMIN`        | Broad administrative capability (avoid — too powerful) |
-| `CAP_SYS_PTRACE`       | Trace processes (ptrace, strace)                       |
-| `CAP_SYS_CHROOT`       | Use `chroot(2)`                                        |
-| `CAP_SETUID`           | Change user ID                                         |
-| `CAP_SETGID`           | Change group ID                                        |
-| `CAP_DAC_OVERRIDE`     | Bypass file read/write/execute permission checks       |
-| `CAP_DAC_READ_SEARCH`  | Bypass file read permission and directory read/search  |
-| `CAP_KILL`             | Send signals to processes not owned by the caller      |
-| `CAP_CHOWN`            | Change file ownership                                  |
-| `CAP_FOWNER`           | Override permission checks on files you own            |
-| `CAP_FSETID`           | Set setuid/setgid bits                                 |
-| `CAP_SETPCAP`          | Modify capability bounding set                         |
-| `CAP_AUDIT_WRITE`      | Write to the audit log                                 |
+| `CAP_NET_BIND_SERVICE` | Bind to privileged ports (&lt; 1024) |
+| `CAP_NET_RAW` | Use raw and packet sockets (ping, capture) |
+| `CAP_SYS_ADMIN` | Broad administrative capability (avoid — too powerful) |
+| `CAP_SYS_PTRACE` | Trace processes (ptrace, strace) |
+| `CAP_SYS_CHROOT` | Use `chroot(2)` |
+| `CAP_SETUID` | Change user ID |
+| `CAP_SETGID` | Change group ID |
+| `CAP_DAC_OVERRIDE` | Bypass file read/write/execute permission checks |
+| `CAP_DAC_READ_SEARCH` | Bypass file read permission and directory read/search |
+| `CAP_KILL` | Send signals to processes not owned by the caller |
+| `CAP_CHOWN` | Change file ownership |
+| `CAP_FOWNER` | Override permission checks on files you own |
+| `CAP_FSETID` | Set setuid/setgid bits |
+| `CAP_SETPCAP` | Modify capability bounding set |
+| `CAP_AUDIT_WRITE` | Write to the audit log |
 
 ### Managing Capabilities
 
@@ -253,8 +253,8 @@ NoNewPrivileges=yes
 :::tip
 
 The principle of least privilege applies to capabilities: grant only what is needed. `CAP_SYS_ADMIN`
-is especially dangerous as it encompasses many sub-capabilities. Use more specific capabilities
-whenever possible.
+Is especially dangerous as it encompasses many sub-capabilities. Use more specific capabilities
+Whenever possible.
 
 :::
 
@@ -262,15 +262,15 @@ whenever possible.
 
 SELinux (Security-Enhanced Linux) is a mandatory access control (MAC) framework integrated into the
 Linux kernel. Unlike DAC (Discretionary Access Control, i.e., standard Unix permissions), MAC
-policies are enforced by the kernel and cannot be overridden by the file owner.
+Policies are enforced by the kernel and cannot be overridden by the file owner.
 
 ### SELinux Modes
 
-| Mode         | Enforcement | Description                                               |
+| Mode | Enforcement | Description |
 | ------------ | ----------- | --------------------------------------------------------- |
-| `enforcing`  | Yes         | Policy violations are blocked and logged                  |
-| `permissive` | No          | Policy violations are logged but not blocked (audit mode) |
-| `disabled`   | No          | SELinux is completely disabled (not recommended)          |
+| `enforcing` | Yes | Policy violations are blocked and logged |
+| `permissive` | No | Policy violations are logged but not blocked (audit mode) |
+| `disabled` | No | SELinux is completely disabled (not recommended) |
 
 ```bash
 # View current mode
@@ -290,19 +290,19 @@ setenforce 0    # permissive
 ### SELinux Contexts
 
 Every file, process, and network socket has an SELinux context (also called a label) consisting of
-four parts:
+Four parts:
 
 ```text
 user:role:type:level
 system_u:object_r:httpd_sys_content_t:s0
 ```
 
-| Component | Example                 | Description                                        |
+| Component | Example | Description |
 | --------- | ----------------------- | -------------------------------------------------- |
-| **User**  | `system_u`, `user_u`    | SELinux user identity                              |
-| **Role**  | `object_r`, `staff_r`   | Role determines which types can be accessed        |
-| **Type**  | `httpd_sys_content_t`   | Type enforcement policy (most important component) |
-| **Level** | `s0`, `s0-s15:c0.c1023` | MLS/MCS level (for multi-level security)           |
+| **User** | `system_u``user_u` | SELinux user identity |
+| **Role** | `object_r``staff_r` | Role determines which types can be accessed |
+| **Type** | `httpd_sys_content_t` | Type enforcement policy (most important component) |
+| **Level** | `s0``s0-s15:c0.c1023` | MLS/MCS level (for multi-level security) |
 
 ```bash
 # View file context
@@ -376,16 +376,16 @@ sealert -l &lt;audit-event-id&gt;
 
 ### SELinux Policy Types
 
-| Policy     | Description                                                  |
+| Policy | Description |
 | ---------- | ------------------------------------------------------------ |
-| `targeted` | Confines specific system services (httpd, mysqld, etc.)      |
-| `mls`      | Multi-Level Security — mandatory for classified environments |
-| `minimum`  | Minimal policy for embedded systems                          |
+| `targeted` | Confines specific system services (httpd, mysqld, etc.) |
+| `mls` | Multi-Level Security — mandatory for classified environments |
+| `minimum` | Minimal policy for embedded systems |
 
 ## AppArmor
 
 AppArmor is an alternative MAC framework that uses path-based profiles (unlike SELinux's label-based
-approach). It is the default on Ubuntu, SUSE, and some other distributions.
+Approach). It is the default on Ubuntu, SUSE, and some other distributions.
 
 ### AppArmor Profiles
 
@@ -452,28 +452,28 @@ apparmor_parser -r /etc/apparmor.d/*
 
 ### AppArmor vs SELinux
 
-| Aspect          | SELinux                                  | AppArmor                              |
+| Aspect | SELinux | AppArmor |
 | --------------- | ---------------------------------------- | ------------------------------------- |
-| **Model**       | Label-based (security context on inodes) | Path-based (profiles reference paths) |
-| **Policy**      | Policy compiled from TE rules            | Profiles as plain text                |
-| **Learning**    | Strict — must write policy explicitly    | Can generate profiles from log data   |
-| **Complexity**  | Higher learning curve                    | Simpler to configure                  |
-| **Default on**  | RHEL, Fedora, CentOS, Debian             | Ubuntu, SUSE                          |
-| **Granularity** | Finer (type enforcement)                 | Coarser (path matching)               |
-| **File moves**  | Context preserved with inode             | Broken if file moves to new path      |
+| **Model** | Label-based (security context on inodes) | Path-based (profiles reference paths) |
+| **Policy** | Policy compiled from TE rules | Profiles as plain text |
+| **Learning** | Strict — must write policy explicitly | Can generate profiles from log data |
+| **Complexity** | Higher learning curve | Simpler to configure |
+| **Default on** | RHEL, Fedora, CentOS, Debian | Ubuntu, SUSE |
+| **Granularity** | Finer (type enforcement) | Coarser (path matching) |
+| **File moves** | Context preserved with inode | Broken if file moves to new path |
 
 ## seccomp-bpf
 
-seccomp (secure computing mode) restricts the system calls a process can make. When combined with
+Seccomp (secure computing mode) restricts the system calls a process can make. When combined with
 BPF (Berkeley Packet Filter), it provides fine-grained syscall filtering.
 
 ### seccomp Modes
 
-| Mode       | Description                                          |
+| Mode | Description |
 | ---------- | ---------------------------------------------------- |
-| `disabled` | No restrictions (default)                            |
-| `strict`   | Only `read`, `write`, `_exit`, `sigreturn` allowed   |
-| `filter`   | BPF program defines allowed syscalls (most flexible) |
+| `disabled` | No restrictions (default) |
+| `strict` | Only `read``write``_exit``sigreturn` allowed |
+| `filter` | BPF program defines allowed syscalls (most flexible) |
 
 ### seccomp in Docker
 
@@ -506,7 +506,7 @@ SystemCallFilter=~mount umount2 pivot_root swapon swapoff
 ## Linux Audit System
 
 The Linux Audit framework provides a mechanism for tracking security-relevant system events. It is
-controlled by `auditd` and configured via `auditctl` rules.
+Controlled by `auditd` and configured via `auditctl` rules.
 
 ### Audit Rules
 
@@ -696,8 +696,8 @@ sshd -t
 ### Pitfall: SELinux Blocking Legitimate Operations
 
 The most common SELinux issue is a service being denied access to a file or port because the SELinux
-context is wrong. Symptoms include "Permission denied" errors that appear even when standard Unix
-permissions are correct:
+Context is wrong. Symptoms include "Permission denied" errors that appear even when standard Unix
+Permissions are correct:
 
 ```bash
 # Diagnose
@@ -717,7 +717,7 @@ restorecon -Rv /custom/path
 ### Pitfall: `CAP_SYS_ADMIN` Is Too Broad
 
 `CAP_SYS_ADMIN` covers many sub-operations (mount, pivot_root, IPC, etc.). Granting it is equivalent
-to granting near-root access. Always use more specific capabilities:
+To granting near-root access. Always use more specific capabilities:
 
 ```bash
 # WRONG
@@ -730,7 +730,7 @@ setcap cap_net_bind_service=+ep /usr/bin/myapp
 ### Pitfall: PAM Stack Order Matters
 
 PAM processes modules in the order they appear. A `sufficient` module early in the stack can
-short-circuit the entire auth process:
+Short-circuit the entire auth process:
 
 ```text
 # WRONG — pam_unix.so is sufficient, so pam_faillock is never reached
@@ -746,7 +746,7 @@ auth    required    pam_faillock.so authfail
 ### Pitfall: Audit Rules Lost on Reboot
 
 `auditctl` rules are not persistent. Rules must be placed in `/etc/audit/rules.d/` to survive
-reboots:
+Reboots:
 
 ```bash
 # WRONG — rules lost on reboot
@@ -759,7 +759,7 @@ echo "-w /etc/passwd -p rwxa -k identity" >> /etc/audit/rules.d/audit.rules
 ### Pitfall: SSH Key Permissions
 
 SSH requires strict permissions on key files and directories. If permissions are too open, SSH will
-refuse to use the key:
+Refuse to use the key:
 
 ```bash
 # Correct permissions
@@ -775,8 +775,8 @@ chmod 600 ~/.ssh/authorized_keys
 ### Pitfall: Disabling SELinux vs Permissive Mode
 
 Setting `SELINUX=disabled` in `/etc/selinux/config` requires a reboot and relabels the filesystem
-with no SELinux contexts, making it hard to re-enable. Instead, use `SELINUX=permissive` during
-troubleshooting and switch back to `enforcing` when done:
+With no SELinux contexts, making it hard to re-enable. Instead, use `SELINUX=permissive` during
+Troubleshooting and switch back to `enforcing` when done:
 
 ```bash
 # Temporary switch (no reboot needed)
@@ -789,7 +789,7 @@ setenforce 1    # enforcing
 ### Pitfall: Password Hashes in /etc/passwd
 
 Historically, `/etc/passwd` contained password hashes. Modern systems store hashes in `/etc/shadow`
-(readable only by root). If you see a hash in `/etc/passwd`, the system is misconfigured:
+(readable only by root). If you see a hash in `/etc/passwd`The system is misconfigured:
 
 ```bash
 # Check: second field should be 'x'
@@ -801,5 +801,13 @@ grep root /etc/passwd
 ### Pitfall: Forgetting `setenforce` Is Temporary
 
 `setenforce 0` changes the mode only for the running system. After a reboot, the system returns to
-the mode specified in `/etc/selinux/config`. Do not rely on `setenforce` for persistent
-configuration changes.
+The mode specified in `/etc/selinux/config`. Do not rely on `setenforce` for persistent
+Configuration changes.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

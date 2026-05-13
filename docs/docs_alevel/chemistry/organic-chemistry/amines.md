@@ -12,32 +12,32 @@ slug: amines
 # Amines
 
 Amines are organic derivatives of ammonia ($\mathrm{NH}_3$) in which one or more hydrogen atoms have
-been replaced by alkyl or aryl groups. They are classified as primary ($1^\circ$), secondary
+Been replaced by alkyl or aryl groups. They are classified as primary ($1^\circ$), secondary
 ($2^\circ$), or tertiary ($3^\circ$) based on the number of carbon groups attached to the nitrogen.
 Amines containing four organic groups (quaternary ammonium ions, $\mathrm{R}_4\mathrm{N}^+$) are
-positively charged.
+Positively charged.
 
 ## Classification and Nomenclature
 
-| Type      | Structure                 | Example                                                        |
+| Type | Structure | Example |
 | --------- | ------------------------- | -------------------------------------------------------------- |
-| Primary   | $\mathrm{RNH}_2$          | Methylamine, $\mathrm{CH}_3\mathrm{NH}_2$                      |
-| Secondary | $\mathrm{R}_2\mathrm{NH}$ | Dimethylamine, $(\mathrm{CH}_3)_2\mathrm{NH}$                  |
-| Tertiary  | $\mathrm{R}_3\mathrm{N}$  | Trimethylamine, $(\mathrm{CH}_3)_3\mathrm{N}$                  |
-| Aromatic  | $\mathrm{ArNH}_2$         | Phenylamine (aniline), $\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$ |
+| Primary | $\mathrm{RNH}_2$ | Methylamine, $\mathrm{CH}_3\mathrm{NH}_2$ |
+| Secondary | $\mathrm{R}_2\mathrm{NH}$ | Dimethylamine, $(\mathrm{CH}_3)_2\mathrm{NH}$ |
+| Tertiary | $\mathrm{R}_3\mathrm{N}$ | Trimethylamine, $(\mathrm{CH}_3)_3\mathrm{N}$ |
+| Aromatic | $\mathrm{ArNH}_2$ | Phenylamine (aniline), $\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$ |
 
 ## Preparation of Amines
 
 ### Reduction of Nitriles
 
 Nitriles ($\mathrm{RCN}$) are reduced to primary amines using $\mathrm{LiAlH}_4$ in dry ether,
-followed by aqueous work-up:
+Followed by aqueous work-up:
 
 $$
 \mathrm{RCN} + 4[\mathrm{H}] \xrightarrow{\mathrm{LiAlH}_4} \mathrm{RCH}_2\mathrm{NH}_2
 $$
 
-At A-Level, this is typically represented with $\mathrm{LiAlH}_4$ or simply with the notation
+At A-Level, this is represented with $\mathrm{LiAlH}_4$ or with the notation
 $[\mathrm{H}]$.
 
 **Example:** Propionitrile ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CN}$) is reduced to propylamine
@@ -52,7 +52,7 @@ $$
 $$
 
 This is an alternative route to primary amines. Secondary amides ($\mathrm{RCONHR}'$) give secondary
-amines, and tertiary amides ($\mathrm{RCONR}'_2$) give tertiary amines.
+Amines, and tertiary amides ($\mathrm{RCONR}'_2$) give tertiary amines.
 
 ### Preparation of Phenylamine (Aniline)
 
@@ -86,26 +86,26 @@ $$
 $$
 
 The $\mathrm{p}K_b$ of a typical aliphatic amine is 3--4, making them significantly stronger bases
-than ammonia ($\mathrm{p}K_b = 4.75$).
+Than ammonia ($\mathrm{p}K_b = 4.75$).
 
 ### Why Aliphatic Amines Are Stronger Bases Than Ammonia
 
 The alkyl group is electron-donating through the inductive effect, increasing the electron density
-on the nitrogen and making it more willing to accept a proton. The ammonium ion is stabilised by the
-inductive donation from the alkyl group.
+On the nitrogen and making it more willing to accept a proton. The ammonium ion is stabilised by the
+Inductive donation from the alkyl group.
 
 ### Aromatic Amines Are Weaker Bases
 
 Phenylamine ($\mathrm{p}K_b = 9.38$) is a much weaker base than aliphatic amines. This is because
-the nitrogen lone pair is delocalised into the benzene ring through resonance, making it less
-available for protonation:
+The nitrogen lone pair is delocalised into the benzene ring through resonance, making it less
+Available for protonation:
 
 $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 \leftrightarrow \mathrm{C}_6\mathrm{H}_5^-\mathrm{NH}_2^+ \leftrightarrow \dots
 $$
 
 The resonance structures show the lone pair being donated into the ring, which is the same effect
-that activates the ring toward electrophilic substitution.
+That activates the ring toward electrophilic substitution.
 
 ### Basicity Order
 
@@ -116,21 +116,21 @@ $$
 $$
 
 The secondary amine is the strongest base because the inductive effect of two alkyl groups outweighs
-the steric hindrance. For tertiary amines, the steric hindrance to solvation of the ammonium ion
-reduces the effective basicity.
+The steric hindrance. For tertiary amines, the steric hindrance to solvation of the ammonium ion
+Reduces the effective basicity.
 
 ## Nucleophilic Substitution by Amines
 
 Amines are nucleophiles (lone pair on nitrogen) and react with halogenoalkanes to form successively
-higher amines:
+Higher amines:
 
 $$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{Br} + \mathrm{NH}_3 \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{NH}_3^+\mathrm{Br}^- \xrightarrow{\mathrm{NaOH}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{NH}_2 + \mathrm{NaBr} + \mathrm{H}_2\mathrm{O}
 $$
 
 The primary amine can further react with more halogenoalkane to give a secondary amine, then
-tertiary, and finally a quaternary ammonium salt. This lack of selectivity limits the synthetic
-utility of this route.
+Tertiary, and finally a quaternary ammonium salt. This lack of selectivity limits the synthetic
+Utility of this route.
 
 ## Amide Formation
 
@@ -141,7 +141,7 @@ $$
 $$
 
 An excess of amine is used to neutralise the $\mathrm{HCl}$ produced. The mechanism is nucleophilic
-acyl substitution:
+Acyl substitution:
 
 1. The amine nitrogen attacks the carbonyl carbon of the acyl chloride.
 2. A tetrahedral intermediate forms.
@@ -151,7 +151,7 @@ acyl substitution:
 
 ### Formation
 
-Primary aromatic amines react with nitrous acid ($\mathrm{HNO}_2$, generated in situ from
+Primary aromatic amines react with nitrous acid ($\mathrm{HNO}_2$Generated in situ from
 $\mathrm{NaNO}_2$ and $\mathrm{HCl}$) at $0$--$5^\circ\mathrm{C}$ to form diazonium salts:
 
 $$
@@ -159,7 +159,7 @@ $$
 $$
 
 The diazonium ion ($\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+$) is stabilised by resonance
-delocalisation of the positive charge over the nitrogen atoms and into the ring:
+Delocalisation of the positive charge over the nitrogen atoms and into the ring:
 
 $$
 \mathrm{C}_6\mathrm{H}_5-\overset◆LB◆+◆RB◆◆LB◆\mathrm{N}◆RB◆\equiv\mathrm{N} \leftrightarrow \mathrm{C}_6\mathrm{H}_5-\mathrm{N}=\overset◆LB◆+◆RB◆◆LB◆\mathrm{N}◆RB◆
@@ -168,18 +168,18 @@ $$
 ### Reactions of Diazonium Salts
 
 Diazonium salts are versatile intermediates because the $-\mathrm{N}_2^+$ group is an excellent
-leaving group. The key reactions are:
+Leaving group. The key reactions are:
 
 **Sandmeyer-type substitution:** The diazonium group is replaced by other groups, allowing the
-introduction of substituents that cannot be directly attached by electrophilic substitution.
+Introduction of substituents that cannot be directly attached by electrophilic substitution.
 
-| Reagent                     | Product       | Reaction                                                                                                                                                              |
+| Reagent | Product | Reaction |
 | --------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $\mathrm{KI}$               | Iodobenzene   | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{I}^- \to \mathrm{C}_6\mathrm{H}_5\mathrm{I} + \mathrm{N}_2$                                                         |
-| $\mathrm{HBF}_4$, heat      | Fluorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{BF}_4^- \xrightarrow{\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{F} + \mathrm{N}_2 + \mathrm{BF}_3$                        |
-| $\mathrm{H}_3\mathrm{PO}_2$ | Benzene       | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{H}_3\mathrm{PO}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_6\mathrm{H}_6 + \mathrm{N}_2 + \mathrm{H}_3\mathrm{PO}_3$ |
-| $\mathrm{CuCN}$             | Benzonitrile  | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{CuCN} \to \mathrm{C}_6\mathrm{H}_5\mathrm{CN} + \mathrm{N}_2$                                                       |
-| $\mathrm{CuCl}$, $\Delta$   | Chlorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- \xrightarrow{\mathrm{CuCl},\,\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{Cl} + \mathrm{N}_2$                         |
+| $\mathrm{KI}$ | Iodobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{I}^- \to \mathrm{C}_6\mathrm{H}_5\mathrm{I} + \mathrm{N}_2$ |
+| $\mathrm{HBF}_4$Heat | Fluorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{BF}_4^- \xrightarrow{\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{F} + \mathrm{N}_2 + \mathrm{BF}_3$ |
+| $\mathrm{H}_3\mathrm{PO}_2$ | Benzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{H}_3\mathrm{PO}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_6\mathrm{H}_6 + \mathrm{N}_2 + \mathrm{H}_3\mathrm{PO}_3$ |
+| $\mathrm{CuCN}$ | Benzonitrile | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{CuCN} \to \mathrm{C}_6\mathrm{H}_5\mathrm{CN} + \mathrm{N}_2$ |
+| $\mathrm{CuCl}$$\Delta$ | Chlorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- \xrightarrow{\mathrm{CuCl},\,\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{Cl} + \mathrm{N}_2$ |
 
 **Coupling reactions:** Diazonium salts react with phenols and aromatic amines to form azo compounds
 ($-\mathrm{N}=\mathrm{N}-$). These are intensely coloured and are used as dyes.
@@ -193,8 +193,8 @@ $$
 $$
 
 The azo group ($-\mathrm{N}=\mathrm{N}-$) is a chromophore that absorbs visible light due to its
-extended $\pi$ system. The colour depends on the extent of conjugation and the nature of the
-substituents on both aromatic rings.
+Extended $\pi$ system. The colour depends on the extent of conjugation and the nature of the
+Substituents on both aromatic rings.
 
 **Coupling with phenylamine** (in acidic conditions):
 
@@ -204,30 +204,30 @@ $$
 
 ### Why Low Temperature ($0$--$5^\circ\mathrm{C}$) Is Critical
 
-Diazonium salts decompose at temperatures above approximately $5^\circ\mathrm{C}$, releasing
-nitrogen gas and forming phenols (via reaction with water). The ice bath maintains the temperature
-low enough to isolate the diazonium salt for subsequent reactions.
+Diazonium salts decompose at temperatures above approximately $5^\circ\mathrm{C}$Releasing
+Nitrogen gas and forming phenols (via reaction with water). The ice bath maintains the temperature
+Low enough to isolate the diazonium salt for subsequent reactions.
 
 ## Common Pitfalls
 
 1. **Confusing aliphatic and aromatic amine basicity.** Aliphatic amines are stronger bases than
-   ammonia; aromatic amines are weaker. The explanation involves the inductive effect (aliphatic)
-   and resonance delocalisation (aromatic) respectively.
+ ammonia; aromatic amines are weaker. The explanation involves the inductive effect (aliphatic)
+ and resonance delocalisation (aromatic) respectively.
 
 2. **Using excess halogenoalkane with ammonia.** This produces a mixture of primary, secondary,
-   tertiary, and quaternary ammonium salts. To favour the primary amine, use a large excess of
-   ammonia.
+ tertiary, and quaternary ammonium salts. To favour the primary amine, use a large excess of
+ ammonia.
 
 3. **Not maintaining low temperature for diazotisation.** If the temperature exceeds
-   $5^\circ\mathrm{C}$, the diazonium salt decomposes. Always specify an ice bath.
+ $5^\circ\mathrm{C}$The diazonium salt decomposes. Always specify an ice bath.
 
 4. **Wrong conditions for coupling reactions.** Coupling with phenols requires alkaline conditions
-   (phenoxide is more reactive). Coupling with amines requires acidic conditions (free amine is more
-   reactive than the ammonium ion). The conditions are opposite.
+ (phenoxide is more reactive). Coupling with amines requires acidic conditions (free amine is more
+ reactive than the ammonium ion). The conditions are opposite.
 
 5. **Forgetting that the diazonium group is a leaving group.** The synthetic utility of diazonium
-   salts derives from the fact that $-\mathrm{N}_2^+$ departs as nitrogen gas, an extremely
-   favourable process that drives otherwise difficult substitutions.
+ salts derives from the fact that $-\mathrm{N}_2^+$ departs as nitrogen gas, an extremely
+ favourable process that drives otherwise difficult substitutions.
 
 6. **Confusing the products of nitrile reduction and amide reduction.** Nitrile reduction ($\mathrm{RCN} + 4[\mathrm{H}]$) gives a primary amine with one extra carbon ($\mathrm{RCH}_2\mathrm{NH}_2$). Amide reduction ($\mathrm{RCONH}_2 + 4[\mathrm{H}]$) gives a primary amine with the same number of carbons ($\mathrm{RCH}_2\mathrm{NH}_2$).
 
@@ -278,7 +278,7 @@ This acid-base extraction is a standard technique in organic synthesis for separ
 
 ### Hinsberg Test
 
-The Hinsberg test distinguishes between $1^\circ$, $2^\circ$, and $3^\circ$ amines using benzenesulphonyl chloride:
+The Hinsberg test distinguishes between $1^\circ$$2^\circ$And $3^\circ$ amines using benzenesulphonyl chloride:
 
 | Amine type | Observation with $\mathrm{C}_6\mathrm{H}_5\mathrm{SO}_2\mathrm{Cl}$ |
 |---|---|
@@ -322,7 +322,7 @@ The bulky leaving group ($\mathrm{N}(\mathrm{CH}_3)_3$) favours removal of the l
 
 A common two-step synthesis of primary amines:
 
-Step 1: Convert the alcohol to a halogenoalkane (e.g. using $\mathrm{PBr}_3$ or $\mathrm{SOCl}_2$).
+Step 1: Convert the alcohol to a halogenoalkane (e.g. Using $\mathrm{PBr}_3$ or $\mathrm{SOCl}_2$).
 
 Step 2: React the halogenoalkane with excess ammonia.
 
@@ -346,7 +346,7 @@ The Gabriel synthesis uses phthalimide as the nitrogen source. Phthalimide is de
 
 ### Protecting Groups in Amine Chemistry
 
-In multi-step syntheses, the basicity of amines can interfere with other reactions. A common protecting group is the acyl group: converting the amine to an amide (e.g. with ethanoyl chloride) protects the nitrogen from unwanted reactions. The amide can be hydrolysed back to the amine at the end of the synthesis.
+In multi-step syntheses, the basicity of amines can interfere with other reactions. A common protecting group is the acyl group: converting the amine to an amide (e.g. With ethanoyl chloride) protects the nitrogen from unwanted reactions. The amide can be hydrolysed back to the amine at the end of the synthesis.
 
 $$
 \mathrm{RNH}_2 + \mathrm{CH}_3\mathrm{COCl} \to \mathrm{RNHCOCH}_3 \xrightarrow[\text{hydrolysis}]{\mathrm{H}^+} \mathrm{RNH}_2
@@ -358,7 +358,7 @@ $$
 <summary>Problem 1</summary>
 
 Starting from benzene, outline a synthesis of methyl orange, an azo dye. Identify all reagents and
-conditions.
+Conditions.
 
 **Solution:**
 
@@ -380,11 +380,11 @@ $$
 \mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2 \xrightarrow{\mathrm{NaNO}_2/\mathrm{HCl},\,0\mathrm{--}5^\circ\mathrm{C}} \mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^-
 $$
 
-Step 4: Coupling with a naphthalene derivative (e.g. naphthalen-2-ol) in alkaline conditions to form
-the azo dye.
+Step 4: Coupling with a naphthalene derivative (e.g. Naphthalen-2-ol) in alkaline conditions to form
+The azo dye.
 
 The key principle is that the azo linkage is formed between the diazonium salt and an activated
-aromatic compound (phenol or amine) under the appropriate pH conditions.
+Aromatic compound (phenol or amine) under the appropriate pH conditions.
 
 </details>
 
@@ -396,18 +396,18 @@ Explain why phenylamine is a weaker base than ethylamine, even though both are p
 **Solution:**
 
 In ethylamine ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{NH}_2$), the ethyl group donates electron density
-to the nitrogen through the inductive effect, increasing the electron density on the lone pair and
-making it more available for protonation. The resulting ethylammonium ion is stabilised by the
-inductive effect of the alkyl group.
+To the nitrogen through the inductive effect, increasing the electron density on the lone pair and
+Making it more available for protonation. The resulting ethylammonium ion is stabilised by the
+Inductive effect of the alkyl group.
 
 In phenylamine ($\mathrm{C}_6\mathrm{H}_5\mathrm{NH}_2$), the nitrogen lone pair is partially
-delocalised into the benzene ring through resonance. The lone pair overlaps with the $\pi$ system of
-the ring, distributing the electron density over a larger volume. This reduces the electron density
-on the nitrogen, making it less available to accept a proton. The resonance stabilisation of the
-free amine is greater than that of the protonated form (in the anilinium ion, the lone pair is no
-longer available for delocalisation), so the equilibrium favours the unprotonated form.
+Delocalised into the benzene ring through resonance. The lone pair overlaps with the $\pi$ system of
+The ring, distributing the electron density over a larger volume. This reduces the electron density
+On the nitrogen, making it less available to accept a proton. The resonance stabilisation of the
+Free amine is greater than that of the protonated form (in the anilinium ion, the lone pair is no
+Longer available for delocalisation), so the equilibrium favours the unprotonated form.
 
-Quantitatively: $\mathrm{p}K_b(\mathrm{ethylamine}) = 3.37$,
+Quantitatively: $\mathrm{p}K_b(\mathrm{ethylamine}) = 3.37$
 $\mathrm{p}K_b(\mathrm{phenylamine}) = 9.38$.
 
 </details>
@@ -596,7 +596,7 @@ Step 5: Nitration of iodobenzene (iodine is ortho/para directing but deactivatin
 
 $$\mathrm{C}_6\mathrm{H}_5\mathrm{I} \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4,\,\Delta} 4\text{-}\mathrm{O}_2\mathrm{NC}_6\mathrm{H}_4\mathrm{I} \text{ (major)}$$
 
-Step 6: Oxidation of the methyl group... wait, there is no methyl group. We need the carboxylic acid directly.
+Step 6: Oxidation of the methyl group... Wait, there is no methyl group. We need the carboxylic acid directly.
 
 Alternative approach: Use the Sandmeyer reaction with $\mathrm{CuCN}$ to introduce the nitrile, then hydrolyse to the carboxylic acid.
 
@@ -683,7 +683,7 @@ Describe the preparation of benzenediazonium chloride from phenylamine. Explain 
 - Dissolve phenylamine in excess dilute HCl (to form phenylammonium chloride) and cool in ice to $0$--$5^\circ\mathrm{C}$ (1 mark).
 - Add aqueous sodium nitrite ($\mathrm{NaNO}_2$) slowly with stirring, maintaining the temperature below $5^\circ\mathrm{C}$ (1 mark).
 - The nitrous acid ($\mathrm{HNO}_2$) generated in situ reacts with the phenylammonium ion to form the diazonium salt (1 mark).
-- Above $5^\circ\mathrm{C}$, the diazonium salt decomposes, releasing nitrogen gas and forming phenol (via reaction with water) (1 mark).
+- Above $5^\circ\mathrm{C}$The diazonium salt decomposes, releasing nitrogen gas and forming phenol (via reaction with water) (1 mark).
 - The low temperature stabilises the diazonium ion long enough for it to be used in subsequent reactions (coupling or Sandmeyer) (1 mark).
 
 </details>
@@ -735,9 +735,9 @@ Explain the difference between the reactions of primary aliphatic amines and pri
 **Mark Scheme:**
 
 5 marks:
-- Primary aromatic amines (e.g. phenylamine) react with $\mathrm{HNO}_2$ at $0$--$5^\circ\mathrm{C}$ to form stable diazonium salts (1 mark).
+- Primary aromatic amines (e.g. Phenylamine) react with $\mathrm{HNO}_2$ at $0$--$5^\circ\mathrm{C}$ to form stable diazonium salts (1 mark).
 - The diazonium ion is stabilised by resonance delocalisation of the positive charge over the nitrogen atoms and into the benzene ring (1 mark).
-- Primary aliphatic amines (e.g. ethylamine) react with $\mathrm{HNO}_2$ to give a complex mixture of products including alcohols, alkenes, and nitrogen gas (1 mark).
+- Primary aliphatic amines (e.g. Ethylamine) react with $\mathrm{HNO}_2$ to give a complex mixture of products including alcohols, alkenes, and nitrogen gas (1 mark).
 - The aliphatic diazonium ion ($\mathrm{RCH}_2\mathrm{N}_2^+$) has no aromatic system to stabilise the positive charge, so it immediately decomposes (1 mark).
 - This difference is exploited synthetically: aromatic diazonium salts are useful intermediates, while the aliphatic reaction is not synthetically useful (1 mark).
 
@@ -759,7 +759,7 @@ Explain the difference between the reactions of primary aliphatic amines and pri
 
 **Target:** 4-amino-2-methylbenzoic acid from toluene.
 
-Step 1: Oxidation of toluene to benzoic acid would place $-\mathrm{COOH}$ para to $-\mathrm{CH}_3$, which is not the desired arrangement.
+Step 1: Oxidation of toluene to benzoic acid would place $-\mathrm{COOH}$ para to $-\mathrm{CH}_3$Which is not the desired arrangement.
 
 Better approach:
 
@@ -781,3 +781,7 @@ Ready to test your understanding of **Amines**? The [diagnostic test](/docs/alev
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

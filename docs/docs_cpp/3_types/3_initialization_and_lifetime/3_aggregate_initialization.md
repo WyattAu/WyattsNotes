@@ -8,14 +8,14 @@ categories:
   - Cpp
 slug: aggregate-initialization
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Aggregate initialization is the mechanism by which plain data structures (structs, arrays, unions)
-are initialized without invoking user-defined constructors. As C++ evolved, the definition of
+Are initialized without invoking user-defined constructors. As C++ evolved, the definition of
 "aggregate" changed significantly -- C++17 relaxed the rules, C++20 added designated initializers,
-and each revision shifted what constitutes a valid aggregate. For systems programmers writing
-protocol parsers, shared memory structures, and embedded firmware, aggregate initialization is the
-primary tool for constructing and inspecting raw data layouts.
+And each revision shifted what constitutes a valid aggregate. For systems programmers writing
+Protocol parsers, shared memory structures, and embedded firmware, aggregate initialization is the
+Primary tool for constructing and inspecting raw data layouts.
 
 ## What Qualifies as an Aggregate
 
@@ -55,7 +55,7 @@ Derived d{{1}, 2};  // base members initialized first, then derived
 C++20 allowed:
 
 - **Allowed**: Public base classes with non-trivial default constructors (if derived has no
-  user-provided constructor)
+ user-provided constructor)
 - **Allowed**: Parenthesized initialization of base class aggregates in derived aggregates
 
 ```cpp
@@ -68,14 +68,14 @@ C c{1, 2, 3};  // C++20: initializes A::a, B::b, then C::c
 
 ### Aggregate Evolution Summary
 
-| Feature                                    | C++11/14 | C++17        | C++20        |
+| Feature | C++11/14 | C++17 | C++20 |
 | :----------------------------------------- | :------- | :----------- | :----------- |
-| No user-declared constructors              | Required | Defaulted OK | Defaulted OK |
-| No private/protected members               | Required | Required     | Required     |
-| No base classes                            | Required | Public only  | Public only  |
-| No virtual functions                       | Required | Required     | Required     |
-| Designated initializers                    | No       | No           | Yes          |
-| Aggregate with default member initializers | Yes      | Yes          | Yes          |
+| No user-declared constructors | Required | Defaulted OK | Defaulted OK |
+| No private/protected members | Required | Required | Required |
+| No base classes | Required | Public only | Public only |
+| No virtual functions | Required | Required | Required |
+| Designated initializers | No | No | Yes |
+| Aggregate with default member initializers | Yes | Yes | Yes |
 
 ## Aggregate Initialization Syntax
 
@@ -128,7 +128,7 @@ Vertex v2{1.0, 2.0, 255, 128, 0, 255, 0.0, 0.0, 1.0};
 ```
 
 However, omitting nested braces is a maintenance hazard -- adding a member to `Color` silently
-breaks the initialization of `normal`. Always use explicit nested braces.
+Breaks the initialization of `normal`. Always use explicit nested braces.
 
 ## Designated Initializers (C++20)
 
@@ -152,7 +152,7 @@ Employee e2{.id = 1002, .name = "Bob"};  // salary uses default member initializ
 1. **Designators must name direct non-static data members** -- no nested paths like `.a.b`.
 2. **Designators can appear in any order**, but members are initialized in declaration order.
 3. **All unnamed members before a designated member must have initializers** (either explicit or
-   default).
+ default).
 
 ```cpp
 struct S {
@@ -200,7 +200,7 @@ Derived d{.a = 1, .b = 2};   // C++20: designator can refer to base class member
 ### Default-Initialization
 
 Leaves fundamental types with **indeterminate** values. Only calls the default constructor for class
-types.
+Types.
 
 ```cpp
 int x;                  // default-initialized: indeterminate value
@@ -234,7 +234,7 @@ When does value-initialization apply?
 
 - Empty brace initializer: `int x{};`
 - Empty parentheses for class types with constructors: `std::string s();` (but this is vexing
-  parse!)
+ parse!)
 - `new T()` or `new T{}`
 
 ### Zero-Initialization
@@ -282,9 +282,9 @@ Buffer b3 = {"hello"}; // data = "hello\0\0...\0", length = 0 (!)
                         // length is zero because the second initializer is missing
 ```
 
-The `b3` case is especially dangerous: the string fills `data`, but `length` is zero-initialized
-because no initializer was provided for it. This is not what you'd expect from a C-style struct
-initialization.
+The `b3` case is especially dangerous: the string fills `data`But `length` is zero-initialized
+Because no initializer was provided for it. This is not what you'd expect from a C-style struct
+Initialization.
 
 ### Safe Pattern: Always Brace-Initialize
 
@@ -320,7 +320,7 @@ Secret s{};  // ERROR: private member, not an aggregate (private non-static data
 ```
 
 If a class has any private or protected non-static data members, it is not an aggregate and cannot
-use aggregate initialization.
+Use aggregate initialization.
 
 ## Aggregates and `std::is_aggregate`
 
@@ -381,7 +381,7 @@ C_Point p{1.0, 2.0};  // aggregate init works across language boundary
 ### Shared Memory and Mapped Structures
 
 Aggregates are critical for memory-mapped I/O and shared memory, where you need precise control over
-the binary layout:
+The binary layout:
 
 ```cpp
 struct __attribute__((packed)) UDPHeader {
@@ -397,7 +397,7 @@ std::cout << "Source port: " << ntohs(header->src_port) << "\n";
 ```
 
 Note: For protocol headers, always use fixed-width integers from `<cstdint>` and specify endianness
-explicitly.
+Explicitly.
 
 ### Aggregate Initialization with Bit-Fields
 
@@ -416,7 +416,7 @@ Flags f2{.read = 1, .write = 1};  // C++20: r=1, w=1, x=0, reserved=0
 ### Aggregate Initialization and `constexpr`
 
 Since aggregates with trivial special member functions can be used in constant expressions, they are
-ideal for compile-time configuration:
+Ideal for compile-time configuration:
 
 ```cpp
 struct Version {
@@ -439,7 +439,7 @@ static_assert(!is_compatible({1, 9, 9}));
 ### Empty Aggregate Initialization
 
 An empty initializer list value-initializes the aggregate, which means all members without default
-member initializers are zero-initialized:
+Member initializers are zero-initialized:
 
 ```cpp
 struct Empty {};
@@ -458,7 +458,7 @@ WithDefaults wd{};  // a=42, b=99 (defaults applied)
 ### Aggregate Initialization and `std::array`
 
 `std::array` is an aggregate (it has no user-provided constructors), so it can be initialized with
-brace init:
+Brace init:
 
 ```cpp
 std::array<int, 5> arr{1, 2, 3, 4, 5};
@@ -470,7 +470,7 @@ constexpr std::array<int, 3> lookup{10, 20, 30};  // compile-time
 
 ### Aggregates vs Structured Bindings
 
-Aggregates work naturally with C++17 structured bindings:
+Aggregates work with C++17 structured bindings:
 
 ```cpp
 struct Pair {
@@ -537,8 +537,8 @@ S s{.b = expr_using_a(), .a = 1};
 ```
 
 Wait -- actually, the values are associated with their designators. The initialization order is
-declaration order: `a` is initialized first with value `1`, then `b` with `expr_using_a()`. The C++
-standard requires that initializers are applied in declaration order regardless of designator order
+Declaration order: `a` is initialized first with value `1`Then `b` with `expr_using_a()`. The C++
+Standard requires that initializers are applied in declaration order regardless of designator order
 [N4950 §9.4.5.4].
 
 ### 4. Brace Elision with Nested Aggregates
@@ -578,6 +578,14 @@ S global_s3{1, 2};  // zero-initialized, then aggregate init to {1, 2}
 
 - **Module 7 (Data Layout)**: Fundamental types, struct layout, padding, and alignment
 - **Module 8 (Pointers, References, Views)**: Pointer lifetime and reference binding
-- **Module 9.2 (Uniform Initialization)**: Brace init, `initializer_list`, and narrowing conversions
+- **Module 9.2 (Uniform Initialization)**: Brace init, `initializer_list`And narrowing conversions
 - **Module 9.4 (Constant Expressions)**: `constexpr` aggregates and compile-time initialization
 - **Module 10 (Ownership and RAII)**: RAII and why aggregates with non-trivial members need care
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

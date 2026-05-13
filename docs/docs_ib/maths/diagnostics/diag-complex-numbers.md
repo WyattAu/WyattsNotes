@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **(a)** Find all values of $z$ such that $z^4 = -16$.
 
-**(b)** Express each solution in the form $a + bi$, in polar form $re^{i\theta}$, and state the principal argument of each.
+**(b)** Express each solution in the form $a + bi$In polar form $re^{i\theta}$And state the principal argument of each.
 
 **(c)** A student computes one root as $2e^{i\pi/4}$ and claims the other roots are obtained by adding $\frac{\pi}{2}$ to the argument each time. Verify whether this is correct, and if not, explain the error.
 
@@ -31,14 +31,14 @@ $$z_k = 16^{1/4} \cdot e^{i(\pi + 2k\pi)/4} = 2e^{i(2k+1)\pi/4}, \quad k = 0, 1,
 
 **(b)**
 
-- $k = 0$: $z_0 = 2e^{i\pi/4} = 2\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right) = \sqrt{2} + i\sqrt{2}$, $\arg = \frac{\pi}{4}$
-- $k = 1$: $z_1 = 2e^{i3\pi/4} = 2\left(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}\right) = -\sqrt{2} + i\sqrt{2}$, $\arg = \frac{3\pi}{4}$
-- $k = 2$: $z_2 = 2e^{i5\pi/4} = 2\left(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}\right) = -\sqrt{2} - i\sqrt{2}$, $\arg = -\frac{3\pi}{4}$
-- $k = 3$: $z_3 = 2e^{i7\pi/4} = 2\left(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}\right) = \sqrt{2} - i\sqrt{2}$, $\arg = -\frac{\pi}{4}$
+- $k = 0$: $z_0 = 2e^{i\pi/4} = 2\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right) = \sqrt{2} + i\sqrt{2}$$\arg = \frac{\pi}{4}$
+- $k = 1$: $z_1 = 2e^{i3\pi/4} = 2\left(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}\right) = -\sqrt{2} + i\sqrt{2}$$\arg = \frac{3\pi}{4}$
+- $k = 2$: $z_2 = 2e^{i5\pi/4} = 2\left(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}\right) = -\sqrt{2} - i\sqrt{2}$$\arg = -\frac{3\pi}{4}$
+- $k = 3$: $z_3 = 2e^{i7\pi/4} = 2\left(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}\right) = \sqrt{2} - i\sqrt{2}$$\arg = -\frac{\pi}{4}$
 
-Note: $\frac{5\pi}{4}$ is normalised to $-\frac{3\pi}{4}$, and $\frac{7\pi}{4}$ is normalised to $-\frac{\pi}{4}$, to satisfy the principal argument range $(-\pi, \pi]$.
+Note: $\frac{5\pi}{4}$ is normalised to $-\frac{3\pi}{4}$And $\frac{7\pi}{4}$ is normalised to $-\frac{\pi}{4}$To satisfy the principal argument range $(-\pi, \pi]$.
 
-**(c)** The student is correct that the arguments differ by $\frac{\pi}{2}$. Starting from $\frac{\pi}{4}$: $\frac{3\pi}{4}$, $\frac{5\pi}{4}$, $\frac{7\pi}{4}$. These are the correct arguments before normalisation. The student's method works, but they must remember to normalise arguments outside $(-\pi, \pi]$ to the principal range.
+**(c)** The student is correct that the arguments differ by $\frac{\pi}{2}$. Starting from $\frac{\pi}{4}$: $\frac{3\pi}{4}$$\frac{5\pi}{4}$$\frac{7\pi}{4}$. These are the correct arguments before normalisation. The student's method works, but they must remember to normalise arguments outside $(-\pi, \pi]$ to the principal range.
 
 ---
 
@@ -60,13 +60,13 @@ A student computes $\arg(z) = \arctan\!\left(\dfrac{-\sqrt{3}}{-1}\right) = \arc
 
 **Solution:**
 
-**(a)** The point $(-1, -\sqrt{3})$ lies in the **third quadrant** (both coordinates negative). The student used $\arctan\!\left(\frac{b}{a}\right) = \arctan\!\left(\frac{-\sqrt{3}}{-1}\right)$, which gives $\frac{\pi}{3}$ — a first-quadrant angle. The $\arctan$ function always returns values in $(-\frac{\pi}{2}, \frac{\pi}{2})$, so it cannot distinguish between first and third quadrants.
+**(a)** The point $(-1, -\sqrt{3})$ lies in the **third quadrant** (both coordinates negative). The student used $\arctan\!\left(\frac{b}{a}\right) = \arctan\!\left(\frac{-\sqrt{3}}{-1}\right)$Which gives $\frac{\pi}{3}$ — a first-quadrant angle. The $\arctan$ function always returns values in $(-\frac{\pi}{2}, \frac{\pi}{2})$So it cannot distinguish between first and third quadrants.
 
 **(b)** In the third quadrant:
 
 $$\arg(z) = \pi + \arctan\!\left(\frac{\sqrt{3}}{1}\right) = \pi + \frac{\pi}{3} = -\frac{2\pi}{3}$$
 
-(The principal value is $-\frac{2\pi}{3}$, which lies in $(-\pi, \pi]$.)
+(The principal value is $-\frac{2\pi}{3}$Which lies in $(-\pi, \pi]$.)
 
 Modulus: $|z| = \sqrt{(-1)^2 + (-\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
@@ -82,9 +82,9 @@ Modulus: $|z| = \sqrt{(-1)^2 + (-\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
 **Question:**
 
-**(a)** Simplify $\dfrac{(2 + 3i)^2}{1 - i}$, giving your answer in the form $a + bi$.
+**(a)** Simplify $\dfrac{(2 + 3i)^2}{1 - i}$Giving your answer in the form $a + bi$.
 
-**(b)** Prove that for any non-zero complex number $z$, $\left|z + \dfrac{1}{\bar{z}}\right| \geq 2$.
+**(b)** Prove that for any non-zero complex number $z$$\left|z + \dfrac{1}{\bar{z}}\right| \geq 2$.
 
 [Difficulty: hard. Tests rationalisation with complex conjugate and modulus inequality proof.]
 
@@ -114,7 +114,7 @@ Since $a^2 + b^2 \geq 0$ and $a^2 + b^2 \gt 0$ (as $z \neq 0$):
 
 $$\frac{a^2 + b^2 + 1}{\sqrt{a^2 + b^2}} = \sqrt{a^2 + b^2} + \frac{1}{\sqrt{a^2 + b^2}} \geq 2$$
 
-by the AM-GM inequality (with equality when $\sqrt{a^2 + b^2} = 1$).
+By the AM-GM inequality (with equality when $\sqrt{a^2 + b^2} = 1$).
 
 ---
 
@@ -150,7 +150,7 @@ $$\cos 3\theta = 4\cos^3\theta - 3\cos\theta$$
 
 $$\cos^3\theta = \frac{1}{4}\cos 3\theta + \frac{3}{4}\cos\theta$$
 
-**(b)** Note that $\frac{\pi}{9}$, $\frac{5\pi}{9}$, and $\frac{7\pi}{9}$ are the three distinct solutions to $\cos 3\theta = \cos\frac{\pi}{3} = \frac{1}{2}$, since $3 \cdot \frac{\pi}{9} = \frac{\pi}{3}$, $3 \cdot \frac{5\pi}{9} = \frac{5\pi}{3}$, and $3 \cdot \frac{7\pi}{9} = \frac{7\pi}{3} = \frac{\pi}{3} - 2\pi$.
+**(b)** Note that $\frac{\pi}{9}$$\frac{5\pi}{9}$And $\frac{7\pi}{9}$ are the three distinct solutions to $\cos 3\theta = \cos\frac{\pi}{3} = \frac{1}{2}$Since $3 \cdot \frac{\pi}{9} = \frac{\pi}{3}$$3 \cdot \frac{5\pi}{9} = \frac{5\pi}{3}$And $3 \cdot \frac{7\pi}{9} = \frac{7\pi}{3} = \frac{\pi}{3} - 2\pi$.
 
 So $\cos 3\theta = \frac{1}{2}$ for all three angles. Using the identity:
 
@@ -160,7 +160,7 @@ Summing over the three values:
 
 $$\sum \cos^3\theta = \sum \frac{1}{8} + \frac{3}{4}\sum \cos\theta = \frac{3}{8} + \frac{3}{4}\sum \cos\theta$$
 
-The values $\cos\frac{\pi}{9}$, $\cos\frac{5\pi}{9}$, $\cos\frac{7\pi}{9}$ are the three roots of $4\cos^3\theta - 3\cos\theta - \frac{1}{2} = 0$, i.e., $8x^3 - 6x - 1 = 0$. By Vieta's formula, the sum of the roots is zero (coefficient of $x^2$ is $0$).
+The values $\cos\frac{\pi}{9}$$\cos\frac{5\pi}{9}$$\cos\frac{7\pi}{9}$ are the three roots of $4\cos^3\theta - 3\cos\theta - \frac{1}{2} = 0$I.e., $8x^3 - 6x - 1 = 0$. By Vieta's formula, the sum of the roots is zero (coefficient of $x^2$ is $0$).
 
 Therefore:
 
@@ -176,7 +176,7 @@ Let $\omega = e^{2\pi i/3}$ be a primitive cube root of unity.
 
 **(a)** Show that the matrix $R = \begin{pmatrix} \cos\frac{2\pi}{3} & -\sin\frac{2\pi}{3} \\ \sin\frac{2\pi}{3} & \cos\frac{2\pi}{3} \end{pmatrix}$ represents a rotation by $120^\circ$ anticlockwise.
 
-**(b)** Find $R^2$ and $R^3$, and explain the connection to the cube roots of unity.
+**(b)** Find $R^2$ and $R^3$And explain the connection to the cube roots of unity.
 
 [Difficulty: hard. Connects complex roots of unity to $2 \times 2$ rotation matrices.]
 
@@ -186,7 +186,7 @@ Let $\omega = e^{2\pi i/3}$ be a primitive cube root of unity.
 
 $$R\begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} \cos\frac{2\pi}{3} \\ \sin\frac{2\pi}{3} \end{pmatrix} = \begin{pmatrix} -\frac{1}{2} \\ \frac{\sqrt{3}}{2} \end{pmatrix}$$
 
-This is the point on the unit circle at angle $\frac{2\pi}{3}$, confirming a $120^\circ$ rotation.
+This is the point on the unit circle at angle $\frac{2\pi}{3}$Confirming a $120^\circ$ rotation.
 
 **(b)** $R^2$ represents a rotation by $\frac{4\pi}{3}$:
 
@@ -194,4 +194,4 @@ $$R^2 = \begin{pmatrix} \cos\frac{4\pi}{3} & -\sin\frac{4\pi}{3} \\ \sin\frac{4\
 
 $R^3 = I$ (the identity matrix), since rotating by $2\pi$ returns to the original position.
 
-The connection: $\omega = e^{2\pi i/3}$ corresponds to $R$, $\omega^2 = e^{4\pi i/3}$ corresponds to $R^2$, and $\omega^3 = 1$ corresponds to $R^3 = I$. The cube roots of unity $\{1, \omega, \omega^2\}$ correspond to the matrices $\{I, R, R^2\}$.
+The connection: $\omega = e^{2\pi i/3}$ corresponds to $R$$\omega^2 = e^{4\pi i/3}$ corresponds to $R^2$And $\omega^3 = 1$ corresponds to $R^3 = I$. The cube roots of unity $\{1, \omega, \omega^2\}$ correspond to the matrices $\{I, R, R^2\}$.

@@ -9,7 +9,7 @@ slug: apps-and-services
 ### Kubernetes-Based App Architecture
 
 TrueNAS SCALE uses a Kubernetes-based application framework. Apps run as Helm charts deployed into a
-lightweight Kubernetes cluster managed by TrueNAS. This provides:
+Lightweight Kubernetes cluster managed by TrueNAS. This provides:
 
 - Container orchestration (restart policies, health checks)
 - Service discovery and networking
@@ -21,11 +21,11 @@ lightweight Kubernetes cluster managed by TrueNAS. This provides:
 
 TrueNAS SCALE provides two app catalogs:
 
-| Catalog   | Source                | Update Frequency | Trust Level                      |
+| Catalog | Source | Update Frequency | Trust Level |
 | --------- | --------------------- | ---------------- | -------------------------------- |
-| Official  | TrueNAS/iXsystems     | Regular          | High — tested by iXsystems       |
-| Community | Community-contributed | Variable         | Medium — review before deploying |
-| Custom    | Your own charts       | Manual           | Depends on source                |
+| Official | TrueNAS/iXsystems | Regular | High — tested by iXsystems |
+| Community | Community-contributed | Variable | Medium — review before deploying |
+| Custom | Your own charts | Manual | Depends on source |
 
 ### Installing Apps
 
@@ -67,12 +67,12 @@ services:
 ### Media Server (Plex/Jellyfin)
 
 **Plex** is a commercial media server with client apps for virtually every platform. **Jellyfin** is
-the open-source alternative.
+The open-source alternative.
 
 **TrueNAS configuration:**
 
 1. Install Plex or Jellyfin from the app catalog.
-2. Create a dataset for media: `tank/media/movies`, `tank/media/tv`, `tank/media/music`.
+2. Create a dataset for media: `tank/media/movies``tank/media/tv``tank/media/music`.
 3. Configure storage mounts in the app settings to point to the media datasets.
 4. Set the container's PUID/PGID to match the user that owns the media files.
 5. For hardware transcoding (Plex Pass), configure GPU passthrough.
@@ -80,9 +80,9 @@ the open-source alternative.
 **Key considerations:**
 
 - Transcoding requires significant CPU or GPU resources. An Intel QuickSync GPU or NVIDIA
-  Quadro/Tesla is recommended.
+ Quadro/Tesla is recommended.
 - Direct play (no transcoding) requires no CPU/GPU and is preferred. Ensure your media is in a
-  format compatible with your clients (H.264/H.265, AAC audio).
+ format compatible with your clients (H.264/H.265, AAC audio).
 - Metadata databases should be stored on SSD-backed datasets for fast library scanning.
 
 ### Nextcloud
@@ -100,7 +100,7 @@ Nextcloud is a self-hosted file sync, collaboration, and communication platform.
 **Key considerations:**
 
 - Nextcloud's performance is heavily dependent on database performance. Use PostgreSQL on an SSD for
-  best results.
+ best results.
 - For large deployments, enable Redis caching and PHP OPcache.
 - Regularly update Nextcloud — security updates are frequent.
 
@@ -146,19 +146,19 @@ TrueNAS SCALE supports KVM-based virtual machines with full hardware virtualizat
 
 **Key settings:**
 
-| Setting       | Recommendation | Notes                                             |
+| Setting | Recommendation | Notes |
 | ------------- | -------------- | ------------------------------------------------- |
-| CPU           | 2+ vCPUs       | Pin to specific cores for performance             |
-| Memory        | 4 GB+          | Use dynamic memory if workload varies             |
-| Disk          | ZVOL           | Use `volblocksize=64K` or `128K`                  |
-| Network       | VirtIO         | VirtIO is fastest; use `e1000` only for legacy OS |
-| Boot firmware | UEFI           | Required for modern OS (Windows 11, Linux)        |
-| Graphics      | VNC or SPICE   | SPICE provides better performance                 |
+| CPU | 2+ vCPUs | Pin to specific cores for performance |
+| Memory | 4 GB+ | Use dynamic memory if workload varies |
+| Disk | ZVOL | Use `volblocksize=64K` or `128K` |
+| Network | VirtIO | VirtIO is fastest; use `e1000` only for legacy OS |
+| Boot firmware | UEFI | Required for modern OS (Windows 11, Linux) |
+| Graphics | VNC or SPICE | SPICE provides better performance |
 
 ### GPU Passthrough
 
 GPU passthrough allows a VM to directly access a physical GPU, enabling hardware acceleration for
-gaming, ML workloads, or transcoding.
+Gaming, ML workloads, or transcoding.
 
 **Requirements:**
 
@@ -189,15 +189,15 @@ find /sys/kernel/iommu_groups/ -type l | sort
 ### VirtIO Drivers
 
 VirtIO is the paravirtualized I/O framework for KVM. It provides near-native I/O performance by
-eliminating the overhead of emulating hardware devices.
+Eliminating the overhead of emulating hardware devices.
 
-| Device  | VirtIO Driver               | Windows Driver Source        |
+| Device | VirtIO Driver | Windows Driver Source |
 | ------- | --------------------------- | ---------------------------- |
-| Network | VirtIO Network              | virtio-win ISO from Fedora   |
-| Disk    | VirtIO Block or VirtIO SCSI | virtio-win ISO               |
-| Balloon | VirtIO Balloon              | virtio-win ISO               |
-| RNG     | VirtIO RNG                  | Built-in                     |
-| GPU     | VirtIO GPU                  | Built-in (Spice Guest Tools) |
+| Network | VirtIO Network | virtio-win ISO from Fedora |
+| Disk | VirtIO Block or VirtIO SCSI | virtio-win ISO |
+| Balloon | VirtIO Balloon | virtio-win ISO |
+| RNG | VirtIO RNG | Built-in |
+| GPU | VirtIO GPU | Built-in (Spice Guest Tools) |
 
 :::info
 For Windows VMs, download the `virtio-win` ISO from the Fedora project and attach it as a
@@ -211,13 +211,13 @@ CD-ROM drive during installation. Install the VirtIO drivers before installing W
 
 ### Network Modes
 
-| Mode   | Behavior                                    | Use Case                         |
+| Mode | Behavior | Use Case |
 | ------ | ------------------------------------------- | -------------------------------- |
-| Bridge | App gets its own IP on a virtual network    | Most apps, isolation             |
-| Host   | App shares the host's network stack         | Apps that need host-level access |
-| Custom | User-defined network with specific subnet   | Multi-app communication          |
-| DHCP   | App gets an IP from the network DHCP server | Most apps                        |
-| Static | App gets a manually assigned IP             | Apps accessed by fixed address   |
+| Bridge | App gets its own IP on a virtual network | Most apps, isolation |
+| Host | App shares the host's network stack | Apps that need host-level access |
+| Custom | User-defined network with specific subnet | Multi-app communication |
+| DHCP | App gets an IP from the network DHCP server | Most apps |
+| Static | App gets a manually assigned IP | Apps accessed by fixed address |
 
 ### Port Management
 
@@ -247,9 +247,9 @@ Refer to the dedicated [Traefik guide](../setup/traefik.md) for TrueNAS Traefik 
 
 ### iX Volumes
 
-iX volumes are TrueNAS-managed persistent storage volumes backed by ZFS datasets. When you configure
-storage for an app, TrueNAS creates a ZFS dataset at the specified path and mounts it into the
-container.
+IX volumes are TrueNAS-managed persistent storage volumes backed by ZFS datasets. When you configure
+Storage for an app, TrueNAS creates a ZFS dataset at the specified path and mounts it into the
+Container.
 
 ### Host Path Volumes
 
@@ -263,7 +263,7 @@ Host path volumes mount an existing ZFS dataset directly into the container. Thi
 
 1. **Separate datasets per app:** This allows per-app snapshot policies and quota management.
 2. **Use SSD-backed datasets for databases and metadata:** SQLite, PostgreSQL, and metadata
-   directories benefit from SSD latency.
+ directories benefit from SSD latency.
 3. **Enable snapshots on app data datasets:** This allows point-in-time recovery of app data.
 4. **Set quotas:** Prevent a single app from consuming all available storage.
 
@@ -273,14 +273,14 @@ Host path volumes mount an existing ZFS dataset directly into the container. Thi
 
 ### What Needs to Be Persistent
 
-| Data Type           | Persistence Required | Backup Strategy               |
+| Data Type | Persistence Required | Backup Strategy |
 | ------------------- | -------------------- | ----------------------------- |
-| Configuration files | Yes                  | Snapshot or file backup       |
-| Databases           | Yes                  | ZFS snapshot + replication    |
-| Media libraries     | Yes                  | Snapshot + cloud sync         |
-| Application logs    | Optional             | Log rotation, short retention |
-| Cache/temp data     | No                   | Use ephemeral storage         |
-| Container images    | No                   | Re-downloaded on deploy       |
+| Configuration files | Yes | Snapshot or file backup |
+| Databases | Yes | ZFS snapshot + replication |
+| Media libraries | Yes | Snapshot + cloud sync |
+| Application logs | Optional | Log rotation, short retention |
+| Cache/temp data | No | Use ephemeral storage |
+| Container images | No | Re-downloaded on deploy |
 
 ### Backup App Data
 
@@ -301,13 +301,13 @@ zfs rollback tank/apps/nextcloud/data@pre-update-20240101
 
 ### Common Issues
 
-| Issue                         | Likely Cause                                       | Solution                          |
+| Issue | Likely Cause | Solution |
 | ----------------------------- | -------------------------------------------------- | --------------------------------- |
-| App won't start               | Port conflict, missing storage, image pull failure | Check logs, verify config         |
-| App starts but is unreachable | Network misconfiguration, firewall                 | Check port mapping, DNS           |
-| App crashes after update      | Data migration issue, config change                | Check logs, rollback snapshot     |
-| Slow performance              | Storage on HDD, insufficient resources             | Move to SSD, increase CPU/RAM     |
-| Cannot connect to database    | Database not ready, wrong credentials              | Wait for DB to initialize, verify |
+| App won't start | Port conflict, missing storage, image pull failure | Check logs, verify config |
+| App starts but is unreachable | Network misconfiguration, firewall | Check port mapping, DNS |
+| App crashes after update | Data migration issue, config change | Check logs, rollback snapshot |
+| Slow performance | Storage on HDD, insufficient resources | Move to SSD, increase CPU/RAM |
+| Cannot connect to database | Database not ready, wrong credentials | Wait for DB to initialize, verify |
 
 ### Checking Logs
 
@@ -337,40 +337,40 @@ midclt call chart.release.query
 ### Using Host Network Mode Unnecessarily
 
 Host network mode eliminates network isolation between the container and the host. This can cause
-port conflicts (two apps trying to bind the same port) and security issues. Use bridge mode with
-port mapping unless the app specifically requires host networking (e.g., Home Assistant for device
-discovery).
+Port conflicts (two apps trying to bind the same port) and security issues. Use bridge mode with
+Port mapping unless the app specifically requires host networking (e.g., Home Assistant for device
+Discovery).
 
 ### Not Setting Resource Limits
 
 Without resource limits, a single misbehaving app can consume all available CPU and memory,
-affecting other apps and the TrueNAS host itself. Always set CPU and memory limits appropriate for
-the app's expected usage.
+Affecting other apps and the TrueNAS host itself. Always set CPU and memory limits appropriate for
+The app's expected usage.
 
 ### Storing Database Data on HDDs
 
 Databases (MySQL, PostgreSQL, SQLite) perform many small random I/O operations. HDDs handle random
 I/O at 100–200 IOPS, while SSDs handle 50,000–100,000 IOPS. A Nextcloud instance with its database
-on an HDD will feel sluggish. Always store database data on SSD-backed datasets.
+On an HDD will feel sluggish. Always store database data on SSD-backed datasets.
 
 ### Ignoring App Security Updates
 
 Self-hosted apps frequently receive security updates. Ignoring these updates leaves known
-vulnerabilities exposed to the network. Subscribe to security advisories for your critical apps and
-apply updates promptly. Use the TrueNAS app catalog's "Available Updates" notification.
+Vulnerabilities exposed to the network. Subscribe to security advisories for your critical apps and
+Apply updates promptly. Use the TrueNAS app catalog's "Available Updates" notification.
 
 ### Not Backing Up App Configuration
 
 App data snapshots protect the data, but configuration (environment variables, network settings,
-custom configurations) may be stored separately. Export and version-control your app configurations
-so they can be recreated after a disaster.
+Custom configurations) may be stored separately. Export and version-control your app configurations
+So they can be recreated after a disaster.
 
 ## Container Orchestration in TrueNAS SCALE
 
 ### Kubernetes Architecture on TrueNAS
 
 TrueNAS SCALE runs a lightweight Kubernetes cluster under the hood. Apps are deployed as Helm
-releases into this cluster. Understanding the K8s architecture helps with troubleshooting:
+Releases into this cluster. Understanding the K8s architecture helps with troubleshooting:
 
 ```mermaid
 graph TD
@@ -421,12 +421,12 @@ resources:
     memory: '2048Mi'
 ```
 
-| Resource       | Request vs Limit                  | Recommendation                    |
+| Resource | Request vs Limit | Recommendation |
 | -------------- | --------------------------------- | --------------------------------- |
-| CPU request    | Guaranteed minimum                | 10–25% of typical usage           |
-| CPU limit      | Maximum allowed                   | 2–4x typical usage (allow bursts) |
-| Memory request | Guaranteed minimum                | Match typical usage               |
-| Memory limit   | Maximum allowed (OOM if exceeded) | 1.5–2x typical usage              |
+| CPU request | Guaranteed minimum | 10–25% of typical usage |
+| CPU limit | Maximum allowed | 2–4x typical usage (allow bursts) |
+| Memory request | Guaranteed minimum | Match typical usage |
+| Memory limit | Maximum allowed (OOM if exceeded) | 1.5–2x typical usage |
 
 ## Detailed App Configurations
 
@@ -450,7 +450,7 @@ tank/
 **Performance tuning:**
 
 1. Set the transcode directory to an SSD-backed dataset. Transcoding generates many small temporary
-   files that benefit from SSD latency.
+ files that benefit from SSD latency.
 2. Allocate sufficient memory (2–4 GB depending on library size).
 3. Enable hardware transcoding if available (Intel QuickSync or NVIDIA GPU).
 4. Set `PLEX_MEDIA_SERVER_USE_HARDWARE transcoding` environment variable.
@@ -473,11 +473,11 @@ hostGPU: true
 
 **Database selection:**
 
-| Database          | Performance             | Complexity | Recommendation      |
+| Database | Performance | Complexity | Recommendation |
 | ----------------- | ----------------------- | ---------- | ------------------- |
-| SQLite (built-in) | Poor for large installs | None       | Small/personal only |
-| MariaDB           | Good                    | Moderate   | Medium installs     |
-| PostgreSQL        | Best                    | Moderate   | Large installs      |
+| SQLite (built-in) | Poor for large installs | None | Small/personal only |
+| MariaDB | Good | Moderate | Medium installs |
+| PostgreSQL | Best | Moderate | Large installs |
 
 **PostgreSQL tuning for Nextcloud:**
 
@@ -585,31 +585,31 @@ extraEnv:
 
 ### VM Creation Best Practices
 
-| Setting  | Recommendation             | Notes                                    |
+| Setting | Recommendation | Notes |
 | -------- | -------------------------- | ---------------------------------------- |
-| CPU      | Pin to specific cores      | Reduces latency from scheduler migration |
-| Memory   | Use balloon driver         | Allows dynamic memory adjustment         |
-| Disk     | ZVOL with volblocksize=64K | Better performance than file-backed disk |
-| Network  | VirtIO                     | 10x faster than emulated e1000           |
-| Boot     | UEFI with OVMF             | Required for modern OS                   |
-| Graphics | QXL or VirtIO-GPU          | Use SPICE for best remote display        |
-| TPM      | Software TPM (swtpm)       | Required for Windows 11                  |
+| CPU | Pin to specific cores | Reduces latency from scheduler migration |
+| Memory | Use balloon driver | Allows dynamic memory adjustment |
+| Disk | ZVOL with volblocksize=64K | Better performance than file-backed disk |
+| Network | VirtIO | 10x faster than emulated e1000 |
+| Boot | UEFI with OVMF | Required for modern OS |
+| Graphics | QXL or VirtIO-GPU | Use SPICE for best remote display |
+| TPM | Software TPM (swtpm) | Required for Windows 11 |
 
 ### VM Storage Options
 
-| Option                 | Performance           | Flexibility           | Use Case                        |
+| Option | Performance | Flexibility | Use Case |
 | ---------------------- | --------------------- | --------------------- | ------------------------------- |
-| ZVOL                   | Best                  | Low (fixed size)      | Production VMs, databases       |
-| File-backed disk image | Good                  | High (thin provision) | Development VMs                 |
-| Virtio-FS              | Best for shared files | Medium                | Shared data between host and VM |
+| ZVOL | Best | Low (fixed size) | Production VMs, databases |
+| File-backed disk image | Good | High (thin provision) | Development VMs |
+| Virtio-FS | Best for shared files | Medium | Shared data between host and VM |
 
 ### VM Network Configuration
 
-| Mode   | Behavior                                | Use Case                    |
+| Mode | Behavior | Use Case |
 | ------ | --------------------------------------- | --------------------------- |
-| VirtIO | Paravirtualized NIC, best performance   | Most VMs                    |
-| E1000  | Emulated Intel NIC, broad compatibility | Legacy OS, PXE boot         |
-| SR-IOV | Direct PCI passthrough of VF            | High-performance networking |
+| VirtIO | Paravirtualized NIC, best performance | Most VMs |
+| E1000 | Emulated Intel NIC, broad compatibility | Legacy OS, PXE boot |
+| SR-IOV | Direct PCI passthrough of VF | High-performance networking |
 
 ### VM Backup Strategy
 
@@ -617,7 +617,7 @@ extraEnv:
 2. **Use `zfs send`** to replicate the VM's ZVOL to a backup pool.
 3. **Export the VM configuration** from the TrueNAS web UI and store it alongside the ZVOL snapshot.
 4. **To restore:** Import the ZVOL, recreate the VM with the exported configuration, and attach the
-   ZVOL.
+ ZVOL.
 
 ## Networking for Apps - Advanced
 
@@ -649,7 +649,7 @@ networks:
 ### DNS Resolution for Apps
 
 TrueNAS provides internal DNS resolution for apps via CoreDNS. Apps can reference each other by
-service name:
+Service name:
 
 ```yaml
 # App A can connect to App B using the service name
@@ -959,3 +959,11 @@ podSecurityContext:
 ```
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

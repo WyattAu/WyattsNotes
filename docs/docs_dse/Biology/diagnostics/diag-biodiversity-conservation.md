@@ -28,7 +28,7 @@ Two nature reserves, A and B, were surveyed for the number and abundance of butt
 
 $$D = 1 - \sum \left(\frac{n}{N}\right)^{2}$$
 
-where $n$ = number of individuals of a species, and $N$ = total number of individuals. [4 marks]
+Where $n$ = number of individuals of a species, and $N$ = total number of individuals. [4 marks]
 
 (c) Explain which reserve is more biodiverse and what this means for the stability of the ecosystem. [3 marks]
 
@@ -58,7 +58,7 @@ $$D = 1 - 0.20 = 0.80$$
 
 (c) **Reserve B is more biodiverse** (D = 0.80 vs D = 0.19). Both have the same species richness (5 species), but Reserve B has much higher **species evenness** (all species equally abundant), while Reserve A is dominated by Species 1 (90% of individuals).
 
-A higher Simpson's Diversity Index indicates greater biodiversity. A more biodiverse ecosystem is generally **more stable** and **more resilient** to environmental changes (e.g. disease, climate change, habitat disturbance). If one species is lost in Reserve B, the impact on the ecosystem is smaller because many other species can fill its ecological role. In Reserve A, if Species 1 were lost, the ecosystem would be severely affected because Species 1 dominates the community.
+A higher Simpson's Diversity Index indicates greater biodiversity. A more biodiverse ecosystem is generally **more stable** and **more resilient** to environmental changes (e.g. Disease, climate change, habitat disturbance). If one species is lost in Reserve B, the impact on the ecosystem is smaller because many other species can fill its ecological role. In Reserve A, if Species 1 were lost, the ecosystem would be severely affected because Species 1 dominates the community.
 
 ---
 
@@ -82,9 +82,9 @@ A higher Simpson's Diversity Index indicates greater biodiversity. A more biodiv
 
 (b) Two advantages of in situ conservation:
 
-1. **Preserves the entire ecosystem**: In situ conservation protects not just the target species but the entire ecological community, including interacting species, food webs, and ecological processes (e.g. nutrient cycling, pollination). Ex situ conservation only protects individual species.
+1. **Preserves the entire ecosystem**: In situ conservation protects not just the target species but the entire ecological community, including interacting species, food webs, and ecological processes (e.g. Nutrient cycling, pollination). Ex situ conservation only protects individual species.
 
-2. **Species continue to evolve naturally**: In their natural habitat, species continue to undergo natural selection and evolution in response to their environment, maintaining their genetic diversity and adaptability. In ex situ conservation, species are removed from their natural selection pressures.
+2. **Species continue to evolve **: In their natural habitat, species continue to undergo natural selection and evolution in response to their environment, maintaining their genetic diversity and adaptability. In ex situ conservation, species are removed from their natural selection pressures.
 
 (Alternative: more cost-effective for large areas; maintains natural behaviour of animals.)
 
@@ -109,11 +109,11 @@ A higher Simpson's Diversity Index indicates greater biodiversity. A more biodiv
 
 **Worked Solution**
 
-(a) **Habitat fragmentation** is the process by which a large, continuous area of habitat is broken up into **smaller, isolated patches** (fragments), usually by human activities such as road construction, agriculture, or urban development.
+(a) **Habitat fragmentation** is the process by which a large, continuous area of habitat is broken up into **smaller, isolated patches** (fragments), by human activities such as road construction, agriculture, or urban development.
 
 Fragmentation threatens biodiversity because:
-- **Isolation**: Fragments are separated by inhospitable habitat (e.g. farmland, roads), preventing migration and **gene flow** between populations. This reduces genetic diversity and increases the risk of inbreeding depression.
-- **Reduced area**: Smaller fragments support smaller populations, which are more vulnerable to extinction from random events (e.g. disease, natural disasters).
+- **Isolation**: Fragments are separated by inhospitable habitat (e.g. Farmland, roads), preventing migration and **gene flow** between populations. This reduces genetic diversity and increases the risk of inbreeding depression.
+- **Reduced area**: Smaller fragments support smaller populations, which are more vulnerable to extinction from random events (e.g. Disease, natural disasters).
 - **Edge effects**: Smaller fragments have a higher **edge-to-interior ratio**, exposing more of the habitat to edge effects (see part b).
 
 (b) **Edge effects** refer to the changes in environmental conditions that occur at the **boundary (edge)** between a habitat fragment and the surrounding modified landscape. At the edge:
@@ -123,11 +123,11 @@ Fragmentation threatens biodiversity because:
 
 These edge conditions can be detrimental to **interior species** -- species that require the stable, sheltered conditions found deep within the habitat. As the habitat fragment shrinks, the proportion of interior habitat decreases and the edge effects penetrate deeper into the fragment, reducing the area suitable for interior species.
 
-(c) The 200-hectare fragment from a previously larger forest is likely to support **fewer species** than a naturally occurring 200-hectare forest because of:
+(c) The 200-hectare fragment from a previously larger forest is likely to support **fewer species** than a occurring 200-hectare forest because of:
 
-1. **Edge effects**: The isolated 200-hectare fragment has a much larger **edge-to-interior ratio** than it would if it were a continuous, naturally bounded forest. Edge effects penetrate further into the smaller fragment relative to its area, reducing the amount of interior habitat.
+1. **Edge effects**: The isolated 200-hectare fragment has a much larger **edge-to-interior ratio** than it would if it were a continuous, bounded forest. Edge effects penetrate further into the smaller fragment relative to its area, reducing the amount of interior habitat.
 
-2. **Species-area relationship**: Larger habitats support more species. When a large habitat is fragmented, the total number of species supported by all fragments combined is typically **less** than the number supported by the original continuous habitat of the same total area. Some species are lost during the fragmentation process because they cannot survive in the smaller fragments.
+2. **Species-area relationship**: Larger habitats support more species. When a large habitat is fragmented, the total number of species supported by all fragments combined is **less** than the number supported by the original continuous habitat of the same total area. Some species are lost during the fragmentation process because they cannot survive in the smaller fragments.
 
 3. **Isolation**: The 200-hectare fragment is isolated from the remaining 800-hectare fragment. Species that require larger territories or that cannot cross the intervening habitat may be lost from the smaller fragment. There is no **rescue effect** (immigration from nearby populations) to recolonise extinct populations.
 
@@ -142,9 +142,9 @@ These edge conditions can be detrimental to **interior species** -- species that
 A tropical rainforest is being cleared for palm oil plantations. Several endangered species, including a species of orangutan, live in this forest.
 
 (a) Evaluate the following three conservation strategies for the endangered orangutan population:
-   (i) Establishing a captive breeding programme in a zoo.
-   (ii) Creating a protected wildlife reserve within the forest.
-   (iii) Promoting sustainable palm oil production. [6 marks]
+ (i) Establishing a captive breeding programme in a zoo.
+ (ii) Creating a protected wildlife reserve within the forest.
+ (iii) Promoting sustainable palm oil production. [6 marks]
 
 (b) Explain why maintaining **genetic diversity** within the orangutan population is important for its long-term survival. [3 marks]
 
@@ -156,13 +156,13 @@ A tropical rainforest is being cleared for palm oil plantations. Several endange
 
 (a) (i) **Captive breeding programme**: This is an ex situ conservation method. It directly protects individual orangutans from habitat loss and can increase their numbers through controlled breeding. However, it removes them from their natural habitat, so they may lose natural behaviours. It is also expensive and reintroduction to the wild is difficult if the original habitat has been destroyed. It does not address the root cause (habitat loss).
 
-(ii) **Protected wildlife reserve**: This is an in situ conservation method. It protects the orangutan's natural habitat, allowing them to live and reproduce naturally while maintaining ecological interactions. It preserves the entire ecosystem. However, it requires enforcement against illegal logging and poaching, and the reserve size may be insufficient if the surrounding habitat is degraded (edge effects). It is generally the most effective long-term strategy if adequately protected.
+(ii) **Protected wildlife reserve**: This is an in situ conservation method. It protects the orangutan's natural habitat, allowing them to live and reproduce while maintaining ecological interactions. It preserves the entire ecosystem. However, it requires enforcement against illegal logging and poaching, and the reserve size may be insufficient if the surrounding habitat is degraded (edge effects). It is generally the most effective long-term strategy if adequately protected.
 
 (iii) **Sustainable palm oil production**: This addresses the **root cause** of the problem by promoting farming practices that do not destroy the rainforest. The Roundtable on Sustainable Palm Oil (RSPO) certifies palm oil produced without deforestation. This allows economic development while maintaining biodiversity. However, it requires widespread industry adoption and effective monitoring. It is a long-term solution but difficult to enforce globally.
 
 (b) Maintaining **genetic diversity** is important because:
 
-1. A genetically diverse population has a wider range of **alleles**, making it more likely that some individuals possess traits that can survive environmental changes (e.g. new diseases, climate change). This increases the population's **adaptability and resilience**.
+1. A genetically diverse population has a wider range of **alleles**, making it more likely that some individuals possess traits that can survive environmental changes (e.g. New diseases, climate change). This increases the population's **adaptability and resilience**.
 
 2. Low genetic diversity (due to inbreeding in a small population) leads to **inbreeding depression** -- an increased frequency of harmful recessive alleles being expressed, resulting in reduced fitness, lower fertility, higher infant mortality, and increased susceptibility to disease. This can push the population towards extinction.
 
@@ -205,7 +205,7 @@ The human population has grown exponentially over the past 200 years, placing in
 
 (b) **Sustainable development** is development that meets the needs of the present generation **without compromising the ability of future generations** to meet their own needs. It balances economic growth, social well-being, and environmental protection.
 
-**Example of sustainable practice**: **Selective logging** (instead of clear-cutting) -- only mature, commercially valuable trees are harvested, leaving the forest structure largely intact. This allows the forest to regenerate naturally while still providing timber for economic use. Young trees are left to grow, and the habitat is preserved for wildlife.
+**Example of sustainable practice**: **Selective logging** (instead of clear-cutting) -- only mature, commercially valuable trees are harvested, leaving the forest structure largely intact. This allows the forest to regenerate while still providing timber for economic use. Young trees are left to grow, and the habitat is preserved for wildlife.
 
 (Alternative: rotational grazing; using renewable resources such as solar/wind power; sustainable fishing quotas.)
 

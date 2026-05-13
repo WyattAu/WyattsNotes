@@ -84,13 +84,13 @@ git commit -m "docs: update installation instructions"
 
 ### Why Atomic Commits Matter
 
-| Reason                  | Explanation                                                             |
+| Reason | Explanation |
 | ----------------------- | ----------------------------------------------------------------------- |
-| **Bisectability**       | `git bisect` can pinpoint the exact commit that introduced a bug        |
-| **Revertibility**       | `git revert <hash>` undoes one specific change without affecting others |
-| **Reviewability**       | Reviewers can understand each change in isolation                       |
-| **Cherry-picking**      | Individual fixes can be cherry-picked to release branches               |
-| **History archaeology** | Future developers can understand _why_ each change was made             |
+| **Bisectability** | `git bisect` can pinpoint the exact commit that introduced a bug |
+| **Revertibility** | `git revert <hash>` undoes one specific change without affecting others |
+| **Reviewability** | Reviewers can understand each change in isolation |
+| **Cherry-picking** | Individual fixes can be cherry-picked to release branches |
+| **History archaeology** | Future developers can understand _why_ each change was made |
 
 ### Staging Partial Changes
 
@@ -147,8 +147,8 @@ credentials.json
 
 ### What NOT to Ignore
 
-- Configuration files that others need (`.eslintrc.json`, `tsconfig.json`).
-- Lockfiles (`package-lock.json`, `yarn.lock`, `Cargo.lock`).
+- Configuration files that others need (`.eslintrc.json``tsconfig.json`).
+- Lockfiles (`package-lock.json``yarn.lock``Cargo.lock`).
 - `.gitignore` itself.
 
 ### Global `.gitignore`
@@ -297,3 +297,15 @@ git config --global alias.contains "branch --contains"
 # Quick stash with message
 git config --global alias.save "stash push -m"
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

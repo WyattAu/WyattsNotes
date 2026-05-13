@@ -7,25 +7,25 @@ slug: dynamic-programming
 ## DP Fundamentals
 
 Dynamic programming (DP) solves problems by breaking them into overlapping subproblems, solving each
-subproblem once, and storing the results. Two properties must hold for DP to apply:
+Subproblem once, and storing the results. Two properties must hold for DP to apply:
 
 1. **Optimal substructure** — the optimal solution to the problem contains optimal solutions to its
-   subproblems
+ subproblems
 2. **Overlapping subproblems** — the same subproblems are solved multiple times in a naive recursive
-   solution
+ solution
 
 When both hold, DP reduces an exponential-time recursive solution to polynomial time.
 
 ### Top-Down (Memoisation) vs Bottom-Up (Tabulation)
 
-| Aspect        | Top-Down (Memoisation)           | Bottom-Up (Tabulation)                      |
+| Aspect | Top-Down (Memoisation) | Bottom-Up (Tabulation) |
 | ------------- | -------------------------------- | ------------------------------------------- |
-| Approach      | Recursive with caching           | Iterative, fill table from base cases       |
-| Order         | Natural recursion order          | Must determine correct fill order           |
-| Stack space   | $O(n)$ recursion depth           | $O(1)$ (no recursion)                       |
-| Cache control | Only computes needed subproblems | Computes all subproblems                    |
-| Debugging     | Easier to reason about           | Harder to see the recurrence                |
-| Performance   | Slight overhead from recursion   | Slightly faster (no function call overhead) |
+| Approach | Recursive with caching | Iterative, fill table from base cases |
+| Order | Natural recursion order | Must determine correct fill order |
+| Stack space | $O(n)$ recursion depth | $O(1)$ (no recursion) |
+| Cache control | Only computes needed subproblems | Computes all subproblems |
+| Debugging | Easier to reason about | Harder to see the recurrence |
+| Performance | Slight overhead from recursion | Slightly faster (no function call overhead) |
 
 ## 1D DP
 
@@ -66,7 +66,7 @@ def climb_stairs_memo(n, memo=None):
 ### House Robber
 
 Given an array of non-negative integers representing money at each house, maximise the amount you
-can rob without robbing two adjacent houses.
+Can rob without robbing two adjacent houses.
 
 $$dp[i] = \max(dp[i-1], dp[i-2] + nums[i])$$
 
@@ -94,7 +94,7 @@ def house_robber(nums):
 ### Coin Change
 
 Given coins of different denominations and a target amount, find the minimum number of coins needed
-to make that amount. Return -1 if it is not possible.
+To make that amount. Return -1 if it is not possible.
 
 $$dp[i] = \min(dp[i], dp[i - coin] + 1) \quad \mathrm{for each coin{}$$
 
@@ -134,9 +134,9 @@ def coin_change_combinations(coins, amount):
 :::warning
 
 The order of loops matters for counting combinations vs permutations. If you iterate amount first
-and coins second, you count permutations (different orderings of the same coins are counted
-separately). If you iterate coins first and amount second, you count combinations (each combination
-is counted once). This is a common source of incorrect DP solutions.
+And coins second, you count permutations (different orderings of the same coins are counted
+Separately). If you iterate coins first and amount second, you count combinations (each combination
+Is counted once). This is a common source of incorrect DP solutions.
 
 :::
 
@@ -147,8 +147,8 @@ is counted once). This is a common source of incorrect DP solutions.
 Find the length of the longest subsequence common to two strings.
 
 $$
-dp[i][j] = \begin{cases}
-dp[i-1][j-1] + 1 & \mathrm{if {} s_1[i-1] = s_2[j-1] \\
+Dp[i][j] = \begin{cases}
+Dp[i-1][j-1] + 1 & \mathrm{if {} s_1[i-1] = s_2[j-1] \\
 \max(dp[i-1][j], dp[i][j-1]) & \mathrm{otherwise{}
 \end{cases}
 $$
@@ -198,10 +198,10 @@ def lcs_with_rolling_array(s1, s2):
 Minimum number of operations (insert, delete, replace) to transform one string into another.
 
 $$
-dp[i][j] = \begin{cases}
-j & \mathrm{if {} i = 0 \\
-i & \mathrm{if {} j = 0 \\
-dp[i-1][j-1] & \mathrm{if {} s_1[i-1] = s_2[j-1] \\
+Dp[i][j] = \begin{cases}
+J & \mathrm{if {} i = 0 \\
+I & \mathrm{if {} j = 0 \\
+Dp[i-1][j-1] & \mathrm{if {} s_1[i-1] = s_2[j-1] \\
 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{otherwise{}
 \end{cases}
 $$
@@ -234,17 +234,17 @@ def edit_distance(s1, s2):
     return dp[n][m]
 ```
 
-| Operation                    | Cost               | Intuition                |
+| Operation | Cost | Intuition |
 | ---------------------------- | ------------------ | ------------------------ |
-| Delete `s1[i]`               | $dp[i-1][j] + 1$   | Remove character from s1 |
-| Insert `s2[j]`               | $dp[i][j-1] + 1$   | Add character to s1      |
-| Replace `s1[i]` with `s2[j]` | $dp[i-1][j-1] + 1$ | Change one character     |
-| Match `s1[i] == s2[j]`       | $dp[i-1][j-1]$     | No operation needed      |
+| Delete `s1[i]` | $dp[i-1][j] + 1$ | Remove character from s1 |
+| Insert `s2[j]` | $dp[i][j-1] + 1$ | Add character to s1 |
+| Replace `s1[i]` with `s2[j]` | $dp[i-1][j-1] + 1$ | Change one character |
+| Match `s1[i] == s2[j]` | $dp[i-1][j-1]$ | No operation needed |
 
 ### Knapsack Problem
 
-Given items with weights and values, and a knapsack with capacity $W$, maximise the total value
-without exceeding the capacity.
+Given items with weights and values, and a knapsack with capacity $W$Maximise the total value
+Without exceeding the capacity.
 
 $$dp[i][w] = \max(dp[i-1][w], dp[i-1][w - weight_i] + value_i) \quad \mathrm{if {} weight_i \le w$$
 
@@ -298,9 +298,9 @@ def unbounded_knapsack(weights, values, capacity):
 The direction of iteration matters for space-optimised knapsack:
 
 - **0/1 knapsack:** iterate $w$ from $W$ down to $weight_i$ (reverse) — prevents using the same item
-  twice in one iteration
+ twice in one iteration
 - **Unbounded knapsack:** iterate $w$ from $weight_i$ up to $W$ (forward) — allows reusing the item
-  within the same iteration
+ within the same iteration
 
 Getting this direction wrong is one of the most common DP bugs.
 
@@ -401,7 +401,7 @@ def longest_palindromic_subsequence(s):
 ### Word Break
 
 Given a string and a dictionary of words, determine if the string can be segmented into
-space-separated dictionary words.
+Space-separated dictionary words.
 
 ```python
 def word_break(s, word_dict):
@@ -426,16 +426,16 @@ def word_break(s, word_dict):
 ## Interval DP
 
 Interval DP problems involve optimising over intervals (subarrays, substrings). The state is
-typically $dp[i][j]$ representing the optimal value for the subproblem from index $i$ to $j$.
+ $dp[i][j]$ representing the optimal value for the subproblem from index $i$ to $j$.
 
 The fill order is critical: shorter intervals must be computed before longer ones (because longer
-intervals depend on shorter ones).
+Intervals depend on shorter ones).
 
 ### Matrix Chain Multiplication
 
-Given a chain of matrices with dimensions $d_0 \times d_1$, $d_1 \times d_2$, ...,
+Given a chain of matrices with dimensions $d_0 \times d_1$$d_1 \times d_2$...,
 $d_{n-1} \times
-d_n$, find the minimum number of scalar multiplications to compute the product.
+D_n$, find the minimum number of scalar multiplications to compute the product.
 
 $$dp[i][j] = \min_{i \le k \lt j} (dp[i][k] + dp[k+1][j] + d_i \cdot d_{k+1} \cdot d_{j+1})$$
 
@@ -463,8 +463,8 @@ def matrix_chain_order(dims):
 ### Burst Balloons
 
 Given `nums` where `nums[i]` is the value of the $i$-th balloon, burst all balloons to maximise
-coins. When you burst balloon $i$, you get `nums[left] * nums[i] * nums[right]` coins, where `left`
-and `right` are the nearest unburst balloons.
+Coins. When you burst balloon $i$You get `nums[left] * nums[i] * nums[right]` coins, where `left`
+And `right` are the nearest unburst balloons.
 
 ```python
 def burst_balloons(nums):
@@ -492,7 +492,7 @@ def burst_balloons(nums):
 ## Bitmask DP
 
 Bitmask DP uses a bitmask to represent a subset of elements as a state. This is applicable when the
-number of elements is small (typically $n \le 20$), giving $2^n$ states.
+Number of elements is small ( $n \le 20$), giving $2^n$ states.
 
 ### Travelling Salesman Problem (TSP)
 
@@ -618,22 +618,22 @@ def max_path_sum_binary_tree(root):
 ## Greedy vs Dynamic Programming
 
 Greedy algorithms make locally optimal choices at each step, hoping they lead to a globally optimal
-solution. DP considers all possibilities and chooses the globally optimal one.
+Solution. DP considers all possibilities and chooses the globally optimal one.
 
 ### When Greedy Works
 
 Greedy works when the problem has the **greedy-choice property** — a locally optimal choice leads to
-a globally optimal solution. This typically holds for matroid structures.
+A globally optimal solution. This holds for matroid structures.
 
-| Problem                    | Greedy?            | DP?                | Greedy Complexity |
+| Problem | Greedy? | DP? | Greedy Complexity |
 | -------------------------- | ------------------ | ------------------ | ----------------- |
-| Activity selection         | Yes                | Yes                | $O(n \log n)$     |
-| Fractional knapsack        | Yes                | Yes                | $O(n \log n)$     |
-| Huffman coding             | Yes                | Yes                | $O(n \log n)$     |
-| Dijkstra's shortest path   | Yes (non-negative) | Yes (Bellman-Ford) | $O((V+E) \log V)$ |
-| 0/1 knapsack               | **No**             | Yes                | —                 |
-| Longest common subsequence | **No**             | Yes                | —                 |
-| Edit distance              | **No**             | Yes                | —                 |
+| Activity selection | Yes | Yes | $O(n \log n)$ |
+| Fractional knapsack | Yes | Yes | $O(n \log n)$ |
+| Huffman coding | Yes | Yes | $O(n \log n)$ |
+| Dijkstra's shortest path | Yes (non-negative) | Yes (Bellman-Ford) | $O((V+E) \log V)$ |
+| 0/1 knapsack | **No** | Yes | — |
+| Longest common subsequence | **No** | Yes | — |
+| Edit distance | **No** | Yes | — |
 
 ### Activity Selection (Greedy Works)
 
@@ -661,7 +661,7 @@ def activity_selection(activities):
 ### Rolling Array
 
 Many 2D DP problems only depend on the previous row (or previous few rows). Instead of storing the
-entire $n \times m$ table, store only $O(m)$ or $O(n)$ values.
+Entire $n \times m$ table, store only $O(m)$ or $O(n)$ values.
 
 ```python
 def edit_distance_optimised(s1, s2):
@@ -688,15 +688,15 @@ def edit_distance_optimised(s1, s2):
 ### State Space Reduction
 
 Sometimes the DP state can be compressed or reduced by identifying that not all state variables are
-independent.
+Independent.
 
 **Example:** In the knapsack problem, the state is $(item, weight)$. But with space optimisation, we
-only need $weight$ because items are processed one at a time.
+Only need $weight$ because items are processed one at a time.
 
 ### Reconstructing the Solution
 
 DP gives the optimal value, but often you need the actual solution (which items to take, what the
-path is, etc.). Reconstruction requires either storing backpointers or re-running the DP logic.
+Path is, etc.). Reconstruction requires either storing backpointers or re-running the DP logic.
 
 ```python
 def knapsack_reconstruct(weights, values, capacity):
@@ -734,25 +734,25 @@ The hardest part of DP is defining the state. A good state should be:
 - **Minimal** — the state does not contain redundant information
 
 Common mistake: trying to use too many state variables. Start with a recursive solution, identify
-what parameters change in recursive calls, and those are your state variables.
+What parameters change in recursive calls, and those are your state variables.
 
 ### 2. Wrong Base Case
 
 DP base cases are analogous to loop initialisation. Getting them wrong produces wrong answers for
-small inputs that cascade into wrong answers for large inputs. Always test with the smallest
-non-trivial input (e.g., $n = 1$, empty string, single element).
+Small inputs that cascade into wrong answers for large inputs. Always test with the smallest
+Non-trivial input (e.g., $n = 1$Empty string, single element).
 
 ### 3. Wrong Fill Order in Bottom-Up DP
 
-Bottom-up DP must fill the table in an order such that when computing $dp[state]$, all states that
+Bottom-up DP must fill the table in an order such that when computing $dp[state]$All states that
 $dp[state]$ depends on have already been computed. For interval DP, shorter intervals before longer.
 For 0/1 knapsack with space optimisation, iterate $w$ in reverse. Getting the fill order wrong
-produces undefined behaviour (using uninitialised values).
+Produces undefined behaviour (using uninitialised values).
 
 ### 4. Integer Overflow in DP
 
-DP values can grow exponentially (e.g., Fibonacci, counting paths in a grid). For $n = 100$,
-$F_{100} \approx 3.5 \times 10^{20}$, which exceeds 64-bit range. Use arbitrary-precision integers
+DP values can grow exponentially (e.g., Fibonacci, counting paths in a grid). For $n = 100$
+$F_{100} \approx 3.5 \times 10^{20}$Which exceeds 64-bit range. Use arbitrary-precision integers
 (Python's `int` is always arbitrary precision) or modular arithmetic when appropriate.
 
 ### 5. Confusing Subsequence with Subarray
@@ -766,28 +766,28 @@ A subsequence does not need to be contiguous (LCS, LIS). A subarray/substring mu
 ### 6. Applying DP When Greedy Suffices
 
 Not every optimisation problem needs DP. Activity selection, fractional knapsack, and minimum
-spanning trees all have greedy solutions. Using DP where greedy works is correct but slower —
+Spanning trees all have greedy solutions. Using DP where greedy works is correct but slower —
 $O(n^2)$ or $O(n \cdot W)$ instead of $O(n \log n)$.
 
 ### 7. Forgetting That Memoisation Does Not Change Recursion Depth
 
 Top-down memoisation eliminates redundant computation but does not reduce recursion depth. If the
-recursive solution has $O(n)$ depth, the memoised version still has $O(n)$ recursion depth and can
-still stack overflow for large $n$. Use bottom-up DP for problems with deep recursion.
+Recursive solution has $O(n)$ depth, the memoised version still has $O(n)$ recursion depth and can
+Still stack overflow for large $n$. Use bottom-up DP for problems with deep recursion.
 
 ### 8. Using the Wrong Subproblem Decomposition
 
 Many DP problems have multiple valid decompositions, but some lead to efficient solutions and others
-do not. For the longest increasing subsequence, the $O(n^2)$ DP ($dp[i]$ = length of LIS ending at
+Do not. For the longest increasing subsequence, the $O(n^2)$ DP ($dp[i]$ = length of LIS ending at
 $i$) works but the $O(n \log n)$ solution using patience sorting requires a different approach
-entirely. Always consider whether a more efficient state representation exists.
+Entirely. Always consider whether a more efficient state representation exists.
 
 ## Advanced DP Techniques
 
 ### Digit DP
 
 Digit DP solves counting problems on ranges by processing numbers digit by digit. It is applicable
-when the problem involves counting numbers in a range that satisfy a property based on their digits.
+When the problem involves counting numbers in a range that satisfy a property based on their digits.
 
 ```python
 def count_numbers_without_digit(n, forbidden):
@@ -829,7 +829,7 @@ The state tracks:
 ### DP on Trees
 
 Tree DP involves computing a value for each subtree and combining results from children. The key
-insight is post-order traversal: compute children first, then the parent.
+Insight is post-order traversal: compute children first, then the parent.
 
 ```python
 def tree_diameter(root):
@@ -871,7 +871,7 @@ def house_robber_tree(root):
 ### DP with Bitmask (Revisited)
 
 For problems where the state involves a subset of elements, bitmask DP provides a compact
-representation. The state space is $O(2^n)$, limiting applicability to $n \le 20$.
+Representation. The state space is $O(2^n)$Limiting applicability to $n \le 20$.
 
 **Assignment problem:** Assign $n$ workers to $n$ jobs with minimum total cost.
 
@@ -903,7 +903,7 @@ def assignment_problem(cost):
 ### Coordinate Compression
 
 When DP state values are sparse but large (e.g., coordinates up to $10^9$ but only $10^5$ distinct
-values), compress them to a contiguous range before applying DP.
+Values), compress them to a contiguous range before applying DP.
 
 ```python
 def coordinate_compress(values):
@@ -913,14 +913,14 @@ def coordinate_compress(values):
 ```
 
 This technique is essential for problems like "count points in rectangles" where the coordinate
-range is large but the number of points is manageable.
+Range is large but the number of points is manageable.
 
 ## When to Recognise DP
 
 DP is applicable when a problem has these characteristics:
 
 1. **Optimal substructure:** The optimal solution can be constructed from optimal solutions to
-   subproblems
+ subproblems
 2. **Overlapping subproblems:** The recursive solution solves the same subproblem multiple times
 3. **Finite state space:** The number of distinct subproblems is manageable (polynomial)
 
@@ -938,3 +938,11 @@ DP is applicable when a problem has these characteristics:
 - The problem requires an exact sequence, not just a value (reconstruction may be needed)
 - Greedy works (the greedy choice property holds)
 - The problem is on a tree/graph with no obvious DP state (may need tree/graph-specific techniques)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

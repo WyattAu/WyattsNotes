@@ -30,7 +30,7 @@ Explore the simulation above to develop intuition for this topic.
 > by a net external force.**
 
 **Intuition.** This law defines what a force _is_ — it is that which changes motion. An object does
-not need a force to keep moving; it needs a force to _stop_ moving. This was revolutionary:
+Not need a force to keep moving; it needs a force to _stop_ moving. This was revolutionary:
 Aristotle believed that force was necessary to _maintain_ motion.
 
 ### Newton's Second Law
@@ -45,7 +45,7 @@ For constant mass:
 $$\boxed{\mathbf{F}_{\mathrm{net}} = m\mathbf{a}}$$
 
 This is the most important equation in mechanics. It states that force, mass, and acceleration are
-related by a simple proportionality.
+Related by a simple proportionality.
 
 **Units.** The newton is defined as the force required to accelerate a mass of 1 kg at 1 m s$^{-2}$:
 $1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
@@ -57,51 +57,51 @@ $1 \mathrm{ N} = 1 \mathrm{ kg m s}^{-2}$.
 $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
 :::warning
-warning
+Warning
 They do **not** cancel. The normal reaction from a table on a book and the book's weight are **not**
-a third law pair (both act on the book). The third law pair of the book's weight is the
-gravitational pull of the book on the Earth.
+A third law pair (both act on the book). The third law pair of the book's weight is the
+Gravitational pull of the book on the Earth.
 :::
 
 ## 2. Weight and Mass
 
 **Definition.** The **mass** $m$ of a body is a measure of its inertia — its resistance to
-acceleration. Mass is a scalar, measured in kg. It is an intrinsic property of an object.
+Acceleration. Mass is a scalar, measured in kg. It is an intrinsic property of an object.
 
 **Definition.** The **weight** $W$ of a body is the gravitational force acting on it.
 
 $$W = mg$$
 
 **Derivation.** By Newton's second law, the gravitational force on a mass $m$ in a gravitational
-field of strength $g$ is:
+Field of strength $g$ is:
 
 $$F = ma \implies W = mg$$
 
-where $g$ is the gravitational field strength (approximately $9.81$ N kg$^{-1}$ near Earth's
-surface).
+Where $g$ is the gravitational field strength (approximately $9.81$ N kg$^{-1}$ near Earth's
+Surface).
 
 **Intuition.** Mass is the same everywhere in the universe. Weight depends on location. An astronaut
-on the Moon has the same mass but one-sixth the weight.
+On the Moon has the same mass but one-sixth the weight.
 
 ## 3. Free Body Diagrams
 
 A **free body diagram** (FBD) is a diagram showing all the forces acting on a single body, drawn as
-arrows originating from the body's centre of mass.
+Arrows originating from the body's centre of mass.
 
 **Rules:**
 
 1. Include only forces acting **on** the body (not by the body).
 2. Represent each force as an arrow in the direction of the force.
 3. The length of the arrow should be proportional to the magnitude.
-4. Label each force clearly.
+4. Label each force .
 
 Common forces: weight ($mg$), normal reaction ($R$), friction ($F_f$), tension ($T$), drag ($F_d$),
-thrust.
+Thrust.
 
 ## 4. Resolving Forces in Two Dimensions
 
-When forces are not collinear, we resolve them into perpendicular components (typically horizontal
-and vertical).
+When forces are not collinear, we resolve them into perpendicular components ( horizontal
+And vertical).
 
 **Condition for equilibrium** (Newton's first law):
 
@@ -126,14 +126,14 @@ $$a = g\sin\alpha$$
 ## 5. Motion on a Curved Path -- Centripetal Force Introduction
 
 When a body moves along a curved path, its velocity changes direction. Since acceleration is the
-rate of change of velocity, a change in direction constitutes acceleration even if the speed is
-constant.
+Rate of change of velocity, a change in direction constitutes acceleration even if the speed is
+Constant.
 
 **Key idea.** If the velocity direction changes, there must be a component of the net force
-perpendicular to the velocity.
+Perpendicular to the velocity.
 
 For uniform circular motion (constant speed $v$ on a circle of radius $r$), the acceleration is
-directed towards the centre of the circle. Using $v = \omega r$ where $\omega$ is the angular speed:
+Directed towards the centre of the circle. Using $v = \omega r$ where $\omega$ is the angular speed:
 
 $$a_c = \frac{v^2}{r} = \omega^2 r$$
 
@@ -142,22 +142,22 @@ By Newton's second law, the net force towards the centre is:
 $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
 **Definition.** The **centripetal acceleration** $a_c$ is the acceleration directed towards the
-centre of a circular path, responsible for changing the direction of the velocity.
+Centre of a circular path, responsible for changing the direction of the velocity.
 
 **Definition.** The **centripetal force** $F_c$ is the component of the net force directed towards
-the centre of a circular path, responsible for maintaining circular motion.
+The centre of a circular path, responsible for maintaining circular motion.
 
 :::warning
 Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
-component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
-etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
+Component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
+Etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
 :::
 
 :::tip
 Exam Technique When solving circular motion problems, always start with a free body diagram
-showing only the real forces. Then resolve forces towards the centre of the circle and apply
+Showing only the real forces. Then resolve forces towards the centre of the circle and apply
 $F_c = mv^2/r$. The centripetal force is always provided by one or more of the forces already on
-your diagram.
+Your diagram.
 :::
 
 <details>
@@ -171,7 +171,7 @@ Resolving horizontally (towards the centre): $R\sin\theta = \frac{mv^2}{r}$.
 Dividing the second equation by the first: $\tan\theta = \frac{v^2}{rg}$.
 
 The ideal banking angle is $\theta = \arctan\left(\frac{v^2}{rg}\right)$. At this angle, the
-horizontal component of the normal reaction alone provides the centripetal force.
+Horizontal component of the normal reaction alone provides the centripetal force.
 
 </details>
 
@@ -179,14 +179,14 @@ horizontal component of the normal reaction alone provides the centripetal force
 <summary>Example: Conical Pendulum</summary>
 A particle of mass $m$ is attached to a string of length $L$ and revolves in a horizontal circle of radius $r$ with the string making angle $\theta$ with the vertical. Find the tension and the angular speed.
 
-**Answer.** Resolving vertically: $T\cos\theta = mg$, so $T = \frac◆LB◆mg◆RB◆◆LB◆\cos\theta◆RB◆$.
+**Answer.** Resolving vertically: $T\cos\theta = mg$So $T = \frac◆LB◆mg◆RB◆◆LB◆\cos\theta◆RB◆$.
 
 Resolving horizontally (towards the centre): $T\sin\theta = m\omega^2 r$.
 
-Substituting: $\frac◆LB◆mg\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = m\omega^2 r$, giving
+Substituting: $\frac◆LB◆mg\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = m\omega^2 r$Giving
 $\omega^2 = \frac◆LB◆g\tan\theta◆RB◆◆LB◆r◆RB◆$.
 
-Since $r = L\sin\theta$, this becomes $\omega^2 = \frac◆LB◆g◆RB◆◆LB◆L\cos\theta◆RB◆$, so
+Since $r = L\sin\theta$This becomes $\omega^2 = \frac◆LB◆g◆RB◆◆LB◆L\cos\theta◆RB◆$So
 $\omega = \sqrt◆LB◆\frac{g}{L\cos\theta}◆RB◆$.
 
 </details>
@@ -196,11 +196,11 @@ $\omega = \sqrt◆LB◆\frac{g}{L\cos\theta}◆RB◆$.
 ### Static Friction
 
 When two surfaces are in contact but not sliding relative to each other, the friction force adjusts
-to prevent motion, up to a maximum:
+To prevent motion, up to a maximum:
 
 $$F_s \leq \mu_s R$$
 
-where $\mu_s$ is the **coefficient of static friction** and $R$ is the normal reaction.
+Where $\mu_s$ is the **coefficient of static friction** and $R$ is the normal reaction.
 
 ### Dynamic (Kinetic) Friction
 
@@ -208,24 +208,24 @@ When sliding occurs, the friction force is:
 
 $$F_d = \mu_d R$$
 
-where $\mu_d$ is the **coefficient of dynamic friction**. In general, $\mu_d < \mu_s$ — it is harder
-to start an object moving than to keep it moving.
+Where $\mu_d$ is the **coefficient of dynamic friction**. , $\mu_d < \mu_s$ — it is harder
+To start an object moving than to keep it moving.
 
 ### Microscopic Origin
 
 Friction arises from intermolecular bonds forming between the irregularities (asperities) of the two
-surfaces. At the microscopic level, the real area of contact is much smaller than the apparent area,
-but the contact pressure is enormous, causing cold welding. To slide, these bonds must be broken —
-this requires force.
+Surfaces. At the microscopic level, the real area of contact is much smaller than the apparent area,
+But the contact pressure is enormous, causing cold welding. To slide, these bonds must be broken —
+This requires force.
 
 **Intuition.** Friction is independent of the apparent area of contact (since the real contact area
-adjusts proportionally to the load) and independent of sliding speed (approximately). It is
-proportional to the normal force because a greater normal force creates more contact points.
+Adjusts proportionally to the load) and independent of sliding speed (approximately). It is
+Proportional to the normal force because a greater normal force creates more contact points.
 
 ### Angle of Friction
 
 **Definition.** The **angle of friction** $\lambda$ is the angle between the normal reaction and the
-total contact force when slipping is about to occur. It satisfies:
+Total contact force when slipping is about to occur. It satisfies:
 
 $$\boxed{\tan\lambda = \mu_s}$$
 
@@ -240,7 +240,7 @@ $\square$
 </details>
 
 **Definition.** The **angle of repose** is the steepest angle of an inclined plane on which a body
-can rest without sliding.
+Can rest without sliding.
 
 <details>
 <summary>Derivation of the Angle of Repose</summary>
@@ -250,28 +250,28 @@ At limiting equilibrium (just about to slide), equality holds:
 
 $mg\sin\alpha = \mu_s mg\cos\alpha \implies \tan\alpha = \mu_s$
 
-But $\tan\lambda = \mu_s$, so $\alpha = \lambda$. The angle of repose equals the angle of friction.
+But $\tan\lambda = \mu_s$So $\alpha = \lambda$. The angle of repose equals the angle of friction.
 
 $\square$
 
 </details>
 
 **Intuition.** Steeper surfaces require more friction to prevent sliding. When the incline angle
-equals $\arctan(\mu_s)$, the gravitational component along the plane exactly equals maximum static
-friction. Beyond this angle, no amount of static friction can prevent sliding.
+Equals $\arctan(\mu_s)$The gravitational component along the plane exactly equals maximum static
+Friction. Beyond this angle, no amount of static friction can prevent sliding.
 
 ## 7. Connected Particles
 
 ### Pulleys: The Atwood Machine
 
 Consider two masses $m_1$ and $m_2$ ($m_1 > m_2$) connected by a light inextensible string over a
-smooth pulley.
+Smooth pulley.
 
 **Assumptions:** The string is light (massless) and inextensible, the pulley is smooth
 (frictionless).
 
 Since the string is inextensible, both masses have the same acceleration magnitude $a$ and same
-speed.
+Speed.
 
 For mass $m_1$ (descending, taking downward as positive):
 
@@ -309,8 +309,8 @@ The apparent weight $R$ is **greater** than the true weight $mg$.
 
 $$mg - R = ma \implies R = m(g - a)$$
 
-The apparent weight is **less** than the true weight. If $a = g$, then $R = 0$ — the person
-experiences **weightlessness**.
+The apparent weight is **less** than the true weight. If $a = g$Then $R = 0$ — the person
+Experiences **weightlessness**.
 
 **Case 3: Constant velocity (or at rest).**
 
@@ -319,7 +319,7 @@ $R = mg$ — the apparent weight equals the true weight.
 ### Particles on a Rough Surface
 
 The Atwood machine can be extended by placing one mass on a rough horizontal surface rather than
-suspending both masses freely.
+Suspending both masses freely.
 
 <details>
 <summary>Derivation: Rough Atwood Machine</summary>
@@ -342,7 +342,7 @@ $T = m_2 g \cdot \frac◆LB◆m_1 + m_2 - m_2 + \mu m_1◆RB◆◆LB◆m_1 + m_2
 $$\boxed{T = \frac◆LB◆m_1 m_2 g(1 + \mu)◆RB◆◆LB◆m_1 + m_2◆RB◆}$$
 
 Note: the system only accelerates if $m_2 > \mu m_1$; otherwise static friction is sufficient to
-hold the system in equilibrium.
+Hold the system in equilibrium.
 
 $\square$
 
@@ -352,15 +352,15 @@ $\square$
 <summary>Example</summary>
 A block of mass $4.0$ kg is on a rough horizontal table ($\mu = 0.3$) connected by a string over a smooth pulley to a mass of $2.0$ kg hanging freely. Find the acceleration and tension.
 
-**Answer.** Check condition: $m_2 = 2.0$ kg, $\mu m_1 = 0.3 \times 4.0 = 1.2$ kg. Since $2.0 > 1.2$,
-the system accelerates.
+**Answer.** Check condition: $m_2 = 2.0$ kg, $\mu m_1 = 0.3 \times 4.0 = 1.2$ kg. Since $2.0 > 1.2$
+The system accelerates.
 
 $a = \frac◆LB◆(2.0 - 0.3 \times 4.0) \times 9.81◆RB◆◆LB◆4.0 + 2.0◆RB◆ = \frac◆LB◆0.8 \times 9.81◆RB◆◆LB◆6.0◆RB◆ = 1.31$ m
-s$^{-2}$.
+S$^{-2}$.
 
 $T = \frac◆LB◆4.0 \times 2.0 \times 9.81 \times 1.3◆RB◆◆LB◆6.0◆RB◆ = \frac{101.8}{6.0} = 17.0$ N.
 
-Check: for $m_1$, $T - \mu m_1 g = 17.0 - 0.3 \times 4.0 \times 9.81 = 17.0 - 11.8 = 5.2$ N, and
+Check: for $m_1$$T - \mu m_1 g = 17.0 - 0.3 \times 4.0 \times 9.81 = 17.0 - 11.8 = 5.2$ N, and
 $m_1 a = 4.0 \times 1.31 = 5.2$ N. Consistent.
 
 </details>
@@ -396,8 +396,8 @@ $$\frac{v_T - v}{v_T} = e^{-kt/m}$$
 $$\boxed{v(t) = v_T\left(1 - e^{-kt/m}\right)}$$
 
 **Intuition.** The velocity starts at zero and asymptotically approaches $v_T$. The exponential
-approach means the object gets close to terminal velocity quickly but never quite reaches it in
-finite time. The time constant is $\tau = m/k$.
+Approach means the object gets close to terminal velocity quickly but never quite reaches it in
+Finite time. The time constant is $\tau = m/k$.
 
 ### Quadratic Drag Model
 
@@ -408,8 +408,8 @@ $$mg - kv^2 = ma$$
 At terminal velocity: $v_T = \sqrt◆LB◆\frac{mg}{k}◆RB◆$.
 
 :::info
-info
-focuses on the qualitative description of terminal velocity.
+Info
+Focuses on the qualitative description of terminal velocity.
 :::
 
 ## Problem Set
@@ -419,7 +419,7 @@ focuses on the qualitative description of terminal velocity.
 A block of mass $5.0$ kg rests on a rough horizontal surface with $\mu_s = 0.4$ and $\mu_d = 0.3$. A horizontal force of $25$ N is applied. Determine whether the block moves and, if so, find its acceleration.
 
 **Answer.** Maximum static friction: $F_s = \mu_s R = 0.4 \times 5.0 \times 9.81 = 19.6$ N. Since
-the applied force $25$ N $> 19.6$ N, the block moves.
+The applied force $25$ N $> 19.6$ N, the block moves.
 
 Dynamic friction: $F_d = 0.3 \times 49.05 = 14.7$ N.
 
@@ -459,7 +459,7 @@ Phase 3 (decelerating, i.e., accelerating downward): $R = 70(9.81 - 3.0) = 70 \t
 <summary>Problem 4</summary>
 A block of mass $4.0$ kg is placed on a smooth inclined plane at $30^\circ$ to the horizontal. Find the acceleration of the block down the plane.
 
-**Answer.** Resolving parallel to the plane: $mg\sin 30° = ma$, so
+**Answer.** Resolving parallel to the plane: $mg\sin 30° = ma$So
 $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 
 <b>If you get this wrong, revise:</b>
@@ -469,11 +469,11 @@ $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 
 <details>
 <summary>Problem 5</summary>
-A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportional to $v^2$. If the terminal velocity is $9.0$ m s$^{-1}$, find the drag constant $k$.
+A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportional to $v^2$. If the terminal velocity is $9.0$ m s$^{-1}$Find the drag constant $k$.
 
 **Answer.** At terminal velocity: $mg = kv_T^2$.
 $k = \frac{mg}{v_T^2} = \frac◆LB◆2.0 \times 10^{-5} \times 9.81◆RB◆◆LB◆81◆RB◆ = 2.4 \times 10^{-6}$ N s$^2$
-m$^{-2}$.
+M$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Quadratic Drag Model](#quadratic-drag-model)
 
@@ -496,10 +496,10 @@ $\theta = \arctan(3/1) = 71.6^\circ$ from the $x$-axis.
 
 <details>
 <summary>Problem 7</summary>
-A block slides down a rough inclined plane at $25^\circ$ to the horizontal. If $\mu_d = 0.2$, find the acceleration.
+A block slides down a rough inclined plane at $25^\circ$ to the horizontal. If $\mu_d = 0.2$Find the acceleration.
 
 **Answer.** Resolving parallel (down-plane positive): $mg\sin 25° - F_d = ma$. Resolving
-perpendicular: $R = mg\cos 25^\circ$. So $F_d = 0.2mg\cos 25^\circ$.
+Perpendicular: $R = mg\cos 25^\circ$. So $F_d = 0.2mg\cos 25^\circ$.
 
 $a = g(\sin 25° - 0.2\cos 25°) = 9.81(0.4226 - 0.1813) = 9.81 \times 0.2413 = 2.37$ m s$^{-2}$.
 
@@ -536,13 +536,13 @@ $C = m_2 a = 5.0 \times 3.0 = 15$ N.
 
 <details>
 <summary>Problem 10</summary>
-For the linear drag model $F_d = kv$, derive the time taken for a falling object to reach half its terminal velocity.
+For the linear drag model $F_d = kv$Derive the time taken for a falling object to reach half its terminal velocity.
 
 **Answer.** $v(t) = v_T(1 - e^{-kt/m})$. Setting $v = v_T/2$:
 
 $\frac{1}{2} = 1 - e^{-kt/m} \implies e^{-kt/m} = \frac{1}{2} \implies -kt/m = \ln\frac{1}{2} = -\ln 2$.
 
-$t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$, $t = \tau \ln 2 \approx 0.693\tau$.
+$t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$$t = \tau \ln 2 \approx 0.693\tau$.
 
 <b>If you get this wrong, revise:</b> [Solving the ODE](#solving-the-ode)
 
@@ -553,9 +553,9 @@ $t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$, $t = \t
 Explain why the tension in a rope draped over a pulley is the same on both sides, assuming the pulley is smooth and light.
 
 **Answer.** A smooth pulley exerts no friction on the rope, so the rope slides freely. A light
-pulley has zero moment of inertia, requiring zero net torque to rotate. Since the rope has the same
-tension throughout (no friction to create a difference), and the pulley requires no torque, Newton's
-second law for rotation ($\tau = I\alpha$) gives zero net torque, which is satisfied when
+Pulley has zero moment of inertia, requiring zero net torque to rotate. Since the rope has the same
+Tension throughout (no friction to create a difference), and the pulley requires no torque, Newton's
+Second law for rotation ($\tau = I\alpha$) gives zero net torque, which is satisfied when
 $T_1 = T_2$.
 
 <b>If you get this wrong, revise:</b> [Pulleys: The Atwood Machine](#pulleys-the-atwood-machine)
@@ -598,8 +598,8 @@ $\mu_s = \tan 35° = 0.700$.
 (a) In each of the following situations, state which force(s) provide the centripetal force: a car rounding a level bend; a ball on a string swung in a horizontal circle; a satellite in circular orbit around Earth. (b) A stone of mass $0.50$ kg is whirled in a vertical circle of radius $0.80$ m. At the lowest point, the speed is $6.0$ m s$^{-1}$. Find the tension in the string.
 
 **Answer.** (a) Car on level bend: static friction between tyres and road. Ball on string: tension
-in the string (the horizontal component provides the centripetal force). Satellite: gravitational
-attraction from Earth.
+In the string (the horizontal component provides the centripetal force). Satellite: gravitational
+Attraction from Earth.
 
 (b) At the lowest point, taking upward (towards the centre) as positive: $T - mg = mv^2/r$.
 
@@ -614,11 +614,11 @@ $T = 0.50\left(9.81 + \frac{36}{0.80}\right) = 0.50(9.81 + 45.0) = 0.50 \times 5
 <summary>Problem 15</summary>
 A mass of $3.0$ kg rests on a rough horizontal table ($\mu = 0.25$) connected by a light inextensible string over a smooth pulley to a mass of $1.5$ kg hanging freely. Determine whether the system moves and, if so, find the acceleration and tension.
 
-**Answer.** Check condition: $\mu m_1 = 0.25 \times 3.0 = 0.75$ kg. Since $m_2 = 1.5 > 0.75$, the
-system accelerates.
+**Answer.** Check condition: $\mu m_1 = 0.25 \times 3.0 = 0.75$ kg. Since $m_2 = 1.5 > 0.75$The
+System accelerates.
 
 $a = \frac◆LB◆(1.5 - 0.25 \times 3.0) \times 9.81◆RB◆◆LB◆3.0 + 1.5◆RB◆ = \frac◆LB◆0.75 \times 9.81◆RB◆◆LB◆4.5◆RB◆ = \frac{7.36}{4.5} = 1.63$
-m s$^{-2}$.
+M s$^{-2}$.
 
 $T = \frac◆LB◆3.0 \times 1.5 \times 9.81 \times 1.25◆RB◆◆LB◆4.5◆RB◆ = \frac{55.2}{4.5} = 12.3$ N.
 
@@ -633,7 +633,7 @@ Two masses, $m_A = 5.0$ kg and $m_B = 3.0$ kg, are connected by a light inextens
 **Answer.** First determine the direction of motion. For $m_A$ down the slope:
 $m_A g\sin 30° = 5.0 \times 9.81 \times 0.5 = 24.5$ N. Weight of $m_B$ = $3.0 \times 9.81 = 29.4$ N.
 Since $m_B$'s weight exceeds $m_A$'s component down the slope, $m_B$ descends and $m_A$ moves up the
-slope.
+Slope.
 
 For $m_A$ (up the slope positive): $T - m_A g\sin 30° = m_A a$.
 
@@ -642,7 +642,7 @@ For $m_B$ (downward positive): $m_B g - T = m_B a$.
 Adding: $m_B g - m_A g\sin 30° = (m_A + m_B)a$.
 
 $a = \frac◆LB◆(3.0 \times 9.81 - 5.0 \times 9.81 \times 0.5)◆RB◆◆LB◆5.0 + 3.0◆RB◆ = \frac{(29.4 - 24.5)}{8.0} = \frac{4.90}{8.0} = 0.613$
-m s$^{-2}$.
+M s$^{-2}$.
 
 $T = m_B(g - a) = 3.0(9.81 - 0.613) = 3.0 \times 9.20 = 27.6$ N.
 
@@ -656,7 +656,7 @@ $T = m_B(g - a) = 3.0(9.81 - 0.613) = 3.0 \times 9.20 = 27.6$ N.
 A particle of mass $0.50$ kg moves on the inside of a vertical circular track of radius $0.80$ m. At the bottom of the track, the speed is $7.0$ m s$^{-1}$. Assuming energy is conserved, find the normal reaction from the track at (a) the bottom and (b) the top of the circle.
 
 **Answer.** First find the speed at the top using conservation of energy. Taking the bottom as zero
-potential energy, the height difference is $2r = 1.60$ m:
+Potential energy, the height difference is $2r = 1.60$ m:
 
 $\frac{1}{2}mv_{\mathrm{bot}}^2 = \frac{1}{2}mv_{\mathrm{top}}^2 + mg(2r)$
 
@@ -665,14 +665,14 @@ $v_{\mathrm{top}}^2 = v_{\mathrm{bot}}^2 - 4gr = 49 - 4 \times 9.81 \times 0.80 
 $v_{\mathrm{top}} = 4.20$ m s$^{-1}$
 
 (a) At the bottom, the normal reaction $R$ and weight act along the same line, with $R$ pointing
-upward (towards the centre):
+Upward (towards the centre):
 
-$R - mg = \frac◆LB◆mv_{\mathrm{bot}}^2◆RB◆◆LB◆r◆RB◆$, so
+$R - mg = \frac◆LB◆mv_{\mathrm{bot}}^2◆RB◆◆LB◆r◆RB◆$So
 $R = 0.50 \times 9.81 + \frac◆LB◆0.50 \times 49◆RB◆◆LB◆0.80◆RB◆ = 4.91 + 30.6 = 35.5$ N.
 
 (b) At the top, both $R$ and weight point towards the centre (downward):
 
-$R + mg = \frac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆$, so
+$R + mg = \frac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆$So
 $R = \frac◆LB◆0.50 \times 17.6◆RB◆◆LB◆0.80◆RB◆ - 0.50 \times 9.81 = 11.0 - 4.91 = 6.09$ N.
 
 <b>If you get this wrong, revise:</b>
@@ -685,7 +685,7 @@ $R = \frac◆LB◆0.50 \times 17.6◆RB◆◆LB◆0.80◆RB◆ - 0.50 \times 9.8
 A car of mass $800$ kg travels around the inside of a vertical circular loop of radius $10$ m. (a) Find the minimum speed the car must have at the highest point to maintain contact with the track. (b) Using energy conservation, find the normal reaction at the lowest point when the car has this minimum speed at the top.
 
 **Answer.** (a) At the top, taking downward as positive (towards the centre): $R + mg = mv^2/r$.
-Contact is lost when $R = 0$, so the minimum speed is:
+Contact is lost when $R = 0$So the minimum speed is:
 
 $mg = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ \implies v_{\min} = \sqrt{gr} = \sqrt◆LB◆9.81 \times 10◆RB◆ = 9.90$ m s$^{-1}$
 
@@ -711,7 +711,7 @@ A man of mass $75$ kg stands in a lift of mass $500$ kg. The lift accelerates up
 
 **Answer.** Total mass of lift + man: $M = 575$ kg.
 
-(a) Phase 1 (accelerating up): $T - Mg = Ma$, so $T = 575(9.81 + 2.0) = 575 \times 11.81 = 6790$ N.
+(a) Phase 1 (accelerating up): $T - Mg = Ma$So $T = 575(9.81 + 2.0) = 575 \times 11.81 = 6790$ N.
 
 Phase 2 (constant speed): $T = Mg = 575 \times 9.81 = 5640$ N.
 
@@ -721,11 +721,11 @@ Phase 3 (decelerating): $T = 575(9.81 - 3.0) = 575 \times 6.81 = 3916$ N.
 $R = 75(9.81 - 3.0) = 511$ N.
 
 (c) Phase 1: $d_1 = \frac{1}{2} \times 2.0 \times 16 = 16$ m. End speed: $v = 2.0 \times 4 = 8.0$ m
-s$^{-1}$.
+S$^{-1}$.
 
 Phase 2: $d_2 = 8.0 \times 6 = 48$ m.
 
-Phase 3: $v^2 = u^2 + 2as \implies 0 = 64 - 2 \times 3.0 \times d_3$, so $d_3 = 64/6 = 10.7$ m.
+Phase 3: $v^2 = u^2 + 2as \implies 0 = 64 - 2 \times 3.0 \times d_3$So $d_3 = 64/6 = 10.7$ m.
 
 Total distance: $16 + 48 + 10.7 = 74.7$ m.
 
@@ -742,7 +742,7 @@ $m_A g\sin 30° = 5.0 \times 9.81 \times 0.5 = 24.5$ N. Maximum friction on $m_A
 $\mu m_A g\cos 30° = 0.2 \times 5.0 \times 9.81 \times 0.866 = 8.50$ N.
 
 If $m_A$ moves up the slope, total resistance = $24.5 + 8.50 = 33.0$ N. Driving force =
-$m_B g = 78.5$ N. Since $78.5 > 33.0$, $m_B$ descends and $m_A$ moves up the slope.
+$m_B g = 78.5$ N. Since $78.5 > 33.0$$m_B$ descends and $m_A$ moves up the slope.
 
 For $m_A$ (up the slope positive): $T - m_A g\sin 30° - \mu m_A g\cos 30° = m_A a$.
 
@@ -755,7 +755,7 @@ Adding: $m_B g - m_A g\sin 30° - \mu m_A g\cos 30° = (m_A + m_B)a$.
 (b) $T = m_B(g - a) = 8.0(9.81 - 3.50) = 8.0 \times 6.31 = 50.5$ N.
 
 (c) Using $v^2 = u^2 + 2as$ with $u = 0$: $v = \sqrt◆LB◆2 \times 3.50 \times 2.0◆RB◆ = \sqrt{14.0} = 3.74$
-m s$^{-1}$.
+M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#6-friction) and
 [Connected Particles](#7-connected-particles)
@@ -766,7 +766,7 @@ m s$^{-1}$.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Dynamics**? The [diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics with other physics topics to test synthesis under exam conditions.
@@ -775,7 +775,7 @@ See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for in
 :::
 
 :::danger
-danger
+Danger
 
 - **Confusing mass and weight:** Mass (kg) is a scalar that measures the amount of matter and is constant everywhere. Weight (N) is a VECTOR force equal to mg and varies with gravitational field strength. On the Moon, mass is the same but weight is about 1/6 of Earth weight. Never use "kg" as a unit of force or "N" as a unit of mass.
 
@@ -786,3 +786,15 @@ danger
 - **Forgetting that F = ma applies to the NET force:** F in Newton's second law is the resultant (net) force after combining all forces vectorially. If a block is pushed with 10N to the right and friction is 4N to the left, the net force is 6N, not 10N. Always resolve forces before substituting into F = ma.
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

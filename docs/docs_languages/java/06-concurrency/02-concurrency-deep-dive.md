@@ -10,7 +10,7 @@ slug: concurrency-deep-dive
 
 `java.util.concurrent.locks.ReentrantLock` provides mutual exclusion with features beyond
 `synchronized`: fair/unfair ordering, timed lock acquisition, interruptible lock acquisition, and
-multiple condition variables per lock.
+Multiple condition variables per lock.
 
 ```java
 import java.util.concurrent.locks.ReentrantLock;
@@ -42,10 +42,10 @@ public class Counter {
 **Fair vs Non-fair locking:**
 
 - **Non-fair (default):** Threads can barge — a newly arriving thread may acquire the lock before a
-  waiting thread. Higher throughput because threads do not need to be woken up and immediately put
-  back to sleep.
+ waiting thread. Higher throughput because threads do not need to be woken up and immediately put
+ back to sleep.
 - **Fair:** Threads acquire the lock in the order they requested it. Lower throughput due to
-  context-switch overhead, but avoids starvation.
+ context-switch overhead, but avoids starvation.
 
 ```java
 ReentrantLock fairLock = new ReentrantLock(true);  // fair
@@ -53,8 +53,8 @@ ReentrantLock unfairLock = new ReentrantLock(false); // non-fair (default)
 ```
 
 **Reentrancy:** A thread that holds the lock can acquire it again without deadlocking. The lock
-keeps a hold count; `unlock` decrements the count, and the lock is released only when the count
-reaches zero.
+Keeps a hold count; `unlock` decrements the count, and the lock is released only when the count
+Reaches zero.
 
 ```java
 ReentrantLock lock = new ReentrantLock();
@@ -87,8 +87,8 @@ try {
 ### `ReentrantReadWriteLock`
 
 A read-write lock allows multiple concurrent readers but only one exclusive writer. When a writer
-holds the lock, no readers or other writers can acquire it. This is useful for read-mostly data
-structures (caches, configuration).
+Holds the lock, no readers or other writers can acquire it. This is useful for read-mostly data
+Structures (caches, configuration).
 
 ```java
 public class ThreadSafeCache<K, V> {
@@ -136,14 +136,14 @@ public class ThreadSafeCache<K, V> {
 ```
 
 **Downgrade from write to read:** A thread holding the write lock can acquire the read lock without
-releasing the write lock first. Then it can release the write lock, effectively downgrading.
+Releasing the write lock first. Then it can release the write lock, effectively downgrading.
 **Upgrade from read to write is NOT supported** — attempting to acquire the write lock while holding
-the read lock causes deadlock.
+The read lock causes deadlock.
 
 ### `StampedLock`
 
 Introduced in JDK 8, `StampedLock` provides optimistic reads that do not block writers. It is
-designed for read-mostly scenarios where `ReentrantReadWriteLock` is too coarse.
+Designed for read-mostly scenarios where `ReentrantReadWriteLock` is too coarse.
 
 ```java
 public class Point {
@@ -190,13 +190,13 @@ public class Point {
 }
 ```
 
-`StampedLock` is not reentrant. Each call to `writeLock`, `readLock`, or `tryOptimisticRead` returns
-a `long` stamp that must be used to unlock. This is a deliberate design choice — the lack of
-reentrancy prevents certain deadlock patterns and allows the optimistic read mechanism.
+`StampedLock` is not reentrant. Each call to `writeLock``readLock`Or `tryOptimisticRead` returns
+A `long` stamp that must be used to unlock. This is a deliberate design choice — the lack of
+Reentrancy prevents certain deadlock patterns and allows the optimistic read mechanism.
 
 :::warning
 `StampedLock` does not implement the `Lock` or `ReadWriteLock` interface. It cannot be
-used with `Condition` or in `synchronized`-style patterns. Convert to a `ReadWriteLock` view via
+Used with `Condition` or in `synchronized`-style patterns. Convert to a `ReadWriteLock` view via
 `asReadLock()` / `asWriteLock()` if needed.
 :::
 
@@ -204,7 +204,7 @@ used with `Condition` or in `synchronized`-style patterns. Convert to a `ReadWri
 
 `Condition` (from `java.util.concurrent.locks`) provides `await`/`signal` semantics similar to
 `Object.wait`/`Object.notify` but with more features: multiple conditions per lock, interruptible
-waits, timed waits, and fairness.
+Waits, timed waits, and fairness.
 
 ### Bounded Buffer Pattern
 
@@ -251,21 +251,21 @@ public class BoundedBuffer<T> {
 
 :::info
 Always use `while` (not `if`) with `await`. Spurious wakeups are possible — the thread may
-wake without a `signal`. The loop re-checks the condition. This is mandated by the Javadoc for
+Wake without a `signal`. The loop re-checks the condition. This is mandated by the Javadoc for
 `Object.wait` and `Condition.await`.
 :::
 
 ### Fair vs Non-fair Conditions
 
 The fairness of `Condition` follows the fairness of its associated `ReentrantLock`. A fair lock's
-condition queues are FIFO; a non-fair lock's condition queues may allow barging.
+Condition queues are FIFO; a non-fair lock's condition queues may allow barging.
 
 ## Atomic Operations
 
-### `AtomicInteger`, `AtomicLong`, `AtomicReference`
+### `AtomicInteger``AtomicLong``AtomicReference`
 
 The atomic classes use CPU-level compare-and-swap (CAS) instructions to provide lock-free,
-thread-safe operations on single variables.
+Thread-safe operations on single variables.
 
 ```java
 AtomicInteger counter = new AtomicInteger(0);
@@ -305,8 +305,8 @@ int old = counter.getAndAccumulate(5, Integer::sum);
 ### `AtomicStampedReference`
 
 `AtomicReference` cannot detect the ABA problem: a thread reads value A, another thread changes it
-to B then back to A, and the first thread's CAS succeeds despite the value having been changed in
-between. `AtomicStampedReference` adds a version stamp to detect this.
+To B then back to A, and the first thread's CAS succeeds despite the value having been changed in
+Between. `AtomicStampedReference` adds a version stamp to detect this.
 
 ```java
 AtomicStampedReference<String> ref = new AtomicStampedReference<>("initial", 0);
@@ -323,7 +323,7 @@ boolean success = ref.compareAndSet("initial", "updated", stamp, stamp + 1);
 
 For high-contention counters where `AtomicLong` becomes a bottleneck due to CAS contention,
 `LongAdder` distributes increments across an array of cells and sums them on read. Write contention
-is eliminated; read requires summing all cells.
+Is eliminated; read requires summing all cells.
 
 ```java
 // AtomicLong — single variable, CAS contention under high contention
@@ -349,10 +349,10 @@ long result = max.get(); // 42
 A `volatile` field has two guarantees:
 
 1. **Visibility:** A write to a `volatile` field is immediately visible to all other threads. The
-   JIT and CPU cannot cache the value in a register or reorder reads/writes past the volatile
-   access.
+ JIT and CPU cannot cache the value in a register or reorder reads/writes past the volatile
+ access.
 2. **Ordering:** Reads and writes of `volatile` fields establish happens-before relationships. No
-   reads or writes of volatile variables can be reordered with respect to each other.
+ reads or writes of volatile variables can be reordered with respect to each other.
 
 ```java
 public class VolatileFlag {
@@ -377,10 +377,10 @@ public class VolatileFlag {
 Use `volatile` for:
 
 - **Flags and status indicators** — one thread writes, others read (shutdown flags, initialization
-  flags).
+ flags).
 - **One-shot publication** — writing a reference to a fully constructed object exactly once.
 - **Read-heavy counters** where approximate accuracy is acceptable (use `AtomicInteger` instead if
-  exactness is required).
+ exactness is required).
 
 Do NOT use `volatile` for:
 
@@ -412,7 +412,7 @@ public class SafeCounter {
 ### `ConcurrentHashMap`
 
 The workhorse concurrent map. JDK 8+ uses a lock-free CAS-based approach for most operations, with
-synchronized blocks only on individual buckets during resize.
+Synchronized blocks only on individual buckets during resize.
 
 ```java
 ConcurrentHashMap<String, Long> wordCounts = new ConcurrentHashMap<>();
@@ -443,7 +443,7 @@ long total = wordCounts.reduceValuesToLong(4, Long::longValue, 0, Long::sum);
 
 :::info
 `ConcurrentHashMap` does not allow `null` keys or values. `HashMap` allows one `null` key
-and `null` values. This is a deliberate design decision — `null` is ambiguous in concurrent contexts
+And `null` values. This is a deliberate design decision — `null` is ambiguous in concurrent contexts
 (does `get(key)` returning `null` mean "key not found" or "value is null"?).
 :::
 
@@ -465,8 +465,8 @@ Task peek = queue.peek(); // null if empty
 ### `CopyOnWriteArrayList`
 
 Every write operation (add, set, remove) creates a fresh copy of the underlying array. Reads proceed
-without locking against the current array snapshot. This makes reads extremely fast and writes
-expensive. Ideal for read-heavy workloads with infrequent writes (listener lists, configuration).
+Without locking against the current array snapshot. This makes reads extremely fast and writes
+Expensive. Ideal for read-heavy workloads with infrequent writes (listener lists, configuration).
 
 ```java
 CopyOnWriteArrayList<EventListener> listeners = new CopyOnWriteArrayList<>();
@@ -482,21 +482,21 @@ listeners.add(newListener);
 
 :::warning
 `CopyOnWriteArrayList` does NOT support `Iterator.remove()` or `ListIterator.set()`. The
-iterator operates on a snapshot and does not reflect modifications made during iteration.
+Iterator operates on a snapshot and does not reflect modifications made during iteration.
 :::
 
 ### Blocking Queues
 
 Blocking queues are designed for producer-consumer patterns. `put` blocks when full, `take` blocks
-when empty.
+When empty.
 
-| Implementation          | Bounded        | Ordering                         | Notes                        |
+| Implementation | Bounded | Ordering | Notes |
 | ----------------------- | -------------- | -------------------------------- | ---------------------------- |
-| `ArrayBlockingQueue`    | Yes (fixed)    | FIFO                             | Backed by array              |
-| `LinkedBlockingQueue`   | Optional       | FIFO                             | Backed by linked nodes       |
-| `PriorityBlockingQueue` | No (unbounded) | Priority (natural or Comparator) | Never blocks on put          |
-| `SynchronousQueue`      | Zero capacity  | None                             | Handoff — put waits for take |
-| `DelayQueue`            | Unbounded      | By delay time                    | Elements implement `Delayed` |
+| `ArrayBlockingQueue` | Yes (fixed) | FIFO | Backed by array |
+| `LinkedBlockingQueue` | Optional | FIFO | Backed by linked nodes |
+| `PriorityBlockingQueue` | No (unbounded) | Priority (natural or Comparator) | Never blocks on put |
+| `SynchronousQueue` | Zero capacity | None | Handoff — put waits for take |
+| `DelayQueue` | Unbounded | By delay time | Elements implement `Delayed` |
 
 ```java
 // Producer-consumer with LinkedBlockingQueue
@@ -522,14 +522,14 @@ consumers.submit(() -&gt; {
 ```
 
 **`SynchronousQueue`** has zero capacity — each `put` must wait for a matching `take` and vice
-versa. It is used by `Executors.newCachedThreadPool()` to hand off tasks directly to worker threads
-without buffering.
+Versa. It is used by `Executors.newCachedThreadPool()` to hand off tasks directly to worker threads
+Without buffering.
 
 ## ForkJoin Framework
 
 The ForkJoin framework (JDK 7) is designed for divide-and-conquer algorithms that can be
-parallelized by splitting work into smaller subtasks. It uses a work-stealing scheduler: idle
-threads steal subtasks from busy threads' queues.
+Parallelized by splitting work into smaller subtasks. It uses a work-stealing scheduler: idle
+Threads steal subtasks from busy threads' queues.
 
 ### `RecursiveTask` (returns a result)
 
@@ -615,13 +615,13 @@ long[] sorted = pool.invoke(new ParallelMergeSort(data, 0, data.length));
 ```
 
 **Choosing the sequential threshold:** Too low and the overhead of task creation dominates. Too high
-and you lose parallelism. A good starting point is an array size that takes 10-100 microseconds to
-process sequentially. Profile and adjust.
+And you lose parallelism. A good starting point is an array size that takes 10-100 microseconds to
+Process sequentially. Profile and adjust.
 
 ## `ThreadLocal`
 
 `ThreadLocal<T>` provides thread-confined variables — each thread has its own independently
-initialized copy. No synchronization is needed because threads never share the value.
+Initialized copy. No synchronization is needed because threads never share the value.
 
 ```java
 public class UserIdContext {
@@ -645,8 +645,8 @@ public class UserIdContext {
 ### Memory Leak Pitfalls
 
 `ThreadLocal` values are stored in each thread's `ThreadLocalMap`. If a thread is long-lived (e.g.,
-a web server worker thread in a thread pool), and you do not call `remove()`, the value will remain
-in memory for the lifetime of the thread. This is the most common `ThreadLocal` leak.
+A web server worker thread in a thread pool), and you do not call `remove()`The value will remain
+In memory for the lifetime of the thread. This is the most common `ThreadLocal` leak.
 
 ```java
 // DANGEROUS — in a servlet container with pooled threads
@@ -683,8 +683,8 @@ In thread pools (web servers, `ExecutorService`), always call `ThreadLocal.remov
 ### Prevention with Lock Ordering
 
 Deadlock occurs when thread A holds lock X and waits for lock Y, while thread B holds lock Y and
-waits for lock X. The simplest prevention strategy is to always acquire locks in a global,
-consistent order.
+Waits for lock X. The simplest prevention strategy is to always acquire locks in a global,
+Consistent order.
 
 ```java
 // DEADLOCK-PRONE
@@ -713,7 +713,7 @@ void safeTransfer(Account from, Account to, int amount) {
 ### Detection with `jconsole`
 
 Run your application with `-Djdk.attach.allowAttachSelf=true` and attach `jconsole`. The "Threads"
-tab shows deadlocked threads. Programmatically, use `ThreadMXBean`:
+Tab shows deadlocked threads. Programmatically, use `ThreadMXBean`:
 
 ```java
 ThreadMXBean mxBean = ManagementFactory.getThreadMXBean();
@@ -734,7 +734,7 @@ if (deadlockedThreads != null) {
 
 Project Loom (JDK 21) introduces virtual threads — lightweight threads managed by the JVM, not the
 OS. Virtual threads make blocking operations cheap, reducing the need for complex asynchronous
-programming.
+Programming.
 
 ```java
 // Traditional platform threads — expensive, limited by OS
@@ -756,9 +756,9 @@ for (int i = 0; i &lt; 10_000; i++) {
 
 `virtualPool.close(); // waits for all tasks`
 
-Virtual threads can use `synchronized`, but it pins the carrier thread (the underlying platform
-thread) for the duration of the synchronized block. If many virtual threads are pinned
-simultaneously, the carrier thread pool can be exhausted. Use `ReentrantLock` instead of
+Virtual threads can use `synchronized`But it pins the carrier thread (the underlying platform
+Thread) for the duration of the synchronized block. If many virtual threads are pinned
+Simultaneously, the carrier thread pool can be exhausted. Use `ReentrantLock` instead of
 `synchronized` in code that will run on virtual threads.
 
 ```java
@@ -871,7 +871,14 @@ pool.submit(() -&gt; {
 
 :::warning
 Never submit a task to a pool that waits for the result of another task submitted to the
-same pool. If the pool is fully utilized, all threads will be blocked waiting, and no thread will be
-available to execute the inner tasks. This is called thread pool deadlock or starvation.
+Same pool. If the pool is fully utilized, all threads will be blocked waiting, and no thread will be
+Available to execute the inner tasks. This is called thread pool deadlock or starvation.
 :::
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

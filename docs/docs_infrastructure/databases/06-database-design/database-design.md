@@ -12,39 +12,39 @@ categories:
 ## The Design Process
 
 Database design is not a one-step activity. It is a disciplined process that moves from abstract
-requirements to concrete physical implementation. Skipping steps leads to schemas that cannot
-evolve, queries that cannot perform, and data that cannot be trusted.
+Requirements to concrete physical implementation. Skipping steps leads to schemas that cannot
+Evolve, queries that cannot perform, and data that cannot be trusted.
 
 ### Phase 1: Requirements Analysis
 
 Before writing a single CREATE TABLE, you must understand:
 
 1. **Data requirements:** what data will be stored, what are the entities and their attributes, what
-   are the relationships, what are the constraints
+ are the relationships, what are the constraints
 2. **Functional requirements:** what queries will the application execute, how frequently, what is
-   the expected latency, what is the tolerance for stale data
+ the expected latency, what is the tolerance for stale data
 3. **Non-functional requirements:** expected data volume, growth rate, read/write ratio, RTO/RPO
-   (recovery time/recovery point objectives), compliance requirements
+ (recovery time/recovery point objectives), compliance requirements
 4. **Access patterns:** who reads what, when, and how often. The most important question in database
-   design is: "what are the top 10 queries this system will execute?"
+ design is: "what are the top 10 queries this system will execute?"
 
 ### Phase 2: Conceptual Design
 
 Translate requirements into an Entity-Relationship model. This phase is independent of any specific
-database technology. The output is an ER diagram that captures entities, attributes, relationships,
-and cardinality constraints.
+Database technology. The output is an ER diagram that captures entities, attributes, relationships,
+And cardinality constraints.
 
 ### Phase 3: Logical Design
 
 Convert the ER model into relational schema (tables, columns, keys, constraints). Apply
-normalisation to eliminate redundancy. Define views for common access patterns. This phase is still
-largely independent of the specific RDBMS, though you may start considering data types.
+Normalisation to eliminate redundancy. Define views for common access patterns. This phase is still
+Largely independent of the specific RDBMS, though you may start considering data types.
 
 ### Phase 4: Physical Design
 
 Map the logical schema to the specific database system. Choose data types, define indexes, decide on
-partitioning strategy, configure storage parameters, and set up replication. This is where you
-optimise for the specific workload based on measured query performance.
+Partitioning strategy, configure storage parameters, and set up replication. This is where you
+Optimise for the specific workload based on measured query performance.
 
 ```mermaid
 graph LR
@@ -118,19 +118,19 @@ erDiagram
 
 ### Relationships
 
-| Cardinality | ER Notation            | SQL Implementation                                 |
+| Cardinality | ER Notation | SQL Implementation |
 | ----------- | ---------------------- | -------------------------------------------------- |
-| 1:1         | One line, one mark     | Foreign key in either table with UNIQUE constraint |
-| 1:N         | One line, many marks   | Foreign key in the "many" table                    |
-| M:N         | Many lines, many marks | Association table with composite PK                |
+| 1:1 | One line, one mark | Foreign key in either table with UNIQUE constraint |
+| 1:N | One line, many marks | Foreign key in the "many" table |
+| M:N | Many lines, many marks | Association table with composite PK |
 
 ### Attributes
 
 - **Simple vs composite:** `birth_date` (simple) vs `full_name` (composite: first, middle, last)
 - **Single-valued vs multi-valued:** `email` (single) vs `phone_numbers` (multi-valued -- model as
-  separate table)
+ separate table)
 - **Stored vs derived:** `unit_price` (stored) vs `order_total` (derived from
-  `SUM(quantity * unit_price)`)
+ `SUM(quantity * unit_price)`)
 - **Null vs not-null:** `middle_name` (nullable) vs `email` (not null)
 
 ## Schema Design Patterns
@@ -162,7 +162,7 @@ CREATE TABLE people (
 ```
 
 **Pros:** simple queries, no joins, single source of truth **Cons:** many NULL columns, CHECK
-constraints become complex as types proliferate
+Constraints become complex as types proliferate
 
 ### Class Table Inheritance
 
@@ -194,7 +194,7 @@ CREATE TABLE customers (
 ```
 
 **Pros:** no NULL columns for unrelated attributes, clean normalisation **Cons:** every query
-requires a JOIN to the parent table, inserting requires multiple INSERT statements
+Requires a JOIN to the parent table, inserting requires multiple INSERT statements
 
 ### Shared Table (Concrete Table Inheritance)
 
@@ -218,21 +218,21 @@ CREATE TABLE customers (
 ```
 
 **Pros:** each table is self-contained, no joins for single-type queries **Cons:** shared columns
-are duplicated, cross-type queries require UNION ALL, schema changes to shared columns must be
-applied to every table
+Are duplicated, cross-type queries require UNION ALL, schema changes to shared columns must be
+Applied to every table
 
 ## Indexing Strategy
 
 ### Index Selection Methodology
 
 1. **Identify top queries:** what are the most frequently executed queries? What queries have the
-   strictest latency requirements?
+ strictest latency requirements?
 2. **EXPLAIN ANALYZE each query:** find full table scans, nested loop joins without indexes, and
-   sequential scans on large tables
+ sequential scans on large tables
 3. **Add indexes for the top queries:** start with single-column indexes on WHERE clause columns
 4. **Evaluate composite indexes:** for multi-column WHERE clauses, test the leftmost prefix rule
 5. **Evaluate covering indexes:** if a query accesses a small number of columns, a covering index
-   can eliminate heap access entirely
+ can eliminate heap access entirely
 6. **Monitor index usage:** after deployment, check which indexes are actually used
 
 ```sql
@@ -269,11 +269,11 @@ CREATE INDEX idx_orders_pending ON orders(customer_id, created_at) WHERE status 
 ## Partitioning
 
 Partitioning divides a large table into smaller, more manageable pieces while presenting a single
-table interface to queries. PostgreSQL supports declarative partitioning.
+Table interface to queries. PostgreSQL supports declarative partitioning.
 
 ### Range Partitioning
 
-Divides data based on a range of values (typically time):
+Divides data based on a range of values ( time):
 
 ```sql
 CREATE TABLE orders (
@@ -346,28 +346,28 @@ CREATE TABLE events_p3 PARTITION OF events FOR VALUES WITH (MODULUS 4, REMAINDER
 
 ### When to Partition
 
-| Factor        | Partition                                        | Do Not Partition                  |
+| Factor | Partition | Do Not Partition |
 | ------------- | ------------------------------------------------ | --------------------------------- |
-| Table size    | &gt; 10-50 GB                                    | &lt; 5 GB                         |
-| Query pattern | Frequently queries a subset (date range, region) | Always queries all rows           |
-| Maintenance   | Need to drop/archive old data quickly            | Data lifecycle is uniform         |
-| Write pattern | Inserts target specific partitions               | Inserts are spread uniformly      |
-| Index size    | Index maintenance is becoming expensive          | Indexes fit comfortably in memory |
+| Table size | &gt; 10-50 GB | &lt; 5 GB |
+| Query pattern | Frequently queries a subset (date range, region) | Always queries all rows |
+| Maintenance | Need to drop/archive old data quickly | Data lifecycle is uniform |
+| Write pattern | Inserts target specific partitions | Inserts are spread uniformly |
+| Index size | Index maintenance is becoming expensive | Indexes fit comfortably in memory |
 
 :::warning
 
 The partition key must be part of the primary key (or all unique indexes). You cannot have a PRIMARY
 KEY on `order_id` alone if the table is partitioned by `created_at` -- the primary key must include
-both `(order_id, created_at)`. This is a common gotcha when migrating an existing table to
-partitioning.
+Both `(order_id, created_at)`. This is a common gotcha when migrating an existing table to
+Partitioning.
 
 :::
 
 ## Sharding
 
 Sharding distributes data across multiple independent database instances (shards). Unlike
-partitioning, which is a single logical database, sharding involves multiple database servers, each
-responsible for a subset of the data.
+Partitioning, which is a single logical database, sharding involves multiple database servers, each
+Responsible for a subset of the data.
 
 ### Sharding Strategies
 
@@ -397,21 +397,21 @@ $$\mathrm{shard{} = \mathrm{hash{}(\mathrm{key{}) \pmod{\mathrm{num\_shards{}}$$
 - **Cross-shard transactions:** ACID guarantees across shards require distributed consensus (2PC)
 - **Resharding:** adding or removing shards requires moving data, which is expensive and complex
 - **Operational complexity:** each shard is a separate database instance with its own backups,
-  monitoring, and failover
+ monitoring, and failover
 
 :::tip
 
 Do not shard prematurely. A single PostgreSQL instance with partitioning, read replicas, and
-connection pooling can handle millions of queries per hour. Only shard when you have exhausted
-vertical scaling and single-node optimisations.
+Connection pooling can handle millions of queries per hour. Only shard when you have exhausted
+Vertical scaling and single-node optimisations.
 
 :::
 
 ## Connection Pooling
 
 Connection pooling reduces the overhead of establishing and tearing down database connections. Each
-connection consumes memory on both the client and the server, and TCP handshake + TLS negotiation +
-authentication adds latency to every new connection.
+Connection consumes memory on both the client and the server, and TCP handshake + TLS negotiation +
+Authentication adds latency to every new connection.
 
 ### PgBouncer Configuration
 
@@ -444,18 +444,18 @@ server_reset_query = DISCARD ALL
 
 ### Pool Mode Comparison
 
-| Mode        | Connection Lifetime | Prepared Statements | Use Case                         |
+| Mode | Connection Lifetime | Prepared Statements | Use Case |
 | ----------- | ------------------- | ------------------- | -------------------------------- |
-| session     | Client session      | Supported           | Legacy applications, batch jobs  |
-| transaction | Single transaction  | Not supported       | Web applications (most common)   |
-| statement   | Single statement    | Not supported       | Rarely used; breaks transactions |
+| session | Client session | Supported | Legacy applications, batch jobs |
+| transaction | Single transaction | Not supported | Web applications (most common) |
+| statement | Single statement | Not supported | Rarely used; breaks transactions |
 
 ## Schema Migrations
 
 ### Versioned Migrations
 
 Versioned migrations are numbered SQL files applied in order. Each migration transforms the schema
-from version N to version N+1.
+From version N to version N+1.
 
 ```
 migrations/
@@ -498,34 +498,34 @@ ALTER TABLE orders DROP COLUMN IF EXISTS status;
 For large tables, `ALTER TABLE` can lock the table for hours. Strategies:
 
 1. **Expand-contract pattern:**
-   - Add a new column alongside the old one
-   - Deploy application code that writes to both columns
-   - Backfill the new column
-   - Deploy application code that reads from the new column
-   - Remove the old column
+ - Add a new column alongside the old one
+ - Deploy application code that writes to both columns
+ - Backfill the new column
+ - Deploy application code that reads from the new column
+ - Remove the old column
 
 2. **PostgreSQL-specific:**
-   - `CREATE INDEX CONCURRENTLY` (no lock)
-   - `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL` (metadata-only in PG 11+)
-   - Use `pg_partman` for partitioning without downtime
+ - `CREATE INDEX CONCURRENTLY` (no lock)
+ - `ALTER TABLE ... ADD COLUMN ... DEFAULT NULL` (metadata-only in PG 11+)
+ - Use `pg_partman` for partitioning without downtime
 
 :::warning
 
 Never drop a column or table in a migration without verifying that no code references it. In
-microservice architectures, check all services, not just the one you are deploying. A column used by
-a reporting service or a data pipeline can cause silent failures if dropped.
+Microservice architectures, check all services, not just the one you are deploying. A column used by
+A reporting service or a data pipeline can cause silent failures if dropped.
 
 :::
 
 ### Migration Tools
 
-| Tool           | Language | Features                                                        |
+| Tool | Language | Features |
 | -------------- | -------- | --------------------------------------------------------------- |
-| Flyway         | Java/CLI | Versioned migrations, repeatable migrations, Java/SQL callbacks |
-| Liquibase      | Java/CLI | XML/YAML/JSON changelogs, diff, rollback, multi-DB support      |
-| golang-migrate | Go       | CLI library, up/down migrations, database-agnostic              |
-| Alembic        | Python   | Auto-generation from SQLAlchemy models, revision chaining       |
-| dbmate         | Go/CLI   | Minimal, framework-agnostic, supports multiple databases        |
+| Flyway | Java/CLI | Versioned migrations, repeatable migrations, Java/SQL callbacks |
+| Liquibase | Java/CLI | XML/YAML/JSON changelogs, diff, rollback, multi-DB support |
+| golang-migrate | Go | CLI library, up/down migrations, database-agnostic |
+| Alembic | Python | Auto-generation from SQLAlchemy models, revision chaining |
+| dbmate | Go/CLI | Minimal, framework-agnostic, supports multiple databases |
 
 ## Data Modeling Anti-Patterns
 
@@ -583,7 +583,7 @@ Problems:
 - Adding a new entity type requires updating application code but not the schema
 
 **Alternative:** create separate join tables for each entity type, or use a base table with
-table-per-type inheritance.
+Table-per-type inheritance.
 
 ### UUIDs as Primary Keys (When Not Needed)
 
@@ -596,10 +596,10 @@ BIGSERIAL (8 bytes):
 - Harder to debug (cannot tell the order of records by looking at IDs)
 
 **Use UUIDs when:** you generate IDs outside the database (client-side, distributed systems), you
-need globally unique identifiers across databases, or you need to prevent ID enumeration.
+Need globally unique identifiers across databases, or you need to prevent ID enumeration.
 
 **Use BIGSERIAL when:** all inserts go through the database, you do not need globally unique IDs,
-and you care about index insertion performance.
+And you care about index insertion performance.
 
 ## Backup Strategies
 
@@ -618,12 +618,12 @@ pg_basebackup -h db-primary -D /var/lib/postgresql/backup -Ft -z -P
 ### Incremental Backup
 
 Only copies data changed since the last backup. Faster to create, requires less storage, but more
-complex to restore (must replay from the last full backup through all incrementals).
+Complex to restore (must replay from the last full backup through all incrementals).
 
 ### WAL Archiving (Point-in-Time Recovery)
 
 PostgreSQL's Write-Ahead Log records every modification. Archiving WAL enables recovery to any point
-in time:
+In time:
 
 ```bash
 # postgresql.conf
@@ -645,9 +645,9 @@ recovery_target_action = 'promote'
 ### Backup Checklist
 
 - **RPO (Recovery Point Objective):** how much data can you afford to lose? Determines backup
-  frequency.
+ frequency.
 - **RTO (Recovery Time Objective):** how long can the system be down? Determines backup type and
-  restore strategy.
+ restore strategy.
 - **Test restores regularly:** a backup that cannot be restored is not a backup.
 - **Store backups offsite:** a backup on the same server is useless if the server fails.
 - **Encrypt backups:** database backups contain sensitive data.
@@ -655,8 +655,8 @@ recovery_target_action = 'promote'
 :::warning
 
 Never test your backup strategy for the first time during an outage. Schedule quarterly restore
-tests and measure the actual time to recover. The most common backup failure mode is discovering
-that the backup is corrupted or incomplete when you need it most.
+Tests and measure the actual time to recover. The most common backup failure mode is discovering
+That the backup is corrupted or incomplete when you need it most.
 
 :::
 
@@ -681,10 +681,10 @@ graph TB
 ```
 
 **Synchronous replication:** the primary waits for at least one replica to confirm receipt before
-acknowledging the commit to the client. Guarantees no data loss on failover but adds latency.
+Acknowledging the commit to the client. Guarantees no data loss on failover but adds latency.
 
 **Asynchronous replication:** the primary does not wait for replicas. Lower latency but data may be
-lost on failover (the "replication lag" window).
+Lost on failover (the "replication lag" window).
 
 ```sql
 -- PostgreSQL: configure synchronous replication
@@ -700,7 +700,7 @@ SET LOCAL synchronous_commit = off;   -- do not wait at all
 ### Multi-Leader
 
 Multiple nodes accept writes. Conflicts must be resolved (last-write-wins, custom merge function, or
-application-level resolution).
+Application-level resolution).
 
 Use cases:
 
@@ -721,7 +721,7 @@ Riak.
 
 - Writes are sent to N replicas (configurable)
 - Reads query R replicas and return the most recent value based on timestamps
-- Quorum: $W + R \gt N$ ensures consistency (e.g., $N=3$, $W=2$, $R=2$)
+- Quorum: $W + R \gt N$ ensures consistency (e.g., $N=3$$W=2$$R=2$)
 
 ### Failover
 
@@ -748,8 +748,8 @@ SELECT pg_reload_conf();
 :::warning
 
 Automatic failover can cause split-brain if the network partition is asymmetric (the primary thinks
-it is still the leader, but the replicas have already promoted one of their own). Always use a
-consensus-based coordination system (Patroni + etcd) rather than custom scripts.
+It is still the leader, but the replicas have already promoted one of their own). Always use a
+Consensus-based coordination system (Patroni + etcd) rather than custom scripts.
 
 :::
 
@@ -757,19 +757,19 @@ consensus-based coordination system (Patroni + etcd) rather than custom scripts.
 
 ### OLTP vs OLAP
 
-| Dimension     | OLTP (Online Transaction Processing)       | OLAP (Online Analytical Processing)      |
+| Dimension | OLTP (Online Transaction Processing) | OLAP (Online Analytical Processing) |
 | ------------- | ------------------------------------------ | ---------------------------------------- |
-| Purpose       | Day-to-day operations                      | Analysis, reporting, decision support    |
-| Queries       | Simple, point lookups, small result sets   | Complex aggregations, large scans, joins |
-| Data volume   | Current state (recent data)                | Historical (years of data)               |
-| Write pattern | Frequent small writes (INSERT, UPDATE)     | Bulk loads (ETL), infrequent             |
-| Normalisation | Fully normalised (3NF+)                    | Denormalised (star/snowflake schema)     |
-| Examples      | Order processing, user management, banking | Sales reports, dashboards, data mining   |
+| Purpose | Day-to-day operations | Analysis, reporting, decision support |
+| Queries | Simple, point lookups, small result sets | Complex aggregations, large scans, joins |
+| Data volume | Current state (recent data) | Historical (years of data) |
+| Write pattern | Frequent small writes (INSERT, UPDATE) | Bulk loads (ETL), infrequent |
+| Normalisation | Fully normalised (3NF+) | Denormalised (star/snowflake schema) |
+| Examples | Order processing, user management, banking | Sales reports, dashboards, data mining |
 
 ### Star Schema
 
 A star schema has a central fact table surrounded by dimension tables. The fact table contains
-measures (numeric values) and foreign keys to dimensions. No relationships between dimension tables.
+Measures (numeric values) and foreign keys to dimensions. No relationships between dimension tables.
 
 ```mermaid
 erDiagram
@@ -824,27 +824,27 @@ erDiagram
 ```
 
 **Advantages:** simple, fast query performance (fewer joins), easy to understand **Disadvantages:**
-data redundancy in dimensions (if a category name changes, all rows with that category must be
-updated)
+Data redundancy in dimensions (if a category name changes, all rows with that category must be
+Updated)
 
 ### Snowflake Schema
 
 A snowflake schema normalises the dimension tables. Dimensions are split into multiple related
-tables. The fact table still has foreign keys to the lowest-level dimension tables.
+Tables. The fact table still has foreign keys to the lowest-level dimension tables.
 
 **Advantages:** less data redundancy, easier to maintain dimension data **Disadvantages:** more
-joins (slower queries), more complex to understand
+Joins (slower queries), more complex to understand
 
 ### Slowly Changing Dimensions (SCD)
 
 Dimensions change over time. SCD strategies define how to handle these changes:
 
-| Type  | Strategy                            | Example                                         |
+| Type | Strategy | Example |
 | ----- | ----------------------------------- | ----------------------------------------------- |
-| SCD 1 | Overwrite the old value             | Correcting a typo in a product name             |
-| SCD 2 | Add a new row with effective dates  | Customer moves to a new address (track history) |
-| SCD 3 | Add a column for the previous value | Store the previous and current category         |
-| SCD 4 | Add a mini-dimension for history    | Track all historical values in a separate table |
+| SCD 1 | Overwrite the old value | Correcting a typo in a product name |
+| SCD 2 | Add a new row with effective dates | Customer moves to a new address (track history) |
+| SCD 3 | Add a column for the previous value | Store the previous and current category |
+| SCD 4 | Add a mini-dimension for history | Track all historical values in a separate table |
 
 ```sql
 -- SCD Type 2: add a new row with effective dates
@@ -860,32 +860,32 @@ Dimensions change over time. SCD strategies define how to handle these changes:
 ### Not Designing for Data Lifecycle
 
 Data accumulates. Without a plan for archiving, partitioning, or purging old data, tables grow
-indefinitely, queries slow down, backups take longer, and storage costs increase. Define a data
-retention policy before going to production.
+Indefinitely, queries slow down, backups take longer, and storage costs increase. Define a data
+Retention policy before going to production.
 
 ### Over-Engineering the Schema
 
 Designing for every hypothetical future use case leads to dozens of tables, complex join graphs, and
-slow queries. Design for the known access patterns and leave room for evolution. The best schema is
-the simplest one that satisfies current requirements and can be extended incrementally.
+Slow queries. Design for the known access patterns and leave room for evolution. The best schema is
+The simplest one that satisfies current requirements and can be extended incrementally.
 
 ### Ignoring Write Patterns
 
 Focusing only on read patterns and ignoring write patterns leads to schemas that are expensive to
-update. If a write requires updating 5 tables and 10 indexes, the write latency will be high.
+Update. If a write requires updating 5 tables and 10 indexes, the write latency will be high.
 Profile both read and write workloads.
 
 ### Not Versioning Migrations
 
 Deploying schema changes without version control and reversible migrations means you cannot roll
-back a failed deployment. Every schema change must be a versioned migration with an up and down
-path, tested in a staging environment.
+Back a failed deployment. Every schema change must be a versioned migration with an up and down
+Path, tested in a staging environment.
 
 ### Using ENUM When VARCHAR Would Suffice
 
 ENUM types seem like a good idea for status fields, but they require an ALTER TABLE to add new
-values. In PostgreSQL, adding an ENUM value requires an exclusive lock. Use a CHECK constraint or a
-foreign key to a lookup table instead:
+Values. In PostgreSQL, adding an ENUM value requires an exclusive lock. Use a CHECK constraint or a
+Foreign key to a lookup table instead:
 
 ```sql
 -- Prefer CHECK constraint over ENUM:
@@ -904,5 +904,13 @@ CREATE TABLE orders (
 ### Not Testing Backup and Recovery
 
 The only reliable backup is one you have successfully restored. Test your backup strategy regularly,
-measure actual recovery time, and document the procedure. A backup that has never been tested is a
-false sense of security.
+Measure actual recovery time, and document the procedure. A backup that has never been tested is a
+False sense of security.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

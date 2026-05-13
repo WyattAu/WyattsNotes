@@ -14,23 +14,23 @@ slug: number-systems
 ### Definition
 
 A **positional number system** represents a number as a sequence of digits
-$d_{n-1}d_{n-2}\ldots d_1d_0$ in base $b$, where the value of the number is:
+$d_{n-1}d_{n-2}\ldots d_1d_0$ in base $b$Where the value of the number is:
 
 $$
 N = \sum_{i=0}^{n-1} d_i \cdot b^i
 $$
 
 Each digit $d_i$ satisfies $0 \leq d_i \lt{} b$. The **most significant digit** (MSD) is $d_{n-1}$
-and the **least significant digit** (LSD) is $d_0$.
+And the **least significant digit** (LSD) is $d_0$.
 
 The bases relevant to A Level Computer Science are:
 
-| Base | Name   | Digits Used           |
+| Base | Name | Digits Used |
 | ---- | ------ | --------------------- |
-| 10   | Denary | 0, 1, 2, ..., 9       |
-| 2    | Binary | 0, 1                  |
-| 8    | Octal  | 0, 1, 2, ..., 7       |
-| 16   | Hex    | 0–9, A, B, C, D, E, F |
+| 10 | Denary | 0, 1, 2, ..., 9 |
+| 2 | Binary | 0, 1 |
+| 8 | Octal | 0, 1, 2, ..., 7 |
+| 16 | Hex | 0–9, A, B, C, D, E, F |
 
 We use subscript notation to denote the base: $1011_2 = 11_{10}$.
 
@@ -38,7 +38,7 @@ We use subscript notation to denote the base: $1011_2 = 11_{10}$.
 
 #### Base $b$ to Denary
 
-**Algorithm.** Given digits $d_{n-1}\ldots d_0$ in base $b$, compute:
+**Algorithm.** Given digits $d_{n-1}\ldots d_0$ in base $b$Compute:
 
 $$
 N = \sum_{i=0}^{n-1} d_i \cdot b^i
@@ -47,7 +47,7 @@ $$
 **Correctness.** This is exactly the definition of positional notation, so correctness is immediate.
 
 **Proof of termination.** The sum has exactly $n$ terms, so the algorithm terminates after $n$
-iterations.
+Iterations.
 
 <details>
 <summary>Example: Convert $1A3_{16}$ to denary</summary>
@@ -65,33 +65,33 @@ $$1 \times 16^2 + 10 \times 16^1 + 3 \times 16^0 = 256 + 160 + 3 = 419_{10}$$
 3. The result is $d_{i-1}d_{i-2}\ldots d_0$ (digits collected in reverse order)
 
 **Correctness proof.** We prove by induction on the number of division steps that the algorithm
-produces the correct base-$b$ representation.
+Produces the correct base-$b$ representation.
 
 _Base case._ After the first step, $d_0 = N \bmod b$ and $N' = \lfloor N / b \rfloor$. We have
-$N = d_0 + b \cdot N'$, so $d_0$ is indeed the coefficient of $b^0$.
+$N = d_0 + b \cdot N'$So $d_0$ is indeed the coefficient of $b^0$.
 
 _Inductive step._ Assume after $k$ steps we have
 $N = d_0 + d_1 b + \cdots + d_{k-1}b^{k-1} + b^k \cdot N_k$ where $N_k = \lfloor N / b^k \rfloor$.
-The next step computes $d_k = N_k \bmod b$ and $N_{k+1} = \lfloor N_k / b \rfloor$, giving
+The next step computes $d_k = N_k \bmod b$ and $N_{k+1} = \lfloor N_k / b \rfloor$Giving
 $N_k = d_k + b \cdot N_{k+1}$. Substituting:
 
 $$N = \sum_{i=0}^{k-1} d_i b^i + b^k(d_k + b \cdot N_{k+1}) = \sum_{i=0}^{k} d_i b^i + b^{k+1} N_{k+1}$$
 
-This maintains the invariant. When $N_k = 0$, the representation is complete.
+This maintains the invariant. When $N_k = 0$The representation is complete.
 
 <details>
 <summary>Example: Convert $156_{10}$ to binary</summary>
 
 | Step | $N$ | $N \bmod 2$ | $\lfloor N/2 \rfloor$ |
 | ---- | --- | ----------- | --------------------- |
-| 1    | 156 | 0           | 78                    |
-| 2    | 78  | 0           | 39                    |
-| 3    | 39  | 1           | 19                    |
-| 4    | 19  | 1           | 9                     |
-| 5    | 9   | 1           | 4                     |
-| 6    | 4   | 0           | 2                     |
-| 7    | 2   | 0           | 1                     |
-| 8    | 1   | 1           | 0                     |
+| 1 | 156 | 0 | 78 |
+| 2 | 78 | 0 | 39 |
+| 3 | 39 | 1 | 19 |
+| 4 | 19 | 1 | 9 |
+| 5 | 9 | 1 | 4 |
+| 6 | 4 | 0 | 2 |
+| 7 | 2 | 0 | 1 |
+| 8 | 1 | 1 | 0 |
 
 Reading bottom to top: $156_{10} = 10011100_2$
 
@@ -99,8 +99,8 @@ Reading bottom to top: $156_{10} = 10011100_2$
 
 #### Binary to Hexadecimal (and vice versa)
 
-Since $16 = 2^4$, each hex digit corresponds to exactly 4 binary digits. Group binary digits from
-right to left in groups of 4, then convert each group.
+Since $16 = 2^4$Each hex digit corresponds to exactly 4 binary digits. Group binary digits from
+Right to left in groups of 4, then convert each group.
 
 <details>
 <summary>Example: Convert $10111011011_2$ to hex</summary>
@@ -120,7 +120,7 @@ Replace each hex digit with its 4-bit binary equivalent.
 <details>
 <summary>Example: Convert $3F7_{16}$ to binary</summary>
 
-$3 = 0011$, $F = 1111$, $7 = 0111$
+$3 = 0011$$F = 1111$$7 = 0111$
 
 Result: $001111110111_2 = 11111110111_2$
 
@@ -128,8 +128,8 @@ Result: $001111110111_2 = 11111110111_2$
 
 #### Octal Conversions
 
-Since $8 = 2^3$, each octal digit maps to exactly 3 binary digits. Convert by grouping in 3s (or
-multiplying/dividing by 8).
+Since $8 = 2^3$Each octal digit maps to exactly 3 binary digits. Convert by grouping in 3s (or
+Multiplying/dividing by 8).
 
 <hr />
 
@@ -141,20 +141,20 @@ We add bitwise from right to left, with carries:
 
 | $A$ | $B$ | $C_{in}$ | Sum | $C_{out}$ |
 | --- | --- | -------- | --- | --------- |
-| 0   | 0   | 0        | 0   | 0         |
-| 0   | 0   | 1        | 1   | 0         |
-| 0   | 1   | 0        | 1   | 0         |
-| 0   | 1   | 1        | 0   | 1         |
-| 1   | 0   | 0        | 1   | 0         |
-| 1   | 0   | 1        | 0   | 1         |
-| 1   | 1   | 0        | 0   | 1         |
-| 1   | 1   | 1        | 1   | 1         |
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
 
 **Proposition (Carry propagation).** The carry into bit position $i$ depends only on bits $0$
-through $i-1$.
+Through $i-1$.
 
 **Proof.** The carry $C_i$ is defined recursively: $C_0 = 0$ and
-$C_{i+1} = (A_i \cdot B_i) + (A_i \cdot C_i) + (B_i \cdot C_i)$. By structural induction on $i$,
+$C_{i+1} = (A_i \cdot B_i) + (A_i \cdot C_i) + (B_i \cdot C_i)$. By structural induction on $i$
 $C_i$ is a Boolean function of $\{A_0, B_0, \ldots, A_{i-1}, B_{i-1}\}$ only. $\square$
 
 <details>
@@ -168,7 +168,7 @@ $C_i$ is a Boolean function of $\{A_0, B_0, \ldots, A_{i-1}, B_{i-1}\}$ only. $\
        1 0 0 0 1
 ```
 
-$1011_2 = 11_{10}$, $0110_2 = 6_{10}$, $10001_2 = 17_{10}$. Correct. ✓
+$1011_2 = 11_{10}$$0110_2 = 6_{10}$$10001_2 = 17_{10}$. Correct. ✓
 
 </details>
 
@@ -183,7 +183,7 @@ Binary subtraction can be performed using two's complement (see below).
 ### Motivation
 
 We need a way to represent both positive and negative integers in binary, using a fixed number of
-bits.
+Bits.
 
 ### Definition
 
@@ -191,19 +191,19 @@ For an $n$-bit two's complement representation, the range of representable integ
 
 $$[-2^{n-1},\ 2^{n-1} - 1]$$
 
-The representation of a non-negative integer $x$ is simply its standard $n$-bit binary
-representation. The representation of a negative integer $-x$ (where $x \gt{} 0$) is:
+The representation of a non-negative integer $x$ is its standard $n$-bit binary
+Representation. The representation of a negative integer $-x$ (where $x \gt{} 0$) is:
 
 $$\mathrm{TwosComp}_n(-x) = 2^n - x$$
 
 ### Derivation: Why $\bar{x} + 1$ Works
 
 **Theorem.** For any $n$-bit positive integer $x$ ($1 \leq x \leq 2^{n-1} - 1$), the two's
-complement representation of $-x$ equals $\bar{x} + 1$ (where $\bar{x}$ is the bitwise NOT of the
-$n$-bit representation of $x$, and $+1$ is binary addition).
+Complement representation of $-x$ equals $\bar{x} + 1$ (where $\bar{x}$ is the bitwise NOT of the
+$n$-bit representation of $x$And $+1$ is binary addition).
 
 **Proof.** The $n$-bit representation of $x$ has bits $x_{n-1}\ldots x_0$. The bitwise complement
-$\bar{x}$ has bits $\bar{x}_{n-1}\ldots\bar{x}_0$, where $\bar{x}_i = 1 - x_i$. The value of
+$\bar{x}$ has bits $\bar{x}_{n-1}\ldots\bar{x}_0$Where $\bar{x}_i = 1 - x_i$. The value of
 $\bar{x}$ as an unsigned $n$-bit number is:
 
 $$\bar{x} = \sum_{i=0}^{n-1}(1 - x_i) \cdot 2^i = \sum_{i=0}^{n-1} 2^i - \sum_{i=0}^{n-1} x_i \cdot 2^i = (2^n - 1) - x$$
@@ -220,25 +220,25 @@ This is exactly the definition of the two's complement of $-x$. $\square$
 
 $$x + (\bar{x} + 1) = x + 2^n - x = 2^n$$
 
-In $n$ bits, $2^n$ is represented as $00\ldots0$ with a carry out of bit position $n-1$, which is
-discarded. Hence the result is $0$. $\square$
+In $n$ bits, $2^n$ is represented as $00\ldots0$ with a carry out of bit position $n-1$Which is
+Discarded. Hence the result is $0$. $\square$
 
 ### Two's Complement Addition and Overflow
 
 When adding two $n$-bit two's complement numbers, the result is correct (modulo $2^n$) if and only
-if no overflow occurs.
+If no overflow occurs.
 
 **Overflow detection rules:**
 
-| Condition                           | Overflow? |
+| Condition | Overflow? |
 | ----------------------------------- | --------- |
-| Positive + Positive = Negative      | Yes       |
-| Negative + Negative = Positive      | Yes       |
-| Positive + Negative                 | Never     |
-| Same signs produce same sign result | No        |
+| Positive + Positive = Negative | Yes |
+| Negative + Negative = Positive | Yes |
+| Positive + Negative | Never |
+| Same signs produce same sign result | No |
 
 **Formally:** overflow occurs if and only if the carry into the MSB differs from the carry out of
-the MSB.
+The MSB.
 
 <details>
 <summary>Example: Add $-5$ and $3$ in 4-bit two's complement</summary>
@@ -262,7 +262,7 @@ No overflow (negative + positive never overflows).
 <details>
 <summary>Example: Overflow — Add $6$ and $5$ in 4-bit two's complement</summary>
 
-$6 = 0110_2$, $5 = 0101_2$
+$6 = 0110_2$$5 = 0101_2$
 
 ```
   Carry: 0 1 1 0 0
@@ -272,13 +272,13 @@ $6 = 0110_2$, $5 = 0101_2$
        1 0 1 1
 ```
 
-Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$, which is outside the range $[-8, 7]$
-for 4 bits. Overflow detected: positive + positive yielded negative. ✓
+Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$Which is outside the range $[-8, 7]$
+For 4 bits. Overflow detected: positive + positive yielded negative. ✓
 
 </details>
 
 :::info
-info
+Info
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.
@@ -292,13 +292,13 @@ info
 ### Definition
 
 A **fixed-point** binary number uses a specified number of bits for the integer part and a specified
-number of bits for the fractional part.
+Number of bits for the fractional part.
 
 For an $n$-bit number with $m$ integer bits and $f$ fractional bits ($n = m + f$):
 
 $$N = \sum_{i=0}^{m-1} b_i \cdot 2^i + \sum_{j=1}^{f} b_{m+j-1} \cdot 2^{-j}$$
 
-where $b_0$ is the LSB of the integer part and $b_{m+f-1}$ is the MSB.
+Where $b_0$ is the LSB of the integer part and $b_{m+f-1}$ is the MSB.
 
 ### Range and Precision
 
@@ -321,7 +321,7 @@ $011_2 = 0 \times 2^{-1} + 1 \times 2^{-2} + 1 \times 2^{-3} = 0.375_{10}$
 
 Value: $13.375_{10}$
 
-Range: $[0,\ 31.875]$, Precision: $0.125$
+Range: $[0,\ 31.875]$Precision: $0.125$
 
 </details>
 
@@ -332,15 +332,15 @@ Range: $[0,\ 31.875]$, Precision: $0.125$
 ### Definition
 
 In **Binary Coded Decimal (BCD)**, each decimal digit (0–9) is represented by its 4-bit binary
-equivalent.
+Equivalent.
 
-| Decimal | BCD  |
+| Decimal | BCD |
 | ------- | ---- |
-| 0       | 0000 |
-| 1       | 0001 |
-| 2       | 0010 |
-| ...     | ...  |
-| 9       | 1001 |
+| 0 | 0000 |
+| 1 | 0001 |
+| 2 | 0010 |
+| ... | ... |
+| 9 | 1001 |
 
 The codes $1010$ through $1111$ are **invalid** in BCD.
 
@@ -349,12 +349,12 @@ The codes $1010$ through $1111$ are **invalid** in BCD.
 - Each decimal digit requires exactly 4 bits (a **nibble**)
 - A $k$-digit decimal number requires $4k$ bits in BCD
 - BCD is less space-efficient than pure binary: e.g., $999_{10}$ requires 12 bits in BCD but only 10
-  bits in pure binary ($1111100111_2$)
+ bits in pure binary ($1111100111_2$)
 - BCD avoids rounding errors in decimal arithmetic — useful in financial systems
 
 :::warning
 Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
-is $00010010_2$, NOT $1100_2$.
+Is $00010010_2$NOT $1100_2$.
 :::
 
 <hr />
@@ -364,7 +364,7 @@ is $00010010_2$, NOT $1100_2$.
 ### ASCII
 
 The **American Standard Code for Information Interchange (ASCII)** is a 7-bit character encoding
-standard representing 128 characters:
+Standard representing 128 characters:
 
 - $0$–$31$: Control characters (NUL, BEL, LF, CR, etc.)
 - $32$: Space
@@ -373,39 +373,39 @@ standard representing 128 characters:
 - $97$–$122$: Lowercase letters 'a'–'z'
 
 **Key property:** The codes for uppercase and lowercase letters differ by exactly $32$ ($2^5$), so
-bit 5 distinguishes them. Specifically, 'A' = $65$ and 'a' = $97$.
+Bit 5 distinguishes them. Specifically, 'A' = $65$ and 'a' = $97$.
 
 Extended ASCII uses 8 bits (256 characters) but is not standardised — various extensions exist.
 
 ### Unicode
 
 **Unicode** is a universal character encoding standard that aims to represent every character from
-every writing system. Key facts:
+Every writing system. Key facts:
 
 - Unicode assigns a unique **code point** to each character, written as `U+XXXX` (e.g., 'A' =
-  `U+0041`, '€' = `U+20AC`)
+ `U+0041`'€' = `U+20AC`)
 - As of Unicode 15.0, there are over 149,000 characters across 161 scripts
 - Unicode is an abstract standard — it defines code points, not how they are stored in bytes
 
 ### UTF-8 Encoding
 
 **UTF-8** is a variable-length encoding of Unicode code points into bytes. It is backward-compatible
-with ASCII.
+With ASCII.
 
 **Encoding rules:**
 
-| Code Point Range       | Binary Pattern                        | Bytes |
+| Code Point Range | Binary Pattern | Bytes |
 | ---------------------- | ------------------------------------- | ----- |
-| `U+0000` – `U+007F`    | `0xxxxxxx`                            | 1     |
-| `U+0080` – `U+07FF`    | `110xxxxx 10xxxxxx`                   | 2     |
-| `U+0800` – `U+FFFF`    | `1110xxxx 10xxxxxx 10xxxxxx`          | 3     |
-| `U+10000` – `U+10FFFF` | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4     |
+| `U+0000` – `U+007F` | `0xxxxxxx` | 1 |
+| `U+0080` – `U+07FF` | `110xxxxx 10xxxxxx` | 2 |
+| `U+0800` – `U+FFFF` | `1110xxxx 10xxxxxx 10xxxxxx` | 3 |
+| `U+10000` – `U+10FFFF` | `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx` | 4 |
 
 **Properties of UTF-8:**
 
 1. **Self-synchronising:** Any byte can identify whether it is a single-byte character, the start of
-   a multi-byte sequence, or a continuation byte. Continuation bytes always start with `10`, start
-   bytes start with `11...0`.
+ a multi-byte sequence, or a continuation byte. Continuation bytes always start with `10`Start
+ bytes start with `11...0`.
 2. **ASCII compatible:** All ASCII text is valid UTF-8.
 3. **Prefix-free:** No valid UTF-8 sequence is a prefix of another valid sequence.
 
@@ -414,7 +414,7 @@ with ASCII.
 
 $20AC_{16} = 0010\ 0000\ 1010\ 1100_2$
 
-This falls in the range `U+0800`–`U+FFFF`, so it uses 3 bytes: `1110xxxx 10xxxxxx 10xxxxxx`.
+This falls in the range `U+0800`–`U+FFFF`So it uses 3 bytes: `1110xxxx 10xxxxxx 10xxxxxx`.
 
 Fill in the bits from the code point:
 
@@ -433,7 +433,7 @@ Result: `11100010 10000010 10101100` = `E2 82 AC` in hex.
 ### Sign and Magnitude
 
 The MSB represents the sign (0 = positive, 1 = negative), and the remaining bits represent the
-magnitude.
+Magnitude.
 
 - Range for $n$ bits: $[-(2^{n-1} - 1),\ 2^{n-1} - 1]$
 - Two representations of zero: $+0 = 000\ldots0$ and $-0 = 100\ldots0$
@@ -485,7 +485,7 @@ Hex: Group as $0001\ 0011\ 1010 = 13A_{16}$
 </details>
 
 **Problem 3.** Represent $-42$ in 8-bit two's complement. Verify by adding it to $+42$ and showing
-the result is zero.
+The result is zero.
 
 <details>
 <summary>Hint</summary>
@@ -509,7 +509,7 @@ $00000000$. ✓
 </details>
 
 **Problem 4.** Perform the addition $10110110_2 + 01101011_2$ and interpret the result in 8-bit
-unsigned and 8-bit two's complement.
+Unsigned and 8-bit two's complement.
 
 <details>
 <summary>Hint</summary>
@@ -535,7 +535,7 @@ Do the binary addition first. Then interpret based on the encoding scheme.
 </details>
 
 **Problem 5.** A fixed-point system uses 12 bits: 8 for the integer part and 4 for the fractional
-part. What is the range and precision? Convert $01011010.1010$ to denary.
+Part. What is the range and precision? Convert $01011010.1010$ to denary.
 
 <details>
 <summary>Hint</summary>
@@ -547,7 +547,7 @@ Precision is $2^{-4}$. Range depends on whether signed or unsigned.
 <details>
 <summary>Answer</summary>
 
-Unsigned range: $[0,\ 255.9375]$, precision: $0.0625$ ($2^{-4}$).
+Unsigned range: $[0,\ 255.9375]$Precision: $0.0625$ ($2^{-4}$).
 
 $01011010_2 = 64 + 16 + 8 + 2 = 90_{10}$
 
@@ -558,7 +558,7 @@ Value: $90.625_{10}$
 </details>
 
 **Problem 6.** Encode the string "Hi!" in ASCII (hex). Then explain how many bytes this would take
-in UTF-8.
+In UTF-8.
 
 <details>
 <summary>Hint</summary>
@@ -575,8 +575,8 @@ Look up each character's ASCII code point.
 
 In ASCII hex: `48 69 21`
 
-Since all code points are below `U+007F`, UTF-8 uses 1 byte per character, so 3 bytes total. UTF-8
-encoding is identical to ASCII for these characters.
+Since all code points are below `U+007F`UTF-8 uses 1 byte per character, so 3 bytes total. UTF-8
+Encoding is identical to ASCII for these characters.
 
 </details>
 
@@ -604,7 +604,7 @@ UTF-8: `C3 B1`
 </details>
 
 **Problem 8.** A student claims that $1101_2$ in 4-bit two's complement represents $-3$. Another
-claims it represents $+13$. Who is correct? Explain.
+Claims it represents $+13$. Who is correct? Explain.
 
 <details>
 <summary>Hint</summary>
@@ -621,13 +621,13 @@ The first student is correct for two's complement interpretation. The MSB is 1, 
 Value: $- (2^4 - 13) = -(16 - 13) = -3$. ✓
 
 The second student is interpreting it as an unsigned number: $8 + 4 + 1 = 13$. This is also valid —
-the bit pattern is the same, but the interpretation differs. Context determines which encoding is
-used.
+The bit pattern is the same, but the interpretation differs. Context determines which encoding is
+Used.
 
 </details>
 
 **Problem 9.** Prove that the two's complement of the two's complement of $x$ equals $x$ (for $x$ in
-the valid range, excluding $-2^{n-1}$).
+The valid range, excluding $-2^{n-1}$).
 
 <details>
 <summary>Hint</summary>
@@ -643,9 +643,9 @@ Let $y = \mathrm{TwosComp}_n(x) = 2^n - x$.
 
 $\mathrm{TwosComp}_n(y) = 2^n - y = 2^n - (2^n - x) = x$. ✓
 
-The exception is $x = -2^{n-1}$, whose two's complement is
-$2^n - (-2^{n-1}) = 2^n + 2^{n-1} = 2^{n-1} \cdot 3$, which exceeds $n$ bits. In $n$-bit arithmetic,
-$2^n - (-2^{n-1}) \bmod 2^n = 2^{n-1}$, which is the bit pattern $100\ldots0$ — the same as
+The exception is $x = -2^{n-1}$Whose two's complement is
+$2^n - (-2^{n-1}) = 2^n + 2^{n-1} = 2^{n-1} \cdot 3$Which exceeds $n$ bits. In $n$-bit arithmetic,
+$2^n - (-2^{n-1}) \bmod 2^n = 2^{n-1}$Which is the bit pattern $100\ldots0$ — the same as
 $-2^{n-1}$. So $-2^{n-1}$ is its own two's complement.
 
 </details>
@@ -685,3 +685,15 @@ Both inputs are negative and the result is negative, so no overflow.
 :::
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

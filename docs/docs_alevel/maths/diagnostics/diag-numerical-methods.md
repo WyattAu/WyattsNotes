@@ -19,7 +19,7 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$, and $x_3$. Describe the behaviour of the iteration.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$. Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge, referring to the value of $f'(x_0)$ and the geometry of the Newton-Raphson method.
 
@@ -39,27 +39,27 @@ Since the local minimum is positive ($\approx 0.91$), the graph crosses the $x$-
 
 **(b)** $f'(x) = 3x^2 - 2$. Newton-Raphson: $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$.
 
-$x_0 = 0$: $f(0) = 2$, $f'(0) = -2$.
+$x_0 = 0$: $f(0) = 2$$f'(0) = -2$.
 
 $$x_1 = 0 - \frac{2}{-2} = 1$$
 
-$x_1 = 1$: $f(1) = 1$, $f'(1) = 1$.
+$x_1 = 1$: $f(1) = 1$$f'(1) = 1$.
 
 $$x_2 = 1 - \frac{1}{1} = 0$$
 
-$x_2 = 0$: $f(0) = 2$, $f'(0) = -2$.
+$x_2 = 0$: $f(0) = 2$$f'(0) = -2$.
 
 $$x_3 = 0 - \frac{2}{-2} = 1$$
 
 The iteration cycles: $0, 1, 0, 1, 0, 1, \ldots$
 
-**(c)** The iteration fails because at $x_0 = 0$, the tangent to the curve has gradient $f'(0) = -2$, which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The Newton-Raphson method overshoots dramatically because the tangent at $x = 0$ intersects the $x$-axis at $x = 1$, which is on the opposite side of the local minimum. The iteration then gets trapped in a 2-cycle between $x = 0$ and $x = 1$.
+**(c)** The iteration fails because at $x_0 = 0$The tangent to the curve has gradient $f'(0) = -2$Which points towards $x = 1$ rather than towards the root at $x \approx -1.77$. The Newton-Raphson method overshoots dramatically because the tangent at $x = 0$ intersects the $x$-axis at $x = 1$Which is on the opposite side of the local minimum. The iteration then gets trapped in a 2-cycle between $x = 0$ and $x = 1$.
 
-More precisely, the problem is that $f'(0) \neq 0$ but the initial guess is far from the root relative to the curvature of the function. The function has a local minimum at $x \approx 0.816$ with $f \approx 0.91 \gt 0$, creating a barrier that the iteration cannot cross.
+More precisely, the problem is that $f'(0) \neq 0$ but the initial guess is far from the root relative to the curvature of the function. The function has a local minimum at $x \approx 0.816$ with $f \approx 0.91 \gt 0$Creating a barrier that the iteration cannot cross.
 
 **(d)** Any $x_0 \lt -\sqrt{2/3} \approx -0.816$ will converge, since on this interval $f$ is strictly decreasing (and hence $f$ and $f'$ have useful properties for convergence).
 
-For example, $x_0 = -2$: $f(-2) = -2$, $f'(-2) = 10$.
+For example, $x_0 = -2$: $f(-2) = -2$$f'(-2) = 10$.
 
 $$x_1 = -2 - \frac{-2}{10} = -2 + 0.2 = -1.8$$
 
@@ -73,15 +73,15 @@ This converges rapidly to the root.
 
 **Question:**
 
-The equation $x = g(x)$ is to be solved by fixed-point iteration $x_{n+1} = g(x_n)$, where $g(x) = \frac{1}{2}(x + \frac{3}{x})$.
+The equation $x = g(x)$ is to be solved by fixed-point iteration $x_{n+1} = g(x_n)$Where $g(x) = \frac{1}{2}(x + \frac{3}{x})$.
 
-**(a)** Show that the equation $x = g(x)$ is equivalent to $x^2 = 3$, and hence state the positive root $\alpha$.
+**(a)** Show that the equation $x = g(x)$ is equivalent to $x^2 = 3$And hence state the positive root $\alpha$.
 
-**(b)** Compute $x_1$, $x_2$, $x_3$ starting from $x_0 = 2$.
+**(b)** Compute $x_1$$x_2$$x_3$ starting from $x_0 = 2$.
 
 **(c)** Verify the convergence criterion $\lvert g'(\alpha) \rvert \lt 1$ at the root.
 
-**(d)** A student proposes the rearrangement $x = x^2 - 3 + x$ (i.e. $g(x) = x^2 - 3 + x$) to solve $x^2 = 3$. Show that this iteration diverges when $x_0 = 2$, and explain why by evaluating $\lvert g'(\sqrt{3}) \rvert$.
+**(d)** A student proposes the rearrangement $x = x^2 - 3 + x$ (i.e. $g(x) = x^2 - 3 + x$) to solve $x^2 = 3$. Show that this iteration diverges when $x_0 = 2$And explain why by evaluating $\lvert g'(\sqrt{3}) \rvert$.
 
 [Difficulty: hard. Tests the fixed-point iteration convergence theorem and the dependence of convergence on the choice of rearrangement.]
 
@@ -105,13 +105,13 @@ The iteration converges rapidly to $\sqrt{3} \approx 1.73205$.
 
 At $x = \alpha = \sqrt{3}$: $g'(\sqrt{3}) = \frac{1}{2}(1 - 1) = 0$.
 
-Since $\lvert g'(\sqrt{3}) \rvert = 0 \lt 1$, the fixed-point iteration converges (with quadratic convergence, since $g'(\alpha) = 0$).
+Since $\lvert g'(\sqrt{3}) \rvert = 0 \lt 1$The fixed-point iteration converges (with quadratic convergence, since $g'(\alpha) = 0$).
 
 **(d)** $g(x) = x^2 - 3 + x$. $g'(x) = 2x + 1$.
 
 At $x = \sqrt{3}$: $g'(\sqrt{3}) = 2\sqrt{3} + 1 \approx 4.464$.
 
-Since $\lvert g'(\sqrt{3}) \rvert \approx 4.464 \gt 1$, the fixed-point theorem tells us this iteration diverges near the root.
+Since $\lvert g'(\sqrt{3}) \rvert \approx 4.464 \gt 1$The fixed-point theorem tells us this iteration diverges near the root.
 
 Verification with $x_0 = 2$:
 
@@ -121,7 +121,7 @@ $$x_2 = 9 - 3 + 3 = 9$$
 
 $$x_3 = 81 - 3 + 9 = 87$$
 
-Clearly diverging.
+ diverging.
 
 ---
 
@@ -129,7 +129,7 @@ Clearly diverging.
 
 **Question:**
 
-**(a)** Use the trapezium rule with 4 strips to estimate $\int_0^2 \sqrt{x}\, dx$, giving your answer to 4 decimal places.
+**(a)** Use the trapezium rule with 4 strips to estimate $\int_0^2 \sqrt{x}\, dx$Giving your answer to 4 decimal places.
 
 **(b)** Determine whether your estimate is an overestimate or underestimate, justifying your answer by examining the concavity of $f(x) = \sqrt{x}$.
 
@@ -155,7 +155,7 @@ $$= 0.25[0 + 5.8636 + 1.4142] = 0.25 \times 7.2778 = 1.8194$$
 
 For $x \in (0, 2]$: $f''(x) = -\frac{1}{4}x^{-3/2} \lt 0$.
 
-Since $f''(x) \lt 0$ on $(0, 2]$, the curve is concave down. The trapezium rule **overestimates** when the curve is concave down (the trapezia lie above the curve).
+Since $f''(x) \lt 0$ on $(0, 2]$The curve is concave down. The trapezium rule **overestimates** when the curve is concave down (the trapezia lie above the curve).
 
 **(c)** Exact value: $\frac◆LB◆4\sqrt{2}◆RB◆◆LB◆3◆RB◆ \approx 1.8856$.
 
@@ -163,7 +163,7 @@ $$\text{Percentage error} = \frac◆LB◆\lvert 1.8194 - 1.8856 \rvert◆RB◆�
 
 **(d)** The error bound: $\lvert E \rvert \leq \frac{(b-a)^3}{12n^2}\max_{[a,b]}\lvert f''(x) \rvert$.
 
-$f''(x) = -\frac{1}{4}x^{-3/2}$. On $(0, 2]$, $f''(x)$ is unbounded as $x \to 0^+$.
+$f''(x) = -\frac{1}{4}x^{-3/2}$. On $(0, 2]$$f''(x)$ is unbounded as $x \to 0^+$.
 
 The maximum of $\lvert f''(x) \rvert$ on $[0, 2]$ does not exist (it diverges). The error bound formula is not directly applicable because $f''$ is unbounded at $x = 0$.
 
@@ -219,7 +219,7 @@ $g'(x) = f''(x) = 12x^2 - 24x + 16$.
 
 $x_0 = 1$: $g(1) = 4 - 12 + 16 - 8 = 0$.
 
-Since $g(1) = 0$, the Newton-Raphson formula gives $x_1 = 1 - \frac{0}{g'(1)} = 1$. The iteration has already converged.
+Since $g(1) = 0$The Newton-Raphson formula gives $x_1 = 1 - \frac{0}{g'(1)} = 1$. The iteration has already converged.
 
 The stationary point is at $x = 1$.
 
@@ -239,7 +239,7 @@ $x_2 = 1.143 - \frac{0.588}{4.240} \approx 1.004$.
 
 $x_3 \approx 1.000$. Converges to $x = 1$.
 
-**(c)** $f''(1) = 12 - 24 + 16 = 4 \gt 0$, so $x = 1$ is a local minimum.
+**(c)** $f''(1) = 12 - 24 + 16 = 4 \gt 0$So $x = 1$ is a local minimum.
 
 $f(1) = 1 - 4 + 8 - 8 + 3 = 0$.
 
@@ -249,15 +249,15 @@ The point $(1, 0)$ is a local minimum.
 
 But $f(x) = x^4 - 4x^3 + 8x^2 - 8x + 3 \neq (x-1)^4$.
 
-Let me check: $(x-1)^4 = x^4 - 4x^3 + 6x^2 - 4x + 1$, while $f(x) = x^4 - 4x^3 + 8x^2 - 8x + 3$.
+Let me check: $(x-1)^4 = x^4 - 4x^3 + 6x^2 - 4x + 1$While $f(x) = x^4 - 4x^3 + 8x^2 - 8x + 3$.
 
 These are different. The question's claim is incorrect.
 
 The actual stationary point structure: $f'(x) = 4x^3 - 12x^2 + 16x - 8 = 4(x^3 - 3x^2 + 4x - 2) = 4(x-1)(x^2 - 2x + 2)$.
 
-$x^2 - 2x + 2 = (x-1)^2 + 1 \gt 0$ for all real $x$, so $x = 1$ is the only stationary point.
+$x^2 - 2x + 2 = (x-1)^2 + 1 \gt 0$ for all real $x$So $x = 1$ is the only stationary point.
 
-The Newton-Raphson method converges rapidly because $f'(x) = 4(x-1)((x-1)^2+1)$ has a simple root at $x = 1$ (multiplicity 1), so $g'(1) = f''(1) = 4 \neq 0$, ensuring quadratic convergence near the root.
+The Newton-Raphson method converges rapidly because $f'(x) = 4(x-1)((x-1)^2+1)$ has a simple root at $x = 1$ (multiplicity 1), so $g'(1) = f''(1) = 4 \neq 0$Ensuring quadratic convergence near the root.
 
 ---
 
@@ -315,15 +315,15 @@ This converges slowly (oscillating above and below the root). After approximatel
 
 To 5 decimal places: $\alpha \approx 0.73909$.
 
-**(c)** $g(x) = \cos x$, $g'(x) = -\sin x$.
+**(c)** $g(x) = \cos x$$g'(x) = -\sin x$.
 
 At the root $\alpha \approx 0.739$: $\lvert g'(\alpha) \rvert = \lvert -\sin(0.739) \rvert \approx \sin(0.739) \approx 0.674$.
 
-Since $\lvert g'(\alpha) \rvert \approx 0.674 \lt 1$, the fixed-point iteration converges (linearly, since $0 \lt \lvert g'(\alpha) \rvert \lt 1$).
+Since $\lvert g'(\alpha) \rvert \approx 0.674 \lt 1$The fixed-point iteration converges (linearly, since $0 \lt \lvert g'(\alpha) \rvert \lt 1$).
 
-**(d)** Newton-Raphson: $f(x) = \cos x - x$, $f'(x) = -\sin x - 1$.
+**(d)** Newton-Raphson: $f(x) = \cos x - x$$f'(x) = -\sin x - 1$.
 
-$x_0 = 0.5$: $f(0.5) = \cos 0.5 - 0.5 \approx 0.37758$, $f'(0.5) = -\sin 0.5 - 1 \approx -1.47943$.
+$x_0 = 0.5$: $f(0.5) = \cos 0.5 - 0.5 \approx 0.37758$$f'(0.5) = -\sin 0.5 - 1 \approx -1.47943$.
 
 $$x_1 = 0.5 - \frac{0.37758}{-1.47943} \approx 0.5 + 0.25521 = 0.75521$$
 
@@ -341,7 +341,7 @@ Newton-Raphson converges in 3 iterations to 5 decimal places, compared to approx
 
 The integral $\int_0^1 e^{-x^2}\, dx$ cannot be evaluated in terms of elementary functions.
 
-**(a)** Use the trapezium rule with 4 strips to estimate $\int_0^1 e^{-x^2}\, dx$, giving your answer to 5 decimal places.
+**(a)** Use the trapezium rule with 4 strips to estimate $\int_0^1 e^{-x^2}\, dx$Giving your answer to 5 decimal places.
 
 **(b)** Use the trapezium rule with 8 strips and compare. Determine whether doubling the number of strips approximately quarters the error (as predicted by the error bound).
 
@@ -353,7 +353,7 @@ The integral $\int_0^1 e^{-x^2}\, dx$ cannot be evaluated in terms of elementary
 
 **Solution:**
 
-**(a)** $n = 4$, $h = 0.25$.
+**(a)** $n = 4$$h = 0.25$.
 
 | $x$ | 0 | 0.25 | 0.5 | 0.75 | 1 |
 |-----|---|------|-----|------|---|
@@ -363,7 +363,7 @@ $$T_4 = \frac{0.25}{2}[1 + 2(0.93941 + 0.77880 + 0.56978) + 0.36788]$$
 
 $$= 0.125[1 + 4.57598 + 0.36788] = 0.125 \times 5.94386 = 0.74298$$
 
-**(b)** $n = 8$, $h = 0.125$.
+**(b)** $n = 8$$h = 0.125$.
 
 | $x$ | 0 | 0.125 | 0.25 | 0.375 | 0.5 | 0.625 | 0.75 | 0.875 | 1 |
 |-----|---|-------|------|-------|-----|-------|------|-------|---|
@@ -387,11 +387,11 @@ $f'(x) = -2xe^{-x^2}$.
 
 $f''(x) = -2e^{-x^2} + 4x^2 e^{-x^2} = e^{-x^2}(4x^2 - 2)$.
 
-$f''(x) = 0$ when $4x^2 = 2$, i.e. $x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
+$f''(x) = 0$ when $4x^2 = 2$I.e. $x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \approx 0.707$.
 
-For $0 \leq x \lt \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$: $4x^2 - 2 \lt 0$, so $f''(x) \lt 0$ (concave down).
+For $0 \leq x \lt \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆$: $4x^2 - 2 \lt 0$So $f''(x) \lt 0$ (concave down).
 
-For $\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \lt x \leq 1$: $4x^2 - 2 \gt 0$, so $f''(x) \gt 0$ (concave up).
+For $\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ \lt x \leq 1$: $4x^2 - 2 \gt 0$So $f''(x) \gt 0$ (concave up).
 
 Since the concavity changes within the interval, the trapezium rule will overestimate on the concave-down portion and underestimate on the concave-up portion. The net effect depends on the relative magnitudes. In this case, the trapezium rule underestimates overall (both $T_4$ and $T_8$ are below the exact value).
 

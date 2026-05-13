@@ -7,7 +7,7 @@ slug: dicts-sets-counter
 ## Dict Internals
 
 Python dicts are hash tables. CPython implements them using a combination of a sparse array of
-indices and a dense array of entries, a design introduced in Python 3.6 and made mandatory in Python
+Indices and a dense array of entries, a design introduced in Python 3.6 and made mandatory in Python
 3.7+.
 
 ### Hash Table Structure
@@ -19,8 +19,8 @@ Each dict maintains three structures internally:
 3. **`dk_size`** — The size of the hash table (always a power of 2).
 
 The hash table uses **open addressing** with pseudo-random probing. When a collision occurs, CPython
-does not follow a linked list (chaining) but instead probes subsequent slots using a perturbation
-scheme.
+Does not follow a linked list (chaining) but instead probes subsequent slots using a perturbation
+Scheme.
 
 ```python
 import sys
@@ -34,13 +34,13 @@ print(sys.getsizeof(d))  # Typically 232 bytes on 64-bit CPython 3.12
 Python calls `hash(key)` on every key. The hash must be an integer. Built-in types implement
 `__hash__` as follows:
 
-| Type        | Hash Strategy                                                                   |
+| Type | Hash Strategy |
 | ----------- | ------------------------------------------------------------------------------- |
-| `int`       | `hash(n) = n` (with `-1` mapped to `-2` to avoid collision with error sentinel) |
-| `str`       | SipHash-2-4 (a keyed hash function, randomized per interpreter)                 |
-| `tuple`     | XOR of element hashes with per-position perturbation                            |
-| `frozenset` | XOR of element hashes with perturbation                                         |
-| `bytes`     | Truncated SipHash                                                               |
+| `int` | `hash(n) = n` (with `-1` mapped to `-2` to avoid collision with error sentinel) |
+| `str` | SipHash-2-4 (a keyed hash function, randomized per interpreter) |
+| `tuple` | XOR of element hashes with per-position perturbation |
+| `frozenset` | XOR of element hashes with perturbation |
+| `bytes` | Truncated SipHash |
 
 ```python
 hash(42)           # 42
@@ -49,14 +49,14 @@ hash(("a", "b"))   # depends on hash("a") ^ hash("b") with rotation
 ```
 
 :::info
-CPython randomizes hash seeds for `str`, `bytes`, and `datetime` objects at interpreter
-startup. This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable.
+CPython randomizes hash seeds for `str``bytes`And `datetime` objects at interpreter
+Startup. This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable.
 :::
 
 ### Collision Resolution: Open Addressing
 
 When two keys hash to the same slot, CPython probes the next slot using a linear probing scheme with
-perturbation:
+Perturbation:
 
 ```python
 # Simplified probe sequence (actual CPython uses a more complex variant)
@@ -66,12 +66,12 @@ while table[i] is not empty and table[i].key != target_key:
 ```
 
 The probe continues until an empty slot or a matching key is found. The load factor determines how
-quickly slots fill up.
+Quickly slots fill up.
 
 ### Load Factor and Resizing
 
 The **load factor** is `n / table_size` where `n` is the number of entries. CPython maintains a load
-factor of at most `2/3`. When the table exceeds this threshold, it resizes:
+Factor of at most `2/3`. When the table exceeds this threshold, it resizes:
 
 1. Allocate a new table 4x the current size (or the next power of 2 that accommodates all entries).
 2. Reinsert all entries into the new table (no old pointers are reused).
@@ -94,14 +94,14 @@ for i in range(100):
 ### Compact Dict (Python 3.6+)
 
 Before Python 3.6, dicts stored entries in a single sparse array. This wasted memory because most
-slots were empty. The compact dict design splits the structure into:
+Slots were empty. The compact dict design splits the structure into:
 
-- An **indices array** — a sparse array of `int8`, `int16`, `int32`, or `int64` indices (sized based
-  on table size).
+- An **indices array** — a sparse array of `int8``int16``int32`Or `int64` indices (sized based
+ on table size).
 - A **dense entries array** — a compact array of `(hash, key, value)` triples.
 
 This saves 20-25% memory for typical dicts and guarantees insertion-order preservation as a side
-effect.
+Effect.
 
 ## OrderedDict
 
@@ -125,18 +125,18 @@ od.popitem(last=False)    # Remove and return first item: ('third', 3)
 
 Since Python 3.7, regular `dict` also preserves insertion order. The differences are:
 
-| Feature                   | `dict`           | `OrderedDict` |
+| Feature | `dict` | `OrderedDict` |
 | ------------------------- | ---------------- | ------------- |
-| Insertion order preserved | Yes (3.7+)       | Yes           |
-| `move_to_end()`           | No               | Yes           |
-| `popitem(last=False)`     | No               | Yes           |
-| Equality checks order     | No (Python 3.7+) | Yes           |
-| Reversible                | Yes (3.8+)       | Yes           |
+| Insertion order preserved | Yes (3.7+) | Yes |
+| `move_to_end()` | No | Yes |
+| `popitem(last=False)` | No | Yes |
+| Equality checks order | No (Python 3.7+) | Yes |
+| Reversible | Yes (3.8+) | Yes |
 
 :::warning
 `OrderedDict` equality is **order-sensitive**:
 `OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality does **not**
-consider order — only `OrderedDict` equality is order-sensitive.
+Consider order — only `OrderedDict` equality is order-sensitive.
 :::
 
 ### LRU Cache with OrderedDict
@@ -176,7 +176,7 @@ print(list(cache.cache.keys()))  # ['c', 'd', 'b'] — "b" moved to end
 ## defaultdict
 
 `collections.defaultdict` calls a `default_factory` function to provide default values for missing
-keys:
+Keys:
 
 ```python
 from collections import defaultdict
@@ -266,7 +266,7 @@ print(c["z"])  # 0 — missing keys return 0, not KeyError
 ### Counter Arithmetic
 
 Counters support arithmetic operations that return new Counter objects (negative and zero counts are
-removed):
+Removed):
 
 ```python
 from collections import Counter
@@ -334,7 +334,7 @@ class Counter(dict):
 ## ChainMap
 
 `collections.ChainMap` groups multiple dicts into a single view. Lookups search each mapping in
-order:
+Order:
 
 ```python
 from collections import ChainMap
@@ -368,11 +368,11 @@ print(config["timeout"])  # 30
 ```
 
 ChainMap is ideal for layered configuration systems: defaults, environment variables, CLI args, and
-per-request overrides.
+Per-request overrides.
 
 :::warning
 Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
-layer, access it via `config.maps[0]`, `config.maps[1]`, etc.
+Layer, access it via `config.maps[0]``config.maps[1]`Etc.
 :::
 
 ```python
@@ -398,15 +398,15 @@ print(s.remove(6))  # KeyError — raises if not present
 
 Set operations have the following average-case complexities:
 
-| Operation                      | Average Case           | Worst Case          |
+| Operation | Average Case | Worst Case |
 | ------------------------------ | ---------------------- | ------------------- |
-| `x in s`                       | O(1)                   | O(n)                |
-| `s.add(x)`                     | O(1)                   | O(n)                |
-| `s.discard(x)`                 | O(1)                   | O(n)                |
-| `s \| t` (union)               | O(len(s) + len(t))     | O(len(s) \* len(t)) |
-| `s & t` (intersection)         | O(min(len(s), len(t))) | O(len(s) \* len(t)) |
-| `s - t` (difference)           | O(len(s))              | O(len(s) \* len(t)) |
-| `s ^ t` (symmetric difference) | O(len(s) + len(t))     | O(len(s) \* len(t)) |
+| `x in s` | O(1) | O(n) |
+| `s.add(x)` | O(1) | O(n) |
+| `s.discard(x)` | O(1) | O(n) |
+| `s \| t` (union) | O(len(s) + len(t)) | O(len(s) \* len(t)) |
+| `s & t` (intersection) | O(min(len(s), len(t))) | O(len(s) \* len(t)) |
+| `s - t` (difference) | O(len(s)) | O(len(s) \* len(t)) |
+| `s ^ t` (symmetric difference) | O(len(s) + len(t)) | O(len(s) \* len(t)) |
 
 ### frozenset
 
@@ -448,7 +448,7 @@ result = {x for x in a if x in b}
 ```
 
 The comprehension form is preferred when you need filtering with a condition beyond simple
-membership.
+Membership.
 
 ## Mapping Types: ABC
 
@@ -495,13 +495,13 @@ print(d["CONTENT-TYPE"])  # application/json
 print(list(d.keys()))      # ['Content-Type']
 ```
 
-By inheriting from `MutableMapping`, we get `get`, `keys`, `values`, `items`, `pop`, `clear`,
-`update`, `setdefault`, and `__contains__` for free.
+By inheriting from `MutableMapping`We get `get``keys``values``items``pop``clear`
+`update``setdefault`And `__contains__` for free.
 
 ## UserDict, UserList, UserString
 
 The `collections` module provides wrapper classes that allow subclassing without directly inheriting
-from built-in types:
+From built-in types:
 
 ```python
 from collections import UserDict
@@ -522,9 +522,9 @@ del d["port"]             # Deleting 'port'
 ```
 
 :::warning
-Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`, some
+Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`Some
 C-level methods bypass your Python-level overrides. `UserDict` stores data in an internal `dict`
-attribute (`self.data`), so all access goes through your Python methods.
+Attribute (`self.data`), so all access goes through your Python methods.
 :::
 
 ```python
@@ -580,16 +580,16 @@ p.x = 10  # Mutable by default
 
 ### Comparison
 
-| Feature        | `namedtuple`                   | `dataclass`            | `TypedDict`       |
+| Feature | `namedtuple` | `dataclass` | `TypedDict` |
 | -------------- | ------------------------------ | ---------------------- | ----------------- |
-| Immutable      | Yes                            | Opt-in (`frozen=True`) | N/A               |
-| Type hints     | No                             | Yes                    | Yes               |
-| Default values | Yes (via `defaults`)           | Yes                    | Yes               |
-| Methods        | `_asdict`, `_replace`, `_make` | Custom methods         | None              |
-| Inheritance    | No                             | Yes                    | Yes               |
-| Memory         | Tuple-sized                    | Class overhead         | Dict              |
-| Use case       | Lightweight records            | Rich objects           | Typed dict shapes |
-| `__slots__`    | Yes (built-in)                 | Opt-in                 | N/A               |
+| Immutable | Yes | Opt-in (`frozen=True`) | N/A |
+| Type hints | No | Yes | Yes |
+| Default values | Yes (via `defaults`) | Yes | Yes |
+| Methods | `_asdict``_replace``_make` | Custom methods | None |
+| Inheritance | No | Yes | Yes |
+| Memory | Tuple-sized | Class overhead | Dict |
+| Use case | Lightweight records | Rich objects | Typed dict shapes |
+| `__slots__` | Yes (built-in) | Opt-in | N/A |
 
 ```python
 from typing import TypedDict
@@ -606,7 +606,7 @@ config: ServerConfig = {"host": "0.0.0.0", "port": 8080, "debug": False}
 ## bisect Module
 
 The `bisect` module provides binary search algorithms for sorted sequences. This is essential for
-maintaining sorted insertions without resorting:
+Maintaining sorted insertions without resorting:
 
 ```python
 import bisect
@@ -651,7 +651,7 @@ print([e[1] for e in events])
 
 :::tip
 `bisect` operations are O(log n) for search and O(n) for insertion (because the list must
-shift elements). For frequent insertions, consider `heapq` or a balanced tree structure.
+Shift elements). For frequent insertions, consider `heapq` or a balanced tree structure.
 :::
 
 ## heapq Module
@@ -690,7 +690,7 @@ print(bottom5) # [0, 1, 2, 3, 4] (varies)
 ```
 
 `nlargest(k, data)` is O(N log k) where N = len(data), making it efficient for small `k` relative to
-the data size. It uses a min-heap of size `k` internally.
+The data size. It uses a min-heap of size `k` internally.
 
 ### Max-Heap Pattern
 
@@ -741,7 +741,7 @@ print(pq.pop())  # low priority task
 
 :::warning
 Never store mutable objects directly in a heap and then modify them externally — the heap
-invariant may be violated. Either use immutable data or call `heapq.heapify()` after modifications.
+Invariant may be violated. Either use immutable data or call `heapq.heapify()` after modifications.
 :::
 
 ## Common Pitfalls
@@ -833,10 +833,10 @@ print(a)  # {1, 2, 3}
 print(c)  # {2, 3}
 ```
 
-Use the augmented assignment operators (`|=`, `&=`, `-=`, `^=`) for in-place modifications to avoid
-unnecessary allocations.
+Use the augmented assignment operators (`|=``&=``-=``^=`) for in-place modifications to avoid
+Unnecessary allocations.
 
-### 7. defaultdict Can Hide Bugs
+### 7. Defaultdict Can Hide Bugs
 
 ```python
 from collections import defaultdict
@@ -854,4 +854,12 @@ d2 = {}
 ```
 
 Use `defaultdict` when you intentionally want default values. For configuration or structured data
-access, prefer regular dicts to catch typos early.
+Access, prefer regular dicts to catch typos early.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

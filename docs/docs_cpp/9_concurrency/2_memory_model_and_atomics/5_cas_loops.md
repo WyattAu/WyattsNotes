@@ -11,13 +11,13 @@ slug: compare-and-swap-cas-loops
 # Compare-and-Swap (CAS) Loops
 
 This section covers the CAS loop pattern, the difference between `compare_exchange_weak` and
-`compare_exchange_strong`, when weak CAS is preferable, linearizability of CAS-based data
-structures, a lock-free reference counting implementation, and common CAS loop idioms.
+`compare_exchange_strong`When weak CAS is preferable, linearizability of CAS-based data
+Structures, a lock-free reference counting implementation, and common CAS loop idioms.
 
 ## CAS Loop Pattern
 
 The compare-and-swap (CAS) loop is the fundamental building block of lock-free algorithms. The
-pattern is:
+Pattern is:
 
 $$\mathrm{loop: {} \mathrm{old{} = \mathrm{load{}(x); \quad \mathrm{new{} = f(\mathrm{old{}); \quad \mathrm{if CAS{}(x, \mathrm{old{}, \mathrm{new{}) \mathrm{ then break{}$$
 
@@ -33,11 +33,11 @@ while (!atomic_var.compare_exchange_weak(expected, desired, order_success, order
 
 ## `compare_exchange_weak` vs `compare_exchange_strong`
 
-| Property         | `compare_exchange_weak`               | `compare_exchange_strong` |
+| Property | `compare_exchange_weak` | `compare_exchange_strong` |
 | ---------------- | ------------------------------------- | ------------------------- |
-| Spurious failure | Possible                              | Never                     |
-| Performance      | May be faster on some architectures   | May be slower             |
-| Use case         | CAS loops (failure is retried anyway) | Single-attempt operations |
+| Spurious failure | Possible | Never |
+| Performance | May be faster on some architectures | May be slower |
+| Use case | CAS loops (failure is retried anyway) | Single-attempt operations |
 
 The `compare_exchange` functions have the following signature [N4950 §31.7.2]:
 
@@ -50,21 +50,21 @@ bool compare_exchange_strong(T& expected, T desired,
 ```
 
 On failure, `expected` is updated to the current value of the atomic variable, allowing the caller
-to recompute `desired` and retry.
+To recompute `desired` and retry.
 
 :::tip
-tip
-retries). Use `compare_exchange_strong` when you need to know whether the CAS actually failed due to
-a value mismatch (e.g., when you want to take a different action on real failure vs spurious
-failure).
+Tip
+Retries). Use `compare_exchange_strong` when you need to know whether the CAS actually failed due to
+A value mismatch (e.g., when you want to take a different action on real failure vs spurious
+Failure).
 :::
 
 ## When Weak CAS Is Preferable
 
 On some architectures (notably ARMv8 using LL/SC — Load-Linked/Store-Conditional),
 `compare_exchange_weak` maps directly to the hardware instruction and can be implemented without a
-retry loop in the runtime library. `compare_exchange_strong` may require the implementation to
-insert a retry loop, making it slightly more expensive.
+Retry loop in the runtime library. `compare_exchange_strong` may require the implementation to
+Insert a retry loop, making it slightly more expensive.
 
 For CAS loops that already retry on failure, `compare_exchange_weak` avoids double-retrying:
 
@@ -82,8 +82,8 @@ while (!atomic_var.compare_exchange_weak(expected, desired,
 ## Linearizability of CAS-Based Data Structures
 
 A concurrent data structure is **linearizable** [Herlihy & Wing, 1990] if every operation appears to
-take effect instantaneously at some point between its invocation and its response. CAS-based data
-structures can achieve linearizability because CAS is itself a linearizable operation:
+Take effect instantaneously at some point between its invocation and its response. CAS-based data
+Structures can achieve linearizability because CAS is itself a linearizable operation:
 
 $$\mathrm{CAS{}(x, \mathrm{old{}, \mathrm{new{}) \mathrm{ appears to execute atomically at the point where the store conditional succeeds{}$$
 
@@ -184,25 +184,25 @@ int main() {
 
 :::info
 This reference counting example uses `fetch_sub` with `memory_order_acq_rel` for the release
-operation. The acquire semantics ensure that all accesses to the object (sequenced-before the
-release) are visible to the thread that performs the destruction. The release semantics ensure that
-the destruction itself is visible to other threads. The `fetch_sub` return value is checked against
+Operation. The acquire semantics ensure that all accesses to the object (sequenced-before the
+Release) are visible to the thread that performs the destruction. The release semantics ensure that
+The destruction itself is visible to other threads. The `fetch_sub` return value is checked against
 1 (not 0) because `fetch_sub` returns the **old** value [N4950 §31.7.2].
 :::
 
 ## CAS Loop Idioms Summary
 
-| Pattern                    | Description                            | Use Case                       |
+| Pattern | Description | Use Case |
 | -------------------------- | -------------------------------------- | ------------------------------ |
-| **Read-modify-write**      | Load, compute, CAS                     | Counter increment, flag toggle |
-| **Insert into list**       | Load head, set new->next, CAS head     | Lock-free stack push           |
-| **Remove from list**       | Load head, read next, CAS head to next | Lock-free stack pop            |
-| **Update with validation** | Load, validate invariants, CAS         | Lock-free queue (ABA-safe)     |
+| **Read-modify-write** | Load, compute, CAS | Counter increment, flag toggle |
+| **Insert into list** | Load head, set new->next, CAS head | Lock-free stack push |
+| **Remove from list** | Load head, read next, CAS head to next | Lock-free stack pop |
+| **Update with validation** | Load, validate invariants, CAS | Lock-free queue (ABA-safe) |
 
 :::tip
 When writing CAS loops, always update `desired` based on the new `expected` value after a
-failed CAS. The `compare_exchange_weak` function automatically updates `expected` to the current
-value on failure, so you can use it directly in the next iteration's computation.
+Failed CAS. The `compare_exchange_weak` function automatically updates `expected` to the current
+Value on failure, so you can use it directly in the next iteration's computation.
 :::
 
 ## Lock-Free Stack Push and Pop
@@ -306,12 +306,12 @@ int main() {
 
 The push operation uses a **read-modify-write** CAS loop: load the current head, set the new node's
 `next` to it, then atomically swap the head if it hasn't changed. The `memory_order_release` on
-success ensures that the new node's data is visible to other threads that acquire the head.
+Success ensures that the new node's data is visible to other threads that acquire the head.
 
-The pop operation uses a **remove** CAS loop: load the current head, read its `next`, then
-atomically set the head to `next` if the head hasn't changed. On success, the popped node is
-returned as a `unique_ptr`, transferring ownership to the caller and ensuring the node is eventually
-freed.
+The pop operation uses a **remove** CAS loop: load the current head, read its `next`Then
+Atomically set the head to `next` if the head hasn't changed. On success, the popped node is
+Returned as a `unique_ptr`Transferring ownership to the caller and ensuring the node is eventually
+Freed.
 
 ### The ABA Problem
 
@@ -323,16 +323,16 @@ The lock-free stack above has a classic ABA vulnerability:
 4. Thread A's CAS succeeds because `head == A` again — but `A->next` has changed.
 
 In a garbage-collected language, ABA is prevented because the GC doesn't recycle nodes. In C++, you
-must prevent it explicitly using:
+Must prevent it explicitly using:
 
 1. **Hazard pointers:** Threads publish pointers they are reading. Before reclaiming memory, the
-   reclaimer checks that no thread has a hazard pointer to it.
+ reclaimer checks that no thread has a hazard pointer to it.
 2. **Epoch-based reclamation:** Threads operate in epochs. Memory is only reclaimed after all
-   threads have advanced past the epoch in which the memory was retired.
+ threads have advanced past the epoch in which the memory was retired.
 3. **Tagged pointers:** Append a monotonically increasing counter to each pointer. The CAS checks
-   both the pointer and the counter. On x86_64, `double` can hold a 32-bit pointer + 32-bit tag (for
-   32-bit address spaces). On 64-bit systems, `std::atomic<std::uintptr_t>` with the upper bits as a
-   tag works on platforms with &lt; 48-bit virtual addresses.
+ both the pointer and the counter. On x86_64, `double` can hold a 32-bit pointer + 32-bit tag (for
+ 32-bit address spaces). On 64-bit systems, `std::atomic<std::uintptr_t>` with the upper bits as a
+ tag works on platforms with &lt; 48-bit virtual addresses.
 
 ```cpp
 #include <atomic>
@@ -384,18 +384,18 @@ void push_with_tag(void* new_node) {
 ## Memory Ordering in CAS Operations
 
 The `compare_exchange` functions accept two memory order arguments: one for the **success** case and
-one for the **failure** case. The failure order cannot be stronger than `memory_order_consume` and
-cannot be `release` or `acq_rel` [N4950 §31.7.2].
+One for the **failure** case. The failure order cannot be stronger than `memory_order_consume` and
+Cannot be `release` or `acq_rel` [N4950 §31.7.2].
 
 ### Common Memory Order Combinations
 
-| Success Order          | Failure Order          | Use Case                                                         |
+| Success Order | Failure Order | Use Case |
 | :--------------------- | :--------------------- | :--------------------------------------------------------------- |
-| `memory_order_relaxed` | `memory_order_relaxed` | Simple counters, statistics (no synchronization needed)          |
+| `memory_order_relaxed` | `memory_order_relaxed` | Simple counters, statistics (no synchronization needed) |
 | `memory_order_acquire` | `memory_order_relaxed` | Reading a shared pointer (acquire visibility of pointed-to data) |
-| `memory_order_release` | `memory_order_relaxed` | Publishing a shared pointer (make writes visible)                |
-| `memory_order_acq_rel` | `memory_order_acquire` | Read-modify-write on a synchronization variable                  |
-| `memory_order_seq_cst` | `memory_order_seq_cst` | Default; total order (strongest guarantee, most expensive)       |
+| `memory_order_release` | `memory_order_relaxed` | Publishing a shared pointer (make writes visible) |
+| `memory_order_acq_rel` | `memory_order_acquire` | Read-modify-write on a synchronization variable |
+| `memory_order_seq_cst` | `memory_order_seq_cst` | Default; total order (strongest guarantee, most expensive) |
 
 ```cpp
 #include <atomic>
@@ -428,8 +428,8 @@ int main() {
 ### CAS-Based Spinlock
 
 A spinlock is the simplest mutual exclusion primitive built from CAS. While lock-free stacks are
-preferred for specific data structures, a spinlock demonstrates the full CAS pattern with proper
-memory ordering:
+Preferred for specific data structures, a spinlock demonstrates the full CAS pattern with proper
+Memory ordering:
 
 ```cpp
 #include <atomic>
@@ -489,13 +489,13 @@ int main() {
 ```
 
 The `exchange` operation is a special case of CAS that always succeeds (it sets the new value and
-returns the old one). It is used here instead of `compare_exchange_weak` because we don't need to
-conditionally update — we always want to set `locked_` to `true`.
+Returns the old one). It is used here instead of `compare_exchange_weak` because we don't need to
+Conditionally update — we always want to set `locked_` to `true`.
 
 ### `std::atomic_flag`: The Lock-Free Building Block
 
 `std::atomic_flag` is the only atomic type guaranteed to be lock-free on all platforms. It is the
-minimum building block for spinlocks:
+Minimum building block for spinlocks:
 
 ```cpp
 #include <atomic>
@@ -518,7 +518,7 @@ Use `std::atomic_flag` when you need a guaranteed lock-free boolean flag and can
 
 The Michael-Scott queue is the classic lock-free FIFO queue used in many production systems
 (including Java's `ConcurrentLinkedQueue`). It uses a sentinel dummy node and CAS to handle both
-enqueue and dequeue:
+Enqueue and dequeue:
 
 ```cpp
 #include <atomic>
@@ -651,8 +651,8 @@ int main() {
 ```
 
 The sentinel node pattern avoids the ABA problem for the head pointer because the head never moves
-backward — it always advances from one dummy node to the next. The old dummy node is deleted after
-the head swings, so it can never be recycled and re-inserted. The tail pointer may lag behind
+Backward — it always advances from one dummy node to the next. The old dummy node is deleted after
+The head swings, so it can never be recycled and re-inserted. The tail pointer may lag behind
 (requiring the "help advance" code), but this does not affect correctness.
 
 ---
@@ -660,29 +660,33 @@ the head swings, so it can never be recycled and re-inserted. The tail pointer m
 ## Common Pitfalls
 
 - **Using `compare_exchange_strong` inside tight CAS loops.** Strong CAS may retry internally on
-  architectures with LL/SC (like ARM), causing double-retrying. Always use `compare_exchange_weak`
-  in loops and only use strong CAS for single-attempt operations (e.g., initializing a lazy
-  singleton).
+ architectures with LL/SC (like ARM), causing double-retrying. Always use `compare_exchange_weak`
+ in loops and only use strong CAS for single-attempt operations (e.g., initializing a lazy
+ singleton).
 - **Wrong memory order on CAS failure.** The failure order must not be `release` or `acq_rel`. A
-  common mistake is passing `memory_order_acq_rel` for both success and failure. The failure case
-  does not perform a store, so `release` semantics are meaningless. Use `memory_order_acquire` or
-  `memory_order_relaxed` for the failure case.
+ common mistake is passing `memory_order_acq_rel` for both success and failure. The failure case
+ does not perform a store, so `release` semantics are meaningless. Use `memory_order_acquire` or
+ `memory_order_relaxed` for the failure case.
 - **Forgetting that `compare_exchange` updates `expected` on failure.** If you compute `desired`
-  based on `expected` before the CAS and then retry without recomputing `desired`, you'll retry with
-  a stale computation. Always recompute `desired` inside the loop after a failed CAS.
+ based on `expected` before the CAS and then retry without recomputing `desired`You'll retry with
+ a stale computation. Always recompute `desired` inside the loop after a failed CAS.
 - **ABA problem in long-running CAS loops.** If a CAS loop can be preempted for a long time, another
-  thread may modify and then restore the observed value, causing the CAS to succeed incorrectly. Use
-  hazard pointers, epoch-based reclamation, or tagged pointers for long-lived data structures.
+ thread may modify and then restore the observed value, causing the CAS to succeed incorrectly. Use
+ hazard pointers, epoch-based reclamation, or tagged pointers for long-lived data structures.
 - **Not checking `std::atomic<T>::is_always_lock_free`.** Not all `std::atomic` specializations are
-  lock-free. On some platforms, `std::atomic<uint64_t>` on a 32-bit architecture falls back to a
-  mutex. Use `std::atomic<T>::is_always_lock_free` (compile-time) or `.is_lock_free()` (runtime) to
-  verify, or use `std::atomic_flag` which is guaranteed lock-free.
+ lock-free. On some platforms, `std::atomic<uint64_t>` on a 32-bit architecture falls back to a
+ mutex. Use `std::atomic<T>::is_always_lock_free` (compile-time) or `.is_lock_free()` (runtime) to
+ verify, or use `std::atomic_flag` which is guaranteed lock-free.
 - **Spinlock without backoff.** A naive spinlock that loops without any pause instruction wastes CPU
-  cycles and bus bandwidth. Use `__builtin_ia32_pause()` on x86, `yield()` on ARM, or
-  `std::this_thread::yield()` to reduce contention.
+ cycles and bus bandwidth. Use `__builtin_ia32_pause()` on x86, `yield()` on ARM, or
+ `std::this_thread::yield()` to reduce contention.
 
 :::
 
 :::
 
 :::
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

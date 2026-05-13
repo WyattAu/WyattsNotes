@@ -7,8 +7,8 @@ slug: traits-and-generics
 ## Trait Definition and Implementation
 
 Traits are Rust's answer to interfaces, type classes, and concepts. They define shared behavior that
-types can implement. Unlike inheritance, traits are composable — a type can implement any number of
-traits.
+Types can implement. Unlike inheritance, traits are composable — a type can implement any number of
+Traits.
 
 ### Defining a Trait
 
@@ -28,8 +28,8 @@ trait Summary {
 ```
 
 `summarize` is a **required method** — every type implementing `Summary` must provide it. `preview`
-is a **default method** — types can override it, but if they do not, the default implementation is
-used.
+Is a **default method** — types can override it, but if they do not, the default implementation is
+Used.
 
 ### Implementing a Trait
 
@@ -62,7 +62,7 @@ impl Summary for Tweet {
 You can only implement a trait for a type if either the trait or the type is defined in your crate.
 You cannot implement `Display` for `Vec<T>` (both are from the standard library) in your own crate.
 This prevents coherence issues — two crates could implement the same trait for the same type with
-different behavior.
+Different behavior.
 
 Workarounds:
 
@@ -82,7 +82,7 @@ impl std::fmt::Display for MyVec {
 ## Default Methods
 
 Default methods can call required methods, allowing the implementing type to provide a single method
-and get additional behavior for free:
+And get additional behavior for free:
 
 ```rust
 trait Processor {
@@ -274,8 +274,8 @@ impl<T: Clone> Maybe<T> {
 ## Monomorphization
 
 Rust performs **monomorphization** — the compiler generates a separate copy of each generic function
-for every concrete type used. This happens at compile time and produces optimized, specialized code
-with no runtime overhead.
+For every concrete type used. This happens at compile time and produces optimized, specialized code
+With no runtime overhead.
 
 ```rust
 fn id<T>(x: T) -> T { x }
@@ -288,9 +288,9 @@ fn main() {
 ```
 
 The downside: monomorphization increases binary size (code bloat) because each type specialization
-produces a separate copy of the function. In practice, this is rarely a problem because LLVM can
-merge identical machine code after optimization. When code bloat is a concern (e.g., in embedded
-systems), use dynamic dispatch via `dyn Trait` to share a single implementation.
+Produces a separate copy of the function. In practice, this is rarely a problem because LLVM can
+Merge identical machine code after optimization. When code bloat is a concern (e.g., in embedded
+Systems), use dynamic dispatch via `dyn Trait` to share a single implementation.
 
 ### Comparing Static vs Dynamic Dispatch
 
@@ -306,20 +306,20 @@ fn process_dyn(item: &dyn Display) {
 }
 ```
 
-| Property       | Static Dispatch        | Dynamic Dispatch       |
+| Property | Static Dispatch | Dynamic Dispatch |
 | -------------- | ---------------------- | ---------------------- |
-| Overhead       | None (after inlining)  | Vtable lookup per call |
-| Binary size    | Larger (per type copy) | Smaller (single copy)  |
-| Inlining       | Yes                    | No (indirect call)     |
-| Flexibility    | Compile-time only      | Runtime polymorphism   |
-| Cache behavior | Better (direct call)   | Worse (indirect call)  |
+| Overhead | None (after inlining) | Vtable lookup per call |
+| Binary size | Larger (per type copy) | Smaller (single copy) |
+| Inlining | Yes | No (indirect call) |
+| Flexibility | Compile-time only | Runtime polymorphism |
+| Cache behavior | Better (direct call) | Worse (indirect call) |
 
 ## Trait Objects
 
 ### `dyn Trait`
 
 A trait object `&dyn Trait` or `Box<dyn Trait>` is a fat pointer: a pointer to the data plus a
-pointer to the vtable. The vtable contains function pointers for each method in the trait.
+Pointer to the vtable. The vtable contains function pointers for each method in the trait.
 
 ```
 ┌─────────────────────────────────────────┐
@@ -372,9 +372,9 @@ for animal in &animals {
 Not all traits can be used as trait objects. A trait is **object safe** if:
 
 1. It does not have any associated `const` or `fn` items with type parameters, generic methods, or
-   methods that return `Self` (except `&Self`/`&mut Self`).
+ methods that return `Self` (except `&Self`/`&mut Self`).
 2. It does not have any associated `type` that uses `Self` in non-trivial ways.
-3. All methods have a receiver (`&self`, `&mut self`, or `self`) — no associated functions.
+3. All methods have a receiver (`&self``&mut self`Or `self`) — no associated functions.
 
 ```rust
 // Object-safe
@@ -394,7 +394,7 @@ trait Clone {
 ```
 
 The compiler error message explains why a trait is not object-safe when you try to use `dyn Trait`
-with it.
+With it.
 
 ### Trait Object Casting
 
@@ -424,7 +424,7 @@ let base: Box<dyn Base> = derived;  // upcast
 ## Blanket Implementations
 
 A blanket implementation implements a trait for all types that satisfy certain bounds. This is one
-of Rust's most powerful patterns:
+Of Rust's most powerful patterns:
 
 ```rust
 impl<T: Display> ToString for T {
@@ -435,7 +435,7 @@ impl<T: Display> ToString for T {
 ```
 
 This means every type implementing `Display` automatically gets `to_string()`. You never need to
-implement `ToString` manually — just implement `Display`.
+Implement `ToString` manually — just implement `Display`.
 
 The standard library has many blanket implementations:
 
@@ -475,28 +475,28 @@ Marker traits have no methods — they exist purely as compile-time markers of c
 ### `Send`
 
 A type is `Send` if it is safe to transfer ownership to another thread. Most types are `Send` by
-default. Types containing raw pointers, `Rc`, or non-thread-safe interior mutability are not `Send`.
+Default. Types containing raw pointers, `Rc`Or non-thread-safe interior mutability are not `Send`.
 
 ### `Sync`
 
 A type is `Sync` if it is safe to share references to it between threads (i.e., `&T` is `Send`).
 Most types are `Sync` by default. `Rc<T>` is not `Sync` because cloning an `Rc` from multiple
-threads would create a data race on the reference count.
+Threads would create a data race on the reference count.
 
 ### `Copy`
 
 A type is `Copy` if it can be duplicated by a bitwise copy. It is automatically implemented for
-types where all fields are `Copy`. Types with destructors (`Drop`) cannot be `Copy`.
+Types where all fields are `Copy`. Types with destructors (`Drop`) cannot be `Copy`.
 
 ### `Clone`
 
-`Clone` explicitly defines how to create a deep copy. Unlike `Copy`, `Clone` may involve heap
-allocation or other non-trivial operations.
+`Clone` explicitly defines how to create a deep copy. Unlike `Copy``Clone` may involve heap
+Allocation or other non-trivial operations.
 
 ### `Sized`
 
 All generic type parameters have an implicit `Sized` bound by default. This means `fn foo<T>(x: T)`
-requires `T` to have a known size at compile time. Use `T: ?Sized` to relax this:
+Requires `T` to have a known size at compile time. Use `T: ?Sized` to relax this:
 
 ```rust
 fn print_len<T: ?Sized>(value: &T)
@@ -510,12 +510,12 @@ print_len("hello");  // &str is ?Sized — works because we take a reference
 ```
 
 `?Sized` is primarily used for trait objects (`dyn Trait` is `!Sized`) and for `[T]` slices (which
-are dynamically sized).
+Are dynamically sized).
 
 ## Supertraits
 
 Supertraits define a dependency relationship between traits. A trait that requires another trait as
-a supertrait can only be implemented for types that also implement the supertrait:
+A supertrait can only be implemented for types that also implement the supertrait:
 
 ```rust
 trait Animal {
@@ -560,7 +560,7 @@ trait AdvancedDisplay: Display + Debug {
 ## Associated Types
 
 Associated types define a type that is determined by the implementing type. They are the primary
-mechanism for output types in trait definitions:
+Mechanism for output types in trait definitions:
 
 ```rust
 trait Iterator {
@@ -645,7 +645,7 @@ fn configure<T: BaudRate>() -> u32 {
 ## Const Generics
 
 Const generics allow you to use constant values as generic parameters. This is particularly useful
-for arrays and type-level programming:
+For arrays and type-level programming:
 
 ```rust
 struct Array<T, const N: usize> {
@@ -704,14 +704,14 @@ fn first<T, const N: usize>(arr: &[T; N]) -> Option<&T> {
 
 Const generics with expressions (like `N > 0`) are evaluated at compile time but have limitations.
 Not all operations are supported in const contexts. Check the Rust reference for the current
-supported const operations.
+Supported const operations.
 
 :::
 
 ## Trait Aliases
 
 Trait aliases (unstable, feature gate `trait_alias`) allow you to create a shorthand for complex
-trait bounds:
+Trait bounds:
 
 ```rust
 #![feature(trait_alias)]
@@ -726,12 +726,12 @@ fn process<I: StringIterator>(iter: I) {
 ```
 
 As of Rust 1.85, trait aliases are not yet stable. The workaround is to define a new trait with the
-same bounds and a blanket implementation, or to use a type alias on generic parameters.
+Same bounds and a blanket implementation, or to use a type alias on generic parameters.
 
 ## Newtype Pattern with Traits
 
 The newtype pattern combined with traits is a powerful way to extend functionality without violating
-the orphan rule:
+The orphan rule:
 
 ```rust
 struct Wrapper<T>(Vec<T>);
@@ -764,9 +764,9 @@ impl<T> DerefMut for Wrapper<T> {
 }
 ```
 
-By implementing `Deref` and `DerefMut`, the `Wrapper` type gains access to all `Vec<T>` methods
-through deref coercion. This means you get custom behavior (`display_all`) plus all of `Vec<T>`'s
-methods.
+By implementing `Deref` and `DerefMut`The `Wrapper` type gains access to all `Vec<T>` methods
+Through deref coercion. This means you get custom behavior (`display_all`) plus all of `Vec<T>`'s
+Methods.
 
 ## Trait Objects vs Generics: Decision Framework
 
@@ -812,13 +812,13 @@ impl MyTrait for MyType {
 ```
 
 Since `private::Sealed` is in a private module, external crates cannot implement it, and therefore
-cannot implement `MyTrait`. This is the standard pattern for "private trait, public methods" in
-library design.
+Cannot implement `MyTrait`. This is the standard pattern for "private trait, public methods" in
+Library design.
 
 ### Extension Traits
 
 Add methods to types you do not own (e.g., standard library types) without violating the orphan
-rule:
+Rule:
 
 ```rust
 trait StrExt {
@@ -885,43 +885,51 @@ Wizard::fly(&person);              // Wizard::fly
 
 ## Common Pitfalls
 
-1. **Implementing `Clone` without considering `Copy`.** If all fields are `Copy`, you should also
-   derive `Copy`. Forgetting `Copy` on a type that could be `Copy` forces callers to clone
-   explicitly, which is unnecessary overhead and a code smell.
+1. **Implementing `Clone` without considering `Copy`.** If all fields are `Copy`You should also
+ derive `Copy`. Forgetting `Copy` on a type that could be `Copy` forces callers to clone
+ explicitly, which is unnecessary overhead and a code smell.
 
 2. **Generic bounds that are too loose.** `fn foo<T>(x: T)` where `T` has no bounds means the
-   function cannot do anything with `x` except move it. Always add the minimal set of bounds needed
-   for the function's operations.
+ function cannot do anything with `x` except move it. Always add the minimal set of bounds needed
+ for the function's operations.
 
 3. **Using `dyn Trait` when generics suffice.** Trait objects have runtime overhead (vtable lookup,
-   inability to inline, indirect calls). Use generics by default and only reach for `dyn Trait` when
-   you genuinely need runtime polymorphism (heterogeneous collections, plugin systems).
+ inability to inline, indirect calls). Use generics by default and only reach for `dyn Trait` when
+ you genuinely need runtime polymorphism (heterogeneous collections, plugin systems).
 
 4. **Not understanding object safety.** Trying to create `Vec<dyn Iterator>` will fail because
-   `Iterator` has a generic `Item` associated type. Use `Vec<Box<dyn Iterator<Item = i32>>>` or
-   define a wrapper trait that is object-safe.
+ `Iterator` has a generic `Item` associated type. Use `Vec<Box<dyn Iterator<Item = i32>>>` or
+ define a wrapper trait that is object-safe.
 
 5. **Blanket impl conflicts.** You cannot implement a trait for all `T` if there is already a
-   blanket impl that covers some `T`. For example, you cannot `impl Display for T` because there is
-   already a blanket impl `impl<T: Display> ToString for T`. This is a coherence restriction.
+ blanket impl that covers some `T`. For example, you cannot `impl Display for T` because there is
+ already a blanket impl `impl<T: Display> ToString for T`. This is a coherence restriction.
 
 6. **Associated type ambiguity.** If a trait has an associated type, you cannot call methods that
-   depend on the associated type without the compiler being able to infer it. Use turbofish syntax
-   or type annotations to resolve the ambiguity.
+ depend on the associated type without the compiler being able to infer it. Use turbofish syntax
+ or type annotations to resolve the ambiguity.
 
 7. **Trait bound proliferation.** Adding trait bounds to generic functions makes them less flexible.
-   Only add bounds that are actually needed by the function body. If a helper function needs a bound
-   but the public API does not, split the function into a public wrapper and a private helper.
+ Only add bounds that are actually needed by the function body. If a helper function needs a bound
+ but the public API does not, split the function into a public wrapper and a private helper.
 
 8. **Forgetting that `Sized` is the default.** `fn foo<T>(x: T)` implicitly requires `T: Sized`. If
-   you want to accept dynamically sized types (like `str` or `[u8]`), use
-   `fn foo<T: ?Sized>(x: &T)`.
+ you want to accept dynamically sized types (like `str` or `[u8]`), use
+ `fn foo<T: ?Sized>(x: &T)`.
 
 9. **Overusing `impl Trait` in return position.** `fn foo() -> impl Display` is convenient but
-   prevents the caller from knowing the concrete type. This makes it impossible to name the return
-   type in generic contexts. Use `impl Trait` for simple cases; use a named type or a trait object
-   when the caller needs type information.
+ prevents the caller from knowing the concrete type. This makes it impossible to name the return
+ type in generic contexts. Use `impl Trait` for simple cases; use a named type or a trait object
+ when the caller needs type information.
 
 10. **Confusing trait objects with generics in error handling.** `Box<dyn Error>` erases the error
-    type, making it impossible for callers to match on specific error variants. In libraries, prefer
-    concrete error types with `thiserror`. In applications, use `anyhow`.
+ type, making it impossible for callers to match on specific error variants. In libraries, prefer
+ concrete error types with `thiserror`. In applications, use `anyhow`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

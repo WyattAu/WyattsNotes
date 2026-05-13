@@ -7,12 +7,12 @@ slug: protocols-dunder-methods
 ## Data Model Protocols
 
 Python's data model defines a set of protocols that objects can implement to integrate with built-in
-operations. These are invoked by the interpreter, not called directly.
+Operations. These are invoked by the interpreter, not called directly.
 
 ### \_\_init\_\_ and \_\_new\_\_
 
 `__new__` creates the instance (controls object creation). `__init__` initializes it (controls
-object initialization):
+Object initialization):
 
 ```python
 class Singleton:
@@ -35,8 +35,8 @@ print(s1 is s2)  # True
 
 :::info
 `__new__` is a static method (receives the class, not the instance). It is rarely
-overridden. Use cases include: singletons, immutable types that need pre-initialization validation,
-and subclassing immutable built-in types like `str` and `int`.
+Overridden. Use cases include: singletons, immutable types that need pre-initialization validation,
+And subclassing immutable built-in types like `str` and `int`.
 :::
 
 ### \_\_repr\_\_ and \_\_str\_\_
@@ -121,9 +121,9 @@ print(versions[v2])  # "stable"
 ```
 
 :::warning
-If you define `__eq__` without `__hash__`, Python sets `__hash__ = None`, making the
-object unhashable. If you define `__hash__` without `__eq__`, objects may compare equal but hash
-differently, breaking dict and set invariants.
+If you define `__eq__` without `__hash__`Python sets `__hash__ = None`Making the
+Object unhashable. If you define `__hash__` without `__eq__`Objects may compare equal but hash
+Differently, breaking dict and set invariants.
 :::
 
 ### Rich Comparison
@@ -175,7 +175,7 @@ print(sorted([v2, v1]))  # [SemanticVersion(1, 2, 3), SemanticVersion(2, 0, 0)]
 ### Returning NotImplemented
 
 Always return `NotImplemented` (not raise `NotImplementedError`) when the other operand is an
-unsupported type. This allows Python to try the reflected operation on the other operand:
+Unsupported type. This allows Python to try the reflected operation on the other operand:
 
 ```python
 class Meter:
@@ -494,7 +494,7 @@ print(-v1)         # Vector(-1, -2)
 
 ### Reflected Operators
 
-When `a + b` fails because `type(a).__add__` returns `NotImplemented`, Python tries
+When `a + b` fails because `type(a).__add__` returns `NotImplemented`Python tries
 `type(b).__radd__(a)`. This enables operations with mixed types:
 
 ```python
@@ -524,7 +524,7 @@ c += Counter(5)  # Counter with value 20
 :::warning
 If `__iadd__` is not defined, Python falls back to `__add__` and assigns the result:
 `c = c + other`. This creates a new object. Define `__iadd__` when you want in-place mutation for
-performance.
+Performance.
 :::
 
 ## Bitwise Protocols
@@ -782,7 +782,7 @@ print(mk in s)  # May be False — hash changed but position didn't
 
 :::danger
 Never mutate objects that are used as dict keys or set members. If mutability is needed,
-use immutable snapshots or compute hash from immutable attributes.
+Use immutable snapshots or compute hash from immutable attributes.
 :::
 
 ### 5. \_\_del\_\_ and Circular References
@@ -852,3 +852,11 @@ class User:
     def __repr__(self):
         return f"User({self.name!r}, {self.email!r})"
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

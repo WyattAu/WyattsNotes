@@ -77,16 +77,16 @@ P0
 **Three thread models:**
 
 1. **1:1 (kernel-level):** Each user thread maps to one kernel thread. Examples: Linux pthreads, Windows threads.
-   - Advantage: True parallelism on multi-core; blocking system calls block only the calling thread.
-   - Disadvantage: Thread creation is expensive (kernel involvement); limited by kernel resources.
+ - Advantage: True parallelism on multi-core; blocking system calls block only the calling thread.
+ - Disadvantage: Thread creation is expensive (kernel involvement); limited by kernel resources.
 
 2. **N:1 (user-level):** All user threads map to one kernel thread. Examples: GNU Pth (historical).
-   - Advantage: Fast creation and switching (no kernel involvement); unlimited threads (within memory).
-   - Disadvantage: Cannot exploit multi-core; blocking system call blocks all threads.
+ - Advantage: Fast creation and switching (no kernel involvement); unlimited threads (within memory).
+ - Disadvantage: Cannot exploit multi-core; blocking system call blocks all threads.
 
 3. **M:N (hybrid):** $M$ user threads map to $N$ kernel threads ($M \geq N$). Examples: Solaris threads (historical), Go goroutines (with M:N scheduling).
-   - Advantage: Combines benefits of both; scheduler can adapt.
-   - Disadvantage: Complex implementation; scheduling decisions are harder.
+ - Advantage: Combines benefits of both; scheduler can adapt.
+ - Disadvantage: Complex implementation; scheduling decisions are harder.
 
 | Property | 1:1 | N:1 | M:N |
 |----------|-----|-----|-----|
@@ -122,38 +122,38 @@ Real-time systems require tasks to complete within strict timing constraints.
 
 **Theorem 1.2 (Liu and Layland, 1973).** A set of $n$ periodic tasks with utilisation $U = \sum_{i=1}^{n} C_i / T_i \leq n(2^{1/n} - 1)$ is schedulable under RMS, where $C_i$ is the computation time and $T_i$ is the period of task $i$.
 
-*Proof (sufficiency).* The critical instant for a task occurs when it is released simultaneously with all higher-priority tasks. The worst-case response time of task $i$ is $R_i = C_i + \sum_{j \in hp(i)} \lceil R_i / T_j \rceil \cdot C_j$. For $n$ tasks with equal utilisation $U_i = C_i/T_i$, the bound $n(2^{1/n} - 1)$ is derived by considering the maximum interference from higher-priority tasks at the critical instant. As $n \to \infty$, this bound approaches $\ln 2 \approx 0.693$. $\blacksquare$
+*Proof (sufficiency).* The critical instant for a task occurs when it is released simultaneously with all higher-priority tasks. The worst-case response time of task $i$ is $R_i = C_i + \sum_{j \in hp(i)} \lceil R_i / T_j \rceil \cdot C_j$. For $n$ tasks with equal utilisation $U_i = C_i/T_i$The bound $n(2^{1/n} - 1)$ is derived by considering the maximum interference from higher-priority tasks at the critical instant. As $n \to \infty$This bound approaches $\ln 2 \approx 0.693$. $\blacksquare$
 
 **Utilisation bounds for RMS:**
 
 | $n$ | Bound $n(2^{1/n} - 1)$ |
 |-----|------------------------|
-| 1   | 1.000                  |
-| 2   | 0.828                  |
-| 3   | 0.779                  |
-| 4   | 0.756                  |
-| 5   | 0.743                  |
+| 1 | 1.000 |
+| 2 | 0.828 |
+| 3 | 0.779 |
+| 4 | 0.756 |
+| 5 | 0.743 |
 | $\infty$ | $\ln 2 \approx 0.693$ |
 
 **Earliest Deadline First (EDF).** Dynamic-priority preemptive scheduling where the task with the nearest deadline has the highest priority.
 
 **Theorem 1.3.** EDF can schedule any task set with total utilisation $U \leq 1$. This is optimal among all preemptive uniprocessor scheduling algorithms.
 
-*Proof.* If $U \leq 1$, the total demand (computation time) in any interval $[0, t]$ does not exceed $t$. Since EDF always prioritises the task that must complete soonest, no deadline is missed if the total demand is feasible. $\blacksquare$
+*Proof.* If $U \leq 1$The total demand (computation time) in any interval $[0, t]$ does not exceed $t$. Since EDF always prioritises the task that must complete soonest, no deadline is missed if the total demand is feasible. $\blacksquare$
 
 <details>
 <summary>Worked Example: Rate-Monotonic Scheduling</summary>
 
 Three periodic tasks:
-- Task 1: $C_1 = 2$, $T_1 = 5$, $U_1 = 0.4$
-- Task 2: $C_2 = 2$, $T_2 = 10$, $U_2 = 0.2$
-- Task 3: $C_3 = 3$, $T_3 = 20$, $U_3 = 0.15$
+- Task 1: $C_1 = 2$$T_1 = 5$$U_1 = 0.4$
+- Task 2: $C_2 = 2$$T_2 = 10$$U_2 = 0.2$
+- Task 3: $C_3 = 3$$T_3 = 20$$U_3 = 0.15$
 
 Total utilisation: $U = 0.4 + 0.2 + 0.15 = 0.75$.
 
 RMS bound for $n = 3$: $3(2^{1/3} - 1) \approx 3(1.260 - 1) = 3 \times 0.260 = 0.779$.
 
-Since $0.75 \leq 0.779$, the task set is schedulable by RMS (sufficient condition).
+Since $0.75 \leq 0.779$The task set is schedulable by RMS (sufficient condition).
 
 Priority assignment (RMS): Task 1 has highest priority (shortest period $T_1 = 5$), then Task 2 ($T_2 = 10$), then Task 3 ($T_3 = 20$).
 
@@ -167,7 +167,7 @@ Task3:            [===]                        [===]
 
 Let me verify more carefully. At $t = 0$: all tasks arrive. Task 1 (highest priority) runs for 2 units (0--2). Task 2 runs for 2 units (2--4). Task 3 runs for 3 units (4--7).
 
-At $t = 5$: Task 1 released again. Preempt Task 3 (at $t = 7$... wait, Task 3 finishes at $t = 7$). Task 1 runs at $t = 5$, but Task 3 is still running (4--7). Preempt Task 3 at $t = 5$. Task 1 runs 5--7. Task 3 resumes at $t = 7$... but Task 1 already used 5--7. Task 3 had completed 1 unit (4--5), needs 2 more.
+At $t = 5$: Task 1 released again. Preempt Task 3 (at $t = 7$... Wait, Task 3 finishes at $t = 7$). Task 1 runs at $t = 5$But Task 3 is still running (4--7). Preempt Task 3 at $t = 5$. Task 1 runs 5--7. Task 3 resumes at $t = 7$... But Task 1 already used 5--7. Task 3 had completed 1 unit (4--5), needs 2 more.
 
 Let me redo:
 - $t = 0$: T1 arrives, runs 0--2.
@@ -176,7 +176,7 @@ Let me redo:
 - $t = 5$: T1 arrives (period 5), preempts T3. T1 runs 5--7.
 - $t = 7$: T3 resumes. T3 needs 2 more units (1 done at 4--5). T3 runs 7--9.
 - $t = 9$: T2? No, T2 next arrives at $t = 10$. T3 finishes at $t = 9$. Idle 9--10.
-- $t = 10$: T1 arrives, runs 10--12. T2 arrives at $t = 10$, but T1 has higher priority.
+- $t = 10$: T1 arrives, runs 10--12. T2 arrives at $t = 10$But T1 has higher priority.
 - $t = 12$: T2 runs 12--14.
 - $t = 14$: T3? T3 next arrives at $t = 20$. Idle 14--15.
 - $t = 15$: T1 arrives, runs 15--17.
@@ -283,7 +283,7 @@ A **futex** (fast userspace mutex) is a Linux synchronisation primitive that avo
 
 **RCU protocol:**
 
-1. **Reader:** Simply dereference the pointer. No memory barriers or locks needed (on most architectures).
+1. **Reader:** dereference the pointer. No memory barriers or locks needed (on most architectures).
 2. **Writer:** Allocate a new copy of the data structure, modify the copy, atomically update the pointer to point to the new copy.
 3. **Reclamation:** After a grace period (all pre-existing readers have finished), free the old copy.
 
@@ -304,7 +304,7 @@ A **sequence lock** allows readers to proceed without locking but requires them 
 - **Writer:** Increment sequence number, write data, increment sequence number again.
 - **Reader:** Read sequence number, read data, read sequence number again. If the two sequence numbers differ (or are odd), retry.
 
-**Use case:** Very small, frequently read data where writes are rare (e.g., `gettimeofday`, statistics counters).
+**Use case:** Very small, frequently read data where writes are rare (e.g., `gettimeofday`Statistics counters).
 
 ### 3.4 Memory Ordering
 
@@ -330,7 +330,7 @@ Modern processors reorder memory operations for performance. The programmer must
 | Release | (varies) | `stlr` | Preceding loads/stores cannot move after this |
 
 :::caution Common Pitfall
-x86-64 has a **stronger memory model** (TSO -- Total Store Order) than ARM and RISC-V. Code that works correctly on x86-64 may fail on ARM due to reordering. Always use proper synchronisation primitives (mutexes, atomic operations with explicit ordering) rather than relying on the hardware memory model.
+X86-64 has a **stronger memory model** (TSO -- Total Store Order) than ARM and RISC-V. Code that works correctly on x86-64 may fail on ARM due to reordering. Always use proper synchronisation primitives (mutexes, atomic operations with explicit ordering) rather than relying on the hardware memory model.
 :::
 
 <details>
@@ -351,7 +351,7 @@ if (ptr == NULL) {           // First check (no lock)
 return ptr;
 ```
 
-This is broken on ARM/POWER because: (1) the compiler may reorder the write to `ptr` before `init(ptr)`, and (2) the processor may reorder the store to `ptr` before stores inside `init(ptr)`. A reader on another CPU could see `ptr != NULL` but find the object not fully initialised.
+This is broken on ARM/POWER because: (1) the compiler may reorder the write to `ptr` before `init(ptr)`And (2) the processor may reorder the store to `ptr` before stores inside `init(ptr)`. A reader on another CPU could see `ptr != NULL` but find the object not fully initialised.
 
 **Correct version using C11 atomics:**
 
@@ -418,7 +418,7 @@ A **log-structured file system (LFS)** writes all modifications (data and metada
 
 $$\text{benefit{}(s) = \frac{\text{dead{}(s)}{1 - u(s)}$$
 
-where $u(s)$ is the utilisation of segment $s$.
+Where $u(s)$ is the utilisation of segment $s$.
 
 **Theorem 4.2 (Rosenblum and Ousterhout).** With optimal segment cleaning, LFS write throughput approaches the raw disk bandwidth for high utilisation, and requires 1.5--2x the write bandwidth for 90% utilisation.
 
@@ -547,7 +547,7 @@ A **capability** is an unforgeable token that identifies an object and the opera
 
 **Principle:** Access to resources is controlled by possession of capabilities, not by identity (as in ACL-based systems).
 
-**Advantages:** Principle of least privilege is enforced naturally; capabilities can be delegated.
+**Advantages:** Principle of least privilege is enforced ; capabilities can be delegated.
 
 **Disadvantages:** Revocation is difficult (once a capability is given, the receiver can copy it).
 
@@ -601,9 +601,9 @@ A **capability** is an unforgeable token that identifies an object and the opera
 | Processes | Related (parent-child) | Any (with filesystem access) |
 | Persistence | Process lifetime | Filesystem lifetime |
 | Blocking | Reader blocks on empty; writer blocks on full | Same |
-| Kernel buffer | Typically 64 KB | Typically 64 KB |
+| Kernel buffer | 64 KB | 64 KB |
 
-**Theorem 10.1.** A pipe has a fixed kernel buffer (typically one page or 64 KB). If the buffer is full, `write()` blocks. If the buffer is empty, `read()` blocks. If all write ends are closed, `read()` returns 0 (EOF).
+**Theorem 10.1.** A pipe has a fixed kernel buffer ( one page or 64 KB). If the buffer is full, `write()` blocks. If the buffer is empty, `read()` blocks. If all write ends are closed, `read()` returns 0 (EOF).
 
 ### 10.2 Message Queues
 
@@ -670,7 +670,7 @@ shmat(shmid, NULL, 0);
 
 **Signal handling issues:**
 
-1. **Reentrancy:** Only async-signal-safe functions can be called from signal handlers (e.g., `write`, `_exit`, `sigaction`). Functions like `malloc`, `printf`, and `strerror` are NOT async-signal-safe.
+1. **Reentrancy:** Only async-signal-safe functions can be called from signal handlers (e.g., `write``_exit``sigaction`). Functions like `malloc``printf`And `strerror` are NOT async-signal-safe.
 2. **Race conditions:** A signal may arrive between checking a condition and acting on it.
 3. **Signal masking:** `sigprocmask()` blocks specific signals during critical sections.
 
@@ -705,9 +705,9 @@ The **Completely Fair Scheduler (CFS)** is the default process scheduler in Linu
 
 1. Each task maintains a **virtual runtime** (`vruntime`), which is the actual runtime scaled by the task's priority (niceness).
 2. CFS always picks the task with the smallest `vruntime`.
-3. The `vruntime` increment per tick is: $\text{vruntime{} += \text{actual\_time{} \times \text{weight{}_0 / \text{weight{}$, where $\text{weight{}$ depends on the nice value.
+3. The `vruntime` increment per tick is: $\text{vruntime{} += \text{actual\_time{} \times \text{weight{}_0 / \text{weight{}$Where $\text{weight{}$ depends on the nice value.
 
-**Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period" (target latency, typically 6 ms). If there are $n$ tasks, each gets $6/n$ ms per period.
+**Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period" (target latency, 6 ms). If there are $n$ tasks, each gets $6/n$ ms per period.
 
 **Red-black tree.** CFS stores all runnable tasks in a red-black tree keyed by `vruntime`. The leftmost node (minimum `vruntime`) is selected next. Insertion and extraction take $O(\log n)$.
 
@@ -815,7 +815,7 @@ close(fd);
 
 Only the pages that are actually touched are read from disk (demand paging). For a 1 GB file, this takes 1 GB of virtual address space but only $n/4096$ pages of physical memory (where $n$ is the number of pages touched).
 
-With `read()`/`write()`, we would need a buffer, read each page into the buffer, modify it, and write it back. This involves an extra copy (kernel buffer to user buffer).
+With `read()`/`write()`We would need a buffer, read each page into the buffer, modify it, and write it back. This involves an extra copy (kernel buffer to user buffer).
 </details>
 
 ### 13.3 Memory-Mapped IPC
@@ -945,7 +945,7 @@ If R3 had 2 instances and the second instance is free: P4 could get the second i
 
 **Theorem 16.2.** Both wait-die and wound-wait prevent deadlocks and are starvation-free.
 
-*Proof (wait-die).* A cycle in the wait-for graph would require $T_1 \to T_2 \to \cdots \to T_k \to T_1$ where each arrow means "waiting for." In wait-die, a process only waits for older processes. So $T_1$ is older than $T_2$, $T_2$ is older than $T_3$, ..., $T_k$ is older than $T_1$. This is a contradiction ($T_1 > T_2 > \cdots > T_k > T_1$). Therefore no cycle exists. Starvation-freedom: a process only dies (aborts) if it is younger than the holder. After restarting, it retains its original timestamp, so it becomes "older" relative to new processes. Eventually, it will be the oldest and never die again. $\blacksquare$
+*Proof (wait-die).* A cycle in the wait-for graph would require $T_1 \to T_2 \to \cdots \to T_k \to T_1$ where each arrow means "waiting for." In wait-die, a process only waits for older processes. So $T_1$ is older than $T_2$$T_2$ is older than $T_3$..., $T_k$ is older than $T_1$. This is a contradiction ($T_1 > T_2 > \cdots > T_k > T_1$). Therefore no cycle exists. Starvation-freedom: a process only dies (aborts) if it is younger than the holder. After restarting, it retains its original timestamp, so it becomes "older" relative to new processes. Eventually, it will be the oldest and never die again. $\blacksquare$
 
 ### 16.3 Banker's Algorithm Detailed Example
 
@@ -971,15 +971,15 @@ Available = Total - sum(Allocation) = (10, 5, 7) - (7, 2, 5) = (3, 3, 2).
 **Safety check:**
 
 1. Available = (3, 3, 2). Can any process run? P1 needs (1, 2, 2) $\leq$ (3, 3, 2). Yes. Run P1.
-   After P1 completes: Available += P1's allocation = (3, 3, 2) + (2, 0, 0) = (5, 3, 2).
+ After P1 completes: Available += P1's allocation = (3, 3, 2) + (2, 0, 0) = (5, 3, 2).
 2. Available = (5, 3, 2). P3 needs (0, 1, 1) $\leq$ (5, 3, 2). Yes. Run P3.
-   Available += (2, 1, 1) = (7, 4, 3).
+ Available += (2, 1, 1) = (7, 4, 3).
 3. Available = (7, 4, 3). P4 needs (4, 3, 1) $\leq$ (7, 4, 3). Yes. Run P4.
-   Available += (0, 0, 2) = (7, 4, 5).
+ Available += (0, 0, 2) = (7, 4, 5).
 4. Available = (7, 4, 5). P0 needs (7, 4, 3) $\leq$ (7, 4, 5). Yes. Run P0.
-   Available += (0, 1, 0) = (7, 5, 5).
+ Available += (0, 1, 0) = (7, 5, 5).
 5. Available = (7, 5, 5). P2 needs (6, 0, 0) $\leq$ (7, 5, 5). Yes. Run P2.
-   Available += (3, 0, 2) = (10, 5, 7).
+ Available += (3, 0, 2) = (10, 5, 7).
 
 Safe sequence: P1, P3, P4, P0, P2. The state is safe.
 
@@ -993,9 +993,9 @@ P1: Allocation = (3, 0, 2), Need = (0, 2, 0).
 
 Safety check:
 1. Available = (2, 3, 0). P1 needs (0, 2, 0) $\leq$ (2, 3, 0). Yes. Run P1.
-   Available += (3, 0, 2) = (5, 3, 2).
+ Available += (3, 0, 2) = (5, 3, 2).
 2. Available = (5, 3, 2). P3 needs (0, 1, 1) $\leq$ (5, 3, 2). Yes. Run P3.
-   Available += (2, 1, 1) = (7, 4, 3).
+ Available += (2, 1, 1) = (7, 4, 3).
 3. P4: (4, 3, 1) $\leq$ (7, 4, 3). Yes. Available = (7, 4, 5).
 4. P0: (7, 4, 3) $\leq$ (7, 4, 5). Yes. Available = (7, 5, 5).
 5. P2: (6, 0, 0) $\leq$ (7, 5, 5). Yes.
@@ -1013,7 +1013,7 @@ The Banker's algorithm requires knowing the maximum resource needs of each proce
 
 **Problem 1.** A process calls `fork()` twice in sequence (not nested). Draw the process tree and determine how many processes exist. What if the parent calls `wait()` after each `fork()`?
 
-**Problem 2.** Three periodic real-time tasks with computation times and periods: $T_1 = (3, 6)$, $T_2 = (2, 8)$, $T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and (b) EDF. Draw the schedule for the first 24 time units under each algorithm.
+**Problem 2.** Three periodic real-time tasks with computation times and periods: $T_1 = (3, 6)$$T_2 = (2, 8)$$T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and (b) EDF. Draw the schedule for the first 24 time units under each algorithm.
 
 **Problem 3.** Compare the 1:1, N:1, and M:N thread models for an application with 1000 short-lived threads, each performing one blocking I/O operation. Which model is most appropriate and why?
 
@@ -1099,3 +1099,11 @@ void unlock(int *l) {
 
 If you get this wrong, revise: Section 3.4.
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

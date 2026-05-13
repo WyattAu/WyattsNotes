@@ -16,7 +16,7 @@ The element chromium (atomic number 24) has the electron configuration $[Ar]\,3d
 
 (b) Write the electron configuration of $Cr^{3+}$. [1 mark]
 
-(c) A student claims that $Cr^{3+}$ has the same electron configuration as the scandium atom ($Sc$, $Z = 21$). Determine whether this claim is correct, and explain your reasoning. [2 marks]
+(c) A student claims that $Cr^{3+}$ has the same electron configuration as the scandium atom ($Sc$$Z = 21$). Determine whether this claim is correct, and explain your reasoning. [2 marks]
 
 ---
 
@@ -24,7 +24,7 @@ The element chromium (atomic number 24) has the electron configuration $[Ar]\,3d
 
 (a) The half-filled $3d$ subshell ($3d^{5}$) and the singly-occupied $4s$ orbital provide extra stability due to **symmetrical electron distribution** and **exchange energy** (the energy lowering from parallel spins in degenerate orbitals). The energy gained from having five unpaired electrons with parallel spins in the $3d$ subshell outweighs the small energy difference between $3d$ and $4s$ orbitals.
 
-(b) When forming $Cr^{3+}$, electrons are removed from the **$4s$ orbital first** (since $4s$ is at a higher energy than $3d$ once the atom is ionised), then from $3d$:
+(b) When forming $Cr^{3+}$Electrons are removed from the **$4s$ orbital first** (since $4s$ is at a higher energy than $3d$ once the atom is ionised), then from $3d$:
 
 $$Cr^{3+}: [Ar]\,3d^{3}$$
 
@@ -44,12 +44,12 @@ The table below shows the first six successive ionisation energies of an element
 
 | Ionisation Energy | Value (kJ/mol) |
 |-------------------|-----------------|
-| 1st               | 578             |
-| 2nd               | 1817            |
-| 3rd               | 2745            |
-| 4th               | 11577           |
-| 5th               | 14842           |
-| 6th               | 18379           |
+| 1st | 578 |
+| 2nd | 1817 |
+| 3rd | 2745 |
+| 4th | 11577 |
+| 5th | 14842 |
+| 6th | 18379 |
 
 (a) Identify element $X$ and explain your reasoning. [3 marks]
 
@@ -61,9 +61,9 @@ The table below shows the first six successive ionisation energies of an element
 
 **Worked Solution**
 
-(a) Element $X$ is **aluminium** ($Al$, $Z = 13$).
+(a) Element $X$ is **aluminium** ($Al$$Z = 13$).
 
-Reasoning: There are three relatively low ionisation energies (578, 1817, 2745) followed by a large jump to 11577. This indicates that $X$ has **three valence electrons** in the outermost shell. The electron configuration is $1s^{2}2s^{2}2p^{6}3s^{2}3p^{1}$, which corresponds to aluminium.
+Reasoning: There are three relatively low ionisation energies (578, 1817, 2745) followed by a large jump to 11577. This indicates that $X$ has **three valence electrons** in the outermost shell. The electron configuration is $1s^{2}2s^{2}2p^{6}3s^{2}3p^{1}$Which corresponds to aluminium.
 
 (b) The first three electrons are removed from the **third shell** ($3s$ and $3p$). The 4th electron must be removed from the **second shell** ($2p$), which is much closer to the nucleus and experiences a much greater effective nuclear charge (significantly less shielding from inner electrons). Hence the large jump.
 
@@ -119,7 +119,7 @@ Element $Y$ is in Period 4. The ratio of its 3rd ionisation energy to its 2nd io
 
 (a) The large jump from 2nd to 3rd IE (ratio 8.5) indicates that the 3rd electron is removed from a new inner shell. The 4th IE is only 1.4 times the 3rd, meaning the 4th electron is still in the same shell as the 3rd. Therefore $Y$ has **two valence electrons** and is in **Group 2**.
 
-(b) $Y$ is in Group 2, Period 4: $Y = Ca$ ($Z = 20$). The element to its right is $Sc$ ($Z = 21$, Group 3, Period 4).
+(b) $Y$ is in Group 2, Period 4: $Y = Ca$ ($Z = 20$). The element to its right is $Sc$ ($Z = 21$Group 3, Period 4).
 
 The decrease from Ca ($419$) to Sc ($403$) occurs because:
 - Ca has the electron configuration $[Ar]\,4s^{2}$: both $4s$ electrons are paired in the same orbital.
@@ -133,7 +133,7 @@ The decrease from Ca ($419$) to Sc ($403$) occurs because:
 
 **Question**
 
-Consider the following species: $K^{+}$, $Ca^{2+}$, $Cl^{-}$, $Ar$, $S^{2-}$.
+Consider the following species: $K^{+}$$Ca^{2+}$$Cl^{-}$$Ar$$S^{2-}$.
 
 (a) Which species has the smallest ionic/atomic radius? Explain your reasoning. [3 marks]
 
@@ -196,8 +196,8 @@ Al's 2nd IE removes a $3p$ electron from $Al^{+}$ (configuration $1s^{2}2s^{2}2p
 
 Although $Mg^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{1}$) has only one valence electron (no pairing repulsion),
 $Al^{+}$ ($1s^{2}2s^{2}2p^{6}3s^{2}$) has $Z = 13$ and removing one $3s$ electron leaves $Al^{2+}$ with
-noble gas configuration. The greater nuclear charge of Al more than compensates for the pairing
-repulsion in the $3s$ orbital, making Al's 2nd IE higher.
+Noble gas configuration. The greater nuclear charge of Al more than compensates for the pairing
+Repulsion in the $3s$ orbital, making Al's 2nd IE higher.
 
 (c) Si 3rd IE: removes the third valence electron from $Si^{2+}$ ($1s^{2}2s^{2}2p^{6}3s^{1}$). This requires breaking into the noble gas core, producing $Si^{3+}$ ($1s^{2}2s^{2}2p^{5}$).
 

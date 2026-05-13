@@ -58,7 +58,7 @@ Consider the electrolysis of **concentrated aqueous sodium chloride** using iner
 
 **Worked Solution**
 
-(a) **Cathode (negative electrode)**: $Na^{+}$ and $H_{2}O$ are present. $H_{2}O$ is reduced in preference to $Na^{+}$ (since $Na$ is very reactive, below hydrogen in the reactivity series; $H^{+}$ from water is more easily reduced):
+(a) **Cathode (negative electrode)**: $Na^{+}$ and $H_{2}O$ are present. $H_{2}O$ is reduced in preference to $Na^{+}$ (since $Na$ is very reactive, below hydrogen in the reactivity series; $H^{+}$ from water is more reduced):
 
 $$2H_{2}O(l) + 2e^{-} \rightarrow H_{2}(g) + 2OH^{-}(aq)$$
 
@@ -80,7 +80,7 @@ $$2NaCl(aq) + 2H_{2}O(l) \xrightarrow{\text{electrolysis}} Cl_{2}(g) + H_{2}(g) 
 
 $$4OH^{-}(aq) \rightarrow O_{2}(g) + 2H_{2}O(l) + 4e^{-}$$
 
-or equivalently:
+Or equivalently:
 
 $$2H_{2}O(l) \rightarrow O_{2}(g) + 4H^{+}(aq) + 4e^{-}$$
 
@@ -159,7 +159,7 @@ Reduction: $Cu^{2+} + 2e^{-} \rightarrow Cu$ ($E^{\circ} = +0.34$ V)
 
 $$E^{\circ}_{\text{cell}} = 0.34 - (-0.76) = +1.10 \text{ V}$$
 
-Since $E^{\circ}_{\text{cell}} \gt 0$, the reaction is feasible:
+Since $E^{\circ}_{\text{cell}} \gt 0$The reaction is feasible:
 
 $$Zn(s) + Cu^{2+}(aq) \rightarrow Zn^{2+}(aq) + Cu(s)$$
 
@@ -232,7 +232,7 @@ Standard electrode potentials: $Sn^{2+}/Sn = -0.14$ V; $Cu^{2+}/Cu = +0.34$ V.
 
 (b) Write the overall cell reaction. [1 mark]
 
-(c) If the concentration of $Sn^{2+}$ is increased to 5.0 mol/dm$^{3}$ while $[Cu^{2+}]$ remains at 1.0 mol/dm$^{3}$, use the Nernst equation to predict the effect on the cell EMF. [4 marks]
+(c) If the concentration of $Sn^{2+}$ is increased to 5.0 mol/dm$^{3}$ while $[Cu^{2+}]$ remains at 1.0 mol/dm$^{3}$Use the Nernst equation to predict the effect on the cell EMF. [4 marks]
 
 ---
 

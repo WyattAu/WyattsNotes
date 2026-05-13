@@ -11,7 +11,7 @@ categories:
 ## Calling Java from Kotlin
 
 Kotlin code can call any Java class, method, or field without adapters or wrappers. This is a
-fundamental design principle of the language.
+Fundamental design principle of the language.
 
 ```kotlin
 import java.time.LocalDateTime
@@ -49,8 +49,8 @@ println(user.name)     // calls getName()
 ### Nullability and Platform Types
 
 Java has no nullability information in its type system. When Kotlin calls Java code, the types are
-represented as **platform types**, written as `T!`. The compiler neither enforces null safety nor
-guarantees non-nullity for platform types.
+Represented as **platform types**, written as `T!`. The compiler neither enforces null safety nor
+Guarantees non-nullity for platform types.
 
 ```kotlin
 val list: MutableList<String!> = ArrayList()  // platform type
@@ -108,7 +108,7 @@ val nickname: String? = service.getNickname()
 
 Kotlin top-level functions are compiled to static methods in a class named after the file (with a
 `Kt` suffix). Use `@JvmName` to customize the class name and `@JvmField` to expose properties as
-fields.
+Fields.
 
 ```kotlin
 // File: StringHelpers.kt
@@ -147,7 +147,7 @@ long result = MathUtils.factorial(10);
 ### Properties
 
 Kotlin properties are accessed via getters and setters from Java. Use `@JvmField` to expose the
-backing field directly.
+Backing field directly.
 
 ```kotlin
 class Config {
@@ -195,7 +195,7 @@ Response get(String path, Map<String, String> headers);
 ### Companion Object Members
 
 Members in companion objects are accessed via the `Companion` class from Java. Use `@JvmStatic` to
-generate true static methods.
+Generate true static methods.
 
 ```kotlin
 class Database {
@@ -221,7 +221,7 @@ Database.Companion.disconnect();  // without @JvmStatic
 ## SAM Conversions
 
 SAM (Single Abstract Method) conversions allow a lambda to be converted to a Java functional
-interface implementation.
+Interface implementation.
 
 ```kotlin
 // Java functional interface
@@ -242,7 +242,7 @@ executor.execute { task ->
 ```
 
 SAM conversion works for Java interfaces with exactly one abstract method. For Kotlin interfaces,
-use the `fun interface` keyword to enable SAM conversion:
+Use the `fun interface` keyword to enable SAM conversion:
 
 ```kotlin
 fun interface Predicate<T> {
@@ -264,13 +264,13 @@ class Button @JvmOverloads constructor(
 )
 ```
 
-Generates three constructors accessible from Java: `Button(String)`, `Button(String, int)`,
+Generates three constructors accessible from Java: `Button(String)``Button(String, int)`
 `Button(String, int, int)`.
 
 ### @Throws for Checked Exceptions
 
 Kotlin does not have checked exceptions, but Java callers may need them declared. Use `@Throws` to
-specify which exceptions the function can throw.
+Specify which exceptions the function can throw.
 
 ```kotlin
 @Throws(IOException::class)
@@ -293,7 +293,7 @@ try {
 ### Unit
 
 `Unit` in Kotlin maps to `void` when called from Java. A Kotlin function returning `Unit` is
-callable as a `void` method from Java.
+Callable as a `void` method from Java.
 
 ### Nothing
 
@@ -302,19 +302,27 @@ callable as a `void` method from Java.
 ### Kotlin Collections from Java
 
 Java code sees Kotlin's read-only collection types as their mutable equivalents (e.g., `List` is
-seen as `java.util.List`). This is because Kotlin's read-only interfaces extend Java's mutable
-interfaces for compatibility.
+Seen as `java.util.List`). This is because Kotlin's read-only interfaces extend Java's mutable
+Interfaces for compatibility.
 
 ## Common Pitfalls
 
 - \*\* Ignoring platform types. Always annotate Java APIs with nullability annotations when both
-  Java and Kotlin code share the codebase. Unannotated Java APIs create a null safety gap.
+ Java and Kotlin code share the codebase. Unannotated Java APIs create a null safety gap.
 - \*\* Forgetting `@JvmStatic` on companion object members. Without it, Java callers must use
-  `ClassName.Companion.method()`, which is awkward.
+ `ClassName.Companion.method()`Which is awkward.
 - \*\* Forgetting `@JvmOverloads` for constructors and methods with default parameters. Java cannot
-  use Kotlin default parameters.
+ use Kotlin default parameters.
 - \*\* Assuming Kotlin's read-only collections are immutable when accessed from Java. Java sees
-  `kotlin.collections.List` as `java.util.List`, so it can call `add()`, `remove()`, etc. Use
-  `Collections.unmodifiableList()` or Kotlinx immutable collections for true immutability.
+ `kotlin.collections.List` as `java.util.List`So it can call `add()``remove()`Etc. Use
+ `Collections.unmodifiableList()` or Kotlinx immutable collections for true immutability.
 - \*\* Using Kotlin extension functions from Java. Extension functions compile to static methods, so
-  Java callers must call them explicitly: `ExtensionKt.functionName(receiver, args)`.
+ Java callers must call them explicitly: `ExtensionKt.functionName(receiver, args)`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -7,9 +7,9 @@ sidebar_position: 1
 ---
 ## Network Interface Management (iproute2)
 
-The `iproute2` suite has replaced the legacy `net-tools` (`ifconfig`, `route`, `netstat`) as the
-standard Linux network management toolset. It provides a consistent interface for managing
-interfaces, addresses, routes, tunnels, and policies.
+The `iproute2` suite has replaced the legacy `net-tools` (`ifconfig``route``netstat`) as the
+Standard Linux network management toolset. It provides a consistent interface for managing
+Interfaces, addresses, routes, tunnels, and policies.
 
 ```mermaid
 graph TD
@@ -60,13 +60,13 @@ ip addr show eth0
 
 Modern Linux uses **predictable network interface names** instead of `eth0`:
 
-| Naming Scheme | Format                             | Example           |
+| Naming Scheme | Format | Example |
 | ------------- | ---------------------------------- | ----------------- |
-| `biosdevname` | BIOS-provided names                | `em1`, `p1p1`     |
-| `systemd`     | Based on bus/slot/location         | `enp3s0`, `ens3`  |
-| `slot`        | Physical slot number               | `enp3s0`          |
-| `path`        | Physical topology path             | `enx78e7d1ea46da` |
-| `mac`         | MAC address (for USB/dock devices) | `enx78e7d1ea46da` |
+| `biosdevname` | BIOS-provided names | `em1``p1p1` |
+| `systemd` | Based on bus/slot/location | `enp3s0``ens3` |
+| `slot` | Physical slot number | `enp3s0` |
+| `path` | Physical topology path | `enx78e7d1ea46da` |
+| `mac` | MAC address (for USB/dock devices) | `enx78e7d1ea46da` |
 
 To revert to classic names, add `net.ifnames=0 biosdevname=0` to the kernel command line.
 
@@ -132,7 +132,7 @@ ip route flush table cache    # flush routing cache
 ### Policy Routing
 
 Linux supports multiple routing tables and policy-based routing (PBR). The `ip rule` command selects
-which routing table to use based on source address, destination address, TOS, firewall mark, etc.
+Which routing table to use based on source address, destination address, TOS, firewall mark, etc.
 
 ```bash
 # List routing rules
@@ -214,8 +214,8 @@ hosts: files dns mdns4_minimal [NOTFOUND=return] dns
 ```
 
 The lookup order: local files (`/etc/hosts`) first, then DNS. The `mdns4_minimal` entry handles
-multicast DNS (`.local` domain) and returns NOTFOUND for non-`.local` names, which then falls
-through to regular DNS.
+Multicast DNS (`.local` domain) and returns NOTFOUND for non-`.local` names, which then falls
+Through to regular DNS.
 
 ### `dig` and `nslookup`
 
@@ -247,7 +247,7 @@ dig +dnssec example.com
 ## Netfilter Framework
 
 Netfilter is the kernel-level packet filtering framework that provides hooks at five points in the
-networking stack. It is the foundation for `iptables`, `nftables`, and connection tracking.
+Networking stack. It is the foundation for `iptables``nftables`And connection tracking.
 
 ### Netfilter Hooks
 
@@ -264,26 +264,26 @@ graph LR
     H --> I[Outgoing Packet]
 ```
 
-| Hook                     | Chains (iptables) | Description                                 |
+| Hook | Chains (iptables) | Description |
 | ------------------------ | ----------------- | ------------------------------------------- |
-| **NF_INET_PRE_ROUTING**  | `PREROUTING`      | Before routing decision — DNAT, mangling    |
-| **NF_INET_LOCAL_IN**     | `INPUT`           | Packets destined for local processes        |
-| **NF_INET_FORWARD**      | `FORWARD`         | Packets being forwarded (router)            |
-| **NF_INET_LOCAL_OUT**    | `OUTPUT`          | Packets originating from local processes    |
-| **NF_INET_POST_ROUTING** | `POSTROUTING`     | After routing decision — SNAT, masquerading |
+| **NF_INET_PRE_ROUTING** | `PREROUTING` | Before routing decision — DNAT, mangling |
+| **NF_INET_LOCAL_IN** | `INPUT` | Packets destined for local processes |
+| **NF_INET_FORWARD** | `FORWARD` | Packets being forwarded (router) |
+| **NF_INET_LOCAL_OUT** | `OUTPUT` | Packets originating from local processes |
+| **NF_INET_POST_ROUTING** | `POSTROUTING` | After routing decision — SNAT, masquerading |
 
 ### Connection Tracking (conntrack)
 
 The `nf_conntrack` module tracks the state of network connections. It classifies packets into
-connection states:
+Connection states:
 
-| State         | Description                                                           |
+| State | Description |
 | ------------- | --------------------------------------------------------------------- |
-| `NEW`         | First packet of a connection (no matching entry yet)                  |
-| `ESTABLISHED` | Connection is established (both directions seen)                      |
-| `RELATED`     | Packet related to an existing connection (e.g., FTP data, ICMP error) |
-| `UNREPLIED`   | Connection entry exists but no response packet seen                   |
-| `INVALID`     | Packet does not match any known connection                            |
+| `NEW` | First packet of a connection (no matching entry yet) |
+| `ESTABLISHED` | Connection is established (both directions seen) |
+| `RELATED` | Packet related to an existing connection (e.g., FTP data, ICMP error) |
+| `UNREPLIED` | Connection entry exists but no response packet seen |
+| `INVALID` | Packet does not match any known connection |
 
 ```bash
 # View connection tracking table
@@ -309,26 +309,26 @@ sysctl -w net.netfilter.nf_conntrack_max=262144
 :::warning
 
 The conntrack table has a fixed size (default varies, often 65536-262144). When the table is full,
-new connections are dropped with no error logged. This is a common cause of "mysterious" connection
-failures under high load. Monitor `net.netfilter.nf_conntrack_count` vs
+New connections are dropped with no error logged. This is a common cause of "mysterious" connection
+Failures under high load. Monitor `net.netfilter.nf_conntrack_count` vs
 `net.netfilter.nf_conntrack_max`.
 
 :::
 
 ## iptables
 
-iptables is the legacy user-space interface to netfilter. It organizes rules into tables, chains,
-and rules with matches and targets.
+Iptables is the legacy user-space interface to netfilter. It organizes rules into tables, chains,
+And rules with matches and targets.
 
 ### Tables and Chains
 
-| Table      | Chains Available                                | Purpose                                          |
+| Table | Chains Available | Purpose |
 | ---------- | ----------------------------------------------- | ------------------------------------------------ |
-| `filter`   | INPUT, FORWARD, OUTPUT                          | Packet filtering (accept/drop/reject)            |
-| `nat`      | PREROUTING, POSTROUTING, OUTPUT                 | Network address translation                      |
-| `mangle`   | PREROUTING, INPUT, FORWARD, OUTPUT, POSTROUTING | Packet modification (TOS, TTL, marks)            |
-| `raw`      | PREROUTING, OUTPUT                              | Disable connection tracking for specific packets |
-| `security` | INPUT, FORWARD, OUTPUT                          | SELinux security context filtering               |
+| `filter` | INPUT, FORWARD, OUTPUT | Packet filtering (accept/drop/reject) |
+| `nat` | PREROUTING, POSTROUTING, OUTPUT | Network address translation |
+| `mangle` | PREROUTING, INPUT, FORWARD, OUTPUT, POSTROUTING | Packet modification (TOS, TTL, marks) |
+| `raw` | PREROUTING, OUTPUT | Disable connection tracking for specific packets |
+| `security` | INPUT, FORWARD, OUTPUT | SELinux security context filtering |
 
 ### Common iptables Operations
 
@@ -391,33 +391,33 @@ iptables-restore < /etc/iptables/rules.v4
 iptables -t table -A chain [matches] -j target
 ```
 
-| Component   | Examples                                                    |
+| Component | Examples |
 | ----------- | ----------------------------------------------------------- |
-| `-p proto`  | `tcp`, `udp`, `icmp`, `all`                                 |
-| `-s src`    | IP address or CIDR                                          |
-| `-d dst`    | IP address or CIDR                                          |
-| `-i in-if`  | Input interface                                             |
-| `-o out-if` | Output interface                                            |
-| `--dport`   | Destination port (requires `-p tcp/udp`)                    |
-| `--sport`   | Source port                                                 |
-| `-m match`  | Module: `conntrack`, `limit`, `multiport`, `state`, `mac`   |
-| `-j target` | `ACCEPT`, `DROP`, `REJECT`, `LOG`, `RETURN`, `DNAT`, `SNAT` |
+| `-p proto` | `tcp``udp``icmp``all` |
+| `-s src` | IP address or CIDR |
+| `-d dst` | IP address or CIDR |
+| `-i in-if` | Input interface |
+| `-o out-if` | Output interface |
+| `--dport` | Destination port (requires `-p tcp/udp`) |
+| `--sport` | Source port |
+| `-m match` | Module: `conntrack``limit``multiport``state``mac` |
+| `-j target` | `ACCEPT``DROP``REJECT``LOG``RETURN``DNAT``SNAT` |
 
 ## nftables
 
-nftables is the successor to iptables, designed from the ground up for better performance, more
-consistent syntax, and atomic rule replacement.
+Nftables is the successor to iptables, designed from the ground up for better performance, more
+Consistent syntax, and atomic rule replacement.
 
 ### Key Differences from iptables
 
-| Aspect             | iptables                              | nftables                          |
+| Aspect | iptables | nftables |
 | ------------------ | ------------------------------------- | --------------------------------- |
-| **Rule storage**   | Linear list per chain                 | Sets and maps (lookup tables)     |
-| **Atomic replace** | No (requires iptables-restore)        | Yes (atomic rule set replacement) |
-| **Performance**    | O(n) rule matching per chain          | O(1) lookups with sets and maps   |
-| **Syntax**         | Multiple commands, inconsistent flags | Single consistent syntax          |
-| **Kernel module**  | Multiple (xt\_)                       | Single `nf_tables`                |
-| **IPv4/IPv6**      | Separate (`iptables`/`ip6tables`)     | Unified (`nft`)                   |
+| **Rule storage** | Linear list per chain | Sets and maps (lookup tables) |
+| **Atomic replace** | No (requires iptables-restore) | Yes (atomic rule set replacement) |
+| **Performance** | O(n) rule matching per chain | O(1) lookups with sets and maps |
+| **Syntax** | Multiple commands, inconsistent flags | Single consistent syntax |
+| **Kernel module** | Multiple (xt\_) | Single `nf_tables` |
+| **IPv4/IPv6** | Separate (`iptables`/`ip6tables`) | Unified (`nft`) |
 
 ### nftables Configuration
 
@@ -507,8 +507,8 @@ systemctl enable --now nftables
 ## Network Namespaces
 
 Network namespaces provide complete network stack isolation — each namespace has its own interfaces,
-routing tables, ARP tables, firewall rules, and `/proc/net` view. This is the foundation of
-container networking.
+Routing tables, ARP tables, firewall rules, and `/proc/net` view. This is the foundation of
+Container networking.
 
 ```mermaid
 graph TD
@@ -759,8 +759,8 @@ sysctl --system
 
 ### Pitfall: iptables Rules Not Persisted
 
-iptables rules are not automatically saved. After a reboot, rules revert to the default. Always save
-rules:
+Iptables rules are not automatically saved. After a reboot, rules revert to the default. Always save
+Rules:
 
 ```bash
 # Debian/Ubuntu
@@ -777,7 +777,7 @@ nft list ruleset > /etc/nftables.conf
 ### Pitfall: Conntrack Table Exhaustion
 
 Under high connection rates (web servers, proxies), the conntrack table can fill up, causing new
-connections to be silently dropped:
+Connections to be silently dropped:
 
 ```bash
 # Check current usage
@@ -796,7 +796,7 @@ echo "net.netfilter.nf_conntrack_tcp_timeout_time_wait = 30" >> /etc/sysctl.d/99
 ### Pitfall: MTU Mismatch and Path MTU Discovery
 
 If Path MTU Discovery (PMTUD) fails (e.g., ICMP blocked by firewall), large packets are silently
-dropped. Symptoms include: small requests work, large requests hang or fail.
+Dropped. Symptoms include: small requests work, large requests hang or fail.
 
 ```bash
 # Check for MTU issues
@@ -814,7 +814,7 @@ iptables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --cla
 ### Pitfall: Default Policy DROP Without Allowing Established
 
 A common firewall mistake is setting `INPUT` policy to `DROP` without first adding a rule to accept
-established connections:
+Established connections:
 
 ```bash
 # WRONG — drops responses to outgoing requests
@@ -829,7 +829,7 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 
 ### Pitfall: Loopback Not Allowed
 
-If `INPUT` policy is `DROP`, you must explicitly allow loopback traffic. Many local services (MySQL,
+If `INPUT` policy is `DROP`You must explicitly allow loopback traffic. Many local services (MySQL,
 PostgreSQL, web servers) communicate over the loopback interface:
 
 ```bash
@@ -839,7 +839,7 @@ iptables -A INPUT -i lo -j ACCEPT
 ### Pitfall: Mixing iptables and nftables
 
 On modern systems, the `iptables` command may be translated to nftables via the `iptables-nft`
-compatibility layer. This means `iptables-save` output may not reflect the actual ruleset. Use
+Compatibility layer. This means `iptables-save` output may not reflect the actual ruleset. Use
 `nft list ruleset` to see the authoritative state:
 
 ```bash
@@ -858,3 +858,11 @@ After changing interface configuration with `ip` commands, DNS resolution may br
 resolvectl flush-caches
 systemctl restart systemd-resolved
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

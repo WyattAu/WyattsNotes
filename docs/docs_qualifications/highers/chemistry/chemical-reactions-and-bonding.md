@@ -17,8 +17,8 @@ slug: chemical-reactions-and-bonding
 
 **Ionic Bonding:**
 
-The electrostatic attraction between oppositely charged ions formed by electron transfer. Typically
-occurs between metals (Groups 1, 2) and non-metals (Groups 6, 7).
+The electrostatic attraction between oppositely charged ions formed by electron transfer. 
+Occurs between metals (Groups 1, 2) and non-metals (Groups 6, 7).
 
 **Properties of ionic compounds:**
 
@@ -37,10 +37,10 @@ $$\mathrm{Mg(s){} + \tfrac{1}{2}\mathrm{O{}_2\mathrm{(g){} \to \mathrm{MgO(s){}$
 
 Calcium ($Z = 20$) has electron configuration $2, 8, 8, 2$. It loses two electrons to form
 $\mathrm{Ca{}^{2+}$ ($2, 8, 8$). Each fluorine ($Z = 9$) has electron configuration $2, 7$ and gains
-one electron to form $\mathrm{F{}^-$ ($2, 8$). The dot-and-cross diagram shows two electrons
-transferred from calcium (crosses) to one electron each accepted by two fluorine atoms (dots). The
-resulting $\mathrm{Ca{}^{2+}$ and two $\mathrm{F{}^-$ ions are held together by electrostatic attraction
-in a giant ionic lattice.
+One electron to form $\mathrm{F{}^-$ ($2, 8$). The dot-and-cross diagram shows two electrons
+Transferred from calcium (crosses) to one electron each accepted by two fluorine atoms (dots). The
+Resulting $\mathrm{Ca{}^{2+}$ and two $\mathrm{F{}^-$ ions are held together by electrostatic attraction
+In a giant ionic lattice.
 
 **Covalent Bonding:**
 
@@ -48,17 +48,17 @@ A shared pair of electrons between two atoms. Covalent bonds can be single, doub
 
 **Properties of covalent substances:**
 
-- Simple molecular: low melting points, do not conduct electricity (e.g., $\mathrm{H{}_2\mathrm{O{}$,
-  $\mathrm{CO{}_2$)
+- Simple molecular: low melting points, do not conduct electricity (e.g., $\mathrm{H{}_2\mathrm{O{}$
+ $\mathrm{CO{}_2$)
 - Giant covalent (macromolecular): very high melting points (e.g., diamond, graphite, silicon
-  dioxide)
+ dioxide)
 
 **Worked Example 2:** Draw a dot-and-cross diagram for $\mathrm{H{}_2\mathrm{S{}$.
 
 Sulfur ($Z = 16$) has electron configuration $2, 8, 6$. It needs two electrons to complete its outer
-shell. Each hydrogen ($Z = 1$) contributes one electron. Two single covalent bonds form, each
-consisting of one shared pair. The shape predicted by VSEPR is bent (two bonding pairs and two lone
-pairs on sulfur).
+Shell. Each hydrogen ($Z = 1$) contributes one electron. Two single covalent bonds form, each
+Consisting of one shared pair. The shape predicted by VSEPR is bent (two bonding pairs and two lone
+Pairs on sulfur).
 
 **Metallic Bonding:**
 
@@ -73,18 +73,18 @@ Positive metal ions in a "sea" of delocalised electrons.
 
 ### Comparison of Bonding Types
 
-| Property                | Ionic                 | Covalent (simple molecular) | Covalent (giant)        | Metallic                 |
+| Property | Ionic | Covalent (simple molecular) | Covalent (giant) | Metallic |
 | ----------------------- | --------------------- | --------------------------- | ----------------------- | ------------------------ |
-| Melting/boiling point   | High                  | Low                         | Very high               | High (variable)          |
-| Electrical conductivity | Molten/dissolved only | None                        | Graphite only           | Good                     |
-| Solubility in water     | Generally soluble     | Generally insoluble         | Insoluble               | Insoluble                |
-| Hardness                | Hard, brittle         | Soft                        | Very hard               | Malleable                |
-| Example                 | $\mathrm{NaCl{}$         | $\mathrm{H{}_2\mathrm{O{}$        | Diamond, $\mathrm{SiO{}_2$ | $\mathrm{Fe{}$, $\mathrm{Cu{}$ |
+| Melting/boiling point | High | Low | Very high | High (variable) |
+| Electrical conductivity | Molten/dissolved only | None | Graphite only | Good |
+| Solubility in water | Generally soluble | Generally insoluble | Insoluble | Insoluble |
+| Hardness | Hard, brittle | Soft | Very hard | Malleable |
+| Example | $\mathrm{NaCl{}$ | $\mathrm{H{}_2\mathrm{O{}$ | Diamond, $\mathrm{SiO{}_2$ | $\mathrm{Fe{}$$\mathrm{Cu{}$ |
 
 ### Electronegativity and Bond Polarity
 
 **Electronegativity** is the ability of an atom to attract the bonding electrons towards itself in a
-covalent bond.
+Covalent bond.
 
 **Pauling Scale:**
 
@@ -103,56 +103,56 @@ covalent bond.
 - If greater than 1.7: ionic
 
 **Dipole moment:** A polar molecule has an overall dipole moment, which is the vector sum of
-individual bond dipoles.
+Individual bond dipoles.
 
 **Example:** $\mathrm{H{}_2\mathrm{O{}$ is a polar molecule because the bond dipoles do not cancel (bent
-shape). $\mathrm{CO{}_2$ is non-polar because the bond dipoles cancel (linear shape).
+Shape). $\mathrm{CO{}_2$ is non-polar because the bond dipoles cancel (linear shape).
 
 **Worked Example 3:** Determine whether $\mathrm{NH{}_3$ and $\mathrm{BF{}_3$ are polar or non-polar.
 
 $\mathrm{NH{}_3$: Nitrogen ($\mathrm{EN{} = 3.04$) and hydrogen ($\mathrm{EN{} = 2.20$) give
-$\Delta\mathrm{EN{} = 0.84$, so each N-H bond is polar. The molecule has trigonal pyramidal shape
+$\Delta\mathrm{EN{} = 0.84$So each N-H bond is polar. The molecule has trigonal pyramidal shape
 (three bonding pairs, one lone pair). The bond dipoles do not cancel, so $\mathrm{NH{}_3$ is polar.
 
 $\mathrm{BF{}_3$: Boron ($\mathrm{EN{} = 2.04$) and fluorine ($\mathrm{EN{} = 3.98$) give
-$\Delta\mathrm{EN{} = 1.94$, so each B-F bond is polar. The molecule is trigonal planar and the bond
-dipoles cancel perfectly, so $\mathrm{BF{}_3$ is non-polar.
+$\Delta\mathrm{EN{} = 1.94$So each B-F bond is polar. The molecule is trigonal planar and the bond
+Dipoles cancel perfectly, so $\mathrm{BF{}_3$ is non-polar.
 
 ### Molecular Shape (VSEPR Theory)
 
 The Valence Shell Electron Pair Repulsion (VSEPR) theory predicts molecular shapes based on electron
-pair repulsion.
+Pair repulsion.
 
-| Electron Pairs | Shape                | Bond Angle | Example         |
+| Electron Pairs | Shape | Bond Angle | Example |
 | -------------- | -------------------- | ---------- | --------------- |
-| 2              | Linear               | 180°       | $\mathrm{BeCl{}_2$ |
-| 3              | Trigonal planar      | 120°       | $\mathrm{BF{}_3$   |
-| 4              | Tetrahedral          | 109.5°     | $\mathrm{CH{}_4$   |
-| 5              | Trigonal bipyramidal | 90°, 120°  | $\mathrm{PCl{}_5$  |
-| 6              | Octahedral           | 90°        | $\mathrm{SF{}_6$   |
+| 2 | Linear | 180° | $\mathrm{BeCl{}_2$ |
+| 3 | Trigonal planar | 120° | $\mathrm{BF{}_3$ |
+| 4 | Tetrahedral | 109.5° | $\mathrm{CH{}_4$ |
+| 5 | Trigonal bipyramidal | 90°, 120° | $\mathrm{PCl{}_5$ |
+| 6 | Octahedral | 90° | $\mathrm{SF{}_6$ |
 
 **Lone pairs** occupy more space than bonding pairs, reducing bond angles:
 
-| Bonding/Lone Pairs | Shape              | Bond Angle | Example              |
+| Bonding/Lone Pairs | Shape | Bond Angle | Example |
 | ------------------ | ------------------ | ---------- | -------------------- |
-| 3 bonding, 1 lone  | Trigonal pyramidal | 107°       | $\mathrm{NH{}_3$        |
-| 2 bonding, 2 lone  | Bent               | 104.5°     | $\mathrm{H{}_2\mathrm{O{}$ |
+| 3 bonding, 1 lone | Trigonal pyramidal | 107° | $\mathrm{NH{}_3$ |
+| 2 bonding, 2 lone | Bent | 104.5° | $\mathrm{H{}_2\mathrm{O{}$ |
 
 **Derivation of bond angles using VSEPR:**
 
 The electron pairs around a central atom repel each other to positions that maximise separation. For
-four electron pairs (tetrahedral), the angle that maximises separation in three dimensions is
+Four electron pairs (tetrahedral), the angle that maximises separation in three dimensions is
 $\arccos(-1/3) \approx 109.5^\circ$. When lone pairs replace bonding pairs, the lone pair--bond pair
-repulsion is greater than bond pair--bond pair repulsion, compressing the remaining bond angles.
+Repulsion is greater than bond pair--bond pair repulsion, compressing the remaining bond angles.
 This explains why $\mathrm{NH{}_3$ has bond angles of $107^\circ$ and $\mathrm{H{}_2\mathrm{O{}$ has $104.5^\circ$.
 
 **Worked Example 4:** Predict the shape and bond angle of $\mathrm{SF{}_4$.
 
 Sulfur in $\mathrm{SF{}_4$ has 6 valence electrons. Four are used in S-F bonds, leaving one lone pair.
 Total electron domains = 5 (4 bonding + 1 lone pair). This corresponds to a trigonal bipyramidal
-electron geometry. The lone pair occupies an equatorial position to minimise repulsion (two 90°
-interactions rather than three). The molecular shape is **see-saw** with bond angles of
-approximately $102^\circ$ (equatorial) and $173^\circ$ (axial-equatorial).
+Electron geometry. The lone pair occupies an equatorial position to minimise repulsion (two 90°
+Interactions rather than three). The molecular shape is **see-saw** with bond angles of
+Approximately $102^\circ$ (equatorial) and $173^\circ$ (axial-equatorial).
 
 ### Intermolecular Forces
 
@@ -165,17 +165,17 @@ approximately $102^\circ$ (equatorial) and $173^\circ$ (axial-equatorial).
 
 **Derivation of London force dependence on molecular size:**
 
-Larger molecules have more electrons. The electron cloud is more diffuse and can be more easily
-distorted (higher polarisability). A larger, more polarisable electron cloud produces a larger
-instantaneous dipole, which induces a larger dipole in a neighbouring molecule. Therefore, the
-resulting attractive force is stronger. This is why boiling points increase down Group 7
+Larger molecules have more electrons. The electron cloud is more diffuse and can be more 
+Distorted (higher polarisability). A larger, more polarisable electron cloud produces a larger
+Instantaneous dipole, which induces a larger dipole in a neighbouring molecule. Therefore, the
+Resulting attractive force is stronger. This is why boiling points increase down Group 7
 ($\mathrm{F{}_2$ < $\mathrm{Cl{}_2$ < $\mathrm{Br{}_2$ < $\mathrm{I{}_2$).
 
 **Permanent dipole-dipole forces:**
 
 - Between polar molecules
 - Stronger than London forces
-- Examples: $\mathrm{HCl{}$, $\mathrm{SO{}_2$
+- Examples: $\mathrm{HCl{}$$\mathrm{SO{}_2$
 
 **Hydrogen bonding:**
 
@@ -184,19 +184,19 @@ resulting attractive force is stronger. This is why boiling points increase down
 - Responsible for the anomalously high boiling point of water
 
 **Example:** Explain why $\mathrm{H{}_2\mathrm{O{}$ has a higher boiling point than $\mathrm{H{}_2\mathrm{S{}$
-despite $\mathrm{H{}_2\mathrm{S{}$ having a larger molar mass.
+Despite $\mathrm{H{}_2\mathrm{S{}$ having a larger molar mass.
 
 $\mathrm{H{}_2\mathrm{O{}$ can form hydrogen bonds between molecules (H bonded to O), which are much
-stronger than the dipole-dipole forces in $\mathrm{H{}_2\mathrm{S{}$. Although $\mathrm{H{}_2\mathrm{S{}$ has
-stronger London forces due to more electrons, hydrogen bonding in water dominates.
+Stronger than the dipole-dipole forces in $\mathrm{H{}_2\mathrm{S{}$. Although $\mathrm{H{}_2\mathrm{S{}$ has
+Stronger London forces due to more electrons, hydrogen bonding in water dominates.
 
 ### Summary of Intermolecular Forces
 
-| Force Type              | Strength Order | Present In                         | Dependence on molecular size |
+| Force Type | Strength Order | Present In | Dependence on molecular size |
 | ----------------------- | -------------- | ---------------------------------- | ---------------------------- |
-| London dispersion       | Weakest        | All molecules                      | Increases with size          |
-| Permanent dipole-dipole | Moderate       | Polar molecules                    | Moderate                     |
-| Hydrogen bonding        | Strongest      | Molecules with H bonded to N, O, F | Depends on H-bond density    |
+| London dispersion | Weakest | All molecules | Increases with size |
+| Permanent dipole-dipole | Moderate | Polar molecules | Moderate |
+| Hydrogen bonding | Strongest | Molecules with H bonded to N, O, F | Depends on H-bond density |
 
 ### Bond Enthalpy
 
@@ -204,22 +204,22 @@ stronger London forces due to more electrons, hydrogen bonding in water dominate
 (endothermic).
 
 **Average bond enthalpies** are used because bond enthalpies vary slightly depending on the
-molecular environment.
+Molecular environment.
 
 | Bond | Enthalpy (kJ/mol) |
 | ---- | ----------------- |
-| C-C  | 348               |
-| C=C  | 612               |
-| C-H  | 412               |
-| O-H  | 463               |
-| C=O  | 743               |
-| H-H  | 436               |
-| O=O  | 496               |
-| N≡N  | 945               |
-| C≡C  | 839               |
-| C-O  | 358               |
-| C-Cl | 328               |
-| C-N  | 305               |
+| C-C | 348 |
+| C=C | 612 |
+| C-H | 412 |
+| O-H | 463 |
+| C=O | 743 |
+| H-H | 436 |
+| O=O | 496 |
+| N≡N | 945 |
+| C≡C | 839 |
+| C-O | 358 |
+| C-Cl | 328 |
+| C-N | 305 |
 
 **Worked Example 5:** Estimate the enthalpy change for the reaction:
 $\mathrm{CH{}_4 + 2\mathrm{O{}_2 \to \mathrm{CO{}_2 + 2\mathrm{H{}_2\mathrm{O{}$.
@@ -248,9 +248,9 @@ $$\Delta H = 2696 - 2820 = -124 \mathrm{ kJ/mol{}$$
 **Proof that bond enthalpy gives an approximation:**
 
 Average bond enthalpies are mean values taken from many different compounds. The actual C-H bond
-enthalpy in methane differs from that in ethane because the electronic environment is different.
+Enthalpy in methane differs from that in ethane because the electronic environment is different.
 Therefore, using average values introduces systematic error. The true $\Delta H$ for the
-hydrogenation of ethene is $-137 \mathrm{ kJ/mol{}$, showing that the bond enthalpy estimate
+Hydrogenation of ethene is $-137 \mathrm{ kJ/mol{}$Showing that the bond enthalpy estimate
 ($-124 \mathrm{ kJ/mol{}$) is approximate.
 
 ---
@@ -271,7 +271,7 @@ $6 + 4 = 10$ O atoms on left, so $5\mathrm{O{}_2$).
 Balance Fe: $2\mathrm{Fe{}$ on right, so
 $\mathrm{Fe{}_2\mathrm{O{}_3 + \mathrm{CO{} \to 2\mathrm{Fe{} + \mathrm{CO{}_2$. Balance C: C is already balanced
 (1 on each side). Balance O: left has $3 + 1 = 4$ O atoms, right has $2$. Need $2\mathrm{CO{}_2$ on
-right, so $2\mathrm{CO{}$ on left.
+Right, so $2\mathrm{CO{}$ on left.
 
 $$\mathrm{Fe{}_2\mathrm{O{}_3 + 3\mathrm{CO{} \to 2\mathrm{Fe{} + 3\mathrm{CO{}_2$$
 
@@ -280,7 +280,7 @@ $$\mathrm{Fe{}_2\mathrm{O{}_3 + 3\mathrm{CO{} \to 2\mathrm{Fe{} + 3\mathrm{CO{}_
 Only include species that actually change during the reaction (spectator ions are omitted).
 
 **Worked Example 9:** Write the ionic equation for the reaction of silver nitrate with sodium
-chloride.
+Chloride.
 
 Full equation:
 $$\mathrm{Ag{}^+(aq) + \mathrm{NO{}_3^-(aq) + \mathrm{Na{}^+(aq) + \mathrm{Cl{}^-(aq) \to \mathrm{AgCl(s){} + \mathrm{Na{}^+(aq) + \mathrm{NO{}_3^-(aq)$$
@@ -309,27 +309,27 @@ Net ionic equation: $\mathrm{Zn(s){} + 2\mathrm{H{}^+(aq) \to \mathrm{Zn{}^{2+}(
 
 1. Elements in their standard state: 0
 2. Monatomic ions: equal to the charge
-3. Oxygen: usually $-2$ (except in peroxides, $-1$)
-4. Hydrogen: usually $+1$ (except in metal hydrides, $-1$)
+3. Oxygen: $-2$ (except in peroxides, $-1$)
+4. Hydrogen: $+1$ (except in metal hydrides, $-1$)
 5. Sum of oxidation states equals the overall charge
 
 **Worked Example 11:** Determine the oxidation states in $\mathrm{KMnO{}_4$.
 
-$\mathrm{K{} = +1$, $\mathrm{O{} = -2$, so $\mathrm{Mn{} + 1 + 4(-2) = 0$, giving $\mathrm{Mn{} = +7$.
+$\mathrm{K{} = +1$$\mathrm{O{} = -2$So $\mathrm{Mn{} + 1 + 4(-2) = 0$Giving $\mathrm{Mn{} = +7$.
 
 **Worked Example 12:** Determine the oxidation states of each element in $\mathrm{H{}_2\mathrm{O{}_2$ and
 $\mathrm{Na{}_2\mathrm{Cr{}_2\mathrm{O{}_7$.
 
-$\mathrm{H{}_2\mathrm{O{}_2$: $\mathrm{H{} = +1$, $2(+1) + 2(\mathrm{O{}) = 0$, so $\mathrm{O{} = -1$. This is a
-peroxide where oxygen has an unusual oxidation state of $-1$.
+$\mathrm{H{}_2\mathrm{O{}_2$: $\mathrm{H{} = +1$$2(+1) + 2(\mathrm{O{}) = 0$So $\mathrm{O{} = -1$. This is a
+Peroxide where oxygen has an unusual oxidation state of $-1$.
 
-$\mathrm{Na{}_2\mathrm{Cr{}_2\mathrm{O{}_7$: $\mathrm{Na{} = +1$, $\mathrm{O{} = -2$.
-$2(+1) + 2(\mathrm{Cr{}) + 7(-2) = 0$, so $2(\mathrm{Cr{}) = 12$, giving $\mathrm{Cr{} = +6$.
+$\mathrm{Na{}_2\mathrm{Cr{}_2\mathrm{O{}_7$: $\mathrm{Na{} = +1$$\mathrm{O{} = -2$.
+$2(+1) + 2(\mathrm{Cr{}) + 7(-2) = 0$So $2(\mathrm{Cr{}) = 12$Giving $\mathrm{Cr{} = +6$.
 
 ### Redox Reactions
 
 **Worked Example 13:** Balance the reaction of $\mathrm{MnO{}_4^-$ with $\mathrm{Fe{}^{2+}$ in acidic
-solution.
+Solution.
 
 Oxidation: $\mathrm{Fe{}^{2+} \to \mathrm{Fe{}^{3+} + e^-$
 
@@ -352,7 +352,7 @@ Multiply oxidation by 3 to balance electrons:
 $$\mathrm{Cr{}_2\mathrm{O{}_7^{2-} + 3\mathrm{SO{}_2 + 2\mathrm{H{}^+ \to 2\mathrm{Cr{}^{3+} + 3\mathrm{SO{}_4^{2-} + \mathrm{H{}_2\mathrm{O{}$$
 
 Check: Cr: 2 left, 2 right. S: 3 left, 3 right. O: $7 + 6 = 13$ left, $12 + 1 = 13$ right. H: $2$
-left, $2$ right. Charge: $-2 + 0 + 2 = 0$ left, $6 + (-9) = -6 + 2(+2) = -2$... Let us recheck.
+Left, $2$ right. Charge: $-2 + 0 + 2 = 0$ left, $6 + (-9) = -6 + 2(+2) = -2$... Let us recheck.
 
 Left charge: $-2 + 2 = 0$. Right charge: $2(+3) + 3(-2) = 0$. Balanced.
 
@@ -360,78 +360,78 @@ Left charge: $-2 + 2 = 0$. Right charge: $2(+3) + 3(-2) = 0$. Balanced.
 
 ## Summary Table: Oxidation States of Common Elements
 
-| Element   | Common oxidation states                | Notes                                       |
+| Element | Common oxidation states | Notes |
 | --------- | -------------------------------------- | ------------------------------------------- |
-| Hydrogen  | $+1$ (most compounds), $-1$ (hydrides) |                                             |
-| Oxygen    | $-2$, $-1$ (peroxides)                 | $+2$ in $\mathrm{OF{}_2$                       |
-| Nitrogen  | $-3$ to $+5$                           | Most variable after transition metals       |
-| Sulfur    | $-2$ to $+6$                           |                                             |
-| Chlorine  | $-1$ to $+7$                           | $-1$ most common                            |
-| Manganese | $+2, +4, +7$                           | $\mathrm{MnO{}_4^-$ has Mn at $+7$             |
-| Chromium  | $+3, +6$                               | $\mathrm{Cr{}_2\mathrm{O{}_7^{2-}$ has Cr at $+6$ |
+| Hydrogen | $+1$ (most compounds), $-1$ (hydrides) | |
+| Oxygen | $-2$$-1$ (peroxides) | $+2$ in $\mathrm{OF{}_2$ |
+| Nitrogen | $-3$ to $+5$ | Most variable after transition metals |
+| Sulfur | $-2$ to $+6$ | |
+| Chlorine | $-1$ to $+7$ | $-1$ most common |
+| Manganese | $+2, +4, +7$ | $\mathrm{MnO{}_4^-$ has Mn at $+7$ |
+| Chromium | $+3, +6$ | $\mathrm{Cr{}_2\mathrm{O{}_7^{2-}$ has Cr at $+6$ |
 
 ---
 
 ## Common Pitfalls
 
 1. **Confusing ionic and covalent bonding:** Ionic bonding involves electron transfer; covalent
-   involves electron sharing.
+ involves electron sharing.
 
 2. **VSEPR with lone pairs:** Lone pairs repel more strongly than bonding pairs, reducing bond
-   angles below the ideal values.
+ angles below the ideal values.
 
-3. **Bond polarity vs. molecular polarity:** A molecule can have polar bonds but be non-polar
-   overall (e.g., $\mathrm{CCl{}_4$, $\mathrm{CO{}_2$).
+3. **Bond polarity vs. Molecular polarity:** A molecule can have polar bonds but be non-polar
+ overall (e.g., $\mathrm{CCl{}_4$$\mathrm{CO{}_2$).
 
 4. **Using average bond enthalpies:** These give approximate values only. They are less accurate
-   when bonds are in different molecular environments.
+ when bonds are in different molecular environments.
 
-5. **Oxidation state of oxygen in peroxides:** In $\mathrm{H{}_2\mathrm{O{}_2$, oxygen has oxidation state
-   $-1$, not $-2$.
+5. **Oxidation state of oxygen in peroxides:** In $\mathrm{H{}_2\mathrm{O{}_2$Oxygen has oxidation state
+ $-1$Not $-2$.
 
 6. **Spectator ions in ionic equations:** Always identify and remove spectator ions. Remember that
-   state symbols are essential.
+ state symbols are essential.
 
 7. **Hydrogen bonding criteria:** H must be bonded directly to N, O, or F. H bonded to Cl is NOT
-   hydrogen bonding, despite chlorine being electronegative.
+ hydrogen bonding, despite chlorine being electronegative.
 
 ---
 
 ## Practice Questions
 
 1. Draw dot-and-cross diagrams for (a) $\mathrm{MgCl{}_2$ and (b) $\mathrm{H{}_2\mathrm{S{}$. State the type
-   of bonding in each.
+ of bonding in each.
 
 2. Explain why the boiling point of $\mathrm{NH{}_3$ (240 K) is higher than that of $\mathrm{PH{}_3$ (185
-   K), despite $\mathrm{PH{}_3$ having more electrons.
+ K), despite $\mathrm{PH{}_3$ having more electrons.
 
 3. Predict the shapes and bond angles of $\mathrm{ClF{}_3$ and $\mathrm{XeF{}_4$.
 
 4. Using bond enthalpies, estimate $\Delta H$ for the hydrogenation of ethene:
-   $\mathrm{C{}_2\mathrm{H{}_4 + \mathrm{H{}_2 \to \mathrm{C{}_2\mathrm{H{}_6$.
+ $\mathrm{C{}_2\mathrm{H{}_4 + \mathrm{H{}_2 \to \mathrm{C{}_2\mathrm{H{}_6$.
 
 5. Balance the following redox equation in acidic solution:
-   $\mathrm{Cr{}_2\mathrm{O{}_7^{2-} + \mathrm{SO{}_2 \to \mathrm{Cr{}^{3+} + \mathrm{SO{}_4^{2-}$.
+ $\mathrm{Cr{}_2\mathrm{O{}_7^{2-} + \mathrm{SO{}_2 \to \mathrm{Cr{}^{3+} + \mathrm{SO{}_4^{2-}$.
 
 6. Explain why graphite conducts electricity but diamond does not.
 
 7. Determine the oxidation state of chromium in $\mathrm{Na{}_2\mathrm{Cr{}_2\mathrm{O{}_7$.
 
 8. Compare and contrast the properties of metallic and ionic bonding, explaining the differences in
-   terms of structure.
+ terms of structure.
 
 9. Using bond enthalpy data, estimate $\Delta H$ for the combustion of ethyne:
-   $\mathrm{C{}_2\mathrm{H{}_2 + \tfrac{5}{2}\mathrm{O{}_2 \to 2\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$.
+ $\mathrm{C{}_2\mathrm{H{}_2 + \tfrac{5}{2}\mathrm{O{}_2 \to 2\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{}$.
 
 10. Explain why the boiling point increases in the order
-    $\mathrm{CH{}_4 \lt \mathrm{SiH{}_4 \lt \mathrm{GeH{}_4 \lt \mathrm{SnH{}_4$ and why $\mathrm{NH{}_3$ does not
-    follow this pattern.
+ $\mathrm{CH{}_4 \lt \mathrm{SiH{}_4 \lt \mathrm{GeH{}_4 \lt \mathrm{SnH{}_4$ and why $\mathrm{NH{}_3$ does not
+ follow this pattern.
 
 11. Write ionic equations for the reactions of (a) barium chloride with sodium sulfate, and (b)
-    magnesium with hydrochloric acid.
+ magnesium with hydrochloric acid.
 
 12. Balance the following in acidic solution:
-    $\mathrm{MnO{}_4^- + \mathrm{C{}_2\mathrm{O{}_4^{2-} \to \mathrm{Mn{}^{2+} + \mathrm{CO{}_2$.
+ $\mathrm{MnO{}_4^- + \mathrm{C{}_2\mathrm{O{}_4^{2-} \to \mathrm{Mn{}^{2+} + \mathrm{CO{}_2$.
 
 ---
 
@@ -440,42 +440,42 @@ Left charge: $-2 + 2 = 0$. Right charge: $2(+3) + 3(-2) = 0$. Balanced.
 ### Ionic Lattice Energy
 
 **Lattice energy** is the enthalpy change when one mole of an ionic compound is formed from its
-gaseous ions. It is always exothermic (negative) and indicates the strength of ionic bonding.
+Gaseous ions. It is always exothermic (negative) and indicates the strength of ionic bonding.
 
 **Factors affecting lattice energy:**
 
 - Ionic charge: Higher charges produce stronger attraction and more exothermic lattice energy.
-  $\mathrm{MgO{}$ ($\mathrm{Mg{}^{2+}$, $\mathrm{O{}^{2-}$) has a much more exothermic lattice energy than
-  $\mathrm{NaCl{}$ ($\mathrm{Na{}^+$, $\mathrm{Cl{}^-$).
+ $\mathrm{MgO{}$ ($\mathrm{Mg{}^{2+}$$\mathrm{O{}^{2-}$) has a much more exothermic lattice energy than
+ $\mathrm{NaCl{}$ ($\mathrm{Na{}^+$$\mathrm{Cl{}^-$).
 - Ionic radius: Smaller ions can approach more closely, increasing the attraction. $\mathrm{NaF{}$ has
-  a more exothermic lattice energy than $\mathrm{NaCl{}$.
+ a more exothermic lattice energy than $\mathrm{NaCl{}$.
 
 | Compound | Ionic charges | Sum of ionic radii (pm) | Lattice energy (kJ/mol) |
 | -------- | ------------- | ----------------------- | ----------------------- |
-| NaCl     | +1, -1        | 276                     | -787                    |
-| MgO      | +2, -2        | 210                     | -3791                   |
-| NaF      | +1, -1        | 231                     | -910                    |
-| CaO      | +2, -2        | 231                     | -3414                   |
+| NaCl | +1, -1 | 276 | -787 |
+| MgO | +2, -2 | 210 | -3791 |
+| NaF | +1, -1 | 231 | -910 |
+| CaO | +2, -2 | 231 | -3414 |
 
 ### Born-Haber Cycles
 
 A Born-Haber cycle is a thermochemical cycle that relates lattice energy to other measurable
-enthalpy changes. It is an application of Hess's Law to ionic compounds.
+Enthalpy changes. It is an application of Hess's Law to ionic compounds.
 
 **Worked Example 15:** Construct a Born-Haber cycle for sodium chloride.
 
 The cycle involves the following steps:
 
 1. $\mathrm{Na(s){} \to \mathrm{Na(g){}$ -- enthalpy of atomisation,
-   $\Delta H_{\mathrm{at{}} = +108 \mathrm{ kJ/mol{}$
+ $\Delta H_{\mathrm{at{}} = +108 \mathrm{ kJ/mol{}$
 2. $\tfrac{1}{2}\mathrm{Cl{}_2\mathrm{(g){} \to \mathrm{Cl(g){}$ -- enthalpy of atomisation,
-   $\tfrac{1}{2}\Delta H_{\mathrm{at{}} = +122 \mathrm{ kJ/mol{}$
+ $\tfrac{1}{2}\Delta H_{\mathrm{at{}} = +122 \mathrm{ kJ/mol{}$
 3. $\mathrm{Na(g){} \to \mathrm{Na{}^+(g) + e^-$ -- first ionisation energy,
-   $\mathrm{IE{}_1 = +496 \mathrm{ kJ/mol{}$
+ $\mathrm{IE{}_1 = +496 \mathrm{ kJ/mol{}$
 4. $\mathrm{Cl(g){} + e^- \to \mathrm{Cl{}^-(g)$ -- first electron affinity,
-   $\mathrm{EA{}_1 = -349 \mathrm{ kJ/mol{}$
+ $\mathrm{EA{}_1 = -349 \mathrm{ kJ/mol{}$
 5. $\mathrm{Na{}^+(g) + \mathrm{Cl{}^-(g) \to \mathrm{NaCl(s){}$ -- lattice energy,
-   $\Delta H_{\mathrm{latt{}} = ?$
+ $\Delta H_{\mathrm{latt{}} = ?$
 
 By Hess's Law:
 
@@ -487,57 +487,57 @@ $$\Delta H_{\mathrm{latt{}} = -411 - 108 - 122 - 496 + 349 = -788 \mathrm{ kJ/mo
 
 ### Polarising Power and Covalent Character
 
-Small, highly charged cations have high polarising power. Large, highly charged anions are easily
-polarised. When polarisation is significant, the ionic bond acquires covalent character.
+Small, highly charged cations have high polarising power. Large, highly charged anions are 
+Polarised. When polarisation is significant, the ionic bond acquires covalent character.
 
 **Fajans' Rules:**
 
 1. A small cation has high polarising power (e.g., $\mathrm{Li{}^+$ vs. $\mathrm{Cs{}^+$)
-2. A large anion is more easily polarised (e.g., $\mathrm{I{}^-$ vs. $\mathrm{F{}^-$)
+2. A large anion is more polarised (e.g., $\mathrm{I{}^-$ vs. $\mathrm{F{}^-$)
 3. A high charge on either ion increases polarisation
 
 **Consequences:**
 
 - $\mathrm{AlCl{}_3$ has significant covalent character despite the electronegativity difference
-  suggesting ionic bonding.
+ suggesting ionic bonding.
 - $\mathrm{SnCl{}_4$ is a covalent liquid at room temperature, whereas $\mathrm{SnCl{}_2$ is a solid ionic
-  compound.
+ compound.
 
 ### Metallic Bonding: Alloy Properties
 
 **Alloys** are mixtures of metals (or a metal with a non-metal) that have been designed to have
-improved properties.
+Improved properties.
 
-| Alloy type     | Description                                 | Effect on properties                                       |
+| Alloy type | Description | Effect on properties |
 | -------------- | ------------------------------------------- | ---------------------------------------------------------- |
-| Substitutional | Different-sized atoms replace host atoms    | Distorts lattice, prevents slip planes, increases hardness |
-| Interstitial   | Small atoms fit in gaps between metal atoms | Blocks dislocation movement, increases hardness            |
-| Example: Steel | Iron with carbon (interstitial)             | Much harder than pure iron                                 |
-| Example: Brass | Copper with zinc (substitutional)           | Stronger than copper, retains malleability                 |
+| Substitutional | Different-sized atoms replace host atoms | Distorts lattice, prevents slip planes, increases hardness |
+| Interstitial | Small atoms fit in gaps between metal atoms | Blocks dislocation movement, increases hardness |
+| Example: Steel | Iron with carbon (interstitial) | Much harder than pure iron |
+| Example: Brass | Copper with zinc (substitutional) | Stronger than copper, retains malleability |
 
 ---
 
 ## Worked Example: Predicting Bond Type
 
 **Question:** Predict the type of bonding in each of the following and justify your answer: (a)
-$\mathrm{KF{}$, (b) $\mathrm{CCl{}_4$, (c) $\mathrm{Cu{}$, (d) $\mathrm{AlCl{}_3$.
+$\mathrm{KF{}$(b) $\mathrm{CCl{}_4$(c) $\mathrm{Cu{}$(d) $\mathrm{AlCl{}_3$.
 
 **(a) $\mathrm{KF{}$:** Potassium is a Group 1 metal and fluorine is a Group 17 non-metal. The
-electronegativity difference is $3.98 - 0.82 = 3.16$, which is greater than 1.7, so this is
-predominantly **ionic bonding**.
+Electronegativity difference is $3.98 - 0.82 = 3.16$Which is greater than 1.7, so this is
+Predominantly **ionic bonding**.
 
 **(b) $\mathrm{CCl{}_4$:** Both carbon and chlorine are non-metals. The electronegativity difference is
-$3.16 - 2.55 = 0.61$, which is in the polar covalent range. The molecule is tetrahedral and the bond
-dipoles cancel, making the molecule non-polar overall. This is **covalent bonding**.
+$3.16 - 2.55 = 0.61$Which is in the polar covalent range. The molecule is tetrahedral and the bond
+Dipoles cancel, making the molecule non-polar overall. This is **covalent bonding**.
 
 **(c) $\mathrm{Cu{}$:** Copper is a metal. The bonding involves positive metal ions in a sea of
-delocalised electrons. This is **metallic bonding**, accounting for copper's conductivity,
-malleability, and high melting point.
+Delocalised electrons. This is **metallic bonding**, accounting for copper's conductivity,
+Malleability, and high melting point.
 
 **(d) $\mathrm{AlCl{}_3$:** Aluminium is a metal and chlorine is a non-metal. The electronegativity
-difference is $3.16 - 1.61 = 1.55$, suggesting polar covalent. $\mathrm{Al{}^{3+}$ is a small, highly
-charged cation with high polarising power, and $\mathrm{Cl{}^-$ is a relatively large anion. According
-to Fajans' Rules, this gives $\mathrm{AlCl{}_3$ significant **covalent character**. Indeed,
+Difference is $3.16 - 1.61 = 1.55$Suggesting polar covalent. $\mathrm{Al{}^{3+}$ is a small, highly
+Charged cation with high polarising power, and $\mathrm{Cl{}^-$ is a relatively large anion. According
+To Fajans' Rules, this gives $\mathrm{AlCl{}_3$ significant **covalent character**. Indeed,
 $\mathrm{AlCl{}_3$ sublimes at $180^\circ\mathrm{C{}$ (low for an ionic compound) and forms dimer molecules
 $\mathrm{Al{}_2\mathrm{Cl{}_6$ in the gas phase.
 
@@ -549,39 +549,39 @@ Both $\mathrm{H{}_2\mathrm{O{}$ and $\mathrm{CO{}_2$ contain three atoms, yet th
 
 **$\mathrm{CO{}_2$:** Carbon has 4 valence electrons. Each double bond counts as one electron domain.
 With two electron domains (two double bonds), the electron geometry is linear ($180^\circ$). Since there
-are no lone pairs, the molecular shape is also linear. The two C=O bond dipoles are equal in
-magnitude and opposite in direction, so they cancel: $\mathrm{CO{}_2$ is non-polar.
+Are no lone pairs, the molecular shape is also linear. The two C=O bond dipoles are equal in
+Magnitude and opposite in direction, so they cancel: $\mathrm{CO{}_2$ is non-polar.
 
 **$\mathrm{H{}_2\mathrm{O{}$:** Oxygen has 6 valence electrons. Two are used in O-H bonds, and four remain
-as two lone pairs. With four electron domains (two bonding pairs + two lone pairs), the electron
-geometry is tetrahedral. The molecular shape (considering only atoms) is bent. The two O-H bond
-dipoles do not cancel because they are not opposite each other: $\mathrm{H{}_2\mathrm{O{}$ is polar.
+As two lone pairs. With four electron domains (two bonding pairs + two lone pairs), the electron
+Geometry is tetrahedral. The molecular shape (considering only atoms) is bent. The two O-H bond
+Dipoles do not cancel because they are not opposite each other: $\mathrm{H{}_2\mathrm{O{}$ is polar.
 
 ---
 
 ## Practice Questions (Extended)
 
 13. Using a Born-Haber cycle, calculate the lattice energy of $\mathrm{MgO{}$ given:
-    - $\Delta H_{\mathrm{at{}}(\mathrm{Mg{}) = +148 \mathrm{ kJ/mol{}$
-    - $\Delta H_{\mathrm{at{}}(\mathrm{O{}) = +248 \mathrm{ kJ/mol{}$
-    - $\mathrm{IE{}_1(\mathrm{Mg{}) = +738 \mathrm{ kJ/mol{}$,
-      $\mathrm{IE{}_2(\mathrm{Mg{}) = +1451 \mathrm{ kJ/mol{}$
-    - $\mathrm{EA{}_1(\mathrm{O{}) = -141 \mathrm{ kJ/mol{}$, $\mathrm{EA{}_2(\mathrm{O{}) = +798 \mathrm{ kJ/mol{}$
-    - $\Delta H_f(\mathrm{MgO{}) = -602 \mathrm{ kJ/mol{}$
+ - $\Delta H_{\mathrm{at{}}(\mathrm{Mg{}) = +148 \mathrm{ kJ/mol{}$
+ - $\Delta H_{\mathrm{at{}}(\mathrm{O{}) = +248 \mathrm{ kJ/mol{}$
+ - $\mathrm{IE{}_1(\mathrm{Mg{}) = +738 \mathrm{ kJ/mol{}$
+ $\mathrm{IE{}_2(\mathrm{Mg{}) = +1451 \mathrm{ kJ/mol{}$
+ - $\mathrm{EA{}_1(\mathrm{O{}) = -141 \mathrm{ kJ/mol{}$$\mathrm{EA{}_2(\mathrm{O{}) = +798 \mathrm{ kJ/mol{}$
+ - $\Delta H_f(\mathrm{MgO{}) = -602 \mathrm{ kJ/mol{}$
 
 14. Explain why $\mathrm{BeCl{}_2$ is covalent while $\mathrm{CaCl{}_2$ is ionic, using Fajans' Rules.
 
 15. Using bond enthalpies, explain why the Haber process is exothermic:
-    $\mathrm{N{}_2 + 3\mathrm{H{}_2 \to 2\mathrm{NH{}_3$.
+ $\mathrm{N{}_2 + 3\mathrm{H{}_2 \to 2\mathrm{NH{}_3$.
 
-16. Predict and explain the trend in boiling points for the hydrogen halides $\mathrm{HF{}$,
-    $\mathrm{HCl{}$, $\mathrm{HBr{}$, $\mathrm{HI{}$.
+16. Predict and explain the trend in boiling points for the hydrogen halides $\mathrm{HF{}$
+ $\mathrm{HCl{}$$\mathrm{HBr{}$$\mathrm{HI{}$.
 
 17. Balance the following redox equation in basic solution:
-    $\mathrm{MnO{}_4^- + \mathrm{Br{}^- \to \mathrm{MnO{}_2 + \mathrm{BrO{}_3^-$.
+ $\mathrm{MnO{}_4^- + \mathrm{Br{}^- \to \mathrm{MnO{}_2 + \mathrm{BrO{}_3^-$.
 
 18. Explain how the properties of steel differ from those of pure iron, in terms of metallic bonding
-    structure.
+ structure.
 
 19. A student states that "all Group 1 chlorides have ionic bonding." Evaluate this statement.
 
@@ -594,37 +594,37 @@ dipoles do not cancel because they are not opposite each other: $\mathrm{H{}_2\m
 ### Diamond
 
 Each carbon atom in diamond is covalently bonded to four other carbon atoms in a tetrahedral
-arrangement, forming a rigid three-dimensional network. Every C-C bond is a strong sigma bond.
+Arrangement, forming a rigid three-dimensional network. Every C-C bond is a strong sigma bond.
 
 **Properties explained:**
 
 - **Very high melting point ($> 3500^\circ$C):** All bonds must be broken to melt diamond, requiring
-  enormous energy.
+ enormous energy.
 - **Extremely hard:** The three-dimensional network prevents any movement of atoms.
 - **Does not conduct electricity:** All four valence electrons of each carbon are localised in sigma
-  bonds. There are no delocalised or free electrons.
+ bonds. There are no delocalised or free electrons.
 - **Insoluble in all solvents:** The covalent bonds are too strong to be broken by solvent
-  interactions.
+ interactions.
 
 ### Graphite
 
 Each carbon atom in graphite is covalently bonded to three other carbon atoms in a trigonal planar
-arrangement, forming flat hexagonal layers. The fourth electron of each carbon is delocalised over
-the entire layer.
+Arrangement, forming flat hexagonal layers. The fourth electron of each carbon is delocalised over
+The entire layer.
 
 **Properties explained:**
 
 - **High melting point:** Strong covalent bonds within layers.
 - **Soft and slippery:** Weak van der Waals forces between layers allow them to slide over each
-  other.
+ other.
 - **Conducts electricity along the planes:** Delocalised electrons can move freely within each
-  layer.
+ layer.
 - **Insoluble:** Strong covalent bonds within layers.
 
 ### Silicon Dioxide ($\mathrm{SiO{}_2$)
 
 Each silicon atom is covalently bonded to four oxygen atoms, and each oxygen atom is bonded to two
-silicon atoms, forming a giant covalent network similar to diamond.
+Silicon atoms, forming a giant covalent network similar to diamond.
 
 - Very high melting point ($\sim 1700^\circ$C)
 - Hard and insoluble
@@ -637,7 +637,7 @@ silicon atoms, forming a giant covalent network similar to diamond.
 ### Sodium Chloride Structure
 
 $\mathrm{NaCl{}$ crystallises in a face-centred cubic lattice. Each $\mathrm{Na{}^+$ ion is surrounded by
-six $\mathrm{Cl{}^-$ ions (octahedral coordination) and vice versa.
+Six $\mathrm{Cl{}^-$ ions (octahedral coordination) and vice versa.
 
 **Coordination number:** 6:6
 
@@ -652,21 +652,21 @@ The larger size of $\mathrm{Cs{}^+$ allows it to accommodate more anions around 
 
 ### Comparison of Ionic Structures
 
-| Compound | Cation radius | Anion radius | Structure       | Coordination number | Melting point |
+| Compound | Cation radius | Anion radius | Structure | Coordination number | Melting point |
 | -------- | ------------- | ------------ | --------------- | ------------------- | ------------- |
-| NaCl     | 102 pm        | 181 pm       | FCC (rock salt) | 6:6                 | 801°C         |
-| CsCl     | 167 pm        | 181 pm       | BCC             | 8:8                 | 645°C         |
-| MgO      | 72 pm         | 140 pm       | FCC (rock salt) | 6:6                 | 2852°C        |
+| NaCl | 102 pm | 181 pm | FCC (rock salt) | 6:6 | 801°C |
+| CsCl | 167 pm | 181 pm | BCC | 8:8 | 645°C |
+| MgO | 72 pm | 140 pm | FCC (rock salt) | 6:6 | 2852°C |
 
 Note: $\mathrm{MgO{}$ has a much higher melting point than $\mathrm{NaCl{}$ because the $\mathrm{Mg{}^{2+}$
-and $\mathrm{O{}^{2-}$ ions have higher charges, producing stronger electrostatic attraction.
+And $\mathrm{O{}^{2-}$ ions have higher charges, producing stronger electrostatic attraction.
 
 ---
 
 ## Advanced Redox: Disproportionation
 
 **Disproportionation** is a redox reaction in which the same element is simultaneously oxidised and
-reduced.
+Reduced.
 
 **Example:** Chlorine with cold, dilute sodium hydroxide:
 
@@ -689,8 +689,8 @@ $\mathrm{CuSO{}_4$ (oxidation).
 **Question:** Balance the following equation in acidic solution:
 $\mathrm{IO{}_3^- + \mathrm{I{}^- + \mathrm{H{}^+ \to \mathrm{I{}_2 + \mathrm{H{}_2\mathrm{O{}$
 
-**Step 1:** Assign oxidation states. In $\mathrm{IO{}_3^-$, iodine is $+5$. In $\mathrm{I{}^-$, iodine is
-$-1$. In $\mathrm{I{}_2$, iodine is 0.
+**Step 1:** Assign oxidation states. In $\mathrm{IO{}_3^-$Iodine is $+5$. In $\mathrm{I{}^-$Iodine is
+$-1$. In $\mathrm{I{}_2$Iodine is 0.
 
 $\mathrm{IO{}_3^-$ is reduced: $+5 \to 0$ (gain of 5 electrons) $\mathrm{I{}^-$ is oxidised: $-1 \to 0$
 (loss of 1 electron)
@@ -712,10 +712,14 @@ Charge: $-1 + 5(-1) + 6(+1) = 0$ left, $0$ right. Balanced.
 
 ## Summary: Bonding and Properties Connection
 
-| Bonding type      | Bond strength (kJ/mol) | Melting point | Conductivity    | Typical examples                                         |
+| Bonding type | Bond strength (kJ/mol) | Melting point | Conductivity | Typical examples |
 | ----------------- | ---------------------- | ------------- | --------------- | -------------------------------------------------------- |
-| Ionic             | 600-4000               | High          | Molten/solution | $\mathrm{NaCl{}$, $\mathrm{MgO{}$                              |
-| Covalent (simple) | 150-400                | Low           | None            | $\mathrm{H{}_2\mathrm{O{}$, $\mathrm{CO{}_2$                      |
-| Covalent (giant)  | 350-400                | Very high     | Graphite only   | Diamond, $\mathrm{SiO{}_2$                                  |
-| Metallic          | 100-500                | Moderate-high | Good            | $\mathrm{Fe{}$, $\mathrm{Cu{}$                                 |
-| Hydrogen bonds    | 5-40                   | --            | --              | Between molecules of $\mathrm{H{}_2\mathrm{O{}$, $\mathrm{NH{}_3$ |
+| Ionic | 600-4000 | High | Molten/solution | $\mathrm{NaCl{}$$\mathrm{MgO{}$ |
+| Covalent (simple) | 150-400 | Low | None | $\mathrm{H{}_2\mathrm{O{}$$\mathrm{CO{}_2$ |
+| Covalent (giant) | 350-400 | Very high | Graphite only | Diamond, $\mathrm{SiO{}_2$ |
+| Metallic | 100-500 | Moderate-high | Good | $\mathrm{Fe{}$$\mathrm{Cu{}$ |
+| Hydrogen bonds | 5-40 | -- | -- | Between molecules of $\mathrm{H{}_2\mathrm{O{}$$\mathrm{NH{}_3$ |
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

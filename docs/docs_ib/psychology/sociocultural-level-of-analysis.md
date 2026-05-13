@@ -31,7 +31,7 @@ Social identity theory (SIT), developed by Henri Tajfel and John Turner (1979), 
 
 **Social identification:** The process of adopting the identity of the group to which one belongs. Individuals internalise the norms, values, and behaviours associated with their in-group, and their self-concept becomes intertwined with the group's identity.
 
-**Social comparison:** The process of comparing one's in-group with relevant out-groups. People have a fundamental need for positive self-esteem, which they satisfy by positively differentiating their in-group from out-groups. This leads to in-group favouritism (preferring the in-group) and, in some cases, out-group derogation (denigrating the out-group).
+**Social comparison:** The process of comparing one's in-group with relevant out-groups. People have a fundamental need for positive self-esteem, which they satisfy by positively differentiating their in-group from out-groups. This leads to in-group favouritism (preferring the in-group) and, out-group derogation (denigrating the out-group).
 
 ### Tajfel et al. (1971): Minimal Group Paradigm
 
@@ -125,7 +125,7 @@ Conformity is the tendency to adjust one's behaviour or beliefs to match those o
 
 Asch conducted a series of experiments investigating conformity to a majority opinion. Participants were shown a standard line and three comparison lines, and were asked to identify which comparison line matched the standard. The task was unambiguous: the correct answer was obvious.
 
-Each participant was placed in a group of 7--9 confederates. In critical trials, the confederates unanimously gave the wrong answer. The key finding was that approximately 37% of participants conformed on at least one critical trial by giving the wrong answer, despite the correct answer being clearly visible.
+Each participant was placed in a group of 7--9 confederates. In critical trials, the confederates unanimously gave the wrong answer. The key finding was that approximately 37% of participants conformed on at least one critical trial by giving the wrong answer, despite the correct answer being visible.
 
 **Factors affecting conformity in Asch's paradigm:**
 
@@ -188,7 +188,7 @@ Milgram identified several factors that affect obedience:
 
 ### Hofling et al. (1966)
 
-Hofling and colleagues conducted a naturalistic observation of obedience in a hospital setting. An unknown doctor (a confederate) telephoned a nurse and instructed her to administer 20 mg of a fictional drug called "Astroten" to a patient. The medication label clearly stated that the maximum safe dose was 10 mg, and hospital policy prohibited taking medication orders by telephone from unknown doctors.
+Hofling and colleagues conducted a naturalistic observation of obedience in a hospital setting. An unknown doctor (a confederate) telephoned a nurse and instructed her to administer 20 mg of a fictional drug called "Astroten" to a patient. The medication label stated that the maximum safe dose was 10 mg, and hospital policy prohibited taking medication orders by telephone from unknown doctors.
 
 Despite these safeguards, 21 of 22 nurses (95%) began to administer the medication before being stopped by a researcher. This demonstrates that obedience to authority can override institutional rules and professional judgment in real-world settings.
 
@@ -231,12 +231,12 @@ Hofstede conducted a landmark study of cultural differences by analysing survey 
 
 | Dimension | Description | High-Scoring Cultures | Low-Scoring Cultures |
 |---|---|---|---|
-| Individualism vs. collectivism | Degree to which individuals are integrated into groups | USA, UK, Australia | Japan, China, Guatemala |
+| Individualism vs. Collectivism | Degree to which individuals are integrated into groups | USA, UK, Australia | Japan, China, Guatemala |
 | Power distance | Acceptance of unequal power distribution | Malaysia, Philippines | Denmark, Austria |
 | Uncertainty avoidance | Tolerance for ambiguity and uncertainty | Japan, Greece | Singapore, Jamaica |
-| Masculinity vs. femininity | Emphasis on achievement vs. caring and quality of life | Japan, Hungary | Sweden, Norway |
-| Long-term vs. short-term orientation | Focus on future rewards vs. present outcomes | China, Japan | USA, UK |
-| Indulgence vs. restraint | Degree of freedom for gratification of desires | Mexico, Nigeria | China, Russia |
+| Masculinity vs. Femininity | Emphasis on achievement vs. Caring and quality of life | Japan, Hungary | Sweden, Norway |
+| Long-term vs. Short-term orientation | Focus on future rewards vs. Present outcomes | China, Japan | USA, UK |
+| Indulgence vs. Restraint | Degree of freedom for gratification of desires | Mexico, Nigeria | China, Russia |
 
 **Individualism** emphasises personal autonomy, individual achievement, and self-expression. **Collectivism** emphasises group harmony, interdependence, and loyalty to the in-group. These cultural differences have wide-ranging effects on behaviour, including:
 
@@ -256,7 +256,7 @@ Hofstede conducted a landmark study of cultural differences by analysing survey 
 ### Emic vs. Etic Approaches
 
 - **Emic approach:** Research from within the cultural context, using concepts and categories that are meaningful to the participants. The emic approach prioritises cultural sensitivity and depth of understanding.
-- **Etic approach:** Research that uses concepts and categories derived from outside the culture being studied, typically from the researcher's own cultural framework. The etic approach prioritises comparability across cultures but risks imposing foreign categories on local realities.
+- **Etic approach:** Research that uses concepts and categories derived from outside the culture being studied, from the researcher's own cultural framework. The etic approach prioritises comparability across cultures but risks imposing foreign categories on local realities.
 
 - **An imposed etic:** The application of a research instrument or theoretical framework from one culture to another without adequate modification. This can lead to misleading results, as the construct may not have the same meaning across cultures.
 
@@ -299,3 +299,11 @@ Research at the sociocultural level of analysis frequently uses the following me
 - **Groupthink and cognitive biases:** Groupthink involves several cognitive biases, including confirmation bias (group members selectively attend to confirming evidence) and the illusion of unanimity (a form of social proof).
 - **Culture and developmental psychology:** Cultural values influence parenting practices and child development, as discussed in [Developmental Psychology](./developmental-psychology).
 - **Prejudice and abnormal psychology:** Social factors such as discrimination and stigma influence the onset and course of psychological disorders, as discussed in [Abnormal Psychology](./abnormal-psychology).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

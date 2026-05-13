@@ -11,24 +11,24 @@ slug: iterator-sentinel-model
 ## The Iterator-Sentinel Model
 
 C++20 fundamentally restructured the standard library around **ranges and views**, introducing the
-iterator-sentinel model as the primary abstraction for sequence traversal. A range is anything with
-`begin()` and `end()`, and a sentinel is the endpoint of a range that is not necessarily an iterator
-itself. This section covers the iterator-sentinel distinction, `std::ranges::begin`/`end`, standard
-sentinel types, and custom sentinel implementations.
+Iterator-sentinel model as the primary abstraction for sequence traversal. A range is anything with
+`begin()` and `end()`And a sentinel is the endpoint of a range that is not necessarily an iterator
+Itself. This section covers the iterator-sentinel distinction, `std::ranges::begin`/`end`Standard
+Sentinel types, and custom sentinel implementations.
 
 ### Iterators and Sentinels in C++20
 
 C++20 fundamentally restructured the standard library around **ranges and views**, introducing the
-iterator-sentinel model as the primary abstraction for sequence traversal [N4950 §25.3]. A **range**
-is anything you can call `begin()` and `end()` on [N4950 §25.3.5]. A **sentinel** is the endpoint of
-a range that is not necessarily an iterator.
+Iterator-sentinel model as the primary abstraction for sequence traversal [N4950 §25.3]. A **range**
+Is anything you can call `begin()` and `end()` on [N4950 §25.3.5]. A **sentinel** is the endpoint of
+A range that is not necessarily an iterator.
 
 The key distinction from the traditional iterator-pair model:
 
-- **Traditional (C++17)**: A range is defined by a pair of iterators `[begin, end)`, both of the
-  same type `I`.
-- **C++20**: A range is defined by an iterator `begin` and a sentinel `end`, potentially of
-  different types `I` and `S` where `std::sentinel_for&lt;S, I>` holds [N4950 §25.3.5.2].
+- **Traditional (C++17)**: A range is defined by a pair of iterators `[begin, end)`Both of the
+ same type `I`.
+- **C++20**: A range is defined by an iterator `begin` and a sentinel `end`Potentially of
+ different types `I` and `S` where `std::sentinel_for&lt;S, I>` holds [N4950 §25.3.5.2].
 
 The `std::sentinel_for` concept requires [N4950 §25.3.5.2]:
 
@@ -68,14 +68,14 @@ int main() {
 
 `std::ranges::begin(E)` and `std::ranges::end(E)` are customization point objects (CPOs) [N4950
 §25.3.6] that resolve to the appropriate `begin`/`end` function for an expression `E`. The lookup
-follows this order [N4950 §25.3.6.2]:
+Follows this order [N4950 §25.3.6.2]:
 
 1. If `E` is an lvalue or rvalue of array type, returns `E + 0` and `E + N`.
-2. If `E` has a member `begin()` / `end()`, uses it (ADL-qualified).
+2. If `E` has a member `begin()` / `end()`Uses it (ADL-qualified).
 3. Otherwise, uses `std::begin(E)` / `std::end(E)`.
 
 This differs from `std::begin` / `std::end` in that it properly handles ranges that return different
-types from `begin()` and `end()` (i.e., iterator-sentinel pairs).
+Types from `begin()` and `end()` (i.e., iterator-sentinel pairs).
 
 ```cpp
 #include <iostream>
@@ -108,13 +108,13 @@ int main() {
 The standard library provides two sentinel types [N4950 §25.5]:
 
 **`std::default_sentinel`** [N4950 §25.5.3] is used with `std::counted_iterator&lt;I>` to denote the
-end of a counted range. A `counted_iterator` pairs an underlying iterator with a remaining count and
-compares equal to `default_sentinel` when the count reaches zero.
+End of a counted range. A `counted_iterator` pairs an underlying iterator with a remaining count and
+Compares equal to `default_sentinel` when the count reaches zero.
 
 **`std::unreachable_sentinel`** [N4950 §25.5.4] is a sentinel type that never compares equal to any
-iterator. It is used as a performance hint to the compiler and standard library algorithms,
-indicating that a range theoretically extends to infinity (or at least beyond the actual data). This
-enables optimizations in algorithms like `std::copy` that can eliminate bounds checks.
+Iterator. It is used as a performance hint to the compiler and standard library algorithms,
+Indicating that a range theoretically extends to infinity (or at least beyond the actual data). This
+Enables optimizations in algorithms like `std::copy` that can eliminate bounds checks.
 
 ```cpp
 #include <iostream>
@@ -199,27 +199,27 @@ int main() {
 
 :::info
 The iterator-sentinel model eliminates the need to compute `end` iterators for bounded
-sequences. For null-terminated strings, this avoids computing `strlen` before iteration. For counted
-ranges, it avoids computing the end pointer from a base + count.
+Sequences. For null-terminated strings, this avoids computing `strlen` before iteration. For counted
+Ranges, it avoids computing the end pointer from a base + count.
 :::
 
 ## Iterator Concepts Hierarchy
 
-C++20 replaced the legacy iterator category tags (`std::input_iterator_tag`, etc.) with a hierarchy
-of concepts [N4950 §25.3.4]. Understanding this hierarchy is essential for implementing custom
-sentinels and ranges.
+C++20 replaced the legacy iterator category tags (`std::input_iterator_tag`Etc.) with a hierarchy
+Of concepts [N4950 §25.3.4]. Understanding this hierarchy is essential for implementing custom
+Sentinels and ranges.
 
 ### The Concept Refinement Chain
 
-| Concept                         | Refines                                                                                 | Capabilities                                                      |
+| Concept | Refines | Capabilities |
 | :------------------------------ | :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| `std::input_or_output_iterator` | —                                                                                       | Can be incremented (`++it`), dereferenceable (`*it`)              |
-| `std::input_iterator`           | `input_or_output_iterator`, `std::indirectly_readable`, `std::input_or_output_iterator` | Multi-pass read, `->`, `==` / `!=` with sentinel                  |
-| `std::output_iterator`          | `input_or_output_iterator`                                                              | Can write through `*it = val`                                     |
-| `std::forward_iterator`         | `std::input_iterator`                                                                   | Multi-pass, default-constructible                                 |
-| `std::bidirectional_iterator`   | `std::forward_iterator`                                                                 | Can decrement (`--it`)                                            |
-| `std::random_access_iterator`   | `std::bidirectional_iterator`                                                           | Arithmetic (`it + n`, `it - n`), comparison (`&lt;`, `&gt;`)      |
-| `std::contiguous_iterator`      | `std::random_access_iterator`                                                           | Elements are contiguous in memory; `std::to_address(it)` is valid |
+| `std::input_or_output_iterator` | — | Can be incremented (`++it`), dereferenceable (`*it`) |
+| `std::input_iterator` | `input_or_output_iterator``std::indirectly_readable``std::input_or_output_iterator` | Multi-pass read, `->``==` / `!=` with sentinel |
+| `std::output_iterator` | `input_or_output_iterator` | Can write through `*it = val` |
+| `std::forward_iterator` | `std::input_iterator` | Multi-pass, default-constructible |
+| `std::bidirectional_iterator` | `std::forward_iterator` | Can decrement (`--it`) |
+| `std::random_access_iterator` | `std::bidirectional_iterator` | Arithmetic (`it + n``it - n`), comparison (`&lt;``&gt;`) |
+| `std::contiguous_iterator` | `std::random_access_iterator` | Elements are contiguous in memory; `std::to_address(it)` is valid |
 
 ### The `std::semiregular` Constraint on Sentinels
 
@@ -261,8 +261,8 @@ static_assert(std::semiregular<LimitSentinel>);
 ## Sentinel with State
 
 A sentinel can carry state that influences the comparison logic. This is where the type distinction
-between iterators and sentinels provides real value — a sentinel that encodes termination criteria
-as state avoids computing an end iterator.
+Between iterators and sentinels provides real value — a sentinel that encodes termination criteria
+As state avoids computing an end iterator.
 
 ```cpp
 #include <iostream>
@@ -307,13 +307,13 @@ int main() {
 ```
 
 The key insight: `ThresholdSentinel` carries the termination condition as state, so we never need to
-scan the entire vector to find the "end" position. The sentinel comparison is O(1) per element, and
-iteration terminates as soon as the condition is met.
+Scan the entire vector to find the "end" position. The sentinel comparison is O(1) per element, and
+Iteration terminates as soon as the condition is met.
 
 ## Range-For Loop Desugaring
 
-The range-for loop in C++20 is desugared to use `std::ranges::begin` and `std::ranges::end`, which
-support iterator-sentinel pairs [N4950 §9.5.5].
+The range-for loop in C++20 is desugared to use `std::ranges::begin` and `std::ranges::end`Which
+Support iterator-sentinel pairs [N4950 §9.5.5].
 
 ### C++17 Desugaring (Iterator Pair)
 
@@ -352,8 +352,8 @@ for (auto elem : range) { /* ... */ }
 ```
 
 The `!=` comparison between different types (`I` and `S`) is what enables sentinel semantics. This
-means you can write custom range types where `begin()` and `end()` return different types and they
-will work correctly with range-for:
+Means you can write custom range types where `begin()` and `end()` return different types and they
+Will work correctly with range-for:
 
 ```cpp
 #include <iostream>
@@ -382,18 +382,18 @@ int main() {
 ## Bounded vs. Unbounded Ranges
 
 The iterator-sentinel model formalizes the distinction between ranges with known bounds and those
-without.
+Without.
 
 ### Sized Ranges
 
-A **sized range** models `std::sized_range`, meaning `ranges::size(r)` is available in O(1) time
-[N4950 §25.3.6]. For standard containers, this is typically implemented via a stored size counter or
-by computing `end() - begin()` for random-access iterators.
+A **sized range** models `std::sized_range`Meaning `ranges::size(r)` is available in O(1) time
+[N4950 §25.3.6]. For standard containers, this is implemented via a stored size counter or
+By computing `end() - begin()` for random-access iterators.
 
 ### Unbounded Ranges
 
 A range paired with `unreachable_sentinel` is **unbounded** — it has no finite end. This is
-primarily used as a performance optimization:
+Primarily used as a performance optimization:
 
 ```cpp
 #include <algorithm>
@@ -418,14 +418,14 @@ int main() {
 ### Sentinel-terminated Ranges
 
 Ranges like null-terminated strings are bounded but their bound is not known a priori — the bound is
-discovered during iteration. These are the most natural fit for the sentinel model, because
-computing `end()` (i.e., calling `strlen`) would require a full scan of the data, defeating the
-purpose of lazy iteration.
+Discovered during iteration. These are the most natural fit for the sentinel model, because
+Computing `end()` (i.e., calling `strlen`) would require a full scan of the data, defeating the
+Purpose of lazy iteration.
 
 ## `std::views::counted`
 
 C++20 provides `std::views::counted` as a range adaptor that creates a view over the first `N`
-elements starting from an iterator [N4950 §26.7.20]:
+Elements starting from an iterator [N4950 §26.7.20]:
 
 ```cpp
 #include <iostream>
@@ -466,7 +466,7 @@ int main() {
 
 Under the hood, `views::counted` creates a `subrange` from a `counted_iterator` and
 `default_sentinel`. The range-for loop over this view performs zero additional computation — the
-sentinel comparison simply decrements an internal counter.
+Sentinel comparison decrements an internal counter.
 
 ## Performance Implications
 
@@ -475,7 +475,7 @@ The sentinel model is not just a semantic improvement — it has direct performa
 ### Eliminating `strlen` for C-String Iteration
 
 When iterating a null-terminated C string with a traditional iterator pair, you must call `strlen`
-first to compute the end pointer:
+First to compute the end pointer:
 
 ```cpp
 // Legacy approach: O(N) scan before iteration even begins
@@ -494,7 +494,7 @@ for (auto it = str; it != NullSentinel{}; ++it) {  // One pass
 ### Zero-Cost `counted_iterator` Comparison
 
 The comparison between `counted_iterator` and `default_sentinel` is a simple integer decrement and
-comparison against zero. On x86_64, this compiles to:
+Comparison against zero. On x86_64, this compiles to:
 
 ```asm
 dec rax         ; decrement count
@@ -506,14 +506,14 @@ This is identical in cost to a hand-written counted loop.
 ### Sentinel-Eligible Algorithm Optimizations
 
 The standard library algorithms are aware of sentinel types. When an algorithm receives
-`unreachable_sentinel`, it can eliminate bounds-checking branches in inner loops. When it receives a
-`default_sentinel`, it can use count-based loop termination instead of pointer comparison.
+`unreachable_sentinel`It can eliminate bounds-checking branches in inner loops. When it receives a
+`default_sentinel`It can use count-based loop termination instead of pointer comparison.
 
 ## `std::ranges::subrange` Details
 
 `std::ranges::subrange<I, S>` is the general-purpose range type that pairs an iterator with a
-sentinel [N4950 §25.7.3]. It is the return type of many range adaptors and is the primary way to
-pass around half-open intervals.
+Sentinel [N4950 §25.7.3]. It is the return type of many range adaptors and is the primary way to
+Pass around half-open intervals.
 
 ```cpp
 #include <iostream>
@@ -553,7 +553,7 @@ int main() {
 ### 1. Sentinel Comparison Must Be Heterogeneous
 
 The `sentinel_for` concept requires that `S` and `I` be **weakly-equality-comparable-with** each
-other, but they do not need to be the same type. A common mistake is implementing `==` only for
+Other, but they do not need to be the same type. A common mistake is implementing `==` only for
 `(I, I)` pairs and forgetting the `(I, S)` and `(S, I)` overloads:
 
 ```cpp
@@ -573,13 +573,13 @@ bool operator==(NullSentinel, It it) { return it == NullSentinel{}; }
 ### 2. `std::sized_range` Requires O(1) Size
 
 If you provide a custom `size()` member function, it must return the size in O(1). If computing the
-size requires a linear scan, do not model `sized_range` — instead, let algorithms fall back to
+Size requires a linear scan, do not model `sized_range` — instead, let algorithms fall back to
 `ranges::distance()` which performs the scan only when needed.
 
 ### 3. Dangling Iterators from Temporary Ranges
 
 A `subrange` does not own its data. If the underlying container is a temporary, the subrange will
-dangle:
+Dangle:
 
 ```cpp
 auto bad() {
@@ -594,8 +594,16 @@ auto bad() {
 ### 4. `unreachable_sentinel` Safety
 
 Using `unreachable_sentinel` is a contract: you are guaranteeing to the standard library that the
-range is infinite (or at least large enough). If the range is shorter than the algorithm expects,
-you get buffer overread — and unlike with bounds-checked iterators, there is no diagnostic. Use this
-only when you have proven the bounds at a higher level.
+Range is infinite (or at least large enough). If the range is shorter than the algorithm expects,
+You get buffer overread — and unlike with bounds-checked iterators, there is no diagnostic. Use this
+Only when you have proven the bounds at a higher level.
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

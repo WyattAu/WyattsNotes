@@ -31,7 +31,7 @@ For each of the following scenarios, determine whether the binomial distribution
 
 **Solution:**
 
-**(a)** The binomial distribution is **NOT** appropriate. The condition violated is **independence of trials**: since balls are drawn without replacement, the probability of drawing a red ball changes after each draw. The probability of red on the first draw is $\frac{5}{8}$, but if the first ball is blue, the probability of red on the second draw becomes $\frac{5}{7}$.
+**(a)** The binomial distribution is **NOT** appropriate. The condition violated is **independence of trials**: since balls are drawn without replacement, the probability of drawing a red ball changes after each draw. The probability of red on the first draw is $\frac{5}{8}$But if the first ball is blue, the probability of red on the second draw becomes $\frac{5}{7}$.
 
 The correct distribution is the **geometric distribution** (number of failures before the first success in sampling without replacement follows a negative hypergeometric distribution, but the scenario of "number of blue balls before the first red" without replacement is best modelled by a direct probability calculation for each value).
 
@@ -43,7 +43,7 @@ The correct distribution is the **geometric distribution** (number of failures b
 
 So $Y \sim B(50, 0.02)$.
 
-**(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; it depends on when the third head occurs.
+**(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; on when the third head occurs.
 
 The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{NegBin}(r = 3, p = 0.5)$.
 
@@ -57,7 +57,7 @@ So $W \sim B(50, 0.3)$.
 
 The fact that there are 100 total rolls is irrelevant --- we are only considering the first 50.
 
-**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P}(\text{correct}) = 1$, but for the last 5 questions, $\mathrm{P}(\text{correct}) = \frac{1}{4}$. The probability of success changes partway through.
+**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P}(\text{correct}) = 1$But for the last 5 questions, $\mathrm{P}(\text{correct}) = \frac{1}{4}$. The probability of success changes partway through.
 
 The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deterministic: always 5) and $V_2 \sim B(5, 0.25)$. Then $V = 5 + V_2$ and $V_2 \sim B(5, 0.25)$.
 
@@ -81,7 +81,7 @@ The random variable $X$ follows a normal distribution $X \sim N(50, 12)$. (Note:
 
 **Solution:**
 
-**(a)** $X \sim N(50, 12)$, so $\mu = 50$, $\sigma = \sqrt{12} = 2\sqrt{3}$.
+**(a)** $X \sim N(50, 12)$So $\mu = 50$$\sigma = \sqrt{12} = 2\sqrt{3}$.
 
 Standardising:
 
@@ -101,7 +101,7 @@ $\sigma^2 = np(1-p) = 80 \times 0.6 \times 0.4 = 19.2$
 
 $\sigma = \sqrt{19.2}$
 
-**Continuity correction:** Since $Y$ is discrete and we want $\mathrm{P}(Y \leq 50)$, we use $Y \leq 50.5$ for the normal approximation.
+**Continuity correction:** Since $Y$ is discrete and we want $\mathrm{P}(Y \leq 50)$We use $Y \leq 50.5$ for the normal approximation.
 
 $$\mathrm{P}(Y \leq 50) \approx \mathrm{P}(X \leq 50.5) \quad \text{where } X \sim N(48, 19.2)$$
 
@@ -113,7 +113,7 @@ $$\mathrm{P}(Z \leq 0.5704) = \Phi(0.5704) = 0.7158 \approx 0.716$$
 
 1. **No continuity correction:** The student used 50 instead of 50.5. For a discrete distribution approximated by a continuous one, $\mathrm{P}(Y \leq 50)$ should use 50.5, not 50.
 
-2. **Missing the subtraction in the numerator:** The student wrote $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆$, which is actually correct for the standardisation formula (though without the continuity correction). However, if the student had meant to compute $\mathrm{P}(Y \geq 50)$ and wrote $\frac◆LB◆48 - 50◆RB◆◆LB◆\sqrt{19.2}◆RB◆$, that would be a sign error. The standardisation is $Z = \frac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆$, so the numerator must be $X - \mu = 50.5 - 48 = 2.5$ (or with continuity correction, $50.5 - 48$). The student's version gives $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = 0.4564$, which underestimates the correct $z$-value of 0.5704.
+2. **Missing the subtraction in the numerator:** The student wrote $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆$Which is actually correct for the standardisation formula (though without the continuity correction). However, if the student had meant to compute $\mathrm{P}(Y \geq 50)$ and wrote $\frac◆LB◆48 - 50◆RB◆◆LB◆\sqrt{19.2}◆RB◆$That would be a sign error. The standardisation is $Z = \frac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆$So the numerator must be $X - \mu = 50.5 - 48 = 2.5$ (or with continuity correction, $50.5 - 48$). The student's version gives $\frac◆LB◆50 - 48◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆\sqrt{19.2}◆RB◆ = 0.4564$Which underestimates the correct $z$-value of 0.5704.
 
 The correct calculation is:
 
@@ -133,7 +133,7 @@ Both criteria are satisfied, so the normal approximation is appropriate. The app
 
 **Question:**
 
-The time (in minutes) that employee $A$ takes to complete a task is $A \sim N(25, 9)$, and the time employee $B$ takes is $B \sim N(30, 16)$. The times are independent.
+The time (in minutes) that employee $A$ takes to complete a task is $A \sim N(25, 9)$And the time employee $B$ takes is $B \sim N(30, 16)$. The times are independent.
 
 **(a)** Find the probability that employee $A$ completes the task in less than 22 minutes.
 
@@ -147,7 +147,7 @@ The time (in minutes) that employee $A$ takes to complete a task is $A \sim N(25
 
 **Solution:**
 
-**(a)** $A \sim N(25, 9)$, so $\mu_A = 25$, $\sigma_A = 3$.
+**(a)** $A \sim N(25, 9)$So $\mu_A = 25$$\sigma_A = 3$.
 
 $$\mathrm{P}(A \lt 22) = \mathrm{P}\left(Z \lt \frac{22 - 25}{3}\right) = \mathrm{P}(Z \lt -1) = 1 - \Phi(1) = 1 - 0.8413 = 0.1587$$
 
@@ -157,7 +157,7 @@ Since $A$ and $B$ are independent normal variables, $T$ is also normally distrib
 
 $$T \sim N(\mu_A + \mu_B,\; \sigma_A^2 + \sigma_B^2) = N(25 + 30,\; 9 + 16) = N(55, 25)$$
 
-So $\mu_T = 55$, $\sigma_T = 5$.
+So $\mu_T = 55$$\sigma_T = 5$.
 
 $$\mathrm{P}(T \lt 60) = \mathrm{P}\left(Z \lt \frac{60 - 55}{5}\right) = \mathrm{P}(Z \lt 1) = 0.8413$$
 
@@ -197,7 +197,7 @@ The formula $\mathrm{SD}(A + B) = \mathrm{SD}(A) + \mathrm{SD}(B)$ is only valid
 
 A supermarket claims that exactly 30% of its customers use reusable bags. An environmental group believes the true proportion is higher and surveys 20 randomly selected customers. They find that 9 of the 20 customers use reusable bags.
 
-**(a)** Stating your hypotheses clearly, carry out a hypothesis test at the 5% significance level to determine whether there is evidence that the proportion of customers using reusable bags is greater than 30%.
+**(a)** Stating your hypotheses , carry out a hypothesis test at the 5% significance level to determine whether there is evidence that the proportion of customers using reusable bags is greater than 30%.
 
 **(b)** Calculate the actual significance level (the probability of a Type I error) for this test. Explain why it differs from the stated 5%.
 
@@ -223,19 +223,19 @@ We find the smallest value $c$ such that $\mathrm{P}(X \geq c \mid H_0) \leq 0.0
 
 $$\mathrm{P}(X \geq 9) = 1 - \mathrm{P}(X \leq 8)$$
 
-Using the binomial cumulative distribution with $n = 20$, $p = 0.3$:
+Using the binomial cumulative distribution with $n = 20$$p = 0.3$:
 
 $$\mathrm{P}(X \leq 8) = 0.8867 \quad \text{(from tables or calculator)}$$
 
 $$\mathrm{P}(X \geq 9) = 1 - 0.8867 = 0.1133$$
 
-Since $0.1133 > 0.05$, 9 is not in the critical region.
+Since $0.1133 > 0.05$9 is not in the critical region.
 
 $$\mathrm{P}(X \geq 10) = 1 - \mathrm{P}(X \leq 9) = 1 - 0.9520 = 0.0480$$
 
-Since $0.0480 \leq 0.05$, the critical region is $X \geq 10$.
+Since $0.0480 \leq 0.05$The critical region is $X \geq 10$.
 
-The observed value is $X = 9$, which does **not** fall in the critical region.
+The observed value is $X = 9$Which does **not** fall in the critical region.
 
 **Conclusion:** There is insufficient evidence to reject $H_0$. The data does not provide sufficient evidence that the proportion of customers using reusable bags is greater than 30%.
 
@@ -245,23 +245,23 @@ $$\alpha_{\text{actual}} = \mathrm{P}(X \geq 10 \mid X \sim B(20, 0.3)) = 0.0480
 
 This differs from the stated 5% because the binomial distribution is discrete. There is no critical value that gives exactly 5%. The closest we can get is 4.80% (with critical region $X \geq 10$) or 11.33% (with critical region $X \geq 9$). We choose the critical region that does not exceed the stated significance level.
 
-**(c)** Under $H_0$: $X \sim B(50, 0.3)$, so $\mu = 15$, $\sigma^2 = 10.5$.
+**(c)** Under $H_0$: $X \sim B(50, 0.3)$So $\mu = 15$$\sigma^2 = 10.5$.
 
-Using the normal approximation: $X \approx N(15, 10.5)$, $\sigma = \sqrt{10.5} \approx 3.24$.
+Using the normal approximation: $X \approx N(15, 10.5)$$\sigma = \sqrt{10.5} \approx 3.24$.
 
 With continuity correction for $X \geq c$:
 
 $$\mathrm{P}(X \geq 20.5) = \mathrm{P}\left(Z \geq \frac◆LB◆20.5 - 15◆RB◆◆LB◆\sqrt{10.5}◆RB◆\right) = \mathrm{P}(Z \geq 1.70) = 1 - \Phi(1.70) = 1 - 0.9554 = 0.0446$$
 
-Since $0.0446 < 0.05$, the critical region is approximately $X \geq 20$.
+Since $0.0446 < 0.05$The critical region is approximately $X \geq 20$.
 
-Alternatively, using exact binomial probabilities: $\mathrm{P}(X \geq 20 \mid B(50, 0.3))$. The observed value is $X = 21$, which is in the critical region.
+Alternatively, using exact binomial probabilities: $\mathrm{P}(X \geq 20 \mid B(50, 0.3))$. The observed value is $X = 21$Which is in the critical region.
 
 **Conclusion:** With the larger sample, there **is** sufficient evidence to reject $H_0$ at the 5% level. This demonstrates that a larger sample size provides more statistical power, even when the observed proportion ($\frac{21}{50} = 0.42$) is similar to the smaller sample ($\frac{9}{20} = 0.45$).
 
 **(d)** The **power** of a test is the probability of correctly rejecting $H_0$ when $H_1$ is true. It equals $1 - \mathrm{P}(\text{Type II error})$.
 
-For this test, the power depends on the true value of $p$. If the true proportion were, say, $p = 0.5$, the power would be:
+For this test, the power depends on the true value of $p$. If the true proportion were, say, $p = 0.5$The power would be:
 
 $$\text{Power} = \mathrm{P}(X \geq 10 \mid X \sim B(20, 0.5)) = 1 - \mathrm{P}(X \leq 9 \mid B(20, 0.5))$$
 
@@ -272,7 +272,7 @@ So the test has about 58.8% power to detect a true proportion of 0.5.
 Increasing the sample size increases the power of the test because:
 1. The distribution under $H_0$ becomes more concentrated (smaller standard deviation), so the critical region starts at a proportionally lower value.
 2. The distribution under $H_1$ also becomes more concentrated, but the separation between the $H_0$ and $H_1$ distributions increases relative to their spread.
-3. This makes it easier to distinguish between $H_0$ and $H_1$, reducing the probability of a Type II error and increasing the power.
+3. This makes it easier to distinguish between $H_0$ and $H_1$Reducing the probability of a Type II error and increasing the power.
 
 ---
 
@@ -318,7 +318,7 @@ $$\mathrm{P}(Y > 60) = \mathrm{P}(Y \geq 61) \approx \mathrm{P}\left(Z > \frac�
 
 $$= 1 - \Phi(0.0645) = 1 - 0.5257 = 0.4743 \approx 0.474$$
 
-The normal approximation is justified because $\lambda = 60 > 10$, which is the standard criterion for approximating a Poisson distribution with a normal distribution.
+The normal approximation is justified because $\lambda = 60 > 10$Which is the standard criterion for approximating a Poisson distribution with a normal distribution.
 
 **(c)** The student models $T \sim U(0, 0.5)$.
 
@@ -344,7 +344,7 @@ $$2p_{90} = 0.9 \implies p_{90} = 0.45 \text{ minutes} = 27 \text{ seconds}$$
 
 **True exponential mean:** $\frac{1}{2.4} \approx 0.417$ minutes.
 
-The uniform model mean (0.25 minutes = 15 seconds) is significantly lower than the true mean (0.417 minutes = 25 seconds). The uniform model assigns equal probability density to all values in $[0, 0.5]$, which means it underestimates the likelihood of longer waiting times. The exponential distribution has a peak near 0 and a long right tail, which is more realistic for inter-arrival times.
+The uniform model mean (0.25 minutes = 15 seconds) is significantly lower than the true mean (0.417 minutes = 25 seconds). The uniform model assigns equal probability density to all values in $[0, 0.5]$Which means it underestimates the likelihood of longer waiting times. The exponential distribution has a peak near 0 and a long right tail, which is more realistic for inter-arrival times.
 
 The uniform model is unsuitable because:
 1. It gives a maximum possible waiting time of 0.5 minutes (30 seconds), whereas the exponential distribution has no upper bound.
@@ -417,7 +417,7 @@ $$k = \mathrm{E}(N) = \frac{36}{5} = 7.2$$
 
 The casino should pay $\pounds 7.20$ for the game to be fair.
 
-Alternatively, thinking of it per roll: the expected gain per roll is $-1 + k \cdot \frac{5}{36}$ (lose $\pounds 1$ with probability $\frac{31}{36}$, gain $\pounds(k-1)$ with probability $\frac{5}{36}$). Setting this to zero:
+Alternatively, thinking of it per roll: the expected gain per roll is $-1 + k \cdot \frac{5}{36}$ (lose $\pounds 1$ with probability $\frac{31}{36}$Gain $\pounds(k-1)$ with probability $\frac{5}{36}$). Setting this to zero:
 
 $$-1 + k \cdot \frac{5}{36} = 0 \implies k = \frac{36}{5} = 7.2$$
 

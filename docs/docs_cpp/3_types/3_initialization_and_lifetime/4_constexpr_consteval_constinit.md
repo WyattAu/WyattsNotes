@@ -8,28 +8,28 @@ categories:
   - Cpp
 slug: constant-expressions
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compile-time computation is one of C++'s most distinctive capabilities. Unlike C macros or Java
-`static final`, C++ constant expressions are type-checked, support full language features (loops,
-conditionals, recursion), and can operate on user-defined types. The evolution from C++11
+`static final`C++ constant expressions are type-checked, support full language features (loops,
+Conditionals, recursion), and can operate on user-defined types. The evolution from C++11
 `constexpr` through C++20 `consteval` and `constinit` gives programmers fine-grained control over
-exactly when an expression is evaluated. For systems programmers, this means moving error detection
-from runtime to compile time -- a zero-cost correctness guarantee.
+Exactly when an expression is evaluated. For systems programmers, this means moving error detection
+From runtime to compile time -- a zero-cost correctness guarantee.
 
 ## The Keyword Taxonomy
 
-| Keyword     | Storage             | Initialization           | Evaluation               | Can be modified? |
+| Keyword | Storage | Initialization | Evaluation | Can be modified? |
 | :---------- | :------------------ | :----------------------- | :----------------------- | :--------------- |
-| `const`     | Any                 | Runtime or compile-time  | Either                   | No (after init)  |
-| `constexpr` | Any                 | **Must be** compile-time | **Must be** compile-time | No (after init)  |
-| `consteval` | N/A (function only) | N/A                      | **Must be** compile-time | N/A              |
-| `constinit` | Static/Thread       | **Must be** compile-time | Runtime value OK         | Yes (after init) |
+| `const` | Any | Runtime or compile-time | Either | No (after init) |
+| `constexpr` | Any | **Must be** compile-time | **Must be** compile-time | No (after init) |
+| `consteval` | N/A (function only) | N/A | **Must be** compile-time | N/A |
+| `constinit` | Static/Thread | **Must be** compile-time | Runtime value OK | Yes (after init) |
 
 ## `const`: Immutability, Not Compile-Time
 
 `const` promises that a variable will not be modified after initialization. It does **not**
-guarantee compile-time evaluation.
+Guarantee compile-time evaluation.
 
 ```cpp
 void example(int n) {
@@ -71,12 +71,12 @@ void f(int n) {
 ```
 
 The rule: a `const` variable is a constant expression **only if** it is initialized with a constant
-expression. A `constexpr` variable is **always** a constant expression [N4950 §7.7].
+Expression. A `constexpr` variable is **always** a constant expression [N4950 §7.7].
 
 ## `constexpr`: Guaranteed Compile-Time Evaluation
 
 `constexpr` (C++11) declares that a variable **must** be initialized with a constant expression, or
-that a function **may** be evaluated at compile time [N4950 §7.7].
+That a function **may** be evaluated at compile time [N4950 §7.7].
 
 ### `constexpr` Variables
 
@@ -106,14 +106,14 @@ int f_runtime = factorial(n);     // OK: evaluated at runtime (C++11 allows this
 ```
 
 C++11 `constexpr` functions could only contain a single `return` statement (with conditional
-expressions and recursion).
+Expressions and recursion).
 
 #### C++14: Relaxed `constexpr` Functions
 
 C++14 removed the single-return restriction. `constexpr` functions can now contain:
 
 - Local variables
-- Loops (`for`, `while`, `do-while`)
+- Loops (`for``while``do-while`)
 - Multiple statements
 - Mutations of local variables
 
@@ -135,7 +135,7 @@ constexpr int fib10 = fibonacci(10);  // 55, computed at compile time
 #### C++20: Immediate Functions (`consteval`)
 
 `consteval` (also called "immediate functions") **must** be evaluated at compile time. They cannot
-be called at runtime [N4950 §7.7.5].
+Be called at runtime [N4950 §7.7.5].
 
 ```cpp
 consteval int square(int n) {
@@ -171,7 +171,7 @@ constexpr double dist_sq = p.distance_to(origin);  // 25.0, compile-time
 ### `constexpr` Containers and `std::string` (C++20)
 
 C++20 made `std::vector` and `std::string` usable in constant expressions (transiently -- they
-cannot outlive the constant expression evaluation):
+Cannot outlive the constant expression evaluation):
 
 ```cpp
 #include <string>
@@ -237,8 +237,8 @@ constexpr auto sqrt_table = make_sqrt_table<100>();
 ## `constinit`: Compile-Time Initialization, Runtime Value
 
 `constinit` (C++20) guarantees that a variable with static or thread storage duration is initialized
-at compile time (zero-initialization or constant initialization), but allows the variable to be
-modified at runtime [N4950 §6.6.3.2].
+At compile time (zero-initialization or constant initialization), but allows the variable to be
+Modified at runtime [N4950 §6.6.3.2].
 
 ### The Problem `constinit` Solves
 
@@ -266,7 +266,7 @@ b = 100;  // OK
 ### `constinit` and the Static Initialization Order Problem
 
 `constinit` guarantees zero-cost startup because the variable undergoes constant initialization --
-no dynamic initialization phase, no static initialization order fiasco:
+No dynamic initialization phase, no static initialization order fiasco:
 
 ```cpp
 struct Config {
@@ -293,17 +293,17 @@ g_logger.set_level(3);        // runtime modification is fine
 
 ### When to Use `constinit` vs `constexpr`
 
-| Scenario                                                      | Use                                   |
+| Scenario | Use |
 | :------------------------------------------------------------ | :------------------------------------ |
-| True constant (never changes)                                 | `constexpr`                           |
-| Global state initialized at compile time, modified at runtime | `constinit`                           |
-| Avoid static initialization order fiasco                      | `constinit` + `constexpr` constructor |
-| Performance-critical startup (avoid dynamic init)             | `constinit`                           |
+| True constant (never changes) | `constexpr` |
+| Global state initialized at compile time, modified at runtime | `constinit` |
+| Avoid static initialization order fiasco | `constinit` + `constexpr` constructor |
+| Performance-critical startup (avoid dynamic init) | `constinit` |
 
 ## `if constexpr`
 
 `if constexpr` (C++17) enables compile-time branching. The discarded branch is not instantiated,
-which prevents type errors and enables template metaprogramming without SFINAE:
+Which prevents type errors and enables template metaprogramming without SFINAE:
 
 ```cpp
 #include <type_traits>
@@ -386,7 +386,7 @@ constexpr int ALIGNMENT = [] {
 ```
 
 The lambda syntax (C++17 constexpr lambdas) enables inline computation without polluting the
-namespace with helper functions.
+Namespace with helper functions.
 
 ### `constexpr` Lambda (C++17)
 
@@ -481,7 +481,7 @@ static_assert(crc32("hello", 5) == 0x3610A686u);
 ### 1. `constexpr` Function Called with Runtime Arguments
 
 A `constexpr` function evaluated at runtime does not have compile-time guarantees. UB checks only
-apply when the function is evaluated in a constant expression context:
+Apply when the function is evaluated in a constant expression context:
 
 ```cpp
 constexpr int divide(int a, int b) { return a / b; }
@@ -538,10 +538,18 @@ struct S2 {
 ## See Also
 
 - **Module 7 (Data Layout)**: Fundamental types, struct layout, and alignment in constant
-  expressions
+ expressions
 - **Module 8 (Pointers, References, Views)**: Pointer and reference behavior in constexpr context
 - **Module 9.2 (Uniform Initialization)**: Brace initialization in constexpr constructors
 - **Module 9.3 (Aggregate Initialization)**: `constexpr` aggregates and compile-time struct
-  construction
+ construction
 - **Module 10 (Ownership and RAII)**: RAII and constexpr destructors
 - **Module 13 (Error Handling)**: `static_assert` as a compile-time error mechanism
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

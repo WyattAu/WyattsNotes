@@ -33,14 +33,14 @@ $\mathrm{NH{}_3/\mathrm{NH{}_4^+$ (base/conjugate acid) and $\mathrm{H{}_2\mathr
 (acid/conjugate base).
 
 **Worked Example 1:** Identify the conjugate acid-base pairs in the reaction of $\mathrm{HSO{}_4^-$
-with $\mathrm{H{}_2\mathrm{O{}$:
+With $\mathrm{H{}_2\mathrm{O{}$:
 
 $$\mathrm{HSO{}_4^- + \mathrm{H{}_2\mathrm{O{} \rightleftharpoons \mathrm{SO{}_4^{2-} + \mathrm{H{}_3\mathrm{O{}^+$$
 
 $\mathrm{HSO{}_4^-/\mathrm{SO{}_4^{2-}$ (acid/conjugate base) and
 $\mathrm{H{}_2\mathrm{O{}/\mathrm{H{}_3\mathrm{O{}^+$ (base/conjugate acid). Note that $\mathrm{HSO{}_4^-$ is
-acting as an acid (donating a proton) and $\mathrm{H{}_2\mathrm{O{}$ is acting as a base (accepting a
-proton).
+Acting as an acid (donating a proton) and $\mathrm{H{}_2\mathrm{O{}$ is acting as a base (accepting a
+Proton).
 
 ### Strong and Weak Acids
 
@@ -48,25 +48,25 @@ proton).
 
 $$\mathrm{HCl{} \to \mathrm{H{}^+ + \mathrm{Cl{}^-$$
 
-Common strong acids: $\mathrm{HCl{}$, $\mathrm{HNO{}_3$, $\mathrm{H{}_2\mathrm{SO{}_4$ (first dissociation),
+Common strong acids: $\mathrm{HCl{}$$\mathrm{HNO{}_3$$\mathrm{H{}_2\mathrm{SO{}_4$ (first dissociation),
 $\mathrm{HClO{}_4$.
 
 **Weak acids** are partially dissociated in aqueous solution.
 
 $$\mathrm{CH{}_3\mathrm{COOH{} \rightleftharpoons \mathrm{CH{}_3\mathrm{COO{}^- + \mathrm{H{}^+$$
 
-Common weak acids: $\mathrm{CH{}_3\mathrm{COOH{}$, $\mathrm{H{}_2\mathrm{CO{}_3$, $\mathrm{HF{}$,
+Common weak acids: $\mathrm{CH{}_3\mathrm{COOH{}$$\mathrm{H{}_2\mathrm{CO{}_3$$\mathrm{HF{}$
 $\mathrm{H{}_3\mathrm{PO{}_4$.
 
 ### Comparison of Strong and Weak Acids
 
-| Property              | Strong acid     | Weak acid                            |
+| Property | Strong acid | Weak acid |
 | --------------------- | --------------- | ------------------------------------ |
-| Dissociation          | Complete        | Partial                              |
-| Equilibrium           | Not established | Dynamic equilibrium                  |
-| pH at 0.1 M           | 1.0             | Approximately 2.9                    |
-| Conductivity          | High            | Lower                                |
-| Reaction rate with Mg | Faster          | Slower (same at same $[\mathrm{H{}^+]$) |
+| Dissociation | Complete | Partial |
+| Equilibrium | Not established | Dynamic equilibrium |
+| pH at 0.1 M | 1.0 | Approximately 2.9 |
+| Conductivity | High | Lower |
+| Reaction rate with Mg | Faster | Slower (same at same $[\mathrm{H{}^+]$) |
 
 **Key misconception:** Concentration and strength are independent. A 0.001 M strong acid and a 0.001
 M weak acid have the same concentration but different $[\mathrm{H{}^+]$.
@@ -75,7 +75,7 @@ M weak acid have the same concentration but different $[\mathrm{H{}^+]$.
 
 $$\mathrm{pH{} = -\log_{10}[\mathrm{H{}^+]$$
 
-where $[\mathrm{H{}^+]$ is the concentration of hydrogen ions in mol/L.
+Where $[\mathrm{H{}^+]$ is the concentration of hydrogen ions in mol/L.
 
 At $25°C$: $\mathrm{pH{} = 7$ is neutral, $\mathrm{pH{} < 7$ is acidic, $\mathrm{pH{} > 7$ is alkaline.
 
@@ -88,7 +88,7 @@ $$\mathrm{pH{} = -\log_{10}(0.05) = 1.30$$
 $$[\mathrm{H{}^+] = 10^{-3.40} = 3.98 \times 10^{-4} \mathrm{ mol/L{}$$
 
 **Worked Example 4:** Find the pH of $0.005 \mathrm{ M{}$ $\mathrm{H{}_2\mathrm{SO{}_4$ (assume complete
-dissociation of the first proton and ignore the second).
+Dissociation of the first proton and ignore the second).
 
 $$[\mathrm{H{}^+] = 0.005 \mathrm{ M{}$$
 
@@ -108,11 +108,11 @@ From the autoionisation equilibrium:
 
 $$K_w = [\mathrm{H{}^+][\mathrm{OH{}^-]$$
 
-In pure water at $25°C$: $[\mathrm{H{}^+] = [\mathrm{OH{}^-] = 10^{-7} \mathrm{ M{}$, so
+In pure water at $25°C$: $[\mathrm{H{}^+] = [\mathrm{OH{}^-] = 10^{-7} \mathrm{ M{}$So
 $K_w = 10^{-7} \times 10^{-7} = 10^{-14}$.
 
 $K_w$ is temperature-dependent. At higher temperatures, more water molecules dissociate, so $K_w$
-increases. This means the pH of pure water decreases with temperature, but the water remains neutral
+Increases. This means the pH of pure water decreases with temperature, but the water remains neutral
 (since $[\mathrm{H{}^+] = [\mathrm{OH{}^-]$).
 
 **Worked Example 5:** Find the pH of $0.02 \mathrm{ M{}$ $\mathrm{NaOH{}$.
@@ -131,7 +131,7 @@ $$K_a = \frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$$
 
 **$pK_a = -\log_{10} K_a$**
 
-The lower the $pK_a$, the stronger the acid.
+The lower the $pK_a$The stronger the acid.
 
 **Worked Example 6:** Ethanoic acid has $K_a = 1.74 \times 10^{-5} \mathrm{ mol/L{}$. Find the pH of a
 $0.10 \mathrm{ M{}$ solution.
@@ -185,7 +185,7 @@ $$\mathrm{pH{} = 14 - 2.79 = 11.21$$
 ### What is a Buffer?
 
 A **buffer solution** resists changes in pH when small amounts of acid or base are added. It
-consists of a weak acid and its conjugate base (or a weak base and its conjugate acid).
+Consists of a weak acid and its conjugate base (or a weak base and its conjugate acid).
 
 **Acidic buffer:** Weak acid ($\mathrm{HA{}$) + salt of weak acid ($\mathrm{A{}^-$).
 
@@ -219,8 +219,8 @@ $$\mathrm{pH{} = pK_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$$
 $$\mathrm{pH{} = 4.76 + \log_{10}\left(\frac{0.15}{0.20}\right) = 4.76 + \log_{10}(0.75) = 4.76 - 0.125 = 4.64$$
 
 **Worked Example 10:** Prepare a buffer at pH 5.00 using ethanoic acid ($pK_a = 4.76$) and sodium
-ethanoate. If the total concentration is $0.30 \mathrm{ M{}$, find the concentrations of each
-component.
+Ethanoate. If the total concentration is $0.30 \mathrm{ M{}$Find the concentrations of each
+Component.
 
 $$5.00 = 4.76 + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$$
 
@@ -228,24 +228,24 @@ $$\log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]} = 0.24$$
 
 $$\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]} = 10^{0.24} = 1.74$$
 
-Let $[\mathrm{HA{}] = x$, then $[\mathrm{A{}^-] = 1.74x$.
+Let $[\mathrm{HA{}] = x$Then $[\mathrm{A{}^-] = 1.74x$.
 
 $x + 1.74x = 0.30 \implies 2.74x = 0.30 \implies x = 0.109 \mathrm{ M{}$
 
-$[\mathrm{HA{}] = 0.109 \mathrm{ M{}$, $[\mathrm{A{}^-] = 0.191 \mathrm{ M{}$.
+$[\mathrm{HA{}] = 0.109 \mathrm{ M{}$$[\mathrm{A{}^-] = 0.191 \mathrm{ M{}$.
 
 ### Buffer Capacity
 
 The buffer capacity depends on:
 
 - The absolute concentrations of the weak acid and conjugate base (higher concentrations = greater
-  capacity)
+ capacity)
 - The ratio $[\mathrm{A{}^-]/[\mathrm{HA{}]$ (most effective when this ratio is close to 1, i.e., pH near
-  $pK_a$)
+ $pK_a$)
 
 **Worked Example 11:** A buffer contains $0.10 \mathrm{ M{}$ $\mathrm{NH{}_3$ and $0.15 \mathrm{ M{}$
 $\mathrm{NH{}_4\mathrm{Cl{}$. Calculate its pH and the pH after adding $0.01 \mathrm{ mol{}$ of $\mathrm{HCl{}$
-to $1 \mathrm{ L{}$ of the buffer.
+To $1 \mathrm{ L{}$ of the buffer.
 
 First, find $K_a$ for $\mathrm{NH{}_4^+$:
 
@@ -258,7 +258,7 @@ $$\mathrm{pH{} = 9.25 + \log\frac{0.10}{0.15} = 9.25 - 0.176 = 9.07$$
 After adding $0.01 \mathrm{ mol{}$ $\mathrm{HCl{}$:
 
 $\mathrm{NH{}_3$ reacts with $\mathrm{H{}^+$: $[\mathrm{NH{}_3]$ decreases by $0.01$ and $[\mathrm{NH{}_4^+]$
-increases by $0.01$.
+Increases by $0.01$.
 
 $$[\mathrm{NH{}_3] = 0.10 - 0.01 = 0.09 \mathrm{ M{}$$ $$[\mathrm{NH{}_4^+] = 0.15 + 0.01 = 0.16 \mathrm{ M{}$$
 
@@ -297,7 +297,7 @@ Equivalence point at pH > 7 (alkaline).
 
 **Worked Example 13:** $25.0 \mathrm{ cm{}^3$ of $0.10 \mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$
 ($K_a = 1.74 \times 10^{-5}$) is titrated with $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$. Find the pH at the
-equivalence point.
+Equivalence point.
 
 Moles of $\mathrm{CH{}_3\mathrm{COO{}^-$ formed = $0.00250 \mathrm{ mol{}$.
 
@@ -321,7 +321,7 @@ $$\mathrm{pH{} = 14 - 5.27 = 8.73$$
 
 **Worked Example 14:** $20.0 \mathrm{ cm{}^3$ of $0.15 \mathrm{ M{}$ $\mathrm{NH{}_3$
 ($K_b = 1.78 \times 10^{-5}$) is titrated with $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the pH after
-adding $15.0 \mathrm{ cm{}^3$ of $\mathrm{HCl{}$.
+Adding $15.0 \mathrm{ cm{}^3$ of $\mathrm{HCl{}$.
 
 Moles of $\mathrm{NH{}_3 = 0.15 \times 0.0200 = 0.00300 \mathrm{ mol{}$ Moles of $\mathrm{HCl{}$ added
 $= 0.10 \times 0.0150 = 0.00150 \mathrm{ mol{}$
@@ -346,28 +346,28 @@ $$\mathrm{HIn{} \rightleftharpoons \mathrm{H{}^+ + \mathrm{In{}^-$$
 
 The indicator changes colour over approximately $\mathrm{p{}K_{\mathrm{In{}} \pm 1$.
 
-| Indicator        | pH Range   | Colour Change      |
+| Indicator | pH Range | Colour Change |
 | ---------------- | ---------- | ------------------ |
-| Methyl orange    | 3.1 - 4.4  | Red to yellow      |
-| Bromothymol blue | 6.0 - 7.6  | Yellow to blue     |
-| Phenolphthalein  | 8.3 - 10.0 | Colourless to pink |
+| Methyl orange | 3.1 - 4.4 | Red to yellow |
+| Bromothymol blue | 6.0 - 7.6 | Yellow to blue |
+| Phenolphthalein | 8.3 - 10.0 | Colourless to pink |
 
 ### Choosing an Indicator
 
 The indicator range must overlap with the steep part of the titration curve at the equivalence
-point.
+Point.
 
-| Titration type            | Equivalence pH | Suitable indicator |
+| Titration type | Equivalence pH | Suitable indicator |
 | ------------------------- | -------------- | ------------------ |
-| Strong acid + strong base | pH = 7         | Bromothymol blue   |
-| Strong acid + weak base   | pH < 7         | Methyl orange      |
-| Weak acid + strong base   | pH > 7         | Phenolphthalein    |
+| Strong acid + strong base | pH = 7 | Bromothymol blue |
+| Strong acid + weak base | pH < 7 | Methyl orange |
+| Weak acid + strong base | pH > 7 | Phenolphthalein |
 
 :::warning
 The original question 8 in the practice section stated that "phenolphthalein is suitable
-for a strong acid-weak base titration" -- this is incorrect. Phenolphthalein (pH 8.3-10.0) is
-suitable for weak acid-strong base titrations where the equivalence pH is above 7. For strong
-acid-weak base titrations (equivalence pH below 7), methyl orange is the correct choice.
+For a strong acid-weak base titration" -- this is incorrect. Phenolphthalein (pH 8.3-10.0) is
+Suitable for weak acid-strong base titrations where the equivalence pH is above 7. For strong
+Acid-weak base titrations (equivalence pH below 7), methyl orange is the correct choice.
 :::
 
 ---
@@ -376,7 +376,7 @@ acid-weak base titrations (equivalence pH below 7), methyl orange is the correct
 
 ### Diprotic Acids
 
-Acids that can donate two protons, e.g., $\mathrm{H{}_2\mathrm{SO{}_4$, $\mathrm{H{}_2\mathrm{CO{}_3$,
+Acids that can donate two protons, e.g., $\mathrm{H{}_2\mathrm{SO{}_4$$\mathrm{H{}_2\mathrm{CO{}_3$
 $\mathrm{H{}_3\mathrm{PO{}_4$ (triprotic).
 
 For carbonic acid:
@@ -391,90 +391,90 @@ Note that $K_{a1} \gg K_{a2}$: the first dissociation is much stronger than the 
 
 ## Summary Table: Acid-Base Concepts
 
-| Concept               | Formula/Definition                                        | Key Point                    |
+| Concept | Formula/Definition | Key Point |
 | --------------------- | --------------------------------------------------------- | ---------------------------- |
-| pH                    | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$                           | Lower pH = more acidic       |
-| $K_w$                 | $[\mathrm{H{}^+][\mathrm{OH{}^-] = 10^{-14}$                    | At 25°C                      |
-| $K_a$                 | $\frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$            | Higher $K_a$ = stronger acid |
-| $K_b$                 | $\frac{[\mathrm{BH{}^+][\mathrm{OH{}^-]}{[\mathrm{B{}]}$           | Higher $K_b$ = stronger base |
-| Henderson-Hasselbalch | $\mathrm{pH{} = pK_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | For buffer solutions         |
-| $K_a \times K_b$      | $= K_w$                                                   | For conjugate pairs          |
+| pH | $\mathrm{pH{} = -\log[\mathrm{H{}^+]$ | Lower pH = more acidic |
+| $K_w$ | $[\mathrm{H{}^+][\mathrm{OH{}^-] = 10^{-14}$ | At 25°C |
+| $K_a$ | $\frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | Higher $K_a$ = stronger acid |
+| $K_b$ | $\frac{[\mathrm{BH{}^+][\mathrm{OH{}^-]}{[\mathrm{B{}]}$ | Higher $K_b$ = stronger base |
+| Henderson-Hasselbalch | $\mathrm{pH{} = pK_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]}$ | For buffer solutions |
+| $K_a \times K_b$ | $= K_w$ | For conjugate pairs |
 
 ---
 
 ## Common Pitfalls
 
-1. **Strong vs. weak acids:** A strong acid is completely dissociated; a weak acid is partially
-   dissociated. Concentration and strength are independent.
+1. **Strong vs. Weak acids:** A strong acid is completely dissociated; a weak acid is partially
+ dissociated. Concentration and strength are independent.
 
 2. **$[\mathrm{H{}^+]$ approximation:** For weak acids, $[\mathrm{H{}^+] = \sqrt{K_a \times c}$ is valid
-   only when $[\mathrm{H{}^+]$ is small compared to $c$ (typically when $c/K_a > 100$).
+ only when $[\mathrm{H{}^+]$ is small compared to $c$ ( when $c/K_a > 100$).
 
-3. **pH of water:** Pure water has pH 7 at $25°C$, but this changes with temperature because $K_w$
-   changes.
+3. **pH of water:** Pure water has pH 7 at $25°C$But this changes with temperature because $K_w$
+ changes.
 
 4. **Buffer calculations:** The Henderson-Hasselbalch equation uses concentrations, not moles
-   (unless the acid and base are in the same volume).
+ (unless the acid and base are in the same volume).
 
 5. **Choosing an indicator:** The indicator range must include the pH at the equivalence point.
 
 6. **Conjugate base strength:** The weaker the acid, the stronger its conjugate base. $\mathrm{Cl{}^-$
-   is an extremely weak base because $\mathrm{HCl{}$ is a very strong acid.
+ is an extremely weak base because $\mathrm{HCl{}$ is a very strong acid.
 
 7. **Diprotic acids:** The second dissociation is always weaker than the first. For
-   $\mathrm{H{}_2\mathrm{SO{}_4$, the first proton dissociates completely but the second does not
-   ($K_{a2} = 1.2 \times 10^{-2}$).
+ $\mathrm{H{}_2\mathrm{SO{}_4$The first proton dissociates completely but the second does not
+ ($K_{a2} = 1.2 \times 10^{-2}$).
 
 ---
 
 ## Practice Questions
 
 1. Calculate the pH of $0.005 \mathrm{ M{}$ $\mathrm{H{}_2\mathrm{SO{}_4$ (assume complete dissociation of
-   the first proton and ignore the second).
+ the first proton and ignore the second).
 
 2. A weak acid $\mathrm{HX{}$ has $K_a = 4.2 \times 10^{-4}$. Find the pH of a $0.25 \mathrm{ M{}$
-   solution and the percentage dissociation.
+ solution and the percentage dissociation.
 
 3. Prepare a buffer at pH 5.00 using ethanoic acid ($pK_a = 4.76$) and sodium ethanoate. If the
-   total concentration is $0.30 \mathrm{ M{}$, find the concentrations of each component.
+ total concentration is $0.30 \mathrm{ M{}$Find the concentrations of each component.
 
 4. $20.0 \mathrm{ cm{}^3$ of $0.15 \mathrm{ M{}$ $\mathrm{NH{}_3$ ($K_b = 1.78 \times 10^{-5}$) is titrated
-   with $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the pH after adding $15.0 \mathrm{ cm{}^3$ of $\mathrm{HCl{}$.
+ with $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$. Find the pH after adding $15.0 \mathrm{ cm{}^3$ of $\mathrm{HCl{}$.
 
 5. Explain why the pH of a $0.01 \mathrm{ M{}$ solution of $\mathrm{HCl{}$ is 2.0, but the pH of a
-   $0.01 \mathrm{ M{}$ solution of $\mathrm{CH{}_3\mathrm{COOH{}$ is approximately 3.4.
+ $0.01 \mathrm{ M{}$ solution of $\mathrm{CH{}_3\mathrm{COOH{}$ is approximately 3.4.
 
 6. A buffer contains $0.10 \mathrm{ M{}$ $\mathrm{NH{}_3$ and $0.15 \mathrm{ M{}$ $\mathrm{NH{}_4\mathrm{Cl{}$.
-   Calculate its pH and the pH after adding $0.01 \mathrm{ mol{}$ of $\mathrm{HCl{}$ to $1 \mathrm{ L{}$ of
-   the buffer.
+ Calculate its pH and the pH after adding $0.01 \mathrm{ mol{}$ of $\mathrm{HCl{}$ to $1 \mathrm{ L{}$ of
+ the buffer.
 
 7. Calculate $K_a$ for a $0.050 \mathrm{ M{}$ weak acid solution with pH 2.80.
 
 8. Explain why phenolphthalein is a suitable indicator for a weak acid-strong base titration but
-   methyl orange is suitable for a strong acid-weak base titration.
+ methyl orange is suitable for a strong acid-weak base titration.
 
 9. Calculate the pH of a $0.15 \mathrm{ M{}$ solution of $\mathrm{HF{}$ ($K_a = 6.8 \times 10^{-4}$).
-   Check whether the approximation $[\mathrm{H{}^+] \approx \sqrt{K_a \times c}$ is valid.
+ Check whether the approximation $[\mathrm{H{}^+] \approx \sqrt{K_a \times c}$ is valid.
 
 10. 50 mL of $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$ is added to 50 mL of $0.10 \mathrm{ M{}$
-    $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH of the resulting solution.
+ $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH of the resulting solution.
 
 11. A student prepares a buffer by mixing $100 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$ ethanoic acid with
-    $50 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$ $\mathrm{NaOH{}$. Calculate the pH of the resulting buffer.
+ $50 \mathrm{ mL{}$ of $0.20 \mathrm{ M{}$ $\mathrm{NaOH{}$. Calculate the pH of the resulting buffer.
 
 12. Explain why the pH of a solution of $\mathrm{NaCl{}$ is 7, but the pH of a solution of
-    $\mathrm{NH{}_4\mathrm{Cl{}$ is less than 7.
+ $\mathrm{NH{}_4\mathrm{Cl{}$ is less than 7.
 
 ---
 
 ## Salt Hydrolysis
 
 When a salt dissolves in water, its ions may react with water (hydrolyse), affecting the pH of the
-solution.
+Solution.
 
 ### Salts from Strong Acid + Strong Base
 
-Example: $\mathrm{NaCl{}$, $\mathrm{KNO{}_3$.
+Example: $\mathrm{NaCl{}$$\mathrm{KNO{}_3$.
 
 Neither ion reacts with water. The solution is neutral (pH = 7).
 
@@ -519,12 +519,12 @@ Both ions hydrolyse. The pH depends on the relative strengths of the acid and ba
 
 ### Summary Table: Salt Hydrolysis
 
-| Salt type                 | Hydrolysis             | pH      | Example                            |
+| Salt type | Hydrolysis | pH | Example |
 | ------------------------- | ---------------------- | ------- | ---------------------------------- |
-| Strong acid + strong base | Neither ion hydrolyses | 7       | $\mathrm{NaCl{}$                      |
-| Strong acid + weak base   | Cation hydrolyses      | < 7     | $\mathrm{NH{}_4\mathrm{Cl{}$             |
-| Weak acid + strong base   | Anion hydrolyses       | > 7     | $\mathrm{CH{}_3\mathrm{COONa{}$          |
-| Weak acid + weak base     | Both hydrolyse         | Depends | $\mathrm{NH{}_4\mathrm{CH{}_3\mathrm{COO{}$ |
+| Strong acid + strong base | Neither ion hydrolyses | 7 | $\mathrm{NaCl{}$ |
+| Strong acid + weak base | Cation hydrolyses | < 7 | $\mathrm{NH{}_4\mathrm{Cl{}$ |
+| Weak acid + strong base | Anion hydrolyses | > 7 | $\mathrm{CH{}_3\mathrm{COONa{}$ |
+| Weak acid + weak base | Both hydrolyse | Depends | $\mathrm{NH{}_4\mathrm{CH{}_3\mathrm{COO{}$ |
 
 ---
 
@@ -537,10 +537,10 @@ $$[\mathrm{H{}^+]_{\mathrm{total{}} = \frac{n_1 + n_2}{V_{\mathrm{total{}}}$$
 ### Mixing a Strong Acid and a Strong Base
 
 Determine which is in excess, then calculate $[\mathrm{H{}^+]$ or $[\mathrm{OH{}^-]$ of the remaining
-excess.
+Excess.
 
 **Worked Example 16:** $50 \mathrm{ mL{}$ of $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$ is added to $50 \mathrm{ mL{}$
-of $0.10 \mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH.
+Of $0.10 \mathrm{ M{}$ $\mathrm{CH{}_3\mathrm{COOH{}$. Calculate the pH.
 
 Moles of $\mathrm{NaOH{} = 0.10 \times 0.050 = 0.0050 \mathrm{ mol{}$ Moles of
 $\mathrm{CH{}_3\mathrm{COOH{} = 0.10 \times 0.050 = 0.0050 \mathrm{ mol{}$
@@ -571,8 +571,8 @@ $\mathrm{H{}^+$ than the weak acid.
 (almost vertical), then slowly again. The equivalence point is at pH 7.
 
 **Weak acid-strong base:** The initial pH is higher than for a strong acid at the same
-concentration. There is a buffering region in the middle of the curve (where the weak acid and its
-conjugate base coexist). The equivalence point is at pH > 7.
+Concentration. There is a buffering region in the middle of the curve (where the weak acid and its
+Conjugate base coexist). The equivalence point is at pH > 7.
 
 **Strong acid-weak base:** The equivalence point is at pH < 7.
 
@@ -583,10 +583,10 @@ Key features:
 
 1. **Initial pH:** ~2.87 (weak acid)
 2. **Buffer region:** From ~0 to ~20 mL added. The pH changes slowly because the solution acts as a
-   buffer ($\mathrm{CH{}_3\mathrm{COOH{}/\mathrm{CH{}_3\mathrm{COO{}^-$).
+ buffer ($\mathrm{CH{}_3\mathrm{COOH{}/\mathrm{CH{}_3\mathrm{COO{}^-$).
 3. **Half-equivalence point:** At $12.5 \mathrm{ mL{}$ (half the acid neutralised),
-   $\mathrm{pH{} = pK_a = 4.76$.
-4. **Equivalence point:** At $25 \mathrm{ mL{}$, pH = 8.73.
+ $\mathrm{pH{} = pK_a = 4.76$.
+4. **Equivalence point:** At $25 \mathrm{ mL{}$PH = 8.73.
 5. **Beyond equivalence:** pH approaches that of the excess $\mathrm{NaOH{}$.
 
 ---
@@ -614,34 +614,34 @@ $\mathrm{Mg(OH){}_2$ dissolves in acid because $\mathrm{OH{}^-$ is neutralised b
 $$\mathrm{Mg(OH){}_2\mathrm{(s){} + 2\mathrm{H{}^+ \to \mathrm{Mg{}^{2+} + 2\mathrm{H{}_2\mathrm{O{}$$
 
 $\mathrm{Mg(OH){}_2$ is insoluble in base (common ion effect: additional $\mathrm{OH{}^-$ suppresses
-dissolution).
+Dissolution).
 
 ---
 
 ## Practice Questions (Extended)
 
-13. Calculate the pH of a $0.050 \mathrm{ M{}$ solution of $\mathrm{AlCl{}_3$, given that
-    $K_a(\mathrm{Al{}^{3+}) = 1.0 \times 10^{-5}$. (Hint: $\mathrm{Al{}^{3+}$ acts as a weak acid.)
+13. Calculate the pH of a $0.050 \mathrm{ M{}$ solution of $\mathrm{AlCl{}_3$Given that
+ $K_a(\mathrm{Al{}^{3+}) = 1.0 \times 10^{-5}$. (Hint: $\mathrm{Al{}^{3+}$ acts as a weak acid.)
 
 14. A buffer is prepared by mixing $0.20 \mathrm{ mol{}$ of $\mathrm{CH{}_3\mathrm{COOH{}$ and
-    $0.10 \mathrm{ mol{}$ of $\mathrm{NaOH{}$ in $1.0 \mathrm{ L{}$ of solution. Calculate the pH of this
-    buffer.
+ $0.10 \mathrm{ mol{}$ of $\mathrm{NaOH{}$ in $1.0 \mathrm{ L{}$ of solution. Calculate the pH of this
+ buffer.
 
 15. Explain qualitatively how the shape of the pH titration curve for a weak acid-strong base
-    titration differs from that of a strong acid-strong base titration. Include a discussion of the
-    buffer region and the half-equivalence point.
+ titration differs from that of a strong acid-strong base titration. Include a discussion of the
+ buffer region and the half-equivalence point.
 
 16. Calculate the pH at each of the following points in the titration of $25.0 \mathrm{ mL{}$ of
-    $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$ with $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$: (a) 0 mL, (b) 12.5 mL, (c)
-    24.9 mL, (d) 25.0 mL, (e) 25.1 mL, (f) 30.0 mL.
+ $0.10 \mathrm{ M{}$ $\mathrm{HCl{}$ with $0.10 \mathrm{ M{}$ $\mathrm{NaOH{}$: (a) 0 mL, (b) 12.5 mL, (c)
+ 24.9 mL, (d) 25.0 mL, (e) 25.1 mL, (f) 30.0 mL.
 
 17. Explain why $\mathrm{Na{}_2\mathrm{CO{}_3$ solution is alkaline, writing the relevant hydrolysis
-    equations.
+ equations.
 
 18. A student is asked to prepare a buffer at pH 7.40 (physiological pH) using
-    $\mathrm{H{}_2\mathrm{PO{}_4^-$/$\mathrm{HPO{}_4^{2-}$ ($pK_{a2} = 7.21$). Calculate the required ratio
-    $[\mathrm{HPO{}_4^{2-}]/[\mathrm{H{}_2\mathrm{PO{}_4^-]$ and suggest why this buffer system is used in
-    biological systems.
+ $\mathrm{H{}_2\mathrm{PO{}_4^-$/$\mathrm{HPO{}_4^{2-}$ ($pK_{a2} = 7.21$). Calculate the required ratio
+ $[\mathrm{HPO{}_4^{2-}]/[\mathrm{H{}_2\mathrm{PO{}_4^-]$ and suggest why this buffer system is used in
+ biological systems.
 
 ---
 
@@ -654,8 +654,8 @@ $\mathrm{H{}^+$ from water autoionisation becomes significant and cannot be igno
 
 **Worked Example 19:** Find the pH of $1.0 \times 10^{-8}$ M HCl.
 
-If we simply use $\mathrm{pH{} = -\log(10^{-8}) = 8$, this gives a basic pH for an acid solution, which
-is clearly wrong. We must account for the autoionisation of water.
+If we use $\mathrm{pH{} = -\log(10^{-8}) = 8$This gives a basic pH for an acid solution, which
+Is wrong. We must account for the autoionisation of water.
 
 $$[\mathrm{H{}^+]_{\mathrm{total{}} = [\mathrm{H{}^+]_{\mathrm{HCl{}} + [\mathrm{H{}^+]_{\mathrm{water{}} = 1.0 \times 10^{-8} + [\mathrm{OH{}^-]$$
 
@@ -683,15 +683,15 @@ For $\mathrm{H{}_3\mathrm{PO{}_4$:
 
 $$K_{a1} = 7.5 \times 10^{-3}, \quad K_{a2} = 6.2 \times 10^{-8}, \quad K_{a3} = 4.8 \times 10^{-13}$$
 
-Since $K_{a1} \gg K_{a2} \gg K_{a3}$, the first dissociation dominates. For a $0.10 \mathrm{ M{}$
-solution, the pH is calculated using only $K_{a1}$.
+Since $K_{a1} \gg K_{a2} \gg K_{a3}$The first dissociation dominates. For a $0.10 \mathrm{ M{}$
+Solution, the pH is calculated using only $K_{a1}$.
 
 ---
 
 ## Indicators in Detail: Colour Change Theory
 
 An indicator is a weak acid $\mathrm{HIn{}$ where the protonated and deprotonated forms have different
-colours:
+Colours:
 
 $$\mathrm{HIn{} \rightleftharpoons \mathrm{H{}^+ + \mathrm{In{}^-$$
 
@@ -700,3 +700,7 @@ $$K_{\mathrm{In{}} = \frac{[\mathrm{H{}^+][\mathrm{In{}^-]}{[\mathrm{HIn{}]}$$
 The human eye sees the acid colour when $[\mathrm{HIn{}]/[\mathrm{In{}^-] \gt 10$ and the base colour when
 $[\mathrm{In{}^-]/[\mathrm{HIn{}] \gt 10$. The indicator changes colour over approximately
 $\mathrm{p{}K_{\mathrm{In{}} \pm 1$.
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

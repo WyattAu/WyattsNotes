@@ -11,20 +11,20 @@ slug: projections-and-callable-objects
 ## Projections and Callable Objects
 
 A **projection** is a callable that transforms an element before it is passed to an algorithm's
-predicate or comparison function. Projections are a C++20 ranges feature that allows algorithms to
-operate on **derived data** without modifying the original elements or creating temporary copies.
+Predicate or comparison function. Projections are a C++20 ranges feature that allows algorithms to
+Operate on **derived data** without modifying the original elements or creating temporary copies.
 The actual swap, move, or assignment operates on the original element, while the algorithm "sees"
-the projected value.
+The projected value.
 
 ### Projections: Transforming Elements During Algorithm Execution
 
 A **projection** is a callable that transforms an element before it is passed to the algorithm's
-predicate or comparison function [N4950 §25.3.5.7]. Projections are a C++20 ranges feature that
-allows algorithms to operate on **derived data** without modifying the original elements or creating
-temporary copies.
+Predicate or comparison function [N4950 §25.3.5.7]. Projections are a C++20 ranges feature that
+Allows algorithms to operate on **derived data** without modifying the original elements or creating
+Temporary copies.
 
 The projection is applied transparently: the algorithm "sees" the projected value, but the actual
-swap, move, or assignment operates on the original element.
+Swap, move, or assignment operates on the original element.
 
 ```cpp
 #include <iostream>
@@ -82,8 +82,8 @@ $$
 \mathrm{sort{}(r, comp = \\{\\}, proj = \\{\\})
 $$
 
-where `comp` compares the **projected** values, and `proj` maps each element to the value used for
-comparison.
+Where `comp` compares the **projected** values, and `proj` maps each element to the value used for
+Comparison.
 
 ```cpp
 #include <iostream>
@@ -210,18 +210,18 @@ int main() {
 
 :::info
 The projection parameter appears **after** the predicate in the argument list for most
-algorithms. The pattern is: `algorithm(range, predicate, projection)`. The predicate receives the
+Algorithms. The pattern is: `algorithm(range, predicate, projection)`. The predicate receives the
 **projected** value, not the original element.
 :::
 
 ### Projection Mechanics: What Happens Under the Hood
 
 When an algorithm like `std::ranges::sort` receives a projection, the comparison is effectively
-rewritten as `comp(proj(elem1), proj(elem2))` for every pair of elements compared. The projection is
-applied lazily — it is not stored or cached. This means:
+Rewritten as `comp(proj(elem1), proj(elem2))` for every pair of elements compared. The projection is
+Applied lazily — it is not stored or cached. This means:
 
 1. The projection is called **every time** an element is accessed by the algorithm, not once per
-   element.
+ element.
 2. The projection must be a pure function (no side effects) for predictable behavior.
 3. The projection's return type must be comparable with the given comparator.
 
@@ -267,7 +267,7 @@ int main() {
 ### Projections with `std::ranges::find_if` and `std::ranges::any_of`
 
 Projections are not limited to sorting. Any ranges algorithm that accepts a callable parameter
-supports projections:
+Supports projections:
 
 ```cpp
 #include <iostream>
@@ -324,7 +324,7 @@ int main() {
 
 `std::identity` [N4950 §20.14.4] is the identity function object. It returns its argument unchanged.
 It is useful as a projection when you want the predicate to receive the element directly, making the
-intent explicit:
+Intent explicit:
 
 ```cpp
 #include <iostream>
@@ -361,8 +361,8 @@ int main() {
 ### Projections with Range Views
 
 Projections and range views solve similar problems but at different levels. Projections are
-per-algorithm; views are compositional pipelines. Use projections when you need a single algorithm
-to operate on derived data. Use views when you need to build a processing pipeline:
+Per-algorithm; views are compositional pipelines. Use projections when you need a single algorithm
+To operate on derived data. Use views when you need to build a processing pipeline:
 
 ```cpp
 #include <iostream>
@@ -461,12 +461,12 @@ int main() {
 ### Algorithms That Do NOT Support Projections
 
 Not all ranges algorithms accept projections. The following algorithms operate on elements directly
-and do not have a projection parameter:
+And do not have a projection parameter:
 
-- `std::ranges::copy`, `std::ranges::move`, `std::ranges::swap_ranges`
-- `std::ranges::fill`, `std::ranges::generate`, `std::ranges::iota`
-- `std::ranges::reverse`, `std::ranges::rotate`
-- `std::ranges::partition`, `std::ranges::stable_partition`
+- `std::ranges::copy``std::ranges::move``std::ranges::swap_ranges`
+- `std::ranges::fill``std::ranges::generate``std::ranges::iota`
+- `std::ranges::reverse``std::ranges::rotate`
+- `std::ranges::partition``std::ranges::stable_partition`
 
 For these algorithms, use `std::views::transform` as a preprocessing step instead.
 
@@ -475,7 +475,7 @@ For these algorithms, use `std::views::transform` as a preprocessing step instea
 ### 1. Projection Return Type Must Match Comparator
 
 The projection's return type must be comparable by the given comparator. If the projection returns a
-different type than the comparator expects, you get a compilation error deep inside the algorithm:
+Different type than the comparator expects, you get a compilation error deep inside the algorithm:
 
 ```cpp
 #include <vector>
@@ -505,7 +505,7 @@ int main() {
 ### 2. Projection is Not a Transform
 
 A projection does not transform the elements in the range. It only affects how the algorithm "sees"
-the elements. The actual modifications (swaps, assignments) operate on the original elements:
+The elements. The actual modifications (swaps, assignments) operate on the original elements:
 
 ```cpp
 #include <iostream>
@@ -534,8 +534,8 @@ int main() {
 ### 3. Projection with Stateful Callables
 
 Using a stateful projection (a lambda that captures mutable state) produces undefined behavior if
-the algorithm copies the projection internally. Most algorithms take the projection by value, so
-mutations to the original lambda are not visible to the algorithm's copies:
+The algorithm copies the projection internally. Most algorithms take the projection by value, so
+Mutations to the original lambda are not visible to the algorithm's copies:
 
 ```cpp
 #include <iostream>
@@ -561,3 +561,11 @@ int main() {
 - [Parallel Algorithms](./5_parallel_algorithms.md)
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

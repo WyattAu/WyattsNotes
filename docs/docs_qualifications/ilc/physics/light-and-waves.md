@@ -12,7 +12,7 @@ slug: light-and-waves
 # Light and Waves
 
 This topic covers the wave nature of light, sound, reflection, refraction, diffraction,
-interference, and the electromagnetic spectrum. Waves are a major area of the Leaving Certificate
+Interference, and the electromagnetic spectrum. Waves are a major area of the Leaving Certificate
 Physics syllabus.
 
 ## Wave Properties
@@ -20,47 +20,47 @@ Physics syllabus.
 ### Types of Waves (OL/HL)
 
 - **Transverse waves:** oscillations are perpendicular to the direction of propagation (e.g., light,
-  water waves).
+ water waves).
 - **Longitudinal waves:** oscillations are parallel to the direction of propagation (e.g., sound).
 
 ### Why the Distinction Matters
 
 Only transverse waves can be polarised. Sound cannot be polarised because it is longitudinal. The
-fact that light can be polarised (by Polaroid filters) was historically important evidence that
-light is a transverse wave, not a longitudinal one as Newton had believed.
+Fact that light can be polarised (by Polaroid filters) was historically important evidence that
+Light is a transverse wave, not a longitudinal one as Newton had believed.
 
 ### Wave Terminology (OL/HL)
 
-| Term                   | Definition                                       |
+| Term | Definition |
 | ---------------------- | ------------------------------------------------ |
 | Wavelength ($\lambda$) | Distance between two consecutive points in phase |
-| Frequency ($f$)        | Number of complete oscillations per second (Hz)  |
-| Amplitude ($A$)        | Maximum displacement from equilibrium            |
-| Period ($T$)           | Time for one complete oscillation                |
-| Wave speed ($v$)       | Speed at which the wave propagates               |
+| Frequency ($f$) | Number of complete oscillations per second (Hz) |
+| Amplitude ($A$) | Maximum displacement from equilibrium |
+| Period ($T$) | Time for one complete oscillation |
+| Wave speed ($v$) | Speed at which the wave propagates |
 
 ### Wave Equation (OL/HL)
 
 $$
-v = f\lambda
+V = f\lambda
 $$
 
 **Example (OL):** A wave has frequency 200 Hz and wavelength 1.5 m. Find the speed.
 
 $$
-v = 200 \times 1.5 = 300\mathrm{ m/s{}
+V = 200 \times 1.5 = 300\mathrm{ m/s{}
 $$
 
 ### Derivation of the Wave Equation
 
-In one period $T$, each wavefront travels a distance of one wavelength $\lambda$. Therefore:
+In one period $T$Each wavefront travels a distance of one wavelength $\lambda$. Therefore:
 
 $$
-v = \frac{\mathrm{distance{}}{\mathrm{time{}} = \frac{\lambda}{T} = \lambda f
+V = \frac{\mathrm{distance{}}{\mathrm{time{}} = \frac{\lambda}{T} = \lambda f
 $$
 
 This is exact for any periodic wave. It implies that frequency and wavelength are inversely
-proportional for a given wave speed.
+Proportional for a given wave speed.
 
 ## Reflection and Refraction
 
@@ -72,19 +72,19 @@ proportional for a given wave speed.
 ### Why Reflection Obeys the Law
 
 Huygens' principle: every point on a wavefront acts as a source of secondary wavelets. The envelope
-of these wavelets forms the reflected wavefront. Geometry dictates that the angle of reflection
-equals the angle of incidence.
+Of these wavelets forms the reflected wavefront. Geometry dictates that the angle of reflection
+Equals the angle of incidence.
 
 ### Snell's Law of Refraction (OL/HL)
 
 $$
-n_1 \sin\theta_1 = n_2 \sin\theta_2
+N_1 \sin\theta_1 = n_2 \sin\theta_2
 $$
 
-where $n$ is the refractive index.
+Where $n$ is the refractive index.
 
 **Example (OL):** Light travels from air ($n = 1$) into glass ($n = 1.5$) at an angle of incidence
-of $30^\circ$. Find the angle of refraction.
+Of $30^\circ$. Find the angle of refraction.
 
 $$
 1 \times \sin 30° = 1.5 \times \sin\theta_2
@@ -98,7 +98,7 @@ $$
 
 The rate at which wavefronts arrive at the boundary must equal the rate at which they leave.
 Otherwise, wavefronts would pile up or gaps would appear. Since $v = f\lambda$ and $f$ is constant,
-a decrease in speed produces a proportional decrease in wavelength.
+A decrease in speed produces a proportional decrease in wavelength.
 
 ### Total Internal Reflection (HL)
 
@@ -119,15 +119,15 @@ $$
 ### Optical Fibres (HL)
 
 Optical fibres use total internal reflection to transmit light signals. Light enters the fibre and
-reflects off the walls, travelling along the fibre with minimal loss. Applications include
-telecommunications (high bandwidth, low signal loss over long distances) and medicine (endoscopes).
+Reflects off the walls, travelling along the fibre with minimal loss. Applications include
+Telecommunications (high bandwidth, low signal loss over long distances) and medicine (endoscopes).
 
 ### Why Total Internal Reflection Only Occurs Denser to Less Dense
 
 The refracted ray bends away from the normal as the wave speeds up. At the critical angle, the
-refracted ray travels along the boundary ($\theta_2 = 90^\circ$). Beyond this angle, there is nowhere for
-the refracted ray to go, so all the light is reflected. When going from less dense to more dense,
-the refracted ray always bends toward the normal and there is no critical angle.
+Refracted ray travels along the boundary ($\theta_2 = 90^\circ$). Beyond this angle, there is nowhere for
+The refracted ray to go, so all the light is reflected. When going from less dense to more dense,
+The refracted ray always bends toward the normal and there is no critical angle.
 
 ## Diffraction (OL/HL)
 
@@ -139,9 +139,9 @@ Diffraction is the spreading of waves when they pass through a gap or around an 
 ### Why Diffraction Depends on Gap Size Relative to Wavelength
 
 By Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. If the gap
-is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
-edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
-from all parts of the gap overlap significantly, producing broad spreading.
+Is much wider than the wavelength, most of the wavefront passes through undisturbed, and only the
+Edges show significant spreading. If the gap is comparable to the wavelength, the secondary wavelets
+From all parts of the gap overlap significantly, producing broad spreading.
 
 ### Single Slit Diffraction (HL)
 
@@ -168,8 +168,8 @@ The central maximum is the brightest, and the secondary maxima decrease rapidly 
 
 ### Young's Double Slit Experiment (HL)
 
-Light passes through two narrow slits separated by distance $d$, producing an interference pattern
-on a screen at distance $D$.
+Light passes through two narrow slits separated by distance $d$Producing an interference pattern
+On a screen at distance $D$.
 
 **Path difference** between the two waves arriving at a point on the screen:
 
@@ -182,13 +182,13 @@ For small angles ($\theta$ small): $\sin\theta \approx \tan\theta = \frac{x}{D}$
 **Bright fringes (constructive interference):**
 
 $$
-d\sin\theta = n\lambda \implies x_n = \frac{n\lambda D}{d}, \quad n = 0, 1, 2, \ldots
+D\sin\theta = n\lambda \implies x_n = \frac{n\lambda D}{d}, \quad n = 0, 1, 2, \ldots
 $$
 
 **Dark fringes (destructive interference):**
 
 $$
-d\sin\theta = \left(n + \frac{1}{2}\right)\lambda \implies x_n = \frac{\left(n + \frac{1}{2}\right)\lambda D}{d}, \quad n = 0, 1, 2, \ldots
+D\sin\theta = \left(n + \frac{1}{2}\right)\lambda \implies x_n = \frac{\left(n + \frac{1}{2}\right)\lambda D}{d}, \quad n = 0, 1, 2, \ldots
 $$
 
 **Fringe spacing:**
@@ -207,8 +207,8 @@ $$
 ### Why Coherence Is Necessary
 
 Interference requires a constant phase relationship between the two sources. Two independent light
-sources are not coherent: the phase difference between them changes randomly due to the independent
-emission of photons from different atoms. This is why Young's slits must be illuminated by the
+Sources are not coherent: the phase difference between them changes randomly due to the independent
+Emission of photons from different atoms. This is why Young's slits must be illuminated by the
 _same_ source (one slit, then two narrow slits).
 
 ### Diffraction Grating (HL)
@@ -218,16 +218,16 @@ A diffraction grating has $N$ slits per unit length. The slit spacing is $d = \f
 **Grating equation:**
 
 $$
-d\sin\theta = n\lambda
+D\sin\theta = n\lambda
 $$
 
 The number of maxima visible is limited by $|\sin\theta| \le 1$.
 
 **Example (HL):** A grating has 500 lines per mm. Light of wavelength $580\mathrm{ nm{}$ is incident
-normally. Find the angles of the first and second order maxima.
+Normally. Find the angles of the first and second order maxima.
 
 $$
-d = \frac{1}{500 \times 10^3} = 2 \times 10^{-6}\mathrm{ m{}
+D = \frac{1}{500 \times 10^3} = 2 \times 10^{-6}\mathrm{ m{}
 $$
 
 First order ($n = 1$):
@@ -241,24 +241,24 @@ Fourth order: $\sin\theta = 1.16$ -- not possible. So only 3 orders are visible 
 
 ## The Electromagnetic Spectrum (OL/HL)
 
-| Region        | Wavelength range                 | Typical source         |
+| Region | Wavelength range | Typical source |
 | ------------- | -------------------------------- | ---------------------- |
-| Radio waves   | $\gt 1\mathrm{ m{}$                 | Radio transmitters     |
-| Microwaves    | $1\mathrm{ mm{}$ -- $1\mathrm{ m{}$    | Microwave ovens, radar |
-| Infrared      | $700\mathrm{ nm{}$ -- $1\mathrm{ mm{}$ | Warm objects           |
-| Visible light | $400$ -- $700\mathrm{ nm{}$         | Sun, lamps             |
-| Ultraviolet   | $10$ -- $400\mathrm{ nm{}$          | Sun, UV lamps          |
-| X-rays        | $0.01$ -- $10\mathrm{ nm{}$         | X-ray tubes            |
-| Gamma rays    | $\lt 0.01\mathrm{ nm{}$             | Radioactive decay      |
+| Radio waves | $\gt 1\mathrm{ m{}$ | Radio transmitters |
+| Microwaves | $1\mathrm{ mm{}$ -- $1\mathrm{ m{}$ | Microwave ovens, radar |
+| Infrared | $700\mathrm{ nm{}$ -- $1\mathrm{ mm{}$ | Warm objects |
+| Visible light | $400$ -- $700\mathrm{ nm{}$ | Sun, lamps |
+| Ultraviolet | $10$ -- $400\mathrm{ nm{}$ | Sun, UV lamps |
+| X-rays | $0.01$ -- $10\mathrm{ nm{}$ | X-ray tubes |
+| Gamma rays | $\lt 0.01\mathrm{ nm{}$ | Radioactive decay |
 
 All EM waves travel at $c = 3 \times 10^8\mathrm{ m/s{}$ in a vacuum.
 
 ### Why Higher Frequency EM Waves Are More Energetic
 
 The energy of a photon is $E = hf$. Higher frequency means higher energy per photon. This is why
-gamma rays (very high frequency) are extremely dangerous: each photon carries enough energy to break
-chemical bonds and damage DNA. Radio photons have such low energy that they are harmless to
-biological tissue.
+Gamma rays (very high frequency) are extremely dangerous: each photon carries enough energy to break
+Chemical bonds and damage DNA. Radio photons have such low energy that they are harmless to
+Biological tissue.
 
 ## Sound Waves
 
@@ -271,8 +271,8 @@ biological tissue.
 ### Why Sound Cannot Travel Through a Vacuum
 
 Sound is a mechanical wave: it propagates by particles colliding with their neighbours. In a vacuum,
-there are no particles, so the disturbance cannot propagate. Light (an electromagnetic wave) does
-not require a medium, which is why we can see the Sun but cannot hear it.
+There are no particles, so the disturbance cannot propagate. Light (an electromagnetic wave) does
+Not require a medium, which is why we can see the Sun but cannot hear it.
 
 ### Intensity (HL)
 
@@ -290,7 +290,7 @@ $$
 \beta = 10\log_{10}\left(\frac{I}{I_0}\right)\mathrm{ dB{}
 $$
 
-where $I_0 = 10^{-12}\mathrm{ W/m{}^2$ (threshold of hearing).
+Where $I_0 = 10^{-12}\mathrm{ W/m{}^2$ (threshold of hearing).
 
 **Example (HL):** A sound has intensity level $75\mathrm{ dB{}$. Find its intensity.
 
@@ -305,53 +305,53 @@ $$
 ### Why the Decibel Scale
 
 The human ear can detect intensities spanning $10^{12}$. A linear scale would require numbers from 1
-to a trillion. The logarithmic decibel scale compresses this range to 0--120 dB, which is far more
-manageable. A 3 dB increase corresponds to a doubling of intensity.
+To a trillion. The logarithmic decibel scale compresses this range to 0--120 dB, which is far more
+Manageable. A 3 dB increase corresponds to a doubling of intensity.
 
 ## Doppler Effect (HL)
 
 When a source and observer are moving relative to each other, the observed frequency differs from
-the emitted frequency.
+The emitted frequency.
 
 For a source moving towards a stationary observer:
 
 $$
-f' = f\left(\frac{v}{v - v_s}\right)
+F' = f\left(\frac{v}{v - v_s}\right)
 $$
 
 For a source moving away:
 
 $$
-f' = f\left(\frac{v}{v + v_s}\right)
+F' = f\left(\frac{v}{v + v_s}\right)
 $$
 
 **Example (HL):** An ambulance with siren at 800 Hz travels at $30\mathrm{ m/s{}$ towards a stationary
-observer. Speed of sound $= 343\mathrm{ m/s{}$. Find the observed frequency.
+Observer. Speed of sound $= 343\mathrm{ m/s{}$. Find the observed frequency.
 
 $$
-f' = 800 \times \frac{343}{343 - 30} = 800 \times \frac{343}{313} \approx 877\mathrm{ Hz{}
+F' = 800 \times \frac{343}{343 - 30} = 800 \times \frac{343}{313} \approx 877\mathrm{ Hz{}
 $$
 
 ### Applications of the Doppler Effect
 
 - **Radar speed guns:** measure the frequency shift of reflected microwaves from moving vehicles.
 - **Astronomy:** redshift of light from distant galaxies indicates they are moving away (Hubble's
-  law).
+ law).
 - **Medical ultrasound:** the Doppler effect is used to measure blood flow velocity.
 
 ## Common Pitfalls
 
 1. **Mixing up diffraction and interference** -- diffraction is spreading; interference is
-   superposition.
+ superposition.
 2. **Snell's law** -- identify which medium the light is entering (the refractive index changes).
 3. **Fringe spacing formula** -- ensure consistent units (convert nm to m).
 4. **Doppler effect** -- the source moving towards gives a higher frequency, moving away gives
-   lower.
+ lower.
 5. **Total internal reflection** -- only occurs when going from denser to less dense medium.
 6. **Forgetting that the fringe spacing formula assumes small angles.** For large angles, use
-   $d\sin\theta = n\lambda$ directly.
+ $d\sin\theta = n\lambda$ directly.
 7. **Confusing amplitude and frequency** -- amplitude determines loudness; frequency determines
-   pitch.
+ pitch.
 
 ## Practice Questions
 
@@ -365,37 +365,37 @@ $$
 ### Higher Level
 
 1. In a Young's double slit experiment, the fringe spacing is $0.8\mathrm{ mm{}$. If the slit
-   separation is $0.4\mathrm{ mm{}$ and the screen is $2\mathrm{ m{}$ away, find the wavelength of light
-   used.
+ separation is $0.4\mathrm{ mm{}$ and the screen is $2\mathrm{ m{}$ away, find the wavelength of light
+ used.
 2. Light of wavelength $550\mathrm{ nm{}$ is incident on a diffraction grating with 400 lines/mm. Find
-   the maximum number of orders visible.
+ the maximum number of orders visible.
 3. A car horn has frequency 440 Hz. The car approaches at $25\mathrm{ m/s{}$. Find the frequency heard
-   by a stationary observer (speed of sound $= 343\mathrm{ m/s{}$).
+ by a stationary observer (speed of sound $= 343\mathrm{ m/s{}$).
 4. Find the critical angle for light going from diamond ($n = 2.42$) to air.
 
 5. A single slit of width $0.1\mathrm{ mm{}$ is illuminated with light of wavelength $500\mathrm{ nm{}$.
-   Calculate the angular width of the central maximum and the angles of the first two minima.
+ Calculate the angular width of the central maximum and the angles of the first two minima.
 
 6. The first-order maximum for a diffraction grating occurs at $17.5^\circ$ for light of wavelength
-   $590\mathrm{ nm{}$. Calculate the number of lines per mm on the grating.
+ $590\mathrm{ nm{}$. Calculate the number of lines per mm on the grating.
 
 7. A sound of intensity $5.0 \times 10^{-6}\mathrm{ W/m{}^2$ has an intensity level of $67\mathrm{ dB{}$.
-   Calculate the intensity level of a sound that is 1000 times more intense.
+ Calculate the intensity level of a sound that is 1000 times more intense.
 
 8. Explain why two independent light bulbs cannot produce a stable interference pattern, even though
-   they emit the same frequency.
+ they emit the same frequency.
 
 9. A police speed gun uses microwaves of frequency $24.15\mathrm{ GHz{}$ reflected from a car
-   approaching at $30\mathrm{ m/s{}$. Calculate the observed frequency shift.
+ approaching at $30\mathrm{ m/s{}$. Calculate the observed frequency shift.
 
 10. An optical fibre has a core of refractive index 1.50 and cladding of refractive index 1.45. Find
-    the critical angle for light travelling from core to cladding, and explain why this angle
-    ensures total internal reflection.
+ the critical angle for light travelling from core to cladding, and explain why this angle
+ ensures total internal reflection.
 
 ## 11. Worked Example: Single Slit Diffraction and Intensity (HL)
 
 Light of wavelength $500 \mathrm{ nm{}$ passes through a slit of width $0.05 \mathrm{ mm{}$. Find the
-angular width of the central maximum and the angles of the first two minima.
+Angular width of the central maximum and the angles of the first two minima.
 
 **Central maximum half-width:**
 
@@ -425,14 +425,14 @@ $\sin\theta = \frac{589 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.2356 \implies \t
 **Fourth order:** $\sin\theta = 0.9424 \implies \theta = 70.4^{\circ}$
 
 **Fifth order:** $\sin\theta = 1.178$ -- impossible. So only 4 orders are visible on each side (9
-maxima total including central).
+Maxima total including central).
 
 ## 13. Sound Intensity: Extended Analysis (HL)
 
 ### Worked Example: Combining Decibels
 
 Two machines produce $80 \mathrm{ dB{}$ and $83 \mathrm{ dB{}$ each at a worker's position. Find the total
-intensity level.
+Intensity level.
 
 $$I_1 = I_0 \times 10^{80/10} = 10^{-12} \times 10^8 = 10^{-4} \mathrm{ W/m{}^2$$
 
@@ -442,8 +442,8 @@ $$I_{\mathrm{total{}} = 3 \times 10^{-4} \mathrm{ W/m{}^2$$
 
 $$\beta_{\mathrm{total{}} = 10\log_{10}\left(\frac{3 \times 10^{-4}}{10^{-12}}\right) = 10 \times 7.477 = 74.8 \mathrm{ dB{}$$
 
-Adding $80 \mathrm{ dB{}$ and $83 \mathrm{ dB{}$ gives $74.8 \mathrm{ dB{}$, not $163 \mathrm{ dB{}$. If two
-sources have the same intensity, the total is $3 \mathrm{ dB{}$ higher.
+Adding $80 \mathrm{ dB{}$ and $83 \mathrm{ dB{}$ gives $74.8 \mathrm{ dB{}$Not $163 \mathrm{ dB{}$. If two
+Sources have the same intensity, the total is $3 \mathrm{ dB{}$ higher.
 
 ### Worked Example: Inverse Square Law for Sound
 
@@ -458,7 +458,7 @@ $$\beta = 10\log_{10}\left(\frac{8.84 \times 10^{-6}}{10^{-12}}\right) = 10 \tim
 ### Worked Example: Refraction Through a Glass Block (HL)
 
 A ray of light enters a rectangular glass block at $40^{\circ}$ to the normal. The glass has
-refractive index $1.5$. The block is $6 \mathrm{ cm{}$ thick. Find the lateral displacement of the ray.
+Refractive index $1.5$. The block is $6 \mathrm{ cm{}$ thick. Find the lateral displacement of the ray.
 
 **At entry:**
 
@@ -474,7 +474,7 @@ Lateral displacement
 $= 6.64 \times \sin(40^{\circ} - 25.4^{\circ}) = 6.64 \times 0.252 = 1.67 \mathrm{ cm{}$
 
 **At exit:** The ray exits parallel to the original direction (parallel faces). The exit angle
-equals the entry angle ($40^{\circ}$).
+Equals the entry angle ($40^{\circ}$).
 
 ## 15. Doppler Effect: Extended Analysis (HL)
 
@@ -488,7 +488,7 @@ $$f' = 440 \times \frac{343 + 15}{343} = 440 \times 1.0437 = 459.2 \mathrm{ Hz{}
 ### Worked Example: Frequency Shift for Radar
 
 A police radar gun operates at $24.15 \mathrm{ GHz{}$. A car approaches at $30 \mathrm{ m/s{}$. The
-reflected wave is Doppler-shifted twice.
+Reflected wave is Doppler-shifted twice.
 
 The frequency received by the car:
 
@@ -502,59 +502,59 @@ Frequency shift: $\Delta f = 29.00 - 24.15 = 4.85 \mathrm{ GHz{}$
 
 ## 16. Summary Table: Wave and Optics Formulas
 
-| Topic              | Formula                             | Level | Notes                        |
+| Topic | Formula | Level | Notes |
 | ------------------ | ----------------------------------- | ----- | ---------------------------- |
-| Wave equation      | $v = f\lambda$                      | OL/HL | Universal for periodic waves |
-| Snell's law        | $n_1\sin\theta_1 = n_2\sin\theta_2$ | OL/HL | Frequency unchanged          |
-| Critical angle     | $\sin\theta_c = n_2/n_1$            | HL    | Denser to less dense only    |
-| Fringe spacing     | $\Delta x = \lambda L/d$            | HL    | Double slit                  |
-| Grating equation   | $d\sin\theta = n\lambda$            | HL    | $n$th order maximum          |
-| Decibels           | $\beta = 10\log_{10}(I/I_0)$        | HL    | $I_0 = 10^{-12}$ W/m$^2$     |
-| Doppler (source)   | $f' = fv/(v - v_s)$                 | HL    | Minus for approaching        |
-| Doppler (observer) | $f' = f(v + v_o)/v$                 | HL    | Plus for approaching         |
+| Wave equation | $v = f\lambda$ | OL/HL | Universal for periodic waves |
+| Snell's law | $n_1\sin\theta_1 = n_2\sin\theta_2$ | OL/HL | Frequency unchanged |
+| Critical angle | $\sin\theta_c = n_2/n_1$ | HL | Denser to less dense only |
+| Fringe spacing | $\Delta x = \lambda L/d$ | HL | Double slit |
+| Grating equation | $d\sin\theta = n\lambda$ | HL | $n$Th order maximum |
+| Decibels | $\beta = 10\log_{10}(I/I_0)$ | HL | $I_0 = 10^{-12}$ W/m$^2$ |
+| Doppler (source) | $f' = fv/(v - v_s)$ | HL | Minus for approaching |
+| Doppler (observer) | $f' = f(v + v_o)/v$ | HL | Plus for approaching |
 
 ## 17. Practice Questions (Additional)
 
 ### Higher Level (Additional)
 
 11. Light of wavelength $620 \mathrm{ nm{}$ passes through a single slit of width $0.03 \mathrm{ mm{}$.
-    Calculate the angular positions of the first and second minima.
+ Calculate the angular positions of the first and second minima.
 
 12. A diffraction grating has 600 lines/mm. Light of wavelength $550 \mathrm{ nm{}$ is incident
-    normally. Calculate the maximum number of orders visible and the total angular width of the
-    second-order spectrum.
+ normally. Calculate the maximum number of orders visible and the total angular width of the
+ second-order spectrum.
 
 13. Two sound sources produce intensity levels of $72 \mathrm{ dB{}$ and $72 \mathrm{ dB{}$ at a point.
-    Find the total intensity level.
+ Find the total intensity level.
 
 14. A light ray enters a semicircular glass block of refractive index $1.6$ at an angle of
-    $50^{\circ}$ to the normal at the flat surface. Describe what happens at the curved surface.
+ $50^{\circ}$ to the normal at the flat surface. Describe what happens at the curved surface.
 
 15. An ambulance siren at $700 \mathrm{ Hz{}$ approaches a stationary observer at $20 \mathrm{ m/s{}$ and
-    then recedes at $20 \mathrm{ m/s{}$. Calculate the frequency heard by the observer in both cases.
+ then recedes at $20 \mathrm{ m/s{}$. Calculate the frequency heard by the observer in both cases.
 
 16. Explain why total internal reflection only occurs when light travels from a denser medium to a
-    less dense medium, with reference to Snell's law.
+ less dense medium, with reference to Snell's law.
 
 17. A sound intensity level of $90 \mathrm{ dB{}$ is measured at $1 \mathrm{ m{}$ from a point source. At
-    what distance is the level $60 \mathrm{ dB{}$?
+ what distance is the level $60 \mathrm{ dB{}$?
 
 18. Describe Young's double slit experiment and explain how it provides evidence for the wave nature
-    of light.
+ of light.
 
 19. An optical fibre has a core refractive index of $1.48$ and cladding refractive index of $1.42$.
-    Calculate the critical angle and explain why this fibre can transmit signals around bends.
+ Calculate the critical angle and explain why this fibre can transmit signals around bends.
 
 20. Explain the difference between coherent and incoherent sources. Why are two independent light
-    bulbs unable to produce a stable interference pattern?
+ bulbs unable to produce a stable interference pattern?
 
 ## Extended Worked Examples
 
 ### Example 21: Lateral Displacement Through a Glass Block
 
 A ray of light enters a rectangular glass block of refractive index $1.52$ at an angle of incidence
-of $40^\circ$. The block has thickness $5 \mathrm{ cm{}$. Calculate the angle of refraction, the lateral
-displacement of the ray, and the angle of emergence.
+Of $40^\circ$. The block has thickness $5 \mathrm{ cm{}$. Calculate the angle of refraction, the lateral
+Displacement of the ray, and the angle of emergence.
 
 **Step 1: Angle of refraction (Snell's law at entry)**
 
@@ -572,7 +572,7 @@ The lateral displacement $d$ is given by:
 
 $$d = t \times \frac{\sin(\theta_1 - \theta_2)}{\cos\theta_2}$$
 
-where $t = 5 \mathrm{ cm{} = 0.05 \mathrm{ m{}$.
+Where $t = 5 \mathrm{ cm{} = 0.05 \mathrm{ m{}$.
 
 $$d = 0.05 \times \frac{\sin(40° - 25.03°)}{\cos 25.03°} = 0.05 \times \frac{\sin 14.97°}{\cos 25.03°}$$
 
@@ -592,20 +592,20 @@ The emergent ray is parallel to the incident ray but displaced sideways by $1.43
 
 :::info
 The emergent ray is always parallel to the incident ray for a rectangular block with
-parallel faces. The lateral displacement increases with thickness and with angle of incidence.
+Parallel faces. The lateral displacement increases with thickness and with angle of incidence.
 :::
 
 ### Example 22: Doppler Effect -- Moving Observer
 
 A sound source emits a frequency of $440 \mathrm{ Hz{}$ and is stationary. An observer moves directly
-towards the source at $25 \mathrm{ m/s{}$. Calculate the observed frequency. (Speed of sound
+Towards the source at $25 \mathrm{ m/s{}$. Calculate the observed frequency. (Speed of sound
 $= 343 \mathrm{ m/s{}$.)
 
 **Step 1: Use the Doppler equation for moving observer**
 
 $$f' = f\left(\frac{v + v_o}{v}\right)$$
 
-where $v_o$ is the observer speed (positive when moving towards the source).
+Where $v_o$ is the observer speed (positive when moving towards the source).
 
 $$f' = 440 \times \frac{343 + 25}{343} = 440 \times \frac{368}{343} = 440 \times 1.0729 = 472.1 \mathrm{ Hz{}$$
 
@@ -618,7 +618,7 @@ For the same speed ($v_s = 25 \mathrm{ m/s{}$):
 $$f' = 440 \times \frac{343}{343 - 25} = 440 \times \frac{343}{318} = 440 \times 1.0786 = 474.6 \mathrm{ Hz{}$$
 
 The frequency shift is slightly different for a moving source vs a moving observer at the same
-speed. This asymmetry is a key feature of the classical Doppler effect.
+Speed. This asymmetry is a key feature of the classical Doppler effect.
 
 ### Example 23: Refraction Through a Prism
 
@@ -645,7 +645,7 @@ $$r_2 = 60° - 28.13° = 31.87^\circ$$
 
 Critical angle: $\sin\theta_c = \frac{1}{n} = \frac{1}{1.50} = 0.6667 \implies \theta_c = 41.8^\circ$
 
-Since $r_2 = 31.87° \lt \theta_c$, the light exits the second face.
+Since $r_2 = 31.87° \lt \theta_c$The light exits the second face.
 
 **Step 4: Angle of emergence**
 
@@ -666,38 +666,38 @@ Or using the formula: $D = i + e - A = 45° + 52.48° - 60° = 37.48^\circ$.
 ### Pitfall 6: Forgetting That Light Slows Down in Denser Media
 
 The speed of light in a medium is $v = c/n$. Many students incorrectly believe light speeds up in
-glass. Higher refractive index means slower speed and shorter wavelength (frequency stays constant).
+Glass. Higher refractive index means slower speed and shorter wavelength (frequency stays constant).
 
 ### Pitfall 7: Incorrect Application of Snell's Law at Curved Surfaces
 
 Snell's law applies at every interface, but for curved surfaces (lenses), the angle of incidence
-varies across the surface. You cannot use a single angle of incidence for the entire lens. Instead,
-use the lens maker's equation or the thin lens formula.
+Varies across the surface. You cannot use a single angle of incidence for the entire lens. Instead,
+Use the lens maker's equation or the thin lens formula.
 
 ### Pitfall 8: Confusing Diffraction and Refraction
 
 Diffraction is the spreading of waves around obstacles or through gaps. Refraction is the bending of
-waves due to a change in speed. They are different phenomena. Diffraction is most pronounced when
-the gap size is comparable to the wavelength; refraction occurs at boundaries between media of
-different densities.
+Waves due to a change in speed. They are different phenomena. Diffraction is most pronounced when
+The gap size is comparable to the wavelength; refraction occurs at boundaries between media of
+Different densities.
 
 ## Additional Practice Problems
 
 21. A convex lens has a focal length of $15 \mathrm{ cm{}$. An object $3 \mathrm{ cm{}$ tall is placed
-    $25 \mathrm{ cm{}$ from the lens. Calculate the image position, height, magnification, and nature
-    (real/virtual, upright/inverted). Draw a ray diagram.
+ $25 \mathrm{ cm{}$ from the lens. Calculate the image position, height, magnification, and nature
+ (real/virtual, upright/inverted). Draw a ray diagram.
 
 22. Monochromatic light of wavelength $550 \mathrm{ nm{}$ is incident on a diffraction grating with
-    $400 \mathrm{ lines/mm{}$. Calculate the angles of the first and second order maxima and the total
-    number of orders visible.
+ $400 \mathrm{ lines/mm{}$. Calculate the angles of the first and second order maxima and the total
+ number of orders visible.
 
 23. A concave mirror has a focal length of $20 \mathrm{ cm{}$. An object is placed $30 \mathrm{ cm{}$ from
-    the mirror. Calculate the image position and magnification. Is the image real or virtual?
+ the mirror. Calculate the image position and magnification. Is the image real or virtual?
 
 24. The wavelength of light in a certain liquid is $450 \mathrm{ nm{}$. If the wavelength in air is
-    $600 \mathrm{ nm{}$, calculate the refractive index of the liquid and the speed of light in the
-    liquid.
+ $600 \mathrm{ nm{}$Calculate the refractive index of the liquid and the speed of light in the
+ liquid.
 
 25. Explain how fibre optic cables use total internal reflection to transmit data. Include a
-    calculation showing why a fibre with core refractive index $1.50$ and cladding index $1.45$ is
-    suitable for this purpose.
+ calculation showing why a fibre with core refractive index $1.50$ and cladding index $1.45$ is
+ suitable for this purpose.

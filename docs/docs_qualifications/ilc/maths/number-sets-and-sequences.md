@@ -12,19 +12,19 @@ slug: number-sets-and-sequences
 # Number Sets and Sequences
 
 This topic covers number systems, set theory, sequences, series, and financial mathematics. These
-concepts underpin much of the algebra and calculus in the Leaving Certificate course.
+Concepts underpin much of the algebra and calculus in the Leaving Certificate course.
 
 ## Number Systems
 
 ### Classification (OL/HL)
 
-| Symbol       | Name             | Description                                                                  |
+| Symbol | Name | Description |
 | ------------ | ---------------- | ---------------------------------------------------------------------------- |
-| $\mathbb{'\{'}N{'\}'}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                           |
-| $\mathbb{'\{'}Z{'\}'}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                        |
-| $\mathbb{'\{'}Q{'\}'}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$, $q \neq 0$ |
-| $\mathbb{'\{'}R{'\}'}$ | Real numbers     | All rational and irrational numbers                                          |
-| $\mathbb{'\{'}C{'\}'}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$                     |
+| $\mathbb{'\{'}N{'\}'}$ | Natural numbers | $\{1, 2, 3, \ldots\}$ (some definitions include 0) |
+| $\mathbb{'\{'}Z{'\}'}$ | Integers | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$ |
+| $\mathbb{'\{'}Q{'\}'}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$ |
+| $\mathbb{'\{'}R{'\}'}$ | Real numbers | All rational and irrational numbers |
+| $\mathbb{'\{'}C{'\}'}$ | Complex numbers | Numbers of the form $a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ |
 
 The inclusions are:
 $\mathbb{'\{'}N{'\}'} \subset \mathbb{'\{'}Z{'\}'} \subset \mathbb{'\{'}Q{'\}'} \subset \mathbb{'\{'}R{'\}'} \subset \mathbb{'\{'}C{'\}'}$.
@@ -33,7 +33,7 @@ $\mathbb{'\{'}N{'\}'} \subset \mathbb{'\{'}Z{'\}'} \subset \mathbb{'\{'}Q{'\}'} 
 
 The real numbers satisfy the following axioms:
 
-**Closure:** If $a, b \in \mathbb{'\{'}R{'\}'}$, then $a + b \in \mathbb{'\{'}R{'\}'}$ and $a \cdot b \in \mathbb{'\{'}R{'\}'}$.
+**Closure:** If $a, b \in \mathbb{'\{'}R{'\}'}$Then $a + b \in \mathbb{'\{'}R{'\}'}$ and $a \cdot b \in \mathbb{'\{'}R{'\}'}$.
 
 **Commutativity:** $a + b = b + a$ and $a \cdot b = b \cdot a$.
 
@@ -43,10 +43,10 @@ The real numbers satisfy the following axioms:
 
 **Identity elements:** $a + 0 = a$ and $a \cdot 1 = a$.
 
-**Inverse elements:** For every $a$, there exists $-a$ such that $a + (-a) = 0$. For every
-$a \neq 0$, there exists $a^{-1}$ such that $a \cdot a^{-1} = 1$.
+**Inverse elements:** For every $a$There exists $-a$ such that $a + (-a) = 0$. For every
+$a \neq 0$There exists $a^{-1}$ such that $a \cdot a^{-1} = 1$.
 
-**Ordered field properties:** For any $a, b \in \mathbb{'\{'}R{'\}'}$, exactly one of $a \lt b$, $a = b$,
+**Ordered field properties:** For any $a, b \in \mathbb{'\{'}R{'\}'}$Exactly one of $a \lt b$$a = b$
 $a \gt b$ holds. The order is compatible with addition and multiplication by positive numbers.
 
 ### Irrational Numbers (HL)
@@ -55,36 +55,36 @@ A number is irrational if it cannot be expressed as a ratio of integers.
 
 **Proof that $\sqrt{2}$ is irrational:**
 
-Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$, $q \neq 0$, and the fraction is in
-lowest terms ($\gcd(p, q) = 1$).
+Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$And the fraction is in
+Lowest terms ($\gcd(p, q) = 1$).
 
-Then $p^2 = 2q^2$, so $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$,
-giving $q^2 = 2k^2$, so $q$ is also even. But this contradicts $\gcd(p, q) = 1$. Therefore
+Then $p^2 = 2q^2$So $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$
+Giving $q^2 = 2k^2$So $q$ is also even. But this contradicts $\gcd(p, q) = 1$. Therefore
 $\sqrt{2}$ is irrational.
 
 ### Proofs Involving Irrationals (HL)
 
 **Example:** Prove that $\sqrt{2} + \sqrt{3}$ is irrational.
 
-Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{3} = r - \sqrt{2}$, so
-$3 = r^2 - 2r\sqrt{2} + 2$, giving:
+Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{3} = r - \sqrt{2}$So
+$3 = r^2 - 2r\sqrt{2} + 2$Giving:
 
 $$
 2r\sqrt{2} = r^2 - 1 \implies \sqrt{2} = \frac{r^2 - 1}{2r}
 $$
 
-Since $r \in \mathbb{'\{'}Q{'\}'}$, $\frac{r^2 - 1}{2r} \in \mathbb{'\{'}Q{'\}'}$, contradicting the irrationality of
+Since $r \in \mathbb{'\{'}Q{'\}'}$$\frac{r^2 - 1}{2r} \in \mathbb{'\{'}Q{'\}'}$Contradicting the irrationality of
 $\sqrt{2}$.
 
 **Example:** Prove that $\sqrt{2} \cdot \sqrt{3} = \sqrt{6}$ is irrational.
 
-Assume $\sqrt{6} = \frac{p}{q}$ in lowest terms. Then $p^2 = 6q^2$, so $p$ is even. Let $p = 2k$.
-Then $4k^2 = 6q^2$, giving $2k^2 = 3q^2$, so $q$ is even. Contradiction.
+Assume $\sqrt{6} = \frac{p}{q}$ in lowest terms. Then $p^2 = 6q^2$So $p$ is even. Let $p = 2k$.
+Then $4k^2 = 6q^2$Giving $2k^2 = 3q^2$So $q$ is even. Contradiction.
 
 **Example (HL):** Prove that $\sqrt{2} + \sqrt{5}$ is irrational.
 
-Assume $\sqrt{2} + \sqrt{5} = r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{5} = r - \sqrt{2}$, so
-$5 = r^2 - 2r\sqrt{2} + 2$, giving:
+Assume $\sqrt{2} + \sqrt{5} = r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{5} = r - \sqrt{2}$So
+$5 = r^2 - 2r\sqrt{2} + 2$Giving:
 
 $$
 2r\sqrt{2} = r^2 - 3 \implies \sqrt{2} = \frac{r^2 - 3}{2r} \in \mathbb{'\{'}Q{'\}'}
@@ -94,8 +94,8 @@ This contradicts the irrationality of $\sqrt{2}$.
 
 **Example (HL):** Prove that $\log_2 3$ is irrational.
 
-Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$, $q \neq 0$, in lowest terms. Then
-$2^{p/q} = 3$, so $2^p = 3^q$.
+Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$In lowest terms. Then
+$2^{p/q} = 3$So $2^p = 3^q$.
 
 The left side is even (since $p \ge 1$) but the right side is odd. Contradiction.
 
@@ -107,34 +107,34 @@ $\sin x$ and the assumption that $\pi = a/b$ is rational.
 
 ### Density of $\mathbb{'\{'}Q{'\}'}$ in $\mathbb{'\{'}R{'\}'}$ (HL - awareness)
 
-Between any two real numbers $a \lt b$, there exists a rational number. This is a consequence of the
-Archimedean property: since $b - a > 0$, there exists a positive integer $n$ such that $n(b-a) > 1$,
-i.e., $nb - na > 1$. Then there exists an integer $m$ with $na \lt m \lt nb$, giving
+Between any two real numbers $a \lt b$There exists a rational number. This is a consequence of the
+Archimedean property: since $b - a > 0$There exists a positive integer $n$ such that $n(b-a) > 1$
+I.e., $nb - na > 1$. Then there exists an integer $m$ with $na \lt m \lt nb$Giving
 $a \lt m/n \lt b$.
 
 ## Set Theory
 
 ### Notation (OL/HL)
 
-| Symbol            | Meaning                                        |
+| Symbol | Meaning |
 | ----------------- | ---------------------------------------------- | --- | ------------------ |
-| $\in$             | Is an element of                               |
-| $\subset$         | Is a subset of                                 |
-| $\cup$            | Union                                          |
-| $\cap$            | Intersection                                   |
-| $A'$ or $\bar{A}$ | Complement of $A$                              |
-| $\emptyset$       | Empty set                                      |
-| $                 | A                                              | $   | Cardinality of $A$ |
-| $A \setminus B$   | $A$ minus $B$ (elements in $A$ but not in $B$) |
+| $\in$ | Is an element of |
+| $\subset$ | Is a subset of |
+| $\cup$ | Union |
+| $\cap$ | Intersection |
+| $A'$ or $\bar{A}$ | Complement of $A$ |
+| $\emptyset$ | Empty set |
+| $                 | A                                              | $ | Cardinality of $A$ |
+| $A \setminus B$ | $A$ minus $B$ (elements in $A$ but not in $B$) |
 
-**Subset vs. proper subset.** $A \subset B$ allows $A = B$. $A \subsetneq B$ requires $A \neq B$.
+**Subset vs. Proper subset.** $A \subset B$ allows $A = B$. $A \subsetneq B$ requires $A \neq B$.
 
 ### Venn Diagrams (OL)
 
 Venn diagrams provide visual representations of set operations.
 
 **Example (OL):** In a class of 30 students, 18 play football, 15 play hurling, and 8 play both. How
-many play neither?
+Many play neither?
 
 $$
 |F \cup H| = |F| + |H| - |F \cap H| = 18 + 15 - 8 = 25
@@ -145,8 +145,8 @@ Neither: $30 - 25 = 5$.
 ### Three-Set Problems (HL)
 
 **Example (HL):** In a survey of 100 people, 60 like tea, 45 like coffee, 35 like juice, 20 like
-both tea and coffee, 15 like both tea and juice, 10 like both coffee and juice, and 5 like all
-three. How many like none of the three?
+Both tea and coffee, 15 like both tea and juice, 10 like both coffee and juice, and 5 like all
+Three. How many like none of the three?
 
 By inclusion-exclusion for three sets:
 
@@ -185,8 +185,8 @@ $x \in (A \cap B)' \iff x \notin A \cap B \iff x \notin A \mathrm{ or {} x \noti
 - $|A \cup B| = |A| + |B| - |A \cap B|$ (inclusion-exclusion)
 
 **Proof of the inclusion-exclusion principle for two sets.** Every element of $A \cup B$ is in $A$
-or in $B$ or in both. Counting elements of $A$ and $B$ separately double-counts those in $A \cap B$,
-so we subtract $|A \cap B|$ to correct:
+Or in $B$ or in both. Counting elements of $A$ and $B$ separately double-counts those in $A \cap B$
+So we subtract $|A \cap B|$ to correct:
 
 $$
 |A \cup B| = |A| + |B| - |A \cap B|
@@ -210,7 +210,7 @@ $$
 S_n = \frac{n}{2}[2a + (n-1)d] = \frac{n}{2}(a + l)
 $$
 
-where $l = T_n$ is the last term.
+Where $l = T_n$ is the last term.
 
 **Derivation of the sum formula.** Write $S_n$ forwards and backwards:
 
@@ -218,11 +218,11 @@ $S_n = a + (a+d) + (a+2d) + \cdots + (l-d) + l$
 
 $S_n = l + (l-d) + (l-2d) + \cdots + (a+d) + a$
 
-Adding: $2S_n = n(a+l)$, so $S_n = \frac{n}{2}(a+l)$.
+Adding: $2S_n = n(a+l)$So $S_n = \frac{n}{2}(a+l)$.
 
 **Example (OL):** Find the sum of the first 20 terms of 3, 7, 11, 15, ...
 
-Here $a = 3$, $d = 4$, $n = 20$.
+Here $a = 3$$d = 4$$n = 20$.
 
 $$
 S_{20} = \frac{20}{2}[2(3) + 19(4)] = 10(6 + 76) = 820
@@ -239,12 +239,12 @@ $$
 T_{12} = a + 11d = 38
 $$
 
-Subtracting: $7d = 21$, so $d = 3$. Then $a = 17 - 12 = 5$.
+Subtracting: $7d = 21$So $d = 3$. Then $a = 17 - 12 = 5$.
 
 ### Arithmetic Mean (HL)
 
 The arithmetic mean of two numbers $a$ and $b$ is $\frac{a+b}{2}$. In an arithmetic sequence, each
-term is the arithmetic mean of its neighbours:
+Term is the arithmetic mean of its neighbours:
 
 $$
 T_n = \frac{T_{n-1} + T_{n+1}}{2}
@@ -270,12 +270,12 @@ $$
 
 $rS_n = ar + ar^2 + \cdots + ar^{n-1} + ar^n$
 
-Subtracting: $S_n - rS_n = a - ar^n$, so $S_n(1-r) = a(1 - r^n)$, giving
+Subtracting: $S_n - rS_n = a - ar^n$So $S_n(1-r) = a(1 - r^n)$Giving
 $S_n = \frac{a(1-r^n)}{1-r} = \frac{a(r^n-1)}{r-1}$.
 
 **Example (OL):** Find the sum of the first 8 terms of 2, 6, 18, 54, ...
 
-Here $a = 2$, $r = 3$, $n = 8$.
+Here $a = 2$$r = 3$$n = 8$.
 
 $$
 S_8 = \frac{2(3^8 - 1)}{3 - 1} = \frac{2(6561 - 1)}{2} = 6560
@@ -284,7 +284,7 @@ $$
 ### Geometric Mean (HL)
 
 The geometric mean of two positive numbers $a$ and $b$ is $\sqrt{ab}$. In a geometric sequence, each
-term is the geometric mean of its neighbours (when all terms are positive):
+Term is the geometric mean of its neighbours (when all terms are positive):
 
 $$
 T_n = \sqrt{T_{n-1} \cdot T_{n+1}}
@@ -296,10 +296,10 @@ $$
 \frac{a + b}{2} \geq \sqrt{ab}
 $$
 
-with equality if and only if $a = b$.
+With equality if and only if $a = b$.
 
-**Proof.** Since $(\sqrt{a} - \sqrt{b})^2 \geq 0$, we have $a - 2\sqrt{ab} + b \geq 0$, so
-$a + b \geq 2\sqrt{ab}$, giving $\frac{a+b}{2} \geq \sqrt{ab}$.
+**Proof.** Since $(\sqrt{a} - \sqrt{b})^2 \geq 0$We have $a - 2\sqrt{ab} + b \geq 0$So
+$a + b \geq 2\sqrt{ab}$Giving $\frac{a+b}{2} \geq \sqrt{ab}$.
 
 ### Sum to Infinity (HL)
 
@@ -309,8 +309,8 @@ $$
 S_\infty = \frac{a}{1 - r}
 $$
 
-**Why $|r| \ge 1$ diverges.** If $|r| \ge 1$, then $|T_n| = |a||r|^{n-1} \ge |a| > 0$ for all $n$,
-so $T_n$ does not approach zero, and the partial sums diverge.
+**Why $|r| \ge 1$ diverges.** If $|r| \ge 1$Then $|T_n| = |a||r|^{n-1} \ge |a| > 0$ for all $n$
+So $T_n$ does not approach zero, and the partial sums diverge.
 
 **Example (HL):** Find the sum to infinity of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
@@ -320,7 +320,7 @@ $$
 
 **Example (HL):** Find the sum to infinity of $\frac{1}{2} + \frac{1}{6} + \frac{1}{18} + \cdots$
 
-$a = \frac{1}{2}$, $r = \frac{1/6}{1/2} = \frac{1}{3}$.
+$a = \frac{1}{2}$$r = \frac{1/6}{1/2} = \frac{1}{3}$.
 
 $$
 S_\infty = \frac{1/2}{1 - 1/3} = \frac{1/2}{2/3} = \frac{3}{4}
@@ -372,7 +372,7 @@ $$
 \lim_{n \to \infty} \left(\frac{2}{3}\right)^n = 0
 $$
 
-since $|2/3| \lt 1$.
+Since $|2/3| \lt 1$.
 
 **Example (HL):** Evaluate $\lim_{n \to \infty} \frac{n^3 + 2n}{4n^3 - n + 1}$.
 
@@ -397,7 +397,7 @@ $$
 $$
 
 **Note:** $\sum_{r=1}^{n} r^3 = \left(\sum_{r=1}^{n} r\right)^2$. This beautiful identity says the
-sum of cubes equals the square of the sum.
+Sum of cubes equals the square of the sum.
 
 **Proof of $\sum_{r=1}^{n} r = \frac{n(n+1)}{2}$ by induction.**
 
@@ -500,10 +500,10 @@ $$
 A = P(1 + r)^n
 $$
 
-where $P$ is the principal.
+Where $P$ is the principal.
 
 **Example (HL):** EUR 5000 is invested at 4% per annum, compounded annually. Find the amount after 6
-years.
+Years.
 
 $$
 A = 5000(1.04)^6 \approx 5000 \times 1.2653 \approx \mathrm{EUR {} 6326.60
@@ -522,13 +522,13 @@ $$
 If the nominal annual rate is $i$ compounded $m$ times per year, the effective annual rate is:
 
 $$
-r_{\mathrm{eff{}} = \left(1 + \frac{i}{m}\right)^m - 1
+R_{\mathrm{eff{}} = \left(1 + \frac{i}{m}\right)^m - 1
 $$
 
 **Example (HL):** A bank offers 6% per annum compounded monthly. Find the effective annual rate.
 
 $$
-r_{\mathrm{eff{}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
+R_{\mathrm{eff{}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 \approx 0.0617 = 6.17\%
 $$
 
 ### Amortisation (HL)
@@ -552,7 +552,7 @@ M \cdot \frac{1}{1+r} \cdot \frac{1 - (1+r)^{-n}}{1 - \frac{1}{1+r}} = M \cdot \
 $$
 
 **Example (HL):** A mortgage of EUR 300,000 is repaid over 25 years at a monthly rate of 0.35%. Find
-the monthly repayment.
+The monthly repayment.
 
 $$
 M = \frac{300000 \times 0.0035}{1 - (1.0035)^{-300}} \approx \frac{1050}{1 - 0.3484} \approx \frac{1050}{0.6516} \approx \mathrm{EUR {} 1611.36
@@ -562,7 +562,7 @@ $$
 
 A recurrence relation defines each term of a sequence in terms of previous terms.
 
-**Example:** $T_1 = 2$, $T_{n+1} = 3T_n - 1$.
+**Example:** $T_1 = 2$$T_{n+1} = 3T_n - 1$.
 
 $$
 T_1 = 2, \quad T_2 = 5, \quad T_3 = 14, \quad T_4 = 41
@@ -578,10 +578,10 @@ The general solution is $T_n = L + (T_1 - L)a^{n-1}$.
 
 **Why this works.** Let $U_n = T_n - L$. Then
 $U_{n+1} = T_{n+1} - L = aT_n + b - L = aT_n + b - \frac{b}{1-a} = aT_n + \frac{b - b + ab}{1-a} = aT_n + \frac{ab}{1-a}$.
-Since $L = \frac{b}{1-a}$, we have $aL = \frac{ab}{1-a}$, so $U_{n+1} = aT_n - aL = aU_n$. This is a
-geometric sequence with ratio $a$.
+Since $L = \frac{b}{1-a}$We have $aL = \frac{ab}{1-a}$So $U_{n+1} = aT_n - aL = aU_n$. This is a
+Geometric sequence with ratio $a$.
 
-**Example:** Solve $T_1 = 3$, $T_{n+1} = 2T_n + 5$.
+**Example:** Solve $T_1 = 3$$T_{n+1} = 2T_n + 5$.
 
 Fixed point: $L = \frac{5}{1 - 2} = -5$.
 
@@ -589,7 +589,7 @@ $$
 T_n = -5 + (3 - (-5)) \cdot 2^{n-1} = -5 + 8 \cdot 2^{n-1} = -5 + 2^{n+2}
 $$
 
-**Example (HL):** Solve $T_1 = 1$, $T_{n+1} = 4T_n - 3$.
+**Example (HL):** Solve $T_1 = 1$$T_{n+1} = 4T_n - 3$.
 
 Fixed point: $L = \frac{-3}{1 - 4} = 1$.
 
@@ -597,15 +597,15 @@ $$
 T_n = 1 + (1 - 1) \cdot 4^{n-1} = 1
 $$
 
-Indeed: $T_2 = 4(1) - 3 = 1$, $T_3 = 4(1) - 3 = 1$, etc. The sequence is constant at 1, which is the
-fixed point.
+Indeed: $T_2 = 4(1) - 3 = 1$$T_3 = 4(1) - 3 = 1$Etc. The sequence is constant at 1, which is the
+Fixed point.
 
 ### Second Order Recurrence Relations (HL - awareness)
 
 A second-order linear recurrence $T_{n+2} = aT_{n+1} + bT_n$ with constant coefficients is solved by
-finding the roots of the characteristic equation $\lambda^2 - a\lambda - b = 0$.
+Finding the roots of the characteristic equation $\lambda^2 - a\lambda - b = 0$.
 
-**Example:** The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_{n+2} = F_{n+1} + F_n$.
+**Example:** The Fibonacci sequence $F_1 = 1$$F_2 = 1$$F_{n+2} = F_{n+1} + F_n$.
 
 Characteristic equation: $\lambda^2 - \lambda - 1 = 0$.
 
@@ -621,23 +621,23 @@ $$
 
 ## Common Pitfalls
 
-1. **Mixing up arithmetic and geometric** formulas -- arithmetic has $d$, geometric has $r$.
-   Remember: arithmetic adds, geometric multiplies.
-2. **Sum to infinity** only converges when $|r| \lt 1$. If $|r| \ge 1$, the sum diverges.
+1. **Mixing up arithmetic and geometric** formulas -- arithmetic has $d$Geometric has $r$.
+ Remember: arithmetic adds, geometric multiplies.
+2. **Sum to infinity** only converges when $|r| \lt 1$. If $|r| \ge 1$The sum diverges.
 3. **Financial mathematics** -- ensure the rate and time period match (e.g., annual rate with annual
-   compounding, or monthly rate with monthly compounding).
+ compounding, or monthly rate with monthly compounding).
 4. **Limits** -- always divide by the highest power of $n$ in both numerator and denominator.
-5. **Sigma notation** -- be careful with the lower and upper limits. $\sum_{r=1}^{n} 1 = n$, not
-   $1$.
+5. **Sigma notation** -- be careful with the lower and upper limits. $\sum_{r=1}^{n} 1 = n$Not
+ $1$.
 6. **Set notation** -- do not confuse $\subset$ (subset) with $\in$ (element of).
-7. **Proof by contradiction** -- always clearly state the assumption, derive a contradiction, and
-   state what this proves.
+7. **Proof by contradiction** -- always state the assumption, derive a contradiction, and
+ state what this proves.
 8. **Induction** -- the inductive step must use the inductive hypothesis. If it does not, the proof
-   is invalid.
+ is invalid.
 9. **Recurring decimals** -- identify the repeating block correctly. $0.\dot{3}$ has one repeating
-   digit; $0.\dot{3}\dot{7}$ has two repeating digits.
+ digit; $0.\dot{3}\dot{7}$ has two repeating digits.
 10. **AM-GM inequality** -- only applies to non-negative numbers. Do not apply it when $a$ or $b$
-    could be negative.
+ could be negative.
 
 ## Practice Questions
 
@@ -646,7 +646,7 @@ $$
 1. Find the 15th term of the arithmetic sequence 5, 9, 13, 17, ...
 2. Find the sum of the first 25 terms of 2, 6, 18, 54, ...
 3. A set $A = \{1, 2, 3, 4, 5, 6, 7, 8\}$ and $B = \{2, 4, 6, 8, 10\}$. Find $A \cup B$ and
-   $A \cap B$.
+ $A \cap B$.
 4. Show that $\frac{22}{7}$ is rational.
 5. The 5th term of an arithmetic sequence is 17 and the 12th term is 38. Find $a$ and $d$.
 6. Express $0.\dot{6}$ as a fraction.
@@ -657,50 +657,50 @@ $$
 1. Prove that $\sqrt{3}$ is irrational.
 2. Find the sum to infinity of $\frac{1}{2} + \frac{1}{6} + \frac{1}{18} + \cdots$
 3. Evaluate $\sum_{r=1}^{100} (2r^2 - r)$.
-4. Solve the recurrence relation $T_1 = 1$, $T_{n+1} = 4T_n - 3$. Find a closed form for $T_n$.
+4. Solve the recurrence relation $T_1 = 1$$T_{n+1} = 4T_n - 3$. Find a closed form for $T_n$.
 5. EUR 2000 is invested at 3.5% per annum compounded monthly. Find the amount after 5 years.
 6. Prove De Morgan's second law: $(A \cap B)' = A' \cup B'$.
 7. Evaluate $\lim_{n \to \infty} \frac{n^3 + 2n}{4n^3 - n + 1}$.
 8. Prove that $\sum_{r=1}^{n} r^3 = \frac{n^2(n+1)^2}{4}$ by induction.
 9. Prove that $\sqrt{2} + \sqrt{5}$ is irrational.
 10. Evaluate $\sum_{r=1}^{n} \frac{1}{r(r+1)}$ by expressing $\frac{1}{r(r+1)}$ in partial
-    fractions.
+ fractions.
 11. Express $0.\dot{2}\dot{7}$ as a fraction.
 12. Prove that $\log_2 3$ is irrational.
 13. A bank offers 5% nominal annual rate compounded quarterly. Find the effective annual rate.
 14. In a survey, 70% of people like tea, 40% like coffee, and 25% like both. What percentage like
-    neither?
+ neither?
 15. Prove the AM-GM inequality for positive $a$ and $b$.
 16. Evaluate $\sum_{r=1}^{n} (2r - 1)$ and explain the result geometrically.
 17. Prove that $n! > 2^n$ for all $n \ge 4$ by induction.
 18. A loan of EUR 150,000 is repaid over 20 years at a monthly rate of 0.4%. Find the monthly
-    repayment and the total amount paid.
-19. The first three terms of a geometric sequence are $x - 2$, $x + 2$, and $x + 8$. Find $x$ and
-    the common ratio.
+ repayment and the total amount paid.
+19. The first three terms of a geometric sequence are $x - 2$$x + 2$And $x + 8$. Find $x$ and
+ the common ratio.
 20. Prove that the sum of an odd number and an even number is always odd.
 
 ### Extended Practice
 
 21. Express $0.1\dot{6}$ (recurring) as a fraction.
 22. Find the sum to infinity of the series
-    $\frac{2}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{12} + \cdots$
+ $\frac{2}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{12} + \cdots$
 23. Evaluate $\sum_{r=1}^{n} (r+1)(r+2)$.
 24. Prove by induction that $n^2 + n$ is even for all positive integers $n$.
-25. Solve $T_1 = 5$, $T_{n+1} = \frac{1}{2}T_n + 3$ and find $\lim_{n \to \infty} T_n$.
+25. Solve $T_1 = 5$$T_{n+1} = \frac{1}{2}T_n + 3$ and find $\lim_{n \to \infty} T_n$.
 26. A geometric sequence has first term 3 and common ratio $\frac{2}{3}$. Find the smallest value of
-    $n$ such that $T_n < 0.1$.
+ $n$ such that $T_n < 0.1$.
 27. Prove that there are infinitely many prime numbers (Euclid's proof).
 28. EUR 10000 is invested at $r\%$ per annum compounded annually. After 10 years it is worth
-    EUR 18000. Find $r$.
-29. The sum of the first $n$ terms of an arithmetic sequence is $S_n = 3n^2 + n$. Find the $n$th
-    term $T_n$ and the common difference.
+ EUR 18000. Find $r$.
+29. The sum of the first $n$ terms of an arithmetic sequence is $S_n = 3n^2 + n$. Find the $n$Th
+ term $T_n$ and the common difference.
 30. Prove that $\frac{1}{\sqrt{2}}$ is irrational.
 
 ### Extended Content
 
 #### Sum of an Arithmetic Series from $S_n$
 
-Given the sum formula $S_n = \frac{n}{2}[2a + (n-1)d]$, we can find the $n$th term from the sum:
+Given the sum formula $S_n = \frac{n}{2}[2a + (n-1)d]$We can find the $n$Th term from the sum:
 
 $$
 T_n = S_n - S_{n-1} = \frac{n}{2}[2a + (n-1)d] - \frac{n-1}{2}[2a + (n-2)d]
@@ -714,12 +714,12 @@ $$
 = \frac{1}{2}\left[2a + (n-1)d(2)\right] = a + (n-1)d
 $$
 
-This confirms that the $n$th term can always be recovered from the sum.
+This confirms that the $n$Th term can always be recovered from the sum.
 
 #### Geometric Series Derivation (Alternative)
 
 An alternative derivation of $S_n = \frac{a(1-r^n)}{1-r}$ uses the formula for the sum of a
-geometric progression by recognising:
+Geometric progression by recognising:
 
 $$
 (1-r)S_n = (1-r)(a + ar + ar^2 + \cdots + ar^{n-1})
@@ -745,7 +745,7 @@ $\phi = \frac{1+\sqrt{5}}{2} \approx 1.618$.
 
 #### Deducing the Formula for $T_n$ Given $S_n$
 
-If $S_n = 3n^2 + n$, then:
+If $S_n = 3n^2 + n$Then:
 
 $$
 T_n = S_n - S_{n-1} = (3n^2 + n) - [3(n-1)^2 + (n-1)]
@@ -756,3 +756,11 @@ $$
 $$
 
 This is an arithmetic sequence with first term $T_1 = 6(1) - 2 = 4$ and common difference $d = 6$.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

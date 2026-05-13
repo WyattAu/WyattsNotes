@@ -105,15 +105,15 @@ Two cells with EMFs $\varepsilon_1 = 10.0\,\text{V}$ (internal resistance $r_1 =
 
 **Solution:**
 
-(a) Let $I_1$ flow from $\varepsilon_1$ (out of positive terminal), $I_2$ flow from $\varepsilon_2$, and $I_R$ flow through $R$ (downward). Apply Kirchhoff's current law at the top junction:
+(a) Let $I_1$ flow from $\varepsilon_1$ (out of positive terminal), $I_2$ flow from $\varepsilon_2$And $I_R$ flow through $R$ (downward). Apply Kirchhoff's current law at the top junction:
 
 $$I_1 + I_2 = I_R$$
 
-Apply Kirchhoff's voltage law to the left loop ($\varepsilon_1$, $r_1$, $R$):
+Apply Kirchhoff's voltage law to the left loop ($\varepsilon_1$$r_1$$R$):
 
 $$\varepsilon_1 - I_1 r_1 - I_R R = 0 \Rightarrow 10.0 - I_1 - 5I_R = 0 \quad (1)$$
 
-Apply Kirchhoff's voltage law to the right loop ($\varepsilon_2$, $r_2$, $R$):
+Apply Kirchhoff's voltage law to the right loop ($\varepsilon_2$$r_2$$R$):
 
 $$\varepsilon_2 - I_2 r_2 - I_R R = 0 \Rightarrow 6.0 - 2I_2 - 5I_R = 0 \quad (2)$$
 
@@ -132,9 +132,9 @@ $$I_2 = 3.0 - 2.5(1.529) = 3.0 - 3.824 = -0.824\,\text{A}$$
 
 The negative sign for $I_2$ means $\varepsilon_2$ is being **charged** by $\varepsilon_1$. Current flows into the positive terminal of $\varepsilon_2$.
 
-(b) Terminal p.d. across $\varepsilon_1$: $V_1 = \varepsilon_1 - I_1 r_1 = 10.0 - 2.353 = 7.647\,\text{V}$
+(b) Terminal p.d. Across $\varepsilon_1$: $V_1 = \varepsilon_1 - I_1 r_1 = 10.0 - 2.353 = 7.647\,\text{V}$
 
-Terminal p.d. across $\varepsilon_2$: $V_2 = \varepsilon_2 - I_2 r_2 = 6.0 - (-0.824)(2.0) = 6.0 + 1.647 = 7.647\,\text{V}$
+Terminal p.d. Across $\varepsilon_2$: $V_2 = \varepsilon_2 - I_2 r_2 = 6.0 - (-0.824)(2.0) = 6.0 + 1.647 = 7.647\,\text{V}$
 
 Both terminal p.d.s are equal, as expected since they are connected in parallel.
 
@@ -201,7 +201,7 @@ Energy stored: $E = \frac{1}{2}CV^2 = 0.5 \times 10^{-3} \times 196 = 0.098\,\te
 
 **Question:**
 
-A circuit consists of a $24\,\text{V}$ supply (internal resistance $1\,\Omega$) in series with $R_1 = 5\,\Omega$, which is then connected to a parallel combination of $R_2 = 10\,\Omega$ and $R_3 = 15\,\Omega$.
+A circuit consists of a $24\,\text{V}$ supply (internal resistance $1\,\Omega$) in series with $R_1 = 5\,\Omega$Which is then connected to a parallel combination of $R_2 = 10\,\Omega$ and $R_3 = 15\,\Omega$.
 
 (a) Find the Thevenin equivalent circuit across $R_3$.
 
@@ -227,7 +227,7 @@ $r = 1\,\Omega$ and $R_1 = 5\,\Omega$ are in series $= 6\,\Omega$. This combinat
 
 $$R_{\text{Th}} = \frac◆LB◆6 \times 10◆RB◆◆LB◆6 + 10◆RB◆ = \frac{60}{16} = 3.75\,\Omega$$
 
-Thevenin equivalent: $V_{\text{Th}} = 15\,\text{V}$, $R_{\text{Th}} = 3.75\,\Omega$.
+Thevenin equivalent: $V_{\text{Th}} = 15\,\text{V}$$R_{\text{Th}} = 3.75\,\Omega$.
 
 (b) Current through $R_3$:
 
@@ -241,7 +241,7 @@ $$18.75 \gt 3.0 + 0.8 R_3$$
 $$0.8 R_3 \lt 15.75$$
 $$R_3 \lt 19.7\,\Omega$$
 
-For any $R_3 \lt 19.7\,\Omega$, the current exceeds $0.8\,\text{A}$. Since the original $R_3 = 15\,\Omega$ gives exactly $0.8\,\text{A}$, this is the boundary.
+For any $R_3 \lt 19.7\,\Omega$The current exceeds $0.8\,\text{A}$. Since the original $R_3 = 15\,\Omega$ gives exactly $0.8\,\text{A}$This is the boundary.
 
 ---
 ### IT-3: Non-Ideal Ammeter and Voltmeter Effects (with Quantities and Units)
@@ -276,7 +276,7 @@ $$V_{\text{across } R \parallel R_V} = 9.0\,\text{V}$$
 
 $$I_{\text{total}} = 9.0/46.56 = 0.1933\,\text{A}$$
 
-The voltmeter reads $9.0\,\text{V}$, which equals the ideal value. This is because with no other resistance in the circuit, the full supply voltage appears across the parallel combination regardless of the voltmeter's loading effect.
+The voltmeter reads $9.0\,\text{V}$Which equals the ideal value. This is because with no other resistance in the circuit, the full supply voltage appears across the parallel combination regardless of the voltmeter's loading effect.
 
 However, if the supply has internal resistance $r = 5\,\Omega$:
 

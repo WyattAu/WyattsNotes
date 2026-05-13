@@ -11,7 +11,7 @@ categories:
 ## Pointer Basics
 
 Go has pointers, but no pointer arithmetic (except via `unsafe`). Pointers hold the memory address
-of a value.
+Of a value.
 
 ```go
 x := 42
@@ -34,7 +34,7 @@ fmt.Println(p == nil) // true
 ### Pointer Semantics
 
 Go passes everything by value, including pointers. When you pass a pointer, the pointer itself is
-copied (the address value), but it still points to the same underlying data:
+Copied (the address value), but it still points to the same underlying data:
 
 ```go
 func increment(p *int) {
@@ -49,7 +49,7 @@ fmt.Println(x) // 43
 ### Returning Pointers to Local Variables
 
 Go allows returning pointers to local variables. The compiler performs escape analysis and allocates
-the variable on the heap if it escapes:
+The variable on the heap if it escapes:
 
 ```go
 func newInt() *int {
@@ -59,7 +59,7 @@ func newInt() *int {
 ```
 
 This is safe and idiomatic. The garbage collector handles the lifetime of the heap-allocated
-variable.
+Variable.
 
 ## Struct Pointers
 
@@ -102,7 +102,7 @@ fmt.Println(alice.Age) // 31 -- changed
 ## Escape Analysis
 
 The Go compiler uses escape analysis to determine whether a variable can live on the stack or must
-be allocated on the heap. A variable "escapes" if it is reachable after the function returns.
+Be allocated on the heap. A variable "escapes" if it is reachable after the function returns.
 
 ### What Causes Heap Allocation
 
@@ -110,9 +110,9 @@ A variable escapes to the heap when:
 
 1. Its address is returned from a function
 2. It is stored in a variable that outlives the function (e.g., a global, a pointer stored in a
-   struct field, a closure capture)
+ struct field, a closure capture)
 3. It is passed to an interface value
-4. It is too large for the stack (implementation-defined, typically > a few MB)
+4. It is too large for the stack (implementation-defined, > a few MB)
 5. It is referenced by a goroutine that may outlive the function
 
 ```go
@@ -146,30 +146,30 @@ Use `-gcflags="-m -m"` for verbose output.
 
 ## Stack vs Heap
 
-| Property     | Stack                        | Heap                           |
+| Property | Stack | Heap |
 | ------------ | ---------------------------- | ------------------------------ |
-| Allocation   | Automatic (push/pop frame)   | Manual (via `new`/escape)      |
-| Deallocation | Automatic (function return)  | Garbage collector              |
-| Speed        | Very fast (pointer bump)     | Slower (GC involvement)        |
-| Size         | Limited (default 1GB, grows) | Large (limited by system)      |
-| Access       | Direct (register/offset)     | Indirect (pointer dereference) |
+| Allocation | Automatic (push/pop frame) | Manual (via `new`/escape) |
+| Deallocation | Automatic (function return) | Garbage collector |
+| Speed | Very fast (pointer bump) | Slower (GC involvement) |
+| Size | Limited (default 1GB, grows) | Large (limited by system) |
+| Access | Direct (register/offset) | Indirect (pointer dereference) |
 
 Stack allocation is preferred because it is faster (no GC overhead) and the memory is automatically
-reclaimed when the function returns. The Go compiler works hard to keep variables on the stack.
+Reclaimed when the function returns. The Go compiler works hard to keep variables on the stack.
 
 ### Stack Growth
 
 Go stacks start small (2-8 KB) and grow as needed. When a goroutine's stack is too small, the
-runtime allocates a larger stack and copies the old stack to the new one. This is transparent to the
-programmer.
+Runtime allocates a larger stack and copies the old stack to the new one. This is transparent to the
+Programmer.
 
 Unlike C, there is no fixed stack size and no stack overflow in the traditional sense. However,
-extremely deep recursion (millions of frames) may exhaust memory.
+Extremely deep recursion (millions of frames) may exhaust memory.
 
 ## The unsafe Package
 
 The `unsafe` package provides operations that bypass Go's type safety. It should be used sparingly
-and only when interfacing with C or implementing low-level data structures.
+And only when interfacing with C or implementing low-level data structures.
 
 ### Pointer Arithmetic
 
@@ -210,13 +210,13 @@ s := unsafe.String(&b[0], len(b)) // []byte to string without allocation
 ### Rules for Using unsafe
 
 1. The conversion from `uintptr` to `unsafe.Pointer` (and back) must happen in the same expression.
-   Storing a `uintptr` in a variable breaks the GC's ability to track the reference.
+ Storing a `uintptr` in a variable breaks the GC's ability to track the reference.
 
 2. Never store a `uintptr` where the GC can see it. The GC treats `uintptr` as an integer, not a
-   pointer, and may collect the underlying object.
+ pointer, and may collect the underlying object.
 
-3. `unsafe.Pointer` rules: a `T1` can be converted to `unsafe.Pointer`, which can be converted to
-   `T2`. This allows arbitrary pointer type conversion.
+3. `unsafe.Pointer` rules: a `T1` can be converted to `unsafe.Pointer`Which can be converted to
+ `T2`. This allows arbitrary pointer type conversion.
 
 ```go
 // Valid: conversion chain in single expression
@@ -226,7 +226,7 @@ p := (*int)(unsafe.Pointer(&float64Var))
 ## Pointer Comparison
 
 Go pointers are comparable with `==` and `!=`. Two pointers are equal if they point to the same
-address:
+Address:
 
 ```go
 x := 42
@@ -243,21 +243,29 @@ Pointers can also be compared to `nil`.
 ## Common Pitfalls
 
 1. **Dereferencing nil pointers.** Always check for nil before dereferencing, or ensure the pointer
-   is initialized.
+ is initialized.
 
 2. **Returning slice that references stack-escaped data.** Slicing a local array and returning the
-   slice escapes the array to the heap. This is handled correctly by the compiler but may surprise
-   programmers expecting stack-only behavior.
+ slice escapes the array to the heap. This is handled correctly by the compiler but may surprise
+ programmers expecting stack-only behavior.
 
 3. **Storing uintptr across GC.** If you convert a pointer to `uintptr` and store it, the GC may
-   collect the pointed-to object. Always keep the conversion in a single expression.
+ collect the pointed-to object. Always keep the conversion in a single expression.
 
 4. **Assuming struct layout.** Go does not guarantee struct field layout. The compiler may reorder
-   fields for alignment. Use `unsafe.Offsetof` to query actual offsets, or use `//go:nosplit` and
-   `//go:notinheap` for precise control (advanced).
+ fields for alignment. Use `unsafe.Offsetof` to query actual offsets, or use `//go:nosplit` and
+ `//go:notinheap` for precise control (advanced).
 
 5. **Overusing `unsafe`.** Most code never needs `unsafe`. If you find yourself using it, consider
-   whether a safe alternative exists (interface assertions, reflection, encoding/json, etc.).
+ whether a safe alternative exists (interface assertions, reflection, encoding/json, etc.).
 
 6. **Not checking escape analysis output.** When performance matters, run `go build -gcflags="-m"`
-   and verify that hot-path variables are not unnecessarily escaping to the heap.
+ and verify that hot-path variables are not unnecessarily escaping to the heap.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

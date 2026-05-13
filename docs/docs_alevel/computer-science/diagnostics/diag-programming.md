@@ -9,7 +9,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: OOP Principles and Encapsulation
-**Question:** Design a class hierarchy for a library system with a base class `Item` and derived classes `Book`, `DVD`, and `Magazine`. The `Item` class should have private attributes `title`, `item_id`, and `is_available`. Include: (a) a constructor, (b) getter and setter methods demonstrating encapsulation, (c) an abstract method `calculate_late_fee(days)` that each derived class implements differently. Show how polymorphism is used to process a list of mixed items.
+**Question:** Design a class hierarchy for a library system with a base class `Item` and derived classes `Book``DVD`And `Magazine`. The `Item` class should have private attributes `title``item_id`And `is_available`. Include: (a) a constructor, (b) getter and setter methods demonstrating encapsulation, (c) an abstract method `calculate_late_fee(days)` that each derived class implements differently. Show how polymorphism is used to process a list of mixed items.
 
 **Solution:**
 
@@ -86,7 +86,7 @@ for item in items:
     print(f"{item.get_title()}: late fee for 5 days = {item.calculate_late_fee(5)}")
 ```
 
-Encapsulation is demonstrated by: (1) private attributes (`__title`, `__item_id`, `__is_available`) accessible only through getter/setter methods, (2) the setter validates input before modifying state, (3) `borrow()` and `return_item()` methods control state transitions.
+Encapsulation is demonstrated by: (1) private attributes (`__title``__item_id``__is_available`) accessible only through getter/setter methods, (2) the setter validates input before modifying state, (3) `borrow()` and `return_item()` methods control state transitions.
 
 Polymorphism is demonstrated by: the loop iterates over a list of `Item` references but calls `calculate_late_fee()` on each -- Python dispatches the call to the correct derived class method at runtime (dynamic polymorphism).
 
@@ -165,7 +165,7 @@ WHERE NOT EXISTS (
 
 (a) Violations in the unnormalised form (UNF):
 - **1NF violation:** The table is already in 1NF (all values are atomic).
-- **2NF violation:** Partial dependencies exist. `CustomerName` and `CustomerCity` depend only on part of a composite key. If we use `(OrderID, Product)` as the composite key, `CustomerName` and `CustomerCity` depend only on `OrderID` (partial dependency). Also, `Price` depends only on `Product`, not on the full composite key.
+- **2NF violation:** Partial dependencies exist. `CustomerName` and `CustomerCity` depend only on part of a composite key. If we use `(OrderID, Product)` as the composite key, `CustomerName` and `CustomerCity` depend only on `OrderID` (partial dependency). Also, `Price` depends only on `Product`Not on the full composite key.
 - **3NF violation:** Transitive dependencies exist. `CustomerCity` depends on `CustomerName` (transitively through `CustomerName`).
 
 (b) **Normalisation to 3NF:**
@@ -185,7 +185,7 @@ PK: Product
 
 **3NF tables:** Check for transitive dependencies in each 2NF table.
 
-Customer(OrderID, CustomerName, CustomerCity): `CustomerCity` depends on `CustomerName`, not on `OrderID`. This is a transitive dependency. Split into:
+Customer(OrderID, CustomerName, CustomerCity): `CustomerCity` depends on `CustomerName`Not on `OrderID`. This is a transitive dependency. Split into:
 
 CustomerOrder(OrderID, CustomerID)
 PK: OrderID, FK: CustomerID references Customer
@@ -284,7 +284,7 @@ class StudentRecordManager:
 
 ---
 ### IT-2: SQL and Programming Integration (with Relational Databases)
-**Question:** A school database has tables: `Student(student_id, name, form_group)`, `Subject(subject_id, subject_name, teacher)`, `Enrolment(student_id, subject_id, grade)`. Write Python code using parameterised queries to: (a) enrol a student in a subject, (b) update a student's grade, (c) generate a report showing each student's average grade. Explain why parameterised queries are essential for security.
+**Question:** A school database has tables: `Student(student_id, name, form_group)``Subject(subject_id, subject_name, teacher)``Enrolment(student_id, subject_id, grade)`. Write Python code using parameterised queries to: (a) enrol a student in a subject, (b) update a student's grade, (c) generate a report showing each student's average grade. Explain why parameterised queries are essential for security.
 
 **Solution:**
 
@@ -329,7 +329,7 @@ name = "'; DROP TABLE Student; --"
 query = f"SELECT * FROM Student WHERE name = '{name}'"
 ```
 
-This would execute: `SELECT * FROM Student WHERE name = ''; DROP TABLE Student; --'`, destroying the table. This is a **SQL injection attack**.
+This would execute: `SELECT * FROM Student WHERE name = ''; DROP TABLE Student; --'`Destroying the table. This is a **SQL injection attack**.
 
 Parameterised queries separate the SQL code from the data. The database driver treats parameters strictly as data values, never as executable SQL code. Even if the input contains SQL syntax, it is treated as a literal string value and cannot alter the query structure.
 
@@ -372,27 +372,27 @@ def is_valid_bst(node, min_val=float('-inf'), max_val=float('inf')):
 `is_valid_bst(10, -inf, +inf)`:
 - $10 \gt -\inf$ and $10 \lt +\inf$: OK
 - Check left: `is_valid_bst(5, -inf, 10)`
-  - $5 \gt -\inf$ and $5 \lt 10$: OK
-  - Check left: `is_valid_bst(3, -inf, 5)`
-    - $3 \gt -\inf$ and $3 \lt 5$: OK
-    - Both children None: True
-  - Check right: `is_valid_bst(7, 5, 10)`
-    - $7 \gt 5$ and $7 \lt 10$: OK
-    - Left is None: True
-    - Check right: `is_valid_bst(8, 7, 10)`
-      - $8 \gt 7$ and $8 \lt 10$: OK
-      - Both children None: True
-    - True
-  - True
+ - $5 \gt -\inf$ and $5 \lt 10$: OK
+ - Check left: `is_valid_bst(3, -inf, 5)`
+ - $3 \gt -\inf$ and $3 \lt 5$: OK
+ - Both children None: True
+ - Check right: `is_valid_bst(7, 5, 10)`
+ - $7 \gt 5$ and $7 \lt 10$: OK
+ - Left is None: True
+ - Check right: `is_valid_bst(8, 7, 10)`
+ - $8 \gt 7$ and $8 \lt 10$: OK
+ - Both children None: True
+ - True
+ - True
 - Check right: `is_valid_bst(15, 10, +inf)`
-  - $15 \gt 10$ and $15 \lt +\inf$: OK
-  - Check left: `is_valid_bst(12, 10, 15)`
-    - $12 \gt 10$ and $12 \lt 15$: OK
-    - Both children None: True
-  - Check right: `is_valid_bst(20, 15, +inf)`
-    - $20 \gt 15$ and $20 \lt +\inf$: OK
-    - Both children None: True
-  - True
+ - $15 \gt 10$ and $15 \lt +\inf$: OK
+ - Check left: `is_valid_bst(12, 10, 15)`
+ - $12 \gt 10$ and $12 \lt 15$: OK
+ - Both children None: True
+ - Check right: `is_valid_bst(20, 15, +inf)`
+ - $20 \gt 15$ and $20 \lt +\inf$: OK
+ - Both children None: True
+ - True
 - True
 
 **Result: This IS a valid BST.** Every node's value is within the valid range defined by its ancestors. Specifically:

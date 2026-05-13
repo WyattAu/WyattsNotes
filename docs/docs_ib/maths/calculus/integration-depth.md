@@ -10,18 +10,18 @@ title: Calculus
 ## Integration
 
 Integration is the inverse operation of differentiation. Given the derivative of a function,
-integration recovers the original function (up to an additive constant). It is a central operation
-in calculus with wide-ranging applications in geometry, physics, and probability.
+Integration recovers the original function (up to an additive constant). It is a central operation
+In calculus with wide-ranging applications in geometry, physics, and probability.
 
 Two principal forms exist:
 
 - **Indefinite integration** (antidifferentiation): finds the general antiderivative of a function,
-  producing a family of functions differing by a constant.
+ producing a family of functions differing by a constant.
 - **Definite integration**: computes a numerical value representing the signed area under a curve
-  between two limits.
+ between two limits.
 
 These are linked by the Fundamental Theorem of Calculus, which unifies differentiation and
-integration into a single coherent framework.
+Integration into a single coherent framework.
 
 ### Notation
 
@@ -29,7 +29,7 @@ $$
 \int f(x)\,dx = F(x) + C
 $$
 
-where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ is an elongated $S$
+Where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ is an elongated $S$
 (for "sum"), $f(x)$ is the integrand, and $dx$ indicates the variable of integration.
 
 ---
@@ -39,7 +39,7 @@ where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ i
 ### Definition
 
 A function $F$ is an antiderivative of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x \in I$.
-If $F$ is an antiderivative of $f$, then so is $F + C$ for any constant $C \in \mathbb{'\{'}R{'\}'}$.
+If $F$ is an antiderivative of $f$Then so is $F + C$ for any constant $C \in \mathbb{'\{'}R{'\}'}$.
 
 ### Basic Rules
 
@@ -73,29 +73,29 @@ $$
 
 ### Common Antiderivatives
 
-| $f(x)$                     | $\int f(x)\,dx$                              |
+| $f(x)$ | $\int f(x)\,dx$ |
 | -------------------------- | -------------------------------------------- | ------ | ---- |
-| $k$                        | $kx + C$                                     | | |
-| $x^n$                      | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ | | |
-| $\dfrac{1}{x}$             | $\ln                                         | x      | + C$ |
-| $e^x$                      | $e^x + C$                                    | | |
-| $a^x$                      | $\dfrac{a^x}{\ln a} + C$                     | | |
-| $\sin x$                   | $-\cos x + C$                                | | |
-| $\cos x$                   | $\sin x + C$                                 | | |
-| $\sec^2 x$                 | $\tan x + C$                                 | | |
-| $\csc^2 x$                 | $-\cot x + C$                                | | |
-| $\sec x \tan x$            | $\sec x + C$                                 | | |
-| $\csc x \cot x$            | $-\csc x + C$                                | | |
-| $\tan x$                   | $\ln                                         | \sec x | + C$ |
-| $\cot x$                   | $\ln                                         | \sin x | + C$ |
-| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$                              | | |
-| $\frac{1}{1 + x^2}$        | $\arctan x + C$                              | | |
+| $k$ | $kx + C$ | | |
+| $x^n$ | $\dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ | | |
+| $\dfrac{1}{x}$ | $\ln                                         | x      | + C$ |
+| $e^x$ | $e^x + C$ | | |
+| $a^x$ | $\dfrac{a^x}{\ln a} + C$ | | |
+| $\sin x$ | $-\cos x + C$ | | |
+| $\cos x$ | $\sin x + C$ | | |
+| $\sec^2 x$ | $\tan x + C$ | | |
+| $\csc^2 x$ | $-\cot x + C$ | | |
+| $\sec x \tan x$ | $\sec x + C$ | | |
+| $\csc x \cot x$ | $-\csc x + C$ | | |
+| $\tan x$ | $\ln                                         | \sec x | + C$ |
+| $\cot x$ | $\ln                                         | \sin x | + C$ |
+| $\frac{1}{\sqrt{1 - x^2}}$ | $\arcsin x + C$ | | |
+| $\frac{1}{1 + x^2}$ | $\arctan x + C$ | | |
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find $\int (3x^4 - 5x^2 + 7)\,dx$**
+ <summary>Expand</summary>
+ **Find $\int (3x^4 - 5x^2 + 7)\,dx$**
 
 $$
 \begin`\{aligned}`
@@ -121,13 +121,13 @@ $$
 
 ### Definite Integral as a Limit of a Riemann Sum
 
-For a function $f$ continuous on $[a, b]$, the definite integral is defined as:
+For a function $f$ continuous on $[a, b]$The definite integral is defined as:
 
 $$
 \int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x
 $$
 
-where $\Delta x = \dfrac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$-th subinterval.
+Where $\Delta x = \dfrac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$-th subinterval.
 
 ### Fundamental Theorem of Calculus -- Part 1
 
@@ -137,7 +137,7 @@ $$
 F(x) = \int_a^x f(t)\,dt
 $$
 
-then $F$ is differentiable on $(a, b)$ and:
+Then $F$ is differentiable on $(a, b)$ and:
 
 $$
 F'(x) = f(x)
@@ -147,13 +147,13 @@ This establishes that differentiation and integration are inverse operations.
 
 ### Fundamental Theorem of Calculus -- Part 2 (Evaluation Theorem)
 
-If $f$ is continuous on $[a, b]$ and $F$ is any antiderivative of $f$, then:
+If $f$ is continuous on $[a, b]$ and $F$ is any antiderivative of $f$Then:
 
 $$
 \int_a^b f(x)\,dx = F(b) - F(a)
 $$
 
-This is typically written using bracket notation:
+This is written using bracket notation:
 
 $$
 \int_a^b f(x)\,dx = \Big[F(x)\Big]_a^b = F(b) - F(a)
@@ -161,11 +161,11 @@ $$
 
 ### Area Under a Curve
 
-If $f(x) \geq 0$ on $[a, b]$, then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$,
-the $x$-axis, and the vertical lines $x = a$ and $x = b$.
+If $f(x) \geq 0$ on $[a, b]$Then $\int_a^b f(x)\,dx$ gives the area between the curve $y = f(x)$
+The $x$-axis, and the vertical lines $x = a$ and $x = b$.
 
-If $f(x)$ changes sign on $[a, b]$, the integral gives the **net** (signed) area. The total area is
-computed by splitting at the zeros of $f$ and taking absolute values:
+If $f(x)$ changes sign on $[a, b]$The integral gives the **net** (signed) area. The total area is
+Computed by splitting at the zeros of $f$ and taking absolute values:
 
 $$
 \mathrm{Total area} = \int_a^b |f(x)|\,dx
@@ -174,13 +174,13 @@ $$
 <DesmosGraph title="Integration as Area Under a Curve" expressions={["\int_{a}^{b} f(x) \, dx"]} width={800} height={500} />
 
 Adjust the sliders to change the function and limits, and observe how the shaded area approximates
-the definite integral.
+The definite integral.
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Evaluate $\int_1^3 (x^2 + 1)\,dx$**
+ <summary>Expand</summary>
+ **Evaluate $\int_1^3 (x^2 + 1)\,dx$**
 
 $$
 \begin`\{aligned}`
@@ -212,8 +212,8 @@ $$
 ### 3.1 Substitution ($u$-Substitution)
 
 Substitution is the reverse of the chain rule. Given an integral containing a composite function,
-choose a substitution $u = g(x)$ such that $du = g'(x)\,dx$ transforms the integral into a simpler
-form.
+Choose a substitution $u = g(x)$ such that $du = g'(x)\,dx$ transforms the integral into a simpler
+Form.
 
 **General procedure:**
 
@@ -232,10 +232,10 @@ $$
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find $\int 2x\sqrt{x^2 + 1}\,dx$**
+ <summary>Expand</summary>
+ **Find $\int 2x\sqrt{x^2 + 1}\,dx$**
 
-Let $u = x^2 + 1$, then $du = 2x\,dx$.
+Let $u = x^2 + 1$Then $du = 2x\,dx$.
 
 $$
 \int 2x\sqrt{x^2 + 1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2 + 1)^{3/2} + C
@@ -243,7 +243,7 @@ $$
 
 **Evaluate $\int_0^2 \frac{x}{x^2 + 1}\,dx$**
 
-Let $u = x^2 + 1$, $du = 2x\,dx$. When $x = 0$, $u = 1$; when $x = 2$, $u = 5$.
+Let $u = x^2 + 1$$du = 2x\,dx$. When $x = 0$$u = 1$; when $x = 2$$u = 5$.
 
 $$
 \int_0^2 \frac{x}{x^2 + 1}\,dx = \frac{1}{2}\int_1^5 \frac{1}{u}\,du = \frac{1}{2}\Big[\ln|u|\Big]_1^5 = \frac{1}{2}\ln 5
@@ -264,20 +264,20 @@ $$
 Algebraic, Trigonometric, Exponential) to select $u$ as the function that appears first in the list.
 
 Integration by parts may need to be applied repeatedly. For integrals of the form
-$\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$, apply integration by parts twice and solve
-the resulting equation algebraically.
+$\int e^{ax}\sin(bx)\,dx$ or $\int e^{ax}\cos(bx)\,dx$Apply integration by parts twice and solve
+The resulting equation algebraically.
 
 **Tabular (DI) method:** For integrals of the form $\int f(x) g(x)\,dx$ where one factor
-differentiates to zero after finitely many steps, the tabular method provides an efficient
-alternative to repeated application of the formula.
+Differentiates to zero after finitely many steps, the tabular method provides an efficient
+Alternative to repeated application of the formula.
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find $\int x e^x\,dx$**
+ <summary>Expand</summary>
+ **Find $\int x e^x\,dx$**
 
-Let $u = x$, $dv = e^x\,dx$. Then $du = dx$ and $v = e^x$.
+Let $u = x$$dv = e^x\,dx$. Then $du = dx$ and $v = e^x$.
 
 $$
 \int x e^x\,dx = xe^x - \int e^x\,dx = xe^x - e^x + C = (x - 1)e^x + C
@@ -287,13 +287,13 @@ $$
 
 Apply integration by parts twice.
 
-First: $u = x^2$, $dv = \sin x\,dx$, so $du = 2x\,dx$, $v = -\cos x$.
+First: $u = x^2$$dv = \sin x\,dx$So $du = 2x\,dx$$v = -\cos x$.
 
 $$
 \int x^2 \sin x\,dx = -x^2 \cos x + 2\int x \cos x\,dx
 $$
 
-Second: $u = x$, $dv = \cos x\,dx$, so $du = dx$, $v = \sin x$.
+Second: $u = x$$dv = \cos x\,dx$So $du = dx$$v = \sin x$.
 
 $$
 \begin`\{aligned}`
@@ -308,22 +308,22 @@ $$
 ### 3.3 Partial Fractions
 
 When the integrand is a rational function $\dfrac{P(x)}{Q(x)}$ where $\deg P < \deg Q$ and $Q$
-factors into linear or irreducible quadratic factors, partial fraction decomposition converts the
-integrand into a sum of simpler fractions.
+Factors into linear or irreducible quadratic factors, partial fraction decomposition converts the
+Integrand into a sum of simpler fractions.
 
 **Decomposition rules:**
 
-| Factor in $Q(x)$              | Term in decomposition                                                          |
+| Factor in $Q(x)$ | Term in decomposition |
 | ----------------------------- | ------------------------------------------------------------------------------ |
-| $(ax + b)$                    | $\dfrac{A}{ax + b}$                                                            |
-| $(ax + b)^k$                  | $\dfrac{A_1}{ax + b} + \dfrac{A_2}{(ax+b)^2} + \cdots + \dfrac{A_k}{(ax+b)^k}$ |
-| $ax^2 + bx + c$ (irreducible) | $\dfrac{Ax + B}{ax^2 + bx + c}$                                                |
+| $(ax + b)$ | $\dfrac{A}{ax + b}$ |
+| $(ax + b)^k$ | $\dfrac{A_1}{ax + b} + \dfrac{A_2}{(ax+b)^2} + \cdots + \dfrac{A_k}{(ax+b)^k}$ |
+| $ax^2 + bx + c$ (irreducible) | $\dfrac{Ax + B}{ax^2 + bx + c}$ |
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find $\int \frac{5x + 1}{(x+1)(x-2)}\,dx$**
+ <summary>Expand</summary>
+ **Find $\int \frac{5x + 1}{(x+1)(x-2)}\,dx$**
 
 Decompose: $\dfrac{5x + 1}{(x+1)(x-2)} = \dfrac{A}{x+1} + \dfrac{B}{x-2}$
 
@@ -369,8 +369,8 @@ $$
 $$
 
 **Using substitution with trigonometric derivatives:** Recall that $\dfrac{d}{dx}(\sin x) = \cos x$
-and $\dfrac{d}{dx}(\cos x) = -\sin x$. Many trigonometric integrals yield to $u$-substitution when
-the derivative of one trigonometric factor is present.
+And $\dfrac{d}{dx}(\cos x) = -\sin x$. Many trigonometric integrals yield to $u$-substitution when
+The derivative of one trigonometric factor is present.
 
 **Integrals of the form $\int \tan^n x\,dx$:** Rewrite in terms of $\sec^2 x$ and use
 $\dfrac{d}{dx}(\tan x) = \sec^2 x$.
@@ -378,8 +378,8 @@ $\dfrac{d}{dx}(\tan x) = \sec^2 x$.
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find $\int \sin^2 x\,dx$**
+ <summary>Expand</summary>
+ **Find $\int \sin^2 x\,dx$**
 
 $$
 \int \sin^2 x\,dx = \int \frac{1 - \cos 2x}{2}\,dx = \frac{x}{2} - \frac{\sin 2x}{4} + C
@@ -395,7 +395,7 @@ $$
 \end`\{aligned}`
 $$
 
-(using $u = \cos x$, $du = -\sin x\,dx$ for the second integral)
+(using $u = \cos x$$du = -\sin x\,dx$ for the second integral)
 
 </details>
 :::
@@ -406,31 +406,31 @@ $$
 
 ### 4.1 Area Between Two Curves
 
-Given two continuous functions $f$ and $g$ with $f(x) \geq g(x)$ on $[a, b]$, the area between the
-curves is:
+Given two continuous functions $f$ and $g$ with $f(x) \geq g(x)$ on $[a, b]$The area between the
+Curves is:
 
 $$
 A = \int_a^b [f(x) - g(x)]\,dx
 $$
 
 If the curves intersect, find the points of intersection and split the integral accordingly so that
-the integrand $|f(x) - g(x)|$ is always non-negative.
+The integrand $|f(x) - g(x)|$ is always non-negative.
 
-**Horizontal strips:** When integrating with respect to $y$, the formula becomes:
+**Horizontal strips:** When integrating with respect to $y$The formula becomes:
 
 $$
 A = \int_c^d [f(y) - g(y)]\,dy
 $$
 
-where the curves are expressed as $x = f(y)$ and $x = g(y)$.
+Where the curves are expressed as $x = f(y)$ and $x = g(y)$.
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find the area between $y = x^2$ and $y = 2x$.**
+ <summary>Expand</summary>
+ **Find the area between $y = x^2$ and $y = 2x$.**
 
-Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$, $2x \geq x^2$.
+Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$$2x \geq x^2$.
 
 $$
 A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
@@ -441,8 +441,8 @@ $$
 
 ### 4.2 Volumes of Revolution
 
-When a region bounded by $y = f(x)$, the $x$-axis, and the lines $x = a$, $x = b$ is revolved about
-the $x$-axis, the volume of the solid of revolution is:
+When a region bounded by $y = f(x)$The $x$-axis, and the lines $x = a$$x = b$ is revolved about
+The $x$-axis, the volume of the solid of revolution is:
 
 $$
 V = \pi \int_a^b [f(x)]^2\,dx
@@ -454,7 +454,7 @@ $$
 V = \pi \int_c^d [g(y)]^2\,dy
 $$
 
-where $x = g(y)$.
+Where $x = g(y)$.
 
 **Revolution about a horizontal line $y = k$:**
 
@@ -468,13 +468,13 @@ $$
 V = \pi \int_a^b \left([f(x)]^2 - [g(x)]^2\right)\,dx
 $$
 
-where $f(x) \geq g(x) \geq 0$ on $[a, b]$.
+Where $f(x) \geq g(x) \geq 0$ on $[a, b]$.
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Find the volume generated by revolving $y = \sqrt{x}$ about the $x$-axis from $x = 0$ to
+ <summary>Expand</summary>
+ **Find the volume generated by revolving $y = \sqrt{x}$ about the $x$-axis from $x = 0$ to
 $x = 4$.**
 
 $$
@@ -492,20 +492,20 @@ $$
 Integration connects the kinematic quantities:
 
 $$
-v(t) = \int a(t)\,dt + v_0
+V(t) = \int a(t)\,dt + v_0
 $$
 
 $$
-s(t) = \int v(t)\,dt + s_0
+S(t) = \int v(t)\,dt + s_0
 $$
 
-where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$, $s_0$ are
-initial conditions.
+Where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$$s_0$ are
+Initial conditions.
 
 **Key relationships:**
 
 - The **displacement** over a time interval $[t_1, t_2]$ is
-  $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
+ $\displaystyle\int_{t_1}^{t_2} v(t)\,dt$.
 - The **total distance travelled** is $\displaystyle\int_{t_1}^{t_2} |v(t)|\,dt$.
 - The velocity is the derivative of displacement: $v = \dfrac{ds}{dt}$.
 - The acceleration is the derivative of velocity: $a = \dfrac{dv}{dt}$.
@@ -513,9 +513,9 @@ initial conditions.
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **A particle moves with velocity $v(t) = 6t^2 - 4t$ m/s for $t \geq 0$. Find the displacement and
-total distance in the first 3 seconds.**
+ <summary>Expand</summary>
+ **A particle moves with velocity $v(t) = 6t^2 - 4t$ m/s for $t \geq 0$. Find the displacement and
+Total distance in the first 3 seconds.**
 
 Displacement:
 
@@ -542,7 +542,7 @@ $$
 ## 5. Properties of Definite Integrals
 
 These properties follow from the definition of the definite integral and are essential for
-simplifying computations.
+Simplifying computations.
 
 ### Linearity
 
@@ -550,7 +550,7 @@ $$
 \int_a^b [k f(x) + l g(x)]\,dx = k\int_a^b f(x)\,dx + l\int_a^b g(x)\,dx
 $$
 
-for constants $k, l \in \mathbb{'\{'}R{'\}'}$.
+For constants $k, l \in \mathbb{'\{'}R{'\}'}$.
 
 ### Reversal of Limits
 
@@ -570,28 +570,28 @@ $$
 \int_a^b f(x)\,dx = \int_a^c f(x)\,dx + \int_c^b f(x)\,dx
 $$
 
-for any $c \in [a, b]$.
+For any $c \in [a, b]$.
 
 ### Comparison Properties
 
-If $f(x) \geq 0$ for all $x \in [a, b]$, then $\displaystyle\int_a^b f(x)\,dx \geq 0$.
+If $f(x) \geq 0$ for all $x \in [a, b]$Then $\displaystyle\int_a^b f(x)\,dx \geq 0$.
 
-If $f(x) \geq g(x)$ for all $x \in [a, b]$, then
+If $f(x) \geq g(x)$ for all $x \in [a, b]$Then
 $\displaystyle\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$.
 
 ### Bounds on the Integral
 
-If $m \leq f(x) \leq M$ for all $x \in [a, b]$, then:
+If $m \leq f(x) \leq M$ for all $x \in [a, b]$Then:
 
 $$
-m(b - a) \leq \int_a^b f(x)\,dx \leq M(b - a)
+M(b - a) \leq \int_a^b f(x)\,dx \leq M(b - a)
 $$
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Given $\int_1^3 f(x)\,dx = 5$ and $\int_1^3 g(x)\,dx = -2$, find $\int_3^1 [3f(x) - 2g(x)]\,dx$.**
+ <summary>Expand</summary>
+ **Given $\int_1^3 f(x)\,dx = 5$ and $\int_1^3 g(x)\,dx = -2$Find $\int_3^1 [3f(x) - 2g(x)]\,dx$.**
 
 $$
 \begin`\{aligned}`
@@ -608,8 +608,8 @@ $$
 ## 6. Improper Integrals (HL)
 
 Improper integrals extend the concept of definite integration to cases where the interval of
-integration is unbounded or the integrand has a vertical asymptote within (or at an endpoint of) the
-interval of integration.
+Integration is unbounded or the integrand has a vertical asymptote within (or at an endpoint of) the
+Interval of integration.
 
 ### Type 1: Infinite Limits of Integration
 
@@ -650,10 +650,10 @@ $$
 ### Convergence and Divergence
 
 An improper integral **converges** if the corresponding limit exists and is finite. It **diverges**
-otherwise.
+Otherwise.
 
 **$p$-test for convergence:** The integral $\displaystyle\int_1^{\infty} \frac{1}{x^p}\,dx$
-converges if and only if $p > 1$, in which case:
+Converges if and only if $p > 1$In which case:
 
 $$
 \int_1^{\infty} \frac{1}{x^p}\,dx = \frac{1}{p - 1}
@@ -661,15 +661,15 @@ $$
 
 Similarly, $\displaystyle\int_0^1 \frac{1}{x^p}\,dx$ converges if and only if $p < 1$.
 
-**Comparison test:** If $0 \leq f(x) \leq g(x)$ for all $x \geq a$, and $\int_a^{\infty} g(x)\,dx$
-converges, then $\int_a^{\infty} f(x)\,dx$ also converges. Conversely, if $\int_a^{\infty} f(x)\,dx$
-diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
+**Comparison test:** If $0 \leq f(x) \leq g(x)$ for all $x \geq a$And $\int_a^{\infty} g(x)\,dx$
+Converges, then $\int_a^{\infty} f(x)\,dx$ also converges. Conversely, if $\int_a^{\infty} f(x)\,dx$
+Diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
 
 :::info[Examples]
 
 <details>
-    <summary>Expand</summary>
-    **Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.**
+ <summary>Expand</summary>
+ **Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.**
 
 $$
 \begin`\{aligned}`
@@ -701,8 +701,8 @@ The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} <
 :::info[Problem 1]
 
 <details>
-    <summary>Find $\int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx$</summary>
-    Let $u = x^2 + 1$, $du = 2x\,dx$. Note that
+ <summary>Find $\int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx$</summary>
+ Let $u = x^2 + 1$$du = 2x\,dx$. Note that
 $x^3 + 2x = x(x^2 + 1) + x = xu + \frac{u - 1}{2} + \frac{1}{2}$.
 
 Alternatively, split:
@@ -725,8 +725,8 @@ $$
 :::info[Problem 2]
 
 <details>
-    <summary>Evaluate $\int_0^{\pi/2} x\sin x\,dx$</summary>
-    Integration by parts: $u = x$, $dv = \sin x\,dx$, so $du = dx$, $v = -\cos x$.
+ <summary>Evaluate $\int_0^{\pi/2} x\sin x\,dx$</summary>
+ Integration by parts: $u = x$$dv = \sin x\,dx$So $du = dx$$v = -\cos x$.
 
 $$
 \begin`\{aligned}`
@@ -741,8 +741,8 @@ $$
 :::info[Problem 3]
 
 <details>
-    <summary>Find the area enclosed by $y = x^3$ and $y = x$.</summary>
-    Intersection points: $x^3 = x \implies x(x^2 - 1) = 0 \implies x = -1, 0, 1$.
+ <summary>Find the area enclosed by $y = x^3$ and $y = x$.</summary>
+ Intersection points: $x^3 = x \implies x(x^2 - 1) = 0 \implies x = -1, 0, 1$.
 
 On $[-1, 0]$: $x^3 \geq x$. On $[0, 1]$: $x \geq x^3$.
 
@@ -760,8 +760,8 @@ $$
 :::info[Problem 4]
 
 <details>
-    <summary>Find the volume of revolution when the region bounded by $y = \ln x$, $x = e$, and the $x$-axis is rotated about the $x$-axis.</summary>
-    The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
+ <summary>Find the volume of revolution when the region bounded by $y = \ln x$$x = e$And the $x$-axis is rotated about the $x$-axis.</summary>
+ The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
 
 $$
 \begin`\{aligned}`
@@ -769,7 +769,7 @@ V &= \pi \int_1^e (\ln x)^2\,dx
 \end`\{aligned}`
 $$
 
-Integration by parts with $u = (\ln x)^2$, $dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$, $v = x$.
+Integration by parts with $u = (\ln x)^2$$dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$$v = x$.
 
 $$
 \begin`\{aligned}`
@@ -777,7 +777,7 @@ $$
 \end`\{aligned}`
 $$
 
-Apply parts again for $\int \ln x\,dx$: $u = \ln x$, $dv = dx$, so $\int \ln x\,dx = x\ln x - x$.
+Apply parts again for $\int \ln x\,dx$: $u = \ln x$$dv = dx$So $\int \ln x\,dx = x\ln x - x$.
 
 $$
 \begin`\{aligned}`
@@ -804,7 +804,7 @@ $$
 :::info[Problem 5 (HL)]
 
 <details>
-    <summary>Use partial fractions to find $\int \frac{3x + 7}{(x + 2)(x - 1)}\,dx$.</summary>
+ <summary>Use partial fractions to find $\int \frac{3x + 7}{(x + 2)(x - 1)}\,dx$.</summary>
     $$
 \frac{3x + 7}{(x+2)(x-1)} = \frac{A}{x+2} + \frac{B}{x-1}
 $$
@@ -827,19 +827,19 @@ $$
 :::info[Problem 6]
 
 <details>
-    <summary>A particle moves with acceleration $a(t) = 6t - 2$ m/s$^2$. Initially, $v(0) = 4$ m/s and $s(0) = 0$ m. Find $s(t)$ and the displacement after 3 seconds.</summary>
+ <summary>A particle moves with acceleration $a(t) = 6t - 2$ m/s$^2$. Initially, $v(0) = 4$ m/s and $s(0) = 0$ m. Find $s(t)$ and the displacement after 3 seconds.</summary>
     $$
-v(t) = \int (6t - 2)\,dt + 4 = 3t^2 - 2t + 4
+V(t) = \int (6t - 2)\,dt + 4 = 3t^2 - 2t + 4
 $$
 
 $$
-s(t) = \int (3t^2 - 2t + 4)\,dt + 0 = t^3 - t^2 + 4t
+S(t) = \int (3t^2 - 2t + 4)\,dt + 0 = t^3 - t^2 + 4t
 $$
 
 Displacement at $t = 3$:
 
 $$
-s(3) = 27 - 9 + 12 = 30 \mathrm{ m}
+S(3) = 27 - 9 + 12 = 30 \mathrm{ m}
 $$
 
 </details>
@@ -848,8 +848,8 @@ $$
 :::info[Problem 7 (HL)]
 
 <details>
-    <summary>Determine whether $\displaystyle\int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx$ converges, and evaluate if it does.</summary>
-    Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$. When $x = 2$, $u = \ln 2$; when $x \to \infty$,
+ <summary>Determine whether $\displaystyle\int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx$ converges, and evaluate if it does.</summary>
+ Let $u = \ln x$$du = \dfrac{1}{x}\,dx$. When $x = 2$$u = \ln 2$; when $x \to \infty$
 $u \to \infty$.
 
 $$
@@ -867,8 +867,8 @@ The integral converges to $\dfrac{1}{\ln 2}$.
 :::info[Problem 8 (HL)]
 
 <details>
-    <summary>Evaluate $\int \frac{x^2}{x^2 - 1}\,dx$ using polynomial long division and partial fractions.</summary>
-    Since $\deg(\mathrm{numerator}) = \deg(\mathrm{denominator})$, perform long division first:
+ <summary>Evaluate $\int \frac{x^2}{x^2 - 1}\,dx$ using polynomial long division and partial fractions.</summary>
+ Since $\deg(\mathrm{numerator}) = \deg(\mathrm{denominator})$Perform long division first:
 
 $$
 \frac{x^2}{x^2 - 1} = 1 + \frac{1}{x^2 - 1} = 1 + \frac{1}{(x-1)(x+1)}
@@ -878,7 +878,7 @@ Partial fractions: $\dfrac{1}{(x-1)(x+1)} = \dfrac{A}{x-1} + \dfrac{B}{x+1}$
 
 $1 = A(x+1) + B(x-1)$
 
-$x = 1$: $A = \dfrac{1}{2}$, $x = -1$: $B = -\dfrac{1}{2}$
+$x = 1$: $A = \dfrac{1}{2}$$x = -1$: $B = -\dfrac{1}{2}$
 
 $$
 \begin`\{aligned}`
@@ -893,8 +893,8 @@ $$
 :::info[Problem 9]
 
 <details>
-    <summary>Evaluate $\int_0^1 \frac{e^x}{1 + e^x}\,dx$.</summary>
-    Let $u = 1 + e^x$, $du = e^x\,dx$. When $x = 0$, $u = 2$; when $x = 1$, $u = 1 + e$.
+ <summary>Evaluate $\int_0^1 \frac{e^x}{1 + e^x}\,dx$.</summary>
+ Let $u = 1 + e^x$$du = e^x\,dx$. When $x = 0$$u = 2$; when $x = 1$$u = 1 + e$.
 
 $$
 \int_0^1 \frac{e^x}{1 + e^x}\,dx = \int_2^{1+e} \frac{1}{u}\,du = \Big[\ln u\Big]_2^{1+e} = \ln(1 + e) - \ln 2
@@ -906,16 +906,16 @@ $$
 :::info[Problem 10 (HL)]
 
 <details>
-    <summary>Find $\int e^x \cos x\,dx$ using integration by parts twice.</summary>
-    Let $I = \displaystyle\int e^x \cos x\,dx$.
+ <summary>Find $\int e^x \cos x\,dx$ using integration by parts twice.</summary>
+ Let $I = \displaystyle\int e^x \cos x\,dx$.
 
-First application: $u = e^x$, $dv = \cos x\,dx$, so $du = e^x\,dx$, $v = \sin x$.
+First application: $u = e^x$$dv = \cos x\,dx$So $du = e^x\,dx$$v = \sin x$.
 
 $$
 I = e^x \sin x - \int e^x \sin x\,dx
 $$
 
-Second application on $\int e^x \sin x\,dx$: $u = e^x$, $dv = \sin x\,dx$, so $du = e^x\,dx$,
+Second application on $\int e^x \sin x\,dx$: $u = e^x$$dv = \sin x\,dx$So $du = e^x\,dx$
 $v = -\cos x$.
 
 $$
@@ -940,12 +940,24 @@ $$
 ## Cross-References
 
 - **Differentiation** -- Integration is the inverse operation of differentiation. See the
-  [Number and Algebra](../Number-and-algebra/number-algebra) notes for function fundamentals
-  including derivative rules that motivate integration techniques.
+ [Number and Algebra](../Number-and-algebra/number-algebra) notes for function fundamentals
+ including derivative rules that motivate integration techniques.
 - **Functions** -- Domain and range considerations determine when antiderivatives are valid. See
-  [Number and Algebra](../Number-and-algebra/number-algebra) for function fundamentals.
+ [Number and Algebra](../Number-and-algebra/number-algebra) for function fundamentals.
 - **Complex Numbers** -- The exponential form $e^{i\theta} = \cos\theta + i\sin\theta$ provides an
-  elegant derivation of trigonometric integral results. See
-  [Complex Numbers](../Number-and-algebra/complex-numbers).
+ elegant derivation of trigonometric integral results. See
+ [Complex Numbers](../Number-and-algebra/complex-numbers).
 - **Logic** -- Proof techniques (direct proof, contradiction) are used to justify properties of
-  integrals. See [Logic](../Discrete-maths/logic).
+ integrals. See [Logic](../Discrete-maths/logic).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

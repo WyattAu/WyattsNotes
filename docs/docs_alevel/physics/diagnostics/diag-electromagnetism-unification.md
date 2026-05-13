@@ -48,7 +48,7 @@ The key distinction: Faraday's law determines **how much** EMF is induced; Lenz'
 
 **Question:**
 
-An electromagnetic wave in vacuum has an electric field given by $E = E_0\sin(kx - \omega t)\,\hat{j}$, where $E_0 = 30\,\text{V}\,\text{m}^{-1}$, $k = 125.7\,\text{rad}\,\text{m}^{-1}$, and $\omega = 3.77 \times 10^{10}\,\text{rad}\,\text{s}^{-1}$.
+An electromagnetic wave in vacuum has an electric field given by $E = E_0\sin(kx - \omega t)\,\hat{j}$Where $E_0 = 30\,\text{V}\,\text{m}^{-1}$$k = 125.7\,\text{rad}\,\text{m}^{-1}$And $\omega = 3.77 \times 10^{10}\,\text{rad}\,\text{s}^{-1}$.
 
 (a) Calculate the wavelength, frequency, and speed of the wave. Verify that the speed equals $c$.
 
@@ -56,7 +56,7 @@ An electromagnetic wave in vacuum has an electric field given by $E = E_0\sin(kx
 
 (c) Calculate the time-averaged intensity of the wave.
 
-Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$, $\mu_0 = 4\pi \times 10^{-7}\,\text{H}\,\text{m}^{-1}$.
+Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$$\mu_0 = 4\pi \times 10^{-7}\,\text{H}\,\text{m}^{-1}$.
 
 **Solution:**
 
@@ -68,7 +68,7 @@ Speed: $v = \omega/k = 3.77 \times 10^{10}/125.7 = 3.00 \times 10^8\,\text{m}\,\
 
 Verified. This wave is in the microwave region.
 
-(b) The magnetic field is perpendicular to both $E$ and the direction of propagation ($+x$). Since $E$ is in the $\hat{j}$ direction and the wave propagates in $+x$, $B$ is in the $\hat{k}$ direction.
+(b) The magnetic field is perpendicular to both $E$ and the direction of propagation ($+x$). Since $E$ is in the $\hat{j}$ direction and the wave propagates in $+x$$B$ is in the $\hat{k}$ direction.
 
 $B_0 = E_0/c = 30/(3.00 \times 10^8) = 1.00 \times 10^{-7}\,\text{T}$
 
@@ -137,7 +137,7 @@ This is in the VHF radio band.
 
 $$U_E = \frac{1}{2}\varepsilon_0 E_0^2 \times \text{volume}$$
 
-We need the plate separation: $C = \varepsilon_0 A/d$, so $d = \varepsilon_0 A/C = 8.85 \times 10^{-12} \times 0.01/(1.0 \times 10^{-12}) = 0.0885\,\text{m}$
+We need the plate separation: $C = \varepsilon_0 A/d$So $d = \varepsilon_0 A/C = 8.85 \times 10^{-12} \times 0.01/(1.0 \times 10^{-12}) = 0.0885\,\text{m}$
 
 $$U_E = \frac{1}{2}\varepsilon_0 E_0^2 Ad = \frac{1}{2}CV^2$$
 
@@ -166,7 +166,7 @@ A laser produces a beam of wavelength $532\,\text{nm}$ (green) with power $5.0\,
 
 (c) Calculate the number of photons per second striking the mirror and the momentum transferred per second.
 
-Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{J}\,\text{s}$.
+Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$h = 6.63 \times 10^{-34}\,\text{J}\,\text{s}$.
 
 **Solution:**
 
@@ -203,7 +203,7 @@ An EM wave of frequency $5.0 \times 10^{14}\,\text{Hz}$ travels from air into gl
 
 (c) Calculate the depth of penetration at which the intensity drops to $1/e$ of its value at the surface, assuming the glass has an absorption coefficient $\alpha = 0.50\,\text{m}^{-1}$.
 
-Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $Z_0 = 377\,\Omega$ (impedance of free space).
+Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$Z_0 = 377\,\Omega$ (impedance of free space).
 
 **Solution:**
 

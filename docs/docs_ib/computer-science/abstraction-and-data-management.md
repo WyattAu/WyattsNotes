@@ -11,40 +11,40 @@ description: "Rigorous IB computer science notes covering Abstraction and Data M
 ## Conceptual Models vs Physical Models
 
 A **conceptual model** describes what a system does, what data it manages, and what relationships
-exist, without specifying how these are implemented. It focuses on the problem domain and the user's
-perspective. Conceptual models are independent of any particular technology, programming language,
-or database system.
+Exist, without specifying how these are implemented. It focuses on the problem domain and the user's
+Perspective. Conceptual models are independent of any particular technology, programming language,
+Or database system.
 
 A **physical model** describes how a system is actually implemented: the specific data structures,
-algorithms, storage mechanisms, and hardware configurations used. It focuses on the solution domain
-and the developer's perspective.
+Algorithms, storage mechanisms, and hardware configurations used. It focuses on the solution domain
+And the developer's perspective.
 
 ### Comparison
 
-| Aspect            | Conceptual Model                            | Physical Model                               |
+| Aspect | Conceptual Model | Physical Model |
 | ----------------- | ------------------------------------------- | -------------------------------------------- |
-| Focus             | What the system does                        | How the system is implemented                |
-| Audience          | Stakeholders, analysts, end users           | Developers, database administrators          |
-| Abstraction level | High                                        | Low                                          |
-| Technology        | Technology-independent                      | Technology-specific                          |
-| Examples          | ERDs, use case diagrams, data flow diagrams | Schema definitions, file structures, indexes |
-| Changes           | Stable (reflects the problem)               | Changes with technology or optimization      |
+| Focus | What the system does | How the system is implemented |
+| Audience | Stakeholders, analysts, end users | Developers, database administrators |
+| Abstraction level | High | Low |
+| Technology | Technology-independent | Technology-specific |
+| Examples | ERDs, use case diagrams, data flow diagrams | Schema definitions, file structures, indexes |
+| Changes | Stable (reflects the problem) | Changes with technology or optimization |
 
 ### Worked Example: Library System
 
 **Conceptual model:** The library has Books and Members. A Member can borrow many Books. A Book can
-be borrowed by one Member at a time. A Book has a title, author, ISBN, and availability status. A
+Be borrowed by one Member at a time. A Book has a title, author, ISBN, and availability status. A
 Member has a name, member ID, and a list of current loans.
 
 **Physical model:** The Book entity is stored in a MySQL table with columns
-`book_id INT PRIMARY KEY AUTO_INCREMENT`, `title VARCHAR(200) NOT NULL`,
-`author VARCHAR(100) NOT NULL`, `isbn VARCHAR(13) UNIQUE`, `is_available BOOLEAN DEFAULT TRUE`. The
-Member entity is stored in a MySQL table with columns `member_id INT PRIMARY KEY AUTO_INCREMENT`,
+`book_id INT PRIMARY KEY AUTO_INCREMENT``title VARCHAR(200) NOT NULL`
+`author VARCHAR(100) NOT NULL``isbn VARCHAR(13) UNIQUE``is_available BOOLEAN DEFAULT TRUE`. The
+Member entity is stored in a MySQL table with columns `member_id INT PRIMARY KEY AUTO_INCREMENT`
 `name VARCHAR(100) NOT NULL`. The loan relationship is stored in a junction table `loan` with
-columns `loan_id`, `book_id FOREIGN KEY`, and `member_id FOREIGN KEY`.
+Columns `loan_id``book_id FOREIGN KEY`And `member_id FOREIGN KEY`.
 
 The conceptual model describes the domain. The physical model describes the implementation. A good
-design separates them so that the physical implementation can change (e.g., migrating from MySQL to
+Design separates them so that the physical implementation can change (e.g., migrating from MySQL to
 PostgreSQL) without requiring changes to the conceptual understanding of the system.
 
 ### Worked Example: Converting a Conceptual Model to a Physical Model
@@ -108,53 +108,53 @@ Key decisions:
 ## Data Abstraction
 
 Data abstraction is the principle of separating the specification of what data operations do from
-the implementation of how they do it. The user of an abstract data type knows what operations are
-available and what they do, but does not know (and does not need to know) how the data is stored or
-how the operations are implemented.
+The implementation of how they do it. The user of an abstract data type knows what operations are
+Available and what they do, but does not know (and does not need to know) how the data is stored or
+How the operations are implemented.
 
 ### What vs How
 
 **What (the interface):** A stack supports push, pop, peek, isEmpty, and size operations. Push adds
-an element to the top. Pop removes and returns the top element. Peek returns the top element without
-removing it.
+An element to the top. Pop removes and returns the top element. Peek returns the top element without
+Removing it.
 
 **How (the implementation):** A stack can be implemented using a dynamic array (with an index
-tracking the top position) or a linked list (with a head pointer). The array implementation provides
+Tracking the top position) or a linked list (with a head pointer). The array implementation provides
 $O(1)$ amortized push and $O(1)$ pop but may need resizing. The linked list implementation provides
 $O(1)$ push and $O(1)$ pop with no resizing but has pointer overhead.
 
 The caller of push and pop does not know or care which implementation is used. This is data
-abstraction: the "what" is exposed, the "how" is hidden.
+Abstraction: the "what" is exposed, the "how" is hidden.
 
 ### Benefits of Data Abstraction
 
 **Reduced complexity:** The user only needs to understand the interface, not the implementation. A
-programmer using a stack does not need to understand memory allocation, pointer arithmetic, or array
-resizing.
+Programmer using a stack does not need to understand memory allocation, pointer arithmetic, or array
+Resizing.
 
 **Implementation independence:** The implementation can be changed without affecting any code that
-uses the abstract data type. If a stack is initially implemented with an array and later changed to
-a linked list, no caller code needs to change.
+Uses the abstract data type. If a stack is initially implemented with an array and later changed to
+A linked list, no caller code needs to change.
 
 **Encapsulation of invariants:** The implementation enforces the data structure's invariants. A
-stack implemented as a class with a private array ensures that external code cannot corrupt the
-stack by directly modifying array elements.
+Stack implemented as a class with a private array ensures that external code cannot corrupt the
+Stack by directly modifying array elements.
 
 **Improved testing:** The interface defines a clear contract that can be tested independently of the
-implementation. The same test suite can verify correctness regardless of which implementation is used.
+Implementation. The same test suite can verify correctness regardless of which implementation is used.
 
 ## Procedural Abstraction
 
 Procedural abstraction is the practice of hiding the implementation details of a procedure or
-function behind a well-defined interface. The caller knows the procedure's name, parameters, and
-return type, but not the algorithm it uses.
+Function behind a well-defined interface. The caller knows the procedure's name, parameters, and
+Return type, but not the algorithm it uses.
 
 ### Procedural Decomposition
 
 Procedural decomposition (also called top-down design) is the process of breaking a complex problem
-into a hierarchy of sub-procedures, each of which solves a part of the problem. The main procedure
-delegates work to lower-level procedures, which may themselves delegate to even lower-level
-procedures.
+Into a hierarchy of sub-procedures, each of which solves a part of the problem. The main procedure
+Delegates work to lower-level procedures, which may themselves delegate to even lower-level
+Procedures.
 
 **Worked example:** A program to calculate and display student grades.
 
@@ -168,7 +168,7 @@ END PROCEDURE
 
 The `main` procedure does not contain any of the actual logic. It delegates to three sub-procedures:
 `loadStudentData` handles file I/O, `calculateGrades` handles the computation, and `displayReport`
-handles the output. Each sub-procedure can be developed, tested, and modified independently.
+Handles the output. Each sub-procedure can be developed, tested, and modified independently.
 
 ```python
 FUNCTION calculateGrades(students) RETURNS ARRAY
@@ -195,15 +195,15 @@ END FUNCTION
 ```
 
 The `calculateGrades` function can be further decomposed: the average calculation could be a
-separate function, and the grade assignment could be a separate function. The level of decomposition
-is a judgment call: too little decomposition makes the code monolithic; too much decomposition
-creates trivial functions that add complexity without benefit.
+Separate function, and the grade assignment could be a separate function. The level of decomposition
+Is a judgment call: too little decomposition makes the code monolithic; too much decomposition
+Creates trivial functions that add complexity without benefit.
 
 <details>
 <summary>Worked Example: Decomposing a Task Management System</summary>
 
 A task management system allows users to create tasks, assign priorities, mark tasks as complete, and
-generate a daily summary report. Apply procedural decomposition to design this system.
+Generate a daily summary report. Apply procedural decomposition to design this system.
 
 **Level 1 -- Main procedure:**
 
@@ -249,8 +249,8 @@ END PROCEDURE
 ```
 
 Each level adds more detail while keeping the higher-level structure intact. The `processInput`
-procedure acts as a dispatcher, delegating to specific handlers. This makes it straightforward to add
-new commands (e.g., delete task) by adding a new branch and handler without modifying the main loop.
+Procedure acts as a dispatcher, delegating to specific handlers. This makes it straightforward to add
+New commands (e.g., delete task) by adding a new branch and handler without modifying the main loop.
 
 </details>
 
@@ -261,24 +261,24 @@ new commands (e.g., delete task) by adding a new branch and handler without modi
 An Abstract Data Type is defined by two components:
 
 **Specification:** The public interface -- the set of operations, their names, parameters, return
-types, preconditions, and postconditions. The specification defines the contract between the ADT and
-its users.
+Types, preconditions, and postconditions. The specification defines the contract between the ADT and
+Its users.
 
 **Implementation:** The internal representation of the data and the algorithms that implement the
-operations. The implementation is hidden from users and can be changed without affecting the
-specification.
+Operations. The implementation is hidden from users and can be changed without affecting the
+Specification.
 
 ### ADT Example: Stack
 
 **Specification:**
 
-| Operation    | Precondition       | Postcondition                                            |
+| Operation | Precondition | Postcondition |
 | ------------ | ------------------ | -------------------------------------------------------- |
-| `push(item)` | Stack is not full  | `item` is on top; size increases by 1                    |
-| `pop()`      | Stack is not empty | Top element is removed and returned; size decreases by 1 |
-| `peek()`     | Stack is not empty | Returns top element; stack is unchanged                  |
-| `isEmpty()`  | None               | Returns TRUE if size is 0, FALSE otherwise               |
-| `size()`     | None               | Returns the number of elements in the stack              |
+| `push(item)` | Stack is not full | `item` is on top; size increases by 1 |
+| `pop()` | Stack is not empty | Top element is removed and returned; size decreases by 1 |
+| `peek()` | Stack is not empty | Returns top element; stack is unchanged |
+| `isEmpty()` | None | Returns TRUE if size is 0, FALSE otherwise |
+| `size()` | None | Returns the number of elements in the stack |
 
 **Implementation (array-based):**
 
@@ -382,40 +382,40 @@ END CLASS
 
 Both implementations satisfy the same specification. Code that uses `Stack` via its public interface
 (push, pop, peek, isEmpty, size) works identically with either implementation. The choice of
-implementation affects performance characteristics (array-based has better cache locality;
-linked-list-based has no size limit) but not correctness.
+Implementation affects performance characteristics (array-based has better cache locality;
+Linked-list-based has no size limit) but not correctness.
 
 ### Worked Example: Comparing Stack Implementations
 
 Trace pushing 3 elements (10, 20, 30) and then popping 2 elements on both the array-based and
-linked-list-based stack implementations.
+Linked-list-based stack implementations.
 
 <details>
 <summary>Solution</summary>
 
 **Array-based stack** (MAX_SIZE = 5):
 
-| Operation     | `top` | Stack contents (bottom to top) | Output |
+| Operation | `top` | Stack contents (bottom to top) | Output |
 | ------------- | ----- | ------------------------------ | ------ |
-| push(10)      | 0     | [10]                           | --     |
-| push(20)      | 1     | [10, 20]                       | --     |
-| push(30)      | 2     | [10, 20, 30]                   | --     |
-| pop()         | 1     | [10, 20]                       | 30     |
-| pop()         | 0     | [10]                           | 20     |
+| push(10) | 0 | [10] | -- |
+| push(20) | 1 | [10, 20] | -- |
+| push(30) | 2 | [10, 20, 30] | -- |
+| pop() | 1 | [10, 20] | 30 |
+| pop() | 0 | [10] | 20 |
 
 **Linked-list-based stack:**
 
-| Operation     | `count` | Head → ... (top is head)    | Output |
+| Operation | `count` | Head → ... (top is head) | Output |
 | ------------- | ------- | --------------------------- | ------ |
-| push(10)      | 1       | 10 → NIL                    | --     |
-| push(20)      | 2       | 20 → 10 → NIL               | --     |
-| push(30)      | 3       | 30 → 20 → 10 → NIL          | --     |
-| pop()         | 2       | 20 → 10 → NIL               | 30     |
-| pop()         | 1       | 10 → NIL                    | 20     |
+| push(10) | 1 | 10 → NIL | -- |
+| push(20) | 2 | 20 → 10 → NIL | -- |
+| push(30) | 3 | 30 → 20 → 10 → NIL | -- |
+| pop() | 2 | 20 → 10 → NIL | 30 |
+| pop() | 1 | 10 → NIL | 20 |
 
 Both implementations produce identical external behavior (same outputs for same operations). The
-internal state differs (array index vs. linked pointers), but the caller cannot observe this
-difference through the public interface. This demonstrates **data abstraction**.
+Internal state differs (array index vs. Linked pointers), but the caller cannot observe this
+Difference through the public interface. This demonstrates **data abstraction**.
 
 </details>
 
@@ -424,39 +424,39 @@ difference through the public interface. This demonstrates **data abstraction**.
 ### Encapsulation
 
 Encapsulation is the bundling of data (attributes) and the methods that operate on that data into a
-single unit. In object-oriented programming, this unit is a class. Encapsulation restricts direct
-access to some of the object's components, typically by making attributes private and exposing only
-public methods.
+Single unit. In object-oriented programming, this unit is a class. Encapsulation restricts direct
+Access to some of the object's components, by making attributes private and exposing only
+Public methods.
 
 ### Information Hiding
 
 Information hiding is the design principle that the internal details of a module should be hidden
-from other modules. Only the essential interface is exposed. The implementation can change without
-affecting any code that depends only on the interface.
+From other modules. Only the essential interface is exposed. The implementation can change without
+Affecting any code that depends only on the interface.
 
 **Practical benefits:**
 
 **Protection against invalid state:** If a bank account's balance is private and can only be
-modified through `deposit()` and `withdraw()` methods, external code cannot set the balance to a
-negative value directly. The methods enforce business rules (e.g., withdraw cannot exceed balance).
+Modified through `deposit()` and `withdraw()` methods, external code cannot set the balance to a
+Negative value directly. The methods enforce business rules (e.g., withdraw cannot exceed balance).
 
 **Reduced coupling:** A module that depends only on another module's interface is loosely coupled to
-it. Changes to the implementation do not propagate. This makes the system easier to maintain and
-extend.
+It. Changes to the implementation do not propagate. This makes the system easier to maintain and
+Extend.
 
 **Localized debugging:** When a bug is found in the stack implementation, the developer knows to
-look inside the Stack class, not in the code that calls push and pop. The bug is confined to a
-single location.
+Look inside the Stack class, not in the code that calls push and pop. The bug is confined to a
+Single location.
 
 **Parallel development:** Teams can work on different modules simultaneously as long as they agree
-on interfaces. One team implements the Stack class; another team writes code that uses it. They only
-need to coordinate on the interface, not on the implementation details.
+On interfaces. One team implements the Stack class; another team writes code that uses it. They only
+Need to coordinate on the interface, not on the implementation details.
 
 <details>
 <summary>Worked Example: Designing Encapsulation for a Student Record</summary>
 
 Design a `StudentRecord` class with proper encapsulation. The system must enforce that a student's GPA
-is always between 0.0 and 4.0, and that the student ID cannot be changed after construction.
+Is always between 0.0 and 4.0, and that the student ID cannot be changed after construction.
 
 ```python
 CLASS StudentRecord
@@ -504,10 +504,10 @@ END CLASS
 **Encapsulation decisions:**
 
 - `studentID` is private with only a getter -- no setter, so it cannot be changed after construction.
-- `gpa` is private with no setter -- it is computed internally by `addCourse`, ensuring it is always
-  consistent with the completed courses.
+- `gpa` is private with no setter -- it is computed internally by `addCourse`Ensuring it is always
+ consistent with the completed courses.
 - There is no `setGPA()` method, preventing external code from assigning an invalid GPA (e.g., 5.0 or
-  -1.0).
+ -1.0).
 - `name` is private but has both getter and setter since names can legitimately change.
 
 </details>
@@ -519,10 +519,10 @@ END CLASS
 A class defines a template for creating objects. It encapsulates:
 
 **Attributes:** The data stored in each object (also called fields, properties, or instance
-variables).
+Variables).
 
 **Methods:** The operations that can be performed on the object (also called functions or
-behaviors).
+Behaviors).
 
 **Constructors:** Special methods that initialize a new object when it is created.
 
@@ -530,10 +530,10 @@ behaviors).
 
 ### Access Modifiers
 
-| Modifier    | Visibility                                 | Purpose                                        |
+| Modifier | Visibility | Purpose |
 | ----------- | ------------------------------------------ | ---------------------------------------------- |
-| `PUBLIC`    | Accessible from anywhere                   | Defines the interface exposed to other code    |
-| `PRIVATE`   | Accessible only within the class           | Hides implementation details                   |
+| `PUBLIC` | Accessible from anywhere | Defines the interface exposed to other code |
+| `PRIVATE` | Accessible only within the class | Hides implementation details |
 | `PROTECTED` | Accessible within the class and subclasses | Allows subclass access while hiding externally |
 
 ### Worked Example: BankAccount Class
@@ -579,8 +579,8 @@ END CLASS
 ```
 
 The balance is private and can only be modified through deposit and withdraw. The withdraw method
-enforces the rule that you cannot withdraw more than your balance. The constructor enforces that the
-initial balance cannot be negative.
+Enforces the rule that you cannot withdraw more than your balance. The constructor enforces that the
+Initial balance cannot be negative.
 
 ### Worked Example: Tracing Class Method Calls
 
@@ -598,18 +598,18 @@ OUTPUT result
 <details>
 <summary>Solution</summary>
 
-| Step | Operation                  | Balance | Return Value | Notes                          |
+| Step | Operation | Balance | Return Value | Notes |
 | ---- | -------------------------- | ------- | ------------ | ------------------------------ |
-| 1    | `new BankAccount(..., 100)`| 100     | --           | Initial balance = 100          |
-| 2    | `acc.deposit(50)`          | 150     | --           | $100 + 50 = 150$               |
-| 3    | `acc.withdraw(200)`        | 150     | FALSE        | $200 \gt{} 150$, withdrawal fails  |
-| 4    | `acc.withdraw(100)`        | 50      | TRUE         | $100 \le 150$, succeeds        |
-| 5    | `acc.getBalance()`         | 50      | 50           | Returns current balance        |
+| 1 | `new BankAccount(..., 100)`| 100 | -- | Initial balance = 100 |
+| 2 | `acc.deposit(50)` | 150 | -- | $100 + 50 = 150$ |
+| 3 | `acc.withdraw(200)` | 150 | FALSE | $200 \gt{} 150$Withdrawal fails |
+| 4 | `acc.withdraw(100)` | 50 | TRUE | $100 \le 150$Succeeds |
+| 5 | `acc.getBalance()` | 50 | 50 | Returns current balance |
 
 **Outputs:** 50, TRUE
 
 The withdraw method returns a BOOLEAN indicating success or failure. The second withdrawal (200)
-fails because it exceeds the balance, and the balance remains unchanged at 150. The third withdrawal
+Fails because it exceeds the balance, and the balance remains unchanged at 150. The third withdrawal
 (100) succeeds, reducing the balance to 50.
 
 </details>
@@ -619,8 +619,8 @@ fails because it exceeds the balance, and the balance remains unchanged at 150. 
 ### Interfaces
 
 An interface defines a contract that a class must fulfill. It specifies method signatures (names,
-parameters, return types) without providing implementations. A class that implements an interface
-must provide concrete implementations for all methods defined in the interface.
+Parameters, return types) without providing implementations. A class that implements an interface
+Must provide concrete implementations for all methods defined in the interface.
 
 ```python
 INTERFACE Sortable
@@ -643,43 +643,43 @@ END CLASS
 ```
 
 Interfaces enable polymorphism: any class that implements the `Sortable` interface can be used by
-sorting algorithms without the algorithm needing to know the specific class.
+Sorting algorithms without the algorithm needing to know the specific class.
 
 ### Application Programming Interfaces (APIs)
 
 An API is a set of rules and protocols that allows different software components to communicate. An
 API defines the endpoints, request formats, response formats, and authentication mechanisms that
-external code must use to interact with a service.
+External code must use to interact with a service.
 
 **Types of APIs:**
 
-| Type         | Description                                                   | Example                     |
+| Type | Description | Example |
 | ------------ | ------------------------------------------------------------- | --------------------------- |
-| REST API     | Uses HTTP methods (GET, POST, PUT, DELETE) with JSON payloads | OpenWeatherMap, Twitter API |
-| Library API  | Functions and classes provided by a library                   | Python's `requests` library |
-| OS API       | Functions provided by the operating system                    | POSIX file I/O, Win32 API   |
-| Database API | Protocol for interacting with a database                      | JDBC (Java), SQLite API     |
+| REST API | Uses HTTP methods (GET, POST, PUT, DELETE) with JSON payloads | OpenWeatherMap, Twitter API |
+| Library API | Functions and classes provided by a library | Python's `requests` library |
+| OS API | Functions provided by the operating system | POSIX file I/O, Win32 API |
+| Database API | Protocol for interacting with a database | JDBC (Java), SQLite API |
 
 **API abstraction:** The caller of an API does not need to know how the API is implemented. When you
-call `requests.get(url)`, you do not need to know how the HTTP protocol is implemented at the socket
-level. The API abstracts away the complexity.
+Call `requests.get(url)`You do not need to know how the HTTP protocol is implemented at the socket
+Level. The API abstracts away the complexity.
 
 ## Top-Down Design and Stepwise Refinement
 
 ### Top-Down Design
 
 Top-down design starts with the overall problem and progressively breaks it down into smaller, more
-manageable sub-problems. At each level of decomposition, the sub-problems are defined by what they
-should accomplish (their specification), not by how they accomplish it (their implementation).
+Manageable sub-problems. At each level of decomposition, the sub-problems are defined by what they
+Should accomplish (their specification), not by how they accomplish it (their implementation).
 
 The process continues until each sub-problem is simple enough to be implemented directly as a single
-function or procedure.
+Function or procedure.
 
 ### Stepwise Refinement
 
 Stepwise refinement is the iterative process of gradually adding detail to a design. At each step, a
-high-level description is refined into a more detailed description, until the level of detail is
-sufficient for direct implementation.
+High-level description is refined into a more detailed description, until the level of detail is
+Sufficient for direct implementation.
 
 **Worked example: A program to process student exam results.**
 
@@ -732,7 +732,7 @@ END FUNCTION
 ```
 
 At Level 3, the logic is detailed enough to be translated directly into code. The top-down approach
-ensures that the overall structure is correct before details are filled in.
+Ensures that the overall structure is correct before details are filled in.
 
 ## UML Class Diagrams
 
@@ -767,13 +767,13 @@ Visibility prefixes: `+` (public), `-` (private), `#` (protected)
 
 ### Relationship Types
 
-| Relationship | UML Notation              | Description                                                   |
+| Relationship | UML Notation | Description |
 | ------------ | ------------------------- | ------------------------------------------------------------- |
-| Association  | Solid line                | General relationship between two classes                      |
-| Aggregation  | Hollow diamond on one end | "Has-a" relationship, weak ownership                          |
-| Composition  | Filled diamond on one end | "Has-a" relationship, strong ownership (lifecycle dependency) |
-| Inheritance  | Hollow triangle arrow     | "Is-a" relationship, generalization                           |
-| Dependency   | Dashed arrow              | One class uses another temporarily                            |
+| Association | Solid line | General relationship between two classes |
+| Aggregation | Hollow diamond on one end | "Has-a" relationship, weak ownership |
+| Composition | Filled diamond on one end | "Has-a" relationship, strong ownership (lifecycle dependency) |
+| Inheritance | Hollow triangle arrow | "Is-a" relationship, generalization |
+| Dependency | Dashed arrow | One class uses another temporarily |
 
 ### Worked Example: School System
 
@@ -803,7 +803,7 @@ Visibility prefixes: `+` (public), `-` (private), `#` (protected)
 
 Teacher aggregates Courses (a teacher can have many courses). Student is associated with Enrollment
 (a student has many enrollments). Course is associated with Enrollment (a course has many
-enrollments). The Enrollment table is the junction table for the many-to-many relationship between
+Enrollments). The Enrollment table is the junction table for the many-to-many relationship between
 Student and Course.
 
 ## Inheritance and Polymorphism as Abstraction Mechanisms
@@ -812,11 +812,11 @@ Student and Course.
 
 Inheritance allows a class (subclass/child) to acquire the attributes and methods of another class
 (superclass/parent). The subclass extends the superclass by adding new attributes and methods or by
-overriding existing methods.
+Overriding existing methods.
 
 **Purpose as abstraction:** Inheritance abstracts common properties and behaviors into a superclass.
 Instead of duplicating code across multiple classes, the shared code is defined once in the
-superclass and inherited by all subclasses.
+Superclass and inherited by all subclasses.
 
 ```python
 CLASS Shape
@@ -867,11 +867,11 @@ END CLASS
 ### Polymorphism
 
 Polymorphism (meaning "many forms") allows objects of different classes to be treated through a
-common interface. When a method is called on a superclass reference, the actual method that executes
-depends on the type of the object at runtime.
+Common interface. When a method is called on a superclass reference, the actual method that executes
+Depends on the type of the object at runtime.
 
 **Purpose as abstraction:** Polymorphism allows the caller to interact with a hierarchy of classes
-through a single interface without knowing the specific class of each object. The caller calls
+Through a single interface without knowing the specific class of each object. The caller calls
 `shape.area()` without knowing or caring whether the shape is a Rectangle or a Circle.
 
 ```python
@@ -894,8 +894,8 @@ Area: 100
 ```
 
 The `getAreaDescription()` method is defined in `Shape` and calls `area()`. Because `area()` is
-overridden in both `Rectangle` and `Circle`, the correct version is called for each object at
-runtime. This is **runtime polymorphism** (also called dynamic dispatch or late binding).
+Overridden in both `Rectangle` and `Circle`The correct version is called for each object at
+Runtime. This is **runtime polymorphism** (also called dynamic dispatch or late binding).
 
 ### Worked Example: Tracing Polymorphic Behavior
 
@@ -916,16 +916,16 @@ OUTPUT totalArea
 <details>
 <summary>Solution</summary>
 
-| Step | `i` | `shapes[i]`  | Method Called       | Result  | `totalArea` |
+| Step | `i` | `shapes[i]` | Method Called | Result | `totalArea` |
 | ---- | --- | ------------ | ------------------- | ------- | ----------- |
-| 1    | 0   | Rectangle    | `Rectangle.area()`  | $4 \times 6 = 24$ | 24    |
-| 2    | 1   | Circle       | `Circle.area()`     | $3.14159 \times 25 = 78.54$ | 102.54 |
+| 1 | 0 | Rectangle | `Rectangle.area()` | $4 \times 6 = 24$ | 24 |
+| 2 | 1 | Circle | `Circle.area()` | $3.14159 \times 25 = 78.54$ | 102.54 |
 
 **Output:** 102.54
 
 The loop treats all objects as `Shape` references. At runtime, the JVM/interpreter determines the
-actual type of each object and calls the appropriate `area()` method. This is dynamic dispatch:
-the same method call `shapes[i].area()` executes different code depending on the object type.
+Actual type of each object and calls the appropriate `area()` method. This is dynamic dispatch:
+The same method call `shapes[i].area()` executes different code depending on the object type.
 
 Without polymorphism, you would need a CASE statement or type checking:
 
@@ -938,7 +938,7 @@ END IF
 ```
 
 Polymorphism eliminates this conditional logic, making the code extensible: adding a new `Triangle`
-class requires no changes to the loop.
+Class requires no changes to the loop.
 
 </details>
 
@@ -971,13 +971,13 @@ END CLASS
 
 The `speak()` method is abstract in `Animal` and must be implemented by every concrete subclass. The
 `introduce()` method is concrete and inherited by all subclasses. This enforces a common interface
-while allowing each subclass to provide its own behavior.
+While allowing each subclass to provide its own behavior.
 
 <details>
 <summary>Worked Example: Designing an Inheritance Hierarchy</summary>
 
 **Scenario:** A transport company manages vehicles. All vehicles have a registration number, make, and
-year. Cars have a number of seats and calculate daily rental as `USD 50 + (seats - 4) * 10`.
+Year. Cars have a number of seats and calculate daily rental as `USD 50 + (seats - 4) * 10`.
 Trucks have a payload in tonnes and calculate daily rental as `USD 80 + payload * 25`.
 Design an abstract superclass and two subclasses.
 
@@ -1030,8 +1030,8 @@ END CLASS
 ```
 
 The abstract class enforces that every vehicle type must implement `dailyRentalCost()`. Code can
-iterate over an array of `Vehicle` objects and call `dailyRentalCost()` polymorphically without knowing
-the specific type.
+Iterate over an array of `Vehicle` objects and call `dailyRentalCost()` polymorphically without knowing
+The specific type.
 
 </details>
 
@@ -1040,68 +1040,68 @@ the specific type.
 ### Leaky Abstractions
 
 An abstraction is "leaky" when implementation details are exposed to the user, forcing them to
-understand the implementation to use the abstraction correctly. For example, if a stack implemented
-with an array throws an "array index out of bounds" error, the user must understand that the stack
-uses an array internally. A well-designed stack would throw a "stack overflow" error instead,
-keeping the array implementation hidden.
+Understand the implementation to use the abstraction correctly. For example, if a stack implemented
+With an array throws an "array index out of bounds" error, the user must understand that the stack
+Uses an array internally. A well-designed stack would throw a "stack overflow" error instead,
+Keeping the array implementation hidden.
 
 ### Over-Abstraction
 
 Creating too many layers of abstraction makes the code harder to understand and debug. If a simple
-calculation is wrapped in a factory that creates a strategy object that delegates to a provider, the
-code becomes unnecessarily complex. Abstraction should be applied where it provides clear benefits:
-code reuse, encapsulation, or separation of concerns. A good rule of thumb: if you cannot explain
-the purpose of an abstraction layer in one sentence, it may be unnecessary.
+Calculation is wrapped in a factory that creates a strategy object that delegates to a provider, the
+Code becomes unnecessarily complex. Abstraction should be applied where it provides clear benefits:
+Code reuse, encapsulation, or separation of concerns. A good rule of thumb: if you cannot explain
+The purpose of an abstraction layer in one sentence, it may be unnecessary.
 
 ### Under-Abstraction
 
 Failing to abstract common patterns leads to code duplication. If the same validation logic appears
-in five different functions, it should be extracted into a shared function. If multiple classes
-share the same attributes and methods, they should inherit from a common superclass. The "don't
-repeat yourself" (DRY) principle is a guideline for identifying where abstraction is needed.
+In five different functions, it should be extracted into a shared function. If multiple classes
+Share the same attributes and methods, they should inherit from a common superclass. The "don't
+Repeat yourself" (DRY) principle is a guideline for identifying where abstraction is needed.
 
 ### Breaking Encapsulation
 
 Making attributes public when they should be private violates encapsulation. If a BankAccount class
-exposes its balance as a public attribute, external code can modify it directly, bypassing the
-deposit and withdraw methods and their validation logic. Always make attributes private and provide
-public getter/setter methods where needed.
+Exposes its balance as a public attribute, external code can modify it directly, bypassing the
+Deposit and withdraw methods and their validation logic. Always make attributes private and provide
+Public getter/setter methods where needed.
 
 ### Violating the Liskov Substitution Principle
 
 The Liskov Substitution Principle states that a subclass should be usable wherever its superclass is
-expected, without altering the correctness of the program. If a Square class extends Rectangle and
-overrides `setWidth()` to also set the height (to maintain the square invariant), then a Square
-object cannot be used interchangeably with a Rectangle object. Code that calls `setWidth(5)`
-followed by `setHeight(10)` on a Rectangle expects the area to be 50, but on a Square the area would
-be 100. This is a violation of abstraction: the subclass does not truly behave like its superclass.
+Expected, without altering the correctness of the program. If a Square class extends Rectangle and
+Overrides `setWidth()` to also set the height (to maintain the square invariant), then a Square
+Object cannot be used interchangeably with a Rectangle object. Code that calls `setWidth(5)`
+Followed by `setHeight(10)` on a Rectangle expects the area to be 50, but on a Square the area would
+Be 100. This is a violation of abstraction: the subclass does not truly behave like its superclass.
 
 ### Ignoring Preconditions and Postconditions
 
 An ADT's contract is defined by its preconditions and postconditions. If the documentation says that
 `pop()` requires the stack to be non-empty (precondition) and that `pop()` returns the top element
-and decreases the size by one (postcondition), both sides must be honored. The caller must not call
+And decreases the size by one (postcondition), both sides must be honored. The caller must not call
 `pop()` on an empty stack, and the implementation must correctly return the top element. Violations
-on either side lead to bugs that are difficult to trace.
+On either side lead to bugs that are difficult to trace.
 
 ## Common Pitfalls in Data Modeling
 
 ### Confusing Entities with Attributes
 
 A common mistake is modeling something as an entity when it should be an attribute. For example,
-"color" is typically an attribute of a product, not a separate entity. However, if the system needs to
-track color-specific pricing or metadata, "Color" should be a separate entity.
+"color" is an attribute of a product, not a separate entity. However, if the system needs to
+Track color-specific pricing or metadata, "Color" should be a separate entity.
 
 ### Ignoring Cardinality Constraints
 
 Failing to correctly identify 1:1, 1:M, or M:N relationships leads to structural problems. The most
-common error is not recognizing an M:N relationship and failing to create a junction table.
+Common error is not recognizing an M:N relationship and failing to create a junction table.
 
 ### Storing Derived Data Without Validation
 
 Storing calculated values (e.g., order totals) can lead to inconsistencies if the underlying data
-changes. Derived data should either be calculated on demand or updated through a controlled
-transaction that ensures consistency.
+Changes. Derived data should either be calculated on demand or updated through a controlled
+Transaction that ensures consistency.
 
 ## IB Exam-Style Worked Examples
 
@@ -1109,26 +1109,26 @@ transaction that ensures consistency.
 <summary>Worked Example 1: IB Paper 1 Style -- Abstraction in Practice (4 marks)</summary>
 
 **Question:** A software developer is creating a mobile application for a taxi booking service. The
-application allows users to request rides, view driver details, and make payments.
+Application allows users to request rides, view driver details, and make payments.
 
 (a) Define the term **abstraction**. [2 marks]
 
 (b) Explain how the developer could use procedural abstraction when designing the ride-requesting
-feature. [2 marks]
+Feature. [2 marks]
 
 **Solution:**
 
 (a) Abstraction is the process of hiding unnecessary implementation details and exposing only the
-essential features of a system. It reduces complexity by allowing users to interact with a simplified
-interface without needing to understand the underlying details. [2 marks: 1 for definition of hiding
-details, 1 for reducing complexity]
+Essential features of a system. It reduces complexity by allowing users to interact with a simplified
+Interface without needing to understand the underlying details. [2 marks: 1 for definition of hiding
+Details, 1 for reducing complexity]
 
 (b) The developer could create a procedure `requestRide(pickup, destination)` that handles all the
-logic for finding a nearby driver, calculating the fare estimate, and sending the request. The main
-program calls this single procedure without needing to know how drivers are located (e.g., by GPS
-coordinates, by distance) or how the fare is calculated. This allows the algorithm for matching
-drivers to be changed independently of the calling code. [2 marks: 1 for identifying a specific
-procedure, 1 for explaining the benefit of hiding the implementation]
+Logic for finding a nearby driver, calculating the fare estimate, and sending the request. The main
+Program calls this single procedure without needing to know how drivers are located (e.g., by GPS
+Coordinates, by distance) or how the fare is calculated. This allows the algorithm for matching
+Drivers to be changed independently of the calling code. [2 marks: 1 for identifying a specific
+Procedure, 1 for explaining the benefit of hiding the implementation]
 
 </details>
 
@@ -1136,10 +1136,10 @@ procedure, 1 for explaining the benefit of hiding the implementation]
 <summary>Worked Example 2: IB Paper 2 Style -- Class Design and Inheritance (8 marks)</summary>
 
 **Question:** A company employs two types of workers: full-time employees and contractors. Both have a
-name and an employee ID. Full-time employees have an annual salary and receive a bonus calculated as
+Name and an employee ID. Full-time employees have an annual salary and receive a bonus calculated as
 10% of their salary. Contractors have an hourly rate and a number of hours worked, and their bonus is
 5% of their total earnings. Write pseudocode for the abstract superclass and both subclasses, including
-a polymorphic `calculateBonus()` method.
+A polymorphic `calculateBonus()` method.
 
 **Solution:**
 
@@ -1186,8 +1186,8 @@ END CLASS
 ```
 
 The abstract superclass defines the common interface (`calculateBonus`). Each subclass provides its
-own implementation. Code can iterate over an array of `Worker` objects and call `calculateBonus()`
-without knowing the specific type.
+Own implementation. Code can iterate over an array of `Worker` objects and call `calculateBonus()`
+Without knowing the specific type.
 
 </details>
 
@@ -1195,26 +1195,26 @@ without knowing the specific type.
 <summary>Worked Example 3: IB Paper 1 Style -- Conceptual vs Physical Models (4 marks)</summary>
 
 **Question:** An online store is being redesigned. The development team creates an entity-relationship
-diagram showing Customer, Product, and Order entities with their relationships. Separately, the
-database administrator defines SQL `CREATE TABLE` statements with specific data types, primary keys,
-and foreign key constraints.
+Diagram showing Customer, Product, and Order entities with their relationships. Separately, the
+Database administrator defines SQL `CREATE TABLE` statements with specific data types, primary keys,
+And foreign key constraints.
 
 (a) Identify which artifact is the conceptual model and which is the physical model. [2 marks]
 
 (b) Explain one advantage of separating the conceptual model from the physical model during the
-development process. [2 marks]
+Development process. [2 marks]
 
 **Solution:**
 
 (a) The entity-relationship diagram is the **conceptual model**. The SQL `CREATE TABLE` statements are
-the **physical model**. [2 marks]
+The **physical model**. [2 marks]
 
 (b) Separation allows the database technology to change without redesigning the system. For example,
-if the company migrates from MySQL to PostgreSQL, only the physical model (SQL statements) needs to
-change. The conceptual model (entities, attributes, relationships) remains the same because it
-describes the problem domain, not the implementation. This also allows developers and stakeholders to
-communicate about the system using domain concepts rather than technical details. [2 marks: 1 for
-identifying a valid advantage, 1 for explaining it]
+If the company migrates from MySQL to PostgreSQL, only the physical model (SQL statements) needs to
+Change. The conceptual model (entities, attributes, relationships) remains the same because it
+Describes the problem domain, not the implementation. This also allows developers and stakeholders to
+Communicate about the system using domain concepts rather than technical details. [2 marks: 1 for
+Identifying a valid advantage, 1 for explaining it]
 
 </details>
 
@@ -1227,83 +1227,83 @@ Give one example of each in the context of a restaurant management system.
 <summary>Solution</summary>
 
 **Data abstraction** hides the internal representation of data and exposes only the operations that
-can be performed on it. Example: a `Menu` class that provides `addItem()`, `removeItem()`, and
+Can be performed on it. Example: a `Menu` class that provides `addItem()``removeItem()`And
 `findItem(name)` methods while hiding whether items are stored in an array, linked list, or database.
 
 **Procedural abstraction** hides the implementation details of a procedure behind its name,
-parameters, and return type. Example: a `calculateDailyRevenue(orders)` procedure that computes total
-revenue while hiding whether it iterates through an array, queries a database, or reads from a file.
+Parameters, and return type. Example: a `calculateDailyRevenue(orders)` procedure that computes total
+Revenue while hiding whether it iterates through an array, queries a database, or reads from a file.
 
 The key difference: data abstraction hides *data structure and storage*, while procedural abstraction
-hides *algorithmic logic*.
+Hides *algorithmic logic*.
 
 </details>
 
 **Problem 2.** A stack is implemented using a dynamic array. Initially the stack is empty. Trace the
-stack after each operation: `push(10)`, `push(20)`, `push(30)`, `pop()`, `push(40)`, `peek()`,
-`pop()`, `pop()`. State the value returned by each `pop()` and `peek()` call.
+Stack after each operation: `push(10)``push(20)``push(30)``pop()``push(40)``peek()`
+`pop()``pop()`. State the value returned by each `pop()` and `peek()` call.
 
 <details>
 <summary>Solution</summary>
 
-| Operation  | Stack (top on right) | Returned |
+| Operation | Stack (top on right) | Returned |
 | ---------- | -------------------- | -------- |
-| `push(10)` | 10                   | --       |
-| `push(20)` | 10, 20               | --       |
-| `push(30)` | 10, 20, 30           | --       |
-| `pop()`    | 10, 20               | 30       |
-| `push(40)` | 10, 20, 40           | --       |
-| `peek()`   | 10, 20, 40           | 40       |
-| `pop()`    | 10, 20               | 40       |
-| `pop()`    | 10                   | 20       |
+| `push(10)` | 10 | -- |
+| `push(20)` | 10, 20 | -- |
+| `push(30)` | 10, 20, 30 | -- |
+| `pop()` | 10, 20 | 30 |
+| `push(40)` | 10, 20, 40 | -- |
+| `peek()` | 10, 20, 40 | 40 |
+| `pop()` | 10, 20 | 40 |
+| `pop()` | 10 | 20 |
 
 Values returned: `pop()` returns 30, then 40, then 20. `peek()` returns 40. Final stack: [10].
 
 </details>
 
 **Problem 3.** Explain the difference between **aggregation** and **composition** in UML class
-diagrams. Give a real-world example of each.
+Diagrams. Give a real-world example of each.
 
 <details>
 <summary>Solution</summary>
 
 **Aggregation** represents a "has-a" relationship with weak ownership. The parts can exist
-independently of the whole. Deleting the whole does not necessarily delete the parts. In UML it is
-shown with a hollow diamond. Example: A `Department` aggregates `Employee` objects. If the department
-is dissolved, the employees still exist and can be reassigned.
+Independently of the whole. Deleting the whole does not necessarily delete the parts. In UML it is
+Shown with a hollow diamond. Example: A `Department` aggregates `Employee` objects. If the department
+Is dissolved, the employees still exist and can be reassigned.
 
 **Composition** represents a "has-a" relationship with strong ownership and lifecycle dependency. The
-parts cannot exist without the whole. Deleting the whole deletes the parts. In UML it is shown with a
-filled diamond. Example: A `House` is composed of `Room` objects. If the house is demolished, the
-rooms cease to exist as meaningful entities in the system.
+Parts cannot exist without the whole. Deleting the whole deletes the parts. In UML it is shown with a
+Filled diamond. Example: A `House` is composed of `Room` objects. If the house is demolished, the
+Rooms cease to exist as meaningful entities in the system.
 
 </details>
 
 **Problem 4.** A `Queue` ADT has the following specification: `enqueue(item)` adds to the rear,
 `dequeue()` removes from the front, `isEmpty()` returns whether the queue is empty. Starting with an
-empty queue, trace the queue after: `enqueue("A")`, `enqueue("B")`, `enqueue("C")`, `dequeue()`,
-`enqueue("D")`, `dequeue()`. What is the final state of the queue?
+Empty queue, trace the queue after: `enqueue("A")``enqueue("B")``enqueue("C")``dequeue()`
+`enqueue("D")``dequeue()`. What is the final state of the queue?
 
 <details>
 <summary>Solution</summary>
 
-| Operation      | Queue (front on left) | Returned |
+| Operation | Queue (front on left) | Returned |
 | -------------- | --------------------- | -------- |
-| `enqueue("A")` | A                     | --       |
-| `enqueue("B")` | A, B                  | --       |
-| `enqueue("C")` | A, B, C               | --       |
-| `dequeue()`    | B, C                  | A        |
-| `enqueue("D")` | B, C, D               | --       |
-| `dequeue()`    | C, D                  | B        |
+| `enqueue("A")` | A | -- |
+| `enqueue("B")` | A, B | -- |
+| `enqueue("C")` | A, B, C | -- |
+| `dequeue()` | B, C | A |
+| `enqueue("D")` | B, C, D | -- |
+| `dequeue()` | C, D | B |
 
 Final queue: [C, D], front = C. Elements removed: A, B. This demonstrates FIFO behavior: the
-earliest elements added are the first to be removed.
+Earliest elements added are the first to be removed.
 
 </details>
 
 **Problem 5.** Design a class `LibraryItem` as an abstract superclass with subclasses `Book` and
 `DVD`. Both have a title and an item ID. Books have an author and page count. DVDs have a director
-and duration in minutes. Include an abstract method `getDetails()` that returns a formatted string.
+And duration in minutes. Include an abstract method `getDetails()` that returns a formatted string.
 
 <details>
 <summary>Solution</summary>
@@ -1353,33 +1353,33 @@ END CLASS
 ```
 
 The abstract class enforces that every `LibraryItem` must provide a `getDetails()` method, while
-allowing each subclass to format its details differently.
+Allowing each subclass to format its details differently.
 
 </details>
 
 **Problem 6.** Explain why preconditions and postconditions are important for ADTs. What happens if
-the caller violates a precondition?
+The caller violates a precondition?
 
 <details>
 <summary>Solution</summary>
 
 Preconditions and postconditions define the **contract** of an ADT. The precondition states what must
-be true before an operation is called (e.g., the stack must not be empty before calling `pop()`). The
-postcondition states what will be true after the operation completes (e.g., `pop()` returns the top
-element and the size decreases by one).
+Be true before an operation is called (e.g., the stack must not be empty before calling `pop()`). The
+Postcondition states what will be true after the operation completes (e.g., `pop()` returns the top
+Element and the size decreases by one).
 
 If the caller violates a precondition, the behavior of the ADT is **undefined**. The implementation
-is not required to handle invalid input gracefully because the contract was broken by the caller.
+Is not required to handle invalid input gracefully because the contract was broken by the caller.
 Possible consequences include: returning incorrect results, corrupting the data structure, throwing an
-error, or causing a crash. This is why callers must always check preconditions (e.g., call
+Error, or causing a crash. This is why callers must always check preconditions (e.g., call
 `isEmpty()` before `pop()`).
 
 </details>
 
 **Problem 7.** A social media application stores user profiles. Each user has a userID, username,
-email, date of birth, and a list of friends. A user can have many friends, and a friendship is mutual
+Email, date of birth, and a list of friends. A user can have many friends, and a friendship is mutual
 (bidirectional). Design the data model showing entities, attributes, primary keys, foreign keys, and
-relationships.
+Relationships.
 
 <details>
 <summary>Solution</summary>
@@ -1389,33 +1389,33 @@ relationships.
 
 **Entity `friendship` (junction table):** userID1 (FK → user.userID), userID2 (FK → user.userID).
 Composite PK: (userID1, userID2). A check constraint ensures userID1 &lt; userID2 to prevent
-duplicates.
+Duplicates.
 
 **Relationships:** User-Friendship is 1:M. The M:N self-referencing relationship (user has many
-friends) is resolved by the junction table. No separate `friends` attribute is needed in `user`.
+Friends) is resolved by the junction table. No separate `friends` attribute is needed in `user`.
 
 </details>
 
 **Problem 8.** What is the **Liskov Substitution Principle (LSP)**? Explain why a `Square` class
-inheriting from a `Rectangle` class can violate LSP.
+Inheriting from a `Rectangle` class can violate LSP.
 
 <details>
 <summary>Solution</summary>
 
 The Liskov Substitution Principle states that objects of a superclass should be replaceable with
-objects of a subclass without altering the correctness of the program.
+Objects of a subclass without altering the correctness of the program.
 
 A `Square` inheriting from `Rectangle` violates LSP because a square has the invariant that width
-must equal height. If `Rectangle` has `setWidth(w)` and `setHeight(h)`, and `Square` overrides
+Must equal height. If `Rectangle` has `setWidth(w)` and `setHeight(h)`And `Square` overrides
 `setWidth(w)` to also set height to w, then code calling `setWidth(5)` followed by `setHeight(10)`
-expects the area to be 50 on a `Rectangle`, but on a `Square` it would be 100. The `Square` cannot
-be substituted for `Rectangle` because it behaves differently. The correct design is to have both
-inherit from an abstract `Shape` class instead.
+Expects the area to be 50 on a `Rectangle`But on a `Square` it would be 100. The `Square` cannot
+Be substituted for `Rectangle` because it behaves differently. The correct design is to have both
+Inherit from an abstract `Shape` class instead.
 
 </details>
 
 **Problem 9.** Explain the difference between an **abstract class** and an **interface**. When would
-you use each?
+You use each?
 
 <details>
 <summary>Solution</summary>
@@ -1425,41 +1425,41 @@ An **abstract class** can contain both abstract methods (no implementation) and 
 (single inheritance). Use an abstract class when subclasses share common code and state.
 
 An **interface** contains only method signatures (no implementation) and no instance variables (in
-most languages). A class can implement multiple interfaces. Use an interface when you need to define a
-contract that unrelated classes can fulfill, or when a class already extends another class and you need
-additional polymorphic behavior.
+Most languages). A class can implement multiple interfaces. Use an interface when you need to define a
+Contract that unrelated classes can fulfill, or when a class already extends another class and you need
+Additional polymorphic behavior.
 
 **Example:** `Vehicle` is an abstract class: vehicles share common state (registration, make) and
-behavior (getDetails). `Electric` is an interface: unrelated classes like `Car`, `Bus`, and `Scooter`
-can all be electric, but they do not share a common electric-vehicle superclass.
+Behavior (getDetails). `Electric` is an interface: unrelated classes like `Car``Bus`And `Scooter`
+Can all be electric, but they do not share a common electric-vehicle superclass.
 
 </details>
 
 **Problem 10.** A binary search tree (BST) is an ADT that stores elements in sorted order. State the
-precondition and postcondition for an `insert(value)` operation on a BST. Then explain how data
-abstraction applies to the BST.
+Precondition and postcondition for an `insert(value)` operation on a BST. Then explain how data
+Abstraction applies to the BST.
 
 <details>
 <summary>Solution</summary>
 
 **Precondition:** The value to insert is not already present in the BST (assuming no duplicates are
-allowed). The BST satisfies the BST property before insertion (left subtree values &lt; node value
+Allowed). The BST satisfies the BST property before insertion (left subtree values &lt; node value
 &lt; right subtree values for every node).
 
 **Postcondition:** The BST contains the new value and still satisfies the BST property. The size of
-the BST has increased by one.
+The BST has increased by one.
 
 **Data abstraction applies** because the user of the BST ADT only needs to know that `insert(value)`
-adds a value and that `search(value)` finds a value. The user does not need to know whether the BST is
-implemented with nodes and pointers, whether it self-balances (AVL, Red-Black), or how the tree is
-traversed internally. The implementation could change from a basic BST to a self-balancing BST for
-better performance without any changes to the calling code.
+Adds a value and that `search(value)` finds a value. The user does not need to know whether the BST is
+Implemented with nodes and pointers, whether it self-balances (AVL, Red-Black), or how the tree is
+Traversed internally. The implementation could change from a basic BST to a self-balancing BST for
+Better performance without any changes to the calling code.
 
 </details>
 
 **Problem 11.** Using top-down design, decompose a program that simulates a simple ATM. The ATM
-allows a user to: (1) check balance, (2) withdraw cash, (3) deposit cash, (4) change PIN. Show the
-hierarchy of procedures at two levels of refinement.
+Allows a user to: (1) check balance, (2) withdraw cash, (3) deposit cash, (4) change PIN. Show the
+Hierarchy of procedures at two levels of refinement.
 
 <details>
 <summary>Solution</summary>
@@ -1488,8 +1488,8 @@ PROCEDURE atm()
 END PROCEDURE
 ```
 
-Sub-procedures `authenticateUser`, `checkBalance`, `withdrawCash`, `depositCash`, and `changePIN` each
-have a single responsibility. Each can be developed and modified independently.
+Sub-procedures `authenticateUser``checkBalance``withdrawCash``depositCash`And `changePIN` each
+Have a single responsibility. Each can be developed and modified independently.
 
 </details>
 
@@ -1507,7 +1507,7 @@ Identify the normalization issues and convert this to 3NF.
 <details>
 <summary>Solution</summary>
 
-**Issues:** Partial dependencies (2NF) -- `studentName` depends only on `studentID`, `courseName` and
+**Issues:** Partial dependencies (2NF) -- `studentName` depends only on `studentID``courseName` and
 `credits` depend only on `courseCode`. Transitive dependency (3NF) -- `courseName` depends on
 `courseCode`. Update, insertion, and deletion anomalies result.
 
@@ -1516,19 +1516,19 @@ Identify the normalization issues and convert this to 3NF.
 - `student`: studentID (PK), studentName
 - `course`: courseCode (PK), courseName, credits
 - `enrollment`: studentID (FK), courseCode (FK), semester, grade -- composite PK:
-  (studentID, courseCode, semester)
+ (studentID, courseCode, semester)
 
 </details>
 
 **Problem 13.** Explain how **polymorphism** reduces code duplication in a program that processes
-different types of payment methods (cash, credit card, digital wallet). Include a pseudocode example.
+Different types of payment methods (cash, credit card, digital wallet). Include a pseudocode example.
 
 <details>
 <summary>Solution</summary>
 
 Without polymorphism, the payment processing code would need a separate conditional branch for each
-payment type (IF-ELSE IF chain for cash, credit, wallet). Adding a new payment type requires modifying
-this conditional in every place payments are processed.
+Payment type (IF-ELSE IF chain for cash, credit, wallet). Adding a new payment type requires modifying
+This conditional in every place payments are processed.
 
 With polymorphism, a common interface `PaymentMethod` with a `process(amount)` method is defined:
 
@@ -1555,34 +1555,34 @@ END CLASS
 ```
 
 The checkout code calls `payment.process(amount)` without knowing the payment type. Adding a new
-payment method requires only a new class implementing `PaymentMethod` -- no existing code changes.
+Payment method requires only a new class implementing `PaymentMethod` -- no existing code changes.
 This follows the open-closed principle: open for extension, closed for modification.
 
 </details>
 
-**Problem 14.** A developer creates a `List` ADT with operations `add(item)`, `remove(index)`,
-`get(index)`, and `size()`. The initial implementation uses a dynamic array. Later, the developer
-switches to a doubly-linked list because the application frequently inserts and removes elements at
-arbitrary positions. Explain what changes are needed in (a) the ADT specification, and (b) the code
-that uses the ADT.
+**Problem 14.** A developer creates a `List` ADT with operations `add(item)``remove(index)`
+`get(index)`And `size()`. The initial implementation uses a dynamic array. Later, the developer
+Switches to a doubly-linked list because the application frequently inserts and removes elements at
+Arbitrary positions. Explain what changes are needed in (a) the ADT specification, and (b) the code
+That uses the ADT.
 
 <details>
 <summary>Solution</summary>
 
 (a) **No changes needed in the ADT specification.** The specification defines the interface (operations,
-parameters, return types, preconditions, postconditions) and is independent of implementation.
+Parameters, return types, preconditions, postconditions) and is independent of implementation.
 
 (b) **No changes needed in the calling code.** This is the key benefit of data abstraction. The calling
-code interacts only with the public interface. The only code that changes is the **implementation**
-itself. Performance characteristics change (e.g., `get(index)` from $O(1)$ to $O(n)$), but correctness
-and the interface do not.
+Code interacts only with the public interface. The only code that changes is the **implementation**
+Itself. Performance characteristics change (e.g., `get(index)` from $O(1)$ to $O(n)$), but correctness
+And the interface do not.
 
 </details>
 
 **Problem 15.** A school management system has the following requirements: Teachers can teach
-multiple subjects. Each subject is taught by exactly one teacher. Students enroll in multiple subjects.
+Multiple subjects. Each subject is taught by exactly one teacher. Students enroll in multiple subjects.
 Each subject can have many students. The system must record the grade each student receives in each
-subject.
+Subject.
 
 (a) Identify all entities, attributes, primary keys, and relationships with cardinality.
 (b) Draw the schema showing all tables, columns, primary keys, and foreign keys.
@@ -1596,7 +1596,7 @@ subject.
 - `Subject`: subjectCode (PK), subjectName, teacherID (FK)
 - `Student`: studentID (PK), name, gradeLevel
 - `Enrollment`: studentID (FK), subjectCode (FK), enrollmentGrade -- composite PK: (studentID,
-  subjectCode)
+ subjectCode)
 
 **Relationships:**
 
@@ -1606,11 +1606,15 @@ subject.
 - Subject-Enrollment: 1:M
 
 (b) **Schema:** Teacher (teacherID PK, name, email, department) -- 1:M to Subject (subjectCode PK,
-subjectName, teacherID FK). Subject -- M:N to Student (studentID PK, name, gradeLevel), resolved by
+SubjectName, teacherID FK). Subject -- M:N to Student (studentID PK, name, gradeLevel), resolved by
 Enrollment (PK: studentID + subjectCode, enrollmentGrade).
 
 The `teacherID` foreign key in `Subject` enforces that each subject has exactly one teacher. The
 `Enrollment` table resolves the M:N relationship between `Student` and `Subject` and stores the
-`enrollmentGrade`, which is an attribute of the relationship itself.
+`enrollmentGrade`Which is an attribute of the relationship itself.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

@@ -35,7 +35,7 @@ my-project/
 - Production code goes in `src/main/java`.
 - Test code goes in `src/test/java`.
 - Resources go alongside the Java source in `src/main/resources` and `src/test/resources`.
-- The default package for production code is typically `com.yourcompany.project`.
+- The default package for production code is `com.yourcompany.project`.
 - The output directory is `target/` (Maven) or `build/` (Gradle).
 
 ## Maven
@@ -43,7 +43,7 @@ my-project/
 ### POM Structure
 
 The Project Object Model (POM) is an XML file (`pom.xml`) that describes the project, its
-dependencies, plugins, and build configuration.
+Dependencies, plugins, and build configuration.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -100,24 +100,24 @@ dependencies, plugins, and build configuration.
 
 **Coordinate system:** Every Maven artifact is identified by three coordinates:
 
-- **`groupId`** — typically the reverse domain name (`com.example`, `org.apache.commons`).
-- **`artifactId`** — the project or library name (`my-app`, `commons-lang3`).
-- **`version`** — semantic version (`1.0.0`, `2.3.1-SNAPSHOT`).
+- **`groupId`** — the reverse domain name (`com.example``org.apache.commons`).
+- **`artifactId`** — the project or library name (`my-app``commons-lang3`).
+- **`version`** — semantic version (`1.0.0``2.3.1-SNAPSHOT`).
 
 ### Lifecycle Phases
 
 Maven's build lifecycle is a sequence of phases. Each phase delegates to plugins that implement the
-behavior. Running a phase executes all prior phases in order.
+Behavior. Running a phase executes all prior phases in order.
 
-| Phase      | Description                                                         |
+| Phase | Description |
 | ---------- | ------------------------------------------------------------------- |
-| `validate` | Validate project structure and POM correctness                      |
-| `compile`  | Compile production source code                                      |
-| `test`     | Compile and run unit tests                                          |
-| `package`  | Package compiled code into JAR/WAR                                  |
-| `verify`   | Run integration tests and verify quality checks                     |
-| `install`  | Install the artifact into the local repository (`~/.m2/repository`) |
-| `deploy`   | Copy the artifact to a remote repository                            |
+| `validate` | Validate project structure and POM correctness |
+| `compile` | Compile production source code |
+| `test` | Compile and run unit tests |
+| `package` | Package compiled code into JAR/WAR |
+| `verify` | Run integration tests and verify quality checks |
+| `install` | Install the artifact into the local repository (`~/.m2/repository`) |
+| `deploy` | Copy the artifact to a remote repository |
 
 ```bash
 # Run a specific phase (and all prior phases)
@@ -135,13 +135,13 @@ mvn package -DskipTests
 
 Maven scopes control when a dependency is available:
 
-| Scope               | Compile | Test | Runtime | Package | Transitively Available |
+| Scope | Compile | Test | Runtime | Package | Transitively Available |
 | ------------------- | ------- | ---- | ------- | ------- | ---------------------- |
-| `compile` (default) | Yes     | Yes  | Yes     | Yes     | Yes                    |
-| `provided`          | Yes     | Yes  | No      | No      | No                     |
-| `runtime`           | No      | Yes  | Yes     | Yes     | Yes                    |
-| `test`              | No      | Yes  | No      | No      | No                     |
-| `system`            | Yes     | Yes  | No      | Yes     | No                     |
+| `compile` (default) | Yes | Yes | Yes | Yes | Yes |
+| `provided` | Yes | Yes | No | No | No |
+| `runtime` | No | Yes | Yes | Yes | Yes |
+| `test` | No | Yes | No | No | No |
+| `system` | Yes | Yes | No | Yes | No |
 
 ```xml
 <!-- compile (default) — needed for compilation, included in package -->
@@ -185,9 +185,9 @@ When your project depends on library A, and library A depends on library B, libr
 **Mediation rules (when version conflicts exist):**
 
 1. **Nearest definition wins** — if two dependency paths provide the same artifact with different
-   versions, the version from the nearest path (shortest path in the dependency tree) is selected.
+ versions, the version from the nearest path (shortest path in the dependency tree) is selected.
 2. **First declaration wins** — if two paths have the same depth, the version declared first in the
-   POM wins.
+ POM wins.
 
 ```bash
 # View the dependency tree
@@ -283,15 +283,15 @@ Plugins provide the actual build behavior for each lifecycle phase:
 ```
 
 **Surefire vs Failsafe:** Surefire runs unit tests during the `test` phase. Failsafe runs
-integration tests during the `integration-test` and `verify` phases. By convention, integration test
-classes are named `*IT.java` or `*IntegrationTest.java`.
+Integration tests during the `integration-test` and `verify` phases. By convention, integration test
+Classes are named `*IT.java` or `*IntegrationTest.java`.
 
 ## Gradle
 
 ### Build Script Basics
 
 Gradle uses Groovy or Kotlin DSL for build scripts. The Kotlin DSL (`build.gradle.kts`) is now the
-default and recommended approach.
+Default and recommended approach.
 
 ```kotlin
 // build.gradle.kts
@@ -335,7 +335,7 @@ tasks.jar {
 ### Gradle Tasks
 
 Gradle's build model is based on tasks. Each task has inputs, outputs, and an action. Gradle's
-incremental build system skips tasks whose inputs and outputs have not changed (up-to-date check).
+Incremental build system skips tasks whose inputs and outputs have not changed (up-to-date check).
 
 ```bash
 # List all available tasks
@@ -357,15 +357,15 @@ incremental build system skips tasks whose inputs and outputs have not changed (
 
 Gradle uses configurations to declare dependencies with different roles:
 
-| Configuration        | Maven Equivalent | Description                                                             |
+| Configuration | Maven Equivalent | Description |
 | -------------------- | ---------------- | ----------------------------------------------------------------------- |
-| `implementation`     | `compile`        | Used for compilation and runtime, not exposed to dependents             |
-| `api`                | `compile`        | Used for compilation and runtime, exposed to dependents (use sparingly) |
-| `compileOnly`        | `provided`       | Needed for compilation only, not included in runtime classpath          |
-| `runtimeOnly`        | `runtime`        | Needed at runtime only                                                  |
-| `testImplementation` | `test`           | Used for compiling and running tests                                    |
-| `testCompileOnly`    | N/A              | Needed for test compilation only                                        |
-| `testRuntimeOnly`    | `test` (runtime) | Needed for running tests only                                           |
+| `implementation` | `compile` | Used for compilation and runtime, not exposed to dependents |
+| `api` | `compile` | Used for compilation and runtime, exposed to dependents (use sparingly) |
+| `compileOnly` | `provided` | Needed for compilation only, not included in runtime classpath |
+| `runtimeOnly` | `runtime` | Needed at runtime only |
+| `testImplementation` | `test` | Used for compiling and running tests |
+| `testCompileOnly` | N/A | Needed for test compilation only |
+| `testRuntimeOnly` | `test` (runtime) | Needed for running tests only |
 
 ```kotlin
 dependencies {
@@ -430,16 +430,16 @@ sourceSets {
 
 ## Maven vs Gradle
 
-| Aspect             | Maven                        | Gradle                                  |
+| Aspect | Maven | Gradle |
 | ------------------ | ---------------------------- | --------------------------------------- |
-| Build model        | Phase-based lifecycle        | Task-based DAG                          |
-| Configuration      | XML (verbose, declarative)   | Groovy/Kotlin DSL (concise, imperative) |
-| Incremental builds | Limited (re-runs phases)     | Up-to-date checks per task              |
-| Performance        | Slower for large projects    | Build cache, configuration avoidance    |
-| Learning curve     | Lower (conventions)          | Higher (more flexible)                  |
-| Multi-module       | Good (inheritance, profiles) | Excellent (composite builds)            |
-| Ecosystem          | Central (Maven Central)      | Central (can consume Maven repos)       |
-| Custom logic       | Plugins (Java/MXML)          | Any Groovy/Kotlin code in build script  |
+| Build model | Phase-based lifecycle | Task-based DAG |
+| Configuration | XML (verbose, declarative) | Groovy/Kotlin DSL (concise, imperative) |
+| Incremental builds | Limited (re-runs phases) | Up-to-date checks per task |
+| Performance | Slower for large projects | Build cache, configuration avoidance |
+| Learning curve | Lower (conventions) | Higher (more flexible) |
+| Multi-module | Good (inheritance, profiles) | Excellent (composite builds) |
+| Ecosystem | Central (Maven Central) | Central (can consume Maven repos) |
+| Custom logic | Plugins (Java/MXML) | Any Groovy/Kotlin code in build script |
 
 ## Version Management
 
@@ -456,7 +456,7 @@ MAJOR.MINOR.PATCH[-QUALIFIER]
 ### SNAPSHOT vs RELEASE
 
 - **`SNAPSHOT`** — a development version that may change. Maven repositories can serve the latest
-  SNAPSHOT for each request (`-SNAPSHOT` suffix).
+ SNAPSHOT for each request (`-SNAPSHOT` suffix).
 - **RELEASE** — a stable, immutable version. Once published, the artifact never changes.
 
 ```xml
@@ -482,8 +482,8 @@ Maven supports version ranges, but they are a source of non-reproducible builds.
 
 :::warning
 Avoid version ranges in production. They make builds non-reproducible — a build that
-works today may break tomorrow when a new compatible version is published. Pin exact versions and
-update them deliberately through dependency review.
+Works today may break tomorrow when a new compatible version is published. Pin exact versions and
+Update them deliberately through dependency review.
 :::
 
 ## Multi-Module Projects
@@ -592,9 +592,9 @@ mvn clean install
 
 :::info
 In Maven, a parent POM with `&lt;packaging&gt;pom&lt;/packaging&gt;` serves as an
-aggregation point and a source of shared configuration. In Gradle, the `settings.gradle.kts` file
-declares which modules belong to the build, and shared configuration is applied through convention
-plugins or the `subprojects` block.
+Aggregation point and a source of shared configuration. In Gradle, the `settings.gradle.kts` file
+Declares which modules belong to the build, and shared configuration is applied through convention
+Plugins or the `subprojects` block.
 :::
 
 ## Common Pitfalls
@@ -609,11 +609,11 @@ mvn dependency:tree -Dverbose | grep "conflict"
 ./gradlew dependencies --configuration runtimeClasspath
 ```
 
-**Symptoms:** `NoSuchMethodError`, `ClassNotFoundException`, `NoClassDefFoundError` at runtime.
+**Symptoms:** `NoSuchMethodError``ClassNotFoundException``NoClassDefFoundError` at runtime.
 These occur when multiple versions of the same library are on the classpath.
 
 **Fix:** Use `dependencyManagement` (Maven) or `constraints`/BOM (Gradle) to force a single version
-across all modules.
+Across all modules.
 
 ### Forgetting `testImplementation` Scope
 
@@ -643,16 +643,16 @@ across all modules.
 ### SNAPSHOT Instability
 
 SNAPSHOT versions are mutable — the same version number may resolve to different artifacts over
-time. This can cause builds to succeed locally but fail on CI (which may have cached an older
-snapshot), or two developers to get different results.
+Time. This can cause builds to succeed locally but fail on CI (which may have cached an older
+Snapshot), or two developers to get different results.
 
 **Fix:** Use SNAPSHOT only during active development. Release stable versions frequently. Configure
-your CI to clean the local Maven repository before building.
+Your CI to clean the local Maven repository before building.
 
 ### Not Using a Dependency BOM
 
-Without a BOM or `dependencyManagement`, each dependency version must be declared individually,
-leading to version mismatches between related libraries:
+Without a BOM or `dependencyManagement`Each dependency version must be declared individually,
+Leading to version mismatches between related libraries:
 
 ```xml
 <!-- BAD — individual versions may be incompatible -->
@@ -685,9 +685,9 @@ leading to version mismatches between related libraries:
 ### Gradle Configuration Cache Issues
 
 Gradle's configuration cache (enabled with `--configuration-cache`) caches the project configuration
-between builds. Build scripts must be idempotent — they must not read system state that can change
-between builds (e.g., `System.getenv()` outside of providers, `new Date()` in dependency
-declarations).
+Between builds. Build scripts must be idempotent — they must not read system state that can change
+Between builds (e.g., `System.getenv()` outside of providers, `new Date()` in dependency
+Declarations).
 
 ```kotlin
 // BAD — reads mutable system state during configuration
@@ -828,7 +828,7 @@ publishing {
 
 ### Private Repositories (Nexus, Artifactory)
 
-Corporate environments typically run a private Maven repository manager (Sonatype Nexus, JFrog
+Corporate environments run a private Maven repository manager (Sonatype Nexus, JFrog
 Artifactory) that:
 
 - **Proxies Maven Central** — reduces external bandwidth and provides a local cache.
@@ -947,7 +947,7 @@ rm -rf ~/.gradle/caches
 ## Wrapper Scripts
 
 Both Maven and Gradle provide wrapper scripts that ensure a consistent build tool version across all
-environments, regardless of what is installed on the developer's machine.
+Environments, regardless of what is installed on the developer's machine.
 
 ### Maven Wrapper
 
@@ -960,7 +960,7 @@ mvn wrapper:wrapper -Dmaven=3.9.6
 ```
 
 The wrapper downloads the specified Maven version to `~/.m2/wrapper/dists/` and uses it for the
-build. Check `mvnw` and `.mvn/wrapper/maven-wrapper.properties` into version control.
+Build. Check `mvnw` and `.mvn/wrapper/maven-wrapper.properties` into version control.
 
 ### Gradle Wrapper
 
@@ -973,12 +973,19 @@ gradle wrapper --gradle-version=8.5
 ```
 
 The wrapper downloads the specified Gradle distribution to `~/.gradle/wrapper/dists/`. Check
-`gradlew`, `gradlew.bat`, and `gradle/wrapper/gradle-wrapper.properties` into version control.
+`gradlew``gradlew.bat`And `gradle/wrapper/gradle-wrapper.properties` into version control.
 
 :::warning
 Always use wrapper scripts. Never depend on a globally installed Maven or Gradle.
 Different developers (and CI agents) may have different versions installed, leading to "works on my
-machine" build failures. Pin the wrapper version in version control and update it deliberately
-through a PR.
+Machine" build failures. Pin the wrapper version in version control and update it deliberately
+Through a PR.
 :::
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

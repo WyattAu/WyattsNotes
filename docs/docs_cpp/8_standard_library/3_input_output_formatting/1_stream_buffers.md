@@ -10,12 +10,12 @@ slug: stream-buffers-and-locale-facets
 ---
 ## Stream Buffers and Locale Facets
 
-The C++ I/O system is built on a layered architecture. High-level stream classes (`std::istream`,
+The C++ I/O system is built on a layered architecture. High-level stream classes (`std::istream`
 `std::ostream`) perform formatting and parsing, then delegate actual character transfer to a
-low-level **stream buffer** (`std::basic_streambuf`). Locales provide a collection of **facets** ---
-polymorphic classes that encapsulate cultural conventions like numeric formatting, character
-classification, and collation. This section covers the stream buffer abstraction, its standard
-specializations, locale facets, and custom stream buffer implementation.
+Low-level **stream buffer** (`std::basic_streambuf`). Locales provide a collection of **facets** ---
+Polymorphic classes that encapsulate cultural conventions like numeric formatting, character
+Classification, and collation. This section covers the stream buffer abstraction, its standard
+Specializations, locale facets, and custom stream buffer implementation.
 
 ### The Stream Buffer Abstraction
 
@@ -26,9 +26,9 @@ I/O [N4950 §30.4]. A stream buffer manages two character buffers:
 - **Get area** (input buffer): characters read from the source and available for consumption.
 
 The stream buffer is responsible for the actual transfer of characters between these in-memory
-buffers and the external device (file, console, string, network socket). The high-level stream
-classes (`std::istream`, `std::ostream`) are thin wrappers that perform formatting and parsing, then
-delegate the actual I/O to their associated stream buffer.
+Buffers and the external device (file, console, string, network socket). The high-level stream
+Classes (`std::istream``std::ostream`) are thin wrappers that perform formatting and parsing, then
+Delegate the actual I/O to their associated stream buffer.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -55,29 +55,29 @@ delegate the actual I/O to their associated stream buffer.
 
 The standard stream buffer operations [N4950 §30.4.4] are:
 
-| Virtual Function            | Direction | Purpose                                                                                |
+| Virtual Function | Direction | Purpose |
 | :-------------------------- | :-------- | :------------------------------------------------------------------------------------- |
-| `overflow(int_type c)`      | Output    | Called when the put area is full; writes buffered characters and optionally stores `c` |
-| `underflow()`               | Input     | Called when the get area is empty; fills the get area from the source                  |
-| `sync()`                    | Both      | Synchronizes the buffer with the external device (e.g., flushes to disk)               |
-| `setbuf(char*, streamsize)` | Both      | Sets the internal buffer (called by `std::streambuf::pubsetbuf`)                       |
+| `overflow(int_type c)` | Output | Called when the put area is full; writes buffered characters and optionally stores `c` |
+| `underflow()` | Input | Called when the get area is empty; fills the get area from the source |
+| `sync()` | Both | Synchronizes the buffer with the external device (e.g., flushes to disk) |
+| `setbuf(char*, streamsize)` | Both | Sets the internal buffer (called by `std::streambuf::pubsetbuf`) |
 
 ### Standard Stream Buffer Specializations
 
 The library provides three concrete stream buffer types [N4950 §30.4.2]:
 
 **`std::basic_stringbuf&lt;CharT>`** — reads from and writes to a `std::basic_string`. Used by
-`std::istringstream`, `std::ostringstream`, and `std::stringstream`. The buffer stores characters
-directly in a dynamically managed string, so no external device is involved [N4950 §30.4.2.3].
+`std::istringstream``std::ostringstream`And `std::stringstream`. The buffer stores characters
+Directly in a dynamically managed string, so no external device is involved [N4950 §30.4.2.3].
 
-**`std::basic_filebuf&lt;CharT>`** — reads from and writes to a file. Used by `std::ifstream`,
-`std::ofstream`, and `std::fstream`. Manages a `std::FILE*`-like resource internally, but with full
+**`std::basic_filebuf&lt;CharT>`** — reads from and writes to a file. Used by `std::ifstream`
+`std::ofstream`And `std::fstream`. Manages a `std::FILE*`-like resource internally, but with full
 C++ semantics (RAII, locale awareness, codecvt for character set conversion) [N4950 §30.4.2.4].
 
 **`std::basic_spanbuf&lt;CharT>`** (C++23) — reads from and writes to a contiguous sequence of
-characters described by a `std::span`. Unlike `stringbuf`, it does not own the underlying storage.
+Characters described by a `std::span`. Unlike `stringbuf`It does not own the underlying storage.
 This enables zero-copy I/O into pre-allocated buffers, which is critical in embedded systems and
-high-performance networking where allocation is forbidden [N4950 §30.4.2.5].
+High-performance networking where allocation is forbidden [N4950 §30.4.2.5].
 
 ```cpp
 #include <iostream>
@@ -110,32 +110,32 @@ void spanbuf_demo() {
 
 :::tip
 Prefer `std::spanbuf` over `std::stringbuf` when you need to write formatted output into a
-fixed-size pre-allocated buffer (e.g., a network packet buffer or embedded flash region). It avoids
-heap allocation entirely.
+Fixed-size pre-allocated buffer (e.g., a network packet buffer or embedded flash region). It avoids
+Heap allocation entirely.
 :::
 
 ### Locale Facets
 
 A **locale** in C++ is a collection of **facets** — polymorphic classes that encapsulate cultural
-conventions for text processing [N4950 §30.3]. The standard defines facets for character
-classification, numeric formatting, collation, time formatting, and message catalogs.
+Conventions for text processing [N4950 §30.3]. The standard defines facets for character
+Classification, numeric formatting, collation, time formatting, and message catalogs.
 
 Each facet is identified by a `std::locale::id` static member and accessed via
 `std::use_facet&lt;F>(loc)`. The locale object holds a reference-counted set of facets; copying a
-locale is cheap (shared ownership) [N4950 §30.3.1].
+Locale is cheap (shared ownership) [N4950 §30.3.1].
 
 The standard facets [N4950 §30.3.1.1.2]:
 
-| Facet                      | Header     | Purpose                                                  |
+| Facet | Header | Purpose |
 | :------------------------- | :--------- | :------------------------------------------------------- |
-| `std::ctype&lt;CharT>`     | `<locale>` | Character classification and case conversion             |
-| `std::numpunct&lt;CharT>`  | `<locale>` | Numeric punctuation (decimal point, thousands separator) |
-| `std::collate&lt;CharT>`   | `<locale>` | String collation (comparison ordering)                   |
-| `std::time_get&lt;CharT>`  | `<locale>` | Parsing time from character sequences                    |
-| `std::time_put&lt;CharT>`  | `<locale>` | Formatting time into character sequences                 |
-| `std::money_get&lt;CharT>` | `<locale>` | Parsing monetary values                                  |
-| `std::money_put&lt;CharT>` | `<locale>` | Formatting monetary values                               |
-| `std::messages&lt;CharT>`  | `<locale>` | Message catalog lookup (gettext-like)                    |
+| `std::ctype&lt;CharT>` | `<locale>` | Character classification and case conversion |
+| `std::numpunct&lt;CharT>` | `<locale>` | Numeric punctuation (decimal point, thousands separator) |
+| `std::collate&lt;CharT>` | `<locale>` | String collation (comparison ordering) |
+| `std::time_get&lt;CharT>` | `<locale>` | Parsing time from character sequences |
+| `std::time_put&lt;CharT>` | `<locale>` | Formatting time into character sequences |
+| `std::money_get&lt;CharT>` | `<locale>` | Parsing monetary values |
+| `std::money_put&lt;CharT>` | `<locale>` | Formatting monetary values |
+| `std::messages&lt;CharT>` | `<locale>` | Message catalog lookup (gettext-like) |
 
 ```cpp
 #include <iostream>
@@ -167,9 +167,9 @@ void locale_facet_demo() {
 
 :::info
 The default `"C"` locale uses `.` as the decimal point and has no thousands separator. The
-`""` locale (empty string) selects the user's preferred locale from environment variables (`LC_ALL`,
-`LC_NUMERIC`, `LANG`). Be aware that locale-sensitive operations are **not** thread-safe in the
-standard: `std::locale::global()` modifies a global variable and is not safe to call concurrently
+`""` locale (empty string) selects the user's preferred locale from environment variables (`LC_ALL`
+`LC_NUMERIC``LANG`). Be aware that locale-sensitive operations are **not** thread-safe in the
+Standard: `std::locale::global()` modifies a global variable and is not safe to call concurrently
 [N4950 §30.3.1.3].
 :::
 
@@ -177,7 +177,7 @@ standard: `std::locale::global()` modifies a global variable and is not safe to 
 
 The power of the stream buffer abstraction is that you can derive from `std::streambuf` to redirect
 I/O to any destination. The following example implements a logging stream buffer that prefixes each
-line with a timestamp and log level:
+Line with a timestamp and log level:
 
 ```cpp
 #include <ctime>
@@ -256,20 +256,20 @@ Output (example):
 
 :::tip
 This pattern is used in production logging frameworks. The `overflow` override is called for
-each character written to the stream. Buffering the line and flushing on `\n` gives you control over
-the output format. For thread-safe logging, wrap the `sputn` call in a mutex.
+Each character written to the stream. Buffering the line and flushing on `\n` gives you control over
+The output format. For thread-safe logging, wrap the `sputn` call in a mutex.
 :::
 
 :::warning
 Always override `sync()` in addition to `overflow()`. The `sync()` method is called by
-`std::flush` and `std::endl`. If you only override `overflow()`, manually flushed output (via
+`std::flush` and `std::endl`. If you only override `overflow()`Manually flushed output (via
 `std::flush`) will not reach your sink.
 :::
 
 ### Connecting Stream Buffers to Streams
 
-A stream (`std::istream`, `std::ostream`) does not own its stream buffer. You can redirect a stream
-to a different buffer at any time using `rdbuf()`:
+A stream (`std::istream``std::ostream`) does not own its stream buffer. You can redirect a stream
+To a different buffer at any time using `rdbuf()`:
 
 ```cpp
 #include <fstream>
@@ -289,7 +289,7 @@ void rdbuf_redirection_demo() {
 
 This technique is used in unit testing to capture `std::cout` output for assertion. The call to
 `rdbuf(new_buf)` returns the previous buffer, which must be saved and restored to avoid dangling
-state.
+State.
 
 ## See Also
 
@@ -321,26 +321,26 @@ Get area (input buffer):
 ```
 
 - `pbase` / `pptr` / `epptr`: Put area begin, current position, end. Characters between `pbase` and
-  `pptr` are buffered but not yet written to the destination.
+ `pptr` are buffered but not yet written to the destination.
 - `eback` / `gptr` / `egptr`: Get area begin, current position, end. Characters between `gptr` and
-  `egptr` are available for reading.
+ `egptr` are available for reading.
 
 When `pptr == epptr` (put area full), the stream calls `overflow()`. When `gptr == egptr` (get area
-empty), the stream calls `underflow()`.
+Empty), the stream calls `underflow()`.
 
 ### `underflow` vs `uflow` vs `pbackfail`
 
 The stream buffer provides three input-related virtual functions [N4950 §30.4.4.4]:
 
-| Function       | Purpose                                                  | Modifies `gptr`? |
+| Function | Purpose | Modifies `gptr`? |
 | :------------- | :------------------------------------------------------- | :--------------- |
-| `underflow()`  | Fill the get area from the source; return the first char | No (peek)        |
-| `uflow()`      | Call `underflow()`, then advance `gptr`                  | Yes (consume)    |
-| `pbackfail(c)` | Put a character back into the get area (unget)           | Yes (retreat)    |
+| `underflow()` | Fill the get area from the source; return the first char | No (peek) |
+| `uflow()` | Call `underflow()`Then advance `gptr` | Yes (consume) |
+| `pbackfail(c)` | Put a character back into the get area (unget) | Yes (retreat) |
 
 `underflow()` is a "peek" operation — it fills the buffer but does not advance the read position.
-`uflow()` calls `underflow()` and then increments `gptr`, consuming the character. Most custom
-stream buffers only need to override `underflow()`; the default `uflow()` delegates to it.
+`uflow()` calls `underflow()` and then increments `gptr`Consuming the character. Most custom
+Stream buffers only need to override `underflow()`; the default `uflow()` delegates to it.
 
 ```cpp
 #include <cstddef>
@@ -380,7 +380,7 @@ void counting_stream_demo() {
 
 By default, `std::cout` and `std::cin` are **tied** — accessing `std::cin` flushes `std::cout`
 [N4950 §30.4.5.3]. This ensures prompts appear before input is read. `std::cerr` is **unitbuf** — it
-flushes after every output operation.
+Flushes after every output operation.
 
 ```cpp
 #include <iostream>
@@ -412,15 +412,15 @@ void buffer_mode_demo() {
 :::warning
 Flushing `std::cout` on every write (unitbuf mode) can severely degrade performance in
 I/O-heavy code. Each flush results in a `write()` system call, which is orders of magnitude slower
-than writing to the in-memory buffer. Only use unitbuf for logging where immediate visibility is
-critical.
+Than writing to the in-memory buffer. Only use unitbuf for logging where immediate visibility is
+Critical.
 :::
 
 ### `std::ios::sync_with_stdio`
 
-`std::ios::sync_with_stdio(false)` decouples C++ streams from C stdio (`printf`, `scanf`, `fread`,
+`std::ios::sync_with_stdio(false)` decouples C++ streams from C stdio (`printf``scanf``fread`
 `fwrite`) [N4950 §30.4.5.1]. By default, C++ streams are synchronized with C stdio to allow
-interleaved use, which incurs a performance penalty.
+Interleaved use, which incurs a performance penalty.
 
 ```cpp
 #include <cstdio>
@@ -448,9 +448,9 @@ void sync_demo() {
 
 :::warning
 Once `sync_with_stdio(false)` is called, it cannot be reversed (the standard says the
-effect is irreversible once any standard stream has been used). This is a common pattern in
-competitive programming for fast I/O, but it is dangerous in library code because it affects the
-entire process. Never call it in a library.
+Effect is irreversible once any standard stream has been used). This is a common pattern in
+Competitive programming for fast I/O, but it is dangerous in library code because it affects the
+Entire process. Never call it in a library.
 :::
 
 ### Custom Input Stream Buffer
@@ -542,20 +542,20 @@ void seek_demo() {
 
 :::warning
 `seekg` and `seekp` use the same position in a `std::fstream` (on POSIX), but the
-standard permits them to use separate positions. For maximum portability, always call `clear()`
-before seeking after a failed read, and avoid mixing reads and writes without an intervening seek.
+Standard permits them to use separate positions. For maximum portability, always call `clear()`
+Before seeking after a failed read, and avoid mixing reads and writes without an intervening seek.
 :::
 
 ### Manipulators and Stream State
 
 The stream state is controlled by a bitmask of `std::ios::iostate` flags [N4950 §30.4.3]:
 
-| Flag      | Meaning                                            | Test Method |
+| Flag | Meaning | Test Method |
 | :-------- | :------------------------------------------------- | :---------- |
-| `goodbit` | No errors                                          | `good()`    |
-| `eofbit`  | End of file reached                                | `eof()`     |
-| `failbit` | Format error (e.g., `cin &gt;&gt;` on non-numeric) | `fail()`    |
-| `badbit`  | I/O error (stream corrupted, device failure)       | `bad()`     |
+| `goodbit` | No errors | `good()` |
+| `eofbit` | End of file reached | `eof()` |
+| `failbit` | Format error (e.g., `cin &gt;&gt;` on non-numeric) | `fail()` |
+| `badbit` | I/O error (stream corrupted, device failure) | `bad()` |
 
 ```cpp
 #include <iostream>
@@ -587,30 +587,30 @@ void stream_state_demo() {
 
 ### Common Pitfalls
 
-1. **Not overriding `sync()` in custom stream buffers:** If you only override `overflow()`, calls to
-   `std::flush` and `std::endl` will not reach your sink. Always override both `overflow()` and
-   `sync()`.
+1. **Not overriding `sync()` in custom stream buffers:** If you only override `overflow()`Calls to
+ `std::flush` and `std::endl` will not reach your sink. Always override both `overflow()` and
+ `sync()`.
 
 2. **Returning EOF from `underflow()` incorrectly:** `underflow()` should return the next character
-   (as an `int`) or `traits_type::eof()` if the source is exhausted. It should **not** advance
-   `gptr`. If you advance `gptr` in `underflow()`, the first character will be silently skipped.
+ (as an `int`) or `traits_type::eof()` if the source is exhausted. It should **not** advance
+ `gptr`. If you advance `gptr` in `underflow()`The first character will be silently skipped.
 
 3. **Using `std::cout` and `printf` interchangeably without `sync_with_stdio`:** After calling
-   `sync_with_stdio(false)`, the C++ and C I/O buffers are independent. Output may appear out of
-   order or be lost. Either stay synchronized (the default) or use only one I/O system.
+ `sync_with_stdio(false)`The C++ and C I/O buffers are independent. Output may appear out of
+ order or be lost. Either stay synchronized (the default) or use only one I/O system.
 
-4. **`rdbuf()` ownership:** `std::cout.rdbuf(new_buf)` does **not** delete the old buffer. It simply
-   replaces the pointer. If you dynamically allocate a custom stream buffer, you must delete it
-   yourself after restoring the original buffer. Alternatively, wrap the buffer in a
-   `std::unique_ptr` and manage its lifetime explicitly.
+4. **`rdbuf()` ownership:** `std::cout.rdbuf(new_buf)` does **not** delete the old buffer. It 
+ replaces the pointer. If you dynamically allocate a custom stream buffer, you must delete it
+ yourself after restoring the original buffer. Alternatively, wrap the buffer in a
+ `std::unique_ptr` and manage its lifetime explicitly.
 
 5. **`std::endl` vs `'\n'`:** `std::endl` flushes the stream after writing `'\n'`. In tight loops,
-   this causes a system call per line. Use `'\n'` for performance-critical output and `std::flush`
-   only when you need the output to be immediately visible.
+ this causes a system call per line. Use `'\n'` for performance-critical output and `std::flush`
+ only when you need the output to be immediately visible.
 
 6. **Thread safety of C++ streams:** The C++ standard does **not** guarantee that concurrent writes
-   to the same `std::ostream` from different threads are safe. The behavior is undefined. Use
-   `std::mutex` to serialize access to shared streams, or give each thread its own stream.
+ to the same `std::ostream` from different threads are safe. The behavior is undefined. Use
+ `std::mutex` to serialize access to shared streams, or give each thread its own stream.
 
 :::
 
@@ -623,3 +623,15 @@ void stream_state_demo() {
 :::
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

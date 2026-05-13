@@ -12,17 +12,17 @@ slug: temporary-materialization
 
 In C++17 and later, a prvalue is not an object — it is a recipe for constructing one. The prvalue is
 **materialized** into an actual object only when the language requires an identity: binding to a
-reference, accessing a member, or taking an address. This distinction is what makes guaranteed copy
-elision (RVO) possible.
+Reference, accessing a member, or taking an address. This distinction is what makes guaranteed copy
+Elision (RVO) possible.
 
 ## 5.1 From prvalue to xvalue
 
 In C++17 and later, a prvalue is not an object — it is a recipe for constructing an object. The
-prvalue is **materialized** (converted to an xvalue) only when it needs an identity: binding to a
-reference, accessing a member, or being used in a context that requires an address [N4950 S7.3.5].
+Prvalue is **materialized** (converted to an xvalue) only when it needs an identity: binding to a
+Reference, accessing a member, or being used in a context that requires an address [N4950 S7.3.5].
 
 This is called **temporary materialization conversion**. The materialized temporary has the same
-type as the prvalue and its lifetime is determined by the context in which it appears [N4950
+Type as the prvalue and its lifetime is determined by the context in which it appears [N4950
 S11.4.7].
 
 ```cpp
@@ -47,14 +47,14 @@ void materialization_demo() {
 ### Formal Definition from the Standard
 
 [N4950 S7.3.4]/1 defines a prvalue as an expression that **initializes** an object or computes the
-value of an operand, as specified by the context in which it appears. Crucially, a prvalue does
+Value of an operand, as specified by the context in which it appears. Crucially, a prvalue does
 **not** have identity — it is not an object, it is not a reference, and it has no address.
 
 Temporary materialization conversion [N4950 S7.3.5] is the process by which a prvalue of type `T` is
-converted to an xvalue of type `T`. The conversion creates a temporary object of type `T` by
-initializing it from the prvalue. The resulting xvalue refers to this temporary. The temporary is
-created with automatic storage duration, and its lifetime is governed by the usual rules for
-temporaries [N4950 S11.4.7].
+Converted to an xvalue of type `T`. The conversion creates a temporary object of type `T` by
+Initializing it from the prvalue. The resulting xvalue refers to this temporary. The temporary is
+Created with automatic storage duration, and its lifetime is governed by the usual rules for
+Temporaries [N4950 S11.4.7].
 
 Formally, the Standard states [N4950 S7.3.5]:
 
@@ -63,25 +63,25 @@ Formally, the Standard states [N4950 S7.3.5]:
 > representation.
 
 This means materialization is **never optional** — it is a language rule triggered by specific
-syntactic contexts, not a compiler optimization.
+Syntactic contexts, not a compiler optimization.
 
 ### The Two-Phase Model: prvalue as Initializer
 
 Prior to C++17, the Standard treated prvalues as rvalue temporaries. A prvalue of type `T` was an
-xvalue of type `T` — it was already an object. The compiler was then permitted (but not required) to
-elide the copy/move when initializing the destination [N4950 S11.9.6].
+Xvalue of type `T` — it was already an object. The compiler was then permitted (but not required) to
+Elide the copy/move when initializing the destination [N4950 S11.9.6].
 
 C++17 fundamentally changed this model. Now there are two distinct phases:
 
 1. **Initialization phase:** The prvalue is a _recipe_ for construction. No object exists yet. The
-   recipe is "applied" to the target storage directly.
+ recipe is "applied" to the target storage directly.
 2. **Materialization phase:** If the language requires an object with identity (e.g., for member
-   access, binding to a reference), the recipe is _applied_ to a temporary, and the prvalue becomes
-   an xvalue referring to that temporary.
+ access, binding to a reference), the recipe is _applied_ to a temporary, and the prvalue becomes
+ an xvalue referring to that temporary.
 
 This separation is what makes guaranteed copy elision a _language rule_ rather than an optimization.
 When a prvalue initializes an object of the same type, the recipe is applied directly to the
-destination — there is no intermediate temporary to elide, so there is nothing to optimize away.
+Destination — there is no intermediate temporary to elide, so there is nothing to optimize away.
 
 ```cpp
 #include <iostream>
@@ -109,7 +109,7 @@ int main() {
 ## 5.2 Guaranteed Copy Elision (C++17)
 
 Since C++17, when a prvalue initializes an object of the same type, no temporary is created and no
-copy/move constructor is invoked. The prvalue initializes the destination object directly [N4950
+Copy/move constructor is invoked. The prvalue initializes the destination object directly [N4950
 S8.4.4]. This is called **guaranteed copy elision** or **mandatory copy elision**.
 
 ```cpp
@@ -149,16 +149,16 @@ dtor
 ### Proof That C++17 Eliminates Copy/Move in Return Statements
 
 **Claim:** `return T{args};` in a function returning `T` never invokes a copy or move constructor of
-`T`, regardless of whether `T`'s copy/move constructors are deleted.
+`T`Regardless of whether `T`'s copy/move constructors are deleted.
 
 **Proof:**
 
 1. The expression `T{args}` is a prvalue of type `T` [N4950 S7.3.4].
 2. A prvalue is not an object — it is an initializer [N4950 S7.3.4]/1.
 3. When a prvalue of type `T` appears as the operand of a `return` statement in a function with
-   return type `T`, the prvalue initializes the result object directly [N4950 S8.4.4].
+ return type `T`The prvalue initializes the result object directly [N4950 S8.4.4].
 4. Direct initialization of an object from a prvalue of the same type does not involve a copy or
-   move constructor — the prvalue _is_ the initialization [N4950 S8.4.4]/1.
+ move constructor — the prvalue _is_ the initialization [N4950 S8.4.4]/1.
 5. Therefore, no copy or move constructor is invoked. QED.
 
 ```cpp
@@ -189,9 +189,9 @@ int main() {
 
 ### Interaction with `decltype`
 
-In C++17, `decltype` applied to a prvalue yields the non-reference type `T`, not `T&&` [N4950
+In C++17, `decltype` applied to a prvalue yields the non-reference type `T`Not `T&&` [N4950
 S10.1.1]. This is consistent with the prvalue-as-recipe model: since a prvalue is not an object but
-an initializer, there is no object to take a reference to.
+An initializer, there is no object to take a reference to.
 
 ```cpp
 #include <type_traits>
@@ -216,10 +216,10 @@ int main() {
 Two related but distinct optimizations exist:
 
 - **RVO (Return Value Optimization):** The unnamed prvalue returned from a function is used to
-  directly initialize the destination. This is **guaranteed** in C++17 [N4950 S8.4.4].
+ directly initialize the destination. This is **guaranteed** in C++17 [N4950 S8.4.4].
 - **NRVO (Named Return Value Optimization):** A named local variable returned from a function is
-  constructed directly in the caller's storage. This is **not guaranteed** but is performed by all
-  major compilers under `-O2`.
+ constructed directly in the caller's storage. This is **not guaranteed** but is performed by all
+ major compilers under `-O2`.
 
 ```cpp
 #include <iostream>
@@ -280,7 +280,7 @@ Note: even with NRVO disabled, the RVO case still produces no copy/move because 
 ### NRVO Failure Cases
 
 NRVO is an optimization performed by the compiler's backend. It fails when the compiler cannot
-statically determine a unique local variable to construct in the caller's storage.
+Statically determine a unique local variable to construct in the caller's storage.
 
 **1. Conditional returns with different named variables.**
 
@@ -332,7 +332,7 @@ int main() {
 ```
 
 The parameter `param` already exists in its own storage when the function body begins. The implicit
-move rule [N4950 S11.9.6] applies instead.
+Move rule [N4950 S11.9.6] applies instead.
 
 **3. The address of the return variable escapes.**
 
@@ -357,14 +357,14 @@ T address_taken() {
 
 **4. Debug builds (`-O0`).**
 
-NRVO is an optimization. At `-O0`, compilers typically do not perform it. Always ensure your move
-constructors are correct, because NRVO may not apply.
+NRVO is an optimization. At `-O0`Compilers do not perform it. Always ensure your move
+Constructors are correct, because NRVO may not apply.
 
 :::warning
 NRVO can be inhibited by multiple return paths returning different named variables, by
-returning a function parameter, or by certain compiler flags. Always write code that is correct even
-if NRVO fails — which means ensuring your move constructor is correct (or your copy constructor, as
-a fallback).
+Returning a function parameter, or by certain compiler flags. Always write code that is correct even
+If NRVO fails — which means ensuring your move constructor is correct (or your copy constructor, as
+A fallback).
 :::
 
 ## See Also
@@ -376,16 +376,16 @@ a fallback).
 ## 5.4 Materialization Points
 
 A prvalue is materialized at specific points in the language. The materialization creates a
-temporary object with automatic storage duration [N4950 S7.3.5]. The following contexts are
-materialization points:
+Temporary object with automatic storage duration [N4950 S7.3.5]. The following contexts are
+Materialization points:
 
-1. **Binding to a reference.** When a prvalue binds to a `const T&` or `T&&`, a temporary is created
-   and the reference binds to it.
+1. **Binding to a reference.** When a prvalue binds to a `const T&` or `T&&`A temporary is created
+ and the reference binds to it.
 2. **Member access on a prvalue class.** `Point{1, 2}.x` materializes the `Point` temporary.
 3. **Taking the address.** `&Point{1, 2}` is ill-formed in C++17 — you cannot take the address of a
-   prvalue. You must materialize it first: `const auto& r = Point{1, 2}; &r;`.
+ prvalue. You must materialize it first: `const auto& r = Point{1, 2}; &r;`.
 4. **Initializing an object.** `T t = T{...};` — the prvalue initializes `t` directly (no separate
-   temporary, due to guaranteed copy elision).
+ temporary, due to guaranteed copy elision).
 5. **Using a prvalue in a condition.** `if (Point{1, 2}.x &gt; 0)` materializes the temporary.
 
 ```cpp
@@ -436,14 +436,14 @@ S7.3.5]. The full list:
 
 ## 5.5 Lifetime Extension Rules
 
-When a prvalue is bound to a `const T&` or a `T&&`, the lifetime of the materialized temporary is
-extended to match the lifetime of the reference [N4950 S11.4.7]. This is called **temporary lifetime
-extension**.
+When a prvalue is bound to a `const T&` or a `T&&`The lifetime of the materialized temporary is
+Extended to match the lifetime of the reference [N4950 S11.4.7]. This is called **temporary lifetime
+Extension**.
 
 :::warning
 Lifetime extension applies only when the reference is directly bound to the prvalue. If
-the prvalue is passed through an intermediate function or stored in a member, lifetime extension
-does **not** propagate.
+The prvalue is passed through an intermediate function or stored in a member, lifetime extension
+Does **not** propagate.
 :::
 
 ```cpp
@@ -489,22 +489,22 @@ int main() {
 ### Lifetime Extension Does Not Chain
 
 Lifetime extension applies to the **directly bound** reference only. If the reference is used to
-initialize another reference, the extension does not propagate. The rule is precisely stated in
+Initialize another reference, the extension does not propagate. The rule is precisely stated in
 [N4950 S11.4.7]/2:
 
 > The temporary object to which the reference is bound or the temporary object that is the complete
 > object of a subobject to which the reference is bound persists for the lifetime of the reference
 > if the reference is bound to a temporary object.
 
-When a prvalue is passed to a function that takes a `const T&`, the temporary is materialized for
-the function parameter, and the parameter's lifetime is the function body. When the function returns
-a reference to that parameter, the returned reference is dangling.
+When a prvalue is passed to a function that takes a `const T&`The temporary is materialized for
+The function parameter, and the parameter's lifetime is the function body. When the function returns
+A reference to that parameter, the returned reference is dangling.
 
 ### Lifetime Extension with Aggregate Initialization
 
 When an aggregate is initialized from prvalues, the lifetime of those prvalues is extended if they
-are bound to reference members. The prvalue `42` is directly bound to the reference member `r`
-during aggregate initialization [N4950 S11.6.1]. The lifetime extension rule applies:
+Are bound to reference members. The prvalue `42` is directly bound to the reference member `r`
+During aggregate initialization [N4950 S11.6.1]. The lifetime extension rule applies:
 
 ```cpp
 struct RefHolder {
@@ -520,8 +520,8 @@ void aggregate_extension() {
 ## 5.6 Materialization and Move Semantics
 
 Materialization interacts with move semantics in subtle ways. When a prvalue initializes an object,
-no move occurs — the object is constructed directly. But when an xvalue (materialized temporary
-bound to an rvalue reference) is used to initialize another object, move semantics apply.
+No move occurs — the object is constructed directly. But when an xvalue (materialized temporary
+Bound to an rvalue reference) is used to initialize another object, move semantics apply.
 
 ```cpp
 #include <iostream>
@@ -576,15 +576,15 @@ int main() {
 When a prvalue is passed to a function template, materialization depends on the parameter type:
 
 - **By value:** The prvalue directly initializes the parameter (guaranteed elision). No separate
-  temporary is created.
+ temporary is created.
 - **By `const T&` or `T&&`:** The prvalue materializes into a temporary, and the reference binds to
-  it. The temporary lives until the end of the full-expression containing the call.
+ it. The temporary lives until the end of the full-expression containing the call.
 
 ## 5.7 Implicit Conversion Chains and Materialization
 
 When an implicit conversion occurs, each step in the chain may involve materialization. The prvalue
-result of one conversion becomes the initializer for the next, and the entire chain is resolved into
-direct initialization of the final object [N4950 S7.3.5].
+Result of one conversion becomes the initializer for the next, and the entire chain is resolved into
+Direct initialization of the final object [N4950 S7.3.5].
 
 ```cpp
 #include <iostream>
@@ -620,7 +620,7 @@ int main() {
 ### Materialization in Conversion to Base Class
 
 When a derived-class prvalue initializes a base-class object, the prvalue materializes because the
-types differ. The materialized temporary is then sliced:
+Types differ. The materialized temporary is then sliced:
 
 ```cpp
 #include <iostream>
@@ -651,9 +651,9 @@ int main() {
 
 Materialization can occur at any point within a complex expression where an identity is required.
 The order in which materialized temporaries in different sub-expressions are created and destroyed
-is governed by the rules for evaluation order. In C++17, the order of evaluation of function
-arguments is unspecified [N4950 S7.6.1.9], so materialized temporaries in different arguments may be
-destroyed in any order.
+Is governed by the rules for evaluation order. In C++17, the order of evaluation of function
+Arguments is unspecified [N4950 S7.6.1.9], so materialized temporaries in different arguments may be
+Destroyed in any order.
 
 ```cpp
 #include <iostream>
@@ -697,7 +697,7 @@ int main() {
 ### Materialization in Range-Based For Loops
 
 The range expression in a range-based `for` loop is materialized once, and the resulting temporary
-persists for the duration of the loop [N4950 S8.6.5]/1:
+Persists for the duration of the loop [N4950 S8.6.5]/1:
 
 ```cpp
 #include <iostream>
@@ -728,7 +728,7 @@ int main() {
 ## 5.9 Materialization and `new` Expressions
 
 When `new T{args}` is evaluated, the prvalue `T{args}` is used to initialize the newly allocated
-storage. The prvalue initializes the object directly — no temporary is created [N4950 S7.6.2.8].
+Storage. The prvalue initializes the object directly — no temporary is created [N4950 S7.6.2.8].
 
 ```cpp
 #include <iostream>
@@ -750,20 +750,28 @@ void new_demo() {
 ## Common Pitfalls
 
 - **Dangling references from lifetime non-extension.** Returning a reference to a materialized
-  temporary, or storing a temporary in a struct member reference, creates a dangling reference.
+ temporary, or storing a temporary in a struct member reference, creates a dangling reference.
 - **Assuming materialization creates a copy.** In C++17, prvalue materialization creates the object
-  directly at the destination — there is no separate temporary and no copy/move.
+ directly at the destination — there is no separate temporary and no copy/move.
 - **Taking the address of a prvalue.** `&T{...}` is ill-formed. Bind to a reference first, then take
-  its address.
+ its address.
 - **Relying on materialization order in function arguments.** The order of evaluation of function
-  arguments is unspecified. Materialized temporaries in different arguments may be destroyed in any
-  order.
+ arguments is unspecified. Materialized temporaries in different arguments may be destroyed in any
+ order.
 - **Confusing materialization with copy elision.** Materialization is a _language rule_ (prvalue
-  becomes an object), not an optimization. Copy elision is the _absence_ of materialization when a
-  prvalue initializes an object of the same type.
-- **NRVO failure in debug builds.** NRVO is an optimization that is typically disabled at `-O0`.
-  Always write code that is correct with or without NRVO.
+ becomes an object), not an optimization. Copy elision is the _absence_ of materialization when a
+ prvalue initializes an object of the same type.
+- **NRVO failure in debug builds.** NRVO is an optimization that is disabled at `-O0`.
+ Always write code that is correct with or without NRVO.
 - **Using `std::move` on a prvalue return.** `return std::move(T{args});` is redundant and
-  pessimizing. The prvalue `T{args}` would directly initialize the return slot (guaranteed elision),
-  but `std::move(T{args})` produces an xvalue, forcing materialization and a move. Just write
-  `return T{args};`.
+ pessimizing. The prvalue `T{args}` would directly initialize the return slot (guaranteed elision),
+ but `std::move(T{args})` produces an xvalue, forcing materialization and a move. Just write
+ `return T{args};`.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: GDP Calculation Methods
-**Question:** An economy has the following data (in billions of HKD): Consumption $= 800$, Investment $= 300$, Government spending $= 250$, Exports $= 400$, Imports $= 350$, Subsidies $= 60$, Indirect taxes $= 100$, Depreciation $= 120$, Net factor income from abroad $= -20$. Calculate: (a) GDP by expenditure method, (b) GNP, (c) NNP, (d) National Income.
+**Question:** An economy has the following data (in billions of HKD): Consumption $= 800$Investment $= 300$Government spending $= 250$Exports $= 400$Imports $= 350$Subsidies $= 60$Indirect taxes $= 100$Depreciation $= 120$Net factor income from abroad $= -20$. Calculate: (a) GDP by expenditure method, (b) GNP, (c) NNP, (d) National Income.
 
 **Solution:**
 
@@ -84,7 +84,7 @@ Inflation rate $= \frac{120 - 105}{105} \times 100\% = 14.29\%$.
 (b) Cyclical unemployment $= 8\% - 5\% = 3\%$.
 Using Okun's law: $\frac{Y - Y^*}{Y^*} = -2 \times u_c = -2 \times 3\% = -6\%$.
 
-So $Y = 0.94 Y^*$, meaning actual output is 6% below potential. $Y^* = 1000/0.94 = \$1063.8$ billion. Output gap $= 1000 - 1063.8 = -\$63.8$ billion (negative = recessionary gap).
+So $Y = 0.94 Y^*$Meaning actual output is 6% below potential. $Y^* = 1000/0.94 = \$1063.8$ billion. Output gap $= 1000 - 1063.8 = -\$63.8$ billion (negative = recessionary gap).
 
 (c) Real GDP per capita $= \frac{1000}{50} = \$20,000$.
 
@@ -126,7 +126,7 @@ Country B: GDP per capita $= \frac{500}{10} = \$50,000$.
 
 (b) Net effect on GDP: $+\$80$B from government spending. GDP rises despite the destruction.
 
-(c) No. The country is clearly worse off -- it lost $\$50$B of infrastructure, suffered environmental damage, and had to divert $\$80$B from other productive uses to rebuild. Yet GDP shows an increase. This is one of the most serious limitations of GDP: it counts the cost of rebuilding after a disaster as economic growth, even though the country is merely restoring what it already had (and not even fully, since the environmental damage is not accounted for).
+(c) No. The country is worse off -- it lost $\$50$B of infrastructure, suffered environmental damage, and had to divert $\$80$B from other productive uses to rebuild. Yet GDP shows an increase. This is one of the most serious limitations of GDP: it counts the cost of rebuilding after a disaster as economic growth, even though the country is merely restoring what it already had (and not even fully, since the environmental damage is not accounted for).
 
 (d) The $\$80$B spent on rebuilding has an opportunity cost -- the goods and services that could have been produced if those resources had been allocated elsewhere. The 200,000 workers could have been producing consumer goods, new infrastructure, or education. The construction materials could have built new factories or housing. The earthquake forced the country to consume its rebuilding capacity on restoring the status quo rather than improving living standards.
 
@@ -209,7 +209,7 @@ For Hong Kong, structural unemployment is the most significant long-term concern
 
 ### EQ-4: Economic Growth and the Solow Growth Model
 
-**Question:** Country Y has GDP per capita of $\$5,000$. Its saving rate $s = 20\%$, depreciation rate $\delta = 5\%$, and population growth rate $n = 2\%$. The production function is $y = k^{0.4}$, where $y$ is output per worker and $k$ is capital per worker. (a) Calculate the steady-state capital per worker and output per worker. (b) If the saving rate increases to 30%, calculate the new steady state. (c) Explain why higher saving does not produce permanently higher growth in the Solow model. (d) Apply this analysis to China's growth strategy.
+**Question:** Country Y has GDP per capita of $\$5,000$. Its saving rate $S = 20\%$, depreciation rate $\delta = 5\%$, and population growth rate $N = 2\%$. The production function is $Y = k^{0.4}$, where $Y$ is output per worker and $K$ is capital per worker. (a) Calculate the steady-state capital per worker and output per worker. (b) If the saving rate increases to 30%, calculate the new steady state. (c) Explain why higher saving does not produce permanently higher growth in the Solow model. (d) Apply this analysis to China's growth strategy.
 
 **Solution:**
 
@@ -269,7 +269,7 @@ However, the Solow model predicts that this growth model has limits. As China ap
 
 (a) GDP per capita $= \frac{'{'}2\,900000{'}'}{7.5} = HK\$386\,667 \approx HK\$387\,000$.
 
-(b) A Gini coefficient of 0.54 means significant income inequality. The Gini ranges from 0 (perfect equality) to 1 (perfect inequality). Hong Kong's 0.54 is higher than most OECD countries (typically 0.25--0.40) and higher than China (0.47) and the US (0.49). GDP per capita of HK$387,000 is an **average** that is heavily skewed by high-income earners. The median household income of HK$27,500 per month (HK$330,000 per year) is considerably lower than the GDP per capita suggests. This means a typical Hong Kong resident's income is well below the average, reflecting the extreme concentration of income at the top.
+(b) A Gini coefficient of 0.54 means significant income inequality. The Gini ranges from 0 (perfect equality) to 1 (perfect inequality). Hong Kong's 0.54 is higher than most OECD countries ( 0.25--0.40) and higher than China (0.47) and the US (0.49). GDP per capita of HK$387,000 is an **average** that is heavily skewed by high-income earners. The median household income of HK$27,500 per month (HK$330,000 per year) is considerably lower than the GDP per capita suggests. This means a typical Hong Kong resident's income is well below the average, reflecting the extreme concentration of income at the top.
 
 (c) GDP per capita in USD $= \frac{387000}{7.8} \approx \$49\,615$.
 
@@ -293,7 +293,7 @@ The median income per capita is only about 29% of GDP per capita. This massive g
 
 2. **Using nominal values when real values are required:** Always adjust for inflation when comparing values across time. A 10% increase in nominal GDP means nothing if inflation is also 10%. The DSE frequently tests the distinction between nominal and real GDP, nominal and real wages, and nominal and real interest rates.
 
-3. **Assuming GDP per capita equals individual income:** GDP per capita is an average of total output divided by population, not a measure of individual income. It includes corporate profits, government revenue, and depreciation. Median household income per capita is typically a much better indicator of typical living standards. The difference between mean and median is particularly large in unequal societies like Hong Kong.
+3. **Assuming GDP per capita equals individual income:** GDP per capita is an average of total output divided by population, not a measure of individual income. It includes corporate profits, government revenue, and depreciation. Median household income per capita is a much better indicator of typical living standards. The difference between mean and median is particularly large in unequal societies like Hong Kong.
 
 4. **Ignoring the base year when using index numbers:** When calculating real GDP from nominal GDP and the GDP deflator, remember that the deflator is an index with a specific base year. Real GDP $= \frac{'{'}\text{Nominal GDP}{'}'}{'{'}\text{GDP Deflator}{'}'} \times 100$. The "100" comes from the base year deflator being normalised to 100. Students sometimes forget this factor of 100.
 

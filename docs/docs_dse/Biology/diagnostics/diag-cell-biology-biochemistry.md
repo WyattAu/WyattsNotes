@@ -58,8 +58,8 @@ Three structural differences:
 (a) Phospholipids form a **bilayer** in which the hydrophilic phosphate heads face outwards (towards the aqueous environment on both sides) and the hydrophobic fatty acid tails face inwards, away from water. This arrangement creates a hydrophobic core in the centre of the bilayer.
 
 The membrane is partially permeable because:
-- **Small non-polar molecules** (e.g. $O_{2}$, $CO_{2}$, lipid-soluble steroid hormones) can diffuse directly through the hydrophobic core.
-- **Large polar molecules** (e.g. glucose), **ions** (e.g. $Na^{+}$, $Cl^{-}$), and **charged molecules** cannot pass through the hydrophobic region and require transport proteins or vesicles.
+- **Small non-polar molecules** (e.g. $O_{2}$$CO_{2}$Lipid-soluble steroid hormones) can diffuse directly through the hydrophobic core.
+- **Large polar molecules** (e.g. Glucose), **ions** (e.g. $Na^{+}$$Cl^{-}$), and **charged molecules** cannot pass through the hydrophobic region and require transport proteins or vesicles.
 
 (b) Two roles of cholesterol:
 1. Cholesterol molecules fit between phospholipids and **bind to the hydrophobic tails**, restricting their movement. This **increases membrane stability** and reduces fluidity at high temperatures, preventing the membrane from becoming too permeable.
@@ -140,21 +140,21 @@ A student is given four unknown solutions (W, X, Y, Z) and asked to identify the
 
 **Worked Solution**
 
-(a) - **W**: Reducing sugar (e.g. glucose). The Benedict's reagent contains copper(II) sulphate. Reducing sugars reduce blue $Cu^{2+}$ ions to red insoluble copper(I) oxide ($Cu_{2}O$), forming a brick-red precipitate.
+(a) - **W**: Reducing sugar (e.g. Glucose). The Benedict's reagent contains copper(II) sulphate. Reducing sugars reduce blue $Cu^{2+}$ ions to red insoluble copper(I) oxide ($Cu_{2}O$), forming a brick-red precipitate.
 - **X**: Protein (or polypeptide). The biuret reagent (containing copper(II) sulphate in alkaline solution) reacts with peptide bonds ($-CO-NH-$), producing a violet/purple colour.
 - **Y**: Lipid. When ethanol is added and the mixture is poured into water, a cloudy white emulsion forms, indicating the presence of lipids.
 - **Z**: Starch. Iodine solution turns blue-black in the presence of starch due to iodine molecules fitting into the helical structure of amylose.
 
 (b) W gives a brick-red precipitate in the first test, confirming it contains a **reducing sugar** (e.g.
-glucose or maltose). After acid hydrolysis and neutralisation, the **more intense** brick-red
-precipitate indicates that W also contained a **polysaccharide** (e.g. starch). Hydrolysis breaks the
-polysaccharide into many more reducing sugar units (glucose), producing more reducing ends and hence a
-more intense Benedict's result. For example, W might contain a mixture of maltose (a reducing
-disaccharide) and starch.
+Glucose or maltose). After acid hydrolysis and neutralisation, the **more intense** brick-red
+Precipitate indicates that W also contained a **polysaccharide** (e.g. Starch). Hydrolysis breaks the
+Polysaccharide into many more reducing sugar units (glucose), producing more reducing ends and hence a
+More intense Benedict's result. For example, W might contain a mixture of maltose (a reducing
+Disaccharide) and starch.
 
 (c) A polypeptide is a chain of **amino acids** joined by **peptide bonds** (formed by condensation reactions between the carboxyl group of one amino acid and the amino group of the next, with the elimination of water).
 
-The **secondary structure** (e.g. alpha-helix, beta-pleated sheet) is stabilised by **hydrogen bonds** between the $-C=O$ group of one amino acid and the $-NH$ group of another amino acid further along the chain.
+The **secondary structure** (e.g. Alpha-helix, beta-pleated sheet) is stabilised by **hydrogen bonds** between the $-C=O$ group of one amino acid and the $-NH$ group of another amino acid further along the chain.
 
 ---
 
@@ -177,8 +177,8 @@ Glucose enters intestinal epithelial cells from the lumen via secondary active t
 (a) The $Na^{+}/K^{+}$ pump is a transmembrane carrier protein that actively transports **$3Na^{+}$ ions out** of the cell and **$2K^{+}$ ions into** the cell per ATP molecule hydrolysed.
 
 ATP is hydrolysed to ADP and inorganic phosphate ($P_{i}$), and the phosphate group attaches to the pump protein, causing a **conformational change**. This change:
-1. Reduces the pump's affinity for $Na^{+}$, releasing $3Na^{+}$ outside the cell.
-2. Increases the pump's affinity for $K^{+}$, allowing $2K^{+}$ to bind from outside.
+1. Reduces the pump's affinity for $Na^{+}$Releasing $3Na^{+}$ outside the cell.
+2. Increases the pump's affinity for $K^{+}$Allowing $2K^{+}$ to bind from outside.
 3. Dephosphorylation returns the pump to its original shape, releasing $K^{+}$ inside the cell.
 
 This maintains a **high $Na^{+}$ concentration outside** the cell and a **low $Na^{+}$ concentration inside**, creating a steep sodium concentration gradient.
@@ -211,12 +211,12 @@ An industrial process uses the enzyme **catalase** to break down hydrogen peroxi
 
 However, as temperature approaches $37^{\circ}C$ and beyond, the **vibrational energy** of the enzyme molecule increases to the point where it begins to disrupt the **weak bonds** (hydrogen bonds, ionic bonds, hydrophobic interactions) maintaining the enzyme's tertiary structure. At the optimum temperature, the rate of productive collisions is maximised before denaturation becomes significant.
 
-(b) The claim is **imprecise**. Enzymes are not living organisms and cannot be "killed." The correct term is **denaturation**: at $80^{\circ}C$, the excessive thermal energy breaks the hydrogen bonds, ionic bonds, and other weak interactions maintaining the enzyme's **active site shape**. The tertiary structure unfolds irreversibly, and the active site can no longer bind the substrate.
+(b) The claim is **imprecise**. Enzymes are not living organisms and cannot be "killed." The correct term is **denaturation**: at $80^{\circ}C$The excessive thermal energy breaks the hydrogen bonds, ionic bonds, and other weak interactions maintaining the enzyme's **active site shape**. The tertiary structure unfolds irreversibly, and the active site can no longer bind the substrate.
 
-**Coagulation** is a related but distinct process: it refers specifically to the aggregation of denatured protein molecules, often resulting in a visible solid or semi-solid mass (e.g. cooking egg white). Coagulation is a **consequence** of denaturation, not the same process.
+**Coagulation** is a related but distinct process: it refers specifically to the aggregation of denatured protein molecules, often resulting in a visible solid or semi-solid mass (e.g. Cooking egg white). Coagulation is a **consequence** of denaturation, not the same process.
 
 (c) Two advantages of immobilised enzymes:
-1. **Reusability**: Immobilised enzymes can be easily separated from the reaction mixture (e.g. by filtration) and reused multiple times, reducing costs.
+1. **Reusability**: Immobilised enzymes can be separated from the reaction mixture (e.g. By filtration) and reused multiple times, reducing costs.
 2. **Stability**: Immobilisation can protect the enzyme from denaturation by restricting molecular movement, allowing the enzyme to function at higher temperatures and a wider pH range compared to free enzymes.
 
 (Alternative: ease of product purification; continuous flow processing; prevention of enzyme contamination of the product.)

@@ -39,7 +39,7 @@ Roles of enzymes:
 - **DNA helicase**: Breaks the **hydrogen bonds** between the complementary base pairs, "unzipping" the double helix and separating the two strands. Each separated strand then acts as a template for the synthesis of a new complementary strand.
 - **DNA polymerase**: Catalyses the formation of **sugar-phosphate bonds** (phosphodiester bonds) between adjacent nucleotides, joining free DNA nucleotides to the growing new strand. It does this by adding nucleotides complementary to the template strand, following the base-pairing rules (A with T, C with G).
 
-(c) Since A pairs with T (complementary base pairing), if A = $28\%$, then T = $28\%$.
+(c) Since A pairs with T (complementary base pairing), if A = $28\%$Then T = $28\%$.
 
 The total percentage of A + T = $28\% + 28\% = 56\%$.
 
@@ -99,13 +99,13 @@ Since G pairs with C: G = $22\%$ and C = $22\%$.
 (c) Original DNA: GAG. The template strand is transcribed to mRNA with complementary bases: the DNA template GAG produces mRNA codon **CUC** (since the coding strand would be CTC, and mRNA matches the coding strand with T replaced by U).
 
 The DNA triplet GAG is the coding strand (sense strand). The mRNA codon is GAG (GAG contains no T, so
-no substitution is needed), which codes for **Glutamic acid**.
+No substitution is needed), which codes for **Glutamic acid**.
 
 After mutation, the coding strand becomes GTG. The mRNA codon becomes GUG, which codes for **Valine**.
 
 The mutation changes the amino acid from **glutamic acid to valine**. This is a **missense mutation**
 (a single base substitution that changes one amino acid to another). This is the exact mutation that
-causes sickle cell anaemia.
+Causes sickle cell anaemia.
 
 ---
 
@@ -156,9 +156,9 @@ For brown fur and short hair, the genotype must be $bbS\_$.
 
 Using the forked line method (or Punnett square):
 
-For fur colour ($Bb \times Bb$): $\frac{1}{4} BB$, $\frac{1}{2} Bb$, $\frac{1}{4} bb$ -- probability of $bb$ = $\frac{1}{4}$.
+For fur colour ($Bb \times Bb$): $\frac{1}{4} BB$$\frac{1}{2} Bb$$\frac{1}{4} bb$ -- probability of $bb$ = $\frac{1}{4}$.
 
-For hair length ($Ss \times Ss$): $\frac{1}{4} SS$, $\frac{1}{2} Ss$, $\frac{1}{4} ss$ -- probability of $S\_$ ($SS$ or $Ss$) = $\frac{3}{4}$.
+For hair length ($Ss \times Ss$): $\frac{1}{4} SS$$\frac{1}{2} Ss$$\frac{1}{4} ss$ -- probability of $S\_$ ($SS$ or $Ss$) = $\frac{3}{4}$.
 
 Since the genes are on different chromosomes (assumed independent assortment):
 
@@ -190,7 +190,7 @@ Human insulin can be produced by genetically engineered bacteria using recombina
 
 3. **Insertion of the gene**: The human insulin gene is **mixed with the cut plasmid**. The sticky ends of the insulin gene are complementary to the sticky ends of the plasmid, so they **base-pair** (anneal) by complementary base pairing. The enzyme **DNA ligase** is then used to catalyse the formation of phosphodiester bonds, sealing the insulin gene into the plasmid to form a **recombinant plasmid**.
 
-4. **Transformation**: The recombinant plasmid is introduced into **host cells** (bacteria, e.g. E. coli) by a process called **transformation** (e.g. using heat shock or electroporation to make the bacterial membrane permeable to the plasmid).
+4. **Transformation**: The recombinant plasmid is introduced into **host cells** (bacteria, e.g. E. Coli) by a process called **transformation** (e.g. Using heat shock or electroporation to make the bacterial membrane permeable to the plasmid).
 
 5. **Selection and growth**: The bacteria are grown on a selective medium (see part c). Bacteria that have successfully taken up the recombinant plasmid are identified and cultured in large-scale fermenters.
 
@@ -202,11 +202,11 @@ Human insulin can be produced by genetically engineered bacteria using recombina
 
 (c) **Identification of transformed bacteria**:
 
-1. Bacteria are plated on a growth medium containing the **antibiotic** for which the plasmid carries a resistance gene (e.g. ampicillin).
+1. Bacteria are plated on a growth medium containing the **antibiotic** for which the plasmid carries a resistance gene (e.g. Ampicillin).
 2. Only bacteria that have taken up the plasmid (either recombinant or non-recombinant) will **survive and grow** on this medium, because they express the antibiotic resistance gene. Bacteria without the plasmid die.
-3. To distinguish between bacteria with recombinant plasmids and those with non-recombinant plasmids (plasmids that re-closed without the insulin gene), a **second genetic marker** can be used. For example, if the insulin gene is inserted within a gene for another resistance (e.g. tetracycline resistance), then:
-   - Bacteria with the recombinant plasmid: resistant to ampicillin but **susceptible** to tetracycline (because the tetracycline resistance gene was disrupted).
-   - Bacteria with the non-recombinant plasmid: resistant to both ampicillin and tetracycline.
+3. To distinguish between bacteria with recombinant plasmids and those with non-recombinant plasmids (plasmids that re-closed without the insulin gene), a **second genetic marker** can be used. For example, if the insulin gene is inserted within a gene for another resistance (e.g. Tetracycline resistance), then:
+ - Bacteria with the recombinant plasmid: resistant to ampicillin but **susceptible** to tetracycline (because the tetracycline resistance gene was disrupted).
+ - Bacteria with the non-recombinant plasmid: resistant to both ampicillin and tetracycline.
 4. Using replica plating or testing on tetracycline plates, colonies resistant to ampicillin but sensitive to tetracycline are identified as containing the recombinant plasmid.
 
 ---
@@ -233,7 +233,7 @@ The table below shows three different types of mutations that can occur in a gen
 
 Using the information below, determine the effect of a **frameshift mutation** caused by the deletion of the second nucleotide (T). The original and mutated mRNA sequences and their translations should be shown.
 
-mRNA codons and amino acids: AUG = Met, CCU = Pro, CAG = Gln, ACU = Thr, GA_ = ?
+MRNA codons and amino acids: AUG = Met, CCU = Pro, CAG = Gln, ACU = Thr, GA_ = ?
 
 [4 marks]
 
@@ -241,7 +241,7 @@ mRNA codons and amino acids: AUG = Met, CCU = Pro, CAG = Gln, ACU = Thr, GA_ = ?
 
 **Worked Solution**
 
-(a) The genetic code is **degenerate** (redundant): most amino acids are coded for by more than one codon. A silent mutation changes a base in the DNA to one that still codes for the **same amino acid** (e.g. changing CCT to CCC, both of which code for proline). Since the amino acid sequence of the protein is unchanged, the protein's structure and function remain normal.
+(a) The genetic code is **degenerate** (redundant): most amino acids are coded for by more than one codon. A silent mutation changes a base in the DNA to one that still codes for the **same amino acid** (e.g. Changing CCT to CCC, both of which code for proline). Since the amino acid sequence of the protein is unchanged, the protein's structure and function remain normal.
 
 (b) A nonsense mutation creates a premature **stop codon**, causing translation to terminate early and producing a **truncated (shortened) polypeptide**.
 
@@ -272,7 +272,7 @@ Reading in codons: AGC (Ser) - CUG (Leu) - AGG (Arg) - ACU (Thr) - GA... (incomp
 
 **Mutated translation**: AGC (Ser) - CUG (Leu) - AGG (Arg) - ACU (Thr)
 
-The frameshift mutation changes the **reading frame** from the point of deletion onwards. Almost all amino acids after the mutation are changed, and the protein sequence is completely different from the point of the mutation. This typically produces a non-functional protein.
+The frameshift mutation changes the **reading frame** from the point of deletion onwards. Almost all amino acids after the mutation are changed, and the protein sequence is completely different from the point of the mutation. This produces a non-functional protein.
 
 ---
 
@@ -285,7 +285,7 @@ A pedigree chart shows a family where a rare genetic disorder occurs. The disord
 - Generation I: Father (affected, $Dd$) and Mother (unaffected, $dd$)
 - Generation II: Two children -- Daughter 1 (affected) and Son 1 (unaffected)
 
-(a) Explain why the father's genotype must be $Dd$ and not $DD$, given that the disorder is rare. [2 marks]
+(a) Explain why the father's genotype must be $Dd$ and not $DD$Given that the disorder is rare. [2 marks]
 
 (b) Calculate the probability that Daughter 1's first child (with an unaffected partner, $dd$) will be affected by the disorder. [2 marks]
 
@@ -295,7 +295,7 @@ A pedigree chart shows a family where a rare genetic disorder occurs. The disord
 
 **Worked Solution**
 
-(a) The disorder is **rare**, meaning the recessive allele ($d$) is much more common in the population than the dominant allele ($D$). If the father were $DD$, both of his parents would need to carry or have the $D$ allele. Since the disorder is rare, it is far more likely that the father is **heterozygous ($Dd$)**, having inherited the $D$ allele from one parent (who may have been affected) and the $d$ allele from the other (unaffected parent). This is confirmed by the fact that Son 1 is unaffected ($dd$), which is only possible if the father contributed a $d$ allele, proving the father is $Dd$.
+(a) The disorder is **rare**, meaning the recessive allele ($d$) is much more common in the population than the dominant allele ($D$). If the father were $DD$Both of his parents would need to carry or have the $D$ allele. Since the disorder is rare, it is far more likely that the father is **heterozygous ($Dd$)**, having inherited the $D$ allele from one parent (who may have been affected) and the $d$ allele from the other (unaffected parent). This is confirmed by the fact that Son 1 is unaffected ($dd$), which is only possible if the father contributed a $d$ allele, proving the father is $Dd$.
 
 (b) Daughter 1 is affected. Her father is $Dd$ and her mother is $dd$.
 

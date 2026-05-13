@@ -7,8 +7,8 @@ slug: migrations
 ## Why Migrations Matter
 
 Schema changes in a production database are one of the highest-risk operations you perform. A bad
-migration can corrupt data, cause extended downtime, or create inconsistencies that are difficult to
-detect and repair. Migrations solve this by:
+Migration can corrupt data, cause extended downtime, or create inconsistencies that are difficult to
+Detect and repair. Migrations solve this by:
 
 1. **Version control**: Every schema change is a tracked, reviewed artifact
 2. **Reproducibility**: The same migration runs identically on dev, staging, and production
@@ -179,14 +179,14 @@ npx prisma migrate status
 
 ### Tool Comparison
 
-| Feature           | Flyway            | Liquibase            | golang-migrate | Alembic | Django     | Prisma                        |
+| Feature | Flyway | Liquibase | golang-migrate | Alembic | Django | Prisma |
 | ----------------- | ----------------- | -------------------- | -------------- | ------- | ---------- | ----------------------------- |
-| Languages         | SQL, Java, Kotlin | XML, YAML, JSON, SQL | SQL            | Python  | Python     | SQL, TS                       |
-| Schema diffing    | Pro               | Pro                  | No             | Auto    | Auto       | Auto                          |
-| Rollback support  | Yes               | Yes                  | Yes            | Yes     | Yes        | Limited                       |
-| Transactional DDL | Yes               | Yes                  | Yes            | Yes     | Yes        | Yes                           |
-| Branching/merge   | Paid              | Manual               | Manual         | Manual  | Manual     | Manual                        |
-| Database support  | Many              | Many                 | Many           | Many    | Django DBs | Postgres, MySQL, SQLite, etc. |
+| Languages | SQL, Java, Kotlin | XML, YAML, JSON, SQL | SQL | Python | Python | SQL, TS |
+| Schema diffing | Pro | Pro | No | Auto | Auto | Auto |
+| Rollback support | Yes | Yes | Yes | Yes | Yes | Limited |
+| Transactional DDL | Yes | Yes | Yes | Yes | Yes | Yes |
+| Branching/merge | Paid | Manual | Manual | Manual | Manual | Manual |
+| Database support | Many | Many | Many | Many | Django DBs | Postgres, MySQL, SQLite, etc. |
 
 ## Migration File Naming
 
@@ -204,10 +204,10 @@ V3__create_orders.sql
 20240116100000__create_orders.sql
 ```
 
-| Approach    | Pros                          | Cons                                     |
+| Approach | Pros | Cons |
 | ----------- | ----------------------------- | ---------------------------------------- |
-| Sequential  | Simple, easy to read          | Conflicts in team development (V3 vs V3) |
-| Timestamped | No conflicts in parallel work | Verbose, ordering may not match intent   |
+| Sequential | Simple, easy to read | Conflicts in team development (V3 vs V3) |
+| Timestamped | No conflicts in parallel work | Verbose, ordering may not match intent |
 
 ## Up/Down Migrations (Reversibility)
 
@@ -263,13 +263,13 @@ flowchart LR
 ```
 
 **Phase 1 (Expand):** Add the new column/table without breaking the existing application. Deploy
-this migration first, while the old code is still running.
+This migration first, while the old code is still running.
 
 **Phase 2 (Migrate):** Deploy the new application code that reads/writes both the old and new
-columns. Backfill data if necessary.
+Columns. Backfill data if necessary.
 
 **Phase 3 (Contract):** Once all instances of the old code are decommissioned, remove the old
-column/table.
+Column/table.
 
 ### Adding a Column with Default (PostgreSQL 11+)
 
@@ -329,12 +329,12 @@ ALTER TABLE users DROP COLUMN legacy_field;
 
 ### When to Separate
 
-| Concern           | Schema Migration                   | Data Migration                 |
+| Concern | Schema Migration | Data Migration |
 | ----------------- | ---------------------------------- | ------------------------------ |
-| Duration          | Milliseconds to seconds            | Minutes to hours               |
-| Transaction scope | DDL is transactional in PostgreSQL | May need batch processing      |
-| Rollback          | Reverse DDL                        | May be impossible or very slow |
-| Tool              | Flyway, Liquibase, Alembic         | Application code, batch jobs   |
+| Duration | Milliseconds to seconds | Minutes to hours |
+| Transaction scope | DDL is transactional in PostgreSQL | May need batch processing |
+| Rollback | Reverse DDL | May be impossible or very slow |
+| Tool | Flyway, Liquibase, Alembic | Application code, batch jobs |
 
 ### Batched Data Migrations
 
@@ -516,8 +516,8 @@ After merge: renumber V3_feature → V5 (or use timestamps)
 ### Manual Schema Changes
 
 Someone runs a `ALTER TABLE` directly on the production database. The migration tool's version
-tracking becomes out of sync with the actual schema. The next migration may fail or create
-inconsistencies.
+Tracking becomes out of sync with the actual schema. The next migration may fail or create
+Inconsistencies.
 
 ### Non-Reversible DDL
 
@@ -561,7 +561,7 @@ A migration that blocks on a lock can wait indefinitely. Always set `lock_timeou
 ### Forgetting That Concurrent Index Creation Can Fail
 
 `CREATE INDEX CONCURRENTLY` can fail if the table is written to during creation. When it fails, it
-leaves an `INVALID` index. You must manually drop the invalid index before retrying:
+Leaves an `INVALID` index. You must manually drop the invalid index before retrying:
 
 ```sql
 -- Check for invalid indexes
@@ -577,12 +577,12 @@ CREATE INDEX CONCURRENTLY idx_orders_date ON orders(created_at);
 ### Assuming DDL Is Transactional in All Databases
 
 DDL is transactional in PostgreSQL but NOT in MySQL (most DDL auto-commits). If you wrap DDL in a
-transaction for atomicity, it works in PostgreSQL but silently auto-commits each statement in MySQL.
+Transaction for atomicity, it works in PostgreSQL but silently auto-commits each statement in MySQL.
 
 ### Not Backing Up Before Destructive Migrations
 
 Before any migration that drops a table, column, or data, take a backup. `pg_dump` the specific
-table:
+Table:
 
 ```bash
 pg_dump -t orders -f orders_backup.sql mydb
@@ -591,10 +591,18 @@ pg_dump -t orders -f orders_backup.sql mydb
 ### Migrations and Connection Poolers
 
 PgBouncer in transaction mode resets session state between transactions. If a migration uses
-session-level settings (`SET search_path`), the settings may not persist. Use `SET LOCAL` within a
-transaction, or connect directly to PostgreSQL (bypassing the pooler) for migrations.
+Session-level settings (`SET search_path`), the settings may not persist. Use `SET LOCAL` within a
+Transaction, or connect directly to PostgreSQL (bypassing the pooler) for migrations.
 
 ### Not Testing Rollback
 
 The rollback migration is often untested. When you need it, it fails because of schema changes that
-occurred after the original migration. Always test the rollback path.
+Occurred after the original migration. Always test the rollback path.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

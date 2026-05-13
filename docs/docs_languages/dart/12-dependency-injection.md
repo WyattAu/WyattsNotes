@@ -13,9 +13,9 @@ slug: dependency-injection
 ## What is Dependency Injection
 
 Dependency Injection (DI) is a design pattern that implements **Inversion of Control (IoC)**:
-instead of a class creating its own dependencies, they are provided from the outside. This decouples
-consumers from concrete implementations and is fundamental to writing testable, maintainable Dart
-and Flutter code.
+Instead of a class creating its own dependencies, they are provided from the outside. This decouples
+Consumers from concrete implementations and is fundamental to writing testable, maintainable Dart
+And Flutter code.
 
 ### Core Principles
 
@@ -50,10 +50,10 @@ class UserService {
 
 1. **Testability**: inject mocks instead of real HTTP clients, databases, or platform channels
 2. **Decoupling**: swap implementations without changing consumers (e.g., swap `SqliteDatabase` for
-   `PostgresDatabase`)
+ `PostgresDatabase`)
 3. **Single Responsibility**: classes focus on their logic, not on wiring dependencies
 4. **Reusability**: the same service configured with different dependencies serves different
-   contexts
+ contexts
 
 ### Two Main Approaches
 
@@ -63,14 +63,14 @@ Dart and Flutter primarily use two DI approaches:
 - **Service Locator**: central registry where consumers look up dependencies at runtime
 
 The choice between them has significant implications for compile-time safety, testability, and code
-clarity.
+Clarity.
 
 ---
 
 ## Constructor Injection Pattern
 
 Constructor injection is the simplest and safest DI approach. Dependencies are declared as required
-constructor parameters, making them explicit and enforced at compile time.
+Constructor parameters, making them explicit and enforced at compile time.
 
 ### Basic Pattern
 
@@ -204,7 +204,7 @@ class NotificationService {
 ## Service Locator Pattern
 
 A service locator is a central registry where objects register their dependencies and look them up
-at runtime. In Dart, `GetIt` is the canonical service locator.
+At runtime. In Dart, `GetIt` is the canonical service locator.
 
 ### How It Works
 
@@ -247,11 +247,11 @@ void someFunction() {
 
 - **Hidden dependencies**: reading `getIt<T>()` in a class body hides what that class depends on
 - **Harder to test**: tests must configure the service locator globally or per-test, which can cause
-  flaky test isolation
+ flaky test isolation
 - **Runtime errors**: if a dependency is not registered, the error occurs at runtime (`StateError`)
-  instead of at compile time
+ instead of at compile time
 - **Global state**: the service locator is essentially global mutable state, making reasoning about
-  code harder
+ code harder
 
 ### When Service Locator Is Acceptable
 
@@ -394,7 +394,7 @@ void main() {
 ## injectable
 
 `injectable` is a code-generation package that automates `get_it` registration using annotations,
-reducing boilerplate and registration errors.
+Reducing boilerplate and registration errors.
 
 ### Setup
 
@@ -608,7 +608,7 @@ abstract class RegisterModule {
 ## Riverpod as DI
 
 Riverpod is both a state management solution and a dependency injection framework. Providers serve
-as dependency containers with compile-time safety.
+As dependency containers with compile-time safety.
 
 ### Providers as Dependency Containers
 
@@ -1016,19 +1016,19 @@ class OrderFactory {
 
 ## Comparison Table
 
-| Aspect                | Constructor Injection                       | Service Locator (get_it)               | Riverpod                                          |
+| Aspect | Constructor Injection | Service Locator (get_it) | Riverpod |
 | --------------------- | ------------------------------------------- | -------------------------------------- | ------------------------------------------------- |
-| Compile-time safety   | Full — missing deps are compile errors      | None — errors at runtime               | Full — missing providers are compile errors       |
-| Testability           | Excellent — pass mocks directly             | Good — must configure locator per test | Excellent — override providers in ProviderScope   |
-| Boilerplate           | Moderate — thread deps through constructors | Low — register once, get anywhere      | Moderate — declare providers, use ref             |
-| Lazy initialization   | Manual                                      | Built-in (lazy singleton)              | Built-in (provider evaluated on first watch/read) |
-| Scoping               | Manual                                      | Manual                                 | Built-in (ProviderScope, nested scopes)           |
-| Dependency visibility | Explicit in constructor signature           | Hidden — read source to discover       | Visible in provider declaration                   |
-| Lifecycle management  | Manual                                      | Singleton/factory/lazy singleton       | Auto-disposed, keepAlive                          |
-| State management      | Not provided                                | Not provided                           | Built-in                                          |
-| Learning curve        | Low                                         | Low                                    | Moderate to high                                  |
-| Flutter integration   | Manual wiring                               | Manual wiring                          | Native (ConsumerWidget, HookConsumerWidget)       |
-| Hot reload            | Works naturally                             | Works naturally                        | Works naturally                                   |
+| Compile-time safety | Full — missing deps are compile errors | None — errors at runtime | Full — missing providers are compile errors |
+| Testability | Excellent — pass mocks directly | Good — must configure locator per test | Excellent — override providers in ProviderScope |
+| Boilerplate | Moderate — thread deps through constructors | Low — register once, get anywhere | Moderate — declare providers, use ref |
+| Lazy initialization | Manual | Built-in (lazy singleton) | Built-in (provider evaluated on first watch/read) |
+| Scoping | Manual | Manual | Built-in (ProviderScope, nested scopes) |
+| Dependency visibility | Explicit in constructor signature | Hidden — read source to discover | Visible in provider declaration |
+| Lifecycle management | Manual | Singleton/factory/lazy singleton | Auto-disposed, keepAlive |
+| State management | Not provided | Not provided | Built-in |
+| Learning curve | Low | Low | Moderate to high |
+| Flutter integration | Manual wiring | Manual wiring | Native (ConsumerWidget, HookConsumerWidget) |
+| Hot reload | Works | Works | Works |
 
 ---
 
@@ -1037,8 +1037,8 @@ class OrderFactory {
 ### Over-Injection
 
 Not every class needs DI. Value objects, simple data holders, and pure functions don't benefit from
-injection. Only inject things that have side effects, external dependencies, or multiple
-implementations.
+Injection. Only inject things that have side effects, external dependencies, or multiple
+Implementations.
 
 ```dart
 // DON'T — over-injecting a pure value object
@@ -1058,7 +1058,7 @@ class EmailAddress {
 ### Circular Dependencies
 
 A depends on B, B depends on A — both never resolve. This is a design smell indicating
-responsibilities are tangled.
+Responsibilities are tangled.
 
 ```dart
 // DON'T — circular dependency
@@ -1091,7 +1091,7 @@ class C {
 ### Singleton vs Factory for Testability
 
 Using singletons for everything makes tests interdependent. State leaks between tests if singletons
-are not reset.
+Are not reset.
 
 ```dart
 // DON'T — singleton for stateful service used in tests
@@ -1104,7 +1104,7 @@ getIt.registerFactory<ShoppingCart>(() => ShoppingCart());
 ### DI in Flutter Widgets: ProviderScope Placement
 
 Placing `ProviderScope` too deep or too shallow causes either missing overrides or unnecessary
-rebuilds.
+Rebuilds.
 
 ```dart
 // DON'T — ProviderScope at the wrong level
@@ -1125,8 +1125,8 @@ void main() {
 
 ### Forgetting to Register Dependencies
 
-With `get_it`, forgetting to register a dependency causes a runtime crash. With Riverpod, it's a
-compile-time error. With `injectable`, forgetting to annotate a class means it won't be generated.
+With `get_it`Forgetting to register a dependency causes a runtime crash. With Riverpod, it's a
+Compile-time error. With `injectable`Forgetting to annotate a class means it won't be generated.
 
 ```dart
 // Runtime crash if CacheService not registered:
@@ -1143,6 +1143,14 @@ setUp(() {
 ### Mixing DI Approaches Inconsistently
 
 Using `get_it` in one module and Riverpod in another creates confusion about where dependencies live
-and how they're resolved. Pick one primary approach and be consistent. If using Riverpod, prefer
+And how they're resolved. Pick one primary approach and be consistent. If using Riverpod, prefer
 Riverpod providers for all Flutter-specific dependencies and reserve `get_it` for non-Flutter Dart
-services if needed.
+Services if needed.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

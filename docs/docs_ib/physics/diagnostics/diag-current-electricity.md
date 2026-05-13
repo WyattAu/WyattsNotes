@@ -39,7 +39,7 @@ $$I_D = 10^{-6}(e^{0.70/0.026} - 1) = 10^{-6}(e^{26.9} - 1) \approx 10^{-6} \tim
 
 This is still unrealistically large. The Shockley equation with these parameters gives impractical results at typical voltages. The point of this question is to show that the Shockley equation is an idealisation and real diodes have series resistance that limits current.
 
-For the purpose of this calculation, let us note that at $V = 6.0\,\text{V}$, both the lamp and diode would carry very large currents. The diode's exponential characteristic means it effectively acts as a short circuit at voltages well above its threshold.
+For the purpose of this calculation, let us note that at $V = 6.0\,\text{V}$Both the lamp and diode would carry very large currents. The diode's exponential characteristic means it effectively acts as a short circuit at voltages well above its threshold.
 
 (b) With the unrealistic values, the total current would be enormous. This illustrates that parallel connections of components with very different I-V characteristics can lead to one component dominating.
 
@@ -73,19 +73,19 @@ A battery of EMF $\varepsilon = 12.0\,\text{V}$ and internal resistance $r = 1.5
 
 **Solution:**
 
-(a) Short circuit: $R_L = 0$, so $I_{\max} = \varepsilon/r = 12.0/1.5 = 8.0\,\text{A}$.
+(a) Short circuit: $R_L = 0$So $I_{\max} = \varepsilon/r = 12.0/1.5 = 8.0\,\text{A}$.
 
 Terminal PD: $V = \varepsilon - Ir = 12.0 - 8.0 \times 1.5 = 12.0 - 12.0 = 0\,\text{V}$.
 
 All the EMF is dropped across the internal resistance.
 
-(b) **(i) Batteries in series:** Total EMF $= 24.0\,\text{V}$, total internal resistance $= 3.0\,\Omega$.
+(b) **(i) Batteries in series:** Total EMF $= 24.0\,\text{V}$Total internal resistance $= 3.0\,\Omega$.
 
 Current: $I = 24.0/(4.0 + 3.0) = 24.0/7.0 = 3.43\,\text{A}$
 
 Power to $R_L$: $P = I^2R_L = 3.43^2 \times 4.0 = 47.0\,\text{W}$
 
-**(ii) Batteries in parallel:** Total EMF $= 12.0\,\text{V}$, total internal resistance $= 0.75\,\Omega$ (two $1.5\,\Omega$ in parallel).
+**(ii) Batteries in parallel:** Total EMF $= 12.0\,\text{V}$Total internal resistance $= 0.75\,\Omega$ (two $1.5\,\Omega$ in parallel).
 
 Current: $I = 12.0/(4.0 + 0.75) = 12.0/4.75 = 2.53\,\text{A}$
 
@@ -113,17 +113,17 @@ The maximum power transfer theorem states that maximum power is delivered when t
 
 A potential divider consists of two resistors $R_1$ and $R_2$ in series across a $12\,\text{V}$ supply. The output voltage is taken across $R_2$. A load resistor $R_L$ is connected across $R_2$.
 
-(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$, $R_2 = 10\,\text{k}\Omega$, and no load.
+(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$$R_2 = 10\,\text{k}\Omega$And no load.
 
-(b) Calculate the output voltage when $R_L = 10\,\text{k}\Omega$ is connected across $R_2$, and calculate the percentage change.
+(b) Calculate the output voltage when $R_L = 10\,\text{k}\Omega$ is connected across $R_2$And calculate the percentage change.
 
-(c) Determine the condition on $R_1$, $R_2$, and $R_L$ for the potential divider to be "stiff" (output voltage unaffected by loading), and calculate the minimum value of $R_2$ for the output to change by less than $1\%$ when $R_L = 100\,\text{k}\Omega$ is connected.
+(c) Determine the condition on $R_1$$R_2$And $R_L$ for the potential divider to be "stiff" (output voltage unaffected by loading), and calculate the minimum value of $R_2$ for the output to change by less than $1\%$ when $R_L = 100\,\text{k}\Omega$ is connected.
 
 **Solution:**
 
 (a) No load: $V_{\text{out}} = \frac{R_2}{R_1 + R_2} \times V = \frac{10}{20} \times 12 = 6.0\,\text{V}$
 
-(b) With $R_L = 10\,\text{k}\Omega$ across $R_2$, the parallel combination is:
+(b) With $R_L = 10\,\text{k}\Omega$ across $R_2$The parallel combination is:
 
 $$R_2' = \frac{R_2 R_L}{R_2 + R_L} = \frac{10 \times 10}{20} = 5.0\,\text{k}\Omega$$
 
@@ -177,9 +177,9 @@ This shows that to make a stiff divider, $R_2$ must be small relative to $R_L$. 
 
 A circuit contains three batteries and four resistors:
 
-- Battery 1: $\varepsilon_1 = 10\,\text{V}$, $r_1 = 1.0\,\Omega$
-- Battery 2: $\varepsilon_2 = 6.0\,\text{V}$, $r_2 = 0.5\,\Omega$
-- Battery 3: $\varepsilon_3 = 4.0\,\text{V}$, $r_3 = 0.5\,\Omega$
+- Battery 1: $\varepsilon_1 = 10\,\text{V}$$r_1 = 1.0\,\Omega$
+- Battery 2: $\varepsilon_2 = 6.0\,\text{V}$$r_2 = 0.5\,\Omega$
+- Battery 3: $\varepsilon_3 = 4.0\,\text{V}$$r_3 = 0.5\,\Omega$
 - Resistor $R_1 = 4.0\,\Omega$ in the left branch (with battery 1)
 - Resistor $R_2 = 6.0\,\Omega$ in the middle branch (with battery 2)
 - Resistor $R_3 = 3.0\,\Omega$ in the right branch (with battery 3)
@@ -263,7 +263,7 @@ $= 0.637^2 \times 1.0 + 0.125^2 \times 0.5 + 0.512^2 \times 0.5 = 0.406 + 0.0078
 
 Total power absorbed: $P_{\text{abs}} = 0.75 + 1.62 + 0.094 + 0.786 + 0.524 + 0.545 = 4.32\,\text{W}$
 
-The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,\text{A}$, $I_2 = -0.1253\,\text{A}$, $I_3 = 0.5116\,\text{A}$), the energy balance is verified by Kirchhoff's voltage law: the total EMF times current equals the total $I^2R$ power dissipation in any well-solved circuit.
+The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,\text{A}$$I_2 = -0.1253\,\text{A}$$I_3 = 0.5116\,\text{A}$), the energy balance is verified by Kirchhoff's voltage law: the total EMF times current equals the total $I^2R$ power dissipation in any well-solved circuit.
 
 ---
 
@@ -273,7 +273,7 @@ The values above use rounded figures. Using more precise values ($I_1 = 0.6369\,
 
 A capacitor of capacitance $C = 100\,\mu\text{F}$ is initially uncharged. It is connected in series with a resistor $R = 50\,\text{k}\Omega$ and a battery of EMF $\varepsilon = 20\,\text{V}$ (negligible internal resistance) at $t = 0$.
 
-(a) Calculate the time constant, the current at $t = 0$, and the charge on the capacitor at $t = 10\,\text{s}$.
+(a) Calculate the time constant, the current at $t = 0$And the charge on the capacitor at $t = 10\,\text{s}$.
 
 (b) Calculate the energy stored in the capacitor when it is fully charged and the total energy supplied by the battery during the full charging process.
 
@@ -303,7 +303,7 @@ This can be shown mathematically:
 
 $$E_R = \int_0^\infty I^2 R\,dt = \int_0^\infty \left(\frac{\varepsilon}{R}e^{-t/\tau}\right)^2 R\,dt = \frac{\varepsilon^2}{R}\int_0^\infty e^{-2t/\tau}\,dt = \frac{\varepsilon^2}{R} \times \frac{\tau}{2} = \frac{\varepsilon^2}{R} \times \frac{RC}{2} = \frac{1}{2}C\varepsilon^2$$
 
-So $E_R = \frac{1}{2}C\varepsilon^2 = 20\,\text{mJ}$, exactly half the total energy supplied.
+So $E_R = \frac{1}{2}C\varepsilon^2 = 20\,\text{mJ}$Exactly half the total energy supplied.
 
 This result is independent of $R$: no matter how large or small the resistance, exactly half the energy from the battery is dissipated in the resistor and half is stored in the capacitor. This is a fundamental result for RC charging circuits.
 
@@ -313,7 +313,7 @@ This result is independent of $R$: no matter how large or small the resistance, 
 
 **Question:**
 
-A Wheatstone bridge has arms $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$, $R_3 = 150\,\Omega$, and $R_4 = 300\,\Omega$. A galvanometer of resistance $R_g = 50\,\Omega$ is connected between the junction of $R_1$--$R_2$ and the junction of $R_3$--$R_4$. The supply voltage is $V = 10\,\text{V}$.
+A Wheatstone bridge has arms $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$And $R_4 = 300\,\Omega$. A galvanometer of resistance $R_g = 50\,\Omega$ is connected between the junction of $R_1$--$R_2$ and the junction of $R_3$--$R_4$. The supply voltage is $V = 10\,\text{V}$.
 
 (a) Determine whether the bridge is balanced and calculate the galvanometer current.
 
@@ -329,7 +329,7 @@ $$100/200 = 150/300 \Rightarrow 0.5 = 0.5$$
 
 The bridge is balanced. The galvanometer current is **zero**.
 
-(b) With $R_4 = 305\,\Omega$, the bridge is unbalanced.
+(b) With $R_4 = 305\,\Omega$The bridge is unbalanced.
 
 Using Thevenin's theorem: remove the galvanometer and find the Thevenin voltage and resistance.
 
@@ -349,7 +349,7 @@ $$I_g = \frac{|V_{\text{th}}|}{R_{\text{th}} + R_g} = \frac{0.0364}{167.2 + 50} 
 
 $$I_g \approx \frac{V \cdot \Delta R_4 \cdot R_3}{(R_3 + R_4)^2(R_{\text{th}} + R_g)}$$
 
-For $\Delta R_4 = 5\,\Omega$, $I_g = 168\,\mu\text{A}$.
+For $\Delta R_4 = 5\,\Omega$$I_g = 168\,\mu\text{A}$.
 
 For $I_g = 1.0\,\mu\text{A}$:
 

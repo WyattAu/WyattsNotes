@@ -21,7 +21,7 @@ Given the following standard enthalpy changes:
 
 (a) Using Hess's law, calculate the standard enthalpy of formation of methane, $\Delta H_{f}^{\circ}(CH_{4})$. [4 marks]
 
-(b) Draw a Hess's law cycle that clearly shows the two alternative routes from elements to products. [2 marks]
+(b) Draw a Hess's law cycle that shows the two alternative routes from elements to products. [2 marks]
 
 (c) A student writes $\Delta H_{f}^{\circ}(CH_{4}) = -393.5 - 285.8 - (-890.3) = +210.6$ kJ/mol. Identify the error in the student's working. [2 marks]
 
@@ -92,7 +92,7 @@ $$\Delta H = 678 - 862 = -184 \text{ kJ/mol}$$
 (b) The calculated value ($-184$) is very close to the actual value ($-184.6$), but the small difference arises because:
 
 1. **Average bond enthalpies** are averages taken over many different compounds containing that bond type. The actual $H-Cl$ bond enthalpy in $HCl(g)$ may differ slightly from the average value.
-2. Average bond enthalpies are typically given for species in the **gaseous state** at 298 K and refer to the mean bond dissociation enthalpy, which may differ from the specific bond enthalpy in this particular reaction.
+2. Average bond enthalpies are given for species in the **gaseous state** at 298 K and refer to the mean bond dissociation enthalpy, which may differ from the specific bond enthalpy in this particular reaction.
 3. The bond enthalpy values have experimental uncertainties.
 
 (c) Using **standard enthalpy of formation data** is more accurate because these are experimentally measured values specific to each compound, rather than averages. Average bond enthalpies introduce error because the actual bond energy in a specific molecule can deviate from the average due to the molecular environment.
@@ -148,7 +148,7 @@ The discrepancy is due to **heat loss to the surroundings** (the polystyrene cup
 Given:
 - $\Delta H_{f}^{\circ}(C_{2}H_{4}, g) = +52.2$ kJ/mol
 - $\Delta H_{f}^{\circ}(C_{2}H_{6}, g) = -84.7$ kJ/mol
-- Bond enthalpies: $C=C = 612$, $C-C = 348$, $C-H = 412$, $H-H = 436$ (all in kJ/mol)
+- Bond enthalpies: $C=C = 612$$C-C = 348$$C-H = 412$$H-H = 436$ (all in kJ/mol)
 
 (a) Calculate the enthalpy change for the hydrogenation of ethene using standard enthalpy of formation data:
 
@@ -176,7 +176,7 @@ $H_{2}$: $1 \times H-H$.
 
 Bonds broken: $C=C + H-H + 4 \times C-H = 612 + 436 + 1648 = 2696$ kJ/mol
 
-Bonds formed (in $C_{2}H_{6}$, $H_{3}C-CH_{3}$): $1 \times C-C + 6 \times C-H = 348 + 6 \times 412 = 348 + 2472 = 2820$ kJ/mol
+Bonds formed (in $C_{2}H_{6}$$H_{3}C-CH_{3}$): $1 \times C-C + 6 \times C-H = 348 + 6 \times 412 = 348 + 2472 = 2820$ kJ/mol
 
 $$\Delta H = 2696 - 2820 = -124 \text{ kJ/mol}$$
 

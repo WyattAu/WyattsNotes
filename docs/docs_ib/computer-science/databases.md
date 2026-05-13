@@ -12,38 +12,38 @@ description: "Rigorous IB computer science notes covering Databases. Includes de
 ### Flat File vs Relational Database
 
 A **flat file** stores data in a single table (e.g., a spreadsheet or CSV file). Each row is a
-record and each column is a field. Flat files are simple and suitable for small, single-user
-applications, but they suffer from data redundancy, inconsistency, and limited querying capability.
+Record and each column is a field. Flat files are simple and suitable for small, single-user
+Applications, but they suffer from data redundancy, inconsistency, and limited querying capability.
 
 A **relational database** organizes data into multiple related tables. Each table has a fixed
-structure (defined number of columns with specific data types), and relationships between tables are
-maintained through primary keys and foreign keys. Relational databases enforce data integrity,
-minimize redundancy, and support complex queries through SQL.
+Structure (defined number of columns with specific data types), and relationships between tables are
+Maintained through primary keys and foreign keys. Relational databases enforce data integrity,
+Minimize redundancy, and support complex queries through SQL.
 
-| Aspect            | Flat File                        | Relational Database                       |
+| Aspect | Flat File | Relational Database |
 | ----------------- | -------------------------------- | ----------------------------------------- |
-| Structure         | Single table                     | Multiple related tables                   |
-| Redundancy        | High (data repeated across rows) | Low (normalization eliminates redundancy) |
-| Data integrity    | Not enforced                     | Enforced by constraints                   |
-| Concurrent access | Poor (file locking issues)       | Built-in concurrency control              |
-| Query capability  | Limited (full table scan)        | SQL with indexing, joins, subqueries      |
-| Scalability       | Poor                             | Good (with proper design and indexing)    |
-| Security          | File-level only                  | Granular (table, column, row-level)       |
+| Structure | Single table | Multiple related tables |
+| Redundancy | High (data repeated across rows) | Low (normalization eliminates redundancy) |
+| Data integrity | Not enforced | Enforced by constraints |
+| Concurrent access | Poor (file locking issues) | Built-in concurrency control |
+| Query capability | Limited (full table scan) | SQL with indexing, joins, subqueries |
+| Scalability | Poor | Good (with proper design and indexing) |
+| Security | File-level only | Granular (table, column, row-level) |
 
 ### Why Use a Database?
 
 Data independence: the structure of data can be changed without modifying applications that use it.
 Data integrity: constraints prevent invalid data from being stored. Concurrent access: multiple
-users can read and write simultaneously without corrupting data. Security: access can be controlled
-at a granular level. Backup and recovery: databases provide transaction logging and point-in-time
-recovery.
+Users can read and write simultaneously without corrupting data. Security: access can be controlled
+At a granular level. Backup and recovery: databases provide transaction logging and point-in-time
+Recovery.
 
 ### Worked Example: Choosing Between a Flat File and a Database
 
 A small bakery tracks daily sales in a spreadsheet. They have one sheet with columns:
 `date, product, quantity, price, total`. They now want to: (1) track customer loyalty points, (2)
-generate monthly revenue reports by product category, (3) allow two cashiers to enter data
-simultaneously. Should they switch to a relational database?
+Generate monthly revenue reports by product category, (3) allow two cashiers to enter data
+Simultaneously. Should they switch to a relational database?
 
 <details>
 <summary>Solution</summary>
@@ -51,28 +51,28 @@ simultaneously. Should they switch to a relational database?
 **Yes, a relational database is now appropriate.** Here is why each requirement justifies the switch:
 
 1. **Customer loyalty points:** This requires a Customer table linked to sales via a foreign key. A
-   flat file would duplicate customer data in every row (redundancy). A relational database stores
-   each customer once and references them by customerID.
+ flat file would duplicate customer data in every row (redundancy). A relational database stores
+ each customer once and references them by customerID.
 
 2. **Monthly revenue reports by category:** This requires joining sales with product categories and
-   using aggregate functions (SUM, GROUP BY). SQL handles this efficiently; a flat file would need
-   manual filtering and formula work for each report.
+ using aggregate functions (SUM, GROUP BY). SQL handles this efficiently; a flat file would need
+ manual filtering and formula work for each report.
 
 3. **Concurrent access:** Two cashiers entering data simultaneously in a spreadsheet causes file
-   locking and potential data loss. Relational databases have built-in concurrency control (locking
-   and isolation) that handles simultaneous writes safely.
+ locking and potential data loss. Relational databases have built-in concurrency control (locking
+ and isolation) that handles simultaneous writes safely.
 
 </details>
 
 ## Entity-Relationship Diagrams (ERDs)
 
 An ERD is a visual representation of the data model. It shows entities (things of interest), their
-attributes, and the relationships between them.
+Attributes, and the relationships between them.
 
 ### Entities and Attributes
 
 An **entity** represents a real-world object or concept (e.g., Student, Course, Order). An entity
-instance is a single occurrence (e.g., a specific student named "Alice").
+Instance is a single occurrence (e.g., a specific student named "Alice").
 
 An **attribute** is a property of an entity (e.g., Student has studentID, name, dateOfBirth, email).
 
@@ -81,37 +81,37 @@ An **attribute** is a property of an entity (e.g., Student has studentID, name, 
 - **Underlined** in ERD notation indicates a primary key.
 - Attributes that are unique for each instance are candidate keys.
 - Multi-valued attributes (e.g., a student's phone numbers) are indicated with double lines in some
-  notations, but in relational databases these are typically moved to a separate table.
+ notations, but in relational databases these are moved to a separate table.
 
 ### Relationships
 
 Relationships describe how entities are associated with each other. They have a **degree** (the
-number of entities involved) and a **cardinality** (the number of instances on each side).
+Number of entities involved) and a **cardinality** (the number of instances on each side).
 
 **One-to-One (1:1):** Each instance of entity A is associated with exactly one instance of entity B,
-and vice versa. Example: Person and Passport. A person has at most one passport; a passport belongs
-to exactly one person. In a relational database, the foreign key can be placed in either table.
+And vice versa. Example: Person and Passport. A person has at most one passport; a passport belongs
+To exactly one person. In a relational database, the foreign key can be placed in either table.
 
 **One-to-Many (1:M):** Each instance of entity A can be associated with many instances of entity B,
-but each instance of B is associated with exactly one instance of A. Example: Teacher and Class. A
-teacher can teach many classes, but each class has one teacher. The foreign key goes in the "many"
-table (Class table contains teacherID).
+But each instance of B is associated with exactly one instance of A. Example: Teacher and Class. A
+Teacher can teach many classes, but each class has one teacher. The foreign key goes in the "many"
+Table (Class table contains teacherID).
 
 **Many-to-Many (M:N):** Each instance of entity A can be associated with many instances of entity B,
-and vice versa. Example: Student and Course. A student can enroll in many courses, and a course can
-have many students. This cannot be directly represented in a relational database and requires a
-junction (link/associative) table.
+And vice versa. Example: Student and Course. A student can enroll in many courses, and a course can
+Have many students. This cannot be directly represented in a relational database and requires a
+Junction (link/associative) table.
 
 ### Worked Example: School Database ERD
 
 Entities: Student, Teacher, Course, Enrollment
 
-| Relationship       | Type | Foreign Key Location            |
+| Relationship | Type | Foreign Key Location |
 | ------------------ | ---- | ------------------------------- |
-| Teacher-Course     | 1:M  | Course table has teacherID      |
-| Student-Enrollment | 1:M  | Enrollment table has studentID  |
-| Course-Enrollment  | 1:M  | Enrollment table has courseID   |
-| Student-Course     | M:N  | Via Enrollment (junction table) |
+| Teacher-Course | 1:M | Course table has teacherID |
+| Student-Enrollment | 1:M | Enrollment table has studentID |
+| Course-Enrollment | 1:M | Enrollment table has courseID |
+| Student-Course | M:N | Via Enrollment (junction table) |
 
 ### Worked Example: Creating an ERD for a Hospital
 
@@ -135,23 +135,23 @@ Design an ERD for a hospital system with the following requirements:
 
 **Relationships:**
 
-| Relationship        | Type | Foreign Key Location               |
+| Relationship | Type | Foreign Key Location |
 | ------------------- | ---- | ---------------------------------- |
-| Doctor-Appointment  | 1:M  | Appointment has doctorID           |
-| Patient-Appointment | 1:M  | Appointment has patientID          |
-| Doctor-Patient      | M:N  | Via Appointment (junction table)   |
+| Doctor-Appointment | 1:M | Appointment has doctorID |
+| Patient-Appointment | 1:M | Appointment has patientID |
+| Doctor-Patient | M:N | Via Appointment (junction table) |
 
 The Appointment table serves as both the junction table for the M:N Doctor-Patient relationship and
-as an entity in its own right with attributes (date, time, diagnosis). This is a common pattern where
-the junction table carries additional data.
+As an entity in its own right with attributes (date, time, diagnosis). This is a common pattern where
+The junction table carries additional data.
 
 </details>
 
 ### Worked Example: Identifying Relationships in a Library System
 
 A library has Books and Members. A member can borrow many books over time; a book can be borrowed by
-many members over time (but only by one member at a time). Each borrow record has a borrow date and a
-return date. Design the ERD.
+Many members over time (but only by one member at a time). Each borrow record has a borrow date and a
+Return date. Design the ERD.
 
 <details>
 <summary>Solution</summary>
@@ -160,53 +160,53 @@ return date. Design the ERD.
 
 **Relationships:**
 
-| Relationship | Type | Notes                                              |
+| Relationship | Type | Notes |
 | ------------ | ---- | -------------------------------------------------- |
-| Member-Loan  | 1:M  | A member can have many loans; each loan has one member |
-| Book-Loan    | 1:M  | A book can be loaned many times; each loan has one book |
-| Member-Book  | M:N  | Via the Loan junction table                        |
+| Member-Loan | 1:M | A member can have many loans; each loan has one member |
+| Book-Loan | 1:M | A book can be loaned many times; each loan has one book |
+| Member-Book | M:N | Via the Loan junction table |
 
 The Loan table is the junction table for the M:N Member-Book relationship, and it also stores
-attributes (borrowDate, returnDate) that belong to the relationship itself, not to either entity.
+Attributes (borrowDate, returnDate) that belong to the relationship itself, not to either entity.
 
 </details>
 
 **Common Pitfalls -- ERDs**
 
 - **Placing the foreign key in the wrong table:** The FK always goes in the "many" side of a 1:M
-  relationship. If Teacher teaches many Classes, the FK (teacherID) goes in Class, not in Teacher.
+ relationship. If Teacher teaches many Classes, the FK (teacherID) goes in Class, not in Teacher.
 - **Forgetting the junction table for M:N:** Many-to-many relationships cannot be directly stored in a
-  relational database. You must create a junction table with foreign keys pointing to both entities.
+ relational database. You must create a junction table with foreign keys pointing to both entities.
 - **Overlooking relationship attributes:** If a relationship has its own attributes (e.g., grade in
-  Student-Course, borrowDate in Member-Book), these belong in the junction table, not in either entity.
+ Student-Course, borrowDate in Member-Book), these belong in the junction table, not in either entity.
 
 ## Keys
 
-| Key Type      | Definition                                                                   | Example                                       |
+| Key Type | Definition | Example |
 | ------------- | ---------------------------------------------------------------------------- | --------------------------------------------- |
-| Superkey      | A set of attributes that uniquely identifies each tuple (may include extras) | `{studentID, name}`                           |
-| Candidate key | A minimal superkey (no proper subset is also a superkey)                     | ``\{studentID}``, ``\{email}``                      |
-| Primary key   | The candidate key chosen by the database designer to be the main identifier  | ``\{studentID}``                                 |
-| Foreign key   | An attribute that references the primary key of another table                | course.teacherID references Teacher.teacherID |
-| Composite key | A primary key consisting of two or more attributes                           | `{studentID, courseID}` in Enrollment         |
-| Alternate key | A candidate key not chosen as the primary key                                | ``\{email}`` (if studentID is the primary key)   |
+| Superkey | A set of attributes that uniquely identifies each tuple (may include extras) | `{studentID, name}` |
+| Candidate key | A minimal superkey (no proper subset is also a superkey) | ``\{studentID}``, ``\{email}`` |
+| Primary key | The candidate key chosen by the database designer to be the main identifier | ``\{studentID}`` |
+| Foreign key | An attribute that references the primary key of another table | course.teacherID references Teacher.teacherID |
+| Composite key | A primary key consisting of two or more attributes | `{studentID, courseID}` in Enrollment |
+| Alternate key | A candidate key not chosen as the primary key | ``\{email}`` (if studentID is the primary key) |
 
 **Primary key requirements:** Uniqueness (no two rows have the same primary key value), non-null
 (every row must have a primary key), immutable (the value should not change over time).
 
 **Foreign key constraints:** A foreign key value must either be null or match a primary key value in
-the referenced table. This enforces referential integrity.
+The referenced table. This enforces referential integrity.
 
 ### Worked Example: Identifying Keys
 
 For the following Book table, identify all superkeys, candidate keys, the primary key, and any
-alternate keys.
+Alternate keys.
 
-| bookID | ISBN          | title          | author       |
+| bookID | ISBN | title | author |
 | ------ | ------------- | -------------- | ------------ |
-| 1      | 978-013468599 | Clean Code     | Robert Martin|
-| 2      | 978-020161622 | PragmaticProg  | Andrew Hunt  |
-| 3      | 978-013235088 | Clean Coder    | Robert Martin|
+| 1 | 978-013468599 | Clean Code | Robert Martin|
+| 2 | 978-020161622 | PragmaticProg | Andrew Hunt |
+| 3 | 978-013235088 | Clean Coder | Robert Martin|
 
 Assume: bookID is unique, ISBN is unique, no two books share the same title and author combination.
 
@@ -238,84 +238,84 @@ Assume: bookID is unique, ISBN is unique, no two books share the same title and 
 **Alternate keys:** ``\{ISBN}`` and `{title, author}` -- candidate keys not chosen as primary key
 
 Note: `{bookID, title}` is a superkey but NOT a candidate key because its proper subset ``\{bookID}``
-is also a superkey.
+Is also a superkey.
 
 </details>
 
 **Common Pitfalls -- Keys**
 
 - **Confusing superkeys with candidate keys:** Every candidate key is a superkey, but not every
-  superkey is a candidate key. A candidate key must be minimal -- no proper subset can also be a
-  superkey.
+ superkey is a candidate key. A candidate key must be minimal -- no proper subset can also be a
+ superkey.
 - **Using natural keys as primary keys:** An email address might seem like a good primary key, but if
-  a user changes their email, every foreign key reference must be updated. Surrogate keys (auto-
-  incremented integers) avoid this problem.
+ a user changes their email, every foreign key reference must be updated. Surrogate keys (auto-
+ incremented integers) avoid this problem.
 - **Forgetting that composite keys require all attributes:** A composite primary key `{studentID,
-  courseID}` means that BOTH attributes together are needed to uniquely identify a row. Neither
-  alone is sufficient.
+ courseID}` means that BOTH attributes together are needed to uniquely identify a row. Neither
+ alone is sufficient.
 
 ## Normalization
 
 Normalization is the systematic process of organizing data to minimize redundancy and avoid
-insertion, update, and deletion anomalies. The process involves decomposing tables into smaller,
-well-structured tables linked by relationships.
+Insertion, update, and deletion anomalies. The process involves decomposing tables into smaller,
+Well-structured tables linked by relationships.
 
 ### Functional Dependencies
 
 A functional dependency $X \rightarrow Y$ means that the value of attribute $Y$ is uniquely
-determined by the value of attribute $X$. If two rows have the same value for $X$, they must have
-the same value for $Y$.
+Determined by the value of attribute $X$. If two rows have the same value for $X$They must have
+The same value for $Y$.
 
-**Example:** In a table with `{studentID, name, dateOfBirth}`, the dependency studentID
+**Example:** In a table with `{studentID, name, dateOfBirth}`The dependency studentID
 $\rightarrow$ name holds because each student has exactly one name.
 
 **Partial dependency:** $X \rightarrow Y$ where $X$ is a proper subset of a candidate key. This
-violates 2NF.
+Violates 2NF.
 
 **Transitive dependency:** $X \rightarrow Y$ and $Y \rightarrow Z$ (where $Y$ is not a candidate
-key), therefore $X \rightarrow Z$ transitively. This violates 3NF.
+Key), therefore $X \rightarrow Z$ transitively. This violates 3NF.
 
 ### First Normal Form (1NF)
 
 A table is in 1NF if and only if:
 
 1. All attributes contain atomic (indivisible) values. No repeating groups, no arrays, no
-   comma-separated lists within a single cell.
+ comma-separated lists within a single cell.
 2. Each row is unique (there is a primary key).
 
 **Violation example:**
 
-| OrderID | Customer | Items                |
+| OrderID | Customer | Items |
 | ------- | -------- | -------------------- |
-| 1001    | Alice    | Laptop, Mouse, Cable |
-| 1002    | Bob      | Monitor              |
+| 1001 | Alice | Laptop, Mouse, Cable |
+| 1002 | Bob | Monitor |
 
 The Items column contains multiple values, violating the atomicity rule.
 
 **1NF conversion:** Create a separate row for each item:
 
-| OrderID | Customer | Item    |
+| OrderID | Customer | Item |
 | ------- | -------- | ------- |
-| 1001    | Alice    | Laptop  |
-| 1001    | Alice    | Mouse   |
-| 1001    | Alice    | Cable   |
-| 1002    | Bob      | Monitor |
+| 1001 | Alice | Laptop |
+| 1001 | Alice | Mouse |
+| 1001 | Alice | Cable |
+| 1002 | Bob | Monitor |
 
 Primary key: `{OrderID, Item}`
 
 ### Second Normal Form (2NF)
 
 A table is in 2NF if it is in 1NF and has no partial dependencies. Every non-key attribute must
-depend on the entire primary key, not just part of it. This is only relevant when the primary key is
-composite.
+Depend on the entire primary key, not just part of it. This is only relevant when the primary key is
+Composite.
 
 **Violation example (unnormalized table):**
 
 | studentID | courseID | studentName | courseTitle | teacherName |
 | --------- | -------- | ----------- | ----------- | ----------- |
-| 1         | 101      | Alice       | Math        | Mr. Smith   |
-| 1         | 102      | Alice       | Physics     | Ms. Jones   |
-| 2         | 101      | Bob         | Math        | Mr. Smith   |
+| 1 | 101 | Alice | Math | Mr. Smith |
+| 1 | 102 | Alice | Physics | Ms. Jones |
+| 2 | 101 | Bob | Math | Mr. Smith |
 
 Primary key: `{studentID, courseID}`
 
@@ -326,7 +326,7 @@ Partial dependencies:
 - teacherName depends only on courseID (not on studentID)
 
 These are partial dependencies because studentName is determined by a proper subset of the primary
-key (studentID alone).
+Key (studentID alone).
 
 **2NF conversion:** Decompose into three tables:
 
@@ -334,45 +334,45 @@ key (studentID alone).
 
 | studentID | studentName |
 | --------- | ----------- |
-| 1         | Alice       |
-| 2         | Bob         |
+| 1 | Alice |
+| 2 | Bob |
 
 **Course** (PK: courseID):
 
 | courseID | courseTitle | teacherName |
 | -------- | ----------- | ----------- |
-| 101      | Math        | Mr. Smith   |
-| 102      | Physics     | Ms. Jones   |
+| 101 | Math | Mr. Smith |
+| 102 | Physics | Ms. Jones |
 
 **Enrollment** (PK: `{studentID, courseID}`):
 
 | studentID | courseID |
 | --------- | -------- |
-| 1         | 101      |
-| 1         | 102      |
-| 2         | 101      |
+| 1 | 101 |
+| 1 | 102 |
+| 2 | 101 |
 
 ### Third Normal Form (3NF)
 
 A table is in 3NF if it is in 2NF and has no transitive dependencies. Every non-key attribute must
-depend directly on the primary key, not through another non-key attribute.
+Depend directly on the primary key, not through another non-key attribute.
 
 **Violation example:**
 
 In the Course table above:
 
-| courseID | courseTitle | teacherName | teacherEmail     |
+| courseID | courseTitle | teacherName | teacherEmail |
 | -------- | ----------- | ----------- | ---------------- |
-| 101      | Math        | Mr. Smith   | smith@school.edu |
-| 102      | Physics     | Ms. Jones   | jones@school.edu |
+| 101 | Math | Mr. Smith | smith@school.edu |
+| 102 | Physics | Ms. Jones | jones@school.edu |
 
 Primary key: courseID
 
 Transitive dependency: courseID $\rightarrow$ teacherName $\rightarrow$ teacherEmail. The
-teacherEmail depends on teacherName, not directly on courseID. If Mr. Smith teaches a new course, we
-must update his email in every row where he appears (update anomaly). If Mr. Smith has no courses,
-we cannot store his email (insertion anomaly). If we delete all of Mr. Smith's courses, we lose his
-email (deletion anomaly).
+TeacherEmail depends on teacherName, not directly on courseID. If Mr. Smith teaches a new course, we
+Must update his email in every row where he appears (update anomaly). If Mr. Smith has no courses,
+We cannot store his email (insertion anomaly). If we delete all of Mr. Smith's courses, we lose his
+Email (deletion anomaly).
 
 **3NF conversion:** Decompose Course into two tables:
 
@@ -380,23 +380,23 @@ email (deletion anomaly).
 
 | courseID | courseTitle | teacherID |
 | -------- | ----------- | --------- |
-| 101      | Math        | T1        |
-| 102      | Physics     | T2        |
+| 101 | Math | T1 |
+| 102 | Physics | T2 |
 
 **Teacher** (PK: teacherID):
 
-| teacherID | teacherName | teacherEmail     |
+| teacherID | teacherName | teacherEmail |
 | --------- | ----------- | ---------------- |
-| T1        | Mr. Smith   | smith@school.edu |
-| T2        | Ms. Jones   | jones@school.edu |
+| T1 | Mr. Smith | smith@school.edu |
+| T2 | Ms. Jones | jones@school.edu |
 
 ### Summary of Normal Forms
 
-| Normal Form | Requirement                      | Anomaly Eliminated    |
+| Normal Form | Requirement | Anomaly Eliminated |
 | ----------- | -------------------------------- | --------------------- |
-| 1NF         | Atomic values, unique rows       | Multi-valued cells    |
-| 2NF         | 1NF + no partial dependencies    | Partial redundancy    |
-| 3NF         | 2NF + no transitive dependencies | Transitive redundancy |
+| 1NF | Atomic values, unique rows | Multi-valued cells |
+| 2NF | 1NF + no partial dependencies | Partial redundancy |
+| 3NF | 2NF + no transitive dependencies | Transitive redundancy |
 
 ### Worked Example: Full Normalization
 
@@ -404,16 +404,16 @@ Starting table: HospitalRecord
 
 | patientID | patientName | doctorID | doctorName | department | appointmentDate |
 | --------- | ----------- | -------- | ---------- | ---------- | --------------- |
-| P001      | John        | D001     | Dr. Lee    | Cardiology | 2025-03-01      |
-| P001      | John        | D001     | Dr. Lee    | Cardiology | 2025-03-15      |
-| P002      | Mary        | D002     | Dr. Chen   | Neurology  | 2025-03-02      |
-| P003      | Tom         | D001     | Dr. Lee    | Cardiology | 2025-03-03      |
+| P001 | John | D001 | Dr. Lee | Cardiology | 2025-03-01 |
+| P001 | John | D001 | Dr. Lee | Cardiology | 2025-03-15 |
+| P002 | Mary | D002 | Dr. Chen | Neurology | 2025-03-02 |
+| P003 | Tom | D001 | Dr. Lee | Cardiology | 2025-03-03 |
 
 **Step 1: 1NF.** Values are already atomic. But there are repeating groups (same patient appears
-multiple times). The primary key must be `{patientID, appointmentDate}`.
+Multiple times). The primary key must be `{patientID, appointmentDate}`.
 
 Actually, `{patientID, appointmentDate}` uniquely identifies each row. But patientName depends only
-on patientID, and doctorName depends only on doctorID.
+On patientID, and doctorName depends only on doctorID.
 
 **Step 2: 2NF.** Remove partial dependencies.
 
@@ -421,41 +421,41 @@ on patientID, and doctorName depends only on doctorID.
 
 | patientID | patientName |
 | --------- | ----------- |
-| P001      | John        |
-| P002      | Mary        |
-| P003      | Tom         |
+| P001 | John |
+| P002 | Mary |
+| P003 | Tom |
 
-**Appointment** (PK: `{patientID, appointmentDate}`, FK: patientID, doctorID):
+**Appointment** (PK: `{patientID, appointmentDate}`FK: patientID, doctorID):
 
 | patientID | appointmentDate | doctorID |
 | --------- | --------------- | -------- |
-| P001      | 2025-03-01      | D001     |
-| P001      | 2025-03-15      | D001     |
-| P002      | 2025-03-02      | D002     |
-| P003      | 2025-03-03      | D001     |
+| P001 | 2025-03-01 | D001 |
+| P001 | 2025-03-15 | D001 |
+| P002 | 2025-03-02 | D002 |
+| P003 | 2025-03-03 | D001 |
 
 **Doctor** (PK: doctorID):
 
 | doctorID | doctorName | department |
 | -------- | ---------- | ---------- |
-| D001     | Dr. Lee    | Cardiology |
-| D002     | Dr. Chen   | Neurology  |
+| D001 | Dr. Lee | Cardiology |
+| D002 | Dr. Chen | Neurology |
 
-**Step 3: 3NF.** Check for transitive dependencies in Doctor. doctorID $\rightarrow$ doctorName,
-doctorID $\rightarrow$ department. There is no non-key attribute depending on another non-key
-attribute here, so Doctor is already in 3NF. Check Appointment: no non-key attributes besides the
-foreign keys, which depend on the full primary key. Check Patient: patientName depends on patientID
+**Step 3: 3NF.** Check for transitive dependencies in Doctor. DoctorID $\rightarrow$ doctorName,
+DoctorID $\rightarrow$ department. There is no non-key attribute depending on another non-key
+Attribute here, so Doctor is already in 3NF. Check Appointment: no non-key attributes besides the
+Foreign keys, which depend on the full primary key. Check Patient: patientName depends on patientID
 (the only key). All tables are in 3NF.
 
 ### Worked Example: Normalize a Video Rental Table
 
 Normalize the following unnormalized table to 3NF:
 
-| rentalID | customerName | customerEmail      | movieTitle | genre  | dailyRate | rentalDate | returnDate |
+| rentalID | customerName | customerEmail | movieTitle | genre | dailyRate | rentalDate | returnDate |
 | -------- | ------------ | ------------------ | ---------- | ------ | --------- | ---------- | ---------- |
-| R001     | Alice        | alice@email.com    | Inception  | Sci-Fi | 3.50      | 2025-03-01 | 2025-03-05 |
-| R002     | Alice        | alice@email.com    | Titanic    | Drama  | 2.50      | 2025-03-10 | 2025-03-12 |
-| R003     | Bob          | bob@email.com      | Inception  | Sci-Fi | 3.50      | 2025-03-02 | NULL       |
+| R001 | Alice | alice@email.com | Inception | Sci-Fi | 3.50 | 2025-03-01 | 2025-03-05 |
+| R002 | Alice | alice@email.com | Titanic | Drama | 2.50 | 2025-03-10 | 2025-03-12 |
+| R003 | Bob | bob@email.com | Inception | Sci-Fi | 3.50 | 2025-03-02 | NULL |
 
 <details>
 <summary>Solution</summary>
@@ -464,36 +464,36 @@ Normalize the following unnormalized table to 3NF:
 The table is already in 1NF.
 
 **Step 2: Identify 2NF violations (partial dependencies).** Since the primary key is `rentalID` (a
-single attribute, not composite), there cannot be partial dependencies. The table is already in 2NF.
+Single attribute, not composite), there cannot be partial dependencies. The table is already in 2NF.
 
 **Step 3: Identify 3NF violations (transitive dependencies).**
 
 - `rentalID` $\rightarrow$ `customerName` $\rightarrow$ `customerEmail`: customerEmail depends on customerName (transitive)
-- `rentalID` $\rightarrow$ `movieTitle` $\rightarrow$ `genre`, `dailyRate`: genre and dailyRate depend on movieTitle (transitive)
+- `rentalID` $\rightarrow$ `movieTitle` $\rightarrow$ `genre``dailyRate`: genre and dailyRate depend on movieTitle (transitive)
 
 **Decompose into 4 tables:**
 
 **Customer** (PK: customerID):
 
-| customerID | customerName | customerEmail    |
+| customerID | customerName | customerEmail |
 | ---------- | ------------ | ---------------- |
-| C001       | Alice        | alice@email.com  |
-| C002       | Bob          | bob@email.com    |
+| C001 | Alice | alice@email.com |
+| C002 | Bob | bob@email.com |
 
 **Movie** (PK: movieID):
 
-| movieID | movieTitle | genre  | dailyRate |
+| movieID | movieTitle | genre | dailyRate |
 | ------- | ---------- | ------ | --------- |
-| M001    | Inception  | Sci-Fi | 3.50      |
-| M002    | Titanic    | Drama  | 2.50      |
+| M001 | Inception | Sci-Fi | 3.50 |
+| M002 | Titanic | Drama | 2.50 |
 
 **Rental** (PK: rentalID, FK: customerID, movieID):
 
 | rentalID | customerID | movieID | rentalDate | returnDate |
 | -------- | ---------- | ------- | ---------- | ---------- |
-| R001     | C001       | M001    | 2025-03-01 | 2025-03-05 |
-| R002     | C001       | M002    | 2025-03-10 | 2025-03-12 |
-| R003     | C002       | M001    | 2025-03-02 | NULL       |
+| R001 | C001 | M001 | 2025-03-01 | 2025-03-05 |
+| R002 | C001 | M002 | 2025-03-10 | 2025-03-12 |
+| R003 | C002 | M001 | 2025-03-02 | NULL |
 
 **Benefits of normalization:**
 - Update anomaly fixed: changing Alice's email now requires updating only one row in Customer.
@@ -505,13 +505,13 @@ single attribute, not composite), there cannot be partial dependencies. The tabl
 **Common Pitfalls -- Normalization**
 
 - **2NF is irrelevant with a single-column primary key:** Partial dependencies can only exist when
-  the primary key is composite. If the PK is a single attribute, every non-key attribute depends on
-  the entire PK by definition.
+ the primary key is composite. If the PK is a single attribute, every non-key attribute depends on
+ the entire PK by definition.
 - **Confusing partial and transitive dependencies:** A partial dependency is when a non-key attribute
-  depends on only a *part* of a composite primary key. A transitive dependency is when a non-key
-  attribute depends on another non-key attribute.
+ depends on only a *part* of a composite primary key. A transitive dependency is when a non-key
+ attribute depends on another non-key attribute.
 - **Losing data during decomposition:** When splitting tables, every attribute must appear in exactly
-  one resulting table. Forgetting to include an attribute means data is lost.
+ one resulting table. Forgetting to include an attribute means data is lost.
 
 ## SQL Fundamentals
 
@@ -535,14 +535,14 @@ CREATE TABLE Student (
 
 **Constraints:**
 
-| Constraint  | Purpose                                           |
+| Constraint | Purpose |
 | ----------- | ------------------------------------------------- |
 | PRIMARY KEY | Uniquely identifies each row; implicitly NOT NULL |
-| FOREIGN KEY | References a primary key in another table         |
-| NOT NULL    | Column cannot contain NULL values                 |
-| UNIQUE      | All values in the column must be distinct         |
-| CHECK       | Values must satisfy a Boolean condition           |
-| DEFAULT     | Default value when no value is specified          |
+| FOREIGN KEY | References a primary key in another table |
+| NOT NULL | Column cannot contain NULL values |
+| UNIQUE | All values in the column must be distinct |
+| CHECK | Values must satisfy a Boolean condition |
+| DEFAULT | Default value when no value is specified |
 
 **ALTER TABLE:**
 
@@ -611,8 +611,8 @@ FROM Student
 WHERE gpa >= 3.5 AND enrollmentYear = 2023;
 ```
 
-**Comparison operators in WHERE:** `=`, `<>`, `<`, `>`, `$\le$`, `$\ge$`, `BETWEEN`, `LIKE`, `IN`,
-`IS NULL`, `IS NOT NULL`.
+**Comparison operators in WHERE:** `=``<>``<``>``$\le$``$\ge$``BETWEEN``LIKE``IN`
+`IS NULL``IS NOT NULL`.
 
 **ORDER BY:**
 
@@ -645,11 +645,11 @@ Given these tables:
 
 | studentID | firstName | lastName | gradeLevel | gpa |
 | --------- | --------- | -------- | ---------- | --- |
-| 1         | Alice     | Smith    | 11         | 3.8 |
-| 2         | Bob       | Jones    | 10         | 3.2 |
-| 3         | Carol     | Williams | 11         | 3.9 |
-| 4         | Dave      | Brown    | 10         | 2.8 |
-| 5         | Eve       | Davis    | 12         | 3.5 |
+| 1 | Alice | Smith | 11 | 3.8 |
+| 2 | Bob | Jones | 10 | 3.2 |
+| 3 | Carol | Williams | 11 | 3.9 |
+| 4 | Dave | Brown | 10 | 2.8 |
+| 5 | Eve | Davis | 12 | 3.5 |
 
 Write SQL queries for each task:
 
@@ -684,9 +684,9 @@ Result:
 
 | gradeLevel | numStudents |
 | ---------- | ----------- |
-| 10         | 2           |
-| 11         | 2           |
-| 12         | 1           |
+| 10 | 2 |
+| 11 | 2 |
+| 12 | 1 |
 
 **Query 3: Student(s) with the highest GPA**
 
@@ -712,16 +712,16 @@ WHERE gpa >= ALL (SELECT gpa FROM Student);
 
 **Aggregate functions:** operate on a set of values and return a single value.
 
-| Function | Description           | Example                    |
+| Function | Description | Example |
 | -------- | --------------------- | -------------------------- |
-| COUNT    | Number of rows        | `COUNT(*)`, `COUNT(email)` |
-| SUM      | Sum of numeric values | `SUM(gpa)`                 |
-| AVG      | Arithmetic mean       | `AVG(gpa)`                 |
-| MIN      | Minimum value         | `MIN(gpa)`                 |
-| MAX      | Maximum value         | `MAX(gpa)`                 |
+| COUNT | Number of rows | `COUNT(*)``COUNT(email)` |
+| SUM | Sum of numeric values | `SUM(gpa)` |
+| AVG | Arithmetic mean | `AVG(gpa)` |
+| MIN | Minimum value | `MIN(gpa)` |
+| MAX | Maximum value | `MAX(gpa)` |
 
 **GROUP BY:** Groups rows that have the same values in specified columns. Aggregate functions are
-applied to each group.
+Applied to each group.
 
 ```sql
 SELECT department, COUNT(*) AS numTeachers, AVG(salary) AS avgSalary
@@ -730,7 +730,7 @@ GROUP BY department;
 ```
 
 **HAVING:** Filters groups after GROUP BY. HAVING operates on aggregated values; WHERE operates on
-individual rows before grouping.
+Individual rows before grouping.
 
 ```sql
 SELECT department, COUNT(*) AS numTeachers
@@ -753,7 +753,7 @@ INNER JOIN Course ON Enrollment.courseID = Course.courseID;
 ```
 
 **LEFT JOIN (LEFT OUTER JOIN):** Returns all rows from the left table, and matched rows from the
-right table. Unmatched rows from the right table are filled with NULL.
+Right table. Unmatched rows from the right table are filled with NULL.
 
 ```sql
 SELECT Student.firstName, Student.lastName, Course.courseName
@@ -763,10 +763,10 @@ LEFT JOIN Course ON Enrollment.courseID = Course.courseID;
 ```
 
 This returns all students, including those who are not enrolled in any course (their courseName will
-be NULL).
+Be NULL).
 
 **RIGHT JOIN (RIGHT OUTER JOIN):** Returns all rows from the right table, and matched rows from the
-left table.
+Left table.
 
 **FULL OUTER JOIN:** Returns all rows from both tables. Unmatched rows are filled with NULL.
 
@@ -778,7 +778,7 @@ FULL OUTER JOIN Course ON Enrollment.courseID = Course.courseID;
 ```
 
 **Self-join:** A table joined with itself. Useful for hierarchical data or finding relationships
-within the same entity.
+Within the same entity.
 
 ```sql
 SELECT e1.firstName AS employee, e2.firstName AS manager
@@ -788,11 +788,11 @@ INNER JOIN Employee e2 ON e1.managerID = e2.employeeID;
 
 ### Comparison of Join Types
 
-| Join Type       | Left Unmatched  | Right Unmatched | Use Case                     |
+| Join Type | Left Unmatched | Right Unmatched | Use Case |
 | --------------- | --------------- | --------------- | ---------------------------- |
-| INNER JOIN      | Excluded        | Excluded        | Only matching records needed |
-| LEFT JOIN       | Included (NULL) | Excluded        | All records from left table  |
-| RIGHT JOIN      | Excluded        | Included (NULL) | All records from right table |
+| INNER JOIN | Excluded | Excluded | Only matching records needed |
+| LEFT JOIN | Included (NULL) | Excluded | All records from left table |
+| RIGHT JOIN | Excluded | Included (NULL) | All records from right table |
 | FULL OUTER JOIN | Included (NULL) | Included (NULL) | All records from both tables |
 
 ### Worked Example: Tracing a JOIN Query
@@ -803,17 +803,17 @@ Given these tables:
 
 | studentID | firstName |
 | --------- | --------- |
-| 1         | Alice     |
-| 2         | Bob       |
-| 3         | Carol     |
+| 1 | Alice |
+| 2 | Bob |
+| 3 | Carol |
 
 **Enrollment** (studentID, courseID, grade):
 
 | studentID | courseID | grade |
 | --------- | -------- | ----- |
-| 1         | 101      | A     |
-| 1         | 102      | B     |
-| 2         | 101      | C     |
+| 1 | 101 | A |
+| 1 | 102 | B |
+| 2 | 101 | C |
 
 What is the output of the following query?
 
@@ -828,25 +828,25 @@ ORDER BY Student.firstName, Enrollment.courseID;
 <summary>Solution</summary>
 
 A LEFT JOIN returns all rows from Student, matched with Enrollment where possible. Carol (studentID 3)
-has no enrollments, so her columns from Enrollment are NULL.
+Has no enrollments, so her columns from Enrollment are NULL.
 
 **Step-by-step matching:**
 
-| Student.firstName | Enrollment.courseID | Enrollment.grade | Match?       |
+| Student.firstName | Enrollment.courseID | Enrollment.grade | Match? |
 | ----------------- | ------------------- | ---------------- | ------------ |
-| Alice             | 101                 | A                | studentID = 1|
-| Alice             | 102                 | B                | studentID = 1|
-| Bob               | 101                 | C                | studentID = 2|
-| Carol             | NULL                | NULL             | No match     |
+| Alice | 101 | A | studentID = 1|
+| Alice | 102 | B | studentID = 1|
+| Bob | 101 | C | studentID = 2|
+| Carol | NULL | NULL | No match |
 
 **Result:**
 
 | firstName | courseID | grade |
 | --------- | -------- | ----- |
-| Alice     | 101      | A     |
-| Alice     | 102      | B     |
-| Bob       | 101      | C     |
-| Carol     | NULL     | NULL  |
+| Alice | 101 | A |
+| Alice | 102 | B |
+| Bob | 101 | C |
+| Carol | NULL | NULL |
 
 Carol appears in the result even though she has no enrollments -- this is the key difference from an
 INNER JOIN, which would exclude her.
@@ -859,15 +859,15 @@ Given the Enrollment table:
 
 | studentID | courseID | grade |
 | --------- | -------- | ----- |
-| 1         | 101      | A     |
-| 1         | 102      | B     |
-| 2         | 101      | C     |
-| 3         | 103      | A     |
-| 3         | 104      | B     |
-| 3         | 105      | A     |
+| 1 | 101 | A |
+| 1 | 102 | B |
+| 2 | 101 | C |
+| 3 | 103 | A |
+| 3 | 104 | B |
+| 3 | 105 | A |
 
 Write a query to find students enrolled in more than 1 course, showing the studentID and the count
-of courses.
+Of courses.
 
 <details>
 <summary>Solution</summary>
@@ -883,8 +883,8 @@ HAVING COUNT(*) > 1;
 
 | studentID | numCourses |
 | --------- | ---------- |
-| 1         | 2          |
-| 3         | 3          |
+| 1 | 2 |
+| 3 | 3 |
 
 Student 2 is excluded because they are enrolled in only 1 course. HAVING filters after grouping;
 WHERE cannot be used here because `COUNT(*)` is an aggregate function.
@@ -894,7 +894,7 @@ WHERE cannot be used here because `COUNT(*)` is an aggregate function.
 ### Subqueries
 
 A subquery is a query nested inside another query. It can appear in SELECT, FROM, WHERE, and HAVING
-clauses.
+Clauses.
 
 **Subquery in WHERE (comparison):**
 
@@ -926,10 +926,10 @@ WHERE EXISTS (
 ```
 
 EXISTS returns TRUE if the subquery returns at least one row. It is efficient because it stops
-searching as soon as a match is found.
+Searching as soon as a match is found.
 
 **Correlated subquery:** The inner query references a column from the outer query. It is evaluated
-once for each row of the outer query.
+Once for each row of the outer query.
 
 ```sql
 SELECT firstName, lastName, gpa
@@ -945,7 +945,7 @@ This finds students whose GPA exceeds the average GPA of their own department.
 ### Worked Example: Subquery vs JOIN
 
 Find the names of all students who have received a grade of 'A' in at least one course. Write this
-using (a) a subquery with IN, and (b) a JOIN.
+Using (a) a subquery with IN, and (b) a JOIN.
 
 Given:
 
@@ -978,17 +978,17 @@ WHERE Enrollment.grade = 'A';
 ```
 
 DISTINCT is needed because a student could have multiple A grades, which would produce duplicate
-rows without it.
+Rows without it.
 
-Both approaches return: Alice, Carol. The JOIN approach is typically more efficient for large
-datasets because it avoids executing the subquery separately.
+Both approaches return: Alice, Carol. The JOIN approach is more efficient for large
+Datasets because it avoids executing the subquery separately.
 
 </details>
 
 ### Views
 
 A view is a virtual table based on the result of a SELECT query. It does not store data itself; it
-presents data from underlying tables.
+Presents data from underlying tables.
 
 ```sql
 CREATE VIEW HonorRoll AS
@@ -999,37 +999,37 @@ ORDER BY gpa DESC;
 ```
 
 **Updatable views:** A view is updatable if it meets certain conditions: it is based on a single
-table, it does not contain DISTINCT, GROUP BY, HAVING, or aggregate functions, and it includes the
-primary key of the underlying table.
+Table, it does not contain DISTINCT, GROUP BY, HAVING, or aggregate functions, and it includes the
+Primary key of the underlying table.
 
-**Non-updatable views:** Views that involve joins, aggregations, DISTINCT, or GROUP BY are typically
-read-only. To modify the data, you must update the underlying tables directly.
+**Non-updatable views:** Views that involve joins, aggregations, DISTINCT, or GROUP BY are 
+Read-only. To modify the data, you must update the underlying tables directly.
 
 **Use cases for views:** Simplifying complex queries (users query the view instead of writing a
-complex join each time), security (restrict access to specific columns or rows), data independence
+Complex join each time), security (restrict access to specific columns or rows), data independence
 (the underlying table structure can change without affecting the view definition).
 
 ## Transaction Management
 
 A transaction is a logical unit of work that consists of one or more SQL operations. Transactions
-ensure that the database remains in a consistent state even when failures occur.
+Ensure that the database remains in a consistent state even when failures occur.
 
 ### ACID Properties
 
-| Property    | Description                                                                                     |
+| Property | Description |
 | ----------- | ----------------------------------------------------------------------------------------------- |
-| Atomicity   | A transaction is all-or-nothing. Either all operations complete successfully, or none do.       |
-| Consistency | A transaction transforms the database from one valid state to another valid state.              |
-| Isolation   | Concurrent transactions do not interfere with each other. Intermediate states are invisible.    |
-| Durability  | Once a transaction is committed, its effects are permanent even in the event of a system crash. |
+| Atomicity | A transaction is all-or-nothing. Either all operations complete successfully, or none do. |
+| Consistency | A transaction transforms the database from one valid state to another valid state. |
+| Isolation | Concurrent transactions do not interfere with each other. Intermediate states are invisible. |
+| Durability | Once a transaction is committed, its effects are permanent even in the event of a system crash. |
 
 **Atomicity example:** A bank transfer deducts USD 100 from account A and adds USD 100 to account B.
 If the deduction succeeds but the addition fails (e.g., due to a system crash), atomicity ensures
-that the deduction is rolled back. Both operations must succeed, or neither does.
+That the deduction is rolled back. Both operations must succeed, or neither does.
 
 **Isolation levels** (from weakest to strongest): Read Uncommitted, Read Committed, Repeatable Read,
 Serializable. Higher isolation levels provide stronger consistency guarantees but reduce
-concurrency.
+Concurrency.
 
 ### Transaction Control
 
@@ -1051,7 +1051,7 @@ ROLLBACK;
 ### Worked Example: Transaction with ROLLBACK
 
 A bank transfer deducts $100 from account A and adds $100 to account B. Trace what happens if the
-second UPDATE fails.
+Second UPDATE fails.
 
 ```sql
 BEGIN TRANSACTION;
@@ -1076,14 +1076,14 @@ ROLLBACK;
 
 After ROLLBACK:
 
-| accountID | balance | State            |
+| accountID | balance | State |
 | --------- | ------- | ---------------- |
-| A         | 500     | Restored to 500  |
-| B         | --      | (never existed)  |
+| A | 500 | Restored to 500 |
+| B | -- | (never existed) |
 
 The ACID property **Atomicity** guarantees that the database returns to its original state. Without
 ROLLBACK, account A would have lost $100 with no corresponding gain anywhere -- the money would
-disappear.
+Disappear.
 
 If both statements had succeeded:
 
@@ -1098,25 +1098,25 @@ The changes would be permanent (**Durability**).
 **Common Pitfalls -- Transactions**
 
 - **Forgetting BEGIN TRANSACTION:** Without explicitly starting a transaction, each SQL statement
-  auto-commits individually. A multi-step operation like a bank transfer would not be atomic.
+ auto-commits individually. A multi-step operation like a bank transfer would not be atomic.
 - **Not handling errors:** If an error occurs mid-transaction and ROLLBACK is not called, the
-  transaction remains open. Some databases keep locks held, blocking other users indefinitely.
+ transaction remains open. Some databases keep locks held, blocking other users indefinitely.
 - **Long-running transactions:** Transactions that stay open for a long time hold locks and reduce
-  concurrency. Keep transactions as short as possible.
+ concurrency. Keep transactions as short as possible.
 
 ## Referential Integrity
 
 Referential integrity ensures that relationships between tables remain consistent. Specifically,
-every foreign key value must either be null or match a primary key value in the referenced table.
+Every foreign key value must either be null or match a primary key value in the referenced table.
 
 ### Cascading Operations
 
 When a referenced row is deleted or updated, the database can automatically propagate the change to
-related rows:
+Related rows:
 
-| Action   | ON DELETE CASCADE                | ON DELETE SET NULL                | ON DELETE RESTRICT                      |
+| Action | ON DELETE CASCADE | ON DELETE SET NULL | ON DELETE RESTRICT |
 | -------- | -------------------------------- | --------------------------------- | --------------------------------------- |
-| Effect   | Delete child rows                | Set FK to NULL                    | Block the delete                        |
+| Effect | Delete child rows | Set FK to NULL | Block the delete |
 | Use case | Delete order, remove order items | Employee leaves, clear department | Cannot delete a teacher who has classes |
 
 ```sql
@@ -1133,7 +1133,7 @@ CREATE TABLE Enrollment (
 ```
 
 Deleting a student cascades to delete their enrollment records. Deleting a course that has
-enrollments is restricted (blocked).
+Enrollments is restricted (blocked).
 
 ### Worked Example: Cascading Deletes
 
@@ -1144,21 +1144,21 @@ Given the following tables with the Enrollment table defined as above:
 **Enrollment**: (1, 101), (1, 102), (2, 101)
 
 What happens when you execute `DELETE FROM Student WHERE studentID = 1`? What happens if you then
-try `DELETE FROM Course WHERE courseID = 101`?
+Try `DELETE FROM Course WHERE courseID = 101`?
 
 <details>
 <summary>Solution</summary>
 
 **`DELETE FROM Student WHERE studentID = 1`:** Due to `ON DELETE CASCADE` on the studentID foreign
-key, deleting Alice also deletes all her enrollment records. After this operation:
+Key, deleting Alice also deletes all her enrollment records. After this operation:
 
 **Student**: studentID 2 (Bob)
 **Course**: courseID 101 (Math), 102 (Physics)
 **Enrollment**: (2, 101) -- Alice's two enrollment rows are deleted
 
 **`DELETE FROM Course WHERE courseID = 101`:** This is **blocked** due to `ON DELETE RESTRICT` on
-the courseID foreign key. Bob still has an enrollment in course 101, so the database refuses to
-delete the course. The DELETE statement fails with a referential integrity error.
+The courseID foreign key. Bob still has an enrollment in course 101, so the database refuses to
+Delete the course. The DELETE statement fails with a referential integrity error.
 
 To delete the course, you must first delete (or reassign) all enrollments that reference it:
 
@@ -1172,9 +1172,9 @@ DELETE FROM Course WHERE courseID = 101;
 ## Data Dictionaries
 
 A data dictionary (also called a system catalog) is a database about the database. It stores
-metadata: definitions of tables, columns, data types, constraints, indexes, relationships, and
-users. Every relational database management system (RDBMS) maintains a data dictionary
-automatically.
+Metadata: definitions of tables, columns, data types, constraints, indexes, relationships, and
+Users. Every relational database management system (RDBMS) maintains a data dictionary
+Automatically.
 
 **Contents of a data dictionary:**
 
@@ -1209,102 +1209,102 @@ CREATE TABLE Employee (
 <details>
 <summary>Solution</summary>
 
-| Column Name | Data Type       | Size | Constraints              | FK Reference        |
+| Column Name | Data Type | Size | Constraints | FK Reference |
 | ----------- | --------------- | ---- | ------------------------ | ------------------- |
-| empID       | INTEGER         | --   | PRIMARY KEY              | --                  |
-| name        | VARCHAR         | 100  | NOT NULL                 | --                  |
-| email       | VARCHAR         | 200  | UNIQUE                   | --                  |
-| salary      | DECIMAL         | 10,2 | CHECK (salary &gt; 0)    | --                  |
-| deptID      | INTEGER         | --   | --                       | Department(deptID) |
+| empID | INTEGER | -- | PRIMARY KEY | -- |
+| name | VARCHAR | 100 | NOT NULL | -- |
+| email | VARCHAR | 200 | UNIQUE | -- |
+| salary | DECIMAL | 10,2 | CHECK (salary &gt; 0) | -- |
+| deptID | INTEGER | -- | -- | Department(deptID) |
 
 </details>
 
 ## Big Data
 
 Big data refers to datasets that are too large, too complex, or generated too rapidly to be
-processed by traditional database systems. The IB syllabus identifies four characteristics known as
-the four Vs.
+Processed by traditional database systems. The IB syllabus identifies four characteristics known as
+The four Vs.
 
 ### The Four Vs
 
-| Characteristic | Description                                                                | Example                                           |
+| Characteristic | Description | Example |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------- |
-| Volume         | The sheer scale of data, typically terabytes to petabytes                  | Social media posts, sensor data, transaction logs |
-| Velocity       | The speed at which data is generated and must be processed                 | Stock market feeds, IoT sensors, clickstream data |
-| Variety        | The diversity of data types: structured, semi-structured, and unstructured | Text, images, video, JSON, XML, audio             |
-| Veracity       | The quality, accuracy, and trustworthiness of data                         | Noisy sensor readings, contradictory social media |
+| Volume | The sheer scale of data, terabytes to petabytes | Social media posts, sensor data, transaction logs |
+| Velocity | The speed at which data is generated and must be processed | Stock market feeds, IoT sensors, clickstream data |
+| Variety | The diversity of data types: structured, semi-structured, and unstructured | Text, images, video, JSON, XML, audio |
+| Veracity | The quality, accuracy, and trustworthiness of data | Noisy sensor readings, contradictory social media |
 
 ### Structured vs Semi-Structured vs Unstructured Data
 
-| Type            | Description                                               | Examples                        |
+| Type | Description | Examples |
 | --------------- | --------------------------------------------------------- | ------------------------------- |
-| Structured      | Organized into rows and columns with a fixed schema       | Relational database tables, CSV |
-| Semi-structured | Has some organizational properties but not a rigid schema | JSON, XML, HTML, log files      |
-| Unstructured    | No predefined structure                                   | Images, video, audio, free text |
+| Structured | Organized into rows and columns with a fixed schema | Relational database tables, CSV |
+| Semi-structured | Has some organizational properties but not a rigid schema | JSON, XML, HTML, log files |
+| Unstructured | No predefined structure | Images, video, audio, free text |
 
 Traditional relational databases handle structured data well. Big data systems (like Hadoop, NoSQL
-databases, data lakes) are designed to handle all three types at scale.
+Databases, data lakes) are designed to handle all three types at scale.
 
 ### Distributed Processing
 
-Big data is typically processed using distributed systems where data is partitioned across multiple
-machines and processed in parallel. Key frameworks include:
+Big data is processed using distributed systems where data is partitioned across multiple
+Machines and processed in parallel. Key frameworks include:
 
 - **MapReduce:** A programming model that divides work into map (process individual data items) and
-  reduce (combine results) phases.
+ reduce (combine results) phases.
 - **Hadoop:** An open-source framework for distributed storage (HDFS) and processing (MapReduce).
 - **NoSQL databases:** Non-relational databases (e.g., MongoDB, Cassandra, Redis) that handle
-  unstructured data and scale horizontally.
+ unstructured data and scale horizontally.
 
 ## Common Pitfalls
 
 ### Database Design
 
 **Not normalizing sufficiently:** Storing all data in a single table leads to redundancy and
-anomalies. A student's name appearing in every enrollment row means that changing the student's name
-requires updating every row (update anomaly).
+Anomalies. A student's name appearing in every enrollment row means that changing the student's name
+Requires updating every row (update anomaly).
 
 **Over-normalizing:** Excessive normalization (beyond 3NF) can lead to too many tables, requiring
-complex joins that degrade query performance. Sometimes deliberate denormalization is used for
-performance-critical read-heavy applications.
+Complex joins that degrade query performance. Sometimes deliberate denormalization is used for
+Performance-critical read-heavy applications.
 
 **Missing foreign key constraints:** Without foreign key constraints, the database cannot enforce
-referential integrity. Orphaned records (enrollment records pointing to non-existent students) can
-accumulate.
+Referential integrity. Orphaned records (enrollment records pointing to non-existent students) can
+Accumulate.
 
 **Poor primary key design:** Using natural keys (e.g., email addresses) as primary keys can cause
-problems if the key value changes. Surrogate keys (auto-incremented integers) are generally
-preferred for stability.
+Problems if the key value changes. Surrogate keys (auto-incremented integers) are generally
+Preferred for stability.
 
 ### SQL
 
 **SELECT \*** in production:\*\* Retrieving all columns when only a few are needed wastes bandwidth
-and memory. Always specify the columns you need.
+And memory. Always specify the columns you need.
 
 **Missing WHERE clause in UPDATE/DELETE:** `UPDATE Student SET gpa = 4.0` without a WHERE clause
-sets every student's GPA to 4.0. Always verify the WHERE clause before executing UPDATE or DELETE.
+Sets every student's GPA to 4.0. Always verify the WHERE clause before executing UPDATE or DELETE.
 
 **Confusing WHERE and HAVING:** WHERE filters rows before grouping; HAVING filters groups after
-grouping. Using WHERE with an aggregate function causes a syntax error.
+Grouping. Using WHERE with an aggregate function causes a syntax error.
 
 **NULL comparisons:** `WHERE column = NULL` does not work. NULL is not a value; it represents the
-absence of a value. Use `WHERE column IS NULL` or `WHERE column IS NOT NULL`.
+Absence of a value. Use `WHERE column IS NULL` or `WHERE column IS NOT NULL`.
 
 **Cartesian product:** A join without an ON clause (or with incorrect join conditions) produces a
 Cartesian product: every row from one table combined with every row from the other table. For tables
-with 1000 rows each, this produces 1,000,000 rows.
+With 1000 rows each, this produces 1,000,000 rows.
 
-**String comparison issues:** SQL string comparisons are typically case-sensitive in many RDBMS.
+**String comparison issues:** SQL string comparisons are case-sensitive in many RDBMS.
 `WHERE name = 'alice'` will not match 'Alice'. Use functions like `LOWER()` for case-insensitive
-comparisons, or set the column collation appropriately.
+Comparisons, or set the column collation appropriately.
 
 ## Problem Set
 
 ### Problem 1: ERD Design for a Music Library
 
 A music library has Artists and Albums. An artist can produce many albums; each album has exactly
-one artist. An album has many Tracks; each track belongs to one album. Identify all entities,
-relationships with cardinalities, and where foreign keys should be placed.
+One artist. An album has many Tracks; each track belongs to one album. Identify all entities,
+Relationships with cardinalities, and where foreign keys should be placed.
 
 <details>
 <summary>Solution</summary>
@@ -1313,10 +1313,10 @@ relationships with cardinalities, and where foreign keys should be placed.
 
 **Relationships:**
 
-| Relationship   | Cardinality | Foreign Key Location           |
+| Relationship | Cardinality | Foreign Key Location |
 | -------------- | ----------- | ------------------------------ |
-| Artist-Album   | 1:M         | Album table has artistID (FK)  |
-| Album-Track    | 1:M         | Track table has albumID (FK)   |
+| Artist-Album | 1:M | Album table has artistID (FK) |
+| Album-Track | 1:M | Track table has albumID (FK) |
 
 **Attributes:**
 - Artist: artistID (PK), name, genre
@@ -1332,7 +1332,7 @@ relationships with cardinalities, and where foreign keys should be placed.
 ### Problem 2: Partial vs Transitive Dependencies
 
 Given a table with columns `{orderID, productID, productName, customerID, customerName, quantity,
-unitPrice}`, and the primary key is ```{orderID, productID}```:
+UnitPrice}`, and the primary key is ```{orderID, productID}```:
 - Is `productName` a partial dependency? If so, on what?
 - Is `customerName` a partial dependency? If so, on what?
 
@@ -1340,13 +1340,13 @@ unitPrice}`, and the primary key is ```{orderID, productID}```:
 <summary>Solution</summary>
 
 - `productName` depends only on `productID` (a proper subset of the PK `{orderID, productID}`). Yes,
-  `productName` is a partial dependency.
+ `productName` is a partial dependency.
 - `customerName` depends only on `customerID`. But `customerID` is NOT part of the primary key, so
-  this is not a partial dependency -- it is a **transitive dependency**: `orderID` $\rightarrow$
-  `customerID` $\rightarrow$ `customerName`.
+ this is not a partial dependency -- it is a **transitive dependency**: `orderID` $\rightarrow$
+ `customerID` $\rightarrow$ `customerName`.
 
 Partial dependencies are specifically about non-key attributes depending on a **proper subset of the
-primary key**.
+Primary key**.
 
 </details>
 
@@ -1358,11 +1358,11 @@ primary key**.
 
 Normalize the following table to 3NF. Show each step.
 
-| empID | empName | deptID | deptName  | projID | projName    | hoursWorked |
+| empID | empName | deptID | deptName | projID | projName | hoursWorked |
 | ----- | ------- | ------ | --------- | ------ | ----------- | ----------- |
-| E01   | Alice   | D01    | Marketing | P01    | Campaign    | 20          |
-| E01   | Alice   | D01    | Marketing | P02    | Research    | 15          |
-| E02   | Bob     | D02    | Sales     | P01    | Campaign    | 30          |
+| E01 | Alice | D01 | Marketing | P01 | Campaign | 20 |
+| E01 | Alice | D01 | Marketing | P02 | Research | 15 |
+| E02 | Bob | D02 | Sales | P01 | Campaign | 30 |
 
 <details>
 <summary>Solution</summary>
@@ -1380,40 +1380,40 @@ Decompose:
 
 | empID | empName | deptID |
 | ----- | ------- | ------ |
-| E01   | Alice   | D01    |
-| E02   | Bob     | D02    |
+| E01 | Alice | D01 |
+| E02 | Bob | D02 |
 
 **Project** (PK: projID):
 
 | projID | projName |
 | ------ | -------- |
-| P01    | Campaign |
-| P02    | Research |
+| P01 | Campaign |
+| P02 | Research |
 
-**Assignment** (PK: `{empID, projID}`, FK: empID, projID):
+**Assignment** (PK: `{empID, projID}`FK: empID, projID):
 
 | empID | projID | hoursWorked |
 | ----- | ------ | ----------- |
-| E01   | P01    | 20          |
-| E01   | P02    | 15          |
-| E02   | P01    | 30          |
+| E01 | P01 | 20 |
+| E01 | P02 | 15 |
+| E02 | P01 | 30 |
 
 **3NF:** Check Employee: `empID` $\rightarrow$ `deptID` $\rightarrow$ `deptName` is a transitive
-dependency. Decompose:
+Dependency. Decompose:
 
 **Employee** (PK: empID, FK: deptID):
 
 | empID | empName | deptID |
 | ----- | ------- | ------ |
-| E01   | Alice   | D01    |
-| E02   | Bob     | D02    |
+| E01 | Alice | D01 |
+| E02 | Bob | D02 |
 
 **Department** (PK: deptID):
 
-| deptID | deptName  |
+| deptID | deptName |
 | ------ | --------- |
-| D01    | Marketing |
-| D02    | Sales     |
+| D01 | Marketing |
+| D02 | Sales |
 
 Final tables: Employee, Department, Project, Assignment -- all in 3NF.
 
@@ -1459,7 +1459,7 @@ Key decisions:
 ### Problem 5: Top N Students Query
 
 Given the Student table from the worked example above, write a query that returns the names and GPAs
-of the top 3 students overall.
+Of the top 3 students overall.
 
 <details>
 <summary>Solution</summary>
@@ -1475,9 +1475,9 @@ Result:
 
 | firstName | lastName | gpa |
 | --------- | -------- | --- |
-| Carol     | Williams | 3.9 |
-| Alice     | Smith    | 3.8 |
-| Eve       | Davis    | 3.5 |
+| Carol | Williams | 3.9 |
+| Alice | Smith | 3.8 |
+| Eve | Davis | 3.5 |
 
 </details>
 
@@ -1488,7 +1488,7 @@ Result:
 ### Problem 6: WHERE vs HAVING
 
 What is the difference between WHERE and HAVING? Give an example where using WHERE with an aggregate
-function would cause an error.
+Function would cause an error.
 
 <details>
 <summary>Solution</summary>
@@ -1516,7 +1516,7 @@ HAVING COUNT(*) > 1;
 ```
 
 The WHERE clause is evaluated before rows are grouped, so aggregate functions like `COUNT(*)` are not
-yet defined. HAVING is evaluated after grouping, when aggregates are available.
+Yet defined. HAVING is evaluated after grouping, when aggregates are available.
 
 </details>
 
@@ -1559,8 +1559,8 @@ WHERE NOT EXISTS (
 );
 ```
 
-All three approaches return the same result. NOT EXISTS is typically the most efficient for large
-datasets because it stops searching as soon as a match is found.
+All three approaches return the same result. NOT EXISTS is the most efficient for large
+Datasets because it stops searching as soon as a match is found.
 
 </details>
 
@@ -1580,7 +1580,7 @@ UPDATE Student SET gpa = 4.0;
 <summary>Solution</summary>
 
 This sets the GPA of **every** student in the table to 4.0. It is extremely dangerous because there is
-no WHERE clause to restrict which rows are updated.
+No WHERE clause to restrict which rows are updated.
 
 The safe version:
 
@@ -1589,8 +1589,8 @@ UPDATE Student SET gpa = 4.0 WHERE studentID = 3;
 ```
 
 Always double-check UPDATE and DELETE statements for a WHERE clause before executing them. In
-production systems, you can wrap destructive operations in a transaction and use SELECT first to
-verify which rows will be affected.
+Production systems, you can wrap destructive operations in a transaction and use SELECT first to
+Verify which rows will be affected.
 
 </details>
 
@@ -1606,8 +1606,8 @@ Explain why `WHERE column = NULL` does not work and provide the correct syntax.
 <summary>Solution</summary>
 
 NULL represents the **absence of a value**, not a value itself. The expression `column = NULL`
-evaluates to NULL (not TRUE or FALSE), so no rows are ever matched. NULL is not equal to anything,
-not even itself: `NULL = NULL` is NULL.
+Evaluates to NULL (not TRUE or FALSE), so no rows are ever matched. NULL is not equal to anything,
+Not even itself: `NULL = NULL` is NULL.
 
 Correct syntax:
 
@@ -1633,20 +1633,20 @@ Explain each of the four ACID properties with a bank transfer example.
 <summary>Solution</summary>
 
 **Atomicity:** Transferring $100 from A to B involves two operations (debit A, credit B). Either both
-succeed or neither does. If the system crashes after debiting A, the transaction is rolled back and
+Succeed or neither does. If the system crashes after debiting A, the transaction is rolled back and
 A's balance is restored.
 
 **Consistency:** After the transfer, the total balance across all accounts must remain the same. The
-transfer moves money but does not create or destroy it. The database transitions from one valid
-state to another.
+Transfer moves money but does not create or destroy it. The database transitions from one valid
+State to another.
 
 **Isolation:** If Alice transfers $100 to Bob at the same time that Carol checks Bob's balance, Carol
-should see either the balance before the transfer or after -- never a partially completed state
-where A has been debited but B has not yet been credited.
+Should see either the balance before the transfer or after -- never a partially completed state
+Where A has been debited but B has not yet been credited.
 
 **Durability:** Once the COMMIT succeeds, the transfer is permanent. Even if the power fails
-immediately after, the updated balances will be recovered from the transaction log when the system
-restarts.
+Immediately after, the updated balances will be recovered from the transaction log when the system
+Restarts.
 
 </details>
 
@@ -1670,10 +1670,10 @@ If Student has 5 rows and Course has 3 rows, how many rows are in the result?
 <summary>Solution</summary>
 
 A CROSS JOIN (cartesian product) combines every row from Student with every row from Course. With 5
-students and 3 courses, the result has $5 \times 3 = 15$ rows.
+Students and 3 courses, the result has $5 \times 3 = 15$ rows.
 
 Each student appears paired with every course, regardless of whether they are enrolled. This is rarely
-useful in practice and usually indicates a missing ON clause. A missing ON clause in an INNER JOIN or
+Useful in practice and indicates a missing ON clause. A missing ON clause in an INNER JOIN or
 LEFT JOIN is an error that produces an unintended cartesian product.
 
 </details>
@@ -1710,9 +1710,9 @@ Classify each type of data as structured, semi-structured, or unstructured:
 
 ### Problem 13: Correlated Subquery
 
-A company has an Employee table with columns `empID`, `name`, `salary`, and `departmentID`. Write a
-query that finds employees who earn more than the average salary in their own department. Explain why
-this requires a correlated subquery.
+A company has an Employee table with columns `empID``name``salary`And `departmentID`. Write a
+Query that finds employees who earn more than the average salary in their own department. Explain why
+This requires a correlated subquery.
 
 <details>
 <summary>Solution</summary>
@@ -1728,8 +1728,8 @@ WHERE e1.salary > (
 ```
 
 This requires a **correlated subquery** because the average must be computed **per department**, and the
-department changes for each row in the outer query. The inner query references `e1.departmentID` from
-the outer query, so it is re-evaluated for each employee.
+Department changes for each row in the outer query. The inner query references `e1.departmentID` from
+The outer query, so it is re-evaluated for each employee.
 
 This cannot be written as a simple subquery because a non-correlated subquery returns a single value
 (the overall average), not the department-specific average.
@@ -1743,7 +1743,7 @@ This cannot be written as a simple subquery because a non-correlated subquery re
 ### Problem 14: View Creation and Use Cases
 
 A school wants to create a view that shows only the names and grades of students in course 101. Write
-the CREATE VIEW statement and explain one advantage and one limitation of this view.
+The CREATE VIEW statement and explain one advantage and one limitation of this view.
 
 <details>
 <summary>Solution</summary>
@@ -1757,11 +1757,11 @@ WHERE Enrollment.courseID = 101;
 ```
 
 **Advantage:** Security -- teachers of other courses cannot see the full Student table. They only see
-the subset of data relevant to course 101 through this view.
+The subset of data relevant to course 101 through this view.
 
 **Limitation:** This view is **not updatable** because it involves a JOIN. You cannot use INSERT,
 UPDATE, or DELETE through this view. To modify student grades, you must update the Enrollment table
-directly.
+Directly.
 
 </details>
 
@@ -1808,15 +1808,15 @@ Answer all parts:
 (a) Explain the effect of `ON DELETE SET NULL` on the Club table's teacherID foreign key.
 (b) Write a query to find the names of all students who are in at least 2 clubs.
 (c) Write a query to find the name of each club and the number of members it has, showing only clubs
-    with more than 5 members.
+ with more than 5 members.
 (d) If teacherID 3 is deleted from the Teacher table, what happens to any clubs where teacherID = 3?
 
 <details>
 <summary>Solution</summary>
 
 **(a)** If a teacher is deleted, the `teacherID` column in any Club that referenced that teacher is set
-to NULL. The club itself is NOT deleted; it simply no longer has a supervising teacher. This allows a
-club to continue existing after its teacher leaves.
+To NULL. The club itself is NOT deleted; it no longer has a supervising teacher. This allows a
+Club to continue existing after its teacher leaves.
 
 **(b)**
 
@@ -1839,8 +1839,8 @@ HAVING COUNT(*) > 5;
 ```
 
 **(d)** The `teacherID` column in any Club row where `teacherID = 3` is set to NULL. The club record
-is preserved; only the reference to the teacher is cleared. If `ON DELETE CASCADE` had been used
-instead, the clubs themselves would have been deleted.
+Is preserved; only the reference to the teacher is cleared. If `ON DELETE CASCADE` had been used
+Instead, the clubs themselves would have been deleted.
 
 </details>
 
@@ -1853,3 +1853,11 @@ instead, the clubs themselves would have been deleted.
 - **A-Level Databases:** [Computer Science](https://alevel.wyattau.com/docs/computer-science/computer-science)
 - **DSE Programming and Databases:** [Programming and Databases](https://academics.wyattau.com/docs/dse/ICT/ict-programming-and-databases)
 - **University Databases:** [Database Systems](https://university.wyattau.com/docs/computing/databases)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

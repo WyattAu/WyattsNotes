@@ -7,7 +7,7 @@ slug: advanced-graph-algorithms
 ## Strongly Connected Components
 
 A strongly connected component (SCC) of a directed graph is a maximal set of vertices such that
-there is a path from every vertex to every other vertex within the set.
+There is a path from every vertex to every other vertex within the set.
 
 ### Kosaraju's Algorithm
 
@@ -242,34 +242,34 @@ def find_articulation_points(n, adj):
 :::info
 
 The condition for a bridge is `low[u] > tin[v]` (strict inequality), while for an articulation point
-it is `low[u] >= tin[v]` (non-strict). The difference matters: a back edge to the parent vertex
-satisfies `low[u] == tin[v]` but does not make the edge a bridge.
+It is `low[u] >= tin[v]` (non-strict). The difference matters: a back edge to the parent vertex
+Satisfies `low[u] == tin[v]` but does not make the edge a bridge.
 
 :::
 
 ### Biconnected Components
 
 A biconnected component is a maximal set of edges such that any two edges lie on a common simple
-cycle. Biconnected components are separated by articulation points.
+Cycle. Biconnected components are separated by articulation points.
 
 ## 2-SAT
 
 The 2-SAT problem asks whether a boolean formula in conjunctive normal form with exactly 2 literals
-per clause is satisfiable. It reduces to finding SCCs in an implication graph.
+Per clause is satisfiable. It reduces to finding SCCs in an implication graph.
 
 ### Reduction to Implication Graph
 
 Each clause $(x \lor y)$ is equivalent to $(\lnot x \to y) \land (\lnot y \to x)$. Build an
-implication graph where each variable $x$ has two vertices ($x$ and $\lnot x$), and add directed
-edges for each implication.
+Implication graph where each variable $x$ has two vertices ($x$ and $\lnot x$), and add directed
+Edges for each implication.
 
 ### Algorithm
 
 1. Build the implication graph
 2. Find SCCs using Tarjan's or Kosaraju's algorithm
-3. For every variable $x$, $x$ and $\lnot x$ must be in different SCCs
+3. For every variable $x$$x$ and $\lnot x$ must be in different SCCs
 4. If any variable has both $x$ and $\lnot x$ in the same SCC, the formula is unsatisfiable
-5. Otherwise, assign truth values: if `scc_id[x] > scc_id[not_x]`, set $x$ to true
+5. Otherwise, assign truth values: if `scc_id[x] > scc_id[not_x]`Set $x$ to true
 
 ```python
 def solve_2sat(n_vars, clauses):
@@ -312,7 +312,7 @@ def solve_2sat(n_vars, clauses):
 ### Ford-Fulkerson Method
 
 The Ford-Fulkerson method computes the maximum flow in a flow network. It repeatedly finds
-augmenting paths in the residual graph and pushes flow along them.
+Augmenting paths in the residual graph and pushes flow along them.
 
 ```python
 def ford_fulkerson(n, adj, capacity, source, sink):
@@ -411,7 +411,7 @@ def edmonds_karp(n, adj, capacity, source, sink):
 ### Dinic's Algorithm
 
 Dinic's algorithm achieves $O(V^2 E)$ time by using BFS to build a level graph and then finding
-blocking flows with DFS.
+Blocking flows with DFS.
 
 ```python
 from collections import deque
@@ -473,15 +473,15 @@ class Dinic:
 
 ### Max-Flow Algorithms Comparison
 
-| Algorithm        | Time Complexity  | Best For                             |
+| Algorithm | Time Complexity | Best For |
 | ---------------- | ---------------- | ------------------------------------ |
-| Ford-Fulkerson   | $O(E \cdot f^*)$ | Small flow values                    |
-| Edmonds-Karp     | $O(VE^2)$        | General purpose, simple to implement |
-| Dinic's          | $O(V^2 E)$       | General purpose, fast in practice    |
-| Capacity scaling | $O(E^2 \log U)$  | Large capacities                     |
-| Push-relabel     | $O(V^3)$         | Dense graphs                         |
+| Ford-Fulkerson | $O(E \cdot f^*)$ | Small flow values |
+| Edmonds-Karp | $O(VE^2)$ | General purpose, simple to implement |
+| Dinic's | $O(V^2 E)$ | General purpose, fast in practice |
+| Capacity scaling | $O(E^2 \log U)$ | Large capacities |
+| Push-relabel | $O(V^3)$ | Dense graphs |
 
-where $f^*$ is the max flow value and $U$ is the maximum edge capacity.
+Where $f^*$ is the max flow value and $U$ is the maximum edge capacity.
 
 ### Min-Cost Max-Flow
 
@@ -623,7 +623,7 @@ def hopcroft_karp(n_left, n_right, edges):
 ### Konig's Theorem
 
 **Theorem**: In a bipartite graph, the size of the maximum matching equals the size of the minimum
-vertex cover. Furthermore, the minimum vertex cover can be constructed from the maximum matching:
+Vertex cover. Furthermore, the minimum vertex cover can be constructed from the maximum matching:
 
 1. Find a maximum matching
 2. Find all unmatched vertices on the left side
@@ -681,11 +681,11 @@ An **Eulerian circuit** visits every edge exactly once and returns to the starti
 
 ### Conditions
 
-| Property    | Eulerian Circuit | Eulerian Path           |
+| Property | Eulerian Circuit | Eulerian Path |
 | ----------- | ---------------- | ----------------------- |
-| Connected   | Yes              | Yes (ignoring isolated) |
-| Even degree | All vertices     | All except exactly 2    |
-| Odd degree  | None             | Exactly 2               |
+| Connected | Yes | Yes (ignoring isolated) |
+| Even degree | All vertices | All except exactly 2 |
+| Odd degree | None | Exactly 2 |
 
 ### Hierholzer's Algorithm
 
@@ -831,52 +831,60 @@ def stoer_wagner(n, adj):
 
 ### 1. Confusing `tin` and `low` in Bridge Finding
 
-The condition for a bridge is `low[u] > tin[v]` (strictly greater). If you use `>=`, you will
-incorrectly classify back edges as bridges. The key distinction: `low[u] == tin[v]` means there is a
-back edge from the subtree of `u` to `v` (or an ancestor of `v`), which means the edge `(v, u)` is
+The condition for a bridge is `low[u] > tin[v]` (strictly greater). If you use `>=`You will
+Incorrectly classify back edges as bridges. The key distinction: `low[u] == tin[v]` means there is a
+Back edge from the subtree of `u` to `v` (or an ancestor of `v`), which means the edge `(v, u)` is
 NOT a bridge.
 
 ### 2. 2-SAT Variable Indexing
 
-In 2-SAT, variable $x$ is typically represented as vertex $2x$ and $\lnot x$ as vertex $2x+1$ (or
-vice versa). Getting the indexing wrong produces incorrect results. Always verify:
-`neg(neg(x)) == x`, i.e., `(x ^ 1) ^ 1 == x`.
+In 2-SAT, variable $x$ is represented as vertex $2x$ and $\lnot x$ as vertex $2x+1$ (or
+Vice versa). Getting the indexing wrong produces incorrect results. Always verify:
+`neg(neg(x)) == x`I.e., `(x ^ 1) ^ 1 == x`.
 
 ### 3. Ford-Fulkerson with DFS Can Be Exponential
 
 If augmenting paths are chosen poorly (e.g., using DFS), Ford-Fulkerson can take $O(E \cdot f^*)$
-time where $f^*$ is the max flow value. For irrational capacities, it may not even terminate. Always
-use BFS (Edmonds-Karp) or Dinic's algorithm unless you are certain the capacities are small
-integers.
+Time where $f^*$ is the max flow value. For irrational capacities, it may not even terminate. Always
+Use BFS (Edmonds-Karp) or Dinic's algorithm unless you are certain the capacities are small
+Integers.
 
 ### 4. Dinic's Level Graph Must Be Rebuilt
 
 In Dinic's algorithm, the level graph is built fresh each time BFS fails to find an augmenting path.
 Do not reuse the old level graph — it no longer represents valid augmenting paths in the residual
-graph.
+Graph.
 
 ### 5. Self-Loops in Eulerian Path Problems
 
 Self-loops contribute 2 to the degree of their vertex (one for each direction of traversal). A
-vertex with one self-loop and no other edges has degree 2 (even), not 1. Forgetting this leads to
-incorrect Eulerian path/circuit detection.
+Vertex with one self-loop and no other edges has degree 2 (even), not 1. Forgetting this leads to
+Incorrect Eulerian path/circuit detection.
 
 ### 6. Bipartite Graph Assumption
 
 Konig's theorem (min vertex cover = max matching) applies ONLY to bipartite graphs. For general
-graphs, the minimum vertex cover can be much larger than the maximum matching. Always verify the
-graph is bipartite before applying Konig's theorem.
+Graphs, the minimum vertex cover can be much larger than the maximum matching. Always verify the
+Graph is bipartite before applying Konig's theorem.
 
 ### 7. Tarjan's vs Kosaraju's SCC Ordering
 
 In Tarjan's algorithm, SCCs are produced in reverse topological order of the condensation DAG. In
 Kosaraju's algorithm, the second DFS pass produces SCCs in topological order. When the problem
-requires processing SCCs in topological order, choose the algorithm accordingly or reverse Tarjan's
-output.
+Requires processing SCCs in topological order, choose the algorithm accordingly or reverse Tarjan's
+Output.
 
 ### 8. Flow Network Construction
 
 When reducing a problem to max-flow, ensure the flow network is correctly constructed: (1) all edges
-have non-negative capacity, (2) the source has only outgoing edges, (3) the sink has only incoming
-edges, (4) the graph is directed (or convert undirected edges to two directed edges), and (5)
-capacities are integers if using Ford-Fulkerson with DFS.
+Have non-negative capacity, (2) the source has only outgoing edges, (3) the sink has only incoming
+Edges, (4) the graph is directed (or convert undirected edges to two directed edges), and (5)
+Capacities are integers if using Ford-Fulkerson with DFS.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

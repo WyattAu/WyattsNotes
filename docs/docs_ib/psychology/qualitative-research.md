@@ -36,7 +36,7 @@ Interviews are the most widely used qualitative data collection method. They inv
 
 ### Structured Interviews
 
-Structured interviews use a fixed set of predetermined questions asked in a fixed order. All participants are asked exactly the same questions in the same way. The questions are typically closed-ended or require short answers.
+Structured interviews use a fixed set of predetermined questions asked in a fixed order. All participants are asked exactly the same questions in the same way. The questions are closed-ended or require short answers.
 
 **Strengths:** High reliability; easy to administer and analyse; allows comparison across participants.
 
@@ -77,7 +77,7 @@ Unstructured interviews have no predetermined questions. The participant is invi
 
 ## Focus Groups
 
-A focus group is a group interview involving a moderator and typically 6--10 participants. The moderator introduces a topic and facilitates group discussion, encouraging participants to share their experiences, opinions, and perspectives with one another.
+A focus group is a group interview involving a moderator and 6--10 participants. The moderator introduces a topic and facilitates group discussion, encouraging participants to share their experiences, opinions, and perspectives with one another.
 
 **Strengths:**
 
@@ -109,7 +109,7 @@ A focus group is a group interview involving a moderator and typically 6--10 par
 **Strengths:**
 
 - Observational methods capture behaviour as it occurs in natural settings, providing high ecological validity.
-- They allow the study of behaviour that cannot be easily captured through self-report (e.g., non-verbal behaviour, interaction patterns).
+- They allow the study of behaviour that cannot be captured through self-report (e.g., non-verbal behaviour, interaction patterns).
 - They can generate rich, detailed data about social processes and contexts.
 
 **Limitations:**
@@ -141,7 +141,7 @@ The six phases of thematic analysis:
 2. **Generating initial codes:** Systematically coding interesting features of the data across the entire dataset. Codes are labels that identify a feature of the data relevant to the research question.
 3. **Searching for themes:** Collating codes into potential themes. Themes are broader than codes and represent patterns of meaning across the dataset.
 4. **Reviewing themes:** Checking that the themes work in relation to the coded extracts and the entire dataset. Themes may be refined, combined, split, or discarded at this stage.
-5. **Defining and naming themes:** Each theme is clearly defined and given a concise, descriptive name.
+5. **Defining and naming themes:** Each theme is defined and given a concise, descriptive name.
 6. **Producing the report:** The analysis is written up, with extracts from the data used to illustrate each theme.
 
 ### Discourse Analysis
@@ -198,7 +198,7 @@ In qualitative research, the researcher is not a neutral, objective observer but
 
 ## Reporting Qualitative Research
 
-Qualitative research reports typically include the following sections:
+Qualitative research reports include the following sections:
 
 1. **Introduction:** The research question, theoretical framework, and rationale for using a qualitative approach.
 2. **Method:** Detailed description of the sampling strategy, data collection methods, and analytical procedures. The description should be sufficiently detailed to allow the reader to evaluate the rigour of the research and to replicate the study.
@@ -222,3 +222,15 @@ Qualitative research reports typically include the following sections:
 - **Qualitative methods and the sociocultural LOA:** Interviews and focus groups are commonly used to study cultural norms, social identity, and group dynamics, as discussed in the [Sociocultural Level of Analysis](./sociocultural-level-of-analysis).
 - **Qualitative methods and abnormal psychology:** Case studies of individuals with psychological disorders are a primary source of qualitative data in clinical psychology, as discussed in [Abnormal Psychology](./abnormal-psychology).
 - **Qualitative methods and research methods:** The issues of reliability and validity discussed in [Research Methods](./research-methods) have qualitative equivalents (credibility, transferability, dependability, and confirmability) that should be understood alongside the quantitative criteria.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

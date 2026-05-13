@@ -15,7 +15,7 @@ slug: practices
 - Always enable null safety (`dart migrate`).
 - Avoid usage of `dynamic` and `Object` declaration, always use `var` or explicit typing.
 - Follow the order of `const` >> `final` >> `var` with no nullability specifier >> `final late` >>
-  `var?`.
+ `var?`.
 - Avoid non const top-level variables.
 - Favor immutable data classes (with `freezed` or `equatable`).
 
@@ -35,7 +35,7 @@ slug: practices
 ### Collections
 
 - Use collection `if`/`for`/`spreads` for concise code.
-- Prefer `.map()`, `.where()`, and `.fold()` over manual loops where appropriate.
+- Prefer `.map()``.where()`And `.fold()` over manual loops where appropriate.
 
 ### Error Handling
 
@@ -59,7 +59,7 @@ slug: practices
 - Use `freezed` for immutable models and unions.
 - Serialize JSON with `json_serializable`.
 - Use `MethodChannel` for native integrations (Kotlin/Swift).
-- Organize layers into `data`, `domain`, and `presentation`.
+- Organize layers into `data``domain`And `presentation`.
 
 ### Widget Optimizations
 
@@ -68,12 +68,12 @@ slug: practices
 - Avoid `Opacity` for animations; prefer `AnimatedOpacity` or `Transform`.
 - Use `ListView.builder` (or `CustomScrollView`) for infinite/large lists (lazy loading).
 - Extract expensive computations from `build()` methods.
-- Use `Key`s (e.g., `ValueKey`, `UniqueKey`) when modifying collections of stateful widgets.
+- Use `Key`S (e.g., `ValueKey``UniqueKey`) when modifying collections of stateful widgets.
 - Use `precacheImage` for images loaded on-demand.
 
 ### UI/UX Considerations
 
-- Use `LayoutBuilder`, `MediaQuery`, or `SafeArea`.
+- Use `LayoutBuilder``MediaQuery`Or `SafeArea`.
 - Test on multiple screen sizes (e.g., using `DevicePreview`).
 - Add semantic labels (`Semantics` widget), use `ExcludeSemantics` where needed.
 - Support dynamic text sizing (`TextScaler`).
@@ -86,9 +86,9 @@ slug: practices
 
 - Test performance in profile mode (`flutter run --profile`).
 - Use DevTools to check for jank, memory leaks, and CPU usage.
-- Dispose controllers (`ScrollController`, `TextEditingController`) and subscriptions.
+- Dispose controllers (`ScrollController``TextEditingController`) and subscriptions.
 - Use `const` widgets to reduce garbage collection.
-- Minimize `ClipPath`, `Opacity`, and `ShaderMask` usages in animations.
+- Minimize `ClipPath``Opacity`And `ShaderMask` usages in animations.
 - Prefer `CustomPaint` for complex UIs over deep widget trees.
 - Compress images (use `.webp` format).
 - Cache images with `cached_network_image`.
@@ -114,4 +114,16 @@ slug: practices
 ## Platform specific
 
 - ndk version mismatch
-  - Set `ndkVersion` in build.gradle.kts to the specific ndk version installed
+ - Set `ndkVersion` in build.gradle.kts to the specific ndk version installed
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

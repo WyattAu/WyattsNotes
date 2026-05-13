@@ -13,28 +13,28 @@ sidebar_position: 9
 ## Vectors in 3D
 
 This chapter extends the study of vectors from A Level Mathematics into three dimensions,
-introducing the vector (cross) product, equations of planes, and the scalar triple product. These
-tools are essential for geometry, mechanics, and physics at university level.
+Introducing the vector (cross) product, equations of planes, and the scalar triple product. These
+Tools are essential for geometry, mechanics, and physics at university level.
 
 ### Board Coverage
 
-| Board   | Paper   | Notes                                                                     |
+| Board | Paper | Notes |
 | ------- | ------- | ------------------------------------------------------------------------- |
-| AQA     | Paper 1 | 3D vectors, scalar product, vector product, planes, scalar triple product |
-| Edexcel | FP1     | 3D vectors, scalar product, vector product, lines and planes              |
-| OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes                        |
-| CIE     | P1      | 3D vectors, scalar product, vector product, lines, planes, intersections  |
+| AQA | Paper 1 | 3D vectors, scalar product, vector product, planes, scalar triple product |
+| Edexcel | FP1 | 3D vectors, scalar product, vector product, lines and planes |
+| OCR (A) | Paper 1 | 3D vectors, scalar product, vector product, planes |
+| CIE | P1 | 3D vectors, scalar product, vector product, lines, planes, intersections |
 
 :::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
-scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
-planes. :::
+Scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
+Planes. :::
 
 <hr />
 
 ## 1. Review of A Level Vectors
 
 A vector has magnitude and direction. In 2D, $\mathbf{a} = \begin{pmatrix}a_1\\a_2\end{pmatrix}$ has
-magnitude $|\mathbf{a}| = \sqrt{a_1^2 + a_2^2}$.
+Magnitude $|\mathbf{a}| = \sqrt{a_1^2 + a_2^2}$.
 
 Key results from A Level:
 
@@ -54,7 +54,7 @@ A vector in 3D is written as a column vector or in component form:
 
 $$\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$$
 
-where $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ are unit vectors along the $x$-, $y$-, $z$-axes.
+Where $\mathbf{i}$$\mathbf{j}$$\mathbf{k}$ are unit vectors along the $x$-, $y$-, $z$-axes.
 
 ### 2.2 Position vectors and displacement
 
@@ -74,7 +74,7 @@ $$|\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
 
 $$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
-where $\alpha$, $\beta$, $\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
+Where $\alpha$$\beta$$\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
 
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
@@ -92,14 +92,14 @@ $$\boxed{\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3}$$
 
 $$\boxed{\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta}$$
 
-where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
+Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
 
 ### 3.3 Key properties
 
 - $\mathbf{a}\cdot\mathbf{a} = |\mathbf{a}|^2$
 - $\mathbf{a}\cdot\mathbf{b} = \mathbf{b}\cdot\mathbf{a}$ (commutative)
 - $\mathbf{a}\cdot(\mathbf{b} + \mathbf{c}) = \mathbf{a}\cdot\mathbf{b} + \mathbf{a}\cdot\mathbf{c}$
-  (distributive)
+ (distributive)
 - $\mathbf{a}\cdot\mathbf{b} = 0 \iff \mathbf{a} \perp \mathbf{b}$ (when neither is zero)
 
 <hr />
@@ -122,8 +122,8 @@ $$\mathbf{a}\times\mathbf{b} = \begin{vmatrix}\mathbf{i} & \mathbf{j} & \mathbf{
 
 ### 4.3 Geometric interpretation
 
-**Theorem.** $|\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$, where $\theta$ is
-the angle between $\mathbf{a}$ and $\mathbf{b}$.
+**Theorem.** $|\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$Where $\theta$ is
+The angle between $\mathbf{a}$ and $\mathbf{b}$.
 
 ### Proof that the cross product magnitude equals the area of the parallelogram
 
@@ -144,25 +144,25 @@ $$|\mathbf{a}\times\mathbf{b}|^2 = |\mathbf{a}|^2|\mathbf{b}|^2(1 - \cos^2\theta
 $$|\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$$
 
 The area of the parallelogram is base $\times$ height
-$= |\mathbf{a}| \times |\mathbf{b}|\sin\theta$, which equals $|\mathbf{a}\times\mathbf{b}|$.
+$= |\mathbf{a}| \times |\mathbf{b}|\sin\theta$Which equals $|\mathbf{a}\times\mathbf{b}|$.
 $\square$
 
 The cross product $\mathbf{a}\times\mathbf{b}$ is **perpendicular** to both $\mathbf{a}$ and
-$\mathbf{b}$, and its direction is given by the right-hand rule.
+$\mathbf{b}$And its direction is given by the right-hand rule.
 
 ### 4.4 Properties
 
 - $\mathbf{a}\times\mathbf{b} = -(\mathbf{b}\times\mathbf{a})$ (anti-commutative)
 - $\mathbf{a}\times\mathbf{a} = \mathbf{0}$
 - $\mathbf{a}\times\mathbf{b} = \mathbf{0} \iff \mathbf{a}$ and $\mathbf{b}$ are parallel (or one is
-  zero)
+ zero)
 - $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$
-  (distributive)
-- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$,
-  $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
+ (distributive)
+- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$$\mathbf{j}\times\mathbf{k} = \mathbf{i}$
+ $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
 :::warning warning $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is
-only defined in 3D. :::
+Only defined in 3D. :::
 
 <hr />
 
@@ -171,18 +171,18 @@ only defined in 3D. :::
 ### 5.1 Vector form
 
 **Definition.** The vector equation of a line through point $A$ (position vector $\mathbf{a}$) in
-direction $\mathbf{d}$ is
+Direction $\mathbf{d}$ is
 
 $$\boxed{\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}, \quad \lambda \in \mathbb{R}}$$
 
 ### 5.2 Cartesian form
 
 If $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}$ and
-$\mathbf{d} = \begin{pmatrix}d_1\\d_2\\d_3\end{pmatrix}$, the parametric equations are:
+$\mathbf{d} = \begin{pmatrix}d_1\\d_2\\d_3\end{pmatrix}$The parametric equations are:
 
 $$x = a_1 + \lambda d_1, \quad y = a_2 + \lambda d_2, \quad z = a_3 + \lambda d_3$$
 
-When all $d_i \neq 0$, the Cartesian (symmetric) form is:
+When all $d_i \neq 0$The Cartesian (symmetric) form is:
 
 $$\boxed{\frac{x - a_1}{d_1} = \frac{y - a_2}{d_2} = \frac{z - a_3}{d_3}}$$
 
@@ -194,18 +194,18 @@ $\mathbf{r}_2 = \mathbf{a}_2 + \mu\mathbf{d}_2$:
 1. Equate components to get three equations in $\lambda$ and $\mu$.
 2. Solve two equations for $\lambda$ and $\mu$.
 3. **Check** the third equation:
-   - If consistent: the lines **intersect**.
-   - If inconsistent: the lines are **skew** (not parallel, not intersecting).
+ - If consistent: the lines **intersect**.
+ - If inconsistent: the lines are **skew** (not parallel, not intersecting).
 4. If $\mathbf{d}_1 \times \mathbf{d}_2 = \mathbf{0}$: the lines are **parallel**.
 
 **Example.** Find the intersection of
 $\mathbf{r}_1 = \begin{pmatrix}1\\2\\0\end{pmatrix} + \lambda\begin{pmatrix}1\\-1\\2\end{pmatrix}$
-and $\mathbf{r}_2 = \begin{pmatrix}3\\1\\4\end{pmatrix} + \mu\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
+And $\mathbf{r}_2 = \begin{pmatrix}3\\1\\4\end{pmatrix} + \mu\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
 
-Equating: $1+\lambda = 3+2\mu$, $2-\lambda = 1+\mu$, $2\lambda = 4-\mu$.
+Equating: $1+\lambda = 3+2\mu$$2-\lambda = 1+\mu$$2\lambda = 4-\mu$.
 
 From equation 2: $\lambda = 1 - \mu$. From equation 1:
-$1+(1-\mu) = 3+2\mu \implies 2-\mu = 3+2\mu \implies -3\mu = 1 \implies \mu = -1/3$,
+$1+(1-\mu) = 3+2\mu \implies 2-\mu = 3+2\mu \implies -3\mu = 1 \implies \mu = -1/3$
 $\lambda = 4/3$.
 
 Check equation 3: $2(4/3) = 4-(-1/3) \implies 8/3 = 13/3$. **Not consistent** — the lines are skew.
@@ -221,8 +221,8 @@ Check equation 3: $2(4/3) = 4-(-1/3) \implies 8/3 = 13/3$. **Not consistent** �
 
 $$\boxed{\mathbf{r}\cdot\mathbf{n} = \mathbf{a}\cdot\mathbf{n}}$$
 
-This works because every point $P$ on the plane satisfies $\overrightarrow{AP} \perp \mathbf{n}$,
-i.e., $(\mathbf{r} - \mathbf{a})\cdot\mathbf{n} = 0$.
+This works because every point $P$ on the plane satisfies $\overrightarrow{AP} \perp \mathbf{n}$
+I.e., $(\mathbf{r} - \mathbf{a})\cdot\mathbf{n} = 0$.
 
 ### 6.2 Cartesian form
 
@@ -232,13 +232,13 @@ $$\boxed{ax + by + cz = d}$$
 
 ### 6.3 Finding the normal to a plane
 
-Given three points $A$, $B$, $C$ on the plane, the normal is
+Given three points $A$$B$$C$ on the plane, the normal is
 
 $$\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC}$$
 
-**Example.** Find the equation of the plane through $A(1,0,2)$, $B(3,1,0)$, $C(0,2,1)$.
+**Example.** Find the equation of the plane through $A(1,0,2)$$B(3,1,0)$$C(0,2,1)$.
 
-$\overrightarrow{AB} = \begin{pmatrix}2\\1\\-2\end{pmatrix}$,
+$\overrightarrow{AB} = \begin{pmatrix}2\\1\\-2\end{pmatrix}$
 $\overrightarrow{AC} = \begin{pmatrix}-1\\2\\-1\end{pmatrix}$.
 
 $\mathbf{n} = \overrightarrow{AB}\times\overrightarrow{AC} = \begin{pmatrix}(1)(-1)-(-2)(2)\\(-2)(-1)-(2)(-1)\\(2)(2)-(1)(-1)\end{pmatrix} = \begin{pmatrix}3\\4\\5\end{pmatrix}$.
@@ -258,11 +258,11 @@ The acute angle is found by taking the absolute value.
 ### 6.5 Angle between a line and a plane
 
 The angle $\phi$ between a line with direction $\mathbf{d}$ and a plane with normal $\mathbf{n}$
-satisfies:
+Satisfies:
 
 $$\sin\phi = \frac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆$$
 
-Equivalently, if $\alpha$ is the angle between $\mathbf{d}$ and $\mathbf{n}$, then
+Equivalently, if $\alpha$ is the angle between $\mathbf{d}$ and $\mathbf{n}$Then
 $\phi = 90° - \alpha$.
 
 ### 6.6 Line of intersection of two planes
@@ -279,7 +279,7 @@ To find the line of intersection of $a_1 x + b_1 y + c_1 z = d_1$ and $a_2 x + b
 ### 7.1 Formula
 
 **Theorem.** The perpendicular distance from point $P$ with position vector $\mathbf{p}$ to the
-plane $\mathbf{r}\cdot\mathbf{n} = d$ is
+Plane $\mathbf{r}\cdot\mathbf{n} = d$ is
 
 $$\boxed{D = \frac◆LB◆|\mathbf{p}\cdot\mathbf{n} - d|◆RB◆◆LB◆|\mathbf{n}|◆RB◆}$$
 
@@ -290,15 +290,15 @@ $$\boxed{D = \frac◆LB◆|ax_0 + by_0 + cz_0 - d|◆RB◆◆LB◆\sqrt{a^2+b^2+
 ### Proof of the distance formula
 
 Let the plane have equation $\mathbf{r}\cdot\hat{\mathbf{n}} = p$ where $\hat{\mathbf{n}}$ is a unit
-normal and $p$ is the perpendicular distance from the origin to the plane.
+Normal and $p$ is the perpendicular distance from the origin to the plane.
 
-For any point $P$ with position vector $\mathbf{p}$, the distance from $P$ to the plane is the
-magnitude of the projection of $\mathbf{p}$ onto $\hat{\mathbf{n}}$, minus $p$:
+For any point $P$ with position vector $\mathbf{p}$The distance from $P$ to the plane is the
+Magnitude of the projection of $\mathbf{p}$ onto $\hat{\mathbf{n}}$Minus $p$:
 
 $$D = |\mathbf{p}\cdot\hat{\mathbf{n}} - p|$$
 
 If the plane is given as $\mathbf{r}\cdot\mathbf{n} = d$ (where $\mathbf{n}$ is not necessarily a
-unit vector), then $\hat{\mathbf{n}} = \mathbf{n}/|\mathbf{n}|$ and $p = d/|\mathbf{n}|$:
+Unit vector), then $\hat{\mathbf{n}} = \mathbf{n}/|\mathbf{n}|$ and $p = d/|\mathbf{n}|$:
 
 $$D = \left|\mathbf{p}\cdot\frac◆LB◆\mathbf{n}◆RB◆◆LB◆|\mathbf{n}|◆RB◆ - \frac◆LB◆d◆RB◆◆LB◆|\mathbf{n}|◆RB◆\right| = \frac◆LB◆|\mathbf{p}\cdot\mathbf{n} - d|◆RB◆◆LB◆|\mathbf{n}|◆RB◆$$
 
@@ -314,7 +314,7 @@ $D = \dfrac◆LB◆|2(1)-1(2)+2(3)-5|◆RB◆◆LB◆\sqrt{4+1+4}◆RB◆ = \dfr
 
 ### 8.1 Definition
 
-**Definition.** The **scalar triple product** of vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ is
+**Definition.** The **scalar triple product** of vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ is
 
 $$\boxed{[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}$$
 
@@ -326,7 +326,7 @@ $$\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \begin{vmatrix}a_1 & a_2 & a_3\\
 
 ### Proof that the scalar triple product equals the volume of the parallelepiped
 
-The parallelepiped with edges $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ has base area
+The parallelepiped with edges $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ has base area
 $|\mathbf{b}\times\mathbf{c}|$ (from Section 4.3).
 
 The height is the component of $\mathbf{a}$ perpendicular to the base, which is the projection of
@@ -334,7 +334,7 @@ $\mathbf{a}$ onto the direction of $\mathbf{b}\times\mathbf{c}$:
 
 $$\mathrm{height} = |\mathbf{a}|\cos\phi = \frac◆LB◆\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})◆RB◆◆LB◆|\mathbf{b}\times\mathbf{c}|◆RB◆$$
 
-where $\phi$ is the angle between $\mathbf{a}$ and $\mathbf{b}\times\mathbf{c}$.
+Where $\phi$ is the angle between $\mathbf{a}$ and $\mathbf{b}\times\mathbf{c}$.
 
 $$V = \mathrm{base} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \cdot \frac◆LB◆\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})◆RB◆◆LB◆|\mathbf{b}\times\mathbf{c}|◆RB◆ = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
 
@@ -347,13 +347,13 @@ $\square$
 ### 8.3 Properties
 
 - $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \mathbf{b}\cdot(\mathbf{c}\times\mathbf{a}) = \mathbf{c}\cdot(\mathbf{a}\times\mathbf{b})$
-  (cyclic permutation)
+ (cyclic permutation)
 - $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = -\mathbf{a}\cdot(\mathbf{c}\times\mathbf{b})$
-  (swapping two vectors changes sign)
-- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
-  are coplanar
+ (swapping two vectors changes sign)
+- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$
+ are coplanar
 
-:::info info $C$, $D$ are coplanar, then
+:::info info $C$$D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
 
 <hr />
@@ -366,23 +366,23 @@ $\mathbf{r}_2 = \mathbf{a}_2 + \mu\mathbf{d}_2$ is
 $$\boxed{D = \frac◆LB◆|(\mathbf{a}_2 - \mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|◆RB◆◆LB◆|\mathbf{d}_1\times\mathbf{d}_2|◆RB◆}$$
 
 **Intuition.** The shortest distance is measured along the common perpendicular. The direction of
-the common perpendicular is $\mathbf{d}_1 \times \mathbf{d}_2$. The formula projects the vector
-between any point on each line onto this perpendicular direction.
+The common perpendicular is $\mathbf{d}_1 \times \mathbf{d}_2$. The formula projects the vector
+Between any point on each line onto this perpendicular direction.
 
 <hr />
 
 ## 10. Key Results Summary
 
-| Quantity              | Formula                                                                                                |
+| Quantity | Formula |
 | --------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | -------- | -------------------------------- | ----------- |
-| Dot product           | $\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 =                                                | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta$ |
-| Cross product         | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
-| Line                  | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$                                                          |
-| Plane (vector)        | $\mathbf{r}\cdot\mathbf{n} = d$                                                                        |
-| Plane (Cartesian)     | $ax + by + cz = d$                                                                                     |
-| Point-plane distance  | $D = \dfrac◆LB◆                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$       |
-| Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $        |
-| Skew line distance    | $D = \dfrac◆LB◆                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$       |
+| Dot product | $\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 =                                                | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta$ |
+| Cross product | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
+| Line | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$ |
+| Plane (vector) | $\mathbf{r}\cdot\mathbf{n} = d$ |
+| Plane (Cartesian) | $ax + by + cz = d$ |
+| Point-plane distance | $D = \dfrac◆LB◆                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$ |
+| Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $ |
+| Skew line distance | $D = \dfrac◆LB◆                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$ |
 
 <hr />
 
@@ -392,8 +392,8 @@ between any point on each line onto this perpendicular direction.
 <summary>Problem 1</summary>
 
 Given $\mathbf{a} = \begin{pmatrix}2\\-1\\3\end{pmatrix}$ and
-$\mathbf{b} = \begin{pmatrix}1\\4\\-2\end{pmatrix}$, find $\mathbf{a}\times\mathbf{b}$ and verify
-that it is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
+$\mathbf{b} = \begin{pmatrix}1\\4\\-2\end{pmatrix}$Find $\mathbf{a}\times\mathbf{b}$ and verify
+That it is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
 
 </details>
 
@@ -413,14 +413,14 @@ $\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b}) = 1(-10)+4(7)+(-2)(9) = -10+28-18 =
 <details>
 <summary>Problem 2</summary>
 
-Find the equation of the plane through $A(1, 2, 0)$, $B(0, 1, 3)$, $C(2, -1, 1)$.
+Find the equation of the plane through $A(1, 2, 0)$$B(0, 1, 3)$$C(2, -1, 1)$.
 
 </details>
 
 <details>
 <summary>Solution 2</summary>
 
-$\overrightarrow{AB} = \begin{pmatrix}-1\\-1\\3\end{pmatrix}$,
+$\overrightarrow{AB} = \begin{pmatrix}-1\\-1\\3\end{pmatrix}$
 $\overrightarrow{AC} = \begin{pmatrix}1\\-3\\1\end{pmatrix}$.
 
 $\mathbf{n} = \overrightarrow{AB}\times\overrightarrow{AC} = \begin{pmatrix}(-1)(1)-(3)(-3)\\(3)(1)-(-1)(1)\\(-1)(-3)-(-1)(1)\end{pmatrix} = \begin{pmatrix}8\\4\\4\end{pmatrix}$
@@ -459,15 +459,15 @@ $\boxed{D = 1}$.
 
 Find the shortest distance between the skew lines
 $\mathbf{r}_1 = \begin{pmatrix}0\\1\\-1\end{pmatrix} + \lambda\begin{pmatrix}1\\0\\2\end{pmatrix}$
-and $\mathbf{r}_2 = \begin{pmatrix}1\\0\\2\end{pmatrix} + \mu\begin{pmatrix}0\\1\\-1\end{pmatrix}$.
+And $\mathbf{r}_2 = \begin{pmatrix}1\\0\\2\end{pmatrix} + \mu\begin{pmatrix}0\\1\\-1\end{pmatrix}$.
 
 </details>
 
 <details>
 <summary>Solution 4</summary>
 
-$\mathbf{a}_2 - \mathbf{a}_1 = \begin{pmatrix}1\\-1\\3\end{pmatrix}$,
-$\mathbf{d}_1 = \begin{pmatrix}1\\0\\2\end{pmatrix}$,
+$\mathbf{a}_2 - \mathbf{a}_1 = \begin{pmatrix}1\\-1\\3\end{pmatrix}$
+$\mathbf{d}_1 = \begin{pmatrix}1\\0\\2\end{pmatrix}$
 $\mathbf{d}_2 = \begin{pmatrix}0\\1\\-1\end{pmatrix}$.
 
 $\mathbf{d}_1\times\mathbf{d}_2 = \begin{pmatrix}(0)(-1)-(2)(1)\\(2)(0)-(1)(-1)\\(1)(1)-(0)(0)\end{pmatrix} = \begin{pmatrix}-2\\1\\1\end{pmatrix}$
@@ -486,8 +486,8 @@ $D = \dfrac◆LB◆0◆RB◆◆LB◆\sqrt{6}◆RB◆ = 0$. The lines actually **
 <details>
 <summary>Problem 5</summary>
 
-Find the volume of the parallelepiped with edges $\mathbf{a} = \begin{pmatrix}1\\0\\2\end{pmatrix}$,
-$\mathbf{b} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$,
+Find the volume of the parallelepiped with edges $\mathbf{a} = \begin{pmatrix}1\\0\\2\end{pmatrix}$
+$\mathbf{b} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$
 $\mathbf{c} = \begin{pmatrix}2\\-1\\1\end{pmatrix}$.
 
 </details>
@@ -515,8 +515,8 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 <details>
 <summary>Solution 6</summary>
 
-$\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, $|\mathbf{n}_1| = \sqrt{6}$.
-$\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$, $|\mathbf{n}_2| = \sqrt{6}$.
+$\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$$|\mathbf{n}_1| = \sqrt{6}$.
+$\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$$|\mathbf{n}_2| = \sqrt{6}$.
 
 $\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\cdot\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
 
@@ -530,15 +530,15 @@ Section 6.4.
 <details>
 <summary>Problem 7</summary>
 
-Show that the points $A(1, 2, 3)$, $B(3, 1, 2)$, $C(2, 3, 1)$, $D(0, 4, 4)$ are coplanar.
+Show that the points $A(1, 2, 3)$$B(3, 1, 2)$$C(2, 3, 1)$$D(0, 4, 4)$ are coplanar.
 
 </details>
 
 <details>
 <summary>Solution 7</summary>
 
-$\overrightarrow{AB} = \begin{pmatrix}2\\-1\\-1\end{pmatrix}$,
-$\overrightarrow{AC} = \begin{pmatrix}1\\1\\-2\end{pmatrix}$,
+$\overrightarrow{AB} = \begin{pmatrix}2\\-1\\-1\end{pmatrix}$
+$\overrightarrow{AC} = \begin{pmatrix}1\\1\\-2\end{pmatrix}$
 $\overrightarrow{AD} = \begin{pmatrix}-1\\2\\1\end{pmatrix}$.
 
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = \begin{vmatrix}2&-1&-1\\1&1&-2\\-1&2&1\end{vmatrix}$
@@ -547,7 +547,7 @@ $= 2(1\cdot 1-(-2)\cdot 2) - (-1)(1\cdot 1-(-2)(-1)) + (-1)(1\cdot 2-1\cdot(-1))
 
 $= 2(1+4) + 1(1-2) - 1(2+1) = 10 - 1 - 3 = 6 \neq 0$.
 
-Wait — $6 \neq 0$, so the points are **not coplanar**. Let me verify.
+Wait — $6 \neq 0$So the points are **not coplanar**. Let me verify.
 
 Actually, let me recompute $\overrightarrow{AC}\times\overrightarrow{AD}$:
 
@@ -571,13 +571,13 @@ Find the line of intersection of the planes $x + y + z = 6$ and $2x - y + z = 3$
 <details>
 <summary>Solution 8</summary>
 
-$\mathbf{n}_1 = \begin{pmatrix}1\\1\\1\end{pmatrix}$,
+$\mathbf{n}_1 = \begin{pmatrix}1\\1\\1\end{pmatrix}$
 $\mathbf{n}_2 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$.
 
 Direction:
 $\mathbf{d} = \mathbf{n}_1\times\mathbf{n}_2 = \begin{pmatrix}(1)(1)-(1)(-1)\\(1)(2)-(1)(1)\\(1)(-1)-(1)(2)\end{pmatrix} = \begin{pmatrix}2\\1\\-3\end{pmatrix}$.
 
-Set $z = 0$: $x + y = 6$ and $2x - y = 3$. Adding: $3x = 9 \implies x = 3$, $y = 3$.
+Set $z = 0$: $x + y = 6$ and $2x - y = 3$. Adding: $3x = 9 \implies x = 3$$y = 3$.
 
 Point: $(3, 3, 0)$.
 
@@ -593,14 +593,14 @@ Section 6.6.
 
 Find the acute angle between the line
 $\mathbf{r} = \begin{pmatrix}1\\-1\\2\end{pmatrix} + \lambda\begin{pmatrix}3\\1\\-1\end{pmatrix}$
-and the plane $2x - y + 2z = 5$.
+And the plane $2x - y + 2z = 5$.
 
 </details>
 
 <details>
 <summary>Solution 9</summary>
 
-$\mathbf{d} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$,
+$\mathbf{d} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$
 $\mathbf{n} = \begin{pmatrix}2\\-1\\2\end{pmatrix}$.
 
 $\sin\phi = \dfrac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \dfrac◆LB◆|6-1-2|◆RB◆◆LB◆\sqrt{11}\sqrt{9}◆RB◆ = \dfrac◆LB◆3◆RB◆◆LB◆3\sqrt{11}◆RB◆ = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{11}◆RB◆$.
@@ -617,15 +617,15 @@ $\phi = \arcsin\!\left(\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{11}◆RB◆\right) \
 
 Find the shortest distance between the skew lines
 $\mathbf{r}_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} + \lambda\begin{pmatrix}1\\2\\3\end{pmatrix}$
-and $\mathbf{r}_2 = \begin{pmatrix}0\\1\\0\end{pmatrix} + \mu\begin{pmatrix}2\\3\\4\end{pmatrix}$.
+And $\mathbf{r}_2 = \begin{pmatrix}0\\1\\0\end{pmatrix} + \mu\begin{pmatrix}2\\3\\4\end{pmatrix}$.
 
 </details>
 
 <details>
 <summary>Solution 10</summary>
 
-$\mathbf{a}_2-\mathbf{a}_1 = \begin{pmatrix}-1\\1\\0\end{pmatrix}$,
-$\mathbf{d}_1 = \begin{pmatrix}1\\2\\3\end{pmatrix}$,
+$\mathbf{a}_2-\mathbf{a}_1 = \begin{pmatrix}-1\\1\\0\end{pmatrix}$
+$\mathbf{d}_1 = \begin{pmatrix}1\\2\\3\end{pmatrix}$
 $\mathbf{d}_2 = \begin{pmatrix}2\\3\\4\end{pmatrix}$.
 
 $\mathbf{d}_1\times\mathbf{d}_2 = \begin{pmatrix}(2)(4)-(3)(3)\\(3)(2)-(1)(4)\\(1)(3)-(2)(2)\end{pmatrix} = \begin{pmatrix}-1\\2\\-1\end{pmatrix}$
@@ -653,10 +653,10 @@ $D = \dfrac◆LB◆3◆RB◆◆LB◆\sqrt{6}◆RB◆ = \dfrac◆LB◆3\sqrt{6}�
 
 $$P' = P - 2D\hat{\mathbf{n}}$$
 
-where $D = \dfrac◆LB◆1+2+3-6◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0$ and
+Where $D = \dfrac◆LB◆1+2+3-6◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0$ and
 $\hat{\mathbf{n}} = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆(1, 1, 1)$.
 
-Since $D = 0$, the point $P$ lies on the plane, so its reflection is itself: $P' = (1, 2, 3)$.
+Since $D = 0$The point $P$ lies on the plane, so its reflection is itself: $P' = (1, 2, 3)$.
 
 Let me use a point not on the plane. The reflection of $Q(0, 0, 0)$:
 
@@ -664,14 +664,14 @@ $$D = \frac◆LB◆0 + 0 + 0 - 6◆RB◆◆LB◆\sqrt{3}◆RB◆ = -2\sqrt{3}$$
 
 $$Q' = (0, 0, 0) - 2(-2\sqrt{3})\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆(1, 1, 1) = (0, 0, 0) + 4(1, 1, 1) = (4, 4, 4)$$
 
-Check: the midpoint of $Q$ and $Q'$ is $(2, 2, 2)$, which satisfies $2+2+2 = 6$. Correct.
+Check: the midpoint of $Q$ and $Q'$ is $(2, 2, 2)$Which satisfies $2+2+2 = 6$. Correct.
 
 ### Example 11.2: Angle between a line and a plane
 
 **Problem.** Find the acute angle between the line $\mathbf{r} = (1, -1, 2) + \lambda(3, 0, -1)$ and
-the plane $x - 2y + 2z = 5$.
+The plane $x - 2y + 2z = 5$.
 
-**Solution.** $\mathbf{d} = (3, 0, -1)$, $\mathbf{n} = (1, -2, 2)$.
+**Solution.** $\mathbf{d} = (3, 0, -1)$$\mathbf{n} = (1, -2, 2)$.
 
 $$\sin\phi = \frac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \frac◆LB◆|3 + 0 - 2|◆RB◆◆LB◆\sqrt{10}\sqrt{9}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆$$
 
@@ -679,22 +679,22 @@ $$\phi = \arcsin\!\left(\frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆\right) 
 
 ### Example 11.3: Volume of a tetrahedron using the scalar triple product
 
-**Problem.** Find the volume of the tetrahedron with vertices $O(0,0,0)$, $A(1,0,0)$, $B(0,2,0)$,
+**Problem.** Find the volume of the tetrahedron with vertices $O(0,0,0)$$A(1,0,0)$$B(0,2,0)$
 $C(0,0,3)$.
 
-**Solution.** $\overrightarrow{OA} = (1,0,0)$, $\overrightarrow{OB} = (0,2,0)$,
+**Solution.** $\overrightarrow{OA} = (1,0,0)$$\overrightarrow{OB} = (0,2,0)$
 $\overrightarrow{OC} = (0,0,3)$.
 
 $$V = |\overrightarrow{OA}\cdot(\overrightarrow{OB}\times\overrightarrow{OC})| = \left|\begin{vmatrix}1&0&0\\0&2&0\\0&0&3\end{vmatrix}\right| = |6| = 6$$
 
-This equals $\frac{1}{6} \times 1 \times 2 \times 3 = 1$, confirming the standard formula.
+This equals $\frac{1}{6} \times 1 \times 2 \times 3 = 1$Confirming the standard formula.
 
 ### Example 11.4: Shortest distance using calculus
 
 **Problem.** Find the shortest distance between the lines
 $\mathbf{r}_1 = (1, 0, 0) + \lambda(1, 1, 0)$ and $\mathbf{r}_2 = (0, 1, 0) + \mu(0, 1, 1)$.
 
-**Solution.** $\mathbf{d}_1 = (1, 1, 0)$, $\mathbf{d}_2 = (0, 1, 1)$.
+**Solution.** $\mathbf{d}_1 = (1, 1, 0)$$\mathbf{d}_2 = (0, 1, 1)$.
 
 These are not parallel (not scalar multiples), so the lines are either intersecting or skew.
 
@@ -707,22 +707,22 @@ Consistent! The lines intersect, so the shortest distance is $0$.
 
 ### Example 11.5: Finding the equation of a plane from three points
 
-**Problem.** Find the equation of the plane through $P(1, 1, 0)$, $Q(2, 0, 1)$, $R(0, 1, 1)$.
+**Problem.** Find the equation of the plane through $P(1, 1, 0)$$Q(2, 0, 1)$$R(0, 1, 1)$.
 
-**Solution.** $\overrightarrow{PQ} = (1, -1, 1)$, $\overrightarrow{PR} = (-1, 0, 1)$.
+**Solution.** $\overrightarrow{PQ} = (1, -1, 1)$$\overrightarrow{PR} = (-1, 0, 1)$.
 
 $$\mathbf{n} = \overrightarrow{PQ}\times\overrightarrow{PR} = \begin{pmatrix}(-1)(1) - (1)(0)\\(1)(-1) - (1)(1)\\(1)(0) - (-1)(-1)\end{pmatrix} = \begin{pmatrix}-1\\-2\\-1\end{pmatrix}$$
 
 $\mathbf{r}\cdot\mathbf{n} = (1)(-1) + (1)(-2) + (0)(-1) = -3$.
 
-Equation: $-x - 2y - z = -3$, i.e., $\boxed{x + 2y + z = 3}$.
+Equation: $-x - 2y - z = -3$I.e., $\boxed{x + 2y + z = 3}$.
 
 ### Example 11.6: Verifying coplanarity
 
-**Problem.** Determine whether the points $A(1, 0, 1)$, $B(2, 1, 3)$, $C(3, 1, 4)$, $D(0, -1, -1)$
-are coplanar.
+**Problem.** Determine whether the points $A(1, 0, 1)$$B(2, 1, 3)$$C(3, 1, 4)$$D(0, -1, -1)$
+Are coplanar.
 
-**Solution.** $\overrightarrow{AB} = (1, 1, 2)$, $\overrightarrow{AC} = (2, 1, 3)$,
+**Solution.** $\overrightarrow{AB} = (1, 1, 2)$$\overrightarrow{AC} = (2, 1, 3)$
 $\overrightarrow{AD} = (-1, -1, -2)$.
 
 $$\overrightarrow{AB}\times\overrightarrow{AC} = \begin{pmatrix}(1)(3)-(2)(1)\\(2)(2)-(1)(3)\\(1)(1)-(1)(2)\end{pmatrix} = \begin{pmatrix}1\\1\\-1\end{pmatrix}$$
@@ -773,7 +773,7 @@ The cross product $\mathbf{a}\times\mathbf{b}$ can be computed as a $3 \times 3$
 ### 12.2 Vectors and mechanics
 
 Vector methods are essential in mechanics for resolving forces, moments, and angular momentum. The
-moment of a force $\mathbf{F}$ about point $O$ is $\mathbf{r}\times\mathbf{F}$. See
+Moment of a force $\mathbf{F}$ about point $O$ is $\mathbf{r}\times\mathbf{F}$. See
 [Projectile Motion](/docs/alevel/further-maths/further-mechanics/projectile-motion).
 
 ### 12.3 Planes and coordinate geometry
@@ -799,7 +799,7 @@ Find the shortest distance between $L_1$ and $L_2$.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{d}_1 = (2,-1,1)$, $\mathbf{d}_2 = (1,-1,-1)$.
+$\mathbf{d}_1 = (2,-1,1)$$\mathbf{d}_2 = (1,-1,-1)$.
 
 $\mathbf{d}_1\times\mathbf{d}_2 = \begin{pmatrix}(-1)(-1)-(1)(-1)\\(1)(1)-(2)(-1)\\(2)(-1)-(-1)(1)\end{pmatrix} = \begin{pmatrix}2\\3\\-3\end{pmatrix}$
 
@@ -815,7 +815,7 @@ $D = \dfrac◆LB◆|-5|◆RB◆◆LB◆\sqrt{22}◆RB◆ = \dfrac◆LB◆5◆RB�
 
 ### Question 12
 
-Find the volume of the parallelepiped with edges $\mathbf{a} = (2, 0, 1)$, $\mathbf{b} = (1, 3, 0)$,
+Find the volume of the parallelepiped with edges $\mathbf{a} = (2, 0, 1)$$\mathbf{b} = (1, 3, 0)$
 $\mathbf{c} = (0, -1, 2)$.
 
 <details>
@@ -830,13 +830,13 @@ $= |2(6-0) - 0 + 1(-1-0)| = |12 - 1| = 11$.
 ### Question 13
 
 **Prove that** the points equidistant from two fixed points lie on the perpendicular bisector plane
-of the segment joining them.
+Of the segment joining them.
 
 <details>
 <summary>Solution</summary>
 
 Let the fixed points be $A$ and $B$ with position vectors $\mathbf{a}$ and $\mathbf{b}$. A point $P$
-is equidistant from $A$ and $B$ when:
+Is equidistant from $A$ and $B$ when:
 
 $$|\mathbf{p} - \mathbf{a}| = |\mathbf{p} - \mathbf{b}|$$
 
@@ -848,21 +848,21 @@ $$|\mathbf{p}|^2 - 2\mathbf{a}\cdot\mathbf{p} + |\mathbf{a}|^2 = |\mathbf{p}|^2 
 $$2(\mathbf{b} - \mathbf{a})\cdot\mathbf{p} = |\mathbf{b}|^2 - |\mathbf{a}|^2$$
 
 This is the equation of a plane with normal $\mathbf{b} - \mathbf{a}$ (perpendicular to $AB$), which
-passes through the midpoint $\dfrac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. This is the
-perpendicular bisector. $\blacksquare$
+Passes through the midpoint $\dfrac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. This is the
+Perpendicular bisector. $\blacksquare$
 
 </details>
 
 ### Question 14
 
 Find the equation of the plane containing the line $L: \mathbf{r} = (1, 0, 2) + \lambda(1, 2, -1)$
-and the point $P(3, 1, 4)$.
+And the point $P(3, 1, 4)$.
 
 <details>
 <summary>Solution</summary>
 
 The direction of $L$ is $\mathbf{d} = (1, 2, -1)$. Two vectors in the plane are
-$\overrightarrow{PQ} = (1, 0, 2) - (3, 1, 4) = (-2, -1, -2)$ (wait, $Q$ should be on $L$, not $P$).
+$\overrightarrow{PQ} = (1, 0, 2) - (3, 1, 4) = (-2, -1, -2)$ (wait, $Q$ should be on $L$Not $P$).
 
 Actually, the point on $L$ at $\lambda = 0$ is $(1, 0, 2)$. Vectors in the plane:
 $\overrightarrow{PQ} = (1-3, 0-1, 2-4) = (-2, -1, -2)$ and $\mathbf{d} = (1, 2, -1)$.
@@ -892,7 +892,7 @@ This is the cyclic permutation property of the scalar triple product. In determi
 $$\det\begin{pmatrix}a_1&a_2&a_3\\b_1&b_2&b_3\\c_1&c_2&c_3\end{pmatrix} = \det\begin{pmatrix}b_1&b_2&b_3\\c_1&c_2&c_3\\a_1&a_2&a_3\end{pmatrix} = \det\begin{pmatrix}c_1&c_2&c_3\\a_1&a_2&a_3\\b_1&b_2&b_3\end{pmatrix}$$
 
 Each equality follows from the fact that swapping two rows of a determinant changes its sign, and
-two swaps return to the original sign. $\blacksquare$
+Two swaps return to the original sign. $\blacksquare$
 
 </details>
 
@@ -915,23 +915,23 @@ Vector methods are essential for resolving forces, computing moments
 
 The equation of a plane connects vectors to 3D geometry. See
 [Polar Coordinates](/docs/alevel/further-maths/pure-mathematics/polar-coordinates) for parametric
-representations of curves.
+Representations of curves.
 
 ---
 
 ## 15. Key Results Summary
 
-| Result                   | Formula                                                                                                                       |
+| Result | Formula |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | -------- | -------------------------------- | ---------------------------------- | ------------- | ----- |
-| Scalar product           | $\mathbf{a}\cdot\mathbf{b} =                                                                                                  | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
-| Vector product           | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$                        |
-| Scalar triple product    | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
-| Distance: point to plane | $D = \dfrac◆LB◆                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$                              |
-| Distance: skew lines     | $D = \dfrac◆LB◆                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$                              |
-| Angle: line to plane     | $\sin\phi = \dfrac◆LB◆                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | ◆RB◆◆LB◆ | \mathbf{d}                       |                                    | \mathbf{n}    | ◆RB◆$ |
-| Angle: two planes        | $\cos\theta = \dfrac◆LB◆                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | ◆RB◆◆LB◆ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | ◆RB◆$ |
-| Volume of tetrahedron    | $V = \dfrac{1}{6}                                                                                                             | [\mathbf{a},\mathbf{b},\mathbf{c}]                                   | $        |
-| Reflection in plane      | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac◆LB◆P\cdot\mathbf{n}-d◆RB◆◆LB◆                                                 | \mathbf{n}                                                           | ◆RB◆$    |
+| Scalar product | $\mathbf{a}\cdot\mathbf{b} =                                                                                                  | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
+| Vector product | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$ |
+| Scalar triple product | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
+| Distance: point to plane | $D = \dfrac◆LB◆                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$ |
+| Distance: skew lines | $D = \dfrac◆LB◆                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$ |
+| Angle: line to plane | $\sin\phi = \dfrac◆LB◆                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | ◆RB◆◆LB◆ | \mathbf{d}                       |                                    | \mathbf{n}    | ◆RB◆$ |
+| Angle: two planes | $\cos\theta = \dfrac◆LB◆                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | ◆RB◆◆LB◆ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | ◆RB◆$ |
+| Volume of tetrahedron | $V = \dfrac{1}{6}                                                                                                             | [\mathbf{a},\mathbf{b},\mathbf{c}]                                   | $ |
+| Reflection in plane | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac◆LB◆P\cdot\mathbf{n}-d◆RB◆◆LB◆                                                 | \mathbf{n}                                                           | ◆RB◆$ |
 
 ---
 
@@ -939,13 +939,13 @@ representations of curves.
 
 ### Question 16
 
-Find the equation of the plane that passes through the points $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ and
-verify that $D(1/3, 1/3, 1/3)$ lies on it.
+Find the equation of the plane that passes through the points $A(1,0,0)$$B(0,1,0)$$C(0,0,1)$ and
+Verify that $D(1/3, 1/3, 1/3)$ lies on it.
 
 <details>
 <summary>Solution</summary>
 
-$\overrightarrow{AB} = (-1,1,0)$, $\overrightarrow{AC} = (-1,0,1)$.
+$\overrightarrow{AB} = (-1,1,0)$$\overrightarrow{AC} = (-1,0,1)$.
 
 $\mathbf{n} = \overrightarrow{AB}\times\overrightarrow{AC} = (1,1,1)$.
 
@@ -966,7 +966,7 @@ $\mathbf{a}\times(\mathbf{b}\times\mathbf{c}) = \mathbf{b}(\mathbf{a}\cdot\mathb
 <details>
 <summary>Solution</summary>
 
-Let $\mathbf{a} = (a_1,a_2,a_3)$, $\mathbf{b} = (b_1,b_2,b_3)$, $\mathbf{c} = (c_1,c_2,c_3)$.
+Let $\mathbf{a} = (a_1,a_2,a_3)$$\mathbf{b} = (b_1,b_2,b_3)$$\mathbf{c} = (c_1,c_2,c_3)$.
 
 $\mathbf{b}\times\mathbf{c} = (b_2c_3-b_3c_2,\; b_3c_1-b_1c_3,\; b_1c_2-b_2c_1)$.
 
@@ -992,9 +992,9 @@ $\mathbf{r}_2 = (0,0,1)+\mu(0,1,1)$. Determine whether they intersect, are paral
 <details>
 <summary>Solution</summary>
 
-$\mathbf{d}_1 = (1,0,-1)$, $\mathbf{d}_2 = (0,1,1)$. Not parallel (not scalar multiples).
+$\mathbf{d}_1 = (1,0,-1)$$\mathbf{d}_2 = (0,1,1)$. Not parallel (not scalar multiples).
 
-For intersection: $\lambda = 0$, $1 = \mu$, $-\lambda = 1+\mu$.
+For intersection: $\lambda = 0$$1 = \mu$$-\lambda = 1+\mu$.
 
 From $\lambda = 0$: $1 = \mu$ and $0 = 1+1 = 2$. Contradiction.
 
@@ -1027,7 +1027,7 @@ The equation of a plane can be written in three equivalent forms:
 ### 17.2 The shortest distance between two skew lines — alternative derivation
 
 The shortest distance between skew lines equals the perpendicular distance from any point on one
-line to the parallel plane containing the other line.
+Line to the parallel plane containing the other line.
 
 ### 17.3 Triple vector product identity
 
@@ -1039,7 +1039,7 @@ This identity is extensively used in mechanics (e.g., angular momentum, moments)
 ### 17.4 Applications in geometry
 
 - **Coplanarity test:** $[\mathbf{a},\mathbf{b},\mathbf{c}] = 0 \iff$ the three vectors are
-  coplanar.
+ coplanar.
 - **Volume of parallelepiped:** $V = |[\mathbf{a},\mathbf{b},\mathbf{c}]|$.
 - **Volume of tetrahedron:** $V = \dfrac{1}{6}|[\mathbf{a},\mathbf{b},\mathbf{c}]|$.
 
@@ -1054,7 +1054,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{n}_1 = (2,-1,1)$, $\mathbf{n}_2 = (1,1,2)$.
+$\mathbf{n}_1 = (2,-1,1)$$\mathbf{n}_2 = (1,1,2)$.
 
 $\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
 
@@ -1065,7 +1065,7 @@ $\boxed{\theta = 60°}$
 ### Question 20
 
 **Prove that** the line of intersection of the planes $x+y+z=1$ and $2x-y+z=3$ is parallel to the
-vector $(2, 1, -3)$.
+Vector $(2, 1, -3)$.
 
 <details>
 <summary>Solution</summary>
@@ -1075,7 +1075,7 @@ $\mathbf{n}_1 \times \mathbf{n}_2 = (1,1,1) \times (2,-1,1)$.
 
 $= \begin{pmatrix}(1)(1)-(1)(-1)\\(1)(2)-(1)(1)\\(1)(-1)-(1)(2)\end{pmatrix} = (2, 1, -3)$.
 
-Since the cross product gives $(2,1,-3)$, the line is parallel to this vector. $\blacksquare$
+Since the cross product gives $(2,1,-3)$The line is parallel to this vector. $\blacksquare$
 
 </details>
 
@@ -1087,11 +1087,11 @@ Since the cross product gives $(2,1,-3)$, the line is parallel to this vector. $
 
 If $\mathbf{a}$ makes angles $\alpha, \beta, \gamma$ with the coordinate axes, then:
 
-$\cos\alpha = \dfrac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆$,
-$\cos\beta = \dfrac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆$,
+$\cos\alpha = \dfrac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
+$\cos\beta = \dfrac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
 $\cos\gamma = \dfrac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
 
-and $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
+And $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
 ### 19.2 Triple vector product (BAC-CAB rule)
 
@@ -1144,10 +1144,14 @@ $\mathbf{r}_2 = (0,1,0)+\mu(1,-1,0)$ intersect and find the point of intersectio
 <details>
 <summary>Solution</summary>
 
-$1+\lambda = \mu$, $\lambda = 1-\mu$, $\lambda = 0$.
+$1+\lambda = \mu$$\lambda = 1-\mu$$\lambda = 0$.
 
 From $\lambda = 0$: $\mu = 1$. Check: $1 = 1$ ✓, $0 = 0$ ✓, $0 = 0$ ✓.
 
 The lines intersect at $\boxed{(1,0,0)}$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->

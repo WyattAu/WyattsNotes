@@ -13,12 +13,12 @@ slug: async-and-futures
 ## Why Async Matters in Dart
 
 Dart runs on a **single-threaded event loop** with an isolated memory model. Unlike languages with
-threads (Java, C++, Rust), Dart uses **event-driven concurrency** — the single thread processes
-events from a queue, interleaving async operations without blocking.
+Threads (Java, C++, Rust), Dart uses **event-driven concurrency** — the single thread processes
+Events from a queue, interleaving async operations without blocking.
 
 This design is fundamental to Flutter's architecture: the UI must remain responsive (60 fps) while
-performing I/O (network requests, file reads, database queries). If any operation blocks the thread,
-the entire UI freezes.
+Performing I/O (network requests, file reads, database queries). If any operation blocks the thread,
+The entire UI freezes.
 
 ```mermaid
 flowchart TD
@@ -37,7 +37,7 @@ flowchart TD
 ## Futures
 
 A `Future<T>` represents a value that will be available at some point in the future — either a value
-of type `T` or an error. It is Dart's equivalent of JavaScript's `Promise` or Rust's `Future`.
+Of type `T` or an error. It is Dart's equivalent of JavaScript's `Promise` or Rust's `Future`.
 
 ### Creating Futures
 
@@ -72,7 +72,7 @@ Future<void> fail() {
 ### async/await
 
 The `async`/`await` syntax is syntactic sugar for working with Futures. `async` marks a function as
-asynchronous, and `await` suspends execution until the Future completes:
+Asynchronous, and `await` suspends execution until the Future completes:
 
 ```dart
 // Without async/await (callback style)
@@ -173,7 +173,7 @@ Future<void> parallelNamed() async {
 :::tip
 
 Use `Future.wait` for independent async operations that can run concurrently. Use sequential `await`
-for dependent operations where the result of one is needed by the next.
+For dependent operations where the result of one is needed by the next.
 
 :::
 
@@ -185,10 +185,10 @@ JavaScript's `Observable`.
 
 ### Stream Types
 
-| Type                    | Description                                                    | Use Case                                   |
+| Type | Description | Use Case |
 | ----------------------- | -------------------------------------------------------------- | ------------------------------------------ |
-| **Single subscription** | One listener only; events are buffered if no listener exists   | File I/O, HTTP response body               |
-| **Broadcast**           | Multiple listeners; events are discarded if no listener exists | UI events, sensor data, WebSocket messages |
+| **Single subscription** | One listener only; events are buffered if no listener exists | File I/O, HTTP response body |
+| **Broadcast** | Multiple listeners; events are discarded if no listener exists | UI events, sensor data, WebSocket messages |
 
 ```dart
 // Creating a single-subscription stream
@@ -257,8 +257,8 @@ class EventBus {
 ## Isolates
 
 Dart's answer to threads. Each isolate has its own **memory heap and event loop** — there is no
-shared state between isolates. Communication is via **message passing** (ports), similar to Erlang
-processes or Rust's `mpsc` channels.
+Shared state between isolates. Communication is via **message passing** (ports), similar to Erlang
+Processes or Rust's `mpsc` channels.
 
 ```mermaid
 flowchart LR
@@ -341,8 +341,8 @@ final result = await compute(expensiveFunction, inputData);
 :::warning
 
 Isolates are **not threads**. They do not share memory. Data must be serialized (copied) when sent
-between isolates. For large data transfers, use `Isolate.exit()` (Dart 2.19+) to transfer ownership
-instead of copying.
+Between isolates. For large data transfers, use `Isolate.exit()` (Dart 2.19+) to transfer ownership
+Instead of copying.
 
 :::
 
@@ -350,10 +350,10 @@ instead of copying.
 
 Dart's event loop processes events in this order:
 
-| Priority    | Queue           | Description                                              |
+| Priority | Queue | Description |
 | ----------- | --------------- | -------------------------------------------------------- |
-| 1 (highest) | Microtask queue | `scheduleMicrotask`, `Future.then`, `await` continuation |
-| 2           | Event queue     | I/O callbacks, timers, gestures, isolates                |
+| 1 (highest) | Microtask queue | `scheduleMicrotask``Future.then``await` continuation |
+| 2 | Event queue | I/O callbacks, timers, gestures, isolates |
 
 ```dart
 // Execution order demonstration
@@ -380,8 +380,8 @@ void main() {
 :::info
 
 Microtasks run before the event loop processes the next event. All microtasks complete before any
-event from the event queue is processed. This is why `Future.then` callbacks (which schedule
-microtasks) run before `Future.delayed` callbacks (which schedule events).
+Event from the event queue is processed. This is why `Future.then` callbacks (which schedule
+Microtasks) run before `Future.delayed` callbacks (which schedule events).
 
 :::
 
@@ -422,7 +422,7 @@ final result = heavyComputation(1000000); // Blocks UI!
 final result = await Isolate.run(() => heavyComputation(1000000));
 ```
 
-### 3. async Functions in Constructors
+### 3. Async Functions in Constructors
 
 Dart constructors cannot be `async`. Use a static factory method instead:
 
@@ -440,3 +440,11 @@ class Database {
   }
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

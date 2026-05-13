@@ -28,7 +28,7 @@ $E_{\text{K}} = \frac{RT}{zF}\ln\frac{[\text{K}^+]_{\text{out}}}{[\text{K}^+]_{\
 
 $= 0.02669\ln(0.0333) = 0.02669 \times (-3.401) = -0.0908\ \text{V} = -90.8\ \text{mV}$
 
-This matches the given equilibrium potential of $-90\ \text{mV}$, confirming the calculation.
+This matches the given equilibrium potential of $-90\ \text{mV}$Confirming the calculation.
 
 ---
 ### UT-2: Synaptic Transmission
@@ -80,9 +80,9 @@ This illustrates the principle of **dual control**: the nervous system provides 
 
 **Solution:**
 
-(a) **Bicarbonate buffer system:** $\text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-$. The weak acid ($\text{H}_2\text{CO}_3$) and its conjugate base ($\text{HCO}_3^-$) buffer against pH changes. Since $\text{p}K_a = 6.10$ and blood pH $\approx 7.40$, the ratio $[\text{HCO}_3^-]/[\text{H}_2\text{CO}_3]$ is approximately 20:1, meaning the buffer is operating at a point where there is far more conjugate base than acid -- it is most effective at resisting acidification.
+(a) **Bicarbonate buffer system:** $\text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-$. The weak acid ($\text{H}_2\text{CO}_3$) and its conjugate base ($\text{HCO}_3^-$) buffer against pH changes. Since $\text{p}K_a = 6.10$ and blood pH $\approx 7.40$The ratio $[\text{HCO}_3^-]/[\text{H}_2\text{CO}_3]$ is approximately 20:1, meaning the buffer is operating at a point where there is far more conjugate base than acid -- it is most effective at resisting acidification.
 
-(b) **Proximal convoluted tubule (PCT):** The PCT reabsorbs approximately 85% of filtered bicarbonate. The mechanism: (1) $\text{Na}^+/\text{H}^+$ antiporter on the apical membrane secretes $\text{H}^+$ into the filtrate; (2) the secreted $\text{H}^+$ combines with filtered $\text{HCO}_3^-$ to form $\text{H}_2\text{CO}_3$; (3) carbonic anhydrase on the brush border converts $\text{H}_2\text{CO}_3$ to $\text{CO}_2 + \text{H}_2\text{O}$; (4) $\text{CO}_2$ diffuses back into the cell; (5) intracellular carbonic anhydrase converts $\text{CO}_2 + \text{H}_2\text{O}$ back to $\text{H}_2\text{CO}_3$, which dissociates to $\text{H}^+$ (recycled to step 1) and $\text{HCO}_3^-$; (6) $\text{HCO}_3^-$ exits across the basolateral membrane via the $\text{Na}^+/\text{HCO}_3^-$ cotransporter.
+(b) **Proximal convoluted tubule (PCT):** The PCT reabsorbs approximately 85% of filtered bicarbonate. The mechanism: (1) $\text{Na}^+/\text{H}^+$ antiporter on the apical membrane secretes $\text{H}^+$ into the filtrate; (2) the secreted $\text{H}^+$ combines with filtered $\text{HCO}_3^-$ to form $\text{H}_2\text{CO}_3$; (3) carbonic anhydrase on the brush border converts $\text{H}_2\text{CO}_3$ to $\text{CO}_2 + \text{H}_2\text{O}$; (4) $\text{CO}_2$ diffuses back into the cell; (5) intracellular carbonic anhydrase converts $\text{CO}_2 + \text{H}_2\text{O}$ back to $\text{H}_2\text{CO}_3$Which dissociates to $\text{H}^+$ (recycled to step 1) and $\text{HCO}_3^-$; (6) $\text{HCO}_3^-$ exits across the basolateral membrane via the $\text{Na}^+/\text{HCO}_3^-$ cotransporter.
 
 (c) **Intercalated cells:** Type A intercalated cells secrete $\text{H}^+$ (via $\text{H}^+$-ATPase) and reabsorb $\text{HCO}_3^-$ -- they respond to acidosis. Type B intercalated cells secrete $\text{HCO}_3^-$ and reabsorb $\text{H}^+$ -- they respond to alkalosis. This fine-tunes blood pH beyond what the PCT can achieve.
 
@@ -116,13 +116,13 @@ Normal ratio is approximately 20:1. The reduced ratio (14.1:1) confirms this is 
 1. Immunise a mouse with the target antigen to stimulate B cell production.
 2. Extract B cells from the mouse spleen (producing the desired antibody).
 3. Fuse these B cells with myeloma (cancer) cells using polyethylene glycol (PEG). The myeloma cells provide immortality.
-4. Select hybridomas (fused cells) using HAT medium: unfused myeloma cells die (they lack HGPRT enzyme), unfused B cells die naturally (limited lifespan). Only hybridomas survive.
+4. Select hybridomas (fused cells) using HAT medium: unfused myeloma cells die (they lack HGPRT enzyme), unfused B cells die (limited lifespan). Only hybridomas survive.
 5. Screen individual hybridoma clones for antibody production specific to the target antigen.
 6. Culture the selected hybridoma indefinitely to produce unlimited quantities of identical (monoclonal) antibodies.
 
 ---
 ### IT-3: Cardiovascular Function and Gas Exchange (with Ecology)
-**Question:** At sea level, atmospheric pressure is $101.3\ \text{kPa}$ and the partial pressure of $\text{O}_2$ in dry air is $21.2\ \text{kPa}$. Calculate the partial pressure of $\text{O}_2$ in: (a) the trachea (accounting for humidification), (b) the alveoli (accounting for $\text{CO}_2$ and water vapour), and (c) the pulmonary artery (mixed venous blood with $\text{O}_2$ saturation of 75%). At an altitude of $5000\ \text{m}$, atmospheric pressure drops to $54.0\ \text{kPa}$. Calculate the alveolar $\text{P}_{\text{O}_2}$ and explain why this causes altitude sickness.
+**Question:** At sea level, atmospheric pressure is $101.3\ \text{kPa}$ and the partial pressure of $\text{O}_2$ in dry air is $21.2\ \text{kPa}$. Calculate the partial pressure of $\text{O}_2$ in: (a) the trachea (accounting for humidification), (b) the alveoli (accounting for $\text{CO}_2$ and water vapour), and (c) the pulmonary artery (mixed venous blood with $\text{O}_2$ saturation of 75%). At an altitude of $5000\ \text{m}$Atmospheric pressure drops to $54.0\ \text{kPa}$. Calculate the alveolar $\text{P}_{\text{O}_2}$ and explain why this causes altitude sickness.
 
 **Solution:**
 
@@ -146,4 +146,4 @@ $P_{\text{O}_2}(\text{inspired}) = (54.0 - 6.3) \times 0.21 = 47.7 \times 0.21 =
 
 $P_{\text{O}_2}(\text{alv}) = 10.0 - \frac{5.3}{0.85} = 10.0 - 6.2 = 3.8\ \text{kPa}$
 
-At sea level, alveolar $P_{\text{O}_2} = 13.8\ \text{kPa}$; at $5000\ \text{m}$, it drops to $3.8\ \text{kPa}$. This severely reduced $P_{\text{O}_2}$ places the blood on the steep portion of the oxyhaemoglobin dissociation curve, causing a dramatic drop in haemoglobin saturation (from $\sim 98\%$ to $\sim 70\%$). This hypoxia causes altitude sickness symptoms: headache, nausea, fatigue, and in severe cases, pulmonary or cerebral oedema. The body partially compensates through hyperventilation (reducing $P_{\text{CO}_2}$), increased heart rate, and eventually increased red blood cell production (polycythaemia).
+At sea level, alveolar $P_{\text{O}_2} = 13.8\ \text{kPa}$; at $5000\ \text{m}$It drops to $3.8\ \text{kPa}$. This severely reduced $P_{\text{O}_2}$ places the blood on the steep portion of the oxyhaemoglobin dissociation curve, causing a dramatic drop in haemoglobin saturation (from $\sim 98\%$ to $\sim 70\%$). This hypoxia causes altitude sickness symptoms: headache, nausea, fatigue, and in severe cases, pulmonary or cerebral oedema. The body partially compensates through hyperventilation (reducing $P_{\text{CO}_2}$), increased heart rate, and eventually increased red blood cell production (polycythaemia).

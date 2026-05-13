@@ -47,11 +47,11 @@ int authenticate(User *user) {
 >>>>>>> feature-auth
 ```
 
-| Marker                 | Meaning                                          |
+| Marker | Meaning |
 | ---------------------- | ------------------------------------------------ |
-| `<<<<<<< HEAD`         | Start of conflict region. Our version begins.    |
-| `=======`              | Separator between our version and their version. |
-| `>>>>>>> feature-auth` | End of conflict region. Their version ends.      |
+| `<<<<<<< HEAD` | Start of conflict region. Our version begins. |
+| `=======` | Separator between our version and their version. |
+| `>>>>>>> feature-auth` | End of conflict region. Their version ends. |
 
 The text after `>>>>>>>` identifies the branch being merged.
 
@@ -124,7 +124,7 @@ This is useful when:
 
 - The other side made a more comprehensive change that supersedes ours.
 - Our change was a mistake that should be discarded.
-- The conflict is in a generated file where one version is clearly correct.
+- The conflict is in a generated file where one version is correct.
 
 ### Strategy 3: Combine Both Changes
 
@@ -189,7 +189,7 @@ package-lock.json merge=ours
 
 This is particularly useful for:
 
-- **Lockfiles** (`package-lock.json`, `yarn.lock`): Always keep one version to avoid corruption.
+- **Lockfiles** (`package-lock.json``yarn.lock`): Always keep one version to avoid corruption.
 - **Generated files**: Use the generating tool to produce the correct output.
 
 ## Handling Specific Conflict Types
@@ -313,3 +313,15 @@ Or, if the merge has already been pushed:
 # Revert the merge (creates a new commit that undoes it)
 $ git revert -m 1 <merge-commit-hash>
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -41,7 +41,7 @@ After a meal rich in carbohydrates, blood glucose concentration rises. The body 
 
 (a) Describe how the pancreas detects the rise in blood glucose concentration and the hormonal response that follows. [3 marks]
 
-(b) Explain how insulin lowers blood glucose concentration. Your answer should include the effect on (i) liver cells, (ii) muscle cells, and (iii) body cells in general. [4 marks]
+(b) Explain how insulin lowers blood glucose concentration. Your answer should include the effect on (i) liver cells, (ii) muscle cells, and (iii) body cells . [4 marks]
 
 (c) If blood glucose concentration falls too low (hypoglycaemia), the pancreas secretes glucagon. Describe **two** ways in which glucagon raises blood glucose concentration. [3 marks]
 
@@ -99,7 +99,7 @@ The **memory B-cells** (from the vaccination) recognise the specific antigens on
 - The response is **stronger** (a much larger quantity of antibodies is produced).
 - The antibodies quickly bind to and neutralise the pathogen before it can multiply and cause illness (the pathogen is destroyed before the population reaches the threshold needed to cause symptoms).
 
-(c) The claim is **partially correct but imprecise**. Antibiotics are effective against **bacterial** pathogens because they target specific bacterial structures or processes (e.g. cell wall synthesis, protein synthesis on 70S ribosomes, DNA replication). They can kill or inhibit the growth of bacteria.
+(c) The claim is **partially correct but imprecise**. Antibiotics are effective against **bacterial** pathogens because they target specific bacterial structures or processes (e.g. Cell wall synthesis, protein synthesis on 70S ribosomes, DNA replication). They can kill or inhibit the growth of bacteria.
 
 However, antibiotics are **not effective against viral pathogens** because viruses lack the structures and metabolic processes that antibiotics target (viruses have no cell wall, no ribosomes, and replicate inside host cells). For viral infections, the immune system must be relied upon, or antiviral drugs may be used.
 
@@ -126,21 +126,21 @@ The student should have specified that antibiotics are only effective against **
 1. **Thermoreceptors** in the skin detect the decrease in temperature and send nerve impulses to the **hypothalamus** (the body's thermoregulatory centre in the brain).
 2. The hypothalamus sends nerve impulses to various **effectors**:
 
-   - **Vasoconstriction**: Arterioles near the skin surface **constrict** (narrow), reducing blood flow to the skin surface. This reduces heat loss by radiation and convection from the skin.
-   
-   - **Piloerection**: Hair erector muscles contract, causing body hairs to stand erect. This traps a layer of insulating air next to the skin, reducing heat loss.
-   
-   - **Shivering**: Skeletal muscles undergo rapid, involuntary contractions (shivering). This increases the rate of respiration in muscle cells, generating more heat as a by-product.
-   
-   - **Increased metabolic rate**: The hypothalamus stimulates the **thyroid gland** (via TSH from the anterior pituitary) to release more thyroxine, which increases the basal metabolic rate, generating more heat from cellular respiration.
-   
-   - **Behavioural responses**: The person may curl up, put on more clothes, or seek warmth.
+ - **Vasoconstriction**: Arterioles near the skin surface **constrict** (narrow), reducing blood flow to the skin surface. This reduces heat loss by radiation and convection from the skin.
+ 
+ - **Piloerection**: Hair erector muscles contract, causing body hairs to stand erect. This traps a layer of insulating air next to the skin, reducing heat loss.
+ 
+ - **Shivering**: Skeletal muscles undergo rapid, involuntary contractions (shivering). This increases the rate of respiration in muscle cells, generating more heat as a by-product.
+ 
+ - **Increased metabolic rate**: The hypothalamus stimulates the **thyroid gland** (via TSH from the anterior pituitary) to release more thyroxine, which increases the basal metabolic rate, generating more heat from cellular respiration.
+ 
+ - **Behavioural responses**: The person may curl up, put on more clothes, or seek warmth.
 
 (b) This is **negative feedback** because the body's response (warming mechanisms) works to **reverse the change** that triggered it. The initial stimulus (a decrease in temperature) is counteracted by the response (heat-generating and heat-conserving mechanisms), bringing the temperature back towards the normal set point ($37^{\circ}C$). Once the temperature returns to normal, the thermoreceptors stop signalling and the response ceases. The feedback opposes the original change.
 
-(c) During a fever, the **set point** of the hypothalamus is **raised** (e.g. from $37^{\circ}C$ to $39.5^{\circ}C$) by chemicals called **pyrogens** (released by white blood cells in response to infection). The hypothalamus now considers $39.5^{\circ}C$ as the "normal" temperature.
+(c) During a fever, the **set point** of the hypothalamus is **raised** (e.g. From $37^{\circ}C$ to $39.5^{\circ}C$) by chemicals called **pyrogens** (released by white blood cells in response to infection). The hypothalamus now considers $39.5^{\circ}C$ as the "normal" temperature.
 
-At the new set point, the body actually triggers **heat-generating mechanisms** (shivering, vasoconstriction) to raise the body temperature to $39.5^{\circ}C$, rather than cooling mechanisms. The cooling mechanisms are only triggered when the temperature **exceeds** the new set point (above $39.5^{\circ}C$). When the infection is cleared and pyrogens are removed, the set point returns to $37^{\circ}C$ and the body triggers cooling (sweating, vasodilation) to bring the temperature back down.
+At the new set point, the body actually triggers **heat-generating mechanisms** (shivering, vasoconstriction) to raise the body temperature to $39.5^{\circ}C$Rather than cooling mechanisms. The cooling mechanisms are only triggered when the temperature **exceeds** the new set point (above $39.5^{\circ}C$). When the infection is cleared and pyrogens are removed, the set point returns to $37^{\circ}C$ and the body triggers cooling (sweating, vasodilation) to bring the temperature back down.
 
 ---
 

@@ -7,7 +7,7 @@ slug: api-security
 ## REST API Security Fundamentals
 
 REST APIs are stateless by design: each request must contain all information needed for
-authentication and authorization. The server does not maintain session state between requests.
+Authentication and authorization. The server does not maintain session state between requests.
 
 ### Stateless Authentication Per Request
 
@@ -43,8 +43,8 @@ def validate_api_key():
 :::warning
 
 API keys provide weak authentication: they are long-lived shared secrets that cannot be scoped to a
-user or easily rotated. Use them only for server-to-server communication where OAuth 2.0 is
-impractical. Prefer OAuth 2.0 Bearer tokens for user-facing APIs.
+User or rotated. Use them only for server-to-server communication where OAuth 2.0 is
+Impractical. Prefer OAuth 2.0 Bearer tokens for user-facing APIs.
 
 :::
 
@@ -127,12 +127,12 @@ server {
 }
 ```
 
-| Method       | Security Level | Best For                          |
+| Method | Security Level | Best For |
 | ------------ | -------------- | --------------------------------- |
-| API Key      | Low            | Internal services, prototyping    |
-| Bearer Token | High           | User-facing APIs, microservices   |
-| HMAC         | High           | API gateways, financial APIs      |
-| mTLS         | Very High      | Service mesh, zero-trust networks |
+| API Key | Low | Internal services, prototyping |
+| Bearer Token | High | User-facing APIs, microservices |
+| HMAC | High | API gateways, financial APIs |
+| mTLS | Very High | Service mesh, zero-trust networks |
 
 ## Authorization
 
@@ -260,16 +260,16 @@ X-RateLimit-Reset: 1700000000
 Retry-After: 30
 ```
 
-| Strategy       | Per-User | Per-IP | Notes                              |
+| Strategy | Per-User | Per-IP | Notes |
 | -------------- | -------- | ------ | ---------------------------------- |
-| Token bucket   | Yes      | Yes    | Smooth rate, burst allowed         |
-| Sliding window | Yes      | Yes    | Precise, memory-intensive          |
-| Fixed window   | Yes      | Yes    | Simple, burst at window boundaries |
+| Token bucket | Yes | Yes | Smooth rate, burst allowed |
+| Sliding window | Yes | Yes | Precise, memory-intensive |
+| Fixed window | Yes | Yes | Simple, burst at window boundaries |
 
 :::info
 
 Rate limit by user identity (API key or token) when authenticated, and by IP address when
-unauthenticated. Unauthenticated rate limits should be stricter to prevent abuse.
+Unauthenticated. Unauthenticated rate limits should be stricter to prevent abuse.
 
 :::
 
@@ -352,11 +352,11 @@ CORS(app, origins=ALLOWED_ORIGINS, methods=['GET', 'POST', 'PUT', 'DELETE'],
 
 ## API Versioning
 
-| Strategy        | Example                               | Pros            | Cons                   |
+| Strategy | Example | Pros | Cons |
 | --------------- | ------------------------------------- | --------------- | ---------------------- |
-| URL path        | `/api/v1/orders`                      | Simple, visible | URL changes            |
-| Header          | `Accept: application/vnd.api.v1+json` | Clean URLs      | Hidden, harder to test |
-| Query parameter | `/api/orders?version=1`               | Easy to add     | Cache-busting issues   |
+| URL path | `/api/v1/orders` | Simple, visible | URL changes |
+| Header | `Accept: application/vnd.api.v1+json` | Clean URLs | Hidden, harder to test |
+| Query parameter | `/api/orders?version=1` | Easy to add | Cache-busting issues |
 
 ```python
 # URL path versioning (recommended for most APIs)
@@ -421,10 +421,10 @@ def list_orders():
     })
 ```
 
-| Method | Performance at page 10000 | Consistency on inserts/deletes | URL bookmarkable    |
+| Method | Performance at page 10000 | Consistency on inserts/deletes | URL bookmarkable |
 | ------ | ------------------------- | ------------------------------ | ------------------- |
-| Offset | Slow (scans 10000+ rows)  | Unstable (rows shift)          | Yes                 |
-| Cursor | Fast (index lookup)       | Stable (deterministic)         | No (cursor changes) |
+| Offset | Slow (scans 10000+ rows) | Unstable (rows shift) | Yes |
+| Cursor | Fast (index lookup) | Stable (deterministic) | No (cursor changes) |
 
 ## Idempotency Keys
 
@@ -503,13 +503,13 @@ API Gateway responsibilities:
 
 ### Gateway Implementation Options
 
-| Option          | Complexity | Customization      | Use Case                     |
+| Option | Complexity | Customization | Use Case |
 | --------------- | ---------- | ------------------ | ---------------------------- |
-| Kong            | Medium     | High (Lua plugins) | Large-scale, extensible      |
-| AWS API Gateway | Low        | Medium             | AWS ecosystem                |
-| Envoy           | High       | Very High          | Service mesh, gRPC           |
-| Nginx           | Medium     | High               | General purpose, lightweight |
-| Traefik         | Low        | Medium             | Container environments       |
+| Kong | Medium | High (Lua plugins) | Large-scale, extensible |
+| AWS API Gateway | Low | Medium | AWS ecosystem |
+| Envoy | High | Very High | Service mesh, gRPC |
+| Nginx | Medium | High | General purpose, lightweight |
+| Traefik | Low | Medium | Container environments |
 
 ## GraphQL Security
 
@@ -607,7 +607,7 @@ paths:
 ### Not Validating Input on the Server
 
 Client-side validation improves UX but provides zero security. An attacker can send any payload
-directly to your API. Always validate on the server, regardless of what the client does.
+Directly to your API. Always validate on the server, regardless of what the client does.
 
 ### CORS Misconfiguration
 
@@ -617,15 +617,23 @@ Always use an explicit allowlist.
 ### Exposing Internal IDs
 
 Using sequential integer IDs (1, 2, 3...) allows attackers to enumerate resources. Use UUIDs or
-hashids for public identifiers.
+Hashids for public identifiers.
 
 ### Not Rate Limiting Authentication Endpoints
 
 Without rate limiting, attackers can brute-force credentials, enumerate usernames, and perform
-credential stuffing attacks. Rate limit all authentication endpoints.
+Credential stuffing attacks. Rate limit all authentication endpoints.
 
 ### Returning Stack Traces in API Responses
 
 Stack traces reveal implementation details (framework, library versions, file paths) that help
-attackers craft targeted exploits. Return generic error messages in production; log details
-server-side.
+Attackers craft targeted exploits. Return generic error messages in production; log details
+Server-side.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

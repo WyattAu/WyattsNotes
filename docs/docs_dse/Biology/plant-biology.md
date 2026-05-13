@@ -16,8 +16,8 @@ slug: dse-biology-plant-biology
 ### Photosynthesis Overview
 
 Photosynthesis is the process by which photoautotrophs (plants, algae, cyanobacteria) convert light
-energy into chemical energy stored in organic molecules. It is the primary source of organic carbon
-for nearly all life on Earth.
+Energy into chemical energy stored in organic molecules. It is the primary source of organic carbon
+For nearly all life on Earth.
 
 **Overall equation:**
 
@@ -29,19 +29,19 @@ $\mathrm{H}_2\mathrm{O}$ is oxidised to $\mathrm{O}_2$ (loss of electrons).
 ### Leaf Structure and Adaptations
 
 The leaf is the primary photosynthetic organ. Its structure is optimised for maximising light
-absorption, $\mathrm{CO}_2$ uptake, and water exchange.
+Absorption, $\mathrm{CO}_2$ uptake, and water exchange.
 
-| Structure          | Adaptation for Photosynthesis                                                                          |
+| Structure | Adaptation for Photosynthesis |
 | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| Large surface area | Maximises light absorption                                                                             |
-| Thin and flat      | Short diffusion distance for $\mathrm{CO}_2$ and light                                                 |
-| Waxy cuticle       | Reduces water loss by evaporation                                                                      |
-| Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis         |
-| Spongy mesophyll   | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{CO}_2$ diffusion to palisade cells) |
-| Stomata            | Pores in the lower epidermis; allow $\mathrm{CO}_2$ to enter and $\mathrm{O}_2$ to exit                |
-| Veins (xylem)      | Supply water to mesophyll cells                                                                        |
-| Veins (phloem)     | Transport sugars (products of photosynthesis) away from the leaf                                       |
-| Chloroplasts       | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions    |
+| Large surface area | Maximises light absorption |
+| Thin and flat | Short diffusion distance for $\mathrm{CO}_2$ and light |
+| Waxy cuticle | Reduces water loss by evaporation |
+| Palisade mesophyll | Densely packed cells at the top of the leaf; rich in chloroplasts; main site of photosynthesis |
+| Spongy mesophyll | Loosely packed with air spaces; facilitates gas exchange ($\mathrm{CO}_2$ diffusion to palisade cells) |
+| Stomata | Pores in the lower epidermis; allow $\mathrm{CO}_2$ to enter and $\mathrm{O}_2$ to exit |
+| Veins (xylem) | Supply water to mesophyll cells |
+| Veins (phloem) | Transport sugars (products of photosynthesis) away from the leaf |
+| Chloroplasts | Contain chlorophyll and other pigments; site of the light-dependent and light-independent reactions |
 
 **Cross-section of a leaf (layers from top to bottom):**
 
@@ -55,39 +55,39 @@ absorption, $\mathrm{CO}_2$ uptake, and water exchange.
 
 **Location:** Thylakoid membranes of the chloroplast.
 
-**Requirements:** Light energy, water ($\mathrm{H}_2\mathrm{O}$), $\mathrm{NADP}^+$, ADP, inorganic
-phosphate ($\mathrm{P}_i$).
+**Requirements:** Light energy, water ($\mathrm{H}_2\mathrm{O}$), $\mathrm{NADP}^+$ADP, inorganic
+Phosphate ($\mathrm{P}_i$).
 
 **Products:** ATP, NADPH, $\mathrm{O}_2$ (waste product).
 
 **Process:**
 
 1. **Photoexcitation of Photosystem II (PSII):** Light energy is absorbed by chlorophyll a (P680)
-   and accessory pigments in the light-harvesting complex. The energy is transferred to the reaction
-   centre chlorophyll, exciting an electron to a higher energy level.
+ and accessory pigments in the light-harvesting complex. The energy is transferred to the reaction
+ centre chlorophyll, exciting an electron to a higher energy level.
 
 2. **Photolysis of water:** The excited electron leaves P680, creating a positive charge. Water
-   molecules are split by the enzyme water-splitting complex to replace the electron:
+ molecules are split by the enzyme water-splitting complex to replace the electron:
 
 $$2\mathrm{H}_2\mathrm{O} \to 4\mathrm{H}^+ + 4e^- + \mathrm{O}_2$$
 
 The $\mathrm{O}_2$ is released as a by-product. This is the source of atmospheric oxygen.
 
 3. **Electron transport chain (ETC):** The high-energy electron passes through a series of electron
-   carriers embedded in the thylakoid membrane (plastoquinone, cytochrome b6f complex,
-   plastocyanin). As electrons move through the chain, energy is released and used to pump
-   $\mathrm{H}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
+ carriers embedded in the thylakoid membrane (plastoquinone, cytochrome b6f complex,
+ plastocyanin). As electrons move through the chain, energy is released and used to pump
+ $\mathrm{H}^+$ ions from the stroma into the thylakoid lumen, creating a proton gradient.
 
 4. **Chemiosmosis:** $\mathrm{H}^+$ ions accumulate in the thylakoid lumen, creating a proton
-   gradient (electrochemical gradient). $\mathrm{H}^+$ ions flow back into the stroma through ATP
-   synthase, driving the synthesis of ATP from ADP and $\mathrm{P}_i$. This is called
-   **photophosphorylation**.
+ gradient (electrochemical gradient). $\mathrm{H}^+$ ions flow back into the stroma through ATP
+ synthase, driving the synthesis of ATP from ADP and $\mathrm{P}_i$. This is called
+ **photophosphorylation**.
 
 5. **Photoexcitation of Photosystem I (PSI):** Light energy excites another electron in PSI (P700).
-   The electron from PSII replaces the electron lost by P700.
+ The electron from PSII replaces the electron lost by P700.
 
 6. **NADP$^+$ reduction:** The excited electron from PSI, along with a proton from the stroma,
-   reduces $\mathrm{NADP}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
+ reduces $\mathrm{NADP}^+$ to NADPH via the enzyme ferredoxin-NADP$^+$ reductase (FNR).
 
 **Summary equation for light-dependent reactions:**
 
@@ -97,29 +97,29 @@ $$2\mathrm{H}_2\mathrm{O} + 2\mathrm{NADP}^+ + 3\mathrm{ADP} + 3\mathrm{P}_i \xr
 
 **Location:** Stroma of the chloroplast.
 
-**Requirements:** $\mathrm{CO}_2$, ATP, NADPH (produced by the light-dependent reactions).
+**Requirements:** $\mathrm{CO}_2$ATP, NADPH (produced by the light-dependent reactions).
 
 **Products:** Triose phosphate (G3P, a 3-carbon sugar), which is used to make glucose and other
-organic compounds.
+Organic compounds.
 
 **Process:**
 
 1. **Carbon fixation:** $\mathrm{CO}_2$ diffuses into the leaf through stomata and enters the
-   chloroplast stroma. The enzyme **RuBisCO** (ribulose-1,5-bisphosphate carboxylase/oxygenase)
-   catalyses the reaction between $\mathrm{CO}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
-   compound):
+ chloroplast stroma. The enzyme **RuBisCO** (ribulose-1,5-bisphosphate carboxylase/oxygenase)
+ catalyses the reaction between $\mathrm{CO}_2$ and ribulose-1,5-bisphosphate (RuBP, a 5-carbon
+ compound):
 
 $$\mathrm{CO}_2 + \mathrm{RuBP (5C)} \to \mathrm{Unstable 6C intermediate} \to 2 \times \mathrm{GP (glycerate-3-phosphate, 3C)}$$
 
 2. **Reduction:** GP is reduced to triose phosphate (TP, also called G3P) using ATP and NADPH from
-   the light-dependent reactions:
+ the light-dependent reactions:
 
 $$\mathrm{GP} + \mathrm{ATP} + \mathrm{NADPH} \to \mathrm{TP} + \mathrm{NADP}^+ + \mathrm{ADP} + \mathrm{P}_i$$
 
 3. **Regeneration of RuBP:** For every 6 $\mathrm{CO}_2$ molecules fixed, 12 molecules of TP are
-   produced. Of these, 10 molecules of TP (total 30 carbons) are used to regenerate 6 molecules of
-   RuBP (total 30 carbons), consuming 6 ATP. The remaining 2 molecules of TP (total 6 carbons) are
-   the net product and can be used to make one molecule of glucose (6C):
+ produced. Of these, 10 molecules of TP (total 30 carbons) are used to regenerate 6 molecules of
+ RuBP (total 30 carbons), consuming 6 ATP. The remaining 2 molecules of TP (total 6 carbons) are
+ the net product and can be used to make one molecule of glucose (6C):
 
 $$2 \times \mathrm{TP (3C each)} \to \mathrm{Glucose (6C)}$$
 
@@ -134,29 +134,29 @@ $$6\mathrm{CO}_2 + 18\mathrm{ATP} + 12\mathrm{NADPH} \to \mathrm{C}_6\mathrm{H}_
 ### Limiting Factors of Photosynthesis
 
 A limiting factor is the factor that is closest to its minimum and therefore limits the rate of the
-process at any given time. The rate of photosynthesis is determined by the slowest of these factors.
+Process at any given time. The rate of photosynthesis is determined by the slowest of these factors.
 
-| Factor                        | Effect on Rate                                                                                                  |
+| Factor | Effect on Rate |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Light intensity               | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting                |
-| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO}_2$ limits carbon fixation by RuBisCO                           |
-| Temperature                   | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
-| Water availability            | Severe water shortage closes stomata, reducing $\mathrm{CO}_2$ uptake; usually not limiting except in drought   |
+| Light intensity | Increases rate up to a plateau (light saturation point); beyond this, another factor is limiting |
+| $\mathrm{CO}_2$ concentration | Increases rate up to a plateau; low $\mathrm{CO}_2$ limits carbon fixation by RuBisCO |
+| Temperature | Increases rate up to the optimum (approximately 25-30 degrees C for most plants); beyond this, enzymes denature |
+| Water availability | Severe water shortage closes stomata, reducing $\mathrm{CO}_2$ uptake; not limiting except in drought |
 
 **Interpreting limiting factor graphs:**
 
 - On a graph of photosynthetic rate vs light intensity at two different $\mathrm{CO}_2$
-  concentrations, the curve with higher $\mathrm{CO}_2$ plateaus at a higher rate. At low light
-  intensity, both curves rise at the same rate (light is the limiting factor). At higher light
-  intensity, the curves diverge ($\mathrm{CO}_2$ becomes limiting for the lower curve).
+ concentrations, the curve with higher $\mathrm{CO}_2$ plateaus at a higher rate. At low light
+ intensity, both curves rise at the same rate (light is the limiting factor). At higher light
+ intensity, the curves diverge ($\mathrm{CO}_2$ becomes limiting for the lower curve).
 - On a graph of rate vs temperature, the rate increases to an optimum then drops sharply. The drop
-  is due to denaturation of RuBisCO and other Calvin cycle enzymes.
+ is due to denaturation of RuBisCO and other Calvin cycle enzymes.
 
 :::info
 At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
-can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce
-glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
-concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
+Can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce
+Glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
+Concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
 :::
 
 ---
@@ -166,14 +166,14 @@ concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespi
 ### Stomata
 
 Stomata are microscopic pores found mainly on the lower surface of leaves (in most plants). Each
-stoma is surrounded by two guard cells that control the opening and closing of the pore.
+Stoma is surrounded by two guard cells that control the opening and closing of the pore.
 
 **Structure of guard cells:**
 
 - Kidney-shaped (in dicots) or dumbbell-shaped (in monocots like grasses)
 - Contain chloroplasts (unlike most epidermal cells)
 - Cellulose microfibrils are arranged radially around the cell, so when the guard cells swell, they
-  bow outward, opening the stoma
+ bow outward, opening the stoma
 
 ### Mechanism of Stomatal Opening and Closing
 
@@ -196,28 +196,28 @@ Guard cells control stomatal aperture by changing their turgor (internal water p
 
 ### Factors Affecting Stomatal Opening
 
-| Factor          | Effect                                                                        |
+| Factor | Effect |
 | --------------- | ----------------------------------------------------------------------------- |
-| Light           | Opens stomata (blue light is particularly effective via blue-light receptors) |
-| $\mathrm{CO}_2$ | High $\mathrm{CO}_2$ closes stomata; low $\mathrm{CO}_2$ opens them           |
-| Temperature     | Moderate warmth opens stomata; extreme heat may close them (water stress)     |
-| Water supply    | Abundant water keeps stomata open; drought causes closure via ABA             |
-| Time of day     | Most plants open stomata during the day and close at night (circadian rhythm) |
-| Wind            | Strong wind may cause closure by increasing transpiration rate (water stress) |
+| Light | Opens stomata (blue light is particularly effective via blue-light receptors) |
+| $\mathrm{CO}_2$ | High $\mathrm{CO}_2$ closes stomata; low $\mathrm{CO}_2$ opens them |
+| Temperature | Moderate warmth opens stomata; extreme heat may close them (water stress) |
+| Water supply | Abundant water keeps stomata open; drought causes closure via ABA |
+| Time of day | Most plants open stomata during the day and close at night (circadian rhythm) |
+| Wind | Strong wind may cause closure by increasing transpiration rate (water stress) |
 
 ### Gas Exchange Through Stomata
 
 During the day, photosynthesis is occurring and $\mathrm{CO}_2$ is being consumed. The concentration
-of $\mathrm{CO}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{CO}_2$ diffuses in
-through the stomata. $\mathrm{O}_2$, produced as a by-product of photolysis, diffuses out through
-the stomata.
+Of $\mathrm{CO}_2$ inside the leaf is lower than in the atmosphere, so $\mathrm{CO}_2$ diffuses in
+Through the stomata. $\mathrm{O}_2$Produced as a by-product of photolysis, diffuses out through
+The stomata.
 
 $$\mathrm{CO}_2 \mathrm{ (atmosphere)} \to \mathrm{stomata} \to \mathrm{air spaces} \to \mathrm{mesophyll cells} \to \mathrm{chloroplasts}$$
 
 $$\mathrm{O}_2 \mathrm{ (chloroplasts)} \to \mathrm{mesophyll cells} \to \mathrm{air spaces} \to \mathrm{stomata} \to \mathrm{atmosphere}$$
 
 At night, when photosynthesis stops but respiration continues, the direction of gas exchange
-reverses: the plant takes in $\mathrm{O}_2$ and releases $\mathrm{CO}_2$.
+Reverses: the plant takes in $\mathrm{O}_2$ and releases $\mathrm{CO}_2$.
 
 ---
 
@@ -227,21 +227,21 @@ reverses: the plant takes in $\mathrm{O}_2$ and releases $\mathrm{CO}_2$.
 
 Plants have two vascular tissues for transport:
 
-| Tissue | Function                      | Direction of Transport           | Structure                                             |
+| Tissue | Function | Direction of Transport | Structure |
 | ------ | ----------------------------- | -------------------------------- | ----------------------------------------------------- |
-| Xylem  | Transports water and minerals | Upwards (roots to leaves)        | Dead, hollow tubes; thick lignified walls             |
-| Phloem | Transports organic solutes    | Both directions (source to sink) | Living cells; sieve tube elements and companion cells |
+| Xylem | Transports water and minerals | Upwards (roots to leaves) | Dead, hollow tubes; thick lignified walls |
+| Phloem | Transports organic solutes | Both directions (source to sink) | Living cells; sieve tube elements and companion cells |
 
 ### Xylem Structure and Function
 
 Xylem tissue consists of several cell types:
 
-| Cell Type       | Description                                                                                        |
+| Cell Type | Description |
 | --------------- | -------------------------------------------------------------------------------------------------- |
-| Vessel elements | Short, wide cells with perforated end walls; arranged end-to-end forming continuous vessels        |
-| Tracheids       | Long, narrow cells with tapered ends; water passes through pits (thin areas in the lignified wall) |
-| Fibres          | Provide structural support                                                                         |
-| Parenchyma      | Living cells for storage and lateral transport                                                     |
+| Vessel elements | Short, wide cells with perforated end walls; arranged end-to-end forming continuous vessels |
+| Tracheids | Long, narrow cells with tapered ends; water passes through pits (thin areas in the lignified wall) |
+| Fibres | Provide structural support |
+| Parenchyma | Living cells for storage and lateral transport |
 
 **Key features of xylem vessels:**
 
@@ -253,7 +253,7 @@ Xylem tissue consists of several cell types:
 ### Transpiration
 
 **Definition:** Transpiration is the loss of water vapour from the aerial parts of a plant,
-primarily through the stomata of leaves.
+Primarily through the stomata of leaves.
 
 ### Worked Example: Transpiration Rate Calculation
 
@@ -280,32 +280,32 @@ Volume = area $\times$ distance = $0.503 \times 12 = 6.03 \mathrm{ mm}^3$
 
 </details>
 
-Transpiration is NOT simply "water loss." It is a consequence of gas exchange -- stomata must be
-open for $\mathrm{CO}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
-through the same open stomata.
+Transpiration is NOT "water loss." It is a consequence of gas exchange -- stomata must be
+Open for $\mathrm{CO}_2$ uptake during photosynthesis, and water vapour inevitably diffuses out
+Through the same open stomata.
 
 **Factors affecting the rate of transpiration:**
 
-| Factor                  | Effect on Rate                      | Explanation                                                                                  |
+| Factor | Effect on Rate | Explanation |
 | ----------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------- |
-| Temperature             | Increases rate                      | Higher temperature increases kinetic energy of water molecules; increases evaporation rate   |
-| Humidity                | Decreases rate with higher humidity | High humidity reduces the water potential gradient between leaf and atmosphere               |
-| Wind speed              | Increases rate                      | Wind carries away water vapour from the leaf surface, maintaining a steep diffusion gradient |
-| Light intensity         | Increases rate                      | Light causes stomata to open, increasing the area through which water vapour can escape      |
-| Soil water availability | Decreases rate when water is scarce | Low soil water potential reduces water uptake by roots; triggers ABA and stomatal closure    |
-| Surface area of leaves  | Larger surface area increases rate  | More stomata and larger area for evaporation                                                 |
-| Cuticle thickness       | Thicker cuticle decreases rate      | Reduces cuticular transpiration                                                              |
+| Temperature | Increases rate | Higher temperature increases kinetic energy of water molecules; increases evaporation rate |
+| Humidity | Decreases rate with higher humidity | High humidity reduces the water potential gradient between leaf and atmosphere |
+| Wind speed | Increases rate | Wind carries away water vapour from the leaf surface, maintaining a steep diffusion gradient |
+| Light intensity | Increases rate | Light causes stomata to open, increasing the area through which water vapour can escape |
+| Soil water availability | Decreases rate when water is scarce | Low soil water potential reduces water uptake by roots; triggers ABA and stomatal closure |
+| Surface area of leaves | Larger surface area increases rate | More stomata and larger area for evaporation |
+| Cuticle thickness | Thicker cuticle decreases rate | Reduces cuticular transpiration |
 
 **Measurement of transpiration:**
 
 A **potometer** measures the rate of water uptake by a plant shoot. Since most water taken up is
-lost through transpiration (approximately 98%), the rate of water uptake approximates the rate of
-transpiration.
+Lost through transpiration (approximately 98%), the rate of water uptake approximates the rate of
+Transpiration.
 
 **Limitations of potometers:**
 
 - Measures water uptake, not transpiration directly (some water is used in photosynthesis and
-  growth)
+ growth)
 - Cutting the shoot may damage xylem vessels
 - Environmental conditions in the lab may not reflect field conditions
 
@@ -317,22 +317,22 @@ The movement of water through a plant from roots to leaves:
 
 - Root hairs increase the surface area for absorption
 - Water enters root hair cells by osmosis (the soil water potential is higher than the cell water
-  potential due to the high solute concentration in root cells)
+ potential due to the high solute concentration in root cells)
 - Mineral ions are absorbed by active transport (against their concentration gradient)
 
 **2. Movement across the root to the xylem:**
 
 Three possible pathways:
 
-| Pathway            | Description                                                                                  |
+| Pathway | Description |
 | ------------------ | -------------------------------------------------------------------------------------------- |
-| Apoplastic pathway | Water moves through the cell walls and intercellular spaces (not crossing any membranes)     |
+| Apoplastic pathway | Water moves through the cell walls and intercellular spaces (not crossing any membranes) |
 | Symplastic pathway | Water moves through the cytoplasm of cells via plasmodesmata (membrane-to-membrane crossing) |
-| Vacuolar pathway   | Water moves from vacuole to vacuole through cells (crosses both membranes and tonoplast)     |
+| Vacuolar pathway | Water moves from vacuole to vacuole through cells (crosses both membranes and tonoplast) |
 
 The **Casparian strip** (a band of suberin in the endodermis cell walls) blocks the apoplastic
-pathway at the endodermis, forcing water and minerals to enter the symplastic pathway. This gives
-the plant control over what enters the xylem (selective filter).
+Pathway at the endodermis, forcing water and minerals to enter the symplastic pathway. This gives
+The plant control over what enters the xylem (selective filter).
 
 **3. Movement up the xylem:**
 
@@ -342,12 +342,12 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 
 - Transpiration from the leaves creates a negative pressure (tension) at the top of the xylem column
 - Water molecules are cohesive (hydrogen bonds between them) and adhesive (hydrogen bonds with the
-  xylem walls)
+ xylem walls)
 - The tension is transmitted down the entire water column, pulling water upward from the roots
 - This is a passive process -- no energy input is required from the plant
 - The water column can be maintained because of the combined effects of cohesion (between water
-  molecules), adhesion (between water and xylem walls), and the narrow diameter of xylem vessels
-  (capillarity)
+ molecules), adhesion (between water and xylem walls), and the narrow diameter of xylem vessels
+ (capillarity)
 
 **b) Root pressure:**
 
@@ -355,7 +355,7 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 - Water follows by osmosis, creating a positive pressure (root pressure) that pushes water upward
 - Root pressure is relatively weak (can only push water up a few metres)
 - Contributes to guttation (droplets of water exuded from leaf margins under humid conditions when
-  transpiration is low)
+ transpiration is low)
 
 **c) Capillary action:**
 
@@ -364,9 +364,9 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 
 :::warning
 A common DSE pitfall is writing that root pressure is the main mechanism for water
-transport in tall trees. Root pressure alone can only push water a few metres. The cohesion-tension
-theory is the dominant mechanism in tall plants. Root pressure is supplementary and is only
-significant in small plants or under conditions of low transpiration.
+Transport in tall trees. Root pressure alone can only push water a few metres. The cohesion-tension
+Theory is the dominant mechanism in tall plants. Root pressure is supplementary and is only
+Significant in small plants or under conditions of low transpiration.
 :::
 
 ### Phloem Structure and Function
@@ -374,48 +374,48 @@ significant in small plants or under conditions of low transpiration.
 Phloem transports organic solutes (primarily sucrose) from source to sink.
 
 **Source:** Any part of the plant that produces or releases sugars (e.g., photosynthesising leaves,
-storage organs during mobilisation).
+Storage organs during mobilisation).
 
 **Sink:** Any part of the plant that uses or stores sugars (e.g., growing roots, developing fruits,
-meristems, storage organs during filling).
+Meristems, storage organs during filling).
 
 **Cell types in phloem:**
 
-| Cell Type           | Description                                                                                                 |
+| Cell Type | Description |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Sieve tube elements | Living cells at maturity; no nucleus; perforated end walls (sieve plates) with pores for sap flow           |
-| Companion cells     | Adjacent to sieve tube elements; have a nucleus and many mitochondria; metabolic support for sieve elements |
-| Phloem fibres       | Provide structural support                                                                                  |
-| Phloem parenchyma   | Storage cells                                                                                               |
+| Sieve tube elements | Living cells at maturity; no nucleus; perforated end walls (sieve plates) with pores for sap flow |
+| Companion cells | Adjacent to sieve tube elements; have a nucleus and many mitochondria; metabolic support for sieve elements |
+| Phloem fibres | Provide structural support |
+| Phloem parenchyma | Storage cells |
 
 ### Translocation
 
 **Definition:** Translocation is the transport of organic solutes (mainly sucrose) in the phloem
-from source to sink.
+From source to sink.
 
 **The mass flow (pressure flow) hypothesis:**
 
 This is the most widely accepted model for phloem transport.
 
 1. **Loading at the source:** Sucrose is actively loaded into sieve tube elements at the source
-   (e.g., from photosynthesising mesophyll cells). This can occur via apoplastic loading (sucrose
-   enters the cell wall space and is actively transported into the sieve element via a
-   proton-sucrose co-transporter) or symplastic loading (via plasmodesmata).
+ (e.g., from photosynthesising mesophyll cells). This can occur via apoplastic loading (sucrose
+ enters the cell wall space and is actively transported into the sieve element via a
+ proton-sucrose co-transporter) or symplastic loading (via plasmodesmata).
 
 2. **Increased solute concentration:** Active loading lowers the water potential inside the sieve
-   tube elements.
+ tube elements.
 
 3. **Water enters by osmosis:** Water moves from the xylem into the sieve tube elements, increasing
-   turgor pressure at the source.
+ turgor pressure at the source.
 
 4. **Mass flow:** The pressure gradient between source (high pressure) and sink (low pressure)
-   drives the bulk flow of sap through the sieve tubes toward the sink.
+ drives the bulk flow of sap through the sieve tubes toward the sink.
 
 5. **Unloading at the sink:** Sucrose is unloaded from the sieve tube elements at the sink (by
-   diffusion or active transport). This raises the water potential inside the sieve tubes.
+ diffusion or active transport). This raises the water potential inside the sieve tubes.
 
 6. **Water leaves by osmosis:** Water moves from the sieve tubes into the surrounding cells or
-   xylem, reducing turgor pressure at the sink.
+ xylem, reducing turgor pressure at the sink.
 
 **Evidence for the mass flow hypothesis:**
 
@@ -423,21 +423,21 @@ This is the most widely accepted model for phloem transport.
 - Aphids feeding on phloem exude sap with high sugar content
 - There is a pressure gradient between source and sink
 - Ringing (removing a ring of bark and phloem) causes sugar accumulation above the ring and
-  starvation below
+ starvation below
 
 ### Comparison of Xylem and Phloem
 
-| Feature          | Xylem                                        | Phloem                                                        |
+| Feature | Xylem | Phloem |
 | ---------------- | -------------------------------------------- | ------------------------------------------------------------- |
-| Direction        | Upwards (one-way)                            | Source to sink (bidirectional)                                |
-| Substance        | Water and mineral ions                       | Organic solutes (mainly sucrose)                              |
-| Cell status      | Dead at maturity                             | Living at maturity                                            |
-| Cell walls       | Thick, lignified                             | Thin, not lignified                                           |
-| Cross-walls      | No cross-walls (vessels) or pits (tracheids) | Sieve plates with pores (sieve tube elements)                 |
-| Mechanism        | Transpiration pull (passive)                 | Mass flow / pressure flow (active loading, passive transport) |
-| Supporting cells | Fibres, parenchyma                           | Companion cells (metabolic support)                           |
-| Location in root | Central                                      | Outer region                                                  |
-| Location in stem | Inner region of vascular bundle              | Outer region of vascular bundle                               |
+| Direction | Upwards (one-way) | Source to sink (bidirectional) |
+| Substance | Water and mineral ions | Organic solutes (mainly sucrose) |
+| Cell status | Dead at maturity | Living at maturity |
+| Cell walls | Thick, lignified | Thin, not lignified |
+| Cross-walls | No cross-walls (vessels) or pits (tracheids) | Sieve plates with pores (sieve tube elements) |
+| Mechanism | Transpiration pull (passive) | Mass flow / pressure flow (active loading, passive transport) |
+| Supporting cells | Fibres, parenchyma | Companion cells (metabolic support) |
+| Location in root | Central | Outer region |
+| Location in stem | Inner region of vascular bundle | Outer region of vascular bundle |
 
 ---
 
@@ -448,58 +448,58 @@ This is the most widely accepted model for phloem transport.
 #### Flower Structure
 
 A typical flower consists of four whorls of modified leaves (floral organs), arranged on the
-receptacle:
+Receptacle:
 
-| Whorl          | Organs     | Function                                                   |
+| Whorl | Organs | Function |
 | -------------- | ---------- | ---------------------------------------------------------- |
-| Sepals         | Calyx      | Protect the flower bud                                     |
-| Petals         | Corolla    | Attract pollinators (often brightly coloured, scented)     |
-| Stamens        | Androecium | Male reproductive organs; produce pollen (microspores)     |
-| Carpels/Pistil | Gynoecium  | Female reproductive organs; contain ovules (megasporangia) |
+| Sepals | Calyx | Protect the flower bud |
+| Petals | Corolla | Attract pollinators (often brightly coloured, scented) |
+| Stamens | Androecium | Male reproductive organs; produce pollen (microspores) |
+| Carpels/Pistil | Gynoecium | Female reproductive organs; contain ovules (megasporangia) |
 
 **Stamen structure:** Anther (produces pollen grains) + Filament (supports the anther).
 
 **Carpel structure:** Stigma (receives pollen) + Style (connects stigma to ovary) + Ovary (contains
-ovules, each containing an egg cell and two polar nuclei).
+Ovules, each containing an egg cell and two polar nuclei).
 
 #### Pollination
 
 **Definition:** Pollination is the transfer of pollen grains from an anther to a stigma.
 
-| Type              | Description                                                                           | Examples                                          |
+| Type | Description | Examples |
 | ----------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Self-pollination  | Pollen from the same flower (or another flower on the same plant) lands on the stigma | Peas, wheat, rice                                 |
-| Cross-pollination | Pollen from one plant lands on the stigma of a different plant of the same species    | Most flowering plants; promotes genetic diversity |
+| Self-pollination | Pollen from the same flower (or another flower on the same plant) lands on the stigma | Peas, wheat, rice |
+| Cross-pollination | Pollen from one plant lands on the stigma of a different plant of the same species | Most flowering plants; promotes genetic diversity |
 
 **Agents of pollination:**
 
-| Agent   | Adaptations                                                                                                    |
+| Agent | Adaptations |
 | ------- | -------------------------------------------------------------------------------------------------------------- |
-| Wind    | Light, smooth pollen; small, dull flowers; feathery stigmas; large anthers; produces vast quantities of pollen |
-| Insects | Brightly coloured petals; scent; nectar; sticky or spiny pollen; sticky stigma                                 |
-| Birds   | Large, brightly coloured (often red) flowers; copious nectar                                                   |
-| Bats    | Large, pale-coloured flowers that open at night; strong scent                                                  |
-| Water   | Long, ribbon-like pollen that floats on water                                                                  |
+| Wind | Light, smooth pollen; small, dull flowers; feathery stigmas; large anthers; produces vast quantities of pollen |
+| Insects | Brightly coloured petals; scent; nectar; sticky or spiny pollen; sticky stigma |
+| Birds | Large, brightly coloured (often red) flowers; copious nectar |
+| Bats | Large, pale-coloured flowers that open at night; strong scent |
+| Water | Long, ribbon-like pollen that floats on water |
 
 #### Fertilisation
 
 After a pollen grain lands on a compatible stigma, the following sequence occurs:
 
 1. **Germination:** The pollen grain absorbs sugars and water from the stigma and germinates,
-   producing a pollen tube.
+ producing a pollen tube.
 
 2. **Pollen tube growth:** The pollen tube grows down through the style towards the ovary, guided by
-   chemical signals from the ovule. The tube nucleus is at the tip.
+ chemical signals from the ovule. The tube nucleus is at the tip.
 
 3. **Double fertilisation (unique to flowering plants):**
 
-   **a) First fertilisation:** The pollen tube enters the ovule through the micropyle. One male
-   gamete fuses with the egg cell to form the diploid zygote (2n). This will develop into the
-   embryo.
+ **a) First fertilisation:** The pollen tube enters the ovule through the micropyle. One male
+ gamete fuses with the egg cell to form the diploid zygote (2n). This will develop into the
+ embryo.
 
-   **b) Second fertilisation:** The second male gamete fuses with the two polar nuclei (each
-   haploid) to form the triploid endosperm (3n). The endosperm is a nutritive tissue that provides
-   food for the developing embryo.
+ **b) Second fertilisation:** The second male gamete fuses with the two polar nuclei (each
+ haploid) to form the triploid endosperm (3n). The endosperm is a nutritive tissue that provides
+ food for the developing embryo.
 
 $$\mathrm{Male gamete (n)} + \mathrm{Egg cell (n)} \to \mathrm{Zygote (2n)}$$
 
@@ -509,34 +509,34 @@ $$\mathrm{Male gamete (n)} + 2 \times \mathrm{Polar nuclei (n + n)} \to \mathrm{
 
 After fertilisation:
 
-| Part                  | Develops From              | Develops Into                |
+| Part | Develops From | Develops Into |
 | --------------------- | -------------------------- | ---------------------------- |
-| Zygote                | Egg cell + male gamete     | Embryo                       |
-| Endosperm             | Polar nuclei + male gamete | Endosperm (nutritive tissue) |
-| Integuments           | Ovule wall                 | Seed coat (testa)            |
-| Ovule                 | Entire structure           | Seed                         |
-| Ovary wall            | Ovary                      | Fruit wall (pericarp)        |
-| Ovary                 | Entire structure           | Fruit                        |
-| Sepals/petals/stamens | Floral organs              | Usually wither and fall off  |
+| Zygote | Egg cell + male gamete | Embryo |
+| Endosperm | Polar nuclei + male gamete | Endosperm (nutritive tissue) |
+| Integuments | Ovule wall | Seed coat (testa) |
+| Ovule | Entire structure | Seed |
+| Ovary wall | Ovary | Fruit wall (pericarp) |
+| Ovary | Entire structure | Fruit |
+| Sepals/petals/stamens | Floral organs | wither and fall off |
 
 **Structure of a seed (e.g., broad bean):**
 
 - **Testa (seed coat):** Protective outer layer formed from the integuments of the ovule
 - **Embryo:** Consists of the radicle (future root), plumule (future shoot), and one or two
-  cotyledons (seed leaves)
+ cotyledons (seed leaves)
 - **Cotyledons:** Store nutrients (in non-endospermic seeds like beans) or absorb nutrients from the
-  endosperm (in endospermic seeds like maize)
+ endosperm (in endospermic seeds like maize)
 - **Micropyle:** A small pore in the testa where water enters during germination
 
 **Seed dispersal mechanisms:**
 
-| Mechanism         | Adaptation                                            | Example                    |
+| Mechanism | Adaptation | Example |
 | ----------------- | ----------------------------------------------------- | -------------------------- |
-| Wind              | Winged structures, parachute-like tufts, light weight | Dandelion, sycamore, maple |
-| Animal (external) | Hooks, barbs, sticky surfaces that cling to fur       | Burdock, goosegrass        |
-| Animal (internal) | Fleshy, edible fruit; seeds pass through gut intact   | Berries (eaten by birds)   |
-| Water             | Air-filled cavities, waterproof coat, buoyant         | Coconut                    |
-| Self-dispersal    | Explosive mechanism when pod dries                    | Pea pods, touch-me-not     |
+| Wind | Winged structures, parachute-like tufts, light weight | Dandelion, sycamore, maple |
+| Animal (external) | Hooks, barbs, sticky surfaces that cling to fur | Burdock, goosegrass |
+| Animal (internal) | Fleshy, edible fruit; seeds pass through gut intact | Berries (eaten by birds) |
+| Water | Air-filled cavities, waterproof coat, buoyant | Coconut |
+| Self-dispersal | Explosive mechanism when pod dries | Pea pods, touch-me-not |
 
 ---
 
@@ -549,14 +549,14 @@ Asexual reproduction in plants produces offspring that are genetically identical
 
 **Natural methods:**
 
-| Method   | Description                                                                       | Example                |
+| Method | Description | Example |
 | -------- | --------------------------------------------------------------------------------- | ---------------------- |
-| Runners  | Horizontal stems growing above ground; new plants form at nodes                   | Strawberry             |
-| Tubers   | Swollen underground stems storing food; "eyes" (buds) can sprout into new plants  | Potato                 |
-| Bulbs    | Underground food storage organs with fleshy leaf bases; new bulbs form as offsets | Onion, tulip, daffodil |
-| Corms    | Swollen underground stem bases (solid, unlike bulbs)                              | Crocus, gladiolus      |
-| Rhizomes | Horizontal underground stems; buds sprout to form new shoots                      | Ginger, iris, mint     |
-| Offset   | Short, thick horizontal branches at the base of the stem                          | Water hyacinth         |
+| Runners | Horizontal stems growing above ground; new plants form at nodes | Strawberry |
+| Tubers | Swollen underground stems storing food; "eyes" (buds) can sprout into new plants | Potato |
+| Bulbs | Underground food storage organs with fleshy leaf bases; new bulbs form as offsets | Onion, tulip, daffodil |
+| Corms | Swollen underground stem bases (solid, unlike bulbs) | Crocus, gladiolus |
+| Rhizomes | Horizontal underground stems; buds sprout to form new shoots | Ginger, iris, mint |
+| Offset | Short, thick horizontal branches at the base of the stem | Water hyacinth |
 
 **Advantages of vegetative propagation:**
 
@@ -567,9 +567,9 @@ Asexual reproduction in plants produces offspring that are genetically identical
 **Disadvantages:**
 
 - No genetic variation, so the entire population is vulnerable to the same disease or environmental
-  change
+ change
 - Overcrowding and competition for resources (clones compete with parent)
-- No dispersal mechanism in many cases
+- No dispersal mechanism 
 
 ### Artificial Propagation
 
@@ -584,18 +584,18 @@ A shoot (scion) from one plant is attached to the root and lower stem (rootstock
 The vascular cambium of both must be aligned so they fuse.
 
 - Used for fruit trees (e.g., combining a high-quality fruit scion with a disease-resistant
-  rootstock)
+ rootstock)
 - The scion retains its characteristics; the rootstock provides the root system
 
 **3. Tissue Culture (Micropropagation):**
 
 A small piece of plant tissue (explant) is grown on a sterile nutrient medium containing growth
-hormones (auxins and cytokinins) to produce a mass of undifferentiated cells (callus). The callus is
-then stimulated to differentiate into plantlets.
+Hormones (auxins and cytokinins) to produce a mass of undifferentiated cells (callus). The callus is
+Then stimulated to differentiate into plantlets.
 
 Steps:
 
-1. Selection of explant (typically from a meristem, which is virus-free)
+1. Selection of explant ( from a meristem, which is virus-free)
 2. Sterilisation of the explant
 3. Growth on nutrient agar with auxins and cytokinins to form callus
 4. Transfer to medium stimulating shoot formation
@@ -603,7 +603,7 @@ Steps:
 6. Acclimatisation and transfer to soil
 
 Advantages: large numbers of identical plants in a small space; disease-free plants; conservation of
-rare species; year-round production.
+Rare species; year-round production.
 
 ---
 
@@ -612,15 +612,15 @@ rare species; year-round production.
 ### Plant Hormones (Phytohormones)
 
 Plant hormones are organic substances produced in small quantities in one part of the plant and
-transported to other parts, where they control growth, development, and responses to stimuli.
+Transported to other parts, where they control growth, development, and responses to stimuli.
 
-| Hormone             | Site of Production                         | Main Functions                                                                                    |
+| Hormone | Site of Production | Main Functions |
 | ------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| Auxins (IAA)        | Shoot tips (apical meristem), young leaves | Cell elongation; apical dominance; root initiation; fruit development; tropisms                   |
-| Gibberellins        | Young leaves, roots, developing seeds      | Stem elongation; seed germination; bolting; fruit development                                     |
-| Cytokinins          | Root tips                                  | Cell division; delay leaf senescence; work antagonistically with auxins in shoot/root development |
-| Abscisic acid (ABA) | Leaves, stems, green fruits                | Stomatal closure (drought response); seed dormancy; inhibition of growth                          |
-| Ethylene            | Ripening fruits, senescing tissues         | Fruit ripening; leaf abscission (leaf fall); senescence                                           |
+| Auxins (IAA) | Shoot tips (apical meristem), young leaves | Cell elongation; apical dominance; root initiation; fruit development; tropisms |
+| Gibberellins | Young leaves, roots, developing seeds | Stem elongation; seed germination; bolting; fruit development |
+| Cytokinins | Root tips | Cell division; delay leaf senescence; work antagonistically with auxins in shoot/root development |
+| Abscisic acid (ABA) | Leaves, stems, green fruits | Stomatal closure (drought response); seed dormancy; inhibition of growth |
+| Ethylene | Ripening fruits, senescing tissues | Fruit ripening; leaf abscission (leaf fall); senescence |
 
 ### Auxins
 
@@ -630,61 +630,61 @@ NAA (naphthaleneacetic acid).
 **Effects of auxins:**
 
 1. **Cell elongation:** Auxins stimulate cell elongation in shoots by:
-   - Activating proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane, pumping $\mathrm{H}^+$
-     into the cell wall
-   - Lowering pH in the cell wall activates enzymes (expansins) that break cross-links between
-     cellulose microfibrils
-   - The cell wall becomes more flexible and stretches as water enters the cell by osmosis
-   - The cell elongates
+ - Activating proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane, pumping $\mathrm{H}^+$
+ into the cell wall
+ - Lowering pH in the cell wall activates enzymes (expansins) that break cross-links between
+ cellulose microfibrils
+ - The cell wall becomes more flexible and stretches as water enters the cell by osmosis
+ - The cell elongates
 
 2. **Apical dominance:** Auxin produced in the apical bud inhibits the growth of lateral buds.
-   Removing the apical bud (decapitation) releases lateral buds from inhibition, causing the plant
-   to become bushier. This is because:
-   - High auxin concentration in the main shoot promotes elongation
-   - Auxin is transported downwards and indirectly inhibits lateral bud growth (possibly by
-     promoting cytokinin synthesis inhibition or by diverting nutrients away from lateral buds)
+ Removing the apical bud (decapitation) releases lateral buds from inhibition, causing the plant
+ to become bushier. This is because:
+ - High auxin concentration in the main shoot promotes elongation
+ - Auxin is transported downwards and indirectly inhibits lateral bud growth (possibly by
+ promoting cytokinin synthesis inhibition or by diverting nutrients away from lateral buds)
 
 3. **Root initiation:** Auxins applied to cut stems promote the formation of adventitious roots.
-   This is used commercially in rooting powders.
+ This is used commercially in rooting powders.
 
 ### Gibberellins
 
 Gibberellins were first discovered in the fungus _Gibberella fujikuroi_, which causes "foolish
-seedling" disease in rice (excessive stem elongation).
+Seedling" disease in rice (excessive stem elongation).
 
 **Effects of gibberellins:**
 
 1. **Stem elongation:** Gibberellins stimulate cell division and elongation in the internodes
-   (regions between nodes). They can reverse the effect of dwarfing genes. Dwarf pea plants treated
-   with gibberellic acid (GA) grow to normal height.
+ (regions between nodes). They can reverse the effect of dwarfing genes. Dwarf pea plants treated
+ with gibberellic acid (GA) grow to normal height.
 
 2. **Seed germination:** In some seeds (e.g., barley), the embryo produces gibberellins upon
-   imbibition (water absorption). The gibberellins stimulate the aleurone layer (a protein-rich
-   tissue surrounding the endosperm) to produce amylase enzymes, which break down starch in the
-   endosperm into sugars for the growing embryo.
+ imbibition (water absorption). The gibberellins stimulate the aleurone layer (a protein-rich
+ tissue surrounding the endosperm) to produce amylase enzymes, which break down starch in the
+ endosperm into sugars for the growing embryo.
 
 3. **Bolting:** Gibberellins trigger the rapid elongation of the flowering stem in rosette plants
-   (e.g., cabbage) when they are exposed to certain environmental cues.
+ (e.g., cabbage) when they are exposed to certain environmental cues.
 
 ### Tropisms
 
 **Definition:** A tropism is a directional growth response of a plant to an external stimulus. The
-growth can be towards (positive tropism) or away from (negative tropism) the stimulus.
+Growth can be towards (positive tropism) or away from (negative tropism) the stimulus.
 
 **Phototropism:** Growth response to light.
 
 - Shoots are positively phototropic (grow towards light) to maximise light absorption for
-  photosynthesis
+ photosynthesis
 - Roots are negatively phototropic (grow away from light, into the soil)
 
 **Mechanism of phototropism (in shoots):**
 
 1. Auxin (IAA) is produced in the shoot tip and is transported downwards
 2. Light causes auxin to accumulate on the shaded side of the shoot (the auxin is transported
-   laterally from the light side to the dark side)
+ laterally from the light side to the dark side)
 3. The higher auxin concentration on the shaded side stimulates more cell elongation on that side
 4. The shaded side elongates more than the illuminated side, causing the shoot to bend towards the
-   light
+ light
 
 **Geotropism (gravitropism):** Growth response to gravity.
 
@@ -694,78 +694,78 @@ growth can be towards (positive tropism) or away from (negative tropism) the sti
 **Mechanism of geotropism (in roots):**
 
 1. Root caps contain statoliths (amyloplasts -- starch-containing organelles) that settle to the
-   bottom of the cell under gravity
+ bottom of the cell under gravity
 2. This triggers redistribution of auxin to the lower side of the root
 3. In roots, high auxin concentration inhibits cell elongation (unlike shoots, where auxin promotes
-   elongation)
+ elongation)
 4. The upper side (lower auxin) elongates more than the lower side (higher auxin), causing the root
-   to bend downwards
+ to bend downwards
 
 :::warning
 The critical distinction for DSE is that auxin has opposite effects on cell elongation in
-shoots versus roots. In shoots, auxin promotes elongation (high concentration side grows more). In
-roots, auxin inhibits elongation (low concentration side grows more). This is why shoots bend
-towards light but roots bend away from it when auxin redistributes.
+Shoots versus roots. In shoots, auxin promotes elongation (high concentration side grows more). In
+Roots, auxin inhibits elongation (low concentration side grows more). This is why shoots bend
+Towards light but roots bend away from it when auxin redistributes.
 :::
 
 ### Auxin and Gibberellin Interactions
 
-| Feature            | Auxin (IAA)                          | Gibberellin (GA)                                    |
+| Feature | Auxin (IAA) | Gibberellin (GA) |
 | ------------------ | ------------------------------------ | --------------------------------------------------- |
-| Primary effect     | Cell elongation, apical dominance    | Stem elongation, seed germination                   |
-| Site of production | Shoot tip, young leaves              | Young leaves, roots, developing seeds               |
-| Apical dominance   | Promotes apical dominance            | No direct role                                      |
-| Seed germination   | Not directly involved                | Stimulates amylase production in aleurone layer     |
-| Dwarf plants       | Cannot reverse dwarfism alone        | Reverses genetic dwarfism                           |
-| Commercial use     | Rooting powders, weedkillers (2,4-D) | Spraying grapes to increase size; malting of barley |
+| Primary effect | Cell elongation, apical dominance | Stem elongation, seed germination |
+| Site of production | Shoot tip, young leaves | Young leaves, roots, developing seeds |
+| Apical dominance | Promotes apical dominance | No direct role |
+| Seed germination | Not directly involved | Stimulates amylase production in aleurone layer |
+| Dwarf plants | Cannot reverse dwarfism alone | Reverses genetic dwarfism |
+| Commercial use | Rooting powders, weedkillers (2,4-D) | Spraying grapes to increase size; malting of barley |
 
 ---
 
 ## Common Pitfalls
 
 1. **Confusing xylem and phloem transport:** Xylem carries water and minerals UPWARDS (one-way).
-   Phloem carries organic solutes (sucrose) from source to sink (can be in either direction). Do not
-   write "phloem carries food from leaves to roots" -- it carries food from source (any
-   sugar-producing or sugar-storing organ) to sink (any sugar-using or sugar-storing organ).
+ Phloem carries organic solutes (sucrose) from source to sink (can be in either direction). Do not
+ write "phloem carries food from leaves to roots" -- it carries food from source (any
+ sugar-producing or sugar-storing organ) to sink (any sugar-using or sugar-storing organ).
 
 2. **Stating that the xylem actively pumps water upwards:** Xylem transport is PASSIVE. Water is
-   pulled up by transpiration pull (cohesion-tension) and pushed up by root pressure. No energy is
-   directly expended on water movement through the xylem.
+ pulled up by transpiration pull (cohesion-tension) and pushed up by root pressure. No energy is
+ directly expended on water movement through the xylem.
 
 3. **Writing that transpiration is "wasteful":** Transpiration is a necessary consequence of gas
-   exchange. Stomata must be open for $\mathrm{CO}_2$ uptake, and water vapour inevitably escapes.
-   Transpiration also has benefits: it provides evaporative cooling, drives the transpiration stream
-   (and thus mineral transport), and maintains turgor.
+ exchange. Stomata must be open for $\mathrm{CO}_2$ uptake, and water vapour inevitably escapes.
+ Transpiration also has benefits: it provides evaporative cooling, drives the transpiration stream
+ (and thus mineral transport), and maintains turgor.
 
 4. **Forgetting double fertilisation:** Flowering plants are unique in having double fertilisation.
-   One male gamete fuses with the egg (zygote, 2n) and the other fuses with two polar nuclei
-   (endosperm, 3n). Both events must be mentioned.
+ One male gamete fuses with the egg (zygote, 2n) and the other fuses with two polar nuclei
+ (endosperm, 3n). Both events must be mentioned.
 
 5. **Confusing pollination with fertilisation:** Pollination is the transfer of pollen to a stigma.
-   Fertilisation is the fusion of gametes. They are distinct events. Pollination can occur without
-   fertilisation (incompatible pollen), and fertilisation cannot occur without pollination (in
-   nature).
+ Fertilisation is the fusion of gametes. They are distinct events. Pollination can occur without
+ fertilisation (incompatible pollen), and fertilisation cannot occur without pollination (in
+ nature).
 
 6. **Writing that vegetative propagation produces "seeds":** Vegetative propagation is asexual. No
-   seeds, gametes, or fertilisation are involved. Offspring are produced from somatic cells and are
-   genetically identical clones.
+ seeds, gametes, or fertilisation are involved. Offspring are produced from somatic cells and are
+ genetically identical clones.
 
 7. **Forgetting that auxin inhibits root cell elongation:** Auxin promotes elongation in shoots but
-   inhibits it in roots. This is essential for explaining geotropism correctly.
+ inhibits it in roots. This is essential for explaining geotropism correctly.
 
 8. **Writing that gibberellins are produced in the shoot tip:** Gibberellins are produced in young
-   leaves, roots, and developing seeds -- not primarily in the shoot tip (that is where auxin is
-   produced).
+ leaves, roots, and developing seeds -- not primarily in the shoot tip (that is where auxin is
+ produced).
 
 9. **Confusing tropisms with taxes and nasties:** Tropisms are growth responses (directional,
-   permanent). Taxes are movement responses (whole organism moves). Nastic movements are
-   non-directional responses to stimuli (e.g., opening and closing of flowers in response to light
-   and temperature).
+ permanent). Taxes are movement responses (whole organism moves). Nastic movements are
+ non-directional responses to stimuli (e.g., opening and closing of flowers in response to light
+ and temperature).
 
 10. **Stating that the mass flow hypothesis requires energy throughout:** Only the initial loading
-    of sucrose into the phloem at the source requires active transport (energy). The actual movement
-    of sap through the sieve tubes is driven by a pressure gradient and is a passive, bulk flow
-    process.
+ of sucrose into the phloem at the source requires active transport (energy). The actual movement
+ of sap through the sieve tubes is driven by a pressure gradient and is a passive, bulk flow
+ process.
 
 ### Worked Example: Translocation and Ringing
 
@@ -975,15 +975,15 @@ If light were switched off:
 
 Plants require a range of mineral ions for healthy growth. These are absorbed from the soil solution by root hair cells, primarily through active transport (against the concentration gradient).
 
-| Mineral Ion   | Symbol        | Function                                                                                              | Deficiency Symptom                       |
+| Mineral Ion | Symbol | Function | Deficiency Symptom |
 | ------------- | ------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
-| Nitrogen      | $\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                               | Chlorosis (yellowing of older leaves); stunted growth |
-| Phosphorus    | $\mathrm{PO}_4^{3-}$ | Component of ATP, nucleic acids (DNA, RNA), phospholipids                                           | Poor root growth; dark green or purplish leaves |
-| Potassium     | $\mathrm{K}^+$     | Osmoregulation; opening and closing of stomata; enzyme activation                                     | Yellow leaves with dead tips; weak stems   |
-| Magnesium     | $\mathrm{Mg}^{2+}$ | Central atom in the chlorophyll molecule; enzyme activator                                           | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
-| Calcium       | $\mathrm{Ca}^{2+}$ | Component of the middle lamella (calcium pectate); involved in cell division                         | Stunted growth; meristems die             |
-| Iron          | $\mathrm{Fe}^{2+}$/Fe$^{3+}$ | Required for chlorophyll synthesis (as a cofactor, not a component)                               | Chlorosis of YOUNG leaves (iron is immobile in the plant) |
-| Sulphur       | $\mathrm{SO}_4^{2-}$ | Component of some amino acids (cysteine, methionine); component of some coenzymes                  | Chlorosis of young leaves                 |
+| Nitrogen | $\mathrm{NO}_3^-$$\mathrm{NH}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll | Chlorosis (yellowing of older leaves); stunted growth |
+| Phosphorus | $\mathrm{PO}_4^{3-}$ | Component of ATP, nucleic acids (DNA, RNA), phospholipids | Poor root growth; dark green or purplish leaves |
+| Potassium | $\mathrm{K}^+$ | Osmoregulation; opening and closing of stomata; enzyme activation | Yellow leaves with dead tips; weak stems |
+| Magnesium | $\mathrm{Mg}^{2+}$ | Central atom in the chlorophyll molecule; enzyme activator | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
+| Calcium | $\mathrm{Ca}^{2+}$ | Component of the middle lamella (calcium pectate); involved in cell division | Stunted growth; meristems die |
+| Iron | $\mathrm{Fe}^{2+}$/Fe$^{3+}$ | Required for chlorophyll synthesis (as a cofactor, not a component) | Chlorosis of YOUNG leaves (iron is immobile in the plant) |
+| Sulphur | $\mathrm{SO}_4^{2-}$ | Component of some amino acids (cysteine, methionine); component of some coenzymes | Chlorosis of young leaves |
 
 ### Nitrogen as a Limiting Nutrient
 
@@ -991,7 +991,7 @@ Nitrogen is most often the limiting nutrient for plant growth because:
 
 - Plants require large amounts of nitrogen (for proteins, nucleic acids, chlorophyll)
 - Atmospheric $\mathrm{N}_2$ is unavailable to plants (triple bond too strong)
-- Nitrogen in the soil is easily leached by rain (nitrate is highly soluble and mobile)
+- Nitrogen in the soil is leached by rain (nitrate is highly soluble and mobile)
 - Plant uptake removes nitrogen from the soil faster than natural processes replace it
 
 **Nitrogen deficiency** causes chlorosis (yellowing of leaves due to reduced chlorophyll synthesis) because nitrogen is a component of chlorophyll. Older leaves are affected first because nitrogen is mobile within the plant -- it is translocated from older leaves to younger, growing leaves.
@@ -1018,11 +1018,11 @@ Mineral ions are absorbed against their concentration gradient by active transpo
 
 Germination is the process by which a dormant seed resumes growth and develops into a seedling. Three external conditions are required:
 
-| Condition        | Role                                                                                                                                                 |
+| Condition | Role |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Water            | Rehydrates the seed; activates enzymes; makes food reserves soluble so they can be transported; causes the seed to swell, splitting the testa       |
-| Oxygen           | Required for aerobic respiration, which provides ATP for the active processes of germination (cell division, enzyme activity, active transport)     |
-| Suitable temperature | Enzymes have an optimum temperature; at very low temperatures, enzyme activity is too slow; at very high temperatures, enzymes denature             |
+| Water | Rehydrates the seed; activates enzymes; makes food reserves soluble so they can be transported; causes the seed to swell, splitting the testa |
+| Oxygen | Required for aerobic respiration, which provides ATP for the active processes of germination (cell division, enzyme activity, active transport) |
+| Suitable temperature | Enzymes have an optimum temperature; at very low temperatures, enzyme activity is too slow; at very high temperatures, enzymes denature |
 
 **Note:** Light is NOT a universal requirement for germination. Some seeds require light (e.g., lettuce), others require darkness (e.g., onion), and many are indifferent. Seeds that require light are called photoblastic.
 
@@ -1033,9 +1033,9 @@ When a seed absorbs water (imbibition), the following metabolic changes occur:
 1. **Activation of enzymes:** Water activates enzymes (amylases, proteases, lipases) that were synthesised during seed maturation but were inactive in the dry seed
 2. **Resumption of respiration:** Aerobic respiration resumes, producing ATP for energy-requiring processes
 3. **Digestion of food reserves:** Enzymes break down stored food:
-   - Starch $\xrightarrow{\text{amylase}}$ maltose $\xrightarrow{\text{maltase}}$ glucose
-   - Proteins $\xrightarrow{\text{proteases}}$ amino acids
-   - Lipids $\xrightarrow{\text{lipases}}$ glycerol + fatty acids
+ - Starch $\xrightarrow{\text{amylase}}$ maltose $\xrightarrow{\text{maltase}}$ glucose
+ - Proteins $\xrightarrow{\text{proteases}}$ amino acids
+ - Lipids $\xrightarrow{\text{lipases}}$ glycerol + fatty acids
 4. **Transport to growing regions:** Soluble products are transported from the cotyledons (or endosperm) to the growing embryo (radicle and plumule)
 5. **Cell division and elongation:** The radicle emerges first, growing downwards into the soil; the plumule grows upwards towards light
 6. **Photosynthesis begins:** Once the plumule emerges above ground and develops leaves, the seedling transitions to autotrophic nutrition
@@ -1058,11 +1058,11 @@ In some seeds (e.g., barley), gibberellins play a critical role in initiating ge
 
 Photoperiodism is the response of a plant to the relative lengths of light and dark periods. Plants use photoperiod to determine the appropriate time to flower.
 
-| Plant Type         | Critical Photoperiod         | Flowering Response                          |
+| Plant Type | Critical Photoperiod | Flowering Response |
 | ------------------ | ---------------------------- | ------------------------------------------- |
-| Long-day plants    | Short nights (< critical period) | Flower when the NIGHT length is below a critical value; require MORE than a certain number of hours of light per day | Spinach, lettuce, radish, wheat |
-| Short-day plants   | Long nights (> critical period) | Flower when the NIGHT length exceeds a critical value; require LESS than a certain number of hours of light per day | Chrysanthemum, poinsettia, strawberry, rice |
-| Day-neutral plants | No critical photoperiod      | Flower regardless of day length; other factors (temperature, plant age) trigger flowering | Tomato, cucumber, maize, cotton |
+| Long-day plants | Short nights (< critical period) | Flower when the NIGHT length is below a critical value; require MORE than a certain number of hours of light per day | Spinach, lettuce, radish, wheat |
+| Short-day plants | Long nights (> critical period) | Flower when the NIGHT length exceeds a critical value; require LESS than a certain number of hours of light per day | Chrysanthemum, poinsettia, strawberry, rice |
+| Day-neutral plants | No critical photoperiod | Flower regardless of day length; other factors (temperature, plant age) trigger flowering | Tomato, cucumber, maize, cotton |
 
 :::warning
 A common pitfall is to describe long-day and short-day plants in terms of DAY length rather than NIGHT length. The critical factor is actually the length of the DARK period. Long-day plants are really "short-night plants," and short-day plants are really "long-night plants." This was demonstrated by interrupting the dark period with a brief flash of light, which prevents short-day plants from flowering but promotes flowering in long-day plants.
@@ -1094,12 +1094,12 @@ During daylight, $\mathrm{Pr}$ is converted to $\mathrm{Pfr}$. In darkness, $\ma
 
 ### Responses to Water Stress
 
-| Response                          | Mechanism                                                                                                        |
+| Response | Mechanism |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Stomatal closure                  | Abscisic acid (ABA) causes guard cells to lose $\mathrm{K}^+$; water follows by osmosis; guard cells become flaccid |
-| Leaf rolling                      | Reduced surface area exposed to sunlight and wind, decreasing transpiration                                       |
-| Increased root:shoot ratio        | More resources allocated to root growth to access deeper water; less to shoot growth                              |
-| Leaf abscission (shedding)        | Reduces overall surface area for transpiration                                                                   |
+| Stomatal closure | Abscisic acid (ABA) causes guard cells to lose $\mathrm{K}^+$; water follows by osmosis; guard cells become flaccid |
+| Leaf rolling | Reduced surface area exposed to sunlight and wind, decreasing transpiration |
+| Increased root:shoot ratio | More resources allocated to root growth to access deeper water; less to shoot growth |
+| Leaf abscission (shedding) | Reduces overall surface area for transpiration |
 | Accumulation of solutes (osmotic adjustment) | Cells accumulate compatible solutes (proline, sugars) to lower water potential and maintain turgor at low water potential |
 
 ### Responses to High Light Intensity
@@ -1166,10 +1166,10 @@ In short-day plants, flowering is triggered when the NIGHT length exceeds a crit
 1. During daylight, red light converts inactive $\mathrm{Pr}$ to active $\mathrm{Pfr}$.
 2. In darkness, $\mathrm{Pfr}$ slowly reverts to $\mathrm{Pr}$ (this is a time-dependent process).
 3. In short-day plants, $\mathrm{Pfr}$ INHIBITS flowering. For flowering to occur, the $\mathrm{Pfr}$ concentration must drop below a threshold.
-4. Long nights allow sufficient time for $\mathrm{Pfr}$ to revert to $\mathrm{Pr}$, dropping below the threshold and triggering flowering.
+4. Long nights allow sufficient time for $\mathrm{Pfr}$ to revert to $\mathrm{Pr}$Dropping below the threshold and triggering flowering.
 5. Short nights do not allow enough $\mathrm{Pfr}$ to revert; the $\mathrm{Pfr}$ level remains above the threshold, and flowering is inhibited.
 
-The dark period is more important because the conversion of $\mathrm{Pfr}$ to $\mathrm{Pr}$ is a time-dependent process that only occurs in darkness. A brief flash of red light during the dark period converts $\mathrm{Pr}$ back to $\mathrm{Pfr}$, resetting the "clock" and preventing flowering in short-day plants. This is why short-day plants are really "long-night plants" -- it is the uninterrupted DARK period that matters.
+The dark period is more important because the conversion of $\mathrm{Pfr}$ to $\mathrm{Pr}$ is a time-dependent process that only occurs in darkness. A brief flash of red light during the dark period converts $\mathrm{Pr}$ back to $\mathrm{Pfr}$Resetting the "clock" and preventing flowering in short-day plants. This is why short-day plants are really "long-night plants" -- it is the uninterrupted DARK period that matters.
 
 </details>
 
@@ -1197,14 +1197,14 @@ The dark period is more important because the conversion of $\mathrm{Pfr}$ to $\
 
 ### Factors Affecting Translocation Rate
 
-| Factor               | Effect on Rate                      | Explanation                                                                                                               |
+| Factor | Effect on Rate | Explanation |
 | -------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Temperature           | Increases up to an optimum, then decreases | Enzymes and metabolic processes have an optimum temperature; very high temperatures denature proteins                      |
-| Light intensity        | Increases rate                      | Light increases photosynthesis, producing more sucrose for translocation                                            |
-| $\mathrm{CO}_2$ concentration | Increases rate                  | More $\mathrm{CO}_2$ increases photosynthesis and sucrose production                                               |
-| Oxygen concentration  | Decreases rate                      | Oxygen is needed for aerobic respiration to produce ATP for active loading; low oxygen (e.g., flooding) reduces translocation |
-| Metabolic inhibitor    | Decreases rate                      | Compounds that inhibit respiration (e.g., cyanide, which blocks the electron transport chain) reduce ATP availability for active loading |
-| Sink strength         | Increases rate                      | A strong sink (e.g., developing fruit or growing root) lowers the phloem pressure at the sink, increasing the pressure gradient |
+| Temperature | Increases up to an optimum, then decreases | Enzymes and metabolic processes have an optimum temperature; very high temperatures denature proteins |
+| Light intensity | Increases rate | Light increases photosynthesis, producing more sucrose for translocation |
+| $\mathrm{CO}_2$ concentration | Increases rate | More $\mathrm{CO}_2$ increases photosynthesis and sucrose production |
+| Oxygen concentration | Decreases rate | Oxygen is needed for aerobic respiration to produce ATP for active loading; low oxygen (e.g., flooding) reduces translocation |
+| Metabolic inhibitor | Decreases rate | Compounds that inhibit respiration (e.g., cyanide, which blocks the electron transport chain) reduce ATP availability for active loading |
+| Sink strength | Increases rate | A strong sink (e.g., developing fruit or growing root) lowers the phloem pressure at the sink, increasing the pressure gradient |
 
 ### Aphid Technique for Studying Phloem
 
@@ -1225,12 +1225,12 @@ Aphids (plant lice) feed by inserting their stylet (mouthpart) directly into the
 
 Synthetic plant hormones (PGRs -- plant growth regulators) are widely used in agriculture to improve crop yield and quality.
 
-| PGR              | Synthetic Example | Agricultural Use                                                | Mechanism                                                                 |
+| PGR | Synthetic Example | Agricultural Use | Mechanism |
 | ---------------- | ---------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| Auxin (synthetic) | 2,4-D; NAA; IBA  | Weedkiller (2,4-D selectively kills broad-leaved weeds in cereal crops); rooting powder (IBA) | 2,4-D is a synthetic auxin that causes uncontrolled growth in broad-leaved plants, disrupting their vascular tissue and killing them; grasses (monocots) are resistant because their growing points are below ground |
-| Gibberellin      | GA$_3$            | Spraying grapes to increase berry size; malting barley to stimulate amylase; promoting stem elongation in dwarf crops | GA stimulates cell division and elongation in internodes; in barley, GA stimulates aleurone to produce amylase, converting starch to maltose (needed for brewing) |
-| Ethylene          | Ethephon          | Accelerating fruit ripening in bananas and tomatoes; promoting fruit drop (abscission) in cotton and cherry | Ethylene triggers the production of cell-wall-degrading enzymes (cellulase, pectinase) that soften fruit; also promotes conversion of starch to sugars |
-| Cytokinin        | Benzyladenine (BAP) | Delaying leaf senescence in vegetables; extending shelf life of cut flowers | Cytokinins delay the breakdown of chlorophyll and proteins, keeping leaves green and metabolically active for longer |
+| Auxin (synthetic) | 2,4-D; NAA; IBA | Weedkiller (2,4-D selectively kills broad-leaved weeds in cereal crops); rooting powder (IBA) | 2,4-D is a synthetic auxin that causes uncontrolled growth in broad-leaved plants, disrupting their vascular tissue and killing them; grasses (monocots) are resistant because their growing points are below ground |
+| Gibberellin | GA$_3$ | Spraying grapes to increase berry size; malting barley to stimulate amylase; promoting stem elongation in dwarf crops | GA stimulates cell division and elongation in internodes; in barley, GA stimulates aleurone to produce amylase, converting starch to maltose (needed for brewing) |
+| Ethylene | Ethephon | Accelerating fruit ripening in bananas and tomatoes; promoting fruit drop (abscission) in cotton and cherry | Ethylene triggers the production of cell-wall-degrading enzymes (cellulase, pectinase) that soften fruit; also promotes conversion of starch to sugars |
+| Cytokinin | Benzyladenine (BAP) | Delaying leaf senescence in vegetables; extending shelf life of cut flowers | Cytokinins delay the breakdown of chlorophyll and proteins, keeping leaves green and metabolically active for longer |
 
 ### Improving Crop Yield
 
@@ -1239,17 +1239,17 @@ Synthetic plant hormones (PGRs -- plant growth regulators) are widely used in ag
 1. **Selective breeding:** Choosing plants with desirable traits (high yield, disease resistance, drought tolerance) and breeding them over many generations to accumulate favourable alleles. Examples: Green Revolution varieties of wheat and rice with short stems (dwarfing genes, responsive to fertiliser) and high yield.
 
 2. **Genetic modification (GM crops):** Introducing genes from other organisms to give crops desirable traits:
-   - **Bt crops:** _Bacillus thuringiensis_ gene inserted into cotton, maize, and soybeans; produces Bt toxin that kills specific insect pests (e.g., cotton bollworm); reduces pesticide use
-   - **Herbicide-resistant crops:** Gene for resistance to glyphosate (Roundup) herbicide inserted into soybeans and maize; allows farmers to spray herbicide without killing the crop, simplifying weed management
-   - **Golden Rice:** Rice engineered to produce beta-carotene (precursor of vitamin A); addresses vitamin A deficiency in developing countries
-   - **Virus-resistant papaya:** Papaya engineered with a viral coat protein gene; resistant to papaya ringspot virus
+ - **Bt crops:** _Bacillus thuringiensis_ gene inserted into cotton, maize, and soybeans; produces Bt toxin that kills specific insect pests (e.g., cotton bollworm); reduces pesticide use
+ - **Herbicide-resistant crops:** Gene for resistance to glyphosate (Roundup) herbicide inserted into soybeans and maize; allows farmers to spray herbicide without killing the crop, simplifying weed management
+ - **Golden Rice:** Rice engineered to produce beta-carotene (precursor of vitamin A); addresses vitamin A deficiency in developing countries
+ - **Virus-resistant papaya:** Papaya engineered with a viral coat protein gene; resistant to papaya ringspot virus
 
 **Environmental approaches:**
 
 1. **Crop rotation:** Growing different crops in succession on the same land to prevent soil nutrient depletion, break pest and disease cycles, and reduce reliance on chemical inputs
 2. **Biological pest control:** Using natural predators (ladybirds for aphids), parasites, or pathogens (Bacillus thuringiensis) to control pest populations
 3. **Integrated pest management (IPM):** Combining biological, chemical, and cultural methods to control pests while minimising environmental damage and pesticide resistance
-4. **Greenhouse/glasshouse cultivation:** Controlling temperature, light, $\mathrm{CO}_2$, water, and nutrients to optimise growth; allows year-round production in any climate; reduces water use through drip irrigation
+4. **Greenhouse/glasshouse cultivation:** Controlling temperature, light, $\mathrm{CO}_2$Water, and nutrients to optimise growth; allows year-round production in any climate; reduces water use through drip irrigation
 5. **Hydroponics:** Growing plants without soil in a nutrient solution; precise control over mineral nutrition; higher yields per unit area; reduced water usage
 
 ### Worked Example: Selective Breeding
@@ -1300,59 +1300,59 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 ### Auxins (IAA -- Indole-3-Acetic Acid)
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Site of production        | Apical meristem (tip of the shoot); young leaves; developing seeds                                                      |
-| Mode of transport         | Polar transport (unidirectional, from shoot tip towards the base); active transport via auxin efflux carriers (PIN proteins) in cell membranes |
-| Main functions            | Cell elongation (by stimulating proton pumps that loosen the cell wall); apical dominance; root initiation; fruit development; tropisms |
-| Apical dominance          | Auxin produced by the apical bud inhibits the growth of lateral buds; removing the apical bud (decapitation) removes the source of auxin, allowing lateral buds to grow and the plant to become bushier |
-| Commercial uses           | Rooting hormone powders (promote root growth on cuttings); weedkillers (synthetic auxins such as 2,4-D cause uncontrolled growth and kill broad-leaved weeds but not grasses); preventing fruit drop (spraying with auxin prevents premature fruit drop in orchards) |
+| Site of production | Apical meristem (tip of the shoot); young leaves; developing seeds |
+| Mode of transport | Polar transport (unidirectional, from shoot tip towards the base); active transport via auxin efflux carriers (PIN proteins) in cell membranes |
+| Main functions | Cell elongation (by stimulating proton pumps that loosen the cell wall); apical dominance; root initiation; fruit development; tropisms |
+| Apical dominance | Auxin produced by the apical bud inhibits the growth of lateral buds; removing the apical bud (decapitation) removes the source of auxin, allowing lateral buds to grow and the plant to become bushier |
+| Commercial uses | Rooting hormone powders (promote root growth on cuttings); weedkillers (synthetic auxins such as 2,4-D cause uncontrolled growth and kill broad-leaved weeds but not grasses); preventing fruit drop (spraying with auxin prevents premature fruit drop in orchards) |
 
 ### Gibberellins
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Site of production        | Young leaves; roots; developing seeds                                                                                    |
-| Main functions            | Stem elongation (by stimulating cell division AND cell elongation); seed germination (stimulates production of amylase in the aleurone layer of cereal seeds); flowering (in some long-day plants); fruit development |
-| Seed germination         | When a seed absorbs water, the embryo produces gibberellin; gibberellin diffuses to the aleurone layer (outer layer of the endosperm in cereal seeds); it stimulates the aleurone cells to synthesise and secrete amylase; amylase breaks down starch in the endosperm into maltose, which is used by the embryo for respiration and growth |
-| Commercial uses           | Spraying grapes with gibberellin to produce larger, seedless fruit; brewing industry (gibberellin stimulates amylase production in barley during malting) |
+| Site of production | Young leaves; roots; developing seeds |
+| Main functions | Stem elongation (by stimulating cell division AND cell elongation); seed germination (stimulates production of amylase in the aleurone layer of cereal seeds); flowering (in some long-day plants); fruit development |
+| Seed germination | When a seed absorbs water, the embryo produces gibberellin; gibberellin diffuses to the aleurone layer (outer layer of the endosperm in cereal seeds); it stimulates the aleurone cells to synthesise and secrete amylase; amylase breaks down starch in the endosperm into maltose, which is used by the embryo for respiration and growth |
+| Commercial uses | Spraying grapes with gibberellin to produce larger, seedless fruit; brewing industry (gibberellin stimulates amylase production in barley during malting) |
 
 ### Cytokinins
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Site of production        | Root tips (mainly); also produced in developing seeds                                                                   |
-| Main functions            | Promote cell division (cytokinesis); delay leaf senescence (aging); work antagonistically with auxin in apical dominance (cytokinins promote lateral bud growth) |
-| Interaction with auxin   | The ratio of auxin to cytokinin determines the fate of plant cells in tissue culture: high auxin : low cytokinin $\rightarrow$ roots; low auxin : high cytokinin $\rightarrow$ shoots; equal auxin : cytokinin $\rightarrow$ callus (undifferentiated tissue) |
-| Commercial uses           | Extending the shelf life of cut flowers and vegetables (delays senescence); promoting shoot formation in tissue culture  |
+| Site of production | Root tips (mainly); also produced in developing seeds |
+| Main functions | Promote cell division (cytokinesis); delay leaf senescence (aging); work antagonistically with auxin in apical dominance (cytokinins promote lateral bud growth) |
+| Interaction with auxin | The ratio of auxin to cytokinin determines the fate of plant cells in tissue culture: high auxin : low cytokinin $\rightarrow$ roots; low auxin : high cytokinin $\rightarrow$ shoots; equal auxin : cytokinin $\rightarrow$ callus (undifferentiated tissue) |
+| Commercial uses | Extending the shelf life of cut flowers and vegetables (delays senescence); promoting shoot formation in tissue culture |
 
 ### Ethylene
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Nature                    | A gas (C$_2$H$_4$); the only plant hormone that is a gas                                                               |
-| Site of production        | Ripening fruits; damaged or stressed tissues; senescing leaves                                                          |
-| Main functions            | Fruit ripening (softening, colour change, sweetness increase); leaf abscission (leaf fall); senescence (aging)          |
-| Fruit ripening           | Ethylene triggers the conversion of starch to sugars (sweetening), the breakdown of chlorophyll (colour change from green to red/yellow), and the softening of cell walls (by enzymes such as polygalacturonase) |
-| Positive feedback         | Ethylene stimulates its own production -- a small amount triggers more ethylene production, creating a cascade (this is why one ripe banana speeds up the ripening of others nearby) |
-| Commercial uses           | Accelerating fruit ripening (fruits are picked green and shipped, then exposed to ethylene to ripen); delaying ripening (storing fruit in low-oxygen, low-temperature conditions to slow ethylene production) |
+| Nature | A gas (C$_2$H$_4$); the only plant hormone that is a gas |
+| Site of production | Ripening fruits; damaged or stressed tissues; senescing leaves |
+| Main functions | Fruit ripening (softening, colour change, sweetness increase); leaf abscission (leaf fall); senescence (aging) |
+| Fruit ripening | Ethylene triggers the conversion of starch to sugars (sweetening), the breakdown of chlorophyll (colour change from green to red/yellow), and the softening of cell walls (by enzymes such as polygalacturonase) |
+| Positive feedback | Ethylene stimulates its own production -- a small amount triggers more ethylene production, creating a cascade (this is why one ripe banana speeds up the ripening of others nearby) |
+| Commercial uses | Accelerating fruit ripening (fruits are picked green and shipped, then exposed to ethylene to ripen); delaying ripening (storing fruit in low-oxygen, low-temperature conditions to slow ethylene production) |
 
 ### Abscisic Acid (ABA)
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Site of production        | Leaves; stems; green fruits                                                                                             |
-| Main functions            | Inhibits growth; promotes seed dormancy; closes stomata during water stress (causes guard cells to lose water and become flaccid) |
-| Stomatal closure         | During water stress, ABA is produced and transported to the guard cells; it causes potassium ions to leave the guard cells; water follows by osmosis; guard cells become flaccid and the stomata close, reducing water loss |
-| Seed dormancy           | High ABA levels in the seed maintain dormancy; when conditions are favourable (water, suitable temperature), ABA levels drop and gibberellin levels rise, breaking dormancy and promoting germination |
+| Site of production | Leaves; stems; green fruits |
+| Main functions | Inhibits growth; promotes seed dormancy; closes stomata during water stress (causes guard cells to lose water and become flaccid) |
+| Stomatal closure | During water stress, ABA is produced and transported to the guard cells; it causes potassium ions to leave the guard cells; water follows by osmosis; guard cells become flaccid and the stomata close, reducing water loss |
+| Seed dormancy | High ABA levels in the seed maintain dormancy; when conditions are favourable (water, suitable temperature), ABA levels drop and gibberellin levels rise, breaking dormancy and promoting germination |
 
 ### Tropisms
 
-| Tropism                  | Stimulus               | Auxin Distribution                              | Result                                    |
+| Tropism | Stimulus | Auxin Distribution | Result |
 | ----------------------- | ---------------------- | ----------------------------------------------- | ----------------------------------------- |
-| Phototropism (positive)   | Unilateral light       | Auxin accumulates on the shaded side of the shoot (lateral auxin transport) | Cells on the shaded side elongate more; shoot bends towards the light |
-| Geotropism (positive) -- roots | Gravity              | Auxin accumulates on the lower side of the root                                                      | Auxin INHIBITS root cell elongation; cells on the upper side elongate more; root bends downwards |
-| Geotropism (negative) -- shoots | Gravity              | Auxin accumulates on the lower side of the shoot                                                     | Auxin promotes shoot cell elongation; cells on the lower side elongate more; shoot bends upwards (away from gravity) |
+| Phototropism (positive) | Unilateral light | Auxin accumulates on the shaded side of the shoot (lateral auxin transport) | Cells on the shaded side elongate more; shoot bends towards the light |
+| Geotropism (positive) -- roots | Gravity | Auxin accumulates on the lower side of the root | Auxin INHIBITS root cell elongation; cells on the upper side elongate more; root bends downwards |
+| Geotropism (negative) -- shoots | Gravity | Auxin accumulates on the lower side of the shoot | Auxin promotes shoot cell elongation; cells on the lower side elongate more; shoot bends upwards (away from gravity) |
 
 **Mechanism of auxin-mediated cell elongation:**
 1. Auxin activates proton pumps ($\mathrm{H}^+$-ATPases) in the cell membrane
@@ -1368,12 +1368,12 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 ### Xylem Structure and Water Transport
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Vessel elements           | Short, wide cells with perforated end walls; arranged end-to-end to form continuous columns (vessels) for efficient water transport; lignified walls provide strength and waterproofing |
-| Tracheids                | Long, narrow cells with tapered ends; water passes between tracheids through pits (thin areas in the lignified cell wall); found in all vascular plants |
-| Lignin                   | A complex polymer that impregnates the cell walls of xylem vessels and tracheids; provides mechanical strength (prevents collapse under negative pressure) and makes the walls waterproof (prevents water loss) |
-| Dead at maturity          | Xylem cells are dead when functional -- they have no cytoplasm, no nuclei, and no organelles; this creates an empty lumen for water transport |
+| Vessel elements | Short, wide cells with perforated end walls; arranged end-to-end to form continuous columns (vessels) for efficient water transport; lignified walls provide strength and waterproofing |
+| Tracheids | Long, narrow cells with tapered ends; water passes between tracheids through pits (thin areas in the lignified cell wall); found in all vascular plants |
+| Lignin | A complex polymer that impregnates the cell walls of xylem vessels and tracheids; provides mechanical strength (prevents collapse under negative pressure) and makes the walls waterproof (prevents water loss) |
+| Dead at maturity | Xylem cells are dead when functional -- they have no cytoplasm, no nuclei, and no organelles; this creates an empty lumen for water transport |
 
 ### Cohesion-Tension Theory
 
@@ -1387,14 +1387,14 @@ The cohesion-tension theory explains how water is transported upwards through th
 
 ### Factors Affecting the Rate of Transpiration
 
-| Factor                  | Effect on Transpiration Rate                                                                                               | Explanation                                                                                                              |
+| Factor | Effect on Transpiration Rate | Explanation |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Temperature              | Increases rate                                                                                                             | Higher temperature increases the kinetic energy of water molecules (faster evaporation) and may cause stomata to open more widely |
-| Humidity                 | Decreases rate                                                                                                             | Higher humidity means a smaller water potential gradient between the inside of the leaf and the outside air; less evaporation |
-| Wind speed               | Increases rate                                                                                                             | Wind blows away the layer of water vapour that accumulates near the leaf surface (boundary layer), maintaining a steep water potential gradient |
-| Light intensity           | Increases rate (indirectly)                                                                                                | Light causes stomata to open (in most plants), allowing more water vapour to escape; however, high light intensity also increases leaf temperature, further increasing transpiration |
-| Water availability        | Decreases rate                                                                                                             | When soil water is scarce, the plant produces more ABA, causing stomata to close and reducing transpiration               |
-| Carbon dioxide concentration | Decreases rate (at high CO2)                                                                                             | High CO2 causes guard cells to lose water (stomata close)                                                               |
+| Temperature | Increases rate | Higher temperature increases the kinetic energy of water molecules (faster evaporation) and may cause stomata to open more widely |
+| Humidity | Decreases rate | Higher humidity means a smaller water potential gradient between the inside of the leaf and the outside air; less evaporation |
+| Wind speed | Increases rate | Wind blows away the layer of water vapour that accumulates near the leaf surface (boundary layer), maintaining a steep water potential gradient |
+| Light intensity | Increases rate (indirectly) | Light causes stomata to open (in most plants), allowing more water vapour to escape; however, high light intensity also increases leaf temperature, further increasing transpiration |
+| Water availability | Decreases rate | When soil water is scarce, the plant produces more ABA, causing stomata to close and reducing transpiration |
+| Carbon dioxide concentration | Decreases rate (at high CO2) | High CO2 causes guard cells to lose water (stomata close) |
 
 ---
 
@@ -1412,39 +1412,39 @@ The cohesion-tension theory explains how water is transported upwards through th
 
 ### The Light-Dependent Reactions
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Location                  | Thylakoid membranes of the chloroplast                                                                                   |
-| Inputs                    | Light energy; water ($\mathrm{H_2O}$); NADP$^+$; ADP + P$_i$ (inorganic phosphate)                                      |
-| Outputs                   | Oxygen ($\mathrm{O_2}$); NADPH; ATP                                                                                      |
+| Location | Thylakoid membranes of the chloroplast |
+| Inputs | Light energy; water ($\mathrm{H_2O}$); NADP$^+$; ADP + P$_i$ (inorganic phosphate) |
+| Outputs | Oxygen ($\mathrm{O_2}$); NADPH; ATP |
 
 **Process:**
 
 1. **Photoexcitation of chlorophyll:** Light energy is absorbed by chlorophyll and other photosynthetic pigments in Photosystem II (PSII). The energy is transferred to the reaction centre chlorophyll (P680), which becomes excited and releases a high-energy electron
 2. **Photolysis of water:** The electron lost by P680 is replaced by an electron from water. Water is split by an enzyme (water-splitting complex/oxygen-evolving complex):
    $$2\mathrm{H_2O} \rightarrow 4\mathrm{H^+} + 4e^- + \mathrm{O_2}$$
-   This is the source of the oxygen released during photosynthesis
+ This is the source of the oxygen released during photosynthesis
 3. **Electron transport chain (PSII $\rightarrow$ plastoquinone $\rightarrow$ cytochrome b6f complex $\rightarrow$ plastocyanin):** The excited electrons pass through a chain of electron carriers. As they pass, they release energy which is used to pump hydrogen ions (H$^+$) from the stroma into the thylakoid lumen. This creates a proton gradient across the thylakoid membrane
 4. **Chemiosmosis:** H$^+$ ions flow back down their concentration gradient through ATP synthase (a transmembrane protein channel). The flow of H$^+$ drives the rotation of ATP synthase, which catalyses the synthesis of ATP from ADP and P$_i$. This is **photophosphorylation**
 5. **Photosystem I (PSI):** Light energy excites another chlorophyll molecule (P700), which releases another electron. This electron replaces the electron that left PSI. The excited electron from PSI passes to ferredoxin, then to NADP$^+$ reductase
-6. **NADPH production:** NADP$^+$ reductase transfers two electrons and one H$^+$ to NADP$^+$, reducing it to NADPH:
+6. **NADPH production:** NADP$^+$ reductase transfers two electrons and one H$^+$ to NADP$^+$Reducing it to NADPH:
    $$\text{NADP}^+ + 2e^- + \mathrm{H^+} \rightarrow \text{NADPH}$$
 
 ### The Light-Independent Reactions (Calvin Cycle)
 
-| Feature                  | Description                                                                                                               |
+| Feature | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Location                  | Stroma of the chloroplast                                                                                                |
-| Inputs                    | CO$_2$; NADPH; ATP (from light-dependent reactions)                                                                      |
-| Outputs                   | Triose phosphate (GP/GALP); NADP$^+$; ADP + P$_i$ (which return to the light-dependent reactions)                       |
+| Location | Stroma of the chloroplast |
+| Inputs | CO$_2$; NADPH; ATP (from light-dependent reactions) |
+| Outputs | Triose phosphate (GP/GALP); NADP$^+$; ADP + P$_i$ (which return to the light-dependent reactions) |
 
 **Three stages:**
 
-| Stage                    | Description                                                                                                               |
+| Stage | Description |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Carbon fixation**         | CO$_2$ diffuses into the leaf and combines with ribulose bisphosphate (RuBP, a 5-carbon compound) using the enzyme **ribulose bisphosphate carboxylase/oxygenase (Rubisco)**. This produces an unstable 6-carbon intermediate that immediately splits into two molecules of glycerate 3-phosphate (GP, a 3-carbon compound) |
-| **Reduction**              | GP is reduced to triose phosphate (TP, also called GALP) using NADPH (which donates hydrogen) and ATP (which provides energy). For every 3 molecules of CO$_2$ fixed, 6 molecules of TP are produced |
-| **Regeneration of RuBP**   | 5 out of every 6 molecules of TP are used to regenerate 3 molecules of RuBP (using ATP), so the cycle can continue. The remaining 1 molecule of TP is the net product -- this can be used to make glucose, starch, cellulose, lipids, amino acids, or other organic molecules |
+| **Carbon fixation** | CO$_2$ diffuses into the leaf and combines with ribulose bisphosphate (RuBP, a 5-carbon compound) using the enzyme **ribulose bisphosphate carboxylase/oxygenase (Rubisco)**. This produces an unstable 6-carbon intermediate that immediately splits into two molecules of glycerate 3-phosphate (GP, a 3-carbon compound) |
+| **Reduction** | GP is reduced to triose phosphate (TP, also called GALP) using NADPH (which donates hydrogen) and ATP (which provides energy). For every 3 molecules of CO$_2$ fixed, 6 molecules of TP are produced |
+| **Regeneration of RuBP** | 5 out of every 6 molecules of TP are used to regenerate 3 molecules of RuBP (using ATP), so the cycle can continue. The remaining 1 molecule of TP is the net product -- this can be used to make glucose, starch, cellulose, lipids, amino acids, or other organic molecules |
 
 **Overall equation for the Calvin cycle:**
 
@@ -1454,13 +1454,13 @@ To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 tim
 
 ### Factors Affecting the Rate of Photosynthesis
 
-| Factor                  | Effect on Rate                                                                                                            | Explanation                                                                                                              |
+| Factor | Effect on Rate | Explanation |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Light intensity           | Increases rate (up to a plateau)                                                                                           | More light = more energy for the light-dependent reactions = more ATP and NADPH; rate plateaus when another factor becomes limiting (CO$_2$ concentration or temperature) |
-| CO$_2$ concentration    | Increases rate (up to a plateau)                                                                                           | More CO$_2$ = more substrate for Rubisco = faster carbon fixation; rate plateaus when another factor becomes limiting (light or temperature) |
-| Temperature              | Increases rate up to an optimum (~25-35 degrees C for most plants), then decreases sharply                                | Higher temperature increases enzyme activity (Rubisco); above the optimum, enzymes denature and the rate drops rapidly |
-| Water availability        | Insufficient water reduces rate                                                                                            | Water is a substrate for photolysis; water stress also causes stomata to close, reducing CO$_2$ uptake                    |
-| Chlorophyll concentration | More chlorophyll = higher rate (up to a limit)                                                                            | More chlorophyll absorbs more light energy; however, other factors (light intensity, CO$_2$) will become limiting first   |
+| Light intensity | Increases rate (up to a plateau) | More light = more energy for the light-dependent reactions = more ATP and NADPH; rate plateaus when another factor becomes limiting (CO$_2$ concentration or temperature) |
+| CO$_2$ concentration | Increases rate (up to a plateau) | More CO$_2$ = more substrate for Rubisco = faster carbon fixation; rate plateaus when another factor becomes limiting (light or temperature) |
+| Temperature | Increases rate up to an optimum (~25-35 degrees C for most plants), then decreases sharply | Higher temperature increases enzyme activity (Rubisco); above the optimum, enzymes denature and the rate drops rapidly |
+| Water availability | Insufficient water reduces rate | Water is a substrate for photolysis; water stress also causes stomata to close, reducing CO$_2$ uptake |
+| Chlorophyll concentration | More chlorophyll = higher rate (up to a limit) | More chlorophyll absorbs more light energy; however, other factors (light intensity, CO$_2$) will become limiting first |
 
 ### Limiting Factors and Graphs
 
@@ -1477,15 +1477,15 @@ To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 tim
 
 ### Comparison of Photosynthesis and Respiration
 
-| Feature                  | Photosynthesis                                                                                                            | Respiration                                                                                                              |
+| Feature | Photosynthesis | Respiration |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Location                  | Chloroplasts (mesophyll cells)                                                                                            | Mitochondria (all living cells)                                                                                          |
-| Time                      | Only in the light                                                                                                         | Continuously (day and night)                                                                                             |
-| Raw materials             | CO$_2$ and H$_2$O                                                                                                         | Glucose and O$_2$                                                                                                        |
-| Products                  | Glucose and O$_2$                                                                                                         | CO$_2$ and H$_2$O; ATP                                                                                                  |
-| Energy change             | Light energy $\rightarrow$ chemical energy (stored in glucose)                                                           | Chemical energy (in glucose) $\rightarrow$ ATP (usable energy)                                                          |
-| Equation                  | $6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{light}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$ | $\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP}$ |
-| Gas exchange              | Takes in CO$_2$; releases O$_2$                                                                                           | Takes in O$_2$; releases CO$_2$                                                                                          |
+| Location | Chloroplasts (mesophyll cells) | Mitochondria (all living cells) |
+| Time | Only in the light | Continuously (day and night) |
+| Raw materials | CO$_2$ and H$_2$O | Glucose and O$_2$ |
+| Products | Glucose and O$_2$ | CO$_2$ and H$_2$O; ATP |
+| Energy change | Light energy $\rightarrow$ chemical energy (stored in glucose) | Chemical energy (in glucose) $\rightarrow$ ATP (usable energy) |
+| Equation | $6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{light}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$ | $\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP}$ |
+| Gas exchange | Takes in CO$_2$; releases O$_2$ | Takes in O$_2$; releases CO$_2$ |
 
 **Net gas exchange:**
 - In the light: photosynthesis rate > respiration rate $\rightarrow$ net uptake of CO$_2$ and net release of O$_2$
@@ -1500,23 +1500,23 @@ To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 tim
 
 **Flower structure:**
 
-| Structure               | Description                                                                                                               | Function                                                                                                                 |
+| Structure | Description | Function |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Sepals                   | Green, leaf-like structures forming the outermost whorl of the flower                                                     | Protect the flower bud before it opens                                                                                   |
-| Petals                   | Often brightly coloured; form the second whorl                                                                            | Attract pollinators (insects, birds)                                                                                     |
-| Stamens (male part)      | Consist of an anther (contains pollen sacs) on a filament                                                                 | Produce pollen grains (male gametophytes)                                                                                |
-| Carpel (pistil; female part) | Consists of stigma (sticky surface), style (tube), and ovary (contains ovules)                                         | Receives pollen; pollen tube grows down the style to the ovary; ovules contain the egg cells (female gametes)            |
-| Receptacle               | The part of the stem that supports the flower                                                                              | Attaches the flower to the stem                                                                                          |
-| Nectary                  | Gland that produces nectar (sugar-rich liquid)                                                                            | Rewards pollinators; attracts them to the flower                                                                          |
+| Sepals | Green, leaf-like structures forming the outermost whorl of the flower | Protect the flower bud before it opens |
+| Petals | Often brightly coloured; form the second whorl | Attract pollinators (insects, birds) |
+| Stamens (male part) | Consist of an anther (contains pollen sacs) on a filament | Produce pollen grains (male gametophytes) |
+| Carpel (pistil; female part) | Consists of stigma (sticky surface), style (tube), and ovary (contains ovules) | Receives pollen; pollen tube grows down the style to the ovary; ovules contain the egg cells (female gametes) |
+| Receptacle | The part of the stem that supports the flower | Attaches the flower to the stem |
+| Nectary | Gland that produces nectar (sugar-rich liquid) | Rewards pollinators; attracts them to the flower |
 
 ### Pollination
 
-| Type                    | Description                                                                                                               | Examples                                 |
+| Type | Description | Examples |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Self-pollination          | Pollen from the anther of a flower is transferred to the stigma of the SAME flower or another flower on the SAME plant  | Peas, wheat, rice (many crop plants)    |
-| Cross-pollination        | Pollen from the anther of a flower is transferred to the stigma of a flower on a DIFFERENT plant of the same species     | Most flowering plants; apples, roses, sunflowers |
-| Insect-pollinated          | Flowers have bright petals, scent, nectar, sticky pollen, stigma inside the flower                                       | Roses, sunflowers, lavender             |
-| Wind-pollinated           | Flowers have small, dull petals (or none), large feathery stigmas, light pollen, long anthers hanging outside the flower  | Grasses, wheat, maize, oak, birch       |
+| Self-pollination | Pollen from the anther of a flower is transferred to the stigma of the SAME flower or another flower on the SAME plant | Peas, wheat, rice (many crop plants) |
+| Cross-pollination | Pollen from the anther of a flower is transferred to the stigma of a flower on a DIFFERENT plant of the same species | Most flowering plants; apples, roses, sunflowers |
+| Insect-pollinated | Flowers have bright petals, scent, nectar, sticky pollen, stigma inside the flower | Roses, sunflowers, lavender |
+| Wind-pollinated | Flowers have small, dull petals (or none), large feathery stigmas, light pollen, long anthers hanging outside the flower | Grasses, wheat, maize, oak, birch |
 
 ### Fertilisation
 
@@ -1525,28 +1525,36 @@ To produce one molecule of glucose (6 carbons), the Calvin cycle must turn 6 tim
 3. The pollen tube carries two male gamete nuclei (from the generative nucleus that divided by mitosis)
 4. The pollen tube enters the ovule through the micropyle
 5. **Double fertilisation** occurs:
-   - One male gamete fuses with the egg cell to form the diploid zygote (2n)
-   - The other male gamete fuses with two polar nuclei to form the triploid endosperm (3n), which provides nutrients for the developing embryo
+ - One male gamete fuses with the egg cell to form the diploid zygote (2n)
+ - The other male gamete fuses with two polar nuclei to form the triploid endosperm (3n), which provides nutrients for the developing embryo
 6. The zygote develops into the embryo; the ovule develops into the seed; the ovary develops into the fruit
 
 ### Seed Structure
 
-| Part                    | Description                                                                                                               | Function                                                                                                                 |
+| Part | Description | Function |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Seed coat (testa)        | Hard, protective outer covering                                                                                           | Protects the embryo from physical damage, desiccation, and pathogens                                                    |
-| Embryo                   | Consists of the radicle (future root), plumule (future shoot), and one or two cotyledons (seed leaves)                   | Develops into the new plant                                                                                              |
-| Cotyledon(s)             | Seed leaves that store nutrients (in some species) or absorb nutrients from the endosperm                                | Provide nutrients for the germinating seedling until it can photosynthesise                                            |
-| Endosperm                | Nutrient-rich tissue (in monocots and some dicots)                                                                        | Stores starch, proteins, and lipids for the developing embryo                                                            |
-| Hilum                    | Scar on the seed coat where the seed was attached to the ovary (via the funicle)                                         | Point of attachment                                                                                                     |
+| Seed coat (testa) | Hard, protective outer covering | Protects the embryo from physical damage, desiccation, and pathogens |
+| Embryo | Consists of the radicle (future root), plumule (future shoot), and one or two cotyledons (seed leaves) | Develops into the new plant |
+| Cotyledon(s) | Seed leaves that store nutrients (in some species) or absorb nutrients from the endosperm | Provide nutrients for the germinating seedling until it can photosynthesise |
+| Endosperm | Nutrient-rich tissue (in monocots and some dicots) | Stores starch, proteins, and lipids for the developing embryo |
+| Hilum | Scar on the seed coat where the seed was attached to the ovary (via the funicle) | Point of attachment |
 
 ### Monocots vs Dicots
 
-| Feature                  | Monocots                                                                                                                  | Dicots                                                                                                                   |
+| Feature | Monocots | Dicots |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Cotyledons               | One                                                                                                                       | Two                                                                                                                      |
-| Leaf venation             | Parallel veins                                                                                                            | Net (reticulate) veins                                                                                                   |
-| Flower parts              | In multiples of 3                                                                                                         | In multiples of 4 or 5                                                                                                  |
-| Vascular bundles in stem  | Scattered                                                                                                                 | Arranged in a ring                                                                                                       |
-| Root system               | Fibrous root system                                                                                                       | Tap root system                                                                                                          |
-| Examples                  | Grasses, wheat, rice, maize, lilies, orchids                                                                             | Beans, peas, sunflowers, roses, oak trees, apples                                                                        |
+| Cotyledons | One | Two |
+| Leaf venation | Parallel veins | Net (reticulate) veins |
+| Flower parts | In multiples of 3 | In multiples of 4 or 5 |
+| Vascular bundles in stem | Scattered | Arranged in a ring |
+| Root system | Fibrous root system | Tap root system |
+| Examples | Grasses, wheat, rice, maize, lilies, orchids | Beans, peas, sunflowers, roses, oak trees, apples |
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

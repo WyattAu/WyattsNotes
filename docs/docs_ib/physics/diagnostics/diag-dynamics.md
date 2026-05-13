@@ -24,9 +24,9 @@ A book of mass $1.5\,\text{kg}$ rests on a horizontal table which itself rests o
 **Solution:**
 
 (a) Forces on the $1.5\,\text{kg}$ book:
-1. **Weight** $W_1 = 1.5g = 14.7\,\text{N}$, acting vertically downward. Exerted by the Earth.
-2. **Normal reaction** $R$, acting vertically upward. Exerted by the table.
-3. **Contact force** $C$, acting vertically downward. Exerted by the $2.0\,\text{kg}$ book (the second book presses down on the first).
+1. **Weight** $W_1 = 1.5g = 14.7\,\text{N}$Acting vertically downward. Exerted by the Earth.
+2. **Normal reaction** $R$Acting vertically upward. Exerted by the table.
+3. **Contact force** $C$Acting vertically downward. Exerted by the $2.0\,\text{kg}$ book (the second book presses down on the first).
 
 (b) Newton's third law pairs:
 
@@ -54,7 +54,7 @@ The $1.5\,\text{kg}$ book also experiences a contact force from the $2.0\,\text{
 
 **Question:**
 
-A block of mass $5.0\,\text{kg}$ rests on a rough plane inclined at $35^\circ$ to the horizontal. The coefficient of static friction between the block and the plane is $\mu_s = 0.45$, and the coefficient of kinetic friction is $\mu_k = 0.35$.
+A block of mass $5.0\,\text{kg}$ rests on a rough plane inclined at $35^\circ$ to the horizontal. The coefficient of static friction between the block and the plane is $\mu_s = 0.45$And the coefficient of kinetic friction is $\mu_k = 0.35$.
 
 (a) A horizontal force $P$ is applied to the block, pushing it up the slope. Calculate the minimum value of $P$ required to keep the block from sliding down the slope.
 
@@ -106,11 +106,11 @@ $$P = \frac{46.22}{0.5610} = 82.4\,\text{N}$$
 
 (c) With $P = 45\,\text{N}$:
 
-Since $9.34\,\text{N} \lt 45\,\text{N} \lt 82.4\,\text{N}$, the block does **not** slide. The static friction adjusts to maintain equilibrium.
+Since $9.34\,\text{N} \lt 45\,\text{N} \lt 82.4\,\text{N}$The block does **not** slide. The static friction adjusts to maintain equilibrium.
 
 $$f = mg\sin 35^\circ - P\cos 35^\circ = 49.05 \times 0.5736 - 45 \times 0.8192 = 28.14 - 36.86 = -8.72\,\text{N}$$
 
-The negative sign means friction acts down the slope (preventing the block from being pushed up). The magnitude $8.72\,\text{N}$ is less than $F_{\max}$, confirming the block does not move.
+The negative sign means friction acts down the slope (preventing the block from being pushed up). The magnitude $8.72\,\text{N}$ is less than $F_{\max}$Confirming the block does not move.
 
 ---
 
@@ -120,7 +120,7 @@ The negative sign means friction acts down the slope (preventing the block from 
 
 Two blocks, $A$ ($4.0\,\text{kg}$) and $B$ ($6.0\,\text{kg}$), are connected by a light inextensible string. Block $A$ rests on a rough horizontal surface ($\mu_A = 0.30$) and block $B$ rests on a different rough horizontal surface ($\mu_B = 0.50$). The surfaces meet at a corner, with the string running over a smooth pulley at the corner so that the blocks can move along their respective surfaces.
 
-A horizontal force $F = 40\,\text{N}$ is applied to block $B$, pulling it away from the pulley.
+A horizontal force $F = 40\,\text{N}$ is applied to block $B$Pulling it away from the pulley.
 
 (a) Calculate the acceleration of the system.
 
@@ -170,7 +170,7 @@ This contradiction shows the static friction forces adjust. The actual tension i
 
 $T = 40 - 29.43 = 10.57\,\text{N}$ (from block $B$'s equation)
 
-Check block $A$: $T = 10.57\,\text{N}$, $f_A = \mu_s \times 4.0 \times 9.81 = 11.77\,\text{N}$. Since $T \lt f_A^{\max}$, block $A$ does not move. So $a = 0$ for block $A$ and the system does not move.
+Check block $A$: $T = 10.57\,\text{N}$$f_A = \mu_s \times 4.0 \times 9.81 = 11.77\,\text{N}$. Since $T \lt f_A^{\max}$Block $A$ does not move. So $a = 0$ for block $A$ and the system does not move.
 
 (c) When block $B$ is pushed towards the pulley (kinetic friction now applies):
 
@@ -202,7 +202,7 @@ The deceleration is $4.12\,\text{m}\,\text{s}^{-2}$ (opposing the direction of m
 
 A block of mass $2.0\,\text{kg}$ is placed on a rough inclined plane at angle $\theta = 40^\circ$ to the horizontal. The coefficient of kinetic friction is $\mu_k = 0.25$. A spring of spring constant $k = 200\,\text{N}\,\text{m}^{-1}$ is attached to the bottom of the incline and to the block. The spring is initially at its natural length.
 
-The block is released from rest $0.80\,\text{m}$ down the slope from the spring's natural length position (i.e. the spring is compressed as the block slides down).
+The block is released from rest $0.80\,\text{m}$ down the slope from the spring's natural length position (i.e. The spring is compressed as the block slides down).
 
 (a) Calculate the speed of the block at the instant the spring reaches its natural length (block has moved $0.80\,\text{m}$).
 
@@ -314,11 +314,11 @@ $$a = \frac{-3.80}{11.0} = -0.345\,\text{m}\,\text{s}^{-2}$$
 
 Still negative, meaning the system does not move. The static friction is sufficient to hold the system in equilibrium.
 
-Checking: without $B$, $A$ alone would require $mg\sin 30^\circ = 39.24\,\text{N}$ to start sliding, while maximum static friction $= 0.20 \times 8.0 \times 9.81 \times 0.866 = 13.61\,\text{N}$. So $A$ would slide down without $B$. But $B$ pulls back with $29.43\,\text{N}$.
+Checking: without $B$$A$ alone would require $mg\sin 30^\circ = 39.24\,\text{N}$ to start sliding, while maximum static friction $= 0.20 \times 8.0 \times 9.81 \times 0.866 = 13.61\,\text{N}$. So $A$ would slide down without $B$. But $B$ pulls back with $29.43\,\text{N}$.
 
-Net force down the slope without friction: $39.24 - 29.43 = 9.81\,\text{N}$. Since $9.81 \lt 13.61\,\text{N}$, the maximum static friction is sufficient to hold the system in equilibrium.
+Net force down the slope without friction: $39.24 - 29.43 = 9.81\,\text{N}$. Since $9.81 \lt 13.61\,\text{N}$The maximum static friction is sufficient to hold the system in equilibrium.
 
-The system does not move. $a = 0$, $T = 29.43\,\text{N}$.
+The system does not move. $a = 0$$T = 29.43\,\text{N}$.
 
 (b) Since the system is in equilibrium, block $B$ never hits the ground. The question setup is a trap: the static friction is sufficient to hold the entire system at rest.
 
@@ -330,15 +330,15 @@ The system does not move. $a = 0$, $T = 29.43\,\text{N}$.
 
 **Question:**
 
-A helicopter of mass $2500\,\text{kg}$ is rising vertically. At time $t = 0$, it is ascending at $5.0\,\text{m}\,\text{s}^{-1}$ at a height of $50\,\text{m}$ above the ground. The upward thrust from the rotors is $32000\,\text{N}$ and the constant air resistance (drag) is $2500\,\text{N}$.
+A helicopter of mass $2500\,\text{kg}$ is rising vertically. At time $t = 0$It is ascending at $5.0\,\text{m}\,\text{s}^{-1}$ at a height of $50\,\text{m}$ above the ground. The upward thrust from the rotors is $32000\,\text{N}$ and the constant air resistance (drag) is $2500\,\text{N}$.
 
-At $t = 8.0\,\text{s}$, the engine fails and the thrust drops to zero instantly. The drag remains proportional to speed: $F_d = 500v\,\text{N}$ where $v$ is in $\text{m}\,\text{s}^{-1}$.
+At $t = 8.0\,\text{s}$The engine fails and the thrust drops to zero instantly. The drag remains proportional to speed: $F_d = 500v\,\text{N}$ where $v$ is in $\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate the height and speed of the helicopter at $t = 8.0\,\text{s}$.
 
 (b) Determine whether the helicopter reaches a terminal velocity after engine failure, and if so, calculate it.
 
-(c) The pilot activates an emergency parachute at $t = 8.0\,\text{s}$ which provides an additional constant upward force of $18000\,\text{N}$. Determine whether the helicopter lands safely (i.e. reaches the ground with speed less than $6.0\,\text{m}\,\text{s}^{-1}$).
+(c) The pilot activates an emergency parachute at $t = 8.0\,\text{s}$ which provides an additional constant upward force of $18000\,\text{N}$. Determine whether the helicopter lands safely (i.e. Reaches the ground with speed less than $6.0\,\text{m}\,\text{s}^{-1}$).
 
 Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
@@ -376,4 +376,4 @@ This exceeds the safe landing speed of $6.0\,\text{m}\,\text{s}^{-1}$.
 
 The helicopter is at $153.7\,\text{m}$ moving upward at $20.9\,\text{m}\,\text{s}^{-1}$. The parachute drag $F_d = 500v$ is speed-dependent, so the landing speed depends on the full dynamics.
 
-At terminal velocity $v_t = 13.1\,\text{m}\,\text{s}^{-1}$ (downward), the helicopter hits the ground at approximately $13.1\,\text{m}\,\text{s}^{-1}$, which is above the $6.0\,\text{m}\,\text{s}^{-1}$ safety threshold. The helicopter does **not** land safely.
+At terminal velocity $v_t = 13.1\,\text{m}\,\text{s}^{-1}$ (downward), the helicopter hits the ground at approximately $13.1\,\text{m}\,\text{s}^{-1}$Which is above the $6.0\,\text{m}\,\text{s}^{-1}$ safety threshold. The helicopter does **not** land safely.

@@ -11,7 +11,7 @@ slug: hosting-gitea-truenas
 ## Procedure
 
 1. Since there is built in support for Gitea with TrueCharts, install Gitea using `Discover Apps`.
-   Assign a dedicated dataset (eg, `mnt/pool/gitea`) for persistent storage.
+ Assign a dedicated dataset (eg, `mnt/pool/gitea`) for persistent storage.
 2. Set the service type to `ClusterIP` using Ingress for external access, and exposing HTTPS ports
 
 ## Setup Networking
@@ -19,3 +19,15 @@ slug: hosting-gitea-truenas
 WireGuard is recommended.
 
 1. Enable WireGuard: `Network>WireGuard Peers`
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -9,12 +9,12 @@ slug: hypothesis-testing-extended
 ## Hypothesis Testing (Extended Treatment)
 
 This document provides a rigorous treatment of hypothesis testing methodology, including null and
-alternative hypotheses, significance levels, Type I and II errors, one-tailed and two-tailed tests,
-and critical regions.
+Alternative hypotheses, significance levels, Type I and II errors, one-tailed and two-tailed tests,
+And critical regions.
 
 :::info
 Hypothesis testing is a formal procedure for making decisions about population parameters based on
-sample evidence. It provides a principled framework for quantifying uncertainty.
+Sample evidence. It provides a principled framework for quantifying uncertainty.
 :::
 
 <hr />
@@ -23,48 +23,48 @@ sample evidence. It provides a principled framework for quantifying uncertainty.
 
 ### 1.1 Null and alternative hypotheses
 
-The **null hypothesis** $H_0$ is the default assumption -- typically a statement of "no effect" or
+The **null hypothesis** $H_0$ is the default assumption -- a statement of "no effect" or
 "no difference." It is assumed to be true unless the evidence is sufficiently compelling to reject
-it.
+It.
 
 The **alternative hypothesis** $H_1$ specifies what we believe might be true instead. It is only
-accepted if the evidence against $H_0$ is strong enough.
+Accepted if the evidence against $H_0$ is strong enough.
 
 ### 1.2 Test statistic
 
 A **test statistic** is a function of the sample data whose distribution is known under $H_0$.
 Common test statistics include sample proportions, sample means, and sample correlation
-coefficients.
+Coefficients.
 
 ### 1.3 Significance level
 
 The **significance level** $\alpha$ is the maximum probability of rejecting $H_0$ when it is
-actually true. Common values are $\alpha = 0.05$ (5%), $\alpha = 0.01$ (1%), and $\alpha = 0.10$
+Actually true. Common values are $\alpha = 0.05$ (5%), $\alpha = 0.01$ (1%), and $\alpha = 0.10$
 (10%).
 
 ### 1.4 The decision rule
 
 1. Assume $H_0$ is true.
 2. Calculate the probability of obtaining a test statistic at least as extreme as the observed
-   value, assuming $H_0$.
-3. If this probability (the **$p$-value**) is less than $\alpha$, reject $H_0$. Otherwise, do not
-   reject $H_0$.
+ value, assuming $H_0$.
+3. If this probability (the **$p$-value**) is less than $\alpha$Reject $H_0$. Otherwise, do not
+ reject $H_0$.
 
 ### 1.5 Critical value approach
 
 Alternatively, find the **critical value** $c$ such that $P(\mathrm{test\ statistic} \geq c \mid H_0) = \alpha$
-(for an upper-tailed test). If the observed test statistic exceeds $c$, reject $H_0$.
+(for an upper-tailed test). If the observed test statistic exceeds $c$Reject $H_0$.
 
 ### 1.6 Interpreting the conclusion
 
 - "Reject $H_0$": there is sufficient evidence at the $\alpha$ significance level to support $H_1$.
 - "Do not reject $H_0$": there is **insufficient** evidence to reject $H_0$. This does **not** mean
-  $H_0$ is true.
+ $H_0$ is true.
 
 :::warning
 Common Pitfall
 "Accepting $H_0$" is not the same as "not rejecting $H_0$." We never prove $H_0$; we merely fail
-to find sufficient evidence against it. The conclusion should always be stated carefully.
+To find sufficient evidence against it. The conclusion should always be stated carefully.
 :::
 
 <hr />
@@ -73,10 +73,10 @@ to find sufficient evidence against it. The conclusion should always be stated c
 
 ### 2.1 Definitions
 
-| Decision       | $H_0$ true         | $H_0$ false        |
+| Decision | $H_0$ true | $H_0$ false |
 | -------------- | ------------------ | ------------------ |
-| Reject $H_0$   | Type I error       | Correct decision   |
-| Do not reject  | Correct decision   | Type II error      |
+| Reject $H_0$ | Type I error | Correct decision |
+| Do not reject | Correct decision | Type II error |
 
 **Type I error:** Rejecting $H_0$ when it is true (false positive).
 
@@ -95,15 +95,15 @@ $$\mathrm{Power} = 1 - \beta$$
 The power depends on:
 - The significance level $\alpha$ (increasing $\alpha$ increases power).
 - The sample size $n$ (increasing $n$ increases power).
-- The true value of the parameter (the further from $H_0$, the greater the power).
+- The true value of the parameter (the further from $H_0$The greater the power).
 
 ### 2.3 Worked example
 
 **Problem.** A machine produces bolts with mean length $50\;\mathrm{mm}$. The standard deviation is
 $0.5\;\mathrm{mm}$. A sample of 16 bolts has mean $50.18\;\mathrm{mm}$. Test at the 5% significance
-level whether the mean length has changed.
+Level whether the mean length has changed.
 
-$H_0: \mu = 50$, $H_1: \mu \neq 50$ (two-tailed).
+$H_0: \mu = 50$$H_1: \mu \neq 50$ (two-tailed).
 
 Under $H_0$: $\bar{X} \sim N(50, 0.5^2/16) = N(50, 0.015625)$.
 
@@ -117,8 +117,8 @@ Critical region: $\bar{X} \lt 49.755$ or $\bar{X} \gt 50.245$.
 
 Test statistic: $z = \dfrac{50.18 - 50}{0.125} = 1.44$.
 
-Since $1.44 \lt 1.96$, we do **not** reject $H_0$. There is insufficient evidence at the 5% level
-to conclude that the mean length has changed.
+Since $1.44 \lt 1.96$We do **not** reject $H_0$. There is insufficient evidence at the 5% level
+To conclude that the mean length has changed.
 
 ### 2.4 Finding the probability of Type II error
 
@@ -146,7 +146,7 @@ A **one-tailed test** is used when $H_1$ specifies a direction:
 - $H_1: \mu \lt \mu_0$ (lower-tailed): critical region in the lower tail.
 
 The entire significance level $\alpha$ is in one tail, making it easier to detect an effect in the
-specified direction.
+Specified direction.
 
 ### 3.2 Two-tailed tests
 
@@ -158,18 +158,18 @@ A **two-tailed test** is used when $H_1$ does not specify a direction:
 
 - Use a **two-tailed test** unless there is a strong prior reason to expect a specific direction.
 - A one-tailed test has greater power in the specified direction but cannot detect effects in the
-  opposite direction.
+ opposite direction.
 - The choice must be made **before** examining the data.
 
 ### 3.4 Critical values table
 
 For a standard normal test at significance level $\alpha$:
 
-| Test type    | $\alpha = 0.10$ | $\alpha = 0.05$ | $\alpha = 0.01$ |
+| Test type | $\alpha = 0.10$ | $\alpha = 0.05$ | $\alpha = 0.01$ |
 | ------------ | --------------- | --------------- | --------------- |
-| Two-tailed   | $\pm 1.645$     | $\pm 1.960$     | $\pm 2.576$     |
-| Upper-tailed | $1.282$         | $1.645$         | $2.326$         |
-| Lower-tailed | $-1.282$        | $-1.645$        | $-2.326$        |
+| Two-tailed | $\pm 1.645$ | $\pm 1.960$ | $\pm 2.576$ |
+| Upper-tailed | $1.282$ | $1.645$ | $2.326$ |
+| Lower-tailed | $-1.282$ | $-1.645$ | $-2.326$ |
 
 <hr />
 
@@ -181,14 +181,14 @@ To test whether a population proportion $p$ equals a specified value $p_0$:
 
 $$H_0: p = p_0, \qquad H_1: p \neq p_0\ (\mathrm{or}\ p \gt p_0\ \mathrm{or}\ p \lt p_0)$$
 
-Under $H_0$, if $X$ is the number of successes in $n$ trials, then $X \sim B(n, p_0)$.
+Under $H_0$If $X$ is the number of successes in $n$ trials, then $X \sim B(n, p_0)$.
 
 ### 4.2 Worked example: binomial test
 
 **Problem.** A coin is tossed 20 times and lands heads 15 times. Test at the 5% significance level
-whether the coin is biased.
+Whether the coin is biased.
 
-$H_0: p = 0.5$, $H_1: p \neq 0.5$ (two-tailed).
+$H_0: p = 0.5$$H_1: p \neq 0.5$ (two-tailed).
 
 Under $H_0$: $X \sim B(20, 0.5)$.
 
@@ -204,7 +204,7 @@ $P(X \leq 5) = 0.0207 \leq 0.025$. So $k = 5$ (critical region: $X \leq 5$).
 $P(X \geq 15) = P(X \leq 5) = 0.0207 \leq 0.025$. So $k = 15$ (critical region: $X \geq 15$).
 
 Since $X = 15$ falls in the critical region, we **reject** $H_0$. There is sufficient evidence at
-the 5% level to conclude the coin is biased.
+The 5% level to conclude the coin is biased.
 
 ### 4.3 Finding the actual significance level
 
@@ -215,10 +215,10 @@ $$\alpha_{\mathrm{actual}} = P(X \leq 5) + P(X \geq 15) = 2(0.0207) = 0.0414$$
 This is approximately 4.14%, which is the closest we can get to 5% with a discrete distribution.
 
 :::warning
-warning
+Warning
 For discrete distributions, the actual significance level may differ from the nominal level. The
-critical region is chosen so that $P(\mathrm{critical\ region} \mid H_0)$ does not exceed $\alpha$,
-and is as close as possible to $\alpha$.
+Critical region is chosen so that $P(\mathrm{critical\ region} \mid H_0)$ does not exceed $\alpha$
+And is as close as possible to $\alpha$.
 :::
 
 <hr />
@@ -228,7 +228,7 @@ and is as close as possible to $\alpha$.
 ### 5.1 Definition
 
 The **critical region** (or rejection region) is the set of values of the test statistic that lead
-to rejection of $H_0$. The **acceptance region** is its complement.
+To rejection of $H_0$. The **acceptance region** is its complement.
 
 ### 5.2 Finding the critical region
 
@@ -237,14 +237,14 @@ to rejection of $H_0$. The **acceptance region** is its complement.
 1. Identify the distribution of the test statistic under $H_0$.
 2. Determine whether the test is one-tailed or two-tailed.
 3. Find the smallest region containing the most extreme values whose total probability under $H_0$
-   does not exceed $\alpha$.
+ does not exceed $\alpha$.
 
 ### 5.3 Worked example: Poisson critical region
 
 **Problem.** A receptionist receives on average 2 calls per 5 minutes. Over a 5-minute period, she
-receives 7 calls. Test at the 5% level whether the rate has increased.
+Receives 7 calls. Test at the 5% level whether the rate has increased.
 
-$H_0: \lambda = 2$, $H_1: \lambda \gt 2$ (upper-tailed).
+$H_0: \lambda = 2$$H_1: \lambda \gt 2$ (upper-tailed).
 
 Under $H_0$: $X \sim \mathrm{Po}(2)$.
 
@@ -256,16 +256,16 @@ $P(X \geq 6) = 1 - P(X \leq 5) = 1 - 0.9835 = 0.0165 \leq 0.05$
 
 Critical region: $X \geq 6$. Actual significance level: $1.65\%$.
 
-Since $X = 7 \geq 6$, we **reject** $H_0$. There is sufficient evidence that the call rate has
-increased.
+Since $X = 7 \geq 6$We **reject** $H_0$. There is sufficient evidence that the call rate has
+Increased.
 
 ### 5.4 Worked example: normal critical region
 
 **Problem.** The masses of packets of biscuits are normally distributed with standard deviation
 $3\;\mathrm{g}$. A sample of 10 packets has mean mass $248\;\mathrm{g}$. Find the critical region
-for testing whether the mean mass is less than $250\;\mathrm{g}$ at the 1% significance level.
+For testing whether the mean mass is less than $250\;\mathrm{g}$ at the 1% significance level.
 
-$H_0: \mu = 250$, $H_1: \mu \lt 250$.
+$H_0: \mu = 250$$H_1: \mu \lt 250$.
 
 Under $H_0$: $\bar{X} \sim N(250, 3^2/10) = N(250, 0.9)$.
 
@@ -275,7 +275,7 @@ $c = 250 - 2.326\sqrt{0.9} = 250 - 2.208 = 247.79$
 
 Critical region: $\bar{X} \lt 247.79$.
 
-Since $\bar{x} = 248 \gt 247.79$, we do **not** reject $H_0$ at the 1% level.
+Since $\bar{x} = 248 \gt 247.79$We do **not** reject $H_0$ at the 1% level.
 
 <hr />
 
@@ -284,12 +284,12 @@ Since $\bar{x} = 248 \gt 247.79$, we do **not** reject $H_0$ at the 1% level.
 ### Problem 1
 
 A die is rolled 30 times and a six appears 9 times. Test at the 5% significance level whether the
-die is biased towards showing a six.
+Die is biased towards showing a six.
 
 <details>
 <summary>Solution</summary>
 
-$H_0: p = 1/6$, $H_1: p \gt 1/6$ (upper-tailed).
+$H_0: p = 1/6$$H_1: p \gt 1/6$ (upper-tailed).
 
 $X \sim B(30, 1/6)$.
 
@@ -302,20 +302,20 @@ $P(X \leq 8) = \displaystyle\sum_{r=0}^{8}\binom{30}{r}(1/6)^r(5/6)^{30-r} \appr
 $P(X \geq 9) \approx 0.0498 \leq 0.05$.
 
 Since $X = 9$ is in the critical region, reject $H_0$. Sufficient evidence the die is biased
-towards six.
+Towards six.
 
 </details>
 
 ### Problem 2
 
 A manufacturer claims that the mean lifetime of a component is 500 hours. A sample of 25 components
-has mean lifetime 490 hours with standard deviation 15 hours. Test the claim at the 5% significance
-level.
+Has mean lifetime 490 hours with standard deviation 15 hours. Test the claim at the 5% significance
+Level.
 
 <details>
 <summary>Solution</summary>
 
-$H_0: \mu = 500$, $H_1: \mu \neq 500$ (two-tailed).
+$H_0: \mu = 500$$H_1: \mu \neq 500$ (two-tailed).
 
 $\bar{X} \sim N(500, 15^2/25) = N(500, 9)$ approximately.
 
@@ -323,7 +323,7 @@ $z = \dfrac{490 - 500}{3} = -3.33$.
 
 Critical values: $\pm 1.96$.
 
-Since $|-3.33| = 3.33 \gt 1.96$, reject $H_0$. Sufficient evidence the mean lifetime differs from
+Since $|-3.33| = 3.33 \gt 1.96$Reject $H_0$. Sufficient evidence the mean lifetime differs from
 500 hours.
 
 </details>
@@ -332,12 +332,12 @@ Since $|-3.33| = 3.33 \gt 1.96$, reject $H_0$. Sufficient evidence the mean life
 
 The number of accidents per week at a factory is thought to follow a Poisson distribution with mean
 3. In a particular week, 8 accidents occur. Test at the 5% level whether the accident rate has
-increased.
+Increased.
 
 <details>
 <summary>Solution</summary>
 
-$H_0: \lambda = 3$, $H_1: \lambda \gt 3$.
+$H_0: \lambda = 3$$H_1: \lambda \gt 3$.
 
 $X \sim \mathrm{Po}(3)$.
 
@@ -345,16 +345,16 @@ $P(X \geq 7) = 1 - P(X \leq 6) \approx 1 - 0.9665 = 0.0335 \leq 0.05$.
 
 $P(X \geq 6) = 1 - P(X \leq 5) \approx 1 - 0.9161 = 0.0839 \gt 0.05$.
 
-Critical region: $X \geq 7$. Since $X = 8 \geq 7$, reject $H_0$. Sufficient evidence the rate
-has increased.
+Critical region: $X \geq 7$. Since $X = 8 \geq 7$Reject $H_0$. Sufficient evidence the rate
+Has increased.
 
 </details>
 
 ### Problem 4
 
 In a hypothesis test with $H_0: p = 0.4$ and $H_1: p \gt 0.4$ based on a sample of size 20,
-find: (a) the critical region at the 5% level; (b) the actual significance level; (c) the
-probability of a Type II error if the true $p = 0.6$.
+Find: (a) the critical region at the 5% level; (b) the actual significance level; (c) the
+Probability of a Type II error if the true $p = 0.6$.
 
 <details>
 <summary>Solution</summary>
@@ -374,3 +374,15 @@ Critical region: $X \geq 12$.
 $\beta = P(X \leq 11 \mid p = 0.6) \approx 0.4044$.
 
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

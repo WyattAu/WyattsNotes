@@ -13,15 +13,15 @@ slug: network-security
 
 ### Types of Threats
 
-| Threat             | Description                                                          |
+| Threat | Description |
 | ------------------ | -------------------------------------------------------------------- |
-| Malware            | Malicious software (viruses, worms, trojans, ransomware)             |
-| Phishing           | Fraudulent emails/messages tricking users into revealing credentials |
-| DDoS attack        | Overwhelming a server with traffic from multiple sources             |
-| Man-in-the-middle  | Attacker intercepts communication between two parties                |
-| SQL injection      | Inserting malicious SQL into input fields to manipulate databases    |
-| Brute force attack | Systematically trying all possible passwords/keys                    |
-| Social engineering | Manipulating people into divulging confidential information          |
+| Malware | Malicious software (viruses, worms, trojans, ransomware) |
+| Phishing | Fraudulent emails/messages tricking users into revealing credentials |
+| DDoS attack | Overwhelming a server with traffic from multiple sources |
+| Man-in-the-middle | Attacker intercepts communication between two parties |
+| SQL injection | Inserting malicious SQL into input fields to manipulate databases |
+| Brute force attack | Systematically trying all possible passwords/keys |
+| Social engineering | Manipulating people into divulging confidential information |
 
 ### The CIA Triad
 
@@ -41,25 +41,25 @@ The three core principles of information security:
 
 $$C = E_K(M), \quad M = D_K(C)$$
 
-where $M$ is the plaintext, $C$ is the ciphertext, $E$ is the encryption function, $D$ is the
-decryption function, and $K$ is the shared secret key.
+Where $M$ is the plaintext, $C$ is the ciphertext, $E$ is the encryption function, $D$ is the
+Decryption function, and $K$ is the shared secret key.
 
 ### AES (Advanced Encryption Standard)
 
 AES is the most widely used symmetric encryption algorithm.
 
-| Property   | Value                                    |
+| Property | Value |
 | ---------- | ---------------------------------------- |
-| Key sizes  | 128, 192, 256 bits                       |
-| Block size | 128 bits                                 |
-| Rounds     | 10 (128-bit), 12 (192-bit), 14 (256-bit) |
-| Type       | Substitution-permutation network         |
+| Key sizes | 128, 192, 256 bits |
+| Block size | 128 bits |
+| Rounds | 10 (128-bit), 12 (192-bit), 14 (256-bit) |
+| Type | Substitution-permutation network |
 
 ### Key Distribution Problem
 
 Symmetric encryption requires both parties to share the same secret key. Distributing this key
-securely is a fundamental challenge — if the key is intercepted during exchange, the encryption is
-compromised.
+Securely is a fundamental challenge — if the key is intercepted during exchange, the encryption is
+Compromised.
 
 <hr />
 
@@ -96,11 +96,11 @@ Public key: $(e, n)$. Private key: $(d, n)$.
 #### Correctness Proof
 
 **Theorem.** RSA decryption correctly recovers the original message: $(M^e)^d \equiv M \pmod{n}$ for
-all $M \in [0, n)$.
+All $M \in [0, n)$.
 
 **Proof.** We need to show $M^{ed} \equiv M \pmod{n}$.
 
-Since $ed \equiv 1 \pmod{\phi(n)}$, we have $ed = 1 + k\phi(n)$ for some integer $k$.
+Since $ed \equiv 1 \pmod{\phi(n)}$We have $ed = 1 + k\phi(n)$ for some integer $k$.
 
 **Case 1:** $\gcd(M, n) = 1$ (M is coprime to n).
 
@@ -109,12 +109,12 @@ By Euler's theorem: $M^{\phi(n)} \equiv 1 \pmod{n}$.
 Therefore:
 $M^{ed} = M^{1 + k\phi(n)} = M \cdot (M^{\phi(n)})^k \equiv M \cdot 1^k \equiv M \pmod{n}$. ✓
 
-**Case 2:** $\gcd(M, n) \neq 1$. Since $n = pq$, $M$ must be divisible by $p$ or $q$ (but not both,
-since $M \lt{} n = pq$).
+**Case 2:** $\gcd(M, n) \neq 1$. Since $n = pq$$M$ must be divisible by $p$ or $q$ (but not both,
+Since $M \lt{} n = pq$).
 
 Without loss of generality, let $M \equiv 0 \pmod{p}$. Then $M^{ed} \equiv 0 \equiv M \pmod{p}$. ✓
 
-For $q$: since $M \not\equiv 0 \pmod{q}$, $\gcd(M, q) = 1$. By Fermat's little theorem:
+For $q$: since $M \not\equiv 0 \pmod{q}$$\gcd(M, q) = 1$. By Fermat's little theorem:
 $M^{q-1} \equiv 1 \pmod{q}$. Since $\phi(n) = (p-1)(q-1)$:
 
 $$M^{ed} = M^{1 + k(p-1)(q-1)} = M \cdot (M^{q-1})^{k(p-1)} \equiv M \cdot 1^{k(p-1)} \equiv M \pmod{q}$$
@@ -125,12 +125,12 @@ By the Chinese Remainder Theorem: $M^{ed} \equiv M \pmod{n}$. ✓ $\square$
 
 ### Key Sizes and Security
 
-| Key size  | Security level | Notes                |
+| Key size | Security level | Notes |
 | --------- | -------------- | -------------------- |
-| 1024 bits | ~80 bits       | Insecure, deprecated |
-| 2048 bits | ~112 bits      | Minimum recommended  |
-| 3072 bits | ~128 bits      | High security        |
-| 4096 bits | ~150 bits      | Very high security   |
+| 1024 bits | ~80 bits | Insecure, deprecated |
+| 2048 bits | ~112 bits | Minimum recommended |
+| 3072 bits | ~128 bits | High security |
+| 4096 bits | ~150 bits | Very high security |
 
 <hr />
 
@@ -148,16 +148,16 @@ A **digital signature** provides:
 
 **Signing:** $$S = D_{\mathrm{priv}}(H(M))$$
 
-where $H$ is a hash function. The sender hashes the message and "decrypts" the hash with their
-private key.
+Where $H$ is a hash function. The sender hashes the message and "decrypts" the hash with their
+Private key.
 
 **Verification:** $$H(M) \stackrel{?}{=} E_{\mathrm{pub}}(S)$$
 
 The receiver encrypts the signature with the sender's public key and compares it to the hash of the
-received message.
+Received message.
 
 **Correctness:** Since only the sender knows the private key, only they could have produced $S$. If
-the message was altered, $H(M)$ would differ, and verification would fail.
+The message was altered, $H(M)$ would differ, and verification would fail.
 
 <hr />
 
@@ -166,26 +166,26 @@ the message was altered, $H(M)$ would differ, and verification would fail.
 ### Definition
 
 A **cryptographic hash function** $H: \{0,1\}^* \to \{0,1\}^n$ maps arbitrary-length input to a
-fixed-length output (hash/digest).
+Fixed-length output (hash/digest).
 
 ### Properties
 
-1. **Pre-image resistance:** Given $h$, it is computationally infeasible to find $M$ such that
-   $H(M) = h$
-2. **Second pre-image resistance:** Given $M_1$, it is infeasible to find $M_2 \neq M_1$ with
-   $H(M_1) = H(M_2)$
+1. **Pre-image resistance:** Given $h$It is computationally infeasible to find $M$ such that
+ $H(M) = h$
+2. **Second pre-image resistance:** Given $M_1$It is infeasible to find $M_2 \neq M_1$ with
+ $H(M_1) = H(M_2)$
 3. **Collision resistance:** It is infeasible to find any pair $M_1 \neq M_2$ with $H(M_1) = H(M_2)$
 4. **Avalanche effect:** A small change in input produces a completely different hash
 5. **Deterministic:** Same input always produces the same output
 
 ### Common Hash Functions
 
-| Algorithm | Output size | Status                    |
+| Algorithm | Output size | Status |
 | --------- | ----------- | ------------------------- |
-| MD5       | 128 bits    | Broken (collisions found) |
-| SHA-1     | 160 bits    | Broken (collision attack) |
-| SHA-256   | 256 bits    | Secure                    |
-| SHA-512   | 512 bits    | Secure                    |
+| MD5 | 128 bits | Broken (collisions found) |
+| SHA-1 | 160 bits | Broken (collision attack) |
+| SHA-256 | 256 bits | Secure |
+| SHA-512 | 512 bits | Secure |
 
 ### Applications
 
@@ -197,13 +197,13 @@ fixed-length output (hash/digest).
 ### Password Hashing
 
 **Why not just hash?** Simple hashing is vulnerable to **rainbow tables** (precomputed hash-lookup
-tables).
+Tables).
 
 **Salting:** Add a random string (salt) before hashing: $H(\mathrm{salt} + \mathrm{password})$. Each
-user gets a unique salt, making rainbow tables useless.
+User gets a unique salt, making rainbow tables useless.
 
 **Key stretching:** Use slow hash functions (bcrypt, PBKDF2, Argon2) that deliberately take many
-iterations, making brute-force attacks impractical.
+Iterations, making brute-force attacks impractical.
 
 <hr />
 
@@ -212,26 +212,26 @@ iterations, making brute-force attacks impractical.
 ### Definition
 
 A **firewall** is a network security system that monitors and controls incoming and outgoing network
-traffic based on predetermined security rules.
+Traffic based on predetermined security rules.
 
 ### Types
 
-| Type              | How it works                                  | Layer            |
+| Type | How it works | Layer |
 | ----------------- | --------------------------------------------- | ---------------- |
-| Packet filtering  | Examines source/destination IP and port       | Network (L3)     |
-| Stateful          | Tracks connection state                       | Transport (L4)   |
-| Application-layer | Inspects actual content                       | Application (L7) |
-| Next-generation   | Combines all above + IDS/IPS, deep inspection | All layers       |
+| Packet filtering | Examines source/destination IP and port | Network (L3) |
+| Stateful | Tracks connection state | Transport (L4) |
+| Application-layer | Inspects actual content | Application (L7) |
+| Next-generation | Combines all above + IDS/IPS, deep inspection | All layers |
 
 :::info
-info
+Info
 
 - **AQA** requires symmetric encryption (AES), asymmetric encryption (RSA), digital signatures,
-  SSL/TLS, firewalls, and malware types
+ SSL/TLS, firewalls, and malware types
 - **CIE (9618)** covers encryption methods, network security protocols, and threats; may include
-  specific protocol details
+ specific protocol details
 - **OCR (A)** requires understanding of encryption, digital certificates, authentication methods,
-  and network security protocols
+ and network security protocols
 - **Edexcel** covers network security fundamentals including encryption and firewalls
 :::
 
@@ -239,8 +239,8 @@ info
 
 ## Problem Set
 
-**Problem 1.** Given RSA parameters $p = 5$, $q = 11$, $e = 3$, encrypt the message $M = 7$ and then
-decrypt it. Show all steps.
+**Problem 1.** Given RSA parameters $p = 5$$q = 11$$e = 3$Encrypt the message $M = 7$ and then
+Decrypt it. Show all steps.
 
 <details>
 <summary>Answer</summary>
@@ -279,22 +279,22 @@ Decrypted message: 7. ✓
 <summary>Answer</summary>
 
 Symmetric encryption (e.g., AES) uses simple operations: substitution boxes (S-boxes), bit
-permutations, and XOR — all of which are fast hardware operations. AES-128 requires only 10 rounds
-of these operations.
+Permutations, and XOR — all of which are fast hardware operations. AES-128 requires only 10 rounds
+Of these operations.
 
 Asymmetric encryption (e.g., RSA) relies on computationally expensive mathematical operations:
-modular exponentiation on very large numbers (hundreds of digits). RSA encryption requires computing
+Modular exponentiation on very large numbers (hundreds of digits). RSA encryption requires computing
 $M^e \bmod n$ where $n$ is at least 2048 bits (617 decimal digits). Modular exponentiation of such
-large numbers is orders of magnitude slower than AES.
+Large numbers is orders of magnitude slower than AES.
 
 Typical performance: AES processes ~1 GB/s on modern hardware. RSA-2048 processes ~1,000
-operations/second. AES is roughly 1000× faster.
+Operations/second. AES is roughly 1000× faster.
 
 </details>
 
 **Problem 3.** A user's password is stored as
 `SHA-256("password123") = ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f`. Explain
-why this is insecure and how to improve it.
+Why this is insecure and how to improve it.
 
 <details>
 <summary>Answer</summary>
@@ -309,7 +309,7 @@ why this is insecure and how to improve it.
 
 1. **Use a unique salt per user:** Store `salt` and `bcrypt(salt + password)` instead
 2. **Use a slow hash function:** bcrypt, PBKDF2, or Argon2 are designed to be slow (configurable
-   cost parameter)
+ cost parameter)
 3. **Use key stretching:** Multiple iterations of the hash function (PBKDF2 does this)
 
 Example secure storage: `argon2id(salt="random_16_bytes", password, iterations=3, memory=64MB)`
@@ -332,11 +332,11 @@ Example secure storage: `argon2id(salt="random_16_bytes", password, iterations=3
 **How HTTPS prevents MITM:**
 
 1. **TLS handshake:** The server presents an SSL certificate signed by a trusted Certificate
-   Authority (CA)
+ Authority (CA)
 2. **Certificate verification:** The client checks that the certificate is valid, signed by a
-   trusted CA, and matches the domain
+ trusted CA, and matches the domain
 3. **Key exchange:** The client and server establish a shared secret using asymmetric encryption
-   (Diffie-Hellman or RSA), without ever sending the secret over the network
+ (Diffie-Hellman or RSA), without ever sending the secret over the network
 4. **Encryption:** All subsequent communication is encrypted with the shared secret
 
 Even if the attacker intercepts the traffic, they cannot:
@@ -351,20 +351,20 @@ Even if the attacker intercepts the traffic, they cannot:
 <details>
 <summary>Answer</summary>
 
-| Malware | Reproduction                 | Needs host                   | User action required     | Purpose              |
+| Malware | Reproduction | Needs host | User action required | Purpose |
 | ------- | ---------------------------- | ---------------------------- | ------------------------ | -------------------- |
-| Virus   | Attaches to files            | Yes (infects other files)    | Yes (open infected file) | Various              |
-| Worm    | Self-replicates over network | No                           | No                       | Spread, payload      |
-| Trojan  | Does not replicate           | No (disguised as legitimate) | Yes (install it)         | Data theft, backdoor |
+| Virus | Attaches to files | Yes (infects other files) | Yes (open infected file) | Various |
+| Worm | Self-replicates over network | No | No | Spread, payload |
+| Trojan | Does not replicate | No (disguised as legitimate) | Yes (install it) | Data theft, backdoor |
 
 **Virus:** Attaches to legitimate programs and spreads when the infected program is run. Can corrupt
-or modify files.
+Or modify files.
 
 **Worm:** Self-replicating malware that spreads over networks without user interaction. Example: the
 WannaCry ransomware worm spread via SMB.
 
 **Trojan:** Malware disguised as legitimate software. Does not replicate. Creates backdoors for
-attackers. Named after the Trojan Horse of Greek mythology.
+Attackers. Named after the Trojan Horse of Greek mythology.
 
 </details>
 
@@ -374,7 +374,7 @@ attackers. Named after the Trojan Horse of Greek mythology.
 <summary>Answer</summary>
 
 A **Certificate Authority (CA)** is a trusted entity that issues **digital certificates** binding a
-public key to an identity (domain name, organisation, person).
+Public key to an identity (domain name, organisation, person).
 
 **Process:**
 
@@ -385,8 +385,8 @@ public key to an identity (domain name, organisation, person).
 5. The browser verifies the signature using the CA's public key (pre-installed in the browser)
 
 **Why important:** Without CAs, an attacker could create a certificate for any domain, and browsers
-would have no way to distinguish legitimate certificates from fraudulent ones. CAs provide the trust
-infrastructure that makes HTTPS work.
+Would have no way to distinguish legitimate certificates from fraudulent ones. CAs provide the trust
+Infrastructure that makes HTTPS work.
 
 </details>
 
@@ -404,7 +404,7 @@ This demonstrates:
 
 1. **Determinism:** The same input always produces the same output
 2. **Avalanche effect:** Changing a single character ("a" vs "") produces a completely different
-   hash — no similarity between the two outputs
+ hash — no similarity between the two outputs
 3. **Fixed output size:** Both hashes are 256 bits (64 hex characters), regardless of input length
 </details>
 
@@ -414,7 +414,7 @@ This demonstrates:
 <summary>Answer</summary>
 
 **SQL injection:** An attacker inserts malicious SQL code into an input field that is concatenated
-into a database query.
+Into a database query.
 
 **Vulnerable code:**
 
@@ -433,7 +433,7 @@ This always evaluates to true, granting access without valid credentials.
 **Prevention:**
 
 1. **Parameterised queries (prepared statements):** Use placeholders instead of string
-   concatenation:
+ concatenation:
 
 ```python
    cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (username, password))
@@ -460,25 +460,25 @@ A company web server (IP `203.0.113.10`) needs the following access:
 - Allow SSH only from the admin network (`10.0.0.0/24`)
 - Deny all other inbound traffic
 
-| Rule | Direction | Source      | Destination  | Port | Protocol | Action |
+| Rule | Direction | Source | Destination | Port | Protocol | Action |
 | ---- | --------- | ----------- | ------------ | ---- | -------- | ------ |
-| 1    | Inbound   | Any         | 203.0.113.10 | 80   | TCP      | Allow  |
-| 2    | Inbound   | Any         | 203.0.113.10 | 443  | TCP      | Allow  |
-| 3    | Inbound   | 10.0.0.0/24 | 203.0.113.10 | 22   | TCP      | Allow  |
-| 4    | Inbound   | Any         | Any          | Any  | Any      | Deny   |
+| 1 | Inbound | Any | 203.0.113.10 | 80 | TCP | Allow |
+| 2 | Inbound | Any | 203.0.113.10 | 443 | TCP | Allow |
+| 3 | Inbound | 10.0.0.0/24 | 203.0.113.10 | 22 | TCP | Allow |
+| 4 | Inbound | Any | Any | Any | Any | Deny |
 
 Rule 4 is the **default deny** rule — it blocks everything not explicitly allowed. Rules are
-processed top-to-bottom, so the specific rules (1-3) are evaluated before the catch-all deny.
+Processed top-to-bottom, so the specific rules (1-3) are evaluated before the catch-all deny.
 
 ### Worked Example: Symmetric vs Asymmetric Encryption in HTTPS
 
 HTTPS uses **both** symmetric and asymmetric encryption:
 
 1. **Asymmetric encryption** (RSA or ECDHE) is used during the TLS handshake to establish a shared
-   secret. This is slow but solves the key distribution problem — the client and server never
-   transmit the secret directly.
+ secret. This is slow but solves the key distribution problem — the client and server never
+ transmit the secret directly.
 2. **Symmetric encryption** (AES-256-GCM) is used for all subsequent data transfer. This is fast and
-   provides confidentiality and integrity.
+ provides confidentiality and integrity.
 
 The asymmetric step happens once per session. The symmetric step happens for every packet.
 
@@ -487,15 +487,15 @@ The asymmetric step happens once per session. The symmetric step happens for eve
 WPA2-Personal (PSK) uses a pre-shared key:
 
 1. **4-way handshake:** The access point and client prove they both know the PSK without
-   transmitting it
+ transmitting it
 2. **Key derivation:** The PSK is combined with the network name (SSID) using PBKDF2 to derive a
-   Pairwise Master Key (PMK)
+ Pairwise Master Key (PMK)
 3. **Session key:** The PMK is used to generate a unique Pairwise Transient Key (PTK) for each
-   session
+ session
 4. **Encryption:** Data is encrypted with AES-CCMP using the PTK
 
 The PSK is never transmitted over the air. An attacker capturing the handshake can attempt an
-offline brute-force attack against the PSK.
+Offline brute-force attack against the PSK.
 
 <hr />
 
@@ -503,17 +503,17 @@ offline brute-force attack against the PSK.
 
 ### Types of SQL Injection
 
-| Type               | Description                                         | Example                           |
+| Type | Description | Example |
 | ------------------ | --------------------------------------------------- | --------------------------------- |
-| Classic (in-band)  | Attacker sees results directly in the application   | `' OR '1'='1`                     |
-| Blind (boolean)    | Attacker infers results from true/false responses   | `' AND 1=1 --` vs `' AND 1=2 --`  |
-| Blind (time-based) | Attacker infers results from response delays        | `'; WAITFOR DELAY '0:0:5' --`     |
-| Out-of-band        | Attacker triggers data exfiltration via DNS or HTTP | `' UNION SELECT ... INTO OUTFILE` |
+| Classic (in-band) | Attacker sees results directly in the application | `' OR '1'='1` |
+| Blind (boolean) | Attacker infers results from true/false responses | `' AND 1=1 --` vs `' AND 1=2 --` |
+| Blind (time-based) | Attacker infers results from response delays | `'; WAITFOR DELAY '0:0:5' --` |
+| Out-of-band | Attacker triggers data exfiltration via DNS or HTTP | `' UNION SELECT ... INTO OUTFILE` |
 
 ### Defence in Depth
 
 1. **Parameterised queries:** The primary defence. The database treats parameters as data, never as
-   executable SQL.
+ executable SQL.
 
 ```python
 cursor.execute(
@@ -522,49 +522,49 @@ cursor.execute(
 )
 ```
 
-2. **Input validation:** Reject characters that have no legitimate purpose (e.g., `;`, `'`, `--`,
-   `/*`)
+2. **Input validation:** Reject characters that have no legitimate purpose (e.g., `;``'``--`
+ `/*`)
 
 3. **Least privilege:** The application's database account should only have permissions for the
-   operations it needs (SELECT, INSERT — not DROP, ALTER)
+ operations it needs (SELECT, INSERT — not DROP, ALTER)
 
 4. **Stored procedures:** Pre-compiled SQL that accepts parameters, preventing injection at the
-   database layer
+ database layer
 
 5. **Web Application Firewall (WAF):** A secondary defence that inspects HTTP requests for known
-   injection patterns
+ injection patterns
 
 <hr />
 
 ## 9. DDoS Attack Types
 
-| Attack type       | Layer            | Description                                                                                        |
+| Attack type | Layer | Description |
 | ----------------- | ---------------- | -------------------------------------------------------------------------------------------------- |
-| SYN flood         | L4 (Transport)   | Sends SYN packets without completing the handshake, exhausting server connection table             |
-| UDP flood         | L4 (Transport)   | Sends massive UDP traffic to random ports, forcing the server to send ICMP responses               |
-| ICMP flood        | L3 (Network)     | Overwhelms the target with ping requests                                                           |
-| HTTP flood        | L7 (Application) | Sends legitimate-looking HTTP requests that are computationally expensive                          |
-| DNS amplification | L3/L7            | Sends small queries to open DNS resolvers with the victim's spoofed IP, causing a massive response |
+| SYN flood | L4 (Transport) | Sends SYN packets without completing the handshake, exhausting server connection table |
+| UDP flood | L4 (Transport) | Sends massive UDP traffic to random ports, forcing the server to send ICMP responses |
+| ICMP flood | L3 (Network) | Overwhelms the target with ping requests |
+| HTTP flood | L7 (Application) | Sends legitimate-looking HTTP requests that are computationally expensive |
+| DNS amplification | L3/L7 | Sends small queries to open DNS resolvers with the victim's spoofed IP, causing a massive response |
 
 **SYN flood** exploits the TCP handshake: the server allocates resources for each half-open
-connection. When the table fills, legitimate connections are dropped. **Mitigation:** SYN cookies —
-the server encodes state in the SYN-ACK without allocating memory until the ACK is received.
+Connection. When the table fills, legitimate connections are dropped. **Mitigation:** SYN cookies —
+The server encodes state in the SYN-ACK without allocating memory until the ACK is received.
 
 **DNS amplification** exploits the large response-to-request ratio of DNS queries. A 60-byte request
-can generate a 4000-byte response, providing a ~66x amplification factor.
+Can generate a 4000-byte response, providing a ~66x amplification factor.
 
 <hr />
 
 ## 10. Common Pitfalls
 
-| Pitfall                                  | Explanation                                                                              | Correct approach                                        |
+| Pitfall | Explanation | Correct approach |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| Using MD5 or SHA-1 for passwords         | Fast hashes allow billions of guesses per second                                         | Use bcrypt, PBKDF2, or Argon2                           |
-| Relying on encryption alone for security | Encryption does not verify identity                                                      | Combine with authentication and integrity checks        |
-| Writing your own crypto                  | Custom algorithms are almost always broken                                               | Use well-vetted libraries (OpenSSL, libsodium)          |
-| Storing passwords in plaintext           | Any database breach exposes all passwords                                                | Always hash and salt passwords                          |
-| Confusing hashing with encryption        | Hashes are one-way; encryption is reversible                                             | Hash passwords, encrypt data that needs to be retrieved |
-| Firewall rules in wrong order            | Rules are evaluated top-to-bottom; a broad allow before a specific deny defeats the deny | Place specific rules first, default deny last           |
+| Using MD5 or SHA-1 for passwords | Fast hashes allow billions of guesses per second | Use bcrypt, PBKDF2, or Argon2 |
+| Relying on encryption alone for security | Encryption does not verify identity | Combine with authentication and integrity checks |
+| Writing your own crypto | Custom algorithms are almost always broken | Use well-vetted libraries (OpenSSL, libsodium) |
+| Storing passwords in plaintext | Any database breach exposes all passwords | Always hash and salt passwords |
+| Confusing hashing with encryption | Hashes are one-way; encryption is reversible | Hash passwords, encrypt data that needs to be retrieved |
+| Firewall rules in wrong order | Rules are evaluated top-to-bottom; a broad allow before a specific deny defeats the deny | Place specific rules first, default deny last |
 
 <hr />
 
@@ -573,19 +573,19 @@ can generate a 4000-byte response, providing a ~66x amplification factor.
 **Problem 1.** A firewall has the following rules in order. Determine whether a TCP packet from
 `10.0.0.5` to `192.168.1.10` on port 80 is allowed or denied.
 
-| Rule | Source      | Destination  | Port | Action |
+| Rule | Source | Destination | Port | Action |
 | ---- | ----------- | ------------ | ---- | ------ |
-| 1    | 10.0.0.0/24 | 192.168.1.10 | 22   | Allow  |
-| 2    | Any         | 192.168.1.10 | 80   | Allow  |
-| 3    | Any         | Any          | Any  | Deny   |
+| 1 | 10.0.0.0/24 | 192.168.1.10 | 22 | Allow |
+| 2 | Any | 192.168.1.10 | 80 | Allow |
+| 3 | Any | Any | Any | Deny |
 
 <details>
 <summary>Answer</summary>
 
 Rule 1: Source matches `10.0.0.0/24` (yes, `10.0.0.5` is in this range), destination matches
-`192.168.1.10`, but port 80 does not match port 22. Rule 1 does not apply.
+`192.168.1.10`But port 80 does not match port 22. Rule 1 does not apply.
 
-Rule 2: Source is "Any" (matches), destination matches `192.168.1.10`, port 80 matches port 80. Rule
+Rule 2: Source is "Any" (matches), destination matches `192.168.1.10`Port 80 matches port 80. Rule
 2 applies — **Allow**.
 
 The packet is allowed by Rule 2.
@@ -599,77 +599,81 @@ The packet is allowed by Rule 2.
 
 **SYN flood:** The attacker sends a large volume of SYN packets with spoofed source IP addresses.
 The server responds with SYN-ACK to each, allocates memory for the half-open connection, and waits
-for the ACK that never arrives (because the source IP is spoofed). The server's connection table
-fills up, preventing legitimate connections.
+For the ACK that never arrives (because the source IP is spoofed). The server's connection table
+Fills up, preventing legitimate connections.
 
 **SYN cookies mitigation:** Instead of allocating state for each half-open connection, the server
-encodes the connection state (a hash of source IP, source port, destination IP, destination port,
-and a secret) into the initial sequence number of the SYN-ACK. When the ACK arrives, the server
-recomputes the hash from the packet headers and verifies it matches. Only if the ACK is valid does
-the server allocate memory for the connection. This eliminates the resource exhaustion problem.
+Encodes the connection state (a hash of source IP, source port, destination IP, destination port,
+And a secret) into the initial sequence number of the SYN-ACK. When the ACK arrives, the server
+Recomputes the hash from the packet headers and verifies it matches. Only if the ACK is valid does
+The server allocate memory for the connection. This eliminates the resource exhaustion problem.
 
 </details>
 
 **Problem 3.** A database stores user passwords as unsalted SHA-256 hashes. An attacker obtains the
-database. Explain two attacks the attacker can use and how salting prevents each.
+Database. Explain two attacks the attacker can use and how salting prevents each.
 
 <details>
 <summary>Answer</summary>
 
 **Attack 1: Rainbow table attack.** The attacker uses a precomputed table mapping common passwords
-to their SHA-256 hashes. They look up each stored hash in the table to find the original password.
+To their SHA-256 hashes. They look up each stored hash in the table to find the original password.
 
 **How salting prevents it:** A unique random salt is added to each password before hashing:
 `SHA-256(salt + password)`. The attacker would need a separate rainbow table for every possible
-salt, which is computationally infeasible.
+Salt, which is computationally infeasible.
 
 **Attack 2: Dictionary attack.** The attacker hashes a list of common passwords and compares each
-hash to the stored values. Identical passwords produce identical hashes, so cracking one reveals all
-users with the same password.
+Hash to the stored values. Identical passwords produce identical hashes, so cracking one reveals all
+Users with the same password.
 
 **How salting prevents it:** With unique salts, identical passwords produce different hashes. The
-attacker must crack each hash independently, even if multiple users have the same password.
+Attacker must crack each hash independently, even if multiple users have the same password.
 
 </details>
 
 **Problem 4.** Explain why symmetric encryption alone is insufficient for secure communication over
-the internet, and describe how asymmetric encryption solves this problem.
+The internet, and describe how asymmetric encryption solves this problem.
 
 <details>
 <summary>Answer</summary>
 
 Symmetric encryption requires both parties to share the same secret key. Sending this key over the
-internet exposes it to interception — a chicken-and-egg problem: you need a secure channel to
-establish the key, but you need the key to create a secure channel.
+Internet exposes it to interception — a chicken-and-egg problem: you need a secure channel to
+Establish the key, but you need the key to create a secure channel.
 
 Asymmetric encryption solves this because the public key can be transmitted openly. The sender
-encrypts the symmetric session key with the receiver's public key. Only the receiver's private key
-can decrypt it. This is how TLS works: the asymmetric handshake establishes a shared secret, and all
-subsequent data uses fast symmetric encryption.
+Encrypts the symmetric session key with the receiver's public key. Only the receiver's private key
+Can decrypt it. This is how TLS works: the asymmetric handshake establishes a shared secret, and all
+Subsequent data uses fast symmetric encryption.
 
 Without asymmetric encryption, there would be no practical way to establish secure communication
-between parties who have never met in person.
+Between parties who have never met in person.
 
 </details>
 
 **Problem 5.** Describe three principles of defence in depth and explain how each contributes to
-network security.
+Network security.
 
 <details>
 <summary>Answer</summary>
 
 1. **Multiple layers of security:** No single defence is perfect. Using a firewall, intrusion
-   detection system, encryption, and access control together means that if one layer fails, the
-   others still provide protection. Example: even if a firewall is misconfigured, encrypted data
-   prevents an attacker from reading intercepted traffic.
+ detection system, encryption, and access control together means that if one layer fails, the
+ others still provide protection. Example: even if a firewall is misconfigured, encrypted data
+ prevents an attacker from reading intercepted traffic.
 
 2. **Least privilege:** Users and systems should only have the minimum permissions needed for their
-   role. If an account is compromised, the attacker's access is limited. Example: a web
-   application's database account should have SELECT and INSERT permissions but not DROP TABLE.
+ role. If an account is compromised, the attacker's access is limited. Example: a web
+ application's database account should have SELECT and INSERT permissions but not DROP TABLE.
 
 3. **Fail-safe defaults:** Systems should default to the most secure configuration. If a rule or
-configuration is missing, the system should deny access rather than allow it. Example: a firewall's
-final rule should be "deny all" — anything not explicitly permitted is blocked.
+Configuration is missing, the system should deny access rather than allow it. Example: a firewall's
+Final rule should be "deny all" — anything not explicitly permitted is blocked.
 </details>
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

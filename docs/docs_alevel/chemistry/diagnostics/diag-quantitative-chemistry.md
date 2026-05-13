@@ -70,11 +70,11 @@ A student collects $0.154\,\text{g}$ of an unknown gas in a gas syringe at a tem
 
 (a) Calculate the molar mass of the gas. ($R = 8.31\,\text{J K}^{-1}\text{ mol}^{-1}$)
 
-(b) The gas is known to be one of: $\text{N}_2$, $\text{O}_2$, $\text{CO}$, $\text{NO}_2$, or $\text{C}_3\text{H}_8$. Identify the gas.
+(b) The gas is known to be one of: $\text{N}_2$$\text{O}_2$$\text{CO}$$\text{NO}_2$Or $\text{C}_3\text{H}_8$. Identify the gas.
 
 **Solution:**
 
-(a) Using $pV = nRT$, ensuring consistent SI units:
+(a) Using $pV = nRT$Ensuring consistent SI units:
 
 - $p = 98.5\,\text{kPa} = 98500\,\text{Pa}$
 - $V = 72.0\,\text{cm}^3 = 72.0 \times 10^{-6}\,\text{m}^3 = 7.20 \times 10^{-5}\,\text{m}^3$
@@ -126,7 +126,7 @@ $$\text{Atom economy} = \frac{46.0}{46.0 + 98.1} \times 100 = \frac{46.0}{144.1}
 
 Note: The low atom economy is because $\text{H}_2\text{SO}_4$ is regenerated (it appears on both sides), so in practice the $\text{H}_2\text{SO}_4$ acts as a catalyst and is recycled, making the effective atom economy much higher in industrial processes.
 
-(c) $M_r(\text{C}_2\text{H}_4) = 28.0$, $M_r(\text{C}_2\text{H}_5\text{OH}) = 46.0$
+(c) $M_r(\text{C}_2\text{H}_4) = 28.0$$M_r(\text{C}_2\text{H}_5\text{OH}) = 46.0$
 
 Theoretical mass of ethanol from $28.0\,\text{kg}$ ethene (1:1 stoichiometry):
 
@@ -142,7 +142,7 @@ $$m_{\text{actual}} = 46.0 \times 0.855 = 39.3\,\text{kg}$$
 
 **Question:**
 
-$0.480\,\text{g}$ of a hydrocarbon (containing only carbon and hydrogen) is completely burned in oxygen. The products are passed through concentrated $\text{H}_2\text{SO}_4$, which increases in mass by $0.720\,\text{g}$, and then through limewater ($\text{Ca(OH)}_2$ solution), which produces $2.20\,\text{g}$ of white precipitate ($\text{CaCO}_3$).
+$0.480\,\text{g}$ of a hydrocarbon (containing only carbon and hydrogen) is completely burned in oxygen. The products are passed through concentrated $\text{H}_2\text{SO}_4$Which increases in mass by $0.720\,\text{g}$And then through limewater ($\text{Ca(OH)}_2$ solution), which produces $2.20\,\text{g}$ of white precipitate ($\text{CaCO}_3$).
 
 (a) Calculate the empirical formula of the hydrocarbon.
 
@@ -152,13 +152,13 @@ $0.480\,\text{g}$ of a hydrocarbon (containing only carbon and hydrogen) is comp
 
 **Solution:**
 
-(a) All hydrogen in the hydrocarbon becomes $\text{H}_2\text{O}$, absorbed by $\text{H}_2\text{SO}_4$:
+(a) All hydrogen in the hydrocarbon becomes $\text{H}_2\text{O}$Absorbed by $\text{H}_2\text{SO}_4$:
 
 $$m(\text{H}_2\text{O}) = 0.720\,\text{g}$$
 $$n(\text{H}_2\text{O}) = \frac{0.720}{18.0} = 0.0400\,\text{mol}$$
 $$n(\text{H}) = 2 \times 0.0400 = 0.0800\,\text{mol}$$
 
-All carbon in the hydrocarbon becomes $\text{CO}_2$, which reacts with limewater:
+All carbon in the hydrocarbon becomes $\text{CO}_2$Which reacts with limewater:
 
 $$\text{Ca(OH)}_2 + \text{CO}_2 \to \text{CaCO}_3 + \text{H}_2\text{O}$$
 
@@ -167,7 +167,7 @@ $$n(\text{C}) = n(\text{CaCO}_3) = 0.0220\,\text{mol}$$
 
 Ratio C : H = $0.0220 : 0.0800 = 1 : 3.64$.
 
-Multiplying to find the simplest integer ratio: $0.0220 : 0.0800 = 5 : 18.2$. The ratio is approximately $5 : 18$, giving an empirical formula of **$\text{C}_5\text{H}_{18}$**. However, this is not a standard hydrocarbon formula (alkanes follow $\text{C}_n\text{H}_{2n+2}$, so $\text{C}_5\text{H}_{12}$ would be the alkane with 5 carbons). The discrepancy is within expected experimental rounding error.
+Multiplying to find the simplest integer ratio: $0.0220 : 0.0800 = 5 : 18.2$. The ratio is approximately $5 : 18$Giving an empirical formula of **$\text{C}_5\text{H}_{18}$**. However, this is not a standard hydrocarbon formula (alkanes follow $\text{C}_n\text{H}_{2n+2}$So $\text{C}_5\text{H}_{12}$ would be the alkane with 5 carbons). The discrepancy is within expected experimental rounding error.
 
 (b) Using $pV = nRT$:
 
@@ -175,7 +175,7 @@ $$n = \frac◆LB◆1.01 \times 10^5 \times 49.5 \times 10^{-6}◆RB◆◆LB◆8.
 
 $$M = \frac◆LB◆0.120◆RB◆◆LB◆1.613 \times 10^{-3}◆RB◆ = 74.4\,\text{g mol}^{-1}$$
 
-The measured molar mass of $74.4\,\text{g mol}^{-1}$ is closest to **$\text{C}_5\text{H}_{12}$** (pentane, $M_r = 72.1\,\text{g mol}^{-1}$). Comparing with nearby hydrocarbons: $\text{C}_4\text{H}_{10} = 58$, $\text{C}_5\text{H}_{12} = 72$, $\text{C}_6\text{H}_{14} = 86$. The molecular formula is **$\text{C}_5\text{H}_{12}$** (pentane). The small discrepancy ($74.4$ vs $72.1$) arises from rounding in the experimental data.
+The measured molar mass of $74.4\,\text{g mol}^{-1}$ is closest to **$\text{C}_5\text{H}_{12}$** (pentane, $M_r = 72.1\,\text{g mol}^{-1}$). Comparing with nearby hydrocarbons: $\text{C}_4\text{H}_{10} = 58$$\text{C}_5\text{H}_{12} = 72$$\text{C}_6\text{H}_{14} = 86$. The molecular formula is **$\text{C}_5\text{H}_{12}$** (pentane). The small discrepancy ($74.4$ vs $72.1$) arises from rounding in the experimental data.
 
 (c) Two structural isomers of $\text{C}_5\text{H}_{12}$:
 
@@ -193,7 +193,7 @@ $5.00\,\text{g}$ of hydrated barium chloride ($\text{BaCl}_2 \cdot x\text{H}_2\t
 
 (a) Determine the value of $x$ in the formula $\text{BaCl}_2 \cdot x\text{H}_2\text{O}$.
 
-(b) The enthalpy of solution of anhydrous $\text{BaCl}_2$ is $-13.2\,\text{kJ mol}^{-1}$, while the enthalpy of solution of $\text{BaCl}_2 \cdot 2\text{H}_2\text{O}$ is $+8.8\,\text{kJ mol}^{-1}$. Use a Hess's law cycle to calculate the enthalpy change for the reaction:
+(b) The enthalpy of solution of anhydrous $\text{BaCl}_2$ is $-13.2\,\text{kJ mol}^{-1}$While the enthalpy of solution of $\text{BaCl}_2 \cdot 2\text{H}_2\text{O}$ is $+8.8\,\text{kJ mol}^{-1}$. Use a Hess's law cycle to calculate the enthalpy change for the reaction:
 
 $$\text{BaCl}_2(s) + 2\text{H}_2\text{O}(l) \to \text{BaCl}_2 \cdot 2\text{H}_2\text{O}(s)$$
 
@@ -258,7 +258,7 @@ $$\text{CH}_3\text{COO}^-(aq) + \text{H}_2\text{O}(l) \rightleftharpoons \text{C
 
 This produces $\text{OH}^-$ ions, making the solution alkaline ($\text{pH} \gt 7$).
 
-The first equivalence point (at $10.0\,\text{cm}^3$) represents the point where all $\text{HCl}$ has been neutralised but the $\text{CH}_3\text{COOH}$ has not yet been titrated. The solution at this point contains $\text{CH}_3\text{COOH}$ and $\text{NaCl}$, so the pH is determined by the weak acid alone ($\text{pH}$ approximately equal to $\frac{1}{2}\text{p}K_a - \frac{1}{2}\log[\text{HA}]$).
+The first equivalence point (at $10.0\,\text{cm}^3$) represents the point where all $\text{HCl}$ has been neutralised but the $\text{CH}_3\text{COOH}$ has not yet been titrated. The solution at this point contains $\text{CH}_3\text{COOH}$ and $\text{NaCl}$So the pH is determined by the weak acid alone ($\text{pH}$ approximately equal to $\frac{1}{2}\text{p}K_a - \frac{1}{2}\log[\text{HA}]$).
 
 ---
 
@@ -278,12 +278,12 @@ This illustrates the importance of high yields in each step of a multi-step synt
 
 #### UT-5: Ideal Gas Equation Unit Consistency
 
-**Question:** A student calculates the volume of gas produced using $V = nRT/p$ with $n = 0.050\,\mathrm{mol}$, $R = 8.314$, $T = 298$, and $p = 100$. They obtain $V = 123.7$. Identify the error and give the correct answer in $\mathrm{cm}^3$.
+**Question:** A student calculates the volume of gas produced using $V = nRT/p$ with $n = 0.050\,\mathrm{mol}$$R = 8.314$$T = 298$And $p = 100$. They obtain $V = 123.7$. Identify the error and give the correct answer in $\mathrm{cm}^3$.
 
 **Solution:**
 
-The student used $p = 100$ without units. If they intended $100\,\mathrm{kPa}$, they needed to convert to pascals: $p = 100000\,\mathrm{Pa}$ (1 mark).
+The student used $p = 100$ without units. If they intended $100\,\mathrm{kPa}$They needed to convert to pascals: $p = 100000\,\mathrm{Pa}$ (1 mark).
 
 $$V = \frac{nRT}{p} = \frac◆LB◆0.050 \times 8.314 \times 298◆RB◆◆LB◆100000◆RB◆ = \frac{123.9}{100000} = 1.24 \times 10^{-3}\,\mathrm{m}^3 = 1.24\,\mathrm{dm}^3 = 1240\,\mathrm{cm}^3$$
 
-The student's answer of $123.7$ is actually correct numerically but lacks units. If they meant $\mathrm{dm}^3$, their answer is close. The key error was likely not tracking units through the calculation (1 mark).
+The student's answer of $123.7$ is actually correct numerically but lacks units. If they meant $\mathrm{dm}^3$Their answer is close. The key error was likely not tracking units through the calculation (1 mark).

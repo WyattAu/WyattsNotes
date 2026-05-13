@@ -13,31 +13,31 @@ sidebar_position: 2
 ## A Level Mathematics — Course Overview
 
 A Level Mathematics is fundamentally a course in **mathematical reasoning**. The pure mathematics
-syllabus develops the tools of calculus, algebra, and proof that underpin every quantitative
-discipline. Statistics teaches you to reason under uncertainty. Mechanics teaches you to model the
-physical world with mathematics.
+Syllabus develops the tools of calculus, algebra, and proof that underpin every quantitative
+Discipline. Statistics teaches you to reason under uncertainty. Mechanics teaches you to model the
+Physical world with mathematics.
 
 ### Board Coverage
 
-| Topic                             | AQA        | Edexcel | OCR (A)    | CIE (9709) |
+| Topic | AQA | Edexcel | OCR (A) | CIE (9709) |
 | --------------------------------- | ---------- | ------- | ---------- | ---------- |
-| Pure: Algebra & Functions         | Paper 1    | P1, P2  | Paper 1    | P1, P3     |
-| Pure: Coordinate Geometry         | Paper 1    | P1      | Paper 1    | P1         |
-| Pure: Sequences & Series          | Paper 1    | P1, P2  | Paper 1    | P1, P3     |
-| Pure: Trigonometry                | Paper 1    | P2      | Paper 1    | P1, P2, P3 |
-| Pure: Exponentials & Logarithms   | Paper 1    | P1      | Paper 1    | P1, P2     |
-| Pure: Calculus                    | Paper 1, 2 | P1, P2  | Paper 1, 2 | P1, P2, P3 |
-| Pure: Vectors                     | Paper 2    | P2      | Paper 2    | P3         |
-| Pure: Proof                       | Paper 1    | P1      | Paper 1    | P1, P3     |
-| Pure: Numerical Methods           | Paper 2    | P2      | Paper 2    | P3         |
-| Statistics: Data & Sampling       | Paper 3    | S1      | Paper 3    | S1 (9709)  |
-| Statistics: Probability           | Paper 3    | S1      | Paper 3    | S1         |
-| Statistics: Distributions         | Paper 3    | S1      | Paper 3    | S1, S2     |
-| Statistics: Hypothesis Testing    | Paper 3    | S1      | Paper 3    | S2         |
-| Mechanics: Kinematics             | Paper 3    | M1      | Paper 3    | M1         |
-| Mechanics: Forces & Newton's Laws | Paper 3    | M1      | Paper 3    | M1         |
-| Mechanics: Moments                | Paper 3    | M1      | Paper 3    | M1         |
-| Mechanics: Energy & Work          | Paper 3    | M2      | Paper 3    | M2         |
+| Pure: Algebra & Functions | Paper 1 | P1, P2 | Paper 1 | P1, P3 |
+| Pure: Coordinate Geometry | Paper 1 | P1 | Paper 1 | P1 |
+| Pure: Sequences & Series | Paper 1 | P1, P2 | Paper 1 | P1, P3 |
+| Pure: Trigonometry | Paper 1 | P2 | Paper 1 | P1, P2, P3 |
+| Pure: Exponentials & Logarithms | Paper 1 | P1 | Paper 1 | P1, P2 |
+| Pure: Calculus | Paper 1, 2 | P1, P2 | Paper 1, 2 | P1, P2, P3 |
+| Pure: Vectors | Paper 2 | P2 | Paper 2 | P3 |
+| Pure: Proof | Paper 1 | P1 | Paper 1 | P1, P3 |
+| Pure: Numerical Methods | Paper 2 | P2 | Paper 2 | P3 |
+| Statistics: Data & Sampling | Paper 3 | S1 | Paper 3 | S1 (9709) |
+| Statistics: Probability | Paper 3 | S1 | Paper 3 | S1 |
+| Statistics: Distributions | Paper 3 | S1 | Paper 3 | S1, S2 |
+| Statistics: Hypothesis Testing | Paper 3 | S1 | Paper 3 | S2 |
+| Mechanics: Kinematics | Paper 3 | M1 | Paper 3 | M1 |
+| Mechanics: Forces & Newton's Laws | Paper 3 | M1 | Paper 3 | M1 |
+| Mechanics: Moments | Paper 3 | M1 | Paper 3 | M1 |
+| Mechanics: Energy & Work | Paper 3 | M2 | Paper 3 | M2 |
 
 ### Course Structure
 
@@ -47,7 +47,7 @@ The pure mathematics core is the backbone of the course. It develops:
 
 - **Algebraic fluency** — manipulation of polynomials, rational functions, partial fractions
 - **Calculus** — differentiation and integration as inverse operations, with deep understanding of
-  _why_ they work
+ _why_ they work
 - **Proof** — rigorous arguments by contradiction, induction, and direct deduction
 - **Functions** — domain, range, composition, inverse, transformations
 - **Sequences and series** — arithmetic, geometric, and binomial expansions
@@ -72,12 +72,12 @@ The pure mathematics core is the backbone of the course. It develops:
 
 ### Assessment
 
-| Board   | Papers                                              | Weighting       |
+| Board | Papers | Weighting |
 | ------- | --------------------------------------------------- | --------------- |
-| AQA     | Paper 1 (Pure), Paper 2 (Pure), Paper 3 (Stat/Mech) | 33.3% each      |
-| Edexcel | P1, P2, P3 (Pure), S1, M1 (Applied)                 | Varies by route |
-| OCR (A) | Paper 1 (Pure), Paper 2 (Pure), Paper 3 (Stat/Mech) | 33.3% each      |
-| CIE     | P1, P2, P3 (Pure), M1, S1 (Applied)                 | Varies          |
+| AQA | Paper 1 (Pure), Paper 2 (Pure), Paper 3 (Stat/Mech) | 33.3% each |
+| Edexcel | P1, P2, P3 (Pure), S1, M1 (Applied) | Varies by route |
+| OCR (A) | Paper 1 (Pure), Paper 2 (Pure), Paper 3 (Stat/Mech) | 33.3% each |
+| CIE | P1, P2, P3 (Pure), M1, S1 (Applied) | Varies |
 
 > **Note:** CIE is a linear qualification. AQA, Edexcel, and OCR (A) are also linear (all exams at
 > end of Year 13), though AS stand-alone qualifications exist.
@@ -94,4 +94,16 @@ Follow the sidebar order. Each topic page contains:
 6. **Board-specific notes** — where specifications diverge
 
 When you have studied all topics, attempt the [Diagnostic Test](/docs/alevel/maths/diagnostic-guide) to identify your
-weakest areas.
+Weakest areas.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

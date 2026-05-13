@@ -11,7 +11,7 @@ categories:
 ## go test Basics
 
 Go has a built-in testing framework. Test files are named `*_test.go` and the build system excludes
-them from production binaries. Test functions have the signature `func TestXxx(t *testing.T)`.
+Them from production binaries. Test functions have the signature `func TestXxx(t *testing.T)`.
 
 ```go
 // math_test.go
@@ -40,7 +40,7 @@ go test -short ./...   # skip long-running tests
 ## Test Helpers
 
 `t.Helper()` marks a function as a test helper. Failures report the calling line, not the helper
-line:
+Line:
 
 ```go
 func assertEqual[T comparable](t *testing.T, got, want T) {
@@ -180,7 +180,7 @@ func BenchmarkParallel(b *testing.B) {
 ## Fuzzing
 
 Go 1.18+ includes built-in fuzzing support. Fuzz tests find inputs that trigger panics, assertion
-failures, or other violations:
+Failures, or other violations:
 
 ```go
 func FuzzReverse(f *testing.F) {
@@ -204,7 +204,7 @@ go test -fuzz=FuzzReverse -fuzztime=30s
 ```
 
 When a crash is found, the failing input is saved to `testdata/fuzz/FuzzReverse/` and will be
-replayed on subsequent test runs.
+Replayed on subsequent test runs.
 
 ## Test Coverage
 
@@ -234,7 +234,7 @@ fi
 ## Examples
 
 Test examples double as documentation. If the output comment matches the actual output, `go test`
-verifies it:
+Verifies it:
 
 ```go
 func ExampleAdd() {
@@ -253,7 +253,7 @@ Run with `go test -run Example`.
 ## Mocking
 
 Go does not have built-in mocking. The standard approach is to define interfaces and implement test
-doubles:
+Doubles:
 
 ```go
 type Store interface {
@@ -281,19 +281,27 @@ Popular mocking libraries: `gomock` (code generation), `testify/mock` (manual mo
 ## Common Pitfalls
 
 1. **Testing implementation details.** Test behavior, not internal mechanics. If you find yourself
-   reaching for `reflect` in tests to inspect unexported fields, reconsider the design.
+ reaching for `reflect` in tests to inspect unexported fields, reconsider the design.
 
 2. **Not using table-driven tests.** Copy-pasting test functions with different inputs creates
-   maintenance burden. Use table-driven tests for any function with multiple input/output cases.
+ maintenance burden. Use table-driven tests for any function with multiple input/output cases.
 
 3. **Flaky tests due to time or concurrency.** Use `testing.Short()` to skip slow tests, and use
-   deterministic test doubles instead of real time/network in unit tests.
+ deterministic test doubles instead of real time/network in unit tests.
 
 4. **Ignoring benchmark results.** Always run benchmarks with `-benchmem` to catch unexpected
-   allocations. A single allocation in a hot path can dominate performance.
+ allocations. A single allocation in a hot path can dominate performance.
 
 5. **Low coverage on error paths.** Test both the happy path and error paths. Use
-   `go test -coverprofile` to identify uncovered code.
+ `go test -coverprofile` to identify uncovered code.
 
 6. **Modifying global state in tests.** Tests that modify package-level variables or global state
-   can interfere with each other. Use `t.Parallel()` and isolate state per test.
+ can interfere with each other. Use `t.Parallel()` and isolate state per test.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

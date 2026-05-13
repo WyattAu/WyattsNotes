@@ -11,24 +11,24 @@ categories:
 ## Overview
 
 Network traffic analysis is the process of capturing, examining, and interpreting network traffic to
-troubleshoot problems, detect anomalies, optimize performance, and investigate security incidents.
+Troubleshoot problems, detect anomalies, optimize performance, and investigate security incidents.
 This document covers packet capture methodology, advanced tcpdump and Wireshark usage, network flow
-analysis (NetFlow/sFlow/IPFIX), bandwidth monitoring, and incident response workflows.
+Analysis (NetFlow/sFlow/IPFIX), bandwidth monitoring, and incident response workflows.
 
 The fundamental skill is being able to answer the question: "what is actually on the wire?" --
-independently of what you expect to be there.
+Independently of what you expect to be there.
 
 ## Packet Capture Methodology
 
 ### Where to Capture
 
 Choosing the right capture point is the first and most important decision. The wrong capture point
-yields misleading or useless data.
+Yields misleading or useless data.
 
 **SPAN Port (Switched Port Analyzer):**
 
 A SPAN port mirrors traffic from one or more source ports to a destination port where the capture
-device is connected. Available on most managed switches.
+Device is connected. Available on most managed switches.
 
 ```text
 # Cisco IOS SPAN configuration
@@ -38,12 +38,12 @@ monitor session 1 destination interface Gi0/24
 
 Advantages: no hardware cost, works on any switch. Disadvantages: may drop packets under heavy load
 (ASIC limitations), does not capture errors on the source port, may not mirror all VLAN tags
-correctly.
+Correctly.
 
 **Network TAP (Test Access Point):**
 
 A hardware device inserted inline between two network devices. TAPs provide a passive copy of all
-traffic (including errors and malformed frames) to the capture device.
+Traffic (including errors and malformed frames) to the capture device.
 
 ```text
 [Switch] --- [TAP] --- [Router]
@@ -52,34 +52,34 @@ traffic (including errors and malformed frames) to the capture device.
 ```
 
 Advantages: captures everything including errors, no impact on the monitored link, full-duplex
-monitoring. Disadvantages: hardware cost, requires physical access to insert, introduces a potential
-point of failure.
+Monitoring. Disadvantages: hardware cost, requires physical access to insert, introduces a potential
+Point of failure.
 
 **Inline Capture:**
 
 Capture traffic at the endpoint itself (on the server, VM, or container). Uses libpcap to capture
-packets as they enter and leave the network interface.
+Packets as they enter and leave the network interface.
 
 Advantages: captures the endpoint's perspective (including locally-generated traffic), no additional
-hardware. Disadvantages: endpoint CPU overhead, may not capture traffic that the endpoint's OS drops
-before libpcap sees it.
+Hardware. Disadvantages: endpoint CPU overhead, may not capture traffic that the endpoint's OS drops
+Before libpcap sees it.
 
 ### Capture Point Selection Guide
 
-| Scenario                         | Best Capture Point                                     |
+| Scenario | Best Capture Point |
 | -------------------------------- | ------------------------------------------------------ |
-| Troubleshoot server connectivity | On the server (tcpdump)                                |
-| Full link visibility             | TAP (if available) or SPAN                             |
-| Packet loss investigation        | TAP (captures errors)                                  |
-| Multi-point analysis             | SPAN + server capture, correlated                      |
-| Encrypted traffic analysis       | On the endpoint (before encryption / after decryption) |
-| Container networking             | On the host's veth interface or inside the container   |
+| Troubleshoot server connectivity | On the server (tcpdump) |
+| Full link visibility | TAP (if available) or SPAN |
+| Packet loss investigation | TAP (captures errors) |
+| Multi-point analysis | SPAN + server capture, correlated |
+| Encrypted traffic analysis | On the endpoint (before encryption / after decryption) |
+| Container networking | On the host's veth interface or inside the container |
 
 :::warning
 
 SPAN ports can drop packets under heavy load. The SPAN port's ASIC may not be able to mirror
-line-rate traffic, especially on 10Gbps+ links. If you see missing packets in a SPAN capture,
-consider using a TAP or capturing on the endpoint.
+Line-rate traffic, especially on 10Gbps+ links. If you see missing packets in a SPAN capture,
+Consider using a TAP or capturing on the endpoint.
 
 :::
 
@@ -87,9 +87,9 @@ consider using a TAP or capturing on the endpoint.
 
 ### BPF Filter Language
 
-tcpdump uses the Berkeley Packet Filter (BPF) language to select which packets to capture. BPF
-filters are compiled into a bytecode program that runs in the kernel, so filtering happens before
-packets are copied to userspace. This is critical for performance -- capturing all traffic on a
+Tcpdump uses the Berkeley Packet Filter (BPF) language to select which packets to capture. BPF
+Filters are compiled into a bytecode program that runs in the kernel, so filtering happens before
+Packets are copied to userspace. This is critical for performance -- capturing all traffic on a
 10Gbps link without a filter would overwhelm the capture buffer.
 
 ### Primitive Filters
@@ -219,7 +219,7 @@ tcpdump -i eth0 -Z root
 ### Display Filters
 
 Wireshark display filters are applied after capture and use a different (and more powerful) syntax
-than BPF capture filters.
+Than BPF capture filters.
 
 ```text
 # Protocol filters
@@ -304,7 +304,7 @@ http.response.code >= 400
 ### Following TCP Streams
 
 Right-click a TCP packet and select "Follow TCP Stream" to see the full conversation. This
-reassembles all TCP segments in order, removing headers and showing the application data.
+Reassembles all TCP segments in order, removing headers and showing the application data.
 
 ### Expert Info
 
@@ -335,8 +335,8 @@ google-chrome
 
 ## tshark
 
-tshark is the command-line version of Wireshark. It uses the same capture and display filter syntax
-but outputs to the terminal.
+Tshark is the command-line version of Wireshark. It uses the same capture and display filter syntax
+But outputs to the terminal.
 
 ### Capturing
 
@@ -404,45 +404,45 @@ tshark -r /tmp/capture.pcap -Y 'http.response' -T json \
 ### NetFlow (Cisco)
 
 NetFlow is a network protocol developed by Cisco that exports aggregated flow records from routers
-and switches. A "flow" is a unidirectional sequence of packets sharing the same 5-tuple (source IP,
-destination IP, source port, destination port, protocol).
+And switches. A "flow" is a unidirectional sequence of packets sharing the same 5-tuple (source IP,
+Destination IP, source port, destination port, protocol).
 
 **What NetFlow records:**
 
-| Field            | Description                          |
+| Field | Description |
 | ---------------- | ------------------------------------ |
-| src_addr         | Source IP address                    |
-| dst_addr         | Destination IP address               |
-| src_port         | Source port                          |
-| dst_port         | Destination port                     |
-| protocol         | IP protocol (TCP, UDP, ICMP, etc.)   |
-| packets          | Number of packets in the flow        |
-| bytes            | Total bytes in the flow              |
-| start_time       | Time of first packet                 |
-| end_time         | Time of last packet                  |
-| tcp_flags        | OR of TCP flags seen in all packets  |
-| tos              | Type of Service / DSCP value         |
-| as_src           | Source AS number (if BGP is enabled) |
-| as_dst           | Destination AS number                |
-| input_interface  | SNMP index of ingress interface      |
-| output_interface | SNMP index of egress interface       |
-| nexthop          | Next-hop IP address                  |
+| src_addr | Source IP address |
+| dst_addr | Destination IP address |
+| src_port | Source port |
+| dst_port | Destination port |
+| protocol | IP protocol (TCP, UDP, ICMP, etc.) |
+| packets | Number of packets in the flow |
+| bytes | Total bytes in the flow |
+| start_time | Time of first packet |
+| end_time | Time of last packet |
+| tcp_flags | OR of TCP flags seen in all packets |
+| tos | Type of Service / DSCP value |
+| as_src | Source AS number (if BGP is enabled) |
+| as_dst | Destination AS number |
+| input_interface | SNMP index of ingress interface |
+| output_interface | SNMP index of egress interface |
+| nexthop | Next-hop IP address |
 
 **NetFlow versions:**
 
-| Version | Description                                  |
+| Version | Description |
 | ------- | -------------------------------------------- |
-| v5      | Original format, fixed fields                |
-| v9      | Template-based, extensible (RFC 3954)        |
-| IPFIX   | IETF standard based on NetFlow v9 (RFC 7011) |
+| v5 | Original format, fixed fields |
+| v9 | Template-based, extensible (RFC 3954) |
+| IPFIX | IETF standard based on NetFlow v9 (RFC 7011) |
 
 ### sFlow
 
-sFlow (Sampled Flow) uses statistical sampling rather than tracking every packet. The router samples
-1 in N packets (configurable, typically 1:1000) and exports the sample to a collector.
+SFlow (Sampled Flow) uses statistical sampling rather than tracking every packet. The router samples
+1 in N packets (configurable, 1:1000) and exports the sample to a collector.
 
 Advantages over NetFlow: lower CPU overhead on the router, works at line rate, can export interface
-counters and packet headers.
+Counters and packet headers.
 
 Disadvantages: sampling means some flows are missed, less accurate for low-volume traffic.
 
@@ -542,7 +542,7 @@ nethogs eth0
 ### conntrack (Linux)
 
 Linux's netfilter connection tracking system maintains a table of all active connections. This is
-the backbone of NAT, stateful firewalls, and conntrack-based tools.
+The backbone of NAT, stateful firewalls, and conntrack-based tools.
 
 ```bash
 # View all tracked connections
@@ -581,7 +581,7 @@ cat /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_established
 
 If the conntrack table fills up, new connections are dropped with
 `nf_conntrack: table full, dropping packet` messages in dmesg. This is a common cause of seemingly
-random connection failures on firewalls and NAT gateways. Monitor `nf_conntrack_count` vs
+Random connection failures on firewalls and NAT gateways. Monitor `nf_conntrack_count` vs
 `nf_conntrack_max`.
 
 :::
@@ -646,26 +646,26 @@ hping3 -S -c 10 -p 443 example.com
 ### Why Baseline
 
 You cannot detect anomalies if you do not know what normal looks like. A network baseline records
-typical traffic patterns, throughput, latency, packet loss, and protocol distribution during normal
-operation.
+Typical traffic patterns, throughput, latency, packet loss, and protocol distribution during normal
+Operation.
 
 ### What to Measure
 
-| Metric               | Tool            | Frequency |
+| Metric | Tool | Frequency |
 | -------------------- | --------------- | --------- |
-| Interface throughput | SNMP / iftop    | 5 minutes |
-| Top talkers (by IP)  | NetFlow / sFlow | 5 minutes |
-| Top protocols        | NetFlow / sFlow | 5 minutes |
-| TCP connections      | conntrack / ss  | 1 minute  |
-| DNS query volume     | dns query logs  | 1 minute  |
-| HTTP request rate    | access logs     | 1 minute  |
-| Packet loss          | ping / SLA      | 1 minute  |
-| Latency (RTT)        | ping / SLA      | 1 minute  |
+| Interface throughput | SNMP / iftop | 5 minutes |
+| Top talkers (by IP) | NetFlow / sFlow | 5 minutes |
+| Top protocols | NetFlow / sFlow | 5 minutes |
+| TCP connections | conntrack / ss | 1 minute |
+| DNS query volume | dns query logs | 1 minute |
+| HTTP request rate | access logs | 1 minute |
+| Packet loss | ping / SLA | 1 minute |
+| Latency (RTT) | ping / SLA | 1 minute |
 
 ### Baseline Duration
 
 Capture at least one full business cycle (7 days) to capture weekday vs weekend patterns, peak vs
-off-peak hours, and any batch processing windows.
+Off-peak hours, and any batch processing windows.
 
 ## Anomaly Detection
 
@@ -678,9 +678,9 @@ Indicators of network anomalies:
 - **Unexpected protocols:** SSH on non-standard ports, DNS tunneling, ICMP tunneling
 - **Traffic to unusual ports:** Scanning, exploitation attempts
 - **Traffic to unusual destinations:** Connections to known-bad IPs or countries you do not do
-  business with
+ business with
 - **Unusual DNS patterns:** High volume of NXDOMAIN (DNS tunneling or DGA malware), high volume to a
-  specific domain
+ specific domain
 
 ### Port Scan Detection
 
@@ -716,7 +716,7 @@ tcpdump -i eth0 -nn 'icmp[icmptype] != icmp-echo and icmp[icmptype] != icmp-echo
 ### Step 1: Identify the Scope
 
 Determine the time window and affected hosts from logs and alerts. This tells you which captures to
-analyze and what time range to filter.
+Analyze and what time range to filter.
 
 ### Step 2: Extract Conversations
 
@@ -775,7 +775,7 @@ editcap -A "2024-01-15 10:00:00" -B "2024-01-15 11:00:00" \
 ### Correlating Server and Client Captures
 
 When troubleshooting packet loss or latency, capture on both the client and the server
-simultaneously. Use NTP to synchronize clocks, then correlate packets by timestamp.
+Simultaneously. Use NTP to synchronize clocks, then correlate packets by timestamp.
 
 ```bash
 # Client capture
@@ -796,18 +796,18 @@ ssh server "tcpdump -i eth0 -w /tmp/server.pcap host 192.168.1.100" &
 
 On a server with multiple interfaces, make sure you are capturing on the correct one.
 `tcpdump -i any` captures on all interfaces but may not show the physical interface name. Always
-verify with `ip link show` first.
+Verify with `ip link show` first.
 
 ### 2. Not Using -nn
 
-Without `-nn`, tcpdump performs reverse DNS lookups for every IP address and service name lookups
-for every port. This is extremely slow for high-traffic captures and may cause tcpdump to drop
-packets. Always use `-nn`.
+Without `-nn`Tcpdump performs reverse DNS lookups for every IP address and service name lookups
+For every port. This is extremely slow for high-traffic captures and may cause tcpdump to drop
+Packets. Always use `-nn`.
 
 ### 3. Capture Buffer Too Small
 
 The default capture buffer is 2MB. On a 10Gbps link, 2MB fills in ~1.6 milliseconds. Use `-B` to
-increase the buffer:
+Increase the buffer:
 
 ```bash
 tcpdump -i eth0 -B 524288000   # 500MB
@@ -815,8 +815,8 @@ tcpdump -i eth0 -B 524288000   # 500MB
 
 ### 4. Not Considering VLAN Tags
 
-If your network uses VLANs, the VLAN tag (802.1Q) is prepended to the Ethernet frame. tcpdump may
-not match filters against VLAN-tagged traffic. Use `vlan` in the BPF filter:
+If your network uses VLANs, the VLAN tag (802.1Q) is prepended to the Ethernet frame. Tcpdump may
+Not match filters against VLAN-tagged traffic. Use `vlan` in the BPF filter:
 
 ```bash
 tcpdump -i eth0 'vlan 100 and port 443'
@@ -825,13 +825,13 @@ tcpdump -i eth0 'vlan 100 and port 443'
 ### 5. SPAN Port Packet Drops
 
 As mentioned earlier, SPAN ports can drop packets. Always verify your capture by checking for
-missing TCP segments (Wireshark's "Previous segment not captured" expert info). If you see
-systematic drops, use a TAP or capture on the endpoint.
+Missing TCP segments (Wireshark's "Previous segment not captured" expert info). If you see
+Systematic drops, use a TAP or capture on the endpoint.
 
 ### 6. Encrypted Traffic Blindness
 
 TLS encryption makes packet-level analysis blind to application data. For encrypted traffic, you
-need either:
+Need either:
 
 - The session keys (SSLKEYLOGFILE)
 - A TLS decryption appliance
@@ -840,7 +840,7 @@ need either:
 ### 7. Capture Files Growing Too Large
 
 A full-speed capture on a 10Gbps link generates approximately 1.25GB per second. Use ring buffers to
-rotate files:
+Rotate files:
 
 ```bash
 tcpdump -i eth0 -w /tmp/capture.pcap -C 100 -W 5 -G 300
@@ -852,5 +852,13 @@ tcpdump -i eth0 -w /tmp/capture.pcap -C 100 -W 5 -G 300
 ### 8. Not Checking Clock Synchronization
 
 When correlating captures from multiple points, ensure all systems are synchronized via NTP. A clock
-skew of even 1 second can make correlation impossible for fast interactions. Use `ntpq -p` to verify
+Skew of even 1 second can make correlation impossible for fast interactions. Use `ntpq -p` to verify
 NTP synchronization before starting a multi-point capture.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -7,8 +7,8 @@ slug: structs-and-enums
 ## Structs
 
 Structs are the primary mechanism for defining custom types in Rust. Unlike classes in C++ or Java,
-structs in Rust do not support inheritance. Composition and trait-based polymorphism are the
-idiomatic alternatives.
+Structs in Rust do not support inheritance. Composition and trait-based polymorphism are the
+Idiomatic alternatives.
 
 ### Unit Structs
 
@@ -50,7 +50,7 @@ assert_eq!(p.distance_from_origin(), 5.0);
 ```
 
 Tuple structs with a single field implement the **newtype pattern**, creating a distinct type from
-the wrapped type:
+The wrapped type:
 
 ```rust
 struct UserId(u64);
@@ -108,13 +108,13 @@ let bob = Person {
 // bob.name == "Bob", bob.age == 30, bob.email == Some("alice@example.com")
 ```
 
-Struct update syntax moves the remaining fields. After `..alice`, the `alice` binding can no longer
-be used in its entirety (it is partially moved), but individual `Copy` fields remain accessible.
+Struct update syntax moves the remaining fields. After `..alice`The `alice` binding can no longer
+Be used in its entirety (it is partially moved), but individual `Copy` fields remain accessible.
 
 ### Struct Layout and `#[repr]`
 
 By default, the compiler is free to reorder fields and add padding for alignment. The `#[repr]`
-attribute controls the memory layout:
+Attribute controls the memory layout:
 
 ```rust
 #[repr(C)]      // C-compatible layout — fields in declaration order, C alignment rules
@@ -142,15 +142,15 @@ struct Aligned {
 :::warning
 
 `#[repr(packed)]` makes every field reference potentially misaligned. Accessing a `packed` struct's
-fields through references requires `unsafe` because the compiler cannot guarantee alignment for
-dereferences. Use `#[repr(packed(2))]` or similar to specify minimum alignment.
+Fields through references requires `unsafe` because the compiler cannot guarantee alignment for
+Dereferences. Use `#[repr(packed(2))]` or similar to specify minimum alignment.
 
 :::
 
 ### Visibility
 
 By default, all struct fields are private (visible only within the module where the struct is
-defined). Use `pub` to make fields public:
+Defined). Use `pub` to make fields public:
 
 ```rust
 mod geometry {
@@ -172,8 +172,8 @@ mod geometry {
 ```
 
 Note: making a struct `pub` does not make its fields `pub`. Each field must be individually marked
-as `pub`. This is different from C++ where `public:` in a class definition makes all subsequent
-members public.
+As `pub`. This is different from C++ where `public:` in a class definition makes all subsequent
+Members public.
 
 ### Methods and Associated Functions
 
@@ -219,7 +219,7 @@ assert_eq!(r.area(), 12.0);
 ### Multiple `impl` Blocks
 
 A type can have multiple `impl` blocks. This is useful for organizing methods by functionality or
-for separating trait implementations from inherent methods:
+For separating trait implementations from inherent methods:
 
 ```rust
 impl Rectangle {
@@ -236,8 +236,8 @@ impl Rectangle {
 ### Method Dispatch
 
 Rust uses static dispatch by default — the compiler knows the exact type at the call site and
-monomorphizes the code. Trait methods called through `dyn Trait` use dynamic dispatch via vtable
-indirection.
+Monomorphizes the code. Trait methods called through `dyn Trait` use dynamic dispatch via vtable
+Indirection.
 
 ```rust
 trait Shape {
@@ -261,7 +261,7 @@ let a = s.area();  // indirect call through vtable
 ## Enums
 
 Enums are algebraic data types (sum types). Each variant can optionally carry data. Rust enums are
-discriminated unions — the compiler stores a tag (discriminant) to identify which variant is active.
+Discriminated unions — the compiler stores a tag (discriminant) to identify which variant is active.
 
 ### Unit Variants
 
@@ -313,7 +313,7 @@ enum Event {
 ### Enum Memory Layout
 
 The compiler stores a discriminant tag alongside the variant data. The default discriminant type is
-the smallest integer that can represent all variants:
+The smallest integer that can represent all variants:
 
 ```rust
 enum Color {
@@ -380,12 +380,12 @@ fn eval(expr: &Expr, env: &std::collections::HashMap<String, i64>) -> i64 {
 ```
 
 Note the use of `Box<Expr>` — without boxing, the enum would be infinitely sized because `Expr`
-contains itself recursively.
+Contains itself recursively.
 
 ## Pattern Matching
 
 Pattern matching is Rust's primary control flow mechanism for enums and is exhaustively checked by
-the compiler.
+The compiler.
 
 ### `match` Expressions
 
@@ -405,7 +405,7 @@ fn color_to_rgb(c: Color) -> (u8, u8, u8) {
 }
 ```
 
-The compiler verifies that every variant is handled. If you add a new variant to `Color`, every
+The compiler verifies that every variant is handled. If you add a new variant to `Color`Every
 `match` on `Color` will produce a compile error until updated. This is exhaustive pattern matching.
 
 ### Match Ergonomics (Rust 2021+)
@@ -438,7 +438,7 @@ match num {
 ```
 
 Match guards do not participate in exhaustiveness checking. The compiler cannot prove that a guard
-will always match for a given variant, so you may still need a catch-all arm.
+Will always match for a given variant, so you may still need a catch-all arm.
 
 ### Binding Modes
 
@@ -573,7 +573,7 @@ fn process(data: Option<Vec<i32>>) -> i32 {
 ```
 
 The `else` block must diverge (return, break, continue, panic, or loop). This is cleaner than the
-equivalent `match` with a single arm and a fallback.
+Equivalent `match` with a single arm and a fallback.
 
 ### `while let` — Repeated Pattern Matching
 
@@ -589,7 +589,7 @@ while let Some(top) = stack.pop() {
 ```
 
 `while let` runs the loop body as long as the pattern matches. When it stops matching, the loop
-ends.
+Ends.
 
 ### `matches!` Macro
 
@@ -651,37 +651,37 @@ struct User {
 }
 ```
 
-| Trait        | What it generates                                              |
+| Trait | What it generates |
 | ------------ | -------------------------------------------------------------- |
-| `Debug`      | `fmt::Debug` for `{:?}` formatting                             |
-| `Clone`      | `clone()` — deep copy (requires all fields to be `Clone`)      |
-| `Copy`       | Implicit bitwise copy (requires `Clone`, no `Drop`)            |
-| `PartialEq`  | `==` and `!=` — structural equality                            |
-| `Eq`         | Marks type as having reflexive equality (requires `PartialEq`) |
-| `PartialOrd` | `&lt;`, `&gt;`, `&lt;=`, `&gt;=` — derived from field order    |
-| `Ord`        | Total ordering (requires `PartialOrd`, `Eq`)                   |
-| `Hash`       | Hash function for `HashMap`/`HashSet` keys                     |
-| `Default`    | Default value (all fields must implement `Default`)            |
+| `Debug` | `fmt::Debug` for `{:?}` formatting |
+| `Clone` | `clone()` — deep copy (requires all fields to be `Clone`) |
+| `Copy` | Implicit bitwise copy (requires `Clone`No `Drop`) |
+| `PartialEq` | `==` and `!=` — structural equality |
+| `Eq` | Marks type as having reflexive equality (requires `PartialEq`) |
+| `PartialOrd` | `&lt;``&gt;``&lt;=``&gt;=` — derived from field order |
+| `Ord` | Total ordering (requires `PartialOrd``Eq`) |
+| `Hash` | Hash function for `HashMap`/`HashSet` keys |
+| `Default` | Default value (all fields must implement `Default`) |
 
 :::warning
 
 Deriving `PartialOrd` compares fields in declaration order. If you change the order of fields in the
-struct, the derived ordering changes. Deriving `Ord` on a struct with a `f64` field will fail
-because `f64` does not implement `Ord`. Use a custom implementation or wrap the field in the
+Struct, the derived ordering changes. Deriving `Ord` on a struct with a `f64` field will fail
+Because `f64` does not implement `Ord`. Use a custom implementation or wrap the field in the
 `ordered-float` crate's `OrderedFloat` type instead.
 
 :::
 
 ### Custom Derive
 
-You can implement custom derive macros. The `derive` crate ecosystem includes `serde::Serialize`,
-`serde::Deserialize`, `thiserror::Error`, and many more. These work by procedural macro expansion at
-compile time.
+You can implement custom derive macros. The `derive` crate ecosystem includes `serde::Serialize`
+`serde::Deserialize``thiserror::Error`And many more. These work by procedural macro expansion at
+Compile time.
 
 ## The Newtype Pattern
 
 The newtype pattern wraps an existing type in a tuple struct to provide type safety, implement
-different traits, or add domain-specific behavior:
+Different traits, or add domain-specific behavior:
 
 ```rust
 struct Millimeters(u32);
@@ -748,8 +748,8 @@ impl Message {
 ## Visibility in Depth
 
 Rust's visibility system is based on modules, not classes. The `pub` keyword makes an item visible
-to the parent module. To make an item visible to the entire crate, use `pub(crate)`. To make it
-visible to a specific module, use `pub(in path)`.
+To the parent module. To make an item visible to the entire crate, use `pub(crate)`. To make it
+Visible to a specific module, use `pub(in path)`.
 
 ```rust
 mod network {
@@ -767,7 +767,7 @@ mod network {
 ### Re-exporting
 
 Use `pub use` to re-export items from another module, making them accessible under the current
-module's path:
+Module's path:
 
 ```rust
 mod internal {
@@ -780,7 +780,7 @@ pub use internal::Config;  // Config is now available as crate::Config
 ```
 
 This is commonly used to flatten module hierarchies and provide a clean public API that differs from
-the internal organization.
+The internal organization.
 
 ## `Option<T>` Deep Dive
 
@@ -870,41 +870,41 @@ let opt: Option<i32> = res.ok(); // Some(42)
 ## Common Pitfalls
 
 1. **Forgetting to handle all enum variants.** The compiler will error if a `match` is not
-   exhaustive. Add a `_ =>` catch-all only when it makes semantic sense — it hides future variant
-   additions. Prefer explicit handling of every variant for types you control.
+ exhaustive. Add a `_ =>` catch-all only when it makes semantic sense — it hides future variant
+ additions. Prefer explicit handling of every variant for types you control.
 
 2. **Struct update syntax and partial moves.** `Struct { ..other }` moves the remaining fields. If
-   `other` has any `Drop` types, the entire struct is considered partially moved and cannot be used
-   as a whole afterward. This is correct behavior — you have transferred ownership of some fields.
+ `other` has any `Drop` types, the entire struct is considered partially moved and cannot be used
+ as a whole afterward. This is correct behavior — you have transferred ownership of some fields.
 
 3. **Matching on references without understanding match ergonomics.** Pre-2021 Rust required
-   explicit `&` in patterns when matching through references. Match ergonomics simplify this, but
-   can be confusing when you need to capture a reference vs. a value. If the compiler suggests
-   adding `ref`, pay attention — it is telling you that a move would occur otherwise.
+ explicit `&` in patterns when matching through references. Match ergonomics simplify this, but
+ can be confusing when you need to capture a reference vs. A value. If the compiler suggests
+ adding `ref`Pay attention — it is telling you that a move would occur otherwise.
 
 4. **Using `unwrap()` in production code.** `unwrap()` panics on `None`/`Err`. Panics are for
-   unrecoverable programming errors (bugs), not for expected failure modes. Use `?`, `unwrap_or`,
-   `unwrap_or_else`, or pattern matching for expected failures.
+ unrecoverable programming errors (bugs), not for expected failure modes. Use `?``unwrap_or`
+ `unwrap_or_else`Or pattern matching for expected failures.
 
 5. **Enum size explosion.** An enum's size is the size of its largest variant plus the discriminant,
-   aligned to the largest variant's alignment. If one variant is much larger than the others (e.g.,
-   a `String` variant alongside `u8` variants), consider boxing the large variant: `Large(String)`
-   vs `Large(Box&lt;String&gt;)`.
+ aligned to the largest variant's alignment. If one variant is much larger than the others (e.g.,
+ a `String` variant alongside `u8` variants), consider boxing the large variant: `Large(String)`
+ vs `Large(Box&lt;String&gt;)`.
 
 6. **Deriving traits on enums with non-unit variants.** `#[derive(PartialEq)]` compares variant
-   discriminants first, then compares the inner data. For structs, it compares field-by-field. If
-   your type contains `f64`, you cannot derive `Eq` or `Ord` because `f64` does not implement them.
+ discriminants first, then compares the inner data. For structs, it compares field-by-field. If
+ your type contains `f64`You cannot derive `Eq` or `Ord` because `f64` does not implement them.
 
 7. **Not using `if let`/`let-else` when appropriate.** A `match` with a single non-trivial arm and a
-   `_ =>` catch-all is less readable than an `if let` or `let-else`. Use `match` when you need
-   exhaustive handling; use `if let`/`let-else` for focused pattern extraction.
+ `_ =>` catch-all is less readable than an `if let` or `let-else`. Use `match` when you need
+ exhaustive handling; use `if let`/`let-else` for focused pattern extraction.
 
-8. **Overusing `Option` for boolean semantics.** `Option<bool>` has three states: `None`,
-   `Some(true)`, `Some(false)`. If you need three states, use an enum instead — it is clearer and
-   self-documenting.
+8. **Overusing `Option` for boolean semantics.** `Option<bool>` has three states: `None`
+ `Some(true)``Some(false)`. If you need three states, use an enum instead — it is clearer and
+ self-documenting.
 
 9. **Pattern binding shadowing.** In match arms, the binding name shadows any outer binding with the
-   same name. This can lead to confusion when the same variable name appears in multiple arms:
+ same name. This can lead to confusion when the same variable name appears in multiple arms:
 
    ```rust
    let x = 5;
@@ -918,5 +918,13 @@ let opt: Option<i32> = res.ok(); // Some(42)
    ```
 
 10. **Enum variants are not types.** You cannot write `fn takes_v4(addr: IpAddr::V4)`. Enum variants
-    are not types — they are constructors. Use the full enum type and pattern match inside the
-    function body, or use a newtype wrapper around the variant.
+ are not types — they are constructors. Use the full enum type and pattern match inside the
+ function body, or use a newtype wrapper around the variant.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

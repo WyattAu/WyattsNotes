@@ -18,7 +18,7 @@ $K_a = \frac{[\text{CH}_3\text{COO}^-][\text{H}^+]}{[\text{CH}_3\text{COOH}]}$
 
 Let $x = [\text{H}^+] = [\text{CH}_3\text{COO}^-]$. Then $[\text{CH}_3\text{COOH}] \approx 0.150 - x$.
 
-Approximation: since $K_a$ is very small, $x \ll 0.150$, so $0.150 - x \approx 0.150$.
+Approximation: since $K_a$ is very small, $x \ll 0.150$So $0.150 - x \approx 0.150$.
 
 $1.74 \times 10^{-5} = \frac{x^2}{0.150}$
 
@@ -53,11 +53,11 @@ Moles HCl added: $2.00 \times 0.00500 = 0.0100\ \text{mol}$
 
 HCl reacts with $\text{CH}_3\text{COO}^-$: $\text{CH}_3\text{COO}^- + \text{H}^+ \to \text{CH}_3\text{COOH}$
 
-New moles: $\text{CH}_3\text{COOH} = 0.0500 + 0.0100 = 0.0600\ \text{mol}$, $\text{CH}_3\text{COO}^- = 0.0500 - 0.0100 = 0.0400\ \text{mol}$.
+New moles: $\text{CH}_3\text{COOH} = 0.0500 + 0.0100 = 0.0600\ \text{mol}$$\text{CH}_3\text{COO}^- = 0.0500 - 0.0100 = 0.0400\ \text{mol}$.
 
 $\text{pH} = 4.76 + \log\frac{0.0400}{0.0600} = 4.76 + \log(0.667) = 4.76 - 0.176 = 4.58$
 
-pH change: $4.76 - 4.58 = 0.18$. The buffer resists the pH change effectively.
+PH change: $4.76 - 4.58 = 0.18$. The buffer resists the pH change effectively.
 
 ---
 ### UT-3: Salt Hydrolysis pH
@@ -88,7 +88,7 @@ The solution is acidic, as expected for a salt of a weak base and a strong acid.
 
 (a) Initial pH: $[\text{H}^+] = \sqrt{K_a \times c} = \sqrt{1.74 \times 10^{-5} \times 0.100} = 1.32 \times 10^{-3}$. $\text{pH} = 2.88$.
 
-(b) At half-equivalence, $[\text{HA}] = [\text{A}^-]$, so $\text{pH} = \text{p}K_a = 4.76$.
+(b) At half-equivalence, $[\text{HA}] = [\text{A}^-]$So $\text{pH} = \text{p}K_a = 4.76$.
 
 (c) At equivalence, all $\text{CH}_3\text{COOH}$ has been converted to $\text{CH}_3\text{COO}^-$. The concentration of $\text{CH}_3\text{COO}^-$ is:
 
@@ -98,7 +98,7 @@ $K_b = \frac{K_w}{K_a} = \frac{1.00 \times 10^{-14}}{1.74 \times 10^{-5}} = 5.75
 
 $[\text{OH}^-] = \sqrt{K_b \times 0.0500} = \sqrt{2.875 \times 10^{-11}} = 5.36 \times 10^{-6}$.
 
-$\text{pOH} = 5.27$, $\text{pH} = 14.00 - 5.27 = 8.73$.
+$\text{pOH} = 5.27$$\text{pH} = 14.00 - 5.27 = 8.73$.
 
 (d) Volume: $\frac{0.100 \times 25.0}{0.100} = 25.0\ \text{cm}^3$.
 
@@ -118,7 +118,7 @@ $x = 9.27 \times 10^{-5}\ \text{mol dm}^{-3}$
 
 $\text{pH} = -\log(9.27 \times 10^{-5}) = 4.03$
 
-Justification for ignoring second dissociation: $K_{a2} \ll K_{a1}$ (ratio $\approx 10^{-4}$). The second dissociation ($\text{HCO}_3^- \rightleftharpoons \text{H}^+ + \text{CO}_3^{2-}$) produces a negligible additional $[\text{H}^+]$ compared to the first. The additional $[\text{H}^+]$ from the second step would be approximately $K_{a2} \approx 4.8 \times 10^{-11}$, which is orders of magnitude smaller than $9.27 \times 10^{-5}$. The second dissociation contributes less than $0.00005\%$ of the total $[\text{H}^+]$.
+Justification for ignoring second dissociation: $K_{a2} \ll K_{a1}$ (ratio $\approx 10^{-4}$). The second dissociation ($\text{HCO}_3^- \rightleftharpoons \text{H}^+ + \text{CO}_3^{2-}$) produces a negligible additional $[\text{H}^+]$ compared to the first. The additional $[\text{H}^+]$ from the second step would be approximately $K_{a2} \approx 4.8 \times 10^{-11}$Which is orders of magnitude smaller than $9.27 \times 10^{-5}$. The second dissociation contributes less than $0.00005\%$ of the total $[\text{H}^+]$.
 
 Verification of approximation: $x/0.0200 = 0.46\% \lt 5\%$. Valid.
 

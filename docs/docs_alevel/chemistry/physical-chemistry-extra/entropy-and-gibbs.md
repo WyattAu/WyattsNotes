@@ -12,24 +12,24 @@ slug: entropy-and-gibbs
 # Entropy and Gibbs Free Energy
 
 Enthalpy alone is insufficient to predict whether a reaction will occur spontaneously. The
-dissolution of ammonium nitrate in water is endothermic yet proceeds spontaneously. The
-decomposition of calcium carbonate requires continuous heating. To resolve these cases, we need a
-second state function: entropy, and its combination with enthalpy in the Gibbs free energy.
+Dissolution of ammonium nitrate in water is endothermic yet proceeds spontaneously. The
+Decomposition of calcium carbonate requires continuous heating. To resolve these cases, we need a
+Second state function: entropy, and its combination with enthalpy in the Gibbs free energy.
 
 ## Entropy ($S$)
 
 ### Statistical Definition
 
 Entropy is a measure of the number of microstates ($W$) accessible to a system -- that is, the
-number of ways the energy of the system can be distributed among its particles:
+Number of ways the energy of the system can be distributed among its particles:
 
 $$
 S = k_B \ln W
 $$
 
-where $k_B = 1.381 \times 10^{-23}\,\mathrm{J/K}$ is the Boltzmann constant. A system with more
-accessible microstates has higher entropy. This is the Boltzmann equation, engraved on his
-tombstone.
+Where $k_B = 1.381 \times 10^{-23}\,\mathrm{J/K}$ is the Boltzmann constant. A system with more
+Accessible microstates has higher entropy. This is the Boltzmann equation, engraved on his
+Tombstone.
 
 ### Thermodynamic Definition
 
@@ -46,40 +46,40 @@ $$
 $$
 
 This shows that entropy is heat divided by temperature. Transferring a given amount of heat at a
-lower temperature produces a larger entropy change than at a higher temperature.
+Lower temperature produces a larger entropy change than at a higher temperature.
 
 ### Factors Affecting Entropy
 
-| Factor                                | Effect on $S$      | Rationale                                                        |
+| Factor | Effect on $S$ | Rationale |
 | ------------------------------------- | ------------------ | ---------------------------------------------------------------- |
-| More gas molecules produced           | Increase           | More ways to distribute energy among more particles              |
-| Change from solid to liquid to gas    | Increase           | Gases have the most microstates; solids the fewest               |
-| Higher temperature                    | Increase           | More energy available to distribute; more accessible microstates |
-| Dissolution of a solid ionic compound | Increase (usually) | Ions dispersed in solution have more freedom than in the lattice |
-| Fewer moles of gas                    | Decrease           | Fewer particles, fewer microstates                               |
-| Increased pressure of a gas           | Decrease           | Reduced volume constrains the available positions                |
+| More gas molecules produced | Increase | More ways to distribute energy among more particles |
+| Change from solid to liquid to gas | Increase | Gases have the most microstates; solids the fewest |
+| Higher temperature | Increase | More energy available to distribute; more accessible microstates |
+| Dissolution of a solid ionic compound | Increase () | Ions dispersed in solution have more freedom than in the lattice |
+| Fewer moles of gas | Decrease | Fewer particles, fewer microstates |
+| Increased pressure of a gas | Decrease | Reduced volume constrains the available positions |
 
 ### Standard Entropy Values ($S^\circ$)
 
 Standard entropies are **absolute values** (not relative to a reference, unlike enthalpy). At
-$0\,\mathrm{K}$, a perfect crystal has $S = 0$ (third law of thermodynamics). Standard entropies are
-always positive.
+$0\,\mathrm{K}$A perfect crystal has $S = 0$ (third law of thermodynamics). Standard entropies are
+Always positive.
 
 Typical values ($\mathrm{J\,mol^{-1}\,K^{-1}}$):
 
-| Substance                       | $S^\circ$ |
+| Substance | $S^\circ$ |
 | ------------------------------- | --------- |
-| $\mathrm{C}(\mathrm{diamond})$  | 2.4       |
-| $\mathrm{C}(\mathrm{graphite})$ | 5.7       |
-| $\mathrm{Fe}(s)$                | 27.3      |
-| $\mathrm{NaCl}(s)$              | 72.1      |
-| $\mathrm{H}_2\mathrm{O}(l)$     | 69.9      |
-| $\mathrm{H}_2\mathrm{O}(g)$     | 188.8     |
-| $\mathrm{CO}_2(g)$              | 213.7     |
-| $\mathrm{N}_2(g)$               | 191.6     |
+| $\mathrm{C}(\mathrm{diamond})$ | 2.4 |
+| $\mathrm{C}(\mathrm{graphite})$ | 5.7 |
+| $\mathrm{Fe}(s)$ | 27.3 |
+| $\mathrm{NaCl}(s)$ | 72.1 |
+| $\mathrm{H}_2\mathrm{O}(l)$ | 69.9 |
+| $\mathrm{H}_2\mathrm{O}(g)$ | 188.8 |
+| $\mathrm{CO}_2(g)$ | 213.7 |
+| $\mathrm{N}_2(g)$ | 191.6 |
 
 Gases have much higher standard entropies than liquids and solids. Diamond has a lower entropy than
-graphite due to its more rigid, ordered structure.
+Graphite due to its more rigid, ordered structure.
 
 ### Standard Entropy Change
 
@@ -112,14 +112,14 @@ At equilibrium: $\Delta S_\mathrm{universe} = 0$.
 ### Entropy Change of the Surroundings
 
 The surroundings gain or lose heat as a result of the reaction. The entropy change of the
-surroundings is:
+Surroundings is:
 
 $$
 \Delta S_\mathrm{surroundings} = -\frac◆LB◆\Delta H_\mathrm{system}◆RB◆◆LB◆T◆RB◆
 $$
 
 The negative sign arises because when the system releases heat (exothermic, $\Delta H \lt 0$), the
-surroundings gain that heat and their entropy increases. When the system absorbs heat (endothermic,
+Surroundings gain that heat and their entropy increases. When the system absorbs heat (endothermic,
 $\Delta H \gt 0$), the surroundings lose heat and their entropy decreases.
 
 Combining with the second law:
@@ -151,19 +151,19 @@ $$
 $$
 
 This is the most important equation in chemical thermodynamics. It combines the enthalpy and entropy
-contributions into a single quantity that determines spontaneity.
+Contributions into a single quantity that determines spontaneity.
 
 ### Spontaneity Criterion
 
-| $\Delta G$       | Process                                          |
+| $\Delta G$ | Process |
 | ---------------- | ------------------------------------------------ |
-| $\Delta G \lt 0$ | Spontaneous (thermodynamically favourable)       |
-| $\Delta G = 0$   | At equilibrium                                   |
+| $\Delta G \lt 0$ | Spontaneous (thermodynamically favourable) |
+| $\Delta G = 0$ | At equilibrium |
 | $\Delta G \gt 0$ | Non-spontaneous (thermodynamically unfavourable) |
 
 A spontaneous process is one that proceeds without external intervention once initiated.
 "Spontaneous" does not mean "fast" -- kinetics determines the rate; thermodynamics determines the
-direction.
+Direction.
 
 ### Standard Gibbs Free Energy Change
 
@@ -179,17 +179,17 @@ $$
 \Delta G^\circ = -RT\ln K
 $$
 
-where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $T$ is in Kelvin, and $K$ is the equilibrium
-constant (dimensionless, using activities).
+Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$$T$ is in Kelvin, and $K$ is the equilibrium
+Constant (dimensionless, using activities).
 
 This equation is one of the most powerful in chemistry because it connects thermodynamic data to
-measurable equilibrium constants.
+Measurable equilibrium constants.
 
-| $\Delta G^\circ$       | $K$       | Equilibrium Position |
+| $\Delta G^\circ$ | $K$ | Equilibrium Position |
 | ---------------------- | --------- | -------------------- |
-| $\Delta G^\circ \lt 0$ | $K \gt 1$ | Products favoured    |
-| $\Delta G^\circ = 0$   | $K = 1$   | Neither favoured     |
-| $\Delta G^\circ \gt 0$ | $K \lt 1$ | Reactants favoured   |
+| $\Delta G^\circ \lt 0$ | $K \gt 1$ | Products favoured |
+| $\Delta G^\circ = 0$ | $K = 1$ | Neither favoured |
+| $\Delta G^\circ \gt 0$ | $K \lt 1$ | Reactants favoured |
 
 **Worked Example.** For the Haber process at $298\,\mathrm{K}$:
 
@@ -197,14 +197,14 @@ $$
 \mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)
 $$
 
-$\Delta H^\circ = -92\,\mathrm{kJ/mol}$, $\Delta S^\circ = -199\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -92\,\mathrm{kJ/mol}$$\Delta S^\circ = -199\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta G^\circ = -92000 - 298 \times (-199) = -92000 + 59302 = -32698\,\mathrm{J/mol} = -32.7\,\mathrm{kJ/mol}
 $$
 
-Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\,\mathrm{K}$ (but kinetically
-extremely slow without a catalyst).
+Since $\Delta G^\circ \lt 0$The reaction is spontaneous at $298\,\mathrm{K}$ (but kinetically
+Extremely slow without a catalyst).
 
 $$
 K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆32698◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(13.19) = 5.3 \times 10^5
@@ -216,40 +216,40 @@ $298\,\mathrm{K}$.
 ## Temperature Dependence of Feasibility
 
 The $\Delta G = \Delta H - T\Delta S$ equation reveals that the spontaneity of a reaction can change
-with temperature. The four cases:
+With temperature. The four cases:
 
-| $\Delta H$ | $\Delta S$ | Low $T$         | High $T$        | Example                                    |
+| $\Delta H$ | $\Delta S$ | Low $T$ | High $T$ | Example |
 | ---------- | ---------- | --------------- | --------------- | ------------------------------------------ |
-| $-$        | $+$        | Spontaneous     | Spontaneous     | Combustion of hydrogen                     |
-| $-$        | $-$        | Spontaneous     | Non-spontaneous | Freezing of water                          |
-| $+$        | $+$        | Non-spontaneous | Spontaneous     | Thermal decomposition of $\mathrm{CaCO}_3$ |
-| $+$        | $-$        | Non-spontaneous | Non-spontaneous | Decomposition of $\mathrm{N}_2\mathrm{O}$  |
+| $-$ | $+$ | Spontaneous | Spontaneous | Combustion of hydrogen |
+| $-$ | $-$ | Spontaneous | Non-spontaneous | Freezing of water |
+| $+$ | $+$ | Non-spontaneous | Spontaneous | Thermal decomposition of $\mathrm{CaCO}_3$ |
+| $+$ | $-$ | Non-spontaneous | Non-spontaneous | Decomposition of $\mathrm{N}_2\mathrm{O}$ |
 
 ### The Temperature of Equilibrium
 
 The temperature at which a reaction changes from spontaneous to non-spontaneous (or vice versa) is
-the temperature at which $\Delta G = 0$:
+The temperature at which $\Delta G = 0$:
 
 $$
 T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆
 $$
 
 **Worked Example.** At what temperature does the thermal decomposition of calcium carbonate become
-spontaneous?
+Spontaneous?
 
 $$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +178\,\mathrm{kJ/mol}$, $\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 T = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
-Above $1113\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and decomposition is spontaneous. In a lime kiln,
-temperatures of approximately $900$--$1000^\circ\mathrm{C}$ are used to ensure thermodynamic
-feasibility while maintaining a practical rate.
+Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and decomposition is spontaneous. In a lime kiln,
+Temperatures of approximately $900$--$1000^\circ\mathrm{C}$ are used to ensure thermodynamic
+Feasibility while maintaining a practical rate.
 
 ## Graphical Interpretation
 
@@ -257,28 +257,28 @@ A plot of $\Delta G^\circ$ vs $T$ is a straight line with slope $= -\Delta S^\ci
 $= \Delta H^\circ$ (at $T = 0$).
 
 - When $\Delta S^\circ \gt 0$: the line slopes downward. The reaction becomes more spontaneous as
-  temperature increases.
+ temperature increases.
 - When $\Delta S^\circ \lt 0$: the line slopes upward. The reaction becomes less spontaneous as
-  temperature increases.
+ temperature increases.
 - The x-intercept ($\Delta G^\circ = 0$) gives the equilibrium temperature.
 
 **Important caveat:** This linear extrapolation assumes that $\Delta H^\circ$ and $\Delta S^\circ$
-are independent of temperature (Kirchhoff's approximation). This is a reasonable approximation over
-small temperature ranges but fails over large ranges where heat capacities change significantly.
+Are independent of temperature (Kirchhoff's approximation). This is a reasonable approximation over
+Small temperature ranges but fails over large ranges where heat capacities change significantly.
 
 ### Non-Standard Conditions: $\Delta G$ vs $\Delta G^\circ$
 
 The standard free energy change ($\Delta G^\circ$) applies when all reactants and products are in
-their standard states (1 mol/dm$^3$ for solutions, 1 bar for gases). Under non-standard conditions:
+Their standard states (1 mol/dm$^3$ for solutions, 1 bar for gases). Under non-standard conditions:
 
 $$
 \Delta G = \Delta G^\circ + RT\ln Q
 $$
 
-where $Q$ is the reaction quotient (the same expression as $K$ but with current, non-equilibrium
-concentrations or partial pressures).
+Where $Q$ is the reaction quotient (the same expression as $K$ but with current, non-equilibrium
+Concentrations or partial pressures).
 
-At equilibrium, $Q = K$ and $\Delta G = 0$, recovering $\Delta G^\circ = -RT\ln K$.
+At equilibrium, $Q = K$ and $\Delta G = 0$Recovering $\Delta G^\circ = -RT\ln K$.
 
 ## Industrial Applications
 
@@ -292,9 +292,9 @@ $\Delta H^\circ \lt 0$ (exothermic), $\Delta S^\circ \lt 0$ (4 moles of gas to 2
 Chatelier's principle and the Gibbs equation:
 
 - **Low temperature** favours the forward reaction (exothermic). But low temperature gives a slow
-  rate.
+ rate.
 - **High pressure** favours the forward reaction (fewer gas moles on the product side).
-- **Compromise:** $450^\circ\mathrm{C}$, $200\,\mathrm{atm}$, with an iron catalyst.
+- **Compromise:** $450^\circ\mathrm{C}$$200\,\mathrm{atm}$With an iron catalyst.
 
 ### The Contact Process
 
@@ -302,8 +302,8 @@ $$
 2\mathrm{SO}_2(g) + \mathrm{O}_2(g) \rightleftharpoons 2\mathrm{SO}_3(g) \quad \Delta H^\circ = -198\,\mathrm{kJ/mol}
 $$
 
-$\Delta H^\circ \lt 0$, $\Delta S^\circ \lt 0$ (3 moles to 2 moles). Low temperature favours the
-product but slows the rate. Industrial conditions: $450^\circ\mathrm{C}$, $1$--$2\,\mathrm{atm}$,
+$\Delta H^\circ \lt 0$$\Delta S^\circ \lt 0$ (3 moles to 2 moles). Low temperature favours the
+Product but slows the rate. Industrial conditions: $450^\circ\mathrm{C}$$1$--$2\,\mathrm{atm}$
 $\mathrm{V}_2\mathrm{O}_5$ catalyst.
 
 ### Extraction of Iron
@@ -313,32 +313,32 @@ $$
 $$
 
 $\Delta H^\circ \lt 0$ but small. The entropy change is favourable (3 moles of gas reactants to 3
-moles of gas products, but the solid is consumed). At the blast furnace temperature
+Moles of gas products, but the solid is consumed). At the blast furnace temperature
 ($\approx 1500^\circ\mathrm{C}$), the reaction is thermodynamically feasible.
 
 ## Common Pitfalls
 
-1. **Unit mismatch in the Gibbs equation.** $\Delta H$ is typically in $\mathrm{kJ/mol}$, while
-   $\Delta S$ is in $\mathrm{J\,mol^{-1}\,K^{-1}}$. Always convert to consistent units before
-   combining: either convert $\Delta H$ to $\mathrm{J/mol}$ or $\Delta S$ to
-   $\mathrm{kJ\,mol^{-1}\,K^{-1}}$.
+1. **Unit mismatch in the Gibbs equation.** $\Delta H$ is in $\mathrm{kJ/mol}$While
+ $\Delta S$ is in $\mathrm{J\,mol^{-1}\,K^{-1}}$. Always convert to consistent units before
+ combining: either convert $\Delta H$ to $\mathrm{J/mol}$ or $\Delta S$ to
+ $\mathrm{kJ\,mol^{-1}\,K^{-1}}$.
 
 2. **Using $\Delta G \lt 0$ to predict rate.** Thermodynamics says nothing about kinetics. A
-   reaction with $\Delta G \ll 0$ may be immeasurably slow (e.g. diamond conversion to graphite at
-   room temperature: $\Delta G^\circ \approx -2.9\,\mathrm{kJ/mol}$, but the half-life is
-   effectively infinite).
+ reaction with $\Delta G \ll 0$ may be immeasurably slow (e.g. Diamond conversion to graphite at
+ room temperature: $\Delta G^\circ \approx -2.9\,\mathrm{kJ/mol}$But the half-life is
+ effectively infinite).
 
 3. **Forgetting that $\Delta S^\circ$ values are absolute.** Unlike $\Delta H_f^\circ$ (which is
-   relative to elements in standard states), $S^\circ$ values are absolute entropies. $S^\circ$ of
-   an element in its standard state is not zero (except at $0\,\mathrm{K}$).
+ relative to elements in standard states), $S^\circ$ values are absolute entropies. $S^\circ$ of
+ an element in its standard state is not zero (except at $0\,\mathrm{K}$).
 
 4. **Confusing $\Delta G$ with $\Delta G^\circ$.** $\Delta G^\circ$ is the free energy change under
-   standard conditions. The actual free energy change $\Delta G$ depends on the specific
-   concentrations/pressures and is given by $\Delta G = \Delta G^\circ + RT\ln Q$.
+ standard conditions. The actual free energy change $\Delta G$ depends on the specific
+ concentrations/pressures and is given by $\Delta G = \Delta G^\circ + RT\ln Q$.
 
 5. **Assuming the linear $\Delta G$ vs $T$ relationship holds indefinitely.** The equation
-   $\Delta G = \Delta H - T\Delta S$ assumes $\Delta H$ and $\Delta S$ are temperature-independent.
-   Over large temperature ranges, this approximation fails.
+ $\Delta G = \Delta H - T\Delta S$ assumes $\Delta H$ and $\Delta S$ are temperature-independent.
+ Over large temperature ranges, this approximation fails.
 
 ## Practice Problems
 
@@ -347,10 +347,10 @@ moles of gas products, but the solid is consumed). At the blast furnace temperat
 
 For the reaction $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = +131\,\mathrm{kJ/mol}$, $\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +131\,\mathrm{kJ/mol}$$\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$. Is the reaction spontaneous? (b) At what
-temperature does the reaction become spontaneous? (c) Calculate $K$ at $1000\,\mathrm{K}$.
+Temperature does the reaction become spontaneous? (c) Calculate $K$ at $1000\,\mathrm{K}$.
 
 **Solution:**
 
@@ -368,7 +368,7 @@ $$
 T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{131000}{134} = 978\,\mathrm{K} = 705^\circ\mathrm{C}
 $$
 
-Above $978\,\mathrm{K}$, the reaction becomes spontaneous.
+Above $978\,\mathrm{K}$The reaction becomes spontaneous.
 
 (c) At $1000\,\mathrm{K}$:
 
@@ -380,7 +380,7 @@ $$
 K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆3000◆RB◆◆LB◆8.314 \times 1000◆RB◆\right) = \exp(0.361) = 1.43
 $$
 
-$K = 1.43$, so products are slightly favoured at $1000\,\mathrm{K}$.
+$K = 1.43$So products are slightly favoured at $1000\,\mathrm{K}$.
 
 </details>
 
@@ -392,7 +392,7 @@ $\Delta H^\circ = +6.01\,\mathrm{kJ/mol}$ and
 $\Delta S^\circ = +22.0\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate the normal melting point of ice. (b) Explain why ice melts spontaneously at room
-temperature despite the process being endothermic.
+Temperature despite the process being endothermic.
 
 **Solution:**
 
@@ -403,9 +403,9 @@ T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{60
 $$
 
 (b) Although $\Delta H^\circ \gt 0$ (endothermic), $\Delta S^\circ \gt 0$ (entropy increases). At
-temperatures above $273\,\mathrm{K}$, the $T\Delta S$ term exceeds $\Delta H$, making
+Temperatures above $273\,\mathrm{K}$The $T\Delta S$ term exceeds $\Delta H$Making
 $\Delta G \lt 0$. The entropy gain from the increased disorder of the liquid phase more than
-compensates for the enthalpy cost of breaking the hydrogen-bonded lattice.
+Compensates for the enthalpy cost of breaking the hydrogen-bonded lattice.
 
 </details>
 
@@ -414,7 +414,7 @@ compensates for the enthalpy cost of breaking the hydrogen-bonded lattice.
 
 For the reaction $2\mathrm{NO}_2(g) \rightleftharpoons \mathrm{N}_2\mathrm{O}_4(g)$ at $298\,\mathrm{K}$:
 
-$\Delta H^\circ = -57.2\,\mathrm{kJ/mol}$, $\Delta S^\circ = -175.8\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -57.2\,\mathrm{kJ/mol}$$\Delta S^\circ = -175.8\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ and $K_p$ at $298\,\mathrm{K}$.
 (b) At what temperature does $K_p = 1$?
@@ -446,11 +446,11 @@ $$
 
 ### Entropy of Phase Changes
 
-At a phase transition, $\Delta G = 0$, so $\Delta S = \Delta H / T$.
+At a phase transition, $\Delta G = 0$So $\Delta S = \Delta H / T$.
 
 For vaporisation: $\Delta S_\mathrm{vap} = \Delta H_\mathrm{vap} / T_\mathrm{boil}$
 
-Trouton's rule: $\Delta S_\mathrm{vap} \approx 85\,\mathrm{J\,mol^{-1}\,K^{-1}}$ for most non-polar liquids. Deviations indicate hydrogen bonding (e.g. water: $\Delta S_\mathrm{vap} = 109\,\mathrm{J\,mol^{-1}\,K^{-1}}$, due to extra ordering in the liquid from H-bonds).
+Trouton's rule: $\Delta S_\mathrm{vap} \approx 85\,\mathrm{J\,mol^{-1}\,K^{-1}}$ for most non-polar liquids. Deviations indicate hydrogen bonding (e.g. Water: $\Delta S_\mathrm{vap} = 109\,\mathrm{J\,mol^{-1}\,K^{-1}}$Due to extra ordering in the liquid from H-bonds).
 
 ### Entropy of Mixing
 
@@ -460,7 +460,7 @@ $$
 \Delta S_\mathrm{mix} = -nR(x_1 \ln x_1 + x_2 \ln x_2)
 $$
 
-where $x_1$ and $x_2$ are the mole fractions. For equal amounts ($x_1 = x_2 = 0.5$):
+Where $x_1$ and $x_2$ are the mole fractions. For equal amounts ($x_1 = x_2 = 0.5$):
 
 $$
 \Delta S_\mathrm{mix} = -nR(0.5 \ln 0.5 + 0.5 \ln 0.5) = -nR(-0.693) = 5.76n\,\mathrm{J/K}
@@ -486,7 +486,7 @@ $$
 \mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l)
 $$
 
-$S^\circ$ values: $\mathrm{CH}_4(g) = 186.3$, $\mathrm{O}_2(g) = 205.1$, $\mathrm{CO}_2(g) = 213.7$, $\mathrm{H}_2\mathrm{O}(l) = 69.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$S^\circ$ values: $\mathrm{CH}_4(g) = 186.3$$\mathrm{O}_2(g) = 205.1$$\mathrm{CO}_2(g) = 213.7$$\mathrm{H}_2\mathrm{O}(l) = 69.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta S^\circ = [213.7 + 2(69.9)] - [186.3 + 2(205.1)] = 353.5 - 596.5 = -243.0\,\mathrm{J\,mol^{-1}\,K^{-1}}
@@ -522,7 +522,7 @@ Born-Haber cycles apply Hess's Law to ionic compound formation. They are covered
 
 ### Enthalpy-Entropy Compensation
 
-Some reactions show enthalpy-entropy compensation: a more exothermic $\Delta H$ is offset by a more negative $\Delta S$, so $\Delta G$ changes less than expected. This is common in:
+Some reactions show enthalpy-entropy compensation: a more exothermic $\Delta H$ is offset by a more negative $\Delta S$So $\Delta G$ changes less than expected. This is common in:
 
 - Solvent reorganisation around dissolved species.
 - Protein folding (hydrophobic effect).
@@ -572,7 +572,7 @@ $$
 K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆3000◆RB◆◆LB◆8.314 \times 1000◆RB◆\right) = \exp(0.361) = 1.43
 $$
 
-$K > 1$, confirming that products are favoured.
+$K > 1$Confirming that products are favoured.
 
 ### Problem: Using Gibbs Energy to Predict Decomposition
 
@@ -582,13 +582,13 @@ $$
 \mathrm{Ag}_2\mathrm{CO}_3(s) \to \mathrm{Ag}_2\mathrm{O}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +82\,\mathrm{kJ/mol}$, $\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +82\,\mathrm{kJ/mol}$$\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta G^\circ = 82000 - 500 \times 170 = 82000 - 85000 = -3000\,\mathrm{J/mol}
 $$
 
-$\Delta G^\circ < 0$, so the decomposition is spontaneous at $500\,\mathrm{K}$. (The threshold temperature is $T = 82000/170 = 482\,\mathrm{K}$.)
+$\Delta G^\circ < 0$So the decomposition is spontaneous at $500\,\mathrm{K}$. (The threshold temperature is $T = 82000/170 = 482\,\mathrm{K}$.)
 
 ## Advanced Entropy and Gibbs Energy
 
@@ -596,11 +596,11 @@ $\Delta G^\circ < 0$, so the decomposition is spontaneous at $500\,\mathrm{K}$. 
 
 When two ideal gases mix, the entropy always increases because there are more ways to arrange the molecules in the larger volume.
 
-**Worked Example:** $1.0\,\mathrm{mol}$ of $\mathrm{He}$ and $1.0\,\mathrm{mol}$ of $\mathrm{Ne}$, both initially in separate $10.0\,\mathrm{dm}^3$ containers at $298\,\mathrm{K}$, are allowed to mix in a combined volume of $20.0\,\mathrm{dm}^3$. Calculate $\Delta S_\text{mix}$.
+**Worked Example:** $1.0\,\mathrm{mol}$ of $\mathrm{He}$ and $1.0\,\mathrm{mol}$ of $\mathrm{Ne}$Both initially in separate $10.0\,\mathrm{dm}^3$ containers at $298\,\mathrm{K}$Are allowed to mix in a combined volume of $20.0\,\mathrm{dm}^3$. Calculate $\Delta S_\text{mix}$.
 
 $$\Delta S_\text{mix} = -nR\left(x_\mathrm{He}\ln x_\mathrm{He} + x_\mathrm{Ne}\ln x_\mathrm{Ne}\right)$$
 
-where $x_\mathrm{He} = x_\mathrm{Ne} = 0.5$:
+Where $x_\mathrm{He} = x_\mathrm{Ne} = 0.5$:
 
 $$\Delta S_\text{mix} = -(1.0 + 1.0) \times 8.314 \times (0.5 \ln 0.5 + 0.5 \ln 0.5)$$
 
@@ -608,7 +608,7 @@ $$= -2.0 \times 8.314 \times \ln 0.5 = -16.63 \times (-0.693) = +11.5\,\mathrm{J
 
 ### Phase Transitions and Entropy
 
-At a phase transition, the system is at equilibrium so $\Delta G = 0$, giving:
+At a phase transition, the system is at equilibrium so $\Delta G = 0$Giving:
 
 $$\Delta S_\text{transition} = \frac◆LB◆\Delta H_\text{transition}◆RB◆◆LB◆T_\text{transition}◆RB◆$$
 
@@ -644,17 +644,17 @@ A thermodynamically unfavourable reaction ($\Delta G > 0$) can be driven by coup
 **Example:** Hydrolysis of ATP:
 $$\mathrm{ATP} + \mathrm{H}_2\mathrm{O} \to \mathrm{ADP} + \mathrm{P}_i \quad \Delta G^\circ = -30.5\,\mathrm{kJ/mol}$$
 
-This strongly exergonic reaction drives many endergonic processes in cells. If a reaction requires $+20\,\mathrm{kJ/mol}$, coupling with ATP hydrolysis gives:
+This strongly exergonic reaction drives many endergonic processes in cells. If a reaction requires $+20\,\mathrm{kJ/mol}$Coupling with ATP hydrolysis gives:
 
 $$\Delta G_\text{overall} = +20.0 + (-30.5) = -10.5\,\mathrm{kJ/mol}$$
 
 ### Gibbs Energy and Equilibrium: Quantitative Treatment
 
-The relationship between $\Delta G$, the reaction quotient $Q$, and the equilibrium constant $K$:
+The relationship between $\Delta G$The reaction quotient $Q$And the equilibrium constant $K$:
 
 $$\Delta G = \Delta G^\circ + RT\ln Q$$
 
-At equilibrium, $\Delta G = 0$ and $Q = K$, giving:
+At equilibrium, $\Delta G = 0$ and $Q = K$Giving:
 
 $$\Delta G^\circ = -RT\ln K$$
 
@@ -688,7 +688,7 @@ $\Delta G$ is very negative, so the forward reaction is strongly favoured initia
 
 | Industrial Process | Reaction | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{threshold}$ (K) |
 |---|---|---|---|---|
-| Haber process | $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$ | $-92$ | $-199$ | Not applicable ($\Delta H < 0$, $\Delta S < 0$: spontaneous at low $T$) |
+| Haber process | $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$ | $-92$ | $-199$ | Not applicable ($\Delta H < 0$$\Delta S < 0$: spontaneous at low $T$) |
 | Contact process | $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$ | $-198$ | $-190$ | Not applicable |
 | Thermal decomposition of $\mathrm{CaCO}_3$ | $\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$ | $+178$ | $+161$ | $1106$ |
 | Roasting of $\mathrm{ZnS}$ | $2\mathrm{ZnS} + 3\mathrm{O}_2 \to 2\mathrm{ZnO} + 2\mathrm{SO}_2$ | $-880$ | $+100$ | Spontaneous at all $T$ |
@@ -700,7 +700,7 @@ $\Delta G$ is very negative, so the forward reaction is strongly favoured initia
 
 For the reaction $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = +131\,\mathrm{kJ/mol}$, $\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +131\,\mathrm{kJ/mol}$$\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$ and state whether the reaction is feasible. (3 marks)
 
@@ -710,7 +710,7 @@ $\Delta H^\circ = +131\,\mathrm{kJ/mol}$, $\Delta S^\circ = +134\,\mathrm{J\,mol
 
 (a) $\Delta G^\circ = 131000 - 298 \times 134 = 131000 - 39932 = +91068\,\mathrm{J/mol} = +91.1\,\mathrm{kJ/mol}$ (2 marks for calculation).
 
-$\Delta G^\circ > 0$, so the reaction is **not feasible** at $298\,\mathrm{K}$ (1 mark).
+$\Delta G^\circ > 0$So the reaction is **not feasible** at $298\,\mathrm{K}$ (1 mark).
 
 (b) $\Delta G^\circ = 0$ when $T = \Delta H^\circ / \Delta S^\circ = 131000 / 134 = 978\,\mathrm{K}$ (2 marks).
 
@@ -723,7 +723,7 @@ The reaction becomes feasible above $978\,\mathrm{K}$.
 
 Explain why the entropy change for the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ is positive, and calculate $\Delta S^\circ$ given the following standard entropies:
 
-$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 **Mark Scheme:**
 
@@ -744,7 +744,7 @@ $$\mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathr
 
 $\Delta S^\circ = [213 + 2(70)] - [186 + 2(205)] = 353 - 596 = -243\,\mathrm{J\,mol^{-1}\,K^{-1}}$ (2 marks).
 
-Since $\Delta H < 0$ and $\Delta S < 0$, the reaction is feasible only when $\Delta G = \Delta H - T\Delta S < 0$, i.e. when $T < |\Delta H / \Delta S| = 890000/243 = 3663\,\mathrm{K}$ (2 marks).
+Since $\Delta H < 0$ and $\Delta S < 0$The reaction is feasible only when $\Delta G = \Delta H - T\Delta S < 0$I.e. When $T < |\Delta H / \Delta S| = 890000/243 = 3663\,\mathrm{K}$ (2 marks).
 
 The claim is **correct in practice** (combustion is feasible at all reasonable temperatures), but **incorrect in principle** -- at sufficiently high temperatures (above $3663\,\mathrm{K}$), the reaction would not be thermodynamically feasible (1 mark).
 
@@ -762,3 +762,7 @@ $$\Delta S_\text{fus} = \frac◆LB◆\Delta H_\text{fus}◆RB◆◆LB◆T_\text{
 The entropy change is positive because the solid sodium becomes a liquid, which has greater disorder and more ways to arrange the particles (1 mark). The ions in the liquid are no longer fixed in a lattice and have greater freedom of movement (1 mark).
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

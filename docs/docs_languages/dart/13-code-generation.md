@@ -13,22 +13,22 @@ slug: code-generation
 ## What is Code Generation
 
 Code generation in Dart is the process of automatically producing Dart source code from annotations,
-builders, and configuration at build time. It reduces boilerplate, eliminates human error in
-repetitive code (serialization, equality, copyWith), and ensures consistency between models and
-their derived code.
+Builders, and configuration at build time. It reduces boilerplate, eliminates human error in
+Repetitive code (serialization, equality, copyWith), and ensures consistency between models and
+Their derived code.
 
 The Dart ecosystem relies on the `build_runner` package as the foundation for all code generation
-workflows. Packages like `freezed`, `json_serializable`, `injectable`, `retrofit`, and `auto_route`
-all use `build_runner` under the hood.
+Workflows. Packages like `freezed``json_serializable``injectable``retrofit`And `auto_route`
+All use `build_runner` under the hood.
 
 ### Why Code Generation
 
-1. **Boilerplate reduction**: `copyWith`, `==`, `hashCode`, `toString`, `fromJson`/`toJson` are
-   generated, not hand-written
+1. **Boilerplate reduction**: `copyWith``==``hashCode``toString``fromJson`/`toJson` are
+ generated, not hand-written
 2. **Consistency**: generated code is always in sync with the model — change a field, regenerate,
-   and serialization updates
+ and serialization updates
 3. **Performance**: generated code avoids runtime reflection (which Dart does not have), using
-   direct field access instead
+ direct field access instead
 4. **Safety**: compile-time errors surface immediately after regeneration, not at runtime
 
 ### The build_runner Ecosystem
@@ -52,7 +52,7 @@ Annotations (your code)
 ## build_runner
 
 `build_runner` is the canonical build system for Dart code generation. It orchestrates builders that
-consume source code and emit generated files.
+Consume source code and emit generated files.
 
 ### Core Commands
 
@@ -109,7 +109,7 @@ global_options:
 ### Targets
 
 Targets define which builders run on which source files. The `$default` target applies to all
-packages in the workspace.
+Packages in the workspace.
 
 ```yaml
 targets:
@@ -133,7 +133,7 @@ targets:
 ### Builders Configuration
 
 Each builder has its own set of options. Refer to the builder package's documentation for available
-options:
+Options:
 
 ```yaml
 targets:
@@ -169,8 +169,8 @@ global_options:
 
 ## freezed
 
-`freezed` generates immutable data classes with `copyWith`, `==`, `hashCode`, `toString`, and union
-type support using Dart sealed classes.
+`freezed` generates immutable data classes with `copyWith``==``hashCode``toString`And union
+Type support using Dart sealed classes.
 
 ### Basic Usage
 
@@ -190,7 +190,7 @@ class User with _$User {
 }
 ```
 
-After running `dart run build_runner build`, freezed generates:
+After running `dart run build_runner build`Freezed generates:
 
 - `_$User` — the private implementation class
 - `copyWith()` — returns a new instance with selected fields changed
@@ -222,7 +222,7 @@ void main() {
 ### Union Types
 
 `freezed` excels at modeling sealed class hierarchies — union types where a value can be one of
-several variants:
+Several variants:
 
 ```dart
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -329,7 +329,7 @@ class Config with _$Config {
 
 Use `freezed` when:
 
-- You need `copyWith`, equality, and `toString` generated
+- You need `copyWith`Equality, and `toString` generated
 - You're modeling data transfer objects (DTOs), API responses, or state
 - You want union types with `when`/`maybeWhen` convenience methods
 
@@ -366,7 +366,7 @@ class Product with _$Product {
 ## json_serializable
 
 `json_serializable` generates `fromJson` and `toJson` methods for Dart classes from annotations,
-avoiding manual serialization code.
+Avoiding manual serialization code.
 
 ### Basic Usage
 
@@ -458,8 +458,8 @@ class Address {
 }
 ```
 
-Without `explicitToJson: true`, nested objects would serialize as `toString()` output instead of
-proper JSON maps.
+Without `explicitToJson: true`Nested objects would serialize as `toString()` output instead of
+Proper JSON maps.
 
 ### Custom Converters with JsonConverter
 
@@ -638,19 +638,19 @@ class Task {
 ## Generated File Suffixes
 
 Different code generation packages produce files with specific suffixes. Understanding these
-conventions helps with `.gitignore` configuration and debugging.
+Conventions helps with `.gitignore` configuration and debugging.
 
-| Suffix          | Package                                       | Purpose                                                                |
+| Suffix | Package | Purpose |
 | --------------- | --------------------------------------------- | ---------------------------------------------------------------------- |
-| `.g.dart`       | `json_serializable`, `injectable`, `retrofit` | General generated code (fromJson/toJson, DI registration, API clients) |
-| `.freezed.dart` | `freezed`                                     | Immutable class implementations, union types, copyWith                 |
-| `.gr.dart`      | `retrofit`, `auto_route`                      | Retrofit API client, AutoRoute router generated files                  |
-| `.config.dart`  | `injectable`                                  | Generated dependency configuration                                     |
-| `.chopper.dart` | `chopper`                                     | Chopper API client generated code                                      |
+| `.g.dart` | `json_serializable``injectable``retrofit` | General generated code (fromJson/toJson, DI registration, API clients) |
+| `.freezed.dart` | `freezed` | Immutable class implementations, union types, copyWith |
+| `.gr.dart` | `retrofit``auto_route` | Retrofit API client, AutoRoute router generated files |
+| `.config.dart` | `injectable` | Generated dependency configuration |
+| `.chopper.dart` | `chopper` | Chopper API client generated code |
 
 ### .gitignore Configuration
 
-Generated files should typically be excluded from version control since they can be regenerated:
+Generated files should be excluded from version control since they can be regenerated:
 
 ```gitignore
 # Code generation
@@ -665,7 +665,7 @@ Generated files should typically be excluded from version control since they can
 
 When NOT committing generated files, CI must run `build_runner build` before `dart compile` or
 `flutter build`. When committing them, every PR that touches annotated files must also commit the
-regenerated output.
+Regenerated output.
 
 ### Part and Part Of Directives
 
@@ -799,8 +799,8 @@ dart run build_runner watch --delete-conflicting-outputs
 ```
 
 Watch mode monitors all files in the project and triggers regeneration when annotated source files
-change. This is useful during active model development but consumes resources — consider stopping it
-when working on unrelated files.
+Change. This is useful during active model development but consumes resources — consider stopping it
+When working on unrelated files.
 
 ### Cleaning Stale Generated Files
 
@@ -856,8 +856,8 @@ jobs:
 
 ### Generated Files Not in VCS but Needed for Compilation
 
-When generated files are in `.gitignore`, every developer and CI runner must generate them before
-compilation. This means:
+When generated files are in `.gitignore`Every developer and CI runner must generate them before
+Compilation. This means:
 
 ```bash
 # Clone and setup
@@ -896,7 +896,7 @@ test: generate
 ### Forgetting to Run build_runner
 
 The most common mistake. After adding or modifying annotations, the generated file is stale or
-missing. Symptoms include:
+Missing. Symptoms include:
 
 - Compilation errors: `Error: No part file found for 'user.freezed.dart'`
 - Runtime errors: `_$UserFromJson is not defined`
@@ -907,7 +907,7 @@ missing. Symptoms include:
 ### Generated File Conflicts
 
 When two builders try to generate the same file, or when a stale generated file conflicts with new
-output:
+Output:
 
 ```
 Error: Conflicting outputs were found and the build cannot continue.
@@ -922,7 +922,7 @@ dart run build_runner build --delete-conflicting-outputs
 ### Stale Generated Files
 
 After switching git branches or resolving merge conflicts, generated files may reference classes or
-fields that no longer exist:
+Fields that no longer exist:
 
 ```dart
 // Generated file references a field that was removed from the source
@@ -939,7 +939,7 @@ dart run build_runner clean && dart run build_runner build --delete-conflicting-
 
 ### build_runner Version Mismatches
 
-Using incompatible versions of `build_runner`, `source_gen`, and builder packages (e.g., `freezed`,
+Using incompatible versions of `build_runner``source_gen`And builder packages (e.g., `freezed`
 `json_serializable`) causes cryptic errors:
 
 ```
@@ -958,7 +958,7 @@ Check the builder package's changelog for compatible `build_runner` versions.
 ### Watching Too Many Files (Performance)
 
 `build_runner watch` monitors all files in the project by default. In large monorepos or projects
-with many assets, this causes excessive file system activity:
+With many assets, this causes excessive file system activity:
 
 ```bash
 # Limit watch scope with generate_for in build.yaml
@@ -986,11 +986,11 @@ targets:
 ### Generated Files Not in VCS but Needed for Compilation
 
 If `.g.dart` and `.freezed.dart` are in `.gitignore` but CI doesn't run `build_runner` before
-compilation, builds fail. Ensure CI pipelines always include the generation step before
+Compilation, builds fail. Ensure CI pipelines always include the generation step before
 `dart analyze` or `dart test`.
 
 Conversely, if generated files ARE committed to VCS, failing to commit them after model changes
-causes CI to fail on the analyzer. Always check that generated files are up to date before pushing:
+Causes CI to fail on the analyzer. Always check that generated files are up to date before pushing:
 
 ```bash
 # Verify generated files are in sync
@@ -1020,8 +1020,8 @@ part 'user.freezed.dart';
 ### Mixing Annotation Packages
 
 Using `freezed` with `json_serializable` requires specific import and part configuration. Forgetting
-the `@JsonSerializable` integration step or missing the `.g.dart` part directive causes partial
-generation:
+The `@JsonSerializable` integration step or missing the `.g.dart` part directive causes partial
+Generation:
 
 ```dart
 // WRONG — only freezed part, no json_serializable part
@@ -1048,3 +1048,11 @@ class User with _$User {
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

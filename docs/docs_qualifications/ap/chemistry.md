@@ -13,15 +13,15 @@ slug: chemistry
 
 ### Key Concepts
 
-Atoms consist of protons and neutrons in the nucleus and electrons in orbitals described by quantum numbers $(n, \ell, m_\ell, m_s)$. The electron configuration follows the Aufbau principle, with exceptions for half-filled and fully filled d subshells (Cr: $[\mathrm{Ar{}]\,4s^1 3d^5$, Cu: $[\mathrm{Ar{}]\,4s^1 3d^{10}$).
+Atoms consist of protons and neutrons in the nucleus and electrons in orbitals described by quantum numbers $(n, \ell, m_\ell, m_s)$. The electron configuration follows the Aufbau principle, with exceptions for half-filled and fully filled d subshells (Cr: $[\mathrm{Ar{}]\,4s^1 3d^5$Cu: $[\mathrm{Ar{}]\,4s^1 3d^{10}$).
 
 Effective nuclear charge $Z_{\mathrm{eff{}} = Z - S$ underpins all periodic trends:
 
-| Trend             | Across a Period       | Down a Group          |
+| Trend | Across a Period | Down a Group |
 | ----------------- | --------------------- | --------------------- |
-| Atomic radius     | Decreases             | Increases             |
-| Ionisation energy | Increases (dips at 13, 16) | Decreases             |
-| Electronegativity | Increases             | Decreases             |
+| Atomic radius | Decreases | Increases |
+| Ionisation energy | Increases (dips at 13, 16) | Decreases |
+| Electronegativity | Increases | Decreases |
 
 The photoelectric effect demonstrates the particle nature of light:
 
@@ -45,20 +45,20 @@ Formal charge: $\mathrm{FC{} = V - N - B/2$. The best Lewis structure minimises 
 
 Electron pairs arrange to minimise repulsion. Lone pair--lone pair > lone pair--bond pair > bond pair--bond pair.
 
-| Domains | Bonding | Lone | Shape             | Bond Angle        |
+| Domains | Bonding | Lone | Shape | Bond Angle |
 | ------- | ------- | ---- | ----------------- | ----------------- |
-| 2       | 2       | 0    | Linear            | $180^\circ$       |
-| 3       | 3       | 0    | Trigonal planar   | $120^\circ$       |
-| 3       | 2       | 1    | Bent              | $< 120^\circ$     |
-| 4       | 4       | 0    | Tetrahedral       | $109.5^\circ$     |
-| 4       | 3       | 1    | Trigonal pyramidal| $< 109.5^\circ$   |
-| 4       | 2       | 2    | Bent              | $< 109.5^\circ$   |
-| 5       | 4       | 1    | Seesaw            | varies            |
-| 6       | 4       | 2    | Square planar     | $90^\circ$        |
+| 2 | 2 | 0 | Linear | $180^\circ$ |
+| 3 | 3 | 0 | Trigonal planar | $120^\circ$ |
+| 3 | 2 | 1 | Bent | $< 120^\circ$ |
+| 4 | 4 | 0 | Tetrahedral | $109.5^\circ$ |
+| 4 | 3 | 1 | Trigonal pyramidal| $< 109.5^\circ$ |
+| 4 | 2 | 2 | Bent | $< 109.5^\circ$ |
+| 5 | 4 | 1 | Seesaw | varies |
+| 6 | 4 | 2 | Square planar | $90^\circ$ |
 
 ### Hybridisation and MO Theory
 
-Hybridisation matches electron domains: 2 = sp, 3 = sp$^2$, 4 = sp$^3$, 5 = sp$^3$d, 6 = sp$^3$d$^2$. Sigma bonds form from head-on overlap; pi bonds form from side-to-side overlap of unhybridised p orbitals.
+Hybridisation matches electron domains: 2 = sp, 3 = sp$^2$4 = sp$^3$5 = sp$^3$D, 6 = sp$^3$D$^2$. Sigma bonds form from head-on overlap; pi bonds form from side-to-side overlap of unhybridised p orbitals.
 
 Molecular orbital (MO) theory treats electrons as delocalised over the entire molecule. For homonuclear diatomics, MO diagrams predict bond order:
 
@@ -82,11 +82,11 @@ For limiting reactant problems, divide each reactant's moles by its stoichiometr
 
 $$PV = nRT$$
 
-where $R = 0.08206\;\mathrm{L\cdot atm/(mol\cdot K){}$ or $R = 8.314\;\mathrm{J/(mol\cdot K){}$.
+Where $R = 0.08206\;\mathrm{L\cdot atm/(mol\cdot K){}$ or $R = 8.314\;\mathrm{J/(mol\cdot K){}$.
 
-At STP ($273.15\;\mathrm{K{}$, $1\;\mathrm{atm{}$), one mole of ideal gas occupies $22.4\;\mathrm{L{}$.
+At STP ($273.15\;\mathrm{K{}$$1\;\mathrm{atm{}$), one mole of ideal gas occupies $22.4\;\mathrm{L{}$.
 
-Dalton's law: $P_{\mathrm{total{}} = P_1 + P_2 + \cdots$, and $P_i = \chi_i P_{\mathrm{total{}}$.
+Dalton's law: $P_{\mathrm{total{}} = P_1 + P_2 + \cdots$And $P_i = \chi_i P_{\mathrm{total{}}$.
 
 ### Kinetic Molecular Theory (KMT)
 
@@ -134,16 +134,16 @@ $$\Delta S_{\mathrm{universe{}} = \Delta S_{\mathrm{system{}} + \Delta S_{\mathr
 
 $$\Delta G = \Delta H - T\Delta S, \qquad \Delta G^\circ = -RT\ln K$$
 
-| $\Delta H$ | $\Delta S$ | Spontaneous at     |
+| $\Delta H$ | $\Delta S$ | Spontaneous at |
 | ---------- | ---------- | ------------------ |
-| $-$        | $+$        | All $T$            |
-| $+$        | $-$        | Never              |
-| $-$        | $-$        | Low $T$ only       |
-| $+$        | $+$        | High $T$ only      |
+| $-$ | $+$ | All $T$ |
+| $+$ | $-$ | Never |
+| $-$ | $-$ | Low $T$ only |
+| $+$ | $+$ | High $T$ only |
 
 ### Worked Example
 
-For $\mathrm{N{}_2(g) + 3\mathrm{H{}_2(g) \to 2\mathrm{NH{}_3(g)$: $\Delta H^\circ = -92.2\;\mathrm{kJ/mol{}$, $\Delta S^\circ = -198.8\;\mathrm{J/(mol\cdot K){}$.
+For $\mathrm{N{}_2(g) + 3\mathrm{H{}_2(g) \to 2\mathrm{NH{}_3(g)$: $\Delta H^\circ = -92.2\;\mathrm{kJ/mol{}$$\Delta S^\circ = -198.8\;\mathrm{J/(mol\cdot K){}$.
 
 $$\Delta G^\circ = -92200 - 298(-198.8) = -92200 + 59242 = -33.0\;\mathrm{kJ/mol{}$$
 
@@ -157,9 +157,9 @@ For $a\mathrm{A{} + b\mathrm{B{} \rightleftharpoons c\mathrm{C{} + d\mathrm{D{}$
 
 $$K_c = \frac{[\mathrm{C{}]^c[\mathrm{D{}]^d}{[\mathrm{A{}]^a[\mathrm{B{}]^b}, \qquad K_p = K_c(RT)^{\Delta n}$$
 
-where $\Delta n = (\text{moles gaseous products{}) - (\text{moles gaseous reactants{})$. Solids and pure liquids are omitted.
+Where $\Delta n = (\text{moles gaseous products{}) - (\text{moles gaseous reactants{})$. Solids and pure liquids are omitted.
 
-The reaction quotient $Q$ uses current concentrations. If $Q < K$, the reaction proceeds forward; if $Q > K$, it proceeds in reverse.
+The reaction quotient $Q$ uses current concentrations. If $Q < K$The reaction proceeds forward; if $Q > K$It proceeds in reverse.
 
 ### Le Chatelier's Principle
 
@@ -171,13 +171,13 @@ ICE (Initial, Change, Equilibrium) tables calculate equilibrium concentrations s
 
 ### Worked Example
 
-For $\mathrm{H{}_2(g) + \mathrm{I{}_2(g) \rightleftharpoons 2\mathrm{HI{}(g)$, $K_c = 50.5$. Starting with $1.00\;\mathrm{M{}$ each of $\mathrm{H{}_2$ and $\mathrm{I{}_2$:
+For $\mathrm{H{}_2(g) + \mathrm{I{}_2(g) \rightleftharpoons 2\mathrm{HI{}(g)$$K_c = 50.5$. Starting with $1.00\;\mathrm{M{}$ each of $\mathrm{H{}_2$ and $\mathrm{I{}_2$:
 
-| Species        | Initial | Change | Equilibrium    |
+| Species | Initial | Change | Equilibrium |
 | -------------- | ------- | ------ | -------------- |
-| $\mathrm{H{}_2$ | 1.00    | $-x$   | $1.00 - x$     |
-| $\mathrm{I{}_2$ | 1.00    | $-x$   | $1.00 - x$     |
-| $\mathrm{HI{}$  | 0       | $+2x$  | $2x$           |
+| $\mathrm{H{}_2$ | 1.00 | $-x$ | $1.00 - x$ |
+| $\mathrm{I{}_2$ | 1.00 | $-x$ | $1.00 - x$ |
+| $\mathrm{HI{}$ | 0 | $+2x$ | $2x$ |
 
 $$K_c = \frac{(2x)^2}{(1.00 - x)^2} = 50.5 \implies \frac{2x}{1.00 - x} = 7.11 \implies x = 0.781$$
 
@@ -193,11 +193,11 @@ Orders $m$ and $n$ are determined experimentally, not from stoichiometric coeffi
 
 ### Integrated Rate Laws
 
-| Order  | Integrated Law                              | Half-life          | Linear Plot          |
+| Order | Integrated Law | Half-life | Linear Plot |
 | ------ | ------------------------------------------- | ------------------ | -------------------- |
-| 0      | $[\mathrm{A{}] = -kt + [\mathrm{A{}]_0$       | $[\mathrm{A{}]_0/2k$| $[\mathrm{A{}]$ vs $t$ |
-| 1      | $\ln[\mathrm{A{}] = -kt + \ln[\mathrm{A{}]_0$ | $0.693/k$          | $\ln[\mathrm{A{}]$ vs $t$ |
-| 2      | $1/[\mathrm{A{}] = kt + 1/[\mathrm{A{}]_0$    | $1/(k[\mathrm{A{}]_0)$| $1/[\mathrm{A{}]$ vs $t$ |
+| 0 | $[\mathrm{A{}] = -kt + [\mathrm{A{}]_0$ | $[\mathrm{A{}]_0/2k$| $[\mathrm{A{}]$ vs $t$ |
+| 1 | $\ln[\mathrm{A{}] = -kt + \ln[\mathrm{A{}]_0$ | $0.693/k$ | $\ln[\mathrm{A{}]$ vs $t$ |
+| 2 | $1/[\mathrm{A{}] = kt + 1/[\mathrm{A{}]_0$ | $1/(k[\mathrm{A{}]_0)$| $1/[\mathrm{A{}]$ vs $t$ |
 
 ### Arrhenius Equation
 
@@ -211,7 +211,7 @@ Elementary step molecularity determines the rate law for that step. The rate-det
 
 ### Worked Example
 
-$k = 3.0 \times 10^{-3}\;\mathrm{s{}^{-1}$ at $300\;\mathrm{K{}$, $k = 2.4 \times 10^{-2}\;\mathrm{s{}^{-1}$ at $350\;\mathrm{K{}$.
+$k = 3.0 \times 10^{-3}\;\mathrm{s{}^{-1}$ at $300\;\mathrm{K{}$$k = 2.4 \times 10^{-2}\;\mathrm{s{}^{-1}$ at $350\;\mathrm{K{}$.
 
 $$\ln\frac{2.4 \times 10^{-2}}{3.0 \times 10^{-3}} = \frac{E_a}{8.314}\!\left(\frac{1}{300} - \frac{1}{350}\right)$$
 
@@ -227,7 +227,7 @@ $$K_w = [\mathrm{H{}^+][\mathrm{OH{}^-] = 1.0 \times 10^{-14} \text{ at {} 25^\c
 
 ### Strong and Weak Acids/Bases
 
-Strong acids ($\mathrm{HCl{}$, $\mathrm{HBr{}$, $\mathrm{HI{}$, $\mathrm{HNO{}_3$, $\mathrm{HClO{}_4$, $\mathrm{H{}_2\mathrm{SO{}_4$) dissociate completely. Weak acids have $K_a$:
+Strong acids ($\mathrm{HCl{}$$\mathrm{HBr{}$$\mathrm{HI{}$$\mathrm{HNO{}_3$$\mathrm{HClO{}_4$$\mathrm{H{}_2\mathrm{SO{}_4$) dissociate completely. Weak acids have $K_a$:
 
 $$K_a = \frac{[\mathrm{H{}^+][\mathrm{A{}^-]}{[\mathrm{HA{}]}, \qquad K_a \cdot K_b = K_w$$
 
@@ -293,7 +293,7 @@ For non-standard conditions:
 
 $$E = E^\circ - \frac{RT}{nF}\ln Q = E^\circ - \frac{0.0592}{n}\log Q \quad (\text{at {} 298\;\mathrm{K{})$$
 
-where $n$ is moles of electrons transferred, $F = 96485\;\mathrm{C/mol{}$, and $Q$ is the reaction quotient using activities (approximated by concentrations/partial pressures).
+Where $n$ is moles of electrons transferred, $F = 96485\;\mathrm{C/mol{}$And $Q$ is the reaction quotient using activities (approximated by concentrations/partial pressures).
 
 ### Relationship to Thermodynamics
 
@@ -338,7 +338,7 @@ Faraday's law: $1\;\mathrm{mol{}$ of electrons ($96485\;\mathrm{C{}$) reduces $1
 9. **Confusing $\Delta G^\circ$ with $\Delta G$.** $\Delta G^\circ = -RT\ln K$ (standard conditions); $\Delta G = \Delta G^\circ + RT\ln Q$ (any conditions).
 10. **Misapplying the Henderson-Hasselbalch equation.** It requires a buffer system (weak acid/conjugate base pair), not just any mixture.
 11. **Forgetting to account for dilution** when mixing solutions before calculating concentrations in $K_{sp}$ or $Q$ problems.
-12. **Sign errors in electrochemistry.** $E_{\mathrm{cell{}}^\circ = E_{\mathrm{cathode{}}^\circ - E_{\mathrm{anode{}}^\circ$. Subtract the anode potential; do not simply add the more positive value.
+12. **Sign errors in electrochemistry.** $E_{\mathrm{cell{}}^\circ = E_{\mathrm{cathode{}}^\circ - E_{\mathrm{anode{}}^\circ$. Subtract the anode potential; do not add the more positive value.
 13. **Reversing anode and cathode in electrolytic cells.** Oxidation still occurs at the anode, but the anode is connected to the positive terminal.
 14. **Using $n$ incorrectly in the Nernst equation.** $n$ is the moles of electrons transferred in the balanced redox equation, not per mole of reactant.
 
@@ -349,7 +349,7 @@ Faraday's law: $1\;\mathrm{mol{}$ of electrons ($96485\;\mathrm{C{}$) reduces $1
 
 For the reaction $\mathrm{N{}_2\mathrm{O{}_4(g) \rightleftharpoons 2\mathrm{NO{}_2(g)$:
 
-(a) At $298\;\mathrm{K{}$, $\Delta H^\circ = 57.2\;\mathrm{kJ/mol{}$ and $\Delta S^\circ = 175.8\;\mathrm{J/(mol\cdot K){}$. Calculate $\Delta G^\circ$ and $K_p$ at $298\;\mathrm{K{}$.
+(a) At $298\;\mathrm{K{}$$\Delta H^\circ = 57.2\;\mathrm{kJ/mol{}$ and $\Delta S^\circ = 175.8\;\mathrm{J/(mol\cdot K){}$. Calculate $\Delta G^\circ$ and $K_p$ at $298\;\mathrm{K{}$.
 
 (b) Is the reaction product-favoured or reactant-favoured at $298\;\mathrm{K{}$? Justify.
 
@@ -367,7 +367,7 @@ $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = 57200 - 298(175.8) = 57200
 
 $$K_p = e^{-\Delta G^\circ/(RT)} = e^{-4812/(8.314 \times 298)} = e^{-1.943} = 0.143$$
 
-(b) $K_p = 0.143 < 1$, so reactants are favoured at $298\;\mathrm{K{}$.
+(b) $K_p = 0.143 < 1$So reactants are favoured at $298\;\mathrm{K{}$.
 
 (c) At $\Delta G = 0$: $T = \Delta H^\circ / \Delta S^\circ = 57200 / 175.8 = 325.4\;\mathrm{K{}$.
 
@@ -405,7 +405,7 @@ $K_b = K_w / K_a = 1.0 \times 10^{-14} / 6.2 \times 10^{-10} = 1.61 \times 10^{-
 
 $[\mathrm{OH{}^-] = \sqrt{K_b \cdot C_0} = \sqrt{(1.61 \times 10^{-5})(0.0500)} = 8.97 \times 10^{-4}\;\mathrm{M{}$.
 
-$\mathrm{pOH{} = 3.05$, $\mathrm{pH{} = 14 - 3.05 = 10.95$.
+$\mathrm{pOH{} = 3.05$$\mathrm{pH{} = 14 - 3.05 = 10.95$.
 
 (d) Phenolphthalein ($\mathrm{p{}K_a = 9.7$) is appropriate because the equivalence point pH is 10.95, which falls within the phenolphthalein transition range (approximately 8.2--10.0). Bromothymol blue transitions around pH 7, far from the equivalence point.
 
@@ -416,8 +416,8 @@ $\mathrm{pOH{} = 3.05$, $\mathrm{pH{} = 14 - 3.05 = 10.95$.
 
 Consider the following standard reduction potentials:
 
-- $\mathrm{Ag{}^+(aq) + e^- \to \mathrm{Ag{}(s)$, $E^\circ = +0.80\;\mathrm{V{}$
-- $\mathrm{Fe{}^{3+}(aq) + e^- \to \mathrm{Fe{}^{2+}(aq)$, $E^\circ = +0.77\;\mathrm{V{}$
+- $\mathrm{Ag{}^+(aq) + e^- \to \mathrm{Ag{}(s)$$E^\circ = +0.80\;\mathrm{V{}$
+- $\mathrm{Fe{}^{3+}(aq) + e^- \to \mathrm{Fe{}^{2+}(aq)$$E^\circ = +0.77\;\mathrm{V{}$
 
 (a) Write the balanced net ionic equation for the spontaneous reaction and calculate $E_{\mathrm{cell{}}^\circ$.
 
@@ -425,14 +425,14 @@ Consider the following standard reduction potentials:
 
 (c) Calculate $K$ at $298\;\mathrm{K{}$.
 
-(d) Calculate $E_{\mathrm{cell{}}$ when $[\mathrm{Ag{}^+] = 0.010\;\mathrm{M{}$, $[\mathrm{Fe{}^{3+}] = 0.10\;\mathrm{M{}$, and $[\mathrm{Fe{}^{2+}] = 0.0010\;\mathrm{M{}$.
+(d) Calculate $E_{\mathrm{cell{}}$ when $[\mathrm{Ag{}^+] = 0.010\;\mathrm{M{}$$[\mathrm{Fe{}^{3+}] = 0.10\;\mathrm{M{}$And $[\mathrm{Fe{}^{2+}] = 0.0010\;\mathrm{M{}$.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) $\mathrm{Fe{}^{2+}$ has the less positive $E^\circ$, so it is oxidised at the anode. $\mathrm{Ag{}^+$ is reduced at the cathode.
+(a) $\mathrm{Fe{}^{2+}$ has the less positive $E^\circ$So it is oxidised at the anode. $\mathrm{Ag{}^+$ is reduced at the cathode.
 
 Oxidation (anode): $\mathrm{Fe{}^{2+}(aq) \to \mathrm{Fe{}^{3+}(aq) + e^-$
 
@@ -450,7 +450,7 @@ $E_{\mathrm{cell{}}^\circ = E_{\mathrm{cathode{}}^\circ - E_{\mathrm{anode{}}^\c
 
 $E = E^\circ - \frac{0.0592}{1}\log Q = 0.03 - 0.0592\log(10000) = 0.03 - 0.0592(4) = 0.03 - 0.237 = -0.207\;\mathrm{V{}$
 
-$E < 0$, so the reverse reaction is spontaneous under these conditions (high $[\mathrm{Fe{}^{3+}]$, low $[\mathrm{Ag{}^+]$).
+$E < 0$So the reverse reaction is spontaneous under these conditions (high $[\mathrm{Fe{}^{3+}]$Low $[\mathrm{Ag{}^+]$).
 
 </details>
 
@@ -480,7 +480,7 @@ Show that this mechanism is consistent with the experimental rate law.
 
 (a) Overall order = $2 + 1 = 3$.
 
-(b) Step 1 is a fast equilibrium: $K = \frac{[\mathrm{NOBr{}_2]}{[\mathrm{NO{}][\mathrm{Br{}_2]}$, so $[\mathrm{NOBr{}_2] = K[\mathrm{NO{}][\mathrm{Br{}_2]$.
+(b) Step 1 is a fast equilibrium: $K = \frac{[\mathrm{NOBr{}_2]}{[\mathrm{NO{}][\mathrm{Br{}_2]}$So $[\mathrm{NOBr{}_2] = K[\mathrm{NO{}][\mathrm{Br{}_2]$.
 
 The rate is determined by the slow step: $\mathrm{Rate{} = k_2[\mathrm{NOBr{}_2][\mathrm{NO{}]$.
 
@@ -490,7 +490,7 @@ This matches the experimental rate law with $k = k_2 K$.
 
 (c) The intermediate is $\mathrm{NOBr{}_2$ -- it is produced in step 1 and consumed in step 2, so it does not appear in the overall reaction.
 
-(d) Since the reaction is first order in $\mathrm{Br{}_2$, doubling $[\mathrm{Br{}_2]$ would double the rate (rate $\propto [\mathrm{Br{}_2]^1$).
+(d) Since the reaction is first order in $\mathrm{Br{}_2$Doubling $[\mathrm{Br{}_2]$ would double the rate (rate $\propto [\mathrm{Br{}_2]^1$).
 
 </details>
 
@@ -512,7 +512,7 @@ Which of the following statements is correct?
 <details>
 <summary>Answer</summary>
 
-(D) is correct. At the equivalence point of a weak acid--strong base titration, the solution contains the conjugate base of the weak acid, which hydrolyses to produce $\mathrm{OH{}^-$, giving $\mathrm{pH{} > 7$.
+(D) is correct. At the equivalence point of a weak acid--strong base titration, the solution contains the conjugate base of the weak acid, which hydrolyses to produce $\mathrm{OH{}^-$Giving $\mathrm{pH{} > 7$.
 
 (A) is incorrect: catalysts do not change $K$.
 
@@ -521,3 +521,11 @@ Which of the following statements is correct?
 (C) is incorrect: $n$ in the Nernst equation is the moles of electrons transferred in the balanced redox equation.
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

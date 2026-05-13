@@ -21,7 +21,7 @@ A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement.
 
 **(b)** Find the probability that the second ball is red.
 
-**(c)** Let $A$ be "the first ball is red" and $B$ be "the second ball is red." A student claims that since $P(A) = \frac{5}{8}$ and $P(B) = \frac{5}{8}$, the events are independent. Explain the error.
+**(c)** Let $A$ be "the first ball is red" and $B$ be "the second ball is red." A student claims that since $P(A) = \frac{5}{8}$ and $P(B) = \frac{5}{8}$The events are independent. Explain the error.
 
 [Difficulty: hard. Tests the distinction between independent and dependent events in without-replacement scenarios.]
 
@@ -39,7 +39,7 @@ $$= \frac{20}{56} + \frac{15}{56} = \frac{35}{56} = \frac{5}{8}$$
 
 $$P(A \cap B) = \frac{5}{14} \neq \frac{5}{8} \times \frac{5}{8} = \frac{25}{64}$$
 
-So $A$ and $B$ are **not** independent. The fact that $P(B) = P(A)$ is coincidental — it does not imply independence. The correct test for independence is $P(A \cap B) = P(A)P(B)$, not $P(B|A) = P(B)$.
+So $A$ and $B$ are **not** independent. The fact that $P(B) = P(A)$ is coincidental — it does not imply independence. The correct test for independence is $P(A \cap B) = P(A)P(B)$Not $P(B|A) = P(B)$.
 
 ---
 

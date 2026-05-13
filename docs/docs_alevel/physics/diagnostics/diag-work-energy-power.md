@@ -140,7 +140,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 $$v^2 = 2g \times 25 = 2 \times 9.81 \times 25 = 490.5$$
 $$v = 22.15\,\text{m}\,\text{s}^{-1}$$
 
-Below $25\,\text{m}$, the cord begins to stretch. The maximum speed occurs when acceleration is zero (when cord tension equals weight):
+Below $25\,\text{m}$The cord begins to stretch. The maximum speed occurs when acceleration is zero (when cord tension equals weight):
 
 $$ke = mg \Rightarrow 80e = 75 \times 9.81 = 735.75$$
 $$e = 9.20\,\text{m}$$
@@ -173,7 +173,7 @@ $$= \frac{735.75 + 1866.6}{80} = \frac{2602.4}{80} = 32.53\,\text{m}$$
 
 (c) Total distance fallen $= 25 + 32.53 = 57.53\,\text{m}$
 
-Since $57.53\,\text{m} \lt 60\,\text{m}$, the jumper does **not** hit the water. The closest approach to the water is $60 - 57.53 = 2.47\,\text{m}$.
+Since $57.53\,\text{m} \lt 60\,\text{m}$The jumper does **not** hit the water. The closest approach to the water is $60 - 57.53 = 2.47\,\text{m}$.
 
 However, note that $32.53\,\text{m}$ exceeds the maximum elastic extension of $30\,\text{m}$. The cord stiffens beyond this point, which would actually make it stretch **less**, so the jumper would be even further from the water. The assumption in part (b) is conservative.
 
@@ -182,7 +182,7 @@ However, note that $32.53\,\text{m}$ exceeds the maximum elastic extension of $3
 
 **Question:**
 
-A roller coaster car of mass $500\,\text{kg}$ starts from rest at point $A$, which is $30\,\text{m}$ above the bottom of a vertical circular loop of radius $10\,\text{m}$. The track is frictionless except for a horizontal section $BC$ of length $20\,\text{m}$ between point $A$ and the loop, where a constant frictional force of $400\,\text{N}$ acts.
+A roller coaster car of mass $500\,\text{kg}$ starts from rest at point $A$Which is $30\,\text{m}$ above the bottom of a vertical circular loop of radius $10\,\text{m}$. The track is frictionless except for a horizontal section $BC$ of length $20\,\text{m}$ between point $A$ and the loop, where a constant frictional force of $400\,\text{N}$ acts.
 
 (a) Calculate the speed of the car at the bottom of the loop (point $D$).
 
@@ -202,7 +202,7 @@ $$147150 = 250v_D^2 + 8000$$
 $$250v_D^2 = 139150$$
 $$v_D = \sqrt{556.6} = 23.59\,\text{m}\,\text{s}^{-1}$$
 
-(b) At the top of the loop (point $E$, height $2r = 20\,\text{m}$ above $D$):
+(b) At the top of the loop (point $E$Height $2r = 20\,\text{m}$ above $D$):
 
 Using energy conservation from $D$ to $E$:
 
@@ -248,9 +248,9 @@ A satellite of mass $500\,\text{kg}$ is in a circular orbit of radius $7.0 \time
 
 (b) Calculate the minimum energy that must be supplied for the satellite to escape from Earth's gravitational field.
 
-(c) The satellite's rocket motor fires for $30\,\text{s}$, providing a thrust of $2000\,\text{N}$ in the direction of motion. Calculate the new orbital radius, assuming the orbit remains circular.
+(c) The satellite's rocket motor fires for $30\,\text{s}$Providing a thrust of $2000\,\text{N}$ in the direction of motion. Calculate the new orbital radius, assuming the orbit remains circular.
 
-Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $R_E = 6.37 \times 10^6\,\text{m}$.
+Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$R_E = 6.37 \times 10^6\,\text{m}$.
 
 **Solution:**
 
@@ -275,7 +275,7 @@ $$= \sqrt◆LB◆\frac{3.982 \times 10^{14}}{7.0 \times 10^6}◆RB◆ = \sqrt◆
 
 New speed: $v' = 7543 + 120 = 7663\,\text{m}\,\text{s}^{-1}$
 
-For a circular orbit: $v = \sqrt{GM/r}$, so $r = GM/v^2$
+For a circular orbit: $v = \sqrt{GM/r}$So $r = GM/v^2$
 
 $$r' = \frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24}◆RB◆◆LB◆7663^2◆RB◆ = \frac◆LB◆3.982 \times 10^{14}◆RB◆◆LB◆5.872 \times 10^7◆RB◆ = 6.782 \times 10^6\,\text{m}$$
 

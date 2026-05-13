@@ -53,7 +53,7 @@ Therefore $\mathrm{dom}(f \circ g) = (-2,\; -1]$.
 
 **Question:**
 
-Let $f(x) = \dfrac{2x + 3}{x - 1}$, $x \neq 1$. Which of the following equals $f^{-1}(5)$?
+Let $f(x) = \dfrac{2x + 3}{x - 1}$$x \neq 1$. Which of the following equals $f^{-1}(5)$?
 
 $$\text{(A)}\; \frac{1}{f(5)} \qquad \text{(B)}\; f(5) \qquad \text{(C)}\; \text{Neither}$$
 
@@ -89,13 +89,13 @@ $$\text{(A)}\; y = f(x + 3) \qquad \text{(B)}\; y = f(x - 3)$$
 
 **Solution:**
 
-For $y = f(x - 3)$, the graph shifts **right** by 3 units. The point $(2, 7)$ on $y = f(x)$ moves to $(5, 7)$.
+For $y = f(x - 3)$The graph shifts **right** by 3 units. The point $(2, 7)$ on $y = f(x)$ moves to $(5, 7)$.
 
-For $y = f(x + 3)$, the graph shifts **left** by 3 units. The point $(2, 7)$ moves to $(-1, 7)$.
+For $y = f(x + 3)$The graph shifts **left** by 3 units. The point $(2, 7)$ moves to $(-1, 7)$.
 
 The answer is **(B)**.
 
-A common mistake is choosing (A) because "$+3$ looks like moving in the positive direction." In fact, replacing $x$ with $x - h$ shifts the graph right by $h$, which is the **opposite** direction to the sign.
+A common mistake is choosing (A) because "$+3$ looks like moving in the positive direction." In fact, replacing $x$ with $x - h$ shifts the graph right by $h$Which is the **opposite** direction to the sign.
 
 ---
 
@@ -103,18 +103,18 @@ A common mistake is choosing (A) because "$+3$ looks like moving in the positive
 
 **Question:**
 
-Let $f(x) = x^2 - 4x + 3$, $x \in \mathbb{'\{'}R{'\}'}$.
+Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{'\{'}R{'\}'}$.
 
 (a) Show that $f$ is not injective.
 (b) Restrict the domain so that $f^{-1}$ exists and find $f^{-1}(x)$.
 
 **Solution:**
 
-(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$, $f$ is not injective.
+(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$$f$ is not injective.
 
 (b) We need to restrict to a domain where $f$ is strictly monotonic.
 
-$f(x) = (x - 2)^2 - 1$ has vertex at $(2, -1)$, opening upward.
+$f(x) = (x - 2)^2 - 1$ has vertex at $(2, -1)$Opening upward.
 
 Restricting to $\mathrm{dom}(f) = [2,\; \infty)$ makes $f$ strictly increasing.
 
@@ -162,11 +162,11 @@ $$\mathrm{ran}(g \circ f) = [1,\; \infty)$$
 
 **Question:**
 
-Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$. Given that $f(1) = 3$, find $a$, $b$, and $c$, and hence find the range of $f^{-1}$.
+Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$. Given that $f(1) = 3$Find $a$$b$And $c$And hence find the range of $f^{-1}$.
 
 **Solution:**
 
-Since the minimum is $-5$ at $x = 3$, we can write:
+Since the minimum is $-5$ at $x = 3$We can write:
 
 $$f(x) = a(x - 3)^2 - 5$$
 
@@ -178,11 +178,11 @@ $$4a - 5 = 3 \implies a = 2$$
 
 So $f(x) = 2(x - 3)^2 - 5 = 2x^2 - 12x + 13$.
 
-Therefore $a = 2$, $b = -12$, $c = 13$.
+Therefore $a = 2$$b = -12$$c = 13$.
 
 Since $f$ has minimum value $-5$ and opens upward, $\mathrm{ran}(f) = [-5,\; \infty)$.
 
-Therefore $\mathrm{dom}(f^{-1}) = [-5,\; \infty)$, and so $\mathrm{ran}(f^{-1}) = [3,\; \infty)$ (the restricted domain where $f$ is injective, to the right of the vertex).
+Therefore $\mathrm{dom}(f^{-1}) = [-5,\; \infty)$And so $\mathrm{ran}(f^{-1}) = [3,\; \infty)$ (the restricted domain where $f$ is injective, to the right of the vertex).
 
 ---
 
@@ -190,7 +190,7 @@ Therefore $\mathrm{dom}(f^{-1}) = [-5,\; \infty)$, and so $\mathrm{ran}(f^{-1}) 
 
 **Question:**
 
-Let $f(x) = \log_2(x + 1)$, $x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(x)$.
+Let $f(x) = \log_2(x + 1)$$x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(x)$.
 
 **Solution:**
 
@@ -222,7 +222,7 @@ The solutions are $x = 0$ and $x = 1$.
 
 **Question:**
 
-The function $f(x) = \dfrac{k}{x}$, $x > 0$, represents a rectangular hyperbola. The line $y = mx + c$ is tangent to the curve at the point $(2,\; 4)$. Find $k$, $m$, and $c$.
+The function $f(x) = \dfrac{k}{x}$$x > 0$Represents a rectangular hyperbola. The line $y = mx + c$ is tangent to the curve at the point $(2,\; 4)$. Find $k$$m$And $c$.
 
 **Solution:**
 
@@ -244,7 +244,7 @@ So $m = -2$.
 
 From equation (1): $c = 4 - 2(-2) = 8$.
 
-Therefore $k = 8$, $m = -2$, $c = 8$, and the tangent line is $y = -2x + 8$.
+Therefore $k = 8$$m = -2$$c = 8$And the tangent line is $y = -2x + 8$.
 
 ---
 
@@ -262,7 +262,7 @@ Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geq 0$).
 
 $$\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'}$$
 
-Range: $x^2 + 1 \geq 1$ for all $x$, so $0 < \dfrac{2}{x^2 + 1} \leq 2$.
+Range: $x^2 + 1 \geq 1$ for all $x$So $0 < \dfrac{2}{x^2 + 1} \leq 2$.
 
 Maximum value $2$ occurs at $x = 0$. The function approaches $0$ as $|x| \to \infty$.
 
@@ -286,7 +286,7 @@ Let $f(x) = 2x + 1$ and $g(x) = x^2 - 3$. Find:
 
 (b) $f(2) = 5$. $g \circ f(2) = g(5) = 25 - 3 = 22$.
 
-Note: $f \circ g(2) \neq g \circ f(2)$, confirming that composition is not commutative.
+Note: $f \circ g(2) \neq g \circ f(2)$Confirming that composition is not commutative.
 
 (c) $f \circ f(x) = f(f(x)) = f(2x + 1) = 2(2x + 1) + 1 = 4x + 3$.
 
@@ -348,7 +348,7 @@ $(2, 5) \to (3, 7)$ and $(3, 1) \to (4, 3)$.
 
 Define $f(x) = \begin{cases} x^2 & \text{if } x < 0 \\ 2x + 1 & \text{if } 0 \leq x \leq 3 \\ 7 & \text{if } x > 3 \end{cases}$.
 
-Find $f(-2)$, $f(0)$, $f(3)$, and $f(5)$.
+Find $f(-2)$$f(0)$$f(3)$And $f(5)$.
 
 **Solution:**
 
@@ -392,11 +392,11 @@ Let $f(x) = \sqrt{x}$ and $g(x) = x - 4$. Find $f \circ g$ and its domain.
 
 $f \circ g(x) = f(g(x)) = f(x - 4) = \sqrt{x - 4}$.
 
-Domain of $f \circ g$: we need $x - 4 \geq 0$, i.e. $x \geq 4$.
+Domain of $f \circ g$: we need $x - 4 \geq 0$I.e. $x \geq 4$.
 
 $$\mathrm{dom}(f \circ g) = [4,\; \infty)$$
 
-Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{'\{'}R{'\}'}$, but the range of $g$ must fall within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
+Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{'\{'}R{'\}'}$But the range of $g$ must fall within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
 
 ---
 
@@ -422,15 +422,15 @@ $$5b = 5a$$
 
 $$a = b$$
 
-Since $f(a) = f(b) \implies a = b$, the function is **injective**.
+Since $f(a) = f(b) \implies a = b$The function is **injective**.
 
 ---
 
 ## Common Pitfalls
 
-1. **Confusing $f^{-1}$ with the reciprocal $\dfrac{1}{f}$.** The notation $f^{-1}$ denotes the inverse function, NOT the reciprocal. $f^{-1}(x)$ is the value of $y$ such that $f(y) = x$, which is completely different from $\dfrac{1}{f(x)}$.
+1. **Confusing $f^{-1}$ with the reciprocal $\dfrac{1}{f}$.** The notation $f^{-1}$ denotes the inverse function, NOT the reciprocal. $f^{-1}(x)$ is the value of $y$ such that $f(y) = x$Which is completely different from $\dfrac{1}{f(x)}$.
 
-2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT simply $\mathrm{dom}(g)$. It is the set of all $x$ in $\mathrm{dom}(g)$ such that $g(x) \in \mathrm{dom}(f)$. You must check both conditions.
+2. **Incorrect domain of composite functions.** The domain of $f \circ g$ is NOT $\mathrm{dom}(g)$. It is the set of all $x$ in $\mathrm{dom}(g)$ such that $g(x) \in \mathrm{dom}(f)$. You must check both conditions.
 
 3. **Wrong direction for horizontal shifts.** $f(x - h)$ shifts the graph RIGHT by $h$ units, not left. The transformation is counterintuitive: replacing $x$ with $x - h$ moves the graph in the positive $x$-direction.
 
@@ -444,7 +444,7 @@ Since $f(a) = f(b) \implies a = b$, the function is **injective**.
 
 ### DSE-1
 
-Let $f(x) = \dfrac{3x - 1}{x + 2}$, $x \neq -2$.
+Let $f(x) = \dfrac{3x - 1}{x + 2}$$x \neq -2$.
 
 (a) Find $f^{-1}(x)$. (3 marks)
 (b) Find the domain and range of $f^{-1}$. (2 marks)
@@ -511,7 +511,7 @@ The function $f$ is defined by $f(x) = \dfrac{1}{x^2 - 4}$.
 
 $$\mathrm{dom}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -2 \text{ and } x \neq 2\}$$
 
-(b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$, so $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
+(b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$So $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
 
 For $x^2 \geq 0$: $\dfrac{4y + 1}{y} \geq 0$.
 
@@ -535,9 +535,9 @@ Let $f(x) = 2^x$ and $g(x) = \log_2 x$.
 
 **Solution:**
 
-(a) $f \circ g(x) = f(\log_2 x) = 2^{\log_2 x} = x$, for $x > 0$.
+(a) $f \circ g(x) = f(\log_2 x) = 2^{\log_2 x} = x$For $x > 0$.
 
-(b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$, for all $x \in \mathbb{'\{'}R{'\}'}$.
+(b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$For all $x \in \mathbb{'\{'}R{'\}'}$.
 
 (c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{id}$ on $(0, \infty)$ and $g \circ f = \mathrm{id}$ on $\mathbb{'\{'}R{'\}'}$.
 
@@ -545,7 +545,7 @@ Let $f(x) = 2^x$ and $g(x) = \log_2 x$.
 
 ### DSE-5
 
-The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$, $(0, 4)$, $(2, 0)$, and has a maximum at $(0, 4)$.
+The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$$(0, 4)$$(2, 0)$And has a maximum at $(0, 4)$.
 
 (a) Sketch the graph of $y = f(x + 1)$. (2 marks)
 (b) Sketch the graph of $y = f(-x)$. (2 marks)
@@ -553,8 +553,8 @@ The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$, $(0, 4)$, $(2, 0)
 
 **Solution:**
 
-(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$, $(-1, 4)$, $(1, 0)$. Maximum at $(-1, 4)$.
+(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$$(-1, 4)$$(1, 0)$. Maximum at $(-1, 4)$.
 
-(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$, $(0, 4)$, $(-2, 0)$. Maximum at $(0, 4)$.
+(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$$(0, 4)$$(-2, 0)$. Maximum at $(0, 4)$.
 
 (c) $y = -f(x) + 2$: reflect in the $x$-axis (all $y$-values change sign), then translate up by 2 units. New maximum at $(0, -4 + 2) = (0, -2)$. New $x$-intercepts at $(-2, 2)$ and $(2, 2)$ (which are not on the $x$-axis anymore).

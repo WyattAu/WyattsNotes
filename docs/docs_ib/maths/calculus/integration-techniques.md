@@ -7,37 +7,37 @@ slug: integration-techniques
 
 ## Antidifferentiation Review
 
-Integration (antidifferentiation) is the reverse process of differentiation. If $F'(x) = f(x)$,
-then:
+Integration (antidifferentiation) is the reverse process of differentiation. If $F'(x) = f(x)$
+Then:
 
 $$
 \int f(x)\,dx = F(x) + C
 $$
 
-where $C$ is the constant of integration.
+Where $C$ is the constant of integration.
 
 ### Basic Integration Rules
 
-| Rule              | Formula                                                                   |
+| Rule | Formula |
 | ----------------- | ------------------------------------------------------------------------- |
-| Power rule        | $\displaystyle\int x^n\,dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$   |
-| Reciprocal        | $\displaystyle\int \frac{1}{x}\,dx = \ln\|x\| + C$                        |
-| Constant multiple | $\displaystyle\int kf(x)\,dx = k\int f(x)\,dx$                            |
-| Sum/difference    | $\displaystyle\int [f(x) \pm g(x)]\,dx = \int f(x)\,dx \pm \int g(x)\,dx$ |
+| Power rule | $\displaystyle\int x^n\,dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$ |
+| Reciprocal | $\displaystyle\int \frac{1}{x}\,dx = \ln\|x\| + C$ |
+| Constant multiple | $\displaystyle\int kf(x)\,dx = k\int f(x)\,dx$ |
+| Sum/difference | $\displaystyle\int [f(x) \pm g(x)]\,dx = \int f(x)\,dx \pm \int g(x)\,dx$ |
 
 ### Standard Integrals
 
-| $f(x)$                    | $\int f(x)\,dx$          |
+| $f(x)$ | $\int f(x)\,dx$ |
 | ------------------------- | ------------------------ |
-| $e^x$                     | $e^x + C$                |
-| $a^x$                     | $\dfrac{a^x}{\ln a} + C$ |
-| $\sin x$                  | $-\cos x + C$            |
-| $\cos x$                  | $\sin x + C$             |
-| $\sec^2 x$                | $\tan x + C$             |
-| $\csc^2 x$                | $-\cot x + C$            |
-| $\sec x \tan x$           | $\sec x + C$             |
-| $\dfrac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$          |
-| $\dfrac{1}{1+x^2}$        | $\arctan x + C$          |
+| $e^x$ | $e^x + C$ |
+| $a^x$ | $\dfrac{a^x}{\ln a} + C$ |
+| $\sin x$ | $-\cos x + C$ |
+| $\cos x$ | $\sin x + C$ |
+| $\sec^2 x$ | $\tan x + C$ |
+| $\csc^2 x$ | $-\cot x + C$ |
+| $\sec x \tan x$ | $\sec x + C$ |
+| $\dfrac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$ |
+| $\dfrac{1}{1+x^2}$ | $\arctan x + C$ |
 
 ---
 
@@ -45,7 +45,7 @@ where $C$ is the constant of integration.
 
 ### First Fundamental Theorem
 
-If $f$ is continuous on $[a, b]$ and $F'(x) = f(x)$, then:
+If $f$ is continuous on $[a, b]$ and $F'(x) = f(x)$Then:
 
 $$
 \int_a^b f(x)\,dx = F(b) - F(a)
@@ -53,7 +53,7 @@ $$
 
 ### Second Fundamental Theorem
 
-If $f$ is continuous on an interval containing $a$, then:
+If $f$ is continuous on an interval containing $a$Then:
 
 $$
 \frac{d}`\{dx}`\left[\int_a^x f(t)\,dt\right] = f(x)
@@ -90,7 +90,7 @@ $$
 :::warning[Exam Tip]
 
 Always check if a function is odd or even before integrating over a symmetric interval. This can
-save significant computation time.
+Save significant computation time.
 
 :::
 
@@ -122,7 +122,7 @@ $$
 ### Steps
 
 1. Choose $u = g(x)$ (the inner function).
-2. Compute $\dfrac{du}{dx} = g'(x)$, so $du = g'(x)\,dx$.
+2. Compute $\dfrac{du}{dx} = g'(x)$So $du = g'(x)\,dx$.
 3. Rewrite the integral in terms of $u$.
 4. Integrate with respect to $u$.
 5. Substitute back $u = g(x)$.
@@ -131,7 +131,7 @@ $$
 
 Evaluate $\displaystyle\int 2x\sqrt{x^2+1}\,dx$.
 
-Let $u = x^2 + 1$, so $\dfrac{du}{dx} = 2x$, giving $du = 2x\,dx$.
+Let $u = x^2 + 1$So $\dfrac{du}{dx} = 2x$Giving $du = 2x\,dx$.
 
 $$
 \int \sqrt{u}\,du = \int u^{1/2}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C
@@ -143,7 +143,7 @@ $$
 
 Evaluate $\displaystyle\int_0^1 xe^{x^2}\,dx$.
 
-Let $u = x^2$, so $du = 2x\,dx$.
+Let $u = x^2$So $du = 2x\,dx$.
 
 When $x = 0$: $u = 0$. When $x = 1$: $u = 1$.
 
@@ -157,7 +157,7 @@ $$
 
 Certain integrals can be simplified using trigonometric substitutions:
 
-| Expression         | Substitution      | Identity                          |
+| Expression | Substitution | Identity |
 | ------------------ | ----------------- | --------------------------------- |
 | $\sqrt{a^2 - x^2}$ | $x = a\sin\theta$ | $1 - \sin^2\theta = \cos^2\theta$ |
 | $\sqrt{a^2 + x^2}$ | $x = a\tan\theta$ | $1 + \tan^2\theta = \sec^2\theta$ |
@@ -169,7 +169,7 @@ Evaluate $\displaystyle\int \frac{1}{\sqrt{4-x^2}}\,dx$.
 
 This is a standard integral: $\arcsin\!\left(\dfrac{x}{2}\right) + C$.
 
-Alternatively, let $x = 2\sin\theta$, so $dx = 2\cos\theta\,d\theta$:
+Alternatively, let $x = 2\sin\theta$So $dx = 2\cos\theta\,d\theta$:
 
 $$
 \int \frac{2\cos\theta}{2\cos\theta}\,d\theta = \int 1\,d\theta = \theta + C = \arcsin\!\left(\frac{x}{2}\right) + C
@@ -227,20 +227,20 @@ $$
 
 ### Repeated Integration by Parts
 
-For integrals like $\displaystyle\int x^2 e^x\,dx$ or $\displaystyle\int x^2 \sin x\,dx$, apply
-integration by parts repeatedly.
+For integrals like $\displaystyle\int x^2 e^x\,dx$ or $\displaystyle\int x^2 \sin x\,dx$Apply
+Integration by parts repeatedly.
 
 :::info[Example]
 
 Evaluate $\displaystyle\int x^2 e^x\,dx$.
 
-First application: $u = x^2$, $dv = e^x\,dx$:
+First application: $u = x^2$$dv = e^x\,dx$:
 
 $$
 \int x^2 e^x\,dx = x^2 e^x - \int 2x e^x\,dx
 $$
 
-Second application on $\int 2x e^x\,dx$: $u = 2x$, $dv = e^x\,dx$:
+Second application on $\int 2x e^x\,dx$: $u = 2x$$dv = e^x\,dx$:
 
 $$
 \int 2x e^x\,dx = 2xe^x - \int 2e^x\,dx = 2xe^x - 2e^x
@@ -257,19 +257,19 @@ $$
 ### Cyclic Integration by Parts
 
 Integrals like $\displaystyle\int e^x \sin x\,dx$ require applying integration by parts twice and
-solving algebraically.
+Solving algebraically.
 
 :::info[Example]
 
 Evaluate $\displaystyle\int e^x \sin x\,dx$.
 
-Let $u = e^x$, $dv = \sin x\,dx$. Then $du = e^x\,dx$, $v = -\cos x$.
+Let $u = e^x$$dv = \sin x\,dx$. Then $du = e^x\,dx$$v = -\cos x$.
 
 $$
 I = -e^x\cos x + \int e^x\cos x\,dx
 $$
 
-Now let $u = e^x$, $dv = \cos x\,dx$. Then $du = e^x\,dx$, $v = \sin x$.
+Now let $u = e^x$$dv = \cos x\,dx$. Then $du = e^x\,dx$$v = \sin x$.
 
 $$
 \int e^x\cos x\,dx = e^x\sin x - \int e^x\sin x\,dx = e^x\sin x - I
@@ -296,14 +296,14 @@ $$
 ## Partial Fractions
 
 When the integrand is a rational function with a denominator that can be factorised, decompose into
-partial fractions.
+Partial fractions.
 
 ### Types of Decomposition
 
-| Denominator     | Partial Fractions                       |
+| Denominator | Partial Fractions |
 | --------------- | --------------------------------------- |
-| $(ax+b)(cx+d)$  | $\dfrac{A}{ax+b} + \dfrac{B}{cx+d}$     |
-| $(ax+b)^2$      | $\dfrac{A}{ax+b} + \dfrac{B}{(ax+b)^2}$ |
+| $(ax+b)(cx+d)$ | $\dfrac{A}{ax+b} + \dfrac{B}{cx+d}$ |
+| $(ax+b)^2$ | $\dfrac{A}{ax+b} + \dfrac{B}{(ax+b)^2}$ |
 | $(ax+b)(x^2+c)$ | $\dfrac{A}{ax+b} + \dfrac{Bx+C}{x^2+c}$ |
 
 :::info[Example]
@@ -341,7 +341,7 @@ $$
 $$
 
 If the curve crosses the $x$-axis, split the integral at the zeros and take the absolute value of
-each part.
+Each part.
 
 ### Area Between Two Curves
 
@@ -405,7 +405,7 @@ $$
 
 :::info[Example]
 
-Find the volume generated by rotating the region bounded by $y = \sqrt{x}$, $x = 4$, and the
+Find the volume generated by rotating the region bounded by $y = \sqrt{x}$$x = 4$And the
 $x$-axis about the $x$-axis.
 
 $$
@@ -416,12 +416,12 @@ $$
 
 :::info[Example]
 
-Find the volume generated by rotating the region bounded by $y = x^2$, $y = 0$, and $x = 1$ about
-the $y$-axis.
+Find the volume generated by rotating the region bounded by $y = x^2$$y = 0$And $x = 1$ about
+The $y$-axis.
 
 Using the disc method (in terms of $y$):
 
-$x = \sqrt{y}$, from $y = 0$ to $y = 1$.
+$x = \sqrt{y}$From $y = 0$ to $y = 1$.
 
 $$
 V = \pi\int_0^1 (\sqrt{y})^2\,dy = \pi\int_0^1 y\,dy = \pi\left[\frac{y^2}{2}\right]_0^1 = \frac{\pi}{2}
@@ -477,18 +477,18 @@ A particle moves with velocity $v(t) = t^2 - 4t + 3\mathrm{ m/s}$ for $0 \le t \
 **(a)** Find the displacement.
 
 $$
-s = \int_0^5 (t^2 - 4t + 3)\,dt = \left[\frac{t^3}{3} - 2t^2 + 3t\right]_0^5 = \frac{125}{3} - 50 + 15 = \frac{40}{3}\mathrm{ m}
+S = \int_0^5 (t^2 - 4t + 3)\,dt = \left[\frac{t^3}{3} - 2t^2 + 3t\right]_0^5 = \frac{125}{3} - 50 + 15 = \frac{40}{3}\mathrm{ m}
 $$
 
 **(b)** Find the total distance travelled.
 
 Find when $v = 0$: $t^2 - 4t + 3 = 0 \implies (t-1)(t-3) = 0 \implies t = 1, 3$.
 
-| Interval        | Sign of $v$ | Motion   |
+| Interval | Sign of $v$ | Motion |
 | --------------- | ----------- | -------- |
-| $0 \lt t \lt 1$ | $+$         | Forward  |
-| $1 \lt t \lt 3$ | $-$         | Backward |
-| $3 \lt t \lt 5$ | $+$         | Forward  |
+| $0 \lt t \lt 1$ | $+$ | Forward |
+| $1 \lt t \lt 3$ | $-$ | Backward |
+| $3 \lt t \lt 5$ | $+$ | Forward |
 
 $$
 \mathrm{Distance} = \int_0^1 v\,dt + \left|\int_1^3 v\,dt\right| + \int_3^5 v\,dt
@@ -608,7 +608,7 @@ $$
 
 Use integration by parts to evaluate $\displaystyle\int_0^1 xe^{2x}\,dx$.
 
-Let $u = x$, $dv = e^{2x}\,dx$. Then $du = dx$, $v = \dfrac{1}{2}e^{2x}$.
+Let $u = x$$dv = e^{2x}\,dx$. Then $du = dx$$v = \dfrac{1}{2}e^{2x}$.
 
 $$
 \int_0^1 xe^{2x}\,dx = \left[\frac{1}{2}xe^{2x}\right]_0^1 - \frac{1}{2}\int_0^1 e^{2x}\,dx = \frac{e^2}{2} - \frac{1}{2}\left[\frac{e^{2x}}{2}\right]_0^1
@@ -620,36 +620,36 @@ $$
 
 ### Question 5 (Paper 2 style)
 
-A particle moves in a straight line with acceleration $a(t) = 6t - 2\mathrm{ m/s}^2$. At $t = 0$,
-the velocity is $4\mathrm{ m/s}$ and the displacement is $0\mathrm{ m}$.
+A particle moves in a straight line with acceleration $a(t) = 6t - 2\mathrm{ m/s}^2$. At $t = 0$
+The velocity is $4\mathrm{ m/s}$ and the displacement is $0\mathrm{ m}$.
 
 **(a)** Find the velocity function.
 
 $$
-v(t) = \int (6t-2)\,dt = 3t^2 - 2t + C
+V(t) = \int (6t-2)\,dt = 3t^2 - 2t + C
 $$
 
 $v(0) = 4 \implies C = 4$.
 
 $$
-v(t) = 3t^2 - 2t + 4
+V(t) = 3t^2 - 2t + 4
 $$
 
 **(b)** Find the displacement function.
 
 $$
-s(t) = \int (3t^2 - 2t + 4)\,dt = t^3 - t^2 + 4t + D
+S(t) = \int (3t^2 - 2t + 4)\,dt = t^3 - t^2 + 4t + D
 $$
 
 $s(0) = 0 \implies D = 0$.
 
 $$
-s(t) = t^3 - t^2 + 4t
+S(t) = t^3 - t^2 + 4t
 $$
 
 **(c)** Find the total distance travelled in the first 3 seconds.
 
-Check if $v = 0$: $3t^2 - 2t + 4 = 0$. Discriminant $= 4 - 48 \lt 0$, so $v \gt 0$ always.
+Check if $v = 0$: $3t^2 - 2t + 4 = 0$. Discriminant $= 4 - 48 \lt 0$So $v \gt 0$ always.
 
 $$
 \mathrm{Distance} = \int_0^3 v\,dt = \int_0^3 (3t^2 - 2t + 4)\,dt = \left[t^3 - t^2 + 4t\right]_0^3 = 27 - 9 + 12 = 30\mathrm{ m}
@@ -657,8 +657,8 @@ $$
 
 ### Question 6 (Paper 2 style)
 
-The region bounded by $y = e^x$, $y = 1$, $x = 0$, and $x = 2$ is rotated about the $x$-axis. Find
-the volume.
+The region bounded by $y = e^x$$y = 1$$x = 0$And $x = 2$ is rotated about the $x$-axis. Find
+The volume.
 
 $$
 V = \pi\int_0^2 [(e^x)^2 - 1^2]\,dx = \pi\int_0^2 (e^{2x} - 1)\,dx = \pi\left[\frac{e^{2x}}{2} - x\right]_0^2
@@ -672,19 +672,19 @@ $$
 
 ## Summary Table of Techniques
 
-| Technique         | When to Use                                  | Key Idea                           |
+| Technique | When to Use | Key Idea |
 | ----------------- | -------------------------------------------- | ---------------------------------- |
-| Direct            | Simple power functions, standard forms       | Apply basic rules directly         |
-| Substitution      | Composite functions, $f(g(x))g'(x)$          | Let $u = g(x)$                     |
-| By parts          | Product of different function types          | $\int u\,dv = uv - \int v\,du$     |
+| Direct | Simple power functions, standard forms | Apply basic rules directly |
+| Substitution | Composite functions, $f(g(x))g'(x)$ | Let $u = g(x)$ |
+| By parts | Product of different function types | $\int u\,dv = uv - \int v\,du$ |
 | Partial fractions | Rational functions, factorisable denominator | Decompose then integrate each term |
-| Trig substitution | $\sqrt{a^2 \pm x^2}$ or $\sqrt{x^2 - a^2}$   | Replace with trig function         |
+| Trig substitution | $\sqrt{a^2 \pm x^2}$ or $\sqrt{x^2 - a^2}$ | Replace with trig function |
 
 :::tip[Exam Strategy]
 
 When facing an integral, first check if it is a standard form. If not, consider substitution
 (especially if you see a function and its derivative). If it is a product of different function
-types, use integration by parts. If it is a rational function, consider partial fractions.
+Types, use integration by parts. If it is a rational function, consider partial fractions.
 
 :::
 
@@ -698,8 +698,8 @@ Many trigonometric integrals require using identities to simplify before integra
 
 #### Powers of Sine and Cosine
 
-**Odd power of sine**: Factor out one $\sin x$, convert the rest to cosines using
-$\sin^2 x = 1 - \cos^2 x$, then substitute $u = \cos x$.
+**Odd power of sine**: Factor out one $\sin x$Convert the rest to cosines using
+$\sin^2 x = 1 - \cos^2 x$Then substitute $u = \cos x$.
 
 :::info[Example]
 
@@ -709,7 +709,7 @@ $$
 \int \sin^2 x \sin x\,dx = \int (1 - \cos^2 x)\sin x\,dx
 $$
 
-Let $u = \cos x$, $du = -\sin x\,dx$:
+Let $u = \cos x$$du = -\sin x\,dx$:
 
 $$
 = -\int (1 - u^2)\,du = -u + \frac{u^3}{3} + C = -\cos x + \frac{\cos^3 x}{3} + C
@@ -743,7 +743,7 @@ $$
 
 #### Products of Sine and Cosine
 
-For $\displaystyle\int \sin mx \cos nx\,dx$, use the product-to-sum identities:
+For $\displaystyle\int \sin mx \cos nx\,dx$Use the product-to-sum identities:
 
 $$
 \sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]
@@ -791,7 +791,7 @@ Evaluate $\displaystyle\int \frac{1}{4 + 9x^2}\,dx$.
 
 Rewrite as: $\displaystyle\int \frac{1}{4 + (3x)^2}\,dx$.
 
-Let $u = 3x$, $du = 3\,dx$:
+Let $u = 3x$$du = 3\,dx$:
 
 $$
 = \frac{1}{3}\int \frac{1}{4 + u^2}\,du = \frac{1}{3} \cdot \frac{1}{2}\arctan\frac{u}{2} + C = \frac{1}{6}\arctan\frac{3x}{2} + C
@@ -817,7 +817,7 @@ $$
 
 Evaluate $\displaystyle\int x^2 \ln x\,dx$.
 
-Let $u = \ln x$, $dv = x^2\,dx$. Then $du = \dfrac{1}{x}\,dx$, $v = \dfrac{x^3}{3}$.
+Let $u = \ln x$$dv = x^2\,dx$. Then $du = \dfrac{1}{x}\,dx$$v = \dfrac{x^3}{3}$.
 
 $$
 \int x^2 \ln x\,dx = \frac{x^3}{3}\ln x - \int \frac{x^3}{3} \cdot \frac{1}{x}\,dx = \frac{x^3}{3}\ln x - \frac{1}{3}\int x^2\,dx
@@ -899,7 +899,7 @@ $$
 
 Evaluate $\displaystyle\int_0^{\pi/4} x\cos 2x\,dx$.
 
-Let $u = x$, $dv = \cos 2x\,dx$. Then $du = dx$, $v = \dfrac{\sin 2x}{2}$.
+Let $u = x$$dv = \cos 2x\,dx$. Then $du = dx$$v = \dfrac{\sin 2x}{2}$.
 
 $$
 \int_0^{\pi/4} x\cos 2x\,dx = \left[\frac{x\sin 2x}{2}\right]_0^{\pi/4} - \frac{1}{2}\int_0^{\pi/4}\sin 2x\,dx
@@ -931,7 +931,7 @@ Evaluate $\displaystyle\int \frac{x}{x^2 + 2x + 5}\,dx$.
 
 Complete the square: $x^2 + 2x + 5 = (x+1)^2 + 4$.
 
-Let $u = x^2 + 2x + 5$, $du = (2x + 2)\,dx$.
+Let $u = x^2 + 2x + 5$$du = (2x + 2)\,dx$.
 
 We need to split:
 $\dfrac{x}{x^2+2x+5} = \dfrac{(2x+2)/2 - 1}{x^2+2x+5} = \dfrac{1}{2} \cdot \dfrac{2x+2}{x^2+2x+5} - \dfrac{1}{x^2+2x+5}$.
@@ -946,14 +946,14 @@ $$
 
 ### Question 10 (Paper 2 style)
 
-The region bounded by $y = \ln x$, $y = 0$, and $x = e$ is rotated $360\degree$ about the $x$-axis.
+The region bounded by $y = \ln x$$y = 0$And $x = e$ is rotated $360\degree$ about the $x$-axis.
 Find the volume.
 
 $$
 V = \pi\int_1^e (\ln x)^2\,dx
 $$
 
-Using integration by parts with $u = (\ln x)^2$, $dv = dx$:
+Using integration by parts with $u = (\ln x)^2$$dv = dx$:
 
 $$
 = \pi\left[x(\ln x)^2\right]_1^e - 2\pi\int_1^e \ln x\,dx
@@ -975,3 +975,11 @@ Ready to test your understanding of **Integration**? The [diagnostic test](/docs
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -69,7 +69,7 @@ $K_c = 0.0211\,\text{mol dm}^{-3}$ at $500\,\text{K}$.
 
 (a) State and explain the effect of increasing temperature on the equilibrium yield of $\text{PCl}_3$.
 
-(b) $K_c = 0.0420\,\text{mol dm}^{-3}$ at $600\,\text{K}$. Calculate the value of $K_c$ at $550\,\text{K}$, using the van't Hoff equation approximation: $\ln(K_2/K_1) \approx \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$.
+(b) $K_c = 0.0420\,\text{mol dm}^{-3}$ at $600\,\text{K}$. Calculate the value of $K_c$ at $550\,\text{K}$Using the van't Hoff equation approximation: $\ln(K_2/K_1) \approx \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$.
 
 (c) Explain why adding a catalyst does not change the equilibrium position or the value of $K_c$.
 
@@ -93,7 +93,7 @@ $$\ln(0.0420/0.0211) = \frac{124000}{8.31}(1/500 - 1/600) = 14922 \times 3.333 \
 
 $$\ln(1.990) = 0.688$$
 
-This gives $0.688$ vs the expected $4.974$, which indicates the van't Hoff equation is being applied over too wide a temperature range. The values given at 500 K and 600 K may not be perfectly consistent. The calculation at 550 K using 500 K data gives $K_{550} = 0.318\,\text{mol dm}^{-3}$.
+This gives $0.688$ vs the expected $4.974$Which indicates the van't Hoff equation is being applied over too wide a temperature range. The values given at 500 K and 600 K may not be perfectly consistent. The calculation at 550 K using 500 K data gives $K_{550} = 0.318\,\text{mol dm}^{-3}$.
 
 (c) A catalyst provides an alternative pathway with lower activation energy for both the forward and reverse reactions equally. It increases the rate at which equilibrium is achieved but does not change the thermodynamics of the reaction. The position of equilibrium (and hence $K_c$) depends on the relative energy levels of reactants and products, which are unchanged by the catalyst. The catalyst accelerates both forward and reverse rates by the same factor, so the equilibrium constant remains the same.
 
@@ -108,7 +108,7 @@ $$\text{CaCO}_3(s) \rightleftharpoons \text{CaO}(s) + \text{CO}_2(g) \quad \Delt
 
 (a) Write the expression for $K_p$ for this equilibrium and explain why the concentrations of the solids are not included.
 
-(b) At $800\,^\circ\text{C}$, $K_p = 0.220\,\text{atm}$. Calculate the minimum pressure of $\text{CO}_2$ that must be applied to prevent decomposition of $\text{CaCO}_3$ at this temperature.
+(b) At $800\,^\circ\text{C}$$K_p = 0.220\,\text{atm}$. Calculate the minimum pressure of $\text{CO}_2$ that must be applied to prevent decomposition of $\text{CaCO}_3$ at this temperature.
 
 (c) Explain how the decomposition temperature changes if the experiment is carried out at a lower total pressure.
 
@@ -120,11 +120,11 @@ $$K_p = p(\text{CO}_2)$$
 
 Solids ($\text{CaCO}_3$ and $\text{CaO}$) are excluded from the equilibrium expression because their concentrations (and hence activities) are effectively constant. The concentration of a pure solid depends only on its density, which is fixed at a given temperature. Since these constants are incorporated into the equilibrium constant, only the gaseous species appears.
 
-(b) For decomposition to be prevented, the system must not reach equilibrium (i.e., $Q_p \gt K_p$, where $Q_p$ is the reaction quotient). The minimum $\text{CO}_2$ pressure to prevent decomposition is when $Q_p = K_p$:
+(b) For decomposition to be prevented, the system must not reach equilibrium (i.e., $Q_p \gt K_p$Where $Q_p$ is the reaction quotient). The minimum $\text{CO}_2$ pressure to prevent decomposition is when $Q_p = K_p$:
 
 $$p(\text{CO}_2)_{\text{min}} = K_p = 0.220\,\text{atm}$$
 
-If the partial pressure of $\text{CO}_2$ exceeds $0.220\,\text{atm}$, the reverse reaction is favoured and decomposition is suppressed.
+If the partial pressure of $\text{CO}_2$ exceeds $0.220\,\text{atm}$The reverse reaction is favoured and decomposition is suppressed.
 
 (c) Lower total pressure means the partial pressure of $\text{CO}_2$ in the surroundings is lower. Since the equilibrium requires $p(\text{CO}_2) = K_p$ for decomposition, and $K_p$ increases with temperature (endothermic reaction), at lower total pressures the $\text{CO}_2$ partial pressure needed to prevent decomposition ($= K_p$ at that temperature) is reached at a **lower temperature**. Therefore, $\text{CaCO}_3$ decomposes at a **lower temperature** when the total pressure is reduced. This is consistent with Le Chatelier's principle: reducing pressure favours the side with more moles of gas (the products side, which has 1 mol of gas vs 0 mol on the reactant side).
 
@@ -152,7 +152,7 @@ $$\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g) \quad \Delta
 
 (b) The iron catalyst provides an alternative reaction pathway with a **lower activation energy**. $\text{N}_2$ and $\text{H}_2$ are adsorbed onto the catalyst surface, where the N$\equiv$N triple bond is weakened, allowing easier reaction with hydrogen. The catalyst does not change the equilibrium yield because it lowers the activation energy equally for both forward and reverse reactions. The ratio of forward and reverse rate constants (which equals $K_c$) remains unchanged.
 
-(c) Recycling unreacted $\text{N}_2$ and $\text{H}_2$ means that over time, essentially all reactants are converted to product. Although the equilibrium conversion per pass is only about 15--20% at $450\,^\circ\text{C}$ and $200\,\text{atm}$, the recycled gases pass through the reactor repeatedly until they react. This gives a much higher overall yield than a single pass through the reactor, making the process economically efficient.
+(c) Recycling unreacted $\text{N}_2$ and $\text{H}_2$ means that over time, essentially all reactants are converted to product. Although the equilibrium conversion per pass is only about 15--20% at $450\,^\circ\text{C}$ and $200\,\text{atm}$The recycled gases pass through the reactor repeatedly until they react. This gives a much higher overall yield than a single pass through the reactor, making the process economically efficient.
 
 ---
 ### IT-2: Equilibrium and Gas Volume Calculations (with Quantitative Chemistry)
@@ -175,7 +175,7 @@ At equilibrium, $1.20\,\text{mol}$ of $\text{SO}_3$ is present.
 
 (a) Let $x$ be the moles of $\text{O}_2$ that react. From stoichiometry, $2x$ mol of $\text{SO}_2$ reacts and $2x$ mol of $\text{SO}_3$ forms.
 
-$2x = 1.20$, so $x = 0.600$
+$2x = 1.20$So $x = 0.600$
 
 Equilibrium moles:
 - $\text{SO}_2$: $2.00 - 1.20 = 0.800\,\text{mol}$
@@ -216,9 +216,9 @@ $$5.0(1.20+y)^2 = 25.0(0.800-y)^2(0.900-y/2)$$
 
 This is a cubic equation. Solving iteratively or by approximation: since the volume halved (significant change), the equilibrium shifts substantially. An approximate solution gives $y \approx 0.08$:
 
-New equilibrium moles: $\text{SO}_2 \approx 0.72$, $\text{O}_2 \approx 0.86$, $\text{SO}_3 \approx 1.28$.
+New equilibrium moles: $\text{SO}_2 \approx 0.72$$\text{O}_2 \approx 0.86$$\text{SO}_3 \approx 1.28$.
 
-The moles of $\text{SO}_3$ have increased from $1.20$ to approximately $1.28\,\text{mol}$, consistent with Le Chatelier's principle (increasing pressure favours the side with fewer moles of gas: 3 mol $\to$ 2 mol).
+The moles of $\text{SO}_3$ have increased from $1.20$ to approximately $1.28\,\text{mol}$Consistent with Le Chatelier's principle (increasing pressure favours the side with fewer moles of gas: 3 mol $\to$ 2 mol).
 
 ---
 ### IT-3: Acid Dissociation Equilibrium (with Acids and Bases)
@@ -243,7 +243,7 @@ $K_a = 1.74 \times 10^{-5}\,\text{mol dm}^{-3}$ at $298\,\text{K}$.
 
 $$K_a = \frac{x^2}{0.100 - x} = 1.74 \times 10^{-5}$$
 
-**Approximation:** Since $K_a$ is very small, $x \ll 0.100$, so $0.100 - x \approx 0.100$:
+**Approximation:** Since $K_a$ is very small, $x \ll 0.100$So $0.100 - x \approx 0.100$:
 
 $$x^2 = 1.74 \times 10^{-5} \times 0.100 = 1.74 \times 10^{-6}$$
 
@@ -251,7 +251,7 @@ $$x = \sqrt◆LB◆1.74 \times 10^{-6}◆RB◆ = 1.319 \times 10^{-3}\,\text{mol
 
 $$\text{pH} = -\log(1.319 \times 10^{-3}) = 2.88$$
 
-Verification: $x/0.100 = 0.01319 = 1.32\%$, so the approximation is valid (less than 5%).
+Verification: $x/0.100 = 0.01319 = 1.32\%$So the approximation is valid (less than 5%).
 
 (b)
 
@@ -273,7 +273,7 @@ $$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{6.990 \times 10^{-8}}◆RB◆◆
 
 $$\text{pH} = -\log(1.235 \times 10^{-4}) = 3.91$$
 
-The pH change is from $2.88$ to $3.91$, a change of $1.03$ units (not 2 units). This is because diluting a weak acid increases the percentage dissociation (from $1.32\%$ to $12.4\%$), partially compensating for the lower concentration. The student's reasoning would only apply to a strong acid.
+The pH change is from $2.88$ to $3.91$A change of $1.03$ units (not 2 units). This is because diluting a weak acid increases the percentage dissociation (from $1.32\%$ to $12.4\%$), partially compensating for the lower concentration. The student's reasoning would only apply to a strong acid.
 
 ---
 
@@ -281,7 +281,7 @@ The pH change is from $2.88$ to $3.91$, a change of $1.03$ units (not 2 units). 
 
 #### UT-4: Heterogeneous Equilibrium
 
-**Question:** For the equilibrium $\mathrm{NH}_4\mathrm{HS}(s) \rightleftharpoons \mathrm{NH}_3(g) + \mathrm{H}_2\mathrm{S}(g)$, the total pressure at equilibrium is $0.660\,\mathrm{atm}$ at $298\,\mathrm{K}$. Calculate $K_p$.
+**Question:** For the equilibrium $\mathrm{NH}_4\mathrm{HS}(s) \rightleftharpoons \mathrm{NH}_3(g) + \mathrm{H}_2\mathrm{S}(g)$The total pressure at equilibrium is $0.660\,\mathrm{atm}$ at $298\,\mathrm{K}$. Calculate $K_p$.
 
 **Solution:**
 
@@ -295,7 +295,7 @@ $$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{atm}^2$$ (1 mark).
 
 #### UT-5: Le Chatelier Applied
 
-**Question:** For the equilibrium $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g) \quad \Delta H = -92\,\mathrm{kJ\,mol^{-1}}$, predict and explain the effect of each change on the equilibrium yield of ammonia:
+**Question:** For the equilibrium $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g) \quad \Delta H = -92\,\mathrm{kJ\,mol^{-1}}$Predict and explain the effect of each change on the equilibrium yield of ammonia:
 
 (a) Increasing pressure
 (b) Increasing temperature
@@ -310,13 +310,13 @@ $$K_p = 0.330 \times 0.330 = 0.109\,\mathrm{atm}^2$$ (1 mark).
 
 (c) A catalyst increases the rate of both forward and reverse reactions equally. It has **no effect** on the equilibrium position or yield. The system reaches equilibrium faster but the yield is unchanged (1 mark).
 
-(d) Removing $\mathrm{NH}_3$ decreases its partial pressure (concentration). The equilibrium shifts to the right to replace the $\mathrm{NH}_3$, **increasing the yield** of $\mathrm{NH}_3$ per pass through the reactor (1 mark). This is the principle behind the industrial Haber process, where $\mathrm{NH}_3$ is continually condensed out.
+(d) Removing $\mathrm{NH}_3$ decreases its partial pressure (concentration). The equilibrium shifts to the right to replace the $\mathrm{NH}_3$**increasing the yield** of $\mathrm{NH}_3$ per pass through the reactor (1 mark). This is the principle behind the industrial Haber process, where $\mathrm{NH}_3$ is continually condensed out.
 
 #### IT-4: Equilibrium and Thermodynamics Combined
 
 **Question:** For the reaction $\mathrm{CO}(g) + \mathrm{H}_2\mathrm{O}(g) \rightleftharpoons \mathrm{CO}_2(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$$\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $K_p$ at $298\,\mathrm{K}$.
 
@@ -330,7 +330,7 @@ $\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\
 
 $$K_p = \exp\left(\frac◆LB◆28484◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(11.50) = 9.89 \times 10^4$$
 
-Since $\Delta n = 0$, $K_p$ is dimensionless (1 mark).
+Since $\Delta n = 0$$K_p$ is dimensionless (1 mark).
 
 (b) $K_p = 1$ when $\Delta G^\circ = 0$:
 
@@ -354,4 +354,4 @@ $$315.5x = 314.5$$
 
 $$x = 0.997\,\mathrm{atm}$$
 
-Equilibrium: $p(\mathrm{CO}) = p(\mathrm{H}_2\mathrm{O}) = 0.003\,\mathrm{atm}$, $p(\mathrm{CO}_2) = p(\mathrm{H}_2) = 0.997\,\mathrm{atm}$ (1 mark).
+Equilibrium: $p(\mathrm{CO}) = p(\mathrm{H}_2\mathrm{O}) = 0.003\,\mathrm{atm}$$p(\mathrm{CO}_2) = p(\mathrm{H}_2) = 0.997\,\mathrm{atm}$ (1 mark).

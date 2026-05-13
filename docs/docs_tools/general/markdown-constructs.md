@@ -14,7 +14,7 @@ sidebar_position: 2
 ### Headings
 
 Use `#` through `######`. Do not skip levels (e.g., jumping from `##` to `####`). The first heading
-in a page body should be `##` because Docusaurus uses the frontmatter `title` as the `h1`.
+In a page body should be `##` because Docusaurus uses the frontmatter `title` as the `h1`.
 
 ```md
 ## Level 2
@@ -41,7 +41,7 @@ _italic_ or _italic_ **bold** or **bold** **_bold italic_** ~~strikethrough~~
 ```
 
 For images stored in the same docs directory, use relative paths. Docusaurus resolves them at build
-time and copies them to the static output.
+Time and copies them to the static output.
 
 ### Blockquotes
 
@@ -108,8 +108,8 @@ Column alignment with colons:
 ```
 
 Tables that need complex cell content (code blocks, lists) will not render correctly in standard
-markdown. For those cases, use the custom `.grid-table` CSS class with div-based structure, or use
-an MDX component.
+Markdown. For those cases, use the custom `.grid-table` CSS class with div-based structure, or use
+An MDX component.
 
 ### Task Lists
 
@@ -130,7 +130,7 @@ Here is a statement that needs a citation[^1].
 ```
 
 Footnotes support multiple references to the same note and can contain inline formatting, links, and
-even code.
+Even code.
 
 ### Definition Lists
 
@@ -149,8 +149,8 @@ Renders as ~~This text is struck through.~~
 
 ### Inline Code
 
-`` `backticks` `` for inline code. For template syntax or generics, escape angle brackets outside
-code blocks: use `std::vector&lt;int&gt;` in prose.
+`` `Backticks` `` for inline code. For template syntax or generics, escape angle brackets outside
+Code blocks: use `std::vector&lt;int&gt;` in prose.
 
 ### Fenced Code Blocks
 
@@ -158,21 +158,21 @@ Specify the language after the opening fence for syntax highlighting:
 
 ````md
 ```python
-def hello():
-    print("Hello, world")
+Def hello():
+ print("Hello, world")
 ```
 
 ```cpp
 #include <iostream>
 
-int main() {
-    std::cout << "Hello, world\n";
+Int main() {
+ std::cout << "Hello, world\n";
 }
 ```
 ````
 
-Supported languages include `python`, `cpp`, `java`, `dart`, `javascript`, `typescript`, `bash`,
-`json`, `yaml`, `sql`, and many more.
+Supported languages include `python``cpp``java``dart``javascript``typescript``bash`
+`json``yaml``sql`And many more.
 
 ### Line Highlighting
 
@@ -180,9 +180,9 @@ Docusaurus supports commenting specific lines to highlight them:
 
 ````md
 ```python
-def greet(name): # highlight-next-line
-    print(f"Hello, {name}")
-    return True # highlight-line
+Def greet(name): # highlight-next-line
+ print(f"Hello, {name}")
+ return True # highlight-line
 ```
 ````
 
@@ -190,7 +190,7 @@ def greet(name): # highlight-next-line
 
 ````md
 ```python title="my_script.py"
-print("hello")
+Print("hello")
 ```
 ````
 
@@ -200,7 +200,7 @@ print("hello")
 ```diff
 - old line
 + new line
-  unchanged line
+ unchanged line
 ```
 ````
 
@@ -259,7 +259,7 @@ import TabItem from '@theme/TabItem';
 &lt;Tabs&gt; &lt;TabItem value="python" label="Python"&gt;
 
 ```python
-print("Python code")
+Print("Python code")
 ```
 
 &lt;/TabItem&gt; &lt;TabItem value="java" label="Java"&gt;
@@ -272,7 +272,7 @@ System.out.println("Java code");
 ````
 
 Tabs support synchronization by `groupId`. Tabs with the same `groupId` across the page will switch
-in unison:
+In unison:
 
 ```mdx
 &lt;Tabs groupId="language"&gt; &lt;TabItem value="python" label="Python"&gt; ... &lt;/TabItem&gt;
@@ -306,17 +306,17 @@ Docusaurus supports Mermaid diagrams natively in code blocks:
 
 ````md
 ```mermaid
-graph TD
-    A[Start] --> B{Decision}
-    B -->|Yes| C[Action 1]
-    B -->|No| D[Action 2]
-    C --> E[End]
-    D --> E
+Graph TD
+ A[Start] --> B{Decision}
+ B -->|Yes| C[Action 1]
+ B -->|No| D[Action 2]
+ C --> E[End]
+ D --> E
 ```
 ````
 
-Supported diagram types include `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`,
-`erDiagram`, `gantt`, `pie`, and `flowchart`.
+Supported diagram types include `graph``sequenceDiagram``classDiagram``stateDiagram`
+`erDiagram``gantt``pie`And `flowchart`.
 
 This site adds a hover zoom effect on Mermaid SVGs via `src/css/custom.css`:
 
@@ -357,13 +357,13 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 
 Common `@theme` imports:
 
-| Component          | Purpose                               |
+| Component | Purpose |
 | ------------------ | ------------------------------------- |
-| `CodeBlock`        | Render a code block from a file path  |
-| `Tabs` / `TabItem` | Tabbed content switching              |
-| `Details`          | Collapsible sections with React state |
-| `Admonition`       | Programmatic admonition rendering     |
-| `Head`             | Inject elements into `<head>`         |
+| `CodeBlock` | Render a code block from a file path |
+| `Tabs` / `TabItem` | Tabbed content switching |
+| `Details` | Collapsible sections with React state |
+| `Admonition` | Programmatic admonition rendering |
+| `Head` | Inject elements into `<head>` |
 
 Custom components from `@site/src/components/` are also importable:
 
@@ -401,14 +401,14 @@ draft: true # Hide from production build
 ### Slug Behavior
 
 - Without `slug`: derived from file path, e.g., `docs/docs_general-notes/intro.md` becomes
-  `/docs/general-notes/intro`.
+ `/docs/general-notes/intro`.
 - With `slug: custom-slug`: becomes `/docs/custom-slug`.
 - With `slug: /absolute/path`: becomes `/absolute/path` (bypasses the docs prefix).
 
 ### Tags and Categories
 
 Tags and categories populate the blog-like tag pages and aid search. They are flat strings — no
-hierarchy. Use lowercase, hyphen-separated values for consistency:
+Hierarchy. Use lowercase, hyphen-separated values for consistency:
 
 ```yaml
 tags:
@@ -444,3 +444,15 @@ No escaping needed inside fenced code blocks — the content is treated as raw t
 
 Do not use `` tags or other raw HTML block elements. MDX does not allow them. Use markdown or
 Docusaurus components instead. Self-closing elements like `<br />` and `<img />` are generally fine.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

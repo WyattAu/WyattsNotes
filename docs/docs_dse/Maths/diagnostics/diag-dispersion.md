@@ -19,7 +19,7 @@ The heights of 100 students have mean $165$ cm and variance $49$ cm$^2$. A new s
 
 **Solution:**
 
-Original: $n = 100$, $\bar{x} = 165$, $\sigma^2 = 49$.
+Original: $n = 100$$\bar{x} = 165$$\sigma^2 = 49$.
 
 Sum of original data: $\sum x_i = 100 \times 165 = 16500$.
 
@@ -37,7 +37,7 @@ New sum of squares: $2727400 + 181^2 = 2727400 + 32761 = 2760161$.
 
 New variance: $\sigma^2_{\text{new}} = \dfrac{2760161}{101} - (165.16)^2 \approx 27328.33 - 27277.83 \approx 50.50$ cm$^2$.
 
-Note: variance has units cm$^2$, while standard deviation has units cm.
+Note: variance has units cm$^2$While standard deviation has units cm.
 
 ---
 
@@ -45,7 +45,7 @@ Note: variance has units cm$^2$, while standard deviation has units cm.
 
 **Question:**
 
-A set of data has mean $m$ and standard deviation $s$. If each value is transformed by $y = 3x - 5$, find the new mean and new standard deviation in terms of $m$ and $s$.
+A set of data has mean $m$ and standard deviation $s$. If each value is transformed by $y = 3x - 5$Find the new mean and new standard deviation in terms of $m$ and $s$.
 
 **Solution:**
 
@@ -98,7 +98,7 @@ Estimated SD $= \sqrt{\dfrac{821}{9}} = \dfrac{\sqrt{821}}{3} \approx 9.56$.
 
 **Question:**
 
-A box plot has minimum $= 10$, $Q_1 = 25$, median $= 35$, $Q_3 = 50$, maximum $= 80$. Find the interquartile range and identify any outliers.
+A box plot has minimum $= 10$$Q_1 = 25$Median $= 35$$Q_3 = 50$Maximum $= 80$. Find the interquartile range and identify any outliers.
 
 **Solution:**
 
@@ -108,7 +108,7 @@ Lower fence: $Q_1 - 1.5 \times \text{IQR} = 25 - 37.5 = -12.5$.
 
 Upper fence: $Q_3 + 1.5 \times \text{IQR} = 50 + 37.5 = 87.5$.
 
-Since all values ($10$ to $80$) fall within $[-12.5,\; 87.5]$, there are no outliers.
+Since all values ($10$ to $80$) fall within $[-12.5,\; 87.5]$There are no outliers.
 
 ---
 
@@ -116,7 +116,7 @@ Since all values ($10$ to $80$) fall within $[-12.5,\; 87.5]$, there are no outl
 
 **Question:**
 
-Set $A$ has $n_A = 8$, $\bar{x}_A = 10$, $s_A^2 = 4$. Set $B$ has $n_B = 12$, $\bar{x}_B = 15$, $s_B^2 = 9$. Find the mean and variance of the combined set $A \cup B$.
+Set $A$ has $n_A = 8$$\bar{x}_A = 10$$s_A^2 = 4$. Set $B$ has $n_B = 12$$\bar{x}_B = 15$$s_B^2 = 9$. Find the mean and variance of the combined set $A \cup B$.
 
 **Solution:**
 
@@ -128,7 +128,7 @@ Combined variance using the formula:
 
 $$s^2 = \frac{n_A(s_A^2 + d_A^2) + n_B(s_B^2 + d_B^2)}{n_A + n_B}$$
 
-where $d_A = \bar{x}_A - \bar{x} = 10 - 13 = -3$ and $d_B = \bar{x}_B - \bar{x} = 15 - 13 = 2$.
+Where $d_A = \bar{x}_A - \bar{x} = 10 - 13 = -3$ and $d_B = \bar{x}_B - \bar{x} = 15 - 13 = 2$.
 
 $$s^2 = \frac{8(4 + 9) + 12(9 + 4)}{20} = \frac{8 \times 13 + 12 \times 13}{20} = \frac{104 + 156}{20} = \frac{260}{20} = 13$$
 
@@ -142,7 +142,7 @@ $$s^2 = \frac{8(4 + 9) + 12(9 + 4)}{20} = \frac{8 \times 13 + 12 \times 13}{20} 
 
 **Question:**
 
-A random variable $X$ takes values $1, 2, 3, 4, 5$ with probabilities $\dfrac{1}{15}$, $\dfrac{2}{15}$, $\dfrac{3}{15}$, $\dfrac{4}{15}$, $\dfrac{5}{15}$ respectively. Find $E(X)$ and $\text{Var}(X)$.
+A random variable $X$ takes values $1, 2, 3, 4, 5$ with probabilities $\dfrac{1}{15}$$\dfrac{2}{15}$$\dfrac{3}{15}$$\dfrac{4}{15}$$\dfrac{5}{15}$ respectively. Find $E(X)$ and $\text{Var}(X)$.
 
 **Solution:**
 
@@ -168,7 +168,7 @@ Within 2 standard deviations: $20 \pm 2(4) = [12,\; 28]$.
 
 By Chebyshev's inequality, at least $1 - \dfrac{1}{k^2} = 1 - \dfrac{1}{4} = \dfrac{3}{4} = 75\%$ of data lies within $k = 2$ standard deviations.
 
-If the data is approximately normally distributed, the empirical rule gives approximately $95\%$, but Chebyshev gives the guaranteed minimum of $75\%$.
+If the data is approximately normally distributed, the empirical rule gives approximately $95\%$But Chebyshev gives the guaranteed minimum of $75\%$.
 
 ---
 
@@ -180,7 +180,7 @@ All possible samples of size 2 are drawn with replacement from the population $\
 
 **Solution:**
 
-Population: $\\{2, 4, 6\\}$, $\mu = 4$, $\sigma^2 = \dfrac{(4+0+4)}{3} = \dfrac{8}{3}$.
+Population: $\\{2, 4, 6\\}$$\mu = 4$$\sigma^2 = \dfrac{(4+0+4)}{3} = \dfrac{8}{3}$.
 
 All samples of size 2 with replacement (9 samples):
 
@@ -208,7 +208,7 @@ A set of 5 numbers has mean $10$ and standard deviation $3$. If $7$ is added to 
 
 **Solution:**
 
-Transformation: $y = x + 7$ (i.e. $a = 1$, $b = 7$).
+Transformation: $y = x + 7$ (i.e. $a = 1$$b = 7$).
 
 New mean $= 1 \times 10 + 7 = 17$.
 
@@ -255,11 +255,11 @@ $$\sigma = \sqrt{\frac{629}{121}} = \frac{\sqrt{629}}{11} \approx 2.28$$
 
 **Question:**
 
-Using the coding $y = \dfrac{x - 25}{5}$, the coded data has mean $\bar{y} = 1.2$ and variance $s_y^2 = 4.8$. Find the mean and standard deviation of the original data.
+Using the coding $y = \dfrac{x - 25}{5}$The coded data has mean $\bar{y} = 1.2$ and variance $s_y^2 = 4.8$. Find the mean and standard deviation of the original data.
 
 **Solution:**
 
-The coding is $y = \dfrac{x - 25}{5} = \dfrac{1}{5}x - 5$, so $a = \dfrac{1}{5}$ and $b = -5$.
+The coding is $y = \dfrac{x - 25}{5} = \dfrac{1}{5}x - 5$So $a = \dfrac{1}{5}$ and $b = -5$.
 
 Original mean: $\bar{x} = \dfrac{\bar{y} - b}{a} = \dfrac{1.2 + 5}{1/5} = 6.2 \times 5 = 31$.
 
@@ -307,9 +307,9 @@ $$\text{CV}_A = \frac{8}{65} \times 100\% \approx 12.3\%$$
 
 $$\text{CV}_B = \frac{15}{68} \times 100\% \approx 22.1\%$$
 
-Since $\text{CV}_A < \text{CV}_B$, Class A has more consistent performance.
+Since $\text{CV}_A < \text{CV}_B$Class A has more consistent performance.
 
-Alternatively, comparing standard deviations directly: Class A has $\sigma = 8$ and Class B has $\sigma = 15$. The smaller standard deviation of Class A indicates less variability, i.e. more consistency.
+Alternatively, comparing standard deviations directly: Class A has $\sigma = 8$ and Class B has $\sigma = 15$. The smaller standard deviation of Class A indicates less variability, i.e. More consistency.
 
 ---
 
@@ -325,7 +325,7 @@ A data set is $\{5, 8, 10, 12, 15, 18, 45\}$. The value $45$ is suspected to be 
 
 **Solution:**
 
-(a) Sum $= 113$, $\bar{x} = \dfrac{113}{7} \approx 16.14$.
+(a) Sum $= 113$$\bar{x} = \dfrac{113}{7} \approx 16.14$.
 
 $\sum x^2 = 25 + 64 + 100 + 144 + 225 + 324 + 2025 = 2907$.
 
@@ -333,9 +333,9 @@ $\sigma^2 = \dfrac{2907}{7} - \left(\dfrac{113}{7}\right)^2 = 415.29 - 260.31 = 
 
 $\sigma \approx 12.45$.
 
-(b) After removing $45$: sum $= 68$, $n = 6$, $\bar{x} = \dfrac{68}{6} = \dfrac{34}{3} \approx 11.33$.
+(b) After removing $45$: sum $= 68$$n = 6$$\bar{x} = \dfrac{68}{6} = \dfrac{34}{3} \approx 11.33$.
 
-$\sum x^2 = 882$, $\sigma^2 = \dfrac{882}{6} - \left(\dfrac{34}{3}\right)^2 = 147 - 128.44 = 18.56$.
+$\sum x^2 = 882$$\sigma^2 = \dfrac{882}{6} - \left(\dfrac{34}{3}\right)^2 = 147 - 128.44 = 18.56$.
 
 $\sigma \approx 4.31$.
 
@@ -375,7 +375,7 @@ Since $k$ must be a non-negative integer, and $\dfrac{34}{3}$ is not an integer,
 
 **Question:**
 
-For grouped data with class width $h$, state Sheppard's correction for the variance and explain when it is appropriate to use it.
+For grouped data with class width $h$State Sheppard's correction for the variance and explain when it is appropriate to use it.
 
 **Solution:**
 
@@ -397,13 +397,13 @@ In DSE examinations, Sheppard's correction is generally not required unless expl
 
 ## Common Pitfalls
 
-1. **Confusing population variance with sample variance.** The population variance formula divides by $n$, while the sample variance divides by $n - 1$ (Bessel's correction). In DSE Maths, unless specified otherwise, use the population formula (divide by $n$).
+1. **Confusing population variance with sample variance.** The population variance formula divides by $n$While the sample variance divides by $n - 1$ (Bessel's correction). In DSE Maths, unless specified otherwise, use the population formula (divide by $n$).
 
 2. **Forgetting that variance has squared units.** If data is in centimetres, the variance is in cm$^2$ and the standard deviation is in cm. Do not mix up units when writing conclusions.
 
-3. **Incorrectly applying coding formulas.** For the transformation $y = ax + b$: new mean $= a\bar{x} + b$, new SD $= |a| \cdot s$. The additive constant $b$ does NOT affect the standard deviation. A common error is writing new SD $= as + b$.
+3. **Incorrectly applying coding formulas.** For the transformation $y = ax + b$: new mean $= a\bar{x} + b$New SD $= |a| \cdot s$. The additive constant $b$ does NOT affect the standard deviation. A common error is writing new SD $= as + b$.
 
-4. **Using the wrong formula for combined variance.** When combining two data sets, do not simply average the variances. Use the correct formula involving the deviation of each set's mean from the combined mean.
+4. **Using the wrong formula for combined variance.** When combining two data sets, do not average the variances. Use the correct formula involving the deviation of each set's mean from the combined mean.
 
 5. **Misidentifying quartile positions.** Different textbooks use different conventions for finding $Q_1$ and $Q_3$. In DSE, the most common approach is: $Q_1$ is the median of the lower half and $Q_3$ is the median of the upper half.
 
@@ -458,7 +458,7 @@ The weights (in kg) of 8 parcels are: $2.3, 3.1, 4.5, 5.2, 3.8, 4.1, 2.9, 3.6$.
 
 **Solution:**
 
-(a) Sum $= 29.5$, $\bar{x} = \dfrac{29.5}{8} = 3.6875$.
+(a) Sum $= 29.5$$\bar{x} = \dfrac{29.5}{8} = 3.6875$.
 
 $\sum x^2 = 5.29 + 9.61 + 20.25 + 27.04 + 14.44 + 16.81 + 8.41 + 12.96 = 114.81$.
 
@@ -491,7 +491,7 @@ Two classes took the same examination. Class $A$ (30 students) had mean $72$ and
 
 (a) Combined mean $= \dfrac{30 \times 72 + 20 \times 65}{50} = \dfrac{2160 + 1300}{50} = \dfrac{3460}{50} = 69.2$.
 
-(b) $d_A = 72 - 69.2 = 2.8$, $d_B = 65 - 69.2 = -4.2$.
+(b) $d_A = 72 - 69.2 = 2.8$$d_B = 65 - 69.2 = -4.2$.
 
 $$\sigma^2 = \frac{30(36 + 2.8^2) + 20(64 + 4.2^2)}{50} = \frac{30(36 + 7.84) + 20(64 + 17.64)}{50}$$
 
@@ -503,7 +503,7 @@ $$= \frac{30 \times 43.84 + 20 \times 81.64}{50} = \frac{1315.2 + 1632.8}{50} = 
 
 The box-and-whisker diagram below summarises the daily temperatures (in $°$C) recorded in a city for 30 days:
 
-Minimum $= 12$, $Q_1 = 18$, Median $= 22$, $Q_3 = 28$, Maximum $= 35$.
+Minimum $= 12$$Q_1 = 18$Median $= 22$$Q_3 = 28$Maximum $= 35$.
 
 (a) Find the interquartile range. (1 mark)
 (b) Determine the lower and upper fences and identify any outliers. (3 marks)
@@ -517,7 +517,7 @@ Minimum $= 12$, $Q_1 = 18$, Median $= 22$, $Q_3 = 28$, Maximum $= 35$.
 
 Upper fence $= Q_3 + 1.5 \times \text{IQR} = 28 + 15 = 43$.
 
-Since all values ($12$ to $35$) lie within $[3, 43]$, there are no outliers.
+Since all values ($12$ to $35$) lie within $[3, 43]$There are no outliers.
 
 (c) By definition, $50\%$ of the data lies between $Q_1$ and $Q_3$.
 

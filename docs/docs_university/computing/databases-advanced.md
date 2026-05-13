@@ -25,25 +25,25 @@ $$\pi_{\text{name{}, \text{salary{} \times 12 \to \text{annual{}}(\text{Employee
 
 **Outer join:** Preserves unmatched tuples from one or both relations.
 
-- **Left outer join** $R \bowtie_L S$: All tuples from $R$, with NULLs for unmatched $S$ attributes.
-- **Right outer join** $R \bowtie_R S$: All tuples from $S$, with NULLs for unmatched $R$ attributes.
+- **Left outer join** $R \bowtie_L S$: All tuples from $R$With NULLs for unmatched $S$ attributes.
+- **Right outer join** $R \bowtie_R S$: All tuples from $S$With NULLs for unmatched $R$ attributes.
 - **Full outer join** $R \bowtie_F S$: All tuples from both relations.
 
 **Recursive closure:** Not expressible in basic relational algebra. Requires recursive CTEs or Datalog.
 
-**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$, $(t, s) \in R$.
+**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$$(t, s) \in R$.
 
 **Theorem 1.1.** Division can be expressed using basic relational algebra:
 
 $$R \div S = \pi_{A}(R) - \pi_{A}\left(\pi_{A}(R) \times S - R\right)$$
 
-where $A$ is the set of attributes of $R$ not in $S$.
+Where $A$ is the set of attributes of $R$ not in $S$.
 
 *Proof.* Let $t \in \pi_A(R)$. We need to show $t \in R \div S$ if and only if $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
-($\Rightarrow$) If $t \in R \div S$, then for every $s \in S$, $(t, s) \in R$. So $(t, s) \notin \pi_A(R) \times S - R$ for any $s$, hence $t \notin \pi_A(\pi_A(R) \times S - R)$.
+($\Rightarrow$) If $t \in R \div S$Then for every $s \in S$$(t, s) \in R$. So $(t, s) \notin \pi_A(R) \times S - R$ for any $s$Hence $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
-($\Leftarrow$) If $t \notin \pi_A(\pi_A(R) \times S - R)$, then there is no $s \in S$ such that $(t, s) \notin R$. This means for every $s \in S$, $(t, s) \in R$, so $t \in R \div S$. $\blacksquare$
+($\Leftarrow$) If $t \notin \pi_A(\pi_A(R) \times S - R)$Then there is no $s \in S$ such that $(t, s) \notin R$. This means for every $s \in S$$(t, s) \in R$So $t \in R \div S$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Relational Division</summary>
@@ -91,7 +91,7 @@ The query optimiser transforms a query into an equivalent but more efficient for
 
 **Syntax:** $\{t \mid \exists u (R(u) \wedge t.A = u.A \wedge \ldots)\}$
 
-**Safety.** A calculus expression is safe if its result is finite. Unsafe expressions can produce infinite relations (e.g., $\{t \mid \neg R(t)\}$ is the complement of $R$, which is infinite if the domain is infinite).
+**Safety.** A calculus expression is safe if its result is finite. Unsafe expressions can produce infinite relations (e.g., $\{t \mid \neg R(t)\}$ is the complement of $R$Which is infinite if the domain is infinite).
 
 **Theorem 1.3 (Codd).** Every safe relational calculus query can be expressed in relational algebra, and vice versa. Therefore, relational algebra and safe relational calculus have the same expressive power.
 
@@ -236,7 +236,7 @@ Recursive CTEs without cycle detection will loop forever on cyclic graphs. Alway
 
 A **join dependency (JD)** $\bowtie\{R_1, R_2, \ldots, R_k\}$ holds over $R$ if $R = R_1 \bowtie R_2 \bowtie \cdots \bowtie R_k$.
 
-**Definition.** A relation $R$ is in **5NF (Project-Join Normal Form)** if for every non-trivial join dependency $\bowtie\{R_1, \ldots, R_k\}$ that holds over $R$, each $R_i$ is a superkey of $R$.
+**Definition.** A relation $R$ is in **5NF (Project-Join Normal Form)** if for every non-trivial join dependency $\bowtie\{R_1, \ldots, R_k\}$ that holds over $R$Each $R_i$ is a superkey of $R$.
 
 5NF generalises 4NF: every 4NF violation is also a 5NF violation, but not vice versa.
 
@@ -249,10 +249,10 @@ Constraint: Each course may have multiple teachers and multiple textbooks, but t
 
 | course | teacher | textbook |
 |--------|---------|----------|
-| CS101  | Smith   | Knuth    |
-| CS101  | Smith   | Cormen   |
-| CS101  | Jones   | Knuth    |
-| CS101  | Jones   | Cormen   |
+| CS101 | Smith | Knuth |
+| CS101 | Smith | Cormen |
+| CS101 | Jones | Knuth |
+| CS101 | Jones | Cormen |
 
 This satisfies 4NF (no multi-valued dependencies beyond those implied by the key).
 
@@ -264,7 +264,7 @@ Neither (course, teacher) nor (course, textbook) is a superkey. Therefore, the r
 - $R_1$(course, teacher): $\{(\text{CS101{}, \text{Smith{}), (\text{CS101{}, \text{Jones{})\}$
 - $R_2$(course, textbook): $\{(\text{CS101{}, \text{Knuth{}), (\text{CS101{}, \text{Cormen{})\}$
 
-This avoids the redundancy: adding a new teacher only requires adding one row to $R_1$, not $n$ rows (one per textbook).
+This avoids the redundancy: adding a new teacher only requires adding one row to $R_1$Not $n$ rows (one per textbook).
 </details>
 
 ### 3.2 Domain-Key Normal Form (DKNF/6NF)
@@ -279,7 +279,7 @@ DKNF is the "ultimate" normal form: every relation in DKNF is free from insertio
 
 | Normal Form | Condition | Decomposition always possible? | Dependency preserving? |
 |-------------|-----------|-------------------------------|----------------------|
-| 1NF | Atomic values | Trivially yes | Yes |
+| 1NF | Atomic values | yes | Yes |
 | 2NF | No partial dependencies | Yes | Yes |
 | 3NF | No transitive dependencies | Yes | Yes |
 | BCNF | No non-trivial FDs with non-superkey LHS | Yes | Not always |
@@ -337,9 +337,9 @@ $R$: 2000 blocks, 100,000 records. $S$: 500 blocks, 25,000 records. Memory: 52 b
 
 **Block nested-loop:** $B_r + \lceil B_r / (M-1) \rceil \cdot B_s = 2000 + \lceil 2000 / 51 \rceil \cdot 500 = 2000 + 40 \times 500 = 22,000$ blocks.
 
-**Sort-merge:** Sort $R$: $2 \times 2000 \times \lceil \log_2(2000/51) \rceil / 51$... more precisely, $O(B_r \log_{M-1} B_r) = O(2000 \log_{51} 2000) \approx O(2000 \times 1.88) = O(3760)$. Sort $S$: $O(500 \log_{51} 500) \approx O(500 \times 1.46) = O(730)$. Merge: $2000 + 500 = 2500$. Total: $\approx 7000$ blocks.
+**Sort-merge:** Sort $R$: $2 \times 2000 \times \lceil \log_2(2000/51) \rceil / 51$... More precisely, $O(B_r \log_{M-1} B_r) = O(2000 \log_{51} 2000) \approx O(2000 \times 1.88) = O(3760)$. Sort $S$: $O(500 \log_{51} 500) \approx O(500 \times 1.46) = O(730)$. Merge: $2000 + 500 = 2500$. Total: $\approx 7000$ blocks.
 
-**Hash join:** $3(2000 + 500) = 7500$ blocks. But we need $M \geq \lceil \min(B_r, B_s) \rceil$... actually, we need $M \geq \sqrt{B_r + B_s}$ for the single-pass hash join. $\sqrt{2500} = 50 \leq 52 = M$. So single-pass hash join works.
+**Hash join:** $3(2000 + 500) = 7500$ blocks. But we need $M \geq \lceil \min(B_r, B_s) \rceil$... Actually, we need $M \geq \sqrt{B_r + B_s}$ for the single-pass hash join. $\sqrt{2500} = 50 \leq 52 = M$. So single-pass hash join works.
 
 **Hybrid hash join:** Partition $R$ into $\lceil 2000/50 \rceil = 40$ partitions, each fitting in memory. Cost: $3 \times 2000 + 3 \times 500 = 7500$.
 
@@ -399,9 +399,9 @@ The graph has a cycle: $T_1 \to T_2 \to T_1$. Therefore, this schedule is **not 
 
 A schedule is **view-serialisable** if it is equivalent to a serial schedule under view equivalence:
 
-1. **Initial read:** If $T_i$ reads the initial value of $A$, then in the serial schedule, $T_i$ must also read the initial value.
-2. **Updated read:** If $T_i$ reads the value of $A$ written by $T_j$, then in the serial schedule, $T_i$ must read the value written by $T_j$.
-3. **Final write:** If $T_i$ performs the final write of $A$, then in the serial schedule, $T_i$ must perform the final write.
+1. **Initial read:** If $T_i$ reads the initial value of $A$Then in the serial schedule, $T_i$ must also read the initial value.
+2. **Updated read:** If $T_i$ reads the value of $A$ written by $T_j$Then in the serial schedule, $T_i$ must read the value written by $T_j$.
+3. **Final write:** If $T_i$ performs the final write of $A$Then in the serial schedule, $T_i$ must perform the final write.
 
 **Theorem 5.2.** Every conflict-serialisable schedule is view-serialisable, but not vice versa. Determining view serialisability is NP-complete.
 
@@ -454,8 +454,8 @@ MVCC maintains multiple versions of each data item, allowing readers to access a
 **Theorem 5.4.** Snapshot isolation prevents dirty reads, non-repeatable reads, and phantom reads (within a single transaction), but does not guarantee serialisability. In particular, write skew is possible under snapshot isolation.
 
 **Write skew example:**
-- $T_1$ reads rows where $x + y = 10$, checks $x > 3$, updates $x := x - 1$.
-- $T_2$ reads rows where $x + y = 10$, checks $y > 3$, updates $y := y - 1$.
+- $T_1$ reads rows where $x + y = 10$Checks $x > 3$Updates $x := x - 1$.
+- $T_2$ reads rows where $x + y = 10$Checks $y > 3$Updates $y := y - 1$.
 - Both commit successfully under snapshot isolation, but the invariant $x + y \geq 7$ may be violated.
 
 ### 5.5 Log-Based Recovery
@@ -525,19 +525,19 @@ A **bitmap index** stores bitmaps for each distinct value of an attribute. For a
 
 | Row | Colour |
 |-----|--------|
-| 1   | Red    |
-| 2   | Green  |
-| 3   | Blue   |
-| 4   | Red    |
-| 5   | Red    |
-| 6   | Green  |
-| 7   | Blue   |
-| 8   | Red    |
+| 1 | Red |
+| 2 | Green |
+| 3 | Blue |
+| 4 | Red |
+| 5 | Red |
+| 6 | Green |
+| 7 | Blue |
+| 8 | Red |
 
 Bitmaps:
-- Red:   10111001
+- Red: 10111001
 - Green: 01000100
-- Blue:  00100010
+- Blue: 00100010
 
 **Query:** "colour = Red OR colour = Green": Red | Green = 11111101. Rows 1, 2, 4, 5, 6, 8.
 
@@ -588,15 +588,15 @@ R1 = (1, 1, 3, 3), R2 = (2, 2, 4, 4), R3 = (5, 5, 7, 7), R4 = (6, 1, 8, 3), R5 =
 *Insert R2:* Leaf `{R1, R2}`. MBR = (1, 1, 4, 4).
 *Insert R3:* Leaf `{R1, R2, R3}`. MBR = (1, 1, 7, 7). Full (3 entries).
 *Insert R4:* Leaf is full. Split.
-  - R1, R2 are close together. R3 is far. Best split: `{R1, R2}` and `{R3, R4}`.
-  - Split 1 MBR: (1, 1, 4, 4). Split 2 MBR: (5, 1, 8, 7).
-  - Create internal node with two children.
+ - R1, R2 are close together. R3 is far. Best split: `{R1, R2}` and `{R3, R4}`.
+ - Split 1 MBR: (1, 1, 4, 4). Split 2 MBR: (5, 1, 8, 7).
+ - Create internal node with two children.
 *Insert R5:* Which leaf to insert into? R5 = (1, 5, 3, 7).
-  - Enlargement for split 1 (1,1,4,4): new MBR = (1, 1, 4, 7), enlargement = 4*3 - 3*3 = 3.
-  - Enlargement for split 2 (5,1,8,7): no overlap, no enlargement needed... wait, R5 (1,5,3,7) does overlap with (5,1,8,7)? No, R5's x-range [1,3] and split 2's x-range [5,8] don't overlap. So R5 goes into split 1.
-  - Split 1: `{R1, R2, R5}`. MBR = (1, 1, 4, 7). Full again!
-  - Split split 1: `{R1, R2}` and `{R5}`. Or `{R1, R5}` and `{R2}`.
-  - Choose `{R1, R2}` (MBR 1,1,4,4) and `{R5}` (MBR 1,5,3,7). Minimum total enlargement.
+ - Enlargement for split 1 (1,1,4,4): new MBR = (1, 1, 4, 7), enlargement = 4*3 - 3*3 = 3.
+ - Enlargement for split 2 (5,1,8,7): no overlap, no enlargement needed... Wait, R5 (1,5,3,7) does overlap with (5,1,8,7)? No, R5's x-range [1,3] and split 2's x-range [5,8] don't overlap. So R5 goes into split 1.
+ - Split 1: `{R1, R2, R5}`. MBR = (1, 1, 4, 7). Full again!
+ - Split split 1: `{R1, R2}` and `{R5}`. Or `{R1, R5}` and `{R2}`.
+ - Choose `{R1, R2}` (MBR 1,1,4,4) and `{R5}` (MBR 1,5,3,7). Minimum total enlargement.
 
 Final R-tree:
 ```
@@ -715,9 +715,9 @@ A comprehensive summary of anomalies by isolation level:
 | Write skew | Possible | Possible | Possible | Prevented |
 | Read skew | Possible | Possible | Prevented | Prevented |
 
-**Read skew:** $T_1$ reads $A$ and $B$, $T_2$ updates $A$, $T_1$ reads $A$ again and sees a different value. Prevented by Repeatable Read (locks on read rows).
+**Read skew:** $T_1$ reads $A$ and $B$$T_2$ updates $A$$T_1$ reads $A$ again and sees a different value. Prevented by Repeatable Read (locks on read rows).
 
-**Write skew:** $T_1$ reads rows where $x + y > 10$, updates $x$; $T_2$ reads same rows, updates $y$. Both commit, but $x + y$ may now be $\leq 10$. NOT prevented by Repeatable Read (requires Serializable).
+**Write skew:** $T_1$ reads rows where $x + y > 10$Updates $x$; $T_2$ reads same rows, updates $y$. Both commit, but $x + y$ may now be $\leq 10$. NOT prevented by Repeatable Read (requires Serializable).
 
 ### 12.3 Optimistic Concurrency Control (OCC)
 
@@ -826,7 +826,7 @@ $$\text{Sort{}(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil \rceil \r
 **Grace hash join (when $R$ does not fit in memory):**
 
 1. **Partition phase:** Hash both relations into $k = \lceil \min(B_r, B_s) / (M - 1) \rceil$ partitions on disk. Each partition of $R$ must fit in memory.
-2. **Build + probe phase:** For each partition pair $(R_i, S_i)$, load $R_i$ into memory, build hash table, and probe with $S_i$.
+2. **Build + probe phase:** For each partition pair $(R_i, S_i)$Load $R_i$ into memory, build hash table, and probe with $S_i$.
 
 **Cost:** Partition: $2(B_r + B_s)$. Build + probe: $B_r + B_s$. Total: $3(B_r + B_s)$.
 
@@ -834,7 +834,7 @@ $$\text{Sort{}(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil \rceil \r
 
 ### 15.3 Index Nested-Loop Join Cost
 
-For each tuple in $R$, look up matching tuples in $S$ using an index on the join attribute.
+For each tuple in $R$Look up matching tuples in $S$ using an index on the join attribute.
 
 $$\text{Cost{} = B_r + R_r \cdot (\text{cost per probe{})$$
 
@@ -989,7 +989,7 @@ Coordinator          Participant 1        Participant 2
 
 **Problem 4.** Write a single SQL query that, for each department, returns the top 3 employees by salary. Use window functions.
 
-**Problem 5.** Consider the relation $R(A, B, C, D, E)$ with functional dependencies: $AB \to C$, $C \to D$, $D \to E$, $E \to A$. Find all candidate keys, decompose into BCNF, and check if the decomposition is dependency-preserving.
+**Problem 5.** Consider the relation $R(A, B, C, D, E)$ with functional dependencies: $AB \to C$$C \to D$$D \to E$$E \to A$. Find all candidate keys, decompose into BCNF, and check if the decomposition is dependency-preserving.
 
 **Problem 6.** The relation Teaching(course, teacher, textbook, room) has the constraint: "The teacher and textbook assigned to a course section are independent." What normal form does this violate? Decompose accordingly.
 
@@ -1030,32 +1030,32 @@ Describe the analysis, redo, and undo phases.
 <details>
 <summary>Solution to Problem 5</summary>
 
-FDs: $AB \to C$, $C \to D$, $D \to E$, $E \to A$.
+FDs: $AB \to C$$C \to D$$D \to E$$E \to A$.
 
 **Closure computation:**
 
 $AB^+ = \{A, B\}$
-$ABC^+ = \{A, B, C, D, E\}$ (via $C \to D$, $D \to E$, $E \to A$)
+$ABC^+ = \{A, B, C, D, E\}$ (via $C \to D$$D \to E$$E \to A$)
 
 So $AB$ is a candidate key. Similarly:
 
-$BC^+ = \{B, C, D, E, A\}$ (via $C \to D$, $D \to E$, $E \to A$). So $BC$ is a candidate key.
+$BC^+ = \{B, C, D, E, A\}$ (via $C \to D$$D \to E$$E \to A$). So $BC$ is a candidate key.
 
-$CD^+ = \{C, D, E, A\}$ (no $B$, so not a candidate key).
+$CD^+ = \{C, D, E, A\}$ (no $B$So not a candidate key).
 
-$DE^+ = \{D, E, A\}$ (no $B$, not a key).
+$DE^+ = \{D, E, A\}$ (no $B$Not a key).
 
-$CE^+ = \{C, E, A, D\}$ (no $B$, not a key).
+$CE^+ = \{C, E, A, D\}$ (no $B$Not a key).
 
-$BD^+ = \{B, D, E, A\}$ (no $C$, not a key).
+$BD^+ = \{B, D, E, A\}$ (no $C$Not a key).
 
-$BE^+ = \{B, E, A\}$ (no $C$, not a key).
+$BE^+ = \{B, E, A\}$ (no $C$Not a key).
 
 $AE^+ = \{A, E\}$ (not a key).
 
-$AC^+ = \{A, C, D, E\}$ (no $B$, not a key).
+$AC^+ = \{A, C, D, E\}$ (no $B$Not a key).
 
-$AD^+ = \{A, D, E\}$ (no $B$, not a key).
+$AD^+ = \{A, D, E\}$ (no $B$Not a key).
 
 Candidate keys: $\{AB, BC\}$.
 
@@ -1063,21 +1063,21 @@ Candidate keys: $\{AB, BC\}$.
 
 $C \to D$ violates BCNF (LHS $C$ is not a superkey). Decompose $R$ into:
 - $R_1(C, D)$ with $C \to D$ (BCNF, key = $C$)
-- $R_2(A, B, C, E)$ with $AB \to CE$, $E \to A$, $CE \to AB$... wait, let me recompute.
+- $R_2(A, B, C, E)$ with $AB \to CE$$E \to A$$CE \to AB$... Wait, let me recompute.
 
-Actually, $R_2$ has attributes $\{A, B, C, E\}$ and the restricted FDs are $AB \to C$, $E \to A$.
+Actually, $R_2$ has attributes $\{A, B, C, E\}$ and the restricted FDs are $AB \to C$$E \to A$.
 
-$E \to A$ violates BCNF (LHS $E$ is not a superkey of $R_2$). Superkeys of $R_2$ include $AB$, $BC$ (since $BC \to D$ is lost but $BC$ in $R_2$: $BC \to C$, not useful). Actually, $BC$ is not a key in $R_2$ because we lost $D$.
+$E \to A$ violates BCNF (LHS $E$ is not a superkey of $R_2$). Superkeys of $R_2$ include $AB$$BC$ (since $BC \to D$ is lost but $BC$ in $R_2$: $BC \to C$Not useful). Actually, $BC$ is not a key in $R_2$ because we lost $D$.
 
-Keys of $R_2$: $AB$ is a key ($AB \to C$, and with $C$ we need... $ABC \to ?$ in $R_2$: $C$ doesn't give us $E$ in $R_2$. So $AB$ gives $\{A, B, C\}$, not $\{A, B, C, E\}$. So $AB$ is NOT a key in $R_2$!
+Keys of $R_2$: $AB$ is a key ($AB \to C$And with $C$ we need... $ABC \to ?$ in $R_2$: $C$ doesn't give us $E$ in $R_2$. So $AB$ gives $\{A, B, C\}$Not $\{A, B, C, E\}$. So $AB$ is NOT a key in $R_2$!
 
-Hmm, let me recompute. In the original relation, $AB$ is a key. But after removing $D$, the remaining FDs are $AB \to C$ and $E \to A$.
+Hmm, let me recompute. In the original relation, $AB$ is a key. But after removing $D$The remaining FDs are $AB \to C$ and $E \to A$.
 
 $AB^+ = \{A, B, C\}$ in $R_2$. Not a superkey (missing $E$).
 
-$BE^+ = \{B, E, A, C\} = \{A, B, C, E\}$ (via $E \to A$, $AB \to C$). So $BE$ is a key!
+$BE^+ = \{B, E, A, C\} = \{A, B, C, E\}$ (via $E \to A$$AB \to C$). So $BE$ is a key!
 
-$CE^+ = \{C, E, A, B\} = \{A, B, C, E\}$ (via $E \to A$, $AB \to C$). So $CE$ is a key!
+$CE^+ = \{C, E, A, B\} = \{A, B, C, E\}$ (via $E \to A$$AB \to C$). So $CE$ is a key!
 
 $BC^+ = \{B, C\}$ (no applicable FD). Not a key.
 
@@ -1087,11 +1087,11 @@ Keys of $R_2$: $\{BE, CE\}$.
 
 $E \to A$ violates BCNF. Decompose $R_2$ into:
 - $R_{2a}(E, A)$ with $E \to A$ (BCNF, key = $E$)
-- $R_{2b}(B, C, E)$ with restricted FDs: $BE \to C$, $CE \to B$... wait, $BE \to C$ comes from $AB \to C$ restricted to $\{B, C, E\}$: we lose the dependency since $A$ is not in $R_{2b}$.
+- $R_{2b}(B, C, E)$ with restricted FDs: $BE \to C$$CE \to B$... Wait, $BE \to C$ comes from $AB \to C$ restricted to $\{B, C, E\}$: we lose the dependency since $A$ is not in $R_{2b}$.
 
-Actually, $AB \to C$ restricted to $R_{2b}(B, C, E)$: the LHS is $AB$ but $A \notin R_{2b}$, so this FD is lost. The only remaining FDs in $R_{2b}$ are trivial. So $R_{2b}$ is in BCNF with key $BE$ (or $CE$).
+Actually, $AB \to C$ restricted to $R_{2b}(B, C, E)$: the LHS is $AB$ but $A \notin R_{2b}$So this FD is lost. The only remaining FDs in $R_{2b}$ are trivial. So $R_{2b}$ is in BCNF with key $BE$ (or $CE$).
 
-**BCNF decomposition:** $R_1(C, D)$, $R_{2a}(E, A)$, $R_{2b}(B, C, E)$.
+**BCNF decomposition:** $R_1(C, D)$$R_{2a}(E, A)$$R_{2b}(B, C, E)$.
 
 **Dependency preservation:** $C \to D$ is preserved (in $R_1$). $E \to A$ is preserved (in $R_{2a}$). $AB \to C$ is NOT preserved (lost in the decomposition). $D \to E$ is NOT preserved (lost).
 
@@ -1117,3 +1117,11 @@ This contains a cycle ($T_1 \to T_2 \to T_3 \to T_1$). Therefore, the schedule i
 
 If you get this wrong, revise: Section 5.1.
 </details>
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -13,8 +13,8 @@ slug: dse-chemistry
 ## Course Overview
 
 The Hong Kong Diploma of Secondary Education (DSE) Chemistry examination assesses candidates'
-knowledge and understanding of chemical principles, their ability to apply chemistry to
-real-world situations, and their skills in chemical investigation and analysis.
+Knowledge and understanding of chemical principles, their ability to apply chemistry to
+Real-world situations, and their skills in chemical investigation and analysis.
 
 The course is divided into **compulsory topics** (Papers 1A and 1B) and **elective topics**
 (Paper 2). All candidates must study the compulsory topics and choose ONE elective.
@@ -23,11 +23,11 @@ The course is divided into **compulsory topics** (Papers 1A and 1B) and **electi
 
 ## Examination Structure
 
-| Paper | Component                                  | Duration | Weighting |
+| Paper | Component | Duration | Weighting |
 | ----- | ------------------------------------------ | -------- | --------- |
-| 1A    | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30%       |
-| 1B    | Compulsory Part -- Structured Questions    | 2 h      | 50%       |
-| 2     | Elective -- Structured Questions           | 1 h      | 20%       |
+| 1A | Compulsory Part -- Multiple-Choice Section | 1 h 30 m | 30% |
+| 1B | Compulsory Part -- Structured Questions | 2 h | 50% |
+| 2 | Elective -- Structured Questions | 1 h | 20% |
 
 **Total: 100%**
 
@@ -46,7 +46,7 @@ The compulsory syllabus covers the following major areas:
 - Properties of Groups 1, 2, 17, and 18
 
 See [./dse-chemistry-atomic-structure-and-periodic-table](./dse-chemistry-atomic-structure-and-periodic-table)
-for detailed notes.
+For detailed notes.
 
 ### II. Chemical Bonding
 
@@ -69,7 +69,7 @@ See [./dse-chemistry-chemical-bonding](./dse-chemistry-chemical-bonding) for det
 - Concentration (molarity) and titration
 
 See [./dse-chemistry-stoichiometry-and-mole-concept](./dse-chemistry-stoichiometry-and-mole-concept)
-for detailed notes.
+For detailed notes.
 
 ### IV. Acids, Bases, and Salts
 
@@ -92,7 +92,7 @@ See [./dse-chemistry-acids-bases-and-salts](./dse-chemistry-acids-bases-and-salt
 - Calorimetry
 
 See [./dse-chemistry-rate-of-reaction-and-energetics](./dse-chemistry-rate-of-reaction-and-energetics)
-for detailed notes.
+For detailed notes.
 
 ### VI. Redox and Electrochemistry
 
@@ -104,7 +104,7 @@ for detailed notes.
 - Electrolysis (aqueous and molten)
 
 See [./dse-chemistry-redox-and-electrochemistry](./dse-chemistry-redox-and-electrochemistry)
-for detailed notes.
+For detailed notes.
 
 ### VII. Carbon Chemistry
 
@@ -121,15 +121,15 @@ See [./dse-chemistry-carbon-chemistry](./dse-chemistry-carbon-chemistry) for det
 
 ## Elective Topics (Choose One)
 
-| Elective | Topic                        |
+| Elective | Topic |
 | -------- | ---------------------------- |
-| E1       | Industrial Chemistry          |
-| E2       | Analytical Chemistry          |
-| E3       | Materials Chemistry           |
-| E4       | Chemical Energy and the Environment |
+| E1 | Industrial Chemistry |
+| E2 | Analytical Chemistry |
+| E3 | Materials Chemistry |
+| E4 | Chemical Energy and the Environment |
 
 Paper 2 consists of structured questions based on the chosen elective. Each elective carries equal
-weighting (20% of the total mark).
+Weighting (20% of the total mark).
 
 ---
 
@@ -146,26 +146,26 @@ Candidates are expected to demonstrate the ability to:
 
 ## Key Quantities and Constants
 
-| Quantity / Constant       | Symbol | Value / Unit              |
+| Quantity / Constant | Symbol | Value / Unit |
 | ------------------------- | ------ | ------------------------- |
-| Avogadro's number         | $N_A$  | $6.02 \times 10^{23} \mathrm{ mol^{-1}}$ |
-| Molar volume (STP)        | $V_m$  | $22.4 \mathrm{ dm^3/mol}$ |
-| Molar volume (RTP)        | $V_m$  | $24.0 \mathrm{ dm^3/mol}$ |
-| Molar gas constant        | $R$    | $8.31 \mathrm{ J/(mol \cdot K)}$ |
-| Planck's constant         | $h$    | $6.63 \times 10^{-34} \mathrm{ J \cdot s}$ |
-| Faraday constant          | $F$    | $96500 \mathrm{ C/mol}$  |
+| Avogadro's number | $N_A$ | $6.02 \times 10^{23} \mathrm{ mol^{-1}}$ |
+| Molar volume (STP) | $V_m$ | $22.4 \mathrm{ dm^3/mol}$ |
+| Molar volume (RTP) | $V_m$ | $24.0 \mathrm{ dm^3/mol}$ |
+| Molar gas constant | $R$ | $8.31 \mathrm{ J/(mol \cdot K)}$ |
+| Planck's constant | $h$ | $6.63 \times 10^{-34} \mathrm{ J \cdot s}$ |
+| Faraday constant | $F$ | $96500 \mathrm{ C/mol}$ |
 
 ---
 
 ## Examination Tips
 
 - Show all working in stoichiometry calculations. Marks are awarded for method even if the final
-  answer is wrong.
+ answer is wrong.
 - Write balanced chemical equations wherever possible; state symbols are required when specified.
 - In ionic equation questions, cancel spectator ions and include state symbols.
 - Memorise the colours of common ions and precipitates (e.g., $\mathrm{Cu^{2+}}$ = blue,
-  $\mathrm{Fe^{3+}}$ = yellow-brown, $\mathrm{AgCl}$ = white).
-- For organic chemistry questions, clearly draw structural formulae and use correct IUPAC names.
+ $\mathrm{Fe^{3+}}$ = yellow-brown, $\mathrm{AgCl}$ = white).
+- For organic chemistry questions, draw structural formulae and use correct IUPAC names.
 - Pay attention to significant figures in numerical answers.
 - In titration calculations, always read the burette to two decimal places.
 
@@ -190,8 +190,8 @@ $$n = \frac{V}{V_m} = \frac{11.2}{22.4} = 0.500 \mathrm{ mol}$$
 ### Worked Example 2
 
 In a DSE Paper 1B question, a student is asked to write the ionic equation for the reaction between
-aqueous calcium chloride and aqueous sodium carbonate. Write the full balanced equation and the net
-ionic equation.
+Aqueous calcium chloride and aqueous sodium carbonate. Write the full balanced equation and the net
+Ionic equation.
 
 <details>
 <summary>Solution</summary>
@@ -209,8 +209,8 @@ $$\mathrm{Ca^{2+}}(aq) + \mathrm{CO_3^{2-}}(aq) \to \mathrm{CaCO_3}(s)$$
 ### Worked Example 3
 
 A student sets up an electrochemical cell with a $\mathrm{Zn}$ electrode in $\mathrm{ZnSO_4}(aq)$
-and a $\mathrm{Cu}$ electrode in $\mathrm{CuSO_4}(aq)$. Identify the anode, cathode, and the
-direction of electron flow.
+And a $\mathrm{Cu}$ electrode in $\mathrm{CuSO_4}(aq)$. Identify the anode, cathode, and the
+Direction of electron flow.
 
 <details>
 <summary>Solution</summary>
@@ -220,7 +220,7 @@ Zinc is higher in the reactivity series than copper, so zinc is more readily oxi
 - **Anode (oxidation):** $\mathrm{Zn} \to \mathrm{Zn^{2+}} + 2e^-$
 - **Cathode (reduction):** $\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$
 - **Electron flow:** from the zinc electrode (anode) through the external wire to the copper
-  electrode (cathode).
+ electrode (cathode).
 
 </details>
 
@@ -229,7 +229,7 @@ Zinc is higher in the reactivity series than copper, so zinc is more readily oxi
 ## Problem Set
 
 **Problem 1:** How many significant figures should the answer to the following calculation be given
-to? $0.150 \times 24.0 / 0.100$
+To? $0.150 \times 24.0 / 0.100$
 
 *If you get this wrong, revise: Examination Tips — Significant Figures*
 
@@ -242,7 +242,7 @@ The result is $36.0$. All three values have 3 significant figures, so the answer
 </details>
 
 **Problem 2:** State the colour of the precipitate formed when aqueous sodium hydroxide is added to
-a solution containing $\mathrm{Fe^{3+}}$ ions.
+A solution containing $\mathrm{Fe^{3+}}$ ions.
 
 *If you get this wrong, revise: Examination Tips — Colours of Common Ions*
 
@@ -252,7 +252,7 @@ a solution containing $\mathrm{Fe^{3+}}$ ions.
 A **brown precipitate** of $\mathrm{Fe(OH)_3}$ is formed.
 
 For reference: $\mathrm{Cu^{2+}}$ gives blue, $\mathrm{Fe^{2+}}$ gives green (turning brown on
-standing), $\mathrm{Zn^{2+}}$ gives white.
+Standing), $\mathrm{Zn^{2+}}$ gives white.
 
 </details>
 
@@ -276,7 +276,7 @@ standing), $\mathrm{Zn^{2+}}$ gives white.
 </details>
 
 **Problem 4:** Using the Faraday constant ($F = 96500 \mathrm{ C/mol}$), calculate the mass of
-copper deposited when a current of $2.00 \mathrm{ A}$ is passed through $\mathrm{CuSO_4}(aq)$ for
+Copper deposited when a current of $2.00 \mathrm{ A}$ is passed through $\mathrm{CuSO_4}(aq)$ for
 30.0 minutes.
 
 *If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis*
@@ -297,7 +297,7 @@ $$m(\mathrm{Cu}) = 0.0187 \times 63.5 = 1.18 \mathrm{ g}$$
 </details>
 
 **Problem 5:** Explain why the first ionisation energy of magnesium is higher than that of sodium,
-but lower than that of aluminium.
+But lower than that of aluminium.
 
 *If you get this wrong, revise: I. Atomic Structure and Periodic Table — Ionisation Energy*
 
@@ -307,18 +307,18 @@ but lower than that of aluminium.
 Na ($[\mathrm{Ne}]\, 3s^1$): the single $3s$ electron is relatively easy to remove.
 
 Mg ($[\mathrm{Ne}]\, 3s^2$): the $3s$ electrons are closer to the nucleus (higher effective nuclear
-charge) and experience a full $3s$ subshell effect, making them harder to remove than Na's single
+Charge) and experience a full $3s$ subshell effect, making them harder to remove than Na's single
 $3s$ electron.
 
 Al ($[\mathrm{Ne}]\, 3s^2\, 3p^1$): the $3p$ electron is in a higher energy subshell than $3s$ and is
-shielded by the $3s^2$ electrons, making it easier to remove than Mg's $3s$ electrons.
+Shielded by the $3s^2$ electrons, making it easier to remove than Mg's $3s$ electrons.
 
 So: IE(Na) $\lt$ IE(Mg) $\gt$ IE(Al).
 
 </details>
 
 **Problem 6:** State two differences between a strong acid and a weak acid of the same
-concentration, and explain each difference.
+Concentration, and explain each difference.
 
 *If you get this wrong, revise: IV. Acids, Bases, and Salts — Strong and Weak Acids*
 
@@ -326,28 +326,28 @@ concentration, and explain each difference.
 <summary>Solution</summary>
 
 1. **pH:** A strong acid has a lower pH than a weak acid at the same concentration. Strong acids
-   dissociate completely in water ($\mathrm{H^+}$ concentration equals the acid concentration), while
-   weak acids only partially dissociate.
+ dissociate completely in water ($\mathrm{H^+}$ concentration equals the acid concentration), while
+ weak acids only partially dissociate.
 
 2. **Electrical conductivity:** A strong acid solution is a better conductor than a weak acid
-   solution of the same concentration. Complete dissociation in a strong acid produces more mobile
-   ions, carrying charge more effectively.
+ solution of the same concentration. Complete dissociation in a strong acid produces more mobile
+ ions, carrying charge more effectively.
 
 </details>
 
 **Problem 7:** A hydrocarbon contains $85.7\%$ carbon and $14.3\%$ hydrogen by mass. Its molar
-mass is $42.0 \mathrm{ g/mol}$. Determine its molecular formula and identify the homologous series
-it belongs to.
+Mass is $42.0 \mathrm{ g/mol}$. Determine its molecular formula and identify the homologous series
+It belongs to.
 
 *If you get this wrong, revise: VII. Carbon Chemistry — Homologous Series*
 
 <details>
 <summary>Solution</summary>
 
-| Element | Mass (g) | Moles             | Ratio                     |
+| Element | Mass (g) | Moles | Ratio |
 | ------- | -------- | ----------------- | ------------------------- |
-| C       | 85.7     | $85.7/12 = 7.14$  | $7.14/7.14 = 1$           |
-| H       | 14.3     | $14.3/1 = 14.3$   | $14.3/7.14 \approx 2$     |
+| C | 85.7 | $85.7/12 = 7.14$ | $7.14/7.14 = 1$ |
+| H | 14.3 | $14.3/1 = 14.3$ | $14.3/7.14 \approx 2$ |
 
 Empirical formula: $\mathrm{CH_2}$
 
@@ -362,7 +362,7 @@ This is **propene**, an **alkene** (homologous series with general formula $\mat
 </details>
 
 **Problem 8:** Explain the difference between an exothermic reaction and an endothermic reaction in
-terms of enthalpy change ($\Delta H$), and give one example of each.
+Terms of enthalpy change ($\Delta H$), and give one example of each.
 
 *If you get this wrong, revise: V. Rate of Reaction and Energetics — Enthalpy Changes*
 
@@ -370,20 +370,20 @@ terms of enthalpy change ($\Delta H$), and give one example of each.
 <summary>Solution</summary>
 
 **Exothermic:** $\Delta H \lt 0$ (enthalpy of products is lower than enthalpy of reactants; heat is
-released to the surroundings). Example: combustion of methane:
+Released to the surroundings). Example: combustion of methane:
 
 $$\mathrm{CH_4} + 2\mathrm{O_2} \to \mathrm{CO_2} + 2\mathrm{H_2O} \quad \Delta H = -890 \mathrm{ kJ/mol}$$
 
 **Endothermic:** $\Delta H \gt 0$ (enthalpy of products is higher than enthalpy of reactants; heat
-is absorbed from the surroundings). Example: thermal decomposition of calcium carbonate:
+Is absorbed from the surroundings). Example: thermal decomposition of calcium carbonate:
 
 $$\mathrm{CaCO_3} \to \mathrm{CaO} + \mathrm{CO_2} \quad \Delta H = +178 \mathrm{ kJ/mol}$$
 
 </details>
 
 **Problem 9:** In the electrolysis of concentrated aqueous sodium chloride, explain why hydrogen is
-produced at the cathode rather than sodium, and why chlorine is produced at the anode rather than
-oxygen.
+Produced at the cathode rather than sodium, and why chlorine is produced at the anode rather than
+Oxygen.
 
 *If you get this wrong, revise: VI. Redox and Electrochemistry — Electrolysis (Aqueous)*
 
@@ -391,18 +391,18 @@ oxygen.
 <summary>Solution</summary>
 
 **Cathode:** $\mathrm{Na^+}$ and $\mathrm{H^+}$ (from water) are both present. Although sodium is
-more reactive, $\mathrm{H^+}$ is preferentially discharged because it has a much less negative
-discharge potential. The reaction is: $2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$.
+More reactive, $\mathrm{H^+}$ is preferentially discharged because it has a much less negative
+Discharge potential. The reaction is: $2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$.
 
 **Anode:** $\mathrm{Cl^-}$ and $\mathrm{OH^-}$ (from water) are both present. In concentrated
-solution, $\mathrm{Cl^-}$ is preferentially discharged over $\mathrm{OH^-}$ because the
-overpotential of chlorine is lower at high chloride concentrations. The reaction is:
+Solution, $\mathrm{Cl^-}$ is preferentially discharged over $\mathrm{OH^-}$ because the
+Overpotential of chlorine is lower at high chloride concentrations. The reaction is:
 $2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$.
 
 </details>
 
 **Problem 10:** A student titrates $25.0 \mathrm{ cm^3}$ of ethanoic acid ($\mathrm{CH_3COOH}$)
-with $0.100 \mathrm{ mol/dm^3}$ sodium hydroxide. The average titre is $16.7 \mathrm{ cm^3}$.
+With $0.100 \mathrm{ mol/dm^3}$ sodium hydroxide. The average titre is $16.7 \mathrm{ cm^3}$.
 Calculate the concentration of the ethanoic acid and state whether it is a strong or weak acid.
 
 *If you get this wrong, revise: IV. Acids, Bases, and Salts and III. Stoichiometry — Titration*
@@ -421,7 +421,14 @@ $$n(\mathrm{CH_3COOH}) = 1.67 \times 10^{-3} \mathrm{ mol}$$
 $$c(\mathrm{CH_3COOH}) = \frac{1.67 \times 10^{-3}}{0.0250} = 0.0668 \mathrm{ mol/dm^3}$$
 
 Ethanoic acid is a **weak acid** — it only partially dissociates in aqueous solution, producing a
-lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concentration would.
+Lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concentration would.
 
 </details>
 
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

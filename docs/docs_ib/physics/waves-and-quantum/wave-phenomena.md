@@ -9,27 +9,27 @@ slug: wave-phenomena
 ### Formation
 
 A **standing wave** (stationary wave) is formed by the superposition of two waves of the same
-frequency travelling in opposite directions. Unlike a travelling wave, a standing wave does not
-propagate energy; the energy is trapped between fixed points.
+Frequency travelling in opposite directions. Unlike a travelling wave, a standing wave does not
+Propagate energy; the energy is trapped between fixed points.
 
 ### Nodes and Antinodes
 
 - **Nodes** ($N$): Points of zero amplitude. Occur where the two travelling waves always cancel.
 - **Antinodes** ($A$): Points of maximum amplitude. Occur where the two travelling waves always
-  reinforce.
+ reinforce.
 
 The distance between adjacent nodes (or adjacent antinodes) is $\dfrac{\lambda}{2}$. The distance
-between a node and the adjacent antinode is $\dfrac{\lambda}{4}$.
+Between a node and the adjacent antinode is $\dfrac{\lambda}{4}$.
 
 ### Mathematical Description
 
-If the two travelling waves are $y_1 = A\sin(kx - \omega t)$ and $y_2 = A\sin(kx + \omega t)$,
-their superposition gives:
+If the two travelling waves are $y_1 = A\sin(kx - \omega t)$ and $y_2 = A\sin(kx + \omega t)$
+Their superposition gives:
 
 $$y = y_1 + y_2 = 2A\sin(kx)\cos(\omega t)$$
 
 This is a standing wave. The spatial part $2A\sin(kx)$ determines the amplitude envelope, and
-$\cos(\omega t)$ determines the time oscillation. Nodes occur where $\sin(kx) = 0$, i.e. at
+$\cos(\omega t)$ determines the time oscillation. Nodes occur where $\sin(kx) = 0$I.e. At
 $x = \dfrac{n\lambda}{2}$ for integer $n$.
 
 ### Standing Waves on Strings
@@ -46,8 +46,8 @@ For a string of length $L$ fixed at both ends:
 | 3rd harmonic | $\lambda_3 = \dfrac{2L}{3}$ | $f_3 = \dfrac{3v}{2L} = 3f_1$ |
 | $n$-th harmonic | $\lambda_n = \dfrac{2L}{n}$ | $f_n = \dfrac{nv}{2L} = nf_1$ |
 
-where $v = \sqrt{\dfrac{T}{\mu}}$ is the wave speed on the string, $T$ is the tension, and $\mu$ is
-the mass per unit length.
+Where $v = \sqrt{\dfrac{T}{\mu}}$ is the wave speed on the string, $T$ is the tension, and $\mu$ is
+The mass per unit length.
 
 **Example.** A string of length $0.75\,\mathrm{m}$ has a fundamental frequency of $220\,\mathrm{Hz}$.
 Find the frequency of the 3rd harmonic and the wave speed.
@@ -77,8 +77,8 @@ Only odd harmonics are produced. The fundamental has wavelength $\lambda_1 = 4L$
 ### Definition
 
 **Resonance** occurs when a system is driven at its natural frequency, causing the amplitude of
-oscillation to reach a maximum. At resonance, energy is transferred most efficiently from the driver
-to the system.
+Oscillation to reach a maximum. At resonance, energy is transferred most efficiently from the driver
+To the system.
 
 ### Conditions for Resonance
 
@@ -99,8 +99,8 @@ The **quality factor** $Q$ measures the sharpness of resonance:
 
 $$Q = \frac{f_0}{\Delta f}$$
 
-where $f_0$ is the resonant frequency and $\Delta f$ is the bandwidth (width of the resonance curve
-at half the maximum amplitude). A high $Q$ means sharp resonance with low damping.
+Where $f_0$ is the resonant frequency and $\Delta f$ is the bandwidth (width of the resonance curve
+At half the maximum amplitude). A high $Q$ means sharp resonance with low damping.
 
 ---
 
@@ -109,7 +109,7 @@ at half the maximum amplitude). A high $Q$ means sharp resonance with low dampin
 ### Statement
 
 The **Doppler effect** is the change in observed frequency (and wavelength) of a wave when there is
-relative motion between the source and the observer.
+Relative motion between the source and the observer.
 
 ### Formulas
 
@@ -132,7 +132,7 @@ $$f' = f \cdot \frac{v \pm v_o}{v \mp v_s}$$
 Upper signs when moving towards each other, lower signs when moving apart.
 
 **Example.** An ambulance with siren at $800\,\mathrm{Hz}$ travels at $30\,\mathrm{m/s}$ towards a
-stationary observer. Speed of sound = $343\,\mathrm{m/s}$.
+Stationary observer. Speed of sound = $343\,\mathrm{m/s}$.
 
 $$f' = \frac{343}{343 - 30} \times 800 = \frac{343}{313} \times 800 \approx 877\,\mathrm{Hz}$$
 
@@ -146,7 +146,7 @@ For light, the relativistic Doppler formula applies:
 
 $$f' = f\sqrt{\frac{1 + \beta}{1 - \beta}}$$
 
-where $\beta = v/c$ for relative approach. For $v \ll c$:
+Where $\beta = v/c$ for relative approach. For $v \ll c$:
 
 $$\frac{\Delta f}{f} \approx \frac{v}{c}$$
 
@@ -175,11 +175,11 @@ $$a\sin\theta = n\lambda, \qquad n = \pm 1, \pm 2, \ldots$$
 ### Diffraction and Resolution
 
 **Rayleigh criterion.** Two point sources are just resolvable when the central maximum of one
-diffraction pattern coincides with the first minimum of the other:
+Diffraction pattern coincides with the first minimum of the other:
 
 $$\theta_{\min} = \frac{1.22\lambda}{D}$$
 
-where $D$ is the aperture diameter. This sets the **angular resolution** of optical instruments.
+Where $D$ is the aperture diameter. This sets the **angular resolution** of optical instruments.
 
 ---
 
@@ -188,7 +188,7 @@ where $D$ is the aperture diameter. This sets the **angular resolution** of opti
 ### Coherence
 
 **Interference** is the superposition of two or more waves. For a stable interference pattern, the
-waves must be **coherent** — they must have a constant phase relationship. This requires:
+Waves must be **coherent** — they must have a constant phase relationship. This requires:
 
 - Same frequency (monochromatic).
 - Constant phase difference.
@@ -196,7 +196,7 @@ waves must be **coherent** — they must have a constant phase relationship. Thi
 ### Path Difference
 
 For two coherent sources, constructive interference occurs when the path difference is a whole
-number of wavelengths:
+Number of wavelengths:
 
 $$\Delta x = n\lambda, \qquad n = 0, 1, 2, \ldots$$
 
@@ -211,8 +211,8 @@ $$\Delta x = \left(n + \frac{1}{2}\right)\lambda, \qquad n = 0, 1, 2, \ldots$$
 ### Setup
 
 Light from a single source passes through two narrow, parallel slits separated by distance $d$. The
-light diffracts through each slit, and the diffracted waves overlap and interfere on a screen at
-distance $L$ from the slits.
+Light diffracts through each slit, and the diffracted waves overlap and interfere on a screen at
+Distance $L$ from the slits.
 
 ### Fringe Spacing
 
@@ -225,7 +225,7 @@ For small angles ($\sin\theta \approx \tan\theta \approx \theta$), the fringe sp
 $$\Delta y = \frac{\lambda L}{d}$$
 
 **Example.** Light of wavelength $600\,\mathrm{nm}$ passes through slits $0.5\,\mathrm{mm}$ apart onto a
-screen $2.0\,\mathrm{m}$ away. Find the fringe spacing.
+Screen $2.0\,\mathrm{m}$ away. Find the fringe spacing.
 
 $$\Delta y = \frac{600 \times 10^{-9} \times 2.0}{0.5 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{5 \times 10^{-4}} = 2.4 \times 10^{-3}\,\mathrm{m} = 2.4\,\mathrm{mm}$$
 
@@ -235,8 +235,8 @@ The intensity at angle $\theta$ on the screen is:
 
 $$I = I_0 \cos^2\!\left(\frac{\pi d \sin\theta}{\lambda}\right)$$
 
-where $I_0$ is the maximum intensity at the centre of the pattern. The pattern is modulated by the
-single-slit diffraction envelope of each slit.
+Where $I_0$ is the maximum intensity at the centre of the pattern. The pattern is modulated by the
+Single-slit diffraction envelope of each slit.
 
 ---
 
@@ -245,15 +245,15 @@ single-slit diffraction envelope of each slit.
 ### Principle
 
 A diffraction grating consists of a large number $N$ of equally spaced parallel slits. It produces
-sharper, more widely spaced maxima than a double slit.
+Sharper, more widely spaced maxima than a double slit.
 
 ### Grating Equation
 
 $$d\sin\theta = n\lambda, \qquad n = 0, \pm 1, \pm 2, \ldots$$
 
-where $d = \dfrac{1}{N_L}$ is the slit spacing and $N_L$ is the number of lines per unit length.
+Where $d = \dfrac{1}{N_L}$ is the slit spacing and $N_L$ is the number of lines per unit length.
 
-**Maximum order.** The highest observable order is limited by $|\sin\theta| \le 1$, giving
+**Maximum order.** The highest observable order is limited by $|\sin\theta| \le 1$Giving
 $n_{\max} \le \dfrac{d}{\lambda}$.
 
 **Example.** A grating with $500\,\mathrm{lines/mm}$ is illuminated with light of wavelength
@@ -277,13 +277,13 @@ $$\sin\theta_2 = \frac{2 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.589 
 
 ### Principle
 
-When light strikes a thin film (e.g. soap bubble, oil slick), it is partially reflected from the top
-surface and partially from the bottom surface. These two reflected beams interfere.
+When light strikes a thin film (e.g. Soap bubble, oil slick), it is partially reflected from the top
+Surface and partially from the bottom surface. These two reflected beams interfere.
 
 ### Phase Changes
 
 A **phase change of $\pi$** (half-wavelength shift) occurs when light reflects off a medium with a
-higher refractive index than the medium it is travelling in.
+Higher refractive index than the medium it is travelling in.
 
 ### Conditions
 
@@ -301,16 +301,16 @@ $$2n_f t = m\lambda \qquad \mathrm{(one\ phase\ change)}$$
 
 $$2n_f t = \left(m + \frac{1}{2}\right)\lambda \qquad \mathrm{(zero\ or\ two\ phase\ changes)}$$
 
-where $m = 0, 1, 2, \ldots$ and $\lambda$ is the wavelength in vacuum.
+Where $m = 0, 1, 2, \ldots$ and $\lambda$ is the wavelength in vacuum.
 
 ### Newton's Rings
 
 When a plano-convex lens is placed on a flat glass surface, concentric bright and dark rings are
-observed due to thin film interference in the variable air gap. The $m$-th dark ring has radius:
+Observed due to thin film interference in the variable air gap. The $m$-th dark ring has radius:
 
 $$r_m = \sqrt{m\lambda R}$$
 
-where $R$ is the radius of curvature of the lens surface.
+Where $R$ is the radius of curvature of the lens surface.
 
 ### Wedge Films
 
@@ -338,12 +338,12 @@ The dominant visible reflection is at the violet end, giving the film a violet-b
 ### Statement
 
 When two or more waves overlap, the resultant displacement at any point is the algebraic sum of the
-individual displacements:
+Individual displacements:
 
 $$y_{\mathrm{total}} = y_1 + y_2 + \cdots$$
 
 This principle is linear and holds when the medium responds linearly to the wave amplitude. At very
-large amplitudes (nonlinear regime), the principle breaks down.
+Large amplitudes (nonlinear regime), the principle breaks down.
 
 ### Constructive and Destructive Interference
 
@@ -367,7 +367,7 @@ $r$ from the source is:
 $$I = \frac{P}{4\pi r^2}$$
 
 This is the **inverse square law**: intensity is inversely proportional to the square of the
-distance.
+Distance.
 
 ### Intensity and Amplitude
 
@@ -383,10 +383,10 @@ Sound intensity level is measured in **decibels** (dB):
 
 $$\beta = 10\log_{10}\!\left(\frac{I}{I_0}\right)$$
 
-where $I_0 = 1.0 \times 10^{-12}\,\mathrm{W/m^2}$ is the threshold of hearing.
+Where $I_0 = 1.0 \times 10^{-12}\,\mathrm{W/m^2}$ is the threshold of hearing.
 
 **Example.** A sound has intensity $I = 1.0 \times 10^{-6}\,\mathrm{W/m^2}$. Find the intensity
-level.
+Level.
 
 $$\beta = 10\log_{10}\!\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 60\,\mathrm{dB}$$
 
@@ -397,7 +397,7 @@ $$\beta = 10\log_{10}\!\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6)
 ### Transverse Waves Only
 
 Only transverse waves can be polarised. **Polarisation** restricts the oscillation of a wave to a
-single plane.
+Single plane.
 
 ### Types
 
@@ -408,12 +408,12 @@ single plane.
 ### Malus's Law
 
 When plane-polarised light of intensity $I_0$ passes through an analyser at angle $\theta$ to the
-polarisation direction:
+Polarisation direction:
 
 $$I = I_0\cos^2\theta$$
 
 **Example.** Unpolarised light passes through two polarising filters. The first is vertical; the
-second is at $30\,{}^{\circ}$ to the vertical. What fraction of the original intensity emerges?
+Second is at $30\,{}^{\circ}$ to the vertical. What fraction of the original intensity emerges?
 
 After the first filter: $I_1 = \dfrac{I_0}{2}$ (half transmitted for unpolarised light).
 
@@ -422,8 +422,8 @@ After the second filter (Malus's law): $I_2 = I_1\cos^2 30\,{}^{\circ} = \dfrac{
 
 ### Brewster's Angle
 
-When unpolarised light reflects off a surface at the **Brewster angle** $\theta_B$, the reflected
-light is completely polarised (perpendicular to the plane of incidence):
+When unpolarised light reflects off a surface at the **Brewster angle** $\theta_B$The reflected
+Light is completely polarised (perpendicular to the plane of incidence):
 
 $$\tan\theta_B = \frac{n_2}{n_1}$$
 
@@ -438,12 +438,12 @@ $$\theta_B = \arctan(1.33) \approx 53.1\,{}^{\circ}$$
 ### Statement
 
 Every point on a wavefront acts as a source of secondary wavelets. The new wavefront at a later
-time is the envelope (tangent surface) of these wavelets.
+Time is the envelope (tangent surface) of these wavelets.
 
 ### Applications
 
 - **Reflection:** Huygens' construction shows that the angle of incidence equals the angle of
-  reflection.
+ reflection.
 - **Refraction:** Huygens' construction leads to Snell's law: $n_1\sin\theta_1 = n_2\sin\theta_2$.
 - **Diffraction:** The spreading of wavelets beyond the edge of an obstacle explains diffraction.
 
@@ -453,15 +453,15 @@ time is the envelope (tangent surface) of these wavelets.
 
 ### Interference from Two Coherent Sources
 
-For two coherent sources separated by distance $d$, the path difference to a point at angle $\theta$
-is $d\sin\theta$.
+For two coherent sources separated by distance $d$The path difference to a point at angle $\theta$
+Is $d\sin\theta$.
 
 **Intensity distribution:**
 
 $$I(\theta) = 4I_0\cos^2\!\left(\frac{\pi d \sin\theta}{\lambda}\right)$$
 
-where $I_0$ is the intensity from a single source. Maxima occur at $d\sin\theta = n\lambda$ and
-minima at $d\sin\theta = (n + 1/2)\lambda$.
+Where $I_0$ is the intensity from a single source. Maxima occur at $d\sin\theta = n\lambda$ and
+Minima at $d\sin\theta = (n + 1/2)\lambda$.
 
 ### Path Difference and Phase Difference
 
@@ -478,9 +478,9 @@ $$\Delta\phi = \frac{2\pi}{\lambda}\,\Delta x$$
 Common Pitfall
 
 In double-slit calculations, do not confuse the slit separation $d$ with the slit width $a$. The
-fringe spacing is determined by $d$; the envelope of the diffraction pattern is determined by $a$.
+Fringe spacing is determined by $d$; the envelope of the diffraction pattern is determined by $a$.
 The overall intensity pattern is the product of the double-slit interference pattern and the
-single-slit diffraction envelope.
+Single-slit diffraction envelope.
 
 :::
 
@@ -491,3 +491,15 @@ single-slit diffraction envelope.
 - **A-Level Waves:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
 - **DSE Waves and Sound:** [Waves and Sound](https://academics.wyattau.com/docs/dse/Physics/waves-and-sound)
 - **University Wave Physics:** [Optics and Wave Physics](https://university.wyattau.com/docs/physics/optics-and-wave-physics)
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

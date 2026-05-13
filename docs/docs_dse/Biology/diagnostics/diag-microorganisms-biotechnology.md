@@ -44,7 +44,7 @@ Viruses are not considered living because they:
 - Show no **response to stimuli**.
 - They are essentially just nucleic acid (DNA or RNA) in a protein coat (capsid) -- an infectious particle rather than a living cell.
 
-(c) The claim is **incorrect**. Antibiotics target structures and processes specific to **bacteria** (e.g. cell wall synthesis, 70S ribosomes, bacterial DNA replication). Viruses do not have cell walls, ribosomes, or their own metabolic enzymes. Therefore, antibiotics have **no effect** on viruses. Viral infections are treated with **antiviral drugs** (which target viral-specific processes such as reverse transcriptase or viral protease) or managed through the immune system (vaccines for prevention).
+(c) The claim is **incorrect**. Antibiotics target structures and processes specific to **bacteria** (e.g. Cell wall synthesis, 70S ribosomes, bacterial DNA replication). Viruses do not have cell walls, ribosomes, or their own metabolic enzymes. Therefore, antibiotics have **no effect** on viruses. Viral infections are treated with **antiviral drugs** (which target viral-specific processes such as reverse transcriptase or viral protease) or managed through the immune system (vaccines for prevention).
 
 ---
 
@@ -74,7 +74,7 @@ Yeast (Saccharomyces cerevisiae) is used in the industrial production of ethanol
 
 3. **Anaerobic conditions**: Fermentation is an **anaerobic process**. Oxygen must be excluded from the bioreactor because if oxygen is present, yeast will carry out aerobic respiration instead, producing $CO_{2}$ and water rather than ethanol. The bioreactor may be sealed or flushed with nitrogen gas.
 
-4. **Nutrient supply**: A constant supply of glucose (the substrate) must be maintained. The nutrient medium must also contain minerals, nitrogen sources (e.g. ammonium salts), and vitamins for yeast growth.
+4. **Nutrient supply**: A constant supply of glucose (the substrate) must be maintained. The nutrient medium must also contain minerals, nitrogen sources (e.g. Ammonium salts), and vitamins for yeast growth.
 
 5. **Efficient stirring/mixing**: The bioreactor must have a stirrer to ensure the culture is well mixed. This distributes nutrients evenly, maintains uniform temperature and pH throughout, and keeps yeast in suspension for maximum contact with the substrate.
 
@@ -87,7 +87,7 @@ If contaminating microorganisms (bacteria, fungi) enter the bioreactor, they can
 **Two methods for maintaining aseptic conditions**:
 1. **Sterilisation of the bioreactor and medium**: The bioreactor and the nutrient medium are sterilised using **steam at high temperature and pressure** (autoclaving at $121^{\circ}C$ for 15--20 minutes) before use, killing all microorganisms.
 
-2. **Sterile air filtration**: Any air entering the bioreactor (e.g. for cooling or mixing) is passed through **HEPA filters** or other sterile filters that remove microorganisms, preventing contamination from the air supply.
+2. **Sterile air filtration**: Any air entering the bioreactor (e.g. For cooling or mixing) is passed through **HEPA filters** or other sterile filters that remove microorganisms, preventing contamination from the air supply.
 
 (Alternative: all entry/exit ports have sterile valves; the culture medium is sterilised before inoculation.)
 
@@ -113,15 +113,15 @@ Genetically modified (GM) crops have been developed to possess various advantage
 
 1. **Isolation of the Bt toxin gene**: The gene from Bacillus thuringiensis that codes for the **Bt toxin** (Cry protein) is identified and cut out using a **restriction enzyme**, producing sticky ends.
 
-2. **Preparation of the vector**: A **plasmid** (e.g. from Agrobacterium tumefaciens -- Ti plasmid) is cut open with the same restriction enzyme, producing complementary sticky ends.
+2. **Preparation of the vector**: A **plasmid** (e.g. From Agrobacterium tumefaciens -- Ti plasmid) is cut open with the same restriction enzyme, producing complementary sticky ends.
 
 3. **Ligation**: The Bt toxin gene is inserted into the plasmid and joined using **DNA ligase**, forming a recombinant plasmid.
 
-4. **Transformation**: The recombinant plasmid is introduced into **Agrobacterium tumefaciens** bacteria, which naturally infects plant cells and transfers the T-DNA (containing the Bt gene) into the plant cell's genome.
+4. **Transformation**: The recombinant plasmid is introduced into **Agrobacterium tumefaciens** bacteria, which infects plant cells and transfers the T-DNA (containing the Bt gene) into the plant cell's genome.
 
 5. **Plant tissue culture**: The transformed plant cells are grown in tissue culture using plant growth regulators (auxins and cytokinins) to regenerate whole **cotton plants** that now contain and express the Bt toxin gene.
 
-6. **Selection**: Plants that have successfully incorporated the Bt gene are selected using genetic markers (e.g. antibiotic resistance genes on the plasmid).
+6. **Selection**: Plants that have successfully incorporated the Bt gene are selected using genetic markers (e.g. Antibiotic resistance genes on the plasmid).
 
 7. **Testing**: The GM cotton plants are tested to confirm that they produce the Bt toxin in their tissues and that the toxin is effective against the target insect pest.
 
@@ -129,7 +129,7 @@ Genetically modified (GM) crops have been developed to possess various advantage
 
 1. **Gene flow to wild relatives**: The GM crop could cross-pollinate with wild, non-GM plant relatives nearby, transferring the resistance gene to wild populations. This could create "superweeds" that are resistant to insect pests but also have a competitive advantage over native plants, potentially disrupting natural ecosystems and reducing biodiversity.
 
-2. **Impact on non-target organisms**: Although the Bt toxin is specific to certain insect pests, there is concern that it may also harm **non-target, beneficial insects** (e.g. pollinators like bees, butterflies) that come into contact with the GM crop. This could have cascading effects on food webs and ecosystem stability.
+2. **Impact on non-target organisms**: Although the Bt toxin is specific to certain insect pests, there is concern that it may also harm **non-target, beneficial insects** (e.g. Pollinators like bees, butterflies) that come into contact with the GM crop. This could have cascading effects on food webs and ecosystem stability.
 
 (Alternative: development of pest resistance to the Bt toxin over time through natural selection; reduction in crop diversity if only GM varieties are grown.)
 
@@ -167,7 +167,7 @@ Yeast carries out **anaerobic respiration (fermentation)** of sugars present in 
 
 The dough is left to rise in a **warm place** (approximately $25$--$35^{\circ}C$) because this is close to the **optimum temperature** for yeast enzyme activity. At this temperature, yeast respires rapidly, producing $CO_{2}$ quickly and causing the dough to rise efficiently. If too cold, the reaction is too slow; if too hot, yeast enzymes denature.
 
-(b) **Pasteurisation** is a process of heating a food or liquid (e.g. beer, milk) to a specific temperature (typically $60$--$72^{\circ}C$) for a specific time, then cooling it rapidly.
+(b) **Pasteurisation** is a process of heating a food or liquid (e.g. Beer, milk) to a specific temperature ( $60$--$72^{\circ}C$) for a specific time, then cooling it rapidly.
 
 **Why it is necessary**: Pasteurisation kills most **harmful microorganisms** (pathogenic bacteria) and many spoilage organisms in the product, extending its shelf life and ensuring it is safe for consumption. In brewing, pasteurisation prevents residual yeast and bacteria from continuing to ferment sugars in the bottled product, which would alter the taste and could cause bottles to burst due to excess $CO_{2}$ pressure.
 
@@ -203,7 +203,7 @@ Human insulin is produced commercially using genetically modified Escherichia co
 
 1. **Synthesising two separate genes**: One gene coding for the **A chain** and one gene coding for the **B chain** of insulin were chemically synthesised (artificially created) based on the known amino acid sequence of human insulin and the genetic code.
 
-2. **Inserting each gene into separate plasmids**: Each gene was inserted into a separate plasmid vector and each recombinant plasmid was used to transform separate cultures of E. coli bacteria.
+2. **Inserting each gene into separate plasmids**: Each gene was inserted into a separate plasmid vector and each recombinant plasmid was used to transform separate cultures of E. Coli bacteria.
 
 3. **Separate expression**: Each bacterial culture produced one of the insulin chains: one culture produced the A chain, and the other produced the B chain.
 
@@ -215,7 +215,7 @@ Human insulin is produced commercially using genetically modified Escherichia co
 
 2. **Cell disruption**: The bacterial cells are broken open (lysed) to release their contents, including the insulin chains. Methods include enzymatic lysis (using lysozyme to break down the cell wall), high-pressure homogenisation, or sonication.
 
-3. **Separation**: The cell lysate is centrifuged or filtered to remove cell debris. The insulin chains must then be separated from the mixture of bacterial proteins, DNA, and other cellular components. This is done using **chromatography** (e.g. reverse-phase HPLC -- high-performance liquid chromatography), which separates molecules based on their chemical properties.
+3. **Separation**: The cell lysate is centrifuged or filtered to remove cell debris. The insulin chains must then be separated from the mixture of bacterial proteins, DNA, and other cellular components. This is done using **chromatography** (e.g. Reverse-phase HPLC -- high-performance liquid chromatography), which separates molecules based on their chemical properties.
 
 4. **Combining chains**: The purified A and B chains are mixed under controlled conditions that promote the formation of **disulfide bonds** between the chains, producing proinsulin or directly forming active insulin.
 

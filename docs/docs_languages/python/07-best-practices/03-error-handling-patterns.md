@@ -7,7 +7,7 @@ slug: error-handling-patterns
 ## Exception Hierarchy
 
 Python exceptions form a class hierarchy rooted at `BaseException`. Understanding this hierarchy is
-essential for writing correct exception handlers.
+Essential for writing correct exception handlers.
 
 ```
 BaseException
@@ -51,9 +51,9 @@ BaseException
 ```
 
 :::info
-`SystemExit`, `KeyboardInterrupt`, and `GeneratorExit` inherit directly from
-`BaseException`, not `Exception`. This means `except Exception:` does not catch them — which is
-correct, since you generally do not want to catch system-level signals.
+`SystemExit``KeyboardInterrupt`And `GeneratorExit` inherit directly from
+`BaseException`Not `Exception`. This means `except Exception:` does not catch them — which is
+Correct, since you generally do not want to catch system-level signals.
 :::
 
 ### Catching by Hierarchy
@@ -149,7 +149,7 @@ print(repr(e))  # ServerError('db.example.com', 5432, 'connection refused')
 :::tip
 Always call `super().__init__(message)` in custom exceptions. The message is stored in
 `self.args` and used by the default `__str__` implementation. Omitting this breaks exception
-chaining and logging.
+Chaining and logging.
 :::
 
 ## EAFP vs LBYL
@@ -191,13 +191,13 @@ print(get_value_lbyl({"a": 1}, "b"))   # None
 
 ### When to Use Each
 
-| Scenario                 | Prefer                       | Reason                            |
+| Scenario | Prefer | Reason |
 | ------------------------ | ---------------------------- | --------------------------------- |
-| File existence           | EAFP (`open` + `except`)     | TOCTOU race condition with LBYL   |
-| Dict key access          | EAFP (`try/except KeyError`) | Cleaner, idiomatic                |
-| Type checking            | LBYL (`isinstance`)          | Wrong types are programmer errors |
-| External API calls       | EAFP + retry                 | Network conditions change         |
-| Configuration validation | LBYL at boundary             | Fail fast, clear error messages   |
+| File existence | EAFP (`open` + `except`) | TOCTOU race condition with LBYL |
+| Dict key access | EAFP (`try/except KeyError`) | Cleaner, idiomatic |
+| Type checking | LBYL (`isinstance`) | Wrong types are programmer errors |
+| External API calls | EAFP + retry | Network conditions change |
+| Configuration validation | LBYL at boundary | Fail fast, clear error messages |
 
 :::warning
 LBYL with file operations has a TOCTOU (Time of Check to Time of Use) race condition:
@@ -302,8 +302,8 @@ def process_file(path):
 
 :::tip
 Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
-that must happen regardless. Avoid putting logic in `finally` that might raise exceptions, as it
-masks the original exception.
+That must happen regardless. Avoid putting logic in `finally` that might raise exceptions, as it
+Masks the original exception.
 :::
 
 ## Exception Handling in Generators
@@ -487,8 +487,8 @@ asyncio.run(main())
 ```
 
 :::info
-Unlike `threading.local()`, `contextvars.ContextVar` is designed for `asyncio` and correctly
-propagates state through `asyncio.TaskGroup` and `Task` creation.
+Unlike `threading.local()``contextvars.ContextVar` is designed for `asyncio` and correctly
+Propagates state through `asyncio.TaskGroup` and `Task` creation.
 :::
 
 ## Assertions
@@ -512,8 +512,8 @@ def binary_search(arr, target):
 
 :::warning
 Assertions are disabled with `python -O` (optimized mode) because they are controlled by
-the `__debug__` constant. **Never use assertions for data validation or runtime checks** — they are
-for debugging and documenting invariants:
+The `__debug__` constant. **Never use assertions for data validation or runtime checks** — they are
+For debugging and documenting invariants:
 
 ```python
 # WRONG — assertion disabled in production
@@ -548,7 +548,7 @@ def test_config_defaults():
 ## Input Validation at Boundaries
 
 Validate input at the edges of your system — API endpoints, file readers, CLI parsers — and trust
-the data internally:
+The data internally:
 
 ```python
 from dataclasses import dataclass
@@ -574,11 +574,11 @@ class ServerConfig:
 
 ## Error Codes vs Exceptions
 
-| Approach     | Use When                                                                             |
+| Approach | Use When |
 | ------------ | ------------------------------------------------------------------------------------ |
-| Exceptions   | Internal logic errors, programming mistakes, unexpected states                       |
-| Error codes  | Expected failure modes (e.g., file not found), C interop, performance-critical paths |
-| Result types | Functional style, explicit error handling, no exceptions                             |
+| Exceptions | Internal logic errors, programming mistakes, unexpected states |
+| Error codes | Expected failure modes (e.g., file not found), C interop, performance-critical paths |
+| Result types | Functional style, explicit error handling, no exceptions |
 
 ```python
 from dataclasses import dataclass
@@ -652,8 +652,8 @@ class UserService:
 
 :::tip
 **Log and raise** for unexpected errors the caller must handle. **Log and continue** for
-non-critical background operations. **Raise without logging** when the caller is responsible for
-handling (e.g., validation at API boundary). Never swallow exceptions silently.
+Non-critical background operations. **Raise without logging** when the caller is responsible for
+Handling (e.g., validation at API boundary). Never swallow exceptions silently.
 :::
 
 ## Failure Domains
@@ -847,3 +847,11 @@ finally:
     except Exception as e:
         logger.error("Cleanup failed: %s", e)
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

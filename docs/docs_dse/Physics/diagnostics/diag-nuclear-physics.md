@@ -78,11 +78,11 @@ The following data are given:
 | $^{141}\text{Ba}$ | 140.91390 |
 | $^{92}\text{Kr}$ | 91.92620 |
 
-$1 \text{ u} = 931.5 \text{ MeV}/c^2$, $1 \text{ eV} = 1.6 \times 10^{-19}$ J.
+$1 \text{ u} = 931.5 \text{ MeV}/c^2$$1 \text{ eV} = 1.6 \times 10^{-19}$ J.
 
 (a) Calculate the binding energy per nucleon of $^{56}\text{Fe}$.
 (b) Calculate the binding energy per nucleon of $^{235}\text{U}$.
-(c) For the fission reaction $^{235}\text{U} + n \to ^{141}\text{Ba} + ^{92}\text{Kr} + 3n$, calculate the energy released.
+(c) For the fission reaction $^{235}\text{U} + n \to ^{141}\text{Ba} + ^{92}\text{Kr} + 3n$Calculate the energy released.
 
 **Solution:**
 
@@ -108,7 +108,7 @@ $$\frac{BE}{A} = \frac{479.2}{56} = 8.557 \text{ MeV/nucleon}$$
 
 **(b) Binding energy of $^{235}\text{U}$:**
 
-$Z = 92$, $N = 143$.
+$Z = 92$$N = 143$.
 
 $$m_{\text{nucleons}} = 92 \times 1.00728 + 143 \times 1.00867 = 92.66976 + 144.23981 = 236.90957 \text{ u}$$
 
@@ -188,7 +188,7 @@ $$\frac{N}{N_0} = \frac{A}{A_0} = 0.1634 = 16.34\%$$
 
 **Question:**
 
-A nuclear power station uses $^{235}\text{U}$ as fuel. Each fission of $^{235}\text{U}$ releases approximately $200$ MeV of energy. The power station has a thermal efficiency of $33\%$ and produces $500$ MW of electrical power. (a) Calculate the number of $^{235}\text{U}$ fissions per second. (b) The fuel is enriched to $3\%$ $^{235}\text{U}$ (the rest is $^{238}\text{U}$). Calculate the mass of uranium fuel consumed per day. (c) If the waste heat is discharged into a river with a flow rate of $500$ m$^3$ s$^{-1}$, calculate the temperature rise of the river.
+A nuclear power station uses $^{235}\text{U}$ as fuel. Each fission of $^{235}\text{U}$ releases approximately $200$ MeV of energy. The power station has a thermal efficiency of $33\%$ and produces $500$ MW of electrical power. (a) Calculate the number of $^{235}\text{U}$ fissions per second. (b) The fuel is enriched to $3\%$ $^{235}\text{U}$ (the rest is $^{238}\text{U}$). Calculate the mass of uranium fuel consumed per day. (c) If the waste heat is discharged into a river with a flow rate of $500$ m$^3$ s$^{-1}$Calculate the temperature rise of the river.
 
 **Solution:**
 

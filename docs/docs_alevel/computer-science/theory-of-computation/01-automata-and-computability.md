@@ -23,7 +23,7 @@ slug: automata-and-computability
 
 **Language accepted:** $L(M) = \{w \in \Sigma^* \mid \hat{\delta}(q_0, w) \in F\}$
 
-where $\hat{\delta}$ is the extended transition function (processes entire string).
+Where $\hat{\delta}$ is the extended transition function (processes entire string).
 
 ### Example: DFA that accepts strings ending in "01"
 
@@ -33,15 +33,15 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 - $\Sigma = \{0, 1\}$
 - $F = \{B\}$
 
-|       | 0   | 1   |
+| | 0 | 1 |
 | ----- | --- | --- |
-| **S** | A   | S   |
-| **A** | A   | B   |
-| **B** | A   | S   |
+| **S** | A | S |
+| **A** | A | B |
+| **B** | A | S |
 
 Trace for "1101": S → S → A → B. Accepted. ✓
 
-Trace for "1001": S → S → A → S → A →... wait, let me retrace.
+Trace for "1001": S → S → A → S → A →... Wait, let me retrace.
 
 "1001": S -(1)→ S -(0)→ A -(0)→ A -(1)→ B. Accepted. ✓
 
@@ -53,12 +53,12 @@ Trace for "1001": S → S → A → S → A →... wait, let me retrace.
 - All other components are the same as a DFA
 
 An NFA **accepts** a string if there exists at least one path through the machine that ends in an
-accepting state.
+Accepting state.
 
 ### NFA with Epsilon Transitions (ε-NFA)
 
 An ε-NFA additionally allows transitions on the empty string ε (changing state without consuming
-input).
+Input).
 
 $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
@@ -66,33 +66,33 @@ $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$
 
 ## 2. DFA-NFA Equivalence
 
-**Theorem (Rabin-Scott).** For every NFA $N$, there exists a DFA $D$ such that $L(N) = L(D)$. DFAs
-and NFAs accept exactly the same class of languages (the **regular languages**).
+**Theorem (Rabin-Scott).** For every NFA $N$There exists a DFA $D$ such that $L(N) = L(D)$. DFAs
+And NFAs accept exactly the same class of languages (the **regular languages**).
 
-**Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, construct DFA
+**Proof (subset construction).** Given NFA $N = (Q_N, \Sigma, \delta_N, q_0, F_N)$Construct DFA
 $D = (Q_D, \Sigma, \delta_D, q_0', F_D)$:
 
 1. $Q_D = \mathcal{P}(Q_N)$ (states are subsets of $Q_N$)
 2. $q_0' = \varepsilon\mathrm{-closure}(\{q_0\})$
 3. $\delta_D(S, a) = \varepsilon\mathrm{-closure}\left(\bigcup_{q \in S} \delta_N(q, a)\right)$ for
-   $S \subseteq Q_N$
+ $S \subseteq Q_N$
 4. $F_D = \{S \subseteq Q_N \mid S \cap F_N \neq \emptyset\}$
 
 The DFA tracks the set of all states the NFA could be in. Since $Q_N$ is finite, $Q_D$ is finite (at
-most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $\square$
+Most $2^{|Q_N|}$ states). The DFA accepts exactly the same strings as the NFA. $\square$
 
 **Corollary.** The class of regular languages is closed under union, intersection, complementation,
-concatenation, and Kleene star.
+Concatenation, and Kleene star.
 
 :::info
 Board-specific
 
 - **AQA** requires finite state machines (FSMs) with state transition diagrams and tables, regular
-  expressions, and Turing machines (conceptual understanding)
+ expressions, and Turing machines (conceptual understanding)
 - **CIE (9618)** requires finite state machines and Turing machines; may not emphasise regular
-  expressions as heavily
+ expressions as heavily
 - **OCR (A)** requires finite state machines, state transition diagrams, regular expressions, and
-  understanding of decidability
+ understanding of decidability
 - **Edexcel** covers finite state machines and basic automata theory
 :::
 
@@ -104,33 +104,33 @@ Board-specific
 
 A **regular expression** defines a regular language using operators:
 
-| Operator      | Name          | Meaning                          | Regex  |
+| Operator | Name | Meaning | Regex |
 | ------------- | ------------- | -------------------------------- | ------ |
-| $\emptyset$   | Empty set     | Accepts nothing                  | —      |
-| $\varepsilon$ | Empty string  | Accepts the empty string         | `ε`    |
-| $a$           | Literal       | Accepts the character $a$        | `a`    |
-| $R \cdot S$   | Concatenation | Strings from $R$ followed by $S$ | `RS`   |
-| $R \mid S$    | Alternation   | Strings from $R$ or $S$          | `R\|S` |
-| $R^*$         | Kleene star   | Zero or more repetitions of $R$  | `R*`   |
+| $\emptyset$ | Empty set | Accepts nothing | — |
+| $\varepsilon$ | Empty string | Accepts the empty string | `ε` |
+| $a$ | Literal | Accepts the character $a$ | `a` |
+| $R \cdot S$ | Concatenation | Strings from $R$ followed by $S$ | `RS` |
+| $R \mid S$ | Alternation | Strings from $R$ or $S$ | `R\|S` |
+| $R^*$ | Kleene star | Zero or more repetitions of $R$ | `R*` |
 
 **Kleene's Theorem.** A language is regular if and only if it can be described by a regular
-expression.
+Expression.
 
 ### Examples
 
-| Language                       | Regular Expression |
+| Language | Regular Expression |
 | ------------------------------ | ------------------ |
-| Strings containing "abc"       | `.*(abc).*`        |
-| Binary strings ending in "01"  | `(0\|1)*01`        |
-| Strings of even length         | `((0\|1)(0\|1))*`  |
-| Strings with no consecutive 1s | `(0\|10)*(1\|ε)`   |
+| Strings containing "abc" | `.*(abc).*` |
+| Binary strings ending in "01" | `(0\|1)*01` |
+| Strings of even length | `((0\|1)(0\|1))*` |
+| Strings with no consecutive 1s | `(0\|10)*(1\|ε)` |
 
 ### Limitations of Regular Languages
 
 **Theorem.** The language $L = \{a^n b^n \mid n \geq 0\}$ is **not** regular.
 
 **Proof (Pumping Lemma).** The Pumping Lemma for regular languages states: if $L$ is regular, then
-there exists a pumping length $p$ such that any string $s \in L$ with $|s| \geq p$ can be split into
+There exists a pumping length $p$ such that any string $s \in L$ with $|s| \geq p$ can be split into
 $s = xyz$ where:
 
 1. $|xy| \leq p$
@@ -138,7 +138,7 @@ $s = xyz$ where:
 3. $xy^iz \in L$ for all $i \geq 0$
 
 Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 0$):
-$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$, $p - |y| \neq p$, so $a^{p-|y|}b^p \notin L$.
+$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$$p - |y| \neq p$So $a^{p-|y|}b^p \notin L$.
 Contradiction. $\square$
 
 <hr />
@@ -152,7 +152,7 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 
 - $Q$ is a finite set of states
 - $\Sigma$ is the input alphabet (does not include the blank symbol)
-- $\Gamma$ is the tape alphabet ($\Sigma \subseteq \Gamma$, includes blank symbol $\sqcup$)
+- $\Gamma$ is the tape alphabet ($\Sigma \subseteq \Gamma$Includes blank symbol $\sqcup$)
 - $\delta: Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ is the transition function
 - $q_0$ is the start state
 - $q_{accept}$ is the accept state
@@ -162,7 +162,7 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 
 1. Tape is infinite in both directions, initialised with input followed by blanks
 2. Read/write head starts at the leftmost input symbol
-3. At each step: read the current symbol, consult $\delta$, write a symbol, move head left or right
+3. At each step: read the current symbol, consult $\delta$Write a symbol, move head left or right
 4. Accept if $q_{accept}$ is reached; reject if $q_{reject}$ is reached; may loop forever
 
 ### Example: TM that accepts $L = \{a^n b^n \mid n \geq 0\}$
@@ -170,26 +170,26 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 **Algorithm:**
 
 1. If tape is empty, accept
-2. Find the leftmost `a`, replace with `X`, move right to find the leftmost `b`, replace with `X`
+2. Find the leftmost `a`Replace with `X`Move right to find the leftmost `b`Replace with `X`
 3. Return to the leftmost remaining `a`
 4. Repeat until no `a` remains
 5. If only `X`'s and blanks remain, accept; otherwise reject
 
 **Formal transitions (partial):**
 
-| State | Read     | Write    | Move | Next State   |
+| State | Read | Write | Move | Next State |
 | ----- | -------- | -------- | ---- | ------------ |
-| $q_0$ | $a$      | $X$      | $R$  | $q_1$        |
-| $q_0$ | $X$      | $X$      | $R$  | $q_3$        |
-| $q_0$ | $\sqcup$ | $\sqcup$ | $S$  | $q_{accept}$ |
-| $q_1$ | $a$      | $a$      | $R$  | $q_1$        |
-| $q_1$ | $X$      | $X$      | $R$  | $q_1$        |
-| $q_1$ | $b$      | $X$      | $L$  | $q_2$        |
-| $q_2$ | $a$      | $a$      | $L$  | $q_2$        |
-| $q_2$ | $X$      | $X$      | $R$  | $q_0$        |
-| $q_3$ | $X$      | $X$      | $R$  | $q_3$        |
-| $q_3$ | $\sqcup$ | $\sqcup$ | $S$  | $q_{accept}$ |
-| $q_3$ | $b$      | $b$      | $S$  | $q_{reject}$ |
+| $q_0$ | $a$ | $X$ | $R$ | $q_1$ |
+| $q_0$ | $X$ | $X$ | $R$ | $q_3$ |
+| $q_0$ | $\sqcup$ | $\sqcup$ | $S$ | $q_{accept}$ |
+| $q_1$ | $a$ | $a$ | $R$ | $q_1$ |
+| $q_1$ | $X$ | $X$ | $R$ | $q_1$ |
+| $q_1$ | $b$ | $X$ | $L$ | $q_2$ |
+| $q_2$ | $a$ | $a$ | $L$ | $q_2$ |
+| $q_2$ | $X$ | $X$ | $R$ | $q_0$ |
+| $q_3$ | $X$ | $X$ | $R$ | $q_3$ |
+| $q_3$ | $\sqcup$ | $\sqcup$ | $S$ | $q_{accept}$ |
+| $q_3$ | $b$ | $b$ | $S$ | $q_{reject}$ |
 
 <hr />
 
@@ -199,10 +199,10 @@ $M = (Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$ where:
 Turing machine.
 
 Equivalently: any reasonable model of computation (lambda calculus, μ-recursive functions, modern
-programming languages) can compute exactly the same set of functions as a Turing machine.
+Programming languages) can compute exactly the same set of functions as a Turing machine.
 
 This is a **thesis**, not a theorem — it cannot be proven because "effectively computable" is an
-informal concept. However, no counterexample has ever been found.
+Informal concept. However, no counterexample has ever been found.
 
 <hr />
 
@@ -210,11 +210,11 @@ informal concept. However, no counterexample has ever been found.
 
 ### Definition
 
-**Halting problem:** Given a description of a Turing machine $M$ and an input $w$, determine whether
+**Halting problem:** Given a description of a Turing machine $M$ and an input $w$Determine whether
 $M$ halts (accepts or rejects) when run on $w$.
 
 **Theorem (Turing, 1936).** The halting problem is **undecidable** — no Turing machine can solve it
-for all possible inputs.
+For all possible inputs.
 
 ### Proof by Contradiction
 
@@ -234,19 +234,19 @@ $$D(M) = \begin{cases} \mathrm{loop forever} & \mathrm{if } H(M, M) = \mathrm{ac
 Both cases lead to contradictions, so $H$ cannot exist. $\square$
 
 **Corollary.** The halting problem is semi-decidable (recursively enumerable): we can build a
-machine that accepts when $M$ halts on $w$, but it cannot always reject when $M$ doesn't halt (it
-would have to run forever).
+Machine that accepts when $M$ halts on $w$But it cannot always reject when $M$ doesn't halt (it
+Would have to run forever).
 
 <hr />
 
 ## 7. Decidable and Undecidable Problems
 
-| Category       | Definition                                            | Example                |
+| Category | Definition | Example |
 | -------------- | ----------------------------------------------------- | ---------------------- |
-| Decidable      | A TM always halts with the correct answer             | "Is $n$ prime?"        |
-| Semi-decidable | A TM halts on yes-instances; may loop on no-instances | Halting problem        |
-| Undecidable    | No TM can solve it for all inputs                     | Halting problem (full) |
-| Unrecognisable | No TM even semi-decides it                            | Complement of halting  |
+| Decidable | A TM always halts with the correct answer | "Is $n$ prime?" |
+| Semi-decidable | A TM halts on yes-instances; may loop on no-instances | Halting problem |
+| Undecidable | No TM can solve it for all inputs | Halting problem (full) |
+| Unrecognisable | No TM even semi-decides it | Complement of halting |
 
 <hr />
 
@@ -255,16 +255,16 @@ would have to run forever).
 ### Definitions
 
 - **P:** The class of decision problems solvable by a deterministic Turing machine in **polynomial
-  time** $O(n^k)$ for some constant $k$.
+ time** $O(n^k)$ for some constant $k$.
 - **NP:** The class of decision problems whose **yes-instances** can be **verified** by a
-  deterministic Turing machine in polynomial time (given a certificate).
+ deterministic Turing machine in polynomial time (given a certificate).
 
 ### Relationship
 
 $$\mathrm{P} \subseteq \mathrm{NP}$$
 
 Every problem in P is also in NP (if you can solve it in polynomial time, you can certainly verify a
-solution in polynomial time).
+Solution in polynomial time).
 
 **The P vs NP question:** Is $\mathrm{P} = \mathrm{NP}$? This is one of the seven Millennium Prize
 Problems. Most computer scientists believe $\mathrm{P} \neq \mathrm{NP}$.
@@ -288,21 +288,21 @@ A problem is **NP-complete** if:
 
 ### Examples of Problems in P
 
-| Problem                  | Complexity          |
+| Problem | Complexity |
 | ------------------------ | ------------------- |
-| Sorting                  | $O(n \log n)$       |
-| Shortest path (Dijkstra) | $O((V+E)\log V)$    |
-| MST (Kruskal/Prim)       | $O(E \log V)$       |
-| String matching          | $O(nm)$ or $O(n+m)$ |
-| 2-SAT                    | $O(n + m)$          |
+| Sorting | $O(n \log n)$ |
+| Shortest path (Dijkstra) | $O((V+E)\log V)$ |
+| MST (Kruskal/Prim) | $O(E \log V)$ |
+| String matching | $O(nm)$ or $O(n+m)$ |
+| 2-SAT | $O(n + m)$ |
 
 ### Examples of Problems in NP (not known to be in P)
 
-| Problem           | Verification                 |
+| Problem | Verification |
 | ----------------- | ---------------------------- |
-| SAT               | Verify assignment in $O(n)$  |
-| TSP (decision)    | Verify tour length in $O(n)$ |
-| Sudoku (n×n)      | Verify solution in $O(n^2)$  |
+| SAT | Verify assignment in $O(n)$ |
+| TSP (decision) | Verify tour length in $O(n)$ |
+| Sudoku (n×n) | Verify solution in $O(n^2)$ |
 | Graph 3-colouring | Verify colouring in $O(V+E)$ |
 
 <hr />
@@ -310,7 +310,7 @@ A problem is **NP-complete** if:
 ## Problem Set
 
 **Problem 1.** Design a DFA that accepts all binary strings containing an even number of 0s. Give
-the formal definition and draw the transition table.
+The formal definition and draw the transition table.
 
 <details>
 <summary>Answer</summary>
@@ -322,10 +322,10 @@ $M = (Q, \Sigma, \delta, q_0, F)$ where:
 - $q_0$ is start state
 - $F = \{q_0\}$ (accept when even number of 0s)
 
-|         | 0     | 1     |
+| | 0 | 1 |
 | ------- | ----- | ----- |
 | → $q_0$ | $q_1$ | $q_0$ |
-| $q_1$   | $q_0$ | $q_1$ |
+| $q_1$ | $q_0$ | $q_1$ |
 
 Trace "110": $q_0 \to q_0 \to q_0 \to q_0$. Accept (0 zeros, even). ✓ Trace "101":
 $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
@@ -334,16 +334,16 @@ $q_0 \to q_0 \to q_1 \to q_1$. Reject (1 zero, odd). ✓
 
 **Problem 2.** Convert the following NFA to a DFA using the subset construction.
 
-NFA: States $\{0, 1, 2\}$, alphabet $\{a, b\}$, start state 0, accepting state 2.
+NFA: States $\{0, 1, 2\}$Alphabet $\{a, b\}$Start state 0, accepting state 2.
 
-| From | Input | To     |
+| From | Input | To |
 | ---- | ----- | ------ |
-| 0    | a     | {0, 1} |
-| 0    | b     | {0}    |
-| 1    | a     | ∅      |
-| 1    | b     | {2}    |
-| 2    | a     | ∅      |
-| 2    | b     | ∅      |
+| 0 | a | {0, 1} |
+| 0 | b | {0} |
+| 1 | a | ∅ |
+| 1 | b | {2} |
+| 2 | a | ∅ |
+| 2 | b | ∅ |
 
 <details>
 <summary>Answer</summary>
@@ -358,22 +358,22 @@ From $\{0\}$: a → {0, 1}, b → {0} From $\{0, 1\}$: a → δ(0,a) ∪ δ(1,a)
 
 Accepting states: any subset containing 2 → $\{0, 2\}$.
 
-| DFA State   | a           | b           | Accept? |
+| DFA State | a | b | Accept? |
 | ----------- | ----------- | ----------- | ------- |
-| → $\{0\}$   | $\{0,1\}$   | $\{0\}$     | No      |
-| $\{0,1\}$   | $\{0,1\}$   | $\{0,2\}$   | No      |
-| $\{0,2\}$   | $\{0,1\}$   | $\{0\}$     | Yes     |
-| $\emptyset$ | $\emptyset$ | $\emptyset$ | No      |
+| → $\{0\}$ | $\{0,1\}$ | $\{0\}$ | No |
+| $\{0,1\}$ | $\{0,1\}$ | $\{0,2\}$ | No |
+| $\{0,2\}$ | $\{0,1\}$ | $\{0\}$ | Yes |
+| $\emptyset$ | $\emptyset$ | $\emptyset$ | No |
 
 </details>
 
 **Problem 3.** Write a regular expression for the language of all binary strings that do NOT contain
-the substring "11".
+The substring "11".
 
 <details>
 <summary>Answer</summary>
 
-Any such string is a sequence of blocks, where each block is either `0`, `10`, or `1` (but the last
+Any such string is a sequence of blocks, where each block is either `0``10`Or `1` (but the last
 `1` must not be followed by another `1`).
 
 Regular expression: `(0|10)*(1|ε)`
@@ -389,7 +389,7 @@ Verification:
 - "0" → matches `(0|10)*(1|ε)` with "0" and ε. ✓
 - "1" → matches `(0|10)*(1|ε)` with empty and "1". ✓
 - "10" → matches with "10" and ε. ✓
-- "0101" → matches with "0", "10", "1"... wait: "0101" = "0" + "10" + "1". ✓
+- "0101" → matches with "0", "10", "1"... Wait: "0101" = "0" + "10" + "1". ✓
 - "11" → cannot match (no way to have two consecutive 1s). ✓
 </details>
 
@@ -398,29 +398,29 @@ Verification:
 <details>
 <summary>Answer</summary>
 
-Assume $L$ is regular. Let $p$ be the pumping length. Choose $s = 0^p 1 0^p 1$ (this is $w = 0^p1$,
+Assume $L$ is regular. Let $p$ be the pumping length. Choose $s = 0^p 1 0^p 1$ (this is $w = 0^p1$
 $ww = 0^p10^p1$). Note $|s| = 2p + 2 \geq p$. ✓
 
 By the Pumping Lemma, $s = xyz$ with $|xy| \leq p$ and $|y| \geq 1$.
 
-Since $|xy| \leq p$, $y$ consists entirely of 0s from the first half. Say $y = 0^k$ where
+Since $|xy| \leq p$$y$ consists entirely of 0s from the first half. Say $y = 0^k$ where
 $1 \leq k \leq p$.
 
 Pump with $i = 0$: $xz = 0^{p-k}10^p1$.
 
-Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2$, which is odd when
+Is this in $L$? It would need to be $ww$ for some $w$. The length is $2p - k + 2$Which is odd when
 $k$ is odd, so it cannot be $ww$ (which always has even length). But even when $k$ is even, the
-first half is $0^{(p-k/2)+1}$... actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$, we need
-the first half to equal the second half. The total length is $2p + 2 - k$. The first half is the
-first $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For
-these to be equal, $p-k = p+k/2$, giving $k = -k/2$, so $k = 0$. But $k \geq 1$. Contradiction. ✓
+First half is $0^{(p-k/2)+1}$... Actually, for $xz = 0^{p-k}10^p1$ to be in $L = \{ww\}$We need
+The first half to equal the second half. The total length is $2p + 2 - k$. The first half is the
+First $p + 1 - k/2$ characters: $0^{p-k}1$. The second half is: $0^{k/2}0^p1 = 0^{p+k/2}1$. For
+These to be equal, $p-k = p+k/2$Giving $k = -k/2$So $k = 0$. But $k \geq 1$. Contradiction. ✓
 
 Therefore, $L$ is not regular. $\square$
 
 </details>
 
 **Problem 5.** Describe a Turing machine that decides whether a binary string is a palindrome (reads
-the same forwards and backwards).
+The same forwards and backwards).
 
 <details>
 <summary>Answer</summary>
@@ -436,8 +436,8 @@ the same forwards and backwards).
 **States:**
 
 - $q_0$: Start. Read leftmost symbol.
-- $q_a$: Saw `0`, going right to find rightmost
-- $q_b$: Saw `1`, going right to find rightmost
+- $q_a$: Saw `0`Going right to find rightmost
+- $q_b$: Saw `1`Going right to find rightmost
 - $q_{check0}$: At rightmost, check if it's `0`
 - $q_{check1}$: At rightmost, check if it's `1`
 - $q_{return}$: Going left to find leftmost
@@ -453,7 +453,7 @@ the same forwards and backwards).
 - $q_a$ reads blank: move left → $q_{check0}$
 - $q_{check0}$ reads `0`: write blank, move left → $q_{return}$ (match!)
 - $q_{check0}$ reads `1`: reject (mismatch!)
-- $q_{return}$ reads `0`, `1`: move left
+- $q_{return}$ reads `0``1`: move left
 - $q_{return}$ reads blank: move right → $q_0$
 
 This TM halts on all inputs (always reaches accept or reject), so the language of palindromes is
@@ -462,7 +462,7 @@ This TM halts on all inputs (always reaches accept or reject), so the language o
 </details>
 
 **Problem 6.** Prove that if the halting problem were decidable, then every semi-decidable language
-would be decidable.
+Would be decidable.
 
 <details>
 <summary>Answer</summary>
@@ -472,39 +472,39 @@ $w \in L$ and loops forever if $w \notin L$.
 
 If the halting problem were decidable, we could build a TM $M$ that decides $L$:
 
-1. On input $w$, run the halting decider $H$ on $(M_L, w)$
+1. On input $w$Run the halting decider $H$ on $(M_L, w)$
 2. If $H$ says $M_L$ halts on $w$: $M_L$ will accept (since it only halts on members of $L$), so run
-   $M_L$ on $w$ and accept
+ $M_L$ on $w$ and accept
 3. If $H$ says $M_L$ doesn't halt on $w$: reject (since $w \notin L$)
 
 This TM $M$ always halts and correctly decides $L$. Since $L$ was arbitrary, every semi-decidable
-language would be decidable.
+Language would be decidable.
 
 But we know the halting problem is undecidable, so there must exist semi-decidable languages that
-are not decidable (e.g., the halting problem itself). $\square$
+Are not decidable (e.g., the halting problem itself). $\square$
 
 </details>
 
 **Problem 7.** Explain the difference between a decidable problem and a semi-decidable problem. Give
-an example of each.
+An example of each.
 
 <details>
 <summary>Answer</summary>
 
 **Decidable:** There exists a TM that halts on ALL inputs and correctly answers yes/no.
 
-- Example: "Given a DFA $M$ and a string $w$, does $M$ accept $w$?" — simulate $M$ on $w$; it always
-  halts.
+- Example: "Given a DFA $M$ and a string $w$Does $M$ accept $w$?" — simulate $M$ on $w$; it always
+ halts.
 
 **Semi-decidable (recursively enumerable):** There exists a TM that halts and accepts on
-yes-instances, but may loop forever on no-instances.
+Yes-instances, but may loop forever on no-instances.
 
-- Example: "Given a TM $M$ and input $w$, does $M$ halt on $w$?" — run $M$ on $w$; if it halts,
-  accept. But if $M$ doesn't halt, our verifier loops forever.
+- Example: "Given a TM $M$ and input $w$Does $M$ halt on $w$?" — run $M$ on $w$; if it halts,
+ accept. But if $M$ doesn't halt, our verifier loops forever.
 
 **Key difference:** For semi-decidable problems, you can verify a "yes" answer in finite time, but
-you cannot always verify a "no" answer (the machine might just be taking a long time, or it might
-loop forever).
+You cannot always verify a "no" answer (the machine might just be taking a long time, or it might
+Loop forever).
 
 </details>
 
@@ -516,23 +516,23 @@ loop forever).
 No. The complement of the halting problem is **not** semi-decidable.
 
 **Proof.** If both a language $L$ and its complement $\overline{L}$ were semi-decidable, then $L$
-would be decidable (run both semi-decidable machines in parallel; one must eventually halt, giving
-the answer).
+Would be decidable (run both semi-decidable machines in parallel; one must eventually halt, giving
+The answer).
 
 The halting problem is semi-decidable (run the TM and accept when it halts). If its complement were
-also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the
-complement of the halting problem is not semi-decidable. $\square$
+Also semi-decidable, the halting problem would be decidable — but we proved it's not. Therefore, the
+Complement of the halting problem is not semi-decidable. $\square$
 
 </details>
 
 **Problem 9.** Explain why the Travelling Salesman Problem (decision version: "Is there a tour of
-length ≤ k?") is in NP.
+Length ≤ k?") is in NP.
 
 <details>
 <summary>Answer</summary>
 
 The TSP decision problem is in NP because a proposed solution (a tour) can be **verified** in
-polynomial time:
+Polynomial time:
 
 **Certificate:** A permutation of the $n$ cities (the proposed tour).
 
@@ -542,33 +542,33 @@ polynomial time:
 2. Sum the distances between consecutive cities (and from last back to first) — $O(n)$
 3. Compare the total to $k$ — $O(1)$
 
-Total verification time: $O(n)$, which is polynomial. Therefore, TSP is in NP. ✓
+Total verification time: $O(n)$Which is polynomial. Therefore, TSP is in NP. ✓
 
 (Note: this does NOT mean TSP is in P. Verification is polynomial, but finding the tour may not be.)
 
 </details>
 
 **Problem 10.** State the Church-Turing thesis. Explain why it is a thesis and not a theorem. What
-would it mean if it were false?
+Would it mean if it were false?
 
 <details>
 <summary>Answer</summary>
 
 **Church-Turing Thesis:** Every function that is effectively computable (can be computed by an
-algorithm) is computable by a Turing machine.
+Algorithm) is computable by a Turing machine.
 
 **Why it's a thesis, not a theorem:** "Effectively computable" is an informal, intuitive concept —
-it refers to any step-by-step procedure that a human could follow with pen and paper (or a computer
-could execute). Since this is not a mathematically precise definition, we cannot formally prove that
+It refers to any step-by-step procedure that a human could follow with pen and paper (or a computer
+Could execute). Since this is not a mathematically precise definition, we cannot formally prove that
 Turing machines capture all of "computation." However, every reasonable model of computation
-proposed (lambda calculus, μ-recursive functions, register machines, modern programming languages)
-has been shown to be equivalent to Turing machines, providing overwhelming evidence for the thesis.
+Proposed (lambda calculus, μ-recursive functions, register machines, modern programming languages)
+Has been shown to be equivalent to Turing machines, providing overwhelming evidence for the thesis.
 
 **If it were false:** There would exist an effectively computable function that no Turing machine
-could compute. This would mean our entire understanding of computation is fundamentally incomplete —
-there would be a type of computation that our current theoretical models cannot capture. It would
-revolutionise computer science and mathematics, as it would imply the existence of a "super-Turing"
-model of computation.
+Could compute. This would mean our entire understanding of computation is fundamentally incomplete —
+There would be a type of computation that our current theoretical models cannot capture. It would
+Revolutionise computer science and mathematics, as it would imply the existence of a "super-Turing"
+Model of computation.
 
 For revision on algorithms and complexity, see
 [Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis).
@@ -576,3 +576,15 @@ For revision on algorithms and complexity, see
 </details>
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

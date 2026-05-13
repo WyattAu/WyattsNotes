@@ -42,10 +42,10 @@ flowchart LR
 
 ### Bare vs Non-Bare Repositories
 
-| Type                   | Working Directory | Purpose                                       |
+| Type | Working Directory | Purpose |
 | ---------------------- | ----------------- | --------------------------------------------- |
-| **Non-bare** (default) | Yes               | Developer workstation — edit, commit, push    |
-| **Bare** (`--bare`)    | No                | Server-side repository — receives pushes only |
+| **Non-bare** (default) | Yes | Developer workstation — edit, commit, push |
+| **Bare** (`--bare`) | No | Server-side repository — receives pushes only |
 
 A bare repository is just the `.git/` directory without a working tree. It is the standard format for remote servers (GitHub, GitLab, Gitea):
 
@@ -103,10 +103,10 @@ $ git remote set-url origin git@github.com:user/repo.git
 
 ### URLs: HTTPS vs SSH
 
-| Protocol  | URL Format                         | Authentication   | Use Case                                     |
+| Protocol | URL Format | Authentication | Use Case |
 | --------- | ---------------------------------- | ---------------- | -------------------------------------------- |
 | **HTTPS** | `https://github.com/user/repo.git` | Token / password | Public repos, CI/CD, firewalled environments |
-| **SSH**   | `git@github.com:user/repo.git`     | SSH key          | Frequent pushes, personal development        |
+| **SSH** | `git@github.com:user/repo.git` | SSH key | Frequent pushes, personal development |
 
 :::tip
 
@@ -174,9 +174,9 @@ $ git pull --rebase origin main
 $ git config --global pull.rebase true
 ```
 
-### Why `--rebase` is Usually Better
+### Why `--rebase` is Better
 
-Without `--rebase`, `git pull` creates a merge commit for every pull, cluttering the history:
+Without `--rebase``git pull` creates a merge commit for every pull, cluttering the history:
 
 ```mermaid
 gitGraph
@@ -190,7 +190,7 @@ gitGraph
     merge origin/main id: "F (another merge commit from pull)"
 ```
 
-With `--rebase`, your local commits are replayed on top of the remote, maintaining a linear history:
+With `--rebase`Your local commits are replayed on top of the remote, maintaining a linear history:
 
 ```mermaid
 gitGraph
@@ -329,26 +329,26 @@ $ git checkout -b main origin/main  # or whatever the default branch is
 
 The clone creates:
 
-| Component              | Description                                     |
+| Component | Description |
 | ---------------------- | ----------------------------------------------- |
-| `.git/`                | Full local repository with all objects and refs |
-| Working directory      | Checkout of the default branch                  |
-| `origin` remote        | Points to the source URL                        |
-| `main` tracking branch | Tracks `origin/main`                            |
+| `.git/` | Full local repository with all objects and refs |
+| Working directory | Checkout of the default branch |
+| `origin` remote | Points to the source URL |
+| `main` tracking branch | Tracks `origin/main` |
 
 ### Clone Variants
 
-| Variant     | Command               | Use Case                                       |
+| Variant | Command | Use Case |
 | ----------- | --------------------- | ---------------------------------------------- |
-| **Full**    | `git clone`           | Development — full history, all branches       |
+| **Full** | `git clone` | Development — full history, all branches |
 | **Shallow** | `git clone --depth=1` | CI/CD — only latest commit, minimal disk usage |
-| **Sparse**  | `git clone --sparse`  | Monorepos — only specific directories          |
-| **Mirror**  | `git clone --mirror`  | Backup/migration — all refs, bare repository   |
-| **Bare**    | `git clone --bare`    | Server setup — no working directory            |
+| **Sparse** | `git clone --sparse` | Monorepos — only specific directories |
+| **Mirror** | `git clone --mirror` | Backup/migration — all refs, bare repository |
+| **Bare** | `git clone --bare` | Server setup — no working directory |
 
 ## Remote-Tracking Branches
 
-Remote-tracking branches (e.g., `origin/main`) are local references that represent the state of a remote branch as of the last `git fetch`. They are updated automatically by `fetch` and `pull`, but **never by local commits**.
+Remote-tracking branches (e.g., `origin/main`) are local references that represent the state of a remote branch as of the last `git fetch`. They are updated automatically by `fetch` and `pull`But **never by local commits**.
 
 ```mermaid
 flowchart LR
@@ -419,3 +419,15 @@ $ git push -u origin feature-auth
 # 4. Create a pull request
 # 5. After review and approval, merge via the PR interface
 ```
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

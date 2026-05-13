@@ -9,7 +9,7 @@ description: "Rigorous IB mathematics notes covering Number and Algebra. Include
 ## Sets
 
 A set is a collection of distinct elements, written by listing its members inside curly braces or by
-specifying a property that its members satisfy.
+Specifying a property that its members satisfy.
 
 ### Notation
 
@@ -40,9 +40,9 @@ Let $A$ and $B$ be subsets of a universal set $U$.
 - **Set difference:** $A \setminus B = \{x \in A \mid x \notin B\}$
 
 These operations are conveniently visualised with Venn diagrams. In a Venn diagram, the universal
-set $U$ is drawn as a rectangle, and subsets are drawn as overlapping circles. The union $A \cup B$
-is the entire region covered by either circle; the intersection $A \cap B$ is the overlapping
-region; the complement $A'$ is everything in the rectangle outside the circle for $A$.
+Set $U$ is drawn as a rectangle, and subsets are drawn as overlapping circles. The union $A \cup B$
+Is the entire region covered by either circle; the intersection $A \cap B$ is the overlapping
+Region; the complement $A'$ is everything in the rectangle outside the circle for $A$.
 
 ### De Morgan's Laws
 
@@ -54,20 +54,20 @@ $$(A \cap B)' = A' \cup B'$$
 
 _Proof of the first law._ We show mutual inclusion.
 
-($\subseteq$) Suppose $x \in (A \cup B)'$. Then $x \notin A \cup B$, so $x \notin A$ and
-$x \notin B$. Hence $x \in A'$ and $x \in B'$, which means $x \in A' \cap B'$.
+($\subseteq$) Suppose $x \in (A \cup B)'$. Then $x \notin A \cup B$So $x \notin A$ and
+$x \notin B$. Hence $x \in A'$ and $x \in B'$Which means $x \in A' \cap B'$.
 
-($\supseteq$) Suppose $x \in A' \cap B'$. Then $x \in A'$ and $x \in B'$, so $x \notin A$ and
-$x \notin B$. Therefore $x \notin A \cup B$, giving $x \in (A \cup B)'$.
+($\supseteq$) Suppose $x \in A' \cap B'$. Then $x \in A'$ and $x \in B'$So $x \notin A$ and
+$x \notin B$. Therefore $x \notin A \cup B$Giving $x \in (A \cup B)'$.
 
 The second law follows by symmetry or by applying the first law to $A'$ and $B'$. $\blacksquare$
 
 ### Power Sets
 
-The **power set** $\mathcal{'\{'}P{'\}'}(A)$ of a set $A$ is the set of all subsets of $A$, including
+The **power set** $\mathcal{'\{'}P{'\}'}(A)$ of a set $A$ is the set of all subsets of $A$Including
 $\emptyset$ and $A$ itself.
 
-If $|A| = n$, then $|\mathcal{'\{'}P{'\}'}(A)| = 2^n$.
+If $|A| = n$Then $|\mathcal{'\{'}P{'\}'}(A)| = 2^n$.
 
 <details>
 <summary>Worked example: Power set</summary>
@@ -86,9 +86,9 @@ For finite sets $A$ and $B$:
 $$|A \cup B| = |A| + |B| - |A \cap B|$$
 
 This is the **inclusion-exclusion principle** for two sets. It subtracts the overlap that would
-otherwise be double-counted.
+Otherwise be double-counted.
 
-For three sets $A$, $B$, $C$:
+For three sets $A$$B$$C$:
 
 $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$$
 
@@ -96,7 +96,7 @@ $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |
 <summary>Worked example: Cardinality</summary>
 
 In a class of 40 students, 25 study Physics, 20 study Chemistry, and 10 study both. How many study
-neither subject?
+Neither subject?
 
 $|P \cup C| = |P| + |C| - |P \cap C| = 25 + 20 - 10 = 35$.
 
@@ -106,8 +106,8 @@ The number studying neither is $40 - 35 = 5$.
 
 ## Functions
 
-A function $f$ is an assignment from a **domain** ($X$, the set of acceptable inputs) to a
-**codomain** ($Y$, the set into which all outputs must fall), such that:
+A function $f$ is an assignment from a **domain** ($X$The set of acceptable inputs) to a
+**codomain** ($Y$The set into which all outputs must fall), such that:
 
 - Every element in $X$ is mapped to an element in $Y$: $\forall x \in X,\; f(x) \in Y$
 - No element in $X$ is mapped to more than one element in $Y$: $f(x_1) = f(x_2) \implies x_1 = x_2$
@@ -122,12 +122,12 @@ $$f: X \to Y$$
 <summary>Non-examples of functions</summary>
 
 - $f_1: \mathbb{'\{'}R{'\}'}^+ \to \mathbb{'\{'}R{'\}'},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
-  not a function.
-- $f_2: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so
-  not every element of the domain is mapped. Redefine as
-  $f_2: \mathbb{'\{'}R{'\}'} \setminus \{0\} \to \mathbb{'\{'}R{'\}'}$.
+ not a function.
+- $f_2: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$ is undefined, so
+ not every element of the domain is mapped. Redefine as
+ $f_2: \mathbb{'\{'}R{'\}'} \setminus \{0\} \to \mathbb{'\{'}R{'\}'}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
-  This is a valid (empty) function.
+ This is a valid (empty) function.
 
 </details>
 
@@ -140,9 +140,9 @@ $$A = \{f(x) \mid x \in X\}, \quad A \subseteq Y$$
 ### Classes of Functions
 
 - **Surjective (onto):** Every element of the codomain is hit:
-  $\forall y \in Y,\; \exists x \in X,\; y = f(x)$
+ $\forall y \in Y,\; \exists x \in X,\; y = f(x)$
 - **Injective (one-to-one):** Distinct inputs give distinct outputs:
-  $f(x_1) = f(x_2) \implies x_1 = x_2$
+ $f(x_1) = f(x_2) \implies x_1 = x_2$
 - **Bijective:** Both surjective and injective
 - **Odd:** $f(-x) = -f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
 - **Even:** $f(-x) = f(x)$ for all $x \in \mathbb{'\{'}R{'\}'}$
@@ -154,13 +154,13 @@ $$A = \{f(x) \mid x \in X\}, \quad A \subseteq Y$$
 
 Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = x^2$.
 
-_Injective?_ No. $f(1) = f(-1) = 1$, so distinct inputs map to the same output. (This is also an
-even function.)
+_Injective?_ No. $f(1) = f(-1) = 1$So distinct inputs map to the same output. (This is also an
+Even function.)
 
-_Surjective?_ No. There is no $x \in \mathbb{'\{'}R{'\}'}$ such that $f(x) = -1$, so
+_Surjective?_ No. There is no $x \in \mathbb{'\{'}R{'\}'}$ such that $f(x) = -1$So
 $-1 \notin \mathrm{range}(f)$.
 
-The range is $[0, \infty)$, a proper subset of $\mathbb{'\{'}R{'\}'}$.
+The range is $[0, \infty)$A proper subset of $\mathbb{'\{'}R{'\}'}$.
 
 </details>
 
@@ -169,10 +169,10 @@ The range is $[0, \infty)$, a proper subset of $\mathbb{'\{'}R{'\}'}$.
 
 Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = 2x + 3$.
 
-_Injective:_ Suppose $f(x_1) = f(x_2)$. Then $2x_1 + 3 = 2x_2 + 3$, so $x_1 = x_2$.
+_Injective:_ Suppose $f(x_1) = f(x_2)$. Then $2x_1 + 3 = 2x_2 + 3$So $x_1 = x_2$.
 
-_Surjective:_ Let $y \in \mathbb{'\{'}R{'\}'}$. We need $2x + 3 = y$, i.e. $x = \frac{y - 3}{2}$. Since
-$\frac{y-3}{2} \in \mathbb{'\{'}R{'\}'}$, every $y$ is in the range.
+_Surjective:_ Let $y \in \mathbb{'\{'}R{'\}'}$. We need $2x + 3 = y$I.e. $x = \frac{y - 3}{2}$. Since
+$\frac{y-3}{2} \in \mathbb{'\{'}R{'\}'}$Every $y$ is in the range.
 
 Therefore $f$ is bijective.
 
@@ -184,19 +184,19 @@ If $f: X \to Y$ is bijective, the **inverse function** $f^{-1}: Y \to X$ exists 
 
 $$f^{-1}(f(x)) = x \quad \mathrm{for all } x \in X, \qquad f(f^{-1}(y)) = y \quad \mathrm{for all } y \in Y$$
 
-To find $f^{-1}$: write $y = f(x)$, solve for $x$ in terms of $y$, then interchange $x$ and $y$.
+To find $f^{-1}$: write $y = f(x)$Solve for $x$ in terms of $y$Then interchange $x$ and $y$.
 
 **Existence condition:** A function has an inverse (on its given domain and codomain) if and only if
-it is bijective.
+It is bijective.
 
 <details>
 <summary>Example: Finding an inverse function</summary>
 
-Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = \frac{2x + 1}{x - 3}$, with domain
+Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'},\; f(x) = \frac{2x + 1}{x - 3}$With domain
 $\mathbb{'\{'}R{'\}'} \setminus \{3\}$.
 
-Set $y = \frac{2x+1}{x-3}$. Then $y(x-3) = 2x+1$, so $yx - 3y = 2x + 1$, hence $x(y-2) = 3y+1$,
-giving $x = \frac{3y+1}{y-2}$.
+Set $y = \frac{2x+1}{x-3}$. Then $y(x-3) = 2x+1$So $yx - 3y = 2x + 1$Hence $x(y-2) = 3y+1$
+Giving $x = \frac{3y+1}{y-2}$.
 
 Therefore $f^{-1}(x) = \frac{3x+1}{x-2}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
 
@@ -217,7 +217,7 @@ A non-injective function can be made injective by restricting its domain.
 <summary>Example: Restricting domain</summary>
 
 $f(x) = x^2$ is not injective on $\mathbb{'\{'}R{'\}'}$ since $f(1) = f(-1)$. But by restricting to
-$[0, \infty)$, every non-negative real has exactly one non-negative square root, so
+$[0, \infty)$Every non-negative real has exactly one non-negative square root, so
 $f: [0, \infty) \to [0, \infty)$ is bijective with inverse $f^{-1}(x) = \sqrt{x}$.
 
 Similarly, $f: (-\infty, 0] \to [0, \infty),\; f(x) = x^2$ is bijective with inverse
@@ -239,8 +239,8 @@ Let $a_1 = b_1 \times 10^{k_1}$ and $a_2 = b_2 \times 10^{k_2}$. Then:
 
 $$a_1 \cdot a_2 = b_1 \cdot b_2 \times 10^{k_1 + k_2}$$
 
-If $|b_1 \cdot b_2| \ge 10$ or $|b_1 \cdot b_2| \lt 1$, adjust the mantissa back into $[1, 10)$ by
-absorbing a factor of $10$ into the exponent.
+If $|b_1 \cdot b_2| \ge 10$ or $|b_1 \cdot b_2| \lt 1$Adjust the mantissa back into $[1, 10)$ by
+Absorbing a factor of $10$ into the exponent.
 
 ### Significant Figures
 
@@ -290,7 +290,7 @@ $19.3125 \le A \lt 20.2125$.
 ## Sequences and Series
 
 A sequence is a function $f$ with domain $\mathbb{'\{'}N{'\}'}$ (or $\mathbb{'\{'}N{'\}'}_0$) and codomain $X$. Writing
-$u_n = f(n)$, every sequence is ordered by its index.
+$u_n = f(n)$Every sequence is ordered by its index.
 
 $$f: \mathbb{'\{'}N{'\}'} \to X, \quad u_n = f(n), \; n \in \mathbb{'\{'}N{'\}'}$$
 
@@ -310,14 +310,14 @@ Sigma notation obeys the following rules (where $c$ is a constant independent of
 $$\sum_{n=1}^{k} (au_n + bv_n) = a\sum_{n=1}^{k} u_n + b\sum_{n=1}^{k} v_n$$
 
 _Proof._ Distribute the sum over each term and factor constants out. Each term $au_n$ appears
-exactly once in the expansion, so grouping gives $a$ times the sum of $u_n$, and similarly for
+Exactly once in the expansion, so grouping gives $a$ times the sum of $u_n$And similarly for
 $bv_n$. $\blacksquare$
 
 **Index shifting:** Replacing $n$ with $n + m$ shifts the bounds:
 
 $$\sum_{n=p}^{q} u_n = \sum_{n=p+m}^{q+m} u_{n-m}$$
 
-**Telescoping:** If $u_n = v_n - v_{n-1}$, then $\sum_{n=1}^{k} u_n = v_k - v_0$.
+**Telescoping:** If $u_n = v_n - v_{n-1}$Then $\sum_{n=1}^{k} u_n = v_k - v_0$.
 
 <details>
 <summary>Worked example: Sigma manipulation</summary>
@@ -345,7 +345,7 @@ $$S_k = a_1 + (a_1 + d) + (a_1 + 2d) + \cdots + (a_1 + (k-1)d)$$
 
 $$S_k = a_k + (a_k - d) + (a_k - 2d) + \cdots + (a_k - (k-1)d)$$
 
-Adding term-by-term, each pair sums to $a_1 + a_k$, and there are $k$ such pairs:
+Adding term-by-term, each pair sums to $a_1 + a_k$And there are $k$ such pairs:
 
 $$2S_k = k(a_1 + a_k) \implies S_k = \frac{k}{2}(a_1 + a_k)$$
 
@@ -388,16 +388,16 @@ $$S_k = \frac{u_1(1 - r^k)}{1 - r} \qquad \blacksquare$$
 
 ### Convergence of Geometric Series
 
-If $|r| \lt 1$, then $\lim_{k \to \infty} r^k = 0$, so:
+If $|r| \lt 1$Then $\lim_{k \to \infty} r^k = 0$So:
 
 $$S_{\infty} = \frac{u_1}{1 - r}$$
 
-If $|r| \ge 1$, the series diverges.
+If $|r| \ge 1$The series diverges.
 
 ### Applications: Compound Interest
 
 If a principal $P$ is invested at rate $r$ per period, compounded each period, the value after $n$
-periods is:
+Periods is:
 
 $$A = P(1 + r)^n$$
 
@@ -406,7 +406,7 @@ This is a geometric sequence with $u_1 = P$ and common ratio $1 + r$.
 ### Applications: Annuities
 
 An annuity pays $d$ per period for $n$ periods, with interest rate $r$ per period. The present value
-is:
+Is:
 
 $$PV = \frac{d}{r}\left(1 - \frac{1}{(1+r)^n}\right)$$
 
@@ -429,7 +429,7 @@ The value is approximately $7,401.22.
 
 Find the sum of the first 20 terms of the arithmetic sequence $3, 7, 11, \ldots$
 
-Here $a_1 = 3$, $d = 4$, $n = 20$.
+Here $a_1 = 3$$d = 4$$n = 20$.
 
 $S_{20} = \frac{20}{2}\big(2(3) + 19(4)\big) = 10(6 + 76) = 10 \times 82 = 820$
 
@@ -440,7 +440,7 @@ $S_{20} = \frac{20}{2}\big(2(3) + 19(4)\big) = 10(6 + 76) = 10 \times 82 = 820$
 
 Find the sum of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
-Here $u_1 = 1$, $r = \frac{1}{2}$. Since $|r| \lt 1$:
+Here $u_1 = 1$$r = \frac{1}{2}$. Since $|r| \lt 1$:
 
 $S_{\infty} = \frac{1}{1 - 1/2} = \frac{1}{1/2} = 2$
 
@@ -451,7 +451,7 @@ $S_{\infty} = \frac{1}{1 - 1/2} = \frac{1}{1/2} = 2$
 
 The sum of the first $n$ terms of $2, 6, 18, \ldots$ is $6560$. Find $n$.
 
-Here $u_1 = 2$, $r = 3$. Using $S_n = \frac{2(3^n - 1)}{3 - 1} = 3^n - 1$.
+Here $u_1 = 2$$r = 3$. Using $S_n = \frac{2(3^n - 1)}{3 - 1} = 3^n - 1$.
 
 $3^n - 1 = 6560 \implies 3^n = 6561 = 3^8 \implies n = 8$
 
@@ -481,19 +481,19 @@ $\log_a(x/y) = m - n = \log_a x - \log_a y$. $\blacksquare$
 
 **Law 3 (Power rule):** $\log_a(x^m) = m\log_a x$
 
-_Proof._ Let $n = \log_a x$, so $a^n = x$. Then $x^m = (a^n)^m = a^{mn}$. Taking $\log_a$:
+_Proof._ Let $n = \log_a x$So $a^n = x$. Then $x^m = (a^n)^m = a^{mn}$. Taking $\log_a$:
 $\log_a(x^m) = mn = m\log_a x$. $\blacksquare$
 
 ### Change of Base Formula
 
-**Theorem.** $\log_a x = \dfrac{\log_b x}{\log_b a}$ for any valid bases $a, b \gt 0$, $a, b \ne 1$.
+**Theorem.** $\log_a x = \dfrac{\log_b x}{\log_b a}$ for any valid bases $a, b \gt 0$$a, b \ne 1$.
 
 _Proof._ Let $y = \log_a x$. Then $a^y = x$. Taking $\log_b$ of both sides:
-$\log_b(a^y) = \log_b x$. By the power rule, $y\log_b a = \log_b x$, so
+$\log_b(a^y) = \log_b x$. By the power rule, $y\log_b a = \log_b x$So
 $y = \frac{\log_b x}{\log_b a}$. $\blacksquare$
 
 This is particularly useful for computing logarithms in bases other than $10$ or $e$ using a
-calculator.
+Calculator.
 
 ### Solving Exponential Equations
 
@@ -523,9 +523,9 @@ Use the logarithm laws to combine terms, then exponentiate both sides.
 
 Solve $\log_2(x + 3) + \log_2(x - 3) = 4$.
 
-By the product rule: $\log_2\!\big((x+3)(x-3)\big) = 4$, i.e. $\log_2(x^2 - 9) = 4$.
+By the product rule: $\log_2\!\big((x+3)(x-3)\big) = 4$I.e. $\log_2(x^2 - 9) = 4$.
 
-$x^2 - 9 = 2^4 = 16$, so $x^2 = 25$, giving $x = 5$ or $x = -5$.
+$x^2 - 9 = 2^4 = 16$So $x^2 = 25$Giving $x = 5$ or $x = -5$.
 
 Check domain: $x + 3 \gt 0$ and $x - 3 \gt 0$ requires $x \gt 3$. So $x = -5$ is rejected.
 
@@ -545,14 +545,14 @@ $\log_3 20 = \frac{\ln 20}{\ln 3} = \frac{2.9957\ldots}{1.0986\ldots} \approx 2.
 <details>
 <summary>Worked example: Exponential growth</summary>
 
-A bacteria culture doubles every 3 hours. If the initial population is $500$, when will it reach
+A bacteria culture doubles every 3 hours. If the initial population is $500$When will it reach
 32,000?
 
 $P(t) = 500 \cdot 2^{t/3}$. Set $500 \cdot 2^{t/3} = 32000$:
 
-$2^{t/3} = 64 = 2^6$, so $t/3 = 6$, giving $t = 18$ hours.
+$2^{t/3} = 64 = 2^6$So $t/3 = 6$Giving $t = 18$ hours.
 
-Alternatively, using logarithms: $\frac{t}{3}\ln 2 = \ln 64 = 6\ln 2$, so $t = 18$.
+Alternatively, using logarithms: $\frac{t}{3}\ln 2 = \ln 64 = 6\ln 2$So $t = 18$.
 
 </details>
 
@@ -571,7 +571,7 @@ To prove $P(n)$ for all $n \ge n_0$:
 4. **Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all $n \ge n_0$.
 
 The logic is analogous to an infinite chain of dominoes: the base case knocks over the first domino,
-and the inductive step ensures each domino knocks over the next.
+And the inductive step ensures each domino knocks over the next.
 
 ### Sum Formula Proofs
 
@@ -596,7 +596,7 @@ $$= \frac{(k+1)(2k^2 + k + 6k + 6)}{6}$$
 
 $$= \frac{(k+1)(2k^2 + 7k + 6)}{6} = \frac{(k+1)(k+2)(2k+3)}{6}$$
 
-This equals $\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$, which is the formula for $n = k+1$. $\blacksquare$
+This equals $\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$Which is the formula for $n = k+1$. $\blacksquare$
 
 </details>
 
@@ -607,7 +607,7 @@ This equals $\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$, which is the formula for $n = 
 
 Prove $3^{2n} - 1$ is divisible by 8 for all $n \in \mathbb{'\{'}N{'\}'}$.
 
-**Base case ($n = 1$):** $3^2 - 1 = 9 - 1 = 8$, which is divisible by 8. True.
+**Base case ($n = 1$):** $3^2 - 1 = 9 - 1 = 8$Which is divisible by 8. True.
 
 **Inductive hypothesis:** Assume $3^{2k} - 1 = 8m$ for some integer $m$.
 
@@ -630,20 +630,20 @@ Since $9m + 1$ is an integer, $3^{2(k+1)} - 1$ is divisible by 8. $\blacksquare$
 
 **Inductive step:** $2^{k+1} = 2 \cdot 2^k \gt 2k$ (by the hypothesis).
 
-Since $k \ge 1$, we have $2k = k + k \ge k + 1$. Therefore $2^{k+1} \gt k + 1$. $\blacksquare$
+Since $k \ge 1$We have $2k = k + k \ge k + 1$. Therefore $2^{k+1} \gt k + 1$. $\blacksquare$
 
 </details>
 
 ### Common Mistakes in Induction
 
 - **Forgetting the base case:** The inductive step alone proves only an implication
-  $P(k) \implies P(k+1)$. Without the base case, the chain never starts.
-- **Using what you need to prove:** The inductive hypothesis is $P(k)$, not $P(k+1)$. You must
-  _derive_ $P(k+1)$, not assume it.
+ $P(k) \implies P(k+1)$. Without the base case, the chain never starts.
+- **Using what you need to prove:** The inductive hypothesis is $P(k)$Not $P(k+1)$. You must
+ _derive_ $P(k+1)$Not assume it.
 - **Incorrect algebra:** Errors in the inductive step (especially with fractions or factorisation)
-  are the most common source of failed induction proofs.
-- **Wrong starting value:** If the statement is only claimed for $n \ge 3$, verify the base case at
-  $n = 3$, not $n = 1$.
+ are the most common source of failed induction proofs.
+- **Wrong starting value:** If the statement is only claimed for $n \ge 3$Verify the base case at
+ $n = 3$Not $n = 1$.
 
 ## The Binomial Theorem
 
@@ -653,14 +653,14 @@ For any non-negative integer $n$ and any $a, b \in \mathbb{'\{'}R{'\}'}$:
 
 $$(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k$$
 
-where the **binomial coefficient** is:
+Where the **binomial coefficient** is:
 
 $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 ### Pascal's Triangle
 
 The binomial coefficients can be generated recursively via **Pascal's triangle**. Each entry is the
-sum of the two entries above it:
+Sum of the two entries above it:
 
 $$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$$
 
@@ -729,32 +729,32 @@ $1$. Meanwhile, $\{1\} \subseteq \{1, 2, 3\}$ is true, but $\{1\} \in \{1, 2, 3\
 ### Domain and Range Errors
 
 When finding inverse functions, always check that the original function is bijective on the given
-domain. A common error is to write $f^{-1}(x) = \sqrt{x}$ for $f(x) = x^2$ without restricting the
-domain to $[0, \infty)$ first.
+Domain. A common error is to write $f^{-1}(x) = \sqrt{x}$ for $f(x) = x^2$ without restricting the
+Domain to $[0, \infty)$ first.
 
 ### Off-by-One in Sigma Notation
 
 $\sum_{n=1}^{k}$ has $k$ terms, not $k-1$. $\sum_{n=0}^{k}$ has $k+1$ terms. Be careful when
-shifting indices.
+Shifting indices.
 
 ### Induction Base Case Errors
 
-If the statement is claimed for $n \ge 2$, verify the base case at $n = 2$, not $n = 0$ or $n = 1$.
+If the statement is claimed for $n \ge 2$Verify the base case at $n = 2$Not $n = 0$ or $n = 1$.
 A base case at the wrong value invalidates the entire proof.
 
 ### Logarithm Domain Restrictions
 
-The arguments of logarithms must be strictly positive. When solving $\log_a f(x) = c$, always check
-that $f(x) \gt 0$ in your solution. A solution that violates this is extraneous.
+The arguments of logarithms must be strictly positive. When solving $\log_a f(x) = c$Always check
+That $f(x) \gt 0$ in your solution. A solution that violates this is extraneous.
 
 ## Problem Set
 
 <details>
 <summary>Problem 1: Sets</summary>
 
-Let $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$, $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$.
+Let $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$$A = \{1, 2, 3, 4, 5\}$$B = \{3, 4, 5, 6, 7\}$.
 
-Find: (a) $A \cap B$, (b) $A \cup B$, (c) $A'$, (d) $(A \cap B)'$, (e) $|A \cup B|$.
+Find: (a) $A \cap B$(b) $A \cup B$(c) $A'$(d) $(A \cap B)'$(e) $|A \cup B|$.
 
 **Solution.**
 
@@ -774,15 +774,15 @@ Find: (a) $A \cap B$, (b) $A \cup B$, (c) $A'$, (d) $(A \cap B)'$, (e) $|A \cup 
 <summary>Problem 2: Functions — bijectivity</summary>
 
 Let $f: \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ be defined by $f(x) = x^3 - x$. Determine whether $f$ is
-injective, surjective, or neither.
+Injective, surjective, or neither.
 
 **Solution.**
 
-_Injective?_ No. $f(0) = 0$ and $f(1) = 0$, so distinct inputs map to the same output.
+_Injective?_ No. $f(0) = 0$ and $f(1) = 0$So distinct inputs map to the same output.
 
-_Surjective?_ Yes. $f(x) = x^3 - x = x(x-1)(x+1)$. As $x \to \infty$, $f(x) \to \infty$; as
-$x \to -\infty$, $f(x) \to -\infty$. By continuity (a polynomial is continuous everywhere), $f$
-attains every real value by the Intermediate Value Theorem.
+_Surjective?_ Yes. $f(x) = x^3 - x = x(x-1)(x+1)$. As $x \to \infty$$f(x) \to \infty$; as
+$x \to -\infty$$f(x) \to -\infty$. By continuity (a polynomial is continuous everywhere), $f$
+Attains every real value by the Intermediate Value Theorem.
 
 Therefore $f$ is surjective but not injective.
 
@@ -792,7 +792,7 @@ Therefore $f$ is surjective but not injective.
 <summary>Problem 3: Scientific notation and error</summary>
 
 The speed of light is measured as $3.00 \times 10^8\,\mathrm{m/s}$ to 3 s.f. Find the absolute and
-relative error.
+Relative error.
 
 **Solution.**
 
@@ -829,7 +829,7 @@ From (2): $2a_1 + 19(2.5) = 160 \implies 2a_1 = 160 - 47.5 = 112.5 \implies a_1 
 <summary>Problem 5: Geometric series</summary>
 
 A geometric series has first term $5$ and common ratio $\frac{1}{3}$. Find the sum to infinity and
-determine how many terms are needed for the partial sum to exceed 99% of $S_{\infty}$.
+Determine how many terms are needed for the partial sum to exceed 99% of $S_{\infty}$.
 
 **Solution.**
 
@@ -841,7 +841,7 @@ $S_n = \frac{5(1 - (1/3)^n)}{2/3} = 7.5\big(1 - (1/3)^n\big)$
 
 $7.5\big(1 - (1/3)^n\big) \gt 7.425 \implies 1 - (1/3)^n \gt 0.99 \implies (1/3)^n \lt 0.01$
 
-$n\ln(1/3) \lt \ln(0.01)$. Since $\ln(1/3) \lt 0$, dividing reverses the inequality:
+$n\ln(1/3) \lt \ln(0.01)$. Since $\ln(1/3) \lt 0$Dividing reverses the inequality:
 
 $n \gt \frac{\ln(0.01)}{\ln(1/3)} = \frac{-4.605}{-1.099} \approx 4.19$
 
@@ -873,7 +873,7 @@ Prove by induction that $n^3 + 2n$ is divisible by $3$ for all $n \in \mathbb{'\
 
 **Solution.**
 
-**Base case ($n = 1$):** $1^3 + 2(1) = 3$, which is divisible by $3$. True.
+**Base case ($n = 1$):** $1^3 + 2(1) = 3$Which is divisible by $3$. True.
 
 **Inductive hypothesis:** Assume $k^3 + 2k = 3m$ for some integer $m$.
 
@@ -899,7 +899,7 @@ Find the term independent of $x$ in the expansion of $\left(x^2 + \dfrac{1}{x}\r
 The general term is
 $T_{k+1} = \binom{9}{k}(x^2)^{9-k}\!\left(\dfrac{1}{x}\right)^k = \binom{9}{k} x^{18-2k-k} = \binom{9}{k} x^{18-3k}$.
 
-For the term to be independent of $x$, we need $18 - 3k = 0$, so $k = 6$.
+For the term to be independent of $x$We need $18 - 3k = 0$So $k = 6$.
 
 The term is $\binom{9}{6} x^0 = \binom{9}{3} = 84$.
 
@@ -908,10 +908,18 @@ The term is $\binom{9}{6} x^0 = \binom{9}{3} = 84$.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Number and Algebra**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-number-algebra) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Number and Algebra with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

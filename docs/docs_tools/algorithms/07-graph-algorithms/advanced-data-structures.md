@@ -120,7 +120,7 @@ class SegmentTreeMin:
 ### Lazy Propagation
 
 Lazy propagation allows efficient range updates by deferring updates to child nodes until they are
-needed.
+Needed.
 
 ```python
 class LazySegmentTree:
@@ -256,13 +256,13 @@ graph TD
 ## Fenwick Tree (Binary Indexed Tree)
 
 A Fenwick tree (BIT) supports point updates and prefix sum queries in $O(\log n)$ time with less
-memory and simpler code than a segment tree.
+Memory and simpler code than a segment tree.
 
 ### How It Works
 
 Each node at index $i$ stores the sum of a range of length `i & (-i)` (the lowest set bit of $i$).
 This allows prefix sum queries by "climbing up" the tree and point updates by "adding" to all
-relevant ranges.
+Relevant ranges.
 
 ```python
 class FenwickTree:
@@ -387,8 +387,8 @@ class FenwickTree2D:
 
 Fenwick trees are simpler and faster than segment trees for point updates and prefix sum queries.
 Segment trees are more flexible: they support range min/max/gcd queries and range updates with lazy
-propagation, which Fenwick trees cannot do (or do with more complexity). Choose based on your query
-type.
+Propagation, which Fenwick trees cannot do (or do with more complexity). Choose based on your query
+Type.
 
 :::
 
@@ -436,12 +436,12 @@ class SparseTable:
 
 The sparse table uses overlapping ranges for idempotent operations (min, max, gcd, bitwise AND/OR).
 For non-idempotent operations (sum, product), use the non-overlapping variant with $O(\log n)$ query
-time.
+Time.
 
 ## Disjoint Set Union (Union-Find)
 
 The disjoint set union (DSU) data structure maintains a partition of elements into disjoint sets,
-supporting efficient union and find operations.
+Supporting efficient union and find operations.
 
 ### With Path Compression and Union by Rank
 
@@ -486,7 +486,7 @@ class DSU:
 ### Offline Queries
 
 DSU is powerful for offline queries where the connectivity of a graph changes over time (edges are
-added in a specific order). Process edges in reverse order.
+Added in a specific order). Process edges in reverse order.
 
 ```python
 def offline_connectivity(n, edges, queries):
@@ -522,7 +522,7 @@ def offline_connectivity(n, edges, queries):
 ### DSU on Tree (Sack)
 
 DSU on tree is a technique for answering queries on subtrees efficiently. It processes subtrees from
-smallest to largest, reusing the DSU structure.
+Smallest to largest, reusing the DSU structure.
 
 ```python
 def dsu_on_tree(n, adj, queries):
@@ -766,7 +766,7 @@ class HLD:
 ## Merge Sort Tree
 
 A merge sort tree stores sorted subarrays at each segment tree node, enabling range queries with
-arbitrary functions (e.g., count elements less than $k$ in a range).
+Arbitrary functions (e.g., count elements less than $k$ in a range).
 
 ```python
 class MergeSortTree:
@@ -822,7 +822,7 @@ class MergeSortTree:
 ## Persistent Segment Tree
 
 A persistent data structure preserves all previous versions. The persistent segment tree creates new
-nodes only on the path that is modified, sharing unchanged subtrees with the previous version.
+Nodes only on the path that is modified, sharing unchanged subtrees with the previous version.
 
 ```python
 class PersistentSegmentTree:
@@ -883,7 +883,7 @@ class PersistentSegmentTree:
 ## Mo's Algorithm
 
 Mo's algorithm answers offline range queries on an array by sorting queries in a special order and
-processing them with a sliding window.
+Processing them with a sliding window.
 
 ```python
 def mos_algorithm(arr, queries):
@@ -938,52 +938,52 @@ def mos_algorithm(arr, queries):
 :::tip
 
 Mo's algorithm with Hilbert curve ordering achieves $O(n \sqrt{q})$ regardless of the number of
-blocks, compared to the standard $O((n+q)\sqrt{n})$. The Hilbert curve maps 2D coordinates to 1D in
-a way that preserves locality better than block-based sorting.
+Blocks, compared to the standard $O((n+q)\sqrt{n})$. The Hilbert curve maps 2D coordinates to 1D in
+A way that preserves locality better than block-based sorting.
 
 :::
 
 ## Comparison Table
 
-| Data Structure          | Build         | Query                   | Update         | Notes                                         |
+| Data Structure | Build | Query | Update | Notes |
 | ----------------------- | ------------- | ----------------------- | -------------- | --------------------------------------------- |
-| Segment tree            | $O(n)$        | $O(\log n)$             | $O(\log n)$    | Flexible, lazy propagation                    |
-| Fenwick tree            | $O(n)$        | $O(\log n)$             | $O(\log n)$    | Simpler, prefix sums only                     |
-| Sparse table            | $O(n \log n)$ | $O(1)$                  | N/A            | Static, no updates                            |
-| DSU                     | $O(n)$        | $O(\alpha(n))$          | $O(\alpha(n))$ | Union-find only                               |
-| LCA (binary lifting)    | $O(n \log n)$ | $O(\log n)$             | N/A            | Static tree                                   |
-| LCA (Euler + RMQ)       | $O(n \log n)$ | $O(1)$                  | N/A            | Static tree                                   |
-| HLD + segment tree      | $O(n)$        | $O(\log^2 n)$           | $O(\log^2 n)$  | Path queries on tree                          |
-| Merge sort tree         | $O(n \log n)$ | $O(\log^2 n)$           | N/A            | Static, sorted subarrays                      |
-| Persistent segment tree | $O(n \log n)$ | $O(\log n)$             | $O(\log n)$    | Version history, $O(\log n)$ space per update |
-| Mo's algorithm          | N/A           | $O(\sqrt{n})$ amortised | N/A            | Offline only                                  |
+| Segment tree | $O(n)$ | $O(\log n)$ | $O(\log n)$ | Flexible, lazy propagation |
+| Fenwick tree | $O(n)$ | $O(\log n)$ | $O(\log n)$ | Simpler, prefix sums only |
+| Sparse table | $O(n \log n)$ | $O(1)$ | N/A | Static, no updates |
+| DSU | $O(n)$ | $O(\alpha(n))$ | $O(\alpha(n))$ | Union-find only |
+| LCA (binary lifting) | $O(n \log n)$ | $O(\log n)$ | N/A | Static tree |
+| LCA (Euler + RMQ) | $O(n \log n)$ | $O(1)$ | N/A | Static tree |
+| HLD + segment tree | $O(n)$ | $O(\log^2 n)$ | $O(\log^2 n)$ | Path queries on tree |
+| Merge sort tree | $O(n \log n)$ | $O(\log^2 n)$ | N/A | Static, sorted subarrays |
+| Persistent segment tree | $O(n \log n)$ | $O(\log n)$ | $O(\log n)$ | Version history, $O(\log n)$ space per update |
+| Mo's algorithm | N/A | $O(\sqrt{n})$ amortised | N/A | Offline only |
 
 ## Common Pitfalls
 
 ### 1. Segment Tree Indexing
 
 The most common bug in segment tree implementations is incorrect indexing. The children of node `i`
-are `2*i+1` and `2*i+2` (0-based). For iterative segment trees, the leaf nodes start at index `size`
+Are `2*i+1` and `2*i+2` (0-based). For iterative segment trees, the leaf nodes start at index `size`
 (the next power of 2). Off-by-one errors in the query boundaries are also extremely common — always
-test with single-element queries and full-range queries.
+Test with single-element queries and full-range queries.
 
 ### 2. Fenwick Tree 1-based vs 0-based
 
 Fenwick trees are inherently 1-based. If your array is 0-based, you must add 1 to all indices
-internally. Forgetting this offset produces incorrect results. The `update` function should accept
+Internally. Forgetting this offset produces incorrect results. The `update` function should accept
 0-based indices and convert internally.
 
 ### 3. Lazy Propagation Not Pushed Down
 
 When querying a node in a lazy segment tree, you must push down any pending lazy values to its
-children before recursing. Forgetting to push down results in stale values being used. The push-down
-order matters: parent must be pushed before children are queried.
+Children before recursing. Forgetting to push down results in stale values being used. The push-down
+Order matters: parent must be pushed before children are queried.
 
 ### 4. Sparse Table Cannot Handle Updates
 
 Sparse tables are static — they cannot handle point updates or range updates. If you need updates,
-use a segment tree or Fenwick tree. Attempting to "update" a sparse table by recomputing affected
-entries is $O(n \log n)$ per update, which defeats the purpose.
+Use a segment tree or Fenwick tree. Attempting to "update" a sparse table by recomputing affected
+Entries is $O(n \log n)$ per update, which defeats the purpose.
 
 ### 5. DSU Path Compression Without Union by Rank
 
@@ -994,19 +994,27 @@ Ackermann function. Always use both.
 ### 6. HLD Query Edge Cases
 
 In HLD, when querying a path, the loop condition `head[u] != head[v]` must handle the case where one
-node is an ancestor of the other. After the loop, `u` and `v` are on the same heavy path, and the
-remaining query is a simple segment tree range query. Forgetting the final segment query produces
-incorrect results.
+Node is an ancestor of the other. After the loop, `u` and `v` are on the same heavy path, and the
+Remaining query is a simple segment tree range query. Forgetting the final segment query produces
+Incorrect results.
 
 ### 7. Mo's Algorithm Block Size
 
 The optimal block size for Mo's algorithm is $\sqrt{n}$ for most query types. However, if the
-add/remove operation is expensive, a larger block size may be better. The "Hilbert order" variant of
+Add/remove operation is expensive, a larger block size may be better. The "Hilbert order" variant of
 Mo's algorithm does not require choosing a block size and achieves better theoretical bounds.
 
 ### 8. Persistent Segment Tree Memory
 
 Each update in a persistent segment tree creates $O(\log n)$ new nodes. After $n$ updates, the total
-number of nodes is $O(n \log n)$. If you are creating many versions, pre-allocate the node array to
-avoid frequent memory allocations. In Python, using a list of tuples or a flat array is more
-memory-efficient than a list of objects.
+Number of nodes is $O(n \log n)$. If you are creating many versions, pre-allocate the node array to
+Avoid frequent memory allocations. In Python, using a list of tuples or a flat array is more
+Memory-efficient than a list of objects.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

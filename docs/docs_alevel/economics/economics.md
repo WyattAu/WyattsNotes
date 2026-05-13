@@ -13,23 +13,23 @@ sidebar_position: 5
 ## A Level Economics — Course Overview
 
 A Level Economics is the study of how societies allocate scarce resources. It develops a rigorous
-analytical framework for understanding markets, firms, governments, and the global economy. The
-course requires both mathematical fluency and the ability to construct clear, logical arguments.
+Analytical framework for understanding markets, firms, governments, and the global economy. The
+Course requires both mathematical fluency and the ability to construct clear, logical arguments.
 
 ### Board Coverage
 
-| Topic                                        | AQA     | Edexcel | OCR (A) | CIE (9708) |
+| Topic | AQA | Edexcel | OCR (A) | CIE (9708) |
 | -------------------------------------------- | ------- | ------- | ------- | ---------- |
-| Markets & Market Failure                     | Paper 1 | P1      | Paper 1 | P1         |
-| The National Economy                         | Paper 2 | P1      | Paper 2 | P2         |
-| Individual & Market Behaviour (Micro)        | Paper 1 | P1      | Paper 1 | P1         |
-| The National & International Economy (Macro) | Paper 2 | P1      | Paper 2 | P2         |
-| Economic Principles & Issues                 | —       | P2      | —       | —          |
-| Labour Markets                               | Paper 1 | P1      | Paper 1 | P1         |
-| Distribution of Income & Wealth              | Paper 1 | —       | Paper 1 | P1         |
-| Financial Markets                            | —       | P1      | Paper 2 | —          |
-| Development Economics                        | —       | P1      | —       | P2         |
-| The Global Economy                           | Paper 2 | P1      | Paper 2 | P2         |
+| Markets & Market Failure | Paper 1 | P1 | Paper 1 | P1 |
+| The National Economy | Paper 2 | P1 | Paper 2 | P2 |
+| Individual & Market Behaviour (Micro) | Paper 1 | P1 | Paper 1 | P1 |
+| The National & International Economy (Macro) | Paper 2 | P1 | Paper 2 | P2 |
+| Economic Principles & Issues | — | P2 | — | — |
+| Labour Markets | Paper 1 | P1 | Paper 1 | P1 |
+| Distribution of Income & Wealth | Paper 1 | — | Paper 1 | P1 |
+| Financial Markets | — | P1 | Paper 2 | — |
+| Development Economics | — | P1 | — | P2 |
+| The Global Economy | Paper 2 | P1 | Paper 2 | P2 |
 
 ### Course Structure
 
@@ -38,14 +38,14 @@ course requires both mathematical fluency and the ability to construct clear, lo
 The study of individual economic agents — consumers, firms, and markets:
 
 1. **Methodology & the Economic Problem** — Scarcity, choice, opportunity cost, positive vs
-   normative economics
+ normative economics
 2. **Demand, Supply & Market Equilibrium** — The price mechanism, elasticity, and market adjustment
 3. **Market Failure & Government Intervention** — Externalities, public goods, information
-   asymmetry, and policy responses
+ asymmetry, and policy responses
 4. **Theory of the Firm** — Production, costs, market structures (perfect competition, monopoly,
-   oligopoly, monopolistic competition)
+ oligopoly, monopolistic competition)
 5. **Labour Markets** — Demand for and supply of labour, wage determination, trade unions,
-   discrimination
+ discrimination
 6. **Distribution of Income & Wealth** — Inequality measurement, poverty, tax/transfer policies
 
 #### Macroeconomics
@@ -62,12 +62,12 @@ The study of the economy as a whole:
 
 ### Assessment
 
-| Board   | Papers                                                                      | Format                                  |
+| Board | Papers | Format |
 | ------- | --------------------------------------------------------------------------- | --------------------------------------- |
-| AQA     | Paper 1 (Micro), Paper 2 (Macro), Paper 3 (Synoptic)                        | Data response + essay                   |
-| Edexcel | P1 (Markets), P2 (UK Economy), P3 (Business)                                | Multiple choice + data response + essay |
-| OCR (A) | Paper 1 (Micro), Paper 2 (Macro), Paper 3 (Themes)                          | Data response + essay                   |
-| CIE     | Paper 1 (MCQ), Paper 2 (Data response), Paper 3 (Essay), Paper 4 (Synoptic) | Mixed                                   |
+| AQA | Paper 1 (Micro), Paper 2 (Macro), Paper 3 (Synoptic) | Data response + essay |
+| Edexcel | P1 (Markets), P2 (UK Economy), P3 (Business) | Multiple choice + data response + essay |
+| OCR (A) | Paper 1 (Micro), Paper 2 (Macro), Paper 3 (Themes) | Data response + essay |
+| CIE | Paper 1 (MCQ), Paper 2 (Data response), Paper 3 (Essay), Paper 4 (Synoptic) | Mixed |
 
 ### How to Use These Notes
 
@@ -192,9 +192,9 @@ When presented with economic data in an exam:
 
 2. **Making claims without evidence:** Every analytical point should be supported by a diagram, a real-world example, or a data reference.
 
-3. **Ignoring the other side:** Evaluation questions require you to consider both arguments for and against. Failing to do so limits your mark to the analysis level (typically 50-60% of the available marks).
+3. **Ignoring the other side:** Evaluation questions require you to consider both arguments for and against. Failing to do so limits your mark to the analysis level ( 50-60% of the available marks).
 
-4. **Vague evaluation:** "It depends on many factors" is not evaluation. Specific evaluation: "This policy is more effective in a recession than at full employment because the multiplier is larger when there is spare capacity."
+4. **Vague evaluation:** " on many factors" is not evaluation. Specific evaluation: "This policy is more effective in a recession than at full employment because the multiplier is larger when there is spare capacity."
 
 5. **Incorrect diagram labels:** Always label the axes (Price/Cost on vertical, Quantity/Output on horizontal), the curves (D, S, MC, MR, etc.), and the key equilibrium points and areas.
 
@@ -241,3 +241,15 @@ When presented with economic data in an exam:
 - Practice 4-6 timed essays on the most likely synoptic topics
 - Memorise key statistics, elasticity estimates, and economist quotes
 - Review the formula reference sheet
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

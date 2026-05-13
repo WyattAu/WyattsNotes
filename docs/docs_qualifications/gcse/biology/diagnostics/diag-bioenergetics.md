@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 (a) $6\text{CO{}_2 + 6\text{H{}_2\text{O{} \xrightarrow{\text{light{}} \text{C{}_6\text{H{}_{12}\text{O{}_6 + 6\text{O{}_2$
 
-(b) Leaf adaptations: (1) **Broad, flat shape** -- maximises surface area for light absorption. (2) **Thin** -- short diffusion distance for CO$_2$ and O$_2$. (3) **Waxy cuticle** -- reduces water loss by evaporation. (4) **Palisade mesophyll** -- cells at the top of the leaf, packed with chloroplasts, receive the most light. (5) **Spongy mesophyll** -- air spaces allow gas circulation (CO$_2$ and O$_2$ diffusion). (6) **Stomata** -- pores on the lower surface (usually) that allow CO$_2$ to enter and O$_2$ to exit; controlled by guard cells. (7) **Chlorophyll** -- green pigment in chloroplasts that absorbs red and blue light.
+(b) Leaf adaptations: (1) **Broad, flat shape** -- maximises surface area for light absorption. (2) **Thin** -- short diffusion distance for CO$_2$ and O$_2$. (3) **Waxy cuticle** -- reduces water loss by evaporation. (4) **Palisade mesophyll** -- cells at the top of the leaf, packed with chloroplasts, receive the most light. (5) **Spongy mesophyll** -- air spaces allow gas circulation (CO$_2$ and O$_2$ diffusion). (6) **Stomata** -- pores on the lower surface () that allow CO$_2$ to enter and O$_2$ to exit; controlled by guard cells. (7) **Chlorophyll** -- green pigment in chloroplasts that absorbs red and blue light.
 
 (c) Rate $= 2.5 / 50 = 0.05$ mg CO$_2$/cm$^2$/hour.
 
@@ -55,7 +55,7 @@ In **brewing**, yeast ferments sugars in the wort (malted barley liquid), produc
 
 (b) **Light intensity:** Increasing light intensity increases the rate of photosynthesis (more energy for the light-dependent reactions) until another factor becomes limiting. At very high light, the rate plateaus because CO$_2$ or temperature is now limiting.
 
-**CO$_2$ concentration:** CO$_2$ is a reactant in the light-independent reactions (Calvin cycle). Increasing CO$_2$ increases the rate until another factor limits. At very high CO$_2$, light or temperature becomes limiting.
+**CO$_2$ concentration:** CO$_2$ is a reactant in the light-independent reactions (Calvin cycle). Increasing CO$_2$ increases the rate until another factor limits. At very high CO$_2$Light or temperature becomes limiting.
 
 **Temperature:** Increasing temperature increases the rate of enzyme-controlled reactions in photosynthesis (up to the optimum). Above the optimum ($\approx 25$--$30^\circ$C), enzymes begin to denature and the rate decreases.
 
@@ -112,6 +112,6 @@ Increase $= 100 - 7.5 = 92.5$ L/min.
 (b) Producer $\to$ herbivore: $2000/20,000 \times 100\% = 10\%$.
 Herbivore $\to$ carnivore: $200/2000 \times 100\% = 10\%$.
 
-(c) Energy is lost between trophic levels because: (1) **Respiration:** Organisms use energy for metabolic processes (movement, maintaining body temperature, digestion). This energy is lost as heat. (2) **Excretion and egestion:** Not all food is digested and absorbed; some passes through as waste. (3) **Incomplete consumption:** Not all available biomass is eaten (bones, roots, etc.). (4) **Excretion:** Some absorbed energy is lost in urine. Typically, only about 10% of energy is transferred to the next trophic level.
+(c) Energy is lost between trophic levels because: (1) **Respiration:** Organisms use energy for metabolic processes (movement, maintaining body temperature, digestion). This energy is lost as heat. (2) **Excretion and egestion:** Not all food is digested and absorbed; some passes through as waste. (3) **Incomplete consumption:** Not all available biomass is eaten (bones, roots, etc.). (4) **Excretion:** Some absorbed energy is lost in urine. , only about 10% of energy is transferred to the next trophic level.
 
 (d) With approximately 10% efficiency at each transfer, the energy available decreases exponentially: $100\% \to 10\% \to 1\% \to 0.1\% \to 0.01\%$. After 4--5 levels, the energy available is too small to support a viable population of predators. There is insufficient energy to sustain another trophic level.

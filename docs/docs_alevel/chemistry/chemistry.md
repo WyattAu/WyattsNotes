@@ -39,8 +39,8 @@ The four main examination boards divide the content differently across papers. T
 2. **[Bonding & Structure](./bonding-and-structure)** -- Ionic, covalent, and metallic bonding; intermolecular forces; VSEPR theory; giant covalent lattices; Born-Haber cycles.
 3. **[Quantitative Chemistry](./quantitative-chemistry)** -- The mole, stoichiometry, titrations, the ideal gas equation, thermochemical calculations.
 4. **[Chemical Kinetics](./chemical-kinetics)** -- Rate equations, the Arrhenius equation, collision theory, Maxwell-Boltzmann distributions, catalysis.
-5. **[Chemical Equilibrium](./chemical-equilibrium)** -- $K_c$, $K_p$, Le Chatelier's principle, solubility products, industrial processes.
-6. **[Acids, Bases & Buffers](./acids-bases)** -- pH, $K_a$, $K_b$, $K_w$, buffer solutions, titration curves, indicators.
+5. **[Chemical Equilibrium](./chemical-equilibrium)** -- $K_c$$K_p$Le Chatelier's principle, solubility products, industrial processes.
+6. **[Acids, Bases & Buffers](./acids-bases)** -- pH, $K_a$$K_b$$K_w$Buffer solutions, titration curves, indicators.
 7. **[Thermodynamics & Energetics](./thermodynamics)** -- Hess's Law, entropy, Gibbs free energy, lattice enthalpy, Born-Haber cycles.
 8. **[Electrochemistry](./electrochemistry)** -- Redox, standard electrode potentials, electrochemical cells, electrolysis, Faraday's laws.
 9. **[Organic Chemistry](./organic-chemistry)** -- Nomenclature, mechanisms (substitution, addition, elimination), spectroscopy, chromatography.
@@ -85,7 +85,7 @@ All boards require demonstration of practical competence. The following skills a
 6. **Electrochemical cells** -- Construction of voltaic cells; measurement of electrode potentials.
 7. **Distillation and purification** -- Simple and fractional distillation; recrystallisation; melting point determination.
 8. **Chromatography** -- Thin-layer chromatography (TLC) for separation and identification of mixtures.
-9. **Synthesis** -- Preparation of organic compounds (e.g. aspirin, esters); purification by filtration and drying.
+9. **Synthesis** -- Preparation of organic compounds (e.g. Aspirin, esters); purification by filtration and drying.
 10. **Spectroscopy interpretation** -- Analysis of IR spectra, mass spectra, and NMR spectra to identify organic compounds.
 
 ## How to Use These Notes
@@ -100,12 +100,12 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 
 | Topic | Key Equations |
 |---|---|
-| Quantitative | $n = \frac{m}{M}$, $c = \frac{n}{V}$, $pV = nRT$, $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$ |
-| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
-| Equilibrium | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$, $K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$, $K_p = K_c(RT)^{\Delta n}$ |
-| Thermodynamics | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$ |
-| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order) |
-| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$ |
+| Quantitative | $n = \frac{m}{M}$$c = \frac{n}{V}$$pV = nRT$$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$ |
+| Acids/Bases | $\mathrm{pH} = -\log[\mathrm{H}^+]$$K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$$K_w = [\mathrm{H}^+][\mathrm{OH}^-]$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
+| Equilibrium | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$$K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$$K_p = K_c(RT)^{\Delta n}$ |
+| Thermodynamics | $\Delta G = \Delta H - T\Delta S$$\Delta G^\circ = -RT\ln K$$q = mc\Delta T$ |
+| Kinetics | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$k = Ae^{-E_a/RT}$$\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order) |
+| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$$\Delta G^\circ = -nFE^\circ$$Q = It$$n = \frac{Q}{F}$$E = E^\circ - \frac{RT}{nF}\ln Q$ |
 | Born-Haber | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$ |
 
 ### Organic Chemistry
@@ -113,7 +113,7 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 | Topic | Key Reactions |
 |---|---|
 | Alkanes | Radical substitution: $\mathrm{RH} + \mathrm{X}_2 \xrightarrow{\mathrm{UV}} \mathrm{RX} + \mathrm{HX}$ |
-| Alkenes | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$, $\mathrm{C=C} + \mathrm{X}_2$, $\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid) |
+| Alkenes | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$$\mathrm{C=C} + \mathrm{X}_2$$\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid) |
 | Halogenoalkanes | SN2: $\mathrm{R-X} + \mathrm{OH}^- \to \mathrm{R-OH} + \mathrm{X}^-$; E2: $\mathrm{R-X} + \mathrm{OH}^- \to \text{alkene} + \mathrm{X}^- + \mathrm{H}_2\mathrm{O}$ |
 | Alcohols | Oxidation: $1^\circ \to$ aldehyde $\to$ acid; $2^\circ \to$ ketone; Dehydration $\to$ alkene |
 | Carbonyls | Nucleophilic addition: $\mathrm{NaBH}_4$ reduction; 2,4-DNPH test; Tollens' test |
@@ -136,11 +136,11 @@ Worked examples are provided throughout. Attempt them before reading the solutio
 
 - Allocate time proportionally to marks (e.g. 1 minute per mark for a 90-mark paper).
 - Attempt all questions; do not leave blanks.
-- Show working clearly -- method marks are available even if the final answer is wrong.
+- Show working -- method marks are available even if the final answer is wrong.
 
 ### Common Areas Where Marks Are Lost
 
-1. **Significant figures:** Use the same number of significant figures as the data in the question (typically 3).
+1. **Significant figures:** Use the same number of significant figures as the data in the question ( 3).
 2. **Units:** Always include units in the final answer.
 3. **State symbols:** Include (s), (l), (g), (aq) in equations unless told otherwise.
 4. **Balancing equations:** Always check that equations are balanced.
@@ -156,9 +156,9 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 ### Arithmetic and Algebra
 
-- **Rearranging equations:** For example, from $pV = nRT$, derive $n = \frac{pV}{RT}$.
+- **Rearranging equations:** For example, from $pV = nRT$Derive $n = \frac{pV}{RT}$.
 - **Solving quadratic equations:** For weak acid pH calculations, $K_a = \frac{x^2}{c - x}$ can sometimes require the quadratic formula when the $5\%$ approximation fails.
-- **Logarithms:** $\mathrm{pH} = -\log[\mathrm{H}^+]$; $\ln k = -\frac{E_a}{R} \cdot \frac{1}{T} + \ln A$. You must be able to convert between $\log$ and $\ln$, and between logarithmic and exponential forms.
+- **Logarithms:** $\mathrm{pH} = -\log[\mathrm{H}^+]$; $\ln k = -\frac{E_a}{R} \cdot \frac{1}{T} + \ln A$. You must be able to convert between $\log$ and $\ln$And between logarithmic and exponential forms.
 
 ### Graphical Analysis
 
@@ -171,7 +171,7 @@ A-Level Chemistry requires significant mathematical competence. The following sk
 
 - **Percentage error:** $\frac◆LB◆\text{absolute error}◆RB◆◆LB◆\text{measured value}◆RB◆ \times 100\%$.
 - **Propagation of errors:** For multiplication/division, add percentage errors. For addition/subtraction, add absolute errors.
-- **Significant figures:** Final answers should be given to the same number of significant figures as the least precise data in the question (typically 3 s.f.).
+- **Significant figures:** Final answers should be given to the same number of significant figures as the least precise data in the question ( 3 s.f.).
 
 ### Calculations Practice
 
@@ -229,7 +229,7 @@ Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ 
 
 $$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
 
-The buffer is effective within $\pm 1\,\mathrm{pH}$ unit of $\mathrm{p}K_a$ (i.e. pH 3.76 to 5.76).
+The buffer is effective within $\pm 1\,\mathrm{pH}$ unit of $\mathrm{p}K_a$ (i.e. PH 3.76 to 5.76).
 
 ## Cross-Topic Synthesis Questions
 
@@ -270,3 +270,11 @@ Step 3: Hydrolysis: $\mathrm{CH}_3\mathrm{CH}(\mathrm{CN})\mathrm{CH}_3 + 2\math
 This gives 2-methylpropanoic acid, not 2-aminopropanoic acid. The nitrile hydrolysis gives a carboxylic acid, not an amino acid. To make alanine, the Gabriel synthesis or reduction of the nitrile to the amine would be needed.
 
 This example illustrates the importance of carefully planning each step and verifying the product structure before proceeding.
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

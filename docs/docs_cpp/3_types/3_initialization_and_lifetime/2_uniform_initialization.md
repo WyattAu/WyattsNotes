@@ -8,13 +8,13 @@ categories:
   - Cpp
 slug: uniform-initialization
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-C++98 had three initialization syntaxes: `T()`, `T = x`, and `T x`. Each had subtly different rules,
-and none could initialize containers or arrays uniformly. C++11 introduced brace initialization
+C++98 had three initialization syntaxes: `T()``T = x`And `T x`. Each had subtly different rules,
+And none could initialize containers or arrays uniformly. C++11 introduced brace initialization
 (`{}`) as a "uniform" syntax intended to work everywhere. The reality is more nuanced: brace
-initialization interacts with overload resolution, `std::initializer_list`, and narrowing
-conversions in ways that every systems programmer must understand.
+Initialization interacts with overload resolution, `std::initializer_list`And narrowing
+Conversions in ways that every systems programmer must understand.
 
 ## Initialization Syntaxes
 
@@ -71,7 +71,7 @@ In C++17, copy list initialization respects `explicit` [N4950 §9.4.5.3]. Before
 ## The Most Vexing Parse
 
 C++'s grammar is ambiguous when a declaration can be interpreted as either a variable definition or
-a function declaration. The compiler always chooses the function declaration interpretation [N4950
+A function declaration. The compiler always chooses the function declaration interpretation [N4950
 §9.4.1].
 
 ```cpp
@@ -100,18 +100,18 @@ std::lock_guard<std::mutex> lock3{m};    // variable (brace init avoids the pars
 ```
 
 Brace initialization eliminates the vexing parse entirely, which is its single greatest practical
-benefit.
+Benefit.
 
 ## `std::initializer_list` and Its Pitfalls
 
 `std::initializer_list<T>` is a lightweight proxy object that refers to a temporary array of
-`const T` objects [N4950 §16.10]. When a constructor or function takes an `std::initializer_list`,
-brace initialization has special overload resolution behavior.
+`const T` objects [N4950 §16.10]. When a constructor or function takes an `std::initializer_list`
+Brace initialization has special overload resolution behavior.
 
 ### Overload Resolution with `initializer_list`
 
-If a class has a constructor that takes `std::initializer_list`, it will be strongly preferred when
-braces are used:
+If a class has a constructor that takes `std::initializer_list`It will be strongly preferred when
+Braces are used:
 
 ```cpp
 struct Widget {
@@ -160,7 +160,7 @@ Use `{}` instead of `()` when default-constructing to avoid the vexing parse.
 ## Narrowing Conversion Errors in Brace Init
 
 Brace initialization prohibits implicit narrowing conversions [N4950 §9.4.5.3]. This is a major
-safety benefit over parentheses.
+Safety benefit over parentheses.
 
 ```cpp
 int a = 3.14;       // OK: double-to-int narrowing (warning at best)
@@ -179,11 +179,11 @@ int g{1.0};         // ERROR: narrowing (double to int), even though value fits
 A narrowing conversion is any implicit conversion where [N4950 §9.4.5.3]:
 
 - A floating-point type is converted to an integer type
-- A `long double` is converted to `double` or `float`, or `double` to `float`, unless the value is
-  constant and fits
+- A `long double` is converted to `double` or `float`Or `double` to `float`Unless the value is
+ constant and fits
 - An integer type is converted to a narrower integer type, unless the value is constant and fits
 - An integer type is converted to an unsigned type that cannot represent all values of the source
-  type
+ type
 
 ```cpp
 int a{100};             // OK: constant, fits
@@ -244,7 +244,7 @@ auto x3{1, 2};          // ERROR: can't deduce auto from multiple values in brac
 ```
 
 The C++17 change for `auto x2{1}` was a breaking change. C++17 made `auto{single-value}` deduce the
-value type directly, not `initializer_list`.
+Value type directly, not `initializer_list`.
 
 ## Interaction with `constexpr` Constructors
 
@@ -259,7 +259,7 @@ Point p{3, 4};                      // runtime initialization
 ```
 
 Brace initialization works identically with `constexpr` constructors and enables compile-time object
-construction.
+Construction.
 
 ## Initialization of Class Members
 
@@ -276,7 +276,7 @@ public:
 ```
 
 Braces in the member initializer list are equivalent to parentheses for most types. The distinction
-matters only when `initializer_list` constructors are involved.
+Matters only when `initializer_list` constructors are involved.
 
 ```cpp
 struct Inner {
@@ -307,7 +307,7 @@ std::pair<int, int> make_pair() {
 ```
 
 C++17 guaranteed copy elision (NRVO/prvalue semantics) means the return value is constructed
-directly in the caller's storage, making `{1, 2, 3}` efficient without moves.
+Directly in the caller's storage, making `{1, 2, 3}` efficient without moves.
 
 ### Returning Braces from Functions
 
@@ -329,11 +329,11 @@ Point make_origin() {
 
 When braces are used, the compiler follows this priority for overload resolution [N4950 §12.4.3]:
 
-1. If a constructor takes `std::initializer_list`, and the arguments can be converted to the list
-   element type, the `initializer_list` constructor is preferred.
+1. If a constructor takes `std::initializer_list`And the arguments can be converted to the list
+ element type, the `initializer_list` constructor is preferred.
 2. If no `initializer_list` constructor matches, normal overload resolution applies.
 3. If the arguments cannot be converted to the `initializer_list` type, the `initializer_list`
-   constructor is not considered.
+ constructor is not considered.
 
 ```cpp
 struct Widget {
@@ -350,7 +350,7 @@ Widget w3{10, 20.0};     // ERROR: narrowing in init_list (double -> long)
 ### Preventing `initializer_list` Hijacking
 
 If you want to prevent the `initializer_list` constructor from stealing overloads, you have several
-options:
+Options:
 
 **Option 1: Use parentheses for the desired overload**
 
@@ -435,7 +435,7 @@ std::unordered_map<std::string, int> um{
 ```
 
 All standard containers accept brace initialization, which internally uses `initializer_list`
-constructors.
+Constructors.
 
 ## Common Pitfalls
 
@@ -495,6 +495,14 @@ int a3[3](1, 2, 3);       // ERROR: arrays can't use parenthesized init
 - **Module 7 (Data Layout)**: Fundamental types, struct layout, and alignment
 - **Module 8 (Pointers, References, Views)**: Reference binding during initialization
 - **Module 9.3 (Aggregate Initialization)**: Detailed aggregate initialization rules and designated
-  initializers
+ initializers
 - **Module 9.4 (Constant Expressions)**: `constexpr` and `constinit` initialization
 - **Module 10 (Ownership and RAII)**: RAII and initialization of resource-holding objects
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

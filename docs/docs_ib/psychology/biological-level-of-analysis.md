@@ -83,7 +83,7 @@ These findings demonstrate that experience directly alters brain structure, supp
 
 ## Neurotransmitters and Behaviour
 
-Neurotransmitters are chemical messengers that transmit signals across the synaptic cleft from one neuron to another. They bind to specific receptor sites on the postsynaptic membrane, triggering either excitatory or inhibitory responses. The effect of a given neurotransmitter depends on the receptor type, not simply on the neurotransmitter itself.
+Neurotransmitters are chemical messengers that transmit signals across the synaptic cleft from one neuron to another. They bind to specific receptor sites on the postsynaptic membrane, triggering either excitatory or inhibitory responses. The effect of a given neurotransmitter depends on the receptor type, not on the neurotransmitter itself.
 
 ### Key Neurotransmitters
 
@@ -97,7 +97,7 @@ Neurotransmitters are chemical messengers that transmit signals across the synap
 
 ### Dopamine and Behaviour
 
-Dopamine plays a central role in the brain's reward system. It is released by the ventral tegmental area (VTA) and projects to the nucleus accumbens and prefrontal cortex via the mesolimbic and mesocortical pathways. Dopamine is not simply a "pleasure chemical"; it is more accurately described as mediating the **anticipation of reward** and the motivation to pursue goals.
+Dopamine plays a central role in the brain's reward system. It is released by the ventral tegmental area (VTA) and projects to the nucleus accumbens and prefrontal cortex via the mesolimbic and mesocortical pathways. Dopamine is not a "pleasure chemical"; it is more accurately described as mediating the **anticipation of reward** and the motivation to pursue goals.
 
 **Schizophrenia:** The dopamine hypothesis of schizophrenia proposes that overactivity of dopamine transmission in the mesolimbic pathway produces positive symptoms (hallucinations, delusions), while underactivity in the mesocortical pathway contributes to negative symptoms (flat affect, anhedonia). Antipsychotic medications such as chlorpromazine and haloperidol act as dopamine antagonists, blocking D2 receptors and reducing positive symptoms.
 
@@ -158,7 +158,7 @@ Cortisol increases blood glucose levels (providing energy for the fight-or-fligh
 
 Oxytocin has been widely studied for its role in social bonding and trust. Kosfeld et al. (2005) conducted a double-blind, placebo-controlled experiment in which participants played a trust game after receiving either an oxytocin nasal spray or a placebo. Participants in the oxytocin condition transferred significantly more money to their partners, suggesting that oxytocin increases trust.
 
-However, subsequent research has complicated this picture. De Dreu et al. (2010) found that oxytocin increased in-group favouritism but also increased defensive aggression toward out-group members. This suggests that oxytocin does not simply promote trust universally; it may amplify pre-existing social tendencies, including parochialism and ethnocentrism.
+However, subsequent research has complicated this picture. De Dreu et al. (2010) found that oxytocin increased in-group favouritism but also increased defensive aggression toward out-group members. This suggests that oxytocin does not promote trust universally; it may amplify pre-existing social tendencies, including parochialism and ethnocentrism.
 
 ## Genetics and Behaviour
 
@@ -213,11 +213,11 @@ A candidate gene is a gene that is hypothesised to contribute to a specific trai
 
 ### fMRI (Functional Magnetic Resonance Imaging)
 
-fMRI measures changes in blood oxygenation as a proxy for neural activity. When a brain region becomes active, it consumes more oxygen, and the local blood flow increases to meet this demand. This produces a blood-oxygen-level-dependent (BOLD) signal, which fMRI detects.
+FMRI measures changes in blood oxygenation as a proxy for neural activity. When a brain region becomes active, it consumes more oxygen, and the local blood flow increases to meet this demand. This produces a blood-oxygen-level-dependent (BOLD) signal, which fMRI detects.
 
 **Strengths:** fMRI is non-invasive and provides high spatial resolution, allowing researchers to identify which brain regions are active during specific tasks. It has been instrumental in mapping cognitive functions such as language, memory, and decision making onto specific brain areas.
 
-**Limitations:** The BOLD signal is an indirect measure of neural activity (it reflects blood flow changes, not electrical activity). fMRI has poor temporal resolution (changes in the BOLD signal lag behind neural activity by several seconds), making it unsuitable for studying rapid cognitive processes. fMRI scanners are expensive and require participants to remain still in a confined space, which may cause claustrophobia or limit the types of tasks that can be performed.
+**Limitations:** The BOLD signal is an indirect measure of neural activity (it reflects blood flow changes, not electrical activity). FMRI has poor temporal resolution (changes in the BOLD signal lag behind neural activity by several seconds), making it unsuitable for studying rapid cognitive processes. FMRI scanners are expensive and require participants to remain still in a confined space, which may cause claustrophobia or limit the types of tasks that can be performed.
 
 ### EEG (Electroencephalography)
 
@@ -301,3 +301,11 @@ Research at the biological level of analysis raises several specific ethical con
 - **Brain imaging and cognitive psychology:** fMRI and EEG are used to investigate cognitive processes such as memory, attention, and language, as discussed in the [Cognitive Level of Analysis](./cognitive-level-of-analysis).
 - **Evolutionary explanations and sociocultural psychology:** Evolutionary accounts of in-group favouritism and out-group hostility complement the sociocultural discussion of prejudice and social identity theory in the [Sociocultural Level of Analysis](./sociocultural-level-of-analysis).
 - **Research methods:** All of the research designs discussed here are covered in greater depth in [Research Methods](./research-methods).
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -9,8 +9,8 @@ slug: graph-algorithms
 ### Dijkstra's Algorithm
 
 Dijkstra's algorithm finds the shortest path from a single source to all other vertices in a graph
-with non-negative edge weights. It uses a greedy strategy: always process the unvisited vertex with
-the smallest known distance.
+With non-negative edge weights. It uses a greedy strategy: always process the unvisited vertex with
+The smallest known distance.
 
 ```python
 import heapq
@@ -57,20 +57,20 @@ def reconstruct_path(prev, target):
 ```
 
 **Why Dijkstra fails with negative edges:** Dijkstra's greedy choice assumes that once a vertex is
-processed, its distance is final. With negative edges, a shorter path may be discovered later
-through a vertex that has already been processed.
+Processed, its distance is final. With negative edges, a shorter path may be discovered later
+Through a vertex that has already been processed.
 
-| Graph Type                   | Dijkstra                         | Bellman-Ford              | Floyd-Warshall |
+| Graph Type | Dijkstra | Bellman-Ford | Floyd-Warshall |
 | ---------------------------- | -------------------------------- | ------------------------- | -------------- |
-| Non-negative, single source  | $O((V+E) \log V)$                | $O(VE)$                   | $O(V^3)$       |
-| Negative, no negative cycles | Fails                            | $O(VE)$                   | $O(V^3)$       |
-| Negative cycle detection     | Cannot                           | Yes                       | Yes            |
-| All-pairs                    | Run $V$ times: $O(V(V+E)\log V)$ | Run $V$ times: $O(V^2 E)$ | $O(V^3)$       |
+| Non-negative, single source | $O((V+E) \log V)$ | $O(VE)$ | $O(V^3)$ |
+| Negative, no negative cycles | Fails | $O(VE)$ | $O(V^3)$ |
+| Negative cycle detection | Cannot | Yes | Yes |
+| All-pairs | Run $V$ times: $O(V(V+E)\log V)$ | Run $V$ times: $O(V^2 E)$ | $O(V^3)$ |
 
 ### Bellman-Ford Algorithm
 
 Bellman-Ford handles negative edge weights and detects negative cycles. It relaxes all edges $V - 1$
-times; if a further relaxation is possible, a negative cycle exists.
+Times; if a further relaxation is possible, a negative cycle exists.
 
 ```python
 def bellman_ford(vertices, edges, source):
@@ -104,8 +104,8 @@ def bellman_ford(vertices, edges, source):
 ```
 
 **Negative cycle detection:** If after $V-1$ relaxations, any edge can still be relaxed, there
-exists a reachable negative cycle from the source. This is used in routing protocols (RIP) and
-arbitrage detection in currency exchange.
+Exists a reachable negative cycle from the source. This is used in routing protocols (RIP) and
+Arbitrage detection in currency exchange.
 
 ```python
 def detect_arbitrage(currencies, rates):
@@ -132,7 +132,7 @@ def detect_arbitrage(currencies, rates):
 ### Floyd-Warshall Algorithm
 
 Floyd-Warshall computes shortest paths between **all pairs** of vertices. It works with negative
-edges (but not negative cycles).
+Edges (but not negative cycles).
 
 $$dp[k][i][j] = \min(dp[k-1][i][j], dp[k-1][i][k] + dp[k-1][k][j])$$
 
@@ -173,7 +173,7 @@ Floyd-Warshall is the algorithm of choice when:
 - The graph is dense ($E \approx V^2$), where $O(V^3)$ is competitive with $V$ runs of Dijkstra
 - You need to handle negative edges
 
-For sparse graphs with large $V$, run Dijkstra from each vertex: $O(V(V+E)\log V)$ which is
+For sparse graphs with large $V$Run Dijkstra from each vertex: $O(V(V+E)\log V)$ which is
 $O(V^2 \log V)$ for sparse graphs, much better than $O(V^3)$.
 
 :::
@@ -181,7 +181,7 @@ $O(V^2 \log V)$ for sparse graphs, much better than $O(V^3)$.
 ### A\* Search
 
 A\* extends Dijkstra with a heuristic function $h(v)$ that estimates the cost from vertex $v$ to the
-target. It uses the priority $f(v) = g(v) + h(v)$ where $g(v)$ is the known distance from source to
+Target. It uses the priority $f(v) = g(v) + h(v)$ where $g(v)$ is the known distance from source to
 $v$.
 
 ```python
@@ -225,32 +225,32 @@ def a_star(graph, source, target, heuristic):
 $h(v) \le \mathrm{actual distance from {} v
 \mathrm{ to target{}$. Common heuristics:
 
-| Problem              | Heuristic                            | Admissible?    |
+| Problem | Heuristic | Admissible? |
 | -------------------- | ------------------------------------ | -------------- |
-| Grid (4-directional) | Manhattan distance                   | Yes            |
-| Grid (8-directional) | Chebyshev distance                   | Yes            |
-| Euclidean space      | Euclidean distance                   | Yes            |
-| Road networks        | Euclidean or precomputed lower bound | If well-chosen |
+| Grid (4-directional) | Manhattan distance | Yes |
+| Grid (8-directional) | Chebyshev distance | Yes |
+| Euclidean space | Euclidean distance | Yes |
+| Road networks | Euclidean or precomputed lower bound | If well-chosen |
 
 A* with an admissible heuristic is optimal. If the heuristic is not admissible, A* may find a
-suboptimal path but will typically be faster. If $h(v) = 0$ for all $v$, A\* degrades to Dijkstra.
+Suboptimal path but will be faster. If $h(v) = 0$ for all $v$A\* degrades to Dijkstra.
 
 ## Minimum Spanning Trees
 
 A minimum spanning tree (MST) of a weighted, connected, undirected graph is a spanning tree with
-minimum total edge weight. A spanning tree connects all vertices with exactly $V - 1$ edges and no
-cycles.
+Minimum total edge weight. A spanning tree connects all vertices with exactly $V - 1$ edges and no
+Cycles.
 
 ### Cut Property
 
 For any cut of the graph (a partition of vertices into two non-empty sets), the minimum-weight edge
-crossing the cut belongs to some MST. This is the theoretical basis for both Kruskal's and Prim's
-algorithms.
+Crossing the cut belongs to some MST. This is the theoretical basis for both Kruskal's and Prim's
+Algorithms.
 
 ### Kruskal's Algorithm
 
 Sort all edges by weight, then add them to the MST one at a time (skipping edges that would create a
-cycle). Cycle detection uses Union-Find.
+Cycle). Cycle detection uses Union-Find.
 
 ```python
 def kruskal(n, edges):
@@ -296,7 +296,7 @@ def kruskal(n, edges):
 ### Prim's Algorithm
 
 Start from any vertex, repeatedly add the minimum-weight edge connecting a vertex in the MST to a
-vertex outside the MST. Uses a priority queue.
+Vertex outside the MST. Uses a priority queue.
 
 ```python
 def prim(n, graph):
@@ -327,16 +327,16 @@ def prim(n, graph):
     return mst, total_weight
 ```
 
-| Algorithm             | Time              | Best When         | Data Structure |
+| Algorithm | Time | Best When | Data Structure |
 | --------------------- | ----------------- | ----------------- | -------------- |
-| Kruskal               | $O(E \log E)$     | Sparse graphs     | Union-Find     |
-| Prim                  | $O((V+E) \log V)$ | Dense graphs      | Priority queue |
+| Kruskal | $O(E \log E)$ | Sparse graphs | Union-Find |
+| Prim | $O((V+E) \log V)$ | Dense graphs | Priority queue |
 | Prim (Fibonacci heap) | $O(E + V \log V)$ | Very dense graphs | Fibonacci heap |
 
 :::info
 
 For dense graphs ($E \approx V^2$), Prim's algorithm with a Fibonacci heap is asymptotically optimal
-at $O(E + V \log V)$. For sparse graphs ($E \approx V$), Kruskal's is simpler and equally fast.
+At $O(E + V \log V)$. For sparse graphs ($E \approx V$), Kruskal's is simpler and equally fast.
 
 :::
 
@@ -450,7 +450,7 @@ def tarjan_scc(graph):
 ### Ford-Fulkerson Method
 
 The Ford-Fulkerson method finds the maximum flow in a flow network by repeatedly finding augmenting
-paths from source to sink and pushing flow along them.
+Paths from source to sink and pushing flow along them.
 
 ```python
 def ford_fulkerson(n, capacity, source, sink):
@@ -503,14 +503,14 @@ def ford_fulkerson(n, capacity, source, sink):
 ### Edmonds-Karp Algorithm
 
 Edmonds-Karp is Ford-Fulkerson where the augmenting path is found using BFS (shortest path in terms
-of number of edges). This guarantees $O(VE^2)$ time complexity and always terminates (even with
-non-integer capacities).
+Of number of edges). This guarantees $O(VE^2)$ time complexity and always terminates (even with
+Non-integer capacities).
 
 ### Max-Flow Min-Cut Theorem
 
 The maximum flow from source to sink equals the minimum capacity of any cut separating source from
-sink. A cut is a partition of vertices into two sets $S$ (containing source) and $T$ (containing
-sink), and the cut capacity is the sum of capacities of edges from $S$ to $T$.
+Sink. A cut is a partition of vertices into two sets $S$ (containing source) and $T$ (containing
+Sink), and the cut capacity is the sum of capacities of edges from $S$ to $T$.
 
 ```python
 def min_cut(n, capacity, source, sink):
@@ -539,27 +539,27 @@ def min_cut(n, capacity, source, sink):
 
 ### Applications of Max-Flow
 
-| Application          | How to Model                                                |
+| Application | How to Model |
 | -------------------- | ----------------------------------------------------------- |
-| Bipartite matching   | Source to left set, right set to sink, all edges capacity 1 |
-| Image segmentation   | Pixels as vertices, source=foreground, sink=background      |
-| Project selection    | Source=projects, sink=resources, capacities=profits/costs   |
-| Baseball elimination | Teams as vertices, remaining games as edges                 |
-| Network reliability  | Edge connectivity via min-cut                               |
+| Bipartite matching | Source to left set, right set to sink, all edges capacity 1 |
+| Image segmentation | Pixels as vertices, source=foreground, sink=background |
+| Project selection | Source=projects, sink=resources, capacities=profits/costs |
+| Baseball elimination | Teams as vertices, remaining games as edges |
+| Network reliability | Edge connectivity via min-cut |
 
 ## Eulerian Paths and Circuits
 
 An **Eulerian circuit** visits every edge exactly once and returns to the start. An **Eulerian
-path** visits every edge exactly once (may start and end at different vertices).
+Path** visits every edge exactly once (may start and end at different vertices).
 
 ### Existence Conditions
 
-| Property                      | Eulerian Circuit | Eulerian Path                   |
+| Property | Eulerian Circuit | Eulerian Path |
 | ----------------------------- | ---------------- | ------------------------------- |
-| Connected                     | Yes              | Yes                             |
-| All vertices even degree      | Yes              | No                              |
-| Exactly 2 vertices odd degree | No               | Yes (start/end at odd vertices) |
-| Other                         | No               | No                              |
+| Connected | Yes | Yes |
+| All vertices even degree | Yes | No |
+| Exactly 2 vertices odd degree | No | Yes (start/end at odd vertices) |
+| Other | No | No |
 
 ```python
 def hierholzer(n, graph):
@@ -592,7 +592,7 @@ A graph is bipartite if and only if it is 2-colorable. Use BFS to assign colors.
 ### General Graph Coloring
 
 The chromatic number $\chi(G)$ is the minimum number of colors needed. Finding it is NP-hard for
-general graphs, but greedy coloring gives an approximation.
+General graphs, but greedy coloring gives an approximation.
 
 ```python
 def greedy_coloring(n, graph):
@@ -621,24 +621,24 @@ def greedy_coloring(n, graph):
 
 **Brook's Theorem:** For a connected graph that is neither a complete graph nor an odd cycle,
 $\chi(G) \le \Delta(G)$ where $\Delta(G)$ is the maximum degree. This means the greedy algorithm
-uses at most $\Delta + 1$ colors, and for most graphs, $\Delta$ colors.
+Uses at most $\Delta + 1$ colors, and for most graphs, $\Delta$ colors.
 
 ## Travelling Salesman Problem (TSP)
 
 Given a complete graph with weighted edges, find the Hamiltonian cycle of minimum total weight. TSP
-is NP-hard; exact solutions use bitmask DP ($O(2^n \cdot n^2)$, feasible for $n \le 20$).
+Is NP-hard; exact solutions use bitmask DP ($O(2^n \cdot n^2)$Feasible for $n \le 20$).
 
 ### Approximation Algorithms
 
-| Algorithm         | Approximation Ratio | Time                   | Notes                     |
+| Algorithm | Approximation Ratio | Time | Notes |
 | ----------------- | ------------------- | ---------------------- | ------------------------- |
-| Nearest neighbour | $O(\log n)$         | $O(n^2)$               | Simple, no guarantee      |
-| Christofides      | 1.5                 | $O(n^3)$               | Best known for metric TSP |
-| 2-opt improvement | Empirical           | $O(n^2)$ per iteration | Local search              |
-| Held-Karp (DP)    | Exact               | $O(2^n \cdot n^2)$     | Exact, $n \le 20$         |
+| Nearest neighbour | $O(\log n)$ | $O(n^2)$ | Simple, no guarantee |
+| Christofides | 1.5 | $O(n^3)$ | Best known for metric TSP |
+| 2-opt improvement | Empirical | $O(n^2)$ per iteration | Local search |
+| Held-Karp (DP) | Exact | $O(2^n \cdot n^2)$ | Exact, $n \le 20$ |
 
 **Metric TSP:** When the triangle inequality holds ($d(u, w) \le d(u, v) + d(v, w)$), Christofides'
-algorithm guarantees a solution within 1.5 times optimal.
+Algorithm guarantees a solution within 1.5 times optimal.
 
 ```python
 def tsp_nearest_neighbour(dist):
@@ -710,58 +710,58 @@ def tsp_nearest_neighbour(dist):
 ### 1. Dijkstra on Graphs with Negative Weights
 
 Dijkstra does not work with negative edge weights. The algorithm assumes that processing a vertex
-means its shortest distance is final, but a negative edge can provide a shorter path to an already-
-processed vertex. Use Bellman-Ford for graphs with negative weights.
+Means its shortest distance is final, but a negative edge can provide a shorter path to an already-
+Processed vertex. Use Bellman-Ford for graphs with negative weights.
 
 ### 2. Floyd-Warshall Infinity Overflow
 
 In Floyd-Warshall, the relaxation step is `dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])`.
-If `dist[i][k]` or `dist[k][j]` is `inf`, the sum becomes `inf`, which is correct. But if your `inf`
-is not large enough (e.g., `float('inf') / 2 + float('inf') / 2`), you may get incorrect results.
+If `dist[i][k]` or `dist[k][j]` is `inf`The sum becomes `inf`Which is correct. But if your `inf`
+Is not large enough (e.g., `float('inf') / 2 + float('inf') / 2`), you may get incorrect results.
 Use a sufficiently large sentinel value or handle infinity explicitly.
 
 ### 3. Union-Find in Kruskal's Without Path Compression
 
 Without path compression, Kruskal's Union-Find operations degrade to $O(\log n)$ each, giving
 $O(E \log V + E \log V) = O(E \log V)$ total. With path compression and union by rank, it drops to
-$O(E \cdot \alpha(V))$, which is effectively $O(E)$. Always use both optimisations.
+$O(E \cdot \alpha(V))$Which is effectively $O(E)$. Always use both optimisations.
 
 ### 4. A\* with Inadmissible Heuristic
 
 If the heuristic overestimates the true distance, A\* is not guaranteed to find the shortest path.
 It may still find a path quickly, but it will be suboptimal. For pathfinding in games, this is often
-acceptable (speed over optimality). For navigation systems, it is not.
+Acceptable (speed over optimality). For navigation systems, it is not.
 
 ### 5. Not Handling Disconnected Graphs in MST
 
 Kruskal's and Prim's algorithms assume a connected graph. If the graph is disconnected, they will
-produce a minimum spanning **forest** (one tree per connected component). If you need to detect
-disconnection, check that the MST has $V - 1$ edges.
+Produce a minimum spanning **forest** (one tree per connected component). If you need to detect
+Disconnection, check that the MST has $V - 1$ edges.
 
 ### 6. BFS Queue Performance
 
 Using `list.pop(0)` for BFS is $O(n)$ per operation, giving $O(n^2)$ total. Use `collections.deque`
-with `popleft()` for $O(1)$ operations. This is one of the most common performance bugs in Python
-graph code.
+With `popleft()` for $O(1)$ operations. This is one of the most common performance bugs in Python
+Graph code.
 
 ### 7. Modifying Graph During Traversal
 
 Modifying the graph structure (adding/removing vertices or edges) during BFS/DFS traversal leads to
-undefined behaviour — vertices may be skipped or processed multiple times. If you need to modify the
-graph, collect the modifications and apply them after the traversal completes.
+Undefined behaviour — vertices may be skipped or processed multiple times. If you need to modify the
+Graph, collect the modifications and apply them after the traversal completes.
 
 ### 8. Ignoring Edge Cases in Flow Networks
 
 Ford-Fulkerson may not terminate with irrational capacities (the flow can converge without reaching
-the maximum). Edmonds-Karp (BFS-based) always terminates with $O(VE^2)$ complexity. For integer
-capacities, Ford-Fulkerson terminates in $O(E \cdot f^*)$ where $f^*$ is the max flow value — this
-can be exponential. Always use Edmonds-Karp or Dinic's algorithm unless you have a specific reason
-not to.
+The maximum). Edmonds-Karp (BFS-based) always terminates with $O(VE^2)$ complexity. For integer
+Capacities, Ford-Fulkerson terminates in $O(E \cdot f^*)$ where $f^*$ is the max flow value — this
+Can be exponential. Always use Edmonds-Karp or Dinic's algorithm unless you have a specific reason
+Not to.
 
 ## Dinic's Algorithm
 
 Dinic's algorithm improves on Edmonds-Karp by finding multiple augmenting paths per BFS phase using
-a level graph and DFS with blocking flows.
+A level graph and DFS with blocking flows.
 
 ```python
 def dinic(n, capacity, source, sink):
@@ -821,13 +821,13 @@ def dinic(n, capacity, source, sink):
     return max_flow
 ```
 
-| Algorithm                    | Time Complexity   | Best For                               |
+| Algorithm | Time Complexity | Best For |
 | ---------------------------- | ----------------- | -------------------------------------- |
-| Edmonds-Karp                 | $O(VE^2)$         | Simple implementation, small graphs    |
-| Dinic's                      | $O(V^2 E)$        | General purpose, good constant factors |
-| Dinic's (bipartite)          | $O(E \sqrt{V})$   | Bipartite matching                     |
-| Push-relabel                 | $O(V^3)$          | Dense graphs                           |
-| Push-relabel (highest label) | $O(V^2 \sqrt{E})$ | General purpose                        |
+| Edmonds-Karp | $O(VE^2)$ | Simple implementation, small graphs |
+| Dinic's | $O(V^2 E)$ | General purpose, good constant factors |
+| Dinic's (bipartite) | $O(E \sqrt{V})$ | Bipartite matching |
+| Push-relabel | $O(V^3)$ | Dense graphs |
+| Push-relabel (highest label) | $O(V^2 \sqrt{E})$ | General purpose |
 
 ## Bipartite Matching
 
@@ -899,13 +899,13 @@ def hopcroft_karp(n_left, n_right, edges):
 
 **Applications of bipartite matching:**
 
-| Application                  | Left Set  | Right Set   | Edge Meaning              |
+| Application | Left Set | Right Set | Edge Meaning |
 | ---------------------------- | --------- | ----------- | ------------------------- |
-| Job assignment               | Workers   | Jobs        | Worker can do job         |
-| Course scheduling            | Students  | Time slots  | Student available at slot |
-| Hall's marriage              | People    | Preferences | Acceptable pairing        |
-| Image segmentation           | Pixels    | Labels      | Pixel can have label      |
-| Compiler register allocation | Variables | Registers   | Variable can use register |
+| Job assignment | Workers | Jobs | Worker can do job |
+| Course scheduling | Students | Time slots | Student available at slot |
+| Hall's marriage | People | Preferences | Acceptable pairing |
+| Image segmentation | Pixels | Labels | Pixel can have label |
+| Compiler register allocation | Variables | Registers | Variable can use register |
 
 ## Minimum Vertex Cover (Konig's Theorem)
 
@@ -961,7 +961,7 @@ def minimum_vertex_cover(n_left, n_right, edges):
 ### 2-SAT Problem
 
 A 2-SAT formula is a conjunction of clauses, each with exactly two literals. Determining
-satisfiability reduces to finding SCCs in the implication graph.
+Satisfiability reduces to finding SCCs in the implication graph.
 
 ```python
 def two_sat(n_vars, clauses):
@@ -992,5 +992,13 @@ def two_sat(n_vars, clauses):
 ```
 
 The key theorem: a 2-SAT formula is satisfiable if and only if no variable and its negation are in
-the same strongly connected component. This gives a linear-time algorithm for a problem that is
+The same strongly connected component. This gives a linear-time algorithm for a problem that is
 NP-hard for 3-SAT.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

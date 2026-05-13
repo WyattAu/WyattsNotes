@@ -9,7 +9,7 @@ slug: forensics
 ### Chain of Custody
 
 The chain of custody is a documented record of every person who handled evidence, when, where, and
-why. A broken chain of custody renders evidence inadmissible in court.
+Why. A broken chain of custody renders evidence inadmissible in court.
 
 ```text
 Chain of custody documentation:
@@ -61,16 +61,16 @@ dmesg | grep -i "read-only"
 
 The order of evidence collection matters because volatile evidence is lost first:
 
-| Priority | Evidence Type        | Volatility | Collection Method                  |
+| Priority | Evidence Type | Volatility | Collection Method |
 | -------- | -------------------- | ---------- | ---------------------------------- |
-| 1        | CPU registers, cache | Seconds    | Live response, hardware debugger   |
-| 2        | RAM                  | Seconds    | Live acquisition (LiME, WinPmem)   |
-| 3        | Network connections  | Minutes    | `netstat`, `ss`, `tcpdump`         |
-| 4        | Running processes    | Minutes    | `ps`, process dumps                |
-| 5        | Swap / pagefile      | Minutes    | Disk imaging                       |
-| 6        | Disk / filesystem    | Persistent | Write-blocked imaging              |
-| 7        | Remote logs          | Hours/Days | Secure copy from log servers       |
-| 8        | Physical media       | Persistent | Forensic imaging, chain of custody |
+| 1 | CPU registers, cache | Seconds | Live response, hardware debugger |
+| 2 | RAM | Seconds | Live acquisition (LiME, WinPmem) |
+| 3 | Network connections | Minutes | `netstat``ss``tcpdump` |
+| 4 | Running processes | Minutes | `ps`Process dumps |
+| 5 | Swap / pagefile | Minutes | Disk imaging |
+| 6 | Disk / filesystem | Persistent | Write-blocked imaging |
+| 7 | Remote logs | Hours/Days | Secure copy from log servers |
+| 8 | Physical media | Persistent | Forensic imaging, chain of custody |
 
 ## Disk Forensics
 
@@ -149,7 +149,7 @@ psort.py -o timeline_timeline.timeline timeline.plaso
 ### Slack Space
 
 Slack space is the unused space between the end of a file's content and the end of the file system
-block. Data may be recoverable from slack space:
+Block. Data may be recoverable from slack space:
 
 ```bash
 # Extract slack space using TSK
@@ -207,16 +207,16 @@ vol.py -f memory.raw --profile=Win10x64_19041 printkey -K "Software\Microsoft\Wi
 
 ### Key Memory Analysis Targets
 
-| Target                  | What It Reveals                                              |
+| Target | What It Reveals |
 | ----------------------- | ------------------------------------------------------------ |
-| `pslist` / `psscan`     | Running processes (including hidden/rootkits)                |
-| `netscan`               | Active and closed network connections                        |
-| `cmdscan` / `consoles`  | Command-line history                                         |
-| `malfind`               | Code injection, suspicious memory regions                    |
+| `pslist` / `psscan` | Running processes (including hidden/rootkits) |
+| `netscan` | Active and closed network connections |
+| `cmdscan` / `consoles` | Command-line history |
+| `malfind` | Code injection, suspicious memory regions |
 | `hivelist` / `printkey` | Windows registry (startup programs, recently accessed files) |
-| `envars`                | Environment variables (PATH, USER, etc.)                     |
-| `filescan`              | Open file handles                                            |
-| `dumpfiles`             | Extract files from memory                                    |
+| `envars` | Environment variables (PATH, USER, etc.) |
+| `filescan` | Open file handles |
+| `dumpfiles` | Extract files from memory |
 
 ## Log Forensics
 
@@ -387,15 +387,15 @@ tshark -r evidence.pcap -q -z conv,tcp | sort -k2 -rn | head -20
 
 ### Key Network Forensic Artifacts
 
-| Artifact           | What It Reveals                            |
+| Artifact | What It Reveals |
 | ------------------ | ------------------------------------------ |
-| DNS queries        | Domains contacted, C2 communication        |
-| HTTP requests      | URLs visited, parameters, file downloads   |
-| TLS SNI            | Domain names even with encrypted traffic   |
-| TCP connections    | Communication partners, data volume        |
-| Certificate chains | MITM detection, rogue CAs                  |
-| ARP tables         | Local network devices, ARP spoofing        |
-| DHCP requests      | Network configuration, host identification |
+| DNS queries | Domains contacted, C2 communication |
+| HTTP requests | URLs visited, parameters, file downloads |
+| TLS SNI | Domain names even with encrypted traffic |
+| TCP connections | Communication partners, data volume |
+| Certificate chains | MITM detection, rogue CAs |
+| ARP tables | Local network devices, ARP spoofing |
+| DHCP requests | Network configuration, host identification |
 
 ## Investigation Methodology
 
@@ -534,20 +534,20 @@ cat /proc/modules
 
 ### Comprehensive Tool Table
 
-| Tool           | Purpose                          | Platform              | Type        |
+| Tool | Purpose | Platform | Type |
 | -------------- | -------------------------------- | --------------------- | ----------- |
-| Autopsy        | Disk forensics GUI               | Linux, Windows        | Open source |
-| Sleuth Kit     | Disk forensics CLI               | Linux, macOS, Windows | Open source |
-| Wireshark      | Network packet analysis          | Cross-platform        | Open source |
-| Volatility     | Memory forensics                 | Cross-platform        | Open source |
-| Plaso          | Timeline creation                | Cross-platform        | Open source |
-| Timesketch     | Collaborative timeline analysis  | Web-based             | Open source |
-| FTK Imager     | Disk imaging                     | Windows               | Free        |
-| bulk_extractor | Data extraction from disk images | Cross-platform        | Open source |
-| binwalk        | Firmware analysis                | Cross-platform        | Open source |
-| exiftool       | Metadata extraction              | Cross-platform        | Open source |
-| RegRipper      | Windows registry analysis        | Cross-platform        | Open source |
-| Log2Timeline   | Log parsing and timeline         | Cross-platform        | Open source |
+| Autopsy | Disk forensics GUI | Linux, Windows | Open source |
+| Sleuth Kit | Disk forensics CLI | Linux, macOS, Windows | Open source |
+| Wireshark | Network packet analysis | Cross-platform | Open source |
+| Volatility | Memory forensics | Cross-platform | Open source |
+| Plaso | Timeline creation | Cross-platform | Open source |
+| Timesketch | Collaborative timeline analysis | Web-based | Open source |
+| FTK Imager | Disk imaging | Windows | Free |
+| bulk_extractor | Data extraction from disk images | Cross-platform | Open source |
+| binwalk | Firmware analysis | Cross-platform | Open source |
+| exiftool | Metadata extraction | Cross-platform | Open source |
+| RegRipper | Windows registry analysis | Cross-platform | Open source |
+| Log2Timeline | Log parsing and timeline | Cross-platform | Open source |
 
 ## Legal Considerations
 
@@ -593,27 +593,35 @@ Every transfer of evidence must be documented:
 ### Booting the Suspect System
 
 Never boot the suspect system into its normal operating system. Booting modifies timestamps, creates
-new files, and may trigger anti-forensics mechanisms. Instead, image the disk first, then boot the
-image in a sandboxed environment.
+New files, and may trigger anti-forensics mechanisms. Instead, image the disk first, then boot the
+Image in a sandboxed environment.
 
 ### Working on Original Evidence
 
 Always work on forensic copies, never on the original evidence. Every modification to the original
-destroys its forensic value and breaks the chain of custody.
+Destroys its forensic value and breaks the chain of custody.
 
 ### Not Documenting Every Step
 
 Every command run, every tool used, and every observation must be documented in the investigation
-report. Undocumented analysis steps are not defensible in court.
+Report. Undocumented analysis steps are not defensible in court.
 
 ### Ignoring Volatile Evidence
 
 Volatile evidence (RAM, network state, running processes) is lost when the system is powered off. If
-you pull the plug before acquiring RAM, you lose one of the most valuable evidence sources
+You pull the plug before acquiring RAM, you lose one of the most valuable evidence sources
 (encryption keys, running malware, network connections).
 
 ### Trusting System Clocks
 
 System clocks may be inaccurate or deliberately tampered with. Cross-reference timestamps across
-multiple evidence sources (logs from different systems, network captures with NTP-synchronized
-timestamps) to validate the timeline.
+Multiple evidence sources (logs from different systems, network captures with NTP-synchronized
+Timestamps) to validate the timeline.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -11,22 +11,22 @@ slug: dart-ffi-and-advanced
 ## Null Safety Deep Dive
 
 Dart 2.12 introduced sound null safety. This is not a nullable annotation system bolted onto an
-existing type system. It is a fundamental rewrite of the type hierarchy: `Null` is a subtype of
-every type, but only of nullable types. The compiler and runtime together guarantee that a
-non-nullable variable never holds `null` at runtime. This guarantee is **sound** — it holds across
-function boundaries, class hierarchies, generic instantiations, and asynchronous code paths.
+Existing type system. It is a fundamental rewrite of the type hierarchy: `Null` is a subtype of
+Every type, but only of nullable types. The compiler and runtime together guarantee that a
+Non-nullable variable never holds `null` at runtime. This guarantee is **sound** — it holds across
+Function boundaries, class hierarchies, generic instantiations, and asynchronous code paths.
 
 ### Sound vs Unsounded Null Safety
 
 **Definition.** Soundness (in the type-theoretic sense) means: if the type checker accepts a
-program, no runtime type error related to null dereference can occur. The guarantee is global — it
-does not depend on the programmer annotating every variable correctly, because the type checker
-enforces consistency at all boundaries.
+Program, no runtime type error related to null dereference can occur. The guarantee is global — it
+Does not depend on the programmer annotating every variable correctly, because the type checker
+Enforces consistency at all boundaries.
 
-Unsound null safety (e.g., TypeScript's `strictNullChecks`, Kotlin's platform types at interop
-boundaries) means the compiler can miss cases. A variable declared non-nullable might still be
+Unsound null safety (e.g., TypeScript's `strictNullChecks`Kotlin's platform types at interop
+Boundaries) means the compiler can miss cases. A variable declared non-nullable might still be
 `null` at runtime due to unchecked casts, interop boundaries, or generics erasure. Dart's null
-safety is sound because:
+Safety is sound because:
 
 1. `Null` is a proper subtype, not a special sentinel value.
 2. Generic types are reified — `List<int>` and `List<int?>` are distinct at runtime.
@@ -36,7 +36,7 @@ safety is sound because:
 ### Nullable and Non-Nullable Types
 
 Every type `T` in Dart 2.12+ exists in two forms: `T` (non-nullable) and `T?` (nullable). The
-nullable form is a union type: `T?` is equivalent to `T | Null`.
+Nullable form is a union type: `T?` is equivalent to `T | Null`.
 
 ```dart
 String name = 'Dart';           // non-nullable, must be initialized to non-null
@@ -51,9 +51,9 @@ List<String?> mixed = ['a', null]; // non-nullable list, elements can be null
 List<String>? maybeNames = null;   // nullable list reference
 ```
 
-**Definition.** The nullability hierarchy: `Never` is a subtype of `Null`, which is a subtype of
-every `T`, which is a subtype of `T?`, which is a subtype of `Object?`. `Object` is the supertype of
-all non-nullable types. `Object?` is the top type.
+**Definition.** The nullability hierarchy: `Never` is a subtype of `Null`Which is a subtype of
+Every `T`Which is a subtype of `T?`Which is a subtype of `Object?`. `Object` is the supertype of
+All non-nullable types. `Object?` is the top type.
 
 ```
 Never        (bottom — no values inhabit this type)
@@ -70,7 +70,7 @@ Never        (bottom — no values inhabit this type)
 ### Null Assertion Operator (`!`)
 
 The `!` operator asserts to the type checker that an expression of type `T?` is non-null at this
-point. It has no runtime effect other than throwing an `AssertionError` if the value is actually
+Point. It has no runtime effect other than throwing an `AssertionError` if the value is actually
 `null`.
 
 ```dart
@@ -117,7 +117,7 @@ String first = external.first!;  // Crashes if first element is null
 :::warning
 
 Every use of `!` is a claim that you know more than the type checker. If the type checker can
-promote the type via flow analysis, remove the `!`. If it cannot, prefer a guard or default value.
+Promote the type via flow analysis, remove the `!`. If it cannot, prefer a guard or default value.
 The `!` operator is a code smell in production code — it means you are bypassing the safety system.
 
 :::
@@ -125,8 +125,8 @@ The `!` operator is a code smell in production code — it means you are bypassi
 ### Late Initialization
 
 The `late` keyword tells the compiler: "this variable will be initialized before it is used, but not
-at the point of declaration." The compiler trusts this assertion and does not require an
-initializer. At runtime, accessing an uninitialized `late` variable throws a
+At the point of declaration." The compiler trusts this assertion and does not require an
+Initializer. At runtime, accessing an uninitialized `late` variable throws a
 `LateInitializationError`.
 
 #### `late` for Deferred Initialization
@@ -147,8 +147,8 @@ class Database {
 ```
 
 This pattern is common in classes where initialization depends on constructor arguments or
-configuration that is not available at field declaration time. The `late` keyword avoids making the
-field nullable, which would require null checks everywhere it is used.
+Configuration that is not available at field declaration time. The `late` keyword avoids making the
+Field nullable, which would require null checks everywhere it is used.
 
 #### `late final` for Immutable Deferred Initialization
 
@@ -166,12 +166,12 @@ class Config {
 
 `late final` allows exactly one assignment. After assignment, the field behaves like a `final` field
 — any subsequent assignment throws at runtime. This is the correct pattern for computed properties
-that are expensive and should be cached.
+That are expensive and should be cached.
 
 #### `late` for Lazy Initialization
 
 When `late` is applied to a top-level or instance variable with an initializer, the initializer runs
-lazily — on first access, not at declaration time.
+Lazily — on first access, not at declaration time.
 
 ```dart
 // The expensive computation runs only when heavyResource is first accessed
@@ -191,15 +191,15 @@ class Service {
 :::warning
 
 Common pitfall: `late` without `final` allows reassignment. If you intend immutable deferred
-initialization, always use `late final`. A bare `late` field is mutable and can be reassigned
-arbitrarily after its first initialization.
+Initialization, always use `late final`. A bare `late` field is mutable and can be reassigned
+Arbitrarily after its first initialization.
 
 :::
 
 :::warning
 
 Common pitfall: `late` fields are not initialized in the constructor. If your class has multiple
-initialization paths and one path forgets to initialize the `late` field, you get a
+Initialization paths and one path forgets to initialize the `late` field, you get a
 `LateInitializationError` at runtime with no compile-time warning.
 
 :::
@@ -228,7 +228,7 @@ int result = count ?? computeDefault();  // prints nothing if count is non-null
 #### Null-Aware Assignment (`??=`)
 
 Assigns the right-hand side to the left-hand side only if the left-hand side is null. Returns the
-final value of the left-hand side.
+Final value of the left-hand side.
 
 ```dart
 String? name;
@@ -244,7 +244,7 @@ class Lazy {
 
 #### Null-Aware Access (`?.`)
 
-Returns `null` if the receiver is `null`, otherwise accesses the member.
+Returns `null` if the receiver is `null`Otherwise accesses the member.
 
 ```dart
 String? name;
@@ -280,7 +280,7 @@ String? result = name
 ### Required Named Parameters
 
 Dart distinguishes between optional named parameters (which may be omitted and may be nullable) and
-required named parameters (which must be provided by the caller).
+Required named parameters (which must be provided by the caller).
 
 ```dart
 // Before null safety: optional named parameters could be null
@@ -306,7 +306,7 @@ void optionalNullable({String? name}) {
 
 The `required` keyword is orthogonal to nullability. A required parameter can have a nullable type
 (if the caller must explicitly pass `null`), but in practice `required` is used with non-nullable
-types to enforce that the caller provides a value.
+Types to enforce that the caller provides a value.
 
 ```dart
 // required with nullable type — caller must pass something (including null)
@@ -320,10 +320,10 @@ example();            // compile error: missing required parameter
 ### The `Never` Type
 
 **Definition.** `Never` is the bottom type of the Dart type system. No value has type `Never`. It is
-the return type of functions that never return normally (they always throw or loop forever).
+The return type of functions that never return normally (they always throw or loop forever).
 
 `Never` is a subtype of every type. This makes it useful for exhaustive analysis in pattern matching
-and control flow.
+And control flow.
 
 ```dart
 // A function that never returns
@@ -358,7 +358,7 @@ int eval(Expr expr) => switch (expr) {
 ### Flow Analysis and Its Limitations
 
 Dart's flow analysis tracks nullability through local variables. If you check a nullable variable
-for non-null, the type is promoted within the scope where the check holds.
+For non-null, the type is promoted within the scope where the check holds.
 
 ```dart
 String? name = getName();
@@ -403,8 +403,8 @@ String? getName() => 'Dart';
 :::warning
 
 Flow analysis does not track mutations through closures or across async boundaries. If a nullable
-local is captured by a closure that could be invoked after the variable is nulled, the type checker
-will not promote it inside the closure.
+Local is captured by a closure that could be invoked after the variable is nulled, the type checker
+Will not promote it inside the closure.
 
 :::
 
@@ -413,11 +413,11 @@ will not promote it inside the closure.
 When migrating legacy Dart code to null safety:
 
 1. **Add `?` to types that can be null.** This is the safest first step — it makes the type system
-   honest about what the code actually does.
+ honest about what the code actually does.
 2. **Replace `!` assertions with guard clauses.** Every `!` is a potential crash site. Guard clauses
-   make the handling explicit.
+ make the handling explicit.
 3. **Use `late` for fields initialized outside the constructor.** This avoids making fields nullable
-   when they are logically non-nullable.
+ when they are logically non-nullable.
 4. **Add `required` to named parameters that callers must provide.**
 5. **Use default values for optional parameters that should not be nullable.**
 
@@ -451,17 +451,17 @@ class User {
 ## Foreign Function Interface (dart:ffi)
 
 **Definition.** `dart:ffi` (Foreign Function Interface) is a Dart library that allows Dart code to
-call C functions directly, without writing glue code in an intermediate language. It provides
-bindings for C types, pointers, structs, callbacks, and dynamic library loading. It is the mechanism
-by which Dart interacts with native system libraries, operating system APIs, and
-performance-critical C/C++ code.
+Call C functions directly, without writing glue code in an intermediate language. It provides
+Bindings for C types, pointers, structs, callbacks, and dynamic library loading. It is the mechanism
+By which Dart interacts with native system libraries, operating system APIs, and
+Performance-critical C/C++ code.
 
 `dart:ffi` is available on native platforms (iOS, Android, macOS, Windows, Linux). It is not
-available on the web (use WASM interop instead).
+Available on the web (use WASM interop instead).
 
 ### Dynamic Library Loading
 
-The entry point for FFI is `DynamicLibrary`, which represents a loaded shared library.
+The entry point for FFI is `DynamicLibrary`Which represents a loaded shared library.
 
 ```dart
 import 'dart:ffi';
@@ -477,15 +477,15 @@ final dylib = DynamicLibrary.process();  // symbols from the current process
 ```
 
 **Definition.** `DynamicLibrary.open` loads a shared library by path. The path resolution follows
-platform conventions: on Linux, `LD_LIBRARY_PATH` is searched; on macOS, `DYLD_LIBRARY_PATH`; on
+Platform conventions: on Linux, `LD_LIBRARY_PATH` is searched; on macOS, `DYLD_LIBRARY_PATH`; on
 Windows, the system search path. `DynamicLibrary.process()` gives access to symbols exported by the
-running process itself.
+Running process itself.
 
 ### Binding C Functions: Typedefs and Lookups
 
 To call a C function from Dart, you define two typedefs: one for the C signature using FFI types,
-and one for the Dart-side function type. Then you look up the function pointer in the dynamic
-library and cast it.
+And one for the Dart-side function type. Then you look up the function pointer in the dynamic
+Library and cast it.
 
 ```dart
 import 'dart:ffi';
@@ -509,37 +509,37 @@ void main() {
 ```
 
 The two typedefs must agree on parameter and return types. The C typedef uses FFI native types
-(`Int32`, `Double`, `Pointer`, etc.). The Dart typedef uses Dart types (`int`, `double`, etc.). The
+(`Int32``Double``Pointer`Etc.). The Dart typedef uses Dart types (`int``double`Etc.). The
 `lookupFunction` call bridges the two.
 
 ### Primitive Types Mapping
 
 Dart and C have different primitive type systems. `dart:ffi` provides native types that map to C
-types:
+Types:
 
-| FFI Type            | C Type                            | Dart Type    | Size (bytes) |
+| FFI Type | C Type | Dart Type | Size (bytes) |
 | ------------------- | --------------------------------- | ------------ | ------------ |
-| `Int8`              | `int8_t` / `char`                 | `int`        | 1            |
-| `Int16`             | `int16_t` / `short`               | `int`        | 2            |
-| `Int32`             | `int32_t` / `int`                 | `int`        | 4            |
-| `Int64`             | `int64_t` / `long long`           | `int`        | 8            |
-| `Uint8`             | `uint8_t` / `unsigned char`       | `int`        | 1            |
-| `Uint16`            | `uint16_t` / `unsigned short`     | `int`        | 2            |
-| `Uint32`            | `uint32_t` / `unsigned int`       | `int`        | 4            |
-| `Uint64`            | `uint64_t` / `unsigned long long` | `int`        | 8            |
-| `Float`             | `float`                           | `double`     | 4            |
-| `Double`            | `double`                          | `double`     | 8            |
-| `Bool`              | `bool` (C99 `_Bool`)              | `bool`       | 1            |
-| `Void`              | `void`                            | N/A          | 0            |
-| `Handle`            | Dart object handle                | `Object`     | platform     |
-| `NativeFunction<T>` | function pointer                  | N/A          | platform     |
-| `Pointer<T>`        | `T*`                              | `Pointer<T>` | platform     |
+| `Int8` | `int8_t` / `char` | `int` | 1 |
+| `Int16` | `int16_t` / `short` | `int` | 2 |
+| `Int32` | `int32_t` / `int` | `int` | 4 |
+| `Int64` | `int64_t` / `long long` | `int` | 8 |
+| `Uint8` | `uint8_t` / `unsigned char` | `int` | 1 |
+| `Uint16` | `uint16_t` / `unsigned short` | `int` | 2 |
+| `Uint32` | `uint32_t` / `unsigned int` | `int` | 4 |
+| `Uint64` | `uint64_t` / `unsigned long long` | `int` | 8 |
+| `Float` | `float` | `double` | 4 |
+| `Double` | `double` | `double` | 8 |
+| `Bool` | `bool` (C99 `_Bool`) | `bool` | 1 |
+| `Void` | `void` | N/A | 0 |
+| `Handle` | Dart object handle | `Object` | platform |
+| `NativeFunction<T>` | function pointer | N/A | platform |
+| `Pointer<T>` | `T*` | `Pointer<T>` | platform |
 
 :::info
 
-All integer FFI types map to Dart `int`, regardless of size. Dart's `int` is a 64-bit integer on the
+All integer FFI types map to Dart `int`Regardless of size. Dart's `int` is a 64-bit integer on the
 VM. When passing an `Int8` value, the Dart `int` is truncated to 8 bits. When reading an `Int8`
-value, it is sign-extended to 64 bits. Always be aware of the C type's range when working with FFI.
+Value, it is sign-extended to 64 bits. Always be aware of the C type's range when working with FFI.
 
 :::
 
@@ -547,7 +547,7 @@ value, it is sign-extended to 64 bits. Always be aware of the C type's range whe
 
 **Definition.** `Pointer<T>` represents a memory address pointing to a value of type `T`. It is the
 FFI equivalent of a C pointer (`T*`). Pointers are opaque addresses — they have no built-in bounds
-checking.
+Checking.
 
 #### Allocation and Deallocation
 
@@ -574,8 +574,8 @@ for (var i = 0; i < 10; i++) {
 malloc.free(array);
 ```
 
-The `malloc` and `calloc` functions are from `package:ffi`, which provides convenience wrappers
-around `dart:ffi`'s allocation functions.
+The `malloc` and `calloc` functions are from `package:ffi`Which provides convenience wrappers
+Around `dart:ffi`'s allocation functions.
 
 #### Pointer Arithmetic
 
@@ -597,7 +597,7 @@ final bytePtr = ptr.cast<Uint8>();  // reinterpret as byte array
 :::warning
 
 `malloc` and `calloc` allocate native heap memory. This memory is **not** managed by Dart's garbage
-collector. Every `malloc` must have a corresponding `malloc.free`, or you leak native memory. Unlike
+Collector. Every `malloc` must have a corresponding `malloc.free`Or you leak native memory. Unlike
 Dart objects, there is no finalizer that automatically frees native memory. Use `using` from
 `package:ffi` or Dart's `NativeFinalizer` to ensure cleanup.
 
@@ -623,8 +623,8 @@ int addViaFfi(int a, int b) {
 ### Structs
 
 **Definition.** An FFI struct is a Dart class that extends `Struct` and maps to a C `struct` in
-memory. Fields are declared using `@Int32()`, `@Double()`, `@Pointer()`, and other annotations. The
-struct layout in memory matches the C layout.
+Memory. Fields are declared using `@Int32()``@Double()``@Pointer()`And other annotations. The
+Struct layout in memory matches the C layout.
 
 ```dart
 import 'dart:ffi';
@@ -650,12 +650,12 @@ class Rectangle extends Struct {
 ```
 
 All struct fields must be `external`. The Dart compiler generates the accessor code that reads and
-writes directly from/to the native memory layout.
+Writes directly from/to the native memory layout.
 
 #### Packed Structs
 
 By default, FFI structs follow the platform's C ABI alignment rules. Use `@Packed(n)` to override
-alignment:
+Alignment:
 
 ```dart
 // C: __attribute__((packed)) struct PackedPoint { uint8_t x; uint32_t y; };
@@ -688,7 +688,7 @@ malloc.free(pointPtr);
 ```
 
 Use `ptr.ref` to access the struct fields through a pointer. The `.ref` property returns a proxy
-object that reads/writes directly from native memory.
+Object that reads/writes directly from native memory.
 
 ### Callbacks
 
@@ -721,15 +721,15 @@ callback.close();
 
 `NativeCallable` has two variants:
 
-| Variant                       | Thread Safety        | Exception Handling                 | Use Case                    |
+| Variant | Thread Safety | Exception Handling | Use Case |
 | ----------------------------- | -------------------- | ---------------------------------- | --------------------------- |
-| `NativeCallable.listener`     | Any thread can call  | Exceptions become unhandled errors | Callbacks from any thread   |
-| `NativeCallable.isolateLocal` | Only calling isolate | Exceptions propagate to caller     | Callbacks from same isolate |
+| `NativeCallable.listener` | Any thread can call | Exceptions become unhandled errors | Callbacks from any thread |
+| `NativeCallable.isolateLocal` | Only calling isolate | Exceptions propagate to caller | Callbacks from same isolate |
 
 :::warning
 
 `NativeCallable` objects must be closed with `.close()` when no longer needed. Failure to close
-leaks native resources. The callable is valid only while the `NativeCallable` object is alive.
+Leaks native resources. The callable is valid only while the `NativeCallable` object is alive.
 
 :::
 
@@ -750,7 +750,7 @@ nativeSetCallback(callbackPointer);
 :::warning
 
 `Pointer.fromFunction` callbacks can only be invoked from the same isolate that created them. If C
-code calls the callback from a different thread, the behavior is undefined and may crash. Use
+Code calls the callback from a different thread, the behavior is undefined and may crash. Use
 `NativeCallable.listener` for cross-thread callbacks.
 
 :::
@@ -758,7 +758,7 @@ code calls the callback from a different thread, the behavior is undefined and m
 ### Strings
 
 C strings (`char*`) and Dart strings (`String`) are different representations. `package:ffi`
-provides converters.
+Provides converters.
 
 #### Dart to C String
 
@@ -801,18 +801,18 @@ final result = nativeWindowsReturnString();
 final dartResult = result.toDartString();
 ```
 
-| Conversion                    | Direction | Encoding                     |
+| Conversion | Direction | Encoding |
 | ----------------------------- | --------- | ---------------------------- |
-| `toNativeUtf8()`              | Dart to C | UTF-8                        |
-| `toNativeUtf16()`             | Dart to C | UTF-16                       |
-| `ptr.toDartString()`          | C to Dart | UTF-8 (auto-detected length) |
-| `ptr.toDartString(length: n)` | C to Dart | UTF-8 (fixed length)         |
+| `toNativeUtf8()` | Dart to C | UTF-8 |
+| `toNativeUtf16()` | Dart to C | UTF-16 |
+| `ptr.toDartString()` | C to Dart | UTF-8 (auto-detected length) |
+| `ptr.toDartString(length: n)` | C to Dart | UTF-8 (fixed length) |
 
 :::warning
 
 Always free native strings allocated via `toNativeUtf8()` or `toNativeUtf16()`. The `toDartString()`
-method allocates a new Dart `String` object — it does not take ownership of the C memory. If C
-allocated the string, you must free it with C's deallocator, not Dart's `malloc.free`.
+Method allocates a new Dart `String` object — it does not take ownership of the C memory. If C
+Allocated the string, you must free it with C's deallocator, not Dart's `malloc.free`.
 
 :::
 
@@ -837,7 +837,7 @@ malloc.free(matrix);
 #### Variable-Length Arrays
 
 C variable-length arrays (VLAs) are not directly supported. For dynamic arrays, pass a pointer and
-length separately:
+Length separately:
 
 ```dart
 // C: void process(int* data, int length)
@@ -882,7 +882,7 @@ external void nativeFree(Pointer<Void> ptr);
 :::info
 
 `@FfiNative` uses symbol resolution at load time rather than lookup time. This is slightly faster
-than `DynamicLibrary.lookup` and produces cleaner code. It requires Dart 3.3+ and native platforms
+Than `DynamicLibrary.lookup` and produces cleaner code. It requires Dart 3.3+ and native platforms
 (AOT or JIT).
 
 :::
@@ -890,8 +890,8 @@ than `DynamicLibrary.lookup` and produces cleaner code. It requires Dart 3.3+ an
 ### Async FFI
 
 Native C functions are synchronous and block the calling thread. In Dart's single-threaded event
-loop model, a blocking FFI call freezes the entire isolate. To avoid this, use `Isolate.run` to
-offload FFI calls to a separate isolate.
+Loop model, a blocking FFI call freezes the entire isolate. To avoid this, use `Isolate.run` to
+Offload FFI calls to a separate isolate.
 
 ```dart
 import 'dart:isolate';
@@ -916,7 +916,7 @@ void main() async {
 :::warning
 
 Never call blocking FFI functions on the main isolate in a Flutter application. The UI thread must
-remain responsive. Always offload potentially long-running native calls to a compute isolate via
+Remain responsive. Always offload potentially long-running native calls to a compute isolate via
 `Isolate.run`.
 
 :::
@@ -926,12 +926,12 @@ remain responsive. Always offload potentially long-running native calls to a com
 ### Isolate Architecture
 
 **Definition.** An isolate is Dart's unit of concurrency. Each isolate has its own memory heap,
-event loop, and thread of execution. Isolates do not share memory — communication between them is
-strictly via message passing through ports.
+Event loop, and thread of execution. Isolates do not share memory — communication between them is
+Strictly via message passing through ports.
 
 This is fundamentally different from threads in Java, C++, or Go. In those languages, threads share
-the same heap and require synchronization primitives (mutexes, semaphores, atomics) to prevent data
-races. Dart's isolates eliminate data races by eliminating shared state.
+The same heap and require synchronization primitives (mutexes, semaphores, atomics) to prevent data
+Races. Dart's isolates eliminate data races by eliminating shared state.
 
 ```
 Isolate A                    Isolate B
@@ -944,13 +944,13 @@ Isolate A                    Isolate B
 ```
 
 Messages are copied between isolates. Most Dart objects can be sent (primitives, strings, lists,
-maps). Objects containing unsendable types (e.g., closures, sockets, native pointers) cannot be sent
-directly.
+Maps). Objects containing unsendable types (e.g., closures, sockets, native pointers) cannot be sent
+Directly.
 
 ### Isolate.run()
 
 `Isolate.run()` is the simplest way to run computation in a separate isolate. It creates an isolate,
-runs a function, sends the result back, and terminates the isolate.
+Runs a function, sends the result back, and terminates the isolate.
 
 ```dart
 import 'dart:isolate';
@@ -976,7 +976,7 @@ void main() async {
 ### Isolate.spawn()
 
 `Isolate.spawn()` provides lower-level control. You explicitly create a `ReceivePort` for
-communication and pass a `SendPort` to the spawned isolate.
+Communication and pass a `SendPort` to the spawned isolate.
 
 ```dart
 import 'dart:isolate';
@@ -1086,8 +1086,8 @@ class _Request {
 :::warning
 
 Isolate messages are ordered per port. If isolate A sends messages M1, M2, M3 to isolate B, B will
-receive them in that order. However, messages sent from different isolates to the same port may be
-interleaved — there is no global ordering guarantee across multiple senders.
+Receive them in that order. However, messages sent from different isolates to the same port may be
+Interleaved — there is no global ordering guarantee across multiple senders.
 
 :::
 
@@ -1096,12 +1096,12 @@ interleaved — there is no global ordering guarantee across multiple senders.
 Dart's event loop processes two types of tasks:
 
 1. **Microtasks** — High-priority tasks scheduled with `scheduleMicrotask` or via `Future.then()`.
-   Microtasks run to completion before the event loop processes the next event. They are used for
-   internal async plumbing.
+ Microtasks run to completion before the event loop processes the next event. They are used for
+ internal async plumbing.
 
 2. **Events (macrotasks)** — I/O events, timers, UI events, isolate messages, etc. The event loop
-   processes one event at a time, running all microtasks queued during event processing before
-   moving to the next event.
+ processes one event at a time, running all microtasks queued during event processing before
+ moving to the next event.
 
 ```
 while (true) {
@@ -1146,8 +1146,8 @@ void main() {
 ### Completer and Future Internals
 
 A `Completer<T>` is the manual control interface for a `Future`. Normally, `Future` values are
-created by `async`/`await` or `Future.value`/`Future.error`. A `Completer` gives you explicit
-control over when the future completes.
+Created by `async`/`await` or `Future.value`/`Future.error`. A `Completer` gives you explicit
+Control over when the future completes.
 
 ```dart
 final completer = Completer<String>();
@@ -1213,15 +1213,15 @@ dart compile wasm bin/app.dart
 
 ### Advantages over dart2js
 
-| Characteristic  | dart2js                 | dart2wasm                                    |
+| Characteristic | dart2js | dart2wasm |
 | --------------- | ----------------------- | -------------------------------------------- |
-| Output format   | JavaScript              | WebAssembly + JS bootstrap                   |
-| Execution speed | V8 JIT on JS            | Near-native via WASM                         |
-| Startup time    | Slower (JS parse + JIT) | Faster (WASM is compact)                     |
-| Code size       | Larger                  | Smaller                                      |
-| Debugging       | Source maps             | DWARF debug info                             |
-| JS interop      | Direct                  | Via `package:web`                            |
-| Browser support | All                     | WASM GC required (Chrome 119+, Firefox 120+) |
+| Output format | JavaScript | WebAssembly + JS bootstrap |
+| Execution speed | V8 JIT on JS | Near-native via WASM |
+| Startup time | Slower (JS parse + JIT) | Faster (WASM is compact) |
+| Code size | Larger | Smaller |
+| Debugging | Source maps | DWARF debug info |
+| JS interop | Direct | Via `package:web` |
+| Browser support | All | WASM GC required (Chrome 119+, Firefox 120+) |
 
 ### JS Interop via package:web
 
@@ -1245,20 +1245,20 @@ void main() {
 ```
 
 `package:web` provides typed bindings for all Web APIs (DOM, Fetch, WebSocket, etc.). These bindings
-use Dart's JS interop types (`JSObject`, `JSString`, `JSArray`, etc.) rather than Dart's native
-types.
+Use Dart's JS interop types (`JSObject``JSString``JSArray`Etc.) rather than Dart's native
+Types.
 
 ### Performance Characteristics
 
 WASM compilation produces code that runs at near-native speed for compute-heavy workloads. The WASM
-binary is compact and loads quickly. However, every call from WASM to JavaScript (and vice versa)
-has overhead. For DOM-heavy applications, this overhead can dominate. For compute-heavy applications
+Binary is compact and loads quickly. However, every call from WASM to JavaScript (and vice versa)
+Has overhead. For DOM-heavy applications, this overhead can dominate. For compute-heavy applications
 (e.g., image processing, cryptography, simulations), the performance gain is significant.
 
 :::info
 
-dart2wasm requires WebAssembly Garbage Collection (WASM GC) support in the browser. As of 2025, this
-is available in Chrome 119+, Firefox 120+, and Safari 17.4+. Older browsers fall back to dart2js.
+Dart2wasm requires WebAssembly Garbage Collection (WASM GC) support in the browser. As of 2025, this
+Is available in Chrome 119+, Firefox 120+, and Safari 17.4+. Older browsers fall back to dart2js.
 
 :::
 
@@ -1267,8 +1267,8 @@ is available in Chrome 119+, Firefox 120+, and Safari 17.4+. Older browsers fall
 ### Extension Types (Dart 3)
 
 **Definition.** Extension types (introduced in Dart 3) allow you to define a compile-time wrapper
-around an existing type. The wrapper has zero runtime overhead — it is erased at compile time. The
-extension type's methods are resolved statically and dispatch to the underlying representation's
+Around an existing type. The wrapper has zero runtime overhead — it is erased at compile time. The
+Extension type's methods are resolved statically and dispatch to the underlying representation's
 API.
 
 ```dart
@@ -1294,15 +1294,15 @@ processUser(id, email);
 // processUser(id, id);  // Compile error: UserId is not EmailAddress
 ```
 
-Extension types are erased to their representation type at runtime. `UserId` becomes `int`, and
+Extension types are erased to their representation type at runtime. `UserId` becomes `int`And
 `EmailAddress` becomes `String`. There is no wrapper object allocation, no indirection, and no
-virtual dispatch. This is Dart's answer to the "newtype" pattern from Haskell or the "phantom type"
-pattern from TypeScript.
+Virtual dispatch. This is Dart's answer to the "newtype" pattern from Haskell or the "phantom type"
+Pattern from TypeScript.
 
 ### Extension Methods
 
 Extension methods add functionality to existing types without subclassing or modifying the original
-class.
+Class.
 
 ```dart
 extension StringExtension on String {
@@ -1332,15 +1332,15 @@ users.sortedBy((u) => u['name'] as String);
 ```
 
 Extension methods are resolved statically. They do not modify the underlying type and cannot
-override existing methods. If an extension method conflicts with a method on the type itself, the
-type's method wins.
+Override existing methods. If an extension method conflicts with a method on the type itself, the
+Type's method wins.
 
 ### Sealed Classes
 
 **Definition.** Sealed classes restrict which classes can extend or implement them. The set of
-subtypes is known at compile time and must be defined in the same library. This enables exhaustive
-pattern matching — the compiler knows all possible subtypes and can verify that all cases are
-handled.
+Subtypes is known at compile time and must be defined in the same library. This enables exhaustive
+Pattern matching — the compiler knows all possible subtypes and can verify that all cases are
+Handled.
 
 ```dart
 sealed class Expr {}
@@ -1372,8 +1372,8 @@ int eval(Expr expr) => switch (expr) {
 ```
 
 The key constraint: all direct subtypes of a sealed class must be in the same library (same package
-file or part file). Sub-subtypes can be in other libraries, but the direct subtypes that form the
-exhaustive set must be co-located.
+File or part file). Sub-subtypes can be in other libraries, but the direct subtypes that form the
+Exhaustive set must be co-located.
 
 ### Records (Dart 3)
 
@@ -1418,7 +1418,7 @@ print((1, 'a') == (1, 'b'));  // false
 ```
 
 Records are useful as lightweight return types that replace the need for dedicated classes when you
-need to return multiple values:
+Need to return multiple values:
 
 ```dart
 // Before: dedicated class
@@ -1437,7 +1437,7 @@ class DivisionResult {
 ### Pattern Matching
 
 Dart 3 introduced comprehensive pattern matching with switch expressions, if-case, guards, and
-destructuring.
+Destructuring.
 
 #### Switch Expressions
 
@@ -1537,7 +1537,7 @@ bool isNotString(Object value) => switch (value) {
 ### FFI Memory Leaks
 
 The most common FFI bug is forgetting to free native memory. Dart's garbage collector does not track
-native allocations. Every `malloc`, `calloc`, and `toNativeUtf8` must have a corresponding free.
+Native allocations. Every `malloc``calloc`And `toNativeUtf8` must have a corresponding free.
 
 ```dart
 // LEAK: native string never freed
@@ -1570,7 +1570,7 @@ void correctStringUsing() {
 ### Dangling Pointers
 
 Using a pointer after the underlying memory has been freed causes undefined behavior. The Dart VM
-does not detect use-after-free.
+Does not detect use-after-free.
 
 ```dart
 // DANGEROUS: pointer used after free
@@ -1629,7 +1629,7 @@ print((name ?? '').length);
 ### Isolate Message Ordering
 
 Messages sent from a single `SendPort` to a single `ReceivePort` are delivered in order. But
-messages sent from different `SendPort`s to the same `ReceivePort` may interleave.
+Messages sent from different `SendPort`S to the same `ReceivePort` may interleave.
 
 ```dart
 // Isolate A sends: M1, M2, M3
@@ -1639,7 +1639,7 @@ messages sent from different `SendPort`s to the same `ReceivePort` may interleav
 ```
 
 If you need ordering guarantees across multiple senders, implement a sequence number or use a single
-sender isolate as a coordinator.
+Sender isolate as a coordinator.
 
 ### Null Safety Migration Anti-Patterns
 
@@ -1721,7 +1721,15 @@ void worker(SendPort sendPort) {
 }
 ```
 
-Not all Dart objects can be sent between isolates. Sendable objects include: primitives, `String`,
-`List` and `Map` of sendable elements, `SendPort`, `TransferableTypedData`, and `Capability`. Non-
-sendable objects include: closures, `Socket`, `HttpClient`, `File`, `Isolate`, and most `dart:io`
-types.
+Not all Dart objects can be sent between isolates. Sendable objects include: primitives, `String`
+`List` and `Map` of sendable elements, `SendPort``TransferableTypedData`And `Capability`. Non-
+Sendable objects include: closures, `Socket``HttpClient``File``Isolate`And most `dart:io`
+Types.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

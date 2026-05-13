@@ -10,21 +10,21 @@ slug: atomic-operations-lock-free-programming
 ---
 # Atomic Operations and Lock-Free Programming
 
-This section covers `std::atomic<T>`, `std::atomic_ref<T>`, the full set of atomic operations,
-`std::atomic_flag`, the lock-free/wait-free/obstruction-free progress guarantees, the ABA problem, a
-lock-free stack implementation, and a spinlock using `std::atomic_flag`.
+This section covers `std::atomic<T>``std::atomic_ref<T>`The full set of atomic operations,
+`std::atomic_flag`The lock-free/wait-free/obstruction-free progress guarantees, the ABA problem, a
+Lock-free stack implementation, and a spinlock using `std::atomic_flag`.
 
 ## `std::atomic<T>`
 
 `std::atomic<T>` [N4950 §31.7] is a template class that provides atomic access to a value of type
 `T`. All operations on `std::atomic` are atomic: they are indivisible from the perspective of all
-threads.
+Threads.
 
 The standard specifies which types `T` may be [N4950 §31.7.1]:
 
-- **Scalar types**: `bool`, `char`, `int`, `float`, `pointer types`, etc.
-- **Trivially copyable types**: Any trivially copyable type (C++17 and later), though not all
-  operations may be available.
+- **Scalar types**: `bool``char``int``float``pointer types`Etc.
+- ** copyable types**: Any copyable type (C++17 and later), though not all
+ operations may be available.
 
 ```cpp
 #include <iostream>
@@ -55,7 +55,7 @@ int main() {
 ## `std::atomic_ref<T>` (C++20)
 
 `std::atomic_ref<T>` provides atomic access to a non-atomic object through a reference wrapper. This
-is useful when you need atomic operations on data that was not declared as `std::atomic`:
+Is useful when you need atomic operations on data that was not declared as `std::atomic`:
 
 ```cpp
 #include <atomic>
@@ -76,42 +76,42 @@ int main() {
 
 :::warning
 `std::atomic_ref` requires that the referenced object's alignment is at least
-`alignof(std::atomic<T>)`. For many types this is the same as `alignof(T)`, but for types smaller
-than the platform's native word size, `alignof(std::atomic<T>)` may be larger.
+`alignof(std::atomic<T>)`. For many types this is the same as `alignof(T)`But for types smaller
+Than the platform's native word size, `alignof(std::atomic<T>)` may be larger.
 :::
 
 ## Atomic Operations
 
 The full set of atomic operations defined in [N4950 §31.7.2]:
 
-| Operation                                                                  | Description                                             |
+| Operation | Description |
 | -------------------------------------------------------------------------- | ------------------------------------------------------- |
-| `load(order)`                                                              | Atomically reads the current value                      |
-| `store(val, order)`                                                        | Atomically writes a value                               |
-| `exchange(val, order)`                                                     | Atomically replaces the value and returns the old value |
-| `compare_exchange_weak(expected, desired, success_order, failure_order)`   | CAS with possible spurious failure                      |
-| `compare_exchange_strong(expected, desired, success_order, failure_order)` | CAS without spurious failure                            |
-| `fetch_add(val, order)`                                                    | Atomically adds and returns the old value               |
-| `fetch_sub(val, order)`                                                    | Atomically subtracts and returns the old value          |
-| `fetch_and(val, order)`                                                    | Atomically performs bitwise AND and returns old value   |
-| `fetch_or(val, order)`                                                     | Atomically performs bitwise OR and returns old value    |
-| `fetch_xor(val, order)`                                                    | Atomically performs bitwise XOR and returns old value   |
+| `load(order)` | Atomically reads the current value |
+| `store(val, order)` | Atomically writes a value |
+| `exchange(val, order)` | Atomically replaces the value and returns the old value |
+| `compare_exchange_weak(expected, desired, success_order, failure_order)` | CAS with possible spurious failure |
+| `compare_exchange_strong(expected, desired, success_order, failure_order)` | CAS without spurious failure |
+| `fetch_add(val, order)` | Atomically adds and returns the old value |
+| `fetch_sub(val, order)` | Atomically subtracts and returns the old value |
+| `fetch_and(val, order)` | Atomically performs bitwise AND and returns old value |
+| `fetch_or(val, order)` | Atomically performs bitwise OR and returns old value |
+| `fetch_xor(val, order)` | Atomically performs bitwise XOR and returns old value |
 
 ## `std::atomic_flag`
 
 `std::atomic_flag` [N4950 §31.7] is the simplest atomic type: a boolean flag guaranteed to be
-lock-free. It provides only two operations:
+Lock-free. It provides only two operations:
 
 - `test_and_set(order)`: Atomically sets the flag to `true` and returns the previous value.
 - `clear(order)`: Atomically sets the flag to `false`.
 
 ## Lock-Free vs Wait-Free vs Obstruction-Free
 
-| Guarantee            | Definition                                                          | Blocking?        |
+| Guarantee | Definition | Blocking? |
 | -------------------- | ------------------------------------------------------------------- | ---------------- |
-| **Obstruction-free** | Progress guaranteed if all other threads are paused                 | No (if alone)    |
-| **Lock-free**        | At least one thread makes progress within a bounded number of steps | No (system-wide) |
-| **Wait-free**        | Every thread makes progress within a bounded number of steps        | No (per-thread)  |
+| **Obstruction-free** | Progress guaranteed if all other threads are paused | No (if alone) |
+| **Lock-free** | At least one thread makes progress within a bounded number of steps | No (system-wide) |
+| **Wait-free** | Every thread makes progress within a bounded number of steps | No (per-thread) |
 
 These form a hierarchy: wait-free $\implies$ lock-free $\implies$ obstruction-free.
 
@@ -138,13 +138,13 @@ int main() {
 ## ABA Problem and CAS
 
 The **ABA problem** occurs in lock-free algorithms when a value changes from $A$ to $B$ and back to
-$A$ between a thread's load and its CAS. The CAS succeeds because the value is still $A$, but the
-intermediate change may have invalidated invariants:
+$A$ between a thread's load and its CAS. The CAS succeeds because the value is still $A$But the
+Intermediate change may have invalidated invariants:
 
 $$\mathrm{Load{}(A) \to \mathrm{Other thread: {} A \to B \to A \to \mathrm{CAS{}(A, C) \mathrm{ succeeds — incorrectly{}$$
 
 `compare_exchange_weak` may fail spuriously (return `false` even when the expected value matches),
-which can help in some ABA scenarios but does not fully solve the problem. Full solutions include:
+Which can help in some ABA scenarios but does not fully solve the problem. Full solutions include:
 
 1. **Tagged pointers**: Append a monotonically increasing counter to the value.
 2. **Hazard pointers**: Track which objects are currently being accessed.
@@ -229,10 +229,10 @@ int main() {
 ```
 
 :::warning
-warning
-`compare_exchange_weak`, another thread pops `old_head`, pushes new nodes, and then pushes
+Warning
+`compare_exchange_weak`Another thread pops `old_head`Pushes new nodes, and then pushes
 `old_head` back, the CAS will succeed but `next` will be stale. In production code, use hazard
-pointers or tagged pointers to prevent ABA.
+Pointers or tagged pointers to prevent ABA.
 :::
 
 ## Spinlock Using `std::atomic_flag`
@@ -283,10 +283,10 @@ int main() {
 ```
 
 :::info
-info
-holding the lock) makes progress. However, spinlocks waste CPU cycles while spinning. They are
-appropriate only when the critical section is very short and contention is expected to be low. For
-longer critical sections, prefer `std::mutex` which blocks the thread and yields the CPU.
+Info
+Holding the lock) makes progress. However, spinlocks waste CPU cycles while spinning. They are
+Appropriate only when the critical section is very short and contention is expected to be low. For
+Longer critical sections, prefer `std::mutex` which blocks the thread and yields the CPU.
 :::
 
 ## See Also
@@ -299,16 +299,16 @@ longer critical sections, prefer `std::mutex` which blocks the thread and yields
 
 Every atomic operation accepts a `std::memory_order` argument that constrains how the compiler and
 CPU may reorder operations around it [N4950 §31.7.2]. The six memory orders form a hierarchy of
-strength:
+Strength:
 
-| Memory Order           | Compiler Reordering | CPU Reordering | Use Case                        |
+| Memory Order | Compiler Reordering | CPU Reordering | Use Case |
 | :--------------------- | :------------------ | :------------- | :------------------------------ |
-| `memory_order_relaxed` | No reorder with     | No reorder     | Simple counters, statistics     |
-| `memory_order_consume` | atomic ops          | on atomics     | Data-dependent ordering         |
-| `memory_order_acquire` |                     |                | Guard reads of shared data      |
-| `memory_order_release` |                     |                | Publish writes to shared data   |
-| `memory_order_acq_rel` |                     |                | Read-modify-write with ordering |
-| `memory_order_seq_cst` |                     |                | Default; total order            |
+| `memory_order_relaxed` | No reorder with | No reorder | Simple counters, statistics |
+| `memory_order_consume` | atomic ops | on atomics | Data-dependent ordering |
+| `memory_order_acquire` | | | Guard reads of shared data |
+| `memory_order_release` | | | Publish writes to shared data |
+| `memory_order_acq_rel` | | | Read-modify-write with ordering |
+| `memory_order_seq_cst` | | | Default; total order |
 
 ```cpp
 #include <atomic>
@@ -338,10 +338,10 @@ void memory_order_overview() {
 ```
 
 :::warning
-warning
+Warning
 MSVC) treat it as `memory_order_acquire` because implementing true dependency ordering correctly is
-extremely complex and was found to have specification issues. Do not use `memory_order_consume` —
-use `memory_order_acquire` instead.
+Extremely complex and was found to have specification issues. Do not use `memory_order_consume` —
+Use `memory_order_acquire` instead.
 :::
 
 ## `compare_exchange` in Detail
@@ -351,8 +351,8 @@ The CAS operation is the foundation of most lock-free algorithms. `compare_excha
 
 - **`compare_exchange_strong`**: Fails **only** if the current value does not equal `expected`.
 - **`compare_exchange_weak`**: May fail **spuriously** — returns `false` even when the value equals
-  `expected`. This allows the implementation to use LL/SC (Load-Linked/Store-Conditional)
-  instructions on architectures that support them (e.g., ARM, PowerPC).
+ `expected`. This allows the implementation to use LL/SC (Load-Linked/Store-Conditional)
+ instructions on architectures that support them (e.g., ARM, PowerPC).
 
 ```cpp
 #include <atomic>
@@ -397,7 +397,7 @@ void cas_strong_vs_weak() {
 ```
 
 The **success** and **failure** memory orders can differ. This is a critical optimization: on CAS
-failure, you do not need acquire semantics (no data was published), so you can use a weaker order:
+Failure, you do not need acquire semantics (no data was published), so you can use a weaker order:
 
 ```cpp
 // Optimal pattern: acquire on success, relaxed on failure
@@ -414,9 +414,9 @@ if (ptr.compare_exchange_weak(
 
 ## `std::atomic_wait` and `std::atomic_notify` (C++20)
 
-C++20 introduced `wait()`, `notify_one()`, and `notify_all()` on `std::atomic` objects [N4950
+C++20 introduced `wait()``notify_one()`And `notify_all()` on `std::atomic` objects [N4950
 §31.7.2]. These provide an efficient waiting mechanism that does not spin — the OS puts the thread
-to sleep until notification arrives:
+To sleep until notification arrives:
 
 ```cpp
 #include <atomic>
@@ -446,16 +446,16 @@ void atomic_wait_notify_demo() {
 ```
 
 :::info
-info
+Info
 `ulock` on macOS. These are kernel-assisted waiting mechanisms that avoid busy-waiting. The waiting
-thread is descheduled until a notification arrives, consuming zero CPU cycles. This is fundamentally
-more efficient than a spinlock for high-contention or long waits.
+Thread is descheduled until a notification arrives, consuming zero CPU cycles. This is fundamentally
+More efficient than a spinlock for high-contention or long waits.
 :::
 
 ## `std::atomic&lt;void*&gt;` and Pointer Atomics
 
-`std::atomic<T*>` supports pointer arithmetic with `fetch_add` and `fetch_sub`, incrementing or
-decrementing the pointer by `n * sizeof(T)` [N4950 §31.7.2]:
+`std::atomic<T*>` supports pointer arithmetic with `fetch_add` and `fetch_sub`Incrementing or
+Decrementing the pointer by `n * sizeof(T)` [N4950 §31.7.2]:
 
 ```cpp
 #include <atomic>
@@ -480,8 +480,8 @@ void pointer_atomic_demo() {
 
 ## `std::atomic&lt;bool&gt;` as a Flag
 
-`std::atomic&lt;bool&gt;` is the general-purpose atomic boolean. Unlike `std::atomic_flag`, it may
-use a lock internally if the platform cannot implement it lock-free:
+`std::atomic&lt;bool&gt;` is the general-purpose atomic boolean. Unlike `std::atomic_flag`It may
+Use a lock internally if the platform cannot implement it lock-free:
 
 ```cpp
 #include <atomic>
@@ -506,16 +506,16 @@ void atomic_bool_flag_demo() {
 ```
 
 :::warning
-warning
-is **not** guaranteed to be lock-free on all platforms, though it is on virtually all modern
-hardware. Check `std::atomic&lt;bool&gt;::is_always_lock_free` at compile time.
+Warning
+Is **not** guaranteed to be lock-free on all platforms, though it is on virtually all modern
+Hardware. Check `std::atomic&lt;bool&gt;::is_always_lock_free` at compile time.
 :::
 
 ## `std::atomic&lt;shared_ptr&gt;` and `std::atomic&lt;weak_ptr&gt;` (C++20)
 
 C++20 provides atomic specializations for `std::shared_ptr` and `std::weak_ptr` [N4950 §31.7.1].
 These are **not** lock-free — they use an internal mutex. They exist because reference counting
-operations on `shared_ptr` are not atomic, and a data race on the control block is UB:
+Operations on `shared_ptr` are not atomic, and a data race on the control block is UB:
 
 ```cpp
 #include <atomic>
@@ -544,16 +544,16 @@ void shared_ptr_atomic_demo() {
 ```
 
 :::warning
-warning
-operate on `std::shared_ptr*`. These functions use an internal spinlock or mutex, so they are
-significantly slower than lock-free atomics. For high-performance shared access, consider
+Warning
+Operate on `std::shared_ptr*`. These functions use an internal spinlock or mutex, so they are
+Significantly slower than lock-free atomics. For high-performance shared access, consider
 `std::atomic&lt;T*&gt;` with manual reference counting, or redesign to avoid shared mutable state.
 :::
 
 ## Tagged Pointers for ABA Prevention
 
 A practical approach to solving the ABA problem is to use a tagged pointer — combine the pointer
-with a monotonically increasing counter in a single 64-bit atomic:
+With a monotonically increasing counter in a single 64-bit atomic:
 
 ```cpp
 #include <atomic>
@@ -631,40 +631,40 @@ public:
 ```
 
 :::warning
-warning
-address space may use more bits in the future (LVA support). This tagged pointer approach is
-platform-specific. For a portable solution, use a separate `std::atomic&lt;uint64_t&gt;` tag
-alongside the pointer, or use hazard pointers.
+Warning
+Address space may use more bits in the future (LVA support). This tagged pointer approach is
+Platform-specific. For a portable solution, use a separate `std::atomic&lt;uint64_t&gt;` tag
+Alongside the pointer, or use hazard pointers.
 :::
 
 ## Common Pitfalls
 
 1. **Using `memory_order_relaxed` where ordering is needed:** A relaxed store-release pair provides
-   NO synchronization. If thread A stores data then sets a flag with `relaxed`, thread B may see the
-   flag but not the data (due to CPU store buffering and compiler reordering). Use
-   `release`/`acquire` pairs for flag-based synchronization.
+ NO synchronization. If thread A stores data then sets a flag with `relaxed`Thread B may see the
+ flag but not the data (due to CPU store buffering and compiler reordering). Use
+ `release`/`acquire` pairs for flag-based synchronization.
 
 2. **Forgetting that `compare_exchange_weak` can fail spuriously:** Always use
-   `compare_exchange_weak` inside a loop. The spurious failure is not an error — it is an
-   implementation artifact of LL/SC instructions on some architectures. Never assume a single
-   `compare_exchange_weak` succeeds.
+ `compare_exchange_weak` inside a loop. The spurious failure is not an error — it is an
+ implementation artifact of LL/SC instructions on some architectures. Never assume a single
+ `compare_exchange_weak` succeeds.
 
 3. **`std::atomic&lt;T&gt;` is neither copyable nor movable:** This is intentional — copying an
-   atomic would be a race condition (the copy would not be atomic with respect to other threads).
-   Use `load()` and `store()` explicitly.
+ atomic would be a race condition (the copy would not be atomic with respect to other threads).
+ Use `load()` and `store()` explicitly.
 
 4. **Lock-free does not mean wait-free:** A lock-free algorithm guarantees system-wide progress (at
-   least one thread advances), but individual threads may starve. A spinlock is lock-free but a
-   thread waiting for the lock may spin forever under high contention.
+ least one thread advances), but individual threads may starve. A spinlock is lock-free but a
+ thread waiting for the lock may spin forever under high contention.
 
 5. **`std::atomic_flag` initialization:** Prior to C++20, `std::atomic_flag` had to be initialized
-   with `ATOMIC_FLAG_INIT`. In C++20, it has a default constructor that initializes to clear. The
-   `ATOMIC_FLAG_INIT` macro is deprecated in C++20.
+ with `ATOMIC_FLAG_INIT`. In C++20, it has a default constructor that initializes to clear. The
+ `ATOMIC_FLAG_INIT` macro is deprecated in C++20.
 
 6. **False sharing with adjacent atomics:** Two `std::atomic&lt;int&gt;` objects placed next to each
-   other in memory share a cache line (typically 64 bytes). Contention on one causes cache
-   invalidation for the other, even if they are logically independent. Pad atomics to cache line
-   boundaries to prevent this.
+ other in memory share a cache line ( 64 bytes). Contention on one causes cache
+ invalidation for the other, even if they are logically independent. Pad atomics to cache line
+ boundaries to prevent this.
 
 :::
 
@@ -679,3 +679,11 @@ alongside the pointer, or use hazard pointers.
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A rectangular coil of $200$ turns, width $0.05$ m and length $0.08$ m, is positioned with its plane perpendicular to a uniform magnetic field of $0.4$ T. The coil is pulled out of the field in $0.02$ s. Find the average EMF induced. If the coil resistance is $5$ $\Omega$, find the average current and the total charge that flows.
+A rectangular coil of $200$ turns, width $0.05$ m and length $0.08$ m, is positioned with its plane perpendicular to a uniform magnetic field of $0.4$ T. The coil is pulled out of the field in $0.02$ s. Find the average EMF induced. If the coil resistance is $5$ $\Omega$Find the average current and the total charge that flows.
 
 **Solution:**
 
@@ -147,7 +147,7 @@ By Lenz's law, the induced current creates a magnetic field that opposes the mot
 
 $$F_{\text{retarding}} = BIl$$
 
-where $B$ is the average field and $l$ is the effective length. More directly, using energy considerations:
+Where $B$ is the average field and $l$ is the effective length. More directly, using energy considerations:
 
 $$F_{\text{retarding}} \times v = P_{\text{dissipated}} = \varepsilon I = \frac{\varepsilon^2}{R}$$
 
@@ -179,7 +179,7 @@ $$v_t = \frac{0.4905}{111.1} = 4.414 \times 10^{-3} \text{ m s}^{-1} = 4.41 \tex
 
 **Question:**
 
-An AC generator consists of a rectangular coil of $100$ turns, each of area $0.02$ m$^2$, rotating at $3000$ revolutions per minute in a magnetic field of $0.5$ T. The coil is connected to a $20$ $\Omega$ load. Find (a) the peak EMF, (b) the RMS voltage across the load, (c) the RMS current, (d) the average power delivered, and (e) the frequency of the output.
+An AC generator consists of a rectangular coil of $100$ turns, each of area $0.02$ m$^2$Rotating at $3000$ revolutions per minute in a magnetic field of $0.5$ T. The coil is connected to a $20$ $\Omega$ load. Find (a) the peak EMF, (b) the RMS voltage across the load, (c) the RMS current, (d) the average power delivered, and (e) the frequency of the output.
 
 **Solution:**
 

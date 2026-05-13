@@ -83,9 +83,9 @@ Total time $=$ latency $+$ transmission time $= 50 + 0.082 = 50.082$ ms. Latency
 2. **DNS Response:** The DNS server returns the IP address. The browser now knows the destination.
 
 3. **Transport Layer (TCP):** The browser initiates a TCP three-way handshake:
-   - Client sends SYN to server (SYN flag set, random sequence number).
-   - Server responds with SYN-ACK (acknowledges client's SYN, sends its own SYN).
-   - Client sends ACK (acknowledges server's SYN). Connection established.
+ - Client sends SYN to server (SYN flag set, random sequence number).
+ - Server responds with SYN-ACK (acknowledges client's SYN, sends its own SYN).
+ - Client sends ACK (acknowledges server's SYN). Connection established.
 
 4. **Transport Layer (HTTP):** The browser sends an HTTP GET request, encapsulated in a TCP segment with source port (e.g., 50000) and destination port (80).
 

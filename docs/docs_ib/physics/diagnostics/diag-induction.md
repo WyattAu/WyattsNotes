@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-A circular coil of $N = 200$ turns, radius $r = 0.05\,\text{m}$, and total resistance $R = 10\,\Omega$ is placed in a uniform magnetic field. The field is directed perpendicular to the plane of the coil and varies with time as $B(t) = (0.04 + 0.02t)\,\text{T}$ where $t$ is in seconds.
+A circular coil of $N = 200$ turns, radius $r = 0.05\,\text{m}$And total resistance $R = 10\,\Omega$ is placed in a uniform magnetic field. The field is directed perpendicular to the plane of the coil and varies with time as $B(t) = (0.04 + 0.02t)\,\text{T}$ where $t$ is in seconds.
 
 (a) Calculate the magnitude of the induced EMF at $t = 2.0\,\text{s}$.
 
@@ -35,7 +35,7 @@ $$|\varepsilon| = N \times \frac{d\Phi}{dt} = 200 \times 1.571 \times 10^{-4} = 
 
 Induced current: $I = \varepsilon/R = 0.0314/10 = 3.14\,\text{mA}$
 
-(b) By Lenz's law, the induced current opposes the **change** in flux. Since $B$ is increasing with time, the flux through the coil is increasing. The induced current must create a magnetic field that opposes this increase, i.e. a field directed opposite to the external field (out of the plane if $B$ is into the plane).
+(b) By Lenz's law, the induced current opposes the **change** in flux. Since $B$ is increasing with time, the flux through the coil is increasing. The induced current must create a magnetic field that opposes this increase, i.e. A field directed opposite to the external field (out of the plane if $B$ is into the plane).
 
 By the right-hand rule, if the external field is into the page, the induced current flows **anticlockwise** when viewed from the direction of the external field.
 
@@ -57,7 +57,7 @@ The EMF is halved because the effective area perpendicular to the field is $A\co
 
 **Question:**
 
-A rectangular coil of $N = 500$ turns, dimensions $0.10\,\text{m} \times 0.15\,\text{m}$, rotates at $f = 50\,\text{Hz}$ in a uniform magnetic field $B = 0.40\,\text{T}$. The axis of rotation is perpendicular to the field.
+A rectangular coil of $N = 500$ turns, dimensions $0.10\,\text{m} \times 0.15\,\text{m}$Rotates at $f = 50\,\text{Hz}$ in a uniform magnetic field $B = 0.40\,\text{T}$. The axis of rotation is perpendicular to the field.
 
 (a) Calculate the maximum flux linkage and the maximum induced EMF.
 
@@ -121,7 +121,7 @@ This is 12 times the running current. Such a large current could damage the arma
 
 $$\varepsilon_{\text{back}} = V - IR = 60 - 5.0 \times 2.0 = 50\,\text{V}$$
 
-Check: the back EMF is proportional to angular velocity. Original: $\varepsilon_{\text{back}} = 110\,\text{V}$, new: $50\,\text{V}$. The motor runs at $50/110 = 45.5\%$ of its original speed.
+Check: the back EMF is proportional to angular velocity. Original: $\varepsilon_{\text{back}} = 110\,\text{V}$New: $50\,\text{V}$. The motor runs at $50/110 = 45.5\%$ of its original speed.
 
 ## Integration Tests
 
@@ -129,7 +129,7 @@ Check: the back EMF is proportional to angular velocity. Original: $\varepsilon_
 
 **Question:**
 
-A bar magnet of mass $0.050\,\text{kg}$ falls from rest through a vertical coil of $N = 100$ turns, mean radius $r = 0.02\,\text{m}$, and resistance $R = 5.0\,\Omega$. The magnet produces an average flux of $\Phi = 2.0 \times 10^{-4}\,\text{Wb}$ through the coil when it is centred.
+A bar magnet of mass $0.050\,\text{kg}$ falls from rest through a vertical coil of $N = 100$ turns, mean radius $r = 0.02\,\text{m}$And resistance $R = 5.0\,\Omega$. The magnet produces an average flux of $\Phi = 2.0 \times 10^{-4}\,\text{Wb}$ through the coil when it is centred.
 
 (a) Estimate the average current induced in the coil as the magnet passes through.
 
@@ -139,13 +139,13 @@ A bar magnet of mass $0.050\,\text{kg}$ falls from rest through a vertical coil 
 
 **Solution:**
 
-(a) As the magnet enters the coil, the flux changes from approximately 0 to $\Phi$, and as it exits, from $\Phi$ to approximately 0. The time for the magnet to pass through depends on its speed, but for an estimate, assume the magnet length is $\ell = 0.05\,\text{m}$ and it enters at speed $v$:
+(a) As the magnet enters the coil, the flux changes from approximately 0 to $\Phi$And as it exits, from $\Phi$ to approximately 0. The time for the magnet to pass through depends on its speed, but for an estimate, assume the magnet length is $\ell = 0.05\,\text{m}$ and it enters at speed $v$:
 
 Time to pass through: $\Delta t \approx \ell/v$
 
 Average EMF: $\varepsilon \approx N\Delta\Phi/\Delta t = N \times 2\Phi \times v/\ell$
 
-This requires knowing $v$, which changes. For a rough estimate, assume the magnet reaches a terminal speed of $0.80\,\text{m}\,\text{s}^{-1}$:
+This requires knowing $v$Which changes. For a rough estimate, assume the magnet reaches a terminal speed of $0.80\,\text{m}\,\text{s}^{-1}$:
 
 $$\varepsilon \approx 100 \times 2 \times 2.0 \times 10^{-4} \times 0.80/0.05 = 0.64\,\text{V}$$
 
@@ -245,8 +245,8 @@ Voltage across inductor: $V_L = I_{\text{rms}}X_L = 0.796 \times 113.1 = 90.0\,\
 
 Check: $\sqrt{V_R^2 + V_L^2} = \sqrt{6336 + 8100} = \sqrt{14436} = 120.2\,\text{V}$. This equals $V_{\text{rms}} = 170/\sqrt{2} = 120.2\,\text{V}$. Confirmed.
 
-(c) For resonance, we would need a capacitor. With only $R$ and $L$, there is no resonance (the impedance $Z = \sqrt{R^2 + (\omega L)^2}$ increases monotonically with $\omega$).
+(c) For resonance, we would need a capacitor. With only $R$ and $L$There is no resonance (the impedance $Z = \sqrt{R^2 + (\omega L)^2}$ increases monotonically with $\omega$).
 
-If a capacitor $C$ were added, resonance occurs when $X_L = X_C$, i.e. $\omega_0 = 1/\sqrt{LC}$.
+If a capacitor $C$ were added, resonance occurs when $X_L = X_C$I.e. $\omega_0 = 1/\sqrt{LC}$.
 
-Without a capacitor, increasing the frequency increases $X_L$ and therefore $Z$, which decreases the current. There is no resonance in a purely RL circuit.
+Without a capacitor, increasing the frequency increases $X_L$ and therefore $Z$Which decreases the current. There is no resonance in a purely RL circuit.

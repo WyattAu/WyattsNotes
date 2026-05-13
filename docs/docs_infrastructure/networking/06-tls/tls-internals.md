@@ -11,9 +11,9 @@ categories:
 ## Overview
 
 This document goes deeper into TLS internals than the TLS fundamentals document, covering the record
-layer architecture, detailed handshake message formats for TLS 1.3, cipher suite construction, key
-exchange mechanisms, and common implementation pitfalls. This is the material you need to understand
-when debugging TLS connections, configuring servers, or evaluating cryptographic strength.
+Layer architecture, detailed handshake message formats for TLS 1.3, cipher suite construction, key
+Exchange mechanisms, and common implementation pitfalls. This is the material you need to understand
+When debugging TLS connections, configuring servers, or evaluating cryptographic strength.
 
 ## TLS Architecture
 
@@ -39,7 +39,7 @@ TLS is structured as a layered protocol with four sub-protocols operating over a
 ### Record Layer
 
 The TLS record layer fragments application data (and handshake messages) into records. Each record
-has:
+Has:
 
 ```
  0                   1                   2                   3
@@ -59,72 +59,72 @@ has:
 
 Content types:
 
-| Type               | Value | Description                                   |
+| Type | Value | Description |
 | ------------------ | ----- | --------------------------------------------- |
-| CHANGE_CIPHER_SPEC | 20    | Deprecated in TLS 1.3 (replaced by KeyUpdate) |
-| ALERT              | 21    | Error or warning notifications                |
-| HANDSHAKE          | 22    | Handshake protocol messages                   |
-| APPLICATION_DATA   | 23    | Encrypted application data                    |
+| CHANGE_CIPHER_SPEC | 20 | Deprecated in TLS 1.3 (replaced by KeyUpdate) |
+| ALERT | 21 | Error or warning notifications |
+| HANDSHAKE | 22 | Handshake protocol messages |
+| APPLICATION_DATA | 23 | Encrypted application data |
 
 ### Handshake Protocol
 
 The handshake protocol is responsible for authentication, key exchange, and negotiation of
-cryptographic parameters. Handshake messages are carried inside TLS records with content type 22.
+Cryptographic parameters. Handshake messages are carried inside TLS records with content type 22.
 
 ### Alert Protocol
 
 Alert messages convey errors and state changes:
 
-| Level       | Description                     | Common Alerts                                      |
+| Level | Description | Common Alerts |
 | ----------- | ------------------------------- | -------------------------------------------------- |
-| Warning (1) | Non-fatal; connection continues | close_notify, no_certificate, bad_certificate      |
-| Fatal (2)   | Connection must be terminated   | handshake_failure, decode_error, illegal_parameter |
+| Warning (1) | Non-fatal; connection continues | close_notify, no_certificate, bad_certificate |
+| Fatal (2) | Connection must be terminated | handshake_failure, decode_error, illegal_parameter |
 
 ### Change Cipher Spec Protocol
 
 In TLS 1.2, this protocol signals the transition to encrypted communication. In TLS 1.3, it is
-deprecated. Key changes are signaled within the handshake protocol itself.
+Deprecated. Key changes are signaled within the handshake protocol itself.
 
 ## TLS 1.2 vs TLS 1.3
 
 ### Removed in TLS 1.3
 
-| Feature                 | TLS 1.2   | TLS 1.3 | Reason                                    |
+| Feature | TLS 1.2 | TLS 1.3 | Reason |
 | ----------------------- | --------- | ------- | ----------------------------------------- |
-| Renegotiation           | Supported | Removed | Complex, caused RC4 injection attacks     |
-| Compression             | Supported | Removed | CRIME attack (compression oracle)         |
-| Static RSA key exchange | Supported | Removed | No forward secrecy                        |
-| Non-AEAD ciphers        | Supported | Removed | CBC ciphers vulnerable to padding oracles |
-| Custom DHE groups       | Supported | Removed | Weak groups (e.g., export-grade)          |
-| SHA-1 in signatures     | Supported | Removed | SHA-1 is cryptographically weak           |
-| MD5 in signatures       | Supported | Removed | MD5 is broken                             |
+| Renegotiation | Supported | Removed | Complex, caused RC4 injection attacks |
+| Compression | Supported | Removed | CRIME attack (compression oracle) |
+| Static RSA key exchange | Supported | Removed | No forward secrecy |
+| Non-AEAD ciphers | Supported | Removed | CBC ciphers vulnerable to padding oracles |
+| Custom DHE groups | Supported | Removed | Weak groups (e.g., export-grade) |
+| SHA-1 in signatures | Supported | Removed | SHA-1 is cryptographically weak |
+| MD5 in signatures | Supported | Removed | MD5 is broken |
 
 ### Added in TLS 1.3
 
-| Feature                | Description                                                           |
+| Feature | Description |
 | ---------------------- | --------------------------------------------------------------------- |
-| 0-RTT data             | Send application data in the first flight (repeat connections)        |
-| Signature algorithms   | Explicit negotiation of hash+signature pairs (RFC 8446 Section 4.2.3) |
-| Key schedule           | Derived key hierarchy using HKDF (RFC 5869)                           |
-| Post-handshake auth    | Server can request client certificate after the handshake             |
-| Encrypted Server Hello | Server Hello is encrypted (hides server identity from observers)      |
-| KeyUpdate              | In-band key rotation without renegotiation                            |
+| 0-RTT data | Send application data in the first flight (repeat connections) |
+| Signature algorithms | Explicit negotiation of hash+signature pairs (RFC 8446 Section 4.2.3) |
+| Key schedule | Derived key hierarchy using HKDF (RFC 5869) |
+| Post-handshake auth | Server can request client certificate after the handshake |
+| Encrypted Server Hello | Server Hello is encrypted (hides server identity from observers) |
+| KeyUpdate | In-band key rotation without renegotiation |
 
 ### Cipher Suite Simplification
 
 TLS 1.2 cipher suites are complex strings like `TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256`. TLS 1.3
-cipher suites only specify the AEAD algorithm:
+Cipher suites only specify the AEAD algorithm:
 
-| TLS 1.3 Cipher Suite         | AEAD Algorithm    | Hash (HKDF) |
+| TLS 1.3 Cipher Suite | AEAD Algorithm | Hash (HKDF) |
 | ---------------------------- | ----------------- | ----------- |
-| TLS_AES_128_GCM_SHA256       | AES-128-GCM       | SHA-256     |
-| TLS_AES_256_GCM_SHA384       | AES-256-GCM       | SHA-384     |
-| TLS_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | SHA-256     |
-| TLS_AES_128_CCM_SHA256       | AES-128-CCM       | SHA-256     |
-| TLS_AES_128_CCM_8_SHA256     | AES-128-CCM-8     | SHA-256     |
+| TLS_AES_128_GCM_SHA256 | AES-128-GCM | SHA-256 |
+| TLS_AES_256_GCM_SHA384 | AES-256-GCM | SHA-384 |
+| TLS_CHACHA20_POLY1305_SHA256 | ChaCha20-Poly1305 | SHA-256 |
+| TLS_AES_128_CCM_SHA256 | AES-128-CCM | SHA-256 |
+| TLS_AES_128_CCM_8_SHA256 | AES-128-CCM-8 | SHA-256 |
 
 The key exchange algorithm is no longer part of the cipher suite. It is negotiated separately via
-the `supported_groups` extension.
+The `supported_groups` extension.
 
 ## TLS 1.3 Handshake in Detail
 
@@ -154,33 +154,33 @@ Client                                          Server
 
 The ClientHello carries the client's capabilities and parameters:
 
-| Field                      | Description                                         |
+| Field | Description |
 | -------------------------- | --------------------------------------------------- |
-| legacy_version             | 0x0303 (TLS 1.2) for compatibility with middleboxes |
-| random                     | 32 bytes of random (used in key derivation)         |
-| legacy_session_id          | Session ID for compatibility (TLS 1.3 uses PSK)     |
-| cipher_suites              | List of supported TLS 1.3 cipher suites             |
-| legacy_compression_methods | [0x00] (no compression)                             |
-| extensions                 | supported_versions, supported_groups, key_share,    |
-|                            | signature_algorithms, psk_key_exchange_modes,       |
-|                            | server_name (SNI), etc.                             |
+| legacy_version | 0x0303 (TLS 1.2) for compatibility with middleboxes |
+| random | 32 bytes of random (used in key derivation) |
+| legacy_session_id | Session ID for compatibility (TLS 1.3 uses PSK) |
+| cipher_suites | List of supported TLS 1.3 cipher suites |
+| legacy_compression_methods | [0x00] (no compression) |
+| extensions | supported_versions, supported_groups, key_share, |
+| | signature_algorithms, psk_key_exchange_modes, |
+| | server_name (SNI), etc. |
 
 ### ServerHello Fields
 
-| Field                     | Description                             |
+| Field | Description |
 | ------------------------- | --------------------------------------- |
-| legacy_version            | 0x0303 (always, even for TLS 1.3)       |
-| random                    | 32 bytes of random                      |
-| legacy_session_id_echo    | Echo of client's session_id             |
-| cipher_suite              | Selected cipher suite                   |
-| legacy_compression_method | 0x00                                    |
-| extensions                | supported_version (TLS 1.3), key_share, |
-|                           | pre_shared_key (if PSK selected)        |
+| legacy_version | 0x0303 (always, even for TLS 1.3) |
+| random | 32 bytes of random |
+| legacy_session_id_echo | Echo of client's session_id |
+| cipher_suite | Selected cipher suite |
+| legacy_compression_method | 0x00 |
+| extensions | supported_version (TLS 1.3), key_share, |
+| | pre_shared_key (if PSK selected) |
 
 ### EncryptedExtensions
 
 After the ServerHello, all subsequent handshake messages are encrypted. EncryptedExtensions carries
-server-side configuration that does not affect the cryptographic parameters:
+Server-side configuration that does not affect the cryptographic parameters:
 
 - `server_name` indication (whether SNI was used)
 - `max_fragment_length` (negotiate smaller records)
@@ -190,7 +190,7 @@ server-side configuration that does not affect the cryptographic parameters:
 ### Certificate
 
 The server sends its certificate chain. In TLS 1.3, the Certificate message is sent encrypted. The
-certificate chain includes:
+Certificate chain includes:
 
 1. **Leaf certificate:** The server's end-entity certificate
 2. **Intermediate certificates:** One or more intermediate CA certificates
@@ -199,33 +199,33 @@ certificate chain includes:
 ### CertificateVerify
 
 This message proves that the server holds the private key corresponding to the certificate's public
-key. It contains a digital signature over a transcript hash of all handshake messages so far.
+Key. It contains a digital signature over a transcript hash of all handshake messages so far.
 
 ```
 Signature = Sign(private_key, Hash("TLS 1.3, server CertificateVerify" || 0x20...0x20 || transcript_hash))
 ```
 
 The `0x20...0x20` is 64 bytes of spaces (0x20), a context string that binds the signature to TLS 1.3
-specifically.
+Specifically.
 
 ### Finished
 
 Both sides send a Finished message, which contains a verify_data value derived from the handshake
-transcript:
+Transcript:
 
 ```
 verify_data = HMAC(finished_key, Hash(transcript))
 ```
 
 The Finished message is the first message encrypted with the newly derived traffic keys. If the
-verify_data does not match, the handshake has been tampered with and the connection is terminated.
+Verify_data does not match, the handshake has been tampered with and the connection is terminated.
 
 ## Key Exchange Mechanisms
 
 ### ECDHE (Elliptic Curve Diffie-Hellman Ephemeral)
 
 The most widely used key exchange in TLS 1.3. Both sides generate an ephemeral (temporary) key pair
-on an elliptic curve, exchange public keys, and derive a shared secret.
+On an elliptic curve, exchange public keys, and derive a shared secret.
 
 ```
 Client generates: (priv_c, pub_c)
@@ -236,15 +236,15 @@ Shared secret = ECDH(priv_c, pub_s) = ECDH(priv_s, pub_c) = x-coordinate of (pri
 
 Supported curves (RFC 8446):
 
-| Curve             | Key Size | Security Level |
+| Curve | Key Size | Security Level |
 | ----------------- | -------- | -------------- |
-| X25519            | 256 bits | 128 bits       |
-| secp256r1 (P-256) | 256 bits | 128 bits       |
-| secp384r1 (P-384) | 384 bits | 192 bits       |
-| secp521r1 (P-521) | 521 bits | 256 bits       |
+| X25519 | 256 bits | 128 bits |
+| secp256r1 (P-256) | 256 bits | 128 bits |
+| secp384r1 (P-384) | 384 bits | 192 bits |
+| secp521r1 (P-521) | 521 bits | 256 bits |
 
 X25519 is the recommended default. It is faster than NIST curves, has simpler implementation (fewer
-edge cases), and uses a constant-time algorithm that is resistant to timing attacks.
+Edge cases), and uses a constant-time algorithm that is resistant to timing attacks.
 
 ### DHE (Finite Field Diffie-Hellman Ephemeral)
 
@@ -253,21 +253,21 @@ Supported groups:
 
 | Group (ffdhe) | Prime Size | Security Level |
 | ------------- | ---------- | -------------- |
-| ffdhe2048     | 2048 bits  | 112 bits       |
-| ffdhe3072     | 3072 bits  | 128 bits       |
-| ffdhe4096     | 4096 bits  | 150 bits       |
-| ffdhe6144     | 6144 bits  | 175 bits       |
-| ffdhe8192     | 8192 bits  | 200+ bits      |
+| ffdhe2048 | 2048 bits | 112 bits |
+| ffdhe3072 | 3072 bits | 128 bits |
+| ffdhe4096 | 4096 bits | 150 bits |
+| ffdhe6144 | 6144 bits | 175 bits |
+| ffdhe8192 | 8192 bits | 200+ bits |
 
 ### PSK (Pre-Shared Key)
 
 TLS 1.3 supports PSK-based key exchange, which can be used alone or combined with (EC)DHE (called
 "PSK with (EC)DHE" or "psk_dhe_ke").
 
-| PSK Mode      | Forward Secrecy | Use Case                              |
+| PSK Mode | Forward Secrecy | Use Case |
 | ------------- | --------------- | ------------------------------------- |
-| PSK only      | No              | IoT devices, resumption tickets       |
-| PSK + (EC)DHE | Yes             | Recommended for resumption (security) |
+| PSK only | No | IoT devices, resumption tickets |
+| PSK + (EC)DHE | Yes | Recommended for resumption (security) |
 
 PSKs are established either externally (configured on both sides) or via a previous TLS handshake
 (session resumption via NewSessionTicket).
@@ -282,8 +282,8 @@ The client indicates which PSK modes it supports in the `psk_key_exchange_modes`
 :::info
 
 TLS 1.3 implementations should prefer `psk_dhe_ke` for session resumption. This provides forward
-secrecy even for resumed sessions. If the PSK is compromised, past traffic remains secure because
-the (EC)DHE exchange was ephemeral.
+Secrecy even for resumed sessions. If the PSK is compromised, past traffic remains secure because
+The (EC)DHE exchange was ephemeral.
 
 :::
 
@@ -292,7 +292,7 @@ the (EC)DHE exchange was ephemeral.
 ### AEAD Ciphers
 
 AEAD (Authenticated Encryption with Associated Data) provides both confidentiality and integrity in
-a single operation. TLS 1.3 requires AEAD ciphers exclusively.
+A single operation. TLS 1.3 requires AEAD ciphers exclusively.
 
 **AES-GCM (Galois/Counter Mode):**
 
@@ -313,13 +313,13 @@ a single operation. TLS 1.3 requires AEAD ciphers exclusively.
 - AES-128-CCM: 128-bit key, CBC-MAC mode
 - AES-128-CCM-8: Same but with truncated 64-bit tag (faster but weaker)
 - Required for compatibility with constrained IoT devices (RFC 8446 mandates support for at least
-  one CCM cipher)
+ one CCM cipher)
 - Slower than GCM
 
 ### Key Derivation: HKDF
 
 TLS 1.3 uses HKDF (HMAC-based Extract-and-Expand Key Derivation Function, RFC 5869) for all key
-derivation. The key schedule is:
+Derivation. The key schedule is:
 
 ```
                     0-RTT
@@ -355,7 +355,7 @@ nonce = IV XOR (sequence_number << 64)
 ```
 
 The sequence number is a 64-bit counter that increments for each record. Since the sequence number
-is included in the nonce, every record has a unique nonce, even with the same IV.
+Is included in the nonce, every record has a unique nonce, even with the same IV.
 
 ## Certificate Verification Path
 
@@ -383,7 +383,7 @@ For each certificate in the chain:
 **OCSP (Online Certificate Status Protocol, RFC 6960):**
 
 The client sends a query to the CA's OCSP responder asking whether a specific certificate is
-revoked. The responder returns "good", "revoked", or "unknown".
+Revoked. The responder returns "good", "revoked", or "unknown".
 
 ```bash
 # Check certificate revocation with openssl
@@ -404,8 +404,8 @@ openssl s_client -connect example.com:443 -status -servername example.com
 **CRL (Certificate Revocation List):**
 
 The CA publishes a list of revoked certificate serial numbers. The client downloads and checks the
-list. CRLs can be large and are not updated frequently, making them less practical for real-time
-revocation checking.
+List. CRLs can be large and are not updated frequently, making them less practical for real-time
+Revocation checking.
 
 ### CAA (Certification Authority Authorization, RFC 6844)
 
@@ -421,34 +421,34 @@ example.com.  IN  CAA  0 issuewild "*.example.com" "letsencrypt.org"
 ### Fragmentation
 
 TLS records have a maximum size (configurable, default 16KB). Application data larger than this is
-fragmented into multiple records. The receiver reassembles the fragments.
+Fragmented into multiple records. The receiver reassembles the fragments.
 
 In TLS 1.3, the maximum record size is negotiated via the `max_fragment_length` extension:
 
-| Value | Max Record Size   |
+| Value | Max Record Size |
 | ----- | ----------------- |
-| 1     | 2^9 (512 bytes)   |
-| 2     | 2^10 (1024 bytes) |
-| 3     | 2^11 (2048 bytes) |
-| 4     | 2^12 (4096 bytes) |
+| 1 | 2^9 (512 bytes) |
+| 2 | 2^10 (1024 bytes) |
+| 3 | 2^11 (2048 bytes) |
+| 4 | 2^12 (4096 bytes) |
 
 Smaller records reduce latency (the receiver can process data sooner) but increase overhead (more
-records = more TLS record headers and MACs).
+Records = more TLS record headers and MACs).
 
 ### MAC-then-Encrypt vs Encrypt-then-MAC
 
 TLS 1.2 with CBC cipher suites uses MAC-then-Encrypt (MAC the plaintext, then encrypt both). This is
-vulnerable to padding oracle attacks (Lucky13, POODLE).
+Vulnerable to padding oracle attacks (Lucky13, POODLE).
 
 TLS 1.3 uses AEAD ciphers exclusively, which combine encryption and authentication in a single
-operation (effectively encrypt-then-MAC). This eliminates padding oracle attacks entirely.
+Operation (effectively encrypt-then-MAC). This eliminates padding oracle attacks entirely.
 
 ## TLS Extensions
 
 ### SNI (Server Name Indication, RFC 6066)
 
 The client sends the server hostname in the ClientHello's `server_name` extension. This allows a
-single IP address to host multiple TLS-enabled websites (virtual hosting).
+Single IP address to host multiple TLS-enabled websites (virtual hosting).
 
 ```bash
 # Test SNI
@@ -467,49 +467,49 @@ openssl s_client -connect example.com:443 -alpn h2,http/1.1
 ### Session Tickets (RFC 5077)
 
 The server encrypts the session state into a ticket and sends it to the client. On a subsequent
-connection, the client presents the ticket, and the server decrypts it to resume the session without
-storing state.
+Connection, the client presents the ticket, and the server decrypts it to resume the session without
+Storing state.
 
 In TLS 1.3, session tickets are sent via the NewSessionTicket post-handshake message.
 
 ### supported_versions (TLS 1.3)
 
 The client lists supported TLS versions in this extension. The server responds with the selected
-version in the ServerHello. This extension allows TLS 1.3 to be negotiated without changing the
-legacy_version field.
+Version in the ServerHello. This extension allows TLS 1.3 to be negotiated without changing the
+Legacy_version field.
 
 ### pre_shared_key (TLS 1.3)
 
 Contains the PSK identity and the binder value (an HMAC over the transcript up to this point, using
-the PSK). The binder prevents a man-in-the-middle from substituting a different PSK.
+The PSK). The binder prevents a man-in-the-middle from substituting a different PSK.
 
 ## Forward Secrecy
 
 ### Why It Matters
 
 Forward secrecy (also called perfect forward secrecy, PFS) ensures that compromising the server's
-private key does not compromise past session keys. Each session uses an ephemeral key exchange, so
-recording encrypted traffic and later obtaining the server's private key does not allow decryption
-of past sessions.
+Private key does not compromise past session keys. Each session uses an ephemeral key exchange, so
+Recording encrypted traffic and later obtaining the server's private key does not allow decryption
+Of past sessions.
 
 Without forward secrecy (static RSA key exchange), the session key is encrypted with the server's
-static RSA private key. If an attacker records the handshake and later obtains the private key
+Static RSA private key. If an attacker records the handshake and later obtains the private key
 (through theft, court order, or cryptanalysis), they can decrypt all past sessions.
 
 ### Which Cipher Suites Provide Forward Secrecy
 
-| Key Exchange  | Forward Secrecy |
+| Key Exchange | Forward Secrecy |
 | ------------- | --------------- |
-| Static RSA    | No              |
-| ECDHE         | Yes             |
-| DHE           | Yes             |
-| PSK only      | No              |
-| PSK + (EC)DHE | Yes             |
+| Static RSA | No |
+| ECDHE | Yes |
+| DHE | Yes |
+| PSK only | No |
+| PSK + (EC)DHE | Yes |
 
 :::warning
 
 TLS 1.3 mandates forward secrecy for all handshakes. Every TLS 1.3 connection uses (EC)DHE, either
-alone or in combination with PSK. Static RSA key exchange is not available in TLS 1.3.
+Alone or in combination with PSK. Static RSA key exchange is not available in TLS 1.3.
 
 :::
 
@@ -521,38 +521,38 @@ CVE-2011-3389. Exploits predictable IVs in TLS 1.0 CBC cipher suites to decrypt 
 
 **Mitigation:** Use TLS 1.1+ (which uses explicit IVs), or TLS 1.2+ with RC4 (not recommended due to
 RC4 biases), or TLS 1.2+ with AES-GCM (recommended). Modern browsers implement 1/n-1 splitting as a
-client-side mitigation.
+Client-side mitigation.
 
 ### Lucky13 (CVE-2013-0169)
 
 A timing side-channel attack on CBC cipher suites in TLS 1.2. The decryption time varies depending
-on whether the MAC is valid, leaking information about the plaintext.
+On whether the MAC is valid, leaking information about the plaintext.
 
 **Mitigation:** Use AES-GCM or ChaCha20-Poly1305 (AEAD ciphers). If CBC must be used, implement
-constant-time MAC verification.
+Constant-time MAC verification.
 
 ### RC4 Biases
 
 RC4 has statistical biases in its keystream that allow an attacker to recover plaintext after
-observing sufficient ciphertext. RFC 7465 prohibits RC4 in TLS.
+Observing sufficient ciphertext. RFC 7465 prohibits RC4 in TLS.
 
 ### Padding Oracles (CVE-2014-3566, POODLE)
 
 Exploits the padding validation in CBC mode. When the server rejects incorrectly padded ciphertext,
-the error response leaks information about the plaintext.
+The error response leaks information about the plaintext.
 
 **Mitigation:** TLS 1.3 eliminates this by requiring AEAD ciphers. For TLS 1.2, disable CBC cipher
-suites and use AES-GCM or ChaCha20-Poly1305.
+Suites and use AES-GCM or ChaCha20-Poly1305.
 
 ### Renegotiation Attacks
 
 TLS 1.2 renegotiation allows the client and server to renegotiate cipher suites mid-connection. A
-man-in-the-middle can inject a renegotiation request and splice the attacker's session with the
-victim's.
+Man-in-the-middle can inject a renegotiation request and splice the attacker's session with the
+Victim's.
 
 **Mitigation:** TLS 1.3 removed renegotiation entirely. TLS 1.2 supports the `renegotiation_info`
-extension (RFC 5746) which cryptographically binds the renegotiated connection to the original
-connection.
+Extension (RFC 5746) which cryptographically binds the renegotiated connection to the original
+Connection.
 
 ## Common Pitfalls
 
@@ -574,25 +574,25 @@ openssl ciphers -v 'ECDHE+AESGCM:ECDHE+CHACHA20:DHE+AESGCM:DHE+CHACHA20'
 ### 2. Not Enabling OCSP Stapling
 
 Without OCSP stapling, clients must contact the CA's OCSP responder directly. This adds latency (an
-additional HTTP request per TLS handshake) and allows the CA to track which websites clients visit.
+Additional HTTP request per TLS handshake) and allows the CA to track which websites clients visit.
 Enable OCSP stapling on your server.
 
 ### 3. Using Self-Signed Certificates in Production
 
 Self-signed certificates provide encryption but not authentication. Any attacker can create a
-self-signed certificate for your domain. Use certificates issued by a publicly trusted CA (Let's
+Self-signed certificate for your domain. Use certificates issued by a publicly trusted CA (Let's
 Encrypt, DigiCert, etc.).
 
 ### 4. Not Rotating Session Tickets
 
 Session tickets contain encrypted session state. If the ticket encryption key is compromised, an
-attacker can forge tickets and impersonate clients. Rotate ticket keys regularly (at least daily).
+Attacker can forge tickets and impersonate clients. Rotate ticket keys regularly (at least daily).
 
 ### 5. Ignoring Certificate Expiry
 
 Expired certificates cause TLS handshake failures. Implement monitoring to alert before certificates
-expire. Use ACME (Automatic Certificate Management Environment, used by Let's Encrypt) for automatic
-certificate renewal.
+Expire. Use ACME (Automatic Certificate Management Environment, used by Let's Encrypt) for automatic
+Certificate renewal.
 
 ### 6. Disabling Certificate Verification in Code
 
@@ -602,13 +602,13 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 ```
 
 This disables all certificate verification, making the connection vulnerable to man-in-the-middle
-attacks. Always verify certificates in production.
+Attacks. Always verify certificates in production.
 
 ### 7. Not Supporting HSTS
 
 HTTP Strict Transport Security (HSTS, RFC 6797) tells the browser to always use HTTPS for a domain,
-preventing downgrade attacks and SSL stripping. Deploy HSTS with a long max-age and include
-subdomains.
+Preventing downgrade attacks and SSL stripping. Deploy HSTS with a long max-age and include
+Subdomains.
 
 ```text
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
@@ -619,7 +619,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ### NewSessionTicket
 
 After the handshake is complete, the server can send NewSessionTicket messages to the client. Each
-ticket contains encrypted session state that the client can use to resume the connection later.
+Ticket contains encrypted session state that the client can use to resume the connection later.
 
 ```text
 Server -> Client:
@@ -634,13 +634,13 @@ Server -> Client:
 
 The client stores the ticket and uses it in a subsequent handshake's `pre_shared_key` extension.
 Tickets are single-use by default (the server deletes them after one use). For stateless resumption,
-the server encrypts all session state into the ticket and does not store anything.
+The server encrypts all session state into the ticket and does not store anything.
 
 ### KeyUpdate
 
 Either side can request a key update to rotate the traffic keys without re-establishing the
-connection. This is useful for long-lived connections (gRPC streaming, WebSocket over TLS) where the
-same keys should not be used for too much data.
+Connection. This is useful for long-lived connections (gRPC streaming, WebSocket over TLS) where the
+Same keys should not be used for too much data.
 
 ```text
 Client -> Server:
@@ -655,14 +655,14 @@ Server -> Client:
 ```
 
 After receiving KeyUpdate, the receiver installs new write keys (derived from the next key in the
-key schedule) and continues sending with the new keys. The read keys are updated after receiving
-data encrypted with the peer's new keys.
+Key schedule) and continues sending with the new keys. The read keys are updated after receiving
+Data encrypted with the peer's new keys.
 
 ### Post-Handshake Authentication
 
 The server can request the client's certificate after the initial handshake is complete. This is
-useful when the server does not know whether client authentication is needed until after processing
-the request.
+Useful when the server does not know whether client authentication is needed until after processing
+The request.
 
 ```text
 Server -> Client (encrypted):
@@ -685,15 +685,15 @@ Client -> Server (encrypted):
 ### Session Tickets (Stateless)
 
 The server encrypts the session state into a ticket and sends it to the client. The client presents
-the ticket on the next connection. The server decrypts the ticket and resumes the session.
+The ticket on the next connection. The server decrypts the ticket and resumes the session.
 
 Advantages: server does not store session state (scales horizontally). Disadvantages: ticket
-encryption key must be rotated; tickets can be stolen.
+Encryption key must be rotated; tickets can be stolen.
 
 ### Pre-Shared Key (PSK) Resumption (TLS 1.3)
 
 TLS 1.3 formalizes PSK-based resumption. The server sends a NewSessionTicket containing a PSK
-derived from the connection. The client stores the PSK and uses it in the next handshake.
+Derived from the connection. The client stores the PSK and uses it in the next handshake.
 
 ```text
 First handshake:
@@ -711,7 +711,7 @@ Second handshake (resumption):
 ### 0-RTT Resumption
 
 With a valid PSK, the client can send application data in the first flight (0-RTT). This is useful
-for repeat connections where latency is critical.
+For repeat connections where latency is critical.
 
 ```bash
 # Test 0-RTT with openssl
@@ -721,7 +721,7 @@ openssl s_client -connect example.com:443 -tls1_3 -early_data /tmp/request.txt
 :::warning
 
 0-RTT data is vulnerable to replay attacks. The server must not accept 0-RTT data for non-idempotent
-operations. Common safe uses: GET requests, database reads, cache lookups. Unsafe: POST, PUT,
+Operations. Common safe uses: GET requests, database reads, cache lookups. Unsafe: POST, PUT,
 DELETE, financial transactions.
 
 :::
@@ -732,11 +732,11 @@ DELETE, financial transactions.
 
 Mozilla provides a configuration generator (https://ssl-config.mozilla.org/) with three profiles:
 
-| Profile      | Clients Supported           | Cipher Suites                      |
+| Profile | Clients Supported | Cipher Suites |
 | ------------ | --------------------------- | ---------------------------------- |
-| Modern       | TLS 1.3 only                | AES-128-GCM, AES-256-GCM, ChaCha20 |
-| Intermediate | TLS 1.2 + TLS 1.3           | Adds AES-128-CBC, ECDHE, DHE       |
-| Old          | TLS 1.0 + TLS 1.1 + TLS 1.2 | Maximum compatibility              |
+| Modern | TLS 1.3 only | AES-128-GCM, AES-256-GCM, ChaCha20 |
+| Intermediate | TLS 1.2 + TLS 1.3 | Adds AES-128-CBC, ECDHE, DHE |
+| Old | TLS 1.0 + TLS 1.1 + TLS 1.2 | Maximum compatibility |
 
 ### nginx Configuration Example
 
@@ -799,14 +799,14 @@ curl -sI https://example.com | grep -i strict-transport
 ### Handshake Cost
 
 The TLS handshake is CPU-intensive due to the asymmetric key exchange (ECDHE) and signature
-verification. Typical costs:
+Verification. Typical costs:
 
-| Operation            | Time (approximate) |
+| Operation | Time (approximate) |
 | -------------------- | ------------------ |
-| ECDHE key exchange   | 0.5-2ms (P-256)    |
+| ECDHE key exchange | 0.5-2ms (P-256) |
 | RSA signature verify | 0.5-1ms (2048-bit) |
-| AES-128-GCM encrypt  | 0.001ms per KB     |
-| Session resumption   | 0.1-0.5ms          |
+| AES-128-GCM encrypt | 0.001ms per KB |
+| Session resumption | 0.1-0.5ms |
 
 On a server handling 10,000 new TLS connections per second, the handshake alone consumes significant
 CPU. Session resumption reduces this cost dramatically.
@@ -814,7 +814,7 @@ CPU. Session resumption reduces this cost dramatically.
 ### Hardware Acceleration
 
 Modern CPUs support AES-NI (hardware-accelerated AES encryption). ChaCha20-Poly1305 is designed to
-be fast without hardware acceleration and is preferred on ARM-based devices.
+Be fast without hardware acceleration and is preferred on ARM-based devices.
 
 ```bash
 # Check if AES-NI is available
@@ -827,15 +827,15 @@ openssl speed -evp chacha20-poly1305
 
 In high-traffic environments, TLS termination is often offloaded to dedicated hardware (F5, Citrix
 ADC) or software (Envoy, nginx, HAProxy) in front of the application servers. This centralizes
-certificate management and reduces CPU load on application servers.
+Certificate management and reduces CPU load on application servers.
 
 ## Common Pitfalls (Additional)
 
 ### 8. Incomplete Certificate Chains
 
 The server must send the full certificate chain (leaf + intermediates). If intermediate certificates
-are missing, clients that do not have the intermediate cached will fail to validate the chain. This
-is the most common TLS deployment error.
+Are missing, clients that do not have the intermediate cached will fail to validate the chain. This
+Is the most common TLS deployment error.
 
 ```bash
 # Verify certificate chain completeness
@@ -846,12 +846,12 @@ openssl s_client -connect example.com:443 -showcerts
 ### 9. Not Disabling TLS 1.0 and TLS 1.1
 
 TLS 1.0 and 1.1 are deprecated (RFC 8996). Some clients may still require them for compatibility,
-but they should be disabled wherever possible. PCI DSS v4.0 requires TLS 1.2 or higher.
+But they should be disabled wherever possible. PCI DSS v4.0 requires TLS 1.2 or higher.
 
 ### 10. Using Weak DH Parameters
 
 If DHE cipher suites are used, the DH parameters must be at least 2048 bits. Generate strong DH
-parameters:
+Parameters:
 
 ```bash
 openssl dhparam -out /etc/ssl/dhparam.pem 2048
@@ -860,7 +860,7 @@ openssl dhparam -out /etc/ssl/dhparam.pem 2048
 ### 11. Not Setting secure Renegotiation
 
 In TLS 1.2, ensure the server supports secure renegotiation (RFC 5746) to prevent renegotiation
-attacks. Modern servers enable this by default, but verify:
+Attacks. Modern servers enable this by default, but verify:
 
 ```bash
 openssl s_client -connect example.com:443 | grep "Secure Renegotiation"
@@ -869,8 +869,16 @@ openssl s_client -connect example.com:443 | grep "Secure Renegotiation"
 ### 12. Mixed Content
 
 HTTPS pages that load resources over HTTP are vulnerable to man-in-the-middle attacks on those
-resources. Use the Content-Security-Policy header to enforce HTTPS for all subresources:
+Resources. Use the Content-Security-Policy header to enforce HTTPS for all subresources:
 
 ```text
 Content-Security-Policy: upgrade-insecure-requests
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

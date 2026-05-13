@@ -8,14 +8,14 @@ categories:
   - Cpp
 slug: deterministic-destruction
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 C++ guarantees that destructors run at well-defined points in program execution. Unlike Java
-finalizers or C# `IDisposable`, C++ destruction is deterministic, automatic, and intimately tied to
-scope. This property is the foundation of RAII -- the single most important resource management
-idiom in the language. Understanding the exact mechanics of destruction, including order guarantees,
-exception interactions, and partial construction scenarios, is essential for writing correct systems
-software.
+Finalizers or C# `IDisposable`C++ destruction is deterministic, automatic, and intimately tied to
+Scope. This property is the foundation of RAII -- the single most important resource management
+Idiom in the language. Understanding the exact mechanics of destruction, including order guarantees,
+Exception interactions, and partial construction scenarios, is essential for writing correct systems
+Software.
 
 ## Destructor Semantics
 
@@ -40,18 +40,18 @@ public:
 ### When Destructors Run
 
 1. **Block scope exit** (normal or exception): Local automatic objects destroyed in reverse order of
-   construction.
+ construction.
 2. **`delete` expression**: The pointed-to object is destroyed before deallocation.
 3. **Program termination**: Static and thread-local objects destroyed in reverse order of
-   construction.
-4. **Container operations**: `vector::erase`, `vector::clear`, `map::erase` destroy the removed
-   elements.
-5. **Algorithm operations**: `std::destroy`, `std::destroy_n`, `std::destroy_at`.
+ construction.
+4. **Container operations**: `vector::erase``vector::clear``map::erase` destroy the removed
+ elements.
+5. **Algorithm operations**: `std::destroy``std::destroy_n``std::destroy_at`.
 
 ### The Reverse-Construction-Order Guarantee
 
 [N4950 §6.7.7.2] guarantees that objects are destroyed in the exact reverse order of their
-construction:
+Construction:
 
 ```cpp
 struct Tracker {
@@ -75,13 +75,13 @@ void example() {
 ```
 
 This is not merely a convention -- it is a semantic guarantee of the language. For resource
-management, this means inner resources are always released before outer resources, preventing
-dangling references.
+Management, this means inner resources are always released before outer resources, preventing
+Dangling references.
 
 ## Stack Unwinding During Exception Propagation
 
 When an exception is thrown, the runtime unwinds the stack, calling destructors for all automatic
-objects in each frame until a matching `catch` is found [N4950 §14.4].
+Objects in each frame until a matching `catch` is found [N4950 §14.4].
 
 ```cpp
 void process() {
@@ -134,7 +134,7 @@ public:
 ```
 
 Use `std::uncaught_exceptions()` (C++17, note the plural) instead of `std::uncaught_exception()` to
-correctly handle nested exceptions.
+Correctly handle nested exceptions.
 
 ## What Happens When Destructors Throw
 
@@ -178,8 +178,8 @@ struct Danger {
 ```
 
 The implicit `noexcept` means the compiler will call `std::terminate` if your destructor tries to
-throw (unless you opt out with `noexcept(false)`). This is a deliberate language design decision to
-prevent the two-active-exceptions problem.
+Throw (unless you opt out with `noexcept(false)`). This is a deliberate language design decision to
+Prevent the two-active-exceptions problem.
 
 ### Safe Destructor Pattern
 
@@ -205,7 +205,7 @@ public:
 ## Partial Construction and Member Destruction
 
 If a constructor throws, the destructor is **not** called for the object itself (because it was
-never fully constructed). However, destructors **are** called for all fully-constructed subobjects
+Never fully constructed). However, destructors **are** called for all fully-constructed subobjects
 (base classes and data members) [N4950 §11.9.3]:
 
 ```cpp
@@ -256,7 +256,7 @@ public:
 ```
 
 **Warning**: The member initializer list can list members in any order, but construction always
-follows declaration order. This is a common source of bugs when initialization order matters:
+Follows declaration order. This is a common source of bugs when initialization order matters:
 
 ```cpp
 class Bad {
@@ -291,7 +291,7 @@ void leak() {
 ```
 
 **Rule**: If a class has any virtual functions, it must have a virtual destructor. Deleting a
-derived object through a base pointer without a virtual destructor is undefined behavior [N4950
+Derived object through a base pointer without a virtual destructor is undefined behavior [N4950
 §7.6.2.5.2].
 
 ### Correct Version
@@ -347,12 +347,12 @@ struct Derived : Base {
 ```
 
 The `override` specifier catches signature mismatches, though for destructors this is mainly for
-consistency.
+Consistency.
 
 ## Union Destructors
 
 In C++11 and later, unions can have members with non-trivial special member functions, but the union
-itself must define how to handle destruction:
+Itself must define how to handle destruction:
 
 ```cpp
 struct StringWrapper {
@@ -391,7 +391,7 @@ Value v = std::string("hello");
 // ~string called automatically when v is assigned a different type or destroyed
 ```
 
-## `std::destroy_at`, `std::destroy`, `std::destroy_n`
+## `std::destroy_at``std::destroy``std::destroy_n`
 
 C++17 introduced standardized destruction algorithms [N4950 §20.10.3]:
 
@@ -444,7 +444,7 @@ public:
 ## RAII Connection
 
 RAII (Resource Acquisition Is Initialization) depends entirely on deterministic destruction. The
-pattern is:
+Pattern is:
 
 1. **Acquire** a resource in a constructor.
 2. **Release** the resource in the destructor.
@@ -472,15 +472,15 @@ See **Module 10 (Ownership and RAII)** for comprehensive coverage of this patter
 ## Java/C# Finalizers: A Fundamental Difference
 
 Java `finalize()` (deprecated in Java 9, removed in Java 18) and C# finalizers are fundamentally
-different from C++ destructors:
+Different from C++ destructors:
 
-| Property              | C++ Destructor                       | Java Finalizer                 | C# Finalizer                   |
+| Property | C++ Destructor | Java Finalizer | C# Finalizer |
 | :-------------------- | :----------------------------------- | :----------------------------- | :----------------------------- |
-| **When called**       | Deterministic (scope exit, `delete`) | Non-deterministic (GC decides) | Non-deterministic (GC decides) |
-| **Order guarantee**   | Reverse of construction              | No ordering guarantee          | No ordering guarantee          |
-| **Exception safety**  | Terminates if throws during unwind   | Ignored                        | Ignored                        |
-| **Performance**       | Zero overhead (same as scope exit)   | Significant GC overhead        | Significant GC overhead        |
-| **Guaranteed to run** | Yes (for automatic/static storage)   | No (GC may never run)          | No (GC may never run)          |
+| **When called** | Deterministic (scope exit, `delete`) | Non-deterministic (GC decides) | Non-deterministic (GC decides) |
+| **Order guarantee** | Reverse of construction | No ordering guarantee | No ordering guarantee |
+| **Exception safety** | Terminates if throws during unwind | Ignored | Ignored |
+| **Performance** | Zero overhead (same as scope exit) | Significant GC overhead | Significant GC overhead |
+| **Guaranteed to run** | Yes (for automatic/static storage) | No (GC may never run) | No (GC may never run) |
 
 ### Why Java/C# Need `using` / `try-with-resources`
 
@@ -503,7 +503,7 @@ using (var stream = new FileStream("file.txt", FileMode.Open)) {
 ```
 
 These patterns exist specifically to replicate C++'s deterministic destruction in garbage-collected
-languages. C++ has this guarantee natively.
+Languages. C++ has this guarantee natively.
 
 ## Common Pitfalls
 
@@ -584,3 +584,11 @@ class Logger {
 - **Module 9.2 (Uniform Initialization)**: Constructor invocation during object creation
 - **Module 10 (Ownership and RAII)**: The RAII pattern built on deterministic destruction
 - **Module 13 (Error Handling)**: Exception safety guarantees and stack unwinding
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

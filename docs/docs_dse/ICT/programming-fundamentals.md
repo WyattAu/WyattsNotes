@@ -14,8 +14,8 @@ slug: programming-fundamentals
 This document provides comprehensive coverage of programming fundamentals for the DSE ICT examination.
 Basic programming concepts and SQL are covered in
 [programming-and-databases.md](programming-and-databases.md). This document extends those topics with
-deeper treatment of algorithms, string manipulation, file handling, debugging, and DSE-specific exam
-techniques.
+Deeper treatment of algorithms, string manipulation, file handling, debugging, and DSE-specific exam
+Techniques.
 
 ---
 
@@ -23,37 +23,37 @@ techniques.
 
 ### Variable Naming Conventions
 
-| Rule                          | Description                                                | Valid       | Invalid        |
+| Rule | Description | Valid | Invalid |
 | ----------------------------- | ---------------------------------------------------------- | ----------- | -------------- |
-| Must start with a letter      | Cannot begin with a number or special character             | `score`     | `2score`       |
-| No spaces                     | Use camelCase or underscores                               | `myScore`   | `my score`     |
-| Case sensitive                | `Score` and `score` are different variables                 | `total`     | N/A            |
-| Must be descriptive           | Name should indicate the purpose                           | `studentAge`| `x`            |
-| No reserved words             | Cannot use language keywords                               | `myClass`   | `class`        |
-| Consistent naming style       | Use the same convention throughout                         | camelCase   | Mixed_styles   |
+| Must start with a letter | Cannot begin with a number or special character | `score` | `2score` |
+| No spaces | Use camelCase or underscores | `myScore` | `my score` |
+| Case sensitive | `Score` and `score` are different variables | `total` | N/A |
+| Must be descriptive | Name should indicate the purpose | `studentAge`| `x` |
+| No reserved words | Cannot use language keywords | `myClass` | `class` |
+| Consistent naming style | Use the same convention throughout | camelCase | Mixed_styles |
 
 ### Data Types in Detail
 
-| Data Type   | Size (typical)   | Range                                     | Precision        |
+| Data Type | Size (typical) | Range | Precision |
 | ----------- | --------------- | ----------------------------------------- | ---------------- |
-| Integer     | 2--8 bytes      | $-2^{31}$ to $2^{31}-1$ (32-bit)          | Exact            |
-| Float/Real  | 4--8 bytes      | $\pm 3.4 \times 10^{-38}$ to $3.4 \times 10^{38}$ | ~7 decimal digits |
-| Double      | 8 bytes         | $\pm 1.7 \times 10^{-308}$ to $1.7 \times 10^{308}$ | ~15 decimal digits |
-| String      | Variable        | Depends on implementation                  | N/A              |
-| Boolean     | 1 byte          | True / False                               | N/A              |
-| Character   | 1 byte          | Single character (ASCII/Unicode)           | N/A              |
+| Integer | 2--8 bytes | $-2^{31}$ to $2^{31}-1$ (32-bit) | Exact |
+| Float/Real | 4--8 bytes | $\pm 3.4 \times 10^{-38}$ to $3.4 \times 10^{38}$ | ~7 decimal digits |
+| Double | 8 bytes | $\pm 1.7 \times 10^{-308}$ to $1.7 \times 10^{308}$ | ~15 decimal digits |
+| String | Variable | Depends on implementation | N/A |
+| Boolean | 1 byte | True / False | N/A |
+| Character | 1 byte | Single character (ASCII/Unicode) | N/A |
 
 **Type coercion and conversion:**
 
 Converting between types is a common source of errors. In many languages, mixing types in an expression
-causes automatic type promotion.
+Causes automatic type promotion.
 
-| Conversion          | Description                                    | Risk                        |
+| Conversion | Description | Risk |
 | ------------------- | ---------------------------------------------- | --------------------------- |
-| Integer to Float    | Always safe, no data loss                       | None                        |
-| Float to Integer    | Truncates the decimal part                      | Loss of precision           |
-| String to Number    | Parses the string; fails if non-numeric         | Runtime error               |
-| Number to String    | Converts the number to its text representation   | None                        |
+| Integer to Float | Always safe, no data loss | None |
+| Float to Integer | Truncates the decimal part | Loss of precision |
+| String to Number | Parses the string; fails if non-numeric | Runtime error |
+| Number to String | Converts the number to its text representation | None |
 
 <details>
 <summary>Worked Example: Type Conversion Issues</summary>
@@ -70,7 +70,7 @@ total = int(score) + 10          # CORRECT: convert string to int first
 ```
 
 The `input()` function always returns a string. Forgetting to convert to the appropriate numeric type
-before performing arithmetic is one of the most common errors in student programs.
+Before performing arithmetic is one of the most common errors in student programs.
 
 </details>
 
@@ -81,7 +81,7 @@ before performing arithmetic is one of the most common errors in student program
 ### Nested Selection
 
 Nested IF statements occur when one IF statement is placed inside another. Each level of nesting
-should be indented for clarity.
+Should be indented for clarity.
 
 <details>
 <summary>Worked Example: Nested IF for Fee Calculation</summary>
@@ -122,20 +122,20 @@ END
 
 ### FOR vs WHILE Loops
 
-| Aspect         | FOR Loop                                  | WHILE Loop                            |
+| Aspect | FOR Loop | WHILE Loop |
 | -------------- | ----------------------------------------- | ------------------------------------- |
-| Type           | Count-controlled                          | Condition-controlled                   |
-| Known iterations? | Yes, the number of iterations is known | No, depends on a condition             |
-| Counter        | Automatically managed                    | Must be updated manually in the loop   |
-| Infinite loop risk | Low (counter reaches limit)            | High (condition may never become false) |
-| Use case       | Processing arrays, fixed repetitions      | User input validation, unknown counts  |
+| Type | Count-controlled | Condition-controlled |
+| Known iterations? | Yes, the number of iterations is known | No, depends on a condition |
+| Counter | Automatically managed | Must be updated manually in the loop |
+| Infinite loop risk | Low (counter reaches limit) | High (condition may never become false) |
+| Use case | Processing arrays, fixed repetitions | User input validation, unknown counts |
 
 **Choosing between FOR and WHILE:**
 
 - Use **FOR** when you know exactly how many times the loop should run (e.g., processing every element
-  in an array).
+ in an array).
 - Use **WHILE** when the number of iterations depends on a condition that is evaluated at runtime
-  (e.g., keep asking for input until the user enters a valid value).
+ (e.g., keep asking for input until the user enters a valid value).
 
 ### Loop Patterns
 
@@ -209,7 +209,7 @@ END
 <summary>Worked Example: Combined Loop Patterns</summary>
 
 Write a program to read N numbers, output the sum, average, maximum, minimum, and count of numbers
-above the average.
+Above the average.
 
 ```python
 BEGIN
@@ -256,13 +256,13 @@ END
 
 ### Parameter Passing
 
-| Mechanism        | Description                                                 | Effect on Original Variable |
+| Mechanism | Description | Effect on Original Variable |
 | ---------------- | ----------------------------------------------------------- | --------------------------- |
-| **Pass by value** | A copy of the argument is passed to the function/procedure | Original unchanged          |
-| **Pass by reference** | A reference (address) to the original variable is passed | Original CAN be changed    |
+| **Pass by value** | A copy of the argument is passed to the function/procedure | Original unchanged |
+| **Pass by reference** | A reference (address) to the original variable is passed | Original CAN be changed |
 
 In many exam-style pseudocode languages, parameters are passed by value by default. To pass by
-reference (allowing the procedure to modify the original), some notations use `BYREF`.
+Reference (allowing the procedure to modify the original), some notations use `BYREF`.
 
 <details>
 <summary>Worked Example: Pass by Value vs Reference</summary>
@@ -282,7 +282,7 @@ END
 Because `salary` is passed BYREF, the original variable `pay` is modified. Output: `35000`.
 
 If `salary` were passed by value (default), `pay` would remain `30000` because the procedure would
-modify only a local copy.
+Modify only a local copy.
 
 </details>
 
@@ -305,14 +305,14 @@ END FUNCTION
 
 Trace for `fibonacci(5)`:
 
-| Call          | Result                         |
+| Call | Result |
 | ------------- | ------------------------------ |
-| fibonacci(5)  | fibonacci(4) + fibonacci(3)    |
-| fibonacci(4)  | fibonacci(3) + fibonacci(2)    |
-| fibonacci(3)  | fibonacci(2) + fibonacci(1)    |
-| fibonacci(2)  | fibonacci(1) + fibonacci(0)    |
-| fibonacci(1)  | 1                              |
-| fibonacci(0)  | 0                              |
+| fibonacci(5) | fibonacci(4) + fibonacci(3) |
+| fibonacci(4) | fibonacci(3) + fibonacci(2) |
+| fibonacci(3) | fibonacci(2) + fibonacci(1) |
+| fibonacci(2) | fibonacci(1) + fibonacci(0) |
+| fibonacci(1) | 1 |
+| fibonacci(0) | 0 |
 
 Working back up: fib(2) = 1 + 0 = 1, fib(3) = 1 + 1 = 2, fib(4) = 2 + 1 = 3, fib(5) = 3 + 2 = 5.
 
@@ -326,18 +326,18 @@ String operations are frequently tested in DSE ICT programming questions.
 
 ### Common String Operations
 
-| Operation            | Description                                    | Example                           |
+| Operation | Description | Example |
 | -------------------- | ---------------------------------------------- | --------------------------------- |
-| **Length**           | Returns the number of characters in a string   | `LEN("Hello")` = 5               |
-| **Concatenation**    | Joins two strings together                     | `"Hello" + " " + "World"` = "Hello World" |
-| **Substring/Extract**| Extracts a portion of a string                 | `MID("Hello", 2, 3)` = "ell"      |
-| **Left**             | Extracts characters from the left              | `LEFT("Hello", 3)` = "Hel"        |
-| **Right**            | Extracts characters from the right             | `RIGHT("Hello", 2)` = "lo"        |
-| **Upper case**       | Converts all characters to uppercase           | `UPPER("hello")` = "HELLO"        |
-| **Lower case**       | Converts all characters to lowercase           | `LOWER("HELLO")` = "hello"        |
-| **Find/Position**    | Finds the position of a substring              | `FIND("ll", "Hello")` = 3         |
-| **Replace**          | Replaces all occurrences of a substring        | `REPLACE("aab", "a", "x")` = "xxb"|
-| **Compare**          | Compares two strings alphabetically            | "Apple" < "Banana" is True        |
+| **Length** | Returns the number of characters in a string | `LEN("Hello")` = 5 |
+| **Concatenation** | Joins two strings together | `"Hello" + " " + "World"` = "Hello World" |
+| **Substring/Extract**| Extracts a portion of a string | `MID("Hello", 2, 3)` = "ell" |
+| **Left** | Extracts characters from the left | `LEFT("Hello", 3)` = "Hel" |
+| **Right** | Extracts characters from the right | `RIGHT("Hello", 2)` = "lo" |
+| **Upper case** | Converts all characters to uppercase | `UPPER("hello")` = "HELLO" |
+| **Lower case** | Converts all characters to lowercase | `LOWER("HELLO")` = "hello" |
+| **Find/Position** | Finds the position of a substring | `FIND("ll", "Hello")` = 3 |
+| **Replace** | Replaces all occurrences of a substring | `REPLACE("aab", "a", "x")` = "xxb"|
+| **Compare** | Compares two strings alphabetically | "Apple" < "Banana" is True |
 
 ### Character Analysis
 
@@ -359,7 +359,7 @@ END FUNCTION
 ```
 
 Note: In pseudocode, string indexing often starts at 1 (unlike Python which starts at 0). Check the
-specific convention used in your exam.
+Specific convention used in your exam.
 
 </details>
 
@@ -378,13 +378,13 @@ END FUNCTION
 
 For `reverseString("Hello")`:
 
-| Iteration | i  | char    | result     |
+| Iteration | i | char | result |
 | --------- | --- | ------- | ---------- |
-| 1         | 5   | "o"     | "o"        |
-| 2         | 4   | "l"     | "ol"       |
-| 3         | 3   | "l"     | "oll"      |
-| 4         | 2   | "e"     | "olle"     |
-| 5         | 1   | "H"     | "olleH"    |
+| 1 | 5 | "o" | "o" |
+| 2 | 4 | "l" | "ol" |
+| 3 | 3 | "l" | "oll" |
+| 4 | 2 | "e" | "olle" |
+| 5 | 1 | "H" | "olleH" |
 
 </details>
 
@@ -404,7 +404,7 @@ END FUNCTION
 ```
 
 This compares the first character with the last, the second with the second-to-last, and so on. If
-any pair does not match, the function returns FALSE immediately.
+Any pair does not match, the function returns FALSE immediately.
 
 </details>
 
@@ -414,24 +414,24 @@ any pair does not match, the function returns FALSE immediately.
 
 ### File Operations
 
-| Operation | Description                                        | Mode    |
+| Operation | Description | Mode |
 | --------- | -------------------------------------------------- | ------- |
-| Open      | Prepare a file for reading or writing              | Read/Write |
-| Read      | Read data from an open file                        | Read    |
-| Write     | Write data to an open file (overwrites existing)   | Write   |
-| Append    | Add data to the end of an existing file            | Append  |
-| Close     | Release the file and save any buffered data        | N/A     |
+| Open | Prepare a file for reading or writing | Read/Write |
+| Read | Read data from an open file | Read |
+| Write | Write data to an open file (overwrites existing) | Write |
+| Append | Add data to the end of an existing file | Append |
+| Close | Release the file and save any buffered data | N/A |
 
 ### Sequential vs Random Access
 
-| Feature           | Sequential Access                   | Random Access                        |
+| Feature | Sequential Access | Random Access |
 | ----------------- | ----------------------------------- | ------------------------------------ |
-| Access method     | Records read one after another     | Jump directly to any record          |
-| Speed for reading all | Fast (sequential read)          | Same or slower                       |
-| Speed for finding specific record | Must read all preceding records | Direct access, very fast             |
-| File type         | Text files                         | Binary files, database files         |
-| Modification      | Difficult (must rewrite entire file) | Easy (overwrite specific record)    |
-| Example           | CSV, TXT                            | Direct-access binary files           |
+| Access method | Records read one after another | Jump directly to any record |
+| Speed for reading all | Fast (sequential read) | Same or slower |
+| Speed for finding specific record | Must read all preceding records | Direct access, very fast |
+| File type | Text files | Binary files, database files |
+| Modification | Difficult (must rewrite entire file) | Easy (overwrite specific record) |
+| Example | CSV, TXT | Direct-access binary files |
 
 <details>
 <summary>Worked Example: Read and Process File Data</summary>
@@ -483,14 +483,14 @@ END
 ### Linear Search
 
 Linear search checks each element in sequence until the target is found or all elements have been
-checked.
+Checked.
 
-| Aspect           | Value                                    |
+| Aspect | Value |
 | ---------------- | ---------------------------------------- |
-| **Best case**    | O(1) -- found at first position         |
-| **Worst case**   | O(n) -- found at last position or not found |
-| **Average case** | O(n/2)                                  |
-| **Data requirement** | None (works on unsorted data)        |
+| **Best case** | O(1) -- found at first position |
+| **Worst case** | O(n) -- found at last position or not found |
+| **Average case** | O(n/2) |
+| **Data requirement** | None (works on unsorted data) |
 
 ```python
 FUNCTION linearSearch(arr, size, target)
@@ -507,10 +507,10 @@ END FUNCTION
 
 Binary search works on **sorted** arrays by repeatedly dividing the search range in half.
 
-| Aspect           | Value                                      |
+| Aspect | Value |
 | ---------------- | ------------------------------------------ |
-| **Best case**    | O(1) -- found at middle on first check      |
-| **Worst case**   | O(log n)                                   |
+| **Best case** | O(1) -- found at middle on first check |
+| **Worst case** | O(log n) |
 | **Data requirement** | Array MUST be sorted in ascending order |
 
 ```python
@@ -536,11 +536,11 @@ END FUNCTION
 
 Search for 23 in the sorted array: `[2, 5, 8, 12, 16, 23, 38, 45, 56]`
 
-| Step | low | high | mid | arr[mid] | Comparison     | Action         |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | -------------- | -------------- |
-| 1    | 0   | 8    | 4   | 16       | 16 < 23        | low = 5        |
-| 2    | 5   | 8    | 6   | 38       | 38 > 23        | high = 5       |
-| 3    | 5   | 5    | 5   | 23       | 23 = 23        | Found at index 5 |
+| 1 | 0 | 8 | 4 | 16 | 16 < 23 | low = 5 |
+| 2 | 5 | 8 | 6 | 38 | 38 > 23 | high = 5 |
+| 3 | 5 | 5 | 5 | 23 | 23 = 23 | Found at index 5 |
 
 Result: 23 is found at index 5.
 
@@ -549,13 +549,13 @@ Result: 23 is found at index 5.
 ### Insertion Sort
 
 Insertion sort builds a sorted array one element at a time by inserting each element into its correct
-position among the previously sorted elements.
+Position among the previously sorted elements.
 
-| Aspect           | Value                     |
+| Aspect | Value |
 | ---------------- | ------------------------- |
-| **Best case**    | O(n) -- already sorted     |
-| **Worst case**   | O(n^2) -- reverse sorted  |
-| **Stable**       | Yes                       |
+| **Best case** | O(n) -- already sorted |
+| **Worst case** | O(n^2) -- reverse sorted |
+| **Stable** | Yes |
 
 ```python
 FUNCTION insertionSort(arr, size)
@@ -573,27 +573,27 @@ END FUNCTION
 
 ### Comparison of Sorting Algorithms
 
-| Algorithm    | Best Case | Average | Worst Case | Stable | Memory   |
+| Algorithm | Best Case | Average | Worst Case | Stable | Memory |
 | ------------ | --------- | ------- | ---------- | ------ | -------- |
-| Bubble Sort  | O(n)      | O(n^2)  | O(n^2)     | Yes    | O(1)     |
-| Insertion Sort| O(n)     | O(n^2)  | O(n^2)     | Yes    | O(1)     |
-| Selection Sort| O(n^2)   | O(n^2)  | O(n^2)     | No     | O(1)     |
-| Binary Search | O(log n) per lookup | N/A   | N/A        | N/A    | N/A      |
+| Bubble Sort | O(n) | O(n^2) | O(n^2) | Yes | O(1) |
+| Insertion Sort| O(n) | O(n^2) | O(n^2) | Yes | O(1) |
+| Selection Sort| O(n^2) | O(n^2) | O(n^2) | No | O(1) |
+| Binary Search | O(log n) per lookup | N/A | N/A | N/A | N/A |
 
 ---
 
 ## Top-Down Design
 
 Top-down design (stepwise refinement) is a problem-solving approach where a complex problem is broken
-down into smaller, more manageable sub-problems. Each sub-problem is then further refined until the
-solutions are simple enough to implement directly.
+Down into smaller, more manageable sub-problems. Each sub-problem is then further refined until the
+Solutions are simple enough to implement directly.
 
 ### Process
 
 1. **Identify the main task:** State the overall problem in one sentence.
 2. **Decompose into sub-tasks:** Break the main task into 2--5 major sub-tasks.
 3. **Refine each sub-task:** Further break down each sub-task until each component is a simple,
-   well-defined operation.
+ well-defined operation.
 4. **Implement each component:** Write code (or pseudocode) for each leaf-level component.
 5. **Combine and test:** Integrate all components and test the complete solution.
 
@@ -611,36 +611,36 @@ solutions are simple enough to implement directly.
 **Level 2 refinement:**
 
 1. Read student data from file
-   1.1 Open file for reading
-   1.2 Read each line and parse name, scores
-   1.3 Store data in arrays
-   1.4 Close file
+ 1.1 Open file for reading
+ 1.2 Read each line and parse name, scores
+ 1.3 Store data in arrays
+ 1.4 Close file
 
 2. Calculate each student's average and grade
-   2.1 For each student, sum their scores
-   2.2 Calculate average
-   2.3 Assign grade based on average
+ 2.1 For each student, sum their scores
+ 2.2 Calculate average
+ 2.3 Assign grade based on average
 
 3. Display the report
-   3.1 Print header
-   3.2 For each student, print name, scores, average, grade
-   3.3 Print class statistics (class average, highest, lowest)
+ 3.1 Print header
+ 3.2 For each student, print name, scores, average, grade
+ 3.3 Print class statistics (class average, highest, lowest)
 
 Each leaf-level component (1.1, 1.2, 1.3, 1.4, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3) can be implemented as
-a simple function or procedure.
+A simple function or procedure.
 
 </details>
 
 ### Advantages of Top-Down Design
 
-| Advantage                 | Description                                                         |
+| Advantage | Description |
 | ------------------------- | ------------------------------------------------------------------- |
-| **Manageability**         | Large problems become manageable                                     |
-| **Clarity**               | Each component has a clear, single responsibility                   |
-| **Reusability**           | Well-defined components can be reused in other programs              |
-| **Testability**           | Each component can be tested independently                           |
-| **Teamwork**              | Different team members can work on different components simultaneously |
-| **Easier debugging**      | Errors can be isolated to specific components                       |
+| **Manageability** | Large problems become manageable |
+| **Clarity** | Each component has a clear, single responsibility |
+| **Reusability** | Well-defined components can be reused in other programs |
+| **Testability** | Each component can be tested independently |
+| **Teamwork** | Different team members can work on different components simultaneously |
+| **Easier debugging** | Errors can be isolated to specific components |
 
 ---
 
@@ -648,48 +648,48 @@ a simple function or procedure.
 
 ### Flowchart Symbols
 
-| Symbol            | Shape         | Meaning                          |
+| Symbol | Shape | Meaning |
 | ----------------- | ------------- | -------------------------------- |
-| **Start/End**     | Oval          | Beginning or end of the program   |
-| **Input/Output**  | Parallelogram  | Data input or output              |
-| **Process**       | Rectangle     | A calculation or assignment       |
-| **Decision**      | Diamond        | A conditional branch (Yes/No)     |
-| **Flow arrow**    | Arrow         | Direction of flow                 |
-| **Connector**     | Circle         | Connects to another part of the flowchart |
-| **Subroutine**    | Rectangle with double sides | A call to a function/procedure |
+| **Start/End** | Oval | Beginning or end of the program |
+| **Input/Output** | Parallelogram | Data input or output |
+| **Process** | Rectangle | A calculation or assignment |
+| **Decision** | Diamond | A conditional branch (Yes/No) |
+| **Flow arrow** | Arrow | Direction of flow |
+| **Connector** | Circle | Connects to another part of the flowchart |
+| **Subroutine** | Rectangle with double sides | A call to a function/procedure |
 
 ### Pseudocode Conventions for DSE
 
 The DSE ICT examination uses structured pseudocode. Key conventions:
 
-| Construct          | Syntax                                                        |
+| Construct | Syntax |
 | ------------------ | ------------------------------------------------------------- |
-| **Start/End**      | `BEGIN` ... `END`                                             |
-| **Assignment**     | `SET variable = expression`                                   |
-| **Input**          | `INPUT variable`                                              |
-| **Output**         | `OUTPUT expression`                                           |
-| **IF**             | `IF condition THEN ... ELSE ... ENDIF`                        |
-| **FOR**            | `FOR counter = start TO end ... NEXT counter`                 |
-| **WHILE**          | `WHILE condition ... ENDWHILE`                                |
-| **REPEAT-UNTIL**   | `REPEAT ... UNTIL condition`                                  |
-| **Function**       | `FUNCTION name(parameters) ... RETURN value END FUNCTION`     |
-| **Procedure**      | `PROCEDURE name(parameters) ... END PROCEDURE`                |
-| **Array access**   | `array[index]`                                                |
-| **Comment**        | `// This is a comment`                                         |
+| **Start/End** | `BEGIN` ... `END` |
+| **Assignment** | `SET variable = expression` |
+| **Input** | `INPUT variable` |
+| **Output** | `OUTPUT expression` |
+| **IF** | `IF condition THEN ... ELSE ... ENDIF` |
+| **FOR** | `FOR counter = start TO end ... NEXT counter` |
+| **WHILE** | `WHILE condition ... ENDWHILE` |
+| **REPEAT-UNTIL** | `REPEAT ... UNTIL condition` |
+| **Function** | `FUNCTION name(parameters) ... RETURN value END FUNCTION` |
+| **Procedure** | `PROCEDURE name(parameters) ... END PROCEDURE` |
+| **Array access** | `array[index]` |
+| **Comment** | `// This is a comment` |
 
 ### Converting Between Flowcharts and Pseudocode
 
 Every flowchart symbol maps directly to pseudocode:
 
-| Flowchart Symbol | Pseudocode Equivalent                                         |
+| Flowchart Symbol | Pseudocode Equivalent |
 | --------------- | ------------------------------------------------------------ |
-| Oval (Start)     | `BEGIN`                                                      |
-| Parallelogram (Input) | `INPUT variable`                                          |
-| Rectangle (Process) | `SET variable = expression`                               |
-| Diamond (Decision) | `IF condition THEN ... ELSE ... ENDIF`                      |
-| Parallelogram (Output) | `OUTPUT expression`                                       |
-| Oval (End)       | `END`                                                        |
-| Arrow (loop)     | `FOR ... NEXT` or `WHILE ... ENDWHILE`                        |
+| Oval (Start) | `BEGIN` |
+| Parallelogram (Input) | `INPUT variable` |
+| Rectangle (Process) | `SET variable = expression` |
+| Diamond (Decision) | `IF condition THEN ... ELSE ... ENDIF` |
+| Parallelogram (Output) | `OUTPUT expression` |
+| Oval (End) | `END` |
+| Arrow (loop) | `FOR ... NEXT` or `WHILE ... ENDWHILE` |
 
 ---
 
@@ -697,52 +697,52 @@ Every flowchart symbol maps directly to pseudocode:
 
 ### Types of Errors
 
-| Error Type       | Description                                                      | Detected When     | Example                         |
+| Error Type | Description | Detected When | Example |
 | ---------------- | ---------------------------------------------------------------- | ----------------- | ------------------------------- |
-| **Syntax error** | Code violates the language's grammar rules                      | Compilation       | Missing `THEN` in IF statement   |
-| **Logic error**  | Program runs but produces incorrect results                    | During testing    | Using `>` instead of `>=`       |
-| **Runtime error**| Program crashes during execution due to an invalid operation   | During execution  | Division by zero, array out of bounds |
+| **Syntax error** | Code violates the language's grammar rules | Compilation | Missing `THEN` in IF statement |
+| **Logic error** | Program runs but produces incorrect results | During testing | Using `>` instead of `>=` |
+| **Runtime error**| Program crashes during execution due to an invalid operation | During execution | Division by zero, array out of bounds |
 
 ### Debugging Techniques
 
-| Technique              | Description                                                    |
+| Technique | Description |
 | ---------------------- | -------------------------------------------------------------- |
-| **Trace tables**       | Manually trace through the algorithm recording variable values  |
-| **Print statements**   | Add OUTPUT statements at key points to inspect variable values |
-| **Dry run**            | Execute the algorithm on paper with sample data                |
-| **Breakpoints**        | Pause execution at specific lines (in an IDE)                  |
-| **Step-through**       | Execute one line at a time, inspecting variables               |
-| **Rubber ducking**     | Explain the code line by line to identify the error            |
+| **Trace tables** | Manually trace through the algorithm recording variable values |
+| **Print statements** | Add OUTPUT statements at key points to inspect variable values |
+| **Dry run** | Execute the algorithm on paper with sample data |
+| **Breakpoints** | Pause execution at specific lines (in an IDE) |
+| **Step-through** | Execute one line at a time, inspecting variables |
+| **Rubber ducking** | Explain the code line by line to identify the error |
 
 ### Testing Strategies
 
-| Testing Type       | Description                                                    |
+| Testing Type | Description |
 | ------------------ | -------------------------------------------------------------- |
-| **Normal data**    | Test with typical, expected input values                       |
-| **Boundary data**  | Test with values at the edges of valid ranges (e.g., 0, 100)  |
+| **Normal data** | Test with typical, expected input values |
+| **Boundary data** | Test with values at the edges of valid ranges (e.g., 0, 100) |
 | **Erroneous data** | Test with invalid input (e.g., negative age, non-numeric input)|
-| **Extreme data**   | Test with very large or very small values                     |
-| **Absent data**    | Test with empty or missing input                               |
+| **Extreme data** | Test with very large or very small values |
+| **Absent data** | Test with empty or missing input |
 
 <details>
 <summary>Worked Example: Testing a Grade Program</summary>
 
 Program: Assign grades based on score (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F: &lt; 40).
 
-| Test Case   | Input | Expected Output | Purpose          |
+| Test Case | Input | Expected Output | Purpose |
 | ----------- | ----- | --------------- | ---------------- |
-| Normal      | 75    | B               | Typical input    |
-| Normal      | 45    | C               | Typical input    |
-| Boundary    | 80    | A               | Edge of A range  |
-| Boundary    | 79    | B               | Just below A     |
-| Boundary    | 60    | B               | Edge of B range  |
-| Boundary    | 40    | C               | Edge of C range  |
-| Boundary    | 39    | F               | Just below C     |
-| Boundary    | 0     | F               | Minimum valid    |
-| Boundary    | 100   | A               | Maximum valid    |
-| Erroneous   | -5    | Error message   | Negative score   |
-| Erroneous   | 105   | Error message   | Score exceeds max|
-| Erroneous   | "abc" | Error message  | Non-numeric input|
+| Normal | 75 | B | Typical input |
+| Normal | 45 | C | Typical input |
+| Boundary | 80 | A | Edge of A range |
+| Boundary | 79 | B | Just below A |
+| Boundary | 60 | B | Edge of B range |
+| Boundary | 40 | C | Edge of C range |
+| Boundary | 39 | F | Just below C |
+| Boundary | 0 | F | Minimum valid |
+| Boundary | 100 | A | Maximum valid |
+| Erroneous | -5 | Error message | Negative score |
+| Erroneous | 105 | Error message | Score exceeds max|
+| Erroneous | "abc" | Error message | Non-numeric input|
 
 </details>
 
@@ -751,37 +751,37 @@ Program: Assign grades based on score (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F:
 ## Common Pitfalls
 
 1. **Off-by-one errors in loops:** When iterating through an array of size N, the loop should run from
-   0 to N-1 (inclusive), not 0 to N. Accessing index N causes an out-of-bounds error.
+ 0 to N-1 (inclusive), not 0 to N. Accessing index N causes an out-of-bounds error.
 
 2. **Not initialising variables before use:** If a variable used as a maximum or minimum is initialised
-   to 0 instead of the first array element, the algorithm fails when all values are negative.
+ to 0 instead of the first array element, the algorithm fails when all values are negative.
 
 3. **Confusing assignment (=) and comparison (==):** In many languages, `=` assigns a value and `==`
-   compares. Using `=` in a condition assigns the value instead of comparing it.
+ compares. Using `=` in a condition assigns the value instead of comparing it.
 
 4. **Forgetting to update the loop counter in WHILE loops:** If the loop variable is not modified
-   inside the loop body, the condition never becomes false, causing an infinite loop.
+ inside the loop body, the condition never becomes false, causing an infinite loop.
 
 5. **Binary search requires sorted data:** Applying binary search to an unsorted array produces
-   incorrect results. Always verify the array is sorted before using binary search.
+ incorrect results. Always verify the array is sorted before using binary search.
 
 6. **String indexing:** Some pseudocode conventions use 1-based indexing (first character is at
-   position 1), while programming languages like Python use 0-based indexing. Be consistent with the
-   convention specified in the exam.
+ position 1), while programming languages like Python use 0-based indexing. Be consistent with the
+ convention specified in the exam.
 
 7. **Infinite recursion without a base case:** A recursive function must have a condition that stops
-   the recursion. Without it, the function calls itself indefinitely, eventually causing a stack
-   overflow.
+ the recursion. Without it, the function calls itself indefinitely, eventually causing a stack
+ overflow.
 
 8. **Not closing files:** Forgetting to close a file after reading or writing can cause data loss (for
-   writes) or resource leaks (files remaining locked).
+ writes) or resource leaks (files remaining locked).
 
 9. **Integer division truncation:** In many languages, dividing two integers produces an integer
-   result (truncated). `7 / 2` gives `3`, not `3.5`. Use floating-point division when a decimal
-   result is needed.
+ result (truncated). `7 / 2` gives `3`Not `3.5`. Use floating-point division when a decimal
+ result is needed.
 
 10. **Scope of variables:** Local variables inside a function are not accessible outside the function.
-    Using a variable name that conflicts with a global variable can lead to unexpected behaviour.
+ Using a variable name that conflicts with a global variable can lead to unexpected behaviour.
 
 ---
 
@@ -791,7 +791,7 @@ Program: Assign grades based on score (A: &gt;= 80, B: &gt;= 60, C: &gt;= 40, F:
 <summary>Question 1: Algorithm Design with Trace Table</summary>
 
 Write pseudocode for a program that reads N integers and counts how many are positive, how many are
-negative, and how many are zero. Trace the algorithm with input: `N = 5`, values: `3, -2, 0, 7, -1`.
+Negative, and how many are zero. Trace the algorithm with input: `N = 5`Values: `3, -2, 0, 7, -1`.
 
 Answer:
 
@@ -819,11 +819,11 @@ Trace table:
 
 | i | num | num > 0 | num < 0 | positive | negative | zero |
 | - | --- | ------- | ------- | -------- | -------- | ---- |
-| 1 | 3   | True    | -       | 1        | 0        | 0    |
-| 2 | -2  | False   | True    | 1        | 1        | 0    |
-| 3 | 0   | False   | False   | 1        | 1        | 1    |
-| 4 | 7   | True    | -       | 2        | 1        | 1    |
-| 5 | -1  | False   | True    | 2        | 2        | 1    |
+| 1 | 3 | True | - | 1 | 0 | 0 |
+| 2 | -2 | False | True | 1 | 1 | 0 |
+| 3 | 0 | False | False | 1 | 1 | 1 |
+| 4 | 7 | True | - | 2 | 1 | 1 |
+| 5 | -1 | False | True | 2 | 2 | 1 |
 
 Output: `positive = 2, negative = 2, zero = 1`
 
@@ -833,7 +833,7 @@ Output: `positive = 2, negative = 2, zero = 1`
 <summary>Question 2: String Processing</summary>
 
 Write a function in pseudocode that takes a string and returns the number of words in the string. A
-word is defined as a sequence of characters separated by spaces.
+Word is defined as a sequence of characters separated by spaces.
 
 (a) Write the pseudocode.
 
@@ -864,21 +864,21 @@ END FUNCTION
 
 (b) Trace for `"DSE ICT is challenging"` (LEN = 21):
 
-| i | char | inWord (before) | Action        | count | inWord (after) |
+| i | char | inWord (before) | Action | count | inWord (after) |
 | - | ---- | --------------- | ------------- | ----- | -------------- |
-| 1 | D    | FALSE           | New word      | 1     | TRUE           |
-| 2 | S    | TRUE            | None          | 1     | TRUE           |
-| 3 | E    | TRUE            | None          | 1     | TRUE           |
-| 4 | " "  | TRUE            | End word      | 1     | FALSE          |
-| 5 | I    | FALSE           | New word      | 2     | TRUE           |
-| 6 | C    | TRUE            | None          | 2     | TRUE           |
-| 7 | T    | TRUE            | None          | 2     | TRUE           |
-| 8 | " "  | TRUE            | End word      | 2     | FALSE          |
-| 9 | i    | FALSE           | New word      | 3     | TRUE           |
-| 10| s    | TRUE            | None          | 3     | TRUE           |
-| 11| " "  | TRUE            | End word      | 3     | FALSE          |
-| 12| c    | FALSE           | New word      | 4     | TRUE           |
-| 13-21| (remaining chars)| TRUE         | None          | 4     | TRUE           |
+| 1 | D | FALSE | New word | 1 | TRUE |
+| 2 | S | TRUE | None | 1 | TRUE |
+| 3 | E | TRUE | None | 1 | TRUE |
+| 4 | " " | TRUE | End word | 1 | FALSE |
+| 5 | I | FALSE | New word | 2 | TRUE |
+| 6 | C | TRUE | None | 2 | TRUE |
+| 7 | T | TRUE | None | 2 | TRUE |
+| 8 | " " | TRUE | End word | 2 | FALSE |
+| 9 | i | FALSE | New word | 3 | TRUE |
+| 10| s | TRUE | None | 3 | TRUE |
+| 11| " " | TRUE | End word | 3 | FALSE |
+| 12| c | FALSE | New word | 4 | TRUE |
+| 13-21| (remaining chars)| TRUE | None | 4 | TRUE |
 
 Result: 4 words
 
@@ -892,29 +892,29 @@ Result: 4 words
 (b) Trace a binary search for the value 7 in the sorted array: `[1, 3, 5, 7, 9, 11, 13, 15, 17]`.
 
 (c) State the maximum number of comparisons needed to search an array of 1000 elements using binary
-    search.
+ search.
 
 Answer:
 
 (a) Binary search works by comparing the target with the middle element and discarding half of the
-remaining elements each time. This strategy only works correctly if the elements are in a known order
+Remaining elements each time. This strategy only works correctly if the elements are in a known order
 (sorted ascending). If the array is unsorted, discarding half the elements based on a comparison with
-the middle element could eliminate the target, making the algorithm fail.
+The middle element could eliminate the target, making the algorithm fail.
 
-(b) Array: `[1, 3, 5, 7, 9, 11, 13, 15, 17]`, target = 7
+(b) Array: `[1, 3, 5, 7, 9, 11, 13, 15, 17]`Target = 7
 
-| Step | low | high | mid | arr[mid] | Comparison    | Action    |
+| Step | low | high | mid | arr[mid] | Comparison | Action |
 | ---- | --- | ---- | --- | -------- | ------------- | --------- |
-| 1    | 0   | 8    | 4   | 9        | 9 > 7         | high = 3  |
-| 2    | 0   | 3    | 1   | 3        | 3 < 7         | low = 2   |
-| 3    | 2   | 3    | 2   | 5        | 5 < 7         | low = 3   |
-| 4    | 3   | 3    | 3   | 7        | 7 = 7         | Found     |
+| 1 | 0 | 8 | 4 | 9 | 9 > 7 | high = 3 |
+| 2 | 0 | 3 | 1 | 3 | 3 < 7 | low = 2 |
+| 3 | 2 | 3 | 2 | 5 | 5 < 7 | low = 3 |
+| 4 | 3 | 3 | 3 | 7 | 7 = 7 | Found |
 
 Result: Found at index 3.
 
 (c) Binary search has O(log n) complexity. For n = 1000: $\log_2(1000) \approx 9.97$. The maximum
-number of comparisons is $\lceil \log_2(1000) \rceil = 10$. (The array needs at most 10 comparisons
-because $2^{10} = 1024 > 1000$.)
+Number of comparisons is $\lceil \log_2(1000) \rceil = 10$. (The array needs at most 10 comparisons
+Because $2^{10} = 1024 > 1000$.)
 
 </details>
 
@@ -939,17 +939,17 @@ Answer:
 
 **Level 2:**
 1. Read attendance data
-   1.1 Open file
-   1.2 Read each student's attendance record
-   1.3 Parse name and attendance marks
-   1.4 Store in arrays
-   1.5 Close file
+ 1.1 Open file
+ 1.2 Read each student's attendance record
+ 1.3 Parse name and attendance marks
+ 1.4 Store in arrays
+ 1.5 Close file
 2. Calculate attendance percentages
-   2.1 For each student, count P marks
-   2.2 Calculate percentage: (P count / total days) * 100
+ 2.1 For each student, count P marks
+ 2.2 Calculate percentage: (P count / total days) * 100
 3. Identify students below 80%
-   3.1 Check each student's percentage
-   3.2 Output those below 80%
+ 3.1 Check each student's percentage
+ 3.2 Output those below 80%
 
 (b)
 
@@ -996,7 +996,7 @@ END
 <summary>Question 5: Comprehensive Programming Question</summary>
 
 A shop sells items with prices stored in an array. A discount is applied based on the total purchase
-amount:
+Amount:
 
 - Total &lt; 100: no discount
 - 100 &lt;= Total &lt; 500: 5% discount
@@ -1050,3 +1050,11 @@ END
 ```
 
 </details>
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

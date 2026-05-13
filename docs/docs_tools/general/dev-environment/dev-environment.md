@@ -9,15 +9,15 @@ slug: dev-environment
 ### GPU-Accelerated Terminals
 
 Modern terminal emulators use the GPU for rendering, enabling smooth scrolling, proper Unicode
-support, and fast image rendering:
+Support, and fast image rendering:
 
-| Terminal  | Renderer     | Platform              | Key Features                                             |
+| Terminal | Renderer | Platform | Key Features |
 | --------- | ------------ | --------------------- | -------------------------------------------------------- |
-| Alacritty | Vulkan/Metal | Linux, macOS, Windows | Fastest, minimal config (YAML), GPU-first                |
-| Kitty     | OpenGL       | Linux, macOS          | Image support, tabs, ligatures, layout management        |
-| WezTerm   | WebGL/Metal  | Linux, macOS, Windows | Built-in multiplexer, Lua config, image protocol         |
-| Ghostty   | Vulkan/Metal | Linux, macOS          | New, fast, system-native font rendering                  |
-| iTerm2    | Metal        | macOS                 | macOS-only, extensive features, splits, tmux integration |
+| Alacritty | Vulkan/Metal | Linux, macOS, Windows | Fastest, minimal config (YAML), GPU-first |
+| Kitty | OpenGL | Linux, macOS | Image support, tabs, ligatures, layout management |
+| WezTerm | WebGL/Metal | Linux, macOS, Windows | Built-in multiplexer, Lua config, image protocol |
+| Ghostty | Vulkan/Metal | Linux, macOS | New, fast, system-native font rendering |
+| iTerm2 | Metal | macOS | macOS-only, extensive features, splits, tmux integration |
 
 ### Terminal Configuration
 
@@ -51,13 +51,13 @@ bindings = [
 
 A good programming font is critical for long coding sessions:
 
-| Font           | Ligatures    | Nerd Font | Notes                                        |
+| Font | Ligatures | Nerd Font | Notes |
 | -------------- | ------------ | --------- | -------------------------------------------- |
-| JetBrains Mono | Yes          | Yes       | Excellent readability, designed for code     |
-| Fira Code      | Yes          | Yes       | Popular, good for presentations              |
-| Cascadia Code  | Yes          | Yes       | Microsoft's coding font, great for terminals |
-| Iosevka        | Customizable | Yes       | Highly customizable, many variants           |
-| Monaco         | No           | No        | Classic macOS font, no ligatures             |
+| JetBrains Mono | Yes | Yes | Excellent readability, designed for code |
+| Fira Code | Yes | Yes | Popular, good for presentations |
+| Cascadia Code | Yes | Yes | Microsoft's coding font, great for terminals |
+| Iosevka | Customizable | Yes | Highly customizable, many variants |
+| Monaco | No | No | Classic macOS font, no ligatures |
 
 Install a Nerd Font variant for proper icon rendering in terminal prompts and file managers.
 
@@ -67,26 +67,26 @@ Install a Nerd Font variant for proper icon rendering in terminal prompts and fi
 
 ### Shell Comparison
 
-| Feature              | Bash                                            | Zsh                           | Fish                    |
+| Feature | Bash | Zsh | Fish |
 | -------------------- | ----------------------------------------------- | ----------------------------- | ----------------------- |
-| POSIX compliance     | Full                                            | Partial                       | No                      |
-| Script compatibility | Best                                            | Good (mostly compatible)      | Poor (different syntax) |
-| Completion           | Basic (compgen)                                 | Excellent (zsh-completions)   | Excellent (built-in)    |
-| Prompt customization | PS1/PS2/PROMPT_COMMAND                          | PROMPT expansion              | fish_prompt function    |
-| Plugin ecosystem     | Limited                                         | Oh-My-Zsh, zinit, etc.        | Fisher, oh-my-fish      |
-| Syntax highlighting  | No (external: fast-syntax-highlighting for zsh) | Yes (zsh-syntax-highlighting) | Yes (built-in)          |
-| Autosuggestions      | No (external)                                   | Yes (zsh-autosuggestions)     | Yes (built-in)          |
-| Performance          | Fast                                            | Moderate (depends on plugins) | Fast                    |
-| Learning curve       | Low                                             | Moderate                      | Low                     |
+| POSIX compliance | Full | Partial | No |
+| Script compatibility | Best | Good (mostly compatible) | Poor (different syntax) |
+| Completion | Basic (compgen) | Excellent (zsh-completions) | Excellent (built-in) |
+| Prompt customization | PS1/PS2/PROMPT_COMMAND | PROMPT expansion | fish_prompt function |
+| Plugin ecosystem | Limited | Oh-My-Zsh, zinit, etc. | Fisher, oh-my-fish |
+| Syntax highlighting | No (external: fast-syntax-highlighting for zsh) | Yes (zsh-syntax-highlighting) | Yes (built-in) |
+| Autosuggestions | No (external) | Yes (zsh-autosuggestions) | Yes (built-in) |
+| Performance | Fast | Moderate (depends on plugins) | Fast |
+| Learning curve | Low | Moderate | Low |
 
 ### Recommendation
 
 - **Zsh** for power users who want maximum customization and compatibility. Pair with a minimal
-  plugin set (zinit or znap) rather than oh-my-zsh for better performance.
+ plugin set (zinit or znap) rather than oh-my-zsh for better performance.
 - **Fish** for developers who want a great out-of-the-box experience without configuration. Fish's
-  built-in autosuggestions and syntax highlighting are excellent.
+ built-in autosuggestions and syntax highlighting are excellent.
 - **Bash** for scripting and environments where POSIX compatibility is required. Keep Bash as
-  `/bin/bash` for scripts regardless of your interactive shell choice.
+ `/bin/bash` for scripts regardless of your interactive shell choice.
 
 ---
 
@@ -95,7 +95,7 @@ Install a Nerd Font variant for proper icon rendering in terminal prompts and fi
 ### Minimal Zsh Setup (Without Oh-My-Zsh)
 
 Oh-My-Zsh is convenient but adds significant startup latency (100–300 ms). A minimal setup with
-hand-picked plugins is faster and more maintainable:
+Hand-picked plugins is faster and more maintainable:
 
 ```bash
 # ~/.zshrc
@@ -148,13 +148,13 @@ disabled = false
 
 ### Essential Zsh Plugins
 
-| Plugin                  | Function                            | Startup Cost |
+| Plugin | Function | Startup Cost |
 | ----------------------- | ----------------------------------- | ------------ |
-| zsh-autosuggestions     | Gray suggestions from history       | ~5 ms        |
-| zsh-syntax-highlighting | Real-time command syntax coloring   | ~10 ms       |
-| zsh-completions         | Additional completion definitions   | ~5 ms        |
-| fzf-tab                 | Fuzzy completion menus              | ~2 ms        |
-| z                       | Directory jumping based on frecency | ~1 ms        |
+| zsh-autosuggestions | Gray suggestions from history | ~5 ms |
+| zsh-syntax-highlighting | Real-time command syntax coloring | ~10 ms |
+| zsh-completions | Additional completion definitions | ~5 ms |
+| fzf-tab | Fuzzy completion menus | ~2 ms |
+| z | Directory jumping based on frecency | ~1 ms |
 
 ---
 
@@ -191,7 +191,7 @@ stow -D zsh
 ### Chezmoi
 
 Chezmoi is a more feature-rich dotfiles manager that supports templating, encryption, and
-cross-platform configuration:
+Cross-platform configuration:
 
 ```bash
 # Install
@@ -228,44 +228,44 @@ export PATH="/usr/local/bin:$PATH"
 ### Neovim
 
 Neovim is the modern successor to Vim, with built-in LSP, Lua scripting, and a thriving plugin
-ecosystem:
+Ecosystem:
 
 - **LazyVim** — Opinionated Neovim distribution with pre-configured LSP, completion, and
-  keybindings. Good starting point.
+ keybindings. Good starting point.
 - **AstroNvim** — Another opinionated distribution with a GUI-like experience.
 - **Kickstart.nvim** — Minimal Neovim configuration that teaches Neovim configuration from scratch.
 
 ### VS Code
 
 VS Code is the most popular editor for good reason: extensive extension ecosystem, integrated
-terminal, debugger, and Git integration.
+Terminal, debugger, and Git integration.
 
 Essential extensions:
 
-| Extension     | Function                                |
+| Extension | Function |
 | ------------- | --------------------------------------- |
-| GitLens       | Git blame, history, and comparison      |
-| Error Lens    | Inline error/warning display            |
-| Copilot       | AI-assisted code completion             |
-| Rust Analyzer | Rust language server                    |
-| Python        | Python IntelliSense, debugging, linting |
-| Go            | Go language support                     |
-| C/C++         | C/C++ IntelliSense, debugging           |
-| Prettier      | Code formatting                         |
-| ESLint        | JavaScript/TypeScript linting           |
+| GitLens | Git blame, history, and comparison |
+| Error Lens | Inline error/warning display |
+| Copilot | AI-assisted code completion |
+| Rust Analyzer | Rust language server |
+| Python | Python IntelliSense, debugging, linting |
+| Go | Go language support |
+| C/C++ | C/C++ IntelliSense, debugging |
+| Prettier | Code formatting |
+| ESLint | JavaScript/TypeScript linting |
 
 ### Key Bindings Worth Learning
 
 Regardless of editor, these keybindings improve productivity:
 
-| Action           | Vim            | VS Code        | General Benefit        |
+| Action | Vim | VS Code | General Benefit |
 | ---------------- | -------------- | -------------- | ---------------------- |
-| Split pane       | `:vsp` / `:sp` | `Ctrl+\`       | Multiple files visible |
-| Fuzzy file find  | `Ctrl-P` (fzf) | `Ctrl-P`       | Fast navigation        |
-| Go to definition | `gd`           | F12            | Code navigation        |
-| Find references  | `gr`           | Shift+F12      | Refactoring            |
-| Quick fix        | `:cw`          | `Ctrl+Shift+M` | Error navigation       |
-| Search in files  | `:Ag` / `:Rg`  | `Ctrl+Shift+F` | Code search            |
+| Split pane | `:vsp` / `:sp` | `Ctrl+\` | Multiple files visible |
+| Fuzzy file find | `Ctrl-P` (fzf) | `Ctrl-P` | Fast navigation |
+| Go to definition | `gd` | F12 | Code navigation |
+| Find references | `gr` | Shift+F12 | Refactoring |
+| Quick fix | `:cw` | `Ctrl+Shift+M` | Error navigation |
+| Search in files | `:Ag` / `:Rg` | `Ctrl+Shift+F` | Code search |
 
 ---
 
@@ -273,7 +273,7 @@ Regardless of editor, these keybindings improve productivity:
 
 ### tmux
 
-tmux provides persistent sessions, window management, and pane splitting:
+Tmux provides persistent sessions, window management, and pane splitting:
 
 ```bash
 # Install
@@ -380,20 +380,20 @@ ssh-copy-id user@remote-host
 
 ### Modern Coreutils Replacements
 
-| Tool           | Replaces                         | Key Feature                                 |
+| Tool | Replaces | Key Feature |
 | -------------- | -------------------------------- | ------------------------------------------- |
-| `fzf`          | `Ctrl+R`, `Ctrl+T`, file finding | Fuzzy finder with preview                   |
-| `ripgrep (rg)` | `grep`                           | Fast regex search, respects .gitignore      |
-| `fd`           | `find`                           | Fast file finding, intuitive syntax         |
-| `bat`          | `cat`                            | Syntax highlighting, line numbers, git diff |
-| `eza` (exa)    | `ls`                             | Colorized, icons, git status, tree view     |
-| `zoxide`       | `cd`                             | Smart directory jumping based on frecency   |
-| `delta`        | `diff`                           | Syntax-highlighted diffs with side-by-side  |
-| `tldr`         | `man`                            | Simplified, practical man pages             |
-| `jq`           | `python -m json.tool`            | Command-line JSON processor                 |
-| `httpie`       | `curl`                           | Human-friendly HTTP client                  |
-| `tokei`        | `cloc`                           | Fast code line counter                      |
-| `bottom (btm)` | `htop`                           | Modern system monitor with GPU support      |
+| `fzf` | `Ctrl+R``Ctrl+T`File finding | Fuzzy finder with preview |
+| `ripgrep (rg)` | `grep` | Fast regex search, respects .gitignore |
+| `fd` | `find` | Fast file finding, intuitive syntax |
+| `bat` | `cat` | Syntax highlighting, line numbers, git diff |
+| `eza` (exa) | `ls` | Colorized, icons, git status, tree view |
+| `zoxide` | `cd` | Smart directory jumping based on frecency |
+| `delta` | `diff` | Syntax-highlighted diffs with side-by-side |
+| `tldr` | `man` | Simplified, practical man pages |
+| `jq` | `python -m json.tool` | Command-line JSON processor |
+| `httpie` | `curl` | Human-friendly HTTP client |
+| `tokei` | `cloc` | Fast code line counter |
+| `bottom (btm)` | `htop` | Modern system monitor with GPU support |
 
 ### fzf Integration
 
@@ -461,22 +461,22 @@ nix develop  # Enter the development shell
 - **Homebrew** is the standard package manager: `brew install tmux neovim ripgrep`
 - **Xcode Command Line Tools** required for many builds: `xcode-select --install`
 - **Path differences:** Homebrew installs to `/opt/homebrew` (Apple Silicon) or `/usr/local` (Intel)
-- **BSD utilities:** macOS ships BSD versions of `sed`, `grep`, `awk`, etc. Install GNU versions via
-  Homebrew (`gsed`, `ggrep`) for compatibility with Linux.
+- **BSD utilities:** macOS ships BSD versions of `sed``grep``awk`Etc. Install GNU versions via
+ Homebrew (`gsed``ggrep`) for compatibility with Linux.
 
 ### Linux Specifics
 
 - **Package manager varies by distro:** `apt` (Debian/Ubuntu), `dnf` (Fedora), `pacman` (Arch)
-- **Systemd** manages services: `systemctl`, `journalctl`
+- **Systemd** manages services: `systemctl``journalctl`
 - **AppArmor/SELinux** may restrict terminal and editor capabilities
 - **Wayland vs X11** affects clipboard integration, screen sharing, and terminal behavior
 
 ### WSL2
 
 - **Filesystem performance:** Linux files in WSL2 are fast; Windows files accessed from WSL2 are
-  slow. Store your code in the WSL2 filesystem (`/home/`), not on `/mnt/c/`.
+ slow. Store your code in the WSL2 filesystem (`/home/`), not on `/mnt/c/`.
 - **Docker:** Docker Desktop for Windows integrates with WSL2. Alternatively, run Docker directly
-  inside WSL2 for better performance.
+ inside WSL2 for better performance.
 - **GPU passthrough:** WSL2 supports CUDA GPU passthrough for ML workloads.
 - **Systemd:** Modern WSL2 supports systemd. Enable in `/etc/wsl.conf`:
   ```ini
@@ -491,33 +491,33 @@ nix develop  # Enter the development shell
 ### Over-Engineering Your Dotfiles
 
 Spend time configuring your environment, but do not fall into the trap of endlessly tweaking your
-config instead of doing actual work. A good dotfiles setup takes a few hours to set up and then gets
-out of your way. If you are spending more time configuring your tools than using them, stop and ship
-something.
+Config instead of doing actual work. A good dotfiles setup takes a few hours to set up and then gets
+Out of your way. If you are spending more time configuring your tools than using them, stop and ship
+Something.
 
 ### Not Version-Controlling Dotfiles
 
 Without version control, a machine reinstall or switch means reconfiguring everything from scratch.
 Use GNU Stow, Chezmoi, or a bare Git repo to manage your dotfiles. Push to a private GitHub
-repository for backup and portability.
+Repository for backup and portability.
 
 ### Ignoring Shell Startup Performance
 
 A slow shell startup (more than 100 ms) compounds across every terminal you open. Profile your shell
-startup with `zprof` (Zsh) or `time zsh -i -c exit`. Oh-My-Zsh with many plugins is a common
-culprit. Switch to a minimal plugin manager (zinit, znap) or hand-pick individual plugins.
+Startup with `zprof` (Zsh) or `time zsh -i -c exit`. Oh-My-Zsh with many plugins is a common
+Culprit. Switch to a minimal plugin manager (zinit, znap) or hand-pick individual plugins.
 
 ### Using the Wrong Shell for Scripts
 
 Use Bash for scripts (shebang: `#!/usr/bin/env bash`), even if you use Zsh or Fish as your
-interactive shell. Bash scripts are more portable and widely understood. Never assume Zsh or Fish
-features are available in a script.
+Interactive shell. Bash scripts are more portable and widely understood. Never assume Zsh or Fish
+Features are available in a script.
 
 ### Storing Code on Windows Filesystem in WSL2
 
 Accessing Windows files (`/mnt/c/`) from WSL2 has significantly worse I/O performance than accessing
-native WSL2 files. This affects build times, file watching (hot reload), and Git operations. Always
-store your projects under `/home/` or another native WSL2 path.
+Native WSL2 files. This affects build times, file watching (hot reload), and Git operations. Always
+Store your projects under `/home/` or another native WSL2 path.
 
 ## Cross-Platform Configuration with Chezmoi
 
@@ -807,3 +807,11 @@ build:
         npm run build; \
     fi
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

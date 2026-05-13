@@ -8,26 +8,26 @@ categories:
   - cpp
 slug: pointers
 ---
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Pointer Arithmetic, Array Decay, and Nullability
 
 In high-level languages (Java, Python), references are opaque handles. In C++, pointers are direct
-abstractions over virtual memory addresses with distinct arithmetic capabilities dependent on the
+Abstractions over virtual memory addresses with distinct arithmetic capabilities dependent on the
 **Type System**.
 
 This module analyzes how the compiler translates pointer operations into memory offsets, the legacy
-mechanism of array decay, and the type-safe definition of nullability.
+Mechanism of array decay, and the type-safe definition of nullability.
 
 ## 1. Pointer Arithmetic Mechanics
 
 Pointer arithmetic is not integer arithmetic. It is **Typed Offset Calculation**. Adding `1` to a
-pointer does not increment the address by one byte; it increments the address by the **stride** of
-the underlying type.
+Pointer does not increment the address by one byte; it increments the address by the **stride** of
+The underlying type.
 
 ### The Arithmetic Formula
 
-Given a pointer `T* ptr`, the operation `ptr + N` resolves to:
+Given a pointer `T* ptr`The operation `ptr + N` resolves to:
 
 $$
 \mathrm{Address{}_{new} = \mathrm{Address{}_{old} + (N \times \mathrm{sizeof{}(T))
@@ -36,14 +36,14 @@ $$
 ### Architectural Implications
 
 1. **Instruction Generation:** The compiler compiles `ptr[i]` or `*(ptr + i)` into specific assembly
-   instructions like `LEA` (Load Effective Address) on x86_64, utilizing hardware scaling factors
-   (1, 2, 4, 8) if the type size matches.
+ instructions like `LEA` (Load Effective Address) on x86_64, utilizing hardware scaling factors
+ (1, 2, 4, 8) if the type size matches.
 2. **Void Pointer Restriction:** Arithmetic on `void*` is **ill-formed** in ISO C++ because
-   `sizeof(void)` is undefined.
-   - _GCC/Clang Extension:_ These compilers treat `sizeof(void)` as 1 to allow arithmetic.
-   - _Best Practice:_ Disable this extension via `-Wpointer-arith` to ensure portability.
+ `sizeof(void)` is undefined.
+ - _GCC/Clang Extension:_ These compilers treat `sizeof(void)` as 1 to allow arithmetic.
+ - _Best Practice:_ Disable this extension via `-Wpointer-arith` to ensure portability.
 3. **Difference (`ptrdiff_t`):** Subtracting two pointers (`ptrB - ptrA`) returns a signed integer
-   of type `std::ptrdiff_t`, representing the number of elements (not bytes) between them.
+ of type `std::ptrdiff_t`Representing the number of elements (not bytes) between them.
 
 ```cpp
 struct Block {
@@ -93,19 +93,19 @@ void byte_offset_examples() {
 
 ### The Commutativity of Indexing
 
-Because `arr[i]` is defined as `*(arr + i)`, and addition is commutative, C++ technically supports
-the syntax `i[arr]`.
+Because `arr[i]` is defined as `*(arr + i)`And addition is commutative, C++ technically supports
+The syntax `i[arr]`.
 
 - `arr + i` $\to$ Address of i-th element.
 - `i + arr` $\to$ Address of i-th element.
 - **Conclusion:** Never use `i[arr]` in production code, but understand it to grasp the underlying
-  arithmetic mechanics.
+ arithmetic mechanics.
 
 ### Pointer Arithmetic Bounds [N4950 §7.6.6]
 
 Pointer arithmetic is only well-defined within an array object and one past the end. Going beyond
-one-past-the-end or before the beginning of the array is undefined behavior, even if the pointer is
-not dereferenced:
+One-past-the-end or before the beginning of the array is undefined behavior, even if the pointer is
+Not dereferenced:
 
 ```cpp
 int arr[5] = {};
@@ -117,21 +117,21 @@ int* r = arr - 1;    // UB: before the beginning
 ### Formal Proof of One-Past-The-End [N4950 §7.6.6.6]
 
 **Claim:** A pointer to one past the last element of an array is well-defined, but dereferencing it
-is undefined behavior.
+Is undefined behavior.
 
 **Proof:**
 
 1. By [N4950 §7.6.6.6], if an expression `e` points to element $x[i]$ of an array object `x` with
-   $n$ elements, the expressions `e + j` and `e - j` point to (respectively) element $x[i + j]$ and
-   $x[i - j]$, provided $0 \le i + j \le n$.
+ $n$ elements, the expressions `e + j` and `e - j` point to (respectively) element $x[i + j]$ and
+ $x[i - j]$Provided $0 \le i + j \le n$.
 
-2. When $i + j = n$, the pointer points "one past the last element." The Standard explicitly permits
-   this pointer value. The constraint $0 \le i + j \le n$ (note the inclusive upper bound) is the
-   formal statement of the one-past-the-end rule.
+2. When $i + j = n$The pointer points "one past the last element." The Standard explicitly permits
+ this pointer value. The constraint $0 \le i + j \le n$ (note the inclusive upper bound) is the
+ formal statement of the one-past-the-end rule.
 
 3. By [N4950 §7.6.1.1], the indirection operator `*` requires that its operand be a pointer to an
-   object. The one-past-the-end pointer does not point to any object — it points to the position
-   immediately after the last element.
+ object. The one-past-the-end pointer does not point to any object — it points to the position
+ immediately after the last element.
 
 4. Therefore, `*(arr + n)` is undefined behavior. QED.
 
@@ -142,13 +142,13 @@ is undefined behavior.
 **Proof:**
 
 1. By [N4950 §7.6.6.6], pointer addition is well-defined only when the result points to an element
-   of the array or one past the last element.
-2. `arr + 6` points to two past the last element of `int arr[5]`, which violates the constraint
-   $i + j \le n$ (since $0 + 6 = 6 \gt 5$).
+ of the array or one past the last element.
+2. `arr + 6` points to two past the last element of `int arr[5]`Which violates the constraint
+ $i + j \le n$ (since $0 + 6 = 6 \gt 5$).
 3. The Standard states that computing such a pointer value is undefined behavior. QED.
 
 This means you cannot use pointer arithmetic as a general address computation mechanism. Even
-forming an out-of-bounds pointer (without dereferencing it) is UB.
+Forming an out-of-bounds pointer (without dereferencing it) is UB.
 
 ### Pointer Subtraction Constraints
 
@@ -197,7 +197,7 @@ int result = math_op(3, 4);  // 7
 ### Pointer-to-Member (Data and Function)
 
 Pointers to members are distinct from regular pointers. A pointer-to-member is an offset within a
-class layout, not a memory address. It cannot be dereferenced without an object instance [N4950
+Class layout, not a memory address. It cannot be dereferenced without an object instance [N4950
 §7.6.5]:
 
 ```cpp
@@ -223,9 +223,9 @@ int val2 = ptr->*pm;   // val2 = 42
 
 #### Pointer-to-Member Implementation
 
-A pointer-to-data-member is typically implemented as a byte offset from the base of the object. For
-single-inheritance layouts, this is a simple integer. For multiple inheritance, the offset may need
-adjustment when the object pointer is cast to a base class:
+A pointer-to-data-member is implemented as a byte offset from the base of the object. For
+Single-inheritance layouts, this is a simple integer. For multiple inheritance, the offset may need
+Adjustment when the object pointer is cast to a base class:
 
 ```cpp
 struct Base {
@@ -249,8 +249,8 @@ For virtual inheritance, the implementation is more complex — the offset may b
 ### Void Pointers
 
 `void*` is a generic pointer type that can hold the address of any object. It cannot be dereferenced
-or used for arithmetic (without a cast) because the type information needed to determine the size
-and alignment of the pointed-to object is absent [N4950 §7.3.7]:
+Or used for arithmetic (without a cast) because the type information needed to determine the size
+And alignment of the pointed-to object is absent [N4950 §7.3.7]:
 
 ```cpp
 int x = 42;
@@ -263,7 +263,7 @@ std::cout << *pi;     // 42
 ### Incomplete Type Pointers
 
 Pointers to incomplete types (forward-declared structs/classes) are valid. You can declare and pass
-them, but you cannot dereference them or perform pointer arithmetic until the type is complete:
+Them, but you cannot dereference them or perform pointer arithmetic until the type is complete:
 
 ```cpp
 struct Forward;  // incomplete type
@@ -277,17 +277,17 @@ void process(Forward* p);  // OK: parameter declaration does not require complet
 
 ### Comparison Table of Pointer Types
 
-| Type                    | Arithmetic | Dereference | sizeof       | Implicitly Convertible To   |
+| Type | Arithmetic | Dereference | sizeof | Implicitly Convertible To |
 | :---------------------- | :--------- | :---------- | :----------- | :-------------------------- |
-| `T*` (object pointer)   | Yes        | Yes         | Platform ptr | `void*`, `const void*`      |
-| `const T*`              | Yes        | Yes (r/o)   | Platform ptr | `void*`, `const void*`      |
-| `void*`                 | No         | No          | Platform ptr | (none)                      |
-| `T(*)()` (function ptr) | No         | Yes (call)  | Platform ptr | `void(*)()`                 |
-| `T C::*` (member ptr)   | No         | With object | 2x ptr size  | (none — requires object)    |
-| `nullptr_t`             | No         | No          | Platform ptr | Any object/function pointer |
+| `T*` (object pointer) | Yes | Yes | Platform ptr | `void*``const void*` |
+| `const T*` | Yes | Yes (r/o) | Platform ptr | `void*``const void*` |
+| `void*` | No | No | Platform ptr | (none) |
+| `T(*)()` (function ptr) | No | Yes (call) | Platform ptr | `void(*)()` |
+| `T C::*` (member ptr) | No | With object | 2x ptr size | (none — requires object) |
+| `nullptr_t` | No | No | Platform ptr | Any object/function pointer |
 
 Note: On most platforms, `sizeof(T*)` is 8 bytes (64-bit) or 4 bytes (32-bit). Pointer-to-member may
-be larger due to the need for virtual base adjustment.
+Be larger due to the need for virtual base adjustment.
 
 ## 3. Array Decay
 
@@ -332,7 +332,7 @@ decltype(arr) another = {6, 7, 8, 9, 10};  // another is int[5] — no decay
 ### Multi-Dimensional Array Decay
 
 Multi-dimensional arrays decay only the first dimension. A `T[M][N]` decays to `T(*)[N]` — a pointer
-to an array of `N` elements. The inner dimension is preserved:
+To an array of `N` elements. The inner dimension is preserved:
 
 ```cpp
 #include <iostream>
@@ -363,8 +363,8 @@ int main() {
 ```
 
 **Key insight:** The compiler needs the inner dimension size to compute pointer arithmetic. When the
-first dimension decays, `matrix + 1` must advance by `sizeof(int) * 3` bytes (the inner array size),
-so the compiler must know `N`.
+First dimension decays, `matrix + 1` must advance by `sizeof(int) * 3` bytes (the inner array size),
+So the compiler must know `N`.
 
 ### Preventing Decay
 
@@ -390,7 +390,7 @@ void process_safe(int (&arr)[N]) {
 #### C. `std::span` (The View)
 
 Introduced in C++20, `std::span` is the standard replacement for `ptr + size` interfaces. It
-automatically constructs from C-arrays and `std::array` without decay logic losing the size.
+Automatically constructs from C-arrays and `std::array` without decay logic losing the size.
 
 ```cpp
 #include <span>
@@ -413,7 +413,7 @@ In C++, pointers are "Nullable References."
 ### The `nullptr` Keyword (C++11)
 
 Prior to C++11, the macro `NULL` was defined as integer `0`. This caused ambiguity in overload
-resolution.
+Resolution.
 
 ```cpp
 void func(int x);
@@ -423,7 +423,7 @@ func(NULL); // Calls func(int) because NULL is 0.
 ```
 
 `nullptr` is a keyword literal of type `std::nullptr_t`. It is implicitly convertible to any pointer
-type, but **not** to integral types (except `bool`).
+Type, but **not** to integral types (except `bool`).
 
 ```cpp
 func(nullptr); // Calls func(char*) unambiguously.
@@ -431,20 +431,20 @@ func(nullptr); // Calls func(char*) unambiguously.
 
 ### `nullptr` vs `NULL` vs `0`
 
-| Literal   | Type                                         | Convertible to           | Recommended? |
+| Literal | Type | Convertible to | Recommended? |
 | --------- | -------------------------------------------- | ------------------------ | ------------ |
-| `0`       | `int`                                        | Any integral type        | No           |
-| `NULL`    | Implementation-defined (usually `0` or `0L`) | Pointers + integral      | No           |
-| `nullptr` | `std::nullptr_t`                             | Any pointer type, `bool` | **Yes**      |
+| `0` | `int` | Any integral type | No |
+| `NULL` | Implementation-defined ( `0` or `0L`) | Pointers + integral | No |
+| `nullptr` | `std::nullptr_t` | Any pointer type, `bool` | **Yes** |
 
 `nullptr` is the only null pointer constant that cannot be confused with an integer. Modern C++ code
-should always use `nullptr`.
+Should always use `nullptr`.
 
 ### `nullptr` and Overload Resolution [N4950 §12.4.3.2.2]
 
 `nullptr` has type `std::nullptr_t`. In overload resolution, the conversion from `std::nullptr_t` to
-any pointer type ranks as an **exact match** (null pointer constant conversion), while the
-conversion from `std::nullptr_t` to `int` would require a boolean conversion (rank: Conversion).
+Any pointer type ranks as an **exact match** (null pointer constant conversion), while the
+Conversion from `std::nullptr_t` to `int` would require a boolean conversion (rank: Conversion).
 This ensures `nullptr` always prefers pointer overloads:
 
 ```cpp
@@ -462,8 +462,8 @@ f(NULL);      // f(int): NULL is typically 0, which is an int literal
 Dereferencing `nullptr` is **Undefined Behavior**. It is not guaranteed to segfault.
 
 **Compiler Optimization Risk:** If the compiler can deduce that a dereference happens, it is allowed
-to assume the pointer is not null for the rest of the execution path, potentially optimizing out
-subsequent null checks.
+To assume the pointer is not null for the rest of the execution path, potentially optimizing out
+Subsequent null checks.
 
 ```cpp
 void dangerous(int* ptr) {
@@ -483,22 +483,22 @@ void dangerous(int* ptr) {
 In modern C++23 design, raw pointers (`T*`) should **only** be used for:
 
 1. **Nullable, Non-Owning Views:** Pointing to an object owned by `unique_ptr` or the stack, where
-   the relationship is optional.
+ the relationship is optional.
 2. **Legacy Interfaces:** Interacting with C libraries.
 
 For non-nullable, non-owning views, use `T&` (Reference) or `std::reference_wrapper<T>`.
 
-| Semantics                 | Type                                         |
+| Semantics | Type |
 | :------------------------ | :------------------------------------------- |
-| Ownership + Nullable      | `std::unique_ptr<T>`                         |
-| Ownership + Non-Nullable  | `std::unique_ptr<T>` (Assert on dereference) |
-| Non-Owning + Nullable     | `T*`                                         |
-| Non-Owning + Non-Nullable | `T&`                                         |
+| Ownership + Nullable | `std::unique_ptr<T>` |
+| Ownership + Non-Nullable | `std::unique_ptr<T>` (Assert on dereference) |
+| Non-Owning + Nullable | `T*` |
+| Non-Owning + Non-Nullable | `T&` |
 
 ### `std::assume` (C++23)
 
 In performance-critical code where a pointer is guaranteed to be non-null by invariants not visible
-to the compiler, C++23 provides `[[assume(...)]]` to assist the optimizer.
+To the compiler, C++23 provides `[[assume(...)]]` to assist the optimizer.
 
 ```cpp
 void fast_path(int* ptr) {
@@ -545,26 +545,26 @@ void safety_hierarchy() {
 Raw pointers remain essential in modern C++ for:
 
 1. **Non-owning observation.** When lifetime is guaranteed by design (parent-child, tree
-   structures).
+ structures).
 2. **C interoperability.** C APIs use raw pointers exclusively.
 3. **Performance-critical paths.** When atomic operations from smart pointers are unacceptable.
 4. **Custom data structures.** Linked lists, trees, and graphs often use raw pointers internally
-   while exposing smart pointer interfaces.
+ while exposing smart pointer interfaces.
 
 ## 6. Strict Aliasing and Pointers [N4950 §6.8.4]
 
 The strict aliasing rule prohibits accessing an object through a pointer of a different type (with a
-few exceptions). Violating this rule is undefined behavior, even if the access appears to work.
+Few exceptions). Violating this rule is undefined behavior, even if the access appears to work.
 
 ### The Rule
 
 A program shall not access the stored value of an object through a glvalue of a type that is not
-similar to one of the following [N4950 §6.8.4.4]:
+Similar to one of the following [N4950 §6.8.4.4]:
 
 1. The dynamic type of the object.
 2. A cv-qualified version of the dynamic type.
 3. A type that is the signed or unsigned variant of the dynamic type.
-4. A type that is `char`, `unsigned char`, or `std::byte` (byte access is always allowed).
+4. A type that is `char``unsigned char`Or `std::byte` (byte access is always allowed).
 5. An aggregate or union type that contains one of the above types among its members.
 
 ### Violation Example
@@ -579,7 +579,7 @@ float pun_to_int(float f) {
 ```
 
 The compiler may assume that a write through `float*` does not affect a read through `int*` at the
-same address, and may reorder or eliminate either operation.
+Same address, and may reorder or eliminate either operation.
 
 ### Compliant Alternatives
 
@@ -597,31 +597,31 @@ float safe_pun(float f) {
 
 By [N4950 §6.8.4.4], `memcpy` is exempt from strict aliasing because it accesses objects through
 `char*` (or `unsigned char*`), which is always permitted. `std::bit_cast` [N4950 §19.5.3] provides a
-compile-time type punning facility that is guaranteed correct.
+Compile-time type punning facility that is guaranteed correct.
 
 ## 7. Alignment and Pointers
 
-Every type `T` has an alignment requirement, `alignof(T)`, which is a power-of-two integer. A
-pointer `T*` is guaranteed to point to an address that is a multiple of `alignof(T)` [N4950 §7.7.2].
+Every type `T` has an alignment requirement, `alignof(T)`Which is a power-of-two integer. A
+Pointer `T*` is guaranteed to point to an address that is a multiple of `alignof(T)` [N4950 §7.7.2].
 
 ### Alignment Requirements by Type
 
-| Type                      | Typical Alignment | Notes                           |
+| Type | Typical Alignment | Notes |
 | :------------------------ | :---------------- | :------------------------------ |
-| `char`, `int8_t`          | 1                 | Any address                     |
-| `int16_t`, `short`        | 2                 | Even address                    |
-| `int32_t`, `int`, `float` | 4                 | 4-byte aligned                  |
-| `int64_t`, `double`       | 8                 | 8-byte aligned                  |
-| `__int128`                | 16                | 16-byte aligned                 |
-| `__m128`                  | 16                | SSE requirement                 |
-| `__m256`                  | 32                | AVX requirement                 |
-| `max_align_t`             | 16 (typical)      | Maximum fundamental alignment   |
-| `std::max_align_t`        | Implementation    | Alignment of the largest scalar |
+| `char``int8_t` | 1 | Any address |
+| `int16_t``short` | 2 | Even address |
+| `int32_t``int``float` | 4 | 4-byte aligned |
+| `int64_t``double` | 8 | 8-byte aligned |
+| `__int128` | 16 | 16-byte aligned |
+| `__m128` | 16 | SSE requirement |
+| `__m256` | 32 | AVX requirement |
+| `max_align_t` | 16 (typical) | Maximum fundamental alignment |
+| `std::max_align_t` | Implementation | Alignment of the largest scalar |
 
 ### `std::aligned_alloc` for Custom Alignment
 
 When allocating memory with alignment requirements exceeding `alignof(std::max_align_t)` (over-
-aligned types), use `std::aligned_alloc`:
+Aligned types), use `std::aligned_alloc`:
 
 ```cpp
 #include <cstdlib>
@@ -696,7 +696,7 @@ void buffer_overflow() {
 ### Misaligned Access
 
 Casting a pointer to a type with stricter alignment requirements can cause misaligned access, which
-is undefined behavior on some architectures (notably ARM) and a performance penalty on others (x86):
+Is undefined behavior on some architectures (notably ARM) and a performance penalty on others (x86):
 
 ```cpp
 #include <iostream>
@@ -739,13 +739,13 @@ void use_after_free() {
 ```
 
 **Mitigation:** Always use smart pointers. `std::unique_ptr` and `std::shared_ptr` eliminate these
-classes of bugs by construction.
+Classes of bugs by construction.
 
 ### Comparing Pointers from Different Arrays
 
-Comparing relational operators (`&lt;`, `&gt;`, `&lt;=`, `&gt;=`) on pointers that do not point into
-the same array is undefined behavior [N4950 §7.6.9]. Equality operators (`==`, `!=`) are always
-well-defined:
+Comparing relational operators (`&lt;``&gt;``&lt;=``&gt;=`) on pointers that do not point into
+The same array is undefined behavior [N4950 §7.6.9]. Equality operators (`==``!=`) are always
+Well-defined:
 
 ```cpp
 int a[5];
@@ -775,3 +775,11 @@ int* q = p + 1;  // UB: arithmetic on null pointer
 - [The Heap](../1_data_layout/5_heap.md)
 - [Reference Lifetime](2_reference_lifetime.md)
 - [Type Punning](3_type_punning.md)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

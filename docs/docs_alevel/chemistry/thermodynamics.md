@@ -30,7 +30,7 @@ $$
 H = U + pV
 $$
 
-where $U$ is internal energy, $p$ is pressure, and $V$ is volume. For constant-pressure processes (the usual condition in chemistry):
+Where $U$ is internal energy, $p$ is pressure, and $V$ is volume. For constant-pressure processes (the usual condition in chemistry):
 
 $$
 \Delta H = q_p
@@ -52,19 +52,19 @@ $$
 \Delta H = \Delta U + \Delta(pV)
 $$
 
-For reactions involving only solids and liquids, $\Delta(pV) \approx 0$, so $\Delta H \approx \Delta U$. For reactions involving gases:
+For reactions involving only solids and liquids, $\Delta(pV) \approx 0$So $\Delta H \approx \Delta U$. For reactions involving gases:
 
 $$
 \Delta(pV) = \Delta n_g RT
 $$
 
-where $\Delta n_g$ is the change in moles of gas.
+Where $\Delta n_g$ is the change in moles of gas.
 
 ### Standard Conditions
 
 Standard enthalpy changes are measured under the following conditions:
 
-- Pressure: $100\,\mathrm{kPa}$ ($1\,\mathrm{bar}$, approximately $1\,\mathrm{atm}$).
+- Pressure: $100\,\mathrm{kPa}$ ($1\,\mathrm{bar}$Approximately $1\,\mathrm{atm}$).
 - Temperature: $298\,\mathrm{K}$ ($25^\circ\mathrm{C}$), unless otherwise stated.
 - Concentration: $1\,\mathrm{mol/dm}^3$ for solutions.
 - All substances in their standard states (most stable form at the specified conditions).
@@ -121,7 +121,7 @@ The enthalpy change when one mole of a compound is formed from its constituent e
 The enthalpy change when one mole of a substance is completely burned in excess oxygen under standard conditions.
 
 - Combustion reactions are always exothermic ($\Delta H_c^\circ \lt 0$).
-- The products must be in their standard states ($\mathrm{CO}_2(g)$, $\mathrm{H}_2\mathrm{O}(l)$, etc.).
+- The products must be in their standard states ($\mathrm{CO}_2(g)$$\mathrm{H}_2\mathrm{O}(l)$Etc.).
 
 ### Standard Enthalpy of Atomisation ($\Delta H_\mathrm{at}^\circ$)
 
@@ -197,10 +197,10 @@ $$
 \Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆N_A M z^+ z^- e^2◆RB◆◆LB◆4\pi\varepsilon_0 r_0◆RB◆\left(1 - \frac{1}{n}\right)
 $$
 
-where:
+Where:
 - $N_A$ is Avogadro's constant
 - $M$ is the Madelung constant (depends on the lattice geometry)
-- $z^+$, $z^-$ are the ion charges
+- $z^+$$z^-$ are the ion charges
 - $e$ is the elementary charge
 - $\varepsilon_0$ is the permittivity of free space
 - $r_0$ is the sum of the ionic radii
@@ -210,7 +210,7 @@ This equation predicts purely ionic bonding. Differences between theoretical and
 
 ### Polarisation and Covalent Character (Fajans' Rules)
 
-A small, highly charged cation (high charge density) can polarise a large, easily deformable anion, drawing electron density towards itself and introducing covalent character.
+A small, highly charged cation (high charge density) can polarise a large, deformable anion, drawing electron density towards itself and introducing covalent character.
 
 Fajans' Rules predict increasing covalent character when:
 1. The cation is small and/or highly charged (e.g. $\mathrm{Al}^{3+}$).
@@ -255,7 +255,7 @@ $$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
-Given: $S^\circ(\mathrm{CaCO}_3) = 92.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{CaO}) = 38.1\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{CO}_2) = 213.7\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+Given: $S^\circ(\mathrm{CaCO}_3) = 92.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CaO}) = 38.1\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CO}_2) = 213.7\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta S^\circ = (38.1 + 213.7) - 92.9 = 251.8 - 92.9 = +158.9\,\mathrm{J\,mol^{-1}\,K^{-1}}
@@ -301,7 +301,7 @@ $$
 \Delta G^\circ = -RT\ln K
 $$
 
-where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ and $T$ is in Kelvin.
+Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ and $T$ is in Kelvin.
 
 When $\Delta G^\circ = 0$: $K = 1$ (equal amounts of reactants and products at equilibrium).
 
@@ -324,7 +324,7 @@ $$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +178\,\mathrm{kJ/mol}$, $\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 At what temperature does the reaction become spontaneous?
 
@@ -332,7 +332,7 @@ $$
 \Delta G^\circ = 0 \implies T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
-Above $1113\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
+Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
 
 ### Gibbs-Helmholtz Equation
 
@@ -358,9 +358,9 @@ $$
 
 This equation allows prediction of the equilibrium position from thermodynamic data:
 
-- When $\Delta G^\circ \lt 0$: $K \gt 1$, products are favoured at equilibrium.
-- When $\Delta G^\circ = 0$: $K = 1$, reactants and products are present in equal amounts.
-- When $\Delta G^\circ \gt 0$: $K \lt 1$, reactants are favoured at equilibrium.
+- When $\Delta G^\circ \lt 0$: $K \gt 1$Products are favoured at equilibrium.
+- When $\Delta G^\circ = 0$: $K = 1$Reactants and products are present in equal amounts.
+- When $\Delta G^\circ \gt 0$: $K \lt 1$Reactants are favoured at equilibrium.
 
 **Worked Example.** Calculate $K$ at $298\,\mathrm{K}$ for the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ given $\Delta G^\circ = +4.72\,\mathrm{kJ/mol}$.
 
@@ -368,7 +368,7 @@ $$
 K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆-4720◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-1.904) = 0.149
 $$
 
-$K = 0.149$, so reactants ($\mathrm{N}_2\mathrm{O}_4$) are favoured at equilibrium.
+$K = 0.149$So reactants ($\mathrm{N}_2\mathrm{O}_4$) are favoured at equilibrium.
 
 **Using $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ with the equilibrium expression:**
 
@@ -391,10 +391,10 @@ This is the van 't Hoff equation (linear form), which is identical in structure 
 **Coffee-cup calorimetry:** A polystyrene cup minimises heat exchange with the surroundings. The heat absorbed by the solution equals the heat released by the reaction:
 
 $$
-q = mc\Delta T
+Q = mc\Delta T
 $$
 
-where $m$ is the mass of solution (g), $c$ is the specific heat capacity ($4.18\,\mathrm{J\,g^{-1}\,K^{-1}}$ for water), and $\Delta T$ is the temperature change.
+Where $m$ is the mass of solution (g), $c$ is the specific heat capacity ($4.18\,\mathrm{J\,g^{-1}\,K^{-1}}$ for water), and $\Delta T$ is the temperature change.
 
 **Sources of error in calorimetry:**
 1. Heat loss to the surroundings (exothermic reactions underestimate $\Delta H$; endothermic reactions overestimate it).
@@ -455,7 +455,7 @@ $$
 
 3. **Using $\Delta H$ instead of $\Delta H^\circ$ in Gibbs calculations.** Standard values must be used for standard free energy calculations.
 
-4. **Forgetting units in entropy calculations.** Entropy is in $\mathrm{J\,mol^{-1}\,K^{-1}}$, not $\mathrm{kJ}$. Always convert $\Delta H$ to $\mathrm{J}$ (or $\Delta S$ to $\mathrm{kJ}$) before combining in $\Delta G = \Delta H - T\Delta S$.
+4. **Forgetting units in entropy calculations.** Entropy is in $\mathrm{J\,mol^{-1}\,K^{-1}}$Not $\mathrm{kJ}$. Always convert $\Delta H$ to $\mathrm{J}$ (or $\Delta S$ to $\mathrm{kJ}$) before combining in $\Delta G = \Delta H - T\Delta S$.
 
 5. **Misidentifying the theoretical vs experimental lattice enthalpy in Fajans' Rules discussions.** The experimental (Born-Haber) value is less exothermic when covalent character is present; the theoretical (Born-Lande) value assumes perfect ionic bonding.
 
@@ -469,7 +469,7 @@ $$
 
 Standard enthalpies of formation ($\Delta H_f^\circ$) are measured experimentally. Mean bond enthalpies are calculated as averages. When both are available, $\Delta H_f^\circ$ data give more accurate results.
 
-**When to use bond enthalpies:** Use mean bond enthalpies when $\Delta H_f^\circ$ data are not available for all species in the reaction (e.g. for gaseous atoms or free radicals).
+**When to use bond enthalpies:** Use mean bond enthalpies when $\Delta H_f^\circ$ data are not available for all species in the reaction (e.g. For gaseous atoms or free radicals).
 
 ### Worked Example: Bond Enthalpy Calculation for an Unknown Reaction
 
@@ -479,7 +479,7 @@ $$
 \mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)
 $$
 
-Using mean bond enthalpies: $\mathrm{N}\equiv\mathrm{N} = 945\,\mathrm{kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\,\mathrm{kJ/mol}$.
+Using mean bond enthalpies: $\mathrm{N}\equiv\mathrm{N} = 945\,\mathrm{kJ/mol}$$\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$$\mathrm{N}-\mathrm{H} = 391\,\mathrm{kJ/mol}$.
 
 $$
 \text{Bonds broken} = 1 \times \mathrm{N}\equiv\mathrm{N} + 3 \times \mathrm{H}-\mathrm{H} = 945 + 3(436) = 2253\,\mathrm{kJ/mol}
@@ -493,7 +493,7 @@ $$
 \Delta H = 2253 - 2346 = -93\,\mathrm{kJ/mol}
 $$
 
-The experimental value is $-92\,\mathrm{kJ/mol}$, showing good agreement.
+The experimental value is $-92\,\mathrm{kJ/mol}$Showing good agreement.
 
 ## Born-Haber Cycles and Lattice Enthalpy (Summary)
 
@@ -508,7 +508,7 @@ $$
 
 ### Factors Affecting Lattice Enthalpy
 
-1. **Ionic charge:** Higher charge $\to$ stronger electrostatic attraction $\to$ more exothermic lattice enthalpy. $\mathrm{MgO}$ ($\mathrm{Mg}^{2+}$, $\mathrm{O}^{2-}$) has a much more exothermic lattice enthalpy than $\mathrm{NaCl}$ ($\mathrm{Na}^+$, $\mathrm{Cl}^-$).
+1. **Ionic charge:** Higher charge $\to$ stronger electrostatic attraction $\to$ more exothermic lattice enthalpy. $\mathrm{MgO}$ ($\mathrm{Mg}^{2+}$$\mathrm{O}^{2-}$) has a much more exothermic lattice enthalpy than $\mathrm{NaCl}$ ($\mathrm{Na}^+$$\mathrm{Cl}^-$).
 2. **Ionic radius:** Smaller ions $\to$ shorter internuclear distance $\to$ stronger attraction $\to$ more exothermic lattice enthalpy. $\mathrm{LiF}$ has a more exothermic lattice enthalpy than $\mathrm{NaF}$ because $\mathrm{Li}^+$ is smaller than $\mathrm{Na}^+$.
 
 ### Fajans' Rules and Covalent Character
@@ -578,7 +578,7 @@ $$
 2\mathrm{NO}(g) + \mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)
 $$
 
-Given: $\Delta H^\circ = -114\,\mathrm{kJ/mol}$, $\Delta S^\circ = -146\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+Given: $\Delta H^\circ = -114\,\mathrm{kJ/mol}$$\Delta S^\circ = -146\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 Is the reaction spontaneous?
 
@@ -588,7 +588,7 @@ $$
 \Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -114 \times 10^3 - 298 \times (-146) = -114000 + 43508 = -70492\,\mathrm{J/mol} = -70.5\,\mathrm{kJ/mol}
 $$
 
-Since $\Delta G^\circ \lt 0$, the reaction is spontaneous at $298\,\mathrm{K}$. The negative $\Delta H$ dominates over the unfavourable negative $\Delta S$.
+Since $\Delta G^\circ \lt 0$The reaction is spontaneous at $298\,\mathrm{K}$. The negative $\Delta H$ dominates over the unfavourable negative $\Delta S$.
 
 </details>
 
@@ -616,7 +616,7 @@ $$
 \mathrm{HC}\equiv\mathrm{CH}(g) + 2\mathrm{H}_2(g) \to \mathrm{CH}_3\mathrm{CH}_3(g)
 $$
 
-Bond enthalpies: $\mathrm{C}\equiv\mathrm{C} = 839\,\mathrm{kJ/mol}$, $\mathrm{C}-\mathrm{C} = 347\,\mathrm{kJ/mol}$, $\mathrm{C}-\mathrm{H} = 413\,\mathrm{kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$.
+Bond enthalpies: $\mathrm{C}\equiv\mathrm{C} = 839\,\mathrm{kJ/mol}$$\mathrm{C}-\mathrm{C} = 347\,\mathrm{kJ/mol}$$\mathrm{C}-\mathrm{H} = 413\,\mathrm{kJ/mol}$$\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$.
 
 **Solution:**
 
@@ -641,7 +641,7 @@ $$
 \mathrm{NH}_4\mathrm{Cl}(s) \to \mathrm{NH}_3(g) + \mathrm{HCl}(g)
 $$
 
-has $\Delta H^\circ = +176\,\mathrm{kJ/mol}$ and $\Delta S^\circ = +285\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+Has $\Delta H^\circ = +176\,\mathrm{kJ/mol}$ and $\Delta S^\circ = +285\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Explain why $\Delta S^\circ$ is positive.
 (b) Calculate the minimum temperature at which the decomposition becomes spontaneous.
@@ -657,7 +657,7 @@ $$
 T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆176 \times 10^3◆RB◆◆LB◆285◆RB◆ = 618\,\mathrm{K} = 345^\circ\mathrm{C}
 $$
 
-Above $618\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
+Above $618\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
 
 (c) Assumptions: (i) $\Delta H^\circ$ and $\Delta S^\circ$ are constant over the temperature range (they are not strictly constant but vary little for most reactions). (ii) The reaction is at standard pressure ($100\,\mathrm{kPa}$).
 
@@ -714,7 +714,7 @@ The calculated value ($-279\,\mathrm{kJ/mol}$) is close to the literature value 
 <details>
 <summary>Problem 6</summary>
 
-The enthalpy of neutralisation of $\mathrm{NaOH}(aq)$ and $\mathrm{CH}_3\mathrm{COOH}(aq)$ is $-56.1\,\mathrm{kJ/mol}$, whereas the enthalpy of neutralisation of $\mathrm{NaOH}(aq)$ and $\mathrm{HCl}(aq)$ is $-57.9\,\mathrm{kJ/mol}$. Explain the difference.
+The enthalpy of neutralisation of $\mathrm{NaOH}(aq)$ and $\mathrm{CH}_3\mathrm{COOH}(aq)$ is $-56.1\,\mathrm{kJ/mol}$Whereas the enthalpy of neutralisation of $\mathrm{NaOH}(aq)$ and $\mathrm{HCl}(aq)$ is $-57.9\,\mathrm{kJ/mol}$. Explain the difference.
 
 **Solution:**
 
@@ -736,7 +736,7 @@ $$
 \Delta H_\mathrm{neut}(\text{weak}) = \Delta H_\mathrm{diss} + \Delta H_\mathrm{neut}(\text{strong}) \approx +0.4 + (-57.9) = -57.5\,\mathrm{kJ/mol}
 $$
 
-The measured value is $-56.1\,\mathrm{kJ/mol}$, suggesting additional endothermic contributions (the enthalpy of dissociation of ethanoic acid is endothermic, consuming some of the heat released by neutralisation). The reaction is less exothermic because the weak acid must first dissociate, which is an endothermic process.
+The measured value is $-56.1\,\mathrm{kJ/mol}$Suggesting additional endothermic contributions (the enthalpy of dissociation of ethanoic acid is endothermic, consuming some of the heat released by neutralisation). The reaction is less exothermic because the weak acid must first dissociate, which is an endothermic process.
 
 </details>
 
@@ -758,21 +758,21 @@ $$\ln K_c = \frac◆LB◆5400◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{54
 
 $$K_c = e^{2.179} = 8.84$$
 
-Since $\Delta G^\circ < 0$, $K > 1$, confirming the reaction is spontaneous and products are favoured at equilibrium.
+Since $\Delta G^\circ < 0$$K > 1$Confirming the reaction is spontaneous and products are favoured at equilibrium.
 
-**Worked Example:** Calculate the temperature at which $\Delta G = 0$ for the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, given $\Delta H^\circ = +57.2\,\mathrm{kJ/mol}$ and $\Delta S^\circ = +175.8\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}$.
+**Worked Example:** Calculate the temperature at which $\Delta G = 0$ for the reaction $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$Given $\Delta H^\circ = +57.2\,\mathrm{kJ/mol}$ and $\Delta S^\circ = +175.8\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}$.
 
 At $\Delta G = 0$: $0 = \Delta H^\circ - T\Delta S^\circ$
 
 $$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{57200}{175.8} = 325\,\mathrm{K}$$
 
-Below $325\,\mathrm{K}$, $\Delta G < 0$ and the forward reaction is spontaneous. Above $325\,\mathrm{K}$, $\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$, the system is at equilibrium ($K = 1$).
+Below $325\,\mathrm{K}$$\Delta G < 0$ and the forward reaction is spontaneous. Above $325\,\mathrm{K}$$\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$The system is at equilibrium ($K = 1$).
 
 ### Entropy Calculations
 
 **Worked Example:** Calculate $\Delta S^\circ$ for the reaction $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
 
-$S^\circ$ values: $\mathrm{CaCO}_3(s) = 92.9\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}}$, $\mathrm{CaO}(s) = 38.1\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$, $\mathrm{CO}_2(g) = 213.7\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$.
+$S^\circ$ values: $\mathrm{CaCO}_3(s) = 92.9\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}}$$\mathrm{CaO}(s) = 38.1\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$$\mathrm{CO}_2(g) = 213.7\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$.
 
 $$\Delta S^\circ = S^\circ(\mathrm{CaO}) + S^\circ(\mathrm{CO}_2) - S^\circ(\mathrm{CaCO}_3)$$
 
@@ -785,9 +785,9 @@ The entropy change is positive, as expected: a solid decomposes to give a gas (i
 **Worked Example:** Use Hess's Law to calculate $\Delta H_f^\circ$ for $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l)$.
 
 Given data:
-- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H = -393.5\,\mathrm{kJ/mol}$
-- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -285.8\,\mathrm{kJ/mol}$
-- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -1367\,\mathrm{kJ/mol}$
+- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$$\Delta H = -393.5\,\mathrm{kJ/mol}$
+- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$$\Delta H = -285.8\,\mathrm{kJ/mol}$
+- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$$\Delta H = -1367\,\mathrm{kJ/mol}$
 
 By Hess's Law:
 
@@ -803,11 +803,11 @@ $\Delta H_f^\circ(\mathrm{C}_2\mathrm{H}_5\mathrm{OH}) = -277\,\mathrm{kJ/mol}$ 
 
 $$\mathrm{TiO}_2(s) + 2\mathrm{C}(s) \to \mathrm{Ti}(s) + 2\mathrm{CO}(g)$$
 
-$\Delta H^\circ = +877\,\mathrm{kJ/mol}$, $\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+$\Delta H^\circ = +877\,\mathrm{kJ/mol}$$\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
 
 $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = 877000 - 1500 \times 193 = 877000 - 289500 = 587500\,\mathrm{J/mol} = +588\,\mathrm{kJ/mol}$$
 
-$\Delta G^\circ > 0$, so the reaction is not thermodynamically feasible at $1500\,\mathrm{K}$.
+$\Delta G^\circ > 0$So the reaction is not thermodynamically feasible at $1500\,\mathrm{K}$.
 
 At what temperature does it become feasible?
 
@@ -839,11 +839,11 @@ The specific acid and base are irrelevant because strong acids and bases are ful
 
 For the reaction $\mathrm{A}(g) + 2\mathrm{B}(g) \to \mathrm{C}(g) + \mathrm{D}(g)$:
 
-$\Delta H^\circ = -85\,\mathrm{kJ/mol}$, $\Delta S^\circ = -120\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+$\Delta H^\circ = -85\,\mathrm{kJ/mol}$$\Delta S^\circ = -120\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$. (2 marks)
 
-(b) State whether the reaction is feasible at $298\,\mathrm{K}$, explaining your answer. (1 mark)
+(b) State whether the reaction is feasible at $298\,\mathrm{K}$Explaining your answer. (1 mark)
 
 (c) Calculate the temperature above which the reaction becomes non-spontaneous. (2 marks)
 
@@ -853,9 +853,9 @@ $\Delta H^\circ = -85\,\mathrm{kJ/mol}$, $\Delta S^\circ = -120\,\mathrm{J\,K^{-
 
 (a) $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -85000 - 298 \times (-120) = -85000 + 35760 = -49240\,\mathrm{J/mol} = -49.2\,\mathrm{kJ/mol}$ (1 mark for substitution, 1 mark for answer).
 
-(b) $\Delta G^\circ < 0$, so the reaction is feasible (spontaneous) at $298\,\mathrm{K}$ (1 mark).
+(b) $\Delta G^\circ < 0$So the reaction is feasible (spontaneous) at $298\,\mathrm{K}$ (1 mark).
 
-(c) $\Delta G^\circ = 0$: $T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1 mark). Above $708\,\mathrm{K}$, $\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
+(c) $\Delta G^\circ = 0$: $T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1 mark). Above $708\,\mathrm{K}$$\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
 
 (d) 3 moles of gas on the left, 2 moles on the right. Increasing pressure favours the side with fewer moles (products), shifting the equilibrium to the right (1 mark).
 
@@ -907,3 +907,7 @@ Ready to test your understanding of **Thermodynamics**? The [diagnostic test](/d
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

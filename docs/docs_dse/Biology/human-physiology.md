@@ -12,33 +12,33 @@ slug: human-physiology
 ### Balanced Diet
 
 A balanced diet provides all essential nutrients in the correct proportions to maintain health. The
-seven classes of food are:
+Seven classes of food are:
 
-| Nutrient      | Function                                                                    | Sources                               |
+| Nutrient | Function | Sources |
 | ------------- | --------------------------------------------------------------------------- | ------------------------------------- |
-| Carbohydrates | Primary energy source; spare protein from being used as energy              | Rice, bread, pasta, potatoes          |
-| Proteins      | Growth and repair of tissues; enzyme and hormone synthesis                  | Meat, fish, eggs, beans, milk         |
-| Lipids        | Energy reserve; insulation; structural component of cell membranes          | Butter, oils, cheese, nuts            |
-| Vitamins      | Regulate metabolic processes; prevent deficiency diseases                   | Fruits, vegetables, dairy             |
-| Minerals      | Bone formation; nerve function; enzyme cofactors                            | Milk, spinach, meat, salt             |
-| Water         | Solvent for biochemical reactions; transport medium; temperature regulation | Drinking water, food, metabolic water |
-| Dietary fibre | Adds bulk to food; stimulates peristalsis; prevents constipation            | Whole grains, vegetables, fruits      |
+| Carbohydrates | Primary energy source; spare protein from being used as energy | Rice, bread, pasta, potatoes |
+| Proteins | Growth and repair of tissues; enzyme and hormone synthesis | Meat, fish, eggs, beans, milk |
+| Lipids | Energy reserve; insulation; structural component of cell membranes | Butter, oils, cheese, nuts |
+| Vitamins | Regulate metabolic processes; prevent deficiency diseases | Fruits, vegetables, dairy |
+| Minerals | Bone formation; nerve function; enzyme cofactors | Milk, spinach, meat, salt |
+| Water | Solvent for biochemical reactions; transport medium; temperature regulation | Drinking water, food, metabolic water |
+| Dietary fibre | Adds bulk to food; stimulates peristalsis; prevents constipation | Whole grains, vegetables, fruits |
 
 ### Energy Requirements
 
 Basal Metabolic Rate (BMR) is the minimum energy required to maintain vital functions at rest. Total
-daily energy expenditure depends on:
+Daily energy expenditure depends on:
 
 $$\mathrm{Total Energy} = \mathrm{BMR} + \mathrm{Physical Activity} + \mathrm{SDA (Specific Dynamic Action)}$$
 
 Average daily energy requirements:
 
-| Group               | Energy (kJ/day) |
+| Group | Energy (kJ/day) |
 | ------------------- | --------------- |
-| Sedentary adult     | 8000 - 10000    |
-| Active adult male   | 12000 - 15000   |
-| Active adult female | 10000 - 12000   |
-| Growing teenager    | 10000 - 13000   |
+| Sedentary adult | 8000 - 10000 |
+| Active adult male | 12000 - 15000 |
+| Active adult female | 10000 - 12000 |
+| Growing teenager | 10000 - 13000 |
 
 ### Worked Example: Energy Requirements
 
@@ -65,17 +65,17 @@ A 65 kg male office worker has a BMR of approximately 7000 kJ/day. His physical 
 
 **Undernutrition:** Insufficient intake of calories or specific nutrients.
 
-| Deficiency            | Disease         | Symptoms                                |
+| Deficiency | Disease | Symptoms |
 | --------------------- | --------------- | --------------------------------------- |
-| Protein-energy        | Kwashiorkor     | Swollen abdomen, oedema, poor growth    |
-| Protein-energy        | Marasmus        | Severe weight loss, muscle wasting      |
-| Vitamin A             | Night blindness | Inability to see in low light           |
-| Vitamin C             | Scurvy          | Bleeding gums, poor wound healing       |
-| Vitamin D             | Rickets         | Soft, deformed bones                    |
-| Iron                  | Anaemia         | Fatigue, pale skin, shortness of breath |
-| Iodine                | Goitre          | Enlarged thyroid gland                  |
-| Calcium               | Osteoporosis    | Weak, brittle bones                     |
-| Vitamin B1 (thiamine) | Beri-beri       | Nerve damage, muscle weakness           |
+| Protein-energy | Kwashiorkor | Swollen abdomen, oedema, poor growth |
+| Protein-energy | Marasmus | Severe weight loss, muscle wasting |
+| Vitamin A | Night blindness | Inability to see in low light |
+| Vitamin C | Scurvy | Bleeding gums, poor wound healing |
+| Vitamin D | Rickets | Soft, deformed bones |
+| Iron | Anaemia | Fatigue, pale skin, shortness of breath |
+| Iodine | Goitre | Enlarged thyroid gland |
+| Calcium | Osteoporosis | Weak, brittle bones |
+| Vitamin B1 (thiamine) | Beri-beri | Nerve damage, muscle weakness |
 
 **Overnutrition:** Excessive intake leading to obesity, cardiovascular disease, Type 2 diabetes.
 
@@ -86,17 +86,17 @@ A 65 kg male office worker has a BMR of approximately 7000 kJ/day. His physical 
 ### Overview of the Digestive Tract
 
 The digestive system is a muscular tube running from mouth to anus, with accessory glands (salivary
-glands, liver, pancreas) secreting enzymes into the tract.
+Glands, liver, pancreas) secreting enzymes into the tract.
 
-| Region          | Major Functions                                                       |
+| Region | Major Functions |
 | --------------- | --------------------------------------------------------------------- |
-| Mouth           | Mechanical digestion (chewing); chemical digestion (salivary amylase) |
-| Oesophagus      | Peristalsis moves food to stomach                                     |
-| Stomach         | Protein digestion (pepsin); churning; acid kills bacteria             |
-| Small intestine | Complete digestion; absorption of nutrients into blood                |
-| Large intestine | Water reabsorption; formation of faeces                               |
-| Rectum          | Storage of faeces                                                     |
-| Anus            | Expulsion of faeces                                                   |
+| Mouth | Mechanical digestion (chewing); chemical digestion (salivary amylase) |
+| Oesophagus | Peristalsis moves food to stomach |
+| Stomach | Protein digestion (pepsin); churning; acid kills bacteria |
+| Small intestine | Complete digestion; absorption of nutrients into blood |
+| Large intestine | Water reabsorption; formation of faeces |
+| Rectum | Storage of faeces |
+| Anus | Expulsion of faeces |
 
 ### The Mouth
 
@@ -108,25 +108,25 @@ glands, liver, pancreas) secreting enzymes into the tract.
 **Chemical digestion:**
 
 - Salivary glands produce saliva containing:
-  - **Salivary amylase:** Breaks down starch into maltose (optimal pH ~6.8)
-  - **Mucus:** Lubricates food for swallowing
-  - **Water:** Dissolves food molecules for taste
+ - **Salivary amylase:** Breaks down starch into maltose (optimal pH ~6.8)
+ - **Mucus:** Lubricates food for swallowing
+ - **Water:** Dissolves food molecules for taste
 
 $$\mathrm{Starch} \xrightarrow{\mathrm{salivary amylase}} \mathrm{Maltose}$$
 
 ### The Stomach
 
 - **Gastric glands** in the stomach wall secrete gastric juice containing:
-  - **Hydrochloric acid (HCl):** pH ~2; denatures proteins; activates pepsinogen to pepsin; kills
-    bacteria
-  - **Pepsinogen:** Inactive precursor; activated to **pepsin** by HCl; digests protein into
-    polypeptides
-  - **Mucus:** Protects the stomach lining from acid and enzymes
+ - **Hydrochloric acid (HCl):** pH ~2; denatures proteins; activates pepsinogen to pepsin; kills
+ bacteria
+ - **Pepsinogen:** Inactive precursor; activated to **pepsin** by HCl; digests protein into
+ polypeptides
+ - **Mucus:** Protects the stomach lining from acid and enzymes
 
 $$\mathrm{Proteins} \xrightarrow{\mathrm{pepsin (pH 2)}} \mathrm{Polypeptides}$$
 
 The stomach churns food with gastric juice to form **chyme**, a semi-liquid acidic mixture. The
-pyloric sphincter controls the release of chyme into the duodenum.
+Pyloric sphincter controls the release of chyme into the duodenum.
 
 ### The Small Intestine
 
@@ -138,7 +138,7 @@ The small intestine is the primary site of both digestion and absorption. It is 
 **Bile** (produced by the liver, stored in the gall bladder):
 
 - Emulsifies fats -- breaks large fat droplets into smaller droplets (increases surface area for
-  lipase)
+ lipase)
 - Contains no enzymes -- it is not a digestive enzyme
 - Neutralises stomach acid (alkaline, pH ~8)
 - Contains bile pigments (bilirubin from haemoglobin breakdown) excreted in faeces
@@ -151,26 +151,26 @@ The small intestine is the primary site of both digestion and absorption. It is 
 
 **Intestinal enzymes** (produced by cells on the villi):
 
-| Enzyme     | Substrate | Product(s)             |
+| Enzyme | Substrate | Product(s) |
 | ---------- | --------- | ---------------------- |
-| Maltase    | Maltose   | Glucose                |
-| Sucrase    | Sucrose   | Glucose + Fructose     |
-| Lactase    | Lactose   | Glucose + Galactose    |
-| Peptidases | Peptides  | Amino acids            |
-| Lipase     | Fats      | Fatty acids + Glycerol |
+| Maltase | Maltose | Glucose |
+| Sucrase | Sucrose | Glucose + Fructose |
+| Lactase | Lactose | Glucose + Galactose |
+| Peptidases | Peptides | Amino acids |
+| Lipase | Fats | Fatty acids + Glycerol |
 
 ### Summary of Enzyme Digestion
 
-| Enzyme             | Source          | Substrate | Product(s)             | Optimal pH |
+| Enzyme | Source | Substrate | Product(s) | Optimal pH |
 | ------------------ | --------------- | --------- | ---------------------- | ---------- |
-| Salivary amylase   | Salivary glands | Starch    | Maltose                | ~6.8       |
-| Pepsin             | Stomach         | Protein   | Polypeptides           | ~2         |
-| Pancreatic amylase | Pancreas        | Starch    | Maltose                | ~7-8       |
-| Trypsin            | Pancreas        | Protein   | Peptides               | ~8         |
-| Lipase             | Pancreas        | Lipids    | Fatty acids + Glycerol | ~8         |
-| Maltase            | Small intestine | Maltose   | Glucose                | ~7-8       |
-| Sucrase            | Small intestine | Sucrose   | Glucose + Fructose     | ~7-8       |
-| Lactase            | Small intestine | Lactose   | Glucose + Galactose    | ~7-8       |
+| Salivary amylase | Salivary glands | Starch | Maltose | ~6.8 |
+| Pepsin | Stomach | Protein | Polypeptides | ~2 |
+| Pancreatic amylase | Pancreas | Starch | Maltose | ~7-8 |
+| Trypsin | Pancreas | Protein | Peptides | ~8 |
+| Lipase | Pancreas | Lipids | Fatty acids + Glycerol | ~8 |
+| Maltase | Small intestine | Maltose | Glucose | ~7-8 |
+| Sucrase | Small intestine | Sucrose | Glucose + Fructose | ~7-8 |
+| Lactase | Small intestine | Lactose | Glucose + Galactose | ~7-8 |
 
 ### Worked Example: Enzyme Digestion Pathway
 
@@ -206,15 +206,15 @@ A student eats a meal containing starch, protein, and fat. Trace the complete di
 The small intestine is adapted for absorption through structural features:
 
 **Villi:** Finger-like projections of the intestinal wall that increase surface area. Each villus
-contains:
+Contains:
 
 - A dense network of blood capillaries (absorb glucose, amino acids -- carried to liver via hepatic
-  portal vein)
+ portal vein)
 - A lacteal (lymphatic capillary) that absorbs fatty acids and glycerol (re-formed into
-  triglycerides, packaged into chylomicrons, transported via the lymphatic system)
+ triglycerides, packaged into chylomicrons, transported via the lymphatic system)
 
 **Microvilli:** Tiny projections on the epithelial cells of the villi, further increasing surface
-area.
+Area.
 
 **Features for efficient absorption:**
 
@@ -235,13 +235,13 @@ area.
 
 - **Colon:** Absorbs water and mineral ions from remaining indigestible material
 - **Caecum/Appendix:** Vestigial in humans; contains gut bacteria that synthesise some vitamins
-  (e.g., vitamin K, some B vitamins)
+ (e.g., vitamin K, some B vitamins)
 - **Rectum:** Stores faeces until defaecation
 
 ### Egestion
 
 Faeces consist of undigested food (mainly dietary fibre), dead cells, bacteria, bile pigments, and
-water.
+Water.
 
 ---
 
@@ -249,16 +249,16 @@ water.
 
 ### Structure of the Human Respiratory System
 
-| Structure           | Function                                                                            |
+| Structure | Function |
 | ------------------- | ----------------------------------------------------------------------------------- |
-| Nasal cavity        | Warms, moistens, and filters air; lined with mucus and ciliated epithelium          |
-| Trachea             | Carries air to and from lungs; C-shaped cartilage rings keep it open                |
-| Bronchi             | Branches of the trachea leading to each lung; also contain cartilage                |
-| Bronchioles         | Smaller branches within the lungs; walls contain smooth muscle                      |
-| Alveoli             | Tiny air sacs; site of gas exchange; surrounded by capillaries                      |
-| Diaphragm           | Dome-shaped muscle; contracts and flattens during inhalation                        |
+| Nasal cavity | Warms, moistens, and filters air; lined with mucus and ciliated epithelium |
+| Trachea | Carries air to and from lungs; C-shaped cartilage rings keep it open |
+| Bronchi | Branches of the trachea leading to each lung; also contain cartilage |
+| Bronchioles | Smaller branches within the lungs; walls contain smooth muscle |
+| Alveoli | Tiny air sacs; site of gas exchange; surrounded by capillaries |
+| Diaphragm | Dome-shaped muscle; contracts and flattens during inhalation |
 | Intercostal muscles | Muscles between ribs; external intercostals aid inhalation, internal aid exhalation |
-| Ribcage             | Protects the lungs; moves up and out during inhalation                              |
+| Ribcage | Protects the lungs; moves up and out during inhalation |
 
 ### Ventilation Mechanism
 
@@ -293,7 +293,7 @@ $$P_{\mathrm{lung}} \gt P_{\mathrm{atm}} \implies \mathrm{air flows out}$$
 1. **Large surface area:** Millions of alveoli provide enormous total surface area (~70 m$^2$)
 2. **Thin walls:** Alveolar epithelium is one cell thick
 3. **Dense capillary network:** Each alveolus surrounded by capillaries; capillary walls are also
-   one cell thick
+ one cell thick
 4. **Short diffusion path:** Total distance between air and blood is ~1 micrometre
 5. **Moist surface:** Gases dissolve before diffusing; moisture maintains the diffusion gradient
 6. **Maintained concentration gradient:** Continuous blood flow and ventilation refresh the gradient
@@ -305,7 +305,7 @@ $$\mathrm{O}_2 \mathrm{ (alveolar air, } pO_2 \approx 13.3 \mathrm{ kPa)} \to \m
 $$\mathrm{CO}_2 \mathrm{ (blood, } pCO_2 \approx 6.0 \mathrm{ kPa)} \to \mathrm{CO}_2 \mathrm{ (alveolar air, } pCO_2 \approx 5.3 \mathrm{ kPa)}$$
 
 Oxygen diffuses from alveolar air into the blood; carbon dioxide diffuses from blood into alveolar
-air. Both movements are down their respective partial pressure gradients.
+Air. Both movements are down their respective partial pressure gradients.
 
 ### Respiratory Diseases
 
@@ -322,7 +322,7 @@ air. Both movements are down their respective partial pressure gradients.
 - Includes chronic bronchitis and emphysema
 - Chronic bronchitis: inflammation and mucus hypersecretion in bronchi; "smoker's cough"
 - Emphysema: destruction of alveolar walls; reduced surface area for gas exchange; loss of
-  elasticity
+ elasticity
 - Symptoms: persistent cough, breathlessness, fatigue
 - Primary cause: smoking
 
@@ -343,15 +343,15 @@ air. Both movements are down their respective partial pressure gradients.
 
 ### Effects of Smoking
 
-| Substance       | Effect                                                                      |
+| Substance | Effect |
 | --------------- | --------------------------------------------------------------------------- |
-| Nicotine        | Addictive; increases heart rate and blood pressure; narrows blood vessels   |
-| Tar             | Contains carcinogens; paralyses cilia; coats alveoli, reducing gas exchange |
-| Carbon monoxide | Binds to haemoglobin with 250x affinity of O$_2$; reduces O$_2$ transport   |
-| Smoke particles | Irritate airways; damage ciliated epithelium; cause chronic inflammation    |
+| Nicotine | Addictive; increases heart rate and blood pressure; narrows blood vessels |
+| Tar | Contains carcinogens; paralyses cilia; coats alveoli, reducing gas exchange |
+| Carbon monoxide | Binds to haemoglobin with 250x affinity of O$_2$; reduces O$_2$ transport |
+| Smoke particles | Irritate airways; damage ciliated epithelium; cause chronic inflammation |
 
 Carbon monoxide reduces the oxygen-carrying capacity of blood because it binds to haemoglobin
-forming carboxyhaemoglobin, which is stable and does not readily release the CO.
+Forming carboxyhaemoglobin, which is stable and does not readily release the CO.
 
 ---
 
@@ -362,9 +362,9 @@ forming carboxyhaemoglobin, which is stable and does not readily release the CO.
 Humans have a **closed, double circulatory system**:
 
 1. **Pulmonary circulation:** Right ventricle to lungs to left atrium (deoxygenated blood to lungs
-   for gas exchange, then oxygenated blood returns)
+ for gas exchange, then oxygenated blood returns)
 2. **Systemic circulation:** Left ventricle to body to right atrium (oxygenated blood to tissues,
-   deoxygenated blood returns)
+ deoxygenated blood returns)
 
 ### Structure of the Heart
 
@@ -379,46 +379,46 @@ The heart is a four-chambered muscular pump.
 
 **Valves:**
 
-| Valve                   | Location                           | Function                          |
+| Valve | Location | Function |
 | ----------------------- | ---------------------------------- | --------------------------------- |
-| Tricuspid valve         | Between right atrium and ventricle | Prevents backflow                 |
-| Bicuspid (mitral) valve | Between left atrium and ventricle  | Prevents backflow                 |
-| Semilunar valves        | In the pulmonary artery and aorta  | Prevents backflow into ventricles |
+| Tricuspid valve | Between right atrium and ventricle | Prevents backflow |
+| Bicuspid (mitral) valve | Between left atrium and ventricle | Prevents backflow |
+| Semilunar valves | In the pulmonary artery and aorta | Prevents backflow into ventricles |
 
 Valves open and close due to pressure differences. They ensure one-way blood flow.
 
 **Why the left ventricle has a thicker wall:**
 
 The left ventricle pumps blood to the entire body (systemic circulation) against high resistance, so
-it needs to generate much higher pressure than the right ventricle, which only pumps blood to the
-nearby lungs (pulmonary circulation).
+It needs to generate much higher pressure than the right ventricle, which only pumps blood to the
+Nearby lungs (pulmonary circulation).
 
 ### Cardiac Cycle
 
 1. **Atrial systole:** Atria contract; blood is forced through AV valves into ventricles
 2. **Ventricular systole:** Ventricles contract; AV valves close ("lub" sound); semilunar valves
-   open; blood is ejected into arteries
+ open; blood is ejected into arteries
 3. **Diastole:** Heart muscle relaxes; semilunar valves close ("dub" sound); blood flows into atria
-   from veins
+ from veins
 
 ### Blood Vessels
 
-| Feature        | Arteries                            | Veins                              | Capillaries                |
+| Feature | Arteries | Veins | Capillaries |
 | -------------- | ----------------------------------- | ---------------------------------- | -------------------------- |
-| Wall thickness | Thick (muscle + elastic tissue)     | Thin                               | One cell thick             |
-| Lumen          | Narrow (relatively)                 | Wide (relatively)                  | Very narrow                |
-| Valves         | None (except semilunar in heart)    | Present (prevent backflow)         | None                       |
-| Blood pressure | High                                | Low                                | Very low                   |
-| Blood flow     | Pulsatile                           | Steady                             | Slow                       |
-| Direction      | Away from heart                     | Towards heart                      | Between arteries and veins |
-| Tissue layers  | Thick smooth muscle, elastic fibres | Thin smooth muscle, elastic fibres | Endothelium only           |
+| Wall thickness | Thick (muscle + elastic tissue) | Thin | One cell thick |
+| Lumen | Narrow (relatively) | Wide (relatively) | Very narrow |
+| Valves | None (except semilunar in heart) | Present (prevent backflow) | None |
+| Blood pressure | High | Low | Very low |
+| Blood flow | Pulsatile | Steady | Slow |
+| Direction | Away from heart | Towards heart | Between arteries and veins |
+| Tissue layers | Thick smooth muscle, elastic fibres | Thin smooth muscle, elastic fibres | Endothelium only |
 
 ### Blood Composition
 
 Blood consists of:
 
 1. **Plasma (55%):** Liquid portion containing water, dissolved substances (glucose, amino acids,
-   urea, hormones), plasma proteins (albumin, fibrinogen, globulins)
+ urea, hormones), plasma proteins (albumin, fibrinogen, globulins)
 2. **Red blood cells (erythrocytes, ~44%):** Transport oxygen via haemoglobin
 3. **White blood cells (leucocytes, ~1%):** Defence against pathogens
 4. **Platelets (thrombocytes, ~0.5%):** Blood clotting
@@ -440,23 +440,23 @@ Blood consists of:
 
 - Cell fragments (no nucleus) produced in bone marrow
 - Involved in blood clotting:
-  1. Platelets accumulate at the wound site
-  2. Thromboplastin is released
-  3. Thromboplastin converts prothrombin to thrombin (with calcium ions)
-  4. Thrombin converts soluble fibrinogen to insoluble fibrin
-  5. Fibrin forms a mesh that traps red blood cells, forming a clot
+ 1. Platelets accumulate at the wound site
+ 2. Thromboplastin is released
+ 3. Thromboplastin converts prothrombin to thrombin (with calcium ions)
+ 4. Thrombin converts soluble fibrinogen to insoluble fibrin
+ 5. Fibrin forms a mesh that traps red blood cells, forming a clot
 
 ### Blood Groups
 
 Blood groups are determined by **antigens** on the surface of red blood cells and **antibodies** in
-the plasma.
+The plasma.
 
 | Blood Group | Antigen on RBC | Antibody in Plasma | Can Donate To | Can Receive From |
 | ----------- | -------------- | ------------------ | ------------- | ---------------- |
-| A           | A              | Anti-B             | A, AB         | A, O             |
-| B           | B              | Anti-A             | B, AB         | B, O             |
-| AB          | A and B        | None               | AB            | A, B, AB, O      |
-| O           | None           | Anti-A and Anti-B  | A, B, AB, O   | O                |
+| A | A | Anti-B | A, AB | A, O |
+| B | B | Anti-A | B, AB | B, O |
+| AB | A and B | None | AB | A, B, AB, O |
+| O | None | Anti-A and Anti-B | A, B, AB, O | O |
 
 **Universal donor:** O (no antigens on RBC surface)
 
@@ -498,12 +498,12 @@ Each haemoglobin molecule can carry up to 4 oxygen molecules:
 $$\mathrm{Hb} + 4\mathrm{O}_2 \rightleftharpoons \mathrm{HbO}_8$$
 
 In the lungs (high $pO_2$), oxygen binds to haemoglobin (loading). In the tissues (low $pO_2$),
-oxygen dissociates from haemoglobin (unloading).
+Oxygen dissociates from haemoglobin (unloading).
 
 ### The Oxygen Dissociation Curve
 
 The oxygen dissociation curve is an S-shaped (sigmoid) curve showing the relationship between the
-partial pressure of oxygen ($pO_2$) and the percentage saturation of haemoglobin.
+Partial pressure of oxygen ($pO_2$) and the percentage saturation of haemoglobin.
 
 $$\mathrm{Percentage saturation of Hb vs } pO_2$$
 
@@ -515,13 +515,13 @@ Key points:
 
 **Factors shifting the curve:**
 
-| Factor                     | Effect             | Physiological significance                                    |
+| Factor | Effect | Physiological significance |
 | -------------------------- | ------------------ | ------------------------------------------------------------- |
-| High $pCO_2$ (Bohr effect) | Curve shifts right | More O$_2$ released to actively respiring tissues             |
-| Low pH / high [H$^+$]      | Curve shifts right | More O$_2$ released in acidic conditions                      |
-| High temperature           | Curve shifts right | More O$_2$ released to warm, active tissues                   |
-| High 2,3-BPG concentration | Curve shifts right | More O$_2$ unloading (adaptation to altitude)                 |
-| Fetal haemoglobin (HbF)    | Curve shifts left  | Higher affinity for O$_2$; extracts O$_2$ from maternal blood |
+| High $pCO_2$ (Bohr effect) | Curve shifts right | More O$_2$ released to actively respiring tissues |
+| Low pH / high [H$^+$] | Curve shifts right | More O$_2$ released in acidic conditions |
+| High temperature | Curve shifts right | More O$_2$ released to warm, active tissues |
+| High 2,3-BPG concentration | Curve shifts right | More O$_2$ unloading (adaptation to altitude) |
+| Fetal haemoglobin (HbF) | Curve shifts left | Higher affinity for O$_2$; extracts O$_2$ from maternal blood |
 
 A **right shift** = lower affinity for O$_2$ = more O$_2$ released to tissues.
 
@@ -533,10 +533,10 @@ A **left shift** = higher affinity for O$_2$ = less O$_2$ released to tissues.
 
 ### Excretion vs Egestion
 
-- **Excretion:** Removal of metabolic waste products (e.g., CO$_2$, urea, excess water) from the
-  body. This is distinct from egestion.
+- **Excretion:** Removal of metabolic waste products (e.g., CO$_2$Urea, excess water) from the
+ body. This is distinct from egestion.
 - **Egestion:** Removal of undigested food (faeces) from the body. Faeces have never been part of
-  metabolism, so egestion is NOT excretion.
+ metabolism, so egestion is NOT excretion.
 
 ### The Kidney
 
@@ -552,7 +552,7 @@ A **left shift** = higher affinity for O$_2$ = less O$_2$ released to tissues.
 ### The Nephron
 
 The nephron is the functional unit of the kidney. Each kidney contains approximately one million
-nephrons.
+Nephrons.
 
 **Components:**
 
@@ -570,10 +570,10 @@ Ultrafiltration occurs at the **glomerulus** and **Bowman's capsule**.
 **Mechanism:**
 
 - Blood enters the glomerulus via the **afferent arteriole** (wider) and leaves via the **efferent
-  arteriole** (narrower)
+ arteriole** (narrower)
 - The narrower efferent arteriole creates **high hydrostatic pressure** in the glomerulus
 - This pressure forces small molecules (water, glucose, amino acids, urea, ions) through the
-  capillary wall and the podocytes of the Bowman's capsule into the capsular space
+ capillary wall and the podocytes of the Bowman's capsule into the capsular space
 - Large molecules (proteins, blood cells) remain in the blood
 
 **What is filtered:** Water, glucose, amino acids, urea, salts, vitamins (all small solutes)
@@ -581,7 +581,7 @@ Ultrafiltration occurs at the **glomerulus** and **Bowman's capsule**.
 **What is NOT filtered:** Large proteins, red blood cells, white blood cells, platelets
 
 The filtrate produced is called **glomerular filtrate**, which is similar in composition to blood
-plasma minus proteins.
+Plasma minus proteins.
 
 ### Selective Reabsorption
 
@@ -592,28 +592,28 @@ As the filtrate passes along the nephron, useful substances are reabsorbed back 
 - **All glucose** is reabsorbed (by active transport and co-transport)
 - **All amino acids** are reabsorbed (by active transport)
 - **Most water** (by osmosis, following the reabsorption of solutes)
-- **Most salts/ions** (Na$^+$, K$^+$, Cl$^-$) by active transport
+- **Most salts/ions** (Na$^+$K$^+$Cl$^-$) by active transport
 - The PCT reabsorbs approximately **85% of the filtrate**
 
 **Loop of Henle:**
 
 - **Descending limb:** Permeable to water but not to salts. Water moves out by osmosis into the
-  increasingly concentrated medullary tissue fluid.
+ increasingly concentrated medullary tissue fluid.
 - **Ascending limb:** Impermeable to water but actively transports Na$^+$ and Cl$^-$ out into the
-  medullary tissue fluid. This creates a **sodium gradient** in the medulla.
+ medullary tissue fluid. This creates a **sodium gradient** in the medulla.
 - The counter-current multiplier mechanism maintains a high solute concentration in the medulla,
-  which is essential for water reabsorption from the collecting duct.
+ which is essential for water reabsorption from the collecting duct.
 
 **Distal Convoluted Tubule (DCT):**
 
-- Selective reabsorption of ions (Na$^+$, K$^+$, Ca$^{2+}$) regulated by hormones
+- Selective reabsorption of ions (Na$^+$K$^+$Ca$^{2+}$) regulated by hormones
 - Water permeability controlled by ADH
 
 **Collecting duct:**
 
 - Water reabsorption controlled by **antidiuretic hormone (ADH)**
 - In the presence of ADH, the collecting duct becomes more permeable to water, and water is
-  reabsorbed into the concentrated medullary tissue fluid by osmosis
+ reabsorbed into the concentrated medullary tissue fluid by osmosis
 - Produces concentrated urine (small volume)
 
 ### Osmoregulation
@@ -623,20 +623,20 @@ Osmoregulation is the control of water balance in the body.
 **Mechanism (negative feedback):**
 
 1. Blood water potential decreases (blood becomes more concentrated, e.g., after sweating or not
-   drinking)
+ drinking)
 2. Osmoreceptors in the hypothalamus detect the decrease in water potential
 3. The hypothalamus stimulates the posterior pituitary gland to release **more ADH** into the blood
 4. ADH increases the permeability of the collecting duct to water (by inserting aquaporin channels)
 5. More water is reabsorbed from the collecting duct into the blood
 6. Urine becomes more concentrated and lower in volume
 7. Blood water potential returns to normal; osmoreceptors are no longer stimulated; ADH secretion
-   decreases
+ decreases
 
-| Condition          | Blood Water Potential | ADH Level | Urine Volume | Urine Concentration |
+| Condition | Blood Water Potential | ADH Level | Urine Volume | Urine Concentration |
 | ------------------ | --------------------- | --------- | ------------ | ------------------- |
-| Dehydrated         | Low                   | High      | Low          | High                |
-| Well hydrated      | Normal                | Normal    | Normal       | Normal              |
-| Drunk excess water | High                  | Low       | High         | Low                 |
+| Dehydrated | Low | High | Low | High |
+| Well hydrated | Normal | Normal | Normal | Normal |
+| Drunk excess water | High | Low | High | Low |
 
 ### Worked Example: Osmoregulation and ADH
 
@@ -668,44 +668,44 @@ Note: On a hot day after exercise, the person would also have lost water through
 The nervous system has two main divisions:
 
 1. **Central Nervous System (CNS):** Brain and spinal cord -- processes information and coordinates
-   responses
+ responses
 2. **Peripheral Nervous System (PNS):** All nerves outside the CNS -- transmits signals between the
-   CNS and the rest of the body
+ CNS and the rest of the body
 
 The PNS is further divided into:
 
 - **Somatic nervous system:** Controls voluntary actions (conscious)
 - **Autonomic nervous system:** Controls involuntary actions (unconscious)
-  - **Sympathetic:** "Fight or flight" -- increases heart rate, dilates pupils, inhibits digestion
-  - **Parasympathetic:** "Rest and digest" -- decreases heart rate, constricts pupils, stimulates
-    digestion
+ - **Sympathetic:** "Fight or flight" -- increases heart rate, dilates pupils, inhibits digestion
+ - **Parasympathetic:** "Rest and digest" -- decreases heart rate, constricts pupils, stimulates
+ digestion
 
 ### Neurons
 
 Neurons are specialised cells that transmit electrical impulses.
 
-| Type           | Structure                       | Function                                  |
+| Type | Structure | Function |
 | -------------- | ------------------------------- | ----------------------------------------- |
-| Sensory neuron | Long axon, cell body off-centre | Transmits impulses from receptors to CNS  |
-| Relay neuron   | Short axon, many dendrites      | Connects sensory and motor neurons in CNS |
-| Motor neuron   | Long axon, cell body in CNS     | Transmits impulses from CNS to effectors  |
+| Sensory neuron | Long axon, cell body off-centre | Transmits impulses from receptors to CNS |
+| Relay neuron | Short axon, many dendrites | Connects sensory and motor neurons in CNS |
+| Motor neuron | Long axon, cell body in CNS | Transmits impulses from CNS to effectors |
 
 **Structure of a motor neuron:**
 
 - **Cell body:** Contains nucleus and organelles
 - **Dendrites:** Receive impulses from other neurons
 - **Axon:** Long fibre that carries impulses away from the cell body; insulated by **myelin sheath**
-  (made by Schwann cells)
+ (made by Schwann cells)
 - **Myelin sheath:** Fatty layer that insulates the axon; allows saltatory conduction (impulses jump
-  between Nodes of Ranvier), increasing the speed of transmission
+ between Nodes of Ranvier), increasing the speed of transmission
 - **Nodes of Ranvier:** Gaps in the myelin sheath where action potentials are regenerated
 - **Motor end plates:** Connections to muscle fibres at the neuromuscular junction
 
 ### Nerve Impulses
 
 **Resting potential:** The inside of the neuron is negatively charged relative to the outside (~-70
-mV). This is maintained by the sodium-potassium pump (pumps 3 Na$^+$ out for every 2 K$^+$ in) and
-the permeability of the membrane to K$^+$.
+MV). This is maintained by the sodium-potassium pump (pumps 3 Na$^+$ out for every 2 K$^+$ in) and
+The permeability of the membrane to K$^+$.
 
 **Action potential:**
 
@@ -716,8 +716,8 @@ the permeability of the membrane to K$^+$.
 5. The Na$^+/K^+$ pump restores the resting potential (refractory period)
 
 **Propagation:** The action potential travels along the axon. In myelinated neurons, it jumps
-between Nodes of Ranvier (saltatory conduction), which is faster than continuous conduction in
-unmyelinated neurons.
+Between Nodes of Ranvier (saltatory conduction), which is faster than continuous conduction in
+Unmyelinated neurons.
 
 ### Synapses
 
@@ -734,21 +734,21 @@ A synapse is the junction between two neurons or between a neuron and an effecto
 1. Action potential arrives at the pre-synaptic terminal
 2. Voltage-gated Ca$^{2+}$ channels open; Ca$^{2+}$ enters the terminal
 3. Ca$^{2+}$ causes synaptic vesicles to fuse with the pre-synaptic membrane and release
-   neurotransmitter into the synaptic cleft (exocytosis)
+ neurotransmitter into the synaptic cleft (exocytosis)
 4. Neurotransmitter diffuses across the synaptic cleft
 5. Neurotransmitter binds to specific receptors on the post-synaptic membrane
 6. This triggers ion channels to open, generating a new action potential in the post-synaptic neuron
 7. The neurotransmitter is broken down by enzymes or reabsorbed (taken up by the pre-synaptic
-   neuron)
+ neuron)
 
 **Key properties of synapses:**
 
 - **Unidirectional:** Impulses travel in one direction only (pre- to post-synaptic)
 - **Slow:** Transmission is slower than along an axon (diffusion takes time)
 - **Summation:** Multiple impulses may be needed to trigger an action potential (spatial summation
-  from multiple neurons; temporal summation from rapid firing of one neuron)
+ from multiple neurons; temporal summation from rapid firing of one neuron)
 - **Inhibition:** Some neurotransmitters are inhibitory (e.g., GABA), making the post-synaptic
-  neuron less likely to fire
+ neuron less likely to fire
 
 ### Reflex Arc
 
@@ -779,27 +779,27 @@ A reflex arc is the pathway taken by nerve impulses in an automatic, involuntary
 
 **Structure:**
 
-| Part                 | Function                                                                 |
+| Part | Function |
 | -------------------- | ------------------------------------------------------------------------ |
-| Sclera               | Tough, white outer layer; protects the eye                               |
-| Cornea               | Transparent front part; refracts light                                   |
-| Iris                 | Coloured part; controls the size of the pupil                            |
-| Pupil                | Hole in the iris; allows light to enter                                  |
-| Lens                 | Focuses light onto the retina; changes shape for accommodation           |
-| Retina               | Light-sensitive layer; contains rods and cones; photoreceptors           |
-| Fovea                | Area of sharpest vision; highest concentration of cones                  |
-| Optic nerve          | Transmits electrical impulses to the brain                               |
-| Blind spot           | Where the optic nerve leaves the eye; no photoreceptors                  |
-| Conjunctiva          | Thin membrane covering the front of the sclera; protects the eye         |
-| Aqueous humour       | Watery fluid between cornea and lens; maintains pressure, refracts light |
-| Vitreous humour      | Jelly-like fluid behind the lens; maintains the shape of the eye         |
-| Ciliary body         | Contains ciliary muscles; attaches suspensory ligaments to the lens      |
-| Suspensory ligaments | Hold the lens in position; connect lens to ciliary body                  |
+| Sclera | Tough, white outer layer; protects the eye |
+| Cornea | Transparent front part; refracts light |
+| Iris | Coloured part; controls the size of the pupil |
+| Pupil | Hole in the iris; allows light to enter |
+| Lens | Focuses light onto the retina; changes shape for accommodation |
+| Retina | Light-sensitive layer; contains rods and cones; photoreceptors |
+| Fovea | Area of sharpest vision; highest concentration of cones |
+| Optic nerve | Transmits electrical impulses to the brain |
+| Blind spot | Where the optic nerve leaves the eye; no photoreceptors |
+| Conjunctiva | Thin membrane covering the front of the sclera; protects the eye |
+| Aqueous humour | Watery fluid between cornea and lens; maintains pressure, refracts light |
+| Vitreous humour | Jelly-like fluid behind the lens; maintains the shape of the eye |
+| Ciliary body | Contains ciliary muscles; attaches suspensory ligaments to the lens |
+| Suspensory ligaments | Hold the lens in position; connect lens to ciliary body |
 
 ### Accommodation
 
 Accommodation is the process of changing the shape of the lens to focus on objects at different
-distances.
+Distances.
 
 **Focusing on a distant object:**
 
@@ -819,30 +819,30 @@ distances.
 
 ### Photoreceptors
 
-| Feature       | Rods                                | Cones                               |
+| Feature | Rods | Cones |
 | ------------- | ----------------------------------- | ----------------------------------- |
-| Sensitivity   | High (work in dim light)            | Low (work in bright light)          |
-| Colour        | Cannot distinguish colour           | Distinguish red, green, blue        |
-| Visual acuity | Low (many rods share one neuron)    | High (one cone per neuron in fovea) |
-| Distribution  | Concentrated at periphery of retina | Concentrated at fovea               |
-| Pigment       | Rhodopsin                           | Iodopsin (three types)              |
+| Sensitivity | High (work in dim light) | Low (work in bright light) |
+| Colour | Cannot distinguish colour | Distinguish red, green, blue |
+| Visual acuity | Low (many rods share one neuron) | High (one cone per neuron in fovea) |
+| Distribution | Concentrated at periphery of retina | Concentrated at fovea |
+| Pigment | Rhodopsin | Iodopsin (three types) |
 
 ### The Ear
 
 **Structure:**
 
-| Part                       | Function                                                              |
+| Part | Function |
 | -------------------------- | --------------------------------------------------------------------- |
-| Pinna (auricle)            | Collects and directs sound waves into the ear canal                   |
-| Ear canal (auditory canal) | Directs sound waves to the eardrum                                    |
-| Eardrum (tympanum)         | Thin membrane that vibrates when sound waves hit it                   |
-| Ossicles                   | Three tiny bones (malleus, incus, stapes) that amplify vibrations     |
-| Oval window                | Transmits vibrations from ossicles to the cochlea                     |
-| Cochlea                    | Fluid-filled spiral structure containing hair cells (sound receptors) |
-| Round window               | Releases pressure from the cochlear fluid                             |
-| Auditory nerve             | Transmits impulses from cochlea to the brain                          |
-| Semicircular canals        | Detect rotational movement (balance)                                  |
-| Eustachian tube            | Connects middle ear to throat; equalises pressure                     |
+| Pinna (auricle) | Collects and directs sound waves into the ear canal |
+| Ear canal (auditory canal) | Directs sound waves to the eardrum |
+| Eardrum (tympanum) | Thin membrane that vibrates when sound waves hit it |
+| Ossicles | Three tiny bones (malleus, incus, stapes) that amplify vibrations |
+| Oval window | Transmits vibrations from ossicles to the cochlea |
+| Cochlea | Fluid-filled spiral structure containing hair cells (sound receptors) |
+| Round window | Releases pressure from the cochlear fluid |
+| Auditory nerve | Transmits impulses from cochlea to the brain |
+| Semicircular canals | Detect rotational movement (balance) |
+| Eustachian tube | Connects middle ear to throat; equalises pressure |
 
 ### Hearing Mechanism
 
@@ -859,12 +859,12 @@ distances.
 
 The skin contains various sensory receptors:
 
-| Receptor Type      | Detected Stimulus      |
+| Receptor Type | Detected Stimulus |
 | ------------------ | ---------------------- |
-| Pain receptors     | Pain, tissue damage    |
-| Thermoreceptors    | Temperature changes    |
-| Pressure receptors | Pressure, touch        |
-| Mechanoreceptors   | Mechanical deformation |
+| Pain receptors | Pain, tissue damage |
+| Thermoreceptors | Temperature changes |
+| Pressure receptors | Pressure, touch |
+| Mechanoreceptors | Mechanical deformation |
 
 ---
 
@@ -873,32 +873,32 @@ The skin contains various sensory receptors:
 ### The Endocrine System
 
 The endocrine system consists of endocrine glands that secrete **hormones** directly into the
-bloodstream. Hormones are chemical messengers that travel in the blood to target organs.
+Bloodstream. Hormones are chemical messengers that travel in the blood to target organs.
 
 ### Comparison: Nervous vs Hormonal Coordination
 
-| Feature      | Nervous System                      | Endocrine System                      |
+| Feature | Nervous System | Endocrine System |
 | ------------ | ----------------------------------- | ------------------------------------- |
-| Speed        | Very fast (milliseconds)            | Slower (seconds to hours to days)     |
-| Duration     | Short-lived                         | Longer-lasting                        |
-| Transmission | Electrical impulses along neurons   | Chemical (hormones in blood)          |
-| Target       | Specific effectors (muscles/glands) | Target organs with specific receptors |
-| Pathway      | Along neurones via synapses         | Via bloodstream                       |
-| Example      | Reflex arc                          | Blood glucose regulation              |
+| Speed | Very fast (milliseconds) | Slower (seconds to hours to days) |
+| Duration | Short-lived | Longer-lasting |
+| Transmission | Electrical impulses along neurons | Chemical (hormones in blood) |
+| Target | Specific effectors (muscles/glands) | Target organs with specific receptors |
+| Pathway | Along neurones via synapses | Via bloodstream |
+| Example | Reflex arc | Blood glucose regulation |
 
 ### Major Endocrine Glands and Hormones
 
-| Gland                           | Hormone(s)              | Function                                                 |
+| Gland | Hormone(s) | Function |
 | ------------------------------- | ----------------------- | -------------------------------------------------------- |
-| Hypothalamus                    | Releasing hormones, ADH | Controls pituitary gland; regulates water balance        |
-| Pituitary (anterior)            | FSH, LH, TSH, ACTH, GH  | Controls other glands; growth; reproductive cycle        |
-| Pituitary (posterior)           | ADH, oxytocin           | Water reabsorption; uterine contractions during labour   |
-| Thyroid                         | Thyroxine               | Regulates basal metabolic rate; growth and development   |
-| Adrenal cortex                  | Cortisol, aldosterone   | Stress response; regulates Na$^+$ and water balance      |
-| Adrenal medulla                 | Adrenaline              | "Fight or flight" response; increases heart rate and BP  |
-| Pancreas (islets of Langerhans) | Insulin, glucagon       | Blood glucose regulation                                 |
-| Ovaries                         | Oestrogen, progesterone | Female secondary sexual characteristics; menstrual cycle |
-| Testes                          | Testosterone            | Male secondary sexual characteristics; sperm production  |
+| Hypothalamus | Releasing hormones, ADH | Controls pituitary gland; regulates water balance |
+| Pituitary (anterior) | FSH, LH, TSH, ACTH, GH | Controls other glands; growth; reproductive cycle |
+| Pituitary (posterior) | ADH, oxytocin | Water reabsorption; uterine contractions during labour |
+| Thyroid | Thyroxine | Regulates basal metabolic rate; growth and development |
+| Adrenal cortex | Cortisol, aldosterone | Stress response; regulates Na$^+$ and water balance |
+| Adrenal medulla | Adrenaline | "Fight or flight" response; increases heart rate and BP |
+| Pancreas (islets of Langerhans) | Insulin, glucagon | Blood glucose regulation |
+| Ovaries | Oestrogen, progesterone | Female secondary sexual characteristics; menstrual cycle |
+| Testes | Testosterone | Male secondary sexual characteristics; sperm production |
 
 ### Blood Glucose Regulation
 
@@ -909,9 +909,9 @@ Blood glucose concentration is normally maintained at approximately **90 mg/100 
 1. Detected by beta ($\beta$) cells in the islets of Langerhans (pancreas)
 2. $\beta$ cells secrete more **insulin**
 3. Insulin stimulates:
-   - Liver and muscle cells to take up glucose
-   - Conversion of glucose to glycogen (glycogenesis) in liver and muscles
-   - Increased rate of glucose respiration in cells
+ - Liver and muscle cells to take up glucose
+ - Conversion of glucose to glycogen (glycogenesis) in liver and muscles
+ - Increased rate of glucose respiration in cells
 4. Blood glucose level decreases back to normal
 
 **If blood glucose falls (e.g., between meals or during exercise):**
@@ -919,8 +919,8 @@ Blood glucose concentration is normally maintained at approximately **90 mg/100 
 1. Detected by alpha ($\alpha$) cells in the islets of Langerhans (pancreas)
 2. $\alpha$ cells secrete more **glucagon**
 3. Glucagon stimulates:
-   - Conversion of glycogen to glucose (glycogenolysis) in the liver
-   - Conversion of amino acids and fats to glucose (gluconeogenesis) in the liver
+ - Conversion of glycogen to glucose (glycogenolysis) in the liver
+ - Conversion of amino acids and fats to glucose (gluconeogenesis) in the liver
 4. Blood glucose level increases back to normal
 
 This is an example of **negative feedback**.
@@ -962,21 +962,21 @@ After a 12-hour fast, a student's blood glucose concentration is 85 mg/100 cm$^3
 
 - Autoimmune destruction of $\beta$ cells in the pancreas
 - No insulin is produced
-- Usually develops in childhood
+- develops in childhood
 - Treated with insulin injections
 
 **Type 2 Diabetes (non-insulin-dependent):**
 
 - Body cells become less responsive to insulin (insulin resistance)
 - $\beta$ cells may produce less insulin over time
-- Usually develops in adults; linked to obesity and lifestyle
+- develops in adults; linked to obesity and lifestyle
 - Treated with dietary control, exercise, and oral medication; insulin may be needed later
 
 **Symptoms of diabetes:**
 
 - High blood glucose concentration (hyperglycaemia)
 - Glucose in urine (kidneys cannot reabsorb all glucose above the renal threshold of ~180 mg/100
-  cm$^3$)
+ cm$^3$)
 - Frequent urination (excess water follows glucose osmotically)
 - Excessive thirst (dehydration from frequent urination)
 - Weight loss (body breaks down fat and protein for energy)
@@ -988,56 +988,56 @@ After a 12-hour fast, a student's blood glucose concentration is 85 mg/100 cm$^3
 
 ### Male Reproductive System
 
-| Structure        | Function                                                                                   |
+| Structure | Function |
 | ---------------- | ------------------------------------------------------------------------------------------ |
-| Testes           | Produce sperm (in seminiferous tubules) and testosterone                                   |
-| Scrotum          | Holds testes outside the body (2-3 degrees C below core temperature for sperm development) |
-| Epididymis       | Stores and matures sperm                                                                   |
-| Vas deferens     | Carries sperm from epididymis to urethra during ejaculation                                |
-| Seminal vesicles | Produce seminal fluid (fructose for energy, prostaglandins)                                |
-| Prostate gland   | Produces alkaline fluid (neutralises vaginal acidity)                                      |
-| Urethra          | Passageway for both semen and urine                                                        |
-| Penis            | Inserts semen into the vagina during intercourse                                           |
+| Testes | Produce sperm (in seminiferous tubules) and testosterone |
+| Scrotum | Holds testes outside the body (2-3 degrees C below core temperature for sperm development) |
+| Epididymis | Stores and matures sperm |
+| Vas deferens | Carries sperm from epididymis to urethra during ejaculation |
+| Seminal vesicles | Produce seminal fluid (fructose for energy, prostaglandins) |
+| Prostate gland | Produces alkaline fluid (neutralises vaginal acidity) |
+| Urethra | Passageway for both semen and urine |
+| Penis | Inserts semen into the vagina during intercourse |
 
 **Sperm structure:**
 
 - **Head:** Contains the haploid nucleus (23 chromosomes) and the acrosome (contains enzymes to
-  penetrate the egg)
+ penetrate the egg)
 - **Middle piece:** Packed with mitochondria to provide ATP for tail movement
 - **Tail (flagellum):** Whiplash movement propels the sperm
 
 ### Female Reproductive System
 
-| Structure                | Function                                                       |
+| Structure | Function |
 | ------------------------ | -------------------------------------------------------------- |
-| Ovaries                  | Produce ova (eggs) and hormones (oestrogen, progesterone)      |
-| Oviduct (fallopian tube) | Carries the ovum from ovary to uterus; site of fertilisation   |
-| Uterus                   | Implantation of embryo; development of foetus                  |
-| Endometrium              | Lining of the uterus; thickens and is shed during menstruation |
-| Cervix                   | Ring of muscle at the entrance to the uterus                   |
-| Vagina                   | Receives the penis during intercourse; birth canal             |
+| Ovaries | Produce ova (eggs) and hormones (oestrogen, progesterone) |
+| Oviduct (fallopian tube) | Carries the ovum from ovary to uterus; site of fertilisation |
+| Uterus | Implantation of embryo; development of foetus |
+| Endometrium | Lining of the uterus; thickens and is shed during menstruation |
+| Cervix | Ring of muscle at the entrance to the uterus |
+| Vagina | Receives the penis during intercourse; birth canal |
 
 ### The Menstrual Cycle
 
 The menstrual cycle is approximately 28 days and is controlled by four hormones:
 
 1. **FSH (Follicle-Stimulating Hormone):** Produced by the anterior pituitary gland; stimulates the
-   development of a follicle in the ovary; stimulates the ovaries to produce oestrogen
+ development of a follicle in the ovary; stimulates the ovaries to produce oestrogen
 2. **Oestrogen:** Produced by the developing follicle; causes the endometrium to thicken; inhibits
-   FSH production (negative feedback); stimulates LH release (positive feedback when level is high
-   enough)
+ FSH production (negative feedback); stimulates LH release (positive feedback when level is high
+ enough)
 3. **LH (Luteinising Hormone):** Produced by the anterior pituitary gland; triggers ovulation (day
-   14); stimulates the remains of the follicle to develop into the corpus luteum
+ 14); stimulates the remains of the follicle to develop into the corpus luteum
 4. **Progesterone:** Produced by the corpus luteum; maintains the thickened endometrium; inhibits
-   FSH and LH production
+ FSH and LH production
 
-| Day(s) | Event                                                                             |
+| Day(s) | Event |
 | ------ | --------------------------------------------------------------------------------- |
-| 1-5    | Menstruation: endometrium is shed (if no implantation occurs)                     |
-| 1-13   | Follicular phase: follicle develops; oestrogen rises; endometrium thickens        |
-| ~14    | Ovulation: LH surge causes the follicle to rupture; ovum is released              |
-| 15-28  | Luteal phase: corpus luteum forms; progesterone rises; endometrium maintained     |
-| 25-28  | If no implantation: corpus luteum degenerates; progesterone drops; cycle restarts |
+| 1-5 | Menstruation: endometrium is shed (if no implantation occurs) |
+| 1-13 | Follicular phase: follicle develops; oestrogen rises; endometrium thickens |
+| ~14 | Ovulation: LH surge causes the follicle to rupture; ovum is released |
+| 15-28 | Luteal phase: corpus luteum forms; progesterone rises; endometrium maintained |
+| 25-28 | If no implantation: corpus luteum degenerates; progesterone drops; cycle restarts |
 
 ### Fertilisation and Implantation
 
@@ -1046,32 +1046,32 @@ The menstrual cycle is approximately 28 days and is controlled by four hormones:
 3. One sperm penetrates the zona pellucida of the ovum (acrosome reaction)
 4. The sperm nucleus fuses with the ovum nucleus -- **fertilisation** produces a zygote
 5. The zygote divides by mitosis as it travels along the oviduct (forms a ball of cells called a
-   morula, then a blastocyst)
+ morula, then a blastocyst)
 6. The blastocyst implants into the thickened endometrium (~7 days after fertilisation)
 7. The placenta forms, providing nutrients and gas exchange between mother and foetus
 
 ### Contraception
 
-| Method                             | Mechanism                                                                        |
+| Method | Mechanism |
 | ---------------------------------- | -------------------------------------------------------------------------------- |
-| Condom                             | Physical barrier; prevents sperm reaching the ovum                               |
-| Diaphragm/cap                      | Physical barrier over the cervix                                                 |
+| Condom | Physical barrier; prevents sperm reaching the ovum |
+| Diaphragm/cap | Physical barrier over the cervix |
 | Oral contraceptive pill (combined) | Contains oestrogen and progesterone; inhibits ovulation; thickens cervical mucus |
-| Mini-pill                          | Progesterone only; thickens cervical mucus                                       |
-| Intrauterine device (IUD)          | Prevents implantation; may also affect sperm                                     |
-| Sterilisation                      | Surgical cutting/tying of vas deferens (male) or oviducts (female)               |
-| Rhythm method                      | Avoiding intercourse during the fertile window                                   |
-| Injection/implant                  | Slow-release progesterone; prevents ovulation                                    |
+| Mini-pill | Progesterone only; thickens cervical mucus |
+| Intrauterine device (IUD) | Prevents implantation; may also affect sperm |
+| Sterilisation | Surgical cutting/tying of vas deferens (male) or oviducts (female) |
+| Rhythm method | Avoiding intercourse during the fertile window |
+| Injection/implant | Slow-release progesterone; prevents ovulation |
 
 ### Sexually Transmitted Diseases (STDs)
 
-| Disease                    | Pathogen                                  | Symptoms                                                                   |
+| Disease | Pathogen | Symptoms |
 | -------------------------- | ----------------------------------------- | -------------------------------------------------------------------------- |
-| HIV/AIDS                   | Human Immunodeficiency Virus (retrovirus) | Destroys helper T cells; immune system collapses; opportunistic infections |
-| Syphilis                   | _Treponema pallidum_ (bacterium)          | Painless sores, rash, organ damage if untreated                            |
-| Gonorrhoea                 | _Neisseria gonorrhoeae_ (bacterium)       | Painful urination, discharge; may cause infertility                        |
-| Chlamydia                  | _Chlamydia trachomatis_ (bacterium)       | Often asymptomatic; can cause infertility                                  |
-| HPV (Human Papillomavirus) | Virus                                     | Genital warts; linked to cervical cancer                                   |
+| HIV/AIDS | Human Immunodeficiency Virus (retrovirus) | Destroys helper T cells; immune system collapses; opportunistic infections |
+| Syphilis | _Treponema pallidum_ (bacterium) | Painless sores, rash, organ damage if untreated |
+| Gonorrhoea | _Neisseria gonorrhoeae_ (bacterium) | Painful urination, discharge; may cause infertility |
+| Chlamydia | _Chlamydia trachomatis_ (bacterium) | Often asymptomatic; can cause infertility |
+| HPV (Human Papillomavirus) | Virus | Genital warts; linked to cervical cancer |
 
 **Prevention:** Use of condoms; vaccination (HPV); monogamy; regular testing.
 
@@ -1080,37 +1080,37 @@ The menstrual cycle is approximately 28 days and is controlled by four hormones:
 ## Common Pitfalls
 
 1. **Confusing excretion and egestion:** Egestion (removal of faeces) is not excretion. Faeces never
-   entered the body's metabolic processes. CO$_2$ from respiration and urea from deamination are
-   excretory products.
+ entered the body's metabolic processes. CO$_2$ from respiration and urea from deamination are
+ excretory products.
 
 2. **Stating bile digests fat:** Bile emulsifies fat (physical breakdown into droplets). It does NOT
-   chemically digest fat. Lipase digests fat.
+ chemically digest fat. Lipase digests fat.
 
 3. **Mixing up ventilation pressures:** During inhalation, lung pressure is LOWER than atmospheric
-   pressure. During exhalation, lung pressure is HIGHER. The volume-pressure relationship is inverse
-   (Boyle's law).
+ pressure. During exhalation, lung pressure is HIGHER. The volume-pressure relationship is inverse
+ (Boyle's law).
 
 4. **Saying veins carry deoxygenated blood:** The pulmonary vein carries oxygenated blood from the
-   lungs to the heart. Always specify pulmonary vs systemic.
+ lungs to the heart. Always specify pulmonary vs systemic.
 
 5. **Confusing osmoregulation direction:** High ADH means concentrated urine (less water excreted),
-   not dilute urine. ADH promotes water reabsorption.
+ not dilute urine. ADH promotes water reabsorption.
 
 6. **Confusing antagonistic hormones:** Insulin LOWERS blood glucose. Glucagon RAISES blood glucose.
-   Students often swap them.
+ Students often swap them.
 
 7. **Mixing up sympathetic and parasympathetic:** Sympathetic = fight or flight (pupil dilation,
-   heart rate up). Parasympathetic = rest and digest (pupil constriction, heart rate down).
+ heart rate up). Parasympathetic = rest and digest (pupil constriction, heart rate down).
 
 8. **Forgetting that sensory neurons carry impulses TO the CNS:** The direction of impulse travel
-   matters. Sensory: receptor to CNS. Motor: CNS to effector.
+ matters. Sensory: receptor to CNS. Motor: CNS to effector.
 
 9. **Writing that the loop of Henle reabsorbs water in both limbs:** Only the descending limb is
-   permeable to water. The ascending limb actively transports Na$^+$ and Cl$^-$ and is impermeable
-   to water.
+ permeable to water. The ascending limb actively transports Na$^+$ and Cl$^-$ and is impermeable
+ to water.
 
 10. **Confusing the roles of FSH and LH:** FSH stimulates follicle development. LH triggers
-    ovulation and maintains the corpus luteum. Do not swap them.
+ ovulation and maintains the corpus luteum. Do not swap them.
 
 ---
 
@@ -1118,13 +1118,13 @@ The menstrual cycle is approximately 28 days and is controlled by four hormones:
 
 **Problem 1:** A student sets up an experiment to investigate the effect of pH on the activity of salivary amylase. Test tubes containing starch solution and amylase are incubated at different pH values. After 10 minutes, the presence of starch is tested with iodine solution.
 
-| pH  | Starch remaining after 10 min |
+| pH | Starch remaining after 10 min |
 | --- | ----------------------------- |
-| 3   | ++++                          |
-| 5   | ++                            |
-| 7   | -                             |
-| 9   | +                             |
-| 11  | ++++                          |
+| 3 | ++++ |
+| 5 | ++ |
+| 7 | - |
+| 9 | + |
+| 11 | ++++ |
 
 (a) At which pH is amylase most active? Explain.
 
@@ -1152,7 +1152,7 @@ If you get this wrong, revise: Gas Exchange -- Gas Exchange in the Alveoli
 <details>
 <summary>Solution</summary>
 
-1. **Large surface area:** Millions of alveoli in each lung provide a total surface area of approximately 70 m$^2$, maximising the area available for diffusion of O$_2$ and CO$_2$.
+1. **Large surface area:** Millions of alveoli in each lung provide a total surface area of approximately 70 m$^2$Maximising the area available for diffusion of O$_2$ and CO$_2$.
 
 2. **Thin walls:** The alveolar epithelium is only one cell thick, and each alveolus is surrounded by a capillary wall that is also one cell thick. The total diffusion distance is approximately 1 micrometre, minimising the distance gases must travel.
 
@@ -1175,7 +1175,7 @@ If you get this wrong, revise: Excretion -- Ultrafiltration; Selective Reabsorpt
 
 (a) Percentage reabsorbed = $\frac{180 - 1.5}{180} \times 100 = \frac{178.5}{180} \times 100 = 99.2\%$
 
-(b) The **proximal convoluted tubule (PCT)** is the primary site of reabsorption. It reabsorbs approximately 85% of the glomerular filtrate, including all glucose (by active transport and co-transport), all amino acids (by active transport), most water (by osmosis following solute reabsorption), and most mineral ions (Na$^+$, K$^+$, Cl$^-$ by active transport). The loop of Henle, DCT, and collecting duct provide further fine-tuning, with the collecting duct regulated by ADH.
+(b) The **proximal convoluted tubule (PCT)** is the primary site of reabsorption. It reabsorbs approximately 85% of the glomerular filtrate, including all glucose (by active transport and co-transport), all amino acids (by active transport), most water (by osmosis following solute reabsorption), and most mineral ions (Na$^+$K$^+$Cl$^-$ by active transport). The loop of Henle, DCT, and collecting duct provide further fine-tuning, with the collecting duct regulated by ADH.
 
 </details>
 
@@ -1231,9 +1231,9 @@ If you get this wrong, revise: Transport in Humans -- The Oxygen Dissociation Cu
 <details>
 <summary>Solution</summary>
 
-During exercise, respiration rate increases, producing more CO$_2$ as a waste product. Increased CO$_2$ raises blood $pCO_2$, which lowers blood pH (more H$^+$ ions from carbonic acid: $\mathrm{CO}_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$). Muscle temperature also rises due to increased metabolic activity.
+During exercise, respiration rate increases, producing more CO$_2$ as a waste product. Increased CO$_2$ raises blood $pCO_2$Which lowers blood pH (more H$^+$ ions from carbonic acid: $\mathrm{CO}_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$). Muscle temperature also rises due to increased metabolic activity.
 
-These factors (high $pCO_2$, low pH, high temperature) cause the oxygen dissociation curve to shift to the right (the Bohr effect). A rightward shift means that at any given $pO_2$, haemoglobin has a lower affinity for oxygen and releases more oxygen to the tissues. This ensures that more oxygen is unloaded precisely where and when it is needed most -- the actively respiring muscles.
+These factors (high $pCO_2$Low pH, high temperature) cause the oxygen dissociation curve to shift to the right (the Bohr effect). A rightward shift means that at any given $pO_2$Haemoglobin has a lower affinity for oxygen and releases more oxygen to the tissues. This ensures that more oxygen is unloaded precisely where and when it is needed most -- the actively respiring muscles.
 
 </details>
 
@@ -1299,15 +1299,15 @@ If you get this wrong, revise: Nervous Coordination -- Synapses
 
 The large intestine is approximately 1.5 metres long. Its primary functions are water reabsorption and faeces formation.
 
-| Region                | Function                                                                                                                     |
+| Region | Function |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Caecum                | Small pouch at the start; contains the appendix (no significant digestive function in humans)                                   |
-| Ascending colon       | Water reabsorption; movement of contents upwards by peristalsis                                                              |
-| Transverse colon      | Water reabsorption; movement of contents across the abdomen                                                                  |
-| Descending colon      | Water reabsorption; movement of contents downwards                                                                          |
-| Sigmoid colon         | Storage of faeces; connects to the rectum                                                                                   |
-| Rectum                | Storage of faeces prior to defaecation                                                                                      |
-| Anus                  | Sphincter muscles (internal: involuntary; external: voluntary) control defaecation                                         |
+| Caecum | Small pouch at the start; contains the appendix (no significant digestive function in humans) |
+| Ascending colon | Water reabsorption; movement of contents upwards by peristalsis |
+| Transverse colon | Water reabsorption; movement of contents across the abdomen |
+| Descending colon | Water reabsorption; movement of contents downwards |
+| Sigmoid colon | Storage of faeces; connects to the rectum |
+| Rectum | Storage of faeces prior to defaecation |
+| Anus | Sphincter muscles (internal: involuntary; external: voluntary) control defaecation |
 
 **Key processes:**
 
@@ -1319,13 +1319,13 @@ The large intestine is approximately 1.5 metres long. Its primary functions are 
 
 ### The Liver
 
-| Liver Function        | Description                                                                                                                 |
+| Liver Function | Description |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Bile production       | Hepatocytes produce bile (bile salts, bile pigments, cholesterol, phospholipids)                                         |
-| Glycogen storage      | Stores glycogen; releases glucose when blood glucose drops                                                                 |
-| Deamination          | Converts excess amino acids to keto acids and ammonia; ammonia to urea (ornithine cycle)                                    |
-| Detoxification        | Converts harmful substances (alcohol, drugs) into less harmful forms                                                      |
-| Plasma protein synthesis | Synthesises albumin, fibrinogen, and other plasma proteins                                                            |
+| Bile production | Hepatocytes produce bile (bile salts, bile pigments, cholesterol, phospholipids) |
+| Glycogen storage | Stores glycogen; releases glucose when blood glucose drops |
+| Deamination | Converts excess amino acids to keto acids and ammonia; ammonia to urea (ornithine cycle) |
+| Detoxification | Converts harmful substances (alcohol, drugs) into less harmful forms |
+| Plasma protein synthesis | Synthesises albumin, fibrinogen, and other plasma proteins |
 
 **Bile is NOT an enzyme.** It emulsifies fats physically (increases surface area) but does NOT chemically digest fats. Lipase chemically digests fats.
 
@@ -1335,35 +1335,35 @@ The large intestine is approximately 1.5 metres long. Its primary functions are 
 
 ### Partial Pressures and Gas Exchange
 
-| Location                  | $p\mathrm{O}_2$ (kPa) | $p\mathrm{CO}_2$ (kPa) |
+| Location | $p\mathrm{O}_2$ (kPa) | $p\mathrm{CO}_2$ (kPa) |
 | ------------------------- | -------------------- | ----------------------- |
-| Inspired air              | 21.2                | 0.04                    |
-| Alveolar air              | 13.3                | 5.3                     |
-| Deoxygenated blood        | 5.3                 | 6.1                     |
-| Oxygenated blood          | 13.3                | 5.3                     |
-| Tissue capillaries        | 2.0-5.3            | 6.0-7.3                 |
+| Inspired air | 21.2 | 0.04 |
+| Alveolar air | 13.3 | 5.3 |
+| Deoxygenated blood | 5.3 | 6.1 |
+| Oxygenated blood | 13.3 | 5.3 |
+| Tissue capillaries | 2.0-5.3 | 6.0-7.3 |
 
 ### Factors Affecting the Oxygen Dissociation Curve
 
-| Factor                | Effect on Curve      | Explanation                                                                                                         |
+| Factor | Effect on Curve | Explanation |
 | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Increased $p\mathrm{CO}_2$ | Shifts right (Bohr effect) | Carbonic acid lowers pH; H$^+$ reduces haemoglobin's affinity for $\mathrm{O}_2$                            |
-| Decreased pH          | Shifts right         | H$^+$ ions bind to haemoglobin, reducing its affinity for $\mathrm{O}_2$                                         |
-| Increased temperature | Shifts right         | Higher temperature reduces haemoglobin's affinity for $\mathrm{O}_2$                                              |
-| Fetal haemoglobin     | Shifts left          | Higher affinity for $\mathrm{O}_2$ than adult haemoglobin; allows efficient transfer across the placenta           |
+| Increased $p\mathrm{CO}_2$ | Shifts right (Bohr effect) | Carbonic acid lowers pH; H$^+$ reduces haemoglobin's affinity for $\mathrm{O}_2$ |
+| Decreased pH | Shifts right | H$^+$ ions bind to haemoglobin, reducing its affinity for $\mathrm{O}_2$ |
+| Increased temperature | Shifts right | Higher temperature reduces haemoglobin's affinity for $\mathrm{O}_2$ |
+| Fetal haemoglobin | Shifts left | Higher affinity for $\mathrm{O}_2$ than adult haemoglobin; allows efficient transfer across the placenta |
 
 ### Carbon Dioxide Transport
 
-| Method                          | Percentage | Description                                                                                                       |
+| Method | Percentage | Description |
 | ------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------- |
-| Dissolved in plasma             | ~5%        | Small amount dissolves directly in blood plasma                                                                    |
-| Bound to haemoglobin           | ~10-15%    | $\mathrm{CO}_2$ binds to globin chains (NOT the haem group)                                                       |
-| Hydrogen carbonate ($\mathrm{HCO}_3^-$) | ~70-80% | Carbonic anhydrase converts $\mathrm{CO}_2$ to $\mathrm{H}_2\mathrm{CO}_3$, which dissociates to $\mathrm{H}^+$ and $\mathrm{HCO}_3^-$ |
+| Dissolved in plasma | ~5% | Small amount dissolves directly in blood plasma |
+| Bound to haemoglobin | ~10-15% | $\mathrm{CO}_2$ binds to globin chains (NOT the haem group) |
+| Hydrogen carbonate ($\mathrm{HCO}_3^-$) | ~70-80% | Carbonic anhydrase converts $\mathrm{CO}_2$ to $\mathrm{H}_2\mathrm{CO}_3$Which dissociates to $\mathrm{H}^+$ and $\mathrm{HCO}_3^-$ |
 
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Human Physiology**? The [diagnostic test](/docs/dse/Biology/diagnostics/diag-human-physiology) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human Physiology with other biology topics to test synthesis under exam conditions.
@@ -1378,80 +1378,80 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 The cardiac cycle is the sequence of events in one complete heartbeat. It consists of three main phases:
 
-| Phase                  | Atria                                | Ventricles                           | AV Valves                 | Semilunar Valves          | Blood Movement                |
+| Phase | Atria | Ventricles | AV Valves | Semilunar Valves | Blood Movement |
 | ----------------------- | ------------------------------------ | ------------------------------------ | ------------------------- | ------------------------- | ------------------------------ |
-| **Atrial systole**        | Contract; push remaining blood into ventricles | Relax; passively fill from atria     | Open                      | Closed                    | ~25% of ventricular filling is from atrial contraction (the "atrial kick"); the remaining 75% occurred passively during ventricular diastole |
-| **Ventricular systole**   | Relax; fill from veins               | Contract; pressure rises rapidly      | Close (first heart sound, S1 "lub") | Open (when ventricular pressure exceeds arterial pressure) | Blood is ejected into the aorta and pulmonary artery; not all blood is expelled -- approximately 60% is ejected (ejection fraction); the remaining 40% is the end-systolic volume |
-| **Ventricular diastole**  | Relax; fill from veins               | Relax; pressure drops below arterial pressure | Closed                    | Close (second heart sound, S2 "dub") | Both atria and ventricles relax; blood flows from veins into atria and passively into ventricles; the heart is filling |
+| **Atrial systole** | Contract; push remaining blood into ventricles | Relax; passively fill from atria | Open | Closed | ~25% of ventricular filling is from atrial contraction (the "atrial kick"); the remaining 75% occurred passively during ventricular diastole |
+| **Ventricular systole** | Relax; fill from veins | Contract; pressure rises rapidly | Close (first heart sound, S1 "lub") | Open (when ventricular pressure exceeds arterial pressure) | Blood is ejected into the aorta and pulmonary artery; not all blood is expelled -- approximately 60% is ejected (ejection fraction); the remaining 40% is the end-systolic volume |
+| **Ventricular diastole** | Relax; fill from veins | Relax; pressure drops below arterial pressure | Closed | Close (second heart sound, S2 "dub") | Both atria and ventricles relax; blood flows from veins into atria and passively into ventricles; the heart is filling |
 
 **Key pressure relationships:**
 
-| Event                          | Pressure Condition                                                                                                           | Result                                  |
+| Event | Pressure Condition | Result |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| AV valves open                 | Atrial pressure > ventricular pressure                                                                                      | Blood flows from atria to ventricles    |
-| AV valves close                | Ventricular pressure > atrricular pressure (at the start of ventricular systole)                                           | Prevents backflow into atria            |
-| Semilunar valves open          | Ventricular pressure > arterial pressure (aortic/pulmonary)                                                                | Blood is ejected into arteries          |
-| Semilunar valves close         | Ventricular pressure < arterial pressure (at the start of ventricular diastole)                                           | Prevents backflow into ventricles       |
+| AV valves open | Atrial pressure > ventricular pressure | Blood flows from atria to ventricles |
+| AV valves close | Ventricular pressure > atrricular pressure (at the start of ventricular systole) | Prevents backflow into atria |
+| Semilunar valves open | Ventricular pressure > arterial pressure (aortic/pulmonary) | Blood is ejected into arteries |
+| Semilunar valves close | Ventricular pressure < arterial pressure (at the start of ventricular diastole) | Prevents backflow into ventricles |
 
 ### Cardiac Output
 
 $$\text{Cardiac output} = \text{Heart rate} \times \text{Stroke volume}$$
 
-| Component            | Normal Value (at rest)     | During Exercise                                |
+| Component | Normal Value (at rest) | During Exercise |
 | -------------------- | -------------------------- | ---------------------------------------------- |
-| Heart rate            | 60-80 bpm                  | Increases to 150-200 bpm                       |
-| Stroke volume         | ~70 mL                     | Increases to ~100-120 mL (due to increased venous return and stronger contraction) |
-| Cardiac output         | ~5 L/min                   | Increases to ~15-25 L/min (up to 5x resting)   |
+| Heart rate | 60-80 bpm | Increases to 150-200 bpm |
+| Stroke volume | ~70 mL | Increases to ~100-120 mL (due to increased venous return and stronger contraction) |
+| Cardiac output | ~5 L/min | Increases to ~15-25 L/min (up to 5x resting) |
 
 **Factors affecting cardiac output:**
 
-| Factor                  | Effect on Cardiac Output                                                                                                    | Mechanism                                                                                                                 |
+| Factor | Effect on Cardiac Output | Mechanism |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Exercise                 | Increases significantly                                                                                                    | Sympathetic nervous system releases adrenaline; increases heart rate and stroke volume; increased venous return (muscle pump) |
-| Increased venous return  | Increases (Frank-Starling law)                                                                                            | More blood entering the heart stretches the ventricular walls, causing a stronger contraction (Starling's law of the heart) |
-| Adrenaline               | Increases                                                                                                                  | Binds to beta-1 receptors in the heart; increases heart rate and force of contraction                                     |
-| Acetylcholine (vagus nerve) | Decreases                                                                                                               | Binds to muscarinic receptors in the heart; decreases heart rate (parasympathetic effect)                                |
-| Body temperature         | Increases                                                                                                                  | Higher temperature increases metabolic rate and heart rate; for every 1 degrees C increase in body temperature, heart rate increases by approximately 10 bpm |
-| Age                      | Generally decreases with age                                                                                               | Reduced maximum heart rate and stroke volume capacity with aging                                                          |
-| Fitness level            | Resting cardiac output is similar but stroke volume is higher and resting heart rate is lower (more efficient heart)       | Athletic heart is larger and stronger; can pump more blood per beat, so it needs fewer beats at rest                        |
+| Exercise | Increases significantly | Sympathetic nervous system releases adrenaline; increases heart rate and stroke volume; increased venous return (muscle pump) |
+| Increased venous return | Increases (Frank-Starling law) | More blood entering the heart stretches the ventricular walls, causing a stronger contraction (Starling's law of the heart) |
+| Adrenaline | Increases | Binds to beta-1 receptors in the heart; increases heart rate and force of contraction |
+| Acetylcholine (vagus nerve) | Decreases | Binds to muscarinic receptors in the heart; decreases heart rate (parasympathetic effect) |
+| Body temperature | Increases | Higher temperature increases metabolic rate and heart rate; for every 1 degrees C increase in body temperature, heart rate increases by approximately 10 bpm |
+| Age | Generally decreases with age | Reduced maximum heart rate and stroke volume capacity with aging |
+| Fitness level | Resting cardiac output is similar but stroke volume is higher and resting heart rate is lower (more efficient heart) | Athletic heart is larger and stronger; can pump more blood per beat, so it needs fewer beats at rest |
 
 ### Coronary Heart Disease (CHD)
 
 **Atherosclerosis:** The build-up of fatty deposits (atheroma/plaque) in the walls of the coronary arteries, narrowing the lumen and restricting blood flow to the heart muscle.
 
-| Stage                  | Description                                                                                                               |
+| Stage | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Endothelial damage       | Damage to the inner lining of the artery (caused by high blood pressure, smoking, high cholesterol)                     |
-| Lipid deposition         | LDL cholesterol infiltrates the damaged endothelium and accumulates in the arterial wall                                |
-| Inflammatory response    | White blood cells (macrophages) migrate to the site, engulf the lipids, and become foam cells (forming a fatty streak)    |
-| Plaque formation          | Smooth muscle cells migrate to the area and form a fibrous cap over the lipid core, creating an atheroma (plaque)        |
-| Plaque growth             | The plaque gradually enlarges, narrowing the lumen of the artery and restricting blood flow                               |
-| Thrombosis               | If the fibrous cap ruptures, a blood clot (thrombus) forms at the site, potentially completely blocking the artery        |
+| Endothelial damage | Damage to the inner lining of the artery (caused by high blood pressure, smoking, high cholesterol) |
+| Lipid deposition | LDL cholesterol infiltrates the damaged endothelium and accumulates in the arterial wall |
+| Inflammatory response | White blood cells (macrophages) migrate to the site, engulf the lipids, and become foam cells (forming a fatty streak) |
+| Plaque formation | Smooth muscle cells migrate to the area and form a fibrous cap over the lipid core, creating an atheroma (plaque) |
+| Plaque growth | The plaque gradually enlarges, narrowing the lumen of the artery and restricting blood flow |
+| Thrombosis | If the fibrous cap ruptures, a blood clot (thrombus) forms at the site, potentially completely blocking the artery |
 
 **Risk factors for CHD:**
 
-| Risk Factor              | Mechanism                                                                                                                 |
+| Risk Factor | Mechanism |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| High LDL cholesterol       | LDL deposits cholesterol in arterial walls, promoting plaque formation                                                   |
-| High blood pressure        | Damages the endothelial lining of arteries, making it easier for cholesterol to infiltrate                              |
-| Smoking                   | Carbon monoxide reduces oxygen-carrying capacity of blood; nicotine increases heart rate and blood pressure; chemicals in smoke damage endothelium |
-| Diabetes                  | High blood glucose damages blood vessels; diabetics often have abnormal lipid profiles                                   |
-| Obesity                   | Associated with high blood pressure, high cholesterol, and diabetes                                                      |
-| Sedentary lifestyle       | Lack of exercise is associated with higher blood pressure, higher cholesterol, and obesity                               |
-| Family history            | Genetic predisposition to high cholesterol or other risk factors                                                         |
-| High saturated fat diet   | Increases LDL cholesterol levels                                                                                         |
-| Stress                    | Chronic stress increases blood pressure and heart rate; may promote inflammation in arteries                            |
+| High LDL cholesterol | LDL deposits cholesterol in arterial walls, promoting plaque formation |
+| High blood pressure | Damages the endothelial lining of arteries, making it easier for cholesterol to infiltrate |
+| Smoking | Carbon monoxide reduces oxygen-carrying capacity of blood; nicotine increases heart rate and blood pressure; chemicals in smoke damage endothelium |
+| Diabetes | High blood glucose damages blood vessels; diabetics often have abnormal lipid profiles |
+| Obesity | Associated with high blood pressure, high cholesterol, and diabetes |
+| Sedentary lifestyle | Lack of exercise is associated with higher blood pressure, higher cholesterol, and obesity |
+| Family history | Genetic predisposition to high cholesterol or other risk factors |
+| High saturated fat diet | Increases LDL cholesterol levels |
+| Stress | Chronic stress increases blood pressure and heart rate; may promote inflammation in arteries |
 
 **Treatments for CHD:**
 
-| Treatment                | Description                                                                                                               |
+| Treatment | Description |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Statins                  | Drugs that reduce cholesterol synthesis in the liver (inhibit HMG-CoA reductase); lower LDL cholesterol levels          |
-| Antihypertensives        | Drugs that lower blood pressure (ACE inhibitors, beta-blockers, calcium channel blockers)                               |
-| Anticoagulants           | Drugs that prevent blood clot formation (aspirin, warfarin, heparin)                                                    |
-| Angioplasty              | A balloon catheter is inserted into the narrowed artery and inflated to compress the plaque and widen the lumen; a stent is usually inserted to keep the artery open |
-| Coronary artery bypass graft (CABG) | A blood vessel (usually from the leg or chest) is grafted to bypass the blocked section of the coronary artery        |
-| Lifestyle changes        | Healthy diet (low saturated fat, high fibre), regular exercise, stopping smoking, reducing alcohol intake, weight management |
+| Statins | Drugs that reduce cholesterol synthesis in the liver (inhibit HMG-CoA reductase); lower LDL cholesterol levels |
+| Antihypertensives | Drugs that lower blood pressure (ACE inhibitors, beta-blockers, calcium channel blockers) |
+| Anticoagulants | Drugs that prevent blood clot formation (aspirin, warfarin, heparin) |
+| Angioplasty | A balloon catheter is inserted into the narrowed artery and inflated to compress the plaque and widen the lumen; a stent is inserted to keep the artery open |
+| Coronary artery bypass graft (CABG) | A blood vessel ( from the leg or chest) is grafted to bypass the blocked section of the coronary artery |
+| Lifestyle changes | Healthy diet (low saturated fat, high fibre), regular exercise, stopping smoking, reducing alcohol intake, weight management |
 
 ---
 
@@ -1463,32 +1463,32 @@ Blood pressure is measured using a sphygmomanometer and is expressed as two valu
 
 $$\text{Blood pressure} = \frac{\text{Systolic pressure}}{\text{Diastolic pressure}} \text{ mmHg}$$
 
-| Component            | Description                                                                                                               | Normal Value   |
+| Component | Description | Normal Value |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| Systolic pressure      | Maximum pressure during ventricular systole (when blood is ejected into the aorta)                                      | ~120 mmHg      |
-| Diastolic pressure     | Minimum pressure during ventricular diastole (when the heart is relaxing)                                                | ~80 mmHg       |
+| Systolic pressure | Maximum pressure during ventricular systole (when blood is ejected into the aorta) | ~120 mmHg |
+| Diastolic pressure | Minimum pressure during ventricular diastole (when the heart is relaxing) | ~80 mmHg |
 
 ### Classification
 
-| Category               | Systolic (mmHg)   | Diastolic (mmHg)   |
+| Category | Systolic (mmHg) | Diastolic (mmHg) |
 | ---------------------- | ------------------ | ------------------ |
-| Normal                 | Below 120          | Below 80           |
-| Elevated               | 120-129            | Below 80           |
-| Hypertension Stage 1   | 130-139            | 80-89              |
-| Hypertension Stage 2   | 140 or above       | 90 or above        |
-| Hypotension            | Below 90           | Below 60           |
+| Normal | Below 120 | Below 80 |
+| Elevated | 120-129 | Below 80 |
+| Hypertension Stage 1 | 130-139 | 80-89 |
+| Hypertension Stage 2 | 140 or above | 90 or above |
+| Hypotension | Below 90 | Below 60 |
 
 ### Factors Affecting Blood Pressure
 
-| Factor                  | Effect                                                                                                                    | Mechanism                                                                                                                 |
+| Factor | Effect | Mechanism |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Cardiac output           | Increased CO increases blood pressure                                                                                     | More blood pumped into arteries per unit time increases pressure                                                       |
-| Peripheral resistance    | Increased resistance increases blood pressure                                                                             | Narrower arteries (vasoconstriction) or thicker blood increase resistance; higher resistance = higher pressure for the same flow |
-| Blood volume             | Increased volume increases blood pressure                                                                                 | More fluid in the blood vessels increases pressure against the walls                                                      |
-| Exercise                 | Increases systolic, slightly increases or maintains diastolic                                                            | Increased cardiac output; vasodilation in exercising muscles offsets some of the pressure increase                        |
-| Stress                   | Increases blood pressure (short-term)                                                                                     | Sympathetic nervous system activation; adrenaline and noradrenaline cause vasoconstriction and increased heart rate       |
-| Age                      | Generally increases with age (arteries become less elastic)                                                               | Reduced elasticity means arteries cannot expand to accommodate the pulse of blood, increasing systolic pressure           |
-| Diet (salt)              | High salt intake increases blood pressure                                                                                 | Excess sodium causes water retention (osmosis), increasing blood volume                                                  |
+| Cardiac output | Increased CO increases blood pressure | More blood pumped into arteries per unit time increases pressure |
+| Peripheral resistance | Increased resistance increases blood pressure | Narrower arteries (vasoconstriction) or thicker blood increase resistance; higher resistance = higher pressure for the same flow |
+| Blood volume | Increased volume increases blood pressure | More fluid in the blood vessels increases pressure against the walls |
+| Exercise | Increases systolic, slightly increases or maintains diastolic | Increased cardiac output; vasodilation in exercising muscles offsets some of the pressure increase |
+| Stress | Increases blood pressure (short-term) | Sympathetic nervous system activation; adrenaline and noradrenaline cause vasoconstriction and increased heart rate |
+| Age | Generally increases with age (arteries become less elastic) | Reduced elasticity means arteries cannot expand to accommodate the pulse of blood, increasing systolic pressure |
+| Diet (salt) | High salt intake increases blood pressure | Excess sodium causes water retention (osmosis), increasing blood volume |
 
 ---
 
@@ -1505,49 +1505,49 @@ $$\text{Blood pressure} = \frac{\text{Systolic pressure}}{\text{Diastolic pressu
 
 ### Structure of the Alimentary Canal
 
-| Layer                   | Description                                                                                                               | Function                                                                                                                 |
+| Layer | Description | Function |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Mucosa (innermost)       | Epithelial tissue; may be simple columnar (stomach, intestines) or stratified squamous (oesophagus, mouth)                | Secretion of mucus, enzymes, and digestive juices; absorption of nutrients; protection against self-digestion and pathogens |
-| Submucosa                | Connective tissue containing blood vessels, lymphatic vessels, and nerves (submucosal plexus)                             | Nourishment of the gut wall; transport of absorbed nutrients into blood and lymph                                         |
-| Muscularis externa       | Two layers of smooth muscle: inner circular layer and outer longitudinal layer (except in the stomach, which has a third oblique layer) | Peristalsis (rhythmic wave of contraction) moves food along the canal; segmentation mixes food with digestive juices |
-| Serosa (adventitia)      | Thin outer layer of connective tissue; covered by peritoneum (a serous membrane)                                          | Protection; reduces friction between digestive organs and surrounding tissues                                            |
+| Mucosa (innermost) | Epithelial tissue; may be simple columnar (stomach, intestines) or stratified squamous (oesophagus, mouth) | Secretion of mucus, enzymes, and digestive juices; absorption of nutrients; protection against self-digestion and pathogens |
+| Submucosa | Connective tissue containing blood vessels, lymphatic vessels, and nerves (submucosal plexus) | Nourishment of the gut wall; transport of absorbed nutrients into blood and lymph |
+| Muscularis externa | Two layers of smooth muscle: inner circular layer and outer longitudinal layer (except in the stomach, which has a third oblique layer) | Peristalsis (rhythmic wave of contraction) moves food along the canal; segmentation mixes food with digestive juices |
+| Serosa (adventitia) | Thin outer layer of connective tissue; covered by peritoneum (a serous membrane) | Protection; reduces friction between digestive organs and surrounding tissues |
 
 ### Enzymes of Digestion
 
-| Location                | Enzyme                  | Substrate                  | Product(s)                                               | Optimal pH              |
+| Location | Enzyme | Substrate | Product(s) | Optimal pH |
 | ----------------------- | ------------------------ | -------------------------- | -------------------------------------------------------- | ----------------------- |
-| Mouth                   | Salivary amylase          | Starch                     | Maltose                                                  | ~6.8 (neutral)          |
-| Stomach                 | Pepsin                    | Proteins                   | Polypeptides                                             | ~1.5-2.0 (acidic)       |
-| Small intestine (duodenum) | Pancreatic amylase      | Starch                     | Maltose                                                  | ~7.5-8.5 (alkaline)     |
-| Small intestine (duodenum) | Pancreatic trypsin      | Proteins/polypeptides       | Shorter peptides/amino acids                              | ~7.5-8.5               |
-| Small intestine (duodenum) | Pancreatic lipase       | Lipids (triglycerides)      | Fatty acids and glycerol                                  | ~7.5-8.5               |
-| Small intestine (ileum)  | Maltase                   | Maltose                    | Glucose                                                  | ~7.5-8.5               |
-| Small intestine (ileum)  | Sucrase                   | Sucrose                    | Glucose and fructose                                     | ~7.5-8.5               |
-| Small intestine (ileum)  | Lactase                   | Lactose                    | Glucose and galactose                                    | ~7.5-8.5               |
-| Small intestine (ileum)  | Peptidases (erepsin)      | Peptides                   | Amino acids                                              | ~7.5-8.5               |
+| Mouth | Salivary amylase | Starch | Maltose | ~6.8 (neutral) |
+| Stomach | Pepsin | Proteins | Polypeptides | ~1.5-2.0 (acidic) |
+| Small intestine (duodenum) | Pancreatic amylase | Starch | Maltose | ~7.5-8.5 (alkaline) |
+| Small intestine (duodenum) | Pancreatic trypsin | Proteins/polypeptides | Shorter peptides/amino acids | ~7.5-8.5 |
+| Small intestine (duodenum) | Pancreatic lipase | Lipids (triglycerides) | Fatty acids and glycerol | ~7.5-8.5 |
+| Small intestine (ileum) | Maltase | Maltose | Glucose | ~7.5-8.5 |
+| Small intestine (ileum) | Sucrase | Sucrose | Glucose and fructose | ~7.5-8.5 |
+| Small intestine (ileum) | Lactase | Lactose | Glucose and galactose | ~7.5-8.5 |
+| Small intestine (ileum) | Peptidases (erepsin) | Peptides | Amino acids | ~7.5-8.5 |
 
 ### Absorption in the Small Intestine
 
 The small intestine is the primary site of nutrient absorption. It is highly adapted for this function:
 
-| Adaptation              | Description                                                                                                               | Benefit                                                                                                                  |
+| Adaptation | Description | Benefit |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Villi                    | Finger-like projections of the mucosa (~5 mm long); greatly increase the surface area for absorption                    | More surface area = more efficient absorption                                                                             |
-| Microvilli               | Microscopic hair-like projections on the epithelial cells of the villi (forming the "brush border"); further increase surface area | Surface area is increased by an additional ~600x                                                                       |
-| Single layer of epithelial cells | The villi are lined by a single layer of simple columnar epithelium, creating a short diffusion distance                      | Nutrients only need to diffuse across one cell layer to reach the blood                                                   |
-| Dense capillary network   | Each villus contains a network of blood capillaries                                                                       | Amino acids and glucose are absorbed into the blood and carried to the liver via the hepatic portal vein                 |
-| Lacteal                  | Each villus contains a lacteal (a small lymphatic vessel)                                                                 | Fatty acids and glycerol are absorbed into the lacteal and transported via the lymphatic system                         |
-| Mitochondria             | Epithelial cells have many mitochondria                                                                                  | Provide ATP for active transport of nutrients against concentration gradients                                           |
+| Villi | Finger-like projections of the mucosa (~5 mm long); greatly increase the surface area for absorption | More surface area = more efficient absorption |
+| Microvilli | Microscopic hair-like projections on the epithelial cells of the villi (forming the "brush border"); further increase surface area | Surface area is increased by an additional ~600x |
+| Single layer of epithelial cells | The villi are lined by a single layer of simple columnar epithelium, creating a short diffusion distance | Nutrients only need to diffuse across one cell layer to reach the blood |
+| Dense capillary network | Each villus contains a network of blood capillaries | Amino acids and glucose are absorbed into the blood and carried to the liver via the hepatic portal vein |
+| Lacteal | Each villus contains a lacteal (a small lymphatic vessel) | Fatty acids and glycerol are absorbed into the lacteal and transported via the lymphatic system |
+| Mitochondria | Epithelial cells have many mitochondria | Provide ATP for active transport of nutrients against concentration gradients |
 
 **Mechanisms of absorption:**
 
-| Mechanism                | Description                                                                                                               | Substances Absorbed                           |
+| Mechanism | Description | Substances Absorbed |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Diffusion                 | Movement from high to low concentration down a concentration gradient                                                      | Small lipids (glycerol, short-chain fatty acids); some water-soluble vitamins |
-| Facilitated diffusion     | Movement through carrier proteins or channel proteins, down the concentration gradient                                     | Fructose; some amino acids                    |
-| Active transport          | Movement against the concentration gradient, using ATP and carrier proteins                                              | Glucose; amino acids; ions (Na$^+$, K$^+$, Ca$^{2+}$); vitamins |
-| Co-transport              | Secondary active transport; Na$^+$ moves down its concentration gradient, dragging glucose or amino acids with it (SGLT1 and other co-transporters) | Glucose; galactose; amino acids              |
-| Endocytosis               | The cell membrane engulfs the substance, forming a vesicle inside the cell                                                | Cholesterol; some vitamins; antibodies in newborns (from breast milk) |
+| Diffusion | Movement from high to low concentration down a concentration gradient | Small lipids (glycerol, short-chain fatty acids); some water-soluble vitamins |
+| Facilitated diffusion | Movement through carrier proteins or channel proteins, down the concentration gradient | Fructose; some amino acids |
+| Active transport | Movement against the concentration gradient, using ATP and carrier proteins | Glucose; amino acids; ions (Na$^+$K$^+$Ca$^{2+}$); vitamins |
+| Co-transport | Secondary active transport; Na$^+$ moves down its concentration gradient, dragging glucose or amino acids with it (SGLT1 and other co-transporters) | Glucose; galactose; amino acids |
+| Endocytosis | The cell membrane engulfs the substance, forming a vesicle inside the cell | Cholesterol; some vitamins; antibodies in newborns (from breast milk) |
 
 ### Co-transport of Glucose
 
@@ -1565,16 +1565,16 @@ The mechanism by which glucose is absorbed from the small intestine (and reabsor
 
 ### Functions of the Liver
 
-| Function                | Description                                                                                                               |
+| Function | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Metabolism of carbohydrates | Stores glucose as glycogen (glycogenesis); breaks down glycogen to glucose when needed (glycogenolysis); converts amino acids/lactate to glucose (gluconeogenesis); maintains blood glucose levels |
-| Metabolism of proteins    | Deamination of excess amino acids (removal of the amino group, producing ammonia, which is converted to urea in the ornithine cycle); transamination (transfer of amino groups between amino acids) |
-| Detoxification            | Converts harmful substances (alcohol, drugs, toxins) into less harmful, water-soluble compounds that can be excreted by the kidneys |
-| Production of bile         | Bile is produced by hepatocytes and stored in the gall bladder; contains bile salts (emulsify fats), bile pigments (bilirubin from haemoglobin breakdown), and cholesterol |
-| Storage                   | Stores glycogen, vitamins (A, D, B12), iron (as ferritin), and minerals                                                   |
+| Metabolism of proteins | Deamination of excess amino acids (removal of the amino group, producing ammonia, which is converted to urea in the ornithine cycle); transamination (transfer of amino groups between amino acids) |
+| Detoxification | Converts harmful substances (alcohol, drugs, toxins) into less harmful, water-soluble compounds that can be excreted by the kidneys |
+| Production of bile | Bile is produced by hepatocytes and stored in the gall bladder; contains bile salts (emulsify fats), bile pigments (bilirubin from haemoglobin breakdown), and cholesterol |
+| Storage | Stores glycogen, vitamins (A, D, B12), iron (as ferritin), and minerals |
 | Synthesis of plasma proteins | Produces albumin (maintains blood osmotic pressure), fibrinogen and prothrombin (blood clotting factors), and globulins (antibodies and transport proteins) |
-| Immune function            | Kupffer cells (specialised macrophages in the liver sinusoids) phagocytose bacteria and old/damaged red blood cells         |
-| Breakdown of hormones      | Inactivates and breaks down hormones such as insulin, glucagon, and steroid hormones                                      |
+| Immune function | Kupffer cells (specialised macrophages in the liver sinusoids) phagocytose bacteria and old/damaged red blood cells |
+| Breakdown of hormones | Inactivates and breaks down hormones such as insulin, glucagon, and steroid hormones |
 
 ### Ornithine (Urea) Cycle
 
@@ -1596,3 +1596,11 @@ $$2\mathrm{NH_3} + \mathrm{CO_2} \rightarrow \mathrm{CO(NH_2)_2} + \mathrm{H_2O}
 - **Glucose absorption in the small intestine is primarily by ACTIVE transport (co-transport with Na$^+$), NOT by diffusion.** This is why glucose can be absorbed even when its concentration in the blood is already higher than in the gut lumen**
 - **Deamination occurs in the LIVER, not in the kidneys.** The liver removes the amino group from excess amino acids and converts the resulting ammonia to urea. The kidneys excrete urea but do not produce it**
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

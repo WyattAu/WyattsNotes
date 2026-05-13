@@ -17,9 +17,9 @@ A student proposes the following equation for the drag force $F_D$ on a sphere o
 
 $$F_D = k \, r^n \, v^m \, \rho^p \, \eta^q$$
 
-where $k$ is a dimensionless constant.
+Where $k$ is a dimensionless constant.
 
-Given that dynamic viscosity $\eta$ has dimensions $\text{M}\text{L}^{-1}\text{T}^{-1}$, use dimensional analysis to find the values of $n$, $m$, $p$, and $q$ such that the equation is dimensionally consistent. Express the resulting formula with $n$ as the subject.
+Given that dynamic viscosity $\eta$ has dimensions $\text{M}\text{L}^{-1}\text{T}^{-1}$Use dimensional analysis to find the values of $n$$m$$p$And $q$ such that the equation is dimensionally consistent. Express the resulting formula with $n$ as the subject.
 
 **Solution:**
 
@@ -45,7 +45,7 @@ Equating exponents for each dimension:
 
 **Length:** $1 = n + m - 3p - q$
 
-**Time:** $-2 = -m - q$, so $m + q = 2$
+**Time:** $-2 = -m - q$So $m + q = 2$
 
 We have three equations with four unknowns, so we express in terms of one variable. Using $n$ as the subject:
 
@@ -60,18 +60,18 @@ $$1 = n + 2 - q - 3 + 3q - q$$
 $$1 = n - 1 + q$$
 $$n = 2 - q$$
 
-So the exponents in terms of $q$ are: $n = 2 - q$, $m = 2 - q$, $p = 1 - q$.
+So the exponents in terms of $q$ are: $n = 2 - q$$m = 2 - q$$p = 1 - q$.
 
-For the standard Stokes' drag ($q = 1$): $n = 1$, $m = 1$, $p = 0$, giving $F_D = k r v \eta$.
+For the standard Stokes' drag ($q = 1$): $n = 1$$m = 1$$p = 0$Giving $F_D = k r v \eta$.
 
-For high Reynolds number drag ($q = 0$): $n = 2$, $m = 2$, $p = 1$, giving $F_D = k r^2 v^2 \rho$.
+For high Reynolds number drag ($q = 0$): $n = 2$$m = 2$$p = 1$Giving $F_D = k r^2 v^2 \rho$.
 
 ---
 ### UT-2: Propagation of Uncertainties with Correlated Measurements
 
 **Question:**
 
-The period $T$ of a simple pendulum is related to its length $l$ by $T = 2\pi\sqrt{l/g}$, where $g$ is the acceleration due to free fall.
+The period $T$ of a simple pendulum is related to its length $l$ by $T = 2\pi\sqrt{l/g}$Where $g$ is the acceleration due to free fall.
 
 A student measures $T = (2.00 \pm 0.02)\,\text{s}$ and uses a value of $g = (9.81 \pm 0.01)\,\text{m}\,\text{s}^{-2}$ to calculate $l$.
 
@@ -96,7 +96,7 @@ $$\Delta l = 0.0210 \times 0.9940 = 0.0209 \approx 0.021\,\text{m}$$
 
 So $l = (0.994 \pm 0.021)\,\text{m}$.
 
-Note: The uncertainty is dominated by the measurement of $T$ (which enters as $T^2$, doubling its fractional contribution). The uncertainty in $g$ is negligible by comparison.
+Note: The uncertainty is dominated by the measurement of $T$ (which enters as $T^2$Doubling its fractional contribution). The uncertainty in $g$ is negligible by comparison.
 
 (b) Calculated: $l_{\text{calc}} = 0.994 \pm 0.021\,\text{m}$
 
@@ -106,20 +106,20 @@ Difference: $|0.994 - 0.993| = 0.001\,\text{m}$
 
 Combined uncertainty: $\sqrt{0.021^2 + 0.002^2} = \sqrt{0.000441 + 0.000004} = \sqrt{0.000445} = 0.0211\,\text{m}$
 
-Since $0.001 \ll 0.0211$, the values are consistent. However, this analysis reveals that the uncertainty in the calculated value is dominated by the timing measurement. The direct measurement of length is far more precise. The timing method introduces unnecessary uncertainty for determining $l$, though it would be the appropriate method if the goal were to determine $g$ from a known $l$.
+Since $0.001 \ll 0.0211$The values are consistent. However, this analysis reveals that the uncertainty in the calculated value is dominated by the timing measurement. The direct measurement of length is far more precise. The timing method introduces unnecessary uncertainty for determining $l$Though it would be the appropriate method if the goal were to determine $g$ from a known $l$.
 
 ---
 ### UT-3: Distinguishing Systematic and Random Uncertainties
 
 **Question:**
 
-A student uses a digital voltmeter (rated accuracy $\pm 0.5\%$ of reading $+ 2$ in the last digit) to measure the EMF of a cell. They record the following readings over several trials: $1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$.
+A student uses a digital voltmeter (rated accuracy $\pm 0.5\%$ of reading $+ 2$ in the last digit) to measure the EMF of a cell. They record the following readings over several trials: $1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$.
 
 (a) Identify the sources of systematic and random uncertainty in this measurement.
 
 (b) Calculate the total uncertainty in the voltage reading, stating your answer to an appropriate number of significant figures.
 
-(c) The student then uses an analogue voltmeter with the same accuracy specification but observes readings of $1.52\,\text{V}$, $1.53\,\text{V}$, $1.51\,\text{V}$, $1.52\,\text{V}$, $1.54\,\text{V}$. Explain why the random uncertainty has changed while the systematic uncertainty has not.
+(c) The student then uses an analogue voltmeter with the same accuracy specification but observes readings of $1.52\,\text{V}$$1.53\,\text{V}$$1.51\,\text{V}$$1.52\,\text{V}$$1.54\,\text{V}$. Explain why the random uncertainty has changed while the systematic uncertainty has not.
 
 **Solution:**
 
@@ -131,7 +131,7 @@ A student uses a digital voltmeter (rated accuracy $\pm 0.5\%$ of reading $+ 2$ 
 
 Percentage component: $0.5\% \times 1.52 = 0.0076\,\text{V}$
 
-Last digit component: $2 \times 0.01 = 0.02\,\text{V}$ (the resolution is $\pm 0.01\,\text{V}$, so 2 in the last digit $= 0.02\,\text{V}$)
+Last digit component: $2 \times 0.01 = 0.02\,\text{V}$ (the resolution is $\pm 0.01\,\text{V}$So 2 in the last digit $= 0.02\,\text{V}$)
 
 Combined systematic (adding in quadrature):
 
@@ -167,7 +167,7 @@ $\sin(2\theta)$ and $\sin^2\theta$ are dimensionless.
 
 Dimensions: $\frac◆LB◆(\text{L}\text{T}^{-2}) \cdot \text{L}◆RB◆◆LB◆(\text{L}\text{T}^{-1})^2◆RB◆ = \frac◆LB◆\text{L}^2\text{T}^{-2}◆RB◆◆LB◆\text{L}^2\text{T}^{-2}◆RB◆ = 1$ (dimensionless)
 
-The square root of a dimensionless quantity is dimensionless. The expression inside the parentheses is $1 + \text{dimensionless}$, which is dimensionless.
+The square root of a dimensionless quantity is dimensionless. The expression inside the parentheses is $1 + \text{dimensionless}$Which is dimensionless.
 
 So the overall expression is: $\text{L} \times \text{dimensionless} \times \text{dimensionless} = \text{L}$
 
@@ -178,9 +178,9 @@ The formula is dimensionally correct.
 
 **Question:**
 
-In an experiment to determine the acceleration of free fall $g$, a student drops a steel ball from rest through a light gate at a measured distance $d$ below the release point. The light gate records the speed $v$ of the ball as it passes through. The relationship is $v^2 = 2gd$, so $g = v^2/(2d)$.
+In an experiment to determine the acceleration of free fall $g$A student drops a steel ball from rest through a light gate at a measured distance $d$ below the release point. The light gate records the speed $v$ of the ball as it passes through. The relationship is $v^2 = 2gd$So $g = v^2/(2d)$.
 
-The student records: $d = (1.500 \pm 0.003)\,\text{m}$, $v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
+The student records: $d = (1.500 \pm 0.003)\,\text{m}$$v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate $g$ and its absolute uncertainty.
 
@@ -218,14 +218,14 @@ $$\Delta g_{\text{total}} = \sqrt{0.20^2 + 0.353^2} = \sqrt{0.0400 + 0.1246} = \
 
 So $g = (9.36 \pm 0.41)\,\text{m}\,\text{s}^{-2}$.
 
-The corrected value of $9.36\,\text{m}\,\text{s}^{-2}$ is closer to the accepted $9.81\,\text{m}\,\text{s}^{-2}$, but the systematic correction reveals that the original reading was an overestimate due to the finite ball size.
+The corrected value of $9.36\,\text{m}\,\text{s}^{-2}$ is closer to the accepted $9.81\,\text{m}\,\text{s}^{-2}$But the systematic correction reveals that the original reading was an overestimate due to the finite ball size.
 
 ---
 ### IT-3: Determining Planck's Constant from Photoelectric Data (with Electric Fields and Waves)
 
 **Question:**
 
-In the photoelectric effect, the stopping potential $V_s$ is related to the frequency $f$ of incident light by $eV_s = hf - \phi$, where $e$ is the elementary charge, $h$ is Planck's constant, and $\phi$ is the work function of the metal surface.
+In the photoelectric effect, the stopping potential $V_s$ is related to the frequency $f$ of incident light by $eV_s = hf - \phi$Where $e$ is the elementary charge, $h$ is Planck's constant, and $\phi$ is the work function of the metal surface.
 
 A student obtains the following data:
 
@@ -243,7 +243,7 @@ The student plots a graph of $V_s$ against $f$ and determines the gradient as $m
 
 **Solution:**
 
-(a) The equation $eV_s = hf - \phi$ can be rearranged as $V_s = \frac{h}{e}f - \frac◆LB◆\phi◆RB◆◆LB◆e◆RB◆$, which is of the form $y = mx + c$.
+(a) The equation $eV_s = hf - \phi$ can be rearranged as $V_s = \frac{h}{e}f - \frac◆LB◆\phi◆RB◆◆LB◆e◆RB◆$Which is of the form $y = mx + c$.
 
 Dimensions of the gradient $m = h/e$:
 
@@ -257,7 +257,7 @@ Dimensions of $e$: $\text{I}\text{T}$ (charge $=$ current $\times$ time)
 
 $$\frac{[h]}{[e]} = \frac◆LB◆\text{M}\text{L}^2\text{T}^{-1}◆RB◆◆LB◆\text{I}\text{T}◆RB◆ = \text{M}\text{L}^2\text{T}^{-2}\text{I}^{-1}$$
 
-This matches $\text{kg}\,\text{m}^2\,\text{s}^{-2}\,\text{A}^{-1}$, confirming dimensional consistency.
+This matches $\text{kg}\,\text{m}^2\,\text{s}^{-2}\,\text{A}^{-1}$Confirming dimensional consistency.
 
 (b) $h = me$:
 
@@ -271,4 +271,4 @@ So $h = (6.72 \pm 0.32) \times 10^{-34}\,\text{J}\,\text{s}$.
 
 (c) The uncertainty begins in the second significant figure ($\pm 0.32 \times 10^{-34}$), so the value is given to 2 significant figures: $h = (6.7 \pm 0.3) \times 10^{-34}\,\text{J}\,\text{s}$.
 
-The accepted value is $6.63 \times 10^{-34}\,\text{J}\,\text{s}$, which lies within the uncertainty range, confirming consistency.
+The accepted value is $6.63 \times 10^{-34}\,\text{J}\,\text{s}$Which lies within the uncertainty range, confirming consistency.

@@ -12,8 +12,8 @@ slug: web-development-and-multimedia
 ---
 
 This document provides in-depth coverage of web development (HTML, CSS, JavaScript), web hosting,
-client-side vs server-side processing, multimedia applications, and user interface design. A brief
-introduction to HTML, CSS, and JavaScript is available in
+Client-side vs server-side processing, multimedia applications, and user interface design. A brief
+Introduction to HTML, CSS, and JavaScript is available in
 [internet-and-data-communications.md](internet-and-data-communications.md).
 
 ---
@@ -41,36 +41,36 @@ Every HTML document follows this fundamental structure:
 </html>
 ```
 
-| Component          | Purpose                                                       |
+| Component | Purpose |
 | ------------------ | ------------------------------------------------------------- |
-| `<!DOCTYPE html>`  | Declares the document type as HTML5                           |
+| `<!DOCTYPE html>` | Declares the document type as HTML5 |
 | `<html lang="en">` | Root element; `lang` specifies the language for accessibility |
-| `<head>`           | Metadata, links to external resources, not displayed          |
-| `<meta charset>`   | Character encoding (should be UTF-8)                          |
-| `<meta viewport>`  | Responsive design settings for mobile devices                 |
-| `<title>`          | Browser tab title and search engine result title              |
-| `<link>`           | Links to external CSS stylesheets                             |
-| `<body>`           | Contains all visible page content                             |
-| `<script>`         | Links to or embeds JavaScript code                            |
+| `<head>` | Metadata, links to external resources, not displayed |
+| `<meta charset>` | Character encoding (should be UTF-8) |
+| `<meta viewport>` | Responsive design settings for mobile devices |
+| `<title>` | Browser tab title and search engine result title |
+| `<link>` | Links to external CSS stylesheets |
+| `<body>` | Contains all visible page content |
+| `<script>` | Links to or embeds JavaScript code |
 
 ### Semantic HTML
 
-Semantic elements clearly describe their meaning to both the browser and the developer. Using
-semantic HTML improves accessibility, SEO, and code maintainability.
+Semantic elements describe their meaning to both the browser and the developer. Using
+Semantic HTML improves accessibility, SEO, and code maintainability.
 
-| Semantic Element | Purpose                                          | Non-Semantic Equivalent |
+| Semantic Element | Purpose | Non-Semantic Equivalent |
 | ---------------- | ------------------------------------------------ | ----------------------- |
-| `<header>`       | Introductory content or navigational links       | `<div>`                 |
-| `<nav>`          | Navigation links                                 | `<div>`                 |
-| `<main>`         | Main content of the page (only one per page)     | `<div>`                 |
-| `<article>`      | Self-contained content (blog post, news article) | `<div>`                 |
-| `<section>`      | Thematic grouping of content                     | `<div>`                 |
-| `<aside>`        | Sidebar, related content                         | `<div>`                 |
-| `<footer>`       | Footer information (copyright, links)            | `<div>`                 |
-| `<figure>`       | Self-contained content with optional caption     | `<div>`                 |
-| `<figcaption>`   | Caption for a `<figure>`                         | `<span>` or ``          |
-| `<time>`         | Date/time                                        | `<span>`                |
-| `<mark>`         | Highlighted text                                 | `<span>`                |
+| `<header>` | Introductory content or navigational links | `<div>` |
+| `<nav>` | Navigation links | `<div>` |
+| `<main>` | Main content of the page (only one per page) | `<div>` |
+| `<article>` | Self-contained content (blog post, news article) | `<div>` |
+| `<section>` | Thematic grouping of content | `<div>` |
+| `<aside>` | Sidebar, related content | `<div>` |
+| `<footer>` | Footer information (copyright, links) | `<div>` |
+| `<figure>` | Self-contained content with optional caption | `<div>` |
+| `<figcaption>` | Caption for a `<figure>` | `<span>` or `` |
+| `<time>` | Date/time | `<span>` |
+| `<mark>` | Highlighted text | `<span>` |
 
 ### HTML Forms
 
@@ -114,35 +114,35 @@ Forms collect user input and submit it to a server for processing.
 </form>
 ```
 
-| Input Type | Purpose                                          | Validation                         |
+| Input Type | Purpose | Validation |
 | ---------- | ------------------------------------------------ | ---------------------------------- |
-| `text`     | Single-line text                                 | `maxlength`, `pattern`, `required` |
-| `email`    | Email address                                    | Browser validates email format     |
-| `password` | Masked text (shows dots)                         | `minlength`, `maxlength`           |
-| `number`   | Numeric input                                    | `min`, `max`, `step`               |
-| `date`     | Date picker                                      | `min`, `max`                       |
-| `radio`    | Single selection from mutually exclusive options | Same `name` groups them            |
-| `checkbox` | Multiple selections                              | `checked` attribute                |
-| `select`   | Dropdown list                                    | `<option>` elements                |
-| `textarea` | Multi-line text                                  | `rows`, `cols`                     |
-| `file`     | File upload                                      | `accept` for file types            |
-| `hidden`   | Hidden data not visible to user                  | Sent with form submission          |
-| `submit`   | Submits the form                                 | Triggers `action` URL              |
-| `reset`    | Resets all form fields to defaults               |                                    |
+| `text` | Single-line text | `maxlength``pattern``required` |
+| `email` | Email address | Browser validates email format |
+| `password` | Masked text (shows dots) | `minlength``maxlength` |
+| `number` | Numeric input | `min``max``step` |
+| `date` | Date picker | `min``max` |
+| `radio` | Single selection from mutually exclusive options | Same `name` groups them |
+| `checkbox` | Multiple selections | `checked` attribute |
+| `select` | Dropdown list | `<option>` elements |
+| `textarea` | Multi-line text | `rows``cols` |
+| `file` | File upload | `accept` for file types |
+| `hidden` | Hidden data not visible to user | Sent with form submission |
+| `submit` | Submits the form | Triggers `action` URL |
+| `reset` | Resets all form fields to defaults | |
 
 **Form attributes:**
 
-| Attribute     | Description                                                        |
+| Attribute | Description |
 | ------------- | ------------------------------------------------------------------ |
-| `action`      | URL where form data is sent                                        |
-| `method`      | HTTP method: `GET` (data in URL) or `POST` (data in body)          |
-| `enctype`     | How form data is encoded (for file uploads: `multipart/form-data`) |
-| `name`        | Name of the form field (used as key when submitted)                |
-| `id`          | Unique identifier (used by `<label for>` and JavaScript)           |
-| `value`       | Default value of the field                                         |
-| `required`    | Field must be filled before submission                             |
-| `placeholder` | Hint text shown inside the field before user types                 |
-| `autofocus`   | Field receives focus when page loads                               |
+| `action` | URL where form data is sent |
+| `method` | HTTP method: `GET` (data in URL) or `POST` (data in body) |
+| `enctype` | How form data is encoded (for file uploads: `multipart/form-data`) |
+| `name` | Name of the form field (used as key when submitted) |
+| `id` | Unique identifier (used by `<label for>` and JavaScript) |
+| `value` | Default value of the field |
+| `required` | Field must be filled before submission |
+| `placeholder` | Hint text shown inside the field before user types |
+| `autofocus` | Field receives focus when page loads |
 
 ### HTML Tables
 
@@ -184,16 +184,16 @@ Forms collect user input and submit it to a server for processing.
 </table>
 ```
 
-| Element     | Purpose                                |
+| Element | Purpose |
 | ----------- | -------------------------------------- |
-| `<table>`   | Container for the table                |
-| `<caption>` | Table title/description                |
-| `<thead>`   | Table header section                   |
-| `<tbody>`   | Table body (main data)                 |
-| `<tfoot>`   | Table footer section                   |
-| `<tr>`      | Table row                              |
-| `<th>`      | Header cell (bold, centred by default) |
-| `<td>`      | Data cell                              |
+| `<table>` | Container for the table |
+| `<caption>` | Table title/description |
+| `<thead>` | Table header section |
+| `<tbody>` | Table body (main data) |
+| `<tfoot>` | Table footer section |
+| `<tr>` | Table row |
+| `<th>` | Header cell (bold, centred by default) |
+| `<td>` | Data cell |
 
 ---
 
@@ -203,18 +203,18 @@ Forms collect user input and submit it to a server for processing.
 
 CSS selectors determine which HTML elements are targeted by style rules.
 
-| Selector Type        | Syntax          | Description                        | Specificity |
+| Selector Type | Syntax | Description | Specificity |
 | -------------------- | --------------- | ---------------------------------- | ----------- |
-| **Universal**        | `*`             | Selects all elements               | 0-0-0       |
-| **Element**          | `p`             | All `` elements                    | 0-0-1       |
-| **Class**            | `.highlight`    | Elements with `class="highlight"`  | 0-1-0       |
-| **ID**               | `#header`       | Element with `id="header"`         | 0-1-0-0     |
-| **Descendant**       | `div p`         | ``inside any`<div>`                | Additive    |
-| **Child**            | `div > p`       | ``that is a direct child of`<div>` | Additive    |
-| **Adjacent sibling** | `h1 + p`        | ``immediately after`<h1>`          | Additive    |
-| **Attribute**        | `[type="text"]` | Elements with matching attribute   | 0-1-0       |
-| **Pseudo-class**     | `a:hover`       | Element in a specific state        | 0-1-0       |
-| **Pseudo-element**   | `p::first-line` | Specific part of an element        | 0-0-1       |
+| **Universal** | `*` | Selects all elements | 0-0-0 |
+| **Element** | `p` | All `` elements | 0-0-1 |
+| **Class** | `.highlight` | Elements with `class="highlight"` | 0-1-0 |
+| **ID** | `#header` | Element with `id="header"` | 0-1-0-0 |
+| **Descendant** | `div p` | ``inside any`<div>` | Additive |
+| **Child** | `div > p` | ``that is a direct child of`<div>` | Additive |
+| **Adjacent sibling** | `h1 + p` | ``immediately after`<h1>` | Additive |
+| **Attribute** | `[type="text"]` | Elements with matching attribute | 0-1-0 |
+| **Pseudo-class** | `a:hover` | Element in a specific state | 0-1-0 |
+| **Pseudo-element** | `p::first-line` | Specific part of an element | 0-0-1 |
 
 **Specificity ordering (low to high):** Universal &lt; Element &lt; Class/Attribute/Pseudo-class
 &lt; ID &lt; Inline style &lt; `!important`
@@ -223,18 +223,18 @@ CSS selectors determine which HTML elements are targeted by style rules.
 
 #### Text and Font Properties
 
-| Property          | Description                       | Example                                |
+| Property | Description | Example |
 | ----------------- | --------------------------------- | -------------------------------------- |
-| `font-family`     | Sets the typeface                 | `Arial, sans-serif`                    |
-| `font-size`       | Sets text size                    | `16px`, `1.2em`, `120%`                |
-| `font-weight`     | Sets text thickness               | `normal`, `bold`, `700`                |
-| `font-style`      | Sets italic/oblique               | `normal`, `italic`                     |
-| `text-align`      | Horizontal alignment              | `left`, `center`, `right`              |
-| `text-decoration` | Underline, overline, line-through | `underline`, `none`                    |
-| `line-height`     | Space between lines               | `1.5`, `24px`                          |
-| `color`           | Text colour                       | `#333333`, `rgb(51,51,51)`             |
-| `letter-spacing`  | Space between characters          | `1px`, `0.05em`                        |
-| `text-transform`  | Capitalisation                    | `uppercase`, `lowercase`, `capitalize` |
+| `font-family` | Sets the typeface | `Arial, sans-serif` |
+| `font-size` | Sets text size | `16px``1.2em``120%` |
+| `font-weight` | Sets text thickness | `normal``bold``700` |
+| `font-style` | Sets italic/oblique | `normal``italic` |
+| `text-align` | Horizontal alignment | `left``center``right` |
+| `text-decoration` | Underline, overline, line-through | `underline``none` |
+| `line-height` | Space between lines | `1.5``24px` |
+| `color` | Text colour | `#333333``rgb(51,51,51)` |
+| `letter-spacing` | Space between characters | `1px``0.05em` |
+| `text-transform` | Capitalisation | `uppercase``lowercase``capitalize` |
 
 #### Box Model Properties
 
@@ -255,12 +255,12 @@ The CSS box model describes how every HTML element is rendered as a rectangular 
 +--------------------------------------------------+
 ```
 
-| Property                 | Description                                     |
+| Property | Description |
 | ------------------------ | ----------------------------------------------- |
-| `width`, `height`        | Dimensions of the content area                  |
-| `padding`                | Space between content and border                |
-| `border`                 | Border around the padding                       |
-| `margin`                 | Space outside the border                        |
+| `width``height` | Dimensions of the content area |
+| `padding` | Space between content and border |
+| `border` | Border around the padding |
+| `margin` | Space outside the border |
 | `box-sizing: border-box` | Includes padding and border in the width/height |
 
 **Total element width** (default `content-box`):
@@ -269,7 +269,7 @@ $$
 \mathrm{Total Width} = \mathrm{margin-left} + \mathrm{border-left} + \mathrm{padding-left} + \mathrm{width} + \mathrm{padding-right} + \mathrm{border-right} + \mathrm{margin-right}
 $$
 
-With `box-sizing: border-box`, the `width` property includes content, padding, and border:
+With `box-sizing: border-box`The `width` property includes content, padding, and border:
 
 $$
 \mathrm{Total Width} = \mathrm{margin-left} + \mathrm{width} + \mathrm{margin-right}
@@ -277,25 +277,25 @@ $$
 
 #### Layout Properties
 
-| Property   | Description                                               |
+| Property | Description |
 | ---------- | --------------------------------------------------------- |
-| `display`  | `block`, `inline`, `inline-block`, `flex`, `grid`, `none` |
-| `position` | `static`, `relative`, `absolute`, `fixed`, `sticky`       |
-| `float`    | Left/right floating (legacy layout method)                |
-| `clear`    | Clear float (`left`, `right`, `both`)                     |
-| `overflow` | `visible`, `hidden`, `scroll`, `auto`                     |
-| `z-index`  | Stacking order for positioned elements                    |
+| `display` | `block``inline``inline-block``flex``grid``none` |
+| `position` | `static``relative``absolute``fixed``sticky` |
+| `float` | Left/right floating (legacy layout method) |
+| `clear` | Clear float (`left``right``both`) |
+| `overflow` | `visible``hidden``scroll``auto` |
+| `z-index` | Stacking order for positioned elements |
 
 **Display types:**
 
-| Display Value  | Behaviour                                                           |
+| Display Value | Behaviour |
 | -------------- | ------------------------------------------------------------------- |
-| `block`        | Takes full width; starts on new line (e.g., `<div>`, ``)            |
-| `inline`       | Takes only content width; flows within text (e.g., `<span>`, `<a>`) |
-| `inline-block` | Inline flow but respects width/height                               |
-| `flex`         | Flexbox container for flexible 1D layouts                           |
-| `grid`         | CSS Grid container for 2D layouts                                   |
-| `none`         | Element is hidden and removed from layout flow                      |
+| `block` | Takes full width; starts on new line (e.g., `<div>```) |
+| `inline` | Takes only content width; flows within text (e.g., `<span>``<a>`) |
+| `inline-block` | Inline flow but respects width/height |
+| `flex` | Flexbox container for flexible 1D layouts |
+| `grid` | CSS Grid container for 2D layouts |
+| `none` | Element is hidden and removed from layout flow |
 
 ### Flexbox Layout
 
@@ -317,16 +317,16 @@ Flexbox is a one-dimensional layout system for arranging items in rows or column
 }
 ```
 
-| Property          | Values                                                                              | Description                     |
+| Property | Values | Description |
 | ----------------- | ----------------------------------------------------------------------------------- | ------------------------------- |
-| `flex-direction`  | `row`, `column`, `row-reverse`, `column-reverse`                                    | Direction of main axis          |
-| `justify-content` | `flex-start`, `center`, `flex-end`, `space-between`, `space-around`, `space-evenly` | Alignment on main axis          |
-| `align-items`     | `stretch`, `flex-start`, `center`, `flex-end`, `baseline`                           | Alignment on cross axis         |
-| `flex-wrap`       | `nowrap`, `wrap`, `wrap-reverse`                                                    | Whether items wrap              |
-| `gap`             | Length value                                                                        | Space between flex items        |
-| `flex-grow`       | Number                                                                              | How much the item grows         |
-| `flex-shrink`     | Number                                                                              | How much the item shrinks       |
-| `flex-basis`      | Length value                                                                        | Initial size before grow/shrink |
+| `flex-direction` | `row``column``row-reverse``column-reverse` | Direction of main axis |
+| `justify-content` | `flex-start``center``flex-end``space-between``space-around``space-evenly` | Alignment on main axis |
+| `align-items` | `stretch``flex-start``center``flex-end``baseline` | Alignment on cross axis |
+| `flex-wrap` | `nowrap``wrap``wrap-reverse` | Whether items wrap |
+| `gap` | Length value | Space between flex items |
+| `flex-grow` | Number | How much the item grows |
+| `flex-shrink` | Number | How much the item shrinks |
+| `flex-basis` | Length value | Initial size before grow/shrink |
 
 ### CSS Grid Layout
 
@@ -354,14 +354,14 @@ CSS Grid is a two-dimensional layout system for creating complex page layouts.
 }
 ```
 
-| Property                | Description                        |
+| Property | Description |
 | ----------------------- | ---------------------------------- |
-| `grid-template-columns` | Defines column widths              |
-| `grid-template-rows`    | Defines row heights                |
-| `grid-column`           | Column start and end positions     |
-| `grid-row`              | Row start and end positions        |
-| `gap`                   | Space between rows and columns     |
-| `grid-area`             | Shorthand for row/column start/end |
+| `grid-template-columns` | Defines column widths |
+| `grid-template-rows` | Defines row heights |
+| `grid-column` | Column start and end positions |
+| `grid-row` | Row start and end positions |
+| `gap` | Space between rows and columns |
+| `grid-area` | Shorthand for row/column start/end |
 
 ### Responsive Design
 
@@ -395,24 +395,24 @@ Responsive design ensures a website displays well on all screen sizes (desktop, 
 
 **Responsive units:**
 
-| Unit   | Description                                   |
+| Unit | Description |
 | ------ | --------------------------------------------- |
-| `px`   | Absolute pixels                               |
-| `%`    | Percentage of parent element                  |
-| `em`   | Relative to the font-size of the element      |
-| `rem`  | Relative to the font-size of the root element |
-| `vw`   | Percentage of viewport width                  |
-| `vh`   | Percentage of viewport height                 |
-| `vmin` | Percentage of the smaller viewport dimension  |
-| `vmax` | Percentage of the larger viewport dimension   |
+| `px` | Absolute pixels |
+| `%` | Percentage of parent element |
+| `em` | Relative to the font-size of the element |
+| `rem` | Relative to the font-size of the root element |
+| `vw` | Percentage of viewport width |
+| `vh` | Percentage of viewport height |
+| `vmin` | Percentage of the smaller viewport dimension |
+| `vmax` | Percentage of the larger viewport dimension |
 
 ### The Three Ways to Apply CSS
 
-| Method             | Syntax                                       | Specificity | Reusability |
+| Method | Syntax | Specificity | Reusability |
 | ------------------ | -------------------------------------------- | ----------- | ----------- |
-| **Inline style**   | `<p style="color: red;">`                    | Highest     | None        |
-| **Internal style** | `<style>` block in `<head>`                  | Medium      | Page-level  |
-| **External style** | `<link rel="stylesheet" href="style.css" />` | Medium      | Site-wide   |
+| **Inline style** | `<p style="color: red;">` | Highest | None |
+| **Internal style** | `<style>` block in `<head>` | Medium | Page-level |
+| **External style** | `<link rel="stylesheet" href="style.css" />` | Medium | Site-wide |
 
 External stylesheets are the recommended approach for maintainability, caching, and consistency.
 
@@ -428,23 +428,23 @@ let counter = 0; // Block-scoped, reassignable
 const PI = 3.14159; // Block-scoped, cannot be reassigned
 ```
 
-| Keyword | Scope    | Reassignable | Hoisted | Use case                    |
+| Keyword | Scope | Reassignable | Hoisted | Use case |
 | ------- | -------- | ------------ | ------- | --------------------------- |
-| `var`   | Function | Yes          | Yes     | Legacy code (avoid)         |
-| `let`   | Block    | Yes          | No      | Variables that change       |
-| `const` | Block    | No           | No      | Constants, fixed references |
+| `var` | Function | Yes | Yes | Legacy code (avoid) |
+| `let` | Block | Yes | No | Variables that change |
+| `const` | Block | No | No | Constants, fixed references |
 
 ### Data Types
 
-| Type        | Description                                | Examples                               |
+| Type | Description | Examples |
 | ----------- | ------------------------------------------ | -------------------------------------- |
-| `Number`    | All numbers (integer and floating point)   | `42`, `3.14`, `-7`, `Infinity`         |
-| `String`    | Text in single, double, or backtick quotes | `'hello'`, `"world"`, `` `template` `` |
-| `Boolean`   | Logical values                             | `true`, `false`                        |
-| `null`      | Intentional absence of value               | `null`                                 |
-| `undefined` | Variable declared but not assigned         | `undefined`                            |
-| `Object`    | Key-value pairs                            | `{ name: "Alice", age: 20 }`           |
-| `Array`     | Ordered collection                         | `[1, 2, 3, "four"]`                    |
+| `Number` | All numbers (integer and floating point) | `42``3.14``-7``Infinity` |
+| `String` | Text in single, double, or backtick quotes | `'hello'``"world"``` `Template` `` |
+| `Boolean` | Logical values | `true``false` |
+| `null` | Intentional absence of value | `null` |
+| `undefined` | Variable declared but not assigned | `undefined` |
+| `Object` | Key-value pairs | `{ name: "Alice", age: 20 }` |
+| `Array` | Ordered collection | `[1, 2, 3, "four"]` |
 
 ### Functions
 
@@ -498,7 +498,7 @@ while (count > 0) {
 ### DOM Manipulation
 
 The Document Object Model (DOM) represents the HTML document as a tree of objects. JavaScript can
-traverse and modify this tree to change page content, structure, and style dynamically.
+Traverse and modify this tree to change page content, structure, and style dynamically.
 
 **Selecting elements:**
 
@@ -535,7 +535,7 @@ document.getElementById('container').appendChild(newParagraph);
 ### Event Handling
 
 Events are actions or occurrences (click, hover, key press, form submission) that JavaScript can
-respond to.
+Respond to.
 
 ```javascript
 // Using addEventListener (recommended)
@@ -560,19 +560,19 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
 });
 ```
 
-| Common Events | Trigger                           |
+| Common Events | Trigger |
 | ------------- | --------------------------------- |
-| `click`       | Mouse click on an element         |
-| `dblclick`    | Double click                      |
-| `mouseover`   | Mouse enters the element          |
-| `mouseout`    | Mouse leaves the element          |
-| `keydown`     | A key is pressed down             |
-| `keyup`       | A key is released                 |
-| `submit`      | A form is submitted               |
-| `change`      | Form field value changes          |
-| `load`        | Page or resource finishes loading |
-| `focus`       | Element receives focus            |
-| `blur`        | Element loses focus               |
+| `click` | Mouse click on an element |
+| `dblclick` | Double click |
+| `mouseover` | Mouse enters the element |
+| `mouseout` | Mouse leaves the element |
+| `keydown` | A key is pressed down |
+| `keyup` | A key is released |
+| `submit` | A form is submitted |
+| `change` | Form field value changes |
+| `load` | Page or resource finishes loading |
+| `focus` | Element receives focus |
+| `blur` | Element loses focus |
 
 ### Arrays
 
@@ -613,38 +613,38 @@ scores.sort(function (a, b) {
 
 ### Web Hosting Types
 
-| Hosting Type         | Description                                               | Cost     | Performance | Control      | Suitable For                 |
+| Hosting Type | Description | Cost | Performance | Control | Suitable For |
 | -------------------- | --------------------------------------------------------- | -------- | ----------- | ------------ | ---------------------------- |
-| **Shared hosting**   | Multiple websites share one server's resources            | Low      | Low-Medium  | Limited      | Small sites, beginners       |
-| **VPS**              | Virtual Private Server -- partitioned dedicated resources | Medium   | Medium      | High         | Growing sites, custom config |
-| **Dedicated server** | Entire physical server for one client                     | High     | High        | Full         | High-traffic, enterprise     |
-| **Cloud hosting**    | Resources distributed across multiple servers (scalable)  | Variable | Scalable    | Medium-High  | Variable traffic, apps       |
-| **Free hosting**     | Limited resources, often with advertisements              | Free     | Low         | Very limited | Personal projects, testing   |
+| **Shared hosting** | Multiple websites share one server's resources | Low | Low-Medium | Limited | Small sites, beginners |
+| **VPS** | Virtual Private Server -- partitioned dedicated resources | Medium | Medium | High | Growing sites, custom config |
+| **Dedicated server** | Entire physical server for one client | High | High | Full | High-traffic, enterprise |
+| **Cloud hosting** | Resources distributed across multiple servers (scalable) | Variable | Scalable | Medium-High | Variable traffic, apps |
+| **Free hosting** | Limited resources, often with advertisements | Free | Low | Very limited | Personal projects, testing |
 
 ### Domain Name Registration Process
 
 1. **Choose a domain name:** Select a name that is memorable, relevant, and available.
 2. **Check availability:** Use a domain registrar's search tool to verify the name is not already
-   registered.
-3. **Choose a TLD:** Select the appropriate top-level domain (`.com`, `.org`, `.edu`, `.hk`, etc.).
+ registered.
+3. **Choose a TLD:** Select the appropriate top-level domain (`.com``.org``.edu``.hk`Etc.).
 4. **Register with a registrar:** Use an accredited registrar (e.g., GoDaddy, Namecheap, HKDNR for
-   `.hk` domains).
+ `.hk` domains).
 5. **Provide registrant information:** Name, contact details, administrative and technical contacts.
 6. **Pay registration fee:** Annual fee varies by TLD and registrar.
 7. **Configure DNS records:** Point the domain to your web hosting server by setting A records (for
-   IPv4) or CNAME records at your DNS provider.
-8. **Wait for propagation:** DNS changes can take up to 48 hours to propagate globally (typically
-   much less).
+ IPv4) or CNAME records at your DNS provider.
+8. **Wait for propagation:** DNS changes can take up to 48 hours to propagate globally (
+ much less).
 
 ### Uploading Files to a Web Server
 
-| Method               | Description                                                                           |
+| Method | Description |
 | -------------------- | ------------------------------------------------------------------------------------- |
-| **FTP/SFTP**         | File Transfer Protocol (FTP) or Secure FTP (SFTP) using a client like FileZilla       |
-| **Web-based upload** | Control panel provided by the hosting company (cPanel, Plesk)                         |
-| **SSH/SCP**          | Secure copy via command line                                                          |
-| **Git deployment**   | Push to a repository that triggers automatic deployment (e.g., GitHub Pages, Netlify) |
-| **CI/CD**            | Continuous Integration/Continuous Deployment pipelines                                |
+| **FTP/SFTP** | File Transfer Protocol (FTP) or Secure FTP (SFTP) using a client like FileZilla |
+| **Web-based upload** | Control panel provided by the hosting company (cPanel, Plesk) |
+| **SSH/SCP** | Secure copy via command line |
+| **Git deployment** | Push to a repository that triggers automatic deployment (e.g., GitHub Pages, Netlify) |
+| **CI/CD** | Continuous Integration/Continuous Deployment pipelines |
 
 ---
 
@@ -652,28 +652,28 @@ scores.sort(function (a, b) {
 
 ### Comparison
 
-| Aspect                 | Client-Side                              | Server-Side                               |
+| Aspect | Client-Side | Server-Side |
 | ---------------------- | ---------------------------------------- | ----------------------------------------- |
-| **Execution location** | User's browser                           | Web server                                |
-| **Languages**          | HTML, CSS, JavaScript                    | PHP, Python, Ruby, Java, C#, Node.js      |
-| **Response speed**     | Immediate (no server round-trip)         | Requires network request/response cycle   |
-| **Server load**        | None (processing on user's device)       | Server handles all processing             |
-| **Security**           | Code is visible to the user (not secure) | Code runs on server, hidden from user     |
-| **Data access**        | Cannot directly access databases         | Can connect to databases and file systems |
-| **Offline capability** | Can work offline (if cached)             | Requires internet connection              |
-| **Browser dependency** | Depends on browser compatibility         | Independent of browser                    |
+| **Execution location** | User's browser | Web server |
+| **Languages** | HTML, CSS, JavaScript | PHP, Python, Ruby, Java, C#, Node.js |
+| **Response speed** | Immediate (no server round-trip) | Requires network request/response cycle |
+| **Server load** | None (processing on user's device) | Server handles all processing |
+| **Security** | Code is visible to the user (not secure) | Code runs on server, hidden from user |
+| **Data access** | Cannot directly access databases | Can connect to databases and file systems |
+| **Offline capability** | Can work offline (if cached) | Requires internet connection |
+| **Browser dependency** | Depends on browser compatibility | Independent of browser |
 
 ### When to Use Each
 
-| Scenario                                   | Client-Side or Server-Side | Reason                                               |
+| Scenario | Client-Side or Server-Side | Reason |
 | ------------------------------------------ | -------------------------- | ---------------------------------------------------- |
-| Form input validation (format checking)    | Client-side                | Immediate feedback, reduces server load              |
-| Sensitive data validation (password check) | Server-side                | Database access needed; client-side is insecure      |
-| User interface animations                  | Client-side                | JavaScript/CSS in browser                            |
-| Database queries                           | Server-side                | Direct database access required                      |
-| Search engine indexing                     | Server-side                | Search engines need server-rendered content          |
-| Image manipulation (resize, filter)        | Client-side (preview)      | For immediate feedback; final processing server-side |
-| Payment processing                         | Server-side                | Security: API keys and transaction logic hidden      |
+| Form input validation (format checking) | Client-side | Immediate feedback, reduces server load |
+| Sensitive data validation (password check) | Server-side | Database access needed; client-side is insecure |
+| User interface animations | Client-side | JavaScript/CSS in browser |
+| Database queries | Server-side | Direct database access required |
+| Search engine indexing | Server-side | Search engines need server-rendered content |
+| Image manipulation (resize, filter) | Client-side (preview) | For immediate feedback; final processing server-side |
+| Payment processing | Server-side | Security: API keys and transaction logic hidden |
 
 ### Server-Side Processing Example
 
@@ -690,50 +690,50 @@ When a user submits a login form:
 
 ### Image Editing
 
-| Feature                 | Description                                                   | Purpose                               |
+| Feature | Description | Purpose |
 | ----------------------- | ------------------------------------------------------------- | ------------------------------------- |
-| **Cropping**            | Remove outer parts of an image                                | Focus on subject, remove distractions |
-| **Resizing**            | Change image dimensions                                       | Fit specific requirements             |
-| **Colour adjustment**   | Brightness, contrast, saturation, hue                         | Enhance appearance                    |
-| **Layers**              | Stack multiple elements on separate editable layers           | Non-destructive editing               |
-| **Selection tools**     | Select specific areas (lasso, magic wand, marquee)            | Edit parts of an image                |
-| **Filters and effects** | Apply artistic or corrective effects (blur, sharpen, distort) | Creative and corrective editing       |
-| **Text tool**           | Add text overlays                                             | Captions, watermarks, titles          |
-| **Clone/stamp tool**    | Copy pixels from one area to another                          | Remove blemishes, duplicate elements  |
-| **Colour modes**        | RGB for screen, CMYK for print                                | Output-specific preparation           |
+| **Cropping** | Remove outer parts of an image | Focus on subject, remove distractions |
+| **Resizing** | Change image dimensions | Fit specific requirements |
+| **Colour adjustment** | Brightness, contrast, saturation, hue | Enhance appearance |
+| **Layers** | Stack multiple elements on separate editable layers | Non-destructive editing |
+| **Selection tools** | Select specific areas (lasso, magic wand, marquee) | Edit parts of an image |
+| **Filters and effects** | Apply artistic or corrective effects (blur, sharpen, distort) | Creative and corrective editing |
+| **Text tool** | Add text overlays | Captions, watermarks, titles |
+| **Clone/stamp tool** | Copy pixels from one area to another | Remove blemishes, duplicate elements |
+| **Colour modes** | RGB for screen, CMYK for print | Output-specific preparation |
 
 ### Video Editing
 
-| Feature                  | Description                                                | Purpose                            |
+| Feature | Description | Purpose |
 | ------------------------ | ---------------------------------------------------------- | ---------------------------------- |
-| **Timeline editing**     | Arrange clips in sequential order on a timeline            | Assemble the video narrative       |
-| **Cutting and trimming** | Remove unwanted segments from clips                        | Tighten the edit                   |
-| **Transitions**          | Effects between clips (dissolve, wipe, fade)               | Smooth scene changes               |
-| **Audio editing**        | Adjust volume, add background music, voiceover             | Balance audio levels               |
-| **Text overlays**        | Titles, subtitles, lower thirds                            | Convey information                 |
-| **Colour grading**       | Adjust colour, contrast, and tone                          | Consistent visual style            |
-| **Rendering/export**     | Convert the edited project into a distributable video file | Final output in appropriate format |
+| **Timeline editing** | Arrange clips in sequential order on a timeline | Assemble the video narrative |
+| **Cutting and trimming** | Remove unwanted segments from clips | Tighten the edit |
+| **Transitions** | Effects between clips (dissolve, wipe, fade) | Smooth scene changes |
+| **Audio editing** | Adjust volume, add background music, voiceover | Balance audio levels |
+| **Text overlays** | Titles, subtitles, lower thirds | Convey information |
+| **Colour grading** | Adjust colour, contrast, and tone | Consistent visual style |
+| **Rendering/export** | Convert the edited project into a distributable video file | Final output in appropriate format |
 
 **Common video formats:**
 
-| Format | Container | Video Codec    | Audio Codec | Typical Use               |
+| Format | Container | Video Codec | Audio Codec | Typical Use |
 | ------ | --------- | -------------- | ----------- | ------------------------- |
-| MP4    | MP4       | H.264 / H.265  | AAC         | Web, streaming, mobile    |
-| AVI    | AVI       | Various        | Various     | Legacy Windows            |
-| MKV    | MKV       | H.264 / VP9    | AAC / FLAC  | High quality, flexibility |
-| MOV    | MOV       | H.264 / ProRes | AAC         | Apple ecosystem           |
-| WebM   | WebM      | VP8 / VP9      | Vorbis      | Web (open source)         |
+| MP4 | MP4 | H.264 / H.265 | AAC | Web, streaming, mobile |
+| AVI | AVI | Various | Various | Legacy Windows |
+| MKV | MKV | H.264 / VP9 | AAC / FLAC | High quality, flexibility |
+| MOV | MOV | H.264 / ProRes | AAC | Apple ecosystem |
+| WebM | WebM | VP8 / VP9 | Vorbis | Web (open source) |
 
 ### Animation
 
-| Animation Type     | Description                                                 | Tools                 |
+| Animation Type | Description | Tools |
 | ------------------ | ----------------------------------------------------------- | --------------------- |
-| **Frame-by-frame** | Individual frames drawn/edited sequentially                 | Flash, Toon Boom      |
-| **Tweening**       | Software generates intermediate frames between keyframes    | Flash, After Effects  |
-| **CSS animation**  | Animated using CSS `@keyframes` and `transition` properties | Text editor           |
-| **JavaScript**     | Animated via DOM manipulation and requestAnimationFrame     | Text editor           |
-| **SVG animation**  | Animated using SMIL or CSS                                  | Text editor, Inkscape |
-| **3D animation**   | Three-dimensional animated models                           | Blender, Maya         |
+| **Frame-by-frame** | Individual frames drawn/edited sequentially | Flash, Toon Boom |
+| **Tweening** | Software generates intermediate frames between keyframes | Flash, After Effects |
+| **CSS animation** | Animated using CSS `@keyframes` and `transition` properties | Text editor |
+| **JavaScript** | Animated via DOM manipulation and requestAnimationFrame | Text editor |
+| **SVG animation** | Animated using SMIL or CSS | Text editor, Inkscape |
+| **3D animation** | Three-dimensional animated models | Blender, Maya |
 
 ---
 
@@ -742,95 +742,95 @@ When a user submits a login form:
 ### Nielsen's 10 Usability Heuristics
 
 These heuristics, developed by Jakob Nielsen, are widely used principles for evaluating user
-interface design.
+Interface design.
 
-| Heuristic | Principle                                                   | Description                                                                                                                                                      |
+| Heuristic | Principle | Description |
 | --------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1         | **Visibility of system status**                             | The system should always inform users about what is going on through appropriate feedback within reasonable time                                                 |
-| 2         | **Match between system and the real world**                 | The system should speak the users' language with familiar words, phrases, and concepts rather than system-oriented terms                                         |
-| 3         | **User control and freedom**                                | Users need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue (e.g., Undo, Redo)                    |
-| 4         | **Consistency and standards**                               | Users should not have to wonder whether different words, situations, or actions mean the same thing; follow platform conventions                                 |
-| 5         | **Error prevention**                                        | Careful design prevents problems from occurring in the first place; prefer error prevention over error messages                                                  |
-| 6         | **Recognition rather than recall**                          | Minimise the user's memory load by making objects, actions, and options visible; the user should not have to remember information from one part to another       |
-| 7         | **Flexibility and efficiency of use**                       | Accelerators (shortcuts, expert modes) speed up interaction for experienced users while remaining accessible to novices                                          |
-| 8         | **Aesthetic and minimalist design**                         | Dialogues should not contain irrelevant or rarely needed information; every extra unit of information competes with relevant information                         |
-| 9         | **Help users recognise, diagnose, and recover from errors** | Error messages should be expressed in plain language, precisely indicate the problem, and constructively suggest a solution                                      |
-| 10        | **Help and documentation**                                  | Although better if the system can be used without documentation, it may be necessary to provide help and documentation searchable and focused on the user's task |
+| 1 | **Visibility of system status** | The system should always inform users about what is going on through appropriate feedback within reasonable time |
+| 2 | **Match between system and the real world** | The system should speak the users' language with familiar words, phrases, and concepts rather than system-oriented terms |
+| 3 | **User control and freedom** | Users need a marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue (e.g., Undo, Redo) |
+| 4 | **Consistency and standards** | Users should not have to wonder whether different words, situations, or actions mean the same thing; follow platform conventions |
+| 5 | **Error prevention** | Careful design prevents problems from occurring in the first place; prefer error prevention over error messages |
+| 6 | **Recognition rather than recall** | Minimise the user's memory load by making objects, actions, and options visible; the user should not have to remember information from one part to another |
+| 7 | **Flexibility and efficiency of use** | Accelerators (shortcuts, expert modes) speed up interaction for experienced users while remaining accessible to novices |
+| 8 | **Aesthetic and minimalist design** | Dialogues should not contain irrelevant or rarely needed information; every extra unit of information competes with relevant information |
+| 9 | **Help users recognise, diagnose, and recover from errors** | Error messages should be expressed in plain language, precisely indicate the problem, and constructively suggest a solution |
+| 10 | **Help and documentation** | Although better if the system can be used without documentation, it may be necessary to provide help and documentation searchable and focused on the user's task |
 
 ### Key Design Principles
 
-| Principle         | Description                                                          | Application Example                      |
+| Principle | Description | Application Example |
 | ----------------- | -------------------------------------------------------------------- | ---------------------------------------- |
-| **Consistency**   | Same visual style, terminology, and behaviour throughout             | Same button style on all pages           |
-| **Feedback**      | Acknowledge user actions with visual, auditory, or haptic cues       | Button colour change on hover/click      |
-| **Affordance**    | Design elements should suggest their functionality                   | A raised button looks clickable          |
-| **Visibility**    | Important elements should be visible and not hidden                  | Clear navigation menu                    |
+| **Consistency** | Same visual style, terminology, and behaviour throughout | Same button style on all pages |
+| **Feedback** | Acknowledge user actions with visual, auditory, or haptic cues | Button colour change on hover/click |
+| **Affordance** | Design elements should suggest their functionality | A raised button looks clickable |
+| **Visibility** | Important elements should be visible and not hidden | Clear navigation menu |
 | **Accessibility** | Design for users with disabilities (colour blindness, motor, visual) | Alt text for images, keyboard navigation |
-| **Hierarchy**     | Organise information by importance using size, colour, position      | Large heading, smaller body text         |
-| **Simplicity**    | Keep the interface clean and uncluttered                             | Minimal elements, clear calls to action  |
-| **Navigation**    | Users should always know where they are and how to get elsewhere     | Breadcrumbs, navigation menu, sitemap    |
+| **Hierarchy** | Organise information by importance using size, colour, position | Large heading, smaller body text |
+| **Simplicity** | Keep the interface clean and uncluttered | Minimal elements, clear calls to action |
+| **Navigation** | Users should always know where they are and how to get elsewhere | Breadcrumbs, navigation menu, sitemap |
 
 ### Colour and Accessibility
 
-| Consideration            | Description                                                                              |
+| Consideration | Description |
 | ------------------------ | ---------------------------------------------------------------------------------------- |
-| **Colour contrast**      | Text and background must have sufficient contrast ratio (WCAG AA: 4.5:1 for normal text) |
-| **Colour blindness**     | Do not rely solely on colour to convey information; use labels/icons additionally        |
-| **Red-green deficiency** | Most common form of colour blindness (affects ~8% of males)                              |
-| **High contrast mode**   | Support system-level high contrast settings                                              |
+| **Colour contrast** | Text and background must have sufficient contrast ratio (WCAG AA: 4.5:1 for normal text) |
+| **Colour blindness** | Do not rely solely on colour to convey information; use labels/icons additionally |
+| **Red-green deficiency** | Most common form of colour blindness (affects ~8% of males) |
+| **High contrast mode** | Support system-level high contrast settings |
 
 ### Mobile Interface Considerations
 
-| Consideration       | Description                                               |
+| Consideration | Description |
 | ------------------- | --------------------------------------------------------- |
-| **Touch targets**   | Minimum 44x44 pixels for tap targets (Apple HIG)          |
-| **Screen size**     | Design for variable screen sizes; use responsive layout   |
-| **Orientation**     | Support both portrait and landscape modes                 |
-| **Gesture support** | Support swipe, pinch, and long-press where appropriate    |
-| **Performance**     | Minimise data transfer and processing for mobile networks |
+| **Touch targets** | Minimum 44x44 pixels for tap targets (Apple HIG) |
+| **Screen size** | Design for variable screen sizes; use responsive layout |
+| **Orientation** | Support both portrait and landscape modes |
+| **Gesture support** | Support swipe, pinch, and long-press where appropriate |
+| **Performance** | Minimise data transfer and processing for mobile networks |
 
 ---
 
 ## Common Pitfalls
 
-1. **Forgetting the DOCTYPE:** Without `<!DOCTYPE html>`, browsers render in quirks mode, which can
-   cause inconsistent layout across browsers. Always include it as the first line.
+1. **Forgetting the DOCTYPE:** Without `<!DOCTYPE html>`Browsers render in quirks mode, which can
+ cause inconsistent layout across browsers. Always include it as the first line.
 
-2. **Block vs inline elements:** Block elements (like `<div>`,
-   ``) take full width and start on a new line. Inline elements (like `<span>`, `<a>`) take only
-   content width and flow within text. You cannot set width/height on inline elements without
-   changing their display type.
+2. **Block vs inline elements:** Block elements (like `<div>`
+ ``) take full width and start on a new line. Inline elements (like `<span>`, `<a>`) take only
+ content width and flow within text. You cannot set width/height on inline elements without
+ changing their display type.
 
 3. **CSS specificity conflicts:** When multiple rules target the same element, the most specific
-   rule wins. `!important` overrides everything but should be used sparingly. Understand the
-   specificity hierarchy: inline &gt; ID &gt; class &gt; element.
+ rule wins. `!important` overrides everything but should be used sparingly. Understand the
+ specificity hierarchy: inline &gt; ID &gt; class &gt; element.
 
 4. **Box model confusion:** By default, `width` and `height` apply only to the content area, not
-   including padding and border. Use `box-sizing: border-box` to include padding and border in the
-   specified dimensions.
+ including padding and border. Use `box-sizing: border-box` to include padding and border in the
+ specified dimensions.
 
 5. **JavaScript in the wrong place:** If a `<script>` in the `<head>` references DOM elements that
-   have not yet loaded, it will fail. Either place scripts at the end of `<body>` or use the `defer`
-   attribute.
+ have not yet loaded, it will fail. Either place scripts at the end of `<body>` or use the `defer`
+ attribute.
 
 6. **Event listener attachment before element exists:** If you try to attach an event listener to an
-   element that has not been rendered yet, the listener will not be attached. Wrap code in
-   `DOMContentLoaded` event or place the script after the HTML element.
+ element that has not been rendered yet, the listener will not be attached. Wrap code in
+ `DOMContentLoaded` event or place the script after the HTML element.
 
 7. **Client-side validation is not security:** Client-side validation improves user experience but
-   can be bypassed. Always validate on the server side for security-critical operations (passwords,
-   payment, data integrity).
+ can be bypassed. Always validate on the server side for security-critical operations (passwords,
+ payment, data integrity).
 
 8. **Ignoring accessibility:** Missing `alt` text on images, poor colour contrast, and lack of
-   keyboard navigation exclude users with disabilities and may violate accessibility legislation.
+ keyboard navigation exclude users with disabilities and may violate accessibility legislation.
 
 9. **Responsive design afterthought:** Designing for desktop first and then trying to make it
-   responsive is harder than designing mobile-first. Use media queries to progressively enhance
-   layouts for larger screens.
+ responsive is harder than designing mobile-first. Use media queries to progressively enhance
+ layouts for larger screens.
 
 10. **Overusing animations:** Excessive animations distract users, slow down perceived performance,
-    and can cause motion sickness for some users. Use animations purposefully and respect the
-    `prefers-reduced-motion` media query.
+ and can cause motion sickness for some users. Use animations purposefully and respect the
+ `prefers-reduced-motion` media query.
 
 ---
 
@@ -840,7 +840,7 @@ interface design.
 <summary>Question 1: HTML and Forms</summary>
 
 (a) Write HTML code for a registration form with the following fields: username (text, required),
-email (email, required), password (password, required, minimum 8 characters), and a submit button.
+Email (email, required), password (password, required, minimum 8 characters), and a submit button.
 
 (b) Explain the difference between the `GET` and `POST` form methods.
 
@@ -866,16 +866,16 @@ Answer:
 ```
 
 (b) `GET` sends form data as URL parameters (appended to the `action` URL after `?`). It is visible
-in the browser address bar, has a length limit (approximately 2048 characters), and should be used
-for idempotent requests (search, filter). `POST` sends form data in the HTTP request body, is not
-visible in the URL, has no practical length limit, and should be used for data that changes state on
-the server (login, registration, payment).
+In the browser address bar, has a length limit (approximately 2048 characters), and should be used
+For idempotent requests (search, filter). `POST` sends form data in the HTTP request body, is not
+Visible in the URL, has no practical length limit, and should be used for data that changes state on
+The server (login, registration, payment).
 
 (c) The `<label>` element associates a text description with a form control via the `for` attribute
 (matching the input's `id`). It is important because: (1) clicking the label focuses the associated
-input, increasing the clickable area for mouse/touch users. (2) Screen readers announce the label
-text when the input receives focus, improving accessibility for visually impaired users. (3) It
-creates a semantic association between the description and the input field.
+Input, increasing the clickable area for mouse/touch users. (2) Screen readers announce the label
+Text when the input receives focus, improving accessibility for visually impaired users. (3) It
+Creates a semantic association between the description and the input field.
 
 </details>
 
@@ -883,10 +883,10 @@ creates a semantic association between the description and the input field.
 <summary>Question 2: CSS Layout</summary>
 
 (a) Write CSS to create a flexbox layout with a sidebar (250px wide) on the left and a main content
-area that fills the remaining space.
+Area that fills the remaining space.
 
 (b) Write a media query that changes the layout to a single column (sidebar on top, content below)
-when the screen width is less than 768 pixels.
+When the screen width is less than 768 pixels.
 
 (c) Explain what `box-sizing: border-box` does and why it is commonly recommended.
 
@@ -924,23 +924,23 @@ Answer:
 ```
 
 (c) `box-sizing: border-box` makes the `width` and `height` properties include the content area,
-padding, and border. Without it (the default `content-box`), `width` applies only to the content,
-and padding and border are added on top, making the total element wider than specified. This
-commonly causes layout issues when elements exceed their container. With `border-box`, if you set
-`width: 250px`, the total rendered width including padding and border will be exactly 250px, making
-layout calculations predictable. Many developers apply `* { box-sizing: border-box; }` globally.
+Padding, and border. Without it (the default `content-box`), `width` applies only to the content,
+And padding and border are added on top, making the total element wider than specified. This
+Commonly causes layout issues when elements exceed their container. With `border-box`If you set
+`width: 250px`The total rendered width including padding and border will be exactly 250px, making
+Layout calculations predictable. Many developers apply `* { box-sizing: border-box; }` globally.
 
 </details>
 
 <details>
 <summary>Question 3: JavaScript DOM and Events</summary>
 
-(a) Write JavaScript code that: (i) finds an element with id `counter`, (ii) adds a click event
-listener that increments a counter variable and updates the element's text content to show the
-current count.
+(a) Write JavaScript code that: (i) finds an element with id `counter`(ii) adds a click event
+Listener that increments a counter variable and updates the element's text content to show the
+Current count.
 
 (b) Write JavaScript to validate a form with id `loginForm`. If the password field (id `pass`) has
-fewer than 8 characters, prevent form submission and display an alert.
+Fewer than 8 characters, prevent form submission and display an alert.
 
 (c) Explain the difference between `textContent` and `innerHTML`.
 
@@ -972,9 +972,9 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
 (c) `textContent` sets or returns the plain text content of an element. It does not parse HTML tags
 -- any HTML tags in the string are treated as literal text. `innerHTML` sets or returns the HTML
-content of an element, including any child elements. HTML tags in the string are parsed and rendered
-as DOM elements. `textContent` is safer (no XSS risk) and faster. `innerHTML` is needed when you
-intentionally want to insert HTML elements.
+Content of an element, including any child elements. HTML tags in the string are parsed and rendered
+As DOM elements. `textContent` is safer (no XSS risk) and faster. `innerHTML` is needed when you
+Intentionally want to insert HTML elements.
 
 </details>
 
@@ -982,7 +982,7 @@ intentionally want to insert HTML elements.
 <summary>Question 4: Client-Side vs Server-Side</summary>
 
 An e-commerce website needs to implement the following features. For each, state whether the
-processing should be client-side, server-side, or both, and justify your answer.
+Processing should be client-side, server-side, or both, and justify your answer.
 
 (a) Displaying a product image gallery with thumbnail navigation.
 
@@ -997,26 +997,26 @@ processing should be client-side, server-side, or both, and justify your answer.
 Answer:
 
 (a) **Client-side.** Image gallery navigation (switching between images, zoom, pan) requires
-immediate responsiveness and does not need server involvement. JavaScript handles this in the
-browser for the best user experience.
+Immediate responsiveness and does not need server involvement. JavaScript handles this in the
+Browser for the best user experience.
 
 (b) **Both.** Client-side validation provides immediate feedback (format check, Luhn algorithm)
-before the form is submitted, improving UX. Server-side validation is essential for security --
-client-side checks can be bypassed, and the server must never trust client data.
+Before the form is submitted, improving UX. Server-side validation is essential for security --
+Client-side checks can be bypassed, and the server must never trust client data.
 
 (c) **Server-side.** Payment processing involves accessing the payment gateway API, verifying
-account balances, and modifying financial records. This must happen on the server for security (API
-keys must not be exposed to the client) and reliability (client-side processing would be inherently
-insecure and unreliable).
+Account balances, and modifying financial records. This must happen on the server for security (API
+Keys must not be exposed to the client) and reliability (client-side processing would be inherently
+Insecure and unreliable).
 
 (d) **Client-side.** Updating the cart counter is a UI operation that should happen instantly when
-the user clicks "Add to cart." JavaScript can update the DOM without a server round-trip. The actual
-cart data should be synced with the server (via an AJAX request), but the visual update is
-client-side.
+The user clicks "Add to cart." JavaScript can update the DOM without a server round-trip. The actual
+Cart data should be synced with the server (via an AJAX request), but the visual update is
+Client-side.
 
 (e) **Server-side.** Searching a database requires server-side processing (SQL query). The client
-cannot directly access the database. The client sends the search query, and the server returns the
-results. Client-side filtering (narrowing already-loaded results) could supplement this.
+Cannot directly access the database. The client sends the search query, and the server returns the
+Results. Client-side filtering (narrowing already-loaded results) could supplement this.
 
 </details>
 
@@ -1036,25 +1036,32 @@ Evaluate each characteristic against usability principles and suggest improvemen
 Answer:
 
 **Search bar at bottom:** Violates the visibility principle. Users expect search at the top of the
-page (standard convention). Move the search bar to the header area where it is immediately visible.
+Page (standard convention). Move the search bar to the header area where it is immediately visible.
 
 **Icon-only navigation:** Violates the recognition rather than recall and accessibility principles.
 Icons alone are ambiguous -- users must guess what each icon means. Text labels provide clarity and
-help screen readers. Add text labels below or beside each icon.
+Help screen readers. Add text labels below or beside each icon.
 
 **"Error 404" messages:** Violates the "help users recognise, diagnose, and recover from errors"
-heuristic. Technical error codes are meaningless to most users. Replace with plain language: "The
-page you requested could not be found. Here are some suggestions..." with links to common pages.
+Heuristic. Technical error codes are meaningless to most users. Replace with plain language: "The
+Page you requested could not be found. Here are some suggestions..." with links to common pages.
 
 **Light grey text on white background:** Violates visibility and accessibility principles. The
-contrast ratio is insufficient, making text hard to read, especially for users with visual
-impairments. Use dark text (e.g., `#333333`) on a white background to meet WCAG AA contrast
-requirements (4.5:1).
+Contrast ratio is insufficient, making text hard to read, especially for users with visual
+Impairments. Use dark text (e.g., `#333333`) on a white background to meet WCAG AA contrast
+Requirements (4.5:1).
 
 **Form resubmission warning:** Violates user control and freedom. After form submission, the browser
-shows a warning about resubmission when the user navigates back. This indicates the site uses POST
-without the Post/Redirect/Get (PRG) pattern. Fix by redirecting (HTTP 302/303) to a results page
-after POST processing, so the Back button returns to the form, not the POST request.
+Shows a warning about resubmission when the user navigates back. This indicates the site uses POST
+Without the Post/Redirect/Get (PRG) pattern. Fix by redirecting (HTTP 302/303) to a results page
+After POST processing, so the Back button returns to the form, not the POST request.
 
 </details>
 
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

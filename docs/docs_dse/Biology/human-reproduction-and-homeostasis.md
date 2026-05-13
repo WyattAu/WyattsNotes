@@ -15,17 +15,17 @@ slug: dse-biology-human-reproduction-and-homeostasis
 
 ### Male Reproductive System
 
-| Structure                            | Function                                                                                                                    |
+| Structure | Function |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| Testes                               | Produce sperm (in seminiferous tubules) and testosterone (in Leydig/interstitial cells)                                     |
-| Scrotum                              | Holds testes outside the body cavity at approximately 2-3 degrees C below core body temperature for viable sperm production |
-| Epididymis                           | Coiled tube on the surface of each testis; stores and matures sperm                                                         |
-| Vas deferens                         | Muscular tube that carries sperm from the epididymis to the urethra during ejaculation                                      |
-| Seminal vesicles                     | Produce seminal fluid rich in fructose (energy source for sperm) and prostaglandins                                         |
-| Prostate gland                       | Produces alkaline fluid that neutralises vaginal acidity; contains enzymes to liquefy semen                                 |
-| Bulbourethral gland (Cowper's gland) | Produces mucus for lubrication and to neutralise residual urine in urethra                                                  |
-| Urethra                              | Shared passageway for semen (during ejaculation) and urine (during urination)                                               |
-| Penis                                | Erectile organ that delivers semen into the vagina during intercourse                                                       |
+| Testes | Produce sperm (in seminiferous tubules) and testosterone (in Leydig/interstitial cells) |
+| Scrotum | Holds testes outside the body cavity at approximately 2-3 degrees C below core body temperature for viable sperm production |
+| Epididymis | Coiled tube on the surface of each testis; stores and matures sperm |
+| Vas deferens | Muscular tube that carries sperm from the epididymis to the urethra during ejaculation |
+| Seminal vesicles | Produce seminal fluid rich in fructose (energy source for sperm) and prostaglandins |
+| Prostate gland | Produces alkaline fluid that neutralises vaginal acidity; contains enzymes to liquefy semen |
+| Bulbourethral gland (Cowper's gland) | Produces mucus for lubrication and to neutralise residual urine in urethra |
+| Urethra | Shared passageway for semen (during ejaculation) and urine (during urination) |
+| Penis | Erectile organ that delivers semen into the vagina during intercourse |
 
 **Semen composition:**
 
@@ -36,23 +36,23 @@ slug: dse-biology-human-reproduction-and-homeostasis
 
 **Sperm structure:**
 
-| Part             | Description                                                                                                                                |
+| Part | Description |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Head             | Contains the haploid nucleus (23 chromosomes); acrosome (vesicle containing hydrolytic enzymes to penetrate the zona pellucida of the egg) |
-| Middle piece     | Packed with mitochondria arranged in a helix; produce ATP via aerobic respiration to power tail movement                                   |
-| Tail (flagellum) | Whip-like structure for locomotion; propels the sperm through the female reproductive tract                                                |
+| Head | Contains the haploid nucleus (23 chromosomes); acrosome (vesicle containing hydrolytic enzymes to penetrate the zona pellucida of the egg) |
+| Middle piece | Packed with mitochondria arranged in a helix; produce ATP via aerobic respiration to power tail movement |
+| Tail (flagellum) | Whip-like structure for locomotion; propels the sperm through the female reproductive tract |
 
 ### Female Reproductive System
 
-| Structure                | Function                                                                                                                              |
+| Structure | Function |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Ovaries                  | Produce ova (eggs) in follicles; produce hormones oestrogen and progesterone                                                          |
-| Oviduct (fallopian tube) | Carries the ovum from the ovary to the uterus; site of fertilisation; lined with ciliated epithelium to move the ovum                 |
-| Uterus (womb)            | Site of implantation and embryonic/fetal development; thick, muscular walls                                                           |
-| Endometrium              | Inner lining of the uterus; thickens and becomes vascularised during the menstrual cycle; shed during menstruation if no implantation |
-| Cervix                   | Ring of muscle at the lower end of the uterus; produces mucus that changes consistency during the cycle                               |
-| Vagina                   | Receives the penis during intercourse; birth canal during delivery; acidic environment (pH approximately 4) to inhibit pathogens      |
-| Vulva                    | External female genitalia                                                                                                             |
+| Ovaries | Produce ova (eggs) in follicles; produce hormones oestrogen and progesterone |
+| Oviduct (fallopian tube) | Carries the ovum from the ovary to the uterus; site of fertilisation; lined with ciliated epithelium to move the ovum |
+| Uterus (womb) | Site of implantation and embryonic/fetal development; thick, muscular walls |
+| Endometrium | Inner lining of the uterus; thickens and becomes vascularised during the menstrual cycle; shed during menstruation if no implantation |
+| Cervix | Ring of muscle at the lower end of the uterus; produces mucus that changes consistency during the cycle |
+| Vagina | Receives the penis during intercourse; birth canal during delivery; acidic environment (pH approximately 4) to inhibit pathogens |
+| Vulva | External female genitalia |
 
 ---
 
@@ -61,32 +61,32 @@ slug: dse-biology-human-reproduction-and-homeostasis
 ### Spermatogenesis
 
 Spermatogenesis is the production of sperm in the seminiferous tubules of the testes. It begins at
-puberty and continues throughout life.
+Puberty and continues throughout life.
 
 **Process:**
 
 1. **Mitosis of germ cells:** Spermatogonia (diploid, 2n = 46) divide by mitosis to produce more
-   spermatogonia (maintaining the stem cell population) and primary spermatocytes.
+ spermatogonia (maintaining the stem cell population) and primary spermatocytes.
 
 2. **Meiosis I:** Each primary spermatocyte (2n) undergoes meiosis I to produce two secondary
-   spermatocytes (n, each with 23 chromosomes consisting of two chromatids).
+ spermatocytes (n, each with 23 chromosomes consisting of two chromatids).
 
 3. **Meiosis II:** Each secondary spermatocyte undergoes meiosis II to produce two spermatids (n,
-   each with 23 single-chromatid chromosomes). Total: 4 spermatids from one primary spermatocyte.
+ each with 23 single-chromatid chromosomes). Total: 4 spermatids from one primary spermatocyte.
 
 4. **Spermiogenesis:** Spermatids undergo differentiation to become mature spermatozoa. The nucleus
-   condenses, the acrosome forms, mitochondria concentrate in the middle piece, and the tail
-   develops.
+ condenses, the acrosome forms, mitochondria concentrate in the middle piece, and the tail
+ develops.
 
 5. **Spermiation:** Mature sperm are released from the Sertoli cells (nurse cells) into the lumen of
-   the seminiferous tubule.
+ the seminiferous tubule.
 
 **Role of Sertoli cells:**
 
 - Provide nourishment for developing sperm
 - Phagocytose excess cytoplasm shed by developing sperm
 - Form the blood-testis barrier (prevents immune system from attacking sperm, which express unique
-  surface antigens)
+ surface antigens)
 - Produce inhibin (negative feedback on FSH secretion)
 
 **Duration:** Approximately 74 days from spermatogonium to mature sperm.
@@ -94,42 +94,42 @@ puberty and continues throughout life.
 ### Oogenesis
 
 Oogenesis is the production of ova (eggs) in the ovaries. It begins during foetal development and is
-completed at fertilisation.
+Completed at fertilisation.
 
 **Process:**
 
 1. **Foetal development:** Oogonia (diploid, 2n = 46) divide by mitosis to produce primary oocytes
-   (2n). Primary oocytes begin meiosis I but arrest at prophase I. A female is born with all the
-   primary oocytes she will ever have (approximately 1-2 million). Each primary oocyte is surrounded
-   by a layer of follicular cells, forming a primordial follicle.
+ (2n). Primary oocytes begin meiosis I but arrest at prophase I. A female is born with all the
+ primary oocytes she will ever have (approximately 1-2 million). Each primary oocyte is surrounded
+ by a layer of follicular cells, forming a primordial follicle.
 
 2. **Puberty to menopause:** Each month (during the menstrual cycle), one (or occasionally more)
-   primary oocyte resumes meiosis I, producing a secondary oocyte (n) and the first polar body (n).
-   The secondary oocyte receives almost all the cytoplasm (unequal cytokinesis). The polar body is
-   small and eventually degenerates.
+ primary oocyte resumes meiosis I, producing a secondary oocyte (n) and the first polar body (n).
+ The secondary oocyte receives almost all the cytoplasm (unequal cytokinesis). The polar body is
+ small and eventually degenerates.
 
 3. **Ovulation:** The secondary oocyte begins meiosis II but arrests at metaphase II. It is released
-   from the ovary (ovulation).
+ from the ovary (ovulation).
 
 4. **Fertilisation:** If the secondary oocyte is fertilised by a sperm, meiosis II is completed,
-   producing the ovum (n) and a second polar body. The sperm nucleus fuses with the ovum nucleus to
-   form the zygote (2n).
+ producing the ovum (n) and a second polar body. The sperm nucleus fuses with the ovum nucleus to
+ form the zygote (2n).
 
 **Duration:** Oogenesis from oogonium to ovulation takes approximately 12-50 years (arrested for
-decades). Meiosis II is completed in minutes to hours after fertilisation.
+Decades). Meiosis II is completed in minutes to hours after fertilisation.
 
 ### Comparison of Spermatogenesis and Oogenesis
 
-| Feature                    | Spermatogenesis                               | Oogenesis                                                |
+| Feature | Spermatogenesis | Oogenesis |
 | -------------------------- | --------------------------------------------- | -------------------------------------------------------- |
-| Location                   | Seminiferous tubules of testes                | Ovaries                                                  |
-| Timing                     | Begins at puberty; continuous throughout life | Begins during foetal development; arrested at prophase I |
-| Number of gametes produced | 4 sperm from one primary spermatocyte         | 1 ovum from one primary oocyte (+ 2-3 polar bodies)      |
-| Cytokinesis                | Equal (four equal-sized cells)                | Unequal (one large ovum, small polar bodies)             |
-| Completion                 | Completed in approximately 74 days            | Completed only at fertilisation (meiosis II)             |
-| Onset of meiosis II        | Immediate (no arrest)                         | Arrested at metaphase II until fertilisation             |
-| Result                     | Four functional sperm                         | One functional ovum                                      |
-| Mitochondrial contribution | Mitochondria in middle piece of sperm         | Ovum provides all mitochondria to zygote                 |
+| Location | Seminiferous tubules of testes | Ovaries |
+| Timing | Begins at puberty; continuous throughout life | Begins during foetal development; arrested at prophase I |
+| Number of gametes produced | 4 sperm from one primary spermatocyte | 1 ovum from one primary oocyte (+ 2-3 polar bodies) |
+| Cytokinesis | Equal (four equal-sized cells) | Unequal (one large ovum, small polar bodies) |
+| Completion | Completed in approximately 74 days | Completed only at fertilisation (meiosis II) |
+| Onset of meiosis II | Immediate (no arrest) | Arrested at metaphase II until fertilisation |
+| Result | Four functional sperm | One functional ovum |
+| Mitochondrial contribution | Mitochondria in middle piece of sperm | Ovum provides all mitochondria to zygote |
 
 **Worked Example**
 
@@ -155,16 +155,16 @@ Starting with one primary spermatocyte and one primary oocyte, both of which com
 ### Overview
 
 The menstrual cycle is approximately 28 days and involves coordinated changes in the ovaries and the
-uterus, controlled by four hormones.
+Uterus, controlled by four hormones.
 
 ### The Four Key Hormones
 
-| Hormone      | Source                      | Function                                                                                                                                                    |
+| Hormone | Source | Function |
 | ------------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FSH          | Anterior pituitary gland    | Stimulates follicle development in the ovary; stimulates the ovaries to produce oestrogen                                                                   |
-| LH           | Anterior pituitary gland    | Triggers ovulation (LH surge on day 14); stimulates the corpus luteum to develop and secrete progesterone                                                   |
-| Oestrogen    | Developing follicle (ovary) | Stimulates endometrium to thicken and become vascularised; inhibits FSH at low levels (negative feedback); stimulates LH at high levels (positive feedback) |
-| Progesterone | Corpus luteum (ovary)       | Maintains the thickened endometrium; inhibits FSH and LH secretion (negative feedback)                                                                      |
+| FSH | Anterior pituitary gland | Stimulates follicle development in the ovary; stimulates the ovaries to produce oestrogen |
+| LH | Anterior pituitary gland | Triggers ovulation (LH surge on day 14); stimulates the corpus luteum to develop and secrete progesterone |
+| Oestrogen | Developing follicle (ovary) | Stimulates endometrium to thicken and become vascularised; inhibits FSH at low levels (negative feedback); stimulates LH at high levels (positive feedback) |
+| Progesterone | Corpus luteum (ovary) | Maintains the thickened endometrium; inhibits FSH and LH secretion (negative feedback) |
 
 ### Phases of the Menstrual Cycle
 
@@ -182,7 +182,7 @@ uterus, controlled by four hormones.
 - Oestrogen stimulates the endometrium to thicken (proliferative phase)
 - Low oestrogen levels exert negative feedback on the pituitary, keeping FSH and LH relatively low
 - As the follicle matures and oestrogen rises above a threshold, it switches to positive feedback on
-  the pituitary
+ the pituitary
 - High oestrogen triggers a surge in LH (and a smaller surge in FSH)
 
 **3. Ovulation (Day 14):**
@@ -198,9 +198,9 @@ uterus, controlled by four hormones.
 - Progesterone maintains the thickened, vascularised endometrium (secretory phase)
 - Progesterone inhibits FSH and LH (negative feedback), preventing new follicle development
 - If fertilisation does not occur: the corpus luteum degenerates (approximately day 25-28),
-  progesterone drops, and the cycle restarts
+ progesterone drops, and the cycle restarts
 - If fertilisation occurs: the embryo produces hCG (human chorionic gonadotropin), which maintains
-  the corpus luteum
+ the corpus luteum
 
 ### Hormonal Interactions
 
@@ -213,16 +213,16 @@ uterus, controlled by four hormones.
 **Positive feedback (high oestrogen):**
 
 - When oestrogen concentration rises above a critical threshold (around day 12-13), it stimulates
-  (rather than inhibits) the anterior pituitary to secrete LH
+ (rather than inhibits) the anterior pituitary to secrete LH
 - This creates the LH surge that triggers ovulation
 - The LH surge is a self-amplifying cycle: more LH causes more oestrogen release, which causes more
-  LH release, until ovulation occurs and the follicle is ruptured (breaking the feedback loop)
+ LH release, until ovulation occurs and the follicle is ruptured (breaking the feedback loop)
 
 :::info
 The switch from negative to positive feedback by oestrogen is a critical concept. At low
-concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
-sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
-causing the LH surge. The DSE frequently tests this distinction.
+Concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
+Sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
+Causing the LH surge. The DSE frequently tests this distinction.
 :::
 
 ### Worked Example: Hormone Levels at Day 20
@@ -257,92 +257,92 @@ Key relationships:
 ### Fertilisation
 
 Fertilisation is the fusion of a sperm nucleus with an ovum nucleus, forming a diploid zygote (2n =
-46). It occurs in the oviduct (ampulla region), typically within 12-24 hours after ovulation.
+46). It occurs in the oviduct (ampulla region), within 12-24 hours after ovulation.
 
 **Process:**
 
 1. **Capacitation:** Sperm undergo biochemical changes in the female reproductive tract (removal of
-   cholesterol from the sperm membrane increases membrane fluidity and prepares the sperm for the
-   acrosome reaction).
+ cholesterol from the sperm membrane increases membrane fluidity and prepares the sperm for the
+ acrosome reaction).
 
 2. **Chemotaxis:** Sperm are attracted to chemical signals released by the ovum and surrounding
-   follicular cells.
+ follicular cells.
 
 3. **Acrosome reaction:** The sperm binds to the zona pellucida (glycoprotein layer surrounding the
-   ovum). The acrosome releases hydrolytic enzymes (acrosin, hyaluronidase) that digest the zona
-   pellucida, allowing the sperm to penetrate.
+ ovum). The acrosome releases hydrolytic enzymes (acrosin, hyaluronidase) that digest the zona
+ pellucida, allowing the sperm to penetrate.
 
 4. **Penetration of the zona pellucida:** The sperm penetrates the zona pellucida and reaches the
-   oocyte membrane (vitelline membrane).
+ oocyte membrane (vitelline membrane).
 
 5. **Fusion of membranes:** The sperm membrane fuses with the oocyte membrane.
 
 6. **Cortical reaction:** The ovum releases cortical granules (vesicles) that modify the zona
-   pellucida, making it impermeable to other sperm. This prevents **polyspermy** (fertilisation by
-   more than one sperm).
+ pellucida, making it impermeable to other sperm. This prevents **polyspermy** (fertilisation by
+ more than one sperm).
 
 7. **Completion of meiosis II:** The secondary oocyte completes meiosis II, producing the ovum and
-   the second polar body.
+ the second polar body.
 
 8. **Fusion of nuclei:** The sperm nucleus and ovum nucleus fuse, forming the diploid zygote (2n =
-   46).
+ 46).
 
 ### Early Development and Implantation
 
 1. **Cleavage divisions:** The zygote divides by mitosis as it travels along the oviduct towards the
-   uterus. Cell divisions are rapid but the total volume does not increase (cleavage).
+ uterus. Cell divisions are rapid but the total volume does not increase (cleavage).
 
 2. **Morula:** By approximately day 3-4, the embryo is a solid ball of approximately 16 cells
-   (morula).
+ (morula).
 
 3. **Blastocyst:** By approximately day 5-6, a fluid-filled cavity (blastocoel) forms inside,
-   creating the blastocyst. The blastocyst has two parts:
-   - **Trophoblast:** Outer layer of cells (will form the placenta)
-   - **Inner cell mass:** Group of cells at one end (will form the embryo)
+ creating the blastocyst. The blastocyst has two parts:
+ - **Trophoblast:** Outer layer of cells (will form the placenta)
+ - **Inner cell mass:** Group of cells at one end (will form the embryo)
 
 4. **Implantation:** The blastocyst implants into the thickened, vascularised endometrium
-   (approximately day 6-7 after fertilisation). The trophoblast cells secrete enzymes that digest
-   the endometrium, allowing the blastocyst to embed.
+ (approximately day 6-7 after fertilisation). The trophoblast cells secrete enzymes that digest
+ the endometrium, allowing the blastocyst to embed.
 
 ### Placenta and Umbilical Cord
 
 **Placenta structure:**
 
 The placenta is a temporary organ formed from both maternal (endometrium) and foetal (trophoblast)
-tissues. It is the interface for exchange of substances between maternal and foetal blood.
+Tissues. It is the interface for exchange of substances between maternal and foetal blood.
 
 **Key features:**
 
 - Chorionic villi: finger-like projections of the trophoblast that extend into the maternal
-  blood-filled spaces (intervillous spaces). This maximises the surface area for exchange.
+ blood-filled spaces (intervillous spaces). This maximises the surface area for exchange.
 - Maternal blood and foetal blood do NOT mix (they are separated by the placental barrier).
 - The placental barrier consists of: foetal capillary endothelium, connective tissue, and
-  trophoblast epithelium.
+ trophoblast epithelium.
 
 **Functions of the placenta:**
 
-| Function           | Description                                                                                                                    |
+| Function | Description |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Gas exchange       | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood      |
-| Nutrient transfer  | Glucose, amino acids, fatty acids, vitamins, and minerals diffuse from maternal to foetal blood                                |
-| Waste removal      | Urea, uric acid, and creatinine diffuse from foetal blood to maternal blood for excretion                                      |
+| Gas exchange | $\mathrm{O}_2$ diffuses from maternal blood to foetal blood; $\mathrm{CO}_2$ diffuses from foetal blood to maternal blood |
+| Nutrient transfer | Glucose, amino acids, fatty acids, vitamins, and minerals diffuse from maternal to foetal blood |
+| Waste removal | Urea, uric acid, and creatinine diffuse from foetal blood to maternal blood for excretion |
 | Hormone production | Produces progesterone (maintains endometrium), oestrogen, hCG (maintains corpus luteum), relaxin, and human placental lactogen |
-| Antibody transfer  | IgG antibodies cross the placenta, providing passive immunity to the foetus                                                    |
-| Barrier            | Prevents some pathogens and harmful substances from reaching the foetus (though alcohol, drugs, and some viruses can cross)    |
+| Antibody transfer | IgG antibodies cross the placenta, providing passive immunity to the foetus |
+| Barrier | Prevents some pathogens and harmful substances from reaching the foetus (though alcohol, drugs, and some viruses can cross) |
 
 **Umbilical cord:**
 
 - Contains two umbilical arteries (carry deoxygenated blood from the foetus to the placenta) and one
-  umbilical vein (carries oxygenated blood from the placenta to the foetus)
+ umbilical vein (carries oxygenated blood from the placenta to the foetus)
 - Wrapped in Wharton's jelly (connective tissue that protects the blood vessels from compression)
 
 :::warning
 A critical point for DSE: the umbilical ARTERY carries deoxygenated blood (away from the
-foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from the placenta to the
-foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
-carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
-carry blood away from the heart, veins carry blood towards it. The umbilical arteries carry blood
-away from the foetal heart.
+Foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from the placenta to the
+Foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
+Carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
+Carry blood away from the heart, veins carry blood towards it. The umbilical arteries carry blood
+Away from the foetal heart.
 :::
 
 **Worked Example**
@@ -359,9 +359,9 @@ A pregnant woman's blood glucose is consistently elevated at 200 mg/100 cm cubed
 3. **Foetal insulin response:** The foetal pancreas responds to high blood glucose by secreting insulin (beta cells of the islets of Langerhans). Insulin stimulates foetal cells to take up glucose and convert it to glycogen and fat.
 
 4. **Effects on the foetus:**
-   - **Macrosomia (excessive growth):** High glucose plus high insulin promotes fat deposition and growth. The baby may be born significantly larger than normal (birth weight &gt; 4 kg).
-   - **Neonatal hypoglycaemia:** After delivery, the maternal glucose supply is cut off, but the baby continues producing high insulin temporarily. This causes a rapid drop in blood glucose after birth, which can be dangerous if untreated.
-   - **Respiratory distress:** High insulin can inhibit surfactant production in foetal lungs, leading to breathing difficulties after birth.
+ - **Macrosomia (excessive growth):** High glucose plus high insulin promotes fat deposition and growth. The baby may be born significantly larger than normal (birth weight &gt; 4 kg).
+ - **Neonatal hypoglycaemia:** After delivery, the maternal glucose supply is cut off, but the baby continues producing high insulin temporarily. This causes a rapid drop in blood glucose after birth, which can be dangerous if untreated.
+ - **Respiratory distress:** High insulin can inhibit surfactant production in foetal lungs, leading to breathing difficulties after birth.
 
 </details>
 
@@ -372,8 +372,8 @@ A pregnant woman's blood glucose is consistently elevated at 200 mg/100 cm cubed
 ### Definition
 
 Homeostasis is the maintenance of a constant internal environment within narrow limits, despite
-changes in the external environment. It is essential for the proper functioning of enzymes and
-cellular processes.
+Changes in the external environment. It is essential for the proper functioning of enzymes and
+Cellular processes.
 
 **Key conditions regulated by homeostasis:**
 
@@ -382,13 +382,13 @@ cellular processes.
 - Blood water potential (osmotic balance)
 - Blood pH (approximately 7.35-7.45)
 - $\mathrm{CO}_2$ concentration in the blood
-- Ion concentrations (Na$^+$, K$^+$, Ca$^{2+}$)
+- Ion concentrations (Na$^+$K$^+$Ca$^{2+}$)
 
 ### Negative Feedback
 
 Negative feedback is the primary mechanism of homeostasis. When a parameter deviates from its set
-point, the body initiates a response that reverses the deviation and restores the parameter to its
-normal range.
+Point, the body initiates a response that reverses the deviation and restores the parameter to its
+Normal range.
 
 **General pattern:**
 
@@ -402,8 +402,8 @@ The term "negative" refers to the fact that the response opposes (negates) the o
 
 :::info
 Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
-point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
-answers, write "maintained within narrow limits" rather than "kept exactly constant."
+Point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
+Answers, write "maintained within narrow limits" rather than "kept exactly constant."
 :::
 
 ---
@@ -416,36 +416,36 @@ The hypothalamus contains the body's thermoregulatory centre. It receives input 
 
 - **Central thermoreceptors:** In the hypothalamus itself, monitoring blood temperature
 - **Peripheral thermoreceptors:** In the skin (dermis) and mucous membranes, monitoring external
-  temperature
+ temperature
 
 ### Responses to Heat (When Body Temperature Rises)
 
 **Physiological responses (involuntary):**
 
-| Response                 | Mechanism                                                                                                                                                   |
+| Response | Mechanism |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vasodilation             | Arterioles supplying the skin dilate; more blood flows near the surface; heat is lost by radiation                                                          |
-| Sweating                 | Sweat glands secrete sweat onto the skin surface; water evaporates, absorbing latent heat from the body (approximately 2.4 kJ per gram of water evaporated) |
-| Increased respiration    | Breathing rate increases; more heat is lost through exhaled air                                                                                             |
-| Decreased metabolic rate | Body reduces heat production by lowering the rate of metabolic reactions                                                                                    |
-| Piloerection (relaxed)   | Hair lies flat, reducing the insulating air layer near the skin (less significant in humans than in furry animals)                                          |
+| Vasodilation | Arterioles supplying the skin dilate; more blood flows near the surface; heat is lost by radiation |
+| Sweating | Sweat glands secrete sweat onto the skin surface; water evaporates, absorbing latent heat from the body (approximately 2.4 kJ per gram of water evaporated) |
+| Increased respiration | Breathing rate increases; more heat is lost through exhaled air |
+| Decreased metabolic rate | Body reduces heat production by lowering the rate of metabolic reactions |
+| Piloerection (relaxed) | Hair lies flat, reducing the insulating air layer near the skin (less significant in humans than in furry animals) |
 
 ### Responses to Cold (When Body Temperature Drops)
 
-| Response                 | Mechananism                                                                                   |
+| Response | Mechananism |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| Vasoconstriction         | Arterioles supplying the skin constrict; less blood flows near the surface; heat is conserved |
-| Shivering                | Rapid, involuntary muscle contractions; generates heat from increased metabolic rate          |
-| Increased metabolic rate | Adrenaline and thyroxine are released; increases cellular respiration and heat production     |
-| Piloerection (erect)     | Hair stands erect, trapping a layer of insulating air near the skin (goosebumps in humans)    |
-| Behavioural responses    | Curling up to reduce surface area; putting on clothes; seeking warmth                         |
+| Vasoconstriction | Arterioles supplying the skin constrict; less blood flows near the surface; heat is conserved |
+| Shivering | Rapid, involuntary muscle contractions; generates heat from increased metabolic rate |
+| Increased metabolic rate | Adrenaline and thyroxine are released; increases cellular respiration and heat production |
+| Piloerection (erect) | Hair stands erect, trapping a layer of insulating air near the skin (goosebumps in humans) |
+| Behavioural responses | Curling up to reduce surface area; putting on clothes; seeking warmth |
 
 ### Temperature Regulation Summary Table
 
-| Condition | Receptor Signal | Effectors Activated                                | Response                                                    | Effect on Temperature |
+| Condition | Receptor Signal | Effectors Activated | Response | Effect on Temperature |
 | --------- | --------------- | -------------------------------------------------- | ----------------------------------------------------------- | --------------------- |
-| Too hot   | Thermoreceptors | Skin arterioles, sweat glands, muscles             | Vasodilation, sweating, reduced metabolism                  | Temperature decreases |
-| Too cold  | Thermoreceptors | Skin arterioles, skeletal muscles, adrenal medulla | Vasoconstriction, shivering, increased thyroxine/adrenaline | Temperature increases |
+| Too hot | Thermoreceptors | Skin arterioles, sweat glands, muscles | Vasodilation, sweating, reduced metabolism | Temperature decreases |
+| Too cold | Thermoreceptors | Skin arterioles, skeletal muscles, adrenal medulla | Vasoconstriction, shivering, increased thyroxine/adrenaline | Temperature increases |
 
 **Worked Example**
 
@@ -481,12 +481,12 @@ During vigorous exercise, skeletal muscle respiration generates large amounts of
 ### Normal Blood Glucose Level
 
 Blood glucose is maintained at approximately **90 mg/100 cm cubed** (approximately 5 mmol/L). This
-concentration must be tightly regulated because:
+Concentration must be tightly regulated because:
 
 - The brain relies almost exclusively on glucose as its energy source
 - Excessively high blood glucose (hyperglycaemia) damages blood vessels, nerves, and kidneys
 - Excessively low blood glucose (hypoglycaemia) impairs brain function, leading to confusion, coma,
-  and death
+ and death
 
 ### Hormonal Control
 
@@ -494,19 +494,19 @@ concentration must be tightly regulated because:
 
 - Released when blood glucose rises above the set point (e.g., after a meal)
 - **Effects:**
-  - Increases the permeability of cell membranes to glucose (especially liver and muscle cells)
-  - Stimulates glycogenesis (conversion of glucose to glycogen for storage in the liver and muscles)
-  - Increases the rate of glucose respiration in cells
-  - Inhibits gluconeogenesis (conversion of amino acids/fats to glucose in the liver)
-  - Inhibits glycogenolysis (breakdown of glycogen to glucose)
+ - Increases the permeability of cell membranes to glucose (especially liver and muscle cells)
+ - Stimulates glycogenesis (conversion of glucose to glycogen for storage in the liver and muscles)
+ - Increases the rate of glucose respiration in cells
+ - Inhibits gluconeogenesis (conversion of amino acids/fats to glucose in the liver)
+ - Inhibits glycogenolysis (breakdown of glycogen to glucose)
 - **Net effect:** Lowers blood glucose concentration
 
 **Glucagon** (produced by alpha cells of the islets of Langerhans in the pancreas):
 
 - Released when blood glucose falls below the set point (e.g., between meals, during exercise)
 - **Effects:**
-  - Stimulates glycogenolysis (conversion of glycogen to glucose in the liver)
-  - Stimulates gluconeogenesis (conversion of amino acids and glycerol to glucose in the liver)
+ - Stimulates glycogenolysis (conversion of glycogen to glucose in the liver)
+ - Stimulates gluconeogenesis (conversion of amino acids and glycerol to glucose in the liver)
 - **Net effect:** Raises blood glucose concentration
 
 **Adrenaline** (produced by the adrenal medulla in the "fight or flight" response):
@@ -534,24 +534,24 @@ concentration must be tightly regulated because:
 3. Alpha cells in the islets of Langerhans detect the fall
 4. Alpha cells secrete glucagon into the blood
 5. Glucagon stimulates the liver to convert glycogen to glucose (glycogenolysis) and to produce
-   glucose from amino acids (gluconeogenesis)
+ glucose from amino acids (gluconeogenesis)
 6. Blood glucose concentration increases back towards normal
 7. As blood glucose rises, glucagon secretion decreases (negative feedback)
 
 ### Glycogenesis, Glycogenolysis, and Gluconeogenesis
 
-| Process         | Definition                                                                             | Location       | Hormone              |
+| Process | Definition | Location | Hormone |
 | --------------- | -------------------------------------------------------------------------------------- | -------------- | -------------------- |
-| Glycogenesis    | Conversion of glucose to glycogen (storage)                                            | Liver, muscles | Insulin              |
-| Glycogenolysis  | Conversion of glycogen to glucose-6-phosphate (then to free glucose in the liver)      | Liver, muscles | Glucagon, adrenaline |
-| Gluconeogenesis | Synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol) | Liver only     | Glucagon             |
+| Glycogenesis | Conversion of glucose to glycogen (storage) | Liver, muscles | Insulin |
+| Glycogenolysis | Conversion of glycogen to glucose-6-phosphate (then to free glucose in the liver) | Liver, muscles | Glucagon, adrenaline |
+| Gluconeogenesis | Synthesis of glucose from non-carbohydrate precursors (amino acids, lactate, glycerol) | Liver only | Glucagon |
 
 :::warning
 A critical distinction: glycogenolysis occurs in both liver and muscle, but only the
-liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
-which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
-which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
-distinction.
+Liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
+Which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
+Which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
+Distinction.
 :::
 
 **Worked Example**
@@ -593,32 +593,32 @@ A student runs a 400-metre sprint. During the race, her blood glucose initially 
 ### The Kidneys
 
 The kidneys are the primary osmoregulatory organs. They regulate blood water potential by adjusting
-the volume and concentration of urine produced.
+The volume and concentration of urine produced.
 
 **Gross structure of the kidney:**
 
-| Region       | Description                                                                                      |
+| Region | Description |
 | ------------ | ------------------------------------------------------------------------------------------------ |
-| Cortex       | Outer region; contains Bowman's capsules, proximal and distal convoluted tubules                 |
-| Medulla      | Inner region; contains the loops of Henle and collecting ducts; highly concentrated tissue fluid |
-| Renal pelvis | Central cavity; collects urine from the collecting ducts                                         |
-| Ureter       | Carries urine from the renal pelvis to the bladder                                               |
+| Cortex | Outer region; contains Bowman's capsules, proximal and distal convoluted tubules |
+| Medulla | Inner region; contains the loops of Henle and collecting ducts; highly concentrated tissue fluid |
+| Renal pelvis | Central cavity; collects urine from the collecting ducts |
+| Ureter | Carries urine from the renal pelvis to the bladder |
 
 ### The Nephron
 
 The nephron is the functional unit of the kidney. Each kidney contains approximately one million
-nephrons.
+Nephrons.
 
 **Structure:**
 
-| Component                        | Location | Function                                                                                   |
+| Component | Location | Function |
 | -------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
-| Renal (Bowman's) capsule         | Cortex   | Cup-shaped structure surrounding the glomerulus; receives filtrate                         |
-| Glomerulus                       | Cortex   | Knot of capillaries; site of ultrafiltration                                               |
-| Proximal convoluted tubule (PCT) | Cortex   | Reabsorption of all glucose, all amino acids, most water, most Na$^+$, Cl$^-$ ions         |
-| Loop of Henle                    | Medulla  | Countercurrent multiplier; creates a sodium gradient in the medulla for water reabsorption |
-| Distal convoluted tubule (DCT)   | Cortex   | Selective reabsorption of ions; water permeability controlled by ADH                       |
-| Collecting duct                  | Medulla  | Final water reabsorption controlled by ADH; delivers urine to the renal pelvis             |
+| Renal (Bowman's) capsule | Cortex | Cup-shaped structure surrounding the glomerulus; receives filtrate |
+| Glomerulus | Cortex | Knot of capillaries; site of ultrafiltration |
+| Proximal convoluted tubule (PCT) | Cortex | Reabsorption of all glucose, all amino acids, most water, most Na$^+$Cl$^-$ ions |
+| Loop of Henle | Medulla | Countercurrent multiplier; creates a sodium gradient in the medulla for water reabsorption |
+| Distal convoluted tubule (DCT) | Cortex | Selective reabsorption of ions; water permeability controlled by ADH |
+| Collecting duct | Medulla | Final water reabsorption controlled by ADH; delivers urine to the renal pelvis |
 
 ### Ultrafiltration
 
@@ -627,25 +627,25 @@ Ultrafiltration occurs at the glomerulus and Bowman's capsule.
 **Mechanism:**
 
 1. The afferent arteriole (supplying the glomerulus) has a wider diameter than the efferent
-   arteriole (draining it).
+ arteriole (draining it).
 2. This creates high hydrostatic pressure in the glomerular capillaries.
 3. This pressure forces small molecules through the filtration barrier (capillary endothelium,
-   basement membrane, and podocytes of the Bowman's capsule) into the capsular space.
+ basement membrane, and podocytes of the Bowman's capsule) into the capsular space.
 4. Large molecules (proteins, blood cells) and medium molecules cannot pass through the filter and
-   remain in the blood.
+ remain in the blood.
 
 **What is filtered (in the glomerular filtrate):**
 
-Water, glucose, amino acids, urea, salts (Na$^+$, K$^+$, Cl$^-$, Ca$^{2+}$, HCO$_3^-$), vitamins,
-small waste products.
+Water, glucose, amino acids, urea, salts (Na$^+$K$^+$Cl$^-$Ca$^{2+}$HCO$_3^-$), vitamins,
+Small waste products.
 
 **What is NOT filtered:**
 
 Large proteins (e.g., albumin), red blood cells, white blood cells, platelets.
 
 **Glomerular filtration rate (GFR):** Approximately 125 cm cubed/min, or approximately 180 litres
-per day. Since the average daily urine output is approximately 1.5 litres, approximately 99% of the
-filtrate is reabsorbed.
+Per day. Since the average daily urine output is approximately 1.5 litres, approximately 99% of the
+Filtrate is reabsorbed.
 
 ### Selective Reabsorption
 
@@ -653,31 +653,31 @@ filtrate is reabsorbed.
 
 The PCT reabsorbs approximately 85% of the glomerular filtrate.
 
-| Substance   | Percentage Reabsorbed | Mechanism                                             |
+| Substance | Percentage Reabsorbed | Mechanism |
 | ----------- | --------------------- | ----------------------------------------------------- |
-| Glucose     | 100%                  | Co-transport with Na$^+$ (secondary active transport) |
-| Amino acids | 100%                  | Co-transport with Na$^+$ (secondary active transport) |
-| Water       | Approximately 85%     | Osmosis (follows reabsorbed solutes)                  |
-| Na$^+$      | Approximately 85%     | Active transport and co-transport                     |
-| Cl$^-$      | Approximately 85%     | Following Na$^+$ electrochemical gradient             |
-| Urea        | Approximately 50%     | Diffusion (partially reabsorbed)                      |
+| Glucose | 100% | Co-transport with Na$^+$ (secondary active transport) |
+| Amino acids | 100% | Co-transport with Na$^+$ (secondary active transport) |
+| Water | Approximately 85% | Osmosis (follows reabsorbed solutes) |
+| Na$^+$ | Approximately 85% | Active transport and co-transport |
+| Cl$^-$ | Approximately 85% | Following Na$^+$ electrochemical gradient |
+| Urea | Approximately 50% | Diffusion (partially reabsorbed) |
 
 The PCT has numerous microvilli (increasing surface area) and many mitochondria (providing ATP for
-active transport).
+Active transport).
 
 **Loop of Henle:**
 
 The loop of Henle acts as a countercurrent multiplier, maintaining a high solute concentration (high
-osmotic gradient) in the medulla.
+Osmotic gradient) in the medulla.
 
-| Limb            | Permeability                                                    | Effect                                                                                                    |
+| Limb | Permeability | Effect |
 | --------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Descending limb | Permeable to water; impermeable to salts                        | Water moves out by osmosis into the increasingly concentrated medulla; filtrate becomes more concentrated |
-| Ascending limb  | Impermeable to water; actively transports Na$^+$ and Cl$^-$ out | Na$^+$ and Cl$^-$ are pumped into the medullary tissue fluid; filtrate becomes more dilute                |
+| Descending limb | Permeable to water; impermeable to salts | Water moves out by osmosis into the increasingly concentrated medulla; filtrate becomes more concentrated |
+| Ascending limb | Impermeable to water; actively transports Na$^+$ and Cl$^-$ out | Na$^+$ and Cl$^-$ are pumped into the medullary tissue fluid; filtrate becomes more dilute |
 
 The countercurrent flow (descending and ascending limbs running in opposite directions) amplifies
-the osmotic gradient. The medullary tissue fluid reaches approximately 1200 mOsm/kg at the bottom of
-the loop (compared to approximately 300 mOsm/kg in the cortex).
+The osmotic gradient. The medullary tissue fluid reaches approximately 1200 mOsm/kg at the bottom of
+The loop (compared to approximately 300 mOsm/kg in the cortex).
 
 **Collecting duct:**
 
@@ -686,29 +686,29 @@ Water reabsorption in the collecting duct is controlled by antidiuretic hormone 
 ### The Role of ADH
 
 **Antidiuretic hormone (ADH, vasopressin)** is produced by neurosecretory cells in the hypothalamus
-and released from the posterior pituitary gland.
+And released from the posterior pituitary gland.
 
 **Negative feedback mechanism:**
 
 1. **Stimulus:** Blood water potential decreases (blood becomes too concentrated, e.g., after
-   sweating or insufficient water intake)
+ sweating or insufficient water intake)
 2. **Receptor:** Osmoreceptors in the hypothalamus detect the decrease in water potential
 3. **Control centre:** The hypothalamus stimulates the posterior pituitary to release ADH into the
-   blood
+ blood
 4. **Effector:** ADH binds to receptors on the collecting duct cells, triggering the insertion of
-   aquaporin (water channel) proteins into the cell membrane. The collecting duct becomes more
-   permeable to water.
+ aquaporin (water channel) proteins into the cell membrane. The collecting duct becomes more
+ permeable to water.
 5. **Response:** Water is reabsorbed from the collecting duct into the concentrated medullary tissue
-   fluid by osmosis. Urine becomes more concentrated and lower in volume.
+ fluid by osmosis. Urine becomes more concentrated and lower in volume.
 6. **Return to normal:** Blood water potential increases back to normal. The osmoreceptors are no
-   longer stimulated. ADH secretion decreases. The collecting duct becomes less permeable to water.
-   Less water is reabsorbed, and urine becomes more dilute.
+ longer stimulated. ADH secretion decreases. The collecting duct becomes less permeable to water.
+ Less water is reabsorbed, and urine becomes more dilute.
 
-| Condition           | Blood Water Potential | ADH Level | Urine Volume | Urine Concentration |
+| Condition | Blood Water Potential | ADH Level | Urine Volume | Urine Concentration |
 | ------------------- | --------------------- | --------- | ------------ | ------------------- |
-| Dehydrated          | Low                   | High      | Low          | High                |
-| Normal hydration    | Normal                | Normal    | Normal       | Normal              |
-| Excess water intake | High                  | Low       | High         | Low                 |
+| Dehydrated | Low | High | Low | High |
+| Normal hydration | Normal | Normal | Normal | Normal |
+| Excess water intake | High | Low | High | Low |
 
 **Worked Example**
 
@@ -755,46 +755,46 @@ A person takes part in a marathon on a hot day. They drink water at regular inte
 ### Definition
 
 Excretion is the removal of metabolic waste products from the body. These are substances produced by
-metabolic reactions that, if allowed to accumulate, would be toxic or harmful.
+Metabolic reactions that, if allowed to accumulate, would be toxic or harmful.
 
 **Key distinction:** Excretion is NOT the same as egestion. Egestion (defaecation) is the removal of
-undigested food (faeces) from the body. Faeces have never been part of the body's metabolism, so
-their removal is not excretion.
+Undigested food (faeces) from the body. Faeces have never been part of the body's metabolism, so
+Their removal is not excretion.
 
 ### Excretory Products
 
-| Substance                     | Source of Production                           | Organ of Excretion                   | Method of Excretion                             |
+| Substance | Source of Production | Organ of Excretion | Method of Excretion |
 | ----------------------------- | ---------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
-| $\mathrm{CO}_2$               | Cellular respiration                           | Lungs                                | Exhaled during breathing                        |
-| Urea                          | Deamination of excess amino acids in the liver | Kidneys                              | Filtered from blood, excreted in urine          |
-| Water                         | Various metabolic reactions                    | Kidneys, skin, lungs                 | Urine, sweat, exhaled breath                    |
-| Mineral salts (Na$^+$, K$^+$) | Various                                        | Kidneys, skin                        | Urine, sweat                                    |
-| Bile pigments (bilirubin)     | Breakdown of haemoglobin                       | Liver (via bile, excreted in faeces) | Stored in gall bladder, released into intestine |
-| Uric acid                     | Breakdown of nucleic acids                     | Kidneys                              | Excreted in urine                               |
+| $\mathrm{CO}_2$ | Cellular respiration | Lungs | Exhaled during breathing |
+| Urea | Deamination of excess amino acids in the liver | Kidneys | Filtered from blood, excreted in urine |
+| Water | Various metabolic reactions | Kidneys, skin, lungs | Urine, sweat, exhaled breath |
+| Mineral salts (Na$^+$K$^+$) | Various | Kidneys, skin | Urine, sweat |
+| Bile pigments (bilirubin) | Breakdown of haemoglobin | Liver (via bile, excreted in faeces) | Stored in gall bladder, released into intestine |
+| Uric acid | Breakdown of nucleic acids | Kidneys | Excreted in urine |
 
 ### The Liver in Excretion
 
 The liver plays a central role in processing and detoxifying substances:
 
 1. **Deamination:** Excess amino acids cannot be stored. The liver removes the amino group
-   ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$, highly toxic),
-   which is then converted to urea (less toxic) via the ornithine cycle in the liver:
+ ($\mathrm{NH}_2$) from amino acids, converting it to ammonia ($\mathrm{NH}_3$Highly toxic),
+ which is then converted to urea (less toxic) via the ornithine cycle in the liver:
 
 $$\mathrm{Amino acid} \to \mathrm{Keto acid} + \mathrm{NH}_3$$
 
 $$2\mathrm{NH}_3 + \mathrm{CO}_2 \to \mathrm{CO(NH}_2)_2 + \mathrm{H}_2\mathrm{O}$$
 
 2. **Detoxification:** The liver converts harmful substances into less harmful ones:
-   - Alcohol (ethanol) is oxidised to ethanal (by alcohol dehydrogenase), then to ethanoic acid,
-     then to acetyl CoA
-   - Hydrogen peroxide (toxic by-product of metabolism) is broken down by catalase into water and
-     oxygen
+ - Alcohol (ethanol) is oxidised to ethanal (by alcohol dehydrogenase), then to ethanoic acid,
+ then to acetyl CoA
+ - Hydrogen peroxide (toxic by-product of metabolism) is broken down by catalase into water and
+ oxygen
 
 ### The Skin as an Excretory Organ
 
 The skin excretes water, urea, salts, and lactic acid through sweat. Sweat is produced by sweat
-glands in the dermis and reaches the skin surface through pores. However, the skin is a minor
-excretory organ compared to the kidneys -- its primary function is thermoregulation.
+Glands in the dermis and reaches the skin surface through pores. However, the skin is a minor
+Excretory organ compared to the kidneys -- its primary function is thermoregulation.
 
 **Worked Example**
 
@@ -830,47 +830,47 @@ A person with liver failure has a reduced ability to carry out deamination and d
 ## Common Pitfalls
 
 1. **Confusing excretion and egestion:** This is one of the most common DSE errors. Egestion
-   (removal of faeces) is not excretion. Faeces have never been absorbed into the body's metabolic
-   processes. $\mathrm{CO}_2$ from respiration and urea from deamination are excretory products.
+ (removal of faeces) is not excretion. Faeces have never been absorbed into the body's metabolic
+ processes. $\mathrm{CO}_2$ from respiration and urea from deamination are excretory products.
 
 2. **Writing that the umbilical artery carries oxygenated blood:** The umbilical ARTERY carries
-   deoxygenated blood from the foetus to the placenta. The umbilical VEIN carries oxygenated blood
-   from the placenta to the foetus. The naming is based on direction of blood flow relative to the
-   heart.
+ deoxygenated blood from the foetus to the placenta. The umbilical VEIN carries oxygenated blood
+ from the placenta to the foetus. The naming is based on direction of blood flow relative to the
+ heart.
 
 3. **Confusing insulin and glucagon:** Insulin LOWERS blood glucose (by promoting uptake and
-   storage). Glucagon RAISES blood glucose (by promoting glycogenolysis and gluconeogenesis).
-   Insulin is from beta cells; glucagon is from alpha cells.
+ storage). Glucagon RAISES blood glucose (by promoting glycogenolysis and gluconeogenesis).
+ Insulin is from beta cells; glucagon is from alpha cells.
 
 4. **Stating that muscle releases glucose from glycogen:** Muscle cells can break down glycogen to
-   glucose-6-phosphate for their own use, but they CANNOT release free glucose into the blood. Only
-   the liver can do this because only the liver has glucose-6-phosphatase.
+ glucose-6-phosphate for their own use, but they CANNOT release free glucose into the blood. Only
+ the liver can do this because only the liver has glucose-6-phosphatase.
 
 5. **Confusing the roles of the descending and ascending limbs of the Loop of Henle:** The
-   descending limb is permeable to water (water moves out) but not to salts. The ascending limb is
-   impermeable to water but actively transports Na$^+$ and Cl$^-$ out. This asymmetry is essential
-   for creating the medullary concentration gradient.
+ descending limb is permeable to water (water moves out) but not to salts. The ascending limb is
+ impermeable to water but actively transports Na$^+$ and Cl$^-$ out. This asymmetry is essential
+ for creating the medullary concentration gradient.
 
 6. **Writing that ADH is produced by the posterior pituitary:** ADH is PRODUCED by neurosecretory
-   cells in the HYPOTHALAMUS. It is STORED and RELEASED by the posterior pituitary. This distinction
-   matters in exam answers.
+ cells in the HYPOTHALAMUS. It is STORED and RELEASED by the posterior pituitary. This distinction
+ matters in exam answers.
 
 7. **Forgetting that oestrogen has both negative and positive feedback effects:** At low
-   concentrations, oestrogen inhibits FSH and LH (negative feedback). At high sustained
-   concentrations, oestrogen stimulates LH release (positive feedback, causing the LH surge). The
-   DSE frequently requires both to be mentioned.
+ concentrations, oestrogen inhibits FSH and LH (negative feedback). At high sustained
+ concentrations, oestrogen stimulates LH release (positive feedback, causing the LH surge). The
+ DSE frequently requires both to be mentioned.
 
 8. **Writing that the placenta allows maternal and foetal blood to mix:** Maternal and foetal blood
-   are separated by the placental barrier (chorionic villi). They do NOT mix. Exchange occurs by
-   diffusion across the barrier.
+ are separated by the placental barrier (chorionic villi). They do NOT mix. Exchange occurs by
+ diffusion across the barrier.
 
 9. **Confusing oogenesis timing:** Oogenesis begins during foetal development (primary oocytes
-   arrest at prophase I). It is only completed at fertilisation (meiosis II). Spermatogenesis begins
-   at puberty and is continuous.
+ arrest at prophase I). It is only completed at fertilisation (meiosis II). Spermatogenesis begins
+ at puberty and is continuous.
 
 10. **Writing that the kidney filters urea completely:** Only approximately 50% of urea is
-    reabsorbed in the PCT. The rest remains in the filtrate and is excreted in urine. If the kidney
-    were to reabsorb all urea, it would accumulate to toxic levels.
+ reabsorbed in the PCT. The rest remains in the filtrate and is excreted in urine. If the kidney
+ were to reabsorb all urea, it would accumulate to toxic levels.
 
 ---
 
@@ -902,7 +902,7 @@ A female baby is born with approximately 1--2 million primary oocytes, but only 
 <details>
 <summary>Solution</summary>
 
-- **Why most never complete meiosis:** All primary oocytes are formed during foetal development and arrest at prophase I. Each month from puberty to menopause (approximately 30--40 years), typically only one primary oocyte resumes meiosis and is ovulated. The vast majority of primary oocytes undergo atresia (degeneration) and never resume meiosis. Only approximately 400 out of 1--2 million are ovulated over a lifetime. This is an important contrast with spermatogenesis, which is continuous and produces millions of sperm daily from puberty onwards.
+- **Why most never complete meiosis:** All primary oocytes are formed during foetal development and arrest at prophase I. Each month from puberty to menopause (approximately 30--40 years), only one primary oocyte resumes meiosis and is ovulated. The vast majority of primary oocytes undergo atresia (degeneration) and never resume meiosis. Only approximately 400 out of 1--2 million are ovulated over a lifetime. This is an important contrast with spermatogenesis, which is continuous and produces millions of sperm daily from puberty onwards.
 
 - **When meiosis is completed:** Meiosis I is completed just before ovulation, producing a secondary oocyte and the first polar body. The secondary oocyte begins meiosis II but arrests at metaphase II. Meiosis II is only completed if fertilisation occurs -- the entry of a sperm triggers completion of meiosis II, producing the ovum and the second polar body. If no sperm fertilises the secondary oocyte within approximately 24 hours, it degenerates without completing meiosis.
 
@@ -922,23 +922,23 @@ On day 20 of a normal 28-day menstrual cycle, a blood test shows high progestero
 - **Source on day 20 (luteal phase):** Progesterone is produced by the corpus luteum (the structure formed from the ruptured follicle after ovulation on day 14). Moderate oestrogen is also produced by the corpus luteum.
 
 - **Roles on day 20:**
-  - Progesterone maintains the thickened, vascularised endometrium (secretory phase), keeping it ready for potential implantation.
-  - Progesterone inhibits FSH and LH secretion via negative feedback, preventing new follicle development and further ovulation.
-  - Oestrogen helps maintain the endometrium alongside progesterone.
+ - Progesterone maintains the thickened, vascularised endometrium (secretory phase), keeping it ready for potential implantation.
+ - Progesterone inhibits FSH and LH secretion via negative feedback, preventing new follicle development and further ovulation.
+ - Oestrogen helps maintain the endometrium alongside progesterone.
 
 - **If fertilisation does not occur:**
-  - The corpus luteum degenerates around day 25--28 (it has a lifespan of approximately 12--14 days without hCG). This degeneration is called luteolysis.
-  - Progesterone and oestrogen levels drop sharply as the corpus luteum degenerates.
-  - The drop in progesterone causes the thickened endometrium to break down and be shed (menstruation, days 1--5 of the next cycle).
-  - The drop in progesterone and oestrogen removes the negative feedback on FSH, so FSH levels begin to rise, initiating follicle development for the next cycle.
-  - The cycle begins again with menstruation marking day 1.
+ - The corpus luteum degenerates around day 25--28 (it has a lifespan of approximately 12--14 days without hCG). This degeneration is called luteolysis.
+ - Progesterone and oestrogen levels drop sharply as the corpus luteum degenerates.
+ - The drop in progesterone causes the thickened endometrium to break down and be shed (menstruation, days 1--5 of the next cycle).
+ - The drop in progesterone and oestrogen removes the negative feedback on FSH, so FSH levels begin to rise, initiating follicle development for the next cycle.
+ - The cycle begins again with menstruation marking day 1.
 
 - **If fertilisation does occur (for contrast):**
-  - The embryo implants in the endometrium around day 6--7.
-  - The implanted embryo (trophoblast cells) produces hCG (human chorionic gonadotropin).
-  - hCG maintains the corpus luteum, preventing its degeneration.
-  - The corpus luteum continues to secrete progesterone and oestrogen, maintaining the endometrium throughout pregnancy.
-  - This is the basis of pregnancy tests, which detect hCG in urine.
+ - The embryo implants in the endometrium around day 6--7.
+ - The implanted embryo (trophoblast cells) produces hCG (human chorionic gonadotropin).
+ - hCG maintains the corpus luteum, preventing its degeneration.
+ - The corpus luteum continues to secrete progesterone and oestrogen, maintaining the endometrium throughout pregnancy.
+ - This is the basis of pregnancy tests, which detect hCG in urine.
 
 **If you get this wrong, revise:** [Phases of the Menstrual Cycle](#phases-of-the-menstrual-cycle) and [Hormonal Interactions](#hormonal-interactions)
 
@@ -958,11 +958,11 @@ Describe the sequence of events from the moment a sperm reaches the zona pelluci
 3. **Membrane fusion:** The sperm membrane fuses with the oocyte membrane. The sperm nucleus and centriole begin to enter the oocyte cytoplasm.
 
 4. **Cortical reaction (critical step):** Contact between the sperm and oocyte membranes triggers a wave of calcium release ($\mathrm{Ca}^{2+}$) across the ovum. This calcium wave causes cortical granules (vesicles just beneath the membrane) to fuse with the oocyte membrane and release their contents into the space between the vitelline membrane and the zona pellucida. The enzymes from the cortical granules:
-   - Cross-link glycoproteins in the zona pellucida, hardening it (the zona reaction).
-   - Remove the ZP3 receptors, preventing any additional sperm from binding.
-   - These changes make the zona pellucida impermeable to other sperm.
+ - Cross-link glycoproteins in the zona pellucida, hardening it (the zona reaction).
+ - Remove the ZP3 receptors, preventing any additional sperm from binding.
+ - These changes make the zona pellucida impermeable to other sperm.
 
-5. **Why the cortical reaction is essential:** It prevents **polyspermy** -- fertilisation by more than one sperm. If polyspermy occurred, the zygote would have more than 46 chromosomes (triploidy or polyploidy), which is typically lethal. The cortical reaction is a fast block (chemical) to polyspermy, complementing the initial electrical block caused by depolarisation of the oocyte membrane upon sperm entry.
+5. **Why the cortical reaction is essential:** It prevents **polyspermy** -- fertilisation by more than one sperm. If polyspermy occurred, the zygote would have more than 46 chromosomes (triploidy or polyploidy), which is lethal. The cortical reaction is a fast block (chemical) to polyspermy, complementing the initial electrical block caused by depolarisation of the oocyte membrane upon sperm entry.
 
 6. **Completion of meiosis II:** The calcium wave also triggers the secondary oocyte to complete meiosis II, producing the ovum (with the maternal haploid nucleus) and the second polar body.
 
@@ -982,14 +982,14 @@ Explain why maternal and foetal blood do not mix in the placenta. Describe the s
 - **Structure of the placental barrier:** Maternal blood and foetal blood are separated by the placental barrier, which consists of: (1) trophoblast epithelium (outer layer of chorionic villi), (2) connective tissue, and (3) foetal capillary endothelium. Exchange occurs by diffusion across this thin barrier. Substances move from maternal blood in the intervillous spaces, through the barrier, into the foetal capillaries inside the chorionic villi (and vice versa).
 
 - **Why they do not mix:**
-  - The foetal and maternal circulations are completely separate closed systems.
-  - The chorionic villi are bathed in maternal blood, but the foetal blood flows inside capillaries within the villi, separated by the placental barrier.
+ - The foetal and maternal circulations are completely separate closed systems.
+ - The chorionic villi are bathed in maternal blood, but the foetal blood flows inside capillaries within the villi, separated by the placental barrier.
 
 - **Why separation is important:**
-  - **Blood group incompatibility:** If maternal and foetal blood mixed, the mother's immune system could attack foetal red blood cells (e.g., in Rh incompatibility, where an Rh-negative mother carries an Rh-positive foetus). The barrier limits this interaction, although small amounts of foetal blood cells can occasionally cross, potentially sensitising the mother's immune system.
-  - **Pressure differences:** Maternal blood pressure is much higher than foetal blood pressure. Mixing could damage delicate foetal blood vessels and cause haemorrhage.
-  - **Selective exchange:** The barrier allows selective passage of small molecules (nutrients, gases, waste, antibodies) while preventing passage of large molecules, blood cells, and many pathogens. This protects the foetus from many infections while still allowing beneficial substances to pass.
-  - **Maintaining concentration gradients:** Because the blood supplies do not mix, concentration gradients for diffusion are maintained. If blood mixed, the concentrations would equalise and efficient exchange would be impossible.
+ - **Blood group incompatibility:** If maternal and foetal blood mixed, the mother's immune system could attack foetal red blood cells (e.g., in Rh incompatibility, where an Rh-negative mother carries an Rh-positive foetus). The barrier limits this interaction, although small amounts of foetal blood cells can occasionally cross, potentially sensitising the mother's immune system.
+ - **Pressure differences:** Maternal blood pressure is much higher than foetal blood pressure. Mixing could damage delicate foetal blood vessels and cause haemorrhage.
+ - **Selective exchange:** The barrier allows selective passage of small molecules (nutrients, gases, waste, antibodies) while preventing passage of large molecules, blood cells, and many pathogens. This protects the foetus from many infections while still allowing beneficial substances to pass.
+ - **Maintaining concentration gradients:** Because the blood supplies do not mix, concentration gradients for diffusion are maintained. If blood mixed, the concentrations would equalise and efficient exchange would be impossible.
 
 **If you get this wrong, revise:** [Placenta and Umbilical Cord](#placenta-and-umbilical-cord)
 
@@ -1027,14 +1027,14 @@ Compare and contrast the roles of insulin and glucagon in regulating blood gluco
 <details>
 <summary>Solution</summary>
 
-| Feature             | Insulin                                                     | Glucagon                                                         |
+| Feature | Insulin | Glucagon |
 | ------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------- |
-| Producing cell      | Beta cells of islets of Langerhans (pancreas)               | Alpha cells of islets of Langerhans (pancreas)                  |
-| Stimulus            | Blood glucose rises above set point (e.g., after a meal)    | Blood glucose falls below set point (e.g., between meals)       |
-| Pathways stimulated | Glycogenesis (glucose to glycogen); glucose respiration      | Glycogenolysis (glycogen to glucose); gluconeogenesis           |
-| Pathways inhibited  | Glycogenolysis; gluconeogenesis                             | Glycogenesis                                                    |
-| Net effect          | Lowers blood glucose                                        | Raises blood glucose                                             |
-| Target organs       | Liver, muscle cells                                         | Liver only                                                      |
+| Producing cell | Beta cells of islets of Langerhans (pancreas) | Alpha cells of islets of Langerhans (pancreas) |
+| Stimulus | Blood glucose rises above set point (e.g., after a meal) | Blood glucose falls below set point (e.g., between meals) |
+| Pathways stimulated | Glycogenesis (glucose to glycogen); glucose respiration | Glycogenolysis (glycogen to glucose); gluconeogenesis |
+| Pathways inhibited | Glycogenolysis; gluconeogenesis | Glycogenesis |
+| Net effect | Lowers blood glucose | Raises blood glucose |
+| Target organs | Liver, muscle cells | Liver only |
 
 **Similarities:** Both are produced by the islets of Langerhans in the pancreas. Both are involved in negative feedback loops to maintain blood glucose at approximately 90 mg/100 cm cubed. Both act on the liver.
 
@@ -1058,9 +1058,9 @@ A person with Type 1 diabetes forgets to take their insulin injection before eat
 1. **Carbohydrate digestion and absorption:** The meal is digested and glucose is absorbed from the small intestine into the blood. Blood glucose concentration rises significantly above the normal set point.
 
 2. **No insulin response:** In Type 1 diabetes, the beta cells of the islets of Langerhans have been destroyed (autoimmune destruction), so no insulin is secreted regardless of blood glucose levels. Without insulin:
-   - Cells cannot take up glucose efficiently (glucose uptake requires insulin-stimulated GLUT4 transporter translocation in muscle and fat cells).
-   - Glycogenesis does not occur (glucose is not converted to glycogen for storage).
-   - Cells continue to break down fat and protein for energy instead of using glucose.
+ - Cells cannot take up glucose efficiently (glucose uptake requires insulin-stimulated GLUT4 transporter translocation in muscle and fat cells).
+ - Glycogenesis does not occur (glucose is not converted to glycogen for storage).
+ - Cells continue to break down fat and protein for energy instead of using glucose.
 
 3. **Hyperglycaemia:** Blood glucose concentration continues to rise, potentially reaching dangerous levels (well above the renal threshold of 180 mg/100 cm cubed).
 
@@ -1117,18 +1117,18 @@ A student claims: "Defaecation is a form of excretion because waste material is 
 The claim is **incorrect**. Excretion and egestion are fundamentally different processes:
 
 - **Excretion** is the removal of **metabolic waste products** -- substances that have been produced by metabolic reactions within the body cells. These substances have been part of the body's internal metabolism. Examples include:
-  - $\mathrm{CO}_2$ (produced by cellular respiration, excreted by lungs)
-  - Urea (produced by deamination of excess amino acids in the liver, excreted by kidneys)
-  - Bile pigments/bilirubin (produced by breakdown of haemoglobin, excreted via the liver into the intestine)
-  - Water and mineral salts (by-products of various metabolic reactions)
+ - $\mathrm{CO}_2$ (produced by cellular respiration, excreted by lungs)
+ - Urea (produced by deamination of excess amino acids in the liver, excreted by kidneys)
+ - Bile pigments/bilirubin (produced by breakdown of haemoglobin, excreted via the liver into the intestine)
+ - Water and mineral salts (by-products of various metabolic reactions)
 
 - **Egestion (defaecation)** is the removal of **undigested food material (faeces)** from the body through the anus. Faeces consist of material that was never absorbed into the body -- it passed through the digestive system as a tube (the gut lumen is technically outside the body). Since faeces were never part of the body's metabolic processes, their removal is not excretion.
 
 - **Why this distinction matters:** In exam questions, confusing egestion with excretion would be marked wrong. For example, stating that the large intestine is an excretory organ because it eliminates faeces would be incorrect. The large intestine absorbs water and salts but does not excrete metabolic waste -- the substances in faeces (e.g., fibre, dead bacteria, undigested food) were never metabolised by the body.
 
 - **Common exam traps:**
-  - The anus is NOT an excretory organ -- it is involved in egestion.
-  - The lungs ARE excretory organs because they remove $\mathrm{CO}_2$ (a metabolic waste product of respiration).
+ - The anus is NOT an excretory organ -- it is involved in egestion.
+ - The lungs ARE excretory organs because they remove $\mathrm{CO}_2$ (a metabolic waste product of respiration).
 - The skin IS an excretory organ (minor) because it removes water, urea, salts, and lactic acid (metabolic waste products) in sweat. However, the skin's PRIMARY function is thermoregulation, not excretion.
 
 </details>
@@ -1145,27 +1145,27 @@ The placenta is a temporary organ that forms during pregnancy, facilitating exch
 
 **Structure:**
 
-| Component            | Description                                                                                                                         |
+| Component | Description |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Chorionic villi      | Finger-like projections of the chorion (outer layer of the blastocyst) that project into the intervillous spaces filled with maternal blood |
-| Intervillous spaces  | Spaces filled with maternal blood that bathe the chorionic villi                                                              |
-| Placental barrier    | Thin membrane (trophoblast epithelium, connective tissue, foetal capillary endothelium) across which exchange occurs             |
-| Umbilical artery     | Carries deoxygenated blood and waste from the foetus to the placenta (two arteries)                                           |
-| Umbilical vein       | Carries oxygenated blood and nutrients from the placenta to the foetus (one vein)                                             |
+| Chorionic villi | Finger-like projections of the chorion (outer layer of the blastocyst) that project into the intervillous spaces filled with maternal blood |
+| Intervillous spaces | Spaces filled with maternal blood that bathe the chorionic villi |
+| Placental barrier | Thin membrane (trophoblast epithelium, connective tissue, foetal capillary endothelium) across which exchange occurs |
+| Umbilical artery | Carries deoxygenated blood and waste from the foetus to the placenta (two arteries) |
+| Umbilical vein | Carries oxygenated blood and nutrients from the placenta to the foetus (one vein) |
 
 **Substances exchanged across the placenta:**
 
-| Substance               | Direction                  | Method of Exchange           |
+| Substance | Direction | Method of Exchange |
 | ----------------------- | -------------------------- | ---------------------------- |
-| Oxygen ($\mathrm{O}_2$) | Maternal to foetal          | Simple diffusion              |
-| Carbon dioxide ($\mathrm{CO}_2$) | Foetal to maternal      | Simple diffusion              |
-| Glucose                 | Maternal to foetal          | Facilitated diffusion         |
-| Amino acids             | Maternal to foetal          | Active transport              |
-| Antibodies (IgG)        | Maternal to foetal          | Active transport (provides passive immunity) |
-| Urea, waste            | Foetal to maternal          | Simple diffusion              |
-| Alcohol, drugs, viruses | Maternal to foetal          | Simple diffusion (can harm the foetus) |
-| Maternal antibodies (IgG) | Maternal to foetal         | Active transport (provides passive immunity for the first few months) |
-| Red blood cells         | NO exchange                 | Too large to cross the barrier |
+| Oxygen ($\mathrm{O}_2$) | Maternal to foetal | Simple diffusion |
+| Carbon dioxide ($\mathrm{CO}_2$) | Foetal to maternal | Simple diffusion |
+| Glucose | Maternal to foetal | Facilitated diffusion |
+| Amino acids | Maternal to foetal | Active transport |
+| Antibodies (IgG) | Maternal to foetal | Active transport (provides passive immunity) |
+| Urea, waste | Foetal to maternal | Simple diffusion |
+| Alcohol, drugs, viruses | Maternal to foetal | Simple diffusion (can harm the foetus) |
+| Maternal antibodies (IgG) | Maternal to foetal | Active transport (provides passive immunity for the first few months) |
+| Red blood cells | NO exchange | Too large to cross the barrier |
 
 **Functions of the placenta:**
 
@@ -1180,11 +1180,11 @@ The placenta is a temporary organ that forms during pregnancy, facilitating exch
 
 The foetal circulatory system has adaptations that differ from the adult system because the foetus does not use its lungs or digestive system.
 
-| Adaptation                | Description                                                                                                               |
+| Adaptation | Description |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Ductus venosus            | Bypasses the liver; shunts blood from the umbilical vein directly to the inferior vena cava                          |
-| Foramen ovale            | Opening between the right and left atria; shunts blood from the right atrium to the left atrium, bypassing the lungs   |
-| Ductus arteriosus         | Connects the pulmonary artery to the aorta; shunts blood away from the lungs                                         |
+| Ductus venosus | Bypasses the liver; shunts blood from the umbilical vein directly to the inferior vena cava |
+| Foramen ovale | Opening between the right and left atria; shunts blood from the right atrium to the left atrium, bypassing the lungs |
+| Ductus arteriosus | Connects the pulmonary artery to the aorta; shunts blood away from the lungs |
 | High haemoglobin concentration | Foetal haemoglobin has a higher affinity for $\mathrm{O}_2$ than adult haemoglobin, facilitating oxygen transfer from the mother |
 
 After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as the baby begins to breathe and the placental circulation ceases.
@@ -1195,20 +1195,20 @@ After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as t
 
 ### Comparison of Contraceptive Methods
 
-| Method                         | Type             | Mechanism                                                                                              | Effectiveness (typical use) |
+| Method | Type | Mechanism | Effectiveness (typical use) |
 | ------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| Male condom                    | Barrier          | Physical barrier preventing sperm reaching the egg                                                     | ~85%                         |
-| Female condom                  | Barrier          | Physical barrier worn inside the vagina                                                                | ~79%                         |
-| Combined oral contraceptive pill | Hormonal       | Contains oestrogen and progesterone; inhibits ovulation; thickens cervical mucus; thins endometrium | ~91%                         |
-| Progestogen-only pill (mini-pill) | Hormonal    | Thickens cervical mucus; may inhibit ovulation in some women                                             | ~91%                         |
-| Intrauterine device (IUD)      | Barrier/Hormonal | Copper IUD: toxic to sperm, prevents implantation. Hormonal IUD: thickens mucus, thins endometrium              | >99%                         |
-| Injection (Depo-Provera)       | Hormonal         | Slow-release progesterone; inhibits ovulation; thickens cervical mucus                                       | ~94%                         |
-| Implant (e.g., Nexplanon)      | Hormonal         | Subdermal rod releasing progesterone over 3 years                                                      | >99%                         |
-| Male sterilisation (vasectomy) | Surgical       | Vas deferens cut and tied; sperm cannot reach semen                                                      | >99.9%                       |
-| Female sterilisation (tubal ligation) | Surgical | Oviducts cut and tied; egg cannot reach uterus; sperm cannot reach egg                                   | >99.5%                       |
-| Rhythm method (calendar)       | Behavioural      | Avoiding intercourse during the fertile window (around ovulation)                                            | ~76%                         |
-| Withdrawal (coitus interruptus) | Behavioural  | Penis removed before ejaculation                                                                       | ~78%                         |
-| Emergency contraception        | Hormonal         | High-dose progesterone (or ulipristal acetate); taken within 72 hours of unprotected intercourse; prevents/delays ovulation | ~85%                         |
+| Male condom | Barrier | Physical barrier preventing sperm reaching the egg | ~85% |
+| Female condom | Barrier | Physical barrier worn inside the vagina | ~79% |
+| Combined oral contraceptive pill | Hormonal | Contains oestrogen and progesterone; inhibits ovulation; thickens cervical mucus; thins endometrium | ~91% |
+| Progestogen-only pill (mini-pill) | Hormonal | Thickens cervical mucus; may inhibit ovulation in some women | ~91% |
+| Intrauterine device (IUD) | Barrier/Hormonal | Copper IUD: toxic to sperm, prevents implantation. Hormonal IUD: thickens mucus, thins endometrium | >99% |
+| Injection (Depo-Provera) | Hormonal | Slow-release progesterone; inhibits ovulation; thickens cervical mucus | ~94% |
+| Implant (e.g., Nexplanon) | Hormonal | Subdermal rod releasing progesterone over 3 years | >99% |
+| Male sterilisation (vasectomy) | Surgical | Vas deferens cut and tied; sperm cannot reach semen | >99.9% |
+| Female sterilisation (tubal ligation) | Surgical | Oviducts cut and tied; egg cannot reach uterus; sperm cannot reach egg | >99.5% |
+| Rhythm method (calendar) | Behavioural | Avoiding intercourse during the fertile window (around ovulation) | ~76% |
+| Withdrawal (coitus interruptus) | Behavioural | Penis removed before ejaculation | ~78% |
+| Emergency contraception | Hormonal | High-dose progesterone (or ulipristal acetate); taken within 72 hours of unprotected intercourse; prevents/delays ovulation | ~85% |
 
 ---
 
@@ -1216,15 +1216,15 @@ After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as t
 
 ### Causes of Infertility
 
-| Cause                          | Male/Female | Description                                                                                                                   |
+| Cause | Male/Female | Description |
 | ------------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Low sperm count                | Male        | Fewer sperm in the ejaculate reduces the probability of fertilisation                                                          |
-| Poor sperm motility            | Male        | Sperm cannot swim effectively to reach the egg                                                                            |
-| Blocked oviducts (e.g., PID)   | Female      | Scarring from pelvic inflammatory disease (often caused by chlamydia or gonorrhoea) prevents the egg and sperm from meeting |
-| Failure to ovulate             | Female      | Hormonal imbalances (e.g., PCOS, low FSH/LH) prevent egg release                                                          |
-| Endometriosis                  | Female      | Endometrial tissue grows outside the uterus; can block oviducts and impair ovulation                                         |
-| Age-related decline            | Both        | Egg quality and quantity decline with age; sperm quality declines with age                                                 |
-| Uterine abnormalities          | Female      | Fibroids, polyps, or structural abnormalities prevent implantation                                                       |
+| Low sperm count | Male | Fewer sperm in the ejaculate reduces the probability of fertilisation |
+| Poor sperm motility | Male | Sperm cannot swim effectively to reach the egg |
+| Blocked oviducts (e.g., PID) | Female | Scarring from pelvic inflammatory disease (often caused by chlamydia or gonorrhoea) prevents the egg and sperm from meeting |
+| Failure to ovulate | Female | Hormonal imbalances (e.g., PCOS, low FSH/LH) prevent egg release |
+| Endometriosis | Female | Endometrial tissue grows outside the uterus; can block oviducts and impair ovulation |
+| Age-related decline | Both | Egg quality and quantity decline with age; sperm quality declines with age |
+| Uterine abnormalities | Female | Fibroids, polyps, or structural abnormalities prevent implantation |
 
 ### Assisted Reproductive Technology (ART)
 
@@ -1254,13 +1254,13 @@ After birth, the ductus venosus, foramen ovale, and ductus arteriosus close as t
 
 **Ethical considerations of ART:**
 
-| Issue                  | Arguments For                                     | Arguments Against                                   |
+| Issue | Arguments For | Arguments Against |
 | ---------------------- | ------------------------------------------------- | --------------------------------------------------- |
 | IVF for infertile couples | Helps couples have children who otherwise could not | Expensive; not universally accessible; multiple births risk |
-| Designer babies         | Could eliminate genetic diseases (PGD)            | Could lead to selection for non-medical traits; eugenics concerns |
-| Surrogacy              | Allows couples who cannot carry a pregnancy       | Exploitation concerns; legal complexity; emotional impact |
-| Embryo research         | Could lead to treatments for diseases             | Destruction of embryos is ethically contentious for some |
-| Storage of embryos     | Allows future use; reduces need for repeated IVF  | What happens to stored embryos if couple separates or dies? |
+| Designer babies | Could eliminate genetic diseases (PGD) | Could lead to selection for non-medical traits; eugenics concerns |
+| Surrogacy | Allows couples who cannot carry a pregnancy | Exploitation concerns; legal complexity; emotional impact |
+| Embryo research | Could lead to treatments for diseases | Destruction of embryos is ethically contentious for some |
+| Storage of embryos | Allows future use; reduces need for repeated IVF | What happens to stored embryos if couple separates or dies? |
 
 ### Preimplantation Genetic Diagnosis (PGD)
 
@@ -1290,36 +1290,36 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 The menstrual cycle is controlled by four main hormones, involving a complex interplay of positive and negative feedback:
 
-| Hormone                | Source                     | Function                                                                                                                 |
+| Hormone | Source | Function |
 | ---------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | FSH (Follicle-Stimulating Hormone) | Anterior pituitary | Stimulates follicle development in the ovary; stimulates oestrogen production by the follicle cells (granulosa cells) |
-| LH (Luteinising Hormone) | Anterior pituitary         | Triggers ovulation (release of the egg from the follicle); stimulates the corpus luteum to develop and produce progesterone |
-| Oestrogen                | Developing follicle (granulosa cells) | Stimulates proliferation of the endometrium (uterine lining); inhibits FSH production (negative feedback at low levels); stimulates LH surge (positive feedback at high levels, just before ovulation) |
-| Progesterone             | Corpus luteum              | Maintains the thick, glandular endometrium; inhibits FSH and LH production (negative feedback); suppresses uterine contractions |
+| LH (Luteinising Hormone) | Anterior pituitary | Triggers ovulation (release of the egg from the follicle); stimulates the corpus luteum to develop and produce progesterone |
+| Oestrogen | Developing follicle (granulosa cells) | Stimulates proliferation of the endometrium (uterine lining); inhibits FSH production (negative feedback at low levels); stimulates LH surge (positive feedback at high levels, just before ovulation) |
+| Progesterone | Corpus luteum | Maintains the thick, glandular endometrium; inhibits FSH and LH production (negative feedback); suppresses uterine contractions |
 
 ### Phases of the Menstrual Cycle
 
-| Phase                  | Days                  | Ovarian Events                                                                                                            | Uterine Events                           | Hormone Levels                    |
+| Phase | Days | Ovarian Events | Uterine Events | Hormone Levels |
 | ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------- |
-| **Menstruation**         | Days 1-5              | The corpus luteum from the previous cycle degenerates (if fertilisation did not occur); progesterone and oestrogen levels drop | The thickened endometrium breaks down and is shed along with blood through the vagina | Low oestrogen, low progesterone   |
-| **Follicular phase**     | Days 1-13             | Several follicles begin to develop; one becomes dominant and continues to mature; the egg within the dominant follicle completes meiosis I | The endometrium begins to thicken and proliferate (stimulated by rising oestrogen) | Rising oestrogen (from follicle); FSH initially rises then falls (inhibited by oestrogen) |
-| **Ovulation**            | Day 14 (approximately) | The mature follicle ruptures, releasing the secondary oocyte (egg) into the fallopian tube                              | Endometrium continues to thicken         | Peak in oestrogen triggers LH surge (positive feedback); LH peak triggers ovulation |
-| **Luteal phase**         | Days 15-28            | The ruptured follicle develops into the corpus luteum, which secretes progesterone (and some oestrogen)                   | Endometrium reaches maximum thickness; becomes secretory (glands produce glycogen-rich secretions to support a potential embryo) | Rising progesterone (from corpus luteum); progesterone inhibits FSH and LH (negative feedback) |
+| **Menstruation** | Days 1-5 | The corpus luteum from the previous cycle degenerates (if fertilisation did not occur); progesterone and oestrogen levels drop | The thickened endometrium breaks down and is shed along with blood through the vagina | Low oestrogen, low progesterone |
+| **Follicular phase** | Days 1-13 | Several follicles begin to develop; one becomes dominant and continues to mature; the egg within the dominant follicle completes meiosis I | The endometrium begins to thicken and proliferate (stimulated by rising oestrogen) | Rising oestrogen (from follicle); FSH initially rises then falls (inhibited by oestrogen) |
+| **Ovulation** | Day 14 (approximately) | The mature follicle ruptures, releasing the secondary oocyte (egg) into the fallopian tube | Endometrium continues to thicken | Peak in oestrogen triggers LH surge (positive feedback); LH peak triggers ovulation |
+| **Luteal phase** | Days 15-28 | The ruptured follicle develops into the corpus luteum, which secretes progesterone (and some oestrogen) | Endometrium reaches maximum thickness; becomes secretory (glands produce glycogen-rich secretions to support a potential embryo) | Rising progesterone (from corpus luteum); progesterone inhibits FSH and LH (negative feedback) |
 
 ### What Happens If Fertilisation Occurs vs Does Not Occur
 
-| Scenario                  | Events                                                                                                                    |
+| Scenario | Events |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Fertilisation occurs**    | The embryo implants in the endometrium (~day 6-7 after fertilisation); the developing placenta produces **hCG** (human chorionic gonadotrophin), which maintains the corpus luteum; the corpus luteum continues to produce progesterone and oestrogen, maintaining the endometrium; menstruation does NOT occur; hCG is detected by pregnancy tests |
+| **Fertilisation occurs** | The embryo implants in the endometrium (~day 6-7 after fertilisation); the developing placenta produces **hCG** (human chorionic gonadotrophin), which maintains the corpus luteum; the corpus luteum continues to produce progesterone and oestrogen, maintaining the endometrium; menstruation does NOT occur; hCG is detected by pregnancy tests |
 | **Fertilisation does NOT occur** | The corpus luteum degenerates after approximately 14 days (day 28); progesterone and oestrogen levels drop sharply; the endometrium breaks down; menstruation begins (day 1 of the next cycle); the drop in progesterone and oestrogen removes the negative feedback on the anterior pituitary; FSH begins to rise again, starting a new cycle |
 
 ### Feedback Mechanisms
 
-| Feedback Type            | Description                                                                                                               | Timing in Cycle                        |
+| Feedback Type | Description | Timing in Cycle |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | Negative feedback (oestrogen on FSH) | Rising oestrogen inhibits FSH secretion from the anterior pituitary; this prevents multiple follicles from developing simultaneously | Throughout follicular phase (low-medium oestrogen) |
-| Positive feedback (oestrogen on LH) | When oestrogen reaches a critical HIGH threshold (around day 12-13), it switches from negative to positive feedback; high oestrogen stimulates a surge in LH secretion from the anterior pituitary | Just before ovulation (day 12-13)      |
-| Negative feedback (progesterone on FSH and LH) | Progesterone inhibits both FSH and LH secretion; this prevents the development of a new follicle and another ovulation while a potential pregnancy is being established | Throughout luteal phase                |
+| Positive feedback (oestrogen on LH) | When oestrogen reaches a critical HIGH threshold (around day 12-13), it switches from negative to positive feedback; high oestrogen stimulates a surge in LH secretion from the anterior pituitary | Just before ovulation (day 12-13) |
+| Negative feedback (progesterone on FSH and LH) | Progesterone inhibits both FSH and LH secretion; this prevents the development of a new follicle and another ovulation while a potential pregnancy is being established | Throughout luteal phase |
 
 ---
 
@@ -1327,28 +1327,28 @@ The menstrual cycle is controlled by four main hormones, involving a complex int
 
 ### Infertility Investigation
 
-| Investigation             | Description                                                                                                               | What It Detects                         |
+| Investigation | Description | What It Detects |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Semen analysis            | Sample of semen is analysed for sperm count, motility (movement), morphology (shape), and volume                        | Male infertility factors                |
-| Hormone assays            | Blood tests measuring levels of FSH, LH, oestrogen, progesterone, testosterone, prolactin                              | Hormonal imbalances                     |
-| Ovulation tracking        | Monitoring basal body temperature (slight rise after ovulation due to progesterone); urine LH tests; ultrasound monitoring of follicles | Whether and when ovulation occurs       |
-| Hysterosalpingography     | X-ray imaging of the uterus and fallopian tubes after injection of a contrast dye                                       | Blocked fallopian tubes; uterine abnormalities |
-| Laparoscopy               | A small camera is inserted through a keyhole incision to examine the pelvic organs                                        | Endometriosis; pelvic adhesions; ovarian cysts |
-| Ovarian reserve testing   | Blood test for anti-Mullerian hormone (AMH); antral follicle count via ultrasound                                        | Number and quality of remaining eggs     |
+| Semen analysis | Sample of semen is analysed for sperm count, motility (movement), morphology (shape), and volume | Male infertility factors |
+| Hormone assays | Blood tests measuring levels of FSH, LH, oestrogen, progesterone, testosterone, prolactin | Hormonal imbalances |
+| Ovulation tracking | Monitoring basal body temperature (slight rise after ovulation due to progesterone); urine LH tests; ultrasound monitoring of follicles | Whether and when ovulation occurs |
+| Hysterosalpingography | X-ray imaging of the uterus and fallopian tubes after injection of a contrast dye | Blocked fallopian tubes; uterine abnormalities |
+| Laparoscopy | A small camera is inserted through a keyhole incision to examine the pelvic organs | Endometriosis; pelvic adhesions; ovarian cysts |
+| Ovarian reserve testing | Blood test for anti-Mullerian hormone (AMH); antral follicle count via ultrasound | Number and quality of remaining eggs |
 
 ### Assisted Reproductive Technology (ART)
 
 **IVF (In Vitro Fertilisation) detailed steps:**
 
-| Step                    | Description                                                                                                               |
+| Step | Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1. Ovarian stimulation    | The woman is given hormonal drugs (FSH injections) to stimulate the development of multiple follicles (instead of just one) |
-| 2. Egg retrieval          | Mature eggs are collected from the ovaries using a needle guided by ultrasound (transvaginal oocyte retrieval)            |
-| 3. Sperm collection       | A semen sample is collected from the male partner; sperm are prepared (washed and concentrated)                          |
-| 4. Fertilisation          | Eggs and sperm are mixed in a culture dish (conventional IVF) or a single sperm is injected directly into each egg (ICSI -- intracytoplasmic sperm injection); fertilisation occurs in the laboratory |
-| 5. Embryo culture         | Fertilised eggs (zygotes) are cultured for 3-5 days, developing into embryos; the best-quality embryos are selected       |
-| 6. Embryo transfer        | One or two embryos are transferred into the woman's uterus using a thin catheter                                          |
-| 7. Pregnancy test         | A blood test for hCG is performed approximately 2 weeks after embryo transfer to determine if implantation was successful |
+| 1. Ovarian stimulation | The woman is given hormonal drugs (FSH injections) to stimulate the development of multiple follicles (instead of just one) |
+| 2. Egg retrieval | Mature eggs are collected from the ovaries using a needle guided by ultrasound (transvaginal oocyte retrieval) |
+| 3. Sperm collection | A semen sample is collected from the male partner; sperm are prepared (washed and concentrated) |
+| 4. Fertilisation | Eggs and sperm are mixed in a culture dish (conventional IVF) or a single sperm is injected directly into each egg (ICSI -- intracytoplasmic sperm injection); fertilisation occurs in the laboratory |
+| 5. Embryo culture | Fertilised eggs (zygotes) are cultured for 3-5 days, developing into embryos; the best-quality embryos are selected |
+| 6. Embryo transfer | One or two embryos are transferred into the woman's uterus using a thin catheter |
+| 7. Pregnancy test | A blood test for hCG is performed approximately 2 weeks after embryo transfer to determine if implantation was successful |
 
 **Success rates:** IVF success depends on the woman's age (approximately 30-40% per cycle for women under 35; decreasing to less than 5% for women over 42).
 
@@ -1359,7 +1359,7 @@ The menstrual cycle is controlled by four main hormones, involving a complex int
 - **Oestrogen has BOTH negative and positive feedback effects on the anterior pituitary.** At LOW to MODERATE levels, oestrogen inhibits FSH (negative feedback). At HIGH levels (just before ovulation), oestrogen STIMULATES LH secretion (positive feedback). This dual role is frequently tested in DSE exams
 - **The corpus luteum is maintained by hCG during pregnancy, NOT by FSH or LH.** hCG is produced by the developing embryo/placenta and has a similar structure and function to LH
 - **Menstruation occurs because progesterone and oestrogen levels DROP, not because they rise.** The drop in hormone levels causes the endometrium to break down. If progesterone is maintained (by hCG from a pregnancy), the endometrium is maintained and menstruation does not occur
-- **The menstrual cycle is typically described as 28 days, but this is an average.** Normal cycles range from 21-35 days. The luteal phase is relatively constant (14 days); variation in cycle length is mainly due to variation in the follicular phase
+- **The menstrual cycle is described as 28 days, but this is an average.** Normal cycles range from 21-35 days. The luteal phase is relatively constant (14 days); variation in cycle length is mainly due to variation in the follicular phase
 
 ---
 
@@ -1367,47 +1367,47 @@ The menstrual cycle is controlled by four main hormones, involving a complex int
 
 ### Comparison of Nervous and Endocrine Systems
 
-| Feature                  | Nervous System                                                                                                            | Endocrine System                                                                                                         |
+| Feature | Nervous System | Endocrine System |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Signal type               | Electrical impulses (nerve impulses)                                                                                     | Chemical signals (hormones)                                                                                              |
-| Transmission speed        | Very fast (milliseconds)                                                                                                 | Slower (seconds to hours to days)                                                                                       |
-| Duration of effect        | Short-lived (impulses stop when stimulus is removed)                                                                     | Longer-lasting (hormones persist in the blood until broken down or excreted)                                            |
-| Target specificity        | Very specific (nerve impulses travel along specific neurons to specific target cells)                                    | Can be widespread (hormones are carried in the blood to all tissues) but only affect cells with the appropriate receptors |
-| Method of communication   | Neurons (synapses between cells)                                                                                         | Bloodstream (hormones secreted into blood, travel throughout the body)                                                  |
-| Response                 | Movement, secretion, sensation                                                                                           | Growth, metabolism, reproduction, homeostasis                                                                           |
-| Example                   | Reflex arc (withdrawal from hot object)                                                                                 | ADH regulating water balance; insulin and glucagon regulating blood glucose                                             |
+| Signal type | Electrical impulses (nerve impulses) | Chemical signals (hormones) |
+| Transmission speed | Very fast (milliseconds) | Slower (seconds to hours to days) |
+| Duration of effect | Short-lived (impulses stop when stimulus is removed) | Longer-lasting (hormones persist in the blood until broken down or excreted) |
+| Target specificity | Very specific (nerve impulses travel along specific neurons to specific target cells) | Can be widespread (hormones are carried in the blood to all tissues) but only affect cells with the appropriate receptors |
+| Method of communication | Neurons (synapses between cells) | Bloodstream (hormones secreted into blood, travel throughout the body) |
+| Response | Movement, secretion, sensation | Growth, metabolism, reproduction, homeostasis |
+| Example | Reflex arc (withdrawal from hot object) | ADH regulating water balance; insulin and glucagon regulating blood glucose |
 
 ### Major Endocrine Glands and Hormones
 
-| Gland                   | Hormone(s)                 | Function(s)                                                                                                               | Target                                  |
+| Gland | Hormone(s) | Function(s) | Target |
 | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Hypothalamus             | Releasing hormones (e.g., GnRH, TRH, CRH, GHRH); ADH (stored in posterior pituitary); oxytocin (stored in posterior pituitary) | Controls the pituitary gland; regulates homeostasis (water balance, temperature); controls circadian rhythms | Anterior pituitary; posterior pituitary |
-| Anterior pituitary       | FSH, LH, ACTH, TSH, GH, prolactin                                                                                      | Stimulates other endocrine glands; promotes growth; stimulates milk production                                        | Gonads, adrenal cortex, thyroid, whole body, mammary glands |
-| Posterior pituitary      | ADH (vasopressin), oxytocin                                                                                            | Water reabsorption in kidneys; uterine contractions during labour; milk ejection during breastfeeding                    | Kidneys; uterus; mammary glands          |
-| Thyroid                  | T3 (triiodothyronine), T4 (thyroxine), calcitonin                                                                       | Increases basal metabolic rate; stimulates growth and development; regulates calcium levels (calcitonin lowers blood calcium) | Most body cells; bones                   |
-| Parathyroid glands       | Parathyroid hormone (PTH)                                                                                              | Increases blood calcium concentration (stimulates osteoclasts to break down bone; increases calcium reabsorption in kidneys; activates vitamin D) | Bones; kidneys; intestine                |
-| Adrenal cortex           | Cortisol, aldosterone, androgens                                                                                        | Cortisol: stress response; increases blood glucose; suppresses immune system. Aldosterone: increases sodium reabsorption in kidneys (regulates blood pressure and blood volume) | Most body cells; kidneys                  |
-| Adrenal medulla          | Adrenaline (epinephrine), noradrenaline (norepinephrine)                                                                | Fight-or-flight response: increases heart rate, blood pressure, blood glucose; dilates airways; dilates pupils; diverts blood to muscles | Heart, blood vessels, liver, lungs, eyes |
-| Pancreas (islets)        | Insulin ($\beta$ cells), glucagon ($\alpha$ cells), somatostatin ($\delta$ cells)                                       | Insulin: lowers blood glucose. Glucagon: raises blood glucose. Somatostatin: inhibits insulin and glucagon secretion     | Liver, muscle, fat cells                 |
-| Ovaries                  | Oestrogen, progesterone, inhibin                                                                                        | Female secondary sexual characteristics; regulates menstrual cycle; maintains pregnancy                                 | Uterus, breasts, hypothalamus/pituitary  |
-| Testes                   | Testosterone, inhibin                                                                                                   | Male secondary sexual characteristics; spermatogenesis; muscle growth; bone density                                   | Most body cells; hypothalamus/pituitary  |
-| Pineal gland             | Melatonin                                                                                                                 | Regulates circadian rhythm (sleep-wake cycle); produced in response to darkness                                         | Brain (suprachiasmatic nucleus)          |
+| Hypothalamus | Releasing hormones (e.g., GnRH, TRH, CRH, GHRH); ADH (stored in posterior pituitary); oxytocin (stored in posterior pituitary) | Controls the pituitary gland; regulates homeostasis (water balance, temperature); controls circadian rhythms | Anterior pituitary; posterior pituitary |
+| Anterior pituitary | FSH, LH, ACTH, TSH, GH, prolactin | Stimulates other endocrine glands; promotes growth; stimulates milk production | Gonads, adrenal cortex, thyroid, whole body, mammary glands |
+| Posterior pituitary | ADH (vasopressin), oxytocin | Water reabsorption in kidneys; uterine contractions during labour; milk ejection during breastfeeding | Kidneys; uterus; mammary glands |
+| Thyroid | T3 (triiodothyronine), T4 (thyroxine), calcitonin | Increases basal metabolic rate; stimulates growth and development; regulates calcium levels (calcitonin lowers blood calcium) | Most body cells; bones |
+| Parathyroid glands | Parathyroid hormone (PTH) | Increases blood calcium concentration (stimulates osteoclasts to break down bone; increases calcium reabsorption in kidneys; activates vitamin D) | Bones; kidneys; intestine |
+| Adrenal cortex | Cortisol, aldosterone, androgens | Cortisol: stress response; increases blood glucose; suppresses immune system. Aldosterone: increases sodium reabsorption in kidneys (regulates blood pressure and blood volume) | Most body cells; kidneys |
+| Adrenal medulla | Adrenaline (epinephrine), noradrenaline (norepinephrine) | Fight-or-flight response: increases heart rate, blood pressure, blood glucose; dilates airways; dilates pupils; diverts blood to muscles | Heart, blood vessels, liver, lungs, eyes |
+| Pancreas (islets) | Insulin ($\beta$ cells), glucagon ($\alpha$ cells), somatostatin ($\delta$ cells) | Insulin: lowers blood glucose. Glucagon: raises blood glucose. Somatostatin: inhibits insulin and glucagon secretion | Liver, muscle, fat cells |
+| Ovaries | Oestrogen, progesterone, inhibin | Female secondary sexual characteristics; regulates menstrual cycle; maintains pregnancy | Uterus, breasts, hypothalamus/pituitary |
+| Testes | Testosterone, inhibin | Male secondary sexual characteristics; spermatogenesis; muscle growth; bone density | Most body cells; hypothalamus/pituitary |
+| Pineal gland | Melatonin | Regulates circadian rhythm (sleep-wake cycle); produced in response to darkness | Brain (suprachiasmatic nucleus) |
 
 ### Thyroid Disorders
 
-| Disorder                | Cause                                                                                                                     | Symptoms                                                                                                                 | Treatment                                |
+| Disorder | Cause | Symptoms | Treatment |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| Hyperthyroidism          | Overproduction of T3/T4 (e.g., Graves' disease -- autoimmune stimulation of thyroid; toxic nodular goitre)                | Weight loss; rapid heart rate (tachycardia); anxiety; tremor; sweating; heat intolerance; exophthalmos (bulging eyes in Graves' disease) | Anti-thyroid drugs (carbimazole); radioactive iodine treatment; surgical removal of thyroid |
-| Hypothyroidism           | Underproduction of T3/T4 (e.g., Hashimoto's thyroiditis -- autoimmune destruction of thyroid; iodine deficiency)          | Weight gain; fatigue; cold intolerance; dry skin; constipation; depression; goitre (enlarged thyroid)                   | Thyroxine replacement therapy (daily oral tablet); lifelong treatment |
-| Cretinism                | Congenital hypothyroidism (thyroid deficiency from birth)                                                                 | Stunted physical growth; intellectual disability if not treated promptly                                                 | Early detection by newborn screening; thyroxine treatment from birth |
+| Hyperthyroidism | Overproduction of T3/T4 (e.g., Graves' disease -- autoimmune stimulation of thyroid; toxic nodular goitre) | Weight loss; rapid heart rate (tachycardia); anxiety; tremor; sweating; heat intolerance; exophthalmos (bulging eyes in Graves' disease) | Anti-thyroid drugs (carbimazole); radioactive iodine treatment; surgical removal of thyroid |
+| Hypothyroidism | Underproduction of T3/T4 (e.g., Hashimoto's thyroiditis -- autoimmune destruction of thyroid; iodine deficiency) | Weight gain; fatigue; cold intolerance; dry skin; constipation; depression; goitre (enlarged thyroid) | Thyroxine replacement therapy (daily oral tablet); lifelong treatment |
+| Cretinism | Congenital hypothyroidism (thyroid deficiency from birth) | Stunted physical growth; intellectual disability if not treated promptly | Early detection by newborn screening; thyroxine treatment from birth |
 
 ### Adrenal Disorders
 
-| Disorder                | Cause                                                                                                                     | Symptoms                                                                                                                 | Treatment                                |
+| Disorder | Cause | Symptoms | Treatment |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| Cushing's syndrome        | Excess cortisol (e.g., prolonged corticosteroid use; ACTH-secreting pituitary tumour; adrenal tumour)                     | Weight gain (especially face, trunk); "moon face"; thin skin; easy bruising; high blood pressure; muscle weakness; mood changes | Treat underlying cause; reduce corticosteroid dose; surgery to remove tumour |
-| Addison's disease        | Insufficient cortisol and aldosterone (autoimmune destruction of adrenal cortex)                                          | Weight loss; fatigue; low blood pressure; darkening of skin (hyperpigmentation); salt craving; hypoglycaemia            | Lifelong corticosteroid and mineralocorticoid replacement therapy (hydrocortisone and fludrocortisone) |
-| Conn's syndrome          | Excess aldosterone (adrenal tumour)                                                                                      | High blood pressure; muscle weakness; frequent urination; low blood potassium (hypokalaemia)                             | Surgery to remove tumour; aldosterone antagonists (spironolactone) |
+| Cushing's syndrome | Excess cortisol (e.g., prolonged corticosteroid use; ACTH-secreting pituitary tumour; adrenal tumour) | Weight gain (especially face, trunk); "moon face"; thin skin; easy bruising; high blood pressure; muscle weakness; mood changes | Treat underlying cause; reduce corticosteroid dose; surgery to remove tumour |
+| Addison's disease | Insufficient cortisol and aldosterone (autoimmune destruction of adrenal cortex) | Weight loss; fatigue; low blood pressure; darkening of skin (hyperpigmentation); salt craving; hypoglycaemia | Lifelong corticosteroid and mineralocorticoid replacement therapy (hydrocortisone and fludrocortisone) |
+| Conn's syndrome | Excess aldosterone (adrenal tumour) | High blood pressure; muscle weakness; frequent urination; low blood potassium (hypokalaemia) | Surgery to remove tumour; aldosterone antagonists (spironolactone) |
 
 ### Feedback Mechanisms in the Endocrine System
 
@@ -1439,3 +1439,11 @@ The menstrual cycle is controlled by four main hormones, involving a complex int
 - **Aldosterone acts on the KIDNEYS to increase sodium reabsorption (not on all body cells).** Water follows sodium by osmosis, so aldosterone indirectly increases water reabsorption and blood volume/blood pressure
 - **Adrenaline is produced by the adrenal MEDULLA (not cortex); cortisol is produced by the adrenal CORTEX (not medulla).** The adrenal medulla is stimulated by the sympathetic nervous system (fight-or-flight); the adrenal cortex is stimulated by ACTH from the anterior pituitary**
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

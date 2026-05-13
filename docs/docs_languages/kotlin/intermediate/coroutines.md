@@ -11,12 +11,12 @@ categories:
 ## Core Concepts
 
 Coroutines are Kotlin's mechanism for asynchronous programming. They are lightweight -- a coroutine
-suspends instead of blocking a thread, allowing a small number of OS threads to handle many
-concurrent operations.
+Suspends instead of blocking a thread, allowing a small number of OS threads to handle many
+Concurrent operations.
 
 Key distinction: **coroutines are not threads**. A coroutine runs on a thread but can be suspended
-and resumed on a different thread. Thousands of coroutines can run concurrently on a handful of
-threads.
+And resumed on a different thread. Thousands of coroutines can run concurrently on a handful of
+Threads.
 
 ## Setup
 
@@ -33,7 +33,7 @@ dependencies {
 ## Suspend Functions
 
 A `suspend` function can suspend the execution of a coroutine without blocking the underlying
-thread. Only coroutines (or other suspend functions) can call suspend functions.
+Thread. Only coroutines (or other suspend functions) can call suspend functions.
 
 ```kotlin
 suspend fun fetchUser(id: Long): User {
@@ -43,7 +43,7 @@ suspend fun fetchUser(id: Long): User {
 ```
 
 `suspend` functions have no special mechanism -- the compiler inserts a state machine at compile
-time that saves and restores the local variables and execution position at each suspension point.
+Time that saves and restores the local variables and execution position at each suspension point.
 
 `delay()` is the coroutine equivalent of `Thread.sleep()` but does not block the thread.
 
@@ -69,7 +69,7 @@ fun main() = runBlocking {
 ### async
 
 Launches a coroutine that returns a `Deferred<T>` (a cancellable future). Use `await()` to get the
-result.
+Result.
 
 ```kotlin
 suspend fun fetchAllData(): Data {
@@ -87,13 +87,13 @@ suspend fun fetchAllData(): Data {
 
 `launch` vs `async`:
 
-- `launch`: returns `Job`, no result value. Use for side effects.
-- `async`: returns `Deferred<T>`, produces a result. Use for concurrent computations.
+- `launch`: returns `Job`No result value. Use for side effects.
+- `async`: returns `Deferred<T>`Produces a result. Use for concurrent computations.
 
 ### runBlocking
 
 Bridges blocking and non-blocking code. Blocks the current thread until all coroutines inside
-complete. Primarily used in `main()` and tests -- avoid in application code.
+Complete. Primarily used in `main()` and tests -- avoid in application code.
 
 ```kotlin
 fun main() = runBlocking {
@@ -120,11 +120,11 @@ suspend fun loadData(): String = withContext(Dispatchers.IO) {
 
 Dispatchers determine which thread pool executes the coroutine.
 
-| Dispatcher               | Purpose                                                        |
+| Dispatcher | Purpose |
 | ------------------------ | -------------------------------------------------------------- |
-| `Dispatchers.Default`    | CPU-intensive work (sorting, parsing, JSON)                    |
-| `Dispatchers.IO`         | Blocking IO (network, disk, database)                          |
-| `Dispatchers.Main`       | UI thread (Android, JavaFX)                                    |
+| `Dispatchers.Default` | CPU-intensive work (sorting, parsing, JSON) |
+| `Dispatchers.IO` | Blocking IO (network, disk, database) |
+| `Dispatchers.Main` | UI thread (Android, JavaFX) |
 | `Dispatchers.Unconfined` | Starts on caller thread, resumes on whatever thread resumes it |
 
 ```kotlin
@@ -144,8 +144,8 @@ withContext(Dispatchers.Main) {
 ## Structured Concurrency
 
 Coroutines follow structured concurrency: child coroutines are bound to a parent scope. When the
-parent scope is cancelled, all children are cancelled. When all children complete, the parent
-completes.
+Parent scope is cancelled, all children are cancelled. When all children complete, the parent
+Completes.
 
 ```kotlin
 suspend fun processBatch(items: List<Item>) = coroutineScope {
@@ -158,12 +158,12 @@ suspend fun processBatch(items: List<Item>) = coroutineScope {
 ```
 
 If any `processItem` call throws, `coroutineScope` cancels all other coroutines and propagates the
-exception. This prevents resource leaks from orphaned coroutines.
+Exception. This prevents resource leaks from orphaned coroutines.
 
 ### CoroutineScope
 
 `coroutineScope` creates a new scope that completes when all children complete. It does not block
-the current thread -- it suspends.
+The current thread -- it suspends.
 
 `supervisorScope` is a variant where the failure of one child does not cancel the others.
 
@@ -183,7 +183,7 @@ suspend fun fetchWithFallback() = supervisorScope {
 ## Cancellation
 
 Coroutines cooperate with cancellation by checking `isActive` or calling cancellable suspend
-functions.
+Functions.
 
 ```kotlin
 launch {
@@ -200,7 +200,7 @@ launch {
 ### CancellationException Propagation
 
 `CancellationException` is special -- it is used to cancel coroutines and should not be caught in
-general `catch` blocks.
+General `catch` blocks.
 
 ```kotlin
 launch {
@@ -217,7 +217,7 @@ launch {
 ## Flow
 
 `Flow` is a cold asynchronous stream. It is the coroutine equivalent of RxJava's `Observable` but
-built on coroutines.
+Built on coroutines.
 
 ```kotlin
 fun numbers(): Flow<Int> = flow {
@@ -237,7 +237,7 @@ suspend fun main() {
 ```
 
 Flow is cold -- nothing happens until `collect` is called. Each collector gets its own independent
-stream.
+Stream.
 
 ### Flow Operators
 
@@ -304,24 +304,32 @@ suspend fun consumer(channel: ReceiveChannel<Int>) {
 
 ### Channel Types
 
-| Type                | Description                         |
+| Type | Description |
 | ------------------- | ----------------------------------- |
-| `Channel()`         | Rendezvous (buffer size 0)          |
-| `Channel(64)`       | Buffered with capacity 64           |
+| `Channel()` | Rendezvous (buffer size 0) |
+| `Channel(64)` | Buffered with capacity 64 |
 | `Channel.CONFLATED` | Drops previous values, keeps latest |
 | `Channel.UNLIMITED` | Unbounded buffer (use with caution) |
 
 ## Common Pitfalls
 
 - \*\* Using `runBlocking` in application code. It blocks the thread, defeating the purpose of
-  coroutines. Use `CoroutineScope` with lifecycle management instead.
-- \*\* Forgetting to make IO functions suspending. If you wrap blocking calls in `withContext(IO)`,
-  that is fine, but prefer genuinely non-blocking libraries (e.g., `ktor-client`,
-  `Retrofit with coroutines`) over `withContext(IO)` wrapping blocking code.
+ coroutines. Use `CoroutineScope` with lifecycle management instead.
+- \*\* Forgetting to make IO functions suspending. If you wrap blocking calls in `withContext(IO)`
+ that is fine, but prefer genuinely non-blocking libraries (e.g., `ktor-client`
+ `Retrofit with coroutines`) over `withContext(IO)` wrapping blocking code.
 - \*\* Not handling cancellation properly. Always rethrow `CancellationException`. Use
-  `ensureActive()` or check `isActive` in long-running CPU loops.
+ `ensureActive()` or check `isActive` in long-running CPU loops.
 - \*\* Using `GlobalScope`. It creates unbound coroutines that outlive the application scope, making
-  cancellation and lifecycle management impossible. Always use structured concurrency with explicit
-  scopes.
-- \*\* Collecting multiple flows sequentially. Use `combine`, `merge`, or `zip` to compose flows
-  concurrently.
+ cancellation and lifecycle management impossible. Always use structured concurrency with explicit
+ scopes.
+- \*\* Collecting multiple flows sequentially. Use `combine``merge`Or `zip` to compose flows
+ concurrently.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -28,7 +28,7 @@ $$
 P(A') = 1 - P(A)
 $$
 
-where $A'$ (or $\bar{A}$) is the complement of $A$.
+Where $A'$ (or $\bar{A}$) is the complement of $A$.
 
 ### Venn Diagrams
 
@@ -57,7 +57,7 @@ $$
 :::info[Example]
 
 In a class of 40 students, 25 play football, 18 play basketball, and 8 play both. Find the
-probability that a randomly selected student plays at least one sport.
+Probability that a randomly selected student plays at least one sport.
 
 $$
 P(F \cup B) = P(F) + P(B) - P(F \cap B) = \frac{25}{40} + \frac{18}{40} - \frac{8}{40} = \frac{35}{40} = \frac{7}{8}
@@ -94,7 +94,7 @@ $$
 :::warning[Exam Tip]
 
 Independence is NOT the same as mutual exclusivity. In fact, if two events are both mutually
-exclusive and both have non-zero probability, they CANNOT be independent (since
+Exclusive and both have non-zero probability, they CANNOT be independent (since
 $P(A \cap B) = 0 \neq P(A) \cdot P(B)$).
 
 :::
@@ -122,7 +122,7 @@ $$
 :::info[Example]
 
 A bag contains 5 red and 3 blue marbles. Two marbles are drawn without replacement. Find the
-probability that both are red.
+Probability that both are red.
 
 $$
 P(\mathrm{both red}) = P(\mathrm{first red}) \cdot P(\mathrm{second red} | \mathrm{first red}) = \frac{5}{8} \cdot \frac{4}{7} = \frac{20}{56} = \frac{5}{14}
@@ -137,7 +137,7 @@ Tree diagrams are useful for multi-stage experiments. Multiply along branches, a
 :::info[Example]
 
 A box contains 4 defective and 6 non-defective items. Two items are drawn without replacement. Find
-the probability that exactly one is defective.
+The probability that exactly one is defective.
 
 Paths giving exactly one defective:
 
@@ -171,13 +171,13 @@ P(A_k|B) = \frac{P(B|A_k) \cdot P(A_k)}{\displaystyle\sum_{i=1}^{n} P(B|A_i) \cd
 $$
 
 The denominator $P(B) = \displaystyle\sum_{i=1}^{n} P(B|A_i) \cdot P(A_i)$ is the **law of total
-probability**.
+Probability**.
 
 :::info[Example]
 
 A factory has three machines producing items. Machine `A` produces 50% of items with 2% defect rate.
 Machine `B` produces 30% with 3% defect rate. Machine `C` produces 20% with 1% defect rate. An item
-is found to be defective. What is the probability it came from machine `B`?
+Is found to be defective. What is the probability it came from machine `B`?
 
 $$
 P(\mathrm{defective}) = 0.5 \times 0.02 + 0.3 \times 0.03 + 0.2 \times 0.01 = 0.01 + 0.009 + 0.002 = 0.021
@@ -207,7 +207,7 @@ $$
 :::warning[Exam Tip]
 
 This result (approximately 16.7%) is counterintuitively low. Always work through Bayes' theorem
-carefully rather than relying on intuition for conditional probability questions.
+Carefully rather than relying on intuition for conditional probability questions.
 
 :::
 
@@ -218,7 +218,7 @@ carefully rather than relying on intuition for conditional probability questions
 ### Definition
 
 A **discrete random variable** $X$ takes a countable set of values $x_1, x_2, \ldots$ with
-probabilities $P(X = x_i) = p_i$.
+Probabilities $P(X = x_i) = p_i$.
 
 ### Probability Distribution
 
@@ -271,7 +271,7 @@ $$
 
 A random variable $X$ has the following probability distribution:
 
-| $x$        | 0   | 1   | 2   | 3   |
+| $x$ | 0 | 1 | 2 | 3 |
 | ---------- | --- | --- | --- | --- |
 | $P(X = x)$ | 0.1 | 0.4 | 0.3 | 0.2 |
 
@@ -312,7 +312,7 @@ $$
 P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
 $$
 
-for $x = 0, 1, 2, \ldots, n$.
+For $x = 0, 1, 2, \ldots, n$.
 
 ### Mean and Variance
 
@@ -343,7 +343,7 @@ $$
 :::info[Example]
 
 A multiple-choice test has 20 questions, each with 5 options. A student guesses all answers. Find
-the probability of getting at least 10 correct.
+The probability of getting at least 10 correct.
 
 $X \sim B(20, 0.2)$.
 
@@ -365,8 +365,8 @@ Most questions require using the cumulative binomial function on a GDC.
 
 :::warning[Exam Tip]
 
-For binomial probability questions, always state the distribution clearly: "$X \sim B(n, p)$
-where...". Use your GDC for calculations involving large $n$ or cumulative probabilities.
+For binomial probability questions, always state the distribution : "$X \sim B(n, p)$
+Where...". Use your GDC for calculations involving large $n$ or cumulative probabilities.
 
 :::
 
@@ -398,9 +398,9 @@ $$
 
 :::info[Example]
 
-Given $X \sim N(50, 16)$, find $P(45 \lt X \lt 55)$.
+Given $X \sim N(50, 16)$Find $P(45 \lt X \lt 55)$.
 
-$\mu = 50$, $\sigma = 4$.
+$\mu = 50$$\sigma = 4$.
 
 $$
 P(45 \lt X \lt 55) = P\!\left(\frac{45-50}{4} \lt Z \lt \frac{55-50}{4}\right) = P(-1.25 \lt Z \lt 1.25)
@@ -420,20 +420,20 @@ $$
 P(X \lt x) = p \implies x = \mu + z_p \cdot \sigma
 $$
 
-where $z_p$ is the $p$-th percentile of the standard normal.
+Where $z_p$ is the $p$-th percentile of the standard normal.
 
 :::info[Example]
 
 Heights of a population follow $N(170, 64)$ (in cm). Find the height that is at the 90th percentile.
 
-$\mu = 170$, $\sigma = 8$.
+$\mu = 170$$\sigma = 8$.
 
 $$
 P(X \lt x) = 0.90 \implies \frac{x - 170}{8} = z_{0.90} = 1.282
 $$
 
 $$
-x = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm{ cm}
+X = 170 + 1.282 \times 8 = 170 + 10.26 = 180.26 \mathrm{ cm}
 $$
 
 :::
@@ -452,13 +452,13 @@ X - Y \sim N(\mu_X - \mu_Y, \sigma_X^2 + \sigma_Y^2)
 $$
 
 $$
-aX + b \sim N(a\mu_X + b, a^2\sigma_X^2)
+AX + b \sim N(a\mu_X + b, a^2\sigma_X^2)
 $$
 
 :::info[Example]
 
 The weight of a parcel is $X \sim N(2, 0.04)$ kg. The packaging adds $Y \sim N(0.3, 0.01)$ kg. Find
-the probability that the total exceeds 2.5 kg.
+The probability that the total exceeds 2.5 kg.
 
 $$
 X + Y \sim N(2.3, 0.05)
@@ -545,7 +545,7 @@ $$
 
 ### Question 1 (Paper 1 style)
 
-Events `A` and `B` are such that $P(A) = 0.6$, $P(B) = 0.4$, and $P(A|B) = 0.3$.
+Events `A` and `B` are such that $P(A) = 0.6$$P(B) = 0.4$And $P(A|B) = 0.3$.
 
 **(a)** Find $P(A \cap B)$.
 
@@ -594,7 +594,7 @@ $$
 ### Question 3 (Paper 2 style)
 
 The time taken to complete a task follows a normal distribution with mean 45 minutes and standard
-deviation 8 minutes.
+Deviation 8 minutes.
 
 **(a)** Find the probability that a randomly selected person takes between 40 and 50 minutes.
 
@@ -613,7 +613,7 @@ P(X \lt x) = 0.10 \implies \frac{x - 45}{8} = -1.282
 $$
 
 $$
-x = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm{ minutes}
+X = 45 - 1.282 \times 8 = 45 - 10.26 = 34.74 \mathrm{ minutes}
 $$
 
 ### Question 4 (Paper 1 style)
@@ -644,29 +644,29 @@ $$
 
 **(c)** Find the mode.
 
-Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$, the mode is $x = 2$.
+Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$The mode is $x = 2$.
 
 ---
 
 ## Summary
 
-| Distribution | Notation           | $E(X)$ | $\mathrm{Var}(X)$ |
+| Distribution | Notation | $E(X)$ | $\mathrm{Var}(X)$ |
 | ------------ | ------------------ | ------ | ----------------- |
-| Binomial     | $B(n, p)$          | $np$   | $np(1-p)$         |
-| Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$        |
+| Binomial | $B(n, p)$ | $np$ | $np(1-p)$ |
+| Normal | $N(\mu, \sigma^2)$ | $\mu$ | $\sigma^2$ |
 
-| Key Formula             | Expression                                |
+| Key Formula | Expression |
 | ----------------------- | ----------------------------------------- |
-| Addition rule           | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$     |
-| Bayes' theorem          | $P(A\|B) = \dfrac{P(B\|A)P(A)}{P(B)}$     |
-| Standardisation         | $Z = \dfrac{X - \mu}{\sigma}$             |
+| Addition rule | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$ |
+| Bayes' theorem | $P(A\|B) = \dfrac{P(B\|A)P(A)}{P(B)}$ |
+| Standardisation | $Z = \dfrac{X - \mu}{\sigma}$ |
 
 :::tip[Exam Strategy]
 
-Always define your random variable clearly at the start of probability questions. For normal
-distribution problems, draw a sketch of the bell curve and shade the relevant area. For binomial
-problems, verify the four conditions before applying the formula.
+Always define your random variable at the start of probability questions. For normal
+Distribution problems, draw a sketch of the bell curve and shade the relevant area. For binomial
+Problems, verify the four conditions before applying the formula.
 
 :::
 
@@ -691,7 +691,7 @@ $$
 :::info[Example]
 
 A call centre receives an average of 4 calls per minute. Find the probability of receiving exactly 6
-calls in a minute.
+Calls in a minute.
 
 $$
 P(X = 6) = \frac{e^{-4} \cdot 4^6}{6!} = \frac{e^{-4} \cdot 4096}{720} = \frac{4096}{720 \times 54.60} \approx 0.104
@@ -730,7 +730,7 @@ $$
 ### Factorial
 
 $$
-n! = n \times (n-1) \times \cdots \times 2 \times 1, \quad 0! = 1
+N! = n \times (n-1) \times \cdots \times 2 \times 1, \quad 0! = 1
 $$
 
 ### Permutations
@@ -770,7 +770,7 @@ Ways with at least 2 women $= 495 - 35 - 175 = 285$.
 ### Question 6 (Paper 2 style)
 
 A bag contains 4 red and 6 blue marbles. Marbles are drawn one at a time without replacement until a
-red marble is drawn.
+Red marble is drawn.
 
 **(a)** Find the probability that exactly 3 draws are needed.
 
@@ -823,7 +823,7 @@ $$
 ### Question 8 (Paper 2 style)
 
 The heights of Year 12 students follow a normal distribution with mean $165\mathrm{ cm}$ and
-standard deviation $8\mathrm{ cm}$.
+Standard deviation $8\mathrm{ cm}$.
 
 **(a)** What percentage of students are taller than $180\mathrm{ cm}$?
 
@@ -834,7 +834,7 @@ $$
 About $3.0\%$.
 
 **(b)** The school needs to order desks for the middle 90% of students. What height range should the
-desks accommodate?
+Desks accommodate?
 
 Middle 90% means 5th to 95th percentile.
 
@@ -854,3 +854,11 @@ Ready to test your understanding of **Probability**? The [diagnostic test](/docs
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

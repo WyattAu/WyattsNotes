@@ -13,9 +13,9 @@ hide_table_of_contents: true
 
 **Question:**
 
-(a) Write the full electron configuration of $\text{Cr}^{3+}$ and $\text{Cu}^+$, explaining any deviation from the expected $4s$-before-$3d$ filling order.
+(a) Write the full electron configuration of $\text{Cr}^{3+}$ and $\text{Cu}^+$Explaining any deviation from the expected $4s$-before-$3d$ filling order.
 
-(b) The third ionisation energy of chromium is $2987\,\text{kJ mol}^{-1}$, while the fourth ionisation energy is $4743\,\text{kJ mol}^{-1}$. Explain why this jump occurs and identify which electron is being removed at the fourth ionisation.
+(b) The third ionisation energy of chromium is $2987\,\text{kJ mol}^{-1}$While the fourth ionisation energy is $4743\,\text{kJ mol}^{-1}$. Explain why this jump occurs and identify which electron is being removed at the fourth ionisation.
 
 **Solution:**
 
@@ -91,7 +91,7 @@ Across Period 3 (Na to Ar), the first ionisation energy generally increases but 
 
 So the $3p^1$ electron in Al is easier to remove than a $3s$ electron from Mg, despite the higher nuclear charge of Al.
 
-(c) P has the configuration $[\text{Ne}]\,3s^2\,3p^3$ (half-filled $3p$ subshell). A half-filled subshell has extra stability due to exchange energy (parallel spins in each $p$ orbital minimise electron-electron repulsion). S has $[\text{Ne}]\,3s^2\,3p^4$, where the fourth $3p$ electron must pair with an electron in an already-occupied orbital. The pairing introduces additional electron-electron repulsion, making this electron slightly easier to remove despite the higher nuclear charge.
+(c) P has the configuration $[\text{Ne}]\,3s^2\,3p^3$ (half-filled $3p$ subshell). A half-filled subshell has extra stability due to exchange energy (parallel spins in each $p$ orbital minimise electron-electron repulsion). S has $[\text{Ne}]\,3s^2\,3p^4$Where the fourth $3p$ electron must pair with an electron in an already-occupied orbital. The pairing introduces additional electron-electron repulsion, making this electron slightly easier to remove despite the higher nuclear charge.
 
 (d) P has the higher first ionisation energy. Although Si ($[\text{Ne}]\,3s^2\,3p^2$) has one less proton than P, the key factor is that P has a half-filled $3p^3$ configuration with maximum exchange energy and no paired electrons in the $p$ subshell. The electron removed from Si is one of the paired electrons in a $3p$ orbital (since $3p^2$ means one orbital is doubly occupied), experiencing greater repulsion. The combined effect of higher nuclear charge in P and the extra stability of the half-filled subshell means P $\gt$ Si.
 
@@ -130,9 +130,9 @@ The bonding is **ionic**: aluminium donates electrons to oxygen, forming $\text{
 
 An electron in a hydrogen atom is excited from the $n = 1$ ground state to the $n = 4$ energy level, then relaxes back to the ground state.
 
-(a) Calculate the energy, in $\text{kJ mol}^{-1}$, of a photon emitted when the electron transitions directly from $n = 4$ to $n = 2$. Use $E_n = -1312/n^2\,\text{kJ mol}^{-1}$.
+(a) Calculate the energy, in $\text{kJ mol}^{-1}$Of a photon emitted when the electron transitions directly from $n = 4$ to $n = 2$. Use $E_n = -1312/n^2\,\text{kJ mol}^{-1}$.
 
-(b) Calculate the wavelength of this photon in nm. Use $c = 3.00 \times 10^8\,\text{m s}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{J s}$, $N_A = 6.02 \times 10^{23}\,\text{mol}^{-1}$.
+(b) Calculate the wavelength of this photon in nm. Use $c = 3.00 \times 10^8\,\text{m s}^{-1}$$h = 6.63 \times 10^{-34}\,\text{J s}$$N_A = 6.02 \times 10^{23}\,\text{mol}^{-1}$.
 
 (c) Identify the region of the electromagnetic spectrum in which this photon lies, and explain why the transition from $n = 4$ to $n = 1$ produces a photon in a different region.
 
@@ -158,7 +158,7 @@ The transition from $n = 4$ to $n = 1$ involves a much larger energy change:
 
 $$\Delta E = E_1 - E_4 = -1312 - (-82.0) = -1230\,\text{kJ mol}^{-1}$$
 
-This corresponds to a much shorter wavelength ($\approx 97\,\text{nm}$), placing it in the **ultraviolet region** (Lyman series). The energy difference between $n = 1$ and $n = 4$ is much larger than between $n = 2$ and $n = 4$, because the energy levels converge (get closer together) as $n$ increases.
+This corresponds to a much shorter wavelength ($\approx 97\,\text{nm}$), placing it in the **ultraviolet region** (Lyman series). The energy difference between $n = 1$ and $n = 4$ is much larger than between $n = 2$ and $n = 4$Because the energy levels converge (get closer together) as $n$ increases.
 
 ---
 ### IT-3: Predicting Properties Across Period 3 (with Quantitative Chemistry and Bonding)
@@ -169,7 +169,7 @@ Consider the elements Na, Mg, Al, Si, P, S, Cl, and Ar.
 
 (a) Arrange these elements in order of increasing electrical conductivity of their solid state. Explain the trend, identifying which element(s) are conductors, semiconductors, and insulators.
 
-(b) The melting points of Na ($98\,^\circ\text{C}$), Mg ($650\,^\circ\text{C}$), Al ($660\,^\circ\text{C}$), Si ($1414\,^\circ\text{C}$), P ($44\,^\circ\text{C}$, white), S ($115\,^\circ\text{C}$), Cl ($-101\,^\circ\text{C}$), and Ar ($-189\,^\circ\text{C}$) show a complex pattern. Explain this pattern in terms of bonding and structure, accounting for why Si has the highest melting point.
+(b) The melting points of Na ($98\,^\circ\text{C}$), Mg ($650\,^\circ\text{C}$), Al ($660\,^\circ\text{C}$), Si ($1414\,^\circ\text{C}$), P ($44\,^\circ\text{C}$White), S ($115\,^\circ\text{C}$), Cl ($-101\,^\circ\text{C}$), and Ar ($-189\,^\circ\text{C}$) show a complex pattern. Explain this pattern in terms of bonding and structure, accounting for why Si has the highest melting point.
 
 (c) A sample of silicon is doped with phosphorus. Explain, in terms of electron configuration, how this affects the electrical conductivity of silicon.
 
@@ -183,7 +183,7 @@ Consider the elements Na, Mg, Al, Si, P, S, Cl, and Ar.
 
 (b) The pattern reflects the changing types of bonding and structure across Period 3:
 
-- **Na, Mg, Al**: Giant metallic structures. Melting points increase Na $\lt$ Mg $\lt$ Al due to increasing ionic charge ($+$, $2+$, $3+$) and decreasing ionic radius, leading to stronger metallic bonding.
+- **Na, Mg, Al**: Giant metallic structures. Melting points increase Na $\lt$ Mg $\lt$ Al due to increasing ionic charge ($+$$2+$$3+$) and decreasing ionic radius, leading to stronger metallic bonding.
 - **Si**: Giant covalent (macromolecular) structure with a continuous network of strong covalent bonds in all directions. Each Si atom forms four strong covalent bonds, requiring enormous energy to break the entire network. This is the highest melting point.
 - **P, S, Cl**: Simple molecular structures held together by weak intermolecular forces (van der Waals). Only these weak forces need to be overcome to melt, hence low melting points.
 - **Ar**: Monatomic with only very weak van der Waals forces between atoms. Lowest melting point.
@@ -196,7 +196,7 @@ Consider the elements Na, Mg, Al, Si, P, S, Cl, and Ar.
 
 #### UT-4: Ionisation Energy Calculation
 
-**Question:** The first three ionisation energies of aluminium are $578$, $1817$, and $2745\,\mathrm{kJ\,mol^{-1}}$. Explain why the second ionisation energy is so much larger than the first, and why the third is larger still but the jump from second to third is smaller than from first to second.
+**Question:** The first three ionisation energies of aluminium are $578$$1817$And $2745\,\mathrm{kJ\,mol^{-1}}$. Explain why the second ionisation energy is so much larger than the first, and why the third is larger still but the jump from second to third is smaller than from first to second.
 
 **Solution:**
 
@@ -208,7 +208,7 @@ The third ionisation removes the second $3s$ electron from $\mathrm{Al}^{2+}$ ($
 
 #### UT-5: Mass Spectrometry and Isotopic Abundance
 
-**Question:** Naturally occurring boron has two isotopes: $\mathrm{^{10}B}$ and $\mathrm{^{11}B}$. The relative atomic mass of boron is $10.81$. Calculate the percentage abundance of each isotope.
+**Question:** occurring boron has two isotopes: $\mathrm{^{10}B}$ and $\mathrm{^{11}B}$. The relative atomic mass of boron is $10.81$. Calculate the percentage abundance of each isotope.
 
 **Solution:**
 
@@ -218,7 +218,7 @@ $$10.81 = 10.00x + 11.00(1-x) = 10.00x + 11.00 - 11.00x = 11.00 - x$$
 
 $$x = 11.00 - 10.81 = 0.19$$
 
-$\mathrm{^{10}B}$: $19.0\%$, $\mathrm{^{11}B}$: $81.0\%$
+$\mathrm{^{10}B}$: $19.0\%$$\mathrm{^{11}B}$: $81.0\%$
 
 #### IT-4: Periodic Trends and Thermodynamics
 
@@ -228,6 +228,6 @@ $\mathrm{^{10}B}$: $19.0\%$, $\mathrm{^{11}B}$: $81.0\%$
 
 Nitrogen has the electron configuration $1s^2\,2s^2\,2p^3$ with one electron in each of the three $2p$ orbitals (Hund's rule). Each electron in a separate orbital experiences minimal electron-electron repulsion within the subshell (1 mark).
 
-Oxygen has the configuration $1s^2\,2s^2\,2p^4$, meaning one of the $2p$ orbitals must contain a pair of electrons. The paired electrons in the same orbital repel each other, making it easier to remove one of them compared to removing an unpaired electron from nitrogen (1 mark).
+Oxygen has the configuration $1s^2\,2s^2\,2p^4$Meaning one of the $2p$ orbitals must contain a pair of electrons. The paired electrons in the same orbital repel each other, making it easier to remove one of them compared to removing an unpaired electron from nitrogen (1 mark).
 
 Although oxygen has a higher nuclear charge ($+8$ vs $+7$), the extra electron-electron repulsion from the paired configuration outweighs the increased nuclear attraction, resulting in a lower first ionisation energy (1 mark).

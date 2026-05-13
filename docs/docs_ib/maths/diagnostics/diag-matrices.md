@@ -19,7 +19,7 @@ Let $A = \begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}$ and $B = \begin{pmatrix}
 
 **(a)** Show that $AB \neq BA$.
 
-**(b)** Find all $2 \times 2$ matrices $X$ such that $AX = XA$, where $A$ is as defined above.
+**(b)** Find all $2 \times 2$ matrices $X$ such that $AX = XA$Where $A$ is as defined above.
 
 **(c)** A student claims that since $A$ and $B$ do not commute, no matrix can commute with $A$. Explain the error.
 
@@ -33,7 +33,7 @@ $$AB = \begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 &
 
 $$BA = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix}$$
 
-Since $AB = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} \neq \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix} = BA$, the matrices do not commute.
+Since $AB = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} \neq \begin{pmatrix} 0 & -1 \\ 1 & 2 \end{pmatrix} = BA$The matrices do not commute.
 
 **(b)** Let $X = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$. Then:
 
@@ -46,11 +46,11 @@ Setting $AX = XA$:
 - $(1,1)$: $a + 2c = a \implies c = 0$
 - $(2,1)$: $-c = c \implies c = 0$ (consistent)
 - $(1,2)$: $b + 2d = 2a + b \implies 2d = 2a \implies d = a$
-- $(2,2)$: $-d = 2c + d \implies -d = d \implies d = 0$, and therefore $a = 0$.
+- $(2,2)$: $-d = 2c + d \implies -d = d \implies d = 0$And therefore $a = 0$.
 
 So $X = \begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix}$ for any $b \in \mathbb{'\{'}R{'\}'}$.
 
-**(c)** The student's error is a logical fallacy: the fact that $B$ does not commute with $A$ does not imply that *no* matrix commutes with $A$. The identity matrix $I$, the zero matrix $O$, and all scalar multiples of $I$ trivially commute with every matrix. Part (b) shows that there is in fact a one-parameter family of matrices commuting with $A$.
+**(c)** The student's error is a logical fallacy: the fact that $B$ does not commute with $A$ does not imply that *no* matrix commutes with $A$. The identity matrix $I$The zero matrix $O$And all scalar multiples of $I$ commute with every matrix. Part (b) shows that there is in fact a one-parameter family of matrices commuting with $A$.
 
 ---
 
@@ -62,7 +62,7 @@ Let $M = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{pmatrix}$.
 
 **(a)** Find the eigenvalues and eigenvectors of $M$.
 
-**(b)** A student claims that since $M$ is triangular, the eigenvalues are simply the diagonal entries, so there should be three linearly independent eigenvectors. Is this correct?
+**(b)** A student claims that since $M$ is triangular, the eigenvalues are the diagonal entries, so there should be three linearly independent eigenvectors. Is this correct?
 
 [Difficulty: hard. Tests eigenvalue computation for a matrix with a repeated eigenvalue and the concept of defective matrices.]
 
@@ -78,13 +78,13 @@ For $\lambda_1 = 2$: $(M - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
 
 $$\begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
-This gives $y = 0$ and $z = 0$, with $x$ free. So the eigenvectors are $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ times any scalar. There is only **one** linearly independent eigenvector for $\lambda = 2$.
+This gives $y = 0$ and $z = 0$With $x$ free. So the eigenvectors are $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ times any scalar. There is only **one** linearly independent eigenvector for $\lambda = 2$.
 
 For $\lambda_2 = 3$: $(M - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
 
 $$\begin{pmatrix} -1 & 1 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
-This gives $y = 0$, $-x = 0$ so $x = 0$, with $z$ free. Eigenvector: $\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
+This gives $y = 0$$-x = 0$ so $x = 0$With $z$ free. Eigenvector: $\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 
 **(b)** The student is incorrect. While it is true that the eigenvalues of a triangular matrix are the diagonal entries, the number of linearly independent eigenvectors is not necessarily equal to the number of eigenvalues (counting multiplicity). Here $\lambda = 2$ has algebraic multiplicity $2$ but geometric multiplicity $1$. The matrix is **defective** — it cannot be diagonalised.
 

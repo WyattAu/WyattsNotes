@@ -24,14 +24,14 @@ Recombinant DNA technology involves combining DNA from different sources to crea
 
 ### 1.2 Tools of Recombinant DNA Technology
 
-**Restriction endonucleases (restriction enzymes)** cut DNA at specific recognition sequences. These sequences are typically 4--8 base pairs long and palindromic (the sequence reads the same on both strands in the 5' to 3' direction).
+**Restriction endonucleases (restriction enzymes)** cut DNA at specific recognition sequences. These sequences are 4--8 base pairs long and palindromic (the sequence reads the same on both strands in the 5' to 3' direction).
 
-| Enzyme   | Recognition Sequence | Cut Type | Sticky Ends |
+| Enzyme | Recognition Sequence | Cut Type | Sticky Ends |
 | -------- | ------------------- | -------- | ----------- |
-| EcoRI    | 5'-GAATTC-3'       | Staggered | AATT        |
-| BamHI    | 5'-GGATCC-3'       | Staggered | GATC        |
-| HindIII  | 5'-AAGCTT-3'       | Staggered | AGCT        |
-| SmaI     | 5'-CCCGGG-3'       | Blunt    | None        |
+| EcoRI | 5'-GAATTC-3' | Staggered | AATT |
+| BamHI | 5'-GGATCC-3' | Staggered | GATC |
+| HindIII | 5'-AAGCTT-3' | Staggered | AGCT |
+| SmaI | 5'-CCCGGG-3' | Blunt | None |
 
 Staggered cuts produce **sticky ends** (single-stranded overhangs) that are complementary and can base-pair with any DNA cut with the same enzyme. Blunt cuts produce flat ends that can be joined to any other blunt-ended DNA.
 
@@ -39,12 +39,12 @@ Staggered cuts produce **sticky ends** (single-stranded overhangs) that are comp
 
 **Vectors** are DNA molecules used to carry foreign DNA into host cells:
 
-| Vector Type        | Capacity       | Advantages                                      | Disadvantages                  |
+| Vector Type | Capacity | Advantages | Disadvantages |
 | ----------------- | -------------- | ----------------------------------------------- | ------------------------------ |
-| Plasmid           | $< 10\ \mathrm{kb}$ | Easy to manipulate; high copy number       | Limited capacity              |
-| Bacteriophage ($\lambda$) | $< 25\ \mathrm{kb}$ | Efficient delivery to E. coli              | More complex handling         |
-| BAC (bacterial artificial chromosome) | $100$--$300\ \mathrm{kb}$ | Large inserts                        | Low copy number               |
-| YAC (yeast artificial chromosome) | $100$--$2000\ \mathrm{kb}$ | Very large inserts; eukaryotic processing | Unstable; low yield           |
+| Plasmid | $< 10\ \mathrm{kb}$ | Easy to manipulate; high copy number | Limited capacity |
+| Bacteriophage ($\lambda$) | $< 25\ \mathrm{kb}$ | Efficient delivery to E. Coli | More complex handling |
+| BAC (bacterial artificial chromosome) | $100$--$300\ \mathrm{kb}$ | Large inserts | Low copy number |
+| YAC (yeast artificial chromosome) | $100$--$2000\ \mathrm{kb}$ | Very large inserts; eukaryotic processing | Unstable; low yield |
 
 ### 1.3 Procedure for Producing Recombinant DNA
 
@@ -52,14 +52,14 @@ Staggered cuts produce **sticky ends** (single-stranded overhangs) that are comp
 2. **Vector preparation**: the same restriction enzyme cuts the plasmid vector at a specific site (e.g., within a gene for antibiotic resistance or a reporter gene like lacZ).
 3. **Ligation**: the target gene and the cut plasmid are mixed with DNA ligase. The complementary sticky ends anneal by base pairing, and DNA ligase seals the nicks, producing a recombinant plasmid.
 4. **Transformation**: the recombinant plasmid is introduced into host bacterial cells by:
-   - **Heat shock**: cells are chilled ($4\ ^\circ\mathrm{C}$), mixed with plasmid DNA, briefly heated ($42\ ^\circ\mathrm{C}$, 90 seconds), and placed on ice. The temperature change makes the membrane permeable to DNA.
-   - **Electroporation**: an electric field creates temporary pores in the membrane.
+ - **Heat shock**: cells are chilled ($4\ ^\circ\mathrm{C}$), mixed with plasmid DNA, briefly heated ($42\ ^\circ\mathrm{C}$90 seconds), and placed on ice. The temperature change makes the membrane permeable to DNA.
+ - **Electroporation**: an electric field creates temporary pores in the membrane.
 5. **Selection**: cells are grown on agar plates containing an antibiotic. Only cells that have taken up the plasmid (with the antibiotic resistance gene) survive.
 6. **Identification**: further screening identifies cells with the recombinant plasmid (containing the target gene inserted into the lacZ gene, disrupting it). White colonies (non-functional lacZ) indicate successful insertion; blue colonies (functional lacZ) indicate the plasmid without insertion.
 
 ### 1.4 Applications
 
-- **Recombinant human insulin**: produced by _E. coli_ with the human insulin gene. Structurally identical to human insulin, eliminating immune reactions associated with animal-derived insulin.
+- **Recombinant human insulin**: produced by _E. Coli_ with the human insulin gene. Structurally identical to human insulin, eliminating immune reactions associated with animal-derived insulin.
 - **Factor VIII**: blood clotting factor for treating haemophilia, produced by genetically modified mammalian cells (which perform the necessary post-translational modifications).
 - **GM crops**: herbicide resistance (e.g., _BAR_ gene), pest resistance (Bt toxin gene), nutritional enhancement (Golden Rice with beta-carotene).
 
@@ -110,11 +110,11 @@ DNA fragments are separated by size through an agarose gel under an electric fie
 
 ### 3.3 Southern, Northern, and Western Blotting
 
-| Technique          | Target          | Probe/Antibody        | Purpose                              |
+| Technique | Target | Probe/Antibody | Purpose |
 | ----------------- | --------------- | --------------------- | ------------------------------------ |
-| Southern blot      | DNA fragments   | Radioactive DNA probe | Identify specific DNA sequences   |
-| Northern blot      | RNA fragments   | Radioactive DNA probe | Measure gene expression (mRNA levels) |
-| Western blot       | Proteins        | Specific antibody     | Detect specific proteins           |
+| Southern blot | DNA fragments | Radioactive DNA probe | Identify specific DNA sequences |
+| Northern blot | RNA fragments | Radioactive DNA probe | Measure gene expression (mRNA levels) |
+| Western blot | Proteins | Specific antibody | Detect specific proteins |
 
 ## 4. DNA Sequencing
 
@@ -156,10 +156,10 @@ Gene therapy involves introducing functional copies of a gene into a patient's c
 
 **Stem cells** are undifferentiated cells with the capacity for self-renewal (mitosis producing identical stem cells) and differentiation into specialised cell types.
 
-| Type           | Source                              | Potency          | Ethical Issues        |
+| Type | Source | Potency | Ethical Issues |
 | -------------- | ----------------------------------- | ---------------- | --------------------- |
 | Embryonic (ESC) | Inner cell mass of blastocyst (5--7 days) | Totipotent/pluripotent | Significant (destruction of embryo) |
-| Adult           | Bone marrow, adipose tissue, brain | Multipotent       | Fewer                 |
+| Adult | Bone marrow, adipose tissue, brain | Multipotent | Fewer |
 | Induced pluripotent (iPSC) | Adult cells reprogrammed with transcription factors (Oct4, Sox2, Klf4, c-Myc) | Pluripotent | Minimal (no embryos) |
 
 **Therapeutic cloning** (somatic cell nuclear transfer, SCNT): the nucleus from a patient's somatic cell is transferred into an enucleated egg cell. The resulting embryo is allowed to develop to the blastocyst stage, and embryonic stem cells are harvested. These cells are genetically identical to the patient and can be directed to differentiate into the required cell type for transplantation (e.g., insulin-producing beta cells for Type 1 diabetes, dopaminergic neurons for Parkinson's disease). The embryo is not implanted into a uterus.
@@ -189,8 +189,8 @@ Gene therapy involves introducing functional copies of a gene into a patient's c
 2. The gRNA-Cas9 complex searches the genome for the target sequence adjacent to a PAM.
 3. When the gRNA base-pairs with the target DNA and the PAM is recognised, Cas9 cuts both strands of the DNA, creating a double-strand break (DSB).
 4. The cell repairs the DSB by one of two mechanisms:
-   - **Non-homologous end joining (NHEJ)**: the broken ends are joined directly, often introducing small insertions or deletions (indels) that can disrupt the gene (gene knockout).
-   - **Homology-directed repair (HDR)**: if a donor DNA template with the desired sequence is provided, the cell uses it as a template to repair the break, introducing the desired sequence (gene knock-in or correction).
+ - **Non-homologous end joining (NHEJ)**: the broken ends are joined directly, often introducing small insertions or deletions (indels) that can disrupt the gene (gene knockout).
+ - **Homology-directed repair (HDR)**: if a donor DNA template with the desired sequence is provided, the cell uses it as a template to repair the break, introducing the desired sequence (gene knock-in or correction).
 
 ### 6.2 Applications
 
@@ -222,13 +222,13 @@ Bioinformatics is the application of computational tools to store, analyse, and 
 
 ### 7.3 Databases
 
-| Database         | Content                                 |
+| Database | Content |
 | ---------------- | --------------------------------------- |
-| GenBank          | Nucleotide sequences                    |
-| UniProt          | Protein sequences and function          |
-| OMIM             | Human genes and genetic disorders        |
-| Ensembl          | Vertebrate genomes                      |
-| PDB              | Protein 3D structures                   |
+| GenBank | Nucleotide sequences |
+| UniProt | Protein sequences and function |
+| OMIM | Human genes and genetic disorders |
+| Ensembl | Vertebrate genomes |
+| PDB | Protein 3D structures |
 
 ## 8. The Microbiome
 
@@ -262,10 +262,10 @@ $$N = 3 \times 2^{32} = 3 \times 4294967296 = 1.29 \times 10^{10}\ \text{copies}
 
 **Worked Example 2: Restriction fragment analysis.** A plasmid of $5000\ \mathrm{bp}$ is cut with EcoRI at position $1000\ \mathrm{bp}$ and with BamHI at position $3500\ \mathrm{bp}$. How many fragments are produced and what are their sizes?
 
-EcoRI cuts at $1000\ \mathrm{bp}$, producing fragments of $1000\ \mathrm{bp}$ and $4000\ \mathrm{bp}$.
-BamHI cuts the $4000\ \mathrm{bp}$ fragment at position $3500\ \mathrm{bp}$, producing fragments of $2500\ \mathrm{bp}$ ($3500 - 1000$) and $1500\ \mathrm{bp}$ ($5000 - 3500$).
+EcoRI cuts at $1000\ \mathrm{bp}$Producing fragments of $1000\ \mathrm{bp}$ and $4000\ \mathrm{bp}$.
+BamHI cuts the $4000\ \mathrm{bp}$ fragment at position $3500\ \mathrm{bp}$Producing fragments of $2500\ \mathrm{bp}$ ($3500 - 1000$) and $1500\ \mathrm{bp}$ ($5000 - 3500$).
 
-Final fragments: $1000\ \mathrm{bp}$, $2500\ \mathrm{bp}$, and $1500\ \mathrm{bp}$ (three fragments).
+Final fragments: $1000\ \mathrm{bp}$$2500\ \mathrm{bp}$And $1500\ \mathrm{bp}$ (three fragments).
 
 **Worked Example 3: Calculating DNA concentration from absorbance.** A DNA solution has an absorbance of 0.40 at $260\ \mathrm{nm}$. The relationship between absorbance and double-stranded DNA concentration is: $A_{260} = 1.0$ for $50\ \mu\mathrm{g\ mL^{-1}}$ dsDNA.
 
@@ -281,7 +281,7 @@ Common Pitfall Students often confuse Southern, Northern, and Western blotting. 
 <summary>Problem 1</summary>
 Describe the process of producing recombinant human insulin using genetic engineering. Include reference to restriction enzymes, DNA ligase, vectors, and selection methods. (6 marks)
 
-**Answer.** (1) The human insulin gene is located and cut from human DNA using a restriction enzyme (e.g., EcoRI), producing sticky ends. (2) The same restriction enzyme cuts a plasmid vector at a specific site, often within the lacZ gene. (3) The insulin gene and the cut plasmid are mixed with DNA ligase, which joins them by forming phosphodiester bonds, producing a recombinant plasmid. (4) The recombinant plasmid is introduced into _E. coli_ host cells by transformation (heat shock or electroporation). (5) Transformed bacteria are selected by growing them on agar plates containing ampicillin. Only bacteria that have taken up the plasmid (which carries an ampicillin resistance gene) survive. (6) To distinguish bacteria with the recombinant plasmid from those with the original plasmid, bacteria are grown on plates containing X-gal and IPTG. Bacteria with the original plasmid produce functional $\beta$-galactosidase (from the intact lacZ gene) and form blue colonies. Bacteria with the recombinant plasmid have the insulin gene inserted into lacZ, disrupting it, and form white colonies. (7) White colonies are selected and grown in large fermenters. Insulin is extracted and purified.
+**Answer.** (1) The human insulin gene is located and cut from human DNA using a restriction enzyme (e.g., EcoRI), producing sticky ends. (2) The same restriction enzyme cuts a plasmid vector at a specific site, often within the lacZ gene. (3) The insulin gene and the cut plasmid are mixed with DNA ligase, which joins them by forming phosphodiester bonds, producing a recombinant plasmid. (4) The recombinant plasmid is introduced into _E. Coli_ host cells by transformation (heat shock or electroporation). (5) Transformed bacteria are selected by growing them on agar plates containing ampicillin. Only bacteria that have taken up the plasmid (which carries an ampicillin resistance gene) survive. (6) To distinguish bacteria with the recombinant plasmid from those with the original plasmid, bacteria are grown on plates containing X-gal and IPTG. Bacteria with the original plasmid produce functional $\beta$-galactosidase (from the intact lacZ gene) and form blue colonies. Bacteria with the recombinant plasmid have the insulin gene inserted into lacZ, disrupting it, and form white colonies. (7) White colonies are selected and grown in large fermenters. Insulin is extracted and purified.
 
 <b>If you get this wrong, revise:</b> [Procedure for Producing Recombinant DNA](#13-procedure-for-producing-recombinant-dna)
 
@@ -291,7 +291,7 @@ Describe the process of producing recombinant human insulin using genetic engine
 <summary>Problem 2</summary>
 Explain how CRISPR-Cas9 can be used to correct a disease-causing mutation. In your answer, describe the roles of the guide RNA, Cas9 protein, PAM sequence, and the cell's DNA repair mechanisms. (6 marks)
 
-**Answer.** CRISPR-Cas9 is a gene editing tool that can precisely cut DNA at a specific location. A guide RNA (gRNA) is designed to be complementary to the target DNA sequence containing the disease-causing mutation. The gRNA-Cas9 complex scans the genome for the target sequence adjacent to a PAM (protospacer adjacent motif, typically 5'-NGG-3'). When the gRNA base-pairs with the target and the PAM is recognised, Cas9 cuts both strands of the DNA, creating a double-strand break (DSB). To correct the mutation, a donor DNA template is provided that contains the correct (wild-type) sequence flanked by regions homologous to the target. The cell repairs the DSB using homology-directed repair (HDR), using the donor template as a guide to insert the correct sequence. This corrects the mutation. If HDR does not occur, the cell may use non-homologous end joining (NHEJ), which can introduce indels that disrupt the gene further. The efficiency of HDR can be increased by using modified Cas9 (nickase versions that create single-strand breaks, which favour HDR).
+**Answer.** CRISPR-Cas9 is a gene editing tool that can precisely cut DNA at a specific location. A guide RNA (gRNA) is designed to be complementary to the target DNA sequence containing the disease-causing mutation. The gRNA-Cas9 complex scans the genome for the target sequence adjacent to a PAM (protospacer adjacent motif, 5'-NGG-3'). When the gRNA base-pairs with the target and the PAM is recognised, Cas9 cuts both strands of the DNA, creating a double-strand break (DSB). To correct the mutation, a donor DNA template is provided that contains the correct (wild-type) sequence flanked by regions homologous to the target. The cell repairs the DSB using homology-directed repair (HDR), using the donor template as a guide to insert the correct sequence. This corrects the mutation. If HDR does not occur, the cell may use non-homologous end joining (NHEJ), which can introduce indels that disrupt the gene further. The efficiency of HDR can be increased by using modified Cas9 (nickase versions that create single-strand breaks, which favour HDR).
 
 <b>If you get this wrong, revise:</b> [CRISPR-Cas9](#6-crispr-cas9)
 
@@ -309,13 +309,13 @@ Compare and contrast somatic gene therapy and germ line gene therapy. Discuss th
 
 <details>
 <summary>Problem 4</summary>
-A plasmid has a total length of $4500\ \mathrm{bp}$. It is cut with two restriction enzymes: EcoRI cuts at position $900\ \mathrm{bp}$, and HindIII cuts at position $2700\ \mathrm{bp}$. (a) How many fragments are produced? (b) What are their sizes? (c) If the fragments are separated by gel electrophoresis, which fragment will travel furthest from the wells?
+A plasmid has a total length of $4500\ \mathrm{bp}$. It is cut with two restriction enzymes: EcoRI cuts at position $900\ \mathrm{bp}$And HindIII cuts at position $2700\ \mathrm{bp}$. (a) How many fragments are produced? (b) What are their sizes? (c) If the fragments are separated by gel electrophoresis, which fragment will travel furthest from the wells?
 
 **Answer.** (a) Two cuts produce three fragments.
 
 (b) Fragment 1: from position 0 to 900 = $900\ \mathrm{bp}$ (circular plasmid) or from the start of the linearised plasmid to the first cut. Fragment 2: from position 900 to 2700 = $1800\ \mathrm{bp}$. Fragment 3: from position 2700 to 4500 = $1800\ \mathrm{bp}$.
 
-The three fragments are: $900\ \mathrm{bp}$, $1800\ \mathrm{bp}$, and $1800\ \mathrm{bp}$.
+The three fragments are: $900\ \mathrm{bp}$$1800\ \mathrm{bp}$And $1800\ \mathrm{bp}$.
 
 (c) The smallest fragment ($900\ \mathrm{bp}$) will travel furthest from the wells because smaller DNA fragments migrate faster through the gel matrix.
 
@@ -361,7 +361,7 @@ Golden Rice 1 produced insufficient $\beta$-carotene ($1.6\ \mu\mathrm{g\ g^{-1}
 | Argument For | Argument Against |
 | ------------ | ---------------- |
 | Addresses a major public health problem (VAD blindness) | Concerns about corporate control of food supply (patents on GM crops) |
-| Rice is self-pollinating, so transgenes do not spread easily to wild relatives | Gene flow to wild rice species could have unintended ecological consequences |
+| Rice is self-pollinating, so transgenes do not spread to wild relatives | Gene flow to wild rice species could have unintended ecological consequences |
 | Golden Rice seeds are distributed free to subsistence farmers (humanitarian licence) | Some argue that VAD is better addressed by dietary diversification (eating more vegetables) rather than GM technology |
 | Reduces reliance on vitamin A supplements (cost, distribution logistics) | Long-term health effects of consuming GM foods are unknown (though no evidence of harm to date) |
 | Could be combined with other traits (drought resistance, pest resistance) | Public opposition to GM food may prevent adoption |
@@ -404,7 +404,7 @@ BLAST is the most widely used bioinformatics tool. It compares a query DNA or pr
 
 **How BLAST works:**
 
-1. The query sequence is broken into short "words" (typically 3 amino acids for protein BLAST).
+1. The query sequence is broken into short "words" ( 3 amino acids for protein BLAST).
 2. The database is scanned for exact matches to these words.
 3. For each exact match found, BLAST extends the alignment in both directions.
 4. High-scoring segment pairs (HSPs) are identified using a substitution matrix (e.g., BLOSUM62 for proteins).
@@ -467,16 +467,16 @@ Species A and B are most closely related (identical in this region). Species C i
 
 1. **Stage 0: Selection and preparation.** A healthy, disease-free mother plant is selected. Explants (leaf discs, stem sections, meristems) are surface-sterilised using sodium hypochlorite or ethanol.
 2. **Stage 1: Initiation.** Explants are placed on a nutrient medium containing:
-   - **Macronutrients**: N, P, K, Ca, Mg, S.
-   - **Micronutrients**: Fe, Mn, Zn, Cu, B, Mo.
-   - **Carbon source**: sucrose (since the explant cannot photosynthesise).
-   - **Vitamins**: thiamine, nicotinic acid.
-   - **Plant growth regulators**: auxin (e.g., 2,4-D) and cytokinin (e.g., BAP). The auxin:cytokinin ratio determines the response:
-     - High auxin : low cytokinin $\to$ root formation.
-     - Low auxin : high cytokinin $\to$ shoot formation.
-     - Balanced ratio $\to$ callus formation (undifferentiated cell mass).
-   - **Gelling agent**: agar.
-   - The medium is solidified with agar and sterilised by autoclaving.
+ - **Macronutrients**: N, P, K, Ca, Mg, S.
+ - **Micronutrients**: Fe, Mn, Zn, Cu, B, Mo.
+ - **Carbon source**: sucrose (since the explant cannot photosynthesise).
+ - **Vitamins**: thiamine, nicotinic acid.
+ - **Plant growth regulators**: auxin (e.g., 2,4-D) and cytokinin (e.g., BAP). The auxin:cytokinin ratio determines the response:
+ - High auxin : low cytokinin $\to$ root formation.
+ - Low auxin : high cytokinin $\to$ shoot formation.
+ - Balanced ratio $\to$ callus formation (undifferentiated cell mass).
+ - **Gelling agent**: agar.
+ - The medium is solidified with agar and sterilised by autoclaving.
 3. **Stage 2: Multiplication.** Callus or shoot tips are subcultured onto fresh medium to produce multiple shoots. Each shoot can be further divided, allowing exponential multiplication.
 4. **Stage 3: Rooting.** Individual shoots are transferred to a rooting medium (high auxin) to induce root formation, producing complete plantlets.
 5. **Stage 4: Acclimatisation (hardening off).** Plantlets are transferred from the sterile, high-humidity culture vessel to soil. This is the most critical stage because the plantlets must transition from heterotrophic growth (using sucrose from the medium) to autotrophic growth (photosynthesis) and develop a functional cuticle to prevent water loss.
@@ -484,7 +484,7 @@ Species A and B are most closely related (identical in this region). Species C i
 ### 13.3 Applications
 
 - Mass production of ornamental plants (orchids, ferns) and crop plants (bananas, potatoes, strawberries).
-- Production of disease-free plants (e.g., virus-free potatoes by culturing meristem tissue, which typically has low viral load).
+- Production of disease-free plants (e.g., virus-free potatoes by culturing meristem tissue, which has low viral load).
 - Conservation of endangered plant species.
 - Production of secondary metabolites (e.g., shikonin, a dye, from cell cultures of _Lithospermum_).
 
@@ -523,7 +523,7 @@ Species A and B are most closely related (identical in this region). Species C i
 
 To maximise product yield, the following factors must be optimised:
 
-- **Temperature**: affects enzyme activity and growth rate. Each organism has an optimum temperature (e.g., $37$ degrees C for _E. coli_, $30$ degrees C for _S. cerevisiae_). Fermentation generates heat, so cooling systems are needed.
+- **Temperature**: affects enzyme activity and growth rate. Each organism has an optimum temperature (e.g., $37$ degrees C for _E. Coli_, $30$ degrees C for _S. Cerevisiae_). Fermentation generates heat, so cooling systems are needed.
 - **pH**: affects enzyme activity and membrane transport. Buffers or acid/base addition maintain pH.
 - **Oxygen concentration**: aerobic fermentations require continuous aeration (sparging with sterile air). Dissolved oxygen probes monitor $\mathrm{O_2}$ levels.
 - **Nutrient concentration**: limiting nutrients can control growth rate (chemostat). Carbon, nitrogen, and phosphate sources must be optimised.
@@ -600,7 +600,7 @@ The human gut microbiome consists of approximately $10^{13}$--$10^{14}$ bacteria
 - **Obesity**: altered Firmicutes:Bacteroidetes ratio (controversial; findings are inconsistent between studies).
 - **Type 2 diabetes**: reduced abundance of butyrate-producing bacteria.
 - **Mental health**: the "gut-brain axis" -- the vagus nerve and immune signals communicate between the gut and brain. Dysbiosis has been linked to anxiety, depression, and autism spectrum disorder.
-- **Clostridioides difficile infection**: broad-spectrum antibiotics kill commensal bacteria, allowing _C. difficile_ to overgrow. Treated with **faecal microbiota transplantation (FMT)** -- transferring stool from a healthy donor to the patient's colon, which restores a healthy microbiome.
+- **Clostridioides difficile infection**: broad-spectrum antibiotics kill commensal bacteria, allowing _C. Difficile_ to overgrow. Treated with **faecal microbiota transplantation (FMT)** -- transferring stool from a healthy donor to the patient's colon, which restores a healthy microbiome.
 
 ### 16.4 Probiotics and Prebiotics
 
@@ -669,7 +669,7 @@ The **threshold cycle** ($C_t$) is the cycle number at which the fluorescence ex
 
 The amount of DNA doubles with each cycle: after $n$ cycles, the amount of DNA $= \text{initial amount} \times 2^n$.
 
-If Sample A has $C_t = 20$ and Sample B has $C_t = 26$, the difference is 6 cycles. The starting concentration of DNA in Sample A is $2^6 = 64$ times higher than in Sample B.
+If Sample A has $C_t = 20$ and Sample B has $C_t = 26$The difference is 6 cycles. The starting concentration of DNA in Sample A is $2^6 = 64$ times higher than in Sample B.
 
 ### 18.3 Reverse Transcription PCR (RT-PCR)
 
@@ -721,11 +721,11 @@ A suspect's DNA profile matches the crime scene sample at 10 STR loci. The frequ
 | ... | ... | ... |
 | D18S51 | 13, 16 | 0.07 $\times$ 0.09 = 0.0063 |
 
-The match probability is the product of the frequencies at all 10 loci. If the average frequency per locus is approximately $0.005$, then:
+The match probability is the product of the frequencies at all 10 loci. If the average frequency per locus is approximately $0.005$Then:
 
 $\text{Match probability} = (0.005)^{10} = 9.77 \times 10^{-24}$.
 
-This means the probability of a random person matching the DNA profile is approximately 1 in $10^{23}$, making it virtually certain that the suspect is the source of the DNA.
+This means the probability of a random person matching the DNA profile is approximately 1 in $10^{23}$Making it virtually certain that the suspect is the source of the DNA.
 
 ## 20. Cloning Organisms
 
@@ -809,13 +809,13 @@ Common Pitfall Students often use the terms "genome," "transcriptome," "proteome
 
 **Key challenge:** penicillin is sensitive to pH (it is hydrolysed at acidic or alkaline pH). The fermentation must be carefully controlled to maintain the optimum pH. The original strain produced very low yields ($\approx 2\ \mathrm{mg\ L^{-1}}$); modern strains (after extensive mutation and selection programmes) produce over $50\ \mathrm{g\ L^{-1}}$.
 
-### 26.2 Insulin Production by Recombinant _E. coli_
+### 26.2 Insulin Production by Recombinant _E. Coli_
 
 **Process:**
 1. The human insulin gene (or genes for A and B chains) is inserted into a plasmid vector.
-2. The recombinant plasmid is transformed into _E. coli_.
-3. _E. coli_ is grown in large fermenters under controlled conditions.
-4. The insulin protein is produced as **inclusion bodies** (insoluble aggregates in the cytoplasm) because it is a eukaryotic protein that does not fold correctly in _E. coli_.
+2. The recombinant plasmid is transformed into _E. Coli_.
+3. _E. Coli_ is grown in large fermenters under controlled conditions.
+4. The insulin protein is produced as **inclusion bodies** (insoluble aggregates in the cytoplasm) because it is a eukaryotic protein that does not fold correctly in _E. Coli_.
 5. The inclusion bodies must be solubilised (using denaturants such as urea), and the insulin must be refolded and enzymatically processed (A and B chains are joined by disulphide bonds) to produce functional insulin.
 
 **Yield:** modern processes produce approximately 100 mg of insulin per litre of culture.
@@ -827,7 +827,7 @@ Common Pitfall Students often use the terms "genome," "transcriptome," "proteome
 | Pollutant | Microorganism | Mechanism |
 | -------- | ------------- | --------- |
 | Oil spills | _Pseudomonas_ spp., _Alcanivorax_ | Degrade hydrocarbons in crude oil into $\mathrm{CO_2}$ and water |
-| Heavy metals | _Geobacter_ spp. | Reduce $\mathrm{U^{6+}}$ to $\mathrm{U^{4+}}$, making uranium insoluble and immobilising it |
+| Heavy metals | _Geobacter_ spp. | Reduce $\mathrm{U^{6+}}$ to $\mathrm{U^{4+}}$Making uranium insoluble and immobilising it |
 | Pesticides | _Bacillus_ spp. | Produce enzymes that break down organophosphate pesticides |
 | Sewage | Mixed microbial communities | Degrade organic matter in primary and secondary treatment |
 | Plastic pollution | _Ideonella sakaiensis_ | Produces PETase enzyme that breaks down PET plastic |
@@ -915,7 +915,7 @@ After Cas9 creates a DSB, the cell repairs it using one of two mechanisms:
 | Non-homologous end joining (NHEJ) | The broken ends are rejoined, often with small insertions or deletions (indels) | **Gene knockout**: the indels cause a frameshift, producing a non-functional protein |
 | Homology-directed repair (HDR) | A DNA template with homology to the sequences flanking the break is used as a repair guide | **Gene knock-in**: a specific sequence (e.g., a corrected gene, a reporter gene) is inserted at the break site |
 
-HDR is less efficient than NHEJ and requires a donor DNA template. It typically occurs during the S and G2 phases of the cell cycle (when sister chromatids are available as templates).
+HDR is less efficient than NHEJ and requires a donor DNA template. It occurs during the S and G2 phases of the cell cycle (when sister chromatids are available as templates).
 
 ### 22.3 Applications
 
@@ -948,20 +948,20 @@ Mitigation strategies:
 
 1. **Isolate the human insulin gene**: the gene for human insulin (or its A and B chain coding sequences) is identified using the known amino acid sequence (reverse translation using the genetic code). Alternatively, the gene is obtained from a cDNA library (complementary DNA synthesised from human pancreatic mRNA by reverse transcriptase).
 
-2. **Prepare the vector**: a plasmid (e.g., pBR322) is isolated from _E. coli_. The plasmid is cut with the same restriction enzyme(s) used to excise the insulin gene, creating complementary sticky ends.
+2. **Prepare the vector**: a plasmid (e.g., pBR322) is isolated from _E. Coli_. The plasmid is cut with the same restriction enzyme(s) used to excise the insulin gene, creating complementary sticky ends.
 
 3. **Ligate**: the insulin gene is mixed with the cut plasmid and DNA ligase, which joins the gene into the plasmid at the restriction site. The resulting recombinant plasmid contains the insulin gene.
 
-4. **Transform**: the recombinant plasmid is introduced into _E. coli_ cells by:
-   - **Heat shock**: cells are made competent (treated with $\mathrm{CaCl_2}$ to make the membrane permeable), mixed with plasmid DNA, and heated to $42$ degrees C for 90 seconds (causes the membrane to become transiently permeable).
-   - **Electroporation**: an electric pulse creates temporary pores in the cell membrane.
+4. **Transform**: the recombinant plasmid is introduced into _E. Coli_ cells by:
+ - **Heat shock**: cells are made competent (treated with $\mathrm{CaCl_2}$ to make the membrane permeable), mixed with plasmid DNA, and heated to $42$ degrees C for 90 seconds (causes the membrane to become transiently permeable).
+ - **Electroporation**: an electric pulse creates temporary pores in the cell membrane.
 
 5. **Select**: transformed bacteria are grown on agar plates containing an antibiotic (e.g., ampicillin). Only bacteria that have taken up the plasmid (which carries an ampicillin resistance gene) survive.
 
 6. **Screen**: to confirm that the plasmid contains the insulin gene (not just religated plasmid without the insert), colonies are screened by:
-   - **Blue-white screening** (if using a plasmid with lacZ gene): colonies with the insert are white; colonies without the insert are blue.
-   - **Colony PCR**: amplifying the insert region from bacterial colonies using primers flanking the cloning site.
-   - **Restriction digest analysis**: isolating plasmid DNA and cutting with restriction enzymes to check for the correct insert size.
+ - **Blue-white screening** (if using a plasmid with lacZ gene): colonies with the insert are white; colonies without the insert are blue.
+ - **Colony PCR**: amplifying the insert region from bacterial colonies using primers flanking the cloning site.
+ - **Restriction digest analysis**: isolating plasmid DNA and cutting with restriction enzymes to check for the correct insert size.
 
 7. **Culture and harvest**: confirmed recombinant bacteria are grown in large fermenters. The bacteria express the insulin gene, producing proinsulin (or the A and B chains separately).
 
@@ -1024,19 +1024,19 @@ The protein is: Met-Pro-Arg-Ser-Ala-Arg-Ser (7 amino acids, 21 nucleotides of co
 
 | Mechanism | Genetic Basis | Example |
 | --------- | ------------ | ------- |
-| Enzymatic destruction | Plasmid-borne $\beta$-lactamase gene | ESBL-producing _E. coli_ |
+| Enzymatic destruction | Plasmid-borne $\beta$-lactamase gene | ESBL-producing _E. Coli_ |
 | Target modification | Mutations in penicillin-binding proteins | MRSA (_mecA_ gene) |
 | Reduced permeability | Mutations in porin proteins | _Pseudomonas aeruginosa_ (carbapenem resistance) |
-| Active efflux | Overexpression of efflux pump genes | _E. coli_ (multidrug resistance) |
-| Alternative pathway | Mutation in target enzyme | _M. tuberculosis_ (rifampicin resistance) |
+| Active efflux | Overexpression of efflux pump genes | _E. Coli_ (multidrug resistance) |
+| Alternative pathway | Mutation in target enzyme | _M. Tuberculosis_ (rifampicin resistance) |
 
 ### 28.2 Horizontal Gene Transfer of Resistance
 
 | Method | Description | Example |
 | ------ | ----------- | ------- |
-| Conjugation | Cell-to-cell contact via pilus; plasmid transfer | R plasmid transferred between _E. coli_ and _Klebsiella_ |
-| Transformation | Uptake of free DNA from environment | _S. pneumoniae_ acquiring penicillin resistance |
-| Transduction | Bacteriophage transfers bacterial DNA | Phage-mediated toxin gene transfer in _C. diphtheriae_ |
+| Conjugation | Cell-to-cell contact via pilus; plasmid transfer | R plasmid transferred between _E. Coli_ and _Klebsiella_ |
+| Transformation | Uptake of free DNA from environment | _S. Pneumoniae_ acquiring penicillin resistance |
+| Transduction | Bacteriophage transfers bacterial DNA | Phage-mediated toxin gene transfer in _C. Diphtheriae_ |
 
 ### 28.3 The Antibiotic Resistance Crisis
 
@@ -1061,7 +1061,7 @@ The human microbiome consists of approximately $10^{13}$--$10^{14}$ microorganis
 
 FMT involves transferring faecal material from a healthy donor to a patient to restore a healthy gut microbiome. It is most effective for treating recurrent _Clostridium difficile_ infection (cure rate > 90%), which often develops after broad-spectrum antibiotic treatment destroys the normal gut microbiota.
 
-Mechanism: the donor microbiota outcompetes _C. difficile_ for nutrients and adhesion sites, produces antimicrobial substances, and restores colonisation resistance.
+Mechanism: the donor microbiota outcompetes _C. Difficile_ for nutrients and adhesion sites, produces antimicrobial substances, and restores colonisation resistance.
 
 ### 29.3 Probiotics and Prebiotics
 
@@ -1084,7 +1084,7 @@ Applications: gene knockdown in research; pest-resistant crops (e.g., GM papaya 
 
 ### 30.2 Induced Pluripotent Stem Cells (iPSCs)
 
-iPSCs are adult somatic cells that have been reprogrammed to a pluripotent state by introducing four transcription factors (Oct4, Sox2, Klf4, c-Myc -- the "Yamanaka factors"). iPSCs can differentiate into any cell type, offering potential for:
+IPSCs are adult somatic cells that have been reprogrammed to a pluripotent state by introducing four transcription factors (Oct4, Sox2, Klf4, c-Myc -- the "Yamanaka factors"). IPSCs can differentiate into any cell type, offering potential for:
 
 - **Disease modelling**: creating patient-specific cell lines to study disease mechanisms.
 - **Drug testing**: testing drug efficacy and toxicity on patient-specific cells.
@@ -1129,7 +1129,7 @@ Biosensors use biological components to detect specific substances:
 
 - **Medical diagnostics**: glucose monitors for diabetes (glucose oxidase electrode); pregnancy tests (monoclonal antibodies to hCG).
 - **Environmental monitoring**: detecting pesticides, heavy metals, BOD (biochemical oxygen demand) in water.
-- **Food safety**: detecting pathogens (e.g., _Salmonella_, _E. coli_ O157) in food samples.
+- **Food safety**: detecting pathogens (e.g., _Salmonella_, _E. Coli_ O157) in food samples.
 - **Biodefence**: detecting anthrax, smallpox, or other biological weapons.
 
 ### 31.3 Bioprocessing and Downstream Processing
@@ -1153,7 +1153,7 @@ After fermentation, the desired product must be extracted and purified:
 | Temperature control | Water bath or incubator | Jacketed vessel with cooling water |
 | pH control | Manual or simple buffer | Automated acid/base addition |
 | Sterilisation | Autoclave | Steam-in-place (SIP) at 121 degrees C for 30+ minutes |
-| Monitoring | Manual sampling | Online probes (pH, dissolved $\mathrm{O_2}$, temperature, foam) |
+| Monitoring | Manual sampling | Online probes (pH, dissolved $\mathrm{O_2}$Temperature, foam) |
 
 ## 32. Genomics and Personalised Medicine
 
@@ -1229,7 +1229,7 @@ Animal cells are grown in vitro for research, drug testing, and biotechnology:
 
 | Requirement | Description |
 | ----------- | ----------- |
-| Growth medium | Contains amino acids, vitamins, glucose, salts, and usually 5--10% foetal bovine serum (FBS, provides growth factors and hormones) |
+| Growth medium | Contains amino acids, vitamins, glucose, salts, and 5--10% foetal bovine serum (FBS, provides growth factors and hormones) |
 | Incubator | 37 degrees C; 5% $\mathrm{CO_2}$ (maintains pH of the medium via bicarbonate buffer system) |
 | Sterile conditions | Laminar flow cabinet; antibiotics/antimycotics in medium |
 | Substrate | Most animal cells are anchorage-dependent (must attach to a surface to divide); tissue culture flasks are coated with collagen or poly-lysine |
@@ -1329,7 +1329,7 @@ Animal cells are grown in vitro for research, drug testing, and biotechnology:
 4. Plant the cutting in moist compost; cover with a plastic bag to maintain humidity.
 5. The cutting develops roots and grows into a genetically identical clone.
 
-**Advantages:** simple, quick, cheap. **Disadvantages:** limited to species that root easily; genetic uniformity increases vulnerability to disease.
+**Advantages:** simple, quick, cheap. **Disadvantages:** limited to species that root ; genetic uniformity increases vulnerability to disease.
 
 ### 36.2 Plant Cloning by Tissue Culture (Micropropagation)
 
@@ -1361,7 +1361,7 @@ Similar to SCNT, but the embryo is used to produce embryonic stem cells (ESCs) r
 
 | Organism | Method | Example |
 | -------- | ------ | ------- |
-| Bacteria | Binary fission (asexual reproduction) | _E. coli_ divides every 20 minutes under optimal conditions |
+| Bacteria | Binary fission (asexual reproduction) | _E. Coli_ divides every 20 minutes under optimal conditions |
 | Fungi | Spore production; fragmentation | Mushrooms release spores; bread mould (_Mucor_) spreads by fragmentation |
 | Plants | Runners (strawberry), tubers (potato), bulbs (daffodil), vegetative propagation | Gardeners take cuttings, divide bulbs, or separate runners |
 | Animals | Parthenogenesis (some insects, reptiles, fish): egg develops without fertilisation | Aphids reproduce parthenogenetically in summer; Komodo dragons can reproduce by parthenogenesis |
@@ -1399,7 +1399,7 @@ DNA fingerprinting can determine paternity by comparing the child's DNA profile 
 
 - The child must have inherited one allele at each locus from the mother and one from the father.
 - If the alleged father does not carry the paternal allele at any locus, he is excluded as the biological father.
-- If the alleged father carries the paternal allele at all loci tested, the probability of paternity is calculated (typically > 99.9% if the man is the biological father).
+- If the alleged father carries the paternal allele at all loci tested, the probability of paternity is calculated ( > 99.9% if the man is the biological father).
 
 ## 38. Bioinformatics: Analysing Biological Data
 
@@ -1427,14 +1427,14 @@ A researcher has identified a gene sequence from an unknown bacterium:
 
 They run a BLASTn (nucleotide BLAST) search against the NCBI database. The top hit is:
 
-5'-ATGGCTAGCTGA-3' (100% identity, E-value $= 10^{-12}$, from _E. coli_ -- lacZ gene fragment)
+5'-ATGGCTAGCTGA-3' (100% identity, E-value $= 10^{-12}$From _E. Coli_ -- lacZ gene fragment)
 
 **Interpretation:**
 - **% identity**: 100% -- every base matches.
 - **E-value**: $10^{-12}$ -- the probability of getting this good a match by chance is 1 in $10^{12}$. An E-value $< 0.05$ is considered significant.
-- **Bit score**: a measure of alignment quality (higher = better). Typically > 50 is significant.
+- **Bit score**: a measure of alignment quality (higher = better). > 50 is significant.
 
-The unknown bacterium likely carries a gene similar to _E. coli_ lacZ ($\beta$-galactosidase).
+The unknown bacterium likely carries a gene similar to _E. Coli_ lacZ ($\beta$-galactosidase).
 
 ### 38.3 Phylogenetic Trees
 
@@ -1505,7 +1505,7 @@ Golden rice is a genetically engineered variety of rice that produces $\beta$-ca
 | 2. Gelatinisation | Starch granules are heated in water; they swell and burst | 80--90$\degree\mathrm{C}$ |
 | 3. Hydrolysis | Enzymes (amylase) break down starch to maltose and glucose | 55--65$\degree\mathrm{C}$; pH 5--6 |
 | 4. Fermentation | Yeast (_Saccharomyces cerevisiae_) anaerobically respires glucose to ethanol + CO2 | 30--35$\degree\mathrm{C}$; anaerobic; pH 4--5 |
-| 5. Distillation | Ethanol is separated from the fermentation mixture (ethanol boils at 78$\degree\mathrm{C}$, water at 100$\degree\mathrm{C}$) | Fractional distillation |
+| 5. Distillation | Ethanol is separated from the fermentation mixture (ethanol boils at 78$\degree\mathrm{C}$Water at 100$\degree\mathrm{C}$) | Fractional distillation |
 
 ## 41. Tissue Culture and Micropropagation
 
@@ -1640,11 +1640,11 @@ Golden rice is a genetically engineered variety of rice that produces $\beta$-ca
 
 ### 46.1 Bioremediation
 
-Bioremediation uses living organisms (usually microorganisms) to clean up polluted environments:
+Bioremediation uses living organisms ( microorganisms) to clean up polluted environments:
 
 | Type | Description | Example |
 | ---- | ----------- | ------- |
-| In situ bioremediation | Contaminants are treated in place (at the site of pollution) | Oil spill cleanup: naturally occurring oil-degrading bacteria (_Pseudomonas_, _Alcanivorax_) break down hydrocarbons; adding nutrients (nitrogen, phosphorus) stimulates their growth |
+| In situ bioremediation | Contaminants are treated in place (at the site of pollution) | Oil spill cleanup: occurring oil-degrading bacteria (_Pseudomonas_, _Alcanivorax_) break down hydrocarbons; adding nutrients (nitrogen, phosphorus) stimulates their growth |
 | Ex situ bioremediation | Contaminated material is removed and treated elsewhere | Soil excavation and composting; biopiles; landfarming |
 | Phytoremediation | Plants are used to absorb, accumulate, or degrade pollutants | _Helianthus_ (sunflower) absorbs heavy metals (lead, uranium) from soil; _Thlaspi caerulescens_ (alpine pennycress) hyperaccumulates zinc and cadmium |
 | Mycoremediation | Fungi are used to break down pollutants | White-rot fungi (_Phanerochaete chrysosporium_) produce lignin peroxidase enzymes that degrade organic pollutants (PCBs, PAHs, dioxins) |
@@ -1689,7 +1689,7 @@ Bioremediation uses living organisms (usually microorganisms) to clean up pollut
 
 ### 48.1 What Are iPSCs?
 
-iPSCs are adult somatic cells that have been reprogrammed to a pluripotent state (similar to embryonic stem cells) by introducing specific transcription factors.
+IPSCs are adult somatic cells that have been reprogrammed to a pluripotent state (similar to embryonic stem cells) by introducing specific transcription factors.
 
 ### 48.2 Yamanaka Factors
 
@@ -1753,7 +1753,7 @@ Synthetic biology applies engineering principles to biology to design and constr
 
 | Achievement | Description |
 | ------------ | ----------- |
-| Synthetic genome | Craig Venter's team created a synthetic bacterial chromosome (M. mycoides JCVI-syn1.0) and transplanted it into a recipient cell; the synthetic genome took over the cell and the cell reproduced |
+| Synthetic genome | Craig Venter's team created a synthetic bacterial chromosome (M. Mycoides JCVI-syn1.0) and transplanted it into a recipient cell; the synthetic genome took over the cell and the cell reproduced |
 | Minimal genome | The smallest genome that supports life (473 genes in _Mycoplasma genitalium_); essential genes were identified by systematically knocking out genes one at a time |
 | BioBricks | Standardised, interchangeable DNA parts (promoters, ribosome binding sites, coding sequences, terminators) that can be assembled into genetic circuits |
 | Genetic circuits | Synthetic gene networks that perform logic functions (AND gates, NOT gates, oscillators) -- the basis of biological computing |
@@ -1847,3 +1847,11 @@ Golden rice is a genetically modified variety of rice that produces beta-caroten
 ---
 :::
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->

@@ -13,8 +13,8 @@ slug: workflows
 ## Choosing a Branching Strategy
 
 A branching strategy defines **when to create branches, how long they live, how they integrate, and
-who can modify which branches**. There is no universal "best" strategy — the right choice depends on
-team size, release cadence, deployment model, and risk tolerance.
+Who can modify which branches**. There is no universal "best" strategy — the right choice depends on
+Team size, release cadence, deployment model, and risk tolerance.
 
 This guide covers the most widely-used strategies, their trade-offs, and when to use each.
 
@@ -22,8 +22,8 @@ This guide covers the most widely-used strategies, their trade-offs, and when to
 
 ### Concept
 
-All developers commit to a single shared branch (typically `main`). Feature branches are extremely
-short-lived (hours, not days). Integration is continuous — every commit is potentially deployable.
+All developers commit to a single shared branch ( `main`). Feature branches are extremely
+Short-lived (hours, not days). Integration is continuous — every commit is potentially deployable.
 
 ```mermaid
 gitGraph
@@ -45,21 +45,21 @@ gitGraph
 
 ### Advantages
 
-| Advantage               | Explanation                                                     |
+| Advantage | Explanation |
 | ----------------------- | --------------------------------------------------------------- |
-| **No merge hell**       | No large, complex merges — changes are integrated incrementally |
-| **Fast feedback**       | CI runs on every commit, catching issues immediately            |
-| **Easy rollback**       | `git revert <hash>` undoes a single commit                      |
-| **Simplified workflow** | No branch management overhead                                   |
+| **No merge hell** | No large, complex merges — changes are integrated incrementally |
+| **Fast feedback** | CI runs on every commit, catching issues immediately |
+| **Easy rollback** | `git revert <hash>` undoes a single commit |
+| **Simplified workflow** | No branch management overhead |
 
 ### Disadvantages
 
-| Disadvantage                    | Mitigation                                  |
+| Disadvantage | Mitigation |
 | ------------------------------- | ------------------------------------------- |
-| Requires robust CI/CD           | Invest in automated testing before adopting |
-| Feature flags add complexity    | Use a feature flag management system        |
-| Large teams may have contention | Use short-lived feature branches (< 1 day)  |
-| Requires disciplined commits    | Commit frequently, keep commits atomic      |
+| Requires robust CI/CD | Invest in automated testing before adopting |
+| Feature flags add complexity | Use a feature flag management system |
+| Large teams may have contention | Use short-lived feature branches (< 1 day) |
+| Requires disciplined commits | Commit frequently, keep commits atomic |
 
 ### When to Use
 
@@ -71,7 +71,7 @@ gitGraph
 :::info
 
 Google, Meta, and many other large tech companies use trunk-based development internally. It scales
-well with proper tooling (Bazel for builds, automated canary deployments).
+Well with proper tooling (Bazel for builds, automated canary deployments).
 
 :::
 
@@ -80,7 +80,7 @@ well with proper tooling (Bazel for builds, automated canary deployments).
 ### Concept
 
 A simplified version of trunk-based development with one long-lived branch (`main`) and short-lived
-feature branches. Every change requires a pull request.
+Feature branches. Every change requires a pull request.
 
 ```mermaid
 gitGraph
@@ -128,7 +128,7 @@ gitGraph
 ### Concept
 
 A structured branching model with two long-lived branches (`main` and `develop`) and several
-short-lived branch types. Originally published by Vincent Driessen in 2010.
+Short-lived branch types. Originally published by Vincent Driessen in 2010.
 
 ```mermaid
 flowchart TD
@@ -162,13 +162,13 @@ flowchart TD
 
 ### Branch Types
 
-| Branch      | Purpose                 | Lifetime  | Created From | Merges Into        |
+| Branch | Purpose | Lifetime | Created From | Merges Into |
 | ----------- | ----------------------- | --------- | ------------ | ------------------ |
-| `main`      | Production releases     | Permanent | —            | —                  |
-| `develop`   | Integration branch      | Permanent | `main`       | —                  |
-| `feature/*` | Feature development     | Short     | `develop`    | `develop`          |
-| `release/*` | Release preparation     | Short     | `develop`    | `main` + `develop` |
-| `hotfix/*`  | Urgent production fixes | Short     | `main`       | `main` + `develop` |
+| `main` | Production releases | Permanent | — | — |
+| `develop` | Integration branch | Permanent | `main` | — |
+| `feature/*` | Feature development | Short | `develop` | `develop` |
+| `release/*` | Release preparation | Short | `develop` | `main` + `develop` |
+| `hotfix/*` | Urgent production fixes | Short | `main` | `main` + `develop` |
 
 ### Workflow
 
@@ -203,21 +203,21 @@ $ git branch -d hotfix/fix-crash
 
 ### Advantages
 
-| Advantage                | Explanation                                                |
+| Advantage | Explanation |
 | ------------------------ | ---------------------------------------------------------- |
-| **Clear separation**     | Features, releases, and hotfixes have distinct branches    |
-| **Parallel development** | Multiple features can be developed simultaneously          |
-| **Release isolation**    | Release branches allow bug fixes without blocking features |
-| **Well-documented**      | Widely understood, many tools support it natively          |
+| **Clear separation** | Features, releases, and hotfixes have distinct branches |
+| **Parallel development** | Multiple features can be developed simultaneously |
+| **Release isolation** | Release branches allow bug fixes without blocking features |
+| **Well-documented** | Widely understood, many tools support it natively |
 
 ### Disadvantages
 
-| Disadvantage            | Explanation                                                                    |
+| Disadvantage | Explanation |
 | ----------------------- | ------------------------------------------------------------------------------ |
-| **Complex**             | 5 branch types, strict merge rules — high cognitive overhead                   |
-| **Merge-heavy**         | Every feature requires a merge commit into `develop`, then another into `main` |
-| **Slow feedback**       | Features can live in isolation for weeks, accumulating conflicts               |
-| **Not ideal for CI/CD** | The `develop` branch creates an unnecessary integration step                   |
+| **Complex** | 5 branch types, strict merge rules — high cognitive overhead |
+| **Merge-heavy** | Every feature requires a merge commit into `develop`Then another into `main` |
+| **Slow feedback** | Features can live in isolation for weeks, accumulating conflicts |
+| **Not ideal for CI/CD** | The `develop` branch creates an unnecessary integration step |
 
 ### When to Use
 
@@ -229,8 +229,8 @@ $ git branch -d hotfix/fix-crash
 :::warning
 
 Git Flow is often overused. For most modern software projects, GitHub Flow or trunk-based
-development is simpler and more effective. Only adopt Git Flow if you genuinely need release
-branches and hotfix workflows.
+Development is simpler and more effective. Only adopt Git Flow if you genuinely need release
+Branches and hotfix workflows.
 
 :::
 
@@ -239,7 +239,7 @@ branches and hotfix workflows.
 ### Concept
 
 Each developer has their own fork (personal copy) of the canonical repository. Changes flow from
-fork → pull request → canonical repository.
+Fork → pull request → canonical repository.
 
 ```mermaid
 flowchart LR
@@ -269,22 +269,22 @@ flowchart LR
 
 ## Comparison Matrix
 
-| Criterion               | Trunk-Based   | GitHub Flow          | Git Flow                    |
+| Criterion | Trunk-Based | GitHub Flow | Git Flow |
 | ----------------------- | ------------- | -------------------- | --------------------------- |
-| **Complexity**          | Low           | Low                  | High                        |
-| **Branch count**        | 1 + ephemeral | 1 + short-lived      | 2 + multiple types          |
-| **Merge frequency**     | Continuous    | Per PR               | Per feature/release         |
-| **CI/CD requirement**   | Mandatory     | Strongly recommended | Recommended                 |
-| **Release model**       | Continuous    | On-demand            | Scheduled                   |
-| **Hotfix handling**     | `git revert`  | Branch from `main`   | Dedicated `hotfix/*` branch |
-| **History cleanliness** | Linear        | Mostly linear        | Complex merge graph         |
-| **Team size**           | Small–medium  | Any                  | Any                         |
-| **Learning curve**      | Low           | Low                  | Moderate                    |
+| **Complexity** | Low | Low | High |
+| **Branch count** | 1 + ephemeral | 1 + short-lived | 2 + multiple types |
+| **Merge frequency** | Continuous | Per PR | Per feature/release |
+| **CI/CD requirement** | Mandatory | Strongly recommended | Recommended |
+| **Release model** | Continuous | On-demand | Scheduled |
+| **Hotfix handling** | `git revert` | Branch from `main` | Dedicated `hotfix/*` branch |
+| **History cleanliness** | Linear | Mostly linear | Complex merge graph |
+| **Team size** | Small–medium | Any | Any |
+| **Learning curve** | Low | Low | Moderate |
 
 ## Commit Message Conventions
 
 Regardless of branching strategy, consistent commit messages are essential. The most widely-used
-convention is **Conventional Commits**:
+Convention is **Conventional Commits**:
 
 ```
 <type>(<scope>): <description>
@@ -294,17 +294,17 @@ convention is **Conventional Commits**:
 [optional footer(s)]
 ```
 
-| Type       | Purpose                                    |
+| Type | Purpose |
 | ---------- | ------------------------------------------ |
-| `feat`     | New feature                                |
-| `fix`      | Bug fix                                    |
-| `docs`     | Documentation changes                      |
-| `style`    | Formatting, whitespace (no code change)    |
+| `feat` | New feature |
+| `fix` | Bug fix |
+| `docs` | Documentation changes |
+| `style` | Formatting, whitespace (no code change) |
 | `refactor` | Code restructuring without behavior change |
-| `perf`     | Performance improvement                    |
-| `test`     | Adding or updating tests                   |
-| `chore`    | Build process, dependencies, tooling       |
-| `ci`       | CI/CD configuration changes                |
+| `perf` | Performance improvement |
+| `test` | Adding or updating tests |
+| `chore` | Build process, dependencies, tooling |
+| `ci` | CI/CD configuration changes |
 
 Examples:
 
@@ -328,7 +328,7 @@ accepting empty input. Update callers to handle ParseError.
 :::tip
 
 Configure `commitlint` with `@commitlint/config-conventional` to enforce commit message conventions
-in CI:
+In CI:
 
 ```bash
 npm install --save-dev @commitlint/cli @commitlint/config-conventional
@@ -336,3 +336,15 @@ echo "export default { extends: ['@commitlint/config-conventional'] };" > commit
 ```
 
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

@@ -9,12 +9,12 @@ slug: query-optimization
 ### Rule-Based vs Cost-Based Optimization
 
 **Rule-Based Optimizer (RBO):** Uses a fixed set of heuristics to transform queries. Access paths
-are chosen based on rules like "use an index if available" and "avoid full table scans." RBO does
-not consider data distribution, row counts, or I/O costs. Oracle deprecated RBO in Oracle 10g.
+Are chosen based on rules like "use an index if available" and "avoid full table scans." RBO does
+Not consider data distribution, row counts, or I/O costs. Oracle deprecated RBO in Oracle 10g.
 
 **Cost-Based Optimizer (CBO):** Estimates the cost of alternative execution plans using statistics
-about the data (row counts, column distributions, index sizes) and system parameters (CPU speed,
-disk I/O cost). PostgreSQL, MySQL, and modern Oracle use CBO exclusively.
+About the data (row counts, column distributions, index sizes) and system parameters (CPU speed,
+Disk I/O cost). PostgreSQL, MySQL, and modern Oracle use CBO exclusively.
 
 ```mermaid
 flowchart TD
@@ -33,7 +33,7 @@ flowchart TD
 ```
 
 The PostgreSQL optimizer uses a **dynamic programming** approach: it explores join orderings and
-access paths, estimating costs based on:
+Access paths, estimating costs based on:
 
 - `seq_page_cost`: cost of a sequential disk page fetch (default 1.0)
 - `random_page_cost`: cost of a random disk page fetch (default 4.0)
@@ -56,21 +56,21 @@ WHERE tablename = 'orders'
 ORDER BY attname;
 ```
 
-| Statistic           | Meaning                                                                             |
+| Statistic | Meaning |
 | ------------------- | ----------------------------------------------------------------------------------- |
-| `null_frac`         | Fraction of rows with NULL in this column                                           |
-| `n_distinct`        | Positive: approximate distinct values. Negative: fraction of rows that are distinct |
-| `avg_width`         | Average byte width of column values                                                 |
-| `correlation`       | Physical vs logical order correlation (-1.0 to 1.0)                                 |
-| `most_common_vals`  | Most frequent values (MCV list)                                                     |
-| `most_common_freqs` | Frequencies of MCV values                                                           |
-| `histogram_bounds`  | Boundaries for histogram of non-MCV values                                          |
+| `null_frac` | Fraction of rows with NULL in this column |
+| `n_distinct` | Positive: approximate distinct values. Negative: fraction of rows that are distinct |
+| `avg_width` | Average byte width of column values |
+| `correlation` | Physical vs logical order correlation (-1.0 to 1.0) |
+| `most_common_vals` | Most frequent values (MCV list) |
+| `most_common_freqs` | Frequencies of MCV values |
+| `histogram_bounds` | Boundaries for histogram of non-MCV values |
 
 ### Histograms
 
 PostgreSQL stores an **equi-depth histogram** with `default_statistics_target` buckets (default
 100). Each bucket contains approximately the same number of rows. The histogram is used to estimate
-selectivity for conditions on non-MCV values.
+Selectivity for conditions on non-MCV values.
 
 ```sql
 -- Increase statistics target for a column with skewed distribution
@@ -84,8 +84,8 @@ SET default_statistics_target = 200;
 ### Correlation
 
 The `correlation` statistic measures how closely the physical row order on disk matches the logical
-order of the column value. A correlation of 1.0 means the data is perfectly sorted by this column on
-disk. This matters for index scans:
+Order of the column value. A correlation of 1.0 means the data is perfectly sorted by this column on
+Disk. This matters for index scans:
 
 ```sql
 -- High correlation (e.g., 0.99): index scan is efficient
@@ -96,7 +96,7 @@ SELECT attname, correlation FROM pg_stats WHERE tablename = 'orders';
 ### Extended Statistics (PostgreSQL 10+)
 
 When multiple columns are used in a WHERE clause, independent column statistics can lead to poor
-estimates. Extended statistics capture cross-column correlations:
+Estimates. Extended statistics capture cross-column correlations:
 
 ```sql
 -- Create extended statistics for column pairs
@@ -114,11 +114,11 @@ ANALYZE orders;
 SELECT * FROM pg_stats_ext WHERE tablename = 'orders';
 ```
 
-| Statistic Type | Captures                              | Use Case                               |
+| Statistic Type | Captures | Use Case |
 | -------------- | ------------------------------------- | -------------------------------------- |
-| `ndistinct`    | Distinct count of column combinations | GROUP BY multiple columns              |
-| `dependencies` | Functional dependencies               | WHERE a = 1 AND b = 2 (b depends on a) |
-| `mcv`          | Most common value combinations        | Multi-column filter selectivity        |
+| `ndistinct` | Distinct count of column combinations | GROUP BY multiple columns |
+| `dependencies` | Functional dependencies | WHERE a = 1 AND b = 2 (b depends on a) |
+| `mcv` | Most common value combinations | Multi-column filter selectivity |
 
 ## Join Strategies
 
@@ -157,8 +157,8 @@ Memory: requires work_mem for the hash table
 --       -> Seq Scan on customers b (cost=0.00..200.00 rows=5000)
 ```
 
-If the hash table exceeds `work_mem`, PostgreSQL spills to disk, creating multiple batches. This
-degrades performance significantly. Monitor with:
+If the hash table exceeds `work_mem`PostgreSQL spills to disk, creating multiple batches. This
+Degrades performance significantly. Monitor with:
 
 ```sql
 -- Check if hash joins spilled to disk
@@ -187,13 +187,13 @@ Best when: both sides already sorted (index order), or when a presorted merge is
 
 ### Join Strategy Selection Guide
 
-| Condition                                          | Preferred Strategy      |
+| Condition | Preferred Strategy |
 | -------------------------------------------------- | ----------------------- |
-| One table is very small (&lt; 1000 rows)           | Nested Loop             |
-| Inner table has a selective index on join key      | Nested Loop             |
-| Both tables large, equijoin, sufficient work_mem   | Hash Join               |
-| Both sides sorted on join key                      | Merge Join              |
-| Non-equijoin (e.g., range condition)               | Nested Loop             |
+| One table is very small (&lt; 1000 rows) | Nested Loop |
+| Inner table has a selective index on join key | Nested Loop |
+| Both tables large, equijoin, sufficient work_mem | Hash Join |
+| Both sides sorted on join key | Merge Join |
+| Non-equijoin (e.g., range condition) | Nested Loop |
 | Inner table large, no index, insufficient work_mem | Merge Join (after sort) |
 
 ## Subquery Optimization
@@ -216,12 +216,12 @@ WHERE o.customer_id IN (
 ```
 
 PostgreSQL may rewrite correlated subqueries as joins (subquery flattening or "pull-up"), but this
-depends on the specific query shape. Use `EXPLAIN` to verify.
+Depends on the specific query shape. Use `EXPLAIN` to verify.
 
 ### Semi-Join
 
 A semi-join returns rows from the outer table where a match exists in the inner table, but does not
-duplicate outer rows. `EXISTS` and `IN` are typically converted to semi-joins:
+Duplicate outer rows. `EXISTS` and `IN` are converted to semi-joins:
 
 ```sql
 -- Both are converted to Hash Semi Join by the optimizer
@@ -232,7 +232,7 @@ SELECT * FROM orders WHERE EXISTS (SELECT 1 FROM premium_customers WHERE id = cu
 ### Materialized Subqueries
 
 CTEs in PostgreSQL 12+ may be inlined or materialized. When materialized, the subquery is executed
-once and stored:
+Once and stored:
 
 ```sql
 -- The CTE may be materialized if referenced multiple times
@@ -292,26 +292,26 @@ SELECT * FROM large_a JOIN large_b ON a.id = b.id;
 
 ### When Parallel Query Helps (and When It Does Not)
 
-| Scenario                       | Parallel Helps? | Reason                                     |
+| Scenario | Parallel Helps? | Reason |
 | ------------------------------ | --------------- | ------------------------------------------ |
-| Full table scan on large table | Yes             | Work distributed across workers            |
-| Aggregates on large tables     | Yes             | Partial aggregates combined at coordinator |
-| Index scan with few rows       | No              | Coordination overhead exceeds scan cost    |
-| Foreign data wrapper queries   | No              | FDW does not support parallel execution    |
-| Queries returning few rows     | No              | Gather overhead exceeds benefit            |
+| Full table scan on large table | Yes | Work distributed across workers |
+| Aggregates on large tables | Yes | Partial aggregates combined at coordinator |
+| Index scan with few rows | No | Coordination overhead exceeds scan cost |
+| Foreign data wrapper queries | No | FDW does not support parallel execution |
+| Queries returning few rows | No | Gather overhead exceeds benefit |
 
 :::warning
 
 Parallel query workers each consume `work_mem` independently. A parallel hash join with 4 workers
-uses 4x `work_mem` for hash tables. Set `work_mem` conservatively on parallel-capable systems, or
-you risk OOM.
+Uses 4x `work_mem` for hash tables. Set `work_mem` conservatively on parallel-capable systems, or
+You risk OOM.
 
 :::
 
 ## Covering Indexes
 
 A covering index contains all columns needed by the query, enabling an **index-only scan** that
-reads the index without touching the heap (table data):
+Reads the index without touching the heap (table data):
 
 ```sql
 -- Query:
@@ -348,8 +348,8 @@ GROUP BY region, order_date;
 
 Index-only scans still access the heap if any column in the index has NULL values, because
 PostgreSQL's visibility information is stored in the heap. To maximize index-only scan efficiency,
-keep indexed columns NOT NULL where possible, or run `VACUUM` regularly to keep visibility map
-accurate.
+Keep indexed columns NOT NULL where possible, or run `VACUUM` regularly to keep visibility map
+Accurate.
 
 :::
 
@@ -376,7 +376,7 @@ CREATE INDEX idx_orders_high_value
 
 Partial indexes are dramatically smaller than full indexes when the condition filters out most rows.
 The planner automatically considers partial indexes when the query contains a compatible WHERE
-clause.
+Clause.
 
 ```sql
 -- This query will use the partial index:
@@ -433,13 +433,13 @@ CREATE INDEX idx_logs_created_brin
     WITH (pages_per_range = 128);
 ```
 
-| Index Type | Size (relative) | Best For                            | Worst For                 |
+| Index Type | Size (relative) | Best For | Worst For |
 | ---------- | --------------- | ----------------------------------- | ------------------------- |
-| B-tree     | Large           | General purpose, equality + range   | Large tables, few queries |
-| BRIN       | Tiny (&lt; 1%)  | Append-only, naturally sorted data  | Random insert order       |
-| Hash       | Medium          | Equality only                       | Range queries, ordering   |
-| GIN        | Large           | Array, full-text, JSONB containment | Exact match, small keys   |
-| GiST       | Medium          | Geometric, range, full-text (trgm)  | Simple equality           |
+| B-tree | Large | General purpose, equality + range | Large tables, few queries |
+| BRIN | Tiny (&lt; 1%) | Append-only, sorted data | Random insert order |
+| Hash | Medium | Equality only | Range queries, ordering |
+| GIN | Large | Array, full-text, JSONB containment | Exact match, small keys |
+| GiST | Medium | Geometric, range, full-text (trgm) | Simple equality |
 
 ## GIN and GiST Indexes
 
@@ -510,16 +510,16 @@ server_idle_timeout = 600
 
 ### Pool Modes
 
-| Mode          | Behavior                                           | Best For                               |
+| Mode | Behavior | Best For |
 | ------------- | -------------------------------------------------- | -------------------------------------- |
-| `session`     | Connection assigned to client for entire session   | Applications using SET/ advisory locks |
+| `session` | Connection assigned to client for entire session | Applications using SET/ advisory locks |
 | `transaction` | Connection returned to pool after each transaction | Most web applications (default choice) |
-| `statement`   | Connection returned to pool after each statement   | Very high concurrency, stateless       |
+| `statement` | Connection returned to pool after each statement | Very high concurrency, stateless |
 
 :::warning
 
 In `transaction` mode, session-level `SET` commands are lost between transactions. Use `SET LOCAL`
-for transaction-scoped settings, or use `search_path` in `pgbouncer.ini` with
+For transaction-scoped settings, or use `search_path` in `pgbouncer.ini` with
 `extra_float_digits = 3`.
 
 :::
@@ -527,8 +527,8 @@ for transaction-scoped settings, or use `search_path` in `pgbouncer.ini` with
 ### Connection overhead
 
 Each PostgreSQL connection consumes approximately 10MB of RAM for process overhead (shared memory
-contexts, work buffers, catalogs). 1000 idle connections consume roughly 10GB with no active
-queries. PgBouncer reduces this to 20 actual PostgreSQL connections serving 1000 clients.
+Contexts, work buffers, catalogs). 1000 idle connections consume roughly 10GB with no active
+Queries. PgBouncer reduces this to 20 actual PostgreSQL connections serving 1000 clients.
 
 ## Prepared Statements
 
@@ -547,8 +547,8 @@ DEALLOCATE get_orders_by_customer;
 ### Plan Caching
 
 PostgreSQL uses a **generic plan** for prepared statements after 5 executions. The generic plan does
-not use the specific parameter values for planning, which can lead to suboptimal plans when data
-distribution is skewed.
+Not use the specific parameter values for planning, which can lead to suboptimal plans when data
+Distribution is skewed.
 
 ```sql
 -- Force a custom plan (uses parameter values for planning, but re-plans each time)
@@ -564,7 +564,7 @@ SET plan_cache_mode = auto;
 :::info
 
 With PgBouncer in transaction mode, server-side prepared statements do not persist across
-transactions. Use the ` prepared_statements` option or driver-side prepared statement emulation.
+Transactions. Use the ` prepared_statements` option or driver-side prepared statement emulation.
 
 :::
 
@@ -675,7 +675,7 @@ ORDER BY calls DESC;
 ### SELECT \*
 
 `SELECT *` retrieves all columns, which prevents index-only scans and wastes I/O bandwidth and
-memory. Always specify the columns you need.
+Memory. Always specify the columns you need.
 
 ### Unnecessary JOINs
 
@@ -725,8 +725,8 @@ CREATE INDEX idx_orders_created_date ON orders ((DATE(created_at)));
 ### Stale Statistics
 
 After bulk loads, deletes, or updates, statistics may be severely out of date. The planner may
-choose a seq scan when an index scan would be 100x faster. Always run `ANALYZE` after significant
-data changes:
+Choose a seq scan when an index scan would be 100x faster. Always run `ANALYZE` after significant
+Data changes:
 
 ```sql
 ANALYZE VERBOSE orders;
@@ -737,7 +737,7 @@ ALTER TABLE orders SET (autovacuum_analyze_scale_factor = 0.01);
 ### work_mem Too Low for Hash Joins
 
 The default `work_mem` is 4MB. A hash join on a table with 10 million rows likely requires much
-more. If the hash table spills to disk, performance degrades by 10-100x:
+More. If the hash table spills to disk, performance degrades by 10-100x:
 
 ```sql
 -- Per-session
@@ -753,7 +753,7 @@ EXPLAIN (ANALYZE, BUFFERS) SELECT ...;
 ### Not Using CONCURRENTLY for Index Creation
 
 `CREATE INDEX` acquires an `ACCESS EXCLUSIVE` lock, blocking all reads and writes. On a production
-table, this means downtime:
+Table, this means downtime:
 
 ```sql
 -- WRONG: blocks all access
@@ -764,7 +764,7 @@ CREATE INDEX CONCURRENTLY idx_orders_date ON orders(order_date);
 ```
 
 `CREATE INDEX CONCURRENTLY` takes longer but does not block concurrent operations. It is the only
-safe way to create indexes on live production tables.
+Safe way to create indexes on live production tables.
 
 ### Ignoring VACUUM on High-Write Tables
 
@@ -778,7 +778,7 @@ Without aggressive autovacuum, dead tuples accumulate, causing:
 ### Over-Indexing
 
 Every index slows down writes (INSERT, UPDATE, DELETE) by 10-30% per index. Indexes consume disk
-space and memory. Create indexes based on actual query patterns, not hypothetical future needs.
+Space and memory. Create indexes based on actual query patterns, not hypothetical future needs.
 Remove unused indexes:
 
 ```sql
@@ -796,7 +796,7 @@ ORDER BY pg_relation_size(indexrelid) DESC;
 
 PostgreSQL stores a `most_common_vals` list (MCV) for the most frequent values, and
 `histogram_bounds` for the rest of the value distribution. The selectivity estimator uses these to
-estimate how many rows a WHERE clause will match.
+Estimate how many rows a WHERE clause will match.
 
 ```sql
 -- Examine MCV and histogram for a column
@@ -813,8 +813,8 @@ WHERE tablename = 'orders' AND attname = 'status';
 ```
 
 When a query filters on a value that is NOT in the MCV list, the planner uses the histogram to
-estimate selectivity. If the histogram has too few buckets (low `statistics_target`), the estimate
-can be wildly wrong.
+Estimate selectivity. If the histogram has too few buckets (low `statistics_target`), the estimate
+Can be wildly wrong.
 
 ```sql
 -- Increase statistics for skewed distributions
@@ -829,7 +829,7 @@ EXPLAIN (ANALYZE) SELECT * FROM orders WHERE customer_id = 12345;
 ### Correlation and Index Scan Efficiency
 
 The `correlation` statistic measures how closely the physical order of rows on disk matches the
-logical order of column values. A correlation of 1.0 means data is perfectly sorted.
+Logical order of column values. A correlation of 1.0 means data is perfectly sorted.
 
 ```sql
 -- Check correlation for frequently queried columns
@@ -853,8 +853,8 @@ CLUSTER orders USING idx_orders_customer_date;
 :::info
 
 `CLUSTER` rewrites the entire table in the order of the specified index. It improves index scan
-performance for that index but degrades it for other indexes. Use `CLUSTER` on the index that
-corresponds to the most common access pattern.
+Performance for that index but degrades it for other indexes. Use `CLUSTER` on the index that
+Corresponds to the most common access pattern.
 
 :::
 
@@ -883,21 +883,21 @@ CREATE INDEX idx_docs_body_gist ON documents USING GiST (body gist_trgm_ops);
 -- Less selective for short patterns
 ```
 
-| Feature        | GIN trigram        | GiST trigram      |
+| Feature | GIN trigram | GiST trigram |
 | -------------- | ------------------ | ----------------- |
-| Substring LIKE | Fast               | Moderate          |
-| Similarity     | Fast               | Fast              |
-| Index size     | Large (3-5x data)  | Small (0.1x data) |
-| Write speed    | Slow               | Fast              |
-| Read speed     | Fast (exact match) | Moderate          |
-| Best for       | Read-heavy         | Write-heavy       |
+| Substring LIKE | Fast | Moderate |
+| Similarity | Fast | Fast |
+| Index size | Large (3-5x data) | Small (0.1x data) |
+| Write speed | Slow | Fast |
+| Read speed | Fast (exact match) | Moderate |
+| Best for | Read-heavy | Write-heavy |
 
 ## Partition Pruning Details
 
 ### Constraint-Based Pruning
 
 PostgreSQL prunes partitions at plan time using the query's WHERE clause against the partition
-bounds:
+Bounds:
 
 ```sql
 -- Partition pruning in action
@@ -918,7 +918,7 @@ WHERE created_at >= '2024-01-01' AND created_at &lt; '2024-04-01';
 ### Partition-Wise Joins
 
 PostgreSQL 11+ supports partition-wise joins, where the optimizer joins matching partitions directly
-instead of joining entire partitioned tables:
+Instead of joining entire partitioned tables:
 
 ```sql
 -- Enable partition-wise joins
@@ -938,22 +938,22 @@ WHERE o.created_at >= '2024-01-01';
 :::warning
 
 Partition-wise joins require both sides to be partitioned on the same key with the same partition
-bounds. If the partitioning schemes do not align, the optimizer falls back to joining the entire
-tables.
+Bounds. If the partitioning schemes do not align, the optimizer falls back to joining the entire
+Tables.
 
 :::
 
 ## Statistics Target Tuning Guide
 
-| Column Pattern                          | Recommended statistics_target | Reason                                        |
+| Column Pattern | Recommended statistics_target | Reason |
 | --------------------------------------- | ----------------------------- | --------------------------------------------- |
-| Boolean (low cardinality)               | 100 (default)                 | Few distinct values, MCV covers all           |
-| Status enum (5-20 values)               | 200                           | MCV needs to capture all values               |
-| Foreign key (many distinct values)      | 100-200                       | Histogram is more important                   |
-| Skewed distribution (power law)         | 500-1000                      | More histogram buckets for accuracy           |
-| Column used in JOINs                    | 200-500                       | Join cardinality estimates matter             |
-| Column used in WHERE with range queries | 200-500                       | Histogram boundaries affect range selectivity |
-| Unique or near-unique                   | 100 (default)                 | n_distinct is sufficient                      |
+| Boolean (low cardinality) | 100 (default) | Few distinct values, MCV covers all |
+| Status enum (5-20 values) | 200 | MCV needs to capture all values |
+| Foreign key (many distinct values) | 100-200 | Histogram is more important |
+| Skewed distribution (power law) | 500-1000 | More histogram buckets for accuracy |
+| Column used in JOINs | 200-500 | Join cardinality estimates matter |
+| Column used in WHERE with range queries | 200-500 | Histogram boundaries affect range selectivity |
+| Unique or near-unique | 100 (default) | n_distinct is sufficient |
 
 ```sql
 -- Set statistics target per column
@@ -969,3 +969,11 @@ SELECT attname, null_frac, n_distinct, array_length(most_common_vals, 1) AS mcv_
        array_length(histogram_bounds, 1) AS buckets
 FROM pg_stats WHERE tablename = 'orders';
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

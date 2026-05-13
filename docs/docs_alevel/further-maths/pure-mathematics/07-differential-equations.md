@@ -13,10 +13,10 @@ sidebar_position: 7
 ## Differential Equations
 
 Differential equations are equations involving derivatives of an unknown function. They arise
-naturally whenever a rate of change is related to the current state of a system — from population
-growth to electrical circuits. This chapter covers first-order equations (separable and integrating
-factor methods), second-order linear equations with constant coefficients, and modelling
-applications.
+ whenever a rate of change is related to the current state of a system — from population
+Growth to electrical circuits. This chapter covers first-order equations (separable and integrating
+Factor methods), second-order linear equations with constant coefficients, and modelling
+Applications.
 
 <DesmosGraph title="Slope Field Explorer" expressions={["dy/dx=x-y"]} width={800} height={500} />
 
@@ -24,16 +24,16 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 ### Board Coverage
 
-| Board   | Paper   | Notes                                                            |
+| Board | Paper | Notes |
 | ------- | ------- | ---------------------------------------------------------------- |
-| AQA     | Paper 1 | First-order (separable, integrating factor), growth/decay models |
-| Edexcel | FP2     | First-order + second-order linear with constant coefficients     |
-| OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients     |
-| CIE     | P2      | First-order (separable, integrating factor); second-order in P2  |
+| AQA | Paper 1 | First-order (separable, integrating factor), growth/decay models |
+| Edexcel | FP2 | First-order + second-order linear with constant coefficients |
+| OCR (A) | Paper 1 | First-order + second-order linear with constant coefficients |
+| CIE | P2 | First-order (separable, integrating factor); second-order in P2 |
 
 :::info All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
-focuses on first-order equations with growth and decay modelling. The formula booklet gives the
-integrating factor formula on Edexcel; AQA and OCR students must know it. :::
+Focuses on first-order equations with growth and decay modelling. The formula booklet gives the
+Integrating factor formula on Edexcel; AQA and OCR students must know it. :::
 
 <hr />
 
@@ -42,11 +42,11 @@ integrating factor formula on Edexcel; AQA and OCR students must know it. :::
 ### 1.1 Definition
 
 **Definition.** A first-order ordinary differential equation (ODE) is **separable** if it can be
-written in the form
+Written in the form
 
 $$\frac{dy}{dx} = f(x)\,g(y)$$
 
-where the right-hand side is a product of a function of $x$ alone and a function of $y$ alone.
+Where the right-hand side is a product of a function of $x$ alone and a function of $y$ alone.
 
 ### 1.2 Method
 
@@ -73,8 +73,8 @@ $$y^2 = x^2 + 4, \quad y = \sqrt{x^2 + 4}$$
 ### 1.4 Domain restrictions
 
 :::warning When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
-$g(y_0) = 0$, then $y = y_0$ is a constant (equilibrium) solution that may not appear in the general
-solution. Always check for these. :::
+$g(y_0) = 0$Then $y = y_0$ is a constant (equilibrium) solution that may not appear in the general
+Solution. Always check for these. :::
 
 **Example.** $\dfrac{dy}{dx} = y(1-y)$.
 
@@ -91,7 +91,7 @@ $\dfrac{y}{1-y} = Ae^x$ where $A = \pm e^C$.
 $$\boxed{y = \frac{Ae^x}{1 + Ae^x}}$$
 
 But note $y = 0$ and $y = 1$ are also solutions (equilibrium solutions), corresponding to $A = 0$
-and the limiting case $A \to \infty$.
+And the limiting case $A \to \infty$.
 
 <hr />
 
@@ -103,7 +103,7 @@ and the limiting case $A \to \infty$.
 
 $$\frac{dy}{dx} + P(x)\,y = Q(x)$$
 
-where $P(x)$ and $Q(x)$ are continuous functions of $x$.
+Where $P(x)$ and $Q(x)$ are continuous functions of $x$.
 
 ### 2.2 The integrating factor
 
@@ -123,7 +123,7 @@ The left-hand side is the derivative of $\mu y$ because:
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y\frac◆LB◆d\mu◆RB◆◆LB◆dx◆RB◆$$
 
-Since $\dfrac◆LB◆d\mu◆RB◆◆LB◆dx◆RB◆ = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$, so
+Since $\dfrac◆LB◆d\mu◆RB◆◆LB◆dx◆RB◆ = \mu \cdot P(x)$ (because $\mu = e^{\int P\,dx}$So
 $\mu' = P \cdot e^{\int P\,dx} = P\mu$):
 
 $$\frac{d}{dx}(\mu y) = \mu\frac{dy}{dx} + y \cdot P\mu = \mu\frac{dy}{dx} + \mu P\,y$$
@@ -144,7 +144,7 @@ $\square$
 
 Solve $\dfrac{dy}{dx} + \dfrac{2}{x}\,y = x^2$ for $x > 0$.
 
-Here $P(x) = \dfrac{2}{x}$, $Q(x) = x^2$.
+Here $P(x) = \dfrac{2}{x}$$Q(x) = x^2$.
 
 $$\mu = e^{\int 2/x\,dx} = e^{2\ln x} = x^2$$
 
@@ -158,9 +158,9 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 ### 2.5 Worked example with boundary condition
 
-Solve $\dfrac{dy}{dx} - 3y = e^{2x}$, given $y(0) = 1$.
+Solve $\dfrac{dy}{dx} - 3y = e^{2x}$Given $y(0) = 1$.
 
-$P(x) = -3$, $Q(x) = e^{2x}$.
+$P(x) = -3$$Q(x) = e^{2x}$.
 
 $$\mu = e^{\int -3\,dx} = e^{-3x}$$
 
@@ -187,7 +187,7 @@ Always choose the simplest antiderivative. :::
 
 $$a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = f(x)$$
 
-where $a$, $b$, $c$ are constants with $a \neq 0$.
+Where $a$$b$$c$ are constants with $a \neq 0$.
 
 The equation is **homogeneous** when $f(x) = 0$:
 
@@ -223,8 +223,8 @@ $$\boxed{y = e^{\alpha x}(A\cos\beta x + B\sin\beta x)}$$
 
 ### Proof of the general solution for Case 3 (complex roots)
 
-When $m = \alpha + \beta i$ and $\overline{m} = \alpha - \beta i$, the two linearly independent
-solutions are $e^{(\alpha+\beta i)x}$ and $e^{(\alpha-\beta i)x}$.
+When $m = \alpha + \beta i$ and $\overline{m} = \alpha - \beta i$The two linearly independent
+Solutions are $e^{(\alpha+\beta i)x}$ and $e^{(\alpha-\beta i)x}$.
 
 Using Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$:
 
@@ -236,7 +236,7 @@ Any linear combination $C_1 e^{(\alpha+\beta i)x} + C_2 e^{(\alpha-\beta i)x}$ c
 $$e^{\alpha x}\left[(C_1+C_2)\cos\beta x + i(C_1-C_2)\sin\beta x\right]$$
 
 Setting $A = C_1 + C_2$ and $B = i(C_1 - C_2)$ (which are real when $C_1$ and $C_2$ are complex
-conjugates), we obtain:
+Conjugates), we obtain:
 
 $$y = e^{\alpha x}(A\cos\beta x + B\sin\beta x)$$
 
@@ -285,23 +285,23 @@ $$ay'' + by' + cy = a(y_1'' + y_p'') + b(y_1' + y_p') + c(y_1 + y_p)$$
 $$= (ay_1'' + by_1' + cy_1) + (ay_p'' + by_p' + cy_p) = 0 + f(x) = f(x)$$
 
 So $y_1 + y_p$ satisfies the non-homogeneous equation. Since $y_1$ contains two arbitrary constants,
-the general solution $y = y_h + y_p$ also contains two arbitrary constants. $\square$
+The general solution $y = y_h + y_p$ also contains two arbitrary constants. $\square$
 
 ### 4.2 Method of undetermined coefficients
 
-To find $y_p$, guess the form based on $f(x)$, then determine coefficients by substitution.
+To find $y_p$Guess the form based on $f(x)$Then determine coefficients by substitution.
 
-| $f(x)$          | Trial $y_p$ (if not in CF)        | If in CF, multiply by $x$          |
+| $f(x)$ | Trial $y_p$ (if not in CF) | If in CF, multiply by $x$ |
 | --------------- | --------------------------------- | ---------------------------------- |
-| $k$ (constant)  | $c$                               | $cx$ then $cx^2$                   |
-| $kx + \ell$     | $px + q$                          | $x(px+q)$ then $x^2(px+q)$         |
-| $ke^{\alpha x}$ | $ce^{\alpha x}$                   | $cxe^{\alpha x}$                   |
-| $k\cos\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
-| $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$   | $x(c\cos\omega x + d\sin\omega x)$ |
-| Polynomial      | General polynomial of same degree | Multiply by $x$ as needed          |
+| $k$ (constant) | $c$ | $cx$ then $cx^2$ |
+| $kx + \ell$ | $px + q$ | $x(px+q)$ then $x^2(px+q)$ |
+| $ke^{\alpha x}$ | $ce^{\alpha x}$ | $cxe^{\alpha x}$ |
+| $k\cos\omega x$ | $c\cos\omega x + d\sin\omega x$ | $x(c\cos\omega x + d\sin\omega x)$ |
+| $k\sin\omega x$ | $c\cos\omega x + d\sin\omega x$ | $x(c\cos\omega x + d\sin\omega x)$ |
+| Polynomial | General polynomial of same degree | Multiply by $x$ as needed |
 
-:::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$,
-multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
+:::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$
+Multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
 
 ### 4.3 Worked examples
 
@@ -309,7 +309,7 @@ multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
 
 CF: $m^2 - 3m + 2 = 0 \implies (m-1)(m-2) = 0 \implies m = 1, 2$. $y_h = Ae^x + Be^{2x}$.
 
-PI: Since $f(x) = 4e^{3x}$ and $e^{3x}$ is not in the CF, try $y_p = ce^{3x}$. $y_p' = 3ce^{3x}$,
+PI: Since $f(x) = 4e^{3x}$ and $e^{3x}$ is not in the CF, try $y_p = ce^{3x}$. $y_p' = 3ce^{3x}$
 $y_p'' = 9ce^{3x}$.
 
 Substitute: $9ce^{3x} - 9ce^{3x} + 2ce^{3x} = 4e^{3x} \implies 2c = 4 \implies c = 2$.
@@ -332,7 +332,7 @@ $2(-c\sin x + d\cos x) + x(-c\cos x - d\sin x) + x(c\cos x + d\sin x) = \sin x$
 
 $2(-c\sin x + d\cos x) = \sin x$
 
-Comparing: $-2c = 1 \implies c = -\dfrac{1}{2}$, and $2d = 0 \implies d = 0$.
+Comparing: $-2c = 1 \implies c = -\dfrac{1}{2}$And $2d = 0 \implies d = 0$.
 
 $$\boxed{y = A\cos x + B\sin x - \frac{1}{2}x\cos x}$$
 
@@ -340,7 +340,7 @@ $$\boxed{y = A\cos x + B\sin x - \frac{1}{2}x\cos x}$$
 
 CF: $m^2 - 4m + 4 = 0 \implies (m-2)^2 = 0$. $y_h = (A + Bx)e^{2x}$.
 
-PI: Try $y_p = px + q$. $y_p' = p$, $y_p'' = 0$.
+PI: Try $y_p = px + q$. $y_p' = p$$y_p'' = 0$.
 
 $0 - 4p + 4(px + q) = 3x + 2$. $4px + (4q - 4p) = 3x + 2$.
 
@@ -358,7 +358,7 @@ The ODE $\dfrac{dy}{dt} = ky$ (where $k$ is a constant) has solution
 
 $$\boxed{y = y_0 e^{kt}}$$
 
-where $y_0 = y(0)$. If $k > 0$: exponential growth. If $k < 0$: exponential decay.
+Where $y_0 = y(0)$. If $k > 0$: exponential growth. If $k < 0$: exponential decay.
 
 **Proof.** Separable:
 $\dfrac{1}{y}\dfrac{dy}{dt} = k \implies \displaystyle\int \frac{1}{y}\,dy = \int k\,dt \implies \ln y = kt + C$.
@@ -368,21 +368,21 @@ $y = e^{kt+C} = Ae^{kt}$. With $y(0) = y_0$: $A = y_0$. $\square$
 ### 5.2 Newton's law of cooling
 
 **Definition.** Newton's law of cooling states that the rate of temperature change of a body is
-proportional to the difference between its temperature $T$ and the ambient temperature $T_a$:
+Proportional to the difference between its temperature $T$ and the ambient temperature $T_a$:
 
 $$\frac{dT}{dt} = -k(T - T_a)$$
 
-where $k > 0$ is the cooling constant.
+Where $k > 0$ is the cooling constant.
 
-**Solution.** Let $\theta = T - T_a$. Then $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k\theta$, giving
+**Solution.** Let $\theta = T - T_a$. Then $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k\theta$Giving
 $\theta = \theta_0 e^{-kt}$.
 
 $$\boxed{T = T_a + (T_0 - T_a)e^{-kt}}$$
 
 **Example.** A cup of tea at $90°C$ is placed in a room at $20°C$. After 10 minutes the temperature
-is $60°C$. Find the temperature after 20 minutes.
+Is $60°C$. Find the temperature after 20 minutes.
 
-$T_0 = 90$, $T_a = 20$. $T(10) = 60$:
+$T_0 = 90$$T_a = 20$. $T(10) = 60$:
 
 $60 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{40}{70} = \dfrac{4}{7} \implies k = \dfrac{1}{10}\ln\dfrac{7}{4}$.
 
@@ -398,12 +398,12 @@ This is separable. The solution is
 
 $$\boxed{P(t) = \frac{M}{1 + Ae^{-kt}}}$$
 
-where $A = \dfrac{M - P_0}{P_0}$.
+Where $A = \dfrac{M - P_0}{P_0}$.
 
 ### 5.4 Mixing problems
 
 **Example.** A tank contains 100 litres of water with 10 kg of salt. Pure water flows in at 5 L/min,
-and the mixture flows out at 5 L/min. Find the amount of salt after $t$ minutes.
+And the mixture flows out at 5 L/min. Find the amount of salt after $t$ minutes.
 
 Let $S(t)$ be the amount of salt (kg). Rate in = 0. Rate out = concentration $\times$ flow rate
 $= \dfrac{S}{100} \times 5 = \dfrac{S}{20}$.
@@ -421,24 +421,24 @@ After 20 minutes: $S(20) = 10e^{-1} \approx 3.68$ kg.
 ### Proof that the CF gives the general solution
 
 We must show that for all three cases, the proposed general solution has two arbitrary constants and
-satisfies the ODE.
+Satisfies the ODE.
 
-**Case 1 ($m_1 \neq m_2$, real).** Let $y_1 = e^{m_1 x}$ and $y_2 = e^{m_2 x}$.
+**Case 1 ($m_1 \neq m_2$Real).** Let $y_1 = e^{m_1 x}$ and $y_2 = e^{m_2 x}$.
 
 Substituting $y_1$ into $ay'' + by' + cy = 0$:
 $am_1^2 e^{m_1 x} + bm_1 e^{m_1 x} + ce^{m_1 x} = (am_1^2 + bm_1 + c)e^{m_1 x} = 0$ since $m_1$ is a
-root. Similarly for $y_2$.
+Root. Similarly for $y_2$.
 
 The Wronskian is
 $W = y_1 y_2' - y_1' y_2 = m_2 e^{(m_1+m_2)x} - m_1 e^{(m_1+m_2)x} = (m_2 - m_1)e^{(m_1+m_2)x} \neq 0$.
 
-Since $W \neq 0$, $y_1$ and $y_2$ are linearly independent, so $y = Ae^{m_1 x} + Be^{m_2 x}$ is the
-general solution.
+Since $W \neq 0$$y_1$ and $y_2$ are linearly independent, so $y = Ae^{m_1 x} + Be^{m_2 x}$ is the
+General solution.
 
 **Case 2 ($m$ repeated).** $y_1 = e^{mx}$ is one solution. We need a second linearly independent
-solution. Try $y_2 = xe^{mx}$.
+Solution. Try $y_2 = xe^{mx}$.
 
-$y_2' = e^{mx}(1 + mx)$, $y_2'' = e^{mx}(2m + m^2 x)$.
+$y_2' = e^{mx}(1 + mx)$$y_2'' = e^{mx}(2m + m^2 x)$.
 
 $ay_2'' + by_2' + cy_2 = e^{mx}\left[a(2m + m^2 x) + b(1 + mx) + cx\right]$
 
@@ -483,14 +483,14 @@ Section 1.
 <details>
 <summary>Problem 2</summary>
 
-Solve $\dfrac{dy}{dx} + \dfrac{3}{x}\,y = x^2$ for $x > 0$, given $y(1) = 0$.
+Solve $\dfrac{dy}{dx} + \dfrac{3}{x}\,y = x^2$ for $x > 0$Given $y(1) = 0$.
 
 </details>
 
 <details>
 <summary>Solution 2</summary>
 
-$P(x) = 3/x$, $Q(x) = x^2$.
+$P(x) = 3/x$$Q(x) = x^2$.
 
 $\mu = e^{\int 3/x\,dx} = e^{3\ln x} = x^3$.
 
@@ -521,7 +521,7 @@ Solve $y'' - 6y' + 9y = 0$ given $y(0) = 1$ and $y'(0) = 0$.
 
 Auxiliary: $m^2 - 6m + 9 = 0 \implies (m-3)^2 = 0 \implies m = 3$ (repeated).
 
-$y = (A + Bx)e^{3x}$, $y' = (B + 3A + 3Bx)e^{3x}$.
+$y = (A + Bx)e^{3x}$$y' = (B + 3A + 3Bx)e^{3x}$.
 
 $y(0) = 1$: $A = 1$. $y'(0) = 0$: $B + 3 = 0 \implies B = -3$.
 
@@ -543,7 +543,7 @@ Solve $y'' + 4y' + 13y = 0$.
 
 Auxiliary: $m^2 + 4m + 13 = 0 \implies m = \dfrac◆LB◆-4 \pm \sqrt{16-52}◆RB◆◆LB◆2◆RB◆ = -2 \pm 3i$.
 
-$\alpha = -2$, $\beta = 3$.
+$\alpha = -2$$\beta = 3$.
 
 $\boxed{y = e^{-2x}(A\cos 3x + B\sin 3x)}$.
 
@@ -565,7 +565,7 @@ CF: $m^2 - 1 = 0 \implies m = \pm 1$. $y_h = Ae^x + Be^{-x}$.
 
 PI: $f(x) = 2e^x$. Since $e^x$ appears in the CF, try $y_p = cxe^x$.
 
-$y_p' = c(1+x)e^x$, $y_p'' = c(2+x)e^x$.
+$y_p' = c(1+x)e^x$$y_p'' = c(2+x)e^x$.
 
 $y_p'' - y_p = c(2+x)e^x - cxe^x = 2ce^x = 2e^x \implies c = 1$.
 
@@ -588,13 +588,13 @@ Find the general solution of $y'' + 2y' + y = x^2$.
 
 CF: $m^2 + 2m + 1 = 0 \implies (m+1)^2 = 0$. $y_h = (A + Bx)e^{-x}$.
 
-PI: Try $y_p = px^2 + qx + r$. $y_p' = 2px + q$, $y_p'' = 2p$.
+PI: Try $y_p = px^2 + qx + r$. $y_p' = 2px + q$$y_p'' = 2p$.
 
 $(2p) + 2(2px + q) + (px^2 + qx + r) = x^2$.
 
 $px^2 + (4p+q)x + (2p+2q+r) = x^2$.
 
-$p = 1$, $4 + q = 0 \implies q = -4$, $2 - 8 + r = 0 \implies r = 6$.
+$p = 1$$4 + q = 0 \implies q = -4$$2 - 8 + r = 0 \implies r = 6$.
 
 $\boxed{y = (A + Bx)e^{-x} + x^2 - 4x + 6}$.
 
@@ -607,14 +607,14 @@ $\boxed{y = (A + Bx)e^{-x} + x^2 - 4x + 6}$.
 <summary>Problem 7</summary>
 
 A body cools from $80°C$ to $60°C$ in 10 minutes in surroundings at $20°C$. How long does it take to
-cool to $40°C$?
+Cool to $40°C$?
 
 </details>
 
 <details>
 <summary>Solution 7</summary>
 
-Newton's law: $T = 20 + 60e^{-kt}$ (since $T_0 = 80$, $T_a = 20$).
+Newton's law: $T = 20 + 60e^{-kt}$ (since $T_0 = 80$$T_a = 20$).
 
 $T(10) = 60$: $60 = 20 + 60e^{-10k} \implies e^{-10k} = \dfrac{2}{3}$.
 
@@ -623,7 +623,7 @@ $T(t) = 40$: $40 = 20 + 60e^{-kt} \implies e^{-kt} = \dfrac{1}{3}$.
 $\left(\dfrac{2}{3}\right)^{t/10} = \dfrac{1}{3} \implies \dfrac{t}{10}\ln\dfrac{2}{3} = \ln\dfrac{1}{3}$.
 
 $t = \dfrac◆LB◆10\ln(1/3)◆RB◆◆LB◆\ln(2/3)◆RB◆ = \dfrac◆LB◆10\ln 3◆RB◆◆LB◆\ln(3/2)◆RB◆ \approx \dfrac◆LB◆10 \times 1.0986◆RB◆◆LB◆0.4055◆RB◆ \approx 27.1$
-minutes.
+Minutes.
 
 **If you get this wrong, revise:** [Newton's Law of Cooling](#52-newtons-law-of-cooling) — Section
 5.2.
@@ -675,7 +675,7 @@ $y_p'' = (-6c\sin 3x + 6d\cos 3x) + x(-9c\cos 3x - 9d\sin 3x)$
 
 $y_p'' + 9y_p = -6c\sin 3x + 6d\cos 3x = 6\cos 3x$.
 
-$d = 1$, $c = 0$.
+$d = 1$$c = 0$.
 
 $\boxed{y = A\cos 3x + B\sin 3x + x\sin 3x}$.
 
@@ -687,14 +687,14 @@ $\boxed{y = A\cos 3x + B\sin 3x + x\sin 3x}$.
 <details>
 <summary>Problem 10</summary>
 
-Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$, given $y(1) = 3$.
+Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$Given $y(1) = 3$.
 
 </details>
 
 <details>
 <summary>Solution 10</summary>
 
-$P(x) = -1/x$, $Q(x) = x^2$.
+$P(x) = -1/x$$Q(x) = x^2$.
 
 $\mu = e^{\int -1/x\,dx} = e^{-\ln x} = \dfrac{1}{x}$.
 
@@ -753,7 +753,7 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 **Problem.** Solve $\dfrac{dy}{dx} = \dfrac{x + y}{x - y}$.
 
-**Solution.** This is a homogeneous equation. Let $y = vx$, so
+**Solution.** This is a homogeneous equation. Let $y = vx$So
 $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
 
 $$v + x\frac{dv}{dx} = \frac{1+v}{1-v}$$
@@ -772,7 +772,7 @@ $$\arctan\!\left(\frac{y}{x}\right) - \frac{1}{2}\ln\!\left(1+\frac{y^2}{x^2}\ri
 
 ### Example 8.4: Coupled first-order ODEs
 
-**Problem.** Solve $\dfrac{dx}{dt} = 3x + 2y$, $\dfrac{dy}{dt} = -5x - y$.
+**Problem.** Solve $\dfrac{dx}{dt} = 3x + 2y$$\dfrac{dy}{dt} = -5x - y$.
 
 **Solution.** From the second equation: $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
 
@@ -794,7 +794,7 @@ Then $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
 ### Example 8.5: Exponential growth with harvesting
 
 **Problem.** A population $P(t)$ satisfies $\dfrac{dP}{dt} = 0.1P - 50$. Find the general solution
-and interpret.
+And interpret.
 
 **Solution.** This is a first-order linear ODE: $\dfrac{dP}{dt} - 0.1P = -50$.
 
@@ -806,8 +806,8 @@ $$Pe^{-0.1t} = 500e^{-0.1t} + C$$
 
 $$\boxed{P = 500 + Ce^{0.1t}}$$
 
-The equilibrium population is $P = 500$. If $P(0) > 500$, the population grows exponentially; if
-$P(0) < 500$, it decays to zero (extinction).
+The equilibrium population is $P = 500$. If $P(0) > 500$The population grows exponentially; if
+$P(0) < 500$It decays to zero (extinction).
 
 ### Example 8.6: Boundary value problem
 
@@ -837,7 +837,7 @@ $y_p'' = -C\sin x + D\cos x + (-C\sin x + D\cos x) + x(-C\cos x - D\sin x) = 2(-
 
 $y_p'' + y_p = 2(-C\sin x + D\cos x) = 2\cos x$.
 
-$D = 1$, $C = 0$. So $y_p = x\sin x$.
+$D = 1$$C = 0$. So $y_p = x\sin x$.
 
 $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
@@ -845,12 +845,12 @@ $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
 ## 9. Common Pitfalls
 
-| Pitfall                                                                 | Correct Approach                                                                       |
+| Pitfall | Correct Approach |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right             |
-| Using the wrong trial function for the particular integral              | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
-| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root)   | Check the discriminant: repeated root $\iff$ discriminant $= 0$                        |
-| Not applying initial conditions to find $A$ and $B$                     | Always substitute the given conditions into the general solution and its derivative    |
+| Forgetting the constant of integration when using an integrating factor | Integrate both sides after multiplying by $\mu$; $+C$ appears on the right |
+| Using the wrong trial function for the particular integral | If the RHS is part of the complementary function, multiply by $x$ (or $x^2$ if needed) |
+| Confusing $Ae^{mx}$ (single root) with $(A+Bx)e^{mx}$ (repeated root) | Check the discriminant: repeated root $\iff$ discriminant $= 0$ |
+| Not applying initial conditions to find $A$ and $B$ | Always substitute the given conditions into the general solution and its derivative |
 
 ---
 
@@ -873,9 +873,9 @@ $\boxed{y = Ae^{3x} + Be^{-x} - 2e^{2x}}$
 
 ### Question 9
 
-A body cools according to $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k(\theta - 20)$, where $\theta$ is the
-temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and
-$\theta(10) = 50$, find $\theta(30)$.
+A body cools according to $\dfrac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆ = -k(\theta - 20)$Where $\theta$ is the
+Temperature in $°\mathrm{C}$ and $20°\mathrm{C}$ is the room temperature. If $\theta(0) = 90$ and
+$\theta(10) = 50$Find $\theta(30)$.
 
 <details>
 <summary>Solution</summary>
@@ -898,12 +898,12 @@ $\boxed{\theta(30) \approx 25.5°\mathrm{C}}$
 ### Question 10
 
 **Prove that** the substitution $y = vx$ transforms $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$
-into a separable equation.
+Into a separable equation.
 
 <details>
 <summary>Solution</summary>
 
-Let $y = vx$, so $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
+Let $y = vx$So $\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$.
 
 Substituting: $v + x\dfrac{dv}{dx} = f(v)$.
 
@@ -962,11 +962,11 @@ Newton's second law $F = ma$ leads to second-order ODEs in mechanics. See
 
 ## 12. Key Results Summary
 
-| ODE Type                                        | Method                                    | General Solution                                                                                                |
+| ODE Type | Method | General Solution |
 | ----------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| $\dfrac{dy}{dx} + P(x)y = Q(x)$                 | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$                                                     |
-| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$                     | Separate and integrate                                                                                          |
-| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$      | Auxiliary equation $am^2+bm+c=0$          | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
+| $\dfrac{dy}{dx} + P(x)y = Q(x)$ | Integrating factor $\mu = e^{\int P\,dx}$ | $y = \dfrac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\displaystyle\int \mu Q\,dx$ |
+| $\dfrac{dy}{dx} = f\!\left(\dfrac{y}{x}\right)$ | Substitution $y = vx$ | Separate and integrate |
+| $a\dfrac{d^2y}{dx^2}+b\dfrac{dy}{dx}+cy=0$ | Auxiliary equation $am^2+bm+c=0$ | Real roots: $Ae^{m_1x}+Be^{m_2x}$; repeated: $(A+Bx)e^{mx}$; complex: $e^{\alpha x}(A\cos\beta x+B\sin\beta x)$ |
 
 ---
 
@@ -992,16 +992,16 @@ $\boxed{y = \dfrac{3}{4}e^{3x}\sin 4x}$
 ### Question 13
 
 **Prove that** the Wronskian $W(y_1, y_2) = y_1y_2' - y_1'y_2 \neq 0$ if and only if $y_1$ and $y_2$
-are linearly independent solutions of a second-order linear ODE.
+Are linearly independent solutions of a second-order linear ODE.
 
 <details>
 <summary>Solution</summary>
 
-If $y_1$ and $y_2$ are linearly dependent, $y_2 = cy_1$, then $W = y_1(cy_1') - y_1'(cy_1) = 0$.
+If $y_1$ and $y_2$ are linearly dependent, $y_2 = cy_1$Then $W = y_1(cy_1') - y_1'(cy_1) = 0$.
 
 Conversely, if $W = 0$ at some point and both satisfy the same linear ODE, then the initial value
-problem with initial conditions matching $y_1$ and $y_2$ would have two solutions, contradicting
-uniqueness. Hence $y_1$ and $y_2$ must be linearly dependent.
+Problem with initial conditions matching $y_1$ and $y_2$ would have two solutions, contradicting
+Uniqueness. Hence $y_1$ and $y_2$ must be linearly dependent.
 
 Therefore $W \neq 0 \iff$ linearly independent. $\blacksquare$
 
@@ -1013,7 +1013,7 @@ Therefore $W \neq 0 \iff$ linearly independent. $\blacksquare$
 
 ### 14.1 The integrating factor method — derivation
 
-For $\dfrac{dy}{dx} + P(x)y = Q(x)$, multiply by $\mu = e^{\int P\,dx}$:
+For $\dfrac{dy}{dx} + P(x)y = Q(x)$Multiply by $\mu = e^{\int P\,dx}$:
 
 $$\mu\frac{dy}{dx} + \mu Py = \mu Q$$
 
@@ -1027,22 +1027,22 @@ $$y = \frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆\int \mu Q\,dx + \frac◆LB◆C�
 
 For the system $\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}$ where $\mathbf{x} = (x_1, \ldots, x_n)$:
 
-If $\mathbf{A}$ is diagonalisable with $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, let
+If $\mathbf{A}$ is diagonalisable with $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$Let
 $\mathbf{z} = \mathbf{P}^{-1}\mathbf{x}$:
 
-$\dot{\mathbf{z}} = \mathbf{D}\mathbf{z}$, giving $z_i = c_i e^{\lambda_i t}$.
+$\dot{\mathbf{z}} = \mathbf{D}\mathbf{z}$Giving $z_i = c_i e^{\lambda_i t}$.
 
 $\mathbf{x} = \mathbf{P}\mathbf{z} = \sum c_i e^{\lambda_i t}\mathbf{v}_i$.
 
 ### 14.3 Boundary value problems vs initial value problems
 
 An IVP specifies $y$ and $y'$ at one point. A BVP specifies $y$ at two (or more) points. BVPs may
-have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have a unique solution.
+Have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have a unique solution.
 
 ### 14.4 Phase portraits
 
-For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$, the phase portrait shows
-trajectories in the $xy$-plane. Key features:
+For autonomous 2D systems $\dot{x} = f(x,y)$$\dot{y} = g(x,y)$The phase portrait shows
+Trajectories in the $xy$-plane. Key features:
 
 - Fixed points: where $\dot{x} = \dot{y} = 0$
 - Stability: determined by the eigenvalues of the Jacobian at each fixed point

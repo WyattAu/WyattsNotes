@@ -9,8 +9,8 @@ categories: [TypeScript]
 ## tsconfig.json: Core Configuration
 
 Every TypeScript project is governed by a `tsconfig.json` file at the project root. This file
-specifies compiler options, file inclusion/exclusion, and project references. A minimal
-configuration:
+Specifies compiler options, file inclusion/exclusion, and project references. A minimal
+Configuration:
 
 ```json
 {
@@ -32,52 +32,52 @@ configuration:
 
 #### Language and Environment
 
-| Option               | Description                               | Recommended                      |
+| Option | Description | Recommended |
 | -------------------- | ----------------------------------------- | -------------------------------- |
-| `target`             | ECMAScript version for emitted JavaScript | `"ES2022"` or `"ESNext"`         |
-| `lib`                | Library files to include in compilation   | Auto-inferred from `target`      |
-| `jsx`                | JSX compilation mode                      | `"react-jsx"` (React 17+)        |
-| `jsxFactory`         | JSX factory function                      | `"React.createElement"` (legacy) |
-| `jsxFragmentFactory` | JSX fragment factory                      | `"React.Fragment"` (legacy)      |
+| `target` | ECMAScript version for emitted JavaScript | `"ES2022"` or `"ESNext"` |
+| `lib` | Library files to include in compilation | Auto-inferred from `target` |
+| `jsx` | JSX compilation mode | `"react-jsx"` (React 17+) |
+| `jsxFactory` | JSX factory function | `"React.createElement"` (legacy) |
+| `jsxFragmentFactory` | JSX fragment factory | `"React.Fragment"` (legacy) |
 
 #### Module Resolution
 
-| Option              | Description                                       | Recommended               |
+| Option | Description | Recommended |
 | ------------------- | ------------------------------------------------- | ------------------------- |
-| `module`            | Module system for emitted code                    | `"ESNext"`                |
-| `moduleResolution`  | Module resolution strategy                        | `"bundler"` or `"node16"` |
-| `baseUrl`           | Base directory for non-relative module resolution | `"."`                     |
-| `paths`             | Path aliases for module resolution                | `{"@/*": ["src/*"]}`      |
-| `rootDirs`          | Multiple root directories treated as one          | `["src", "generated"]`    |
-| `resolveJsonModule` | Allow importing `.json` files                     | `true`                    |
-| `isolatedModules`   | Ensure each file can be transpiled independently  | `true`                    |
+| `module` | Module system for emitted code | `"ESNext"` |
+| `moduleResolution` | Module resolution strategy | `"bundler"` or `"node16"` |
+| `baseUrl` | Base directory for non-relative module resolution | `"."` |
+| `paths` | Path aliases for module resolution | `{"@/*": ["src/*"]}` |
+| `rootDirs` | Multiple root directories treated as one | `["src", "generated"]` |
+| `resolveJsonModule` | Allow importing `.json` files | `true` |
+| `isolatedModules` | Ensure each file can be transpiled independently | `true` |
 
 #### Type Checking
 
-| Option                         | Description                                                     | Recommended                  |
+| Option | Description | Recommended |
 | ------------------------------ | --------------------------------------------------------------- | ---------------------------- |
-| `strict`                       | Enable all strict type-checking options                         | `true`                       |
-| `noImplicitAny`                | Error on implicit `any` type                                    | `true` (implied by `strict`) |
-| `strictNullChecks`             | Strict `null` and `undefined` checking                          | `true` (implied by `strict`) |
-| `strictFunctionTypes`          | Contravariant function parameter checking                       | `true` (implied by `strict`) |
-| `strictBindCallApply`          | Strict checking for `bind`, `call`, `apply`                     | `true` (implied by `strict`) |
-| `strictPropertyInitialization` | Check class property initialisation                             | `true` (implied by `strict`) |
-| `noImplicitThis`               | Error when `this` gets `any` type                               | `true` (implied by `strict`) |
-| `noImplicitReturns`            | Error on code paths that do not return a value                  | `true`                       |
-| `noUnusedLocals`               | Error on unused local variables                                 | `true`                       |
-| `noUnusedParameters`           | Error on unused function parameters                             | `true`                       |
-| `noFallthroughCasesInSwitch`   | Error on switch case fallthrough                                | `true`                       |
-| `exactOptionalPropertyTypes`   | Distinguish between optional and `undefined`-present properties | `true`                       |
+| `strict` | Enable all strict type-checking options | `true` |
+| `noImplicitAny` | Error on implicit `any` type | `true` (implied by `strict`) |
+| `strictNullChecks` | Strict `null` and `undefined` checking | `true` (implied by `strict`) |
+| `strictFunctionTypes` | Contravariant function parameter checking | `true` (implied by `strict`) |
+| `strictBindCallApply` | Strict checking for `bind``call``apply` | `true` (implied by `strict`) |
+| `strictPropertyInitialization` | Check class property initialisation | `true` (implied by `strict`) |
+| `noImplicitThis` | Error when `this` gets `any` type | `true` (implied by `strict`) |
+| `noImplicitReturns` | Error on code paths that do not return a value | `true` |
+| `noUnusedLocals` | Error on unused local variables | `true` |
+| `noUnusedParameters` | Error on unused function parameters | `true` |
+| `noFallthroughCasesInSwitch` | Error on switch case fallthrough | `true` |
+| `exactOptionalPropertyTypes` | Distinguish between optional and `undefined`-present properties | `true` |
 
 #### Output
 
-| Option           | Description                           | Recommended                   |
+| Option | Description | Recommended |
 | ---------------- | ------------------------------------- | ----------------------------- |
-| `outDir`         | Directory for emitted JavaScript      | `"./dist"`                    |
-| `declaration`    | Generate `.d.ts` files                | `true` for libraries          |
-| `declarationMap` | Generate sourcemaps for `.d.ts` files | `true` for libraries          |
-| `sourceMap`      | Generate sourcemaps                   | `true`                        |
-| `noEmit`         | Type-check without emitting files     | `true` for type-checking only |
+| `outDir` | Directory for emitted JavaScript | `"./dist"` |
+| `declaration` | Generate `.d.ts` files | `true` for libraries |
+| `declarationMap` | Generate sourcemaps for `.d.ts` files | `true` for libraries |
+| `sourceMap` | Generate sourcemaps | `true` |
+| `noEmit` | Type-check without emitting files | `true` for type-checking only |
 
 ### The `strict` Flag
 
@@ -98,7 +98,7 @@ Migrate incrementally by enabling individual strict flags one at a time, startin
 ### `exactOptionalPropertyTypes`
 
 When `exactOptionalPropertyTypes` is enabled, TypeScript distinguishes between a property that is
-absent and a property that is present with the value `undefined`:
+Absent and a property that is present with the value `undefined`:
 
 ```ts
 interface Config {
@@ -109,15 +109,15 @@ const a: Config = {};
 const b: Config = { host: undefined };
 ```
 
-Under `exactOptionalPropertyTypes`, the second line is an error. To explicitly allow `undefined`,
-declare the property as `host?: string | undefined`.
+Under `exactOptionalPropertyTypes`The second line is an error. To explicitly allow `undefined`
+Declare the property as `host?: string | undefined`.
 
 ## Module Resolution Strategies
 
 ### `classic`
 
 The original TypeScript resolution strategy. Resolves relative to the importing file. Rarely used in
-modern projects.
+Modern projects.
 
 ### `node`
 
@@ -132,16 +132,16 @@ Node.js ESM-aware resolution (TypeScript 4.7+). Respects the `"type": "module"` 
 ### `bundler`
 
 Designed for projects using bundlers (Vite, webpack, esbuild) that handle module resolution
-themselves (TypeScript 5.0+). Does not enforce Node.js-specific resolution rules.
+Themselves (TypeScript 5.0+). Does not enforce Node.js-specific resolution rules.
 
 ### Resolution Comparison
 
-| Feature                            | `node`          | `node16`           | `bundler`        |
+| Feature | `node` | `node16` | `bundler` |
 | ---------------------------------- | --------------- | ------------------ | ---------------- |
-| ESM-aware                          | No              | Yes                | No               |
-| Requires file extensions in ESM    | No              | Yes                | No               |
-| Checks `exports` in `package.json` | No              | Yes                | Yes              |
-| Best for                           | Legacy projects | Node.js native ESM | Bundled web apps |
+| ESM-aware | No | Yes | No |
+| Requires file extensions in ESM | No | Yes | No |
+| Checks `exports` in `package.json` | No | Yes | Yes |
+| Best for | Legacy projects | Node.js native ESM | Bundled web apps |
 
 ## @types Packages and DefinitelyTyped
 
@@ -156,7 +156,7 @@ npm install --save-dev @types/express
 ### How @types Resolution Works
 
 When TypeScript encounters an import from a module without corresponding `.ts` or `.d.ts` files, it
-searches `node_modules/@types/` for a matching package. The search order is controlled by
+Searches `node_modules/@types/` for a matching package. The search order is controlled by
 `typeRoots` (default: `node_modules/@types/`).
 
 ### Custom `typeRoots` and `types`
@@ -225,8 +225,8 @@ tsc --watch
 ### Incremental Compilation
 
 TypeScript supports incremental compilation via the `tsconfig.json` flag or `--incremental` CLI
-option. The compiler stores dependency information in a `.tsbuildinfo` file, enabling faster
-subsequent compilations:
+Option. The compiler stores dependency information in a `.tsbuildinfo` file, enabling faster
+Subsequent compilations:
 
 ```json
 {
@@ -257,7 +257,7 @@ Configuration for `ts-node` in `tsconfig.json`:
 ```
 
 `transpileOnly: true` skips type checking for faster execution (useful during development). Remove
-it for production scripts where type safety is critical.
+It for production scripts where type safety is critical.
 
 **Common Pitfall:** `ts-node` with ESM requires additional configuration. Set `"esm": true` in the
 `ts-node` section of `tsconfig.json` and ensure `package.json` has `"type": "module"`.
@@ -295,25 +295,25 @@ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslin
 
 ### Key Rules
 
-| Rule                                               | Description                      |
+| Rule | Description |
 | -------------------------------------------------- | -------------------------------- | --- | --- |
-| `@typescript-eslint/no-explicit-any`               | Disallow `any` type              |
-| `@typescript-eslint/no-unused-vars`                | Disallow unused variables        |
-| `@typescript-eslint/explicit-function-return-type` | Require explicit return types    |
-| `@typescript-eslint/no-floating-promises`          | Require promises to be handled   |
-| `@typescript-eslint/strict-boolean-expressions`    | Restrict boolean expressions     |
-| `@typescript-eslint/prefer-nullish-coalescing`     | Prefer `??` over `               |     | `   |
-| `@typescript-eslint/prefer-optional-chain`         | Prefer `?.` over manual checks   |
-| `@typescript-eslint/no-non-null-assertion`         | Disallow `!` non-null assertions |
+| `@typescript-eslint/no-explicit-any` | Disallow `any` type |
+| `@typescript-eslint/no-unused-vars` | Disallow unused variables |
+| `@typescript-eslint/explicit-function-return-type` | Require explicit return types |
+| `@typescript-eslint/no-floating-promises` | Require promises to be handled |
+| `@typescript-eslint/strict-boolean-expressions` | Restrict boolean expressions |
+| `@typescript-eslint/prefer-nullish-coalescing` | Prefer `??` over `               |     | ` |
+| `@typescript-eslint/prefer-optional-chain` | Prefer `?.` over manual checks |
+| `@typescript-eslint/no-non-null-assertion` | Disallow `!` non-null assertions |
 
 **Common Pitfall:** The `@typescript-eslint/recommended-requiring-type-checking` config requires
 `parserOptions.project` to point to a valid `tsconfig.json`. This makes linting slower because it
-runs the type checker. Use this config in CI, not in the editor.
+Runs the type checker. Use this config in CI, not in the editor.
 
 ## Project References
 
 Project references allow a TypeScript project to be split into multiple sub-projects, each with its
-own `tsconfig.json`. This is essential for monorepo architectures.
+Own `tsconfig.json`. This is essential for monorepo architectures.
 
 ### Structure
 
@@ -359,7 +359,7 @@ Sub-project `tsconfig.json`:
 - `composite: true` must be set in each referenced project.
 - `declaration: true` must be enabled so other projects can reference the types.
 - Referenced projects must list all their input files explicitly or via `include` (no `files`
-  globbing with `**`).
+ globbing with `**`).
 - References form a directed acyclic graph (no circular references).
 
 ### Building with Project References
@@ -424,7 +424,7 @@ export {};
 ```
 
 The `export {}` at the end turns the file into a module, which is required for `declare global` to
-work.
+Work.
 
 ### Module Declaration
 
@@ -451,13 +451,13 @@ declare module 'another-untyped' {
 
 ### `jsx` Option Values
 
-| Value            | Output                                                           |
+| Value | Output |
 | ---------------- | ---------------------------------------------------------------- |
-| `"preserve"`     | Emit `.jsx` files (for further processing by Babel)              |
-| `"react"`        | `React.createElement`                                            |
+| `"preserve"` | Emit `.jsx` files (for further processing by Babel) |
+| `"react"` | `React.createElement` |
 | `"react-native"` | `React.createElement` (preserves JSX as `React.NativeComponent`) |
-| `"react-jsx"`    | `_jsx` from `react/jsx-runtime` (React 17+)                      |
-| `"react-jsxdev"` | `_jsxDev` from `react/jsx-dev-runtime` (React 17+ dev)           |
+| `"react-jsx"` | `_jsx` from `react/jsx-runtime` (React 17+) |
+| `"react-jsxdev"` | `_jsxDev` from `react/jsx-dev-runtime` (React 17+ dev) |
 
 ### Custom JSX Factory
 
@@ -471,14 +471,14 @@ declare module 'another-untyped' {
 }
 ```
 
-This configuration uses `h` instead of `React.createElement`, which is the convention for Preact.
+This configuration uses `h` instead of `React.createElement`Which is the convention for Preact.
 
 ## New Features (TypeScript 5.0+)
 
 ### `satisfies` Operator
 
 The `satisfies` operator validates that an expression matches a type without widening the
-expression's type:
+Expression's type:
 
 ```ts
 const config = {
@@ -492,9 +492,9 @@ const port: number = config.port;
 const debug: boolean = config.debug;
 ```
 
-Without `satisfies`, assigning to `Record<string, string | number | boolean>` would widen the
-property types. With `satisfies`, the literal types are preserved while still validating against the
-broader type.
+Without `satisfies`Assigning to `Record<string, string | number | boolean>` would widen the
+Property types. With `satisfies`The literal types are preserved while still validating against the
+Broader type.
 
 ### `satisfies` vs Type Annotation
 
@@ -517,7 +517,7 @@ type B = (typeof b)['key'];
 ### `const` Type Parameters
 
 TypeScript 5.0+ supports `const` type parameters, which infer the narrowest (literal) type for
-generic type arguments:
+Generic type arguments:
 
 ```ts
 function createRoute<const T extends string[]>(path: `/${string}`, params: T): void {}
@@ -525,8 +525,8 @@ function createRoute<const T extends string[]>(path: `/${string}`, params: T): v
 createRoute('/users/:id', ['id'] as const);
 ```
 
-Without `const` on the type parameter, `T` would be inferred as `string[]`. With `const`, `T` is
-inferred as `readonly ["id"]`.
+Without `const` on the type parameter, `T` would be inferred as `string[]`. With `const``T` is
+Inferred as `readonly ["id"]`.
 
 ### Decorator Metadata (TypeScript 5.2+)
 
@@ -551,29 +551,37 @@ function example(): void {
 ```
 
 The `using` keyword ensures that `dispose()` is called when the variable goes out of scope, even if
-an exception is thrown.
+An exception is thrown.
 
 ## Common Pitfalls
 
 ### Pitfall 1: `include` vs `files`
 
 `include` specifies file patterns, while `files` specifies individual files. If both are present,
-both are used. Do not use both `include` and `files` in the same `tsconfig.json` unless you have a
-specific reason.
+Both are used. Do not use both `include` and `files` in the same `tsconfig.json` unless you have a
+Specific reason.
 
 ### Pitfall 2: Path Aliases Not Resolved at Runtime
 
 Path aliases in `tsconfig.json` (`paths`) are resolved only by the TypeScript compiler. The bundler
-or runtime must be configured separately to resolve these aliases. Without matching bundler
-configuration, imports will fail at runtime.
+Or runtime must be configured separately to resolve these aliases. Without matching bundler
+Configuration, imports will fail at runtime.
 
 ### Pitfall 3: `composite` Requires Explicit File Listing
 
 When `composite: true` is set, all source files must be listed explicitly via `include` or `files`.
 Wildcard patterns like `"src/**/*.ts"` are supported, but the compiler must be able to determine the
-full list of input files without filesystem traversal.
+Full list of input files without filesystem traversal.
 
 ### Pitfall 4: Declaration Files and `isolatedModules`
 
 When `isolatedModules` is enabled, declaration files must be careful about re-exports. Re-exporting
-types and values from the same module can cause issues with some bundlers.
+Types and values from the same module can cause issues with some bundlers.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

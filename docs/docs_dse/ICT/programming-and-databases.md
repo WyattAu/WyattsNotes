@@ -9,16 +9,16 @@ slug: ict-programming-and-databases
 ### Variables and Data Types
 
 A variable is a named storage location in memory that holds a value which can change during program
-execution.
+Execution.
 
-| Data Type    | Description                 | Example            |
+| Data Type | Description | Example |
 | ------------ | --------------------------- | ------------------ |
-| Integer      | Whole numbers               | `42`, `-7`, `0`    |
-| Float / Real | Numbers with decimal points | `3.14`, `-0.5`     |
-| String       | Text enclosed in quotes     | `"Hello"`, `'DSE'` |
-| Boolean      | Logical values              | `True`, `False`    |
-| Character    | A single character          | `'A'`, `'9'`       |
-| Array / List | Collection of values        | `[1, 2, 3, 4]`     |
+| Integer | Whole numbers | `42``-7``0` |
+| Float / Real | Numbers with decimal points | `3.14``-0.5` |
+| String | Text enclosed in quotes | `"Hello"``'DSE'` |
+| Boolean | Logical values | `True``False` |
+| Character | A single character | `'A'``'9'` |
+| Array / List | Collection of values | `[1, 2, 3, 4]` |
 
 ### Constants
 
@@ -30,8 +30,8 @@ MAX_STUDENTS = 40
 ```
 
 :::info
-In DSE ICT, constants are typically written in UPPER_CASE to distinguish them from
-variables. Using constants improves code readability and reduces errors.
+In DSE ICT, constants are written in UPPER_CASE to distinguish them from
+Variables. Using constants improves code readability and reduces errors.
 :::
 
 ### Input and Output
@@ -54,34 +54,34 @@ x += 5     # shorthand, x is now 20
 
 **Arithmetic operators:**
 
-| Operator | Meaning            | Example       |
+| Operator | Meaning | Example |
 | -------- | ------------------ | ------------- |
-| `+`      | Addition           | `5 + 3 = 8`   |
-| `-`      | Subtraction        | `5 - 3 = 2`   |
-| `*`      | Multiplication     | `5 * 3 = 15`  |
-| `/`      | Division           | `7 / 2 = 3.5` |
-| `//`     | Integer division   | `7 // 2 = 3`  |
-| `%`      | Modulo (remainder) | `7 % 2 = 1`   |
-| `**`     | Exponentiation     | `2 ** 3 = 8`  |
+| `+` | Addition | `5 + 3 = 8` |
+| `-` | Subtraction | `5 - 3 = 2` |
+| `*` | Multiplication | `5 * 3 = 15` |
+| `/` | Division | `7 / 2 = 3.5` |
+| `//` | Integer division | `7 // 2 = 3` |
+| `%` | Modulo (remainder) | `7 % 2 = 1` |
+| `**` | Exponentiation | `2 ** 3 = 8` |
 
 **Comparison operators:**
 
-| Operator | Meaning                  |
+| Operator | Meaning |
 | -------- | ------------------------ |
-| `==`     | Equal to                 |
-| `!=`     | Not equal to             |
-| `>`      | Greater than             |
-| `<`      | Less than                |
-| `$\ge$`  | Greater than or equal to |
-| `$\le$`  | Less than or equal to    |
+| `==` | Equal to |
+| `!=` | Not equal to |
+| `>` | Greater than |
+| `<` | Less than |
+| `$\ge$` | Greater than or equal to |
+| `$\le$` | Less than or equal to |
 
 **Logical operators:**
 
-| Operator | Meaning                             | Example            |
+| Operator | Meaning | Example |
 | -------- | ----------------------------------- | ------------------ |
-| `and`    | Both conditions must be True        | `x > 0 and x < 10` |
-| `or`     | At least one condition must be True | `x == 0 or x == 1` |
-| `not`    | Reverses the condition              | `not(x > 5)`       |
+| `and` | Both conditions must be True | `x > 0 and x < 10` |
+| `or` | At least one condition must be True | `x == 0 or x == 1` |
+| `not` | Reverses the condition | `not(x > 5)` |
 
 ---
 
@@ -163,8 +163,8 @@ while True:
 
 :::warning
 Be careful with WHILE loops to avoid infinite loops. Always ensure the loop condition
-will eventually become False. A common mistake is forgetting to update the loop variable inside the
-loop body.
+Will eventually become False. A common mistake is forgetting to update the loop variable inside the
+Loop body.
 :::
 
 ### Worked Example 1
@@ -300,7 +300,7 @@ def factorial_recursive(n):
 ### One-Dimensional Arrays
 
 An array is a collection of elements of the same data type, stored in contiguous memory locations,
-accessed by an index.
+Accessed by an index.
 
 ```python
 # Creating an array
@@ -395,18 +395,18 @@ print(student["name"])  # Chan Tai Man
 
 Flowcharts use standard symbols to represent algorithms visually:
 
-| Symbol        | Meaning        |
+| Symbol | Meaning |
 | ------------- | -------------- |
-| Oval          | Start / End    |
+| Oval | Start / End |
 | Parallelogram | Input / Output |
-| Rectangle     | Process        |
-| Diamond       | Decision       |
-| Arrow         | Flow direction |
+| Rectangle | Process |
+| Diamond | Decision |
+| Arrow | Flow direction |
 
 ### Pseudocode
 
 Pseudocode is a structured English-like description of an algorithm. It is not executable but
-clearly expresses the logic.
+ expresses the logic.
 
 ```python
 BEGIN
@@ -422,7 +422,7 @@ END
 ### Trace Tables
 
 A trace table records the values of variables as an algorithm executes, used for testing and
-debugging.
+Debugging.
 
 **Example:** Trace the following algorithm with `n = 5`:
 
@@ -436,14 +436,14 @@ ENDWHILE
 OUTPUT sum
 ```
 
-| Iteration | `count` | `sum`       | `count $\le$` n |
+| Iteration | `count` | `sum` | `count $\le$` n |
 | --------- | ------- | ----------- | ------------ |
-| 1         | 1       | 0 + 1 = 1   | True         |
-| 2         | 2       | 1 + 2 = 3   | True         |
-| 3         | 3       | 3 + 3 = 6   | True         |
-| 4         | 4       | 6 + 4 = 10  | True         |
-| 5         | 5       | 10 + 5 = 15 | True         |
-| 6         | 6       | 15          | False        |
+| 1 | 1 | 0 + 1 = 1 | True |
+| 2 | 2 | 1 + 2 = 3 | True |
+| 3 | 3 | 3 + 3 = 6 | True |
+| 4 | 4 | 6 + 4 = 10 | True |
+| 5 | 5 | 10 + 5 = 15 | True |
+| 6 | 6 | 15 | False |
 
 Output: `sum = 15`
 
@@ -526,15 +526,15 @@ Management System (DBMS) is software for creating, managing, and manipulating da
 
 ### Flat File vs Relational Database
 
-| Feature           | Flat File             | Relational Database              |
+| Feature | Flat File | Relational Database |
 | ----------------- | --------------------- | -------------------------------- |
-| Structure         | Single table          | Multiple linked tables           |
-| Data redundancy   | High                  | Low                              |
-| Data integrity    | Difficult to maintain | Enforced by constraints          |
-| Data consistency  | Prone to anomalies    | Maintained through normalisation |
-| Query flexibility | Limited               | Powerful (SQL)                   |
-| Multi-user access | Difficult             | Supported                        |
-| Example           | CSV file              | MySQL, PostgreSQL                |
+| Structure | Single table | Multiple linked tables |
+| Data redundancy | High | Low |
+| Data integrity | Difficult to maintain | Enforced by constraints |
+| Data consistency | Prone to anomalies | Maintained through normalisation |
+| Query flexibility | Limited | Powerful (SQL) |
+| Multi-user access | Difficult | Supported |
+| Example | CSV file | MySQL, PostgreSQL |
 
 ### Advantages of Relational Databases
 
@@ -563,17 +563,17 @@ An ER diagram models the data and relationships in a database.
 - **One-to-one (1:1):** Each record in one table relates to exactly one record in another
 - **One-to-many (1:N):** One record in one table relates to many records in another
 - **Many-to-many (M:N):** Many records in one table relate to many records in another (requires a
-  junction table)
+ junction table)
 
 ### Keys
 
-| Key Type          | Description                                                |
+| Key Type | Description |
 | ----------------- | ---------------------------------------------------------- |
-| **Primary key**   | Uniquely identifies each record in a table; cannot be null |
-| **Foreign key**   | A field that references the primary key of another table   |
-| **Composite key** | A primary key made up of two or more fields                |
+| **Primary key** | Uniquely identifies each record in a table; cannot be null |
+| **Foreign key** | A field that references the primary key of another table |
+| **Composite key** | A primary key made up of two or more fields |
 | **Candidate key** | Any field or combination that could serve as a primary key |
-| **Superkey**      | Any set of fields that uniquely identifies a record        |
+| **Superkey** | Any set of fields that uniquely identifies a record |
 
 ### Normalisation
 
@@ -598,18 +598,18 @@ Normalisation is the process of organising data to minimise redundancy and depen
 
 :::tip
 A simple check for 3NF: every non-key field must depend on the key, the whole key, and
-nothing but the key.
+Nothing but the key.
 :::
 
 ### Worked Example 5
 
 Convert the following unnormalised data to 3NF.
 
-| StudentID | Name | CourseCode | CourseName  | Teacher  |
+| StudentID | Name | CourseCode | CourseName | Teacher |
 | --------- | ---- | ---------- | ----------- | -------- |
-| 001       | Chan | CS101      | Programming | Mr. Lee  |
-| 001       | Chan | CS102      | Database    | Ms. Wong |
-| 002       | Lee  | CS101      | Programming | Mr. Lee  |
+| 001 | Chan | CS101 | Programming | Mr. Lee |
+| 001 | Chan | CS102 | Database | Ms. Wong |
+| 002 | Lee | CS101 | Programming | Mr. Lee |
 
 **1NF:** Remove repeating groups.
 
@@ -712,18 +712,18 @@ WHERE Class = '5A' AND Score >= 70;
 
 **Comparison operators in WHERE:**
 
-| Operator     | Meaning                     |
+| Operator | Meaning |
 | ------------ | --------------------------- |
-| `=`          | Equal to                    |
-| `<>` or `!=` | Not equal to                |
-| `>`          | Greater than                |
-| `<`          | Less than                   |
-| `$\ge$`      | Greater than or equal to    |
-| `$\le$`      | Less than or equal to       |
-| `BETWEEN`    | Range                       |
-| `LIKE`       | Pattern matching            |
-| `IN`         | Matches any value in a list |
-| `IS NULL`    | Null value                  |
+| `=` | Equal to |
+| `<>` or `!=` | Not equal to |
+| `>` | Greater than |
+| `<` | Less than |
+| `$\ge$` | Greater than or equal to |
+| `$\le$` | Less than or equal to |
+| `BETWEEN` | Range |
+| `LIKE` | Pattern matching |
+| `IN` | Matches any value in a list |
+| `IS NULL` | Null value |
 
 **ORDER BY:**
 
@@ -735,13 +735,13 @@ ORDER BY Score DESC;
 
 **Aggregate functions:**
 
-| Function  | Description         |
+| Function | Description |
 | --------- | ------------------- |
-| `COUNT()` | Number of rows      |
-| `SUM()`   | Total of a column   |
-| `AVG()`   | Average of a column |
-| `MAX()`   | Maximum value       |
-| `MIN()`   | Minimum value       |
+| `COUNT()` | Number of rows |
+| `SUM()` | Total of a column |
+| `AVG()` | Average of a column |
+| `MAX()` | Maximum value |
+| `MIN()` | Minimum value |
 
 ```sql
 SELECT AVG(Score) AS AverageScore, MAX(Score) AS Highest
@@ -834,54 +834,54 @@ GROUP BY Course.CourseName;
 
 Validation checks that data is reasonable and follows specified rules before it is accepted.
 
-| Validation Type | Description                             | Example                       |
+| Validation Type | Description | Example |
 | --------------- | --------------------------------------- | ----------------------------- |
-| Presence check  | Ensures data is not empty               | Name cannot be blank          |
-| Type check      | Ensures correct data type               | Age must be an integer        |
-| Length check    | Ensures data has correct length         | Phone number must be 8 digits |
-| Range check     | Ensures data falls within a range       | Score between 0 and 100       |
-| Format check    | Ensures data follows a pattern          | Email format: contains `@`    |
-| Lookup check    | Compares against a list of valid values | Class must be in school list  |
+| Presence check | Ensures data is not empty | Name cannot be blank |
+| Type check | Ensures correct data type | Age must be an integer |
+| Length check | Ensures data has correct length | Phone number must be 8 digits |
+| Range check | Ensures data falls within a range | Score between 0 and 100 |
+| Format check | Ensures data follows a pattern | Email format: contains `@` |
+| Lookup check | Compares against a list of valid values | Class must be in school list |
 
 ### Verification
 
 Verification ensures that data entered matches the original source.
 
-| Method       | Description                                             |
+| Method | Description |
 | ------------ | ------------------------------------------------------- |
-| Double entry | Data is entered twice and compared                      |
-| Visual check | User visually compares entered data with the source     |
-| Check digit  | A digit calculated from other digits (e.g., ISBN, HKID) |
+| Double entry | Data is entered twice and compared |
+| Visual check | User visually compares entered data with the source |
+| Check digit | A digit calculated from other digits (e.g., ISBN, HKID) |
 
 ---
 
 ## Summary Table
 
-| Topic         | Key Concept             | Example                     |
+| Topic | Key Concept | Example |
 | ------------- | ----------------------- | --------------------------- |
-| Variables     | Named storage locations | `score = 85`                |
-| Selection     | Conditional execution   | `if-elif-else`              |
-| Iteration     | Repeated execution      | `for`, `while` loops        |
-| Functions     | Reusable code blocks    | `def calculate(x):`         |
-| Arrays        | Indexed collections     | `scores[0]`                 |
-| Searching     | Finding elements        | Linear search               |
-| Sorting       | Ordering elements       | Bubble sort                 |
-| Databases     | Organised data storage  | Tables, keys, relationships |
-| SQL           | Querying databases      | `SELECT`, `WHERE`, `JOIN`   |
-| Normalisation | Reducing redundancy     | 1NF, 2NF, 3NF               |
+| Variables | Named storage locations | `score = 85` |
+| Selection | Conditional execution | `if-elif-else` |
+| Iteration | Repeated execution | `for``while` loops |
+| Functions | Reusable code blocks | `def calculate(x):` |
+| Arrays | Indexed collections | `scores[0]` |
+| Searching | Finding elements | Linear search |
+| Sorting | Ordering elements | Bubble sort |
+| Databases | Organised data storage | Tables, keys, relationships |
+| SQL | Querying databases | `SELECT``WHERE``JOIN` |
+| Normalisation | Reducing redundancy | 1NF, 2NF, 3NF |
 
 ---
 
 ## Exam Tips
 
-- In pseudocode questions, use consistent indentation and clearly show the structure (IF/ENDIF,
-  WHILE/ENDWHILE).
+- In pseudocode questions, use consistent indentation and show the structure (IF/ENDIF,
+ WHILE/ENDWHILE).
 - For trace tables, show every iteration and update variable values step by step.
 - In SQL questions, always specify the table name in SELECT and use WHERE to filter records.
 - Know the difference between WHERE (filters rows before grouping) and HAVING (filters groups after
-  grouping).
+ grouping).
 - For normalisation questions, identify the primary key first, then check for partial and transitive
-  dependencies.
+ dependencies.
 - In validation questions, be specific about the type of validation and give a concrete example.
 
 <details>
@@ -903,7 +903,7 @@ END
 ```
 
 **Question 2:** Write an SQL query to find the names of all students whose score is above the
-average score of their class.
+Average score of their class.
 
 ```sql
 SELECT s1.Name
@@ -916,11 +916,11 @@ WHERE s1.Score > (
 ```
 
 **Question 3:** Explain the difference between validation and verification, giving one example of
-each.
+Each.
 
 Validation checks that data is reasonable before it is stored (e.g., ensuring an age field is
-between 0 and 120). Verification ensures that data matches the original source (e.g., entering a
-password twice to confirm it was typed correctly).
+Between 0 and 120). Verification ensures that data matches the original source (e.g., entering a
+Password twice to confirm it was typed correctly).
 
 </details>
 
@@ -955,7 +955,7 @@ password twice to confirm it was typed correctly).
 <details>
 <summary>Question 1: Trace Table</summary>
 
-Trace the following algorithm with inputs `A = 5`, `B = 3`.
+Trace the following algorithm with inputs `A = 5``B = 3`.
 
 ```python
 BEGIN
@@ -977,12 +977,12 @@ Answer:
 
 (a)
 
-| Iteration | B   | result | B > 0 |
+| Iteration | B | result | B > 0 |
 | --------- | --- | ------ | ----- |
-| Initial   | 3   | 5      | True  |
-| 1         | 2   | 10     | True  |
-| 2         | 1   | 15     | True  |
-| 3         | 0   | 20     | False |
+| Initial | 3 | 5 | True |
+| 1 | 2 | 10 | True |
+| 2 | 1 | 15 | True |
+| 3 | 0 | 20 | False |
 
 Output: `result = 20`
 
@@ -1026,22 +1026,22 @@ END
 
 **Pass 1 (i=0):**
 
-| j | Compare       | Action        | Array after swap     |
+| j | Compare | Action | Array after swap |
 | - | ------------- | ------------- | -------------------- |
-| 0 | 5 > 3         | Swap          | [3, 5, 8, 1, 4]      |
-| 1 | 5 > 8         | No swap       | [3, 5, 8, 1, 4]      |
-| 2 | 8 > 1         | Swap          | [3, 5, 1, 8, 4]      |
-| 3 | 8 > 4         | Swap          | [3, 5, 1, 4, 8]      |
+| 0 | 5 > 3 | Swap | [3, 5, 8, 1, 4] |
+| 1 | 5 > 8 | No swap | [3, 5, 8, 1, 4] |
+| 2 | 8 > 1 | Swap | [3, 5, 1, 8, 4] |
+| 3 | 8 > 4 | Swap | [3, 5, 1, 4, 8] |
 
 After Pass 1: `[3, 5, 1, 4, 8]` (8 is in final position)
 
 **Pass 2 (i=1):**
 
-| j | Compare       | Action        | Array after swap     |
+| j | Compare | Action | Array after swap |
 | - | ------------- | ------------- | -------------------- |
-| 0 | 3 > 5         | No swap       | [3, 5, 1, 4, 8]      |
-| 1 | 5 > 1         | Swap          | [3, 1, 5, 4, 8]      |
-| 2 | 5 > 4         | Swap          | [3, 1, 4, 5, 8]      |
+| 0 | 3 > 5 | No swap | [3, 5, 1, 4, 8] |
+| 1 | 5 > 1 | Swap | [3, 1, 5, 4, 8] |
+| 2 | 5 > 4 | Swap | [3, 1, 4, 5, 8] |
 
 After Pass 2: `[3, 1, 4, 5, 8]` (5 and 8 are in final positions)
 
@@ -1054,9 +1054,9 @@ A company records orders in a single table:
 
 | OrderID | CustomerName | CustomerAddress | ProductCode | ProductName | Quantity | UnitPrice |
 | ------- | ------------ | --------------- | ----------- | ----------- | -------- | --------- |
-| 001     | Chan         | 10 Main St      | P01         | Keyboard    | 2        | 200       |
-| 002     | Lee          | 5 Oak Rd        | P02         | Mouse       | 1        | 150       |
-| 003     | Chan         | 10 Main St      | P02         | Mouse       | 3        | 150       |
+| 001 | Chan | 10 Main St | P01 | Keyboard | 2 | 200 |
+| 002 | Lee | 5 Oak Rd | P02 | Mouse | 1 | 150 |
+| 003 | Chan | 10 Main St | P02 | Mouse | 3 | 150 |
 
 (a) Identify the redundancies in this table.
 
@@ -1077,31 +1077,31 @@ Answer:
 
 | CustomerID | CustomerName | CustomerAddress |
 | ---------- | ------------ | --------------- |
-| C01        | Chan         | 10 Main St      |
-| C02        | Lee          | 5 Oak Rd        |
+| C01 | Chan | 10 Main St |
+| C02 | Lee | 5 Oak Rd |
 
 **Product** (ProductCode PK, ProductName, UnitPrice)
 
 | ProductCode | ProductName | UnitPrice |
 | ----------- | ----------- | --------- |
-| P01         | Keyboard    | 200       |
-| P02         | Mouse       | 150       |
+| P01 | Keyboard | 200 |
+| P02 | Mouse | 150 |
 
 **Order** (OrderID PK, CustomerID FK, OrderDate)
 
 | OrderID | CustomerID FK |
 | ------- | ------------- |
-| 001     | C01           |
-| 002     | C02           |
-| 003     | C01           |
+| 001 | C01 |
+| 002 | C02 |
+| 003 | C01 |
 
 **OrderLine** (OrderID FK, ProductCode FK, Quantity) -- composite PK
 
 | OrderID FK | ProductCode FK | Quantity |
 | ---------- | -------------- | -------- |
-| 001        | P01            | 2        |
-| 002        | P02            | 1        |
-| 003        | P02            | 3        |
+| 001 | P01 | 2 |
+| 002 | P02 | 1 |
+| 003 | P02 | 3 |
 
 (c) The normalised design eliminates data redundancy (customer and product details stored once), improves data integrity (no update, insertion, or deletion anomalies), and makes queries more flexible (e.g., finding all orders by a customer is done via the CustomerID foreign key).
 
@@ -1282,3 +1282,7 @@ Common Pitfalls
 - **Confusing PRIMARY KEY with FOREIGN KEY:** A primary key uniquely identifies each record in its table and cannot be NULL. A foreign key is a field in one table that references the primary key of another table, establishing a relationship. A field can be both a primary key in its own table and a foreign key referencing another table.
 
 :::
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

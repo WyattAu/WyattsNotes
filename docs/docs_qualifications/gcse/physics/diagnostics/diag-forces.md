@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ## Unit Tests
 
 ### UT-1: Newton's Laws and Resultant Forces
-**Question:** (a) State Newton's three laws of motion. (b) A 5 kg object is acted on by two forces: 30 N to the right and 20 N to the left. Calculate the acceleration. (c) A person of mass 70 kg stands in a lift. Calculate the normal force when: (i) the lift is stationary, (ii) accelerating upwards at $2 \text{ m/s{}^2$, (iii) accelerating downwards at $3 \text{ m/s{}^2$. (d) Explain why the person feels heavier when the lift accelerates upwards.
+**Question:** (a) State Newton's three laws of motion. (b) A 5 kg object is acted on by two forces: 30 N to the right and 20 N to the left. Calculate the acceleration. (c) A person of mass 70 kg stands in a lift. Calculate the normal force when: (i) the lift is stationary, (ii) accelerating upwards at $2 \text{ m/s{}^2$(iii) accelerating downwards at $3 \text{ m/s{}^2$. (d) Explain why the person feels heavier when the lift accelerates upwards.
 
 **Solution:**
 
@@ -32,7 +32,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) Hooke's law states that the extension of a spring is directly proportional to the force applied, provided the limit of proportionality is not exceeded: $F = kx$, where $k$ is the spring constant and $x$ is the extension.
+(a) Hooke's law states that the extension of a spring is directly proportional to the force applied, provided the limit of proportionality is not exceeded: $F = kx$Where $k$ is the spring constant and $x$ is the extension.
 
 Limitation: Hooke's law only applies up to the limit of proportionality (elastic limit). Beyond this point, the extension is no longer proportional to the force, and the spring may be permanently deformed.
 

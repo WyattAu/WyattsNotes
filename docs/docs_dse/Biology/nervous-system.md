@@ -17,23 +17,23 @@ slug: dse-biology-nervous-system
 
 Neurons (nerve cells) are the fundamental functional units of the nervous system. They are specialised for transmitting electrical impulses (action potentials) from one part of the body to another.
 
-| Component          | Structure                                                    | Function                                                                                         |
+| Component | Structure | Function |
 | ------------------ | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| Cell body (soma)   | Contains the nucleus, cytoplasm, and organelles              | Controls metabolic activity of the neuron; synthesises neurotransmitters                        |
-| Dendrites          | Short, branched extensions from the cell body                | Receive impulses from other neurons or sensory receptors; transmit towards the cell body        |
-| Axon              | Long, single fibre extending from the cell body              | Carries impulses away from the cell body towards the axon terminal                               |
-| Myelin sheath      | Fatty insulating layer around the axon                       | Insulates the axon; speeds up impulse transmission by saltatory conduction                      |
-| Nodes of Ranvier   | Gaps in the myelin sheath at regular intervals (~1 mm apart) | Allow ions to flow in/out of the axon; action potential "jumps" between nodes (saltatory conduction) |
-| Axon terminal      | Branched endings of the axon                                 | Release neurotransmitters into the synaptic cleft to stimulate the next neuron or effector       |
-| Schwann cells      | Cells that form the myelin sheath (in the PNS)              | Wrap around the axon, depositing layers of lipid (myelin) that insulate it                      |
+| Cell body (soma) | Contains the nucleus, cytoplasm, and organelles | Controls metabolic activity of the neuron; synthesises neurotransmitters |
+| Dendrites | Short, branched extensions from the cell body | Receive impulses from other neurons or sensory receptors; transmit towards the cell body |
+| Axon | Long, single fibre extending from the cell body | Carries impulses away from the cell body towards the axon terminal |
+| Myelin sheath | Fatty insulating layer around the axon | Insulates the axon; speeds up impulse transmission by saltatory conduction |
+| Nodes of Ranvier | Gaps in the myelin sheath at regular intervals (~1 mm apart) | Allow ions to flow in/out of the axon; action potential "jumps" between nodes (saltatory conduction) |
+| Axon terminal | Branched endings of the axon | Release neurotransmitters into the synaptic cleft to stimulate the next neuron or effector |
+| Schwann cells | Cells that form the myelin sheath (in the PNS) | Wrap around the axon, depositing layers of lipid (myelin) that insulate it |
 
 ### Types of Neurons
 
-| Type               | Structure                                 | Function                                           | Location                                    |
+| Type | Structure | Function | Location |
 | ------------------ | ----------------------------------------- | -------------------------------------------------- | ------------------------------------------- |
-| Sensory (afferent) | Long axon; cell body in a side branch     | Transmit impulses FROM receptors TO the CNS        | Dorsal root ganglion; throughout the body   |
-| Relay (interneuron)| Short axon; many dendrites                | Connect sensory and motor neurons; process information | Within the CNS (brain and spinal cord)      |
-| Motor (efferent)   | Cell body in CNS; long axon to effector   | Transmit impulses FROM the CNS TO effectors        | Ventral horn of spinal cord; brainstem      |
+| Sensory (afferent) | Long axon; cell body in a side branch | Transmit impulses FROM receptors TO the CNS | Dorsal root ganglion; throughout the body |
+| Relay (interneuron)| Short axon; many dendrites | Connect sensory and motor neurons; process information | Within the CNS (brain and spinal cord) |
+| Motor (efferent) | Cell body in CNS; long axon to effector | Transmit impulses FROM the CNS TO effectors | Ventral horn of spinal cord; brainstem |
 
 ### Myelination
 
@@ -54,7 +54,7 @@ Neurons (nerve cells) are the fundamental functional units of the nervous system
 
 ### Establishment of the Resting Potential
 
-When a neuron is not transmitting an impulse, it is said to be at its **resting potential**. The inside of the axon is negatively charged relative to the outside, typically at approximately **-70 mV**.
+When a neuron is not transmitting an impulse, it is said to be at its **resting potential**. The inside of the axon is negatively charged relative to the outside, at approximately **-70 mV**.
 
 **The resting potential is established and maintained by three factors:**
 
@@ -80,11 +80,11 @@ When a neuron is not transmitting an impulse, it is said to be at its **resting 
 
 The resting potential is therefore an **electrochemical gradient**: a combination of the concentration gradients of $\mathrm{Na}^+$ and $\mathrm{K}^+$ (chemical gradient) and the electrical potential difference (electrical gradient).
 
-| Ion  | Intracellular Concentration (mM) | Extracellular Concentration (mM) | Direction of Concentration Gradient |
+| Ion | Intracellular Concentration (mM) | Extracellular Concentration (mM) | Direction of Concentration Gradient |
 | ---- | ------------------------------- | -------------------------------- | ---------------------------------- |
-| $\mathrm{Na}^+$ | 15                              | 145                              | Inward                             |
-| $\mathrm{K}^+$  | 140                             | 5                                | Outward                            |
-| $\mathrm{Cl}^-$ | 10                              | 110                              | Inward                             |
+| $\mathrm{Na}^+$ | 15 | 145 | Inward |
+| $\mathrm{K}^+$ | 140 | 5 | Outward |
+| $\mathrm{Cl}^-$ | 10 | 110 | Inward |
 
 ---
 
@@ -94,13 +94,13 @@ The resting potential is therefore an **electrochemical gradient**: a combinatio
 
 An action potential is a rapid, transient reversal of the membrane potential from approximately -70 mV to approximately +40 mV, followed by a return to the resting potential.
 
-| Phase                        | Membrane Potential | Ion Movements                                                                                               | Channel Status                                    |
+| Phase | Membrane Potential | Ion Movements | Channel Status |
 | ---------------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Resting                      | -70 mV             | $\mathrm{Na}^+/\mathrm{K}^+$ pump maintains gradients; $\mathrm{K}^+$ leaks out                           | Most voltage-gated channels closed               |
-| Depolarisation               | -70 mV to +40 mV   | $\mathrm{Na}^+$ rushes IN through voltage-gated $\mathrm{Na}^+$ channels (down electrochemical gradient)    | Voltage-gated $\mathrm{Na}^+$ channels open      |
-| Repolarisation               | +40 mV to -70 mV   | $\mathrm{K}^+$ rushes OUT through voltage-gated $\mathrm{K}^+$ channels (down concentration gradient)       | $\mathrm{Na}^+$ channels close; $\mathrm{K}^+$ channels open |
-| Hyperpolarisation (overshoot)| -70 mV to -80 mV   | $\mathrm{K}^+$ continues to diffuse out (voltage-gated $\mathrm{K}^+$ channels are slow to close)           | $\mathrm{Na}^+$ channels closed; $\mathrm{K}^+$ channels still open |
-| Return to resting            | -80 mV to -70 mV   | $\mathrm{Na}^+/\mathrm{K}^+$ pump restores ionic gradients; $\mathrm{K}^+$ channels close                   | All channels return to resting state              |
+| Resting | -70 mV | $\mathrm{Na}^+/\mathrm{K}^+$ pump maintains gradients; $\mathrm{K}^+$ leaks out | Most voltage-gated channels closed |
+| Depolarisation | -70 mV to +40 mV | $\mathrm{Na}^+$ rushes IN through voltage-gated $\mathrm{Na}^+$ channels (down electrochemical gradient) | Voltage-gated $\mathrm{Na}^+$ channels open |
+| Repolarisation | +40 mV to -70 mV | $\mathrm{K}^+$ rushes OUT through voltage-gated $\mathrm{K}^+$ channels (down concentration gradient) | $\mathrm{Na}^+$ channels close; $\mathrm{K}^+$ channels open |
+| Hyperpolarisation (overshoot)| -70 mV to -80 mV | $\mathrm{K}^+$ continues to diffuse out (voltage-gated $\mathrm{K}^+$ channels are slow to close) | $\mathrm{Na}^+$ channels closed; $\mathrm{K}^+$ channels still open |
+| Return to resting | -80 mV to -70 mV | $\mathrm{Na}^+/\mathrm{K}^+$ pump restores ionic gradients; $\mathrm{K}^+$ channels close | All channels return to resting state |
 
 ### Threshold and the All-or-Nothing Principle
 
@@ -164,13 +164,13 @@ This is within the typical range for myelinated sensory neurons (approximately 1
 
 A synapse is the junction between two neurons (or between a neuron and an effector). The most commonly studied synapse uses **acetylcholine** as the neurotransmitter.
 
-| Structure              | Description                                                                                               |
+| Structure | Description |
 | ---------------------- | --------------------------------------------------------------------------------------------------------- |
-| Pre-synaptic membrane  | The membrane of the axon terminal of the first (pre-synaptic) neuron                                      |
-| Synaptic vesicles      | Vesicles in the pre-synaptic terminal that store neurotransmitter molecules                                |
-| Synaptic cleft         | The narrow gap (~20 nm) between the pre-synaptic and post-synaptic membranes                              |
+| Pre-synaptic membrane | The membrane of the axon terminal of the first (pre-synaptic) neuron |
+| Synaptic vesicles | Vesicles in the pre-synaptic terminal that store neurotransmitter molecules |
+| Synaptic cleft | The narrow gap (~20 nm) between the pre-synaptic and post-synaptic membranes |
 | Post-synaptic membrane | The membrane of the dendrite or cell body of the second (post-synaptic) neuron, containing receptor proteins |
-| Mitochondria           | Provide ATP for the synthesis of neurotransmitter and for reuptake of breakdown products                   |
+| Mitochondria | Provide ATP for the synthesis of neurotransmitter and for reuptake of breakdown products |
 
 ### Mechanism of Synaptic Transmission
 
@@ -186,18 +186,18 @@ A synapse is the junction between two neurons (or between a neuron and an effect
 
 6. **Post-synaptic potential:** If acetylcholine (an excitatory neurotransmitter) binds to the receptors, $\mathrm{Na}^+$ channels open. $\mathrm{Na}^+$ diffuses into the post-synaptic neuron, causing a small depolarisation called an **excitatory post-synaptic potential (EPSP)**.
 
-7. **Summation:** A single EPSP is usually insufficient to reach threshold. Multiple EPSPs from different synapses (**spatial summation**) or in rapid succession from the same synapse (**temporal summation**) can combine to depolarise the post-synaptic membrane to threshold, triggering a new action potential.
+7. **Summation:** A single EPSP is insufficient to reach threshold. Multiple EPSPs from different synapses (**spatial summation**) or in rapid succession from the same synapse (**temporal summation**) can combine to depolarise the post-synaptic membrane to threshold, triggering a new action potential.
 
 8. **Neurotransmitter removal:** Acetylcholine is rapidly broken down by the enzyme **acetylcholinesterase**, which is attached to the post-synaptic membrane. The breakdown products (choline and acetate) are taken back up by the pre-synaptic neuron and used to resynthesise acetylcholine.
 
 ### Excitatory and Inhibitory Synapses
 
-| Feature               | Excitatory Synapse                                     | Inhibitory Synapse                                                |
+| Feature | Excitatory Synapse | Inhibitory Synapse |
 | --------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
-| Neurotransmitter      | Acetylcholine, noradrenaline, glutamate                | GABA, glycine                                                     |
-| Ion channels opened   | $\mathrm{Na}^+$ channels (also some $\mathrm{Ca}^{2+}$) | $\mathrm{Cl}^-$ channels (also some $\mathrm{K}^+$ channels) |
-| Effect on membrane    | Depolarisation (EPSP -- towards threshold)             | Hyperpolarisation (IPSP -- further from threshold)                |
-| Probability of AP     | Increases                                              | Decreases                                                         |
+| Neurotransmitter | Acetylcholine, noradrenaline, glutamate | GABA, glycine |
+| Ion channels opened | $\mathrm{Na}^+$ channels (also some $\mathrm{Ca}^{2+}$) | $\mathrm{Cl}^-$ channels (also some $\mathrm{K}^+$ channels) |
+| Effect on membrane | Depolarisation (EPSP -- towards threshold) | Hyperpolarisation (IPSP -- further from threshold) |
+| Probability of AP | Increases | Decreases |
 
 **Inhibitory post-synaptic potential (IPSP):** When an inhibitory neurotransmitter (e.g., GABA) binds to receptors on the post-synaptic membrane, $\mathrm{Cl}^-$ channels open. $\mathrm{Cl}^-$ diffuses into the neuron (or $\mathrm{K}^+$ diffuses out), making the inside even more negative (hyperpolarisation, to approximately -75 to -80 mV). This moves the membrane potential further from threshold, making it LESS likely that an action potential will be generated.
 
@@ -230,13 +230,13 @@ Transmission across a synapse takes approximately 0.5-1.0 ms, which is much slow
 
 A reflex arc is the neural pathway that controls an involuntary, rapid response to a stimulus. It does not require conscious thought.
 
-| Component            | Description                                                                |
+| Component | Description |
 | -------------------- | -------------------------------------------------------------------------- |
-| Receptor             | Detects the stimulus and generates nerve impulses                          |
-| Sensory neuron       | Transmits impulses from the receptor to the CNS (spinal cord or brainstem) |
-| Relay neuron         | Connects the sensory neuron to the motor neuron within the CNS              |
-| Motor neuron         | Transmits impulses from the CNS to the effector                             |
-| Effector              | Muscle or gland that carries out the response                               |
+| Receptor | Detects the stimulus and generates nerve impulses |
+| Sensory neuron | Transmits impulses from the receptor to the CNS (spinal cord or brainstem) |
+| Relay neuron | Connects the sensory neuron to the motor neuron within the CNS |
+| Motor neuron | Transmits impulses from the CNS to the effector |
+| Effector | Muscle or gland that carries out the response |
 
 ### Types of Reflex
 
@@ -284,45 +284,45 @@ This is a **cranial reflex** and a **consensual reflex** -- shining light in one
 
 ### The Eye: Detailed Structure
 
-| Component            | Structure and Function                                                                                                                     |
+| Component | Structure and Function |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Sclera               | Tough, white outer layer; protects the eye and maintains shape                                                                             |
-| Cornea               | Transparent front part of the sclera; refracts light as it enters the eye                                                                 |
-| Conjunctiva          | Thin transparent membrane covering the sclera and inner eyelids; produces mucus to lubricate the eye                                      |
-| Choroid              | Pigmented, vascular layer; absorbs stray light to prevent reflection; supplies nutrients to the retina                                    |
-| Retina               | Light-sensitive layer at the back of the eye; contains photoreceptors (rods and cones)                                                    |
-| Fovea                | Small depression at the centre of the retina; contains only cones; highest visual acuity (point of sharpest vision)                        |
-| Blind spot (optic disc) | Point where the optic nerve exits the eye; no photoreceptors, so no vision at this point                                                  |
-| Iris                 | Coloured ring of muscle; controls the size of the pupil (circular muscles constrict, radial muscles dilate)                                |
-| Pupil                | Hole in the centre of the iris; allows light to enter the eye                                                                             |
-| Lens                 | Transparent, elastic structure; changes shape to focus light on the retina (accommodation)                                                 |
-| Ciliary body         | Ring of muscle that controls the shape of the lens; also secretes aqueous humour                                                           |
-| Suspensory ligaments | Connect the ciliary body to the lens; transmit tension from the ciliary muscles to the lens                                                |
-| Aqueous humour       | Watery fluid between the cornea and lens; maintains pressure and provides nutrients                                                          |
-| Vitreous humour      | Jelly-like fluid filling the space behind the lens; maintains the shape of the eye and transmits light                                    |
-| Optic nerve          | Transmits impulses from the retina to the brain                                                                                            |
+| Sclera | Tough, white outer layer; protects the eye and maintains shape |
+| Cornea | Transparent front part of the sclera; refracts light as it enters the eye |
+| Conjunctiva | Thin transparent membrane covering the sclera and inner eyelids; produces mucus to lubricate the eye |
+| Choroid | Pigmented, vascular layer; absorbs stray light to prevent reflection; supplies nutrients to the retina |
+| Retina | Light-sensitive layer at the back of the eye; contains photoreceptors (rods and cones) |
+| Fovea | Small depression at the centre of the retina; contains only cones; highest visual acuity (point of sharpest vision) |
+| Blind spot (optic disc) | Point where the optic nerve exits the eye; no photoreceptors, so no vision at this point |
+| Iris | Coloured ring of muscle; controls the size of the pupil (circular muscles constrict, radial muscles dilate) |
+| Pupil | Hole in the centre of the iris; allows light to enter the eye |
+| Lens | Transparent, elastic structure; changes shape to focus light on the retina (accommodation) |
+| Ciliary body | Ring of muscle that controls the shape of the lens; also secretes aqueous humour |
+| Suspensory ligaments | Connect the ciliary body to the lens; transmit tension from the ciliary muscles to the lens |
+| Aqueous humour | Watery fluid between the cornea and lens; maintains pressure and provides nutrients |
+| Vitreous humour | Jelly-like fluid filling the space behind the lens; maintains the shape of the eye and transmits light |
+| Optic nerve | Transmits impulses from the retina to the brain |
 
 ### Adaptations of the Eye for Function
 
-| Adaptation                    | Function                                                                                    |
+| Adaptation | Function |
 | ----------------------------- | ------------------------------------------------------------------------------------------- |
-| Transparent cornea and lens  | Allow light to pass through to the retina                                                    |
+| Transparent cornea and lens | Allow light to pass through to the retina |
 | Suspensory ligaments and ciliary muscles | Enable the lens to change shape for accommodation (focusing on near and distant objects) |
-| Two types of photoreceptor    | Rods for dim light and peripheral vision; cones for colour and detailed central vision        |
-| Fovea packed with cones       | Highest visual acuity at the centre of the visual field                                       |
-| Iris controls pupil size      | Regulates the amount of light entering the eye (protects retina from damage in bright light)  |
-| Aqueous and vitreous humours  | Maintain the shape of the eyeball and keep the retina pressed against the choroid             |
+| Two types of photoreceptor | Rods for dim light and peripheral vision; cones for colour and detailed central vision |
+| Fovea packed with cones | Highest visual acuity at the centre of the visual field |
+| Iris controls pupil size | Regulates the amount of light entering the eye (protects retina from damage in bright light) |
+| Aqueous and vitreous humours | Maintain the shape of the eyeball and keep the retina pressed against the choroid |
 
 ### Photoreceptors: Rods and Cones
 
-| Feature       | Rods                                                                 | Cones                                                                     |
+| Feature | Rods | Cones |
 | ------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Sensitivity   | Very high; work in dim light (scotopic vision)                       | Lower; work in bright light (photopic vision)                             |
-| Colour vision | Cannot distinguish colour (only one type of rhodopsin pigment)       | Three types (red, green, blue iodopsin); enable colour vision             |
-| Visual acuity | Low resolution (many rods share one bipolar neuron)                  | High resolution (one cone per bipolar neuron in the fovea)                |
-| Distribution  | Concentrated at the periphery of the retina (absent at the fovea)    | Concentrated at the fovea (sparse at the periphery)                       |
-| Pigment       | Rhodopsin (bleached in bright light; takes time to regenerate)       | Iodopsin (three types with different absorption spectra)                  |
-| Role          | Peripheral vision; detecting movement; night vision                   | Central vision; colour discrimination; fine detail                        |
+| Sensitivity | Very high; work in dim light (scotopic vision) | Lower; work in bright light (photopic vision) |
+| Colour vision | Cannot distinguish colour (only one type of rhodopsin pigment) | Three types (red, green, blue iodopsin); enable colour vision |
+| Visual acuity | Low resolution (many rods share one bipolar neuron) | High resolution (one cone per bipolar neuron in the fovea) |
+| Distribution | Concentrated at the periphery of the retina (absent at the fovea) | Concentrated at the fovea (sparse at the periphery) |
+| Pigment | Rhodopsin (bleached in bright light; takes time to regenerate) | Iodopsin (three types with different absorption spectra) |
+| Role | Peripheral vision; detecting movement; night vision | Central vision; colour discrimination; fine detail |
 
 ### The Ear: Hearing and Balance
 
@@ -354,17 +354,17 @@ The ear has two functions: hearing and balance.
 
 The brain is the main coordinating centre of the nervous system. It receives sensory input, processes information, and sends motor output.
 
-| Region                 | Structure                            | Function                                                                                                                  |
+| Region | Structure | Function |
 | ---------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Cerebrum              | Two cerebral hemispheres (left, right) | Higher-order functions: conscious thought, memory, learning, language, decision-making, reasoning, personality             |
-| Cerebral cortex       | Outer layer of grey matter            | Contains motor areas (control voluntary movement), sensory areas (receive sensory input), association areas (interpretation) |
-| Corpus callosum       | Bundle of nerve fibres               | Connects the two cerebral hemispheres, allowing communication between them                                                |
-| Hypothalamus          | Small region below the thalamus      | Controls the pituitary gland; regulates body temperature, hunger, thirst, blood water potential; produces ADH and releasing hormones |
-| Pituitary gland       | Pea-sized gland below the hypothalamus | "Master gland" -- secretes hormones controlling other endocrine glands (FSH, LH, TSH, ACTH, GH); posterior lobe stores ADH and oxytocin |
-| Thalamus              | Above the hypothalamus               | Relay station for sensory impulses (except olfaction) to the cerebral cortex; filters sensory information before it reaches conscious awareness |
-| Medulla oblongata     | Lowest part of the brainstem         | Controls involuntary (autonomic) functions: breathing rate, heart rate, blood pressure, swallowing, coughing, sneezing       |
-| Cerebellum            | Below the cerebrum, behind the brainstem | Coordinates movement and balance; fine-tunes motor activity; maintains posture; involved in motor learning                   |
-| Pons                  | Above the medulla                     | Relays signals between the cerebrum and cerebellum; helps regulate breathing rhythm                                          |
+| Cerebrum | Two cerebral hemispheres (left, right) | Higher-order functions: conscious thought, memory, learning, language, decision-making, reasoning, personality |
+| Cerebral cortex | Outer layer of grey matter | Contains motor areas (control voluntary movement), sensory areas (receive sensory input), association areas (interpretation) |
+| Corpus callosum | Bundle of nerve fibres | Connects the two cerebral hemispheres, allowing communication between them |
+| Hypothalamus | Small region below the thalamus | Controls the pituitary gland; regulates body temperature, hunger, thirst, blood water potential; produces ADH and releasing hormones |
+| Pituitary gland | Pea-sized gland below the hypothalamus | "Master gland" -- secretes hormones controlling other endocrine glands (FSH, LH, TSH, ACTH, GH); posterior lobe stores ADH and oxytocin |
+| Thalamus | Above the hypothalamus | Relay station for sensory impulses (except olfaction) to the cerebral cortex; filters sensory information before it reaches conscious awareness |
+| Medulla oblongata | Lowest part of the brainstem | Controls involuntary (autonomic) functions: breathing rate, heart rate, blood pressure, swallowing, coughing, sneezing |
+| Cerebellum | Below the cerebrum, behind the brainstem | Coordinates movement and balance; fine-tunes motor activity; maintains posture; involved in motor learning |
+| Pons | Above the medulla | Relays signals between the cerebrum and cerebellum; helps regulate breathing rhythm |
 
 ### The Spinal Cord
 
@@ -376,14 +376,14 @@ The spinal cord runs from the medulla oblongata down the vertebral column. It ha
 
 **Cross-sectional structure of the spinal cord:**
 
-| Feature              | Description                                                                                   |
+| Feature | Description |
 | -------------------- | --------------------------------------------------------------------------------------------- |
-| Grey matter          | Central H-shaped region; contains cell bodies of relay neurons, motor neurons, and interneurons |
-| White matter         | Outer region; contains myelinated axons (sensory ascending tracts and motor descending tracts) |
-| Central canal        | Small channel running the length of the cord; contains cerebrospinal fluid (CSF)              |
-| Dorsal root          | Contains sensory neuron axons entering the spinal cord                                        |
-| Ventral root         | Contains motor neuron axons leaving the spinal cord                                           |
-| Dorsal root ganglion | Swelling containing cell bodies of sensory neurons                                             |
+| Grey matter | Central H-shaped region; contains cell bodies of relay neurons, motor neurons, and interneurons |
+| White matter | Outer region; contains myelinated axons (sensory ascending tracts and motor descending tracts) |
+| Central canal | Small channel running the length of the cord; contains cerebrospinal fluid (CSF) |
+| Dorsal root | Contains sensory neuron axons entering the spinal cord |
+| Ventral root | Contains motor neuron axons leaving the spinal cord |
+| Dorsal root ganglion | Swelling containing cell bodies of sensory neurons |
 
 ---
 
@@ -393,21 +393,21 @@ The spinal cord runs from the medulla oblongata down the vertebral column. It ha
 
 The autonomic nervous system (ANS) controls involuntary body functions such as heart rate, digestion, breathing rate, and pupil size. It has two divisions that generally have antagonistic effects.
 
-| Feature             | Sympathetic Nervous System                                     | Parasympathetic Nervous System                              |
+| Feature | Sympathetic Nervous System | Parasympathetic Nervous System |
 | ------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
-| General function    | "Fight or flight" -- prepares body for action/stress            | "Rest and digest" -- promotes calm, maintenance activities   |
-| Neurotransmitter (pre-ganglionic) | Acetylcholine                                                | Acetylcholine                                               |
-| Neurotransmitter (post-ganglionic) | Noradrenaline (at most effectors)                             | Acetylcholine                                               |
-| Origin              | Thoracic and lumbar regions of spinal cord                     | Brainstem and sacral region of spinal cord                  |
-| Ganglia location    | Close to the spinal cord (paravertebral chain)                 | Close to or within the target organ                         |
-| Preganglionic fibre | Short                                                          | Long                                                        |
-| Postganglionic fibre| Long                                                           | Short                                                       |
-| Heart rate          | Increases                                                      | Decreases                                                   |
-| Pupil size          | Dilates                                                        | Constricts                                                  |
-| Bronchioles         | Dilates (increases air intake)                                 | Constricts                                                  |
-| Digestive activity  | Decreases (inhibits peristalsis; reduces secretions)           | Increases (stimulates peristalsis and secretions)           |
-| Blood glucose       | Increases (stimulates glycogenolysis)                          | Decreases                                                   |
-| Blood vessels       | Vasoconstriction in skin and gut; vasodilation in muscles       | No significant effect on most blood vessels                  |
+| General function | "Fight or flight" -- prepares body for action/stress | "Rest and digest" -- promotes calm, maintenance activities |
+| Neurotransmitter (pre-ganglionic) | Acetylcholine | Acetylcholine |
+| Neurotransmitter (post-ganglionic) | Noradrenaline (at most effectors) | Acetylcholine |
+| Origin | Thoracic and lumbar regions of spinal cord | Brainstem and sacral region of spinal cord |
+| Ganglia location | Close to the spinal cord (paravertebral chain) | Close to or within the target organ |
+| Preganglionic fibre | Short | Long |
+| Postganglionic fibre| Long | Short |
+| Heart rate | Increases | Decreases |
+| Pupil size | Dilates | Constricts |
+| Bronchioles | Dilates (increases air intake) | Constricts |
+| Digestive activity | Decreases (inhibits peristalsis; reduces secretions) | Increases (stimulates peristalsis and secretions) |
+| Blood glucose | Increases (stimulates glycogenolysis) | Decreases |
+| Blood vessels | Vasoconstriction in skin and gut; vasodilation in muscles | No significant effect on most blood vessels |
 
 ### Nervous Control of Heart Rate
 
@@ -467,31 +467,31 @@ Breathing rate is controlled by the **ventilation centre** (respiratory centre) 
 
 **Structure of the eye:**
 
-| Component              | Description                                                                                                               | Function                                                                                                                 |
+| Component | Description | Function |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Sclera                  | Tough, white, fibrous outer layer of the eye                                                                             | Protects the eye; provides attachment points for the extrinsic muscles that move the eye                                  |
-| Cornea                  | Transparent front part of the sclera; curved                                                                              | Refracts (bends) light as it enters the eye; provides most of the eye's focusing power (~2/3 of the total refraction)  |
-| Conjunctiva             | Thin, transparent membrane covering the sclera and inner eyelids                                                          | Protects and lubricates the eye surface                                                                                  |
-| Iris                    | Coloured ring of muscle tissue behind the cornea                                                                          | Controls the size of the pupil; regulates the amount of light entering the eye                                           |
-| Pupil                   | Hole in the centre of the iris                                                                                            | Allows light to pass through to the retina                                                                               |
-| Lens                    | Transparent, flexible, biconvex structure behind the iris and pupil                                                       | Fine-tunes focusing (accommodation); changes shape to focus on objects at different distances                           |
-| Ciliary body            | Ring of muscle tissue connected to the lens by suspensory ligaments                                                      | Controls the shape of the lens (accommodation)                                                                           |
-| Retina                  | Light-sensitive layer at the back of the eye; contains photoreceptor cells (rods and cones)                               | Converts light energy into electrical nerve impulses (transduction)                                                     |
-| Fovea                   | Small depression in the retina at the centre of the macula; highest concentration of cones                                | Area of sharpest vision (highest visual acuity); colour vision is best here                                             |
-| Optic nerve             | Bundle of nerve fibres carrying impulses from the retina to the brain                                                     | Transmits visual information to the visual cortex in the occipital lobe                                                 |
-| Blind spot              | Area where the optic nerve leaves the retina (optic disc)                                                                 | No photoreceptors; cannot detect light; the brain fills in the missing information                                      |
-| Aqueous humour           | Clear, watery fluid in the space between the cornea and the lens (anterior chamber)                                      | Maintains the shape of the front of the eye; provides nutrients to the cornea and lens; refracts light slightly         |
-| Vitreous humour          | Clear, jelly-like substance filling the space between the lens and the retina (posterior chamber)                         | Maintains the shape of the eyeball; keeps the retina pressed against the back of the eye                                |
-| Choroid                  | Pigmented, vascular layer between the sclera and the retina                                                              | Provides oxygen and nutrients to the retina; contains pigment (melanin) that absorbs stray light and prevents internal reflection |
+| Sclera | Tough, white, fibrous outer layer of the eye | Protects the eye; provides attachment points for the extrinsic muscles that move the eye |
+| Cornea | Transparent front part of the sclera; curved | Refracts (bends) light as it enters the eye; provides most of the eye's focusing power (~2/3 of the total refraction) |
+| Conjunctiva | Thin, transparent membrane covering the sclera and inner eyelids | Protects and lubricates the eye surface |
+| Iris | Coloured ring of muscle tissue behind the cornea | Controls the size of the pupil; regulates the amount of light entering the eye |
+| Pupil | Hole in the centre of the iris | Allows light to pass through to the retina |
+| Lens | Transparent, flexible, biconvex structure behind the iris and pupil | Fine-tunes focusing (accommodation); changes shape to focus on objects at different distances |
+| Ciliary body | Ring of muscle tissue connected to the lens by suspensory ligaments | Controls the shape of the lens (accommodation) |
+| Retina | Light-sensitive layer at the back of the eye; contains photoreceptor cells (rods and cones) | Converts light energy into electrical nerve impulses (transduction) |
+| Fovea | Small depression in the retina at the centre of the macula; highest concentration of cones | Area of sharpest vision (highest visual acuity); colour vision is best here |
+| Optic nerve | Bundle of nerve fibres carrying impulses from the retina to the brain | Transmits visual information to the visual cortex in the occipital lobe |
+| Blind spot | Area where the optic nerve leaves the retina (optic disc) | No photoreceptors; cannot detect light; the brain fills in the missing information |
+| Aqueous humour | Clear, watery fluid in the space between the cornea and the lens (anterior chamber) | Maintains the shape of the front of the eye; provides nutrients to the cornea and lens; refracts light slightly |
+| Vitreous humour | Clear, jelly-like substance filling the space between the lens and the retina (posterior chamber) | Maintains the shape of the eyeball; keeps the retina pressed against the back of the eye |
+| Choroid | Pigmented, vascular layer between the sclera and the retina | Provides oxygen and nutrients to the retina; contains pigment (melanin) that absorbs stray light and prevents internal reflection |
 
 ### Accommodation
 
 Accommodation is the process by which the eye changes focus to see objects at different distances.
 
-| Distance                | Ciliary Muscles        | Suspensory Ligaments           | Lens Shape               | Focal Point             |
+| Distance | Ciliary Muscles | Suspensory Ligaments | Lens Shape | Focal Point |
 | ----------------------- | ---------------------- | ------------------------------ | ------------------------ | ----------------------- |
-| Distant object           | Relaxed                | Taut (pulled tight)            | Thin, flattened          | On the retina           |
-| Near object              | Contracted             | Slack (loose)                  | Thick, more curved       | On the retina           |
+| Distant object | Relaxed | Taut (pulled tight) | Thin, flattened | On the retina |
+| Near object | Contracted | Slack (loose) | Thick, more curved | On the retina |
 
 **Mechanism:**
 1. Light from a distant object is nearly parallel; the relaxed lens is thin enough to focus it on the retina
@@ -503,32 +503,32 @@ Accommodation is the process by which the eye changes focus to see objects at di
 
 ### Rods vs Cones
 
-| Feature                  | Rods                                                                                                                     | Cones                                                                                                                    |
+| Feature | Rods | Cones |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| Number                  | ~120 million per eye                                                                                                     | ~6 million per eye                                                                                                      |
-| Distribution            | Distributed throughout the retina, concentrated at the periphery; absent from the fovea                                | Concentrated in the fovea (centre of the macula); very few at the periphery                                             |
-| Sensitivity to light    | Very sensitive; function well in dim light (scotopic vision)                                                            | Less sensitive; require bright light (photopic vision)                                                                  |
-| Colour vision           | No; only one type of rod pigment (rhodopsin)                                                                             | Yes; three types of cones (S-cones for blue, M-cones for green, L-cones for red); enable trichromatic colour vision    |
-| Visual acuity (detail)  | Low; many rods share a single ganglion cell connection, so the brain cannot distinguish which individual rod was stimulated | High; each cone has its own dedicated ganglion cell connection, so the brain can precisely locate the stimulus            |
-| Response speed          | Slow to respond and recover (take longer to adapt to changes in light intensity)                                         | Fast to respond and recover                                                                                             |
-| Used for                | Peripheral vision; night vision; detecting motion                                                                        | Central vision; colour vision; fine detail (reading, recognising faces)                                                 |
+| Number | ~120 million per eye | ~6 million per eye |
+| Distribution | Distributed throughout the retina, concentrated at the periphery; absent from the fovea | Concentrated in the fovea (centre of the macula); very few at the periphery |
+| Sensitivity to light | Very sensitive; function well in dim light (scotopic vision) | Less sensitive; require bright light (photopic vision) |
+| Colour vision | No; only one type of rod pigment (rhodopsin) | Yes; three types of cones (S-cones for blue, M-cones for green, L-cones for red); enable trichromatic colour vision |
+| Visual acuity (detail) | Low; many rods share a single ganglion cell connection, so the brain cannot distinguish which individual rod was stimulated | High; each cone has its own dedicated ganglion cell connection, so the brain can precisely locate the stimulus |
+| Response speed | Slow to respond and recover (take longer to adapt to changes in light intensity) | Fast to respond and recover |
+| Used for | Peripheral vision; night vision; detecting motion | Central vision; colour vision; fine detail (reading, recognising faces) |
 
 ### The Ear
 
 **Structure and function:**
 
-| Component              | Description                                                                                                               | Function                                                                                                                 |
+| Component | Description | Function |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Pinna (auricle)          | Visible outer part of the ear; made of cartilage covered by skin                                                          | Collects sound waves and directs them into the ear canal                                                                  |
-| Ear canal (auditory meatus) | Tube leading from the pinna to the eardrum                                                                         | Directs sound waves to the tympanum; contains wax-producing glands that protect the ear from dust and microorganisms       |
-| Tympanum (eardrum)       | Thin, flexible membrane at the end of the ear canal                                                                      | Vibrates when sound waves reach it; transfers vibrations to the ossicles                                                  |
-| Ossicles                | Three tiny bones: malleus (hammer), incus (anvil), stapes (stirrup); smallest bones in the body                         | Amplify the vibrations from the tympanum (by about 20x) and transmit them to the oval window of the cochlea                |
-| Oval window             | Membrane-covered opening between the middle ear and the inner ear (cochlea)                                              | Receives vibrations from the stapes; transmits them to the fluid in the cochlea                                          |
-| Cochlea                 | Coiled, fluid-filled tube in the inner ear; contains the organ of Corti (hair cells)                                    | Converts vibrations into electrical nerve impulses; different parts of the cochlea respond to different frequencies       |
-| Round window            | Membrane-covered opening below the oval window                                                                           | Allows the fluid in the cochlea to move; dissipates the energy of the vibrations                                         |
-| Semi-circular canals     | Three fluid-filled loops at right angles to each other in the inner ear                                                  | Detect rotational movement of the head (balance and equilibrium)                                                         |
-| Auditory nerve           | Carries impulses from the cochlea to the auditory cortex in the temporal lobe                                            | Transmits sound information to the brain for interpretation                                                              |
-| Eustachian tube          | Tube connecting the middle ear to the nasopharynx (back of the throat)                                                   | Equalises air pressure on both sides of the tympanum; allows the eardrum to vibrate freely                              |
+| Pinna (auricle) | Visible outer part of the ear; made of cartilage covered by skin | Collects sound waves and directs them into the ear canal |
+| Ear canal (auditory meatus) | Tube leading from the pinna to the eardrum | Directs sound waves to the tympanum; contains wax-producing glands that protect the ear from dust and microorganisms |
+| Tympanum (eardrum) | Thin, flexible membrane at the end of the ear canal | Vibrates when sound waves reach it; transfers vibrations to the ossicles |
+| Ossicles | Three tiny bones: malleus (hammer), incus (anvil), stapes (stirrup); smallest bones in the body | Amplify the vibrations from the tympanum (by about 20x) and transmit them to the oval window of the cochlea |
+| Oval window | Membrane-covered opening between the middle ear and the inner ear (cochlea) | Receives vibrations from the stapes; transmits them to the fluid in the cochlea |
+| Cochlea | Coiled, fluid-filled tube in the inner ear; contains the organ of Corti (hair cells) | Converts vibrations into electrical nerve impulses; different parts of the cochlea respond to different frequencies |
+| Round window | Membrane-covered opening below the oval window | Allows the fluid in the cochlea to move; dissipates the energy of the vibrations |
+| Semi-circular canals | Three fluid-filled loops at right angles to each other in the inner ear | Detect rotational movement of the head (balance and equilibrium) |
+| Auditory nerve | Carries impulses from the cochlea to the auditory cortex in the temporal lobe | Transmits sound information to the brain for interpretation |
+| Eustachian tube | Tube connecting the middle ear to the nasopharynx (back of the throat) | Equalises air pressure on both sides of the tympanum; allows the eardrum to vibrate freely |
 
 **Hearing mechanism:**
 
@@ -544,16 +544,16 @@ Accommodation is the process by which the eye changes focus to see objects at di
 
 ### The Skin (Integumentary System)
 
-| Structure               | Description                                                                                                               | Function                                                                                                                 |
+| Structure | Description | Function |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Epidermis               | Outer layer of skin; contains keratinocytes (produce keratin), melanocytes (produce melanin), and Langerhans cells (immune cells) | Barrier against pathogens, UV radiation, and water loss; melanin provides UV protection                                 |
-| Dermis                  | Inner layer of skin; contains blood vessels, nerves, hair follicles, sweat glands, sebaceous glands, sensory receptors     | Provides structural support; nourishment; temperature regulation; sensation                                              |
-| Hypodermis (subcutaneous layer) | Layer of fat and connective tissue below the dermis                                                 | Insulation; energy storage; cushioning                                                                                   |
-| Thermoreceptors           | Nerve endings in the dermis that detect temperature changes                                                               | Detect heat and cold; relay information to the hypothalamus                                                              |
-| Mechanoreceptors          | Nerve endings in the dermis that detect pressure and touch                                                                | Detect pressure, vibration, and texture; relay information to the somatosensory cortex                                  |
-| Nociceptors               | Nerve endings that detect pain (tissue damage)                                                                            | Detect harmful stimuli; initiate protective reflexes                                                                     |
-| Sweat glands (eccrine)    | Coiled tubular glands in the dermis that produce sweat                                                                    | Thermoregulation: sweat evaporates from the skin surface, removing heat                                                  |
-| Hair erector muscles       | Small muscles attached to hair follicles                                                                                  | Contract in cold conditions (causing goosebumps), trapping a layer of insulating air next to the skin                    |
+| Epidermis | Outer layer of skin; contains keratinocytes (produce keratin), melanocytes (produce melanin), and Langerhans cells (immune cells) | Barrier against pathogens, UV radiation, and water loss; melanin provides UV protection |
+| Dermis | Inner layer of skin; contains blood vessels, nerves, hair follicles, sweat glands, sebaceous glands, sensory receptors | Provides structural support; nourishment; temperature regulation; sensation |
+| Hypodermis (subcutaneous layer) | Layer of fat and connective tissue below the dermis | Insulation; energy storage; cushioning |
+| Thermoreceptors | Nerve endings in the dermis that detect temperature changes | Detect heat and cold; relay information to the hypothalamus |
+| Mechanoreceptors | Nerve endings in the dermis that detect pressure and touch | Detect pressure, vibration, and texture; relay information to the somatosensory cortex |
+| Nociceptors | Nerve endings that detect pain (tissue damage) | Detect harmful stimuli; initiate protective reflexes |
+| Sweat glands (eccrine) | Coiled tubular glands in the dermis that produce sweat | Thermoregulation: sweat evaporates from the skin surface, removing heat |
+| Hair erector muscles | Small muscles attached to hair follicles | Contract in cold conditions (causing goosebumps), trapping a layer of insulating air next to the skin |
 
 
 
@@ -565,15 +565,15 @@ Accommodation is the process by which the eye changes focus to see objects at di
 
 Many drugs exert their effects by interfering with synaptic transmission. Understanding these mechanisms is important for both the DSE specification and for understanding the basis of addiction and medicine.
 
-| Mechanism                           | Description                                                                                                    | Example Drug        | Effect                           |
+| Mechanism | Description | Example Drug | Effect |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------- |
-| Agonist                             | Mimics the neurotransmitter by binding to and activating the receptor                                        | Nicotine (acetylcholine receptor agonist) | Stimulates the postsynaptic neuron |
-| Antagonist                          | Blocks the receptor, preventing the neurotransmitter from binding                                            | Curare (acetylcholine receptor antagonist) | Prevents synaptic transmission; causes paralysis |
-| Inhibits neurotransmitter breakdown | Blocks the enzyme that breaks down the neurotransmitter, prolonging its effect                                  | Sarin (inhibits acetylcholinesterase) | Acetylcholine accumulates; overstimulation; muscle spasm |
-| Stimulates neurotransmitter release | Causes more neurotransmitter to be released from the pre-synaptic terminal                                     | Amphetamine (stimulates dopamine and noradrenaline release) | Increased stimulation of postsynaptic neurons |
-| Inhibits neurotransmitter release   | Prevents neurotransmitter release from the pre-synaptic terminal                                              | Botulinum toxin (prevents acetylcholine release) | Flaccid paralysis; used medically for muscle spasms |
-| Blocks reuptake                     | Prevents the pre-synaptic neuron from recycling the neurotransmitter, increasing its concentration in the cleft | Cocaine (blocks dopamine reuptake); SSRIs (block serotonin reuptake) | Prolonged effect of neurotransmitter; mood elevation |
-| Blocks receptor on post-synaptic neuron | Binds to the receptor without activating it, preventing the real neurotransmitter from binding                  | Ketamine (NMDA receptor blocker) | Disrupts normal synaptic signalling |
+| Agonist | Mimics the neurotransmitter by binding to and activating the receptor | Nicotine (acetylcholine receptor agonist) | Stimulates the postsynaptic neuron |
+| Antagonist | Blocks the receptor, preventing the neurotransmitter from binding | Curare (acetylcholine receptor antagonist) | Prevents synaptic transmission; causes paralysis |
+| Inhibits neurotransmitter breakdown | Blocks the enzyme that breaks down the neurotransmitter, prolonging its effect | Sarin (inhibits acetylcholinesterase) | Acetylcholine accumulates; overstimulation; muscle spasm |
+| Stimulates neurotransmitter release | Causes more neurotransmitter to be released from the pre-synaptic terminal | Amphetamine (stimulates dopamine and noradrenaline release) | Increased stimulation of postsynaptic neurons |
+| Inhibits neurotransmitter release | Prevents neurotransmitter release from the pre-synaptic terminal | Botulinum toxin (prevents acetylcholine release) | Flaccid paralysis; used medically for muscle spasms |
+| Blocks reuptake | Prevents the pre-synaptic neuron from recycling the neurotransmitter, increasing its concentration in the cleft | Cocaine (blocks dopamine reuptake); SSRIs (block serotonin reuptake) | Prolonged effect of neurotransmitter; mood elevation |
+| Blocks receptor on post-synaptic neuron | Binds to the receptor without activating it, preventing the real neurotransmitter from binding | Ketamine (NMDA receptor blocker) | Disrupts normal synaptic signalling |
 
 ### Effects of Drugs on the Body
 
@@ -587,9 +587,9 @@ Many drugs exert their effects by interfering with synaptic transmission. Unders
 **Alcohol (ethanol):**
 
 - Crosses the blood-brain barrier and affects multiple neurotransmitter systems:
-  - Enhances GABA activity (inhibitory neurotransmitter): slows brain function, reduces anxiety, impairs coordination
-  - Inhibits glutamate (excitatory neurotransmitter): further depresses brain activity
-  - Increases dopamine release in the reward pathway: contributes to addictive potential
+ - Enhances GABA activity (inhibitory neurotransmitter): slows brain function, reduces anxiety, impairs coordination
+ - Inhibits glutamate (excitatory neurotransmitter): further depresses brain activity
+ - Increases dopamine release in the reward pathway: contributes to addictive potential
 - Short-term effects: impaired judgement, reduced coordination, slurred speech, slowed reaction time
 - Long-term effects: liver damage (cirrhosis), brain damage, cardiovascular disease, addiction
 
@@ -661,7 +661,7 @@ The resting potential of approximately -70 mV is established by three factors:
 
 2. **Potassium leak channels** make the membrane much more permeable to $\mathrm{K}^+$ than to $\mathrm{Na}^+$ at rest. $\mathrm{K}^+$ diffuses out of the cell down its concentration gradient, carrying positive charge out and making the inside more negative.
 
-3. **Low $\mathrm{Na}^+$ permeability** means that despite the strong inward concentration gradient for $\mathrm{Na}^+$, very little $\mathrm{Na}^+$ enters the cell at rest, so the outward $\mathrm{K}^+$ diffusion is not counteracted.
+3. **Low $\mathrm{Na}^+$ permeability** means that despite the strong inward concentration gradient for $\mathrm{Na}^+$Very little $\mathrm{Na}^+$ enters the cell at rest, so the outward $\mathrm{K}^+$ diffusion is not counteracted.
 
 The resting potential is maintained because the $\mathrm{Na}^+/\mathrm{K}^+$ pump continuously compensates for the slow leakage of ions, restoring the concentration gradients over time.
 
@@ -702,7 +702,7 @@ If you get this wrong, revise: Reflex Arcs -- The Pupillary Light Reflex
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Nervous System**? Review the [Human Physiology diagnostic test](/docs/dse/Biology/diagnostics/diag-human-physiology) which covers nervous system topics within the DSE specification.
 
 See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
@@ -715,9 +715,9 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 ### Alcohol (ethanol):**
 
 - Crosses the blood-brain barrier and affects multiple neurotransmitter systems:
-  - Enhances GABA activity (inhibitory neurotransmitter): slows brain function, reduces anxiety, impairs coordination
-  - Inhibits glutamate (excitatory neurotransmitter): further depresses brain activity
-  - Increases dopamine release in the reward pathway: contributes to addictive potential
+ - Enhances GABA activity (inhibitory neurotransmitter): slows brain function, reduces anxiety, impairs coordination
+ - Inhibits glutamate (excitatory neurotransmitter): further depresses brain activity
+ - Increases dopamine release in the reward pathway: contributes to addictive potential
 - Short-term effects: impaired judgement, reduced coordination, slurred speech, slowed reaction time
 - Long-term effects: liver damage (cirrhosis), brain damage, cardiovascular disease, addiction
 - Tolerance develops with repeated use: the brain adapts by reducing the number of GABA receptors and increasing glutamate receptors, requiring more alcohol for the same effect
@@ -738,10 +738,10 @@ See [Diagnostic Guide](/docs/dse/Biology/diagnostics/diagnostic-guide) for instr
 
 A stroke occurs when blood flow to part of the brain is disrupted, causing brain cells to die from oxygen and glucose deprivation.
 
-| Type              | Cause                                                    | Proportion |
+| Type | Cause | Proportion |
 | ----------------- | -------------------------------------------------------- | ---------- |
-| Ischaemic stroke  | Blockage of a brain artery by a blood clot or thrombus  | ~85%       |
-| Haemorrhagic stroke | Rupture of a blood vessel in the brain, causing bleeding and pressure | ~15%       |
+| Ischaemic stroke | Blockage of a brain artery by a blood clot or thrombus | ~85% |
+| Haemorrhagic stroke | Rupture of a blood vessel in the brain, causing bleeding and pressure | ~15% |
 
 **Risk factors:** High blood pressure, smoking, diabetes, high cholesterol, obesity, age, family history.
 
@@ -768,7 +768,7 @@ A stroke occurs when blood flow to part of the brain is disrupted, causing brain
 - Autoimmune disease in which the immune system attacks the myelin sheath of neurons in the CNS
 - Destruction of myelin disrupts the transmission of nerve impulses (slows or blocks conduction)
 - Symptoms: vision problems, muscle weakness, spasms, fatigue, coordination difficulties, numbness
-- More common in women than men; typically diagnosed between ages 20-40
+- More common in women than men; diagnosed between ages 20-40
 - Treatment: immunosuppressants, corticosteroids (during relapses), disease-modifying therapies
 
 ---
@@ -777,11 +777,11 @@ A stroke occurs when blood flow to part of the brain is disrupted, causing brain
 
 ### Types of Memory
 
-| Type                    | Description                                                                                                               | Duration                 | Capacity           |
+| Type | Description | Duration | Capacity |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ------------------ |
-| Sensory memory           | Brief storage of sensory information (visual, auditory, tactile)                                                      | Less than 1 second       | Very large         |
-| Short-term memory (STM)   | Temporary storage of information currently being processed; typically holds 7$\pm$2 items                               | 15-30 seconds            | Limited (7$\pm$2 items) |
-| Long-term memory (LTM)     | Permanent storage of information; potentially unlimited capacity                                                       | Days to lifetime         | Potentially unlimited |
+| Sensory memory | Brief storage of sensory information (visual, auditory, tactile) | Less than 1 second | Very large |
+| Short-term memory (STM) | Temporary storage of information currently being processed; holds 7$\pm$2 items | 15-30 seconds | Limited (7$\pm$2 items) |
+| Long-term memory (LTM) | Permanent storage of information; potentially unlimited capacity | Days to lifetime | Potentially unlimited |
 
 ### Short-Term Memory
 
@@ -789,21 +789,21 @@ A stroke occurs when blood flow to part of the brain is disrupted, causing brain
 - Capacity is limited to approximately 7$\pm$2 items (Miller's Law)
 - Can be increased by **chunking** -- grouping individual items into meaningful units (e.g., remembering a phone number as 3 chunks rather than 10 digits)
 - Duration can be extended by **rehearsal** -- actively repeating the information
-- Information is easily displaced by new incoming information (proactive and retroactive interference)
+- Information is displaced by new incoming information (proactive and retroactive interference)
 
 ### Long-Term Memory
 
 Long-term memory is subdivided into:
 
-| Type                      | Description                                                                                                               | Example                                 |
+| Type | Description | Example |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **Explicit (declarative)** | Conscious recall of facts and events                                                                          |                                         |
-| -- Episodic memory          | Memory of specific personal experiences and events                                                                  | Remembering your 18th birthday          |
-| -- Semantic memory           | Memory of general knowledge, facts, concepts                                                                      | Knowing that Paris is the capital of France |
-| **Implicit (non-declarative)** | Unconscious memory; skills and procedures that are performed automatically                                     |                                         |
-| -- Procedural memory         | Memory of motor skills and how to perform tasks                                                                    | Riding a bicycle, typing on a keyboard  |
-| -- Priming                 | Exposure to one stimulus influences response to a subsequent stimulus                                               | Seeing the word "doctor" makes you faster to recognise "nurse" |
-| -- Classical conditioning  | Associative learning; pairing a neutral stimulus with an unconditioned stimulus to produce a conditioned response   | Pavlov's dogs salivating at a bell       |
+| **Explicit (declarative)** | Conscious recall of facts and events | |
+| -- Episodic memory | Memory of specific personal experiences and events | Remembering your 18th birthday |
+| -- Semantic memory | Memory of general knowledge, facts, concepts | Knowing that Paris is the capital of France |
+| **Implicit (non-declarative)** | Unconscious memory; skills and procedures that are performed automatically | |
+| -- Procedural memory | Memory of motor skills and how to perform tasks | Riding a bicycle, typing on a keyboard |
+| -- Priming | Exposure to one stimulus influences response to a subsequent stimulus | Seeing the word "doctor" makes you faster to recognise "nurse" |
+| -- Classical conditioning | Associative learning; pairing a neutral stimulus with an unconditioned stimulus to produce a conditioned response | Pavlov's dogs salivating at a bell |
 
 ### Memory Consolidation and the Role of Sleep
 
@@ -822,20 +822,20 @@ LTP is the cellular basis of learning and memory:
 3. With repeated stimulation, sufficient glutamate is released to activate NMDA receptors (which are normally blocked by a magnesium ion)
 4. Calcium ions flow into the postsynaptic neuron through the NMDA receptor channels
 5. Calcium triggers a signalling cascade that:
-   - Causes more AMPA receptors to be inserted into the postsynaptic membrane (increasing sensitivity to glutamate)
-   - Activates gene transcription in the postsynaptic neuron (synthesis of new proteins)
-   - Strengthens the synaptic connection between the two neurons
+ - Causes more AMPA receptors to be inserted into the postsynaptic membrane (increasing sensitivity to glutamate)
+ - Activates gene transcription in the postsynaptic neuron (synthesis of new proteins)
+ - Strengthens the synaptic connection between the two neurons
 6. The strengthened connection means that future stimulation of the presynaptic neuron produces a larger response in the postsynaptic neuron
 
 ### Brain Imaging Techniques
 
-| Technique            | Full Name                 | Principle                                                                                                               | Uses                                                                                   | Resolution   |
+| Technique | Full Name | Principle | Uses | Resolution |
 | -------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------ |
-| CT scan               | Computed Tomography          | X-rays are passed through the brain from multiple angles; computer constructs a 3D image from the X-ray data          | Detecting tumours, haemorrhages, skull fractures; quick and widely available            | Moderate     |
-| MRI                  | Magnetic Resonance Imaging  | Strong magnetic field aligns hydrogen nuclei in water molecules; radio waves perturb them; emitted signals form an image | Detailed structural images of the brain; detecting tumours, lesions, atrophy             | High         |
-| fMRI                 | Functional MRI              | Measures changes in blood oxygenation (BOLD signal) as a proxy for neural activity; active brain areas receive more blood flow | Identifying which brain regions are active during specific tasks or cognitive processes  | Moderate-high |
-| PET scan             | Positron Emission Tomography | Patient injected with radioactive glucose; scanner detects positrons emitted by decaying radioisotope; active areas consume more glucose | Mapping brain activity; studying brain function in disease (e.g., Alzheimer's, Parkinson's) | Moderate     |
-| EEG                  | Electroencephalography      | Electrodes placed on the scalp detect electrical activity (brain waves) produced by neurons                              | Diagnosing epilepsy; studying sleep stages; monitoring anaesthesia depth                | Low temporal resolution (high temporal) |
+| CT scan | Computed Tomography | X-rays are passed through the brain from multiple angles; computer constructs a 3D image from the X-ray data | Detecting tumours, haemorrhages, skull fractures; quick and widely available | Moderate |
+| MRI | Magnetic Resonance Imaging | Strong magnetic field aligns hydrogen nuclei in water molecules; radio waves perturb them; emitted signals form an image | Detailed structural images of the brain; detecting tumours, lesions, atrophy | High |
+| fMRI | Functional MRI | Measures changes in blood oxygenation (BOLD signal) as a proxy for neural activity; active brain areas receive more blood flow | Identifying which brain regions are active during specific tasks or cognitive processes | Moderate-high |
+| PET scan | Positron Emission Tomography | Patient injected with radioactive glucose; scanner detects positrons emitted by decaying radioisotope; active areas consume more glucose | Mapping brain activity; studying brain function in disease (e.g., Alzheimer's, Parkinson's) | Moderate |
+| EEG | Electroencephalography | Electrodes placed on the scalp detect electrical activity (brain waves) produced by neurons | Diagnosing epilepsy; studying sleep stages; monitoring anaesthesia depth | Low temporal resolution (high temporal) |
 
 ---
 
@@ -851,15 +851,15 @@ LTP is the cellular basis of learning and memory:
 
 ### Neurotransmitters Summary Table
 
-| Neurotransmitter     | Type            | Function                                                                                                                 | Disorders Associated with Imbalance    |
+| Neurotransmitter | Type | Function | Disorders Associated with Imbalance |
 | -------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Acetylcholine (ACh)  | Excitatory (mainly) | Muscle contraction at neuromuscular junctions; role in memory, attention, and arousal in the CNS                     | Alzheimer's disease (deficiency); myasthenia gravis (receptor destruction) |
-| Dopamine             | Both            | Reward and pleasure; voluntary movement control; motivation; emotional response                                     | Parkinson's disease (deficiency); schizophrenia (excess in certain pathways) |
-| Serotonin (5-HT)     | Both            | Mood regulation; sleep; appetite; pain perception; body temperature regulation                                      | Depression (deficiency); anxiety disorders |
-| GABA                 | Inhibitory      | Principal inhibitory neurotransmitter in the brain; reduces neuronal excitability; prevents over-excitation           | Epilepsy (reduced GABA activity); anxiety (reduced GABA) |
-| Glutamate            | Excitatory      | Principal excitatory neurotransmitter in the brain; essential for learning and memory (LTP)                          | Excitotoxicity (excess glutamate causes neuronal death, implicated in stroke and Alzheimer's) |
-| Noradrenaline (norepinephrine) | Both  | Alertness; attention; fight-or-flight response; regulates heart rate and blood pressure                          | Depression (deficiency); ADHD; anxiety disorders |
-| Endorphins           | Inhibitory      | Pain relief; euphoria; stress reduction; released during exercise, injury, and excitement                            | Endorphin deficiency linked to chronic pain and depression |
+| Acetylcholine (ACh) | Excitatory (mainly) | Muscle contraction at neuromuscular junctions; role in memory, attention, and arousal in the CNS | Alzheimer's disease (deficiency); myasthenia gravis (receptor destruction) |
+| Dopamine | Both | Reward and pleasure; voluntary movement control; motivation; emotional response | Parkinson's disease (deficiency); schizophrenia (excess in certain pathways) |
+| Serotonin (5-HT) | Both | Mood regulation; sleep; appetite; pain perception; body temperature regulation | Depression (deficiency); anxiety disorders |
+| GABA | Inhibitory | Principal inhibitory neurotransmitter in the brain; reduces neuronal excitability; prevents over-excitation | Epilepsy (reduced GABA activity); anxiety (reduced GABA) |
+| Glutamate | Excitatory | Principal excitatory neurotransmitter in the brain; essential for learning and memory (LTP) | Excitotoxicity (excess glutamate causes neuronal death, implicated in stroke and Alzheimer's) |
+| Noradrenaline (norepinephrine) | Both | Alertness; attention; fight-or-flight response; regulates heart rate and blood pressure | Depression (deficiency); ADHD; anxiety disorders |
+| Endorphins | Inhibitory | Pain relief; euphoria; stress reduction; released during exercise, injury, and excitement | Endorphin deficiency linked to chronic pain and depression |
 
 ### Common Pitfalls
 
@@ -868,3 +868,11 @@ LTP is the cellular basis of learning and memory:
 - Parkinson's disease involves **dopamine deficiency** (not excess); schizophrenia involves **dopamine excess** (not deficiency)
 - GABA is the main inhibitory neurotransmitter, NOT the main excitatory one (that is glutamate)
 - Synaptic transmission is always in one direction: presynaptic $\rightarrow$ postsynaptic (because only the presynaptic terminal has synaptic vesicles containing neurotransmitter)
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

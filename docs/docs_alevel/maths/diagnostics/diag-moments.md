@@ -35,7 +35,7 @@ $$d = AB \times \cos 40° = 3\cos 40° \approx 2.298 \text{ m}$$
 
 $$\text{Moment} = F \times d = 50 \times 3\cos 40° = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$, not $F \times d_{\text{along rod}}$.
+**(b)** The student used the distance $AB = 3$ m instead of the perpendicular distance $3\cos 40° \approx 2.298$ m. The moment is $F \times d_{\perp}$Not $F \times d_{\text{along rod}}$.
 
 $$\text{Student's answer} = 150 \text{ Nm}$$
 
@@ -43,7 +43,7 @@ $$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
 $$\text{Percentage overestimate} = \frac◆LB◆150 - 150\cos 40°◆RB◆◆LB◆150\cos 40°◆RB◆ \times 100\% = \frac◆LB◆1 - \cos 40°◆RB◆◆LB◆\cos 40°◆RB◆ \times 100\% = \left(\frac◆LB◆1◆RB◆◆LB◆\cos 40°◆RB◆ - 1\right) \times 100\% \approx 30.5\%$$
 
-**(c)** If the $50$ N force acts perpendicular to the rod at $B$, the perpendicular distance from $A$ to the line of action is simply the length of the rod:
+**(c)** If the $50$ N force acts perpendicular to the rod at $B$The perpendicular distance from $A$ to the line of action is the length of the rod:
 
 $$\text{Moment} = 50 \times 3 = 150 \text{ Nm}$$
 
@@ -79,9 +79,9 @@ $$P \times 1.2 = 600 \times 0.4$$
 
 $$P = \frac{240}{1.2} = 200 \text{ N}$$
 
-Since $200 \lt 300$, the block **topples first** at $P = 200$ N.
+Since $200 \lt 300$The block **topples first** at $P = 200$ N.
 
-**(c)** The student's reasoning is flawed because the critical comparison is not just the value of $\mu$, but the ratio $\frac{h}{d}$ compared to $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆$, where $h$ is the height of force application and $d$ is half the base width. Here $\frac{h}{d} = \frac{1.2}{0.4} = 3$ and $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆ = 2$. Since $3 \gt 2$, toppling occurs first regardless of the specific value of $\mu$ being "large." A tall, narrow block with a force applied high up is always more susceptible to toppling than sliding.
+**(c)** The student's reasoning is flawed because the critical comparison is not just the value of $\mu$But the ratio $\frac{h}{d}$ compared to $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆$Where $h$ is the height of force application and $d$ is half the base width. Here $\frac{h}{d} = \frac{1.2}{0.4} = 3$ and $\frac◆LB◆1◆RB◆◆LB◆\mu◆RB◆ = 2$. Since $3 \gt 2$Toppling occurs first regardless of the specific value of $\mu$ being "large." A tall, narrow block with a force applied high up is always more susceptible to toppling than sliding.
 
 ---
 
@@ -115,7 +115,7 @@ $$200x = 550 \implies x = 2.75 \text{ m}$$
 
 The centre of mass is $2.75$ m from $A$ (i.e., $0.25$ m to the right of the midpoint).
 
-**(b)** With the $150$ N load at $2$ m from $A$, taking moments about $B$:
+**(b)** With the $150$ N load at $2$ m from $A$Taking moments about $B$:
 
 $$R_A \times 5 = 200 \times (5 - 2.75) + 150 \times (5 - 2)$$
 
@@ -137,7 +137,7 @@ $$\text{Error} = 190 - 180 = 10 \text{ N}$$
 
 $$\text{Percentage error} = \frac{10}{180} \times 100\% \approx 5.56\%$$
 
-The student's error arose from assuming the beam is uniform when the support reactions ($90$ N and $110$ N, which are unequal) clearly indicate it is not.
+The student's error arose from assuming the beam is uniform when the support reactions ($90$ N and $110$ N, which are unequal) indicate it is not.
 
 ---
 
@@ -149,7 +149,7 @@ The student's error arose from assuming the beam is uniform when the support rea
 
 **Question:**
 
-A uniform ladder of length $6$ m and weight $400$ N rests against a rough vertical wall. The foot of the ladder is on rough horizontal ground. The ladder makes an angle of $55°$ with the horizontal. The coefficient of friction between the ladder and the wall is $\mu_w = 0.3$, and the coefficient of friction between the ladder and the ground is $\mu_g = 0.4$.
+A uniform ladder of length $6$ m and weight $400$ N rests against a rough vertical wall. The foot of the ladder is on rough horizontal ground. The ladder makes an angle of $55°$ with the horizontal. The coefficient of friction between the ladder and the wall is $\mu_w = 0.3$And the coefficient of friction between the ladder and the ground is $\mu_g = 0.4$.
 
 **(a)** Find the normal reaction from the wall and the normal reaction from the ground.
 
@@ -187,7 +187,7 @@ At the wall: $F_w = 0.3R_w$.
 
 At the ground: $F_g = \mu_g R_g = 0.4R_g$.
 
-From horizontal equilibrium: $R_w = F_g = 0.4R_g$, so $R_g = \frac{R_w}{0.4} = 2.5R_w$.
+From horizontal equilibrium: $R_w = F_g = 0.4R_g$So $R_g = \frac{R_w}{0.4} = 2.5R_w$.
 
 From vertical equilibrium: $R_g + F_w = 400 \implies 2.5R_w + 0.3R_w = 400 \implies 2.8R_w = 400$.
 
@@ -211,7 +211,7 @@ $$6000\sin 55° = 10200\cos 55°$$
 
 $$\tan 55° = \frac{10200}{6000} = 1.7$$
 
-$\tan 55° \approx 1.428$. Since $1.428 \neq 1.7$, the assumption of simultaneous limiting equilibrium at both surfaces is inconsistent. The ladder cannot be at limiting friction at both surfaces simultaneously for these parameters.
+$\tan 55° \approx 1.428$. Since $1.428 \neq 1.7$The assumption of simultaneous limiting equilibrium at both surfaces is inconsistent. The ladder cannot be at limiting friction at both surfaces simultaneously for these parameters.
 
 This means we must determine which surface reaches limiting friction first. Taking moments about the foot and using $F_w \leq 0.3R_w$ and $R_w = F_g \leq 0.4R_g$:
 
@@ -227,7 +227,7 @@ Also $R_w = F_g \leq 0.4R_g = 0.4(400 - F_w) = 160 - 0.4F_w$.
 
 And $F_w \leq 0.3R_w$.
 
-If the ground is at limiting friction: $R_w = 160 - 0.4F_w$, and substituting into the moment equation:
+If the ground is at limiting friction: $R_w = 160 - 0.4F_w$And substituting into the moment equation:
 
 $$160 - 0.4F_w = (200 + F_w)\cot 55°$$
 
@@ -247,7 +247,7 @@ $F_g = R_w = 152.74$ N (at limiting: $= 0.4 \times 381.86$).
 
 $F_w \approx 18.14$ N (not at limiting).
 
-**(c)** For the minimum $\mu_g$, the ground must be at limiting friction and the wall friction is at its maximum:
+**(c)** For the minimum $\mu_g$The ground must be at limiting friction and the wall friction is at its maximum:
 
 $F_w = 0.3R_w$ and $F_g = \mu_g R_g$ with $F_g = R_w$.
 
@@ -265,7 +265,7 @@ $$R_w(6\sin 55° - 1.8\cos 55°) = 1200\cos 55°$$
 
 $$R_w = \frac◆LB◆1200\cos 55°◆RB◆◆LB◆6\sin 55° - 1.8\cos 55°◆RB◆$$
 
-$\sin 55° \approx 0.8192$, $\cos 55° \approx 0.5736$.
+$\sin 55° \approx 0.8192$$\cos 55° \approx 0.5736$.
 
 $$R_w = \frac{688.3}{4.915 - 1.032} = \frac{688.3}{3.883} \approx 177.3 \text{ N}$$
 
@@ -299,7 +299,7 @@ By conservation of energy (taking $A$ as the reference level):
 
 Loss in GPE $= mgh = 8 \times 9.8 \times 1 = 78.4$ J.
 
-Gain in KE $= \frac{1}{2}I\omega^2$, where $I$ is the moment of inertia of the rod about $A$.
+Gain in KE $= \frac{1}{2}I\omega^2$Where $I$ is the moment of inertia of the rod about $A$.
 
 For a uniform rod of mass $m$ and length $L$ about one end: $I = \frac{1}{3}mL^2 = \frac{1}{3}(8)(4) = \frac{32}{3}$ kg m$^2$.
 
@@ -329,7 +329,7 @@ $$\alpha = \frac◆LB◆78.4 \times 3◆RB◆◆LB◆32◆RB◆ = \frac{235.2}{3
 
 **Question:**
 
-A non-uniform beam $PQ$ of length $6$ m and weight $W$ N is supported at end $P$ on a pivot and at a point $R$ on the beam, where $PR = 4$ m, by a vertical string. When a load of $500$ N is hung from $Q$, the beam is horizontal and the tension in the string at $R$ is $800$ N. When the load is removed, the beam is still horizontal with the tension at $R$ now $250$ N.
+A non-uniform beam $PQ$ of length $6$ m and weight $W$ N is supported at end $P$ on a pivot and at a point $R$ on the beam, where $PR = 4$ m, by a vertical string. When a load of $500$ N is hung from $Q$The beam is horizontal and the tension in the string at $R$ is $800$ N. When the load is removed, the beam is still horizontal with the tension at $R$ now $250$ N.
 
 **(a)** Find the weight $W$ of the beam and the distance of its centre of mass from $P$.
 
@@ -343,7 +343,7 @@ A non-uniform beam $PQ$ of length $6$ m and weight $W$ N is supported at end $P$
 
 **(a)** Let the centre of mass of the beam be at distance $x$ from $P$.
 
-**Configuration 1 (load at $Q$, tension $= 800$ N):** Taking moments about $P$:
+**Configuration 1 (load at $Q$Tension $= 800$ N):** Taking moments about $P$:
 
 $$800 \times 4 = Wx + 500 \times 6$$
 
@@ -359,9 +359,9 @@ From (2): $Wx = 1000$.
 
 Substituting into (1): $3200 = 1000 + 3000 = 4000$.
 
-This gives $3200 = 4000$, which is a contradiction. This means the beam cannot be horizontal in both configurations with the given data, unless the beam is not uniform and the centre of mass shifts -- which is impossible for a rigid body.
+This gives $3200 = 4000$Which is a contradiction. This means the beam cannot be horizontal in both configurations with the given data, unless the beam is not uniform and the centre of mass shifts -- which is impossible for a rigid body.
 
-Let me reconsider. The problem states the beam is non-uniform. The weight $W$ is fixed, but perhaps I should not assume the beam rests on a pivot at $P$ in configuration 2 (it might be supported differently). Re-reading: the beam is "supported at end $P$ on a pivot and at a point $R$... by a vertical string." This support arrangement is the same in both configurations.
+Let me reconsider. The problem states the beam is non-uniform. The weight $W$ is fixed, but perhaps I should not assume the beam rests on a pivot at $P$ in configuration 2 (it might be supported differently). Re-reading: the beam is "supported at end $P$ on a pivot and at a point $R$... By a vertical string." This support arrangement is the same in both configurations.
 
 The contradiction means the stated values are inconsistent. However, this is likely an intentional trap. Let me re-examine.
 
@@ -381,9 +381,9 @@ This is indeed inconsistent ($3200 \neq 4000$). The problem data is contradictor
 
 However, let me check if there is a different interpretation. Perhaps $R$ is not at $PR = 4$ m in both configurations. Re-reading confirms $PR = 4$ m is fixed.
 
-**Conclusion:** The data is inconsistent. There is no solution. The values $T = 800$ N (with load) and $T = 250$ N (without load) cannot both be correct with the beam horizontal, weight $W$, and centre of mass at distance $x$ from $P$.
+**Conclusion:** The data is inconsistent. There is no solution. The values $T = 800$ N (with load) and $T = 250$ N (without load) cannot both be correct with the beam horizontal, weight $W$And centre of mass at distance $x$ from $P$.
 
-If instead $T = 250$ N in configuration 2 is changed so that the data is consistent, we need $Wx = 3200 - 3000 = 200$ from equation (1), giving $250 \times 4 = Wx \implies Wx = 1000$, contradicting $Wx = 200$. The correct tension in configuration 2 should be $T = 200/4 = 50$ N.
+If instead $T = 250$ N in configuration 2 is changed so that the data is consistent, we need $Wx = 3200 - 3000 = 200$ from equation (1), giving $250 \times 4 = Wx \implies Wx = 1000$Contradicting $Wx = 200$. The correct tension in configuration 2 should be $T = 200/4 = 50$ N.
 
 **Assuming the problem has a typo and $T = 50$ N in configuration 2:**
 

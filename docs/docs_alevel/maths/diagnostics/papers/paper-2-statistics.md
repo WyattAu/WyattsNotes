@@ -43,9 +43,9 @@ The frequency distribution below shows the daily commuting times (in minutes) fo
 
 An economist collects data on the annual income (in thousands of pounds) and annual savings (in hundreds of pounds) for 7 households:
 
-| Income ($x$, in $\pounds 1000$) | 15 | 22 | 30 | 35 | 42 | 55 | 68 |
+| Income ($x$In $\pounds 1000$) | 15 | 22 | 30 | 35 | 42 | 55 | 68 |
 |---|---|---|---|---|---|---|---|
-| Savings ($y$, in $\pounds 100$) | 3 | 8 | 12 | 18 | 22 | 35 | 48 |
+| Savings ($y$In $\pounds 100$) | 3 | 8 | 12 | 18 | 22 | 35 | 48 |
 
 **(a)** Calculate the product moment correlation coefficient (PMCC) for this data. [4 marks]
 
@@ -70,7 +70,7 @@ A person is randomly selected from the population and tests positive.
 
 **(c)** The hospital director wants the positive predictive value to be at least 50%. Find the minimum prevalence of the disease required to achieve this, keeping the test characteristics the same. [3 marks]
 
-**(d)** Explain why $\mathrm{P}(\text{disease} \mid \text{positive}) \neq \mathrm{P}(\text{positive} \mid \text{disease})$ in general, and state the condition under which they would be equal. [2 marks]
+**(d)** Explain why $\mathrm{P}(\text{disease} \mid \text{positive}) \neq \mathrm{P}(\text{positive} \mid \text{disease})$And state the condition under which they would be equal. [2 marks]
 
 ### Q4 [10 marks] — Statistical Distributions
 
@@ -144,7 +144,7 @@ The employee's claim is supported in the sense that the largest **number** of em
 
 ### Q2 — Solution
 
-**(a)** We need $\sum x$, $\sum y$, $\sum x^2$, $\sum y^2$, $\sum xy$.
+**(a)** We need $\sum x$$\sum y$$\sum x^2$$\sum y^2$$\sum xy$.
 
 $$\sum x = 15 + 22 + 30 + 35 + 42 + 55 + 68 = 267$$
 
@@ -166,7 +166,7 @@ $$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \f
 
 $$= \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{3111755.1}◆RB◆ = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
-**(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$, which are linear transformations.
+**(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and $v = \frac{1}{100}y$Which are linear transformations.
 
 To see why: the PMCC is defined as $r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆$. Under coding:
 
@@ -248,17 +248,17 @@ $$p \geq \frac{0.01}{0.485} = 0.02062...$$
 
 The minimum prevalence is approximately 2.06%. At this prevalence, exactly half of all positive tests are true positives.
 
-**(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ in general because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
+**(d)** $\mathrm{P}(D \mid +) \neq \mathrm{P}(+ \mid D)$ because they condition on different events. $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the disease, what fraction test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test positive, what fraction actually have the disease). These are related by Bayes' theorem:
 
 $$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
 
-They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$, i.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
+They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$I.e., when the prevalence equals the overall probability of a positive test. This is a very specific condition that would not generally hold.
 
 ---
 
 ### Q4 — Solution
 
-**(a)** The binomial distribution is **NOT** appropriate. The condition violated is **independence of trials**: since balls are drawn without replacement, the probability of drawing a red ball changes after each draw. The probability of red on the first draw is $\frac{5}{8}$, but if the first ball is blue, the probability of red on the second draw becomes $\frac{5}{7}$.
+**(a)** The binomial distribution is **NOT** appropriate. The condition violated is **independence of trials**: since balls are drawn without replacement, the probability of drawing a red ball changes after each draw. The probability of red on the first draw is $\frac{5}{8}$But if the first ball is blue, the probability of red on the second draw becomes $\frac{5}{7}$.
 
 The correct distribution is the **geometric distribution** (number of failures before the first success in sampling without replacement follows a negative hypergeometric distribution, but the scenario of "number of blue balls before the first red" without replacement is best modelled by a direct probability calculation for each value).
 
@@ -270,7 +270,7 @@ The correct distribution is the **geometric distribution** (number of failures b
 
 So $Y \sim B(50, 0.02)$.
 
-**(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; it depends on when the third head occurs.
+**(c)** The binomial distribution is **NOT** appropriate. The condition violated is **fixed number of trials**: the number of tosses is not fixed in advance; on when the third head occurs.
 
 The correct distribution is the **negative binomial distribution** (or Pascal distribution). If we define $Z$ as the number of trials until the $r$-th success, then $Z \sim \text{NegBin}(r = 3, p = 0.5)$.
 
@@ -284,7 +284,7 @@ So $W \sim B(50, 0.3)$.
 
 The fact that there are 100 total rolls is irrelevant --- we are only considering the first 50.
 
-**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P}(\text{correct}) = 1$, but for the last 5 questions, $\mathrm{P}(\text{correct}) = \frac{1}{4}$. The probability of success changes partway through.
+**(e)** The binomial distribution is **NOT** appropriate. The condition violated is **constant probability of success**: for the first 5 questions, $\mathrm{P}(\text{correct}) = 1$But for the last 5 questions, $\mathrm{P}(\text{correct}) = \frac{1}{4}$. The probability of success changes partway through.
 
 The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deterministic: always 5) and $V_2 \sim B(5, 0.25)$. Then $V = 5 + V_2$ and $V_2 \sim B(5, 0.25)$.
 
@@ -292,7 +292,7 @@ The correct approach is to split $V = V_1 + V_2$ where $V_1 \sim B(5, 1)$ (deter
 
 ### Q5 — Solution
 
-**(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$, so $\sigma_{\bar{X}} = 3$.
+**(a)** Under $H_0$: $\bar{X} \sim N\left(0, \frac{15^2}{25}\right) = N(0, 9)$So $\sigma_{\bar{X}} = 3$.
 
 $$z = \frac◆LB◆\bar{x} - 0◆RB◆◆LB◆3◆RB◆ = \frac{-5.2}{3} = -1.733$$
 
@@ -302,13 +302,13 @@ $$\text{p-value} = \mathrm{P}(Z \leq -1.733) = \Phi(-1.733) = 1 - \Phi(1.733) = 
 
 The p-value is approximately 0.0414.
 
-Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level.
+Since $0.0414 \lt 0.05$The result is statistically significant at the 5% level.
 
 **(b)** The researcher's statement contains two errors:
 
 1. **"Accept the null hypothesis"**: We never "accept" $H_0$. The correct language is "there is insufficient evidence to reject $H_0$" or "we fail to reject $H_0$." The distinction matters because a lack of evidence against $H_0$ is not the same as evidence for $H_0$. The drug may have a small effect that the test was not powerful enough to detect.
 
-2. **"The drug has no effect"**: Failing to reject $H_0$ does not prove that $H_0$ is true. The correct statement is that "the data does not provide sufficient evidence to conclude that the drug reduces blood pressure." The drug might still have an effect; we simply cannot detect it with this sample size.
+2. **"The drug has no effect"**: Failing to reject $H_0$ does not prove that $H_0$ is true. The correct statement is that "the data does not provide sufficient evidence to conclude that the drug reduces blood pressure." The drug might still have an effect; we cannot detect it with this sample size.
 
 **Corrected statement:** "The p-value is [greater/less] than 0.05, so there is [insufficient/sufficient] evidence at the 5% significance level to reject the null hypothesis that the drug has no effect on blood pressure."
 
@@ -316,13 +316,13 @@ Since $0.0414 \lt 0.05$, the result is statistically significant at the 5% level
 
 > The probability of obtaining a test statistic at least as extreme as the one observed, **assuming $H_0$ is true**.
 
-The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$, not $\mathrm{P}(H_0 \mid \text{data})$.
+The p-value is a conditional probability: $\mathrm{P}(\text{data} \mid H_0)$Not $\mathrm{P}(H_0 \mid \text{data})$.
 
-A large p-value means the observed data is consistent with $H_0$, but it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
+A large p-value means the observed data is consistent with $H_0$But it does not mean $H_0$ is probably true. The data could also be consistent with a small but non-zero effect. For example, if the true effect is a reduction of 2 mmHg (which is clinically meaningful), a small sample might still produce a large p-value.
 
 To determine $\mathrm{P}(H_0 \mid \text{data})$ would require Bayesian methods (prior probabilities), which go beyond the scope of classical hypothesis testing.
 
-**(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$, so $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
+**(d)** With $n = 50$: $\bar{X} \sim N\left(0, \frac{15^2}{50}\right) = N(0, 4.5)$So $\sigma_{\bar{X}} = \sqrt{4.5} \approx 2.121$.
 
 $$z = \frac◆LB◆-5.2◆RB◆◆LB◆\sqrt{4.5}◆RB◆ = \frac{-5.2}{2.121} = -2.451$$
 

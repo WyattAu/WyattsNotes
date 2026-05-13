@@ -57,7 +57,7 @@ $$\frac{1}{2}\left(1 + \frac{1}{2} - \frac{1}{n+1} - \frac{1}{n+2}\right) = \fra
 
 **(b)** State the range of values of $x$ for which the expansion is valid.
 
-**(c)** Use the expansion to find an approximation for $\dfrac{1}{\sqrt[3]{1.03}}$, giving your answer to 5 decimal places.
+**(c)** Use the expansion to find an approximation for $\dfrac{1}{\sqrt[3]{1.03}}$Giving your answer to 5 decimal places.
 
 [Difficulty: hard. Tests binomial expansion with fractional exponent, validity range, and numerical application.]
 
@@ -71,9 +71,9 @@ $$= 1 - x + \frac{\frac{4}{9}}{2} \cdot 9x^2 + \frac{-\frac{28}{81}}{6} \cdot 27
 
 $$= 1 - x + 2x^2 - \frac{28}{81} \cdot \frac{27}{6}x^3 = 1 - x + 2x^2 - \frac{14}{9}x^3$$
 
-**(b)** The expansion is valid when $|3x| \lt 1$, i.e., $|x| \lt \dfrac{1}{3}$.
+**(b)** The expansion is valid when $|3x| \lt 1$I.e., $|x| \lt \dfrac{1}{3}$.
 
-**(c)** $\dfrac{1}{\sqrt[3]{1.03}} = (1 + 0.03)^{-1/3}$. Here $x = 0.03$, which satisfies $|x| \lt \frac{1}{3}$.
+**(c)** $\dfrac{1}{\sqrt[3]{1.03}} = (1 + 0.03)^{-1/3}$. Here $x = 0.03$Which satisfies $|x| \lt \frac{1}{3}$.
 
 $$(1 + 0.03)^{-1/3} \approx 1 - 0.03 + 2(0.03)^2 - \frac{14}{9}(0.03)^3$$
 
@@ -93,7 +93,7 @@ To 5 decimal places: $0.97176$.
 
 **Question:**
 
-**(a)** Differentiate both sides of the identity $\displaystyle\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$ with respect to $x$, and hence find $\displaystyle\sum_{n=1}^{\infty} nx^{n-1}$.
+**(a)** Differentiate both sides of the identity $\displaystyle\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$ for $|x| \lt 1$ with respect to $x$And hence find $\displaystyle\sum_{n=1}^{\infty} nx^{n-1}$.
 
 **(b)** Use your result to find the exact value of $\displaystyle\sum_{n=1}^{\infty} \frac{n}{2^n}$.
 

@@ -9,23 +9,23 @@ categories:
 slug: cmake-presets-toolchain-files
 ---
 A major challenge in C++ systems engineering is **Build Reproducibility**. A developer on Linux, a
-developer on Windows, and a CI/CD agent should all generate the build environment using the exact
-same logic.
+Developer on Windows, and a CI/CD agent should all generate the build environment using the exact
+Same logic.
 
-Reliance on "magic" shell scripts (`build.sh`, `configure.bat`) or lengthy command-line arguments is
-an anti-pattern. Modern CMake resolves this through two architectural components:
+Reliance on "magic" shell scripts (`build.sh``configure.bat`) or lengthy command-line arguments is
+An anti-pattern. Modern CMake resolves this through two architectural components:
 
 1. **Toolchain Files:** Define **WHAT** tools are used (Compilers, Sysroot, Target Architecture).
 2. **CMake Presets:** Define **HOW** the build is configured (Generator, Flags, Output Directories,
-   Environment Variables).
+ Environment Variables).
 
 ## 1. Toolchain Files (`*.cmake`)
 
 As introduced in Module 1.4, the Toolchain File sets up the build environment _before_ the project
-configuration runs. It is strict about **compiler selection**.
+Configuration runs. It is strict about **compiler selection**.
 
 While toolchain files are mandatory for cross-compilation, they are also Best Practice for enforcing
-specific compiler versions on local machines (e.g., forcing Clang 17 over the system GCC).
+Specific compiler versions on local machines (e.g., forcing Clang 17 over the system GCC).
 
 ### Anatomy of a Robust Toolchain File
 
@@ -55,13 +55,13 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 ### Toolchain File Execution Order
 
 Understanding when a toolchain file is processed relative to the project's `CMakeLists.txt` is
-critical:
+Critical:
 
 1. CMake processes command-line arguments (`-D`).
 2. CMake processes the toolchain file.
 3. CMake processes the first `project()` call in `CMakeLists.txt`.
 4. The `CMAKE_SYSTEM_NAME` variable is checked. If it differs from the host, CMake enters
-   cross-compilation mode and changes `CMAKE_FIND_ROOT_PATH` behavior.
+ cross-compilation mode and changes `CMAKE_FIND_ROOT_PATH` behavior.
 
 **Key implication:** Variables set in the toolchain file are available before `project()` is called.
 This is the only way to force compiler selection before CMake auto-detects compilers.
@@ -69,20 +69,20 @@ This is the only way to force compiler selection before CMake auto-detects compi
 ### CMAKE_FIND_ROOT_PATH Modes
 
 When cross-compiling, `find_package` and `find_library` search the target sysroot, not the host
-filesystem. The mode variables control this:
+Filesystem. The mode variables control this:
 
-| Variable                            | Value   | Behavior                                                         |
+| Variable | Value | Behavior |
 | :---------------------------------- | :------ | :--------------------------------------------------------------- |
 | `CMAKE_FIND_ROOT_PATH_MODE_PROGRAM` | `NEVER` | Always searches the host (programs run on the host during build) |
-| `CMAKE_FIND_ROOT_PATH_MODE_LIBRARY` | `ONLY`  | Only searches the sysroot (libraries are for the target)         |
-| `CMAKE_FIND_ROOT_PATH_MODE_INCLUDE` | `ONLY`  | Only searches the sysroot (headers are for the target)           |
+| `CMAKE_FIND_ROOT_PATH_MODE_LIBRARY` | `ONLY` | Only searches the sysroot (libraries are for the target) |
+| `CMAKE_FIND_ROOT_PATH_MODE_INCLUDE` | `ONLY` | Only searches the sysroot (headers are for the target) |
 
 ---
 
 ## 2. CMake Presets (`CMakePresets.json`)
 
 Introduced in CMake 3.19, `CMakePresets.json` is a standard JSON format that replaces command-line
-arguments. It allows you to check your build configurations into version control.
+Arguments. It allows you to check your build configurations into version control.
 
 Instead of typing:
 
@@ -172,7 +172,7 @@ Presets support inheritance to keep configurations Don't-Repeat-Yourself (DRY).
 ### Key JSON Fields explained
 
 - **`binaryDir`**: Defines where artifacts go. Using `${sourceDir}/build/${presetName}` ensures
-  separate folders for Debug and Release builds, preventing cache corruption.
+ separate folders for Debug and Release builds, preventing cache corruption.
 - **`toolchainFile`**: Links the Preset (Workflow) to the Toolchain (Compiler).
 - **`cacheVariables`**: These map directly to `-DVAR=VALUE`.
 - **`environment`**: Sets env vars (e.g., `PATH` or `CCACHE_DIR`) only for the scope of the build.
@@ -193,7 +193,7 @@ Presets support inheritance to keep configurations Don't-Repeat-Yourself (DRY).
    cmake --preset linux-clang-debug
    ```
 
-   _This creates the `build/linux-clang-debug` directory._
+ _This creates the `build/linux-clang-debug` directory._
 
 3. **Build (Compile):**
 
@@ -201,21 +201,21 @@ Presets support inheritance to keep configurations Don't-Repeat-Yourself (DRY).
    cmake --build --preset debug
    ```
 
-   _Note: The build preset maps back to the configure preset defined in JSON._
+ _Note: The build preset maps back to the configure preset defined in JSON._
 
 ### IDE Integration
 
 Most modern IDEs detect `CMakePresets.json` automatically.
 
 - **VS Code (CMake Tools):** The bottom status bar allows selecting a Configure Preset and a Build
-  Preset from a dropdown list.
+ Preset from a dropdown list.
 - **Visual Studio 2022:** Native support. Presets appear in the configuration dropdown.
 - **CLion:** Automatically imports presets into run configurations.
 
 ## 4. User-Specific Presets
 
 `CMakePresets.json` is meant to be committed to Git. However, developers often have local paths that
-differ (e.g., where `vcpkg` is installed).
+Differ (e.g., where `vcpkg` is installed).
 
 **`CMakeUserPresets.json`** is the solution.
 
@@ -226,7 +226,7 @@ differ (e.g., where `vcpkg` is installed).
 ### Example: Local Vcpkg Override
 
 A developer can create `CMakeUserPresets.json` to inject their local vcpkg path without modifying
-the shared project file.
+The shared project file.
 
 ```json
 {
@@ -246,7 +246,7 @@ the shared project file.
 ## 5. Cross-Compilation Toolchain Deep Dive
 
 Cross-compilation is the primary use case for toolchain files. The toolchain file must describe the
-target platform, the compiler, and the sysroot.
+Target platform, the compiler, and the sysroot.
 
 ### Android NDK Toolchain
 
@@ -297,7 +297,7 @@ set(CMAKE_OSX_ARCHITECTURES arm64)
 ## 6. Preset Conditions
 
 CMake 3.24+ supports **conditions** on presets, allowing the same preset file to work across
-different platforms by selectively enabling or disabling presets:
+Different platforms by selectively enabling or disabling presets:
 
 ```json
 {
@@ -342,21 +342,21 @@ different platforms by selectively enabling or disabling presets:
 
 ### Condition Types
 
-| Type        | Description        | Example                    |
+| Type | Description | Example |
 | :---------- | :----------------- | :------------------------- |
-| `equals`    | String equality    | lhs equals rhs             |
-| `notEquals` | String inequality  | lhs not equal to rhs       |
-| `matches`   | Regex match        | lhs matches regex pattern  |
-| `inList`    | Member of list     | lhs is in rhs (JSON array) |
-| `notInList` | Not member of list | lhs is not in rhs          |
-| `allOf`     | Logical AND        | All nested conditions true |
-| `anyOf`     | Logical OR         | Any nested condition true  |
-| `not`       | Logical NOT        | Negated condition          |
+| `equals` | String equality | lhs equals rhs |
+| `notEquals` | String inequality | lhs not equal to rhs |
+| `matches` | Regex match | lhs matches regex pattern |
+| `inList` | Member of list | lhs is in rhs (JSON array) |
+| `notInList` | Not member of list | lhs is not in rhs |
+| `allOf` | Logical AND | All nested conditions true |
+| `anyOf` | Logical OR | Any nested condition true |
+| `not` | Logical NOT | Negated condition |
 
 ## 7. Environment Variables in Presets
 
 Presets can set environment variables for the scope of CMake invocation. This is critical for
-configuring tool paths without polluting the user's shell:
+Configuring tool paths without polluting the user's shell:
 
 ```json
 {
@@ -379,20 +379,20 @@ configuring tool paths without polluting the user's shell:
 ```
 
 The `environment` block sets variables only during CMake execution. They do not leak into the user's
-shell or into subsequent build steps (unless the build system propagates them).
+Shell or into subsequent build steps (unless the build system propagates them).
 
 ### Variable Expansion
 
 Preset files support variable expansion using `${}`:
 
-| Variable             | Description                                          |
+| Variable | Description |
 | :------------------- | :--------------------------------------------------- |
-| `${sourceDir}`       | Path to the directory containing `CMakePresets.json` |
-| `${sourceParentDir}` | Parent of `sourceDir`                                |
-| `${presetName}`      | Name of the current preset                           |
-| `${hostSystemName}`  | OS name (Linux, Windows, Darwin)                     |
-| `${fileDir}`         | Directory of the preset file                         |
-| `$env{VAR}`          | Environment variable from the host                   |
+| `${sourceDir}` | Path to the directory containing `CMakePresets.json` |
+| `${sourceParentDir}` | Parent of `sourceDir` |
+| `${presetName}` | Name of the current preset |
+| `${hostSystemName}` | OS name (Linux, Windows, Darwin) |
+| `${fileDir}` | Directory of the preset file |
+| `$env{VAR}` | Environment variable from the host |
 
 ## 8. Install and Package Presets
 
@@ -439,14 +439,14 @@ cpack --preset tgz
 
 The `version` field in `CMakePresets.json` determines which features are available:
 
-| Version | Minimum CMake | Key Features                                               |
+| Version | Minimum CMake | Key Features |
 | :------ | :------------ | :--------------------------------------------------------- |
-| 1       | 3.19          | Basic configure presets                                    |
-| 2       | 3.20          | Build presets                                              |
-| 3       | 3.21          | Test presets, environment                                  |
-| 4       | 3.21          | Include files                                              |
-| 5       | 3.24          | Conditions, install presets                                |
-| 6       | 3.25          | Package presets, configure preset `inherits` from multiple |
+| 1 | 3.19 | Basic configure presets |
+| 2 | 3.20 | Build presets |
+| 3 | 3.21 | Test presets, environment |
+| 4 | 3.21 | Include files |
+| 5 | 3.24 | Conditions, install presets |
+| 6 | 3.25 | Package presets, configure preset `inherits` from multiple |
 
 ### Preset Include Files
 
@@ -465,26 +465,26 @@ For large projects, presets can be split across multiple files using the `includ
 }
 ```
 
-The included files must have `"version"` and `"configurePresets"` (or `"buildPresets"`, etc.) at the
-top level. Included presets are merged into the including file's namespace.
+The included files must have `"version"` and `"configurePresets"` (or `"buildPresets"`Etc.) at the
+Top level. Included presets are merged into the including file's namespace.
 
 ## Architectural Best Practices
 
 1. **Decouple OS from Logic:** Do not use `if(WIN32)` logic inside `CMakeLists.txt` for compiler
-   flags. Use distinct Toolchain files or Presets for Windows vs Linux.
+ flags. Use distinct Toolchain files or Presets for Windows vs Linux.
 2. **Single Source of Truth:** CI pipelines (GitHub Actions, Jenkins) should run the exact same
-   Preset command that developers run locally.
-   - _Bad CI:_ `run: cmake . -DCMAKE_BUILD_TYPE=Release`
-   - _Good CI:_ `run: cmake --preset ci-release`
+ Preset command that developers run locally.
+ - _Bad CI:_ `run: cmake . -DCMAKE_BUILD_TYPE=Release`
+ - _Good CI:_ `run: cmake --preset ci-release`
 3. **Sanitizers as Presets:** Create dedicated presets for Address Sanitizer (ASan) and Thread
-   Sanitizer (TSan). This makes running a sanitized build as easy as `cmake --preset asan`.
+ Sanitizer (TSan). This makes running a sanitized build as easy as `cmake --preset asan`.
 
 ## Common Pitfalls
 
 ### 1. `binaryDir` Collisions
 
-If two presets use the same `binaryDir`, switching between them corrupts the CMake cache. Always
-include `${presetName}` in the `binaryDir`:
+If two presets use the same `binaryDir`Switching between them corrupts the CMake cache. Always
+Include `${presetName}` in the `binaryDir`:
 
 ```json
 {
@@ -502,26 +502,26 @@ include `${presetName}` in the `binaryDir`:
 
 ### 2. Toolchain File Path in User Presets
 
-If a user preset overrides `CMAKE_TOOLCHAIN_FILE` via `cacheVariables`, it takes precedence over the
-shared preset's `toolchainFile` field. This is correct behavior but can be confusing. Use
+If a user preset overrides `CMAKE_TOOLCHAIN_FILE` via `cacheVariables`It takes precedence over the
+Shared preset's `toolchainFile` field. This is correct behavior but can be confusing. Use
 `toolchainFile` in the user preset instead of `cacheVariables` for clarity.
 
 ### 3. Preset Inheritance Chain Length
 
 Deeply nested inheritance (A inherits B inherits C inherits D) makes debugging difficult. Limit
-inheritance to 2-3 levels. Use `include` files for organization rather than deep inheritance chains.
+Inheritance to 2-3 levels. Use `include` files for organization rather than deep inheritance chains.
 
 ### 4. Condition Evaluation Errors
 
 Conditions reference variables like `${hostSystemName}`. If a preset with a condition has a typo or
-references an undefined variable, CMake silently skips the preset (it evaluates the condition as
-false). Use `cmake --list-presets` to verify that all expected presets are visible.
+References an undefined variable, CMake silently skips the preset (it evaluates the condition as
+False). Use `cmake --list-presets` to verify that all expected presets are visible.
 
 ### 5. `CMAKE_BUILD_TYPE` vs Multi-Config Generators
 
 Single-config generators (Ninja, Unix Makefiles) require `CMAKE_BUILD_TYPE` to be set. Multi-config
-generators (Visual Studio, Ninja Multi-Config) ignore `CMAKE_BUILD_TYPE` and use the `--config` flag
-instead. If you target both platforms, use generator-specific presets:
+Generators (Visual Studio, Ninja Multi-Config) ignore `CMAKE_BUILD_TYPE` and use the `--config` flag
+Instead. If you target both platforms, use generator-specific presets:
 
 ```json
 {
@@ -542,3 +542,11 @@ instead. If you target both platforms, use generator-specific presets:
   ]
 }
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

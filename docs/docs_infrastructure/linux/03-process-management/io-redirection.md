@@ -8,16 +8,16 @@ sidebar_position: 2
 ## File Descriptors
 
 Every Linux process starts with three standard file descriptors, and can open additional ones as
-needed. File descriptors are non-negative integers maintained by the kernel per-process.
+Needed. File descriptors are non-negative integers maintained by the kernel per-process.
 
 ### Standard File Descriptors
 
-| FD  | Name   | Default Destination | Description                          |
+| FD | Name | Default Destination | Description |
 | --- | ------ | ------------------- | ------------------------------------ |
-| 0   | stdin  | Keyboard (terminal) | Input stream                         |
-| 1   | stdout | Terminal            | Normal output                        |
-| 2   | stderr | Terminal            | Error and diagnostic output          |
-| 3+  | custom | (none)              | Application-defined file descriptors |
+| 0 | stdin | Keyboard (terminal) | Input stream |
+| 1 | stdout | Terminal | Normal output |
+| 2 | stderr | Terminal | Error and diagnostic output |
+| 3+ | custom | (none) | Application-defined file descriptors |
 
 ```bash
 # View file descriptors for a process
@@ -207,7 +207,7 @@ yes | head -n 5; echo "exit: $?"
 ## Named Pipes (FIFOs)
 
 Named pipes appear as files in the filesystem but behave like anonymous pipes. They allow unrelated
-processes to communicate.
+Processes to communicate.
 
 ### Creating and Using Named Pipes
 
@@ -288,7 +288,7 @@ rm /tmp/my_pipe
 ## Process Substitution
 
 Process substitution creates a temporary file descriptor (using `/dev/fd/` or a named pipe) that
-connects to the input or output of a process.
+Connects to the input or output of a process.
 
 ### Input Process Substitution
 
@@ -368,7 +368,7 @@ cat large_input | tee /tmp/checkpoint | process_data > output
 ## xargs
 
 `xargs` reads items from stdin and executes a command with them as arguments. It handles argument
-list limits and provides parallel execution.
+List limits and provides parallel execution.
 
 ### Basic Usage
 
@@ -443,7 +443,7 @@ done
 :::warning
 
 `xargs` without `-0` or `-d` splits on whitespace and newlines, which breaks on filenames with
-spaces. Always use `find ... -print0 | xargs -0` when processing filenames.
+Spaces. Always use `find ... -print0 | xargs -0` when processing filenames.
 
 :::
 
@@ -846,3 +846,11 @@ cat < /tmp/pipe             # now both proceed
 
 # AVOID: open the pipe for reading BEFORE writing
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

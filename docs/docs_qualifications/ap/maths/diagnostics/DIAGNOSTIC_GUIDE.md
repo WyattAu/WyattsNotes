@@ -53,12 +53,12 @@ Create a tracking table for each attempt:
 
 | Test | Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5 |
 |------|---------|---------|---------|---------|---------|
-| UT-1 | PASS    | PARTIAL | FAIL    |         |         |
-| UT-2 |         |         |         |         |         |
-| UT-3 |         |         |         |         |         |
-| IT-1 |         |         |         |         |         |
-| IT-2 |         |         |         |         |         |
-| IT-3 |         |         |         |         |         |
+| UT-1 | PASS | PARTIAL | FAIL | | |
+| UT-2 | | | | | |
+| UT-3 | | | | | |
+| IT-1 | | | | | |
+| IT-2 | | | | | |
+| IT-3 | | | | | |
 
 A topic is **diagnostic-ready** when you score PASS on at least 2 of 3 unit tests and at least 1 of 3 integration tests.
 

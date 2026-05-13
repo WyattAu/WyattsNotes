@@ -8,7 +8,7 @@ sidebar_position: 2
 ## systemd-journald Architecture
 
 `systemd-journald` is the central logging daemon in systemd-based systems. It collects log messages
-from multiple sources and stores them in a structured, indexed binary format.
+From multiple sources and stores them in a structured, indexed binary format.
 
 ```mermaid
 flowchart LR
@@ -23,14 +23,14 @@ flowchart LR
 
 ### Log Sources
 
-| Source           | Description                                 |
+| Source | Description |
 | ---------------- | ------------------------------------------- |
-| stdout/stderr    | All service output captured by systemd      |
-| Kernel messages  | `printk()` messages (equivalent to `dmesg`) |
-| syslog()         | Traditional syslog calls                    |
-| Audit events     | Kernel audit subsystem                      |
-| /dev/kmsg        | Kernel log device                           |
-| Internal journal | Journal's own diagnostic messages           |
+| stdout/stderr | All service output captured by systemd |
+| Kernel messages | `printk()` messages (equivalent to `dmesg`) |
+| syslog() | Traditional syslog calls |
+| Audit events | Kernel audit subsystem |
+| /dev/kmsg | Kernel log device |
+| Internal journal | Journal's own diagnostic messages |
 
 ### Storage Modes
 
@@ -354,7 +354,7 @@ logrotate -d /etc/logrotate.d/nginx
 
 :::info
 
-systemd-managed services log to the journal by default. `logrotate` is typically used for:
+Systemd-managed services log to the journal by default. `logrotate` is used for:
 
 1. Applications that write directly to files (not through the journal)
 2. Legacy applications without systemd support
@@ -365,7 +365,7 @@ systemd-managed services log to the journal by default. `logrotate` is typically
 ## rsyslog
 
 `rsyslog` is the traditional syslog daemon that can receive messages from journald and process them
-with rules-based routing.
+With rules-based routing.
 
 ### Configuration
 
@@ -953,3 +953,11 @@ flowchart LR
     D --> F["Dashboards"]
     D --> G["Retention<br />and Archive"]
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

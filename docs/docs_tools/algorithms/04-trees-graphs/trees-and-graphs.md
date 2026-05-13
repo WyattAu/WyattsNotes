@@ -6,19 +6,19 @@ slug: trees-and-graphs
 ---
 ## Tree Terminology
 
-A tree is a connected, acyclic, undirected graph. In computer science, trees are usually rooted and
-directed (parent to child).
+A tree is a connected, acyclic, undirected graph. In computer science, trees are rooted and
+Directed (parent to child).
 
-| Term        | Definition                                                         |
+| Term | Definition |
 | ----------- | ------------------------------------------------------------------ |
-| **Root**    | The topmost node, with no parent                                   |
-| **Leaf**    | A node with no children                                            |
-| **Depth**   | Distance from the root to a node (root has depth 0)                |
-| **Height**  | Distance from a node to its deepest descendant (leaf has height 0) |
-| **Level**   | All nodes at the same depth                                        |
-| **Subtree** | A node and all its descendants                                     |
-| **Degree**  | Number of children of a node                                       |
-| **Path**    | Sequence of nodes from one node to another                         |
+| **Root** | The topmost node, with no parent |
+| **Leaf** | A node with no children |
+| **Depth** | Distance from the root to a node (root has depth 0) |
+| **Height** | Distance from a node to its deepest descendant (leaf has height 0) |
+| **Level** | All nodes at the same depth |
+| **Subtree** | A node and all its descendants |
+| **Degree** | Number of children of a node |
+| **Path** | Sequence of nodes from one node to another |
 
 ## Binary Trees
 
@@ -26,12 +26,12 @@ A binary tree is a tree where each node has at most two children: left and right
 
 ### Classifications
 
-| Type         | Property                                                                  | Nodes in tree of height $h$ |
+| Type | Property | Nodes in tree of height $h$ |
 | ------------ | ------------------------------------------------------------------------- | --------------------------- |
-| **Full**     | Every node has 0 or 2 children                                            | $2h + 1$ (odd)              |
-| **Complete** | All levels filled except possibly the last, which is filled left to right | $2^h$ to $2^{h+1} - 1$      |
-| **Perfect**  | All internal nodes have 2 children, all leaves at same depth              | $2^{h+1} - 1$               |
-| **Balanced** | Height is $O(\log n)$                                                     | Varies                      |
+| **Full** | Every node has 0 or 2 children | $2h + 1$ (odd) |
+| **Complete** | All levels filled except possibly the last, which is filled left to right | $2^h$ to $2^{h+1} - 1$ |
+| **Perfect** | All internal nodes have 2 children, all leaves at same depth | $2^{h+1} - 1$ |
+| **Balanced** | Height is $O(\log n)$ | Varies |
 
 ### Node Definition
 
@@ -200,7 +200,7 @@ def is_same_tree(p, q):
 ## Binary Search Trees (BST)
 
 A BST is a binary tree where for every node: all values in the left subtree are less than the node's
-value, and all values in the right subtree are greater.
+Value, and all values in the right subtree are greater.
 
 ### Operations
 
@@ -258,13 +258,13 @@ def bst_delete(root, val):
 
 ### BST Complexity
 
-| Operation          | Average (balanced) | Worst (degenerate) |
+| Operation | Average (balanced) | Worst (degenerate) |
 | ------------------ | ------------------ | ------------------ |
-| Search             | $O(\log n)$        | $O(n)$             |
-| Insert             | $O(\log n)$        | $O(n)$             |
-| Delete             | $O(\log n)$        | $O(n)$             |
-| Min/Max            | $O(\log n)$        | $O(n)$             |
-| In-order traversal | $O(n)$             | $O(n)$             |
+| Search | $O(\log n)$ | $O(n)$ |
+| Insert | $O(\log n)$ | $O(n)$ |
+| Delete | $O(\log n)$ | $O(n)$ |
+| Min/Max | $O(\log n)$ | $O(n)$ |
+| In-order traversal | $O(n)$ | $O(n)$ |
 
 ### Validate BST
 
@@ -288,16 +288,16 @@ def is_valid_bst(root):
 :::warning
 
 A common mistake is checking only that `node.left.val \lt node.val \lt node.right.val`. This is
-insufficient — the BST property requires that **all** values in the left subtree are less than
-`node.val`, not just the immediate left child. A node with value 5, left child with value 1, and
-left-left grandchild with value 6 fails the BST property but passes the naive check.
+Insufficient — the BST property requires that **all** values in the left subtree are less than
+`node.val`Not just the immediate left child. A node with value 5, left child with value 1, and
+Left-left grandchild with value 6 fails the BST property but passes the naive check.
 
 :::
 
 ## AVL Trees
 
 An AVL tree is a self-balancing BST where the heights of the two child subtrees of any node differ
-by at most 1. Named after Adelson-Velsky and Landis (1962).
+By at most 1. Named after Adelson-Velsky and Landis (1962).
 
 ### Balance Factor
 
@@ -305,7 +305,7 @@ The balance factor of a node is:
 $\mathrm{bf{}(node) = \mathrm{height{}(\mathrm{left{}) - \mathrm{height{}(\mathrm{right{})$.
 
 Valid balance factors: $\{-1, 0, 1\}$. If the balance factor is outside this range, rotations are
-needed to restore balance.
+Needed to restore balance.
 
 ### Rotations
 
@@ -342,25 +342,25 @@ def rotate_left(x):
     return y
 ```
 
-| Imbalance Case | Condition                     | Fix                                             |
+| Imbalance Case | Condition | Fix |
 | -------------- | ----------------------------- | ----------------------------------------------- |
-| Left-Left      | bf(node) = 2, bf(left) = 1    | Right rotate at node                            |
-| Right-Right    | bf(node) = -2, bf(right) = -1 | Left rotate at node                             |
-| Left-Right     | bf(node) = 2, bf(left) = -1   | Left rotate at left, then right rotate at node  |
-| Right-Left     | bf(node) = -2, bf(right) = 1  | Right rotate at right, then left rotate at node |
+| Left-Left | bf(node) = 2, bf(left) = 1 | Right rotate at node |
+| Right-Right | bf(node) = -2, bf(right) = -1 | Left rotate at node |
+| Left-Right | bf(node) = 2, bf(left) = -1 | Left rotate at left, then right rotate at node |
+| Right-Left | bf(node) = -2, bf(right) = 1 | Right rotate at right, then left rotate at node |
 
 ### Complexity
 
-| Operation               | Time        |
+| Operation | Time |
 | ----------------------- | ----------- |
-| Search                  | $O(\log n)$ |
-| Insert                  | $O(\log n)$ |
-| Delete                  | $O(\log n)$ |
-| Rotations per operation | At most 2   |
+| Search | $O(\log n)$ |
+| Insert | $O(\log n)$ |
+| Delete | $O(\log n)$ |
+| Rotations per operation | At most 2 |
 
 AVL trees guarantee $O(\log n)$ height, which is at most $1.44 \log_2(n+2) - 0.328$. In practice,
 AVL trees are taller and require more rotations than red-black trees, but provide faster lookups
-because the tree is more strictly balanced.
+Because the tree is more strictly balanced.
 
 ## Red-Black Trees
 
@@ -373,17 +373,17 @@ A red-black tree is a self-balancing BST with the following properties:
 5. Every path from a node to its descendant NIL nodes contains the same number of black nodes
 
 Red-black trees guarantee $O(\log n)$ height — specifically, the height is at most $2 \log_2(n+1)$.
-This is less strict than AVL trees, meaning red-black trees are typically shorter but may have
-slower individual lookups.
+This is less strict than AVL trees, meaning red-black trees are shorter but may have
+Slower individual lookups.
 
 Red-black trees are used in the Linux kernel (for `CFS` scheduler, `mm` memory management), Java's
-`TreeMap`/`TreeSet`, C++ `std::map`/`std::set`, and many other standard library implementations.
+`TreeMap`/`TreeSet`C++ `std::map`/`std::set`And many other standard library implementations.
 
 :::info
 
 **AVL vs Red-Black:** Use AVL when lookups dominate (databases, dictionaries). Use red-black when
-insertions and deletions are frequent (schedulers, event queues). In practice, the difference is
-small for most workloads.
+Insertions and deletions are frequent (schedulers, event queues). In practice, the difference is
+Small for most workloads.
 
 :::
 
@@ -402,21 +402,21 @@ A B-tree of order $m$ (minimum degree) satisfies:
 ### Why B-Trees Matter for Databases
 
 A database index stored as a binary tree with 10 million rows has height $\approx 24$. Each node
-access is a disk seek (~10ms), so a lookup costs ~240ms. A B-tree with order $m = 100$ (fitting in a
-4KB disk page) has height $\approx 3$, so a lookup costs ~30ms. This 8x improvement is why every
-major database uses B-tree variants (B+ trees) for indexing.
+Access is a disk seek (~10ms), so a lookup costs ~240ms. A B-tree with order $m = 100$ (fitting in a
+4KB disk page) has height $\approx 3$So a lookup costs ~30ms. This 8x improvement is why every
+Major database uses B-tree variants (B+ trees) for indexing.
 
-| Structure          | Height for $n = 10^7$ | Disk seeks |
+| Structure | Height for $n = 10^7$ | Disk seeks |
 | ------------------ | --------------------- | ---------- |
-| Binary tree        | ~24                   | ~24        |
-| AVL tree           | ~24                   | ~24        |
-| B-tree (order 100) | ~3                    | ~3         |
-| B-tree (order 400) | ~2                    | ~2         |
+| Binary tree | ~24 | ~24 |
+| AVL tree | ~24 | ~24 |
+| B-tree (order 100) | ~3 | ~3 |
+| B-tree (order 400) | ~2 | ~2 |
 
 ## Heaps
 
 A heap is a complete binary tree with the heap property: in a max-heap, every node is greater than
-or equal to its children; in a min-heap, every node is less than or equal to its children.
+Or equal to its children; in a min-heap, every node is less than or equal to its children.
 
 ```python
 def heap_sort(arr):
@@ -452,19 +452,19 @@ def _sift_down(arr, n, i):
 
 ### Applications of Heaps
 
-| Application          | Heap Type             | Key Idea                      |
+| Application | Heap Type | Key Idea |
 | -------------------- | --------------------- | ----------------------------- |
-| Priority queue       | Min-heap or max-heap  | Extract min/max efficiently   |
-| Heapsort             | Max-heap (ascending)  | Repeatedly extract max        |
-| Median maintenance   | Two heaps (min + max) | Balance heaps for median      |
-| K largest elements   | Min-heap of size $k$  | Keep smallest of the top $k$  |
-| Dijkstra's algorithm | Min-heap              | Always process closest vertex |
-| Huffman coding       | Min-heap              | Build optimal prefix code     |
+| Priority queue | Min-heap or max-heap | Extract min/max efficiently |
+| Heapsort | Max-heap (ascending) | Repeatedly extract max |
+| Median maintenance | Two heaps (min + max) | Balance heaps for median |
+| K largest elements | Min-heap of size $k$ | Keep smallest of the top $k$ |
+| Dijkstra's algorithm | Min-heap | Always process closest vertex |
+| Huffman coding | Min-heap | Build optimal prefix code |
 
 ## Tries (Prefix Trees)
 
 A trie is a tree where each node represents a character in a prefix. Words are stored as paths from
-the root. The root represents the empty string.
+The root. The root represents the empty string.
 
 ```python
 class TrieNode:
@@ -528,17 +528,17 @@ class Trie:
 
 ### Trie vs Hash Set for Strings
 
-| Operation             | Trie                    | Hash Set               |
+| Operation | Trie | Hash Set |
 | --------------------- | ----------------------- | ---------------------- |
-| Insert                | $O(k)$                  | $O(k)$                 |
-| Exact search          | $O(k)$                  | $O(k)$ average         |
-| Prefix search         | $O(k)$                  | $O(n \cdot k)$         |
-| Space                 | $O(\mathrm{total chars{})$ | $O(n \cdot k)$         |
-| Min string prefix     | $O(k)$                  | Not supported          |
-| Longest common prefix | $O(k)$                  | Not directly supported |
+| Insert | $O(k)$ | $O(k)$ |
+| Exact search | $O(k)$ | $O(k)$ average |
+| Prefix search | $O(k)$ | $O(n \cdot k)$ |
+| Space | $O(\mathrm{total chars{})$ | $O(n \cdot k)$ |
+| Min string prefix | $O(k)$ | Not supported |
+| Longest common prefix | $O(k)$ | Not directly supported |
 
 Tries are the right choice when you need prefix-based operations: autocomplete, spell checking, IP
-routing (longest prefix match), and word games.
+Routing (longest prefix match), and word games.
 
 ## Graph Representations
 
@@ -575,7 +575,7 @@ class Graph:
 ### Adjacency Matrix
 
 A $V \times V$ matrix where `matrix[u][v]` represents the edge weight (or 0/True/False for
-unweighted/unweighted).
+Unweighted/unweighted).
 
 ```python
 class GraphMatrix:
@@ -593,15 +593,15 @@ class GraphMatrix:
             self.matrix[v][u] = weight
 ```
 
-| Representation   | Space      | Check edge $u$-$v$    | Iterate neighbours    | Sparse graph |
+| Representation | Space | Check edge $u$-$v$ | Iterate neighbours | Sparse graph |
 | ---------------- | ---------- | --------------------- | --------------------- | ------------ |
-| Adjacency list   | $O(V + E)$ | $O(\mathrm{degree{}(u))$ | $O(\mathrm{degree{}(u))$ | Efficient    |
-| Adjacency matrix | $O(V^2)$   | $O(1)$                | $O(V)$                | Wasteful     |
+| Adjacency list | $O(V + E)$ | $O(\mathrm{degree{}(u))$ | $O(\mathrm{degree{}(u))$ | Efficient |
+| Adjacency matrix | $O(V^2)$ | $O(1)$ | $O(V)$ | Wasteful |
 
 :::info
 
 Use adjacency lists for sparse graphs (most real-world graphs — social networks, web graphs, road
-networks). Use adjacency matrices for dense graphs (fully connected or nearly so) or when you need
+Networks). Use adjacency matrices for dense graphs (fully connected or nearly so) or when you need
 $O(1)$ edge existence checks.
 
 :::
@@ -720,20 +720,20 @@ def dfs_iterative(graph, start):
 
 ### BFS vs DFS
 
-| Property               | BFS                       | DFS                  |
+| Property | BFS | DFS |
 | ---------------------- | ------------------------- | -------------------- |
-| Data structure         | Queue                     | Stack / recursion    |
-| Space                  | $O(V)$ (queue)            | $O(V)$ (stack)       |
-| Shortest path          | Yes (unweighted)          | No                   |
+| Data structure | Queue | Stack / recursion |
+| Space | $O(V)$ (queue) | $O(V)$ (stack) |
+| Shortest path | Yes (unweighted) | No |
 | Memory for deep graphs | Uses more (wide frontier) | Uses less (one path) |
-| Topological sort       | With Kahn's algorithm     | With post-order      |
-| Cycle detection        | Yes                       | Yes                  |
-| Connected components   | Yes                       | Yes                  |
+| Topological sort | With Kahn's algorithm | With post-order |
+| Cycle detection | Yes | Yes |
+| Connected components | Yes | Yes |
 
 ## Topological Sort
 
 A topological ordering of a DAG is a linear ordering of vertices such that for every directed edge
-$u \to v$, $u$ comes before $v$ in the ordering.
+$u \to v$$u$ comes before $v$ in the ordering.
 
 ```python
 def topological_sort_kahn(graph):
@@ -813,7 +813,7 @@ def count_components(graph):
 ### Bipartite Check
 
 A graph is bipartite if its vertices can be divided into two sets such that no edge connects
-vertices within the same set. Equivalently, the graph is 2-colourable.
+Vertices within the same set. Equivalently, the graph is 2-colourable.
 
 ```python
 def is_bipartite(graph):
@@ -885,44 +885,52 @@ def has_cycle_directed(graph):
 ### 1. Modifying Tree Structure During Traversal
 
 If you insert or delete nodes while iterating over a tree (e.g., deleting all nodes matching a
-condition), the traversal may skip nodes or follow stale pointers. Either collect nodes to modify
-and apply changes after traversal, or use a recursive approach that handles modification safely.
+Condition), the traversal may skip nodes or follow stale pointers. Either collect nodes to modify
+And apply changes after traversal, or use a recursive approach that handles modification safely.
 
 ### 2. BST Property Violations
 
 When implementing BST operations manually, forgetting to check the BST invariant after deletion can
-leave the tree in an invalid state. The in-order successor replacement must be applied correctly:
-replace the node's value with the successor's value, then delete the successor from the right
-subtree.
+Leave the tree in an invalid state. The in-order successor replacement must be applied correctly:
+Replace the node's value with the successor's value, then delete the successor from the right
+Subtree.
 
 ### 3. Integer Overflow in Recursive Tree Depth
 
 For deeply unbalanced trees (or worst-case linked lists masquerading as trees), recursive depth can
-exceed the stack limit. For trees with $n$ nodes, the worst-case recursion depth is $n$. Use
-iterative traversal or explicitly check tree balance before recursion.
+Exceed the stack limit. For trees with $n$ nodes, the worst-case recursion depth is $n$. Use
+Iterative traversal or explicitly check tree balance before recursion.
 
 ### 4. Confusing Graph Traversal Visited Sets
 
 In BFS/DFS, the visited set must be marked when a vertex is **enqueued** (BFS) or **pushed** (DFS),
-not when it is **dequeued/popped**. Marking on dequeue causes duplicate vertices in the queue,
-leading to exponential blowup for dense graphs.
+Not when it is **dequeued/popped**. Marking on dequeue causes duplicate vertices in the queue,
+Leading to exponential blowup for dense graphs.
 
 ### 5. Assuming All Graphs Are Connected
 
 Many graph algorithms assume the graph is connected. For disconnected graphs, you must wrap the
-algorithm in a loop over all vertices, starting a new BFS/DFS from each unvisited vertex. This
-applies to cycle detection, bipartite checking, and component counting.
+Algorithm in a loop over all vertices, starting a new BFS/DFS from each unvisited vertex. This
+Applies to cycle detection, bipartite checking, and component counting.
 
 ### 6. Trie Memory Overhead
 
 A naive trie implementation using dictionaries can use 5-10x more memory than a hash set for the
-same data, because each node stores a dictionary object with its own overhead. For
-memory-constrained environments, use arrays (indexed by character) or radix trees ( Patricia tries)
-which compress chains of single-child nodes.
+Same data, because each node stores a dictionary object with its own overhead. For
+Memory-constrained environments, use arrays (indexed by character) or radix trees ( Patricia tries)
+Which compress chains of single-child nodes.
 
 ### 7. Not Handling Disconnected Graphs in Topological Sort
 
 A DAG can have multiple disconnected components. Both Kahn's algorithm and DFS-based topological
-sort must process all vertices, not just those reachable from a single start vertex. Kahn's
-algorithm naturally handles this (all vertices with in-degree 0 are enqueued initially). DFS-based
-sort must loop over all vertices.
+Sort must process all vertices, not just those reachable from a single start vertex. Kahn's
+Algorithm handles this (all vertices with in-degree 0 are enqueued initially). DFS-based
+Sort must loop over all vertices.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

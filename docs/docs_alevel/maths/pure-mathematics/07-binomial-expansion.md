@@ -11,16 +11,16 @@ slug: binomial-expansion
 ---
 ## Board Coverage
 
-| Board      | Paper      | Notes                                                            |
+| Board | Paper | Notes |
 | ---------- | ---------- | ---------------------------------------------------------------- |
-| AQA        | Paper 1, 2 | Binomial theorem for positive integer $n$; P2: general expansion |
-| Edexcel    | P1, P2     | P1: positive integer; P2: negative/fractional                    |
-| OCR (A)    | Paper 1, 2 | Similar split                                                    |
-| CIE (9709) | P1, P3     | P1: positive integer; P3: general                                |
+| AQA | Paper 1, 2 | Binomial theorem for positive integer $n$; P2: general expansion |
+| Edexcel | P1, P2 | P1: positive integer; P2: negative/fractional |
+| OCR (A) | Paper 1, 2 | Similar split |
+| CIE (9709) | P1, P3 | P1: positive integer; P3: general |
 
 :::info
 AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
-memorise it.
+Memorise it.
 :::
 
 <hr />
@@ -31,11 +31,11 @@ Pascal's triangle displays the binomial coefficients for successive powers of $(
 
 $$
 \begin{array}{c}
-n = 0: \quad 1 \\
-n = 1: \quad 1 \quad 1 \\
-n = 2: \quad 1 \quad 2 \quad 1 \\
-n = 3: \quad 1 \quad 3 \quad 3 \quad 1 \\
-n = 4: \quad 1 \quad 4 \quad 6 \quad 4 \quad 1 \\
+N = 0: \quad 1 \\
+N = 1: \quad 1 \quad 1 \\
+N = 2: \quad 1 \quad 2 \quad 1 \\
+N = 3: \quad 1 \quad 3 \quad 3 \quad 1 \\
+N = 4: \quad 1 \quad 4 \quad 6 \quad 4 \quad 1 \\
 \end{array}
 $$
 
@@ -46,14 +46,14 @@ Each entry is the sum of the two entries above it.
 ## 2. Binomial Coefficients
 
 **Definition.** The _binomial coefficient_ $\binom{n}{r}$ (read "$n$ choose $r$") is defined for
-non-negative integers $n, r$ with $r \leq n$ by:
+Non-negative integers $n, r$ with $r \leq n$ by:
 
 $$\binom{n}{r} = \frac{n!}{r!(n - r)!}$$
 
-where $n! = n(n-1)(n-2)\cdots 1$ is the factorial of $n$, and $0! = 1$.
+Where $n! = n(n-1)(n-2)\cdots 1$ is the factorial of $n$And $0! = 1$.
 
 **Theorem.** $\binom{n}{r}$ counts the number of ways to choose $r$ objects from $n$ distinct
-objects (order does not matter).
+Objects (order does not matter).
 
 _Proof._ We count the number of ways to form a subset of size $r$ from $\{1, 2, \ldots, n\}$.
 
@@ -61,7 +61,7 @@ The number of _ordered_ selections of $r$ objects from $n$ is
 $n(n-1)\cdots(n-r+1) = \frac{n!}{(n-r)!}$.
 
 But each subset of size $r$ can be ordered in $r!$ ways. Dividing by $r!$ (to account for
-overcounting):
+Overcounting):
 
 $$\binom{n}{r} = \frac{n!}{r!(n-r)!} \quad \blacksquare$$
 
@@ -117,8 +117,8 @@ By Pascal's identity, $\binom{k}{r} + \binom{k}{r-1} = \binom{k+1}{r}$:
 $$= a^{k+1} + \sum_{r=1}^{k} \binom{k+1}{r} a^{k+1-r} b^r + b^{k+1} = \sum_{r=0}^{k+1} \binom{k+1}{r} a^{k+1-r} b^r \quad \blacksquare$$
 
 _Intuition._ Each term in the expansion corresponds to a way of choosing $a$'s and $b$'s: from $n$
-factors of $(a + b)$, choosing $r$ of them to contribute a $b$ (and the remaining $n - r$ to
-contribute an $a$) gives the term $\binom{n}{r} a^{n-r} b^r$.
+Factors of $(a + b)$Choosing $r$ of them to contribute a $b$ (and the remaining $n - r$ to
+Contribute an $a$) gives the term $\binom{n}{r} a^{n-r} b^r$.
 
 <details>
 <summary>Example</summary>
@@ -145,10 +145,10 @@ $$(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots
 
 $$= \sum_{r=0}^{\infty} \binom{n}{r} x^r$$
 
-where $\binom{n}{r} = \frac◆LB◆n(n-1)(n-2)\cdots(n-r+1)◆RB◆◆LB◆r!◆RB◆$.
+Where $\binom{n}{r} = \frac◆LB◆n(n-1)(n-2)\cdots(n-r+1)◆RB◆◆LB◆r!◆RB◆$.
 
 **Note.** When $n$ is a positive integer, the series terminates at $r = n$ (since $\binom{n}{r} = 0$
-for $r \gt n$). When $n$ is not a positive integer, the series is infinite.
+For $r \gt n$). When $n$ is not a positive integer, the series is infinite.
 
 **Convergence.** The series converges when $|x| \lt 1$. This condition is essential.
 
@@ -166,18 +166,18 @@ $$
 \end{aligned}
 $$
 
-Valid for $|-2x| \lt 1$, i.e., $|x| \lt \frac{1}{2}$.
+Valid for $|-2x| \lt 1$I.e., $|x| \lt \frac{1}{2}$.
 
 </details>
 
 ### 4.1 Expanding $(a + bx)^n$
 
-To expand $(a + bx)^n$, first factor out $a$:
+To expand $(a + bx)^n$First factor out $a$:
 
 $$(a + bx)^n = a^n\left(1 + \frac{b}{a}x\right)^n$$
 
 Then expand $\left(1 + \frac{b}{a}x\right)^n$ using the general binomial theorem. The convergence
-condition becomes $\left|\frac{b}{a}x\right| \lt 1$.
+Condition becomes $\left|\frac{b}{a}x\right| \lt 1$.
 
 <details>
 <summary>Example</summary>
@@ -192,7 +192,7 @@ $$
 \end{aligned}
 $$
 
-Valid for $\left|\frac{x}{4}\right| \lt 1$, i.e., $|x| \lt 4$.
+Valid for $\left|\frac{x}{4}\right| \lt 1$I.e., $|x| \lt 4$.
 
 </details>
 
@@ -202,12 +202,12 @@ Valid for $\left|\frac{x}{4}\right| \lt 1$, i.e., $|x| \lt 4$.
 
 ### 5.1 The General Term
 
-In the expansion of $(a + bx)^n$, the $(r+1)$th term is:
+In the expansion of $(a + bx)^n$The $(r+1)$Th term is:
 
 $$T_{r+1} = \binom{n}{r} a^{n-r}(bx)^r$$
 
-The index $r$ counts from $0$, so the first term corresponds to $r = 0$ and the last term (when $n$
-is a positive integer) corresponds to $r = n$.
+The index $r$ counts from $0$So the first term corresponds to $r = 0$ and the last term (when $n$
+Is a positive integer) corresponds to $r = n$.
 
 ### 5.2 Strategy for Finding a Specific Term
 
@@ -218,7 +218,7 @@ To find the coefficient of $x^k$ in $(a + bx)^n$:
 3. Substitute $r = k$ and evaluate.
 
 When $n$ is not a positive integer, the general term still works — but you must also check
-convergence ($|bx/a| \lt 1$).
+Convergence ($|bx/a| \lt 1$).
 
 <details>
 <summary>Example 1: Constant term</summary>
@@ -228,10 +228,10 @@ The general term is:
 
 $$T_{r+1} = \binom{8}{r} (x^2)^{8-r}\left(\frac{2}{x}\right)^r = \binom{8}{r} 2^r x^{16-3r}$$
 
-For the constant term, set $16 - 3r = 0$, giving $r = \frac{16}{3}$. Since $r$ must be a
-non-negative integer, there is no constant term.
+For the constant term, set $16 - 3r = 0$Giving $r = \frac{16}{3}$. Since $r$ must be a
+Non-negative integer, there is no constant term.
 
-(If the power had been $9$, we would get $r = \frac{18}{3} = 6$, and the constant term would be
+(If the power had been $9$We would get $r = \frac{18}{3} = 6$And the constant term would be
 $\binom{9}{6} 2^6 = 84 \cdot 64 = 5376$.)
 
 </details>
@@ -273,26 +273,26 @@ Coefficient of $x^3$: $\frac{135}{16}$.
 ### 6.1 Using Partial Sums for Approximation
 
 When $(1 + x)^n$ is expanded as an infinite series, taking only the first $k + 1$ terms gives an
-approximation. The accuracy depends on how many terms are taken and how small $|x|$ is.
+Approximation. The accuracy depends on how many terms are taken and how small $|x|$ is.
 
-For small $|x|$, the series converges rapidly, so few terms are needed for high accuracy.
+For small $|x|$The series converges rapidly, so few terms are needed for high accuracy.
 
 ### 6.2 Error Bounds
 
 **Theorem (Error bound for alternating decreasing series).** If the terms of $(1+x)^n$ are
-alternating in sign and decreasing in magnitude, then the error when truncating after $k$ terms is
-bounded by the magnitude of the next (first omitted) term:
+Alternating in sign and decreasing in magnitude, then the error when truncating after $k$ terms is
+Bounded by the magnitude of the next (first omitted) term:
 
 $$\left|(1+x)^n - S_k\right| \leq |T_{k+1}|$$
 
-where $S_k$ is the partial sum up to and including the $x^k$ term, and $T_{k+1}$ is the $(k+1)$th
-term.
+Where $S_k$ is the partial sum up to and including the $x^k$ term, and $T_{k+1}$ is the $(k+1)$Th
+Term.
 
-This applies when $n \lt 0$ and $x \gt 0$, or when $n$ is fractional with alternating signs.
+This applies when $n \lt 0$ and $x \gt 0$Or when $n$ is fractional with alternating signs.
 
 <details>
 <summary>Example: Approximating $\sqrt[3]{28}$</summary>
-We write $28 = 27 + 1 = 27(1 + 1/27)$, so:
+We write $28 = 27 + 1 = 27(1 + 1/27)$So:
 
 $$\sqrt[3]{28} = \left(27\left(1 + \frac{1}{27}\right)\right)^{1/3} = 3\left(1 + \frac{1}{27}\right)^{1/3}$$
 
@@ -310,12 +310,12 @@ $$
 So $\sqrt[3]{28} \approx 3 \times 1.012197 = 3.036591$.
 
 **Error estimation.** The terms alternate and decrease in magnitude. The next term (the $x^4$ term)
-has magnitude:
+Has magnitude:
 
 $$\left|\frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)\cdot\left(-\frac{8}{3}\right)◆RB◆◆LB◆4!◆RB◆\cdot\frac{1}{27^4}\right| = \frac◆LB◆80◆RB◆◆LB◆243 \cdot 531441◆RB◆ \approx 6.2 \times 10^{-7}$$
 
-So the error in the expansion of $(1 + 1/27)^{1/3}$ is at most $\approx 6.2 \times 10^{-7}$, and the
-error in $\sqrt[3]{28}$ is at most $3 \times 6.2 \times 10^{-7} \approx 1.9 \times 10^{-6}$.
+So the error in the expansion of $(1 + 1/27)^{1/3}$ is at most $\approx 6.2 \times 10^{-7}$And the
+Error in $\sqrt[3]{28}$ is at most $3 \times 6.2 \times 10^{-7} \approx 1.9 \times 10^{-6}$.
 
 </details>
 
@@ -329,7 +329,7 @@ We already know (from Problem 7 below) that:
 
 $$\sum_{r=0}^{n} \binom{n}{r} = 2^n$$
 
-This follows from setting $a = 1$, $b = 1$ in the binomial theorem.
+This follows from setting $a = 1$$b = 1$ in the binomial theorem.
 
 ### 7.2 Weighted Sum: $\sum r\binom{n}{r} = n \cdot 2^{n-1}$
 
@@ -354,7 +354,7 @@ $$n \cdot 1 \cdot 2^{n-1} = \sum_{r=0}^{n} r\binom{n}{r}$$
 Therefore $\sum_{r=0}^{n} r\binom{n}{r} = n \cdot 2^{n-1}$. $\blacksquare$
 
 _Intuition._ If you want to select a committee of any size from $n$ people and then choose a
-chairperson, you can first pick $r$ members ($\binom{n}{r}$ ways) and then a chair from those $r$
+Chairperson, you can first pick $r$ members ($\binom{n}{r}$ ways) and then a chair from those $r$
 ($r$ ways). Summing over all $r$ gives $\sum r\binom{n}{r}$. Alternatively, pick the chair first
 ($n$ ways) and then any subset of the remaining $n - 1$ people ($2^{n-1}$ ways), giving
 $n \cdot 2^{n-1}$.
@@ -395,7 +395,7 @@ Consider a set of $n$ people, of which $r$ are women and $n - r$ are men. The ri
 $\binom{n}{m}$ counts the number of ways to choose a committee of $m$ people from all $n$.
 
 Alternatively, we can count by cases: choose $k$ women and $m - k$ men. The number of ways to choose
-$k$ women is $\binom{r}{k}$, and the number of ways to choose $m - k$ men is $\binom{n-r}{m-k}$.
+$k$ women is $\binom{r}{k}$And the number of ways to choose $m - k$ men is $\binom{n-r}{m-k}$.
 Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 
 <hr />
@@ -404,48 +404,48 @@ Summing over all valid $k$ gives the left-hand side. $\blacksquare$
 
 ### 8.1 Single Expansion Validity
 
-When expanding $(a + bx)^n$ with non-integer $n$, we write it as
+When expanding $(a + bx)^n$ with non-integer $n$We write it as
 $a^n\left(1 + \frac{bx}{a}\right)^n$. The expansion is valid when:
 
 $$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
 :::warning
 Always state the range of validity when working with non-integer powers. Marks are
-routinely deducted for omitting this.
+Routinely deducted for omitting this.
 :::
 
 ### 8.2 Product of Two Expansions
 
 When a question asks for the expansion of a product of two binomial expressions, such as
-$(1 + px)^a(1 + qx)^b$, each factor has its own validity range:
+$(1 + px)^a(1 + qx)^b$Each factor has its own validity range:
 
 $$|px| \lt 1 \quad \mathrm{and} \quad |qx| \lt 1$$
 
 The combined expansion is valid only where **both** individual expansions are valid. This means the
-overall validity is the **intersection** of the two ranges, which is always the **more restrictive**
-condition:
+Overall validity is the **intersection** of the two ranges, which is always the **more restrictive**
+Condition:
 
 $$|x| \lt \min\left(\frac◆LB◆1◆RB◆◆LB◆|p|◆RB◆, \frac◆LB◆1◆RB◆◆LB◆|q|◆RB◆\right)$$
 
 **Why?** The product expansion is obtained by multiplying the individual series term by term. If
-either series diverges, the term-by-term multiplication is not justified, so the product expansion
-may not equal the original expression.
+Either series diverges, the term-by-term multiplication is not justified, so the product expansion
+May not equal the original expression.
 
 ### 8.3 More Complex Cases
 
 For expressions involving three or more factors, the validity is the intersection of all individual
-validity ranges.
+Validity ranges.
 
 For partial fraction decompositions that lead to sums of binomial expansions, the same principle
-applies: the overall validity is the most restrictive individual condition.
+Applies: the overall validity is the most restrictive individual condition.
 
 <details>
 <summary>Example 1</summary>
-Find the expansion of $(1 + x)^{-2}(1 - 3x)^{-1}$ up to $x^2$, stating the validity.
+Find the expansion of $(1 + x)^{-2}(1 - 3x)^{-1}$ up to $x^2$Stating the validity.
 
 $(1 + x)^{-2}$: valid for $|x| \lt 1$.
 
-$(1 - 3x)^{-1}$: valid for $|3x| \lt 1$, i.e., $|x| \lt \frac{1}{3}$.
+$(1 - 3x)^{-1}$: valid for $|3x| \lt 1$I.e., $|x| \lt \frac{1}{3}$.
 
 The combined validity is $|x| \lt \frac{1}{3}$ (the more restrictive condition).
 
@@ -475,7 +475,7 @@ $$\frac{3}{(1-x)(2+x)} = \frac{1}{1-x} + \frac{1}{2+x} = (1-x)^{-1} + \frac{1}{2
 
 $(1-x)^{-1}$: valid for $|x| \lt 1$.
 
-$(1 + x/2)^{-1}$: valid for $|x/2| \lt 1$, i.e., $|x| \lt 2$.
+$(1 + x/2)^{-1}$: valid for $|x/2| \lt 1$I.e., $|x| \lt 2$.
 
 Combined validity: $|x| \lt 1$.
 
@@ -519,7 +519,7 @@ Coefficient of $x^3$: $-160$.
 
 <hr />
 
-**Problem 3.** Expand $(1 + x)^{-2}$ up to the term in $x^3$, stating the range of validity.
+**Problem 3.** Expand $(1 + x)^{-2}$ up to the term in $x^3$Stating the range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -577,8 +577,8 @@ To 5 d.p.: $1.02470$.
 
 <hr />
 
-**Problem 6.** In the expansion of $(1 + ax)^n$, the coefficients of $x$, $x^2$, and $x^3$ are in
-the ratio $1 : 4 : 12$. Find $a$ and $n$.
+**Problem 6.** In the expansion of $(1 + ax)^n$The coefficients of $x$$x^2$And $x^3$ are in
+The ratio $1 : 4 : 12$. Find $a$ and $n$.
 
 <details>
 <summary>Solution</summary>
@@ -631,8 +631,8 @@ $n$-element set, which is $2^n$ (each element can either be included or excluded
 
 <hr />
 
-**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$, stating
-the range of validity.
+**Problem 8.** Expand $\frac{1}{(1 + x)(1 - 2x)}$ in ascending powers of $x$ up to $x^3$Stating
+The range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -658,7 +658,7 @@ Valid for $|x| \lt \frac{1}{2}$ (the more restrictive condition).
 <hr />
 
 **Problem 9.** Given that the expansion of $(1 + kx)^{10}$ in ascending powers of $x$ has a
-coefficient of $x^3$ equal to $1080$, find the value of $k$.
+Coefficient of $x^3$ equal to $1080$Find the value of $k$.
 
 <details>
 <summary>Solution</summary>
@@ -686,8 +686,8 @@ $$(1 - 1)^n = \sum_{r=0}^{n} \binom{n}{r} 1^{n-r}(-1)^r = \sum_{r=0}^{n} (-1)^r 
 $0^n = 0$ for $n \geq 1$. $\blacksquare$
 
 _Intuition._ This counts the difference between subsets of even size and subsets of odd size — which
-is zero by a parity argument (there's a bijection between even-sized and odd-sized subsets: add or
-remove one element).
+Is zero by a parity argument (there's a bijection between even-sized and odd-sized subsets: add or
+Remove one element).
 
 </details>
 <b>If you get this wrong, revise:</b> [Binomial coefficients](#2-binomial-coefficients)
@@ -695,7 +695,7 @@ remove one element).
 <hr />
 
 **Problem 11.** Find the coefficient of $x^3$ in the expansion of $(1 + x)^{-3}(1 - 2x)^{-1}$ up to
-$x^3$, stating the range of validity.
+$x^3$Stating the range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -731,7 +731,7 @@ Write $126 = 125 + 1 = 125(1 + 1/125)$:
 
 $$\sqrt[3]{126} = 5\left(1 + \frac{1}{125}\right)^{1/3}$$
 
-Expand with $n = 1/3$, $x = 1/125 = 0.008$:
+Expand with $n = 1/3$$x = 1/125 = 0.008$:
 
 $$
 \begin{aligned}
@@ -750,8 +750,8 @@ To 4 d.p.: $5.0133$.
 
 $$\left|\frac◆LB◆\frac{1}{3}\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{5}{3}\right)◆RB◆◆LB◆6◆RB◆\cdot\frac{1}{125^3}\right| = \frac{10/162}{6} \cdot \frac{1}{1953125} \approx 5.3 \times 10^{-9}$$
 
-The error in $\sqrt[3]{126}$ is at most $5 \times 5.3 \times 10^{-9} \approx 2.7 \times 10^{-8}$,
-which is negligible for 4 decimal places. The approximation $5.0133$ is reliable.
+The error in $\sqrt[3]{126}$ is at most $5 \times 5.3 \times 10^{-9} \approx 2.7 \times 10^{-8}$
+Which is negligible for 4 decimal places. The approximation $5.0133$ is reliable.
 
 </details>
 <b>If you get this wrong, revise:</b> [Binomial approximation and error estimation](#6-binomial-approximation-and-error-estimation)
@@ -777,8 +777,8 @@ $$10(1+1)^9 = \sum_{r=0}^{10} r\binom{10}{r} = 10 \times 512 = 5120$$ ✓
 
 <hr />
 
-**Problem 14.** In the expansion of $(2 + 3x)^{2n}$, the ratio of the coefficient of $x^3$ to the
-coefficient of $x$ is $11 : 1$. Find the value of $n$.
+**Problem 14.** In the expansion of $(2 + 3x)^{2n}$The ratio of the coefficient of $x^3$ to the
+Coefficient of $x$ is $11 : 1$. Find the value of $n$.
 
 <details>
 <summary>Solution</summary>
@@ -808,7 +808,7 @@ $$\frac◆LB◆(2n-1)(2n-2) \cdot 3◆RB◆◆LB◆8◆RB◆ = 11$$
 $$(2n-1)(2n-2) = \frac{88}{3}$$
 
 This gives a non-integer, so let us recheck. We need $n$ such that the ratio equals $11$. Trying
-small values:
+Small values:
 
 $n = 3$: coefficient of $x^3$ is $\binom{6}{3} 2^3 \cdot 27 = 20 \cdot 8 \cdot 27 = 4320$.
 Coefficient of $x$ is $6 \cdot 32 \cdot 3 = 576$. Ratio: $4320/576 = 7.5$.
@@ -820,7 +820,7 @@ $n = 5$: coefficient of $x^3$ is $\binom{10}{3} 2^7 \cdot 27 = 120 \cdot 128 \cd
 Coefficient of $x$ is $10 \cdot 512 \cdot 3 = 15360$. Ratio: $414720/15360 = 27$.
 
 Since $7.5 \lt 11 \lt 15.75$ and the ratio is increasing, there is no integer $n$ giving ratio
-exactly $11$. However, solving the equation more carefully:
+Exactly $11$. However, solving the equation more carefully:
 
 $$\frac{(2n-1)(2n-2)}{4} = 11$$
 
@@ -835,17 +835,17 @@ $$4n^2 - 6n - 9 = 0$$
 $$n = \frac◆LB◆6 \pm \sqrt{36 + 144}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm \sqrt{180}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆6 \pm 6\sqrt{5}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆3 \pm 3\sqrt{5}◆RB◆◆LB◆4◆RB◆$$
 
 Since $n$ must be a positive integer, there is no integer solution. The ratio $11 : 1$ cannot be
-achieved for any positive integer $n$ with $(2+3x)^{2n}$.
+Achieved for any positive integer $n$ with $(2+3x)^{2n}$.
 
-(The closest integer value is $n = 4$ giving ratio $\approx 15.75$, and $n = 3$ giving $7.5$.)
+(The closest integer value is $n = 4$ giving ratio $\approx 15.75$And $n = 3$ giving $7.5$.)
 
 </details>
 <b>If you get this wrong, revise:</b> [Finding specific terms](#5-finding-specific-terms)
 
 <hr />
 
-**Problem 15.** Expand $\frac{2}{(1+x)^2(1-2x)}$ in ascending powers of $x$ up to $x^2$, stating the
-range of validity.
+**Problem 15.** Expand $\frac{2}{(1+x)^2(1-2x)}$ in ascending powers of $x$ up to $x^2$Stating the
+Range of validity.
 
 <details>
 <summary>Solution</summary>
@@ -855,11 +855,11 @@ $$\frac{2}{(1+x)^2(1-2x)} = \frac{A}{1+x} + \frac{B}{(1+x)^2} + \frac{C}{1-2x}$$
 
 $$2 = A(1+x)(1-2x) + B(1-2x) + C(1+x)^2$$
 
-Setting $x = -2$: $2 = C(-1)^2 = C$, so $C = 2$.
+Setting $x = -2$: $2 = C(-1)^2 = C$So $C = 2$.
 
-Setting $x = -1$: $2 = B(3)$, so $B = \frac{2}{3}$.
+Setting $x = -1$: $2 = B(3)$So $B = \frac{2}{3}$.
 
-Setting $x = 0$: $2 = A + B + C = A + 2/3 + 2$, so $A = 2 - 8/3 = -2/3$.
+Setting $x = 0$: $2 = A + B + C = A + 2/3 + 2$So $A = 2 - 8/3 = -2/3$.
 
 So:
 
@@ -889,10 +889,22 @@ Validity: the most restrictive condition is $|x| \lt 1/2$ (from $(1-2x)^{-1}$).
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Binomial Expansion**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-binomial-expansion) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Binomial Expansion with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

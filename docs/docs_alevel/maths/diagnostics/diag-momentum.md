@@ -63,7 +63,7 @@ Conservation: $-2 = 4(2) + 6v_B \implies -2 = 8 + 6v_B \implies 6v_B = -10 \impl
 
 The negative sign means $B$ moves in the opposite direction to the defined positive, i.e., in $A$'s initial direction. This is the same physical velocity as $\frac{5}{3}$ m/s in $A$'s initial direction, confirming the result is convention-independent.
 
-**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$, the collision is **inelastic**.
+**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$The collision is **inelastic**.
 
 $$\text{KE}_{\text{before}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{ J}$$
 
@@ -227,7 +227,7 @@ $$= (128 - 128 + 64 - 16 + 2) - 0 = 50 \text{ J}$$
 
 **(d)** $\Delta\mathrm{KE} = \frac{1}{2}(4)(5^2) - 0 = 50$ J.
 
-Since $W = 50$ J $= \Delta\mathrm{KE}$, the work-energy theorem is verified.
+Since $W = 50$ J $= \Delta\mathrm{KE}$The work-energy theorem is verified.
 
 ---
 
@@ -259,7 +259,7 @@ $p_{y,\text{initial}} = 0$.
 
 **After collision:**
 
-$A$: $v_{Ax} = 4\cos 30° = 2\sqrt{3}$, $v_{Ay} = 4\sin 30° = 2$.
+$A$: $v_{Ax} = 4\cos 30° = 2\sqrt{3}$$v_{Ay} = 4\sin 30° = 2$.
 
 **$x$-momentum conservation:**
 
@@ -279,7 +279,7 @@ Speed of $B$: $v_B = \sqrt{v_{Bx}^2 + v_{By}^2} = \sqrt◆LB◆\left(\frac{35 - 
 
 $$= \sqrt◆LB◆\frac{(35 - 4\sqrt{3})^2 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1225 - 280\sqrt{3} + 48 + 16}{9}◆RB◆ = \sqrt◆LB◆\frac{1289 - 280\sqrt{3}}{9}◆RB◆$$
 
-$\sqrt{3} \approx 1.732$, so $1289 - 484.96 = 804.04$.
+$\sqrt{3} \approx 1.732$So $1289 - 484.96 = 804.04$.
 
 $$v_B = \sqrt◆LB◆\frac{804.04}{9}◆RB◆ = \sqrt{89.34} \approx 9.45 \text{ m/s}$$
 
@@ -295,7 +295,7 @@ $$= \frac{7 - 3.464}{3} = \frac{3.536}{3} \approx 0.179$$
 
 $\text{KE}_{\text{after}} = \frac{1}{2}(4)(16) + \frac{1}{2}(6)(89.34) = 32 + 268.0 = 300$ J.
 
-Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$, which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
+Wait -- $\text{KE}_{\text{after}} \gt \text{KE}_{\text{before}}$Which is impossible ($e \leq 1$ implies no energy creation). Let me recheck.
 
 $v_B^2 = \frac◆LB◆1289 - 280\sqrt{3}◆RB◆◆LB◆9◆RB◆$.
 
@@ -307,7 +307,7 @@ $\text{KE}_{\text{after}} = 32 + \frac{6}{2} \times 89.34 = 32 + 268.0 = 300$ J.
 
 This exceeds the initial KE of $275$ J, which violates $e \leq 1$. This means the stated data ($A$ deflects at $30°$ with speed $4$ m/s) is inconsistent with momentum and energy conservation. The problem is over-specified with contradictory data.
 
-**Conclusion:** The given data is inconsistent. With the given masses, initial velocities, and the stated post-collision velocity of $A$, the resulting velocity of $B$ implies kinetic energy creation. This diagnostic test is designed to identify whether the student recognises physically impossible data.
+**Conclusion:** The given data is inconsistent. With the given masses, initial velocities, and the stated post-collision velocity of $A$The resulting velocity of $B$ implies kinetic energy creation. This diagnostic test is designed to identify whether the student recognises physically impossible data.
 
 **(d)** From part (a): $v_{Bx} = \frac◆LB◆35 - 4\sqrt{3}◆RB◆◆LB◆3◆RB◆$ and $v_{By} = -\frac{4}{3}$.
 
@@ -315,7 +315,7 @@ $$\tan\theta = \frac◆LB◆\lvert v_{By} \rvert◆RB◆◆LB◆v_{Bx}◆RB◆ =
 
 $$\theta \approx \arctan(0.1425) \approx 8.1°$$
 
-Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆$... this does not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the original line of motion.
+Note: $\tan\theta = \frac◆LB◆2\sin 30°◆RB◆◆LB◆\frac{35 - 4\sqrt{3}}{3} - 2\sqrt{3}◆RB◆$... This does not simplify neatly because the data is inconsistent. The angle is approximately $8.1°$ below the original line of motion.
 
 ---
 
@@ -329,7 +329,7 @@ A particle $P$ of mass $2$ kg moves at $8$ m/s towards a smooth vertical wall. A
 
 **(b)** Find the velocities of $P$ and $Q$ after the collision between $P$ and $Q$.
 
-**(c)** After the collision with $Q$, $P$ moves on a rough horizontal surface with $\mu = 0.4$. Find the distance $P$ travels before coming to rest.
+**(c)** After the collision with $Q$$P$ moves on a rough horizontal surface with $\mu = 0.4$. Find the distance $P$ travels before coming to rest.
 
 **(d)** Find the total kinetic energy lost in both collisions combined, and the total impulse exerted by the wall on $P$.
 
@@ -365,7 +365,7 @@ Both particles move in the same direction (away from the wall).
 
 Deceleration: $a = -\mu g = -0.4 \times 9.8 = -3.92$ m/s$^2$.
 
-Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 0.6$:
+Using $v^2 = u^2 + 2as$ with $v = 0$$u = 0.6$:
 
 $$0 = 0.36 + 2(-3.92)d \implies d = \frac{0.36}{7.84} \approx 0.0459 \text{ m} \approx 4.6 \text{ cm}$$
 

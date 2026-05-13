@@ -10,23 +10,23 @@ slug: threads-jthread-hardware-mapping
 ---
 # Thread Execution (`std::jthread`) and Hardware Mapping
 
-This section covers thread creation with `std::thread` and `std::jthread`, hardware concurrency
-detection, join/detach semantics, RAII-based thread guards, cooperative cancellation via
-`std::stop_token`, and a thread-safe worker pool implementation.
+This section covers thread creation with `std::thread` and `std::jthread`Hardware concurrency
+Detection, join/detach semantics, RAII-based thread guards, cooperative cancellation via
+`std::stop_token`And a thread-safe worker pool implementation.
 
 ## `std::thread` and `std::jthread`
 
 `std::thread` [N4950 §31.4.4.1] represents an individual thread of execution. When a `std::thread`
-object is constructed, it begins executing the provided callable. The thread callable can be a
-function pointer, a lambda, a functor, or any movable callable object [N4950 §31.4.4.1.2].
+Object is constructed, it begins executing the provided callable. The thread callable can be a
+Function pointer, a lambda, a functor, or any movable callable object [N4950 §31.4.4.1.2].
 
 `std::jthread` [N4950 §31.4.4.4] was introduced in C++20 and provides the same functionality as
 `std::thread` with two critical enhancements:
 
 1. **Automatic joining**: The destructor calls `join()` if the thread is still joinable, preventing
-   accidental detachment or termination.
+ accidental detachment or termination.
 2. **Cooperative cancellation**: A `std::stop_token` is automatically created and can be passed to
-   the thread's callable, enabling request-based cancellation.
+ the thread's callable, enabling request-based cancellation.
 
 ```cpp
 #include <iostream>
@@ -58,11 +58,11 @@ CPUs expose multiple hardware threads per core via simultaneous multithreading (
 Hyper-Threading).
 
 A **software thread** is an OS-level thread managed by the scheduler. The OS maps software threads
-onto hardware threads. When the number of software threads exceeds hardware threads, the scheduler
-performs context switching.
+Onto hardware threads. When the number of software threads exceeds hardware threads, the scheduler
+Performs context switching.
 
 `std::thread::hardware_concurrency()` [N4950 §31.4.4.1.4] returns the number of concurrent threads
-supported by the implementation. This value approximates the number of hardware threads available:
+Supported by the implementation. This value approximates the number of hardware threads available:
 
 $$N_{\mathrm{optimal{}} = \mathrm{std::thread::hardware\_concurrency{}()$$
 
@@ -78,9 +78,9 @@ int main() {
 ```
 
 :::tip
-tip
-point. For I/O-bound work, you may benefit from more threads since they spend time waiting rather
-than computing.
+Tip
+Point. For I/O-bound work, you may benefit from more threads since they spend time waiting rather
+Than computing.
 :::
 
 ## Joining and Detaching
@@ -90,22 +90,22 @@ A `std::thread` object is in one of two states relative to an OS thread [N4950 �
 - **Joinable**: The thread has not yet been joined or detached.
 - **Not joinable**: The thread has been joined, detached, or was default-constructed.
 
-| Operation             | Effect                                                                            | Post-state         |
+| Operation | Effect | Post-state |
 | --------------------- | --------------------------------------------------------------------------------- | ------------------ |
-| `join()`              | Blocks until the thread finishes                                                  | Not joinable       |
-| `detach()`            | Separates the thread from the `std::thread` object; the thread runs independently | Not joinable       |
-| Destructor (joinable) | Calls `std::terminate()`                                                          | Program terminates |
+| `join()` | Blocks until the thread finishes | Not joinable |
+| `detach()` | Separates the thread from the `std::thread` object; the thread runs independently | Not joinable |
+| Destructor (joinable) | Calls `std::terminate()` | Program terminates |
 
 :::warning
-warning
+Warning
 `std::system_error`. Destroying a joinable `std::thread` calls `std::terminate()` [N4950
 §31.4.4.1.3]. Always ensure a thread is either joined or detached before destruction.
 :::
 
 ## RAII-Based Thread Guard
 
-Before C++20's `std::jthread`, a common pattern was to write an RAII wrapper that joins in its
-destructor:
+Before C++20's `std::jthread`A common pattern was to write an RAII wrapper that joins in its
+Destructor:
 
 ```cpp
 #include <thread>
@@ -143,14 +143,14 @@ int main() {
 ## `std::jthread` with Cooperative Cancellation via `std::stop_token`
 
 `std::stop_token` [N4950 §31.4.4.6] is a non-owning handle to a `std::stop_source`. A thread can
-periodically check whether a stop has been requested and exit cooperatively.
+Periodically check whether a stop has been requested and exit cooperatively.
 
 Key types in the stop-token mechanism [N4950 §31.4.4.6]:
 
-| Type                 | Role                                                |
+| Type | Role |
 | -------------------- | --------------------------------------------------- |
-| `std::stop_token`    | Query-only handle; passed to worker threads         |
-| `std::stop_source`   | Ownership handle; used to request stop              |
+| `std::stop_token` | Query-only handle; passed to worker threads |
+| `std::stop_source` | Ownership handle; used to request stop |
 | `std::stop_callback` | Registers a callback invoked when stop is requested |
 
 ```cpp
@@ -188,15 +188,15 @@ int main() {
 ```
 
 :::info
-info
-of the callable if the callable accepts a `std::stop_token` as its first parameter [N4950
+Info
+Of the callable if the callable accepts a `std::stop_token` as its first parameter [N4950
 §31.4.4.4.2].
 :::
 
 ## Thread-Safe Worker Pool with `jthread` + `stop_token`
 
 The following example implements a simple thread pool using `std::jthread` for automatic lifecycle
-management and `std::stop_token` for graceful shutdown:
+Management and `std::stop_token` for graceful shutdown:
 
 ```cpp
 #include <iostream>
@@ -290,7 +290,7 @@ int main() {
 ## Thread Identifier and Native Handle
 
 Each `std::thread` and `std::jthread` has a unique identifier of type `std::thread::id` and can
-expose the underlying OS thread handle for platform-specific operations [N4950 §31.4.4.1.4]:
+Expose the underlying OS thread handle for platform-specific operations [N4950 §31.4.4.1.4]:
 
 ```cpp
 #include <iostream>
@@ -334,15 +334,15 @@ void native_handle_demo() {
 ```
 
 :::warning
-warning
-the implementation does not support native handles. Always check the documentation for your standard
-library implementation. Code using `native_handle()` is inherently non-portable.
+Warning
+The implementation does not support native handles. Always check the documentation for your standard
+Library implementation. Code using `native_handle()` is inherently non-portable.
 :::
 
 ## Thread Arguments and Race Conditions
 
 Arguments to `std::thread` are passed by value (moved or copied) into the new thread's stack. This
-prevents dangling references to local variables:
+Prevents dangling references to local variables:
 
 ```cpp
 #include <iostream>
@@ -376,10 +376,10 @@ void race_condition_demo() {
 ```
 
 :::warning
-warning
-executing. This means even if the original variable is destroyed before the thread accesses it, the
-copy is safe. However, if you explicitly pass `std::ref` or `std::cref`, you bypass this protection
-and must ensure the referenced object outlives the thread.
+Warning
+Executing. This means even if the original variable is destroyed before the thread accesses it, the
+Copy is safe. However, if you explicitly pass `std::ref` or `std::cref`You bypass this protection
+And must ensure the referenced object outlives the thread.
 :::
 
 ## `std::jthread` with Return Value via `std::promise`
@@ -424,17 +424,17 @@ void promise_future_demo() {
 ```
 
 :::info
-info
+Info
 `std::shared_ptr` to captured data) keeps the necessary state alive until the thread completes.
 However, detached threads are hard to reason about — you cannot join them, and they may outlive
-`main()`, causing undefined behavior. Prefer joining whenever possible.
+`main()`Causing undefined behavior. Prefer joining whenever possible.
 :::
 
 ## `std::stop_callback` — Reactive Cancellation
 
 `std::stop_callback` registers a callback that is invoked when `stop_requested()` becomes true
 [N4950 §31.4.4.6]. This is useful for cleaning up resources or signaling other subsystems when a
-stop is requested:
+Stop is requested:
 
 ```cpp
 #include <iostream>
@@ -464,24 +464,24 @@ void stop_callback_demo() {
 ```
 
 :::warning
-warning
-is destroyed before the stop is requested, the callback will never fire. Ensure the `stop_callback`
-object outlives the expected stop request. The callback itself is invoked synchronously from the
-thread that calls `request_stop()`, not from the worker thread.
+Warning
+Is destroyed before the stop is requested, the callback will never fire. Ensure the `stop_callback`
+Object outlives the expected stop request. The callback itself is invoked synchronously from the
+Thread that calls `request_stop()`Not from the worker thread.
 :::
 
 ## Thread Stack Size
 
 Each OS thread has a stack with a default size that varies by platform:
 
-| Platform      | Default Stack Size              | Configuration Method                       |
+| Platform | Default Stack Size | Configuration Method |
 | :------------ | :------------------------------ | :----------------------------------------- |
-| Linux (glibc) | 8 MB                            | `pthread_attr_setstacksize` or `ulimit -s` |
-| macOS         | 8 MB (main), 512 KB (secondary) | `pthread_attr_setstacksize`                |
-| Windows       | 1 MB                            | `/STACK:` linker flag or `CreateThread`    |
+| Linux (glibc) | 8 MB | `pthread_attr_setstacksize` or `ulimit -s` |
+| macOS | 8 MB (main), 512 KB (secondary) | `pthread_attr_setstacksize` |
+| Windows | 1 MB | `/STACK:` linker flag or `CreateThread` |
 
 For applications that create many threads (e.g., thread pools with hundreds of workers), the default
-stack size can exhaust virtual memory. On Linux, you can check and adjust the stack size:
+Stack size can exhaust virtual memory. On Linux, you can check and adjust the stack size:
 
 ```cpp
 #include <iostream>
@@ -503,10 +503,10 @@ void stack_size_info() {
 ```
 
 :::warning
-warning
+Warning
 `SIGSEGV` on POSIX or an access violation on Windows. This is especially common with deep recursion
-or large local variables in thread functions. Use heap allocation for large buffers, not stack
-allocation.
+Or large local variables in thread functions. Use heap allocation for large buffers, not stack
+Allocation.
 :::
 
 ## `std::jthread` Constructor Variants
@@ -539,29 +539,29 @@ void constructor_variants() {
 ## Common Pitfalls
 
 1. **Destroying a joinable `std::thread`:** This calls `std::terminate()`. Always join or detach
-   before destruction. This is the primary motivation for using `std::jthread`, which joins
-   automatically.
+ before destruction. This is the primary motivation for using `std::jthread`Which joins
+ automatically.
 
 2. **Detaching threads with references to locals:** A detached thread that references local
-   variables from the creating scope will access dangling memory after the scope exits. Either join
-   the thread, or ensure all referenced data outlives the thread (e.g., via `shared_ptr`).
+ variables from the creating scope will access dangling memory after the scope exits. Either join
+ the thread, or ensure all referenced data outlives the thread (e.g., via `shared_ptr`).
 
 3. **Calling `request_stop()` after `jthread` is joined:** `request_stop()` is safe to call at any
-   time — it is a no-op if the stop has already been requested. The `jthread` destructor calls
-   `request_stop()` followed by `join()`, so the stop is always requested before joining.
+ time — it is a no-op if the stop has already been requested. The `jthread` destructor calls
+ `request_stop()` followed by `join()`So the stop is always requested before joining.
 
 4. **`stop_token` is not a cancellation mechanism:** `stop_token` implements cooperative
-   cancellation — the worker must periodically check `stop_requested()`. If the worker blocks
-   indefinitely (e.g., on I/O or a mutex), `request_stop()` alone cannot interrupt it. Use condition
-   variables with timeouts or OS-specific cancellation for truly interruptible waits.
+ cancellation — the worker must periodically check `stop_requested()`. If the worker blocks
+ indefinitely (e.g., on I/O or a mutex), `request_stop()` alone cannot interrupt it. Use condition
+ variables with timeouts or OS-specific cancellation for truly interruptible waits.
 
 5. **`hardware_concurrency()` returns 0 when unknown:** On some embedded systems, this function
-   returns 0 (meaning the implementation cannot determine the value). Always handle this case:
-   `auto n = std::thread::hardware_concurrency(); if (n == 0) n = 4; /* fallback */`
+ returns 0 (meaning the implementation cannot determine the value). Always handle this case:
+ `auto n = std::thread::hardware_concurrency(); if (n == 0) n = 4; /* fallback */`
 
 6. **Thread function exceptions:** If an exception escapes the thread's callable, `std::terminate()`
-   is called. Use `std::promise` to transport exceptions to the joining thread, or catch all
-   exceptions inside the thread function and store them.
+ is called. Use `std::promise` to transport exceptions to the joining thread, or catch all
+ exceptions inside the thread function and store them.
 
 :::
 
@@ -578,3 +578,11 @@ void constructor_variants() {
 :::
 
 :::
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

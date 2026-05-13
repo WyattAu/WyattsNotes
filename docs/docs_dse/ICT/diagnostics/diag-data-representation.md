@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 **Solution:**
 
-(a) $(\text{FA3})_{16}$: F $= 15 = 1111_2$, A $= 10 = 1010_2$, 3 $= 0011_2$. Binary: $111110100011_2$.
+(a) $(\text{FA3})_{16}$: F $= 15 = 1111_2$A $= 10 = 1010_2$3 $= 0011_2$. Binary: $111110100011_2$.
 
 Decimal: $15 \times 256 + 10 \times 16 + 3 = 3840 + 160 + 3 = 4003$.
 
@@ -24,13 +24,13 @@ So $(-42)_{10}$ in 8-bit two's complement $= 11010110_2$.
 
 (c) Subtracting: $11010110 - 01101011$.
 
-Two's complement of $01101011$: invert $= 10010100$, add 1 $= 10010101$.
+Two's complement of $01101011$: invert $= 10010100$Add 1 $= 10010101$.
 
 $11010110 + 10010101 = 101101011_2$. The 9th bit (carry) is discarded in 8-bit arithmetic. Result $= 01101011_2 = 107_{10}$.
 
 Verification: $214 - 107 = 107$. Correct.
 
-(d) Two's complement advantages: (1) Only one representation of zero (sign-and-magnitude has +0 and -0). (2) Addition and subtraction use the same hardware circuit -- no special logic for negative numbers. (3) The most significant bit naturally indicates the sign (0 $=$ positive, 1 $=$ negative). (4) The range of positive and negative numbers is symmetric (e.g., $-128$ to $+127$ in 8-bit), making efficient use of all bit patterns.
+(d) Two's complement advantages: (1) Only one representation of zero (sign-and-magnitude has +0 and -0). (2) Addition and subtraction use the same hardware circuit -- no special logic for negative numbers. (3) The most significant bit indicates the sign (0 $=$ positive, 1 $=$ negative). (4) The range of positive and negative numbers is symmetric (e.g., $-128$ to $+127$ in 8-bit), making efficient use of all bit patterns.
 
 ### UT-2: Character Encoding
 **Question:** (a) Explain the difference between ASCII and Unicode. (b) The string "Hi!" is stored in UTF-8 encoding. Calculate the number of bytes required. (c) A file contains 500 characters of English text. Calculate the file size in bytes if stored in: ASCII, UTF-8, and UTF-16. (d) Explain why UTF-8 is the dominant encoding on the web.
@@ -61,7 +61,7 @@ Total: **3 bytes** (all characters are in the ASCII range, so UTF-8 uses 1 byte 
 
 (b) Compressed size $= 5.93 / 10 \approx 0.593$ MB $\approx 593$ KB.
 
-(c) JPEG uses lossy compression because: (1) Images contain more colour information than the human eye can perceive. JPEG exploits this by discarding high-frequency detail that is less perceptible. (2) The compression ratios achievable (10:1 to 20:1) are far greater than lossless methods (typically 2:1). (3) For photographs and natural images, the quality loss is barely noticeable at moderate compression levels.
+(c) JPEG uses lossy compression because: (1) Images contain more colour information than the human eye can perceive. JPEG exploits this by discarding high-frequency detail that is less perceptible. (2) The compression ratios achievable (10:1 to 20:1) are far greater than lossless methods ( 2:1). (3) For photographs and natural images, the quality loss is barely noticeable at moderate compression levels.
 
 Lossy compression is acceptable for: photographs, web images, social media. It is NOT acceptable for: medical imaging, technical drawings, screenshots with text, or any situation where exact pixel reproduction is required.
 
@@ -91,13 +91,13 @@ $= 254,016,000 / 8 = 31,752,000 \text{ bytes} \approx 30.27$ MB.
 
 Result in 8 bits: $00100000 = 32_{10}$.
 
-Carry out of the MSB $= 1$ (indicates overflow in unsigned). For signed: $10110011 = -77$, $01101101 = 109$. Sum $= 32$. No signed overflow because a negative plus positive cannot exceed the range.
+Carry out of the MSB $= 1$ (indicates overflow in unsigned). For signed: $10110011 = -77$$01101101 = 109$. Sum $= 32$. No signed overflow because a negative plus positive cannot exceed the range.
 
 (b) The ALU uses full adders chained together. Each full adder takes three inputs (two bits to add and a carry-in) and produces a sum bit and carry-out. For an 8-bit addition, 8 full adders are connected: the carry-out of each stage feeds into the carry-in of the next. Each full adder can be built from two half adders and an OR gate, and each half adder uses an XOR gate (for sum) and AND gate (for carry).
 
 (c) Maximum addressable memory $= 2^{32} = 4,294,967,296$ bytes $= 4$ GB.
 
-If 8 GB is installed, the system uses physical address extension (PAE) or operates in 64-bit mode to access beyond 4 GB. In a 32-bit system without PAE, only 4 GB is addressable. Additionally, some address space is reserved for memory-mapped I/O (GPU VRAM, BIOS, peripheral controllers), so usable RAM is typically less than 4 GB even if 4 GB is installed.
+If 8 GB is installed, the system uses physical address extension (PAE) or operates in 64-bit mode to access beyond 4 GB. In a 32-bit system without PAE, only 4 GB is addressable. Additionally, some address space is reserved for memory-mapped I/O (GPU VRAM, BIOS, peripheral controllers), so usable RAM is less than 4 GB even if 4 GB is installed.
 
 ### IT-2: Data Compression and Networking (with Internet and Data Communications)
 **Question:** A video file is 500 MB uncompressed. (a) If compressed to 50 MB using H.264, what is the compression ratio? (b) The compressed video is streamed over a network with bandwidth of 10 Mbps. Calculate the streaming time. (c) Explain why video compression is lossy and how inter-frame compression (P-frames and B-frames) achieves higher ratios than intra-frame compression. (d) How does packet loss during streaming affect the video quality differently than file download?

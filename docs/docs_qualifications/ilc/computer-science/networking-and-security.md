@@ -12,26 +12,26 @@ slug: networking-and-security
 # Networking and Security
 
 This topic covers computer networks, network models, protocols, security threats, and defensive
-measures.
+Measures.
 
 ## Network Fundamentals (OL/HL)
 
 ### Types of Network
 
-| Type                        | Description                            | Example        |
+| Type | Description | Example |
 | --------------------------- | -------------------------------------- | -------------- |
-| LAN (Local Area Network)    | Covers a small area (building, campus) | School network |
-| WAN (Wide Area Network)     | Covers a large geographic area         | The Internet   |
-| WLAN (Wireless LAN)         | LAN using wireless connections         | Home Wi-Fi     |
-| PAN (Personal Area Network) | Very small range (a few metres)        | Bluetooth      |
+| LAN (Local Area Network) | Covers a small area (building, campus) | School network |
+| WAN (Wide Area Network) | Covers a large geographic area | The Internet |
+| WLAN (Wireless LAN) | LAN using wireless connections | Home Wi-Fi |
+| PAN (Personal Area Network) | Very small range (a few metres) | Bluetooth |
 
 ### Client-Server vs Peer-to-Peer (OL/HL)
 
 **Client-server:** central server provides resources to clients. Advantages: centralised management,
-security, backup. Disadvantages: single point of failure, cost.
+Security, backup. Disadvantages: single point of failure, cost.
 
 **Peer-to-peer:** all computers are equal, sharing resources directly. Advantages: no central
-server, cost-effective for small networks. Disadvantages: security, difficult to manage at scale.
+Server, cost-effective for small networks. Disadvantages: security, difficult to manage at scale.
 
 ### Network Topologies (OL/HL)
 
@@ -44,7 +44,7 @@ server, cost-effective for small networks. Disadvantages: security, difficult to
 
 - Advantages: simple, cheap.
 - Disadvantages: if the main cable fails, the network goes down; performance degrades with many
-  devices.
+ devices.
 
 **Ring topology:** devices connected in a circular loop.
 
@@ -58,18 +58,18 @@ server, cost-effective for small networks. Disadvantages: security, difficult to
 
 ### Comparing Topologies (HL)
 
-| Feature         | Star           | Mesh      | Bus          | Ring     |
+| Feature | Star | Mesh | Bus | Ring |
 | --------------- | -------------- | --------- | ------------ | -------- |
-| Cost            | Low            | High      | Very low     | Low      |
-| Reliability     | Medium         | Very high | Low          | Low      |
-| Scalability     | Good           | Poor      | Poor         | Poor     |
-| Fault tolerance | Good           | Excellent | Poor         | Poor     |
-| Cable required  | One per device | Many      | One backbone | One ring |
+| Cost | Low | High | Very low | Low |
+| Reliability | Medium | Very high | Low | Low |
+| Scalability | Good | Poor | Poor | Poor |
+| Fault tolerance | Good | Excellent | Poor | Poor |
+| Cable required | One per device | Many | One backbone | One ring |
 
 **Worked Example (HL).** A school has 30 computers in a lab. Recommend a topology.
 
 Star topology is recommended. Each computer connects to a central switch via its own cable. If one
-cable fails, only that computer is affected. The switch directs traffic efficiently.
+Cable fails, only that computer is affected. The switch directs traffic efficiently.
 
 ## Network Models (HL)
 
@@ -77,15 +77,15 @@ cable fails, only that computer is affected. The switch directs traffic efficien
 
 The Open Systems Interconnection model has 7 layers:
 
-| Layer | Name         | Function                              | Example                 |
+| Layer | Name | Function | Example |
 | ----- | ------------ | ------------------------------------- | ----------------------- |
-| 7     | Application  | User interface, applications          | HTTP, FTP, SMTP         |
-| 6     | Presentation | Data formatting, encryption           | SSL/TLS, JPEG           |
-| 5     | Session      | Establishes, maintains, ends sessions | NetBIOS                 |
-| 4     | Transport    | End-to-end communication              | TCP, UDP                |
-| 3     | Network      | Routing and addressing                | IP, ICMP                |
-| 2     | Data Link    | Node-to-node data transfer            | Ethernet, MAC addresses |
-| 1     | Physical     | Physical transmission of bits         | Cables, Wi-Fi, hubs     |
+| 7 | Application | User interface, applications | HTTP, FTP, SMTP |
+| 6 | Presentation | Data formatting, encryption | SSL/TLS, JPEG |
+| 5 | Session | Establishes, maintains, ends sessions | NetBIOS |
+| 4 | Transport | End-to-end communication | TCP, UDP |
+| 3 | Network | Routing and addressing | IP, ICMP |
+| 2 | Data Link | Node-to-node data transfer | Ethernet, MAC addresses |
+| 1 | Physical | Physical transmission of bits | Cables, Wi-Fi, hubs |
 
 **Mnemonic:** "All People Seem To Need Data Processing" (bottom to top).
 
@@ -93,23 +93,23 @@ The Open Systems Interconnection model has 7 layers:
 
 A simplified 4-layer model:
 
-| Layer          | OSI Equivalent | Protocol             |
+| Layer | OSI Equivalent | Protocol |
 | -------------- | -------------- | -------------------- |
-| Application    | 5, 6, 7        | HTTP, DNS, SMTP, FTP |
-| Transport      | 4              | TCP, UDP             |
-| Internet       | 3              | IP, ICMP             |
-| Network Access | 1, 2           | Ethernet, Wi-Fi      |
+| Application | 5, 6, 7 | HTTP, DNS, SMTP, FTP |
+| Transport | 4 | TCP, UDP |
+| Internet | 3 | IP, ICMP |
+| Network Access | 1, 2 | Ethernet, Wi-Fi |
 
 **Encapsulation:** As data moves down the layers, each layer adds its own header. At the receiving
-end, each layer removes its header.
+End, each layer removes its header.
 
 ## Network Protocols (OL/HL)
 
 ### TCP/IP (HL)
 
 **TCP (Transmission Control Protocol):** connection-oriented, reliable. Establishes a connection
-before sending data (three-way handshake). Guarantees delivery and order. Used for web browsing,
-email.
+Before sending data (three-way handshake). Guarantees delivery and order. Used for web browsing,
+Email.
 
 **UDP (User Datagram Protocol):** connectionless, unreliable. No guarantee of delivery or order.
 Faster than TCP. Used for streaming, online gaming, DNS.
@@ -127,7 +127,7 @@ Faster than TCP. Used for streaming, online gaming, DNS.
 **IPv4:** 32-bit address (4 octets), e.g., $192.168.1.1$. Approximately 4.3 billion addresses.
 
 **IPv6:** 128-bit address, e.g., $2001:0db8:85a3:0000:0000:8a2e:0370:7334$. Virtually unlimited
-addresses.
+Addresses.
 
 **Private IP ranges:**
 
@@ -137,14 +137,14 @@ addresses.
 
 **Worked Example (OL).** Convert the IP address 192.168.1.1 to binary.
 
-$192 = 11000000$, $168 = 10101000$, $1 = 00000001$, $1 = 00000001$.
+$192 = 11000000$$168 = 10101000$$1 = 00000001$$1 = 00000001$.
 
 Result: $11000000.10101000.00000001.00000001$.
 
 ### Subnet Masks (HL)
 
 A subnet mask determines which part of an IP address is the network portion and which is the host
-portion.
+Portion.
 
 **Example (HL):** IP address $192.168.1.100$ with subnet mask $255.255.255.0$.
 
@@ -153,7 +153,7 @@ Network portion: $192.168.1.0$. Host portion: $0.0.0.100$.
 This allows 254 hosts ($2^8 - 2$).
 
 **Worked Example (HL).** IP address $172.16.5.50$ with subnet mask $255.255.0.0$. What is the
-network address and broadcast address?
+Network address and broadcast address?
 
 Network address: $172.16.0.0$. Broadcast address: $172.16.255.255$. Number of hosts:
 $2^{16} - 2
@@ -184,30 +184,30 @@ $\to$ subdomain (www).
 
 | Protocol | Port |
 | -------- | ---- |
-| HTTP     | 80   |
-| HTTPS    | 443  |
-| FTP      | 21   |
-| SMTP     | 25   |
-| DNS      | 53   |
-| SSH      | 22   |
+| HTTP | 80 |
+| HTTPS | 443 |
+| FTP | 21 |
+| SMTP | 25 |
+| DNS | 53 |
+| SSH | 22 |
 
 ## Network Hardware (OL/HL)
 
-| Device                | Function                                                           |
+| Device | Function |
 | --------------------- | ------------------------------------------------------------------ |
-| Router                | Connects different networks, routes packets                        |
-| Switch                | Connects devices within a LAN, forwards frames using MAC addresses |
-| Hub                   | Connects devices, broadcasts data to all ports (no intelligence)   |
-| Modem                 | Converts digital signals to analog and vice versa                  |
-| Wireless Access Point | Allows wireless devices to connect to a wired network              |
-| Firewall              | Filters traffic, blocks unauthorised access                        |
-| Repeater              | Regenerates signals to extend network range                        |
+| Router | Connects different networks, routes packets |
+| Switch | Connects devices within a LAN, forwards frames using MAC addresses |
+| Hub | Connects devices, broadcasts data to all ports (no intelligence) |
+| Modem | Converts digital signals to analog and vice versa |
+| Wireless Access Point | Allows wireless devices to connect to a wired network |
+| Firewall | Filters traffic, blocks unauthorised access |
+| Repeater | Regenerates signals to extend network range |
 
 **Switch vs Hub:** A switch learns MAC addresses and directs data only to the intended recipient. A
-hub broadcasts to all ports, wasting bandwidth and causing collisions.
+Hub broadcasts to all ports, wasting bandwidth and causing collisions.
 
 **Router vs Switch:** A switch connects devices within a LAN (MAC addresses). A router connects
-different networks (IP addresses).
+Different networks (IP addresses).
 
 ## Security Threats (OL/HL)
 
@@ -234,7 +234,7 @@ Manipulating people into divulging confidential information.
 - **DDoS (Distributed Denial of Service):** overwhelms a server with traffic from multiple sources.
 - **Man-in-the-middle attack:** intercepts communication between two parties.
 - **SQL injection:** inserts malicious SQL code into input fields to access or manipulate a
-  database.
+ database.
 - **Brute force attack:** systematically tries every possible password.
 
 ## Security Defences (OL/HL)
@@ -253,10 +253,10 @@ Manipulating people into divulging confidential information.
 **Symmetric encryption:** same key for encryption and decryption. Fast. Example: AES.
 
 **Asymmetric encryption:** public key for encryption, private key for decryption. Slower but more
-secure for key exchange. Example: RSA.
+Secure for key exchange. Example: RSA.
 
 **Hashing:** one-way function that produces a fixed-length output. Used for password storage and
-integrity verification. Example: SHA-256.
+Integrity verification. Example: SHA-256.
 
 ```python
 import hashlib
@@ -302,31 +302,31 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 
 ### Guided Media
 
-| Medium                | Speed     | Distance | Security            |
+| Medium | Speed | Distance | Security |
 | --------------------- | --------- | -------- | ------------------- |
-| Twisted pair (copper) | Medium    | Short    | Low (can be tapped) |
-| Fibre optic           | Very fast | Long     | High                |
-| Coaxial cable         | Medium    | Medium   | Medium              |
+| Twisted pair (copper) | Medium | Short | Low (can be tapped) |
+| Fibre optic | Very fast | Long | High |
+| Coaxial cable | Medium | Medium | Medium |
 
 ### Unguided Media
 
-| Medium        | Speed    | Distance    | Security            |
+| Medium | Speed | Distance | Security |
 | ------------- | -------- | ----------- | ------------------- |
-| Wi-Fi (radio) | Fast     | Short       | Low (interceptable) |
-| Microwave     | Fast     | Medium-Long | Medium              |
-| Satellite     | Variable | Very long   | Medium              |
+| Wi-Fi (radio) | Fast | Short | Low (interceptable) |
+| Microwave | Fast | Medium-Long | Medium |
+| Satellite | Variable | Very long | Medium |
 
 **Fibre optic vs copper:**
 
 - Fibre optic carries data as light pulses through glass fibres. Much faster, immune to
-  electromagnetic interference, and harder to tap.
+ electromagnetic interference, and harder to tap.
 - Copper carries data as electrical signals. Cheaper and easier to install, but slower and
-  susceptible to interference.
+ susceptible to interference.
 
 ### Packet Switching (HL)
 
 Data is broken into packets for transmission. Each packet contains data, source address, destination
-address, sequence number, and error checking.
+Address, sequence number, and error checking.
 
 **Advantages of packet switching:**
 
@@ -337,12 +337,12 @@ address, sequence number, and error checking.
 
 **Packet switching vs circuit switching:**
 
-| Feature        | Packet Switching        | Circuit Switching         |
+| Feature | Packet Switching | Circuit Switching |
 | -------------- | ----------------------- | ------------------------- |
-| Connection     | No dedicated connection | Dedicated connection      |
-| Resource usage | Efficient (shared)      | Wasteful (reserved)       |
-| Reliability    | Packets can reroute     | Fixed route               |
-| Example        | The Internet            | Traditional phone network |
+| Connection | No dedicated connection | Dedicated connection |
+| Resource usage | Efficient (shared) | Wasteful (reserved) |
+| Reliability | Packets can reroute | Fixed route |
+| Example | The Internet | Traditional phone network |
 
 ## Data Transmission (HL)
 
@@ -356,17 +356,17 @@ address, sequence number, and error checking.
 Throughput is the actual number of cars passing per hour.
 
 **Worked Example (HL).** A network has bandwidth 1 Gbps but actual throughput is 650 Mbps due to
-congestion. How long to transfer a 200 MB file?
+Congestion. How long to transfer a 200 MB file?
 
 $200 \times 8 / 650 = 2.46$ seconds.
 
 ### Error Detection (HL)
 
 **Checksum:** A value calculated from the data and sent with it. The receiver recalculates and
-compares.
+Compares.
 
 **Parity check:** An extra bit added to make the number of 1s even (even parity) or odd (odd
-parity).
+Parity).
 
 **Worked Example (HL).** Calculate the parity bit for 1011011 using even parity.
 
@@ -378,11 +378,11 @@ Number of 1s = 5 (odd). Parity bit = 1 (to make total even). Transmitted: 110110
 
 A firewall inspects traffic based on rules. Example rules:
 
-| Rule | Source IP      | Destination IP | Port | Action |
+| Rule | Source IP | Destination IP | Port | Action |
 | ---- | -------------- | -------------- | ---- | ------ |
-| 1    | Any            | 192.168.1.0/24 | 80   | Allow  |
-| 2    | Any            | Any            | 22   | Deny   |
-| 3    | 192.168.1.0/24 | Any            | 443  | Allow  |
+| 1 | Any | 192.168.1.0/24 | 80 | Allow |
+| 2 | Any | Any | 22 | Deny |
+| 3 | 192.168.1.0/24 | Any | 443 | Allow |
 
 ### SSL/TLS Handshake Detail (HL)
 
@@ -419,12 +419,12 @@ DHCP automatically assigns IP addresses to devices. When a device connects:
 4. **Acknowledge:** Server confirms the lease.
 
 **DHCP lease time:** IP addresses are assigned for a limited time (e.g., 24 hours). The client
-must renew the lease before it expires.
+Must renew the lease before it expires.
 
 ### FTP (File Transfer Protocol)
 
 FTP uses two connections: a control connection (port 21) for commands and a data connection (port 20)
-for file transfer.
+For file transfer.
 
 - **Active mode:** Server initiates data connection to client (can be blocked by firewalls).
 - **Passive mode:** Client initiates data connection to server (firewall-friendly).
@@ -434,37 +434,37 @@ for file transfer.
 SSH provides encrypted remote access to a server. Port 22.
 
 **Features:** Encrypted terminal sessions, file transfer (SCP/SFTP), port forwarding, key-based
-authentication.
+Authentication.
 
 ### HTTP Status Codes in Detail
 
-| Code | Meaning               | When Used                        |
+| Code | Meaning | When Used |
 | ---- | --------------------- | -------------------------------- |
-| 200  | OK                    | Successful GET or POST           |
-| 201  | Created               | Resource successfully created     |
-| 301  | Moved Permanently     | URL has changed permanently       |
-| 304  | Not Modified          | Cached version is still valid     |
-| 400  | Bad Request           | Malformed request syntax          |
-| 401  | Unauthorized          | Authentication required          |
-| 403  | Forbidden             | Authenticated but not authorised  |
-| 404  | Not Found             | Resource does not exist           |
-| 500  | Internal Server Error | Server-side failure               |
+| 200 | OK | Successful GET or POST |
+| 201 | Created | Resource successfully created |
+| 301 | Moved Permanently | URL has changed permanently |
+| 304 | Not Modified | Cached version is still valid |
+| 400 | Bad Request | Malformed request syntax |
+| 401 | Unauthorized | Authentication required |
+| 403 | Forbidden | Authenticated but not authorised |
+| 404 | Not Found | Resource does not exist |
+| 500 | Internal Server Error | Server-side failure |
 
 ## Network Security Deep Dive
 
 ### Firewall Types
 
-| Type           | Description                                              |
+| Type | Description |
 | -------------- | -------------------------------------------------------- |
-| Packet filter  | Examines source/destination IP and port                  |
-| Stateful       | Tracks connection state; allows return traffic           |
-| Proxy          | Intercepts all traffic; acts as intermediary             |
+| Packet filter | Examines source/destination IP and port |
+| Stateful | Tracks connection state; allows return traffic |
+| Proxy | Intercepts all traffic; acts as intermediary |
 | Next-gen (NGFW)| Combines traditional firewall with IPS, application awareness |
 
 ### Intrusion Detection Systems
 
 **IDS (Intrusion Detection System):** Monitors network traffic for suspicious activity and alerts
-administrators.
+Administrators.
 
 **IPS (Intrusion Prevention System):** Actively blocks traffic that matches known attack patterns.
 
@@ -472,12 +472,12 @@ administrators.
 
 **Wi-Fi encryption evolution:**
 
-| Protocol | Encryption | Vulnerability                     |
+| Protocol | Encryption | Vulnerability |
 | -------- | ---------- | ---------------------------------- |
-| WEP      | RC4        | Easily cracked (minutes)          |
-| WPA      | TKIP       | Partially vulnerable              |
-| WPA2     | AES        | KRACK attack on handshake          |
-| WPA3     | AES + SAE   | Most secure; resistant to offline attacks |
+| WEP | RC4 | cracked (minutes) |
+| WPA | TKIP | Partially vulnerable |
+| WPA2 | AES | KRACK attack on handshake |
+| WPA3 | AES + SAE | Most secure; resistant to offline attacks |
 
 ### Penetration Testing
 
@@ -494,10 +494,10 @@ A simulated attack on a system to identify vulnerabilities before malicious atta
 
 ### Fibre Optic Types
 
-| Type   | Description                           | Use Case                  |
+| Type | Description | Use Case |
 | ------ | ------------------------------------- | ------------------------- |
 | Single-mode | One path for light; long distance | Telecommunications, long runs |
-| Multi-mode | Multiple paths; shorter distance  | LANs, data centres          |
+| Multi-mode | Multiple paths; shorter distance | LANs, data centres |
 
 ### Wireless Signal Propagation
 
@@ -511,45 +511,45 @@ A simulated attack on a system to identify vulnerabilities before malicious atta
 ## Additional Practice Questions
 
 11. Explain the difference between bandwidth and throughput. Why is throughput always less than or
-    equal to bandwidth?
+ equal to bandwidth?
 
 12. Describe how a digital signature provides both authentication and integrity.
 
 13. Explain the purpose of each field in a data packet (data, source address, destination address,
-    sequence number, error checking).
+ sequence number, error checking).
 
 14. A company has 200 devices on a LAN with subnet mask 255.255.255.0. What is the network address
-    and how many host addresses are available?
+ and how many host addresses are available?
 
 15. Explain the four phases of penetration testing.
 
 16. Compare packet-filtering firewalls with stateful firewalls. Give an advantage of each.
 
 17. A user reports slow network performance. Explain how you would diagnose the problem using
-    network tools.
+ network tools.
 
 18. Explain the difference between single-mode and multi-mode fibre optic cable. When would you
-    use each?
+ use each?
 
 19. Describe the DHCP lease process. What happens when a lease expires and the client does not
-    renew?
+ renew?
 
 20. Explain how a proxy firewall works and why it provides better security than a packet-filtering
-    firewall.
+ firewall.
 
 ## Network Configuration
 
 ### Subnetting Practice
 
 **Worked Example.** A company has the network 172.16.0.0/16. They need 10 subnets. What subnet mask
-should they use?
+Should they use?
 
 $2^4 = 16$ subnets (4 bits borrowed). Subnet mask: $255.255.240.0$ (/20).
 
 Usable hosts per subnet: $2^{12} - 2 = 4094$.
 
 **Worked Example.** For the network 192.168.1.0/26, list the network address, first usable host,
-last usable host, and broadcast address.
+Last usable host, and broadcast address.
 
 Network address: 192.168.1.0. First host: 192.168.1.1. Last host: 192.168.1.62. Broadcast:
 192.168.1.63.
@@ -557,7 +557,7 @@ Network address: 192.168.1.0. First host: 192.168.1.1. Last host: 192.168.1.62. 
 ### VLAN Configuration
 
 A VLAN logically segments a physical network. Devices in different VLANs cannot communicate directly
-even if they are on the same physical switch.
+Even if they are on the same physical switch.
 
 **Benefits:**
 
@@ -569,12 +569,12 @@ even if they are on the same physical switch.
 
 ### Symmetric Encryption Algorithms
 
-| Algorithm | Key Length | Speed     | Use Case                    |
+| Algorithm | Key Length | Speed | Use Case |
 | --------- | ---------- | --------- | --------------------------- |
-| AES-128   | 128 bits   | Very fast | General purpose             |
-| AES-256   | 256 bits   | Very fast | High-security applications |
-| DES       | 56 bits    | Fast      | Obsolete (too weak)         |
-| 3DES      | 168 bits   | Slow      | Legacy systems              |
+| AES-128 | 128 bits | Very fast | General purpose |
+| AES-256 | 256 bits | Very fast | High-security applications |
+| DES | 56 bits | Fast | Obsolete (too weak) |
+| 3DES | 168 bits | Slow | Legacy systems |
 
 ### Asymmetric Encryption
 
@@ -608,12 +608,12 @@ CA, which signs the intermediate, which signs the server certificate.
 
 ### Common Issues
 
-| Symptom                   | Possible Cause                  | Diagnostic Tool |
+| Symptom | Possible Cause | Diagnostic Tool |
 | ------------------------- | ------------------------------- | --------------- |
-| No Internet access        | DNS failure, router issue       | ping, nslookup |
-| Slow network               | Congestion, hardware issue      | speed test, ping |
-| Intermittent connectivity  | Loose cable, interference       | continuous ping |
-| Cannot access specific site | DNS issue, firewall block       | nslookup, traceroute |
+| No Internet access | DNS failure, router issue | ping, nslookup |
+| Slow network | Congestion, hardware issue | speed test, ping |
+| Intermittent connectivity | Loose cable, interference | continuous ping |
+| Cannot access specific site | DNS issue, firewall block | nslookup, traceroute |
 
 ### Troubleshooting Methodology
 
@@ -630,39 +630,39 @@ CA, which signs the intermediate, which signs the server certificate.
 16. Explain the difference between AES and DES. Why is DES no longer considered secure?
 
 17. Write the steps to create a digital certificate for a web server. What is the role of the
-    certificate authority?
+ certificate authority?
 
 18. A network administrator needs to create 5 subnets from the network 10.0.0.0/24. Is this
-    possible? Explain your answer.
+ possible? Explain your answer.
 
 19. Explain the certificate chain and why browsers trust web server certificates.
 
 20. Describe the seven-step troubleshooting methodology used in network diagnostics.
 
 21. A user cannot access example.com but can access other websites. Explain the likely cause and the
-    steps to diagnose and fix the problem.
+ steps to diagnose and fix the problem.
 
 22. Compare AES-128 and AES-256. In what scenarios would AES-256 be preferred?
 
 23. Explain what a man-in-the-middle attack is and how HTTPS prevents it.
 
 24. Write a step-by-step guide for configuring a VLAN on a managed switch to separate student and
-    staff networks.
+ staff networks.
 
 ## Network Protocols Summary Table (HL)
 
-| Protocol  | Layer       | Port(s) | Purpose                          | TCP/UDP |
+| Protocol | Layer | Port(s) | Purpose | TCP/UDP |
 | --------- | ----------- | ------- | -------------------------------- | ------ |
-| HTTP      | Application | 80      | Web page transfer                | TCP    |
-| HTTPS     | Application | 443     | Secure web page transfer          | TCP    |
-| FTP       | Application | 20, 21  | File transfer                    | TCP    |
-| SSH       | Application | 22      | Secure remote access             | TCP    |
-| SMTP      | Application | 25      | Email sending                    | TCP    |
-| DNS       | Application | 53      | Domain name resolution           | UDP    |
-| DHCP      | Application | 67, 68  | IP address assignment            | UDP    |
-| POP3      | Application | 110     | Email receiving                  | TCP    |
-| IMAP      | Application | 143     | Email receiving (synchronised)    | TCP    |
-| Telnet    | Application | 23      | Remote terminal (unencrypted)    | TCP    |
+| HTTP | Application | 80 | Web page transfer | TCP |
+| HTTPS | Application | 443 | Secure web page transfer | TCP |
+| FTP | Application | 20, 21 | File transfer | TCP |
+| SSH | Application | 22 | Secure remote access | TCP |
+| SMTP | Application | 25 | Email sending | TCP |
+| DNS | Application | 53 | Domain name resolution | UDP |
+| DHCP | Application | 67, 68 | IP address assignment | UDP |
+| POP3 | Application | 110 | Email receiving | TCP |
+| IMAP | Application | 143 | Email receiving (synchronised) | TCP |
+| Telnet | Application | 23 | Remote terminal (unencrypted) | TCP |
 
 ## Network Address Translation in Practice
 
@@ -704,7 +704,7 @@ When 192.168.1.2 sends a request to a web server:
 29. Compare POP3 and IMAP. Which is better for accessing email from multiple devices?
 
 30. A school has 3 computer labs with 30 computers each. Design a network addressing scheme using
-    private IP addresses. Specify the network address, subnet mask, and range of usable IPs.
+ private IP addresses. Specify the network address, subnet mask, and range of usable IPs.
 
 ## Common Pitfalls
 
@@ -714,7 +714,7 @@ When 192.168.1.2 sends a request to a web server:
 4. **Encryption** -- symmetric uses one key; asymmetric uses a key pair.
 5. **SQL injection** -- always use parameterised queries.
 6. **Confusing switch and router** -- switch uses MAC addresses within a LAN; router uses IP
-   addresses between networks.
+ addresses between networks.
 7. **Forgetting port numbers** -- each protocol uses a standard port.
 8. **Confusing the Internet and the WWW** -- the Internet is infrastructure; the Web is a service.
 
@@ -732,7 +732,7 @@ When 192.168.1.2 sends a request to a web server:
 1. Describe the OSI model, naming all seven layers and their functions.
 2. Explain how TCP establishes a connection using the three-way handshake.
 3. A computer has IP address $172.16.5.50$ with subnet mask $255.255.0.0$. What is the network
-   address and the broadcast address?
+ address and the broadcast address?
 4. Explain the difference between symmetric and asymmetric encryption. When would you use each?
 
 5. Convert the IP address $10.0.0.1$ to its 32-bit binary representation.
@@ -740,12 +740,16 @@ When 192.168.1.2 sends a request to a web server:
 7. Describe how HTTPS establishes a secure connection using asymmetric and symmetric encryption.
 8. Explain the role of NAT in a home network. Why is it necessary?
 9. A network has a bandwidth of 100 Mbps. A 50 MB file needs to be transferred. Calculate the
-   minimum transfer time.
+ minimum transfer time.
 10. Explain the principle of least privilege and give an example of its application.
 11. Explain the difference between bandwidth and throughput. Why is throughput always less than or
-    equal to bandwidth?
+ equal to bandwidth?
 12. Describe how a digital signature provides both authentication and integrity.
 13. Explain the purpose of each field in a data packet (data, source address, destination address,
-    sequence number, error checking).
+ sequence number, error checking).
 14. A company has 200 devices on a LAN with subnet mask 255.255.255.0. What is the network address
-    and how many host addresses are available?
+ and how many host addresses are available?
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

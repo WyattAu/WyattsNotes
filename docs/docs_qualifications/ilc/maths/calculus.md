@@ -13,17 +13,17 @@ slug: calculus
 
 Calculus is divided into two main branches: **differentiation** (finding rates of change) and
 **integration** (finding areas and reversing differentiation). This topic is central to Paper 1 at
-both levels.
+Both levels.
 
 ## Differentiation
 
 
 
 <DesmosGraph
-  title="Differentiation: Tangent Lines"
-  expressions={["f(x)=x^3-3x^2+2", "f'(x)=3x^2-6x"]}
-  width={800}
-  height={500}
+ title="Differentiation: Tangent Lines"
+ expressions={["f(x)=x^3-3x^2+2", "f'(x)=3x^2-6x"]}
+ width={800}
+ height={500}
 />
 
 Adjust the parameters in the graph above to explore the relationships between variables.
@@ -31,7 +31,7 @@ Adjust the parameters in the graph above to explore the relationships between va
 ### The Derivative
 
 The derivative of a function $f(x)$ measures the instantaneous rate of change of $f$ with respect to
-$x$. It is denoted $f'(x)$, $\frac{df}{dx}$, or $\dot{x}$ in the context of time.
+$x$. It is denoted $f'(x)$$\frac{df}{dx}$Or $\dot{x}$ in the context of time.
 
 Geometrically, $f'(a)$ is the gradient of the tangent to the curve $y = f(x)$ at the point $x = a$.
 
@@ -40,7 +40,7 @@ Geometrically, $f'(a)$ is the gradient of the tangent to the curve $y = f(x)$ at
 The derivative is defined as:
 
 $$
-f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+F'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
 $$
 
 This limit, when it exists, gives the slope of the secant line through $(x, f(x))$ and
@@ -49,7 +49,7 @@ $(x+h, f(x+h))$ as the two points converge.
 **Example (HL):** Prove from first principles that $\frac{d}{dx}[x^2] = 2x$.
 
 $$
-f'(x) = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} = \lim_{h \to 0} \frac{2xh + h^2}{h} = \lim_{h \to 0}(2x + h) = 2x
+F'(x) = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} = \lim_{h \to 0} \frac{2xh + h^2}{h} = \lim_{h \to 0}(2x + h) = 2x
 $$
 
 **Example (HL):** Prove from first principles that $\frac{d}{dx}[\cos x] = -\sin x$.
@@ -57,7 +57,7 @@ $$
 Using the compound angle formula $\cos(A+B) = \cos A \cos B - \sin A \sin B$:
 
 $$
-f'(x) = \lim_{h \to 0} \frac{\cos(x+h) - \cos x}{h} = \lim_{h \to 0} \frac{\cos x \cos h - \sin x \sin h - \cos x}{h}
+F'(x) = \lim_{h \to 0} \frac{\cos(x+h) - \cos x}{h} = \lim_{h \to 0} \frac{\cos x \cos h - \sin x \sin h - \cos x}{h}
 $$
 
 $$
@@ -68,14 +68,14 @@ Using the standard limits $\lim_{h \to 0}\frac{\sin h}{h} = 1$ and
 $\lim_{h \to 0}\frac{\cos h - 1}{h} = 0$:
 
 $$
-f'(x) = \cos x \cdot 0 - \sin x \cdot 1 = -\sin x
+F'(x) = \cos x \cdot 0 - \sin x \cdot 1 = -\sin x
 $$
 
 **Example (HL):** Prove from first principles that $\frac{d}{dx}[\sqrt{x}] = \frac{1}{2\sqrt{x}}$
-for $x > 0$.
+For $x > 0$.
 
 $$
-f'(x) = \lim_{h \to 0} \frac{\sqrt{x+h} - \sqrt{x}}{h}
+F'(x) = \lim_{h \to 0} \frac{\sqrt{x+h} - \sqrt{x}}{h}
 $$
 
 Rationalise the numerator by multiplying top and bottom by $\sqrt{x+h} + \sqrt{x}$:
@@ -91,7 +91,7 @@ We wish to prove $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$.
 Let $h(x) = f(x)g(x)$. Then:
 
 $$
-h'(x) = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}
+H'(x) = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}
 $$
 
 The trick is to add and subtract $f(x+h)g(x)$:
@@ -104,7 +104,7 @@ $$
 = \lim_{h \to 0} \left[ f(x+h) \cdot \frac{g(x+h) - g(x)}{h} + g(x) \cdot \frac{f(x+h) - f(x)}{h} \right]
 $$
 
-Since $f$ is differentiable (and hence continuous), $\lim_{h \to 0} f(x+h) = f(x)$, giving:
+Since $f$ is differentiable (and hence continuous), $\lim_{h \to 0} f(x+h) = f(x)$Giving:
 
 $$
 = f(x)g'(x) + g(x)f'(x)
@@ -120,13 +120,13 @@ $$
 
 | Function $f(x)$ | Derivative $f'(x)$ |
 | --------------- | ------------------ |
-| $c$ (constant)  | $0$                |
-| $x^n$           | $nx^{n-1}$         |
-| $e^x$           | $e^x$              |
-| $\ln x$         | $\frac{1}{x}$      |
-| $\sin x$        | $\cos x$           |
-| $\cos x$        | $-\sin x$          |
-| $\tan x$        | $\sec^2 x$         |
+| $c$ (constant) | $0$ |
+| $x^n$ | $nx^{n-1}$ |
+| $e^x$ | $e^x$ |
+| $\ln x$ | $\frac{1}{x}$ |
+| $\sin x$ | $\cos x$ |
+| $\cos x$ | $-\sin x$ |
+| $\tan x$ | $\sec^2 x$ |
 
 ### Rules of Differentiation (OL/HL)
 
@@ -206,7 +206,7 @@ $$
 
 ### Derivative of $a^x$ (HL)
 
-For $a > 0$, write $a^x = e^{x \ln a}$. Then:
+For $a > 0$Write $a^x = e^{x \ln a}$. Then:
 
 $$
 \frac{d}{dx}[a^x] = e^{x \ln a} \cdot \ln a = a^x \ln a
@@ -214,8 +214,8 @@ $$
 
 ### Implicit Differentiation (HL)
 
-When a function is not given explicitly as $y = f(x)$, differentiate both sides with respect to $x$,
-treating $y$ as a function of $x$.
+When a function is not given explicitly as $y = f(x)$Differentiate both sides with respect to $x$
+Treating $y$ as a function of $x$.
 
 **Example:** Find $\frac{dy}{dx}$ when $x^2 + y^2 = 25$.
 
@@ -244,11 +244,11 @@ $$
 Differentiate both sides with respect to $x$:
 
 $$
-e^{xy}\left(y + x\frac{dy}{dx}\right) + \frac{dy}{dx} = 2x
+E^{xy}\left(y + x\frac{dy}{dx}\right) + \frac{dy}{dx} = 2x
 $$
 
 $$
-e^{xy} \cdot y + e^{xy} \cdot x \frac{dy}{dx} + \frac{dy}{dx} = 2x
+E^{xy} \cdot y + e^{xy} \cdot x \frac{dy}{dx} + \frac{dy}{dx} = 2x
 $$
 
 $$
@@ -262,20 +262,20 @@ $$
 ### Higher Derivatives (HL)
 
 The second derivative $f''(x) = \frac{d^2y}{dx^2}$ is the derivative of $f'(x)$. Higher derivatives
-are defined recursively.
+Are defined recursively.
 
 **Example:** Find $f''(x)$ when $f(x) = x^3 \ln x$.
 
 First derivative (product rule):
 
 $$
-f'(x) = 3x^2 \ln x + x^3 \cdot \frac{1}{x} = 3x^2 \ln x + x^2
+F'(x) = 3x^2 \ln x + x^3 \cdot \frac{1}{x} = 3x^2 \ln x + x^2
 $$
 
 Second derivative:
 
 $$
-f''(x) = 6x \ln x + 3x^2 \cdot \frac{1}{x} + 2x = 6x \ln x + 3x + 2x = 6x \ln x + 5x
+F''(x) = 6x \ln x + 3x^2 \cdot \frac{1}{x} + 2x = 6x \ln x + 3x + 2x = 6x \ln x + 5x
 $$
 
 ## Applications of Differentiation
@@ -284,22 +284,22 @@ $$
 
 Stationary points occur where $f'(x) = 0$. Use the second derivative to classify:
 
-| Condition                 | Type              |
+| Condition | Type |
 | ------------------------- | ----------------- |
-| $f'(x) = 0$, $f''(x) > 0$ | Local minimum     |
-| $f'(x) = 0$, $f''(x) < 0$ | Local maximum     |
-| $f'(x) = 0$, $f''(x) = 0$ | Test inconclusive |
+| $f'(x) = 0$$f''(x) > 0$ | Local minimum |
+| $f'(x) = 0$$f''(x) < 0$ | Local maximum |
+| $f'(x) = 0$$f''(x) = 0$ | Test inconclusive |
 
 **Example (OL):** Find and classify the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$.
 
 $$
-f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3) = 0
+F'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3) = 0
 $$
 
 $x = 1$ or $x = 3$.
 
 $$
-f''(x) = 6x - 12
+F''(x) = 6x - 12
 $$
 
 At $x = 1$: $f''(1) = -6 < 0$ -- local maximum. $f(1) = 1 - 6 + 9 + 1 = 5$.
@@ -310,40 +310,40 @@ At $x = 3$: $f''(3) = 6 > 0$ -- local minimum. $f(3) = 27 - 54 + 27 + 1 = 1$.
 $f(x) = x^4$.
 
 $$
-f'(x) = 4x^3 = 0 \implies x = 0
+F'(x) = 4x^3 = 0 \implies x = 0
 $$
 
 $$
-f''(x) = 12x^2, \quad f''(0) = 0
+F''(x) = 12x^2, \quad f''(0) = 0
 $$
 
-The second derivative test is inconclusive. Use the first derivative test: for $x < 0$, $f'(x) < 0$
-and for $x > 0$, $f'(x) > 0$, so $x = 0$ is a local minimum.
+The second derivative test is inconclusive. Use the first derivative test: for $x < 0$$f'(x) < 0$
+And for $x > 0$$f'(x) > 0$So $x = 0$ is a local minimum.
 
 **Example (HL) -- Point of inflexion:** Consider $f(x) = x^3$.
 
 $$
-f'(x) = 3x^2 = 0 \implies x = 0
+F'(x) = 3x^2 = 0 \implies x = 0
 $$
 
 $$
-f''(x) = 6x, \quad f''(0) = 0
+F''(x) = 6x, \quad f''(0) = 0
 $$
 
 For $x < 0$: $f''(x) < 0$ (concave down). For $x > 0$: $f''(x) > 0$ (concave up). So $x = 0$ is a
-point of inflexion with a horizontal tangent (a "saddle point").
+Point of inflexion with a horizontal tangent (a "saddle point").
 
 ### The Mean Value Theorem (HL)
 
-If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$
-such that:
+If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$Then there exists $c \in (a, b)$
+Such that:
 
 $$
-f'(c) = \frac{f(b) - f(a)}{b - a}
+F'(c) = \frac{f(b) - f(a)}{b - a}
 $$
 
 **Intuition:** The MVT guarantees that at some point in the interval, the instantaneous rate of
-change equals the average rate of change. This is the "mean" in "Mean Value Theorem."
+Change equals the average rate of change. This is the "mean" in "Mean Value Theorem."
 
 **Corollary:** If $f'(x) = 0$ for all $x$ in an interval, then $f$ is constant on that interval.
 This justifies the $+C$ in indefinite integration.
@@ -354,21 +354,21 @@ $$
 \frac{f(3) - f(1)}{3 - 1} = \frac{9 - 1}{2} = 4
 $$
 
-We need $f'(c) = 2c = 4$, so $c = 2$. Since $1 < 2 < 3$, the MVT is verified.
+We need $f'(c) = 2c = 4$So $c = 2$. Since $1 < 2 < 3$The MVT is verified.
 
 ### Rates of Change (OL/HL)
 
 **Example (OL):** The radius of a circle is increasing at $3\mathrm{ cm/s{}$. Find the rate of increase
-of the area when $r = 5\mathrm{ cm{}$.
+Of the area when $r = 5\mathrm{ cm{}$.
 
 $$
 A = \pi r^2 \implies \frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi(5)(3) = 30\pi \mathrm{ cm{}^2/\mathrm{s{}
 $$
 
 **Example (HL):** A conical tank with height 10 m and base radius 5 m is being filled with water at
-a rate of $3\mathrm{ m{}^3/\mathrm{min{}$. How fast is the water level rising when the water is 4 m deep?
+A rate of $3\mathrm{ m{}^3/\mathrm{min{}$. How fast is the water level rising when the water is 4 m deep?
 
-The tank has similar cross-sections, so $\frac{r}{h} = \frac{5}{10} = \frac{1}{2}$, giving
+The tank has similar cross-sections, so $\frac{r}{h} = \frac{5}{10} = \frac{1}{2}$Giving
 $r = h/2$.
 
 $$
@@ -391,7 +391,7 @@ The **normal** at a point has gradient $-\frac{1}{f'(a)}$ (the negative reciproc
 
 **Example (HL):** Find the equation of the tangent to $y = x^3 - 2x$ at $x = 1$.
 
-$y = 1 - 2 = -1$, $\frac{dy}{dx} = 3x^2 - 2 = 1$ at $x = 1$.
+$y = 1 - 2 = -1$$\frac{dy}{dx} = 3x^2 - 2 = 1$ at $x = 1$.
 
 Equation: $y - (-1) = 1(x - 1) \implies y = x - 2$.
 
@@ -401,7 +401,7 @@ Equation of normal: $y + 1 = -(x - 1) \implies y = -x$.
 
 **Example (HL):** Find the equation of the tangent to $y = e^x$ at the point where $y = e$.
 
-When $y = e$: $e^x = e$, so $x = 1$. The gradient is $\frac{dy}{dx} = e^x = e$ at $x = 1$.
+When $y = e$: $e^x = e$So $x = 1$. The gradient is $\frac{dy}{dx} = e^x = e$ at $x = 1$.
 
 Equation: $y - e = e(x - 1) \implies y = ex$.
 
@@ -411,11 +411,11 @@ $x = 1$ is $y = ex$.
 ### Optimisation (HL)
 
 **Example (HL):** A rectangular box with a square base has a surface area of $150\mathrm{ cm{}^2$. Find
-the dimensions that maximise the volume.
+The dimensions that maximise the volume.
 
 Let the base have side $x$ and the height be $h$. Then:
 
-Surface area: $x^2 + 4xh = 150$, so $h = \frac{150 - x^2}{4x}$.
+Surface area: $x^2 + 4xh = 150$So $h = \frac{150 - x^2}{4x}$.
 
 Volume:
 $V = x^2 h = x^2 \cdot \frac{150 - x^2}{4x} = \frac{x(150 - x^2)}{4} = \frac{150x - x^3}{4}$.
@@ -428,10 +428,10 @@ $$
 \frac{d^2V}{dx^2} = \frac{-6x}{4} = \frac{-3x}{2}
 $$
 
-At $x = 5\sqrt{2}$: $\frac{d^2V}{dx^2} = \frac{-15\sqrt{2}}{2} < 0$, confirming a maximum.
+At $x = 5\sqrt{2}$: $\frac{d^2V}{dx^2} = \frac{-15\sqrt{2}}{2} < 0$Confirming a maximum.
 
 $$
-h = \frac{150 - 50}{4 \cdot 5\sqrt{2}} = \frac{100}{20\sqrt{2}} = \frac{5}{\sqrt{2}} = \frac{5\sqrt{2}}{2}
+H = \frac{150 - 50}{4 \cdot 5\sqrt{2}} = \frac{100}{20\sqrt{2}} = \frac{5}{\sqrt{2}} = \frac{5\sqrt{2}}{2}
 $$
 
 The optimal box has base $5\sqrt{2} \times 5\sqrt{2}$ and height $\frac{5\sqrt{2}}{2}$.
@@ -446,18 +446,18 @@ $$
 
 ### Standard Integrals (OL/HL)
 
-| Function      | Integral                  |
+| Function | Integral |
 | ------------- | ------------------------- | --- | ---- |
-| $x^n$         | $\frac{x^{n+1}}{n+1} + C$ |
-| $e^x$         | $e^x + C$                 |
+| $x^n$ | $\frac{x^{n+1}}{n+1} + C$ |
+| $e^x$ | $e^x + C$ |
 | $\frac{1}{x}$ | $\ln                      | x   | + C$ |
-| $\cos x$      | $\sin x + C$              |
-| $\sin x$      | $-\cos x + C$             |
-| $\sec^2 x$    | $\tan x + C$              |
+| $\cos x$ | $\sin x + C$ |
+| $\sin x$ | $-\cos x + C$ |
+| $\sec^2 x$ | $\tan x + C$ |
 
 :::note
 The absolute value in $\int \frac{1}{x}\,dx = \ln|x| + C$ is essential. It accounts for the
-fact that $\frac{d}{dx}[\ln x] = \frac{1}{x}$ for $x > 0$ and
+Fact that $\frac{d}{dx}[\ln x] = \frac{1}{x}$ for $x > 0$ and
 $\frac{d}{dx}[\ln(-x)] = \frac{-1}{-x} = \frac{1}{x}$ for $x < 0$.
 :::
 
@@ -467,7 +467,7 @@ $$
 \int_a^b f(x) \, dx = F(b) - F(a)
 $$
 
-**The Fundamental Theorem of Calculus.** If $F'(x) = f(x)$, then $\int_a^b f(x)\,dx = F(b) - F(a)$.
+**The Fundamental Theorem of Calculus.** If $F'(x) = f(x)$Then $\int_a^b f(x)\,dx = F(b) - F(a)$.
 This connects differentiation and integration: they are inverse operations.
 
 **Example (OL):** Evaluate $\int_1^3 (2x + 1) \, dx$.
@@ -485,11 +485,11 @@ A = \int_a^b |f(x)| \, dx
 $$
 
 :::warning
-If the curve crosses the $x$-axis between $a$ and $b$, split the integral and take the
-absolute value of each part. The integral itself gives the signed area.
+If the curve crosses the $x$-axis between $a$ and $b$Split the integral and take the
+Absolute value of each part. The integral itself gives the signed area.
 :::
 
-**Example (OL):** Find the area enclosed by $y = x^2$, the $x$-axis, $x = 0$, and $x = 3$.
+**Example (OL):** Find the area enclosed by $y = x^2$The $x$-axis, $x = 0$And $x = 3$.
 
 $$
 A = \int_0^3 x^2 \, dx = \left[\frac{x^3}{3}\right]_0^3 = \frac{27}{3} = 9 \mathrm{ square units{}
@@ -497,7 +497,7 @@ $$
 
 **Example (OL):** Find the total area between $y = x^2 - 4$ and the $x$-axis.
 
-The curve crosses the $x$-axis when $x^2 = 4$, i.e. $x = -2$ and $x = 2$.
+The curve crosses the $x$-axis when $x^2 = 4$I.e. $x = -2$ and $x = 2$.
 
 $$
 A = \int_{-2}^{2} |x^2 - 4| \, dx = \int_{-2}^{2} (4 - x^2) \, dx = \left[4x - \frac{x^3}{3}\right]_{-2}^{2} = \left(8 - \frac{8}{3}\right) - \left(-8 + \frac{8}{3}\right) = \frac{32}{3}
@@ -549,7 +549,7 @@ $$
 
 **Example:** Evaluate $\int 2x\sqrt{x^2 + 1} \, dx$.
 
-Let $u = x^2 + 1$, then $du = 2x \, dx$.
+Let $u = x^2 + 1$Then $du = 2x \, dx$.
 
 $$
 \int \sqrt{u} \, du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2 + 1)^{3/2} + C
@@ -557,7 +557,7 @@ $$
 
 **Example (HL):** Evaluate $\int_0^1 \frac{x}{x^2 + 1} \, dx$.
 
-Let $u = x^2 + 1$, then $du = 2x\,dx$, so $x\,dx = \frac{du}{2}$.
+Let $u = x^2 + 1$Then $du = 2x\,dx$So $x\,dx = \frac{du}{2}$.
 
 When $x = 0$: $u = 1$. When $x = 1$: $u = 2$.
 
@@ -566,7 +566,7 @@ $$
 $$
 
 **Key point:** When using substitution with definite integrals, either change the limits of
-integration (as above) or substitute back to $x$ before evaluating.
+Integration (as above) or substitute back to $x$ before evaluating.
 
 ### Integration by Parts (HL)
 
@@ -578,7 +578,7 @@ Use **LIATE** (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential)
 
 **Example:** Evaluate $\int x e^x \, dx$.
 
-Let $u = x$, $dv = e^x \, dx$. Then $du = dx$, $v = e^x$.
+Let $u = x$$dv = e^x \, dx$. Then $du = dx$$v = e^x$.
 
 $$
 \int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C = e^x(x - 1) + C
@@ -586,7 +586,7 @@ $$
 
 **Example:** Evaluate $\int x^2 \cos x \, dx$.
 
-Let $u = x^2$, $dv = \cos x \, dx$. Then $du = 2x \, dx$, $v = \sin x$.
+Let $u = x^2$$dv = \cos x \, dx$. Then $du = 2x \, dx$$v = \sin x$.
 
 $$
 \int x^2 \cos x \, dx = x^2 \sin x - \int 2x \sin x \, dx
@@ -594,7 +594,7 @@ $$
 
 Apply integration by parts again for $\int x \sin x \, dx$:
 
-Let $u = x$, $dv = \sin x \, dx$. Then $du = dx$, $v = -\cos x$.
+Let $u = x$$dv = \sin x \, dx$. Then $du = dx$$v = -\cos x$.
 
 $$
 \int x \sin x \, dx = -x\cos x + \int \cos x \, dx = -x\cos x + \sin x + C
@@ -607,15 +607,15 @@ $$
 $$
 
 **Example (HL):** Evaluate $\int e^x \sin x \, dx$ using the "cyclic" integration by parts
-technique.
+Technique.
 
-Let $u = \sin x$, $dv = e^x\,dx$. Then $du = \cos x\,dx$, $v = e^x$.
+Let $u = \sin x$$dv = e^x\,dx$. Then $du = \cos x\,dx$$v = e^x$.
 
 $$
 I = \int e^x \sin x\,dx = e^x \sin x - \int e^x \cos x\,dx
 $$
 
-Apply integration by parts to $\int e^x \cos x\,dx$: let $u = \cos x$, $dv = e^x\,dx$.
+Apply integration by parts to $\int e^x \cos x\,dx$: let $u = \cos x$$dv = e^x\,dx$.
 
 $$
 \int e^x \cos x\,dx = e^x \cos x + \int e^x \sin x\,dx = e^x \cos x + I
@@ -649,7 +649,7 @@ $$
 \int \sec x \, dx = \ln|\sec x + \tan x| + C
 $$
 
-**Derivation of $\int \tan x\,dx$.** Write $\tan x = \frac{\sin x}{\cos x}$ and let $u = \cos x$,
+**Derivation of $\int \tan x\,dx$.** Write $\tan x = \frac{\sin x}{\cos x}$ and let $u = \cos x$
 $du = -\sin x\,dx$:
 
 $$
@@ -680,7 +680,7 @@ V = \pi \int_0^4 x \, dx = \pi\left[\frac{x^2}{2}\right]_0^4 = 8\pi
 $$
 
 **Example (HL):** Find the volume generated by rotating $y = \sin x$ about the $x$-axis from $x = 0$
-to $x = \pi$.
+To $x = \pi$.
 
 $$
 V = \pi \int_0^\pi \sin^2 x\,dx = \pi\left[\frac{x}{2} - \frac{\sin 2x}{4}\right]_0^\pi = \pi\left(\frac{\pi}{2} - 0\right) = \frac{\pi^2}{2}
@@ -696,16 +696,16 @@ $$
 \frac{1}{g(y)} \, dy = f(x) \, dx
 $$
 
-**Example:** Solve $\frac{dy}{dx} = \frac{x}{y}$, given $y = 2$ when $x = 0$.
+**Example:** Solve $\frac{dy}{dx} = \frac{x}{y}$Given $y = 2$ when $x = 0$.
 
 $$
-y \, dy = x \, dx \implies \frac{y^2}{2} = \frac{x^2}{2} + C
+Y \, dy = x \, dx \implies \frac{y^2}{2} = \frac{x^2}{2} + C
 $$
 
 Using $y = 2, x = 0$: $2 = C$.
 
 $$
-y^2 = x^2 + 4 \implies y = \sqrt{x^2 + 4}
+Y^2 = x^2 + 4 \implies y = \sqrt{x^2 + 4}
 $$
 
 (We take the positive root since $y = 2 > 0$ when $x = 0$.)
@@ -731,9 +731,9 @@ $$
 $$
 
 **Example:** A bacteria culture doubles every 3 hours. If initially there are 1000 bacteria, when
-will there be 10000?
+Will there be 10000?
 
-Doubling time $T_d = 3$, so $k = \frac{\ln 2}{3}$.
+Doubling time $T_d = 3$So $k = \frac{\ln 2}{3}$.
 
 $10000 = 1000 e^{(\ln 2/3)t}$
 
@@ -741,20 +741,20 @@ $10 = e^{(\ln 2/3)t}$
 
 $t = \frac{3 \ln 10}{\ln 2} \approx 9.97$ hours.
 
-**Half-life proof.** For exponential decay $y = y_0 e^{-kt}$, the half-life $t_{1/2}$ satisfies
-$y_0/2 = y_0 e^{-kt_{1/2}}$, so $e^{-kt_{1/2}} = 1/2$, giving $t_{1/2} = \frac{\ln 2}{k}$.
+**Half-life proof.** For exponential decay $y = y_0 e^{-kt}$The half-life $t_{1/2}$ satisfies
+$y_0/2 = y_0 e^{-kt_{1/2}}$So $e^{-kt_{1/2}} = 1/2$Giving $t_{1/2} = \frac{\ln 2}{k}$.
 
 ### Applications: Connected Rates of Change (HL)
 
 **Example:** Oil is leaking from a tank at a rate proportional to the square root of the volume
-remaining. If $V = 100$ litres initially and the rate is $2$ L/min initially, find $V$ after 9
-minutes.
+Remaining. If $V = 100$ litres initially and the rate is $2$ L/min initially, find $V$ after 9
+Minutes.
 
 $$
 \frac{dV}{dt} = -k\sqrt{V}
 $$
 
-At $t = 0$: $-2 = -k\sqrt{100} = -10k$, so $k = 0.2$.
+At $t = 0$: $-2 = -k\sqrt{100} = -10k$So $k = 0.2$.
 
 Separate: $\frac{dV}{\sqrt{V}} = -0.2\, dt$
 
@@ -781,23 +781,23 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 ## Common Pitfalls
 
 1. **Forgetting the $+C$** in indefinite integrals. This is equivalent to losing the constant of
-   integration and makes it impossible to apply initial conditions.
+ integration and makes it impossible to apply initial conditions.
 2. **Chain rule errors** -- always multiply by the derivative of the inner function.
 3. **Sign errors** with $\sin x$ and $\cos x$ derivatives/integrals. Remember:
-   $\int \sin x\,dx = -\cos x$ (the integral has a negative sign).
+ $\int \sin x\,dx = -\cos x$ (the integral has a negative sign).
 4. **Not splitting integrals** when a curve crosses the $x$-axis. Use the absolute value.
 5. **Integration by parts:** choosing the wrong $u$ and $dv$. Apply LIATE.
 6. **Limits in definite integrals** -- substitute the upper limit first, then subtract the lower
-   limit result.
+ limit result.
 7. **Forgetting to change limits** when using substitution in a definite integral.
 8. **Confusing $\frac{d}{dx}[\ln x] = \frac{1}{x}$ with $\int \frac{1}{x}\,dx = \ln|x|$** -- the
-   absolute value in the integral is essential.
-9. **Cyclic integration by parts** -- when integrating $e^x \sin x$ or $e^x \cos x$, the integral
-   reappears. Move it to one side and divide by 2. Do not loop forever.
-10. **Stationary point classification** -- when $f''(x) = 0$, the second derivative test is
-    inconclusive. Use the first derivative test instead.
+ absolute value in the integral is essential.
+9. **Cyclic integration by parts** -- when integrating $e^x \sin x$ or $e^x \cos x$The integral
+ reappears. Move it to one side and divide by 2. Do not loop forever.
+10. **Stationary point classification** -- when $f''(x) = 0$The second derivative test is
+ inconclusive. Use the first derivative test instead.
 11. **Domain issues with implicit differentiation** -- when finding $\frac{dy}{dx}$ implicitly,
-    always check that the point lies on the curve before substituting.
+ always check that the point lies on the curve before substituting.
 
 ## Practice Questions
 
@@ -811,7 +811,7 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 6. Find the equation of the normal to $y = x^2 + 1$ at $x = 1$.
 7. Evaluate $\int \frac{3}{x}\,dx$ and hence evaluate $\int_1^4 \frac{3}{x}\,dx$.
 8. The radius of a sphere is increasing at $2\mathrm{ cm/s{}$. Find the rate of increase of the volume
-   when $r = 5\mathrm{ cm{}$.
+ when $r = 5\mathrm{ cm{}$.
 
 ### Higher Level
 
@@ -828,7 +828,15 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 11. Evaluate $\int e^x \cos x\,dx$ using integration by parts.
 12. Find $\frac{dy}{dx}$ when $e^{xy} + y = x^2$ and evaluate it at $(1, 0)$.
 13. A cylindrical can is to hold $500\mathrm{ cm{}^3$. Find the dimensions that minimise the surface
-    area.
+ area.
 14. Prove the product rule from first principles.
 15. Find the volume generated by rotating $y = \frac{1}{x}$ about the $x$-axis from $x = 1$ to
-    $x = e$.
+ $x = e$.
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

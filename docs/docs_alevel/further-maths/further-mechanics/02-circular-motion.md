@@ -13,21 +13,21 @@ sidebar_position: 2
 ## Circular Motion
 
 Circular motion in further mathematics extends the basic treatment to include banked tracks, conical
-pendulums, vertical circles with energy methods, and problems where the circular path constraints
-determine unknown forces.
+Pendulums, vertical circles with energy methods, and problems where the circular path constraints
+Determine unknown forces.
 
 ### Board Coverage
 
-| Board      | Paper   | Notes                                       |
+| Board | Paper | Notes |
 | ---------- | ------- | ------------------------------------------- |
-| AQA        | Paper 2 | Limited coverage; horizontal circles mainly |
-| Edexcel    | M2      | Full coverage including vertical circles    |
-| OCR (A)    | Paper 2 | Horizontal and vertical circles             |
-| CIE (9231) | M2      | Full coverage including vertical circles    |
+| AQA | Paper 2 | Limited coverage; horizontal circles mainly |
+| Edexcel | M2 | Full coverage including vertical circles |
+| OCR (A) | Paper 2 | Horizontal and vertical circles |
+| CIE (9231) | M2 | Full coverage including vertical circles |
 
 :::info Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
-include "centripetal force" on a free body diagram. :::
+Include "centripetal force" on a free body diagram. :::
 
 <hr />
 
@@ -36,7 +36,7 @@ include "centripetal force" on a free body diagram. :::
 ### 1.1 Definitions
 
 **Definition.** The **angular displacement** $\theta$ is the angle swept by a radius vector,
-measured in radians.
+Measured in radians.
 
 **Definition.** The **angular velocity** $\omega$ is the rate of change of angular displacement:
 
@@ -87,7 +87,7 @@ $$\mathbf{a}(t) = \frac◆LB◆d\mathbf{v}◆RB◆◆LB◆dt◆RB◆ = -r\omega^
 
 $$\boxed{\mathbf{a} = -\omega^2 r\,\hat{\mathbf{r}}}$$
 
-Magnitude: $a = \omega^2 r = \dfrac{v^2}{r}$, directed radially inward. $\blacksquare$
+Magnitude: $a = \omega^2 r = \dfrac{v^2}{r}$Directed radially inward. $\blacksquare$
 
 ### 2.1 Centripetal force
 
@@ -101,7 +101,7 @@ $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 
 ### 3.1 Conical pendulum
 
-A mass $m$ on a string of length $L$ moves in a horizontal circle of radius $r = L\sin\alpha$, where
+A mass $m$ on a string of length $L$ moves in a horizontal circle of radius $r = L\sin\alpha$Where
 $\alpha$ is the angle the string makes with the vertical.
 
 **Vertical equilibrium:** $T\cos\alpha = mg$ ... (i)
@@ -132,13 +132,13 @@ $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
 $$\boxed{v_{\mathrm{optimum}} = \sqrt◆LB◆rg\tan\theta◆RB◆}$$
 
-At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$, friction acts down the
-slope. If $v < v_{\mathrm{opt}}$, friction acts up the slope.
+At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$Friction acts down the
+Slope. If $v < v_{\mathrm{opt}}$Friction acts up the slope.
 
 ### 3.3 Motion on the inside of a hollow sphere
 
 A particle moves in a horizontal circle on the smooth inner surface of a sphere of radius $r$ at
-height $h$ below the centre.
+Height $h$ below the centre.
 
 The radius of the circle is $a = \sqrt{r^2 - h^2}$.
 
@@ -156,7 +156,7 @@ $$\frac{v^2}{a} = \frac◆LB◆R\sin\phi◆RB◆◆LB◆m◆RB◆ = \frac◆LB�
 ### 4.1 General equations
 
 Consider a mass $m$ on a string of length $r$ moving in a vertical circle. At angle $\theta$ from
-the downward vertical:
+The downward vertical:
 
 **Along the string (towards centre):** $T - mg\cos\theta = \dfrac{mv^2}{r}$
 
@@ -186,7 +186,7 @@ Using conservation of mechanical energy between two points on a vertical circle:
 
 $$\frac{1}{2}mv_1^2 + mgh_1 = \frac{1}{2}mv_2^2 + mgh_2$$
 
-where $h$ is the height above a reference level.
+Where $h$ is the height above a reference level.
 
 **Between top and bottom** (height difference $2r$):
 
@@ -204,7 +204,7 @@ Using energy conservation, the speed at angle $\theta$ from the bottom is:
 
 $$\frac{1}{2}mv^2 = \frac{1}{2}mv_0^2 - mgr(1-\cos\theta)$$
 
-where $v_0$ is the speed at the bottom.
+Where $v_0$ is the speed at the bottom.
 
 $$v^2 = v_0^2 - 2gr(1-\cos\theta)$$
 
@@ -217,7 +217,7 @@ $$T = \frac{mv_0^2}{r} - 2mg + 2mg\cos\theta + mg\cos\theta = \frac{mv_0^2}{r} -
 ### 4.5 Particle on the outside of a sphere
 
 A particle slides on the smooth outer surface of a sphere of radius $r$. It leaves the surface when
-the normal reaction $R = 0$.
+The normal reaction $R = 0$.
 
 At angle $\theta$ from the top: $R + mg\cos\theta = \dfrac{mv^2}{r}$.
 
@@ -289,7 +289,7 @@ $\mathbf{v}(t) = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\ma
 
 $\mathbf{a}(t) = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$.
 
-$|\mathbf{a}| = \omega^2 r = \dfrac{v^2}{r}$, directed radially inward. $\blacksquare$
+$|\mathbf{a}| = \omega^2 r = \dfrac{v^2}{r}$Directed radially inward. $\blacksquare$
 
 **If you get this wrong, revise:**
 [Proof from differentiation](#proof-from-differentiation-of-position-vector) — Section 2.
@@ -361,7 +361,7 @@ A particle starts from rest at the top of a smooth sphere of radius $1.5\,\mathr
 
 <details>
 <summary>Solution 6</summary>
-The particle leaves when $R = 0$, which occurs at $\theta = \arccos(2/3) \approx 48.2^\circ$ from the top.
+The particle leaves when $R = 0$Which occurs at $\theta = \arccos(2/3) \approx 48.2^\circ$ from the top.
 
 At this point: $\dfrac{1}{2}mv^2 = mgr(1-\cos\theta) = mg(1.5)(1/3) = 0.5mg$.
 
@@ -381,7 +381,7 @@ A car of mass $1200\,\mathrm{kg}$ travels at $18\,\mathrm{m s}^{-1}$ around a ba
 <summary>Solution 7</summary>
 $v_{\mathrm{opt}} = \sqrt◆LB◆50 \times 9.8 \times \tan 25°◆RB◆ = \sqrt◆LB◆50 \times 9.8 \times 0.4663◆RB◆ = \sqrt{228.5} \approx 15.1\,\mathrm{m s}^{-1}$.
 
-Since $18 > 15.1$, the car is going too fast, so friction acts **down** the slope.
+Since $18 > 15.1$The car is going too fast, so friction acts **down** the slope.
 
 $N\cos 25° - F\sin 25° = 1200 \times 9.8 = 11760$ ... (i)
 
@@ -453,12 +453,12 @@ Energy: $\dfrac{1}{2}(0.1)v^2 = \dfrac{1}{2}(0.1)(16) - 0.1(9.8)(0.5) = 0.8 - 0.
 $v = \sqrt{6.2} \approx 2.49\,\mathrm{m s}^{-1}$.
 
 At the midpoint (horizontal), the reaction $R$ acts horizontally (towards the centre) since the
-weight acts vertically:
+Weight acts vertically:
 
 $R = \dfrac{mv^2}{r} = \dfrac◆LB◆0.1 \times 6.2◆RB◆◆LB◆0.5◆RB◆ = 1.24\,\mathrm{N}$.
 
 Note: the weight is perpendicular to the radius at this point, so it does not contribute to the
-centripetal force.
+Centripetal force.
 
 **If you get this wrong, revise:** [Motion in Vertical Circles](#4-motion-in-vertical-circles) —
 Section 4.
@@ -472,10 +472,10 @@ Section 4.
 ### 6.1 Speed at any point on a vertical circle
 
 Consider a particle of mass $m$ on a string of length $r$ moving in a vertical circle. Let $v_0$ be
-the speed at the lowest point (the reference level for energy).
+The speed at the lowest point (the reference level for energy).
 
 At angle $\theta$ measured from the **upward vertical** (so the top is $\theta = 0$ and the bottom
-is $\theta = \pi$), the height above the lowest point is:
+Is $\theta = \pi$), the height above the lowest point is:
 
 $$h = r + r\cos\theta = r(1 + \cos\theta)$$
 
@@ -488,7 +488,7 @@ $$\boxed{v^2 = v_0^2 - 2gr(1 + \cos\theta)}$$
 ### 6.2 Tension at any point
 
 At angle $\theta$ from the upward vertical, the radial direction (towards the centre) has component
-of weight $mg\cos\theta$ pointing **towards** the centre:
+Of weight $mg\cos\theta$ pointing **towards** the centre:
 
 $$T + mg\cos\theta = \frac{mv^2}{r}$$
 
@@ -500,11 +500,11 @@ $$\boxed{T = \frac{mv_0^2}{r} - 2mg - 3mg\cos\theta}$$
 
 ### 6.3 Verification at special points
 
-At the top ($\theta = 0$, $\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
+At the top ($\theta = 0$$\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
 
-At the bottom ($\theta = \pi$, $\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
+At the bottom ($\theta = \pi$$\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
 
-At the midpoint ($\theta = \pi/2$, $\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
+At the midpoint ($\theta = \pi/2$$\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
 
 ### 6.4 Complete derivation of $\sqrt{5gr}$
 
@@ -514,9 +514,9 @@ For a complete circle, we need $T \geq 0$ everywhere. The minimum tension occurs
 $$\frac{mv_0^2}{r} - 5mg \geq 0 \implies v_0^2 \geq 5gr \implies \boxed{v_0 = \sqrt{5gr}}$$
 
 At this speed, $T_{\mathrm{top}} = 0$ and the weight alone provides the centripetal acceleration at
-the top.
+The top.
 
-The speed at the top is: $v_{\mathrm{top}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$, confirming
+The speed at the top is: $v_{\mathrm{top}}^2 = v_0^2 - 2gr(2) = 5gr - 4gr = gr$Confirming
 $v_{\mathrm{top}} = \sqrt{gr}$.
 
 <hr />
@@ -525,11 +525,11 @@ $v_{\mathrm{top}} = \sqrt{gr}$.
 
 ### 7.1 Derivation with friction
 
-A car of mass $m$ travels on a banked curve of radius $r$ and angle $\theta$, with coefficient of
-friction $\mu$.
+A car of mass $m$ travels on a banked curve of radius $r$ and angle $\theta$With coefficient of
+Friction $\mu$.
 
 When the car travels faster than the optimum speed, friction acts **down the slope** to provide
-additional centripetal force.
+Additional centripetal force.
 
 Resolving perpendicular to the surface: $N = mg\cos\theta + \dfrac{mv^2}{r}\sin\theta$ ... (i)
 
@@ -552,13 +552,13 @@ Similarly, when travelling slower than the optimum speed, friction acts **up the
 
 $$\boxed{v_{\min}^2 = \frac◆LB◆rg(\sin\theta - \mu\cos\theta)◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆}$$
 
-Note: $v_{\min}$ only exists if $\sin\theta > \mu\cos\theta$, i.e., $\tan\theta > \mu$. If the bank
-angle is too shallow, the car can come to rest without sliding down.
+Note: $v_{\min}$ only exists if $\sin\theta > \mu\cos\theta$I.e., $\tan\theta > \mu$. If the bank
+Angle is too shallow, the car can come to rest without sliding down.
 
 ### 7.2 Worked example: car on a banked curve with friction
 
 **Example.** A curve of radius $80\,\mathrm{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the
-maximum and minimum safe speeds for a car on this curve.
+Maximum and minimum safe speeds for a car on this curve.
 
 $v_{\max}^2 = \dfrac◆LB◆80 \times 9.8(\sin 30° + 0.3\cos 30°)◆RB◆◆LB◆\cos 30° - 0.3\sin 30°◆RB◆ = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac◆LB◆784 \times 0.7598◆RB◆◆LB◆0.7160◆RB◆$
 
@@ -569,8 +569,8 @@ $v_{\min}^2 = \dfrac◆LB◆80 \times 9.8(\sin 30° - 0.3\cos 30°)◆RB◆◆LB
 $= \dfrac{188.3}{1.016} \approx 185.3 \implies v_{\min} \approx 13.6\,\mathrm{m s}^{-1}$.
 
 The optimum speed (no friction needed) is
-$v_{\mathrm{opt}} = \sqrt◆LB◆80 \times 9.8 \times \tan 30°◆RB◆ = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$,
-which lies between $v_{\min}$ and $v_{\max}$ as expected.
+$v_{\mathrm{opt}} = \sqrt◆LB◆80 \times 9.8 \times \tan 30°◆RB◆ = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$
+Which lies between $v_{\min}$ and $v_{\max}$ as expected.
 
 <hr />
 
@@ -579,7 +579,7 @@ which lies between $v_{\min}$ and $v_{\max}$ as expected.
 ### Proof
 
 A mass $m$ is attached to a string of length $L$ and moves in a horizontal circle of radius $r$ at
-constant speed $v$. The string makes a constant angle $\alpha$ with the vertical.
+Constant speed $v$. The string makes a constant angle $\alpha$ with the vertical.
 
 **Forces on the mass:**
 
@@ -609,9 +609,9 @@ $$\boxed{T_{\mathrm{period}} = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ =
 
 Key observations:
 
-- The period depends only on $L$, $\alpha$, and $g$ — it is independent of mass
-- As $\alpha \to 0$, the period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
-- As $\alpha \to 90^\circ$, the period $\to 0$ (impractical: requires infinite speed)
+- The period depends only on $L$$\alpha$And $g$ — it is independent of mass
+- As $\alpha \to 0$The period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
+- As $\alpha \to 90^\circ$The period $\to 0$ (impractical: requires infinite speed)
 - A larger angle $\alpha$ means a faster rotation (shorter period)
 
 <hr />
@@ -619,9 +619,9 @@ Key observations:
 ## 9. Worked Example: Motorcyclist on a Vertical Loop
 
 **Example.** A motorcyclist rides around a vertical circular track of radius $8\,\mathrm{m}$. The
-motorcycle and rider have combined mass $200\,\mathrm{kg}$. Find the minimum speed at the lowest
-point to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the
-speed and reaction at a point $90^\circ$ from the bottom.
+Motorcycle and rider have combined mass $200\,\mathrm{kg}$. Find the minimum speed at the lowest
+Point to complete the loop, the normal reaction at the top and bottom at this minimum speed, and the
+Speed and reaction at a point $90^\circ$ from the bottom.
 
 **Minimum speed at the bottom:**
 $v_{\min} = \sqrt{5gr} = \sqrt◆LB◆5 \times 9.8 \times 8◆RB◆ = \sqrt{392} \approx 19.8\,\mathrm{m s}^{-1}$.
@@ -654,8 +654,8 @@ $mg - R = \dfrac{mv^2}{r} \implies R = mg - \dfrac◆LB◆200 \times 235.2◆RB�
 $R = -3920\,\mathrm{N}$.
 
 The negative sign confirms the track pushes **inward** (downward at this point) to maintain the
-circular path. This is expected: at this speed, the motorcyclist would fly off without the track
-pushing them inward.
+Circular path. This is expected: at this speed, the motorcyclist would fly off without the track
+Pushing them inward.
 
 <hr />
 
@@ -665,8 +665,8 @@ pushing them inward.
 
 Centripetal force is **not a force in its own right**. It is the **resultant** of the real forces
 (tension, normal reaction, weight, friction) directed towards the centre of the circle. The most
-common mistake is to draw "centripetal force" as an additional arrow on a free body diagram
-alongside tension, weight, etc. This double-counts and produces incorrect equations.
+Common mistake is to draw "centripetal force" as an additional arrow on a free body diagram
+Alongside tension, weight, etc. This double-counts and produces incorrect equations.
 
 Correct approach: draw only the physical forces, then apply Newton's second law towards the centre:
 "sum of force components towards centre $= mv^2/r$".
@@ -679,23 +679,23 @@ At different points on a vertical circle, the normal reaction can point in diffe
 - At the top: reaction points **downward** (towards centre)
 - At the sides: reaction points horizontally (towards or away from centre depending on the speed)
 
-The sign of $R$ in your equations should emerge naturally from the physics. If you get a negative
-$R$, it means the contact force acts in the opposite direction to what you assumed.
+The sign of $R$ in your equations should emerge from the physics. If you get a negative
+$R$It means the contact force acts in the opposite direction to what you assumed.
 
 ### String vs rod in vertical circles
 
-- **String**: can only pull (tension $\geq 0$). Minimum speed at top is $\sqrt{gr}$, minimum at
-  bottom is $\sqrt{5gr}$.
-- **Rod**: can push and pull. Particle can reach the top with $v = 0$, minimum at bottom is
-  $\sqrt{4gr} = 2\sqrt{gr}$.
+- **String**: can only pull (tension $\geq 0$). Minimum speed at top is $\sqrt{gr}$Minimum at
+ bottom is $\sqrt{5gr}$.
+- **Rod**: can push and pull. Particle can reach the top with $v = 0$Minimum at bottom is
+ $\sqrt{4gr} = 2\sqrt{gr}$.
 - **Smooth wire**: like a rod in that it can provide a reaction in either direction.
 - **Rough surface**: friction can provide tangential force, making the problem significantly more
-  complex.
+ complex.
 
 ### Confusing angular velocity with linear velocity
 
 $\omega = v/r$ is only valid when $v$ is the tangential speed and $r$ is the radius of the circular
-path. In a conical pendulum, the radius of the circle is $L\sin\alpha$, not $L$.
+Path. In a conical pendulum, the radius of the circle is $L\sin\alpha$Not $L$.
 
 <hr />
 
@@ -717,7 +717,7 @@ At the midpoint (height $r = 0.6\,\mathrm{m}$ above bottom):
 $v^2 = 49 - 2(9.8)(0.6) = 49 - 11.76 = 37.24$.
 
 At the midpoint, the weight is perpendicular to the radius. The reaction $R$ acts horizontally
-towards the centre:
+Towards the centre:
 
 $R = \dfrac◆LB◆0.4 \times 37.24◆RB◆◆LB◆0.6◆RB◆ = 24.8\,\mathrm{N}$.
 
@@ -764,10 +764,10 @@ $R + mg = \dfrac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆$ where $v_{
 
 $R = \dfrac{m(u^2 - 4gr)}{r} - mg = \dfrac{mu^2}{r} - 4mg - mg = \dfrac{mu^2}{r} - 5mg$.
 
-If $u = 2\sqrt{gr}$, then $R = \dfrac◆LB◆m \times 4gr◆RB◆◆LB◆r◆RB◆ - 5mg = 4mg - 5mg = -mg$.
+If $u = 2\sqrt{gr}$Then $R = \dfrac◆LB◆m \times 4gr◆RB◆◆LB◆r◆RB◆ - 5mg = 4mg - 5mg = -mg$.
 
 The negative sign means the wire pushes the bead **upward** (away from centre) to prevent it from
-falling through, since the bead has zero speed at the top.
+Falling through, since the bead has zero speed at the top.
 
 </details>
 
@@ -794,7 +794,7 @@ Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\mathrm{m}$.
 </details>
 
 <details>
-<summary>Q6. A car of mass $800\,\mathrm{kg}$ travels at $15\,\mathrm{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20^\circ$, what coefficient of friction is needed?</summary>
+<summary>Q6. A car of mass $800\,\mathrm{kg}$ travels at $15\,\mathrm{m s}^{-1}$ around an unbanked horizontal curve of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required for the car to maintain its circular path. If the curve is banked at $20^\circ$What coefficient of friction is needed?</summary>
 
 **Unbanked:**
 $\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} \approx 0.459$.
@@ -802,7 +802,7 @@ $\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} 
 **Banked at $20^\circ$:**
 $v_{\mathrm{opt}} = \sqrt◆LB◆50 \times 9.8 \times \tan 20°◆RB◆ = \sqrt{178.3} \approx 13.4\,\mathrm{m s}^{-1}$.
 
-Since $15 > 13.4$, friction acts down the slope. With friction down the slope:
+Since $15 > 13.4$Friction acts down the slope. With friction down the slope:
 
 $N\cos 20° - F\sin 20° = mg = 7840$ ... (i)
 
@@ -835,7 +835,7 @@ Banking the curve dramatically reduces the required friction coefficient from 0.
 ### Example 8.1: Conical pendulum
 
 **Problem.** A conical pendulum consists of a particle of mass $0.5\,\mathrm{kg}$ on a string of
-length $1\,\mathrm{m}$ making angle $\theta$ with the vertical. It rotates with angular speed
+Length $1\,\mathrm{m}$ making angle $\theta$ with the vertical. It rotates with angular speed
 $4\,\mathrm{rad\,s^{-1}}$. Find $\theta$.
 
 **Solution.** Resolving vertically: $T\cos\theta = mg = 4.9\,\mathrm{N}$.
@@ -853,7 +853,7 @@ $$\boxed{\theta \approx 52.2°}$$
 ### Example 8.2: Car on a banked curve — maximum speed formula
 
 **Problem.** A car of mass $m$ travels around a banked curve of radius $r$ at banking angle $\alpha$
-with friction coefficient $\mu$. Find the maximum safe speed.
+With friction coefficient $\mu$. Find the maximum safe speed.
 
 **Solution.** At maximum speed, friction acts down the slope. Resolving perpendicular to surface:
 $N = mg\cos\alpha + \dfrac{mv^2}{r}\sin\alpha$.
@@ -869,7 +869,7 @@ $$\boxed{v_{\max}^2 = \frac◆LB◆rg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB�
 ### Example 8.3: Vertical circle — minimum speed at the top (rod)
 
 **Problem.** A particle of mass $m$ is attached to a light rod of length $l$ and rotates in a
-vertical circle. Find the minimum angular speed for complete circles.
+Vertical circle. Find the minimum angular speed for complete circles.
 
 **Solution.** At the top: $T + mg = m\omega^2 l$. For a rod, $T \geq 0$ (can push). Minimum:
 $T = 0$:
@@ -880,7 +880,7 @@ $$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt◆LB◆\frac{g}{
 
 **Problem.** A particle of mass $0.2\,\mathrm{kg}$ on a light inextensible string of length
 $0.5\,\mathrm{m}$ is projected horizontally from the lowest point. Find the minimum speed for
-complete circles.
+Complete circles.
 
 **Solution.** At the top: $v_{\text{top}}^2 \geq gr = 4.9$.
 
@@ -905,7 +905,7 @@ $T = \dfrac{mv^2}{r} - mg$ (minimum).
 ### Example 8.6: Non-uniform circular motion
 
 **Problem.** A disc rotates with angular acceleration $\alpha = -0.2\omega\,\mathrm{rad\,s^{-2}}$.
-If $\omega = 10\,\mathrm{rad\,s^{-1}}$ at $t = 0$, find $\omega(t)$.
+If $\omega = 10\,\mathrm{rad\,s^{-1}}$ at $t = 0$Find $\omega(t)$.
 
 **Solution.** $\dfrac◆LB◆d\omega◆RB◆◆LB◆dt◆RB◆ = -0.2\omega$. Separable:
 
@@ -917,12 +917,12 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 
 ## 9. Common Pitfalls
 
-| Pitfall                                                     | Correct Approach                                                                     |
+| Pitfall | Correct Approach |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Confusing the centripetal force direction                   | It always points toward the centre of the circle                                     |
-| Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface                                                 |
-| Using $v = r\omega$ with inconsistent units                 | $v$ in $\mathrm{m\,s^{-1}}$, $r$ in $\mathrm{m}$, $\omega$ in $\mathrm{rad\,s^{-1}}$ |
-| Assuming tension is constant in vertical motion             | $T$ varies; use energy conservation for $v$, then Newton's second law for $T$        |
+| Confusing the centripetal force direction | It always points toward the centre of the circle |
+| Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface |
+| Using $v = r\omega$ with inconsistent units | $v$ in $\mathrm{m\,s^{-1}}$$r$ in $\mathrm{m}$$\omega$ in $\mathrm{rad\,s^{-1}}$ |
+| Assuming tension is constant in vertical motion | $T$ varies; use energy conservation for $v$Then Newton's second law for $T$ |
 
 ---
 
@@ -931,12 +931,12 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 ### Question 8
 
 A particle of mass $m$ moves in a horizontal circle of radius $r$ on the inside of a smooth
-hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$, $r$, and $g$.
+Hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$$r$And $g$.
 
 <details>
 <summary>Solution</summary>
 
-$N\sin\theta = \dfrac{mv^2}{r}$ where $\sin\theta = \dfrac{r}{R}$, and $N\cos\theta = mg$.
+$N\sin\theta = \dfrac{mv^2}{r}$ where $\sin\theta = \dfrac{r}{R}$And $N\cos\theta = mg$.
 
 $\tan\theta = \dfrac{v^2}{rg} \implies \dfrac◆LB◆r◆RB◆◆LB◆\sqrt{R^2-r^2}◆RB◆ = \dfrac{v^2}{rg}$.
 
@@ -947,8 +947,8 @@ $$\boxed{v^2 = \frac◆LB◆r^2 g◆RB◆◆LB◆\sqrt{R^2 - r^2}◆RB◆}$$
 ### Question 9
 
 A bead of mass $m$ slides on a smooth circular wire of radius $a$ in a vertical plane. It is
-projected from the lowest point with speed $\sqrt{6ga}$. Find the speed and reaction at $60°$ above
-the lowest point.
+Projected from the lowest point with speed $\sqrt{6ga}$. Find the speed and reaction at $60°$ above
+The lowest point.
 
 <details>
 <summary>Solution</summary>
@@ -976,7 +976,7 @@ At the top, measuring $\theta$ from the upward vertical: $T + mg\cos\theta = \df
 At the top ($\theta = 0$): $T = \dfrac{mv^2}{r} - mg$.
 
 The string goes slack when $T = 0$: $v^2 = gr$. If $v^2 < gr$ at any point approaching the top, the
-particle leaves the circular path. $\blacksquare$
+Particle leaves the circular path. $\blacksquare$
 
 </details>
 
@@ -1002,17 +1002,17 @@ Vertical circular motion problems often require energy methods combined with for
 
 ## 12. Key Results Summary
 
-| Quantity                                  | Formula                                               |
+| Quantity | Formula |
 | ----------------------------------------- | ----------------------------------------------------- |
-| Centripetal acceleration                  | $a = \omega^2 r = \dfrac{v^2}{r}$                     |
-| Centripetal force                         | $F = m\omega^2 r = \dfrac{mv^2}{r}$                   |
-| Linear speed                              | $v = \omega r$                                        |
-| Angular speed                             | $\omega = \dfrac{v}{r} = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ |
-| Period                                    | $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆$                |
-| Conical pendulum: $\cos\theta$            | $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$      |
-| Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$                                |
-| Vertical circle (top): min speed (rod)    | $v_{\min} = 0$                                        |
-| Vertical circle: max speed at bottom      | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy)                |
+| Centripetal acceleration | $a = \omega^2 r = \dfrac{v^2}{r}$ |
+| Centripetal force | $F = m\omega^2 r = \dfrac{mv^2}{r}$ |
+| Linear speed | $v = \omega r$ |
+| Angular speed | $\omega = \dfrac{v}{r} = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ |
+| Period | $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆$ |
+| Conical pendulum: $\cos\theta$ | $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$ |
+| Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$ |
+| Vertical circle (top): min speed (rod) | $v_{\min} = 0$ |
+| Vertical circle: max speed at bottom | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy) |
 
 ---
 
@@ -1021,7 +1021,7 @@ Vertical circular motion problems often require energy methods combined with for
 ### Question 11
 
 A car of mass $1200\,\mathrm{kg}$ travels at $15\,\mathrm{m\,s^{-1}}$ around a horizontal circular
-track of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required.
+Track of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction required.
 
 <details>
 <summary>Solution</summary>
@@ -1037,7 +1037,7 @@ $\boxed{\mu \approx 0.459}$
 ### Question 12
 
 **Prove that** for uniform circular motion, the work done by the centripetal force in one complete
-revolution is zero.
+Revolution is zero.
 
 <details>
 <summary>Solution</summary>
@@ -1047,7 +1047,7 @@ The centripetal force is always perpendicular to the velocity (tangent to the ci
 Work done: $W = \int \mathbf{F}\cdot d\mathbf{s} = \int F\cos 90°\,ds = \int 0\,ds = 0$.
 
 Since $\mathbf{F} \perp \mathbf{v}$ at every instant, no work is done and the kinetic energy remains
-constant. $\blacksquare$
+Constant. $\blacksquare$
 
 </details>
 
@@ -1070,19 +1070,19 @@ The angular impulse-momentum principle states:
 
 $$\int_{t_1}^{t_2} \boldsymbol{\tau}\,dt = \Delta \mathbf{L} = I\omega_2 - I\omega_1$$
 
-where $\boldsymbol{\tau}$ is the torque about the axis.
+Where $\boldsymbol{\tau}$ is the torque about the axis.
 
 ### 14.3 Non-uniform circular motion and SHM
 
 For small oscillations, the component of gravity tangential to a circular arc is approximately
-$-mg\theta$, giving simple harmonic motion with period $T = 2\pi\sqrt{l/g}$ (the simple pendulum).
+$-mg\theta$Giving simple harmonic motion with period $T = 2\pi\sqrt{l/g}$ (the simple pendulum).
 
 ### 14.4 Motion in a vertical circle: general analysis
 
 For a particle of mass $m$ on a string of length $r$ in a vertical circle:
 
-- At any angle $\theta$ from the bottom: $T = \dfrac{mv^2}{r} + mg\cos\theta$... wait, let me be
-  careful with sign conventions.
+- At any angle $\theta$ from the bottom: $T = \dfrac{mv^2}{r} + mg\cos\theta$... Wait, let me be
+ careful with sign conventions.
 
 Actually measuring $\theta$ from the downward vertical, with the centre of the circle above:
 
@@ -1102,7 +1102,7 @@ $T = \dfrac◆LB◆m[u^2 - 2gr(1-\cos\theta)]◆RB◆◆LB◆r◆RB◆ + mg\cos\
 
 At the top: $T_{\text{top}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
 
-For the string not to go slack: $T_{\text{top}} \geq 0 \implies u^2 \geq 5gr$, giving
+For the string not to go slack: $T_{\text{top}} \geq 0 \implies u^2 \geq 5gr$Giving
 $u_{\min} = \sqrt{5gr}$.
 
 ---
@@ -1112,8 +1112,8 @@ $u_{\min} = \sqrt{5gr}$.
 ### Question 13
 
 A particle of mass $0.1\,\mathrm{kg}$ is attached to a string of length $0.8\,\mathrm{m}$ and
-whirled in a horizontal circle at $3\,\mathrm{rad\,s^{-1}}$. The string makes an angle of $30°$ with
-the vertical. Find the tension.
+Whirled in a horizontal circle at $3\,\mathrm{rad\,s^{-1}}$. The string makes an angle of $30°$ with
+The vertical. Find the tension.
 
 <details>
 <summary>Solution</summary>
@@ -1129,20 +1129,20 @@ $T\sin 30° = 1.132 \times 0.5 = 0.566\,\mathrm{N}$.
 $m\omega^2 r = 0.1 \times 9 \times 0.4 = 0.36\,\mathrm{N}$.
 
 These don't match, which means the given angle is inconsistent with the given angular speed. The
-correct angle satisfies:
+Correct angle satisfies:
 
 $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆ = \dfrac◆LB◆9.8◆RB◆◆LB◆9 \times 0.8◆RB◆ = 1.361 > 1$.
 
 This is impossible, meaning the particle cannot maintain circular motion at
 $3\,\mathrm{rad\,s^{-1}}$ with string length $0.8\,\mathrm{m}$ (it would need to be horizontal,
-which requires infinite $\omega$).
+Which requires infinite $\omega$).
 
 </details>
 
 ### Question 14
 
 **Derive** the condition for a particle to complete a vertical circle on the outside of a smooth
-sphere (losing contact at some point).
+Sphere (losing contact at some point).
 
 <details>
 <summary>Solution</summary>
@@ -1167,12 +1167,12 @@ The particle leaves the sphere at $\theta = \arccos(2/3) \approx 48.2°$ from th
 
 ### 16.1 Motion on the inside of a vertical circle
 
-For a particle sliding on the inside of a smooth vertical sphere of radius $r$, the condition for
-maintaining contact is:
+For a particle sliding on the inside of a smooth vertical sphere of radius $r$The condition for
+Maintaining contact is:
 
 $$v^2 \leq gr\cos\theta$$
 
-where $\theta$ is measured from the downward vertical.
+Where $\theta$ is measured from the downward vertical.
 
 By energy conservation from the top:
 
@@ -1186,15 +1186,15 @@ On a banked curve, the frictionless condition is:
 
 $$\tan\alpha = \frac{v^2}{rg}$$
 
-where $\alpha$ is the banking angle. This means for a given speed $v$ and radius $r$, there is an
-ideal banking angle that requires no friction at all.
+Where $\alpha$ is the banking angle. This means for a given speed $v$ and radius $r$There is an
+Ideal banking angle that requires no friction at all.
 
 ### 16.3 Angular impulse and momentum
 
 Angular impulse: $\displaystyle\int_0^T \tau\,dt = \Delta L = I(\omega_2 - \omega_1)$.
 
 This is analogous to the linear impulse-momentum theorem and is useful for impact problems involving
-rotation.
+Rotation.
 
 ### 16.4 Non-uniform circular motion as a 2D problem
 
@@ -1204,7 +1204,7 @@ Radial: $m(\ddot{r} - r\dot{\theta}^2) = F_r$
 
 Tangential: $m(r\ddot{\theta} + 2\dot{r}\dot{\theta}) = F_\theta$
 
-For circular motion ($r = \text{const}$): $\dot{r} = \ddot{r} = 0$, giving:
+For circular motion ($r = \text{const}$): $\dot{r} = \ddot{r} = 0$Giving:
 
 $-mr\dot{\theta}^2 = F_r$ (centripetal) and $mr\ddot{\theta} = F_\theta$ (tangential).
 
@@ -1216,7 +1216,7 @@ $-mr\dot{\theta}^2 = F_r$ (centripetal) and $mr\ddot{\theta} = F_\theta$ (tangen
 
 A particle of mass $m$ moves in a circle of radius $r$ with angular acceleration
 $\ddot{\theta} = \alpha$ (constant). Find the tangential force and the radial force as functions of
-time.
+Time.
 
 <details>
 <summary>Solution</summary>

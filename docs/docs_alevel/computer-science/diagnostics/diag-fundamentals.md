@@ -22,14 +22,14 @@ $-97$ in 8-bit two's complement $= 10011111_2$.
 
 $$
 \begin{array}{r}
-  10011111 \\
+ 10011111 \\
 + 00101101 \\
 \hline
-  11001100 \\
+ 11001100 \\
 \end{array}
 $$
 
-$11001100_2$ is a negative number (MSB $= 1$). Convert to decimal: flip bits $= 00110011$, add 1 $= 00110100_2 = 52$. So the result is $-52$.
+$11001100_2$ is a negative number (MSB $= 1$). Convert to decimal: flip bits $= 00110011$Add 1 $= 00110100_2 = 52$. So the result is $-52$.
 
 Check: $-97 + 45 = -52$. Correct.
 
@@ -63,7 +63,7 @@ Relative error: $0\%$.
 
 **For comparison, with only 3 mantissa bits:**
 
-Mantissa would be $011$, stored value $= -1.011_2 \times 2^2 = -101.1_2 = -(4 + 1 + 0.5) = -5.5$.
+Mantissa would be $011$Stored value $= -1.011_2 \times 2^2 = -101.1_2 = -(4 + 1 + 0.5) = -5.5$.
 
 Absolute error $= |-5.5 - (-5.75)| = 0.25$. Relative error $= 0.25 / 5.75 = 4.35\%$.
 
@@ -87,7 +87,7 @@ Simplify $AB + A\bar{B}C = A(B + \bar{B}C) = A(B + C) = AB + AC$.
 
 Therefore: $F = AB + AC + BC$.
 
-**Karnaugh map verification** (minterms: $A\bar{B}C = m_5$, $AB\bar{C} = m_6$, $ABC = m_7$, $\bar{A}BC = m_3$):
+**Karnaugh map verification** (minterms: $A\bar{B}C = m_5$$AB\bar{C} = m_6$$ABC = m_7$$\bar{A}BC = m_3$):
 
 | AB\C | 0 | 1 |
 |------|---|---|
@@ -101,7 +101,7 @@ Groups:
 - $m_6 + m_7$ (row AB=11, A=1, B=1): $AB$
 - $m_5 + m_7$ (column C=1, A=1): $AC$
 
-All three groups are essential prime implicants. $F = AB + AC + BC$, confirming the algebraic result.
+All three groups are essential prime implicants. $F = AB + AC + BC$Confirming the algebraic result.
 
 **NAND-only implementation:** $F = AB + BC + AC$.
 
@@ -140,7 +140,7 @@ If treated as signed, $-23$ is not a valid count. If interpreted as unsigned: $6
 
 Without knowing the character mix, we cannot determine the exact byte count. If all ASCII: $65513$ bytes. If all 4-byte: $262052$ bytes.
 
-(c) Maximum ASCII characters in a string that occupies this many bytes: $65513$ characters (if unsigned). If the value is $-23$, there is no valid interpretation as a character count.
+(c) Maximum ASCII characters in a string that occupies this many bytes: $65513$ characters (if unsigned). If the value is $-23$There is no valid interpretation as a character count.
 
 This question illustrates the importance of choosing the correct representation: using an unsigned integer for counts avoids the confusion of negative values, while two's complement is essential for values that can be negative.
 
@@ -202,15 +202,15 @@ $C = AB$ (AND).
 
 (b) Full adder from two half-adders:
 
-First half-adder: inputs $A$, $B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$.
-Second half-adder: inputs $S_1$, $C_{\text{in}}$. Produces $S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and $C_2 = S_1 \cdot C_{\text{in}}$.
+First half-adder: inputs $A$$B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$.
+Second half-adder: inputs $S_1$$C_{\text{in}}$. Produces $S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and $C_2 = S_1 \cdot C_{\text{in}}$.
 OR gate: $C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.
 
 (c) For a 4-bit ripple-carry adder: each full-adder must wait for the carry from the previous stage.
 
 Each full-adder uses 2 half-adders (5 ns each) and 1 OR gate (3 ns). But the critical path is the carry propagation.
 
-Stage 1: $C_{\text{in}} = 0$, so $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$, i.e., 5 ns.
+Stage 1: $C_{\text{in}} = 0$So $C_2 = S_1 \cdot C_{\text{in}} = 0$ and $C_{\text{out}} = C_1 = AB$. Carry out is ready after the first half-adder produces $C_1$I.e., 5 ns.
 
 For subsequent stages: the carry-in must propagate through. The longest path for carry:
 - HA1 in stage $i$: 5 ns to produce $S_1$ (needed for $C_2$).

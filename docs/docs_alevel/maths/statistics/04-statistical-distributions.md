@@ -11,17 +11,17 @@ slug: statistical-distributions
 ---
 ## Board Coverage
 
-| Board      | Paper      | Notes                                    |
+| Board | Paper | Notes |
 | ---------- | ---------- | ---------------------------------------- |
-| AQA        | Paper 1, 2 | Binomial and normal in P1; Poisson in P2 |
-| Edexcel    | P1, P2     | Similar                                  |
-| OCR (A)    | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
-| CIE (9709) | P1, P6     | Binomial in P1; normal and Poisson in P6 |
+| AQA | Paper 1, 2 | Binomial and normal in P1; Poisson in P2 |
+| Edexcel | P1, P2 | Similar |
+| OCR (A) | Paper 1, 2 | Binomial in P1; normal and Poisson in P2 |
+| CIE (9709) | P1, P6 | Binomial in P1; normal and Poisson in P6 |
 
 :::info
 The formula booklet gives the probability mass function for the Binomial and Poisson
-distributions, and the normal distribution function. You must know when to use each distribution and
-how to find probabilities.
+Distributions, and the normal distribution function. You must know when to use each distribution and
+How to find probabilities.
 :::
 
 <hr />
@@ -31,7 +31,7 @@ how to find probabilities.
 ### 1.1 Definition
 
 **Definition.** A **discrete random variable** $X$ takes values from a countable set with
-probabilities $P(X = x_i) = p_i$ satisfying:
+Probabilities $P(X = x_i) = p_i$ satisfying:
 
 - $p_i \geq 0$ for all $i$
 - $\sum_i p_i = 1$
@@ -48,21 +48,21 @@ $$\mathrm{Var}(X) = \sigma^2 = E(X^2) - [E(X)]^2 = \sum x_i^2\,p_i - \mu^2$$
 ### 2.1 Derivation from Bernoulli trials
 
 A **Bernoulli trial** is an experiment with exactly two outcomes: success (probability $p$) and
-failure (probability $1-p$).
+Failure (probability $1-p$).
 
 If we perform $n$ independent Bernoulli trials, the number of successes $X$ follows a **Binomial
-distribution**: $X \sim B(n, p)$.
+Distribution**: $X \sim B(n, p)$.
 
 **Derivation of the PMF.** Each sequence of $k$ successes and $n-k$ failures has probability
 $p^k(1-p)^{n-k}$. The number of such sequences is $\binom{n}{k}$ (choosing which $k$ of the $n$
-trials are successes). Therefore:
+Trials are successes). Therefore:
 
 $$P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}, \quad k = 0, 1, \ldots, n$$
 
 ### 2.2 Proof that $E(X) = np$
 
 **Proof.** Let $X_i$ be the indicator variable for the $i$-th trial: $X_i = 1$ if success, $0$ if
-failure.
+Failure.
 
 $X = X_1 + X_2 + \cdots + X_n$.
 
@@ -88,7 +88,7 @@ $\blacksquare$
 ### 2.5 Direct derivation of $E(X) = np$ from the PMF
 
 The proofs in Sections 2.2 and 2.3 use indicator variables. Here we derive the same results directly
-from the probability mass function using algebraic identities.
+From the probability mass function using algebraic identities.
 
 **Proof.** Starting from the definition of expectation applied to the binomial PMF:
 
@@ -135,11 +135,11 @@ $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = n(n-1)p^2 + np - n^2p^2 = np - np^2 = np
 ### 3.1 Motivation from the Central Limit Theorem
 
 The **Central Limit Theorem (CLT)** states that the sum (or mean) of a large number of independent,
-identically distributed random variables is approximately normally distributed, regardless of the
-original distribution.
+Identically distributed random variables is approximately normally distributed, regardless of the
+Original distribution.
 
 This is why the normal distribution appears so widely in nature: any quantity that is the sum of
-many small independent effects (height, measurement error, etc.) will be approximately normal.
+Many small independent effects (height, measurement error, etc.) will be approximately normal.
 
 ### 3.2 Definition
 
@@ -150,13 +150,13 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\,e^{-\frac◆LB
 ### 3.3 Properties
 
 - Bell-shaped, symmetric about $\mu$.
-- $E(X) = \mu$, $\mathrm{Var}(X) = \sigma^2$.
-- Approximately 68% of data within $\mu \pm \sigma$, 95% within $\mu \pm 2\sigma$, 99.7% within
-  $\mu \pm 3\sigma$.
+- $E(X) = \mu$$\mathrm{Var}(X) = \sigma^2$.
+- Approximately 68% of data within $\mu \pm \sigma$95% within $\mu \pm 2\sigma$99.7% within
+ $\mu \pm 3\sigma$.
 
 ### 3.4 Standard normal
 
-If $X \sim N(\mu, \sigma^2)$, then $Z = \dfrac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆ \sim N(0, 1)$.
+If $X \sim N(\mu, \sigma^2)$Then $Z = \dfrac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆ \sim N(0, 1)$.
 
 Probabilities are found using the standard normal table or a calculator's inverse normal function.
 
@@ -170,13 +170,13 @@ For large $n$ with $np \gt{} 5$ and $n(1-p) \gt{} 5$:
 
 $$B(n, p) \approx N(np, np(1-p))$$
 
-with **continuity correction**:
+With **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt{} \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
 
 :::warning
-warning
+Warning
 (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the inequality
-direction.
+Direction.
 :::
 
 <hr />
@@ -186,7 +186,7 @@ direction.
 ### 4.1 Definition
 
 $X \sim \mathrm{Po}(\lambda)$ models the number of events in a fixed interval when events occur
-independently at a constant average rate $\lambda$.
+Independently at a constant average rate $\lambda$.
 
 $$P(X = k) = \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆, \quad k = 0, 1, 2, \ldots$$
 
@@ -208,7 +208,7 @@ Consider each factor as $n \to \infty$:
 
 - $\dfrac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆n^k◆RB◆ \to 1$ (each term $n-i \approx n$)
 - $\left(1 - \dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k} \to e^{-\lambda}$ (using
-  $\lim_{n\to\infty}(1+a/n)^n = e^a$)
+ $\lim_{n\to\infty}(1+a/n)^n = e^a$)
 
 Therefore:
 
@@ -252,54 +252,54 @@ The Poisson distribution is appropriate when all of the following hold:
 
 - Events occur **independently** of one another.
 - Events occur at a **constant average rate** $\lambda$ in a fixed interval of time, space, or
-  volume.
+ volume.
 - The probability of more than one event occurring in a sufficiently small sub-interval is
-  **negligible**.
+ **negligible**.
 
 These are sometimes called the **Poisson postulates**. When they are satisfied, the number of events
-in any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
+In any interval of length $t$ follows $\mathrm{Po}(\lambda t)$.
 
 Typical applications include: calls arriving at a call centre per hour, typing errors per page,
-radioactive decays per second, and cars passing a checkpoint per minute.
+Radioactive decays per second, and cars passing a checkpoint per minute.
 
 :::tip
-tip
-constant over the interval and that events do not cluster. If events tend to occur in bursts, the
+Tip
+Constant over the interval and that events do not cluster. If events tend to occur in bursts, the
 Poisson model is not appropriate.
 :::
 
 ### 4.7 Poisson approximation to the Binomial
 
-**Practical rule.** When $n \gt{} 50$ and $p \lt{} 0.1$, we may approximate $B(n, p)$ by
+**Practical rule.** When $n \gt{} 50$ and $p \lt{} 0.1$We may approximate $B(n, p)$ by
 $\mathrm{Po}(\lambda)$ where $\lambda = np$.
 
 **Justification.** The theoretical result in Section 4.2 shows that as $n \to \infty$ and $p \to 0$
-with $np = \lambda$ held constant, the binomial PMF converges pointwise to the Poisson PMF. The
-conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
+With $np = \lambda$ held constant, the binomial PMF converges pointwise to the Poisson PMF. The
+Conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
 
 1. **$n$ is large enough** that the discrete binomial is well-approximated by a limit distribution.
 2. **$p$ is small enough** that the "rare event" assumption of the Poisson model is satisfied.
-3. **$\lambda = np$ is moderate** (typically $0 \lt{} \lambda \lt{} 10$), so that neither
-   distribution is heavily concentrated at a single point.
+3. **$\lambda = np$ is moderate** ( $0 \lt{} \lambda \lt{} 10$), so that neither
+ distribution is heavily concentrated at a single point.
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
 
 :::warning
-warning
-and $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
-complementary: Poisson handles the case of many trials with rare success, while normal handles the
-case of many trials with moderate success probability.
+Warning
+And $n$ is large, use the normal approximation (Section 3.6) instead. The two approximations are
+Complementary: Poisson handles the case of many trials with rare success, while normal handles the
+Case of many trials with moderate success probability.
 :::
 
 <hr />
 
 ## 5. Choosing the Right Distribution
 
-| Situation                                  | Distribution                   |
+| Situation | Distribution |
 | ------------------------------------------ | ------------------------------ |
-| Fixed $n$ trials, success/failure          | Binomial $B(n,p)$              |
+| Fixed $n$ trials, success/failure | Binomial $B(n,p)$ |
 | Events in continuous interval, rare events | Poisson $\mathrm{Po}(\lambda)$ |
-| Continuous, bell-shaped                    | Normal $N(\mu,\sigma^2)$       |
+| Continuous, bell-shaped | Normal $N(\mu,\sigma^2)$ |
 
 <hr />
 
@@ -310,22 +310,22 @@ case of many trials with moderate success probability.
 A **coding** (or linear transformation) of a discrete random variable $X$ is a new random variable
 $Y = aX + b$ where $a$ and $b$ are constants with $a \neq 0$.
 
-Coding arises naturally when changing units (e.g. centimetres to metres, or Celsius to Fahrenheit)
-or when shifting and scaling a distribution.
+Coding arises when changing units (e.g. Centimetres to metres, or Celsius to Fahrenheit)
+Or when shifting and scaling a distribution.
 
 ### 6.2 Effect on expectation
 
-**Theorem.** If $Y = aX + b$, then $E(Y) = aE(X) + b$.
+**Theorem.** If $Y = aX + b$Then $E(Y) = aE(X) + b$.
 
 **Proof.** Applying the definition of expectation to $Y$:
 
 $$E(Y) = \sum (ax_i + b)\,p_i = a\sum x_i\,p_i + b\sum p_i = aE(X) + b \cdot 1 = aE(X) + b \quad \blacksquare$$
 
-The key step is $\sum p_i = 1$, since the probabilities sum to 1.
+The key step is $\sum p_i = 1$Since the probabilities sum to 1.
 
 ### 6.3 Effect on variance
 
-**Theorem.** If $Y = aX + b$, then $\mathrm{Var}(Y) = a^2\mathrm{Var}(X)$.
+**Theorem.** If $Y = aX + b$Then $\mathrm{Var}(Y) = a^2\mathrm{Var}(X)$.
 
 **Proof.**
 
@@ -345,12 +345,12 @@ Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 :::info
 Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
-measured in **squared units** of the original variable.
+Measured in **squared units** of the original variable.
 :::
 
 ### 6.4 Effect on standard deviation
 
-Since $\mathrm{Var}(Y) = a^2\mathrm{Var}(X)$, taking square roots gives:
+Since $\mathrm{Var}(Y) = a^2\mathrm{Var}(X)$Taking square roots gives:
 
 $$\mathrm{SD}(Y) = |a|\,\mathrm{SD}(X)$$
 
@@ -363,7 +363,7 @@ $a$.
 
 <details>
 <summary>Problem 1</summary>
-$X \sim B(10, 0.3)$. Find $P(X = 4)$, $P(X \leq 3)$, and $P(X \geq 7)$.
+$X \sim B(10, 0.3)$. Find $P(X = 4)$$P(X \leq 3)$And $P(X \geq 7)$.
 </details>
 
 <details>
@@ -453,7 +453,7 @@ $X \sim \mathrm{Po}(12)$.
 
 $P(10 \leq X \leq 15) = P(X \leq 15) - P(X \leq 9)$.
 
-$P(X \leq 15) \approx 0.7728$, $P(X \leq 9) \approx 0.2424$.
+$P(X \leq 15) \approx 0.7728$$P(X \leq 9) \approx 0.2424$.
 
 $P(10 \leq X \leq 15) \approx 0.7728 - 0.2424 = 0.5304$.
 
@@ -506,7 +506,7 @@ $X \sim B(200, 0.15)$. Use the normal approximation with continuity correction t
 
 <details>
 <summary>Solution 9</summary>
-$\mu = 200(0.15) = 30$, $\sigma^2 = 200(0.15)(0.85) = 25.5$, $\sigma \approx 5.05$.
+$\mu = 200(0.15) = 30$$\sigma^2 = 200(0.15)(0.85) = 25.5$$\sigma \approx 5.05$.
 
 $P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt{} 1.089) \approx 1 - 0.8621 = 0.1379$.
 
@@ -532,7 +532,7 @@ $P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac◆LB◆e^{-8} \times 262144◆R
 
 <details>
 <summary>Problem 11</summary>
-Starting from the definition $E(X) = \sum_{k=0}^{n} k\binom{n}{k}p^k(1-p)^{n-k}$, derive $E(X) = np$ using the identity $k\binom{n}{k} = n\binom{n-1}{k-1}$ and the binomial theorem.
+Starting from the definition $E(X) = \sum_{k=0}^{n} k\binom{n}{k}p^k(1-p)^{n-k}$Derive $E(X) = np$ using the identity $k\binom{n}{k} = n\binom{n-1}{k-1}$ and the binomial theorem.
 </details>
 
 <details>
@@ -613,7 +613,7 @@ Section 6.
 
 <details>
 <summary>Problem 15</summary>
-Starting from $E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$, derive $\mathrm{Var}(X) = np(1-p)$ for $X \sim B(n,p)$.
+Starting from $E(X(X-1)) = \sum_{k=0}^{n} k(k-1)\binom{n}{k}p^k(1-p)^{n-k}$Derive $\mathrm{Var}(X) = np(1-p)$ for $X \sim B(n,p)$.
 </details>
 
 <details>
@@ -639,16 +639,16 @@ $X \sim B(120, 0.025)$. (a) Show that the Poisson approximation is appropriate. 
 
 <details>
 <summary>Solution 16</summary>
-(a) $n = 120 \gt{} 50$ and $p = 0.025 \lt{} 0.1$, so the Poisson approximation is appropriate.
+(a) $n = 120 \gt{} 50$ and $p = 0.025 \lt{} 0.1$So the Poisson approximation is appropriate.
 $\lambda = np = 120 \times 0.025 = 3$.
 
 (b) $X \approx \mathrm{Po}(3)$.
 
 $$P(X = 5) = \frac◆LB◆e^{-3} \times 3^5◆RB◆◆LB◆5!◆RB◆ = \frac◆LB◆e^{-3} \times 243◆RB◆◆LB◆120◆RB◆ = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
-(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$,
-so the normal approximation is not appropriate. The Poisson approximation is the correct choice
-since $p$ is small.
+(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$
+So the normal approximation is not appropriate. The Poisson approximation is the correct choice
+Since $p$ is small.
 
 **If you get this wrong, revise:**
 [Poisson approximation to the Binomial](#47-poisson-approximation-to-the-binomial) — Section 4.7.
@@ -658,7 +658,7 @@ since $p$ is small.
 <details>
 <summary>Problem 17</summary>
 Temperatures in a city are modelled by $X \sim N(15, 9)$ in degrees Celsius. The temperature in
-Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$, $\mathrm{Var}(F)$, and $P(F \gt{} 68)$.
+Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$$\mathrm{Var}(F)$And $P(F \gt{} 68)$.
 </details>
 
 <details>
@@ -684,10 +684,22 @@ Section 6.
 ---
 
 :::tip
-tip
+Tip
 Ready to test your understanding of **Statistical Distributions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-statistical-distributions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistical Distributions with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
 :::
+
+## Common Pitfalls
+
+<!-- TODO: Add common pitfalls for this topic -->
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

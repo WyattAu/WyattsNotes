@@ -37,7 +37,7 @@ Integrating around the ring:
 
 $$E = \frac◆LB◆1◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\frac{Qx}{(a^2 + x^2)^{3/2}}$$
 
-directed along the axis.
+Directed along the axis.
 
 (b) $E = \frac◆LB◆1◆RB◆◆LB◆4\pi \times 8.85 \times 10^{-12}◆RB◆ \times \frac◆LB◆5.0 \times 10^{-9} \times 0.15◆RB◆◆LB◆(0.01 + 0.0225)^{3/2}◆RB◆$
 
@@ -100,7 +100,7 @@ If the question asks for the work done **by** the external agent to move the cha
 
 **Question:**
 
-An electron (mass $9.11 \times 10^{-31}\,\text{kg}$, charge $-1.60 \times 10^{-19}\,\text{C}$) enters the region between two parallel horizontal plates with velocity $3.0 \times 10^7\,\text{m}\,\text{s}^{-1}$ horizontally. The plates are $5.0\,\text{cm}$ long, separated by $2.0\,\text{cm}$, and have a potential difference of $400\,\text{V}$ across them (top plate positive).
+An electron (mass $9.11 \times 10^{-31}\,\text{kg}$Charge $-1.60 \times 10^{-19}\,\text{C}$) enters the region between two parallel horizontal plates with velocity $3.0 \times 10^7\,\text{m}\,\text{s}^{-1}$ horizontally. The plates are $5.0\,\text{cm}$ long, separated by $2.0\,\text{cm}$And have a potential difference of $400\,\text{V}$ across them (top plate positive).
 
 (a) Calculate the electric field strength between the plates.
 
@@ -110,7 +110,7 @@ An electron (mass $9.11 \times 10^{-31}\,\text{kg}$, charge $-1.60 \times 10^{-1
 
 **Solution:**
 
-(a) $E = V/d = 400/(2.0 \times 10^{-2}) = 2.0 \times 10^4\,\text{V}\,\text{m}^{-1}$, directed from the positive (top) plate to the negative (bottom) plate, i.e. downward.
+(a) $E = V/d = 400/(2.0 \times 10^{-2}) = 2.0 \times 10^4\,\text{V}\,\text{m}^{-1}$Directed from the positive (top) plate to the negative (bottom) plate, i.e. Downward.
 
 (b) The electron (negative charge) experiences an upward force: $F = eE$
 
@@ -140,7 +140,7 @@ The electron exits at $11.0^\circ$ above the horizontal.
 
 (c) A charged oil drop of mass $1.0 \times 10^{-14}\,\text{kg}$ is held stationary between two horizontal plates separated by $8.0\,\text{mm}$ with a potential difference of $3000\,\text{V}$. Calculate the charge on the drop and express it in terms of the elementary charge.
 
-Take $e = 1.60 \times 10^{-19}\,\text{C}$, $g = 9.81\,\text{m}\,\text{s}^{-2}$.
+Take $e = 1.60 \times 10^{-19}\,\text{C}$$g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
@@ -171,7 +171,7 @@ $$q = \frac◆LB◆1.0 \times 10^{-14} \times 9.81 \times 8.0 \times 10^{-3}◆R
 
 In terms of elementary charge: $n = q/e = 2.616 \times 10^{-19}/1.60 \times 10^{-19} = 1.635$
 
-This is not exactly an integer, which means either the measurement has some uncertainty or the drop carries approximately 2 elementary charges. With the given values, the closest integer is $n = 2$, giving $q = 3.20 \times 10^{-19}\,\text{C}$. The discrepancy suggests experimental uncertainty.
+This is not exactly an integer, which means either the measurement has some uncertainty or the drop carries approximately 2 elementary charges. With the given values, the closest integer is $n = 2$Giving $q = 3.20 \times 10^{-19}\,\text{C}$. The discrepancy suggests experimental uncertainty.
 
 ---
 ### IT-2: Capacitance from Parallel Plates (with Capacitance)
@@ -206,14 +206,14 @@ $$\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} = \frac◆LB◆1◆RB◆◆LB◆5.
 
 $$C = 1.327 \times 10^{-10}\,\text{F} = 133\,\text{pF}$$
 
-The capacitance increased from $88.5\,\text{pF}$ to $133\,\text{pF}$, a factor of 1.50.
+The capacitance increased from $88.5\,\text{pF}$ to $133\,\text{pF}$A factor of 1.50.
 
 ---
 ### IT-3: Field Lines and Equipotentials — Proof of Perpendicularity (with Wave Properties)
 
 **Question:**
 
-The electric potential at a point in a region is given by $V = 3x^2 - 2xy + 4y\,\text{V}$, where $x$ and $y$ are in metres.
+The electric potential at a point in a region is given by $V = 3x^2 - 2xy + 4y\,\text{V}$Where $x$ and $y$ are in metres.
 
 (a) Calculate the electric field components $E_x$ and $E_y$ at the point $(2, 1)$.
 
@@ -235,7 +235,7 @@ $E_y = -(-4 + 4) = 0\,\text{V}\,\text{m}^{-1}$
 
 (b) $|\mathbf{E}| = \sqrt{(-10)^2 + 0^2} = 10\,\text{V}\,\text{m}^{-1}$
 
-The field points in the $-x$ direction (i.e. to the left).
+The field points in the $-x$ direction (i.e. To the left).
 
 (c) The gradient of $V$: $\nabla V = \left(\frac◆LB◆\partial V◆RB◆◆LB◆\partial x◆RB◆, \frac◆LB◆\partial V◆RB◆◆LB◆\partial y◆RB◆\right) = (6x - 2y, -2x + 4)$
 
@@ -245,6 +245,6 @@ $\mathbf{E} \cdot \nabla V = (-10)(10) + (0)(0) = -100$
 
 $-|\mathbf{E}|^2 = -(10)^2 = -100$
 
-So $\mathbf{E} \cdot \nabla V = -|\mathbf{E}|^2$, confirming that $\mathbf{E}$ is perpendicular to the equipotential (since $\nabla V$ is perpendicular to the equipotential, and $\mathbf{E} = -\nabla V$).
+So $\mathbf{E} \cdot \nabla V = -|\mathbf{E}|^2$Confirming that $\mathbf{E}$ is perpendicular to the equipotential (since $\nabla V$ is perpendicular to the equipotential, and $\mathbf{E} = -\nabla V$).
 
 This confirms the general result: electric field lines are always perpendicular to equipotential surfaces.

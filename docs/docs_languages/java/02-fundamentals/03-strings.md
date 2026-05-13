@@ -6,17 +6,17 @@ slug: strings
 ---
 ## The `String` Class
 
-`String` is the most used class in the Java platform. It is `final`, implements `Serializable`,
-`Comparable<String>`, and `CharSequence`, and its instances are **immutable**. Every character in a
+`String` is the most used class in the Java platform. It is `final`Implements `Serializable`
+`Comparable<String>`And `CharSequence`And its instances are **immutable**. Every character in a
 `String` is stored internally as UTF-16 code units in a `byte[]` (since JDK 9, compact strings use
 `byte[]` with a coder flag for LATIN1 vs UTF-16).
 
 ### Immutability
 
-Once constructed, a `String` object cannot be modified. Every "mutating" operation — `substring`,
-`concat`, `replace`, `toUpperCase`, `trim` — returns a **new** `String` object. The original remains
-unchanged. This is not a suggestion; the `String` class has no public mutating methods, and the
-backing `byte[]` (the `value` field) is private.
+Once constructed, a `String` object cannot be modified. Every "mutating" operation — `substring`
+`concat``replace``toUpperCase``trim` — returns a **new** `String` object. The original remains
+Unchanged. This is not a suggestion; the `String` class has no public mutating methods, and the
+Backing `byte[]` (the `value` field) is private.
 
 ```java
 String original = "hello";
@@ -34,13 +34,13 @@ Immutability is enforced by design:
 
 **Why immutable?** Thread safety without synchronization, safe sharing across threads, secure use as
 `HashMap` keys and `HashSet` elements (hash code is cached at construction and never changes), and
-string literal interning.
+String literal interning.
 
 ### String Pool (Intern Pool)
 
 The JVM maintains a pool of unique `String` literals. When the bytecode contains a string literal,
-the JVM looks up the pool; if the literal already exists, it reuses the reference. This means two
-variables assigned the same literal may be the **same object** at runtime:
+The JVM looks up the pool; if the literal already exists, it reuses the reference. This means two
+Variables assigned the same literal may be the **same object** at runtime:
 
 ```java
 String a = "hello";
@@ -53,14 +53,14 @@ System.out.println(a.equals(c)); // true — same content
 ```
 
 The `new String(...)` constructor always creates a new object on the heap, bypassing the pool. This
-is almost always the wrong thing to do.
+Is almost always the wrong thing to do.
 
 ### `intern()`
 
 `String.intern()` returns a canonical representation from the pool. If the string is not already in
-the pool, it is added. Interning can reduce memory when you have many duplicate strings, but the
-pool lives in the heap (since JDK 7) and is managed by the GC. Over-interning can cause GC pressure
-and pool bloat.
+The pool, it is added. Interning can reduce memory when you have many duplicate strings, but the
+Pool lives in the heap (since JDK 7) and is managed by the GC. Over-interning can cause GC pressure
+And pool bloat.
 
 ```java
 String s1 = new String("hello").intern();
@@ -70,16 +70,16 @@ System.out.println(s1 == s2); // true
 
 :::warning
 Do not intern user-controlled strings at scale. The pool is unbounded, and interning
-billions of unique strings (e.g., every URL your crawler visits) will cause `OutOfMemoryError`.
+Billions of unique strings (e.g., every URL your crawler visits) will cause `OutOfMemoryError`.
 Intern only strings that appear frequently and have bounded cardinality.
 :::
 
 ### Compact Strings (JDK 9+)
 
 Before JDK 9, every `String` stored its characters in a `char[]` — 2 bytes per character. JDK 9
-introduced **compact strings** (`-XX:+CompactStrings`, enabled by default since JDK 9). If all
-characters fit in the LATIN1 range (code points 0-255), the string uses a `byte[]` with 1 byte per
-character. If any character exceeds LATIN1, it switches to UTF-16 encoding (2 bytes per character).
+Introduced **compact strings** (`-XX:+CompactStrings`Enabled by default since JDK 9). If all
+Characters fit in the LATIN1 range (code points 0-255), the string uses a `byte[]` with 1 byte per
+Character. If any character exceeds LATIN1, it switches to UTF-16 encoding (2 bytes per character).
 This reduces memory usage by roughly 50% for most real-world strings.
 
 ```java
@@ -90,32 +90,32 @@ String utf16 = "世界";
 ```
 
 The coder flag is stored in the `coder` field of the `String` object. You cannot control which
-encoding is used; it is determined automatically at construction time.
+Encoding is used; it is determined automatically at construction time.
 
 ## `String` vs `StringBuilder` vs `StringBuffer`
 
 ### Performance Characteristics
 
-| Operation          | `String`                       | `StringBuilder`                  | `StringBuffer`                |
+| Operation | `String` | `StringBuilder` | `StringBuffer` |
 | ------------------ | ------------------------------ | -------------------------------- | ----------------------------- |
-| Mutability         | Immutable                      | Mutable                          | Mutable                       |
-| Thread safety      | N/A (immutable)                | Not thread-safe                  | Synchronized (thread-safe)    |
-| Append performance | O(n) per append (copies array) | Amortized O(1)                   | Amortized O(1) + sync cost    |
-| Memory overhead    | New object per operation       | Single buffer, resizes as needed | Single buffer + sync overhead |
+| Mutability | Immutable | Mutable | Mutable |
+| Thread safety | N/A (immutable) | Not thread-safe | Synchronized (thread-safe) |
+| Append performance | O(n) per append (copies array) | Amortized O(1) | Amortized O(1) + sync cost |
+| Memory overhead | New object per operation | Single buffer, resizes as needed | Single buffer + sync overhead |
 
 ### When to Use Each
 
 **`String`** — Use for values that do not change. Literals, constants, method return values for
-immutable data, keys in maps, and any case where immutability is desired. The JVM's escape analysis
-and JIT can sometimes optimize string concatenation into `StringBuilder` automatically.
+Immutable data, keys in maps, and any case where immutability is desired. The JVM's escape analysis
+And JIT can sometimes optimize string concatenation into `StringBuilder` automatically.
 
 **`StringBuilder`** — Use for building strings in a single thread. This covers the vast majority of
-use cases: constructing SQL queries, building JSON, accumulating log messages, reading file
-contents.
+Use cases: constructing SQL queries, building JSON, accumulating log messages, reading file
+Contents.
 
 **`StringBuffer`** — Use only when multiple threads need to append to the same buffer concurrently.
 This is rare. In practice, you almost always want `StringBuilder` and handle thread safety at a
-higher level.
+Higher level.
 
 ```java
 // BAD — creates many intermediate String objects
@@ -136,8 +136,8 @@ String result = sb.toString();
 ### Concatenation Under the Hood
 
 The Java compiler translates string concatenation with the `+` operator into `StringBuilder`
-operations at compile time (JLS §15.18.1). However, this optimization only applies within a **single
-expression**:
+Operations at compile time (JLS §15.18.1). However, this optimization only applies within a **single
+Expression**:
 
 ```java
 // Single expression — compiler optimizes to one StringBuilder
@@ -152,13 +152,13 @@ for (String part : parts) {
 ```
 
 JDK 9+ uses `invokedynamic` with `StringConcatFactory` for string concatenation, which generates
-optimized bytecode at runtime. This can outperform the `StringBuilder` approach in many cases,
-especially for concatenations involving non-string types.
+Optimized bytecode at runtime. This can outperform the `StringBuilder` approach ,
+Especially for concatenations involving non-string types.
 
 ## Text Blocks (JDK 15+)
 
 Text blocks, standardized in JDK 15 (JEP 378), provide a way to write multi-line strings without
-escape sequences. They are delimited by triple double quotes:
+Escape sequences. They are delimited by triple double quotes:
 
 ```java
 String html = """
@@ -198,7 +198,7 @@ String query = """
 ### Escaping in Text Blocks
 
 Most escape sequences work normally. The `\` at the end of a line prevents a line break, and `\s`
-produces a single space (useful for preserving trailing whitespace):
+Produces a single space (useful for preserving trailing whitespace):
 
 ```java
 String text = """
@@ -219,8 +219,8 @@ String sub = s.substring(7, 12); // "World"
 
 :::info
 Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
-could cause memory leaks (the original large string could not be GC'd if a small substring was
-retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`.
+Could cause memory leaks (the original large string could not be GC'd if a small substring was
+Retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`.
 :::
 
 ### Split and Join
@@ -240,7 +240,7 @@ String joined = String.join(", ", parts);
 ```
 
 `split(String regex)` compiles the regex pattern every call. If you split the same pattern
-repeatedly in a hot path, compile the `Pattern` once and reuse it:
+Repeatedly in a hot path, compile the `Pattern` once and reuse it:
 
 ```java
 private static final Pattern COMMA = Pattern.compile(",");
@@ -284,7 +284,7 @@ String.format("%2$s is %1$d years old", age, name);
 ## The `Character` Class
 
 `Character` wraps a single `char` value. It provides static utility methods for classification and
-conversion:
+Conversion:
 
 ```java
 // Classification
@@ -304,7 +304,7 @@ char[] chars = Character.toChars(0x1F600); // 😀 (surrogate pair)
 
 Java's `char` is a UTF-16 code unit (16 bits). Characters outside the Basic Multilingual Plane (BMP)
 — emoji, rare CJK characters, mathematical symbols — require **surrogate pairs** (two `char`
-values). Working with `char` directly on such strings will produce incorrect results. Use code point
+Values). Working with `char` directly on such strings will produce incorrect results. Use code point
 APIs instead:
 
 ```java
@@ -321,13 +321,13 @@ emoji.codePoints().forEach(cp -> {
 
 :::warning
 Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
-pairs. Use `codePoints()`, `codePointAt()`, or iterate with `Character.isHighSurrogate` checks.
+Pairs. Use `codePoints()``codePointAt()`Or iterate with `Character.isHighSurrogate` checks.
 :::
 
 ## Regular Expressions
 
 Java's regex engine is in `java.util.regex`. The two primary classes are `Pattern` (compiled
-representation) and `Matcher` (stateful engine that performs match operations against input).
+Representation) and `Matcher` (stateful engine that performs match operations against input).
 
 ### Pattern and Matcher
 
@@ -350,25 +350,25 @@ while (matcher.find()) {
 
 ### Predefined Character Classes
 
-| Expression | Meaning                                 |
+| Expression | Meaning |
 | ---------- | --------------------------------------- |
-| `.`        | Any character (except line terminators) |
-| `\d`       | Digit `[0-9]`                           |
-| `\D`       | Non-digit                               |
-| `\s`       | Whitespace                              |
-| `\S`       | Non-whitespace                          |
-| `\w`       | Word character `[a-zA-Z_0-9]`           |
-| `\W`       | Non-word character                      |
+| `.` | Any character (except line terminators) |
+| `\d` | Digit `[0-9]` |
+| `\D` | Non-digit |
+| `\s` | Whitespace |
+| `\S` | Non-whitespace |
+| `\w` | Word character `[a-zA-Z_0-9]` |
+| `\W` | Non-word character |
 
 ### Quantifiers
 
-| Quantifier   | Greedy   | Reluctant | Possessive | Meaning |
+| Quantifier | Greedy | Reluctant | Possessive | Meaning |
 | ------------ | -------- | --------- | ---------- | ------- |
-| Zero or one  | `X?`     | `X??`     | `X?+`      |         |
-| Zero or more | `X*`     | `X*?`     | `X*+`      |         |
-| One or more  | `X+`     | `X+?`     | `X++`      |         |
-| Exactly n    | `X{n}`   | `X{n}?`   | `X{n}+`    |         |
-| n to m       | `X{n,m}` | `X{n,m}?` | `X{n,m}+`  |         |
+| Zero or one | `X?` | `X??` | `X?+` | |
+| Zero or more | `X*` | `X*?` | `X*+` | |
+| One or more | `X+` | `X+?` | `X++` | |
+| Exactly n | `X{n}` | `X{n}?` | `X{n}+` | |
+| n to m | `X{n,m}` | `X{n,m}?` | `X{n,m}+` | |
 
 ### Common Patterns
 
@@ -419,16 +419,16 @@ public boolean isValidEmail(String input) {
 
 ### UTF-8, UTF-16, and ISO-8859-1
 
-| Encoding   | Variable width | Bytes per char (typical) | Notes                        |
+| Encoding | Variable width | Bytes per char (typical) | Notes |
 | ---------- | -------------- | ------------------------ | ---------------------------- |
-| UTF-8      | Yes            | 1-4                      | Dominant on the web, wire    |
-| UTF-16     | Yes            | 2-4                      | Java internal representation |
-| UTF-32     | No             | 4                        | Fixed width, memory-heavy    |
-| ISO-8859-1 | No             | 1                        | Latin-1, lossy for non-Latin |
-| ASCII      | No             | 1                        | Subset of UTF-8 and Latin-1  |
+| UTF-8 | Yes | 1-4 | Dominant on the web, wire |
+| UTF-16 | Yes | 2-4 | Java internal representation |
+| UTF-32 | No | 4 | Fixed width, memory-heavy |
+| ISO-8859-1 | No | 1 | Latin-1, lossy for non-Latin |
+| ASCII | No | 1 | Subset of UTF-8 and Latin-1 |
 
 Java's `String` stores text as UTF-16 code units internally. When converting to/from bytes (for I/O,
-network, storage), you must specify the charset.
+Network, storage), you must specify the charset.
 
 ### Encoding and Decoding
 
@@ -467,8 +467,8 @@ CharsetEncoder strict = StandardCharsets.UTF_8.newEncoder()
 
 :::warning
 Never rely on the platform default charset. It varies by operating system and locale
-setting. A program that works on Linux (UTF-8 default) will mangle data on Windows (Windows-1252
-default) if you use `getBytes()` or `new String(byte[])` without an explicit charset. Always use
+Setting. A program that works on Linux (UTF-8 default) will mangle data on Windows (Windows-1252
+Default) if you use `getBytes()` or `new String(byte[])` without an explicit charset. Always use
 `StandardCharsets.UTF_8` or a specific `Charset` constant.
 :::
 
@@ -483,21 +483,21 @@ String s = String.format("Name: %s, Age: %d, Balance: $%,.2f", "Alice", 30, 1234
 // "Name: Alice, Age: 30, Balance: $12,345.68"
 ```
 
-| Specifier | Meaning                          | Example                 |
+| Specifier | Meaning | Example |
 | --------- | -------------------------------- | ----------------------- |
-| `%s`      | String                           | `"hello"`               |
-| `%d`      | Decimal integer                  | `42`                    |
-| `%f`      | Decimal floating point           | `3.141593`              |
-| `%,d`     | Decimal with comma separator     | `1,234,567`             |
-| `%x`      | Hexadecimal                      | `ff`                    |
-| `%o`      | Octal                            | `377`                   |
-| `%b`      | Boolean                          | `true`                  |
-| `%c`      | Character                        | `A`                     |
-| `%n`      | Platform-specific line separator |                         |
-| `%%`      | Literal percent                  | `%`                     |
-| `%20s`    | Right-pad string to width 20     | `"              hello"` |
-| `%-20s`   | Left-pad string to width 20      | `"hello              "` |
-| `%05d`    | Zero-pad integer to width 5      | `00042`                 |
+| `%s` | String | `"hello"` |
+| `%d` | Decimal integer | `42` |
+| `%f` | Decimal floating point | `3.141593` |
+| `%,d` | Decimal with comma separator | `1,234,567` |
+| `%x` | Hexadecimal | `ff` |
+| `%o` | Octal | `377` |
+| `%b` | Boolean | `true` |
+| `%c` | Character | `A` |
+| `%n` | Platform-specific line separator | |
+| `%%` | Literal percent | `%` |
+| `%20s` | Right-pad string to width 20 | `"              hello"` |
+| `%-20s` | Left-pad string to width 20 | `"hello              "` |
+| `%05d` | Zero-pad integer to width 5 | `00042` |
 
 ### `MessageFormat`
 
@@ -521,8 +521,8 @@ String result = template.formatted("Alice", 5);
 ## `StringTokenizer` (Legacy)
 
 `StringTokenizer` predates `String.split()` and `Pattern`. It is retained for backward compatibility
-but should not be used in new code. It does not support regex, cannot handle empty tokens, and has
-no way to limit splits.
+But should not be used in new code. It does not support regex, cannot handle empty tokens, and has
+No way to limit splits.
 
 ```java
 // LEGACY — do not use
@@ -644,8 +644,8 @@ public static String reverseCodePoints(String s) {
 ### String Deduplication (JDK 8u20+)
 
 G1 GC can deduplicate strings on the heap. When enabled, GC identifies `String` objects whose
-backing `byte[]` is identical and points them to the same array. This is a GC-time optimization, not
-a runtime API.
+Backing `byte[]` is identical and points them to the same array. This is a GC-time optimization, not
+A runtime API.
 
 ```bash
 # Enable string deduplication with G1
@@ -653,14 +653,14 @@ java -XX:+UseG1GC -XX:+StringDeduplication ...
 ```
 
 Deduplication reduces memory usage without any code changes. It is most effective for applications
-with large heaps and many duplicate strings (e.g., web servers processing similar requests, XML/JSON
-parsers).
+With large heaps and many duplicate strings (e.g., web servers processing similar requests, XML/JSON
+Parsers).
 
 ### Unicode Normalization
 
 The same logical text can have different binary representations in Unicode. For example, `"é"` can
-be a single code point (U+00E9) or `e` + combining accent (U+0065 + U+0301). These are visually
-identical but `String.equals()` returns `false`.
+Be a single code point (U+00E9) or `e` + combining accent (U+0065 + U+0301). These are visually
+Identical but `String.equals()` returns `false`.
 
 ```java
 import java.text.Normalizer;
@@ -676,12 +676,12 @@ String b = Normalizer.normalize(input2, Normalizer.Form.NFC);
 boolean equal = a.equals(b);
 ```
 
-| Form | Description                 | Use case                         |
+| Form | Description | Use case |
 | ---- | --------------------------- | -------------------------------- |
-| NFC  | Canonical composition       | Default for most text processing |
-| NFD  | Canonical decomposition     | Searching, sorting, comparison   |
-| NFKC | Compatibility composition   | Fuzzy matching                   |
-| NFKD | Compatibility decomposition | Stripping diacritics             |
+| NFC | Canonical composition | Default for most text processing |
+| NFD | Canonical decomposition | Searching, sorting, comparison |
+| NFKC | Compatibility composition | Fuzzy matching |
+| NFKD | Compatibility decomposition | Stripping diacritics |
 
 ### Stripping Diacritics
 
@@ -745,9 +745,9 @@ public static String safeTrim(String s) {
 ### Substring Memory Leak (Pre-JDK 7u6)
 
 Prior to JDK 7u6, `String.substring()` shared the backing `char[]` with the original string. If you
-extracted a small substring from a very large string and held a reference to the substring, the
-entire large `char[]` remained in memory. This was fixed in JDK 7u6, where `substring` now copies
-the characters into a new array.
+Extracted a small substring from a very large string and held a reference to the substring, the
+Entire large `char[]` remained in memory. This was fixed in JDK 7u6, where `substring` now copies
+The characters into a new array.
 
 ### Regex Backtracking Catastrophe
 
@@ -822,7 +822,7 @@ System.out.println(h1 == h2); // true
 ### String Layout in Memory (JDK 9+ Compact Strings)
 
 Before JDK 9, `String` stored characters in a `char[]` (2 bytes per character). JDK 9 introduced
-compact strings — the backing storage is now `byte[]` with a `coder` flag:
+Compact strings — the backing storage is now `byte[]` with a `coder` flag:
 
 ```
 String object layout:
@@ -838,7 +838,7 @@ String object layout:
 ### Substring Behavior (JDK 7u6+)
 
 Since JDK 7u6, `substring` copies the relevant character range into a new `byte[]`. Before that,
-substring shared the backing array with the original string, which could cause memory leaks:
+Substring shared the backing array with the original string, which could cause memory leaks:
 
 ```java
 // JDK 7u6+ — safe, copies data
@@ -941,3 +941,11 @@ List<String> lines = text.lines().collect(Collectors.toList());
 "".isEmpty();       // true
 "   ".isEmpty();    // false — contains whitespace characters
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

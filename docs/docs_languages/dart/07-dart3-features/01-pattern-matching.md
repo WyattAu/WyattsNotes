@@ -11,22 +11,22 @@ slug: pattern-matching
 ## Pattern Matching Overview
 
 Pattern matching in Dart 3 is a compile-time mechanism for decomposing and inspecting values. A
-pattern is a syntactic construct that describes the **shape** of a value — its type, its structure,
-and the relationships between its parts. When a value is tested against a pattern, the compiler
-either matches (the value conforms) or refutes (the value does not conform).
+Pattern is a syntactic construct that describes the **shape** of a value — its type, its structure,
+And the relationships between its parts. When a value is tested against a pattern, the compiler
+Either matches (the value conforms) or refutes (the value does not conform).
 
 This is not a new concept in language design. Rust has had irrefutable pattern matching since 1.0,
 Haskell has had pattern matching since its inception, and Scala has had extractors for over a
-decade. What Dart 3 brings is a unified pattern system that works across switch statements, if-case
-expressions, for-in loops, variable declarations, and catch clauses.
+Decade. What Dart 3 brings is a unified pattern system that works across switch statements, if-case
+Expressions, for-in loops, variable declarations, and catch clauses.
 
 ### Refutable vs Irrefutable Patterns
 
 This distinction is foundational. Get this wrong and you will write code that crashes at runtime.
 
 **Irrefutable patterns** always match any value of the given type. The compiler enforces that the
-value can never fail to match. These are allowed anywhere a pattern is accepted — variable
-declarations, for-in loops, and function parameters.
+Value can never fail to match. These are allowed anywhere a pattern is accepted — variable
+Declarations, for-in loops, and function parameters.
 
 ```dart
 // Irrefutable: any int matches 'var x'
@@ -40,8 +40,8 @@ var (count, label) = (3, 'items');
 ```
 
 **Refutable patterns** may fail to match. The compiler requires them only in contexts where failure
-is handled — switch cases, if-case, and catch clauses. Using a refutable pattern in a variable
-declaration is a compile error because there is no fallback path.
+Is handled — switch cases, if-case, and catch clauses. Using a refutable pattern in a variable
+Declaration is a compile error because there is no fallback path.
 
 ```dart
 // Refutable: only matches if the value is exactly 42
@@ -62,27 +62,27 @@ if (x case int n when n > 0) {
 
 Patterns are not limited to switch statements. Dart 3 allows patterns in five contexts:
 
-| Context              | Pattern Type               | Example                        |
+| Context | Pattern Type | Example |
 | -------------------- | -------------------------- | ------------------------------ |
-| Switch cases         | Refutable                  | `case [a, b]:`                 |
-| if-case              | Refutable                  | `if (x case [a, b])`           |
-| for-in               | Irrefutable (each element) | `for (var (k, v) in pairs)`    |
-| Variable declaration | Irrefutable                | `var (a, b) = record`          |
-| catch clauses        | Refutable                  | `on FormatException catch (e)` |
+| Switch cases | Refutable | `case [a, b]:` |
+| if-case | Refutable | `if (x case [a, b])` |
+| for-in | Irrefutable (each element) | `for (var (k, v) in pairs)` |
+| Variable declaration | Irrefutable | `var (a, b) = record` |
+| catch clauses | Refutable | `on FormatException catch (e)` |
 
 The compiler enforces the refutability constraint at each site. A refutable pattern in a variable
-declaration produces a hard error. An irrefutable pattern in a switch case is allowed but pointless
+Declaration produces a hard error. An irrefutable pattern in a switch case is allowed but pointless
 (it always matches, making subsequent cases unreachable).
 
 ## Logical Patterns
 
 Logical patterns combine other patterns using boolean logic. They are the pattern-matching
-equivalent of `||`, `&&`, and relational operators.
+Equivalent of `||``&&`And relational operators.
 
 ### Or Patterns (`||`)
 
 The or-pattern matches if **any** of its sub-patterns match. This is the pattern version of a
-fallthrough switch. The sub-patterns must bind the same variables (same names, same types).
+Fallthrough switch. The sub-patterns must bind the same variables (same names, same types).
 
 ```dart
 String describe(int value) => switch (value) {
@@ -104,8 +104,8 @@ bool isReadOnly(HttpMethod method) => switch (method) {
 ```
 
 **Binding consistency**: All branches of an or-pattern must bind the same variables. The compiler
-enforces this because it cannot know which branch matched at compile time, so it must guarantee that
-all bindings are valid regardless.
+Enforces this because it cannot know which branch matched at compile time, so it must guarantee that
+All bindings are valid regardless.
 
 ```dart
 // ERROR: different variable names in or-pattern branches
@@ -124,7 +124,7 @@ switch (record) {
 ### And Patterns (`&&`)
 
 The and-pattern matches if **both** sub-patterns match. The second sub-pattern can reference
-bindings from the first. This enables type refinement — match a general type, then narrow it.
+Bindings from the first. This enables type refinement — match a general type, then narrow it.
 
 ```dart
 switch (value) {
@@ -138,14 +138,14 @@ switch (value) {
 ```
 
 The and-pattern evaluates left-to-right. The right-hand side can use variables bound by the
-left-hand side. This ordering is not just syntactic — it is semantic. The compiler generates code
-that first tests the left pattern, and only if it succeeds, tests the right pattern against the
-bound variables.
+Left-hand side. This ordering is not just syntactic — it is semantic. The compiler generates code
+That first tests the left pattern, and only if it succeeds, tests the right pattern against the
+Bound variables.
 
 ### Relational Patterns
 
-Relational patterns use `==`, `!=`, `<`, `>`, `<=`, `>=` to compare the matched value against a
-constant. These are not general-purpose — the right-hand side must be a compile-time constant.
+Relational patterns use `==``!=``<``>``<=``>=` to compare the matched value against a
+Constant. These are not general-purpose — the right-hand side must be a compile-time constant.
 
 ```dart
 String categorize(int score) => switch (score) {
@@ -190,7 +190,7 @@ String categorize(int score) => switch (score) {
 ## Cast Patterns
 
 The cast pattern (`as`) performs a type cast and binds the result. This is the pattern-matching
-equivalent of `as`, but with the safety of a runtime check embedded in the pattern itself.
+Equivalent of `as`But with the safety of a runtime check embedded in the pattern itself.
 
 ### Basic Cast Pattern
 
@@ -211,7 +211,7 @@ void process(Object value) {
 ```
 
 Wait — `case String s` is a **type test pattern**, not a cast pattern. The cast pattern uses `as`
-explicitly. Let me be precise:
+Explicitly. Let me be precise:
 
 ```dart
 // Type test pattern (is-check)
@@ -229,13 +229,13 @@ if (value case var s as String) {
 The difference matters. The type test pattern (`String s`) only matches if the value is already a
 `String`. The cast pattern (`var s as String`) attempts to cast — if the value is a subtype of
 `String` (which is impossible since `String` is sealed), it succeeds; otherwise it throws. In
-practice, for sealed types like `String`, they behave identically. The cast pattern becomes relevant
-with custom type hierarchies where implicit upcasts exist.
+Practice, for sealed types like `String`They behave identically. The cast pattern becomes relevant
+With custom type hierarchies where implicit upcasts exist.
 
 ### Cast Pattern with Null Safety
 
 The cast pattern is the pattern equivalent of `as?` in other languages — except Dart's `as` throws
-on failure. The cast pattern will throw at runtime if the cast fails, just like `as`.
+On failure. The cast pattern will throw at runtime if the cast fails, just like `as`.
 
 ```dart
 // This throws if value is not a List&lt;int&gt;
@@ -251,13 +251,13 @@ if (value is List&lt;int&gt;) {
 ```
 
 **When to use cast patterns**: Use them when you need to narrow a `dynamic` or `Object` to a
-specific type and you are certain the cast will succeed (or you want an exception on failure). Use
-type test patterns when you want to conditionally handle a specific type.
+Specific type and you are certain the cast will succeed (or you want an exception on failure). Use
+Type test patterns when you want to conditionally handle a specific type.
 
 ## Null-Check and Null-Assert Patterns
 
 Dart's null safety is sound at compile time, but pattern matching provides runtime null
-discrimination within nullable contexts.
+Discrimination within nullable contexts.
 
 ### Null-Check Pattern (`?`)
 
@@ -275,7 +275,7 @@ if (maybeName case var name?) {
 ```
 
 The `?` suffix on the variable pattern is the null-check. Without it, `var name` would bind
-`maybeName` as `String?`, and you would still need null-aware access inside the body.
+`maybeName` as `String?`And you would still need null-aware access inside the body.
 
 This is equivalent to:
 
@@ -300,7 +300,7 @@ if (maybeList case List&lt;int&gt; items?) {
 ### Null-Assert Pattern (`!`)
 
 The null-assert pattern matches only non-null values, and throws if the value is null. This is the
-pattern equivalent of the `!` postfix operator.
+Pattern equivalent of the `!` postfix operator.
 
 ```dart
 String? name;
@@ -312,8 +312,8 @@ if (name case var n!) {
 ```
 
 **Why use null-assert patterns**: They are useful in contexts where you have external knowledge that
-a value is non-null, but the type system cannot prove it. For example, after checking a condition
-that the analyzer cannot follow:
+A value is non-null, but the type system cannot prove it. For example, after checking a condition
+That the analyzer cannot follow:
 
 ```dart
 void process(Map&lt;String, dynamic&gt; json) {
@@ -325,7 +325,7 @@ void process(Map&lt;String, dynamic&gt; json) {
 ```
 
 Use `?` (null-check) when you want to handle the null case. Use `!` (null-assert) when null is a
-programming error and should crash.
+Programming error and should crash.
 
 ### Null Patterns in Switch
 
@@ -338,13 +338,13 @@ String describe(String? value) => switch (value) {
 ```
 
 The `null` literal pattern matches the null value. The `String s` case implicitly does not match
-null because `String` is non-nullable. The compiler handles this exhaustiveness for you — every
-possible value of `String?` is covered.
+Null because `String` is non-nullable. The compiler handles this exhaustiveness for you — every
+Possible value of `String?` is covered.
 
 ## Constant Patterns
 
 Constant patterns match against compile-time constant values. These are the simplest patterns — they
-test for equality.
+Test for equality.
 
 ### Literal Constants
 
@@ -427,13 +427,13 @@ switch (value) {
 ```
 
 The `_` in a variable declaration context is special — it tells the compiler you intentionally do
-not need the value. In a switch, `_` is the catch-all default case.
+Not need the value. In a switch, `_` is the catch-all default case.
 
 ### Double Wildcard (`__`)
 
 When `_` is used as a variable name (not in a pattern context), Dart warns about unused variables.
 The `__` pattern explicitly suppresses this warning when you have multiple wildcards and want to
-make it clear you are intentionally discarding multiple values.
+Make it clear you are intentionally discarding multiple values.
 
 ```dart
 // _ alone in a non-pattern context generates a warning
@@ -453,12 +453,12 @@ switch (record) {
 ```
 
 In practice, `_` as a wildcard in pattern context does not generate warnings. The `__` form exists
-for cases where the analyzer might be confused about intent. Use `_` unless you get a warning.
+For cases where the analyzer might be confused about intent. Use `_` unless you get a warning.
 
 ## Variable Patterns
 
 Variable patterns bind a matched value to a new variable. They are the most basic pattern — they
-always match.
+Always match.
 
 ### `var` Pattern
 
@@ -486,7 +486,7 @@ if (value case int n) {
 ### Destructuring with Variable Binding
 
 Variable patterns become powerful when combined with destructuring patterns. Each variable in the
-pattern binds to the corresponding part of the matched value:
+Pattern binds to the corresponding part of the matched value:
 
 ```dart
 final (name, age, email) = ('Alice', 30, 'alice@example.com');
@@ -499,7 +499,7 @@ final (String name, int age, String email) = record;
 ## Object Patterns
 
 Object patterns destructure an object by matching its properties. They use the object's getter
-methods to extract values.
+Methods to extract values.
 
 ### Basic Object Destructuring
 
@@ -548,7 +548,7 @@ final Rectangle(
 ### Positional vs Named Fields
 
 Object patterns always use named getters. There is no positional form for object patterns —
-positional patterns are for lists and records.
+Positional patterns are for lists and records.
 
 ```dart
 class Person {
@@ -620,7 +620,7 @@ print(last);   // 5
 ```
 
 The rest pattern binds a `List` of the remaining elements. It can appear at most once in a list
-pattern, and it can appear at the beginning, middle, or end.
+Pattern, and it can appear at the beginning, middle, or end.
 
 ### Skip Pattern with Wildcard
 
@@ -670,7 +670,7 @@ final [String name, int age] = ['Alice', 30];
 ## Map Patterns
 
 Map patterns match against map structure — they check for the presence of specific keys and bind the
-corresponding values.
+Corresponding values.
 
 ### Basic Map Destructuring
 
@@ -727,7 +727,7 @@ if (maybeConfig case {'theme': String theme, 'debug': bool debug}?) {
 ## Record Patterns
 
 Records are Dart 3's new anonymous aggregate types. Record patterns destructure them by position or
-name.
+Name.
 
 ### Positional Record Destructuring
 
@@ -770,7 +770,7 @@ final (int x, String s, {double d}) = (42, 'hello', d: 3.14);
 ```
 
 The type annotations serve as runtime type checks. If the value at that position does not match the
-declared type, the pattern refutes.
+Declared type, the pattern refutes.
 
 ### Record Patterns in Switch
 
@@ -787,7 +787,7 @@ String describe(Object record) => switch (record) {
 ## Sealed Class Exhaustiveness
 
 Sealed classes and pattern matching are designed to work together. When you switch on a sealed
-class, the compiler verifies that every subtype is handled.
+Class, the compiler verifies that every subtype is handled.
 
 ### Exhaustive Switch on Sealed Types
 
@@ -812,8 +812,8 @@ String describe(Result&lt;int&gt; result) => switch (result) {
 ```
 
 The compiler enumerates all direct subtypes of the sealed class in the same library. If you miss
-one, you get a compile error. If you add a new subtype, every switch on the sealed class breaks at
-compile time — not at runtime.
+One, you get a compile error. If you add a new subtype, every switch on the sealed class breaks at
+Compile time — not at runtime.
 
 ### Why `default` is Discouraged
 
@@ -836,20 +836,20 @@ String describe(Result&lt;int&gt; result) => switch (result) {
 ### Adding a New Subtype
 
 When you add `class Cancelled&lt;T&gt; extends Result&lt;T&gt;` to the sealed hierarchy, the
-compiler flags every switch that does not handle it:
+Compiler flags every switch that does not handle it:
 
 ```
 error: The type 'Cancelled<int>' is not exhaustively handled by the switch cases.
 ```
 
 This is the entire motivation for sealed classes — they make the set of subtypes enumerable at
-compile time, enabling exhaustive pattern matching. Without sealed, you would need `default` and
-lose compile-time safety.
+Compile time, enabling exhaustive pattern matching. Without sealed, you would need `default` and
+Lose compile-time safety.
 
 ## if-case
 
 The `if-case` construct allows pattern matching without a full switch statement. It is useful when
-you want to match a single pattern and handle the non-matching case with normal control flow.
+You want to match a single pattern and handle the non-matching case with normal control flow.
 
 ### Basic if-case
 
@@ -864,7 +864,7 @@ if (response case [int code, String message]) {
 ### Guard Clauses with `when`
 
 The `when` keyword adds a boolean guard to any pattern case. The guard runs after the pattern
-matches:
+Matches:
 
 ```dart
 if (response case [int code, _] when code >= 400) {
@@ -903,12 +903,12 @@ if (value case int n when n > 0) {
 ```
 
 The `when` guard is not part of the pattern — it is a separate boolean expression evaluated after
-the pattern matches. Variables bound by the pattern are available in the guard expression.
+The pattern matches. Variables bound by the pattern are available in the guard expression.
 
 ## For-in Patterns
 
 The for-in loop accepts a pattern in its variable declaration. Each element from the iterable is
-matched against the pattern.
+Matched against the pattern.
 
 ### Destructuring Records in a Loop
 
@@ -986,7 +986,7 @@ final [a, b, ...rest] = someList;
 ```
 
 This is the single most common mistake. The compiler catches it, but the error message can be
-confusing if you do not understand the refutable/irrefutable distinction.
+Confusing if you do not understand the refutable/irrefutable distinction.
 
 ### 2. Or-Pattern Binding Mismatch
 
@@ -1048,7 +1048,7 @@ class Secret {
 ```
 
 Object patterns use the object's **public API** (getters). They cannot access private fields, even
-from the same library. They access the getter, not the underlying field.
+From the same library. They access the getter, not the underlying field.
 
 ### 5. Rest Pattern in the Middle
 
@@ -1075,7 +1075,7 @@ if (maybeName case var name?) {
 ```
 
 The variable bound by a pattern is only in scope within the case body. The `else` branch does not
-have access to it.
+Have access to it.
 
 ### 7. Switch Expression vs Switch Statement
 
@@ -1106,7 +1106,7 @@ But only switch **expressions** return values. Mixing them up is a common source
 ### 8. Guard Clauses and Exhaustiveness
 
 A `when` guard does not count toward exhaustiveness. If all your cases have guards, the compiler
-considers the switch non-exhaustive:
+Considers the switch non-exhaustive:
 
 ```dart
 // ERROR — not exhaustive
@@ -1145,8 +1145,8 @@ void process(dynamic value) {
 ```
 
 Dart's generics are reified at runtime. `List&lt;int&gt;` and `List&lt;String&gt;` are different
-types. A `List&lt;int&gt;` pattern only matches a list whose runtime type argument is `int`. This is
-correct behavior but surprises developers coming from languages with type erasure (Java).
+Types. A `List&lt;int&gt;` pattern only matches a list whose runtime type argument is `int`. This is
+Correct behavior but surprises developers coming from languages with type erasure (Java).
 
 ### 10. Map Pattern Key Type Must Match
 
@@ -1158,3 +1158,11 @@ if (map case {1: var one}) {
 }
 // if (map case {'1': var one}) { } // ERROR — String key for int-keyed map
 ```
+
+## Summary
+
+<!-- TODO: Add a summary for this topic -->
+
+## Worked Examples
+
+<!-- TODO: Add worked examples for this topic -->

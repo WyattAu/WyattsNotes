@@ -23,7 +23,7 @@ $$\text{(i)}\; \log(ab) = \log a + \log b \qquad \text{(ii)}\; \log(a + b) = \lo
 
 **(i)** True. This is the product law of logarithms: $\log(ab) = \log a + \log b$.
 
-**(ii)** False in general. Counterexample: let $a = b = 1$ with base 10.
+**(ii)** False . Counterexample: let $a = b = 1$ with base 10.
 
 $\log(1 + 1) = \log 2 \approx 0.301$.
 
@@ -43,7 +43,7 @@ Solve $\log_3(x - 2) + \log_3(x + 1) = 1$.
 
 **Solution:**
 
-Domain: $x - 2 > 0$ and $x + 1 > 0$, so $x > 2$.
+Domain: $x - 2 > 0$ and $x + 1 > 0$So $x > 2$.
 
 Using the product law:
 
@@ -71,7 +71,7 @@ A common mistake is forgetting to check the domain and accepting both roots.
 
 **Question:**
 
-Given that $\log_2 3 = a$ and $\log_2 5 = b$, express $\log_{15} 4$ in terms of $a$ and $b$.
+Given that $\log_2 3 = a$ and $\log_2 5 = b$Express $\log_{15} 4$ in terms of $a$ and $b$.
 
 **Solution:**
 
@@ -115,7 +115,7 @@ Solve $2\log_x 4 - \log_4 x = 1$.
 
 Using change of base: $\log_x 4 = \dfrac{\log_4 4}{\log_4 x} = \dfrac{1}{\log_4 x}$.
 
-Let $u = \log_4 x$ (domain: $x > 0$, $x \neq 1$, so $u \neq 0$).
+Let $u = \log_4 x$ (domain: $x > 0$$x \neq 1$So $u \neq 0$).
 
 $$\frac{2}{u} - u = 1$$
 
@@ -177,7 +177,7 @@ $$x + 4 > 8 - x$$
 
 $$2x > 4 \implies x > 2$$
 
-Domain: $x + 4 > 0$ and $8 - x > 0$, giving $-4 < x < 8$.
+Domain: $x + 4 > 0$ and $8 - x > 0$Giving $-4 < x < 8$.
 
 Combining: $2 < x < 8$.
 
@@ -217,7 +217,7 @@ Solve $\log_2(x + 4) + \log_2(x - 2) = 3$.
 
 **Solution:**
 
-Domain: $x + 4 > 0$ and $x - 2 > 0$, so $x > 2$.
+Domain: $x + 4 > 0$ and $x - 2 > 0$So $x > 2$.
 
 Using the product law:
 
@@ -282,7 +282,7 @@ The earthquake is $10^2 = 100$ times more powerful.
 
 **Question:**
 
-Given that $\log_3 2 = a$, express $\log_3 16 - \log_3 4$ in terms of $a$.
+Given that $\log_3 2 = a$Express $\log_3 16 - \log_3 4$ in terms of $a$.
 
 **Solution:**
 
@@ -304,7 +304,7 @@ Solve $\log_{0.5}(2x - 1) > \log_{0.5}(x + 2)$.
 
 **Solution:**
 
-Domain: $2x - 1 > 0$ and $x + 2 > 0$, giving $x > \dfrac{1}{2}$ and $x > -2$, so $x > \dfrac{1}{2}$.
+Domain: $2x - 1 > 0$ and $x + 2 > 0$Giving $x > \dfrac{1}{2}$ and $x > -2$So $x > \dfrac{1}{2}$.
 
 Since the base $0.5$ is between 0 and 1, the logarithmic function is **decreasing**. Therefore the inequality **reverses**:
 
@@ -324,7 +324,7 @@ Solution: $x \in \left(\dfrac{1}{2},\; 3\right)$.
 
 **Question:**
 
-Given $\log_4 5 = a$, find $\log_8 10$ in terms of $a$.
+Given $\log_4 5 = a$Find $\log_8 10$ in terms of $a$.
 
 **Solution:**
 
@@ -363,7 +363,7 @@ Since $y > 0$: $y = -1 + \sqrt{33}$.
 
 $x = y + 2 = 1 + \sqrt{33}$.
 
-Check domain: $x > 0$, $y > 0$, $x - y > 0$. All satisfied.
+Check domain: $x > 0$$y > 0$$x - y > 0$. All satisfied.
 
 ---
 
@@ -395,9 +395,9 @@ $$x = \frac{\ln 10}{\ln(4/5)} \approx \frac{2.303}{-0.223} \approx -10.33$$
 
 1. **Forgetting domain restrictions in logarithmic equations.** The argument of a logarithm must be strictly positive. After solving a logarithmic equation, always check that each solution satisfies the domain conditions. Solutions that make any log argument zero or negative must be rejected.
 
-2. **Not reversing the inequality for bases between 0 and 1.** If $\log_b A > \log_b B$ and $0 < b < 1$, then $A < B$ (not $A > B$). This is because the log function is decreasing when the base is between 0 and 1.
+2. **Not reversing the inequality for bases between 0 and 1.** If $\log_b A > \log_b B$ and $0 < b < 1$Then $A < B$ (not $A > B$). This is because the log function is decreasing when the base is between 0 and 1.
 
-3. **Incorrectly applying the power law.** $\log(a^b) = b \log a$, but $(\log a)^b \neq b \log a$. The power law applies to the argument, not to the logarithm itself.
+3. **Incorrectly applying the power law.** $\log(a^b) = b \log a$But $(\log a)^b \neq b \log a$. The power law applies to the argument, not to the logarithm itself.
 
 4. **Assuming $\log a + \log b = \log(a + b)$.** This is false. The correct law is $\log a + \log b = \log(ab)$. This is one of the most common algebraic errors in logarithms.
 
@@ -459,13 +459,13 @@ Let $f(x) = 2\log_3(x - 1) - \log_3(x^2 - 1)$.
 
 (c) $\log_3 \dfrac{x - 1}{x + 1} = 1 \implies \dfrac{x - 1}{x + 1} = 3 \implies x - 1 = 3x + 3 \implies -2x = 4 \implies x = -2$.
 
-But $x > 1$, so $x = -2$ is rejected. No solution.
+But $x > 1$So $x = -2$ is rejected. No solution.
 
 ---
 
 ### DSE-3
 
-The number of bacteria in a culture is given by $N = 1000 \times 2^{0.1t}$, where $t$ is the time in hours.
+The number of bacteria in a culture is given by $N = 1000 \times 2^{0.1t}$Where $t$ is the time in hours.
 
 (a) Find the initial number of bacteria. (1 mark)
 (b) Find the number of bacteria after 10 hours, giving your answer in exact form. (2 marks)
@@ -489,7 +489,7 @@ $t > \dfrac{\log 50}{0.1 \log 2} = \dfrac{10 \log 50}{\log 2} = \dfrac{10(\log 1
 
 ### DSE-4
 
-If $\log_a 2 = p$ and $\log_a 5 = q$, express the following in terms of $p$ and $q$:
+If $\log_a 2 = p$ and $\log_a 5 = q$Express the following in terms of $p$ and $q$:
 
 (a) $\log_a 10$ (1 mark)
 (b) $\log_a 0.04$ (2 marks)
@@ -514,7 +514,7 @@ Solve the inequality $\log_2(x + 3) + \log_2(x - 1) \leq 3$.
 
 **Solution:**
 
-Domain: $x + 3 > 0$ and $x - 1 > 0$, so $x > 1$.
+Domain: $x + 3 > 0$ and $x - 1 > 0$So $x > 1$.
 
 $$\log_2[(x+3)(x-1)] \leq 3$$
 
@@ -530,4 +530,4 @@ Solution of quadratic: $-1 - 2\sqrt{3} \leq x \leq -1 + 2\sqrt{3}$.
 
 Since $-1 + 2\sqrt{3} \approx 2.46$ and we need $x > 1$:
 
-$1 < x \leq -1 + 2\sqrt{3}$, i.e. $x \in (1,\; -1 + 2\sqrt{3}]$.
+$1 < x \leq -1 + 2\sqrt{3}$I.e. $x \in (1,\; -1 + 2\sqrt{3}]$.
