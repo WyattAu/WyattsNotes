@@ -1,0 +1,76 @@
+{
+  "crawler_configs": [
+    {
+      "name": "WyattsNotes IB",
+      "index_name": "wyattsnotes_ib",
+      "start_urls": ["https://ib.wyattau.com/docs/ib"],
+      "urls_to_parse": ["https://ib.wyattau.com/docs/ib/.*"],
+      "rate_limit": 8,
+      "render_js": true,
+      "js_rendering_wait": 3000,
+      "selectors": {
+        "lvl0": "article h1",
+        "lvl1": "article h2",
+        "lvl2": "article h3",
+        "lvl3": "article h4",
+        "content": "article p, article li, article td, article blockquote, article pre"
+      },
+      "selectors_exclude": ["nav", "footer", ".theme-doc-footer", ".pagination-nav"],
+      "nb_hits": 0
+    },
+    {
+      "name": "WyattsNotes DSE",
+      "index_name": "wyattsnotes_dse",
+      "start_urls": ["https://dse.wyattau.com/docs/dse"],
+      "urls_to_parse": ["https://dse.wyattau.com/docs/dse/.*"],
+      "rate_limit": 8,
+      "render_js": true,
+      "js_rendering_wait": 3000,
+      "selectors": {
+        "lvl0": "article h1",
+        "lvl1": "article h2",
+        "lvl2": "article h3",
+        "lvl3": "article h4",
+        "content": "article p, article li, article td, article blockquote, article pre"
+      },
+      "selectors_exclude": ["nav", "footer", ".theme-doc-footer", ".pagination-nav"],
+      "nb_hits": 0
+    },
+    {
+      "name": "WyattsNotes A-Level Maths/Physics",
+      "index_name": "wyattsnotes_alevel_maths_physics",
+      "start_urls": ["https://alevel-maths-physics.wyattau.com/docs/alevel"],
+      "urls_to_parse": ["https://alevel-maths-physics.wyattau.com/docs/alevel/.*"],
+      "rate_limit": 8,
+      "render_js": true,
+      "js_rendering_wait": 3000,
+      "selectors": {
+        "lvl0": "article h1",
+        "lvl1": "article h2",
+        "lvl2": "article h3",
+        "lvl3": "article h4",
+        "content": "article p, article li, article td, article blockquote, article pre"
+      },
+      "selectors_exclude": ["nav", "footer", ".theme-doc-footer", ".pagination-nav"],
+      "nb_hits": 0
+    },
+    {
+      "name": "WyattsNotes A-Level Sciences",
+      "index_name": "wyattsnotes_alevel_sciences",
+      "start_urls": ["https://alevel-sciences.wyattau.com/docs/alevel"],
+      "urls_to_parse": ["https://alevel-sciences.wyattau.com/docs/alevel/.*"],
+      "rate_limit": 8,
+      "render_js": true,
+      "js_rendering_wait": 3000,
+      "selectors": {
+        "lvl0": "article h1",
+        "lvl1": "article h2",
+        "lvl2": "article h3",
+        "lvl3": "article h4",
+        "content": "article p, article li, article td, article blockquote, article pre"
+      },
+      "selectors_exclude": ["nav", "footer", ".theme-doc-footer", ".pagination-nav"],
+      "nb_hits": 0
+    }
+  ]
+}

@@ -1,4 +1,7 @@
 // @ts-check
+// Load .env file for local development (CI/deployment platforms set env vars directly)
+import 'dotenv-flow/config';
+
 // Shared configuration blocks for all Docusaurus sub-sites.
 // This module eliminates ~2000 lines of duplication across 8 config files.
 //
