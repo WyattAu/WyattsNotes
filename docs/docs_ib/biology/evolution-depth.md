@@ -1,6 +1,6 @@
 ---
 title: Evolution in Depth
-description: "IB Biology -- evidence for evolution, natural selection types, speciation mechanisms, adaptive radiation, convergent evolution, gradualism vs punctuated equilibrium, Hardy-Weinberg equilibrium extended, population genetics, phylogenetic trees, molecular clocks, and antibiotic resistance."
+description: "IB Biology -- evidence for evolution, natural selection types, speciation mechanisms, adaptive radiation, convergent evolution, gradualism vs punctuated"
 slug: evolution-depth
 ---
 

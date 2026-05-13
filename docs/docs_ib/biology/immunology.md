@@ -1,6 +1,6 @@
 ---
 title: Immunology
-description: "IB Biology — innate immunity, adaptive immunity, antibody structure and classes, T-cell and B-cell activation, immunological memory, vaccines, ELISA, monoclonal antibodies, organ transplantation, HIV/AIDS, autoimmune diseases, allergies, and immune disorders."
+description: "IB Biology — innate immunity, adaptive immunity, antibody structure and classes, T-cell and B-cell activation, immunological memory, vaccines, ELISA,"
 slug: immunology
 ---
 

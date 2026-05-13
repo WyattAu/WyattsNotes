@@ -1,6 +1,6 @@
 ---
 title: "Differentiation -- Diagnostic Tests"
-description: Hard diagnostic tests for differentiation covering chain rule depth, implicit differentiation pitfalls, second derivative notation, and parametric methods at A-Level standard.
+description: "Hard diagnostic tests for differentiation covering chain rule depth, implicit differentiation pitfalls, second derivative notation, and parametric methods at"
 slug: diag-differentiation
 hide_table_of_contents: true
 ---

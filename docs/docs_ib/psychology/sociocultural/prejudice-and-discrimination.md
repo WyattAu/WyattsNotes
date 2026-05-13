@@ -1,6 +1,6 @@
 ---
 title: Prejudice and Discrimination
-description: "Comprehensive coverage of the origins of prejudice, stereotype formation, stereotype threat, interventions to reduce prejudice, and key research for IB Psychology."
+description: "Comprehensive coverage of the origins of prejudice, stereotype formation, stereotype threat, interventions to reduce prejudice, and key research for IB"
 slug: prejudice-and-discrimination
 ---
 

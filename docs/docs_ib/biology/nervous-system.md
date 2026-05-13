@@ -1,6 +1,6 @@
 ---
 title: Nervous System
-description: "IB Biology — neuron structure and function, resting potential, action potential propagation, myelination, synapses, neurotransmitters, reflex arcs, sensory systems, muscle contraction, brain regions, autonomic nervous system, and endocrine integration."
+description: "IB Biology — neuron structure and function, resting potential, action potential propagation, myelination, synapses, neurotransmitters, reflex arcs, sensory"
 slug: nervous-system
 ---
 

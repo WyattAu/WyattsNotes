@@ -1,6 +1,6 @@
 ---
 title: Social Identity Theory
-description: "Comprehensive coverage of Tajfel and Turner's social identity theory, in-group and out-group dynamics, realistic conflict theory, and key research for IB Psychology."
+description: "Comprehensive coverage of Tajfel and Turner's social identity theory, in-group and out-group dynamics, realistic conflict theory, and key research for IB"
 slug: social-identity-theory
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: DSE Physics
-description: "Complete DSE Physics revision notes covering mechanics, waves and optics, electricity and magnetism, heat and gases, nuclear physics, and astronomical physics. Worked examples and exam-style problems."
+description: "Complete DSE Physics revision notes covering mechanics, waves and optics, electricity and magnetism, heat and gases, nuclear physics, and astronomical physics."
 slug: physics
 hide_table_of_contents: true
 ---

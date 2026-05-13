@@ -1,6 +1,6 @@
 ---
 title: Cognitive Level of Analysis
-description: Comprehensive coverage of the cognitive level of analysis in IB Psychology, including memory models, schema theory, reconstructive memory, thinking, and decision making.
+description: "Comprehensive coverage of the cognitive level of analysis in IB Psychology, including memory models, schema theory, reconstructive memory, thinking, and"
 slug: cognitive-level-of-analysis
 ---
 

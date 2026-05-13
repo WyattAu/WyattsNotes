@@ -1,6 +1,6 @@
 ---
 title: IB Biology
-description: "Complete IB Biology revision notes covering cell biology, molecular biology, genetics, ecology, human physiology, and plant biology. Worked examples, exam-style problems, and cross-level links to A-Level and university content."
+description: "Complete IB Biology revision notes covering cell biology, molecular biology, genetics, ecology, human physiology, and plant biology. Worked examples,"
 slug: biology
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Treatment Evaluation
-description: "Comprehensive coverage of evaluating psychological treatments including ethics, effectiveness, cultural considerations, drug therapy versus psychotherapy, and key research for IB Psychology."
+description: "Comprehensive coverage of evaluating psychological treatments including ethics, effectiveness, cultural considerations, drug therapy versus psychotherapy, and"
 slug: treatment-evaluation
 ---
 

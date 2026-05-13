@@ -1,6 +1,6 @@
 ---
 title: "Dynamics -- Diagnostic Tests"
-description: Hardest IB Physics dynamics diagnostic tests covering Newton's 3rd law pairs, limiting friction, connected objects on inclines, and multi-body equilibrium with torques.
+description: "Hardest IB Physics dynamics diagnostic tests covering Newton's 3rd law pairs, limiting friction, connected objects on inclines, and multi-body equilibrium with"
 slug: diag-dynamics
 hide_table_of_contents: true
 ---

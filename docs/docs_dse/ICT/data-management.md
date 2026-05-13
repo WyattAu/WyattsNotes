@@ -1,6 +1,6 @@
 ---
 title: Data Management
-description: "DSE ICT notes on data management covering data types and structures, database models, data validation and verification, data security, privacy legislation, data backup and recovery, big data concepts, and data ethics."
+description: "DSE ICT notes on data management covering data types and structures, database models, data validation and verification, data security, privacy legislation,"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

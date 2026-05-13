@@ -1,6 +1,6 @@
 ---
 title: Memory Models
-description: "Detailed coverage of the multi-store model, working memory model, levels of processing, reconstructive memory, schema theory, and eyewitness testimony for IB Psychology."
+description: "Detailed coverage of the multi-store model, working memory model, levels of processing, reconstructive memory, schema theory, and eyewitness testimony for IB"
 slug: memory-models
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Adolescent Development
-description: "Comprehensive coverage of identity formation, social development, risk-taking behaviour, peer influence, cultural variations in adolescence, and key research for IB Psychology."
+description: "Comprehensive coverage of identity formation, social development, risk-taking behaviour, peer influence, cultural variations in adolescence, and key research"
 slug: adolescent-development
 ---
 

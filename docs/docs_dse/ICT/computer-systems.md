@@ -1,7 +1,7 @@
 ---
 id: dse-ict-computer-systems
 title: Fundamentals of Computer Systems
-description: "DSE ICT notes covering hardware components, Von Neumann architecture, the fetch-decode-execute cycle, software types, operating systems, number systems, and data representation."
+description: "DSE ICT notes covering hardware components, Von Neumann architecture, the fetch-decode-execute cycle, software types, operating systems, number systems, and"
 slug: computer-systems
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, ICT]

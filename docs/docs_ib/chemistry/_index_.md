@@ -1,6 +1,6 @@
 ---
 title: IB Chemistry
-description: "Complete IB Chemistry revision notes covering stoichiometry, atomic theory, bonding, thermodynamics, kinetics, equilibrium, acids and bases, redox, and organic chemistry. Worked examples, exam-style problems, and cross-level links to A-Level and university content."
+description: "Complete IB Chemistry revision notes covering stoichiometry, atomic theory, bonding, thermodynamics, kinetics, equilibrium, acids and bases, redox, and organic"
 slug: chemistry
 ---
 

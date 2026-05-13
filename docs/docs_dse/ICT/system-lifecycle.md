@@ -1,6 +1,6 @@
 ---
 title: System Lifecycle
-description: "DSE ICT notes on the system development lifecycle covering analysis, design, implementation, testing, documentation, evaluation, maintenance, feasibility studies, Gantt charts, project management, change management, and stakeholder engagement."
+description: "DSE ICT notes on the system development lifecycle covering analysis, design, implementation, testing, documentation, evaluation, maintenance, feasibility"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

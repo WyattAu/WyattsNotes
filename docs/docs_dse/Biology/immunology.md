@@ -1,6 +1,6 @@
 ---
 title: Immunology
-description: "DSE Biology immunology notes covering pathogens, innate immunity, adaptive immunity, antibodies, vaccination, memory cells, autoimmune diseases, allergies, and HIV/AIDS."
+description: "DSE Biology immunology notes covering pathogens, innate immunity, adaptive immunity, antibodies, vaccination, memory cells, autoimmune diseases, allergies, and"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

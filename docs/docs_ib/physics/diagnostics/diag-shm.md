@@ -1,6 +1,6 @@
 ---
 title: "Simple Harmonic Motion -- Diagnostic Tests"
-description: Hardest IB Physics SHM diagnostic tests covering the necessary and sufficient condition for SHM, energy exchange between KE and PE, phase difference calculations, and damped resonance.
+description: "Hardest IB Physics SHM diagnostic tests covering the necessary and sufficient condition for SHM, energy exchange between KE and PE, phase difference"
 slug: diag-shm
 hide_table_of_contents: true
 ---

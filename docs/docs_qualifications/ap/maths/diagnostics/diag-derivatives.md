@@ -1,6 +1,6 @@
 ---
 title: "Derivatives -- Diagnostic Tests"
-description: Diagnostic tests targeting the hardest AP Calculus derivative questions including chain rule compositions, implicit differentiation, related rates, higher-order derivatives, and the mean value theorem.
+description: "Diagnostic tests targeting the hardest AP Calculus derivative questions including chain rule compositions, implicit differentiation, related rates,"
 slug: diag-derivatives
 hide_table_of_contents: true
 ---

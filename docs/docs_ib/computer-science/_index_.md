@@ -1,6 +1,6 @@
 ---
 title: IB Computer Science
-description: "Complete IB Computer Science revision notes covering computational thinking, system design, data structures, algorithms, networking, databases, and programming fundamentals. Worked examples, exam-style problems, and cross-level links to A-Level and university content."
+description: "Complete IB Computer Science revision notes covering computational thinking, system design, data structures, algorithms, networking, databases, and programming"
 slug: computer-science
 ---
 

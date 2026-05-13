@@ -1,6 +1,6 @@
 ---
 title: Basic Economic Concepts
-description: "DSE Economics notes on basic concepts covering scarcity, opportunity cost, production possibility frontier, specialization, division of labour, and economic systems."
+description: "DSE Economics notes on basic concepts covering scarcity, opportunity cost, production possibility frontier, specialization, division of labour, and economic"
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]

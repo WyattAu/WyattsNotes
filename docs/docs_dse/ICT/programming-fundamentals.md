@@ -1,6 +1,6 @@
 ---
 title: Programming Fundamentals
-description: "DSE ICT comprehensive notes on programming fundamentals covering variables, data types, control structures, functions, arrays, string manipulation, file I/O, algorithms, debugging, testing, top-down design, flowcharts, pseudocode, and exam-specific requirements."
+description: "DSE ICT comprehensive notes on programming fundamentals covering variables, data types, control structures, functions, arrays, string manipulation, file I/O,"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

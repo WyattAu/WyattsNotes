@@ -1,6 +1,6 @@
 ---
 title: Abnormal Psychology
-description: Comprehensive coverage of abnormal psychology for IB Psychology HL, including definitions of abnormality, classification systems, psychological disorders, explanations, and treatments.
+description: "Comprehensive coverage of abnormal psychology for IB Psychology HL, including definitions of abnormality, classification systems, psychological disorders,"
 slug: abnormal-psychology
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Differential Equations -- Diagnostic Tests"
-description: Hardest IB Mathematics diagnostic tests for differential equations covering separable equations with lost solutions, integrating factor sign errors, second order with repeated roots, and Euler method accuracy.
+description: "Hardest IB Mathematics diagnostic tests for differential equations covering separable equations with lost solutions, integrating factor sign errors, second"
 slug: diag-differential-equations
 hide_table_of_contents: true
 ---

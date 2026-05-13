@@ -1,7 +1,7 @@
 ---
 id: dse-chemistry-energetics
 title: Chemistry - Energetics / Thermochemistry
-description: "DSE Chemistry notes covering enthalpy changes, standard enthalpy of formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies, calorimetry, Born-Haber cycles, entropy, and Gibbs free energy."
+description: "DSE Chemistry notes covering enthalpy changes, standard enthalpy of formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies,"
 slug: energetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

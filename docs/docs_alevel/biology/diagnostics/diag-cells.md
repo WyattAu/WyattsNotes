@@ -1,6 +1,6 @@
 ---
 title: "Cells -- Diagnostic Tests"
-description: "Hardest diagnostic questions on cell structure: prokaryotic vs eukaryotic comparison, organelle function, fluid mosaic membrane model, and microscopy resolution limits."
+description: "Hardest diagnostic questions on cell structure: prokaryotic vs eukaryotic comparison, organelle function, fluid mosaic membrane model, and microscopy"
 slug: diag-cells
 hide_table_of_contents: true
 ---

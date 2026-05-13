@@ -1,6 +1,6 @@
 ---
 title: Sociocultural Level of Analysis
-description: Comprehensive coverage of the sociocultural level of analysis in IB Psychology, including social identity, conformity, obedience, prejudice, and cultural dimensions.
+description: "Comprehensive coverage of the sociocultural level of analysis in IB Psychology, including social identity, conformity, obedience, prejudice, and cultural"
 slug: sociocultural-level-of-analysis
 ---
 

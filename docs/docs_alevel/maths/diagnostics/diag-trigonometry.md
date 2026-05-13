@@ -1,6 +1,6 @@
 ---
 title: "Trigonometry -- Diagnostic Tests"
-description: Hard diagnostic tests for trigonometry covering ambiguous sine rule cases, identity pitfalls, periodicity traps, harmonic form, and inverse function domain restrictions.
+description: "Hard diagnostic tests for trigonometry covering ambiguous sine rule cases, identity pitfalls, periodicity traps, harmonic form, and inverse function domain"
 slug: diag-trigonometry
 hide_table_of_contents: true
 ---

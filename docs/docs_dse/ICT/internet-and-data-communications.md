@@ -1,7 +1,7 @@
 ---
 id: dse-ict-internet-and-data-communications
 title: Internet and Data Communications
-description: "DSE ICT notes covering network fundamentals, hardware, internet services, web development, IP addressing, DNS, transmission media, protocols, OSI model, network security, and social implications."
+description: "DSE ICT notes covering network fundamentals, hardware, internet services, web development, IP addressing, DNS, transmission media, protocols, OSI model,"
 slug: internet-and-data-communications
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, ICT]

@@ -1,6 +1,6 @@
 ---
 title: "Differentiation -- Diagnostic Tests"
-description: Hardest IB Mathematics diagnostic tests for differentiation covering implicit differentiation second derivatives, L'Hopital repeated application, related rates with chain rule, and product rule pitfalls.
+description: "Hardest IB Mathematics diagnostic tests for differentiation covering implicit differentiation second derivatives, L'Hopital repeated application, related rates"
 slug: diag-differentiation
 hide_table_of_contents: true
 ---

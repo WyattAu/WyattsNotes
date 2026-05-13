@@ -1,6 +1,6 @@
 ---
 title: Attachment Theory
-description: "Comprehensive coverage of Bowlby's evolutionary theory, Ainsworth's Strange Situation, attachment types, internal working models, cross-cultural variations, and key research for IB Psychology."
+description: "Comprehensive coverage of Bowlby's evolutionary theory, Ainsworth's Strange Situation, attachment types, internal working models, cross-cultural variations,"
 slug: attachment-theory
 ---
 

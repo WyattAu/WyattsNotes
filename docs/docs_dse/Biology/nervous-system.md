@@ -1,6 +1,6 @@
 ---
 title: Nervous System
-description: "DSE Biology nervous system notes covering neuron structure, resting and action potentials, synaptic transmission, reflex arcs, sense organs, brain structure, autonomic nervous system, and nervous control of heart rate and breathing."
+description: "DSE Biology nervous system notes covering neuron structure, resting and action potentials, synaptic transmission, reflex arcs, sense organs, brain structure,"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

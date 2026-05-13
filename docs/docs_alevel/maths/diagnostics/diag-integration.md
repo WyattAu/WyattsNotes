@@ -1,6 +1,6 @@
 ---
 title: "Integration -- Diagnostic Tests"
-description: Hard diagnostic tests for integration covering integration by parts selection, substitution limit errors, absolute value traps, and area calculation pitfalls at A-Level standard.
+description: "Hard diagnostic tests for integration covering integration by parts selection, substitution limit errors, absolute value traps, and area calculation pitfalls"
 slug: diag-integration
 hide_table_of_contents: true
 ---

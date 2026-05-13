@@ -1,6 +1,6 @@
 ---
 title: "Probability -- Diagnostic Tests"
-description: Rigorous diagnostic tests for probability covering independence, conditional probability, Venn diagrams, tree diagrams, and probability distributions at A-Level difficulty.
+description: "Rigorous diagnostic tests for probability covering independence, conditional probability, Venn diagrams, tree diagrams, and probability distributions at"
 slug: diag-probability
 hide_table_of_contents: true
 ---

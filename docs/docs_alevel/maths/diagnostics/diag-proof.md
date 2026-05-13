@@ -1,6 +1,6 @@
 ---
 title: "Proof -- Diagnostic Tests"
-description: Hard diagnostic tests for proof covering contradiction rigour, induction base cases, counterexample construction, necessary versus sufficient conditions, and iff proofs at A-Level standard.
+description: "Hard diagnostic tests for proof covering contradiction rigour, induction base cases, counterexample construction, necessary versus sufficient conditions, and"
 slug: diag-proof
 hide_table_of_contents: true
 ---

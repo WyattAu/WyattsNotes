@@ -1,6 +1,6 @@
 ---
 title: IB Mathematics
-description: "Complete IB Mathematics revision notes covering algebra, functions, trigonometry, calculus, probability, statistics, vectors, and matrices. Worked examples, exam-style problems, and cross-level links to A-Level and university content."
+description: "Complete IB Mathematics revision notes covering algebra, functions, trigonometry, calculus, probability, statistics, vectors, and matrices. Worked examples,"
 slug: maths
 ---
 

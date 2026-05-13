@@ -1,6 +1,6 @@
 ---
 title: Homeostasis
-description: "DSE Biology homeostasis notes covering negative and positive feedback, blood glucose regulation, temperature regulation, osmoregulation, kidney function, ADH, blood pH regulation, and diabetes mellitus."
+description: "DSE Biology homeostasis notes covering negative and positive feedback, blood glucose regulation, temperature regulation, osmoregulation, kidney function, ADH,"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

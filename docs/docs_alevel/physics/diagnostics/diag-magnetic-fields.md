@@ -1,6 +1,6 @@
 ---
 title: "Magnetic Fields -- Diagnostic Tests"
-description: Diagnostic tests for force on a current-carrying conductor, force on a moving charge, electromagnetic induction, and the Hall effect at maximum A-Level Physics difficulty.
+description: "Diagnostic tests for force on a current-carrying conductor, force on a moving charge, electromagnetic induction, and the Hall effect at maximum A-Level Physics"
 slug: diag-magnetic-fields
 hide_table_of_contents: true
 ---

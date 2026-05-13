@@ -1,6 +1,6 @@
 ---
 title: DSE Chemistry
-description: "DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding, stoichiometry, energetics, kinetics, equilibrium, and organic chemistry."
+description: "DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding, stoichiometry, energetics, kinetics, equilibrium, and organic"
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry

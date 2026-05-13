@@ -1,6 +1,6 @@
 ---
 title: "Kinematics -- Diagnostic Tests"
-description: Hard diagnostic tests for kinematics covering displacement-distance traps, SUVAT selection, vertical motion sign errors, projectile edge cases, and non-constant acceleration at A-Level standard.
+description: "Hard diagnostic tests for kinematics covering displacement-distance traps, SUVAT selection, vertical motion sign errors, projectile edge cases, and"
 slug: diag-kinematics
 hide_table_of_contents: true
 ---

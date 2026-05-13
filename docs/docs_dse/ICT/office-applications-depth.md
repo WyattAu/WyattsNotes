@@ -1,6 +1,6 @@
 ---
 title: Office Applications in Depth
-description: "DSE ICT advanced notes on spreadsheet functions (VLOOKUP, INDEX/MATCH, pivot tables, conditional formatting, data validation, macros), database operations (queries, forms, reports, relationships), presentation software, mail merge, and DTP principles."
+description: "DSE ICT advanced notes on spreadsheet functions (VLOOKUP, INDEX/MATCH, pivot tables, conditional formatting, data validation, macros), database operations"
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

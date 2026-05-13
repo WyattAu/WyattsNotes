@@ -1,7 +1,7 @@
 ---
 id: dse-chemistry-mole-concept-stoichiometry
 title: Chemistry - Mole Concept and Stoichiometry
-description: "DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar volume, empirical and molecular formulae, percentage composition, concentration, dilution, limiting reagent, percentage yield, and volumetric analysis."
+description: "DSE Chemistry notes covering relative atomic/molecular masses, the mole, Avogadro's number, molar volume, empirical and molecular formulae, percentage"
 slug: mole-concept-and-stoichiometry
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

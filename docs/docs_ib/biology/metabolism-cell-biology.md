@@ -1,6 +1,6 @@
 ---
 title: Metabolism and Cell Biology
-description: "IB Biology -- enzyme kinetics (Michaelis-Menten, inhibition types), cellular respiration (glycolysis, Krebs cycle, electron transport chain), photosynthesis (light-dependent reactions, Calvin cycle, limiting factors), ATP, metabolic pathways, fermentation, and anaerobic respiration."
+description: "IB Biology -- enzyme kinetics (Michaelis-Menten, inhibition types), cellular respiration (glycolysis, Krebs cycle, electron transport chain), photosynthesis"
 slug: metabolism-cell-biology
 ---
 

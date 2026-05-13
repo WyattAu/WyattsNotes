@@ -1,6 +1,6 @@
 ---
 title: IB Physics
-description: "Complete IB Physics revision notes covering mechanics, fields, waves, thermodynamics, quantum physics, and nuclear physics. Worked examples, exam-style problems, and cross-level links to A-Level and university content."
+description: "Complete IB Physics revision notes covering mechanics, fields, waves, thermodynamics, quantum physics, and nuclear physics. Worked examples, exam-style"
 slug: physics
 ---
 

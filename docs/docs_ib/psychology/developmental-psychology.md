@@ -1,6 +1,6 @@
 ---
 title: Developmental Psychology
-description: Comprehensive coverage of developmental psychology for IB Psychology, including brain development, cognitive development, social development, attachment, moral development, and gender development.
+description: "Comprehensive coverage of developmental psychology for IB Psychology, including brain development, cognitive development, social development, attachment, moral"
 slug: developmental-psychology
 ---
 

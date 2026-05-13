@@ -1,7 +1,7 @@
 ---
 id: dse-chemistry-chemical-kinetics
 title: Chemistry - Chemical Kinetics
-description: "DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision theory, activation energy, Maxwell-Boltzmann distribution, catalytic converters, enzyme catalysis, rate equations, order of reaction, and the Arrhenius equation."
+description: "DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision theory, activation energy, Maxwell-Boltzmann distribution,"
 slug: chemical-kinetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

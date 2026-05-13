@@ -1,6 +1,6 @@
 ---
 title: Quantitative Economics
-description: "IB Economics — index numbers, real vs nominal calculations, compound interest, present value, cost-benefit analysis, Lorenz curve, Gini coefficient, poverty measures, HDI, multiplier algebra, consumption function, Keynesian cross, and IS-LM analysis."
+description: "IB Economics — index numbers, real vs nominal calculations, compound interest, present value, cost-benefit analysis, Lorenz curve, Gini coefficient, poverty"
 slug: quantitative-economics
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Biological Level of Analysis
-description: Comprehensive coverage of the biological level of analysis in IB Psychology, including brain structure, neurotransmitters, hormones, genetics, evolution, and key studies.
+description: "Comprehensive coverage of the biological level of analysis in IB Psychology, including brain structure, neurotransmitters, hormones, genetics, evolution, and"
 slug: biological-level-of-analysis
 ---
 

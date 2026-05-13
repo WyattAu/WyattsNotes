@@ -36,7 +36,7 @@ def extract_workflow_sites(path: Path) -> list[str]:
 
 
 def find_docusaurus_configs() -> list[Path]:
-    configs = sorted(REPO_ROOT.glob("docusaurus.*.config.ts"))
+    configs = sorted(REPO_ROOT.glob("docusaurus*.config.ts"))
     return configs
 
 
@@ -57,17 +57,19 @@ def count_content_files(path: Path) -> int:
     return count
 
 
-def build_index_to_docs_mapping(configs: list[Path]) -> dict[str, str]:
-    mapping: dict[str, str] = {}
+def build_index_to_docs_mapping(configs: list[Path]) -> dict[str, list[str]]:
+    mapping: dict[str, list[str]] = {}
     for cfg in configs:
         text = cfg.read_text(encoding="utf-8")
         doc_dirs = re.findall(r"path:\s*'docs/docs_([^']+)'", text)
         algolia_indices = re.findall(r"algolia:\s*\{[^}]*indexName:\s*'([^']+)'", text, re.DOTALL)
+        if not algolia_indices:
+            algolia_indices = re.findall(r"createAlgoliaConfig\('([^']+)'\)", text)
         for d in doc_dirs:
             for idx in algolia_indices:
-                mapping[f"wyattsnotes_{d}"] = f"docs_{d}"
+                mapping.setdefault(idx, []).append(f"docs_{d}")
             if not algolia_indices:
-                mapping[f"wyattsnotes_{d}"] = f"docs_{d}"
+                mapping.setdefault(f"wyattsnotes_{d}", []).append(f"docs_{d}")
     return mapping
 
 
@@ -92,6 +94,8 @@ def main() -> int:
         text = cfg.read_text(encoding="utf-8")
         doc_dirs = re.findall(r"path:\s*'docs/docs_([^']+)'", text)
         algolia_indices = re.findall(r"algolia:\s*\{[^}]*indexName:\s*'([^']+)'", text, re.DOTALL)
+        if not algolia_indices:
+            algolia_indices = re.findall(r"createAlgoliaConfig\('([^']+)'\)", text)
         print(f"  - {cfg.name}: docs={doc_dirs}, algolia={algolia_indices}")
 
     print(f"\nContent directories ({len(docs_dirs)}):")
@@ -106,7 +110,7 @@ def main() -> int:
     all_algolia_indices = set(search_indices.keys())
 
     docs_dir_names = set(docs_dirs.keys())
-    index_dir_names = {v for v in index_to_docs.values()}
+    index_dir_names = {d for dirs in index_to_docs.values() for d in dirs}
 
     gaps: list[str] = []
     warnings: list[str] = []
@@ -147,7 +151,7 @@ def main() -> int:
     if config_indices_not_in_search:
         print(f"\n[WARN] Indices in docusaurus configs but not on search page:")
         for idx in sorted(config_indices_not_in_search):
-            warnings.append(f"Config index '{idx}' ({index_to_docs[idx]}) not in search page INDICES")
+            warnings.append(f"Config index '{idx}' ({', '.join(index_to_docs[idx])}) not in search page INDICES")
             print(f"  ~ {idx} -> {index_to_docs[idx]}")
 
     print("\n" + "-" * 60)

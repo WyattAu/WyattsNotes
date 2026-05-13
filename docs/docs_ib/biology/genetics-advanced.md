@@ -1,6 +1,6 @@
 ---
 title: Genetics Advanced
-description: "IB Biology -- DNA replication in detail, transcription and gene regulation, translation mechanics, operons, epigenetics, genetic engineering techniques, PCR, gel electrophoresis, genetic crosses, chi-squared tests, and pedigree analysis."
+description: "IB Biology -- DNA replication in detail, transcription and gene regulation, translation mechanics, operons, epigenetics, genetic engineering techniques, PCR,"
 slug: genetics-advanced
 ---
 
