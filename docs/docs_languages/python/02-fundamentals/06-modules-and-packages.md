@@ -1,8 +1,6 @@
 ---
 title: Modules and Packages
-description:
-  Modules and Packages — The Import System; The `import` Statement; What Happens
-  When Python Imports; sys.modules is a dict of all loaded modules.
+description: "Modules and Packages — The Import System; The `import` Statement; What Happens When Python Imports; sys.modules is a dict of all loaded modules."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -11,7 +9,6 @@ categories:
 slug: modules-and-packages
 sidebar_position: 6
 ---
-
 ## The Import System
 
 The import system is the mechanism by which Python locates, loads, and binds module objects into the

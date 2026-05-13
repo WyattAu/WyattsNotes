@@ -1,7 +1,6 @@
 ---
 title: Generators and Iterators
-description:
-  "Generators and Iterators — The Iterator Protocol; The Two Methods; How `for` Loops Consume the Protocol; `iter()` Built-in: Two Forms."
+description: "Generators and Iterators — The Iterator Protocol; The Two Methods; How `for` Loops Consume the Protocol; `iter()` Built-in: Two Forms."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +9,6 @@ categories:
 slug: generators-and-iterators
 sidebar_position: 4
 ---
-
 ## The Iterator Protocol
 
 ### The Two Methods

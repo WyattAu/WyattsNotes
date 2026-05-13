@@ -1,9 +1,8 @@
 ---
 title: Proof
-description: "IB Mathematics — direct proof, contradiction, induction, counterexamples, and proof by exhaustion."
+description: "Rigorous IB mathematics notes covering Proof. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: proof
 ---
-
 ## What Is a Proof?
 
 A **mathematical proof** is a logical argument that establishes the truth of a statement beyond all

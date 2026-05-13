@@ -1,7 +1,6 @@
 ---
 title: Hash Algorithm
-description:
-  "Hash Algorithm — SHA-1: The Original Hash; SHA-1 Properties; The SHA-1 Collision Problem; Git's Defenses Against Collision Attacks."
+description: "Hash Algorithm — SHA-1: The Original Hash; SHA-1 Properties; The SHA-1 Collision Problem; Git's Defenses Against Collision Attacks."
 date: 2025-06-03T14:00:00.000Z
 tags:
   - git
@@ -12,7 +11,6 @@ categories:
   - CS
 slug: hash-algorithm
 ---
-
 ## SHA-1: The Original Hash
 
 Since its creation, Git has used **SHA-1** (Secure Hash Algorithm 1) to identify all objects. Every

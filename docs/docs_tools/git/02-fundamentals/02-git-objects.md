@@ -1,8 +1,6 @@
 ---
 title: Git Objects
-description:
-  Git Objects — The Content-Addressable Filesystem; Object Lifecycle; Blobs;
-  Creating a Blob with worked examples and exam-style questions.
+description: "Git Objects — The Content-Addressable Filesystem; Object Lifecycle; Blobs; Creating a Blob with worked examples and exam-style questions."
 date: 2025-06-03T00:00:00.000Z
 tags:
   - git
@@ -12,7 +10,6 @@ categories:
   - CS
 slug: git-objects
 ---
-
 ## The Content-Addressable Filesystem
 
 At its core, Git is a **content-addressable filesystem**. It stores data as objects, each identified by the SHA-1 hash of its content. This is not a version control feature — it is the fundamental storage mechanism. Version control is built on top of it.

@@ -1,8 +1,6 @@
 ---
 title: Network Proxy
-description:
-  Network Proxy — Using Nginx Proxy Manager; Perquisite including key
-  definitions, derivations, and problem-solving techniques.
+description: "Network Proxy — Using Nginx Proxy Manager; Perquisite including key definitions, derivations, and problem-solving techniques."
 date: 2025-07-25T20:52:26.185Z
 tags:
   - truenas
@@ -10,7 +8,6 @@ categories:
   - truenas
 slug: network-proxy
 ---
-
 ## Using Nginx Proxy Manager
 
 ### Perquisite

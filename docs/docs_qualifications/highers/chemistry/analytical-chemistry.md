@@ -1,7 +1,6 @@
 ---
 title: Analytical Chemistry
-description:
-  "SQA Higher Chemistry: Analytical Chemistry — Analytical Techniques; Spectroscopy Overview; Comparison of Techniques; Infrared Spectroscopy."
+description: "SQA Higher Chemistry: Analytical Chemistry — Analytical Techniques; Spectroscopy Overview; Comparison of Techniques; Infrared Spectroscopy."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: analytical-chemistry
 ---
-
 # Analytical Chemistry
 
 :::info

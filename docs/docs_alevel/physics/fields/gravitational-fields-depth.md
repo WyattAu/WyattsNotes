@@ -1,13 +1,11 @@
 ---
 title: Gravitational Fields
-description:
-  "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Universal Gravitation; Geometric Origin of the Inverse Square Law."
+description: "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Universal Gravitation; Geometric Origin of the Inverse Square Law."
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
 slug: gravitational-fields-depth
 ---
-
 ## Gravitational Fields
 
 :::info

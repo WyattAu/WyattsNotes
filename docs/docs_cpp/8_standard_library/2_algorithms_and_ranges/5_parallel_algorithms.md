@@ -1,7 +1,6 @@
 ---
 title: Parallel Algorithms
-description:
-  "C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution Policies for thorough revision and examination preparation."
+description: "C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution Policies for thorough revision and examination preparation."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: parallel-algorithms
 ---
-
 ## Parallel Algorithms and Execution Policies
 
 C++17 introduced execution policies that enable many standard algorithms to run in parallel across

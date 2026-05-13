@@ -1,10 +1,9 @@
 ---
 title: "Computer Networks -- Diagnostic Tests"
-description: "Diagnostic tests for A-Level CS networks: TCP/IP vs OSI, network security, IP addressing, and web technologies."
+description: "Challenging A-Level computer science diagnostic questions on Computer Networks -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-networks
 hide_table_of_contents: true
 ---
-
 # Computer Networks — Diagnostic Tests
 
 ## Unit Tests

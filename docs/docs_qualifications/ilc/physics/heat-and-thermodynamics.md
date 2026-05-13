@@ -1,8 +1,6 @@
 ---
 title: Heat and Thermodynamics
-description:
-  Heat and Thermodynamics — Temperature and Heat; Temperature Scales (OL/HL);
-  Why Kelvin Is the Natural Scale for Physics; Heat vs Temperature (OL/HL).
+description: "Heat and Thermodynamics — Temperature and Heat; Temperature Scales (OL/HL); Why Kelvin Is the Natural Scale for Physics; Heat vs Temperature (OL/HL)."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: heat-and-thermodynamics
 ---
-
 # Heat and Thermodynamics
 
 This topic covers temperature, heat transfer, specific heat capacity, latent heat, gas laws, and the

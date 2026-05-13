@@ -1,8 +1,6 @@
 ---
 title: Testing
-description:
-  Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main
-  including key definitions, derivations, and problem-solving techniques.
+description: "Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main including key definitions, derivations, and problem-solving techniques."
 slug: testing
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## go test Basics
 
 Go has a built-in testing framework. Test files are named `*_test.go` and the build system excludes

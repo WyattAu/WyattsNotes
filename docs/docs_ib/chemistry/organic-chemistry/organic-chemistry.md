@@ -1,10 +1,9 @@
 ---
 title: Organic Chemistry
-description: IB Chemistry — hydrocarbons, functional groups, reaction mechanisms,
+description: "Rigorous IB chemistry notes covering Organic Chemistry. Includes definitions, derivations, worked examples, and exam-style problems."
   and polymer chemistry.
 slug: organic-chemistry
 ---
-
 
 ## Homologous Series and Naming
 

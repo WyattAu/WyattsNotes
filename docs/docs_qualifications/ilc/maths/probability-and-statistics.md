@@ -1,8 +1,6 @@
 ---
 title: Probability and Statistics
-description:
-  Probability and Statistics — Counting Principles; Fundamental Counting
-  Principle (OL/HL); Permutations (OL/HL); Combinations (OL/HL).
+description: "Probability and Statistics — Counting Principles; Fundamental Counting Principle (OL/HL); Permutations (OL/HL); Combinations (OL/HL)."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -11,7 +9,6 @@ categories:
   - Mathematics
 slug: probability-and-statistics
 ---
-
 # Probability and Statistics
 
 Probability and statistics appear on both papers of the Leaving Certificate Mathematics examination.

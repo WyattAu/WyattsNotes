@@ -1,9 +1,8 @@
 ---
 title: Development Economics
-description: "IB Economics — development indicators, poverty, inequality, aid, FDI, debt, and sustainable development."
+description: "Rigorous IB economics notes covering Development Economics. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: development-economics
 ---
-
 ## Measuring Development
 
 ### Single Indicators

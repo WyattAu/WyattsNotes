@@ -1,13 +1,9 @@
 ---
 id: traits-and-generics
 title: Traits and Generics
-description:
-  Traits and Generics — Trait Definition and Implementation; Defining a Trait;
-  Implementing a Trait; Orphan Rule with worked examples and exam-style
-  questions.
+description: "Traits and Generics — Trait Definition and Implementation; Defining a Trait; Implementing a Trait; Orphan Rule with worked examples and exam-style questions."
 slug: traits-and-generics
 ---
-
 ## Trait Definition and Implementation
 
 Traits are Rust's answer to interfaces, type classes, and concepts. They define shared behavior that

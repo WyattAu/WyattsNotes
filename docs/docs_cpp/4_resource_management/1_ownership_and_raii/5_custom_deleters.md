@@ -1,7 +1,6 @@
 ---
 title: Common Pitfalls
-description:
-  "C++: Common Pitfalls — 5.1 Raw `new`/`delete` vs Smart Pointers; 5.2 `std::make_unique` vs `new` in Expressions — Exception Safety."
+description: "C++: Common Pitfalls — 5.1 Raw `new`/`delete` vs Smart Pointers; 5.2 `std::make_unique` vs `new` in Expressions — Exception Safety."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: common-pitfalls-smart-pointers
 ---
-
 # Common Pitfalls
 
 Smart pointers eliminate many classes of resource bugs, but misuse still leads to leaks, undefined

@@ -1,13 +1,9 @@
 ---
 id: tls-in-practice
 title: TLS in Practice
-description:
-  TLS in Practice — Getting a Certificate; Certificate Authority (CA) Options;
-  Self-Signed Certificates; Generate a self-signed certificate (development
-  only).
+description: "TLS in Practice — Getting a Certificate; Certificate Authority (CA) Options; Self-Signed Certificates; Generate a self-signed certificate (development only)."
 slug: tls-in-practice
 ---
-
 ## Getting a Certificate
 
 ### Certificate Authority (CA) Options

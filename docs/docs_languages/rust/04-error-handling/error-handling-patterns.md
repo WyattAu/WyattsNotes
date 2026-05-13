@@ -1,12 +1,9 @@
 ---
 id: error-handling-patterns
 title: Error Handling Patterns
-description:
-  Error Handling Patterns — Error Design Philosophy; Errors as Values vs
-  Exceptions; Defining Error Types; Enum-Based Error Types.
+description: "Error Handling Patterns — Error Design Philosophy; Errors as Values vs Exceptions; Defining Error Types; Enum-Based Error Types."
 slug: error-handling-patterns
 ---
-
 ## Error Design Philosophy
 
 Rust treats errors as values, not exceptions. This is a fundamental design choice: errors are not

@@ -3,9 +3,8 @@ title: Wrap Up
 tags:
 - physics
 slug: wrap
-description: Comprehensive guide to wrap up for the International Baccalaureate.
+description: "Comprehensive IB physics notes on Wrap Up key concepts and principles. Covers key definitions, worked examples, and practice problems for revision."
 ---
-
 
 <details>
 <summary><strong>E.1 Structure of the Atom, E.2 Quantum Physics & E.3 Radioactive Decay</strong></summary>

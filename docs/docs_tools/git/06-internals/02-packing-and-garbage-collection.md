@@ -1,7 +1,6 @@
 ---
 title: Packing and Garbage Collection
-description:
-  "Git object lifecycle: loose and packed objects, packfile format, delta compression, garbage collection, and optimisation strategies for repository maintenance."
+description: "Git object lifecycle: loose and packed objects, packfile format, delta compression, garbage collection, and optimisation strategies for repository maintenance."
 date: 2025-06-03T13:00:00.000Z
 tags:
   - git
@@ -11,7 +10,6 @@ categories:
   - CS
 slug: packing-and-garbage-collection
 ---
-
 ## The Object Lifecycle
 
 Git objects go through three phases:

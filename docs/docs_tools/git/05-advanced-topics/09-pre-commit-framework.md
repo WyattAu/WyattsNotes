@@ -1,11 +1,8 @@
 ---
 title: The pre-commit Framework
-description:
-  The pre-commit Framework — What pre-commit Is; Installation; Installing the
-  Framework; Install via pip with worked examples and exam-style questions.
+description: "The pre-commit Framework — What pre-commit Is; Installation; Installing the Framework; Install via pip with worked examples and exam-style questions."
 slug: pre-commit-framework
 ---
-
 ## What pre-commit Is
 
 `pre-commit` is a Python-based framework for managing and executing Git hooks in a declarative,

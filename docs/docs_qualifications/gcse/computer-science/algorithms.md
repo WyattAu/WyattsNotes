@@ -1,9 +1,6 @@
 ---
 title: Algorithms
-description:
-  Algorithms — 1. What Is an Algorithm?; 1.2 Standard Flowchart Symbols; 2.1
-  Linear Search; 2.2 Binary Search with worked examples and exam-style
-  questions.
+description: "Algorithms — 1. What Is an Algorithm?; 1.2 Standard Flowchart Symbols; 2.1 Linear Search; 2.2 Binary Search with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -12,7 +9,6 @@ categories:
   - Computer Science
 slug: algorithms
 ---
-
 ## Algorithms
 
 :::info

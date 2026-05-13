@@ -1,13 +1,10 @@
 ---
 id: core-utilities
 title: Core Utilities
-description:
-  Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns;
-  `grep` — Pattern Matching; Basic pattern matching.
+description: "Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns; `grep` — Pattern Matching; Basic pattern matching."
 slug: core-utilities
 sidebar_position: 2
 ---
-
 ## GNU Coreutils Overview
 
 GNU coreutils is the package that provides the fundamental file, shell, and text manipulation

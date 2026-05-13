@@ -1,8 +1,6 @@
 ---
 title: Supervised Learning
-description:
-  Supervised Learning — Classification; Design Matrix; Pair Plot; Decision Tree
-  including key definitions, derivations, and problem-solving techniques.
+description: "Supervised Learning — Classification; Design Matrix; Pair Plot; Decision Tree including key definitions, derivations, and problem-solving techniques."
 date: 2026-01-07T08:38:26.907Z
 tags:
   - ML
@@ -10,7 +8,6 @@ categories:
   - ML
 slug: supervised-learning
 ---
-
 Supervised learning is the field of training models to act as a mapping between a set of inputs to a
 set of output. To conduct supervised learning, a training set $N$ is given in the form of pairs
 $D = {x_n, y_n}^N_{n=1}$, where a input $x_n$ is paire with the correct output $y_n$.

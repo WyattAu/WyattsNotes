@@ -1,7 +1,6 @@
 ---
 title: Networks and the Internet
-description:
-  "AP Computer Science: Networks and the Internet — The Internet (CED Unit 4); History and Architecture; Internet Architecture; IP Addresses."
+description: "AP Computer Science: Networks and the Internet — The Internet (CED Unit 4); History and Architecture; Internet Architecture; IP Addresses."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -10,7 +9,6 @@ categories:
   - Computer Science
 slug: networks-and-the-internet
 ---
-
 ## The Internet (CED Unit 4)
 
 ### History and Architecture

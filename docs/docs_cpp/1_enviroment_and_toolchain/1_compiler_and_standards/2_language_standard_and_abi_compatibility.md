@@ -1,7 +1,6 @@
 ---
 title: Language Standard Flags and ABI Compatibility
-description:
-  "C++: Language Standard Flags and ABI Compatibility — Compiler Invocation Standards; ISO Standard Flags; Extension Flags vs. Strict ISO."
+description: "C++: Language Standard Flags and ABI Compatibility — Compiler Invocation Standards; ISO Standard Flags; Extension Flags vs. Strict ISO."
 date: 2025-12-10T04:34:01.071Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: language-standard-flags-abi-compatibility
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Installing a compiler is insufficient for C++23 development. By default, compilers often default to

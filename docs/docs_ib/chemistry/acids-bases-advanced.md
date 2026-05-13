@@ -1,9 +1,8 @@
 ---
 title: Acids and Bases (Advanced)
-description: "IB Chemistry — advanced pH calculations, buffer solutions, indicator theory, acid deposition, and solubility products."
+description: "Rigorous IB chemistry notes covering Acids and Bases (Advanced). Includes definitions, derivations, worked examples, and exam-style problems."
 slug: acids-bases-advanced
 ---
-
 ## 1. Advanced pH Calculations
 
 ### Strong Acids and Bases

@@ -1,8 +1,6 @@
 ---
 title: Computer Systems
-description:
-  Computer Systems — Data Representation; Representing Numbers; Representing
-  Text; Representing Images with worked examples and exam-style questions.
+description: "Computer Systems — Data Representation; Representing Numbers; Representing Text; Representing Images with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: computer-systems
 ---
-
 # Computer Systems
 
 ## Higher Computer Systems

@@ -1,8 +1,6 @@
 ---
 title: BGP and Routing Protocols
-description:
-  BGP and Routing Protocols — Routing Fundamentals; Routed Protocols vs Routing
-  Protocols; The Routing Table; Route Sources.
+description: "BGP and Routing Protocols — Routing Fundamentals; Routed Protocols vs Routing Protocols; The Routing Table; Route Sources."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Networking
@@ -10,7 +8,6 @@ categories:
   - Networking
 slug: bgp-and-routing-protocols
 ---
-
 ## Overview
 
 Routing is the process of selecting a path across a network for traffic to travel from a source to a

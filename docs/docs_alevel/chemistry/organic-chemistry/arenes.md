@@ -1,7 +1,6 @@
 ---
 title: Arenes
-description:
-  "A-Level Chemistry notes on Arenes: Benzene Structure; Molecular Formula and Degree of Unsaturation; The Kekule Structure; Evidence for Delocalisation."
+description: "A-Level Chemistry notes on Arenes: Benzene Structure; Molecular Formula and Degree of Unsaturation; The Kekule Structure; Evidence for Delocalisation."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: arenes
 ---
-
 # Arenes (Aromatic Compounds)
 
 Arenes are hydrocarbons containing one or more benzene rings. Benzene ($\mathrm{C}_6\mathrm{H}_6$)

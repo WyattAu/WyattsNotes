@@ -1,16 +1,13 @@
 ---
 id: websockets
 title: WebSockets
-description:
-  WebSockets — HTTP Upgrade Handshake; Client Request; Server Response;
-  Handshake Validation with worked examples and exam-style questions.
+description: "WebSockets — HTTP Upgrade Handshake; Client Request; Server Response; Handshake Validation with worked examples and exam-style questions."
 slug: websockets
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 WebSockets (RFC 6455) provide full-duplex, bidirectional communication over a single TCP connection.

@@ -1,7 +1,6 @@
 ---
 title: Probability and Statistics
-description:
-  "University-level notes on Probability and Statistics: 1. Probability Spaces; 1.1 Sample Spaces and Events; 1.2 Sigma-Algebras."
+description: "University-level notes on Probability and Statistics: 1. Probability Spaces; 1.1 Sample Spaces and Events; 1.2 Sigma-Algebras."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: probability-and-statistics
 ---
-
 ## 1. Probability Spaces
 
 ### 1.1 Sample Spaces and Events

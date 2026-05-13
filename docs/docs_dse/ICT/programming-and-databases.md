@@ -1,10 +1,9 @@
 ---
 id: dse-ict-programming-and-databases
 title: ICT - Programming and Databases
-description: "DSE ICT notes covering programming concepts, algorithms, data structures, database design, and SQL."
+description: "Rigorous DSE notes covering ICT - Programming and Databases. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: ict-programming-and-databases
 ---
-
 ## Programming Fundamentals
 
 ### Variables and Data Types

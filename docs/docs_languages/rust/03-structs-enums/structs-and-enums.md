@@ -1,12 +1,9 @@
 ---
 id: structs-and-enums
 title: Structs and Enums
-description:
-  Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs
-  with worked examples and exam-style questions.
+description: "Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs with worked examples and exam-style questions."
 slug: structs-and-enums
 ---
-
 ## Structs
 
 Structs are the primary mechanism for defining custom types in Rust. Unlike classes in C++ or Java,

@@ -1,10 +1,9 @@
 ---
 title: "Electrochemistry -- Diagnostic Tests"
-description: Hardest diagnostic questions on electrochemistry within the DSE specification, each with a full worked solution.
+description: "Challenging DSE chemistry diagnostic questions on Electrochemistry -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-electrochemistry
 hide_table_of_contents: true
 ---
-
 # DSE Chemistry Diagnostic: Electrochemistry
 
 ## Unit Test 1: Balancing Redox Equations

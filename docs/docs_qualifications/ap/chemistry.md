@@ -1,7 +1,6 @@
 ---
 title: AP Chemistry Review
-description:
-  "AP Chemistry Review -- Comprehensive overview of all major topics: atomic structure, bonding, stoichiometry, thermodynamics, equilibrium, kinetics, acids and bases, and electrochemistry."
+description: "AP Chemistry Review -- Comprehensive overview of all major topics: atomic structure, bonding, stoichiometry, thermodynamics, equilibrium, kinetics, acids and ba"
 date: 2026-05-05
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: chemistry
 ---
-
 ## Atomic Structure and Periodicity (CED Unit 1)
 
 ### Key Concepts

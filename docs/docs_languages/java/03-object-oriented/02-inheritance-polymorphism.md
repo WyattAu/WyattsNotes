@@ -1,12 +1,9 @@
 ---
 id: inheritance-polymorphism
 title: Inheritance and Polymorphism
-description:
-  Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method
-  Overriding with `@Override`; The `super` Keyword.
+description: "Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method Overriding with `@Override`; The `super` Keyword."
 slug: inheritance-polymorphism
 ---
-
 ## Inheritance
 
 Inheritance allows a class (subclass) to extend another class (superclass), acquiring its fields and

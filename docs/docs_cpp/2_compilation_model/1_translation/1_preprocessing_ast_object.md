@@ -1,9 +1,7 @@
 ---
 title: Preprocessing and AST Generation, and Object Code
-description:
-  "C++: Preprocessing and AST Generation, and Object Code — Stage 1: The Preprocessor; Mechanics; Inspection; -E: Run preprocessor only."
+description: "C++: Preprocessing and AST Generation, and Object Code — Stage 1: The Preprocessor; Mechanics; Inspection; -E: Run preprocessor only."
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Understanding the translation stages are critical for debugging compilation errors, optimizing build

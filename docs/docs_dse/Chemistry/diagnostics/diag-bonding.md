@@ -1,10 +1,9 @@
 ---
 title: "Bonding -- Diagnostic Tests"
-description: Hardest diagnostic questions on bonding within the DSE specification, each with a full worked solution.
+description: "Challenging DSE chemistry diagnostic questions on Bonding -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-bonding
 hide_table_of_contents: true
 ---
-
 # DSE Chemistry Diagnostic: Bonding
 
 ## Unit Test 1: VSEPR for Complex Molecules

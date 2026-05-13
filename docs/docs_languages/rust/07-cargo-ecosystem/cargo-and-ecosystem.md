@@ -1,13 +1,9 @@
 ---
 id: cargo-and-ecosystem
 title: Cargo and Ecosystem
-description:
-  Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace
-  Management; Workspace Cargo.toml with worked examples and exam-style
-  questions.
+description: "Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace Management; Workspace Cargo.toml with worked examples and exam-style questions."
 slug: cargo-and-ecosystem
 ---
-
 ## Cargo.toml Structure
 
 `Cargo.toml` is the manifest file that defines everything about your Rust project. It uses TOML

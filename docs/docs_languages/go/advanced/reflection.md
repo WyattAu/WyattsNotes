@@ -1,8 +1,6 @@
 ---
 title: Reflection
-description:
-  Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values;
-  Inspecting Fields with worked examples and exam-style questions.
+description: "Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values; Inspecting Fields with worked examples and exam-style questions."
 slug: reflection
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Overview
 
 The `reflect` package provides runtime type introspection and manipulation. It allows programs to

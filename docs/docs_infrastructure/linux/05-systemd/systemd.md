@@ -1,13 +1,10 @@
 ---
 id: systemd
 title: Systemd
-description:
-  Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search
-  path with worked examples and exam-style questions.
+description: "Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search path with worked examples and exam-style questions."
 slug: systemd
 sidebar_position: 1
 ---
-
 ## Systemd Architecture
 
 systemd is a system and service manager for Linux, serving as the init system (PID 1) and providing

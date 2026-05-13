@@ -4,10 +4,9 @@ tags:
 - IB
 - Maths
 slug: matrices-and-transformations
-description: Comprehensive guide to matrices and transformations for the International
+description: "Rigorous IB mathematics notes covering Matrices and Transformations. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Matrices and Transformations
 

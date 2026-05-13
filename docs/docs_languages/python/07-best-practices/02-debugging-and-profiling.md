@@ -1,8 +1,6 @@
 ---
 title: Debugging and Profiling
-description:
-  Debugging and Profiling — pdb and breakpoint(); Basic Entry Points; Core pdb
-  Commands; The Cost of pdb with worked examples and exam-style questions.
+description: "Debugging and Profiling — pdb and breakpoint(); Basic Entry Points; Core pdb Commands; The Cost of pdb with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: debugging-and-profiling
 ---
-
 # Debugging and Profiling
 
 Debugging and profiling are not afterthoughts bolted onto a codebase after the fact. They are

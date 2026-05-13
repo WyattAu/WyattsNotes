@@ -1,11 +1,8 @@
 ---
 title: Git Hooks
-description:
-  Git Hooks — Hook Lifecycle; When Hooks Run; Hook Discovery; Point Git to a
-  custom hooks directory with worked examples and exam-style questions.
+description: "Git Hooks — Hook Lifecycle; When Hooks Run; Hook Discovery; Point Git to a custom hooks directory with worked examples and exam-style questions."
 slug: git-hooks
 ---
-
 ## Hook Lifecycle
 
 Git hooks are scripts that Git executes automatically before or after specific events in the

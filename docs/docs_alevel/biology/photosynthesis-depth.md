@@ -1,7 +1,6 @@
 ---
 title: Photosynthesis (In Depth)
-description:
-  "A-Level Biology notes on Photosynthesis: light-dependent reactions, Calvin cycle, limiting factors, CO2 concentration, temperature, light intensity, chloroplast structure, CAM/C4 comparison."
+description: "A-Level Biology notes on Photosynthesis: light-dependent reactions, Calvin cycle, limiting factors, CO2 concentration, temperature, light intensity, chloroplast"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: photosynthesis-depth
 sidebar_position: 10
 ---
-
 ## Photosynthesis (In Depth)
 
 :::info

@@ -1,10 +1,9 @@
 ---
 title: Statistics
-description: IB Mathematics — descriptive statistics, correlation, regression, and
+description: "Rigorous IB mathematics notes covering Statistics. Includes definitions, derivations, worked examples, and exam-style problems."
   hypothesis testing.
 slug: statistics
 ---
-
 
 ## Measures of Central Tendency
 

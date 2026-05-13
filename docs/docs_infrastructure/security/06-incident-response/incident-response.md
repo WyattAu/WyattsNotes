@@ -1,13 +1,10 @@
 ---
 id: incident-response
 title: Incident Response
-description:
-  Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop
-  Exercises with worked examples and exam-style questions.
+description: "Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop Exercises with worked examples and exam-style questions."
 slug: incident-response
 sidebar_position: 7
 ---
-
 ## The Incident Response Lifecycle
 
 NIST SP 800-61 Rev. 2 defines the incident response lifecycle as four phases: Preparation, Detection

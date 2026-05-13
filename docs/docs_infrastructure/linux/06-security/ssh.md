@@ -1,13 +1,10 @@
 ---
 id: ssh
 title: SSH
-description:
-  SSH — Transport Layer; Authentication Layer; Connection Layer; Client
-  Configuration with worked examples and exam-style questions.
+description: "SSH — Transport Layer; Authentication Layer; Connection Layer; Client Configuration with worked examples and exam-style questions."
 slug: ssh
 sidebar_position: 2
 ---
-
 ## SSH Protocol Overview
 
 SSH (Secure Shell) protocol version 2 provides encrypted remote login and command execution. The

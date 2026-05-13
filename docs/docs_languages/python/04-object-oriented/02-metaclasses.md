@@ -1,7 +1,6 @@
 ---
 title: Metaclasses and Class Creation
-description:
-  "Metaclasses and Class Creation — How Class Statements Work; `type()` as Metaclass; Custom Metaclasses; `__new__`: Controlling Class Creation."
+description: "Metaclasses and Class Creation — How Class Statements Work; `type()` as Metaclass; Custom Metaclasses; `__new__`: Controlling Class Creation."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -9,7 +8,6 @@ categories:
   - Python
 slug: metaclasses
 ---
-
 ## How Class Statements Work
 
 The `class` statement in Python is not a declarative construct. It is an executable statement that

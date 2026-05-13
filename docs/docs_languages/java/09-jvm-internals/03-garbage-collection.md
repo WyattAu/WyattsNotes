@@ -1,12 +1,9 @@
 ---
 id: garbage-collection
 title: Garbage Collection
-description:
-  Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability
-  Phases with worked examples and exam-style questions.
+description: "Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability Phases with worked examples and exam-style questions."
 slug: garbage-collection
 ---
-
 ## GC Fundamentals
 
 ### What Is Garbage?

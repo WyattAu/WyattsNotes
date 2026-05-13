@@ -1,8 +1,6 @@
 ---
 title: Networking and Security
-description:
-  Networking and Security — Network Fundamentals (OL/HL); Types of Network;
-  Client-Server vs Peer-to-Peer (OL/HL); Network Topologies (OL/HL).
+description: "Networking and Security — Network Fundamentals (OL/HL); Types of Network; Client-Server vs Peer-to-Peer (OL/HL); Network Topologies (OL/HL)."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: networking-and-security
 ---
-
 # Networking and Security
 
 This topic covers computer networks, network models, protocols, security threats, and defensive

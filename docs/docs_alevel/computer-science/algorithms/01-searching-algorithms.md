@@ -1,7 +1,6 @@
 ---
 title: Searching Algorithms
-description:
-  "A-Level Computer Science notes on Searching Algorithms: 1. Linear Search; Algorithm; Correctness; Complexity Analysis with worked examples and exam-style que."
+description: "A-Level Computer Science notes on Searching Algorithms: 1. Linear Search; Algorithm; Correctness; Complexity Analysis with worked examples and exam-style que."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: searching-algorithms
 ---
-
 ## 1. Linear Search
 
 ### Algorithm

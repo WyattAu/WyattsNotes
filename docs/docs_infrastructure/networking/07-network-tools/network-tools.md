@@ -1,8 +1,7 @@
 ---
 id: network-tools
 title: Network Tools
-description:
-  "Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach; Check interface status; Check link speed and duplex."
+description: "Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach; Check interface status; Check link speed and duplex."
 slug: network-tools
 sidebar_position: 8
 tags:
@@ -10,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Overview
 
 Network troubleshooting is a systematic process of isolating and identifying the root cause of

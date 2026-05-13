@@ -4,9 +4,8 @@ tags:
 - IB
 - History
 slug: rights-and-protest
-description: Comprehensive guide to rights and protest for the International Baccalaureate.
+description: "Rigorous IB history notes covering Rights and Protest. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # Rights and Protest
 

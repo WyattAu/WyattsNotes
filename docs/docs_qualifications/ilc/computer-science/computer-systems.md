@@ -1,8 +1,6 @@
 ---
 title: Computer Systems
-description:
-  Computer Systems — The Von Neumann Architecture (OL/HL); The CPU (OL/HL); The
-  Fetch-Decode-Execute Cycle (OL/HL); Buses (HL).
+description: "Computer Systems — The Von Neumann Architecture (OL/HL); The CPU (OL/HL); The Fetch-Decode-Execute Cycle (OL/HL); Buses (HL)."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: computer-systems
 ---
-
 # Computer Systems
 
 This topic covers the architecture and organisation of computer systems, including the CPU, memory

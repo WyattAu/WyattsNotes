@@ -1,7 +1,6 @@
 ---
 title: Mechanics
-description:
-  "International LC Physics: Mechanics — Physical Quantities and Units; SI Base Units (OL/HL); Derived Units (OL/HL); Scalars and Vectors (OL/HL)."
+description: "International LC Physics: Mechanics — Physical Quantities and Units; SI Base Units (OL/HL); Derived Units (OL/HL); Scalars and Vectors (OL/HL)."
 date: 2026-04-14
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: mechanics
 ---
-
 # Mechanics
 
 Mechanics is the study of motion and forces. It forms the largest single topic on the Leaving

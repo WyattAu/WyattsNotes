@@ -1,10 +1,9 @@
 ---
 title: Electric and Magnetic Fields
 slug: electric-and-magnetic-fields
-description: Comprehensive guide to electric and magnetic fields for the International
+description: "Rigorous IB physics notes covering Electric and Magnetic Fields. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Point Charge
 

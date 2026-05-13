@@ -1,8 +1,6 @@
 ---
 title: FFI and Advanced Topics
-description:
-  FFI and Advanced Topics — Null Safety Deep Dive; Sound vs Unsounded Null
-  Safety; Nullable and Non-Nullable Types; Null Assertion Operator (`!`).
+description: "FFI and Advanced Topics — Null Safety Deep Dive; Sound vs Unsounded Null Safety; Nullable and Non-Nullable Types; Null Assertion Operator (`!`)."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: dart-ffi-and-advanced
 ---
-
 ## Null Safety Deep Dive
 
 Dart 2.12 introduced sound null safety. This is not a nullable annotation system bolted onto an

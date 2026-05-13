@@ -4,10 +4,9 @@ tags:
 - IB
 - CS
 slug: algorithms-and-data-structures
-description: Comprehensive guide to algorithms and data structures for the International
+description: "Rigorous IB computer science notes covering Algorithms and Data Structures. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Algorithmic Thinking
 

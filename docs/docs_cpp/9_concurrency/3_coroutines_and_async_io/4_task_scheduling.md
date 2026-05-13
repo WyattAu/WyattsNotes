@@ -1,7 +1,6 @@
 ---
 title: Task Scheduling and Executors
-description: >-
-  C++: Task Scheduling and Executors — Task Concept; Cooperative Scheduling with Coroutines; Proof: Cooperative Scheduling Avoids Data Races.
+description: "C++: Task Scheduling and Executors — Task Concept; Cooperative Scheduling with Coroutines; Proof: Cooperative Scheduling Avoids Data Races."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: task-scheduling-executors
 ---
-
 # Task Scheduling and Executors
 
 This section covers the task concept, coroutine-based pipeline processing, async/await patterns

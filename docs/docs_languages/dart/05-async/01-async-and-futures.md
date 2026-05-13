@@ -1,8 +1,6 @@
 ---
 title: Async and Futures
-description:
-  Async and Futures — Why Async Matters in Dart; Futures; Creating Futures;
-  async/await with worked examples and exam-style questions.
+description: "Async and Futures — Why Async Matters in Dart; Futures; Creating Futures; async/await with worked examples and exam-style questions."
 date: 2025-07-20T11:00:00.000Z
 tags:
   - dart
@@ -12,7 +10,6 @@ categories:
   - dart
 slug: async-and-futures
 ---
-
 ## Why Async Matters in Dart
 
 Dart runs on a **single-threaded event loop** with an isolated memory model. Unlike languages with

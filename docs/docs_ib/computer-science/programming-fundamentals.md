@@ -4,10 +4,9 @@ tags:
 - IB
 - CS
 slug: programming-fundamentals
-description: Comprehensive guide to programming fundamentals for the International
+description: "Rigorous IB computer science notes covering Programming Fundamentals. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Variables, Constants, and Data Types
 

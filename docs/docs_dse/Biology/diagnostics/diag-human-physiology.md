@@ -1,10 +1,9 @@
 ---
 title: "Human Physiology -- Diagnostic Tests"
-description: Hardest diagnostic questions on human physiology within the DSE specification, each with a full worked solution.
+description: "Challenging DSE biology diagnostic questions on Human Physiology -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-human-physiology
 hide_table_of_contents: true
 ---
-
 # DSE Biology Diagnostic: Human Physiology
 
 ## Unit Test 1: Digestion and Villi Adaptations

@@ -1,10 +1,9 @@
 ---
 title: Integration Techniques
-description: IB Mathematics — integration techniques, definite integrals, area and
+description: "Rigorous IB mathematics notes covering Integration Techniques. Includes definitions, derivations, worked examples, and exam-style problems."
   volume, and applications.
 slug: integration-techniques
 ---
-
 
 ## Antidifferentiation Review
 

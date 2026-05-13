@@ -1,9 +1,8 @@
 ---
 title: Chemical Bonding (Advanced)
-description: "IB Chemistry — VSEPR theory, hybridization, molecular orbital theory, metallic bonding, and band theory."
+description: "Rigorous IB chemistry notes covering Chemical Bonding (Advanced). Includes definitions, derivations, worked examples, and exam-style problems."
 slug: chemical-bonding-advanced
 ---
-
 ## 1. VSEPR Theory
 
 ### Principle

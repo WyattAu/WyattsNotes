@@ -1,8 +1,6 @@
 ---
 title: Number
-description:
-  Number — 1.3 Highest Common Factor and Lowest Common Multiple; 1.4
-  Divisibility Tests and Prime Testing; 2. Fractions, Decimals, and Percentages.
+description: "Number — 1.3 Highest Common Factor and Lowest Common Multiple; 1.4 Divisibility Tests and Prime Testing; 2. Fractions, Decimals, and Percentages."
 date: 2026-04-14
 tags:
   - Maths
@@ -11,7 +9,6 @@ categories:
   - Maths
 slug: number
 ---
-
 ## Number
 
 :::info

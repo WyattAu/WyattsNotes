@@ -1,7 +1,6 @@
 ---
 title: Genetics and DNA
-description:
-  "A-Level Biology notes on Genetics and DNA: 1. DNA Structure and Replication; 1.1 The Structure of DNA; 1.2 DNA Replication; 2. Protein Synthesis."
+description: "A-Level Biology notes on Genetics and DNA: 1. DNA Structure and Replication; 1.1 The Structure of DNA; 1.2 DNA Replication; 2. Protein Synthesis."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: genetics-and-dna
 sidebar_position: 5
 ---
-
 ## Genetics and DNA
 
 :::info

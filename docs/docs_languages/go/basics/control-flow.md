@@ -1,8 +1,6 @@
 ---
 title: Control Flow
-description:
-  Control Flow — If / Else; Initialization Statement; Idiomatic Error Check;
-  Switch with worked examples and exam-style questions.
+description: "Control Flow — If / Else; Initialization Statement; Idiomatic Error Check; Switch with worked examples and exam-style questions."
 slug: control-flow
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## If / Else
 
 Go's `if` statements do not require parentheses but do require braces. The condition can include an

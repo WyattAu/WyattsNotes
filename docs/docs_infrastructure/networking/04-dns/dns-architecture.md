@@ -1,16 +1,13 @@
 ---
 id: dns-architecture
 title: DNS Architecture and Operations
-description:
-  DNS Architecture and Operations — DNS Infrastructure Components; Registrars;
-  Registries; TLD Operators with worked examples and exam-style questions.
+description: "DNS Architecture and Operations — DNS Infrastructure Components; Registrars; Registries; TLD Operators with worked examples and exam-style questions."
 slug: dns-architecture
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 DNS infrastructure is the backbone of Internet naming. Beyond the recursive resolution process

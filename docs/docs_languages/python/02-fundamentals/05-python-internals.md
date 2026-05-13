@@ -1,8 +1,6 @@
 ---
 title: Python Internals
-description:
-  Python Internals — CPython Architecture Overview; Other Implementations; The
-  Object Model; `PyObject` with worked examples and exam-style questions.
+description: "Python Internals — CPython Architecture Overview; Other Implementations; The Object Model; `PyObject` with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -11,7 +9,6 @@ categories:
 slug: python-internals
 sidebar_position: 5
 ---
-
 ## CPython Architecture Overview
 
 CPython is the reference implementation of Python, written in C. It is the most widely used

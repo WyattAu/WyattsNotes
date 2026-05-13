@@ -1,10 +1,9 @@
 ---
 title: "Programming and OOP -- Diagnostic Tests"
-description: "Diagnostic tests for A-Level CS programming: OOP principles, polymorphism, encapsulation, and SQL queries."
+description: "Challenging A-Level computer science diagnostic questions on Programming and OOP -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-programming
 hide_table_of_contents: true
 ---
-
 # Programming and OOP — Diagnostic Tests
 
 ## Unit Tests

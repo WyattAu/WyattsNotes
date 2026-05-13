@@ -1,10 +1,9 @@
 ---
 title: Wave Properties
-description: IB Physics — wave types, properties, superposition, standing waves, and
+description: "Rigorous IB physics notes covering Wave Properties. Includes definitions, derivations, worked examples, and exam-style problems."
   the Doppler effect.
 slug: wave-properties
 ---
-
 
 ## Wave Fundamentals
 

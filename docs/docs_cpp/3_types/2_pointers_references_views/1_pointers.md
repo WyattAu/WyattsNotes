@@ -1,7 +1,6 @@
 ---
 title: Pointers
-description:
-  "C++: Pointers — Pointer Arithmetic, Array Decay, and Nullability; 1. Pointer Arithmetic Mechanics; The Arithmetic Formula; Architectural Implications."
+description: "C++: Pointers — Pointer Arithmetic, Array Decay, and Nullability; 1. Pointer Arithmetic Mechanics; The Arithmetic Formula; Architectural Implications."
 date: 2026-01-03T01:32:50.298Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: pointers
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Pointer Arithmetic, Array Decay, and Nullability

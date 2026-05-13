@@ -1,9 +1,8 @@
 ---
 title: Forces and Momentums
 slug: forces-and-momentums
-description: Comprehensive guide to forces and momentums for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Forces and Momentums. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## motion
 

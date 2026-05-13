@@ -1,8 +1,6 @@
 ---
 title: The Three Trees
-description:
-  The Three Trees — The Working Directory; Key Properties; Untracked vs Tracked
-  Files; The Index with worked examples and exam-style questions.
+description: "The Three Trees — The Working Directory; Key Properties; Untracked vs Tracked Files; The Index with worked examples and exam-style questions."
 date: 2025-06-02T22:00:00.000Z
 tags:
   - git
@@ -11,7 +9,6 @@ categories:
   - CS
 slug: the-three-trees
 ---
-
 ## Overview
 
 Git manipulates three distinct data structures, conventionally called **trees** (though "tree" is overloaded in Git terminology — see [Git Objects](./02-git-objects.md)). These are:

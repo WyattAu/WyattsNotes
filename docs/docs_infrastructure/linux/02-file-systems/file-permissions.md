@@ -1,13 +1,10 @@
 ---
 id: file-permissions
 title: File Permissions and ACLs
-description:
-  File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal
-  Notation; Viewing Permissions with worked examples and exam-style questions.
+description: "File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal Notation; Viewing Permissions with worked examples and exam-style questions."
 slug: file-permissions
 sidebar_position: 2
 ---
-
 ## Unix Permission Model
 
 Every file and directory on a Linux system carries a set of permission bits that control which users

@@ -1,15 +1,11 @@
 ---
 title: TypeScript with React
-description:
-  TypeScript with React — Typing React Components; Function Components; `FC`
-  Type; Component Typing Comparison with worked examples and exam-style
-  questions.
+description: "TypeScript with React — Typing React Components; Function Components; `FC` Type; Component Typing Comparison with worked examples and exam-style questions."
 slug: typescript-with-react
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
-
 ## Typing React Components
 
 ### Function Components

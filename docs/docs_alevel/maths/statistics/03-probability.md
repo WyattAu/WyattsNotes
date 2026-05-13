@@ -1,7 +1,6 @@
 ---
 title: Probability
-description:
-  "A-Level Mathematics notes on Probability: Board Coverage for comprehensive revision and examination preparation. and examination prepar."
+description: "A-Level Mathematics notes on Probability: Board Coverage for comprehensive revision and examination preparation. and examination prepar."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: probability
 ---
-
 ## Board Coverage
 
 | Board      | Paper      | Notes                                             |

@@ -3,9 +3,8 @@ title: History
 tags:
 - history
 slug: history
-description: Comprehensive guide to history for the International Baccalaureate.
+description: "Rigorous IB history notes covering History. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## IB History -- Course Overview
 

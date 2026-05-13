@@ -1,13 +1,10 @@
 ---
 id: web-security
 title: Web Security
-description:
-  Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS;
-  Reflected XSS with worked examples and exam-style questions.
+description: "Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS; Reflected XSS with worked examples and exam-style questions."
 slug: web-security
 sidebar_position: 5
 ---
-
 ## OWASP Top 10 (2021)
 
 The OWASP Top 10 is the de facto standard for web application security awareness. The 2021 edition

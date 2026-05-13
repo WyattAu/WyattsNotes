@@ -1,8 +1,6 @@
 ---
 title: Pull Requests
-description:
-  Pull Requests — What is a Pull Request; Anatomy of a Good Pull Request; Title;
-  Description with worked examples and exam-style questions.
+description: "Pull Requests — What is a Pull Request; Anatomy of a Good Pull Request; Title; Description with worked examples and exam-style questions."
 date: 2025-06-03T15:00:00.000Z
 tags:
   - git
@@ -13,7 +11,6 @@ categories:
   - CS
 slug: pull-requests
 ---
-
 ## What is a Pull Request
 
 A pull request (PR) — called a **merge request** in GitLab — is a proposal to merge a branch into another branch, usually accompanied by a code review discussion. While `git merge` is a local operation, a pull request is a **platform feature** (GitHub, GitLab, Gitea) that adds:

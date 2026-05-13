@@ -1,8 +1,6 @@
 ---
 title: Kinetics and Equilibrium
-description:
-  Kinetics and Equilibrium — Chemical Kinetics (CED Unit 5); Rate of Reaction;
-  Rate Law; Determining the Rate Law from Initial Rate Data.
+description: "Kinetics and Equilibrium — Chemical Kinetics (CED Unit 5); Rate of Reaction; Rate Law; Determining the Rate Law from Initial Rate Data."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: kinetics-and-equilibrium
 ---
-
 ## Chemical Kinetics (CED Unit 5)
 
 Chemical kinetics studies the rates of chemical reactions and the factors that affect them.

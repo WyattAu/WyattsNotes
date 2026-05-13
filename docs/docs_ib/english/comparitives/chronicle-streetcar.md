@@ -3,10 +3,9 @@ title: Chronicle and Streetcar Comparison
 tags:
 - english
 slug: chronicle-streetcar-comparison
-description: Comprehensive guide to chronicle and streetcar comparison for the International
+description: "Rigorous IB English notes covering Chronicle and Streetcar Comparison. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Ideologies
 

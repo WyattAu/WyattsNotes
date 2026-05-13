@@ -1,7 +1,6 @@
 ---
 title: Cross-compilation Toolchains
-description:
-  "C++: Cross-compilation Toolchains — The Architecture of a Cross-Toolchain; 1. The Cross-Compiler; 2. The Sysroot; 3. The Binutils."
+description: "C++: Cross-compilation Toolchains — The Architecture of a Cross-Toolchain; 1. The Cross-Compiler; 2. The Sysroot; 3. The Binutils."
 date: 2025-12-10T05:18:46.463Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: cross-compilation-toolchains
 ---
-
 Cross-compilation is the process of building executable code on one architecture (the **Build
 Host**) that is intended to execute on a different architecture or operating system (the
 **Target**).

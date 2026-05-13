@@ -1,7 +1,6 @@
 ---
 title: Regular Expressions
-description:
-  "C++: Regular Expressions — `std::regex_match` and `std::regex_search`; `std::smatch` and Capture Groups; `std::regex_replace`; Email Validation with Regex."
+description: "C++: Regular Expressions — `std::regex_match` and `std::regex_search`; `std::smatch` and Capture Groups; `std::regex_replace`; Email Validation with Regex."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: regular-expressions
 ---
-
 ## Regular Expressions
 
 `std::regex` (C++11) provides regular expression matching, searching, and replacement using the

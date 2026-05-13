@@ -1,7 +1,6 @@
 ---
 title: Move Constructors, Assignment, Swap Idiom
-description:
-  "C++: Move Constructors, Assignment, Swap Idiom — 6.1 Move Constructor: `T(T&& other)`; Proof That Moved-From Objects Are in a Valid-But-Unspecified State."
+description: "C++: Move Constructors, Assignment, Swap Idiom — 6.1 Move Constructor: `T(T&& other)`; Proof That Moved-From Objects Are in a Valid-But-Unspecified State."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: move-constructors-assignment-swap-idiom
 ---
-
 # Move Constructors, Assignment, Swap Idiom
 
 Move semantics allow resources to be transferred between objects without copying. The move

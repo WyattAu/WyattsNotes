@@ -1,7 +1,6 @@
 ---
 title: A-Level Chemistry
-description:
-  "A-Level Chemistry notes on A-Level Chemistry: Board Coverage for comprehensive revision and examination preparation. and examination pr."
+description: "A-Level Chemistry notes on A-Level Chemistry: Board Coverage for comprehensive revision and examination preparation. and examination pr."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -11,7 +10,6 @@ categories:
 slug: alevel-chemistry
 sidebar_position: 5
 ---
-
 # A-Level Chemistry
 
 A-Level Chemistry is a rigorous, mathematically grounded treatment of the principles governing chemical systems. It builds on GCSE foundations and introduces formal physical chemistry (thermodynamics, kinetics, equilibrium, electrochemistry), inorganic chemistry (periodicity, transition metals), and organic chemistry (mechanisms, synthesis, spectroscopy). The course demands fluency in algebraic manipulation, logarithmic reasoning, and proportional thinking.

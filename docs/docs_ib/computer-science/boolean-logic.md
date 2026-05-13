@@ -4,9 +4,8 @@ tags:
 - IB
 - CS
 slug: boolean-logic
-description: Comprehensive guide to boolean logic for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Boolean Logic. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Boolean Algebra Fundamentals
 

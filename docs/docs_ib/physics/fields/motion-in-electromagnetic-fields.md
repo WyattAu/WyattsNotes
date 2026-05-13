@@ -1,10 +1,9 @@
 ---
 title: Motion in Electromagnetic Fields
 slug: motion-in-electromagnetic-fields
-description: Comprehensive guide to motion in electromagnetic fields for the International
+description: "Rigorous IB physics notes covering Motion in Electromagnetic Fields. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Uniform Fields
 

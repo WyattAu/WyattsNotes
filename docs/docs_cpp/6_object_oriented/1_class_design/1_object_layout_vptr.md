@@ -1,7 +1,6 @@
 ---
 title: Object Layout, vptr, and the this Pointer
-description:
-  "C++: Object Layout, vptr, and the this Pointer — Object Layout, vptr, and the `this` Pointer; 1.1 Memory Layout of a Simple Class."
+description: "C++: Object Layout, vptr, and the this Pointer — Object Layout, vptr, and the `this` Pointer; 1.1 Memory Layout of a Simple Class."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: object-layout-vptr-this-pointer
 ---
-
 # Object Layout, vptr, and the `this` Pointer
 
 Understanding how the compiler lays out objects in memory is fundamental to writing correct and

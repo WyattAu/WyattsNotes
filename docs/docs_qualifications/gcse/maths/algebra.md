@@ -1,9 +1,6 @@
 ---
 title: Algebra
-description:
-  Algebra — 1.1 Simplifying Expressions; 1.2 Expanding Brackets; 1.3
-  Factorisation; 2. Solving Equations with worked examples and exam-style
-  questions.
+description: "Algebra — 1.1 Simplifying Expressions; 1.2 Expanding Brackets; 1.3 Factorisation; 2. Solving Equations with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Maths
@@ -12,7 +9,6 @@ categories:
   - Maths
 slug: algebra
 ---
-
 ## Algebra
 
 :::info

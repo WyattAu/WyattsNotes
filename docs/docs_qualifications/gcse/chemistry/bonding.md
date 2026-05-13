@@ -1,8 +1,6 @@
 ---
 title: Bonding
-description:
-  Bonding — 1.1 Formation of Ions; 1.2 Ionic Lattice Structure; 1.3 Dot and
-  Cross Diagrams; 1.4 Formulae of Ionic Compounds.
+description: "Bonding — 1.1 Formation of Ions; 1.2 Ionic Lattice Structure; 1.3 Dot and Cross Diagrams; 1.4 Formulae of Ionic Compounds."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: bonding
 ---
-
 ## Bonding
 
 :::info

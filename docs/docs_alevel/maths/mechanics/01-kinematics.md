@@ -1,7 +1,6 @@
 ---
 title: Kinematics
-description:
-  "A-Level Mathematics notes on Kinematics: Board Coverage; 1. Fundamental Quantities; 1.1 Definitions; 1.2 Relationships via calculus."
+description: "A-Level Mathematics notes on Kinematics: Board Coverage; 1. Fundamental Quantities; 1.1 Definitions; 1.2 Relationships via calculus."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: kinematics
 ---
-
 ## Board Coverage
 
 | Board      | Paper   | Notes                          |

@@ -1,8 +1,6 @@
 ---
 title: Macros
-description:
-  Macros — Basic Syntax; Metavariables; Fragment Specifiers; Repetition
-  including key definitions, derivations, and problem-solving techniques.
+description: "Macros — Basic Syntax; Metavariables; Fragment Specifiers; Repetition including key definitions, derivations, and problem-solving techniques."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Rust
@@ -10,7 +8,6 @@ categories:
   - Rust
 slug: rust-macros
 ---
-
 ## Introduction
 
 Macros in Rust are a metaprogramming mechanism that operates on the abstract syntax tree (AST)

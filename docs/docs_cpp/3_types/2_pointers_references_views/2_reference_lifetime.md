@@ -1,14 +1,12 @@
 ---
 title: Reference And Lifetime
-description:
-  "C++: Reference And Lifetime — 1. Architectural Implementation; Assembly Inspection; Memory Layout (Class Members); 2. Nullability and Invariants."
+description: "C++: Reference And Lifetime — 1. Architectural Implementation; Assembly Inspection; Memory Layout (Class Members); 2. Nullability and Invariants."
 date: 2026-01-03T04:13:20.675Z
 tags:
   - cpp
 categories:
   - cpp
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A C++ Reference (`T&`) is an alias for an existing object. Unlike pointers, references are not

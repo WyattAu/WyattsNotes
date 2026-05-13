@@ -1,8 +1,6 @@
 ---
 title: Development Enviroment
-description:
-  Development Enviroment — Virtual Devices; Physical Devices; Compiling and
-  Running; Project Structure with worked examples and exam-style questions.
+description: "Development Enviroment — Virtual Devices; Physical Devices; Compiling and Running; Project Structure with worked examples and exam-style questions."
 date: 2025-07-13T19:11:38.762Z
 tags:
   - dart
@@ -10,7 +8,6 @@ categories:
   - dart
 slug: development-enviroment
 ---
-
 ## Virtual Devices
 
 Virtual devices can be created by opening the command-palette and selecting

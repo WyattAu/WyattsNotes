@@ -1,16 +1,12 @@
 ---
 title: Concurrency
-description:
-  Concurrency — The Java Memory Model; Why the Memory Model Matters;
-  Happens-Before Rules; Safe Publication with worked examples and exam-style
-  questions.
+description: "Concurrency — The Java Memory Model; Why the Memory Model Matters; Happens-Before Rules; Safe Publication with worked examples and exam-style questions."
 date: 2025-06-05T15:00:00.000Z
 tags: ["java"]
 categories: ["java"]
 slug: concurrency
 sidebar_position: 1
 ---
-
 ## Why Concurrency Is Hard
 
 Concurrency is not parallelism. Concurrency is about _dealing with_ many things at once; parallelism is about _doing_ many things at once. A single-core processor running an event loop is concurrent but not parallel. A GPU running thousands of identical matrix multiplications is parallel but may not be concurrent in any meaningful sense. Java has supported concurrency since JDK 1.0 via the `Thread` class, and the platform has accumulated nearly three decades of concurrency primitives, each added to address the failure modes of its predecessors.

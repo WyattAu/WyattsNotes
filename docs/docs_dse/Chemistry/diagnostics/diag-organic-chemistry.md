@@ -1,10 +1,9 @@
 ---
 title: "Organic Chemistry -- Diagnostic Tests"
-description: Hardest diagnostic questions on organic chemistry within the DSE specification, each with a full worked solution.
+description: "Challenging DSE chemistry diagnostic questions on Organic Chemistry -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-organic-chemistry
 hide_table_of_contents: true
 ---
-
 # DSE Chemistry Diagnostic: Organic Chemistry
 
 ## Unit Test 1: Functional Group Identification from Tests

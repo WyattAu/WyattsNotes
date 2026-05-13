@@ -1,12 +1,10 @@
 ---
 id: processes-and-signals
 title: Processes and Signals
-description:
-  "Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`, `wait`; `fork(2)`; `execve(2)` with worked examples and exam-style questions."
+description: "Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`, `wait`; `fork(2)`; `execve(2)` with worked examples and exam-style questions."
 slug: processes-and-signals
 sidebar_position: 1
 ---
-
 ## Process Lifecycle
 
 Every running program in Linux is a **process** — an instance of an executing program with its own

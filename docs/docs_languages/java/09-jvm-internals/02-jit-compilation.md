@@ -1,14 +1,11 @@
 ---
 title: JIT Compilation and Deoptimization
-description:
-  JIT Compilation and Deoptimization — Interpreter vs JIT Compilation; C1 and C2
-  Compilers; Tiered Compilation; Tiered compilation is the default since Java 8.
+description: "JIT Compilation and Deoptimization — Interpreter vs JIT Compilation; C1 and C2 Compilers; Tiered Compilation; Tiered compilation is the default since Java 8."
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: jit-compilation
 ---
-
 ## Interpreter vs JIT Compilation
 
 Java source code is compiled to bytecode (`.class` files) by `javac`. The JVM then has two ways to

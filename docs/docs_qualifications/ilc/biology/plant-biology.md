@@ -1,8 +1,6 @@
 ---
 title: Plant Biology
-description:
-  Plant Biology — Plant Structure; Plant Tissues (OL/HL); Leaf Structure
-  (OL/HL); Root Structure (OL/HL) with worked examples and exam-style questions.
+description: "Plant Biology — Plant Structure; Plant Tissues (OL/HL); Leaf Structure (OL/HL); Root Structure (OL/HL) with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: plant-biology
 ---
-
 # Plant Biology
 
 This topic covers plant structure, transport in plants, reproduction, growth, and plant responses to

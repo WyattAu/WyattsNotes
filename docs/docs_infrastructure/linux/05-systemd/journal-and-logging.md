@@ -1,14 +1,10 @@
 ---
 id: journal-and-logging
 title: Journal and Logging
-description:
-  Journal and Logging — systemd-journald Architecture; Log Sources; Storage
-  Modes; Check current storage mode with worked examples and exam-style
-  questions.
+description: "Journal and Logging — systemd-journald Architecture; Log Sources; Storage Modes; Check current storage mode with worked examples and exam-style questions."
 slug: journal-and-logging
 sidebar_position: 2
 ---
-
 ## systemd-journald Architecture
 
 `systemd-journald` is the central logging daemon in systemd-based systems. It collects log messages

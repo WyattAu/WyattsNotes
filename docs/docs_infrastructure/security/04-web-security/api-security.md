@@ -1,13 +1,9 @@
 ---
 id: api-security
 title: API Security
-description:
-  API Security — Stateless Authentication Per Request; Authentication Methods;
-  API Keys; Simple API key in header with worked examples and exam-style
-  questions.
+description: "API Security — Stateless Authentication Per Request; Authentication Methods; API Keys; Simple API key in header with worked examples and exam-style questions."
 slug: api-security
 ---
-
 ## REST API Security Fundamentals
 
 REST APIs are stateless by design: each request must contain all information needed for

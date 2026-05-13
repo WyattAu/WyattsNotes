@@ -1,13 +1,9 @@
 ---
 id: arrays-and-strings
 title: Arrays and Strings
-description:
-  Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour;
-  Dynamic Arrays; String Representation with worked examples and exam-style
-  questions.
+description: "Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour; Dynamic Arrays; String Representation with worked examples and exam-style questions."
 slug: arrays-and-strings
 ---
-
 ## Array Fundamentals
 
 An array is a contiguous block of memory where each element occupies a fixed number of bytes and is

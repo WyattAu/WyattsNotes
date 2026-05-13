@@ -1,8 +1,6 @@
 ---
 title: Remote Operations
-description:
-  Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories;
-  Create a bare repository; Clone from a bare repository.
+description: "Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories; Create a bare repository; Clone from a bare repository."
 date: 2025-06-03T06:00:00.000Z
 tags:
   - git
@@ -11,7 +9,6 @@ categories:
   - CS
 slug: remote-operations
 ---
-
 ## Distributed Architecture
 
 Git's distributed architecture means there is no intrinsic client-server relationship. Any repository can act as a "remote" for any other. In practice, one repository is designated as the "canonical" or "origin" repository, and all others sync with it.

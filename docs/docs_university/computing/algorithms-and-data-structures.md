@@ -1,7 +1,6 @@
 ---
 title: Algorithms and Data Structures
-description:
-  "University-level notes on Algorithms and Data Structures: 1. Algorithm Analysis; 1.1 Asymptotic Notation; 1.2 Common Complexity Classes."
+description: "University-level notes on Algorithms and Data Structures: 1. Algorithm Analysis; 1.1 Asymptotic Notation; 1.2 Common Complexity Classes."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Computing
@@ -10,7 +9,6 @@ categories:
   - Computing
 slug: algorithms-and-data-structures
 ---
-
 ## 1. Algorithm Analysis
 
 ### 1.1 Asymptotic Notation

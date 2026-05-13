@@ -1,7 +1,6 @@
 ---
 title: Functions
-description:
-  "A-Level Mathematics notes on Functions: Board Coverage; 1. Definitions; 4. The Modulus Function; 4.1 Solving Modulus Equations."
+description: "A-Level Mathematics notes on Functions: Board Coverage; 1. Definitions; 4. The Modulus Function; 4.1 Solving Modulus Equations."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: functions
 ---
-
 ## Board Coverage
 
 | Board      | Paper      | Notes                                            |

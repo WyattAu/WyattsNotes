@@ -1,15 +1,12 @@
 ---
 title: Style and Patterns
-description:
-  Style and Patterns — Naming Conventions; Packages; Classes and Interfaces;
-  Methods with worked examples and exam-style questions.
+description: "Style and Patterns — Naming Conventions; Packages; Classes and Interfaces; Methods with worked examples and exam-style questions."
 date: 2025-06-05T16:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: style-and-patterns
 sidebar_position: 1
 ---
-
 ## Naming Conventions
 
 Naming is the single most visible signal of code quality. Java naming conventions are codified in

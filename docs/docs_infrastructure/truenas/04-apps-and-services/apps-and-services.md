@@ -1,12 +1,9 @@
 ---
 id: apps-and-services
 title: Apps and Services
-description:
-  Apps and Services — TrueNAS SCALE Apps; Kubernetes-Based App Architecture; App
-  Catalog; Installing Apps with worked examples and exam-style questions.
+description: "Apps and Services — TrueNAS SCALE Apps; Kubernetes-Based App Architecture; App Catalog; Installing Apps with worked examples and exam-style questions."
 slug: apps-and-services
 ---
-
 ## TrueNAS SCALE Apps
 
 ### Kubernetes-Based App Architecture

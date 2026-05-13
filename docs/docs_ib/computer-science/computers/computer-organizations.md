@@ -3,9 +3,8 @@ title: Computer Organizations
 tags:
 - CS
 slug: computer-organizations
-description: Comprehensive guide to computer organizations for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Computer Organizations. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Computer Architecture
 

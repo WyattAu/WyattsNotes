@@ -1,7 +1,6 @@
 ---
 title: Fold Expressions and Pack Expansion
-description:
-  "C++: Fold Expressions and Pack Expansion — Formal Grammar and Semantics [N4950 §7.6.1]; Fold Expressions; All Supported Operators."
+description: "C++: Fold Expressions and Pack Expansion — Formal Grammar and Semantics [N4950 §7.6.1]; Fold Expressions; All Supported Operators."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: fold-expressions-and-pack-expansion
 ---
-
 # Fold Expressions and Pack Expansion
 
 A **fold expression** reduces a parameter pack using a binary operator [N4950 §7.6.1], introduced in

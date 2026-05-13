@@ -1,15 +1,12 @@
 ---
 title: Collections Framework
-description:
-  Collections Framework — Architecture Overview; The Iterable Interface; List
-  Implementations; ArrayList with worked examples and exam-style questions.
+description: "Collections Framework — Architecture Overview; The Iterable Interface; List Implementations; ArrayList with worked examples and exam-style questions."
 date: 2025-06-05T13:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: collections-framework
 sidebar_position: 1
 ---
-
 ## Architecture Overview
 
 The Java Collections Framework (JCF) is a unified architecture for representing and manipulating

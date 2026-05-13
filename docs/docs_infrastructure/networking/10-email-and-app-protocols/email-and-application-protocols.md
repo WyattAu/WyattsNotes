@@ -1,8 +1,6 @@
 ---
 title: Email and Application Protocols
-description:
-  Email and Application Protocols — Email Architecture; Core Components; Email
-  Message Format; MIME — Multipurpose Internet Mail Extensions.
+description: "Email and Application Protocols — Email Architecture; Core Components; Email Message Format; MIME — Multipurpose Internet Mail Extensions."
 date: 2026-04-09T00:00:00.000Z
 tags:
   - Networking
@@ -10,7 +8,6 @@ categories:
   - Networking
 slug: email-and-application-protocols
 ---
-
 # Email and Application Protocols
 
 Electronic mail and application-layer protocols form the backbone of human communication over the

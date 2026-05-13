@@ -1,8 +1,6 @@
 ---
 title: File I/O
-description:
-  File I/O — The `open()` Built-in; Modes; The `encoding` Parameter; The
-  `errors` Parameter with worked examples and exam-style questions.
+description: "File I/O — The `open()` Built-in; Modes; The `encoding` Parameter; The `errors` Parameter with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: file-io
 ---
-
 ## The `open()` Built-in
 
 `open()` is the primary interface for file I/O in Python. It returns a file object (an instance of

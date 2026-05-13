@@ -1,8 +1,6 @@
 ---
 title: Error Handling
-description:
-  Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel
-  Errors; Custom Error Types with worked examples and exam-style questions.
+description: "Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel Errors; Custom Error Types with worked examples and exam-style questions."
 slug: error-handling
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## The Error Interface
 
 Go's error handling is convention-based. The `error` interface has a single method:

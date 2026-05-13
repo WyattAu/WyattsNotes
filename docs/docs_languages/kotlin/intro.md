@@ -1,6 +1,6 @@
 ---
 title: Introduction to Kotlin
-description: Kotlin overview, JVM vs Kotlin/Native, installation, and hello world.
+description: "Rigorous programming language notes covering Introduction to Kotlin. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 date: 2026-04-18
 tags:
@@ -8,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Overview
 
 Kotlin is a statically typed language targeting the JVM, Android, JavaScript, and native platforms

@@ -1,12 +1,9 @@
 ---
 id: trie-and-pattern-matching
 title: Tries and String Algorithms
-description:
-  Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations;
-  Complexity Analysis with worked examples and exam-style questions.
+description: "Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations; Complexity Analysis with worked examples and exam-style questions."
 slug: trie-and-pattern-matching
 ---
-
 ## Trie (Prefix Tree)
 
 A trie is a tree data structure where each node represents a character of a string. The path from

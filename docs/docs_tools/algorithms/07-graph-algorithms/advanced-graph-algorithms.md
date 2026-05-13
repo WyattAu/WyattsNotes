@@ -1,12 +1,9 @@
 ---
 id: advanced-graph-algorithms
 title: Advanced Graph Algorithms
-description:
-  Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's
-  Algorithm. with additional techniques and methods.
+description: "Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's Algorithm. with additional techniques and methods."
 slug: advanced-graph-algorithms
 ---
-
 ## Strongly Connected Components
 
 A strongly connected component (SCC) of a directed graph is a maximal set of vertices such that

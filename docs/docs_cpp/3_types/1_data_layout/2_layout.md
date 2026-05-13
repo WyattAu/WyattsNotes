@@ -1,7 +1,6 @@
 ---
 title: Alignment and Layout
-description:
-  "C++: Alignment and Layout — 1. Natural Alignment; The Rules of Alignment; Inspection Tools; 2. Structure Padding and Layout."
+description: "C++: Alignment and Layout — 1. Natural Alignment; The Rules of Alignment; Inspection Tools; 2. Structure Padding and Layout."
 date: 2025-12-12T05:45:45.940Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: layout
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, `sizeof(T)` is rarely equal to the sum of the sizes of its members. The compiler inserts

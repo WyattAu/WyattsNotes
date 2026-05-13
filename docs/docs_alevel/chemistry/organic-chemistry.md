@@ -1,7 +1,6 @@
 ---
 title: Organic Chemistry
-description:
-  "A-Level Chemistry notes on Organic Chemistry: Nomenclature (IUPAC); Steps for Naming; Homologous Series; Structural Isomerism."
+description: "A-Level Chemistry notes on Organic Chemistry: Nomenclature (IUPAC); Steps for Naming; Homologous Series; Structural Isomerism."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -11,7 +10,6 @@ categories:
 slug: organic-chemistry
 sidebar_position: 14
 ---
-
 # Organic Chemistry
 
 Organic chemistry is the study of carbon-containing compounds and their reactions. Carbon's ability to form four covalent bonds and catenate (form chains and rings) gives rise to an enormous diversity of structures.

@@ -1,8 +1,6 @@
 ---
 title: Projectile Motion
-description:
-  'A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1
-  Setting up the problem; 1.2 Horizontal motion (constant velocity).'
+description: "A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1 Setting up the problem; 1.2 Horizontal motion (constant velocity)."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: projectile-motion
 sidebar_position: 1
 ---
-
 ## Projectile Motion
 
 Projectile motion is the motion of a body launched into the air and subject only to the acceleration

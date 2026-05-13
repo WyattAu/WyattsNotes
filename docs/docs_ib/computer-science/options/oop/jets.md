@@ -4,9 +4,8 @@ tags:
 - CS
 slug: jets
 draft: false
-description: Comprehensive guide to jets for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering JETS. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # Java Examination Tool Sebset (JETS)
 

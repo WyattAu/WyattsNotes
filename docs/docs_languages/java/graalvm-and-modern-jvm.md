@@ -1,7 +1,6 @@
 ---
 title: GraalVM and Modern JVM
-description:
-  "Java: GraalVM and Modern JVM — What GraalVM Provides; The Graal Compiler; Graal JIT vs C2 JIT; Compilation Tiers with Graal."
+description: "Java: GraalVM and Modern JVM — What GraalVM Provides; The Graal Compiler; Graal JIT vs C2 JIT; Compilation Tiers with Graal."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Java
@@ -9,7 +8,6 @@ categories:
   - Java
 slug: graalvm-and-modern-jvm
 ---
-
 ## Introduction
 
 GraalVM is a high-performance JDK distribution that extends the standard HotSpot JVM with an

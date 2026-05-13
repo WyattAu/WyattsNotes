@@ -4,9 +4,8 @@ tags:
 - Chemistry
 - IB
 slug: electrochemistry
-description: Comprehensive guide to electrochemistry for the International Baccalaureate.
+description: "Rigorous IB chemistry notes covering Electrochemistry. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## 1. Redox Review (SL Topic 9)
 

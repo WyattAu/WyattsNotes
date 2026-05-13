@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  Cell Biology — Cell Structure; Cell Ultrastructure; The Fluid Mosaic Model;
-  Membrane Transport with worked examples and exam-style questions.
+description: "Cell Biology — Cell Structure; Cell Ultrastructure; The Fluid Mosaic Model; Membrane Transport with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: cell-biology
 ---
-
 # Cell Biology
 
 ## Higher Cell Biology

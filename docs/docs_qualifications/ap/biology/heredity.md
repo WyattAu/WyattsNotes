@@ -1,8 +1,6 @@
 ---
 title: Heredity
-description:
-  Heredity — Meiosis and Sexual Life Cycles (CED Unit 5); Chromosome
-  Terminology; Meiosis Overview; Meiosis I (Reductional Division).
+description: "Heredity — Meiosis and Sexual Life Cycles (CED Unit 5); Chromosome Terminology; Meiosis Overview; Meiosis I (Reductional Division)."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: heredity
 ---
-
 ## Meiosis and Sexual Life Cycles (CED Unit 5)
 
 ### Chromosome Terminology

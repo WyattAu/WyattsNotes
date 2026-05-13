@@ -1,8 +1,6 @@
 ---
 title: Geometry and Trigonometry
-description:
-  Geometry and Trigonometry — Coordinate Geometry; Distance Formula (OL/HL);
-  Midpoint Formula (OL/HL); Slope (Gradient) (OL/HL).
+description: "Geometry and Trigonometry — Coordinate Geometry; Distance Formula (OL/HL); Midpoint Formula (OL/HL); Slope (Gradient) (OL/HL)."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -11,7 +9,6 @@ categories:
   - Mathematics
 slug: geometry-and-trigonometry
 ---
-
 # Geometry and Trigonometry
 
 Geometry and trigonometry form a significant part of the Leaving Certificate syllabus, particularly

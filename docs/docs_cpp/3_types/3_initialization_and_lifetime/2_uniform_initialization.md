@@ -1,7 +1,6 @@
 ---
 title: Uniform Initialization
-description:
-  "C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization; Copy Initialization; List Initialization. and examination."
+description: "C++: Uniform Initialization — Initialization Syntaxes; Direct Initialization; Copy Initialization; List Initialization. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: uniform-initialization
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 C++98 had three initialization syntaxes: `T()`, `T = x`, and `T x`. Each had subtly different rules,

@@ -1,12 +1,9 @@
 ---
 id: backup-and-replication
 title: Backup and Replication
-description:
-  Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot
-  Lifecycle; Snapshot Types with worked examples and exam-style questions.
+description: "Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot Lifecycle; Snapshot Types with worked examples and exam-style questions."
 slug: backup-and-replication
 ---
-
 ## The 3-2-1 Backup Rule
 
 The 3-2-1 rule is the minimum standard for data protection:

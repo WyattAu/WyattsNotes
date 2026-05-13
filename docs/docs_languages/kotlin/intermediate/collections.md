@@ -1,8 +1,6 @@
 ---
 title: Collections
-description:
-  Collections — Collection Hierarchy; List; List Operations; Set Operations with
-  worked examples and exam-style questions.
+description: "Collections — Collection Hierarchy; List; List Operations; Set Operations with worked examples and exam-style questions."
 slug: collections
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Collection Hierarchy
 
 Kotlin's collection types are split into two hierarchies: **read-only** and **mutable**.

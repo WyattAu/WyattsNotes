@@ -1,7 +1,6 @@
 ---
 title: Fundamental Types
-description:
-  "C++: Fundamental Types — The Data Models (LP64 vs. LLP64); Data Model Comparison; The `long` Trap for thorough revision and examination preparation."
+description: "C++: Fundamental Types — The Data Models (LP64 vs. LLP64); Data Model Comparison; The `long` Trap for thorough revision and examination preparation."
 date: 2025-12-12T04:26:41.621Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: fundamental-types
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In managed languages (Java, C#), types are abstract constraints enforced by a virtual machine. In

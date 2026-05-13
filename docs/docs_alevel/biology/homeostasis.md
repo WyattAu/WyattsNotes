@@ -1,7 +1,6 @@
 ---
 title: Homeostasis
-description:
-  "A-Level Biology notes on Homeostasis: principles, negative and positive feedback, blood glucose regulation, temperature regulation, osmoregulation, heart rate regulation, PCO2/pH regulation, diabetes."
+description: "A-Level Biology notes on Homeostasis: principles, negative and positive feedback, blood glucose regulation, temperature regulation, osmoregulation, heart rate r"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: homeostasis
 sidebar_position: 12
 ---
-
 ## Homeostasis
 
 :::info

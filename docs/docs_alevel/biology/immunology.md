@@ -1,7 +1,6 @@
 ---
 title: Immunology
-description:
-  "A-Level Biology notes on Immunology: innate immunity, adaptive immunity, cell-mediated response, humoral response, antibodies, autoimmune diseases, vaccination, ELISA, monoclonal antibodies."
+description: "A-Level Biology notes on Immunology: innate immunity, adaptive immunity, cell-mediated response, humoral response, antibodies, autoimmune diseases, vaccination,"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: immunology
 sidebar_position: 7
 ---
-
 ## Immunology
 
 :::info

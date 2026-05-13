@@ -3,9 +3,8 @@ title: Simple Harmonic Motion
 tags:
 - physics
 slug: simple-harmonic-motion
-description: Comprehensive guide to simple harmonic motion for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Simple Harmonic Motion. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Specification
 

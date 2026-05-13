@@ -1,8 +1,6 @@
 ---
 title: Matrices
-description:
-  'A-Level Further Maths notes on Matrices: Board Coverage; 1. Matrix Notation and Operations; 1.1
-  Matrix Addition and Scalar Multiplication; 1.2 Matrix Multipl.'
+description: "A-Level Further Maths notes on Matrices: Board Coverage; 1. Matrix Notation and Operations; 1.1 Matrix Addition and Scalar Multiplication; 1.2 Matrix Multipl."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: further-matrices
 sidebar_position: 2
 ---
-
 ## Matrices
 
 Matrices provide a compact algebraic framework for representing and manipulating systems of linear

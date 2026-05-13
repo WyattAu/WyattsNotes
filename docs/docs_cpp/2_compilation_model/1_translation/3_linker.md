@@ -1,7 +1,6 @@
 ---
 title: Linker
-description:
-  "C++: Linker — 1. Symbol Resolution; The Resolution State Machine; Weak vs. Strong vs. Common Symbols; Symbol Visibility."
+description: "C++: Linker — 1. Symbol Resolution; The Resolution State Machine; Weak vs. Strong vs. Common Symbols; Symbol Visibility."
 date: 2025-12-11T23:31:53.376Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: linker
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The Linker (`ld`, `lld`, `link.exe`) is the final architect of the binary. While the compiler works

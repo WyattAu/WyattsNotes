@@ -3,10 +3,9 @@ title: System In Organizations
 tags:
 - CS
 slug: systemIn-organization
-description: Comprehensive guide to system in organizations for the International
+description: "Rigorous IB computer science notes covering System In Organizations. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Planning and System Installation
 

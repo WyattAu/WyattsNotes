@@ -1,8 +1,6 @@
 ---
 title: Momentum and Impulse
-description:
-  Momentum and Impulse — Linear Momentum (CED Unit 5); Newton's Second Law in
-  Terms of Momentum; Why Momentum Is More Fundamental Than Force.
+description: "Momentum and Impulse — Linear Momentum (CED Unit 5); Newton's Second Law in Terms of Momentum; Why Momentum Is More Fundamental Than Force."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: momentum-and-impulse
 ---
-
 ## Linear Momentum (CED Unit 5)
 
 The linear momentum of an object is:

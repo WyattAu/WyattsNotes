@@ -1,12 +1,9 @@
 ---
 id: concurrency-primitives
 title: Concurrency Primitives
-description:
-  Concurrency Primitives — threading Module; Creating Threads; Thread
-  Subclassing; Daemon Threads with worked examples and exam-style questions.
+description: "Concurrency Primitives — threading Module; Creating Threads; Thread Subclassing; Daemon Threads with worked examples and exam-style questions."
 slug: concurrency-primitives
 ---
-
 ## threading Module
 
 The `threading` module provides low-level thread primitives. Python threads are OS-level threads

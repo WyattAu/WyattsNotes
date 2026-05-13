@@ -1,9 +1,7 @@
 ---
 id: intro
 title: A Level Notes
-description:
-  Rigorous A Level revision notes covering Mathematics, Physics, Computer Science, and Economics
-  across AQA, Edexcel, OCR, and CIE boards.
+description: "Rigorous A Level revision notes covering Mathematics, Physics, Computer Science, and Economics across AQA, Edexcel, OCR, and CIE boards."
 slug: intro
 sidebar_position: 1
 date: 2025-06-02T16:25:28.480Z
@@ -13,7 +11,6 @@ tags:
 categories:
   - general
 ---
-
 ## About These Notes
 
 These notes are written with the rigour of an undergraduate textbook, but targeted at the Year 12–13

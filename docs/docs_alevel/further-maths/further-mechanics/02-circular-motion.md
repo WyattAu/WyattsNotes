@@ -1,8 +1,6 @@
 ---
 title: Circular Motion
-description:
-  'A-Level Further Maths notes on Circular Motion: Board Coverage; 1. Angular Quantities; 1.1
-  Definitions; 1.2 Relationship with linear quantities.'
+description: "A-Level Further Maths notes on Circular Motion: Board Coverage; 1. Angular Quantities; 1.1 Definitions; 1.2 Relationship with linear quantities."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: further-circular-motion
 sidebar_position: 2
 ---
-
 ## Circular Motion
 
 Circular motion in further mathematics extends the basic treatment to include banked tracks, conical

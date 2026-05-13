@@ -1,7 +1,6 @@
 ---
 title: Advanced Genetics
-description:
-  "A-Level Biology notes on Advanced Genetics: epistasis, linkage, chi-squared test, sex linkage, Hardy-Weinberg extended, genetic drift, selection, speciation, phylogenetics."
+description: "A-Level Biology notes on Advanced Genetics: epistasis, linkage, chi-squared test, sex linkage, Hardy-Weinberg extended, genetic drift, selection, speciation, ph"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: genetics-advanced
 sidebar_position: 11
 ---
-
 ## Advanced Genetics
 
 :::info

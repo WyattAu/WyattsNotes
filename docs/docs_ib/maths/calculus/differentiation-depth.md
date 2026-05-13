@@ -1,10 +1,9 @@
 ---
 title: Differentiation
-description: IB Mathematics — differentiation rules, techniques, applications, and
+description: "Rigorous IB mathematics notes covering Differentiation. Includes definitions, derivations, worked examples, and exam-style problems."
   exam-style problems.
 slug: differentiation-depth
 ---
-
 
 ## Limits and Continuity
 

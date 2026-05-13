@@ -1,8 +1,6 @@
 ---
 title: Classes and Objects
-description:
-  Classes and Objects — Classes; Primary Constructor; Secondary Constructors;
-  Visibility Modifiers with worked examples and exam-style questions.
+description: "Classes and Objects — Classes; Primary Constructor; Secondary Constructors; Visibility Modifiers with worked examples and exam-style questions."
 slug: classes-and-objects
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Classes
 
 Classes in Kotlin are declared with the `class` keyword. They are final by default -- use `open` to

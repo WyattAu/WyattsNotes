@@ -1,7 +1,6 @@
 ---
 title: The noexcept Specifier
-description:
-  "C++: The noexcept Specifier — The `noexcept` Specifier; 3.1 `noexcept` as Part of the Function Type; 3.2 `std::move_if_noexcept`."
+description: "C++: The noexcept Specifier — The `noexcept` Specifier; 3.1 `noexcept` as Part of the Function Type; 3.2 `std::move_if_noexcept`."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: the-noexcept-specifier
 ---
-
 # The `noexcept` Specifier
 
 Since C++17, `noexcept` is part of the **function type system** [N4950 §14.5.1]. This has

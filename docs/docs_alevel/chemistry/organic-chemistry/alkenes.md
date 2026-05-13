@@ -1,7 +1,6 @@
 ---
 title: Alkenes
-description:
-  "A-Level Chemistry notes on Alkenes: Structure and Properties; Physical Properties; Electrophilic Addition; General Mechanism."
+description: "A-Level Chemistry notes on Alkenes: Structure and Properties; Physical Properties; Electrophilic Addition; General Mechanism."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: alkenes
 ---
-
 # Alkenes
 
 Alkenes are unsaturated hydrocarbons containing at least one C=C double bond. The general formula

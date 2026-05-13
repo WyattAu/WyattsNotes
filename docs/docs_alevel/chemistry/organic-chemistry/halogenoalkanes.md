@@ -1,7 +1,6 @@
 ---
 title: Halogenoalkanes
-description:
-  "A-Level Chemistry notes on Halogenoalkanes: Classification; Nucleophilic Substitution; The SN2 Mechanism; The SN1 Mechanism."
+description: "A-Level Chemistry notes on Halogenoalkanes: Classification; Nucleophilic Substitution; The SN2 Mechanism; The SN1 Mechanism."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: halogenoalkanes
 ---
-
 # Halogenoalkanes
 
 Halogenoalkanes (also called alkyl halides) are compounds in which one or more hydrogen atoms of an

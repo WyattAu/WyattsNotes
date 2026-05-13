@@ -1,7 +1,6 @@
 ---
 title: Entry Point
-description:
-  "Entry Point — Program Entry; main() Function Variants; Command-Line Arguments; Output: with worked examples and exam-style questions."
+description: "Entry Point — Program Entry; main() Function Variants; Command-Line Arguments; Output: with worked examples and exam-style questions."
 date: 2025-07-12T15:49:11.104Z
 tags:
   - Dart
@@ -9,7 +8,6 @@ categories:
   - Dart
 slug: entry-point
 ---
-
 ## Program Entry
 
 When the project creates an executable, the entry point of the project is located in `main()`, where

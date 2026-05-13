@@ -1,9 +1,8 @@
 ---
 title: IB Geography
-description: Course overview, themes, assessment structure, and geographic skills for IB Geography SL and HL.
+description: "Rigorous IB geography notes covering IB Geography. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: geography
 ---
-
 # IB Geography (SL/HL)
 
 ## Course Overview

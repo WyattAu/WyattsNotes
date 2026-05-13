@@ -1,12 +1,9 @@
 ---
 id: open-source
 title: Open Source Contribution Guide
-description:
-  Open Source Contribution Guide — Why Contribute to Open Source; Finding the
-  Right Project. with additional techniques and methods.
+description: "Open Source Contribution Guide — Why Contribute to Open Source; Finding the Right Project. with additional techniques and methods."
 slug: open-source
 ---
-
 ## Why Contribute to Open Source
 
 Open source contribution benefits you as a systems engineer in several ways:

@@ -1,7 +1,6 @@
 ---
 title: Language Server Protocol Configuration
-description:
-  "C++: Language Server Protocol Configuration — 1. LSP Architecture; 1.1 Initialization; 1.2 Document Synchronization; 1.3 Feature Requests."
+description: "C++: Language Server Protocol Configuration — 1. LSP Architecture; 1.1 Initialization; 1.2 Document Synchronization; 1.3 Feature Requests."
 date: 2025-12-11T06:09:37.943Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: language-server-protocol-configuration
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 **Language Server Protocol (LSP)** decouples the specific IDE (VS Code, Neovim, Emacs) from the

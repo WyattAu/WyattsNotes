@@ -1,10 +1,9 @@
 ---
 title: Introduction to IB Notes
-description: IB Diploma Programme notes covering Computer Science, Mathematics, and
+description: "Rigorous IB notes covering Introduction to IB Notes. Includes definitions, derivations, worked examples, and exam-style problems."
   other subjects.
 slug: /intro
 ---
-
 
 ## Abstract
 

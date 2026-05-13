@@ -1,12 +1,9 @@
 ---
 id: testing
 title: Testing in Java
-description:
-  Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle
-  including key definitions, derivations, and problem-solving techniques.
+description: "Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle including key definitions, derivations, and problem-solving techniques."
 slug: testing
 ---
-
 ## JUnit 5
 
 JUnit 5 (Jupiter) is the standard testing framework for Java. It consists of three sub-projects:

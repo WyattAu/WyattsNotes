@@ -1,8 +1,6 @@
 ---
 title: Data Validation
-description:
-  Data Validation — Pydantic v2; BaseModel; Field Types; Automatic Type Coercion
-  with worked examples and exam-style questions.
+description: "Data Validation — Pydantic v2; BaseModel; Field Types; Automatic Type Coercion with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: data-validation
 ---
-
 ## Why Data Validation
 
 Every non-trivial system receives data from sources it does not control: HTTP request bodies parsed

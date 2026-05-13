@@ -1,7 +1,6 @@
 ---
 title: Constant Expressions
-description:
-  "C++: Constant Expressions — The Keyword Taxonomy; `const`: Immutability, Not Compile-Time; `const` at Namespace Scope. and examination."
+description: "C++: Constant Expressions — The Keyword Taxonomy; `const`: Immutability, Not Compile-Time; `const` at Namespace Scope. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: constant-expressions
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compile-time computation is one of C++'s most distinctive capabilities. Unlike C macros or Java

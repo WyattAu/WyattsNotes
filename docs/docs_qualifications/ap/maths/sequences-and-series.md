@@ -1,7 +1,6 @@
 ---
 title: Sequences and Series
-description:
-  "Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone Sequences; Common Sequences; Proof: $\frac{n!}{n^n} \to 0$."
+description: "Sequences and Series — Sequences (CED BC Unit 10); Bounded and Monotone Sequences; Common Sequences; Proof: $\frac{n!}{n^n} \to 0$."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: sequences-and-series
 ---
-
 ## Sequences (CED BC Unit 10)
 
 A **sequence** is an ordered list of numbers: $a_1, a_2, a_3, \ldots$. Formally, a sequence is a

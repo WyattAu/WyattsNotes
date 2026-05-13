@@ -1,9 +1,8 @@
 ---
 title: Calculus
-description: IB Mathematics — limits, differentiation, integration, and their applications.
+description: "Rigorous IB mathematics notes covering Calculus. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: calculus
 ---
-
 ## Limits
 
 ### Formal Definition

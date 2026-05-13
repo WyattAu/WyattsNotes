@@ -1,8 +1,6 @@
 ---
 title: Functions
-description:
-  Functions — Function Declaration; Named Return Values; Passing a Slice to a
-  Variadic Function; Variadic with Other Parameters.
+description: "Functions — Function Declaration; Named Return Values; Passing a Slice to a Variadic Function; Variadic with Other Parameters."
 slug: functions
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Function Declaration
 
 Go functions are first-class values. The basic syntax:

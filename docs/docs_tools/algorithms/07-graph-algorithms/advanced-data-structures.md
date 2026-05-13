@@ -1,12 +1,9 @@
 ---
 id: advanced-data-structures
 title: Advanced Data Structures
-description:
-  Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query;
-  Lazy Propagation with worked examples and exam-style questions.
+description: "Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query; Lazy Propagation with worked examples and exam-style questions."
 slug: advanced-data-structures
 ---
-
 ## Segment Tree
 
 A segment tree is a binary tree data structure for storing information about intervals or segments.

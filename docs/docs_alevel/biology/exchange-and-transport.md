@@ -1,7 +1,6 @@
 ---
 title: Exchange and Transport
-description:
-  "A-Level Biology notes on Exchange and Transport: 1. Surface Area to Volume Ratio; 1.1 The Fundamental Constraint; 1.2 Adaptations for Efficient Exchange."
+description: "A-Level Biology notes on Exchange and Transport: 1. Surface Area to Volume Ratio; 1.1 The Fundamental Constraint; 1.2 Adaptations for Efficient Exchange."
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: exchange-and-transport
 sidebar_position: 3
 ---
-
 ## Exchange and Transport
 
 :::info

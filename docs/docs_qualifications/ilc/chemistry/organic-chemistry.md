@@ -1,8 +1,6 @@
 ---
 title: Organic Chemistry
-description:
-  Organic Chemistry — Why Carbon? (OL/HL); Homologous Series (OL/HL); Functional
-  Groups (OL/HL); IUPAC Nomenclature (OL/HL).
+description: "Organic Chemistry — Why Carbon? (OL/HL); Homologous Series (OL/HL); Functional Groups (OL/HL); IUPAC Nomenclature (OL/HL)."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: organic-chemistry
 ---
-
 # Organic Chemistry
 
 Organic chemistry is the study of carbon compounds. This topic covers homologous series, functional

@@ -1,10 +1,9 @@
 ---
 title: "Organic Chemistry Introduction -- Diagnostic Tests"
-description: Diagnostic tests for nomenclature, isomerism, and functional groups at the hardest A-Level Chemistry standard.
+description: "Challenging A-Level chemistry diagnostic questions on Organic Chemistry Introduction -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-organic-introduction
 hide_table_of_contents: true
 ---
-
 # Organic Chemistry Introduction — Diagnostic Tests
 
 ## Unit Tests

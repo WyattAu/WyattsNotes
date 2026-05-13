@@ -1,7 +1,6 @@
 ---
 title: Unit Testing
-description:
-  "C++: Unit Testing — CTest Architecture; Dependency Management Strategy; 1. GoogleTest Integration; CMake Implementation."
+description: "C++: Unit Testing — CTest Architecture; Dependency Management Strategy; 1. GoogleTest Integration; CMake Implementation."
 date: 2025-12-10T19:05:13.846Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: unit-testing
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In a standard workflow, unit tests are compiled and executed as part of the build process. The build

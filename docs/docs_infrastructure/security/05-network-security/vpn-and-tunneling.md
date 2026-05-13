@@ -1,13 +1,9 @@
 ---
 id: vpn-and-tunneling
 title: VPN and Tunneling
-description:
-  VPN and Tunneling — VPN Fundamentals; Tunneling, Encryption, and
-  Authentication; VPN Types; WireGuard with worked examples and exam-style
-  questions.
+description: "VPN and Tunneling — VPN Fundamentals; Tunneling, Encryption, and Authentication; VPN Types; WireGuard with worked examples and exam-style questions."
 slug: vpn-and-tunneling
 ---
-
 ## VPN Fundamentals
 
 ### Tunneling, Encryption, and Authentication

@@ -1,12 +1,9 @@
 ---
 id: async-deep-dive
 title: Async Deep Dive
-description:
-  Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How
-  `async fn` Desugars with worked examples and exam-style questions.
+description: "Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How `async fn` Desugars with worked examples and exam-style questions."
 slug: async-deep-dive
 ---
-
 ## The Future Trait
 
 The `Future` trait is the foundation of async programming in Rust. It represents a value that may

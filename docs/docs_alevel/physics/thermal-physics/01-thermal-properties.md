@@ -1,7 +1,6 @@
 ---
 title: Thermal Properties
-description:
-  "A-Level Physics notes on Thermal Properties: 1. Temperature Scales; The Kelvin Scale; Triple Point of Water; Brownian Motion as Evidence for the Particle Model."
+description: "A-Level Physics notes on Thermal Properties: 1. Temperature Scales; The Kelvin Scale; Triple Point of Water; Brownian Motion as Evidence for the Particle Model."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: thermal-properties
 ---
-
 ## Thermal Properties
 
 :::info

@@ -1,8 +1,6 @@
 ---
 title: Ratio, Proportion, and Rates of Change
-description:
-  Ratio, Proportion, and Rates of Change — 1. Ratio; 1.1 Writing and Simplifying
-  Ratios; 1.2 Sharing in a Ratio; 1.3 Ratios and Fractions.
+description: "Ratio, Proportion, and Rates of Change — 1. Ratio; 1.1 Writing and Simplifying Ratios; 1.2 Sharing in a Ratio; 1.3 Ratios and Fractions."
 date: 2026-04-14
 tags:
   - Maths
@@ -11,7 +9,6 @@ categories:
   - Maths
 slug: ratio-proportion-rates-of-change
 ---
-
 ## Ratio, Proportion, and Rates of Change
 
 :::info

@@ -1,8 +1,6 @@
 ---
 title: ZFS Encryption
-description:
-  ZFS Encryption — Encryption in the ZFS Write Path; Encryption at Rest vs.
-  Encryption in Transit; Encryption Properties; Core Encryption Properties.
+description: "ZFS Encryption — Encryption in the ZFS Write Path; Encryption at Rest vs. Encryption in Transit; Encryption Properties; Core Encryption Properties."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - TrueNAS
@@ -12,7 +10,6 @@ categories:
   - ZFS
 slug: zfs-encryption
 ---
-
 ## ZFS Encryption Overview
 
 **Definition.** ZFS native encryption is a dataset-level encryption mechanism integrated into the

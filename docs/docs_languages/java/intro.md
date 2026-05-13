@@ -1,11 +1,10 @@
 ---
 id: intro
 title: Introduction to Java
-description: Java programming best practices, JDK 21+ features, and deep-dive reference material.
+description: "Rigorous programming language notes covering Introduction to Java. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 ---
-
 ## Abstract
 
 This resource is created as a aggregation of best practices in Java. If you are learning Java for a

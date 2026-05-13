@@ -1,9 +1,8 @@
 ---
 title: Assessment
 slug: assessment
-description: Comprehensive guide to assessment for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Assessment. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # Assessment objective
 

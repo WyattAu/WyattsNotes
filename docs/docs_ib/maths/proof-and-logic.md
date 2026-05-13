@@ -4,9 +4,8 @@ tags:
 - IB
 - Maths
 slug: proof-and-logic
-description: Comprehensive guide to proof and logic for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Proof and Logic. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # Proof and Logic
 

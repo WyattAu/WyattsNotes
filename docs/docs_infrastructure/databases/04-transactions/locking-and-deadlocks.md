@@ -1,11 +1,9 @@
 ---
 id: locking-and-deadlocks
 title: Locking and Deadlocks
-description:
-  "Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock Modes (Table-Level); Lock Compatibility Matrix."
+description: "Databases: Locking and Deadlocks — Lock Types Overview; Lock Granularity; Lock Modes (Table-Level); Lock Compatibility Matrix."
 slug: locking-and-deadlocks
 ---
-
 ## Lock Types Overview
 
 PostgreSQL uses a multi-level locking system that operates at different granularities. Understanding

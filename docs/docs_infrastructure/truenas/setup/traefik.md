@@ -1,8 +1,6 @@
 ---
 title: Setup Traefik
-description:
-  Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose
-  Deployment with worked examples and exam-style questions.
+description: "Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose Deployment with worked examples and exam-style questions."
 date: 2025-07-21T18:30:46.381Z
 tags:
   - truenas
@@ -10,7 +8,6 @@ categories:
   - truenas
 slug: setup-traefik
 ---
-
 ## Why Traefik
 
 Traefik is a modern HTTP reverse proxy and load balancer designed for microservices and

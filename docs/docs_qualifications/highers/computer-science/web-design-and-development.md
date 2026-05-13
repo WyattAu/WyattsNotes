@@ -1,8 +1,6 @@
 ---
 title: Web Design and Development
-description:
-  Web Design and Development — Higher Web Design; How the Web Works; HTML
-  (HyperText Markup Language); CSS (Cascading Style Sheets).
+description: "Web Design and Development — Higher Web Design; How the Web Works; HTML (HyperText Markup Language); CSS (Cascading Style Sheets)."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: web-design-and-development
 ---
-
 # Web Design and Development
 
 ## Higher Web Design

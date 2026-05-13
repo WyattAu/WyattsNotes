@@ -1,13 +1,13 @@
 ---
 title: GCSE Notes
 date: 2026-04-14
+description: "Rigorous qualification exam notes covering GCSE Notes. Includes definitions, derivations, worked examples, and exam-style problems."
 tags:
   - GCSE
 categories:
   - GCSE
 slug: intro
 ---
-
 ## About These Notes
 
 These notes are written with the rigour of an undergraduate textbook, but targeted at the GCSE

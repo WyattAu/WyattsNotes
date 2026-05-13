@@ -1,12 +1,9 @@
 ---
 id: channels-and-message-passing
 title: Channels and Message Passing
-description:
-  Channels and Message Passing — Channel Fundamentals; Channel Categories;
-  `std::sync::mpsc`; Basic Usage with worked examples and exam-style questions.
+description: "Channels and Message Passing — Channel Fundamentals; Channel Categories; `std::sync::mpsc`; Basic Usage with worked examples and exam-style questions."
 slug: channels-and-message-passing
 ---
-
 ## Channel Fundamentals
 
 Channels implement the actor model — concurrent tasks communicate by sending messages rather than

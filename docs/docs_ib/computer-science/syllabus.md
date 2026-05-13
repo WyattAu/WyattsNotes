@@ -1,9 +1,8 @@
 ---
 title: Syllabus
 slug: syllabus
-description: Comprehensive guide to syllabus for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Syllabus. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # IB Computer Science Syllabus Overview
 

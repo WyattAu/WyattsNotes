@@ -1,10 +1,9 @@
 ---
 title: Probability
-description: IB Mathematics — probability theory, conditional probability, Bayes theorem,
+description: "Rigorous IB mathematics notes covering Probability. Includes definitions, derivations, worked examples, and exam-style problems."
   and distributions.
 slug: probability
 ---
-
 
 ## Probability Fundamentals
 

@@ -1,12 +1,9 @@
 ---
 id: error-handling
 title: Error Handling
-description:
-  Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort;
-  `std::panic::catch_unwind` with worked examples and exam-style questions.
+description: "Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort; `std::panic::catch_unwind` with worked examples and exam-style questions."
 slug: error-handling
 ---
-
 ## Panic vs Result
 
 Rust divides errors into two categories: **unrecoverable** (bugs) and **recoverable** (expected

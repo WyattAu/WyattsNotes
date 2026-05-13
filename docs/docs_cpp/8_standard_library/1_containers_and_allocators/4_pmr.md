@@ -1,7 +1,6 @@
 ---
 title: Polymorphic Memory Resources (PMR)
-description:
-  "C++: Polymorphic Memory Resources (PMR) — `std::pmr::memory_resource`: The Polymorphic Allocator Interface for thorough revision and examination preparat."
+description: "C++: Polymorphic Memory Resources (PMR) — `std::pmr::memory_resource`: The Polymorphic Allocator Interface for thorough revision and examination preparat."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: polymorphic-memory-resources-pmr
 ---
-
 ## Polymorphic Memory Resources (PMR) and Monotonic Buffers
 
 C++17 introduced **polymorphic memory resources** (PMR) in `&lt;memory_resource>`, enabling

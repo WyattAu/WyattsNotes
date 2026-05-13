@@ -1,10 +1,9 @@
 ---
 title: Chemical Equilibrium
-description: IB Chemistry — dynamic equilibrium, Le Chatelier's principle, equilibrium
+description: "Rigorous IB chemistry notes covering Chemical Equilibrium. Includes definitions, derivations, worked examples, and exam-style problems."
   constants, and acid-base equilibrium.
 slug: equilibrium
 ---
-
 
 ## Dynamic Equilibrium
 

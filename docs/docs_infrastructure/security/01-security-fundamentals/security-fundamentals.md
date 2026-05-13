@@ -1,13 +1,10 @@
 ---
 id: security-fundamentals
 title: Security Fundamentals
-description:
-  Security Fundamentals — The CIA Triad; Confidentiality; Integrity;
-  Availability with worked examples and exam-style questions.
+description: "Security Fundamentals — The CIA Triad; Confidentiality; Integrity; Availability with worked examples and exam-style questions."
 slug: security-fundamentals
 sidebar_position: 2
 ---
-
 ## The CIA Triad
 
 The CIA triad is the foundational model for information security. Every security control,

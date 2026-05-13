@@ -1,7 +1,6 @@
 ---
 title: Type Erasure — Function Pointers, std::function, std::move_only_function
-description: >-
-  C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure: Function Pointers, std::function, std::move_only_function.
+description: "C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure: Function Pointers, std::function, std::move_only_function."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: type-erasure-function-pointers-std-function-move-only-function
 ---
-
 # Type Erasure: Function Pointers, std::function, std::move_only_function
 
 Type erasure allows heterogeneous callables to be stored and invoked through a uniform interface.

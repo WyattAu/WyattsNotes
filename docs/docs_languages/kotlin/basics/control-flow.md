@@ -1,8 +1,6 @@
 ---
 title: Control Flow
-description:
-  Control Flow — if/else as Expression; when Expression; Basic Matching;
-  Exhaustiveness with worked examples and exam-style questions.
+description: "Control Flow — if/else as Expression; when Expression; Basic Matching; Exhaustiveness with worked examples and exam-style questions."
 slug: control-flow
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## if/else as Expression
 
 In Kotlin, `if` is an expression -- it returns a value. There is no ternary operator because

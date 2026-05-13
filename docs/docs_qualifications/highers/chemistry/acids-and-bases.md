@@ -1,8 +1,6 @@
 ---
 title: Acids and Bases
-description:
-  Acids and Bases — Definitions; Strong and Weak Acids; Comparison of Strong and
-  Weak Acids; The pH Scale with worked examples and exam-style questions.
+description: "Acids and Bases — Definitions; Strong and Weak Acids; Comparison of Strong and Weak Acids; The pH Scale with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: acids-and-bases
 ---
-
 # Acids and Bases
 
 ## Higher Acids and Bases

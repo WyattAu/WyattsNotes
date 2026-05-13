@@ -1,12 +1,9 @@
 ---
 id: maps-and-sets
 title: Maps and Sets
-description:
-  Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`;
-  `LinkedHashMap` with worked examples and exam-style questions.
+description: "Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`; `LinkedHashMap` with worked examples and exam-style questions."
 slug: maps-and-sets
 ---
-
 ## The `Map` Interface
 
 `Map<K,V>` maps keys to values. It is not part of the `Collection` hierarchy — it models a

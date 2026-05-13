@@ -1,12 +1,9 @@
 ---
 id: control-flow
 title: Control Flow and Pattern Matching
-description:
-  Control Flow and Pattern Matching — `if` / `else`; `else if` Chains;
-  Conditional Assignment Patterns; Blocks as Expressions.
+description: "Control Flow and Pattern Matching — `if` / `else`; `else if` Chains; Conditional Assignment Patterns; Blocks as Expressions."
 slug: control-flow
 ---
-
 ## `if` / `else`
 
 Rust's `if` expression does not require parentheses around the condition, but braces around the body

@@ -2,10 +2,9 @@
 tags:
 - maths
 slug: integration-depth
-description: Comprehensive guide to untitled for the International Baccalaureate.
+description: "Comprehensive IB mathematics notes on Calculus. Covers key definitions, worked examples, and practice problems for revision."
 title: Calculus
 ---
-
 
 
 ## Integration

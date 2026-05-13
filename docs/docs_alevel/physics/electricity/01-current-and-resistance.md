@@ -1,7 +1,6 @@
 ---
 title: Current and Resistance
-description:
-  "A-Level Physics notes on Current and Resistance: 1. Electric Current; Current as Charge per Unit Time; Derivation of $I = nAev_d$."
+description: "A-Level Physics notes on Current and Resistance: 1. Electric Current; Current as Charge per Unit Time; Derivation of $I = nAev_d$."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: current-and-resistance
 ---
-
 ## Current and Resistance
 
 :::info

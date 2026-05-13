@@ -1,9 +1,8 @@
 ---
 title: Freshwater Issues and Conflicts
-description: Water distribution, scarcity, hydrology, flood management, water quality, and case studies for IB Geography.
+description: "Rigorous IB geography notes covering Freshwater Issues and Conflicts. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: freshwater-issues
 ---
-
 # Freshwater Issues and Conflicts
 
 ## Water Distribution

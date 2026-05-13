@@ -4,9 +4,8 @@ tags:
 - IB
 - History
 slug: authoritarian-states
-description: Comprehensive guide to authoritarian states for the International Baccalaureate.
+description: "Rigorous IB history notes covering Authoritarian States. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # Authoritarian States (20th Century)
 

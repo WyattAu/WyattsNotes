@@ -1,13 +1,11 @@
 ---
 title: Tooling and Configuration
-description:
-  "Tooling and Configuration — tsconfig.json: Core Configuration; Compiler Options Reference; Language and Environment; Module Resolution."
+description: "Tooling and Configuration — tsconfig.json: Core Configuration; Compiler Options Reference; Language and Environment; Module Resolution."
 slug: typescript-tooling-and-configuration
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
-
 ## tsconfig.json: Core Configuration
 
 Every TypeScript project is governed by a `tsconfig.json` file at the project root. This file

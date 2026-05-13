@@ -1,13 +1,10 @@
 ---
 id: intro
 title: Introduction to Security
-description:
-  Information security fundamentals — threat modeling, cryptography, authentication, web security,
-  network security, and incident response.
+description: "Information security fundamentals — threat modeling, cryptography, authentication, web security, network security, and incident response."
 slug: intro
 sidebar_position: 1
 ---
-
 ## The Threat Landscape
 
 Information security is not a feature you bolt on after the fact. It is a property of a system that

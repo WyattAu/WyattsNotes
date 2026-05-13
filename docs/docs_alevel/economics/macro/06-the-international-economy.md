@@ -1,7 +1,6 @@
 ---
 title: The International Economy
-description:
-  "A-Level Economics notes on The International Economy: 1. International Trade: Comparative Advantage; 1.1 Absolute vs Comparative Advantage."
+description: "A-Level Economics notes on The International Economy: 1. International Trade: Comparative Advantage; 1.1 Absolute vs Comparative Advantage."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -11,7 +10,6 @@ categories:
 slug: the-international-economy
 sidebar_position: 6
 ---
-
 ## 1. International Trade: Comparative Advantage
 
 :::info

@@ -1,8 +1,6 @@
 ---
 title: Interfaces
-description:
-  Interfaces — Interface Basics; Interface Composition; The Empty Interface;
-  When to Use `any` with worked examples and exam-style questions.
+description: "Interfaces — Interface Basics; Interface Composition; The Empty Interface; When to Use `any` with worked examples and exam-style questions."
 slug: interfaces
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Interface Basics
 
 An interface in Go defines a set of method signatures. A type satisfies an interface by implementing

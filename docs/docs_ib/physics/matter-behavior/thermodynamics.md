@@ -3,9 +3,8 @@ title: Thermodynamics
 tags:
 - physics
 slug: thermodynamics
-description: Comprehensive guide to thermodynamics for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Thermodynamics. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Ideal Gas Law
 

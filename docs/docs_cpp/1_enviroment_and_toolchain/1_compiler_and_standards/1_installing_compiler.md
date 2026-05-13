@@ -1,7 +1,6 @@
 ---
 title: Installing Compiler
-description:
-  "C++: Installing Compiler — Technical Glossary; Installation Guide; Windows: MSYS2 UCRT64 Environment; Step 1: Install MSYS2."
+description: "C++: Installing Compiler — Technical Glossary; Installation Guide; Windows: MSYS2 UCRT64 Environment; Step 1: Install MSYS2."
 date: 2025-12-10T03:49:29.438Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: installing-compiler
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 To develop in C++, a strictly compliant toolchain is required. the following details the

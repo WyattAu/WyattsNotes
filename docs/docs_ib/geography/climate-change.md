@@ -1,9 +1,8 @@
 ---
 title: Climate Change
-description: Evidence, causes, impacts, mitigation, adaptation, and climate justice for IB Geography.
+description: "Rigorous IB geography notes covering Climate Change. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: climate-change
 ---
-
 # Climate Change
 
 ## Evidence for Climate Change

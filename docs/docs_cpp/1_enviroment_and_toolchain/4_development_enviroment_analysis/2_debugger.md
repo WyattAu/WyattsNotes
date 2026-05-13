@@ -1,7 +1,6 @@
 ---
 title: Debugger
-description:
-  "C++: Debugger — Debug Information Architecture; 1. DWARF (Linux / macOS / MinGW); 2. PDB (Windows MSVC); Debug Information Levels."
+description: "C++: Debugger — Debug Information Architecture; 1. DWARF (Linux / macOS / MinGW); 2. PDB (Windows MSVC); Debug Information Levels."
 date: 2025-12-11T06:24:14.105Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: debugger
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A compiled C++ binary consists of machine code instructions. To map an Instruction Pointer (IP)

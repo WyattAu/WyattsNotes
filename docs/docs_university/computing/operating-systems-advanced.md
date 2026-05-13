@@ -1,7 +1,6 @@
 ---
 title: Operating Systems (Advanced)
-description:
-  "University-level notes on Advanced Operating Systems: 1. Advanced Process Management; 1.1 Process Creation and Fork; 1.2 Thread Libraries and Models."
+description: "University-level notes on Advanced Operating Systems: 1. Advanced Process Management; 1.1 Process Creation and Fork; 1.2 Thread Libraries and Models."
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -10,7 +9,6 @@ categories:
   - Computing
 slug: operating-systems-advanced
 ---
-
 ## 1. Advanced Process Management
 
 ### 1.1 Process Creation and Fork

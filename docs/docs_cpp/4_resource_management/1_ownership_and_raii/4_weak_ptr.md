@@ -1,7 +1,6 @@
 ---
 title: Weak Pointers and Cyclic Reference Breaking
-description:
-  "C++: Weak Pointers and Cyclic Reference Breaking — 4.1 Definition; 4.2 The `lock()` Method; Formal Locking Semantics; 4.3 The `expired()` Method."
+description: "C++: Weak Pointers and Cyclic Reference Breaking — 4.1 Definition; 4.2 The `lock()` Method; Formal Locking Semantics; 4.3 The `expired()` Method."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: weak-pointers-and-cyclic-references
 ---
-
 # Weak Pointers and Cyclic Reference Breaking
 
 `std::weak_ptr` is a non-owning observer of a `shared_ptr`-managed object. Its primary use case is

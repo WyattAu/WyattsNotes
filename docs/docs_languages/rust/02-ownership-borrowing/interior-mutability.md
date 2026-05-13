@@ -1,12 +1,9 @@
 ---
 id: interior-mutability
 title: Interior Mutability
-description:
-  Interior Mutability — The Shared Reference Contract; `UnsafeCell<T>` — The
-  Primitive; Why `UnsafeCell` Exists; `UnsafeCell` and `Sync`.
+description: "Interior Mutability — The Shared Reference Contract; `UnsafeCell<T>` — The Primitive; Why `UnsafeCell` Exists; `UnsafeCell` and `Sync`."
 slug: interior-mutability
 ---
-
 ## The Shared Reference Contract
 
 Rust's borrowing rules state that a shared reference (`&T`) is immutable — you cannot modify the

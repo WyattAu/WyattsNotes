@@ -3,9 +3,8 @@ title: Logic
 tags:
 - maths
 slug: logic
-description: Comprehensive guide to logic for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Logic. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 :::info
 TMUA Specification

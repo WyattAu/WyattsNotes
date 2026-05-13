@@ -1,7 +1,6 @@
 ---
 title: GCSE English Literature
-description: >-
-  GCSE English Literature — Board Coverage; Assessment Objectives; Paper 1: Shakespeare and the 19th-Century Novel; Paper 2: Modern Texts and Poetry.
+description: "GCSE English Literature — Board Coverage; Assessment Objectives; Paper 1: Shakespeare and the 19th-Century Novel; Paper 2: Modern Texts and Poetry."
 date: 2026-04-22
 tags:
   - English
@@ -10,7 +9,6 @@ categories:
   - English
 slug: gcse-english-literature
 ---
-
 ## GCSE English Literature
 
 GCSE English Literature is a compulsory qualification across all major examination boards in

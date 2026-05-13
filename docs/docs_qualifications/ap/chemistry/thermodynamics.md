@@ -1,7 +1,6 @@
 ---
 title: Thermodynamics
-description:
-  'Thermodynamics — Sign Convention (Chemistry); Pressure-Volume Work; Work at Constant Pressure: Enthalpy; Derivation: Why $\Delta H = q_P$.'
+description: "Thermodynamics — Sign Convention (Chemistry); Pressure-Volume Work; Work at Constant Pressure: Enthalpy; Derivation: Why $\Delta H = q_P$."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: thermodynamics
 ---
-
 ## The First Law of Thermodynamics (CED Unit 6)
 
 Energy cannot be created or destroyed. The change in internal energy of a system is:

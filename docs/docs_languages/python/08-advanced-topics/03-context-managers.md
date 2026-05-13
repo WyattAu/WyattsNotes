@@ -1,12 +1,9 @@
 ---
 id: context-managers
 title: Context Managers and the with Statement
-description:
-  Context Managers and the with Statement — The with Statement for comprehensive
-  revision and examination preparation. and examination pr.
+description: "Context Managers and the with Statement — The with Statement for comprehensive revision and examination preparation. and examination pr."
 slug: context-managers
 ---
-
 ## The with Statement
 
 The `with` statement guarantees that setup and teardown code runs, even if an exception occurs in

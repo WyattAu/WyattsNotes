@@ -1,12 +1,9 @@
 ---
 id: oauth-deep-dive
 title: OAuth 2.0 Deep Dive
-description:
-  OAuth 2.0 Deep Dive — OAuth 2.0 Overview; Roles; Grant Types; Authorization
-  Code Grant (with PKCE) with worked examples and exam-style questions.
+description: "OAuth 2.0 Deep Dive — OAuth 2.0 Overview; Roles; Grant Types; Authorization Code Grant (with PKCE) with worked examples and exam-style questions."
 slug: oauth-deep-dive
 ---
-
 ## OAuth 2.0 Overview
 
 OAuth 2.0 is an **authorization** framework defined in RFC 6749. It allows a third-party application

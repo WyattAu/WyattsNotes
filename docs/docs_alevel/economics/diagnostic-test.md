@@ -1,7 +1,6 @@
 ---
 title: Economics Diagnostic Test
-description:
-  "A-Level General diagnostic test: Part A: Microeconomics (22 Questions); Topic 1: The Economic Problem for targeted revision."
+description: "A-Level General diagnostic test: Part A: Microeconomics (22 Questions); Topic 1: The Economic Problem for targeted revision."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -10,7 +9,6 @@ categories:
   - Economics
 slug: economics-diagnostic-test
 ---
-
 This diagnostic test covers all A Level Economics micro and macro topics. Each question tests a
 specific concept, requires 2–5 steps, and includes a revision redirect to the relevant topic.
 

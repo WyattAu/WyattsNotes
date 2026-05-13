@@ -3,9 +3,8 @@ title: Wrap Up
 tags:
 - physics
 slug: wrap
-description: Comprehensive guide to wrap up for the International Baccalaureate.
+description: "Thorough IB physics revision notes on Wrap Up. Features detailed derivations, worked examples, and examination preparation."
 ---
-
 
 <details>
 <summary><strong>Theme A: Space, Time and Motion</strong></summary>

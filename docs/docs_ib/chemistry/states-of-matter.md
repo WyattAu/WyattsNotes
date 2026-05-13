@@ -1,9 +1,8 @@
 ---
 title: States of Matter
-description: "IB Chemistry — kinetic molecular theory, ideal gas law, real gases, intermolecular forces, and phase diagrams."
+description: "Rigorous IB chemistry notes covering States of Matter. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: states-of-matter
 ---
-
 ## 1. Kinetic Molecular Theory
 
 ### Postulates

@@ -1,11 +1,8 @@
 ---
 title: Git Subtrees
-description:
-  Git Subtrees — What Subtrees Are; How Subtrees Store Data; Adding a Subtree;
-  Basic Syntax with worked examples and exam-style questions.
+description: "Git Subtrees — What Subtrees Are; How Subtrees Store Data; Adding a Subtree; Basic Syntax with worked examples and exam-style questions."
 slug: git-subtrees
 ---
-
 ## What Subtrees Are
 
 `git subtree` merges a repository into a subdirectory of another repository. Unlike submodules,

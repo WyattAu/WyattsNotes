@@ -1,9 +1,8 @@
 ---
 title: Syllabus
 slug: Syllabus
-description: Comprehensive guide to syllabus for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Syllabus. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ### IB Mathematics AA HL/SL Syllabus Overview
 

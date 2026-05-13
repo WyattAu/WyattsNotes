@@ -1,7 +1,6 @@
 ---
 title: Dynamics
-description:
-  "A-Level Physics notes on Dynamics: 1. Newton's Laws of Motion; Newton's First Law (Law of Inertia); Newton's Second Law; Newton's Third Law."
+description: "A-Level Physics notes on Dynamics: 1. Newton's Laws of Motion; Newton's First Law (Law of Inertia); Newton's Second Law; Newton's Third Law."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: dynamics
 ---
-
 ## Dynamics
 
 :::info

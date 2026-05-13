@@ -4,10 +4,9 @@ tags:
 - Chemistry
 - IB
 slug: chemical-bonding-and-structure
-description: Comprehensive guide to chemical bonding and structure for the International
+description: "Rigorous IB chemistry notes covering Chemical Bonding and Structure. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Introduction
 

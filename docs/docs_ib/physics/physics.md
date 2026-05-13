@@ -1,9 +1,8 @@
 ---
 title: Physics
 slug: physics
-description: Comprehensive guide to physics for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Physics. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## IB Physics -- Course Overview
 

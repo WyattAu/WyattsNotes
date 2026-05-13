@@ -1,8 +1,6 @@
 ---
 title: Waves and Radiation
-description:
-  Waves and Radiation — Higher Waves; Wave Properties; Why the Distinction
-  Between Transverse and Longitudinal Matters; Derivation of the Wave Equation.
+description: "Waves and Radiation — Higher Waves; Wave Properties; Why the Distinction Between Transverse and Longitudinal Matters; Derivation of the Wave Equation."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: waves-and-radiation
 ---
-
 # Waves and Radiation
 
 ## Higher Waves

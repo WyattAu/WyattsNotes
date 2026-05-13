@@ -1,8 +1,6 @@
 ---
 title: Pointers and Memory
-description:
-  Pointers and Memory — Pointer Basics; Zero Value; Pointer Semantics; Returning
-  Pointers to Local Variables with worked examples and exam-style questions.
+description: "Pointers and Memory — Pointer Basics; Zero Value; Pointer Semantics; Returning Pointers to Local Variables with worked examples and exam-style questions."
 slug: pointers-and-memory
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Pointer Basics
 
 Go has pointers, but no pointer arithmetic (except via `unsafe`). Pointers hold the memory address

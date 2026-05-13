@@ -1,9 +1,8 @@
 ---
 title: Flood Management
-description: "Flood causes, hard and soft engineering approaches, integrated flood management, and case studies for IB Geography."
+description: "Rigorous IB geography notes covering Flood Management. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: flood-management
 ---
-
 # Flood Management
 
 ## Causes of Flooding

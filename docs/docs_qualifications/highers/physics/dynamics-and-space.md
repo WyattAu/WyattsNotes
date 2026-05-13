@@ -1,8 +1,6 @@
 ---
 title: Dynamics and Space
-description:
-  Dynamics and Space — Higher Dynamics; Motion in a Straight Line; Graphical
-  Analysis; Extracting Information from Graphs.
+description: "Dynamics and Space — Higher Dynamics; Motion in a Straight Line; Graphical Analysis; Extracting Information from Graphs."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: dynamics-and-space
 ---
-
 # Dynamics and Space
 
 ## Higher Dynamics

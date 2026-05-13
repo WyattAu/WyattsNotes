@@ -1,8 +1,6 @@
 ---
 title: Dependency Injection
-description:
-  Dependency Injection — Core Principles; Why DI Matters; Two Main Approaches;
-  Constructor Injection Pattern with worked examples and exam-style questions.
+description: "Dependency Injection — Core Principles; Why DI Matters; Two Main Approaches; Constructor Injection Pattern with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: dependency-injection
 ---
-
 # Dependency Injection
 
 ## What is Dependency Injection

@@ -1,7 +1,6 @@
 ---
 title: A Level Computer Science — Diagnostic Test
-description:
-  "A-Level General diagnostic test: Instructions; Fundamentals; Data Structures; Algorithms for targeted revision. with worked examples and exam-style questions."
+description: "A-Level General diagnostic test: Instructions; Fundamentals; Data Structures; Algorithms for targeted revision. with worked examples and exam-style questions."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: diagnostic-test
 ---
-
 ## Instructions
 
 This diagnostic test covers the full A Level Computer Science syllabus. There are **45 questions**

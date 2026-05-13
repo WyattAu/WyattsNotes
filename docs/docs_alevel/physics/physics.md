@@ -1,7 +1,6 @@
 ---
 title: Physics
-description:
-  "A-Level Physics notes on Physics: Board Coverage; Course Structure; Core Modules; Assessment with worked examples and exam-style questions."
+description: "A-Level Physics notes on Physics: Board Coverage; Course Structure; Core Modules; Assessment with worked examples and exam-style questions."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -11,7 +10,6 @@ categories:
 slug: physics
 sidebar_position: 3
 ---
-
 ## A Level Physics — Course Overview
 
 A Level Physics is the study of the fundamental laws governing the universe, from the subatomic

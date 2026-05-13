@@ -1,8 +1,6 @@
 ---
 title: Java Interoperability
-description:
-  Java Interoperability — Calling Java from Kotlin; Getters and Setters;
-  Nullability and Platform Types; Handling Platform Types.
+description: "Java Interoperability — Calling Java from Kotlin; Getters and Setters; Nullability and Platform Types; Handling Platform Types."
 slug: interoperability
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Calling Java from Kotlin
 
 Kotlin code can call any Java class, method, or field without adapters or wrappers. This is a

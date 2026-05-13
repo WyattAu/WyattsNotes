@@ -1,9 +1,7 @@
 ---
 id: layer2-and-ethernet
 title: Layer 2 and Ethernet
-description:
-  Layer 2 and Ethernet — Data Link Layer Functions; Relationship to Layer 1 and
-  Layer 3; Ethernet History; DIX Ethernet (1980).
+description: "Layer 2 and Ethernet — Data Link Layer Functions; Relationship to Layer 1 and Layer 3; Ethernet History; DIX Ethernet (1980)."
 slug: layer2-and-ethernet
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -12,7 +10,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Data Link Layer Functions
 
 The data link layer (OSI Layer 2) sits between the physical layer and the network layer. Its

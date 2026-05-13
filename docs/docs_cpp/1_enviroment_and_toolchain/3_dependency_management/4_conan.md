@@ -1,7 +1,6 @@
 ---
 title: Conan
-description: >-
-  C++: Conan — The Binary Compatibility Graph; Resolution Logic; Package ID Calculation: Formal Treatment; Profile Configuration.
+description: "C++: Conan — The Binary Compatibility Graph; Resolution Logic; Package ID Calculation: Formal Treatment; Profile Configuration."
 date: 2025-12-11T05:01:52.356Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: conan
 ---
-
 **Conan** is a decentralized, open-source package manager designed specifically for C++'s complex
 binary compatibility requirements. Unlike vcpkg, which defaults to a source-based model, Conan
 operates on a **Binary-First** model.

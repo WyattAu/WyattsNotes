@@ -1,13 +1,10 @@
 ---
 id: intro
 title: Introduction to Hardware Tuning
-description:
-  Hardware tuning techniques — undervolting, overclocking, and memory tuning for performance and
-  efficiency.
+description: "Rigorous infrastructure and DevOps notes covering Introduction to Hardware Tuning. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 ---
-
 ## Abstract
 
 Hardware tuning reference covering undervolting, overclocking, memory tuning, stress testing

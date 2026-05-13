@@ -1,9 +1,7 @@
 ---
 id: sql
 title: SQL Fundamentals
-description:
-  SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL);
-  CREATE TABLE; Column Data Types with worked examples and exam-style questions.
+description: "SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL); CREATE TABLE; Column Data Types with worked examples and exam-style questions."
 slug: sql
 sidebar_position: 1
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## SQL Standards and Dialects
 
 SQL is defined by ANSI/ISO standards (SQL-86, SQL-89, SQL-92, SQL:1999, SQL:2003, SQL:2006,

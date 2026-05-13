@@ -1,10 +1,9 @@
 ---
 title: "DSE Chemistry Diagnostic Tests -- Guide"
-description: Guide to the hardest diagnostic questions within the DSE specification, each with a full worked solution.
+description: "Challenging DSE chemistry diagnostic questions on DSE Chemistry Diagnostic Tests -- Guide. With full worked solutions and examiner commentary."
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
-
 # DSE Chemistry Diagnostic Tests -- Guide
 
 ## Purpose

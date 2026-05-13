@@ -1,13 +1,10 @@
 ---
 id: intro
 title: Introduction to Linux
-description:
-  Comprehensive Linux reference — CLI, file systems, process management, networking, systemd,
-  security, and package management.
+description: "Comprehensive Linux reference — CLI, file systems, process management, networking, systemd, security, and package management."
 slug: intro
 sidebar_position: 1
 ---
-
 ## What is Linux
 
 Linux is a **Unix-like operating system kernel** first released by Linus Torvalds in 1991. When

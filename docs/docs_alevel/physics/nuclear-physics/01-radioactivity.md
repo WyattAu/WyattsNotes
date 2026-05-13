@@ -1,7 +1,6 @@
 ---
 title: Radioactivity
-description:
-  "A-Level Physics notes on Radioactivity: 1. Nuclear Structure; 2. Types of Radioactive Decay; Alpha Decay ($\alpha$); Beta Decay ($\beta^-$)."
+description: "A-Level Physics notes on Radioactivity: 1. Nuclear Structure; 2. Types of Radioactive Decay; Alpha Decay ($\alpha$); Beta Decay ($\beta^-$)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: radioactivity
 ---
-
 ## Radioactivity
 
 :::info

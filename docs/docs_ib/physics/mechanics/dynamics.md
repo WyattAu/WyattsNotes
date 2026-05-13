@@ -1,9 +1,8 @@
 ---
 title: Dynamics and Newton's Laws
-description: IB Physics — Newton's laws, friction, momentum, impulse, and work-energy.
+description: "Rigorous IB physics notes covering Dynamics and Newtons Laws. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: dynamics
 ---
-
 
 ## Newton's First Law — Inertia
 

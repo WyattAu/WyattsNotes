@@ -1,7 +1,6 @@
 ---
 title: Algebra and Calculus
-description:
-  "SQA Higher Mathematics: Algebra and Calculus — Higher Algebra; Functions and Notation; Quadratic Functions; Domain and Range:."
+description: "SQA Higher Mathematics: Algebra and Calculus — Higher Algebra; Functions and Notation; Quadratic Functions; Domain and Range:."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: algebra-and-calculus
 ---
-
 # Algebra and Calculus
 
 ## Higher Algebra

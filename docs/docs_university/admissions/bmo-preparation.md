@@ -1,7 +1,6 @@
 ---
 title: BMO Preparation
-description:
-  "Comprehensive preparation guide for the British Mathematical Olympiad (BMO) Round 1 and Round 2: number theory, combinatorics, algebra, geometry, worked solutions, proof techniques, and exam strategy."
+description: "Comprehensive preparation guide for the British Mathematical Olympiad (BMO) Round 1 and Round 2: number theory, combinatorics, algebra, geometry, worked solutio"
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics
@@ -11,7 +10,6 @@ categories:
   - Mathematics
 slug: bmo-preparation
 ---
-
 ## 1. Overview of the BMO
 
 The British Mathematical Olympiad (BMO) is the national olympiad competition in the United Kingdom,

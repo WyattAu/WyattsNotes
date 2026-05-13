@@ -1,12 +1,9 @@
 ---
 id: packaging-distribution
 title: Packaging and Distribution
-description:
-  Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621
-  Metadata Fields; Tool Sections with worked examples and exam-style questions.
+description: "Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621 Metadata Fields; Tool Sections with worked examples and exam-style questions."
 slug: packaging-distribution
 ---
-
 ## pyproject.toml
 
 `pyproject.toml` is the modern standard for Python project configuration, defined by PEP 518 (build

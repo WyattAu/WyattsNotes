@@ -1,6 +1,7 @@
 ---
 title: Irish Leaving Certificate
 date: 2026-04-14
+description: "Rigorous qualification exam notes covering Irish Leaving Certificate. Includes definitions, derivations, worked examples, and exam-style problems."
 tags:
   - ILC
   - Introduction
@@ -8,7 +9,6 @@ categories:
   - Introduction
 slug: intro
 ---
-
 # Irish Leaving Certificate
 
 The **Irish Leaving Certificate** (Leaving Cert or LC) is the final examination of the Irish

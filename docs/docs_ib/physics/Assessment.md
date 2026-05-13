@@ -1,9 +1,8 @@
 ---
 title: Assessment
 slug: Assessment
-description: Comprehensive guide to assessment for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Assessment. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Assessment Overview
 

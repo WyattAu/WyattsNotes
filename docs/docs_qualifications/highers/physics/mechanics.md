@@ -1,8 +1,6 @@
 ---
 title: Mechanics
-description:
-  Mechanics — Scalars and Vectors; Resolving Vectors into Components; Vector
-  Addition; Equations of Motion (Kinematics), ensuring thorough understanding.
+description: "Mechanics — Scalars and Vectors; Resolving Vectors into Components; Vector Addition; Equations of Motion (Kinematics), ensuring thorough understanding."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: mechanics
 ---
-
 # Mechanics
 
 ## Higher Mechanics

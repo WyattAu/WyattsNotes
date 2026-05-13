@@ -1,16 +1,13 @@
 ---
 id: traffic-analysis
 title: Traffic Analysis
-description:
-  Traffic Analysis — Packet Capture Methodology; Where to Capture; Cisco IOS
-  SPAN configuration; Capture Point Selection Guide.
+description: "Traffic Analysis — Packet Capture Methodology; Where to Capture; Cisco IOS SPAN configuration; Capture Point Selection Guide."
 slug: traffic-analysis
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 Network traffic analysis is the process of capturing, examining, and interpreting network traffic to

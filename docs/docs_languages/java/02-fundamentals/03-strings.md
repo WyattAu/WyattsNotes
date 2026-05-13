@@ -1,12 +1,9 @@
 ---
 id: strings
 title: Strings and Text Processing
-description:
-  Strings and Text Processing — The `String` Class; Immutability; String Pool
-  (Intern Pool); `intern()` with worked examples and exam-style questions.
+description: "Strings and Text Processing — The `String` Class; Immutability; String Pool (Intern Pool); `intern()` with worked examples and exam-style questions."
 slug: strings
 ---
-
 ## The `String` Class
 
 `String` is the most used class in the Java platform. It is `final`, implements `Serializable`,

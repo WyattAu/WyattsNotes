@@ -1,12 +1,9 @@
 ---
 id: serialization
 title: Serialization and Data Formats
-description:
-  Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to
-  string; Deserialize from string with worked examples and exam-style questions.
+description: "Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to string; Deserialize from string with worked examples and exam-style questions."
 slug: serialization
 ---
-
 ## JSON
 
 The `json` module is the standard way to serialize Python objects to JSON and back. It ships with

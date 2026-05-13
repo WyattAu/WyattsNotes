@@ -1,7 +1,6 @@
 ---
 title: Sanitizer
-description:
-  "C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in Root CMakeLists.txt; Platform Support Matrix."
+description: "C++: Sanitizer — CMake Integration Strategy; Implementation Module; Usage in Root CMakeLists.txt; Platform Support Matrix."
 date: 2025-12-11T18:46:23.535Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: sanitizer
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static analysis predicts defects by parsing source code. **Runtime Sanitizers** detect defects by

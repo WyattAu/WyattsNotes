@@ -1,9 +1,7 @@
 ---
 id: indexing
 title: Indexing and Optimization
-description:
-  Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node
-  Anatomy; B-Tree vs B+ Tree with worked examples and exam-style questions.
+description: "Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node Anatomy; B-Tree vs B+ Tree with worked examples and exam-style questions."
 slug: indexing
 sidebar_position: 1
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## Why Indexes Matter
 
 Without an index, finding a specific row in a table of $N$ rows requires a full sequential scan,

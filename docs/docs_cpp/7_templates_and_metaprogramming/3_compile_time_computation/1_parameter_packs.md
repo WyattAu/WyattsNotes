@@ -1,7 +1,6 @@
 ---
 title: Parameter Packs and Variadic Templates
-description:
-  "C++: Parameter Packs and Variadic Templates — Variadic Function Templates and Parameter Packs; Pack Expansion Syntax. and examination p."
+description: "C++: Parameter Packs and Variadic Templates — Variadic Function Templates and Parameter Packs; Pack Expansion Syntax. and examination p."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: parameter-packs-and-variadic-templates
 ---
-
 # Parameter Packs and Variadic Templates
 
 A **variadic template** accepts a variable number of template arguments via a **parameter pack**

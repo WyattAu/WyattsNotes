@@ -1,8 +1,6 @@
 ---
 title: Exponential Distribution and Continuous Random Variables
-description:
-  'A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board
-  Coverage; 1. Continuous Random Variables.'
+description: "A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board Coverage; 1. Continuous Random Variables."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: exponential-continuous-rv
 sidebar_position: 2
 ---
-
 ## Exponential Distribution and Continuous Random Variables
 
 The exponential distribution models the time between events in a Poisson process, while the theory

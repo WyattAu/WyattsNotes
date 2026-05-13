@@ -1,7 +1,6 @@
 ---
 title: Lambda Expressions — Capture Layouts and Closure Types
-description:
-  "C++: Lambda Expressions — Capture Layouts and Closure Types — Lambda Expressions: Capture Layouts and Closure Types; 3.1 Syntax and Structure [N4950 §8.1.5]."
+description: "C++: Lambda Expressions — Capture Layouts and Closure Types — Lambda Expressions: Capture Layouts and Closure Types; 3.1 Syntax and Structure [N4950 §8.1.5]."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: lambda-expressions-capture-layouts-and-closure-types
 ---
-
 # Lambda Expressions: Capture Layouts and Closure Types
 
 A lambda expression produces a **closure object** — an unnamed object of an unnamed class type (the

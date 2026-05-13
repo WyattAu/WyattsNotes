@@ -1,7 +1,6 @@
 ---
 title: Arrays and Records
-description:
-  "A-Level Computer Science notes on Arrays and Records: 1. One-Dimensional Arrays; Definition; Memory Layout; Operations and Complexity."
+description: "A-Level Computer Science notes on Arrays and Records: 1. One-Dimensional Arrays; Definition; Memory Layout; Operations and Complexity."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: arrays-and-records
 ---
-
 ## 1. One-Dimensional Arrays
 
 ### Definition

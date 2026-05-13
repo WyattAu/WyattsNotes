@@ -1,8 +1,7 @@
 ---
 id: nosql
 title: NoSQL Databases
-description:
-  "NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC Theorem; Consistency Models: A Spectrum with worked examples and exam-style questions."
+description: "NoSQL Databases — The CAP Theorem; Why P Is Non-Negotiable; The PACELC Theorem; Consistency Models: A Spectrum with worked examples and exam-style questions."
 slug: nosql
 sidebar_position: 1
 tags:
@@ -10,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## The CAP Theorem
 
 The CAP theorem, formalised by Gilbert and Lynch in 2002 based on Brewer's 2000 conjecture, states

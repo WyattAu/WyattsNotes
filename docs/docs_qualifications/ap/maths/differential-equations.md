@@ -1,7 +1,6 @@
 ---
 title: Differential Equations
-description:
-  "Differential Equations — First-Order Separable Equations; Separability Test; Worked Example: Separation with Partial Fractions."
+description: "Differential Equations — First-Order Separable Equations; Separability Test; Worked Example: Separation with Partial Fractions."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: differential-equations
 ---
-
 ## Introduction to Differential Equations (CED Unit 7)
 
 A **differential equation** (DE) is an equation that relates a function to one or more of its

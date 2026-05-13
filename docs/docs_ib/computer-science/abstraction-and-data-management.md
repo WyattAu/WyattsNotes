@@ -4,10 +4,9 @@ tags:
 - IB
 - CS
 slug: abstraction-and-data-management
-description: Comprehensive guide to abstraction and data management for the International
+description: "Rigorous IB computer science notes covering Abstraction and Data Management. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Conceptual Models vs Physical Models
 

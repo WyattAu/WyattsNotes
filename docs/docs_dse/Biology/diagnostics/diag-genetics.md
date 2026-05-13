@@ -1,10 +1,9 @@
 ---
 title: "Genetics -- Diagnostic Tests"
-description: Hardest diagnostic questions on genetics within the DSE specification, each with a full worked solution.
+description: "Challenging DSE biology diagnostic questions on Genetics -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-genetics
 hide_table_of_contents: true
 ---
-
 # DSE Biology Diagnostic: Genetics
 
 ## Unit Test 1: DNA Structure and Replication

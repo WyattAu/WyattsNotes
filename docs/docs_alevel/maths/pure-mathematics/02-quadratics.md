@@ -1,7 +1,6 @@
 ---
 title: Quadratics
-description:
-  "A-Level Mathematics notes on Quadratics: Board Coverage; 1. The Quadratic Function; 2. Completing the Square; 3. The Quadratic Formula."
+description: "A-Level Mathematics notes on Quadratics: Board Coverage; 1. The Quadratic Function; 2. Completing the Square; 3. The Quadratic Formula."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: quadratics
 ---
-
 ## Board Coverage
 
 | Board      | Paper   | Notes                                             |

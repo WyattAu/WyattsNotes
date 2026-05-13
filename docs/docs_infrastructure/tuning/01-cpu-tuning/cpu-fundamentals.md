@@ -1,12 +1,9 @@
 ---
 id: cpu-fundamentals
 title: CPU Architecture and Tuning
-description:
-  CPU Architecture and Tuning — Microarchitecture Overview; Instruction
-  Pipeline; Fetch and Decode; Out-of-Order Execution.
+description: "CPU Architecture and Tuning — Microarchitecture Overview; Instruction Pipeline; Fetch and Decode; Out-of-Order Execution."
 slug: cpu-fundamentals
 ---
-
 ## Microarchitecture Overview
 
 A modern CPU is a superscalar, out-of-order, speculative execution engine. Understanding these

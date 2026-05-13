@@ -1,8 +1,6 @@
 ---
 title: Integrals
-description:
-  Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann
-  Sums and the Definite Integral (CED Unit 6); Riemann Sums.
+description: "Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann Sums and the Definite Integral (CED Unit 6); Riemann Sums."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -11,7 +9,6 @@ categories:
   - Mathematics
 slug: integrals
 ---
-
 ## Antiderivatives and Indefinite Integrals (CED Unit 6)
 
 An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefinite integral** is:

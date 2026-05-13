@@ -1,8 +1,6 @@
 ---
 title: Algorithms and Data Structures
-description:
-  Algorithms and Data Structures — Algorithm Complexity; Big O Notation;
-  Comparing Algorithms; Best, Average, and Worst Case.
+description: "Algorithms and Data Structures — Algorithm Complexity; Big O Notation; Comparing Algorithms; Best, Average, and Worst Case."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: algorithms-and-data-structures
 ---
-
 # Algorithms and Data Structures
 
 :::info

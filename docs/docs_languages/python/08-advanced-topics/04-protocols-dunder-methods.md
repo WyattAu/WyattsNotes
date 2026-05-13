@@ -1,13 +1,9 @@
 ---
 id: protocols-dunder-methods
 title: Protocols and Dunder Methods
-description:
-  Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and
-  \_\_new\_\_; \_\_repr\_\_ and \_\_str\_\_ for thorough revision and
-  examination prepar.
+description: "Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and \_\_new\_\_; \_\_repr\_\_ and \_\_str\_\_ for thorough revision and examination prepar."
 slug: protocols-dunder-methods
 ---
-
 ## Data Model Protocols
 
 Python's data model defines a set of protocols that objects can implement to integrate with built-in

@@ -4,9 +4,8 @@ tags:
 - IB
 - CS
 slug: databases
-description: Comprehensive guide to databases for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Databases. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Database Fundamentals
 

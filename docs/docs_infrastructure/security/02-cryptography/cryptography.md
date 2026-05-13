@@ -1,13 +1,10 @@
 ---
 id: cryptography
 title: Cryptography
-description:
-  Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle;
-  Symmetric Encryption with worked examples and exam-style questions.
+description: "Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle; Symmetric Encryption with worked examples and exam-style questions."
 slug: cryptography
 sidebar_position: 3
 ---
-
 ## Foundations
 
 Cryptography is the mathematical science of securing communication and data. It is not a security

@@ -1,7 +1,6 @@
 ---
 title: Alcohols
-description:
-  "A-Level Chemistry notes on Alcohols: Classification; Physical Properties; Boiling Points; Solubility with worked examples and exam-style questions."
+description: "A-Level Chemistry notes on Alcohols: Classification; Physical Properties; Boiling Points; Solubility with worked examples and exam-style questions."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: alcohols
 ---
-
 # Alcohols
 
 Alcohols are organic compounds containing one or more hydroxyl ($-\mathrm{OH}$) groups bonded to an

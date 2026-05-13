@@ -1,7 +1,6 @@
 ---
 title: RTTI, dynamic_cast, and typeid
-description:
-  "C++: RTTI, dynamic_cast, and typeid — 4.1 Run-Time Type Information (RTTI); RTTI Implementation in the Itanium ABI for thorough revision and examination."
+description: "C++: RTTI, dynamic_cast, and typeid — 4.1 Run-Time Type Information (RTTI); RTTI Implementation in the Itanium ABI for thorough revision and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: rtti-dynamic-cast-typeid
 ---
-
 # RTTI, dynamic_cast, and Typeid
 
 Run-Time Type Information (RTTI) allows programs to query the dynamic type of polymorphic objects at

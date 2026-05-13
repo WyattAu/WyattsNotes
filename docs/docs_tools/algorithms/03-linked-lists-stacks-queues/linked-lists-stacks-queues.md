@@ -1,11 +1,9 @@
 ---
 id: linked-lists-stacks-queues
 title: Linked Lists, Stacks, and Queues
-description:
-  "Linked list, stack, and queue fundamentals: singly and doubly linked lists, array-based queues, insertion, deletion, reversal, and cycle detection algorithms."
+description: "Linked list, stack, and queue fundamentals: singly and doubly linked lists, array-based queues, insertion, deletion, reversal, and cycle detection algorithms."
 slug: linked-lists-stacks-queues
 ---
-
 ## Singly Linked Lists
 
 A singly linked list is a sequence of nodes where each node contains a value and a reference to the

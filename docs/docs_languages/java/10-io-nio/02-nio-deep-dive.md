@@ -1,12 +1,9 @@
 ---
 id: nio-deep-dive
 title: NIO Deep Dive
-description:
-  NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer`
-  including key definitions, derivations, and problem-solving techniques.
+description: "NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer` including key definitions, derivations, and problem-solving techniques."
 slug: nio-deep-dive
 ---
-
 ## NIO Overview
 
 `java.nio` (New I/O, introduced in JDK 1.4) provides a buffer-oriented, non-blocking alternative to

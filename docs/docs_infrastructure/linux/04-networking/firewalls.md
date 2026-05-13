@@ -1,13 +1,10 @@
 ---
 id: firewalls
 title: Linux Firewalls
-description:
-  Linux Firewalls — Netfilter Framework; Hooks; Tables; Chains including key
-  definitions, derivations, and problem-solving techniques.
+description: "Linux Firewalls — Netfilter Framework; Hooks; Tables; Chains including key definitions, derivations, and problem-solving techniques."
 slug: firewalls
 sidebar_position: 2
 ---
-
 ## Netfilter Framework
 
 Netfilter is the Linux kernel subsystem that provides network packet filtering, NAT, and other

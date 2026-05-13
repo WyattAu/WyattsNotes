@@ -1,8 +1,6 @@
 ---
 title: Geometry
-description:
-  Geometry — 1. Angle Properties; 1.1 Basic Angle Facts; 1.2 Angles in Parallel
-  Lines; 1.3 Angles in Polygons with worked examples and exam-style questions.
+description: "Geometry — 1. Angle Properties; 1.1 Basic Angle Facts; 1.2 Angles in Parallel Lines; 1.3 Angles in Polygons with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Maths
@@ -11,7 +9,6 @@ categories:
   - Maths
 slug: geometry
 ---
-
 ## Geometry
 
 :::info

@@ -1,11 +1,9 @@
 ---
 id: greedy-algorithms
 title: Greedy Algorithms
-description:
-  "Greedy algorithm design: the exchange argument, matroid theory, scheduling problems, graph algorithms, and conditions under which greedy strategies are optimal."
+description: "Greedy algorithm design: the exchange argument, matroid theory, scheduling problems, graph algorithms, and conditions under which greedy strategies are optimal."
 slug: greedy-algorithms
 ---
-
 ## The Greedy Paradigm
 
 A greedy algorithm makes the locally optimal choice at each step, hoping this leads to a globally

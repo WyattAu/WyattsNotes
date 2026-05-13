@@ -1,13 +1,9 @@
 ---
 id: concurrency-deep-dive
 title: Concurrency Deep Dive
-description:
-  Concurrency Deep Dive — Lock Interfaces; `ReentrantLock`;
-  `ReentrantReadWriteLock`; `StampedLock` with worked examples and exam-style
-  questions.
+description: "Concurrency Deep Dive — Lock Interfaces; `ReentrantLock`; `ReentrantReadWriteLock`; `StampedLock` with worked examples and exam-style questions."
 slug: concurrency-deep-dive
 ---
-
 ## Lock Interfaces
 
 ### `ReentrantLock`

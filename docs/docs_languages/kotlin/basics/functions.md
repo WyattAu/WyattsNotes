@@ -1,9 +1,6 @@
 ---
 title: Functions
-description:
-  Functions — Function Declarations; Default Parameters; Mixing Positional and
-  Named Arguments; Named Arguments with worked examples and exam-style
-  questions.
+description: "Functions — Function Declarations; Default Parameters; Mixing Positional and Named Arguments; Named Arguments with worked examples and exam-style questions."
 slug: functions
 date: 2026-04-18
 tags:
@@ -11,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Function Declarations
 
 Kotlin uses the `fun` keyword. The return type follows the parameter list, separated by a colon.

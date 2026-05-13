@@ -1,8 +1,6 @@
 ---
 title: Advanced Type System
-description:
-  Advanced Type System — `@overload` — Multiple Signatures for One Function;
-  Mechanism; Overloads with `@staticmethod` and `@classmethod`; Limitations.
+description: "Advanced Type System — `@overload` — Multiple Signatures for One Function; Mechanism; Overloads with `@staticmethod` and `@classmethod`; Limitations."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: advanced-typing
 ---
-
 ## `@overload` — Multiple Signatures for One Function
 
 Python is dynamically typed: a single function object can be called with any combination of

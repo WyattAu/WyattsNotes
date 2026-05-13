@@ -3,10 +3,9 @@ title: A Streetcar Named Desire
 tags:
 - english
 slug: streetcar-named-desire
-description: Comprehensive guide to a streetcar named desire for the International
+description: "Rigorous IB English notes covering A Streetcar Named Desire. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Author Context
 

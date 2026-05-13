@@ -1,7 +1,6 @@
 ---
 title: IMO Preparation
-description:
-  "Comprehensive preparation guide for the International Mathematical Olympiad (IMO): advanced number theory, combinatorics, algebra, geometry, worked solutions, strategy, and exam technique at the highest level."
+description: "Comprehensive preparation guide for the International Mathematical Olympiad (IMO): advanced number theory, combinatorics, algebra, geometry, worked solutions, s"
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics
@@ -11,7 +10,6 @@ categories:
   - Mathematics
 slug: imo-preparation
 ---
-
 ## 1. Overview of the IMO
 
 The International Mathematical Olympiad (IMO) is the premier mathematics competition for pre-university

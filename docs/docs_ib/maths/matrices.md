@@ -1,9 +1,8 @@
 ---
 title: Matrices
-description: "IB Mathematics — matrix operations, determinants, inverses, transformations, and eigenvalues."
+description: "Rigorous IB mathematics notes covering Matrices. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: matrices
 ---
-
 ## Matrix Fundamentals
 
 ### Definition and Notation

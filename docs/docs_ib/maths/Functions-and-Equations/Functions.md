@@ -1,10 +1,9 @@
 ---
 title: Functions and Equations
-description: IB Mathematics — functions, composite functions, inverse functions, transformations,
+description: "Rigorous IB mathematics notes covering Functions and Equations. Includes definitions, derivations, worked examples, and exam-style problems."
   and equations.
 slug: functions
 ---
-
 
 ## Function Notation
 

@@ -3,9 +3,8 @@ title: Wrap Up
 tags:
 - physics
 slug: wrap
-description: Comprehensive guide to wrap up for the International Baccalaureate.
+description: "Detailed IB physics study notes for Wrap Up. Provides rigorous definitions, proofs, and exam-focused practice questions."
 ---
-
 
 ## C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena
 

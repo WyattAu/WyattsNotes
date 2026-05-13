@@ -1,7 +1,6 @@
 ---
 title: Pattern Matching
-description:
-  "Dart: Pattern Matching — Pattern Matching Overview; Refutable vs Irrefutable Patterns; Where Patterns Appear; Logical Patterns."
+description: "Dart: Pattern Matching — Pattern Matching Overview; Refutable vs Irrefutable Patterns; Where Patterns Appear; Logical Patterns."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -9,7 +8,6 @@ categories:
   - Dart
 slug: pattern-matching
 ---
-
 ## Pattern Matching Overview
 
 Pattern matching in Dart 3 is a compile-time mechanism for decomposing and inspecting values. A

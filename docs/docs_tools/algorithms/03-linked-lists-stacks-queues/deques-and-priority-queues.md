@@ -1,11 +1,9 @@
 ---
 id: deques-and-priority-queues
 title: Deques and Priority Queues
-description:
-  "Deque and priority queue data structures: circular buffer implementations, binary heaps, binomial heaps, Fibonacci heaps, and their associated operations."
+description: "Deque and priority queue data structures: circular buffer implementations, binary heaps, binomial heaps, Fibonacci heaps, and their associated operations."
 slug: deques-and-priority-queues
 ---
-
 ## Deque ADT
 
 A deque (double-ended queue) is a linear collection that supports insertion and removal at both

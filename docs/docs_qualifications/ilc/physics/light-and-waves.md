@@ -1,7 +1,6 @@
 ---
 title: Light and Waves
-description:
-  "International LC Physics: Light and Waves — Wave Properties; Types of Waves (OL/HL); Why the Distinction Matters; Wave Terminology (OL/HL)."
+description: "International LC Physics: Light and Waves — Wave Properties; Types of Waves (OL/HL); Why the Distinction Matters; Wave Terminology (OL/HL)."
 date: 2026-04-14
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: light-and-waves
 ---
-
 # Light and Waves
 
 This topic covers the wave nature of light, sound, reflection, refraction, diffraction,

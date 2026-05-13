@@ -1,8 +1,6 @@
 ---
 title: Conflict Resolution
-description:
-  Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict
-  Markers; Multi-Base Conflicts with worked examples and exam-style questions.
+description: "Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict Markers; Multi-Base Conflicts with worked examples and exam-style questions."
 date: 2025-06-03T05:00:00.000Z
 tags:
   - git
@@ -12,7 +10,6 @@ categories:
   - CS
 slug: conflict-resolution
 ---
-
 ## Understanding Conflicts
 
 A merge conflict occurs when Git's three-way merge algorithm cannot automatically reconcile changes from two branches. This happens when **both branches modify the same region of the same file** in different ways.

@@ -1,11 +1,9 @@
 ---
 id: complexity-analysis
 title: Complexity Analysis
-description:
-  "Algorithm design: Complexity Analysis — Why Complexity Analysis Matters; Asymptotic Notation; Big-O: Upper Bound; Example: nested loop is O(n^2)."
+description: "Algorithm design: Complexity Analysis — Why Complexity Analysis Matters; Asymptotic Notation; Big-O: Upper Bound; Example: nested loop is O(n^2)."
 slug: complexity-analysis
 ---
-
 ## Why Complexity Analysis Matters
 
 A system that handles 1,000 requests per second at USD 10,000 per month in compute costs is

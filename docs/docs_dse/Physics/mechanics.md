@@ -1,10 +1,9 @@
 ---
 id: dse-physics-mechanics
 title: Physics - Mechanics
-description: "DSE Physics mechanics notes covering kinematics, dynamics, work and energy, momentum, and circular motion."
+description: "Rigorous DSE physics notes covering Physics - Mechanics. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: physics-mechanics
 ---
-
 ## Kinematics
 
 Kinematics is the study of motion without considering the forces that cause it. It describes the

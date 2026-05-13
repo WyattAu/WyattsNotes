@@ -1,8 +1,6 @@
 ---
 title: Metaprogramming
-description:
-  Metaprogramming — Reflection; Class References; Property References; Function
-  References with worked examples and exam-style questions.
+description: "Metaprogramming — Reflection; Class References; Property References; Function References with worked examples and exam-style questions."
 slug: metaprogramming
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Reflection
 
 Reflection allows inspection of classes, functions, properties, and annotations at runtime. Kotlin

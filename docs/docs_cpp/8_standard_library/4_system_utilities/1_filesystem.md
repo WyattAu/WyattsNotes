@@ -1,7 +1,6 @@
 ---
 title: Filesystem Library
-description:
-  "C++: Filesystem Library — `std::filesystem::path`; Path Composition; Path Iteration; Directory Iterators with worked examples and exam-style questions."
+description: "C++: Filesystem Library — `std::filesystem::path`; Path Composition; Path Iteration; Directory Iterators with worked examples and exam-style questions."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: filesystem-library
 ---
-
 ## The Filesystem Library
 
 `std::filesystem` (C++17) provides a portable interface for manipulating paths, querying file

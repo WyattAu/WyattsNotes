@@ -1,7 +1,6 @@
 ---
 title: Property Propagation
-description:
-  "C++: Property Propagation — The Visibility Scopes; 1. PRIVATE (Encapsulation); 2. INTERFACE (Propagation); 3. PUBLIC (Transitivity)."
+description: "C++: Property Propagation — The Visibility Scopes; 1. PRIVATE (Encapsulation); 2. INTERFACE (Propagation); 3. PUBLIC (Transitivity)."
 date: 2025-12-11T05:21:57.536Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: property-propagation
 ---
-
 In legacy C++ build systems (Makefiles, Visual Studio Solutions), build settings like "Include
 Directories" and "Preprocessor Definitions" were often global or applied loosely to directory
 scopes. This led to "Include Hell," where a consumer relied on a transitive dependency's headers,

@@ -1,8 +1,6 @@
 ---
 title: Derivatives
-description:
-  Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the
-  Derivative; Differentiability and Continuity; Where Differentiability Fails.
+description: "Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the Derivative; Differentiability and Continuity; Where Differentiability Fails."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -11,7 +9,6 @@ categories:
   - Mathematics
 slug: derivatives
 ---
-
 ## The Derivative as a Limit (CED Unit 2)
 
 The derivative of $f$ at $x = a$ is defined as:

@@ -1,7 +1,6 @@
 ---
 title: Nervous System
-description:
-  "A-Level Biology notes on the Nervous System: neuron structure, resting and action potentials, synaptic transmission, neurotransmitters, reflex arcs, sensory receptors, muscle contraction, nervous control of heart rate, brain structure, neurodegenerative diseases."
+description: "A-Level Biology notes on the Nervous System: neuron structure, resting and action potentials, synaptic transmission, neurotransmitters, reflex arcs, sensory rec"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: nervous-system
 sidebar_position: 8
 ---
-
 ## Nervous System
 
 :::info

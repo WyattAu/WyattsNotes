@@ -1,11 +1,9 @@
 ---
 id: migrations
 title: Schema Migrations
-description: >-
-  Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway; Naming convention: V{version}__{description}.sql.
+description: "Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway; Naming convention: V{version}__{description}.sql."
 slug: migrations
 ---
-
 ## Why Migrations Matter
 
 Schema changes in a production database are one of the highest-risk operations you perform. A bad

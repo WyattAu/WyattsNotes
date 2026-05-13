@@ -1,6 +1,6 @@
 ---
 title: Introduction to Go
-description: Go overview, installation, hello world, and the go toolchain.
+description: "Rigorous programming language notes covering Introduction to Go. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 date: 2026-04-18
 tags:
@@ -8,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Why Go
 
 Go was designed at Google by Rob Pike, Ken Thompson, and Robert Griesemer, first released in 2009.

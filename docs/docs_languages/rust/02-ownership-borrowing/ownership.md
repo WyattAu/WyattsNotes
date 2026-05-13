@@ -1,12 +1,9 @@
 ---
 id: ownership
 title: Ownership and Borrowing
-description:
-  Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and
-  What Copies; The `Copy` Trait with worked examples and exam-style questions.
+description: "Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and What Copies; The `Copy` Trait with worked examples and exam-style questions."
 slug: ownership
 ---
-
 ## The Ownership Rules
 
 Rust's memory management rests on three rules enforced at compile time:

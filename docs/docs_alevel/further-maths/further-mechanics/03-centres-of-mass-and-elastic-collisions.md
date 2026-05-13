@@ -1,8 +1,6 @@
 ---
 title: Centres of Mass and Elastic Collisions
-description:
-  'A-Level Further Maths notes on Centres of Mass and Elastic Collisions: Board Coverage; 1. Centre
-  of Mass of a Uniform Lamina; 1.1 Centre of mass by integration.'
+description: "A-Level Further Maths notes on Centres of Mass and Elastic Collisions: Board Coverage; 1. Centre of Mass of a Uniform Lamina; 1.1 Centre of mass by integration."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: centres-of-mass-elastic-collisions
 sidebar_position: 3
 ---
-
 ## Centres of Mass and Elastic Collisions
 
 This topic covers two major areas of further mechanics: finding the centre of mass of laminas,

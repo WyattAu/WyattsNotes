@@ -1,12 +1,9 @@
 ---
 id: query-optimization
 title: Query Optimization
-description:
-  Query Optimization — Query Optimizer Architecture; Rule-Based vs Cost-Based
-  Optimization; Statistics; Column Statistics.
+description: "Query Optimization — Query Optimizer Architecture; Rule-Based vs Cost-Based Optimization; Statistics; Column Statistics."
 slug: query-optimization
 ---
-
 ## Query Optimizer Architecture
 
 ### Rule-Based vs Cost-Based Optimization

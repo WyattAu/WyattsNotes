@@ -1,13 +1,10 @@
 ---
 id: filesystems-and-mounting
 title: File Systems and Mounting
-description:
-  File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive
-  revision and examination preparation. and examination pre.
+description: "File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive revision and examination preparation. and examination pre."
 slug: filesystems-and-mounting
 sidebar_position: 1
 ---
-
 ## Virtual File System (VFS) Layer
 
 The Virtual File System layer is the kernel abstraction that allows Linux to support multiple file

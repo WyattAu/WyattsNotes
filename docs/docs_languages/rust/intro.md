@@ -1,13 +1,10 @@
 ---
 id: intro
 title: Introduction to Rust
-description:
-  Systems programming with Rust — ownership, borrowing, lifetimes, traits, concurrency, and the
-  Cargo ecosystem.
+description: "Rigorous programming language Rust notes covering Introduction to Rust. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 ---
-
 ## Why Rust
 
 Rust solves a problem that has plagued systems programming for decades: how to write fast,

@@ -1,8 +1,6 @@
 ---
 title: Style and Idioms
-description:
-  Style and Idioms — Why Style Matters in Python; PEP 8 Essentials; Naming
-  Conventions for thorough revision and examination preparation.
+description: "Style and Idioms — Why Style Matters in Python; PEP 8 Essentials; Naming Conventions for thorough revision and examination preparation."
 date: 2025-06-04T16:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: style-and-idioms
 ---
-
 ## Why Style Matters in Python
 
 Python's design philosophy famously states that "there should be one-- and preferably only one

@@ -1,15 +1,12 @@
 ---
 title: Types and Variables
-description:
-  Types and Variables — JVM Architecture and Memory Model; Stack vs Heap vs
-  Metaspace; Where Variables Live; Primitive Types.
+description: "Types and Variables — JVM Architecture and Memory Model; Stack vs Heap vs Metaspace; Where Variables Live; Primitive Types."
 date: 2025-06-05T10:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: types-and-variables
 sidebar_position: 1
 ---
-
 ## JVM Architecture and Memory Model
 
 Before understanding types and variables, you must understand where they live at runtime. The JVM

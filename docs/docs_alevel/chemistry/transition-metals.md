@@ -1,7 +1,6 @@
 ---
 title: Transition Metals & Analytical Chemistry
-description:
-  "A-Level Chemistry notes on Transition Metals & Analytical Chemistry: The d-Block Elements; Definition of a Transition Metal; Electronic Configurations."
+description: "A-Level Chemistry notes on Transition Metals & Analytical Chemistry: The d-Block Elements; Definition of a Transition Metal; Electronic Configurations."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -11,7 +10,6 @@ categories:
 slug: transition-metals
 sidebar_position: 15
 ---
-
 # Transition Metals & Analytical Chemistry
 
 ## The d-Block Elements

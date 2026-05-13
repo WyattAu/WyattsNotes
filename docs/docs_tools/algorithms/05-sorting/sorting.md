@@ -1,12 +1,9 @@
 ---
 id: sorting
 title: Sorting Algorithms
-description:
-  Sorting Algorithms — Sorting Fundamentals; Properties; Comparison Model;
-  Comparison-Based Sorting with worked examples and exam-style questions.
+description: "Sorting Algorithms — Sorting Fundamentals; Properties; Comparison Model; Comparison-Based Sorting with worked examples and exam-style questions."
 slug: sorting
 ---
-
 ## Sorting Fundamentals
 
 ### Properties

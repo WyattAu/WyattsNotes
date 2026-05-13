@@ -1,10 +1,9 @@
 ---
 title: Energy and Conservation
-description: IB Physics — kinetic energy, potential energy, conservation of energy,
+description: "Rigorous IB physics notes covering Energy and Conservation. Includes definitions, derivations, worked examples, and exam-style problems."
   and power.
 slug: energy
 ---
-
 
 ## Forms of Energy
 

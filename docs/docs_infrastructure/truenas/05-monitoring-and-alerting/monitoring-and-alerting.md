@@ -1,12 +1,9 @@
 ---
 id: monitoring-and-alerting
 title: Monitoring and Alerting
-description:
-  Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System
-  Information; SMART Tests with worked examples and exam-style questions.
+description: "Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System Information; SMART Tests with worked examples and exam-style questions."
 slug: monitoring-and-alerting
 ---
-
 ## TrueNAS Built-in Monitoring
 
 ### Dashboard

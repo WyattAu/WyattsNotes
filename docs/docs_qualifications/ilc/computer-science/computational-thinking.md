@@ -1,8 +1,6 @@
 ---
 title: Computational Thinking
-description:
-  Computational Thinking — Decomposition (OL/HL); Pattern Recognition (OL/HL);
-  Abstraction (OL/HL); Algorithm Design (OL/HL).
+description: "Computational Thinking — Decomposition (OL/HL); Pattern Recognition (OL/HL); Abstraction (OL/HL); Algorithm Design (OL/HL)."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: computational-thinking
 ---
-
 # Computational Thinking
 
 Computational thinking is a problem-solving approach that involves breaking down complex problems,

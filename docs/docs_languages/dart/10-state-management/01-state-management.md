@@ -1,8 +1,6 @@
 ---
 title: State Management
-description:
-  State Management — Why setState Alone Does Not Scale; setState and
-  InheritedWidget; How setState Works; Scope Limitations.
+description: "State Management — Why setState Alone Does Not Scale; setState and InheritedWidget; How setState Works; Scope Limitations."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: state-management
 ---
-
 ## What State Management Is
 
 Flutter renders UI by calling `build()` on widgets. The `build()` method returns a widget tree based

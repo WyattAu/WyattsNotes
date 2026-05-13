@@ -1,7 +1,6 @@
 ---
 title: Computer Networks (Advanced)
-description:
-  "University-level notes on Advanced Computer Networks: 1. Advanced Routing; 1.1 Link-State Routing in Depth; 1.2 Distance-Vector Enhancements."
+description: "University-level notes on Advanced Computer Networks: 1. Advanced Routing; 1.1 Link-State Routing in Depth; 1.2 Distance-Vector Enhancements."
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -10,7 +9,6 @@ categories:
   - Computing
 slug: computer-networks-advanced
 ---
-
 ## 1. Advanced Routing Protocols
 
 ### 1.1 OSPF in Depth

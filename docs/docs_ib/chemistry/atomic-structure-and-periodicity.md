@@ -4,10 +4,9 @@ tags:
 - Chemistry
 - IB
 slug: atomic-structure-and-periodicity
-description: Comprehensive guide to atomic structure and periodicity for the International
+description: "Rigorous IB chemistry notes covering Atomic Structure and Periodicity. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## 1. Atomic Structure
 

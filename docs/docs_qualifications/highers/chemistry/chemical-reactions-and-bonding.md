@@ -1,8 +1,6 @@
 ---
 title: Chemical Reactions and Bonding
-description:
-  Chemical Reactions and Bonding — Higher Chemical Bonding; Types of Bonding;
-  Comparison of Bonding Types; Electronegativity and Bond Polarity.
+description: "Chemical Reactions and Bonding — Higher Chemical Bonding; Types of Bonding; Comparison of Bonding Types; Electronegativity and Bond Polarity."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: chemical-reactions-and-bonding
 ---
-
 # Chemical Reactions and Bonding
 
 ## Higher Chemical Bonding

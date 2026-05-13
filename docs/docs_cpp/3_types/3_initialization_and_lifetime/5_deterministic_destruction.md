@@ -1,7 +1,6 @@
 ---
 title: Deterministic Destruction
-description:
-  "C++: Deterministic Destruction — Destructor Semantics; When Destructors Run; The Reverse-Construction-Order Guarantee. and examination."
+description: "C++: Deterministic Destruction — Destructor Semantics; When Destructors Run; The Reverse-Construction-Order Guarantee. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: deterministic-destruction
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 C++ guarantees that destructors run at well-defined points in program execution. Unlike Java

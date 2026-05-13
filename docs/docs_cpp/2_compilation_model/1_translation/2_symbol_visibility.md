@@ -1,7 +1,6 @@
 ---
 title: Symbol Visibility
-description:
-  "C++: Symbol Visibility — The One Definition Rule (ODR); 1. ODR within a Translation Unit; 2. ODR within a Program; Linkage Types."
+description: "C++: Symbol Visibility — The One Definition Rule (ODR); 1. ODR within a Translation Unit; 2. ODR within a Program; Linkage Types."
 date: 2025-12-11T21:24:11.468Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: symbol-visibility
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 While the compiler processes one Translation Unit (TU) at a time, the **Linker** fuses them

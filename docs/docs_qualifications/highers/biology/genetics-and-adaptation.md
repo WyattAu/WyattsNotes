@@ -1,8 +1,6 @@
 ---
 title: Genetics and Adaptation
-description:
-  Genetics and Adaptation — Molecular Genetics; DNA Structure; DNA Replication;
-  Protein Synthesis with worked examples and exam-style questions.
+description: "Genetics and Adaptation — Molecular Genetics; DNA Structure; DNA Replication; Protein Synthesis with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: genetics-and-adaptation
 ---
-
 # Genetics and Adaptation
 
 :::info

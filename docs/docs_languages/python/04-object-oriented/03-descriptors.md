@@ -1,13 +1,9 @@
 ---
 id: descriptors
 title: Descriptors and Properties
-description:
-  Descriptors and Properties — Descriptor Protocol; Data vs Non-Data
-  Descriptors; Instance attribute overrides non-data descriptor; Data descriptor
-  always wins.
+description: "Descriptors and Properties — Descriptor Protocol; Data vs Non-Data Descriptors; Instance attribute overrides non-data descriptor; Data descriptor always wins."
 slug: descriptors
 ---
-
 ## Descriptor Protocol
 
 Descriptors are the mechanism behind `property`, `classmethod`, `staticmethod`, and the entire

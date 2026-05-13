@@ -1,10 +1,9 @@
 ---
 title: "A-Level Biology -- Diagnostic Test Guide"
-description: Guide to using diagnostic tests for A-Level Biology, covering all six core topics with unit and integration tests.
+description: "Challenging A-Level biology diagnostic questions on A-Level Biology -- Diagnostic Test Guide. With full worked solutions and examiner commentary."
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
-
 # A-Level Biology — Diagnostic Test Guide
 
 ## Purpose

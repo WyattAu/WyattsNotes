@@ -1,9 +1,7 @@
 ---
 id: http
 title: HTTP
-description:
-  HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding
-  with worked examples and exam-style questions.
+description: "HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding with worked examples and exam-style questions."
 slug: http
 sidebar_position: 6
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Overview
 
 HTTP (Hypertext Transfer Protocol) is the application-layer protocol that powers the World Wide Web.

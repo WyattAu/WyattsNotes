@@ -1,7 +1,6 @@
 ---
 title: Automata and Computability
-description:
-  "A-Level Computer Science notes on Automata and Computability: 1. Finite State Machines (FSM); Deterministic Finite Automaton (DFA)."
+description: "A-Level Computer Science notes on Automata and Computability: 1. Finite State Machines (FSM); Deterministic Finite Automaton (DFA)."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: automata-and-computability
 ---
-
 ## 1. Finite State Machines (FSM)
 
 ### Deterministic Finite Automaton (DFA)

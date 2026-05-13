@@ -1,6 +1,7 @@
 ---
 title: Scottish Highers
 date: 2026-04-14
+description: "Rigorous qualification exam notes covering Scottish Highers. Includes definitions, derivations, worked examples, and exam-style problems."
 tags:
   - Highers
   - Advanced Highers
@@ -9,7 +10,6 @@ categories:
   - Scottish Qualifications
 slug: intro
 ---
-
 # Scottish Highers and Advanced Highers
 
 Scottish Highers and Advanced Highers are the main qualifications taken by students in Scotland,

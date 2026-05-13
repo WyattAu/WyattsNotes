@@ -1,8 +1,6 @@
 ---
 title: Coroutines
-description:
-  Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with
-  worked examples and exam-style questions, ensuring thorough understanding.
+description: "Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with worked examples and exam-style questions, ensuring thorough understanding."
 slug: coroutines
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Core Concepts
 
 Coroutines are Kotlin's mechanism for asynchronous programming. They are lightweight -- a coroutine

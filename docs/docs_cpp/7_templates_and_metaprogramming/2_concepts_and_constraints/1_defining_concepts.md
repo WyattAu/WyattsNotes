@@ -1,7 +1,6 @@
 ---
 title: Defining Concepts and Requires Clauses
-description:
-  "C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal Semantics of the `concept` Keyword for thorough revision and examination prep."
+description: "C++: Defining Concepts and Requires Clauses — The `concept` Keyword; Formal Semantics of the `concept` Keyword for thorough revision and examination prep."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: defining-concepts-and-requires-clauses
 ---
-
 # Defining Concepts and Requires Clauses
 
 C++20 introduced **concepts** --- named requirements for template parameters that allow the compiler

@@ -1,12 +1,9 @@
 ---
 id: redis
 title: Redis Deep Dive
-description:
-  Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop;
-  redis.conf; Memory Model with worked examples and exam-style questions.
+description: "Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop; redis.conf; Memory Model with worked examples and exam-style questions."
 slug: redis
 ---
-
 ## Architecture Overview
 
 Redis is a single-threaded, event-driven, in-memory data structure store. It uses I/O multiplexing

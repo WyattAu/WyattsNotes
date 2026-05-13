@@ -1,13 +1,10 @@
 ---
 id: linux-security
 title: Linux Security
-description:
-  Linux Security — User and Group Model; User and Group Files; View user
-  information; Create user with worked examples and exam-style questions.
+description: "Linux Security — User and Group Model; User and Group Files; View user information; Create user with worked examples and exam-style questions."
 slug: linux-security
 sidebar_position: 1
 ---
-
 ## User and Group Model
 
 Linux security is fundamentally built on the user and group model. Every process runs under a

@@ -1,7 +1,6 @@
 ---
 title: Type Traits and Static Reflection Patterns
-description:
-  "C++: Type Traits and Static Reflection Patterns — The `<type_traits>` Header; `std::enable_if` and SFINAE; Tag Dispatch."
+description: "C++: Type Traits and Static Reflection Patterns — The `<type_traits>` Header; `std::enable_if` and SFINAE; Tag Dispatch."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: type-traits-and-static-reflection-patterns
 ---
-
 # Type Traits and Static Reflection Patterns
 
 Type traits provide compile-time type introspection and transformation, forming the foundation of

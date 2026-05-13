@@ -1,7 +1,6 @@
 ---
 title: Rebasing
-description:
-  "Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase the current branch onto main."
+description: "Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase the current branch onto main."
 date: 2025-06-03T04:00:00.000Z
 tags:
   - git
@@ -10,7 +9,6 @@ categories:
   - CS
 slug: rebasing
 ---
-
 ## What is Rebasing
 
 Rebasing is the process of **replaying** a series of commits onto a new base commit. Unlike merging, which creates a new commit with two parents, rebasing rewrites history by creating new commit objects with the same changes but different parent pointers (and therefore different SHA-1 hashes).

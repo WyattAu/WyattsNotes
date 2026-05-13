@@ -1,10 +1,9 @@
 ---
 title: Diagnostic Test Guide
-description: Guide for using the IB Mathematics diagnostic test system to identify weaknesses and track progress.
+description: "Challenging IB mathematics diagnostic questions on Diagnostic Test Guide. With full worked solutions and examiner commentary."
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
-
 # IB Mathematics: Diagnostic Test Guide
 
 ## 1. Purpose

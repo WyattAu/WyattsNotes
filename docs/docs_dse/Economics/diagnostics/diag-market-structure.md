@@ -1,12 +1,9 @@
 ---
 title: 'Market Structure and Theory of the Firm -- Diagnostic Tests'
-description:
-  'DSE Economics diagnostic tests for market structure: perfect competition, monopoly, oligopoly,
-  monopolistic competition, barriers to entry.'
+description: "DSE Economics diagnostic tests for market structure: perfect competition, monopoly, oligopoly, monopolistic competition, barriers to entry."
 slug: diag-market-structure
 hide_table_of_contents: true
 ---
-
 # Market Structure and Theory of the Firm — Diagnostic Tests
 
 ## Unit Tests

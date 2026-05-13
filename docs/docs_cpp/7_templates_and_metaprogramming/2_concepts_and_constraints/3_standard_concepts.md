@@ -1,7 +1,6 @@
 ---
 title: Standard Library Concepts
-description:
-  "C++: Standard Library Concepts — The `<concepts>` Header; Core Language Concepts; Comparison Concepts; Object Concepts. and examination."
+description: "C++: Standard Library Concepts — The `<concepts>` Header; Core Language Concepts; Comparison Concepts; Object Concepts. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: standard-library-concepts
 ---
-
 # Standard Library Concepts
 
 The `<concepts>` header [N4950 §18.4] provides a comprehensive set of predefined concepts that serve

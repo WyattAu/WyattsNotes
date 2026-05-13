@@ -1,8 +1,6 @@
 ---
 title: Modules and Packages
-description:
-  Modules and Packages — Packages; Package Naming Conventions; Import Paths;
-  Internal Package with worked examples and exam-style questions.
+description: "Modules and Packages — Packages; Package Naming Conventions; Import Paths; Internal Package with worked examples and exam-style questions."
 slug: modules-and-packages
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Packages
 
 Every Go file belongs to a package, declared at the top of the file. A directory contains one

@@ -1,12 +1,9 @@
 ---
 id: forensics
 title: Digital Forensics Basics
-description:
-  Digital Forensics Basics — Forensic Fundamentals; Chain of Custody; Integrity
-  Hashes; Generate SHA-256 hashes of evidence files.
+description: "Digital Forensics Basics — Forensic Fundamentals; Chain of Custody; Integrity Hashes; Generate SHA-256 hashes of evidence files."
 slug: forensics
 ---
-
 ## Forensic Fundamentals
 
 ### Chain of Custody

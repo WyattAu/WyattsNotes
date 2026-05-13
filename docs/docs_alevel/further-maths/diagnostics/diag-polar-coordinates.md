@@ -1,10 +1,9 @@
 ---
 title: "Polar Coordinates -- Diagnostic Tests"
-description: "A-Level Further Maths diagnostic tests for polar coordinates: conversion, sketching, area enclosed, tangent at a point."
+description: "Challenging A-Level further mathematics diagnostic questions on Polar Coordinates -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-polar-coordinates
 hide_table_of_contents: true
 ---
-
 # Polar Coordinates — Diagnostic Tests
 
 ## Unit Tests

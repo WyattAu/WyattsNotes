@@ -1,7 +1,6 @@
 ---
 title: Wave Properties
-description: >-
-  A-Level Physics notes on Wave Properties: 1. Progressive Waves; Key Definitions; The Wave Equation; Real-World Application: Seismic Waves.
+description: "A-Level Physics notes on Wave Properties: 1. Progressive Waves; Key Definitions; The Wave Equation; Real-World Application: Seismic Waves."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: wave-properties
 ---
-
 ## Wave Properties
 
 :::info

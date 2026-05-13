@@ -1,7 +1,6 @@
 ---
 title: Stackless Coroutine Frames and Heap Allocation
-description:
-  "C++: Stackless Coroutine Frames and Heap Allocation — Coroutines as Suspendable Functions; Stackless vs Stackful Coroutines; Coroutine Frame Layout."
+description: "C++: Stackless Coroutine Frames and Heap Allocation — Coroutines as Suspendable Functions; Stackless vs Stackful Coroutines; Coroutine Frame Layout."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: stackless-coroutine-frames-heap-allocation
 ---
-
 # Stackless Coroutine Frames and Heap Allocation
 
 This section covers coroutines as suspendable functions, the stackless vs stackful design trade-off,

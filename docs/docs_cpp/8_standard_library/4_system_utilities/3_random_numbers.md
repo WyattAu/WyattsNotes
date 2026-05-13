@@ -1,7 +1,6 @@
 ---
 title: Random Number Generation
-description:
-  "C++ standard library: Random Number Generation — Random Number Engines; Distributions; Seeded Random Number Generation; Engines:."
+description: "C++ standard library: Random Number Generation — Random Number Engines; Distributions; Seeded Random Number Generation; Engines:."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: random-number-generation
 ---
-
 ## Random Number Generation
 
 The `<random>` header provides a modular random number generation system consisting of engines

@@ -1,13 +1,10 @@
 ---
 id: intro
 title: Introduction to Algorithms
-description:
-  Algorithm fundamentals — complexity analysis, data structures, sorting, graph algorithms, dynamic
-  programming, and problem-solving patterns.
+description: "Algorithm fundamentals — complexity analysis, data structures, sorting, graph algorithms, dynamic programming, and problem-solving patterns."
 slug: intro
 sidebar_position: 1
 ---
-
 ## What Algorithms Are
 
 An algorithm is a finite sequence of well-defined instructions that takes an input and produces an

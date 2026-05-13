@@ -1,11 +1,9 @@
 ---
 id: dev-environment
 title: Development Environment Setup
-description:
-  "Development environment setup: terminal emulators, shell configuration, font selection, GPU acceleration, and productivity tools for an efficient workflow."
+description: "Development environment setup: terminal emulators, shell configuration, font selection, GPU acceleration, and productivity tools for an efficient workflow."
 slug: dev-environment
 ---
-
 ## Terminal Emulators
 
 ### GPU-Accelerated Terminals

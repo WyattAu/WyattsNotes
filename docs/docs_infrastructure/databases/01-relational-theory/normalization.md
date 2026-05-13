@@ -1,8 +1,6 @@
 ---
 title: Database Normalization
-description:
-  Database Normalization — Why Normalization Matters; Normalization vs
-  Denormalization; Normal Form Hierarchy; Functional Dependencies.
+description: "Database Normalization — Why Normalization Matters; Normalization vs Denormalization; Normal Form Hierarchy; Functional Dependencies."
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Databases
@@ -10,7 +8,6 @@ categories:
   - Databases
 slug: database-normalization
 ---
-
 ## Introduction
 
 Database normalization is the systematic process of structuring a relational schema to minimize data

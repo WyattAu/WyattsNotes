@@ -1,7 +1,6 @@
 ---
 title: Bit Manipulation
-description:
-  "C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict Aliasing Rule (TBAA); Legacy Approaches (Broken)."
+description: "C++: Bit Manipulation — 1. Safe Type Punning (`std::bit_cast`); The Strict Aliasing Rule (TBAA); Legacy Approaches (Broken)."
 date: 2025-12-12T22:12:51.318Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: bit-manipulation
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Systems programming frequently requires bypassing the C++ type system to manipulate the raw binary

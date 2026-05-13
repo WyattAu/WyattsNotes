@@ -1,8 +1,6 @@
 ---
 title: Stoichiometry and Formulae
-description:
-  Stoichiometry and Formulae — The Mole Concept (OL/HL); Avogadro's Number;
-  Molar Mass; Conversions with worked examples and exam-style questions.
+description: "Stoichiometry and Formulae — The Mole Concept (OL/HL); Avogadro's Number; Molar Mass; Conversions with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: stoichiometry-and-formulae
 ---
-
 # Stoichiometry and Formulae
 
 Stoichiometry is the quantitative study of chemical reactions, including mole calculations,

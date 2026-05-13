@@ -1,7 +1,6 @@
 ---
 title: Boolean Algebra
-description:
-  "A-Level Computer Science notes on Boolean Algebra: 1. Fundamental Definitions for comprehensive revision and examination preparation."
+description: "A-Level Computer Science notes on Boolean Algebra: 1. Fundamental Definitions for comprehensive revision and examination preparation."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: boolean-algebra
 ---
-
 ## 1. Fundamental Definitions
 
 We define the Boolean algebra over $\mathbb{B} = \{0, 1\}$ with operations:

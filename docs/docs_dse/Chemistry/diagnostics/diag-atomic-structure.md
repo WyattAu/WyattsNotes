@@ -1,10 +1,9 @@
 ---
 title: "Atomic Structure -- Diagnostic Tests"
-description: Hardest diagnostic questions on atomic structure within the DSE specification, each with a full worked solution.
+description: "Challenging DSE chemistry diagnostic questions on Atomic Structure -- Diagnostic Tests. With full worked solutions and examiner commentary."
 slug: diag-atomic-structure
 hide_table_of_contents: true
 ---
-
 # DSE Chemistry Diagnostic: Atomic Structure
 
 ## Unit Test 1: Transition Metal Electron Configuration

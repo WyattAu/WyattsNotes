@@ -1,10 +1,9 @@
 ---
 id: dse-physics-waves-and-optics
 title: Physics - Waves and Optics
-description: "DSE Physics notes on wave properties, sound, light, electromagnetic spectrum, reflection, refraction, and interference."
+description: "Rigorous DSE physics notes covering Physics - Waves and Optics. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: physics-waves-and-optics
 ---
-
 ## Nature of Waves
 
 A wave is a disturbance that transfers energy from one point to another without transferring matter.

@@ -1,7 +1,6 @@
 ---
 title: Electrostatics
-description:
-  "Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law, Electric Potential, Capacitance, and Dielectrics (AP Physics C: E&M)."
+description: "Electrostatics -- Electric Charge, Coulomb's Law, Electric Fields, Gauss's Law, Electric Potential, Capacitance, and Dielectrics (AP Physics C: E&M)."
 date: 2026-05-05
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: electrostatics
 ---
-
 ## Electric Charge
 
 Charge is a fundamental property of matter. There are two types: positive and negative.

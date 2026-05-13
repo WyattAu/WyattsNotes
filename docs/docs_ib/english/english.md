@@ -3,9 +3,8 @@ title: English
 tags:
 - english
 slug: english
-description: Comprehensive guide to english for the International Baccalaureate.
+description: "Rigorous IB English notes covering English. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## IB English A: Language and Literature -- Course Overview
 

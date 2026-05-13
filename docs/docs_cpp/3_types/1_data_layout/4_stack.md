@@ -1,7 +1,6 @@
 ---
 title: Stack
-description:
-  "C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and Deallocation; The Sequence of a Function Call."
+description: "C++: Stack — 1. The Hardware Mechanism (x86_64); The Registers; Allocation and Deallocation; The Sequence of a Function Call."
 date: 2025-12-13T04:07:38.177Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: stack-frame
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, "Automatic Storage Duration" (variables declared locally) is implemented via the **Call

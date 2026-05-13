@@ -1,12 +1,9 @@
 ---
 id: postgresql-advanced
 title: PostgreSQL Advanced
-description:
-  PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS;
-  pg_trgm with worked examples and exam-style questions.
+description: "PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS; pg_trgm with worked examples and exam-style questions."
 slug: postgresql-advanced
 ---
-
 ## Extensions Ecosystem
 
 Extensions add functionality to PostgreSQL through a well-defined API. They run in the same process

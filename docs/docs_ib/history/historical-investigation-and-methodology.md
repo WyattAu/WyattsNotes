@@ -4,10 +4,9 @@ tags:
 - IB
 - History
 slug: historical-investigation-and-methodology
-description: Comprehensive guide to historical investigation and methodology for the
+description: "Rigorous IB history notes covering Historical Investigation and Methodology. Includes definitions, derivations, worked examples, and exam-style problems."
   International Baccalaureate.
 ---
-
 
 # Historical Investigation and Methodology
 

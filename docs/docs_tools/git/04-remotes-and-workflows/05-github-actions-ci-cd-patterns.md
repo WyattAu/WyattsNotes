@@ -1,11 +1,8 @@
 ---
 title: GitHub Actions CI/CD Patterns
-description:
-  GitHub Actions CI/CD Patterns — What is GitHub Actions; Core Concepts; Runner
-  Taxonomy; Actions Marketplace with worked examples and exam-style questions.
+description: "GitHub Actions CI/CD Patterns — What is GitHub Actions; Core Concepts; Runner Taxonomy; Actions Marketplace with worked examples and exam-style questions."
 slug: github-actions-patterns
 ---
-
 ## What is GitHub Actions
 
 GitHub Actions is an event-driven continuous integration and continuous deployment (CI/CD) platform

@@ -1,7 +1,6 @@
 ---
 title: Algebraic Error Handling — std::optional and std::variant
-description:
-  "C++: Algebraic Error Handling — std::optional and std::variant — Algebraic Error Handling; 4.1 `std::optional<T>`; 4.2 `std::variant<T, U, V>`."
+description: "C++: Algebraic Error Handling — std::optional and std::variant — Algebraic Error Handling; 4.1 `std::optional<T>`; 4.2 `std::variant<T, U, V>`."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: algebraic-error-handling-optional-and-variant
 ---
-
 # Algebraic Error Handling
 
 `std::optional` and `std::variant` are stack-allocated, type-safe alternatives to exceptions for

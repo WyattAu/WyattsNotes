@@ -1,7 +1,6 @@
 ---
 title: Mathematics
-description:
-  "A-Level Mathematics notes on Mathematics: Board Coverage; Course Structure; Statistics; Mechanics with worked examples and exam-style questions."
+description: "A-Level Mathematics notes on Mathematics: Board Coverage; Course Structure; Statistics; Mechanics with worked examples and exam-style questions."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -11,7 +10,6 @@ categories:
 slug: maths
 sidebar_position: 2
 ---
-
 ## A Level Mathematics — Course Overview
 
 A Level Mathematics is fundamentally a course in **mathematical reasoning**. The pure mathematics

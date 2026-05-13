@@ -1,9 +1,8 @@
 ---
 title: Statistics
-description: "IB Mathematics — descriptive statistics, correlation, regression, conditional probability, and combinatorics."
+description: "Comprehensive IB mathematics notes on Statistics. Covers key definitions, worked examples, and practice problems for revision."
 slug: statistics
 ---
-
 ## Descriptive Statistics
 
 ### Measures of Central Tendency

@@ -1,7 +1,6 @@
 ---
 title: Branching
-description:
-  "Branching — Branch Internals; Equivalent to: echo $(git rev-parse HEAD) >.git/refs/heads/feature-auth; Creating and Managing Branches; Creating Branches."
+description: "Branching — Branch Internals; Equivalent to: echo $(git rev-parse HEAD) >.git/refs/heads/feature-auth; Creating and Managing Branches; Creating Branches."
 date: 2025-06-03T02:00:00.000Z
 tags:
   - git
@@ -10,7 +9,6 @@ categories:
   - CS
 slug: branching
 ---
-
 ## Why Branching Matters
 
 Branching is the mechanism that enables **parallel development** — multiple developers (or a single developer working on multiple features) can modify the codebase independently, then integrate their changes. Git's branching model is one of its defining strengths: branches are cheap ($O(1)$ creation), fast to switch, and designed to be created and deleted frequently.

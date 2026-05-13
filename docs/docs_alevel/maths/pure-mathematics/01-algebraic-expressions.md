@@ -1,7 +1,6 @@
 ---
 title: Algebraic Expressions
-description:
-  'A-Level Mathematics notes on Algebraic Expressions: Board Coverage; 1. Surds; 1.1 Laws of Surds; 1.2 Irrationality of $\sqrt{2}$.'
+description: "A-Level Mathematics notes on Algebraic Expressions: Board Coverage; 1. Surds; 1.1 Laws of Surds; 1.2 Irrationality of $\sqrt{2}$."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: algebraic-expressions
 ---
-
 ## Board Coverage
 
 | Board      | Paper   | Notes                                       |

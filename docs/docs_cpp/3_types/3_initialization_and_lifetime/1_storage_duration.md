@@ -1,7 +1,6 @@
 ---
 title: Storage Duration
-description:
-  "C++: Storage Duration — Stack Behavior; Temporary Objects; Initialization Phases; The Static Initialization Order Fiasco."
+description: "C++: Storage Duration — Stack Behavior; Temporary Objects; Initialization Phases; The Static Initialization Order Fiasco."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: storage-duration
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Every object in C++ has a **storage duration** that determines when its storage is allocated, when

@@ -1,7 +1,6 @@
 ---
 title: Associative and Unordered Containers
-description:
-  "C++: Associative and Unordered Containers — `std::map` and `std::set`: Red-Black Tree, O(log n) Operations; Proof of O(log n) Height Bound."
+description: "C++: Associative and Unordered Containers — `std::map` and `std::set`: Red-Black Tree, O(log n) Operations; Proof of O(log n) Height Bound."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: associative-and-unordered-containers
 ---
-
 ## Associative and Unordered Containers (Maps, Sets)
 
 C++ provides two families of associative containers: **ordered** containers (`std::map`, `std::set`)

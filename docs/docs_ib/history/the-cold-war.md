@@ -4,9 +4,8 @@ tags:
 - IB
 - History
 slug: the-cold-war
-description: Comprehensive guide to the cold war for the International Baccalaureate.
+description: "Rigorous IB history notes covering The Cold War. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## The Cold War: A Systems-Level Analysis (1945--1991)
 

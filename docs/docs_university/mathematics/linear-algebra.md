@@ -1,7 +1,6 @@
 ---
 title: Linear Algebra
-description:
-  "University-level notes on Linear Algebra: 1. Vectors and Vector Spaces; 1.1 Definition of a Vector Space; 1.2 Examples; 1.3 Subspaces."
+description: "University-level notes on Linear Algebra: 1. Vectors and Vector Spaces; 1.1 Definition of a Vector Space; 1.2 Examples; 1.3 Subspaces."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: linear-algebra
 ---
-
 ## 1. Vectors and Vector Spaces
 
 ### 1.1 Definition of a Vector Space

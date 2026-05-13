@@ -1,7 +1,6 @@
 ---
 title: Classes and Inheritance
-description:
-  "Dart: Classes and Inheritance — Class Fundamentals; Class Declaration; Constructor Variants, covering core concepts and practical techniques."
+description: "Dart: Classes and Inheritance — Class Fundamentals; Class Declaration; Constructor Variants, covering core concepts and practical techniques."
 date: 2025-07-20T10:00:00.000Z
 tags:
   - dart
@@ -9,7 +8,6 @@ categories:
   - dart
 slug: classes-and-inheritance
 ---
-
 ## Class Fundamentals
 
 Dart is an **object-oriented language with single inheritance**. Every class implicitly extends

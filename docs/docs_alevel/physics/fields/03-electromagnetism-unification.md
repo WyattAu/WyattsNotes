@@ -1,7 +1,6 @@
 ---
 title: Electromagnetism Unification
-description:
-  "A-Level Physics notes on Electromagnetism Unification: 1. Maxwell's Equations (Integral Form); Gauss's Law for Electricity; Gauss's Law for Magnetism."
+description: "A-Level Physics notes on Electromagnetism Unification: 1. Maxwell's Equations (Integral Form); Gauss's Law for Electricity; Gauss's Law for Magnetism."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: electromagnetism-unification
 ---
-
 ## Electromagnetism Unification
 
 :::info

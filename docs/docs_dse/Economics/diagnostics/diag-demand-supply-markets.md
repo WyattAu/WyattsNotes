@@ -1,12 +1,9 @@
 ---
 title: 'Demand, Supply, and Markets -- Diagnostic Tests'
-description:
-  'DSE Economics diagnostic tests for demand and supply: PED, PES, equilibrium analysis, consumer
-  and producer surplus, price controls.'
+description: "DSE Economics diagnostic tests for demand and supply: PED, PES, equilibrium analysis, consumer and producer surplus, price controls."
 slug: diag-demand-supply-markets
 hide_table_of_contents: true
 ---
-
 # Demand, Supply, and Markets — Diagnostic Tests
 
 ## Unit Tests

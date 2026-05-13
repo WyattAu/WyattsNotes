@@ -1,8 +1,6 @@
 ---
 title: Chemistry of Life
-description:
-  Chemistry of Life — Elements and Compounds (CED Unit 1); Essential Elements;
-  Bonding in Biological Molecules; Water (CED Unit 1).
+description: "Chemistry of Life — Elements and Compounds (CED Unit 1); Essential Elements; Bonding in Biological Molecules; Water (CED Unit 1)."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: chemistry-of-life
 ---
-
 ## Elements and Compounds (CED Unit 1)
 
 ### Essential Elements

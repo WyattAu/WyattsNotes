@@ -1,8 +1,6 @@
 ---
 title: Hyperbolic Functions
-description:
-  'A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision
-  and examination preparation.'
+description: "A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision and examination preparation."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: hyperbolic-functions
 sidebar_position: 6
 ---
-
 ## Hyperbolic Functions
 
 Hyperbolic functions are defined in terms of the exponential function and share remarkable

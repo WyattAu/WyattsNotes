@@ -1,7 +1,6 @@
 ---
 title: Networks
-description:
-  "GCSE Computer Science: Networks — 1. Types of Networks; 1.1 LAN and WAN; 1.2 Client-Server vs Peer-to-Peer; 1.3 Network Topologies."
+description: "GCSE Computer Science: Networks — 1. Types of Networks; 1.1 LAN and WAN; 1.2 Client-Server vs Peer-to-Peer; 1.3 Network Topologies."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -10,7 +9,6 @@ categories:
   - Computer Science
 slug: networks
 ---
-
 ## Networks
 
 :::info

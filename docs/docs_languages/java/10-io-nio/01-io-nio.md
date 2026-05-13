@@ -1,9 +1,6 @@
 ---
 title: I/O, NIO, and the Path API
-description:
-  I/O, NIO, and the Path API — Classic I/O (java.io); InputStream and
-  OutputStream Hierarchy; Reader and Writer Hierarchy, ensuring thorough
-  understanding.
+description: "I/O, NIO, and the Path API — Classic I/O (java.io); InputStream and OutputStream Hierarchy; Reader and Writer Hierarchy, ensuring thorough understanding."
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java
@@ -11,7 +8,6 @@ categories:
   - Java
 slug: io-nio-path-api
 ---
-
 ## Classic I/O (java.io)
 
 The `java.io` package has been part of the platform since JDK 1.0. It is stream-oriented: open a

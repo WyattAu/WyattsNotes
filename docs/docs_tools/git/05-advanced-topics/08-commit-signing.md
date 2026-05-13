@@ -1,11 +1,8 @@
 ---
 title: Commit Signing
-description:
-  Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be
-  anyone; Identity Verification with worked examples and exam-style questions.
+description: "Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be anyone; Identity Verification with worked examples and exam-style questions."
 slug: commit-signing
 ---
-
 ## Why Sign Commits
 
 Commit signing uses cryptographic signatures to prove that a commit was authored by the holder of a

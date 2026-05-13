@@ -1,10 +1,9 @@
 ---
 title: Kinematics
-description: IB Physics — motion, velocity, acceleration, projectiles, and kinematics
+description: "Rigorous IB physics notes covering Kinematics. Includes definitions, derivations, worked examples, and exam-style problems."
   equations.
 slug: kinematics
 ---
-
 
 ## Fundamental Quantities
 

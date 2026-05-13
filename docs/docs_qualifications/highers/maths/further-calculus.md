@@ -1,9 +1,6 @@
 ---
 title: Further Calculus
-description:
-  Further Calculus — Further Differentiation; Implicit Differentiation;
-  Parametric Differentiation; Differentiation of Inverse Trigonometric
-  Functions.
+description: "Further Calculus — Further Differentiation; Implicit Differentiation; Parametric Differentiation; Differentiation of Inverse Trigonometric Functions."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -12,7 +9,6 @@ categories:
   - Mathematics
 slug: further-calculus
 ---
-
 :::info
 
 This chapter covers **Advanced Higher** Mathematics content.

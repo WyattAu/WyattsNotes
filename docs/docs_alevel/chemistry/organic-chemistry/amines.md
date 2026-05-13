@@ -1,7 +1,6 @@
 ---
 title: Amines
-description:
-  "A-Level Chemistry notes on Amines: Classification and Nomenclature; Reduction of Nitriles; Reduction of Amides; Preparation of Phenylamine (Aniline)."
+description: "A-Level Chemistry notes on Amines: Classification and Nomenclature; Reduction of Nitriles; Reduction of Amides; Preparation of Phenylamine (Aniline)."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: amines
 ---
-
 # Amines
 
 Amines are organic derivatives of ammonia ($\mathrm{NH}_3$) in which one or more hydrogen atoms have

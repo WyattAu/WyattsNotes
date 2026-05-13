@@ -1,8 +1,6 @@
 ---
 title: Ecology
-description:
-  Ecology — Ecosystems; Definitions (OL/HL); Biotic and Abiotic Factors (OL/HL);
-  Feeding Relationships with worked examples and exam-style questions.
+description: "Ecology — Ecosystems; Definitions (OL/HL); Biotic and Abiotic Factors (OL/HL); Feeding Relationships with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: ecology
 ---
-
 # Ecology
 
 Ecology is the study of the relationships between living organisms and their environment. This topic

@@ -1,7 +1,6 @@
 ---
 title: Best Practices
-description:
-  "Best Practices — Recommended Global Configuration; Identity; Default branch; Pull strategy: rebase instead of merge (cleaner history)."
+description: "Best Practices — Recommended Global Configuration; Identity; Default branch; Pull strategy: rebase instead of merge (cleaner history)."
 date: 2025-06-03T16:00:00.000Z
 tags:
   - git
@@ -11,7 +10,6 @@ categories:
   - CS
 slug: best-practices
 ---
-
 ## Recommended Global Configuration
 
 ```bash

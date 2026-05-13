@@ -1,9 +1,7 @@
 ---
 id: tcp-and-udp
 title: TCP and UDP
-description:
-  TCP and UDP — The Transport Layer in Context; UDP (User Datagram Protocol);
-  UDP Header; UDP Characteristics with worked examples and exam-style questions.
+description: "TCP and UDP — The Transport Layer in Context; UDP (User Datagram Protocol); UDP Header; UDP Characteristics with worked examples and exam-style questions."
 slug: tcp-and-udp
 sidebar_position: 4
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Overview
 
 The transport layer provides end-to-end communication services between processes on different hosts.

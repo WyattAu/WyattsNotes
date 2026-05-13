@@ -3,9 +3,8 @@ title: Complex Numbers
 tags:
 - maths
 slug: complex-numbers
-description: Comprehensive guide to complex numbers for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Complex Numbers. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Cartesian Form
 

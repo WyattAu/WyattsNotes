@@ -1,7 +1,6 @@
 ---
 title: Condition Variables, Latches, and Barriers
-description:
-  "C++: Condition Variables, Latches, and Barriers — `std::condition_variable`; How `wait()` Works Internally; Spurious Wakeups and the Predicate Loop."
+description: "C++: Condition Variables, Latches, and Barriers — `std::condition_variable`; How `wait()` Works Internally; Spurious Wakeups and the Predicate Loop."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: condition-variables-latches-barriers
 ---
-
 # Condition Variables, Latches, and Barriers
 
 This section covers `std::condition_variable` and `std::condition_variable_any`, spurious wakeups,

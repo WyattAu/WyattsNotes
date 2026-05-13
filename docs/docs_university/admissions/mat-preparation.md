@@ -1,7 +1,6 @@
 ---
 title: MAT Preparation
-description:
-  "Comprehensive preparation guide for the Mathematics Admissions Test (MAT): multiple choice strategy, algebra, calculus, sequences, logic, worked solutions, and exam technique."
+description: "Comprehensive preparation guide for the Mathematics Admissions Test (MAT): multiple choice strategy, algebra, calculus, sequences, logic, worked solutions, and"
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics
@@ -11,7 +10,6 @@ categories:
   - Mathematics
 slug: mat-preparation
 ---
-
 ## 1. Overview of MAT
 
 The Mathematics Admissions Test (MAT) is used by the University of Oxford and Imperial College London

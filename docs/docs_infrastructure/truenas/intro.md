@@ -1,11 +1,10 @@
 ---
 id: intro
 title: Introduction to TrueNAS
-description: TrueNAS setup, configuration, and storage management best practices.
+description: "Rigorous infrastructure and DevOps notes covering Introduction to TrueNAS. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 ---
-
 ## Abstract
 
 Reference for deploying and managing TrueNAS (CORE and SCALE), covering ZFS pool design, dataset

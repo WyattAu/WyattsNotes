@@ -1,13 +1,9 @@
 ---
 id: memory-tuning
 title: Memory Tuning
-description:
-  Memory Tuning — DDR Memory Generations; DDR4 vs DDR5; Key Architectural
-  Differences; Latency in Real Terms with worked examples and exam-style
-  questions.
+description: "Memory Tuning — DDR Memory Generations; DDR4 vs DDR5; Key Architectural Differences; Latency in Real Terms with worked examples and exam-style questions."
 slug: memory-tuning
 ---
-
 ## DDR Memory Generations
 
 ### DDR4 vs DDR5

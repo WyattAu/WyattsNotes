@@ -1,8 +1,6 @@
 ---
 title: Stash
-description:
-  Stash — Basic Commands; Apply and remove from the stack (LIFO); Drop and
-  Clear;. do other work. with worked examples and exam-style questions.
+description: "Stash — Basic Commands; Apply and remove from the stack (LIFO); Drop and Clear;. do other work. with worked examples and exam-style questions."
 date: 2025-06-03T09:00:00.000Z
 tags:
   - git
@@ -12,7 +10,6 @@ categories:
   - CS
 slug: stash
 ---
-
 ## What is Stash
 
 `git stash` temporarily shelves changes in your working directory and index, restoring your repository to a clean state (matching HEAD). It is a stack-based mechanism — you can push multiple stashes and pop them in LIFO order.

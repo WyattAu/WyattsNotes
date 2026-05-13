@@ -1,7 +1,6 @@
 ---
 title: Computer Science
-description:
-  "A-Level Computer Science notes on Computer Science: Board Coverage; Course Structure; Assessment; How to Use These Notes with worked examples and exam-style."
+description: "A-Level Computer Science notes on Computer Science: Board Coverage; Course Structure; Assessment; How to Use These Notes with worked examples and exam-style."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -11,7 +10,6 @@ categories:
 slug: computer-science
 sidebar_position: 4
 ---
-
 ## A Level Computer Science — Course Overview
 
 A Level Computer Science sits at the intersection of mathematics, engineering, and philosophy. It

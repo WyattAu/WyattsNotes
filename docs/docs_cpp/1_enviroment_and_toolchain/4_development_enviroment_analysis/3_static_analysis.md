@@ -1,7 +1,6 @@
 ---
 title: Static Analysis
-description:
-  "C++: Static Analysis — 1. Clang-Tidy (The AST Linter); Capabilities; Configuration Architecture (`.clang-tidy`); Enable specific checks."
+description: "C++: Static Analysis — 1. Clang-Tidy (The AST Linter); Capabilities; Configuration Architecture (`.clang-tidy`); Enable specific checks."
 date: 2025-12-11T06:39:06.995Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: static-analysis
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static Analysis involves examining source code without executing it. Unlike the compiler, which

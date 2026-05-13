@@ -3,9 +3,8 @@ title: Wrap Up
 tags:
 - physics
 slug: wrap
-description: Comprehensive guide to wrap up for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Wrap Up. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 <details>
 <summary><strong>B.1 Thermal Energy Transfers, B.2 Greenhouse Effect & B.3 Gas Laws</strong></summary>

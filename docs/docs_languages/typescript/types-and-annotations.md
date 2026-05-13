@@ -1,14 +1,11 @@
 ---
 title: Types and Annotations
-description:
-  Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and
-  `void` Types; `any`; `unknown` with worked examples and exam-style questions.
+description: "Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and `void` Types; `any`; `unknown` with worked examples and exam-style questions."
 slug: typescript-types-and-annotations
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
-
 ## Primitive Types
 
 TypeScript provides seven primitive types that correspond directly to JavaScript runtime values:

@@ -1,8 +1,6 @@
 ---
 title: Work, Energy, and Power
-description:
-  Work, Energy, and Power — Work (CED Unit 4); Definition; Why the Dot Product;
-  Work by a Variable Force (AP Physics C), ensuring thorough understanding.
+description: "Work, Energy, and Power — Work (CED Unit 4); Definition; Why the Dot Product; Work by a Variable Force (AP Physics C), ensuring thorough understanding."
 date: 2026-04-14
 tags:
   - Physics
@@ -11,7 +9,6 @@ categories:
   - Physics
 slug: work-energy-power
 ---
-
 ## Work (CED Unit 4)
 
 Work is the energy transferred to or from an object by a force acting through a displacement.

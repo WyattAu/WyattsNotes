@@ -1,13 +1,11 @@
 ---
 title: Dynamics (Extended)
-description:
-  "A-Level Mathematics notes on Dynamics (Extended): Dynamics (Extended Treatment); 1. Newton's Laws of Motion; 1.1 Statement of the laws."
+description: "A-Level Mathematics notes on Dynamics (Extended): Dynamics (Extended Treatment); 1. Newton's Laws of Motion; 1.1 Statement of the laws."
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
 slug: dynamics-extended
 ---
-
 ## Dynamics (Extended Treatment)
 
 This document provides a rigorous treatment of Newton's laws, connected particles, pulleys, friction,

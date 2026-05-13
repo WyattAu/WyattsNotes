@@ -4,9 +4,8 @@ tags:
 - IB
 - Physics
 slug: current-electricity
-description: Comprehensive guide to current electricity for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Current Electricity. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## 1. Electric Fields
 

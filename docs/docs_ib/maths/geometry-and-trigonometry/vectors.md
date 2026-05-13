@@ -3,9 +3,8 @@ title: Vectors
 tags:
 - maths
 slug: vectors
-description: Comprehensive guide to vectors for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Vectors. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Vector Line
 

@@ -3,9 +3,8 @@ title: Induction
 tags:
 - physics
 slug: Induction
-description: Comprehensive guide to induction for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Induction. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Magnetic Flux
 

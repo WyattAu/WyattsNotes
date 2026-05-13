@@ -1,9 +1,8 @@
 ---
 title: Vectors
-description: "IB Mathematics — vector algebra, dot and cross products, lines and planes in three dimensions."
+description: "Comprehensive IB mathematics notes on Vectors. Covers key definitions, worked examples, and practice problems for revision."
 slug: vectors
 ---
-
 ## Vector Notation
 
 ### Scalars and Vectors

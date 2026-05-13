@@ -1,15 +1,13 @@
 ---
 id: subnetting-workshop
 title: Subnetting Workshop
-description:
-  "Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary; Step-by-Step Method; Verifying with a Shortcut."
+description: "Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary; Step-by-Step Method; Verifying with a Shortcut."
 slug: subnetting-workshop
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 Subnetting is the process of dividing a single IP network into smaller, more manageable

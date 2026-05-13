@@ -1,12 +1,9 @@
 ---
 id: unsafe-rust
 title: Unsafe Rust
-description:
-  Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`;
-  Creating Raw Pointers with worked examples and exam-style questions.
+description: "Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`; Creating Raw Pointers with worked examples and exam-style questions."
 slug: unsafe-rust
 ---
-
 ## What `unsafe` Enables
 
 The `unsafe` keyword grants access to five capabilities that the compiler cannot verify:

@@ -1,12 +1,9 @@
 ---
 id: hashing-and-hash-tables
 title: Hashing and Hash Tables
-description:
-  Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties;
-  Avalanche Criterion; Uniformity with worked examples and exam-style questions.
+description: "Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties; Avalanche Criterion; Uniformity with worked examples and exam-style questions."
 slug: hashing-and-hash-tables
 ---
-
 ## Hash Function Fundamentals
 
 A hash function maps an input from a large domain to a smaller, fixed-size range. Formally,

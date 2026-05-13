@@ -1,7 +1,6 @@
 ---
 title: Worktrees
-description:
-  'Worktrees — "error: Your local changes would be overwritten";. work on feature.;. work on main.;. work on feature-auth. for thorough revision and examination p.'
+description: "Worktrees — "error: Your local changes would be overwritten";. work on feature.;. work on main.;. work on feature-auth. for thorough revision and examination p."
 date: 2025-06-03T17:00:00.000Z
 tags:
   - git
@@ -11,7 +10,6 @@ categories:
   - CS
 slug: worktrees
 ---
-
 ## What are Worktrees
 
 `git worktree` allows you to have **multiple working directories** from the same repository, each checked out to a different branch. Unlike `git stash` (which temporarily shelves changes) or switching branches (which requires a clean working directory), worktrees let you work on multiple branches simultaneously.

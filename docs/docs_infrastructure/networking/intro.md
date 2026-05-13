@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Networking
-description:
-  Computer networking fundamentals — OSI model, TCP/IP, DNS, HTTP/HTTPS, TLS, and practical network
-  troubleshooting.
+description: "Comprehensive infrastructure and DevOps networking notes on Introduction to Networking. Presents core theory, worked examples, and problem-solving strategies."
 slug: intro
 sidebar_position: 1
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Why Networking Matters
 
 Every system you operate, deploy, or debug depends on networking. A container cannot reach its

@@ -1,9 +1,8 @@
 ---
 title: Climate Adaptation and Mitigation
-description: "Adaptation strategies, mitigation strategies, Paris Agreement, COP summits, NDCs, and case studies for IB Geography."
+description: "Rigorous IB geography notes covering Climate Adaptation and Mitigation. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: climate-adaptation-and-mitigation
 ---
-
 # Climate Adaptation and Mitigation
 
 ## Distinguishing Adaptation and Mitigation

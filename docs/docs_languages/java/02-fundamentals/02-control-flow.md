@@ -1,15 +1,12 @@
 ---
 title: Control Flow
-description:
-  Control Flow — Conditional Statements; if / else if / else; Dangling else
-  Problem; The switch Statement with worked examples and exam-style questions.
+description: "Control Flow — Conditional Statements; if / else if / else; Dangling else Problem; The switch Statement with worked examples and exam-style questions."
 date: 2025-06-05T11:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: control-flow
 sidebar_position: 2
 ---
-
 ## Conditional Statements
 
 ### if / else if / else

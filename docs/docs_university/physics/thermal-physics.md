@@ -1,7 +1,6 @@
 ---
 title: Thermal Physics
-description:
-  "University-level notes on Thermal Physics: 1. The Laws of Thermodynamics; 1.1 Zeroth Law and Temperature; 1.2 First Law; 1.3 Second Law and Entropy; 1.4 Third Law."
+description: "University-level notes on Thermal Physics: 1. The Laws of Thermodynamics; 1.1 Zeroth Law and Temperature; 1.2 First Law; 1.3 Second Law and Entropy; 1.4 Third L"
 date: 2026-04-26T00:00:00.000Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: thermal-physics
 ---
-
 ## 1. The Laws of Thermodynamics
 
 ### 1.1 Zeroth Law and Temperature

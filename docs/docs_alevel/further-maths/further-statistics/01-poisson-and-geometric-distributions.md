@@ -1,8 +1,6 @@
 ---
 title: Poisson and Geometric Distributions
-description:
-  'A-Level Further Maths notes on Poisson and Geometric Distributions: Board Coverage; 1. The
-  Poisson Distribution; 1.1 Definition.'
+description: "A-Level Further Maths notes on Poisson and Geometric Distributions: Board Coverage; 1. The Poisson Distribution; 1.1 Definition."
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -12,7 +10,6 @@ categories:
 slug: poisson-geometric
 sidebar_position: 1
 ---
-
 ## Poisson and Geometric Distributions
 
 The Poisson and geometric distributions model discrete random variables arising from counting

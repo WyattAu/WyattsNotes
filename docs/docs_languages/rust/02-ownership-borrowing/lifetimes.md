@@ -1,13 +1,9 @@
 ---
 id: lifetimes
 title: Lifetimes
-description:
-  Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input
-  Lifetime Binding; Static Lifetime with worked examples and exam-style
-  questions.
+description: "Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input Lifetime Binding; Static Lifetime with worked examples and exam-style questions."
 slug: lifetimes
 ---
-
 ## Why Lifetimes Exist
 
 Rust's borrow checker must ensure that every reference is valid for its entire use. Without lifetime

@@ -1,7 +1,6 @@
 ---
 title: Floating Point Representation
-description:
-  "A-Level Computer Science notes on Floating Point Representation: 1. Motivation; 2. IEEE 754 Single Precision (32-bit); Format; Decoding the Value."
+description: "A-Level Computer Science notes on Floating Point Representation: 1. Motivation; 2. IEEE 754 Single Precision (32-bit); Format; Decoding the Value."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: floating-point
 ---
-
 ## 1. Motivation
 
 Fixed-point representation allocates a fixed number of bits to the integer and fractional parts,

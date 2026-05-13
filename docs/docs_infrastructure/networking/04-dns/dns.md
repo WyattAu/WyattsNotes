@@ -1,9 +1,7 @@
 ---
 id: dns
 title: DNS
-description:
-  DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers;
-  TLD Name Servers with worked examples and exam-style questions.
+description: "DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers; TLD Name Servers with worked examples and exam-style questions."
 slug: dns
 sidebar_position: 5
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Overview
 
 The Domain Name System (DNS) is the Internet's hierarchical, distributed database that maps

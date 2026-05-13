@@ -1,9 +1,8 @@
 ---
 title: IB Psychology (SL/HL)
-description: Course overview of IB Psychology, covering the four levels of analysis, assessment structure, and research methods.
+description: "Rigorous IB notes covering IB Psychology (SL/HL). Includes definitions, derivations, worked examples, and exam-style problems."
 slug: psychology
 ---
-
 ## What Is IB Psychology?
 
 IB Psychology is a Group 3 subject (Individuals and Societies) that examines how biological, cognitive, and sociocultural factors interact to shape human behaviour and mental processes. The course is grounded in empirical research and requires students to evaluate theories and studies using critical thinking, ethical reasoning, and an understanding of research methodology.

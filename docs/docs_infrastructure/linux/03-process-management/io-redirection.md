@@ -1,13 +1,10 @@
 ---
 id: io-redirection
 title: I/O Redirection and Pipes
-description:
-  I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View
-  file descriptors for a process; 0 -> /dev/pts/0.
+description: "I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View file descriptors for a process; 0 -> /dev/pts/0."
 slug: io-redirection
 sidebar_position: 2
 ---
-
 ## File Descriptors
 
 Every Linux process starts with three standard file descriptors, and can open additional ones as

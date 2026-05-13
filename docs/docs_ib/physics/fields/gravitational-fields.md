@@ -1,9 +1,8 @@
 ---
 title: Gravitational Fields
 slug: gravitational-fields
-description: Comprehensive guide to gravitational fields for the International Baccalaureate.
+description: "Rigorous IB physics notes covering Gravitational Fields. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Point Mass
 

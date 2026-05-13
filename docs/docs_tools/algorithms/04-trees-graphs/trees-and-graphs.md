@@ -1,12 +1,9 @@
 ---
 id: trees-and-graphs
 title: Trees and Graphs
-description:
-  Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node
-  Definition with worked examples and exam-style questions.
+description: "Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node Definition with worked examples and exam-style questions."
 slug: trees-and-graphs
 ---
-
 ## Tree Terminology
 
 A tree is a connected, acyclic, undirected graph. In computer science, trees are usually rooted and

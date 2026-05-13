@@ -1,12 +1,9 @@
 ---
 id: concurrency
 title: Concurrency
-description:
-  Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread
-  Return Values with worked examples and exam-style questions.
+description: "Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread Return Values with worked examples and exam-style questions."
 slug: concurrency
 ---
-
 ## OS Threads
 
 Rust's `std::thread` module provides a 1:1 mapping to OS threads. Each thread gets its own stack

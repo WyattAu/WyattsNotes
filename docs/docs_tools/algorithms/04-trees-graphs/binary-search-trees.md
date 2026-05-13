@@ -1,12 +1,9 @@
 ---
 id: binary-search-trees
 title: Binary Search Trees and Balanced Trees
-description:
-  Binary Search Trees and Balanced Trees — Binary Search Tree Fundamentals; Node
-  Definition; Search; Insert with worked examples and exam-style questions.
+description: "Binary Search Trees and Balanced Trees — Binary Search Tree Fundamentals; Node Definition; Search; Insert with worked examples and exam-style questions."
 slug: binary-search-trees
 ---
-
 ## Binary Search Tree Fundamentals
 
 A binary search tree (BST) is a binary tree where every node satisfies the **BST property**: for any

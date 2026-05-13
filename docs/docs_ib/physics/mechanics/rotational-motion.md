@@ -1,10 +1,9 @@
 ---
 title: Rotational Motion
-description: IB Physics — circular motion, centripetal acceleration, torque, and angular
+description: "Rigorous IB physics notes covering Rotational Motion. Includes definitions, derivations, worked examples, and exam-style problems."
   momentum.
 slug: rotational-motion
 ---
-
 
 ## Circular Motion Fundamentals
 

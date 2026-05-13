@@ -1,7 +1,6 @@
 ---
 title: Deducing This and CRTP
-description:
-  "C++: Deducing This and CRTP — Explicit Object Parameters (Deducing This) and CRTP Replacement; 5.1 The CRTP Pattern; Formal Definition."
+description: "C++: Deducing This and CRTP — Explicit Object Parameters (Deducing This) and CRTP Replacement; 5.1 The CRTP Pattern; Formal Definition."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: deducing-this-crtp
 ---
-
 # Explicit Object Parameters (Deducing This) and CRTP Replacement
 
 C++23 introduces **explicit object parameters** (deducing this), which eliminates the need for the

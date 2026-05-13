@@ -1,11 +1,9 @@
 ---
 title: Alleviating Back Pain
-description:
-  "Alleviating Back Pain — Objective; The Complete Structure; Procedure; Phase 1: Activation & Stability with worked examples and exam-style questions."
+description: "Alleviating Back Pain — Objective; The Complete Structure; Procedure; Phase 1: Activation & Stability with worked examples and exam-style questions."
 date: 2025-09-08T09:17:16.135Z
 slug: alleviating-pain
 ---
-
 ## Objective
 
 This program is a training system designed for casuals, it is expected to be executed three times per week on non-consecutive days (e.g., Monday, Wednesday, Friday). Its primary objective is to build a functional physique that provides postural support, specifically to alleviate associated back pain.

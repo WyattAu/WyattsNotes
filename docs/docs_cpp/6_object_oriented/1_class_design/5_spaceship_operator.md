@@ -1,7 +1,6 @@
 ---
 title: The Spaceship Operator
-description:
-  "C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2 Default Comparisons with `= default`; 5.3 Comparison Categories in Detail."
+description: "C++: The Spaceship Operator — 5.1 Three-Way Comparison [N4950 §11.4.5.4]; 5.2 Default Comparisons with `= default`; 5.3 Comparison Categories in Detail."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: spaceship-operator
 ---
-
 # The Spaceship Operator (`<=>`) and Default Comparisons
 
 C++20 introduced the three-way comparison operator `<=>` (the "spaceship operator") as a unified

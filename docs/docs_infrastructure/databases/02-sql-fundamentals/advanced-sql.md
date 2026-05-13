@@ -1,13 +1,9 @@
 ---
 id: advanced-sql
 title: Advanced SQL
-description:
-  Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing
-  Clauses; ROWS vs RANGE vs GROUPS with worked examples and exam-style
-  questions.
+description: "Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing Clauses; ROWS vs RANGE vs GROUPS with worked examples and exam-style questions."
 slug: advanced-sql
 ---
-
 ## Window Functions Deep Dive
 
 Window functions compute values across a set of rows related to the current row without collapsing

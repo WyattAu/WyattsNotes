@@ -1,9 +1,6 @@
 ---
 title: Goroutines and Synchronization
-description:
-  Goroutines and Synchronization — Goroutines; The Goroutine Scheduler;
-  sync.WaitGroup; WaitGroup Gotcha with worked examples and exam-style
-  questions.
+description: "Goroutines and Synchronization — Goroutines; The Goroutine Scheduler; sync.WaitGroup; WaitGroup Gotcha with worked examples and exam-style questions."
 slug: goroutines
 date: 2026-04-18
 tags:
@@ -11,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Goroutines
 
 A goroutine is a lightweight thread managed by the Go runtime. Goroutines are multiplexed onto a

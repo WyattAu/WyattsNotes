@@ -1,12 +1,9 @@
 ---
 title: 'International Trade and Finance -- Diagnostic Tests'
-description:
-  'DSE Economics diagnostic tests for international trade: comparative advantage, trade policy,
-  exchange rates, balance of payments, trade barriers.'
+description: "DSE Economics diagnostic tests for international trade: comparative advantage, trade policy, exchange rates, balance of payments, trade barriers."
 slug: diag-international-trade
 hide_table_of_contents: true
 ---
-
 # International Trade and Finance — Diagnostic Tests
 
 ## Unit Tests

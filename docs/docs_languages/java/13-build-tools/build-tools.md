@@ -1,12 +1,9 @@
 ---
 id: build-tools
 title: Build Tools and Dependency Management
-description:
-  Build Tools and Dependency Management — Project Structure Conventions; Maven;
-  POM Structure; Lifecycle Phases with worked examples and exam-style questions.
+description: "Build Tools and Dependency Management — Project Structure Conventions; Maven; POM Structure; Lifecycle Phases with worked examples and exam-style questions."
 slug: build-tools
 ---
-
 ## Project Structure Conventions
 
 Java projects follow a standard directory layout established by Maven and adopted by Gradle and most

@@ -1,10 +1,9 @@
 ---
 title: Atomic and Nuclear Physics
-description: IB Physics — atomic models, nuclear physics, radioactivity, and mass-energy
+description: "Rigorous IB physics notes covering Atomic and Nuclear Physics. Includes definitions, derivations, worked examples, and exam-style problems."
   equivalence.
 slug: atomic-physics
 ---
-
 
 ## Atomic Models
 

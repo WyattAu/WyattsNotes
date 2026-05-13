@@ -1,7 +1,6 @@
 ---
 title: Explicit Instantiation and Extern Templates
-description:
-  "C++: Explicit Instantiation and Extern Templates — Formal Semantics: Declaration vs Definition [N4950 §13.9.2] for thorough revision and examination prep."
+description: "C++: Explicit Instantiation and Extern Templates — Formal Semantics: Declaration vs Definition [N4950 §13.9.2] for thorough revision and examination prep."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: explicit-instantiation-and-extern-templates
 ---
-
 # Explicit Instantiation and Extern Templates
 
 When templates are instantiated implicitly in every translation unit that uses them, compilation

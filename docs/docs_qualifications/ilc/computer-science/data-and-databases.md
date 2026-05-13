@@ -1,8 +1,6 @@
 ---
 title: Data and Databases
-description:
-  Data and Databases — Data Representation; Text Encoding (OL/HL); Images
-  (OL/HL); Sound (HL) with worked examples and exam-style questions.
+description: "Data and Databases — Data Representation; Text Encoding (OL/HL); Images (OL/HL); Sound (HL) with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Computer Science
@@ -11,7 +9,6 @@ categories:
   - Computer Science
 slug: data-and-databases
 ---
-
 # Data and Databases
 
 This topic covers data representation, data types, database concepts, SQL, normalisation, and data

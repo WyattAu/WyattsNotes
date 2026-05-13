@@ -1,7 +1,6 @@
 ---
 title: Compare-and-Swap (CAS) Loops
-description:
-  "C++: Compare-and-Swap (CAS) Loops — CAS Loop Pattern; `compare_exchange_weak` vs `compare_exchange_strong`; When Weak CAS Is Preferable."
+description: "C++: Compare-and-Swap (CAS) Loops — CAS Loop Pattern; `compare_exchange_weak` vs `compare_exchange_strong`; When Weak CAS Is Preferable."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: compare-and-swap-cas-loops
 ---
-
 # Compare-and-Swap (CAS) Loops
 
 This section covers the CAS loop pattern, the difference between `compare_exchange_weak` and

@@ -1,7 +1,6 @@
 ---
 title: Born-Haber Cycles
-description:
-  "A-Level Chemistry notes on Born-Haber Cycles: Lattice Enthalpy; Definitions; Terminology Convention; Born-Haber Cycle Construction."
+description: "A-Level Chemistry notes on Born-Haber Cycles: Lattice Enthalpy; Definitions; Terminology Convention; Born-Haber Cycle Construction."
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -10,7 +9,6 @@ categories:
   - Chemistry
 slug: born-haber-cycles
 ---
-
 # Born-Haber Cycles
 
 Born-Haber cycles are thermochemical cycles that decompose the formation of an ionic solid into a

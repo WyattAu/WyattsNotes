@@ -1,13 +1,11 @@
 ---
 title: TypeScript -- Course Overview
-description:
-  "TypeScript: TypeScript -- Course Overview — What Is TypeScript; Relationship to JavaScript; Key Language Features; The Toolchain."
+description: "TypeScript: TypeScript -- Course Overview — What Is TypeScript; Relationship to JavaScript; Key Language Features; The Toolchain."
 slug: typescript
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
-
 ## What Is TypeScript
 
 TypeScript is a statically typed programming language developed by Microsoft. It is a **strict

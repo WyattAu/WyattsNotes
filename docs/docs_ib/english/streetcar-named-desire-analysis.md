@@ -4,10 +4,9 @@ tags:
 - IB
 - English
 slug: streetcar-named-desire-analysis
-description: Comprehensive guide to a streetcar named desire — close reading and analysis
+description: "Rigorous IB English notes covering A Streetcar Named Desire  Close Reading . Includes definitions, derivations, worked examples, and exam-style problems."
   for the International Baccalaureate.
 ---
-
 
 # A Streetcar Named Desire: Close Reading and Analysis
 

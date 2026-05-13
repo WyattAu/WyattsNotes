@@ -1,15 +1,12 @@
 ---
 sidebar_position: 1
 title: A-Level Geography
-description:
-  'A-Level Geography notes covering physical geography, human geography, geographical skills, and
-  fieldwork investigation.'
+description: "Rigorous A-Level geography notes covering A-Level Geography. Includes definitions, derivations, worked examples, and exam-style problems."
 date: 2026-05-12T00:00:00.000Z
 tags:
   - Geography
   - ALevel
 ---
-
 # A-Level Geography
 
 :::note Content Under Development

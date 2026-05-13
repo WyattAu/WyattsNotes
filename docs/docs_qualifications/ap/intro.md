@@ -1,13 +1,13 @@
 ---
 title: Introduction to AP Notes
 date: 2026-04-14
+description: "Rigorous qualification exam AP notes covering Introduction to AP Notes. Includes definitions, derivations, worked examples, and exam-style problems."
 tags:
   - AP
 categories:
   - AP
 slug: intro
 ---
-
 ## Overview
 
 The Advanced Placement (AP) program, administered by the College Board, allows US high school

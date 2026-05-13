@@ -1,8 +1,6 @@
 ---
 title: Arrays, Slices, and Maps
-description:
-  Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with
-  worked examples and exam-style questions, ensuring thorough understanding.
+description: "Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with worked examples and exam-style questions, ensuring thorough understanding."
 slug: arrays-slices-maps
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Arrays
 
 Arrays are fixed-length, homogeneous sequences. The length is part of the type -- `[3]int` and

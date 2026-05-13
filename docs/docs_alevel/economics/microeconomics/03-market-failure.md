@@ -1,7 +1,6 @@
 ---
 title: Market Failure
-description:
-  "A-Level Economics notes on Market Failure: 2.1 Externalities; Derivation of the Welfare Loss; Types of Externalities; 2.2 Public Goods."
+description: "A-Level Economics notes on Market Failure: 2.1 Externalities; Derivation of the Welfare Loss; Types of Externalities; 2.2 Public Goods."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -11,7 +10,6 @@ categories:
 slug: market-failure
 sidebar_position: 3
 ---
-
 ## 1. Definition of Market Failure
 
 We define **market failure** as the condition in which the free market allocation of resources is

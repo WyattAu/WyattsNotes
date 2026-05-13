@@ -3,9 +3,8 @@ title: Maths
 tags:
 - maths
 slug: maths
-description: Comprehensive guide to maths for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Maths. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## IB Mathematics -- Analysis and Approaches (AA) -- Course Overview
 

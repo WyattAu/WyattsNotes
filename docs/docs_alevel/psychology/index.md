@@ -1,15 +1,12 @@
 ---
 sidebar_position: 1
 title: A-Level Psychology
-description:
-  'A-Level Psychology notes covering research methods, cognitive psychology, developmental
-  psychology, social psychology, biological psychology, and individual differences.'
+description: "A-Level Psychology notes covering research methods, cognitive psychology, developmental psychology, social psychology, biological psychology, and individual dif"
 date: 2026-05-12T00:00:00.000Z
 tags:
   - Psychology
   - ALevel
 ---
-
 # A-Level Psychology
 
 :::note Content Under Development

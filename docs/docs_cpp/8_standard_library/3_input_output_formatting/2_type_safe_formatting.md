@@ -1,8 +1,6 @@
 ---
 title: Type-Safe Formatting (std::format, std::print)
-description: >-
-  C++: Type-Safe Formatting (std::format, std::print) — `std::format`---
-  Overview; Format Specification Syntax; ::= "#" (alternate form); Argument ID.
+description: "Rigorous C++ programming notes on Type Rigorous treatment with definitions, proofs, worked examples, and exam questions."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -10,7 +8,6 @@ categories:
   - Cpp
 slug: type-safe-formatting
 ---
-
 ## Type-Safe Formatting (std::format, std::print)
 
 C++20 introduced `std::format`, a type-safe formatting function that checks argument types at

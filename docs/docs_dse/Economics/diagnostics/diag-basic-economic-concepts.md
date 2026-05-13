@@ -1,12 +1,9 @@
 ---
 title: 'Basic Economic Concepts -- Diagnostic Tests'
-description:
-  'DSE Economics diagnostic tests for basic economic concepts: scarcity, opportunity cost, PPC,
-  economic systems, and division of labour.'
+description: "DSE Economics diagnostic tests for basic economic concepts: scarcity, opportunity cost, PPC, economic systems, and division of labour."
 slug: diag-basic-economic-concepts
 hide_table_of_contents: true
 ---
-
 # Basic Economic Concepts — Diagnostic Tests
 
 ## Unit Tests

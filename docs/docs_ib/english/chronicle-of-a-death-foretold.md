@@ -3,10 +3,9 @@ title: Chronicle of a Death Foretold
 tags:
 - english
 slug: chronicle-death-foretold
-description: Comprehensive guide to chronicle of a death foretold for the International
+description: "Rigorous IB English notes covering Chronicle of a Death Foretold. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Author Context
 

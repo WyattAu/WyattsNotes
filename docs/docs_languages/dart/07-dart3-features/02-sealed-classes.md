@@ -1,8 +1,6 @@
 ---
 title: Sealed Classes
-description:
-  Sealed Classes — The Systems Engineering Motivation; Sum Types in Language
-  Design; Basic Syntax; The Same-Library Restriction.
+description: "Sealed Classes — The Systems Engineering Motivation; Sum Types in Language Design; Basic Syntax; The Same-Library Restriction."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: sealed-classes
 ---
-
 ## What Sealed Classes Are
 
 Sealed classes are a language-level constraint that restricts a class hierarchy to a known, finite

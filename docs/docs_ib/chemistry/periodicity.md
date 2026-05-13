@@ -1,9 +1,8 @@
 ---
 title: Periodicity
-description: "IB Chemistry — periodic trends, group properties, period 3 elements, and transition metal chemistry."
+description: "Rigorous IB chemistry notes covering Periodicity. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: periodicity
 ---
-
 ## 1. Periodic Trends Recap
 
 ### Effective Nuclear Charge

@@ -1,11 +1,10 @@
 ---
 id: intro
 title: Introduction to Licensing
-description: Open-source licenses, compliance, and legal considerations for software projects.
+description: "Rigorous software tools notes covering Introduction to Licensing. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 ---
-
 ## What Software Licensing Is
 
 Every piece of software you write, compile, or deploy is subject to copyright law by default. Under

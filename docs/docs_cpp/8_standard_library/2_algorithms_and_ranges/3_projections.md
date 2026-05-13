@@ -1,7 +1,6 @@
 ---
 title: Projections and Callable Objects
-description:
-  "C++: Projections and Callable Objects — Projections: Transforming Elements During Algorithm Execution; `std::ranges::sort` with Projection."
+description: "C++: Projections and Callable Objects — Projections: Transforming Elements During Algorithm Execution; `std::ranges::sort` with Projection."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: projections-and-callable-objects
 ---
-
 ## Projections and Callable Objects
 
 A **projection** is a callable that transforms an element before it is passed to an algorithm's

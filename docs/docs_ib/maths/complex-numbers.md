@@ -1,9 +1,8 @@
 ---
 title: Complex Numbers
-description: "IB Mathematics — complex arithmetic, polar form, De Moivre's theorem, and roots of unity."
+description: "Comprehensive IB mathematics notes on Complex Numbers. Covers key definitions, worked examples, and practice problems for revision."
 slug: complex-numbers
 ---
-
 ## The Imaginary Unit
 
 ### Definition

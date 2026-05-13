@@ -1,8 +1,6 @@
 ---
 title: Control Flow
-description:
-  Control Flow — Conditional Branching; `if` / `elif` / `else`; All of these are
-  valid conditional expressions; Why Indentation for Blocks.
+description: "Control Flow — Conditional Branching; `if` / `elif` / `else`; All of these are valid conditional expressions; Why Indentation for Blocks."
 date: 2025-06-04T11:00:00.000Z
 tags:
   - Python
@@ -10,7 +8,6 @@ categories:
   - Python
 slug: control-flow
 ---
-
 ## Conditional Branching
 
 ### `if` / `elif` / `else`

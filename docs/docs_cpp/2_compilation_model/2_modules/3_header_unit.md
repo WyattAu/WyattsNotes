@@ -1,7 +1,6 @@
 ---
 title: Header Units
-description:
-  "C++: Header Units — Formal Basis; 2. The Global Module Fragment (GMF); Architecture; Isolation Rules with worked examples and exam-style questions."
+description: "C++: Header Units — Formal Basis; 2. The Global Module Fragment (GMF); Architecture; Isolation Rules with worked examples and exam-style questions."
 date: 2025-12-12T04:19:09.448Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: header-units
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The transition from a text-based inclusion model (`#include`) to a semantic module model (`import`)

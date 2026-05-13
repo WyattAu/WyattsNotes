@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  Cell Biology — 1. Cell Structure; 1.1 Plant and Animal Cells; 1.2 Eukaryotic
-  and Prokaryotic Cells; 1.3 Cell Specialisation.
+description: "Cell Biology — 1. Cell Structure; 1.1 Plant and Animal Cells; 1.2 Eukaryotic and Prokaryotic Cells; 1.3 Cell Specialisation."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: cell-biology
 ---
-
 ## Cell Biology
 
 :::info

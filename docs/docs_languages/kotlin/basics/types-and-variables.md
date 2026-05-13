@@ -1,8 +1,6 @@
 ---
 title: Types and Variables
-description:
-  Types and Variables — val and var; Basic Types; Implicit Conversions; Type
-  Inference with worked examples and exam-style questions.
+description: "Types and Variables — val and var; Basic Types; Implicit Conversions; Type Inference with worked examples and exam-style questions."
 slug: types-and-variables
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## val and var
 
 `val` declares a read-only variable (assigned once). `var` declares a mutable variable.

@@ -4,9 +4,8 @@ tags:
 - IB
 - Physics
 slug: quantum-and-nuclear-physics
-description: "Comprehensive guide to quantum and nuclear physics for the International Baccalaureate."
+description: "Rigorous IB physics notes covering Quantum and Nuclear Physics. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## 1. Quantum Physics (Topic 12, HL)
 

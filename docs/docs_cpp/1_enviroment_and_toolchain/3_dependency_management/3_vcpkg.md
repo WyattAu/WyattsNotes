@@ -1,7 +1,6 @@
 ---
 title: vcpkg
-description:
-  "C++: vcpkg — Complete Manifest Example; Architectural Components; Baseline Mechanics; 2. Registry Federation with worked examples and exam-style questions."
+description: "C++: vcpkg — Complete Manifest Example; Architectural Components; Baseline Mechanics; 2. Registry Federation with worked examples and exam-style questions."
 date: 2025-12-11T04:55:37.164Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: vcpkg
 ---
-
 **vcpkg** is Microsoft's cross-platform package manager. While originally designed with an
 imperative, global installation model ("Classic Mode"), modern C++ architecture relies on **Manifest
 Mode**.

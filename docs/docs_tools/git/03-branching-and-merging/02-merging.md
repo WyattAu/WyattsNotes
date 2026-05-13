@@ -1,8 +1,6 @@
 ---
 title: Merging
-description:
-  Merging — The Merge Operation; What `git merge` Actually Does; The Three-Way
-  Merge Algorithm; Finding the Common Ancestor.
+description: "Merging — The Merge Operation; What `git merge` Actually Does; The Three-Way Merge Algorithm; Finding the Common Ancestor."
 date: 2025-06-03T03:00:00.000Z
 tags:
   - git
@@ -11,7 +9,6 @@ categories:
   - CS
 slug: merging
 ---
-
 ## The Merge Operation
 
 Merging is the process of combining the changes from one branch into another. Git's merge algorithm

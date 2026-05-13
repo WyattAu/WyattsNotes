@@ -1,7 +1,6 @@
 ---
 title: Name Mangling
-description:
-  "C++: Name Mangling — Proof: Overloading Requires Encoding Beyond the Name; What Gets Mangled; 2. The Itanium C++ ABI (GCC / Clang); Structure."
+description: "C++: Name Mangling — Proof: Overloading Requires Encoding Beyond the Name; What Gets Mangled; 2. The Itanium C++ ABI (GCC / Clang); Structure."
 date: 2025-12-12T02:56:28.878Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: mangling
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Linkers were originally designed for C and Fortran, languages where function names are unique

@@ -1,8 +1,6 @@
 ---
 title: Definitions
-description:
-  Definitions — Sets and Relations; Power Set; Disjoint Sets; Equivalence
-  Relation with worked examples and exam-style questions.
+description: "Definitions — Sets and Relations; Power Set; Disjoint Sets; Equivalence Relation with worked examples and exam-style questions."
 date: 2026-01-15T09:31:35.184Z
 tags:
   - ML
@@ -10,7 +8,6 @@ categories:
   - ML
 slug: definitions
 ---
-
 To understand the basis for probability theory, it is important to fully understand every term used. Here are the definitions for the terms we will be using, refer back to this page if there are any confusion on terminology.
 
 ## Sets and Relations

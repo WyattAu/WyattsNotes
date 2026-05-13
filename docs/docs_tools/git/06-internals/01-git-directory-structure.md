@@ -1,8 +1,6 @@
 ---
 title: Git Directory Structure
-description:
-  Git Directory Structure — The `.git` Directory; Key Files; HEAD; config
-  including key definitions, derivations, and problem-solving techniques.
+description: "Git Directory Structure — The `.git` Directory; Key Files; HEAD; config including key definitions, derivations, and problem-solving techniques."
 date: 2025-06-03T12:00:00.000Z
 tags:
   - git
@@ -11,7 +9,6 @@ categories:
   - CS
 slug: git-directory-structure
 ---
-
 ## The `.git` Directory
 
 The `.git` directory is the heart of a Git repository. It contains all metadata, object data, configuration, and hooks. Understanding its structure is essential for debugging, scripting, and recovering from corruption.

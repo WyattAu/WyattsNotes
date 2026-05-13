@@ -1,7 +1,6 @@
 ---
 title: Binary Module Interfaces
-description:
-  "C++: Binary Module Interfaces — What BMIs Are and Why They Matter; Formal Basis; Compiler-Specific Formats; BMI Generation with GCC and Clang."
+description: "C++: Binary Module Interfaces — What BMIs Are and Why They Matter; Formal Basis; Compiler-Specific Formats; BMI Generation with GCC and Clang."
 date: 2025-12-12T03:59:23.474Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: bmi
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The introduction of Modules alters the C++ compilation model. In the header-based model, source

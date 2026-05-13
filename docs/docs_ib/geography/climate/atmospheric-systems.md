@@ -1,9 +1,8 @@
 ---
 title: Atmospheric Systems
-description: "Global atmospheric circulation, ITCZ, Rossby waves, jet streams, ocean currents, and ENSO for IB Geography."
+description: "Rigorous IB geography notes covering Atmospheric Systems. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: atmospheric-systems
 ---
-
 # Atmospheric Systems
 
 ## Global Atmospheric Circulation

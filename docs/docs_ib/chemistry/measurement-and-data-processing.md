@@ -1,9 +1,8 @@
 ---
 title: Measurement and Data Processing
-description: "IB Chemistry — uncertainty, significant figures, error propagation, graphical analysis, and spectroscopy."
+description: "Rigorous IB chemistry notes covering Measurement and Data Processing. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: measurement-and-data-processing
 ---
-
 ## 1. Uncertainty and Error
 
 ### Random and Systematic Errors

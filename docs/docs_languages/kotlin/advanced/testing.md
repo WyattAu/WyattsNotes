@@ -1,8 +1,6 @@
 ---
 title: Testing
-description:
-  Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries
-  with worked examples and exam-style questions.
+description: "Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries with worked examples and exam-style questions."
 slug: testing
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Dependencies
 
 ```kotlin

@@ -1,12 +1,9 @@
 ---
 id: types-and-variables
 title: Types and Variables
-description:
-  Types and Variables — Integer Types; Integer Literals; Integer Overflow;
-  Sizing and Alignment with worked examples and exam-style questions.
+description: "Types and Variables — Integer Types; Integer Literals; Integer Overflow; Sizing and Alignment with worked examples and exam-style questions."
 slug: types-and-variables
 ---
-
 ## Integer Types
 
 Rust provides signed and unsigned integers at every power-of-two width from 8 to 128 bits, plus

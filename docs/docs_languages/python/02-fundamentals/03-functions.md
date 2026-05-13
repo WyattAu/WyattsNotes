@@ -1,7 +1,6 @@
 ---
 title: Functions, Closures, and Decorators
-description:
-  "Functions, Closures, and Decorators — Functions as First-Class Objects; Functions Are Objects; {'name': <class 'str'>, 'return': <class 'str'>}."
+description: "Functions, Closures, and Decorators — Functions as First-Class Objects; Functions Are Objects; {'name': <class 'str'>, 'return': <class 'str'>}."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -10,7 +9,6 @@ categories:
 slug: functions-closures-decorators
 sidebar_position: 3
 ---
-
 ## Functions as First-Class Objects
 
 In Python, **"first-class"** means that functions are values on equal footing with every other kind

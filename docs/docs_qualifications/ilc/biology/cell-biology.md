@@ -1,9 +1,6 @@
 ---
 title: Cell Biology
-description:
-  Cell Biology — Cell Theory (OL/HL); Prokaryotic and Eukaryotic Cells (OL/HL);
-  Prokaryotic Cells (Bacteria) for thorough revision and examination
-  preparation.
+description: "Cell Biology — Cell Theory (OL/HL); Prokaryotic and Eukaryotic Cells (OL/HL); Prokaryotic Cells (Bacteria) for thorough revision and examination preparation."
 date: 2026-04-14
 tags:
   - Biology
@@ -12,7 +9,6 @@ categories:
   - Biology
 slug: cell-biology
 ---
-
 # Cell Biology
 
 Cell biology is the study of the structure and function of cells, the basic units of life. This

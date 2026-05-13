@@ -1,10 +1,9 @@
 ---
 title: Sequences and Series
-description: IB Mathematics — arithmetic and geometric sequences and series, sigma
+description: "Rigorous IB mathematics notes covering Sequences and Series. Includes definitions, derivations, worked examples, and exam-style problems."
   notation, binomial theorem.
 slug: sequences-series
 ---
-
 
 ## Sequences and Series
 

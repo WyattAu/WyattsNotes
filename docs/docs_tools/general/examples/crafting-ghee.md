@@ -1,8 +1,6 @@
 ---
 title: Crafting Ghee
-description:
-  Crafting Ghee — Objective; Ingredients & Tools; Procedure; Region-Specific
-  Adjustments with worked examples and exam-style questions.
+description: "Crafting Ghee — Objective; Ingredients & Tools; Procedure; Region-Specific Adjustments with worked examples and exam-style questions."
 date: 2025-07-21T02:18:57.576Z
 tags:
   - food
@@ -10,7 +8,6 @@ categories:
   - food
 slug: crafting-ghee
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

@@ -1,8 +1,6 @@
 ---
 title: Reflog
-description:
-  Reflog — Show with dates (more readable); Show with relative dates; HEAD@{N} —
-  the Nth previous position of HEAD for thorough revision and examination prepa.
+description: "Reflog — Show with dates (more readable); Show with relative dates; HEAD@{N} — the Nth previous position of HEAD for thorough revision and examination prepa."
 date: 2025-06-03T08:00:00.000Z
 tags:
   - git
@@ -12,7 +10,6 @@ categories:
   - CS
 slug: reflog
 ---
-
 ## What is the Reflog
 
 The **reflog** (reference log) is Git's built-in safety net. It records every change to the HEAD reference and to each branch reference, creating a chronological audit trail of all movements in the repository. Even after operations that appear destructive — `git reset --hard`, `git rebase`, `git commit --amend` — the reflog retains a record of where the references were before.

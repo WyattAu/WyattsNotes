@@ -1,8 +1,6 @@
 ---
 title: Generics
-description:
-  Generics — Type Parameters; Constraints; Built-in Constraints; Custom
-  Constraints with worked examples and exam-style questions.
+description: "Generics — Type Parameters; Constraints; Built-in Constraints; Custom Constraints with worked examples and exam-style questions."
 slug: generics
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Introduction
 
 Go 1.18 (released March 2022) added generics via type parameters. Generics allow you to write

@@ -1,7 +1,6 @@
 ---
 title: Devirtualization and Final Specifiers
-description:
-  "C++: Devirtualization and Final Specifiers — 3.1 What is Devirtualization?; 3.2 Conditions for Devirtualization for thorough revision and examination pre."
+description: "C++: Devirtualization and Final Specifiers — 3.1 What is Devirtualization?; 3.2 Conditions for Devirtualization for thorough revision and examination pre."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: devirtualization-final-specifiers
 ---
-
 # Devirtualization and Final Specifiers
 
 **Devirtualization** is a compiler optimization that replaces a virtual function call with a direct

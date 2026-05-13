@@ -1,7 +1,6 @@
 ---
 title: Magnetism
-description:
-  "Magnetism -- Magnetic Force, Biot-Savart Law, Ampere's Law, Faraday's Law, Lenz's Law, Inductance, RL and LC Circuits, and Maxwell's Equations (AP Physics C: E&M)."
+description: "Magnetism -- Magnetic Force, Biot-Savart Law, Ampere's Law, Faraday's Law, Lenz's Law, Inductance, RL and LC Circuits, and Maxwell's Equations (AP Physics C: E&"
 date: 2026-05-05
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: magnetism
 ---
-
 ## Magnetic Force on a Moving Charge
 
 A charge $q$ moving with velocity $\vec{v}$ in a magnetic field $\vec{B}$ experiences:

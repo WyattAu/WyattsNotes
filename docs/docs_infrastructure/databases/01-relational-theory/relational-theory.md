@@ -1,8 +1,7 @@
 ---
 id: relational-theory
 title: Relational Theory
-description:
-  "Relational Theory — The Relational Model; Codd's 12 Rules (and Rule 0); Relations, Tuples, Attributes, and Domains; Key Distinction: Relations Are Sets."
+description: "Relational Theory — The Relational Model; Codd's 12 Rules (and Rule 0); Relations, Tuples, Attributes, and Domains; Key Distinction: Relations Are Sets."
 slug: relational-theory
 sidebar_position: 1
 tags:
@@ -10,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## The Relational Model
 
 E.F. Codd introduced the relational model in his 1970 paper "A Relational Model of Data for Large

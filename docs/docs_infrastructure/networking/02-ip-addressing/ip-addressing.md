@@ -1,8 +1,7 @@
 ---
 id: ip-addressing
 title: IP Addressing
-description:
-  "Networking: IP Addressing — IPv4 Address Structure; Binary Representation; Special IPv4 Addresses; Address Classes (Historical)."
+description: "Networking: IP Addressing — IPv4 Address Structure; Binary Representation; Special IPv4 Addresses; Address Classes (Historical)."
 slug: ip-addressing
 sidebar_position: 3
 tags:
@@ -10,7 +9,6 @@ tags:
 categories:
   - Networking
 ---
-
 ## Overview
 
 IP addressing is the mechanism by which hosts are identified and located on an IP network. Every

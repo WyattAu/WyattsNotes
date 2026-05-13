@@ -1,7 +1,6 @@
 ---
 title: Range Materialization (std::ranges::to)
-description:
-  "C++: Range Materialization (std::ranges::to) — `std::ranges::to<T>` (C++23); Converting Lazy Views to Eager Containers. and examination."
+description: "C++: Range Materialization (std::ranges::to) — `std::ranges::to<T>` (C++23); Converting Lazy Views to Eager Containers. and examination."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: range-materialization
 ---
-
 ## Range Materialization (std::ranges::to)
 
 Views are lazy and borrow elements from their source. When you need ownership, multiple passes, or

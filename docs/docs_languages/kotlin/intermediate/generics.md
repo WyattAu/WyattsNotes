@@ -1,8 +1,6 @@
 ---
 title: Generics
-description:
-  Generics — Generic Classes and Functions; Variance; Invariance; Covariance
-  (`out`) with worked examples and exam-style questions.
+description: "Generics — Generic Classes and Functions; Variance; Invariance; Covariance (`out`) with worked examples and exam-style questions."
 slug: generics
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Kotlin
 ---
-
 ## Generic Classes and Functions
 
 Generics allow types to be parameterized. The compiler enforces type safety at compile time, and the

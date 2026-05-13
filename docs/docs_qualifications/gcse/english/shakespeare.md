@@ -1,8 +1,6 @@
 ---
 title: Shakespeare
-description:
-  Shakespeare — 2.1 Elizabethan and Jacobean England; 2.2 The Globe Theatre; 2.3
-  Acting Companies; 3.1 Iambic Pentameter. and examination.
+description: "Shakespeare — 2.1 Elizabethan and Jacobean England; 2.2 The Globe Theatre; 2.3 Acting Companies; 3.1 Iambic Pentameter. and examination."
 date: 2026-04-22
 tags:
   - English
@@ -11,7 +9,6 @@ categories:
   - English
 slug: shakespeare
 ---
-
 ## Shakespeare
 
 :::info

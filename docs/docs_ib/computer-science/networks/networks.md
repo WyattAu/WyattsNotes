@@ -3,9 +3,8 @@ title: Networks
 tags:
 - CS
 slug: networks
-description: Comprehensive guide to networks for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering Networks. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Computer Network
 

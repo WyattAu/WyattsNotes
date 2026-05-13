@@ -1,7 +1,6 @@
 ---
 title: Trigonometry
-description:
-  "A-Level Mathematics notes on Trigonometry: Board Coverage; 1. The Unit Circle Definitions; 1.1 Radian Measure; 2. Fundamental Identities."
+description: "A-Level Mathematics notes on Trigonometry: Board Coverage; 1. The Unit Circle Definitions; 1.1 Radian Measure; 2. Fundamental Identities."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: trigonometry
 ---
-
 ## Board Coverage
 
 | Board      | Paper      | Notes                                                                    |

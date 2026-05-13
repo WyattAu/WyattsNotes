@@ -1,16 +1,13 @@
 ---
 id: http-2-and-3
 title: HTTP/2 and HTTP/3
-description:
-  HTTP/2 and HTTP/3 — HTTP/2; Binary Framing Layer; Streams and Multiplexing;
-  Flow Control with worked examples and exam-style questions.
+description: "HTTP/2 and HTTP/3 — HTTP/2; Binary Framing Layer; Streams and Multiplexing; Flow Control with worked examples and exam-style questions."
 slug: http-2-and-3
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 HTTP/2 (RFC 9113) and HTTP/3 (RFC 9114) are the modern versions of the Hypertext Transfer Protocol.

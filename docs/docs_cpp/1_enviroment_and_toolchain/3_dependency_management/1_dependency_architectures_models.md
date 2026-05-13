@@ -1,7 +1,6 @@
 ---
 title: Dependency Resolution
-description:
-  'C++: Dependency Resolution — The C++ Package Management Problem; The ABI Matrix; Distribution Models; 1. System Package Managers (The "Distro" Model).'
+description: "C++: Dependency Resolution — The C++ Package Management Problem; The ABI Matrix; Distribution Models; 1. System Package Managers (The "Distro" Model)."
 date: 2025-12-11T03:49:07.185Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: dependency-resolution-architectures-distribution-models
 ---
-
 Unlike languages with a unified ecosystem (Rust/Cargo, Node/NPM, Python/Pip), C++ does not utilize a
 centralized registry or a standard package manager. This fragmentation is not an oversight but a
 consequence of the language's compilation model: C++ compiles directly to machine code, heavily

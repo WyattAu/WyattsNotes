@@ -3,9 +3,8 @@ title: Number and Algebra
 tags:
 - maths
 slug: number-algebra
-description: Comprehensive guide to number and algebra for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Number and Algebra. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Sets
 

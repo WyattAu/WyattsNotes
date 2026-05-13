@@ -1,8 +1,6 @@
 ---
 title: Types and Variables
-description:
-  Types and Variables — Integer Types; Integer Overflow; Floating-Point Types;
-  Boolean Type with worked examples and exam-style questions.
+description: "Types and Variables — Integer Types; Integer Overflow; Floating-Point Types; Boolean Type with worked examples and exam-style questions."
 slug: types-and-variables
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## Integer Types
 
 Go provides signed and unsigned integers at standard widths:

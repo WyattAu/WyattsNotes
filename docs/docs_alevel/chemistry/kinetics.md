@@ -1,7 +1,6 @@
 ---
 title: Chemical Kinetics
-description:
-  "A-Level Chemistry notes on Chemical Kinetics: Rate of Reaction; Methods of Measuring Rate; Collision Theory; Activation Energy ($E_a$)."
+description: "A-Level Chemistry notes on Chemical Kinetics: Rate of Reaction; Methods of Measuring Rate; Collision Theory; Activation Energy ($E_a$)."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -11,7 +10,6 @@ categories:
 slug: chemical-kinetics
 sidebar_position: 9
 ---
-
 # Chemical Kinetics
 
 Kinetics is the study of reaction rates and the factors that influence them. Thermodynamics tells us whether a reaction is feasible; kinetics tells us whether it occurs at an observable rate.

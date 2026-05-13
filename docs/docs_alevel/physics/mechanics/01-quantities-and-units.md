@@ -1,7 +1,6 @@
 ---
 title: Quantities and Units
-description:
-  "A-Level Physics notes on Quantities and Units: 1. Physical Quantities and the SI System; The Seven SI Base Units; Derived Units; 2. Dimensional Analysis."
+description: "A-Level Physics notes on Quantities and Units: 1. Physical Quantities and the SI System; The Seven SI Base Units; Derived Units; 2. Dimensional Analysis."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: quantities-and-units
 ---
-
 ## Quantities and Units
 
 :::info

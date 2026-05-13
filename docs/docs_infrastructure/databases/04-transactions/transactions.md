@@ -1,9 +1,7 @@
 ---
 id: transactions
 title: Transactions and Concurrency
-description:
-  Transactions and Concurrency — ACID Properties; Atomicity; Consistency;
-  Isolation with worked examples and exam-style questions.
+description: "Transactions and Concurrency — ACID Properties; Atomicity; Consistency; Isolation with worked examples and exam-style questions."
 slug: transactions
 sidebar_position: 1
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## ACID Properties
 
 ACID is the set of guarantees that a relational database transaction provides. Understanding what

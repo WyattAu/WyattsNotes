@@ -1,7 +1,6 @@
 ---
 title: Heap
-description:
-  "C++ type system: Heap — 1. Virtual Memory Architecture; Pages; State of a Page; 2. The Linux/Unix Mechanisms (`brk` & `mmap`)."
+description: "C++ type system: Heap — 1. Virtual Memory Architecture; Pages; State of a Page; 2. The Linux/Unix Mechanisms (`brk` & `mmap`)."
 date: 2025-12-13T05:06:47.303Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: heap
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 When a C++ program executes `new int` or `std::vector::push_back`, it requests "Dynamic Storage

@@ -1,7 +1,6 @@
 ---
 title: Economics
-description:
-  "A-Level Economics notes on Economics: Board Coverage; Course Structure; Assessment; How to Use These Notes with worked examples and exam-style questions."
+description: "A-Level Economics notes on Economics: Board Coverage; Course Structure; Assessment; How to Use These Notes with worked examples and exam-style questions."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -11,7 +10,6 @@ categories:
 slug: economics
 sidebar_position: 5
 ---
-
 ## A Level Economics — Course Overview
 
 A Level Economics is the study of how societies allocate scarce resources. It develops a rigorous

@@ -1,12 +1,9 @@
 ---
 id: advanced-patterns
 title: Advanced Struct and Enum Patterns
-description:
-  Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through
-  Wrapping; Memory Layout; `impl Deref` for Transparent Access.
+description: "Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through Wrapping; Memory Layout; `impl Deref` for Transparent Access."
 slug: advanced-patterns
 ---
-
 ## Newtype Pattern
 
 The newtype pattern wraps an existing type in a tuple struct, creating a distinct type with the same

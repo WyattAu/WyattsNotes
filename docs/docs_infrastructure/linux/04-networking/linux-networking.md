@@ -1,13 +1,10 @@
 ---
 id: linux-networking
 title: Linux Networking
-description:
-  Linux Networking — Network Interface Management (iproute2); Interface
-  Configuration; List all network interfaces; Bring interface up/down.
+description: "Linux Networking — Network Interface Management (iproute2); Interface Configuration; List all network interfaces; Bring interface up/down."
 slug: linux-networking
 sidebar_position: 1
 ---
-
 ## Network Interface Management (iproute2)
 
 The `iproute2` suite has replaced the legacy `net-tools` (`ifconfig`, `route`, `netstat`) as the

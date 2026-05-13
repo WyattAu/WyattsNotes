@@ -1,7 +1,6 @@
 ---
 title: Sorting Algorithms
-description:
-  "A-Level Computer Science notes on Sorting Algorithms: 1. Introduction; 2. Bubble Sort; Algorithm; Correctness Proof with worked examples and exam-style quest."
+description: "A-Level Computer Science notes on Sorting Algorithms: 1. Introduction; 2. Bubble Sort; Algorithm; Correctness Proof with worked examples and exam-style quest."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: sorting-algorithms
 ---
-
 ## 1. Introduction
 
 **The Sorting Problem:** Given an array $A[0..n-1]$, rearrange the elements into non-decreasing

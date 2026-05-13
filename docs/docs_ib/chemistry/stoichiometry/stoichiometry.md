@@ -1,10 +1,9 @@
 ---
 title: Stoichiometry
-description: IB Chemistry — moles, molar mass, empirical formulas, gas laws, and solution
+description: "Rigorous IB chemistry notes covering Stoichiometry. Includes definitions, derivations, worked examples, and exam-style problems."
   chemistry.
 slug: stoichiometry
 ---
-
 
 ## The Mole Concept
 

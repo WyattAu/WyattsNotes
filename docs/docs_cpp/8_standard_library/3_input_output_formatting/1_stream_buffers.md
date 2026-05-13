@@ -1,7 +1,6 @@
 ---
 title: Stream Buffers and Locale Facets
-description:
-  "C++: Stream Buffers and Locale Facets — The Stream Buffer Abstraction; Standard Stream Buffer Specializations; Locale Facets; Custom Stream Buffer."
+description: "C++: Stream Buffers and Locale Facets — The Stream Buffer Abstraction; Standard Stream Buffer Specializations; Locale Facets; Custom Stream Buffer."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: stream-buffers-and-locale-facets
 ---
-
 ## Stream Buffers and Locale Facets
 
 The C++ I/O system is built on a layered architecture. High-level stream classes (`std::istream`,

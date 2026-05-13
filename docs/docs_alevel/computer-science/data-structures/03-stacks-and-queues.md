@@ -1,7 +1,6 @@
 ---
 title: Stacks and Queues
-description:
-  "A-Level Computer Science notes on Stacks and Queues: 1. Stacks (LIFO); Definition; Abstract Data Type; Array-Based Implementation."
+description: "A-Level Computer Science notes on Stacks and Queues: 1. Stacks (LIFO); Definition; Abstract Data Type; Array-Based Implementation."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -10,7 +9,6 @@ categories:
   - ComputerScience
 slug: stacks-and-queues
 ---
-
 ## 1. Stacks (LIFO)
 
 ### Definition

@@ -1,13 +1,10 @@
 ---
 id: package-management
 title: Package Management
-description:
-  Package Management — Package Formats; Package Anatomy; Inspect a DEB package
-  without installing; Inspect an RPM package without installing.
+description: "Package Management — Package Formats; Package Anatomy; Inspect a DEB package without installing; Inspect an RPM package without installing."
 slug: package-management
 sidebar_position: 1
 ---
-
 ## Package Formats
 
 A Linux package is an archive containing compiled software, configuration files, metadata (version,

@@ -1,9 +1,8 @@
 ---
 title: Plant Biology
-description: "IB Biology — plant structure, transport in plants, reproduction, growth, phototropism, and phytochromes."
+description: "Rigorous IB biology notes covering Plant Biology. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: plant-biology
 ---
-
 ## 1. Plant Structure and Tissues
 
 ### Meristems

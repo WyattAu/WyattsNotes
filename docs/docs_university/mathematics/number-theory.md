@@ -1,7 +1,6 @@
 ---
 title: Number Theory
-description:
-  "University-level notes on Number Theory: 1. Divisibility; 1.1 The Division Algorithm; 1.2 Divisibility; 1.3 Worked Examples of the Division Algorithm."
+description: "University-level notes on Number Theory: 1. Divisibility; 1.1 The Division Algorithm; 1.2 Divisibility; 1.3 Worked Examples of the Division Algorithm."
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -10,7 +9,6 @@ categories:
   - Mathematics
 slug: number-theory
 ---
-
 ## 1. Divisibility
 
 ### 1.1 The Division Algorithm

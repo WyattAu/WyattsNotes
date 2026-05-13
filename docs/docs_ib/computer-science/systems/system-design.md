@@ -3,9 +3,8 @@ title: System Design
 tags:
 - CS
 slug: system-design
-description: Comprehensive guide to system design for the International Baccalaureate.
+description: "Rigorous IB computer science notes covering System Design. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Design
 

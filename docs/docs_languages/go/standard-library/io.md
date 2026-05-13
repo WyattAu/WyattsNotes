@@ -1,8 +1,6 @@
 ---
 title: Standard Library I/O
-description:
-  Standard Library I/O — The io Package; io.Reader Contract; io.Copy;
-  io.TeeReader with worked examples and exam-style questions.
+description: "Standard Library I/O — The io Package; io.Reader Contract; io.Copy; io.TeeReader with worked examples and exam-style questions."
 slug: io
 date: 2026-04-18
 tags:
@@ -10,7 +8,6 @@ tags:
 categories:
   - Go
 ---
-
 ## The io Package
 
 The `io` package defines the fundamental I/O interfaces that permeate Go's standard library:

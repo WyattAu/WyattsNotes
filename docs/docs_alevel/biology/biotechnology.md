@@ -1,7 +1,6 @@
 ---
 title: Biotechnology
-description:
-  "A-Level Biology notes on Biotechnology: recombinant DNA technology, PCR, gel electrophoresis, DNA sequencing, genetic engineering, gene therapy, stem cells, CRISPR-Cas9, bioinformatics."
+description: "A-Level Biology notes on Biotechnology: recombinant DNA technology, PCR, gel electrophoresis, DNA sequencing, genetic engineering, gene therapy, stem cells, CRI"
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -11,7 +10,6 @@ categories:
 slug: biotechnology
 sidebar_position: 13
 ---
-
 ## Biotechnology
 
 :::info

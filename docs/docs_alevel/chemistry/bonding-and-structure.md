@@ -1,7 +1,6 @@
 ---
 title: Bonding & Structure
-description:
-  "A-Level Chemistry notes on Bonding & Structure: Ionic Bonding; Formation; Structure of Ionic Compounds; Properties of Ionic Compounds."
+description: "A-Level Chemistry notes on Bonding & Structure: Ionic Bonding; Formation; Structure of Ionic Compounds; Properties of Ionic Compounds."
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -11,7 +10,6 @@ categories:
 slug: bonding-and-structure
 sidebar_position: 7
 ---
-
 # Bonding & Structure
 
 Chemical bonding is the consequence of electrostatic interactions between nuclei and electrons that result in a lower-energy arrangement than the separated atoms. This module classifies bonds by the mechanism of electron redistribution and examines the resulting structures and their physical properties.

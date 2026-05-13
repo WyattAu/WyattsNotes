@@ -1,7 +1,6 @@
 ---
 title: Exponentials and Logarithms
-description:
-  "A-Level Mathematics notes on Exponentials and Logarithms: Board Coverage; 1. The Number $e$; 1.1 Definition of $e$; 1.2 Alternative characterisations."
+description: "A-Level Mathematics notes on Exponentials and Logarithms: Board Coverage; 1. The Number $e$; 1.1 Definition of $e$; 1.2 Alternative characterisations."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: exponentials-and-logarithms
 ---
-
 ## Board Coverage
 
 | Board      | Paper      | Notes                                             |

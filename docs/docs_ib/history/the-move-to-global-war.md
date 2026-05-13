@@ -4,9 +4,8 @@ tags:
 - IB
 - History
 slug: the-move-to-global-war
-description: Comprehensive guide to the move to global war for the International Baccalaureate.
+description: "Rigorous IB history notes covering The Move to Global War. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 # The Move to Global War
 

@@ -1,7 +1,6 @@
 ---
 title: Nuclear Energy
-description:
-  "A-Level Physics notes on Nuclear Energy: 1. Mass Defect and Binding Energy; Mass Defect; Einstein's Mass-Energy Equation; Derivation of Mass-Energy Equivalence."
+description: "A-Level Physics notes on Nuclear Energy: 1. Mass Defect and Binding Energy; Mass Defect; Einstein's Mass-Energy Equation; Derivation of Mass-Energy Equivalence."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: nuclear-energy
 ---
-
 ## Nuclear Energy
 
 :::info

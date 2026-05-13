@@ -1,9 +1,8 @@
 ---
 title: Geographic Skills
-description: Map skills, data collection, presentation, statistical techniques, GIS, and fieldwork for IB Geography.
+description: "Rigorous IB geography notes covering Geographic Skills. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: geographic-skills
 ---
-
 # Geographic Skills
 
 ## Map Skills

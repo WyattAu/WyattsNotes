@@ -1,9 +1,6 @@
 ---
 title: AP Biology Review
-description:
-  "AP Biology Review -- Comprehensive overview of all major topics: chemistry of life,
-  cell structure and function, cellular energetics, cell communication and cell cycle,
-  heredity, gene expression and regulation, natural selection and evolution, and ecology."
+description: "AP Biology Review -- Comprehensive overview of all major topics: chemistry of life, cell structure and function, cellular energetics, cell communication and cel"
 date: 2026-05-05
 tags:
   - Biology
@@ -12,7 +9,6 @@ categories:
   - Biology
 slug: biology
 ---
-
 ## Chemistry of Life (CED Unit 1)
 
 ### Water

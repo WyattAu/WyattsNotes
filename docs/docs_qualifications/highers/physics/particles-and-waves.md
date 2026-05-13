@@ -1,9 +1,6 @@
 ---
 title: Particles and Waves
-description:
-  Particles and Waves — Quantum Physics; Wave-Particle Duality; Why the
-  Photoelectric Effect Disproves the Wave Theory of Light; De Broglie
-  Wavelength.
+description: "Particles and Waves — Quantum Physics; Wave-Particle Duality; Why the Photoelectric Effect Disproves the Wave Theory of Light; De Broglie Wavelength."
 date: 2026-04-14
 tags:
   - Physics
@@ -12,7 +9,6 @@ categories:
   - Physics
 slug: particles-and-waves
 ---
-
 # Particles and Waves
 
 :::info

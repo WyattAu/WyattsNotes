@@ -1,8 +1,6 @@
 ---
 title: Collections Deep Dive
-description:
-  Collections Deep Dive — Iterable Interface; Core Transformation Methods;
-  map(); where() with worked examples and exam-style questions.
+description: "Collections Deep Dive — Iterable Interface; Core Transformation Methods; map(); where() with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: collections-deep-dive
 ---
-
 ## Iterable Interface
 
 `Iterable<T>` is the root of Dart's collection hierarchy. Both `List<T>` and `Set<T>` implement it,

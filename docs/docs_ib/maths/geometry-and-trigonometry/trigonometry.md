@@ -3,9 +3,8 @@ title: Trigonometry
 tags:
 - maths
 slug: trigonometry
-description: Comprehensive guide to trigonometry for the International Baccalaureate.
+description: "Rigorous IB mathematics notes covering Trigonometry. Includes definitions, derivations, worked examples, and exam-style problems."
 ---
-
 
 ## Radian Measure
 

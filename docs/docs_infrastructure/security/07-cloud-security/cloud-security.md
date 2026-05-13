@@ -1,9 +1,7 @@
 ---
 id: cloud-security
 title: Cloud Security
-description:
-  Cloud Security — Shared Responsibility Model; IaaS (Infrastructure as a
-  Service); PaaS (Platform as a Service); SaaS (Software as a Service).
+description: "Cloud Security — Shared Responsibility Model; IaaS (Infrastructure as a Service); PaaS (Platform as a Service); SaaS (Software as a Service)."
 slug: cloud-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -12,7 +10,6 @@ tags:
 categories:
   - Security
 ---
-
 ## Shared Responsibility Model
 
 Cloud security is governed by a shared responsibility model. The division of responsibility between

@@ -1,7 +1,6 @@
 ---
 title: Aggregate Initialization
-description:
-  "C++: Aggregate Initialization — What Qualifies as an Aggregate; C++11/14: The Original Definition [N4950 §11.6.1]; C++17: Relaxed Aggregates [N4950 §11.6.1]."
+description: "C++: Aggregate Initialization — What Qualifies as an Aggregate; C++11/14: The Original Definition [N4950 §11.6.1]; C++17: Relaxed Aggregates [N4950 §11.6.1]."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: aggregate-initialization
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Aggregate initialization is the mechanism by which plain data structures (structs, arrays, unions)

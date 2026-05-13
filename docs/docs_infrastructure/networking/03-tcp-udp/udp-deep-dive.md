@@ -1,16 +1,13 @@
 ---
 id: udp-deep-dive
 title: UDP Deep Dive
-description:
-  UDP Deep Dive — UDP Header Structure; Source Port Considerations; Maximum
-  Datagram Size; View current UDP buffer sizes. and examination.
+description: "UDP Deep Dive — UDP Header Structure; Source Port Considerations; Maximum Datagram Size; View current UDP buffer sizes. and examination."
 slug: udp-deep-dive
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 UDP (User Datagram Protocol, RFC 768) is the simplest transport-layer protocol in the TCP/IP suite:

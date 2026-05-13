@@ -1,14 +1,12 @@
 ---
 title: Streams API
-description:
-  "Streams API — Stream vs Collection; Design Decision: Why Streams Are Lazy; Stream Pipeline Architecture; Creating Streams."
+description: "Streams API — Stream vs Collection; Design Decision: Why Streams Are Lazy; Stream Pipeline Architecture; Creating Streams."
 date: 2025-06-05T14:00:00.000Z
 tags: ["java"]
 categories: ["java"]
 slug: streams-api
 sidebar_position: 1
 ---
-
 ## Stream vs Collection
 
 A `Collection` is an in-memory data structure that holds elements. A `Stream` is a sequence of elements supporting sequential and parallel aggregate operations computed on demand from a source. The distinction is fundamental and understanding it prevents entire categories of bugs.

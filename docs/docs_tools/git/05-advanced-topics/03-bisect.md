@@ -1,8 +1,6 @@
 ---
 title: Bisect
-description:
-  Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark
-  the current commit as bad (bug is present).
+description: "Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark the current commit as bad (bug is present)."
 date: 2025-06-03T10:00:00.000Z
 tags:
   - git
@@ -13,7 +11,6 @@ categories:
   - CS
 slug: bisect
 ---
-
 ## Binary Search for Bugs
 
 `git bisect` uses **binary search** to find the specific commit that introduced a bug. Given a known-good commit and a known-bad commit, it checks out commits between them, narrowing the range by half each iteration until it identifies the exact culprit.

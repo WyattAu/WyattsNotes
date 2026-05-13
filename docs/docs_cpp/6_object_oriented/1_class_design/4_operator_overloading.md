@@ -1,7 +1,6 @@
 ---
 title: Operator Overloading
-description:
-  "C++: Operator Overloading — Complete List of Overloadable Operators; Non-Overloadable Operators; 4.2 Member vs Non-Member Overloads."
+description: "C++: Operator Overloading — Complete List of Overloadable Operators; Non-Overloadable Operators; 4.2 Member vs Non-Member Overloads."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: operator-overloading
 ---
-
 # Operator Overloading: Arithmetic, Subscript, and Function Call
 
 C++ allows user-defined types to overload most operators, enabling natural syntax for custom types.

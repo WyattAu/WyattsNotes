@@ -1,13 +1,9 @@
 ---
 id: dynamic-programming
 title: Dynamic Programming
-description:
-  Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up
-  (Tabulation); 1D DP; Climbing Stairs with worked examples and exam-style
-  questions.
+description: "Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up (Tabulation); 1D DP; Climbing Stairs with worked examples and exam-style questions."
 slug: dynamic-programming
 ---
-
 ## DP Fundamentals
 
 Dynamic programming (DP) solves problems by breaking them into overlapping subproblems, solving each

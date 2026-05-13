@@ -1,8 +1,6 @@
 ---
 title: Installation
-description:
-  Installation — IDE choice; Standalone Dart SDK; macOS; Linux (Debian/Ubuntu)
-  with worked examples and exam-style questions.
+description: "Installation — IDE choice; Standalone Dart SDK; macOS; Linux (Debian/Ubuntu) with worked examples and exam-style questions."
 date: 2025-07-12T15:51:40.399Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: installation
 ---
-
 ## IDE choice
 
 My recommended IDE for Dart is modifying the text editor VSCode with Dart and Flutter extensions:

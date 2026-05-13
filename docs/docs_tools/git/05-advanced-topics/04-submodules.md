@@ -1,8 +1,6 @@
 ---
 title: Submodules
-description:
-  Submodules — `.gitmodules` File; Tree Entry; Basic Operations; Adding a
-  Submodule with worked examples and exam-style questions.
+description: "Submodules — `.gitmodules` File; Tree Entry; Basic Operations; Adding a Submodule with worked examples and exam-style questions."
 date: 2025-06-03T11:00:00.000Z
 tags:
   - git
@@ -12,7 +10,6 @@ categories:
   - CS
 slug: submodules
 ---
-
 ## What Are Submodules
 
 Git submodules allow you to embed one Git repository inside another. The parent repository records a **reference** to a specific commit of the submodule repository — not the files themselves. This enables you to:

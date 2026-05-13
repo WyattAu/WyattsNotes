@@ -1,7 +1,6 @@
 ---
 title: Fiscal Policy
-description:
-  "A-Level Economics notes on Fiscal Policy: 1.1 Definition; 1.2 The Government Budget; 2. Government Spending; 2.1 Types of Government Spending."
+description: "A-Level Economics notes on Fiscal Policy: 1.1 Definition; 1.2 The Government Budget; 2. Government Spending; 2.1 Types of Government Spending."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -11,7 +10,6 @@ categories:
 slug: fiscal-policy
 sidebar_position: 4
 ---
-
 ## 1. Introduction to Fiscal Policy
 
 ### 1.1 Definition

@@ -1,8 +1,6 @@
 ---
 title: Bonding
-description:
-  Bonding — Coordinate (Dative) Covalent Bond (HL); Electronegativity and Bond
-  Polarity (OL/HL); Pauling Scale; Dipole Moments (HL).
+description: "Bonding — Coordinate (Dative) Covalent Bond (HL); Electronegativity and Bond Polarity (OL/HL); Pauling Scale; Dipole Moments (HL)."
 date: 2026-04-14
 tags:
   - Chemistry
@@ -11,7 +9,6 @@ categories:
   - Chemistry
 slug: bonding
 ---
-
 # Bonding
 
 Chemical bonding explains how atoms combine to form compounds. This topic covers ionic, covalent,

@@ -1,7 +1,6 @@
 ---
 title: Superposition and Interference
-description:
-  "A-Level Physics notes on Superposition and Interference: 1. The Principle of Superposition; Constructive and Destructive Interference."
+description: "A-Level Physics notes on Superposition and Interference: 1. The Principle of Superposition; Constructive and Destructive Interference."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -10,7 +9,6 @@ categories:
   - Physics
 slug: superposition-and-interference
 ---
-
 ## Superposition and Interference
 
 :::info

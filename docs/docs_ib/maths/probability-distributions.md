@@ -4,10 +4,9 @@ tags:
 - IB
 - Maths
 slug: probability-distributions
-description: Comprehensive guide to probability distributions for the International
+description: "Rigorous IB mathematics notes covering Probability Distributions. Includes definitions, derivations, worked examples, and exam-style problems."
   Baccalaureate.
 ---
-
 
 ## Discrete Random Variables
 

@@ -1,14 +1,11 @@
 ---
 title: Classes
-description:
-  Classes — Class Declarations; Fields, Constructors, Methods; Access Modifiers;
-  `readonly` Modifier with worked examples and exam-style questions.
+description: "Classes — Class Declarations; Fields, Constructors, Methods; Access Modifiers; `readonly` Modifier with worked examples and exam-style questions."
 slug: typescript-classes
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
 categories: [TypeScript]
 ---
-
 ## Class Declarations
 
 ### Fields, Constructors, Methods

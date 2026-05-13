@@ -1,9 +1,8 @@
 ---
 title: Redox Reactions (Advanced)
-description: "IB Chemistry — electrochemical cells, standard electrode potentials, electrolysis, and quantitative electrochemistry."
+description: "Rigorous IB chemistry notes covering Redox Reactions (Advanced). Includes definitions, derivations, worked examples, and exam-style problems."
 slug: redox-advanced
 ---
-
 ## 1. Electrochemical Cells
 
 ### Galvanic (Voltaic) Cells

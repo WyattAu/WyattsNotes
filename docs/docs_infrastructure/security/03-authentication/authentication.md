@@ -1,13 +1,10 @@
 ---
 id: authentication
 title: Authentication and Authorization
-description:
-  Authentication and Authorization — Authentication vs Authorization; Password
-  Storage; How Not to Store Passwords; How to Store Passwords.
+description: "Authentication and Authorization — Authentication vs Authorization; Password Storage; How Not to Store Passwords; How to Store Passwords."
 slug: authentication
 sidebar_position: 4
 ---
-
 ## Authentication vs Authorization
 
 **Authentication (AuthN)** answers "who are you?" — it verifies identity.

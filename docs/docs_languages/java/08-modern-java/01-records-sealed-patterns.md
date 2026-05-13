@@ -1,14 +1,11 @@
 ---
 title: Records, Sealed Classes, and Pattern Matching
-description:
-  Records, Sealed Classes, and Pattern Matching — Records (JEP 395, Java 16);
-  Syntax and Basic Usage; The Generated Methods; Compact Constructors.
+description: "Records, Sealed Classes, and Pattern Matching — Records (JEP 395, Java 16); Syntax and Basic Usage; The Generated Methods; Compact Constructors."
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
 slug: records-sealed-patterns
 ---
-
 ## Records (JEP 395, Java 16)
 
 A record is a transparent carrier for immutable data. The compiler generates the constructor, field

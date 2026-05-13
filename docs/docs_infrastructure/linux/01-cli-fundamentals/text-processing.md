@@ -1,13 +1,10 @@
 ---
 id: text-processing
 title: Text Processing
-description:
-  Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes
-  and Anchors; Quantifiers with worked examples and exam-style questions.
+description: "Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes and Anchors; Quantifiers with worked examples and exam-style questions."
 slug: text-processing
 sidebar_position: 3
 ---
-
 ## Regular Expressions
 
 Regular expressions are the backbone of text processing on Linux. Three major flavors exist, each

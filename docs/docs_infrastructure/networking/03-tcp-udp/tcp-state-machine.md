@@ -1,15 +1,13 @@
 ---
 id: tcp-state-machine
 title: TCP State Machine
-description:
-  "Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open: The Three-Way Handshake; State Trace: Client Side."
+description: "Networking: TCP State Machine — The 11 TCP States; State Diagram; Normal Open: The Three-Way Handshake; State Trace: Client Side."
 slug: tcp-state-machine
 tags:
   - Networking
 categories:
   - Networking
 ---
-
 ## Overview
 
 The TCP connection state machine (defined in RFC 793, with updates in RFC 1122) is one of the most

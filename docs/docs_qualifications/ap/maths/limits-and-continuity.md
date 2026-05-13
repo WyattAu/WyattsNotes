@@ -1,8 +1,6 @@
 ---
 title: Limits and Continuity
-description:
-  Limits and Continuity — Intuitive Notion of a Limit (CED Unit 1); Left-Hand
-  and Right-Hand Limits; Common Limits; The Squeeze Theorem.
+description: "Limits and Continuity — Intuitive Notion of a Limit (CED Unit 1); Left-Hand and Right-Hand Limits; Common Limits; The Squeeze Theorem."
 date: 2026-04-14
 tags:
   - Mathematics
@@ -11,7 +9,6 @@ categories:
   - Mathematics
 slug: limits-and-continuity
 ---
-
 ## Intuitive Notion of a Limit (CED Unit 1)
 
 The limit of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ approaches, regardless

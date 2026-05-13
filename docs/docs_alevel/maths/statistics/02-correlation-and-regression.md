@@ -1,7 +1,6 @@
 ---
 title: Correlation and Regression
-description:
-  "A-Level Mathematics notes on Correlation and Regression: Board Coverage; 1. Pearson's Product Moment Correlation Coefficient (PMCC); 1.1 Definition; 1.2 Prop."
+description: "A-Level Mathematics notes on Correlation and Regression: Board Coverage; 1. Pearson's Product Moment Correlation Coefficient (PMCC); 1.1 Definition; 1.2 Prop."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -10,7 +9,6 @@ categories:
   - Maths
 slug: correlation-and-regression
 ---
-
 ## Board Coverage
 
 | Board      | Paper   | Notes                               |

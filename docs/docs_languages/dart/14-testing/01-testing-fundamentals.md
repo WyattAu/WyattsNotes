@@ -1,8 +1,6 @@
 ---
 title: Testing Fundamentals
-description:
-  Testing Fundamentals — Why Test; Regression Prevention; Documentation; Design
-  Improvement with worked examples and exam-style questions.
+description: "Testing Fundamentals — Why Test; Regression Prevention; Documentation; Design Improvement with worked examples and exam-style questions."
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -10,7 +8,6 @@ categories:
   - Dart
 slug: testing-fundamentals
 ---
-
 ## Why Test
 
 Testing is not a phase that comes after development. It is a structural property of the codebase

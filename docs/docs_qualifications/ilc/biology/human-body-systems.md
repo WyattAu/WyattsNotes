@@ -1,8 +1,6 @@
 ---
 title: Human Body Systems
-description:
-  Human Body Systems — The Circulatory System; Structure (OL/HL); The Heart
-  (OL/HL); Blood Vessels (OL/HL) with worked examples and exam-style questions.
+description: "Human Body Systems — The Circulatory System; Structure (OL/HL); The Heart (OL/HL); Blood Vessels (OL/HL) with worked examples and exam-style questions."
 date: 2026-04-14
 tags:
   - Biology
@@ -11,7 +9,6 @@ categories:
   - Biology
 slug: human-body-systems
 ---
-
 # Human Body Systems
 
 This topic covers the major organ systems of the human body: the circulatory, respiratory,

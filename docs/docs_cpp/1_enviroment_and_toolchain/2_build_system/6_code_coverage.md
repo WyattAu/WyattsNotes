@@ -1,7 +1,6 @@
 ---
 title: Code Coverage
-description: >-
-  C++ environment and toolchain: Code Coverage — Instrumentation Mechanics; The Two Ecosystems; 1. GCC Workflow: gcov & lcov; Prerequisites.
+description: "C++ environment and toolchain: Code Coverage — Instrumentation Mechanics; The Two Ecosystems; 1. GCC Workflow: gcov & lcov; Prerequisites."
 date: 2025-12-11T01:23:02.734Z
 tags:
   - cpp
@@ -9,7 +8,6 @@ categories:
   - cpp
 slug: code-coverage
 ---
-
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Code coverage is a metric used to calculate the percentage of source code executed during the

@@ -1,12 +1,9 @@
 ---
 id: career
 title: Systems Engineering Career
-description:
-  Systems Engineering Career — Systems Engineering Career Paths; SRE (Site
-  Reliability Engineering); Platform Engineering; Infrastructure Engineering.
+description: "Systems Engineering Career — Systems Engineering Career Paths; SRE (Site Reliability Engineering); Platform Engineering; Infrastructure Engineering."
 slug: career
 ---
-
 ## Systems Engineering Career Paths
 
 ### SRE (Site Reliability Engineering)

@@ -1,7 +1,6 @@
 ---
 title: Collections
-description:
-  "Collections — Lists; Internal Representation: Dynamic Arrays; Growth Strategy and Amortized O(1) Append; Output pattern on 64-bit CPython:."
+description: "Collections — Lists; Internal Representation: Dynamic Arrays; Growth Strategy and Amortized O(1) Append; Output pattern on 64-bit CPython:."
 date: 2025-06-04T12:00:00.000Z
 tags:
   - Python
@@ -9,7 +8,6 @@ categories:
   - Python
 slug: collections
 ---
-
 ## Lists
 
 Python lists are **ordered, mutable sequences** of arbitrary objects. They are the most frequently

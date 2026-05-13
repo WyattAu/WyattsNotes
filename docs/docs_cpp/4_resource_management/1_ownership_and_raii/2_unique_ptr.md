@@ -1,7 +1,6 @@
 ---
 title: Unique Ownership (std::unique_ptr) and EBO
-description:
-  "C++: Unique Ownership (std::unique_ptr) and EBO — 2.1 Definition; 2.2 Construction: `std::make_unique`; 2.3 Move-Only Semantics; 2.4 Custom Deleters."
+description: "C++: Unique Ownership (std::unique_ptr) and EBO — 2.1 Definition; 2.2 Construction: `std::make_unique`; 2.3 Move-Only Semantics; 2.4 Custom Deleters."
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -9,7 +8,6 @@ categories:
   - Cpp
 slug: unique-ownership-and-ebo
 ---
-
 # Unique Ownership (std::unique_ptr) and EBO
 
 `std::unique_ptr` is the default smart pointer for exclusive ownership of heap-allocated objects. It

@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Databases
-description:
-  Database fundamentals — relational theory, SQL, indexing, transactions, NoSQL paradigms, and
-  database design.
+description: "Rigorous infrastructure and DevOps notes covering Introduction to Databases. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: intro
 sidebar_position: 1
 tags:
@@ -11,7 +9,6 @@ tags:
 categories:
   - Databases
 ---
-
 ## Why Databases Matter
 
 Every non-trivial system you build, operate, or debug depends on a database. Authentication tokens,

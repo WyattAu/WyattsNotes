@@ -1,12 +1,9 @@
 ---
 id: dp-patterns
 title: Dynamic Programming Patterns
-description:
-  Dynamic Programming Patterns — Pattern Classification; Decision Tree; Knapsack
-  Family; 0/1 Knapsack with worked examples and exam-style questions.
+description: "Dynamic Programming Patterns — Pattern Classification; Decision Tree; Knapsack Family; 0/1 Knapsack with worked examples and exam-style questions."
 slug: dp-patterns
 ---
-
 ## Pattern Classification
 
 Recognising which DP pattern applies to a problem is the key skill. This section provides a decision

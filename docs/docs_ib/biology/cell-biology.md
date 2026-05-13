@@ -1,9 +1,8 @@
 ---
 title: Cell Biology
-description: "IB Biology — cell theory, prokaryotic and eukaryotic cells, membrane structure, organelles, and cell division."
+description: "Rigorous IB biology notes covering Cell Biology. Includes definitions, derivations, worked examples, and exam-style problems."
 slug: cell-biology
 ---
-
 ## 1. Cell Theory
 
 ### Postulates of Cell Theory

@@ -1,8 +1,6 @@
 ---
 title: Annotations and Reflection
-description:
-  Annotations and Reflection — Built-in Annotations; @Override; @Deprecated;
-  @SuppressWarnings with worked examples and exam-style questions.
+description: "Annotations and Reflection — Built-in Annotations; @Override; @Deprecated; @SuppressWarnings with worked examples and exam-style questions."
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java
@@ -10,7 +8,6 @@ categories:
   - Java
 slug: annotations-reflection
 ---
-
 ## Built-in Annotations
 
 ### @Override
