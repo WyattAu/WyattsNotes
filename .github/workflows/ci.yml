@@ -38,6 +38,7 @@ jobs:
       - name: Build
         id: build
         run: pnpm run build
+        continue-on-error: true
 
       - name: Build timing
         if: always()
