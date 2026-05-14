@@ -62,7 +62,7 @@ $$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\mathrm{F}$$
 
 The surface temperature of the Sun is approximately $5778 \mathrm{ K}$. Express this in Celsius.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
@@ -226,7 +226,7 @@ $$T_f = 41.5^\circ\mathrm{C}$$
 An electric heater rated at $2000$ W heats $3.0$ kg of water from $25^\circ\mathrm{C}$ to
 $75^\circ\mathrm{C}$. How long does it take, assuming $80\%$ of the energy is absorbed by the water?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Energy required by the water:
@@ -374,7 +374,7 @@ $$Q_{\mathrm{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \math
 $200$ g of ice at $0^\circ\mathrm{C}$ is added to $400$ g of water at $50^\circ\mathrm{C}$ in an
 Insulated container. Find the final temperature and state of the mixture.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 First, check whether all the ice can melt. The heat available from the water cooling to
@@ -739,7 +739,7 @@ A gas occupies $5.0 \times 10^{-3}$ $\mathrm{m}^3$ at $2.0 \times 10^5$ Pa and $
 Compressed to $2.0 \times 10^{-3}$ $\mathrm{m}^3$ and the pressure increases to $5.0 \times 10^5$
 Pa. Find the new temperature.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
@@ -901,7 +901,7 @@ Where $M$ is the molar mass ($M = N_A m$).
 Find the rms speed of nitrogen molecules ($M = 28.0$ $\mathrm{g/mol} = 0.0280$ $\mathrm{kg/mol}$) at
 Room temperature ($300$ K).
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.0280}}$$
@@ -1142,7 +1142,7 @@ Do not add the U-values of individual layers directly.
 
 ## Practice Problems
 
-<details>
+</details>
 <summary>Question 1: Temperature Conversion</summary>
 
 The surface temperature of the Sun is approximately $5778$ K. Express this in Celsius and
@@ -1194,7 +1194,7 @@ $$T_f = 44.3^\circ\mathrm{C}$$
 $100$ g of steam at $100^\circ\mathrm{C}$ is passed into $500$ g of water at $20^\circ\mathrm{C}$.
 Find the final temperature and state.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Step 1:** Check if all steam condenses.
@@ -1248,7 +1248,7 @@ $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}
 A wall consists of a $10$ cm brick layer ($k = 0.6$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$) and a $5$
 Cm layer of insulation ($k = 0.04$ $\mathrm{W m}^{-1}\mathrm{ K}^{-1}$). Find the U-value.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$R_{\mathrm{brick}} = \frac{d_1}{k_1} = \frac{0.10}{0.6} = 0.1667 \mathrm{ m}^2\mathrm{ K/W}$$
@@ -1287,7 +1287,7 @@ Temperature rises to $80^\circ\mathrm{C}$ and the pressure valve releases gas to
 $1.5 \times 10^6$ Pa, what volume of gas (measured at $20^\circ\mathrm{C}$ and $1.01 \times 10^5$
 Pa) escapes?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The gas that remains in the cylinder at $80^\circ\mathrm{C}$ and $1.5 \times 10^6$ Pa occupies $10$
@@ -1333,7 +1333,7 @@ Consistent with the observation that lighter gases diffuse more rapidly (Graham'
 $1.0$ mol of an ideal monatomic gas at $300$ K expands isobarically from $10$ L to $20$ L. Find the
 Work done, the change in internal energy, and the heat supplied.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Work done:**
@@ -1400,7 +1400,7 @@ A body cools from $80^\circ\mathrm{C}$ to $60^\circ\mathrm{C}$ in $5$ minutes in
 $20^\circ\mathrm{C}$. How long will it take to cool from $60^\circ\mathrm{C}$ to
 $40^\circ\mathrm{C}$?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using Newton's law of cooling:
@@ -1456,7 +1456,7 @@ Part of the visible spectrum.
 Oxygen molecules at STP have a molecular diameter of $3.6 \times 10^{-10}$ m. Estimate the mean free
 Path.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The mean free path is:
@@ -1497,7 +1497,7 @@ A $500$ W heater is used to heat $0.5$ kg of ice at $-10^\circ\mathrm{C}$ in an 
 How long does it take to convert all the ice to steam at $100^\circ\mathrm{C}$? Assume $100\%$
 Efficiency.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Stage 1:** Heat ice from $-10^\circ\mathrm{C}$ to $0^\circ\mathrm{C}$:

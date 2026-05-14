@@ -252,7 +252,7 @@ New equilibrium: `65 - 0.1Q = 10 + 0.1Q``Q = 275`. The subsidy achieves the soci
 
 Government cost = `15 x 275 = 4,125`.
 
-<details>
+</details>
 <summary>Worked Example: Subsidy for Vaccination</summary>
 
 Private demand for flu shots: `P = 30 - 0.1Q` (MPB). `MEB = 8`. Supply: `P = 4 + 0.1Q`.
@@ -583,7 +583,7 @@ Price producers receive (net of tax): `P = 10 + 0.5(23.33) = 21.67`.
 (d) The Pigouvian tax = `MEC = 5` per unit. This shifts the supply curve up from `MPC` to `MSC`And
 The new equilibrium is at the social optimum.
 
-<details>
+</details>
 <summary>Question 2: Positive Externality Analysis</summary>
 
 The demand for flu vaccinations is `P = 40 - 0.2Q` (MPB). The marginal external benefit is
@@ -632,7 +632,7 @@ Cost (USD 120,000) is less than the total benefit (USD 200,000), the park should
 Resident can be taxed USD 120 (120,000 / 1,000), which is less than their valuation (USD 200), so
 Everyone is better off.
 
-<details>
+</details>
 <summary>Question 4: Information Asymmetry</summary>
 
 In a health insurance market, there are two types of customers: healthy (60% of the population) and
@@ -719,7 +719,7 @@ Is equal across all firms.
 Under the uniform mandate, Plant `B` is forced to abate beyond its cost-effective level, while Plant
 `A` abates less than it could cost-effectively. Trading corrects this misallocation.
 
-<details>
+</details>
 <summary>Question 6: Government Failure Evaluation</summary>
 
 "The government should ban all smoking because it is a demerit good." Evaluate this statement using
@@ -869,7 +869,7 @@ Lead to an efficient outcome regardless of the initial allocation of property ri
 
 ## Problem Set
 
-<details>
+</details>
 <summary>Problem 1: Negative Externality of Consumption</summary>
 
 Smoking in public places generates a negative externality. The private demand for cigarettes is
@@ -934,7 +934,7 @@ High-risk (30%, expected claims USD 5,000/year). The insurer cannot distinguish 
 (a) What single premium must the insurer charge to break even? (b) Will low-risk customers buy at
 this Premium? (c) What happens to the market over time?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Expected cost = `0.7 \times 1,000 + 0.3 \times 5,000 = 700 + 1,500 = 2,200`. Premium must be at
@@ -990,7 +990,7 @@ total Abatement of 24 units.
 (a) If each factory must abate 12 units, what is the total cost? (b) If permits are tradeable, find
 the Cost-minimising allocation. (c) How much does trading save?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Cost of A: `30(12) + 3(144)/2 = 360 + 216 = 576`. Cost of B:
@@ -1057,7 +1057,7 @@ Nightclub could install soundproofing at a cost of USD 3,000 per year to elimina
 pay For soundproofing? What is the range of payment? (c) What conditions must hold for the Coase
 theorem to Apply? (d) Why might the Coase theorem fail in practice?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Install soundproofing. Cost (3,000) is less than damage avoided (8,000). Net social benefit =

@@ -88,7 +88,7 @@ Number line:
 - An **open circle** ($\circ$) indicates a strict inequality ($<$ or $>$).
 - A **closed circle** ($\bullet$) indicates an inclusive inequality ($\leq$ or $\geq$).
 
-<details>
+</details>
 <summary>Examples</summary>
 - Solve $3x - 7 > 5$:
 
@@ -268,7 +268,7 @@ This gives two separate linear inequalities, each solved independently.
 - If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{{'}R{}'}$).
 - $|x| \geq a$ and $|x| \leq a$ follow the same patterns with non-strict inequality signs.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Solve $|x - 3| < 5$:
 
@@ -376,7 +376,7 @@ Intersection: $(-\infty, 3)$.
 
 ---
 
-<details>
+</details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Solve the inequality $\dfrac{2x - 1}{3} \leq \dfrac{x + 2}{4} + 1$.
 ### Details
@@ -408,7 +408,7 @@ Real numbers.
 Solution: $\mathbb{{'}R{}'}$.
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
-<details>
+</details>
 <summary>Answer</summary>
 From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
 
@@ -434,7 +434,7 @@ $$
 Solution: $\left(-\dfrac{2}{3}, 4\right)$.
 
 5. **Question:** Solve $|2x + 3| \geq x^2 + 2$.
-<details>
+</details>
 <summary>Answer</summary>
 This inequality combines absolute value and quadratic expressions. Consider two cases.
 
@@ -486,7 +486,7 @@ Since $a = 1 > 0$The parabola opens upward. The expression is positive outside t
 Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
 7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And $x > 0$.
-<details>
+</details>
 <summary>Answer</summary>
 From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
 
@@ -530,7 +530,7 @@ Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
 The ball is above $17$ m during the interval $(1, 3)$ seconds.
 
 9. **Question:** Solve $\dfrac{x^2 - 4}{x - 1} \geq 0$.
-<details>
+</details>
 <summary>Answer</summary>
 First note that $x \neq 1$ (the denominator cannot be zero).
 

@@ -64,7 +64,7 @@ $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
 A light wave has a frequency of $5.0 \times 10^{14} \mathrm{ Hz}$. Find its wavelength in air.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{5.0 \times 10^{14}} = 6.0 \times 10^{-7} \mathrm{ m} = 600 \mathrm{ nm}$$
@@ -165,7 +165,7 @@ $$\mathrm{Path difference} = \left(n + \frac{1}{2}\right)\lambda \quad (n = 0, 1
 Two coherent sources are $0.5 \mathrm{ mm}$ apart and produce an interference pattern on a screen
 $1.2 \mathrm{ m}$ away. The fringe spacing is $1.2 \mathrm{ mm}$. Find the wavelength of the light.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using the double-slit formula:
@@ -220,7 +220,7 @@ For a string of length $L$ fixed at both ends:
 A string of length $0.8 \mathrm{ m}$ has a fundamental frequency of $220 \mathrm{ Hz}$. Find the
 Wave speed and the frequency of the third harmonic.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \mathrm{ m/s}$$
@@ -378,7 +378,7 @@ Where $h_i$ is the image height and $h_o$ is the object height.
 An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $20 \mathrm{ cm}$. Find the
 Image position and magnification.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-30} = \frac{1}{20}$$
@@ -456,7 +456,7 @@ Unpolarised light of intensity $200 \mathrm{ W/m}^2$ passes through two Polaroid
 Filter's transmission axis is at $60^\circ$ to the first. Find the intensity after the second
 Filter.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 After the first filter (intensity halved): $I_1 = 100 \mathrm{ W/m}^2$
@@ -506,7 +506,7 @@ $$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \
 **Question 2:** A concave lens has a focal length of $15 \mathrm{ cm}$. An object is placed
 $25 \mathrm{ cm}$ from the lens. Find the image position.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} - \frac{1}{-25} = \frac{1}{-15}$$
@@ -531,7 +531,7 @@ $$n = \frac{1}{\sin 42^\circ} = \frac{1}{0.669} = 1.49$$
 **Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid
 Filter. What is the transmitted intensity?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The first Polaroid reduces the intensity by half: $I = 150 \mathrm{ W/m}^2$.
@@ -844,7 +844,7 @@ Stations can triangulate the exact location.
 A water wave has a wavelength of $3.0 \mathrm{ m}$ and a frequency of $0.25 \mathrm{ Hz}$. Find the
 Wave speed.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$v = f\lambda = 0.25 \times 3.0 = 0.75 \mathrm{ m/s}$$
@@ -874,7 +874,7 @@ _If you get this wrong, revise: Double-slit fringe spacing formula $y = \lambda 
 Light travels from air into a glass block at an angle of incidence of $50^\circ$. If the refractive
 Index of the glass is $1.52$Find the angle of refraction.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
@@ -913,7 +913,7 @@ _If you get this wrong, revise: Stationary waves on a string and the harmonic se
 
 A sound has an intensity of $10^{-6} \mathrm{ W/m}^2$. Find the loudness level in dB.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) = 10 \times 6 = 60 \mathrm{ dB}$$
@@ -955,7 +955,7 @@ _If you get this wrong, revise: Thin lens formula for convex lens when object is
 An observer moves towards a stationary sound source emitting $400 \mathrm{ Hz}$ at
 $20 \mathrm{ m/s}$. Speed of sound is $340 \mathrm{ m/s}$. Find the observed frequency.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$f' = f\left(\frac{v + v_o}{v}\right) = 400 \times \frac{340 + 20}{340} = 400 \times \frac{360}{340} = 400 \times 1.059 = 423.5 \mathrm{ Hz}$$
@@ -990,7 +990,7 @@ _If you get this wrong, revise: EM spectrum and the wave equation $c = f\lambda$
 A closed pipe of length $0.75 \mathrm{ m}$ supports standing waves. The speed of sound is
 $340 \mathrm{ m/s}$. Find the frequencies of the first two harmonics.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 1st harmonic (fundamental):
@@ -1031,7 +1031,7 @@ An optical fibre has a core refractive index of $1.55$ and cladding refractive i
 the Maximum angle (from the fibre axis) at which light can enter and still undergo total internal
 Reflection.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Critical angle:
@@ -1071,7 +1071,7 @@ Round trip._
 At a distance of $10 \mathrm{ m}$ from a sound source, the intensity is
 $8.0 \times 10^{-5} \mathrm{ W/m}^2$. What is the intensity at $40 \mathrm{ m}$?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{I_2}{I_1} = \left(\frac{r_1}{r_2}\right)^2 = \left(\frac{10}{40}\right)^2 = \frac{1}{16}$$
@@ -1108,7 +1108,7 @@ Direction of bending._
 P-waves are detected at a seismograph but S-waves are not detected on the opposite side of the
 Earth. What does this tell us about the Earth's interior?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 S-waves are transverse waves that cannot travel through liquids. The absence of S-waves on the
@@ -1598,7 +1598,7 @@ $$a = \frac{\lambda}{\sin\theta} = \frac{620 \times 10^{-9}}{\sin 3.0^\circ} = \
 A prism has apex angle $60^\circ$ and refractive index $1.52$ for sodium light
 ($\lambda = 589 \mathrm{ nm}$). Calculate the angle of minimum deviation.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 At minimum deviation, the ray passes symmetrically through the prism:

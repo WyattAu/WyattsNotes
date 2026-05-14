@@ -147,7 +147,7 @@ In the reaction
 $\mathrm{HNO_2} + \mathrm{H_2O} \rightleftharpoons \mathrm{NO_2^-} + \mathrm{H_3O^+}$Identify the
 two conjugate acid-base pairs.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $\mathrm{HNO_2}$ donates a proton to become $\mathrm{NO_2^-}$:
@@ -792,7 +792,7 @@ $$4\mathrm{Fe}^{2+} + 4\mathrm{OH}^- + \mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} \t
 Calculate the pH of a buffer containing $0.20 \mathrm{ mol/dm^3}$ $\mathrm{CH_3COOH}$
 ($K_a = 1.8 \times 10^{-5}$) and $0.10 \mathrm{ mol/dm^3}$ $\mathrm{CH_3COONa}$.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\mathrm{p}K_a = -\log_{10}(1.8 \times 10^{-5}) = 4.74$$
@@ -826,7 +826,7 @@ due to $\mathrm{OH^-$ accumulation.
 
 Describe how to prepare pure, dry crystals of zinc sulphate.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $\mathrm{ZnSO_4}$ is a soluble salt. Zinc is a reactive metal (above hydrogen), so the **acid +
@@ -912,7 +912,7 @@ $$\mathrm{pH} = -\log_{10}(0.0050) = 2.30$$
 
 _If you get this wrong, revise: Strong and Weak Acids_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$K_a = \frac{x^2}{0.050} = 1.8 \times 10^{-5}$$
@@ -941,7 +941,7 @@ the equivalence point.
 
 _If you get this wrong, revise: Acid-Base Titrations_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\mathrm{HCl} + \mathrm{NaOH} \to \mathrm{NaCl} + \mathrm{H_2O}$$
@@ -970,7 +970,7 @@ react with dilute acids to produce $\mathrm{H_2}$). The best method is **acid + 
 
 _If you get this wrong, revise: Oxidation Numbers_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $\mathrm{H_2O_2}$ is a peroxide. In peroxides, oxygen has oxidation number $-1$.
@@ -1007,7 +1007,7 @@ electrolysed using carbon electrodes. Write half-equations and the overall equat
 
 _If you get this wrong, revise: Electrolysis of Aqueous Solutions_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Cathode: $\mathrm{Na^+}$ is above $\mathrm{H^+}$So $\mathrm{H_2}$ is produced:
@@ -1040,7 +1040,7 @@ $E^\circ_{\mathrm{cell}}$ and write the overall equation. Is the reaction sponta
 
 _If you get this wrong, revise: Electrochemical Cells_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Nickel has the more positive $E^\circ$ (cathode, reduction).
@@ -1073,7 +1073,7 @@ whereas tin coating does not.
 
 _If you get this wrong, revise: Corrosion and Its Prevention_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Zinc (galvanising):** Zinc is more reactive than iron. When the coating is scratched, zinc acts as
@@ -1103,7 +1103,7 @@ passed through $\mathrm{AgNO_3}$ solution for 15.0 minutes?
 
 _If you get this wrong, revise: Faraday's Laws of Electrolysis_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$Q = 1.20 \times 15.0 \times 60 = 1080 \mathrm{ C}$$
@@ -1130,7 +1130,7 @@ $\mathrm{SO_4^{2-}}$ is a spectator ion.
 
 _If you get this wrong, revise: Strong and Weak Acids_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Strength** refers to the degree of ionisation. A strong acid (e.g., $\mathrm{HCl}$) is completely
@@ -1162,7 +1162,7 @@ identify the gas evolved.
 
 _If you get this wrong, revise: Salt Preparation_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\mathrm{Zn} + \mathrm{H_2SO_4} \to \mathrm{ZnSO_4} + \mathrm{H_2}$$
@@ -1193,7 +1193,7 @@ containing $\mathrm{CH_3COOH}$ and $\mathrm{CH_3COONa}$.
 
 _If you get this wrong, revise: Buffers_
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The added $\mathrm{OH^-$ reacts with the weak acid component:

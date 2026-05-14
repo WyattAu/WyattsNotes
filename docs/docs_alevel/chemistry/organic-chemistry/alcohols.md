@@ -455,7 +455,7 @@ Using acidified potassium dichromate(VI).
 - **2-Methylpropan-2-ol:** Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour
   change (solution remains orange). Tertiary alcohols are not oxidised.
 
-<details>
+</details>
 <summary>Problem 2</summary>
 
 Ethanol can be converted to bromoethane by three different methods. Write equations for each and
@@ -512,7 +512,7 @@ $$
 The tertiary carbocation can either lose a proton (elimination, major) or be attacked by another
 alcohol molecule (substitution, minor). At higher temperatures, elimination is favoured.
 
-<details>
+</details>
 <summary>Problem 4</summary>
 
 Design a synthesis of ethyl ethanoate from ethanol, using no other carbon-containing reagents. State
@@ -779,7 +779,7 @@ the role of the acid catalyst.
 - The acid catalyst is regenerated (1 mark for showing $\mathrm{H}^+$ on the product side).
 - Curly arrow mechanism (1 mark).
 
-<details>
+</details>
 <summary>Q3 (5 marks)</summary>
 
 A student prepares ethyl ethanoate from ethanoic acid and ethanol using concentrated
@@ -821,7 +821,7 @@ alcohol to a chloroalkane in organic synthesis.
 - Concentrated $\mathrm{HCl}$ gives an equilibrium (reversible reaction) that requires removal of
   water to drive to completion (1 mark).
 
-<details>
+</details>
 <summary>Q5 (5 marks)</summary>
 
 Propose a mechanism for the reaction of ethanol with ethanoyl chloride to form ethyl ethanoate.

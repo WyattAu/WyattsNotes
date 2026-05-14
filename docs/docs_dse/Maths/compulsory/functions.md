@@ -111,7 +111,7 @@ A necessary condition for a function to have an inverse is that it is one-to-one
 Original function is not injective on its given domain, one may restrict the domain to make it
 Injective.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Let $f(x) = 2x + 3$ and $g(x) = x^2$. Then:
  - $(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 3$
@@ -249,7 +249,7 @@ Equations of the form $a^{f(x)} = a^{g(x)}$ can be solved by equating exponents:
 For equations of the form $a^{f(x)} = b$Take logarithms of both sides. See [logarithms](logarithms)
 for the full treatment of logarithmic techniques.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Solve $4^{x} = 2^{x+3}$:
  - Rewrite: $(2^2)^x = 2^{x+3} \implies 2^{2x} = 2^{x+3}$
@@ -380,7 +380,7 @@ First, then the vertical scaling, then the vertical shift.
 Transformations operate on $f(x)$ **after** the function is evaluated. This is why the horizontal
 Shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right). :::
 
-<details>
+</details>
 <summary>Examples</summary>
 - Describe the transformation from $y = x^2$ to $y = 2(x - 3)^2 + 1$:
  - Starting from $y = x^2$:
@@ -525,7 +525,7 @@ To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$$\geq$$\leq$):
 Involving $x$The direction of the inequality flips if that expression is negative. Instead of
 Multiplying through, use a sign chart. :::
 
-<details>
+</details>
 <summary>Examples</summary>
 
 - Solve $x^2 - 3x - 4 \leq 0$:
@@ -645,7 +645,7 @@ Key observations:
 - If $k$ equals the maximum or minimum value, the corresponding intersection point is a **tangency**
   (double root).
 
-<details>
+</details>
 <summary>Examples</summary>
 
 - Find the number of solutions to $x^3 - 3x + 1 = 0$:
@@ -681,7 +681,7 @@ Key observations:
   But squaring $f(x) = g(x)$ can introduce extraneous solutions (e.g., $x = \sqrt{x}$ squares to
   $x^2 = x$Giving $x = 0$ or $x = 1$But $x = 1$ is extraneous).
 
-<details>
+</details>
 <summary>Rational function errors</summary>
 
 - **Cancelling factors blindly.** $\frac{x^2 - 4}{x - 2} = x + 2$ only for $x \neq 2$. The point
@@ -705,7 +705,7 @@ Key observations:
 
 ## Wrap-up Questions
 
-<details>
+</details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Let $f(x) = \dfrac{2x - 6}{x + 1}$ and $g(x) = x^2 - 4$. Find $(f \circ g)(x)$ and state its domain.
 ### Details
@@ -725,7 +725,7 @@ Key observations:
 
 3. **Question:** A quadratic function $f(x)$ has a maximum value of $7$ at $x = 2$And $f(0) = -5$.
 Find $f(x)$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Since the maximum is at $(2, 7)$ and the parabola opens downward, write in vertex form:
@@ -744,7 +744,7 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - Therefore $k < -1$ or $k > 4$.
 
 5. **Question:** Solve the equation $3^{2x} - 10 \cdot 3^x + 9 = 0$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Let $u = 3^x$ (note $u > 0$). The equation becomes $u^2 - 10u + 9 = 0$.
@@ -766,7 +766,7 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 
 7. **Question:** The graph of $y = f(x)$ passes through the points $(1, 4)$ and $(3, 10)$. State the
 Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - For a point $(a, b)$ on $y = f(x)$ (so $f(a) = b$), the corresponding point on $y = 2f(x - 1) + 3$
@@ -796,7 +796,7 @@ functions of each other, and state the domain and range of $f^{-1}$.
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$Find the range of $f$ when (a) the domain is
 $\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.

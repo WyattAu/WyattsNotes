@@ -517,7 +517,7 @@ Targeted fiscal measures than on discretionary macroeconomic policy.
 
 ## Practice Problems
 
-<details>
+</details>
 <summary>Question 1: Multiplier Calculations</summary>
 
 An economy has MPC = 0.75, MPT = 0.1, and MPM = 0.1.
@@ -563,7 +563,7 @@ Spending increase.
 
 Note: Full crowding out is a theoretical extreme. In practice, crowding out is partial.
 
-<details>
+</details>
 <summary>Question 3: Policy Mix</summary>
 
 An economy is experiencing high inflation (8%) and high unemployment (9%). The natural rate of
@@ -631,7 +631,7 @@ Budget surplus may not be the most appropriate fiscal stance in this context.
 - Land premium revenue is volatile and cyclical, making budget forecasting difficult.
 - Fiscal reserves provide a buffer but are finite.
 
-<details>
+</details>
 <summary>Question 5: Balanced Budget Multiplier</summary>
 
 The government increases both spending and taxes by USD 60 billion. MPC = 0.8. There are no imports
@@ -708,7 +708,7 @@ The increase in AD primarily raises real GDP and employment. The output gap narr
 Rise slightly but remains below target due to the large output gap. The economy moves toward full
 Employment without generating significant inflationary pressure.
 
-<details>
+</details>
 <summary>Question 7: Supply-Side Policy Evaluation</summary>
 
 An economy has the following characteristics: high structural unemployment (6%), low productivity
@@ -847,7 +847,7 @@ The government increases both spending and taxes by USD 100 billion. MPC = 0.75,
 (a) Calculate the spending multiplier and tax multiplier. (b) What is the net change in national
 Income? (c) What is the balanced budget multiplier?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Multiplier = `1/(0.25 + 0.05 + 0.1) = 1/0.4 = 2.5`. Tax multiplier =
@@ -896,7 +896,7 @@ An economy faces 10% inflation and 8% unemployment (NRU = 5%).
 (a) What type of macroeconomic problem is this? (b) Can demand-side policy solve it alone? (c) What
 Policy mix would you recommend?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) **Stagflation** -- simultaneous high inflation and high unemployment. This is caused by a
@@ -948,7 +948,7 @@ Evaluate the likely effectiveness of the following supply-side policies for redu
 (a) Reducing the minimum wage (b) Increasing government spending on retraining programmes (c)
 Reducing Corporate tax rates (d) Signing free trade agreements
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) May reduce unemployment by making low-skilled labour cheaper for employers. However, it reduces
@@ -1007,7 +1007,7 @@ Government is increasing spending to reduce unemployment.
 (a) Describe the conflict between these two policies. (b) What are the likely effects on interest
 Rates, investment, and inflation? (c) What would you advise?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) The central bank's contractionary policy raises interest rates to reduce AD and inflation. The

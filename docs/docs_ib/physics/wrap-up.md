@@ -50,7 +50,7 @@ Displacement and velocity), and combining vector components using Pythagoras.
    inelastically with a 1.0 kg block at rest. The combined mass then slides an additional distance
    before stopping. Calculate this additional distance.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** A three-part problem: (1) Work-energy to find speed before collision, (2)
@@ -107,7 +107,7 @@ And algebraically solving a system of equations.
    period of 2.0 s. What is the period of the flashes and the speed of the probe as measured by an
    observer on Earth?
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** First, use the relativistic velocity addition formula to find the probe's speed
@@ -164,7 +164,7 @@ Ratios for a constant-volume process.
    orbits a star where the incident radiation intensity is 1500 W/m². Calculate the planet's
    steady-state surface temperature.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** In thermal equilibrium, the power absorbed by the planet equals the power radiated
@@ -226,7 +226,7 @@ Correctly identifying which stages of the cycle involve heat input ($Q_{\mathrm{
    equilibrium and released at t=0. At t = 0.20 s, 0.30 kg of putty is dropped on and sticks to it.
    Determine the new amplitude and maximum speed.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** Find the position and velocity of the mass just before the collision. Apply
@@ -289,7 +289,7 @@ Correct interpretation of blueshift vs. Redshift.
    of mass M and radius R. How much work must be done by thrusters to move it to a new circular
    orbit of radius 3R?
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** The work done by an external force (thrusters) equals the change in the satellite's
@@ -339,7 +339,7 @@ By equating magnetic force to centripetal force.
    0.40 T B-field. The rotation axis is perpendicular to B. At t=0, the loop's plane is
    perpendicular to B. Find the peak induced current and the average power dissipated.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** Determine the magnetic flux as a function of time. Use Faraday's Law to find the
@@ -400,7 +400,7 @@ Charges in an electric field ($E_k=qV$).
    $\lambda = 3.85 \times 10^{-12} s^{-1}$. How many half-lives of X are equal to the wood's age?
    (Half-life of C-14 is 5730 years).
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** Use the C-14 activity to find the age of the wood. Calculate the half-life of

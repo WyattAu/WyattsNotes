@@ -493,7 +493,7 @@ $\mathrm{Na}_2\mathrm{CO}_3$ to give $\mathrm{CO}_2$.
 Note: Propanone ($\mathrm{CH}_3\mathrm{COCH}_3$) also has formula
 $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ but would not give a positive Tollens' test.
 
-<details>
+</details>
 <summary>Problem 2</summary>
 
 Write equations for the reactions of ethanoyl chloride ($\mathrm{CH}_3\mathrm{COCl}$) with: (a)
@@ -542,7 +542,7 @@ $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct.
 Iodoform test:
 $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$
 
-<details>
+</details>
 <summary>Problem 4</summary>
 
 Write a mechanism for the nucleophilic addition of $\mathrm{HCN}$ to propanone
@@ -801,7 +801,7 @@ not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm
 - Verification: $M = 4(12) + 8(1) + 16 = 72\,\mathrm{g/mol}$. Contains $\mathrm{CH}_3\mathrm{CO}-$
   group. Not an aldehyde. Correct (1 mark).
 
-<details>
+</details>
 <summary>Q3 (5 marks)</summary>
 
 Write the mechanism for the reaction of propanal with hydrogen cyanide. Explain why the product is
@@ -838,7 +838,7 @@ Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce 
   $\mathrm{BH}_4^-$Destroying the reducing agent before it can attack (1 mark).
 - A stronger reducing agent such as $\mathrm{LiAlH}_4$ is needed for carboxylic acids (1 mark).
 
-<details>
+</details>
 <summary>Q5 (5 marks)</summary>
 
 Ethyl ethanoate can be prepared by two different methods: (a) from ethanoic acid and ethanol using

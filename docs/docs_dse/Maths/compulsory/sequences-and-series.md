@@ -90,7 +90,7 @@ Find the 20th term of the sequence $3, 7, 11, 15, \ldots$
 
 Here $a_1 = 3$$d = 4$. So $a_{20} = 3 + 19 \times 4 = 3 + 76 = 79$.
 
-<details>
+</details>
 <summary>Example</summary>
 In an arithmetic sequence, $a_5 = 17$ and $a_{12} = 38$. Find $a_1$ and $d$.
 
@@ -162,7 +162,7 @@ Find the sum of all integers from 1 to 100.
 
 $S_{100} = \frac{100 \times 101}{2} = 5050$.
 
-<details>
+</details>
 <summary>Example</summary>
 Find the sum of the arithmetic series $2 + 5 + 8 + \cdots + 89$.
 
@@ -210,7 +210,7 @@ Find the 8th term of $3, -6, 12, -24, \ldots$
 
 $a_1 = 3$$r = -2$. $a_8 = 3(-2)^7 = 3(-128) = -384$.
 
-<details>
+</details>
 <summary>Example</summary>
 The 3rd term of a GP is 12 and the 7th term is 192. Find $a_1$ and $r$.
 
@@ -281,7 +281,7 @@ This is a geometric series with $a = 0.37$$r = 0.01$.
 
 $S_\infty = \frac{0.37}{1 - 0.01} = \frac{0.37}{0.99} = \frac{37}{99}$.
 
-<details>
+</details>
 <summary>Example: Compound interest</summary>
 A principal of USD 5000 is invested at 4% per annum, compounded annually. Find the value after 10 years.
 
@@ -333,7 +333,7 @@ $$
 \sum_{k=1}^{n} 1 = n, \qquad \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}
 $$
 
-<details>
+</details>
 <summary>Example</summary>
 Evaluate $\sum_{k=3}^{10} (2k - 1)$.
 
@@ -386,7 +386,7 @@ $$
 This equation gives the **fixed point(s)** of $f$. To confirm convergence, one must also show the
 Sequence is bounded and monotonic (or use other convergence criteria).
 
-<details>
+</details>
 <summary>Example</summary>
 A sequence is defined by $a_{n+1} = \frac{1}{2}\left(a_n + \frac{16}{a_n}\right)$ with $a_1 = 1$. Find its limit.
 
@@ -430,7 +430,7 @@ Since $a_n \gt 0$$L = 2$.
 
 ## Wrap-up Questions
 
-<details>
+</details>
 <summary>Wrap-up Questions</summary>
 
 1. **Question:** A student starts a savings plan. In the first year, they deposit USD 1,200. In each
@@ -487,7 +487,7 @@ Relations and finding the fixed point or steady state of the system by taking th
 3. **Question:** Find the exact sum of the infinite series
    $\sum_{n=1}^{\infty} \frac{1}{n(n+1)(n+2)}$.
 
-<details>
+</details>
 <summary>Answer</summary>
 - This series can be solved by recognizing it as a telescoping series after applying partial fraction decomposition.
 - **Step 1: Decompose the general term.**
@@ -552,7 +552,7 @@ First term and common ratio of the resulting geometric series, and calculating t
    inconclusive. Show why the Ratio Test is inconclusive, and then use a more appropriate test to
    definitively determine convergence or divergence.
 
-<details>
+</details>
 <summary>Answer</summary>
 - **Part 1: Show the Ratio Test is inconclusive.**
  - Let $a_n = \frac{n^2+n}{n^3+2}$.
@@ -604,7 +604,7 @@ It applies to Taylor series approximations for functions like sine and cosine.
    the value of the definite integral $\int_0^1 \sin(x^2) dx$ by integrating the first three
    non-zero terms of its Maclaurin series.
 
-<details>
+</details>
 <summary>Answer</summary>
 - **Step 1: Find the Maclaurin series for $\sin(x^2)$.**
  - Start with the series for $\sin(u) = u - \frac{u^3}{3!} + \frac{u^5}{5!} - \dots$.
@@ -661,7 +661,7 @@ Geometric series.
 9. **Question:** Show that the series $\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n} \ln(n)}$ is
    conditionally convergent.
 
-<details>
+</details>
 <summary>Answer</summary>
 - To prove conditional convergence, we must show two things: (1) the series itself converges, and (2) the series of absolute values diverges.
 - **Part 1: Show convergence of the original series.**
@@ -719,7 +719,7 @@ AST).
     what is its limit? Then, calculate the first four terms of the sequence to observe its rate of
     convergence.
 
-<details>
+</details>
 <summary>Answer</summary>
 - This is the Babylonian method for finding a square root.
 - **Part 1: Find the limit.**
@@ -762,7 +762,7 @@ $e^x$.
 
 13. **Question:** Find the sum of the series $\sum_{n=1}^{\infty} \frac{2}{n^2+4n+3}$.
 
-<details>
+</details>
 <summary>Answer</summary>
 - This is a telescoping series that requires factoring the denominator and using partial fractions.
 - **Step 1: Factor the denominator and decompose the term.**
@@ -819,7 +819,7 @@ Parts and recognizing how to apply the formula for the sum of a simple arithmeti
     $\sum_{n=0}^{\infty} \frac{2^n}{n!}$. Then, use this result to find the sum of the related
     series $\sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$.
 
-<details>
+</details>
 <summary>Answer</summary>
 - **Part 1: Find the sum of the first series.**
  - The Maclaurin series for $e^x$ is $\sum_{n=0}^{\infty} \frac{x^n}{n!}$.
@@ -863,7 +863,7 @@ Change the starting and ending indices of a sum to match a known formula.
 17. **Question:** Does the series $\sum_{n=1}^\infty \frac{n^n}{n!}$ converge or diverge? Justify
     your answer with an appropriate test.
 
-<details>
+</details>
 <summary>Answer</summary>
 - This series can be tested with the Ratio Test, but a simpler approach is the Test for Divergence.
 - **Method 1: Test for Divergence**

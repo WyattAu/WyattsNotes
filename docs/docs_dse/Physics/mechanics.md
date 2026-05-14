@@ -67,7 +67,7 @@ $$s = 0 + \frac{1}{2}(3)(5)^2 = \frac{1}{2}(3)(25) = 37.5 \mathrm{ m}$$
 A cyclist travelling at $8 \mathrm{ m/s}$ applies the brakes and decelerates uniformly at
 $2 \mathrm{ m/s}^2$. Find the time taken to stop and the distance travelled during braking.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using $v = u + at$ with $v = 0$:
@@ -140,7 +140,7 @@ States otherwise. :::
 
 An object is dropped from a height of $80 \mathrm{ m}$. How long does it take to reach the ground?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$s = ut + \frac{1}{2}gt^2$$
@@ -207,7 +207,7 @@ $$R = u_x \times T = 12.99 \times 1.53 = 19.87 \mathrm{ m}$$
 A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed $15 \mathrm{ m/s}$.
 Find the horizontal distance it travels before hitting the ground.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Vertical motion** (to find time of flight):
@@ -291,7 +291,7 @@ $$a = 4.91 \mathrm{ m/s}^2$$
 Two objects of mass $3 \mathrm{ kg}$ and $5 \mathrm{ kg}$ are connected by a light inextensible
 String over a smooth pulley (Atwood machine). Find the acceleration and the tension in the string.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 For the $3 \mathrm{ kg}$ mass (let upward be positive):
@@ -419,7 +419,7 @@ A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point `A`$20
 the ground. It descends to point `B`$5 \mathrm{ m}$ above the ground. Find its speed at `B`
 Neglecting friction.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 At `A`: $E_k = 0$$E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
@@ -475,7 +475,7 @@ A car of mass $1200 \mathrm{ kg}$ travels at a constant speed of $20 \mathrm{ m/
 $\sin^{-1}(0.1)$. The total resistive force is $300 \mathrm{ N}$. Find the power output of the
 Engine.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Component of weight along the slope:
@@ -553,7 +553,7 @@ Energy is only conserved in perfectly elastic collisions. :::
 A $2 \mathrm{ kg}$ object moving at $5 \mathrm{ m/s}$ collides head-on with a $3 \mathrm{ kg}$
 Object at rest. If the collision is perfectly inelastic, find the common velocity after collision.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 By conservation of momentum:
@@ -648,7 +648,7 @@ friction, normal Reaction, or a combination of these. :::
 A car of mass $1000 \mathrm{ kg}$ travels around a roundabout of radius $25 \mathrm{ m}$ at
 $10 \mathrm{ m/s}$. Find the centripetal force.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$F_c = \frac{mv^2}{r} = \frac{1000 \times 10^2}{25} = \frac{100000}{25} = 4000 \mathrm{ N}$$
@@ -675,7 +675,7 @@ A car of mass $800 \mathrm{ kg}$ travels at $15 \mathrm{ m/s}$ around a banked c
 $50 \mathrm{ m}$ and angle $20^\circ$. Find the normal reaction force and the frictional force
 Required if the car does not rely on friction alone.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Resolving vertically: $N\cos 20^\circ = mg$
@@ -802,7 +802,7 @@ $$v = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$$
 - For circular motion, always identify what provides the centripetal force.
 - Remember that $g$ acts **downward**; use negative sign when taking upward as positive.
 
-<details>
+</details>
 <summary>Exam-Style Practice Questions</summary>
 
 **Question 1:** A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed
@@ -829,7 +829,7 @@ $$T = \frac{2m_1m_2g}{m_1 + m_2} = \frac{2(3)(5)(9.81)}{8} = 36.79 \mathrm{ N}$$
 **Question 3:** A $0.5 \mathrm{ kg}$ ball is dropped from a height of $2 \mathrm{ m}$ onto a hard
 Floor and rebounds to $1.5 \mathrm{ m}$. Find the impulse exerted by the floor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Velocity just before impact: $v = \sqrt{2gh} = \sqrt{2(9.81)(2)} = 6.26 \mathrm{ m/s}$ (downward)
@@ -865,7 +865,7 @@ $$v = 5.66 \mathrm{ m/s}$$
 Mass is $5.97 \times 10^{24} \mathrm{ kg}$ and radius is $6.37 \times 10^6 \mathrm{ m}$Find the
 Orbital period.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$r = 6.37 \times 10^6 + 500 \times 10^3 = 6.87 \times 10^6 \mathrm{ m}$$
@@ -1057,7 +1057,7 @@ _If you get this wrong, revise: SUVAT equations and the sign convention for dece
 A ball is thrown with speed $20 \mathrm{ m/s}$ at $45^\circ$ above the horizontal. Find the maximum
 Height and the horizontal range.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$u_x = 20\cos 45^\circ = 14.14 \mathrm{ m/s}$$
@@ -1102,7 +1102,7 @@ A $1.5 \mathrm{ kg}$ block slides from rest down a curved frictionless ramp of h
 $3 \mathrm{ m}$ Onto a rough horizontal surface. The coefficient of friction on the horizontal
 surface is $0.3$. How far does the block slide before stopping?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 By conservation of energy, the kinetic energy at the bottom of the ramp equals the potential energy
@@ -1152,7 +1152,7 @@ A force-time graph shows a constant force of $50 \mathrm{ N}$ acting for $0.1 \m
 By a linearly decreasing force from $50 \mathrm{ N}$ to $0 \mathrm{ N}$ over the next
 $0.2 \mathrm{ s}$. Find the impulse and the change in velocity of a $5 \mathrm{ kg}$ object.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Impulse = area under the F-t graph:
@@ -1211,7 +1211,7 @@ Pendulums._
 Find the gravitational field strength at a height of $300 \mathrm{ km}$ above the Earth's surface.
 (Earth's radius $= 6.37 \times 10^6 \mathrm{ m}$Earth's mass $= 5.97 \times 10^{24} \mathrm{ kg}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$r = 6.37 \times 10^6 + 3.0 \times 10^5 = 6.67 \times 10^6 \mathrm{ m}$$
@@ -1252,7 +1252,7 @@ Displacement._
 
 A simple pendulum has a period of $2.5 \mathrm{ s}$. Find its length.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$T = 2\pi\sqrt{\frac{L}{g}}$$
@@ -1290,7 +1290,7 @@ _If you get this wrong, revise: Hooke's law and work done in stretching a spring
 A $60 \mathrm{ kg}$ person runs up a flight of stairs of vertical height $5 \mathrm{ m}$ in
 $8 \mathrm{ s}$. Find the average power developed.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$W = mgh = 60 \times 9.81 \times 5 = 2943 \mathrm{ J}$$
@@ -1329,7 +1329,7 @@ A geostationary satellite orbits at a distance of $4.23 \times 10^7 \mathrm{ m}$
 The Earth. Find its orbital speed and verify that the orbital period is approximately 24 hours.
 (Earth's mass $= 5.97 \times 10^{24} \mathrm{ kg}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{4.23 \times 10^7}}$$

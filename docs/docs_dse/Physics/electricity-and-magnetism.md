@@ -169,7 +169,7 @@ A point charge of $+5 \times 10^{-8} \mathrm{ C}$ is placed in a uniform electri
 $2000 \mathrm{ V/m}$. Find the force on the charge and the work done to move it $0.3 \mathrm{ m}$
 Against the field.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$F = qE = (5 \times 10^{-8})(2000) = 1.0 \times 10^{-4} \mathrm{ N}$$
@@ -330,7 +330,7 @@ LDRs are used in light-sensitive switches, automatic street lights, and camera e
 A copper wire has a length of $10 \mathrm{ m}$A diameter of $0.5 \mathrm{ mm}$And a resistivity Of
 $1.68 \times 10^{-8} \Omega \mathrm{ m}$. Find its resistance.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$A = \pi r^2 = \pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2 = \pi (2.5 \times 10^{-4})^2 = \pi \times 6.25 \times 10^{-8} = 1.963 \times 10^{-7} \mathrm{ m}^2$$
@@ -470,7 +470,7 @@ A battery has an EMF of $12 \mathrm{ V}$ and internal resistance of $0.5 \Omega$
 An external resistance of $5.5 \Omega$. Find the current, terminal PD, and power dissipated in the
 External resistance.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$I = \frac{\varepsilon}{R + r} = \frac{12}{5.5 + 0.5} = \frac{12}{6} = 2.0 \mathrm{ A}$$
@@ -553,7 +553,7 @@ $$\mathrm{Efficiency} = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \times 100\% = 
 A $2 \mathrm{ kW}$ electric heater is used for $3$ hours per day. If the electricity rate is
 `USD 0.90` per kWh, find the daily cost and the total energy consumed in one month (30 days).
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Daily energy: $E = Pt = 2 \times 3 = 6 \mathrm{ kWh}$
@@ -645,7 +645,7 @@ $$F = 0.6 \times 0.5 = 0.30 \mathrm{ N}$$
 Two long parallel wires separated by $0.1 \mathrm{ m}$ carry currents of $10 \mathrm{ A}$ and
 $15 \mathrm{ A}$ in the same direction. Find the force per unit length between them.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)(15)}{2\pi \times 0.1}$$
@@ -792,7 +792,7 @@ $$P = V_p I_p = 220 \times 5 = 1100 \mathrm{ W}$$
 A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at $50 \mathrm{ rev/s}$
 in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. Find the peak EMF.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$$
@@ -914,7 +914,7 @@ The force is repulsive since both charges are positive.
 Are connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and
 The total cost of running them for 5 hours at `USD 0.90` per kWh.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Total power: $P = 2000 + 100 + 500 = 2600 \mathrm{ W} = 2.6 \mathrm{ kW}$
@@ -942,7 +942,7 @@ $$V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{2
 An external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of
 Two $6 \Omega$ resistors. Find the current from the cell and the terminal PD.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Equivalent resistance of the parallel combination:
@@ -980,7 +980,7 @@ Reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the dev
 Of $10 \mathrm{ A}$ and the transformer is $90\%$ efficient, find the secondary voltage, the primary
 Current, and the power loss.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Secondary voltage: $V_s = 220 \times \frac{100}{2000} = 220 \times 0.05 = 11 \mathrm{ V}$
@@ -1019,7 +1019,7 @@ Lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$
 Force on the wire. If the wire is rotated so that it makes an angle of $45^\circ$ with the field,
 What is the new force?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Force when perpendicular ($\theta = 90^\circ$):
@@ -1060,7 +1060,7 @@ $4 \mathrm{ A}$. A straight wire running parallel to the axis of the solenoid at
 $0.02 \mathrm{ m}$ from it carries a current of $5 \mathrm{ A}$ in the same direction. Find the
 Magnetic flux density inside the solenoid and the force per unit length on the wire.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Magnetic flux density inside the solenoid:
@@ -1110,7 +1110,7 @@ A $12 \mathrm{ V}$ battery (internal resistance $0.5 \Omega$) is connected to a 
 In series with a parallel combination of $6 \Omega$ and $12 \Omega$. Find the total current and the
 Power dissipated in the $6 \Omega$ resistor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$R_p = \frac{6 \times 12}{6 + 12} = \frac{72}{18} = 4 \Omega$$
@@ -1156,7 +1156,7 @@ $Q = ne = It$._
 A tungsten wire has a resistance of $5 \Omega$ and a diameter of $0.2 \mathrm{ mm}$. The resistivity
 of Tungsten is $5.6 \times 10^{-8} \Omega \mathrm{ m}$. Find the length of the wire.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$A = \pi r^2 = \pi(1.0 \times 10^{-4})^2 = \pi \times 10^{-8} = 3.14 \times 10^{-8} \mathrm{ m}^2$$
@@ -1201,7 +1201,7 @@ With temperature._
 A $12 \mathrm{ V}$ battery is connected to a $4 \Omega$ and $6 \Omega$ resistor in parallel. Find
 the Current through each resistor and the total current from the battery.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Both resistors have $12 \mathrm{ V}$ across them (parallel):
@@ -1243,7 +1243,7 @@ circular Motion of charged particles._
 A straight wire of length $0.3 \mathrm{ m}$ moves perpendicular to a uniform magnetic field of
 $0.8 \mathrm{ T}$ at a speed of $5 \mathrm{ m/s}$. Find the induced EMF.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
@@ -1285,7 +1285,7 @@ A step-up transformer has 500 turns on the primary and 2500 turns on the seconda
 Voltage is $110 \mathrm{ V}$ and the primary current is $10 \mathrm{ A}$. If the transformer is
 $95\%$ efficient, find the secondary voltage, the output power, and the secondary current.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$V_s = V_p \times \frac{N_s}{N_p} = 110 \times \frac{2500}{500} = 110 \times 5 = 550 \mathrm{ V}$$
@@ -1336,7 +1336,7 @@ _If you get this wrong, revise: Internal resistance and the equation $V = \varep
 A circular loop of wire of radius $0.1 \mathrm{ m}$ carries a current of $5 \mathrm{ A}$. Find the
 Magnetic flux density at the centre of the loop.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac{6.283 \times 10^{-6}}{0.2} = 3.14 \times 10^{-5} \mathrm{ T}$$
@@ -1373,7 +1373,7 @@ Two point charges, $Q_1 = +4 \times 10^{-9} \mathrm{ C}$ at the origin and
 $Q_2 = +9 \times 10^{-9} \mathrm{ C}$ at $x = 0.1 \mathrm{ m}$Lie along the x-axis. Find the Point
 on the x-axis between the charges where the electric field is zero.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 At a point $x$ metres from $Q_1$ (between the charges, so $0 \lt x \lt 0.1$):

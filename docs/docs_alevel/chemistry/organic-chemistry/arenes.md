@@ -484,7 +484,7 @@ Delocalisation energy = expected $-$ actual = $-378 - (-208) = -170\,\mathrm{kJ/
 The benzene ring is stabilised by approximately $170\,\mathrm{kJ/mol}$ relative to the Kekule
 Structure with three isolated double bonds.
 
-<details>
+</details>
 <summary>Problem 2</summary>
 
 Explain why Friedel-Crafts acylation of nitrobenzene fails, while Friedel-Crafts acylation of phenol
@@ -761,7 +761,7 @@ water immediately. Explain this difference.
 - Phenol is so activated that it undergoes tri-bromination, giving 2,4,6-tribromophenol as a white
   precipitate (1 mark).
 
-<details>
+</details>
 <summary>Q2 (5 marks)</summary>
 
 Describe the mechanism for the nitration of benzene. Include the formation of the electrophile and
@@ -803,7 +803,7 @@ alkyl groups onto the benzene ring.
 - The ketone product can subsequently be reduced to the alkyl group (e.g. Clemmensen reduction),
   providing a controlled route to linear alkylbenzenes (1 mark).
 
-<details>
+</details>
 <summary>Q4 (6 marks)</summary>
 
 Starting from benzene, propose a synthesis of 3-bromonitrobenzene. Explain the order of steps and

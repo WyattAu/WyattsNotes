@@ -333,7 +333,7 @@ The only Nash equilibrium is (Ad, Ad) with payoffs $(4, 4)$. This is a prisoner'
 Would be better off at (No Ad, No Ad) with $(6, 6)$But neither has the incentive to unilaterally
 Stop advertising.
 
-<details>
+</details>
 <summary>Problem 2: Mixed Strategy Nash Equilibrium</summary>
 
 In a zero-sum game, Player 1 can play Up or Down; Player 2 can play Left or Right. The payoff matrix
@@ -387,7 +387,7 @@ Underlying probabilities are identical.
 Loss aversion also plays a role: the word "losing" activates a stronger emotional response than
 "gaining," making Product B seem less attractive despite its mathematical equivalence.
 
-<details>
+</details>
 <summary>Problem 4: Present Bias and Saving</summary>
 
 A person is offered a choice: `USD 100` today or `USD 120` in one month. Most people choose
@@ -639,7 +639,7 @@ reversals.
 
 ## Additional Practice Problems
 
-<details>
+</details>
 <summary>Problem 6: Sequential Game with Credible Threats</summary>
 
 Amazon is considering entering the market for online groceries in a country where FreshCo is the
@@ -740,7 +740,7 @@ Overall, in standard theory, more frequent interactions make collusion easier to
 punishment comes sooner (discounting matters less for near-future punishments). However,
 Empirically, the effect depends on the specific market structure and the ease of monitoring.
 
-<details>
+</details>
 <summary>Problem 8: Behavioural Economics in Policy Design</summary>
 
 A government wants to increase retirement savings rates. Currently, only 40% of eligible workers
@@ -1019,7 +1019,7 @@ Your expected surplus $= 800 - 600 = \$200$.
 
 Expected surplus unconditional: $0.512 \times 200 = \$102.40$.
 
-<details>
+</details>
 <summary>Problem 10: Public Goods Game and Policy</summary>
 
 A village of 100 households is considering contributing to a new well that costs `USD 10,000`. Each
@@ -1327,7 +1327,7 @@ High-productivity workers would deviate: their education cost ($4e$) is lower th
 
 Therefore, the only stable equilibrium is the separating one.
 
-<details>
+</details>
 <summary>Problem 13: Prospect Theory Calculations</summary>
 
 A student must choose between two exam preparation strategies:
@@ -2333,7 +2333,7 @@ _Limitations:_
 5. **Non-cooperative behaviour:** countries may use threats, deadlines, and other strategic tactics
    not captured by the cooperative Nash framework
 
-<details>
+</details>
 <summary>Question 7: Information Cascades and Financial Markets (10 marks)</summary>
 
 An IPO (initial public offering) is being evaluated by four investors. Each investor receives A

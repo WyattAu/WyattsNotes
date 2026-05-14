@@ -76,7 +76,7 @@ The image is inverted and magnified by a factor of 2.
 An object $4 \mathrm{ cm}$ tall is placed $8 \mathrm{ cm}$ from a concave mirror with focal length
 $12 \mathrm{ cm}$. Describe the image.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The object is inside the focal length ($u \lt f$), so expect a virtual, upright, magnified image.
@@ -140,7 +140,7 @@ $$\theta_2 = 25.4^\circ$$
 A light ray travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of
 $35^\circ$. Find the angle of refraction and the speed of light in each medium.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$n_1 \sin\theta_1 = n_2 \sin\theta_2$$
@@ -202,7 +202,7 @@ A glass fibre has core refractive index $1.50$ and cladding refractive index $1.
 The fibre at an angle of $20^\circ$ to the fibre axis. Does total internal reflection occur at the
 Core-cladding boundary?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The angle of incidence at the core-cladding boundary is measured from the normal to the boundary. If
@@ -281,7 +281,7 @@ Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm
 lens of focal length $15 \mathrm{ cm}$. An object is placed $30 \mathrm{ cm}$ from the Combination.
 Find the image position.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Combined power:
@@ -413,7 +413,7 @@ Convention._
 Light enters a glass block ($n = 1.52$) from air at an angle of $55^\circ$ to the normal. Find the
 Angle of refraction.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\sin\theta_2 = \frac{n_1}{n_2}\sin\theta_1 = \frac{1.0}{1.52}\sin 55^\circ = \frac{0.8192}{1.52} = 0.539$$
@@ -451,7 +451,7 @@ from The denser to the less dense medium._
 An object $3 \mathrm{ cm}$ tall is placed $12 \mathrm{ cm}$ from a convex lens of focal length
 $8 \mathrm{ cm}$. Find the image height and nature.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{8} - \frac{1}{12} = \frac{3 - 2}{24} = \frac{1}{24}$$
@@ -499,7 +499,7 @@ Images have negative $v$._
 An object $2 \mathrm{ cm}$ tall is placed $6 \mathrm{ cm}$ from a concave mirror of focal length
 $10 \mathrm{ cm}$. Find the image position, height, and nature.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The object is inside $F$So the image should be virtual, upright, and magnified.
@@ -559,7 +559,7 @@ Going from denser to less dense media._
 An object is placed $30 \mathrm{ cm}$ from a convex lens of focal length $15 \mathrm{ cm}$. Find The
 image position and magnification. What special case is this?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{1}{v} = \frac{1}{15} - \frac{1}{30} = \frac{2 - 1}{30} = \frac{1}{30}$$
@@ -605,7 +605,7 @@ A compound microscope has an objective lens of focal length $0.5 \mathrm{ cm}$ a
 Focal length $2.0 \mathrm{ cm}$. The object is placed $0.6 \mathrm{ cm}$ from the objective. The
 Image formed by the objective is $15 \mathrm{ cm}$ from the eyepiece. Find the total magnification.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Objective lens:**
@@ -666,7 +666,7 @@ Two plane mirrors are placed at $60^\circ$ to each other. A light ray strikes on
 Of incidence of $40^\circ$. How many reflections does the ray undergo before exiting the mirror
 System?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The angle between the mirrors is $\alpha = 60^\circ$. The number of reflections $n$ is determined
@@ -713,7 +713,7 @@ Depth._
 An optical fibre has a core refractive index of $1.62$ and cladding refractive index of $1.52$. Find
 The maximum acceptance angle (from the fibre axis) for light to undergo total internal reflection.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Critical angle at the core-cladding boundary:
@@ -973,7 +973,7 @@ An object of height $3.0 \mathrm{ cm}$ is placed $20 \mathrm{ cm}$ from a conver
 length $15 \mathrm{ cm}$. Find the image position, height, and nature (real/virtual,
 Upright/inverted, magnified/diminished).
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using the thin lens equation: $\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$
@@ -1046,7 +1046,7 @@ refractive index.
 
 (d) Explain why total internal reflection cannot occur when light travels from air into glass.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a)
@@ -1150,7 +1150,7 @@ light is $1.532$.
 
 (e) Calculate the angular dispersion between red and violet light.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) At the first face: $n\sin\theta_r = \sin\theta_i$
@@ -1236,7 +1236,7 @@ Find the image position, magnification, and nature.
 Lens. The image is three times the size of the object. Find the focal length of the lens and The
 object distance.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) A **real image** is formed where light rays actually converge. It can be projected onto a Screen

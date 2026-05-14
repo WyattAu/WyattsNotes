@@ -350,7 +350,7 @@ and red-black trees are mentioned for context but not examined in detail. :::
 **Problem 1.** Draw the BST that results from inserting the keys 50, 30, 70, 20, 40, 60, 80 in that
 Order.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 ```
@@ -375,7 +375,7 @@ Each key is inserted at the correct position to maintain the BST property.
 **Problem 3.** What is the worst-case height of a BST with $n$ nodes? Give an example insertion
 Order that produces this worst case.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 Worst-case height: $n - 1$ (essentially a linked list).
@@ -415,7 +415,7 @@ Subtree). Delete the original 40 node (leaf).
 **Problem 5.** Build a max-heap from the array `[4, 10, 3, 5, 1]`. Show the array after each heapify
 Call.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 Start: `[4, 10, 3, 5, 1]`$n = 5$
@@ -460,7 +460,7 @@ Final: `[1, 1, 3, 4, 5]`
 **Problem 7.** Prove that the in-order successor of a node in a BST (if it exists) is the leftmost
 Node in its right subtree, assuming the node has a right child.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 **Proof.** Let node $N$ have key $k$ and a right child $R$. By the BST property, all keys in $R$'s
@@ -517,7 +517,7 @@ Total leaves = 37 (level 6) + 13 (level 5) = 50 = $\lceil 100/2 \rceil$. ✓
 **Problem 9.** Explain why heap sort is not a stable sorting algorithm. Give a concrete example
 Where stability is violated.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 Heap sort is not stable because the `heapify` operation swaps elements that may be far apart in the

@@ -145,7 +145,7 @@ By Axiom 1, $P(B \cap A') \geq 0$So $P(B) \geq P(A)$. $\square$
 _Proof._ Since $\emptyset \subseteq A \subseteq S$Theorem 3 gives
 $P(\emptyset) \leq P(A) \leq P(S)$I.e., $0 \leq P(A) \leq 1$. $\square$
 
-<details>
+</details>
 <summary>Example</summary>
 
 Let $S = \\{1, 2, 3, 4, 5, 6\\}$ with uniform probability. Let $A = \\{1, 2\\}$ and
@@ -258,7 +258,7 @@ When outcomes are equally likely, dividing both sides by $|S|$ yields the genera
 Full inclusion-exclusion principle extends to $n$ sets and is covered in
 [combinatorics](combinatorics)).
 
-<details>
+</details>
 <summary>DSE-style Example</summary>
 
 In a class of 40 students, 25 study Physics, 20 study Chemistry, and 8 study both. A student is
@@ -380,7 +380,7 @@ $$
 \end{aligned}
 $$
 
-<details>
+</details>
 <summary>Example</summary>
 
 A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. Find the probability
@@ -478,7 +478,7 @@ Are opposite extremes.
 The only case where mutually exclusive events are also independent is the degenerate case where at
 Least one event has probability zero.
 
-<details>
+</details>
 <summary>DSE-style Example</summary>
 
 A fair coin is tossed 3 times. Let $A$ = "all three tosses are heads" and $B$ = "the first toss is
@@ -586,7 +586,7 @@ Despite a 95% accurate test, a positive result only means about 32.4% chance of 
 Counterintuitive result occurs because the disease is rare -- false positives vastly outnumber true
 Positives in absolute terms.
 
-<details>
+</details>
 <summary>Example: Quality Control</summary>
 
 A factory has three machines producing items. Machine $M_1$ produces 50% of items with 2% defective.
@@ -664,7 +664,7 @@ Trees are especially useful for problems involving:
 - Multi-step processes where later probabilities depend on earlier outcomes.
 - Any scenario requiring the law of total probability (sum over all branches at the final level).
 
-<details>
+</details>
 <summary>DSE-style Example</summary>
 
 A box contains 3 defective and 7 good bulbs. Bulbs are tested one by one without replacement. Find
@@ -729,7 +729,7 @@ $$
 
 2. **Question:** In a group of 50 students, 30 play basketball, 25 play football, and 10 play
 Neither. A student is chosen at random. Find the probability that the student plays both sports.
-<details>
+</details>
 <summary>Answer</summary>
 
 Let $B$ = plays basketball, $F$ = plays football.
@@ -774,7 +774,7 @@ $$
 
 4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \mid B) = 0.4$.
 Find $P(A \cup B)$.
-<details>
+</details>
 <summary>Answer</summary>
 
 From $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$:
@@ -818,7 +818,7 @@ $$
 
 6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$$P(B) = \frac{1}{4}$And
 $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
-<details>
+</details>
 <summary>Answer</summary>
 
 By the addition rule:
@@ -859,7 +859,7 @@ $$
 8. **Question:** In a certain school, 60% of students take Mathematics, 40% take Physics, and 30%
 Take both. A student is selected at random. Given that the student takes Mathematics, what is the
 Probability that they also take Physics?
-<details>
+</details>
 <summary>Answer</summary>
 
 $$
@@ -891,7 +891,7 @@ Its defect rate is lower.
 
 10. **Question:** A fair die is rolled twice. Find the probability that the sum of the two results
 Is 8, given that the first result is at least 3.
-<details>
+</details>
 <summary>Answer</summary>
 
 Let $A$ = "sum is 8", $B$ = "first result $\geq$ 3".
@@ -933,7 +933,7 @@ $$
 12. **Question:** A test for a condition has a sensitivity of 90% and a specificity of 95%. The
 Condition prevalence in the population is 1%. Find the positive predictive value
 $P(\mathrm{condition} \mid \mathrm{positive})$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Sensitivity: $P(+ \mid C) = 0.90$.

@@ -86,7 +86,7 @@ $$
 \end{aligned}
 $$
 
-<details>
+</details>
 <summary>Examples</summary>
 - A circle of radius $5$ cm has a sector with angle $\frac{3\pi}{4}$. Arc length $= 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78$ cm. Area $= \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45$ cm$^2$.
 - Find the radius of a circle given that a sector of angle $2.5$ rad has area $20$ cm$^2$: $\frac{1}{2}r^2(2.5) = 20 \implies r^2 = 16 \implies r = 4$ cm.
@@ -187,7 +187,7 @@ $$
 \end{aligned}
 $$
 
-<details>
+</details>
 <summary>Examples</summary>
 - Simplify $\frac{\sin\theta}{\tan\theta}$: Since $\tan\theta = \frac{\sin\theta}{\cos\theta}$We have $\frac{\sin\theta}{\sin\theta / \cos\theta} = \cos\theta$.
 - Given $\sin\theta = \frac{3}{5}$ and $\theta$ is in the second quadrant, find $\cos\theta$ and $\tan\theta$: $\cos\theta = -\sqrt{1 - \frac{9}{25}} = -\frac{4}{5}$$\tan\theta = \frac{3/5}{-4/5} = -\frac{3}{4}$.
@@ -281,7 +281,7 @@ $$
 | $-\frac{c}{b}$       | Phase shift (horizontal translation)    |
 | $d$                  | Vertical shift (centre line at $y = d$) |
 
-<details>
+</details>
 <summary>Examples</summary>
 - For $y = 3\sin(2x)$: amplitude $= 3$Period $= \frac{2\pi}{2} = \pi$Range $= [-3, 3]$.
 - For $y = -2\cos\left(x - \frac{\pi}{3}\right) + 1$: amplitude $= 2$Period $= 2\pi$Phase shift $= \frac{\pi}{3}$ to the right, vertical shift $= 1$ up, range $= [-1, 3]$.
@@ -423,7 +423,7 @@ The standard approach:
 This connects to the vector formulation described in the
 [3D geometry](geometries#angles-between-lines-and-planes) section.
 
-<details>
+</details>
 <summary>Examples</summary>
 - In $\triangle ABC$$a = 8$$b = 6$$C = 60^\circ$. Find $c$: $c^2 = 64 + 36 - 2(6)(8)\cos 60^\circ = 100 - 48 = 52$So $c = 2\sqrt{13}$.
 - In $\triangle ABC$$a = 7$$A = 45^\circ$$B = 60^\circ$. Find $b$: $\frac{b}{\sin 60^\circ} = \frac{7}{\sin 45^\circ} \implies b = \frac{7 \cdot \frac{\sqrt{3}}{2}}{\frac{\sqrt{2}}{2}} = \frac{7\sqrt{3}}{\sqrt{2}} = \frac{7\sqrt{6}}{2}$.
@@ -448,7 +448,7 @@ This connects to the vector formulation described in the
 
 2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc
 Length and the perimeter of the sector.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Area $= \frac{1}{2}r^2\theta$:
@@ -470,7 +470,7 @@ Length and the perimeter of the sector.
 - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
 
 4. **Question:** In $\triangle ABC$$a = 10$$b = 7$$c = 8$. Find the largest angle of the Triangle.
-<details>
+</details>
 <summary>Answer</summary>
 
 - The largest angle is opposite the longest side, so find $\angle A$ (opposite $a = 10$).
@@ -496,7 +496,7 @@ is $55^\circ$. Find the height of the tower.
 6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
 Bearing of $B$ from $A$ is $090^\circ$ (due east), the bearing of $S$ from $A$ is $050^\circ$And The
 bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - The bearing of $B$ from $A$ is $090^\circ$So $B$ lies due east of $A$. Place $A$ at the origin
@@ -532,7 +532,7 @@ This equals the RHS, completing the proof.
 8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
 $VA = VB = VC = VD = 5\sqrt{2}$ cm. Find (a) the height of the pyramid, and (b) the angle between
 The slant edge $VA$ and the base.
-<details>
+</details>
 <summary>Answer</summary>
 
 (a) The centre $O$ of the square base is the foot of the perpendicular from $V$. The diagonal
@@ -571,7 +571,7 @@ $x$-intercepts in this interval.
 10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$
 Are $100$ m apart on level ground. The angle of elevation of the top of the tower from $A$ is
 $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Let the tower be $PQ$ of height $h$With base $Q$ between $A$ and $B$.
@@ -596,7 +596,7 @@ $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
 
 12. **Question:** In $\triangle ABC$$a = 5$$b = 7$$A = 40^\circ$. Determine whether two Distinct
 triangles exist, and find all possible values of $B$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - By the sine rule: $\frac{\sin B}{7} = \frac{\sin 40^\circ}{5}$.

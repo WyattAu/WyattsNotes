@@ -69,7 +69,7 @@ $25^\circ$ below the horizontal. The crate moves $8 \mathrm{ m}$. The coefficien
 friction is $0.3$. Find the work done by the applied force, The work done by friction, and the net
 work done.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Work by applied force:
@@ -166,7 +166,7 @@ A roller coaster car of mass $600 \mathrm{ kg}$ starts from rest at point `A`$25
 the ground. It descends to point `B`$8 \mathrm{ m}$ above the ground. Find its speed at `B`
 Neglecting friction.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 At `A`: $E_k = 0$$E_p = 600 \times 9.81 \times 25 = 147150 \mathrm{ J}$
@@ -222,7 +222,7 @@ A car of mass $1500 \mathrm{ kg}$ travels at a constant speed of $18 \mathrm{ m/
 $\sin^{-1}(0.08)$. The total resistive force is $400 \mathrm{ N}$. Find the power output of the
 Engine.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Component of weight along the slope:
@@ -270,7 +270,7 @@ A motor lifts a $200 \mathrm{ kg}$ load through $5 \mathrm{ m}$ in $10 \mathrm{ 
 Connected to a $240 \mathrm{ V}$ supply and draws a current of $5 \mathrm{ A}$. Find the efficiency
 Of the motor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Useful power output:
@@ -318,7 +318,7 @@ A simple pendulum of length $1.5 \mathrm{ m}$ has a bob of mass $0.5 \mathrm{ kg
 Aside until the string makes $30^\circ$ with the vertical and released from rest. Find the speed Of
 the bob at the lowest point and the total energy, neglecting air resistance.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Height gain: $h = L(1 - \cos\theta) = 1.5(1 - \cos 30^\circ) = 1.5(1 - 0.866) = 0.201 \mathrm{ m}$
@@ -390,7 +390,7 @@ If you get this wrong, revise: Work Done by a Force / Work-Energy Theorem
 $12 \mathrm{ m/s}$. Find the maximum height and the speed when it returns to its starting point,
 Given that air resistance does $0.3 \mathrm{ J}$ of work on the ball during the ascent.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Going up: $E_{k1} = \frac{1}{2}(0.1)(144) = 7.2 \mathrm{ J}$
@@ -426,7 +426,7 @@ $30^\circ$. A block of mass $2 \mathrm{ kg}$ slides $0.5 \mathrm{ m}$ down the r
 The slope) before hitting the spring. The ramp is smooth. Find the maximum compression of the
 Spring.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Height descended: $h = 0.5\sin 30^\circ = 0.25 \mathrm{ m}$
@@ -464,7 +464,7 @@ $0.4 \mathrm{ m}$ above its lowest point. At the lowest point, $20\%$ of its ene
 resistance during the swing. Find the speed at the lowest point and the maximum height on the Other
 side.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Initial PE: $E_p = mgh = 0.2 \times 9.81 \times 0.4 = 0.785 \mathrm{ J}$
@@ -501,7 +501,7 @@ If you get this wrong, revise: Energy in Simple Harmonic Motion
 $0.8 \mathrm{ kg}$ of water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Find the Efficiency
 of the kettle. (Specific heat capacity of water $= 4200 \mathrm{ J/(kg\cdot}^\circ C)}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Useful energy:
@@ -526,7 +526,7 @@ If you get this wrong, revise: Work Done by a Variable Force
 **Problem 10.** A $60 \mathrm{ kg}$ student runs up a flight of stairs in $5 \mathrm{ s}$. The
 Vertical height of the stairs is $6 \mathrm{ m}$. Find the average power developed by the student.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$P = \frac{mgh}{t} = \frac{60 \times 9.81 \times 6}{5} = \frac{3531.6}{5} = 706 \mathrm{ W}$$
@@ -724,7 +724,7 @@ launch a $0.1 \mathrm{ kg}$ ball horizontally from a table of height $1.5 \mathr
 transfers $80\%$ of its energy to the ball. Find the horizontal distance the ball travels Before
 hitting the ground.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Energy stored in spring: $E_p = \frac{1}{2}(200)(0.05)^2 = 0.25 \mathrm{ J}$
@@ -788,7 +788,7 @@ $\mu mgd = \frac{1}{2}mv^2$. Use the graph to find the coefficient of friction $
 
 (d) Explain why the actual stopping distance is longer than the value predicted by this Model.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a)
@@ -892,7 +892,7 @@ $1200 \mathrm{ kg}$ at constant speed. Calculate the speed of the lift.
 (d) The motor has a label that says "15 kW, 240 V". Calculate the current it draws and the Cost of
 running it for 8 hours at `USD 1.20` per kWh.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Power is the rate of doing work (or rate of energy transfer): $P = W/t$. SI unit: watt (W),
@@ -992,7 +992,7 @@ Position.
 (e) Sketch a graph showing how the kinetic energy and potential energy vary with displacement Over
 one complete oscillation.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a)

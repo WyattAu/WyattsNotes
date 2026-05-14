@@ -412,7 +412,7 @@ filtrate per day. The maximum rate of glucose reabsorption in the PCT is 375 mg/
 day. (c) Calculate the mass of glucose excreted in urine per day. (d) Explain why this patient
 produces large volumes of urine.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Glucose filtered per day = concentration $\times$ volume =
@@ -508,7 +508,7 @@ why a person in a hot desert environment would have high blood ADH levels.
 
 If you get this wrong, revise: Osmoregulation -- ADH and the Regulation of Water Balance
 
-<details>
+</details>
 <summary>Solution</summary>
 
 ADH is released from the posterior pituitary when blood water potential is low. It binds to

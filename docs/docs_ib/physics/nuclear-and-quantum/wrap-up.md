@@ -47,7 +47,7 @@ description:
    the Earth observer? c) From the Earth observer's perspective, what is the lifetime of the n=3
    excited state, if its proper lifetime is 10.0 ns?
 
-<details>
+</details>
 <summary>Answer</summary>
 - **Strategy:** (a) Use the Bohr model energy levels to find the proper wavelength. (b) Use the relativistic Doppler effect formula to find the speed. (c) Use the speed to find the Lorentz factor and apply time dilation.
 - **a) Proper Wavelength ($\lambda_0$):**
@@ -101,7 +101,7 @@ description:
    this shield reduces the intensity of the 1.33 MeV photons to 1/16 of its initial value, and the
    half-value thickness of lead for these photons is 1.2 cm, how thick is the shield?
 
-<details>
+</details>
 <summary>Answer</summary>
 - **Strategy:** (a) Test the understanding of wave-particle duality. (b) Use the radioactive decay law for activity. (c) Use the concept of half-value thickness for attenuation.
 - **a) De Broglie Wavelength of a Photon:**

@@ -70,7 +70,7 @@ $$\Delta\phi = \frac{2\pi \times 0.35}{1.4} = \frac{\pi}{2} = 90^\circ$$
 A sound wave in air has a wavelength of $0.686 \mathrm{ m}$. When it enters water, its speed Changes
 to $1480 \mathrm{ m/s}$. Find the frequency of the wave and its wavelength in water.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Speed in air: $v_{\mathrm{air}} = 343 \mathrm{ m/s}$ (at $20^\circ\mathrm{C}$)
@@ -144,7 +144,7 @@ Light of wavelength $600 \mathrm{ nm}$ passes through a double slit with slit se
 $0.1 \mathrm{ mm}$. The interference pattern is observed on a screen $2 \mathrm{ m}$ away. Find The
 separation between adjacent bright fringes.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 For a double-slit arrangement, the fringe spacing is:
@@ -199,7 +199,7 @@ $$f_3 = 3f_1 = 3 \times 440 = 1320 \mathrm{ Hz}$$
 A pipe is closed at one end and open at the other. The pipe is $0.85 \mathrm{ m}$ long. Find the
 Fundamental frequency and the next two resonant frequencies. (Speed of sound $= 340 \mathrm{ m/s}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 For a pipe closed at one end, only odd harmonics are present:
@@ -258,7 +258,7 @@ $$\beta = 10\log_{10}\left(\frac{7.96 \times 10^{-6}}{10^{-12}}\right) = 10\log_
 The intensity of a sound at $3 \mathrm{ m}$ from a source is $5 \times 10^{-4} \mathrm{ W/m}^2$.
 Find the intensity and the sound intensity level at $12 \mathrm{ m}$ from the source.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using the inverse square law:
@@ -320,7 +320,7 @@ $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{100 \times 10^6} = 3.0 \mathrm{
 A laser emits light of wavelength $532 \mathrm{ nm}$ (green). Find the frequency and the energy of
 Each photon. (Planck constant $h = 6.63 \times 10^{-34} \mathrm{ J\, s}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{532 \times 10^{-9}} = 5.64 \times 10^{14} \mathrm{ Hz}$$
@@ -378,7 +378,7 @@ If you get this wrong, revise: Wave Properties / The Wave Equation
 **Problem 2.** Light of wavelength $550 \mathrm{ nm}$ in air enters glass where its speed is
 $2.0 \times 10^8 \mathrm{ m/s}$. Find the frequency and the wavelength in glass.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$f = \frac{c}{\lambda_{\mathrm{air}}} = \frac{3.0 \times 10^8}{550 \times 10^{-9}} = 5.45 \times 10^{14} \mathrm{ Hz}$$
@@ -411,7 +411,7 @@ If you get this wrong, revise: Wave Phenomena / Interference
 $330 \mathrm{ Hz}$. When the string is pressed against a fret to shorten its effective length to
 $0.55 \mathrm{ m}$What is the new fundamental frequency?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Since $f_1 = v/(2L)$ and $v$ is constant, $f \propto 1/L$:
@@ -442,7 +442,7 @@ If you get this wrong, revise: Standing Waves
 length of the pipe and the frequency of the next resonant frequency. (Speed of sound
 $= 340 \mathrm{ m/s}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$f_1 = \frac{v}{4L} \implies L = \frac{v}{4f_1} = \frac{340}{4 \times 85} = \frac{340}{340} = 1.0 \mathrm{ m}$$
@@ -474,7 +474,7 @@ If you get this wrong, revise: Sound Waves / Intensity and Loudness
 **Problem 8.** Two sound sources each produce an intensity level of $80 \mathrm{ dB}$ at a point. If
 both sources operate simultaneously, what is the combined intensity level?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\beta_1 = 10\log_{10}(I_1/I_0) = 80 \implies I_1/I_0 = 10^8 \implies I_1 = 10^8 I_0$$
@@ -505,7 +505,7 @@ If you get this wrong, revise: Electromagnetic Spectrum
 Moving towards them at $30 \mathrm{ m/s}$. Find the apparent frequency heard by the observer. (Speed
 of sound $= 340 \mathrm{ m/s}$)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Using the Doppler effect formula (source moving towards stationary observer):
@@ -722,7 +722,7 @@ Light of wavelength $550 \mathrm{ nm}$ is incident normally on a diffraction gra
 $500 \mathrm{ lines/mm}$. Find the angles of the first and second order maxima, and determine the
 Maximum number of orders visible.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$d = \frac{1}{500} \mathrm{ mm} = \frac{1}{500 \times 10^3} \mathrm{ m} = 2.0 \times 10^{-6} \mathrm{ m}$$
@@ -786,7 +786,7 @@ percentage Uncertainty in the wavelength.
 
 (d) Explain what happens to the interference pattern if white light is used instead of a laser.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Fringe spacing:
@@ -875,7 +875,7 @@ to verify the relationship and determine the length of the string from the gradi
 
 (c) State two sources of error in this experiment and suggest improvements.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) For the fundamental mode: $\lambda_1 = 2L$ and $v = f_1 \lambda_1 = 2Lf_1$.
@@ -970,7 +970,7 @@ overtones.
 Percentage does the fundamental frequency of the open pipe change? (The speed of sound in air is
 Proportional to $\sqrt{T}$ in kelvin.)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) Open pipe: all harmonics present, $f_n = \frac{nv}{2L}$ for $n = 1, 2, 3, 4$.

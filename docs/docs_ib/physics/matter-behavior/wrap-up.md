@@ -58,7 +58,7 @@ Understanding the relationship between power and energy transfer over time ($P=E
    of the gas. B) The gas is slowly heated, causing it to expand isobarically until its volume
    doubles. Calculate the work done by the gas and the amount of heat supplied.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** First determine the pressure inside the cylinder by considering the equilibrium of
@@ -123,7 +123,7 @@ An engine serves as the work input for another device.
    Calculate the temperature and pressure at state B. B) Calculate the change in entropy of the gas
    during the process B -> C.
 
-<details>
+</details>
 <summary>Answer</summary>
 
 - **Strategy:** Use the adiabatic relation ($PV^\gamma = \mathrm{const.}$) to find the state

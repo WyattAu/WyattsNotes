@@ -1235,7 +1235,8 @@ $a_i \leq X_i \leq b_i$. Then for any $t > 0$:
 $$
 
 P\left( \left| \frac{1}{n}\sum*{i=1}^n X_i - \mathbb{{'}E{}'}\left[\frac{1}{n}\sum*{i=1}^n
-X*i\right] \right| \geq t \right) \leq 2\exp\left(-\frac{2n^2t^2}{\sum*{i=1}^n(b_i - a_i)^2}\right)
+X\*i\right] \right| \geq t \right) \leq 2\exp\left(-\frac{2n^2t^2}{\sum\_{i=1}^n(b_i -
+a_i)^2}\right)
 
 $$
 
@@ -1249,7 +1250,7 @@ differences condition:
 
 $$
 
-\sup*{x_1, \dots, x_n, x_i'} |f(x_1, \dots, x_n) - f(x_1, \dots, x*{i-1}, x*i', x*{i+1}, \dots,
+\sup*{x_1, \dots, x_n, x_i'} |f(x_1, \dots, x_n) - f(x_1, \dots, x*{i-1}, x\*i', x\_{i+1}, \dots,
 x_n)| \leq c_i
 
 $$
@@ -1259,7 +1260,7 @@ Then for any $t > 0$:
 
 $$
 
-P(|f(X*1, \dots, X_n) - \mathbb{{'}E{}'}[f(X_1, \dots, X_n)]| \geq t) \leq
+P(|f(X\*1, \dots, X*n) - \mathbb{{'}E{}'}[f(X_1, \dots, X_n)]| \geq t) \leq
 2\exp\left(-\frac{2t^2}{\sum*{i=1}^n c_i^2}\right)
 
 $$
@@ -1769,8 +1770,8 @@ distribution.
 ### Chain Rule for KL Divergence
 
 Let $X, Y$ be random variables with joint distributions $P_{XY}$ and $Q_{XY}$. Assuming the joint
-distributions factorize as $P_{XY} = P_X P_{Y|X}$ and $Q_{XY} = Q_X Q_{Y|X}$Then: $$ D*{KL}(P*{XY}
-\| Q*{XY}) = D*{KL}(P*X \| Q_X) + \mathbb{E}*{x \sim P*X} [D*{KL}(P*{Y|X=x} \| Q*{Y|X=x})]
+distributions factorize as $P_{XY} = P_X P_{Y|X}$ and $Q_{XY} = Q_X Q_{Y|X}$Then: $$ D_{KL}(P_{XY}
+\| Q_{XY}) = D_{KL}(P*X \| Q_X) + \mathbb{E}_{x \sim P*X} [D_{KL}(P_{Y|X=x} \| Q_{Y|X=x})]
 $$
 
 ### Mutual Information

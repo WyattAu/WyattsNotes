@@ -230,7 +230,7 @@ equation. :::
 Complete the following decay equation:
 $\prescript{214}{}{84}\mathrm{Po} \to \prescript{210}{}{82}\mathrm{Pb} + \ ?$
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Check the nucleon number: $214 - 210 = 4$
@@ -1015,7 +1015,7 @@ Of the alpha particle).
 A radioactive isotope has an initial activity of $800$ Bq. After $30$ minutes, the activity has
 Fallen to $100$ Bq. Calculate the half-life of the isotope.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Method 1: Using the fraction remaining**
@@ -1083,7 +1083,7 @@ A piece of ancient wood has a carbon-14 activity of $1.5$ Bq per gram of carbon.
 Carbon-14 activity of $15.0$ Bq per gram of carbon. Calculate the age of the ancient wood. (Take
 $t_{1/2}$ of C-14 $= 5730$ years.)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **Using the decay law:**
@@ -1158,7 +1158,7 @@ A sample contains $5.0 \times 10^{20}$ atoms of cobalt-60 ($t_{1/2} = 5.27$ year
 
 (a) The decay constant (b) The initial activity (c) The activity after 2 years
 
-<details>
+</details>
 <summary>Solution</summary>
 
 **(a) Decay constant:**
@@ -1330,7 +1330,7 @@ Concentrated in a small volume of tissue.
 
 ## Problem Set
 
-<details>
+</details>
 <summary>Problem 1: Balancing a Beta-Minus Decay Equation</summary>
 
 Complete the following beta-minus decay equation and identify the daughter nucleus:
@@ -1380,7 +1380,7 @@ A GM tube measures a count rate of $400$ counts/s from a radioactive source. Aft
 Count rate is $100$ counts/s. The background count rate is $20$ counts/s. Calculate the half-life of
 The source.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Subtract background:
@@ -1440,7 +1440,7 @@ helium-4:
 
 $2\prescript{2}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He}$
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Total binding energy of reactants:
@@ -1487,7 +1487,7 @@ _If you get this wrong, revise: Half-value thickness and exponential attenuation
 A radioactive isotope has a half-life of $8$ days. What fraction of the original sample remains
 after 30 days?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Number of half-lives: $n = \frac{30}{8} = 3.75$
@@ -1525,7 +1525,7 @@ _If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation w
 A GM tube with a dead time of $200 \ \mu\mathrm{s}$ records a count rate of $5000$ counts/s from a
 Source. Estimate the true count rate.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 The fraction of time the tube is dead:
@@ -1579,7 +1579,7 @@ _If you get this wrong, revise: The binding energy per nucleon curve and its int
 An archaeological artefact has $35\%$ of the original C-14 remaining. How old is the artefact?
 ($t_{1/2}$ of C-14 $= 5730$ years)
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{N}{N_0} = 0.35 = e^{-\lambda t}$$
@@ -1631,7 +1631,7 @@ _If you get this wrong, revise: Nuclear reactor moderator and elastic collision 
 In the alpha decay of Po-210 ($m = 209.9829$ u) to Pb-206 ($m = 205.9745$ u), the Q-value is
 $5.41 \mathrm{ MeV}$. Calculate the kinetic energy of the alpha particle ($m = 4.0026$ u).
 
-<details>
+</details>
 <summary>Solution</summary>
 
 By conservation of momentum, the alpha particle and daughter nucleus move in opposite directions
@@ -1685,7 +1685,7 @@ Condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$._
 A log-linear plot of $\ln A$ versus $t$ for a radioactive source gives a straight line with gradient
 $-0.05 \mathrm{ min}^{-1}$. Find the decay constant and half-life.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\ln A = \ln A_0 - \lambda t$$
@@ -1903,7 +1903,7 @@ A nuclear power station produces $1500 \mathrm{ MW}$ of electrical power with an
 of $33\%$. Each fission of U-235 releases approximately $200 \mathrm{ MeV}$ of energy. Calculate the
 mass of U-235 consumed per day.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Total thermal power:
@@ -1986,7 +1986,7 @@ Mass of proton $= 1.00728 \mathrm{ u}$Mass of neutron $= 1.00867 \mathrm{ u}$.
 (iii) Explain why energy is released when light nuclei undergo fusion and when heavy nuclei Undergo
 fission.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) The binding energy per nucleon is the total binding energy of a nucleus divided by its mass

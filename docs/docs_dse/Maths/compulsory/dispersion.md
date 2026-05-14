@@ -51,7 +51,7 @@ Order:
 
 The median is robust to outliers since only on the position of data points, not their Magnitude.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Dataset: $\{3, 7, 1, 9, 5\}$. Sorted: $\{1, 3, 5, 7, 9\}$. Median = $5$ (position $3$ of $5$).
 - Dataset: $\{2, 4, 6, 8, 10, 12\}$. Median = $\frac{6+8}{2} = 7$ (average of positions $3$ and $4$).
@@ -94,7 +94,7 @@ $$
 The range is simple to compute but uses only two data points, making it highly sensitive to
 Outliers.
 
-<details>
+</details>
 <summary>Examples</summary>
 - $\{12, 15, 18, 22, 25\}$: range $= 25 - 12 = 13$.
 - $\{5, 10, 10, 10, 10, 100\}$: range $= 95$Heavily distorted by the single outlier.
@@ -160,7 +160,7 @@ tend to underestimate the true spread. Dividing by $n-1$ compensates for this. I
 unless the problem explicitly identifies the data as a sample, the population formula (dividing by
 $n$) is expected.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Dataset: $\{2, 4, 4, 4, 5, 5, 7, 9\}$ ($n=8$).
  - $\bar{x} = \frac{40}{8} = 5$.
@@ -224,7 +224,7 @@ $$
 
 This method simplifies calculation by working with small integer values of $d_i$.
 
-<details>
+</details>
 <summary>Examples</summary>
 - The following frequency distribution records the marks of $40$ students:
 
@@ -322,7 +322,7 @@ $$
 The additional terms $n_1(\bar{x}_1 - \bar{x}_c)^2$ and $n_2(\bar{x}_2 - \bar{x}_c)^2$ account for
 The between-group variation caused by the difference in means.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Group A: $n_1 = 6$$\bar{x}_1 = 10$$\sigma_1^2 = 4$.
 - Group B: $n_2 = 4$$\bar{x}_2 = 20$$\sigma_2^2 = 9$.
@@ -371,7 +371,7 @@ $Q_1$$Q_2$ (median), $Q_3$And maximum.
 **Identifying outliers:** A data point is considered a potential outlier if it falls below
 $Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Dataset: $\{5, 8, 12, 15, 18, 20, 24, 28, 35, 42, 58\}$ ($n=11$).
  - $Q_2 = 18$.
@@ -404,7 +404,7 @@ While not computed algebraically in the compulsory syllabus, students should rec
 
 2. **Question:** A dataset has mean $20$ and variance $36$. Find the mean and variance of the
 Transformed dataset $Y = \dfrac{X - 20}{6}$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - $\bar{y} = \frac{1}{6}(20) - \frac{20}{6} = \frac{20-20}{6} = 0$.
@@ -434,7 +434,7 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$$\bar{x}_1 = 72$ $\sigma_1 = 8$).
 Class B ($n_2 = 20$$\bar{x}_2 = 80$$\sigma_2 = 6$). Find the combined mean and Combined standard
 deviation.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Combined mean:
@@ -468,7 +468,7 @@ Outliers.
 6. **Question:** A farmer records the yields (in kg) of two varieties of wheat over several seasons.
 Variety A: mean $= 45$Standard deviation $= 5$. Variety B: mean $= 60$Standard deviation $= 9$.
 Which variety has more consistent yield?
-<details>
+</details>
 <summary>Answer</summary>
 
 - CV$_A = \frac{5}{45} \times 100\% \approx 11.1\%$.
@@ -486,7 +486,7 @@ $a^2 + b^2 + c^2$.
 
 8. **Question:** A set of $20$ numbers has mean $15$ and standard deviation $3$. If each number is
 Multiplied by $2$ and then $5$ is added, find the new mean and new standard deviation.
-<details>
+</details>
 <summary>Answer</summary>
 
 - New mean: $2(15) + 5 = 35$.
@@ -524,7 +524,7 @@ Estimate the median weight from the cumulative frequency distribution.
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
 mean, and the population variance. Verify your variance using both the definition formula and The
 computational formula.
-<details>
+</details>
 <summary>Answer</summary>
 
 - $\sum x_i = 3+7+7+2+9+5+1+8+6+4 = 52$.
@@ -564,7 +564,7 @@ Dispersion.
 12. **Question:** A set of data has variance $25$ and mean $0$. A new set is formed by removing the
 Value $10$ from the original set. If the original set had $n = 6$ values, find the new mean and new
 Variance.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Original: $\bar{x} = 0$$\sigma^2 = 25$$n = 6$.

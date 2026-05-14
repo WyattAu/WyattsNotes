@@ -50,7 +50,7 @@ Corresponding powers of $x$ are equal.
 - $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$
 - $a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2 + b^2 + c^2 - ab - bc - ca)$
 
-<details>
+</details>
 <summary>Example: Using the method of undetermined coefficients</summary>
 Find constants $A$$B$$C$ such that $x^2 + 4x + 6 \equiv A(x-1)^2 + B(x-1) + C$.
 
@@ -167,7 +167,7 @@ $$
 
 The coefficient of $x^3$ is $-15\,120$.
 
-<details>
+</details>
 <summary>Example: Finding the constant term</summary>
 Find the constant term in the expansion of $\left(x + \dfrac{2}{x}\right)^6$.
 
@@ -207,7 +207,7 @@ $$
 
 Where $\deg r(x) < \deg g(x)$ or $r(x) = 0$.
 
-<details>
+</details>
 <summary>Example: Long division</summary>
 Divide $f(x) = 2x^3 + 3x^2 - 5x + 7$ by $g(x) = x^2 - x + 2$.
 
@@ -249,7 +249,7 @@ $$
 F(2) = 3(16) - 2(8) + 2 - 5 = 48 - 16 + 2 - 5 = 29
 $$
 
-<details>
+</details>
 <summary>Example: Remainder with a non-monic linear divisor</summary>
 Find the remainder when $f(x) = 2x^3 - 5x + 3$ is divided by $(2x + 1)$.
 
@@ -276,7 +276,7 @@ $f(3) = 27 - 36 + 3 + 6 = 0$So $(x - 3)$ is a factor.
 
 By division (or by comparing coefficients), $f(x) = (x - 3)(x^2 - x - 2) = (x-3)(x-2)(x+1)$.
 
-<details>
+</details>
 <summary>Example: Finding an unknown constant</summary>
 If $(x + 2)$ is a factor of $f(x) = x^3 + ax^2 - 3x + 10$Find $a$.
 
@@ -300,7 +300,7 @@ $$
 6x^3 - 9x^2 + 12x = 3x(2x^2 - 3x + 4)
 $$
 
-<details>
+</details>
 <summary>Grouping</summary>
 $$
 X^3 + 2x^2 - 3x - 6 = x^2(x+2) - 3(x+2) = (x^2 - 3)(x+2)
@@ -320,7 +320,7 @@ $$
 9x^4 - 16y^2 = (3x^2 + 4y)(3x^2 - 4y)
 $$
 
-<details>
+</details>
 <summary>Sum and difference of cubes</summary>
 $$
 A^3 + b^3 = (a+b)(a^2 - ab + b^2)
@@ -354,7 +354,7 @@ $\mathbb{{'}R{}'}$.
 For polynomials of degree 3 or higher, use the Factor Theorem to find linear factors by testing
 Integer roots (factors of the constant term), then factorize the resulting quotient.
 
-<details>
+</details>
 <summary>Example: Complete factorization</summary>
 Factorize $f(x) = 2x^3 + x^2 - 13x + 6$ completely.
 
@@ -398,7 +398,7 @@ $$
 These relationships between roots and coefficients are essential for DSE problems involving root
 Manipulation.
 
-<details>
+</details>
 <summary>Example: Finding a new equation from roots</summary>
 If $\alpha$ and $\beta$ are roots of $2x^2 - 5x + 1 = 0$Find the equation whose roots are $\alpha^2$ and $\beta^2$.
 
@@ -427,7 +427,7 @@ $$
 \frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{6}{4} = \frac{3}{2}
 $$
 
-<details>
+</details>
 <summary>Extension: Vieta's formulas for cubic equations</summary>
 For $ax^3 + bx^2 + cx + d = 0$ with roots $\alpha, \beta, \gamma$:
 
@@ -457,7 +457,7 @@ $$
 The full expansion is $1 + 12x + 60x^2 + 160x^3 + 240x^4 + 192x^5 + 64x^6$.
 
 2. **Question:** Find the constant term in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^9$.
-<details>
+</details>
 <summary>Answer</summary>
 The general term is $T_{r+1} = \binom{9}{r} (x^2)^{9-r} \cdot \left(\dfrac{1}{x}\right)^r = \binom{9}{r} x^{18 - 3r}$.
 
@@ -484,7 +484,7 @@ From (i): $b = -\dfrac{26}{3}$.
 
 4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$ Find
 $a$$b$And $c$. Hence factorize $f(x)$ completely.
-<details>
+</details>
 <summary>Answer</summary>
 By the Factor Theorem:
 
@@ -559,7 +559,7 @@ $$
 
 6. **Question:** If $\alpha$ and $\beta$ are roots of $3x^2 - 8x + 2 = 0$Find the value of
 $\alpha^3 + \beta^3$ without solving the equation.
-<details>
+</details>
 <summary>Answer</summary>
 From Vieta: $\alpha + \beta = \dfrac{8}{3}$$\alpha\beta = \dfrac{2}{3}$.
 
@@ -591,7 +591,7 @@ $$
 
 8. **Question:** The remainder when $f(x) = x^3 + px^2 + qx + 6$ is divided by $(x-1)$ is $12$. The
 Remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - $f(1) = 1 + p + q + 6 = 12 \implies p + q = 5 \quad \mathrm{(i)}$
@@ -610,7 +610,7 @@ $$
 $$
 
 10. **Question:** Find the coefficient of $x^5$ in the expansion of $(1 + x)^8(1 - x)^6$.
-<details>
+</details>
 <summary>Answer</summary>
 Expand each factor using the binomial theorem and collect the $x^5$ terms.
 
@@ -650,7 +650,7 @@ Product of new roots: $\dfrac{1}{\alpha} \cdot \dfrac{1}{\beta} = \dfrac{1}{3}$.
 The equation is $x^2 - \dfrac{7}{3}x + \dfrac{1}{3} = 0$Or $3x^2 - 7x + 1 = 0$.
 
 12. **Question:** Factorize $f(x) = x^3 - 3x^2 + 4$ completely.
-<details>
+</details>
 <summary>Answer</summary>
 Test integer factors of $4$: try $x = -1$.
 

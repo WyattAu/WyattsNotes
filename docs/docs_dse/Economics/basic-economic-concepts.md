@@ -512,7 +512,7 @@ In income, tastes, prices of other goods, etc.
 
 ## Practice Problems
 
-<details>
+</details>
 <summary>Question 1: Opportunity Cost</summary>
 
 A student has HKD 500 to spend. She can either buy a concert ticket (HKD 500) or a pair of shoes
@@ -575,7 +575,7 @@ Producing exactly on the PPC at this combination, so resources are fully and eff
 - An increase in the quality of resources (better education, improved health of workers)
 - Discovery of new natural resources
 
-<details>
+</details>
 <summary>Question 3: Positive vs Normative</summary>
 
 Classify each of the following statements as positive or normative economics:
@@ -625,7 +625,7 @@ Questions.
   distribution or prioritising certain groups (e.g., party members, the military, workers in key
   industries).
 
-<details>
+</details>
 <summary>Question 5: PPC with Increasing Opportunity Cost</summary>
 
 An economy can produce capital goods and consumer goods. The following combinations are possible:
@@ -703,7 +703,7 @@ Would be pointless unless other factors (transport costs, quality differences) a
 Note: This is a special case. In most DSE problems, opportunity costs will differ between countries,
 Creating a basis for comparative advantage and gains from trade.
 
-<details>
+</details>
 <summary>Question 7: Economic Profit vs Accounting Profit</summary>
 
 A lawyer resigns from her job at a law firm where she earned HKD 600,000 per year. She opens her own
@@ -779,7 +779,7 @@ Factory could either:
 This illustrates a potential disadvantage of division of labour: overproduction when demand is
 Limited, and the difficulty of adjusting highly specialised labour to changing market conditions.
 
-<details>
+</details>
 <summary>Question 9: PPC Shift and Economic Growth</summary>
 
 An economy produces only capital goods (K) and consumer goods (C). The PPC shifts outward such that
@@ -954,7 +954,7 @@ Loss of economic welfare.
 
 ## Problem Set
 
-<details>
+</details>
 <summary>Problem 1: Opportunity Cost Calculation</summary>
 
 A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hectare, selling at USD
@@ -1026,7 +1026,7 @@ provide free university education for all citizens." (c) "Hong Kong's GDP grew b
 will increase the price of imports." (f) "The elderly should receive larger subsidies for
 healthcare."
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) **Positive** -- testable hypothesis about cause and effect. (b) **Normative** -- uses "should"
@@ -1074,7 +1074,7 @@ command Economy, and (iii) a mixed economy:
 
 (a) How many cars to produce (b) How to allocate healthcare resources (c) What wages to pay teachers
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) **Market:** Consumer demand determines output. Firms produce where MR = MC. **Command:** A
@@ -1142,7 +1142,7 @@ For each of the following, state whether it is a free good or an economic good, 
 (a) Sea water at a beach (b) Bottled water at a convenience store (c) Sunlight in a desert (d) Clean
 air in a polluted city (e) Downloading a free software programme
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) **Free good** (in most contexts) -- abundant, no price, zero opportunity cost. Note: in a

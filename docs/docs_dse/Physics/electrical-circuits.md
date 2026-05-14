@@ -83,7 +83,7 @@ $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 A wire has resistance $10 \Omega$. If its length is doubled and its diameter is halved, what is Its
 new resistance?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 New length: $L_2 = 2L$
@@ -145,7 +145,7 @@ $$\frac{I_1}{I_2} = \frac{R_2}{R_1}$$
 Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected in parallel across a
 $12 \mathrm{ V}$ supply. Find the total resistance and the current through each resistor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\frac{1}{R_{\mathrm{total}}} = \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = \frac{3 + 2 + 1}{12} = \frac{6}{12} = \frac{1}{2}$$
@@ -218,7 +218,7 @@ In a circuit with two loops, a $12 \mathrm{ V}$ battery is in the left loop with
 $6 \Omega$ resistor in series. A $6 \mathrm{ V}$ battery is in the right loop with the $6 \Omega$
 Resistor (shared) and a $3 \Omega$ resistor. Find the current through each resistor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Let $I_1$ flow clockwise in the left loop and $I_2$ flow clockwise in the right loop. Current
@@ -293,7 +293,7 @@ A battery has EMF $9 \mathrm{ V}$ and internal resistance $0.5 \Omega$. It is co
 External circuit of resistance $4 \Omega$. Find the current, terminal PD, and power dissipated in
 The external circuit.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$I = \frac{\varepsilon}{R + r} = \frac{9}{4 + 0.5} = \frac{9}{4.5} = 2 \mathrm{ A}$$
@@ -342,7 +342,7 @@ The SI unit is the watt (W), where $1 \mathrm{ W} = 1 \mathrm{ J/s}$.
 A $220 \mathrm{ V}$ electric heater has a power rating of $2000 \mathrm{ W}$. Find the current it
 Draws, its resistance, and the cost of running it for 5 hours at `USD 0.90` per kWh.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$I = \frac{P}{V} = \frac{2000}{220} = 9.09 \mathrm{ A}$$
@@ -425,7 +425,7 @@ The voltmeter draws current and reduces the measured voltage (loading effect).
 Variable resistor $R$. Find the value of $R$ that maximises the power delivered to $R$And Calculate
 this maximum power.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Maximum power transfer occurs when $R = r = 1.5 \Omega$.
@@ -453,7 +453,7 @@ If you get this wrong, revise: Internal Resistance and EMF
 $5.0 \times 10^{-7} \mathrm{ m}^2$ has a resistance of $44 \Omega$. Find the resistivity of
 Nichrome.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 $$\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \times 10^{-5}}{2.0} = 1.1 \times 10^{-5} \Omega\,\mathrm{m}$$
@@ -480,7 +480,7 @@ If you get this wrong, revise: Series and Parallel Circuits
 Connected to two $6 \Omega$ resistors in parallel. Find the current from the battery and the Power
 dissipated in each resistor.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 External resistance: $R_{\mathrm{ext}} = \frac{6 \times 6}{6 + 6} = 3 \Omega$
@@ -516,7 +516,7 @@ If you get this wrong, revise: Potential Divider
 series across a $240 \mathrm{ V}$ supply. Find the current and the power dissipated in each Bulb.
 Which bulb is brighter?
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Resistance of each bulb at rated voltage:
@@ -559,7 +559,7 @@ Series. The resistivity of copper is $1.7 \times 10^{-8} \Omega\,\mathrm{m}$ and
 $1.0 \times 10^{-7} \Omega\,\mathrm{m}$. Find the ratio of power dissipated in the steel Wire to
 that in the copper wire.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Since they are in series, the same current flows through both.
@@ -783,7 +783,7 @@ Three resistors: $R_1 = 4 \Omega$ in series with a parallel combination of $R_2 
 $R_3 = 12 \Omega$. Find the current through each resistor, the terminal PD, and the power Dissipated
 in $R_3$.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Parallel combination: $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{12} = \frac{3}{12} = \frac{1}{4}$So
@@ -828,7 +828,7 @@ $$\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}
 A $220 \mathrm{ V}$ mains supply is connected to a $10 \Omega$ heater and a $20 \Omega$ heater In
 parallel. Find the total power drawn from the supply and the current through each heater.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 Current through $10 \Omega$: $I_1 = \frac{220}{10} = 22.0 \mathrm{ A}$
@@ -910,7 +910,7 @@ Calculate this maximum power.
 (d) Sketch a graph of power delivered to the external resistor versus the resistance $R$ Marking the
 maximum power point.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) From the first case: $V_1 = \varepsilon - I_1 r$
@@ -1014,7 +1014,7 @@ Percentage uncertainty in $R_x$.
 (d) Explain two advantages of using a Wheatstone bridge compared with a simple voltmeter-ammeter
 Method.
 
-<details>
+</details>
 <summary>Solution</summary>
 
 (a) A Wheatstone bridge is balanced when no current flows through the galvanometer. At balance, The

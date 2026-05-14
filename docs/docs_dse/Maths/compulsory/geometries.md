@@ -53,7 +53,7 @@ $$
 
 The midpoint is the average of the respective coordinates of the two endpoints.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Midpoint of $A(2, 6)$ and $B(8, -4)$: $M = \left( \frac{2+8}{2}, \frac{6+(-4)}{2} \right) = (5, 1)$
 - If $M(4, -1)$ is the midpoint of $A(1, 3)$ and $B$Then $B = (2 \times 4 - 1, 2 \times (-1) - 3) = (7, -5)$
@@ -157,7 +157,7 @@ $$
 Where $A$$B$$C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$
 and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 
-<details>
+</details>
 <summary>Examples</summary>
 - Find the equation of the line through $(2, 3)$ and $(6, -1)$: $m = \frac{-1 - 3}{6 - 2} = -1$. Equation: $y - 3 = -1(x - 2)$I.e., $x + y - 5 = 0$
 - Find the equation of the line with gradient $\frac{1}{2}$ and $y$-intercept $-3$: $y = \frac{1}{2}x - 3$I.e., $x - 2y - 6 = 0$
@@ -218,7 +218,7 @@ The point of intersection of two non-parallel lines $A_1x + B_1y + C_1 = 0$ and
 $A_2x + B_2y + C_2 = 0$ is found by solving the system simultaneously. The coordinates $(x, y)$ of
 The intersection satisfy both equations.
 
-<details>
+</details>
 <summary>Examples</summary>
 - Find the intersection of $x + y = 5$ and $2x - y = 1$: Adding gives $3x = 6$So $x = 2$$y = 3$. The intersection is $(2, 3)$.
 
@@ -324,7 +324,7 @@ $$
 \end{aligned}
 $$
 
-<details>
+</details>
 <summary>Examples</summary>
 - Find the equation of the tangent to $x^2 + y^2 = 25$ at $P(3, 4)$: The radius gradient is $\frac{4}{3}$So the tangent gradient is $-\frac{3}{4}$. Equation: $y - 4 = -\frac{3}{4}(x - 3)$I.e., $3x + 4y - 25 = 0$. Alternatively, using the formula: $3x + 4y = 25$.
 - Determine whether the line $3x - 4y + 10 = 0$ is tangent to $(x-1)^2 + (y+2)^2 = 9$: Substitute $y = \frac{3x+10}{4}$ into the circle. The resulting quadratic has discriminant $\Delta = 0$Confirming tangency.
@@ -433,7 +433,7 @@ $$
 \end{aligned}
 $$
 
-<details>
+</details>
 <summary>Examples</summary>
 - Distance between $A(1, 2, 3)$ and $B(4, 6, -3)$: $d = \sqrt{3^2 + 4^2 + (-6)^2} = \sqrt{9 + 16 + 36} = \sqrt{61}$
 - Show that $A(0, 0, 0)$$B(1, 0, 0)$$C(0, 1, 0)$$D(0, 0, 1)$ form a **trirectangular tetrahedron**: $AB = AC = AD = 1$ (edges from the origin) and $BC = BD = CD = \sqrt{2}$ (edges of the base triangle $BCD$). It is not a regular tetrahedron — a regular tetrahedron would require all six edges to be equal. For a regular tetrahedron, use vertices such as $(1,1,1)$$(1,-1,-1)$$(-1,1,-1)$$(-1,-1,1)$.
@@ -523,7 +523,7 @@ $$
 
 ---
 
-<details>
+</details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Find the equation of the perpendicular bisector of the line segment joining
  $A(3, -1)$ and $B(7, 5)$.
@@ -549,7 +549,7 @@ $B(4, 0)$And $C(0, 3)$.
 
 3. **Question:** The line $y = 2x + k$ is tangent to the circle $x^2 + y^2 - 4x - 2y + 1 = 0$. Find
 The value(s) of $k$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Substitute $y = 2x + k$ into $(x-2)^2 + (y-1)^2 = 4$:
@@ -579,7 +579,7 @@ Chord length is $20\mathrm{ cm}$.
 
 5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane
 $x + y + z = 1$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Direction vector of the line: $\mathbf{{'}d{}'} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
@@ -609,7 +609,7 @@ from $A$.
 
 7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes
 Through $(1, 4)$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Since the circle touches the $x$-axis at $(3, 0)$The centre lies on the vertical line $x = 3$ so
@@ -642,7 +642,7 @@ the triangle.
 9. **Question:** Two circles $C_1: x^2 + y^2 - 4x + 2y - 4 = 0$ and
 $C_2: x^2 + y^2 + 2x - 6y + 6 = 0$ intersect at points $A$ and $B$. Find the equation of the common
 Chord $AB$ and the coordinates of $A$ and $B$.
-<details>
+</details>
 <summary>Answer</summary>
 
 - Common chord: Subtract the two equations: $(-4x + 2y - 4) - (2x - 6y + 6) = 0$.
@@ -673,7 +673,7 @@ Coordinates of $D$ and the area of the rectangle.
 11. **Question:** A solid metal cone has base radius $6\mathrm{ cm}$ and slant height
 $10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the curved surface. Find
 (a) the angle of the sector, (b) the radius of the circular sheet, and (c) the area of the sector.
-<details>
+</details>
 <summary>Answer</summary>
 
 - (a) The arc length of the sector equals the circumference of the base: $l = 2\pi(6) = 12\pi$.
