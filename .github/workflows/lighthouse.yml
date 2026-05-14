@@ -54,7 +54,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-main-results
@@ -81,7 +81,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://academics.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-academics-results
@@ -110,7 +110,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://alevel.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-alevel-results
@@ -135,7 +135,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lighthouse -- --collect.url=https://ib.wyattau.com --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-ib-results
@@ -161,7 +161,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run:
           pnpm lighthouse -- --collect.url=https://dse.wyattau.com --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-dse-results
@@ -189,7 +189,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-qualifications-results
@@ -217,7 +217,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://programming.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-programming-results
@@ -245,7 +245,7 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://university.wyattau.com
           --collect.startServerCommand=""
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-university-results
