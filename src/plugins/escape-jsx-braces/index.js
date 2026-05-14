@@ -20,11 +20,8 @@
  */
 const visit = require('unist-util-visit');
 
-const LBRACE = '◆LB◆';
-const RBRACE = '◆RB◆';
-
 module.exports = function escapeJsxBraces() {
-  return (tree, vfile) => {
+  return (tree) => {
     // Collect mdxTextExpression nodes to replace
     const replacements = [];
 

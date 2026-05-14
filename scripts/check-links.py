@@ -211,7 +211,8 @@ def scan_links_in_file(filepath, all_files_headings, all_slugs, docs_dirs):
                     if candidate.endswith(".md"):
                         candidate_path = os.path.join(parent_dir, candidate)
                         try:
-                            fm = extract_frontmatter(open(candidate_path).read(512))
+                            with open(candidate_path) as f:
+                                fm = extract_frontmatter(f.read(512))
                             if fm.get("slug") == basename:
                                 found_file = candidate_path
                                 break
@@ -223,7 +224,8 @@ def scan_links_in_file(filepath, all_files_headings, all_slugs, docs_dirs):
                         sub_path = os.path.join(resolved, sub_entry)
                         if os.path.isfile(sub_path) and sub_entry.endswith(".md"):
                             try:
-                                fm = extract_frontmatter(open(sub_path).read(512))
+                                with open(sub_path) as f:
+                                    fm = extract_frontmatter(f.read(512))
                                 if fm.get("slug") == basename:
                                     found_file = sub_path
                                     break

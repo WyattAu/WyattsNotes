@@ -24,8 +24,6 @@ import os
 import sys
 import glob
 
-_FENCE_OPEN_RE = re.compile(r"^( {0,3})((`{3,}) ~(?![`~])[\s\S]*?~|(`{3,})([^`]*))$")
-
 
 def find_code_fence_regions(content):
     """

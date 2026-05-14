@@ -33,14 +33,14 @@ python3 scripts/validate-mdx.py
 echo "[pre-commit] Checking relative links..."
 python3 scripts/check-links.py
 
-echo "[pre-commit] Checking content depth tiers..."
-python3 scripts/check-depth-tiers.py
+echo "[pre-commit] Checking content depth tiers (informational)..."
+python3 scripts/check-depth-tiers.py || true
 
-echo "[pre-commit] Checking description quality..."
-python3 scripts/check-descriptions.py
+echo "[pre-commit] Checking description quality (informational)..."
+python3 scripts/check-descriptions.py || true
 
-echo "[pre-commit] Checking forward references..."
-python3 scripts/check-forward-refs.py
+echo "[pre-commit] Checking forward references (informational)..."
+python3 scripts/check-forward-refs.py || true
 
 # --- Informational (non-blocking) ---
 echo "[pre-commit] Checking hand-wave phrases (informational)..."

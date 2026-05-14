@@ -1,6 +1,8 @@
 ---
 title: Git Directory Structure
-description: "Git Directory Structure — The `.git` Directory; Key Files; HEAD; config including key definitions, derivations, and problem-solving techniques."
+description:
+  'Git Directory Structure — The `.git` Directory; Key Files; HEAD; config including key
+  definitions, derivations, and problem-solving techniques.'
 date: 2025-06-03T12:00:00.000Z
 tags:
   - git
@@ -9,9 +11,12 @@ categories:
   - CS
 slug: git-directory-structure
 ---
+
 ## The `.git` Directory
 
-The `.git` directory is the heart of a Git repository. It contains all metadata, object data, configuration, and hooks. Understanding its structure is essential for debugging, scripting, and recovering from corruption.
+The `.git` directory is the heart of a Git repository. It contains all metadata, object data,
+configuration, and hooks. Understanding its structure is essential for debugging, scripting, and
+recovering from corruption.
 
 ```
 .git/
@@ -64,7 +69,8 @@ $ cat .git/HEAD
 ref: refs/heads/main
 ```
 
-A symbolic reference pointing to the current branch. When in detached HEAD state, it contains a raw SHA-1 hash.
+A symbolic reference pointing to the current branch. When in detached HEAD state, it contains a raw
+SHA-1 hash.
 
 ### config
 
@@ -94,7 +100,8 @@ Repository-local configuration, overriding global and system settings:
 
 ### description
 
-Used by GitWeb and GitLab to display a human-readable description of the repository. Default content:
+Used by GitWeb and GitLab to display a human-readable description of the repository. Default
+content:
 
 ```
 Unnamed repository; edit this file 'description' to name the repository.
@@ -102,7 +109,8 @@ Unnamed repository; edit this file 'description' to name the repository.
 
 ### info/exclude
 
-Local gitignore rules that are **not shared** with other developers (unlike `.gitignore`Which is tracked):
+Local gitignore rules that are **not shared** with other developers (unlike `.gitignore`Which is
+tracked):
 
 ```bash
 # .git/info/exclude
@@ -112,7 +120,9 @@ Local gitignore rules that are **not shared** with other developers (unlike `.gi
 
 ## The Object Store (`.git/objects/`)
 
-The object store is the content-addressable filesystem at the core of Git. It contains four types of objects: blobs, trees, commits, and tags. See [Git Objects](../02-fundamentals/02-git-objects.md) for the full treatment.
+The object store is the content-addressable filesystem at the core of Git. It contains four types of
+objects: blobs, trees, commits, and tags. See [Git Objects](../02-fundamentals/02-git-objects.md)
+for the full treatment.
 
 ### Loose Objects
 
@@ -125,7 +135,8 @@ The object store is the content-addressable filesystem at the core of Git. It co
 └── ...
 ```
 
-Each loose object is stored as a zlib-compressed file. The filename is the first 2 hex characters of the SHA-1, and the file content is the remaining 38 characters' worth of compressed data.
+Each loose object is stored as a zlib-compressed file. The filename is the first 2 hex characters of
+the SHA-1, and the file content is the remaining 38 characters' worth of compressed data.
 
 ```bash
 # Decompress and view a loose object
@@ -139,7 +150,8 @@ Hello, World
 
 ### Packfiles
 
-When the number of loose objects exceeds `gc.auto` (default: 6700), Git packs them into a single packfile under `.git/objects/pack/`:
+When the number of loose objects exceeds `gc.auto` (default: 6700), Git packs them into a single
+packfile under `.git/objects/pack/`:
 
 ```
 .git/objects/pack/
@@ -150,7 +162,8 @@ When the number of loose objects exceeds `gc.auto` (default: 6700), Git packs th
 
 The pack format stores objects more efficiently than loose objects by:
 
-1. **Delta compression**: Storing objects as deltas against similar objects (e.g., commit N+1 as a delta of commit N).
+1. **Delta compression**: Storing objects as deltas against similar objects (e.g., commit N+1 as a
+   delta of commit N).
 2. **Single file**: All objects in one file, reducing filesystem overhead.
 3. **Index file**: A binary index (.idx) enables $O(1)$ object lookup by SHA-1.
 
@@ -158,21 +171,22 @@ See [Packing and Garbage Collection](./02-packing-and-garbage-collection.md) for
 
 ## The Hooks Directory (`.git/hooks/`)
 
-Git hooks are scripts that run automatically at specific points in the Git workflow. They are stored in `.git/hooks/` and must be executable.
+Git hooks are scripts that run automatically at specific points in the Git workflow. They are stored
+in `.git/hooks/` and must be executable.
 
 ### Available Hooks
 
-| Hook | Trigger | Use Case |
+| Hook                 | Trigger                        | Use Case                           |
 | -------------------- | ------------------------------ | ---------------------------------- |
-| `pre-commit` | Before commit is created | Linting, formatting, running tests |
-| `commit-msg` | After message is written | Validate commit message format |
-| `post-commit` | After commit is created | Notifications |
-| `pre-push` | Before pushing | Run full test suite, security scan |
-| `post-receive` | On remote after receiving push | Deploy, send notifications |
-| `pre-rebase` | Before rebase starts | Prevent rebasing published commits |
-| `post-checkout` | After checkout | Rebuild generated files |
-| `post-merge` | After merge | Rebuild generated files |
-| `prepare-commit-msg` | Before message editor opens | Template commit messages |
+| `pre-commit`         | Before commit is created       | Linting, formatting, running tests |
+| `commit-msg`         | After message is written       | Validate commit message format     |
+| `post-commit`        | After commit is created        | Notifications                      |
+| `pre-push`           | Before pushing                 | Run full test suite, security scan |
+| `post-receive`       | On remote after receiving push | Deploy, send notifications         |
+| `pre-rebase`         | Before rebase starts           | Prevent rebasing published commits |
+| `post-checkout`      | After checkout                 | Rebuild generated files            |
+| `post-merge`         | After merge                    | Rebuild generated files            |
+| `prepare-commit-msg` | Before message editor opens    | Template commit messages           |
 
 ### Hook Script Template
 
@@ -185,24 +199,26 @@ echo "Running pre-commit checks..."
 # Run linter
 npm run lint
 if [ $? -ne 0 ]; then
-    echo "❌ Linting failed. Commit aborted."
+    echo "[FAIL] Linting failed. Commit aborted."
     exit 1
 fi
 
 # Run type checker
 npx tsc --noEmit
 if [ $? -ne 0 ]; then
-    echo "❌ Type checking failed. Commit aborted."
+    echo "[FAIL] Type checking failed. Commit aborted."
     exit 1
 fi
 
-echo "✅ All checks passed."
+echo "[PASS] All checks passed."
 exit 0
 ```
 
 :::info
 
-Hooks in `.git/hooks/` are **not tracked** by Git and therefore not shared with other developers. To share hooks across a team, use a tool like [husky](https://typicode.github.io/husky/) (which stores hooks in the repository) or a symlink to a tracked scripts directory.
+Hooks in `.git/hooks/` are **not tracked** by Git and therefore not shared with other developers. To
+share hooks across a team, use a tool like [husky](https://typicode.github.io/husky/) (which stores
+hooks in the repository) or a symlink to a tracked scripts directory.
 
 :::
 
@@ -237,7 +253,8 @@ $ git gc --prune=now
 
 :::warning
 
-Always **back up** the `.git` directory before attempting recovery. Some operations (`git gc --prune=now`) are irreversible.
+Always **back up** the `.git` directory before attempting recovery. Some operations
+(`git gc --prune=now`) are irreversible.
 
 :::
 

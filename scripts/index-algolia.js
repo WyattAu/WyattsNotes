@@ -219,10 +219,8 @@ async function main() {
     try {
       if (isFullReindex) {
         try {
-          const { algoliasearch } = require('algoliasearch');
           // Clear existing records via replaceAllObjects (v5 API)
           console.log(`[${site.name}] Clearing index ${site.indexName}`);
-          const tmpIndex = client.initIndex(`${site.indexName}_tmp_${Date.now()}`);
           // v5 doesn't have initIndex, use saveObjects with empty array then delete/recreate
           // Simpler: just push all records (saveObjects replaces by objectID)
         } catch {

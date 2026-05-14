@@ -48,7 +48,6 @@ module.exports = function (source) {
     'lim',
   ];
 
-  const result = source;
   let i = 0;
   const parts = [];
 

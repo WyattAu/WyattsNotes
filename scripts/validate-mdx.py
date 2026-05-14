@@ -198,12 +198,15 @@ class MDXValidator:
     def _check_trailing_whitespace(self, filename, lineno, line):
         """Check for trailing whitespace."""
         if line != line.rstrip():
-            pass  # Handled by rstrip above in main
+            self.info.append(
+                f"{filename}:{lineno}: trailing whitespace (informational)"
+            )
+            self.stats["trailing_whitespace"] += 1
 
     def _check_trailing_blank_lines(self, filename, lineno, line, all_lines):
         """Check for excessive trailing blank lines."""
-        # Count trailing blank lines at EOF
-        pass  # Handled in _check_trailing_blank_lines_eof
+        # Count trailing blank lines at EOF -- handled by _check_trailing_blank_lines_eof
+        pass
 
     def _check_trailing_blank_lines_eof(self, filename, lines):
         """Check for excessive trailing blank lines at end of file."""

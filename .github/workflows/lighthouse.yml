@@ -5,7 +5,10 @@ on:
     workflows:
       - Deploy Main Site to Cloudflare Pages
       - Deploy Academics to Cloudflare Pages
-      - Deploy A-Levels to Cloudflare Pages
+      - Deploy A-Level Maths & Physics to Cloudflare Pages
+      - Deploy A-Level Sciences to Cloudflare Pages
+      - Deploy IB to Cloudflare Pages
+      - Deploy DSE to Cloudflare Pages
       - Deploy Qualifications to Cloudflare Pages
       - Deploy Programming to Cloudflare Pages
       - Deploy University to Cloudflare Pages
@@ -23,6 +26,8 @@ on:
           - main
           - academics
           - alevel
+          - ib
+          - dse
           - qualifications
           - programming
           - university
@@ -35,6 +40,7 @@ jobs:
       Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
       == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'main'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -61,6 +67,7 @@ jobs:
       Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
       == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'academics'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -83,10 +90,13 @@ jobs:
   lighthouse-alevel:
     name: Lighthouse - A-Levels
     if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy A-Levels to
-      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
-      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'alevel'))
+      (github.event_name == 'workflow_run' && (github.event.workflow_run.name == 'Deploy A-Level
+      Maths & Physics to Cloudflare Pages' || github.event.workflow_run.name == 'Deploy A-Level
+      Sciences to Cloudflare Pages') && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
+      'alevel'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -106,6 +116,57 @@ jobs:
           name: lighthouse-alevel-results
           path: .lighthouseci
 
+  lighthouse-ib:
+    name: Lighthouse - IB
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy IB to
+      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
+      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'ib'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lighthouse -- --collect.url=https://ib.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-ib-results
+          path: .lighthouseci
+
+  lighthouse-dse:
+    name: Lighthouse - DSE
+    if:
+      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy DSE to
+      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
+      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'dse'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run:
+          pnpm lighthouse -- --collect.url=https://dse.wyattau.com --collect.startServerCommand=""
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-dse-results
+          path: .lighthouseci
+
   lighthouse-qualifications:
     name: Lighthouse - Qualifications
     if:
@@ -114,6 +175,7 @@ jobs:
       (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
       'qualifications'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -141,6 +203,7 @@ jobs:
       (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
       'programming'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -168,6 +231,7 @@ jobs:
       (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
       'university'))
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6

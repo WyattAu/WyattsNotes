@@ -28,16 +28,6 @@ VAGUE_QUALIFIERS = [
     r"\bsuch as\.$",
 ]
 
-# Phrases that indicate vague description
-VAGUE_PHRASES_IN_DESC = [
-    r"\bvarious\b",
-    r"\bseveral\b",
-    r"\bsome\b",
-    r"\bmany\b",
-    r"\bdifferent\b",
-    r"\bvarious topics\b",
-]
-
 
 def parse_frontmatter(filepath):
     """Parse frontmatter. Returns dict or None."""

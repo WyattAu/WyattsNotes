@@ -1,6 +1,8 @@
 ---
 title: Async and Futures
-description: "Async and Futures — Why Async Matters in Dart; Futures; Creating Futures; async/await with worked examples and exam-style questions."
+description:
+  'Async and Futures — Why Async Matters in Dart; Futures; Creating Futures; async/await with worked
+  examples and exam-style questions.'
 date: 2025-07-20T11:00:00.000Z
 tags:
   - dart
@@ -10,6 +12,7 @@ categories:
   - dart
 slug: async-and-futures
 ---
+
 ## Why Async Matters in Dart
 
 Dart runs on a **single-threaded event loop** with an isolated memory model. Unlike languages with
@@ -185,10 +188,10 @@ JavaScript's `Observable`.
 
 ### Stream Types
 
-| Type | Description | Use Case |
+| Type                    | Description                                                    | Use Case                                   |
 | ----------------------- | -------------------------------------------------------------- | ------------------------------------------ |
-| **Single subscription** | One listener only; events are buffered if no listener exists | File I/O, HTTP response body |
-| **Broadcast** | Multiple listeners; events are discarded if no listener exists | UI events, sensor data, WebSocket messages |
+| **Single subscription** | One listener only; events are buffered if no listener exists   | File I/O, HTTP response body               |
+| **Broadcast**           | Multiple listeners; events are discarded if no listener exists | UI events, sensor data, WebSocket messages |
 
 ```dart
 // Creating a single-subscription stream
@@ -350,10 +353,10 @@ Instead of copying.
 
 Dart's event loop processes events in this order:
 
-| Priority | Queue | Description |
-| ----------- | --------------- | -------------------------------------------------------- |
+| Priority    | Queue           | Description                                          |
+| ----------- | --------------- | ---------------------------------------------------- |
 | 1 (highest) | Microtask queue | `scheduleMicrotask``Future.then``await` continuation |
-| 2 | Event queue | I/O callbacks, timers, gestures, isolates |
+| 2           | Event queue     | I/O callbacks, timers, gestures, isolates            |
 
 ```dart
 // Execution order demonstration
@@ -392,7 +395,7 @@ Microtasks) run before `Future.delayed` callbacks (which schedule events).
 ```dart
 // Bad: fire-and-forget — errors are silently swallowed
 Future<void> processData() async {
-  fetchUser(); // ⚠️ Not awaited — errors are unhandled
+  fetchUser(); // WARNING: Not awaited -- errors are unhandled
 }
 
 // Good: await the future

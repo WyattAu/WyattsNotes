@@ -1,6 +1,8 @@
 ---
 title: Variables
-description: "Variables — Specifiers; Types; Mutation Specifier; `final` specifier including key definitions, derivations, and problem-solving techniques."
+description:
+  'Variables — Specifiers; Types; Mutation Specifier; `final` specifier including key definitions,
+  derivations, and problem-solving techniques.'
 date: 2025-07-13T20:44:32.129Z
 tags:
   - dart
@@ -8,6 +10,7 @@ categories:
   - dart
 slug: variables
 ---
+
 ## Specifiers
 
 ### Types
@@ -44,17 +47,15 @@ dynamic text = "hello";
 dynamic number = 22;
 ```
 
-:::tip
-The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
-`var` or explicit typing.
-:::
+:::tip The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
+`var` or explicit typing. :::
 
 ### Mutation Specifier
 
 #### `final` specifier
 
-Variables with `final` specifier is instantiated once and will prevent mutation afterwards, 
-The instantiation is performed when calling the constructor:
+Variables with `final` specifier is instantiated once and will prevent mutation afterwards, The
+instantiation is performed when calling the constructor:
 
 ```dart
 class Foo extends StatelessWidget {
@@ -185,17 +186,15 @@ Only two number types exists in Dart, `int` and `double`. `int` represents 64-bi
 Platforms, but is limited to 53-bit precision when compiled to JavaScript. `double` follows the IEEE
 754 standard and is also 64 bits.
 
-:::info
-These numbers are inherited from the `num` class, with operations and methods such as
-`abs()``floor()`Etc. Note that `num``double``int` cannot be extended.
-:::
+:::info These numbers are inherited from the `num` class, with operations and methods such as
+`abs()``floor()`Etc. Note that `num``double``int` cannot be extended. :::
 
 #### String Literals
 
-Only one String type exists in Dart, `String`Which holds a sequence of characters specify in
-UTF-16 code. Within String declarations `""``${ \\ expression }` can be declared, and any
-Expression that can evaluates to String can be placed within. A raw `String` can be created with
-Declarator `r` infront of the string:
+Only one String type exists in Dart, `String`Which holds a sequence of characters specify in UTF-16
+code. Within String declarations `""``${ \\ expression }` can be declared, and any Expression that
+can evaluates to String can be placed within. A raw `String` can be created with Declarator `r`
+infront of the string:
 
 <div className="godbolt-container">
  <iframe
@@ -367,7 +366,7 @@ List<String> names = ['Alice', 'Bob'];
 // Fixed-length list
 var fixed = List<int>.filled(3, 0);
 fixed[0] = 42;
-// fixed.add(99); // ❌ Unsupported operation: Cannot add to a fixed-length list
+// fixed.add(99); // ERROR: Unsupported operation: Cannot add to a fixed-length list
 
 // Growable list
 var growable = List<int>.empty(growable: true);
@@ -402,8 +401,8 @@ numbers.sublist(1, 3);             // [2, 3]
 
 :::warning
 
-`List.map()``List.where()`And similar methods return `Iterable`Not `List`. If you need a
-`List`Wrap with `.toList()`:
+`List.map()``List.where()`And similar methods return `Iterable`Not `List`. If you need a `List`Wrap
+with `.toList()`:
 
 ```dart
 var doubled = numbers.map((n) => n * 2).toList();
