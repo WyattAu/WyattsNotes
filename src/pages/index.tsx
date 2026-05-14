@@ -24,41 +24,41 @@ const subjectGroups: SubjectGroup[] = [
     label: 'Academics',
     subjects: [
       {
-        name: 'IB Notes',
-        files: 79,
-        lines: '61.8K',
-        href: 'https://academics.wyattau.com/docs/ib/intro',
-        tag: 'HL/SL',
-        desc: 'Diploma Programme — Maths, Physics, Chemistry, Computer Science, English, History',
-      },
-      {
         name: 'A-Level',
-        files: 115,
-        lines: '79.6K',
-        href: 'https://alevel.wyattau.com/docs/alevel/intro',
+        files: 286,
+        lines: '174.2K',
+        href: 'https://alevel.wyattau.com',
         tag: 'A*',
         desc: 'Full A* coverage — Computer Science, Maths, Physics, Economics, Further Maths',
       },
       {
+        name: 'IB Notes',
+        files: 211,
+        lines: '142.9K',
+        href: 'https://github.com/WyattAu/WyattsNotes/tree/main/docs/docs_ib',
+        tag: 'HL/SL',
+        desc: 'Diploma Programme — Maths, Physics, Chemistry, Computer Science, English, History',
+      },
+      {
         name: 'DSE',
-        files: 46,
-        lines: '41.9K',
-        href: 'https://academics.wyattau.com/docs/dse/intro',
+        files: 141,
+        lines: '100.5K',
+        href: 'https://github.com/WyattAu/WyattsNotes/tree/main/docs/docs_dse',
         tag: 'HKDSE',
         desc: 'Hong Kong Diploma of Secondary Education — Physics, Chemistry, Biology, Economics, ICT',
       },
       {
         name: 'GCSE',
-        files: 26,
-        lines: '18.8K',
+        files: 49,
+        lines: '24.8K',
         href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',
         tag: 'AQA/Edexcel/OCR',
         desc: 'General Certificate of Secondary Education — Maths, Physics, Chemistry, Biology, Computer Science',
       },
       {
         name: 'AP',
-        files: 26,
-        lines: '18.8K',
+        files: 37,
+        lines: '26.4K',
         href: 'https://qualifications.wyattau.com/docs/qualifications/ap/intro',
         tag: 'College Board',
         desc: 'Advanced Placement — Maths, Physics, Chemistry, Biology, Computer Science',
@@ -66,7 +66,7 @@ const subjectGroups: SubjectGroup[] = [
       {
         name: 'Scottish Highers',
         files: 26,
-        lines: '18.4K',
+        lines: '18.5K',
         href: 'https://qualifications.wyattau.com/docs/qualifications/highers/intro',
         tag: 'SQA',
         desc: 'Scottish Qualifications Authority — Maths, Physics, Chemistry, Biology, Computer Science',
@@ -74,10 +74,23 @@ const subjectGroups: SubjectGroup[] = [
       {
         name: 'Irish LC',
         files: 26,
-        lines: '19K',
+        lines: '19.2K',
         href: 'https://qualifications.wyattau.com/docs/qualifications/ilc/intro',
         tag: 'SEC',
         desc: 'Irish Leaving Certificate — Maths, Physics, Chemistry, Biology, Computer Science',
+      },
+    ],
+  },
+  {
+    label: 'University',
+    subjects: [
+      {
+        name: 'University Notes',
+        files: 34,
+        lines: '56.4K',
+        href: 'https://university.wyattau.com/docs/intro',
+        tag: 'Undergrad',
+        desc: 'Mathematics, Physics, Computing — STEP, MAT, TMUA admissions prep included',
       },
     ],
   },
@@ -87,10 +100,34 @@ const subjectGroups: SubjectGroup[] = [
       {
         name: 'C++',
         files: 122,
-        lines: '83K',
+        lines: '84.0K',
         href: 'https://programming.wyattau.com/docs/cpp/intro',
         tag: 'C++20/23',
         desc: 'Systems programming — C++20/23, templates, concurrency, standard library',
+      },
+      {
+        name: 'TypeScript',
+        files: 10,
+        lines: '6.7K',
+        href: 'https://programming.wyattau.com/docs/languages/typescript/types-and-annotations',
+        tag: '5.x',
+        desc: 'Type-safe JavaScript — type system, generics, decorators, tooling, patterns',
+      },
+      {
+        name: 'Dart',
+        files: 21,
+        lines: '18.5K',
+        href: 'https://programming.wyattau.com/docs/languages/dart/intro',
+        tag: 'Flutter',
+        desc: 'Dart 3 & Flutter — pattern matching, sealed classes, FFI, state management, testing',
+      },
+      {
+        name: 'Go',
+        files: 15,
+        lines: '4.8K',
+        href: 'https://programming.wyattau.com/docs/languages/go/intro',
+        tag: '1.22+',
+        desc: 'Systems programming — goroutines, channels, interfaces, modules, testing, stdlib',
       },
       {
         name: 'Java',
@@ -109,20 +146,20 @@ const subjectGroups: SubjectGroup[] = [
         desc: 'Deep reference — async, types, internals, decorators, descriptors, packaging, protocols',
       },
       {
+        name: 'Kotlin',
+        files: 11,
+        lines: '3.6K',
+        href: 'https://programming.wyattau.com/docs/languages/kotlin/intro',
+        tag: 'JVM',
+        desc: 'Modern JVM language — coroutines, sealed classes, null safety, DSLs, Android',
+      },
+      {
         name: 'Rust',
         files: 17,
         lines: '15.9K',
         href: 'https://programming.wyattau.com/docs/languages/rust/intro',
         tag: '2024',
         desc: 'Systems programming — ownership, lifetimes, unsafe, async, channels, traits, Cargo, macros',
-      },
-      {
-        name: 'Dart',
-        files: 21,
-        lines: '18.3K',
-        href: 'https://programming.wyattau.com/docs/languages/dart/intro',
-        tag: 'Flutter',
-        desc: 'Dart 3 & Flutter — pattern matching, sealed classes, FFI, state management, testing',
       },
     ],
   },
@@ -226,9 +263,9 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-const totalFiles = 709;
-const totalLines = '491K';
-const totalSubjects = 23;
+const totalFiles = 1211;
+const totalLines = '862K';
+const totalSubjects = 28;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();

@@ -1,393 +1,209 @@
-# Roadmap
+# Wyatt's Notes — Production Roadmap
 
-**Repository:** WyattAu/WyattsNotes **Last Updated:** 2026-05-12 **Scope:** Full monorepo across 9
-Docusaurus sub-sites
+> Generated 2026-05-14. Reflects current state of the monorepo.
 
-> **Detailed roadmap with SLOs, decision records, and deployment diagrams:** See
-> [`.specs/02_architecture/production_roadmap.md`](./.specs/02_architecture/production_roadmap.md)
->
-> **Current state audit:** See
-> [`.specs/00_requirements/full_audit_report.md`](./.specs/00_requirements/full_audit_report.md)
+## Current State
 
----
+| Metric         | Value                                                                         |
+| -------------- | ----------------------------------------------------------------------------- |
+| Total files    | 1,211 (.md/.mdx)                                                              |
+| Total lines    | 862K                                                                          |
+| Subjects       | 28                                                                            |
+| Deployed sites | 6 (main, alevel, qualifications, programming, university, academics-redirect) |
+| CI/CD          | GitHub Actions (8-job pipeline)                                               |
+| Search         | Algolia (8 indices)                                                           |
+| Hosting        | Cloudflare Pages (via wrangler)                                               |
+| License        | AGPLv3                                                                        |
 
-## Current State Summary
+## Completed (This Audit)
 
-| Metric                | Value                                                                                                                                                                                                      |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Content files         | 1,207 markdown files                                                                                                                                                                                       |
-| Relative links        | 3,016 (0 broken)                                                                                                                                                                                           |
-| MDX validation errors | 0                                                                                                                                                                                                          |
-| TypeScript errors     | 0                                                                                                                                                                                                          |
-| ESLint errors         | 0                                                                                                                                                                                                          |
-| Sub-sites             | 9 (main + 8 content deployments)                                                                                                                                                                           |
-| Subjects covered      | 23 (IB, A-Level, DSE, GCSE, AP, Scottish Highers, Irish LC, C++, Java, Python, Rust, Dart, Linux, Networking, Databases, Security, TrueNAS, Tuning, Git, Algorithms, Probabilistic ML, General, Licensing) |
-| Approximate content   | 491K lines across 709 files                                                                                                                                                                                |
+- All 69 tests passing (63 original + 6 new for webpack loader)
+- Typecheck clean (0 errors)
+- Lint clean (0 errors, 0 warnings)
+- 2,184 links verified (0 broken)
+- 1,211/1,211 files have descriptions
+- 0 handwave phrases
+- 100% Algolia search index coverage
+- Fixed 8 lint warnings, 7 emoji violations, script quality issues
+- Fixed CI/CD: timeout-minutes, lighthouse workflow names, missing secrets
+- Fixed webpack loader for nested braces in `\mathrm{}` (resolves MDX build errors in
+  wireless-networking.md and 2_definitions.md)
+- Fixed landing page: 2 broken links (IB, DSE), added 4 missing entries (Go, Kotlin, TypeScript,
+  University), updated all stale file/line counts
 
-### Quality Gates Status
+## Known Blockers
 
-All automated quality gates pass:
+### 1. MDX Build Still Uses `continue-on-error: true`
 
-- TypeScript typecheck (`tsc --noEmit`)
-- ESLint with strict rules (`--max-warnings=0`)
-- Prettier formatting
-- markdownlint (MD001, MD003, MD004, MD007, MD024, MD033, MD034, MD041, MD046)
-- MDX validation (emoji detection, admonition formatting, raw HTML, trailing blanks)
-- Link checker (relative links, directory resolution, anchor validation, slug-aware fallback)
-- Lychee external link checker (CI only)
-- Content standard enforcement (CONTENT_STANDARD.md)
-- Content depth tier validation (`check-depth-tiers.py`)
-- Description quality validation (`check-descriptions.py`)
-- Hand-wave phrase detection (`check-handwaves.py`, informational)
-- Forward reference detection (`check-forward-refs.py`, informational)
-- Search index coverage analysis (`check-search-index-coverage.py`, informational)
+The webpack loader fix handles the `\mathrm{PMK{}}` pattern, but the CI build step still has
+`continue-on-error: true` because there may be other MDX edge cases in the 1,211-file corpus. After
+the loader fix is deployed and verified, remove `continue-on-error` and fix any remaining failures.
 
----
+**Action:** Deploy loader fix, monitor CI, then set `continue-on-error: false`.
 
-## Phase 1: Content Completion (Near-Term)
+### 2. IB and DSE Not Deployed
 
-### 1.1 Probabilistic ML Expansion
+Content exists (IB: 211 files / 142.9K lines, DSE: 141 files / 100.5K lines) with dedicated
+Docusaurus configs (`docusaurus.ib.config.ts`, `docusaurus.dse.config.ts`), but:
 
-**Status:** 3 files, 1.7K lines. Severely underdeveloped relative to depth tier requirements.
+- `ib.wyattau.com` — no DNS record
+- `dse.wyattau.com` — no DNS record
+- `academics.wyattau.com` — redirect stub to `ib.wyattau.com` (dead end)
 
-**Completed from restructure plan (`.spec/definitions_restructure_spec.md`):**
+Landing page now links IB and DSE to their GitHub source directories until deployment is ready.
 
-- Phase 2: All 7 accuracy fixes applied (Event, Equivalence Relation, Lipschitz, a.e. measurability,
-  absolute continuity, Space of Probability Measures, RCP vs RCD distinction)
-- Phase 3: All 6 missing definitions added (LOTUS, CLT, Reparameterization Trick, Positive Definite
-  Kernels + Moore-Aronszajn, Stochastic Processes + SDEs, Jensen-Shannon Divergence)
-- Phase 4: Chapter reorganization complete (Covariance Matrix moved, Bochner definitions
-  consolidated, Probability Metrics & Generative Foundations section created)
+**Action:** Add Cloudflare DNS records, create deploy workflows for IB and DSE, update landing page
+links once live.
 
-**Remaining tasks:**
+### 3. Dependabot PRs Failing
 
-- [ ] Expand to meet Tier 4 depth requirements (150+ lines per file)
-- [ ] Add worked examples for all major theorems
-- [ ] Cross-reference with university maths/physics content
+- `deps: bump react 19.2.0 → 19.2.6` — CI failed
+- `ci: bump actions/upload-artifact 4 → 7` — test-deploy failed
 
-### 1.2 Licensing Section
+**Action:** Review and fix these PRs. The upload-artifact v7 may need workflow syntax changes.
 
-**Status:** 1 file, 1.0K lines → expanded to include EPL 2.0 and Boost 1.0.
+### 4. Pre-existing Content Issues
 
-**Completed:**
+- 109 files with trailing whitespace (informational, not blocking)
+- 55 depth tier issues (informational, not blocking)
+- Some MDX files use LaTeX patterns that may need loader attention
 
-- [x] Added EPL 2.0 section (Eclipse Public License): file-level copyleft, patent grant, enterprise
-      Java ecosystem
-- [x] Added Boost Software License 1.0 section: permissive, C++ ecosystem, BSL naming caveat
-- [x] Updated comparison table with EPL 2.0 and Boost 1.0 rows
+## Phase 1: Hardening (Immediate)
 
-**Remaining tasks:**
+### 1.1 Remove `continue-on-error` from build step
 
-- [ ] Add Creative Commons licenses (CC BY, CC BY-SA, CC BY-NC) for content licensing
-- [ ] Add dual licensing section (MySQL/Oracle model, Qt model)
-- [ ] Add compliance workflows (CLA, DCO, contributor agreements)
+- [ ] Deploy webpack loader fix
+- [ ] Run full build locally, verify 0 errors
+- [ ] Remove `continue-on-error: true` from CI build step in `ci.yml`
+- [ ] Monitor 3+ CI runs for green builds
 
-### 1.3 General / Meta Section
+### 1.2 Fix Dependabot PRs
 
-**Status:** 10 files, 4.8K lines.
+- [ ] Investigate react 19.2.6 CI failure
+- [ ] Investigate actions/upload-artifact v7 test-deploy failure
+- [ ] Merge or close both PRs
 
-**Completed:**
+### 1.3 Deploy IB and DSE
 
-- [x] Ensure dev environment setup is current (Node 22, pnpm 10, corepack)
-- [x] Fix CONTRIBUTING.md to use pnpm instead of npm
-- [x] Fix stale frontmatter.json path (docs_licensing-notes -> docs_tools/licensing)
-- [x] Add sidebar_position to licensing software-licensing.md
+- [ ] Add Cloudflare DNS A/CNAME records for `ib.wyattau.com` and `dse.wyattau.com`
+- [ ] Create `.github/workflows/deploy-ib.yml` and `deploy-dse.yml` (model on existing deploy
+      workflows)
+- [ ] Add IB/DSE to lighthouse monitoring workflow
+- [ ] Update landing page links from GitHub to live URLs
+- [ ] Update `academics.wyattau.com` redirect (currently dead-ends at `ib.wyattau.com`)
 
-**Tasks:**
+### 1.4 Trailing Whitespace Cleanup
 
-- [ ] Review for depth tier compliance
-- [ ] Add productivity tooling recommendations
+- [ ] Run automated fix:
+      `find docs -name '*.md' -o -name '*.mdx' | xargs sed -i 's/[[:space:]]*$//'`
+- [ ] Commit as single cleanup PR
+- [ ] Remove informational status from trailing whitespace check in pre-commit hook
 
-### 1.4 University Content Expansion
+## Phase 2: Content Quality
 
-**Priority:** High. University notes are the most technically demanding content.
+### 2.1 Depth Tier Completion
 
-**Status:** Gap analysis complete. `.specs/01_research/content_gap_analysis.md`
+55 sections have stub depth tiers. Each needs meaningful content:
 
-**Findings from scan:**
+- [ ] Audit all 55 stub sections
+- [ ] Prioritize by traffic (Algolia analytics) and syllabus importance
+- [ ] Target: 30 sections filled within 30 days
 
-- Only 33 files across 4 broad topics (admissions, computing, mathematics, physics)
-- Missing entire disciplines: Chemistry, Biology, Engineering, Statistics, Economics, Philosophy
-- Mathematics: 9 files vs typical undergrad math curriculum with 30+ courses
-- Physics: 8 files with no quantum mechanics, thermodynamics, or E&M deep-dive
+### 2.2 Missing Intro Pages
 
-**Tasks:**
+Some sections lack `intro.md`:
 
-- [ ] Complete Real Analysis coverage
-- [ ] Expand Quantum Mechanics notes
-- [ ] Add Algorithms and Data Structures university-level content
-- [ ] Ensure all proofs meet Tier 4 standards (precise definitions, complete proofs or detailed
-      sketches)
+- [ ] `docs/docs_languages/typescript/` — no intro.md
+- [ ] `docs/docs_languages/dart/` — no intro.md
+- [ ] Audit all 28 subjects for missing intro pages
 
----
+### 2.3 Content Expansion
 
-## Phase 2: Performance and Infrastructure (Mid-Term)
+Sections with minimal content (< 5K lines) that could benefit from expansion:
 
-### 2.1 Build Performance
+- Probabilistic ML (1.7K) — significant for grad-level audience
+- Licensing (1.1K) — could cover more license types
+- Kotlin (3.6K) — missing advanced topics
+- Go (4.8K) — missing standard library coverage
 
-**Problem:** TypeScript compilation and ESLint are slow on large monorepo (1,207 content files + 9
-sub-site configs).
+## Phase 3: Performance & Reliability
 
-**Status:** Benchmark script created. `scripts/benchmark-builds.sh`
+### 3.1 Build Performance
 
-**Usage:** `bash scripts/benchmark-builds.sh [--warm] [config1 ...]` Times
-`pnpm build --config <file>` for each config and outputs wall-clock seconds. Supports warmup build
-to load compilation cache.
+Current build time exceeds 5 minutes with `--max-old-space-size=8192`:
 
-**Tasks:**
+- [ ] Profile build bottleneck (MDX compilation vs. webpack bundling)
+- [ ] Evaluate incremental builds for CI (cache Docusaurus build artifacts)
+- [ ] Target: CI build under 3 minutes
 
-- [x] Create benchmark script for sub-site build timing
-- [ ] Investigate incremental typecheck (`tsc --build` with project references)
-- [ ] Evaluate turborepo or nx for monorepo task orchestration
-- [ ] Split tsconfig.json per sub-site to reduce typecheck scope
-- [ ] Add build time tracking to CI (compare against baseline)
+### 3.2 Lighthouse Scores
 
-### 2.2 Lighthouse Score Optimization
+- [ ] Establish baseline lighthouse scores for all 6 deployed sites
+- [ ] Target: Performance > 90, Accessibility > 95, SEO > 95
+- [ ] Fix any scores below threshold
 
-**Current targets (lighthouserc.js):**
+### 3.3 Monitoring
 
-- Performance: >= 0.9
-- Accessibility: >= 0.9
-- Best Practices: >= 0.9
-- SEO: >= 0.9
+- [ ] Set up uptime monitoring for all deployed sites
+- [ ] Add alerting for build failures
+- [ ] Track deploy success rate
 
-**Tasks:**
+## Phase 4: Feature Development
 
-- [ ] Run Lighthouse CI on production and identify regressions
-- [ ] Optimize JS bundle size (target: < 500KB scripts, < 100KB stylesheets)
-- [ ] Audit font loading (Merriweather, Inter, JetBrains Mono) for FOIT/FOUT
-- [ ] Implement image lazy loading audit (Desmos, GeoGebra, PhET iframes)
-- [ ] Review service worker caching strategy effectiveness
+### 4.1 Search Improvements
 
-### 2.3 Search Infrastructure
+- [ ] Evaluate Algolia click-through and conversion analytics
+- [ ] Add search result relevance tuning based on popular queries
+- [ ] Consider adding faceted search (by subject, exam board, difficulty)
 
-**Completed:**
+### 4.2 User Experience
 
-- [x] Enable per-site navbar Algolia search (added `themeConfig.algolia` to all 8 content configs)
-  - Each sub-site now routes to its own index (e.g., IB site searches `wyattsnotes_ib`)
-  - Custom cross-site search page at `/search` remains functional
-  - `contextualSearch: false` to avoid sub-path filtering issues
+- [ ] Reading progress indicator (component exists, verify deployment)
+- [ ] Dark mode polish (verify all diagrams render correctly)
+- [ ] Mobile responsiveness audit
+- [ ] Print stylesheet for offline study
 
-**Identified gaps (not yet addressed):**
+### 4.3 Content Features
 
-- [ ] Move hardcoded Algolia credentials to environment variables
-- [ ] Add Algolia crawler config to repo for version control
-- [ ] Add search analytics (query volume, zero-result queries)
+- [ ] Interactive components expansion (Desmos, GeoGebra, PhET)
+- [ ] Practice problem sets with auto-grading
+- [ ] Formula sheets / cheat sheets per subject
+- [ ] Exam-style question banks
 
----
+## Phase 5: Growth
 
-## Phase 3: Content Quality Automation (Mid-Term)
+### 5.1 New Content Areas
 
-### 3.1 Automated Depth Tier Checking
+- [ ] SAT / ACT preparation notes
+- [ ] Australian HSC / VCE
+- [ ] German Abitur
+- [ ] French Baccalaureate
+- [ ]更多中文内容 (More Chinese-language content)
 
-**Status:** DONE. Implemented `check-depth-tiers.py`.
+### 5.2 Community
 
-- Scans 1,207 files across 9 sub-directories
-- Classifies into 4 tiers with configurable minimum line counts
-- Validates required sections (Common Pitfalls, Worked Examples, Summary)
-- Reports per-directory issue counts
-- Integrated into CI `content-validation` job
+- [ ] Contribution guide (CONTRIBUTING.md)
+- [ ] Issue templates for content corrections
+- [ ] PR review process for community submissions
+- [ ] Recognition system for contributors
 
-**Results:** 1,915 findings identified (mostly tier 2 missing required sections across docs_alevel
-and docs_ib).
+### 5.3 Monetization (Optional)
 
-### 3.2 Hand-Wave Detection
+- [ ] Sponsorship via GitHub Sponsors or Open Collective
+- [ ] Print-on-demand for popular subjects
+- [ ] Tutoring referral program
 
-**Status:** DONE. Implemented `check-handwaves.py`.
+## Appendix: Site Inventory
 
-- Scans for 18 patterns across 3 categories: HANDWAVE, VAGUE, HEDGE
-- Uses precompiled regexes and parallel processing (ProcessPoolExecutor)
-- Skips code fences, inline code, display math blocks
-- Informational only (exit 0) to avoid CI noise during remediation
-
-**Results:** 2,396 findings across 775 files (787 handwaves, 1,604 vague, 5 hedges).
-
-### 3.3 Description Quality
-
-**Status:** DONE. Implemented `check-descriptions.py`.
-
-- Validates 120-160 character bounds per CONTENT_STANDARD.md
-- Detects duplicate descriptions across the site
-- Flags vague trailing qualifiers
-
-**Results:** 842 too short, 92 too long, 711 duplicates, 0 vague.
-
-### 3.4 Forward-Reference Detection
-
-**Status:** DONE. Implemented `check-forward-refs.py`.
-
-- Detects formal definitions (bold text, theorem/lemma/proposition labels)
-- Flags terms used in math mode before their definition line
-- Skips standard notation (single letters, common operators)
-- Uses parallel processing
-- Integrated into CI `content-validation` job and `validate:all` npm script
-
-### 3.5 Search Index Coverage
-
-**Status:** DONE. Implemented `check-search-index-coverage.py`.
-
-- Cross-references Algolia indices with docusaurus configs
-- Identifies 2 coverage gaps (docs_infrastructure, docs_tools served by main index)
-- 7 naming mismatches between config paths and index names
-- Integrated into CI `content-validation` job and `validate:all` npm script
-
----
-
-## Phase 4: Architecture Improvements (Long-Term)
-
-### 4.1 Monorepo Tooling
-
-**Status:** DONE. Shared config module extracted and all 8 sub-site configs refactored.
-
-**Results:**
-
-- Created `docusaurus.shared.config.ts` (303 lines) with all shared configuration blocks
-- Factory functions: `sharedConfig()`, `createCommonDocsPluginConfig()`, `createAlgoliaConfig()`
-- Shared exports: admonitions, headTags, plugins, theme blocks (colorMode, prism, mermaid, zoom,
-  metadata)
-- Refactored all 8 content configs to import from shared module
-- **47% line reduction**: 3,298 → 1,739 lines (~1,559 lines of duplication eliminated)
-- Each config now contains only site-specific fields (navbar, footer, docs plugin, algolia index)
-- `escapeJsxBraces` variation preserved via parameter (4 configs use it, 4 don't)
-- `docusaurus-theme-redoc` preserved in main config only
-- TypeScript `Config` type annotations removed to avoid TS2322 mismatches with `sharedPlugins()`
-  return types
-- CI passes all 4 jobs (Lint+Typecheck+Build, Unit Tests, Security Audit, Content Validation)
-
-**Remaining tasks:**
-
-- [ ] Consider pnpm workspaces for shared dependency management
-- [ ] Evaluate tailwindcss usage (declared as dep but not actively imported)
-
-### 4.2 Testing Infrastructure
-
-**Status:** DONE. Vitest configured with 64 tests across 7 test files.
-
-**Test coverage:**
-
-- DesmosGraph: parseExpression logic, parameter detection, aspect ratio, guard clauses (11 tests)
-- Geogebra: URL construction with UI flags, hyphenated IDs, aspect ratio (8 tests)
-- PhetSimulation: URL construction, hyphenated IDs, \_en.html suffix, aspect ratio (7 tests)
-- IFrameComponent: default dimensions, custom props, src prop validation (9 tests)
-- ReadingProgress: scroll percentage computation, clamping, threshold rendering (10 tests)
-- DocItemFooter: reading time computation, word counting, edge cases (9 tests)
-- escape-jsx-braces webpack loader: brace escaping for 9 test cases (10 tests)
-
-**Tasks:**
-
-- [ ] Add @testing-library/react component render tests (requires jsdom setup for Docusaurus)
-- [ ] Add E2E tests (Playwright) for critical user flows
-- [ ] Increase coverage threshold to >= 80%
-- [ ] Add snapshot tests for interactive embeds
-
-### 4.3 Custom Plugin Testing
-
-**Status:** DONE. 9 tests for escape-jsx-braces webpack loader, 64 tests total across 7 files.
-
-- Tests: simple expressions, parameter detection, x/y exclusion, e/i exclusion, pipe escaping,
-  deeply nested braces, multiple commands, unbalanced braces, empty source, whitespace handling
-
----
-
-## Phase 5: Content Expansion (Long-Term)
-
-### 5.1 New Subject Stubs
-
-**Status:** 4 phantom A-Level subjects created (2026-05-12).
-
-**Completed:**
-
-- [x] A-Level Psychology stub (index.md with topic outline)
-- [x] A-Level Geography stub (index.md with topic outline)
-- [x] A-Level History stub (index.md with topic outline)
-- [x] A-Level English stub (index.md with topic outline)
-- [x] Updated `sidebar_alevel_sciences.ts` to auto-generate all 8 subjects
-
-**Candidates based on gap analysis (`.specs/01_research/content_gap_analysis.md`):**
-
-- [ ] Haskell / Functional Programming
-- [ ] Go / Systems Programming
-- [ ] Kotlin / Android Development
-- [ ] Computer Architecture (deeper than current infrastructure coverage)
-- [ ] Operating Systems (deeper than current Linux coverage)
-- [ ] Discrete Mathematics (standalone, not just as part of qualifications)
-- [ ] Number Theory
-- [ ] Complex Analysis
-- [ ] Differential Equations
-- [ ] Thermodynamics (deeper than current physics coverage)
-
-### 5.2 Multimedia Content
-
-**Tasks:**
-
-- [ ] Evaluate video embed support (YouTube, Vimeo) with consistent component API
-- [ ] Add interactive code playgrounds (Python, Java, C++) via web containers
-- [ ] Implement diagram auto-generation from text descriptions
-
-### 5.3 Internationalization
-
-**Tasks:**
-
-- [ ] Evaluate Docusaurus i18n for Chinese (Simplified) translations
-- [ ] Assess demand for other languages
-- [ ] Implement translation workflow (Crowdin, local, or community-driven)
-
----
-
-## Phase 6: Operational Excellence (Ongoing)
-
-### 6.1 Dependency Management
-
-**Tasks:**
-
-- [ ] Monitor Dependabot for security updates
-- [ ] Quarterly dependency audit (remove unused, update outdated)
-- [ ] Pin all sub-dependencies in pnpm-lock.yaml
-- [ ] Evaluate fast-xml-parser override (currently pinned to >= 4.5.4)
-
-### 6.2 Security
-
-**Tasks:**
-
-- [ ] Regular security.txt and humans.txt updates
-- [ ] Sentry error monitoring review (currently sampling at 10%)
-- [ ] CSP header audit for all sub-sites
-- [ ] Evaluate Subresource Integrity (SRI) for CDN-loaded scripts
-
-### 6.3 Documentation of Infrastructure
-
-**Tasks:**
-
-- [ ] Document deployment pipeline (GitHub Actions -> gh-pages)
-- [ ] Document Algolia indexing workflow
-- [ ] Document sub-site architecture and DNS configuration
-- [ ] Create incident response runbook
-
----
-
-## Risk Register
-
-| Risk                                            | Likelihood | Impact | Mitigation                                                    |
-| ----------------------------------------------- | ---------- | ------ | ------------------------------------------------------------- |
-| Docusaurus major version upgrade breaks plugins | Medium     | High   | Pin versions, test in staging branch                          |
-| Algolia free tier limits exceeded               | Low        | Medium | Monitor usage, evaluate self-hosted alternative (Meilisearch) |
-| Content accuracy drift (mathematical errors)    | Medium     | High   | Expand automated validation, peer review process              |
-| Build times become prohibitive                  | Medium     | Medium | Incremental builds, per-site CI splits                        |
-| Contributor onboarding friction                 | Medium     | Low    | Improve CONTRIBUTING.md, add setup scripts                    |
-| pnpm/npm ecosystem changes                      | Low        | Medium | Pin package manager version in .nvmrc and CI                  |
-
----
-
-## Success Metrics
-
-| Metric                   | Current | Target (6 months) | Target (12 months) |
-| ------------------------ | ------- | ----------------- | ------------------ |
-| Content files            | 1,207   | 1,400+            | 1,800+             |
-| Broken links             | 0       | 0                 | 0                  |
-| MDX validation errors    | 0       | 0                 | 0                  |
-| TypeScript errors        | 0       | 0                 | 0                  |
-| Test coverage (src/)     | 0%      | 60%               | 80%                |
-| Lighthouse performance   | TBD     | >= 0.9            | >= 0.95            |
-| Build time (full)        | TBD     | < 5 min           | < 3 min            |
-| Subjects covered         | 23      | 28                | 35                 |
-| Automated quality checks | 6       | 10                | 12                 |
+| Site           | Domain                           | Config                                    | Docs                            | Status                    |
+| -------------- | -------------------------------- | ----------------------------------------- | ------------------------------- | ------------------------- |
+| Main           | wyattsnotes.wyattau.com          | docusaurus.config.ts                      | infrastructure, tools           | Live                      |
+| A-Level        | alevel.wyattau.com               | docusaurus.alevel.config.ts               | redirect → alevel-maths-physics | Live (redirect)           |
+| A-Level MP     | alevel-maths-physics.wyattau.com | docusaurus.alevel-maths-physics.config.ts | alevel (MP split)               | Live                      |
+| A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts      | alevel (sciences split)         | Live                      |
+| Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts       | gcse, ap, highers, ilc          | Live                      |
+| Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages                  | Live                      |
+| University     | university.wyattau.com           | docusaurus.university.config.ts           | university                      | Live                      |
+| Academics      | academics.wyattau.com            | docusaurus.academics.config.ts            | redirect → ib.wyattau.com       | Live (dead redirect)      |
+| IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                              | **Not deployed** (no DNS) |
+| DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                             | **Not deployed** (no DNS) |
