@@ -392,13 +392,13 @@ Are optimal on matroids.
 
 ### Definition
 
-A matroid $M = (S, \mathcal{'\{'}I{'\}'})$ consists of a finite set $S$ and a collection
-$\mathcal{'\{'}I{'\}'}$ of Independent subsets of $S$ satisfying:
+A matroid $M = (S, \mathcal{{'}I{}'})$ consists of a finite set $S$ and a collection
+$\mathcal{{'}I{}'}$ of Independent subsets of $S$ satisfying:
 
-1. **Hereditary property**: if $A \in \mathcal{'\{'}I{'\}'}$ and $B \subseteq A$Then
-   $B \in \mathcal{'\{'}I{'\}'}$
-2. **Exchange property**: if $A, B \in \mathcal{'\{'}I{'\}'}$ and $|A| \lt |B|$Then there exists
-   $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{'\{'}I{'\}'}$
+1. **Hereditary property**: if $A \in \mathcal{{'}I{}'}$ and $B \subseteq A$Then
+   $B \in \mathcal{{'}I{}'}$
+2. **Exchange property**: if $A, B \in \mathcal{{'}I{}'}$ and $|A| \lt |B|$Then there exists
+   $x \in B \setminus A$ such that $A \cup \{x\} \in \mathcal{{'}I{}'}$
 
 ### Matroid Greedy Theorem
 
@@ -407,13 +407,13 @@ Independent) finds the maximum-weight independent set in any matroid.
 
 ### Examples of Matroids
 
-| Matroid             | Set $S$          | Independent Sets $\mathcal{'\{'}I{'\}'}$ | Greedy Problem     |
-| ------------------- | ---------------- | ---------------------------------------- | ------------------ |
-| Graphic matroid     | Edges of a graph | Acyclic subsets (forests)                | MST (Kruskal)      |
-| Partition matroid   | Elements         | At most one from each partition          | Assignment         |
-| Linear matroid      | Vectors          | Linearly independent sets                | Max weight basis   |
-| Uniform matroid     | Elements         | Subsets of size $\le k$                  | Top-k selection    |
-| Transversal matroid | Elements         | System of distinct representatives       | Bipartite matching |
+| Matroid             | Set $S$          | Independent Sets $\mathcal{{'}I{}'}$ | Greedy Problem     |
+| ------------------- | ---------------- | ------------------------------------ | ------------------ |
+| Graphic matroid     | Edges of a graph | Acyclic subsets (forests)            | MST (Kruskal)      |
+| Partition matroid   | Elements         | At most one from each partition      | Assignment         |
+| Linear matroid      | Vectors          | Linearly independent sets            | Max weight basis   |
+| Uniform matroid     | Elements         | Subsets of size $\le k$              | Top-k selection    |
+| Transversal matroid | Elements         | System of distinct representatives   | Bipartite matching |
 
 ```mermaid
 graph TD

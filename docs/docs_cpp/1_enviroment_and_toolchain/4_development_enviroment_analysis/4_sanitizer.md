@@ -11,7 +11,7 @@ categories:
 slug: sanitizer
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static analysis predicts defects by parsing source code. **Runtime Sanitizers** detect defects by
 Monitoring the program during execution.

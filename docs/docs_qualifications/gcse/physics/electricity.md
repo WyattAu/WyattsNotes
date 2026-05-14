@@ -722,13 +722,13 @@ That can be drawn, and what is the terminal PD at this current?
 
 **Step 1: Maximum current (short circuit)**
 
-$$I_{\max} = \frac{\mathcal{'\{'}E{'\}'}}{r} = \frac{9}{1.5} = 6 \mathrm{ A{}$$
+$$I_{\max} = \frac{\mathcal{{'}E{}'}}{r} = \frac{9}{1.5} = 6 \mathrm{ A{}$$
 
 This occurs when the external resistance is zero (short circuit).
 
 **Step 2: Terminal PD at maximum current**
 
-$$V = \mathcal{'\{'}E{'\}'} - Ir = 9 - 6 \times 1.5 = 9 - 9 = 0 \mathrm{ V{}$$
+$$V = \mathcal{{'}E{}'} - Ir = 9 - 6 \times 1.5 = 9 - 9 = 0 \mathrm{ V{}$$
 
 All the EMF is "lost" across the internal resistance. The battery delivers maximum current but zero
 Useful voltage to the external circuit.

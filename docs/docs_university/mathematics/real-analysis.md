@@ -16,13 +16,13 @@ slug: real-analysis
 
 ### 1.1 Field Axioms
 
-The real numbers $\mathbb{'\{'}R{'\}'}$ form a **complete ordered field**. The field axioms
-guarantee closure Under addition, subtraction, multiplication, and division (by non-zero elements),
-together with the Usual commutative, associative, and distributive laws.
+The real numbers $\mathbb{{'}R{}'}$ form a **complete ordered field**. The field axioms guarantee
+closure Under addition, subtraction, multiplication, and division (by non-zero elements), together
+with the Usual commutative, associative, and distributive laws.
 
 ### 1.2 Order and the Completeness Axiom
 
-The order relation $\leq$ on $\mathbb{'\{'}R{'\}'}$ satisfies:
+The order relation $\leq$ on $\mathbb{{'}R{}'}$ satisfies:
 
 1. **Reflexivity**: $a \leq a$
 2. **Antisymmetry**: $a \leq b$ and $b \leq a$ implies $a = b$
@@ -32,14 +32,14 @@ The order relation $\leq$ on $\mathbb{'\{'}R{'\}'}$ satisfies:
 6. **Compatibility with multiplication**: $a \leq b$ and $0 \leq c$ implies $ac \leq bc$
 
 The **completeness axiom** (also called the **least upper bound property**) is what distinguishes
-$\mathbb{'\{'}R{'\}'}$ from $\mathbb{'\{'}Q{'\}'}$:
+$\mathbb{{'}R{}'}$ from $\mathbb{{'}Q{}'}$:
 
-**Axiom (Completeness).** Every non-empty subset of $\mathbb{'\{'}R{'\}'}$ that is bounded above has
-a **least Upper bound** (supremum) in $\mathbb{'\{'}R{'\}'}$.
+**Axiom (Completeness).** Every non-empty subset of $\mathbb{{'}R{}'}$ that is bounded above has a
+**least Upper bound** (supremum) in $\mathbb{{'}R{}'}$.
 
 ### 1.3 Supremum and Infimum
 
-Let $S \subseteq \mathbb{'\{'}R{'\}'}$ be a non-empty set that is bounded above.
+Let $S \subseteq \mathbb{{'}R{}'}$ be a non-empty set that is bounded above.
 
 **Definition.** The **supremum** (or least upper bound) of $S$Denoted $\sup(S)$Is the real number
 $u$ satisfying:
@@ -58,40 +58,40 @@ Exists $s \in S$ such that $u - \varepsilon \lt{} s \leq u$.
 _Proof._ If no such $s$ existed, then $u - \varepsilon$ would be an upper bound of $S$ strictly less
 Than $u$Contradicting the definition of $\sup(S)$. $\blacksquare$
 
-**Example.** Let $S = \{x \in \mathbb{'\{'}R{'\}'} : x^2 \lt{} 2\}$. Then $\sup(S) = \sqrt{2}$. Note
+**Example.** Let $S = \{x \in \mathbb{{'}R{}'} : x^2 \lt{} 2\}$. Then $\sup(S) = \sqrt{2}$. Note
 that $\sqrt{2}
-\notin \mathbb{'\{'}Q{'\}'}$, so $\mathbb{'\{'}Q{'\}'}$ does not satisfy the
-completeness axiom.
+\notin \mathbb{{'}Q{}'}$, so $\mathbb{{'}Q{}'}$ does not satisfy the completeness
+axiom.
 
 ### 1.4 Archimedean Property
 
-**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb{'\{'}R{'\}'}$There exists
-$n \in \mathbb{'\{'}N{'\}'}$ Such that $n \gt x$.
+**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb{{'}R{}'}$There exists
+$n \in \mathbb{{'}N{}'}$ Such that $n \gt x$.
 
-_Proof._ Suppose, for contradiction, that $\mathbb{'\{'}N{'\}'}$ is bounded above. By the
-completeness axiom, $s = \sup(\mathbb{'\{'}N{'\}'})$ exists in $\mathbb{'\{'}R{'\}'}$. Then $s - 1$
-is not an upper bound for $\mathbb{'\{'}N{'\}'}$ So there exists $n \in \mathbb{'\{'}N{'\}'}$ with
-$n \gt s - 1$I.e., $n + 1 \gt s$. But $n + 1 \in \mathbb{'\{'}N{'\}'}$ Contradicting that $s$ is an
-upper bound. $\blacksquare$
+_Proof._ Suppose, for contradiction, that $\mathbb{{'}N{}'}$ is bounded above. By the completeness
+axiom, $s = \sup(\mathbb{{'}N{}'})$ exists in $\mathbb{{'}R{}'}$. Then $s - 1$ is not an upper bound
+for $\mathbb{{'}N{}'}$ So there exists $n \in \mathbb{{'}N{}'}$ with $n \gt s - 1$I.e.,
+$n + 1 \gt s$. But $n + 1 \in \mathbb{{'}N{}'}$ Contradicting that $s$ is an upper bound.
+$\blacksquare$
 
-**Corollary 1.2.** For every $\varepsilon > 0$There exists $n \in \mathbb{'\{'}N{'\}'}$ such that
+**Corollary 1.2.** For every $\varepsilon > 0$There exists $n \in \mathbb{{'}N{}'}$ such that
 $1/n \lt{} \varepsilon$.
 
-_Proof._ By the Archimedean property, choose $n \in \mathbb{'\{'}N{'\}'}$ with
-$n \gt 1/\varepsilon$. Then $1/n \lt{} \varepsilon$. $\blacksquare$
+_Proof._ By the Archimedean property, choose $n \in \mathbb{{'}N{}'}$ with $n \gt 1/\varepsilon$.
+Then $1/n \lt{} \varepsilon$. $\blacksquare$
 
-**Corollary 1.3 (Density of $\mathbb{'\{'}Q{'\}'}$).** Between any two distinct real numbers
-$a \lt{} b$There Exists a rational number $q \in \mathbb{'\{'}Q{'\}'}$ with $a \lt{} q \lt{} b$.
+**Corollary 1.3 (Density of $\mathbb{{'}Q{}'}$).** Between any two distinct real numbers
+$a \lt{} b$There Exists a rational number $q \in \mathbb{{'}Q{}'}$ with $a \lt{} q \lt{} b$.
 
-_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb{'\{'}N{'\}'}$ with
+_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb{{'}N{}'}$ with
 $1/n \lt{} b - a$ So $1 \lt{} n(b - a) = nb - na$. Let
-$m = \lfloor na \rfloor + 1 \in \mathbb{'\{'}Z{'\}'}$. Then $m - 1 \leq na \lt{} m$ Giving
-$m \leq na + 1 \lt{} na + n(b - a) = nb$. Hence $a \lt{} m/n \lt{} b$And
-$m/n \in \mathbb{'\{'}Q{'\}'}$. $\blacksquare$
+$m = \lfloor na \rfloor + 1 \in \mathbb{{'}Z{}'}$. Then $m - 1 \leq na \lt{} m$ Giving
+$m \leq na + 1 \lt{} na + n(b - a) = nb$. Hence $a \lt{} m/n \lt{} b$And $m/n \in \mathbb{{'}Q{}'}$.
+$\blacksquare$
 
 ### 1.5 Properties of Supremum and Infimum
 
-**Proposition 1.4.** If $A$ and $B$ are non-empty bounded subsets of $\mathbb{'\{'}R{'\}'}$Then
+**Proposition 1.4.** If $A$ and $B$ are non-empty bounded subsets of $\mathbb{{'}R{}'}$Then
 $\sup(A + B) = \sup(A) + \sup(B)$Where $A + B = \{a + b : a \in A, b \in B\}$.
 
 _Proof._ For all $a \in A$ and $b \in B$: $a \leq \sup(A)$ and $b \leq \sup(B)$So
@@ -104,14 +104,14 @@ $a + b > \sup(A) + \sup(B) - \varepsilon$So $\sup(A + B) \geq \sup(A) + \sup(B) 
 Since $\varepsilon > 0$ is arbitrary, $\sup(A + B) \geq \sup(A) + \sup(B)$. $\blacksquare$
 
 **Proposition 1.5.** For any non-empty bounded set
-$S \subseteq \mathbb{'\{'}R{'\}'}$$\inf(S) = -\sup(-S)$ Where $-S = \{-s : s \in S\}$.
+$S \subseteq \mathbb{{'}R{}'}$$\inf(S) = -\sup(-S)$ Where $-S = \{-s : s \in S\}$.
 
 _Proof._ Let $u = \sup(-S)$. Then $-s \leq u$ for all $s \in S$So $s \geq -u$ for all $s \in S$
 Meaning $-u$ is a lower bound for $S$. If $v$ is any lower bound for $S$Then $-v$ is an upper bound
 For $-S$So $u \leq -v$I.e., $-u \geq v$. Hence $-u = \inf(S)$. $\blacksquare$
 
 <details>
-<summary>Worked Example: Find $\sup$ and $\inf$ of $S = \{(-1)^n + 1/n : n \in \mathbb{'\{'}N{'\}'}\}$</summary>
+<summary>Worked Example: Find $\sup$ and $\inf$ of $S = \{(-1)^n + 1/n : n \in \mathbb{{'}N{}'}\}$</summary>
 
 _Solution._ The first few terms are $0, 3/2, -2/3, 5/4, -4/5, 7/6, \ldots$.
 
@@ -124,21 +124,21 @@ odd-indexed term, $\inf(S) = -1$ (approached but not attained). $\blacksquare$
 
 </details>
 
-### 1.6 Construction of $\mathbb{'\{'}R{'\}'}$ via Dedekind Cuts
+### 1.6 Construction of $\mathbb{{'}R{}'}$ via Dedekind Cuts
 
-_Remark._ The following outline shows how $\mathbb{'\{'}R{'\}'}$ can be constructed from
-$\mathbb{'\{'}Q{'\}'}$Making The completeness axiom a theorem rather than an axiom.
+_Remark._ The following outline shows how $\mathbb{{'}R{}'}$ can be constructed from
+$\mathbb{{'}Q{}'}$Making The completeness axiom a theorem rather than an axiom.
 
-**Definition (Dedekind Cut).** A **Dedekind cut** is a subset
-$\alpha \subseteq \mathbb{'\{'}Q{'\}'}$ satisfying:
+**Definition (Dedekind Cut).** A **Dedekind cut** is a subset $\alpha \subseteq \mathbb{{'}Q{}'}$
+satisfying:
 
-1. $\alpha \neq \emptyset$ and $\alpha \neq \mathbb{'\{'}Q{'\}'}$
-2. If $p \in \alpha$ and $q \lt{} p$ (with $q \in \mathbb{'\{'}Q{'\}'}$), then $q \in \alpha$
-   (downward closure)
+1. $\alpha \neq \emptyset$ and $\alpha \neq \mathbb{{'}Q{}'}$
+2. If $p \in \alpha$ and $q \lt{} p$ (with $q \in \mathbb{{'}Q{}'}$), then $q \in \alpha$ (downward
+   closure)
 3. $\alpha$ has no greatest element: for every $p \in \alpha$There exists $q \in \alpha$ with
    $p \lt{} q$
 
-**Definition.** The set of real numbers $\mathbb{'\{'}R{'\}'}$ is defined as the set of all Dedekind
+**Definition.** The set of real numbers $\mathbb{{'}R{}'}$ is defined as the set of all Dedekind
 cuts.
 
 The order, addition, and multiplication are defined as follows:
@@ -146,18 +146,18 @@ The order, addition, and multiplication are defined as follows:
 - **Order:** $\alpha \lt{} \beta$ if and only if $\alpha \subsetneq \beta$
 - **Addition:** $\alpha + \beta = \{p + q : p \in \alpha, q \in \beta\}$
 - **Multiplication:** For $\alpha, \beta \geq 0^*$:
-  $\alpha \cdot \beta = \{p \cdot q : p \in \alpha, q \in \beta, p \geq 0, q \geq 0\} \cup \{r \in \mathbb{'\{'}Q{'\}'} : r \lt{} 0\}$
+  $\alpha \cdot \beta = \{p \cdot q : p \in \alpha, q \in \beta, p \geq 0, q \geq 0\} \cup \{r \in \mathbb{{'}Q{}'} : r \lt{} 0\}$
 
-Here $0^* = \{q \in \mathbb{'\{'}Q{'\}'} : q \lt{} 0\}$ represents the real number $0$.
+Here $0^* = \{q \in \mathbb{{'}Q{}'} : q \lt{} 0\}$ represents the real number $0$.
 
-**Theorem.** With these definitions, $\mathbb{'\{'}R{'\}'}$ is a complete ordered field, and
-$\mathbb{'\{'}Q{'\}'}$ embeds Into $\mathbb{'\{'}R{'\}'}$ via
-$q \mapsto \{r \in \mathbb{'\{'}Q{'\}'} : r \lt{} q\}$.
+**Theorem.** With these definitions, $\mathbb{{'}R{}'}$ is a complete ordered field, and
+$\mathbb{{'}Q{}'}$ embeds Into $\mathbb{{'}R{}'}$ via
+$q \mapsto \{r \in \mathbb{{'}Q{}'} : r \lt{} q\}$.
 
 _Proof (sketch)._ Verifying the field axioms and order axioms is lengthy but straightforward. The
-key Step is the completeness axiom: if $\mathcal{'\{'}A{'\}'}$ is a non-empty set of Dedekind cuts
-bounded above, Then $\alpha = \bigcup_{\beta \in \mathcal{'\{'}A{'\}'}} \beta$ is itself a Dedekind
-cut and $\alpha = \sup(\mathcal{'\{'}A{'\}'})$. $\blacksquare$
+key Step is the completeness axiom: if $\mathcal{{'}A{}'}$ is a non-empty set of Dedekind cuts
+bounded above, Then $\alpha = \bigcup_{\beta \in \mathcal{{'}A{}'}} \beta$ is itself a Dedekind cut
+and $\alpha = \sup(\mathcal{{'}A{}'})$. $\blacksquare$
 
 ### 1.7 Equivalences of Completeness
 
@@ -180,21 +180,21 @@ converging To $\sup S$ from the approximation property. The equivalence $(1) \Ri
 follows from the Nested interval argument, and $(3) \Rightarrow (1)$ follows by constructing nested
 intervals that Shrink to $\sup S$. $\blacksquare$
 
-_Remark._ The field $\mathbb{'\{'}Q{'\}'}$ satisfies none of these properties, which is why it must
-be Extended to $\mathbb{'\{'}R{'\}'}$ for analysis.
+_Remark._ The field $\mathbb{{'}Q{}'}$ satisfies none of these properties, which is why it must be
+Extended to $\mathbb{{'}R{}'}$ for analysis.
 
 :::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a
 supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
-$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{'\{'}N{'\}'}\} = 1$Which
+$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{{'}N{}'}\} = 1$Which
 belongs to the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
 
 ## 2. Sequences and Limits
 
 ### 2.1 Convergence
 
-A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{'\{'}R{'\}'}$ **converges** to a limit
-$L \in \mathbb{'\{'}R{'\}'}$ if for Every $\varepsilon > 0$There exists $N \in \mathbb{'\{'}N{'\}'}$
-such that
+A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{{'}R{}'}$ **converges** to a limit
+$L \in \mathbb{{'}R{}'}$ if for Every $\varepsilon > 0$There exists $N \in \mathbb{{'}N{}'}$ such
+that
 
 $$|a_n - L| \lt{} \varepsilon \quad \mathrm{for\ all\ {} n \geq N$$
 
@@ -230,13 +230,13 @@ $\blacksquare$
 $c_n \to L$Then $b_n \to L$.
 
 **Theorem 2.3 (Monotone Convergence Theorem).** Every bounded monotone sequence in
-$\mathbb{'\{'}R{'\}'}$ converges. Specifically:
+$\mathbb{{'}R{}'}$ converges. Specifically:
 
 - Every bounded increasing sequence converges to its supremum.
 - Every bounded decreasing sequence converges to its infimum.
 
 _Proof._ Let $(a_n)$ be bounded and increasing. By the completeness axiom,
-$s = \sup\{a_n : n \in \mathbb{'\{'}N{'\}'}\}$ exists. Let $\varepsilon > 0$. By the approximation
+$s = \sup\{a_n : n \in \mathbb{{'}N{}'}\}$ exists. Let $\varepsilon > 0$. By the approximation
 property, There exists $N$ such that $s - \varepsilon \lt{} a_N \leq s$. Since $(a_n)$ is
 increasing, $a_n \geq a_N > s - \varepsilon$ for all $n \geq N$. Also $a_n \leq s$ for all $n$.
 Hence $|a_n - s| \lt{} \varepsilon$ for all $n \geq N$. $\blacksquare$
@@ -245,7 +245,7 @@ Hence $|a_n - s| \lt{} \varepsilon$ for all $n \geq N$. $\blacksquare$
 
 A sequence $(a_n)$ is a **Cauchy sequence** if for every $\varepsilon > 0$There exists
 $N \in
-\mathbb{'\{'}N{'\}'}$ such that
+\mathbb{{'}N{}'}$ such that
 
 $$|a_n - a_m| \lt{} \varepsilon \quad \mathrm{for\ all\ {} m, n \geq N$$
 
@@ -255,8 +255,8 @@ _Proof._ Let $a_n \to L$. Given $\varepsilon > 0$Choose $N$ such that
 $|a_n - L| \lt{} \varepsilon/2$ For all $n \geq N$. Then for $m, n \geq N$:
 $|a_n - a_m| \leq |a_n - L| + |a_m - L| \lt{} \varepsilon$. $\blacksquare$
 
-**Theorem 2.5 (Cauchy Completeness of $\mathbb{'\{'}R{'\}'}$).** Every Cauchy sequence in
-$\mathbb{'\{'}R{'\}'}$ converges.
+**Theorem 2.5 (Cauchy Completeness of $\mathbb{{'}R{}'}$).** Every Cauchy sequence in
+$\mathbb{{'}R{}'}$ converges.
 
 _Proof._ Let $(a_n)$ be Cauchy. First, $(a_n)$ is bounded: choose $N$ with $|a_n - a_m| \lt{} 1$ for
 $m, n \geq N$. Then $|a_n| \leq |a_N| + 1$ for $n \geq N$. By the Bolzano-Weierstrass theorem
@@ -282,8 +282,8 @@ diverges.
 
 ### 2.5 The Bolzano-Weierstrass Theorem
 
-**Theorem 2.6 (Bolzano-Weierstrass).** Every bounded sequence in $\mathbb{'\{'}R{'\}'}$ has a
-convergent subsequence.
+**Theorem 2.6 (Bolzano-Weierstrass).** Every bounded sequence in $\mathbb{{'}R{}'}$ has a convergent
+subsequence.
 
 _Proof._ Let $(a_n)$ be bounded, so $a_n \in [A, B]$ for all $n$. Set $I_0 = [A, B]$. Bisect $I_0$
 into $[A, (A+B)/2]$ and $[(A+B)/2, B]$. At least one contains infinitely many terms of $(a_n)$; call
@@ -409,8 +409,8 @@ $(L-2)(L+1) = 0$. Since $a_n \geq \sqrt{2} > 0$ for all $n$$L \geq 0$So $L = 2$.
 </details>
 
 :::caution Common Pitfall When computing $\limsup$ and $\liminf$Do not confuse them with $\sup$ and
-$\inf$ of the range $\{a_n : n \in \mathbb{'\{'}N{'\}'}\}$. The $\limsup$ depends on the _tail_
-behavior of the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But
+$\inf$ of the range $\{a_n : n \in \mathbb{{'}N{}'}\}$. The $\limsup$ depends on the _tail_ behavior
+of the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But
 $\sup\{a_n\} = 1$ and $\inf\{a_n\} = -1$ happen to agree in this case. However, for
 $a_n = 1/n$$\sup = 1$ but $\limsup = 0$. :::
 
@@ -529,18 +529,16 @@ converges iff $1 - p \lt{} 0$I.e., $p > 1$.
 ### 3.6 Rearrangement of Series
 
 **Theorem 3.9 (Riemann Rearrangement Theorem).** If $\sum a_n$ converges conditionally, then for any
-$L \in \mathbb{'\{'}R{'\}'}$ (or $\pm\infty$), there exists a rearrangement
-$\sigma : \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}N{'\}'}$ such That
-$\sum_{n=1}^{\infty} a_{\sigma(n)} = L$.
+$L \in \mathbb{{'}R{}'}$ (or $\pm\infty$), there exists a rearrangement
+$\sigma : \mathbb{{'}N{}'} \to \mathbb{{'}N{}'}$ such That $\sum_{n=1}^{\infty} a_{\sigma(n)} = L$.
 
 _Proof (outline)._ Let $P = \{n : a_n > 0\}$ and $N = \{n : a_n \lt{} 0\}$. Since $\sum a_n$
 converges Conditionally, both $\sum_{n \in P} a_n = +\infty$ and $\sum_{n \in N} a_n = -\infty$.
 
-To achieve sum $L \in \mathbb{'\{'}R{'\}'}$: take positive terms in order until the partial sum
-exceeds $L$ Then take negative terms until it falls below $L$Then positive terms again, and so on.
-Since both The positive and negative subseries diverge, this process can always continue. The terms
-tend to Zero (since the series converges), so the oscillations around $L$ shrink to zero.
-$\blacksquare$
+To achieve sum $L \in \mathbb{{'}R{}'}$: take positive terms in order until the partial sum exceeds
+$L$ Then take negative terms until it falls below $L$Then positive terms again, and so on. Since
+both The positive and negative subseries diverge, this process can always continue. The terms tend
+to Zero (since the series converges), so the oscillations around $L$ shrink to zero. $\blacksquare$
 
 _Remark._ By contrast, every rearrangement of an absolutely convergent series converges to the same
 sum.
@@ -624,7 +622,7 @@ cases, try the comparison Test, integral test, or other methods. For example, $\
 
 ### 4.1 Limits of Functions
 
-Let $f : D \to \mathbb{'\{'}R{'\}'}$ where $D \subseteq \mathbb{'\{'}R{'\}'}$. We say
+Let $f : D \to \mathbb{{'}R{}'}$ where $D \subseteq \mathbb{{'}R{}'}$. We say
 $\lim_{x \to a} f(x) = L$ if for Every $\varepsilon > 0$There exists $\delta > 0$ such that
 
 $$0 \lt{} |x - a| \lt{} \delta \implies |f(x) - L| \lt{} \varepsilon$$
@@ -646,7 +644,7 @@ Classified as:
 - **Jump:** $\lim_{x \to a^-} f(x)$ and $\lim_{x \to a^+} f(x)$ both exist but are unequal.
 - **Essential (or infinite/oscillatory):** At least one one-sided limit does not exist.
 
-**Proposition 4.3.** Polynomials are continuous on $\mathbb{'\{'}R{'\}'}$. Rational functions
+**Proposition 4.3.** Polynomials are continuous on $\mathbb{{'}R{}'}$. Rational functions
 $p(x)/q(x)$ are Continuous wherever $q(x) \neq 0$. The functions $\sin x$$\cos x$$e^x$$\ln x$ are
 continuous On their domains.
 
@@ -669,7 +667,7 @@ definition. Since $x_n \to c$There exists $N$ with $|x_n - c| \lt{} \delta$ for 
 $|f(x_n) - L| \lt{} \varepsilon$ for $n \geq N$.
 
 ($\Leftarrow$) Suppose the $\varepsilon$-$\delta$ condition fails. Then there exists
-$\varepsilon > 0$ such That for every $n \in \mathbb{'\{'}N{'\}'}$There exists $x_n$ with
+$\varepsilon > 0$ such That for every $n \in \mathbb{{'}N{}'}$There exists $x_n$ with
 $0 \lt{} |x_n - c| \lt{} 1/n$ but $|f(x_n) - L| \geq \varepsilon$. Then $x_n \to c$ but
 $f(x_n) \not\to L$Contradicting the hypothesis. $\blacksquare$
 
@@ -681,7 +679,7 @@ Converging to $c$ whose image does not converge to $f(c)$.
 
 ### 4.3 Intermediate Value Theorem
 
-**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is continuous and
+**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb{{'}R{}'}$ is continuous and
 $f(a) \lt{} y \lt{} f(b)$ (or $f(b) \lt{} y \lt{} f(a)$), then there exists $c \in (a,b)$ such that
 $f(c) = y$.
 
@@ -706,11 +704,11 @@ $f(c) = \lim f(b_n) \geq y$So $f(c) = y$. $\blacksquare$
 
 ### 4.4 Extreme Value Theorem
 
-**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is continuous, then $f$ attains its
+**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb{{'}R{}'}$ is continuous, then $f$ attains its
 maximum and Minimum on $[a,b]$: there exist $c_1, c_2 \in [a,b]$ such that
 $f(c_1) \leq f(x) \leq f(c_2)$ for all $x \in [a,b]$.
 
-_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb{'\{'}N{'\}'}$There
+_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb{{'}N{}'}$There
 exists $x_n \in [a,b]$ with $|f(x_n)| > n$. By Bolzano-Weierstrass, $(x_n)$ has a convergent
 subsequence $x_{n_k} \to c \in [a,b]$. By continuity, $f(x_{n_k}) \to f(c)$So $(f(x_{n_k}))$ is
 bounded. But $|f(x_{n_k})| > n_k \to \infty$A contradiction.
@@ -733,12 +731,12 @@ point $a$; for uniform continuity, $\delta$ depends only on $\varepsilon$.
 
 ### 4.6 The Heine-Cantor Theorem
 
-**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is continuous on the closed,
+**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb{{'}R{}'}$ is continuous on the closed,
 bounded Interval $[a,b]$Then $f$ is uniformly continuous on $[a,b]$.
 
 _Proof._ Suppose $f$ is continuous on $[a,b]$ but not uniformly continuous. Then there exists
-$\varepsilon > 0$ such that for every $n \in \mathbb{'\{'}N{'\}'}$There exist $x_n, y_n \in [a,b]$
-with $|x_n - y_n| \lt{} 1/n$ but $|f(x_n) - f(y_n)| \geq \varepsilon$.
+$\varepsilon > 0$ such that for every $n \in \mathbb{{'}N{}'}$There exist $x_n, y_n \in [a,b]$ with
+$|x_n - y_n| \lt{} 1/n$ but $|f(x_n) - f(y_n)| \geq \varepsilon$.
 
 By the Bolzano-Weierstrass theorem, $(x_n)$ has a convergent subsequence $x_{n_k} \to c \in [a,b]$.
 Since $|x_{n_k} - y_{n_k}| \lt{} 1/n_k \to 0$We have $y_{n_k} \to c$ as well.
@@ -796,7 +794,7 @@ $\blacksquare$
 <summary>Worked Example: Show $f(x) = 1/x$ is NOT uniformly continuous on $(0, 1)$</summary>
 
 _Solution._ We show the negation of uniform continuity. Take $\varepsilon = 1$. For any $\delta > 0$
-Choose $n \in \mathbb{'\{'}N{'\}'}$ with $1/n \lt{} \delta$. Set $x = 1/n$ and $y = 1/(2n)$. Then
+Choose $n \in \mathbb{{'}N{}'}$ with $1/n \lt{} \delta$. Set $x = 1/n$ and $y = 1/(2n)$. Then
 $|x - y| = 1/(2n) \lt{} 1/n \lt{} \delta$But:
 
 $$|f(x) - f(y)| = \left|\frac{1}{1/n} - \frac{1}{1/(2n)}\right| = |n - 2n| = n \geq 1 = \varepsilon$$
@@ -832,33 +830,33 @@ Heine-Cantor Theorem implies $f$ is uniformly continuous on $[0, 1]$. $\blacksqu
 </details>
 
 <details>
-<summary>Worked Example: $\varepsilon$-$\delta$ proof that $f(x) = \sin x$ is continuous at every $a \in \mathbb{'\{'}R{'\}'}$</summary>
+<summary>Worked Example: $\varepsilon$-$\delta$ proof that $f(x) = \sin x$ is continuous at every $a \in \mathbb{{'}R{}'}$</summary>
 
 _Solution._ We use the identity $|\sin u - \sin v| \leq |u - v|$ for all
-$u, v \in \mathbb{'\{'}R{'\}'}$. (Proof:
+$u, v \in \mathbb{{'}R{}'}$. (Proof:
 $|\sin u - \sin v| = 2|\cos((u+v)/2)\sin((u-v)/2)| \leq 2|\sin((u-v)/2)| \leq |u - v|$ Using
 $|\sin t| \leq |t|$ and $|\cos| \leq 1$.)
 
-Let $\varepsilon > 0$ and $a \in \mathbb{'\{'}R{'\}'}$. Choose $\delta = \varepsilon$. For
+Let $\varepsilon > 0$ and $a \in \mathbb{{'}R{}'}$. Choose $\delta = \varepsilon$. For
 $|x - a| \lt{} \delta$:
 
 $$|\sin x - \sin a| \leq |x - a| \lt{} \delta = \varepsilon$$
 
 Since $\delta = \varepsilon$ works independently of $a$$\sin x$ is actually **uniformly continuous**
-On $\mathbb{'\{'}R{'\}'}$. The same argument works for $\cos x$. $\blacksquare$
+On $\mathbb{{'}R{}'}$. The same argument works for $\cos x$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: $\varepsilon$-$\delta$ proof that $f(x) = e^x$ is continuous at every $a \in \mathbb{'\{'}R{'\}'}$</summary>
+<summary>Worked Example: $\varepsilon$-$\delta$ proof that $f(x) = e^x$ is continuous at every $a \in \mathbb{{'}R{}'}$</summary>
 
 _Solution._ We use the inequality $|e^u - e^v| \leq e^{\max(u,v)} |u - v|$Which follows from the
 Mean Value Theorem applied to $e^t$: $e^u - e^v = e^\xi (u - v)$ for some $\xi$ between $u$ and $v$
 So $|e^u - e^v| = e^\xi |u - v| \leq e^{\max(u,v)} |u - v|$.
 
-Let $\varepsilon > 0$ and $a \in \mathbb{'\{'}R{'\}'}$. Restrict to $|x - a| \lt{} 1$So
-$x \lt{} a + 1$ and $e^{\max(x,a)} \leq e^{a+1}$. Choose $\delta = \min(1, \varepsilon / e^{a+1})$.
-For $|x - a| \lt{} \delta$:
+Let $\varepsilon > 0$ and $a \in \mathbb{{'}R{}'}$. Restrict to $|x - a| \lt{} 1$So $x \lt{} a + 1$
+and $e^{\max(x,a)} \leq e^{a+1}$. Choose $\delta = \min(1, \varepsilon / e^{a+1})$. For
+$|x - a| \lt{} \delta$:
 
 $$|e^x - e^a| \leq e^{a+1} |x - a| \lt{} e^{a+1} \cdot \frac{\varepsilon}{e^{a+1}} = \varepsilon$$
 
@@ -878,8 +876,7 @@ sufficient but not necessary. :::
 
 ### 5.1 The Derivative
 
-**Definition.** $f : (a,b) \to \mathbb{'\{'}R{'\}'}$ is **differentiable at** $c \in (a,b)$ if the
-limit
+**Definition.** $f : (a,b) \to \mathbb{{'}R{}'}$ is **differentiable at** $c \in (a,b)$ if the limit
 
 $$f'(c) = \lim_{h \to 0} \frac{f(c+h) - f(c)}{h}$$
 
@@ -904,7 +901,7 @@ The converse is false: $f(x) = |x|$ is continuous at $0$ but not differentiable 
 
 ### 5.3 Mean Value Theorem
 
-**Theorem 5.2 (Rolle's Theorem).** If $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is continuous on
+**Theorem 5.2 (Rolle's Theorem).** If $f : [a,b] \to \mathbb{{'}R{}'}$ is continuous on
 $[a,b]$Differentiable On $(a,b)$And $f(a) = f(b)$Then there exists $c \in (a,b)$ such that
 $f'(c) = 0$.
 
@@ -913,8 +910,8 @@ $M = m$Then $f$ is constant and $f'(c) = 0$ for all $c \in (a,b)$. Otherwise, at
 $m$ is attained at some $c \in (a,b)$ (since $f(a) = f(b)$). By Fermat's theorem, $f'(c) = 0$.
 $\blacksquare$
 
-**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is continuous on
-$[a,b]$ and Differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
+**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb{{'}R{}'}$ is continuous on $[a,b]$
+and Differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
 $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 
@@ -926,7 +923,7 @@ $\blacksquare$
 
 **Corollary 5.5.** If $f'(x) > 0$ for all $x \in (a,b)$Then $f$ is strictly increasing on $[a,b]$.
 
-**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb{'\{'}R{'\}'}$ are
+**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb{{'}R{}'}$ are
 continuous on $[a,b]$ and differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
 $$(f(b) - f(a))g'(c) = (g(b) - g(a))f'(c)$$
@@ -1134,7 +1131,7 @@ rule requires that the Limit of the quotient of derivatives exists; if it does n
 
 ### 6.1 Definition
 
-Let $f : [a,b] \to \mathbb{'\{'}R{'\}'}$ be bounded. A **partition** of $[a,b]$ is a finite set
+Let $f : [a,b] \to \mathbb{{'}R{}'}$ be bounded. A **partition** of $[a,b]$ is a finite set
 $P = \{x_0, x_1, \ldots, x_n\}$ with $a = x_0 \lt{} x_1 \lt{} \cdots \lt{} x_n = b$.
 
 The **upper sum** and **lower sum** of $f$ with respect to $P$ are:
@@ -1158,7 +1155,7 @@ The common value is denoted $\int_a^b f(x)\, dx$.
 ### 6.2 Integrability Criteria
 
 **Theorem 6.1 (Riemann Integrability Criterion).** A bounded function
-$f : [a,b] \to \mathbb{'\{'}R{'\}'}$ is Riemann integrable if and only if for every
+$f : [a,b] \to \mathbb{{'}R{}'}$ is Riemann integrable if and only if for every
 $\varepsilon > 0$There exists a partition $P$ such that
 
 $$U(f,P) - L(f,P) \lt{} \varepsilon$$
@@ -1204,26 +1201,25 @@ $\blacksquare$
 If $f$ and $g$ are integrable, then so are $|f|$$f^2$And $\max(f, g)$.
 
 **Theorem 6.4b (Lebesgue's Criterion for Riemann Integrability).** A bounded function
-$f : [a,b] \to \mathbb{'\{'}R{'\}'}$ Is Riemann integrable if and only if the set of its
-discontinuities has (Lebesgue) measure zero.
+$f : [a,b] \to \mathbb{{'}R{}'}$ Is Riemann integrable if and only if the set of its discontinuities
+has (Lebesgue) measure zero.
 
 _Remark._ A set has measure zero if it can be covered by countably many intervals of arbitrarily
 Small total length. In particular, every countable set has measure zero. This means:
 
 - Every continuous function is integrable (empty set of discontinuities).
 - Every function with countably many discontinuities is integrable (Theorem 6.4 is a special case).
-- The Dirichlet function $f(x) = 1$ for $x \in \mathbb{'\{'}Q{'\}'}$ and $f(x) = 0$ for
-  $x \notin \mathbb{'\{'}Q{'\}'}$ is discontinuous everywhere (set of discontinuities =
-  $[a,b]$Measure $> 0$), hence not integrable.
+- The Dirichlet function $f(x) = 1$ for $x \in \mathbb{{'}Q{}'}$ and $f(x) = 0$ for
+  $x \notin \mathbb{{'}Q{}'}$ is discontinuous everywhere (set of discontinuities = $[a,b]$Measure
+  $> 0$), hence not integrable.
 - Thomae's function $f(x) = 1/q$ if $x = p/q$ in lowest terms, and $f(x) = 0$ if $x$ is irrational,
-  is continuous at every irrational and discontinuous at every rational. Since
-  $\mathbb{'\{'}Q{'\}'}$ is countable (measure zero), Thomae's function is Riemann integrable, with
-  $\int_0^1 f = 0$.
+  is continuous at every irrational and discontinuous at every rational. Since $\mathbb{{'}Q{}'}$ is
+  countable (measure zero), Thomae's function is Riemann integrable, with $\int_0^1 f = 0$.
 
 ### 6.3 Properties of the Integral
 
 **Theorem 6.5 (Linearity).** If $f$ and $g$ are integrable on $[a,b]$ and
-$\alpha, \beta \in \mathbb{'\{'}R{'\}'}$:
+$\alpha, \beta \in \mathbb{{'}R{}'}$:
 
 $$\int_a^b (\alpha f + \beta g) = \alpha \int_a^b f + \beta \int_a^b g$$
 
@@ -1424,10 +1420,10 @@ can change its value. :::
 
 ### 7.1 Pointwise Convergence
 
-Let $(f_n)$ be a sequence of functions defined on a set $E \subseteq \mathbb{'\{'}R{'\}'}$.
+Let $(f_n)$ be a sequence of functions defined on a set $E \subseteq \mathbb{{'}R{}'}$.
 
 **Definition.** $(f_n)$ **converges pointwise** to $f$ on $E$ if for every $x \in E$ and every
-$\varepsilon > 0$There exists $N \in \mathbb{'\{'}N{'\}'}$ (depending on both $x$ and $\varepsilon$)
+$\varepsilon > 0$There exists $N \in \mathbb{{'}N{}'}$ (depending on both $x$ and $\varepsilon$)
 such that $|f_n(x) - f(x)| \lt{} \varepsilon$ for all $n \geq N$.
 
 **Example.** Let $f_n(x) = x^n$ on $E = [0, 1]$. For each $x \in [0, 1)$$f_n(x) = x^n \to 0$And
@@ -1440,7 +1436,7 @@ Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuou
 ### 7.2 Uniform Convergence
 
 **Definition.** $(f_n)$ **converges uniformly** to $f$ on $E$ if for every $\varepsilon > 0$There
-Exists $N \in \mathbb{'\{'}N{'\}'}$ (depending only on $\varepsilon$Not on $x$) such that for all
+Exists $N \in \mathbb{{'}N{}'}$ (depending only on $\varepsilon$Not on $x$) such that for all
 $x \in E$:
 
 $$|f_n(x) - f(x)| \lt{} \varepsilon \quad \mathrm{for\ all\ {} n \geq N$$
@@ -1613,8 +1609,8 @@ _Solution._ Apply the ratio test to the coefficients:
 $\lim_{n \to \infty} \left|\frac{c_{n+1}}{c_n}\right|
 = \lim_{n \to \infty} \frac{n!}{(n+1)!} = \lim_{n \to \infty} \frac{1}{n+1} = 0$.
 
-So $R = \infty$ and the series converges for all $x \in \mathbb{'\{'}R{'\}'}$. This is the power
-series for $e^x$. By Theorem 7.4, the derivative of the sum equals
+So $R = \infty$ and the series converges for all $x \in \mathbb{{'}R{}'}$. This is the power series
+for $e^x$. By Theorem 7.4, the derivative of the sum equals
 $\sum_{n=1}^{\infty} \frac{n x^{n-1}}{n!}
 = \sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = e^x$,
 confirming That $e^x$ is its own derivative. $\blacksquare$
@@ -1659,7 +1655,7 @@ verify the uniform Cauchy criterion directly. :::
 
 ## 8. Problem Set
 
-**Problem 1.** Let $A, B \subseteq \mathbb{'\{'}R{'\}'}$ be non-empty and bounded above. Prove that
+**Problem 1.** Let $A, B \subseteq \mathbb{{'}R{}'}$ be non-empty and bounded above. Prove that
 $\sup(A \cup B) = \max(\sup A, \sup B)$.
 
 <details>
@@ -1677,7 +1673,7 @@ _If you get this wrong, revise:_ Section 1.3 (Supremum and Infimum), Section 1.5
 </details>
 
 **Problem 2.** Prove that $\inf A = -\sup(-A)$ for any non-empty bounded set
-$A \subseteq \mathbb{'\{'}R{'\}'}$.
+$A \subseteq \mathbb{{'}R{}'}$.
 
 <details>
 <summary>Solution</summary>
@@ -1836,12 +1832,12 @@ _If you get this wrong, revise:_ Section 3.5 (Rearrangement of Series).
 </details>
 
 **Problem 10.** Prove using $\varepsilon$-$\delta$ that $f(x) = x^3$ is continuous at every
-$a \in \mathbb{'\{'}R{'\}'}$.
+$a \in \mathbb{{'}R{}'}$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Let $a \in \mathbb{'\{'}R{'\}'}$ and $\varepsilon > 0$. Compute:
+_Solution._ Let $a \in \mathbb{{'}R{}'}$ and $\varepsilon > 0$. Compute:
 
 $$|f(x) - f(a)| = |x^3 - a^3| = |x - a| \cdot |x^2 + ax + a^2|$$
 
@@ -1859,7 +1855,7 @@ _If you get this wrong, revise:_ Section 4.2 (Continuity), Section 4.7 (Worked E
 </details>
 
 **Problem 11.** Prove that $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous on
-$\mathbb{'\{'}R{'\}'}$ but not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
+$\mathbb{{'}R{}'}$ but not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
 
 <details>
 <summary>Solution</summary>
@@ -1889,7 +1885,7 @@ Constant $C$.
 
 _Solution._ Let $h(x) = f(x) - g(x)$. Then $h'(x) = f'(x) - g'(x) = 0$ for all $x \in (a, b)$. By
 Corollary 5.4 (a consequence of the Mean Value Theorem), $h$ is constant on $(a, b)$. So
-$f(x) - g(x) = C$ for some $C \in \mathbb{'\{'}R{'\}'}$I.e., $f(x) = g(x) + C$. $\blacksquare$
+$f(x) - g(x) = C$ for some $C \in \mathbb{{'}R{}'}$I.e., $f(x) = g(x) + C$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 5.3 (Mean Value Theorem, Corollary 5.4).
 
@@ -1938,16 +1934,16 @@ _If you get this wrong, revise:_ Section 6.1 (Definition), Section 6.5 (Worked E
 </details>
 
 **Problem 14b.** Show that the Dirichlet function
-$f(x) = \begin{cases} 1 & x \in \mathbb{'\{'}Q{'\}'} \\ 0 & x \notin \mathbb{'\{'}Q{'\}'} \end{cases}$
-is not Riemann integrable on $[0, 1]$.
+$f(x) = \begin{cases} 1 & x \in \mathbb{{'}Q{}'} \\ 0 & x \notin \mathbb{{'}Q{}'} \end{cases}$ is
+not Riemann integrable on $[0, 1]$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ Every non-empty subinterval $[x_{i-1}, x_i]$ of any partition contains both rational and
-Irrational numbers (by density of $\mathbb{'\{'}Q{'\}'}$ and density of
-$\mathbb{'\{'}R{'\}'} \setminus \mathbb{'\{'}Q{'\}'}$). So $M_i = \sup f = 1$ and $m_i = \inf f = 0$
-for every subinterval.
+Irrational numbers (by density of $\mathbb{{'}Q{}'}$ and density of
+$\mathbb{{'}R{}'} \setminus \mathbb{{'}Q{}'}$). So $M_i = \sup f = 1$ and $m_i = \inf f = 0$ for
+every subinterval.
 
 For any partition $P$: $U(f, P) = \sum 1 \cdot \Delta x_i = 1$ and
 $L(f, P) = \sum 0 \cdot \Delta x_i = 0$. Hence

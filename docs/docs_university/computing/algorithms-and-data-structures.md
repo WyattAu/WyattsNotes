@@ -2048,9 +2048,9 @@ $\leq 4^{-k}$.
 
 #### 6.3.3 Hashing with Universal Hash Functions
 
-**Definition.** A family $\mathcal{'\{'}H{'\}'}$ of hash functions from $U$ to
-$\\{0, \ldots, m - 1\\}$ is **universal** if for any distinct
-$x, y \in U$$\Pr_{h \in \mathcal{'\{'}H{'\}'}}[h(x) = h(y)] \leq 1/m$.
+**Definition.** A family $\mathcal{{'}H{}'}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$
+is **universal** if for any distinct
+$x, y \in U$$\Pr_{h \in \mathcal{{'}H{}'}}[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for
 any element is at most $n/m$.

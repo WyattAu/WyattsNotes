@@ -55,7 +55,7 @@ Setting $AX = XA$:
 - $(1,2)$: $b + 2d = 2a + b \implies 2d = 2a \implies d = a$
 - $(2,2)$: $-d = 2c + d \implies -d = d \implies d = 0$And therefore $a = 0$.
 
-So $X = \begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix}$ for any $b \in \mathbb{'\{'}R{'\}'}$.
+So $X = \begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix}$ for any $b \in \mathbb{{'}R{}'}$.
 
 **(c)** The student's error is a logical fallacy: the fact that $B$ does not commute with $A$ does
 not imply that _no_ matrix commutes with $A$. The identity matrix $I$The zero matrix $O$And all
@@ -86,7 +86,7 @@ $$\det\begin{pmatrix} 2 - \lambda & 1 & 0 \\ 0 & 2 - \lambda & 0 \\ 0 & 0 & 3 - 
 
 Eigenvalues: $\lambda_1 = 2$ (repeated, algebraic multiplicity 2), $\lambda_2 = 3$.
 
-For $\lambda_1 = 2$: $(M - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_1 = 2$: $(M - 2I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
@@ -94,7 +94,7 @@ This gives $y = 0$ and $z = 0$With $x$ free. So the eigenvectors are
 $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ times any scalar. There is only **one** linearly
 independent eigenvector for $\lambda = 2$.
 
-For $\lambda_2 = 3$: $(M - 3I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_2 = 3$: $(M - 3I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} -1 & 1 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
@@ -137,17 +137,17 @@ $$\lambda^2 - 3\lambda - 10 + 12 = \lambda^2 - 3\lambda + 2 = 0$$
 
 $$(\lambda - 1)(\lambda - 2) = 0 \implies \lambda_1 = 1, \; \lambda_2 = 2$$
 
-For $\lambda_1 = 1$: $(A - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_1 = 1$: $(A - I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} 4 & -6 \\ 2 & -3 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies 4x - 6y = 0 \implies 2x = 3y$$
 
-Eigenvector: $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 3 \\ 2 \end{pmatrix}$.
+Eigenvector: $\mathbf{{'}v{}'}_1 = \begin{pmatrix} 3 \\ 2 \end{pmatrix}$.
 
-For $\lambda_2 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_2 = 2$: $(A - 2I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} 3 & -6 \\ 2 & -4 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies x - 2y = 0$$
 
-Eigenvector: $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$.
+Eigenvector: $\mathbf{{'}v{}'}_2 = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$.
 
 **(b)**
 

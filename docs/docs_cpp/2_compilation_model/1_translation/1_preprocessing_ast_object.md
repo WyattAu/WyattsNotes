@@ -5,7 +5,7 @@ description:
   Inspection; -E: Run preprocessor only.'
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Understanding the translation stages are critical for debugging compilation errors, optimizing build
 Times, and understanding.

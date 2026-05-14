@@ -16,13 +16,13 @@ slug: complex-analysis
 
 ### 1.1 Definition and Arithmetic
 
-A **complex number** is $z = a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ and $i^2 = -1$. We call
+A **complex number** is $z = a + bi$ where $a, b \in \mathbb{{'}R{}'}$ and $i^2 = -1$. We call
 $a = \mathrm{Re{}(z)$ the real part and $b = \mathrm{Im{}(z)$ the imaginary part.
 
 **Arithmetic:** $(a + bi) + (c + di) = (a + c) + (b + d)i$ and
 $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 
-**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb{'\{'}C{'\}'}$:
+**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb{{'}C{}'}$:
 
 1. $z + w = w + z$ and $zw = wz$ (commutativity)
 2. $(z + w) + u = z + (w + u)$ and $(zw)u = z(wu)$ (associativity)
@@ -30,15 +30,15 @@ $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 4. There exist additive identity $0$ and multiplicative identity $1$.
 5. Every $z \neq 0$ has a multiplicative inverse $\frac{1}{z} = \frac{\bar{z}}{|z|^2}$.
 
-_Remark._ The complex field $\mathbb{'\{'}C{'\}'}$ cannot be ordered: there is no total ordering on
-$\mathbb{'\{'}C{'\}'}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any
+_Remark._ The complex field $\mathbb{{'}C{}'}$ cannot be ordered: there is no total ordering on
+$\mathbb{{'}C{}'}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any
 such ordering.
 
 ### 1.2 The Complex Conjugate and Modulus
 
 **Definition.** The **complex conjugate** of $z = a + bi$ is $\bar{z} = a - bi$.
 
-**Proposition 1.2.** For all $z, w \in \mathbb{'\{'}C{'\}'}$:
+**Proposition 1.2.** For all $z, w \in \mathbb{{'}C{}'}$:
 
 1. $\overline{z + w} = \bar{z} + \bar{w}$ and $\overline{zw} = \bar{z}\bar{w}$
 2. $z\bar{z} = |z|^2$
@@ -47,7 +47,7 @@ such ordering.
 
 **Definition.** The **modulus** (or absolute value) of $z = a + bi$ is $|z| = \sqrt{a^2 + b^2}$.
 
-**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb{'\{'}C{'\}'}$:
+**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb{{'}C{}'}$:
 
 1. $|z| \geq 0$ with equality iff $z = 0$
 2. $|zw| = |z||w|$
@@ -69,7 +69,7 @@ Where $r = |z| = \sqrt{a^2 + b^2}$ is the **modulus** and $\theta = \arg(z)$ is 
 
 **Definition.** The **principal argument** $\mathrm{Arg{}(z)$ is the unique $\theta \in (-\pi, \pi]$
 Such that $z = |z|e^{i\theta}$. The **argument** $\arg(z)$ is multi-valued:
-$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$.
 
 **Proposition 1.4.** If $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$Then
 $z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$ and
@@ -92,7 +92,7 @@ quadrant).
 
 Polar form: $z = 2\,e^{2\pi i/3}$.
 
-All arguments: $\arg(z) = \frac{2\pi}{3} + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$.
+All arguments: $\arg(z) = \frac{2\pi}{3} + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$.
 
 **Problem.** Convert $z = 3e^{-i\pi/4}$ to rectangular form.
 
@@ -153,7 +153,7 @@ $= 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta$.
 
 **Problem.** Show that
 $\sum_{k=0}^{n-1} \cos(k\theta) = \frac{\sin(n\theta/2)}{\sin(\theta/2)}\cos\!\left(\frac{(n-1)\theta}{2}\right)$
-For $\theta \notin 2\pi\mathbb{'\{'}Z{'\}'}$.
+For $\theta \notin 2\pi\mathbb{{'}Z{}'}$.
 
 Consider $S = \sum_{k=0}^{n-1} e^{ik\theta} = \frac{1 - e^{in\theta}}{1 - e^{i\theta}}$ (geometric
 series with $r = e^{i\theta} \neq 1$).
@@ -167,11 +167,11 @@ Taking real parts gives the result.
 
 ### 1.5 Roots of Complex Numbers
 
-**Definition.** An $n$-th root of $w \in \mathbb{'\{'}C{'\}'}$ is a complex number $z$ such that
+**Definition.** An $n$-th root of $w \in \mathbb{{'}C{}'}$ is a complex number $z$ such that
 $z^n = w$.
 
-**Proposition 1.6.** Every non-zero $w \in \mathbb{'\{'}C{'\}'}$ has exactly $n$ distinct $n$-th
-roots. If $w = \rho\, e^{i\phi}$Then
+**Proposition 1.6.** Every non-zero $w \in \mathbb{{'}C{}'}$ has exactly $n$ distinct $n$-th roots.
+If $w = \rho\, e^{i\phi}$Then
 
 $$z_k = \rho^{1/n}\, e^{i(\phi + 2\pi k)/n}, \quad k = 0, 1, \ldots, n - 1$$
 
@@ -233,9 +233,8 @@ ratio $\omega$.
 
 ### 2.1 Complex Functions
 
-A **complex function** is a function
-$f : D \subseteq \mathbb{'\{'}C{'\}'} \to \mathbb{'\{'}C{'\}'}$. We can write
-$f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
+A **complex function** is a function $f : D \subseteq \mathbb{{'}C{}'} \to \mathbb{{'}C{}'}$. We can
+write $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$. Here $u = x^2 - y^2$ and $v = 2xy$.
 
@@ -248,8 +247,8 @@ $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functi
 The limit $\lim_{z \to z_0} f(z) = L$ means: for every $\varepsilon \gt{} 0$There exists
 $\delta \gt{} 0$ Such that $0 \lt{} |z - z_0| \lt{} \delta$ implies $|f(z) - L| \lt{} \varepsilon$.
 
-Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{'\{'}C{'\}'}$. This
-makes limits More restrictive.
+Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{{'}C{}'}$. This makes
+limits More restrictive.
 
 **Proposition 2.1.** $\lim_{z \to z_0} f(z) = L$ if and only if
 $\lim_{(x,y) \to (x_0, y_0)} u(x, y) = a$ And $\lim_{(x,y) \to (x_0, y_0)} v(x, y) = b$ where
@@ -279,7 +278,7 @@ zero). If we define $f(1) = 2$Then $f$ becomes continuous at $z = 1$.
 
 $$f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$$
 
-Exists (and is independent of how $h \to 0$ in $\mathbb{'\{'}C{'\}'}$).
+Exists (and is independent of how $h \to 0$ in $\mathbb{{'}C{}'}$).
 
 _Remark._ The requirement that the limit be the same for all directions of approach of $h$ is what
 Makes complex differentiability far more restrictive than real differentiability.
@@ -287,8 +286,8 @@ Makes complex differentiability far more restrictive than real differentiability
 ### 2.4 Analytic Functions
 
 **Definition.** A function $f$ is **analytic** (or **holomorphic**) on an open set
-$U \subseteq \mathbb{'\{'}C{'\}'}$ if $f$ is differentiable at every point of $U$. A function that
-is analytic On all of $\mathbb{'\{'}C{'\}'}$ is called **entire**.
+$U \subseteq \mathbb{{'}C{}'}$ if $f$ is differentiable at every point of $U$. A function that is
+analytic On all of $\mathbb{{'}C{}'}$ is called **entire**.
 
 **Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
 
@@ -325,17 +324,17 @@ Single-valued functions, we must restrict the domain.
 Defined on a domain $D$ such that $g(z) \in f(z)$ for all $z \in D$.
 
 **The Complex Logarithm.** We define $\log z = \ln|z| + i\arg(z)$Which is multi-valued because
-$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{'\{'}Z{'\}'}$. The **principal branch** is
+$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$. The **principal branch** is
 
 $$\mathrm{Log{}\, z = \ln|z| + i\,\mathrm{Arg{}(z)$$
 
-Defined on $\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$. The negative real axis is called the
-**branch cut**.
+Defined on $\mathbb{{'}C{}'} \setminus (-\infty, 0]$. The negative real axis is called the **branch
+cut**.
 
 **Proposition 2.2.** The principal branch $\mathrm{Log{}\, z$ is analytic on
-$\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log{}\, z = \frac{1}{z}$.
+$\mathbb{{'}C{}'} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log{}\, z = \frac{1}{z}$.
 
-**Complex Powers.** For $z, \alpha \in \mathbb{'\{'}C{'\}'}$ with $z \neq 0$:
+**Complex Powers.** For $z, \alpha \in \mathbb{{'}C{}'}$ with $z \neq 0$:
 
 $$z^\alpha = e^{\alpha \log z}$$
 
@@ -347,8 +346,7 @@ distinct values.
 
 **Problem.** Find all values of $(-1)^i$.
 
-$(-1)^i = e^{i \log(-1)} = e^{i(i\pi + 2\pi i k)} = e^{-\pi - 2\pi k}$ for
-$k \in \mathbb{'\{'}Z{'\}'}$.
+$(-1)^i = e^{i \log(-1)} = e^{i(i\pi + 2\pi i k)} = e^{-\pi - 2\pi k}$ for $k \in \mathbb{{'}Z{}'}$.
 
 These are all positive real numbers: $\ldots, e^{3\pi}, e^{\pi}, e^{-\pi}, e^{-3\pi}, \ldots$. The
 principal value (using the principal branch) is $e^{-\pi}$.
@@ -362,13 +360,13 @@ $e^{i5\pi/4} = -\frac{\sqrt{2}}{2}(1 + i)$. These are the two square roots of $i
 
 **Problem.** Find the domain of analyticity of $f(z) = \mathrm{Log{}(z^2 + 1)$.
 
-$\mathrm{Log{}\, w$ is analytic on $\mathbb{'\{'}C{'\}'} \setminus (-\infty, 0]$So we need
+$\mathrm{Log{}\, w$ is analytic on $\mathbb{{'}C{}'} \setminus (-\infty, 0]$So we need
 $z^2 + 1 \notin (-\infty, 0]$.
 
 $z^2 + 1 \leq 0$ when $z^2 \leq -1$I.e., $z \in [-i, 0] \cup [0, i]$ (the imaginary axis Segment
 from $-i$ to $i$). Also $z^2 + 1 = 0$ at $z = \pm i$.
 
-Domain: $\mathbb{'\{'}C{'\}'} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
+Domain: $\mathbb{{'}C{}'} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
 
 </details>
 
@@ -381,11 +379,11 @@ $z = x + iy$Then
 
 $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
-_Proof._ Compute the limit along the real axis ($h \in \mathbb{'\{'}R{'\}'}$$h \to 0$):
+_Proof._ Compute the limit along the real axis ($h \in \mathbb{{'}R{}'}$$h \to 0$):
 
 $$f'(z) = \lim_{h \to 0} \frac{u(x+h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x+h, y) - v(x, y)}{h} = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
 
-Compute along the imaginary axis ($h = ik$$k \in \mathbb{'\{'}R{'\}'}$$k \to 0$):
+Compute along the imaginary axis ($h = ik$$k \in \mathbb{{'}R{}'}$$k \to 0$):
 
 $$f'(z) = \lim_{k \to 0} \frac{u(x, y+k) - u(x, y)}{ik} + i\lim_{k \to 0} \frac{v(x, y+k) - v(x, y)}{ik} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
 
@@ -456,8 +454,8 @@ Harmonic conjugate: $v(x, y) = 3x^2 y - y^3 + C$.
 _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 
 **Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on
-$\mathbb{'\{'}R{'\}'}^2 \setminus \{0\}$ but Has no harmonic conjugate on
-$\mathbb{'\{'}R{'\}'}^2 \setminus \{0\}$.
+$\mathbb{{'}R{}'}^2 \setminus \{0\}$ but Has no harmonic conjugate on
+$\mathbb{{'}R{}'}^2 \setminus \{0\}$.
 
 $u_x = \frac{2x}{x^2 + y^2}$$u_{xx} = \frac{2(y^2 - x^2)}{(x^2 + y^2)^2}$.
 $u_y = \frac{2y}{x^2 + y^2}$$u_{yy} = \frac{2(x^2 - y^2)}{(x^2 + y^2)^2}$. $\Delta u = 0$.
@@ -467,7 +465,7 @@ However,
 $\oint_{|z|=1} (-u_y\, dx + u_x\, dy) = \oint_{|z|=1} \frac{-y\, dx + x\, dy}{x^2 + y^2}
 = \int_0^{2\pi} 1\, d\theta = 2\pi \neq 0$.
 
-Since $\mathbb{'\{'}R{'\}'}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no
+Since $\mathbb{{'}R{}'}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no
 Harmonic conjugate exists on this domain.
 
 </details>
@@ -499,7 +497,7 @@ CR: $u_x = \cos x \cosh y = v_y$ $\checkmark$ and $u_y = \sin x \sinh y = -v_x$ 
 
 $f'(z) = u_x + iv_x = \cos x \cosh y - i\sin x \sinh y = \cos z$. $\blacksquare$
 
-**Problem.** Show $f(z) = \frac{1}{z}$ satisfies CR on $\mathbb{'\{'}C{'\}'} \setminus \{0\}$.
+**Problem.** Show $f(z) = \frac{1}{z}$ satisfies CR on $\mathbb{{'}C{}'} \setminus \{0\}$.
 
 $\frac{1}{z} = \frac{\bar{z}}{|z|^2} = \frac{x - iy}{x^2 + y^2}$.
 
@@ -518,9 +516,9 @@ $f'(z) = u_x + iv_x = \frac{-(x^2 - y^2 + 2ixy)}{(x^2 + y^2)^2} = \frac{-1}{z^2}
 
 ### 4.1 Contours
 
-A **contour** (or piecewise smooth path) in $\mathbb{'\{'}C{'\}'}$ is a continuous function
-$\gamma : [a, b] \to \mathbb{'\{'}C{'\}'}$ that is differentiable except at finitely many points,
-with a Continuous derivative everywhere it exists.
+A **contour** (or piecewise smooth path) in $\mathbb{{'}C{}'}$ is a continuous function
+$\gamma : [a, b] \to \mathbb{{'}C{}'}$ that is differentiable except at finitely many points, with a
+Continuous derivative everywhere it exists.
 
 A **simple closed contour** is a contour with $\gamma(a) = \gamma(b)$ and no other
 Self-intersections.
@@ -682,8 +680,8 @@ By the Cauchy-Riemann equations. $\blacksquare$
 
 ### 5.2 Connected Domains
 
-A domain $D \subseteq \mathbb{'\{'}C{'\}'}$ is ** connected** if every simple closed contour in $D$
-can Be continuously shrunk to a point within $D$.
+A domain $D \subseteq \mathbb{{'}C{}'}$ is ** connected** if every simple closed contour in $D$ can
+Be continuously shrunk to a point within $D$.
 
 **Cauchy's theorem may fail on multiply connected domains.** For example,
 $\int_\gamma \frac{1}{z}\, dz = 2\pi i$ where $\gamma$ is the unit circle (traversing a region that
@@ -825,14 +823,14 @@ _Proof._ $1/f$ is entire and bounded by $1/M$So constant by Liouville. $\blacksq
 ### 6.5 Fundamental Theorem of Algebra
 
 **Theorem 6.7 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{'\{'}C{'\}'}[z]$ has a root in $\mathbb{'\{'}C{'\}'}$.
+$p(z) \in \mathbb{{'}C{}'}[z]$ has a root in $\mathbb{{'}C{}'}$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
-**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in
-$\mathbb{'\{'}C{'\}'}$ Counting multiplicities.
+**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{{'}C{}'}$
+Counting multiplicities.
 
 ### 6.6 Worked Examples: Cauchy's Integral Formula
 
@@ -1014,7 +1012,7 @@ $$\mathrm{Res{}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
 
 For sufficiently large $R$ (enclosing all finite singularities).
 
-**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{'\{'}C{'\}'}$:
+**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{{'}C{}'}$:
 
 $$\sum_{\mathrm{all\ finite\ {} z_k} \mathrm{Res{}(f, z_k) + \mathrm{Res{}(f, \infty) = 0$$
 
@@ -1367,9 +1365,9 @@ of $T(z) = z$).
 
 1. **Parabolic:** Exactly one fixed point. Conjugate to $w = z + k$.
 2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^{i\theta} z$.
-3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{'\{'}R{'\}'}^+$$T'(z_0) \neq 1$. Conjugate
-   to $w = kz$.
-4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{'\{'}R{'\}'} \cup \{z : |z| = 1\}$.
+3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{{'}R{}'}^+$$T'(z_0) \neq 1$. Conjugate to
+   $w = kz$.
+4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{{'}R{}'} \cup \{z : |z| = 1\}$.
    Conjugate to $w = ke^{i\theta}z$.
 
 <details>
@@ -1402,11 +1400,11 @@ Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 ### 10.7 The Riemann Mapping Theorem
 
 **Theorem 10.5 (Riemann Mapping Theorem).** Let $U$ be a connected open proper subset of
-$\mathbb{'\{'}C{'\}'}$. Then there exists a bijective conformal map from $U$ onto the unit disk
-$\mathbb{'\{'}D{'\}'} = \{z : |z| \lt{} 1\}$.
+$\mathbb{{'}C{}'}$. Then there exists a bijective conformal map from $U$ onto the unit disk
+$\mathbb{{'}D{}'} = \{z : |z| \lt{} 1\}$.
 
 This is one of the most profound results in complex analysis, establishing that all connected
-Domains (other than $\mathbb{'\{'}C{'\}'}$ itself) are conformally equivalent.
+Domains (other than $\mathbb{{'}C{}'}$ itself) are conformally equivalent.
 
 _Remark._ The Riemann mapping theorem is an existence theorem; it does not provide an explicit
 Formula for the conformal map .
@@ -1424,7 +1422,7 @@ Constant. $\blacksquare$
 ### 11.2 The Fundamental Theorem of Algebra
 
 **Theorem 11.2 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{'\{'}C{'\}'}[z]$ has a root in $\mathbb{'\{'}C{'\}'}$.
+$p(z) \in \mathbb{{'}C{}'}[z]$ has a root in $\mathbb{{'}C{}'}$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
@@ -1448,16 +1446,16 @@ modulus principle requires the non-vanishing hypothesis.
 
 ### 11.5 Schwarz Lemma
 
-**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{'\{'}D{'\}'} \to \mathbb{'\{'}D{'\}'}$ is analytic
-with $f(0) = 0$ Then
+**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{{'}D{}'} \to \mathbb{{'}D{}'}$ is analytic with
+$f(0) = 0$ Then
 
-$$|f(z)| \leq |z| \quad \mathrm{for\ all\ {} z \in \mathbb{'\{'}D{'\}'}$$
+$$|f(z)| \leq |z| \quad \mathrm{for\ all\ {} z \in \mathbb{{'}D{}'}$$
 
 And $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^{i\theta} z$ for some real $\theta$.
 
 _Proof._ Define $g(z) = f(z)/z$ for $z \neq 0$ and $g(0) = f'(0)$. Then $g$ is analytic on
-$\mathbb{'\{'}D{'\}'}$. For $|z| = r \lt{} 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum
-modulus Principle, $|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So
+$\mathbb{{'}D{}'}$. For $|z| = r \lt{} 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus
+Principle, $|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So
 $|f(z)| \leq |z|$. Also $|f'(0)| = |g(0)| \leq 1$. If $|f'(0)| = 1$Then $|g|$ attains its maximum At
 an interior point, so $g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
 
@@ -1617,7 +1615,7 @@ $f'(z)$.
 <summary>Solution</summary>
 
 $f(z) = 1/(z^2 + 1)$ is a rational function with denominator non-zero away from $\pm i$So $f$ Is
-analytic on $\mathbb{'\{'}C{'\}'} \setminus \{i, -i\}$.
+analytic on $\mathbb{{'}C{}'} \setminus \{i, -i\}$.
 
 By the quotient rule: $f'(z) = \frac{-2z}{(z^2 + 1)^2}$.
 

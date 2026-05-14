@@ -62,8 +62,6 @@ Done.
 
 $$W = \frac{1}{2}(500)(0.08)^2 = \frac{1}{2}(500)(0.0064) = 1.6 \mathrm{ J}$$
 
-</details>
-
 ### Worked Example 2
 
 A worker pushes a $40 \mathrm{ kg}$ crate across a floor by applying a force of $150 \mathrm{ N}$ at
@@ -88,8 +86,6 @@ $$W_{\mathrm{net}} = 1088 + (-1094) = -6 \mathrm{ J}$$
 
 The small negative net work means the crate slightly decelerates.
 
-</details>
-
 ### Worked Example 3
 
 A $5 \mathrm{ kg}$ box is lowered vertically by a rope with a constant downward acceleration of
@@ -106,8 +102,6 @@ $$T = m(g - a) = 5(9.81 - 2) = 5 \times 7.81 = 39.1 \mathrm{ N}$$
 The tension acts upward while displacement is downward, so $\theta = 180^\circ$:
 
 $$W = T s \cos 180^\circ = 39.1 \times 4 \times (-1) = -156 \mathrm{ J}$$
-
-</details>
 
 ---
 
@@ -187,8 +181,6 @@ $$v^2 = \frac{200124}{600} = 333.54$$
 
 $$v = 18.26 \mathrm{ m/s}$$
 
-</details>
-
 ### Worked Example 4
 
 A $2 \mathrm{ kg}$ block slides from rest down a rough curved ramp. The top of the ramp is
@@ -203,8 +195,6 @@ Initial energy: $E_i = mgh = 2 \times 9.81 \times 4 = 78.48 \mathrm{ J}$
 Final kinetic energy: $E_{k,f} = \frac{1}{2}(2)(7^2) = 49.0 \mathrm{ J}$
 
 $$W_{\mathrm{lost}} = E_i - E_{k,f} = 78.48 - 49.0 = 29.5 \mathrm{ J}$$
-
-</details>
 
 ---
 
@@ -242,8 +232,6 @@ Total force: $F = 1177.2 + 400 = 1577.2 \mathrm{ N}$
 
 $$P = Fv = 1577.2 \times 18 = 28390 \mathrm{ W} = 28.4 \mathrm{ kW}$$
 
-</details>
-
 ### Worked Example 6
 
 A lift of mass $800 \mathrm{ kg}$ carries 5 passengers of average mass $70 \mathrm{ kg}$ each. The
@@ -260,8 +248,6 @@ Force to overcome gravity: $F = mg = 1150 \times 9.81 = 11282 \mathrm{ N}$
 Useful power: $P_{\mathrm{out}} = Fv = 11282 \times 2 = 22563 \mathrm{ W}$
 
 $$P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{22563}{0.85} = 26545 \mathrm{ W} = 26.5 \mathrm{ kW}$$
-
-</details>
 
 ---
 
@@ -293,8 +279,6 @@ $P_{\mathrm{out}} = \frac{mgh}{t} = \frac{200 \times 9.81 \times 5}{10} = 981 \m
 Electrical power input: $P_{\mathrm{in}} = VI = 240 \times 5 = 1200 \mathrm{ W}$
 
 $$\mathrm{Efficiency} = \frac{981}{1200} \times 100\% = 81.8\%$$
-
-</details>
 
 ---
 
@@ -328,8 +312,6 @@ $$E_k = E_{\mathrm{total}} - \frac{1}{2}kx^2 = 0.096 - \frac{1}{2}(120)(0.0004) 
 
 $$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.072}{0.3}} = \sqrt{0.48} = 0.693 \mathrm{ m/s}$$
 
-</details>
-
 ### Worked Example 9
 
 A simple pendulum of length $1.5 \mathrm{ m}$ has a bob of mass $0.5 \mathrm{ kg}$. It is pulled
@@ -346,8 +328,6 @@ By conservation of energy: $mgh = \frac{1}{2}mv^2$
 $$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.201} = \sqrt{3.94} = 1.99 \mathrm{ m/s}$$
 
 Total energy: $E_{\mathrm{total}} = mgh = 0.5 \times 9.81 \times 0.201 = 0.986 \mathrm{ J}$
-
-</details>
 
 ---
 
@@ -404,8 +384,6 @@ $W_{\mathrm{net}} = W_{\mathrm{app}} - W_g - W_f = 4200 - 2487 - 1066 = 647 \mat
 
 $$v = \sqrt{\frac{2 \times 647}{50}} = \sqrt{25.88} = 5.09 \mathrm{ m/s}$$
 
-</details>
-
 If you get this wrong, revise: Work Done by a Force / Work-Energy Theorem
 
 **Problem 2.** A ball of mass $0.1 \mathrm{ kg}$ is thrown vertically upward with speed
@@ -428,8 +406,6 @@ $$\frac{1}{2}(0.1)v^2 = 7.2 - 0.6 = 6.6 \mathrm{ J}$$
 
 $$v = \sqrt{\frac{2 \times 6.6}{0.1}} = \sqrt{132} = 11.49 \mathrm{ m/s}$$
 
-</details>
-
 If you get this wrong, revise: Conservation of Energy
 
 **Problem 3.** A pump lifts $500 \mathrm{ kg}$ of water per minute from a well $15 \mathrm{ m}$
@@ -442,8 +418,6 @@ Useful power:
 $P_{\mathrm{out}} = \frac{mgh}{t} = \frac{500 \times 9.81 \times 15}{60} = 1226.25 \mathrm{ W}$
 
 $$P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{1226.25}{0.75} = 1635 \mathrm{ W} = 1.64 \mathrm{ kW}$$
-
-</details>
 
 If you get this wrong, revise: Power and Efficiency
 
@@ -462,8 +436,6 @@ $$mgh = \frac{1}{2}kx^2$$
 $$2 \times 9.81 \times 0.25 = \frac{1}{2}(200)x^2$$
 
 $$4.905 = 100x^2 \implies x^2 = 0.04905 \implies x = 0.222 \mathrm{ m}$$
-
-</details>
 
 If you get this wrong, revise: Conservation of Energy / Elastic Potential Energy
 
@@ -484,8 +456,6 @@ $$W_r = 400 \times 100 = 40000 \mathrm{ J}$$
 Total work by engine: $W_{\mathrm{engine}} = 375000 + 40000 = 415000 \mathrm{ J}$
 
 $$P_{\mathrm{avg}} = \frac{W_{\mathrm{engine}}}{t} = \frac{415000}{8} = 51875 \mathrm{ W} = 51.9 \mathrm{ kW}$$
-
-</details>
 
 If you get this wrong, revise: Power and Work Done by a Force
 
@@ -508,8 +478,6 @@ $= 0.8^2 \times 0.785 = 0.502 \mathrm{ J}$
 
 $$h_{\mathrm{max}} = \frac{E_{\mathrm{remaining}}}{mg} = \frac{0.502}{0.2 \times 9.81} = 0.256 \mathrm{ m}$$
 
-</details>
-
 If you get this wrong, revise: Conservation of Energy
 
 **Problem 7.** A mass-spring system oscillates with amplitude $0.05 \mathrm{ m}$ and total energy
@@ -527,8 +495,6 @@ $$E_k = E_{\mathrm{total}} - \frac{1}{2}kx^2 = 0.5 - \frac{1}{2}(400)(0.0009) = 
 
 $$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.32}{0.4}} = \sqrt{1.6} = 1.26 \mathrm{ m/s}$$
 
-</details>
-
 If you get this wrong, revise: Energy in Simple Harmonic Motion
 
 **Problem 8.** An electric kettle rated at $2000 \mathrm{ W}$ takes $3$ minutes to boil
@@ -545,8 +511,6 @@ Electrical energy supplied: $E_{\mathrm{in}} = Pt = 2000 \times 3 \times 60 = 36
 
 $$\mathrm{Efficiency} = \frac{268800}{360000} \times 100\% = 74.7\%$$
 
-</details>
-
 If you get this wrong, revise: Efficiency
 
 **Problem 9.** A force of $F = 3x^2 \mathrm{ N}$ (where $x$ is in metres) acts on an object Moving
@@ -557,8 +521,6 @@ along the x-axis from $x = 0$ to $x = 2 \mathrm{ m}$. Find the work done.
 
 $$W = \int_{0}^{2} 3x^2\, dx = \left[x^3\right]_0^2 = 8 - 0 = 8.0 \mathrm{ J}$$
 
-</details>
-
 If you get this wrong, revise: Work Done by a Variable Force
 
 **Problem 10.** A $60 \mathrm{ kg}$ student runs up a flight of stairs in $5 \mathrm{ s}$. The
@@ -568,8 +530,6 @@ Vertical height of the stairs is $6 \mathrm{ m}$. Find the average power develop
 <summary>Solution</summary>
 
 $$P = \frac{mgh}{t} = \frac{60 \times 9.81 \times 6}{5} = \frac{3531.6}{5} = 706 \mathrm{ W}$$
-
-</details>
 
 If you get this wrong, revise: Power
 
@@ -757,8 +717,6 @@ $$\frac{1}{2}(0.5)v^2 = 154.35$$
 
 $$v = \sqrt{\frac{2 \times 154.35}{0.5}} = \sqrt{617.4} = 24.8 \mathrm{ m/s}$$
 
-</details>
-
 ### Worked Example 11
 
 A spring of spring constant $200 \mathrm{ N/m}$ is compressed by $0.05 \mathrm{ m}$ and used To
@@ -779,8 +737,6 @@ Time to fall $1.5 \mathrm{ m}$:
 $h = \frac{1}{2}gt^2 \implies t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 1.5}{9.81}} = \sqrt{0.306} = 0.553 \mathrm{ s}$
 
 Horizontal distance: $d = vt = 2.0 \times 0.553 = 1.11 \mathrm{ m}$
-
-</details>
 
 ### Worked Example 12
 
@@ -805,8 +761,6 @@ Time taken:
 $d = \frac{1}{2}(u + v)t \implies t = \frac{2d}{u + v} = \frac{400}{35} = 11.43 \mathrm{ s}$
 
 $$P_{\mathrm{avg}} = \frac{W_{\mathrm{engine}}}{t} = \frac{435000}{11.43} = 38060 \mathrm{ W} = 38.1 \mathrm{ kW}$$
-
-</details>
 
 ---
 
@@ -870,8 +824,6 @@ Decrease if the brakes overheat. Additionally, the driver's reaction time adds t
 distance (thinking distance + braking distance), and road conditions (wet, icy) may Reduce the
 friction coefficient.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point A, height $30 \mathrm{ m}$
@@ -928,8 +880,6 @@ $$\frac{1}{2}(500)v_D^2 = 44050 + 500 \times 9.81 \times 20 - 200 \times 20 = 44
 
 $$v_D = \sqrt{\frac{2 \times 138150}{500}} = \sqrt{552.6} = 23.5 \mathrm{ m/s}$$
 
-</details>
-
 ### Question 3 (DSE Structured)
 
 (a) Define power and state its SI unit.
@@ -960,8 +910,6 @@ $P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{15000}{0.85} = 17647 \m
 Energy consumed: $E = P_{\mathrm{in}} \times t = 17.647 \times 8 = 141.2 \mathrm{ kWh}$
 
 Cost: $141.2 \times 1.20 = \$169.44$
-
-</details>
 
 ### Question 4 (DSE Structured)
 
@@ -1025,8 +973,6 @@ $$v_B = 8 - 2(2) = 4.0 \mathrm{ m/s}$$
 
 After the elastic collision: A moves at $2.0 \mathrm{ m/s}$ and B moves at $4.0 \mathrm{ m/s}$. (A
 transfers all its "excess" speed to B.)
-
-</details>
 
 ### Question 5 (DSE Structured)
 
@@ -1092,14 +1038,13 @@ A raindrop of mass $5.0 \times 10^{-7} \mathrm{ kg}$ falls through air. The air 
 given by $F_{\mathrm{air}} = kv^2$Where $k = 2.0 \times 10^{-5} \mathrm{ kg/m}$. Calculate the
 terminal velocity.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 At terminal velocity: $mg = kv_{\mathrm{terminal}}^2$
 
 $$v_{\mathrm{terminal}} = \sqrt{\frac{mg}{k}} = \sqrt{\frac{5.0 \times 10^{-7} \times 9.81}{2.0 \times 10^{-5}}} = \sqrt{\frac{4.905 \times 10^{-6}}{2.0 \times 10^{-5}}} = \sqrt{0.245} = 0.495 \mathrm{ m/s}$$
-
-</details>
 
 ### Extended Worked Example: Efficiency of a Machine
 
@@ -1125,7 +1070,5 @@ $P_{\mathrm{out}} = \frac{mgh}{t} = \frac{800 \times 9.81 \times 5.0}{30} = \fra
 $E = P_{\mathrm{in}} \times t = 2880 \times 8 = 23040 \mathrm{ Wh} = 23.04 \mathrm{ kWh}$
 
 Daily cost: $23.04 \times 1.50 = \$34.56$
-
-</details>
 
 </details>

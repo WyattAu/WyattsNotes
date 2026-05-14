@@ -344,8 +344,8 @@ Divide by 2: $-2 \lt x \leq 3$.
 
 ### 3.5 Set Notation for Inequalities (Higher Tier)
 
-The solution $x \gt 3$ can be written as $\{x \in \mathbb{'\{'}R{'\}'} : x \gt 3\}$ or using
-interval notation $(3, \infty)$.
+The solution $x \gt 3$ can be written as $\{x \in \mathbb{{'}R{}'} : x \gt 3\}$ or using interval
+notation $(3, \infty)$.
 
 ## 4. Sequences
 

@@ -11,7 +11,7 @@ categories:
 slug: symbol-visibility
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 While the compiler processes one Translation Unit (TU) at a time, the **Linker** fuses them
 Together. To do this, it must determine which names (symbols) in `A.cpp` refer to the same entities

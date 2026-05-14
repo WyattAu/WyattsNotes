@@ -39,7 +39,6 @@ Tendency that lends itself to algebraic manipulation (e.g., combining datasets).
 <summary>Examples</summary>
 - The scores of $5$ students are $72, 85, 90, 68, 80$. The mean is $\bar{x} = \frac{72+85+90+68+80}{5} = \frac{395}{5} = 79$.
 - If every score is increased by $5$ bonus marks, the new mean is $79 + 5 = 84$.
-</details>
 
 ### Median
 
@@ -57,7 +56,6 @@ The median is robust to outliers since only on the position of data points, not 
 - Dataset: $\{3, 7, 1, 9, 5\}$. Sorted: $\{1, 3, 5, 7, 9\}$. Median = $5$ (position $3$ of $5$).
 - Dataset: $\{2, 4, 6, 8, 10, 12\}$. Median = $\frac{6+8}{2} = 7$ (average of positions $3$ and $4$).
 - Salaries: $\{18000, 20000, 22000, 25000, 150000\}$. Median = $22000$Which is far more representative than the mean of $47000$.
-</details>
 
 ### Mode
 
@@ -71,7 +69,6 @@ The mode is the only measure of central tendency applicable to nominal (categori
 - $\{4, 2, 7, 4, 3, 4, 8\}$: mode = $4$ (appears $3$ times).
 - $\{5, 5, 8, 8, 10\}$: bimodal, modes are $5$ and $8$.
 - $\{1, 2, 3, 4, 5\}$: no mode.
-</details>
 
 ### Comparison of the Three Measures
 
@@ -101,7 +98,6 @@ Outliers.
 <summary>Examples</summary>
 - $\{12, 15, 18, 22, 25\}$: range $= 25 - 12 = 13$.
 - $\{5, 10, 10, 10, 10, 100\}$: range $= 95$Heavily distorted by the single outlier.
-</details>
 
 ### Interquartile Range (IQR)
 
@@ -126,7 +122,6 @@ The IQR is resistant to outliers since it ignores the most extreme $50\%$ of dat
  - $Q_2 = 12$.
  - Upper half: $\{14, 18, 20, 25\}$$Q_3 = \frac{18+20}{2} = 19$.
  - IQR $= 19 - 6 = 13$.
-</details>
 
 ### Variance
 
@@ -172,7 +167,6 @@ $n$) is expected.
  - $\sum(x_i - \bar{x})^2 = 9 + 1 + 1 + 1 + 0 + 0 + 4 + 16 = 32$.
  - Population variance: $\sigma^2 = \frac{32}{8} = 4$.
  - Sample variance: $s^2 = \frac{32}{7} \approx 4.57$.
-</details>
 
 ### Standard Deviation
 
@@ -192,7 +186,6 @@ Variance for comparing spread.
 <summary>Examples</summary>
 - Following the previous example: $\sigma = \sqrt{4} = 2$$s = \sqrt{\frac{32}{7}} \approx 2.14$.
 - Two machines produce rods of length $10$ cm. Machine A has $\sigma = 0.1$ cm, Machine B has $\sigma = 0.5$ cm. Machine A is more precise.
-</details>
 
 ## Grouped Data
 
@@ -253,8 +246,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 ### Variance of Grouped Data
 
 For grouped data, the population variance is:
@@ -308,7 +299,6 @@ For the mean: $\overline{aX+b} = a\bar{x} + b$.
 <summary>Examples</summary>
 - If $\bar{x} = 50$ and $\sigma^2 = 16$Then for $Y = 3X - 4$: $\bar{y} = 3(50)-4 = 146$ and $\mathrm{Var}(Y) = 9 \times 16 = 144$.
 - Temperatures recorded in Celsius have mean $25$ and standard deviation $3$. In Fahrenheit ($F = 1.8C + 32$): mean $= 1.8(25)+32 = 77$Standard deviation $= 1.8 \times 3 = 5.4$.
-</details>
 
 ### Combined Variance
 
@@ -346,8 +336,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 ## Applications
 
 ### Coefficient of Variation
@@ -368,7 +356,6 @@ A larger CV indicates greater relative dispersion.
 - Investment A: mean return $= 8\%$Standard deviation $= 2\%$. CV $= \frac{2}{8} \times 100\% = 25\%$.
 - Investment B: mean return $= 15\%$Standard deviation $= 5\%$. CV $= \frac{5}{15} \times 100\% \approx 33.3\%$.
 - Investment A has lower relative risk.
-</details>
 
 ### Box-and-Whisker Plots
 
@@ -394,7 +381,6 @@ $Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
  - Lower fence: $12 - 1.5(16) = -12$.
  - Upper fence: $28 + 1.5(16) = 52$.
  - Since $58 > 52$The value $58$ is an outlier. The upper whisker extends to $42$ instead.
-</details>
 
 ### Skewness (DSE awareness)
 
@@ -409,13 +395,12 @@ While not computed algebraically in the compulsory syllabus, students should rec
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** The marks of $7$ students are $56, 62, 45, 78, 83, 71, 65$. Find the mean, median, and mode.
-<details>
+### Details
 <summary>Answer</summary>
 - Sorted: $\{45, 56, 62, 65, 71, 78, 83\}$.
 - Mean: $\bar{x} = \frac{460}{7} \approx 65.7$.
 - Median (position $4$ of $7$): $65$.
 - Mode: none (all values are distinct).
-</details>
 
 2. **Question:** A dataset has mean $20$ and variance $36$. Find the mean and variance of the
 Transformed dataset $Y = \dfrac{X - 20}{6}$.
@@ -424,7 +409,6 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 
 - $\bar{y} = \frac{1}{6}(20) - \frac{20}{6} = \frac{20-20}{6} = 0$.
 - $\mathrm{Var}(Y) = \left(\frac{1}{6}\right)^2 \times 36 = \frac{1}{36} \times 36 = 1$.
-</details>
 
 3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation
    using the coding method.
@@ -446,7 +430,6 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
 - $\sigma_d^2 = \frac{62}{50} - \left(\frac{-2}{50}\right)^2 = 1.24 - 0.0016 = 1.2384$.
 - $\sigma^2 = 1.2384 \times 10^2 = 123.84$. So $\sigma = \sqrt{123.84} \approx 11.13$.
-</details>
 
 4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$$\bar{x}_1 = 72$ $\sigma_1 = 8$).
 Class B ($n_2 = 20$$\bar{x}_2 = 80$$\sigma_2 = 6$). Find the combined mean and Combined standard
@@ -466,7 +449,6 @@ deviation.
   \end{aligned}
   $$
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
-</details>
 
 5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs:
 $820, 790, 810, 780, 830, 800, 795, 815, 805, 855$. Determine the range, IQR, and identify any
@@ -482,7 +464,6 @@ Outliers.
 - IQR $= 820 - 795 = 25$.
 - Lower fence: $795 - 1.5(25) = 757.5$. Upper fence: $820 + 1.5(25) = 857.5$.
 - No outliers (all values lie within $[757.5, 857.5]$).
-</details>
 
 6. **Question:** A farmer records the yields (in kg) of two varieties of wheat over several seasons.
 Variety A: mean $= 45$Standard deviation $= 5$. Variety B: mean $= 60$Standard deviation $= 9$.
@@ -493,7 +474,6 @@ Which variety has more consistent yield?
 - CV$_A = \frac{5}{45} \times 100\% \approx 11.1\%$.
 - CV$_B = \frac{9}{60} \times 100\% = 15.0\%$.
 - Since CV$_A <$ CV$_B$Variety A has more consistent (less variable) yield relative to its mean.
-</details>
 
 7. **Question:** Given the dataset $\{a, b, c\}$ with mean $10$ and variance $8$Find the value of
 $a^2 + b^2 + c^2$.
@@ -503,7 +483,6 @@ $a^2 + b^2 + c^2$.
 - $\bar{x} = \frac{a+b+c}{3} = 10 \implies a+b+c = 30$.
 - $\sigma^2 = \frac{a^2+b^2+c^2}{3} - \bar{x}^2 = 8$.
 - $\frac{a^2+b^2+c^2}{3} - 100 = 8 \implies a^2+b^2+c^2 = 324$.
-</details>
 
 8. **Question:** A set of $20$ numbers has mean $15$ and standard deviation $3$. If each number is
 Multiplied by $2$ and then $5$ is added, find the new mean and new standard deviation.
@@ -513,7 +492,6 @@ Multiplied by $2$ and then $5$ is added, find the new mean and new standard devi
 - New mean: $2(15) + 5 = 35$.
 - New variance: $2^2 \times 3^2 = 36$.
 - New standard deviation: $\sqrt{36} = 6$.
-</details>
 
 9. **Question:** The histogram below (described verbally) shows the distribution of weights of $50$
    apples. The class intervals and frequencies are:
@@ -543,8 +521,6 @@ Estimate the median weight from the cumulative frequency distribution.
   \end{aligned}
   $$
 
-</details>
-
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
 mean, and the population variance. Verify your variance using both the definition formula and The
 computational formula.
@@ -569,8 +545,6 @@ computational formula.
   \end{aligned}
   $$
 
-</details>
-
 11. **Question:** The weekly wages (in dollars) of $8$ workers in a small factory are
 $3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000$. The factory owner claims the average wage is
 `USD 5150`. Is this claim misleading? Explain using an appropriate measure of central tendency and
@@ -585,8 +559,7 @@ Dispersion.
   `USD 12000` (likely the owner's own salary or a manager's) inflates the mean by `USD 800`. The
   median is resistant to outliers and better reflects what a typical worker earns.
 - The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate
-Significant skewness, confirming the mean is a poor choice of summary statistic.
-</details>
+  Significant skewness, confirming the mean is a poor choice of summary statistic.
 
 12. **Question:** A set of data has variance $25$ and mean $0$. A new set is formed by removing the
 Value $10$ from the original set. If the original set had $n = 6$ values, find the new mean and new
@@ -600,7 +573,6 @@ Variance.
 - New mean: $\bar{x}' = \frac{-10}{5} = -2$.
 - New sum of squares: $150 - 100 = 50$.
 - New variance: $\sigma'^2 = \frac{50}{5} - (-2)^2 = 10 - 4 = 6$.
-</details>
 </details>
 
 For the A-Level treatment of this topic, see

@@ -11,7 +11,7 @@ categories:
 slug: language-server-protocol-configuration
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 **Language Server Protocol (LSP)** decouples the specific IDE (VS Code, Neovim, Emacs) from the
 Language intelligence logic.

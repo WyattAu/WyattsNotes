@@ -57,11 +57,10 @@ A function $f \colon A \to B$ is:
 
 <details>
 <summary>Examples</summary>
-- $f(x) = 2x + 1$ with domain $\mathbb{'\{'}R{'\}'}$ is injective (linear, non-constant) and surjective onto $\mathbb{'\{'}R{'\}'}$Hence bijective.
-- $f(x) = x^2$ with domain $\mathbb{'\{'}R{'\}'}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{'\{'}R{'\}'}$ (range is $[0, \infty)$).
+- $f(x) = 2x + 1$ with domain $\mathbb{{'}R{}'}$ is injective (linear, non-constant) and surjective onto $\mathbb{{'}R{}'}$Hence bijective.
+- $f(x) = x^2$ with domain $\mathbb{{'}R{}'}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{{'}R{}'}$ (range is $[0, \infty)$).
 - $f(x) = x^2$ with domain $[0, \infty)$ and codomain $[0, \infty)$ is bijective.
-- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{'\{'}R{'\}'} \setminus \{0\}$ is injective but not surjective onto $\mathbb{'\{'}R{'\}'}$ (range is $\mathbb{'\{'}R{'\}'} \setminus \{0\}$).
-</details>
+- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{{'}R{}'} \setminus \{0\}$ is injective but not surjective onto $\mathbb{{'}R{}'}$ (range is $\mathbb{{'}R{}'} \setminus \{0\}$).
 
 ---
 
@@ -123,15 +122,13 @@ Injective.
 - Set $y = \dfrac{2x + 1}{x - 3}$
 - $y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1$
 - $x(y - 2) = 3y + 1 \implies x = \dfrac{3y + 1}{y - 2}$
-- Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$With domain $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
+- Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$With domain $\mathbb{{'}R{}'} \setminus \{2\}$.
 
 - Let $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + 1$. Find the domain of $f \circ g$:
-- $\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$
+- $\mathrm{dom}(g) = \mathbb{{'}R{}'}$
 - $\mathrm{dom}(f) = \{x : x \geq 1\}$So we require $g(x) \geq 1$I.e.
   $x^2 + 1 \geq 1 \implies x^2 \geq 0$Which holds for all real $x$.
-- Therefore $\mathrm{dom}(f \circ g) = \mathbb{'\{'}R{'\}'}$.
-
-</details>
+- Therefore $\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'}$.
 
 ---
 
@@ -210,8 +207,6 @@ Expressions.
 - Since $-(x - 2)^2 \leq 0$ for all $x$The maximum value is $-3$.
 - Range: $(-\infty, -3]$.
 
-</details>
-
 ---
 
 ## Exponential Functions
@@ -226,7 +221,7 @@ Where $a$ is called the **base**.
 
 ### Properties
 
-For $a, b > 0$ and $m, n \in \mathbb{'\{'}R{'\}'}$:
+For $a, b > 0$ and $m, n \in \mathbb{{'}R{}'}$:
 
 $$
 \begin{aligned}
@@ -271,8 +266,6 @@ for the full treatment of logarithmic techniques.
 - $A(t) = 100 \times \left(\frac{1}{2}\right)^{t/8}$
 - $A(24) = 100 \times \left(\frac{1}{2}\right)^3 = 12.5 \mathrm{ g}$
 
-</details>
-
 ---
 
 ## Logarithmic Functions
@@ -286,12 +279,12 @@ $$
 
 This means $\log_a x$ is the exponent to which $a$ must be raised to obtain $x$.
 
-The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{'\{'}R{'\}'}$. See
+The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{{'}R{}'}$. See
 [logarithms](logarithms) for further details.
 
 ### Laws of Logarithms
 
-For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{'\{'}R{'\}'}$:
+For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{{'}R{}'}$:
 
 $$
 \begin{aligned}
@@ -343,8 +336,6 @@ When solving logarithmic equations, the following steps are typical:
 - $\dfrac{x^2}{x - 1} = 4 \implies x^2 = 4x - 4 \implies x^2 - 4x + 4 = 0$
 - $(x - 2)^2 = 0 \implies x = 2$
 - Check: $x = 2 > 0$ and $x - 1 = 1 > 0$. Valid.
-
-</details>
 
 ---
 
@@ -410,8 +401,6 @@ Shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
   $y = \sqrt{-(x - 4)} = \sqrt{-x + 4}$Then shift down by 2.
 - Domain: $-x + 4 \geq 0 \implies x \leq 4$. Range: $[-2, \infty)$.
 
-</details>
-
 ---
 
 ---
@@ -431,7 +420,7 @@ $y$-axis, making it an **even function**: $|{-x}| = |x|$ for all $x$.
 
 ### Properties
 
-For all $a, b \in \mathbb{'\{'}R{'\}'}$:
+For all $a, b \in \mathbb{{'}R{}'}$:
 
 **Proposition (Multiplicativity).** $|ab| = |a| \cdot |b|$.
 
@@ -501,8 +490,6 @@ $(\Leftarrow)$ If $-a \lt f(x) \lt a$Then $f(x) \lt a$ and $-f(x) \lt a$So $|f(x
 - Below the $x$-axis on $(-1, 5)$; above on $(-\infty, -1] \cup [5, \infty)$.
 - Reflect the portion on $(-1, 5)$ upward. The minimum on $(-1, 5)$ becomes a maximum at $(2, 9)$.
 
-</details>
-
 ---
 
 ## Inequalities with Functions
@@ -516,11 +503,11 @@ Parabola:
 2. Sketch the parabola (opens upward if $a \gt 0$Downward if $a \lt 0$).
 3. Read off the intervals where the inequality is satisfied.
 
-| Discriminant   | Roots        | $a \gt 0$: $f(x) \gt 0$          | $a \gt 0$: $f(x) \lt 0$ |
-| -------------- | ------------ | -------------------------------- | ----------------------- |
-| $\Delta \gt 0$ | Two distinct | $x \lt x_1$ or $x \gt x_2$       | $x_1 \lt x \lt x_2$     |
-| $\Delta = 0$   | One repeated | All $x \neq x_1$                 | No solution             |
-| $\Delta \lt 0$ | None         | All $x \in \mathbb{'\{'}R{'\}'}$ | No solution             |
+| Discriminant   | Roots        | $a \gt 0$: $f(x) \gt 0$      | $a \gt 0$: $f(x) \lt 0$ |
+| -------------- | ------------ | ---------------------------- | ----------------------- |
+| $\Delta \gt 0$ | Two distinct | $x \lt x_1$ or $x \gt x_2$   | $x_1 \lt x \lt x_2$     |
+| $\Delta = 0$   | One repeated | All $x \neq x_1$             | No solution             |
+| $\Delta \lt 0$ | None         | All $x \in \mathbb{{'}R{}'}$ | No solution             |
 
 See [inequalities.md](inequalities)) for the general theory.
 
@@ -561,8 +548,6 @@ Multiplying through, use a sign chart. :::
 - Include zeros of numerator: $x = -2$ and $x = 2$.
 - Solution: $-2 \leq x \leq 2$ or $2 \lt x \lt 3$I.e., $[-2, 2] \cup (2, 3)$.
 
-</details>
-
 ---
 
 ## Rational Functions
@@ -576,7 +561,7 @@ F(x) = \frac{P(x)}{Q(x)}
 $$
 
 Where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \neq 0$. The domain is
-$\mathbb{'\{'}R{'\}'} \setminus \{x : Q(x) = 0\}$.
+$\mathbb{{'}R{}'} \setminus \{x : Q(x) = 0\}$.
 
 ### Asymptotes
 
@@ -635,8 +620,6 @@ Remaining factors. Analyse using a sign chart or by evaluating test points on ea
 - As $x \to 2^+$Numerator $\to 3 \gt 0$Denominator $\to 0^+$So $f(x) \to +\infty$.
 - As $x \to -2^+$Numerator $\to -3 \lt 0$Denominator $\to 0^-$So $f(x) \to +\infty$.
 
-</details>
-
 ---
 
 ## Graphical Methods for Solving Equations
@@ -682,8 +665,6 @@ Key observations:
   $x \lt 0$.
 - Total: exactly 2 solutions.
 
-</details>
-
 ---
 
 ## Common Pitfalls
@@ -697,9 +678,8 @@ Key observations:
   interval). $\|f(x)\| \gt a$ means $f(x)$ is _outside_ this range (two disjoint intervals).
   Confusing these produces wrong solution sets.
 - **Squaring both sides carelessly.** Squaring $|f(x)| = |g(x)|$ to get $f(x)^2 = g(x)^2$ is valid,
-But squaring $f(x) = g(x)$ can introduce extraneous solutions (e.g., $x = \sqrt{x}$ squares to
-$x^2 = x$Giving $x = 0$ or $x = 1$But $x = 1$ is extraneous).
-</details>
+  But squaring $f(x) = g(x)$ can introduce extraneous solutions (e.g., $x = \sqrt{x}$ squares to
+  $x^2 = x$Giving $x = 0$ or $x = 1$But $x = 1$ is extraneous).
 
 <details>
 <summary>Rational function errors</summary>
@@ -709,8 +689,7 @@ $x^2 = x$Giving $x = 0$ or $x = 1$But $x = 1$ is extraneous).
 - **Confusing holes and asymptotes.** If a factor cancels from both numerator and denominator, the
   result is a hole (removable discontinuity), not a vertical asymptote.
 - **Wrong horizontal asymptote.** The horizontal asymptote depends on the _leading terms only_. Do
-Not set the entire numerator equal to the entire denominator.
-</details>
+  Not set the entire numerator equal to the entire denominator.
 
 <details>
 <summary>Inequality errors</summary>
@@ -720,8 +699,7 @@ Not set the entire numerator equal to the entire denominator.
 - **Including excluded values.** For $\frac{f(x)}{g(x)} \geq 0$Values where $g(x) = 0$ are still
   excluded from the domain, even though the inequality is non-strict.
 - **Wrong discriminant analysis.** A negative discriminant with $a \gt 0$ means the quadratic is
-Always positive, not always negative.
-</details>
+  Always positive, not always negative.
 
 ---
 
@@ -730,13 +708,12 @@ Always positive, not always negative.
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Let $f(x) = \dfrac{2x - 6}{x + 1}$ and $g(x) = x^2 - 4$. Find $(f \circ g)(x)$ and state its domain.
-<details>
+### Details
 <summary>Answer</summary>
 - $(f \circ g)(x) = f(g(x)) = f(x^2 - 4) = \dfrac{2(x^2 - 4) - 6}{(x^2 - 4) + 1} = \dfrac{2x^2 - 14}{x^2 - 3}$
-- $\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'}$.
-- $\mathrm{dom}(f) = \{x \in \mathbb{'\{'}R{'\}'} : x \neq -1\}$So we require $g(x) \neq -1$I.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
-- $\mathrm{dom}(f \circ g) = \mathbb{'\{'}R{'\}'} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
-</details>
+- $\mathrm{dom}(g) = \mathbb{{'}R{}'}$.
+- $\mathrm{dom}(f) = \{x \in \mathbb{{'}R{}'} : x \neq -1\}$So we require $g(x) \neq -1$I.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
+- $\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
 <details>
@@ -745,7 +722,6 @@ Always positive, not always negative.
 - Set $y = 3x - 5$. Solving for $x$: $x = \dfrac{y + 5}{3}$.
 - Interchanging $x$ and $y$: $f^{-1}(x) = \dfrac{x + 5}{3}$.
 - Verification: $f^{-1}(f(x)) = \dfrac{(3x - 5) + 5}{3} = \dfrac{3x}{3} = x$. Confirmed.
-</details>
 
 3. **Question:** A quadratic function $f(x)$ has a maximum value of $7$ at $x = 2$And $f(0) = -5$.
 Find $f(x)$.
@@ -756,7 +732,6 @@ Find $f(x)$.
   $f(x) = a(x - 2)^2 + 7$ with $a < 0$.
 - Using $f(0) = -5$: $a(0 - 2)^2 + 7 = -5 \implies 4a + 7 = -5 \implies a = -3$.
 - Therefore $f(x) = -3(x - 2)^2 + 7 = -3x^2 + 12x - 5$.
-</details>
 
 4. **Question:** Find the range of values of $k$ for which the equation
 $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
@@ -767,7 +742,6 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - $\Delta = [2(k - 1)]^2 - 4(1)(k + 5) = 4(k - 1)^2 - 4k - 20 = 4(k^2 - 2k + 1) - 4k - 20 = 4k^2 - 8k + 4 - 4k - 20 = 4k^2 - 12k - 16$.
 - $4k^2 - 12k - 16 > 0 \implies k^2 - 3k - 4 > 0 \implies (k - 4)(k + 1) > 0$.
 - Therefore $k < -1$ or $k > 4$.
-</details>
 
 5. **Question:** Solve the equation $3^{2x} - 10 \cdot 3^x + 9 = 0$.
 <details>
@@ -778,7 +752,6 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - Case 1: $3^x = 1 \implies x = 0$.
 - Case 2: $3^x = 9 = 3^2 \implies x = 2$.
 - Solutions: $x = 0$ or $x = 2$.
-</details>
 
 6. **Question:** Solve $\log_3(x - 2) + \log_3(x + 6) = 2$.
 <details>
@@ -790,7 +763,6 @@ $x^2 + 2(k - 1)x + k + 5 = 0$ has two distinct real roots.
 - $(x + 7)(x - 3) = 0 \implies x = -7$ or $x = 3$.
 - Domain: $x - 2 > 0 \implies x > 2$. Therefore $x = -7$ is rejected.
 - Solution: $x = 3$.
-</details>
 
 7. **Question:** The graph of $y = f(x)$ passes through the points $(1, 4)$ and $(3, 10)$. State the
 Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
@@ -801,7 +773,6 @@ Coordinates of the corresponding points on the graph of $y = 2f(x - 1) + 3$.
   is found by setting $x - 1 = a$I.e. $x = a + 1$And $y = 2b + 3$.
 - $(1, 4) \mapsto (1 + 1,\; 2 \times 4 + 3) = (2, 11)$.
 - $(3, 10) \mapsto (3 + 1,\; 2 \times 10 + 3) = (4, 23)$.
-</details>
 
 8. **Question:** Given $f(x) = \log_2(x + 3)$ and $g(x) = 2^x - 1$Show that $f$ and $g$ are Inverse
 functions of each other, and state the domain and range of $f^{-1}$.
@@ -819,26 +790,23 @@ functions of each other, and state the domain and range of $f^{-1}$.
 - To find the true inverse of $f(x) = \log_2(x + 3)$:
 - Set $y = \log_2(x + 3) \implies 2^y = x + 3 \implies x = 2^y - 3$.
 - $f^{-1}(x) = 2^x - 3$.
-- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{'\{'}R{'\}'}$ (since $\log_2(x + 3)$ takes all
+- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{{'}R{}'}$ (since $\log_2(x + 3)$ takes all
   real values for $x > -3$).
 - $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
-</details>
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$Find the range of $f$ when (a) the domain is
-$\mathbb{'\{'}R{'\}'}$And (b) the domain is $[0, 4]$.
+$\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
 <details>
 <summary>Answer</summary>
 
 - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.
 - The vertex is at $(-1, -4)$.
-- (a) Domain $\mathbb{'\{'}R{'\}'}$: Since the parabola opens upward with minimum $-4$Range is
+- (a) Domain $\mathbb{{'}R{}'}$: Since the parabola opens upward with minimum $-4$Range is
   $[-4, \infty)$.
 - (b) Domain $[0, 4]$:
 - $f(0) = -3$$f(4) = 16 + 8 - 3 = 21$.
 - On $[0, 4]$The function is increasing (vertex at $x = -1$ is to the left of the interval).
 - Range: $[-3, 21]$.
-
-</details>
 
 10. **Question:** Let $f(x) = \dfrac{x}{x - 2}$ for $x \neq 2$. Find $f^{-1}$And evaluate
 $f^{-1}(3) + f(3)$.
@@ -847,11 +815,10 @@ $f^{-1}(3) + f(3)$.
 
 - Set $y = \dfrac{x}{x - 2}$.
 - $y(x - 2) = x \implies yx - 2y = x \implies yx - x = 2y \implies x(y - 1) = 2y \implies x = \dfrac{2y}{y - 1}$.
-- $f^{-1}(x) = \dfrac{2x}{x - 1}$With domain $\mathbb{'\{'}R{'\}'} \setminus \{1\}$.
+- $f^{-1}(x) = \dfrac{2x}{x - 1}$With domain $\mathbb{{'}R{}'} \setminus \{1\}$.
 - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
 - $f(3) = \dfrac{3}{3 - 2} = 3$.
 - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
-</details>
 </details>
 
 For the A-Level treatment of this topic, see
@@ -901,7 +868,7 @@ Exact values are preferred. Decimal answers to 3 significant figures.
 
 **Worked Example 9: Determining injectivity**
 
-Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{'\{'}R{'\}'}$?
+Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{{'}R{}'}$?
 
 <details>
 <summary>Solution</summary>
@@ -909,7 +876,7 @@ Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{'\{'}R{'\}'}$?
 $f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$.
 
 Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on
-$\mathbb{'\{'}R{'\}'}$.
+$\mathbb{{'}R{}'}$.
 
 Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 0$ for $x > 1$.
 
@@ -917,14 +884,13 @@ Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 
 
 **Worked Example 10: Surjectivity**
 
-Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{'\{'}R{'\}'}$?
+Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{{'}R{}'}$?
 
 <details>
 <summary>Solution</summary>
 
 No. Since $x^2 \geq 0$ for all real $x$We have $f(x) = x^2 + 1 \geq 1$. The value
-$0 \in \mathbb{'\{'}R{'\}'}$ is not attained. Therefore $f$ is not surjective onto
-$\mathbb{'\{'}R{'\}'}$.
+$0 \in \mathbb{{'}R{}'}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{{'}R{}'}$.
 
 If the codomain is restricted to $[1, \infty)$Then $f$ is surjective.
 
@@ -979,7 +945,7 @@ whether $f$ is injective.
 <details>
 <summary>Solution</summary>
 
-Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$.
+Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{1\}$.
 
 $f(x) = 2 + \dfrac{5}{x - 1}$.
 
@@ -989,7 +955,7 @@ $(2, +\infty)$.
 For $x < 1$: as $x \to 1^-$$f(x) \to -\infty$; as $x \to -\infty$$f(x) \to 2^-$. Range:
 $(-\infty, 2)$.
 
-Combined range: $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
+Combined range: $\mathbb{{'}R{}'} \setminus \{2\}$.
 
 $f$ is injective: for $x > 1$$f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for
 $x < 1$$f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with
@@ -1033,7 +999,7 @@ Since $f(-x) = -f(x)$$f$ is odd.
 
 </details>
 
-**DSE Practice 5.** The function $f$ is defined on $\mathbb{'\{'}R{'\}'}$ by $f(x) = ax^2 + bx + c$.
+**DSE Practice 5.** The function $f$ is defined on $\mathbb{{'}R{}'}$ by $f(x) = ax^2 + bx + c$.
 Given that $f(0) = 5$$f(1) = 4$And $f(-1) = 10$Find $a$$b$And $c$.
 
 <details>

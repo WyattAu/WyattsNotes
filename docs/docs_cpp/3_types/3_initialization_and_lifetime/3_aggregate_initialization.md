@@ -11,7 +11,7 @@ categories:
 slug: aggregate-initialization
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Aggregate initialization is the mechanism by which plain data structures (structs, arrays, unions)
 Are initialized without invoking user-defined constructors. As C++ evolved, the definition of

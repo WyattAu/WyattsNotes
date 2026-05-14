@@ -163,8 +163,6 @@ If government cuts taxes by USD 80 billion: Tax multiplier = `-0.6 \times 1.43 =
 The spending increase (114.4) is 67% more effective than the tax cut (68.6) because the full
 Spending is injected, while only 60% of the tax cut is spent (the rest is saved).
 
-</details>
-
 If instead the government cut taxes by USD 100 billion:
 
 $$\Delta Y = -0.8 \times 2.5 \times (-100) = 200$$
@@ -541,8 +539,6 @@ Is injected directly into the economy. With a tax cut, only MPC x 50 = 37.5 bill
 Spent (the remaining 12.5 billion is saved). The initial injection is smaller, so the total effect
 Is smaller.
 
-</details>
-
 <details>
 <summary>Question 2: Crowding-Out Analysis</summary>
 
@@ -566,8 +562,6 @@ Interest rates up by enough to reduce private investment by exactly the amount o
 Spending increase.
 
 Note: Full crowding out is a theoretical extreme. In practice, crowding out is partial.
-
-</details>
 
 <details>
 <summary>Question 3: Policy Mix</summary>
@@ -601,8 +595,6 @@ Unemployment in opposite directions.
 
 Supply-side policies address the root cause of stagflation (a supply shock that reduced productive
 Capacity) without the inflationary side effects of demand-side stimulus.
-
-</details>
 
 <details>
 <summary>Question 4: Fiscal Policy in Hong Kong</summary>
@@ -639,8 +631,6 @@ Budget surplus may not be the most appropriate fiscal stance in this context.
 - Land premium revenue is volatile and cyclical, making budget forecasting difficult.
 - Fiscal reserves provide a buffer but are finite.
 
-</details>
-
 <details>
 <summary>Question 5: Balanced Budget Multiplier</summary>
 
@@ -668,8 +658,6 @@ National income by the same amount as the increase in spending. This is because 
 Increase is injected, but only the portion of the tax increase that would have been consumed (MPC x
 Delta T = 48 billion) is withdrawn from spending. The remaining 12 billion of the tax increase would
 Have been saved, so its withdrawal does not reduce consumption.
-
-</details>
 
 <details>
 <summary>Question 6: Monetary Policy Transmission</summary>
@@ -719,8 +707,6 @@ Shifts right.
 The increase in AD primarily raises real GDP and employment. The output gap narrows. Inflation may
 Rise slightly but remains below target due to the large output gap. The economy moves toward full
 Employment without generating significant inflationary pressure.
-
-</details>
 
 <details>
 <summary>Question 7: Supply-Side Policy Evaluation</summary>
@@ -772,8 +758,6 @@ Fiscal burden.
 Interventionist: Healthcare investment to extend healthy working years. Lifelong learning programmes
 To retrain older workers. Family-friendly policies (childcare subsidies, parental leave) to increase
 The birth rate over the long term (though this is a very slow policy).
-
-</details>
 
 ### Limitations of Supply-Side Policies
 
@@ -836,7 +820,8 @@ An economy has MPC = 0.7, MPT = 0.15, MPM = 0.15.
 what Is the total change in national income? (c) If the government cuts taxes by USD 40 billion,
 what is the Total change? (d) Why is the spending increase more effective?
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 (a) Multiplier = `1/(MPS + MPT + MPM) = 1/(0.3 + 0.15 + 0.15) = 1/0.6 = 1.67`.
@@ -848,8 +833,6 @@ what is the Total change? (d) Why is the spending increase more effective?
 
 (d) The full USD 40 billion is injected directly. With a tax cut, only `0.7 \times 40 = 28` billion
 is Spent initially (the rest is saved).
-
-</details>
 
 If you get this wrong, revise: [The Multiplier Effect](#the-multiplier-effect)
 
@@ -876,8 +859,6 @@ Income? (c) What is the balanced budget multiplier?
 (c) Balanced budget multiplier = `62.5 / 100 = 0.625`. (Note: the balanced budget multiplier equals
 1 Only in the simple model with no taxes or imports. With leakages, it is less than 1.)
 
-</details>
-
 If you get this wrong, revise: [Balanced Budget Multiplier](#common-pitfalls)
 
 </details>
@@ -901,8 +882,6 @@ Billion reduction. Actual GDP increase = `300 - 150 = 150` billion. (This is par
 
 (c) In a small open economy with mobile capital (like Hong Kong), higher interest rates attract
 foreign Capital inflows, which moderate the rise in domestic interest rates and reduce crowding out.
-
-</details>
 
 If you get this wrong, revise:
 [Government Debt and the Crowding-Out Effect](#government-debt-and-the-crowding-out-effect)
@@ -931,8 +910,6 @@ supply-side Policy** (education, retraining, deregulation, infrastructure, R&D) 
 productive capacity and Reduce structural unemployment. Supply-side policies shift LRAS right,
 reducing both inflation and Unemployment.
 
-</details>
-
 If you get this wrong, revise: [Policy Conflicts and Trade-Offs](#policy-conflicts-and-trade-offs)
 
 </details>
@@ -958,8 +935,6 @@ Downturn.
 
 (c) Total automatic stabilisation = `40 + 60 = 100` billion. This is equivalent to an automatic
 Fiscal stimulus of USD 100 billion, dampening the recession without any legislative action.
-
-</details>
 
 If you get this wrong, revise: [Automatic Stabilisers](#automatic-stabilisers)
 
@@ -991,8 +966,6 @@ Good for Both structural and cyclical unemployment in the medium term.
 create Jobs in export sectors but destroy jobs in import-competing sectors. Net effect on employment
 depends On the elasticity of demand for exports and imports.
 
-</details>
-
 If you get this wrong, revise: [Supply-Side Policies](#supply-side-policies)
 
 </details>
@@ -1020,8 +993,6 @@ recession.
 Stabilisation tool. The government could increase spending (infrastructure, consumption vouchers) or
 Cut taxes to stimulate aggregate demand. Fiscal reserves provide the capacity for expansionary
 fiscal Policy.
-
-</details>
 
 If you get this wrong, revise: [Hong Kong's Policy Constraints](#hong-kongs-policy-constraints)
 
@@ -1053,8 +1024,6 @@ stronger.
 also Be contractionary (reduce spending, raise taxes). If reducing unemployment is the priority,
 monetary Policy should be expansionary. Mixed signals create uncertainty and undermine both
 policies.
-
-</details>
 
 If you get this wrong, revise: [Fiscal Policy vs Monetary Policy](#fiscal-policy-vs-monetary-policy)
 

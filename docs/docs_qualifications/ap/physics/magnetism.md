@@ -224,7 +224,7 @@ $$
 Faraday's law states that a changing magnetic flux induces an EMF:
 
 $$
-\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt}
+\mathcal{{'}E{}'} = -\frac{d\Phi_B}{dt}
 $$
 
 Where the magnetic flux through a surface is:
@@ -246,14 +246,14 @@ status quo.
 A conducting bar of length $L$ moving with velocity $v$ perpendicular to a uniform field $B$:
 
 $$
-\mathcal{'\{'}E{'\}'} = BLv
+\mathcal{{'}E{}'} = BLv
 $$
 
 **Derivation:** The free charges in the bar experience a magnetic force $F = qvB$. This is
 equivalent To an electric field $E = vB$ along the bar. The EMF is:
 
 $$
-\mathcal{'\{'}E{'\}'} = \int_0^L E\, dl = \int_0^L vB\, dl = BLv
+\mathcal{{'}E{}'} = \int_0^L E\, dl = \int_0^L vB\, dl = BLv
 $$
 
 :::info[Example: Rotating loop in a magnetic field]
@@ -268,11 +268,10 @@ $$
 The induced EMF is:
 
 $$
-\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t) = \mathcal{'\{'}E{'\}'}_0\sin(\omega t)
+\mathcal{{'}E{}'} = -\frac{d\Phi_B}{dt} = NBA\omega\sin(\omega t) = \mathcal{{'}E{}'}_0\sin(\omega t)
 $$
 
-Where $\mathcal{'\{'}E{'\}'}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC
-generators.
+Where $\mathcal{{'}E{}'}_0 = NBA\omega$ is the peak EMF. This is the principle behind AC generators.
 
 :::
 
@@ -286,11 +285,11 @@ $$
 $$
 
 $$
-\mathcal{'\{'}E{'\}'} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{V{}
+\mathcal{{'}E{}'} = -\frac{d\Phi_B}{dt} = -0.2 \times 0.0314 = -0.00628\,\text{V{}
 $$
 
 $$
-I = \frac{|\mathcal{'\{'}E{'\}'}|}{R} = \frac{0.00628}{2} = 3.14\,\text{mA{}
+I = \frac{|\mathcal{{'}E{}'}|}{R} = \frac{0.00628}{2} = 3.14\,\text{mA{}
 $$
 
 By Lenz's law, the current flows counterclockwise (viewed along $\vec{B}$) to oppose the increasing
@@ -305,7 +304,7 @@ flux.
 The self-induced EMF in a coil is:
 
 $$
-\mathcal{'\{'}E{'\}'} = -L\frac{dI}{dt}
+\mathcal{{'}E{}'} = -L\frac{dI}{dt}
 $$
 
 Where $L$ is the inductance, measured in henrys (H). For a long solenoid with $N$ turns, length
@@ -322,7 +321,7 @@ Where $n = N/\ell$ is the turns per unit length.
 When the current in coil 1 changes, it induces an EMF in coil 2:
 
 $$
-\mathcal{'\{'}E{'\}'}_2 = -M\frac{dI_1}{dt}
+\mathcal{{'}E{}'}_2 = -M\frac{dI_1}{dt}
 $$
 
 Where $M$ is the mutual inductance. For a solenoid with a secondary coil of $N_2$ turns:
@@ -337,7 +336,7 @@ $$
 U = \frac{1}{2}LI^2
 $$
 
-**Derivation:** The power delivered to the inductor is $P = \mathcal{'\{'}E{'\}'}I = LI(dI/dt)$.
+**Derivation:** The power delivered to the inductor is $P = \mathcal{{'}E{}'}I = LI(dI/dt)$.
 Integrating:
 
 $$
@@ -349,13 +348,13 @@ $$
 When a switch is closed in a circuit with resistance $R$ and inductance $L$:
 
 $$
-\mathcal{'\{'}E{'\}'} - IR - L\frac{dI}{dt} = 0
+\mathcal{{'}E{}'} - IR - L\frac{dI}{dt} = 0
 $$
 
 This is a first-order linear ODE with solution:
 
 $$
-I(t) = \frac{\mathcal{'\{'}E{'\}'}}{R}\left(1 - e^{-t/(L/R)}\right) = I_{\max}\left(1 - e^{-t/\tau_L}\right)
+I(t) = \frac{\mathcal{{'}E{}'}}{R}\left(1 - e^{-t/(L/R)}\right) = I_{\max}\left(1 - e^{-t/\tau_L}\right)
 $$
 
 Where $\tau_L = L/R$ is the inductive time constant.
@@ -369,7 +368,7 @@ $$
 **Voltage across the inductor during charging:**
 
 $$
-V_L = L\frac{dI}{dt} = \mathcal{'\{'}E{'\}'} e^{-t/\tau_L}
+V_L = L\frac{dI}{dt} = \mathcal{{'}E{}'} e^{-t/\tau_L}
 $$
 
 At $t = 0$All the voltage is across the inductor. At $t \to \infty$All the voltage is across the
@@ -601,9 +600,9 @@ Terminal velocity of the loop as it enters the field.
 As the loop enters the field, the flux through the loop changes. Only the bottom edge of width $w$
 is Inside the field during entry.
 
-The motional EMF: $\mathcal{'\{'}E{'\}'} = Bwv$.
+The motional EMF: $\mathcal{{'}E{}'} = Bwv$.
 
-The induced current: $I = \mathcal{'\{'}E{'\}'}/R = Bwv/R$.
+The induced current: $I = \mathcal{{'}E{}'}/R = Bwv/R$.
 
 By Lenz's law, the induced current creates a force opposing the motion (upward). The force on the
 Bottom wire is:
@@ -626,30 +625,29 @@ $$
 <summary>Question 9: AP Exam-Style -- RL circuit analysis</summary>
 
 An RL circuit with $R = 100\,\Omega$ and $L = 0.5$ H is connected to a DC source of
-$\mathcal{'\{'}E{'\}'} = 20$ V. At $t = 0$The switch is closed. (a) Derive the current as a function
-of time. (b) At what time is The current increasing at half its initial rate? (c) How much energy
-has been stored in the inductor When the current reaches 80% of its maximum value?
+$\mathcal{{'}E{}'} = 20$ V. At $t = 0$The switch is closed. (a) Derive the current as a function of
+time. (b) At what time is The current increasing at half its initial rate? (c) How much energy has
+been stored in the inductor When the current reaches 80% of its maximum value?
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-(a) The ODE is $\mathcal{'\{'}E{'\}'} = L\frac{dI}{dt} + IR$.
+(a) The ODE is $\mathcal{{'}E{}'} = L\frac{dI}{dt} + IR$.
 
-Rearranging: $\frac{dI}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{L} - \frac{R}{L}I$.
+Rearranging: $\frac{dI}{dt} = \frac{\mathcal{{'}E{}'}}{L} - \frac{R}{L}I$.
 
-Let $I_{\max} = \mathcal{'\{'}E{'\}'}/R = 20/100 = 0.2$ A and
-$\tau = L/R = 0.5/100 = 5 \times 10^{-3}$ s.
+Let $I_{\max} = \mathcal{{'}E{}'}/R = 20/100 = 0.2$ A and $\tau = L/R = 0.5/100 = 5 \times 10^{-3}$
+s.
 
 Solution: $I(t) = I_{\max}(1 - e^{-t/\tau}) = 0.2(1 - e^{-200t})$.
 
-(b) The initial rate of current increase is $dI/dt|_{t=0} = \mathcal{'\{'}E{'\}'}/L = 20/0.5 = 40$
-A/s.
+(b) The initial rate of current increase is $dI/dt|_{t=0} = \mathcal{{'}E{}'}/L = 20/0.5 = 40$ A/s.
 
 Half of this is $20$ A/s:
 
-$$\frac{dI}{dt} = \frac{\mathcal{'\{'}E{'\}'}}{L}e^{-t/\tau} = 40e^{-200t} = 20$$
+$$\frac{dI}{dt} = \frac{\mathcal{{'}E{}'}}{L}e^{-t/\tau} = 40e^{-200t} = 20$$
 
 $$e^{-200t} = 0.5 \implies t = \frac{\ln 2}{200} = 3.47 \times 10^{-3}\,\text{s{} = 3.47\,\text{ms{}$$
 

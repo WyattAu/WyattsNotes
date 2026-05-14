@@ -19,8 +19,8 @@ Covers arithmetic and geometric progressions, sigma notation manipulation, and r
 
 ### Sequences
 
-A **sequence** is a function $a: \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$ (or a subset of
-$\mathbb{'\{'}N{'\}'}$). We write The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is
+A **sequence** is a function $a: \mathbb{{'}N{}'} \to \mathbb{{'}R{}'}$ (or a subset of
+$\mathbb{{'}N{}'}$). We write The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is
 called a **term** of the Sequence. The expression $a_n$ giving the $n$-th term in terms of $n$ is
 the **general term** or **formula for the $n$-th term**.
 
@@ -90,8 +90,6 @@ Find the 20th term of the sequence $3, 7, 11, 15, \ldots$
 
 Here $a_1 = 3$$d = 4$. So $a_{20} = 3 + 19 \times 4 = 3 + 76 = 79$.
 
-</details>
-
 <details>
 <summary>Example</summary>
 In an arithmetic sequence, $a_5 = 17$ and $a_{12} = 38$. Find $a_1$ and $d$.
@@ -99,8 +97,6 @@ In an arithmetic sequence, $a_5 = 17$ and $a_{12} = 38$. Find $a_1$ and $d$.
 $a_5 = a_1 + 4d = 17$ and $a_{12} = a_1 + 11d = 38$.
 
 Subtracting: $7d = 21 \implies d = 3$. Then $a_1 = 17 - 12 = 5$.
-
-</details>
 
 ### Property: Equidistant Terms
 
@@ -166,8 +162,6 @@ Find the sum of all integers from 1 to 100.
 
 $S_{100} = \frac{100 \times 101}{2} = 5050$.
 
-</details>
-
 <details>
 <summary>Example</summary>
 Find the sum of the arithmetic series $2 + 5 + 8 + \cdots + 89$.
@@ -175,8 +169,6 @@ Find the sum of the arithmetic series $2 + 5 + 8 + \cdots + 89$.
 $a_1 = 2$$d = 3$. Find $n$: $a_n = 2 + (n-1)3 = 89 \implies 3(n-1) = 87 \implies n = 30$.
 
 $S_{30} = \frac{30}{2}(2 + 89) = 15 \times 91 = 1365$.
-
-</details>
 
 ---
 
@@ -218,8 +210,6 @@ Find the 8th term of $3, -6, 12, -24, \ldots$
 
 $a_1 = 3$$r = -2$. $a_8 = 3(-2)^7 = 3(-128) = -384$.
 
-</details>
-
 <details>
 <summary>Example</summary>
 The 3rd term of a GP is 12 and the 7th term is 192. Find $a_1$ and $r$.
@@ -228,8 +218,6 @@ $a_3 = a_1 r^2 = 12$ and $a_7 = a_1 r^6 = 192$.
 
 Dividing: $r^4 = \frac{192}{12} = 16 \implies r^4 = 16$. Taking the positive root (assuming
 $r \gt 0$): $r = 2$. Then $a_1 = \frac{12}{4} = 3$.
-
-</details>
 
 ---
 
@@ -293,8 +281,6 @@ This is a geometric series with $a = 0.37$$r = 0.01$.
 
 $S_\infty = \frac{0.37}{1 - 0.01} = \frac{0.37}{0.99} = \frac{37}{99}$.
 
-</details>
-
 <details>
 <summary>Example: Compound interest</summary>
 A principal of USD 5000 is invested at 4% per annum, compounded annually. Find the value after 10 years.
@@ -302,8 +288,6 @@ A principal of USD 5000 is invested at 4% per annum, compounded annually. Find t
 The amount after $n$ years is $5000(1.04)^n$.
 
 After 10 years: $5000(1.04)^{10} \approx 5000(1.48024) \approx 7401.22$.
-
-</details>
 
 <details>
 <summary>Example: Bouncing ball</summary>
@@ -314,8 +298,6 @@ Down: 8 m. Up and down repeatedly: $2 \times 8(0.6), \; 2 \times 8(0.6)^2, \; \l
 Total distance
 $= 8 + 2 \times 8 \sum_{n=1}^{\infty} (0.6)^n = 8 + 16 \cdot \frac{0.6}{1-0.6} = 8 + 16 \cdot 1.5 = 8 + 24 = 32$
 M.
-
-</details>
 
 ---
 
@@ -361,8 +343,6 @@ $= 2\left(\sum_{k=1}^{10} k - \sum_{k=1}^{2} k\right) - (10 - 3 + 1)$
 
 $= 2(55 - 3) - 8 = 2(52) - 8 = 104 - 8 = 96$.
 
-</details>
-
 <details>
 <summary>Example</summary>
 Evaluate $\sum_{k=1}^{n} (3k^2 - 5k + 2)$.
@@ -376,8 +356,6 @@ $= \frac{n(n+1)(2n+1)}{2} - \frac{5n(n+1)}{2} + 2n$
 $= \frac{n}{2}[(n+1)(2n+1-5) + 4] = \frac{n}{2}[(n+1)(2n-4) + 4]$
 
 $= \frac{n}{2}[2n^2 - 2n - 4 + 4] = \frac{n}{2}(2n^2 - 2n) = n^2(n - 1)$.
-
-</details>
 
 ---
 
@@ -420,8 +398,6 @@ Since $a_n \gt 0$ for all $n$$L = 4$.
 
 This is the Babylonian method for computing $\sqrt{16} = 4$.
 
-</details>
-
 <details>
 <summary>Example</summary>
 A sequence is defined by $a_{n+1} = \sqrt{2 + a_n}$ with $a_1 = \sqrt{2}$. Assuming convergence, find the limit.
@@ -429,8 +405,6 @@ A sequence is defined by $a_{n+1} = \sqrt{2 + a_n}$ with $a_1 = \sqrt{2}$. Assum
 $L = \sqrt{2 + L} \implies L^2 = 2 + L \implies L^2 - L - 2 = 0 \implies (L-2)(L+1) = 0$.
 
 Since $a_n \gt 0$$L = 2$.
-
-</details>
 
 ---
 
@@ -465,7 +439,8 @@ Since $a_n \gt 0$$L = 2$.
    interest compounded annually. What is the value of the investment 10 years after they made their
    _last_ deposit?
 
-<details>
+### Details
+
 <summary>Answer</summary>
 - This is a two-part problem. First, an arithmetic series to find the total saved, then a geometric sequence for the compound interest.
 - **Part 1: Calculate total savings (Arithmetic Series)**
@@ -483,8 +458,6 @@ Since $a_n \gt 0$$L = 2$.
 <b>If you get this wrong, you should focus on:</b> Separating a multi-stage problem, calculating the
 Sum of a finite arithmetic series, and applying the formula for compound interest (a geometric
 Sequence application).
-
-</details>
 
 2. **Question:** A patient is given an initial dose of 20mg of a medication. Every day, they take a
    10mg maintenance dose. The drug is eliminated from the body such that 50% of the total amount is
@@ -510,8 +483,6 @@ Sequence application).
 
 <b>If you get this wrong, you should focus on:</b> Modeling real-world scenarios with recurrence
 Relations and finding the fixed point or steady state of the system by taking the limit.
-
-</details>
 
 3. **Question:** Find the exact sum of the infinite series
    $\sum_{n=1}^{\infty} \frac{1}{n(n+1)(n+2)}$.
@@ -540,8 +511,6 @@ Relations and finding the fixed point or steady state of the system by taking th
 
 <b>If you get this wrong, you should focus on:</b> Partial fraction decomposition for cubic
 Denominators and identifying the cancellation pattern in telescoping series.
-
-</details>
 
 4. **Question:** The area of a Koch snowflake can be found by summing an infinite series. Start with
    an equilateral triangle of area $A$. At each step, a new equilateral triangle is added to the
@@ -578,8 +547,6 @@ Denominators and identifying the cancellation pattern in telescoping series.
 <b>If you get this wrong, you should focus on:</b> Modeling a geometric process, identifying the
 First term and common ratio of the resulting geometric series, and calculating the sum.
 
-</details>
-
 5. **Question:** A student is trying to determine if the series
    $\sum_{n=1}^{\infty} \frac{n^2+n}{n^3+2}$ converges. They first try the Ratio Test, but find it
    inconclusive. Show why the Ratio Test is inconclusive, and then use a more appropriate test to
@@ -610,8 +577,6 @@ First term and common ratio of the resulting geometric series, and calculating t
 (especially for rational functions) and applying the Limit Comparison Test by choosing an
 Appropriate p-series to compare with.
 
-</details>
-
 6. **Question:** A programmer needs to approximate $\cos(0.2)$ for a low-power device. They decide
    to use a Maclaurin polynomial. What is the minimum degree of the polynomial required to guarantee
    an approximation error less than $10^{-7}$?
@@ -634,8 +599,6 @@ Appropriate p-series to compare with.
 
 <b>If you get this wrong, you should focus on:</b> The Alternating Series Estimation Theorem and how
 It applies to Taylor series approximations for functions like sine and cosine.
-
-</details>
 
 7. **Question:** The function $f(x) = \sin(x^2)$ is notoriously difficult to integrate. Approximate
    the value of the definite integral $\int_0^1 \sin(x^2) dx$ by integrating the first three
@@ -662,8 +625,6 @@ It applies to Taylor series approximations for functions like sine and cosine.
 <b>If you get this wrong, you should focus on:</b> Creating new series from known Maclaurin series
 Via substitution, and performing term-by-term integration of a power series to approximate a
 Definite integral.
-
-</details>
 
 8. **Question:** A ball is dropped from a height of 10 meters. After each bounce, it returns to 75%
    of its previous height. The time it takes to fall from a height $h$ is $\sqrt{h/5}$ seconds, and
@@ -697,8 +658,6 @@ Definite integral.
 Identifying the correct geometric series (especially the common ratio), and summing an infinite
 Geometric series.
 
-</details>
-
 9. **Question:** Show that the series $\sum_{n=2}^{\infty} \frac{(-1)^n}{\sqrt{n} \ln(n)}$ is
    conditionally convergent.
 
@@ -724,8 +683,6 @@ Geometric series.
 <b>If you get this wrong, you should focus on:</b> The definition of conditional and absolute
 Convergence, applying the Alternating Series Test, and using the Direct Comparison Test with a
 Suitable bounding function (like comparing $\ln(n)$ to a power of $n$).
-
-</details>
 
 10. **Question:** Find the complete interval of convergence for the power series
     $\sum_{n=1}^{\infty} \frac{(2x-5)^n}{n \cdot 3^n}$.
@@ -757,8 +714,6 @@ Convergence: using the Ratio Test correctly with a center other than 0, solving 
 Inequality, and carefully testing the endpoints using appropriate series tests (like p-series or
 AST).
 
-</details>
-
 11. **Question:** A sequence is defined by the recurrence relation
     $a_{n+1} = \frac{1}{2}(a_n + \frac{9}{a_n})$ with $a_1 = 1$. Assuming the sequence converges,
     what is its limit? Then, calculate the first four terms of the sequence to observe its rate of
@@ -785,8 +740,6 @@ AST).
 <b>If you get this wrong, you should focus on:</b> The technique for finding the limit of a
 Convergent recursive sequence and performing iterative calculations.
 
-</details>
-
 12. **Question:** Determine if the series $\sum_{n=1}^\infty \left(1 - \frac{1}{n}\right)^{n^2}$
     converges or diverges. (Hint: A test other than the Ratio Test will be much more effective).
 
@@ -806,8 +759,6 @@ Convergent recursive sequence and performing iterative calculations.
 <b>If you get this wrong, you should focus on:</b> Recognizing when to apply the Root Test
 (especially for terms with powers of n) and knowing the limit definition of the exponential function
 $e^x$.
-
-</details>
 
 13. **Question:** Find the sum of the series $\sum_{n=1}^{\infty} \frac{2}{n^2+4n+3}$.
 
@@ -839,8 +790,6 @@ $e^x$.
 Fraction decomposition, and carefully identifying the surviving terms in a telescoping series where
 The terms are not consecutive.
 
-</details>
-
 14. **Question:** A bank offers a special savings account. If you deposit USD 100 on the first day
     of the month, they add a USD 1 bonus at the end of the month. If you deposit USD 100 on the
     first day of the next month, they add a USD 2 bonus, and so on, with the bonus increasing by USD
@@ -866,8 +815,6 @@ The terms are not consecutive.
 <b>If you get this wrong, you should focus on:</b> Breaking a word problem into its constituent
 Parts and recognizing how to apply the formula for the sum of a simple arithmetic series.
 
-</details>
-
 15. **Question:** Using the Maclaurin series for $e^x$Find the exact value of the sum
     $\sum_{n=0}^{\infty} \frac{2^n}{n!}$. Then, use this result to find the sum of the related
     series $\sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$.
@@ -892,8 +839,6 @@ Parts and recognizing how to apply the formula for the sum of a simple arithmeti
 <b>If you get this wrong, you should focus on:</b> Recognizing known Maclaurin series, and using
 Index manipulation (re-indexing) to transform a given series into a more familiar form.
 
-</details>
-
 16. **Question:** The sum $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$ is a well-known formula. Use
     this to find the value of the series $\sum_{k=5}^{20} (3k^2 - 5)$.
 
@@ -915,8 +860,6 @@ Index manipulation (re-indexing) to transform a given series into a more familia
 <b>If you get this wrong, you should focus on:</b> Properties of sigma notation, specifically how to
 Change the starting and ending indices of a sum to match a known formula.
 
-</details>
-
 17. **Question:** Does the series $\sum_{n=1}^\infty \frac{n^n}{n!}$ converge or diverge? Justify
     your answer with an appropriate test.
 
@@ -937,8 +880,6 @@ Change the starting and ending indices of a sum to match a known formula.
 
 <b>If you get this wrong, you should focus on:</b> The Test for Divergence as a first-line check,
 And the application of the Ratio Test leading to the limit definition of $e$.
-
-</details>
 
 18. **Question:** A sequence is defined recursively by $x_1 = \sqrt{2}$ and
     $x_{n+1} = \sqrt{2 + x_n}$ for $n \ge 1$. Prove that this sequence converges and find its limit.
@@ -973,8 +914,6 @@ And the application of the Ratio Test leading to the limit definition of $e$.
 <b>If you get this wrong, you should focus on:</b> The Monotone Convergence Theorem, proof by
 Mathematical induction for boundedness and monotonicity, and finding the limit of a recursively
 Defined sequence.
-
-</details>
 
 </details>
 

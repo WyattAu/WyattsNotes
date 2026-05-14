@@ -493,8 +493,6 @@ $\mathrm{Na}_2\mathrm{CO}_3$ to give $\mathrm{CO}_2$.
 Note: Propanone ($\mathrm{CH}_3\mathrm{COCH}_3$) also has formula
 $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ but would not give a positive Tollens' test.
 
-</details>
-
 <details>
 <summary>Problem 2</summary>
 
@@ -518,8 +516,6 @@ Observation: vigorous reaction, white solid forms (ammonium chloride).
 (d)
 $\mathrm{CH}_3\mathrm{COCl} + 2\mathrm{CH}_3\mathrm{NH}_2 \to \mathrm{CH}_3\mathrm{CONHCH}_3 + \mathrm{CH}_3\mathrm{NH}_3^+\mathrm{Cl}^-$.
 Observation: vigorous reaction, white solid forms.
-
-</details>
 
 <details>
 <summary>Problem 3</summary>
@@ -545,8 +541,6 @@ $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct.
 
 Iodoform test:
 $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3 + 3\mathrm{I}_2 + 4\mathrm{NaOH} \to \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COONa} + \mathrm{CHI}_3(s) + 3\mathrm{NaI} + 3\mathrm{H}_2\mathrm{O}$
-
-</details>
 
 <details>
 <summary>Problem 4</summary>
@@ -764,7 +758,8 @@ $$\text{Percentage yield} = \frac◆LB◆\text{actual mass}◆RB◆◆LB◆6.52�
 
 ## Exam-Style Questions with Full Mark Schemes
 
-<details>
+### Details
+
 <summary>Q1 (5 marks)</summary>
 
 Describe a chemical test to distinguish between propanal and propanone. State the reagent, the
@@ -784,8 +779,6 @@ carboxylate ion, and $\mathrm{Ag}^+$ is reduced to metallic silver (1 mark).
 
 **Propanone:** No silver mirror forms (no reaction) (1 mark). Ketones are not oxidised by Tollens'
 reagent (1 mark).
-
-</details>
 
 <details>
 <summary>Q2 (6 marks)</summary>
@@ -808,8 +801,6 @@ not give a silver mirror with Tollens' reagent. Deduce the structure of $\mathrm
 - Verification: $M = 4(12) + 8(1) + 16 = 72\,\mathrm{g/mol}$. Contains $\mathrm{CH}_3\mathrm{CO}-$
   group. Not an aldehyde. Correct (1 mark).
 
-</details>
-
 <details>
 <summary>Q3 (5 marks)</summary>
 
@@ -829,8 +820,6 @@ formed as a racemic mixture.
 - The $\mathrm{CN}^-$ can attack from either face of the planar carbonyl with equal probability,
   producing a 50:50 mixture of enantiomers (racemate) (1 mark).
 
-</details>
-
 <details>
 <summary>Q4 (4 marks)</summary>
 
@@ -848,8 +837,6 @@ Explain why $\mathrm{NaBH}_4$ reduces aldehydes and ketones but does not reduce 
   donates electron density through resonance, and the acid protonates the
   $\mathrm{BH}_4^-$Destroying the reducing agent before it can attack (1 mark).
 - A stronger reducing agent such as $\mathrm{LiAlH}_4$ is needed for carboxylic acids (1 mark).
-
-</details>
 
 <details>
 <summary>Q5 (5 marks)</summary>
@@ -871,8 +858,6 @@ yield (1 mark for description, 1 mark for irreversibility).
 Comparison: Method (b) gives a higher yield and does not require heating, but uses the more
 expensive and hazardous ethanoyl chloride. Method (a) uses cheaper reagents but gives a lower yield
 unless excess reagent is used or water is removed (1 mark).
-
-</details>
 
 ## Retrosynthesis with Carbonyl Compounds
 

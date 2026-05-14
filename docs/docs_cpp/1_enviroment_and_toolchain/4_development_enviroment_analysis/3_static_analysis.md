@@ -11,7 +11,7 @@ categories:
 slug: static-analysis
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Static Analysis involves examining source code without executing it. Unlike the compiler, which
 Focuses on grammar and binary generation, static analyzers focus on correctness, readability.

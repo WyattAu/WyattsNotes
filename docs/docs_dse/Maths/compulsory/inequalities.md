@@ -65,7 +65,6 @@ $$
 - $5 > 2$ and $-3 < 0 \implies 5 \times (-3) < 2 \times (-3)$I.e., $-15 < -6$.
 - $7 > 5 > 2 \implies 7 > 2$ (transitivity).
 - $3 > 2 > 0 \implies 9 > 4$ and $\dfrac{1}{3} < \dfrac{1}{2}$.
-</details>
 
 ## Linear Inequalities
 
@@ -122,8 +121,6 @@ $$
 $$
 
 The solution set is $[7, \infty)$.
-
-</details>
 
 ## Quadratic Inequalities
 
@@ -224,8 +221,6 @@ $$
 Solution: $x < -\dfrac{1}{2}$ or $x > 2$I.e.,
 $\left(-\infty, -\dfrac{1}{2}\right) \cup (2, \infty)$.
 
-</details>
-
 ## Absolute Value Inequalities
 
 The absolute value of a real number $x$Denoted $|x|$Represents its distance from zero on the Number
@@ -270,7 +265,7 @@ This gives two separate linear inequalities, each solved independently.
 ### Special Cases
 
 - If $c \leq 0$Then $|x| < c$ has no solution ($\varnothing$).
-- If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{'\{'}R{'\}'}$).
+- If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{{'}R{}'}$).
 - $|x| \geq a$ and $|x| \leq a$ follow the same patterns with non-strict inequality signs.
 
 <details>
@@ -305,7 +300,7 @@ $$
 3x - 6 \neq 0 \implies x \neq 2
 $$
 
-Solution: $\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
+Solution: $\mathbb{{'}R{}'} \setminus \{2\}$.
 
 - Solve $|x^2 - 4| < 5$:
 
@@ -324,8 +319,6 @@ Solution: $(-3, 3)$.
 Since $|x + 2| \geq 0$ for all real $x$It can never be $\leq -1$.
 
 Solution: $\varnothing$.
-
-</details>
 
 ## Systems of Inequalities
 
@@ -381,14 +374,12 @@ From $x - 3 < 0$: $x < 3$.
 
 Intersection: $(-\infty, 3)$.
 
-</details>
-
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Solve the inequality $\dfrac{2x - 1}{3} \leq \dfrac{x + 2}{4} + 1$.
-<details>
+### Details
 <summary>Answer</summary>
 Multiply through by $12$ (the LCM of $3$ and $4$Which is positive so the inequality sign is preserved):
 
@@ -406,8 +397,6 @@ $$
 
 Solution: $\left(-\infty, \dfrac{22}{5}\right]$.
 
-</details>
-
 2. **Question:** Solve $x^2 - 6x + 9 \geq 0$.
 <details>
 <summary>Answer</summary>
@@ -416,9 +405,7 @@ Factorize: $(x - 3)^2 \geq 0$.
 Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all
 Real numbers.
 
-Solution: $\mathbb{'\{'}R{'\}'}$.
-
-</details>
+Solution: $\mathbb{{'}R{}'}$.
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
 <details>
@@ -428,8 +415,6 @@ From $x^2 - 3x - 10 < 0$: $(x - 5)(x + 2) < 0 \implies -2 < x < 5$.
 From $2x + 1 > 0$: $x > -\dfrac{1}{2}$.
 
 Intersection: $-\dfrac{1}{2} < x < 5$I.e., $\left(-\dfrac{1}{2}, 5\right)$.
-
-</details>
 
 4. **Question:** Solve $|3x - 5| < 7$.
 <details>
@@ -447,8 +432,6 @@ $$
 $$
 
 Solution: $\left(-\dfrac{2}{3}, 4\right)$.
-
-</details>
 
 5. **Question:** Solve $|2x + 3| \geq x^2 + 2$.
 <details>
@@ -482,8 +465,6 @@ Solution in this case.
 
 Solution: $[1 - \sqrt{2},\; 1 + \sqrt{2}]$.
 
-</details>
-
 6. **Question:** For what values of $k$ does the quadratic equation $x^2 + 2kx + k + 6 = 0$ have two
 Distinct real roots?
 <details>
@@ -504,8 +485,6 @@ Since $a = 1 > 0$The parabola opens upward. The expression is positive outside t
 
 Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
-</details>
-
 7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And $x > 0$.
 <details>
 <summary>Answer</summary>
@@ -524,8 +503,6 @@ Intersection of all three:
 Combined: $[1, 4]$.
 
 Solution: $[1, 4]$.
-
-</details>
 
 8. **Question:** A ball is thrown upward from a height of $2$ m with an initial velocity of $20$
 M/s. The height $h$ (in metres) after $t$ seconds is given by $h(t) = -5t^2 + 20t + 2$. During what
@@ -551,8 +528,6 @@ $$
 Factorize: $(t - 1)(t - 3) < 0 \implies 1 < t < 3$.
 
 The ball is above $17$ m during the interval $(1, 3)$ seconds.
-
-</details>
 
 9. **Question:** Solve $\dfrac{x^2 - 4}{x - 1} \geq 0$.
 <details>
@@ -584,8 +559,6 @@ Included.)
 
 Solution: $[-2, 1) \cup [2, \infty)$.
 
-</details>
-
 10. **Question:** Solve $|x^2 - 3x + 1| < 3$.
 <details>
 <summary>Answer</summary>
@@ -613,7 +586,6 @@ Since the left inequality imposes no restriction, the solution is:
 
 Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
 
-</details>
 </details>
 
 ---

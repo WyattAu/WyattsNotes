@@ -484,8 +484,6 @@ Delocalisation energy = expected $-$ actual = $-378 - (-208) = -170\,\mathrm{kJ/
 The benzene ring is stabilised by approximately $170\,\mathrm{kJ/mol}$ relative to the Kekule
 Structure with three isolated double bonds.
 
-</details>
-
 <details>
 <summary>Problem 2</summary>
 
@@ -505,8 +503,6 @@ The $-\mathrm{OH}$ group on phenol is electron-donating through resonance (the o
 Delocalises into the ring, increasing electron density at ortho and para positions). This activates
 The ring toward electrophilic substitution, making the reaction much faster than for unsubstituted
 Benzene.
-
-</details>
 
 <details>
 <summary>Problem 3</summary>
@@ -743,7 +739,8 @@ cupboard.
 
 ## Exam-Style Questions with Full Mark Schemes
 
-<details>
+### Details
+
 <summary>Q1 (6 marks)</summary>
 
 Benzene does not react with bromine water under normal conditions, but phenol decolourises bromine
@@ -763,8 +760,6 @@ water immediately. Explain this difference.
   as an electrophile without a catalyst (1 mark).
 - Phenol is so activated that it undergoes tri-bromination, giving 2,4,6-tribromophenol as a white
   precipitate (1 mark).
-
-</details>
 
 <details>
 <summary>Q2 (5 marks)</summary>
@@ -789,8 +784,6 @@ the structure of the intermediate.
 - Curly arrow diagram showing electron flow for the electrophilic attack and deprotonation steps (1
   mark).
 
-</details>
-
 <details>
 <summary>Q3 (4 marks)</summary>
 
@@ -809,8 +802,6 @@ alkyl groups onto the benzene ring.
   (1 mark).
 - The ketone product can subsequently be reduced to the alkyl group (e.g. Clemmensen reduction),
   providing a controlled route to linear alkylbenzenes (1 mark).
-
-</details>
 
 <details>
 <summary>Q4 (6 marks)</summary>
@@ -837,8 +828,6 @@ Justification (2 marks):
 - If bromination were done first, the $-\mathrm{Br}$ group (ortho/para director) would place the
   nitro group at the ortho/para positions, giving the wrong isomer.
 
-</details>
-
 <details>
 <summary>Q5 (4 marks)</summary>
 
@@ -859,8 +848,6 @@ the delocalised model of benzene.
   $152\,\mathrm{kJ/mol}$ (1 mark).
 - Evidence 3: Benzene undergoes substitution (preserving the ring) rather than addition (which would
   destroy the aromatic system), indicating the ring is unusually stable (1 mark).
-
-</details>
 
 ## Retrosynthesis with Arenes
 

@@ -19,9 +19,9 @@ hide_table_of_contents: true
 
 Two lines are given by:
 
-$$L_1: \mathbf{'\{'}r{'\}'} = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + \lambda \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$$
+$$L_1: \mathbf{{'}r{}'} = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + \lambda \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$$
 
-$$L_2: \mathbf{'\{'}r{'\}'} = \begin{pmatrix} 3 \\ 1 \\ 4 \end{pmatrix} + \mu \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$$
+$$L_2: \mathbf{{'}r{}'} = \begin{pmatrix} 3 \\ 1 \\ 4 \end{pmatrix} + \mu \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$$
 
 **(a)** Determine whether $L_1$ and $L_2$ are parallel, intersecting, or skew.
 
@@ -35,9 +35,8 @@ skew lines.]
 
 **Solution:**
 
-**(a)** The direction vectors are
-$\mathbf{'\{'}d{'\}'}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$ and
-$\mathbf{'\{'}d{'\}'}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
+**(a)** The direction vectors are $\mathbf{{'}d{}'}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$
+and $\mathbf{{'}d{}'}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
 
 These are not scalar multiples, so the lines are not parallel.
 
@@ -58,15 +57,15 @@ The system is inconsistent, so the lines do **not** intersect. They are **skew**
 
 **(b)** The shortest distance between skew lines is:
 
-$$d = \frac{\left|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)\right|}{\lvert \mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 \rvert}$$
+$$d = \frac{\left|(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2)\right|}{\lvert \mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2 \rvert}$$
 
-$$\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1 = \begin{pmatrix} 3 \\ 1 \\ 4 \end{pmatrix} - \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 4 \end{pmatrix}$$
+$$\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1 = \begin{pmatrix} 3 \\ 1 \\ 4 \end{pmatrix} - \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 4 \end{pmatrix}$$
 
-$$\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & 1 & -1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} 1 \\ -5 \\ -3 \end{pmatrix}$$
+$$\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2 = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 2 & 1 & -1 \\ 1 & -1 & 2 \end{vmatrix} = \begin{pmatrix} 1 \\ -5 \\ -3 \end{pmatrix}$$
 
-$$\lvert \mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 \rvert = \sqrt{1 + 25 + 9} = \sqrt{35}$$
+$$\lvert \mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2 \rvert = \sqrt{1 + 25 + 9} = \sqrt{35}$$
 
-$$(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2) = 2(1) + (-1)(-5) + 4(-3) = 2 + 5 - 12 = -5$$
+$$(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2) = 2(1) + (-1)(-5) + 4(-3) = 2 + 5 - 12 = -5$$
 
 $$d = \frac{5}{\sqrt{35}} = \frac{5\sqrt{35}}{35} = \frac{\sqrt{35}}{7}$$
 
@@ -99,9 +98,9 @@ distance.]
 
 $$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 1 \\ -3 \end{pmatrix}, \quad \overrightarrow{AC} = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$$
 
-$$\mathbf{'\{'}n{'\}'} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & 1 & -3 \\ 1 & 2 & 1 \end{vmatrix}$$
+$$\mathbf{{'}n{}'} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 2 & 1 & -3 \\ 1 & 2 & 1 \end{vmatrix}$$
 
-$$= \mathbf{'\{'}i{'\}'}(1 + 6) - \mathbf{'\{'}j{'\}'}(2 + 3) + \mathbf{'\{'}k{'\}'}(4 - 1) = \begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$$
+$$= \mathbf{{'}i{}'}(1 + 6) - \mathbf{{'}j{}'}(2 + 3) + \mathbf{{'}k{}'}(4 - 1) = \begin{pmatrix} 7 \\ -5 \\ 3 \end{pmatrix}$$
 
 Using point $A(1, 0, 2)$:
 
@@ -152,16 +151,16 @@ $$\overrightarrow{OA} = \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}, \quad \overri
 
 $$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = \overrightarrow{OA} \cdot (\overrightarrow{OB} \times \overrightarrow{OC})$$
 
-$$\overrightarrow{OB} \times \overrightarrow{OC} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 1 & 3 & 2 \\ 0 & 1 & 4 \end{vmatrix} = \begin{pmatrix} 10 \\ -4 \\ 1 \end{pmatrix}$$
+$$\overrightarrow{OB} \times \overrightarrow{OC} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 1 & 3 & 2 \\ 0 & 1 & 4 \end{vmatrix} = \begin{pmatrix} 10 \\ -4 \\ 1 \end{pmatrix}$$
 
 $$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 2(10) + 1(-4) + 0(1) = 20 - 4 = 16$$
 
 $$V = \frac{16}{6} = \frac{8}{3}$$
 
 **(b)** The scalar triple product
-$[\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}] = \mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$
-equals the volume of the parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And
-$\mathbf{'\{'}c{'\}'}$.
+$[\mathbf{{'}a{}'}, \mathbf{{'}b{}'}, \mathbf{{'}c{}'}] = \mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})$
+equals the volume of the parallelepiped spanned by $\mathbf{{'}a{}'}$$\mathbf{{'}b{}'}$And
+$\mathbf{{'}c{}'}$.
 
 If the four points are coplanar, the three vectors
 $\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning
@@ -169,11 +168,11 @@ the parallelepiped they span has zero volume (it is flat). Therefore
 $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
 Conversely, if the scalar triple product is zero, then
-$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 0$Which means
-$\mathbf{'\{'}a{'\}'}$ is perpendicular to $\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$. Since
-$\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}$ is perpendicular to the plane containing
-$\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$It follows that $\mathbf{'\{'}a{'\}'}$ lies in the
-same plane as $\mathbf{'\{'}b{'\}'}$ and $\mathbf{'\{'}c{'\}'}$. Hence the four points are coplanar.
+$\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}) = 0$Which means
+$\mathbf{{'}a{}'}$ is perpendicular to $\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}$. Since
+$\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}$ is perpendicular to the plane containing
+$\mathbf{{'}b{}'}$ and $\mathbf{{'}c{}'}$It follows that $\mathbf{{'}a{}'}$ lies in the same plane
+as $\mathbf{{'}b{}'}$ and $\mathbf{{'}c{}'}$. Hence the four points are coplanar.
 
 ---
 
@@ -191,11 +190,11 @@ The plane $\Pi$ has equation $2x - y + 2z = 5$. The point $P$ has coordinates $(
 
 **Solution:**
 
-**(a)** The normal to $\Pi$ is $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$.
+**(a)** The normal to $\Pi$ is $\mathbf{{'}n{}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$.
 
 The line through $P$ perpendicular to $\Pi$ is:
 
-$$\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$$
+$$\mathbf{{'}r{}'} = \begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$$
 
 Find the foot of the perpendicular (intersection with $\Pi$):
 
@@ -219,8 +218,8 @@ $P'\!\left(\frac{41}{9}, \frac{11}{9}, \frac{23}{9}\right)$:
 Direction:
 $\begin{pmatrix} \frac{41}{9} - 1 \\ \frac{11}{9} - 3 \\ \frac{23}{9} + 1 \end{pmatrix} = \begin{pmatrix} \frac{32}{9} \\ -\frac{16}{9} \\ \frac{32}{9} \end{pmatrix} = \frac{16}{9}\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$
 
-This is parallel to $\mathbf{'\{'}n{'\}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming
-$PP'$ is perpendicular to $\Pi$.
+This is parallel to $\mathbf{{'}n{}'} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming $PP'$
+is perpendicular to $\Pi$.
 
 Verify midpoint:
 $\frac{1}{2}\!\left[\begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}\right] = \begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix}$.

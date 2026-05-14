@@ -95,8 +95,8 @@ is **countable**.
 **Theorem 1.1.** The set of all languages over a non-empty alphabet $\Sigma$ is uncountable.
 
 _Proof._ The set $\Sigma^*$ is countable (enumerate strings by length, then lexicographically). The
-set of all languages is $\mathcal{'\{'}P{'\}'}(\Sigma^*)$Which is uncountable by Cantor's theorem
-(since $|\mathcal{'\{'}P{'\}'}(S)| \gt{} |S|$ for any set $S$). $\blacksquare$
+set of all languages is $\mathcal{{'}P{}'}(\Sigma^*)$Which is uncountable by Cantor's theorem (since
+$|\mathcal{{'}P{}'}(S)| \gt{} |S|$ for any set $S$). $\blacksquare$
 
 **Theorem 1.2.** The set of all Turing machines is countable.
 
@@ -141,7 +141,7 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_2\})$$
 
 A **nondeterministic finite automaton (NFA)** allows multiple transitions from a state on the same
 Symbol, and $\varepsilon$-transitions (transitions without consuming input). Formally,
-$\delta : Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{'\{'}P{'\}'}(Q)$.
+$\delta : Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{{'}P{}'}(Q)$.
 
 $M$ accepts $w$ if there exists some path of transitions consuming $w$ that ends in a state in $F$.
 
@@ -197,7 +197,7 @@ $q_0$ or move to $q_1$.
 _Proof (subset construction)._ Given NFA $N = (Q, \Sigma, \delta, q_0, F)$Construct DFA
 $D = (Q', \Sigma, \delta', q_0', F')$ where:
 
-- $Q' = \mathcal{'\{'}P{'\}'}(Q)$ (each state of $D$ is a subset of states of $N$).
+- $Q' = \mathcal{{'}P{}'}(Q)$ (each state of $D$ is a subset of states of $N$).
 - $q_0' = \varepsilon\mathrm{-closure{}(\{q_0\})$.
 - $\delta'(S, a) = \varepsilon\mathrm{-closure{}(\bigcup_{q \in S} \delta(q, a))$ for
   $S \subseteq Q$ $a \in \Sigma$.
@@ -657,7 +657,7 @@ A **pushdown automaton (PDA)** is a 6-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet.
 - $\Gamma$ is the stack alphabet.
-- $\delta : Q \times (\Sigma \cup \{\varepsilon\}) \times (\Gamma \cup \{\varepsilon\}) \to \mathcal{'\{'}P{'\}'}(Q \times (\Gamma \cup \{\varepsilon\}))$
+- $\delta : Q \times (\Sigma \cup \{\varepsilon\}) \times (\Gamma \cup \{\varepsilon\}) \to \mathcal{{'}P{}'}(Q \times (\Gamma \cup \{\varepsilon\}))$
   is the transition function.
 - $q_0 \in Q$ is the start state.
 - $F \subseteq Q$ is the set of accepting states.
@@ -881,8 +881,8 @@ Delimiters). Simulating one step of the multitape TM requires scanning the singl
 $k$ heads and update them, costing $O(k \cdot n)$ steps per simulated step. $\blacksquare$
 
 **Nondeterministic TMs.**
-$\delta : Q \times \Gamma \to \mathcal{'\{'}P{'\}'}(Q \times \Gamma \times \{L, R\})$. The TM
-accepts if **some** computation path accepts.
+$\delta : Q \times \Gamma \to \mathcal{{'}P{}'}(Q \times \Gamma \times \{L, R\})$. The TM accepts if
+**some** computation path accepts.
 
 **Theorem 4.2.** Every nondeterministic TM has an equivalent deterministic TM.
 
@@ -1388,7 +1388,7 @@ contains $s$.
 **Constraints:**
 
 - **Well-formedness:** Each cell contains exactly one symbol. For each $(i, j)$: exactly one of
-  $\{x_{i,j,s} : s \in \Gamma'\}$ is true.
+  $\{x_{i,j,s} : s \in \Gamma}$ is true.
 - **Start configuration:** Row 0 encodes $q_0$ at position 0, $w_1$ at position 1, etc.
 - **Transition correctness:** For every $2 \times 3$ window of the tableau, the bottom row must be a
   valid successor of the top row according to $N$'s transition function.

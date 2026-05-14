@@ -58,8 +58,8 @@ Atom.
 
 The nucleus contains over 99.9% of the atom's mass but occupies only about $10^{-12}$ of its volume.
 The electron cloud defines the size of the atom, with a typical radius of about
-$1 \mathrm{'\{'}
-\AA{'\}'} = 10^{-10} \mathrm{ m{}$.
+$1 \mathrm{{'}
+\AA{}'} = 10^{-10} \mathrm{ m{}$.
 
 ### Isotopes and Average Atomic Mass
 

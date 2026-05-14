@@ -962,7 +962,7 @@ $e$And $0$ otherwise.
 **Properties:**
 
 - Space: $O(nm)$.
-- The rank of $M$ over $\mathbb{'\{'}R{'\}'}$ is $n - c$ where $c$ is the number of connected
+- The rank of $M$ over $\mathbb{{'}R{}'}$ is $n - c$ where $c$ is the number of connected
   components.
 - The number of spanning trees of $G$ equals any cofactor of $MM^T$ (Kirchhoff's matrix tree
   theorem).
@@ -973,8 +973,8 @@ Many graphs are not stored explicitly but defined by a rule or function. Example
 
 - **State space graphs:** Each vertex is a configuration; edges are valid transitions. Example: the
   15-puzzle has $16!/2 \approx 10^{13}$ states.
-- **Geometric graphs:** Vertices are points in $\mathbb{'\{'}R{'\}'}^d$; edges connect nearby
-  points. Example: Delaunay triangulation.
+- **Geometric graphs:** Vertices are points in $\mathbb{{'}R{}'}^d$; edges connect nearby points.
+  Example: Delaunay triangulation.
 - **Social networks:** Vertices are users; edges are friendships.
 
 **Implicit graph traversal** requires a successor function that generates neighbours on-the-fly,

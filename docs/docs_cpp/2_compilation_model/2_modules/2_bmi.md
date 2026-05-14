@@ -11,7 +11,7 @@ categories:
 slug: bmi
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The introduction of Modules alters the C++ compilation model. In the header-based model, source
 Files are compiled in parallel because `#include` is handled locally by the preprocessor.

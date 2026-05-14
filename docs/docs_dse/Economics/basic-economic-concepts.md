@@ -188,8 +188,6 @@ If the economy produces 100 computers: `M = 600 - 200 = 400` mobile phones. This
 If the economy produces 100 computers and 300 mobile phones: this is **inside** the PPC (M = 400 is
 The maximum), indicating underutilisation of resources.
 
-</details>
-
 ---
 
 ## Economic Efficiency
@@ -536,8 +534,6 @@ Cost, giving a net benefit (consumer surplus) of HKD 600 - HKD 500 = HKD 100. Th
 400 of value for HKD 500 cost, giving a net benefit of HKD 400 - HKD 500 = -HKD 100 (a loss). A
 Rational decision-maker maximises net benefit, so she should choose the concert ticket.
 
-</details>
-
 <details>
 <summary>Question 2: PPC Calculation</summary>
 
@@ -579,8 +575,6 @@ Producing exactly on the PPC at this combination, so resources are fully and eff
 - An increase in the quality of resources (better education, improved health of workers)
 - Discovery of new natural resources
 
-</details>
-
 <details>
 <summary>Question 3: Positive vs Normative</summary>
 
@@ -599,8 +593,6 @@ A testable hypothesis about cause and effect that can be examined with data. (d)
 Inequality is acceptable. (e) Positive -- it is a testable prediction about the effect of a policy
 Change. (f) Normative -- "better" is a value judgement; it cannot be tested objectively without
 Defining a criterion for "better."
-
-</details>
 
 <details>
 <summary>Question 4: Economic Systems</summary>
@@ -632,8 +624,6 @@ Questions.
 - **Command economy:** The government decides the distribution of output, often aiming for equal
   distribution or prioritising certain groups (e.g., party members, the military, workers in key
   industries).
-
-</details>
 
 <details>
 <summary>Question 5: PPC with Increasing Opportunity Cost</summary>
@@ -683,8 +673,6 @@ Quantities in the future. This would cause the PPC to shift outward over time. A
 Invests heavily in capital goods will experience faster economic growth than one that focuses only
 On consumer goods.
 
-</details>
-
 <details>
 <summary>Question 6: Specialisation and Trade</summary>
 
@@ -714,8 +702,6 @@ Would be pointless unless other factors (transport costs, quality differences) a
 
 Note: This is a special case. In most DSE problems, opportunity costs will differ between countries,
 Creating a basis for comparative advantage and gains from trade.
-
-</details>
 
 <details>
 <summary>Question 7: Economic Profit vs Accounting Profit</summary>
@@ -747,8 +733,6 @@ Continue operating her own practice.
 However, the economic profit is very small relative to her accounting profit (HKD 25,000 vs HKD
 650,000), so her opportunity cost is very high. If her revenue decreases or her costs increase
 Slightly, her economic profit could become negative.
-
-</details>
 
 <details>
 <summary>Question 8: Division of Labour and Productivity</summary>
@@ -795,8 +779,6 @@ Factory could either:
 This illustrates a potential disadvantage of division of labour: overproduction when demand is
 Limited, and the difficulty of adjusting highly specialised labour to changing market conditions.
 
-</details>
-
 <details>
 <summary>Question 9: PPC Shift and Economic Growth</summary>
 
@@ -832,8 +814,6 @@ Exceeds 100%, this point may or may not be on the new PPC depending on the curva
 Concave PPC, the point is likely to be feasible (inside or on the curve), because the increasing
 Opportunity cost means the curve bows outward, allowing more of both goods to be produced than a
 Straight line between the intercepts would suggest.
-
-</details>
 
 <details>
 <summary>Question 10: Economic Systems and Resource Allocation</summary>
@@ -879,8 +859,6 @@ Can create additional problems (government failures). The optimal level of inter
 The specific circumstances and the relative costs of market failure versus government failure. A
 Mixed economy seeks to balance the efficiency of markets with targeted government intervention where
 Needed.
-
-</details>
 
 ### Utility and Consumer Choice
 
@@ -985,7 +963,8 @@ A farmer has 10 hectares of land. She can grow rice (yielding 5 tonnes per hecta
 (a) What is the opportunity cost of growing rice on 1 hectare? (b) Which crop should she specialise
 in? Explain.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 (a) Revenue from 1 hectare of rice = `5 \times 400 = USD 2,000`. Revenue from 1 hectare of maize =
@@ -994,8 +973,6 @@ in? Explain.
 (b) The opportunity costs are equal (both give USD 2,000 per hectare). She has **no comparative
 Advantage** in either crop. Specialisation would not increase total revenue. She should split her
 land Based on market conditions (prices, demand).
-
-</details>
 
 If you get this wrong, revise: [Choice and Opportunity Cost](#choice-and-opportunity-cost)
 
@@ -1033,8 +1010,6 @@ are Not equally efficient at producing both goods.
 stays At 500). The economy can now produce more K for any given level of C, or more of both goods.
 This Represents economic growth driven by technological progress in the capital goods sector.
 
-</details>
-
 If you get this wrong, revise:
 [Production Possibility Curve (PPC)](#production-possibility-curve-ppc)
 
@@ -1058,8 +1033,6 @@ healthcare."
 and reflects a value judgement. (c) **Positive** -- factual statement verifiable with data. (d)
 **Normative** -- "too high" is a value judgement. (e) **Positive** -- testable prediction about the
 effect of a policy change. (f) **Normative** -- uses "should" and reflects a value judgement.
-
-</details>
 
 If you get this wrong, revise: [Positive vs Normative Economics](#positive-vs-normative-economics)
 
@@ -1088,8 +1061,6 @@ Economic profit = `1,200,000 - 700,000 - 532,000 = -32,000`.
 (c) Economic profit is **negative** (-32,000). Despite a positive accounting profit of 500,000, she
 Is worse off than her best alternative (keeping her job and savings). She should return to her job
 Unless she expects economic profit to become positive in future years.
-
-</details>
 
 If you get this wrong, revise: [Economic vs Accounting Profit](#economic-vs-accounting-profit)
 
@@ -1120,8 +1091,6 @@ willing to Pay.
 Government Sets all wages according to a national pay scale. **Mixed:** Public school teachers'
 wages are set by The government (with some negotiation); private school wages are determined by the
 market.
-
-</details>
 
 If you get this wrong, revise: [Economic Systems](#economic-systems)
 
@@ -1161,8 +1130,6 @@ Optimal hours = 3.
 worth of benefit from studying the 5th hour (diminishing returns make additional study
 Counterproductive).
 
-</details>
-
 If you get this wrong, revise: [Marginal Analysis](#marginal-analysis)
 
 </details>
@@ -1192,8 +1159,6 @@ Filters. Positive opportunity cost.
 (e) **Free good** (for the downloader) -- no price, zero marginal cost of distribution. However, the
 Software itself required resources to develop (the developer's time), so it is not a free good from
 Society's perspective. This illustrates that whether something is "free" depends on the perspective.
-
-</details>
 
 If you get this wrong, revise: [Free Goods vs Economic Goods](#free-goods-vs-economic-goods)
 
@@ -1228,8 +1193,6 @@ increase = `(5-2)/2 \times 100\% = 150\%`.
 - Vulnerability to unemployment (easier to replace specialised workers)
 - Less job satisfaction and sense of accomplishment
 - If demand falls, highly specialised workers cannot switch jobs
-
-</details>
 
 If you get this wrong, revise: [Division of Labour](#division-of-labour)
 

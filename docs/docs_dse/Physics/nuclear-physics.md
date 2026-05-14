@@ -100,8 +100,6 @@ How many protons, neutrons, and nucleons are in $\prescript{238}{}{92}\mathrm{U}
 - Neutrons: $N = A - Z = 238 - 92 = 146$
 - Nucleons: $A = 238$
 
-</details>
-
 ---
 
 ## Radioactivity
@@ -240,8 +238,6 @@ Check the nucleon number: $214 - 210 = 4$
 Check the proton number: $84 - 82 = 2$
 
 The missing particle has $A = 4$$Z = 2$Which is an alpha particle: $\prescript{4}{}{2}\mathrm{He}$
-
-</details>
 
 ---
 
@@ -1014,8 +1010,6 @@ This energy is shared as kinetic energy between the alpha particle and the polon
 Nucleus, with most going to the alpha particle (due to conservation of momentum and the lighter mass
 Of the alpha particle).
 
-</details>
-
 ### Worked Example 2: Half-Life Calculation
 
 A radioactive isotope has an initial activity of $800$ Bq. After $30$ minutes, the activity has
@@ -1052,8 +1046,6 @@ $$\lambda = 1.155 \times 10^{-3} \mathrm{ s}^{-1}$$
 
 $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.155 \times 10^{-3}} = 600 \mathrm{ s} = 10 \mathrm{ min}$$
 
-</details>
-
 ### Worked Example 3: Binding Energy per Nucleon
 
 Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{}{2}\mathrm{He}$).
@@ -1084,8 +1076,6 @@ $$BE = \Delta m \times 931.5 \mathrm{ MeV} = 0.030376 \times 931.5 = 28.30 \math
 **Step 3: Calculate the binding energy per nucleon**
 
 $$\frac{BE}{A} = \frac{28.30}{4} = 7.07 \mathrm{ MeV/nucleon}$$
-
-</details>
 
 ### Worked Example 4: Radiocarbon Dating
 
@@ -1122,8 +1112,6 @@ The ancient wood is approximately $19,000$ years old.
 :::info Info Many half-lives correspond to this fraction. $2^n = 10$ gives
 $n = \frac{\ln 10}{\ln 2} = 3.32$ Half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods
 give the same result. :::
-
-</details>
 
 ### Worked Example 5: Nuclear Fission Energy
 
@@ -1164,8 +1152,6 @@ Mass consumed per day:
 
 $$m = N \times m_{\mathrm{U-235}} = 8.18 \times 10^{24} \times 3.90 \times 10^{-25} = 3.19 \mathrm{ kg/day}$$
 
-</details>
-
 ### Worked Example 6: Activity and Number of Nuclei
 
 A sample contains $5.0 \times 10^{20}$ atoms of cobalt-60 ($t_{1/2} = 5.27$ years). Calculate:
@@ -1195,8 +1181,6 @@ $$A = 2.08 \times 10^{12} \times e^{-0.263}$$
 
 $$A = 2.08 \times 10^{12} \times 0.769 = 1.60 \times 10^{12} \mathrm{ Bq}$$
 
-</details>
-
 ### Worked Example 7: Penetration and Shielding
 
 A gamma source emits radiation with a half-value thickness of $2.5$ cm in lead. How thick must the
@@ -1223,8 +1207,6 @@ $$\ln\left(\frac{1}{16}\right) = -0.277x$$
 $$-2.773 = -0.277x$$
 
 $$x = 10.0 \mathrm{ cm}$$
-
-</details>
 
 ---
 
@@ -1355,7 +1337,8 @@ Complete the following beta-minus decay equation and identify the daughter nucle
 
 $\prescript{60}{}{27}\mathrm{Co} \to \ ? + e^- + \bar{\nu}_e$
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 In beta-minus decay, $Z$ increases by 1 while $A$ stays the same.
@@ -1368,7 +1351,6 @@ The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
 
 _If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same._
 
-</details>
 </details>
 
 <details>
@@ -1389,7 +1371,6 @@ $$A = \lambda N = (1.283 \times 10^{-5})(1.204 \times 10^{22}) = 1.545 \times 10
 _If you get this wrong, revise: Relationship between activity, decay constant, and number of nuclei
 ($A = \lambda N$) and $N = \frac{m}{M}N_A$._
 
-</details>
 </details>
 
 <details>
@@ -1422,7 +1403,6 @@ _If you get this wrong, revise: Background subtraction and half-life determinati
 Data._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 4: Q-Value of a Nuclear Reaction</summary>
@@ -1448,7 +1428,6 @@ $$Q = 0.186017 \times 931.5 = 173.2 \mathrm{ MeV}$$
 _If you get this wrong, revise: Q-value calculation — remember to account for all product particles
 Including released neutrons._
 
-</details>
 </details>
 
 <details>
@@ -1480,7 +1459,6 @@ _If you get this wrong, revise: Binding energy per nucleon curve and how energy 
 The increase in binding energy per nucleon._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 6: Radiation Shielding — Multiple HVTs</summary>
@@ -1501,7 +1479,6 @@ $$\mathrm{Thickness} = 5.06 \times 1.5 = 7.59 \mathrm{ cm} \approx 7.6 \mathrm{ 
 
 _If you get this wrong, revise: Half-value thickness and exponential attenuation._
 
-</details>
 </details>
 
 <details>
@@ -1526,7 +1503,6 @@ $$\frac{N}{N_0} = e^{-\lambda t} = e^{-(\ln 2 / 8) \times 30} = e^{-2.601} = 0.0
 _If you get this wrong, revise: Fraction remaining after $n$ half-lives: $(1/2)^n$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 8: Dose Calculation</summary>
@@ -1541,7 +1517,6 @@ $$H = D \times w_R = 0.5 \times 20 = 10 \mathrm{ mSv}$$
 
 _If you get this wrong, revise: Absorbed dose vs equivalent dose and radiation weighting factors._
 
-</details>
 </details>
 
 <details>
@@ -1570,7 +1545,6 @@ _If you get this wrong, revise: GM tube dead time and its effect on measured cou
 Activities._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 10: Fusion vs Fission — Binding Energy Curve</summary>
@@ -1598,7 +1572,6 @@ In both cases, energy is released because the products have a higher binding ene
 _If you get this wrong, revise: The binding energy per nucleon curve and its interpretation._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 11: Radiocarbon Dating — Percentage Remaining</summary>
@@ -1619,7 +1592,6 @@ The artefact is approximately $8700$ years old.
 
 _If you get this wrong, revise: Radiocarbon dating formula and the decay law._
 
-</details>
 </details>
 
 <details>
@@ -1652,7 +1624,6 @@ Thermalise the neutrons.
 _If you get this wrong, revise: Nuclear reactor moderator and elastic collision energy transfer._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 13: Alpha Particle Speed from Q-Value</summary>
@@ -1682,7 +1653,6 @@ _If you get this wrong, revise: Conservation of momentum in nuclear decay and th
 Kinetic energy between products._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 14: Electron Capture</summary>
@@ -1707,7 +1677,6 @@ Electron capture is favoured because:
 _If you get this wrong, revise: Electron capture as an alternative to beta-plus decay and the
 Condition $m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$._
 
-</details>
 </details>
 
 <details>
@@ -1897,7 +1866,8 @@ A sample contains two radioactive isotopes: X (half-life $6.0 \mathrm{ hours}$In
 $800 \mathrm{ Bq}$) and Y (half-life $3.0 \mathrm{ hours}$Initial activity $400 \mathrm{ Bq}$).
 Calculate the total activity after $12 \mathrm{ hours}$.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 For X: number of half-lives in 12 hours $= 12/6 = 2$
@@ -1909,8 +1879,6 @@ For Y: number of half-lives in 12 hours $= 12/3 = 4$
 $$A_Y = 400 \times \left(\frac{1}{2}\right)^4 = 400 \times 0.0625 = 25 \mathrm{ Bq}$$
 
 $$A_{\mathrm{total}} = 200 + 25 = 225 \mathrm{ Bq}$$
-
-</details>
 
 ### Worked Example 12
 
@@ -1928,8 +1896,6 @@ Calculate the energy released when a uranium-235 nucleus undergoes fission, give
 $$\Delta m = 235.0439 - (140.9139 + 91.8973 + 2.0174) = 235.0439 - 234.8286 = 0.2153 \mathrm{ u}$$
 
 $$\Delta E = 0.2153 \times 931.5 = 200.6 \mathrm{ MeV}$$
-
-</details>
 
 ### Worked Example 13
 
@@ -1953,8 +1919,6 @@ $N = \frac{3.93 \times 10^{14}}{3.2 \times 10^{-11}} = 1.23 \times 10^{25}$
 
 Mass of U-235 per day:
 $m = N \times 235 \times 1.661 \times 10^{-27} = 1.23 \times 10^{25} \times 3.90 \times 10^{-25} = 4.80 \mathrm{ kg}$
-
-</details>
 
 ---
 
@@ -1998,8 +1962,6 @@ $$e^{-\lambda t} = \frac{5.0 \times 10^8}{4.0 \times 10^{14}} = 1.25 \times 10^{
 $$-\lambda t = \ln(1.25 \times 10^{-6}) = -13.59$$
 
 $$t = \frac{13.59}{1.00 \times 10^{-6}} = 1.36 \times 10^7 \mathrm{ s} = 157 \mathrm{ days}$$
-
-</details>
 
 ### Question 2 (DSE Structured)
 
@@ -2052,8 +2014,6 @@ Increase their $B/A$ by fusing together (moving towards the peak), releasing ene
 difference in binding energies. Heavy nuclei (lower $B/A$ than the peak) can increase their $B/A$ by
 splitting apart (fission), also releasing energy. In both cases, the products have a Higher binding
 energy per nucleon than the reactants, meaning they are more stable.
-
-</details>
 
 ### Question 3 (DSE Structured)
 
@@ -2109,8 +2069,6 @@ Percentage correction: $\frac{20}{900} \times 100\% = 2.2\%$
 
 The background correction is small at close range but becomes more significant at larger Distances
 where the count rate is lower.
-
-</details>
 
 </details>
 

@@ -14,8 +14,7 @@ An $m \times n$ matrix $A$ has $m$ rows and $n$ columns. The entry in row $i$Col
 
 ### Addition and Scalar Multiplication
 
-For $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ and
-$\lambda \in \mathbb{'\{'}R{'\}'}$:
+For $A, B \in \mathcal{{'}M{}'}_{m \times n}(\mathbb{{'}R{}'})$ and $\lambda \in \mathbb{{'}R{}'}$:
 
 $$(A + B)_{ij} = a_{ij} + b_{ij}, \qquad (\lambda A)_{ij} = \lambda a_{ij}$$
 
@@ -118,9 +117,9 @@ $$A^{-1} = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$$
 
 ### Matrix Form
 
-The system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ where $A$ is $n \times n$:
+The system $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ where $A$ is $n \times n$:
 
-- **Unique solution:** $\det(A) \ne 0$Giving $\mathbf{'\{'}x{'\}'} = A^{-1}\mathbf{'\{'}b{'\}'}$
+- **Unique solution:** $\det(A) \ne 0$Giving $\mathbf{{'}x{}'} = A^{-1}\mathbf{{'}b{}'}$
 - **No solution or infinitely many:** $\det(A) = 0$
 
 ### Cramer's Rule
@@ -129,7 +128,7 @@ If $\det(A) \ne 0$The $i$-th component of the solution is:
 
 $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
-Where $A_i$ is $A$ with the $i$-th column replaced by $\mathbf{'\{'}b{'\}'}$.
+Where $A_i$ is $A$ with the $i$-th column replaced by $\mathbf{{'}b{}'}$.
 
 **Example.** Solve $\begin{cases} 2x + y = 5 \\ x - y = 1 \end{cases}$.
 
@@ -148,7 +147,7 @@ Form, then back-substitute.
 
 ### $2 \times 2$ Transformation Matrices
 
-Each linear transformation of $\mathbb{'\{'}R{'\}'}^2$ can be represented by a $2 \times 2$ matrix.
+Each linear transformation of $\mathbb{{'}R{}'}^2$ can be represented by a $2 \times 2$ matrix.
 
 | Transformation                      | Matrix                                                                              | Effect on Area  |
 | :---------------------------------- | :---------------------------------------------------------------------------------- | :-------------- | --- | --- |
@@ -176,9 +175,9 @@ This is equivalent to a reflection in the line $y = -x$.
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}x{'\}'}$I.e.
-$(A - I)\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}0{'\}'}$. An **invariant line** is a line mapped to
-itself (points on the line may move along it).
+An **invariant point** satisfies $A\mathbf{{'}x{}'} = \mathbf{{'}x{}'}$I.e.
+$(A - I)\mathbf{{'}x{}'} = \mathbf{{'}0{}'}$. An **invariant line** is a line mapped to itself
+(points on the line may move along it).
 
 ---
 
@@ -187,11 +186,11 @@ itself (points on the line may move along it).
 ### Definition
 
 For a square matrix $A$A scalar $\lambda$ is an **eigenvalue** if there exists a non-zero vector
-$\mathbf{'\{'}v{'\}'}$ such that:
+$\mathbf{{'}v{}'}$ such that:
 
-$$A\mathbf{'\{'}v{'\}'} = \lambda\mathbf{'\{'}v{'\}'}$$
+$$A\mathbf{{'}v{}'} = \lambda\mathbf{{'}v{}'}$$
 
-The vector $\mathbf{'\{'}v{'\}'}$ is the corresponding **eigenvector**.
+The vector $\mathbf{{'}v{}'}$ is the corresponding **eigenvector**.
 
 ### Characteristic Equation
 
@@ -201,7 +200,7 @@ This is a polynomial equation of degree $n$ in $\lambda$ whose roots are the eig
 
 ### Finding Eigenvectors
 
-For each eigenvalue $\lambda_i$Solve $(A - \lambda_i I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$.
+For each eigenvalue $\lambda_i$Solve $(A - \lambda_i I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$.
 
 ### Worked Examples
 
@@ -214,18 +213,17 @@ $$\det\begin{pmatrix} 4 - \lambda & 1 \\ 2 & 3 - \lambda \end{pmatrix} = (4 - \l
 
 $$(\lambda - 5)(\lambda - 2) = 0 \implies \lambda_1 = 5, \quad \lambda_2 = 2$$
 
-For $\lambda_1 = 5$: $(A - 5I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_1 = 5$: $(A - 5I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies -x + y = 0 \implies y = x$$
 
-Eigenvector: $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ (or any scalar
-multiple).
+Eigenvector: $\mathbf{{'}v{}'}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ (or any scalar multiple).
 
-For $\lambda_2 = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$:
+For $\lambda_2 = 2$: $(A - 2I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$:
 
 $$\begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies 2x + y = 0 \implies y = -2x$$
 
-Eigenvector: $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+Eigenvector: $\mathbf{{'}v{}'}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
 ### Diagonalisation
 
@@ -262,13 +260,13 @@ $$(2 - \lambda)(\lambda^2 - 6\lambda + 8) = (2 - \lambda)(\lambda - 2)(\lambda -
 
 $\lambda_1 = 2$ (algebraic multiplicity 2), $\lambda_2 = 4$.
 
-For $\lambda = 2$: $(A - 2I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives
-$\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$
+For $\lambda = 2$: $(A - 2I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$ gives
+$\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$
 So $v_2 = v_3$ with $v_1$ free. Two linearly independent eigenvectors:
-$\mathbf{'\{'}v{'\}'}_1 = (1, 0, 0)$ And $\mathbf{'\{'}v{'\}'}_2 = (0, 1, 1)$.
+$\mathbf{{'}v{}'}_1 = (1, 0, 0)$ And $\mathbf{{'}v{}'}_2 = (0, 1, 1)$.
 
-For $\lambda = 4$: $(A - 4I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ gives $-v_2 - v_3 = 0$ and
-$-v_1 = 0$ So $\mathbf{'\{'}v{'\}'}_3 = (0, 1, -1)$.
+For $\lambda = 4$: $(A - 4I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$ gives $-v_2 - v_3 = 0$ and
+$-v_1 = 0$ So $\mathbf{{'}v{}'}_3 = (0, 1, -1)$.
 
 The matrix is diagonalisable:
 $P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & -1 \end{pmatrix}$
@@ -280,8 +278,8 @@ $D = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 4 \end{pmatrix}$.
 
 ### Augmented Matrix Method
 
-For a system of $m$ equations in $n$ unknowns, write the augmented matrix
-$[A | \mathbf{'\{'}b{'\}'}]$ and apply Elementary row operations to reach row echelon form.
+For a system of $m$ equations in $n$ unknowns, write the augmented matrix $[A | \mathbf{{'}b{}'}]$
+and apply Elementary row operations to reach row echelon form.
 
 **Elementary row operations:**
 
@@ -314,7 +312,7 @@ Solution: $(x, y, z) = (2/5,\, 14/5,\, 3)$.
 
 ### Nature of Solutions
 
-For an $n \times n$ system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$:
+For an $n \times n$ system $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$:
 
 | $\det(A)$              | Rank    | Solutions                 |
 | :--------------------- | :------ | :------------------------ |
@@ -371,9 +369,9 @@ $$A^{10} = PD^{10}P^{-1}$$
 
 ### Systems of Differential Equations
 
-The system $\dfrac{d\mathbf{'\{'}x{'\}'}}{dt} = A\mathbf{'\{'}x{'\}'}$ has solution
-$\mathbf{'\{'}x{'\}'}(t) = e^{At}\mathbf{'\{'}x{'\}'}(0)$ Which can be evaluated using
-diagonalisation: $e^{At} = Pe^{Dt}P^{-1}$.
+The system $\dfrac{d\mathbf{{'}x{}'}}{dt} = A\mathbf{{'}x{}'}$ has solution
+$\mathbf{{'}x{}'}(t) = e^{At}\mathbf{{'}x{}'}(0)$ Which can be evaluated using diagonalisation:
+$e^{At} = Pe^{Dt}P^{-1}$.
 
 :::warning Common Pitfall
 
@@ -416,7 +414,7 @@ Hence $x = 2 - \dfrac{5z}{3}$.
 
 Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$$y = 1 - 2t$$z = 3t$.
 
-The system has infinitely many solutions parametrised by $t \in \mathbb{'\{'}R{'\}'}$.
+The system has infinitely many solutions parametrised by $t \in \mathbb{{'}R{}'}$.
 
 </details>
 
@@ -470,7 +468,7 @@ From $\lambda^2 - 2\lambda + 2 = 0$: $\lambda = \dfrac{2 \pm \sqrt{4 - 8}}{2} = 
 The three eigenvalues are $\lambda = 2$$\lambda = 1 + i$$\lambda = 1 - i$.
 
 Since complex eigenvalues of a real matrix come in conjugate pairs, this is consistent. The matrix
-Is not diagonalisable over $\mathbb{'\{'}R{'\}'}$ but is diagonalisable over $\mathbb{'\{'}C{'\}'}$.
+Is not diagonalisable over $\mathbb{{'}R{}'}$ but is diagonalisable over $\mathbb{{'}C{}'}$.
 
 </details>
 
@@ -515,12 +513,12 @@ Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 
 $(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$$\lambda_2 = 2$.
 
 For $\lambda_1 = 1$:
-$\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies 2x = y$.
-Eigenvector: $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
+$\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{{'}v{}'} = \mathbf{{'}0{}'} \implies 2x = y$.
+Eigenvector: $\mathbf{{'}v{}'}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
 
 For $\lambda_2 = 2$:
-$\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix}\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'} \implies x = y$.
-Eigenvector: $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+$\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix}\mathbf{{'}v{}'} = \mathbf{{'}0{}'} \implies x = y$.
+Eigenvector: $\mathbf{{'}v{}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
 $$P = \begin{pmatrix} 1 & 1 \\ 2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$$
 
@@ -566,9 +564,8 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
    positive signs.
 
 8. **Misidentifying invariant lines.** An invariant line is mapped to itself, but points on the line
-   may move. To find invariant lines, solve
-   $(A - \lambda I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$ where $\lambda$ is an eigenvalue.
-   Every eigenvector lies on an invariant line through the origin.
+   may move. To find invariant lines, solve $(A - \lambda I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$
+   where $\lambda$ is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
 
 ---
 

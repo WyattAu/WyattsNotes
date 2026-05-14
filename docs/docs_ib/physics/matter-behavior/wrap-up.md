@@ -21,7 +21,8 @@ description:
    will this process take? (Data: Specific heat of ice = 2100 J kg⁻¹K⁻¹, Specific heat of water =
    4200 J kg⁻¹K⁻¹, Specific latent heat of fusion of ice = 3.3x10⁵ J kg⁻¹)
 
-<details>
+### Details
+
 <summary>Answer</summary>
 
 - **Strategy:** (a) Use energy balance (power in = power out) for the plate. (b) A three-stage heat
@@ -50,8 +51,6 @@ description:
 <b>If you get this wrong, you should focus on:</b> Applying the energy balance principle for
 Radiation, breaking down a phase change problem into its distinct heating and melting stages, and
 Understanding the relationship between power and energy transfer over time ($P=E/t$).
-
-</details>
 
 2. **Question:** A sealed vertical cylinder with a frictionless piston contains 0.10 moles of a
    monatomic ideal gas. The piston has a mass of 5.0 kg and an area of 0.010 m². The system is in a
@@ -87,8 +86,6 @@ Understanding the relationship between power and energy transfer over time ($P=E
 Correctly applying the Ideal Gas Law, and using the First Law of Thermodynamics for a specific
 Process (isobaric), remembering to calculate both the change in internal energy and the work done.
 
-</details>
-
 3. **Question (HL Only):** A Carnot engine operates between a hot reservoir at 600 K and a cold
    reservoir at 300 K. In one cycle, it absorbs 2000 J of heat from the hot reservoir. The work
    output from this Carnot engine is used to drive a Carnot refrigerator operating between the same
@@ -119,8 +116,6 @@ Process (isobaric), remembering to calculate both the change in internal energy 
 <b>If you get this wrong, you should focus on:</b> The distinction between a heat engine and a
 Refrigerator, the correct formulas for Carnot efficiency and Carnot COP, and how the work output of
 An engine serves as the work input for another device.
-
-</details>
 
 4. **Question (HL Only):** 1.0 mole of a monatomic ideal gas is initially at state A (300 K,
    $1.0 \times 10^5$ Pa). It is adiabatically compressed to half its original volume, reaching state
@@ -160,8 +155,6 @@ An engine serves as the work input for another device.
 Process ($PV^\gamma=\mathrm{const.}$$TV^{\gamma-1}=\mathrm{const.}$). Also, the formula for
 Calculating entropy change during a process with a changing temperature, which requires integration
 Or the logarithmic form.
-
-</details>
 
 5. **Question:** A circuit is constructed with a 12.0 V battery with an internal resistance of 0.50
    Ω. It is connected to a 2.0 Ω resistor in series with a parallel combination of a 3.0 Ω resistor
@@ -203,8 +196,6 @@ Or the logarithmic form.
 <b>If you get this wrong, you should focus on:</b> The rules for combining series and parallel
 Resistors, the concept of internal resistance and terminal PD, and using the potential divider rule
 (or working backwards through the circuit) to find voltage/current for a specific component.
-
-</details>
 
 </details>
 

@@ -19,9 +19,9 @@ The powers of $i$ are cyclic with period $4$: $i^n = i^{n \bmod 4}$.
 
 ### Motivation
 
-The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{'\{'}R{'\}'}$ to include $i$
-yields the Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem
-of Algebra).
+The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{{'}R{}'}$ to include $i$ yields
+the Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem of
+Algebra).
 
 ---
 
@@ -31,10 +31,10 @@ of Algebra).
 
 A **complex number** $z$ is an ordered pair of real numbers written in Cartesian (standard) form:
 
-$$z = a + bi, \quad a, b \in \mathbb{'\{'}R{'\}'}$$
+$$z = a + bi, \quad a, b \in \mathbb{{'}R{}'}$$
 
 Here $a = \mathrm{Re}(z)$ is the **real part** and $b = \mathrm{Im}(z)$ is the **imaginary part**.
-The set of all complex numbers is denoted $\mathbb{'\{'}C{'\}'}$.
+The set of all complex numbers is denoted $\mathbb{{'}C{}'}$.
 
 A complex number is **purely real** if $b = 0$ and **purely imaginary** if $a = 0$. Two complex
 Numbers are equal if and only if their real and imaginary parts are equal.
@@ -61,7 +61,7 @@ The **complex conjugate** of $z = a + bi$ is $\bar{z} = a - bi$.
 - $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$
 - $\overline{z_1 z_2} = \bar{z}_1 \cdot \bar{z}_2$
 - $\bar{\bar{z}} = z$
-- $z \in \mathbb{'\{'}R{'\}'} \iff z = \bar{z}$
+- $z \in \mathbb{{'}R{}'} \iff z = \bar{z}$
 
 ---
 
@@ -261,7 +261,7 @@ $$\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}, \qquad \sin\theta = \frac{e
    correctly over addition and multiplication.
 
 3. **Missing roots.** An $n$-th degree equation has exactly $n$ roots (counting multiplicity) in
-   $\mathbb{'\{'}C{'\}'}$. When finding $n$-th roots, always generate all $n$ values by varying $k$.
+   $\mathbb{{'}C{}'}$. When finding $n$-th roots, always generate all $n$ values by varying $k$.
 
 4. **Modulus of a product.** $|z_1 z_2| = |z_1|\,|z_2|$But $|z_1 + z_2| \ne |z_1| + |z_2|$ in
    general (equality holds only when $z_1$ and $z_2$ have the same argument).
@@ -396,7 +396,7 @@ Using the quadratic formula $z = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$:
 
 $$\Delta = (1 - 3i)^2 - 4(1)(4 + 3i) = 1 - 6i - 9 - 16 - 12i = -24 - 18i$$
 
-Find $\sqrt{-24 - 18i}$. Let $\sqrt{-24 - 18i} = a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$. Then
+Find $\sqrt{-24 - 18i}$. Let $\sqrt{-24 - 18i} = a + bi$ where $a, b \in \mathbb{{'}R{}'}$. Then
 $a^2 - b^2 = -24$ and $2ab = -18$So $b = -9/a$.
 
 Substituting: $a^2 - 81/a^2 = -24 \implies a^4 + 24a^2 - 81 = 0$. Let $u = a^2$:
@@ -543,7 +543,7 @@ Find all solutions to $z^4 + z^2 + 1 = 0$ and represent them on an Argand diagra
 <summary>Problem 15</summary>
 
 Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for all
-$z_1, z_2 \in \mathbb{'\{'}C{'\}'}$ (parallelogram law).
+$z_1, z_2 \in \mathbb{{'}C{}'}$ (parallelogram law).
 
 </details>
 

@@ -53,7 +53,6 @@ Common angle equivalences:
 - Convert $150^\circ$ to radians: $150 \times \frac{\pi}{180} = \frac{5\pi}{6}$ rad
 - Convert $\frac{7\pi}{4}$ rad to degrees: $\frac{7\pi}{4} \times \frac{180}{\pi} = 315^\circ$
 - Convert $1.2$ rad to degrees: $1.2 \times \frac{180}{\pi} \approx 68.75^\circ$
-</details>
 
 ### Arc Length
 
@@ -92,7 +91,6 @@ $$
 - A circle of radius $5$ cm has a sector with angle $\frac{3\pi}{4}$. Arc length $= 5 \times \frac{3\pi}{4} = \frac{15\pi}{4} \approx 11.78$ cm. Area $= \frac{1}{2}(25)\left(\frac{3\pi}{4}\right) = \frac{75\pi}{8} \approx 29.45$ cm$^2$.
 - Find the radius of a circle given that a sector of angle $2.5$ rad has area $20$ cm$^2$: $\frac{1}{2}r^2(2.5) = 20 \implies r^2 = 16 \implies r = 4$ cm.
 - A chord of length $6$ cm subtends an angle of $\frac{\pi}{3}$ at the centre. Find the area of the segment: $r = \frac{3}{\sin(\pi/6)} = 6$ cm. Area $= \frac{1}{2}(36)\left(\frac{\pi}{3} - \sin\frac{\pi}{3}\right) = 18\left(\frac{\pi}{3} - \frac{\sqrt{3}}{2}\right) = 6\pi - 9\sqrt{3} \approx 3.26$ cm$^2$.
-</details>
 
 ## Trigonometric Ratios
 
@@ -133,7 +131,6 @@ $$
 - In a right-angled triangle, if the hypotenuse is $13$ and one leg is $5$Then $\sin\theta = \frac{5}{13}$$\cos\theta = \frac{12}{13}$$\tan\theta = \frac{5}{12}$.
 - Given $\tan\theta = 3$ and $\theta$ is acute: construct a triangle with opposite $= 3$Adjacent $= 1$Hypotenuse $= \sqrt{10}$. Then $\sin\theta = \frac{3}{\sqrt{10}}$ and $\cos\theta = \frac{1}{\sqrt{10}}$.
 - If $\sec\theta = \frac{5}{3}$ and $\theta$ is in the first quadrant, then $\cos\theta = \frac{3}{5}$$\sin\theta = \frac{4}{5}$And $\tan\theta = \frac{4}{3}$.
-</details>
 
 ## Trigonometric Identities
 
@@ -195,7 +192,6 @@ $$
 - Simplify $\frac{\sin\theta}{\tan\theta}$: Since $\tan\theta = \frac{\sin\theta}{\cos\theta}$We have $\frac{\sin\theta}{\sin\theta / \cos\theta} = \cos\theta$.
 - Given $\sin\theta = \frac{3}{5}$ and $\theta$ is in the second quadrant, find $\cos\theta$ and $\tan\theta$: $\cos\theta = -\sqrt{1 - \frac{9}{25}} = -\frac{4}{5}$$\tan\theta = \frac{3/5}{-4/5} = -\frac{3}{4}$.
 - Prove $\frac{1}{1 + \sin\theta} + \frac{1}{1 - \sin\theta} = 2\sec^2\theta$: LHS $= \frac{(1 - \sin\theta) + (1 + \sin\theta)}{(1 + \sin\theta)(1 - \sin\theta)} = \frac{2}{\cos^2\theta} = 2\sec^2\theta$.
-</details>
 
 ## Exact Values
 
@@ -216,7 +212,6 @@ Isosceles right-angled triangle ($45^\circ$-$45^\circ$-$90^\circ$).
 - Evaluate $\sin^2 45^\circ + \cos^2 45^\circ = \frac{1}{2} + \frac{1}{2} = 1$ (confirms the Pythagorean identity)
 - Evaluate $\frac{\tan 60^\circ}{\sin 30^\circ} = \frac{\sqrt{3}}{1/2} = 2\sqrt{3}$
 - Simplify $\sin\frac{\pi}{3}\cos\frac{\pi}{6} + \cos\frac{\pi}{3}\sin\frac{\pi}{6} = \frac{\sqrt{3}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{1}{2} \cdot \frac{1}{2} = \frac{3}{4} + \frac{1}{4} = 1$
-</details>
 
 ## Graphs of Trigonometric Functions
 
@@ -230,11 +225,11 @@ The graph.
 
 | Property       | Value                                |
 | -------------- | ------------------------------------ |
-| Domain         | All real $\mathbb{'\{'}R{'\}'}$      |
+| Domain         | All real $\mathbb{{'}R{}'}$          |
 | Range          | $[-1, 1]$                            |
 | Period         | $2\pi$ (or $360^\circ$)              |
 | Amplitude      | $1$                                  |
-| $x$-intercepts | $n\pi$$n \in \mathbb{'\{'}Z{'\}'}$   |
+| $x$-intercepts | $n\pi$$n \in \mathbb{{'}Z{}'}$       |
 | Maximum        | $1$ at $x = \frac{\pi}{2} + 2n\pi$   |
 | Minimum        | $-1$ at $x = \frac{3\pi}{2} + 2n\pi$ |
 
@@ -242,28 +237,28 @@ The graph is an odd function ($\sin(-x) = -\sin x$), symmetric about the origin.
 
 ### $y = \cos x$
 
-| Property       | Value                                              |
-| -------------- | -------------------------------------------------- |
-| Domain         | All real $\mathbb{'\{'}R{'\}'}$                    |
-| Range          | $[-1, 1]$                                          |
-| Period         | $2\pi$ (or $360^\circ$)                            |
-| Amplitude      | $1$                                                |
-| $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{'\{'}Z{'\}'}$ |
-| Maximum        | $1$ at $x = 2n\pi$                                 |
-| Minimum        | $-1$ at $x = \pi + 2n\pi$                          |
+| Property       | Value                                          |
+| -------------- | ---------------------------------------------- |
+| Domain         | All real $\mathbb{{'}R{}'}$                    |
+| Range          | $[-1, 1]$                                      |
+| Period         | $2\pi$ (or $360^\circ$)                        |
+| Amplitude      | $1$                                            |
+| $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{{'}Z{}'}$ |
+| Maximum        | $1$ at $x = 2n\pi$                             |
+| Minimum        | $-1$ at $x = \pi + 2n\pi$                      |
 
 The graph is an even function ($\cos(-x) = \cos x$), symmetric about the $y$-axis.
 
 ### $y = \tan x$
 
-| Property       | Value                              |
-| -------------- | ---------------------------------- |
-| Domain         | $x \neq \frac{\pi}{2} + n\pi$      |
-| Range          | All real $\mathbb{'\{'}R{'\}'}$    |
-| Period         | $\pi$ (or $180^\circ$)             |
-| Amplitude      | Not defined (unbounded)            |
-| $x$-intercepts | $n\pi$$n \in \mathbb{'\{'}Z{'\}'}$ |
-| Asymptotes     | $x = \frac{\pi}{2} + n\pi$         |
+| Property       | Value                          |
+| -------------- | ------------------------------ |
+| Domain         | $x \neq \frac{\pi}{2} + n\pi$  |
+| Range          | All real $\mathbb{{'}R{}'}$    |
+| Period         | $\pi$ (or $180^\circ$)         |
+| Amplitude      | Not defined (unbounded)        |
+| $x$-intercepts | $n\pi$$n \in \mathbb{{'}Z{}'}$ |
+| Asymptotes     | $x = \frac{\pi}{2} + n\pi$     |
 
 The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes
 Where $\cos x = 0$.
@@ -292,7 +287,6 @@ $$
 - For $y = -2\cos\left(x - \frac{\pi}{3}\right) + 1$: amplitude $= 2$Period $= 2\pi$Phase shift $= \frac{\pi}{3}$ to the right, vertical shift $= 1$ up, range $= [-1, 3]$.
 - For $y = \tan\left(\frac{x}{2}\right)$: period $= \frac{\pi}{1/2} = 2\pi$Asymptotes at $x = \pi + 2n\pi$.
 - State the maximum and minimum of $y = 4\sin x - 1$: maximum $= 4(1) - 1 = 3$Minimum $= 4(-1) - 1 = -5$.
-</details>
 
 ## Solving Trigonometric Equations
 
@@ -306,7 +300,7 @@ In $[-90^\circ, 90^\circ]$:
 
 $$
 \begin{aligned}
- \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{'\{'}Z{'\}'}
+ \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{{'}Z{}'}
 \end{aligned}
 $$
 
@@ -315,7 +309,7 @@ In $[0^\circ, 180^\circ]$:
 
 $$
 \begin{aligned}
- \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{'\{'}Z{'\}'}
+ \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{{'}Z{}'}
 \end{aligned}
 $$
 
@@ -324,7 +318,7 @@ $(-90^\circ, 90^\circ)$:
 
 $$
 \begin{aligned}
- \theta = 180^\circ n + \alpha, \quad n \in \mathbb{'\{'}Z{'\}'}
+ \theta = 180^\circ n + \alpha, \quad n \in \mathbb{{'}Z{}'}
 \end{aligned}
 $$
 
@@ -356,7 +350,6 @@ Many trigonometric equations require algebraic manipulation before they can be s
 - Solve $2\cos^2\theta - \cos\theta - 1 = 0$ for $0 \leq \theta < 2\pi$: Let $u = \cos\theta$. Then $2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$. So $\cos\theta = -\frac{1}{2}$ or $\cos\theta = 1$. Solutions: $\theta = \frac{2\pi}{3}$$\theta = \frac{4\pi}{3}$$\theta = 0$.
 - Solve $\sin 2\theta = \cos\theta$ for $0^\circ \leq \theta < 360^\circ$: $2\sin\theta\cos\theta = \cos\theta \implies \cos\theta(2\sin\theta - 1) = 0$. Either $\cos\theta = 0 \implies \theta = 90^\circ, 270^\circ$Or $\sin\theta = \frac{1}{2} \implies \theta = 30^\circ, 150^\circ$. Solutions: $30^\circ, 90^\circ, 150^\circ, 270^\circ$.
 - Solve $\tan^2\theta = 3$ for $0 \leq \theta < 2\pi$: $\tan\theta = \pm\sqrt{3}$. $\tan\theta = \sqrt{3} \implies \theta = \frac{\pi}{3}, \frac{4\pi}{3}$. $\tan\theta = -\sqrt{3} \implies \theta = \frac{2\pi}{3}, \frac{5\pi}{3}$.
-</details>
 
 ## Applications
 
@@ -438,7 +431,6 @@ This connects to the vector formulation described in the
 - From the top of a $50$ m cliff, the angle of depression of a boat is $30^\circ$. Find the horizontal distance from the boat to the base of the cliff: $\tan 30^\circ = \frac{50}{d} \implies d = \frac{50}{\tan 30^\circ} = 50\sqrt{3} \approx 86.6$ m.
 - A vertical pole $PQ$ stands on horizontal ground. Point $A$ is on the ground, $20$ m from the base $Q$. The angle of elevation of $P$ from $A$ is $35^\circ$. Find the height of the pole: $PQ = 20\tan 35^\circ \approx 14.0$ m.
 - In a cuboid $ABCDEFGH$ with $AB = 4$$BC = 3$$CG = 5$Find the angle between the diagonal $AG$ and the base $ABCD$: $AG = \sqrt{16 + 9 + 25} = \sqrt{50} = 5\sqrt{2}$. The projection of $AG$ onto the base is $AC = \sqrt{16 + 9} = 5$. The angle between $AG$ and the base $= \arccos\frac{AC}{AG} = \arccos\frac{5}{5\sqrt{2}} = \arccos\frac{1}{\sqrt{2}} = 45^\circ$.
-</details>
 
 ---
 
@@ -446,14 +438,13 @@ This connects to the vector formulation described in the
 <summary>Wrap-up Questions</summary>
 1. **Question:** Convert $210^\circ$ to radians and find the exact values of $\sin 210^\circ$
  $\cos 210^\circ$And $\tan 210^\circ$.
-<details>
+### Details
 <summary>Answer</summary>
 - $210^\circ = 210 \times \frac{\pi}{180} = \frac{7\pi}{6}$ rad.
 - Reference angle: $210^\circ - 180^\circ = 30^\circ$. Since $210^\circ$ is in the third quadrant, both sine and cosine are negative.
 - $\sin 210^\circ = -\sin 30^\circ = -\frac{1}{2}$
 - $\cos 210^\circ = -\cos 30^\circ = -\frac{\sqrt{3}}{2}$
 - $\tan 210^\circ = \frac{\sin 210^\circ}{\cos 210^\circ} = \frac{-1/2}{-\sqrt{3}/2} = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}$
-</details>
 
 2. **Question:** A sector of a circle of radius $8$ cm has an area of $32\pi$ cm$^2$. Find the arc
 Length and the perimeter of the sector.
@@ -464,7 +455,6 @@ Length and the perimeter of the sector.
   $\frac{1}{2}(64)\theta = 32\pi \implies 32\theta = 32\pi \implies \theta = \pi$ rad.
 - Arc length $= r\theta = 8\pi$ cm.
 - Perimeter of sector $= 2r + l = 16 + 8\pi \approx 41.1$ cm.
-</details>
 
 3. **Question:** Solve $3\sin^2\theta - 2\sin\theta - 1 = 0$ for $0^\circ \leq \theta < 360^\circ$.
 <details>
@@ -478,7 +468,6 @@ Length and the perimeter of the sector.
 - $\theta = 360^\circ + (-19.47^\circ) = 340.53^\circ$ or
   $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
 - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
-</details>
 
 4. **Question:** In $\triangle ABC$$a = 10$$b = 7$$c = 8$. Find the largest angle of the Triangle.
 <details>
@@ -488,7 +477,6 @@ Length and the perimeter of the sector.
 - By the cosine rule:
   $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 64 - 100}{2(7)(8)} = \frac{13}{112}$.
 - $A = \arccos\left(\frac{13}{112}\right) \approx 83.3^\circ$.
-</details>
 
 5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
 Tower is $40^\circ$. From a point $B$$30$ m closer to the base of the tower, the angle of Elevation
@@ -504,7 +492,6 @@ is $55^\circ$. Find the height of the tower.
 - $x = \frac{30\tan 40^\circ}{\tan 55^\circ - \tan 40^\circ} = \frac{30(0.8391)}{1.4281 - 0.8391} = \frac{25.17}{0.589} \approx 42.74$
   m.
 - $h = 42.74 \times \tan 55^\circ \approx 42.74 \times 1.4281 \approx 61.1$ m.
-</details>
 
 6. **Question:** A ship $S$ is observed from two lighthouses $A$ and $B$ which are $5$ km apart. The
 Bearing of $B$ from $A$ is $090^\circ$ (due east), the bearing of $S$ from $A$ is $050^\circ$And The
@@ -526,7 +513,6 @@ bearing of $S$ from $B$ is $320^\circ$. Find the distance of $S$ from $A$.
 - $\angle ABS = 180^\circ - 40^\circ - 90^\circ = 50^\circ$.
 - Using the sine rule: $\frac{AS}{\sin 50^\circ} = \frac{5}{\sin 90^\circ} = 5$.
 - $AS = 5\sin 50^\circ \approx 3.83$ km.
-</details>
 
 7. **Question:** Prove the identity
 $\frac{\sin\theta}{1 - \cos\theta} = \frac{1 + \cos\theta}{\sin\theta}$ for $\sin\theta \neq 0$.
@@ -543,8 +529,6 @@ $= \frac{\sin\theta(1 + \cos\theta)}{\sin^2\theta} = \frac{1 + \cos\theta}{\sin\
 
 This equals the RHS, completing the proof.
 
-</details>
-
 8. **Question:** A pyramid has a square base $ABCD$ of side $6$ cm and vertex $V$. The slant edges
 $VA = VB = VC = VD = 5\sqrt{2}$ cm. Find (a) the height of the pyramid, and (b) the angle between
 The slant edge $VA$ and the base.
@@ -559,8 +543,6 @@ $VO = \sqrt{32} = 4\sqrt{2}$ cm.
 (b) The angle between $VA$ and the base is $\angle VAO$.
 $\cos\angle VAO = \frac{AO}{VA} = \frac{3\sqrt{2}}{5\sqrt{2}} = \frac{3}{5}$.
 $\angle VAO = \arccos\frac{3}{5} \approx 53.1^\circ$.
-
-</details>
 
 9. **Question:** Sketch the graph of $y = 2\sin\left(x - \frac{\pi}{4}\right) + 1$ for
 $0 \leq x \leq 2\pi$. State the maximum value, minimum value, and the coordinates of all
@@ -585,7 +567,6 @@ $x$-intercepts in this interval.
   $x = \frac{11\pi}{6} + \frac{\pi}{4} = \frac{25\pi}{12}$. Since $\frac{25\pi}{12} \gt 2\pi$Only
   two $x$-intercepts lie in $[0, 2\pi]$.
 - $x$-intercepts: $\left(\frac{\pi}{12}, 0\right)$ and $\left(\frac{17\pi}{12}, 0\right)$.
-</details>
 
 10. **Question:** Two observers $A$ and $B$ are on opposite sides of a vertical tower. $A$ and $B$
 Are $100$ m apart on level ground. The angle of elevation of the top of the tower from $A$ is
@@ -599,8 +580,7 @@ $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
 - $\tan 45^\circ = \frac{h}{100 - x} \implies 100 - x = h$.
 - Substituting: $100 - h\sqrt{3} = h \implies 100 = h(1 + \sqrt{3})$.
 - $h = \frac{100}{1 + \sqrt{3}} = \frac{100(1 - \sqrt{3})}{(1 + \sqrt{3})(1 - \sqrt{3})} = \frac{100(1 - \sqrt{3})}{-2} = 50(\sqrt{3} - 1) \approx 36.6$
-M.
-</details>
+  M.
 
 11. **Question:** Solve $\cos 2\theta = \sin\theta$ for $0 \leq \theta < 2\pi$.
 <details>
@@ -613,7 +593,6 @@ M.
 - $\sin\theta = \frac{1}{2} \implies \theta = \frac{\pi}{6}, \frac{5\pi}{6}$.
 - $\sin\theta = -1 \implies \theta = \frac{3\pi}{2}$.
 - Solutions: $\theta = \frac{\pi}{6}, \frac{3\pi}{2}, \frac{5\pi}{6}$.
-</details>
 
 12. **Question:** In $\triangle ABC$$a = 5$$b = 7$$A = 40^\circ$. Determine whether two Distinct
 triangles exist, and find all possible values of $B$.
@@ -628,7 +607,6 @@ triangles exist, and find all possible values of $B$.
 - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
 - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
 - There is only one triangle, with $B \approx 64.2^\circ$$C \approx 75.8^\circ$$c \approx 7.54$.
-</details>
 </details>
 
 For the A-Level treatment of this topic, see

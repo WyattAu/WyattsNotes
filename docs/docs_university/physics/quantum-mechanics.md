@@ -121,7 +121,7 @@ $$\frac{hc}{\lambda} + m_e c^2 = \frac{hc}{\lambda'} + E_e$$
 
 **Momentum conservation (vector equation):**
 
-$$\frac{h}{\lambda}\hat{n} = \frac{h}{\lambda'}\hat{n}' + \mathbf{'\{'}p{'\}'}_e$$
+$$\frac{h}{\lambda}\hat{n} = \frac{h}{\lambda'}\hat{n}' + \mathbf{{'}p{}'}_e$$
 
 _Derivation of the wavelength shift._ From the relativistic energy-momentum relation for the
 Electron, $E_e^2 = (p_e c)^2 + (m_e c^2)^2$. Rearranging the energy conservation:
@@ -220,7 +220,7 @@ quantum mechanics to the macroscopic regime.
 ### 2.1 The Postulates
 
 **Postulate 1 (State Space).** The state of a quantum system is completely described by a normalised
-Vector $|\psi\rangle$ in a complex Hilbert space $\mathcal{'\{'}H{'\}'}$.
+Vector $|\psi\rangle$ in a complex Hilbert space $\mathcal{{'}H{}'}$.
 
 _Physical motivation._ Superposition is observed in interference experiments (e.g., double-slit),
 Where a particle can traverse multiple paths simultaneously. The complex-valued nature of the state
@@ -228,7 +228,7 @@ Is essential: relative phases between superposition components produce observabl
 Patterns that cannot be replicated with real amplitudes alone.
 
 **Postulate 2 (Observables).** Every measurable quantity (observable) is represented by a Hermitian
-(self-adjoint) operator $\hat{A} = \hat{A}^\dagger$ acting on $\mathcal{'\{'}H{'\}'}$.
+(self-adjoint) operator $\hat{A} = \hat{A}^\dagger$ acting on $\mathcal{{'}H{}'}$.
 
 _Physical motivation._ Hermitian operators have real eigenvalues, matching the fact that measurement
 Outcomes are real numbers. The spectral theorem guarantees a complete set of eigenstates, providing
@@ -337,22 +337,21 @@ Matrices via partial trace), open quantum systems, and decoherence.
 ### 3.1 Wave Functions
 
 In the position representation, the state is described by a **wave function**
-$\psi(\mathbf{'\{'}r{'\}'}, t)$ Where $|\psi(\mathbf{'\{'}r{'\}'}, t)|^2$ is the probability
-density:
+$\psi(\mathbf{{'}r{}'}, t)$ Where $|\psi(\mathbf{{'}r{}'}, t)|^2$ is the probability density:
 
-$$P(\mathbf{'\{'}r{'\}'} \in [\mathbf{'\{'}r{'\}'}, \mathbf{'\{'}r{'\}'} + d\mathbf{'\{'}r{'\}'}]) = |\psi(\mathbf{'\{'}r{'\}'}, t)|^2\, d^3\mathbf{'\{'}r{'\}'}$$
+$$P(\mathbf{{'}r{}'} \in [\mathbf{{'}r{}'}, \mathbf{{'}r{}'} + d\mathbf{{'}r{}'}]) = |\psi(\mathbf{{'}r{}'}, t)|^2\, d^3\mathbf{{'}r{}'}$$
 
 **Normalisation:**
-$\int_{-\infty}^{\infty} |\psi(\mathbf{'\{'}r{'\}'}, t)|^2\, d^3\mathbf{'\{'}r{'\}'} = 1$.
+$\int_{-\infty}^{\infty} |\psi(\mathbf{{'}r{}'}, t)|^2\, d^3\mathbf{{'}r{}'} = 1$.
 
 ### 3.2 Time-Dependent Schrodinger Equation
 
-$$i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi = \left(-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{'\{'}r{'\}'}, t)\right)\psi$$
+$$i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi = \left(-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{{'}r{}'}, t)\right)\psi$$
 
 ### 3.3 Time-Independent Schrodinger Equation
 
-For time-independent potentials $V(\mathbf{'\{'}r{'\}'})$Separate variables:
-$\psi(\mathbf{'\{'}r{'\}'}, t) = \phi(\mathbf{'\{'}r{'\}'}) e^{-iEt/\hbar}$:
+For time-independent potentials $V(\mathbf{{'}r{}'})$Separate variables:
+$\psi(\mathbf{{'}r{}'}, t) = \phi(\mathbf{{'}r{}'}) e^{-iEt/\hbar}$:
 
 $$\hat{H}\phi = E\phi \quad \mathrm{i.e.,{} \quad -\frac{\hbar^2}{2m}\nabla^2\phi + V\phi = E\phi$$
 
@@ -377,11 +376,11 @@ This is an eigenvalue problem: $E$ is the energy eigenvalue, $\phi$ is the energ
 
 The **probability current density** is
 
-$$\mathbf{'\{'}J{'\}'} = \frac{\hbar}{2mi}(\psi^* \nabla\psi - \psi \nabla\psi^*)$$
+$$\mathbf{{'}J{}'} = \frac{\hbar}{2mi}(\psi^* \nabla\psi - \psi \nabla\psi^*)$$
 
 It satisfies the continuity equation:
-$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{'\{'}J{'\}'} = 0$ Expressing
-conservation of probability.
+$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{{'}J{}'} = 0$ Expressing conservation
+of probability.
 
 _Derivation of the continuity equation._ Start with the Schrodinger equation and its complex
 conjugate:
@@ -406,7 +405,7 @@ Dividing by $i\hbar$:
 
 $$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \left[\frac{\hbar}{2mi}(\psi^*\nabla\psi - \psi\nabla\psi^*)\right] = 0$$
 
-$$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{'\{'}J{'\}'} = 0 \qquad \blacksquare$$
+$$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{{'}J{}'} = 0 \qquad \blacksquare$$
 
 ### 3.5 Unitarity of Time Evolution
 
@@ -445,9 +444,9 @@ This composition law, combined with unitarity, is the group structure underlying
 For a time-dependent Hamiltonian, the evolution operator is given by Dyson's time-ordered
 exponential:
 
-$$\hat{U}(t, t_0) = \mathcal{'\{'}T{'\}'}\exp\!\left(-\frac{i}{\hbar}\int_{t_0}^{t}\hat{H}(t')\,dt'\right)$$
+$$\hat{U}(t, t_0) = \mathcal{{'}T{}'}\exp\!\left(-\frac{i}{\hbar}\int_{t_0}^{t}\hat{H}(t')\,dt'\right)$$
 
-Where $\mathcal{'\{'}T{'\}'}$ denotes time ordering (later times appear to the left).
+Where $\mathcal{{'}T{}'}$ denotes time ordering (later times appear to the left).
 
 For a time-dependent Hamiltonian, the evolution operator satisfies
 $i\hbar\,\partial\hat{U}/\partial t = \hat{H}(t)\hat{U}$ With $\hat{U}(t_0, t_0) = \hat{I}$.
@@ -1175,8 +1174,8 @@ $m_{\min} = -l$So $N = 2l$Meaning $2l$ must be a non-negative integer. Therefore
 $l = 0, 1/2, 1, 3/2, \ldots$ and $m$ takes $2l+1$ values from $-l$ to $l$. $\blacksquare$
 
 For orbital angular momentum (defined as
-$\hat{\mathbf{'\{'}L{'\}'}} = \hat{\mathbf{'\{'}r{'\}'}} \times \hat{\mathbf{'\{'}p{'\}'}}$), The
-wave function must be single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
+$\hat{\mathbf{{'}L{}'}} = \hat{\mathbf{{'}r{}'}} \times \hat{\mathbf{{'}p{}'}}$), The wave function
+must be single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
 $e^{im\phi} = e^{im(\phi+2\pi)}$So $m$ must be an integer, which restricts $l$ to integers.
 
 ### 6.4 Spherical Harmonics
@@ -1282,7 +1281,7 @@ is $\Delta r = \sqrt{3a_0^2 - (3a_0/2)^2} = \sqrt{3/4}\,a_0$.
 
 Electric dipole transitions between hydrogen states are governed by selection rules derived from the
 Wigner-Eckart theorem. For a transition $|n,l,m\rangle \to |n',l',m'\rangle$ induced by the electric
-Dipole operator $\hat{\mathbf{'\{'}r{'\}'}}$:
+Dipole operator $\hat{\mathbf{{'}r{}'}}$:
 
 $$\Delta l = l' - l = \pm 1, \quad \Delta m = m' - m = 0, \pm 1$$
 
@@ -1366,7 +1365,7 @@ $$\sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
 
 $$\sigma_x = \begin{pmatrix} a & b \\ b^* & -a \end{pmatrix}$$
 
-Where $a \in \mathbb{'\{'}R{'\}'}$ and $b \in \mathbb{'\{'}C{'\}'}$. From $\sigma_x^2 = I$:
+Where $a \in \mathbb{{'}R{}'}$ and $b \in \mathbb{{'}C{}'}$. From $\sigma_x^2 = I$:
 $a^2 + |b|^2 = 1$ and $2ab = 0$. Since $|b| \neq 0$ (otherwise $\sigma_x$ is diagonal and commutes
 with $\sigma_z$Violating $[\sigma_x, \sigma_z] \neq 0$), we have $a = 0$ and $|b| = 1$. Choosing
 $b = 1$ (by convention):
@@ -1387,11 +1386,10 @@ $\blacksquare$
 
 ### 7.4 Spin-1/2 in a Magnetic Field
 
-A particle with magnetic moment $\boldsymbol{'\{'}\mu{'\}'} = \gamma\mathbf{'\{'}S{'\}'}$ (where
-$\gamma$ is the Gyromagnetic ratio) in a magnetic field $\mathbf{'\{'}B{'\}'} = B_0\hat{z}$ has
-Hamiltonian:
+A particle with magnetic moment $\boldsymbol{{'}\mu{}'} = \gamma\mathbf{{'}S{}'}$ (where $\gamma$ is
+the Gyromagnetic ratio) in a magnetic field $\mathbf{{'}B{}'} = B_0\hat{z}$ has Hamiltonian:
 
-$$\hat{H} = -\boldsymbol{'\{'}\mu{'\}'}\cdot\mathbf{'\{'}B{'\}'} = -\gamma B_0\hat{S}_z = -\frac{\hbar\gamma B_0}{2}\sigma_z$$
+$$\hat{H} = -\boldsymbol{{'}\mu{}'}\cdot\mathbf{{'}B{}'} = -\gamma B_0\hat{S}_z = -\frac{\hbar\gamma B_0}{2}\sigma_z$$
 
 The eigenstates are $|\uparrow\rangle$ and $|\downarrow\rangle$ with energies
 $E_\uparrow = -\hbar\gamma B_0/2$ And $E_\downarrow = +\hbar\gamma B_0/2$. The energy splitting is
@@ -1426,12 +1424,12 @@ Of Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectrosco
 transitions Between spin states are driven by oscillating magnetic fields at the Larmor frequency.
 
 **Example 7.1.** An electron starts in the state $|\psi(0)\rangle = |\uparrow\rangle$. A magnetic
-field $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$ is applied. Find $|\psi(t)\rangle$.
+field $\mathbf{{'}B{}'} = B_0\hat{x}$ is applied. Find $|\psi(t)\rangle$.
 
 <details>
 <summary>Solution</summary>
 
-With $\mathbf{'\{'}B{'\}'} = B_0\hat{x}$The Hamiltonian is
+With $\mathbf{{'}B{}'} = B_0\hat{x}$The Hamiltonian is
 $\hat{H} = -\gamma B_0\hat{S}_x = \omega_L\hat{S}_x$ Where $\omega_L = \gamma B_0$. The eigenstates
 of $\hat{S}_x$ are:
 
@@ -1457,11 +1455,11 @@ Confirming the quantisation of angular momentum (spin-1/2 for the outer electron
 
 **Detailed analysis.** The force on a magnetic moment in an inhomogeneous field is:
 
-$$\mathbf{'\{'}F{'\}'} = \nabla(\boldsymbol{'\{'}\mu{'\}'}\cdot\mathbf{'\{'}B{'\}'})$$
+$$\mathbf{{'}F{}'} = \nabla(\boldsymbol{{'}\mu{}'}\cdot\mathbf{{'}B{}'})$$
 
-For a field $\mathbf{'\{'}B{'\}'} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$The
-$z$-component of force Is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$
-and $m_s = \pm 1/2$:
+For a field $\mathbf{{'}B{}'} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$The $z$-component
+of force Is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$ and
+$m_s = \pm 1/2$:
 
 $$F_z = \pm\frac{\gamma\hbar}{2}\frac{\partial B_z}{\partial z}$$
 
@@ -1501,9 +1499,9 @@ For $\theta = 90°$ (i.e., measuring $S_x$): $P = 1/2$.
 
 ### 7.6 Addition of Angular Momenta
 
-Given two angular momenta $\hat{\mathbf{'\{'}J{'\}'}}_1$ and $\hat{\mathbf{'\{'}J{'\}'}}_2$ with
-quantum numbers $j_1, m_1$ and $j_2, m_2$Define the total
-$\hat{\mathbf{'\{'}J{'\}'}} = \hat{\mathbf{'\{'}J{'\}'}}_1 + \hat{\mathbf{'\{'}J{'\}'}}_2$.
+Given two angular momenta $\hat{\mathbf{{'}J{}'}}_1$ and $\hat{\mathbf{{'}J{}'}}_2$ with quantum
+numbers $j_1, m_1$ and $j_2, m_2$Define the total
+$\hat{\mathbf{{'}J{}'}} = \hat{\mathbf{{'}J{}'}}_1 + \hat{\mathbf{{'}J{}'}}_2$.
 
 **Compatible observables:** $\hat{J}^2$$\hat{J}_z$$\hat{J}_1^2$$\hat{J}_2^2$ all commute. We label
 Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
@@ -1533,12 +1531,12 @@ are:
 The triplet states are symmetric under particle exchange; the singlet is antisymmetric.
 
 **Total spin operator.**
-$\hat{S}^2 = \hat{S}_1^2 + \hat{S}_2^2 + 2\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2$So:
+$\hat{S}^2 = \hat{S}_1^2 + \hat{S}_2^2 + 2\hat{\mathbf{{'}S{}'}}_1\cdot\hat{\mathbf{{'}S{}'}}_2$So:
 
-$$\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2 = \frac{1}{2}(\hat{S}^2 - \hat{S}_1^2 - \hat{S}_2^2)$$
+$$\hat{\mathbf{{'}S{}'}}_1\cdot\hat{\mathbf{{'}S{}'}}_2 = \frac{1}{2}(\hat{S}^2 - \hat{S}_1^2 - \hat{S}_2^2)$$
 
-For the triplet: $\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2 = \hbar^2/4$. For
-the singlet: $\hat{\mathbf{'\{'}S{'\}'}}_1\cdot\hat{\mathbf{'\{'}S{'\}'}}_2 = -3\hbar^2/4$.
+For the triplet: $\hat{\mathbf{{'}S{}'}}_1\cdot\hat{\mathbf{{'}S{}'}}_2 = \hbar^2/4$. For the
+singlet: $\hat{\mathbf{{'}S{}'}}_1\cdot\hat{\mathbf{{'}S{}'}}_2 = -3\hbar^2/4$.
 
 **Complete set of commuting observables (CSCO).** For a two-spin system, the set
 $\\{\hat{S}^2, \hat{S}_z, \hat{S}_1^2, \hat{S}_2^2\\}$ forms a CSCO: their simultaneous eigenstates
@@ -1805,9 +1803,9 @@ Rather than a real vector space. Give a physical example that demonstrates the n
 amplitudes. Hint: consider the Mach-Zehnder interferometer with phase shifters.
 
 **5.** (Continuity equation) Starting from the Schrodinger equation, derive the continuity equation
-$\partial|\psi|^2/\partial t + \nabla\cdot\mathbf{'\{'}J{'\}'} = 0$. Show that for a stationary
-state $\psi(\mathbf{'\{'}r{'\}'},t) = \phi(\mathbf{'\{'}r{'\}'})e^{-iEt/\hbar}$The probability
-current is time-independent. What does this imply about the probability distribution?
+$\partial|\psi|^2/\partial t + \nabla\cdot\mathbf{{'}J{}'} = 0$. Show that for a stationary state
+$\psi(\mathbf{{'}r{}'},t) = \phi(\mathbf{{'}r{}'})e^{-iEt/\hbar}$The probability current is
+time-independent. What does this imply about the probability distribution?
 
 **6.** (Normalisation) Normalise the wave function $\psi(x) = N\,x(a-x)$ for $0 \lt x \lt a$ (and
 zero Otherwise). Find $\langle x \rangle$$\langle x^2 \rangle$And $\langle p^2 \rangle$.
@@ -1824,8 +1822,8 @@ symmetry.
 
 **9.** (Eigenvalue problem) Find the eigenvalues and normalised eigenvectors of the matrix
 $\hat{A} = \begin{pmatrix}3 & 1\\1 & 3\end{pmatrix}$. Verify that the eigenvectors are orthogonal
-And that they form a complete basis for $\mathbb{'\{'}C{'\}'}^2$. Generalise: what are the
-eigenvalues of $\begin{pmatrix}a & b\\b & a\end{pmatrix}$?
+And that they form a complete basis for $\mathbb{{'}C{}'}^2$. Generalise: what are the eigenvalues
+of $\begin{pmatrix}a & b\\b & a\end{pmatrix}$?
 
 **10.** (Infinite square well) A particle is in the ground state of an infinite square well of Width
 $L$. Suddenly, the well expands symmetrically to width $2L$ (the centre remains fixed). Find the
@@ -1880,7 +1878,7 @@ result.
 
 For a system of $N$ identical particles, the wavefunction must satisfy:
 
-$$\psi(\ldots, \mathbf{'\{'}r{'\}'}_i, \ldots, \mathbf{'\{'}r{'\}'}_j, \ldots) = \pm\psi(\ldots, \mathbf{'\{'}r{'\}'}_j, \ldots, \mathbf{'\{'}r{'\}'}_i, \ldots)$$
+$$\psi(\ldots, \mathbf{{'}r{}'}_i, \ldots, \mathbf{{'}r{}'}_j, \ldots) = \pm\psi(\ldots, \mathbf{{'}r{}'}_j, \ldots, \mathbf{{'}r{}'}_i, \ldots)$$
 
 - **Bosons** (integer spin): symmetric ($+$ sign). Any number can occupy the same state.
 - **Fermions** (half-integer spin): antisymmetric ($-$ sign). Pauli exclusion: no two fermions can
@@ -1899,9 +1897,9 @@ effective **exchange interaction**. For two electrons in a box, the probability 
 close together differs between the triplet (spatially antisymmetric, spin symmetric) and singlet
 (spatially symmetric, spin antisymmetric) states:
 
-$$|\psi_{\text{triplet{}}|^2 = 0 \quad \text{when {} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
+$$|\psi_{\text{triplet{}}|^2 = 0 \quad \text{when {} \mathbf{{'}r{}'}_1 = \mathbf{{'}r{}'}_2$$
 
-$$|\psi_{\text{singlet{}}|^2 > 0 \quad \text{when {} \mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}r{'\}'}_2$$
+$$|\psi_{\text{singlet{}}|^2 > 0 \quad \text{when {} \mathbf{{'}r{}'}_1 = \mathbf{{'}r{}'}_2$$
 
 The triplet state keeps electrons apart (effective repulsion), while the singlet allows them to be
 close. This is the origin of the **Hund's first rule**: parallel spins are energetically favourable
@@ -1911,10 +1909,10 @@ for atoms because the exchange interaction lowers the Coulomb repulsion.
 
 The helium Hamiltonian (ignoring nuclear motion):
 
-$$\hat{H} = -\frac{\hbar^2}{2m_e}\left(\nabla_1^2 + \nabla_2^2\right) - \frac{2e^2}{4\pi\varepsilon_0 r_1} - \frac{2e^2}{4\pi\varepsilon_0 r_2} + \frac{e^2}{4\pi\varepsilon_0|\mathbf{'\{'}r{'\}'}_1 - \mathbf{'\{'}r{'\}'}_2|}$$
+$$\hat{H} = -\frac{\hbar^2}{2m_e}\left(\nabla_1^2 + \nabla_2^2\right) - \frac{2e^2}{4\pi\varepsilon_0 r_1} - \frac{2e^2}{4\pi\varepsilon_0 r_2} + \frac{e^2}{4\pi\varepsilon_0|\mathbf{{'}r{}'}_1 - \mathbf{{'}r{}'}_2|}$$
 
 **Ground state (parahelium):** Both electrons in the $1s$ orbital with opposite spins (singlet). The
-spatial part is symmetric: $\psi_{100}(\mathbf{'\{'}r{'\}'}_1)\psi_{100}(\mathbf{'\{'}r{'\}'}_2)$.
+spatial part is symmetric: $\psi_{100}(\mathbf{{'}r{}'}_1)\psi_{100}(\mathbf{{'}r{}'}_2)$.
 
 **First-order perturbation theory** for the electron-electron repulsion:
 
@@ -1997,7 +1995,7 @@ Hamiltonian:
 $$\hat{H} = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\varepsilon_0 r_A} - \frac{e^2}{4\pi\varepsilon_0 r_B} + \frac{e^2}{4\pi\varepsilon_0 R}$$
 
 **LCAO trial function:**
-$\psi_\pm = N_\pm[\psi_{1s}(\mathbf{'\{'}r{'\}'}_A) \pm \psi_{1s}(\mathbf{'\{'}r{'\}'}_B)]$
+$\psi_\pm = N_\pm[\psi_{1s}(\mathbf{{'}r{}'}_A) \pm \psi_{1s}(\mathbf{{'}r{}'}_B)]$
 
 The energies:
 
@@ -2081,7 +2079,7 @@ $$\Gamma = \int \frac{d|c_f|^2}{dt}\,\rho(E_f)\,dE_f = \frac{2\pi}{\hbar}|\langl
 
 The electric dipole matrix element:
 
-$$\langle f|\hat{\mathbf{'\{'}d{'\}'}}|i\rangle = -e\langle f|\mathbf{'\{'}r{'\}'}|i\rangle$$
+$$\langle f|\hat{\mathbf{{'}d{}'}}|i\rangle = -e\langle f|\mathbf{{'}r{}'}|i\rangle$$
 
 For hydrogen-like atoms, the selection rules are:
 
@@ -2091,7 +2089,7 @@ For hydrogen-like atoms, the selection rules are:
 
 The transition rate for $2p \to 1s$ in hydrogen:
 
-$$A_{2p \to 1s} = \frac{\omega^3}{3\pi\varepsilon_0\hbar c^3}|\langle 1s|e\mathbf{'\{'}r{'\}'}|2p\rangle|^2$$
+$$A_{2p \to 1s} = \frac{\omega^3}{3\pi\varepsilon_0\hbar c^3}|\langle 1s|e\mathbf{{'}r{}'}|2p\rangle|^2$$
 
 With $|\langle 1s|z|2p, m=0\rangle| = \frac{2^7\sqrt{2}}{3^5}a_0$This gives
 $A_{2p \to 1s} \approx 6.3 \times 10^8$ s$^{-1}$Corresponding to a lifetime $\tau \approx 1.6$ ns.
@@ -2113,7 +2111,7 @@ quantum electrodynamics.
 Consider the transition $3d \to 1s$ in hydrogen. Is this an allowed E1 transition?
 
 The matrix element involves the integral
-$\langle n'l'm'|\mathbf{'\{'}r{'\}'}|nlm\rangle = \langle 1,0,0|r_q|3,2,m\rangle$ where $r_q$ is a
+$\langle n'l'm'|\mathbf{{'}r{}'}|nlm\rangle = \langle 1,0,0|r_q|3,2,m\rangle$ where $r_q$ is a
 spherical tensor component.
 
 By the Wigner--Eckart theorem and parity selection rules:
@@ -2155,10 +2153,10 @@ $$\sigma_l^{\max} = \frac{4\pi}{k^2}(2l + 1)$$
 
 For a weak potential, the scattering amplitude to first order is:
 
-$$f(\theta, \phi) \approx -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{'\{'}k{'\}'}'\cdot\mathbf{'\{'}r{'\}'}'}V(\mathbf{'\{'}r{'\}'}')\,d^3r'$$
+$$f(\theta, \phi) \approx -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{{'}k{}'}'\cdot\mathbf{{'}r{}'}'}V(\mathbf{{'}r{}'}')\,d^3r'$$
 
-Where $\mathbf{'\{'}k{'\}'}'$ is the scattered wave vector and
-$\mathbf{'\{'}q{'\}'} = \mathbf{'\{'}k{'\}'}' - \mathbf{'\{'}k{'\}'}$ is the momentum transfer.
+Where $\mathbf{{'}k{}'}'$ is the scattered wave vector and
+$\mathbf{{'}q{}'} = \mathbf{{'}k{}'}' - \mathbf{{'}k{}'}$ is the momentum transfer.
 
 For the Yukawa potential $V(r) = (V_0/r)e^{-\mu r}$:
 
@@ -2204,7 +2202,7 @@ state --- the deuteron). For singlet: $a_s \approx -23.7$ fm (negative, indicati
 
 Consider $V(r) = V_0\,e^{-r^2/(2a^2)}$.
 
-$$f(\theta) = -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{'\{'}q{'\}'}\cdot\mathbf{'\{'}r{'\}'}}V_0 e^{-r^2/(2a^2)}\,d^3r$$
+$$f(\theta) = -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{{'}q{}'}\cdot\mathbf{{'}r{}'}}V_0 e^{-r^2/(2a^2)}\,d^3r$$
 
 $$= -\frac{m V_0}{2\pi\hbar^2}(2\pi a^2)^{3/2}e^{-q^2 a^2/2} = -\frac{m V_0}{\hbar^2}(2\pi)^{1/2}a^3\,e^{-2k^2a^2\sin^2(\theta/2)}$$
 
@@ -2420,26 +2418,26 @@ $E^{-1/2}$Consistent with the WKB exponential dependence.
 
 ### 14.1 The Hohenberg--Kohn Theorems
 
-**Theorem 1:** The ground-state electron density $n(\mathbf{'\{'}r{'\}'})$ uniquely determines the
-external potential $V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})$ (up to an additive constant), and hence
-the full many-body Hamiltonian and all ground-state properties.
+**Theorem 1:** The ground-state electron density $n(\mathbf{{'}r{}'})$ uniquely determines the
+external potential $V_{\text{ext{}}(\mathbf{{'}r{}'})$ (up to an additive constant), and hence the
+full many-body Hamiltonian and all ground-state properties.
 
 **Theorem 2:** The ground-state energy is a functional of the density:
-$E[n] = F_{\text{HK{}}[n] + \int V_{\text{ext{}}(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'})\,d^3r$And
-the variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{'\{'}r{'\}'})$.
+$E[n] = F_{\text{HK{}}[n] + \int V_{\text{ext{}}(\mathbf{{'}r{}'})n(\mathbf{{'}r{}'})\,d^3r$And the
+variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{{'}r{}'})$.
 
 ### 14.2 Kohn--Sham Equations
 
 The interacting system is mapped to a fictitious system of non-interacting electrons in an effective
 potential:
 
-$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff{}}[n](\mathbf{'\{'}r{'\}'})\right]\psi_i(\mathbf{'\{'}r{'\}'}) = \varepsilon_i\psi_i(\mathbf{'\{'}r{'\}'})$$
+$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff{}}[n](\mathbf{{'}r{}'})\right]\psi_i(\mathbf{{'}r{}'}) = \varepsilon_i\psi_i(\mathbf{{'}r{}'})$$
 
-$$n(\mathbf{'\{'}r{'\}'}) = \sum_{i=1}^{N}|\psi_i(\mathbf{'\{'}r{'\}'})|^2 \quad \text{(summing over occupied states){}$$
+$$n(\mathbf{{'}r{}'}) = \sum_{i=1}^{N}|\psi_i(\mathbf{{'}r{}'})|^2 \quad \text{(summing over occupied states){}$$
 
 $$V_{\text{eff{}} = V_{\text{ext{}} + V_H[n] + V_{\text{xc{}}[n]$$
 
-$$V_H[n](\mathbf{'\{'}r{'\}'}) = e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'} - \mathbf{'\{'}r{'\}'}'|}\,d^3r' \quad \text{(Hartree potential){}$$
+$$V_H[n](\mathbf{{'}r{}'}) = e^2\int\frac{n(\mathbf{{'}r{}'}')}{|\mathbf{{'}r{}'} - \mathbf{{'}r{}'}'|}\,d^3r' \quad \text{(Hartree potential){}$$
 
 The exchange-correlation functional $V_{\text{xc{}}[n]$ contains all many-body effects beyond the
 classical Hartree approximation.
@@ -2463,14 +2461,14 @@ Hybrid functionals (e.g., B3LYP, HSE06) and range-separated functionals partiall
 The simplest density functional theory: the Thomas--Fermi model treats the kinetic energy as a local
 functional of the density:
 
-$$T_{\text{TF{}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{'\{'}r{'\}'})\,d^3r = C_{\text{TF{}}\int n^{5/3}\,d^3r$$
+$$T_{\text{TF{}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{{'}r{}'})\,d^3r = C_{\text{TF{}}\int n^{5/3}\,d^3r$$
 
 For an atom with nuclear charge $Ze$Minimising
-$E[n] = T_{\text{TF{}}[n] - Ze^2\int n(\mathbf{'\{'}r{'\}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{'\{'}r{'\}'})n(\mathbf{'\{'}r{'\}'}')/|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|\,d^3rd^3r'$:
+$E[n] = T_{\text{TF{}}[n] - Ze^2\int n(\mathbf{{'}r{}'})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{{'}r{}'})n(\mathbf{{'}r{}'}')/|\mathbf{{'}r{}'}-\mathbf{{'}r{}'}'|\,d^3rd^3r'$:
 
 The variational equation gives:
 
-$$C_{\text{TF{}}\,n^{2/3} = \frac{Ze^2}{r} - e^2\int\frac{n(\mathbf{'\{'}r{'\}'}')}{|\mathbf{'\{'}r{'\}'}-\mathbf{'\{'}r{'\}'}'|}\,d^3r'$$
+$$C_{\text{TF{}}\,n^{2/3} = \frac{Ze^2}{r} - e^2\int\frac{n(\mathbf{{'}r{}'}')}{|\mathbf{{'}r{}'}-\mathbf{{'}r{}'}'|}\,d^3r'$$
 
 This integral equation can be solved by scaling: $n(r) = (Z/a_0^3)\,g(r/a_0 Z^{-1/3})$ where $g$ is
 a universal function.

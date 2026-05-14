@@ -12,7 +12,7 @@ categories:
 slug: type-punning-strict-aliasing
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Type Punning and the Strict Aliasing Rule
 

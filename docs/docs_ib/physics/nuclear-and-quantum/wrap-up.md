@@ -18,7 +18,8 @@ description:
  photoelectrons in the magnetic field? c) What is the minimum potential difference required to
  _stop_ these photoelectrons (the stopping potential)?
 
-<details>
+### Details
+
 <summary>Answer</summary>
 - **Strategy:** (a) Use Einstein's photoelectric equation. (b) Use the max KE to find the max speed, then use the formula for the radius of a charged particle in a B-field. (c) Relate stopping potential to max KE.
 - **a) Maximum Kinetic Energy ($E_{k, \mathrm{max}}$):**
@@ -37,7 +38,6 @@ description:
  - The stopping potential in volts is numerically equal to the max KE in electron-volts.
  - $V_s = 0.83$ V.
 <b>If you get this wrong, you should focus on:</b> The full photoelectric effect calculation (including unit conversions between J and eV), using the resulting kinetic energy to find particle speed, and applying principles of charged particle motion in a B-field. Also, the definition of stopping potential.
-</details>
 
 2. **Question (E.1 & A.5 - HL Only):** A hydrogen atom in the n=3 excited state is moving away from
    an observer at a relativistic speed. The atom de-excites, emitting a photon that an observer at
@@ -67,7 +67,6 @@ description:
  - $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - (0.0619)^2}} = 1.0019$.
  - The lifetime measured by the Earth observer is $\Delta t = \gamma \Delta t_0 = 1.0019 \times 10.0 \mathrm{ ns} = 10.019$ ns.
 <b>If you get this wrong, you should focus on:</b> Calculating photon energies/wavelengths from the Bohr model, applying the full relativistic Doppler effect formula (not the approximation), and connecting the calculated speed to the time dilation formula.
-</details>
 
 3. **Question (E.3, E.4 & B.1):** A nuclear fission power plant generates 900 MW of electrical power
    with an overall efficiency of 35%. The plant uses Uranium-235. The fission of one U-235 nucleus
@@ -92,7 +91,6 @@ description:
  - Mass consumed = (moles) x (molar mass). The molar mass of U-235 is approximately 0.235 kg/mol.
  - Mass = $(4.20 \times 10^3 \mathrm{ mol}) \times (0.235 \mathrm{ kg/mol}) \approx 987$ kg.
 <b>If you get this wrong, you should focus on:</b> The definition of power plant efficiency, converting between MeV and Joules, and stoichiometry for nuclear reactions (connecting the number of nuclei to moles and mass using Avogadro's constant).
-</details>
 
 4. **Question (E.2 & E.3 - HL Only):** A sample of Cobalt-60 (half-life 5.27 years) is a gamma-ray
    source. It undergoes beta decay, and the resulting excited Nickel-60 nucleus immediately emits
@@ -119,7 +117,6 @@ description:
  - The intensity is reduced to 1/16. Since $1/16 = (1/2)^4$The thickness of the shield must be equal to 4 half-value thicknesses ($x_{1/2}$).
  - Thickness = $4 \times x_{1/2} = 4 \times 1.2 \mathrm{ cm} = 4.8$ cm.
 <b>If you get this wrong, you should focus on:</b> The domain of applicability for quantum concepts (de Broglie for matter, E=hc/λ for photons), the exponential decay formula for activity, and the concept of half-value thickness for radiation attenuation.
-</details>
 
 5. **Question (E.5 & D.1):** A main-sequence star is analyzed and found to have the same surface
    temperature as the Sun (5800 K) but is 100 times more luminous. A) Determine the radius of this
@@ -150,7 +147,6 @@ description:
  - For the new planet: $S_{\mathrm{planet}} = \frac{L_{\mathrm{star}}}{4\pi (1 \mathrm{ AU})^2} = \frac{100 L_\odot}{4\pi (1 \mathrm{ AU})^2} = 100 \cdot S_{\mathrm{Earth}}$.
  - The planet would receive about 136,000 W/m², 100 times more radiation than Earth. This would make it far too hot for liquid water and thus uninhabitable by life as we know it.
 <b>If you get this wrong, you should focus on:</b> Using ratiometric reasoning with the Stefan-Boltzmann law to compare stars, the formula for escape velocity, and applying the inverse-square law to determine stellar intensity at a given distance (the habitable zone concept).
-</details>
 </details>
 
 ---

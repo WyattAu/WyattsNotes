@@ -753,7 +753,7 @@ $$z = z_{\mathrm{trans{}} \cdot z_{\mathrm{rot{}} \cdot z_{\mathrm{vib{}} \cdot 
 
 For a particle of mass $m$ in a box of volume $V$:
 
-$$z_{\mathrm{trans{}} = \sum_{\mathbf{'\{'}k{'\}'}} e^{-\beta \hbar^2 k^2/(2m)}$$
+$$z_{\mathrm{trans{}} = \sum_{\mathbf{{'}k{}'}} e^{-\beta \hbar^2 k^2/(2m)}$$
 
 In the continuum limit (replace sum with integral):
 
@@ -761,7 +761,7 @@ $$z_{\mathrm{trans{}} = V \left(\frac{2\pi m k_B T}{h^2}\right)^{3/2} = V n_Q$$
 
 Where $n_Q = (2\pi m k_B T / h^2)^{3/2}$ is the **quantum concentration**.
 
-**Derivation.** Using $\sum_{\mathbf{'\{'}k{'\}'}} \to V/(2\pi)^3 \int d^3k$:
+**Derivation.** Using $\sum_{\mathbf{{'}k{}'}} \to V/(2\pi)^3 \int d^3k$:
 
 $$z_{\mathrm{trans{}} = \frac{V}{(2\pi)^3} \int e^{-\beta \hbar^2 k^2/(2m)} d^3k = \frac{V}{(2\pi)^3} \left(\frac{2\pi m}{\beta \hbar^2}\right)^{3/2} \int_0^\infty 4\pi u^2 e^{-u^2}\,du$$
 
@@ -948,14 +948,14 @@ The hard-sphere model being an approximation; real molecules have softer repulsi
 $$f(v)\,dv = 4\pi \left(\frac{m}{2\pi k_B T}\right)^{3/2} v^2 e^{-mv^2/(2k_B T)}\,dv$$
 
 **Proof.** In the canonical ensemble, the probability of a molecule having momentum
-$\mathbf{'\{'}p{'\}'}$ is Proportional to $e^{-\beta p^2/(2m)}$. The velocity distribution is:
+$\mathbf{{'}p{}'}$ is Proportional to $e^{-\beta p^2/(2m)}$. The velocity distribution is:
 
-$$P(\mathbf{'\{'}v{'\}'})\,d^3v = \left(\frac{m}{2\pi k_B T}\right)^{3/2} \exp\left(-\frac{mv^2}{2k_B T}\right)\,d^3v$$
+$$P(\mathbf{{'}v{}'})\,d^3v = \left(\frac{m}{2\pi k_B T}\right)^{3/2} \exp\left(-\frac{mv^2}{2k_B T}\right)\,d^3v$$
 
 To find the speed distribution, transform to spherical coordinates in velocity space and integrate
 Over angles:
 
-$$f(v)\,dv = P(\mathbf{'\{'}v{'\}'}) \cdot 4\pi v^2\,dv = 4\pi \left(\frac{m}{2\pi k_B T}\right)^{3/2} v^2 e^{-mv^2/(2k_B T)}\,dv$$
+$$f(v)\,dv = P(\mathbf{{'}v{}'}) \cdot 4\pi v^2\,dv = 4\pi \left(\frac{m}{2\pi k_B T}\right)^{3/2} v^2 e^{-mv^2/(2k_B T)}\,dv$$
 
 $\blacksquare$
 
@@ -993,9 +993,9 @@ $$\langle n_i \rangle = \frac{1}{e^{\beta(\varepsilon_i - \mu)} + 1} = f_{\mathr
 **Derivation from the grand canonical ensemble.** The grand partition function for a single state at
 Energy $\varepsilon_i$:
 
-$$\mathcal{'\{'}Z{'\}'}_i = \sum_{n_i=0}^{1} e^{-\beta n_i(\varepsilon_i - \mu)} = 1 + e^{-\beta(\varepsilon_i - \mu)}$$
+$$\mathcal{{'}Z{}'}_i = \sum_{n_i=0}^{1} e^{-\beta n_i(\varepsilon_i - \mu)} = 1 + e^{-\beta(\varepsilon_i - \mu)}$$
 
-$$\langle n_i \rangle = -\frac{1}{\beta}\frac{\partial \ln \mathcal{'\{'}Z{'\}'}_i}{\partial \mu} = \frac{e^{-\beta(\varepsilon_i - \mu)}}{1 + e^{-\beta(\varepsilon_i - \mu)}} = \frac{1}{e^{\beta(\varepsilon_i - \mu)} + 1}$$
+$$\langle n_i \rangle = -\frac{1}{\beta}\frac{\partial \ln \mathcal{{'}Z{}'}_i}{\partial \mu} = \frac{e^{-\beta(\varepsilon_i - \mu)}}{1 + e^{-\beta(\varepsilon_i - \mu)}} = \frac{1}{e^{\beta(\varepsilon_i - \mu)} + 1}$$
 
 $\blacksquare$
 
@@ -1024,9 +1024,9 @@ Energy) to ensure $\langle n_i \rangle \geq 0$.
 
 **Derivation.** For a single bosonic state:
 
-$$\mathcal{'\{'}Z{'\}'}_i = \sum_{n_i=0}^{\infty} e^{-\beta n_i(\varepsilon_i - \mu)} = \frac{1}{1 - e^{-\beta(\varepsilon_i - \mu)}}$$
+$$\mathcal{{'}Z{}'}_i = \sum_{n_i=0}^{\infty} e^{-\beta n_i(\varepsilon_i - \mu)} = \frac{1}{1 - e^{-\beta(\varepsilon_i - \mu)}}$$
 
-$$\langle n_i \rangle = -\frac{1}{\beta}\frac{\partial \ln \mathcal{'\{'}Z{'\}'}_i}{\partial \mu} = \frac{e^{-\beta(\varepsilon_i - \mu)}}{1 - e^{-\beta(\varepsilon_i - \mu)}} = \frac{1}{e^{\beta(\varepsilon_i - \mu)} - 1}$$
+$$\langle n_i \rangle = -\frac{1}{\beta}\frac{\partial \ln \mathcal{{'}Z{}'}_i}{\partial \mu} = \frac{e^{-\beta(\varepsilon_i - \mu)}}{1 - e^{-\beta(\varepsilon_i - \mu)}} = \frac{1}{e^{\beta(\varepsilon_i - \mu)} - 1}$$
 
 $\blacksquare$
 
@@ -1189,10 +1189,10 @@ With respect to $\lambda$.
 $$B(\omega) = \frac{\hbar \omega^3}{4\pi^3 c^2} \cdot \frac{1}{e^{\beta\hbar\omega} - 1}$$
 
 **Proof.** Consider electromagnetic modes in a cavity of volume $V = L^3$ with periodic boundary
-Conditions. The allowed wavevectors are $\mathbf{'\{'}k{'\}'} = (2\pi/L)(n_x, n_y, n_z)$ with
+Conditions. The allowed wavevectors are $\mathbf{{'}k{}'} = (2\pi/L)(n_x, n_y, n_z)$ with
 $n_i \in
-\mathbb{'\{'}Z{'\}'}$. The number of modes with wavevector magnitude between $K$ and
-$K + dk$ (counting two Polarisations) is:
+\mathbb{{'}Z{}'}$. The number of modes with wavevector magnitude between $K$ and $K + dk$
+(counting two Polarisations) is:
 
 $$g(k)\,dk = \frac{V \cdot 4\pi k^2\,dk}{(2\pi)^3} \times 2 = \frac{Vk^2}{\pi^2}\,dk$$
 
@@ -1389,7 +1389,7 @@ Particle number $N$. The fundamental postulate of statistical mechanics states:
 
 For a classical system, the number of microstates with energy between $E$ and $E + \delta E$ is:
 
-$$\Omega(E, V, N) = \frac{1}{N!h^{3N}} \int_{E \lt H(\mathbf{'\{'}q{'\}'},\mathbf{'\{'}p{'\}'}) \lt E+\delta E} d^{3N}q\,d^{3N}p$$
+$$\Omega(E, V, N) = \frac{1}{N!h^{3N}} \int_{E \lt H(\mathbf{{'}q{}'},\mathbf{{'}p{}'}) \lt E+\delta E} d^{3N}q\,d^{3N}p$$
 
 The factor $h^{3N}$ makes $\Omega$ dimensionless (and is justified by quantum mechanics), and $1/N!$
 accounts for indistinguishability.
@@ -1426,10 +1426,10 @@ $$\ln\Omega = N\ln V - \ln N! + \frac{3N}{2}\ln(2\pi m k_B T) - 3N\ln h + \frac{
 
 Using Stirling's approximation $\ln N! \approx N\ln N - N$ and $E = \frac{3}{2}Nk_B T$:
 
-$$S = k_B\ln\Omega = Nk_B\left[\ln\left(\frac{V}{N}\left(\frac{4\pi m E}{3Nh^2}\right)^{3/2}\right) + \frac{5}{2}\right] + \mathcal{'\{'}O{'\}'}(\ln N)$$
+$$S = k_B\ln\Omega = Nk_B\left[\ln\left(\frac{V}{N}\left(\frac{4\pi m E}{3Nh^2}\right)^{3/2}\right) + \frac{5}{2}\right] + \mathcal{{'}O{}'}(\ln N)$$
 
-The $\mathcal{'\{'}O{'\}'}(\ln N)$ terms (from the shell thickness) are negligible compared to the
-$\mathcal{'\{'}O{'\}'}(N)$ Terms in the thermodynamic limit. $\blacksquare$
+The $\mathcal{{'}O{}'}(\ln N)$ terms (from the shell thickness) are negligible compared to the
+$\mathcal{{'}O{}'}(N)$ Terms in the thermodynamic limit. $\blacksquare$
 
 This is the **Sackur-Tetrode equation**, which gives the absolute entropy of a monatomic ideal gas.
 It satisfies the third law in the sense that $S \to -\infty$ as $T \to 0$Indicating the Breakdown of
@@ -1486,7 +1486,7 @@ partition function automatically resolves this paradox.
 
 The canonical partition function is $Z = \sum_i e^{-\beta E_i}$ for a discrete spectrum, or
 
-$$Z = \frac{1}{N!h^{3N}}\int e^{-\beta H(\mathbf{'\{'}q{'\}'},\mathbf{'\{'}p{'\}'})}\,d^{3N}q\,d^{3N}p$$
+$$Z = \frac{1}{N!h^{3N}}\int e^{-\beta H(\mathbf{{'}q{}'},\mathbf{{'}p{}'})}\,d^{3N}q\,d^{3N}p$$
 
 For a classical system.
 
@@ -1822,7 +1822,7 @@ $\langle N^2 \rangle - \langle N \rangle^2$ for (a) fermions and (b) bosons.
 
 **Solution.**
 
-**(a) Fermions:** $\mathcal{'\{'}Z{'\}'} = 1 + e^{-\beta(\varepsilon - \mu)}$.
+**(a) Fermions:** $\mathcal{{'}Z{}'} = 1 + e^{-\beta(\varepsilon - \mu)}$.
 
 $$\langle N \rangle = \frac{1}{e^{\beta(\varepsilon - \mu)} + 1} = f_{\mathrm{FD{}}$$
 
@@ -1830,7 +1830,7 @@ $$\langle N^2 \rangle = \langle N \rangle$$ (since $N^2 = N$ for $N = 0, 1$)
 
 $$\langle N^2 \rangle - \langle N \rangle^2 = f_{\mathrm{FD{}}(1 - f_{\mathrm{FD{}})$$
 
-**(b) Bosons:** $\mathcal{'\{'}Z{'\}'} = (1 - e^{-\beta(\varepsilon - \mu)})^{-1}$.
+**(b) Bosons:** $\mathcal{{'}Z{}'} = (1 - e^{-\beta(\varepsilon - \mu)})^{-1}$.
 
 $$\langle N \rangle = \frac{1}{e^{\beta(\varepsilon - \mu)} - 1} = f_{\mathrm{BE{}}$$
 
@@ -2032,10 +2032,10 @@ $$\frac{dS}{dt} = \frac{dS_e}{dt} + \frac{dS_i}{dt} \geq 0$$
 Where $dS_e/dt$ is the entropy exchange with the environment (can be positive or negative) and
 $dS_i/dt \geq 0$ is the **entropy production** rate (always non-negative).
 
-For coupled transport processes (heat flow $\mathbf{'\{'}J{'\}'}_q$ and particle flow
-$\mathbf{'\{'}J{'\}'}_n$ driven by $\nabla(1/T)$ and $-\nabla(\mu/T)$):
+For coupled transport processes (heat flow $\mathbf{{'}J{}'}_q$ and particle flow
+$\mathbf{{'}J{}'}_n$ driven by $\nabla(1/T)$ and $-\nabla(\mu/T)$):
 
-$$\frac{dS_i}{dt} = \int\left[\mathbf{'\{'}J{'\}'}_q \cdot \nabla\!\left(\frac{1}{T}\right) - \mathbf{'\{'}J{'\}'}_n \cdot \nabla\!\left(\frac{\mu}{T}\right)\right] dV \geq 0$$
+$$\frac{dS_i}{dt} = \int\left[\mathbf{{'}J{}'}_q \cdot \nabla\!\left(\frac{1}{T}\right) - \mathbf{{'}J{}'}_n \cdot \nabla\!\left(\frac{\mu}{T}\right)\right] dV \geq 0$$
 
 ### 13.2 Onsager Reciprocal Relations
 
@@ -2055,13 +2055,13 @@ important implications:
 ### 13.3 Boltzmann Transport Equation
 
 The Boltzmann equation describes the evolution of the distribution function
-$f(\mathbf{'\{'}r{'\}'}, \mathbf{'\{'}v{'\}'}, t)$:
+$f(\mathbf{{'}r{}'}, \mathbf{{'}v{}'}, t)$:
 
-$$\frac{\partial f}{\partial t} + \mathbf{'\{'}v{'\}'}\cdot\nabla_{\mathbf{'\{'}r{'\}'}}f + \frac{\mathbf{'\{'}F{'\}'}}{m}\cdot\nabla_{\mathbf{'\{'}v{'\}'}}f = \left(\frac{\partial f}{\partial t}\right)_{\text{coll{}}$$
+$$\frac{\partial f}{\partial t} + \mathbf{{'}v{}'}\cdot\nabla_{\mathbf{{'}r{}'}}f + \frac{\mathbf{{'}F{}'}}{m}\cdot\nabla_{\mathbf{{'}v{}'}}f = \left(\frac{\partial f}{\partial t}\right)_{\text{coll{}}$$
 
 The collision integral is often approximated by the **relaxation time approximation**:
 
-$$\left(\frac{\partial f}{\partial t}\right)_{\text{coll{}} \approx -\frac{f - f_0}{\tau(\mathbf{'\{'}v{'\}'})}$$
+$$\left(\frac{\partial f}{\partial t}\right)_{\text{coll{}} \approx -\frac{f - f_0}{\tau(\mathbf{{'}v{}'})}$$
 
 Where $f_0$ is the equilibrium (Maxwell--Boltzmann) distribution and $\tau$ is the relaxation time.
 
@@ -2078,7 +2078,7 @@ $dH/dt \leq 0$With equality only at equilibrium. This is the microscopic basis o
 
 **Green's function solution** (point source at origin, $t = 0$):
 
-$$n(\mathbf{'\{'}r{'\}'}, t) = \frac{N}{(4\pi Dt)^{3/2}}\exp\!\left(-\frac{r^2}{4Dt}\right)$$
+$$n(\mathbf{{'}r{}'}, t) = \frac{N}{(4\pi Dt)^{3/2}}\exp\!\left(-\frac{r^2}{4Dt}\right)$$
 
 The mean squared displacement: $\langle r^2 \rangle = 6Dt$.
 
@@ -2088,7 +2088,7 @@ The mean squared displacement: $\langle r^2 \rangle = 6Dt$.
 In a mixture of two gases with a temperature gradient, particles tend to migrate toward the cold
 end. The mass flux includes a thermal diffusion term:
 
-$$\mathbf{'\{'}J{'\}'}_n = -D\nabla n - nD_T\nabla T$$
+$$\mathbf{{'}J{}'}_n = -D\nabla n - nD_T\nabla T$$
 
 Where $D_T$ is the thermal diffusion coefficient. The **Soret coefficient** $S_T = D_T/D$
 characterises the strength of the effect.
@@ -2113,7 +2113,7 @@ $$\frac{\Delta n}{n} = S_T \Delta T = 0.001 = 0.1\%$$
 
 The velocity distribution of an ideal gas at temperature $T$:
 
-$$f(\mathbf{'\{'}v{'\}'}) = n\left(\frac{m}{2\pi k_B T}\right)^{3/2}\exp\!\left(-\frac{mv^2}{2k_B T}\right)$$
+$$f(\mathbf{{'}v{}'}) = n\left(\frac{m}{2\pi k_B T}\right)^{3/2}\exp\!\left(-\frac{mv^2}{2k_B T}\right)$$
 
 **Speed distribution** (integrating over angles):
 
@@ -2446,7 +2446,7 @@ $T_G/T_c \sim 1$ (fluctuations are important, explaining the broad fluctuation r
 <summary>Worked Example 16.1: RG Flow for the Gaussian Model</summary>
 
 Consider the Gaussian (free field) model:
-$\mathcal{'\{'}H{'\}'} = \int d^dr\left[\frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}r_0\phi^2\right]$.
+$\mathcal{{'}H{}'} = \int d^dr\left[\frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}r_0\phi^2\right]$.
 
 After thinning out modes in the shell $\Lambda/b < |k| < \Lambda$ and rescaling:
 

@@ -543,72 +543,69 @@ Maximum $= 13$Minimum $= -13$.
 
 ### Vector Operations
 
-For vectors $\mathbf{'\{'}a{'\}'} = a_1\mathbf{'\{'}i{'\}'} + a_2\mathbf{'\{'}j{'\}'}$ and
-$\mathbf{'\{'}b{'\}'} = b_1\mathbf{'\{'}i{'\}'} + b_2\mathbf{'\{'}j{'\}'}$:
+For vectors $\mathbf{{'}a{}'} = a_1\mathbf{{'}i{}'} + a_2\mathbf{{'}j{}'}$ and
+$\mathbf{{'}b{}'} = b_1\mathbf{{'}i{}'} + b_2\mathbf{{'}j{}'}$:
 
 **Scalar (dot) product:**
 
 $$
-\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = a_1 b_1 + a_2 b_2 = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\cos\theta
+\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = a_1 b_1 + a_2 b_2 = |\mathbf{{'}a{}'}||\mathbf{{'}b{}'}|\cos\theta
 $$
 
 **Magnitude:**
 
 $$
-|\mathbf{'\{'}a{'\}'}| = \sqrt{a_1^2 + a_2^2}
+|\mathbf{{'}a{}'}| = \sqrt{a_1^2 + a_2^2}
 $$
 
 ### 3D Vectors (HL)
 
-For
-$\mathbf{'\{'}a{'\}'} = a_1\mathbf{'\{'}i{'\}'} + a_2\mathbf{'\{'}j{'\}'} + a_3\mathbf{'\{'}k{'\}'}$:
+For $\mathbf{{'}a{}'} = a_1\mathbf{{'}i{}'} + a_2\mathbf{{'}j{}'} + a_3\mathbf{{'}k{}'}$:
 
 $$
-\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = a_1 b_1 + a_2 b_2 + a_3 b_3
+\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = a_1 b_1 + a_2 b_2 + a_3 b_3
 $$
 
 **Cross product (HL):**
 
 $$
-\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
+\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
 $$
 
-$|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}| = |\mathbf{'\{'}a{'\}'}||\mathbf{'\{'}b{'\}'}|\sin\theta$
-gives the area of the Parallelogram spanned by $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$.
+$|\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}| = |\mathbf{{'}a{}'}||\mathbf{{'}b{}'}|\sin\theta$ gives
+the area of the Parallelogram spanned by $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$.
 
 **Example (HL):** Given
-$\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + 3\mathbf{'\{'}k{'\}'}$ and
-$\mathbf{'\{'}b{'\}'} = \mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'} - \mathbf{'\{'}k{'\}'}$Find
-$\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ and the Angle between them.
+$\mathbf{{'}a{}'} = 2\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + 3\mathbf{{'}k{}'}$ and
+$\mathbf{{'}b{}'} = \mathbf{{'}i{}'} + 2\mathbf{{'}j{}'} - \mathbf{{'}k{}'}$Find
+$\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}$ and the Angle between them.
 
 $$
-\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 2 & -1 & 3 \\ 1 & 2 & -1 \end{vmatrix} = \mathbf{'\{'}i{'\}'}(1 - 6) - \mathbf{'\{'}j{'\}'}(-2 - 3) + \mathbf{'\{'}k{'\}'}(4 + 1) = -5\mathbf{'\{'}i{'\}'} + 5\mathbf{'\{'}j{'\}'} + 5\mathbf{'\{'}k{'\}'}
+\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 2 & -1 & 3 \\ 1 & 2 & -1 \end{vmatrix} = \mathbf{{'}i{}'}(1 - 6) - \mathbf{{'}j{}'}(-2 - 3) + \mathbf{{'}k{}'}(4 + 1) = -5\mathbf{{'}i{}'} + 5\mathbf{{'}j{}'} + 5\mathbf{{'}k{}'}
 $$
 
-$|\mathbf{'\{'}a{'\}'}| = \sqrt{4 + 1 + 9} = \sqrt{14}$$|\mathbf{'\{'}b{'\}'}| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
+$|\mathbf{{'}a{}'}| = \sqrt{4 + 1 + 9} = \sqrt{14}$$|\mathbf{{'}b{}'}| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
 
-$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 2 - 2 - 3 = -3$.
+$\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = 2 - 2 - 3 = -3$.
 
 $\cos\theta = \frac{-3}{\sqrt{14}\sqrt{6}} = \frac{-3}{2\sqrt{21}}$.
 
 ### Scalar Triple Product (HL)
 
-The scalar triple product
-$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$ gives the volume of
-the Parallelepiped spanned by $\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$And
-$\mathbf{'\{'}c{'\}'}$.
+The scalar triple product $\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})$ gives
+the volume of the Parallelepiped spanned by $\mathbf{{'}a{}'}$$\mathbf{{'}b{}'}$And
+$\mathbf{{'}c{}'}$.
 
 $$
-\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}
+\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}
 $$
 
 If the scalar triple product is zero, the three vectors are coplanar.
 
 **Example (HL):** Determine whether the vectors
-$\mathbf{'\{'}a{'\}'} = \mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'} - \mathbf{'\{'}k{'\}'}$
-$\mathbf{'\{'}b{'\}'} = 3\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + 2\mathbf{'\{'}k{'\}'}$
-$\mathbf{'\{'}c{'\}'} = 2\mathbf{'\{'}i{'\}'} + 3\mathbf{'\{'}j{'\}'} + \mathbf{'\{'}k{'\}'}$ are
-coplanar.
+$\mathbf{{'}a{}'} = \mathbf{{'}i{}'} + 2\mathbf{{'}j{}'} - \mathbf{{'}k{}'}$
+$\mathbf{{'}b{}'} = 3\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + 2\mathbf{{'}k{}'}$
+$\mathbf{{'}c{}'} = 2\mathbf{{'}i{}'} + 3\mathbf{{'}j{}'} + \mathbf{{'}k{}'}$ are coplanar.
 
 $$
 \begin{vmatrix} 1 & 2 & -1 \\ 3 & -1 & 2 \\ 2 & 3 & 1 \end{vmatrix} = 1(-1 - 6) - 2(3 - 4) + (-1)(9 - (-2)) = -7 + 2 - 11 = -16
@@ -619,14 +616,14 @@ Since the scalar triple product is $-16 \neq 0$The vectors are not coplanar.
 ### Area of a Triangle Using Vectors (HL)
 
 The area of triangle $\triangle ABC$ with position vectors
-$\mathbf{'\{'}a{'\}'}$$\mathbf{'\{'}b{'\}'}$$\mathbf{'\{'}c{'\}'}$:
+$\mathbf{{'}a{}'}$$\mathbf{{'}b{}'}$$\mathbf{{'}c{}'}$:
 
 $$
 \mathrm{Area{} = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|
 $$
 
-Where $\overrightarrow{AB} = \mathbf{'\{'}b{'\}'} - \mathbf{'\{'}a{'\}'}$ and
-$\overrightarrow{AC} = \mathbf{'\{'}c{'\}'} - \mathbf{'\{'}a{'\}'}$.
+Where $\overrightarrow{AB} = \mathbf{{'}b{}'} - \mathbf{{'}a{}'}$ and
+$\overrightarrow{AC} = \mathbf{{'}c{}'} - \mathbf{{'}a{}'}$.
 
 ## Geometric Proofs (HL)
 
@@ -699,7 +696,7 @@ Other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 3. **Compound angle formulae** -- the signs in $\cos(A + B)$ and $\cos(A - B)$ are swapped compared
    to $\sin$.
 4. **Vector cross product** is not commutative:
-   $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'}$.
+   $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = -\mathbf{{'}b{}'} \times \mathbf{{'}a{}'}$.
 5. **Distance from a point to a line** -- the absolute value in the numerator is essential.
 6. **Ambiguous case of the sine rule** -- always check whether a second solution exists.
 7. **Completing the square for circles** -- remember to add the constants to both sides.
@@ -727,11 +724,10 @@ Other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 2. Find the shortest distance from $(1, -2)$ to the line $3x - 4y + 5 = 0$.
 3. Solve $\cos 2\theta = \cos\theta$ for $0 \leq \theta \leq 2\pi$.
 4. Find the area of the triangle with vertices $(1, 2)$$(4, 6)$$(3, -1)$.
-5. Given
-   $\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + 3\mathbf{'\{'}k{'\}'}$ and
-   $\mathbf{'\{'}b{'\}'} = \mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'} - \mathbf{'\{'}k{'\}'}$Find
-   $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ and the angle between $\mathbf{'\{'}a{'\}'}$
-   and $\mathbf{'\{'}b{'\}'}$.
+5. Given $\mathbf{{'}a{}'} = 2\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + 3\mathbf{{'}k{}'}$ and
+   $\mathbf{{'}b{}'} = \mathbf{{'}i{}'} + 2\mathbf{{'}j{}'} - \mathbf{{'}k{}'}$Find
+   $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}$ and the angle between $\mathbf{{'}a{}'}$ and
+   $\mathbf{{'}b{}'}$.
 6. Express $\cos 3\theta$ in terms of $\cos\theta$.
 7. Prove that $\sin(A+B)\sin(A-B) = \sin^2 A - \sin^2 B$.
 8. Find the equation of the tangent to the circle $x^2 + y^2 - 4x + 6y + 9 = 0$ at the point
@@ -742,14 +738,13 @@ Other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 11. Express $4\sin\theta + 3\cos\theta$ in the form $R\sin(\theta + \alpha)$ and hence find its
     maximum value.
 12. Find the area of the triangle with vertices at the points with position vectors
-    $\mathbf{'\{'}i{'\}'} + 2\mathbf{'\{'}j{'\}'} + 3\mathbf{'\{'}k{'\}'}$$2\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + \mathbf{'\{'}k{'\}'}$And
-    $3\mathbf{'\{'}i{'\}'} + \mathbf{'\{'}j{'\}'} - 2\mathbf{'\{'}k{'\}'}$.
+    $\mathbf{{'}i{}'} + 2\mathbf{{'}j{}'} + 3\mathbf{{'}k{}'}$$2\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + \mathbf{{'}k{}'}$And
+    $3\mathbf{{'}i{}'} + \mathbf{{'}j{}'} - 2\mathbf{{'}k{}'}$.
 13. Solve $2\cos^2 x + \sin x = 2$ for $0 \le x \le 2\pi$.
 14. Find the equation of the circle passing through $(1, 0)$$(0, 1)$And $(2, 3)$.
-15. Determine whether the vectors
-    $\mathbf{'\{'}i{'\}'} + \mathbf{'\{'}j{'\}'} + \mathbf{'\{'}k{'\}'}$
-    $2\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + \mathbf{'\{'}k{'\}'}$And
-    $3\mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}k{'\}'}$ are coplanar.
+15. Determine whether the vectors $\mathbf{{'}i{}'} + \mathbf{{'}j{}'} + \mathbf{{'}k{}'}$
+    $2\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + \mathbf{{'}k{}'}$And
+    $3\mathbf{{'}i{}'} + 4\mathbf{{'}k{}'}$ are coplanar.
 
 ## Summary
 

@@ -98,8 +98,8 @@ differentiable and explain why this does not contradict the MVT.
 
 **Solution:**
 
-(a) $f(x) = x^{1/3}$ is a root function, continuous on all of $\mathbb{'\{'}R{'\}'}$So it is
-continuous on $[-1, 8]$.
+(a) $f(x) = x^{1/3}$ is a root function, continuous on all of $\mathbb{{'}R{}'}$So it is continuous
+on $[-1, 8]$.
 
 (b) $\dfrac{f(8) - f(-1)}{8 - (-1)} = \dfrac{2 - (-1)}{9} = \dfrac{3}{9} = \dfrac{1}{3}$.
 

@@ -11,7 +11,7 @@ categories:
 slug: stack-frame
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, "Automatic Storage Duration" (variables declared locally) is implemented via the **Call
 Stack**. Unlike the Heap, which requires complex allocator logic to manage free blocks, the Stack is

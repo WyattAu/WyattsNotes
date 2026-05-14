@@ -11,7 +11,7 @@ categories:
 slug: constant-expressions
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compile-time computation is one of C++'s most distinctive capabilities. Unlike C macros or Java
 `static final`C++ constant expressions are type-checked, support full language features (loops,

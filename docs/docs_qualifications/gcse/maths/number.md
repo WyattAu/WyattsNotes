@@ -24,12 +24,12 @@ slug: number
 The real numbers can be classified into several nested subsets. Understanding these classifications
 Is essential for working with the number system fluently.
 
-**Definition.** The set of **natural numbers** is $\mathbb{'\{'}N{'\}'} = \{1, 2, 3, \ldots\}$. The
-set of **integers** is $\mathbb{'\{'}Z{'\}'} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$.
+**Definition.** The set of **natural numbers** is $\mathbb{{'}N{}'} = \{1, 2, 3, \ldots\}$. The set
+of **integers** is $\mathbb{{'}Z{}'} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$.
 
 A **rational number** is any number that can be expressed as $\frac{p}{q}$ where
-$p \in \mathbb{'\{'}Z{'\}'}$ $q \in \mathbb{'\{'}Z{'\}'} \setminus \{0\}$And $p$ and $q$ have no
-common factors other than 1 (i.e. The Fraction is in its **lowest terms**).
+$p \in \mathbb{{'}Z{}'}$ $q \in \mathbb{{'}Z{}'} \setminus \{0\}$And $p$ and $q$ have no common
+factors other than 1 (i.e. The Fraction is in its **lowest terms**).
 
 An **irrational number** is a real number that cannot be expressed as a fraction of two integers.
 Key examples include $\sqrt{2}$$\pi$And $e$.
@@ -59,16 +59,16 @@ Identical in every case.
 
 **Proposition.** The sum of a rational and an irrational number is irrational.
 
-**Proof.** Let $r \in \mathbb{'\{'}Q{'\}'}$ and $s \notin \mathbb{'\{'}Q{'\}'}$. Suppose
-$r + s = q \in \mathbb{'\{'}Q{'\}'}$. Then $s = q - r \in \mathbb{'\{'}Q{'\}'}$ (since rationals are
-closed under subtraction), contradicting the Irrationality of $s$. $\blacksquare$
+**Proof.** Let $r \in \mathbb{{'}Q{}'}$ and $s \notin \mathbb{{'}Q{}'}$. Suppose
+$r + s = q \in \mathbb{{'}Q{}'}$. Then $s = q - r \in \mathbb{{'}Q{}'}$ (since rationals are closed
+under subtraction), contradicting the Irrationality of $s$. $\blacksquare$
 
 **Proposition.** The product of a non-zero rational and an irrational number is irrational.
 
-**Proof.** Let $r \in \mathbb{'\{'}Q{'\}'} \setminus \{0\}$ and $s \notin \mathbb{'\{'}Q{'\}'}$.
-Suppose $rs = q \in
-\mathbb{'\{'}Q{'\}'}$. Then $S = \frac{q}{r} \in \mathbb{'\{'}Q{'\}'}$ (since
-$R \neq 0$), a contradiction. $\blacksquare$
+**Proof.** Let $r \in \mathbb{{'}Q{}'} \setminus \{0\}$ and $s \notin \mathbb{{'}Q{}'}$. Suppose
+$rs = q \in
+\mathbb{{'}Q{}'}$. Then $S = \frac{q}{r} \in \mathbb{{'}Q{}'}$ (since $R \neq 0$), a
+contradiction. $\blacksquare$
 
 :::warning The product of two irrational numbers can be rational. For example,
 $\sqrt{2} \times \sqrt{2} = 2$. The sum of two irrational numbers can also be rational:
@@ -381,8 +381,8 @@ $$= 5\sqrt{2} + 2 \times 2\sqrt{2} - 3 \times 3\sqrt{2} = 5\sqrt{2} + 4\sqrt{2} 
 Irrational, then $a = d$ and $b = e$.
 
 **Proof.** If $a + b\sqrt{c} = d + e\sqrt{c}$Then $(a - d) = (e - b)\sqrt{c}$. If $e \neq b$Then
-$\sqrt{c} = \frac{a - d}{e - b} \in \mathbb{'\{'}Q{'\}'}$Contradicting the irrationality of
-$\sqrt{c}$. Therefore $e = b$ and hence $a = d$. $\blacksquare$
+$\sqrt{c} = \frac{a - d}{e - b} \in \mathbb{{'}Q{}'}$Contradicting the irrationality of $\sqrt{c}$.
+Therefore $e = b$ and hence $a = d$. $\blacksquare$
 
 This theorem is used frequently in solving equations involving surds.
 

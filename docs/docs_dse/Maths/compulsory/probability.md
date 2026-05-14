@@ -68,8 +68,6 @@ A fair six-sided die is rolled. The sample space is $S = \\{1, 2, 3, 4, 5, 6\\}$
 - $P(\mathrm{prime}) = \frac{|\\{2, 3, 5\\}|}{|S|} = \frac{3}{6} = \frac{1}{2}$.
 - $P(\mathrm{even AND prime}) = \frac{|\\{2\\}|}{|S|} = \frac{1}{6}$.
 
-</details>
-
 ### Frequentist Interpretation
 
 If an experiment is repeated $n$ times under identical conditions and event $A$ occurs $n_A$ times,
@@ -157,8 +155,6 @@ $B = \\{1, 2, 3, 4\\}$.
 - $P(A) = \frac{2}{6} = \frac{1}{3}$$P(B) = \frac{4}{6} = \frac{2}{3}$.
 - $P(A) \leq P(B)$: $\frac{1}{3} \leq \frac{2}{3}$. $\checkmark$
 
-</details>
-
 ## Addition Rule
 
 ### General Addition Rule
@@ -215,8 +211,6 @@ A card is drawn from a standard 52-card deck.
 - Let $A$ = "drawing a king", $B$ = "drawing a queen".
 - $A \cap B = \emptyset$ (a card cannot be both a king and a queen).
 - $P(A \cup B) = P(A) + P(B) = \frac{4}{52} + \frac{4}{52} = \frac{8}{52} = \frac{2}{13}$.
-
-</details>
 
 ### Extension to Three Events
 
@@ -287,8 +281,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 :::info The addition rule generalises . For any number of events, the key insight is: add All
 individual probabilities, subtract all pairwise intersections, add back all triple Intersections,
 and so on, alternating signs. :::
@@ -331,8 +323,6 @@ A fair die is rolled. Given that the result is even, find the probability that i
 
 Verification by shrinking: within $\\{2, 4, 6\\}$Only $6$ is greater than $4$So $\frac{1}{3}$.
 $\checkmark$
-
-</details>
 
 ### Fundamental Properties
 
@@ -404,8 +394,6 @@ With replacement, the second draw is unaffected:
 
 - $P(\mathrm{both red, with replacement}) = \frac{5}{8} \times \frac{5}{8} = \frac{25}{64}$.
 
-</details>
-
 ## Independence
 
 ### Definition
@@ -474,8 +462,6 @@ Now $A'$ = "first coin is tails" and $B'$ = "second coin is heads":
   $P(A' \cap B') = P(\mathrm{tails, heads}) = \frac{1}{4}$.
 - $P(A') \cdot P(B') = \frac{1}{4} = P(A' \cap B')$. Independent. $\checkmark$
 
-</details>
-
 ### Common Pitfall: Mutually Exclusive $\neq$ Independent
 
 **Theorem.** If $A$ and $B$ are mutually exclusive with $P(A) \gt{} 0$ and $P(B) \gt{} 0$Then $A$
@@ -508,8 +494,6 @@ For a valid independence example in the same experiment: let $C$ = "first toss i
 "second toss is tails". Then
 $P(C \cap D) = \frac{1}{4} = \frac{1}{2} \times \frac{1}{2} = P(C) \cdot P(D)$. $C$ and $D$ are
 Independent.
-
-</details>
 
 :::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 Separately and compare. Do not assume independence from the problem description -- it must be
@@ -585,7 +569,7 @@ A disease affects 1% of a population. A test has:
 
 A person tests positive. What is the probability they actually have the disease?
 
-Let $D$ = has disease, $D'$ = no disease, $+$ = tests positive. The partition is $\{D, D'\}$.
+Let $D$ = has disease, $D'$ = no disease, $+$ = tests positive. The partition is $\{D, D}$.
 
 By Bayes' theorem:
 
@@ -601,8 +585,6 @@ $$
 Despite a 95% accurate test, a positive result only means about 32.4% chance of disease. This
 Counterintuitive result occurs because the disease is rare -- false positives vastly outnumber true
 Positives in absolute terms.
-
-</details>
 
 <details>
 <summary>Example: Quality Control</summary>
@@ -624,8 +606,6 @@ $$
 
 Despite $M_3$ having the highest defect rate, it only accounts for about 34.5% of defective items
 Because it produces the smallest share of total output.
-
-</details>
 
 ## Probability Trees
 
@@ -669,8 +649,6 @@ $\checkmark$
 - $P(\mathrm{different colours}) = \frac{8}{30} + \frac{8}{30} = \frac{16}{30} = \frac{8}{15}$.
 
 Note: $P(\mathrm{same}) + P(\mathrm{different}) = 1$As expected since these events are Complements.
-
-</details>
 
 ### Connection to Multiplication and Addition Rules
 
@@ -719,15 +697,13 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** A fair coin is tossed three times. Find the probability of getting at least two
  heads.
-<details>
+### Details
 <summary>Answer</summary>
 
 Sample space has $2^3 = 8$ equally likely outcomes.
@@ -751,8 +727,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 2. **Question:** In a group of 50 students, 30 play basketball, 25 play football, and 10 play
 Neither. A student is chosen at random. Find the probability that the student plays both sports.
 <details>
@@ -771,8 +745,6 @@ $$
  &= \frac{3}{5} + \frac{1}{2} - \frac{4}{5} = \frac{6}{10} + \frac{5}{10} - \frac{8}{10} = \frac{3}{10}
 \end{aligned}
 $$
-
-</details>
 
 3. **Question:** A bag contains 4 white and 6 black balls. Two balls are drawn at random without
 Replacement. Find the probability that they are of different colours.
@@ -800,8 +772,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \mid B) = 0.4$.
 Find $P(A \cup B)$.
 <details>
@@ -822,8 +792,6 @@ $$
  P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.6 + 0.5 - 0.2 = 0.9
 \end{aligned}
 $$
-
-</details>
 
 5. **Question:** A and B are independent events with $P(A) = 0.3$ and $P(B) = 0.5$. Find
 $P(A' \cap B')$.
@@ -848,8 +816,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$$P(B) = \frac{1}{4}$And
 $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
 <details>
@@ -868,8 +834,6 @@ Check independence:
 $P(A) \cdot P(B) = \frac{1}{3} \times \frac{1}{4} = \frac{1}{12} \neq \frac{1}{6} = P(A \cap B)$.
 
 Since $P(A \cap B) \neq P(A) \cdot P(B)$The events are **not** independent.
-
-</details>
 
 7. **Question:** A box contains 5 red, 3 green, and 2 blue marbles. Three marbles are drawn without
 Replacement. Find the probability that all three are the same colour.
@@ -892,8 +856,6 @@ $$
 \end{aligned}
 $$
 
-</details>
-
 8. **Question:** In a certain school, 60% of students take Mathematics, 40% take Physics, and 30%
 Take both. A student is selected at random. Given that the student takes Mathematics, what is the
 Probability that they also take Physics?
@@ -907,8 +869,6 @@ $$
 $$
 
 Half of Mathematics students also take Physics.
-
-</details>
 
 9. **Question:** A factory produces items using Machine $X$ (60% of output) and Machine $Y$ (40% of
 Output). The defect rates are 3% for $X$ and 7% for $Y$. An item is found to be defective. Use
@@ -928,8 +888,6 @@ $$
 
 Despite producing 60% of items, Machine $X$ accounts for only about 39.1% of defective items because
 Its defect rate is lower.
-
-</details>
 
 10. **Question:** A fair die is rolled twice. Find the probability that the sum of the two results
 Is 8, given that the first result is at least 3.
@@ -955,8 +913,6 @@ For comparison, the unconditional probability: $P(A) = \frac{5}{36}$ (pairs
 $(2,6), (3,5), (4,4), (5,3), (6,2)$). Conditioning on the first die being $\geq$ 3 eliminates
 $(2,6)$Reducing the count from 5 to 4.
 
-</details>
-
 11. **Question:** $A$$B$And $C$ are three events with $P(A) = P(B) = P(C) = \frac{1}{3}$
 $P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{6}$And $P(A \cap B \cap C) = \frac{1}{12}$. Find
 $P(A \cup B \cup C)$.
@@ -973,8 +929,6 @@ $$
  &= \frac{12}{12} - \frac{6}{12} + \frac{1}{12} = \frac{7}{12}
 \end{aligned}
 $$
-
-</details>
 
 12. **Question:** A test for a condition has a sensitivity of 90% and a specificity of 95%. The
 Condition prevalence in the population is 1%. Find the positive predictive value
@@ -1003,7 +957,6 @@ Rate fallacy in action: low prevalence swamps even a good test's signal.
 For the A-Level treatment of this topic, see
 [Probability](https://alevel.wyattau.com/docs/maths/statistics/probability).
 
-</details>
 </details>
 
 ---

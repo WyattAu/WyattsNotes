@@ -170,8 +170,8 @@ At equilibrium, total welfare (consumer surplus + producer surplus) is maximised
 Equilibrium creates a **deadweight loss** (DWL):
 
 $$
-\mathrm{DWL} = \frac{1}{2} \times (\text{change in quantity}) \times (\text{'\{'}difference in marginal
-benefit and marginal cost at the new quantity{'\}'})
+\mathrm{DWL} = \frac{1}{2} \times (\text{change in quantity}) \times (\text{{'}difference in marginal
+benefit and marginal cost at the new quantity{}'})
 $$
 
 ### Functions of Price

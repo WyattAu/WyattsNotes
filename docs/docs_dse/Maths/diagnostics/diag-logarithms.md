@@ -201,9 +201,9 @@ $f^{-1}(x) = \dfrac{3^x + 1}{2}$.
 
 Domain of $f$: $2x - 1 > 0 \implies x > \dfrac{1}{2}$.
 
-Range of $f$: $\mathbb{'\{'}R{'\}'}$ (since $3^y > 0$).
+Range of $f$: $\mathbb{{'}R{}'}$ (since $3^y > 0$).
 
-Domain of $f^{-1}$ = Range of $f$ = $\mathbb{'\{'}R{'\}'}$.
+Domain of $f^{-1}$ = Range of $f$ = $\mathbb{{'}R{}'}$.
 
 Range of $f^{-1}$ = Domain of $f$ = $\left(\dfrac{1}{2},\; \infty\right)$.
 

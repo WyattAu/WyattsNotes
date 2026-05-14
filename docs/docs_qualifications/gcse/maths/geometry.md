@@ -481,8 +481,8 @@ $k\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} ka \\ kb \end{pmatrix}$
 
 **Magnitude:** $\left|\begin{pmatrix} a \\ b \end{pmatrix}\right| = \sqrt{a^2 + b^2}$
 
-**Parallel vectors:** $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ are parallel if
-$\mathbf{'\{'}a{'\}'} = k\mathbf{'\{'}b{'\}'}$ for Some scalar $k$.
+**Parallel vectors:** $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$ are parallel if
+$\mathbf{{'}a{}'} = k\mathbf{{'}b{}'}$ for Some scalar $k$.
 
 **Worked Example.** Points $A$$B$And $C$ have position vectors
 $\begin{pmatrix} 2 \\ 3 \end{pmatrix}$$\begin{pmatrix} 8 \\ 7 \end{pmatrix}$And
@@ -499,8 +499,7 @@ The **position vector** of a point $P$ relative to an origin $O$ is $\overrighta
 
 The vector from $A$ to $B$ is $\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}$.
 
-The **midpoint** $M$ of $AB$ has position vector
-$\frac{1}{2}(\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'})$.
+The **midpoint** $M$ of $AB$ has position vector $\frac{1}{2}(\mathbf{{'}a{}'} + \mathbf{{'}b{}'})$.
 
 **Worked Example (Higher Tier).** Point $P$ divides the line segment $AB$ in the ratio $2 : 3$. If
 $\overrightarrow{OA} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}$ and

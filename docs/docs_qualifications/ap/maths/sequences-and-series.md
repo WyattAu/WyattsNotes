@@ -16,8 +16,7 @@ slug: sequences-and-series
 
 A **sequence** is an ordered list of numbers: $a_1, a_2, a_3, \ldots$. Formally, a sequence is a
 Function from the positive integers (or a subset thereof) to the real numbers:
-$a \colon \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}R{'\}'}$Written as $\{a_n\}_{n=1}^{\infty}$ or
-$\{a_n\}$.
+$a \colon \mathbb{{'}N{}'} \to \mathbb{{'}R{}'}$Written as $\{a_n\}_{n=1}^{\infty}$ or $\{a_n\}$.
 
 A sequence $\{a_n\}$ **converges** to a limit $L$ if:
 

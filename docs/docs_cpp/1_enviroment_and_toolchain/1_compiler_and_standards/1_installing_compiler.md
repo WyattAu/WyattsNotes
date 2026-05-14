@@ -11,7 +11,7 @@ categories:
 slug: installing-compiler
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 To develop in C++, a strictly compliant toolchain is required. The following details the
 Installation of the **LLVM/Clang** and **GCC** toolchains.

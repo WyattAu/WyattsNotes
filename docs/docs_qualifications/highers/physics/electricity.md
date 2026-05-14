@@ -546,7 +546,7 @@ Calculate this maximum power.
 
 **Step 1: Express the power in $R$**
 
-$$I = \frac{\mathcal{'\{'}E{'\}'}}{R + r} = \frac{12}{R + 2}$$
+$$I = \frac{\mathcal{{'}E{}'}}{R + r} = \frac{12}{R + 2}$$
 
 $$P = I^2 R = \frac{144R}{(R + 2)^2}$$
 
@@ -564,7 +564,7 @@ $$P_{\max} = I^2 R = 9 \times 2 = 18 \mathrm{ W{}$$
 
 **Efficiency at maximum power transfer:**
 
-$$\eta = \frac{P_R}{P_{\mathrm{total{}}} = \frac{IR}{\mathcal{'\{'}E{'\}'}} = \frac{3 \times 2}{12} = 50\%$$
+$$\eta = \frac{P_R}{P_{\mathrm{total{}}} = \frac{IR}{\mathcal{{'}E{}'}} = \frac{3 \times 2}{12} = 50\%$$
 
 :::info The maximum power transfer theorem states that maximum power is delivered to the load when
 The load resistance equals the internal resistance ($R = r$). However, the efficiency is only 50%.
@@ -658,12 +658,12 @@ $$V_{\mathrm{total{}} = \sqrt{V_R^2 + (V_L - V_C)^2}$$
 
 ### Pitfall 8: Confusing EMF with Terminal PD
 
-EMF ($\mathcal{'\{'}E{'\}'}$) is the total energy per unit charge supplied by the cell. Terminal PD
+EMF ($\mathcal{{'}E{}'}$) is the total energy per unit charge supplied by the cell. Terminal PD
 ($V$) is The energy per unit charge delivered to the external circuit. They are related by:
 
-$$V = \mathcal{'\{'}E{'\}'} - Ir$$
+$$V = \mathcal{{'}E{}'} - Ir$$
 
-When $I = 0$ (open circuit), $V = \mathcal{'\{'}E{'\}'}$. As current increases, $V$ decreases.
+When $I = 0$ (open circuit), $V = \mathcal{{'}E{}'}$. As current increases, $V$ decreases.
 
 ## Additional Practice Problems
 
@@ -698,9 +698,9 @@ internal Resistance.
 
 **Step 1: Set up equations**
 
-$$\mathcal{'\{'}E{'\}'} = V_1 + I_1 r = 5.6 + \frac{5.6}{4}r = 5.6 + 1.4r$$
+$$\mathcal{{'}E{}'} = V_1 + I_1 r = 5.6 + \frac{5.6}{4}r = 5.6 + 1.4r$$
 
-$$\mathcal{'\{'}E{'\}'} = V_2 + I_2 r = 7.2 + \frac{7.2}{10}r = 7.2 + 0.72r$$
+$$\mathcal{{'}E{}'} = V_2 + I_2 r = 7.2 + \frac{7.2}{10}r = 7.2 + 0.72r$$
 
 **Step 2: Solve simultaneously**
 
@@ -712,10 +712,9 @@ $$r = 2.35 \Omega$$
 
 **Step 3: Find EMF**
 
-$$\mathcal{'\{'}E{'\}'} = 5.6 + 1.4 \times 2.35 = 5.6 + 3.29 = 8.89 \mathrm{ V{}$$
+$$\mathcal{{'}E{}'} = 5.6 + 1.4 \times 2.35 = 5.6 + 3.29 = 8.89 \mathrm{ V{}$$
 
-**Check:** $\mathcal{'\{'}E{'\}'} = 7.2 + 0.72 \times 2.35 = 7.2 + 1.69 = 8.89 \mathrm{ V{}$.
-Confirmed.
+**Check:** $\mathcal{{'}E{}'} = 7.2 + 0.72 \times 2.35 = 7.2 + 1.69 = 8.89 \mathrm{ V{}$. Confirmed.
 
 ### Example 27: Energy Stored and Dissipated in an RC Circuit
 

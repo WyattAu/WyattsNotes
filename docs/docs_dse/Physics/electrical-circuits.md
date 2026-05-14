@@ -78,8 +78,6 @@ $$R = \frac{\rho L}{A} = \frac{1.7 \times 10^{-8} \times 100}{7.854 \times 10^{-
 
 $$V = IR = 2 \times 2.16 = 4.33 \mathrm{ V}$$
 
-</details>
-
 ### Worked Example 2
 
 A wire has resistance $10 \Omega$. If its length is doubled and its diameter is halved, what is Its
@@ -94,8 +92,6 @@ New diameter: $d_2 = d/2$So new area: $A_2 = \pi(d/4)^2 = A/4$
 
 $$R_2 = \frac{\rho L_2}{A_2} = \frac{\rho(2L)}{A/4} = 8 \times \frac{\rho L}{A} = 8R = 8 \times 10 = 80 \Omega$$
 
-</details>
-
 ### Worked Example 3
 
 A copper wire has resistance $4 \Omega$ at $20^\circ\mathrm{C}$. The temperature coefficient of
@@ -106,8 +102,6 @@ $80^\circ\mathrm{C}$.
 <summary>Solution</summary>
 
 $$R_2 = R_1(1 + \alpha\Delta T) = 4(1 + 0.0039 \times 60) = 4(1 + 0.234) = 4 \times 1.234 = 4.94 \Omega$$
-
-</details>
 
 ---
 
@@ -162,8 +156,6 @@ $$I_4 = \frac{12}{4} = 3 \mathrm{ A}, \quad I_6 = \frac{12}{6} = 2 \mathrm{ A}, 
 
 Total current: $I = 3 + 2 + 1 = 6 \mathrm{ A}$
 
-</details>
-
 ### Worked Example 4
 
 A $6 \Omega$ resistor and a $3 \Omega$ resistor are connected in parallel. This combination is then
@@ -190,8 +182,6 @@ Power: $P_6 = I_6^2 R_6 = 1.14^2 \times 6 = 7.80 \mathrm{ W}$
 $P_3 = I_3^2 R_3 = 2.29^2 \times 3 = 15.7 \mathrm{ W}$
 
 $P_5 = I^2 R_5 = 3.43^2 \times 5 = 58.8 \mathrm{ W}$
-
-</details>
 
 ---
 
@@ -248,8 +238,6 @@ The current through the $4 \Omega$ resistor is $0 \mathrm{ A}$. The current thro
 Resistor is $2 \mathrm{ A}$ (counterclockwise). The current through the $6 \Omega$ resistor is
 $2 \mathrm{ A}$ (upward).
 
-</details>
-
 ### Worked Example 6
 
 A circuit has a $12 \mathrm{ V}$ battery with internal resistance $1 \Omega$ connected to Three
@@ -272,8 +260,6 @@ Voltage across parallel combination:
 $V_{23} = I_{\mathrm{total}} \times R_{23} = 1.71 \times 3 = 5.14 \mathrm{ V}$
 
 Current through each $6 \Omega$: $I_2 = I_3 = \frac{5.14}{6} = 0.857 \mathrm{ A}$
-
-</details>
 
 ---
 
@@ -316,8 +302,6 @@ $$V = \varepsilon - Ir = 9 - 2 \times 0.5 = 8 \mathrm{ V}$$
 
 $$P = I^2 R = 4 \times 4 = 16 \mathrm{ W}$$
 
-</details>
-
 ### Worked Example 7
 
 A battery with unknown EMF $\varepsilon$ and internal resistance $r$ is connected to a $10 \Omega$
@@ -334,8 +318,6 @@ $$\varepsilon = I_2(R_2 + r) = 0.28(20 + r) = 5.6 + 0.28r \quad (2)$$
 Equating: $5 + 0.5r = 5.6 + 0.28r \implies 0.22r = 0.6 \implies r = 2.73 \Omega$
 
 $$\varepsilon = 5 + 0.5(2.73) = 6.36 \mathrm{ V}$$
-
-</details>
 
 ---
 
@@ -372,8 +354,6 @@ $E = Pt = 2000 \times 5 \times 3600 = 3.6 \times 10^7 \mathrm{ J} = 10 \mathrm{ 
 
 Cost: $10 \times 0.90 = \$9.00$
 
-</details>
-
 ---
 
 ## Potential Divider
@@ -406,8 +386,6 @@ $R_V = \frac{4 \times 12}{4 + 12} = 3 \mathrm{ k}\Omega$
 $$V_2 = 12 \times \frac{3}{8 + 3} = 12 \times \frac{3}{11} = 3.27 \mathrm{ V}$$
 
 The voltmeter draws current and reduces the measured voltage (loading effect).
-
-</details>
 
 ---
 
@@ -454,8 +432,6 @@ Maximum power transfer occurs when $R = r = 1.5 \Omega$.
 
 $$P_{\max} = \frac{\varepsilon^2}{4r} = \frac{36}{4 \times 1.5} = \frac{36}{6} = 6.0 \mathrm{ W}$$
 
-</details>
-
 If you get this wrong, revise: Internal Resistance and EMF / Maximum Power Transfer
 
 **Problem 2.** Three identical cells each of EMF $1.5 \mathrm{ V}$ and internal resistance
@@ -471,8 +447,6 @@ $$I = \frac{4.5}{4.6 + 1.2} = \frac{4.5}{5.8} = 0.776 \mathrm{ A}$$
 
 Terminal PD: $V = \varepsilon - Ir = 4.5 - 0.776 \times 1.2 = 4.5 - 0.931 = 3.57 \mathrm{ V}$
 
-</details>
-
 If you get this wrong, revise: Internal Resistance and EMF
 
 **Problem 3.** A nichrome wire of length $2.0 \mathrm{ m}$ and cross-sectional area
@@ -483,8 +457,6 @@ Nichrome.
 <summary>Solution</summary>
 
 $$\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \times 10^{-5}}{2.0} = 1.1 \times 10^{-5} \Omega\,\mathrm{m}$$
-
-</details>
 
 If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 
@@ -501,8 +473,6 @@ $$I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$$
 
 Verify:
 $R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$$I = \frac{12}{6} = 2.0 \mathrm{ A}$
-
-</details>
 
 If you get this wrong, revise: Series and Parallel Circuits
 
@@ -523,8 +493,6 @@ Current through each $6 \Omega$: $I_6 = \frac{7.11}{6} = 1.18 \mathrm{ A}$
 
 Power in each: $P = I_6^2 \times 6 = 1.18^2 \times 6 = 8.38 \mathrm{ W}$
 
-</details>
-
 If you get this wrong, revise: Internal Resistance and EMF / Parallel Circuits
 
 **Problem 6.** In a potential divider circuit, $R_1 = 10 \mathrm{ k}\Omega$ and
@@ -541,8 +509,6 @@ $V_{\mathrm{out}} = 15 \times \frac{5}{10 + 5} = 15 \times \frac{1}{3} = 5.0 \ma
 With load: $R_2$ in parallel with load $= \frac{5 \times 10}{5 + 10} = 3.33 \mathrm{ k}\Omega$
 
 $$V_{\mathrm{out}} = 15 \times \frac{3.33}{10 + 3.33} = 15 \times \frac{3.33}{13.33} = 3.75 \mathrm{ V}$$
-
-</details>
 
 If you get this wrong, revise: Potential Divider
 
@@ -570,8 +536,6 @@ $P_{60} = I^2 R_{60} = 0.156^2 \times 960 = 23.4 \mathrm{ W}$
 The $60 \mathrm{ W}$ bulb is brighter in series because it has higher resistance and dissipates More
 power.
 
-</details>
-
 If you get this wrong, revise: Series and Parallel Circuits / Electrical Power
 
 **Problem 8.** A student connects an ammeter (resistance $0.5 \Omega$) in series with a $10 \Omega$
@@ -588,8 +552,6 @@ $I_{\mathrm{ideal}} = \frac{6}{10 + 1} = \frac{6}{11} = 0.545 \mathrm{ A}$
 
 $$\mathrm{Percentage\ error} = \frac{0.545 - 0.522}{0.545} \times 100\% = 4.2\%$$
 
-</details>
-
 If you get this wrong, revise: Internal Resistance and EMF / Ohm's Law
 
 **Problem 9.** A copper wire and a steel wire of the same length and diameter are connected in
@@ -603,8 +565,6 @@ that in the copper wire.
 Since they are in series, the same current flows through both.
 
 $$\frac{P_{\mathrm{steel}}}{P_{\mathrm{copper}}} = \frac{I^2 R_{\mathrm{steel}}}{I^2 R_{\mathrm{copper}}} = \frac{R_{\mathrm{steel}}}{R_{\mathrm{copper}}} = \frac{\rho_{\mathrm{steel}}}{\rho_{\mathrm{copper}}} = \frac{1.0 \times 10^{-7}}{1.7 \times 10^{-8}} = 5.88$$
-
-</details>
 
 If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 
@@ -622,8 +582,6 @@ Total external resistance: $R_{\mathrm{ext}} = 4 + 3 = 7 \Omega$
 $$I = \frac{\varepsilon}{R_{\mathrm{ext}} + r} = \frac{12}{7 + 0.5} = \frac{12}{7.5} = 1.60 \mathrm{ A}$$
 
 $$V = \varepsilon - Ir = 12 - 1.60 \times 0.5 = 12 - 0.80 = 11.2 \mathrm{ V}$$
-
-</details>
 
 If you get this wrong, revise: Series and Parallel Circuits / Internal Resistance
 
@@ -850,8 +808,6 @@ Verify: $I_2 + I_3 = 0.942 + 0.471 = 1.41 \mathrm{ A}$ (equals $I_1$).
 
 Power in $R_3$: $P_3 = I_3^2 R_3 = (0.471)^2 \times 12 = 0.222 \times 12 = 2.66 \mathrm{ W}$
 
-</details>
-
 ### Worked Example 11
 
 A student uses a potentiometer to compare the EMFs of two cells. The potentiometer wire is
@@ -866,8 +822,6 @@ For a potentiometer, the EMF is proportional to the balancing length:
 $$\frac{\varepsilon_B}{\varepsilon_A} = \frac{L_B}{L_A}$$
 
 $$\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}{65.0} = 1.50 \times 0.6538 = 0.981 \mathrm{ V}$$
-
-</details>
 
 ### Worked Example 12
 
@@ -887,8 +841,6 @@ Total power: $P = VI = 220 \times 33.0 = 7260 \mathrm{ W} = 7.26 \mathrm{ kW}$
 
 Verify:
 $P_1 = \frac{220^2}{10} = 4840 \mathrm{ W}$$P_2 = \frac{220^2}{20} = 2420 \mathrm{ W}$$P = 4840 + 2420 = 7260 \mathrm{ W}$.
-
-</details>
 
 ---
 
@@ -942,8 +894,6 @@ increasing $V$). It passes through the origin but is not a straight line.
 (d) A filament lamp is non-ohmic because its resistance is not constant; it changes with the Current
 flowing through it (due to temperature dependence). The I-V graph is not a straight line.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 A battery has EMF $\varepsilon$ and internal resistance $r$. When connected to an external Resistor
@@ -984,8 +934,6 @@ $$P_{\max} = \frac{\varepsilon^2}{4r} = \frac{(9.24)^2}{4 \times 3.4} = \frac{85
 (d) The graph of $P$ versus $R$ starts at zero ($R = 0$), rises to a maximum of $6.28 \mathrm{ W}$
 At $R = 3.4 \Omega$Then gradually decreases towards zero as $R \to \infty$. The curve is Asymmetric,
 peaking at $R = r$.
-
-</details>
 
 ### Question 3 (DSE Structured)
 
@@ -1049,8 +997,6 @@ $12 - 6 = 6 \mathrm{ V}$And the total internal resistance would be $1 + 0.5 = 1.
 would flow from $\varepsilon_1$ through $\varepsilon_2$ (in reverse), and the terminal PD would be
 much lower.
 
-</details>
-
 ### Question 4 (DSE Structured)
 
 A student designs a circuit to measure an unknown resistance $R_x$ using a Wheatstone bridge
@@ -1094,8 +1040,6 @@ $$R_x = (300 \pm 5) \Omega$$
    eliminating errors due to the galvanometer's calibration or non-linearity.
 2. The result is independent of the supply voltage and the galvanometer sensitivity, reducing
    systematic errors.
-
-</details>
 
 ### Question 5 (DSE Structured)
 
@@ -1148,7 +1092,8 @@ Voltage sources are replaced by short circuits (and current sources by open circ
 resistor, all in parallel with a $6 \Omega$ resistor. Find the Thevenin equivalent Across the
 $6 \Omega$ resistor terminals.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 $\varepsilon_{\mathrm{Th}}$: Open-circuit voltage across the $6 \Omega$ resistor. With no load, The
@@ -1161,8 +1106,6 @@ $V = 12 \times \frac{6}{1 + 4 + 6} = 12 \times \frac{6}{11} = 6.55 \mathrm{ V}$
 $R_{\mathrm{Th}}$: Resistance seen from the $6 \Omega$ terminals with the battery shorted.
 
 $R_{\mathrm{Th}} = 6 \parallel (1 + 4) = \frac{6 \times 5}{6 + 5} = \frac{30}{11} = 2.73 \Omega$
-
-</details>
 
 (d) When the starter motor engages, it draws a very large current ($200 \mathrm{ A}$). The large
 Current causes a significant voltage drop across the internal resistance of the battery

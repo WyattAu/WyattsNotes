@@ -16,25 +16,24 @@ slug: optics-and-wave-physics
 
 ### 1.1 Derivation from Maxwell's Equations
 
-In vacuum, with no sources ($\rho = 0$$\mathbf{'\{'}J{'\}'} = \mathbf{'\{'}0{'\}'}$), Maxwell's
-equations give:
+In vacuum, with no sources ($\rho = 0$$\mathbf{{'}J{}'} = \mathbf{{'}0{}'}$), Maxwell's equations
+give:
 
-$$\nabla \times (\nabla \times \mathbf{'\{'}E{'\}'}) = \nabla(\nabla \cdot \mathbf{'\{'}E{'\}'}) - \nabla^2 \mathbf{'\{'}E{'\}'} = -\nabla^2 \mathbf{'\{'}E{'\}'}$$
+$$\nabla \times (\nabla \times \mathbf{{'}E{}'}) = \nabla(\nabla \cdot \mathbf{{'}E{}'}) - \nabla^2 \mathbf{{'}E{}'} = -\nabla^2 \mathbf{{'}E{}'}$$
 
-From Faraday's law:
-$\nabla \times \mathbf{'\{'}E{'\}'} = -\partial \mathbf{'\{'}B{'\}'}/\partial t$So:
+From Faraday's law: $\nabla \times \mathbf{{'}E{}'} = -\partial \mathbf{{'}B{}'}/\partial t$So:
 
-$$\nabla \times \left(-\frac{\partial \mathbf{'\{'}B{'\}'}}{\partial t}\right) = -\frac{\partial}{\partial t}(\nabla \times \mathbf{'\{'}B{'\}'}) = -\mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{'\{'}E{'\}'}}{\partial t^2}$$
+$$\nabla \times \left(-\frac{\partial \mathbf{{'}B{}'}}{\partial t}\right) = -\frac{\partial}{\partial t}(\nabla \times \mathbf{{'}B{}'}) = -\mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{{'}E{}'}}{\partial t^2}$$
 
 Hence:
 
-$$\nabla^2 \mathbf{'\{'}E{'\}'} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{'\{'}E{'\}'}}{\partial t^2}$$
+$$\nabla^2 \mathbf{{'}E{}'} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{{'}E{}'}}{\partial t^2}$$
 
 This is the **electromagnetic wave equation** with wave speed $c = 1/\sqrt{\mu_0 \varepsilon_0}$.
 
-The same equation holds for $\mathbf{'\{'}B{'\}'}$:
+The same equation holds for $\mathbf{{'}B{}'}$:
 
-$$\nabla^2 \mathbf{'\{'}B{'\}'} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{'\{'}B{'\}'}}{\partial t^2}$$
+$$\nabla^2 \mathbf{{'}B{}'} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{{'}B{}'}}{\partial t^2}$$
 
 ### 1.2 General Solutions
 
@@ -79,13 +78,13 @@ propagation in the $+x$ direction.
 
 It is convenient to write monochromatic waves as:
 
-$$\mathbf{'\{'}E{'\}'}(\mathbf{'\{'}r{'\}'}, t) = \mathrm{Re{}\left[\tilde{\mathbf{'\{'}E{'\}'}}\, e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t)}\right]$$
+$$\mathbf{{'}E{}'}(\mathbf{{'}r{}'}, t) = \mathrm{Re{}\left[\tilde{\mathbf{{'}E{}'}}\, e^{i(\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'} - \omega t)}\right]$$
 
-Where $\tilde{\mathbf{'\{'}E{'\}'}}$ is the complex amplitude, $\mathbf{'\{'}k{'\}'}$ is the wave
-vector, and $\omega$ is The angular frequency. The dispersion relation is
-$\omega = ck = c|\mathbf{'\{'}k{'\}'}|$.
+Where $\tilde{\mathbf{{'}E{}'}}$ is the complex amplitude, $\mathbf{{'}k{}'}$ is the wave vector,
+and $\omega$ is The angular frequency. The dispersion relation is
+$\omega = ck = c|\mathbf{{'}k{}'}|$.
 
-The wave vector satisfies $|\mathbf{'\{'}k{'\}'}| = 2\pi/\lambda$ and $\omega = 2\pi\nu$.
+The wave vector satisfies $|\mathbf{{'}k{}'}| = 2\pi/\lambda$ and $\omega = 2\pi\nu$.
 
 When computing intensities, the complex representation simplifies the algebra. For a plane wave with
 Complex amplitude $\tilde{E}$:
@@ -96,14 +95,13 @@ $$I = \frac{1}{2}c\varepsilon_0 |\tilde{E}|^2$$
 <summary>Worked Example: Complex amplitude and intensity</summary>
 
 **Problem.** A plane wave propagating in the $+z$ direction has complex amplitude
-$\tilde{\mathbf{'\{'}E{'\}'}} = (10 + 5i)\hat{\mathbf{'\{'}x{'\}'}}$ V/m in vacuum. Find the real
-electric field, the Intensity, and the phase of the wave relative to $\cos(kz - \omega t)$.
+$\tilde{\mathbf{{'}E{}'}} = (10 + 5i)\hat{\mathbf{{'}x{}'}}$ V/m in vacuum. Find the real electric
+field, the Intensity, and the phase of the wave relative to $\cos(kz - \omega t)$.
 
 **Solution.** $|\tilde{E}| = \sqrt{10^2 + 5^2} = \sqrt{125} \approx 11.18$ V/m. Phase:
 $\phi = \arctan(5/10) = 26.57°$.
 
-Real field:
-$\mathbf{'\{'}E{'\}'}(z,t) = 11.18\cos(kz - \omega t + 26.57°)\,\hat{\mathbf{'\{'}x{'\}'}}$ V/m.
+Real field: $\mathbf{{'}E{}'}(z,t) = 11.18\cos(kz - \omega t + 26.57°)\,\hat{\mathbf{{'}x{}'}}$ V/m.
 
 Intensity:
 $I = \frac{1}{2}c\varepsilon_0 |\tilde{E}|^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(125) = 0.166$
@@ -296,47 +294,45 @@ velocity (front velocity) never Exceeds $c$. :::
 
 From Maxwell's equations, the following properties hold for plane EM waves:
 
-1. **Transversality:** $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ are perpendicular to
-   $\mathbf{'\{'}k{'\}'}$ and to each other.
-2. **Orthogonality:** $\mathbf{'\{'}E{'\}'} \perp \mathbf{'\{'}B{'\}'}$And
-   $|\mathbf{'\{'}E{'\}'}| = c|\mathbf{'\{'}B{'\}'}|$.
-3. **In-phase:** $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ oscillate in phase.
+1. **Transversality:** $\mathbf{{'}E{}'}$ and $\mathbf{{'}B{}'}$ are perpendicular to
+   $\mathbf{{'}k{}'}$ and to each other.
+2. **Orthogonality:** $\mathbf{{'}E{}'} \perp \mathbf{{'}B{}'}$And
+   $|\mathbf{{'}E{}'}| = c|\mathbf{{'}B{}'}|$.
+3. **In-phase:** $\mathbf{{'}E{}'}$ and $\mathbf{{'}B{}'}$ oscillate in phase.
 4. **Dispersion relation:** $\omega = ck$ in vacuum.
 
 **Proof of transversality.** For a plane wave
-$\mathbf{'\{'}E{'\}'} = \mathbf{'\{'}E{'\}'}_0 e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t)}$
-Gauss's law gives $i\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}E{'\}'}_0 = 0$So
-$\mathbf{'\{'}k{'\}'} \perp \mathbf{'\{'}E{'\}'}_0$. Similarly From
-$\nabla \cdot \mathbf{'\{'}B{'\}'} = 0$: $\mathbf{'\{'}k{'\}'} \perp \mathbf{'\{'}B{'\}'}_0$.
-$\blacksquare$
+$\mathbf{{'}E{}'} = \mathbf{{'}E{}'}_0 e^{i(\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'} - \omega t)}$
+Gauss's law gives $i\mathbf{{'}k{}'}\cdot\mathbf{{'}E{}'}_0 = 0$So
+$\mathbf{{'}k{}'} \perp \mathbf{{'}E{}'}_0$. Similarly From $\nabla \cdot \mathbf{{'}B{}'} = 0$:
+$\mathbf{{'}k{}'} \perp \mathbf{{'}B{}'}_0$. $\blacksquare$
 
-**Proof of $|\mathbf{'\{'}E{'\}'}| = c|\mathbf{'\{'}B{'\}'}|$.** From Faraday's law for a plane
-wave: $\mathbf{'\{'}k{'\}'} \times \mathbf{'\{'}E{'\}'}_0 = \omega\mathbf{'\{'}B{'\}'}_0$. Taking
-magnitudes: $kE_0 = \omega B_0$So $E_0/B_0 = \omega/k = c$. $\blacksquare$
+**Proof of $|\mathbf{{'}E{}'}| = c|\mathbf{{'}B{}'}|$.** From Faraday's law for a plane wave:
+$\mathbf{{'}k{}'} \times \mathbf{{'}E{}'}_0 = \omega\mathbf{{'}B{}'}_0$. Taking magnitudes:
+$kE_0 = \omega B_0$So $E_0/B_0 = \omega/k = c$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Plane wave fields and intensity</summary>
 
 **Problem.** A plane wave in vacuum has
-$\mathbf{'\{'}E{'\}'} = (20\hat{\mathbf{'\{'}x{'\}'}} + 30\hat{\mathbf{'\{'}y{'\}'}})\cos(kz - \omega t)$
-V/m with $\lambda = 500$ nm. Find $\mathbf{'\{'}B{'\}'}$The intensity, and describe the polarisation
-state.
+$\mathbf{{'}E{}'} = (20\hat{\mathbf{{'}x{}'}} + 30\hat{\mathbf{{'}y{}'}})\cos(kz - \omega t)$ V/m
+with $\lambda = 500$ nm. Find $\mathbf{{'}B{}'}$The intensity, and describe the polarisation state.
 
-**Solution.** $|\mathbf{'\{'}E{'\}'}_0| = \sqrt{20^2 + 30^2} = \sqrt{1300} \approx 36.1$ V/m.
+**Solution.** $|\mathbf{{'}E{}'}_0| = \sqrt{20^2 + 30^2} = \sqrt{1300} \approx 36.1$ V/m.
 $B_0 = E_0/c = 36.1/(3 \times 10^8) = 1.20 \times 10^{-7}$ T.
 
-Since $\mathbf{'\{'}k{'\}'} = k\hat{\mathbf{'\{'}z{'\}'}}$ and
-$\mathbf{'\{'}B{'\}'}_0 = \hat{\mathbf{'\{'}k{'\}'}} \times \mathbf{'\{'}E{'\}'}_0/c$:
-$\mathbf{'\{'}B{'\}'} = (-20\hat{\mathbf{'\{'}y{'\}'}} + 30\hat{\mathbf{'\{'}x{'\}'}})B_0/E_0 \cdot \cos(kz - \omega t)/c$
-$= (30\hat{\mathbf{'\{'}x{'\}'}} - 20\hat{\mathbf{'\{'}y{'\}'}})(1/c)\cos(kz - \omega t)$ T.
+Since $\mathbf{{'}k{}'} = k\hat{\mathbf{{'}z{}'}}$ and
+$\mathbf{{'}B{}'}_0 = \hat{\mathbf{{'}k{}'}} \times \mathbf{{'}E{}'}_0/c$:
+$\mathbf{{'}B{}'} = (-20\hat{\mathbf{{'}y{}'}} + 30\hat{\mathbf{{'}x{}'}})B_0/E_0 \cdot \cos(kz - \omega t)/c$
+$= (30\hat{\mathbf{{'}x{}'}} - 20\hat{\mathbf{{'}y{}'}})(1/c)\cos(kz - \omega t)$ T.
 
 Intensity:
 $I = \frac{1}{2}c\varepsilon_0 E_0^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(1300) = 1.73$
 W/m$^2$.
 
-Polarisation: $\mathbf{'\{'}E{'\}'}_0$ has components along $\hat{\mathbf{'\{'}x{'\}'}}$ and
-$\hat{\mathbf{'\{'}y{'\}'}}$ with a Constant phase relationship ($\delta = 0$), so the wave is
-linearly polarised at angle $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
+Polarisation: $\mathbf{{'}E{}'}_0$ has components along $\hat{\mathbf{{'}x{}'}}$ and
+$\hat{\mathbf{{'}y{}'}}$ with a Constant phase relationship ($\delta = 0$), so the wave is linearly
+polarised at angle $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
 
 </details>
 
@@ -344,7 +340,7 @@ linearly polarised at angle $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis
 
 The **Poynting vector**:
 
-$$\mathbf{'\{'}S{'\}'} = \frac{1}{\mu_0}\mathbf{'\{'}E{'\}'} \times \mathbf{'\{'}B{'\}'}$$
+$$\mathbf{{'}S{}'} = \frac{1}{\mu_0}\mathbf{{'}E{}'} \times \mathbf{{'}B{}'}$$
 
 Represents the energy flux (W/m$^2$). The time-averaged intensity for a plane wave:
 
@@ -382,7 +378,7 @@ N.
 
 In a linear, isotropic, non-magnetic medium with refractive index $n$:
 
-$$v = \frac{c}{n}, \quad \mathbf{'\{'}k{'\}'} = n\frac{\omega}{c}\hat{\mathbf{'\{'}k{'\}'}}$$
+$$v = \frac{c}{n}, \quad \mathbf{{'}k{}'} = n\frac{\omega}{c}\hat{\mathbf{{'}k{}'}}$$
 
 The index of refraction is related to the relative permittivity and permeability:
 
@@ -419,8 +415,8 @@ the electric field amplitudes squared times the respective impedances.
 ### 2.4 Boundary Conditions and Snell's Law
 
 At a planar interface between two linear, isotropic media, the tangential components of
-$\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}H{'\}'}$ and the normal components of
-$\mathbf{'\{'}D{'\}'}$ and $\mathbf{'\{'}B{'\}'}$ are Continuous across the boundary.
+$\mathbf{{'}E{}'}$ and $\mathbf{{'}H{}'}$ and the normal components of $\mathbf{{'}D{}'}$ and
+$\mathbf{{'}B{}'}$ are Continuous across the boundary.
 
 Consider a plane wave incident from medium 1 ($n_1$) onto medium 2 ($n_2$), with the interface at
 $z = 0$ and the plane of incidence the $xz$-plane.
@@ -446,16 +442,16 @@ $k = n\omega/c$This yields Snell's law. $\blacksquare$
 Applying the boundary conditions for the tangential fields yields the **Fresnel equations** for the
 Amplitude reflection and transmission coefficients.
 
-**s-polarisation** ($\mathbf{'\{'}E{'\}'}$ perpendicular to the plane of incidence, along
-$\hat{\mathbf{'\{'}y{'\}'}}$): The tangential components of $\mathbf{'\{'}E{'\}'}$ and
-$\mathbf{'\{'}H{'\}'}$ give:
+**s-polarisation** ($\mathbf{{'}E{}'}$ perpendicular to the plane of incidence, along
+$\hat{\mathbf{{'}y{}'}}$): The tangential components of $\mathbf{{'}E{}'}$ and $\mathbf{{'}H{}'}$
+give:
 
 $$r_s = \frac{E_{0r}}{E_{0i}} = \frac{n_1\cos\theta_i - n_2\cos\theta_t}{n_1\cos\theta_i + n_2\cos\theta_t}$$
 
 $$t_s = \frac{E_{0t}}{E_{0i}} = \frac{2n_1\cos\theta_i}{n_1\cos\theta_i + n_2\cos\theta_t}$$
 
-**p-polarisation** ($\mathbf{'\{'}E{'\}'}$ parallel to the plane of incidence): The tangential
-components of $\mathbf{'\{'}E{'\}'}$ and $\mathbf{'\{'}H{'\}'}$ give:
+**p-polarisation** ($\mathbf{{'}E{}'}$ parallel to the plane of incidence): The tangential
+components of $\mathbf{{'}E{}'}$ and $\mathbf{{'}H{}'}$ give:
 
 $$r_p = \frac{E_{0r}}{E_{0i}} = \frac{n_2\cos\theta_i - n_1\cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}$$
 
@@ -556,7 +552,7 @@ m$^{-1}$.
 When two or more waves overlap, the resultant displacement is the sum of the individual
 displacements. For two coherent waves with amplitudes $E_1$ and $E_2$:
 
-$$E = E_1 + E_2 = E_0 \cos(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t + \phi_1) + E_0 \cos(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t + \phi_2)$$
+$$E = E_1 + E_2 = E_0 \cos(\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'} - \omega t + \phi_1) + E_0 \cos(\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'} - \omega t + \phi_2)$$
 
 The time-averaged intensity is:
 
@@ -697,13 +693,13 @@ m $= 0.633$ mm.
 
 The **fringe visibility** (or contrast) quantifies the sharpness of interference fringes:
 
-$$\mathcal{'\{'}V{'\}'} = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}$$
+$$\mathcal{{'}V{}'} = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}$$
 
 For two-beam interference with intensities $I_1$$I_2$ and degree of temporal coherence $|\gamma|$:
 
-$$\mathcal{'\{'}V{'\}'} = \frac{2\sqrt{I_1 I_2}}{I_1 + I_2}\,|\gamma(\tau)|$$
+$$\mathcal{{'}V{}'} = \frac{2\sqrt{I_1 I_2}}{I_1 + I_2}\,|\gamma(\tau)|$$
 
-For equal intensities ($I_1 = I_2$): $\mathcal{'\{'}V{'\}'} = |\gamma(\tau)|$.
+For equal intensities ($I_1 = I_2$): $\mathcal{{'}V{}'} = |\gamma(\tau)|$.
 
 The coherence function decays with path difference. For a Gaussian spectral profile of width
 $\Delta\lambda$:
@@ -737,7 +733,7 @@ $2nd\cos\theta = m\lambda$.
 
 **Finesse:**
 
-$$\mathcal{'\{'}F{'\}'} = \frac{\pi\sqrt{F}}{2} = \frac{\pi\sqrt{R}}{1 - R}$$
+$$\mathcal{{'}F{}'} = \frac{\pi\sqrt{F}}{2} = \frac{\pi\sqrt{R}}{1 - R}$$
 
 The finesse determines the sharpness of the peaks: higher $R$ gives sharper peaks.
 
@@ -747,7 +743,7 @@ $$\Delta\nu_{\mathrm{FSR{}} = \frac{c}{2nd}$$
 
 **Resolving power:**
 
-$$\mathcal{'\{'}R{'\}'} = \frac{\lambda}{\delta\lambda} = m\mathcal{'\{'}F{'\}'}$$
+$$\mathcal{{'}R{}'} = \frac{\lambda}{\delta\lambda} = m\mathcal{{'}F{}'}$$
 
 <details>
 <summary>Worked Example: Fabry-Perot resolving power</summary>
@@ -756,7 +752,7 @@ $$\mathcal{'\{'}R{'\}'} = \frac{\lambda}{\delta\lambda} = m\mathcal{'\{'}F{'\}'}
 And reflectance $R = 0.90$. Find the finesse, free spectral range, and minimum resolvable wavelength
 Difference at $\lambda = 500$ nm (normal incidence).
 
-**Solution.** Finesse: $\mathcal{'\{'}F{'\}'} = \pi\sqrt{0.90}/(1 - 0.90) = \pi(0.949)/0.10 = 29.8$.
+**Solution.** Finesse: $\mathcal{{'}F{}'} = \pi\sqrt{0.90}/(1 - 0.90) = \pi(0.949)/0.10 = 29.8$.
 
 Free spectral range:
 $\Delta\nu_{\mathrm{FSR{}} = c/(2nd) = (3 \times 10^8)/(2 \times 1.00 \times 10^{-3}) = 1.50 \times 10^{11}$
@@ -764,12 +760,11 @@ Hz.
 
 Order number: $m = 2nd/\lambda = 2(1.00)(1.00 \times 10^{-3})/(500 \times 10^{-9}) = 4000$.
 
-Resolving power:
-$\mathcal{'\{'}R{'\}'} = m\mathcal{'\{'}F{'\}'} = 4000 \times 29.8 = 1.19 \times 10^5$.
+Resolving power: $\mathcal{{'}R{}'} = m\mathcal{{'}F{}'} = 4000 \times 29.8 = 1.19 \times 10^5$.
 
 Minimum resolvable wavelength:
-$\delta\lambda = \lambda/\mathcal{'\{'}R{'\}'} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm
-$= 4.20$ pm.
+$\delta\lambda = \lambda/\mathcal{{'}R{}'} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm $= 4.20$
+pm.
 
 </details>
 
@@ -1039,13 +1034,13 @@ $d/a = 3$ as the ratio for missing orders.
 
 For a plane wave propagating in the $z$-direction:
 
-$$\mathbf{'\{'}E{'\}'} = E_{0x}\cos(kz - \omega t)\,\hat{\mathbf{'\{'}x{'\}'}} + E_{0y}\cos(kz - \omega t + \delta)\,\hat{\mathbf{'\{'}y{'\}'}}$$
+$$\mathbf{{'}E{}'} = E_{0x}\cos(kz - \omega t)\,\hat{\mathbf{{'}x{}'}} + E_{0y}\cos(kz - \omega t + \delta)\,\hat{\mathbf{{'}y{}'}}$$
 
 - **Linear polarization:** $\delta = 0$ or $\delta = \pi$. The E-field oscillates along a fixed
   line.
 - **Circular polarization:** $E_{0x} = E_{0y}$ and $\delta = \pm\pi/2$. Right-handed
   ($\delta = -\pi/2$) or left-handed ($\delta = +\pi/2$).
-- **Elliptical polarization:** General case. The tip of $\mathbf{'\{'}E{'\}'}$ traces an ellipse.
+- **Elliptical polarization:** General case. The tip of $\mathbf{{'}E{}'}$ traces an ellipse.
 
 ### 5.2 Malus's Law
 
@@ -1054,7 +1049,7 @@ Polarisation direction:
 
 $$I = I_0 \cos^2\theta$$
 
-**Proof.** The component of $\mathbf{'\{'}E{'\}'}$ along the polariser axis is $E\cos\theta$. Since
+**Proof.** The component of $\mathbf{{'}E{}'}$ along the polariser axis is $E\cos\theta$. Since
 $I \propto E^2$: $I = I_0 \cos^2\theta$. $\blacksquare$
 
 <details>
@@ -1181,8 +1176,8 @@ The reflected light is 100% s-polarised with intensity $0.074\,I_0$ (about 7.4% 
 
 ### 5.6 Faraday Rotation
 
-In a magneto-optical material with a magnetic field $\mathbf{'\{'}B{'\}'}$ applied along the
-propagation Direction, the plane of polarisation rotates by:
+In a magneto-optical material with a magnetic field $\mathbf{{'}B{}'}$ applied along the propagation
+Direction, the plane of polarisation rotates by:
 
 $$\theta_F = V B l$$
 
@@ -1222,14 +1217,14 @@ When light is scattered by particles much smaller than the wavelength (Rayleigh 
 Scattered light is partially polarised. Light scattered at $90°$ to the incident direction is
 **completely linearly polarised** in the plane perpendicular to the scattering plane.
 
-**Proof.** Consider an incident unpolarised beam propagating along $\hat{\mathbf{'\{'}z{'\}'}}$. The
-$\mathbf{'\{'}E{'\}'}$-field oscillates in the $xy$-plane. An observer along
-$\hat{\mathbf{'\{'}x{'\}'}}$ (scattering Angle $90°$) receives radiation from the accelerating
-electrons. The dipole radiation pattern of an Oscillator along $\hat{\mathbf{'\{'}y{'\}'}}$ has zero
-intensity along $\hat{\mathbf{'\{'}y{'\}'}}$ but maximum along $\hat{\mathbf{'\{'}x{'\}'}}$. The
-oscillator along $\hat{\mathbf{'\{'}x{'\}'}}$ radiates zero along its own axis. Thus The observer
-along $\hat{\mathbf{'\{'}x{'\}'}}$ sees only the $y$-component: the scattered light is Polarised
-along $\hat{\mathbf{'\{'}y{'\}'}}$. $\blacksquare$
+**Proof.** Consider an incident unpolarised beam propagating along $\hat{\mathbf{{'}z{}'}}$. The
+$\mathbf{{'}E{}'}$-field oscillates in the $xy$-plane. An observer along $\hat{\mathbf{{'}x{}'}}$
+(scattering Angle $90°$) receives radiation from the accelerating electrons. The dipole radiation
+pattern of an Oscillator along $\hat{\mathbf{{'}y{}'}}$ has zero intensity along
+$\hat{\mathbf{{'}y{}'}}$ but maximum along $\hat{\mathbf{{'}x{}'}}$. The oscillator along
+$\hat{\mathbf{{'}x{}'}}$ radiates zero along its own axis. Thus The observer along
+$\hat{\mathbf{{'}x{}'}}$ sees only the $y$-component: the scattered light is Polarised along
+$\hat{\mathbf{{'}y{}'}}$. $\blacksquare$
 
 This explains why the sky is polarised at $90°$ from the sun and why polarising sunglasses reduce
 Glare from horizontal surfaces (Brewster's angle reflection from road/water).
@@ -1399,7 +1394,7 @@ Plane, performing an optical Fourier transform.
 If the aperture is a product $t(x, y) = t_1(x, y) \cdot t_2(x, y)$The diffraction pattern is the
 Convolution of their individual transforms:
 
-$$\mathcal{'\{'}F{'\}'}\{t_1 \cdot t_2\} = \mathcal{'\{'}F{'\}'}\{t_1\} * \mathcal{'\{'}F{'\}'}\{t_2\}$$
+$$\mathcal{{'}F{}'}\{t_1 \cdot t_2\} = \mathcal{{'}F{}'}\{t_1\} * \mathcal{{'}F{}'}\{t_2\}$$
 
 Where $*$ denotes convolution. This explains, for example, why the double-slit pattern with finite
 Slit width is the product of a sinc function (single slit) and a cosine-squared (double slit).
@@ -1507,7 +1502,7 @@ $$\Delta\nu = \frac{c}{2nL}$$
 
 For a cavity with mirrors of reflectivity $R$The **finesse** is:
 
-$$\mathcal{'\{'}F{'\}'} = \frac{\pi\sqrt{R}}{1 - R}$$
+$$\mathcal{{'}F{}'} = \frac{\pi\sqrt{R}}{1 - R}$$
 
 ### 9.4 Gaussian Beams
 
@@ -1685,9 +1680,9 @@ $\alpha = d^2\omega/dk^2 = 2.0 \times 10^6$ m$^2$/s. Estimate the time required 
 double in spatial width after travelling a distance of 1.0 m.
 
 **4.** The electric field of a plane wave is
-$\mathbf{'\{'}E{'\}'} = (20\hat{\mathbf{'\{'}x{'\}'}} - 15\hat{\mathbf{'\{'}y{'\}'}})\cos(kz - \omega t)$
-V/m in vacuum. Find the amplitude, the polarisation state (including the angle and handedness), and
-the time-averaged Intensity.
+$\mathbf{{'}E{}'} = (20\hat{\mathbf{{'}x{}'}} - 15\hat{\mathbf{{'}y{}'}})\cos(kz - \omega t)$ V/m in
+vacuum. Find the amplitude, the polarisation state (including the angle and handedness), and the
+time-averaged Intensity.
 
 **5.** Show that for normal incidence on a dielectric interface, the amplitude reflection and
 Transmission coefficients satisfy $t = 1 + r$. Prove this from the boundary conditions.
@@ -1786,10 +1781,10 @@ $\Delta d = L_c/2 = 0.289$ mm before fringes wash out. Note that 1000 fringes co
 $\Delta d = 0.295$ mm, which slightly exceeds $L_c/2$ — the outermost fringes would already be
 fading.
 
-**Solution 11.** $\mathcal{'\{'}F{'\}'} = \pi\sqrt{0.85}/(1 - 0.85) = 19.3$.
+**Solution 11.** $\mathcal{{'}F{}'} = \pi\sqrt{0.85}/(1 - 0.85) = 19.3$.
 $\Delta\nu_{\mathrm{FSR{}} = c/(2nd) = 3 \times 10^8/(2 \times 0.5 \times 10^{-3}) = 3 \times 10^{11}$
-Hz. $m = 2nd/\lambda = 2000$. $\mathcal{'\{'}R{'\}'} = m\mathcal{'\{'}F{'\}'} = 38600$.
-$\delta\lambda = \lambda/\mathcal{'\{'}R{'\}'} = 500/38600 = 0.0130$ nm.
+Hz. $m = 2nd/\lambda = 2000$. $\mathcal{{'}R{}'} = m\mathcal{{'}F{}'} = 38600$.
+$\delta\lambda = \lambda/\mathcal{{'}R{}'} = 500/38600 = 0.0130$ nm.
 
 **Solution 14.**
 $\theta_{\min} = 1.22\lambda/D = 1.22(500 \times 10^{-9})/2.4 = 2.54 \times 10^{-7}$ rad
@@ -1865,7 +1860,7 @@ $M = A - s'C = 1 - (-15)(1/60) = 1 + 1/4 = 5/4 = 1.25$ (upright, slightly magnif
 The Fraunhofer diffraction pattern of an aperture with transmittance function $t(x, y)$ illuminated
 by a plane wave is proportional to the 2D Fourier transform of the aperture function:
 
-$$E(u, v) \propto \iint t(x,y)\, e^{-2\pi i(ux + vy)}\, dx\, dy = \mathcal{'\{'}F{'\}'}\{t(x,y)\}(u, v)$$
+$$E(u, v) \propto \iint t(x,y)\, e^{-2\pi i(ux + vy)}\, dx\, dy = \mathcal{{'}F{}'}\{t(x,y)\}(u, v)$$
 
 Where $u = \sin\theta_x/\lambda$ and $v = \sin\theta_y/\lambda$ are the spatial frequencies.
 
@@ -1873,8 +1868,8 @@ Where $u = \sin\theta_x/\lambda$ and $v = \sin\theta_y/\lambda$ are the spatial 
 
 $$I(u,v) = I_0\,|\tilde{t}(u,v)|^2$$
 
-Where $\tilde{t}(u,v) = \mathcal{'\{'}F{'\}'}\{t(x,y)\}(u,v)$ is the Fourier transform of the
-aperture function.
+Where $\tilde{t}(u,v) = \mathcal{{'}F{}'}\{t(x,y)\}(u,v)$ is the Fourier transform of the aperture
+function.
 
 _Proof._ The Huygens-Fresnel principle in the far field gives:
 
@@ -1888,12 +1883,12 @@ the Fourier transform. $\blacksquare$
 **Theorem 10.2 (Convolution theorem).** If an aperture function is the convolution
 $t = t_1 * t_2$The diffraction pattern is the product of the individual diffraction patterns:
 
-$$\mathcal{'\{'}F{'\}'}\{t_1 * t_2\} = \mathcal{'\{'}F{'\}'}\{t_1\} \cdot \mathcal{'\{'}F{'\}'}\{t_2\}$$
+$$\mathcal{{'}F{}'}\{t_1 * t_2\} = \mathcal{{'}F{}'}\{t_1\} \cdot \mathcal{{'}F{}'}\{t_2\}$$
 
 **Corollary.** If an aperture is the product $t = t_1 \cdot t_2$The diffraction pattern is the
 convolution of the individual patterns:
 
-$$\mathcal{'\{'}F{'\}'}\{t_1 \cdot t_2\} = \mathcal{'\{'}F{'\}'}\{t_1\} * \mathcal{'\{'}F{'\}'}\{t_2\}$$
+$$\mathcal{{'}F{}'}\{t_1 \cdot t_2\} = \mathcal{{'}F{}'}\{t_1\} * \mathcal{{'}F{}'}\{t_2\}$$
 
 ### 10.3 Worked Example: Diffraction Grating via Fourier Transform
 
@@ -1910,7 +1905,7 @@ $$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit{}}(x - nd) = t_{\mathrm{slit{}}(x) * \
 
 The Fourier transform is:
 
-$$\tilde{t}(u) = \mathcal{'\{'}F{'\}'}\{t_{\mathrm{slit{}}\} \cdot \mathcal{'\{'}F{'\}'}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
+$$\tilde{t}(u) = \mathcal{{'}F{}'}\{t_{\mathrm{slit{}}\} \cdot \mathcal{{'}F{}'}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
 
 $$= a\,\mathrm{sinc{}(\pi a u) \cdot \sum_{n=0}^{N-1} e^{-2\pi i n d u} = a\,\mathrm{sinc{}(\pi a u) \cdot \frac{\sin(N\pi d u)}{\sin(\pi d u)}$$
 
@@ -2061,23 +2056,23 @@ of geometric optics.
 
 The **Jones vector** represents the polarisation state of a monochromatic plane wave:
 
-$$\mathbf{'\{'}E{'\}'} = \begin{pmatrix} E_x \\ E_y \end{pmatrix} = \begin{pmatrix} A_x\,e^{i\delta_x} \\ A_y\,e^{i\delta_y} \end{pmatrix}$$
+$$\mathbf{{'}E{}'} = \begin{pmatrix} E_x \\ E_y \end{pmatrix} = \begin{pmatrix} A_x\,e^{i\delta_x} \\ A_y\,e^{i\delta_y} \end{pmatrix}$$
 
 Optical elements are represented by $2 \times 2$ matrices:
 
 - **Linear polariser** at angle $\theta$:
-  $\mathbf{'\{'}P{'\}'}(\theta) = \begin{pmatrix}\cos^2\theta & \sin\theta\cos\theta \\ \sin\theta\cos\theta & \sin^2\theta\end{pmatrix}$
+  $\mathbf{{'}P{}'}(\theta) = \begin{pmatrix}\cos^2\theta & \sin\theta\cos\theta \\ \sin\theta\cos\theta & \sin^2\theta\end{pmatrix}$
 
 - **Quarter-wave plate** (fast axis horizontal, retardation $\pi/2$):
-  $\mathbf{'\{'}Q{'\}'} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi/2}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}$
+  $\mathbf{{'}Q{}'} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi/2}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}$
 
 - **Half-wave plate** (retardation $\pi$):
-  $\mathbf{'\{'}H{'\}'} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}$
+  $\mathbf{{'}H{}'} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}$
 
 **Theorem 13.1.** The output of a sequence of optical elements is the product of their Jones
 matrices applied to the input Jones vector:
 
-$$\mathbf{'\{'}E{'\}'}_{\mathrm{out{}} = \mathbf{'\{'}M{'\}'}_n \cdots \mathbf{'\{'}M{'\}'}_2\,\mathbf{'\{'}M{'\}'}_1\,\mathbf{'\{'}E{'\}'}_{\mathrm{in{}}$$
+$$\mathbf{{'}E{}'}_{\mathrm{out{}} = \mathbf{{'}M{}'}_n \cdots \mathbf{{'}M{}'}_2\,\mathbf{{'}M{}'}_1\,\mathbf{{'}E{}'}_{\mathrm{in{}}$$
 
 ### 13.2 Stokes Parameters
 
@@ -2156,7 +2151,7 @@ Where $(x', y')$ are coordinates in the observation plane at distance $z$ from t
 
 Defining spatial frequencies $f_x = x'/(\lambda z)$$f_y = y'/(\lambda z)$:
 
-$$U(f_x, f_y) \propto \mathcal{'\{'}F{'\}'}\{t(x,y)\}(f_x, f_y)$$
+$$U(f_x, f_y) \propto \mathcal{{'}F{}'}\{t(x,y)\}(f_x, f_y)$$
 
 This correspondence between diffraction and Fourier transforms is the foundation of Fourier optics
 and has profound implications for image processing and optical information processing.
@@ -2425,7 +2420,7 @@ separation $d = 1$ mm, used at normal incidence with $\lambda = 500$ nm.
 
 (a) Calculate the free spectral range (FSR) in frequency and wavelength.
 
-(b) Calculate the finesse $\mathcal{'\{'}F{'\}'}$.
+(b) Calculate the finesse $\mathcal{{'}F{}'}$.
 
 (c) What is the minimum resolvable wavelength difference?
 
@@ -2440,14 +2435,14 @@ $\Delta\lambda_{\text{FSR{}} = \lambda^2/(2d) = (500 \times 10^{-9})^2/(2 \times
 m $= 0.125$ nm.
 
 (b) Finesse:
-$\mathcal{'\{'}F{'\}'} = \pi\sqrt{R}/(1 - R) = \pi\sqrt{0.8}/(1 - 0.8) = \pi \times 0.894/0.2 = 14.1$.
+$\mathcal{{'}F{}'} = \pi\sqrt{R}/(1 - R) = \pi\sqrt{0.8}/(1 - 0.8) = \pi \times 0.894/0.2 = 14.1$.
 
 (c) Minimum resolvable wavelength difference (resolution):
 
-$$\delta\lambda = \frac{\Delta\lambda_{\text{FSR{}}}{\mathcal{'\{'}F{'\}'}} = \frac{0.125}{14.1}\ \text{nm{} = 0.0089\ \text{nm{} = 8.9\ \text{pm{}$$
+$$\delta\lambda = \frac{\Delta\lambda_{\text{FSR{}}}{\mathcal{{'}F{}'}} = \frac{0.125}{14.1}\ \text{nm{} = 0.0089\ \text{nm{} = 8.9\ \text{pm{}$$
 
 This corresponds to a resolving power
-$\mathcal{'\{'}R{'\}'} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
+$\mathcal{{'}R{}'} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
 
 </details>
 
@@ -2532,7 +2527,7 @@ $$\eta \approx \frac{8\pi^2 \times (2.0 \times 10^{-12})^2 \times 10^{-4} \times
 **Compressed sensing** (Candes, Tao, Donoho, 2006) shows that signals that are **sparse** in some
 basis can be reconstructed from far fewer measurements than Nyquist sampling requires:
 
-$$\hat{\mathbf{'\{'}x{'\}'}} = \arg\min_{\mathbf{'\{'}x{'\}'}} \|\mathbf{'\{'}x{'\}'}\|_1 \quad \text{subject to {} \mathbf{'\{'}y{'\}'} = \Phi\mathbf{'\{'}x{'\}'}$$
+$$\hat{\mathbf{{'}x{}'}} = \arg\min_{\mathbf{{'}x{}'}} \|\mathbf{{'}x{}'}\|_1 \quad \text{subject to {} \mathbf{{'}y{}'} = \Phi\mathbf{{'}x{}'}$$
 
 Where $\Phi$ is the measurement matrix and $|\cdot|_1$ is the $L^1$ norm promoting sparsity.
 

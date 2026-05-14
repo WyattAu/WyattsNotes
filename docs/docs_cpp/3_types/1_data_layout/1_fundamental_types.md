@@ -11,7 +11,7 @@ categories:
 slug: fundamental-types
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In managed languages (Java, C#), types are abstract constraints enforced by a virtual machine. In
 C++, types are direct mappings to hardware capabilities. A `uint64_t` translates directly to a

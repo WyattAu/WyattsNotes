@@ -58,8 +58,6 @@ $$T = 37 + 273.15 = 310.15 \mathrm{ K}$$
 
 $$T_F = \frac{9}{5}(37) + 32 = 66.6 + 32 = 98.6^\circ\mathrm{F}$$
 
-</details>
-
 ### Worked Example 1b
 
 The surface temperature of the Sun is approximately $5778 \mathrm{ K}$. Express this in Celsius.
@@ -68,8 +66,6 @@ The surface temperature of the Sun is approximately $5778 \mathrm{ K}$. Express 
 <summary>Solution</summary>
 
 $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
-
-</details>
 
 ### Thermometric Properties
 
@@ -225,8 +221,6 @@ $$118860 = 2863T_f$$
 
 $$T_f = 41.5^\circ\mathrm{C}$$
 
-</details>
-
 ### Worked Example 3
 
 An electric heater rated at $2000$ W heats $3.0$ kg of water from $25^\circ\mathrm{C}$ to
@@ -248,8 +242,6 @@ With $80\%$ efficiency:
 $$0.80 \times 2000 \times t = 627900$$
 
 $$t = \frac{627900}{1600} = 392.4 \mathrm{ s} = 6.5 \mathrm{ minutes}$$
-
-</details>
 
 ### Method of Mixtures Experiment
 
@@ -377,8 +369,6 @@ $$Q_5 = mc\Delta T = 0.5 \times 2010 \times 10 = 10050 \mathrm{ J}$$
 
 $$Q_{\mathrm{total}} = 21000 + 167000 + 209300 + 1130000 + 10050 = 1537350 \mathrm{ J} \approx 1.54 \mathrm{ MJ}$$
 
-</details>
-
 ### Worked Example 5
 
 $200$ g of ice at $0^\circ\mathrm{C}$ is added to $400$ g of water at $50^\circ\mathrm{C}$ in an
@@ -412,8 +402,6 @@ $$16920 = 0.6 \times 4186 \times T_f$$
 $$T_f = \frac{16920}{2511.6} = 6.7^\circ\mathrm{C}$$
 
 The final mixture is all liquid water at $6.7^\circ\mathrm{C}$.
-
-</details>
 
 ### Determining Specific Latent Heat by Electrical Method
 
@@ -623,8 +611,6 @@ $$\lambda_{\mathrm{max}} = \frac{b}{T} = \frac{2.898 \times 10^{-3}}{5778} = 5.0
 This is in the green-blue region of the visible spectrum, consistent with the Sun appearing
 Yellowish-white (the combined effect of all wavelengths, modified by atmospheric scattering).
 
-</details>
-
 #### Newton's Law of Cooling
 
 When the temperature difference is not too large, the rate of heat loss from a body to its
@@ -762,8 +748,6 @@ $$T_2 = \frac{p_2 V_2 T_1}{p_1 V_1} = \frac{(5.0 \times 10^5)(2.0 \times 10^{-3}
 
 $$T_2 = \frac{3000}{1000} = 300 \mathrm{ K}$$
 
-</details>
-
 ### Worked Example 7
 
 Find the number of moles of gas in a $2.0$ L container at $25^\circ\mathrm{C}$ and
@@ -775,8 +759,6 @@ $1.01 \times 10^5$ Pa.
 $$n = \frac{pV}{RT} = \frac{(1.01 \times 10^5)(2.0 \times 10^{-3})}{(8.314)(298.15)}$$
 
 $$n = \frac{202}{2478.9} = 0.0815 \mathrm{ mol}$$
-
-</details>
 
 ### Experimental Verification of Gas Laws
 
@@ -848,8 +830,8 @@ Terms of the microscopic behaviour of molecules.
 ### Pressure of an Ideal Gas -- Derivation
 
 Consider $N$ molecules in a cubic container of side $L$. A single molecule of mass $m$ moving with
-Velocity $\mathbf{'\{'}v{'\}'} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to
-the $x$-axis.
+Velocity $\mathbf{{'}v{}'} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to the
+$x$-axis.
 
 **Change in momentum per collision:**
 
@@ -925,8 +907,6 @@ Room temperature ($300$ K).
 $$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3 \times 8.314 \times 300}{0.0280}}$$
 
 $$v_{\mathrm{rms}} = \sqrt{\frac{7482.6}{0.0280}} = \sqrt{267235.7} = 517 \mathrm{ m/s}$$
-
-</details>
 
 ### Maxwell-Boltzmann Speed Distribution
 
@@ -1040,8 +1020,6 @@ $$W = nRT\ln\left(\frac{V_2}{V_1}\right) = 2.0 \times 8.314 \times 300 \times \l
 $$W = 4988.4 \times \ln(3) = 4988.4 \times 1.099 = 5482 \mathrm{ J}$$
 
 Since the process is isothermal, $\Delta U = 0$So $Q = W = 5482$ J.
-
-</details>
 
 ---
 
@@ -1170,14 +1148,14 @@ Do not add the U-values of individual layers directly.
 The surface temperature of the Sun is approximately $5778$ K. Express this in Celsius and
 Fahrenheit.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 $$T_C = 5778 - 273.15 = 5504.85^\circ\mathrm{C}$$
 
 $$T_F = \frac{9}{5}(5504.85) + 32 = 9908.73 + 32 = 9940.73^\circ\mathrm{F}$$
 
-</details>
 </details>
 
 <details>
@@ -1208,7 +1186,6 @@ $$108425 = 2447T_f$$
 
 $$T_f = 44.3^\circ\mathrm{C}$$
 
-</details>
 </details>
 
 <details>
@@ -1247,7 +1224,6 @@ $$m = \frac{167440}{2260000} = 0.0741 \mathrm{ kg} = 74.1 \mathrm{ g}$$
 The final mixture is $174.1$ g of water and $25.9$ g of steam at $100^\circ\mathrm{C}$.
 
 </details>
-</details>
 
 <details>
 <summary>Question 4: Thermal Conductivity</summary>
@@ -1264,7 +1240,6 @@ $$\frac{Q}{t} = kA\frac{T_1 - T_2}{d} = 0.8 \times 1.5 \times \frac{20 - 5}{0.00
 
 $$\frac{Q}{t} = 1.2 \times \frac{15}{0.005} = 1.2 \times 3000 = 3600 \mathrm{ W}$$
 
-</details>
 </details>
 
 <details>
@@ -1285,7 +1260,6 @@ $$\frac{1}{U} = 0.1667 + 1.25 = 1.4167 \mathrm{ m}^2\mathrm{ K/W}$$
 $$U = \frac{1}{1.4167} = 0.706 \mathrm{ W m}^{-2}\mathrm{ K}^{-1}$$
 
 </details>
-</details>
 
 <details>
 <summary>Question 6: Stefan-Boltzmann Law</summary>
@@ -1303,7 +1277,6 @@ $$P = 5.67 \times 10^{-8} \times 0.03142 \times 6.25 \times 10^{10}$$
 
 $$P = 5.67 \times 10^{-8} \times 1.963 \times 10^9 = 111.3 \mathrm{ W}$$
 
-</details>
 </details>
 
 <details>
@@ -1337,7 +1310,6 @@ Volume at STP conditions ($20^\circ\mathrm{C}$$1.01 \times 10^5$ Pa):
 $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
 
 </details>
-</details>
 
 <details>
 <summary>Question 8: RMS Speed Comparison</summary>
@@ -1353,7 +1325,6 @@ $$\frac{v_{\mathrm{rms,H}_2}}{v_{\mathrm{rms,O}_2}} = \sqrt{\frac{M_{\mathrm{O}_
 Hydrogen molecules move four times faster than oxygen molecules at the same temperature. This is
 Consistent with the observation that lighter gases diffuse more rapidly (Graham's law).
 
-</details>
 </details>
 
 <details>
@@ -1392,7 +1363,6 @@ Alternatively, using $C_p = \frac{5}{2}R$:
 $$Q = nC_p\Delta T = 1.0 \times \frac{5}{2} \times 8.314 \times 300 = 6235.5 \mathrm{ J}$$
 
 </details>
-</details>
 
 <details>
 <summary>Question 10: Adiabatic Expansion</summary>
@@ -1421,7 +1391,6 @@ $$T_2 = \frac{p_2 V_2}{nR} = \frac{1.516 \times 10^5 \times 0.010}{2.0 \times 8.
 
 The temperature drops because the gas does work on its surroundings without any heat input.
 
-</details>
 </details>
 
 <details>
@@ -1463,7 +1432,6 @@ $$\frac{-t}{739.8} = \ln\left(\frac{1}{2}\right) = -0.693$$
 $$t = 739.8 \times 0.693 = 512.7 \mathrm{ s} \approx 8.5 \mathrm{ minutes}$$
 
 </details>
-</details>
 
 <details>
 <summary>Question 12: Wien's Displacement Law</summary>
@@ -1480,7 +1448,6 @@ This is in the **near-infrared** region (visible light extends from approximatel
 Nm). Such stars appear reddish to the eye because the tail of the distribution extends into the red
 Part of the visible spectrum.
 
-</details>
 </details>
 
 <details>
@@ -1507,7 +1474,6 @@ $$\lambda = \frac{1}{1.414 \times 3.14159 \times 1.296 \times 10^{-19} \times 2.
 $$\lambda = \frac{1}{1.537 \times 10^{7}} = 6.51 \times 10^{-8} \mathrm{ m} = 65.1 \mathrm{ nm}$$
 
 </details>
-</details>
 
 <details>
 <summary>Question 14: Density of a Gas</summary>
@@ -1522,7 +1488,6 @@ $$\rho = \frac{pM}{RT} = \frac{(1.01 \times 10^5)(0.0280)}{(8.314)(298.15)}$$
 
 $$\rho = \frac{2828}{2478.9} = 1.141 \mathrm{ kg/m}^3$$
 
-</details>
 </details>
 
 <details>
@@ -1562,7 +1527,6 @@ $$t = \frac{Q_{\mathrm{total}}}{P} = \frac{1516800}{500} = 3033.6 \mathrm{ s} = 
 For the A-Level treatment of this topic, see
 [Thermal Properties](https://alevel.wyattau.com/docs/physics/thermal-physics/thermal-properties).
 
-</details>
 </details>
 
 ---

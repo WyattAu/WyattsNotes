@@ -214,8 +214,6 @@ Tax revenue = `12 \times 31.5 = 378`.
 
 DWL = `0.5 \times 12 \times (37.5 - 31.5) = 0.5 \times 12 \times 6 = 36`.
 
-</details>
-
 ---
 
 ## Corrective Subsidies
@@ -266,8 +264,6 @@ Social optimum: `MSB = 38 - 0.1Q`. Set `MSB = MSC`: `38 - 0.1Q = 4 + 0.1Q``Q_{op
 Subsidy = `MEB = 8` per vaccination. Government cost = `8 \times 170 = 1,360`.
 
 DWL without intervention = `0.5 \times 8 \times (170 - 130) = 0.5 \times 8 \times 40 = 160`.
-
-</details>
 
 ---
 
@@ -587,8 +583,6 @@ Price producers receive (net of tax): `P = 10 + 0.5(23.33) = 21.67`.
 (d) The Pigouvian tax = `MEC = 5` per unit. This shifts the supply curve up from `MPC` to `MSC`And
 The new equilibrium is at the social optimum.
 
-</details>
-
 <details>
 <summary>Question 2: Positive Externality Analysis</summary>
 
@@ -610,8 +604,6 @@ Deadweight loss. (d) What per-unit subsidy would achieve the social optimum?
 And the new equilibrium is at the social optimum.
 
 Government cost = `10 x 150 = 1,500`.
-
-</details>
 
 <details>
 <summary>Question 3: Public Goods and Free Riding</summary>
@@ -639,8 +631,6 @@ Understate their valuation (say they value it at USD 50) to pay less while still
 Cost (USD 120,000) is less than the total benefit (USD 200,000), the park should be built. Each
 Resident can be taxed USD 120 (120,000 / 1,000), which is less than their valuation (USD 200), so
 Everyone is better off.
-
-</details>
 
 <details>
 <summary>Question 4: Information Asymmetry</summary>
@@ -680,8 +670,6 @@ Selection death spiral").
   Act).
 - **Group insurance:** Employers offer insurance to their entire workforce, spreading risk across a
   mixed group of healthy and unhealthy individuals.
-
-</details>
 
 <details>
 <summary>Question 5: Cap and Trade vs Pigouvian Tax</summary>
@@ -731,8 +719,6 @@ Is equal across all firms.
 Under the uniform mandate, Plant `B` is forced to abate beyond its cost-effective level, while Plant
 `A` abates less than it could cost-effectively. Trading corrects this misallocation.
 
-</details>
-
 <details>
 <summary>Question 6: Government Failure Evaluation</summary>
 
@@ -781,8 +767,6 @@ Considering both the market failure and the potential for government failure.
 A complete ban is a blunt instrument that may cause more harm than good. Targeted interventions
 (taxes, regulation, information) are more likely to improve net welfare than a prohibition.
 
-</details>
-
 <details>
 <summary>Question 7: Coase Theorem Application</summary>
 
@@ -826,8 +810,6 @@ In practice, the Coase theorem often fails because transaction costs are high (l
 Collective action problems among many affected parties), property rights are unclear, and there are
 Many affected parties (making bargaining impractical). In these cases, government intervention
 (taxes, regulation, or tradable permits) is necessary.
-
-</details>
 
 ### Merit Goods: Education and Healthcare as Examples
 
@@ -898,7 +880,8 @@ Is `P = 2 + 0.01Q`.
 Per-unit tax on consumers would achieve the social optimum? (d) Calculate the DWL without
 intervention.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 (a) Market: `MPB = MPC`: `20 - 0.02Q = 2 + 0.01Q``0.03Q = 18``Q = 600`. `P = 8`.
@@ -909,8 +892,6 @@ intervention.
 (c) Tax = `MEC = 6` per pack of cigarettes.
 
 (d) DWL = `0.5 \times 6 \times (600 - 400) = 0.5 \times 6 \times 200 = 600`.
-
-</details>
 
 If you get this wrong, revise:
 [Negative Externality of Consumption](#negative-externality-of-consumption)
@@ -940,8 +921,6 @@ provision will Under-provide or not provide at all.
 Resident can be taxed `25,000/500 = 50`Which is less than their valuation (60). Everyone is better
 Off.
 
-</details>
-
 If you get this wrong, revise: [Public Goods](#public-goods)
 
 </details>
@@ -967,8 +946,6 @@ Least USD 2,200.
 (c) Low-risk customers exit. Remaining pool has more high-risk customers. The insurer must raise the
 Premium further. This "death spiral" may collapse the market entirely, leaving only high-risk
 Customers at very high premiums.
-
-</details>
 
 If you get this wrong, revise: [Adverse Selection](#adverse-selection)
 
@@ -1000,8 +977,6 @@ allocation Is efficient.
 (e) **Demerit good.** Negative externalities (second-hand smoke, healthcare costs). Information
 problems And addiction. Over-consumed.
 
-</details>
-
 If you get this wrong, revise: [Merit Goods and Demerit Goods](#merit-goods-and-demerit-goods)
 
 </details>
@@ -1030,8 +1005,6 @@ Cost of A: `30(12.5) + 3(156.25)/2 = 375 + 234.4 = 609.4`. Cost of B:
 
 (c) Savings = `1,056 - 1,055 = 1` (small saving here, but the principle holds: trading allows
 equalisation Of marginal costs).
-
-</details>
 
 If you get this wrong, revise:
 [Tradable Pollution Permits (Cap and Trade)](#tradable-pollution-permits-cap-and-trade)
@@ -1070,8 +1043,6 @@ Using economic concepts.
 **Conclusion:** While intervention is justified, a blanket ban is disproportionate. Targeted
 measures (taxes, regulation, information) are more likely to improve net welfare.
 
-</details>
-
 If you get this wrong, revise: [Government Failure](#government-failure)
 
 </details>
@@ -1101,8 +1072,6 @@ Significant income effects.
 
 (d) In practice: many affected parties (collective action problems), high legal costs, uncertainty
 About damages, difficulty enforcing agreements, income effects.
-
-</details>
 
 If you get this wrong, revise: [The Coase Theorem](#the-coase-theorem)
 
@@ -1135,8 +1104,6 @@ NPV = `772.2 - 500 = 272.2` million.
 Costs (noise, visual impact); uncertain economic activity estimates; the discount rate choice
 Significantly affects the result (a higher rate would reduce NPV); distributional effects (who gains
 And who loses) are not captured.
-
-</details>
 
 If you get this wrong, revise:
 [Cost-Benefit Analysis of Government Intervention](#cost-benefit-analysis-of-government-intervention)

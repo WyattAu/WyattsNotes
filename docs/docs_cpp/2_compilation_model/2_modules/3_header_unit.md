@@ -11,7 +11,7 @@ categories:
 slug: header-units
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The transition from a text-based inclusion model (`#include`) to a semantic module model (`import`)
 Cannot happen instantaneously. The C++ ecosystem relies on millions of lines of headers (POSIX,

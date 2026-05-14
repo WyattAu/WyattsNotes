@@ -12,7 +12,7 @@ categories:
 slug: contiguous-memory-views-std-span
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Contiguous Memory Views (`std::span`)
 

@@ -247,8 +247,8 @@ Library patterns.
 - **`when_any(tasks...)`**: returns when **any** task completes, cancelling the rest. The result
   identifies which task finished first.
 
-The complexity of `when_all` for $n$ tasks is $\mathcal{'\{'}O{'\}'}(n)$ in terms of coroutine
-handles that Must be tracked and resumed.
+The complexity of `when_all` for $n$ tasks is $\mathcal{{'}O{}'}(n)$ in terms of coroutine handles
+that Must be tracked and resumed.
 
 ### `when_all` Implementation
 
@@ -652,7 +652,7 @@ Threads. It provides automatic load balancing without centralized coordination:
 
 The work-stealing algorithm has provably optimal time bounds: the expected execution time of a fully
 Strict (fork-join) computation with $P$ processors and work $T_1$ is
-$\mathcal{'\{'}O{'\}'}(T_1 / P +
+$\mathcal{{'}O{}'}(T_1 / P +
 T_{\infty})$, where $T_{\infty}$ is the span (critical path length)
 [Blumofe And Leiserson, 1999].
 

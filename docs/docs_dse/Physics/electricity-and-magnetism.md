@@ -163,8 +163,6 @@ $$F = \frac{8.99 \times 10^9 \times 15 \times 10^{-12}}{0.04} = \frac{0.1349}{0.
 
 The negative sign of $Q_2$ means the force is attractive.
 
-</details>
-
 ### Worked Example 1b
 
 A point charge of $+5 \times 10^{-8} \mathrm{ C}$ is placed in a uniform electric field of
@@ -181,8 +179,6 @@ $$W = qEd = (5 \times 10^{-8})(2000)(0.3) = 3.0 \times 10^{-5} \mathrm{ J}$$
 The force acts in the direction of the field (for a positive charge). Moving against the field
 Requires work to be done on the charge.
 
-</details>
-
 ### Worked Example 2
 
 A uniform electric field of strength $5000 \mathrm{ V/m}$ exists between two parallel plates
@@ -195,8 +191,6 @@ Between the plates.
 $$V = Ed = 5000 \times 0.04 = 200 \mathrm{ V}$$
 
 $$F = qE = (1.6 \times 10^{-19})(5000) = 8.0 \times 10^{-16} \mathrm{ N}$$
-
-</details>
 
 ---
 
@@ -343,8 +337,6 @@ $$A = \pi r^2 = \pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2 = \pi (2.5 \time
 
 $$R = \frac{\rho L}{A} = \frac{(1.68 \times 10^{-8})(10)}{1.963 \times 10^{-7}} = \frac{1.68 \times 10^{-7}}{1.963 \times 10^{-7}} = 0.856 \Omega$$
 
-</details>
-
 ### Worked Example 3b
 
 A nichrome wire of length $2.0 \mathrm{ m}$ has resistance $10 \Omega$. If the wire is stretched To
@@ -361,8 +353,6 @@ $$R_2 = \frac{\rho L_2}{A_2} = \frac{\rho L_2}{A_1 \times (L_1/L_2)} = R_1 \time
 
 _If you get this wrong, revise: Resistivity formula and the relationship between resistance, length,
 And cross-sectional area._
-
-</details>
 
 ---
 
@@ -489,8 +479,6 @@ $$V = \varepsilon - Ir = 12 - 2.0 \times 0.5 = 12 - 1.0 = 11.0 \mathrm{ V}$$
 
 $$P = I^2 R = (2.0)^2 \times 5.5 = 4 \times 5.5 = 22.0 \mathrm{ W}$$
 
-</details>
-
 ### Worked Example 5
 
 A potential divider consists of $R_1 = 4 \mathrm{ k}\Omega$ and $R_2 = 6 \mathrm{ k}\Omega$
@@ -509,8 +497,6 @@ $$V_{\mathrm{out}} = 12 \times \frac{6}{4 + 6} = 12 \times \frac{6}{10} = 7.2 \m
 $$R_2 \parallel R_L = \frac{6 \times 10}{6 + 10} = \frac{60}{16} = 3.75 \mathrm{ k}\Omega$$
 
 $$V_{\mathrm{out}} = 12 \times \frac{3.75}{4 + 3.75} = 12 \times \frac{3.75}{7.75} = 12 \times 0.4839 = 5.81 \mathrm{ V}$$
-
-</details>
 
 ---
 
@@ -577,8 +563,6 @@ Daily cost: $\mathrm{Cost} = 6 \times 0.90 = \$5.40$
 Monthly energy: $6 \times 30 = 180 \mathrm{ kWh}$
 
 Monthly cost: $180 \times 0.90 = \$162$
-
-</details>
 
 ---
 
@@ -656,8 +640,6 @@ $$F = BIL \sin\theta = 0.3 \times 5 \times 0.4 \times \sin 30^\circ$$
 
 $$F = 0.6 \times 0.5 = 0.30 \mathrm{ N}$$
 
-</details>
-
 ### Worked Example 8
 
 Two long parallel wires separated by $0.1 \mathrm{ m}$ carry currents of $10 \mathrm{ A}$ and
@@ -671,8 +653,6 @@ $$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} = \frac{(4\pi \times 10^{-7})(10)(1
 $$\frac{F}{L} = \frac{4\pi \times 10^{-7} \times 150}{0.2\pi} = \frac{6 \times 10^{-5}}{0.2} = 3.0 \times 10^{-4} \mathrm{ N/m}$$
 
 Since the currents are in the same direction, the force is attractive.
-
-</details>
 
 ---
 
@@ -807,8 +787,6 @@ $$P = V_p I_p = 220 \times 5 = 1100 \mathrm{ W}$$
 
 (Checking: $V_s I_s = 1100 \times 1.0 = 1100 \mathrm{ W}$Which confirms conservation of energy.)
 
-</details>
-
 ### Worked Example 9b
 
 A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at $50 \mathrm{ rev/s}$
@@ -822,8 +800,6 @@ $$\omega = 2\pi f = 2\pi \times 50 = 100\pi \mathrm{ rad/s}$$
 $$\varepsilon_0 = NAB\omega = 100 \times 0.02 \times 0.5 \times 100\pi = 100\pi = 314 \mathrm{ V}$$
 
 _If you get this wrong, revise: Faraday's law and the AC generator EMF formula._
-
-</details>
 
 ---
 
@@ -924,7 +900,8 @@ $$T = \frac{1}{f} = \frac{1}{50} = 0.02 \mathrm{ s} = 20 \mathrm{ ms}$$
 $+4 \times 10^{-8} \mathrm{ C}$Are separated by $0.05 \mathrm{ m}$ in a vacuum. Calculate the
 Electrostatic force between them.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 $$F = \frac{kQ_1 Q_2}{r^2} = \frac{(8.99 \times 10^9)(4 \times 10^{-8})^2}{(0.05)^2}$$
@@ -932,8 +909,6 @@ $$F = \frac{kQ_1 Q_2}{r^2} = \frac{(8.99 \times 10^9)(4 \times 10^{-8})^2}{(0.05
 $$F = \frac{8.99 \times 10^9 \times 16 \times 10^{-16}}{0.0025} = \frac{1.4384 \times 10^{-5}}{0.0025} = 5.75 \times 10^{-3} \mathrm{ N}$$
 
 The force is repulsive since both charges are positive.
-
-</details>
 
 **Question 2:** A $2000 \mathrm{ W}$ heater, a $100 \mathrm{ W}$ lamp, and a $500 \mathrm{ W}$ fan
 Are connected in parallel across a $220 \mathrm{ V}$ mains supply. Find the total current drawn and
@@ -950,8 +925,6 @@ Energy consumed: $E = Pt = 2.6 \times 5 = 13 \mathrm{ kWh}$
 
 Total cost: $\mathrm{Cost} = 13 \times 0.90 = \$11.70$
 
-</details>
-
 **Question 3:** In a potential divider circuit, $R_1 = 10 \mathrm{ k}\Omega$ and
 $R_2 = 20 \mathrm{ k}\Omega$ are connected in series across a $9 \mathrm{ V}$ battery. A voltmeter
 Of resistance $50 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltmeter.
@@ -964,8 +937,6 @@ The voltmeter acts as a load across $R_2$:
 $$R_2 \parallel R_V = \frac{20 \times 50}{20 + 50} = \frac{1000}{70} = 14.29 \mathrm{ k}\Omega$$
 
 $$V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{24.29} = 9 \times 0.5884 = 5.30 \mathrm{ V}$$
-
-</details>
 
 **Question 4:** A cell of EMF $6 \mathrm{ V}$ and internal resistance $0.8 \Omega$ is connected to
 An external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of
@@ -986,8 +957,6 @@ Current: $I = \frac{\varepsilon}{R_{\mathrm{total}}} = \frac{6}{8.0} = 0.75 \mat
 
 Terminal PD: $V = \varepsilon - Ir = 6 - 0.75 \times 0.8 = 6 - 0.6 = 5.4 \mathrm{ V}$
 
-</details>
-
 **Question 5:** A rectangular coil of 100 turns, each of area $0.02 \mathrm{ m}^2$Is rotated at
 $50 \mathrm{ rev/s}$ in a uniform magnetic field of flux density $0.5 \mathrm{ T}$. The axis of
 Rotation is perpendicular to the field. Find the peak EMF and the EMF when the plane of the coil
@@ -1005,8 +974,6 @@ When the plane of the coil makes $60^\circ$ with the field, the angle between th
 And the field is $30^\circ$. The EMF is:
 
 $$\varepsilon = \varepsilon_0 \sin 30^\circ = 314 \times 0.5 = 157 \mathrm{ V}$$
-
-</details>
 
 **Question 6:** A step-down transformer with 2000 primary turns and 100 secondary turns is used to
 Reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the device draws a current
@@ -1028,8 +995,6 @@ Primary current: $I_p = \frac{P_{\mathrm{in}}}{V_p} = \frac{122.2}{220} = 0.556 
 Power loss:
 $P_{\mathrm{loss}} = P_{\mathrm{in}} - P_{\mathrm{out}} = 122.2 - 110 = 12.2 \mathrm{ W}$
 
-</details>
-
 **Question 7:** An electron is accelerated from rest through a potential difference of
 $5000 \mathrm{ V}$ between two parallel plates separated by $2 \mathrm{ cm}$. Find the electric
 Field strength, the force on the electron, and the velocity of the electron as it reaches the
@@ -1049,8 +1014,6 @@ $$v = \sqrt{\frac{2eV}{m_e}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 5
 
 $$v = \sqrt{\frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}}} = \sqrt{1.756 \times 10^{15}} = 4.19 \times 10^7 \mathrm{ m/s}$$
 
-</details>
-
 **Question 8:** A straight wire of length $0.5 \mathrm{ m}$ carries a current of $8 \mathrm{ A}$ and
 Lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$. Calculate the
 Force on the wire. If the wire is rotated so that it makes an angle of $45^\circ$ with the field,
@@ -1066,8 +1029,6 @@ $$F = BIL \sin 90^\circ = 0.4 \times 8 \times 0.5 \times 1 = 1.6 \mathrm{ N}$$
 Force when at $45^\circ$:
 
 $$F = BIL \sin 45^\circ = 0.4 \times 8 \times 0.5 \times 0.7071 = 1.131 \mathrm{ N}$$
-
-</details>
 
 **Question 9:** A cell is connected to a variable resistor $R$. A voltmeter across the cell reads
 $1.5 \mathrm{ V}$ when $R = 8 \Omega$ and $1.2 \mathrm{ V}$ when $R = 4 \Omega$. Find the EMF and
@@ -1094,8 +1055,6 @@ $$r = \frac{0.3}{0.1125} = 2.67 \Omega$$
 
 $$\varepsilon = 1.2 + 0.3 \times 2.67 = 1.2 + 0.8 = 2.0 \mathrm{ V}$$
 
-</details>
-
 **Question 10:** A solenoid of length $0.3 \mathrm{ m}$ has 600 turns and carries a current of
 $4 \mathrm{ A}$. A straight wire running parallel to the axis of the solenoid at a distance of
 $0.02 \mathrm{ m}$ from it carries a current of $5 \mathrm{ A}$ in the same direction. Find the
@@ -1116,8 +1075,6 @@ Magnetic field inside the solenoid. Since the angle between the current and the 
 $$F = BIL \sin 0^\circ = 0$$
 
 The force per unit length on the wire is zero.
-
-</details>
 
 </details>
 
@@ -1144,7 +1101,6 @@ The force is attractive (towards the positive charge).
 _If you get this wrong, revise: Coulomb's law, electric field of a point charge, and the
 relationship $E = F/q$._
 
-</details>
 </details>
 
 <details>
@@ -1175,7 +1131,6 @@ _If you get this wrong, revise: Series and parallel resistance combinations and 
 resistance._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 3: Current from Charge Flow</summary>
@@ -1194,7 +1149,6 @@ _If you get this wrong, revise: The relationship between current, charge, and th
 $Q = ne = It$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 4: Resistivity — Finding Length</summary>
@@ -1212,7 +1166,6 @@ $$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times
 _If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find
 length._
 
-</details>
 </details>
 
 <details>
@@ -1241,7 +1194,6 @@ _If you get this wrong, revise: Potential divider formula and how NTC thermistor
 With temperature._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 6: Kirchhoff's Laws — Two-Loop Circuit</summary>
@@ -1262,7 +1214,6 @@ $$I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$$
 
 _If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis._
 
-</details>
 </details>
 
 <details>
@@ -1285,7 +1236,6 @@ _If you get this wrong, revise: Force on a moving charge in a magnetic field ($F
 circular Motion of charged particles._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 8: Faraday's Law — Moving Wire</summary>
@@ -1301,7 +1251,6 @@ $$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
 _If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic
 field ($\varepsilon = BLv$)._
 
-</details>
 </details>
 
 <details>
@@ -1328,7 +1277,6 @@ Note: $P_{\mathrm{average}} = \frac{P_{\mathrm{peak}}}{2}$ as expected.
 _If you get this wrong, revise: RMS values, peak values, and power in AC circuits._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 10: Transformer Efficiency</summary>
@@ -1350,7 +1298,6 @@ $$I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$$
 
 _If you get this wrong, revise: Transformer equation and efficiency calculations._
 
-</details>
 </details>
 
 <details>
@@ -1382,7 +1329,6 @@ $$\varepsilon = 11.5 + 0.5(1.0) = 12.0 \mathrm{ V}$$
 _If you get this wrong, revise: Internal resistance and the equation $V = \varepsilon - Ir$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 12: Magnetic Field at Centre of Circular Loop</summary>
@@ -1398,7 +1344,6 @@ $$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac
 _If you get this wrong, revise: Magnetic field at the centre of a circular current loop
 ($B = \mu_0 I / 2r$)._
 
-</details>
 </details>
 
 <details>
@@ -1419,7 +1364,6 @@ $$t = \frac{E}{P} = \frac{474353}{1500} = 316.2 \mathrm{ s} = 5.27 \mathrm{ minu
 
 _If you get this wrong, revise: Electrical energy, specific heat capacity, and efficiency._
 
-</details>
 </details>
 
 <details>
@@ -1455,7 +1399,6 @@ The electric field is zero at $x = 0.04 \mathrm{ m}$ from $Q_1$ (or $0.06 \mathr
 _If you get this wrong, revise: Superposition of electric fields and solving for the null point._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 15: Eddy Currents and Lenz's Law</summary>
@@ -1481,7 +1424,6 @@ Insulator, so no eddy currents are induced, and the magnet falls freely under gr
 
 _If you get this wrong, revise: Lenz's law, eddy currents, and electromagnetic braking._
 
-</details>
 </details>
 
 ---

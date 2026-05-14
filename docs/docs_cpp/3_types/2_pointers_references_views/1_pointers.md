@@ -11,7 +11,7 @@ categories:
 slug: pointers
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # Pointer Arithmetic, Array Decay, and Nullability
 

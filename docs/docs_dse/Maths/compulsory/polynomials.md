@@ -13,10 +13,10 @@ slug: polynomials
 ---
 
 A polynomial in one variable $x$ is an expression of the form
-$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$Where $n \in \mathbb{'\{'}N{'\}'}_0$
-$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{'\{'}R{'\}'}$And $a_n \neq 0$. Polynomials and their
-manipulation Form a core part of the DSE compulsory mathematics syllabus, with applications ranging
-from Algebraic identities to combinatorial coefficient extraction.
+$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$Where $n \in \mathbb{{'}N{}'}_0$
+$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{{'}R{}'}$And $a_n \neq 0$. Polynomials and their manipulation
+Form a core part of the DSE compulsory mathematics syllabus, with applications ranging from
+Algebraic identities to combinatorial coefficient extraction.
 
 ## Polynomial Basics
 
@@ -49,7 +49,6 @@ Corresponding powers of $x$ are equal.
 - $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$
 - $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$
 - $a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2 + b^2 + c^2 - ab - bc - ca)$
-</details>
 
 <details>
 <summary>Example: Using the method of undetermined coefficients</summary>
@@ -68,8 +67,6 @@ Equating coefficients:
 - constant: $A - B + C = 6 \implies 1 - 6 + C = 6 \implies C = 11$
 
 Therefore $x^2 + 4x + 6 \equiv (x-1)^2 + 6(x-1) + 11$.
-
-</details>
 
 ---
 
@@ -170,8 +167,6 @@ $$
 
 The coefficient of $x^3$ is $-15\,120$.
 
-</details>
-
 <details>
 <summary>Example: Finding the constant term</summary>
 Find the constant term in the expansion of $\left(x + \dfrac{2}{x}\right)^6$.
@@ -187,8 +182,6 @@ $$
 
 The constant term is $160$.
 
-</details>
-
 <details>
 <summary>Example: Finding the middle term</summary>
 Find the middle term in the expansion of $\left(1 + \dfrac{x}{2}\right)^{10}$.
@@ -198,8 +191,6 @@ Since $n = 10$ (even), there is one middle term at position $\dfrac{n}{2} + 1 = 
 $$
 T_6 = \binom{10}{5} \left(\frac{x}{2}\right)^5 = 252 \cdot \frac{x^5}{32} = \frac{63}{8} x^5
 $$
-
-</details>
 
 ---
 
@@ -238,8 +229,6 @@ Quotient: $q(x) = 2x + 5$Remainder: $r(x) = -4x - 3$.
 
 Verification: $(x^2 - x + 2)(2x + 5) + (-4x - 3) = 2x^3 + 3x^2 - 5x + 7$.
 
-</details>
-
 ### Remainder Theorem
 
 When a polynomial $f(x)$ is divided by $(x - c)$The remainder is $f(c)$.
@@ -260,8 +249,6 @@ $$
 F(2) = 3(16) - 2(8) + 2 - 5 = 48 - 16 + 2 - 5 = 29
 $$
 
-</details>
-
 <details>
 <summary>Example: Remainder with a non-monic linear divisor</summary>
 Find the remainder when $f(x) = 2x^3 - 5x + 3$ is divided by $(2x + 1)$.
@@ -271,8 +258,6 @@ Set $2x + 1 = 0 \implies x = -\dfrac{1}{2}$. The remainder is:
 $$
 F\!\left(-\frac{1}{2}\right) = 2\left(-\frac{1}{2}\right)^3 - 5\left(-\frac{1}{2}\right) + 3 = -\frac{1}{4} + \frac{5}{2} + 3 = \frac{21}{4}
 $$
-
-</details>
 
 ### Factor Theorem
 
@@ -291,8 +276,6 @@ $f(3) = 27 - 36 + 3 + 6 = 0$So $(x - 3)$ is a factor.
 
 By division (or by comparing coefficients), $f(x) = (x - 3)(x^2 - x - 2) = (x-3)(x-2)(x+1)$.
 
-</details>
-
 <details>
 <summary>Example: Finding an unknown constant</summary>
 If $(x + 2)$ is a factor of $f(x) = x^3 + ax^2 - 3x + 10$Find $a$.
@@ -302,8 +285,6 @@ By the Factor Theorem, $f(-2) = 0$:
 $$
 (-2)^3 + a(-2)^2 - 3(-2) + 10 = 0 \implies -8 + 4a + 6 + 10 = 0 \implies 4a + 8 = 0 \implies a = -2
 $$
-
-</details>
 
 ---
 
@@ -319,14 +300,11 @@ $$
 6x^3 - 9x^2 + 12x = 3x(2x^2 - 3x + 4)
 $$
 
-</details>
-
 <details>
 <summary>Grouping</summary>
 $$
 X^3 + 2x^2 - 3x - 6 = x^2(x+2) - 3(x+2) = (x^2 - 3)(x+2)
 $$
-</details>
 
 <details>
 <summary>Difference of squares</summary>
@@ -341,8 +319,6 @@ $$
 $$
 9x^4 - 16y^2 = (3x^2 + 4y)(3x^2 - 4y)
 $$
-
-</details>
 
 <details>
 <summary>Sum and difference of cubes</summary>
@@ -362,8 +338,6 @@ $$
 125x^3 - 8 = (5x-2)(25x^2 + 10x + 4)
 $$
 
-</details>
-
 <details>
 <summary>Quadratic trinomials</summary>
 For $ax^2 + bx + c$Find two numbers $p$ and $q$ such that $pq = ac$ and $p + q = b$.
@@ -373,9 +347,7 @@ $$
 $$
 
 If the discriminant $\Delta = b^2 - 4ac < 0$The quadratic cannot be factorized over
-$\mathbb{'\{'}R{'\}'}$.
-
-</details>
+$\mathbb{{'}R{}'}$.
 
 ### Factorization by the Factor Theorem
 
@@ -396,8 +368,6 @@ $f(2) = 16 + 4 - 26 + 6 = 0$So $(x-2)$ is a factor.
 
 Dividing: $f(x) = (x-2)(2x^2 + 5x - 3) = (x-2)(2x-1)(x+3)$.
 
-</details>
-
 ---
 
 ## Equations
@@ -416,8 +386,6 @@ Solve $x^3 - 3x^2 - 4x + 12 = 0$.
 Factorizing by grouping: $x^2(x-3) - 4(x-3) = (x^2 - 4)(x-3) = (x-2)(x+2)(x-3) = 0$.
 
 Solutions: $x = 2, -2, 3$.
-
-</details>
 
 ### Vieta's Formulas (Quadratic)
 
@@ -451,8 +419,6 @@ $$
 The required equation is $x^2 - \dfrac{21}{4}x + \dfrac{1}{4} = 0$Or equivalently
 $4x^2 - 21x + 1 = 0$.
 
-</details>
-
 <details>
 <summary>Example: Symmetric expressions in roots</summary>
 If $\alpha$ and $\beta$ are roots of $x^2 - 6x + 4 = 0$Find the value of $\dfrac{1}{\alpha} + \dfrac{1}{\beta}$.
@@ -460,8 +426,6 @@ If $\alpha$ and $\beta$ are roots of $x^2 - 6x + 4 = 0$Find the value of $\dfrac
 $$
 \frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{6}{4} = \frac{3}{2}
 $$
-
-</details>
 
 <details>
 <summary>Extension: Vieta's formulas for cubic equations</summary>
@@ -471,14 +435,12 @@ $$
 \alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
 $$
 
-</details>
-
 ---
 
 <details>
 <summary>Wrap-up Questions</summary>
 1. **Question:** Expand $(1 + 2x)^6$ and find the coefficient of $x^4$.
-<details>
+### Details
 <summary>Answer</summary>
 Using the binomial theorem:
 
@@ -494,8 +456,6 @@ $$
 
 The full expansion is $1 + 12x + 60x^2 + 160x^3 + 240x^4 + 192x^5 + 64x^6$.
 
-</details>
-
 2. **Question:** Find the constant term in the expansion of $\left(x^2 + \dfrac{1}{x}\right)^9$.
 <details>
 <summary>Answer</summary>
@@ -509,8 +469,6 @@ $$
 
 The constant term is $84$.
 
-</details>
-
 3. **Question:** When $f(x) = 2x^3 + ax^2 + bx - 6$ is divided by $(x-1)$The remainder is $-4$. When
 divided by $(x+2)$The remainder is $30$. Find $a$ and $b$.
 <details>
@@ -523,8 +481,6 @@ By the Remainder Theorem:
 Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 
 From (i): $b = -\dfrac{26}{3}$.
-
-</details>
 
 4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$ Find
 $a$$b$And $c$. Hence factorize $f(x)$ completely.
@@ -592,8 +548,6 @@ $d$ is the third root. Since no further condition is given, the general answer i
 
 $a = -(d+2)$$b = 2d - 3$$c = 3d$And $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
 
-</details>
-
 5. **Question:** Factorize $x^4 - 5x^2 + 4$ completely.
 <details>
 <summary>Answer</summary>
@@ -602,8 +556,6 @@ Let $u = x^2$:
 $$
 U^2 - 5u + 4 = (u-1)(u-4) = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)
 $$
-
-</details>
 
 6. **Question:** If $\alpha$ and $\beta$ are roots of $3x^2 - 8x + 2 = 0$Find the value of
 $\alpha^3 + \beta^3$ without solving the equation.
@@ -618,8 +570,6 @@ $$
 $$
 = \frac{512}{27} - \frac{48}{9} = \frac{512}{27} - \frac{144}{27} = \frac{368}{27}
 $$
-
-</details>
 
 7. **Question:** Expand $(1 - 3x)^5$ in ascending powers of $x$ up to and including the term in
 $x^3$. Use the expansion to find an approximate value of $(0.97)^5$.
@@ -639,8 +589,6 @@ $$
 (0.97)^5 \approx 1 - 15(0.01) + 90(0.0001) - 270(0.000001) = 1 - 0.15 + 0.009 - 0.00027 = 0.85873
 $$
 
-</details>
-
 8. **Question:** The remainder when $f(x) = x^3 + px^2 + qx + 6$ is divided by $(x-1)$ is $12$. The
 Remainder when $f(x)$ is divided by $(x+1)$ is $18$. Find $p$ and $q$.
 <details>
@@ -653,8 +601,6 @@ Adding: $2p = 18 \implies p = 9$.
 
 From (i): $q = -4$.
 
-</details>
-
 9. **Question:** Prove that $\binom{n}{r} = \binom{n}{n-r}$ using the definition of binomial
 Coefficients.
 <details>
@@ -662,7 +608,6 @@ Coefficients.
 $$
 \binom{n}{n-r} = \frac{n!}{(n-r)!\,[n-(n-r)]!} = \frac{n!}{(n-r)!\,r!} = \binom{n}{r}
 $$
-</details>
 
 10. **Question:** Find the coefficient of $x^5$ in the expansion of $(1 + x)^8(1 - x)^6$.
 <details>
@@ -691,8 +636,6 @@ Sum: $-6 + 120 - 560 + 840 - 420 + 56 = 30$.
 
 The coefficient of $x^5$ is $30$.
 
-</details>
-
 11. **Question:** Let $\alpha$ and $\beta$ be the roots of $x^2 - 7x + 3 = 0$. Form a quadratic
 Equation whose roots are $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
 <details>
@@ -706,8 +649,6 @@ Product of new roots: $\dfrac{1}{\alpha} \cdot \dfrac{1}{\beta} = \dfrac{1}{3}$.
 
 The equation is $x^2 - \dfrac{7}{3}x + \dfrac{1}{3} = 0$Or $3x^2 - 7x + 1 = 0$.
 
-</details>
-
 12. **Question:** Factorize $f(x) = x^3 - 3x^2 + 4$ completely.
 <details>
 <summary>Answer</summary>
@@ -717,7 +658,6 @@ $f(-1) = -1 - 3 + 4 = 0$So $(x+1)$ is a factor.
 
 Dividing: $f(x) = (x+1)(x^2 - 4x + 4) = (x+1)(x-2)^2$.
 
-</details>
 </details>
 
 ---

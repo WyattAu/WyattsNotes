@@ -68,7 +68,7 @@ A^{\log_a x} = x \quad (x \gt{} 0)
 $$
 
 $$
-\log_a(a^y) = y \quad (y \in \mathbb{'\{'}R{'\}'})
+\log_a(a^y) = y \quad (y \in \mathbb{{'}R{}'})
 $$
 
 These two identities express the fact that the logarithmic and exponential functions are
@@ -214,8 +214,8 @@ each other. This means their graphs are reflections of each other across the lin
 
 | Property      | $y = a^x$ (exponential)              | $y = \log_a x$ (logarithmic)         |
 | ------------- | ------------------------------------ | ------------------------------------ |
-| Domain        | $\mathbb{'\{'}R{'\}'}$               | $(0, \infty)$                        |
-| Range         | $(0, \infty)$                        | $\mathbb{'\{'}R{'\}'}$               |
+| Domain        | $\mathbb{{'}R{}'}$                   | $(0, \infty)$                        |
+| Range         | $(0, \infty)$                        | $\mathbb{{'}R{}'}$                   |
 | $x$-intercept | $(0, 1)$ (since $a^0 = 1$)           | $(1, 0)$ (since $\log_a 1 = 0$)      |
 | Asymptote     | Horizontal: $y = 0$                  | Vertical: $x = 0$                    |
 | Monotonicity  | Strictly increasing when $a \gt{} 1$ | Strictly increasing when $a \gt{} 1$ |

@@ -11,7 +11,7 @@ categories:
 slug: linker
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 The Linker (`ld``lld``link.exe`) is the final architect of the binary. While the compiler works In
 isolation on Translation Units (TUs), generating "relocatable object files," the linker is

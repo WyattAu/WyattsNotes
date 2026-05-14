@@ -17,7 +17,7 @@ slug: permutations-and-combinations
 
 ### Definition
 
-For $n \in \mathbb{'\{'}N{'\}'}$:
+For $n \in \mathbb{{'}N{}'}$:
 
 $$n! = n \times (n - 1) \times (n - 2) \times \cdots \times 2 \times 1$$
 

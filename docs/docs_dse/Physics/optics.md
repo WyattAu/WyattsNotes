@@ -71,8 +71,6 @@ $$m = \frac{v}{u} = \frac{30}{15} = 2$$
 
 The image is inverted and magnified by a factor of 2.
 
-</details>
-
 ### Worked Example 1b
 
 An object $4 \mathrm{ cm}$ tall is placed $8 \mathrm{ cm}$ from a concave mirror with focal length
@@ -95,8 +93,6 @@ $\lvert m \rvert = 3$So the image is magnified $3\times$. The negative sign (usi
 Means upright.
 
 Image height: $h_i = 3 \times 4 = 12 \mathrm{ cm}$Virtual and upright.
-
-</details>
 
 ---
 
@@ -139,8 +135,6 @@ $$\sin\theta_2 = \frac{\sin 40^\circ}{1.5} = \frac{0.6428}{1.5} = 0.4285$$
 
 $$\theta_2 = 25.4^\circ$$
 
-</details>
-
 ### Worked Example 2b
 
 A light ray travels from water ($n = 1.33$) into glass ($n = 1.52$) at an angle of incidence of
@@ -162,8 +156,6 @@ $v_w = \frac{c}{n_w} = \frac{3.0 \times 10^8}{1.33} = 2.26 \times 10^8 \mathrm{ 
 
 Speed in glass:
 $v_g = \frac{c}{n_g} = \frac{3.0 \times 10^8}{1.52} = 1.97 \times 10^8 \mathrm{ m/s}$
-
-</details>
 
 ---
 
@@ -204,8 +196,6 @@ $$\sin\theta_c = \frac{n_{\mathrm{air}}}{n_{\mathrm{glass}}} = \frac{1.0}{1.5} =
 
 $$\theta_c = 41.8^\circ$$
 
-</details>
-
 ### Worked Example 3b
 
 A glass fibre has core refractive index $1.50$ and cladding refractive index $1.45$. Light enters
@@ -230,8 +220,6 @@ $$\theta_c = 75.2^\circ$$
 Since $\theta_i = 70^\circ \lt \theta_c = 75.2^\circ$Total internal reflection does **not** occur
 For this ray at $20^\circ$ to the axis. The maximum acceptance angle from the axis would be
 $90^\circ - 75.2^\circ = 14.8^\circ$.
-
-</details>
 
 ---
 
@@ -287,8 +275,6 @@ $$m = \frac{60}{20} = 3$$
 
 The image is inverted and magnified 3 times.
 
-</details>
-
 ### Worked Example 4b
 
 Two thin lenses are placed in contact: a convex lens of focal length $10 \mathrm{ cm}$ and a Concave
@@ -312,8 +298,6 @@ $$\frac{1}{v} = \frac{1}{30} - \frac{1}{30} = 0$$
 
 This means the image is at infinity. An object placed at the focal point of the combination Produces
 parallel rays.
-
-</details>
 
 ---
 
@@ -404,7 +388,8 @@ Light.
 An object is placed $25 \mathrm{ cm}$ in front of a concave mirror with radius of curvature
 $20 \mathrm{ cm}$. Find the image position and magnification.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 $$f = \frac{R}{2} = \frac{20}{2} = 10 \mathrm{ cm}$$
@@ -420,7 +405,6 @@ Real, inverted, diminished image at $16.7 \mathrm{ cm}$ in front of the mirror.
 _If you get this wrong, revise: Concave mirror image formation table and the mirror equation sign
 Convention._
 
-</details>
 </details>
 
 <details>
@@ -438,7 +422,6 @@ $$\theta_2 = 32.6^\circ$$
 
 _If you get this wrong, revise: Snell's law and refractive index definition._
 
-</details>
 </details>
 
 <details>
@@ -460,7 +443,6 @@ $$\theta_c = 33.3^\circ$$
 _If you get this wrong, revise: Conditions for total internal reflection — the light must travel
 from The denser to the less dense medium._
 
-</details>
 </details>
 
 <details>
@@ -486,7 +468,6 @@ Side.
 _If you get this wrong, revise: Thin lens equation and the convex lens image formation table._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 5: Diverging Lens — Virtual Image</summary>
@@ -510,7 +491,6 @@ The image is upright (positive height) and diminished.
 _If you get this wrong, revise: Sign convention for diverging lenses — $f$ is negative, and virtual
 Images have negative $v$._
 
-</details>
 </details>
 
 <details>
@@ -539,7 +519,6 @@ $$h_i = 2.5 \times 2 = 5 \mathrm{ cm}$$
 _If you get this wrong, revise: Concave mirror cases when the object is inside $F$ and the sign
 Convention for virtual images._
 
-</details>
 </details>
 
 <details>
@@ -573,7 +552,6 @@ _If you get this wrong, revise: Conditions for total internal reflection and Sne
 Going from denser to less dense media._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 8: Convex Lens — Object at 2F</summary>
@@ -597,7 +575,6 @@ _If you get this wrong, revise: Convex lens image formation table — the case w
 $2F$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 9: Lens Power</summary>
@@ -619,7 +596,6 @@ A diverging lens of power $-2.0 \mathrm{ D}$ (focal length $-50 \mathrm{ cm}$) i
 
 _If you get this wrong, revise: Defects of vision and the sign convention for corrective lenses._
 
-</details>
 </details>
 
 <details>
@@ -659,7 +635,6 @@ $$M = M_o \times M_e = 5 \times 0.154 = 0.77$$
 _If you get this wrong, revise: Compound microscope magnification formula and two-lens systems._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 11: Astronomical Telescope</summary>
@@ -682,7 +657,6 @@ $$L = f_o + f_e = 80 + 4 = 84 \mathrm{ cm}$$
 _If you get this wrong, revise: Astronomical telescope in normal adjustment and the meaning of tube
 Length._
 
-</details>
 </details>
 
 <details>
@@ -711,7 +685,6 @@ _If you get this wrong, revise: Law of reflection and how the angle of incidence
 successive Mirror surfaces._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 13: Apparent Depth</summary>
@@ -732,7 +705,6 @@ Position.
 _If you get this wrong, revise: Refraction and the relationship between real depth and apparent
 Depth._
 
-</details>
 </details>
 
 <details>
@@ -760,7 +732,6 @@ Light entering at angles less than $20.3^\circ$ to the axis will undergo total i
 _If you get this wrong, revise: Optical fibres, critical angle, and the relationship between the
 Angle to the axis and the angle to the normal._
 
-</details>
 </details>
 
 <details>
@@ -974,7 +945,8 @@ internal reflection.
 (b) Light enters the fibre end at an angle of $20^\circ$ to the axis. Show whether the light
 Undergoes total internal reflection inside the fibre.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 (a) $\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1.50} = 0.967$
@@ -994,8 +966,6 @@ $$\theta_{\max} = \sin^{-1}(0.383) = 22.5^\circ$$
 An entry angle of $20^\circ$ is less than $22.5^\circ$So the light does undergo TIR. (Note: The
 angle of incidence at the boundary is $90^\circ - \theta_{\mathrm{refracted}}$ inside the Fibre, not
 $90^\circ - 20^\circ$. A full calculation using Snell's law at the entry face is Needed.)
-
-</details>
 
 ### Worked Example 12
 
@@ -1020,8 +990,6 @@ Image height: $h_i = m \times h_o = 3.0 \times 3.0 = 9.0 \mathrm{ cm}$
 
 The image is **real** ($v > 0$), **inverted** ($m > 0$ with real-is-positive convention), and
 **magnified** ($|m| > 1$). It forms $60 \mathrm{ cm}$ on the opposite side of the lens.
-
-</details>
 
 ### Worked Example 13
 
@@ -1050,8 +1018,6 @@ Maximum order:
 $n_{\max} = \frac{d}{\lambda} = \frac{2.50 \times 10^{-6}}{590 \times 10^{-9}} = 4.24$
 
 Maximum number of orders = **4** (since $n$ must be an integer and $\sin\theta \leq 1$).
-
-</details>
 
 ---
 
@@ -1117,8 +1083,6 @@ medium ($n_2$), so that $\sin\theta_c = n_2/n_1 < 1$. When light travels from ai
 glass ($n = 1.51$), the equivalent critical angle would have
 $\sin\theta_c = 1.51/1.0 = 1.51 > 1$Which is impossible. Therefore TIR cannot occur.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 A compound microscope consists of an objective lens of focal length $0.5 \mathrm{ cm}$ and an
@@ -1169,8 +1133,6 @@ magnifying glass with the intermediate image at its focal point.)
 1. A microscope is used to view nearby objects; a telescope is used to view distant objects.
 2. In a microscope, the objective forms a real, magnified image; in a telescope, the objective forms
    a real, diminished image at its focal point.
-
-</details>
 
 ### Question 3 (DSE Structured)
 
@@ -1227,8 +1189,6 @@ $$D_{\mathrm{violet}} = 45^\circ + 55.4^\circ - 60^\circ = 40.4^\circ$$
 
 Angular dispersion: $\Delta D = 40.4^\circ - 38.8^\circ = 1.6^\circ$
 
-</details>
-
 ### Question 4 (DSE Structured)
 
 (a) Explain what is meant by the term "wavefront".
@@ -1264,8 +1224,6 @@ spreading at the edges.
 With a gap of $0.3 \mathrm{ m}$ ($d/\lambda = 0.6$Gap is smaller than the wavelength), very
 Significant diffraction occurs. The wave spreads out into a wide semicircular pattern beyond The
 gap, similar to a point source. The wavefront is almost completely circular.
-
-</details>
 
 ### Question 5 (DSE Structured)
 
@@ -1307,8 +1265,6 @@ $u = v/3 = 50/3 = 16.7 \mathrm{ cm}$.
 $$\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{50} + \frac{1}{16.7} = 0.0200 + 0.0599 = 0.0799$$
 
 $$f = 12.5 \mathrm{ cm}$$
-
-</details>
 
 </details>
 

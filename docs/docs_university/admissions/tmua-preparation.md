@@ -311,11 +311,11 @@ The proof is therefore Incomplete.
 >
 > $$f(x) = \begin{cases} kx & 0 \leq x \leq 2 \\ 0 & \text{otherwise{} \end{cases}$$
 >
-> What is the value of $k$And what is $\mathbb{'\{'}E{'\}'}(X)$?
+> What is the value of $k$And what is $\mathbb{{'}E{}'}(X)$?
 
-A: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 4/3$ B: $k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 4/3$ C:
-$k = 1/2$$\mathbb{'\{'}E{'\}'}(X) = 1$ D: $k = 1/4$$\mathbb{'\{'}E{'\}'}(X) = 1$ E:
-$k = 1$$\mathbb{'\{'}E{'\}'}(X) = 2$
+A: $k = 1/4$$\mathbb{{'}E{}'}(X) = 4/3$ B: $k = 1/2$$\mathbb{{'}E{}'}(X) = 4/3$ C:
+$k = 1/2$$\mathbb{{'}E{}'}(X) = 1$ D: $k = 1/4$$\mathbb{{'}E{}'}(X) = 1$ E:
+$k = 1$$\mathbb{{'}E{}'}(X) = 2$
 
 **Solution.** Since $f$ is a probability density function, $\int_{-\infty}^{\infty} f(x)\,dx = 1$:
 
@@ -325,7 +325,7 @@ So $k = 1/2$.
 
 For the expected value:
 
-$$\mathbb{'\{'}E{'\}'}(X) = \int_0^2 x \cdot \frac{x}{2}\,dx = \frac{1}{2}\int_0^2 x^2\,dx = \frac{1}{2}\left[\frac{x^3}{3}\right]_0^2 = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}$$
+$$\mathbb{{'}E{}'}(X) = \int_0^2 x \cdot \frac{x}{2}\,dx = \frac{1}{2}\int_0^2 x^2\,dx = \frac{1}{2}\left[\frac{x^3}{3}\right]_0^2 = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}$$
 
 **Answer: B.**
 

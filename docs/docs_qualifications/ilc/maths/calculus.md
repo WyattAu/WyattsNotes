@@ -109,7 +109,7 @@ $$
 
 ### Standard Derivatives (OL/HL)
 
-For $n \in \mathbb{'\{'}R{'\}'}$:
+For $n \in \mathbb{{'}R{}'}$:
 
 $$
 \frac{d}{dx}[x^n] = nx^{n-1}

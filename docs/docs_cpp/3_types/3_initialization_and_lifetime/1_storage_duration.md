@@ -11,7 +11,7 @@ categories:
 slug: storage-duration
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Every object in C++ has a **storage duration** that determines when its storage is allocated, when
 It is released, and what its initial state is. Storage duration is orthogonal to scope -- an object

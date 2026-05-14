@@ -11,7 +11,7 @@ categories:
 slug: binary-formats
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 When the linker completes its work, it produces a binary file. This file is not merely a linear
 Sequence of machine code; it is a structured database containing instructions, static data, symbol

@@ -68,17 +68,17 @@ $$
 
 When selecting $r$ number of objects from $n$ distinct objects, the number of choice for each
 Selection therefore decreases by one similarly, but only down to the last position needed, therefore
-The permutation $n \mathbf{'\{'}P{'\}'} r$ is:
+The permutation $n \mathbf{{'}P{}'} r$ is:
 
 $$
 \begin{aligned}
- n \mathbf{'\{'}P{'\}'} r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac{n!}{(n-r)!}
+ n \mathbf{{'}P{}'} r = P(n, r) = n(n-1)(n-2) \ldots (n-r+2)(n-r+1) = \frac{n!}{(n-r)!}
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
-- Number of ways you can put $5$ people in a queue from a class of $30$ people, $30 \mathbf{'\{'}P{'\}'} 5 = 17 100 720$
+- Number of ways you can put $5$ people in a queue from a class of $30$ people, $30 \mathbf{{'}P{}'} 5 = 17 100 720$
 - $15$ runners distributed across gold/silver/bronze positions: $P(15,3) = 15 \times 14 \times 13 = 2,730$ arrangements
 - 7 teams assigned to 7 distinct time slots: $P(7,7) = 5,040$ distinct schedules
 </details>
@@ -87,19 +87,18 @@ $$
 
 A combination is a selection of $r$ objects from $n$ distinct objects where order is irrelevant.
 Since the number of ways to permute the given selection is ($r!$), the combination
-($n \mathbf{'\{'}C{'\}'} r$) can multiply $r!$ to obtain the permutation
-($n \mathbf{'\{'}P{'\}'} r$):
+($n \mathbf{{'}C{}'} r$) can multiply $r!$ to obtain the permutation ($n \mathbf{{'}P{}'} r$):
 
 $$
 \begin{aligned}
- k!(n \mathbf{'\{'}C{'\}'} r) = n\mathbf{'\{'}P{'\}'}r = \frac{n!}{(n-r)!}\\
- n \mathbf{'\{'}C{'\}'} r = \binom{n}{r} = \frac{n!}{(n-r)!r!}
+ k!(n \mathbf{{'}C{}'} r) = n\mathbf{{'}P{}'}r = \frac{n!}{(n-r)!}\\
+ n \mathbf{{'}C{}'} r = \binom{n}{r} = \frac{n!}{(n-r)!r!}
 \end{aligned}
 $$
 
 <details>
 <summary>Examples</summary>
-- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{'\{'}C{'\}'} 5 = 142506$
+- Number of ways you can put $5$ people in a group from a class of $30$ people, $30 \mathbf{{'}C{}'} 5 = 142506$
 - 5 members chosen from 20 candidates: $\binom{20}{5} = 15,504$
 </details>
 
@@ -125,7 +124,7 @@ $$
 
 ### Non-negative Integer solutions
 
-In a case where $k = \sum_{i=0}^m n_i$$k, n_i, m \in \mathbb{'\{'}Z^+{'\}'}$The possible number of
+In a case where $k = \sum_{i=0}^m n_i$$k, n_i, m \in \mathbb{{'}Z^+{}'}$The possible number of
 Solutions ($N$) can be thought of using the stars and bars method. This method imagine a $m-1$
 Number of bars as separations between each share of $k$ distributed to each $n_i$Due to the Discrete
 behavior of the separations, $k$ can be thought of as a number of stars. The total state The three
@@ -516,8 +515,8 @@ A different outcome?
 - Choosing a committee: combination (order does not matter).
 - Assigning gold/silver/bronze: permutation. Selecting 3 finalists: combination.
 
-The relationship $\binom{n}{r} = \frac{n \mathbf{'\{'}P{'\}'} r}{r!}$ is the definitive test -- if
-you can Justify dividing out the $r!$You have a combination.
+The relationship $\binom{n}{r} = \frac{n \mathbf{{'}P{}'} r}{r!}$ is the definitive test -- if you
+can Justify dividing out the $r!$You have a combination.
 
 </details>
 

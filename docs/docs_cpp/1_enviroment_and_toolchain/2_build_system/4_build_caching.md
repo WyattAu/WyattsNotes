@@ -11,7 +11,7 @@ categories:
 slug: build-caching
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Compiling C++ is computationally expensive. Each Translation Unit (TU) must be preprocessed, parsed
 Into an Abstract Syntax Tree (AST), optimized, and assembled into machine code. In a typical

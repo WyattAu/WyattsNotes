@@ -43,7 +43,7 @@ Apply Newton's second law to each axis independently, and then recombine the res
 **Example:** A boat sails north at $5 \mathrm{ m/s{}$ in a current flowing east at
 $3 \mathrm{ m/s{}$. Find the resultant velocity.
 
-$$|\mathbf{'\{'}v{'\}'}| = \sqrt{5^2 + 3^2} = \sqrt{34} \approx 5.83 \mathrm{ m/s{}$$
+$$|\mathbf{{'}v{}'}| = \sqrt{5^2 + 3^2} = \sqrt{34} \approx 5.83 \mathrm{ m/s{}$$
 
 $$\theta = \arctan\left(\frac{3}{5}\right) \approx 30.96° \mathrm{ east of north{}$$
 

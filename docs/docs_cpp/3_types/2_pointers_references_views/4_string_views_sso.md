@@ -12,7 +12,7 @@ categories:
 slug: string-views-sso
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 # String Views and Small String Optimization
 

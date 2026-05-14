@@ -11,7 +11,7 @@ categories:
 slug: runtime-crt
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A common misconception is that the execution of a C++ program begins at `main()`. In reality,
 `main()` is merely a callback function invoked by the **C Runtime (CRT)** after a complex

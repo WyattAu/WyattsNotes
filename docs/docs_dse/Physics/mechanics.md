@@ -62,8 +62,6 @@ Using $s = ut + \frac{1}{2}at^2$:
 
 $$s = 0 + \frac{1}{2}(3)(5)^2 = \frac{1}{2}(3)(25) = 37.5 \mathrm{ m}$$
 
-</details>
-
 ### Worked Example 1b
 
 A cyclist travelling at $8 \mathrm{ m/s}$ applies the brakes and decelerates uniformly at
@@ -85,8 +83,6 @@ $$0 = 8^2 + 2(-2)s$$
 $$s = \frac{64}{4} = 16 \mathrm{ m}$$
 
 The cyclist takes $4 \mathrm{ s}$ to stop and travels $16 \mathrm{ m}$ during braking.
-
-</details>
 
 ### Worked Example 2
 
@@ -111,8 +107,6 @@ $$v = u + at$$
 $$0 = 20 - 9.81t$$
 
 $$t = \frac{20}{9.81} = 2.04 \mathrm{ s}$$
-
-</details>
 
 ### Displacement-Time and Velocity-Time Graphs
 
@@ -156,8 +150,6 @@ $$80 = 0 + \frac{1}{2}(9.81)t^2$$
 $$t^2 = \frac{160}{9.81}$$
 
 $$t = \sqrt{16.31} = 4.04 \mathrm{ s}$$
-
-</details>
 
 ### Projectile Motion
 
@@ -210,8 +202,6 @@ Range:
 
 $$R = u_x \times T = 12.99 \times 1.53 = 19.87 \mathrm{ m}$$
 
-</details>
-
 ### Worked Example 4b
 
 A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed $15 \mathrm{ m/s}$.
@@ -231,8 +221,6 @@ $$t = \sqrt{\frac{120}{9.81}} = 3.50 \mathrm{ s}$$
 **Horizontal motion:**
 
 $$d = u_x \times t = 15 \times 3.50 = 52.5 \mathrm{ m}$$
-
-</details>
 
 ---
 
@@ -298,8 +286,6 @@ $$24.525 = 5a$$
 
 $$a = 4.91 \mathrm{ m/s}^2$$
 
-</details>
-
 ### Worked Example 5b
 
 Two objects of mass $3 \mathrm{ kg}$ and $5 \mathrm{ kg}$ are connected by a light inextensible
@@ -325,8 +311,6 @@ $$a = \frac{2g}{8} = \frac{19.62}{8} = 2.45 \mathrm{ m/s}^2$$
 Substituting into (1):
 
 $$T = 3(9.81 + 2.45) = 3 \times 12.26 = 36.79 \mathrm{ N}$$
-
-</details>
 
 ### Friction
 
@@ -358,8 +342,6 @@ Maximum static friction: $f_s = 0.3 \times 98.1 = 29.43 \mathrm{ N}$
 Applied force $= 40 \mathrm{ N} \gt 29.43 \mathrm{ N}$So the block moves.
 
 Acceleration: $a = \frac{F - f_k}{m} = \frac{40 - 29.43}{10} = 1.057 \mathrm{ m/s}^2$
-
-</details>
 
 ---
 
@@ -454,8 +436,6 @@ $$v^2 = \frac{147150}{500} = 294.3$$
 
 $$v = 17.16 \mathrm{ m/s}$$
 
-</details>
-
 ### Worked Example 7b
 
 A $2 \mathrm{ kg}$ block slides down a rough inclined plane of length $5 \mathrm{ m}$ at $30^\circ$
@@ -478,8 +458,6 @@ $$a = \frac{F}{m} = \frac{6.41}{2} = 3.205 \mathrm{ m/s}^2$$
 $$v^2 = u^2 + 2as = 0 + 2(3.205)(5) = 32.05$$
 
 $$v = 5.66 \mathrm{ m/s}$$
-
-</details>
 
 ### Power
 
@@ -506,8 +484,6 @@ $mg\sin\theta = 1200 \times 9.81 \times 0.1 = 1177.2 \mathrm{ N}$
 Total force the engine must overcome: $F = 1177.2 + 300 = 1477.2 \mathrm{ N}$
 
 $$P = Fv = 1477.2 \times 20 = 29544 \mathrm{ W} = 29.5 \mathrm{ kW}$$
-
-</details>
 
 ---
 
@@ -560,8 +536,6 @@ $$F = \frac{\Delta p}{\Delta t} = \frac{-7.5}{0.005} = -1500 \mathrm{ N}$$
 The negative sign indicates the force acts in the opposite direction to the initial motion. The
 Magnitude of the average force is $1500 \mathrm{ N}$.
 
-</details>
-
 ### Collisions
 
 **Elastic collision:** Both momentum and kinetic energy are conserved.
@@ -591,8 +565,6 @@ $$2(5) + 3(0) = (2 + 3)v$$
 $$10 = 5v$$
 
 $$v = 2 \mathrm{ m/s}$$
-
-</details>
 
 ### Worked Example 11 (Elastic Collision)
 
@@ -634,8 +606,6 @@ Therefore $v_1 = \frac{10 - 12}{2} = -1 \mathrm{ m/s}$
 
 The $2 \mathrm{ kg}$ object rebounds at $1 \mathrm{ m/s}$And the $3 \mathrm{ kg}$ object moves
 Forward at $4 \mathrm{ m/s}$.
-
-</details>
 
 ---
 
@@ -685,8 +655,6 @@ $$F_c = \frac{mv^2}{r} = \frac{1000 \times 10^2}{25} = \frac{100000}{25} = 4000 
 
 This force is provided by friction between the tyres and the road.
 
-</details>
-
 ### Worked Example 13
 
 A particle of mass $0.5 \mathrm{ kg}$ is attached to a string of length $0.8 \mathrm{ m}$ and
@@ -700,8 +668,6 @@ Angular velocity: $\omega = 2\pi \times 3 = 6\pi \mathrm{ rad/s}$
 $$T = F_c = m\omega^2 r = 0.5 \times (6\pi)^2 \times 0.8$$
 
 $$T = 0.5 \times 36\pi^2 \times 0.8 = 14.4\pi^2 = 142.1 \mathrm{ N}$$
-
-</details>
 
 ### Worked Example 13b
 
@@ -725,8 +691,6 @@ $$8352 \times 0.342 + f = \frac{800 \times 225}{50}$$
 $$2856 + f = 3600$$
 
 $$f = 744 \mathrm{ N}$$
-
-</details>
 
 ### Vertical Circular Motion
 
@@ -808,8 +772,6 @@ $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 
 
 $$v = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$$
 
-</details>
-
 ---
 
 ## Summary Table
@@ -846,14 +808,13 @@ $$v = \sqrt{5.97 \times 10^7} = 7727 \mathrm{ m/s}$$
 **Question 1:** A stone is thrown horizontally from a cliff $60 \mathrm{ m}$ high with speed
 $15 \mathrm{ m/s}$. Find the horizontal distance it travels before hitting the ground.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 Vertical motion: $60 = \frac{1}{2}(9.81)t^2$So $t = \sqrt{\frac{120}{9.81}} = 3.50 \mathrm{ s}$
 
 Horizontal distance: $d = 15 \times 3.50 = 52.5 \mathrm{ m}$
-
-</details>
 
 **Question 2:** Two objects of mass $3 \mathrm{ kg}$ and $5 \mathrm{ kg}$ are connected by a light
 Inextensible string over a smooth pulley. Find the acceleration and the tension.
@@ -864,8 +825,6 @@ Inextensible string over a smooth pulley. Find the acceleration and the tension.
 $$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(5 - 3)(9.81)}{3 + 5} = \frac{19.62}{8} = 2.45 \mathrm{ m/s}^2$$
 
 $$T = \frac{2m_1m_2g}{m_1 + m_2} = \frac{2(3)(5)(9.81)}{8} = 36.79 \mathrm{ N}$$
-
-</details>
 
 **Question 3:** A $0.5 \mathrm{ kg}$ ball is dropped from a height of $2 \mathrm{ m}$ onto a hard
 Floor and rebounds to $1.5 \mathrm{ m}$. Find the impulse exerted by the floor.
@@ -880,8 +839,6 @@ Velocity just after rebound: $v = \sqrt{2(9.81)(1.5)} = 5.42 \mathrm{ m/s}$ (upw
 Taking upward as positive: $\Delta p = 0.5(5.42 - (-6.26)) = 0.5(11.68) = 5.84 \mathrm{ kg m/s}$
 
 Impulse $= 5.84 \mathrm{ N s}$ (upward)
-
-</details>
 
 **Question 4:** A $3 \mathrm{ kg}$ object slides down a rough inclined plane of length
 $5 \mathrm{ m}$ at $30^\circ$ to the horizontal. The coefficient of friction is $0.2$. Find the
@@ -904,8 +861,6 @@ $$v^2 = u^2 + 2as = 0 + 2(3.205)(5) = 32.05$$
 
 $$v = 5.66 \mathrm{ m/s}$$
 
-</details>
-
 **Question 5:** A satellite orbits the Earth at a height of $500 \mathrm{ km}$. Given the Earth's
 Mass is $5.97 \times 10^{24} \mathrm{ kg}$ and radius is $6.37 \times 10^6 \mathrm{ m}$Find the
 Orbital period.
@@ -918,8 +873,6 @@ $$r = 6.37 \times 10^6 + 500 \times 10^3 = 6.87 \times 10^6 \mathrm{ m}$$
 $$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.87 \times 10^6}} = \sqrt{5.79 \times 10^7} = 7611 \mathrm{ m/s}$$
 
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 6.87 \times 10^6}{7611} = 5671 \mathrm{ s} = 94.5 \mathrm{ minutes}$$
-
-</details>
 
 </details>
 
@@ -1097,7 +1050,6 @@ $$s = ut + \frac{1}{2}at^2 = 25(4) + \frac{1}{2}(-6.25)(16) = 100 - 50 = 50 \mat
 _If you get this wrong, revise: SUVAT equations and the sign convention for deceleration._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 2: Projectile — Maximum Height and Range</summary>
@@ -1118,7 +1070,6 @@ $$R = \frac{u^2 \sin 2\theta}{g} = \frac{400 \times \sin 90^\circ}{9.81} = \frac
 
 _If you get this wrong, revise: Projectile motion formulas for maximum height and range._
 
-</details>
 </details>
 
 <details>
@@ -1142,7 +1093,6 @@ $$a = \frac{14.47}{4} = 3.62 \mathrm{ m/s}^2$$
 
 _If you get this wrong, revise: Forces on an inclined plane and kinetic friction._
 
-</details>
 </details>
 
 <details>
@@ -1171,7 +1121,6 @@ $$d = \frac{44.15}{4.41} = 10.01 \mathrm{ m}$$
 _If you get this wrong, revise: Conservation of energy and work done against friction._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 5: Elastic Collision — Equal Masses</summary>
@@ -1194,7 +1143,6 @@ Conservation of KE: $\frac{1}{2}(2)(36) = 36 = \frac{1}{2}(2)(0) + \frac{1}{2}(2
 
 _If you get this wrong, revise: Elastic collisions between equal masses and conservation laws._
 
-</details>
 </details>
 
 <details>
@@ -1220,7 +1168,6 @@ $$\Delta v = \frac{J}{m} = \frac{10.0}{5} = 2.0 \mathrm{ m/s}$$
 _If you get this wrong, revise: Impulse as the area under a force-time graph and the
 impulse-momentum Theorem._
 
-</details>
 </details>
 
 <details>
@@ -1257,7 +1204,6 @@ _If you get this wrong, revise: Circular motion in a vertical plane and resolvin
 Pendulums._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 8: Gravitational Field Strength — Above Surface</summary>
@@ -1280,7 +1226,6 @@ _If you get this wrong, revise: Newton's law of gravitation and gravitational fi
 Distance from a spherical body._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 9: SHM — Finding Velocity at a Given Displacement</summary>
@@ -1300,7 +1245,6 @@ $$v = 20 \times 0.0346 = 0.693 \mathrm{ m/s}$$
 _If you get this wrong, revise: SHM velocity equation and the relationship between velocity and
 Displacement._
 
-</details>
 </details>
 
 <details>
@@ -1322,7 +1266,6 @@ $$L = 0.1583 \times 9.81 = 1.55 \mathrm{ m}$$
 _If you get this wrong, revise: Simple pendulum period formula and rearranging it to find $L$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 11: Work Done by a Spring</summary>
@@ -1340,7 +1283,6 @@ The work done equals the elastic potential energy stored: $E_p = 1.6 \mathrm{ J}
 _If you get this wrong, revise: Hooke's law and work done in stretching a spring._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 12: Power on an Incline</summary>
@@ -1357,7 +1299,6 @@ $$P = \frac{W}{t} = \frac{2943}{8} = 367.9 \mathrm{ W}$$
 
 _If you get this wrong, revise: Work done against gravity and the definition of power._
 
-</details>
 </details>
 
 <details>
@@ -1380,7 +1321,6 @@ _If you get this wrong, revise: Vertical circular motion and the minimum speed c
 of The circle._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 14: Geostationary Orbit</summary>
@@ -1402,7 +1342,6 @@ This confirms the geostationary orbit period is approximately 24 hours.
 
 _If you get this wrong, revise: Orbital motion, orbital speed, and orbital period formulas._
 
-</details>
 </details>
 
 <details>
@@ -1432,7 +1371,6 @@ For the A-Level treatment of this topic, see
 _If you get this wrong, revise: Energy exchange in SHM and the expressions for $E_k$ and $E_p$ as
 Functions of displacement._
 
-</details>
 </details>
 
 ---

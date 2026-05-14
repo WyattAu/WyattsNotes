@@ -522,8 +522,6 @@ Shortage (excess demand), may reduce the quality and maintenance of rental prope
 Lead to black market activities. Landlords may convert properties to other uses, reducing long-run
 Supply.
 
-</details>
-
 ---
 
 ## Production, Costs, and Revenue
@@ -864,8 +862,6 @@ Unit (P) exceeds the cost of producing it (MC). Society would benefit from more 
 Monopoly restricts output to maximise profit, creating a deadweight loss. In perfect competition, P
 = MC, which is allocatively efficient.
 
-</details>
-
 ---
 
 ## Problem Set
@@ -879,7 +875,8 @@ Given $Q_D = 150 - 3P$ and $Q_S = 2P - 30$.
 $Q_D = 210 - 3P$), find the new equilibrium. (c) If both demand and supply increase by 60 units,
 what Happens to equilibrium quantity? What about price?
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 (a) `150 - 3P = 2P - 30``180 = 5P``P = 36`. `Q = 150 - 108 = 42`.
@@ -892,8 +889,6 @@ Price rises from 36 to 48; quantity rises from 42 to 66.
 
 Quantity rises (42 to 102), but price returns to 36. When both curves shift right by the same
 Amount, price is unchanged and quantity increases.
-
-</details>
 
 If you get this wrong, revise: [Changes in Equilibrium](#changes-in-equilibrium)
 
@@ -920,8 +915,6 @@ by 400.
 (c) Since demand is unit elastic (PED = -1), the shop is already at the revenue-maximising price.
 Raising Or lowering the price would both decrease total revenue.
 
-</details>
-
 If you get this wrong, revise: [PED and Total Revenue](#ped-and-total-revenue)
 
 </details>
@@ -945,8 +938,6 @@ Milk? (c) If the price of coffee is expected to rise, what should a tea producer
 (c) A tea producer should increase production. The expected rise in coffee prices will shift demand
 for Tea to the right (consumers substitute from coffee to tea), increasing both the price and
 quantity of Tea.
-
-</details>
 
 If you get this wrong, revise: [Cross Elasticity of Demand (XED)](#cross-elasticity-of-demand-xed)
 
@@ -973,8 +964,6 @@ units.
 Maintenance (landlords cut costs), reduced supply in the long run (landlords convert properties),
 Inefficient allocation (units not rented to those who value them most).
 
-</details>
-
 If you get this wrong, revise: [Price Controls](#price-controls)
 
 </details>
@@ -1000,8 +989,6 @@ Burden on consumers and producers. (d) Who bears more of the tax burden and why?
 
 (d) Producers bear **more** of the burden (3.33 vs 2.67) because supply is relatively less elastic
 than Demand (producers are less responsive to price changes than consumers).
-
-</details>
 
 If you get this wrong, revise: [Tax Incidence (Burden)](#tax-incidence-burden)
 
@@ -1030,8 +1017,6 @@ taxis To buses). Demand for restaurant meals **decreases** (people cut back on l
 Prepare for higher demand during recessions; restaurants should plan for lower demand and may need
 to Adjust pricing or offer promotions.
 
-</details>
-
 If you get this wrong, revise: [Income Elasticity of Demand (YED)](#income-elasticity-of-demand-yed)
 
 </details>
@@ -1059,8 +1044,6 @@ The subsidy cost the government? (d) Who benefits more from the subsidy -- consu
 Producer benefit per unit = `58 - 56 = 2`. Total producer benefit = `2 \times 94 = 188`. Consumers
 benefit more (282 vs 188) because demand is more elastic than supply in this case.
 
-</details>
-
 If you get this wrong, revise: [Subsidies](#subsidies)
 
 </details>
@@ -1085,8 +1068,6 @@ A factory producing chemicals has `MPC = 10 + Q`. The marginal external cost is 
 (c) DWL = `0.5 \times 8 \times (25 - 21) = 0.5 \times 8 \times 4 = 16`.
 
 (d) Pigouvian tax = `MEC = 8` per unit. This shifts the supply curve up from `MPC` to `MSC`.
-
-</details>
 
 If you get this wrong, revise: [Market Failure](#market-failure)
 

@@ -217,8 +217,6 @@ kJ/hour, so sweating during exercise can remove more heat than the body produces
 explains why adequate hydration is critical during exercise in hot environments -- sweat that is not
 replaced leads to dehydration and reduced blood volume, impairing thermoregulation.
 
-</details>
-
 ---
 
 ## Osmoregulation
@@ -433,8 +431,6 @@ potential gradient between the tubule fluid and the blood is reduced). This prod
 of dilute urine (polyuria). The loss of excess water reduces blood volume and increases blood
 osmolarity, which stimulates osmoreceptors in the hypothalamus, triggering thirst (polydipsia).
 
-</details>
-
 ---
 
 ## Common Pitfalls
@@ -507,8 +503,6 @@ cervix, stimulating more oxytocin release. This is appropriate because the proce
 completion (birth) rather than returning to a set point. Once the baby is born, the positive
 feedback loop ends.
 
-</details>
-
 **Problem 2:** Describe the mechanism by which ADH regulates water balance in the kidneys. Explain
 why a person in a hot desert environment would have high blood ADH levels.
 
@@ -529,8 +523,6 @@ reduces blood volume and increases blood solute concentration (lowers blood wate
 Osmoreceptors in the hypothalamus detect this and stimulate the posterior pituitary to release more
 ADH. The kidneys produce a small volume of concentrated urine to minimise further water loss,
 helping the person survive in the arid environment.
-
-</details>
 
 **Problem 3:** Compare Type 1 and Type 2 diabetes in terms of cause, insulin levels, age of onset,
 treatment, and the mechanism by which blood glucose rises to harmful levels.
@@ -613,7 +605,8 @@ A patient presents with weight gain, fatigue, cold intolerance, and a slow heart
 show elevated TSH and low $\mathrm{T}_4$. Explain the normal negative feedback loop controlling
 thyroid hormone levels and how it has been disrupted in this patient.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 **Normal negative feedback loop:**
@@ -638,8 +631,6 @@ Hashimoto's thyroiditis or other damage). The symptoms are explained by the lack
 BMR causes fatigue and weight gain; low $\mathrm{T}_3$ reduces metabolic heat production, causing
 cold intolerance; low thyroxine reduces the heart's sensitivity to catecholamines, causing
 bradycardia.
-
-</details>
 
 </details>
 

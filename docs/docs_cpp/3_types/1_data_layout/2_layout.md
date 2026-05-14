@@ -11,7 +11,7 @@ categories:
 slug: layout
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In C++, `sizeof(T)` is rarely equal to the sum of the sizes of its members. The compiler inserts
 Invisible bytes known as **Padding** between members to satisfy **Alignment Requirements**.

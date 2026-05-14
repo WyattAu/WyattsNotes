@@ -455,8 +455,6 @@ Using acidified potassium dichromate(VI).
 - **2-Methylpropan-2-ol:** Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour
   change (solution remains orange). Tertiary alcohols are not oxidised.
 
-</details>
-
 <details>
 <summary>Problem 2</summary>
 
@@ -490,8 +488,6 @@ $$
 
 Therefore, only Methods 1 and 2 produce bromoethane from ethanol.
 
-</details>
-
 <details>
 <summary>Problem 3</summary>
 
@@ -515,8 +511,6 @@ $$
 
 The tertiary carbocation can either lose a proton (elimination, major) or be attacked by another
 alcohol molecule (substitution, minor). At higher temperatures, elimination is favoured.
-
-</details>
 
 <details>
 <summary>Problem 4</summary>
@@ -742,7 +736,8 @@ For the oxidation of primary alcohols:
 
 ## Exam-Style Questions with Full Mark Schemes
 
-<details>
+### Details
+
 <summary>Q1 (5 marks)</summary>
 
 Describe how you would distinguish between butan-1-ol, butan-2-ol, and 2-methylpropan-2-ol using
@@ -762,8 +757,6 @@ product).
 
 2-methylpropan-2-ol: Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$. No colour change
 (solution remains orange). Tertiary alcohols are not oxidised (1 mark for observation).
-
-</details>
 
 <details>
 <summary>Q2 (6 marks)</summary>
@@ -785,8 +778,6 @@ the role of the acid catalyst.
   mark).
 - The acid catalyst is regenerated (1 mark for showing $\mathrm{H}^+$ on the product side).
 - Curly arrow mechanism (1 mark).
-
-</details>
 
 <details>
 <summary>Q3 (5 marks)</summary>
@@ -812,8 +803,6 @@ apparatus or molecular sieves (1 mark).
 (c) The reaction is an equilibrium, so some reactants always remain (1 mark). At equilibrium, the
 rates of the forward and reverse reactions are equal (1 mark).
 
-</details>
-
 <details>
 <summary>Q4 (4 marks)</summary>
 
@@ -831,8 +820,6 @@ alcohol to a chloroalkane in organic synthesis.
   mark).
 - Concentrated $\mathrm{HCl}$ gives an equilibrium (reversible reaction) that requires removal of
   water to drive to completion (1 mark).
-
-</details>
 
 <details>
 <summary>Q5 (5 marks)</summary>
@@ -853,8 +840,6 @@ ethanol.
   $\mathrm{HCl}$ (1 mark).
 - This reaction is preferred because it is irreversible (no equilibrium) and proceeds rapidly at
   room temperature without a catalyst, giving a higher yield (1 mark).
-
-</details>
 
 ---
 

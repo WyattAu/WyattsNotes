@@ -424,7 +424,7 @@ $$
 ### Deriving Pressure from Kinetic Theory
 
 Consider a gas in a cubical container of side $L$. A molecule of mass $m$ moving with velocity
-$\mathbf{'\{'}v{'\}'} = (v_x, v_y, v_z)$ bounces elastically off a wall perpendicular to the x-axis.
+$\mathbf{{'}v{}'} = (v_x, v_y, v_z)$ bounces elastically off a wall perpendicular to the x-axis.
 
 The change in momentum per collision with this wall is:
 

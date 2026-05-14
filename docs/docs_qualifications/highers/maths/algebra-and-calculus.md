@@ -31,7 +31,7 @@ $f \colon A \to B$ means $f$ maps from set $A$ to set $B$.
 
 The **domain** of $f$ is the set of all valid inputs. The **range** is the set of all outputs.
 
-The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{'\{'}R{'\}'}$$x \neq 3$.
+The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{{'}R{}'}$$x \neq 3$.
 
 The **range** of $f(x) = x^2$ is $f(x) \geq 0$ (assuming the domain is all real numbers).
 
@@ -80,7 +80,7 @@ Confirmed.
 
 The domain of $f^{-1}$ equals the range of $f$And vice versa. A function has an inverse if and Only
 if it is a **bijection** (both one-to-one and onto). For functions
-$\mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ This means the function must be strictly monotone.
+$\mathbb{{'}R{}'} \to \mathbb{{'}R{}'}$ This means the function must be strictly monotone.
 
 :::
 

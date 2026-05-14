@@ -19,11 +19,11 @@ slug: algorithms-advanced
 A **flow network** is a directed graph $G = (V, E)$ with:
 
 - A **source** $s \in V$ and a **sink** $t \in V$.
-- A **capacity function** $c : E \to \mathbb{'\{'}R{'\}'}_{\geq 0}$.
+- A **capacity function** $c : E \to \mathbb{{'}R{}'}_{\geq 0}$.
 - For every edge $(u, v) \in E$The reverse edge $(v, u) \notin E$ (we can add reverse edges with
   capacity 0).
 
-A **flow** is a function $f : V \times V \to \mathbb{'\{'}R{'\}'}_{\geq 0}$ satisfying:
+A **flow** is a function $f : V \times V \to \mathbb{{'}R{}'}_{\geq 0}$ satisfying:
 
 1. **Capacity constraint:** $0 \leq f(u, v) \leq c(u, v)$ for all $(u, v) \in E$.
 2. **Flow conservation:** $\sum_{v \in V} f(v, u) = \sum_{v \in V} f(u, v)$ for all
@@ -559,8 +559,8 @@ At each event point:
 
 ### 4.2 Convex Hull
 
-The **convex hull** of a set of points $S \subset \mathbb{'\{'}R{'\}'}^2$ is the smallest convex
-polygon containing $S$.
+The **convex hull** of a set of points $S \subset \mathbb{{'}R{}'}^2$ is the smallest convex polygon
+containing $S$.
 
 **Graham scan.** $O(n \log n)$ time.
 
@@ -639,8 +639,8 @@ $(3/2 - \epsilon)$-approximation was discovered.
 
 ### 5.4 Set Cover -- $\ln n$-Approximation
 
-**Problem.** Given a universe $U$ of $n$ elements and a collection $\mathcal{'\{'}S{'\}'}$ of
-subsets of $U$Find the minimum number of subsets from $\mathcal{'\{'}S{'\}'}$ whose union is $U$.
+**Problem.** Given a universe $U$ of $n$ elements and a collection $\mathcal{{'}S{}'}$ of subsets of
+$U$Find the minimum number of subsets from $\mathcal{{'}S{}'}$ whose union is $U$.
 
 **Greedy algorithm:** Repeatedly pick the set covering the most uncovered elements.
 
@@ -1529,7 +1529,7 @@ $d(A,B) = d(B,A) = 3$$d(A,C) = 7$$d(A,D) = 5$$d(A,E) = 2$$d(B,C) = 4$$d(B,D) = 6
 Compute the MST, the Eulerian tour, and the shortcut tour.
 
 **Problem 15.** Apply the greedy set cover algorithm to:
-$U = \{1, 2, 3, 4, 5, 6\}$$\mathcal{'\{'}S{'\}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
+$U = \{1, 2, 3, 4, 5, 6\}$$\mathcal{{'}S{}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
 Compare with the optimal cover.
 
 <details>

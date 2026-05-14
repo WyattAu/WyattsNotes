@@ -40,7 +40,6 @@ $$
 - Distance between $A(3, 4)$ and $B(7, 1)$: $d = \sqrt{(7-3)^2 + (1-4)^2} = \sqrt{16 + 9} = 5$
 - Distance between $O(0, 0)$ and $P(5, 12)$: $d = \sqrt{5^2 + 12^2} = 13$
 - Verify that the points $A(0, 0)$$B(3, 4)$$C(6, 8)$ are collinear: $AB = 5$$BC = 5$$AC = 10$. Since $AB + BC = AC$The points are collinear.
-</details>
 
 ### Midpoint Formula
 
@@ -58,7 +57,6 @@ The midpoint is the average of the respective coordinates of the two endpoints.
 <summary>Examples</summary>
 - Midpoint of $A(2, 6)$ and $B(8, -4)$: $M = \left( \frac{2+8}{2}, \frac{6+(-4)}{2} \right) = (5, 1)$
 - If $M(4, -1)$ is the midpoint of $A(1, 3)$ and $B$Then $B = (2 \times 4 - 1, 2 \times (-1) - 3) = (7, -5)$
-</details>
 
 ### Gradient (Slope)
 
@@ -85,7 +83,6 @@ $x_1 = x_2$) has an undefined gradient. Key gradient values include:
 <summary>Examples</summary>
 - Gradient of the line through $A(1, 2)$ and $B(4, 8)$: $m = \frac{8-2}{4-1} = 2$
 - A line with gradient $\frac{3}{4}$ passing through $(1, 5)$: using $y - y_1 = m(x - x_1)$The equation is $y - 5 = \frac{3}{4}(x - 1)$I.e., $3x - 4y + 17 = 0$
-</details>
 
 ### Division of a Line Segment
 
@@ -165,7 +162,6 @@ and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 - Find the equation of the line through $(2, 3)$ and $(6, -1)$: $m = \frac{-1 - 3}{6 - 2} = -1$. Equation: $y - 3 = -1(x - 2)$I.e., $x + y - 5 = 0$
 - Find the equation of the line with gradient $\frac{1}{2}$ and $y$-intercept $-3$: $y = \frac{1}{2}x - 3$I.e., $x - 2y - 6 = 0$
 - Convert $3x + 4y - 12 = 0$ to intercept form: $\frac{x}{4} + \frac{y}{3} = 1$. The $x$-intercept is $4$ and the $y$-intercept is $3$.
-</details>
 
 ## Parallel and Perpendicular Lines
 
@@ -215,7 +211,6 @@ $$
 - Find the equation of the line through $(1, -2)$ parallel to $2x - 3y + 5 = 0$: The gradient of the given line is $m = \frac{2}{3}$. The parallel line is $y + 2 = \frac{2}{3}(x - 1)$I.e., $2x - 3y - 8 = 0$.
 - Find the equation of the line through $(3, 1)$ perpendicular to $4x + y - 7 = 0$: The gradient of the given line is $m_1 = -4$So $m_2 = \frac{1}{4}$. The perpendicular line is $y - 1 = \frac{1}{4}(x - 3)$I.e., $x - 4y + 1 = 0$.
 - Determine whether $3x + 2y - 1 = 0$ and $6x + 4y + 5 = 0$ are parallel: Since $\frac{3}{6} = \frac{2}{4} = \frac{1}{2} \neq \frac{-1}{5}$The lines are parallel but not coincident.
-</details>
 
 ### Intersection of Two Lines
 
@@ -226,7 +221,6 @@ The intersection satisfy both equations.
 <details>
 <summary>Examples</summary>
 - Find the intersection of $x + y = 5$ and $2x - y = 1$: Adding gives $3x = 6$So $x = 2$$y = 3$. The intersection is $(2, 3)$.
-</details>
 
 ## Circles
 
@@ -272,7 +266,6 @@ $\left(\frac{D}{2}\right)^2 + \left(\frac{E}{2}\right)^2 - F > 0$.
 - Find the centre and radius of $x^2 + y^2 - 6x + 4y - 12 = 0$: Completing squares, $(x-3)^2 + (y+2)^2 = 25$. Centre $(3, -2)$Radius $5$.
 - Find the equation of the circle with centre $(-1, 4)$ and radius $3$: $(x+1)^2 + (y-4)^2 = 9$.
 - Find the equation of the circle with diameter endpoints $A(2, 3)$ and $B(8, 7)$: Centre is $M(5, 5)$Radius is $\frac{1}{2}\sqrt{(8-2)^2 + (7-3)^2} = \frac{1}{2}\sqrt{52} = \sqrt{13}$. Equation: $(x-5)^2 + (y-5)^2 = 13$.
-</details>
 
 ### Finding the Equation of a Circle from Conditions
 
@@ -335,7 +328,6 @@ $$
 <summary>Examples</summary>
 - Find the equation of the tangent to $x^2 + y^2 = 25$ at $P(3, 4)$: The radius gradient is $\frac{4}{3}$So the tangent gradient is $-\frac{3}{4}$. Equation: $y - 4 = -\frac{3}{4}(x - 3)$I.e., $3x + 4y - 25 = 0$. Alternatively, using the formula: $3x + 4y = 25$.
 - Determine whether the line $3x - 4y + 10 = 0$ is tangent to $(x-1)^2 + (y+2)^2 = 9$: Substitute $y = \frac{3x+10}{4}$ into the circle. The resulting quadratic has discriminant $\Delta = 0$Confirming tangency.
-</details>
 
 ## 2D Measurements
 
@@ -413,7 +405,6 @@ $$
 <summary>Examples</summary>
 - Find the area and perimeter of a sector of radius $7\mathrm{ cm}$ with angle $120^\circ$: $\theta = \frac{2\pi}{3}$ rad. Area $= \frac{1}{2}(49)\left(\frac{2\pi}{3}\right) = \frac{49\pi}{3} \approx 51.3\mathrm{ cm}^2$. Arc length $= 7 \times \frac{2\pi}{3} = \frac{14\pi}{3} \approx 14.7\mathrm{ cm}$. Perimeter $= 14 + \frac{14\pi}{3} \approx 28.7\mathrm{ cm}$.
 - A chord of length $8\mathrm{ cm}$ subtends an angle of $90^\circ$ at the centre. Find the area of the minor segment: $r = \frac{8}{\sqrt{2}} = 4\sqrt{2}\mathrm{ cm}$$\theta = \frac{\pi}{2}$. Area $= \frac{1}{2}(32)\left(\frac{\pi}{2} - 1\right) = 16\left(\frac{\pi}{2} - 1\right) = 8\pi - 16 \approx 9.13\mathrm{ cm}^2$.
-</details>
 
 ## 3D Geometry
 
@@ -446,7 +437,6 @@ $$
 <summary>Examples</summary>
 - Distance between $A(1, 2, 3)$ and $B(4, 6, -3)$: $d = \sqrt{3^2 + 4^2 + (-6)^2} = \sqrt{9 + 16 + 36} = \sqrt{61}$
 - Show that $A(0, 0, 0)$$B(1, 0, 0)$$C(0, 1, 0)$$D(0, 0, 1)$ form a **trirectangular tetrahedron**: $AB = AC = AD = 1$ (edges from the origin) and $BC = BD = CD = \sqrt{2}$ (edges of the base triangle $BCD$). It is not a regular tetrahedron — a regular tetrahedron would require all six edges to be equal. For a regular tetrahedron, use vertices such as $(1,1,1)$$(1,-1,-1)$$(-1,1,-1)$$(-1,-1,1)$.
-</details>
 
 ### Equation of a Plane
 
@@ -458,11 +448,11 @@ $$
 \end{aligned}
 $$
 
-Where the vector $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is a normal vector to the plane. The plane can
-also be Described in several forms:
+Where the vector $\mathbf{{'}n{}'} = (A, B, C)$ is a normal vector to the plane. The plane can also
+be Described in several forms:
 
 - **Point-normal form**: Given a point $P_0(x_0, y_0, z_0)$ on the plane and normal
-  $\mathbf{'\{'}n{'\}'} = (A, B, C)$:
+  $\mathbf{{'}n{}'} = (A, B, C)$:
 
 $$
 \begin{aligned}
@@ -483,9 +473,9 @@ $$
 
 #### Angle Between a Line and a Plane
 
-The angle $\phi$ between a line with direction vector $\mathbf{'\{'}d{'\}'} = (l, m, n)$ and a plane
-with Normal $\mathbf{'\{'}n{'\}'} = (A, B, C)$ is defined as the complement of the angle between
-$\mathbf{'\{'}d{'\}'}$ and $\mathbf{'\{'}n{'\}'}$:
+The angle $\phi$ between a line with direction vector $\mathbf{{'}d{}'} = (l, m, n)$ and a plane
+with Normal $\mathbf{{'}n{}'} = (A, B, C)$ is defined as the complement of the angle between
+$\mathbf{{'}d{}'}$ and $\mathbf{{'}n{}'}$:
 
 $$
 \begin{aligned}
@@ -495,8 +485,8 @@ $$
 
 #### Angle Between Two Planes
 
-The angle $\theta$ between two planes with normals $\mathbf{'\{'}n_1{'\}'} = (A_1, B_1, C_1)$ and
-$\mathbf{'\{'}n_2{'\}'} = (A_2, B_2, C_2)$ is:
+The angle $\theta$ between two planes with normals $\mathbf{{'}n_1{}'} = (A_1, B_1, C_1)$ and
+$\mathbf{{'}n_2{}'} = (A_2, B_2, C_2)$ is:
 
 $$
 \begin{aligned}
@@ -506,8 +496,8 @@ $$
 
 #### Angle Between Two Lines in 3D
 
-For two lines with direction vectors $\mathbf{'\{'}d_1{'\}'} = (l_1, m_1, n_1)$ and
-$\mathbf{'\{'}d_2{'\}'} = (l_2, m_2, n_2)$:
+For two lines with direction vectors $\mathbf{{'}d_1{}'} = (l_1, m_1, n_1)$ and
+$\mathbf{{'}d_2{}'} = (l_2, m_2, n_2)$:
 
 $$
 \begin{aligned}
@@ -529,8 +519,7 @@ $$
 <summary>Examples</summary>
 - Find the distance from $P(1, 2, -1)$ to the plane $2x - y + 2z + 3 = 0$: $d = \frac{|2(1) - 1(2) + 2(-1) + 3|}{\sqrt{4 + 1 + 4}} = \frac{|2 - 2 - 2 + 3|}{3} = \frac{1}{3}$.
 - Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 0$: $\cos\theta = \frac{|1\cdot 2 + 1\cdot(-1) + 1\cdot 1|}{\sqrt{3}\sqrt{6}} = \frac{2}{3\sqrt{2}} = \frac{\sqrt{2}}{3}$. So $\theta = \arccos\left(\frac{\sqrt{2}}{3}\right) \approx 61.9^\circ$.
-- Find the equation of the plane through $(1, 0, 2)$$(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{'\{'}n{'\}'} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
-</details>
+- Find the equation of the plane through $(1, 0, 2)$$(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{{'}n{}'} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
 
 ---
 
@@ -538,13 +527,12 @@ $$
 <summary>Wrap-up Questions</summary>
 1. **Question:** Find the equation of the perpendicular bisector of the line segment joining
  $A(3, -1)$ and $B(7, 5)$.
-<details>
+### Details
 <summary>Answer</summary>
 - Midpoint: $M = \left(\frac{3+7}{2}, \frac{-1+5}{2}\right) = (5, 2)$.
 - Gradient of $AB$: $m_{AB} = \frac{5 - (-1)}{7 - 3} = \frac{3}{2}$.
 - Gradient of perpendicular bisector: $m = -\frac{2}{3}$.
 - Equation: $y - 2 = -\frac{2}{3}(x - 5)$I.e., $2x + 3y - 16 = 0$.
-</details>
 
 2. **Question:** Find the equation of the circle passing through the three points $A(0, 0)$
 $B(4, 0)$And $C(0, 3)$.
@@ -558,7 +546,6 @@ $B(4, 0)$And $C(0, 3)$.
 - Equation: $x^2 + y^2 - 4x - 3y = 0$I.e.,
   $(x-2)^2 + \left(y - \frac{3}{2}\right)^2 = \frac{25}{4}$.
 - Centre $\left(2, \frac{3}{2}\right)$Radius $\frac{5}{2}$.
-</details>
 
 3. **Question:** The line $y = 2x + k$ is tangent to the circle $x^2 + y^2 - 4x - 2y + 1 = 0$. Find
 The value(s) of $k$.
@@ -573,7 +560,6 @@ The value(s) of $k$.
 - $16k^2 - 64k + 64 - 20k^2 + 40k - 20 = 0$.
 - $-4k^2 - 24k + 44 = 0 \implies k^2 + 6k - 11 = 0$.
 - $k = \frac{-6 \pm \sqrt{36 + 44}}{2} = -3 \pm \sqrt{14}$.
-</details>
 
 4. **Question:** A sector of a circle of radius $12\mathrm{ cm}$ has an arc length of
 $16\pi\mathrm{ cm}$. Find the area of the sector and the area of the corresponding segment if the
@@ -590,22 +576,20 @@ Chord length is $20\mathrm{ cm}$.
 - Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$.
   Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
 - Area of segment $= 96\pi - 20\sqrt{11} \approx 247.3 \mathrm{ cm}^2$.
-</details>
 
 5. **Question:** Find the angle between the line joining $A(1, 2, 3)$ and $B(4, 5, 6)$ and the plane
 $x + y + z = 1$.
 <details>
 <summary>Answer</summary>
 
-- Direction vector of the line: $\mathbf{'\{'}d{'\}'} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
+- Direction vector of the line: $\mathbf{{'}d{}'} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
   $(1, 1, 1)$.
-- Normal of the plane: $\mathbf{'\{'}n{'\}'} = (1, 1, 1)$.
-- The angle $\alpha$ between $\mathbf{'\{'}d{'\}'}$ and $\mathbf{'\{'}n{'\}'}$:
+- Normal of the plane: $\mathbf{{'}n{}'} = (1, 1, 1)$.
+- The angle $\alpha$ between $\mathbf{{'}d{}'}$ and $\mathbf{{'}n{}'}$:
   $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$So $\alpha = 0^\circ$.
 - The angle $\phi$ between the line and the plane is the complement:
   $\phi = 90^\circ - 0^\circ = 90^\circ$.
 - The line is parallel to the plane (perpendicular to the normal).
-</details>
 
 6. **Question:** Points $A(1, 2)$$B(4, 6)$And $C(7, 4)$ are vertices of a triangle. Find the
 Equation of the altitude from $A$ to $BC$The area of triangle $ABC$And the length of the Altitude
@@ -621,8 +605,7 @@ from $A$.
   units.
 - Length of $BC$: $\sqrt{(7-4)^2 + (4-6)^2} = \sqrt{9 + 4} = \sqrt{13}$.
 - Altitude from $A$:
-$\frac{2 \times \mathrm{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
-</details>
+  $\frac{2 \times \mathrm{Area}}{BC} = \frac{18}{\sqrt{13}} = \frac{18\sqrt{13}}{13}$.
 
 7. **Question:** Find the equation of the circle which touches the $x$-axis at $(3, 0)$ and passes
 Through $(1, 4)$.
@@ -636,8 +619,7 @@ Through $(1, 4)$.
 - $4 + 16 - 8r + r^2 = r^2 \implies 20 - 8r = 0 \implies r = \frac{5}{2}$.
 - Centre: $(3, \frac{5}{2})$Radius: $\frac{5}{2}$.
 - Equation: $(x-3)^2 + \left(y - \frac{5}{2}\right)^2 = \frac{25}{4}$I.e.,
-$x^2 + y^2 - 6x - 5y + 9 = 0$.
-</details>
+  $x^2 + y^2 - 6x - 5y + 9 = 0$.
 
 8. **Question:** The vertices of a triangle are $A(2, 1, -1)$$B(0, 3, -4)$And $C(5, 0, 2)$. Find (a)
 the length of each side, (b) the area of the triangle, and (c) the equation of the plane Containing
@@ -655,8 +637,7 @@ the triangle.
 - Area
   $= \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \frac{1}{2}\sqrt{9 + 9 + 16} = \frac{\sqrt{34}}{2}$.
 - (c) The normal vector is $(3, -3, -4)$. Using point $A(2, 1, -1)$: $3(x-2) - 3(y-1) - 4(z+1) = 0$
-I.e., $3x - 3y - 4z - 8 = 0$.
-</details>
+  I.e., $3x - 3y - 4z - 8 = 0$.
 
 9. **Question:** Two circles $C_1: x^2 + y^2 - 4x + 2y - 4 = 0$ and
 $C_2: x^2 + y^2 + 2x - 6y + 6 = 0$ intersect at points $A$ and $B$. Find the equation of the common
@@ -676,7 +657,6 @@ Chord $AB$ and the coordinates of $A$ and $B$.
 - Discriminant $= 100 - 100 = 0$So the circles are tangent (touch at exactly one point).
 - $x = \frac{10}{50} = \frac{1}{5}$$y = \frac{3(1/5) + 5}{4} = \frac{28}{20} = \frac{7}{5}$.
 - The circles touch at $\left(\frac{1}{5}, \frac{7}{5}\right)$.
-</details>
 
 10. **Question:** A rectangle $ABCD$ has vertices $A(1, 1)$$B(5, 1)$And $C(5, 4)$. Find the
 Coordinates of $D$ and the area of the rectangle.
@@ -689,7 +669,6 @@ Coordinates of $D$ and the area of the rectangle.
 - $D$ is such that $M$ is also the midpoint of $CD$:
   $D = (2M_x - C_x, 2M_y - C_y) = (6 - 5, 5 - 4) = (1, 4)$.
 - Area $= AB \times BC = 4 \times 3 = 12$ square units.
-</details>
 
 11. **Question:** A solid metal cone has base radius $6\mathrm{ cm}$ and slant height
 $10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the curved surface. Find
@@ -702,8 +681,7 @@ $10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the cur
 - $l = r\theta \implies 12\pi = 10\theta \implies \theta = \frac{6\pi}{5}$ rad $= 216^\circ$.
 - (b) The radius of the circular sheet is the slant height: $10\mathrm{ cm}$.
 - (c) Area of sector:
-$A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm}^2$.
-</details>
+  $A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm}^2$.
 
 12. **Question:** Prove that the points $A(-2, 0)$$B(0, 4)$$C(6, 2)$And $D(4, -2)$ are the Vertices
 of a rectangle. Find the equation of the circle passing through all four vertices.
@@ -720,7 +698,6 @@ of a rectangle. Find the equation of the circle passing through all four vertice
 - The circle through all four vertices (circumcircle) has centre at the intersection of the
   diagonals $(2, 1)$ and radius $= \frac{1}{2}AC = \sqrt{17}$.
 - Equation: $(x-2)^2 + (y-1)^2 = 17$I.e., $x^2 + y^2 - 4x - 2y - 12 = 0$.
-</details>
 </details>
 
 ---
@@ -806,13 +783,13 @@ $B(7, 8, 9)$.
 <details>
 <summary>Solution</summary>
 
-Direction vector of the line: $\mathbf{'\{'}d{'\}'} = (3, 3, 3)$Simplified to $(1, 1, 1)$.
+Direction vector of the line: $\mathbf{{'}d{}'} = (3, 3, 3)$Simplified to $(1, 1, 1)$.
 
 Vector $\overrightarrow{AP} = (1 - 4, 2 - 5, 3 - 6) = (-3, -3, -3)$.
 
-The cross product $\overrightarrow{AP} \times \mathbf{'\{'}d{'\}'} = (-3, -3, -3) \times (1, 1, 1)$.
+The cross product $\overrightarrow{AP} \times \mathbf{{'}d{}'} = (-3, -3, -3) \times (1, 1, 1)$.
 
-Since $\overrightarrow{AP}$ is parallel to $\mathbf{'\{'}d{'\}'}$ (one is $-3$ times the other), the
+Since $\overrightarrow{AP}$ is parallel to $\mathbf{{'}d{}'}$ (one is $-3$ times the other), the
 point $P$ lies on the line.
 
 The distance is $0$.
@@ -974,8 +951,8 @@ $AB = 6$.
 <details>
 <summary>Solution</summary>
 
-Normal to first plane: $\mathbf{'\{'}n_1{'\}'} = (2, -1, 2)$. Normal to second plane:
-$\mathbf{'\{'}n_2{'\}'} = (1, 2, -2)$.
+Normal to first plane: $\mathbf{{'}n_1{}'} = (2, -1, 2)$. Normal to second plane:
+$\mathbf{{'}n_2{}'} = (1, 2, -2)$.
 
 $$\cos\theta = \frac{|2(1) + (-1)(2) + 2(-2)|}{\sqrt{4 + 1 + 4} \cdot \sqrt{1 + 4 + 4}} = \frac{|2 - 2 - 4|}{3 \cdot 3} = \frac{4}{9}$$
 

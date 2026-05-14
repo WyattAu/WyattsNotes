@@ -16,24 +16,23 @@ slug: probability
 
 ### 1.1 Sample Spaces and Events
 
-A **probability space** is a triple $(\Omega, \mathcal{'\{'}F{'\}'}, P)$ where:
+A **probability space** is a triple $(\Omega, \mathcal{{'}F{}'}, P)$ where:
 
 - $\Omega$ is the **sample space** (set of all possible outcomes).
-- $\mathcal{'\{'}F{'\}'}$ is a **sigma-algebra** on $\Omega$.
-- $P : \mathcal{'\{'}F{'\}'} \to [0, 1]$ is a **probability measure**.
+- $\mathcal{{'}F{}'}$ is a **sigma-algebra** on $\Omega$.
+- $P : \mathcal{{'}F{}'} \to [0, 1]$ is a **probability measure**.
 
-**Definition.** A **sigma-algebra** $\mathcal{'\{'}F{'\}'}$ on $\Omega$ is a collection of subsets
+**Definition.** A **sigma-algebra** $\mathcal{{'}F{}'}$ on $\Omega$ is a collection of subsets
 satisfying:
 
-1. $\Omega \in \mathcal{'\{'}F{'\}'}$.
-2. If $A \in \mathcal{'\{'}F{'\}'}$Then $A^c \in \mathcal{'\{'}F{'\}'}$ (closed under
-   complementation).
-3. If $A_1, A_2, \ldots \in \mathcal{'\{'}F{'\}'}$Then
-   $\bigcup_{i=1}^{\infty} A_i \in \mathcal{'\{'}F{'\}'}$ (closed under countable unions).
+1. $\Omega \in \mathcal{{'}F{}'}$.
+2. If $A \in \mathcal{{'}F{}'}$Then $A^c \in \mathcal{{'}F{}'}$ (closed under complementation).
+3. If $A_1, A_2, \ldots \in \mathcal{{'}F{}'}$Then
+   $\bigcup_{i=1}^{\infty} A_i \in \mathcal{{'}F{}'}$ (closed under countable unions).
 
 **Definition.** A **probability measure** $P$ satisfies:
 
-1. **Non-negativity:** $P(A) \geq 0$ for all $A \in \mathcal{'\{'}F{'\}'}$.
+1. **Non-negativity:** $P(A) \geq 0$ for all $A \in \mathcal{{'}F{}'}$.
 2. **Normalisation:** $P(\Omega) = 1$.
 3. **Countable additivity:** If $A_1, A_2, \ldots$ are pairwise disjoint, then
    $P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$.
@@ -110,8 +109,8 @@ So $A$$B$$C$ are pairwise independent but not mutually independent. $\blacksquar
 
 ### 2.1 Definition and Distribution Functions
 
-**Definition.** A **random variable** is a measurable function
-$X : \Omega \to \mathbb{'\{'}R{'\}'}$. The **cumulative distribution function (CDF)** of $X$ is
+**Definition.** A **random variable** is a measurable function $X : \Omega \to \mathbb{{'}R{}'}$.
+The **cumulative distribution function (CDF)** of $X$ is
 
 $$F_X(x) = P(X \leq x)$$
 

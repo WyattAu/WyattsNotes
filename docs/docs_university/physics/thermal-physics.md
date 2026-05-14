@@ -473,16 +473,16 @@ When $k_BT \ll \varepsilon_F$ (the degenerate limit).
 
 **Theorem 4.1 (Sommerfeld Expansion).** To leading order in $T/T_F$:
 
-$$I = \int_0^\mu f(\varepsilon)\, d\varepsilon + \frac{\pi^2}{6}(k_BT)^2 f'(\mu) + \mathcal{'\{'}O{'\}'}(T^4)$$
+$$I = \int_0^\mu f(\varepsilon)\, d\varepsilon + \frac{\pi^2}{6}(k_BT)^2 f'(\mu) + \mathcal{{'}O{}'}(T^4)$$
 
 _Proof (sketch)._ Write $f(\varepsilon) = f(\mu) + f'(\mu)(\varepsilon - \mu) + \cdots$ and use the
 exact results:
 
-$$\int_0^\infty \frac{d\varepsilon}{e^{\beta(\varepsilon - \mu)} + 1} = \mu + \mathcal{'\{'}O{'\}'}(T^4)$$
+$$\int_0^\infty \frac{d\varepsilon}{e^{\beta(\varepsilon - \mu)} + 1} = \mu + \mathcal{{'}O{}'}(T^4)$$
 
 $$\int_0^\infty \frac{(\varepsilon - \mu)\, d\varepsilon}{e^{\beta(\varepsilon - \mu)} + 1} = \frac{\pi^2}{6}(k_BT)^2$$
 
-$$\int_0^\infty \frac{(\varepsilon - \mu)^2\, d\varepsilon}{e^{\beta(\varepsilon - \mu)} + 1} = \mathcal{'\{'}O{'\}'}(T^4)$$
+$$\int_0^\infty \frac{(\varepsilon - \mu)^2\, d\varepsilon}{e^{\beta(\varepsilon - \mu)} + 1} = \mathcal{{'}O{}'}(T^4)$$
 
 Combining these with the Taylor expansion of $f(\varepsilon)$ gives the result. The key integral
 identities follow from the substitution $x = \beta(\varepsilon - \mu)$ and the fact that the
@@ -494,10 +494,10 @@ Applying the Sommerfeld expansion to the number equation
 $N = \int_0^\infty g(\varepsilon) f_{\mathrm{FD{}}(\varepsilon)\, d\varepsilon$ with
 $g(\varepsilon) = C\sqrt{\varepsilon}$:
 
-$$N = \frac{2}{3}C\mu^{3/2} + \frac{\pi^2}{6}(k_BT)^2 \cdot \frac{C}{2\sqrt{\mu}} + \mathcal{'\{'}O{'\}'}(T^4)$$
+$$N = \frac{2}{3}C\mu^{3/2} + \frac{\pi^2}{6}(k_BT)^2 \cdot \frac{C}{2\sqrt{\mu}} + \mathcal{{'}O{}'}(T^4)$$
 
 At $T = 0$: $N = \frac{2}{3}C\varepsilon_F^{3/2}$. Expanding $\mu = \varepsilon_F + \delta\mu$ and
-keeping terms to $\mathcal{'\{'}O{'\}'}(T^2)$:
+keeping terms to $\mathcal{{'}O{}'}(T^2)$:
 
 $$\mu(T) \approx \varepsilon_F\left[1 - \frac{\pi^2}{12}\left(\frac{k_BT}{\varepsilon_F}\right)^2\right]$$
 
@@ -661,13 +661,13 @@ _Proof (Transfer matrix method)._ Consider a chain of $N$ spins with periodic bo
 
 $$Z = \sum_{\{s_i\}} \prod_{i=1}^{N} e^{\beta J s_i s_{i+1}}$$
 
-Define the **transfer matrix** $\mathbf{'\{'}T{'\}'}$ with elements
+Define the **transfer matrix** $\mathbf{{'}T{}'}$ with elements
 $T_{s_i, s_{i+1}} = e^{\beta J s_i s_{i+1}}$:
 
-$$\mathbf{'\{'}T{'\}'} = \begin{pmatrix} e^{\beta J} & e^{-\beta J} \\ e^{-\beta J} & e^{\beta J} \end{pmatrix}$$
+$$\mathbf{{'}T{}'} = \begin{pmatrix} e^{\beta J} & e^{-\beta J} \\ e^{-\beta J} & e^{\beta J} \end{pmatrix}$$
 
-The partition function is $Z = \mathrm{Tr{}(\mathbf{'\{'}T{'\}'}^N) = \lambda_+^N + \lambda_-^N$
-where $\lambda_\pm$ are the eigenvalues of $\mathbf{'\{'}T{'\}'}$:
+The partition function is $Z = \mathrm{Tr{}(\mathbf{{'}T{}'}^N) = \lambda_+^N + \lambda_-^N$ where
+$\lambda_\pm$ are the eigenvalues of $\mathbf{{'}T{}'}$:
 
 $$\lambda_\pm = e^{\beta J} \pm e^{-\beta J}$$
 
@@ -932,7 +932,7 @@ $PV/(Nk_BT) = 1 + B_2(T)\,(N/V) + B_3(T)\,(N/V)^2 + \cdots$.
 
 For a classical gas with pairwise interaction $V(r_{12})$:
 
-$$B_2(T) = -\frac{1}{2V}\int d^3\mathbf{'\{'}r{'\}'}_1\,d^3\mathbf{'\{'}r{'\}'}_2\,\left[e^{-\beta V(r_{12})} - 1\right]$$
+$$B_2(T) = -\frac{1}{2V}\int d^3\mathbf{{'}r{}'}_1\,d^3\mathbf{{'}r{}'}_2\,\left[e^{-\beta V(r_{12})} - 1\right]$$
 
 $$= -2\pi \int_0^\infty \left[e^{-\beta V(r)} - 1\right] r^2\, dr$$
 
@@ -1193,7 +1193,7 @@ discontinuously from zero to a finite value.
 The Ising model is the simplest model of interacting spins on a lattice. Each site $i$ has a spin
 variable $\sigma_i \in \{-1, +1\}$.
 
-$$\mathcal{'\{'}H{'\}'} = -J\sum_{\langle i,j \rangle}\sigma_i\sigma_j - h\sum_i \sigma_i$$
+$$\mathcal{{'}H{}'} = -J\sum_{\langle i,j \rangle}\sigma_i\sigma_j - h\sum_i \sigma_i$$
 
 Where $J > 0$ is the ferromagnetic coupling, $\langle i,j \rangle$ denotes nearest-neighbor pairs,
 and $h$ is the external magnetic field.
@@ -1204,10 +1204,10 @@ $$Z = \sum_{\{\sigma\}} \exp\!\left(\beta J \sum_i \sigma_i \sigma_{i+1} + \beta
 
 This can be evaluated using the **transfer matrix** method. Define:
 
-$$\mathbf{'\{'}T{'\}'} = \begin{pmatrix} e^{\beta J + \beta h} & e^{-\beta J} \\ e^{-\beta J} & e^{\beta J - \beta h} \end{pmatrix}$$
+$$\mathbf{{'}T{}'} = \begin{pmatrix} e^{\beta J + \beta h} & e^{-\beta J} \\ e^{-\beta J} & e^{\beta J - \beta h} \end{pmatrix}$$
 
-Then $Z = \text{Tr{}(\mathbf{'\{'}T{'\}'}^N) = \lambda_+^N + \lambda_-^N$ where $\lambda_\pm$ are
-the eigenvalues of $\mathbf{'\{'}T{'\}'}$.
+Then $Z = \text{Tr{}(\mathbf{{'}T{}'}^N) = \lambda_+^N + \lambda_-^N$ where $\lambda_\pm$ are the
+eigenvalues of $\mathbf{{'}T{}'}$.
 
 In the thermodynamic limit ($N \to \infty$), $Z = \lambda_+^N$ where:
 
@@ -1224,7 +1224,7 @@ $$\sigma_i\sigma_j \approx \sigma_i\langle\sigma_j\rangle + \langle\sigma_i\rang
 
 The effective Hamiltonian becomes:
 
-$$\mathcal{'\{'}H{'\}'}_{\text{MF{}} = -\sum_i \left(zJm + h\right)\sigma_i + \frac{1}{2}N zJ m^2$$
+$$\mathcal{{'}H{}'}_{\text{MF{}} = -\sum_i \left(zJm + h\right)\sigma_i + \frac{1}{2}N zJ m^2$$
 
 Where $z$ is the coordination number and $m = \langle\sigma\rangle$.
 
@@ -1304,9 +1304,9 @@ This is a smooth function with no singularity — confirming no phase transition
 The **fluctuation-dissipation theorem** (FDT) connects the response of a system to a small
 perturbation with the spontaneous fluctuations of the system at equilibrium.
 
-Consider a Hamiltonian $\mathcal{'\{'}H{'\}'}_0$ perturbed by a time-dependent field:
+Consider a Hamiltonian $\mathcal{{'}H{}'}_0$ perturbed by a time-dependent field:
 
-$$\mathcal{'\{'}H{'\}'}(t) = \mathcal{'\{'}H{'\}'}_0 - f(t)A$$
+$$\mathcal{{'}H{}'}(t) = \mathcal{{'}H{}'}_0 - f(t)A$$
 
 Where $A$ is an observable conjugate to the field $f(t)$. The change in $\langle A(t) \rangle$ to
 first order in $f$ is:
@@ -1390,7 +1390,7 @@ number $N$And volume $V$.
 
 The number of microstates with energy between $E$ and $E + \delta E$ is:
 
-$$\Omega(E, V, N) = \int_{E < \mathcal{'\{'}H{'\}'} < E + \delta E} \frac{d^{3N}q\, d^{3N}p}{N!h^{3N}}$$
+$$\Omega(E, V, N) = \int_{E < \mathcal{{'}H{}'} < E + \delta E} \frac{d^{3N}q\, d^{3N}p}{N!h^{3N}}$$
 
 The **entropy** (Boltzmann entropy):
 
@@ -1422,11 +1422,11 @@ Reproducing the equipartition theorem.
 ### 14.3 Classical Virial Theorem
 
 For a system with Hamiltonian
-$\mathcal{'\{'}H{'\}'} = \sum_i p_i^2/(2m_i) + U(\mathbf{'\{'}r{'\}'}_1, \ldots, \mathbf{'\{'}r{'\}'}_N)$:
+$\mathcal{{'}H{}'} = \sum_i p_i^2/(2m_i) + U(\mathbf{{'}r{}'}_1, \ldots, \mathbf{{'}r{}'}_N)$:
 
-$$\left\langle \sum_i \mathbf{'\{'}p{'\}'}_i \cdot \frac{\partial \mathcal{'\{'}H{'\}'}}{\partial \mathbf{'\{'}p{'\}'}_i} \right\rangle = 3Nk_B T$$
+$$\left\langle \sum_i \mathbf{{'}p{}'}_i \cdot \frac{\partial \mathcal{{'}H{}'}}{\partial \mathbf{{'}p{}'}_i} \right\rangle = 3Nk_B T$$
 
-$$\left\langle \sum_i \mathbf{'\{'}r{'\}'}_i \cdot \frac{\partial \mathcal{'\{'}H{'\}'}}{\partial \mathbf{'\{'}r{'\}'}_i} \right\rangle = -3Nk_B T$$
+$$\left\langle \sum_i \mathbf{{'}r{}'}_i \cdot \frac{\partial \mathcal{{'}H{}'}}{\partial \mathbf{{'}r{}'}_i} \right\rangle = -3Nk_B T$$
 
 For a power-law potential $U \propto r^n$This gives:
 
@@ -1475,7 +1475,7 @@ when $\epsilon_i = \mu$.
 
 For a 3D gas of $N$ non-interacting fermions in volume $V$:
 
-$$N = \sum_{\mathbf{'\{'}k{'\}'}} \frac{1}{e^{\beta(\hbar^2 k^2/2m - \mu)} + 1} \xrightarrow{\text{continuum{}} \frac{V}{(2\pi)^3}\int d^3k\, f(\epsilon_k)$$
+$$N = \sum_{\mathbf{{'}k{}'}} \frac{1}{e^{\beta(\hbar^2 k^2/2m - \mu)} + 1} \xrightarrow{\text{continuum{}} \frac{V}{(2\pi)^3}\int d^3k\, f(\epsilon_k)$$
 
 The **Fermi energy** at $T = 0$:
 
@@ -1875,7 +1875,7 @@ Where $n = N/V$.
 
 (a) In the grand canonical ensemble:
 
-$$\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \mathcal{'\{'}Z{'\}'}}{\partial \mu}$$
+$$\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \mathcal{{'}Z{}'}}{\partial \mu}$$
 
 $$\langle(\Delta N)^2\rangle = \langle N^2 \rangle - \langle N \rangle^2 = \frac{1}{\beta}\frac{\partial \langle N \rangle}{\partial \mu} = \frac{1}{\beta}\frac{\partial}{\partial\mu}\left(\frac{PV}{k_BT}\right) = V\frac{\partial P}{\partial \mu}$$
 
@@ -1938,15 +1938,15 @@ For a pure state: $S = 0$. For a thermal state: $S > 0$ (maximum for the maximal
 
 For a system of non-interacting quantum particles, the grand canonical partition function is:
 
-$$\ln\mathcal{'\{'}Z{'\}'} = \pm\sum_{\mathbf{'\{'}k{'\}'}}\ln(1 \mp e^{-\beta(\epsilon_{\mathbf{'\{'}k{'\}'}} - \mu)})$$
+$$\ln\mathcal{{'}Z{}'} = \pm\sum_{\mathbf{{'}k{}'}}\ln(1 \mp e^{-\beta(\epsilon_{\mathbf{{'}k{}'}} - \mu)})$$
 
 Where $+$ is for fermions and $-$ for bosons.
 
 The thermodynamic quantities follow from:
 
-$$N = \sum_{\mathbf{'\{'}k{'\}'}}\frac{1}{e^{\beta(\epsilon_{\mathbf{'\{'}k{'\}'}} - \mu)} \pm 1}, \quad E = \sum_{\mathbf{'\{'}k{'\}'}}\frac{\epsilon_{\mathbf{'\{'}k{'\}'}}}{e^{\beta(\epsilon_{\mathbf{'\{'}k{'\}'}} - \mu)} \pm 1}$$
+$$N = \sum_{\mathbf{{'}k{}'}}\frac{1}{e^{\beta(\epsilon_{\mathbf{{'}k{}'}} - \mu)} \pm 1}, \quad E = \sum_{\mathbf{{'}k{}'}}\frac{\epsilon_{\mathbf{{'}k{}'}}}{e^{\beta(\epsilon_{\mathbf{{'}k{}'}} - \mu)} \pm 1}$$
 
-$$\Omega = -PV = \mp k_BT\sum_{\mathbf{'\{'}k{'\}'}}\ln(1 \mp e^{-\beta(\epsilon_{\mathbf{'\{'}k{'\}'}} - \mu)})$$
+$$\Omega = -PV = \mp k_BT\sum_{\mathbf{{'}k{}'}}\ln(1 \mp e^{-\beta(\epsilon_{\mathbf{{'}k{}'}} - \mu)})$$
 
 In the continuum limit:
 
@@ -1974,7 +1974,7 @@ The excited fraction: $N_{\text{ex{}}/N = (T/T_c)^{3/2}$.
 
 ### 18.4 Landau Levels and Quantum Oscillations
 
-In a magnetic field $\mathbf{'\{'}B{'\}'} = B\hat{z}$The energy levels of a free electron gas become
+In a magnetic field $\mathbf{{'}B{}'} = B\hat{z}$The energy levels of a free electron gas become
 quantised into **Landau levels**:
 
 $$\epsilon_n = \left(n + \frac{1}{2}\right)\hbar\omega_c + \frac{\hbar^2 k_z^2}{2m_e}, \quad \omega_c = \frac{eB}{m_e}$$
@@ -1989,7 +1989,7 @@ causing oscillations in the resistivity with period:
 $$\Delta\!\left(\frac{1}{B}\right) = \frac{2\pi e}{\hbar A_{\text{ext{}}}$$
 
 Where $A_{\text{ext{}}$ is the extremal cross-sectional area of the Fermi surface perpendicular to
-$\mathbf{'\{'}B{'\}'}$.
+$\mathbf{{'}B{}'}$.
 
 **de Haas--van Alphen oscillations:** Similar oscillations in the magnetisation (and hence the
 susceptibility). These provide the most precise tool for mapping Fermi surface geometry.

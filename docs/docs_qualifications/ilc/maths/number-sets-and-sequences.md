@@ -21,23 +21,23 @@ Concepts underpin much of the algebra and calculus in the Leaving Certificate co
 
 ### Classification (OL/HL)
 
-| Symbol                 | Name             | Description                                                                          |
-| ---------------------- | ---------------- | ------------------------------------------------------------------------------------ |
-| $\mathbb{'\{'}N{'\}'}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                                   |
-| $\mathbb{'\{'}Z{'\}'}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                                |
-| $\mathbb{'\{'}Q{'\}'}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$ |
-| $\mathbb{'\{'}R{'\}'}$ | Real numbers     | All rational and irrational numbers                                                  |
-| $\mathbb{'\{'}C{'\}'}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$                   |
+| Symbol             | Name             | Description                                                                      |
+| ------------------ | ---------------- | -------------------------------------------------------------------------------- |
+| $\mathbb{{'}N{}'}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                               |
+| $\mathbb{{'}Z{}'}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                            |
+| $\mathbb{{'}Q{}'}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{{'}Z{}'}$$q \neq 0$ |
+| $\mathbb{{'}R{}'}$ | Real numbers     | All rational and irrational numbers                                              |
+| $\mathbb{{'}C{}'}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{{'}R{}'}$                   |
 
 The inclusions are:
-$\mathbb{'\{'}N{'\}'} \subset \mathbb{'\{'}Z{'\}'} \subset \mathbb{'\{'}Q{'\}'} \subset \mathbb{'\{'}R{'\}'} \subset \mathbb{'\{'}C{'\}'}$.
+$\mathbb{{'}N{}'} \subset \mathbb{{'}Z{}'} \subset \mathbb{{'}Q{}'} \subset \mathbb{{'}R{}'} \subset \mathbb{{'}C{}'}$.
 
 ### Properties of Real Numbers (OL/HL)
 
 The real numbers satisfy the following axioms:
 
-**Closure:** If $a, b \in \mathbb{'\{'}R{'\}'}$Then $a + b \in \mathbb{'\{'}R{'\}'}$ and
-$a \cdot b \in \mathbb{'\{'}R{'\}'}$.
+**Closure:** If $a, b \in \mathbb{{'}R{}'}$Then $a + b \in \mathbb{{'}R{}'}$ and
+$a \cdot b \in \mathbb{{'}R{}'}$.
 
 **Commutativity:** $a + b = b + a$ and $a \cdot b = b \cdot a$.
 
@@ -50,7 +50,7 @@ $a \cdot b \in \mathbb{'\{'}R{'\}'}$.
 **Inverse elements:** For every $a$There exists $-a$ such that $a + (-a) = 0$. For every
 $a \neq 0$There exists $a^{-1}$ such that $a \cdot a^{-1} = 1$.
 
-**Ordered field properties:** For any $a, b \in \mathbb{'\{'}R{'\}'}$Exactly one of $a \lt b$$a = b$
+**Ordered field properties:** For any $a, b \in \mathbb{{'}R{}'}$Exactly one of $a \lt b$$a = b$
 $a \gt b$ holds. The order is compatible with addition and multiplication by positive numbers.
 
 ### Irrational Numbers (HL)
@@ -59,8 +59,8 @@ A number is irrational if it cannot be expressed as a ratio of integers.
 
 **Proof that $\sqrt{2}$ is irrational:**
 
-Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$And the fraction is
-in Lowest terms ($\gcd(p, q) = 1$).
+Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{{'}Z{}'}$$q \neq 0$And the fraction is in
+Lowest terms ($\gcd(p, q) = 1$).
 
 Then $p^2 = 2q^2$So $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$ Giving
 $q^2 = 2k^2$So $q$ is also even. But this contradicts $\gcd(p, q) = 1$. Therefore $\sqrt{2}$ is
@@ -70,14 +70,14 @@ irrational.
 
 **Example:** Prove that $\sqrt{2} + \sqrt{3}$ is irrational.
 
-Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{'\{'}Q{'\}'}$. Then
-$\sqrt{3} = r - \sqrt{2}$So $3 = r^2 - 2r\sqrt{2} + 2$Giving:
+Assume $\sqrt{2} + \sqrt{3} = r$ where $r \in \mathbb{{'}Q{}'}$. Then $\sqrt{3} = r - \sqrt{2}$So
+$3 = r^2 - 2r\sqrt{2} + 2$Giving:
 
 $$
 2r\sqrt{2} = r^2 - 1 \implies \sqrt{2} = \frac{r^2 - 1}{2r}
 $$
 
-Since $r \in \mathbb{'\{'}Q{'\}'}$$\frac{r^2 - 1}{2r} \in \mathbb{'\{'}Q{'\}'}$Contradicting the
+Since $r \in \mathbb{{'}Q{}'}$$\frac{r^2 - 1}{2r} \in \mathbb{{'}Q{}'}$Contradicting the
 irrationality of $\sqrt{2}$.
 
 **Example:** Prove that $\sqrt{2} \cdot \sqrt{3} = \sqrt{6}$ is irrational.
@@ -87,18 +87,18 @@ $4k^2 = 6q^2$Giving $2k^2 = 3q^2$So $q$ is even. Contradiction.
 
 **Example (HL):** Prove that $\sqrt{2} + \sqrt{5}$ is irrational.
 
-Assume $\sqrt{2} + \sqrt{5} = r \in \mathbb{'\{'}Q{'\}'}$. Then $\sqrt{5} = r - \sqrt{2}$So
+Assume $\sqrt{2} + \sqrt{5} = r \in \mathbb{{'}Q{}'}$. Then $\sqrt{5} = r - \sqrt{2}$So
 $5 = r^2 - 2r\sqrt{2} + 2$Giving:
 
 $$
-2r\sqrt{2} = r^2 - 3 \implies \sqrt{2} = \frac{r^2 - 3}{2r} \in \mathbb{'\{'}Q{'\}'}
+2r\sqrt{2} = r^2 - 3 \implies \sqrt{2} = \frac{r^2 - 3}{2r} \in \mathbb{{'}Q{}'}
 $$
 
 This contradicts the irrationality of $\sqrt{2}$.
 
 **Example (HL):** Prove that $\log_2 3$ is irrational.
 
-Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{'\{'}Z{'\}'}$$q \neq 0$In lowest terms. Then
+Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{{'}Z{}'}$$q \neq 0$In lowest terms. Then
 $2^{p/q} = 3$So $2^p = 3^q$.
 
 The left side is even (since $p \ge 1$) but the right side is odd. Contradiction.
@@ -109,7 +109,7 @@ The proof that $\pi$ is irrational (due to Lambert, 1761) is beyond the scope of
 Certificate, but the technique uses proof by contradiction with integration by parts applied to
 $\sin x$ and the assumption that $\pi = a/b$ is rational.
 
-### Density of $\mathbb{'\{'}Q{'\}'}$ in $\mathbb{'\{'}R{'\}'}$ (HL - awareness)
+### Density of $\mathbb{{'}Q{}'}$ in $\mathbb{{'}R{}'}$ (HL - awareness)
 
 Between any two real numbers $a \lt b$There exists a rational number. This is a consequence of the
 Archimedean property: since $b - a > 0$There exists a positive integer $n$ such that $n(b-a) > 1$
@@ -413,8 +413,7 @@ $$
 \sum_{r=1}^{k+1} r = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}
 $$
 
-This is the formula for $n = k+1$. By induction, the formula holds for all
-$n \in \mathbb{'\{'}N{'\}'}$.
+This is the formula for $n = k+1$. By induction, the formula holds for all $n \in \mathbb{{'}N{}'}$.
 
 **Example (HL):** Evaluate $\sum_{r=1}^{50} (3r - 1)$.
 

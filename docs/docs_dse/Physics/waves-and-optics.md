@@ -60,8 +60,6 @@ Speed of sound.
 
 $$v = f\lambda = 440 \times 0.78 = 343.2 \mathrm{ m/s}$$
 
-</details>
-
 ### Worked Example 1b
 
 A light wave has a frequency of $5.0 \times 10^{14} \mathrm{ Hz}$. Find its wavelength in air.
@@ -70,8 +68,6 @@ A light wave has a frequency of $5.0 \times 10^{14} \mathrm{ Hz}$. Find its wave
 <summary>Solution</summary>
 
 $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{5.0 \times 10^{14}} = 6.0 \times 10^{-7} \mathrm{ m} = 600 \mathrm{ nm}$$
-
-</details>
 
 ### Phase and Phase Difference
 
@@ -143,8 +139,6 @@ $$\sin\theta_c = \frac{1.0}{1.5} = 0.667$$
 
 $$\theta_c = \sin^{-1}(0.667) = 41.8^\circ$$
 
-</details>
-
 ### Diffraction
 
 Diffraction is the spreading of waves as they pass through a gap or around an obstacle. The amount
@@ -178,8 +172,6 @@ Using the double-slit formula:
 
 $$\lambda = \frac{ay}{D} = \frac{0.5 \times 10^{-3} \times 1.2 \times 10^{-3}}{1.2} = 5 \times 10^{-7} \mathrm{ m} = 500 \mathrm{ nm}$$
 
-</details>
-
 ### Worked Example 3b
 
 In a double-slit experiment, light of wavelength $550 \mathrm{ nm}$ passes through slits
@@ -195,8 +187,6 @@ $$y = \frac{(n + 0.5)\lambda D}{a} = \frac{0.5 \times 550 \times 10^{-9} \times 
 
 _If you get this wrong, revise: Double-slit interference — dark fringes occur at half-integer
 Multiples of $\lambda$._
-
-</details>
 
 ---
 
@@ -236,8 +226,6 @@ Wave speed and the frequency of the third harmonic.
 $$v = f_1 \times \lambda_1 = 220 \times 2(0.8) = 352 \mathrm{ m/s}$$
 
 $$f_3 = 3f_1 = 3 \times 220 = 660 \mathrm{ Hz}$$
-
-</details>
 
 ---
 
@@ -285,8 +273,6 @@ Find the difference in loudness level.
 <summary>Solution</summary>
 
 $$\Delta\beta = 10\log_{10}\left(\frac{10^{-2}}{10^{-4}}\right) = 10\log_{10}(100) = 10 \times 2 = 20 \mathrm{ dB}$$
-
-</details>
 
 ### Ultrasound
 
@@ -408,8 +394,6 @@ $$m = \frac{v}{u} = \frac{60}{-30} = -2$$
 The image is real, inverted, and twice the size of the object, located $60 \mathrm{ cm}$ on the
 Other side of the lens.
 
-</details>
-
 ---
 
 ## Optical Fibres
@@ -448,8 +432,6 @@ $$\sin\theta_c = \frac{n_{\mathrm{cladding}}}{n_{\mathrm{core}}} = \frac{1.45}{1
 
 $$\theta_c = \sin^{-1}(0.967) = 75.2^\circ$$
 
-</details>
-
 ---
 
 ## Polarisation
@@ -480,8 +462,6 @@ Filter.
 After the first filter (intensity halved): $I_1 = 100 \mathrm{ W/m}^2$
 
 After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \mathrm{ W/m}^2$
-
-</details>
 
 ---
 
@@ -517,12 +497,11 @@ After the second filter: $I_2 = I_1\cos^2 60^\circ = 100 \times 0.25 = 25 \mathr
 $0.2 \mathrm{ mm}$. The screen is $1.5 \mathrm{ m}$ away. Find the distance between the central
 Maximum and the third bright fringe.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 $$y = \frac{n\lambda D}{a} = \frac{3 \times 600 \times 10^{-9} \times 1.5}{0.2 \times 10^{-3}} = \frac{2.7 \times 10^{-6}}{2 \times 10^{-4}} = 0.0135 \mathrm{ m} = 13.5 \mathrm{ mm}$$
-
-</details>
 
 **Question 2:** A concave lens has a focal length of $15 \mathrm{ cm}$. An object is placed
 $25 \mathrm{ cm}$ from the lens. Find the image position.
@@ -541,8 +520,6 @@ $$v = -9.375 \mathrm{ cm}$$
 The image is virtual, upright, and $9.375 \mathrm{ cm}$ from the lens on the same side as the
 Object.
 
-</details>
-
 **Question 3:** The critical angle for a glass-air boundary is $42^\circ$. Find the refractive index
 Of the glass.
 
@@ -551,8 +528,6 @@ Of the glass.
 
 $$n = \frac{1}{\sin 42^\circ} = \frac{1}{0.669} = 1.49$$
 
-</details>
-
 **Question 4:** Unpolarised light of intensity $300 \mathrm{ W/m}^2$ passes through a Polaroid
 Filter. What is the transmitted intensity?
 
@@ -560,8 +535,6 @@ Filter. What is the transmitted intensity?
 <summary>Solution</summary>
 
 The first Polaroid reduces the intensity by half: $I = 150 \mathrm{ W/m}^2$.
-
-</details>
 
 **Question 5:** A stationary wave is set up on a string of length $1.2 \mathrm{ m}$. The speed of
 The waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second harmonic.
@@ -572,8 +545,6 @@ The waves on the string is $24 \mathrm{ m/s}$. Find the frequency of the second 
 For the second harmonic: $\lambda_2 = L = 1.2 \mathrm{ m}$
 
 $$f_2 = \frac{v}{\lambda_2} = \frac{24}{1.2} = 20 \mathrm{ Hz}$$
-
-</details>
 
 </details>
 
@@ -881,7 +852,6 @@ $$v = f\lambda = 0.25 \times 3.0 = 0.75 \mathrm{ m/s}$$
 _If you get this wrong, revise: The wave equation $v = f\lambda$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 2: Double-Slit Interference</summary>
@@ -896,7 +866,6 @@ $$y = \frac{\lambda D}{a} = \frac{480 \times 10^{-9} \times 2.0}{0.3 \times 10^{
 
 _If you get this wrong, revise: Double-slit fringe spacing formula $y = \lambda D / a$._
 
-</details>
 </details>
 
 <details>
@@ -919,7 +888,6 @@ $$\theta_2 = 30.2^\circ$$
 _If you get this wrong, revise: Snell's law — remember to measure angles from the normal._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 4: Stationary Waves — Harmonics</summary>
@@ -939,7 +907,6 @@ Fundamental: $f_1 = \frac{v}{2L} = \frac{240}{2 \times 0.6} = 200 \mathrm{ Hz}$
 _If you get this wrong, revise: Stationary waves on a string and the harmonic series $f_n = nf_1$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 5: Decibel Calculation</summary>
@@ -954,7 +921,6 @@ $$\beta = 10\log_{10}\left(\frac{10^{-6}}{10^{-12}}\right) = 10\log_{10}(10^6) =
 _If you get this wrong, revise: The decibel formula $\beta = 10\log_{10}(I/I*0)$ and
 $I_0 = 10^{-12} \mathrm{ W/m}^2$.*
 
-</details>
 </details>
 
 <details>
@@ -982,7 +948,6 @@ The object.
 _If you get this wrong, revise: Thin lens formula for convex lens when object is inside $f$._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 7: Doppler Effect — Moving Observer</summary>
@@ -998,7 +963,6 @@ $$f' = f\left(\frac{v + v_o}{v}\right) = 400 \times \frac{340 + 20}{340} = 400 \
 _If you get this wrong, revise: Doppler effect formula when the observer is moving — use $v + v_o$
 in the Numerator._
 
-</details>
 </details>
 
 <details>
@@ -1018,7 +982,6 @@ Frequency range: $3.0 \times 10^9$ to $3.0 \times 10^{11} \mathrm{ Hz}$.
 
 _If you get this wrong, revise: EM spectrum and the wave equation $c = f\lambda$._
 
-</details>
 </details>
 
 <details>
@@ -1041,7 +1004,6 @@ _If you get this wrong, revise: Closed pipe harmonics — only odd harmonics
 ($f_1, f_3, f_5, \ldots$)._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 10: Malus's Law — Crossed Polaroids</summary>
@@ -1060,7 +1022,6 @@ No light is transmitted through crossed polaroids.
 
 _If you get this wrong, revise: Malus's law — $\cos 90^\circ = 0$._
 
-</details>
 </details>
 
 <details>
@@ -1087,7 +1048,6 @@ _If you get this wrong, revise: Optical fibres — the relationship between the 
 the axis) and the critical angle (from the normal)._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 12: Ultrasound Depth</summary>
@@ -1103,7 +1063,6 @@ $$d = \frac{vt}{2} = \frac{1540 \times 26 \times 10^{-6}}{2} = \frac{0.04004}{2}
 _If you get this wrong, revise: Ultrasound depth calculation — remember the factor of 2 for the
 Round trip._
 
-</details>
 </details>
 
 <details>
@@ -1121,7 +1080,6 @@ $$I_2 = \frac{8.0 \times 10^{-5}}{16} = 5.0 \times 10^{-6} \mathrm{ W/m}^2$$
 
 _If you get this wrong, revise: Inverse square law for sound intensity $I \propto 1/r^2$._
 
-</details>
 </details>
 
 <details>
@@ -1143,7 +1101,6 @@ _If you get this wrong, revise: Snell's law — check which medium is denser to 
 Direction of bending._
 
 </details>
-</details>
 
 <details>
 <summary>Problem 15: Seismic Waves — S-Wave Evidence</summary>
@@ -1161,7 +1118,6 @@ This is evidence for the existence of the liquid outer core.
 _If you get this wrong, revise: Seismic wave types and their ability to travel through different
 States of matter._
 
-</details>
 </details>
 
 ---
@@ -1637,8 +1593,6 @@ $$a\sin\theta = \lambda$$
 
 $$a = \frac{\lambda}{\sin\theta} = \frac{620 \times 10^{-9}}{\sin 3.0^\circ} = \frac{620 \times 10^{-9}}{0.0523} = 1.19 \times 10^{-5} \mathrm{ m} = 0.0119 \mathrm{ mm}$$
 
-</details>
-
 ### Extended Worked Example: Dispersion in a Prism
 
 A prism has apex angle $60^\circ$ and refractive index $1.52$ for sodium light
@@ -1658,8 +1612,6 @@ $$\sin\left(\frac{60 + D_m}{2}\right) = 1.52 \times 0.5 = 0.760$$
 $$\frac{60 + D_m}{2} = \sin^{-1}(0.760) = 49.5^\circ$$
 
 $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
-
-</details>
 
 </details>
 

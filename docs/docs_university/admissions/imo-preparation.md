@@ -242,14 +242,14 @@ $$\text{Res{}(P, Q) = a^m b^n \prod_{i,j}(\alpha_i - \beta_j) = a^m \prod_i Q(\a
 Where $m = \deg P$ and $n = \deg Q$.
 
 **Technique: irreducibility.** Eisenstein's criterion: if
-$f(x) = a_n x^n + \cdots + a_0 \in \mathbb{'\{'}Z{'\}'}[x]$ And there exists a prime $p$ such that
+$f(x) = a_n x^n + \cdots + a_0 \in \mathbb{{'}Z{}'}[x]$ And there exists a prime $p$ such that
 $p \nmid a_n$$p \mid a_i$ for $i < n$And $p^2 \nmid a_0$ Then $f$ is irreducible over
-$\mathbb{'\{'}Q{'\}'}$.
+$\mathbb{{'}Q{}'}$.
 
 **Technique: roots of unity.** The $n$-th roots of unity are $\zeta_n^k = e^{2\pi i k/n}$ for
 $k = 0, 1, \ldots, n-1$. The cyclotomic polynomial
 $\Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n)=1}}(x - \zeta_n^k)$ Is irreducible over
-$\mathbb{'\{'}Q{'\}'}$ and has degree $\phi(n)$.
+$\mathbb{{'}Q{}'}$ and has degree $\phi(n)$.
 
 ### 4.3 Advanced Functional Equations
 
@@ -326,8 +326,8 @@ quadrilateral.
 
 ### 5.3 Complex Numbers in Geometry
 
-**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{'\{'}C{'\}'}$.
-Then the Vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
+**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{{'}C{}'}$. Then
+the Vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
 
 **Key formulas.** With $a, b, c$ on the unit circle ($\bar{a} = 1/a$Etc.):
 
@@ -337,10 +337,10 @@ Then the Vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| 
 - **Nine-point centre:** $n = (a + b + c)/2$
 
 **Collinearity.** Points $p, q, r$ are collinear if and only if
-$\frac{p - q}{p - r} \in \mathbb{'\{'}R{'\}'}$.
+$\frac{p - q}{p - r} \in \mathbb{{'}R{}'}$.
 
 **Perpendicularity.** Lines $PQ$ and $RS$ are perpendicular if and only if
-$\frac{p - q}{r - s} \in i\mathbb{'\{'}R{'\}'}$.
+$\frac{p - q}{r - s} \in i\mathbb{{'}R{}'}$.
 
 **Technique: the foot of the perpendicular.** The foot of the perpendicular from $P$ to line $AB$
 (where $a, b$ are on the unit circle) is:
@@ -543,38 +543,38 @@ Through $P$) always passes through the Miquel point $R$Which is fixed.
 
 ---
 
-### Question 5 (Combinatorics: Graph Theory over $\mathbb{'\{'}F{'\}'}_2$)
+### Question 5 (Combinatorics: Graph Theory over $\mathbb{{'}F{}'}_2$)
 
 > A social network has $n$ users (where $n$ is odd). Some pairs of users are friends (symmetric).
 > Prove that there exists a non-empty set $S$ of users such that every user in the network has an
 > even number of friends in $S$.
 
-**Solution.** We work over the field $\mathbb{'\{'}F{'\}'}_2$. Label the users $1, 2, \ldots, n$.
-For each User $i$Let $\mathbf{'\{'}v{'\}'}_i \in \mathbb{'\{'}F{'\}'}_2^n$ be the vector whose
-$j$-th coordinate is $1$ if Users $i$ and $j$ are friends, and $0$ otherwise (with $v_{ii} = 0$).
+**Solution.** We work over the field $\mathbb{{'}F{}'}_2$. Label the users $1, 2, \ldots, n$. For
+each User $i$Let $\mathbf{{'}v{}'}_i \in \mathbb{{'}F{}'}_2^n$ be the vector whose $j$-th coordinate
+is $1$ if Users $i$ and $j$ are friends, and $0$ otherwise (with $v_{ii} = 0$).
 
-A set $S$ corresponds to a vector $\mathbf{'\{'}s{'\}'} \in \mathbb{'\{'}F{'\}'}_2^n$ where
-$s_j = 1$ iff $j \in S$. The number of friends user $i$ has in $S$ (mod 2) is
-$\mathbf{'\{'}v{'\}'}_i \cdot \mathbf{'\{'}s{'\}'}$.
+A set $S$ corresponds to a vector $\mathbf{{'}s{}'} \in \mathbb{{'}F{}'}_2^n$ where $s_j = 1$ iff
+$j \in S$. The number of friends user $i$ has in $S$ (mod 2) is
+$\mathbf{{'}v{}'}_i \cdot \mathbf{{'}s{}'}$.
 
-We need $\mathbf{'\{'}v{'\}'}_i \cdot \mathbf{'\{'}s{'\}'} = 0$ for all $i$. Let $A$ be the
-$n \times n$ adjacency Matrix (the $i$-th row is $\mathbf{'\{'}v{'\}'}_i$). The system is
-$A\mathbf{'\{'}s{'\}'} = \mathbf{'\{'}0{'\}'}$.
+We need $\mathbf{{'}v{}'}_i \cdot \mathbf{{'}s{}'} = 0$ for all $i$. Let $A$ be the $n \times n$
+adjacency Matrix (the $i$-th row is $\mathbf{{'}v{}'}_i$). The system is
+$A\mathbf{{'}s{}'} = \mathbf{{'}0{}'}$.
 
 $A$ is symmetric with zero diagonal. The quadratic form
-$q(\mathbf{'\{'}x{'\}'}) = \mathbf{'\{'}x{'\}'}^T A \mathbf{'\{'}x{'\}'}$ Satisfies:
+$q(\mathbf{{'}x{}'}) = \mathbf{{'}x{}'}^T A \mathbf{{'}x{}'}$ Satisfies:
 
-$$q(\mathbf{'\{'}x{'\}'}) = \sum_{i,j} A_{ij} x_i x_j = 2\sum_{i < j} A_{ij} x_i x_j + \sum_i A_{ii} x_i^2 = 0$$
+$$q(\mathbf{{'}x{}'}) = \sum_{i,j} A_{ij} x_i x_j = 2\sum_{i < j} A_{ij} x_i x_j + \sum_i A_{ii} x_i^2 = 0$$
 
-Since $2 = 0$ in $\mathbb{'\{'}F{'\}'}_2$ and $A_{ii} = 0$. So $q(\mathbf{'\{'}x{'\}'}) = 0$ for all
-$\mathbf{'\{'}x{'\}'}$.
+Since $2 = 0$ in $\mathbb{{'}F{}'}_2$ and $A_{ii} = 0$. So $q(\mathbf{{'}x{}'}) = 0$ for all
+$\mathbf{{'}x{}'}$.
 
-For a non-singular symmetric matrix over $\mathbb{'\{'}F{'\}'}_2$ of odd dimension $n$The associated
+For a non-singular symmetric matrix over $\mathbb{{'}F{}'}_2$ of odd dimension $n$The associated
 Quadratic form cannot be identically zero (a non-degenerate quadratic form in odd dimension over
-$\mathbb{'\{'}F{'\}'}_2$ must take non-zero values). Therefore $A$ is singular, meaning
-$\det(A) = 0$ in $\mathbb{'\{'}F{'\}'}_2$.
+$\mathbb{{'}F{}'}_2$ must take non-zero values). Therefore $A$ is singular, meaning $\det(A) = 0$ in
+$\mathbb{{'}F{}'}_2$.
 
-The system $A\mathbf{'\{'}s{'\}'} = \mathbf{'\{'}0{'\}'}$ therefore has a non-trivial solution,
+The system $A\mathbf{{'}s{}'} = \mathbf{{'}0{}'}$ therefore has a non-trivial solution,
 corresponding to a Non-empty set $S$ with the desired property.
 
 ---

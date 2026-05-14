@@ -62,7 +62,7 @@ Domain of $g \circ f$: $[3, 4) \cup (4, \infty)$.
 
 **(c)** The student is incorrect. $\mathrm{dom}(f \circ g)$ is not $\mathrm{dom}(g)$. It is the
 subset of $\mathrm{dom}(g)$ for which $g(x)$ falls within $\mathrm{dom}(f)$. Here
-$\mathrm{dom}(g) = \mathbb{'\{'}R{'\}'} \setminus \{1\}$But
+$\mathrm{dom}(g) = \mathbb{{'}R{}'} \setminus \{1\}$But
 $\mathrm{dom}(f \circ g) = \left(1, \frac{4}{3}\right]$Which is a proper subset.
 
 ---
@@ -92,7 +92,7 @@ $$f^{-1}(x) = \frac{x + 3}{x - 2}, \quad x \neq 2$$
 The domain of $f^{-1}$ equals the range of $f$. Since
 $f(x) = \dfrac{2x + 3}{x - 1} = 2 + \dfrac{5}{x - 1}$As $x \to \pm\infty$$f(x) \to 2$But
 $f(x) \neq 2$. The horizontal asymptote at $y = 2$ is never reached. Domain:
-$\mathbb{'\{'}R{'\}'} \setminus \{2\}$.
+$\mathbb{{'}R{}'} \setminus \{2\}$.
 
 **(b)** The student computed $\dfrac{1}{f(x)} = \dfrac{x - 1}{2x + 3}$Confusing the inverse function
 $f^{-1}$ with the reciprocal $\dfrac{1}{f}$. The notation $f^{-1}$ means the function that "undoes"

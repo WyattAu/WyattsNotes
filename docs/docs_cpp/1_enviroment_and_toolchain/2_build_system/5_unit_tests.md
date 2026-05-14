@@ -11,7 +11,7 @@ categories:
 slug: unit-testing
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 In a standard workflow, unit tests are compiled and executed as part of the build process. The build
 System must be capable of resolving testing dependencies, compiling test suites, and executing

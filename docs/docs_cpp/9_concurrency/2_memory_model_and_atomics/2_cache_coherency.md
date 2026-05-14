@@ -176,8 +176,8 @@ Uncontended case.
 ### Proof: Why False Sharing Causes Performance Degradation
 
 **Claim:** If two threads concurrently write to variables on the same cache line, each write causes
-An L1 cache miss on the other thread, resulting in $\mathcal{'\{'}O{'\}'}(n)$ coherence round-trips
-for $n$ Writes per thread.
+An L1 cache miss on the other thread, resulting in $\mathcal{{'}O{}'}(n)$ coherence round-trips for
+$n$ Writes per thread.
 
 **Proof:**
 

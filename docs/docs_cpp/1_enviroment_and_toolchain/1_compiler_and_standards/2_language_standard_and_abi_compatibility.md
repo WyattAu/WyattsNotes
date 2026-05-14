@@ -11,7 +11,7 @@ categories:
 slug: language-standard-flags-abi-compatibility
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Installing a compiler is insufficient for C++23 development. By default, compilers often default to
 Older standards (C++14 or C++17) to maintain backward compatibility. This module details the

@@ -15,14 +15,14 @@ Quantity with both magnitude and direction (e.g. Displacement, velocity, force).
 
 ### Representation
 
-A vector in $\mathbb{'\{'}R{'\}'}^n$ is an ordered list of $n$ real numbers called **components**. A
-vector in $\mathbb{'\{'}R{'\}'}^3$ with components $a_1, a_2, a_3$ is written:
+A vector in $\mathbb{{'}R{}'}^n$ is an ordered list of $n$ real numbers called **components**. A
+vector in $\mathbb{{'}R{}'}^3$ with components $a_1, a_2, a_3$ is written:
 
-$$\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = a_1\mathbf{'\{'}i{'\}'} + a_2\mathbf{'\{'}j{'\}'} + a_3\mathbf{'\{'}k{'\}'}$$
+$$\mathbf{{'}a{}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = a_1\mathbf{{'}i{}'} + a_2\mathbf{{'}j{}'} + a_3\mathbf{{'}k{}'}$$
 
-Where $\mathbf{'\{'}i{'\}'} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$
-$\mathbf{'\{'}j{'\}'} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$
-$\mathbf{'\{'}k{'\}'} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$ are the standard basis vectors.
+Where $\mathbf{{'}i{}'} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$
+$\mathbf{{'}j{}'} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$
+$\mathbf{{'}k{}'} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$ are the standard basis vectors.
 
 ### Position Vectors
 
@@ -41,15 +41,15 @@ $$\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA} = \begin{pmatr
 
 ### Addition and Scalar Multiplication
 
-If $\mathbf{'\{'}a{'\}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$ and
-$\mathbf{'\{'}b{'\}'} = \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}$And
-$\lambda \in \mathbb{'\{'}R{'\}'}$:
+If $\mathbf{{'}a{}'} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$ and
+$\mathbf{{'}b{}'} = \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}$And
+$\lambda \in \mathbb{{'}R{}'}$:
 
-$$\mathbf{'\{'}a{'\}'} + \mathbf{'\{'}b{'\}'} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \\ a_3 + b_3 \end{pmatrix}, \qquad \lambda\mathbf{'\{'}a{'\}'} = \begin{pmatrix} \lambda a_1 \\ \lambda a_2 \\ \lambda a_3 \end{pmatrix}$$
+$$\mathbf{{'}a{}'} + \mathbf{{'}b{}'} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \\ a_3 + b_3 \end{pmatrix}, \qquad \lambda\mathbf{{'}a{}'} = \begin{pmatrix} \lambda a_1 \\ \lambda a_2 \\ \lambda a_3 \end{pmatrix}$$
 
 These operations satisfy the vector space axioms: associativity, commutativity of addition,
-Distributivity of scalar multiplication, and existence of additive identity ($\mathbf{'\{'}0{'\}'}$)
-and Inverses ($-\mathbf{'\{'}a{'\}'}$).
+Distributivity of scalar multiplication, and existence of additive identity ($\mathbf{{'}0{}'}$) and
+Inverses ($-\mathbf{{'}a{}'}$).
 
 ---
 
@@ -57,17 +57,17 @@ and Inverses ($-\mathbf{'\{'}a{'\}'}$).
 
 ### Magnitude
 
-The **magnitude** (length) of $\mathbf{'\{'}a{'\}'} = (a_1, a_2, a_3)$ is:
+The **magnitude** (length) of $\mathbf{{'}a{}'} = (a_1, a_2, a_3)$ is:
 
-$$|\mathbf{'\{'}a{'\}'}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
+$$|\mathbf{{'}a{}'}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
 
 This is the Euclidean norm, derived from the Pythagorean theorem in three dimensions.
 
 ### Unit Vectors
 
-A **unit vector** has magnitude $1$. The unit vector in the direction of $\mathbf{'\{'}a{'\}'}$ is:
+A **unit vector** has magnitude $1$. The unit vector in the direction of $\mathbf{{'}a{}'}$ is:
 
-$$\hat{\mathbf{'\{'}a{'\}'}} = \frac{\mathbf{'\{'}a{'\}'}}{|\mathbf{'\{'}a{'\}'}|}, \quad \mathbf{'\{'}a{'\}'} \ne \mathbf{'\{'}0{'\}'}$$
+$$\hat{\mathbf{{'}a{}'}} = \frac{\mathbf{{'}a{}'}}{|\mathbf{{'}a{}'}|}, \quad \mathbf{{'}a{}'} \ne \mathbf{{'}0{}'}$$
 
 ---
 
@@ -75,41 +75,40 @@ $$\hat{\mathbf{'\{'}a{'\}'}} = \frac{\mathbf{'\{'}a{'\}'}}{|\mathbf{'\{'}a{'\}'}
 
 ### Definition
 
-The **scalar product** of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ is:
+The **scalar product** of $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$ is:
 
-$$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}|\,|\mathbf{'\{'}b{'\}'}|\cos\theta$$
+$$\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = |\mathbf{{'}a{}'}|\,|\mathbf{{'}b{}'}|\cos\theta$$
 
 Where $\theta$ is the angle between the vectors ($0 \le \theta \le \pi$).
 
 ### Component Form
 
-$$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = a_1 b_1 + a_2 b_2 + a_3 b_3$$
+$$\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = a_1 b_1 + a_2 b_2 + a_3 b_3$$
 
 ### Properties
 
-- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}b{'\}'} \cdot \mathbf{'\{'}a{'\}'}$
-  (commutative)
-- $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) = \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}c{'\}'}$
+- $\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = \mathbf{{'}b{}'} \cdot \mathbf{{'}a{}'}$ (commutative)
+- $\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} + \mathbf{{'}c{}'}) = \mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} + \mathbf{{'}a{}'} \cdot \mathbf{{'}c{}'}$
   (distributive)
-- $(\lambda\mathbf{'\{'}a{'\}'}) \cdot \mathbf{'\{'}b{'\}'} = \lambda(\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'})$
-- $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}a{'\}'} = |\mathbf{'\{'}a{'\}'}|^2$
+- $(\lambda\mathbf{{'}a{}'}) \cdot \mathbf{{'}b{}'} = \lambda(\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'})$
+- $\mathbf{{'}a{}'} \cdot \mathbf{{'}a{}'} = |\mathbf{{'}a{}'}|^2$
 
 ### Geometric Interpretations
 
 **Angle between vectors:**
 
-$$\cos\theta = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|\,|\mathbf{'\{'}b{'\}'}|}$$
+$$\cos\theta = \frac{\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'}}{|\mathbf{{'}a{}'}|\,|\mathbf{{'}b{}'}|}$$
 
 **Perpendicularity test.**
-$\mathbf{'\{'}a{'\}'} \perp \mathbf{'\{'}b{'\}'} \iff \mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 0$.
+$\mathbf{{'}a{}'} \perp \mathbf{{'}b{}'} \iff \mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = 0$.
 
-**Projection.** The scalar projection of $\mathbf{'\{'}b{'\}'}$ onto $\mathbf{'\{'}a{'\}'}$ is:
+**Projection.** The scalar projection of $\mathbf{{'}b{}'}$ onto $\mathbf{{'}a{}'}$ is:
 
-$$\mathrm{comp}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|} = |\mathbf{'\{'}b{'\}'}|\cos\theta$$
+$$\mathrm{comp}_{\mathbf{{'}a{}'}}\mathbf{{'}b{}'} = \frac{\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'}}{|\mathbf{{'}a{}'}|} = |\mathbf{{'}b{}'}|\cos\theta$$
 
 The vector projection is:
 
-$$\mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \left(\frac{\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}}{|\mathbf{'\{'}a{'\}'}|^2}\right)\mathbf{'\{'}a{'\}'}$$
+$$\mathrm{proj}_{\mathbf{{'}a{}'}}\mathbf{{'}b{}'} = \left(\frac{\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'}}{|\mathbf{{'}a{}'}|^2}\right)\mathbf{{'}a{}'}$$
 
 ---
 
@@ -117,48 +116,47 @@ $$\mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \left(\frac{\mathbf
 
 ### Definition (HL)
 
-The **vector product** of $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$ is:
+The **vector product** of $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$ is:
 
-$$\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = |\mathbf{'\{'}a{'\}'}|\,|\mathbf{'\{'}b{'\}'}|\sin\theta\;\hat{\mathbf{'\{'}n{'\}'}}$$
+$$\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = |\mathbf{{'}a{}'}|\,|\mathbf{{'}b{}'}|\sin\theta\;\hat{\mathbf{{'}n{}'}}$$
 
-Where $\hat{\mathbf{'\{'}n{'\}'}}$ is the unit vector perpendicular to both $\mathbf{'\{'}a{'\}'}$
-and $\mathbf{'\{'}b{'\}'}$ With direction given by the right-hand rule.
+Where $\hat{\mathbf{{'}n{}'}}$ is the unit vector perpendicular to both $\mathbf{{'}a{}'}$ and
+$\mathbf{{'}b{}'}$ With direction given by the right-hand rule.
 
 ### Component Form
 
-$$\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \begin{pmatrix} a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3 \\ a_1 b_2 - a_2 b_1 \end{pmatrix}$$
+$$\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \begin{pmatrix} a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3 \\ a_1 b_2 - a_2 b_1 \end{pmatrix}$$
 
 ### Properties
 
-- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = -(\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'})$
+- $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = -(\mathbf{{'}b{}'} \times \mathbf{{'}a{}'})$
   (anti-commutative)
-- $\mathbf{'\{'}a{'\}'} \times (\mathbf{'\{'}b{'\}'} + \mathbf{'\{'}c{'\}'}) = \mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} + \mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}c{'\}'}$
+- $\mathbf{{'}a{}'} \times (\mathbf{{'}b{}'} + \mathbf{{'}c{}'}) = \mathbf{{'}a{}'} \times \mathbf{{'}b{}'} + \mathbf{{'}a{}'} \times \mathbf{{'}c{}'}$
   (distributive)
-- $(\lambda\mathbf{'\{'}a{'\}'}) \times \mathbf{'\{'}b{'\}'} = \lambda(\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'})$
-- $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}a{'\}'} = \mathbf{'\{'}0{'\}'}$
-- $|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}| = |\mathbf{'\{'}a{'\}'}|\,|\mathbf{'\{'}b{'\}'}|\sin\theta$
+- $(\lambda\mathbf{{'}a{}'}) \times \mathbf{{'}b{}'} = \lambda(\mathbf{{'}a{}'} \times \mathbf{{'}b{}'})$
+- $\mathbf{{'}a{}'} \times \mathbf{{'}a{}'} = \mathbf{{'}0{}'}$
+- $|\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}| = |\mathbf{{'}a{}'}|\,|\mathbf{{'}b{}'}|\sin\theta$
 
 ### Geometric Interpretations
 
 **Parallel test.**
-$\mathbf{'\{'}a{'\}'} \parallel \mathbf{'\{'}b{'\}'} \iff \mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = \mathbf{'\{'}0{'\}'}$.
+$\mathbf{{'}a{}'} \parallel \mathbf{{'}b{}'} \iff \mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = \mathbf{{'}0{}'}$.
 
-**Area of a parallelogram** spanned by $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$:
+**Area of a parallelogram** spanned by $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$:
 
-$$A = |\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$$
+$$A = |\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}|$$
 
-**Area of a triangle** with sides $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$:
+**Area of a triangle** with sides $\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$:
 
-$$A = \frac{1}{2}|\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}|$$
+$$A = \frac{1}{2}|\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}|$$
 
-**Volume of a parallelepiped** with edges
-$\mathbf{'\{'}a{'\}'}, \mathbf{'\{'}b{'\}'}, \mathbf{'\{'}c{'\}'}$:
+**Volume of a parallelepiped** with edges $\mathbf{{'}a{}'}, \mathbf{{'}b{}'}, \mathbf{{'}c{}'}$:
 
-$$V = |\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})|$$
+$$V = |\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})|$$
 
 This scalar triple product can also be written as the determinant:
 
-$$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}$$
+$$\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}$$
 
 ---
 
@@ -166,10 +164,10 @@ $$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) 
 
 ### Vector (Parametric) Form
 
-A line through point $A$ with position vector $\mathbf{'\{'}a{'\}'}$In the direction of vector
-$\mathbf{'\{'}d{'\}'}$:
+A line through point $A$ with position vector $\mathbf{{'}a{}'}$In the direction of vector
+$\mathbf{{'}d{}'}$:
 
-$$\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + \lambda\mathbf{'\{'}d{'\}'}, \quad \lambda \in \mathbb{'\{'}R{'\}'}$$
+$$\mathbf{{'}r{}'} = \mathbf{{'}a{}'} + \lambda\mathbf{{'}d{}'}, \quad \lambda \in \mathbb{{'}R{}'}$$
 
 In component form:
 
@@ -187,9 +185,9 @@ $$\frac{x - a_1}{d_1} = \frac{y - a_2}{d_2} = \frac{z - a_3}{d_3}$$
 ### Line Through Two Points
 
 Given points $A$ and $B$The line through both points has direction
-$\mathbf{'\{'}d{'\}'} = \overrightarrow{AB}$:
+$\mathbf{{'}d{}'} = \overrightarrow{AB}$:
 
-$$\mathbf{'\{'}r{'\}'} = \overrightarrow{OA} + \lambda\,\overrightarrow{AB}$$
+$$\mathbf{{'}r{}'} = \overrightarrow{OA} + \lambda\,\overrightarrow{AB}$$
 
 ---
 
@@ -197,9 +195,9 @@ $$\mathbf{'\{'}r{'\}'} = \overrightarrow{OA} + \lambda\,\overrightarrow{AB}$$
 
 ### Point-Normal Form
 
-A plane through point $A$ with normal vector $\mathbf{'\{'}n{'\}'}$ satisfies:
+A plane through point $A$ with normal vector $\mathbf{{'}n{}'}$ satisfies:
 
-$$\mathbf{'\{'}n{'\}'} \cdot (\mathbf{'\{'}r{'\}'} - \mathbf{'\{'}a{'\}'}) = 0$$
+$$\mathbf{{'}n{}'} \cdot (\mathbf{{'}r{}'} - \mathbf{{'}a{}'}) = 0$$
 
 Expanding: $n_1(x - a_1) + n_2(y - a_2) + n_3(z - a_3) = 0$.
 
@@ -207,22 +205,22 @@ Expanding: $n_1(x - a_1) + n_2(y - a_2) + n_3(z - a_3) = 0$.
 
 $$n_1 x + n_2 y + n_3 z = d$$
 
-Where $d = \mathbf{'\{'}n{'\}'} \cdot \mathbf{'\{'}a{'\}'}$ is a constant determined by any point on
-the plane.
+Where $d = \mathbf{{'}n{}'} \cdot \mathbf{{'}a{}'}$ is a constant determined by any point on the
+plane.
 
 ### Parametric Form
 
-A plane through point $A$ spanned by two non-parallel direction vectors $\mathbf{'\{'}d{'\}'}_1$ and
-$\mathbf{'\{'}d{'\}'}_2$:
+A plane through point $A$ spanned by two non-parallel direction vectors $\mathbf{{'}d{}'}_1$ and
+$\mathbf{{'}d{}'}_2$:
 
-$$\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + \lambda\mathbf{'\{'}d{'\}'}_1 + \mu\mathbf{'\{'}d{'\}'}_2, \quad \lambda, \mu \in \mathbb{'\{'}R{'\}'}$$
+$$\mathbf{{'}r{}'} = \mathbf{{'}a{}'} + \lambda\mathbf{{'}d{}'}_1 + \mu\mathbf{{'}d{}'}_2, \quad \lambda, \mu \in \mathbb{{'}R{}'}$$
 
 ### Normal from Two Direction Vectors
 
-Given direction vectors $\mathbf{'\{'}d{'\}'}_1$ and $\mathbf{'\{'}d{'\}'}_2$ in the plane, the
-normal vector is:
+Given direction vectors $\mathbf{{'}d{}'}_1$ and $\mathbf{{'}d{}'}_2$ in the plane, the normal
+vector is:
 
-$$\mathbf{'\{'}n{'\}'} = \mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2$$
+$$\mathbf{{'}n{}'} = \mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2$$
 
 ---
 
@@ -230,58 +228,57 @@ $$\mathbf{'\{'}n{'\}'} = \mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2$$
 
 ### Angle Between Two Lines
 
-The acute angle $\theta$ between two lines with direction vectors $\mathbf{'\{'}d{'\}'}_1$ and
-$\mathbf{'\{'}d{'\}'}_2$:
+The acute angle $\theta$ between two lines with direction vectors $\mathbf{{'}d{}'}_1$ and
+$\mathbf{{'}d{}'}_2$:
 
-$$\cos\theta = \frac{|\mathbf{'\{'}d{'\}'}_1 \cdot \mathbf{'\{'}d{'\}'}_2|}{|\mathbf{'\{'}d{'\}'}_1|\,|\mathbf{'\{'}d{'\}'}_2|}$$
+$$\cos\theta = \frac{|\mathbf{{'}d{}'}_1 \cdot \mathbf{{'}d{}'}_2|}{|\mathbf{{'}d{}'}_1|\,|\mathbf{{'}d{}'}_2|}$$
 
 ### Angle Between a Line and a Plane
 
-If a line has direction vector $\mathbf{'\{'}d{'\}'}$ and a plane has normal vector
-$\mathbf{'\{'}n{'\}'}$The angle $\alpha$ between the line and the plane is the complement of the
-angle between $\mathbf{'\{'}d{'\}'}$ and $\mathbf{'\{'}n{'\}'}$:
+If a line has direction vector $\mathbf{{'}d{}'}$ and a plane has normal vector
+$\mathbf{{'}n{}'}$The angle $\alpha$ between the line and the plane is the complement of the angle
+between $\mathbf{{'}d{}'}$ and $\mathbf{{'}n{}'}$:
 
-$$\sin\alpha = \frac{|\mathbf{'\{'}d{'\}'} \cdot \mathbf{'\{'}n{'\}'}|}{|\mathbf{'\{'}d{'\}'}|\,|\mathbf{'\{'}n{'\}'}|}$$
+$$\sin\alpha = \frac{|\mathbf{{'}d{}'} \cdot \mathbf{{'}n{}'}|}{|\mathbf{{'}d{}'}|\,|\mathbf{{'}n{}'}|}$$
 
 ### Angle Between Two Planes
 
-The angle between two planes with normals $\mathbf{'\{'}n{'\}'}_1$ and $\mathbf{'\{'}n{'\}'}_2$:
+The angle between two planes with normals $\mathbf{{'}n{}'}_1$ and $\mathbf{{'}n{}'}_2$:
 
-$$\cos\theta = \frac{|\mathbf{'\{'}n{'\}'}_1 \cdot \mathbf{'\{'}n{'\}'}_2|}{|\mathbf{'\{'}n{'\}'}_1|\,|\mathbf{'\{'}n{'\}'}_2|}$$
+$$\cos\theta = \frac{|\mathbf{{'}n{}'}_1 \cdot \mathbf{{'}n{}'}_2|}{|\mathbf{{'}n{}'}_1|\,|\mathbf{{'}n{}'}_2|}$$
 
 ### Distance from a Point to a Plane
 
-The perpendicular distance from point $P$ with position vector $\mathbf{'\{'}p{'\}'}$ to the plane
-$\mathbf{'\{'}n{'\}'} \cdot \mathbf{'\{'}r{'\}'} = d$:
+The perpendicular distance from point $P$ with position vector $\mathbf{{'}p{}'}$ to the plane
+$\mathbf{{'}n{}'} \cdot \mathbf{{'}r{}'} = d$:
 
-$$D = \frac{|\mathbf{'\{'}n{'\}'} \cdot \mathbf{'\{'}p{'\}'} - d|}{|\mathbf{'\{'}n{'\}'}|}$$
+$$D = \frac{|\mathbf{{'}n{}'} \cdot \mathbf{{'}p{}'} - d|}{|\mathbf{{'}n{}'}|}$$
 
 ### Distance from a Point to a Line
 
 The perpendicular distance from point $P$ to the line
-$\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}a{'\}'} + \lambda\mathbf{'\{'}d{'\}'}$:
+$\mathbf{{'}r{}'} = \mathbf{{'}a{}'} + \lambda\mathbf{{'}d{}'}$:
 
-$$D = \frac{|(\mathbf{'\{'}p{'\}'} - \mathbf{'\{'}a{'\}'}) \times \mathbf{'\{'}d{'\}'}|}{|\mathbf{'\{'}d{'\}'}|}$$
+$$D = \frac{|(\mathbf{{'}p{}'} - \mathbf{{'}a{}'}) \times \mathbf{{'}d{}'}|}{|\mathbf{{'}d{}'}|}$$
 
 ### Intersection of Line and Plane
 
 Substitute the parametric form of the line into the Cartesian equation of the plane and solve for
 $\lambda$.
 
-**Line lies in the plane** if $\mathbf{'\{'}d{'\}'} \cdot \mathbf{'\{'}n{'\}'} = 0$ and
-$\mathbf{'\{'}a{'\}'}$ satisfies the plane Equation.
+**Line lies in the plane** if $\mathbf{{'}d{}'} \cdot \mathbf{{'}n{}'} = 0$ and $\mathbf{{'}a{}'}$
+satisfies the plane Equation.
 
-**Line is parallel to the plane** (no intersection) if
-$\mathbf{'\{'}d{'\}'} \cdot \mathbf{'\{'}n{'\}'} = 0$ but $\mathbf{'\{'}a{'\}'}$ does not satisfy
-the plane equation.
+**Line is parallel to the plane** (no intersection) if $\mathbf{{'}d{}'} \cdot \mathbf{{'}n{}'} = 0$
+but $\mathbf{{'}a{}'}$ does not satisfy the plane equation.
 
 ### Intersection of Two Planes
 
-Two planes $\mathbf{'\{'}n{'\}'}_1 \cdot \mathbf{'\{'}r{'\}'} = d_1$ and
-$\mathbf{'\{'}n{'\}'}_2 \cdot \mathbf{'\{'}r{'\}'} = d_2$ intersect In a line (provided
-$\mathbf{'\{'}n{'\}'}_1 \ne k\mathbf{'\{'}n{'\}'}_2$). The direction of the line of intersection is:
+Two planes $\mathbf{{'}n{}'}_1 \cdot \mathbf{{'}r{}'} = d_1$ and
+$\mathbf{{'}n{}'}_2 \cdot \mathbf{{'}r{}'} = d_2$ intersect In a line (provided
+$\mathbf{{'}n{}'}_1 \ne k\mathbf{{'}n{}'}_2$). The direction of the line of intersection is:
 
-$$\mathbf{'\{'}d{'\}'} = \mathbf{'\{'}n{'\}'}_1 \times \mathbf{'\{'}n{'\}'}_2$$
+$$\mathbf{{'}d{}'} = \mathbf{{'}n{}'}_1 \times \mathbf{{'}n{}'}_2$$
 
 Find a point on the line by setting one variable to zero (if possible) and solving the resulting
 System.
@@ -298,8 +295,8 @@ System.
    the plane, not to the plane itself (a plane does not have a single direction).
 
 3. **Cross product order.**
-   $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} \ne \mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}a{'\}'}$.
-   Swapping the order negates the result.
+   $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} \ne \mathbf{{'}b{}'} \times \mathbf{{'}a{}'}$. Swapping
+   the order negates the result.
 
 4. **Zero direction components in symmetric form.** When a direction component is zero, the
    symmetric form is undefined for that coordinate. Write that coordinate as a constant instead.
@@ -307,9 +304,9 @@ System.
 5. **Absolute values in angle formulas.** For the acute angle between lines or planes, use the
    absolute value of the dot product. Without it, you obtain the obtuse supplement.
 
-6. **Forgetting that $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'}$ is a vector.** The dot
-   product produces a scalar; the cross product produces a vector. The magnitude of the cross
-   product gives area, not the cross product itself.
+6. **Forgetting that $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'}$ is a vector.** The dot product
+   produces a scalar; the cross product produces a vector. The magnitude of the cross product gives
+   area, not the cross product itself.
 
 ---
 
@@ -318,11 +315,10 @@ System.
 <details>
 <summary>Problem 1</summary>
 
-Given $\mathbf{'\{'}a{'\}'} = 2\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + 3\mathbf{'\{'}k{'\}'}$
-and
-$\mathbf{'\{'}b{'\}'} = \mathbf{'\{'}i{'\}'} + 4\mathbf{'\{'}j{'\}'} - 2\mathbf{'\{'}k{'\}'}$Find:
-(a) $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}$ (b) $|\mathbf{'\{'}a{'\}'}|$ (c) the angle
-between $\mathbf{'\{'}a{'\}'}$ and $\mathbf{'\{'}b{'\}'}$
+Given $\mathbf{{'}a{}'} = 2\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + 3\mathbf{{'}k{}'}$ and
+$\mathbf{{'}b{}'} = \mathbf{{'}i{}'} + 4\mathbf{{'}j{}'} - 2\mathbf{{'}k{}'}$Find: (a)
+$\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'}$ (b) $|\mathbf{{'}a{}'}|$ (c) the angle between
+$\mathbf{{'}a{}'}$ and $\mathbf{{'}b{}'}$
 
 </details>
 
@@ -358,16 +354,16 @@ Find the area of the triangle with vertices $A(1, 2, 3)$$B(4, 1, 0)$$C(2, -1, 5)
 <summary>Problem 6</summary>
 
 Find the shortest distance between the parallel lines
-$\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \lambda\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$
+$\mathbf{{'}r{}'} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + \lambda\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$
 And
-$\mathbf{'\{'}r{'\}'} = \begin{pmatrix} 3 \\ 2 \\ 0 \end{pmatrix} + \mu\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$.
+$\mathbf{{'}r{}'} = \begin{pmatrix} 3 \\ 2 \\ 0 \end{pmatrix} + \mu\begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$.
 
 </details>
 
 <details>
 <summary>Problem 7</summary>
 
-Determine whether the line $\mathbf{'\{'}r{'\}'} = (1, 2, -1) + t(3, -1, 2)$ intersects the plane
+Determine whether the line $\mathbf{{'}r{}'} = (1, 2, -1) + t(3, -1, 2)$ intersects the plane
 $x + 2y - z = 5$. If so, find the point of intersection.
 
 </details>
@@ -383,14 +379,14 @@ Find the acute angle between the planes $2x + y - 2z = 1$ and $x + 3y + z = 4$.
 <summary>Answers to Selected Problems</summary>
 
 **Problem 1:** (a)
-$\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 2(1) + (-1)(4) + 3(-2) = 2 - 4 - 6 = -8$ (b)
-$|\mathbf{'\{'}a{'\}'}| = \sqrt{4 + 1 + 9} = \sqrt{14}$ (c)
+$\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = 2(1) + (-1)(4) + 3(-2) = 2 - 4 - 6 = -8$ (b)
+$|\mathbf{{'}a{}'}| = \sqrt{4 + 1 + 9} = \sqrt{14}$ (c)
 $\cos\theta = \dfrac{-8}{\sqrt{14}\cdot\sqrt{21}} = \dfrac{-8}{7\sqrt{6}}$So
 $\theta \approx 122^\circ$
 
 **Problem 3:** Direction vectors: $\overrightarrow{AB} = (2, -1, -1)$ and
 $\overrightarrow{AC} = (1, 1, -3)$. Normal:
-$\mathbf{'\{'}n{'\}'} = \overrightarrow{AB} \times \overrightarrow{AC} = (3 - (-1),\; (-1)(-3) - (-1)(1),\; 2 - (-1)) = (4, 4, 3)$.
+$\mathbf{{'}n{}'} = \overrightarrow{AB} \times \overrightarrow{AC} = (3 - (-1),\; (-1)(-3) - (-1)(1),\; 2 - (-1)) = (4, 4, 3)$.
 Plane: $4(x - 1) + 4(y - 0) + 3(z - 2) = 0$I.e. $4x + 4y + 3z = 10$.
 
 **Problem 4:**
@@ -415,8 +411,8 @@ So $\theta = \arccos\!\left(\dfrac{1}{\sqrt{11}}\right) \approx 72.5^\circ$.
 
 **Worked Example: Finding the Intersection of Two Lines**
 
-Find the point of intersection of the lines $\mathbf{'\{'}r{'\}'}_1 = (1, 2, -1) + s(3, -2, 1)$ and
-$\mathbf{'\{'}r{'\}'}_2 = (4, 0, 3) + t(1, 1, -2)$Or show that they are skew.
+Find the point of intersection of the lines $\mathbf{{'}r{}'}_1 = (1, 2, -1) + s(3, -2, 1)$ and
+$\mathbf{{'}r{}'}_2 = (4, 0, 3) + t(1, 1, -2)$Or show that they are skew.
 
 <details>
 <summary>Solution</summary>
@@ -441,23 +437,23 @@ $(1, 1, -2)$ are not scalar multiples. Therefore the lines are **skew**.
 
 **Worked Example: Distance Between Skew Lines**
 
-Find the shortest distance between the skew lines $\mathbf{'\{'}r{'\}'}_1 = (0, 0, 0) + s(1, 2, 3)$
-and $\mathbf{'\{'}r{'\}'}_2 = (1, -1, 0) + t(2, 3, 4)$.
+Find the shortest distance between the skew lines $\mathbf{{'}r{}'}_1 = (0, 0, 0) + s(1, 2, 3)$ and
+$\mathbf{{'}r{}'}_2 = (1, -1, 0) + t(2, 3, 4)$.
 
 <details>
 <summary>Solution</summary>
 
 The shortest distance between two skew lines is given by:
 
-$$d = \frac{|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2)|}{|\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2|}$$
+$$d = \frac{|(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2)|}{|\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2|}$$
 
-$\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1 = (1, -1, 0)$$\mathbf{'\{'}d{'\}'}_1 = (1, 2, 3)$$\mathbf{'\{'}d{'\}'}_2 = (2, 3, 4)$.
+$\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1 = (1, -1, 0)$$\mathbf{{'}d{}'}_1 = (1, 2, 3)$$\mathbf{{'}d{}'}_2 = (2, 3, 4)$.
 
-$\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2 = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 1 & 2 & 3 \\ 2 & 3 & 4 \end{vmatrix} = (8 - 9)\,\mathbf{'\{'}i{'\}'} - (4 - 6)\,\mathbf{'\{'}j{'\}'} + (3 - 4)\,\mathbf{'\{'}k{'\}'} = (-1, 2, -1)$
+$\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2 = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 1 & 2 & 3 \\ 2 & 3 & 4 \end{vmatrix} = (8 - 9)\,\mathbf{{'}i{}'} - (4 - 6)\,\mathbf{{'}j{}'} + (3 - 4)\,\mathbf{{'}k{}'} = (-1, 2, -1)$
 
-$|\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
+$|\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
 
-$(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \cdot (\mathbf{'\{'}d{'\}'}_1 \times \mathbf{'\{'}d{'\}'}_2) = (1)(-1) + (-1)(2) + (0)(-1) = -1 - 2 = -3$.
+$(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2) = (1)(-1) + (-1)(2) + (0)(-1) = -1 - 2 = -3$.
 
 $$d = \frac{|-3|}{\sqrt{6}} = \frac{3}{\sqrt{6}} = \frac{\sqrt{6}}{2}$$
 
@@ -476,7 +472,7 @@ $\overrightarrow{AB} = (0-2, 3-1, 2-(-1)) = (-2, 2, 3)$.
 $\overrightarrow{AC} = (1-2, -1-1, 1-(-1)) = (-1, -2, 2)$.
 
 Normal vector:
-$\mathbf{'\{'}n{'\}'} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ -2 & 2 & 3 \\ -1 & -2 & 2 \end{vmatrix} = (4 - (-6))\,\mathbf{'\{'}i{'\}'} - (-4 - (-3))\,\mathbf{'\{'}j{'\}'} + (4 - (-2))\,\mathbf{'\{'}k{'\}'} = (10, 1, 6)$.
+$\mathbf{{'}n{}'} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ -2 & 2 & 3 \\ -1 & -2 & 2 \end{vmatrix} = (4 - (-6))\,\mathbf{{'}i{}'} - (-4 - (-3))\,\mathbf{{'}j{}'} + (4 - (-2))\,\mathbf{{'}k{}'} = (10, 1, 6)$.
 
 Using point $A(2, 1, -1)$: $10(x - 2) + 1(y - 1) + 6(z - (-1)) = 0$.
 
@@ -500,11 +496,10 @@ $2x - y + 3z = 1$.
 <details>
 <summary>Solution</summary>
 
-The direction of the line is
-$\mathbf{'\{'}d{'\}'} = \mathbf{'\{'}n{'\}'}_1 \times \mathbf{'\{'}n{'\}'}_2$ where
-$\mathbf{'\{'}n{'\}'}_1 = (1, 1, -1)$ and $\mathbf{'\{'}n{'\}'}_2 = (2, -1, 3)$.
+The direction of the line is $\mathbf{{'}d{}'} = \mathbf{{'}n{}'}_1 \times \mathbf{{'}n{}'}_2$ where
+$\mathbf{{'}n{}'}_1 = (1, 1, -1)$ and $\mathbf{{'}n{}'}_2 = (2, -1, 3)$.
 
-$$\mathbf{'\{'}d{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 1 & 1 & -1 \\ 2 & -1 & 3 \end{vmatrix} = (3 - 1)\,\mathbf{'\{'}i{'\}'} - (3 - (-2))\,\mathbf{'\{'}j{'\}'} + (-1 - 2)\,\mathbf{'\{'}k{'\}'} = (2, -5, -3)$$
+$$\mathbf{{'}d{}'} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 1 & 1 & -1 \\ 2 & -1 & 3 \end{vmatrix} = (3 - 1)\,\mathbf{{'}i{}'} - (3 - (-2))\,\mathbf{{'}j{}'} + (-1 - 2)\,\mathbf{{'}k{}'} = (2, -5, -3)$$
 
 To find a point on the line, set $z = 0$:
 
@@ -514,7 +509,7 @@ A point on the line is $\left(\dfrac{4}{3}, \dfrac{5}{3}, 0\right)$.
 
 The line of intersection is:
 
-$$\mathbf{'\{'}r{'\}'} = \left(\frac{4}{3}, \frac{5}{3}, 0\right) + t(2, -5, -3), \quad t \in \mathbb{'\{'}R{'\}'}$$
+$$\mathbf{{'}r{}'} = \left(\frac{4}{3}, \frac{5}{3}, 0\right) + t(2, -5, -3), \quad t \in \mathbb{{'}R{}'}$$
 
 </details>
 
@@ -524,31 +519,30 @@ $$\mathbf{'\{'}r{'\}'} = \left(\frac{4}{3}, \frac{5}{3}, 0\right) + t(2, -5, -3)
 
 - **Confusing the angle between a line and a plane.** The angle $\alpha$ between a line and a plane
   satisfies
-  $\sin\alpha = \dfrac{|\mathbf{'\{'}d{'\}'} \cdot \mathbf{'\{'}n{'\}'}|}{|\mathbf{'\{'}d{'\}'}||\mathbf{'\{'}n{'\}'}|}$Not
+  $\sin\alpha = \dfrac{|\mathbf{{'}d{}'} \cdot \mathbf{{'}n{}'}|}{|\mathbf{{'}d{}'}||\mathbf{{'}n{}'}|}$Not
   $\cos\alpha$. The dot product of the direction vector and the normal gives the sine of the angle,
   not the cosine.
 
 - **Distance formula sign errors.** The distance from a point to a plane uses the absolute value in
-  the numerator:
-  $D = \dfrac{|\mathbf{'\{'}n{'\}'} \cdot \mathbf{'\{'}p{'\}'} - d|}{|\mathbf{'\{'}n{'\}'}|}$.
+  the numerator: $D = \dfrac{|\mathbf{{'}n{}'} \cdot \mathbf{{'}p{}'} - d|}{|\mathbf{{'}n{}'}|}$.
   Dropping the absolute value can give a negative distance.
 
 - **Cross product component order.** When computing
-  $\mathbf{'\{'}a{'\}'} \times \mathbf{'\{'}b{'\}'} = (a_2 b_3 - a_3 b_2,\; a_3 b_1 - a_1 b_3,\; a_1 b_2 - a_2 b_1)$
+  $\mathbf{{'}a{}'} \times \mathbf{{'}b{}'} = (a_2 b_3 - a_3 b_2,\; a_3 b_1 - a_1 b_3,\; a_1 b_2 - a_2 b_1)$
   each component follows a cyclic pattern. Mixing up the indices is the most common arithmetic error
   in vector problems.
 
 - **Parallel line distance requires cross product.** The distance between parallel lines
-  $\mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}a{'\}'}_1 + s\mathbf{'\{'}d{'\}'}$ and
-  $\mathbf{'\{'}r{'\}'}_2 = \mathbf{'\{'}a{'\}'}_2 + t\mathbf{'\{'}d{'\}'}$ is
-  $\dfrac{|(\mathbf{'\{'}a{'\}'}_2 - \mathbf{'\{'}a{'\}'}_1) \times \mathbf{'\{'}d{'\}'}|}{|\mathbf{'\{'}d{'\}'}|}$Not
+  $\mathbf{{'}r{}'}_1 = \mathbf{{'}a{}'}_1 + s\mathbf{{'}d{}'}$ and
+  $\mathbf{{'}r{}'}_2 = \mathbf{{'}a{}'}_2 + t\mathbf{{'}d{}'}$ is
+  $\dfrac{|(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \times \mathbf{{'}d{}'}|}{|\mathbf{{'}d{}'}|}$Not
   the magnitude of the difference of the position vectors.
 
 - **Scalar triple product for volume.** The volume of a parallelepiped is
-  $|\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})|$. The absolute
-  value is essential since the scalar triple product can be negative. The parentheses matter:
-  $\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})$Not
-  $(\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'}) \times \mathbf{'\{'}c{'\}'}$.
+  $|\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})|$. The absolute value is
+  essential since the scalar triple product can be negative. The parentheses matter:
+  $\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})$Not
+  $(\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'}) \times \mathbf{{'}c{}'}$.
 
 ---
 
@@ -557,11 +551,11 @@ $$\mathbf{'\{'}r{'\}'} = \left(\frac{4}{3}, \frac{5}{3}, 0\right) + t(2, -5, -3)
 <details>
 <summary>Problem 9</summary>
 
-Given $\mathbf{'\{'}a{'\}'} = 3\mathbf{'\{'}i{'\}'} - \mathbf{'\{'}j{'\}'} + 2\mathbf{'\{'}k{'\}'}$
-and $\mathbf{'\{'}b{'\}'} = 2\mathbf{'\{'}i{'\}'} + \mathbf{'\{'}j{'\}'} - \mathbf{'\{'}k{'\}'}$
-Find: (a) the vector projection of $\mathbf{'\{'}b{'\}'}$ onto $\mathbf{'\{'}a{'\}'}$; (b) the
-scalar projection of $\mathbf{'\{'}b{'\}'}$ onto $\mathbf{'\{'}a{'\}'}$; (c) the component of
-$\mathbf{'\{'}b{'\}'}$ perpendicular to $\mathbf{'\{'}a{'\}'}$.
+Given $\mathbf{{'}a{}'} = 3\mathbf{{'}i{}'} - \mathbf{{'}j{}'} + 2\mathbf{{'}k{}'}$ and
+$\mathbf{{'}b{}'} = 2\mathbf{{'}i{}'} + \mathbf{{'}j{}'} - \mathbf{{'}k{}'}$ Find: (a) the vector
+projection of $\mathbf{{'}b{}'}$ onto $\mathbf{{'}a{}'}$; (b) the scalar projection of
+$\mathbf{{'}b{}'}$ onto $\mathbf{{'}a{}'}$; (c) the component of $\mathbf{{'}b{}'}$ perpendicular to
+$\mathbf{{'}a{}'}$.
 
 </details>
 
@@ -576,7 +570,7 @@ $\overrightarrow{OB} = (4, -1, 0)$$\overrightarrow{OC} = (2, 1, -2)$.
 <details>
 <summary>Problem 11</summary>
 
-Find the acute angle between the line $\mathbf{'\{'}r{'\}'} = (1, 0, -2) + t(1, 3, 1)$ and the plane
+Find the acute angle between the line $\mathbf{{'}r{}'} = (1, 0, -2) + t(1, 3, 1)$ and the plane
 $2x - y + z = 5$.
 
 </details>
@@ -600,9 +594,9 @@ $Q(5, -2, 7)$ and passes through $R(0, 1, -1)$.
 <details>
 <summary>Problem 14</summary>
 
-The lines $L_1: \mathbf{'\{'}r{'\}'} = (2, -1, 3) + \lambda(1, 2, -1)$ and
-$L_2: \mathbf{'\{'}r{'\}'} = (4, -5, 5) + \mu(2, -1, 1)$ intersect. Find the point of intersection
-and the Acute angle between the lines.
+The lines $L_1: \mathbf{{'}r{}'} = (2, -1, 3) + \lambda(1, 2, -1)$ and
+$L_2: \mathbf{{'}r{}'} = (4, -5, 5) + \mu(2, -1, 1)$ intersect. Find the point of intersection and
+the Acute angle between the lines.
 
 </details>
 
@@ -617,20 +611,19 @@ $D = (0, 4, 0)$And apex $V = (2, 2, 6)$. Find the angle between the face $VAB$ a
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 9:** (a) $\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}b{'\}'} = 6 - 1 - 2 = 3$.
-$|\mathbf{'\{'}a{'\}'}|^2 = 9 + 1 + 4 = 14$.
-$\mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{14}(3, -1, 2) = \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right)$.
-(b) $\mathrm{comp}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = \dfrac{3}{\sqrt{14}}$. (c)
-Perpendicular component:
-$\mathbf{'\{'}b{'\}'} - \mathrm{proj}_{\mathbf{'\{'}a{'\}'}}\mathbf{'\{'}b{'\}'} = (2, 1, -1) - \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right) = \left(\dfrac{19}{14}, \dfrac{17}{14}, -\dfrac{10}{7}\right)$.
+**Problem 9:** (a) $\mathbf{{'}a{}'} \cdot \mathbf{{'}b{}'} = 6 - 1 - 2 = 3$.
+$|\mathbf{{'}a{}'}|^2 = 9 + 1 + 4 = 14$.
+$\mathrm{proj}_{\mathbf{{'}a{}'}}\mathbf{{'}b{}'} = \dfrac{3}{14}(3, -1, 2) = \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right)$.
+(b) $\mathrm{comp}_{\mathbf{{'}a{}'}}\mathbf{{'}b{}'} = \dfrac{3}{\sqrt{14}}$. (c) Perpendicular
+component:
+$\mathbf{{'}b{}'} - \mathrm{proj}_{\mathbf{{'}a{}'}}\mathbf{{'}b{}'} = (2, 1, -1) - \left(\dfrac{9}{14}, -\dfrac{3}{14}, \dfrac{3}{7}\right) = \left(\dfrac{19}{14}, \dfrac{17}{14}, -\dfrac{10}{7}\right)$.
 
-**Problem 10:**
-$V = |\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'})|$.
-$\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'} = \begin{vmatrix} \mathbf{'\{'}i{'\}'} & \mathbf{'\{'}j{'\}'} & \mathbf{'\{'}k{'\}'} \\ 4 & -1 & 0 \\ 2 & 1 & -2 \end{vmatrix} = (2, 8, 6)$.
-$\mathbf{'\{'}a{'\}'} \cdot (\mathbf{'\{'}b{'\}'} \times \mathbf{'\{'}c{'\}'}) = 1(2) + 2(8) + 3(6) = 2 + 16 + 18 = 36$.
+**Problem 10:** $V = |\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'})|$.
+$\mathbf{{'}b{}'} \times \mathbf{{'}c{}'} = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 4 & -1 & 0 \\ 2 & 1 & -2 \end{vmatrix} = (2, 8, 6)$.
+$\mathbf{{'}a{}'} \cdot (\mathbf{{'}b{}'} \times \mathbf{{'}c{}'}) = 1(2) + 2(8) + 3(6) = 2 + 16 + 18 = 36$.
 $V = |36| = 36$.
 
-**Problem 11:** $\mathbf{'\{'}d{'\}'} = (1, 3, 1)$$\mathbf{'\{'}n{'\}'} = (2, -1, 1)$.
+**Problem 11:** $\mathbf{{'}d{}'} = (1, 3, 1)$$\mathbf{{'}n{}'} = (2, -1, 1)$.
 $\sin\alpha = \dfrac{|(1)(2) + (3)(-1) + (1)(1)|}{|(1,3,1)||(2,-1,1)|} = \dfrac{|2 - 3 + 1|}{\sqrt{11}\cdot\sqrt{6}} = \dfrac{0}{\sqrt{66}} = 0$.
 The angle is $0^\circ$Meaning the line is parallel to (lies in) the plane. Verification: the point
 $(1, 0, -2)$ lies on the line and $2(1) - 0 + (-2) = 0 \ne 5$So the line is parallel to but not In

@@ -347,8 +347,8 @@ Checking validity is Co-NP-complete, not NP-complete. :::
 
 $$(A \cup B)^c = A^c \cap B^c, \quad (A \cap B)^c = A^c \cup B^c$$
 
-**Power set:** $\mathcal{'\{'}P{'\}'}(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
-$|\mathcal{'\{'}P{'\}'}(A)| = 2^n$.
+**Power set:** $\mathcal{{'}P{}'}(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
+$|\mathcal{{'}P{}'}(A)| = 2^n$.
 
 ### 2.2 Relations
 
@@ -370,7 +370,7 @@ A **Hasse diagram** is a graphical representation of a finite poset $(A, \preceq
 Is drawn below $b$ whenever $a \prec b$ (i.e., $a \preceq b$ and $a \neq b$), and an edge is drawn
 From $a$ to $b$ whenever $b$ **covers** $a$ (there is no $c$ with $a \prec c \prec b$).
 
-**Worked Example.** Show that $R$ on $\mathbb{'\{'}Z{'\}'}$ defined by $a\,R\,b$ iff
+**Worked Example.** Show that $R$ on $\mathbb{{'}Z{}'}$ defined by $a\,R\,b$ iff
 $a \equiv b \pmod{5}$ is An equivalence relation. Describe the equivalence classes.
 
 <details>
@@ -384,11 +384,10 @@ $b \equiv a \pmod{5}$.
 _Transitive:_ If $5 \mid (a - b)$ and $5 \mid (b - c)$Then $5 \mid (a - b) + (b - c) = a - c$So
 $a \equiv c \pmod{5}$.
 
-The equivalence classes are $[0] = \\{5k : k \in \mathbb{'\{'}Z{'\}'}\\}$
-$[1] = \\{5k+1 : k \in \mathbb{'\{'}Z{'\}'}\\}$ $[2] = \\{5k+2 : k \in \mathbb{'\{'}Z{'\}'}\\}$
-$[3] = \\{5k+3 : k \in \mathbb{'\{'}Z{'\}'}\\}$ $[4] = \\{5k+4 : k \in \mathbb{'\{'}Z{'\}'}\\}$.
-There are exactly 5 equivalence classes, forming the quotient
-$\mathbb{'\{'}Z{'\}'}/5\mathbb{'\{'}Z{'\}'}$.
+The equivalence classes are $[0] = \\{5k : k \in \mathbb{{'}Z{}'}\\}$
+$[1] = \\{5k+1 : k \in \mathbb{{'}Z{}'}\\}$ $[2] = \\{5k+2 : k \in \mathbb{{'}Z{}'}\\}$
+$[3] = \\{5k+3 : k \in \mathbb{{'}Z{}'}\\}$ $[4] = \\{5k+4 : k \in \mathbb{{'}Z{}'}\\}$. There are
+exactly 5 equivalence classes, forming the quotient $\mathbb{{'}Z{}'}/5\mathbb{{'}Z{}'}$.
 
 </details>
 
@@ -462,34 +461,34 @@ and only if it is bijective.
 ### 2.4 Countability
 
 **Definition.** A set $S$ is **countable** if it is finite or countably infinite. A set is
-**countably infinite** if there exists a bijection $\mathbb{'\{'}N{'\}'} \to S$. A set that is not
+**countably infinite** if there exists a bijection $\mathbb{{'}N{}'} \to S$. A set that is not
 countable Is **uncountable**.
 
-**Theorem 2.6.** $\mathbb{'\{'}Z{'\}'}$ is countably infinite.
+**Theorem 2.6.** $\mathbb{{'}Z{}'}$ is countably infinite.
 
-_Proof._ The function $f : \mathbb{'\{'}N{'\}'} \to \mathbb{'\{'}Z{'\}'}$ defined by
+_Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
 $$f(n) = \begin{cases} n/2 & \mathrm{if{}\; n\; \mathrm{is\; even{} \\ -(n+1)/2 & \mathrm{if{}\; n\; \mathrm{is\; odd{} \end{cases}$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
-**Theorem 2.7.** $\mathbb{'\{'}Q{'\}'}$ is countably infinite.
+**Theorem 2.7.** $\mathbb{{'}Q{}'}$ is countably infinite.
 
-_Proof._ Every positive rational can be written as $p/q$ with $p, q \in \mathbb{'\{'}N{'\}'}^+$.
-Arrange the Pairs $(p, q)$ in an infinite grid and traverse them diagonally:
+_Proof._ Every positive rational can be written as $p/q$ with $p, q \in \mathbb{{'}N{}'}^+$. Arrange
+the Pairs $(p, q)$ in an infinite grid and traverse them diagonally:
 
 $1/1,\; 1/2,\; 2/1,\; 3/1,\; 1/3,\; 1/4,\; 2/3,\; 3/2,\; 4/1, \ldots$
 
 Skipping duplicates (where $p/q = p'/q'$ in reduced form) yields an enumeration of
-$\mathbb{'\{'}Q{'\}'}^+$. Extending with negatives and zero gives an enumeration of
-$\mathbb{'\{'}Q{'\}'}$. $\blacksquare$
+$\mathbb{{'}Q{}'}^+$. Extending with negatives and zero gives an enumeration of $\mathbb{{'}Q{}'}$.
+$\blacksquare$
 
-**Theorem 2.8 (Cantor, 1891).** $\mathbb{'\{'}R{'\}'}$ is uncountable.
+**Theorem 2.8 (Cantor, 1891).** $\mathbb{{'}R{}'}$ is uncountable.
 
-_Proof (Diagonal argument)._ Suppose for contradiction that $\mathbb{'\{'}R{'\}'}$ is countable.
-Then the Interval $[0, 1)$ can be listed as $r_1, r_2, r_3, \ldots$ where each $r_i$ has a unique
-decimal Expansion $r_i = 0.d_{i1}d_{i2}d_{i3}\ldots$ with each $d_{ij} \in \\{0, 1, \ldots, 9\\}$
-(choosing the expansion that does not end in all 9s to avoid dual representations).
+_Proof (Diagonal argument)._ Suppose for contradiction that $\mathbb{{'}R{}'}$ is countable. Then
+the Interval $[0, 1)$ can be listed as $r_1, r_2, r_3, \ldots$ where each $r_i$ has a unique decimal
+Expansion $r_i = 0.d_{i1}d_{i2}d_{i3}\ldots$ with each $d_{ij} \in \\{0, 1, \ldots, 9\\}$ (choosing
+the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
@@ -497,7 +496,7 @@ $$s_i = \begin{cases} 5 & \mathrm{if{}\; d_{ii} \neq 5 \\ 6 & \mathrm{if{}\; d_{
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
-$\mathbb{'\{'}R{'\}'}$ is uncountable. $\blacksquare$
+$\mathbb{{'}R{}'}$ is uncountable. $\blacksquare$
 
 ## 3. Proof Techniques
 
@@ -515,12 +514,12 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{'\{'}Z{'\}'}$ and $q, s \neq 0$. Then
+Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{{'}Z{}'}$ and $q, s \neq 0$. Then
 
 $$a + b = \frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$$
 
-Since $ps + rq \in \mathbb{'\{'}Z{'\}'}$ and $qs \in \mathbb{'\{'}Z{'\}'} \setminus \\{0\\}$The sum
-$a + b$ is rational. $\blacksquare$
+Since $ps + rq \in \mathbb{{'}Z{}'}$ and $qs \in \mathbb{{'}Z{}'} \setminus \\{0\\}$The sum $a + b$
+is rational. $\blacksquare$
 
 </details>
 
@@ -559,10 +558,10 @@ Contradiction. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Suppose $\sqrt{2} = p/q$ in lowest terms, with $p, q \in \mathbb{'\{'}Z{'\}'}^+$ and
-$\gcd(p, q) = 1$. Then $2q^2 = p^2$So $p^2$ is even, hence $p$ is even. Write $p = 2r$. Then
-$2q^2 = 4r^2$So $q^2 = 2r^2$Hence $q$ is even. But then both $p$ and $q$ are even, Contradicting
-$\gcd(p, q) = 1$. $\blacksquare$
+Suppose $\sqrt{2} = p/q$ in lowest terms, with $p, q \in \mathbb{{'}Z{}'}^+$ and $\gcd(p, q) = 1$.
+Then $2q^2 = p^2$So $p^2$ is even, hence $p$ is even. Write $p = 2r$. Then $2q^2 = 4r^2$So
+$q^2 = 2r^2$Hence $q$ is even. But then both $p$ and $q$ are even, Contradicting $\gcd(p, q) = 1$.
+$\blacksquare$
 
 </details>
 
@@ -641,7 +640,7 @@ has a least Element $m$. Since $P(0)$ is true, $m \geq 1$. Then $P(m - 1)$ is tr
 $m$), And $P(m - 1) \implies P(m)$ by the inductive hypothesis, so $P(m)$ is true, contradicting
 $m \in S$. Therefore $S = \emptyset$ and $P(n)$ holds for all $n \geq 0$.
 
-_Proof (induction implies WOP)._ Let $S \subseteq \mathbb{'\{'}N{'\}'}$ be nonempty. We prove by
+_Proof (induction implies WOP)._ Let $S \subseteq \mathbb{{'}N{}'}$ be nonempty. We prove by
 induction that If $S \cap \\{0, 1, \ldots, n\\} \neq \emptyset$Then $S$ has a least element. For
 $n = 0$$S$ Contains $0$Which is the least element. Assume the claim for $n = k$. If
 $0 \in S \cap \\{0, \ldots, k+1\\}$ Then $0$ is the least element. Otherwise
@@ -1240,8 +1239,8 @@ $c$--$3$$d$--$4$.
 ### 5.8 Network Flows
 
 A **flow network** is a directed graph $G = (V, E)$ with a **source** $s$A **sink** $t$And a
-**capacity** function $c : E \to \mathbb{'\{'}R{'\}'}_{\geq 0}$. A **flow**
-$f : E \to \mathbb{'\{'}R{'\}'}_{\geq 0}$ Satisfies:
+**capacity** function $c : E \to \mathbb{{'}R{}'}_{\geq 0}$. A **flow**
+$f : E \to \mathbb{{'}R{}'}_{\geq 0}$ Satisfies:
 
 1. **Capacity constraint:** $0 \leq f(e) \leq c(e)$ for all $e \in E$.
 2. **Flow conservation:** for all $v \in V \setminus \\{s, t\\}$
@@ -1525,8 +1524,8 @@ If you get this wrong, revise: Section 2.1.
 
 </details>
 
-**Problem 5.** Show that the relation $R$ on $\mathbb{'\{'}Z{'\}'}$ defined by $a\,R\,b$ iff $a - b$
-is even Is an equivalence relation. How many equivalence classes are there?
+**Problem 5.** Show that the relation $R$ on $\mathbb{{'}Z{}'}$ defined by $a\,R\,b$ iff $a - b$ is
+even Is an equivalence relation. How many equivalence classes are there?
 
 <details>
 <summary>Solution</summary>
@@ -1541,9 +1540,9 @@ If you get this wrong, revise: Section 2.2.
 
 </details>
 
-**Problem 6.** Let $f : \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ be $f(x) = 2x + 1$ and
-$g : \mathbb{'\{'}R{'\}'} \to \mathbb{'\{'}R{'\}'}$ Be $g(x) = x^2$. Find $g \circ f$ and
-$f \circ g$. Is $g \circ f$ injective?
+**Problem 6.** Let $f : \mathbb{{'}R{}'} \to \mathbb{{'}R{}'}$ be $f(x) = 2x + 1$ and
+$g : \mathbb{{'}R{}'} \to \mathbb{{'}R{}'}$ Be $g(x) = x^2$. Find $g \circ f$ and $f \circ g$. Is
+$g \circ f$ injective?
 
 <details>
 <summary>Solution</summary>

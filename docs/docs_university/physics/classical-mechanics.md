@@ -18,8 +18,8 @@ slug: classical-mechanics
 
 1. **First Law (Inertia):** A body remains at rest or in uniform motion unless acted upon by a net
    force.
-2. **Second Law:** $\mathbf{'\{'}F{'\}'} = m\mathbf{'\{'}a{'\}'} = \dot{\mathbf{'\{'}p{'\}'}}$ where
-   $\mathbf{'\{'}p{'\}'} = m\mathbf{'\{'}v{'\}'}$.
+2. **Second Law:** $\mathbf{{'}F{}'} = m\mathbf{{'}a{}'} = \dot{\mathbf{{'}p{}'}}$ where
+   $\mathbf{{'}p{}'} = m\mathbf{{'}v{}'}$.
 3. **Third Law:** For every action, there is an equal and opposite reaction.
 
 ### 1.2 Newton's Second Law in Various Coordinate Systems
@@ -31,7 +31,7 @@ $$F_x = m\ddot{x}, \quad F_y = m\ddot{y}, \quad F_z = m\ddot{z}$$
 In planar polar coordinates $(r, \phi)$The acceleration decomposes into radial and transverse
 components:
 
-$$\mathbf{'\{'}a{'\}'} = (\ddot{r} - r\dot{\phi}^2)\,\hat{\mathbf{'\{'}r{'\}'}} + (r\ddot{\phi} + 2\dot{r}\dot{\phi})\,\hat{\boldsymbol{'\{'}\phi{'\}'}}$$
+$$\mathbf{{'}a{}'} = (\ddot{r} - r\dot{\phi}^2)\,\hat{\mathbf{{'}r{}'}} + (r\ddot{\phi} + 2\dot{r}\dot{\phi})\,\hat{\boldsymbol{{'}\phi{}'}}$$
 
 So Newton's second law becomes:
 
@@ -42,7 +42,7 @@ The term $-mr\dot{\phi}^2$ is the **centrifugal acceleration** and $2m\dot{r}\do
 
 In cylindrical coordinates $(\rho, \phi, z)$:
 
-$$\mathbf{'\{'}a{'\}'} = (\ddot{\rho} - \rho\dot{\phi}^2)\,\hat{\boldsymbol{'\{'}\rho{'\}'}} + (\rho\ddot{\phi} + 2\dot{\rho}\dot{\phi})\,\hat{\boldsymbol{'\{'}\phi{'\}'}} + \ddot{z}\,\hat{\mathbf{'\{'}z{'\}'}}$$
+$$\mathbf{{'}a{}'} = (\ddot{\rho} - \rho\dot{\phi}^2)\,\hat{\boldsymbol{{'}\rho{}'}} + (\rho\ddot{\phi} + 2\dot{\rho}\dot{\phi})\,\hat{\boldsymbol{{'}\phi{}'}} + \ddot{z}\,\hat{\mathbf{{'}z{}'}}$$
 
 ### 1.3 Worked Example: Block on an Inclined Plane with Friction
 
@@ -65,8 +65,8 @@ The block accelerates when $\tan\alpha \gt{} \mu_k$ and decelerates otherwise. $
 radius $r$ with the string making angle $\theta$ with the vertical. Find the angular velocity
 $\omega$.
 
-_Solution._ The forces on the mass are tension $\mathbf{'\{'}T{'\}'}$ along the string and weight
-$mg$ downward. Newton's second law in the vertical direction:
+_Solution._ The forces on the mass are tension $\mathbf{{'}T{}'}$ along the string and weight $mg$
+downward. Newton's second law in the vertical direction:
 
 $$T\cos\theta - mg = 0 \implies T = \frac{mg}{\cos\theta}$$
 
@@ -87,41 +87,41 @@ forces, the total linear momentum is conserved.
 
 _Proof._ Newton's second law for the $i$-th particle:
 
-$$\mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = m_i \dot{\mathbf{'\{'}v{'\}'}}_i$$
+$$\mathbf{{'}F{}'}_i^{(\mathrm{ext{})} + \sum_{j \neq i} \mathbf{{'}F{}'}_{ij} = m_i \dot{\mathbf{{'}v{}'}}_i$$
 
-Where $\mathbf{'\{'}F{'\}'}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's
-third law, $\mathbf{'\{'}F{'\}'}_{ij} = -\mathbf{'\{'}F{'\}'}_{ji}$. Summing over all particles:
+Where $\mathbf{{'}F{}'}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third
+law, $\mathbf{{'}F{}'}_{ij} = -\mathbf{{'}F{}'}_{ji}$. Summing over all particles:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}F{'\}'}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{'\{'}v{'\}'}_i$$
+$$\sum_i \mathbf{{'}F{}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{{'}F{}'}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{{'}v{}'}_i$$
 
 The double sum vanishes by Newton's third law. Defining
-$\mathbf{'\{'}P{'\}'} = \sum_i m_i \mathbf{'\{'}v{'\}'}_i$:
+$\mathbf{{'}P{}'} = \sum_i m_i \mathbf{{'}v{}'}_i$:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} = \dot{\mathbf{'\{'}P{'\}'}}$$
+$$\sum_i \mathbf{{'}F{}'}_i^{(\mathrm{ext{})} = \dot{\mathbf{{'}P{}'}}$$
 
-If there are no external forces, $\dot{\mathbf{'\{'}P{'\}'}} = 0$ and $\mathbf{'\{'}P{'\}'}$ is
-constant. $\blacksquare$
+If there are no external forces, $\dot{\mathbf{{'}P{}'}} = 0$ and $\mathbf{{'}P{}'}$ is constant.
+$\blacksquare$
 
 **Corollary.** The centre of mass moves as if all external forces acted on a single particle of mass
 $M = \sum_i m_i$ located at the centre of mass:
-$M\ddot{\mathbf{'\{'}R{'\}'}} = \sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})}$.
+$M\ddot{\mathbf{{'}R{}'}} = \sum_i \mathbf{{'}F{}'}_i^{(\mathrm{ext{})}$.
 
 ### 1.6 Conservation of Energy
 
 **Theorem 1.2 (Work-Energy Theorem).** The work done by the net force on a particle equals the
 change in its kinetic energy:
 
-$$W = \int_{\mathbf{'\{'}r{'\}'}_1}^{\mathbf{'\{'}r{'\}'}_2} \mathbf{'\{'}F{'\}'} \cdot d\mathbf{'\{'}r{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
+$$W = \int_{\mathbf{{'}r{}'}_1}^{\mathbf{{'}r{}'}_2} \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 _Proof._ Using Newton's second law:
 
-$$W = \int m\mathbf{'\{'}a{'\}'} \cdot \mathbf{'\{'}v{'\}'}\, dt = \int m \frac{d\mathbf{'\{'}v{'\}'}}{dt} \cdot \mathbf{'\{'}v{'\}'}\, dt = \int m\mathbf{'\{'}v{'\}'} \cdot d\mathbf{'\{'}v{'\}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
+$$W = \int m\mathbf{{'}a{}'} \cdot \mathbf{{'}v{}'}\, dt = \int m \frac{d\mathbf{{'}v{}'}}{dt} \cdot \mathbf{{'}v{}'}\, dt = \int m\mathbf{{'}v{}'} \cdot d\mathbf{{'}v{}'} = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$$
 
 $\blacksquare$
 
 **Definition.** A force is **conservative** if the work done is path-independent, equivalently
-$\nabla \times \mathbf{'\{'}F{'\}'} = \mathbf{'\{'}0{'\}'}$Equivalently
-$\mathbf{'\{'}F{'\}'} = -\nabla V$ for some scalar potential $V(\mathbf{'\{'}r{'\}'})$.
+$\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$Equivalently $\mathbf{{'}F{}'} = -\nabla V$ for
+some scalar potential $V(\mathbf{{'}r{}'})$.
 
 **Theorem 1.3 (Conservation of Mechanical Energy).** If all forces are conservative, $E = T + V$ is
 conserved.
@@ -138,25 +138,23 @@ $\blacksquare$
 the total angular momentum is conserved.
 
 _Proof._ The angular momentum of the $i$-th particle about the origin is
-$\mathbf{'\{'}L{'\}'}_i = \mathbf{'\{'}r{'\}'}_i \times m_i \mathbf{'\{'}v{'\}'}_i$. Taking the time
-derivative:
+$\mathbf{{'}L{}'}_i = \mathbf{{'}r{}'}_i \times m_i \mathbf{{'}v{}'}_i$. Taking the time derivative:
 
-$$\dot{\mathbf{'\{'}L{'\}'}}_i = \dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i + \mathbf{'\{'}r{'\}'}_i \times m_i \dot{\mathbf{'\{'}v{'\}'}}_i = \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i$$
+$$\dot{\mathbf{{'}L{}'}}_i = \dot{\mathbf{{'}r{}'}}_i \times m_i \mathbf{{'}v{}'}_i + \mathbf{{'}r{}'}_i \times m_i \dot{\mathbf{{'}v{}'}}_i = \mathbf{{'}r{}'}_i \times \mathbf{{'}F{}'}_i$$
 
 Since
-$\dot{\mathbf{'\{'}r{'\}'}}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}v{'\}'}_i \times m_i \mathbf{'\{'}v{'\}'}_i = \mathbf{'\{'}0{'\}'}$.
+$\dot{\mathbf{{'}r{}'}}_i \times m_i \mathbf{{'}v{}'}_i = \mathbf{{'}v{}'}_i \times m_i \mathbf{{'}v{}'}_i = \mathbf{{'}0{}'}$.
 Summing over all particles:
 
-$$\dot{\mathbf{'\{'}L{'\}'}} = \sum_i \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{'\{'}r{'\}'}_i \times \mathbf{'\{'}F{'\}'}_{ij}$$
+$$\dot{\mathbf{{'}L{}'}} = \sum_i \mathbf{{'}r{}'}_i \times \mathbf{{'}F{}'}_i^{(\mathrm{ext{})} + \sum_i \sum_{j \neq i} \mathbf{{'}r{}'}_i \times \mathbf{{'}F{}'}_{ij}$$
 
-The double sum represents internal torques. For central internal forces ($\mathbf{'\{'}F{'\}'}_{ij}$
-parallel to $\mathbf{'\{'}r{'\}'}_i - \mathbf{'\{'}r{'\}'}_j$), the internal torques cancel in
-pairs. Hence:
+The double sum represents internal torques. For central internal forces ($\mathbf{{'}F{}'}_{ij}$
+parallel to $\mathbf{{'}r{}'}_i - \mathbf{{'}r{}'}_j$), the internal torques cancel in pairs. Hence:
 
-$$\dot{\mathbf{'\{'}L{'\}'}} = \boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})}$$
+$$\dot{\mathbf{{'}L{}'}} = \boldsymbol{{'}\tau{}'}^{(\mathrm{ext{})}$$
 
-If $\boldsymbol{'\{'}\tau{'\}'}^{(\mathrm{ext{})} = \mathbf{'\{'}0{'\}'}$Then
-$\mathbf{'\{'}L{'\}'} = \mathrm{const{}$. $\blacksquare$
+If $\boldsymbol{{'}\tau{}'}^{(\mathrm{ext{})} = \mathbf{{'}0{}'}$Then
+$\mathbf{{'}L{}'} = \mathrm{const{}$. $\blacksquare$
 
 ### 1.8 The Rocket Equation
 
@@ -231,11 +229,11 @@ Uniquely determines the configuration.
 
 The Cartesian coordinates are functions of the generalised coordinates (and possibly time):
 
-$$\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q_1, q_2, \ldots, q_n, t), \quad i = 1, \ldots, N$$
+$$\mathbf{{'}r{}'}_i = \mathbf{{'}r{}'}_i(q_1, q_2, \ldots, q_n, t), \quad i = 1, \ldots, N$$
 
 The velocities are:
 
-$$\dot{\mathbf{'\{'}r{'\}'}}_i = \sum_{j=1}^n \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\dot{q}_j + \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial t}$$
+$$\dot{\mathbf{{'}r{}'}}_i = \sum_{j=1}^n \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\dot{q}_j + \frac{\partial \mathbf{{'}r{}'}_i}{\partial t}$$
 
 **Example.** A simple pendulum has one degree of freedom. We can use the angle $\theta$ from the
 Vertical as the generalised coordinate, rather than the Cartesian coordinates $(x, y)$ of the bob.
@@ -244,7 +242,7 @@ Vertical as the generalised coordinate, rather than the Cartesian coordinates $(
 
 **Holonomic constraints** relate the coordinates by equations:
 
-$$f(\mathbf{'\{'}r{'\}'}_1, \mathbf{'\{'}r{'\}'}_2, \ldots, \mathbf{'\{'}r{'\}'}_N, t) = 0$$
+$$f(\mathbf{{'}r{}'}_1, \mathbf{{'}r{}'}_2, \ldots, \mathbf{{'}r{}'}_N, t) = 0$$
 
 A holonomic constraint reduces the number of degrees of freedom.
 
@@ -312,54 +310,52 @@ $\blacksquare$
 
 ### 2.5 Virtual Work and D'Alembert's Principle
 
-A **virtual displacement** $\delta \mathbf{'\{'}r{'\}'}_i$ is an infinitesimal change in position
+A **virtual displacement** $\delta \mathbf{{'}r{}'}_i$ is an infinitesimal change in position
 consistent with The constraints at a fixed instant in time ($\delta t = 0$).
 
 **Definition (Virtual Work).** The virtual work of the forces is:
 
-$$\delta W = \sum_{i=1}^N \mathbf{'\{'}F{'\}'}_i \cdot \delta \mathbf{'\{'}r{'\}'}_i$$
+$$\delta W = \sum_{i=1}^N \mathbf{{'}F{}'}_i \cdot \delta \mathbf{{'}r{}'}_i$$
 
 **Definition (Ideal Constraints).** Constraints are **ideal** if the virtual work of the constraint
 forces is zero:
 
-$$\sum_{i=1}^N \mathbf{'\{'}C{'\}'}_i \cdot \delta \mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_{i=1}^N \mathbf{{'}C{}'}_i \cdot \delta \mathbf{{'}r{}'}_i = 0$$
 
-Where $\mathbf{'\{'}C{'\}'}_i$ is the constraint force on particle $i$.
+Where $\mathbf{{'}C{}'}_i$ is the constraint force on particle $i$.
 
 **Theorem 2.1 (Principle of Virtual Work).** A system is in static equilibrium if and only if the
 virtual work of the applied forces vanishes for all virtual displacements consistent with the
 constraints.
 
-_Proof._ In static equilibrium,
-$\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i = \mathbf{'\{'}0{'\}'}$ for each particle.
-Therefore:
+_Proof._ In static equilibrium, $\mathbf{{'}F{}'}_i + \mathbf{{'}C{}'}_i = \mathbf{{'}0{}'}$ for
+each particle. Therefore:
 
-$$\sum_i (\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_i (\mathbf{{'}F{}'}_i + \mathbf{{'}C{}'}_i) \cdot \delta\mathbf{{'}r{}'}_i = 0$$
 
-For ideal constraints, $\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$So
-$\sum_i \mathbf{'\{'}F{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$. Conversely, if the virtual
-work of applied forces vanishes for all admissible virtual displacements, the system must be in
-equilibrium (otherwise one could choose a virtual displacement in the direction of net force to get
-non-zero work). $\blacksquare$
+For ideal constraints, $\sum_i \mathbf{{'}C{}'}_i \cdot \delta\mathbf{{'}r{}'}_i = 0$So
+$\sum_i \mathbf{{'}F{}'}_i \cdot \delta\mathbf{{'}r{}'}_i = 0$. Conversely, if the virtual work of
+applied forces vanishes for all admissible virtual displacements, the system must be in equilibrium
+(otherwise one could choose a virtual displacement in the direction of net force to get non-zero
+work). $\blacksquare$
 
 **Theorem 2.2 (D'Alembert's Principle).** For a system of $N$ particles:
 
-$$\sum_{i=1}^N (\mathbf{'\{'}F{'\}'}_i - m_i \ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta \mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_{i=1}^N (\mathbf{{'}F{}'}_i - m_i \ddot{\mathbf{{'}r{}'}}_i) \cdot \delta \mathbf{{'}r{}'}_i = 0$$
 
-Where $\mathbf{'\{'}F{'\}'}_i$ includes both applied and constraint forces. For ideal constraints,
-the Constraint forces do no virtual work, so only the applied forces contribute.
+Where $\mathbf{{'}F{}'}_i$ includes both applied and constraint forces. For ideal constraints, the
+Constraint forces do no virtual work, so only the applied forces contribute.
 
 _Proof._ D'Alembert's principle extends the principle of virtual work to dynamics by treating
-$-m_i \ddot{\mathbf{'\{'}r{'\}'}}_i$ as a "fictitious force" (the **inertia force**). Starting from
-Newton's second law
-$\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i = m_i \ddot{\mathbf{'\{'}r{'\}'}}_i$:
+$-m_i \ddot{\mathbf{{'}r{}'}}_i$ as a "fictitious force" (the **inertia force**). Starting from
+Newton's second law $\mathbf{{'}F{}'}_i + \mathbf{{'}C{}'}_i = m_i \ddot{\mathbf{{'}r{}'}}_i$:
 
-$$\sum_i (\mathbf{'\{'}F{'\}'}_i + \mathbf{'\{'}C{'\}'}_i - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_i (\mathbf{{'}F{}'}_i + \mathbf{{'}C{}'}_i - m_i\ddot{\mathbf{{'}r{}'}}_i) \cdot \delta\mathbf{{'}r{}'}_i = 0$$
 
 This is true. For ideal constraints
-$\sum_i \mathbf{'\{'}C{'\}'}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$Giving:
+$\sum_i \mathbf{{'}C{}'}_i \cdot \delta\mathbf{{'}r{}'}_i = 0$Giving:
 
-$$\sum_i (\mathbf{'\{'}F{'\}'}_i - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_i (\mathbf{{'}F{}'}_i - m_i\ddot{\mathbf{{'}r{}'}}_i) \cdot \delta\mathbf{{'}r{}'}_i = 0$$
 
 $\blacksquare$
 
@@ -382,37 +378,37 @@ $$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) - \frac{\partia
 
 _Proof._ Start from D'Alembert's principle with only applied forces (ideal constraints):
 
-$$\sum_i (\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} - m_i\ddot{\mathbf{'\{'}r{'\}'}}_i) \cdot \delta\mathbf{'\{'}r{'\}'}_i = 0$$
+$$\sum_i (\mathbf{{'}F{}'}_i^{(\mathrm{app{})} - m_i\ddot{\mathbf{{'}r{}'}}_i) \cdot \delta\mathbf{{'}r{}'}_i = 0$$
 
 Express the virtual displacement in terms of generalised coordinates:
 
-$$\delta\mathbf{'\{'}r{'\}'}_i = \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j$$
+$$\delta\mathbf{{'}r{}'}_i = \sum_j \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\delta q_j$$
 
 **First term (applied forces).** For a conservative system,
-$\mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} = -\nabla_i V$So:
+$\mathbf{{'}F{}'}_i^{(\mathrm{app{})} = -\nabla_i V$So:
 
-$$\sum_i \mathbf{'\{'}F{'\}'}_i^{(\mathrm{app{})} \cdot \delta\mathbf{'\{'}r{'\}'}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
+$$\sum_i \mathbf{{'}F{}'}_i^{(\mathrm{app{})} \cdot \delta\mathbf{{'}r{}'}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
 
 Defining the **generalised force**
-$Q_j = \sum_i \mathbf{'\{'}F{'\}'}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$For
+$Q_j = \sum_i \mathbf{{'}F{}'}_i \cdot \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}$For
 conservative forces $Q_j = -\partial V/\partial q_j$.
 
 **Second term (inertia).** Using
-$\frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$
-(which holds when $\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q, t)$):
+$\frac{\partial \dot{\mathbf{{'}r{}'}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}$
+(which holds when $\mathbf{{'}r{}'}_i = \mathbf{{'}r{}'}_i(q, t)$):
 
-$$\sum_i m_i\ddot{\mathbf{'\{'}r{'\}'}}_i \cdot \delta\mathbf{'\{'}r{'\}'}_i = \sum_i m_i\ddot{\mathbf{'\{'}r{'\}'}}_i \cdot \sum_j \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\delta q_j = \sum_j \left[\sum_i m_i\ddot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\right]\delta q_j$$
+$$\sum_i m_i\ddot{\mathbf{{'}r{}'}}_i \cdot \delta\mathbf{{'}r{}'}_i = \sum_i m_i\ddot{\mathbf{{'}r{}'}}_i \cdot \sum_j \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\delta q_j = \sum_j \left[\sum_i m_i\ddot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\right]\delta q_j$$
 
 Now:
 
-$$\sum_i m_i\ddot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j} = \frac{d}{dt}\left(\sum_i m_i\dot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\right) - \sum_i m_i\dot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{d}{dt}\frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$$
+$$\sum_i m_i\ddot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j} = \frac{d}{dt}\left(\sum_i m_i\dot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\right) - \sum_i m_i\dot{\mathbf{{'}r{}'}}_i \cdot \frac{d}{dt}\frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}$$
 
 Using
-$\frac{d}{dt}\frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j} = \frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial q_j}$
+$\frac{d}{dt}\frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j} = \frac{\partial \dot{\mathbf{{'}r{}'}}_i}{\partial q_j}$
 and
-$\frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}$:
+$\frac{\partial \dot{\mathbf{{'}r{}'}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}$:
 
-$$\sum_i m_i\ddot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j} = \frac{d}{dt}\left(\sum_i m_i\dot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial \dot{q}_j}\right) - \sum_i m_i\dot{\mathbf{'\{'}r{'\}'}}_i \cdot \frac{\partial \dot{\mathbf{'\{'}r{'\}'}}_i}{\partial q_j}$$
+$$\sum_i m_i\ddot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j} = \frac{d}{dt}\left(\sum_i m_i\dot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \dot{\mathbf{{'}r{}'}}_i}{\partial \dot{q}_j}\right) - \sum_i m_i\dot{\mathbf{{'}r{}'}}_i \cdot \frac{\partial \dot{\mathbf{{'}r{}'}}_i}{\partial q_j}$$
 
 $$= \frac{d}{dt}\frac{\partial T}{\partial \dot{q}_j} - \frac{\partial T}{\partial q_j}$$
 
@@ -635,8 +631,8 @@ The multipliers $\lambda_a$ are proportional to the constraint forces.
 $$h = \sum_j \dot{q}_j \frac{\partial L}{\partial \dot{q}_j} - L$$
 
 **Theorem 3.5.** If $L$ does not depend explicitly on time, then $h$ is conserved. Furthermore, if
-the transformation $\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q)$ does not depend explicitly
-on time and $V$ is velocity-independent, then $h = T + V$ (the total energy).
+the transformation $\mathbf{{'}r{}'}_i = \mathbf{{'}r{}'}_i(q)$ does not depend explicitly on time
+and $V$ is velocity-independent, then $h = T + V$ (the total energy).
 
 _Proof._ Taking the total time derivative:
 
@@ -649,10 +645,9 @@ $$\frac{dh}{dt} = -\frac{\partial L}{\partial t}$$
 
 If $\partial L/\partial t = 0$Then $dh/dt = 0$.
 
-For the second part, when $\mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}r{'\}'}_i(q)$ (scleronomic) and
-$V = V(q)$:
+For the second part, when $\mathbf{{'}r{}'}_i = \mathbf{{'}r{}'}_i(q)$ (scleronomic) and $V = V(q)$:
 
-$$T = \frac{1}{2}\sum_{i,j,k} m_i \frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_j}\frac{\partial \mathbf{'\{'}r{'\}'}_i}{\partial q_k}\dot{q}_j\dot{q}_k$$
+$$T = \frac{1}{2}\sum_{i,j,k} m_i \frac{\partial \mathbf{{'}r{}'}_i}{\partial q_j}\frac{\partial \mathbf{{'}r{}'}_i}{\partial q_k}\dot{q}_j\dot{q}_k$$
 
 Is a homogeneous quadratic form in $\dot{q}_j$. By Euler's theorem for homogeneous functions:
 
@@ -785,16 +780,16 @@ $$\frac{d}{dt}\int_\Omega \rho\, dq\, dp = \int_\Omega \frac{\partial \rho}{\par
 
 By the continuity equation in $2n$ dimensions:
 
-$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{'\{'}v{'\}'}) = 0$$
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{{'}v{}'}) = 0$$
 
-Where $\mathbf{'\{'}v{'\}'} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the
-phase space velocity. Using Hamilton's equations:
+Where $\mathbf{{'}v{}'} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the phase
+space velocity. Using Hamilton's equations:
 
-$$\nabla \cdot \mathbf{'\{'}v{'\}'} = \sum_j \frac{\partial \dot{q}_j}{\partial q_j} + \sum_j \frac{\partial \dot{p}_j}{\partial p_j} = \sum_j \frac{\partial^2 H}{\partial q_j \partial p_j} - \sum_j \frac{\partial^2 H}{\partial p_j \partial q_j} = 0$$
+$$\nabla \cdot \mathbf{{'}v{}'} = \sum_j \frac{\partial \dot{q}_j}{\partial q_j} + \sum_j \frac{\partial \dot{p}_j}{\partial p_j} = \sum_j \frac{\partial^2 H}{\partial q_j \partial p_j} - \sum_j \frac{\partial^2 H}{\partial p_j \partial q_j} = 0$$
 
 By equality of mixed partial derivatives. Therefore:
 
-$$\frac{\partial \rho}{\partial t} + \rho\,(\nabla \cdot \mathbf{'\{'}v{'\}'}) + \mathbf{'\{'}v{'\}'} \cdot \nabla\rho = \frac{\partial \rho}{\partial t} + \mathbf{'\{'}v{'\}'} \cdot \nabla\rho = \frac{d\rho}{dt} = 0$$
+$$\frac{\partial \rho}{\partial t} + \rho\,(\nabla \cdot \mathbf{{'}v{}'}) + \mathbf{{'}v{}'} \cdot \nabla\rho = \frac{\partial \rho}{\partial t} + \mathbf{{'}v{}'} \cdot \nabla\rho = \frac{d\rho}{dt} = 0$$
 
 $\blacksquare$
 
@@ -992,7 +987,7 @@ By Noether's theorem:
 $$Q = p_x \cdot 1 + p_y \cdot 0 + p_z \cdot 0 - 0 = p_x = \mathrm{const{}$$
 
 This is conservation of the $x$-component of linear momentum. Translation invariance in all three
-directions gives conservation of the full momentum vector $\mathbf{'\{'}p{'\}'}$. $\blacksquare$
+directions gives conservation of the full momentum vector $\mathbf{{'}p{}'}$. $\blacksquare$
 
 </details>
 
@@ -1016,8 +1011,8 @@ By Noether's theorem:
 $$Q = p_x(-y) + p_y(x) - 0 = x\, p_y - y\, p_x = L_z$$
 
 This is the $z$-component of angular momentum. Full rotational invariance gives conservation of the
-entire angular momentum vector
-$\mathbf{'\{'}L{'\}'} = \mathbf{'\{'}r{'\}'} \times \mathbf{'\{'}p{'\}'}$. $\blacksquare$
+entire angular momentum vector $\mathbf{{'}L{}'} = \mathbf{{'}r{}'} \times \mathbf{{'}p{}'}$.
+$\blacksquare$
 
 </details>
 
@@ -1252,41 +1247,40 @@ always positive), and $V$ is positive definite at a stable equilibrium.
 
 Writing the Lagrangian in matrix form:
 
-$$L = \frac{1}{2}\dot{\boldsymbol{'\{'}\eta{'\}'}}^T \mathbf{'\{'}T{'\}'}\, \dot{\boldsymbol{'\{'}\eta{'\}'}} - \frac{1}{2}\boldsymbol{'\{'}\eta{'\}'}^T \mathbf{'\{'}V{'\}'}\, \boldsymbol{'\{'}\eta{'\}'}$$
+$$L = \frac{1}{2}\dot{\boldsymbol{{'}\eta{}'}}^T \mathbf{{'}T{}'}\, \dot{\boldsymbol{{'}\eta{}'}} - \frac{1}{2}\boldsymbol{{'}\eta{}'}^T \mathbf{{'}V{}'}\, \boldsymbol{{'}\eta{}'}$$
 
 The Euler-Lagrange equations become:
 
-$$\mathbf{'\{'}T{'\}'}\, \ddot{\boldsymbol{'\{'}\eta{'\}'}} + \mathbf{'\{'}V{'\}'}\, \boldsymbol{'\{'}\eta{'\}'} = \mathbf{'\{'}0{'\}'}$$
+$$\mathbf{{'}T{}'}\, \ddot{\boldsymbol{{'}\eta{}'}} + \mathbf{{'}V{}'}\, \boldsymbol{{'}\eta{}'} = \mathbf{{'}0{}'}$$
 
 ### 7.3 Normal Modes and the Secular Equation
 
 Assuming solutions of the form $\eta_j = a_j e^{i\omega t}$The eigenvalue problem is:
 
-$$(\mathbf{'\{'}V{'\}'} - \omega^2 \mathbf{'\{'}T{'\}'})\mathbf{'\{'}a{'\}'} = \mathbf{'\{'}0{'\}'}$$
+$$(\mathbf{{'}V{}'} - \omega^2 \mathbf{{'}T{}'})\mathbf{{'}a{}'} = \mathbf{{'}0{}'}$$
 
 The **secular equation** (characteristic equation) is:
 
-$$\det(\mathbf{'\{'}V{'\}'} - \omega^2 \mathbf{'\{'}T{'\}'}) = 0$$
+$$\det(\mathbf{{'}V{}'} - \omega^2 \mathbf{{'}T{}'}) = 0$$
 
 This is a polynomial of degree $n$ in $\omega^2$ whose roots are the squared normal mode frequencies
 $\omega_\alpha^2$.
 
 **Theorem 7.1.** For a stable system, all normal mode frequencies are real and positive. The normal
-Modes are orthogonal with respect to both $\mathbf{'\{'}T{'\}'}$ and $\mathbf{'\{'}V{'\}'}$.
+Modes are orthogonal with respect to both $\mathbf{{'}T{}'}$ and $\mathbf{{'}V{}'}$.
 
-_Proof._ Since $\mathbf{'\{'}T{'\}'}$ is positive definite, we can write
-$\mathbf{'\{'}T{'\}'} = \mathbf{'\{'}L{'\}'}\mathbf{'\{'}L{'\}'}^T$ (Cholesky decomposition).
-Defining $\boldsymbol{'\{'}\xi{'\}'} = \mathbf{'\{'}L{'\}'}^T\mathbf{'\{'}a{'\}'}$ and
-$\mathbf{'\{'}W{'\}'} = \mathbf{'\{'}L{'\}'}^{-1}\mathbf{'\{'}V{'\}'}\mathbf{'\{'}L{'\}'}^{-T}$The
-eigenvalue problem becomes
-$\mathbf{'\{'}W{'\}'}\boldsymbol{'\{'}\xi{'\}'} = \omega^2\boldsymbol{'\{'}\xi{'\}'}$. Since
-$\mathbf{'\{'}W{'\}'}$ is symmetric and $\mathbf{'\{'}V{'\}'}$ is positive definite, all eigenvalues
-$\omega^2$ are real and positive. Orthogonality follows from the symmetry of $\mathbf{'\{'}W{'\}'}$.
+_Proof._ Since $\mathbf{{'}T{}'}$ is positive definite, we can write
+$\mathbf{{'}T{}'} = \mathbf{{'}L{}'}\mathbf{{'}L{}'}^T$ (Cholesky decomposition). Defining
+$\boldsymbol{{'}\xi{}'} = \mathbf{{'}L{}'}^T\mathbf{{'}a{}'}$ and
+$\mathbf{{'}W{}'} = \mathbf{{'}L{}'}^{-1}\mathbf{{'}V{}'}\mathbf{{'}L{}'}^{-T}$The eigenvalue
+problem becomes $\mathbf{{'}W{}'}\boldsymbol{{'}\xi{}'} = \omega^2\boldsymbol{{'}\xi{}'}$. Since
+$\mathbf{{'}W{}'}$ is symmetric and $\mathbf{{'}V{}'}$ is positive definite, all eigenvalues
+$\omega^2$ are real and positive. Orthogonality follows from the symmetry of $\mathbf{{'}W{}'}$.
 $\blacksquare$
 
 ### 7.4 Orthogonality of Normal Modes
 
-**Theorem 7.2.** The normal mode vectors $\mathbf{'\{'}a{'\}'}^{(\alpha)}$ satisfy:
+**Theorem 7.2.** The normal mode vectors $\mathbf{{'}a{}'}^{(\alpha)}$ satisfy:
 
 $$\sum_{j,k} a_j^{(\alpha)} T_{jk} a_k^{(\beta)} = T_\alpha\, \delta_{\alpha\beta}, \quad \sum_{j,k} a_j^{(\alpha)} V_{jk} a_k^{(\beta)} = \omega_\alpha^2 T_\alpha\, \delta_{\alpha\beta}$$
 
@@ -1318,9 +1312,9 @@ $$= \frac{1}{2}(mgl + kl^2)\theta_1^2 + \frac{1}{2}(mgl + kl^2)\theta_2^2 - kl^2
 
 The mass matrix and stiffness matrix are:
 
-$$\mathbf{'\{'}T{'\}'} = ml^2 \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \mathbf{'\{'}V{'\}'} = \begin{pmatrix} mgl + kl^2 & -kl^2 \\ -kl^2 & mgl + kl^2 \end{pmatrix}$$
+$$\mathbf{{'}T{}'} = ml^2 \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \mathbf{{'}V{}'} = \begin{pmatrix} mgl + kl^2 & -kl^2 \\ -kl^2 & mgl + kl^2 \end{pmatrix}$$
 
-The secular equation $\det(\mathbf{'\{'}V{'\}'} - \omega^2\mathbf{'\{'}T{'\}'}) = 0$:
+The secular equation $\det(\mathbf{{'}V{}'} - \omega^2\mathbf{{'}T{}'}) = 0$:
 
 $$(mgl + kl^2 - ml^2\omega^2)^2 - (kl^2)^2 = 0$$
 
@@ -1371,7 +1365,7 @@ $(\phi, \theta, \psi)$.
 
 ### 8.2 Angular Velocity and Euler Angles
 
-The angular velocity $\boldsymbol{'\{'}\omega{'\}'}$ in terms of the Euler angles ($z$-$x'$-$z''$
+The angular velocity $\boldsymbol{{'}\omega{}'}$ in terms of the Euler angles ($z$-$x'$-$z''$
 convention) expressed in the body frame:
 
 $$\omega_1 = \dot{\phi}\sin\theta\sin\psi + \dot{\theta}\cos\psi$$
@@ -1384,30 +1378,29 @@ $$\omega_3 = \dot{\phi}\cos\theta + \dot{\psi}$$
 
 **Definition.** The **moment of inertia tensor** about the centre of mass is:
 
-$$I_{jk} = \int \rho(\mathbf{'\{'}r{'\}'})\left(\lvert\mathbf{'\{'}r{'\}'}\rvert^2 \delta_{jk} - r_j r_k\right) dV$$
+$$I_{jk} = \int \rho(\mathbf{{'}r{}'})\left(\lvert\mathbf{{'}r{}'}\rvert^2 \delta_{jk} - r_j r_k\right) dV$$
 
 In matrix form, for a discrete system:
 
-$$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} I_{xx} & I_{xy} & I_{xz} \\ I_{xy} & I_{yy} & I_{yz} \\ I_{xz} & I_{yz} & I_{zz} \end{pmatrix}$$
+$$\mathbf{{'}I{}'} = \begin{pmatrix} I_{xx} & I_{xy} & I_{xz} \\ I_{xy} & I_{yy} & I_{yz} \\ I_{xz} & I_{yz} & I_{zz} \end{pmatrix}$$
 
 Where:
 
 $$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad \mathrm{etc.{}$$
 
 **Theorem 8.1 (Parallel Axis Theorem).** The inertia tensor about a point displaced by
-$\mathbf{'\{'}a{'\}'}$ from the centre of mass is:
+$\mathbf{{'}a{}'}$ from the centre of mass is:
 
 $$I_{jk}' = I_{jk}^{(\mathrm{CM{})} + M(a^2\delta_{jk} - a_j a_k)$$
 
 Where $M$ is the total mass.
 
-_Proof._ Writing $\mathbf{'\{'}r{'\}'}_i' = \mathbf{'\{'}r{'\}'}_i + \mathbf{'\{'}a{'\}'}$ where
-$\mathbf{'\{'}r{'\}'}_i$ is measured from the centre of mass:
+_Proof._ Writing $\mathbf{{'}r{}'}_i' = \mathbf{{'}r{}'}_i + \mathbf{{'}a{}'}$ where
+$\mathbf{{'}r{}'}_i$ is measured from the centre of mass:
 
-$$I_{jk}' = \sum_i m_i\left(\lvert\mathbf{'\{'}r{'\}'}_i'\rvert^2\delta_{jk} - r_i' r_{i',k}\right) = \sum_i m_i\left(\lvert\mathbf{'\{'}r{'\}'}_i + \mathbf{'\{'}a{'\}'}\rvert^2\delta_{jk} - (r_{i,j} + a_j)(r_{i,k} + a_k)\right)$$
+$$I_{jk}' = \sum_i m_i\left(\lvert\mathbf{{'}r{}'}_i'\rvert^2\delta_{jk} - r_i' r_{i',k}\right) = \sum_i m_i\left(\lvert\mathbf{{'}r{}'}_i + \mathbf{{'}a{}'}\rvert^2\delta_{jk} - (r_{i,j} + a_j)(r_{i,k} + a_k)\right)$$
 
-Expanding and using $\sum_i m_i \mathbf{'\{'}r{'\}'}_i = \mathbf{'\{'}0{'\}'}$ (centre of mass
-condition):
+Expanding and using $\sum_i m_i \mathbf{{'}r{}'}_i = \mathbf{{'}0{}'}$ (centre of mass condition):
 
 $$I_{jk}' = I_{jk}^{(\mathrm{CM{})} + M(a^2\delta_{jk} - a_j a_k)$$
 
@@ -1415,21 +1408,21 @@ $\blacksquare$
 
 ### 8.4 Principal Axes
 
-**Definition.** The **principal axes** are the eigenvectors of $\mathbf{'\{'}I{'\}'}$And the
-**principal moments of inertia** $I_1, I_2, I_3$ are the corresponding eigenvalues.
+**Definition.** The **principal axes** are the eigenvectors of $\mathbf{{'}I{}'}$And the **principal
+moments of inertia** $I_1, I_2, I_3$ are the corresponding eigenvalues.
 
 In the principal axis frame, the inertia tensor is diagonal:
 
-$$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} I_1 & 0 & 0 \\ 0 & I_2 & 0 \\ 0 & 0 & I_3 \end{pmatrix}$$
+$$\mathbf{{'}I{}'} = \begin{pmatrix} I_1 & 0 & 0 \\ 0 & I_2 & 0 \\ 0 & 0 & I_3 \end{pmatrix}$$
 
-Since $\mathbf{'\{'}I{'\}'}$ is a real symmetric matrix, the principal axes are always real and
+Since $\mathbf{{'}I{}'}$ is a real symmetric matrix, the principal axes are always real and
 orthogonal.
 
 ### 8.5 Euler's Equations of Motion
 
 **Theorem 8.2 (Euler's Equations).** For torque-free rotation
-($\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}0{'\}'}$) about the centre of mass, the equations of
-motion in the body frame are:
+($\boldsymbol{{'}\tau{}'} = \mathbf{{'}0{}'}$) about the centre of mass, the equations of motion in
+the body frame are:
 
 $$I_1\dot{\omega}_1 = (I_2 - I_3)\omega_2\omega_3$$
 
@@ -1438,18 +1431,17 @@ $$I_2\dot{\omega}_2 = (I_3 - I_1)\omega_3\omega_1$$
 $$I_3\dot{\omega}_3 = (I_1 - I_2)\omega_1\omega_2$$
 
 _Proof._ In the body frame, the angular momentum is
-$\mathbf{'\{'}L{'\}'} = \mathbf{'\{'}I{'\}'}\,\boldsymbol{'\{'}\omega{'\}'}$. The equation of motion
-is:
+$\mathbf{{'}L{}'} = \mathbf{{'}I{}'}\,\boldsymbol{{'}\omega{}'}$. The equation of motion is:
 
-$$\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{space{}} = \boldsymbol{'\{'}\tau{'\}'}$$
+$$\left(\frac{d\mathbf{{'}L{}'}}{dt}\right)_{\mathrm{space{}} = \boldsymbol{{'}\tau{}'}$$
 
 Transforming to the body frame using
-$\left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{space{}} = \left(\frac{d\mathbf{'\{'}L{'\}'}}{dt}\right)_{\mathrm{body{}} + \boldsymbol{'\{'}\omega{'\}'} \times \mathbf{'\{'}L{'\}'}$:
+$\left(\frac{d\mathbf{{'}L{}'}}{dt}\right)_{\mathrm{space{}} = \left(\frac{d\mathbf{{'}L{}'}}{dt}\right)_{\mathrm{body{}} + \boldsymbol{{'}\omega{}'} \times \mathbf{{'}L{}'}$:
 
-$$\mathbf{'\{'}I{'\}'}\,\dot{\boldsymbol{'\{'}\omega{'\}'}} + \boldsymbol{'\{'}\omega{'\}'} \times (\mathbf{'\{'}I{'\}'}\,\boldsymbol{'\{'}\omega{'\}'}) = \boldsymbol{'\{'}\tau{'\}'}$$
+$$\mathbf{{'}I{}'}\,\dot{\boldsymbol{{'}\omega{}'}} + \boldsymbol{{'}\omega{}'} \times (\mathbf{{'}I{}'}\,\boldsymbol{{'}\omega{}'}) = \boldsymbol{{'}\tau{}'}$$
 
-In the principal axis frame with $\boldsymbol{'\{'}\tau{'\}'} = \mathbf{'\{'}0{'\}'}$This gives
-Euler's equations directly. $\blacksquare$
+In the principal axis frame with $\boldsymbol{{'}\tau{}'} = \mathbf{{'}0{}'}$This gives Euler's
+equations directly. $\blacksquare$
 
 ### 8.6 Stability of Torque-Free Rotation
 
@@ -1457,8 +1449,8 @@ Euler's equations directly. $\blacksquare$
 the largest or smallest principal moment of inertia, and unstable for the intermediate axis.
 
 _Proof._ Consider rotation primarily about the 1-axis:
-$\boldsymbol{'\{'}\omega{'\}'} = (\omega_1, \epsilon_2, \epsilon_3)$ where $\epsilon_2, \epsilon_3$
-are small perturbations. From Euler's equations:
+$\boldsymbol{{'}\omega{}'} = (\omega_1, \epsilon_2, \epsilon_3)$ where $\epsilon_2, \epsilon_3$ are
+small perturbations. From Euler's equations:
 
 $$I_2\dot{\epsilon}_2 = (I_3 - I_1)\omega_1\epsilon_3, \quad I_3\dot{\epsilon}_3 = (I_1 - I_2)\omega_1\epsilon_2$$
 
@@ -1573,7 +1565,7 @@ $$I_{xy} = I_{xz} = I_{yz} = 0$$
 
 The inertia tensor is:
 
-$$\mathbf{'\{'}I{'\}'} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & ML^2/3 & 0 \\ 0 & 0 & ML^2/3 \end{pmatrix}$$
+$$\mathbf{{'}I{}'} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & ML^2/3 & 0 \\ 0 & 0 & ML^2/3 \end{pmatrix}$$
 
 The principal moments about one end are $0$$ML^2/3$$ML^2/3$. By the parallel axis theorem, about the
 centre of mass they would be $0$$ML^2/12$$ML^2/12$.
@@ -1688,7 +1680,7 @@ $$V \approx mgl\theta_1^2 + \frac{1}{2}mgl\theta_2^2$$
 
 The mass and stiffness matrices:
 
-$$\mathbf{'\{'}T{'\}'} = ml^2\begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}, \quad \mathbf{'\{'}V{'\}'} = mgl\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$$
+$$\mathbf{{'}T{}'} = ml^2\begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}, \quad \mathbf{{'}V{}'} = mgl\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$$
 
 The secular equation gives $\omega_1^2 = (2-\sqrt{2})g/l$ and
 $\omega_2^2 = (2+\sqrt{2})g/l$Confirming coupled harmonic oscillators.
@@ -1707,10 +1699,10 @@ mode frequencies and describe the normal modes.
 
 $$L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2) - \frac{1}{2}k(x^2 + y^2) - \lambda xy$$
 
-$$\mathbf{'\{'}T{'\}'} = m\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \mathbf{'\{'}V{'\}'} = \begin{pmatrix} k & \lambda \\ \lambda & k \end{pmatrix}$$
+$$\mathbf{{'}T{}'} = m\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \mathbf{{'}V{}'} = \begin{pmatrix} k & \lambda \\ \lambda & k \end{pmatrix}$$
 
 Secular equation:
-$\det(\mathbf{'\{'}V{'\}'} - \omega^2\mathbf{'\{'}T{'\}'}) = (k - m\omega^2)^2 - \lambda^2 = 0$
+$\det(\mathbf{{'}V{}'} - \omega^2\mathbf{{'}T{}'}) = (k - m\omega^2)^2 - \lambda^2 = 0$
 
 $$\omega_\pm^2 = \frac{k \pm \lambda}{m}$$
 
@@ -1795,27 +1787,27 @@ $T \propto A^{-1/2}$ for $n = 3$ (cubic potential).
 ### Problem 8
 
 Find the Hamiltonian for a charged particle (mass $m$Charge $q$) in an electromagnetic field with
-vector potential $\mathbf{'\{'}A{'\}'}$ and scalar potential $\phi$.
+vector potential $\mathbf{{'}A{}'}$ and scalar potential $\phi$.
 
 <details>
 <summary>Solution</summary>
 
 The Lagrangian for a charged particle in an electromagnetic field is:
 
-$$L = \frac{1}{2}m\dot{\mathbf{'\{'}r{'\}'}}^2 + q\dot{\mathbf{'\{'}r{'\}'}} \cdot \mathbf{'\{'}A{'\}'} - q\phi$$
+$$L = \frac{1}{2}m\dot{\mathbf{{'}r{}'}}^2 + q\dot{\mathbf{{'}r{}'}} \cdot \mathbf{{'}A{}'} - q\phi$$
 
 The canonical momentum:
 
-$$\mathbf{'\{'}p{'\}'} = \frac{\partial L}{\partial \dot{\mathbf{'\{'}r{'\}'}}} = m\dot{\mathbf{'\{'}r{'\}'}} + q\mathbf{'\{'}A{'\}'}$$
+$$\mathbf{{'}p{}'} = \frac{\partial L}{\partial \dot{\mathbf{{'}r{}'}}} = m\dot{\mathbf{{'}r{}'}} + q\mathbf{{'}A{}'}$$
 
-Note: $\mathbf{'\{'}p{'\}'} \neq m\dot{\mathbf{'\{'}r{'\}'}}$; the canonical momentum differs from
-the mechanical momentum by $q\mathbf{'\{'}A{'\}'}$.
+Note: $\mathbf{{'}p{}'} \neq m\dot{\mathbf{{'}r{}'}}$; the canonical momentum differs from the
+mechanical momentum by $q\mathbf{{'}A{}'}$.
 
 The Hamiltonian:
 
-$$H = \mathbf{'\{'}p{'\}'} \cdot \dot{\mathbf{'\{'}r{'\}'}} - L = \mathbf{'\{'}p{'\}'} \cdot \frac{\mathbf{'\{'}p{'\}'} - q\mathbf{'\{'}A{'\}'}}{m} - \frac{1}{2}m\left(\frac{\mathbf{'\{'}p{'\}'} - q\mathbf{'\{'}A{'\}'}}{m}\right)^2 - q\frac{\mathbf{'\{'}p{'\}'} - q\mathbf{'\{'}A{'\}'}}{m} \cdot \mathbf{'\{'}A{'\}'} + q\phi$$
+$$H = \mathbf{{'}p{}'} \cdot \dot{\mathbf{{'}r{}'}} - L = \mathbf{{'}p{}'} \cdot \frac{\mathbf{{'}p{}'} - q\mathbf{{'}A{}'}}{m} - \frac{1}{2}m\left(\frac{\mathbf{{'}p{}'} - q\mathbf{{'}A{}'}}{m}\right)^2 - q\frac{\mathbf{{'}p{}'} - q\mathbf{{'}A{}'}}{m} \cdot \mathbf{{'}A{}'} + q\phi$$
 
-$$= \frac{(\mathbf{'\{'}p{'\}'} - q\mathbf{'\{'}A{'\}'})^2}{2m} + q\phi$$
+$$= \frac{(\mathbf{{'}p{}'} - q\mathbf{{'}A{}'})^2}{2m} + q\phi$$
 
 **If you get this wrong, revise:** Section 4.2 (Hamiltonian via Legendre transform), Section 4.3
 (Hamilton's equations).
@@ -1840,10 +1832,10 @@ $$I_{xy} = -\int_0^a \int_0^a \int_0^a \frac{M}{a^3} xy\, dx\, dy\, dz = -\frac{
 
 The inertia tensor is:
 
-$$\mathbf{'\{'}I{'\}'} = \frac{Ma^2}{12}\begin{pmatrix} 8 & -3 & -3 \\ -3 & 8 & -3 \\ -3 & -3 & 8 \end{pmatrix}$$
+$$\mathbf{{'}I{}'} = \frac{Ma^2}{12}\begin{pmatrix} 8 & -3 & -3 \\ -3 & 8 & -3 \\ -3 & -3 & 8 \end{pmatrix}$$
 
 The eigenvalues of $\begin{pmatrix} 8 & -3 & -3 \\ -3 & 8 & -3 \\ -3 & -3 & 8 \end{pmatrix}$ are
-found from $\det(\mathbf{'\{'}M{'\}'} - \lambda\mathbf{'\{'}1{'\}'}) = 0$:
+found from $\det(\mathbf{{'}M{}'} - \lambda\mathbf{{'}1{}'}) = 0$:
 
 $$(8-\lambda)^3 - 27 - 27 + 3(8-\lambda)(9) = 0$$
 
@@ -1894,19 +1886,18 @@ an equivalent one-body problem and identify the reduced mass.
 <summary>Solution</summary>
 
 The Lagrangian for two particles interacting via
-$V(\lvert\mathbf{'\{'}r{'\}'}_1 - \mathbf{'\{'}r{'\}'}_2\rvert)$:
+$V(\lvert\mathbf{{'}r{}'}_1 - \mathbf{{'}r{}'}_2\rvert)$:
 
-$$L = \frac{1}{2}m_1\dot{\mathbf{'\{'}r{'\}'}}_1^2 + \frac{1}{2}m_2\dot{\mathbf{'\{'}r{'\}'}}_2^2 - V(\lvert\mathbf{'\{'}r{'\}'}_1 - \mathbf{'\{'}r{'\}'}_2\rvert)$$
+$$L = \frac{1}{2}m_1\dot{\mathbf{{'}r{}'}}_1^2 + \frac{1}{2}m_2\dot{\mathbf{{'}r{}'}}_2^2 - V(\lvert\mathbf{{'}r{}'}_1 - \mathbf{{'}r{}'}_2\rvert)$$
 
 Introduce centre of mass
-$\mathbf{'\{'}R{'\}'} = (m_1\mathbf{'\{'}r{'\}'}_1 + m_2\mathbf{'\{'}r{'\}'}_2)/(m_1 + m_2)$ and
-relative coordinate $\mathbf{'\{'}r{'\}'} = \mathbf{'\{'}r{'\}'}_1 - \mathbf{'\{'}r{'\}'}_2$.
+$\mathbf{{'}R{}'} = (m_1\mathbf{{'}r{}'}_1 + m_2\mathbf{{'}r{}'}_2)/(m_1 + m_2)$ and relative
+coordinate $\mathbf{{'}r{}'} = \mathbf{{'}r{}'}_1 - \mathbf{{'}r{}'}_2$.
 
-Then $\mathbf{'\{'}r{'\}'}_1 = \mathbf{'\{'}R{'\}'} + \frac{m_2}{M}\mathbf{'\{'}r{'\}'}$ and
-$\mathbf{'\{'}r{'\}'}_2 = \mathbf{'\{'}R{'\}'} - \frac{m_1}{M}\mathbf{'\{'}r{'\}'}$ where
-$M = m_1 + m_2$.
+Then $\mathbf{{'}r{}'}_1 = \mathbf{{'}R{}'} + \frac{m_2}{M}\mathbf{{'}r{}'}$ and
+$\mathbf{{'}r{}'}_2 = \mathbf{{'}R{}'} - \frac{m_1}{M}\mathbf{{'}r{}'}$ where $M = m_1 + m_2$.
 
-$$L = \frac{1}{2}M\dot{\mathbf{'\{'}R{'\}'}}^2 + \frac{1}{2}\mu\dot{\mathbf{'\{'}r{'\}'}}^2 - V(r)$$
+$$L = \frac{1}{2}M\dot{\mathbf{{'}R{}'}}^2 + \frac{1}{2}\mu\dot{\mathbf{{'}r{}'}}^2 - V(r)$$
 
 Where $\mu = m_1 m_2 / (m_1 + m_2)$ is the **reduced mass**.
 
@@ -1921,7 +1912,7 @@ mass).
 ### Problem 12
 
 Show that the Poisson brackets $\{L_x, L_y\} = L_z$ and its cyclic permutations hold, where
-$\mathbf{'\{'}L{'\}'} = \mathbf{'\{'}r{'\}'} \times \mathbf{'\{'}p{'\}'}$ is the angular momentum.
+$\mathbf{{'}L{}'} = \mathbf{{'}r{}'} \times \mathbf{{'}p{}'}$ is the angular momentum.
 
 <details>
 <summary>Solution</summary>
@@ -2022,8 +2013,8 @@ force reduction).
 ### Problem 15
 
 A symmetric top ($I_1 = I_2$) with $I_3 = 2I_1$ has total angular momentum $L$ and spin $n$ about
-its symmetry axis. Show that the angular velocity vector $\boldsymbol{'\{'}\omega{'\}'}$ precesses
-around $\mathbf{'\{'}L{'\}'}$ and find the precession frequency.
+its symmetry axis. Show that the angular velocity vector $\boldsymbol{{'}\omega{}'}$ precesses
+around $\mathbf{{'}L{}'}$ and find the precession frequency.
 
 <details>
 <summary>Solution</summary>
@@ -2044,9 +2035,9 @@ $$\dot{\omega}_1 = -n\omega_2, \quad \dot{\omega}_2 = n\omega_1$$
 These describe circular motion in the $(\omega_1, \omega_2)$ plane with frequency $n$. The angular
 velocity vector precesses around the 3-axis (symmetry axis) with frequency $n$ in the body frame.
 
-In the space frame, $\mathbf{'\{'}L{'\}'}$ is fixed. The symmetry axis precesses around
-$\mathbf{'\{'}L{'\}'}$ with the **body cone** rolling on the **space cone**. The precession
-frequency in the space frame is:
+In the space frame, $\mathbf{{'}L{}'}$ is fixed. The symmetry axis precesses around
+$\mathbf{{'}L{}'}$ with the **body cone** rolling on the **space cone**. The precession frequency in
+the space frame is:
 
 $$\Omega_{\mathrm{space{}} = \frac{L}{I_1} = \frac{\sqrt{I_1^2(\omega_1^2 + \omega_2^2) + I_3^2\omega_3^2}}{I_1}$$
 
@@ -2202,7 +2193,7 @@ For an axisymmetric body ($I_1 = I_2 \neq I_3$):
   to flip periodically.
 
 **Proof of instability for intermediate axis.** Linearise Euler's equations about
-$\boldsymbol{'\{'}\omega{'\}'} = (0, \Omega, 0)$:
+$\boldsymbol{{'}\omega{}'} = (0, \Omega, 0)$:
 
 $$I_1\dot{\omega}_1 = (I_2 - I_3)\Omega\,\omega_3$$
 
@@ -2452,7 +2443,7 @@ At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$Matching our nu
 <summary>Problem 19: Euler's Equations for an Asymmetric Body</summary>
 
 A rigid body with principal moments $I_1 = 1$$I_2 = 2$$I_3 = 3$ (in kg$\cdot$M$^2$) rotates freely
-with initial angular velocity $\boldsymbol{'\{'}\omega{'\}'}(0) = (0.1, 0.5, 1.0)$ rad/s.
+with initial angular velocity $\boldsymbol{{'}\omega{}'}(0) = (0.1, 0.5, 1.0)$ rad/s.
 
 (a) Verify that $T$ and $L^2$ are conserved by computing them at $t = 0$.
 
@@ -2527,10 +2518,10 @@ The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkm
 
 ### 12.1 Lagrangian Field Theory
 
-For a field $\phi(\mathbf{'\{'}r{'\}'}, t)$The Lagrangian density $\mathcal{'\{'}L{'\}'}$ replaces
-the discrete Lagrangian $L = \sum_i T_i - V_i$:
+For a field $\phi(\mathbf{{'}r{}'}, t)$The Lagrangian density $\mathcal{{'}L{}'}$ replaces the
+discrete Lagrangian $L = \sum_i T_i - V_i$:
 
-$$S = \int \mathcal{'\{'}L{'\}'}(\phi, \partial_\mu\phi)\,d^4x, \quad \delta S = 0 \implies \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial\phi} - \partial_\mu\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)} = 0$$
+$$S = \int \mathcal{{'}L{}'}(\phi, \partial_\mu\phi)\,d^4x, \quad \delta S = 0 \implies \frac{\partial\mathcal{{'}L{}'}}{\partial\phi} - \partial_\mu\frac{\partial\mathcal{{'}L{}'}}{\partial(\partial_\mu\phi)} = 0$$
 
 This is the **Euler--Lagrange equation for fields**.
 
@@ -2538,13 +2529,13 @@ This is the **Euler--Lagrange equation for fields**.
 
 A real scalar field of mass $m$:
 
-$$\mathcal{'\{'}L{'\}'} = \frac{1}{2}(\partial_\mu\phi)(\partial^\mu\phi) - \frac{1}{2}m^2\phi^2$$
+$$\mathcal{{'}L{}'} = \frac{1}{2}(\partial_\mu\phi)(\partial^\mu\phi) - \frac{1}{2}m^2\phi^2$$
 
 The equation of motion: $(\Box^2 + m^2)\phi = 0$ where
 $\Box^2 = \partial_\mu\partial^\mu = \nabla^2 - \partial^2/\partial t^2$.
 
-Plane wave solutions: $\phi \propto e^{i(\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'} - \omega t)}$
-with $\omega^2 = k^2 + m^2$ (dispersion relation).
+Plane wave solutions: $\phi \propto e^{i(\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'} - \omega t)}$ with
+$\omega^2 = k^2 + m^2$ (dispersion relation).
 
 ### 12.3 Noether's Theorem for Fields
 
@@ -2552,12 +2543,12 @@ Every continuous symmetry of the action yields a conserved current:
 
 $$\partial_\mu j^\mu = 0 \implies Q = \int j^0\,d^3x = \text{const{}$$
 
-| Symmetry                                    | Conserved Quantity                                                                                       |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Time translation                            | Energy $E = \int\mathcal{'\{'}H{'\}'}\,d^3x$                                                             |
-| Space translation                           | Momentum $\mathbf{'\{'}P{'\}'} = \int\boldsymbol{'\{'}\pi{'\}'}\,d^3x$                                   |
-| Rotation                                    | Angular momentum $\mathbf{'\{'}L{'\}'} = \int\mathbf{'\{'}r{'\}'}\times\boldsymbol{'\{'}\pi{'\}'}\,d^3x$ |
-| Phase rotation ($\phi \to e^{i\alpha}\phi$) | Charge $Q$                                                                                               |
+| Symmetry                                    | Conserved Quantity                                                                           |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Time translation                            | Energy $E = \int\mathcal{{'}H{}'}\,d^3x$                                                     |
+| Space translation                           | Momentum $\mathbf{{'}P{}'} = \int\boldsymbol{{'}\pi{}'}\,d^3x$                               |
+| Rotation                                    | Angular momentum $\mathbf{{'}L{}'} = \int\mathbf{{'}r{}'}\times\boldsymbol{{'}\pi{}'}\,d^3x$ |
+| Phase rotation ($\phi \to e^{i\alpha}\phi$) | Charge $Q$                                                                                   |
 
 For the complex Klein--Gordon field, the conserved current is:
 
@@ -2569,13 +2560,13 @@ With conserved charge $Q = \int(i\phi^*\dot{\phi} - \phi\dot{\phi}^*)\,d^3x$.
 
 The **Hamiltonian density:**
 
-$$\mathcal{'\{'}H{'\}'} = \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial\dot{\phi}}\dot{\phi} - \mathcal{'\{'}L{'\}'} = \frac{1}{2}\dot{\phi}^2 + \frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}m^2\phi^2$$
+$$\mathcal{{'}H{}'} = \frac{\partial\mathcal{{'}L{}'}}{\partial\dot{\phi}}\dot{\phi} - \mathcal{{'}L{}'} = \frac{1}{2}\dot{\phi}^2 + \frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}m^2\phi^2$$
 
 The **canonical energy-momentum tensor** (symmetric, Belinfante):
 
-$$T^{\mu\nu} = \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - g^{\mu\nu}\mathcal{'\{'}L{'\}'}$$
+$$T^{\mu\nu} = \frac{\partial\mathcal{{'}L{}'}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - g^{\mu\nu}\mathcal{{'}L{}'}$$
 
-$T^{00} = \mathcal{'\{'}H{'\}'}$ (energy density), $T^{0i}$ (momentum density), $T^{ij}$ (stress
+$T^{00} = \mathcal{{'}H{}'}$ (energy density), $T^{0i}$ (momentum density), $T^{ij}$ (stress
 tensor).
 
 <details>
@@ -2586,12 +2577,12 @@ $\delta\phi = i\epsilon\phi$ (a global U(1) transformation).
 
 The change in the Lagrangian density:
 
-$$\delta\mathcal{'\{'}L{'\}'} = \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial\phi}\delta\phi + \frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)}\partial_\mu(\delta\phi) = i\epsilon\left[\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial\phi}\phi - \partial_\mu\!\left(\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)}\phi\right)\right]$$
+$$\delta\mathcal{{'}L{}'} = \frac{\partial\mathcal{{'}L{}'}}{\partial\phi}\delta\phi + \frac{\partial\mathcal{{'}L{}'}}{\partial(\partial_\mu\phi)}\partial_\mu(\delta\phi) = i\epsilon\left[\frac{\partial\mathcal{{'}L{}'}}{\partial\phi}\phi - \partial_\mu\!\left(\frac{\partial\mathcal{{'}L{}'}}{\partial(\partial_\mu\phi)}\phi\right)\right]$$
 
 Using the E-L equation
-$\partial\mathcal{'\{'}L{'\}'}/\partial\phi = \partial_\mu(\partial\mathcal{'\{'}L{'\}'}/\partial(\partial_\mu\phi))$:
+$\partial\mathcal{{'}L{}'}/\partial\phi = \partial_\mu(\partial\mathcal{{'}L{}'}/\partial(\partial_\mu\phi))$:
 
-$$\delta\mathcal{'\{'}L{'\}'} = -i\epsilon\,\partial_\mu\!\left(\frac{\partial\mathcal{'\{'}L{'\}'}}{\partial(\partial_\mu\phi)}\phi\right) = \partial_\mu(-\epsilon\,j^\mu)$$
+$$\delta\mathcal{{'}L{}'} = -i\epsilon\,\partial_\mu\!\left(\frac{\partial\mathcal{{'}L{}'}}{\partial(\partial_\mu\phi)}\phi\right) = \partial_\mu(-\epsilon\,j^\mu)$$
 
 Where $j^\mu = i[\phi^*(\partial^\mu\phi) - (\partial^\mu\phi^*)\phi]$ (using the complex
 Klein--Gordon Lagrangian for generality).
@@ -2600,7 +2591,7 @@ By Noether's theorem: $\partial_\mu j^\mu = 0$And the conserved charge:
 
 $$Q = \int j^0\,d^3x = \int i(\phi^*\dot{\phi} - \dot{\phi}^*\phi)\,d^3x$$
 
-For a plane wave $\phi = e^{-i\omega t + i\mathbf{'\{'}k{'\}'}\cdot\mathbf{'\{'}r{'\}'}}$:
+For a plane wave $\phi = e^{-i\omega t + i\mathbf{{'}k{}'}\cdot\mathbf{{'}r{}'}}$:
 $Q \propto 2\omega > 0$ (positive frequency modes have positive charge).
 
 </details>

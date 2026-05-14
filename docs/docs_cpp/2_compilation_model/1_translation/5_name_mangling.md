@@ -11,7 +11,7 @@ categories:
 slug: mangling
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Linkers were originally designed for C and Fortran, languages where function names are unique
 Identifiers. C++, however, introduces features that break this assumption:

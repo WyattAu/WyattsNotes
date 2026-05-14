@@ -11,7 +11,7 @@ categories:
 slug: heap
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 When a C++ program executes `new int` or `std::vector::push_back`It requests "Dynamic Storage
 Duration." Unlike the stack, which is managed by a simple pointer increment/decrement instruction,

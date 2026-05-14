@@ -65,8 +65,6 @@ $$v = f\lambda = 250 \times 1.4 = 350 \mathrm{ m/s}$$
 
 $$\Delta\phi = \frac{2\pi \times 0.35}{1.4} = \frac{\pi}{2} = 90^\circ$$
 
-</details>
-
 ### Worked Example 2
 
 A sound wave in air has a wavelength of $0.686 \mathrm{ m}$. When it enters water, its speed Changes
@@ -82,8 +80,6 @@ $$f = \frac{v_{\mathrm{air}}}{\lambda_{\mathrm{air}}} = \frac{343}{0.686} = 500 
 Frequency remains constant when crossing a boundary. In water:
 
 $$\lambda_{\mathrm{water}} = \frac{v_{\mathrm{water}}}{f} = \frac{1480}{500} = 2.96 \mathrm{ m}$$
-
-</details>
 
 ---
 
@@ -142,8 +138,6 @@ $$\frac{\Delta s}{\lambda} = \frac{0.2}{0.04} = 5$$
 Since the path difference is an integer multiple of $\lambda$Constructive interference occurs at
 `P`.
 
-</details>
-
 ### Worked Example 4
 
 Light of wavelength $600 \mathrm{ nm}$ passes through a double slit with slit separation
@@ -156,8 +150,6 @@ separation between adjacent bright fringes.
 For a double-slit arrangement, the fringe spacing is:
 
 $$\Delta y = \frac{\lambda D}{d} = \frac{600 \times 10^{-9} \times 2}{0.1 \times 10^{-3}} = \frac{1.2 \times 10^{-6}}{1 \times 10^{-4}} = 0.012 \mathrm{ m} = 12 \mathrm{ mm}$$
-
-</details>
 
 ---
 
@@ -202,8 +194,6 @@ $$v = 2Lf_1 = 2 \times 0.65 \times 440 = 572 \mathrm{ m/s}$$
 
 $$f_3 = 3f_1 = 3 \times 440 = 1320 \mathrm{ Hz}$$
 
-</details>
-
 ### Worked Example 6
 
 A pipe is closed at one end and open at the other. The pipe is $0.85 \mathrm{ m}$ long. Find the
@@ -221,8 +211,6 @@ $$f_3 = 3f_1 = 300 \mathrm{ Hz}$$
 $$f_5 = 5f_1 = 500 \mathrm{ Hz}$$
 
 The resonant frequencies are $100 \mathrm{ Hz}$$300 \mathrm{ Hz}$And $500 \mathrm{ Hz}$.
-
-</details>
 
 ---
 
@@ -265,8 +253,6 @@ $$I = \frac{P}{4\pi r^2} = \frac{0.01}{4\pi \times 100} = \frac{0.01}{1257} = 7.
 
 $$\beta = 10\log_{10}\left(\frac{7.96 \times 10^{-6}}{10^{-12}}\right) = 10\log_{10}(7.96 \times 10^6) = 10 \times 6.90 = 69.0 \mathrm{ dB}$$
 
-</details>
-
 ### Worked Example 8
 
 The intensity of a sound at $3 \mathrm{ m}$ from a source is $5 \times 10^{-4} \mathrm{ W/m}^2$.
@@ -287,8 +273,6 @@ $\beta_2 = 10\log_{10}(3.125 \times 10^{-5} / 10^{-12}) = 10\log_{10}(3.125 \tim
 
 The distance quadrupled (factor of 4), so the level decreased by $87.0 - 74.9 = 12.1 \mathrm{ dB}$
 Which matches $10\log_{10}(16) = 12.0 \mathrm{ dB}$.
-
-</details>
 
 ### Ultrasound
 
@@ -331,8 +315,6 @@ A radio station broadcasts at a frequency of $100 \mathrm{ MHz}$. Find the wavel
 
 $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{100 \times 10^6} = 3.0 \mathrm{ m}$$
 
-</details>
-
 ### Worked Example 10
 
 A laser emits light of wavelength $532 \mathrm{ nm}$ (green). Find the frequency and the energy of
@@ -344,8 +326,6 @@ Each photon. (Planck constant $h = 6.63 \times 10^{-34} \mathrm{ J\, s}$)
 $$f = \frac{c}{\lambda} = \frac{3.0 \times 10^8}{532 \times 10^{-9}} = 5.64 \times 10^{14} \mathrm{ Hz}$$
 
 $$E = hf = 6.63 \times 10^{-34} \times 5.64 \times 10^{14} = 3.74 \times 10^{-19} \mathrm{ J}$$
-
-</details>
 
 ---
 
@@ -393,8 +373,6 @@ $$v = f\lambda = 0.4 \times 2.5 = 1.0 \mathrm{ m/s}$$
 
 The time between successive crests equals the period: $T = 1/f = 1/0.4 = 2.5 \mathrm{ s}$
 
-</details>
-
 If you get this wrong, revise: Wave Properties / The Wave Equation
 
 **Problem 2.** Light of wavelength $550 \mathrm{ nm}$ in air enters glass where its speed is
@@ -408,8 +386,6 @@ $$f = \frac{c}{\lambda_{\mathrm{air}}} = \frac{3.0 \times 10^8}{550 \times 10^{-
 Frequency remains constant in glass:
 
 $$\lambda_{\mathrm{glass}} = \frac{v_{\mathrm{glass}}}{f} = \frac{2.0 \times 10^8}{5.45 \times 10^{14}} = 3.67 \times 10^{-7} \mathrm{ m} = 367 \mathrm{ nm}$$
-
-</details>
 
 If you get this wrong, revise: Wave Phenomena / Refraction
 
@@ -429,8 +405,6 @@ $$\Delta y = \frac{\lambda D}{d} = \frac{0.5 \times 5}{3} = 0.833 \mathrm{ m}$$
 
 The spacing between consecutive loud positions is $0.833 \mathrm{ m}$.
 
-</details>
-
 If you get this wrong, revise: Wave Phenomena / Interference
 
 **Problem 4.** A guitar string of length $0.65 \mathrm{ m}$ produces a fundamental note of
@@ -443,8 +417,6 @@ $0.55 \mathrm{ m}$What is the new fundamental frequency?
 Since $f_1 = v/(2L)$ and $v$ is constant, $f \propto 1/L$:
 
 $$f_{\mathrm{new}} = f_1 \times \frac{L_1}{L_{\mathrm{new}}} = 330 \times \frac{0.65}{0.55} = 330 \times 1.182 = 390 \mathrm{ Hz}$$
-
-</details>
 
 If you get this wrong, revise: Standing Waves / String Fixed at Both Ends
 
@@ -464,8 +436,6 @@ $$f_3 = 3f_1 = 425.0 \mathrm{ Hz}$$
 
 $$f_4 = 4f_1 = 566.7 \mathrm{ Hz}$$
 
-</details>
-
 If you get this wrong, revise: Standing Waves
 
 **Problem 6.** A pipe closed at one end has a fundamental frequency of $85 \mathrm{ Hz}$. Find The
@@ -481,8 +451,6 @@ For a pipe closed at one end, the next resonance after $f_1$ is the **third** ha
 Harmonics exist):
 
 $$f_3 = 3f_1 = 3 \times 85 = 255 \mathrm{ Hz}$$
-
-</details>
 
 If you get this wrong, revise: Standing Waves / Pipe Closed at One End
 
@@ -501,8 +469,6 @@ $I_2 = I_1 \times (5/20)^2 = 2 \times 10^{-4} \times 1/16 = 1.25 \times 10^{-5} 
 
 $$\beta_2 = 10\log_{10}(1.25 \times 10^{-5}/10^{-12}) = 10\log_{10}(1.25 \times 10^7) = 10 \times 7.097 = 71.0 \mathrm{ dB}$$
 
-</details>
-
 If you get this wrong, revise: Sound Waves / Intensity and Loudness
 
 **Problem 8.** Two sound sources each produce an intensity level of $80 \mathrm{ dB}$ at a point. If
@@ -519,8 +485,6 @@ $$\beta_{\mathrm{total}} = 10\log_{10}(2 \times 10^8) = 10\log_{10}(2) + 10\log_
 
 Doubling the intensity increases the level by $3 \mathrm{ dB}$ (not $160 \mathrm{ dB}$).
 
-</details>
-
 If you get this wrong, revise: Sound Waves / Intensity and Loudness
 
 **Problem 9.** A microwave oven operates at a frequency of $2.45 \mathrm{ GHz}$. Find the
@@ -534,8 +498,6 @@ $$\lambda = \frac{c}{f} = \frac{3.0 \times 10^8}{2.45 \times 10^9} = 0.122 \math
 Microwaves are effective because water molecules have a resonant frequency close to
 $2.45 \mathrm{ GHz}$. The microwaves cause water molecules to oscillate, and the molecular friction
 Generates thermal energy throughout the food.
-
-</details>
 
 If you get this wrong, revise: Electromagnetic Spectrum
 
@@ -552,8 +514,6 @@ $$f' = f \times \frac{v}{v - v_s} = 500 \times \frac{340}{340 - 30} = 500 \times
 
 The apparent frequency is higher than the actual frequency because the source is moving towards The
 observer.
-
-</details>
 
 If you get this wrong, revise: Sound Waves
 
@@ -756,8 +716,6 @@ Using the general formula with source approaching, observer receding:
 
 $$f' = f \cdot \frac{v - v_o}{v - v_s} = 800 \times \frac{340 - 30}{340 - 40} = 800 \times \frac{310}{300} = 800 \times 1.033 = 827 \mathrm{ Hz}$$
 
-</details>
-
 ### Worked Example 12
 
 Light of wavelength $550 \mathrm{ nm}$ is incident normally on a diffraction grating with
@@ -788,8 +746,6 @@ $$n_{\max} = \frac{d}{\lambda} = \frac{2.0 \times 10^{-6}}{550 \times 10^{-9}} =
 Since $n$ must be an integer, the maximum number of orders is **3** (on each side, plus the Central
 maximum).
 
-</details>
-
 ### Worked Example 13
 
 A stationary source emits sound of frequency $440 \mathrm{ Hz}$. An observer moves directly Towards
@@ -808,8 +764,6 @@ $f' = f \cdot \frac{v - v_o}{v} = 440 \times \frac{340 - 15}{340} = 440 \times 0
 The wavelength in the medium is unchanged: $\lambda = 340/440 = 0.773 \mathrm{ m}$. The Observer
 does not change the wavelength in the medium; only the perceived frequency changes Because the
 observer encounters wavefronts at a different rate.
-
-</details>
 
 ---
 
@@ -862,8 +816,6 @@ $$\lambda = (600 \pm 20) \mathrm{ nm}$$
 At $\Delta s = 0$), but higher-order fringes are coloured with blue fringes closer to the centre And
 red fringes further out. The pattern becomes blurred after a few orders because the fringes Overlap.
 
-</details>
-
 ### Question 2 (DSE Structured)
 
 A stationary observer stands near a road. A car sounding a horn of frequency $500 \mathrm{ Hz}$
@@ -899,8 +851,6 @@ Along the line joining the source and observer) changes sign abruptly as the car
 passing, the radial velocity is $+v_s$ (approaching); just after, it is $-v_s$ (receding). The
 Doppler shift depends on the radial velocity, not the total velocity, so the frequency drops Sharply
 at the moment of passing.
-
-</details>
 
 ### Question 3 (DSE Structured)
 
@@ -966,8 +916,6 @@ Stiffness effects in the string).
 2. **The string may not be perfectly uniform** in mass per unit length. Improvement: use a uniform
    steel wire and measure $\mu$ precisely by weighing a known length.
 
-</details>
-
 ### Question 4 (DSE Structured)
 
 (a) Distinguish between transverse and longitudinal waves, giving one example of each.
@@ -1005,8 +953,6 @@ gap. Sound waves have wavelengths of order centimetres to metres (similar to bui
 so they diffract readily around buildings. Light waves have wavelengths of order
 $10^{-7} \mathrm{ m}$Which is much smaller than building dimensions, so diffraction of light Around
 buildings is negligible.
-
-</details>
 
 ### Question 5 (DSE Structured)
 
@@ -1090,14 +1036,13 @@ This matches the accepted value and shows that the speed of sound in air increas
 A student stands $85 \mathrm{ m}$ from a large wall and claps her hands. She hears the echo
 $0.50 \mathrm{ s}$ after clapping. Calculate the speed of sound.
 
-<details>
+### Details
+
 <summary>Solution</summary>
 
 The sound travels to the wall and back, so the total distance is $2 \times 85 = 170 \mathrm{ m}$.
 
 $$v = \frac{d}{t} = \frac{170}{0.50} = 340 \mathrm{ m/s}$$
-
-</details>
 
 ### Extended Worked Example: Beat Frequency
 
@@ -1114,7 +1059,5 @@ $$f_{\mathrm{beat}} = |f_1 - f_2| = |256 - 260| = 4 \mathrm{ Hz}$$
 The observer hears a sound that waxes and wanes in loudness 4 times per second. Beats occur Because
 the two sound waves periodically come into and out of phase, producing alternating Constructive and
 destructive interference.
-
-</details>
 
 </details>

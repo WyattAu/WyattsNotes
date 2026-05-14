@@ -12,10 +12,10 @@ slug: complex-numbers-advanced
 
 A complex number $z$ is written:
 
-$$z = a + bi, \quad a, b \in \mathbb{'\{'}R{'\}'}$$
+$$z = a + bi, \quad a, b \in \mathbb{{'}R{}'}$$
 
 Where $a = \mathrm{Re}(z)$ is the real part and $b = \mathrm{Im}(z)$ is the imaginary part. The set
-Of all complex numbers is $\mathbb{'\{'}C{'\}'}$.
+Of all complex numbers is $\mathbb{{'}C{}'}$.
 
 ### Complex Arithmetic
 
@@ -370,8 +370,7 @@ $[\arctan x]_{-\infty}^{\infty} = \dfrac{\pi}{2} - \left(-\dfrac{\pi}{2}\right) 
 ### The Fundamental Theorem of Algebra
 
 Every polynomial $p(z) = a_n z^n + a_{n-1}z^{n-1} + \cdots + a_0$ of degree $n \ge 1$ with complex
-Coefficients has at least one root in $\mathbb{'\{'}C{'\}'}$. Equivalently, it factorises
-completely:
+Coefficients has at least one root in $\mathbb{{'}C{}'}$. Equivalently, it factorises completely:
 
 $$p(z) = a_n(z - z_1)(z - z_2)\cdots(z - z_n)$$
 

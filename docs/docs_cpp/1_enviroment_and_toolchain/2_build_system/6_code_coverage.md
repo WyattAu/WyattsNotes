@@ -11,7 +11,7 @@ categories:
 slug: code-coverage
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 Code coverage is a metric used to calculate the percentage of source code executed during the
 Testing phase. In high-reliability C++ systems, coverage analysis is essential for identifying

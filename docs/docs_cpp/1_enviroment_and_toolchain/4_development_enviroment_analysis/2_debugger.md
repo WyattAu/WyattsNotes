@@ -11,7 +11,7 @@ categories:
 slug: debugger
 ---
 
-Import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 A compiled C++ binary consists of machine code instructions. To map an Instruction Pointer (IP)
 Address back to a specific line of C++ source code, variable name, or stack frame, the debugger

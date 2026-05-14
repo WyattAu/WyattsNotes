@@ -307,7 +307,7 @@ $-1 \lt x \lt 4$
 
 ### Definition
 
-A complex number is of the form $z = a + bi$ where $a, b \in \mathbb{'\{'}R{'\}'}$ and $i^2 = -1$.
+A complex number is of the form $z = a + bi$ where $a, b \in \mathbb{{'}R{}'}$ and $i^2 = -1$.
 
 - $a$ is the **real part** ($\operatorname{Re}(z)$)
 - $b$ is the **imaginary part** ($\operatorname{Im}(z)$)
@@ -375,7 +375,7 @@ $$
 
 ### De Moivre's Theorem (HL)
 
-For $z = r(\cos\theta + i\sin\theta)$ and $n \in \mathbb{'\{'}Z{'\}'}$:
+For $z = r(\cos\theta + i\sin\theta)$ and $n \in \mathbb{{'}Z{}'}$:
 
 $$
 Z^n = r^n(\cos n\theta + i\sin n\theta)

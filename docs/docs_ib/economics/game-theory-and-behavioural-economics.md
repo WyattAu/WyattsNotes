@@ -333,8 +333,6 @@ The only Nash equilibrium is (Ad, Ad) with payoffs $(4, 4)$. This is a prisoner'
 Would be better off at (No Ad, No Ad) with $(6, 6)$But neither has the incentive to unilaterally
 Stop advertising.
 
-</details>
-
 <details>
 <summary>Problem 2: Mixed Strategy Nash Equilibrium</summary>
 
@@ -367,8 +365,6 @@ $$q = 0.5$$
 The mixed strategy Nash equilibrium is: Player 1 plays Up with probability $0.6$ and Down with
 Probability $0.4$; Player 2 plays Left with probability $0.5$ and Right with probability $0.5$.
 
-</details>
-
 <details>
 <summary>Problem 3: Behavioural Biases in Decision-Making</summary>
 
@@ -391,8 +387,6 @@ Underlying probabilities are identical.
 Loss aversion also plays a role: the word "losing" activates a stronger emotional response than
 "gaining," making Product B seem less attractive despite its mathematical equivalence.
 
-</details>
-
 <details>
 <summary>Problem 4: Present Bias and Saving</summary>
 
@@ -411,8 +405,6 @@ With exponential discounting at a constant rate, the preference should be consis
 discount rate is Not constant — it is much higher for immediate trade-offs than for future ones.
 
 This has important implications for savings behaviour, health decisions, and commitment devices.
-
-</details>
 
 <details>
 <summary>Problem 5: Nudge Theory Application</summary>
@@ -439,8 +431,7 @@ Than actively changing it.
 - _Cultural sensitivity_: attitudes toward organ donation vary across cultures and religious groups;
   a one-size-fits-all default may not be appropriate.
 - _Manipulation vs. Guidance_: the line between a helpful nudge and manipulation depends on whether
-The default serves the individual's likely preferences.
-</details>
+  The default serves the individual's likely preferences.
 
 ## Advanced Game Theory Applications (HL Extension)
 
@@ -698,8 +689,6 @@ SPNE: (Enter, Accommodate) with payoffs (5, 8).
 4. **Sunk cost commitment**: making irreversible investments that lower the cost of fighting (e.g.,
    building a proprietary logistics network optimised for aggressive pricing)
 
-</details>
-
 <details>
 <summary>Problem 7: Repeated Game and Collusion Sustainability</summary>
 
@@ -750,8 +739,6 @@ satisfied. Collusion is sustainable as long as firms expect the market to persis
 Overall, in standard theory, more frequent interactions make collusion easier to sustain because The
 punishment comes sooner (discounting matters less for near-future punishments). However,
 Empirically, the effect depends on the specific market structure and the ease of monitoring.
-
-</details>
 
 <details>
 <summary>Problem 8: Behavioural Economics in Policy Design</summary>
@@ -810,8 +797,6 @@ Effectiveness and potential drawbacks.
   reaching a target (e.g., 10%), again relying on inertia
 - Use lifecycle investment funds as the default (automatically shifting from equities to bonds as
   retirement approaches)
-
-</details>
 
 ## Auction Theory and Mechanism Design (HL Extension)
 
@@ -1034,8 +1019,6 @@ Your expected surplus $= 800 - 600 = \$200$.
 
 Expected surplus unconditional: $0.512 \times 200 = \$102.40$.
 
-</details>
-
 <details>
 <summary>Problem 10: Public Goods Game and Policy</summary>
 
@@ -1243,7 +1226,8 @@ achieve a desired outcome, anticipating how rational agents will respond.
 
 ## Worked Examples: Advanced Game Theory (HL Extension)
 
-<details>
+### Details
+
 <summary>Problem 11: Bayesian Nash Equilibrium</summary>
 
 Two firms are bidding for a government contract. Firm 1's cost of completing the project is Either
@@ -1305,8 +1289,6 @@ Firm 2 earns negative expected profit because it faces the risk of winning when 
 low cost. This illustrates the **winner's curse**: in common-value auctions, winning is bad News
 about the winner's bid relative to competitors' costs.
 
-</details>
-
 <details>
 <summary>Problem 12: Signalling Equilibrium</summary>
 
@@ -1344,8 +1326,6 @@ High-productivity workers would deviate: their education cost ($4e$) is lower th
 ($40 - 32.5 = 7.5$), so they would obtain more education to separate themselves.
 
 Therefore, the only stable equilibrium is the separating one.
-
-</details>
 
 <details>
 <summary>Problem 13: Prospect Theory Calculations</summary>
@@ -1417,8 +1397,6 @@ expected Utility in this case. However, the intuition differs:
 
 If the reference point were lower (e.g., 40), the analysis would shift significantly toward Strategy
 A, as both strategies would involve only gains.
-
-</details>
 
 ## Common Pitfalls: Advanced Game Theory (Comprehensive)
 
@@ -1783,13 +1761,13 @@ In evolutionary game theory, strategies are not chosen rationally but spread thr
 Based on their relative fitness (payoff). The **replicator equation** describes how the Frequency of
 a strategy changes over time:
 
-$$\frac{dx_i}{dt} = x_i \left[ f_i(\mathbf{'\{'}x{'\}'}) - \bar{f}(\mathbf{'\{'}x{'\}'}) \right]$$
+$$\frac{dx_i}{dt} = x_i \left[ f_i(\mathbf{{'}x{}'}) - \bar{f}(\mathbf{{'}x{}'}) \right]$$
 
 Where:
 
 - $x_i$ = frequency of strategy $i$ in the population
-- $f_i(\mathbf{'\{'}x{'\}'})$ = fitness (expected payoff) of strategy $i$
-- $\bar{f}(\mathbf{'\{'}x{'\}'})$ = average fitness of the population
+- $f_i(\mathbf{{'}x{}'})$ = fitness (expected payoff) of strategy $i$
+- $\bar{f}(\mathbf{{'}x{}'})$ = average fitness of the population
 
 Strategies with above-average fitness grow; those with below-average fitness shrink.
 
@@ -2355,8 +2333,6 @@ _Limitations:_
 5. **Non-cooperative behaviour:** countries may use threats, deadlines, and other strategic tactics
    not captured by the cooperative Nash framework
 
-</details>
-
 <details>
 <summary>Question 7: Information Cascades and Financial Markets (10 marks)</summary>
 
@@ -2732,7 +2708,6 @@ equilibrium (no run) coexists with the inefficient equilibrium (run).
 **Policy solution:** deposit insurance (FDIC in the US) eliminates the incentive to run by
 Guaranteeing deposits. This changes the payoff structure, eliminating the run equilibrium.
 
-</details>
 </details>
 
 ## Summary
