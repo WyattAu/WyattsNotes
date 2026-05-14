@@ -1,7 +1,8 @@
 ---
 title: Atomic and Nuclear Physics
-description: "Rigorous IB physics notes covering Atomic and Nuclear Physics. Includes definitions, derivations, worked examples, and exam-style problems."
-  equivalence.
+description:
+  'Rigorous IB physics notes covering Atomic and Nuclear Physics. Includes definitions, derivations,
+  worked examples, and exam-style problems. equivalence.'
 slug: atomic-physics
 ---
 
@@ -42,13 +43,13 @@ $$
 E_n = -\frac{13.6\mathrm{ eV}}{n^2}
 $$
 
-| Level | $n$ | Energy (eV) |
+| Level          | $n$      | Energy (eV) |
 | -------------- | -------- | ----------- |
-| Ground state | 1 | $-13.6$ |
-| First excited | 2 | $-3.40$ |
-| Second excited | 3 | $-1.51$ |
-| Third excited | 4 | $-0.85$ |
-| Ionisation | $\infty$ | $0$ |
+| Ground state   | 1        | $-13.6$     |
+| First excited  | 2        | $-3.40$     |
+| Second excited | 3        | $-1.51$     |
+| Third excited  | 4        | $-0.85$     |
+| Ionisation     | $\infty$ | $0$         |
 
 ### Photon Emission and Absorption
 
@@ -82,18 +83,18 @@ This is the red line in the Balmer series (visible spectrum of hydrogen).
 ### Emission and Absorption Spectra
 
 - **Emission spectrum**: bright lines on a dark background (photons emitted at specific
- wavelengths).
+  wavelengths).
 - **Absorption spectrum**: dark lines on a continuous spectrum (photons absorbed at specific
- wavelengths).
+  wavelengths).
 - Each element has a unique spectrum — like a fingerprint.
 
 ### Spectral Series of Hydrogen
 
-| Series | Transitions to | Region |
+| Series  | Transitions to | Region      |
 | ------- | -------------- | ----------- |
-| Lyman | $n = 1$ | Ultraviolet |
-| Balmer | $n = 2$ | Visible |
-| Paschen | $n = 3$ | Infrared |
+| Lyman   | $n = 1$        | Ultraviolet |
+| Balmer  | $n = 2$        | Visible     |
+| Paschen | $n = 3$        | Infrared    |
 
 ---
 
@@ -124,17 +125,17 @@ For example: ${}^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
 
 Isotopes of an element have the same number of protons but different numbers of neutrons.
 
-| Isotope | Protons | Neutrons |
+| Isotope                          | Protons | Neutrons |
 | -------------------------------- | ------- | -------- |
-| ${}^{1}_1\mathrm{H}$ (protium) | 1 | 0 |
-| ${}^{2}_1\mathrm{H}$ (deuterium) | 1 | 1 |
-| ${}^{3}_1\mathrm{H}$ (tritium) | 1 | 2 |
+| ${}^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
+| ${}^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
+| ${}^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
 
 ### Nuclear Forces
 
 - **Strong nuclear force**: short-range attractive force between nucleons. Overcomes electrostatic
- repulsion between protons. Range $\approx 1$--$3\mathrm{ fm}$
- ($1\mathrm{ fm} = 10^{-15}\mathrm{ m}$).
+  repulsion between protons. Range $\approx 1$--$3\mathrm{ fm}$
+  ($1\mathrm{ fm} = 10^{-15}\mathrm{ m}$).
 - **Electrostatic (Coulomb) force**: repulsive between protons, long range.
 
 ### Nuclear Radius
@@ -161,14 +162,14 @@ $$
 
 ### Types of Radiation
 
-| Property | Alpha ($\alpha$) | Beta ($\beta^-$) | Gamma ($\gamma$) |
+| Property       | Alpha ($\alpha$)            | Beta ($\beta^-$)      | Gamma ($\gamma$) |
 | -------------- | --------------------------- | --------------------- | ---------------- |
-| Particle | ${}^4_2\mathrm{He}$ nucleus | Electron ($e^-$) | Photon |
-| Charge | $+2e$ | $-e$ | $0$ |
-| Mass | $4\mathrm{ u}$ | $\approx 0$ | $0$ |
-| Speed | $\approx 0.05c$ | Up to $\approx 0.99c$ | $c$ |
-| Penetration | Paper | Aluminium (few mm) | Lead (few cm) |
-| Ionising power | High | Medium | Low |
+| Particle       | ${}^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
+| Charge         | $+2e$                       | $-e$                  | $0$              |
+| Mass           | $4\mathrm{ u}$              | $\approx 0$           | $0$              |
+| Speed          | $\approx 0.05c$             | Up to $\approx 0.99c$ | $c$              |
+| Penetration    | Paper                       | Aluminium (few mm)    | Lead (few cm)    |
+| Ionising power | High                        | Medium                | Low              |
 
 ### Alpha Decay
 
@@ -337,12 +338,12 @@ The binding energy per nucleon curve shows:
 - Heavy nuclei (beyond Fe-56): fission increases binding energy per nucleon (releases energy).
 - Iron-56 has the highest binding energy per nucleon (most stable nucleus).
 
-| Nucleus | Binding Energy per Nucleon (MeV) |
+| Nucleus                   | Binding Energy per Nucleon (MeV) |
 | ------------------------- | -------------------------------- |
-| ${}^2_1\mathrm{H}$ | 1.11 |
-| ${}^4_2\mathrm{He}$ | 7.07 |
-| ${}^{56}_{26}\mathrm{Fe}$ | 8.79 |
-| ${}^{235}_{92}\mathrm{U}$ | 7.59 |
+| ${}^2_1\mathrm{H}$        | 1.11                             |
+| ${}^4_2\mathrm{He}$       | 7.07                             |
+| ${}^{56}_{26}\mathrm{Fe}$ | 8.79                             |
+| ${}^{235}_{92}\mathrm{U}$ | 7.59                             |
 
 ### Mass Defect and Binding Energy
 
@@ -362,8 +363,7 @@ $$
 :::info[Example]
 
 Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{ u}$
-$m_n = 1.00867\mathrm{ u}$$m_{\alpha} = 4.00151\mathrm{ u}$
-$1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
+$m_n = 1.00867\mathrm{ u}$$m_{\alpha} = 4.00151\mathrm{ u}$ $1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
 
 $$
 \Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{ u}
@@ -608,24 +608,24 @@ $$
 
 ## Summary
 
-| Concept | Formula |
+| Concept               | Formula                                |
 | --------------------- | -------------------------------------- |
-| Bohr energy levels | $E_n = \dfrac{-13.6\mathrm{ eV}}{n^2}$ |
-| Photon energy | $E = hf = \dfrac{hc}{\lambda}$ |
-| Half-life | $t_{1/2} = \dfrac{\ln 2}{\lambda}$ |
-| Decay law | $N = N_0 e^{-\lambda t}$ |
-| Activity | $A = \lambda N$ |
-| Mass-energy | $E = mc^2$ |
-| Binding energy | $E_b = \Delta m \cdot c^2$ |
-| Photoelectric effect | $E_{k,\max} = hf - \phi$ |
-| de Broglie wavelength | $\lambda = \dfrac{h}{mv}$ |
-| Nuclear radius | $R = R_0 A^{1/3}$ |
+| Bohr energy levels    | $E_n = \dfrac{-13.6\mathrm{ eV}}{n^2}$ |
+| Photon energy         | $E = hf = \dfrac{hc}{\lambda}$         |
+| Half-life             | $t_{1/2} = \dfrac{\ln 2}{\lambda}$     |
+| Decay law             | $N = N_0 e^{-\lambda t}$               |
+| Activity              | $A = \lambda N$                        |
+| Mass-energy           | $E = mc^2$                             |
+| Binding energy        | $E_b = \Delta m \cdot c^2$             |
+| Photoelectric effect  | $E_{k,\max} = hf - \phi$               |
+| de Broglie wavelength | $\lambda = \dfrac{h}{mv}$              |
+| Nuclear radius        | $R = R_0 A^{1/3}$                      |
 
 :::tip[Exam Strategy]
 
 For nuclear physics, always balance your nuclear equations (conservation of $A$ and $Z$). For
-Photoelectric effect problems, check units carefully (eV vs J). For decay calculations, 
-Identify the half-life and number of half-lives elapsed.
+Photoelectric effect problems, check units carefully (eV vs J). For decay calculations, Identify the
+half-life and number of half-lives elapsed.
 
 :::
 
@@ -640,17 +640,17 @@ Energy level diagrams show the allowed energies of electrons in an atom:
 - The ground state is the lowest energy level ($n = 1$).
 - Excited states are higher energy levels ($n = 2, 3, \ldots$).
 - The ionisation energy is the energy needed to remove an electron from the ground state to
- infinity.
+  infinity.
 - Transition lines represent photon absorption (upward) or emission (downward).
 
 ### Absorption Spectrum vs Emission Spectrum
 
-| Feature | Emission | Absorption |
+| Feature      | Emission                              | Absorption                              |
 | ------------ | ------------------------------------- | --------------------------------------- |
-| How produced | Hot gas emits light | Cool gas absorbs from continuous source |
-| Appearance | Bright lines on dark background | Dark lines on continuous spectrum |
-| Information | Wavelengths emitted by the element | Wavelengths absorbed by the element |
-| Use | Identifying elements in stars/nebulae | Identifying elements in atmospheres |
+| How produced | Hot gas emits light                   | Cool gas absorbs from continuous source |
+| Appearance   | Bright lines on dark background       | Dark lines on continuous spectrum       |
+| Information  | Wavelengths emitted by the element    | Wavelengths absorbed by the element     |
+| Use          | Identifying elements in stars/nebulae | Identifying elements in atmospheres     |
 
 ### Series Limits
 
@@ -671,7 +671,7 @@ The binding energy per nucleon curve reveals:
 - **Iron-56**: Peak of the curve, most stable nucleus.
 - **Heavy nuclei** (A $\gt 56$): Can release energy through fission (splitting).
 - **Very light nuclei** (A $\lt 4$): Have very low binding energy per nucleon, large energy release
- in fusion.
+  in fusion.
 
 ### Energy from Fission
 
@@ -680,8 +680,8 @@ The binding energy per nucleon curve reveals:
 Calculate the energy released when one nucleus of U-235 fissions into Ba-141 and Kr-92 with 3
 Neutrons.
 
-Masses: U-235 = $235.0439\mathrm{ u}$Ba-141 = $140.9139\mathrm{ u}$Kr-92 = $91.8970\mathrm{ u}$
-N = $1.00867\mathrm{ u}$.
+Masses: U-235 = $235.0439\mathrm{ u}$Ba-141 = $140.9139\mathrm{ u}$Kr-92 = $91.8970\mathrm{ u}$ N =
+$1.00867\mathrm{ u}$.
 
 Reactants: $235.0439 + 1.00867 = 236.0526\mathrm{ u}$
 
@@ -705,11 +705,11 @@ Key components:
 
 ### Nuclear Waste
 
-| Type | Half-life | Handling |
+| Type                               | Half-life          | Handling                      |
 | ---------------------------------- | ------------------ | ----------------------------- |
-| High-level (fission products) | Years to centuries | Deep geological disposal |
-| Transuranic waste | Thousands of years | Deep geological disposal |
-| Low-level (contaminated materials) | Days to years | Compaction and shallow burial |
+| High-level (fission products)      | Years to centuries | Deep geological disposal      |
+| Transuranic waste                  | Thousands of years | Deep geological disposal      |
+| Low-level (contaminated materials) | Days to years      | Compaction and shallow burial |
 
 ---
 
@@ -720,10 +720,10 @@ Key components:
 Both matter and electromagnetic radiation exhibit wave-like and particle-like properties depending
 On the experiment.
 
-| Phenomenon | Wave Nature | Particle Nature |
+| Phenomenon | Wave Nature               | Particle Nature                          |
 | ---------- | ------------------------- | ---------------------------------------- |
-| Light | Diffraction, interference | Photoelectric effect, Compton scattering |
-| Electrons | Electron diffraction | Quantised energy levels |
+| Light      | Diffraction, interference | Photoelectric effect, Compton scattering |
+| Electrons  | Electron diffraction      | Quantised energy levels                  |
 
 ### Heisenberg Uncertainty Principle
 
@@ -813,14 +813,15 @@ This wavelength is comparable to atomic spacing, suitable for electron diffracti
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Atomic and Nuclear Physics**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-atomic-nuclear) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Atomic and Nuclear Physics**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-atomic-nuclear) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Atomic and Nuclear Physics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Atomic and
+Nuclear Physics with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

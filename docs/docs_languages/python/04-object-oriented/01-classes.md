@@ -1,6 +1,8 @@
 ---
 title: Classes and Inheritance
-description: "Classes and Inheritance — Class Definition; Output when the module loads: "Class body is executing right now"; `__init__` and `self`."
+description:
+  'Classes and Inheritance — Class Definition; Output when the module loads: "Class body is
+  executing right now"; `__init__` and `self`.'
 date: 2025-06-04T13:00:00.000Z
 tags:
   - Python
@@ -8,6 +10,7 @@ categories:
   - Python
 slug: classes
 ---
+
 ## Class Definition
 
 In Python, a class is created with the `class` keyword. A class is itself an object -- an instance
@@ -31,9 +34,9 @@ The `class` statement does three things:
 
 1. Creates a new namespace (a dictionary) for the class body.
 2. Executes every top-level statement in that namespace -- assignments create class attributes,
- `def` statements create class methods, and even arbitrary expressions are evaluated.
+   `def` statements create class methods, and even arbitrary expressions are evaluated.
 3. Calls `type(name, bases, namespace)` to construct the class object, binding it to the class name
- in the enclosing scope.
+   in the enclosing scope.
 
 ```python
 class Tracer:
@@ -69,26 +72,26 @@ class Demo:
 ### Why `self` Instead of Implicit `this`
 
 Python requires the instance to be passed explicitly as the first parameter of instance methods. The
-Parameter is conventionally named `self`Though the language does not enforce this name -- any
-Valid identifier works.
+Parameter is conventionally named `self`Though the language does not enforce this name -- any Valid
+identifier works.
 
 This is a deliberate design choice with several consequences:
 
 1. **Explicit is better than implicit.** If `self` were implicit, a method's free variables would
- include an implicitly-bound name that shadows any outer variable with the same name. By making
- `self` an explicit parameter, the binding is always visible at the call site (even if the caller
- does not write it -- the interpreter inserts it automatically when using dotted access).
+   include an implicitly-bound name that shadows any outer variable with the same name. By making
+   `self` an explicit parameter, the binding is always visible at the call site (even if the caller
+   does not write it -- the interpreter inserts it automatically when using dotted access).
 
 2. **Methods are just functions.** A method and a standalone function share the exact same calling
- convention. The only difference is that `obj.method(args)` is syntactic sugar for
- `type(obj).method(obj, args)`. This means you can pass methods as first-class objects, assign
- functions to class attributes to turn them into methods, and unbind methods from instances -- all
- without any special machinery.
+   convention. The only difference is that `obj.method(args)` is syntactic sugar for
+   `type(obj).method(obj, args)`. This means you can pass methods as first-class objects, assign
+   functions to class attributes to turn them into methods, and unbind methods from instances -- all
+   without any special machinery.
 
 3. **Uniformity with `cls`.** Class methods explicitly receive the class as their first parameter.
- Static methods receive nothing. All three cases follow the same rule: the first parameter is
- whatever the descriptor protocol provides. An implicit `this` would require a special case for
- every binding type.
+   Static methods receive nothing. All three cases follow the same rule: the first parameter is
+   whatever the descriptor protocol provides. An implicit `this` would require a special case for
+   every binding type.
 
 ```python
 def standalone_func(self, x, y):
@@ -256,8 +259,8 @@ class Temperature:
 ```
 
 Under the hood, `@property` creates a **descriptor** (discussed later) that intercepts attribute
-Access on the class. The property object has `fget``fset`And `fdel` attributes corresponding to
-The getter, setter, and deleter functions.
+Access on the class. The property object has `fget``fset`And `fdel` attributes corresponding to The
+getter, setter, and deleter functions.
 
 ```python
 t = Temperature(100)
@@ -350,19 +353,19 @@ Python 2.3 adopted **C3 linearization**, an algorithm originally developed for D
 Three constraints:
 
 1. **Monotonicity:** If class A appears before class B in the linearization of C, then A appears
- before B in the linearization of every subclass of C.
+   before B in the linearization of every subclass of C.
 2. **Consistent local precedence order:** If a class directly inherits from both B and C (in that
- order), then B appears before C in the linearization.
+   order), then B appears before C in the linearization.
 3. **Extended precedence graph (EPG) consistency:** The linearization must be consistent with the
- "is-a" relationships implied by the inheritance graph.
+   "is-a" relationships implied by the inheritance graph.
 
 The algorithm works as follows. Given a class C with direct bases B1, B2, ..., Bn:
 
 1. Start with the list L = [C] + merge(L(B1), L(B2), ..., L(Bn), [B1, B2, ..., Bn]).
 2. The `merge` operation selects the first head of each list that is not in the tail of any other
- list, appends it to the result, and removes it from all lists.
+   list, appends it to the result, and removes it from all lists.
 3. If no valid head exists, the inheritance graph is inconsistent and Python refuses to create the
- class.
+   class.
 
 ```python
 # This raises TypeError: Cannot create a consistent method resolution order (MRO)
@@ -486,8 +489,8 @@ This ordering ensures that mixin methods can override or wrap the primary class'
 :::danger
 
 Avoid the "diamond of death" pattern where two mixins both call `super().__init__()` but the primary
-Class does not account for cooperative initialization. If you use mixins with `__init__`Every
-Class in the hierarchy must use `super().__init__()` and accept `*args, **kwargs` to pass through
+Class does not account for cooperative initialization. If you use mixins with `__init__`Every Class
+in the hierarchy must use `super().__init__()` and accept `*args, **kwargs` to pass through
 Arguments it does not need.
 
 :::
@@ -739,7 +742,7 @@ class Order:
 The `field()` function provides fine-grained control:
 
 - `default_factory`: a zero-argument callable that produces the default value. **Always** use this
- for mutable defaults.
+  for mutable defaults.
 - `repr=False`: exclude from the generated `__repr__`.
 - `compare=False`: exclude from `__eq__` and `__hash__`.
 - `init=False`: do not include in the generated `__init__`.
@@ -763,25 +766,25 @@ Automatically generates `__hash__`. Frozen dataclasses are suitable as dict keys
 
 Python has three overlapping mechanisms for data-holding classes. Each exists for different reasons:
 
-| Feature | `namedtuple` | `dataclass` | `attrs` (third-party) |
+| Feature     | `namedtuple` | `dataclass`        | `attrs` (third-party) |
 | ----------- | ------------ | ------------------ | --------------------- |
-| Mutable | No | Yes (configurable) | Yes (configurable) |
-| Typing | Optional | Built-in | Built-in |
-| Inheritance | Limited | Full | Full |
-| Validation | None | Manual | Built-in |
-| Performance | Excellent | Good | Good |
-| Stdlib | Yes | Yes (3.7+) | No |
+| Mutable     | No           | Yes (configurable) | Yes (configurable)    |
+| Typing      | Optional     | Built-in           | Built-in              |
+| Inheritance | Limited      | Full               | Full                  |
+| Validation  | None         | Manual             | Built-in              |
+| Performance | Excellent    | Good               | Good                  |
+| Stdlib      | Yes          | Yes (3.7+)         | No                    |
 
 - **`namedtuple`** is the right choice when you need a lightweight, immutable, memory-efficient
- container with positional access. It is a tuple subclass, so it is compatible with APIs that
- expect tuples. Its limitation is that you cannot add methods meaningfully or use inheritance
- beyond the trivial case.
+  container with positional access. It is a tuple subclass, so it is compatible with APIs that
+  expect tuples. Its limitation is that you cannot add methods meaningfully or use inheritance
+  beyond the trivial case.
 - **`dataclass`** is the right choice for mutable or immutable data containers that need methods,
- validation in `__post_init__`Inheritance, or `__slots__`. It integrates with the type annotation
- system and generates methods at class definition time.
+  validation in `__post_init__`Inheritance, or `__slots__`. It integrates with the type annotation
+  system and generates methods at class definition time.
 - **`attrs`** predates `dataclass` and provides additional features: automatic validation via
- `@attr.ib(validator=...)`Automatic conversion, and more sophisticated configuration. `dataclass`
- was explicitly designed as a stdlib answer to the most common `attrs` use cases.
+  `@attr.ib(validator=...)`Automatic conversion, and more sophisticated configuration. `dataclass`
+  was explicitly designed as a stdlib answer to the most common `attrs` use cases.
 
 The design philosophy: `dataclass` does not try to replace `namedtuple` (which serves the tuple
 Compatibility use case) or `attrs` (which serves the heavy-weight validation use case). It occupies
@@ -817,9 +820,9 @@ p.z = 3    # AttributeError: 'DensePoint' object has no attribute 'z'
 
 1. Instances cannot have attributes not listed in `__slots__` (no dynamic attribute assignment).
 2. Each class in an inheritance hierarchy must define its own `__slots__`. If a base class omits
- `__slots__`Subclasses gain a `__dict__` regardless.
+   `__slots__`Subclasses gain a `__dict__` regardless.
 3. `__slots__` cannot contain `__dict__` or `__weakref__` unless you explicitly add them as strings
- (which re-enables those features).
+   (which re-enables those features).
 4. Code that relies on `__dict__` (e.g., serialization, `vars()`Some ORMs) will break.
 
 :::
@@ -848,9 +851,9 @@ Descriptors are the underlying mechanism that makes properties, class methods, s
 `__delete__`.
 
 - **Data descriptor:** defines `__get__` and at least one of `__set__` or `__delete__`. Data
- descriptors take priority over instance `__dict__` entries.
+  descriptors take priority over instance `__dict__` entries.
 - **Non-data descriptor:** defines only `__get__`. Instance `__dict__` entries take priority over
- non-data descriptors.
+  non-data descriptors.
 
 This distinction is crucial. Functions are non-data descriptors, which is why you can shadow a class
 Method with an instance attribute. Properties are data descriptors, which is why they cannot be

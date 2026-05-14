@@ -1,7 +1,8 @@
 ---
 title: Stoichiometry
-description: "Rigorous IB chemistry notes covering Stoichiometry. Includes definitions, derivations, worked examples, and exam-style problems."
-  chemistry.
+description:
+  'Rigorous IB chemistry notes covering Stoichiometry. Includes definitions, derivations, worked
+  examples, and exam-style problems. chemistry.'
 slug: stoichiometry
 ---
 
@@ -34,18 +35,18 @@ $$
 
 Where $m$ is the mass in grams.
 
-| Substance | Molar Mass (g/mol) |
+| Substance   | Molar Mass (g/mol) |
 | ----------- | ------------------ |
-| H | 1.01 |
-| C | 12.01 |
-| N | 14.01 |
-| O | 16.00 |
-| Na | 22.99 |
-| Cl | 35.45 |
-| H$_2$O | 18.02 |
-| CO$_2$ | 44.01 |
-| NaCl | 58.44 |
-| H$_2$SO$_4$ | 98.08 |
+| H           | 1.01               |
+| C           | 12.01              |
+| N           | 14.01              |
+| O           | 16.00              |
+| Na          | 22.99              |
+| Cl          | 35.45              |
+| H$_2$O      | 18.02              |
+| CO$_2$      | 44.01              |
+| NaCl        | 58.44              |
+| H$_2$SO$_4$ | 98.08              |
 
 :::info[Example]
 
@@ -94,9 +95,9 @@ Empirical formula.
 
 | Element | Mass (g) | Molar Mass (g/mol) | Moles | Ratio |
 | ------- | -------- | ------------------ | ----- | ----- |
-| C | 40.0 | 12.01 | 3.33 | 1 |
-| H | 6.7 | 1.01 | 6.63 | 2 |
-| O | 53.3 | 16.00 | 3.33 | 1 |
+| C       | 40.0     | 12.01              | 3.33  | 1     |
+| H       | 6.7      | 1.01               | 6.63  | 2     |
+| O       | 53.3     | 16.00              | 3.33  | 1     |
 
 Empirical formula: CH$_2$O.
 
@@ -463,9 +464,9 @@ Oxygen?
 
 | Element | Mass (g) | Molar Mass | Moles | Ratio |
 | ------- | -------- | ---------- | ----- | ----- |
-| Na | 36.5 | 22.99 | 1.588 | 2 |
-| S | 25.4 | 32.07 | 0.792 | 1 |
-| O | 38.1 | 16.00 | 2.381 | 3 |
+| Na      | 36.5     | 22.99      | 1.588 | 2     |
+| S       | 25.4     | 32.07      | 0.792 | 1     |
+| O       | 38.1     | 16.00      | 2.381 | 3     |
 
 Empirical formula: Na$_2$SO$_3$.
 
@@ -538,22 +539,22 @@ $$
 
 ## Summary
 
-| Formula | Expression |
+| Formula          | Expression                                                   |
 | ---------------- | ------------------------------------------------------------ |
-| Moles from mass | $n = \dfrac{m}{M}$ |
-| Particles | $N = nN_A$ |
-| Molarity | $c = \dfrac{n}{V}$ |
-| Ideal gas | $PV = nRT$ |
-| Boyle's law | $P_1V_1 = P_2V_2$ |
-| Charles's law | $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$ |
-| Dilution | $c_1V_1 = c_2V_2$ |
+| Moles from mass  | $n = \dfrac{m}{M}$                                           |
+| Particles        | $N = nN_A$                                                   |
+| Molarity         | $c = \dfrac{n}{V}$                                           |
+| Ideal gas        | $PV = nRT$                                                   |
+| Boyle's law      | $P_1V_1 = P_2V_2$                                            |
+| Charles's law    | $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$                        |
+| Dilution         | $c_1V_1 = c_2V_2$                                            |
 | Percentage yield | $\dfrac{\mathrm{actual}}{\mathrm{theoretical}} \times 100\%$ |
 
 :::tip[Exam Strategy]
 
 Always show your working with units. For gas calculations, ensure temperature is in Kelvin. For
-Titration calculations, identify the mole ratio from the balanced equation. Remember that
-Molar volume at STP is 22.7 L/mol and at RTP is 24.8 L/mol.
+Titration calculations, identify the mole ratio from the balanced equation. Remember that Molar
+volume at STP is 22.7 L/mol and at RTP is 24.8 L/mol.
 
 :::
 
@@ -630,11 +631,11 @@ The gas is likely O$_2$.
 
 ### Concentration Conversions
 
-| From | To | Method |
+| From            | To              | Method                                          |
 | --------------- | --------------- | ----------------------------------------------- |
-| Molarity | Mass percentage | $c \times M \times 100 / (1000\rho)$ |
-| Mass percentage | Molarity | $(\%\mathrm{/}100) \times \rho \times 1000 / M$ |
-| Molarity | ppm | $c \times M \times 10^6 / 1000\rho$ |
+| Molarity        | Mass percentage | $c \times M \times 100 / (1000\rho)$            |
+| Mass percentage | Molarity        | $(\%\mathrm{/}100) \times \rho \times 1000 / M$ |
+| Molarity        | ppm             | $c \times M \times 10^6 / 1000\rho$             |
 
 ### Colligative Properties
 
@@ -647,11 +648,11 @@ Properties that depend on the number of solute particles (not their identity):
 Where $i$ is the van't Hoff factor (number of particles per formula unit), $K_b$ and $K_f$ are
 Constants, and $m$ is molality.
 
-| Solute | $i$ |
+| Solute                          | $i$ |
 | ------------------------------- | --- |
-| Non-electrolyte (e.g., glucose) | 1 |
-| NaCl | 2 |
-| CaCl$_2$ | 3 |
+| Non-electrolyte (e.g., glucose) | 1   |
+| NaCl                            | 2   |
+| CaCl$_2$                        | 3   |
 
 ---
 
@@ -835,12 +836,12 @@ $$
 
 ### Gas Collection Methods
 
-| Method | Best For | Gas Collected |
+| Method                         | Best For         | Gas Collected              |
 | ------------------------------ | ---------------- | -------------------------- |
-| Downward displacement of water | Insoluble gases | Oxygen, hydrogen |
-| Upward delivery | Soluble gases | Ammonia |
-| Gas syringe | Accurate volume | Any gas |
-| Over water (eudiometer) | Measuring volume | Gases that do not dissolve |
+| Downward displacement of water | Insoluble gases  | Oxygen, hydrogen           |
+| Upward delivery                | Soluble gases    | Ammonia                    |
+| Gas syringe                    | Accurate volume  | Any gas                    |
+| Over water (eudiometer)        | Measuring volume | Gases that do not dissolve |
 
 ### Ideal Gas Assumptions
 
@@ -935,11 +936,11 @@ Is approximately $180\mathrm{ g/mol}$. Determine the empirical and molecular for
 
 Convert percentages to moles:
 
-| Element | Mass (g) | Molar Mass (g/mol) | Moles | Ratio |
+| Element | Mass (g) | Molar Mass (g/mol) | Moles  | Ratio |
 | ------- | -------- | ------------------ | ------ | ----- |
-| C | $40.0$ | $12.01$ | $3.33$ | $1$ |
-| H | $6.7$ | $1.01$ | $6.63$ | $2$ |
-| O | $53.3$ | $16.00$ | $3.33$ | $1$ |
+| C       | $40.0$   | $12.01$            | $3.33$ | $1$   |
+| H       | $6.7$    | $1.01$             | $6.63$ | $2$   |
+| O       | $53.3$   | $16.00$            | $3.33$ | $1$   |
 
 Empirical formula: **$\mathrm{CH}_2\mathrm{O}$** (molar mass $= 30.03\mathrm{ g/mol}$)
 
@@ -1035,7 +1036,8 @@ $$x = \frac{0.183}{0.0261} = 7.01 \approx 7$$
 
 Formula: $\mathrm{MgSO}_4 \cdot 7\mathrm{H}_2\mathrm{O}$ (Epsom salt)
 
-For the A-Level treatment of this topic, see [Quantitative Chemistry](https://alevel.wyattau.com/docs/chemistry/quantitative-chemistry).
+For the A-Level treatment of this topic, see
+[Quantitative Chemistry](https://alevel.wyattau.com/docs/chemistry/quantitative-chemistry).
 
 </details>
 

@@ -1,11 +1,13 @@
 ---
 title: IB English Assessment and Analytical Techniques
 tags:
-- IB
-- English
+  - IB
+  - English
 slug: ib-english-assessment-and-techniques
-description: "Rigorous IB English notes covering IB English Assessment and Analytical Techniques. Includes definitions, derivations, worked examples, and exam-style problems."
-  for the International Baccalaureate.
+description:
+  'Rigorous IB English notes covering IB English Assessment and Analytical Techniques. Includes
+  definitions, derivations, worked examples, and exam-style problems. for the International
+  Baccalaureate.'
 ---
 
 # IB English Assessment and Analytical Techniques
@@ -29,13 +31,13 @@ From a novel or play) or non-literary (an advertisement, an editorial, a speech,
 The guiding question directs attention to a specific feature of the text. Common guiding question
 Types include:
 
-| Guiding Question Type | Example Prompt |
+| Guiding Question Type | Example Prompt                                                                                        |
 | --------------------- | ----------------------------------------------------------------------------------------------------- |
-| Authorial choices | "How does the author use language to convey the speaker's attitude?" |
-| Structural analysis | "Analyse the ways in which the structure of this passage shapes its meaning." |
-| Audience and purpose | "Explore how this text positions its intended reader." |
+| Authorial choices     | "How does the author use language to convey the speaker's attitude?"                                  |
+| Structural analysis   | "Analyse the ways in which the structure of this passage shapes its meaning."                         |
+| Audience and purpose  | "Explore how this text positions its intended reader."                                                |
 | Comparative (HL only) | "Compare and contrast how the two texts present the relationship between the individual and society." |
-| Stylistic effect | "Discuss the stylistic features that contribute to the overall effect of this passage." |
+| Stylistic effect      | "Discuss the stylistic features that contribute to the overall effect of this passage."               |
 
 The essay must develop a coherent argument in response to the guiding question. It is not sufficient
 To identify features of the text; the student must explain _how_ those features produce meaning and
@@ -44,10 +46,10 @@ Tested by Paper 1.
 
 ### 1.2 Time Management
 
-| Level | Time Allocation | Recommended Approach |
+| Level | Time Allocation   | Recommended Approach                                                       |
 | ----- | ----------------- | -------------------------------------------------------------------------- |
-| SL | 75 minutes total | 10 min reading/annotation, 5 min planning, 55 min writing |
-| HL | 135 minutes total | 15 min reading/annotation, 10 min planning, 105 min writing (two passages) |
+| SL    | 75 minutes total  | 10 min reading/annotation, 5 min planning, 55 min writing                  |
+| HL    | 135 minutes total | 15 min reading/annotation, 10 min planning, 105 min writing (two passages) |
 
 At SL, students write on one passage. At HL, students write on two passages and must produce a
 Comparative analysis. The time differential reflects the additional complexity of the HL task, not a
@@ -75,27 +77,27 @@ Specific features. Annotation should be systematic, not random. Work through the
 Categories in order:
 
 1. **Diction and register:** Mark unusual word choices, shifts in register, technical or specialised
- vocabulary, and words with strong connotations. Note any patterns in word choice that recur
- across the passage.
+   vocabulary, and words with strong connotations. Note any patterns in word choice that recur
+   across the passage.
 2. **Imagery and figurative language:** Underline metaphors, similes, personification, and other
- figures of speech. For each, note the vehicle (the image used) and the tenor (the thing being
- described).
+   figures of speech. For each, note the vehicle (the image used) and the tenor (the thing being
+   described).
 3. **Structure:** Identify paragraph breaks, stanza divisions, shifts in time or perspective, and
- any structural pattern (e.g., chiasmus, parallelism, progression from general to specific).
+   any structural pattern (e.g., chiasmus, parallelism, progression from general to specific).
 4. **Narrative voice and perspective:** Identify the narrator or speaker, their position relative to
- the subject matter, and any indicators of reliability or unreliability.
+   the subject matter, and any indicators of reliability or unreliability.
 5. **Tone and mood:** Identify the emotional register of the passage. Note any shifts in tone.
 6. **Sound and rhythm (for poetry):** Mark alliteration, assonance, consonance, rhyme, and rhythmic
- patterns.
+   patterns.
 
 **Stage 3: Thesis Formation (3--5 minutes).** Review the annotations and the guiding question.
 Formulate a thesis statement that answers the guiding question with specificity. The thesis must be
 Arguable (not a statement of fact), specific (not vague), and comprehensive (it must account for the
 Passage as a whole, not just a single feature).
 
-A strong thesis for Paper 1 has the following structure: "The author uses [feature 1] and
-[feature 2] to [effect], suggesting that [interpretive claim]." The interpretive claim is the
-Essential component -- it is the argument that the essay will develop and support.
+A strong thesis for Paper 1 has the following structure: "The author uses [feature 1] and [feature
+2] to [effect], suggesting that [interpretive claim]." The interpretive claim is the Essential
+component -- it is the argument that the essay will develop and support.
 
 **Stage 4: Drafting.** Write the essay, following the structure outlined in Section 1.4 below. Keep
 The guiding question visible at all times. Every paragraph must contribute to answering it.
@@ -121,15 +123,15 @@ Specific to the passage under analysis.
 Each body paragraph should follow a PEAL structure:
 
 - **Point:** State the analytical point that the paragraph will develop. This should be a sub-claim
- that supports the thesis.
+  that supports the thesis.
 - **Evidence:** Introduce and embed a specific quotation or reference from the passage. Quotations
- must be brief (a single line or phrase, not a full sentence unless necessary) and must be
- grammatically integrated into the sentence.
+  must be brief (a single line or phrase, not a full sentence unless necessary) and must be
+  grammatically integrated into the sentence.
 - **Analysis:** Explain how the evidence produces the effect you have identified. This is the core
- of the paragraph and the most important part of the essay. Analysis must go beyond paraphrase; it
- must explain the mechanism by which the author's choice produces meaning.
+  of the paragraph and the most important part of the essay. Analysis must go beyond paraphrase; it
+  must explain the mechanism by which the author's choice produces meaning.
 - **Link:** Connect the paragraph's point back to the thesis and, where relevant, to the guiding
- question.
+  question.
 
 **Conclusion (1 paragraph, approximately 75--100 words).**
 
@@ -140,20 +142,20 @@ Author's purpose, the text's relationship to its context, or the larger themes i
 ### 1.5 Common Pitfalls in Paper 1
 
 1. **Feature spotting.** Listing literary devices without explaining their effect. This is the most
- common error in Paper 1 essays. Every identification of a feature must be accompanied by an
- explanation of its function.
+   common error in Paper 1 essays. Every identification of a feature must be accompanied by an
+   explanation of its function.
 2. **Paraphrase masquerading as analysis.** Restating what the text says without explaining how it
- works. If a paragraph can be understood by someone who has not read the passage, it probably
- contains too much paraphrase and not enough analysis.
+   works. If a paragraph can be understood by someone who has not read the passage, it probably
+   contains too much paraphrase and not enough analysis.
 3. **Ignoring the guiding question.** Writing a general essay about the passage that fails to
- address the specific question asked. The guiding question is the essay's organising principle;
- every paragraph must contribute to answering it.
+   address the specific question asked. The guiding question is the essay's organising principle;
+   every paragraph must contribute to answering it.
 4. **Over-quoting.** Using long quotations that take up space without generating proportionate
- analytical insight. A single well-chosen word or phrase, analysed in depth, is worth more than a
- block quotation accompanied by superficial comment.
+   analytical insight. A single well-chosen word or phrase, analysed in depth, is worth more than a
+   block quotation accompanied by superficial comment.
 5. **Vague thesis statements.** A thesis that says "the author uses many literary devices to create
- an effect" is not a thesis. It states nothing that could not be said about any passage. The
- thesis must identify specific features and specific effects.
+   an effect" is not a thesis. It states nothing that could not be said about any passage. The
+   thesis must identify specific features and specific effects.
 
 ---
 
@@ -166,10 +168,10 @@ The syllabus (Literature -- Texts and Contexts). The essay must respond to one o
 Provided, each of which asks students to explore a thematic or formal concern across the works
 Studied.
 
-| Level | Requirement |
+| Level | Requirement                                                       |
 | ----- | ----------------------------------------------------------------- |
-| SL | One work from Part 3, one work from Part 4 |
-| HL | Two works from Part 3, plus contextual discussion of a third work |
+| SL    | One work from Part 3, one work from Part 4                        |
+| HL    | Two works from Part 3, plus contextual discussion of a third work |
 
 The distinction between SL and HL is significant. At SL, the essay is a straightforward comparison
 Of two works. At HL, the essay must demonstrate a broader understanding of the Part 3 corpus by
@@ -186,11 +188,11 @@ Of that difference are.
 
 **Thesis progression:**
 
-| Strength | Example Thesis |
+| Strength               | Example Thesis                                                                                                                                                                                                                          |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Weak (descriptive) | Both _Chronicle of a Death Foretold_ and _A Streetcar Named Desire_ explore themes of honour and social expectation. |
-| Adequate (comparative) | While both texts examine honour, _Chronicle_ presents it as a public, communal code, whereas _Streetcar_ presents it as a private, individual assertion of dominance. |
-| Strong (analytical) | Both Marquez and Williams expose honour codes as instruments of collective violence, but Marquez locates the source of violence in communal complicity, while Williams locates it in the patriarchal structures of the domestic sphere. |
+| Weak (descriptive)     | Both _Chronicle of a Death Foretold_ and _A Streetcar Named Desire_ explore themes of honour and social expectation.                                                                                                                    |
+| Adequate (comparative) | While both texts examine honour, _Chronicle_ presents it as a public, communal code, whereas _Streetcar_ presents it as a private, individual assertion of dominance.                                                                   |
+| Strong (analytical)    | Both Marquez and Williams expose honour codes as instruments of collective violence, but Marquez locates the source of violence in communal complicity, while Williams locates it in the patriarchal structures of the domestic sphere. |
 
 The strongest thesis does not merely compare but evaluates: it makes a claim about what the
 Comparison reveals that analysis of either text alone could not.
@@ -236,19 +238,19 @@ Conventions" is analysis grounded in context.
 ### 2.4 Common Pitfalls in Paper 2
 
 1. **Parallel essays.** Writing about each text separately without establishing a sustained
- comparative argument. The essay should read as a single argument developed across texts, not as
- two mini-essays.
+   comparative argument. The essay should read as a single argument developed across texts, not as
+   two mini-essays.
 2. **Imbalanced treatment.** Discussing one text in far greater depth than the other. Both primary
- texts must receive substantial analytical attention.
+   texts must receive substantial analytical attention.
 3. **Context as filler.** At HL, mentioning the third work without showing how it contributes to the
- argument. The third work must be analytically integrated, not name-dropped.
+   argument. The third work must be analytically integrated, not name-dropped.
 4. **Generic prompts.** Failing to address the specific wording of the chosen prompt. If the prompt
- asks about "the ways in which writers present the conflict between individual desire and social
- expectation," the essay must address both "individual desire" and "social expectation," not
- merely one of these terms.
+   asks about "the ways in which writers present the conflict between individual desire and social
+   expectation," the essay must address both "individual desire" and "social expectation," not
+   merely one of these terms.
 5. **Plot summary.** Recounting the events of the text instead of analysing how the text's formal
- features produce meaning. Assume the examiner knows the plot; your task is to interpret, not to
- narrate.
+   features produce meaning. Assume the examiner knows the plot; your task is to interpret, not to
+   narrate.
 
 ---
 
@@ -276,18 +278,18 @@ University-level essay.
 The choice of topic is the single most important decision in the HL Essay process. A good topic is:
 
 - **Specific:** It focuses on a particular aspect of the text (a character, a motif, a narrative
- technique, a thematic concern) rather than attempting to cover the entire work.
+  technique, a thematic concern) rather than attempting to cover the entire work.
 - **Arguable:** It can be supported through textual evidence but is not self-evidently true. The
- best topics invite genuine debate.
+  best topics invite genuine debate.
 - **Textually grounded:** It can be developed through close analysis of specific passages, not
- through generalisation or abstraction.
+  through generalisation or abstraction.
 - **Original:** It offers a perspective that goes beyond classroom discussion, even if it builds on
- ideas introduced in class.
+  ideas introduced in class.
 
-| Weak Topic | Strong Topic |
+| Weak Topic                                            | Strong Topic                                                                                                                                                                                                                                                                               |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| "The theme of illusion in _A Streetcar Named Desire_" | "Williams uses lighting and stage directions as parallel textual systems that undermine the reality/illusion binary, suggesting that Stanley's 'truth' is as constructed as Blanche's fantasies" |
-| "Gender roles in _Chronicle of a Death Foretold_" | "Angela Vicario's letters to Bayardo San Roman constitute a form of written resistance to the oral, masculine culture of honour that governs the town, and the fact that Bayardo never reads them ironises the possibility of genuine communication across gendered discursive boundaries" |
+| "The theme of illusion in _A Streetcar Named Desire_" | "Williams uses lighting and stage directions as parallel textual systems that undermine the reality/illusion binary, suggesting that Stanley's 'truth' is as constructed as Blanche's fantasies"                                                                                           |
+| "Gender roles in _Chronicle of a Death Foretold_"     | "Angela Vicario's letters to Bayardo San Roman constitute a form of written resistance to the oral, masculine culture of honour that governs the town, and the fact that Bayardo never reads them ironises the possibility of genuine communication across gendered discursive boundaries" |
 
 ### 3.3 Research Process
 
@@ -321,7 +323,7 @@ The supervisor (the teacher) plays a specific and limited role in the HL Essay p
 
 - Provides guidance on topic selection, ensuring the topic is appropriate in scope and specificity
 - Offers up to one round of feedback on a draft, focusing on argumentative structure and analytical
- quality
+  quality
 - Confirms that the essay is the student's own work
 - Assesses the essay against the IB criteria
 
@@ -340,7 +342,7 @@ Context. A top-band response demonstrates:
 
 - Precise, detailed knowledge of the text, including specific passages and their significance
 - Understanding of the text's contextual background (biographical, historical, cultural) and the
- ability to connect that context to specific textual features
+  ability to connect that context to specific textual features
 - Awareness of the text's position within a literary tradition or genre
 
 **Criterion B: Analysis and Evaluation (10 marks).**
@@ -372,15 +374,15 @@ Demonstrates:
 ### 3.6 Common Pitfalls in the HL Essay
 
 1. **Over-ambitious topics.** Choosing a topic that is too broad for 1,200--1,500 words. The essay
- must have a narrow, focused scope.
+   must have a narrow, focused scope.
 2. **Insufficient close reading.** Relying on general observations about the text rather than
- analysing specific passages. The HL Essay must demonstrate close reading skills.
+   analysing specific passages. The HL Essay must demonstrate close reading skills.
 3. **Secondary sources as substitute for analysis.** Quoting critics instead of engaging with their
- arguments. Secondary sources should extend your analysis, not replace it.
+   arguments. Secondary sources should extend your analysis, not replace it.
 4. **Descriptive rather than analytical register.** Writing in a style that recounts the text rather
- than interpreting it. The HL Essay is literary criticism, not a study guide.
+   than interpreting it. The HL Essay is literary criticism, not a study guide.
 5. **Failure to address the thesis.** Drifting away from the stated argument in the body paragraphs.
- Every paragraph must contribute to the thesis.
+   Every paragraph must contribute to the thesis.
 
 ---
 
@@ -433,25 +435,25 @@ Is amplified by the reader's awareness of the specific cultural context.
 The following are the primary challenges of reading translated literature and strategies for
 Addressing them:
 
-| Challenge | Description | Strategy |
+| Challenge                | Description                                                                                                   | Strategy                                                                                                                         |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Semantic loss | Words carry connotations in the source language that have no equivalent in the target language | Research key terms in the source language; compare multiple translations where available |
-| Tonal distortion | The register, rhythm, and voice of the original may be altered in translation | Read the text aloud; attend to moments where the prose feels awkward or unnatural -- these may indicate translation difficulties |
-| Cultural opacity | References, allusions, and cultural practices may be unfamiliar to the reader | Research the cultural context; consult footnotes and introductions critically |
-| Translator's voice | The translator's stylistic preferences may shape the reader's experience of the text | Compare passages across different translations; note where translators make different choices |
-| Illusion of transparency | The translated text may appear "natural" or "transparent," concealing the interpretive work of the translator | Approach the translated text as one interpretation among many, not as the definitive version of the work |
+| Semantic loss            | Words carry connotations in the source language that have no equivalent in the target language                | Research key terms in the source language; compare multiple translations where available                                         |
+| Tonal distortion         | The register, rhythm, and voice of the original may be altered in translation                                 | Read the text aloud; attend to moments where the prose feels awkward or unnatural -- these may indicate translation difficulties |
+| Cultural opacity         | References, allusions, and cultural practices may be unfamiliar to the reader                                 | Research the cultural context; consult footnotes and introductions critically                                                    |
+| Translator's voice       | The translator's stylistic preferences may shape the reader's experience of the text                          | Compare passages across different translations; note where translators make different choices                                    |
+| Illusion of transparency | The translated text may appear "natural" or "transparent," concealing the interpretive work of the translator | Approach the translated text as one interpretation among many, not as the definitive version of the work                         |
 
 ### 4.4 Common Pitfalls with Works in Translation
 
 1. **Treating the translation as the text.** Failing to acknowledge that the translated text is
- already an interpretation. In an IB essay, it is legitimate and often productive to note that a
- particular effect may be the product of translation rather than authorial intention.
+   already an interpretation. In an IB essay, it is legitimate and often productive to note that a
+   particular effect may be the product of translation rather than authorial intention.
 2. **Cultural reductionism.** Reducing a complex literary text to a specimen of its culture ("this
- text shows what Latin American culture is like"). The text is a work of art, not an
- anthropological document.
+   text shows what Latin American culture is like"). The text is a work of art, not an
+   anthropological document.
 3. **Ignoring the translator.** Failing to consider the translator's role in shaping the reader's
- experience. When an essay quotes from a translated text, the quotation is the translator's words,
- not the author's.
+   experience. When an essay quotes from a translated text, the quotation is the translator's words,
+   not the author's.
 
 ---
 
@@ -471,14 +473,14 @@ Reliability.
 **Key questions:**
 
 - Who is the narrator? Are they a character within the story (homodiegetic) or external to it
- (heterodiegetic)?
+  (heterodiegetic)?
 - What is the narrator's relationship to the events described? Are they a participant, an observer,
- or a retrospective reconstructer?
+  or a retrospective reconstructer?
 - Is the narrator reliable? What evidence supports or undermines their reliability?
 - What is the narrative distance? Is the narration close to the consciousness of a character (free
- indirect discourse) or maintained at a remove?
+  indirect discourse) or maintained at a remove?
 - What is the narrative register? Is the language formal, colloquial, lyrical, journalistic,
- legalistic?
+  legalistic?
 
 **Worked example:** In _Chronicle of a Death Foretold_, the narrator is a first-person investigator
 Who reconstructs events from testimony and memory. His narrative voice is hybrid: it combines the
@@ -497,11 +499,11 @@ Convention or context; a motif derives its power from recurrence.
 **System for motif tracking:**
 
 1. **Identify potential motifs.** On first reading, note any image, phrase, or pattern that recurs
- more than twice. These are candidates for motifs.
+   more than twice. These are candidates for motifs.
 2. **Record each occurrence.** For each occurrence, note the context: where it appears, which
- characters are involved, what is happening in the narrative at that point.
+   characters are involved, what is happening in the narrative at that point.
 3. **Analyse the pattern.** How does the motif's significance change across its occurrences? Does it
- accumulate meaning, shift connotation, or serve different functions at different points?
+   accumulate meaning, shift connotation, or serve different functions at different points?
 4. **Connect to themes.** How does the motif relate to the text's central thematic concerns?
 
 **Worked example:** In _A Streetcar Named Desire_, the motif of light recurs across the play in
@@ -520,14 +522,14 @@ Pattern of emphasis, delay, repetition, and variation that shapes the reader's e
 
 **Key structural concepts:**
 
-| Concept | Definition | Analytical Question |
+| Concept               | Definition                                                                        | Analytical Question                                                                              |
 | --------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Narrative arc | The overall shape of the plot: exposition, complication, climax, resolution | How does the text's narrative arc shape the reader's experience of its themes? |
-| Parallelism | The repetition of structural patterns (e.g., two scenes that mirror each other) | What is the effect of the parallel? Does it reinforce, complicate, or ironise the earlier scene? |
-| Juxtaposition | The placement of two elements in proximity to highlight contrast or connection | What is revealed by placing these two elements in proximity? |
-| Foreshadowing | Early hints of later events | How does foreknowledge shape the reader's interpretation of the present moment? |
-| Temporal manipulation | Non-linear chronology, flashbacks, flash-forwards, time compression | Why does the text arrange time in this way? What is gained or lost? |
-| Framing | A narrative within a narrative, or an opening/closing that encloses the main text | How does the frame shape our interpretation of the enclosed narrative? |
+| Narrative arc         | The overall shape of the plot: exposition, complication, climax, resolution       | How does the text's narrative arc shape the reader's experience of its themes?                   |
+| Parallelism           | The repetition of structural patterns (e.g., two scenes that mirror each other)   | What is the effect of the parallel? Does it reinforce, complicate, or ironise the earlier scene? |
+| Juxtaposition         | The placement of two elements in proximity to highlight contrast or connection    | What is revealed by placing these two elements in proximity?                                     |
+| Foreshadowing         | Early hints of later events                                                       | How does foreknowledge shape the reader's interpretation of the present moment?                  |
+| Temporal manipulation | Non-linear chronology, flashbacks, flash-forwards, time compression               | Why does the text arrange time in this way? What is gained or lost?                              |
+| Framing               | A narrative within a narrative, or an opening/closing that encloses the main text | How does the frame shape our interpretation of the enclosed narrative?                           |
 
 **Worked example:** The circular structure of _Chronicle of a Death Foretold_ -- the narrative
 Returns to the narrator's investigation at both the beginning and the end -- produces several
@@ -582,18 +584,18 @@ About the text's themes and concerns.
 **Key dimensions of character analysis:**
 
 1. **Motivation.** What does the character want? What drives their actions? Motivation may be
- explicit (stated in dialogue or narration) or implicit (revealed through behaviour, imagery, or
- juxtaposition).
+   explicit (stated in dialogue or narration) or implicit (revealed through behaviour, imagery, or
+   juxtaposition).
 2. **Development.** Does the character change over the course of the text? If so, how and why? If
- not, what is the significance of their stasis?
+   not, what is the significance of their stasis?
 3. **Relationships.** How does the character interact with other characters? What do these
- interactions reveal about the character's values, conflicts, and limitations?
+   interactions reveal about the character's values, conflicts, and limitations?
 4. **Symbolic function.** Does the character represent something beyond themselves? Many characters
- in IB English texts operate simultaneously as psychologically realistic individuals and as
- symbols of broader thematic concerns.
+   in IB English texts operate simultaneously as psychologically realistic individuals and as
+   symbols of broader thematic concerns.
 5. **Narrative treatment.** How does the text present the character? Through direct description,
- dialogue, action, or the perceptions of other characters? The narrative treatment of a character
- is itself an interpretive act.
+   dialogue, action, or the perceptions of other characters? The narrative treatment of a character
+   is itself an interpretive act.
 
 **Worked example:** Blanche DuBois is constructed through multiple, sometimes contradictory
 Narrative registers. Williams presents her through dialogue (her own poetic, evasive speech),
@@ -615,16 +617,16 @@ Constructed; it is the community, not fate, that kills Santiago Nasar").
 **Process for thematic analysis:**
 
 1. **Identify recurring concerns.** What questions does the text keep returning to? What tensions or
- conflicts does it explore?
+   conflicts does it explore?
 2. **Formulate the theme as a proposition.** A theme must be arguable and specific. "The text is
- about fate" is a topic, not a theme. "The text argues that fate is a narrative effect produced by
- retrospective construction, not a metaphysical reality" is a theme.
+   about fate" is a topic, not a theme. "The text argues that fate is a narrative effect produced by
+   retrospective construction, not a metaphysical reality" is a theme.
 3. **Trace the theme across the text.** How is the theme introduced, developed, complicated, and
- (possibly) resolved? What specific textual features (imagery, structure, dialogue) carry the
- thematic argument?
+   (possibly) resolved? What specific textual features (imagery, structure, dialogue) carry the
+   thematic argument?
 4. **Evaluate the theme's significance.** What does the text's treatment of this theme reveal about
- its broader concerns? How does the theme relate to the text's context (historical, cultural,
- literary)?
+   its broader concerns? How does the theme relate to the text's context (historical, cultural,
+   literary)?
 
 ---
 
@@ -641,9 +643,9 @@ A student identifies a literary device ("the author uses a metaphor") without ex
 For analysis, not analysis itself.
 
 **Why it is an error:** Literary devices do not have inherent meanings. A metaphor comparing love to
-A rose does not automatically mean that love is beautiful and fragile; on the context in
-Which the metaphor appears, the other images it is juxtaposed with, and the larger argument the text
-Is making. Analysis must explain the specific effect of a specific device in a specific context.
+A rose does not automatically mean that love is beautiful and fragile; on the context in Which the
+metaphor appears, the other images it is juxtaposed with, and the larger argument the text Is
+making. Analysis must explain the specific effect of a specific device in a specific context.
 
 **How to avoid it:** For every device you identify, complete the following sentence: "The author
 Uses [device] to [specific effect], which suggests [interpretive claim]." If you cannot complete
@@ -695,9 +697,9 @@ Reality/illusion, oppression/resistance. While binary oppositions can be analyti
 Must be treated as provisional starting points, not as final conclusions.
 
 **Why it is an error:** IB English rewards nuance and complexity. A student who argues that Stanley
-Is a villain and Blanche is a victim has failed to engage with the play's moral
-Complexity. The strongest analyses acknowledge ambiguity, contradiction, and the limitations of any
-Single interpretive framework.
+Is a villain and Blanche is a victim has failed to engage with the play's moral Complexity. The
+strongest analyses acknowledge ambiguity, contradiction, and the limitations of any Single
+interpretive framework.
 
 **How to avoid it:** When you identify a binary, ask: Does the text sustain this binary, or does it
 Collapse it? What happens at the boundary between the two terms? What is excluded by the binary?
@@ -751,14 +753,14 @@ Literary terminology exists to enable precise communication about how texts work
 Accurately and fluently is a marker of analytical sophistication. The following terms should be part
 Of every IB English student's active vocabulary:
 
-| Category | Terms |
+| Category   | Terms                                                                                                             |
 | ---------- | ----------------------------------------------------------------------------------------------------------------- |
-| Narrative | Narrator, focalisation, free indirect discourse, unreliable narrator, diegetic/non-diegetic, framing, metafiction |
-| Poetic | Meter, rhyme scheme, enjambment, caesura, volta, stanza, sonnet, blank verse, free verse |
-| Figurative | Metaphor, simile, personification, metonymy, synecdoche, hyperbole, litotes, paradox, oxymoron, apostrophe |
-| Dramatic | Soliloquy, aside, dramatic irony, stage direction, fourth wall, tragic hero, hamartia, peripeteia, anagnorisis |
-| Rhetorical | Anaphora, epistrophe, chiasmus, antithesis, zeugma, litotes, polysyndeton, asyndeton, rhetorical question |
-| Critical | Ideology, discourse, hegemony, intertextuality, focalisation, defamiliarisation, the uncanny, subtext |
+| Narrative  | Narrator, focalisation, free indirect discourse, unreliable narrator, diegetic/non-diegetic, framing, metafiction |
+| Poetic     | Meter, rhyme scheme, enjambment, caesura, volta, stanza, sonnet, blank verse, free verse                          |
+| Figurative | Metaphor, simile, personification, metonymy, synecdoche, hyperbole, litotes, paradox, oxymoron, apostrophe        |
+| Dramatic   | Soliloquy, aside, dramatic irony, stage direction, fourth wall, tragic hero, hamartia, peripeteia, anagnorisis    |
+| Rhetorical | Anaphora, epistrophe, chiasmus, antithesis, zeugma, litotes, polysyndeton, asyndeton, rhetorical question         |
+| Critical   | Ideology, discourse, hegemony, intertextuality, focalisation, defamiliarisation, the uncanny, subtext             |
 
 ### 7.5 The Argumentative Essay as Engineering
 
@@ -771,43 +773,41 @@ That load-bearing function.
 Before submitting any essay, perform a structural audit:
 
 1. **Thesis check.** Is the thesis arguable, specific, and comprehensive? Does it appear in the
- introduction?
+   introduction?
 2. **Paragraph check.** Does each paragraph have a clear topic sentence? Does it develop a single
- analytical point? Does it contain both evidence and analysis?
+   analytical point? Does it contain both evidence and analysis?
 3. **Transition check.** Does each paragraph flow logically from the previous one? Are the
- connections between paragraphs explicit or merely implicit?
+   connections between paragraphs explicit or merely implicit?
 4. **Evidence check.** Is every claim supported by textual evidence? Are quotations brief, specific,
- and analytically productive?
+   and analytically productive?
 5. **Conclusion check.** Does the conclusion synthesise the essay's findings into a broader
- statement, or does it merely restate the thesis?
+   statement, or does it merely restate the thesis?
 
 ---
 
 ## 8. Quick Reference: Assessment Component Summary
 
-| Component | Level | Weighting | Duration | Key Skill Tested |
+| Component      | Level   | Weighting | Duration                                           | Key Skill Tested                                      |
 | -------------- | ------- | --------- | -------------------------------------------------- | ----------------------------------------------------- |
-| Paper 1 | SL | 25% | 75 min | Unseen textual analysis |
-| Paper 1 | HL | 25% | 135 min | Comparative unseen analysis |
-| Paper 2 | SL | 25% | 75 min | Comparative essay (Part 3 + Part 4) |
-| Paper 2 | HL | 25% | 75 min | Comparative essay (2 from Part 3 + contextual third) |
-| HL Essay | HL only | 20% | N/A | Independent literary criticism (1,200--1,500 words) |
-| Written Task | SL | 20% | N/A | Creative/analytical writing with rationale |
-| Written Task | HL | 20% | N/A | Two written tasks with rationales |
-| IOC | SL | 15% | 20 min prep + 10 min commentary | Oral close reading of Part 2 extract |
-| IOC | HL | 15% | 20 min prep + 10 min commentary + 5 min discussion | Oral close reading + discussion of second Part 2 work |
-| FOA | SL | 15% | 10--15 min | Oral presentation on Part 1 or Part 2 |
-| FOA | HL | 15% | 10--15 min | Oral presentation on Part 1 or Part 2 |
-| Extended Essay | Both | N/A | N/A | 4,000-word independent research essay |
+| Paper 1        | SL      | 25%       | 75 min                                             | Unseen textual analysis                               |
+| Paper 1        | HL      | 25%       | 135 min                                            | Comparative unseen analysis                           |
+| Paper 2        | SL      | 25%       | 75 min                                             | Comparative essay (Part 3 + Part 4)                   |
+| Paper 2        | HL      | 25%       | 75 min                                             | Comparative essay (2 from Part 3 + contextual third)  |
+| HL Essay       | HL only | 20%       | N/A                                                | Independent literary criticism (1,200--1,500 words)   |
+| Written Task   | SL      | 20%       | N/A                                                | Creative/analytical writing with rationale            |
+| Written Task   | HL      | 20%       | N/A                                                | Two written tasks with rationales                     |
+| IOC            | SL      | 15%       | 20 min prep + 10 min commentary                    | Oral close reading of Part 2 extract                  |
+| IOC            | HL      | 15%       | 20 min prep + 10 min commentary + 5 min discussion | Oral close reading + discussion of second Part 2 work |
+| FOA            | SL      | 15%       | 10--15 min                                         | Oral presentation on Part 1 or Part 2                 |
+| FOA            | HL      | 15%       | 10--15 min                                         | Oral presentation on Part 1 or Part 2                 |
+| Extended Essay | Both    | N/A       | N/A                                                | 4,000-word independent research essay                 |
 
-:::info
-For detailed analysis of the specific texts studied in this course, see
+:::info For detailed analysis of the specific texts studied in this course, see
 [A Streetcar Named Desire](a-street-car-named-desire.md),
 [Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md),
 [Chronicle of a Death Foretold](chronicle-of-a-death-foretold.md),
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md),
-And the [comparative analysis](comparitives/chronicle-streetcar.md).
-:::
+And the [comparative analysis](comparitives/chronicle-streetcar.md). :::
 
 ## Worked Examples
 

@@ -1,7 +1,8 @@
 ---
 title: Energy and Conservation
-description: "Rigorous IB physics notes covering Energy and Conservation. Includes definitions, derivations, worked examples, and exam-style problems."
-  and power.
+description:
+  'Rigorous IB physics notes covering Energy and Conservation. Includes definitions, derivations,
+  worked examples, and exam-style problems. and power.'
 slug: energy
 ---
 
@@ -10,16 +11,16 @@ slug: energy
 Energy is a scalar quantity measured in joules ($\mathrm{J}$). It exists in many forms and can be
 Transformed from one form to another, but the total energy in a closed system is conserved.
 
-| Form | Description |
+| Form                      | Description                                     |
 | ------------------------- | ----------------------------------------------- |
-| Kinetic | Energy of motion |
-| Gravitational potential | Energy due to position in a gravitational field |
-| Elastic potential | Energy stored in a deformed object |
-| Thermal | Energy associated with temperature |
-| Chemical | Energy stored in chemical bonds |
-| Nuclear | Energy stored in atomic nuclei |
-| Electrical | Energy of moving charges |
-| Radiant (electromagnetic) | Energy of electromagnetic waves |
+| Kinetic                   | Energy of motion                                |
+| Gravitational potential   | Energy due to position in a gravitational field |
+| Elastic potential         | Energy stored in a deformed object              |
+| Thermal                   | Energy associated with temperature              |
+| Chemical                  | Energy stored in chemical bonds                 |
+| Nuclear                   | Energy stored in atomic nuclei                  |
+| Electrical                | Energy of moving charges                        |
+| Radiant (electromagnetic) | Energy of electromagnetic waves                 |
 
 ---
 
@@ -86,12 +87,12 @@ Where $G = 6.674 \times 10^{-11}\mathrm{ N}\cdot\mathrm{m}^2/\mathrm{kg}^2$.
 
 ### Key Differences
 
-| Property | Near Surface ($mgh$) | Universal ($-GMm/r$) |
+| Property        | Near Surface ($mgh$)       | Universal ($-GMm/r$)                    |
 | --------------- | -------------------------- | --------------------------------------- |
-| Reference level | Arbitrary ( ground) | Zero at infinity |
-| Sign | Positive above reference | Negative (bound state) |
-| Validity | $h \ll R_{\mathrm{Earth}}$ | Any distance |
-| Gradient | $-\dfrac{dE_p}{dh} = -mg$ | $-\dfrac{dE_p}{dr} = -\dfrac{GMm}{r^2}$ |
+| Reference level | Arbitrary ( ground)        | Zero at infinity                        |
+| Sign            | Positive above reference   | Negative (bound state)                  |
+| Validity        | $h \ll R_{\mathrm{Earth}}$ | Any distance                            |
+| Gradient        | $-\dfrac{dE_p}{dh} = -mg$  | $-\dfrac{dE_p}{dr} = -\dfrac{GMm}{r^2}$ |
 
 :::info[Example]
 
@@ -200,12 +201,12 @@ $$
 
 ### Conservative vs Non-Conservative Forces
 
-| Conservative Forces | Non-Conservative Forces |
+| Conservative Forces      | Non-Conservative Forces |
 | ------------------------ | ----------------------- |
-| Gravity | Friction |
-| Elastic (spring) | Air resistance |
-| Electrostatic | Applied pushes/pulls |
-| Work is path-independent | Work is path-dependent |
+| Gravity                  | Friction                |
+| Elastic (spring)         | Air resistance          |
+| Electrostatic            | Applied pushes/pulls    |
+| Work is path-independent | Work is path-dependent  |
 
 ### Applications
 
@@ -356,7 +357,7 @@ $$
 
 - SI unit: watt ($\mathrm{W}$), where $1\mathrm{ W} = 1\mathrm{ J/s}$.
 - Other units: kilowatt ($1\mathrm{ kW} = 1000\mathrm{ W}$), horsepower
- ($1\mathrm{ hp} \approx 746\mathrm{ W}$).
+  ($1\mathrm{ hp} \approx 746\mathrm{ W}$).
 
 ### Power and Inclined Planes
 
@@ -386,8 +387,8 @@ $$
 P = Fv \implies 80000 = 800v \implies v = 100\mathrm{ m/s}
 $$
 
-This is $360\mathrm{ km/h}$Which is unrealistic for a car with $80\mathrm{ kW}$ — in practice,
-Drag increases with $v^2$ so the maximum speed would be lower.
+This is $360\mathrm{ km/h}$Which is unrealistic for a car with $80\mathrm{ kW}$ — in practice, Drag
+increases with $v^2$ so the maximum speed would be lower.
 
 :::
 
@@ -403,8 +404,8 @@ $$
 
 ### Energy Degradation
 
-In all real energy transfers, some energy is dissipated ( as thermal energy due to friction).
-This means:
+In all real energy transfers, some energy is dissipated ( as thermal energy due to friction). This
+means:
 
 - Efficiency is always less than 100%.
 - Total energy is always conserved, but useful energy decreases.
@@ -432,16 +433,16 @@ Power input $= 100\mathrm{ W}$Useful power output $= 10\mathrm{ W}$.
 
 ### Common Efficiencies
 
-| Device | Typical Efficiency |
+| Device                  | Typical Efficiency |
 | ----------------------- | ------------------ |
-| Incandescent light bulb | 5--10% |
-| LED light bulb | 30--40% |
-| Electric motor | 70--95% |
-| Car engine (petrol) | 20--30% |
-| Diesel engine | 30--40% |
-| Steam turbine | 35--45% |
-| Solar cell | 15--25% |
-| Human body | 20--25% |
+| Incandescent light bulb | 5--10%             |
+| LED light bulb          | 30--40%            |
+| Electric motor          | 70--95%            |
+| Car engine (petrol)     | 20--30%            |
+| Diesel engine           | 30--40%            |
+| Steam turbine           | 35--45%            |
+| Solar cell              | 15--25%            |
+| Human body              | 20--25%            |
 
 ---
 
@@ -599,22 +600,22 @@ $$
 
 ## Summary
 
-| Energy Type | Formula |
+| Energy Type                     | Formula                                                         |
 | ------------------------------- | --------------------------------------------------------------- |
-| Kinetic | $E_k = \dfrac{1}{2}mv^2$ |
-| Gravitational PE (near surface) | $E_p = mgh$ |
-| Gravitational PE (universal) | $E_p = -\dfrac{GMm}{r}$ |
-| Elastic PE | $E_e = \dfrac{1}{2}kx^2$ |
-| Conservation | $E_k + E_p + E_e = \mathrm{constant}$ |
-| Work-energy theorem | $W_{\mathrm{net}} = \Delta E_k$ |
-| Power | $P = \dfrac{W}{t} = Fv$ |
-| Efficiency | $\eta = \dfrac{E_{\mathrm{out}}}{E_{\mathrm{in}}} \times 100\%$ |
+| Kinetic                         | $E_k = \dfrac{1}{2}mv^2$                                        |
+| Gravitational PE (near surface) | $E_p = mgh$                                                     |
+| Gravitational PE (universal)    | $E_p = -\dfrac{GMm}{r}$                                         |
+| Elastic PE                      | $E_e = \dfrac{1}{2}kx^2$                                        |
+| Conservation                    | $E_k + E_p + E_e = \mathrm{constant}$                           |
+| Work-energy theorem             | $W_{\mathrm{net}} = \Delta E_k$                                 |
+| Power                           | $P = \dfrac{W}{t} = Fv$                                         |
+| Efficiency                      | $\eta = \dfrac{E_{\mathrm{out}}}{E_{\mathrm{in}}} \times 100\%$ |
 
 :::tip[Exam Strategy]
 
 For energy conservation problems, always define your reference level for gravitational PE. Show the
-Energy at two chosen points ( start and end). When friction is present, subtract the
-Work done by friction from the total mechanical energy.
+Energy at two chosen points ( start and end). When friction is present, subtract the Work done by
+friction from the total mechanical energy.
 
 :::
 
@@ -626,11 +627,11 @@ Work done by friction from the total mechanical energy.
 
 For two masses $M$ and $m$ separated by distance $r$The total energy determines the type of orbit:
 
-| Total Energy $E$ | Orbit Type |
+| Total Energy $E$ | Orbit Type                    |
 | ---------------- | ----------------------------- | --- | --- | --- | ------------------ |
-| $E \lt 0$ (and $ | E                             | \lt | E_p | $) | Bound (elliptical) |
-| $E = 0$ | Parabolic (escape trajectory) | | | | |
-| $E \gt 0$ | Hyperbolic (unbound) | | | | |
+| $E \lt 0$ (and $ | E                             | \lt | E_p | $)  | Bound (elliptical) |
+| $E = 0$          | Parabolic (escape trajectory) |     |     |     |                    |
+| $E \gt 0$        | Hyperbolic (unbound)          |     |     |     |                    |
 
 For a circular orbit:
 
@@ -826,18 +827,20 @@ $$
 H = \frac{kx^2}{2mg} = \frac{500(0.0064)}{2(0.1)(9.81)} = \frac{3.2}{1.962} = 1.63\mathrm{ m}
 $$
 
-For the A-Level treatment of this topic, see [Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
+For the A-Level treatment of this topic, see
+[Work, Energy and Power](https://alevel.wyattau.com/docs/physics/mechanics/work-energy-power).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Energy and Conservation**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-energy) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Energy and Conservation**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-energy) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and Conservation with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Energy and
+Conservation with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

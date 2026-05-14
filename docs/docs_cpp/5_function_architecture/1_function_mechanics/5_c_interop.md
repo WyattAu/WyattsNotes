@@ -1,6 +1,8 @@
 ---
 title: C-Interop and FFI
-description: "C++: C-Interop and FFI — 5.1 `extern "C"` Linkage [N4950 §9.9]; Formal Semantics of `extern "C"`; `extern "C"` and Function Overloading."
+description:
+  'C++: C-Interop and FFI — 5.1 `extern "C"` Linkage [N4950 §9.9]; Formal Semantics of `extern "C"`;
+  `extern "C"` and Function Overloading.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -8,6 +10,7 @@ categories:
   - Cpp
 slug: c-interop-and-ffi
 ---
+
 # C-Interop and FFI
 
 C++ uses **name mangling** to encode type information into function symbols, enabling overloading. C
@@ -50,11 +53,11 @@ int subtract(int a, int b) {
 By [N4950 §9.9], the `extern "C"` linkage specification has three effects:
 
 1. **Name mangling is disabled.** The symbol name in the object file is the literal function name,
- not an encoded representation of the signature.
+   not an encoded representation of the signature.
 2. **Language linkage is set to C.** This affects how the function is called (C calling convention)
- and how entities are looked up.
+   and how entities are looked up.
 3. **Overloading is prohibited.** Within an `extern "C"` block, you cannot have two functions with
- the same name — the linker would see duplicate symbols.
+   the same name — the linker would see duplicate symbols.
 
 ### `extern "C"` and Function Overloading
 
@@ -319,24 +322,22 @@ extern "C" {
 }
 ```
 
-:::warning
-The `reinterpret_cast` approach works on platforms where C and C++ share the same ABI
+:::warning The `reinterpret_cast` approach works on platforms where C and C++ share the same ABI
 (pointer size, struct layout, calling convention). This is true for x86-64 Linux/macOS (both use the
 System V ABI). On platforms with divergent C/C++ ABIs, use `void*` handles and pass data through
-C-compatible types only.
-:::
+C-compatible types only. :::
 
 ## 5.4 ABI Boundaries: Name Mangling and Layout
 
 At a C/C++ boundary, several ABI properties must align:
 
-| Property | C ABI | C++ ABI (Itanium, used on Linux/macOS) |
-| :----------------- | :------------------------------------ | :------------------------------------- |
-| Name mangling | None — symbol = function name | Encodes types, namespaces, templates |
-| Calling convention | System V AMD64 (x86-64) | Same as C (on System V platforms) |
-| Struct layout | Same as C++ POD | Same as C for POD; non-POD differs |
-| Exception handling | N/A (no exceptions) | Zero-cost with unwind tables |
-| `bool` size | 1 byte (implementation-def) | Same as C (implementation-defined) |
+| Property           | C ABI                         | C++ ABI (Itanium, used on Linux/macOS) |
+| :----------------- | :---------------------------- | :------------------------------------- |
+| Name mangling      | None — symbol = function name | Encodes types, namespaces, templates   |
+| Calling convention | System V AMD64 (x86-64)       | Same as C (on System V platforms)      |
+| Struct layout      | Same as C++ POD               | Same as C for POD; non-POD differs     |
+| Exception handling | N/A (no exceptions)           | Zero-cost with unwind tables           |
+| `bool` size        | 1 byte (implementation-def)   | Same as C (implementation-defined)     |
 
 ### Itanium C++ ABI vs MSVC C++ ABI
 
@@ -367,8 +368,8 @@ struct Base { virtual void foo() const; };
 template<typename T> const T& max(const T&, const T&);
 ```
 
-With `extern "C"`All of these become `add`Losing the type information. This is why
-Overloading is not possible within `extern "C"` blocks.
+With `extern "C"`All of these become `add`Losing the type information. This is why Overloading is
+not possible within `extern "C"` blocks.
 
 ```cpp
 #include <cstddef>
@@ -412,14 +413,14 @@ int main() {
 When passing data across a C/C++ boundary, ensure that:
 
 1. **Structs are POD** (Plain Old Data) or `standard-layout`: no virtual functions, no base classes
- with virtual functions, no non-static data members of reference type, all non-static data members
- have the same access control.
+   with virtual functions, no non-static data members of reference type, all non-static data members
+   have the same access control.
 2. **Fixed-width types are used** (`int32_t`Not `int`).
 3. **No padding surprises**: use `static_assert` and `offsetof` to verify layout, or `#pragma pack`
- / `alignas` to control it.
+   / `alignas` to control it.
 4. **No C++ exceptions cross the boundary**: exceptions thrown in C++ code called from C unwind
- through C frames, which have no unwind information — undefined behavior. Catch all exceptions
- before returning to C code.
+   through C frames, which have no unwind information — undefined behavior. Catch all exceptions
+   before returning to C code.
 
 ### Proof of Struct Layout Compatibility
 
@@ -429,26 +430,26 @@ C++ on the same platform.
 **Proof:**
 
 1. By [N4950 §7.7.2], a standard-layout class has the same layout as a corresponding C struct with
- the same members in the same order.
+   the same members in the same order.
 2. By [N4950 §7.7.2.1], each non-static data member is allocated at an offset that satisfies its
- alignment requirement, and the alignment of the struct is the maximum alignment of its members.
+   alignment requirement, and the alignment of the struct is the maximum alignment of its members.
 3. C struct layout follows the same rules (ISO C 6.2.5p20, 6.7.2.1p15): each member is placed at an
- offset satisfying its alignment, with padding inserted as needed.
-4. Since both C and C++ use the same alignment rules for fundamental types (`int``double`Etc.)
- on the same platform, the resulting layout is byte-for-byte identical. QED.
+   offset satisfying its alignment, with padding inserted as needed.
+4. Since both C and C++ use the same alignment rules for fundamental types (`int``double`Etc.) on
+   the same platform, the resulting layout is byte-for-byte identical. QED.
 
 ### What Breaks Layout Compatibility
 
 The following C++ features break layout compatibility with C:
 
-| Feature | Effect on Layout |
-| :------------------------------ | :-------------------------------------------------- |
-| Virtual functions | Adds vtable pointer ( 8 bytes at offset 0) |
-| Virtual base classes | Adds vtable pointer and virtual base offset |
-| Multiple inheritance | May add pointer adjustments for base-to-derived |
-| Non-standard-layout members | Reference members, `std::string`Etc. |
-| Different compiler flags | `-fpack-struct``#pragma pack` changes padding |
-| Different alignment (`alignas`) | Adds padding not present in the C struct |
+| Feature                         | Effect on Layout                                |
+| :------------------------------ | :---------------------------------------------- |
+| Virtual functions               | Adds vtable pointer ( 8 bytes at offset 0)      |
+| Virtual base classes            | Adds vtable pointer and virtual base offset     |
+| Multiple inheritance            | May add pointer adjustments for base-to-derived |
+| Non-standard-layout members     | Reference members, `std::string`Etc.            |
+| Different compiler flags        | `-fpack-struct``#pragma pack` changes padding   |
+| Different alignment (`alignas`) | Adds padding not present in the C struct        |
 
 ```cpp
 #include <cstdint>
@@ -492,16 +493,14 @@ struct NetworkHeader {
 static_assert(sizeof(NetworkHeader) == 7);  // 1 + 4 + 2 = 7, no padding
 ```
 
-:::warning
-`#pragma pack` changes the alignment of all members in the struct, which can cause
+:::warning `#pragma pack` changes the alignment of all members in the struct, which can cause
 Misaligned access on strict-alignment architectures (ARM, SPARC). Use with caution and document the
-Rationale.
-:::
+Rationale. :::
 
 ## 5.6 Dynamic Library Loading with `dlfcn.h`
 
-POSIX systems provide `dlopen``dlsym``dlclose`And `dlerror` for loading shared libraries at
-Runtime. This enables plugin architectures and runtime code loading.
+POSIX systems provide `dlopen``dlsym``dlclose`And `dlerror` for loading shared libraries at Runtime.
+This enables plugin architectures and runtime code loading.
 
 ```cpp
 // plugin.cpp — compiled into libplugin.so
@@ -578,11 +577,9 @@ int main() {
 }
 ```
 
-:::warning
-The `RTLD_NOW` flag resolves all symbols at load time, surfacing missing symbol errors
+:::warning The `RTLD_NOW` flag resolves all symbols at load time, surfacing missing symbol errors
 Immediately. `RTLD_LAZY` defers resolution to first use, which can mask errors and cause crashes at
-Unpredictable points. For plugin loading, prefer `RTLD_NOW`.
-:::
+Unpredictable points. For plugin loading, prefer `RTLD_NOW`. :::
 
 ### Windows Equivalent: `LoadLibrary` and `GetProcAddress`
 
@@ -689,29 +686,29 @@ This cast is safe. But it is technically undefined behavior by the Standard.
 ## 5.9 Common Pitfalls at Language Boundaries
 
 1. **Exceptions crossing the boundary**: A C++ exception that propagates through a C call stack is
- undefined behavior. Always wrap C++ entry points with `try`/`catch(...)`.
+   undefined behavior. Always wrap C++ entry points with `try`/`catch(...)`.
 
 2. **Differing `size_t` between 32-bit and 64-bit code**: If a 32-bit C library passes a
- pointer-sized value through an `int`It will truncate on 64-bit systems.
+   pointer-sized value through an `int`It will truncate on 64-bit systems.
 
 3. **Differing struct packing**: MSVC defaults to 8-byte alignment; GCC defaults to natural
- alignment. Use explicit packing or fixed-width types.
+   alignment. Use explicit packing or fixed-width types.
 
 4. **Static initialization order fiasco**: Global C++ objects with non-trivial constructors may not
- be initialized before a C `main()` calls them. Prefer the Construct On First Use idiom.
+   be initialized before a C `main()` calls them. Prefer the Construct On First Use idiom.
 
 5. **`new`/`delete` mismatch**: Memory allocated with `new` in C++ must be freed with `delete` (not
- `free()`), and vice versa. If passing ownership of heap memory across the boundary, provide
- explicit `create`/`destroy` functions in the C API.
+   `free()`), and vice versa. If passing ownership of heap memory across the boundary, provide
+   explicit `create`/`destroy` functions in the C API.
 
-6. **`bool` vs `_Bool`**: C's `_Bool` and C++'s `bool` are distinct types. While they are 
- compatible on most platforms, the Standard does not guarantee layout compatibility. Use `int` or
- a fixed-width type for flags passed across the boundary.
+6. **`bool` vs `_Bool`**: C's `_Bool` and C++'s `bool` are distinct types. While they are compatible
+   on most platforms, the Standard does not guarantee layout compatibility. Use `int` or a
+   fixed-width type for flags passed across the boundary.
 
 7. **String ownership**: If a C++ function returns a `const char*` pointing to a `std::string`'s
- internal buffer, the pointer is valid only as long as the `std::string` is alive. C code that
- stores this pointer will have a dangling reference once the `std::string` is destroyed. Return a
- copy or require the C code to copy immediately.
+   internal buffer, the pointer is valid only as long as the `std::string` is alive. C code that
+   stores this pointer will have a dangling reference once the `std::string` is destroyed. Return a
+   copy or require the C code to copy immediately.
 
 ```cpp
 // Safe C++ entry point wrapping

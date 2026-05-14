@@ -1,7 +1,8 @@
 ---
 title: Organic Chemistry
-description: "Rigorous IB chemistry notes covering Organic Chemistry. Includes definitions, derivations, worked examples, and exam-style problems."
-  and polymer chemistry.
+description:
+  'Rigorous IB chemistry notes covering Organic Chemistry. Includes definitions, derivations, worked
+  examples, and exam-style problems. and polymer chemistry.'
 slug: organic-chemistry
 ---
 
@@ -18,42 +19,42 @@ Organic compounds are named systematically using IUPAC rules:
 
 ### Alkyl Groups
 
-| Name | Formula |
+| Name   | Formula      |
 | ------ | ------------ |
-| Methyl | --CH$_3$ |
-| Ethyl | --C$_2$H$_5$ |
+| Methyl | --CH$_3$     |
+| Ethyl  | --C$_2$H$_5$ |
 | Propyl | --C$_3$H$_7$ |
-| Butyl | --C$_4$H$_9$ |
+| Butyl  | --C$_4$H$_9$ |
 
 ### Carbon Chain Prefixes
 
 | Carbons | Prefix |
 | ------- | ------ |
-| 1 | Meth- |
-| 2 | Eth- |
-| 3 | Prop- |
-| 4 | But- |
-| 5 | Pent- |
-| 6 | Hex- |
-| 7 | Hept- |
-| 8 | Oct- |
-| 9 | Non- |
-| 10 | Dec- |
+| 1       | Meth-  |
+| 2       | Eth-   |
+| 3       | Prop-  |
+| 4       | But-   |
+| 5       | Pent-  |
+| 6       | Hex-   |
+| 7       | Hept-  |
+| 8       | Oct-   |
+| 9       | Non-   |
+| 10      | Dec-   |
 
 ### Suffixes for Functional Groups
 
-| Functional Group | Suffix | Example |
+| Functional Group | Suffix    | Example          |
 | ---------------- | --------- | ---------------- |
-| Alkane | -ane | Ethane |
-| Alkene | -ene | Ethene |
-| Alkyne | -yne | Ethyne |
-| Alcohol | -ol | Ethanol |
-| Aldehyde | -al | Ethanal |
-| Ketone | -one | Propanone |
-| Carboxylic acid | -oic acid | Ethanoic acid |
-| Ester | -oate | Methyl ethanoate |
-| Amine | -amine | Ethanamine |
-| Amide | -amide | Ethanamide |
+| Alkane           | -ane      | Ethane           |
+| Alkene           | -ene      | Ethene           |
+| Alkyne           | -yne      | Ethyne           |
+| Alcohol          | -ol       | Ethanol          |
+| Aldehyde         | -al       | Ethanal          |
+| Ketone           | -one      | Propanone        |
+| Carboxylic acid  | -oic acid | Ethanoic acid    |
+| Ester            | -oate     | Methyl ethanoate |
+| Amine            | -amine    | Ethanamine       |
+| Amide            | -amide    | Ethanamide       |
 
 :::info[Example]
 
@@ -93,12 +94,12 @@ Methyl propanoate, ethyl ethanoate, etc.
 
 ### Physical Properties
 
-| Property | Trend |
+| Property                  | Trend                                                         |
 | ------------------------- | ------------------------------------------------------------- |
-| Boiling point | Increases with chain length (more London forces) |
-| Melting point | Increases with chain length |
+| Boiling point             | Increases with chain length (more London forces)              |
+| Melting point             | Increases with chain length                                   |
 | State at room temperature | C$_1$--C$_4$: gas; C$_5$--C$_{17}$: liquid; C$_{18}^+$: solid |
-| Solubility | Non-polar, insoluble in water |
+| Solubility                | Non-polar, insoluble in water                                 |
 
 ### Reactions
 
@@ -129,13 +130,15 @@ $$
 1. **Initiation**: Cl$_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}^\bullet$ (homolytic fission)
 
 2. **Propagation**:
- - $\mathrm{Cl}^\bullet + \mathrm{CH}_4 \to \mathrm{HCl} + \mathrm{CH}_3^\bullet$
- - $\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet$
+
+- $\mathrm{Cl}^\bullet + \mathrm{CH}_4 \to \mathrm{HCl} + \mathrm{CH}_3^\bullet$
+- $\mathrm{CH}_3^\bullet + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{Cl} + \mathrm{Cl}^\bullet$
 
 3. **Termination**: radicals combine in various ways:
- - $\mathrm{Cl}^\bullet + \mathrm{Cl}^\bullet \to \mathrm{Cl}_2$
- - $\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$
- - $\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$
+
+- $\mathrm{Cl}^\bullet + \mathrm{Cl}^\bullet \to \mathrm{Cl}_2$
+- $\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$
+- $\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$
 
 ### Cracking
 
@@ -155,7 +158,7 @@ Cycloalkanes.
 - General formula: C$_n$H$_{2n}$
 - Contain at least one C=C double bond.
 - sp$^2$ hybridisation, trigonal planar geometry around the double bond (bond angle
- $\approx 120\degree$).
+  $\approx 120\degree$).
 - Unsaturated hydrocarbons.
 - The double bond consists of one $\sigma$ bond and one $\pi$ bond.
 - Restricted rotation about the C=C bond leads to **cis-trans (E/Z) isomerism**.
@@ -288,14 +291,14 @@ $$
 
 **Reactions**:
 
-| Reaction | Conditions | Product |
+| Reaction       | Conditions                      | Product                                                     |
 | -------------- | ------------------------------- | ----------------------------------------------------------- |
-| Combustion | Burns in air | CO$_2$ + H$_2$O |
-| Oxidation | PCC | Aldehyde (from $1\degree$) |
-| Oxidation | Acidified K$_2$Cr$_2$O$_7$ | Carboxylic acid (from $1\degree$), Ketone (from $2\degree$) |
-| Dehydration | H$_2$SO$_4$Heat | Alkene |
-| Substitution | PBr$_3$ or SOCl$_2$ | Alkyl halide |
-| Esterification | Carboxylic acid, H$^+$ catalyst | Ester |
+| Combustion     | Burns in air                    | CO$_2$ + H$_2$O                                             |
+| Oxidation      | PCC                             | Aldehyde (from $1\degree$)                                  |
+| Oxidation      | Acidified K$_2$Cr$_2$O$_7$      | Carboxylic acid (from $1\degree$), Ketone (from $2\degree$) |
+| Dehydration    | H$_2$SO$_4$Heat                 | Alkene                                                      |
+| Substitution   | PBr$_3$ or SOCl$_2$             | Alkyl halide                                                |
+| Esterification | Carboxylic acid, H$^+$ catalyst | Ester                                                       |
 
 **Oxidation of Alcohols**:
 
@@ -327,12 +330,12 @@ Tertiary alcohol $\to$ Not oxidised
 
 **Reactions**:
 
-| Reaction | Product |
+| Reaction                      | Product         |
 | ----------------------------- | --------------- |
-| With base | Salt + water |
-| With alcohol (esterification) | Ester + water |
-| With ammonia | Amide |
-| Reduction (LiAlH$_4$) | Primary alcohol |
+| With base                     | Salt + water    |
+| With alcohol (esterification) | Ester + water   |
+| With ammonia                  | Amide           |
+| Reduction (LiAlH$_4$)         | Primary alcohol |
 
 ### Esters (R--COO--R')
 
@@ -393,13 +396,13 @@ $$
 - **Racemisation** occurs (equal mixture of inverted and retained configuration).
 - Favoured by: tertiary substrates, weak nucleophiles, polar protic solvents.
 
-| Feature | $S_N1$ | $S_N2$ |
+| Feature              | $S_N1$                         | $S_N2$                               |
 | -------------------- | ------------------------------ | ------------------------------------ |
-| Steps | Two (carbocation intermediate) | One (concerted) |
-| Rate law | Rate $= k[\mathrm{RX}]$ | Rate $= k[\mathrm{RX}][\mathrm{Nu}]$ |
-| Stereochemistry | Racemisation | Inversion |
-| Substrate preference | Tertiary | Primary |
-| Carbocation | Yes | No |
+| Steps                | Two (carbocation intermediate) | One (concerted)                      |
+| Rate law             | Rate $= k[\mathrm{RX}]$        | Rate $= k[\mathrm{RX}][\mathrm{Nu}]$ |
+| Stereochemistry      | Racemisation                   | Inversion                            |
+| Substrate preference | Tertiary                       | Primary                              |
+| Carbocation          | Yes                            | No                                   |
 
 ### Elimination ($E1$ and $E2$)
 
@@ -427,14 +430,14 @@ $$
 
 ### Factors Affecting $S_N$ vs $E$
 
-| Condition | Favours Substitution ($S_N$) | Favours Elimination ($E$) |
+| Condition          | Favours Substitution ($S_N$) | Favours Elimination ($E$) |
 | ------------------ | ---------------------------- | ------------------------- |
-| Temperature | Lower | Higher |
-| Base strength | Weak | Strong |
-| Base concentration | Low | High |
-| Substrate | Primary ($S_N2$) | Tertiary |
-| Steric hindrance | Low | High |
-| Solvent | Polar protic ($S_N1$) | - |
+| Temperature        | Lower                        | Higher                    |
+| Base strength      | Weak                         | Strong                    |
+| Base concentration | Low                          | High                      |
+| Substrate          | Primary ($S_N2$)             | Tertiary                  |
+| Steric hindrance   | Low                          | High                      |
+| Solvent            | Polar protic ($S_N1$)        | -                         |
 
 ---
 
@@ -444,13 +447,13 @@ $$
 
 Formed by addition polymerisation of alkenes (monomers with C=C bonds). No by-product.
 
-| Polymer | Monomer | Uses |
+| Polymer     | Monomer           | Uses                  |
 | ----------- | ----------------- | --------------------- |
-| Polyethene | Ethene | Bags, bottles |
-| Polypropene | Propene | Ropes, containers |
-| PVC | Chloroethene | Pipes, insulation |
-| Polystyrene | Phenylethene | Packaging, insulation |
-| PTFE | Tetrafluoroethene | Non-stick coatings |
+| Polyethene  | Ethene            | Bags, bottles         |
+| Polypropene | Propene           | Ropes, containers     |
+| PVC         | Chloroethene      | Pipes, insulation     |
+| Polystyrene | Phenylethene      | Packaging, insulation |
+| PTFE        | Tetrafluoroethene | Non-stick coatings    |
 
 ### Condensation Polymers
 
@@ -480,13 +483,13 @@ Proteins are natural polyamides formed from amino acid monomers via peptide bond
 
 ### Biodegradability
 
-| Polymer | Biodegradable? | Reason |
+| Polymer               | Biodegradable? | Reason                                         |
 | --------------------- | -------------- | ---------------------------------------------- |
-| Polyethene | No | C--C backbone resists hydrolysis |
-| Polyesters | Yes (some) | Ester bonds can be hydrolysed |
-| Polyamides | Partially | Amide bonds can be hydrolysed (slowly) |
-| Polylactic acid (PLA) | Yes | Ester linkages, derived from renewable sources |
-| Cellulose | Yes | Natural polymer, readily broken down |
+| Polyethene            | No             | C--C backbone resists hydrolysis               |
+| Polyesters            | Yes (some)     | Ester bonds can be hydrolysed                  |
+| Polyamides            | Partially      | Amide bonds can be hydrolysed (slowly)         |
+| Polylactic acid (PLA) | Yes            | Ester linkages, derived from renewable sources |
+| Cellulose             | Yes            | Natural polymer, readily broken down           |
 
 ### Identifying Monomers
 
@@ -536,7 +539,7 @@ Ethanol $\to$ Ethanoic acid: Use acidified K$_2$Cr$_2$O$_7$ (potassium dichromat
 
 - Tollens' reagent: silver mirror with ethanal, no reaction with ethanol or ethanoic acid.
 - Acidified K$_2$Cr$_2$O$_7$: orange to green with ethanol and ethanal, no change with ethanoic
- acid.
+  acid.
 - NaHCO$_3$: bubbles of CO$_2$ with ethanoic acid, no reaction with ethanol or ethanal.
 
 ### Question 4 (Paper 1 style)
@@ -565,31 +568,31 @@ $$
 **Mechanism**:
 
 1. The electron-rich benzene ring attacks the nitronium ion ($\mathrm{NO}_2^+$), forming a
- delocalised carbocation intermediate.
+   delocalised carbocation intermediate.
 
 2. The intermediate loses a proton to HSO$_4^-$Regenerating the aromatic system and forming
- nitrobenzene.
+   nitrobenzene.
 
 ---
 
 ## Summary
 
-| Reaction Type | Description |
+| Reaction Type  | Description                                              |
 | -------------- | -------------------------------------------------------- |
-| Substitution | Atom/group replaced (alkanes, benzene) |
-| Addition | Atoms added across double/triple bond (alkenes, alkynes) |
-| Elimination | Small molecule removed to form double bond |
-| Condensation | Monomers join, small molecule eliminated |
-| Oxidation | Gain of oxygen or loss of hydrogen |
-| Reduction | Loss of oxygen or gain of hydrogen |
-| Polymerisation | Monomers join to form long chains |
+| Substitution   | Atom/group replaced (alkanes, benzene)                   |
+| Addition       | Atoms added across double/triple bond (alkenes, alkynes) |
+| Elimination    | Small molecule removed to form double bond               |
+| Condensation   | Monomers join, small molecule eliminated                 |
+| Oxidation      | Gain of oxygen or loss of hydrogen                       |
+| Reduction      | Loss of oxygen or gain of hydrogen                       |
+| Polymerisation | Monomers join to form long chains                        |
 
-| Mechanism | Characteristics |
+| Mechanism | Characteristics                              |
 | --------- | -------------------------------------------- |
-| $S_N2$ | One step, inversion, primary substrates |
-| $S_N1$ | Two steps, racemisation, tertiary substrates |
-| $E2$ | One step, strong base, Zaitsev product |
-| $E1$ | Two steps, carbocation, weak base |
+| $S_N2$    | One step, inversion, primary substrates      |
+| $S_N1$    | Two steps, racemisation, tertiary substrates |
+| $E2$      | One step, strong base, Zaitsev product       |
+| $E1$      | Two steps, carbocation, weak base            |
 
 :::tip[Exam Strategy]
 
@@ -649,20 +652,20 @@ Cycloalkanes can have cis-trans isomerism when substituents are on different sid
 
 Identifies functional groups by absorption of IR radiation.
 
-| Absorption (cm$^{-1}$) | Bond |
+| Absorption (cm$^{-1}$) | Bond                   |
 | ---------------------- | ---------------------- |
-| 2500--3300 | O--H (broad), N--H |
-| 2850--3100 | C--H |
-| 1680--1750 | C=O |
-| 1620--1680 | C=C |
-| 2100--2260 | C$\equiv$C, C$\equiv$N |
+| 2500--3300             | O--H (broad), N--H     |
+| 2850--3100             | C--H                   |
+| 1680--1750             | C=O                    |
+| 1620--1680             | C=C                    |
+| 2100--2260             | C$\equiv$C, C$\equiv$N |
 
 ### Mass Spectrometry
 
 - **Molecular ion peak**: gives the molecular mass.
 - **Fragmentation pattern**: helps identify the structure.
 - **Isotope pattern**: Cl has $^{35}$Cl:$^{37}$Cl $\approx$ 3:1 ratio; Br has $^{79}$Br:$^{81}$Br
- $\approx$ 1:1.
+  $\approx$ 1:1.
 
 ### Nuclear Magnetic Resonance (NMR) Spectroscopy
 
@@ -738,10 +741,10 @@ Aqueous sodium hydroxide.**
 **Mechanism**:
 
 1. The hydroxide ion (Nu$^-$) attacks the carbon bonded to bromine from the opposite side of the
- C--Br bond.
+   C--Br bond.
 
 2. A transition state forms where the C--O bond is partially formed and the C--Br bond is partially
- broken.
+   broken.
 
 3. The C--Br bond breaks completely, and Br$^-$ leaves as a leaving group.
 
@@ -798,7 +801,7 @@ When HBr adds to propene (CH$_3$CH=CH$_2$):
 
 1. The H$^+$ electrophile attacks the double bond.
 2. It can form either a secondary carbocation (CH$_3$CH$^+$CH$_3$) or a primary carbocation
- (CH$_3$CH$_2$CH$_2^+$).
+   (CH$_3$CH$_2$CH$_2^+$).
 3. The secondary carbocation is more stable (hyperconjugation and inductive effects).
 4. The secondary carbocation forms preferentially.
 5. Br$^-$ then attacks the carbocation, giving 2-bromopropane as the major product.
@@ -959,8 +962,10 @@ $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
 
 ## Related Content at Other Levels
 
-- **A-Level Organic Chemistry:** [Organic Chemistry](https://alevel.wyattau.com/docs/chemistry/organic-chemistry)
-- **DSE Carbon Chemistry:** [Carbon Chemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-carbon-chemistry)
+- **A-Level Organic Chemistry:**
+  [Organic Chemistry](https://alevel.wyattau.com/docs/chemistry/organic-chemistry)
+- **DSE Carbon Chemistry:**
+  [Carbon Chemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-carbon-chemistry)
 
 ## Common Pitfalls
 

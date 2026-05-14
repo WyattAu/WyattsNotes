@@ -1,7 +1,8 @@
 ---
 title: Chemical Equilibrium
-description: "Rigorous IB chemistry notes covering Chemical Equilibrium. Includes definitions, derivations, worked examples, and exam-style problems."
-  constants, and acid-base equilibrium.
+description:
+  'Rigorous IB chemistry notes covering Chemical Equilibrium. Includes definitions, derivations,
+  worked examples, and exam-style problems. constants, and acid-base equilibrium.'
 slug: equilibrium
 ---
 
@@ -31,13 +32,13 @@ At equilibrium:
 
 ### Characteristics of Equilibrium
 
-| Property | Description |
+| Property          | Description                          |
 | ----------------- | ------------------------------------ |
-| Forward rate | Equals reverse rate |
-| Concentrations | Constant (but not necessarily equal) |
-| Can be approached | From either direction |
-| Dynamic | Both reactions continue |
-| Closed system | Required |
+| Forward rate      | Equals reverse rate                  |
+| Concentrations    | Constant (but not necessarily equal) |
+| Can be approached | From either direction                |
+| Dynamic           | Both reactions continue              |
+| Closed system     | Required                             |
 
 ---
 
@@ -93,11 +94,11 @@ $$
 Q_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
-| Comparison | Meaning |
+| Comparison | Meaning                                       |
 | ---------- | --------------------------------------------- |
-| $Q \lt K$ | Reaction proceeds forward (more products) |
-| $Q = K$ | System is at equilibrium |
-| $Q \gt K$ | Reaction proceeds in reverse (more reactants) |
+| $Q \lt K$  | Reaction proceeds forward (more products)     |
+| $Q = K$    | System is at equilibrium                      |
+| $Q \gt K$  | Reaction proceeds in reverse (more reactants) |
 
 ---
 
@@ -110,29 +111,29 @@ And restore equilibrium.
 
 ### Effect of Concentration Changes
 
-| Change | System Response |
+| Change              | System Response           |
 | ------------------- | ------------------------- |
 | Increase [reactant] | Shift to products (right) |
 | Decrease [reactant] | Shift to reactants (left) |
-| Increase [product] | Shift to reactants (left) |
-| Decrease [product] | Shift to products (right) |
+| Increase [product]  | Shift to reactants (left) |
+| Decrease [product]  | Shift to products (right) |
 
 ### Effect of Pressure Changes (Gases)
 
-| Change | System Response |
+| Change            | System Response                       |
 | ----------------- | ------------------------------------- |
 | Increase pressure | Shift to side with fewer moles of gas |
-| Decrease pressure | Shift to side with more moles of gas |
+| Decrease pressure | Shift to side with more moles of gas  |
 
 **Important**: Changing pressure by adding an inert gas does NOT shift the equilibrium (partial
 Pressures of reacting gases are unchanged).
 
 ### Effect of Temperature Changes
 
-| Change | System Response | Effect on $K$ |
+| Change               | System Response                | Effect on $K$ |
 | -------------------- | ------------------------------ | ------------- |
-| Increase temperature | Shift in endothermic direction | $K$ changes |
-| Decrease temperature | Shift in exothermic direction | $K$ changes |
+| Increase temperature | Shift in endothermic direction | $K$ changes   |
+| Decrease temperature | Shift in exothermic direction  | $K$ changes   |
 
 :::warning[Exam Tip]
 
@@ -165,11 +166,11 @@ $448\degree\mathrm{C}$.
 If $1.0\mathrm{ mol}$ of H$_2$ and $1.0\mathrm{ mol}$ of I$_2$ are placed in a $1.0\mathrm{ L}$
 Flask:
 
-| | H$_2$ | I$_2$ | HI |
+|             | H$_2$   | I$_2$   | HI    |
 | ----------- | ------- | ------- | ----- |
-| Initial | 1.0 | 1.0 | 0 |
-| Change | $-x$ | $-x$ | $+2x$ |
-| Equilibrium | $1.0-x$ | $1.0-x$ | $2x$ |
+| Initial     | 1.0     | 1.0     | 0     |
+| Change      | $-x$    | $-x$    | $+2x$ |
+| Equilibrium | $1.0-x$ | $1.0-x$ | $2x$  |
 
 $$
 K_c = \frac{(2x)^2}{(1.0-x)(1.0-x)} = \frac{4x^2}{(1.0-x)^2} = 50.5
@@ -187,8 +188,7 @@ $$
 9.11x = 7.11 \implies x = 0.781
 $$
 
-Equilibrium concentrations: [H$_2$] = [I$_2$] = $0.219\mathrm{ mol/L}$[HI] =
-$1.562\mathrm{ mol/L}$.
+Equilibrium concentrations: [H$_2$] = [I$_2$] = $0.219\mathrm{ mol/L}$[HI] = $1.562\mathrm{ mol/L}$.
 
 :::
 
@@ -208,11 +208,11 @@ $$
 \mathrm{N}_2(\mathrm{g}) + 3\mathrm{H}_2(\mathrm{g}) \rightleftharpoons 2\mathrm{NH}_3(\mathrm{g}) \quad \Delta H = -92\mathrm{ kJ/mol}
 $$
 
-| Condition | Le Chatelier Prediction | Industrial Choice |
+| Condition   | Le Chatelier Prediction                     | Industrial Choice                                                  |
 | ----------- | ------------------------------------------- | ------------------------------------------------------------------ |
-| Temperature | Low (exothermic) favours products | $400\mathrm{--}500\degree\mathrm{C}$ (compromise: reasonable rate) |
-| Pressure | High (fewer moles of gas on product side) | $150\mathrm{--}300\mathrm{ atm}$ (compromise: cost/safety) |
-| Catalyst | Does not change position but speeds up rate | Iron catalyst |
+| Temperature | Low (exothermic) favours products           | $400\mathrm{--}500\degree\mathrm{C}$ (compromise: reasonable rate) |
+| Pressure    | High (fewer moles of gas on product side)   | $150\mathrm{--}300\mathrm{ atm}$ (compromise: cost/safety)         |
+| Catalyst    | Does not change position but speeds up rate | Iron catalyst                                                      |
 
 ### The Contact Process
 
@@ -220,11 +220,11 @@ $$
 2\mathrm{SO}_2(\mathrm{g}) + \mathrm{O}_2(\mathrm{g}) \rightleftharpoons 2\mathrm{SO}_3(\mathrm{g}) \quad \Delta H = -197\mathrm{ kJ/mol}
 $$
 
-| Condition | Le Chatelier Prediction | Industrial Choice |
+| Condition   | Le Chatelier Prediction   | Industrial Choice                             |
 | ----------- | ------------------------- | --------------------------------------------- |
-| Temperature | Low (exothermic) | $400\mathrm{--}450\degree\mathrm{C}$ |
-| Pressure | High (fewer moles of gas) | $1\mathrm{--}2\mathrm{ atm}$ (cost effective) |
-| Catalyst | V$_2$O$_5$ catalyst | V$_2$O$_5$ |
+| Temperature | Low (exothermic)          | $400\mathrm{--}450\degree\mathrm{C}$          |
+| Pressure    | High (fewer moles of gas) | $1\mathrm{--}2\mathrm{ atm}$ (cost effective) |
+| Catalyst    | V$_2$O$_5$ catalyst       | V$_2$O$_5$                                    |
 
 ---
 
@@ -236,21 +236,21 @@ $$
 \mathrm{pH} = -\log[\mathrm{H}^+]
 $$
 
-| pH | Description |
+| pH      | Description                        |
 | ------- | ---------------------------------- |
-| $\lt 7$ | Acidic |
-| $= 7$ | Neutral (at $25\degree\mathrm{C}$) |
-| $\gt 7$ | Basic (alkaline) |
+| $\lt 7$ | Acidic                             |
+| $= 7$   | Neutral (at $25\degree\mathrm{C}$) |
+| $\gt 7$ | Basic (alkaline)                   |
 
 ### Strong and Weak Acids
 
-| Property | Strong Acid | Weak Acid |
-| ----------------------- | ------------------------- | ----------------------- |
-| Dissociation | Complete | Partial |
-| $[\mathrm{H}^+]$ vs $c$ | $[\mathrm{H}^+] = c$ | $[\mathrm{H}^+] \lt c$ |
-| Equilibrium | No equilibrium | Equilibrium established |
-| pH | Lower (for same $c$) | Higher (for same $c$) |
-| Examples | HCl, HNO$_3$H$_2$SO$_4$ | CH$_3$COOH, HF, HCN |
+| Property                | Strong Acid             | Weak Acid               |
+| ----------------------- | ----------------------- | ----------------------- |
+| Dissociation            | Complete                | Partial                 |
+| $[\mathrm{H}^+]$ vs $c$ | $[\mathrm{H}^+] = c$    | $[\mathrm{H}^+] \lt c$  |
+| Equilibrium             | No equilibrium          | Equilibrium established |
+| pH                      | Lower (for same $c$)    | Higher (for same $c$)   |
+| Examples                | HCl, HNO$_3$H$_2$SO$_4$ | CH$_3$COOH, HF, HCN     |
 
 ### Acid Dissociation Constant ($K_a$)
 
@@ -367,9 +367,9 @@ A buffer works best within $\pm 1$ pH unit of its $\mathrm{p}K_a$.
 ### How Buffers Work
 
 1. **Adding acid (H$^+$)**: the conjugate base (A$^-$) reacts with the added H$^+$ to form more HA,
- minimising pH change.
+   minimising pH change.
 2. **Adding base (OH$^-$)**: the weak acid (HA) reacts with the added OH$^-$ to form A$^-$ and
- H$_2$O, minimising pH change.
+   H$_2$O, minimising pH change.
 
 :::info[Example]
 
@@ -409,11 +409,11 @@ $$
 An acid-base indicator is a weak acid that has different colours in its protonated and deprotonated
 Forms.
 
-| Indicator | pH Range | Colour Change |
+| Indicator        | pH Range  | Colour Change         |
 | ---------------- | --------- | --------------------- |
-| Methyl orange | 3.1--4.4 | Red $\to$ yellow |
-| Bromothymol blue | 6.0--7.6 | Yellow $\to$ blue |
-| Phenolphthalein | 8.3--10.0 | Colourless $\to$ pink |
+| Methyl orange    | 3.1--4.4  | Red $\to$ yellow      |
+| Bromothymol blue | 6.0--7.6  | Yellow $\to$ blue     |
+| Phenolphthalein  | 8.3--10.0 | Colourless $\to$ pink |
 
 ---
 
@@ -433,23 +433,23 @@ $$
 
 ### Common $K_{sp}$ Values
 
-| Salt | $K_{sp}$ |
+| Salt     | $K_{sp}$              |
 | -------- | --------------------- |
-| AgCl | $1.8 \times 10^{-10}$ |
-| AgBr | $5.0 \times 10^{-13}$ |
-| AgI | $8.3 \times 10^{-17}$ |
+| AgCl     | $1.8 \times 10^{-10}$ |
+| AgBr     | $5.0 \times 10^{-13}$ |
+| AgI      | $8.3 \times 10^{-17}$ |
 | BaSO$_4$ | $1.1 \times 10^{-10}$ |
-| CaCO$_3$ | $3.4 \times 10^{-9}$ |
-| PbCl$_2$ | $1.7 \times 10^{-5}$ |
+| CaCO$_3$ | $3.4 \times 10^{-9}$  |
+| PbCl$_2$ | $1.7 \times 10^{-5}$  |
 
 ### Predicting Precipitation
 
 Compare the **ion product** ($Q$) with $K_{sp}$:
 
-| Condition | Result |
+| Condition      | Result                             |
 | -------------- | ---------------------------------- |
-| $Q \lt K_{sp}$ | Unsaturated (no precipitate) |
-| $Q = K_{sp}$ | Saturated (at equilibrium) |
+| $Q \lt K_{sp}$ | Unsaturated (no precipitate)       |
+| $Q = K_{sp}$   | Saturated (at equilibrium)         |
 | $Q \gt K_{sp}$ | Supersaturated (precipitate forms) |
 
 ### Common Ion Effect
@@ -503,11 +503,11 @@ Equilibrium, $0.40\mathrm{ mol}$ of Cl$_2$ is present.
 
 **(a)** Calculate $K_c$.
 
-| | PCl$_5$ | PCl$_3$ | Cl$_2$ |
+|             | PCl$_5$ | PCl$_3$ | Cl$_2$  |
 | ----------- | ------- | ------- | ------- |
-| Initial | 0.50 | 0 | 0 |
-| Change | $-0.20$ | $+0.20$ | $+0.20$ |
-| Equilibrium | 0.30 | 0.20 | 0.20 |
+| Initial     | 0.50    | 0       | 0       |
+| Change      | $-0.20$ | $+0.20$ | $+0.20$ |
+| Equilibrium | 0.30    | 0.20    | 0.20    |
 
 $$
 K_c = \frac{[\mathrm{PCl}_3][\mathrm{Cl}_2]}{[\mathrm{PCl}_5]} = \frac{(0.20)(0.20)}{0.30} = \frac{0.04}{0.30} = 0.133
@@ -550,14 +550,14 @@ Four are 1:1 salts, so the highest $K_{sp}$ gives the highest solubility: BaSO$_
 
 ## Summary
 
-| Concept | Formula |
+| Concept               | Formula                                                                    |
 | --------------------- | -------------------------------------------------------------------------- |
-| $K_c$ | $K_c = \dfrac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}$ |
-| $K_p$ | $K_p = K_c(RT)^{\Delta n}$ |
-| pH | $\mathrm{pH} = -\log[\mathrm{H}^+]$ |
-| $K_w$ | $K_w = [\mathrm{H}^+][\mathrm{OH}^-] = 10^{-14}$ |
-| Henderson-Hasselbalch | $\mathrm{pH} = \mathrm{p}K_a + \log\dfrac{[\mathrm{A}^-]}{[\mathrm{HA}]}$ |
-| $K_{sp}$ | $K_{sp} = [\mathrm{M}^{b+}]^a[\mathrm{X}^{a-}]^b$ |
+| $K_c$                 | $K_c = \dfrac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}$ |
+| $K_p$                 | $K_p = K_c(RT)^{\Delta n}$                                                 |
+| pH                    | $\mathrm{pH} = -\log[\mathrm{H}^+]$                                        |
+| $K_w$                 | $K_w = [\mathrm{H}^+][\mathrm{OH}^-] = 10^{-14}$                           |
+| Henderson-Hasselbalch | $\mathrm{pH} = \mathrm{p}K_a + \log\dfrac{[\mathrm{A}^-]}{[\mathrm{HA}]}$  |
+| $K_{sp}$              | $K_{sp} = [\mathrm{M}^{b+}]^a[\mathrm{X}^{a-}]^b$                          |
 
 :::tip[Exam Strategy]
 
@@ -631,10 +631,10 @@ $$
 
 The reaction shifts left. Let $x$ be the moles of Cl$_2$ that react:
 
-| | PCl$_5$ | PCl$_3$ | Cl$_2$ |
+|             | PCl$_5$   | PCl$_3$    | Cl$_2$    |
 | ----------- | --------- | ---------- | --------- |
-| Initial | 0.200 | 0.0650 | 0.165 |
-| Change | $+x$ | $-x$ | $-x$ |
+| Initial     | 0.200     | 0.0650     | 0.165     |
+| Change      | $+x$      | $-x$       | $-x$      |
 | Equilibrium | $0.200+x$ | $0.0650-x$ | $0.165-x$ |
 
 $$
@@ -820,11 +820,11 @@ Calculate $K_c$.
 
 Initial $[\mathrm{N}_2\mathrm{O}_4] = 1.00 / 2.00 = 0.500\mathrm{ mol/L}$
 
-| | $\mathrm{N}_2\mathrm{O}_4$ | $\mathrm{NO}_2$ |
+|             | $\mathrm{N}_2\mathrm{O}_4$ | $\mathrm{NO}_2$ |
 | ----------- | -------------------------- | --------------- |
-| Initial | $0.500$ | $0$ |
-| Change | $-0.100$ | $+0.200$ |
-| Equilibrium | $0.400$ | $0.200$ |
+| Initial     | $0.500$                    | $0$             |
+| Change      | $-0.100$                   | $+0.200$        |
+| Equilibrium | $0.400$                    | $0.200$         |
 
 Since $[\mathrm{NO}_2]_{\mathrm{eq}} = 0.200\mathrm{ mol/L}$ and it increases by $2x$$x = 0.100$.
 
@@ -951,7 +951,8 @@ $$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
 
 ## Related Content at Other Levels
 
-- **A-Level Equilibria:** [Chemical Equilibrium](https://alevel.wyattau.com/docs/chemistry/chemical-equilibrium)
+- **A-Level Equilibria:**
+  [Chemical Equilibrium](https://alevel.wyattau.com/docs/chemistry/chemical-equilibrium)
 
 ## Common Pitfalls
 

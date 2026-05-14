@@ -1,7 +1,8 @@
 ---
 title: Wave Properties
-description: "Rigorous IB physics notes covering Wave Properties. Includes definitions, derivations, worked examples, and exam-style problems."
-  the Doppler effect.
+description:
+  'Rigorous IB physics notes covering Wave Properties. Includes definitions, derivations, worked
+  examples, and exam-style problems. the Doppler effect.'
 slug: wave-properties
 ---
 
@@ -18,24 +19,24 @@ A wave is a disturbance that transfers energy through a medium or space without 
 
 ### Types of Waves
 
-| Property | Transverse | Longitudinal |
+| Property              | Transverse                          | Longitudinal                  |
 | --------------------- | ----------------------------------- | ----------------------------- |
-| Oscillation direction | Perpendicular to propagation | Parallel to propagation |
-| Examples | Light, water surface waves, strings | Sound, pressure waves |
-| Crests and troughs | Yes | Compressions and rarefactions |
-| Polarisation | Can be polarised | Cannot be polarised |
+| Oscillation direction | Perpendicular to propagation        | Parallel to propagation       |
+| Examples              | Light, water surface waves, strings | Sound, pressure waves         |
+| Crests and troughs    | Yes                                 | Compressions and rarefactions |
+| Polarisation          | Can be polarised                    | Cannot be polarised           |
 
 ### Wave Terminology
 
-| Term | Symbol | Definition | Unit |
+| Term         | Symbol     | Definition                                        | Unit |
 | ------------ | ---------- | ------------------------------------------------- | ---- |
-| Displacement | $x$ or $y$ | Distance from equilibrium | m |
-| Amplitude | $A$ | Maximum displacement | m |
-| Wavelength | $\lambda$ | Distance between two consecutive identical points | m |
-| Frequency | $f$ | Number of complete oscillations per second | Hz |
-| Period | $T$ | Time for one complete oscillation | s |
-| Wave speed | $v$ | Speed at which the wave propagates | m/s |
-| Phase | $\phi$ | Position in the cycle of oscillation | rad |
+| Displacement | $x$ or $y$ | Distance from equilibrium                         | m    |
+| Amplitude    | $A$        | Maximum displacement                              | m    |
+| Wavelength   | $\lambda$  | Distance between two consecutive identical points | m    |
+| Frequency    | $f$        | Number of complete oscillations per second        | Hz   |
+| Period       | $T$        | Time for one complete oscillation                 | s    |
+| Wave speed   | $v$        | Speed at which the wave propagates                | m/s  |
+| Phase        | $\phi$     | Position in the cycle of oscillation              | rad  |
 
 ### Relationships
 
@@ -112,12 +113,12 @@ Pressure) and rarefactions (low pressure).
 
 ### Speed of Sound
 
-| Medium | Speed (m/s) |
+| Medium                         | Speed (m/s) |
 | ------------------------------ | ----------- |
-| Air at $20\degree\mathrm{C}$ | 343 |
-| Water at $20\degree\mathrm{C}$ | 1482 |
-| Steel | 5960 |
-| Glass | 5640 |
+| Air at $20\degree\mathrm{C}$   | 343         |
+| Water at $20\degree\mathrm{C}$ | 1482        |
+| Steel                          | 5960        |
+| Glass                          | 5640        |
 
 The speed of sound in air depends on temperature:
 
@@ -145,14 +146,14 @@ $$
 
 Where $I_0 = 10^{-12}\mathrm{ W/m}^2$ is the threshold of hearing.
 
-| Source | Level (dB) |
+| Source               | Level (dB) |
 | -------------------- | ---------- |
-| Threshold of hearing | 0 |
-| Whisper | 30 |
-| Normal conversation | 60 |
-| Busy traffic | 80 |
-| Rock concert | 120 |
-| Jet engine at 30 m | 150 |
+| Threshold of hearing | 0          |
+| Whisper              | 30         |
+| Normal conversation  | 60         |
+| Busy traffic         | 80         |
+| Rock concert         | 120        |
+| Jet engine at 30 m   | 150        |
 
 :::warning[Exam Tip]
 
@@ -165,15 +166,15 @@ The intensity. Decibels are logarithmic, so you cannot add them.
 
 ## Electromagnetic Spectrum
 
-| Region | Wavelength Range | Frequency Range |
+| Region        | Wavelength Range                       | Frequency Range                                          |
 | ------------- | -------------------------------------- | -------------------------------------------------------- |
-| Radio waves | $\gt 0.1\mathrm{ m}$ | $\lt 3 \times 10^9\mathrm{ Hz}$ |
-| Microwaves | $0.1\mathrm{ mm}$ to $0.1\mathrm{ m}$ | $3 \times 10^9$ to $3 \times 10^{12}\mathrm{ Hz}$ |
-| Infrared | $700\mathrm{ nm}$ to $0.1\mathrm{ mm}$ | $3 \times 10^{12}$ to $4.3 \times 10^{14}\mathrm{ Hz}$ |
+| Radio waves   | $\gt 0.1\mathrm{ m}$                   | $\lt 3 \times 10^9\mathrm{ Hz}$                          |
+| Microwaves    | $0.1\mathrm{ mm}$ to $0.1\mathrm{ m}$  | $3 \times 10^9$ to $3 \times 10^{12}\mathrm{ Hz}$        |
+| Infrared      | $700\mathrm{ nm}$ to $0.1\mathrm{ mm}$ | $3 \times 10^{12}$ to $4.3 \times 10^{14}\mathrm{ Hz}$   |
 | Visible light | $400\mathrm{ nm}$ to $700\mathrm{ nm}$ | $4.3 \times 10^{14}$ to $7.5 \times 10^{14}\mathrm{ Hz}$ |
-| Ultraviolet | $10\mathrm{ nm}$ to $400\mathrm{ nm}$ | $7.5 \times 10^{14}$ to $3 \times 10^{16}\mathrm{ Hz}$ |
-| X-rays | $0.01\mathrm{ nm}$ to $10\mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19}\mathrm{ Hz}$ |
-| Gamma rays | $\lt 0.01\mathrm{ nm}$ | $\gt 3 \times 10^{19}\mathrm{ Hz}$ |
+| Ultraviolet   | $10\mathrm{ nm}$ to $400\mathrm{ nm}$  | $7.5 \times 10^{14}$ to $3 \times 10^{16}\mathrm{ Hz}$   |
+| X-rays        | $0.01\mathrm{ nm}$ to $10\mathrm{ nm}$ | $3 \times 10^{16}$ to $3 \times 10^{19}\mathrm{ Hz}$     |
+| Gamma rays    | $\lt 0.01\mathrm{ nm}$                 | $\gt 3 \times 10^{19}\mathrm{ Hz}$                       |
 
 ### Key Properties
 
@@ -273,12 +274,12 @@ For a string of length $L$ fixed at both ends:
 
 **Harmonics**:
 
-| Harmonic | Wavelength | Frequency |
+| Harmonic          | Wavelength                  | Frequency                     |
 | ----------------- | --------------------------- | ----------------------------- |
-| 1st (fundamental) | $\lambda_1 = 2L$ | $f_1 = \dfrac{v}{2L}$ |
-| 2nd | $\lambda_2 = L$ | $f_2 = \dfrac{v}{L} = 2f_1$ |
-| 3rd | $\lambda_3 = \dfrac{2L}{3}$ | $f_3 = \dfrac{3v}{2L} = 3f_1$ |
-| $n$Th | $\lambda_n = \dfrac{2L}{n}$ | $f_n = \dfrac{nv}{2L} = nf_1$ |
+| 1st (fundamental) | $\lambda_1 = 2L$            | $f_1 = \dfrac{v}{2L}$         |
+| 2nd               | $\lambda_2 = L$             | $f_2 = \dfrac{v}{L} = 2f_1$   |
+| 3rd               | $\lambda_3 = \dfrac{2L}{3}$ | $f_3 = \dfrac{3v}{2L} = 3f_1$ |
+| $n$Th             | $\lambda_n = \dfrac{2L}{n}$ | $f_n = \dfrac{nv}{2L} = nf_1$ |
 
 The wave speed on a string under tension $T$ with mass per unit length $\mu$:
 
@@ -382,12 +383,12 @@ $$
 
 ### Applications
 
-| Application | Description |
+| Application        | Description                                |
 | ------------------ | ------------------------------------------ |
-| Radar guns | Measure speed of vehicles |
-| Medical ultrasound | Measure blood flow velocity |
-| Astronomy | Measure speed of stars/galaxies (redshift) |
-| Weather radar | Track storm systems |
+| Radar guns         | Measure speed of vehicles                  |
+| Medical ultrasound | Measure blood flow velocity                |
+| Astronomy          | Measure speed of stars/galaxies (redshift) |
+| Weather radar      | Track storm systems                        |
 
 :::info[Example]
 
@@ -411,7 +412,7 @@ Diffraction is the spreading of waves when they pass through an aperture or arou
 ### Conditions
 
 - Diffraction is most significant when the wavelength is comparable to the size of the aperture or
- obstacle.
+  obstacle.
 - For light (very small $\lambda$), diffraction requires very narrow slits.
 - For sound (larger $\lambda$), diffraction is more noticeable around everyday objects.
 
@@ -471,12 +472,12 @@ Polarisation is the restriction of the oscillation direction of a transverse wav
 
 ### Methods
 
-| Method | Description |
+| Method            | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| Polarising filter | Allows only one plane of oscillation to pass |
-| Reflection | Light reflected from a surface is partially polarised |
-| Birefringence | Certain crystals split light into two polarised beams |
-| Scattering | Light scattered by the atmosphere is partially polarised |
+| Polarising filter | Allows only one plane of oscillation to pass             |
+| Reflection        | Light reflected from a surface is partially polarised    |
+| Birefringence     | Certain crystals split light into two polarised beams    |
+| Scattering        | Light scattered by the atmosphere is partially polarised |
 
 ### Malus's Law
 
@@ -591,24 +592,24 @@ $$
 
 ## Summary
 
-| Quantity | Formula |
+| Quantity                | Formula                           |
 | ----------------------- | --------------------------------- |
-| Wave speed | $v = f\lambda$ |
-| Intensity | $I = \dfrac{P}{4\pi r^2}$ |
-| Sound level | $\beta = 10\log_{10}(I/I_0)$ |
-| Double-slit maxima | $d\sin\theta = n\lambda$ |
-| Single-slit minima | $a\sin\theta = n\lambda$ |
-| String harmonics | $f_n = \dfrac{nv}{2L}$ |
-| Doppler (source moving) | $f' = \dfrac{f}{1 \mp v_s/v_w}$ |
-| Malus's law | $I = I_0\cos^2\theta$ |
-| Rayleigh criterion | $\theta = 1.22\dfrac{\lambda}{D}$ |
+| Wave speed              | $v = f\lambda$                    |
+| Intensity               | $I = \dfrac{P}{4\pi r^2}$         |
+| Sound level             | $\beta = 10\log_{10}(I/I_0)$      |
+| Double-slit maxima      | $d\sin\theta = n\lambda$          |
+| Single-slit minima      | $a\sin\theta = n\lambda$          |
+| String harmonics        | $f_n = \dfrac{nv}{2L}$            |
+| Doppler (source moving) | $f' = \dfrac{f}{1 \mp v_s/v_w}$   |
+| Malus's law             | $I = I_0\cos^2\theta$             |
+| Rayleigh criterion      | $\theta = 1.22\dfrac{\lambda}{D}$ |
 
 :::tip[Exam Strategy]
 
 For wave problems, always identify the type of wave and the relevant equations. For interference
 Problems, determine whether you need path difference or phase difference. For standing waves,
- identify whether the system is a string, open pipe, or closed pipe. For Doppler problems,
-Identify what is moving (source, observer, or both).
+identify whether the system is a string, open pipe, or closed pipe. For Doppler problems, Identify
+what is moving (source, observer, or both).
 
 :::
 
@@ -663,11 +664,11 @@ $$
 
 Where $\Delta x$ is the path difference.
 
-| Phase Difference | Description |
+| Phase Difference          | Description              |
 | ------------------------- | ------------------------ |
-| $0, 2\pi, 4\pi, \ldots$ | In phase (constructive) |
+| $0, 2\pi, 4\pi, \ldots$   | In phase (constructive)  |
 | $\pi, 3\pi, 5\pi, \ldots$ | Anti-phase (destructive) |
-| $\pi/2$ | $90\degree$ out of phase |
+| $\pi/2$                   | $90\degree$ out of phase |
 
 ### Coherence
 
@@ -812,18 +813,20 @@ After filter 2: $I_2 = 100\cos^2 30\degree = 100 \times 0.75 = 75\mathrm{ W/m}^2
 After filter 3:
 $I_3 = 75\cos^2(60\degree - 30\degree) = 75\cos^2 30\degree = 75 \times 0.75 = 56.25\mathrm{ W/m}^2$.
 
-For the A-Level treatment of this topic, see [Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
+For the A-Level treatment of this topic, see
+[Wave Properties](https://alevel.wyattau.com/docs/physics/waves/wave-properties).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Wave Properties**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-wave-properties) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Wave Properties**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-wave-properties) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Wave Properties with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Wave
+Properties with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

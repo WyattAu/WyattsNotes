@@ -1,6 +1,8 @@
 ---
 title: Algebraic Expressions
-description: "A-Level Mathematics notes on Algebraic Expressions: Board Coverage; 1. Surds; 1.1 Laws of Surds; 1.2 Irrationality of $\sqrt{2}$."
+description:
+  'A-Level Mathematics notes on Algebraic Expressions: Board Coverage; 1. Surds; 1.1 Laws of Surds;
+  1.2 Irrationality of $\sqrt{2}$.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -9,14 +11,15 @@ categories:
   - Maths
 slug: algebraic-expressions
 ---
+
 ## Board Coverage
 
-| Board | Paper | Notes |
+| Board      | Paper   | Notes                                       |
 | ---------- | ------- | ------------------------------------------- |
-| AQA | Paper 1 | Surds, indices, polynomials, factor theorem |
-| Edexcel | P1, P2 | Same core; P2 includes harder factorisation |
-| OCR (A) | Paper 1 | Similar coverage |
-| CIE (9709) | P1 | Surds, quadratics, factor theorem |
+| AQA        | Paper 1 | Surds, indices, polynomials, factor theorem |
+| Edexcel    | P1, P2  | Same core; P2 includes harder factorisation |
+| OCR (A)    | Paper 1 | Similar coverage                            |
+| CIE (9709) | P1      | Surds, quadratics, factor theorem           |
 
 <hr />
 
@@ -26,9 +29,8 @@ slug: algebraic-expressions
 Is, an expression of the form $\sqrt{n}$ where $n \in \mathbb{Q}^+$ and
 $\sqrt{n} \notin \mathbb{Q}$.
 
-The most familiar surds are $\sqrt{2}$$\sqrt{3}$$\sqrt{5}$And so on. The set of surds is a
-Subset of the algebraic numbers, and they arise whenever we solve equations of degree 2 or
-Higher.
+The most familiar surds are $\sqrt{2}$$\sqrt{3}$$\sqrt{5}$And so on. The set of surds is a Subset of
+the algebraic numbers, and they arise whenever we solve equations of degree 2 or Higher.
 
 ### 1.1 Laws of Surds
 
@@ -64,19 +66,16 @@ $$
 \end{aligned}
 $$
 
-:::warning
-A common error is to "rationalise" by splitting the fraction:
-$\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always distribute the
-Denominator correctly.
-:::
+:::warning A common error is to "rationalise" by splitting the fraction:
+$\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always
+distribute the Denominator correctly. :::
 
 ### 1.2 Irrationality of $\sqrt{2}$
 
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ We proceed by contradiction. Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$
-Where $p, q \in \mathbb{Z}^+$$q \neq 0$And $\gcd(p, q) = 1$ (i.e., the fraction is in lowest
-Terms).
+Where $p, q \in \mathbb{Z}^+$$q \neq 0$And $\gcd(p, q) = 1$ (i.e., the fraction is in lowest Terms).
 
 $$
 \begin{aligned}
@@ -176,8 +175,7 @@ Factorisation is the reverse of expansion. The key techniques are:
 
 - **Common factors:** $ab + ac = a(b + c)$
 - **Difference of two squares:** $a^2 - b^2 = (a - b)(a + b)$
-- **Trinomial (quadratic):** $ax^2 + bx + c = (px + q)(rx + s)$ where $pr = a$$ps + qr = b$
- $qs = c$
+- **Trinomial (quadratic):** $ax^2 + bx + c = (px + q)(rx + s)$ where $pr = a$$ps + qr = b$ $qs = c$
 - **Grouping:** $ab + ac + db + dc = a(b + c) + d(b + c) = (a + d)(b + c)$
 
 **Theorem (Difference of Two Squares).** $a^2 - b^2 = (a - b)(a + b)$.
@@ -236,8 +234,8 @@ Have smaller degree than the divisor.
 ### 4.2 Why Polynomial Division Mirrors Integer Long Division
 
 The structural analogy is deep. Both are instances of a _Euclidean domain_ — an algebraic structure
-Where we can perform division with remainder. In $\mathbb{Z}$The "degree" is the absolute value;
-In $\mathbb{R}[x]$The degree is the polynomial degree. The algorithm is the same: at each step,
+Where we can perform division with remainder. In $\mathbb{Z}$The "degree" is the absolute value; In
+$\mathbb{R}[x]$The degree is the polynomial degree. The algorithm is the same: at each step,
 Eliminate the leading term.
 
 <hr />
@@ -260,8 +258,8 @@ F(a) &= (a - a) \cdot q(a) + r = 0 \cdot q(a) + r = r \quad \blacksquare
 \end{aligned}
 $$
 
-_Intuition._ When you plug in $x = a$The $(x - a)$ factor vanishes, leaving only the remainder.
-The remainder is the "leftover" that doesn't contain the factor $(x - a)$.
+_Intuition._ When you plug in $x = a$The $(x - a)$ factor vanishes, leaving only the remainder. The
+remainder is the "leftover" that doesn't contain the factor $(x - a)$.
 
 ### 5.2 The Factor Theorem
 
@@ -272,9 +270,8 @@ _Proof._
 ($\Rightarrow$) If $(x - a)$ is a factor, then $f(x) = (x - a) \cdot q(x)$. Setting $x = a$:
 $f(a) = (a - a) \cdot q(a) = 0$.
 
-($\Leftarrow$) If $f(a) = 0$Then by the Remainder Theorem, the remainder upon division by
-$(x - a)$ is $f(a) = 0$. So $f(x) = (x - a) \cdot q(x)$Meaning $(x - a)$ is a factor.
-$\blacksquare$
+($\Leftarrow$) If $f(a) = 0$Then by the Remainder Theorem, the remainder upon division by $(x - a)$
+is $f(a) = 0$. So $f(x) = (x - a) \cdot q(x)$Meaning $(x - a)$ is a factor. $\blacksquare$
 
 _Intuition._ The Factor Theorem connects algebra (polynomials) to geometry (roots on the $x$-axis).
 A root $x = a$ means the graph crosses the $x$-axis at $a$Which means $(x - a)$ must divide the
@@ -292,8 +289,7 @@ F(2) &= 2^3 - 3(2)^2 + 4 = 8 - 12 + 4 = 0
 \end{aligned}
 $$
 
-Since $f(2) = 0$$(x - 2)$ is a factor. To find the remaining factor, we perform polynomial
-Division:
+Since $f(2) = 0$$(x - 2)$ is a factor. To find the remaining factor, we perform polynomial Division:
 
 $$
 \begin{aligned}
@@ -313,11 +309,9 @@ $$
 
 $$\frac{ab + ac}{ad + ae} = \frac{a(b + c)}{a(d + e)} = \frac{b + c}{d + e}$$
 
-:::warning
-You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
+:::warning You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
 In the denominator is a factor of the whole expression, but the $x$ in the numerator is only one
-Term.
-:::
+Term. :::
 
 ### 6.2 Addition and Subtraction
 
@@ -389,8 +383,8 @@ $$
 
 <hr />
 
-**Problem 4.** When $f(x) = 2x^3 + ax^2 + bx - 12$ is divided by $(x - 1)$ the remainder is $-6$
-And $(x + 2)$ is a factor. Find $a$ and $b$.
+**Problem 4.** When $f(x) = 2x^3 + ax^2 + bx - 12$ is divided by $(x - 1)$ the remainder is $-6$ And
+$(x + 2)$ is a factor. Find $a$ and $b$.
 
 <details>
 <summary>Solution</summary>
@@ -465,8 +459,8 @@ $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
 
 <hr />
 
-**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$$(x + 1)$And
-$(x - 3)$ are all factors, and hence factorise $f(x)$ completely.
+**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$$(x + 1)$And $(x - 3)$ are
+all factors, and hence factorise $f(x)$ completely.
 
 <details>
 <summary>Solution</summary>
@@ -653,14 +647,15 @@ $k = -2$: gives $x^2 - 2x + 1 = (x - 1)^2$ ✓
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Algebraic Expressions**? The [diagnostic test](/docs/alevel/maths/diagnostics/diag-algebraic-expressions) contains the hardest questions within the A-Level specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Algebraic Expressions**? The
+[diagnostic test](/docs/alevel/maths/diagnostics/diag-algebraic-expressions) contains the hardest
+questions within the A-Level specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Algebraic Expressions with other pure mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Algebraic
+Expressions with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+building a personal test matrix. :::
 
 ## Common Pitfalls
 

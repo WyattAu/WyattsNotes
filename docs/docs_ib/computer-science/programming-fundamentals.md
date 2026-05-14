@@ -1,11 +1,12 @@
 ---
 title: Programming Fundamentals
 tags:
-- IB
-- CS
+  - IB
+  - CS
 slug: programming-fundamentals
-description: "Rigorous IB computer science notes covering Programming Fundamentals. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB computer science notes covering Programming Fundamentals. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Variables, Constants, and Data Types
@@ -38,13 +39,13 @@ Languages with constant enforcement).
 
 ### Primitive Data Types
 
-| Data Type | Description | Typical Size | Example Values |
+| Data Type | Description                                 | Typical Size | Example Values        |
 | --------- | ------------------------------------------- | ------------ | --------------------- |
-| INTEGER | Whole numbers (positive, negative, or zero) | 4 bytes | -42, 0, 1024 |
-| FLOAT | Real numbers with fractional parts | 8 bytes | 3.14, -0.001, 1.0e10 |
-| CHAR | A single character | 1 byte | 'A', 'z', '9', '?' |
-| STRING | A sequence of characters | Variable | "Hello", "IB CS 2025" |
-| BOOLEAN | Logical values | 1 byte | TRUE, FALSE |
+| INTEGER   | Whole numbers (positive, negative, or zero) | 4 bytes      | -42, 0, 1024          |
+| FLOAT     | Real numbers with fractional parts          | 8 bytes      | 3.14, -0.001, 1.0e10  |
+| CHAR      | A single character                          | 1 byte       | 'A', 'z', '9', '?'    |
+| STRING    | A sequence of characters                    | Variable     | "Hello", "IB CS 2025" |
+| BOOLEAN   | Logical values                              | 1 byte       | TRUE, FALSE           |
 
 **INTEGER vs FLOAT:** Integers are exact; floating-point numbers have limited precision due to their
 Binary representation. This matters for comparison. The expression `0.1 + 0.2 = 0.3` may evaluate to
@@ -62,16 +63,16 @@ Comparisons.
 A school management system needs to store the following data. Choose the most appropriate data type
 For each.
 
-| Data Item | Appropriate Data Type | Justification |
-| ----------------------------------- | --------------------- | ------------------------------------------------------------ |
-| Number of students in a class | INTEGER | Whole number, no fractional part needed |
-| Student's average grade (e.g. 85.5) | FLOAT | May have a fractional part |
-| Student's letter grade (A, B, C) | CHAR | Single character |
-| Student's full name | STRING | Multiple characters |
-| Whether a student has graduated | BOOLEAN | Only two possible values: TRUE or FALSE |
-| Maximum allowed absences (fixed) | CONSTANT INTEGER | Known at design time, never changes |
-| School name | CONSTANT STRING | Known at design time, never changes |
-| Pi (3.14159...) | CONSTANT FLOAT | Mathematical constant used throughout the program |
+| Data Item                           | Appropriate Data Type | Justification                                     |
+| ----------------------------------- | --------------------- | ------------------------------------------------- |
+| Number of students in a class       | INTEGER               | Whole number, no fractional part needed           |
+| Student's average grade (e.g. 85.5) | FLOAT                 | May have a fractional part                        |
+| Student's letter grade (A, B, C)    | CHAR                  | Single character                                  |
+| Student's full name                 | STRING                | Multiple characters                               |
+| Whether a student has graduated     | BOOLEAN               | Only two possible values: TRUE or FALSE           |
+| Maximum allowed absences (fixed)    | CONSTANT INTEGER      | Known at design time, never changes               |
+| School name                         | CONSTANT STRING       | Known at design time, never changes               |
+| Pi (3.14159...)                     | CONSTANT FLOAT        | Mathematical constant used throughout the program |
 
 <details>
 <summary>Solution</summary>
@@ -90,15 +91,15 @@ Another mistake is using STRING when CHAR suffices (like grade letters).
 
 ### Arithmetic Operators
 
-| Operator | Description | Example | Result |
+| Operator | Description        | Example   | Result |
 | -------- | ------------------ | --------- | ------ |
-| `+` | Addition | `7 + 3` | 10 |
-| `-` | Subtraction | `7 - 3` | 4 |
-| `*` | Multiplication | `7 * 3` | 21 |
-| `/` | Division | `7 / 3` | 2.33 |
-| DIV | Integer division | `7 DIV 3` | 2 |
-| MOD | Modulo (remainder) | `7 MOD 3` | 1 |
-| `^` | Exponentiation | `2 ^ 10` | 1024 |
+| `+`      | Addition           | `7 + 3`   | 10     |
+| `-`      | Subtraction        | `7 - 3`   | 4      |
+| `*`      | Multiplication     | `7 * 3`   | 21     |
+| `/`      | Division           | `7 / 3`   | 2.33   |
+| DIV      | Integer division   | `7 DIV 3` | 2      |
+| MOD      | Modulo (remainder) | `7 MOD 3` | 1      |
+| `^`      | Exponentiation     | `2 ^ 10`  | 1024   |
 
 **DIV vs `/`:** DIV discards the fractional part (truncates toward zero in most IB pseudocode
 Contexts). `/` produces a floating-point result. For `7 / 3`DIV gives 2 and `/` gives 2.333...
@@ -132,26 +133,26 @@ This pattern generalizes: to extract digit at position $p$ (0-indexed from the r
 
 ### Relational (Comparison) Operators
 
-| Operator | Description | Example | Result |
-| -------- | ------------------------ | -------- | ------ |
-| `=` | Equal to | `5 = 5` | TRUE |
-| `<>` | Not equal to | `5 <> 3` | TRUE |
-| `<` | Less than | `3 < 5` | TRUE |
-| `>` | Greater than | `5 > 3` | TRUE |
-| `$\le$` | Less than or equal to | `5 $\le$` 5 | TRUE |
-| `$\ge$` | Greater than or equal to | `5 $\ge$` 3 | TRUE |
+| Operator | Description              | Example     | Result |
+| -------- | ------------------------ | ----------- | ------ |
+| `=`      | Equal to                 | `5 = 5`     | TRUE   |
+| `<>`     | Not equal to             | `5 <> 3`    | TRUE   |
+| `<`      | Less than                | `3 < 5`     | TRUE   |
+| `>`      | Greater than             | `5 > 3`     | TRUE   |
+| `$\le$`  | Less than or equal to    | `5 $\le$` 5 | TRUE   |
+| `$\ge$`  | Greater than or equal to | `5 $\ge$` 3 | TRUE   |
 
 Relational operators always produce a BOOLEAN result. They can be applied to numeric types
 (comparing magnitude) and string types (comparing lexicographically based on character codes).
 
 ### Logical Operators
 
-| Operator | Description | Truth Table Rule |
+| Operator | Description | Truth Table Rule                       |
 | -------- | ----------- | -------------------------------------- |
-| NOT | Negation | Reverses the truth value |
-| AND | Conjunction | TRUE only when both operands are TRUE |
-| OR | Disjunction | TRUE when at least one operand is TRUE |
-| XOR | Exclusive | TRUE when operands differ |
+| NOT      | Negation    | Reverses the truth value               |
+| AND      | Conjunction | TRUE only when both operands are TRUE  |
+| OR       | Disjunction | TRUE when at least one operand is TRUE |
+| XOR      | Exclusive   | TRUE when operands differ              |
 
 **Operator precedence** (highest to lowest): NOT, AND, OR. This matters in expressions like:
 
@@ -171,14 +172,14 @@ Right and stores the result in the variable on the left. Assignment is not equal
 
 ### Bitwise Operators
 
-| Operator | Description | Example (binary) | Result |
+| Operator | Description                           | Example (binary) | Result |
 | -------- | ------------------------------------- | ---------------- | ------ |
-| AND | Bitwise AND | `1100 AND 1010` | 1000 |
-| OR | Bitwise OR | `1100 OR 1010` | 1110 |
-| XOR | Bitwise exclusive OR | `1100 XOR 1010` | 0110 |
-| NOT | Bitwise complement (one's complement) | `NOT 1100` | 0011 |
-| `<<` | Left shift | `1100 << 1` | 1000 |
-| `>>` | Right shift | `1100 >> 1` | 0110 |
+| AND      | Bitwise AND                           | `1100 AND 1010`  | 1000   |
+| OR       | Bitwise OR                            | `1100 OR 1010`   | 1110   |
+| XOR      | Bitwise exclusive OR                  | `1100 XOR 1010`  | 0110   |
+| NOT      | Bitwise complement (one's complement) | `NOT 1100`       | 0011   |
+| `<<`     | Left shift                            | `1100 << 1`      | 1000   |
+| `>>`     | Right shift                           | `1100 >> 1`      | 0110   |
 
 Bitwise operators operate on the binary representation of integers. Each bit position is treated
 Independently. Bitwise AND is used for masking (extracting specific bits), bitwise OR is used for
@@ -186,17 +187,18 @@ Setting bits, and bitwise XOR is used for toggling bits.
 
 ### Common Pitfalls: Operators
 
-- **Operator precedence confusion:** Without parentheses, `2 + 3 * 4` evaluates to 14, not 20. Always
- use parentheses when in doubt: `(2 + 3) * 4 = 20`.
-- **Integer division surprise:** `7 DIV 2` gives 3, not 3.5. If a fractional result is needed, use `/`
- instead of `DIV`.
-- **MOD with negative numbers:** The behavior of MOD with negative operands varies between languages.
- In IB pseudocode, focus on non-negative operands to avoid ambiguity.
+- **Operator precedence confusion:** Without parentheses, `2 + 3 * 4` evaluates to 14, not 20.
+  Always use parentheses when in doubt: `(2 + 3) * 4 = 20`.
+- **Integer division surprise:** `7 DIV 2` gives 3, not 3.5. If a fractional result is needed, use
+  `/` instead of `DIV`.
+- **MOD with negative numbers:** The behavior of MOD with negative operands varies between
+  languages. In IB pseudocode, focus on non-negative operands to avoid ambiguity.
 - **Confusing `=` (comparison) with `←` (assignment):** In IB pseudocode these are distinct, but in
- many programming languages `=` is assignment and `==` is comparison. Mixing them up causes logic
- errors that are hard to spot.
-- **Bitwise vs logical operators:** `AND` and `OR` in IB pseudocode are logical operators that work on
- BOOLEAN values. Bitwise AND/OR work on the binary representation of integers. Do not confuse them.
+  many programming languages `=` is assignment and `==` is comparison. Mixing them up causes logic
+  errors that are hard to spot.
+- **Bitwise vs logical operators:** `AND` and `OR` in IB pseudocode are logical operators that work
+  on BOOLEAN values. Bitwise AND/OR work on the binary representation of integers. Do not confuse
+  them.
 
 ## Control Structures
 
@@ -282,19 +284,20 @@ OUTPUT grade
 <details>
 <summary>Solution</summary>
 
-| Step | Condition Tested | Result | Action |
-| ---- | ---------------------- | ------ | ------------------- |
-| 1 | `75 $\ge$` 90` | FALSE | Skip to ELSE |
-| 2 | `75 $\ge$` 80` | FALSE | Skip to ELSE |
-| 3 | `75 $\ge$` 70`             | TRUE   | `Grade ← "C"` |
-| 4 | (inner ELSE skipped) | -- | -- |
-| 5 | Output `grade` | -- | Outputs "C" |
+| Step | Condition Tested     | Result | Action        |
+| ---- | -------------------- | ------ | ------------- |
+| 1    | `75 $\ge$` 90`       | FALSE  | Skip to ELSE  |
+| 2    | `75 $\ge$` 80`       | FALSE  | Skip to ELSE  |
+| 3    | `75 $\ge$` 70`       | TRUE   | `Grade ← "C"` |
+| 4    | (inner ELSE skipped) | --     | --            |
+| 5    | Output `grade`       | --     | Outputs "C"   |
 
 Output: **C**
 
 Key insight: Nested IF-ELSE IF evaluates conditions top-down. Once a TRUE condition is found, the
-Corresponding branch executes and all remaining branches are skipped. The order of conditions matters:
-If they were reversed (checking `$\ge$` 60 first), every score of 60 or above would get "D".
+Corresponding branch executes and all remaining branches are skipped. The order of conditions
+matters: If they were reversed (checking `$\ge$` 60 first), every score of 60 or above would get
+"D".
 
 </details>
 
@@ -342,13 +345,13 @@ Must be validated).
 
 ### Comparison of Loop Constructs
 
-| Feature | FOR | WHILE | REPEAT...UNTIL |
+| Feature          | FOR              | WHILE         | REPEAT...UNTIL   |
 | ---------------- | ---------------- | ------------- | ---------------- |
-| Test position | Pre-test | Pre-test | Post-test |
-| Minimum runs | 0 | 0 | 1 |
-| Known iterations | Yes | No | No |
-| Use case | Counting | Unknown count | Input validation |
-| Risk | Off-by-one error | Infinite loop | Always runs once |
+| Test position    | Pre-test         | Pre-test      | Post-test        |
+| Minimum runs     | 0                | 0             | 1                |
+| Known iterations | Yes              | No            | No               |
+| Use case         | Counting         | Unknown count | Input validation |
+| Risk             | Off-by-one error | Infinite loop | Always runs once |
 
 ### Nested Loops
 
@@ -404,29 +407,24 @@ UNTIL value = -1
 **Flag pattern:** Use a boolean to signal loop termination.
 
 ```
-Found ← FALSE
-I ← 0
-WHILE i < LENGTH(arr) AND found = FALSE
- IF arr[i] = target
- THEN found ← TRUE
- END IF
- i ← i + 1
-END WHILE
+
+Found ← FALSE I ← 0 WHILE i < LENGTH(arr) AND found = FALSE IF arr[i] = target THEN found ← TRUE END
+IF i ← i + 1 END WHILE
 
 ### Common Pitfalls: Loops
 
 - **Off-by-one errors:** The most common loop bug. For an array of size $n$Valid indices are $0$ to
- $n - 1$. A FOR loop from $0$ TO $n$ would access index $n$Which is out of bounds. Always trace
- with boundary values.
-- **Infinite WHILE loops:** If the loop variable is never updated inside the loop body, the condition
- never changes and the loop runs forever. Always ensure the loop variable moves toward the termination
- condition.
+  $n - 1$. A FOR loop from $0$ TO $n$ would access index $n$Which is out of bounds. Always trace
+  with boundary values.
+- **Infinite WHILE loops:** If the loop variable is never updated inside the loop body, the
+  condition never changes and the loop runs forever. Always ensure the loop variable moves toward
+  the termination condition.
 - **Modifying the FOR loop variable:** Changing the loop variable inside a FOR loop body (e.g.,
- `i ← i + 2` inside `FOR i ← 1 TO 10`) produces unpredictable results depending on the language.
- Use a WHILE loop if you need non-standard stepping.
-- **REPEAT...UNTIL runs at least once:** Do not use REPEAT...UNTIL when the loop body might not need to
- execute at all. If a file could be empty, a REPEAT...UNTIL that reads from it would still execute
- once with no data.
+  `i ← i + 2` inside `FOR i ← 1 TO 10`) produces unpredictable results depending on the language.
+  Use a WHILE loop if you need non-standard stepping.
+- **REPEAT...UNTIL runs at least once:** Do not use REPEAT...UNTIL when the loop body might not need
+  to execute at all. If a file could be empty, a REPEAT...UNTIL that reads from it would still
+  execute once with no data.
 
 ## Procedures and Functions
 
@@ -502,8 +500,8 @@ result ← celsiusToFahrenheit(100)
 OUTPUT result  // Outputs: 212.0
 ```
 
-The formula $F = C \times \frac{9}{5} + 32$ converts Celsius to Fahrenheit. This function is pure: it
-Has no side effects, and the same input always produces the same output.
+The formula $F = C \times \frac{9}{5} + 32$ converts Celsius to Fahrenheit. This function is pure:
+it Has no side effects, and the same input always produces the same output.
 
 To convert in the opposite direction, use $C = (F - 32) \times \frac{5}{9}$.
 
@@ -512,14 +510,15 @@ To convert in the opposite direction, use $C = (F - 32) \times \frac{5}{9}$.
 ### Common Pitfalls: Procedures and Functions
 
 - **Calling a procedure like a function:** A procedure does not return a value. Writing
- `result ← printStars(5)` is an error because `printStars` is a procedure, not a function.
-- **Missing RETURN statement:** If a function has a code path that does not execute a RETURN statement,
- the behavior is undefined. Always ensure every path through a function ends with a RETURN.
+  `result ← printStars(5)` is an error because `printStars` is a procedure, not a function.
+- **Missing RETURN statement:** If a function has a code path that does not execute a RETURN
+  statement, the behavior is undefined. Always ensure every path through a function ends with a
+  RETURN.
 - **Side effects in functions:** A function that modifies a global variable or prints output is not
- pure. This makes the function harder to test and reason about. Keep functions pure; use procedures
- for side effects.
-- **Parameter count mismatch:** Calling a function with too many or too few arguments causes an error.
- Always check the function definition to verify the expected number and types of parameters.
+  pure. This makes the function harder to test and reason about. Keep functions pure; use procedures
+  for side effects.
+- **Parameter count mismatch:** Calling a function with too many or too few arguments causes an
+  error. Always check the function definition to verify the expected number and types of parameters.
 
 ## Parameter Passing
 
@@ -562,14 +561,14 @@ The `REF` keyword in IB pseudocode indicates pass by reference. The parameter `x
 
 ### Comparison
 
-| Aspect | By Value | By Reference |
+| Aspect            | By Value                           | By Reference                     |
 | ----------------- | ---------------------------------- | -------------------------------- |
-| What is passed | Copy of the value | Address of the original variable |
-| Original affected | No | Yes |
-| Memory overhead | Yes (copy created) | No (just an address) |
-| Safety | High (original cannot be modified) | Lower (original can be modified) |
-| Use case | Input-only parameters | Output parameters, large objects |
-| Default in IB | Default | Must specify `REF` keyword |
+| What is passed    | Copy of the value                  | Address of the original variable |
+| Original affected | No                                 | Yes                              |
+| Memory overhead   | Yes (copy created)                 | No (just an address)             |
+| Safety            | High (original cannot be modified) | Lower (original can be modified) |
+| Use case          | Input-only parameters              | Output parameters, large objects |
+| Default in IB     | Default                            | Must specify `REF` keyword       |
 
 ### Worked Example: Tracing By-Value vs By-Reference
 
@@ -606,11 +605,11 @@ OUTPUT x, y
 
 | Variable | Before Call | Inside Procedure | After Call |
 | -------- | ----------- | ---------------- | ---------- |
-| `x` | 10 | 10 (unchanged) | 10 |
-| `y` | 20 | 20 (unchanged) | 20 |
-| `a` | -- | 20 | -- |
-| `b` | -- | 10 | -- |
-| `temp` | -- | 10 | -- |
+| `x`      | 10          | 10 (unchanged)   | 10         |
+| `y`      | 20          | 20 (unchanged)   | 20         |
+| `a`      | --          | 20               | --         |
+| `b`      | --          | 10               | --         |
+| `temp`   | --          | 10               | --         |
 
 Inside `swapByValue`: outputs 20, 10. After call: `x = 10``y = 20` (unchanged).
 
@@ -618,10 +617,10 @@ Inside `swapByValue`: outputs 20, 10. After call: `x = 10``y = 20` (unchanged).
 
 | Variable | Before Call | Inside Procedure | After Call |
 | -------- | ----------- | ---------------- | ---------- |
-| `x` | 10 | 20 | 20 |
-| `y` | 20 | 10 | 10 |
-| `a` | -- | 20 (alias for x) | -- |
-| `b` | -- | 10 (alias for y) | -- |
+| `x`      | 10          | 20               | 20         |
+| `y`      | 20          | 10               | 10         |
+| `a`      | --          | 20 (alias for x) | --         |
+| `b`      | --          | 10 (alias for y) | --         |
 
 Inside `swapByRef`: outputs 20, 10. After call: `x = 20``y = 10` (swapped!).
 
@@ -657,12 +656,12 @@ END FUNCTION
 
 **Call stack trace for `factorial(4)`:**
 
-| Call Stack Frame | Action | Return Value |
+| Call Stack Frame | Action                | Return Value      |
 | ---------------- | --------------------- | ----------------- |
-| `factorial(4)` | Calls `factorial(3)` | $4 \times 6 = 24$ |
-| `factorial(3)` | Calls `factorial(2)` | $3 \times 2 = 6$ |
-| `factorial(2)` | Calls `factorial(1)` | $2 \times 1 = 2$ |
-| `factorial(1)` | Returns 1 (base case) | 1 |
+| `factorial(4)`   | Calls `factorial(3)`  | $4 \times 6 = 24$ |
+| `factorial(3)`   | Calls `factorial(2)`  | $3 \times 2 = 6$  |
+| `factorial(2)`   | Calls `factorial(1)`  | $2 \times 1 = 2$  |
+| `factorial(1)`   | Returns 1 (base case) | 1                 |
 
 ### Worked Example: Fibonacci
 
@@ -696,13 +695,13 @@ Recursion into iteration to avoid stack growth.
 
 ### When to Use Recursion vs Iteration
 
-| Criterion | Recursion | Iteration |
+| Criterion   | Recursion                                            | Iteration                   |
 | ----------- | ---------------------------------------------------- | --------------------------- |
-| Readability | Clearer for tree/graph traversal, divide and conquer | Clearer for simple loops |
-| Memory | Uses call stack ($O(n)$ stack frames) | $O(1)$ auxiliary space |
-| Performance | Function call overhead | Generally faster |
-| Risk | Stack overflow for deep recursion | No stack overflow risk |
-| Natural fit | Tree traversal, fractals, backtracking | Linear processing, counting |
+| Readability | Clearer for tree/graph traversal, divide and conquer | Clearer for simple loops    |
+| Memory      | Uses call stack ($O(n)$ stack frames)                | $O(1)$ auxiliary space      |
+| Performance | Function call overhead                               | Generally faster            |
+| Risk        | Stack overflow for deep recursion                    | No stack overflow risk      |
+| Natural fit | Tree traversal, fractals, backtracking               | Linear processing, counting |
 
 ### Worked Example: Tracing a Recursive Function
 
@@ -720,12 +719,12 @@ END FUNCTION
 <details>
 <summary>Solution</summary>
 
-| Call Stack Frame | Action | Return Value |
+| Call Stack Frame | Action                | Return Value |
 | ---------------- | --------------------- | ------------ |
-| `mystery(4)` | Calls `mystery(3)` | $4 + 6 = 10$ |
-| `mystery(3)` | Calls `mystery(2)` | $3 + 3 = 6$ |
-| `mystery(2)` | Calls `mystery(1)` | $2 + 1 = 3$ |
-| `mystery(1)` | Returns 1 (base case) | 1 |
+| `mystery(4)`     | Calls `mystery(3)`    | $4 + 6 = 10$ |
+| `mystery(3)`     | Calls `mystery(2)`    | $3 + 3 = 6$  |
+| `mystery(2)`     | Calls `mystery(1)`    | $2 + 1 = 3$  |
+| `mystery(1)`     | Returns 1 (base case) | 1            |
 
 Result: **10**
 
@@ -741,13 +740,14 @@ The call stack.
 ### Common Pitfalls: Recursion
 
 - **No base case or unreachable base case:** Without a valid base case, recursion is infinite. For
- `factorial(n)` with `n = -1`The base case `n \lt{}= 1` is never reached because the recursive call
- uses `n - 1`Making the argument more negative each time.
+  `factorial(n)` with `n = -1`The base case `n \lt{}= 1` is never reached because the recursive call
+  uses `n - 1`Making the argument more negative each time.
 - **Stack overflow:** Each recursive call adds a frame to the call stack. For deep recursion (e.g.,
- naive `fibonacci(1000)`), the stack exceeds available memory. Prefer iteration for problems requiring
- many levels.
-- **Redundant computation:** Naive recursive Fibonacci makes $O(2^n)$ calls because it recomputes the
- same values repeatedly. Use memoization (caching results) or convert to iteration for efficiency.
+  naive `fibonacci(1000)`), the stack exceeds available memory. Prefer iteration for problems
+  requiring many levels.
+- **Redundant computation:** Naive recursive Fibonacci makes $O(2^n)$ calls because it recomputes
+  the same values repeatedly. Use memoization (caching results) or convert to iteration for
+  efficiency.
 
 ## Programming Paradigms
 
@@ -802,14 +802,14 @@ Overhead (creating new copies of data structures), steep learning curve for impe
 
 ### Paradigm Comparison
 
-| Aspect | Procedural | OOP | Functional |
+| Aspect       | Procedural          | OOP                         | Functional             |
 | ------------ | ------------------- | --------------------------- | ---------------------- |
-| Primary unit | Procedure/function | Object/class | Function |
-| Data | Separate from logic | Encapsulated in objects | Immutable |
-| State | Global/local vars | Object state | No mutable state |
-| Reuse | Libraries | Inheritance, composition | Higher-order functions |
-| Side effects | Common | Controlled by encapsulation | Avoided |
-| Parallelism | Manual | Manual | Natural |
+| Primary unit | Procedure/function  | Object/class                | Function               |
+| Data         | Separate from logic | Encapsulated in objects     | Immutable              |
+| State        | Global/local vars   | Object state                | No mutable state       |
+| Reuse        | Libraries           | Inheritance, composition    | Higher-order functions |
+| Side effects | Common              | Controlled by encapsulation | Avoided                |
+| Parallelism  | Manual              | Manual                      | Natural                |
 
 ### Worked Example: Identifying Programming Paradigms
 
@@ -914,11 +914,11 @@ The diagram uses three fundamental structures:
 
 1. **Process block:** A simple rectangle containing a sequence of statements.
 2. **Selection block:** A rectangle divided into sections. For IF/ELSE, the block is split
- vertically into two parts (true and false branches). For CASE, the block is divided into multiple
- columns.
+   vertically into two parts (true and false branches). For CASE, the block is divided into multiple
+   columns.
 3. **Iteration block:** A rectangle with a condition at the top and the loop body below. For WHILE
- loops, the condition is tested first. For REPEAT...UNTIL loops, the body appears first and the
- condition appears at the bottom.
+   loops, the condition is tested first. For REPEAT...UNTIL loops, the body appears first and the
+   condition appears at the bottom.
 
 Nassi-Shneiderman diagrams are particularly useful for illustrating structured algorithms because
 They make the nesting of control structures visually explicit. They cannot represent unstructured
@@ -953,8 +953,8 @@ END IF
 
 **Key decisions:**
 
-- Used a CONSTANT for `NUM_SCORES` and `PASS_THRESHOLD` to make the code self-documenting and easy to
- modify.
+- Used a CONSTANT for `NUM_SCORES` and `PASS_THRESHOLD` to make the code self-documenting and easy
+  to modify.
 - Used a FOR loop because the number of iterations is known (10).
 - Used the accumulator pattern to maintain a running total.
 - Used IF/THEN/ELSE for the final selection based on the computed average.
@@ -1002,12 +1002,12 @@ END FUNCTION
 
 Trace with `n = 3`:
 
-| Step | i | n | result | i `$\le$` n | result + i \* i |
-| ---- | --- | --- | ------ | -------- | --------------- |
-| 1 | 1 | 3 | 0 | True | 0 + 1 = 1 |
-| 2 | 2 | 3 | 1 | True | 1 + 4 = 5 |
-| 3 | 3 | 3 | 5 | True | 5 + 9 = 14 |
-| 4 | 4 | 3 | 14 | False | -- |
+| Step | i   | n   | result | i `$\le$` n | result + i \* i |
+| ---- | --- | --- | ------ | ----------- | --------------- |
+| 1    | 1   | 3   | 0      | True        | 0 + 1 = 1       |
+| 2    | 2   | 3   | 1      | True        | 1 + 4 = 5       |
+| 3    | 3   | 3   | 5      | True        | 5 + 9 = 14      |
+| 4    | 4   | 3   | 14     | False       | --              |
 
 The function returns 14, which is $1^2 + 2^2 + 3^2 = 14$. It computes the sum of squares.
 
@@ -1020,18 +1020,18 @@ Category.
 <details>
 <summary>Solution</summary>
 
-| Category | Test Input | Expected Output | Rationale |
-| --------- | ---------- | --------------- | -------------------------------------------------- |
-| Normal | 85 | B | Typical value within a grade range |
-| Normal | 42 | F | Typical value in another range |
-| Boundary | 90 | A | Lowest score for grade A |
-| Boundary | 89 | B | Highest score for grade B (boundary between A and B)|
-| Boundary | 60 | D | Lowest score for grade D |
-| Boundary | 0 | F | Lowest possible score |
-| Boundary | 100 | A | Highest possible score |
-| Erroneous | -5 | Error message | Below valid range |
-| Erroneous | 105 | Error message | Above valid range |
-| Erroneous | "abc" | Error message | Wrong data type (string instead of integer) |
+| Category  | Test Input | Expected Output | Rationale                                            |
+| --------- | ---------- | --------------- | ---------------------------------------------------- |
+| Normal    | 85         | B               | Typical value within a grade range                   |
+| Normal    | 42         | F               | Typical value in another range                       |
+| Boundary  | 90         | A               | Lowest score for grade A                             |
+| Boundary  | 89         | B               | Highest score for grade B (boundary between A and B) |
+| Boundary  | 60         | D               | Lowest score for grade D                             |
+| Boundary  | 0          | F               | Lowest possible score                                |
+| Boundary  | 100        | A               | Highest possible score                               |
+| Erroneous | -5         | Error message   | Below valid range                                    |
+| Erroneous | 105        | Error message   | Above valid range                                    |
+| Erroneous | "abc"      | Error message   | Wrong data type (string instead of integer)          |
 
 Boundary values are the most likely to reveal off-by-one errors. Always test the exact boundary and
 One value on each side.
@@ -1066,12 +1066,12 @@ Specific paths, branches, and conditions in the code.
 
 ### Test Data Categories
 
-| Category | Description | Example (function: `isEven(n)`) |
+| Category  | Description                              | Example (function: `isEven(n)`)   |
 | --------- | ---------------------------------------- | --------------------------------- |
-| Normal | Typical inputs within the expected range | `isEven(4)` returns TRUE |
-| Boundary | Values at the edge of valid ranges | `isEven(0)` returns TRUE |
-| Erroneous | Invalid inputs that should be rejected | `isEven(-1)` returns FALSE |
-| Extreme | Very large or very small values | `isEven(2147483646)` returns TRUE |
+| Normal    | Typical inputs within the expected range | `isEven(4)` returns TRUE          |
+| Boundary  | Values at the edge of valid ranges       | `isEven(0)` returns TRUE          |
+| Erroneous | Invalid inputs that should be rejected   | `isEven(-1)` returns FALSE        |
+| Extreme   | Very large or very small values          | `isEven(2147483646)` returns TRUE |
 
 ### Worked Example: Constructing an Advanced Trace Table
 
@@ -1102,34 +1102,35 @@ END FUNCTION
 
 | Step | `i` | `arr[i]` | `arr[i] = target` | `count` | `firstIndex` | `firstIndex = -1` |
 | ---- | --- | -------- | ----------------- | ------- | ------------ | ----------------- |
-| Init | 0 | -- | -- | 0 | -1 | -- |
-| 1 | 0 | 5 | FALSE | 0 | -1 | -- |
-| 2 | 1 | 3 | FALSE | 0 | -1 | -- |
-| 3 | 2 | 8 | TRUE | 1 | 2 | TRUE (was -1) |
-| 4 | 3 | 1 | FALSE | 1 | 2 | -- |
-| 5 | 4 | 8 | TRUE | 2 | 2 | FALSE (not -1) |
-| 6 | 5 | 3 | FALSE | 2 | 2 | -- |
-| 7 | 6 | -- | -- | 2 | 2 | -- (loop ends) |
+| Init | 0   | --       | --                | 0       | -1           | --                |
+| 1    | 0   | 5        | FALSE             | 0       | -1           | --                |
+| 2    | 1   | 3        | FALSE             | 0       | -1           | --                |
+| 3    | 2   | 8        | TRUE              | 1       | 2            | TRUE (was -1)     |
+| 4    | 3   | 1        | FALSE             | 1       | 2            | --                |
+| 5    | 4   | 8        | TRUE              | 2       | 2            | FALSE (not -1)    |
+| 6    | 5   | 3        | FALSE             | 2       | 2            | --                |
+| 7    | 6   | --       | --                | 2       | 2            | -- (loop ends)    |
 
 Output: **First at: 2, Count: 2**
 
-The function returns 2. It finds the first occurrence of 8 at index 2 and counts 2 total occurrences.
+The function returns 2. It finds the first occurrence of 8 at index 2 and counts 2 total
+occurrences.
 
 </details>
 
 ### Common Pitfalls: Debugging and Testing
 
-- **Incomplete trace tables:** Every variable that changes must have a column. Forgetting to include a
- variable (like the loop counter `i`) means the trace is incomplete and may miss errors.
+- **Incomplete trace tables:** Every variable that changes must have a column. Forgetting to include
+  a variable (like the loop counter `i`) means the trace is incomplete and may miss errors.
 - **Testing only normal cases:** A test suite that only tests valid inputs within the expected range
- will miss boundary and error cases. Always include boundary values (0, 1, maximum) and invalid
- inputs.
+  will miss boundary and error cases. Always include boundary values (0, 1, maximum) and invalid
+  inputs.
 - **Confusing syntax errors with logic errors:** A program that compiles successfully can still
- produce wrong results. Fixing compilation errors does not guarantee correctness. Always verify
- output against expected results.
+  produce wrong results. Fixing compilation errors does not guarantee correctness. Always verify
+  output against expected results.
 - **Not testing edge cases:** For a function that processes an array, test with an empty array, a
- single-element array, and an array where all elements are the same. These edge cases often reveal
- bugs.
+  single-element array, and an array where all elements are the same. These edge cases often reveal
+  bugs.
 
 ## Exception Handling
 
@@ -1157,8 +1158,8 @@ It is used for cleanup operations like closing files or releasing resources.
 
 ### Worked Example: Exception Handling in Practice
 
-Write IB pseudocode that prompts the user for two integers and outputs their quotient. Handle the case
-Where the second number is zero.
+Write IB pseudocode that prompts the user for two integers and outputs their quotient. Handle the
+case Where the second number is zero.
 
 <details>
 <summary>Solution</summary>
@@ -1186,10 +1187,10 @@ END LOOP
 **Key points:**
 
 - The `RAISE` statement explicitly triggers an exception when an invalid condition is detected
- (denominator is zero).
+  (denominator is zero).
 - The `TRY` block contains the risky operation. The `CATCH` block handles the specific error type.
-- The outer LOOP ensures the user is re-prompted until they provide valid input. The `EXIT` statement
- is only reached on success.
+- The outer LOOP ensures the user is re-prompted until they provide valid input. The `EXIT`
+  statement is only reached on success.
 - Multiple error types can be distinguished within the CATCH block using conditional logic.
 
 </details>
@@ -1199,69 +1200,65 @@ END LOOP
 **Selection:**
 
 - Using `=` (assignment) instead of `==` (comparison) in conditions. In IB pseudocode this is less
- of an issue since `=` is the comparison operator, but in languages like C/Java this is a frequent
- bug.
+  of an issue since `=` is the comparison operator, but in languages like C/Java this is a frequent
+  bug.
 - Forgetting the `ELSE` branch when all cases should be handled, leading to silent failures.
 - Overlapping conditions in nested IF statements, where a later condition can never be reached
- because an earlier one already covers it.
+  because an earlier one already covers it.
 
 **Iteration:**
 
 - Off-by-one errors: using `$\le$` instead of `<` (or vice versa) in loop conditions. Always verify
- with boundary values.
+  with boundary values.
 - Infinite loops: forgetting to update the loop variable in a WHILE loop, or setting a condition
- that can never become false.
+  that can never become false.
 - Modifying the loop variable inside the loop body (in a FOR loop), which can produce unexpected
- behavior depending on the language.
+  behavior depending on the language.
 - Fence-post errors: looping one time too many or one time too few. For an array of size $n$Valid
- indices are $0$ to $n - 1$.
+  indices are $0$ to $n - 1$.
 
 **Recursion:**
 
 - Missing base case, causing infinite recursion and stack overflow.
 - Base case that is never reached, e.g., `factorial(-1)` calls `factorial(-2)`Which calls
- `factorial(-3)`And so on indefinitely.
+  `factorial(-3)`And so on indefinitely.
 - Excessive recursion depth for problems that could be solved iteratively, leading to performance
- degradation.
+  degradation.
 - Redundant recursive calls that recompute the same values, leading to exponential time complexity
- (as in the naive Fibonacci implementation).
+  (as in the naive Fibonacci implementation).
 
 **Parameters:**
 
 - Passing by value when by reference is needed (the original variable will not be modified).
 - Passing by reference when by value is intended (the original variable will be unexpectedly
- modified).
+  modified).
 - Modifying a by-value parameter and expecting the change to persist after the function returns.
 
 **Data types:**
 
 - Integer overflow: exceeding the maximum representable value. For a 32-bit signed integer, the
- range is $-2,147,483,648$ to $2,147,483,647$. Adding 1 to the maximum produces $-2,147,483,648$
- (wrap around).
+  range is $-2,147,483,648$ to $2,147,483,647$. Adding 1 to the maximum produces $-2,147,483,648$
+  (wrap around).
 - Floating-point precision: comparing floating-point numbers for exact equality is unreliable due to
- rounding errors. Use a tolerance: `ABS(a - b) < epsilon` where epsilon is a small value like
- $10^{-9}$.
+  rounding errors. Use a tolerance: `ABS(a - b) < epsilon` where epsilon is a small value like
+  $10^{-9}$.
 - Type coercion: implicitly converting between types (e.g., integer to float) can cause unexpected
- results. In some languages, `7 / 2` gives 3 (integer division), while `7.0 / 2` gives 3.5.
+  results. In some languages, `7 / 2` gives 3 (integer division), while `7.0 / 2` gives 3.5.
 
 ## Problem Set: 15 IB-Style Questions
 
-**Q1.** State the most appropriate primitive data type for each of the following:
-(a) The number of students in a school
-(b) A student's phone number (e.g., "555-1234")
-(c) Whether a user is an administrator
-(d) A single menu option character (A, B, C, or Q)
-(e) The current temperature to one decimal place
+**Q1.** State the most appropriate primitive data type for each of the following: (a) The number of
+students in a school (b) A student's phone number (e.g., "555-1234") (c) Whether a user is an
+administrator (d) A single menu option character (A, B, C, or Q) (e) The current temperature to one
+decimal place
 
 <details>
 <summary>Solution</summary>
 
-(a) **INTEGER** -- student count is a whole number.
-(b) **STRING** -- phone numbers contain hyphens and may start with 0; they are not used for
- arithmetic, so STRING is more appropriate than INTEGER.
-(c) **BOOLEAN** -- only two states: administrator or not.
-(d) **CHAR** -- exactly one character from a known set.
-(e) **FLOAT** -- has a fractional part (one decimal place).
+(a) **INTEGER** -- student count is a whole number. (b) **STRING** -- phone numbers contain hyphens
+and may start with 0; they are not used for arithmetic, so STRING is more appropriate than INTEGER.
+(c) **BOOLEAN** -- only two states: administrator or not. (d) **CHAR** -- exactly one character from
+a known set. (e) **FLOAT** -- has a fractional part (one decimal place).
 
 **Revision:** Variables and Data Types
 
@@ -1280,14 +1277,14 @@ result ← (17 DIV 4) + (17 MOD 4) * 2 ^ 3 - 1
 Following operator precedence (parentheses first, then exponentiation, then multiplication, then
 Addition/subtraction):
 
-| Step | Expression | Result |
-| ---- | ---------------------------------- | ------ |
-| 1 | `17 DIV 4` | 4 |
-| 2 | `17 MOD 4` | 1 |
-| 3 | `2 ^ 3` | 8 |
-| 4 | `1 * 8` (MOD result times power) | 8 |
-| 5 | `4 + 8` (DIV result plus product) | 12 |
-| 6 | `12 - 1` | 11 |
+| Step | Expression                        | Result |
+| ---- | --------------------------------- | ------ |
+| 1    | `17 DIV 4`                        | 4      |
+| 2    | `17 MOD 4`                        | 1      |
+| 3    | `2 ^ 3`                           | 8      |
+| 4    | `1 * 8` (MOD result times power)  | 8      |
+| 5    | `4 + 8` (DIV result plus product) | 12     |
+| 6    | `12 - 1`                          | 11     |
 
 `result = 11`
 
@@ -1295,11 +1292,8 @@ Addition/subtraction):
 
 </details>
 
-**Q3.** Given `a ← TRUE``b ← FALSE``c ← TRUE`Evaluate each expression:
-(a) `NOT a AND b`
-(b) `a OR b AND c`
-(c) `NOT (a OR b) XOR c`
-(d) `(a AND b) OR (NOT b AND c)`
+**Q3.** Given `a ← TRUE``b ← FALSE``c ← TRUE`Evaluate each expression: (a) `NOT a AND b` (b)
+`a OR b AND c` (c) `NOT (a OR b) XOR c` (d) `(a AND b) OR (NOT b AND c)`
 
 <details>
 <summary>Solution</summary>
@@ -1307,20 +1301,20 @@ Addition/subtraction):
 (a) `NOT a AND b` = `NOT TRUE AND FALSE` = `FALSE AND FALSE` = **FALSE**
 
 (b) `a OR b AND c` = `TRUE OR FALSE AND TRUE` = `TRUE OR FALSE` = **TRUE** (AND has higher
- precedence than OR)
+precedence than OR)
 
-(c) `NOT (a OR b) XOR c` = `NOT (TRUE OR FALSE) XOR TRUE` = `NOT TRUE XOR TRUE` = `FALSE XOR TRUE`
- = **TRUE**
+(c) `NOT (a OR b) XOR c` = `NOT (TRUE OR FALSE) XOR TRUE` = `NOT TRUE XOR TRUE` = `FALSE XOR TRUE` =
+**TRUE**
 
-(d) `(a AND b) OR (NOT b AND c)` = `(TRUE AND FALSE) OR (TRUE AND TRUE)` = `FALSE OR TRUE`
- = **TRUE**
+(d) `(a AND b) OR (NOT b AND c)` = `(TRUE AND FALSE) OR (TRUE AND TRUE)` = `FALSE OR TRUE` =
+**TRUE**
 
 **Revision:** Logical Operators, Operator Precedence
 
 </details>
 
-**Q4.** Explain the difference between `"apple" < "banana"` and `"Zebra" < "apple"` in terms of string
-Comparison. What will each expression evaluate to?
+**Q4.** Explain the difference between `"apple" < "banana"` and `"Zebra" < "apple"` in terms of
+string Comparison. What will each expression evaluate to?
 
 <details>
 <summary>Solution</summary>
@@ -1328,9 +1322,9 @@ Comparison. What will each expression evaluate to?
 String comparison is lexicographic, based on character codes (e.g., ASCII/Unicode values).
 
 - `"apple" < "banana"` evaluates to **TRUE** because 'a' (code 97) \lt{} 'b' (code 98). The first
- character differs, so the comparison is decided immediately.
+  character differs, so the comparison is decided immediately.
 - `"Zebra" < "apple"` evaluates to **TRUE** because 'Z' (code 90) \lt{} 'a' (code 97). Uppercase
- letters have lower character codes than lowercase letters.
+  letters have lower character codes than lowercase letters.
 
 This is a common source of bugs: case-sensitive comparison means "Zebra" sorts before "apple"
 Alphabetically. To perform case-insensitive comparison, convert both strings to the same case first.
@@ -1361,14 +1355,14 @@ OUTPUT grade
 <details>
 <summary>Solution</summary>
 
-| Step | Condition | Result | Action |
-| ---- | ------------ | ------ | --------------- |
-| 1 | `55 $\ge$` 90` | FALSE | Check next |
-| 2 | `55 $\ge$` 80` | FALSE | Check next |
-| 3 | `55 $\ge$` 70` | FALSE | Check next |
-| 4 | `55 $\ge$` 60` | FALSE | Check next |
-| 5 | (else branch)| -- | `grade ← "F"` |
-| 6 | -- | -- | OUTPUT "F" |
+| Step | Condition      | Result | Action        |
+| ---- | -------------- | ------ | ------------- |
+| 1    | `55 $\ge$` 90` | FALSE  | Check next    |
+| 2    | `55 $\ge$` 80` | FALSE  | Check next    |
+| 3    | `55 $\ge$` 70` | FALSE  | Check next    |
+| 4    | `55 $\ge$` 60` | FALSE  | Check next    |
+| 5    | (else branch)  | --     | `grade ← "F"` |
+| 6    | --             | --     | OUTPUT "F"    |
 
 Output: **F**
 
@@ -1417,9 +1411,9 @@ ENDCASE
 ```
 
 CASE tests against specific values, so days 6 and 7 each need their own line pointing to "Weekend".
-The OTHERWISE clause handles any value outside 1--7. CASE is more readable here because we are comparing
-A single variable against discrete values, but CASE cannot directly express `day = 6 OR day = 7` as a
-Single condition.
+The OTHERWISE clause handles any value outside 1--7. CASE is more readable here because we are
+comparing A single variable against discrete values, but CASE cannot directly express
+`day = 6 OR day = 7` as a Single condition.
 
 **Revision:** Selection, CASE Statement
 
@@ -1442,12 +1436,13 @@ END FOR
 
 | Outer `i` | Inner `j` range | `output` built | OUTPUT |
 | --------- | --------------- | -------------- | ------ |
-| 1 | 1 to 1 | `*` | `*` |
-| 2 | 1 to 2 | `**` | `**` |
-| 3 | 1 to 3 | `***` | `***` |
-| 4 | 1 to 4 | `****` | `****` |
+| 1         | 1 to 1          | `*`            | `*`    |
+| 2         | 1 to 2          | `**`           | `**`   |
+| 3         | 1 to 3          | `***`          | `***`  |
+| 4         | 1 to 4          | `****`         | `****` |
 
 Output:
+
 ```python
 *
 **
@@ -1496,17 +1491,16 @@ END IF
 - REPEAT...UNTIL ensures the prompt appears at least once.
 - The `value > 0` check excludes both 0 (sentinel) and negative numbers.
 - The final IF/ELSE handles the edge case where the user enters 0 immediately (avoiding division by
- zero).
+  zero).
 
 **Revision:** Iteration, REPEAT...UNTIL, Selection
 
 </details>
 
-**Q9.** Explain the key difference between a WHILE loop and a REPEAT...UNTIL loop. For each scenario,
-State which loop is more appropriate and explain why:
-(a) Validating user input (must prompt at least once)
-(b) Processing items in a queue that may be empty
-(c) Searching for a value in a sorted array using binary search
+**Q9.** Explain the key difference between a WHILE loop and a REPEAT...UNTIL loop. For each
+scenario, State which loop is more appropriate and explain why: (a) Validating user input (must
+prompt at least once) (b) Processing items in a queue that may be empty (c) Searching for a value in
+a sorted array using binary search
 
 <details>
 <summary>Solution</summary>
@@ -1521,8 +1515,8 @@ Post-test is correct because the body must run at least once.
 (b) **WHILE** -- If the queue is empty, there is nothing to process. The loop should not execute at
 All. Pre-test is correct.
 
-(c) **WHILE** -- Binary search may terminate immediately if the search range is empty (e.g., searching
-An empty array). Pre-test is correct.
+(c) **WHILE** -- Binary search may terminate immediately if the search range is empty (e.g.,
+searching An empty array). Pre-test is correct.
 
 **Revision:** Iteration, WHILE, REPEAT...UNTIL
 
@@ -1543,16 +1537,17 @@ END FOR
 
 | Outer `i` | Inner `j` values | Inner iterations |
 | --------- | ---------------- | ---------------- |
-| 0 | 0, 1, 2, 3, 4 | 5 |
-| 1 | 1, 2, 3, 4 | 4 |
-| 2 | 2, 3, 4 | 3 |
-| 3 | 3, 4 | 2 |
-| 4 | 4 | 1 |
+| 0         | 0, 1, 2, 3, 4    | 5                |
+| 1         | 1, 2, 3, 4       | 4                |
+| 2         | 2, 3, 4          | 3                |
+| 3         | 3, 4             | 2                |
+| 4         | 4                | 1                |
 
 Total: $5 + 4 + 3 + 2 + 1 = 15$ times.
 
-The inner loop's starting value depends on the outer loop variable, so the number of inner iterations
-Decreases as `i` increases. This is the triangular number $T_5 = \frac{5 \times 6}{2} = 15$.
+The inner loop's starting value depends on the outer loop variable, so the number of inner
+iterations Decreases as `i` increases. This is the triangular number
+$T_5 = \frac{5 \times 6}{2} = 15$.
 
 **Revision:** Nested Loops, FOR Loop
 
@@ -1590,7 +1585,7 @@ END FUNCTION
 
 - Check divisibility by 2 separately, then only test odd divisors (step by 2).
 - Only test up to $\sqrt{n}$ (since if $n = a \times b$ and $a \leq b$Then $a \leq \sqrt{n}$). In
- pseudocode, `i * i $\le$` n avoids needing a square root function.
+  pseudocode, `i * i $\le$` n avoids needing a square root function.
 - Time complexity: $O(\sqrt{n})$Which is efficient for the values tested in IB exams.
 
 **Revision:** Functions, Iteration, WHILE Loop, Operators (MOD)
@@ -1616,14 +1611,14 @@ OUTPUT a, b, c
 <details>
 <summary>Solution</summary>
 
-| Step | Action | `a` | `b` | `c` | `x` | `y` | `z` |
-| ---- | -------------------------- | --- | --- | --- | --- | --- | --- |
-| 1 | Initialize | 5 | 3 | 10 | -- | -- | -- |
-| 2 | Call `modify(a, b, c)` | 5 | 3 | 10 | 5 | 3 | 10 |
-| 3 | `x ← x + y` (REF to `a`) | 8 | 3 | 10 | 8 | 3 | 10 |
-| 4 | `y ← y * 2` (copy of `b`) | 8 | 3 | 10 | 8 | 6 | 10 |
-| 5 | `z ← x + z` (REF to `c`) | 8 | 3 | 18 | 8 | 6 | 18 |
-| 6 | Procedure returns | 8 | 3 | 18 | -- | -- | -- |
+| Step | Action                    | `a` | `b` | `c` | `x` | `y` | `z` |
+| ---- | ------------------------- | --- | --- | --- | --- | --- | --- |
+| 1    | Initialize                | 5   | 3   | 10  | --  | --  | --  |
+| 2    | Call `modify(a, b, c)`    | 5   | 3   | 10  | 5   | 3   | 10  |
+| 3    | `x ← x + y` (REF to `a`)  | 8   | 3   | 10  | 8   | 3   | 10  |
+| 4    | `y ← y * 2` (copy of `b`) | 8   | 3   | 10  | 8   | 6   | 10  |
+| 5    | `z ← x + z` (REF to `c`)  | 8   | 3   | 18  | 8   | 6   | 18  |
+| 6    | Procedure returns         | 8   | 3   | 18  | --  | --  | --  |
 
 Final values: **a = 8, b = 3, c = 18**
 
@@ -1649,28 +1644,29 @@ FUNCTION factorial(n) RETURNS INTEGER
 END FUNCTION
 ```
 
-| Call | `n` | Base case? | Action | Return value |
-| ----------------- | --- | ---------- | --------------------- | --------------------- |
-| `factorial(5)` | 5 | No | Calls `factorial(4)` | $5 \times 24 = 120$ |
-| `factorial(4)` | 4 | No | Calls `factorial(3)` | $4 \times 6 = 24$ |
-| `factorial(3)` | 3 | No | Calls `factorial(2)` | $3 \times 2 = 6$ |
-| `factorial(2)` | 2 | No | Calls `factorial(1)` | $2 \times 1 = 2$ |
-| `factorial(1)` | 1 | Yes | Returns 1 (base case) | 1 |
+| Call           | `n` | Base case? | Action                | Return value        |
+| -------------- | --- | ---------- | --------------------- | ------------------- |
+| `factorial(5)` | 5   | No         | Calls `factorial(4)`  | $5 \times 24 = 120$ |
+| `factorial(4)` | 4   | No         | Calls `factorial(3)`  | $4 \times 6 = 24$   |
+| `factorial(3)` | 3   | No         | Calls `factorial(2)`  | $3 \times 2 = 6$    |
+| `factorial(2)` | 2   | No         | Calls `factorial(1)`  | $2 \times 1 = 2$    |
+| `factorial(1)` | 1   | Yes        | Returns 1 (base case) | 1                   |
 
 **Stack frames created:** 5 (one for each call from `factorial(5)` down to `factorial(1)`)
 
 **Final return value:** 120
 
 Returns are resolved bottom-up: `factorial(1)` returns 1, then `factorial(2)` returns
-$2 \times 1 = 2$Then `factorial(3)` returns $3 \times 2 = 6$And so on up to `factorial(5)`
-Returning $5 \times 24 = 120$.
+$2 \times 1 = 2$Then `factorial(3)` returns $3 \times 2 = 6$And so on up to `factorial(5)` Returning
+$5 \times 24 = 120$.
 
 **Revision:** Recursion, Call Stack, Functions
 
 </details>
 
-**Q14.** The following function is intended to return the sum of all elements in an array. It contains
-A logic error. Identify the error, explain why it is wrong, and provide the corrected version.
+**Q14.** The following function is intended to return the sum of all elements in an array. It
+contains A logic error. Identify the error, explain why it is wrong, and provide the corrected
+version.
 
 ```python
 FUNCTION arrayTotal(arr) RETURNS INTEGER
@@ -1713,6 +1709,7 @@ The corrected loop runs from index 0 to `LENGTH(arr) - 1`Covering every valid in
 
 **Q15.** Write IB pseudocode for a program that repeatedly asks the user to enter a student's score
 (0--100). The program should:
+
 - Reject scores outside the range 0--100 and ask again.
 - Stop when the user enters -1.
 - After stopping, output the number of valid scores entered and the average score.

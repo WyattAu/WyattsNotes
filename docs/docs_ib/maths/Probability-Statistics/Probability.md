@@ -1,7 +1,8 @@
 ---
 title: Probability
-description: "Rigorous IB mathematics notes covering Probability. Includes definitions, derivations, worked examples, and exam-style problems."
-  and distributions.
+description:
+  'Rigorous IB mathematics notes covering Probability. Includes definitions, derivations, worked
+  examples, and exam-style problems. and distributions.'
 slug: probability
 ---
 
@@ -271,7 +272,7 @@ $$
 
 A random variable $X$ has the following probability distribution:
 
-| $x$ | 0 | 1 | 2 | 3 |
+| $x$        | 0   | 1   | 2   | 3   |
 | ---------- | --- | --- | --- | --- |
 | $P(X = x)$ | 0.1 | 0.4 | 0.3 | 0.2 |
 
@@ -365,8 +366,8 @@ Most questions require using the cumulative binomial function on a GDC.
 
 :::warning[Exam Tip]
 
-For binomial probability questions, always state the distribution : "$X \sim B(n, p)$
-Where...". Use your GDC for calculations involving large $n$ or cumulative probabilities.
+For binomial probability questions, always state the distribution : "$X \sim B(n, p)$ Where...". Use
+your GDC for calculations involving large $n$ or cumulative probabilities.
 
 :::
 
@@ -650,23 +651,23 @@ Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$The mode is $x = 2$.
 
 ## Summary
 
-| Distribution | Notation | $E(X)$ | $\mathrm{Var}(X)$ |
+| Distribution | Notation           | $E(X)$ | $\mathrm{Var}(X)$ |
 | ------------ | ------------------ | ------ | ----------------- |
-| Binomial | $B(n, p)$ | $np$ | $np(1-p)$ |
-| Normal | $N(\mu, \sigma^2)$ | $\mu$ | $\sigma^2$ |
+| Binomial     | $B(n, p)$          | $np$   | $np(1-p)$         |
+| Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$        |
 
-| Key Formula | Expression |
+| Key Formula             | Expression                                |
 | ----------------------- | ----------------------------------------- |
-| Addition rule | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$ |
-| Bayes' theorem | $P(A\|B) = \dfrac{P(B\|A)P(A)}{P(B)}$ |
-| Standardisation | $Z = \dfrac{X - \mu}{\sigma}$ |
+| Addition rule           | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$     |
+| Bayes' theorem          | $P(A\|B) = \dfrac{P(B\|A)P(A)}{P(B)}$     |
+| Standardisation         | $Z = \dfrac{X - \mu}{\sigma}$             |
 
 :::tip[Exam Strategy]
 
-Always define your random variable at the start of probability questions. For normal
-Distribution problems, draw a sketch of the bell curve and shade the relevant area. For binomial
-Problems, verify the four conditions before applying the formula.
+Always define your random variable at the start of probability questions. For normal Distribution
+problems, draw a sketch of the bell curve and shade the relevant area. For binomial Problems, verify
+the four conditions before applying the formula.
 
 :::
 
@@ -846,14 +847,15 @@ Desks should accommodate heights from about $152\mathrm{ cm}$ to $178\mathrm{ cm
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Probability**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-probability) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Probability**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-probability) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability
+with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Common Pitfalls
 

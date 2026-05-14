@@ -1,10 +1,11 @@
 ---
 title: A Streetcar Named Desire
 tags:
-- english
+  - english
 slug: streetcar-named-desire
-description: "Rigorous IB English notes covering A Streetcar Named Desire. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB English notes covering A Streetcar Named Desire. Includes definitions, derivations,
+  worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Author Context

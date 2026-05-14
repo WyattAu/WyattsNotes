@@ -1,8 +1,9 @@
 ---
 title: Motion in Electromagnetic Fields
 slug: motion-in-electromagnetic-fields
-description: "Rigorous IB physics notes covering Motion in Electromagnetic Fields. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB physics notes covering Motion in Electromagnetic Fields. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Uniform Fields
@@ -138,7 +139,7 @@ $$
 Key points:
 
 - The force is parallel to the electric field for positive charges and antiparallel for negative
- charges.
+  charges.
 - The magnitude is $F = qE$.
 - This force can accelerate the charge along the direction of the field line.
 
@@ -155,7 +156,7 @@ Key points:
 
 - The magnetic force is always **perpendicular** to both $\bm{v}$ and $\bm{B}$.
 - The magnetic force does **no work** on the charge (since $W = F \cdot d$ and $F \perp v$), so the
- kinetic energy of the charge does not change.
+  kinetic energy of the charge does not change.
 - The magnitude is $F = qvB \sin\theta$Where $\theta$ is the angle between $\bm{v}$ and $\bm{B}$.
 - When $\bm{v} \perp \bm{B}$ ($\theta = 90^\circ$), the force is maximum: $F = qvB$.
 - When $\bm{v} \parallel \bm{B}$ ($\theta = 0^\circ$ or $180^\circ$), the force is zero.
@@ -246,7 +247,7 @@ The result is a **helical** (spiral) path.
 
 - The radius of the helix: $r = \frac{mv_\perp}{qB} = \frac{mv \sin\theta}{qB}$
 - The pitch (distance along the field per revolution):
- $p = v_\parallel \cdot T = \frac{2\pi m v \cos\theta}{qB}$
+  $p = v_\parallel \cdot T = \frac{2\pi m v \cos\theta}{qB}$
 
 ---
 
@@ -307,23 +308,23 @@ Chemistry, forensics, environmental science, and many other fields.
 
 1. **Ionisation:** Atoms are ionised (given a charge $+q$$+e$).
 2. **Acceleration:** Ions are accelerated through a potential difference $V$. The kinetic energy
- gained equals the electrical potential energy lost:
+   gained equals the electrical potential energy lost:
 
 $$
 QV = \frac{1}{2}mv^2
 $$
 
 3. **Velocity selection:** Ions pass through a velocity selector, so all entering the deflection
- region have the same velocity $v = E/B$.
+   region have the same velocity $v = E/B$.
 4. **Magnetic deflection:** Ions enter a region of uniform magnetic field $\bm{B}$ (perpendicular to
- their velocity) and follow a semicircular path. The radius of the path depends on the mass:
+   their velocity) and follow a semicircular path. The radius of the path depends on the mass:
 
 $$
 R = \frac`\{mv}``\{qB}`
 $$
 
 5. **Detection:** Ions of different masses hit the detector at different positions. Since $v$ is the
- same for all ions, the radius is proportional to mass:
+   same for all ions, the radius is proportional to mass:
 
 $$
 R \propto m
@@ -414,25 +415,25 @@ The direction is given by Fleming's Left-Hand Rule (motor effect):
 ## Exam Tips for D.3
 
 1. **Always identify what is perpendicular.** The magnetic force depends on the angle between
- $\bm{v}$ and $\bm{B}$. If the question does not state the angle, it is $90^\circ$.
+   $\bm{v}$ and $\bm{B}$. If the question does not state the angle, it is $90^\circ$.
 
 2. **Electrons are negative.** When working with electrons, the force direction is **opposite** to
- what the right-hand rule gives. Either use the left hand for negative charges, or reverse the
- right-hand rule result.
+   what the right-hand rule gives. Either use the left hand for negative charges, or reverse the
+   right-hand rule result.
 
 3. **Magnetic force does no work.** Since $\bm{F} \perp \bm{v}$The kinetic energy of the particle
- does not change in a magnetic field. Only electric fields can change the kinetic energy of a
- charged particle.
+   does not change in a magnetic field. Only electric fields can change the kinetic energy of a
+   charged particle.
 
 4. **Distinguish between electric and magnetic force mechanisms.** Electric forces can accelerate
- charges (change speed); magnetic forces only change direction (perpendicular to velocity).
+   charges (change speed); magnetic forces only change direction (perpendicular to velocity).
 
 5. **Check units carefully.** In mass spectrometer problems, ensure all quantities are in SI units
- (meters, tesla, volts, coulombs, kilograms) before substituting into formulae.
+   (meters, tesla, volts, coulombs, kilograms) before substituting into formulae.
 
 6. **The force between parallel currents** is attractive when currents flow in the **same**
- direction and repulsive when they flow in **opposite** directions. This is analogous to the force
- between parallel magnetic field lines.
+   direction and repulsive when they flow in **opposite** directions. This is analogous to the force
+   between parallel magnetic field lines.
 
 ---
 
@@ -444,7 +445,7 @@ A uniform electric field exists between two parallel conducting plates. Key prop
 
 - Field strength: $E = \frac{V}{d}$ (constant between the plates).
 - A charged particle experiences constant force: $F = qE$Leading to constant acceleration:
- $a = \frac{qE}{m}$.
+  $a = \frac{qE}{m}$.
 - The trajectory is **parabolic** (analogous to projectile motion in a gravitational field).
 - The electric field **does work** on the charge, changing its kinetic energy.
 
@@ -455,19 +456,19 @@ A uniform magnetic field is produced inside a long solenoid or between the poles
 - The force on a moving charge is: $F = qvB\sin\theta$.
 - The force is always **perpendicular** to the velocity, so it changes direction but not speed.
 - The trajectory is **circular** (if $\bm{v} \perp \bm{B}$) or **helical** (if there is a velocity
- component parallel to $\bm{B}$).
+  component parallel to $\bm{B}$).
 - The magnetic force does **no work**: $W = \bm{F} \cdot \bm{d} = 0$ since $\bm{F} \perp \bm{v}$.
 
 ### Comparison Table
 
-| Property | Uniform Electric Field | Uniform Magnetic Field |
+| Property            | Uniform Electric Field                  | Uniform Magnetic Field                      |
 | :------------------ | :-------------------------------------- | :------------------------------------------ |
-| Force on charge | $F = qE$ (constant) | $F = qvB\sin\theta$ (velocity-dependent) |
-| Direction of force | Parallel to $\bm{E}$ | Perpendicular to both $\bm{v}$ and $\bm{B}$ |
-| Does work on charge | Yes ($W = qEd$) | No ($\bm{F} \perp \bm{v}$) |
-| Effect on speed | Changes speed (accelerates/decelerates) | Does not change speed |
-| Trajectory | Parabolic | Circular or helical |
-| Kinetic energy | Changes | Constant |
+| Force on charge     | $F = qE$ (constant)                     | $F = qvB\sin\theta$ (velocity-dependent)    |
+| Direction of force  | Parallel to $\bm{E}$                    | Perpendicular to both $\bm{v}$ and $\bm{B}$ |
+| Does work on charge | Yes ($W = qEd$)                         | No ($\bm{F} \perp \bm{v}$)                  |
+| Effect on speed     | Changes speed (accelerates/decelerates) | Does not change speed                       |
+| Trajectory          | Parabolic                               | Circular or helical                         |
+| Kinetic energy      | Changes                                 | Constant                                    |
 
 ---
 
@@ -555,27 +556,27 @@ Simplified values.
 ## Common Pitfalls
 
 1. **Forgetting the angle in $F = qvB\sin\theta$.** If the question does not specify the angle, it
- is $90^\circ$Making $\sin\theta = 1$. However, if the velocity has a component parallel
- to $\bm{B}$Use $\sin\theta$ with the perpendicular component only.
+   is $90^\circ$Making $\sin\theta = 1$. However, if the velocity has a component parallel to
+   $\bm{B}$Use $\sin\theta$ with the perpendicular component only.
 
 2. **Sign of electron charge.** The Lorentz force on an electron is in the **opposite** direction to
- $\bm{v} \times \bm{B}$. Use the right-hand rule and then reverse the result, or use the left hand
- for negative charges.
+   $\bm{v} \times \bm{B}$. Use the right-hand rule and then reverse the result, or use the left hand
+   for negative charges.
 
 3. **Confusing electric and magnetic force work.** Electric fields do work on charges and change
- kinetic energy. Magnetic fields do zero work — they change direction only.
+   kinetic energy. Magnetic fields do zero work — they change direction only.
 
 4. **Incorrectly using the charge sign in the radius formula.** The radius formula $r = mv/(|q|B)$
- uses the magnitude of the charge. The sign of the charge only affects the direction of the
- circular motion (clockwise vs counterclockwise).
+   uses the magnitude of the charge. The sign of the charge only affects the direction of the
+   circular motion (clockwise vs counterclockwise).
 
 5. **Assuming all particles have the same charge.** In mass spectrometer problems, always check
- whether ions are singly or doubly charged. The charge affects both the selected velocity (no —
- velocity selector is charge-independent) and the deflection radius (yes — $r \propto m/q$).
+   whether ions are singly or doubly charged. The charge affects both the selected velocity (no —
+   velocity selector is charge-independent) and the deflection radius (yes — $r \propto m/q$).
 
 6. **Mixing up the velocity selector condition.** The condition $v = E/B$ comes from $qE = qvB$
- where the electric and magnetic forces are in **opposite** directions. If you set them in the
- same direction, you get the wrong answer.
+   where the electric and magnetic forces are in **opposite** directions. If you set them in the
+   same direction, you get the wrong answer.
 
 ---
 
@@ -647,8 +648,8 @@ M $= 74.1$ \mu m.
 
 B) Period:
 $T = \frac{2\pi m_e}{|q|B} = \frac{2\pi(9.11 \times 10^{-31})}{(1.60 \times 10^{-19})(0.40)} = 8.95 \times 10^{-11}$
-S. Parallel component: $v_\parallel = v\cos 60^{\circ} = (6.0 \times 10^6)(0.500) = 3.0 \times 10^6$ m/s.
-Pitch: $p = v_\parallel T = (3.0 \times 10^6)(8.95 \times 10^{-11}) = 2.69 \times 10^{-4}$ m
+S. Parallel component: $v_\parallel = v\cos 60^{\circ} = (6.0 \times 10^6)(0.500) = 3.0 \times 10^6$
+m/s. Pitch: $p = v_\parallel T = (3.0 \times 10^6)(8.95 \times 10^{-11}) = 2.69 \times 10^{-4}$ m
 $= 0.269$ mm.
 
 </details>
@@ -688,11 +689,11 @@ Velocity.
 <summary>Answer 5</summary>
 
 The magnetic force is always perpendicular to the velocity of the charged particle (by definition,
-$\bm{F} = q(\bm{v} \times \bm{B})$). The work done by a force is $W = \bm{F} \cdot \bm{d}$And
-Since the displacement $\bm{d}$ is parallel to $\bm{v}$The dot product $\bm{F} \cdot \bm{d} = 0$.
-By the work-energy theorem, $W = \Delta E_k = 0$Meaning the kinetic energy (and therefore the
-Speed) of the particle does not change. The magnetic force only changes the **direction** of the
-Velocity, causing circular or helical motion, but never the speed.
+$\bm{F} = q(\bm{v} \times \bm{B})$). The work done by a force is $W = \bm{F} \cdot \bm{d}$And Since
+the displacement $\bm{d}$ is parallel to $\bm{v}$The dot product $\bm{F} \cdot \bm{d} = 0$. By the
+work-energy theorem, $W = \Delta E_k = 0$Meaning the kinetic energy (and therefore the Speed) of the
+particle does not change. The magnetic force only changes the **direction** of the Velocity, causing
+circular or helical motion, but never the speed.
 
 </details>
 

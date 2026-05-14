@@ -1,11 +1,12 @@
 ---
 title: Atomic Structure and Periodicity
 tags:
-- Chemistry
-- IB
+  - Chemistry
+  - IB
 slug: atomic-structure-and-periodicity
-description: "Rigorous IB chemistry notes covering Atomic Structure and Periodicity. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB chemistry notes covering Atomic Structure and Periodicity. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## 1. Atomic Structure
@@ -14,13 +15,13 @@ description: "Rigorous IB chemistry notes covering Atomic Structure and Periodic
 
 Atoms consist of three subatomic particles. Their properties define the behaviour of every element:
 
-| Property | Proton | Neutron | Electron |
+| Property        | Proton    | Neutron   | Electron         |
 | --------------- | --------- | --------- | ---------------- |
-| Symbol | $p^+$ | $n^0$ | $e^-$ |
-| Relative mass | $1$ | $1$ | $\approx 1/1836$ |
-| Actual mass (u) | $1.00728$ | $1.00867$ | $0.00055$ |
-| Charge | $+1$ | $0$ | $-1$ |
-| Location | Nucleus | Nucleus | Electron shells |
+| Symbol          | $p^+$     | $n^0$     | $e^-$            |
+| Relative mass   | $1$       | $1$       | $\approx 1/1836$ |
+| Actual mass (u) | $1.00728$ | $1.00867$ | $0.00055$        |
+| Charge          | $+1$      | $0$       | $-1$             |
+| Location        | Nucleus   | Nucleus   | Electron shells  |
 
 **Definition.** The **atomic number** ($Z$) is the number of protons in the nucleus. It uniquely
 Identifies an element.
@@ -45,16 +46,16 @@ Neutrons (different $A$).
 Isotopes have identical chemical properties (same electron configuration) but different physical
 Properties (different mass, different nuclear stability).
 
-| Element | Isotope | $Z$ | $A$ | $N$ | Natural Abundance |
+| Element  | Isotope                  | $Z$  | $A$  | $N$  | Natural Abundance   |
 | -------- | ------------------------ | ---- | ---- | ---- | ------------------- |
-| Hydrogen | $\mathrm{H}$ (protium) | $1$ | $1$ | $0$ | $99.985\%$ |
-| Hydrogen | $\mathrm{D}$ (deuterium) | $1$ | $2$ | $1$ | $0.015\%$ |
-| Hydrogen | $\mathrm{T}$ (tritium) | $1$ | $3$ | $2$ | Trace (radioactive) |
-| Carbon | $\mathrm{C}$-12 | $6$ | $12$ | $6$ | $98.89\%$ |
-| Carbon | $\mathrm{C}$-13 | $6$ | $13$ | $7$ | $1.11\%$ |
-| Carbon | $\mathrm{C}$-14 | $6$ | $14$ | $8$ | Trace (radioactive) |
-| Chlorine | $\mathrm{Cl}$-35 | $17$ | $35$ | $18$ | $75.77\%$ |
-| Chlorine | $\mathrm{Cl}$-37 | $17$ | $37$ | $20$ | $24.23\%$ |
+| Hydrogen | $\mathrm{H}$ (protium)   | $1$  | $1$  | $0$  | $99.985\%$          |
+| Hydrogen | $\mathrm{D}$ (deuterium) | $1$  | $2$  | $1$  | $0.015\%$           |
+| Hydrogen | $\mathrm{T}$ (tritium)   | $1$  | $3$  | $2$  | Trace (radioactive) |
+| Carbon   | $\mathrm{C}$-12          | $6$  | $12$ | $6$  | $98.89\%$           |
+| Carbon   | $\mathrm{C}$-13          | $6$  | $13$ | $7$  | $1.11\%$            |
+| Carbon   | $\mathrm{C}$-14          | $6$  | $14$ | $8$  | Trace (radioactive) |
+| Chlorine | $\mathrm{Cl}$-35         | $17$ | $35$ | $18$ | $75.77\%$           |
+| Chlorine | $\mathrm{Cl}$-37         | $17$ | $37$ | $20$ | $24.23\%$           |
 
 ### Relative Atomic Mass
 
@@ -68,8 +69,8 @@ $$
 
 :::info[Example — Chlorine]
 
-Chlorine has two occurring isotopes: $\mathrm{Cl}$-35 ($75.77\%$Mass
-$\approx 34.97\mathrm{ u}$) and $\mathrm{Cl}$-37 ($24.23\%$Mass $\approx 36.97\mathrm{ u}$).
+Chlorine has two occurring isotopes: $\mathrm{Cl}$-35 ($75.77\%$Mass $\approx 34.97\mathrm{ u}$) and
+$\mathrm{Cl}$-37 ($24.23\%$Mass $\approx 36.97\mathrm{ u}$).
 
 $$
 A_r = (34.97 \times 0.7577) + (36.97 \times 0.2423) = 26.50 + 8.96 = 35.46
@@ -85,7 +86,7 @@ Stability depends on the neutron-to-proton ratio:
 
 - Light elements ($Z \lt 20$): stable when $N \approx Z$
 - Heavier elements: stable when $N \gt Z$ (neutrons provide additional strong nuclear force to
- counteract electrostatic repulsion between protons)
+  counteract electrostatic repulsion between protons)
 
 ---
 
@@ -109,10 +110,10 @@ Each shell contains subshells, designated by the azimuthal quantum number $l$:
 
 | $n$ | Subshells ($l$ values) | Maximum electrons |
 | --- | ---------------------- | ----------------- |
-| $1$ | $1s$ | $2$ |
-| $2$ | $2s$$2p$ | $8$ |
-| $3$ | $3s$$3p$$3d$ | $18$ |
-| $4$ | $4s$$4p$$4d$$4f$ | $32$ |
+| $1$ | $1s$                   | $2$               |
+| $2$ | $2s$$2p$               | $8$               |
+| $3$ | $3s$$3p$$3d$           | $18$              |
+| $4$ | $4s$$4p$$4d$$4f$       | $32$              |
 
 The maximum number of electrons in shell $n$ is $2n^2$.
 
@@ -121,23 +122,23 @@ The maximum number of electrons in shell $n$ is $2n^2$.
 **Definition.** An **orbital** is a region of space where there is a high probability ($\ge 90\%$)
 Of finding an electron. Each orbital holds a maximum of two electrons with opposite spins.
 
-| Subshell | Number of orbitals | Max electrons | Orbital shape |
+| Subshell | Number of orbitals | Max electrons | Orbital shape         |
 | -------- | ------------------ | ------------- | --------------------- |
-| $s$ | $1$ | $2$ | Spherical |
-| $p$ | $3$ | $6$ | Dumbbell |
-| $d$ | $5$ | $10$ | Cloverleaf |
-| $f$ | $7$ | $14$ | Complex (multi-lobed) |
+| $s$      | $1$                | $2$           | Spherical             |
+| $p$      | $3$                | $6$           | Dumbbell              |
+| $d$      | $5$                | $10$          | Cloverleaf            |
+| $f$      | $7$                | $14$          | Complex (multi-lobed) |
 
 ### Quantum Numbers
 
 Each electron in an atom is described by four quantum numbers:
 
-| Quantum Number | Symbol | What it specifies | Allowed values |
+| Quantum Number | Symbol | What it specifies            | Allowed values                        |
 | -------------- | ------ | ---------------------------- | ------------------------------------- |
-| Principal | $n$ | Energy level (shell) | $1, 2, 3, \ldots$ |
-| Azimuthal | $l$ | Subshell shape | $0, 1, 2, \ldots, n-1$ |
-| Magnetic | $m_l$ | Orbital orientation in space | $-l, -l+1, \ldots, 0, \ldots, l-1, l$ |
-| Spin | $m_s$ | Electron spin direction | $+\frac{1}{2}$ or $-\frac{1}{2}$ |
+| Principal      | $n$    | Energy level (shell)         | $1, 2, 3, \ldots$                     |
+| Azimuthal      | $l$    | Subshell shape               | $0, 1, 2, \ldots, n-1$                |
+| Magnetic       | $m_l$  | Orbital orientation in space | $-l, -l+1, \ldots, 0, \ldots, l-1, l$ |
+| Spin           | $m_s$  | Electron spin direction      | $+\frac{1}{2}$ or $-\frac{1}{2}$      |
 
 The number of orbitals in a subshell is $2l + 1$.
 
@@ -145,8 +146,8 @@ The number of orbitals in a subshell is $2l + 1$.
 
 For the $3p$ subshell: $n = 3$$l = 1$$m_l = -1, 0, +1$$m_s = \pm\frac{1}{2}$
 
-This gives three $p$-orbitals ($p_x$$p_y$$p_z$), each holding two electrons, for a total of six
-$3p$ electrons.
+This gives three $p$-orbitals ($p_x$$p_y$$p_z$), each holding two electrons, for a total of six $3p$
+electrons.
 
 :::
 
@@ -156,9 +157,9 @@ Three rules govern how electrons fill orbitals:
 
 1. **Aufbau principle**: Electrons fill orbitals starting from the lowest energy level upwards.
 2. **Pauli exclusion principle**: No two electrons in the same atom can have identical sets of four
- quantum numbers. Each orbital holds a maximum of two electrons with opposite spins.
+   quantum numbers. Each orbital holds a maximum of two electrons with opposite spins.
 3. **Hund's rule**: Within a subshell, electrons occupy degenerate orbitals singly first, with
- parallel spins, before pairing up.
+   parallel spins, before pairing up.
 
 ### Filling Order
 
@@ -197,12 +198,12 @@ First: $\mathrm{Fe}^{2+}$ is $[\mathrm{Ar}]\, 3d^6$Not $[\mathrm{Ar}]\, 4s^2\, 3
 Half-filled and fully-filled $d$-subshells are more stable due to symmetry and exchange energy. This
 Causes exceptions in chromium, copper, molybdenum, silver, and gold:
 
-| Element | Expected configuration | Actual configuration | Reason |
+| Element       | Expected configuration                  | Actual configuration                       | Reason                    |
 | ------------- | --------------------------------------- | ------------------------------------------ | ------------------------- |
-| $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$ | $[\mathrm{Ar}]\, 4s^1\, 3d^5$ | Half-filled $d$-subshell |
-| $\mathrm{Cu}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^9$ | $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$ | Fully-filled $d$-subshell |
-| $\mathrm{Mo}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^4$ | $[\mathrm{Kr}]\, 5s^1\, 4d^5$ | Half-filled $d$-subshell |
-| $\mathrm{Ag}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^9$ | $[\mathrm{Kr}]\, 5s^1\, 4d^{10}$ | Fully-filled $d$-subshell |
+| $\mathrm{Cr}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^4$           | $[\mathrm{Ar}]\, 4s^1\, 3d^5$              | Half-filled $d$-subshell  |
+| $\mathrm{Cu}$ | $[\mathrm{Ar}]\, 4s^2\, 3d^9$           | $[\mathrm{Ar}]\, 4s^1\, 3d^{10}$           | Fully-filled $d$-subshell |
+| $\mathrm{Mo}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^4$           | $[\mathrm{Kr}]\, 5s^1\, 4d^5$              | Half-filled $d$-subshell  |
+| $\mathrm{Ag}$ | $[\mathrm{Kr}]\, 5s^2\, 4d^9$           | $[\mathrm{Kr}]\, 5s^1\, 4d^{10}$           | Fully-filled $d$-subshell |
 | $\mathrm{Au}$ | $[\mathrm{Xe}]\, 6s^2\, 4f^{14}\, 5d^9$ | $[\mathrm{Xe}]\, 6s^1\, 4f^{14}\, 5d^{10}$ | Fully-filled $d$-subshell |
 
 ### Orbital Diagrams
@@ -231,35 +232,35 @@ All three $2p$ electrons are unpaired with parallel spins, following Hund's rule
 The periodic table arranges elements in order of increasing atomic number. The layout reflects the
 Electron configurations of the elements.
 
-| Feature | Description |
+| Feature | Description                                                                 |
 | ------- | --------------------------------------------------------------------------- |
 | Periods | Horizontal rows; number = principal quantum number $n$ of the valence shell |
-| Groups | Vertical columns; elements share similar valence electron configurations |
-| Blocks | Regions corresponding to the subshell being filled |
+| Groups  | Vertical columns; elements share similar valence electron configurations    |
+| Blocks  | Regions corresponding to the subshell being filled                          |
 
 ### Block Structure
 
-| Block | Subshell being filled | Groups | Examples |
+| Block | Subshell being filled       | Groups                | Examples                  |
 | ----- | --------------------------- | --------------------- | ------------------------- |
-| $s$ | $ns^1$ to $ns^2$ | $1$$2$ | H, He, Li, Na, Mg, Ca |
-| $p$ | $np^1$ to $np^6$ | $13$--$18$ | B, C, N, O, F, Ne, Cl, Ar |
-| $d$ | $(n-1)d^1$ to $(n-1)d^{10}$ | $3$--$12$ | Sc, Ti, Fe, Cu, Zn |
-| $f$ | $(n-2)f^1$ to $(n-2)f^{14}$ | Lanthanides/Actinides | Ce, Th, U |
+| $s$   | $ns^1$ to $ns^2$            | $1$$2$                | H, He, Li, Na, Mg, Ca     |
+| $p$   | $np^1$ to $np^6$            | $13$--$18$            | B, C, N, O, F, Ne, Cl, Ar |
+| $d$   | $(n-1)d^1$ to $(n-1)d^{10}$ | $3$--$12$             | Sc, Ti, Fe, Cu, Zn        |
+| $f$   | $(n-2)f^1$ to $(n-2)f^{14}$ | Lanthanides/Actinides | Ce, Th, U                 |
 
 ### Group Numbering
 
 The IB uses IUPAC group numbers $1$--$18$:
 
-| IUPAC Group | Common Name | Valence electrons |
+| IUPAC Group | Common Name           | Valence electrons                 |
 | ----------- | --------------------- | --------------------------------- |
-| $1$ | Alkali metals | $ns^1$ |
-| $2$ | Alkaline earth metals | $ns^2$ |
-| $13$ | Boron group | $ns^2\, np^1$ |
-| $14$ | Carbon group | $ns^2\, np^2$ |
-| $15$ | Nitrogen group | $ns^2\, np^3$ |
-| $16$ | Oxygen group | $ns^2\, np^4$ |
-| $17$ | Halogens | $ns^2\, np^5$ |
-| $18$ | Noble gases | $ns^2\, np^6$ (except He: $1s^2$) |
+| $1$         | Alkali metals         | $ns^1$                            |
+| $2$         | Alkaline earth metals | $ns^2$                            |
+| $13$        | Boron group           | $ns^2\, np^1$                     |
+| $14$        | Carbon group          | $ns^2\, np^2$                     |
+| $15$        | Nitrogen group        | $ns^2\, np^3$                     |
+| $16$        | Oxygen group          | $ns^2\, np^4$                     |
+| $17$        | Halogens              | $ns^2\, np^5$                     |
+| $18$        | Noble gases           | $ns^2\, np^6$ (except He: $1s^2$) |
 
 ---
 
@@ -282,10 +283,10 @@ Effectively than electrons in the same shell.
 
 ### Atomic Radius
 
-| Trend | Explanation |
+| Trend                     | Explanation                                                               |
 | ------------------------- | ------------------------------------------------------------------------- |
-| Decreases across a period | $Z_{\mathrm{eff}}$ increases; electrons are pulled closer to the nucleus |
-| Increases down a group | Additional electron shells increase the average distance from the nucleus |
+| Decreases across a period | $Z_{\mathrm{eff}}$ increases; electrons are pulled closer to the nucleus  |
+| Increases down a group    | Additional electron shells increase the average distance from the nucleus |
 
 **Definition.** **Atomic radius** is half the distance between the nuclei of two bonded atoms of the
 Same element.
@@ -295,12 +296,12 @@ Nuclei of adjacent atoms in the solid or liquid), which is significantly larger 
 
 ### Ionic Radius
 
-| Trend | Explanation |
+| Trend                                       | Explanation                                                          |
 | ------------------------------------------- | -------------------------------------------------------------------- |
 | Cations are smaller than their parent atoms | Fewer electron-electron repulsions; same $Z$ pulling fewer electrons |
-| Anions are larger than their parent atoms | Increased electron-electron repulsion with the same $Z$ |
-| Ionic radius increases down a group | Additional shells |
-| Across a period, ions decrease in size | Isoelectronic series: same number of electrons, increasing $Z$ |
+| Anions are larger than their parent atoms   | Increased electron-electron repulsion with the same $Z$              |
+| Ionic radius increases down a group         | Additional shells                                                    |
+| Across a period, ions decrease in size      | Isoelectronic series: same number of electrons, increasing $Z$       |
 
 :::info[Example — Isoelectronic series]
 
@@ -320,17 +321,17 @@ $$
 \mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \qquad \Delta H = IE_1
 $$
 
-| Trend | Explanation |
+| Trend                     | Explanation                                               |
 | ------------------------- | --------------------------------------------------------- |
 | Increases across a period | $Z_{\mathrm{eff}}$ increases; electrons held more tightly |
-| Decreases down a group | Electrons are farther from the nucleus and more shielded |
+| Decreases down a group    | Electrons are farther from the nucleus and more shielded  |
 
 **Deviations from the general trend across a period:**
 
-| Deviation | Element pair | Explanation |
+| Deviation                    | Element pair | Explanation                                                                                |
 | ---------------------------- | ------------ | ------------------------------------------------------------------------------------------ |
-| Drop from Group $2$ to $13$ | Be $\to$ B | Be: $2s^2$ (stable filled subshell); B: $2p^1$ (easier to remove) |
-| Drop from Group $15$ to $16$ | N $\to$ O | N: $2p^3$ (half-filled, stable); O: $2p^4$ (paired electron in $2p$ experiences repulsion) |
+| Drop from Group $2$ to $13$  | Be $\to$ B   | Be: $2s^2$ (stable filled subshell); B: $2p^1$ (easier to remove)                          |
+| Drop from Group $15$ to $16$ | N $\to$ O    | N: $2p^3$ (half-filled, stable); O: $2p^4$ (paired electron in $2p$ experiences repulsion) |
 
 ### Successive Ionization Energies
 
@@ -368,10 +369,10 @@ $$
 
 A more negative $EA$ indicates a greater tendency to accept an electron.
 
-| Trend | Explanation |
+| Trend                                           | Explanation                                                    |
 | ----------------------------------------------- | -------------------------------------------------------------- |
 | Generally becomes more negative across a period | Increasing $Z_{\mathrm{eff}}$ attracts electrons more strongly |
-| Generally becomes less negative down a group | Increased distance and shielding reduce the nuclear pull |
+| Generally becomes less negative down a group    | Increased distance and shielding reduce the nuclear pull       |
 
 Noble gases have positive (endothermic) electron affinities because the added electron enters a new,
 Higher-energy subshell.
@@ -381,21 +382,21 @@ Higher-energy subshell.
 **Definition.** **Electronegativity** is the ability of an atom to attract the shared pair of
 Electrons in a covalent bond. The Pauling scale is the most common.
 
-| Trend | Explanation |
+| Trend                     | Explanation                      |
 | ------------------------- | -------------------------------- |
-| Increases across a period | Increasing $Z_{\mathrm{eff}}$ |
-| Decreases down a group | Increased distance and shielding |
+| Increases across a period | Increasing $Z_{\mathrm{eff}}$    |
+| Decreases down a group    | Increased distance and shielding |
 
-| Scale | Most electronegative | Least electronegative |
+| Scale   | Most electronegative | Least electronegative |
 | ------- | -------------------- | --------------------- |
-| Pauling | F ($3.98$) | Fr ($0.7$) |
+| Pauling | F ($3.98$)           | Fr ($0.7$)            |
 
 ### Metallic and Non-Metallic Character
 
-| Trend | Metallic character | Non-metallic character |
+| Trend           | Metallic character | Non-metallic character |
 | --------------- | ------------------ | ---------------------- |
-| Across a period | Decreases | Increases |
-| Down a group | Increases | Decreases |
+| Across a period | Decreases          | Increases              |
+| Down a group    | Increases          | Decreases              |
 
 Metallic character correlates with low ionization energy, low electronegativity, and large atomic
 Radius. Non-metallic character correlates with high ionization energy, high electronegativity, and
@@ -403,15 +404,15 @@ Small atomic radius.
 
 ### Summary Table of Periodic Trends
 
-| Property | Across a period (left to right) | Down a group (top to bottom) |
+| Property               | Across a period (left to right) | Down a group (top to bottom) |
 | ---------------------- | ------------------------------- | ---------------------------- |
-| Atomic radius | Decreases | Increases |
-| Ionic radius | Decreases (isoelectronic) | Increases |
-| Ionization energy | Increases | Decreases |
-| Electron affinity | More negative | Less negative |
-| Electronegativity | Increases | Decreases |
-| Metallic character | Decreases | Increases |
-| Non-metallic character | Increases | Decreases |
+| Atomic radius          | Decreases                       | Increases                    |
+| Ionic radius           | Decreases (isoelectronic)       | Increases                    |
+| Ionization energy      | Increases                       | Decreases                    |
+| Electron affinity      | More negative                   | Less negative                |
+| Electronegativity      | Increases                       | Decreases                    |
+| Metallic character     | Decreases                       | Increases                    |
+| Non-metallic character | Increases                       | Decreases                    |
 
 ---
 
@@ -419,18 +420,18 @@ Small atomic radius.
 
 ### Physical Properties
 
-| Property | Trend down the group |
+| Property      | Trend down the group                                 |
 | ------------- | ---------------------------------------------------- |
 | Melting point | Decreases (Cs is below room temp in some conditions) |
-| Boiling point | Decreases |
-| Density | Generally increases (Li, K anomalies) |
-| Atomic radius | Increases |
-| Softness | Increases (softer metals) |
+| Boiling point | Decreases                                            |
+| Density       | Generally increases (Li, K anomalies)                |
+| Atomic radius | Increases                                            |
+| Softness      | Increases (softer metals)                            |
 
 ### Chemical Properties
 
-All alkali metals have the outer electron configuration $ns^1$. The single valence electron is
- lost, forming $\mathrm{M}^+$ ions.
+All alkali metals have the outer electron configuration $ns^1$. The single valence electron is lost,
+forming $\mathrm{M}^+$ ions.
 
 #### Reaction with Water
 
@@ -440,12 +441,12 @@ $$
 
 Reactivity increases down the group:
 
-| Metal | Observation |
+| Metal  | Observation                                        |
 | ------ | -------------------------------------------------- |
-| Li | Steady fizzing; moves on surface |
-| Na | Rapid fizzing; melts into a ball; may ignite H$_2$ |
-| K | Ignites immediately with a lilac flame |
-| Rb, Cs | Explosive reaction; often thrown from the water |
+| Li     | Steady fizzing; moves on surface                   |
+| Na     | Rapid fizzing; melts into a ball; may ignite H$_2$ |
+| K      | Ignites immediately with a lilac flame             |
+| Rb, Cs | Explosive reaction; often thrown from the water    |
 
 **Explanation of trend**: Ionization energy decreases down the group. The valence electron is
 Farther from the nucleus and more shielded, so less energy is required to remove it.
@@ -454,12 +455,12 @@ Farther from the nucleus and more shielded, so less energy is required to remove
 
 Alkali metals burn in oxygen to form oxides:
 
-| Metal | Product with limited O$_2$ | Product with excess O$_2$ |
+| Metal  | Product with limited O$_2$            | Product with excess O$_2$              |
 | ------ | ------------------------------------- | -------------------------------------- |
-| Li | $\mathrm{Li}_2\mathrm{O}$ (oxide) | $\mathrm{Li}_2\mathrm{O}$ |
-| Na | $\mathrm{Na}_2\mathrm{O}$ (oxide) | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
-| K | $\mathrm{K}_2\mathrm{O}_2$ (peroxide) | $\mathrm{KO}_2$ (superoxide) |
-| Rb, Cs | Superoxides form readily | Superoxides |
+| Li     | $\mathrm{Li}_2\mathrm{O}$ (oxide)     | $\mathrm{Li}_2\mathrm{O}$              |
+| Na     | $\mathrm{Na}_2\mathrm{O}$ (oxide)     | $\mathrm{Na}_2\mathrm{O}_2$ (peroxide) |
+| K      | $\mathrm{K}_2\mathrm{O}_2$ (peroxide) | $\mathrm{KO}_2$ (superoxide)           |
+| Rb, Cs | Superoxides form readily              | Superoxides                            |
 
 #### Hydroxides
 
@@ -475,21 +476,21 @@ Basicity increases down the group (solubility increases, so $[\mathrm{OH}^-]$ is
 
 Alkali metal ions produce characteristic flame colours due to electron transitions:
 
-| Ion | Flame colour |
+| Ion             | Flame colour                                     |
 | --------------- | ------------------------------------------------ |
-| $\mathrm{Li}^+$ | Crimson red |
-| $\mathrm{Na}^+$ | Yellow |
-| $\mathrm{K}^+$ | Lilac (viewed through cobalt glass to filter Na) |
-| $\mathrm{Rb}^+$ | Red-violet |
-| $\mathrm{Cs}^+$ | Blue |
+| $\mathrm{Li}^+$ | Crimson red                                      |
+| $\mathrm{Na}^+$ | Yellow                                           |
+| $\mathrm{K}^+$  | Lilac (viewed through cobalt glass to filter Na) |
+| $\mathrm{Rb}^+$ | Red-violet                                       |
+| $\mathrm{Cs}^+$ | Blue                                             |
 
 ### Uses
 
-| Metal | Use |
+| Metal | Use                                                   |
 | ----- | ----------------------------------------------------- |
-| Li | Batteries, psychiatric medication (lithium carbonate) |
-| Na | Street lamps (Na vapour), NaK coolant |
-| K | Fertilisers ($\mathrm{KNO}_3$), potash |
+| Li    | Batteries, psychiatric medication (lithium carbonate) |
+| Na    | Street lamps (Na vapour), NaK coolant                 |
+| K     | Fertilisers ($\mathrm{KNO}_3$), potash                |
 
 ---
 
@@ -497,14 +498,14 @@ Alkali metal ions produce characteristic flame colours due to electron transitio
 
 ### Physical Properties
 
-| Property | Trend down the group |
+| Property      | Trend down the group                                           |
 | ------------- | -------------------------------------------------------------- |
-| Melting point | Increases |
-| Boiling point | Increases |
-| Atomic radius | Increases |
-| State at RT | F$_2$Cl$_2$ (gas); Br$_2$ (liquid); I$_2$ (solid) |
-| Colour | Pale yellow $\to$ yellow-green $\to$ red-brown $\to$ dark grey |
-| Volatility | Decreases |
+| Melting point | Increases                                                      |
+| Boiling point | Increases                                                      |
+| Atomic radius | Increases                                                      |
+| State at RT   | F$_2$Cl$_2$ (gas); Br$_2$ (liquid); I$_2$ (solid)              |
+| Colour        | Pale yellow $\to$ yellow-green $\to$ red-brown $\to$ dark grey |
+| Volatility    | Decreases                                                      |
 
 The increase in melting and boiling points down the group is due to increasing London dispersion
 Forces as the number of electrons (and therefore polarizability) increases.
@@ -552,23 +553,23 @@ These are vigorous, exothermic reactions forming ionic halides.
 
 #### Halide Ion Tests
 
-| Halide | Reagent | Observation |
+| Halide          | Reagent                                | Observation                                                      |
 | --------------- | -------------------------------------- | ---------------------------------------------------------------- |
-| $\mathrm{Cl}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | White precipitate ($\mathrm{AgCl}$), soluble in dilute NH$_3$ |
+| $\mathrm{Cl}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | White precipitate ($\mathrm{AgCl}$), soluble in dilute NH$_3$    |
 | $\mathrm{Br}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Cream precipitate ($\mathrm{AgBr}$), partially soluble in NH$_3$ |
-| $\mathrm{I}^-$ | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Yellow precipitate ($\mathrm{AgI}$), insoluble in NH$_3$ |
+| $\mathrm{I}^-$  | $\mathrm{AgNO}_3$(aq) + dilute HNO$_3$ | Yellow precipitate ($\mathrm{AgI}$), insoluble in NH$_3$         |
 
 Dilute HNO$_3$ is added first to remove any carbonate or hydroxide ions that would also form
 Precipitates with $\mathrm{Ag}^+$.
 
 #### Uses
 
-| Halogen | Use |
+| Halogen         | Use                                                  |
 | --------------- | ---------------------------------------------------- |
-| $\mathrm{F}_2$ | Fluoridation of water, Teflon (PTFE) production |
-| $\mathrm{Cl}_2$ | Water purification, PVC, bleach ($\mathrm{NaClO}$) |
-| $\mathrm{Br}_2$ | Flame retardants, brominated compounds, photography |
-| $\mathrm{I}_2$ | Antiseptics, iodised salt, thyroid hormone synthesis |
+| $\mathrm{F}_2$  | Fluoridation of water, Teflon (PTFE) production      |
+| $\mathrm{Cl}_2$ | Water purification, PVC, bleach ($\mathrm{NaClO}$)   |
+| $\mathrm{Br}_2$ | Flame retardants, brominated compounds, photography  |
+| $\mathrm{I}_2$  | Antiseptics, iodised salt, thyroid hormone synthesis |
 
 #### Interhalogens
 
@@ -578,12 +579,12 @@ Electronegative halogen is the negative end of the molecule.
 General formula: $\mathrm{XX}'_n$ where $n = 1, 3, 5, 7$ (depending on the size of the central
 Halogen).
 
-| Example | Type | Structure |
+| Example          | Type        | Structure              |
 | ---------------- | ----------- | ---------------------- |
-| $\mathrm{ClF}$ | Diatomic | Linear |
-| $\mathrm{BrF}_3$ | Triatomic | T-shaped |
-| $\mathrm{IF}_5$ | Pentaatomic | Square pyramidal |
-| $\mathrm{IF}_7$ | Heptaatomic | Pentagonal bipyramidal |
+| $\mathrm{ClF}$   | Diatomic    | Linear                 |
+| $\mathrm{BrF}_3$ | Triatomic   | T-shaped               |
+| $\mathrm{IF}_5$  | Pentaatomic | Square pyramidal       |
+| $\mathrm{IF}_7$  | Heptaatomic | Pentagonal bipyramidal |
 
 Interhalogens are generally more reactive than the parent halogens because the bonds are polar.
 
@@ -596,14 +597,14 @@ Interhalogens are generally more reactive than the parent halogens because the b
 Noble gases have complete valence shells ($ns^2\, np^6$Except He which is $1s^2$), making them
 Chemically inert under standard conditions. They exist as monatomic gases.
 
-| Element | Configuration | Boiling point (K) | First IE (kJ/mol) |
+| Element | Configuration                 | Boiling point (K) | First IE (kJ/mol) |
 | ------- | ----------------------------- | ----------------- | ----------------- |
-| He | $1s^2$ | $4.2$ | $2372$ |
-| Ne | $[\mathrm{He}]\, 2s^2\, 2p^6$ | $27.1$ | $2081$ |
-| Ar | $[\mathrm{Ne}]\, 3s^2\, 3p^6$ | $87.3$ | $1521$ |
-| Kr | $[\mathrm{Ar}]\, 4s^2\, 4p^6$ | $119.8$ | $1351$ |
-| Xe | $[\mathrm{Kr}]\, 5s^2\, 5p^6$ | $165.0$ | $1170$ |
-| Rn | $[\mathrm{Xe}]\, 6s^2\, 6p^6$ | $211.0$ | $1037$ |
+| He      | $1s^2$                        | $4.2$             | $2372$            |
+| Ne      | $[\mathrm{He}]\, 2s^2\, 2p^6$ | $27.1$            | $2081$            |
+| Ar      | $[\mathrm{Ne}]\, 3s^2\, 3p^6$ | $87.3$            | $1521$            |
+| Kr      | $[\mathrm{Ar}]\, 4s^2\, 4p^6$ | $119.8$           | $1351$            |
+| Xe      | $[\mathrm{Kr}]\, 5s^2\, 5p^6$ | $165.0$           | $1170$            |
+| Rn      | $[\mathrm{Xe}]\, 6s^2\, 6p^6$ | $211.0$           | $1037$            |
 
 ### Boiling Point Trend
 
@@ -615,8 +616,7 @@ London dispersion.
 
 Under extreme conditions, the heavier noble gases can form compounds:
 
-- **Xenon** forms $\mathrm{XeF}_2$$\mathrm{XeF}_4$$\mathrm{XeF}_6$$\mathrm{XeO}_3$
- $\mathrm{XeO}_4$
+- **Xenon** forms $\mathrm{XeF}_2$$\mathrm{XeF}_4$$\mathrm{XeF}_6$$\mathrm{XeO}_3$ $\mathrm{XeO}_4$
 - **Krypton** forms $\mathrm{KrF}_2$ (extremely reactive)
 - **Argon** forms very unstable compounds under extreme conditions
 
@@ -625,13 +625,13 @@ Fluorine and oxygen can remove or share electrons.
 
 ### Uses
 
-| Noble Gas | Use |
+| Noble Gas | Use                                                                   |
 | --------- | --------------------------------------------------------------------- |
-| He | Balloons, cryogenics, helium-neon lasers, deep-sea diving gas mix |
-| Ne | Neon signs (orange-red glow) |
-| Ar | Inert atmosphere for welding, light bulbs |
-| Kr | High-performance lighting, photography flash lamps |
-| Xe | Xenon lamps (used in IMAX projectors, car headlights), ion propulsion |
+| He        | Balloons, cryogenics, helium-neon lasers, deep-sea diving gas mix     |
+| Ne        | Neon signs (orange-red glow)                                          |
+| Ar        | Inert atmosphere for welding, light bulbs                             |
+| Kr        | High-performance lighting, photography flash lamps                    |
+| Xe        | Xenon lamps (used in IMAX projectors, car headlights), ion propulsion |
 
 ---
 
@@ -648,13 +648,13 @@ States, though they are in the $d$-block.
 
 ### Physical Properties
 
-| Property | Typical behaviour of transition metals |
+| Property                | Typical behaviour of transition metals            |
 | ----------------------- | ------------------------------------------------- |
-| Melting/boiling points | High (strong metallic bonding from $d$-electrons) |
-| Density | High |
-| Hardness | Hard |
-| Electrical conductivity | Good conductors |
-| Malleability | Malleable and ductile |
+| Melting/boiling points  | High (strong metallic bonding from $d$-electrons) |
+| Density                 | High                                              |
+| Hardness                | Hard                                              |
+| Electrical conductivity | Good conductors                                   |
+| Malleability            | Malleable and ductile                             |
 
 ### Variable Oxidation States
 
@@ -663,13 +663,13 @@ This is because the $3d$ and $4s$ energy levels are close in energy.
 
 | Element | Common oxidation states |
 | ------- | ----------------------- |
-| Ti | $+2, +3, +4$ |
-| V | $+2, +3, +4, +5$ |
-| Cr | $+2, +3, +6$ |
-| Mn | $+2, +3, +4, +6, +7$ |
-| Fe | $+2, +3$ |
-| Co | $+2, +3$ |
-| Cu | $+1, +2$ |
+| Ti      | $+2, +3, +4$            |
+| V       | $+2, +3, +4, +5$        |
+| Cr      | $+2, +3, +6$            |
+| Mn      | $+2, +3, +4, +6, +7$    |
+| Fe      | $+2, +3$                |
+| Co      | $+2, +3$                |
+| Cu      | $+1, +2$                |
 
 **Trend**: The maximum oxidation state increases across the period to manganese ($+7$) then
 Decreases. Higher oxidation states become more stable with oxygen (oxoanions) than with water.
@@ -688,22 +688,22 @@ $$
 **Definition.** A **ligand** is a molecule or ion that can donate a lone pair of electrons to a
 Central metal ion to form a coordinate bond.
 
-| Type of ligand | Examples | Denticity | Bonds donated |
-| -------------- | --------------------------------------------------------------------------- | --------- | ------------- |
-| Monodentate | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$$\mathrm{CN}^-$ | $1$ | $1$ |
-| Bidentate | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$) | $2$ | $2$ |
-| Hexadentate | EDTA ($\mathrm{EDTA}^{4-}$) | $6$ | $6$ |
+| Type of ligand | Examples                                                              | Denticity | Bonds donated |
+| -------------- | --------------------------------------------------------------------- | --------- | ------------- |
+| Monodentate    | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$$\mathrm{CN}^-$ | $1$       | $1$           |
+| Bidentate      | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$)       | $2$       | $2$           |
+| Hexadentate    | EDTA ($\mathrm{EDTA}^{4-}$)                                           | $6$       | $6$           |
 
 ### Coordination Number
 
 **Definition.** The **coordination number** is the total number of coordinate bonds from ligands to
 The central metal ion.
 
-| Coordination number | Geometry | Example |
-| ------------------- | ------------- | -------------------------------------------------------------------------- |
-| $4$ | Tetrahedral | $[\mathrm{CoCl}_4]^{2-}$ |
-| $4$ | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$ |
-| $6$ | Octahedral | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$$[\mathrm{Fe(CN)}_6]^{4-}$ |
+| Coordination number | Geometry      | Example                                                                  |
+| ------------------- | ------------- | ------------------------------------------------------------------------ |
+| $4$                 | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                                 |
+| $4$                 | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$     |
+| $6$                 | Octahedral    | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$$[\mathrm{Fe(CN)}_6]^{4-}$ |
 
 ### Colour of Transition Metal Complexes
 
@@ -711,9 +711,9 @@ Transition metal complexes are coloured because of $d$-$d$ electron transitions:
 
 1. In an isolated atom/ion, all five $d$-orbitals are degenerate (same energy).
 2. In a complex, ligands split the $d$-orbitals into groups of different energies ($d$-orbital
- splitting).
+   splitting).
 3. When white light passes through the complex, photons with energy matching the $\Delta E$ between
- split $d$-levels are absorbed.
+   split $d$-levels are absorbed.
 4. The remaining light is transmitted, giving the complex its complementary colour.
 
 $$
@@ -729,12 +729,12 @@ $$
 Ligands that produce larger splitting are called **strong-field ligands**; those producing smaller
 Splitting are **weak-field ligands**.
 
-| Complex ion | Colour observed | Colour absorbed |
+| Complex ion                                                     | Colour observed | Colour absorbed |
 | --------------------------------------------------------------- | --------------- | --------------- |
-| $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | Blue | Orange/red |
-| $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$ | Deep blue | Yellow/orange |
-| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ | Pink | Green |
-| $[\mathrm{CoCl}_4]^{2-}$ | Blue | Yellow/orange |
+| $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                  | Blue            | Orange/red      |
+| $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$ | Deep blue       | Yellow/orange   |
+| $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$                  | Pink            | Green           |
+| $[\mathrm{CoCl}_4]^{2-}$                                        | Blue            | Yellow/orange   |
 
 :::warning
 
@@ -752,29 +752,29 @@ Intermediate complexes, providing alternative reaction pathways with lower activ
 
 **Heterogeneous catalysis** (catalyst in a different phase):
 
-| Catalyst | Reaction |
+| Catalyst   | Reaction                                                                        |
 | ---------- | ------------------------------------------------------------------------------- |
-| Fe | Haber process: $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$ |
-| V$_2$O$_5$ | Contact process: $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$ |
-| Ni | Hydrogenation of alkenes |
-| Pt/Pd | Catalytic converters (oxidation of CO and hydrocarbons, reduction of NO$_x$) |
+| Fe         | Haber process: $\mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3$ |
+| V$_2$O$_5$ | Contact process: $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$             |
+| Ni         | Hydrogenation of alkenes                                                        |
+| Pt/Pd      | Catalytic converters (oxidation of CO and hydrocarbons, reduction of NO$_x$)    |
 
 **Homogeneous catalysis** (catalyst in the same phase):
 
-| Catalyst | Reaction |
+| Catalyst                            | Reaction                                           |
 | ----------------------------------- | -------------------------------------------------- |
 | $\mathrm{Fe}^{2+}/\mathrm{Fe}^{3+}$ | Fenton's reagent (oxidation of organic pollutants) |
-| $\mathrm{Mn}^{2+}$ | Decomposition of $\mathrm{H}_2\mathrm{O}_2$ |
+| $\mathrm{Mn}^{2+}$                  | Decomposition of $\mathrm{H}_2\mathrm{O}_2$        |
 
 ### Magnetic Properties
 
 Transition metals and their complexes can be **paramagnetic** (attracted to a magnetic field) or
 **diamagnetic** (weakly repelled).
 
-| Property | Condition | Example |
+| Property     | Condition                      | Example                                                   |
 | ------------ | ------------------------------ | --------------------------------------------------------- |
-| Paramagnetic | Unpaired $d$-electrons present | $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ ($d^5$) |
-| Diamagnetic | All $d$-electrons paired | $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($d^{10}$) |
+| Paramagnetic | Unpaired $d$-electrons present | $[\mathrm{Fe}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ ($d^5$)    |
+| Diamagnetic  | All $d$-electrons paired       | $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($d^{10}$) |
 
 The number of unpaired electrons determines the magnetic moment (measured in Bohr magnetons,
 $\mu_B$):
@@ -820,12 +820,12 @@ Wavelengths on a continuous spectrum.
 The hydrogen emission spectrum shows several series, each corresponding to transitions to a specific
 Lower energy level:
 
-| Series | Final $n$ | Spectral region | Wavelength range |
+| Series   | Final $n$ | Spectral region | Wavelength range         |
 | -------- | --------- | --------------- | ------------------------ |
-| Lyman | $1$ | Ultraviolet | $< 400\mathrm{ nm}$ |
-| Balmer | $2$ | Visible | $400$--$700\mathrm{ nm}$ |
-| Paschen | $3$ | Infrared | $> 700\mathrm{ nm}$ |
-| Brackett | $4$ | Infrared | $> 700\mathrm{ nm}$ |
+| Lyman    | $1$       | Ultraviolet     | $< 400\mathrm{ nm}$      |
+| Balmer   | $2$       | Visible         | $400$--$700\mathrm{ nm}$ |
+| Paschen  | $3$       | Infrared        | $> 700\mathrm{ nm}$      |
+| Brackett | $4$       | Infrared        | $> 700\mathrm{ nm}$      |
 
 The energy levels of hydrogen are given by:
 
@@ -837,10 +837,10 @@ For the Balmer series (transitions to $n = 2$), the first four lines correspond 
 
 | Transition | $\lambda$ (nm) | Colour |
 | ---------- | -------------- | ------ |
-| $3 \to 2$ | $656$ | Red |
-| $4 \to 2$ | $486$ | Cyan |
-| $5 \to 2$ | $434$ | Blue |
-| $6 \to 2$ | $410$ | Violet |
+| $3 \to 2$  | $656$          | Red    |
+| $4 \to 2$  | $486$          | Cyan   |
+| $5 \to 2$  | $434$          | Blue   |
+| $6 \to 2$  | $410$          | Violet |
 
 ### Convergence
 
@@ -864,18 +864,18 @@ Classical model predicted a continuous spectrum, which is never observed for ind
 
 Mass spectrometry measures the mass-to-charge ratio ($m/z$) of ions. The general process:
 
-1. **Ionization**: Atoms or molecules are ionized ( by electron impact — high-energy
- electrons knock an electron off the sample, forming positive ions).
+1. **Ionization**: Atoms or molecules are ionized ( by electron impact — high-energy electrons knock
+   an electron off the sample, forming positive ions).
 2. **Acceleration**: Ions are accelerated by an electric field. All ions receive the same kinetic
    energy: $$ \frac{1}{2}mv^2 = zV $$
- where $V$ is the accelerating voltage and $z$ is the charge
- on the ion.
+ where $V$ is the accelerating voltage and $z$ is the charge on
+   the ion.
 3. **Deflection**: Ions pass through a magnetic field and are deflected. Lighter ions (or more
    highly charged ions) are deflected more: $$ r = \frac{\sqrt{2mV}}{zB} $$
- where $r$ is the
- radius of curvature and $B$ is the magnetic field strength.
+ where $r$ is the radius
+   of curvature and $B$ is the magnetic field strength.
 4. **Detection**: A detector records the abundance of ions at each $m/z$ value, producing a mass
- spectrum.
+   spectrum.
 
 ### Interpreting Mass Spectra
 
@@ -915,21 +915,21 @@ The molecular ion peak for $\mathrm{CH}_4$ appears at $m/z = 16$.
 After ionization, the molecular ion often breaks apart into smaller fragments. The fragmentation
 Pattern is characteristic of the molecule and can be used to identify it.
 
-| Fragment $m/z$ | Likely species | Common origin |
+| Fragment $m/z$ | Likely species                                               | Common origin                             |
 | -------------- | ------------------------------------------------------------ | ----------------------------------------- |
-| $15$ | $\mathrm{CH}_3^+$ | Loss of H from $\mathrm{CH}_4^{+\bullet}$ |
-| $29$ | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$ | Ethanol, aldehydes |
-| $43$ | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ | Ketones, propanol |
-| $77$ | $\mathrm{C}_6\mathrm{H}_5^+$ | Benzene ring |
+| $15$           | $\mathrm{CH}_3^+$                                            | Loss of H from $\mathrm{CH}_4^{+\bullet}$ |
+| $29$           | $\mathrm{C}_2\mathrm{H}_5^+$ or $\mathrm{CHO}^+$             | Ethanol, aldehydes                        |
+| $43$           | $\mathrm{C}_3\mathrm{H}_7^+$ or $\mathrm{CH}_3\mathrm{CO}^+$ | Ketones, propanol                         |
+| $77$           | $\mathrm{C}_6\mathrm{H}_5^+$                                 | Benzene ring                              |
 
 ### Determining Molecular Formula from Isotope Peaks
 
 For molecules containing chlorine or bromine, the isotope patterns are distinctive:
 
-| Element | Isotopes | Approximate ratio |
+| Element | Isotopes                           | Approximate ratio |
 | ------- | ---------------------------------- | ----------------- |
-| Cl | $\mathrm{Cl}$-35, $\mathrm{Cl}$-37 | $3 : 1$ |
-| Br | $\mathrm{Br}$-79, $\mathrm{Br}$-81 | $1 : 1$ |
+| Cl      | $\mathrm{Cl}$-35, $\mathrm{Cl}$-37 | $3 : 1$           |
+| Br      | $\mathrm{Br}$-79, $\mathrm{Br}$-81 | $1 : 1$           |
 
 A molecule with one chlorine atom shows an $\mathrm{M}$ and $\mathrm{M}+2$ peak in a $3:1$ ratio. A
 Molecule with one bromine atom shows an $\mathrm{M}$ and $\mathrm{M}+2$ peak in a $1:1$ ratio.
@@ -949,11 +949,11 @@ Chlorobenzene ($\mathrm{C}_6\mathrm{H}_5\mathrm{Cl}$) shows:
 High-resolution MS can determine exact masses to several decimal places, distinguishing between
 Molecules with the same nominal mass but different molecular formulas:
 
-| Species | Exact mass (u) |
+| Species                              | Exact mass (u) |
 | ------------------------------------ | -------------- |
-| $\mathrm{C}_2\mathrm{H}_4\mathrm{O}$ | $44.0262$ |
-| $\mathrm{CO}_2$ | $43.9898$ |
-| $\mathrm{N}_2\mathrm{O}$ | $44.0011$ |
+| $\mathrm{C}_2\mathrm{H}_4\mathrm{O}$ | $44.0262$      |
+| $\mathrm{CO}_2$                      | $43.9898$      |
+| $\mathrm{N}_2\mathrm{O}$             | $44.0011$      |
 
 ---
 
@@ -967,18 +967,20 @@ Many-electron atom.
 #### Rules
 
 1. Write the electron configuration in groups:
- $(1s)(2s, 2p)(3s, 3p)(3d)(4s, 4p)(4d)(4f)(5s, 5p) \ldots$
+   $(1s)(2s, 2p)(3s, 3p)(3d)(4s, 4p)(4d)(4f)(5s, 5p) \ldots$
 
 2. Electrons in groups to the **right** of the electron of interest contribute $0$ to $S$.
 
 3. Other electrons in the **same group** contribute:
- - For $ns$ or $np$ electrons: each other electron contributes $0.35$ (except $1s$Where the
- other electron contributes $0.30$)
- - For $nd$ or $nf$ electrons: each other electron contributes $0.35$
+
+- For $ns$ or $np$ electrons: each other electron contributes $0.35$ (except $1s$Where the other
+  electron contributes $0.30$)
+- For $nd$ or $nf$ electrons: each other electron contributes $0.35$
 
 4. Electrons in the **$n-1$ shell** contribute:
- - $0.85$ each (for $s$ and $p$ electrons in the $n$ shell)
- - $1.00$ each (for $d$ and $f$ electrons in the $n$ shell)
+
+- $0.85$ each (for $s$ and $p$ electrons in the $n$ shell)
+- $1.00$ each (for $d$ and $f$ electrons in the $n$ shell)
 
 5. Electrons in shells **$n-2$ or lower** contribute $1.00$ each.
 
@@ -1006,7 +1008,7 @@ For the $3d$ electron:
 
 - Same $(3d)$ group: $0$ other electrons $\times 0.35 = 0$
 - $n - 1$ shell: $(3s, 3p)^8$ each contributes $1.00$ (for $d$ electrons, the rule is different) =
- $8 \times 1.00 = 8.00$
+  $8 \times 1.00 = 8.00$
 - Shells $n - 2$ and lower: $(2s, 2p)^8(1s)^2$ = $10 \times 1.00 = 10.00$
 
 $$ S = 0 + 8.00 + 10.00 = 18.00 $$
@@ -1029,16 +1031,16 @@ $$
 \underbrace{IE_1, IE_2, IE_3}_{\mathrm{valence } 3s^2\, 3p^1} \ll IE_4, IE_5, \ldots, IE_{11} \ll IE_{12}, IE_{13}
 $$
 
-| Ionization number | Electron removed | Approximate IE (kJ/mol) | Shell |
+| Ionization number | Electron removed | Approximate IE (kJ/mol) | Shell           |
 | ----------------- | ---------------- | ----------------------- | --------------- |
-| $1$ | $3p^1$ | $578$ | $n = 3$ |
-| $2$ | $3s^1$ | $1817$ | $n = 3$ |
-| $3$ | $3s^1$ | $2745$ | $n = 3$ |
-| $4$ | $2p^1$ | $11577$ | $n = 2$ (jump!) |
-| $\ldots$ | | | |
-| $11$ | $2s^1$ | $6521$ | $n = 2$ |
-| $12$ | $1s^1$ | $18560$ | $n = 1$ (jump!) |
-| $13$ | $1s^1$ | $21600$ | $n = 1$ |
+| $1$               | $3p^1$           | $578$                   | $n = 3$         |
+| $2$               | $3s^1$           | $1817$                  | $n = 3$         |
+| $3$               | $3s^1$           | $2745$                  | $n = 3$         |
+| $4$               | $2p^1$           | $11577$                 | $n = 2$ (jump!) |
+| $\ldots$          |                  |                         |                 |
+| $11$              | $2s^1$           | $6521$                  | $n = 2$         |
+| $12$              | $1s^1$           | $18560$                 | $n = 1$ (jump!) |
+| $13$              | $1s^1$           | $21600$                 | $n = 1$         |
 
 The jumps reveal:
 
@@ -1111,9 +1113,8 @@ For $n = 4$: $N = 6$ spectral lines.
 
 (a) Define the term **relative atomic mass**. (2 marks)
 
-(b) occurring boron consists of two isotopes, $\mathrm{B}$-10 and $\mathrm{B}$-11. The
-Relative atomic mass of boron is $10.81$. Calculate the percentage abundance of $\mathrm{B}$-10. (2
-Marks)
+(b) occurring boron consists of two isotopes, $\mathrm{B}$-10 and $\mathrm{B}$-11. The Relative
+atomic mass of boron is $10.81$. Calculate the percentage abundance of $\mathrm{B}$-10. (2 Marks)
 
 **Markscheme:**
 
@@ -1333,25 +1334,38 @@ Than $\mathrm{F}$.
 
 :::
 
+:::danger Common Pitfalls
 
-:::danger
-Common Pitfalls
+- **Confusing first ionisation energy with electronegativity:** First ionisation energy is the
+  energy required to REMOVE the outermost electron from a gaseous atom. Electronegativity is the
+  ability of an atom to ATTRACT electrons in a covalent bond. Both generally increase across a
+  period, but they measure fundamentally different properties and have different periodic trends
+  down a group.
 
-- **Confusing first ionisation energy with electronegativity:** First ionisation energy is the energy required to REMOVE the outermost electron from a gaseous atom. Electronegativity is the ability of an atom to ATTRACT electrons in a covalent bond. Both generally increase across a period, but they measure fundamentally different properties and have different periodic trends down a group.
+- **Misunderstanding why ionisation energy decreases down a group:** Ionisation energy decreases
+  down a group because the outermost electron is in a higher energy shell, FURTHER from the nucleus
+  and more shielded by inner electrons. The increased distance and shielding outweigh the increased
+  nuclear charge. Students often mention only one factor when both are needed.
 
-- **Misunderstanding why ionisation energy decreases down a group:** Ionisation energy decreases down a group because the outermost electron is in a higher energy shell, FURTHER from the nucleus and more shielded by inner electrons. The increased distance and shielding outweigh the increased nuclear charge. Students often mention only one factor when both are needed.
+- **Confusing periodic trends across a period:** Across a period, atomic radius DECREASES
+  (increasing nuclear charge pulls electrons closer), first ionisation energy generally INCREASES,
+  electronegativity INCREASES, and metallic character DECREASES. Students frequently get one or more
+  of these trends backwards.
 
-- **Confusing periodic trends across a period:** Across a period, atomic radius DECREASES (increasing nuclear charge pulls electrons closer), first ionisation energy generally INCREASES, electronegativity INCREASES, and metallic character DECREASES. Students frequently get one or more of these trends backwards.
-
-- **Misidentifying exceptions in ionisation energy trends:** The general increase in first ionisation energy across a period has dips at Group 13 (e.g., boron) and Group 16 (e.g., oxygen). Group 13 dips because the p1 electron is in a higher energy p-subshell. Group 16 dips because the p4 electron is paired with another electron in the same orbital, creating repulsion. These exceptions are frequently tested in IB exams.
+- **Misidentifying exceptions in ionisation energy trends:** The general increase in first
+  ionisation energy across a period has dips at Group 13 (e.g., boron) and Group 16 (e.g., oxygen).
+  Group 13 dips because the p1 electron is in a higher energy p-subshell. Group 16 dips because the
+  p4 electron is paired with another electron in the same orbital, creating repulsion. These
+  exceptions are frequently tested in IB exams.
 
 :::
+
 ## Practice Problems
 
 <details>
 <summary>Question 1: Calculating Relative Atomic Mass</summary>
 
- occurring boron consists of two isotopes: $\mathrm{B}$-10 ($19.9\%$ abundance, mass
+occurring boron consists of two isotopes: $\mathrm{B}$-10 ($19.9\%$ abundance, mass
 $10.01\mathrm{ u}$) and $\mathrm{B}$-11 ($80.1\%$ abundance, mass $11.01\mathrm{ u}$). Calculate the
 Relative atomic mass of boron.
 
@@ -1454,7 +1468,8 @@ $$\lambda = \frac{1}{2.057 \times 10^6} = 4.86 \times 10^{-7}\mathrm{ m} = 486\m
 
 This corresponds to the cyan line in the Balmer series (visible region).
 
-For the A-Level treatment of this topic, see [Atomic Structure & Periodicity](https://alevel.wyattau.com/docs/chemistry/atomic-structure).
+For the A-Level treatment of this topic, see
+[Atomic Structure & Periodicity](https://alevel.wyattau.com/docs/chemistry/atomic-structure).
 
 </details>
 

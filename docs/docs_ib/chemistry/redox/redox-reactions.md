@@ -1,11 +1,13 @@
 ---
 title: Redox Reactions
-description: "Rigorous IB chemistry notes covering Redox Reactions. Includes definitions, derivations, worked examples, and exam-style problems."
-  cells, electrode potentials, electrolysis, Faraday's laws, corrosion, and fuel cells.
+description:
+  "Rigorous IB chemistry notes covering Redox Reactions. Includes definitions, derivations, worked
+  examples, and exam-style problems. cells, electrode potentials, electrolysis, Faraday's laws,
+  corrosion, and fuel cells."
 slug: redox-reactions
 tags:
-- IB
-- Chemistry
+  - IB
+  - Chemistry
 ---
 
 ## Oxidation States
@@ -13,21 +15,21 @@ tags:
 ### Rules for Assigning Oxidation States
 
 1. The oxidation state of an element in its standard state is **zero** (e.g., Na(s), Cl$_2$(g),
- S$_8$(s), O$_2$(g)).
+   S$_8$(s), O$_2$(g)).
 2. For a **monatomic ion**, the oxidation state equals the charge (e.g., Na$^+$ = +1, Ca$^{2+}$ =
- +2, Cl$^-$ = -1).
+   +2, Cl$^-$ = -1).
 3. **Oxygen** is -2 (exceptions: peroxides = -1, OF$_2$ = +2, superoxides = -1/2).
 4. **Hydrogen** is +1 (exceptions: metal hydrides like NaH where H = -1).
-5. **Halogens** are -1 in compounds (exceptions: when bonded to oxygen or a more
- electronegative halogen).
+5. **Halogens** are -1 in compounds (exceptions: when bonded to oxygen or a more electronegative
+   halogen).
 6. The sum of all oxidation states in a neutral compound equals **zero**.
 7. The sum of all oxidation states in a polyatomic ion equals the **charge of the ion**.
 
 <details>
 <summary>Worked Example 1: Assigning Oxidation States</summary>
 
-(a) Mn in KMnO$_4$: K = +1, O = -2 (four oxygens = -8). Sum = 0: $+1 + \mathrm{Mn} + 4(-2) = 0$So
-Mn = +7.
+(a) Mn in KMnO$_4$: K = +1, O = -2 (four oxygens = -8). Sum = 0: $+1 + \mathrm{Mn} + 4(-2) = 0$So Mn
+= +7.
 
 (b) Cr in K$_2$Cr$_2$O$_7$: K = +1 (two K = +2), O = -2 (seven O = -14). Sum = 0:
 $+2 + 2\mathrm{Cr} + 7(-2) = 0$So $2\mathrm{Cr} = +12$Cr = +6.
@@ -47,10 +49,10 @@ This is a mixed oxidation state compound (Fe$_2$O$_3$ $\cdot$ FeO, with Fe(III) 
 
 ### Oxidation and Reduction
 
-| Process | Oxidation State | Electron Transfer |
+| Process       | Oxidation State | Electron Transfer                            |
 | ------------- | --------------- | -------------------------------------------- |
-| **Oxidation** | Increases | Loss of electrons (OIL -- Oxidation Is Loss) |
-| **Reduction** | Decreases | Gain of electrons (RIG -- Reduction Is Gain) |
+| **Oxidation** | Increases       | Loss of electrons (OIL -- Oxidation Is Loss) |
+| **Reduction** | Decreases       | Gain of electrons (RIG -- Reduction Is Gain) |
 
 **Oxidising agent:** The species that causes oxidation (itself gets reduced). Electron acceptor.
 
@@ -242,17 +244,17 @@ Reaction.
 **Components:**
 
 - **Two half-cells:** Each consists of an electrode in contact with an electrolyte solution
- containing its ions.
-- **Salt bridge:** Contains an inert electrolyte (e.g., KNO$_3$KCl) that allows ion flow to
- maintain electrical neutrality without mixing the solutions.
+  containing its ions.
+- **Salt bridge:** Contains an inert electrolyte (e.g., KNO$_3$KCl) that allows ion flow to maintain
+  electrical neutrality without mixing the solutions.
 - **External circuit:** Wire connecting the two electrodes through which electrons flow.
 
 **Key features:**
 
 - **Anode:** Electrode where oxidation occurs. In a galvanic cell, this is the **negative**
- electrode.
+  electrode.
 - **Cathode:** Electrode where reduction occurs. In a galvanic cell, this is the **positive**
- electrode.
+  electrode.
 - Electrons flow from anode to cathode through the external circuit.
 - Conventional current flows from cathode (positive) to anode (negative) in the external circuit.
 - Cations migrate toward the cathode; anions migrate toward the anode through the salt bridge.
@@ -308,22 +310,22 @@ Gas at $100\mathrm{ kPa}$.
 
 All electrode potentials are tabulated as **reduction potentials**:
 
-| Half-Reaction | $E^\circ$ (V) |
+| Half-Reaction                                                                                           | $E^\circ$ (V) |
 | ------------------------------------------------------------------------------------------------------- | ------------- |
-| $\mathrm{Li}^+ + e^- \rightleftharpoons \mathrm{Li}$ | -3.04 |
-| $\mathrm{K}^+ + e^- \rightleftharpoons \mathrm{K}$ | -2.93 |
-| $\mathrm{Na}^+ + e^- \rightleftharpoons \mathrm{Na}$ | -2.71 |
-| $\mathrm{Mg}^{2+} + 2e^- \rightleftharpoons \mathrm{Mg}$ | -2.37 |
-| $\mathrm{Al}^{3+} + 3e^- \rightleftharpoons \mathrm{Al}$ | -1.66 |
-| $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$ | -0.76 |
-| $\mathrm{Fe}^{2+} + 2e^- \rightleftharpoons \mathrm{Fe}$ | -0.44 |
-| $2\mathrm{H}^+ + 2e^- \rightleftharpoons \mathrm{H}_2$ | 0.00 |
-| $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$ | +0.34 |
-| $\mathrm{I}_2 + 2e^- \rightleftharpoons 2\mathrm{I}^-$ | +0.54 |
-| $\mathrm{Ag}^+ + e^- \rightleftharpoons \mathrm{Ag}$ | +0.80 |
-| $\mathrm{Br}_2 + 2e^- \rightleftharpoons 2\mathrm{Br}^-$ | +1.07 |
-| $\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \rightleftharpoons \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$ | +1.51 |
-| $\mathrm{F}_2 + 2e^- \rightleftharpoons 2\mathrm{F}^-$ | +2.87 |
+| $\mathrm{Li}^+ + e^- \rightleftharpoons \mathrm{Li}$                                                    | -3.04         |
+| $\mathrm{K}^+ + e^- \rightleftharpoons \mathrm{K}$                                                      | -2.93         |
+| $\mathrm{Na}^+ + e^- \rightleftharpoons \mathrm{Na}$                                                    | -2.71         |
+| $\mathrm{Mg}^{2+} + 2e^- \rightleftharpoons \mathrm{Mg}$                                                | -2.37         |
+| $\mathrm{Al}^{3+} + 3e^- \rightleftharpoons \mathrm{Al}$                                                | -1.66         |
+| $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$                                                | -0.76         |
+| $\mathrm{Fe}^{2+} + 2e^- \rightleftharpoons \mathrm{Fe}$                                                | -0.44         |
+| $2\mathrm{H}^+ + 2e^- \rightleftharpoons \mathrm{H}_2$                                                  | 0.00          |
+| $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$                                                | +0.34         |
+| $\mathrm{I}_2 + 2e^- \rightleftharpoons 2\mathrm{I}^-$                                                  | +0.54         |
+| $\mathrm{Ag}^+ + e^- \rightleftharpoons \mathrm{Ag}$                                                    | +0.80         |
+| $\mathrm{Br}_2 + 2e^- \rightleftharpoons 2\mathrm{Br}^-$                                                | +1.07         |
+| $\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \rightleftharpoons \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$ | +1.51         |
+| $\mathrm{F}_2 + 2e^- \rightleftharpoons 2\mathrm{F}^-$                                                  | +2.87         |
 
 ### Calculating Cell EMF
 
@@ -340,13 +342,13 @@ $$
 - The half-reaction with the less positive (more negative) $E^\circ$ is the anode (oxidation).
 - The anode half-equation must be reversed (becomes oxidation).
 - $E^\circ$ values are **intensive properties** and are never multiplied, regardless of
- stoichiometric coefficients.
+  stoichiometric coefficients.
 
 **Spontaneity:**
 
 - If $E^\circ_{\mathrm{cell}} \gt 0$: the reaction is spontaneous (galvanic cell).
 - If $E^\circ_{\mathrm{cell}} \lt 0$: the reaction is non-spontaneous (requires an external power
- source).
+  source).
 
 <details>
 <summary>Worked Example 5: Cell EMF Calculation</summary>
@@ -392,12 +394,12 @@ Since $E^\circ_{\mathrm{cell}} \gt 0$The reaction is spontaneous.
 
 ### Electrochemical Series vs Reactivity Series
 
-| Electrochemical Series | Reactivity Series |
-| -------------------------------------------------------- | ------------------------------------------------- |
-| Based on $E^\circ$ values (quantitative) | Based on observed reactions (qualitative) |
-| Measures tendency to be reduced | Measures tendency to lose electrons (be oxidised) |
-| More positive $E^\circ$ = stronger oxidising agent | More reactive metal = stronger reducing agent |
-| $E^\circ$ for Li$^+$/Li = -3.04 V (least reduced) | K is the most reactive metal |
+| Electrochemical Series                             | Reactivity Series                                 |
+| -------------------------------------------------- | ------------------------------------------------- |
+| Based on $E^\circ$ values (quantitative)           | Based on observed reactions (qualitative)         |
+| Measures tendency to be reduced                    | Measures tendency to lose electrons (be oxidised) |
+| More positive $E^\circ$ = stronger oxidising agent | More reactive metal = stronger reducing agent     |
+| $E^\circ$ for Li$^+$/Li = -3.04 V (least reduced)  | K is the most reactive metal                      |
 
 The two series are consistent: a more reactive metal has a more negative $E^\circ$ value.
 
@@ -430,18 +432,18 @@ Anion and water compete for oxidation at the anode.
 
 **Cathode (reduction):**
 
-| Cation | Product |
-| ----------------------------------------------------- | --------------------------------------- |
-| K$^+$Na$^+$Ca$^{2+}$Mg$^{2+}$Al$^{3+}$ | H$_2$ (from water) |
+| Cation                                        | Product                                 |
+| --------------------------------------------- | --------------------------------------- |
+| K$^+$Na$^+$Ca$^{2+}$Mg$^{2+}$Al$^{3+}$        | H$_2$ (from water)                      |
 | Zn$^{2+}$Fe$^{2+}$Ni$^{2+}$Sn$^{2+}$Pb$^{2+}$ | Metal (variable, depends on conditions) |
-| Cu$^{2+}$Ag$^+$Au$^{3+}$ | Metal |
+| Cu$^{2+}$Ag$^+$Au$^{3+}$                      | Metal                                   |
 
 **Anode (oxidation):**
 
-| Anion | Product |
-| ---------------------------------- | ------------------------------- |
-| Halides (Cl$^-$Br$^-$I$^-$) | Halogen (Cl$_2$Br$_2$I$_2$) |
-| SO$_4^{2-}$NO$_3^-$CO$_3^{2-}$ | O$_2$ (from water) |
+| Anion                          | Product                     |
+| ------------------------------ | --------------------------- |
+| Halides (Cl$^-$Br$^-$I$^-$)    | Halogen (Cl$_2$Br$_2$I$_2$) |
+| SO$_4^{2-}$NO$_3^-$CO$_3^{2-}$ | O$_2$ (from water)          |
 
 **At the anode (from water):** $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$
 
@@ -449,8 +451,7 @@ Anion and water compete for oxidation at the anode.
 
 :::warning[Exam Tip] The rules above are simplified. In reality, the product at an electrode depends
 On the relative electrode potentials and concentrations (overpotential effects). For IB exams, use
-The rules as stated.
-:::
+The rules as stated. :::
 
 ### Faraday's Laws
 
@@ -510,9 +511,9 @@ Answer:
 (a)
 
 - **Cathode:** $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}(s)$ (Cu$^{2+}$ is below H in the reactivity
- series)
+  series)
 - **Anode:** $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2(g) + 4\mathrm{H}^+(aq) + 4e^-$ (SO$_4^{2-}$
- is not a halide, so water is oxidised)
+  is not a halide, so water is oxidised)
 
 (b)
 
@@ -549,11 +550,11 @@ What mass of Al is produced in the second?
 
 Answer:
 
-For Na: $\mathrm{Na}^+ + e^- \to \mathrm{Na}$$n_1 = 1$$M_1 = 23.0\mathrm{ g/mol}$. Equivalent
-Mass of Na = $23.0/1 = 23.0\mathrm{ g/equiv}$.
+For Na: $\mathrm{Na}^+ + e^- \to \mathrm{Na}$$n_1 = 1$$M_1 = 23.0\mathrm{ g/mol}$. Equivalent Mass
+of Na = $23.0/1 = 23.0\mathrm{ g/equiv}$.
 
-For Al: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n_2 = 3$$M_2 = 27.0\mathrm{ g/mol}$.
-Equivalent mass of Al = $27.0/3 = 9.0\mathrm{ g/equiv}$.
+For Al: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n_2 = 3$$M_2 = 27.0\mathrm{ g/mol}$. Equivalent
+mass of Al = $27.0/3 = 9.0\mathrm{ g/equiv}$.
 
 By Faraday's Second Law:
 
@@ -595,26 +596,25 @@ $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$.
 
 ### Methods of Corrosion Prevention
 
-| Method | Description | How It Works |
+| Method                                      | Description                                       | How It Works                                                                                                          |
 | ------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Coating (painting, oiling)** | Physical barrier between Fe and O$_2$/H$_2$O | Prevents contact with the corrosive environment |
-| **Galvanising** | Coating iron with a layer of zinc | Zn acts as a sacrificial anode (more reactive than Fe); even if scratched, Zn oxidises preferentially |
-| **Tin plating** | Coating iron with tin | Provides a physical barrier; however, if scratched, Fe becomes the anode and rusts faster (since Sn is less reactive) |
-| **Sacrificial anode (cathodic protection)** | Attaching a more reactive metal (Mg, Zn) to Fe | The more reactive metal oxidises in preference to Fe, protecting it |
-| **Alloying** | Adding Cr and/or Ni to Fe to make stainless steel | Chromium forms a passive oxide layer that protects the surface |
-| **Electrochemical protection** | Applying a negative voltage to the iron structure | Makes the iron the cathode, preventing its oxidation |
+| **Coating (painting, oiling)**              | Physical barrier between Fe and O$_2$/H$_2$O      | Prevents contact with the corrosive environment                                                                       |
+| **Galvanising**                             | Coating iron with a layer of zinc                 | Zn acts as a sacrificial anode (more reactive than Fe); even if scratched, Zn oxidises preferentially                 |
+| **Tin plating**                             | Coating iron with tin                             | Provides a physical barrier; however, if scratched, Fe becomes the anode and rusts faster (since Sn is less reactive) |
+| **Sacrificial anode (cathodic protection)** | Attaching a more reactive metal (Mg, Zn) to Fe    | The more reactive metal oxidises in preference to Fe, protecting it                                                   |
+| **Alloying**                                | Adding Cr and/or Ni to Fe to make stainless steel | Chromium forms a passive oxide layer that protects the surface                                                        |
+| **Electrochemical protection**              | Applying a negative voltage to the iron structure | Makes the iron the cathode, preventing its oxidation                                                                  |
 
 :::warning[Exam Tip] The key distinction: **galvanising** (Zn coating) provides both barrier and
 Sacrificial protection. **Tin plating** provides only barrier protection and actually accelerates
-Rusting if the coating is damaged, because Sn is less reactive than Fe and Fe becomes the anode.
-:::
+Rusting if the coating is damaged, because Sn is less reactive than Fe and Fe becomes the anode. :::
 
 ---
 
 ## Fuel Cells
 
-A fuel cell converts the chemical energy of a fuel ( H$_2$) directly into electrical energy.
-Unlike batteries, fuel cells consume fuel continuously and can operate as long as fuel is supplied.
+A fuel cell converts the chemical energy of a fuel ( H$_2$) directly into electrical energy. Unlike
+batteries, fuel cells consume fuel continuously and can operate as long as fuel is supplied.
 
 ### Hydrogen-Oxygen Fuel Cell (Alkaline)
 
@@ -635,11 +635,11 @@ $\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)$
 
 ### Advantages and Disadvantages
 
-| Advantages | Disadvantages |
+| Advantages                                        | Disadvantages                                 |
 | ------------------------------------------------- | --------------------------------------------- |
-| High efficiency (~60--80%) | H$_2$ is expensive to produce and store |
-| No greenhouse gas emissions (only H$_2$O) | H$_2$ infrastructure is limited |
-| Quiet operation | Fuel cells use expensive catalysts (Pt) |
+| High efficiency (~60--80%)                        | H$_2$ is expensive to produce and store       |
+| No greenhouse gas emissions (only H$_2$O)         | H$_2$ infrastructure is limited               |
+| Quiet operation                                   | Fuel cells use expensive catalysts (Pt)       |
 | Continuous operation (refuel instead of recharge) | H$_2$ production often relies on fossil fuels |
 
 ---
@@ -647,37 +647,37 @@ $\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)$
 ## Common Pitfalls
 
 1. **Anode/Cathode sign:** In a galvanic cell, the anode is negative (oxidation) and the cathode is
- positive (reduction). In an electrolytic cell, the anode is positive and the cathode is negative.
- Remember: **galvanic = spontaneous, electrolytic = forced.**
+   positive (reduction). In an electrolytic cell, the anode is positive and the cathode is negative.
+   Remember: **galvanic = spontaneous, electrolytic = forced.**
 
 2. **$E^\circ$ values are not multiplied:** $E^\circ$ is an intensive property. When balancing
- electrons, multiply the half-equation but NOT the $E^\circ$ value.
+   electrons, multiply the half-equation but NOT the $E^\circ$ value.
 
 3. **Cell notation direction:** The anode is always written on the left, cathode on the right. Do
- not reverse this convention.
+   not reverse this convention.
 
 4. **Electrolysis of aqueous solutions:** Know the discharge rules. Na$^+$ and K$^+$ are never
- discharged from aqueous solution; H$_2$ is produced instead. Halides are discharged in preference
- to SO$_4^{2-}$.
+   discharged from aqueous solution; H$_2$ is produced instead. Halides are discharged in preference
+   to SO$_4^{2-}$.
 
 5. **Faraday constant:** $F = 96\,500\mathrm{ C/mol}$ (not $96\,500\mathrm{ C}$). It has units of
- coulombs per mole of electrons.
+   coulombs per mole of electrons.
 
-6. **Oxidation state of O in peroxides:** In H$_2$O$_2$ and Na$_2$O$_2$Oxygen has an oxidation
- state of -1, not -2. In OF$_2$Oxygen is +2.
+6. **Oxidation state of O in peroxides:** In H$_2$O$_2$ and Na$_2$O$_2$Oxygen has an oxidation state
+   of -1, not -2. In OF$_2$Oxygen is +2.
 
 7. **Oxidising/reducing agents:** The oxidising agent is the species that gets reduced. The reducing
- agent is the species that gets oxidised. Do not confuse the agent with the process.
+   agent is the species that gets oxidised. Do not confuse the agent with the process.
 
 8. **Electron flow vs current flow:** Electrons flow from anode to cathode (negative to positive in
- the external circuit of a galvanic cell). Conventional current flows in the opposite direction.
+   the external circuit of a galvanic cell). Conventional current flows in the opposite direction.
 
 9. **n in Faraday calculations:** n is the moles of electrons per mole of product, not the moles of
- product. For Al$^{3+}$ to Al, n = 3. For Cu$^{2+}$ to Cu, n = 2. Always check the half-equation.
+   product. For Al$^{3+}$ to Al, n = 3. For Cu$^{2+}$ to Cu, n = 2. Always check the half-equation.
 
 10. **Standard conditions:** $E^\circ$ values apply only at standard conditions (1 mol/L, 100 kPa,
- 298 K). Changing concentration shifts the actual cell potential (Nernst equation), though IB
- does not require Nernst equation calculations.
+    298 K). Changing concentration shifts the actual cell potential (Nernst equation), though IB
+    does not require Nernst equation calculations.
 
 ---
 
@@ -694,8 +694,8 @@ $\underline{\mathrm{H}}_2$$\underline{\mathrm{O}}_2$ (c) $\underline{\mathrm{N}}
 
 Answer:
 
-(a) K = +1 (two K = +2). O = -2 (seven O = -14). $+2 + 2\mathrm{Cr} - 14 = 0$$2\mathrm{Cr} = +12$
-Cr = +6.
+(a) K = +1 (two K = +2). O = -2 (seven O = -14). $+2 + 2\mathrm{Cr} - 14 = 0$$2\mathrm{Cr} = +12$ Cr
+= +6.
 
 (b) H = +1 (two H = +2). $+2 + 2\mathrm{O} = 0$$2\mathrm{O} = -2$O = -1. (Hydrogen peroxide.)
 
@@ -754,12 +754,12 @@ $$
 
 Given the following standard reduction potentials:
 
-| Half-Reaction | $E^\circ$ (V) |
+| Half-Reaction                                 | $E^\circ$ (V) |
 | --------------------------------------------- | ------------- |
-| $\mathrm{Ag}^+ + e^- \to \mathrm{Ag}$ | +0.80 |
-| $\mathrm{Fe}^{3+} + e^- \to \mathrm{Fe}^{2+}$ | +0.77 |
-| $\mathrm{Zn}^{2+} + 2e^- \to \mathrm{Zn}$ | -0.76 |
-| $\mathrm{Ni}^{2+} + 2e^- \to \mathrm{Ni}$ | -0.25 |
+| $\mathrm{Ag}^+ + e^- \to \mathrm{Ag}$         | +0.80         |
+| $\mathrm{Fe}^{3+} + e^- \to \mathrm{Fe}^{2+}$ | +0.77         |
+| $\mathrm{Zn}^{2+} + 2e^- \to \mathrm{Zn}$     | -0.76         |
+| $\mathrm{Ni}^{2+} + 2e^- \to \mathrm{Ni}$     | -0.25         |
 
 (a) Calculate $E^\circ_{\mathrm{cell}}$ for the reaction:
 $\mathrm{Zn}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Zn}^{2+}(aq) + 2\mathrm{Ag}(s)$
@@ -919,7 +919,7 @@ At the scratch, Fe becomes the anode and Sn becomes the cathode:
 
 - Anode: $\mathrm{Fe} \to \mathrm{Fe}^{2+} + 2e^-$ (oxidation of Fe)
 - Cathode: $\mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^- \to 4\mathrm{OH}^-$ (reduction at Sn
- surface)
+  surface)
 
 Fe is preferentially oxidised, accelerating corrosion at the scratch.
 
@@ -995,8 +995,10 @@ The OH$^-$ at the cathode is consumed by this acid.
 
 ## Related Content at Other Levels
 
-- **A-Level Redox and Electrochemistry:** [Electrochemistry](https://alevel.wyattau.com/docs/chemistry/electrochemistry)
-- **DSE Redox and Electrochemistry:** [Redox and Electrochemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-redox-and-electrochemistry)
+- **A-Level Redox and Electrochemistry:**
+  [Electrochemistry](https://alevel.wyattau.com/docs/chemistry/electrochemistry)
+- **DSE Redox and Electrochemistry:**
+  [Redox and Electrochemistry](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-redox-and-electrochemistry)
 
 ## Summary
 

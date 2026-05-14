@@ -1,11 +1,12 @@
 ---
 title: Acids and Bases
-description: "Rigorous IB chemistry notes covering Acids and Bases. Includes definitions, derivations, worked examples, and exam-style problems."
-  buffers, titrations, and indicators.
+description:
+  'Rigorous IB chemistry notes covering Acids and Bases. Includes definitions, derivations, worked
+  examples, and exam-style problems. buffers, titrations, and indicators.'
 slug: acids-and-bases
 tags:
-- IB
-- Chemistry
+  - IB
+  - Chemistry
 ---
 
 ## Bronsted-Lowry Theory
@@ -24,30 +25,29 @@ $$
 \mathrm{HA} + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{H}_3\mathrm{O}^+ + \mathrm{A}^-
 $$
 
-| Left side | Right side |
+| Left side     | Right side                  |
 | ------------- | --------------------------- |
-| HA (acid) | A$^-$ (conjugate base) |
+| HA (acid)     | A$^-$ (conjugate base)      |
 | H$_2$O (base) | H$_3$O$^+$ (conjugate acid) |
 
 **Key relationship:** The stronger the acid, the weaker its conjugate base, and vice versa.
 
 ### Strong vs Weak Acids and Bases
 
-| Property | Strong Acid/Base | Weak Acid/Base |
-| ------------------------- | ----------------------------------- | ---------------------------------- |
-| Dissociation | Complete (100%) | Partial (equilibrium) |
-| Equilibrium | Lies far to the right | Lies to the left |
-| Conductivity | High | Low |
-| pH (same conc.) | Lower (acid) / Higher (base) | Less extreme |
-| Reaction rate with metals | Faster | Slower |
-| Examples (acids) | HCl, HNO$_3$H$_2$SO$_4$HClO$_4$ | CH$_3$COOH, HF, HCN, H$_2$CO$_3$ |
-| Examples (bases) | NaOH, KOH, Ba(OH)$_2$ | NH$_3$CH$_3$COO$^-$CO$_3^{2-}$ |
+| Property                  | Strong Acid/Base                | Weak Acid/Base                   |
+| ------------------------- | ------------------------------- | -------------------------------- |
+| Dissociation              | Complete (100%)                 | Partial (equilibrium)            |
+| Equilibrium               | Lies far to the right           | Lies to the left                 |
+| Conductivity              | High                            | Low                              |
+| pH (same conc.)           | Lower (acid) / Higher (base)    | Less extreme                     |
+| Reaction rate with metals | Faster                          | Slower                           |
+| Examples (acids)          | HCl, HNO$_3$H$_2$SO$_4$HClO$_4$ | CH$_3$COOH, HF, HCN, H$_2$CO$_3$ |
+| Examples (bases)          | NaOH, KOH, Ba(OH)$_2$           | NH$_3$CH$_3$COO$^-$CO$_3^{2-}$   |
 
 :::warning[Exam Tip] H$_2$SO$_4$ is a diprotic acid. The first dissociation is complete (strong),
 But the second dissociation is partial (weak):
 $\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$ with
-$K_a \approx 1.0 \times 10^{-2}$.
-:::
+$K_a \approx 1.0 \times 10^{-2}$. :::
 
 ---
 
@@ -77,14 +77,14 @@ $$
 
 ### pH Scale
 
-| pH | Nature | [H$^+$] (mol/L) |
+| pH  | Nature          | [H$^+$] (mol/L)       |
 | --- | --------------- | --------------------- |
-| 0 | Strongly acidic | $1.0 \times 10^0$ |
-| 1 | | $1.0 \times 10^{-1}$ |
-| 3 | | $1.0 \times 10^{-3}$ |
-| 7 | Neutral | $1.0 \times 10^{-7}$ |
-| 11 | | $1.0 \times 10^{-11}$ |
-| 14 | Strongly basic | $1.0 \times 10^{-14}$ |
+| 0   | Strongly acidic | $1.0 \times 10^0$     |
+| 1   |                 | $1.0 \times 10^{-1}$  |
+| 3   |                 | $1.0 \times 10^{-3}$  |
+| 7   | Neutral         | $1.0 \times 10^{-7}$  |
+| 11  |                 | $1.0 \times 10^{-11}$ |
+| 14  | Strongly basic  | $1.0 \times 10^{-14}$ |
 
 <details>
 <summary>Worked Example 1: pH of a Strong Acid</summary>
@@ -136,8 +136,8 @@ $$
 $$
 
 Each mole of H$_2$SO$_4$ gives 1 mole of H$^+$ from the first dissociation. At this concentration,
-The second dissociation contributes additional H$^+$But for most IB exam questions, it is
-Acceptable to consider only the first dissociation unless told otherwise:
+The second dissociation contributes additional H$^+$But for most IB exam questions, it is Acceptable
+to consider only the first dissociation unless told otherwise:
 
 $$
 [\mathrm{H}^+] \approx 0.010\mathrm{ mol/L}
@@ -203,14 +203,14 @@ Where $\mathrm{p}K_a = -\log K_a$.
 
 ### Common Ka Values at $25\degree\mathrm{C}$
 
-| Acid | Ka | pKa |
+| Acid           | Ka                    | pKa  |
 | -------------- | --------------------- | ---- |
-| CH$_3$COOH | $1.8 \times 10^{-5}$ | 4.74 |
-| HCOOH (formic) | $1.8 \times 10^{-4}$ | 3.74 |
-| HCN | $6.2 \times 10^{-10}$ | 9.21 |
-| HF | $6.8 \times 10^{-4}$ | 3.17 |
-| HNO$_2$ | $4.5 \times 10^{-4}$ | 3.35 |
-| NH$_4^+$ | $5.6 \times 10^{-10}$ | 9.25 |
+| CH$_3$COOH     | $1.8 \times 10^{-5}$  | 4.74 |
+| HCOOH (formic) | $1.8 \times 10^{-4}$  | 3.74 |
+| HCN            | $6.2 \times 10^{-10}$ | 9.21 |
+| HF             | $6.8 \times 10^{-4}$  | 3.17 |
+| HNO$_2$        | $4.5 \times 10^{-4}$  | 3.35 |
+| NH$_4^+$       | $5.6 \times 10^{-10}$ | 9.25 |
 
 <details>
 <summary>Worked Example 4: pH of a Weak Acid</summary>
@@ -223,11 +223,11 @@ $$
 
 ICE table (initial, change, equilibrium):
 
-| Species | [Initial] | Change | [Equilibrium] |
+| Species       | [Initial] | Change | [Equilibrium] |
 | ------------- | --------- | ------ | ------------- |
-| CH$_3$COOH | 0.100 | $-x$ | $0.100 - x$ |
-| H$^+$ | 0 | $+x$ | $x$ |
-| CH$_3$COO$^-$ | 0 | $+x$ | $x$ |
+| CH$_3$COOH    | 0.100     | $-x$   | $0.100 - x$   |
+| H$^+$         | 0         | $+x$   | $x$           |
+| CH$_3$COO$^-$ | 0         | $+x$   | $x$           |
 
 $$
 K_a = \frac{x^2}{0.100 - x} = 1.8 \times 10^{-5}
@@ -261,11 +261,11 @@ $$
 \mathrm{NH}_3 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{NH}_4^+ + \mathrm{OH}^-
 $$
 
-| Species | [Initial] | Change | [Equilibrium] |
+| Species  | [Initial] | Change | [Equilibrium] |
 | -------- | --------- | ------ | ------------- |
-| NH$_3$ | 0.150 | $-x$ | $0.150 - x$ |
-| NH$_4^+$ | 0 | $+x$ | $x$ |
-| OH$^-$ | 0 | $+x$ | $x$ |
+| NH$_3$   | 0.150     | $-x$   | $0.150 - x$   |
+| NH$_4^+$ | 0         | $+x$   | $x$           |
+| OH$^-$   | 0         | $+x$   | $x$           |
 
 $$
 K_b = \frac{x^2}{0.150 - x} = 1.8 \times 10^{-5}
@@ -309,18 +309,17 @@ At $25\degree\mathrm{C}$: $K_w = 1.0 \times 10^{-14}$ (mol$^2$/L$^2$).
 
 $K_w$ is **temperature dependent**:
 
-| Temperature ($\degree$C) | $K_w$ |
+| Temperature ($\degree$C) | $K_w$                  |
 | ------------------------ | ---------------------- |
-| 0 | $1.14 \times 10^{-15}$ |
-| 25 | $1.00 \times 10^{-14}$ |
-| 50 | $5.48 \times 10^{-14}$ |
-| 100 | $5.13 \times 10^{-13}$ |
+| 0                        | $1.14 \times 10^{-15}$ |
+| 25                       | $1.00 \times 10^{-14}$ |
+| 50                       | $5.48 \times 10^{-14}$ |
+| 100                      | $5.13 \times 10^{-13}$ |
 
 :::warning[Exam Tip] At $50\degree\mathrm{C}$Pure water has $\mathrm{pH} = 6.63$ (not 7). This is
 Because $K_w$ is larger, so $[\mathrm{H}^+] = [\mathrm{OH}^-] = \sqrt{K_w} \gt 10^{-7}$. The water
 Is still **neutral** because $[\mathrm{H}^+] = [\mathrm{OH}^-]$. Neutral does not always mean pH =
-7; on temperature.
-:::
+7; on temperature. :::
 
 ---
 
@@ -361,12 +360,12 @@ Removing a proton from an increasingly negative ion requires more energy.
 
 ### Common Acid-Base Indicators
 
-| Indicator | Colour (Acid) | Transition pH Range | Colour (Base) |
+| Indicator           | Colour (Acid) | Transition pH Range | Colour (Base)  |
 | ------------------- | ------------- | ------------------- | -------------- |
-| Methyl orange | Red | 3.1 -- 4.4 | Yellow |
-| Bromothymol blue | Yellow | 6.0 -- 7.6 | Blue |
-| Phenolphthalein | Colourless | 8.3 -- 10.0 | Pink/Magenta |
-| Universal indicator | Red (pH 1) | Full range 1--14 | Violet (pH 14) |
+| Methyl orange       | Red           | 3.1 -- 4.4          | Yellow         |
+| Bromothymol blue    | Yellow        | 6.0 -- 7.6          | Blue           |
+| Phenolphthalein     | Colourless    | 8.3 -- 10.0         | Pink/Magenta   |
+| Universal indicator | Red (pH 1)    | Full range 1--14    | Violet (pH 14) |
 
 ### How Indicators Work
 
@@ -385,11 +384,11 @@ The colour observed depends on the ratio $[\mathrm{HIn}]/[\mathrm{In}^-]$Which d
 An indicator is suitable when its transition range overlaps with the **equivalence point** of the
 Titration (where pH changes most steeply).
 
-| Titration Type | Equivalence Point pH | Suitable Indicator |
+| Titration Type             | Equivalence Point pH | Suitable Indicator                               |
 | -------------------------- | -------------------- | ------------------------------------------------ |
-| Strong acid -- strong base | pH = 7 | Bromothymol blue, phenolphthalein, methyl orange |
-| Weak acid -- strong base | pH \gt 7 | Phenolphthalein |
-| Strong acid -- weak base | pH \lt 7 | Methyl orange |
+| Strong acid -- strong base | pH = 7               | Bromothymol blue, phenolphthalein, methyl orange |
+| Weak acid -- strong base   | pH \gt 7             | Phenolphthalein                                  |
+| Strong acid -- weak base   | pH \lt 7             | Methyl orange                                    |
 
 ---
 
@@ -423,10 +422,10 @@ Example: HCl + NH$_3$
 ### Key Features of pH Curves
 
 - **Equivalence point:** The volume where stoichiometrically equivalent amounts of acid and base
- have reacted. The pH at this point depends on the salt formed.
+  have reacted. The pH at this point depends on the salt formed.
 - **Half-equivalence point:** The volume where half the acid/base has been neutralised. At this
- point, $\mathrm{pH} = \mathrm{p}K_a$ (for weak acid titrations), because
- $[\mathrm{HA}] = [\mathrm{A}^-]$.
+  point, $\mathrm{pH} = \mathrm{p}K_a$ (for weak acid titrations), because
+  $[\mathrm{HA}] = [\mathrm{A}^-]$.
 
 ---
 
@@ -481,7 +480,7 @@ Buffer capacity is the amount of acid or base that can be added before the pH ch
 A buffer is most effective when:
 
 - The concentrations of the weak acid and conjugate base are **large** (more moles available to
- react).
+  react).
 - The ratio $[\mathrm{A}^-]/[\mathrm{HA}]$ is **close to 1** (i.e., pH is close to p$K_a$).
 
 The effective buffer range is approximately $\mathrm{p}K_a \pm 1$.
@@ -522,7 +521,7 @@ Initial moles:
 Adding $0.010\mathrm{ mol}$ HCl:
 
 - HCl reacts with CH$_3$COO$^-$:
- $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$
+  $\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}^+ \to \mathrm{CH}_3\mathrm{COOH}$
 - $n(\mathrm{CH}_3\mathrm{COO}^-) = 0.075 - 0.010 = 0.065\mathrm{ mol}$
 - $n(\mathrm{CH}_3\mathrm{COOH}) = 0.100 + 0.010 = 0.110\mathrm{ mol}$
 
@@ -701,38 +700,38 @@ This is a general result: at the half-equivalence point, $\mathrm{pH} = \mathrm{
 ## Common Pitfalls
 
 1. **Strong vs weak acid pH:** A $0.10\mathrm{ mol/L}$ strong acid has pH = 1.0, but a
- $0.10\mathrm{ mol/L}$ weak acid has pH \gt 1.0 ( 2--3) because it only partially
- dissociates. Do not assume $[\mathrm{H}^+] = c$ for weak acids.
+   $0.10\mathrm{ mol/L}$ weak acid has pH \gt 1.0 ( 2--3) because it only partially dissociates. Do
+   not assume $[\mathrm{H}^+] = c$ for weak acids.
 
 2. **Diprotic acid contribution:** H$_2$SO$_4$ gives 2 H$^+$ per molecule, but H$_2$CO$_3$ does not
- give 2 H$^+$ at normal concentrations because $K_{a2}$ is very small. Only the first dissociation
- contributes significantly.
+   give 2 H$^+$ at normal concentrations because $K_{a2}$ is very small. Only the first dissociation
+   contributes significantly.
 
 3. **pH + pOH = 14 only at $25\degree\mathrm{C}$:** At other temperatures, use the actual $K_w$
- value. $\mathrm{pH} + \mathrm{pOH} = \mathrm{p}K_w$.
+   value. $\mathrm{pH} + \mathrm{pOH} = \mathrm{p}K_w$.
 
 4. **Buffer range:** A buffer is only effective within $\pm 1$ pH unit of its p$K_a$. Outside this
- range, the buffer capacity is essentially zero.
+   range, the buffer capacity is essentially zero.
 
 5. **Equivalence point pH:** For weak acid -- strong base titrations, the equivalence point pH is
- \gt 7, not 7. For strong acid -- weak base, it is \lt 7.
+   \gt 7, not 7. For strong acid -- weak base, it is \lt 7.
 
 6. **Henderson-Hasselbalch validity:** The equation assumes that the concentrations of HA and A$^-$
- are much larger than $[\mathrm{H}^+]$ and $[\mathrm{OH}^-]$. It is not valid for very dilute
- solutions.
+   are much larger than $[\mathrm{H}^+]$ and $[\mathrm{OH}^-]$. It is not valid for very dilute
+   solutions.
 
 7. **Neutral pH:** Neutral means $[\mathrm{H}^+] = [\mathrm{OH}^-]$Which equals pH = 7 only at
- $25\degree\mathrm{C}$. At $50\degree\mathrm{C}$Neutral pH is approximately 6.63.
+   $25\degree\mathrm{C}$. At $50\degree\mathrm{C}$Neutral pH is approximately 6.63.
 
 8. **$K_a$ and $K_b$ relationship:** Remember $K_a \times K_b = K_w$. This connects a conjugate
- acid-base pair. The conjugate base of a weak acid has a calculable $K_b$.
+   acid-base pair. The conjugate base of a weak acid has a calculable $K_b$.
 
 9. **Titration indicator choice:** Methyl orange (3.1--4.4) is suitable for strong acid -- weak base
- titrations (equivalence pH \lt 7). Phenolphthalein (8.3--10.0) is suitable for weak acid --
- strong base (equivalence pH \gt 7). Do not use methyl orange for weak acid -- strong base.
+   titrations (equivalence pH \lt 7). Phenolphthalein (8.3--10.0) is suitable for weak acid --
+   strong base (equivalence pH \gt 7). Do not use methyl orange for weak acid -- strong base.
 
 10. **Units in Ka/Kb:** Concentrations in $K_a$ and $K_b$ expressions are in mol/L. The units of
- $K_a$ and $K_b$ are mol/L. $K_w$ has units of mol$^2$/L$^2$.
+    $K_a$ and $K_b$ are mol/L. $K_w$ has units of mol$^2$/L$^2$.
 
 ---
 
@@ -840,8 +839,8 @@ $$
 (b) NH$_4^+$ is the conjugate acid of the weak base NH$_3$. Since NH$_3$ is a weak base, its
 Conjugate acid NH$_4^+$ will donate protons in water, making the solution acidic. This is confirmed
 By the relatively large $K_a$ value ($5.56 \times 10^{-10} \gg K_b$ of NH$_4^+$ which would be
-$K_w/K_a = 1.8 \times 10^{-5}$But wait -- we already have $K_a$ for NH$_4^+$So we can see it is
-An acid). A $0.1\mathrm{ mol/L}$ NH$_4$Cl solution would have pH \lt 7.
+$K_w/K_a = 1.8 \times 10^{-5}$But wait -- we already have $K_a$ for NH$_4^+$So we can see it is An
+acid). A $0.1\mathrm{ mol/L}$ NH$_4$Cl solution would have pH \lt 7.
 
 </details>
 
@@ -1002,8 +1001,10 @@ Note: The second and third dissociations contribute negligible H$^+$ since $K_{a
 
 ## Related Content at Other Levels
 
-- **A-Level Acids, Bases & Buffers:** [Acids, Bases & Buffers](https://alevel.wyattau.com/docs/chemistry/acids-bases)
-- **DSE Acids, Bases, and Salts:** [Acids, Bases, and Salts](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-acids-bases-and-salts)
+- **A-Level Acids, Bases & Buffers:**
+  [Acids, Bases & Buffers](https://alevel.wyattau.com/docs/chemistry/acids-bases)
+- **DSE Acids, Bases, and Salts:**
+  [Acids, Bases, and Salts](https://academics.wyattau.com/docs/dse/Chemistry/dse-chemistry-acids-bases-and-salts)
 
 ## Summary
 

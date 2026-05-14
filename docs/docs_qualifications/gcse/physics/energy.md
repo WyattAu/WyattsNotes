@@ -1,6 +1,8 @@
 ---
 title: Energy
-description: "Energy — 1.4 Why "Stores and Transfers" Matters; 2.2 Why the Factor of One-Half; 2.5 Proof That the Final Speed Is Independent of Mass."
+description:
+  'Energy — 1.4 Why "Stores and Transfers" Matters; 2.2 Why the Factor of One-Half; 2.5 Proof That
+  the Final Speed Is Independent of Mass.'
 date: 2026-04-14
 tags:
   - Physics
@@ -9,17 +11,14 @@ categories:
   - Physics
 slug: energy
 ---
+
 ## Energy
 
-:::info
-Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway P1 | WJEC P1
-:::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway P1 | WJEC P1 :::
 
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
-
 
 ## 1. Energy Stores and Systems
 
@@ -40,26 +39,26 @@ Is not a cosmetic distinction; it underpins every energy calculation you will pe
 
 ### 1.2 Energy Stores
 
-| Store | Description | Examples |
+| Store                   | Description                                       | Examples                              |
 | ----------------------- | ------------------------------------------------- | ------------------------------------- |
-| Kinetic | Energy of a moving object | A rolling ball, a flowing river |
-| Gravitational potential | Energy due to height in a gravitational field | A book on a shelf, water behind a dam |
-| Elastic potential | Energy stored in a stretched or compressed object | A compressed spring, a drawn bow |
-| Thermal | Energy due to the random motion of particles | A hot cup of tea, a warm room |
-| Chemical | Energy stored in chemical bonds | Food, fuel, batteries |
-| Magnetic | Energy stored in a magnetic field | Two repelling magnets |
-| Electrostatic | Energy stored in an electric field | A charged capacitor |
-| Nuclear | Energy stored in the nucleus of an atom | Uranium-235, the Sun |
+| Kinetic                 | Energy of a moving object                         | A rolling ball, a flowing river       |
+| Gravitational potential | Energy due to height in a gravitational field     | A book on a shelf, water behind a dam |
+| Elastic potential       | Energy stored in a stretched or compressed object | A compressed spring, a drawn bow      |
+| Thermal                 | Energy due to the random motion of particles      | A hot cup of tea, a warm room         |
+| Chemical                | Energy stored in chemical bonds                   | Food, fuel, batteries                 |
+| Magnetic                | Energy stored in a magnetic field                 | Two repelling magnets                 |
+| Electrostatic           | Energy stored in an electric field                | A charged capacitor                   |
+| Nuclear                 | Energy stored in the nucleus of an atom           | Uranium-235, the Sun                  |
 
 ### 1.3 Energy Transfers
 
 Energy is transferred by four main pathways:
 
-| Pathway | Mechanism |
+| Pathway      | Mechanism                                        |
 | ------------ | ------------------------------------------------ |
-| Mechanically | By a force acting over a distance (doing work) |
-| Electrically | By charges moving through a circuit |
-| By heating | By conduction, convection, or radiation |
+| Mechanically | By a force acting over a distance (doing work)   |
+| Electrically | By charges moving through a circuit              |
+| By heating   | By conduction, convection, or radiation          |
 | By radiation | By electromagnetic waves (light, infrared, etc.) |
 
 **Worked Example.** A person lifts a 5 kg box from the floor to a shelf 1.5 m high. Describe the
@@ -78,7 +77,7 @@ Stores. The stores-and-transfers model forces you to be explicit:
 
 - **Store:** Where energy resides right now (kinetic, gravitational potential, thermal, etc.).
 - **Transfer:** The mechanism by which energy moves between stores (mechanical working, electrical
- working, heating, radiation).
+  working, heating, radiation).
 
 When you say "the light bulb transfers energy electrically from the mains to the thermal and light
 Stores of the surroundings," you have given a complete, precise description. When you say "the light
@@ -116,10 +115,8 @@ $$E_p = mgh$$
 
 Where $m$ is mass (kg), $g$ is gravitational field strength (N/kg), and $h$ is height (m).
 
-:::info
-Near the Earth's surface, $g \approx 9.8$ N/kg (often approximated as 10 N/kg in
-Calculations).
-:::
+:::info Near the Earth's surface, $g \approx 9.8$ N/kg (often approximated as 10 N/kg in
+Calculations). :::
 
 The height $h$ is measured from an arbitrarily chosen reference level (often the ground). Only
 _changes_ in gravitational potential energy are physically meaningful, so the choice of reference
@@ -213,11 +210,11 @@ Kinetic energy) or to the number of degrees of freedom available to the particle
 
 | Substance | Specific Heat Capacity (J/(kg $^{\circ}$C)) |
 | --------- | ------------------------------------------- |
-| Water | 4200 |
-| Aluminium | 900 |
-| Copper | 390 |
-| Iron | 450 |
-| Lead | 130 |
+| Water     | 4200                                        |
+| Aluminium | 900                                         |
+| Copper    | 390                                         |
+| Iron      | 450                                         |
+| Lead      | 130                                         |
 
 Water has a very high specific heat capacity, which is why it is effective as a coolant and why
 Coastal climates are more moderate.
@@ -252,10 +249,10 @@ $$t = \frac{\Delta E}{P} = \frac{535500}{2000} = 267.75 \mathrm{ s{} \approx 4.5
 **Sources of error:**
 
 - Heat loss to the surroundings: the block loses thermal energy to the air, so the measured
- temperature rise is smaller than it should be. The calculated specific heat capacity will be
- _higher_ than the true value.
+  temperature rise is smaller than it should be. The calculated specific heat capacity will be
+  _higher_ than the true value.
 - Incomplete thermal contact between heater and block: some energy from the heater is not
- transferred to the block.
+  transferred to the block.
 - Reading the thermometer at an angle (parallax error).
 - The heater itself has a heat capacity and absorbs some of the energy.
 
@@ -275,14 +272,14 @@ $$E = mL$$
 Where $L$ is the specific latent heat (J/kg).
 
 - **Specific latent heat of fusion:** energy per kg to change from solid to liquid (no temperature
- change).
+  change).
 - **Specific latent heat of vaporisation:** energy per kg to change from liquid to gas (no
- temperature change).
+  temperature change).
 
 | Substance | Latent heat of fusion (J/kg) | Latent heat of vaporisation (J/kg) |
 | --------- | ---------------------------- | ---------------------------------- |
-| Water | $3.34 \times 10^5$ | $2.26 \times 10^6$ |
-| Ethanol | $1.05 \times 10^5$ | $8.55 \times 10^5$ |
+| Water     | $3.34 \times 10^5$           | $2.26 \times 10^6$                 |
+| Ethanol   | $1.05 \times 10^5$           | $8.55 \times 10^5$                 |
 
 **Why temperature stays constant during a change of state:** The energy being supplied does not
 Increase the kinetic energy of the particles. Instead, it overcomes the intermolecular forces that
@@ -339,24 +336,24 @@ Transport is limited.
 
 ### 5.1 Non-Renewable Resources
 
-| Resource | Energy Source | Advantages | Disadvantages |
+| Resource    | Energy Source              | Advantages                                           | Disadvantages                                                   |
 | ----------- | -------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
-| Coal | Chemical (fossil fuel) | High energy density, established infrastructure | Releases CO$_2$ and pollutants, finite supply |
-| Oil | Chemical (fossil fuel) | Versatile (transport, heating) | Releases CO$_2$Finite, risk of spills |
-| Natural gas | Chemical (fossil fuel) | Cleaner than coal, flexible power output | Releases CO$_2$Finite |
-| Nuclear | Nuclear (fission of U-235) | Very high energy density, no CO$_2$ during operation | Radioactive waste, risk of accidents, high decommissioning cost |
+| Coal        | Chemical (fossil fuel)     | High energy density, established infrastructure      | Releases CO$_2$ and pollutants, finite supply                   |
+| Oil         | Chemical (fossil fuel)     | Versatile (transport, heating)                       | Releases CO$_2$Finite, risk of spills                           |
+| Natural gas | Chemical (fossil fuel)     | Cleaner than coal, flexible power output             | Releases CO$_2$Finite                                           |
+| Nuclear     | Nuclear (fission of U-235) | Very high energy density, no CO$_2$ during operation | Radioactive waste, risk of accidents, high decommissioning cost |
 
 ### 5.2 Renewable Resources
 
-| Resource | Energy Source | Advantages | Disadvantages |
+| Resource      | Energy Source                                  | Advantages               | Disadvantages                           |
 | ------------- | ---------------------------------------------- | ------------------------ | --------------------------------------- |
-| Wind | Kinetic energy of moving air | Clean, unlimited | Intermittent, visual impact |
-| Solar | Electromagnetic radiation from the Sun | Clean, low maintenance | Intermittent, low efficiency |
-| Hydroelectric | Gravitational potential of water | Reliable, controllable | Habitat destruction, limited locations |
-| Tidal | Gravitational energy (Moon) | Predictable | Limited locations, habitat impact |
-| Wave | Kinetic energy of water waves | Abundant | Unreliable, technology immature |
-| Geothermal | Thermal energy from radioactive decay in Earth | Reliable, low CO$_2$ | Limited locations, high setup cost |
-| Biofuel | Chemical (from recently living organisms) | Carbon-neutral in theory | Competes with food production, land use |
+| Wind          | Kinetic energy of moving air                   | Clean, unlimited         | Intermittent, visual impact             |
+| Solar         | Electromagnetic radiation from the Sun         | Clean, low maintenance   | Intermittent, low efficiency            |
+| Hydroelectric | Gravitational potential of water               | Reliable, controllable   | Habitat destruction, limited locations  |
+| Tidal         | Gravitational energy (Moon)                    | Predictable              | Limited locations, habitat impact       |
+| Wave          | Kinetic energy of water waves                  | Abundant                 | Unreliable, technology immature         |
+| Geothermal    | Thermal energy from radioactive decay in Earth | Reliable, low CO$_2$     | Limited locations, high setup cost      |
+| Biofuel       | Chemical (from recently living organisms)      | Carbon-neutral in theory | Competes with food production, land use |
 
 ### 5.3 Comparing Resources
 
@@ -379,8 +376,8 @@ $$\mathrm{Chemical{} \to \mathrm{Thermal{} \to \mathrm{Kinetic{} \to \mathrm{Ele
 - Steam drives a turbine (thermal to kinetic)
 - Turbine drives a generator (kinetic to electrical)
 
-The overall efficiency is 35--40%, with the remaining energy transferred to the
-Surroundings as thermal energy.
+The overall efficiency is 35--40%, with the remaining energy transferred to the Surroundings as
+thermal energy.
 
 In a nuclear power station, the initial energy store is nuclear rather than chemical, but the
 Subsequent transfers are the same.
@@ -390,14 +387,14 @@ Subsequent transfers are the same.
 Energy density is the energy per unit mass of a fuel. It determines how much fuel must be
 Transported and stored.
 
-| Fuel | Energy density (MJ/kg) |
+| Fuel                | Energy density (MJ/kg) |
 | ------------------- | ---------------------- |
-| Uranium-235 | $8.2 \times 10^7$ |
-| Petrol | 46 |
-| Coal | 30 |
-| Natural gas | 54 |
-| Hydrogen | 143 |
-| Lithium-ion battery | 0.5 -- 0.9 |
+| Uranium-235         | $8.2 \times 10^7$      |
+| Petrol              | 46                     |
+| Coal                | 30                     |
+| Natural gas         | 54                     |
+| Hydrogen            | 143                    |
+| Lithium-ion battery | 0.5 -- 0.9             |
 
 Uranium-235 has an energy density roughly a million times greater than fossil fuels. This is why a
 Nuclear power station needs only a few tonnes of fuel per year, whereas a coal station needs
@@ -420,10 +417,8 @@ As light. Calculate the efficiency.
 
 $$\mathrm{Efficiency{} = \frac{6}{60} \times 100\% = 10\%$$
 
-:::warning
-No machine can be 100% efficient. Some energy is always dissipated (transferred to
-Thermal stores in the surroundings) due to friction, air resistance, or electrical resistance.
-:::
+:::warning No machine can be 100% efficient. Some energy is always dissipated (transferred to
+Thermal stores in the surroundings) due to friction, air resistance, or electrical resistance. :::
 
 ### 6.2 Why Efficiency Cannot Reach 100 Percent
 
@@ -538,11 +533,11 @@ Between the object and its surroundings is greatest) and gradually decreases.
 A vacuum flask (Thermos) minimises all three mechanisms of heat transfer:
 
 - **Vacuum between double walls:** eliminates conduction and convection (no particles to transfer
- energy).
+  energy).
 - **Silvered surfaces:** reflect infrared radiation back into the flask, reducing radiative loss.
 - **Stopper:** reduces convection currents above the liquid surface.
 - **Plastic or cork support:** minimises conduction through the point where the inner and outer
- walls connect.
+  walls connect.
 
 No flask is perfectly insulating. There will always be some conduction through the stopper and the
 Walls, and some radiation will escape. A good vacuum flask can keep a hot drink warm for several
@@ -567,13 +562,13 @@ Potential energy (climbing stairs, lifting objects).
 
 A typical UK household uses about 3000--4000 kWh of electricity per year. Major energy users:
 
-| Appliance | Typical power (W) | Daily use (hours) | Daily energy (kWh) |
+| Appliance       | Typical power (W) | Daily use (hours) | Daily energy (kWh) |
 | --------------- | ----------------- | ----------------- | ------------------ |
-| Kettle | 2000 | 0.2 | 0.4 |
-| Fridge | 150 | 24 | 3.6 |
-| Washing machine | 2000 | 1 | 2.0 |
-| TV | 100 | 4 | 0.4 |
-| Electric shower | 10000 | 0.2 | 2.0 |
+| Kettle          | 2000              | 0.2               | 0.4                |
+| Fridge          | 150               | 24                | 3.6                |
+| Washing machine | 2000              | 1                 | 2.0                |
+| TV              | 100               | 4                 | 0.4                |
+| Electric shower | 10000             | 0.2               | 2.0                |
 
 The electric shower is one of the largest single energy consumers in a home because it heats water
 Very rapidly (high power = high rate of energy transfer).
@@ -598,75 +593,75 @@ The electrical energy arrow would be 40% as wide as the input arrow, and the was
 ## Common Pitfalls
 
 - **Confusing energy stores and energy transfers.** A store is where energy is held; a transfer is
- how it moves.
+  how it moves.
 - **Forgetting that energy is conserved.** In an inefficient machine, energy is not lost -- it is
- transferred to unwanted stores ( thermal).
+  transferred to unwanted stores ( thermal).
 - **Using the wrong mass in $E_k = \frac{1}{2}mv^2$.** $v$ is speed, not velocity (though since it
- is squared, the direction does not matter).
+  is squared, the direction does not matter).
 - **Confusing specific heat capacity with specific latent heat.** Specific heat capacity relates to
- temperature change; specific latent heat relates to change of state.
+  temperature change; specific latent heat relates to change of state.
 - **Writing efficiency as a decimal when a percentage is required** (or vice versa).
 - **Using $g = 10$ when the question specifies $g = 9.8$.** Always use the value given in the
- question.
+  question.
 - **Forgetting that gravitational potential energy depends on height above a reference level, not
- total height above the ground.** If an object falls from 20 m to 5 m, the height change is 15 m,
- not 20 m.
+  total height above the ground.** If an object falls from 20 m to 5 m, the height change is 15 m,
+  not 20 m.
 - **Assuming the spring constant is the same in compression and extension.** For many springs this
- is approximately true, but not all.
+  is approximately true, but not all.
 - **Stating that "energy is lost to the surroundings"** without specifying that it is transferred to
- thermal stores. The energy still exists; it is just no longer in a useful form.
+  thermal stores. The energy still exists; it is just no longer in a useful form.
 
 ## Practice Questions
 
 1. A 1200 kg car is travelling at 20 m/s. Calculate its kinetic energy. If the brakes apply a force
- of 6000 N, calculate the stopping distance.
+   of 6000 N, calculate the stopping distance.
 
 2. A 50 kg student climbs a flight of stairs 4 m high in 6 seconds. Calculate the gravitational
- potential energy gained and the power developed.
+   potential energy gained and the power developed.
 
-3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C{}$ to $120^{\circ}\mathrm{C{}$ by a 200
- W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
- $^{\circ}$C).)
+3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C{}$ to $120^{\circ}\mathrm{C{}$ by
+   a 200 W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
+   $^{\circ}$C).)
 
 4. A power station has an efficiency of 38%. It burns fuel at a rate of 500 kg per hour. If the fuel
- has an energy density of 45 MJ/kg, calculate the useful power output.
+   has an energy density of 45 MJ/kg, calculate the useful power output.
 
 5. Explain why a vacuum flask keeps a hot drink warm. Refer to all three methods of thermal energy
- transfer.
+   transfer.
 
 6. A spring with spring constant 250 N/m is compressed by 0.08 m. Calculate the elastic potential
- energy stored.
+   energy stored.
 
 7. A ball is thrown vertically upward with speed 14 m/s. Calculate the maximum height it reaches
- (ignore air resistance).
+   (ignore air resistance).
 
 8. Compare the advantages and disadvantages of using wind power and nuclear power for electricity
- generation.
+   generation.
 
 9. An electric motor lifts a 200 kg load through 5 m in 8 seconds. The motor is 80% efficient.
- Calculate the electrical power input.
+   Calculate the electrical power input.
 
 10. Explain why the specific heat capacity of water being so high makes it a good coolant for car
- engines.
+    engines.
 
 11. A pendulum bob of mass 0.2 kg is raised 0.5 m above its lowest point and released. Calculate its
- speed at the lowest point, and explain why it does not continue to swing forever.
+    speed at the lowest point, and explain why it does not continue to swing forever.
 
 12. A coal-fired power station burns coal with energy density 30 MJ/kg at a rate of 10 kg/s. The
- overall efficiency is 36%. Calculate the useful power output and the rate of energy wasted.
+    overall efficiency is 36%. Calculate the useful power output and the rate of energy wasted.
 
 13. A student carries out the specific heat capacity practical and obtains a value of 510 J/(kg
- $^{\circ}$C) for copper, compared to the accepted value of 390 J/(kg $^{\circ}$C). Explain why
- the measured value is too high.
+    $^{\circ}$C) for copper, compared to the accepted value of 390 J/(kg $^{\circ}$C). Explain why
+    the measured value is too high.
 
 14. A car of mass 800 kg travelling at 20 m/s brakes to a stop. The brakes heat up. If 60% of the
- kinetic energy is transferred to the brakes, and the brakes have a total mass of 15 kg and
- specific heat capacity 460 J/(kg $^{\circ}$C), calculate the temperature rise of the brakes.
+    kinetic energy is transferred to the brakes, and the brakes have a total mass of 15 kg and
+    specific heat capacity 460 J/(kg $^{\circ}$C), calculate the temperature rise of the brakes.
 
 15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C{}$ to water at
- $50^{\circ}\mathrm{C{}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
- heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200 J/(kg
- $^{\circ}$C).)
+    $50^{\circ}\mathrm{C{}$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific
+    latent heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200
+    J/(kg $^{\circ}$C).)
 
 ## 10. Worked Example: Multi-Stage Heating
 
@@ -692,18 +687,18 @@ $$E_3 = mc_{\mathrm{water{}}\Delta T = 0.5 \times 4200 \times 50 = 105000 \mathr
 $$E_{\mathrm{total{}} = 10500 + 167000 + 105000 = 282500 \mathrm{ J{} \approx 283 \mathrm{ kJ{}$$
 
 Notice that the melting stage (Stage 2) requires by far the most energy -- over half the total. This
-Is a common pattern: changing state requires more energy than changing temperature by the
-Same number of degrees.
+Is a common pattern: changing state requires more energy than changing temperature by the Same
+number of degrees.
 
 ## 11. Summary Table: Energy Stores and Their Formulas
 
-| Store | Formula | Variables | When to Use |
+| Store                   | Formula                 | Variables                                                          | When to Use                 |
 | ----------------------- | ----------------------- | ------------------------------------------------------------------ | --------------------------- |
-| Kinetic | $E_k = \frac{1}{2}mv^2$ | $m$ = mass, $v$ = speed | Object moving |
-| Gravitational potential | $E_p = mgh$ | $m$ = mass, $g$ = field strength, $h$ = height | Object at height |
-| Elastic potential | $E_e = \frac{1}{2}ke^2$ | $k$ = spring constant, $e$ = extension | Spring stretched/compressed |
-| Thermal | $\Delta E = mc\Delta T$ | $m$ = mass, $c$ = specific heat capacity, $\Delta T$ = temp change | Temperature change |
-| Latent heat | $E = mL$ | $m$ = mass, $L$ = specific latent heat | Change of state |
+| Kinetic                 | $E_k = \frac{1}{2}mv^2$ | $m$ = mass, $v$ = speed                                            | Object moving               |
+| Gravitational potential | $E_p = mgh$             | $m$ = mass, $g$ = field strength, $h$ = height                     | Object at height            |
+| Elastic potential       | $E_e = \frac{1}{2}ke^2$ | $k$ = spring constant, $e$ = extension                             | Spring stretched/compressed |
+| Thermal                 | $\Delta E = mc\Delta T$ | $m$ = mass, $c$ = specific heat capacity, $\Delta T$ = temp change | Temperature change          |
+| Latent heat             | $E = mL$                | $m$ = mass, $L$ = specific latent heat                             | Change of state             |
 
 ## 12. Derivation: Conservation of Energy from the Work-Energy Theorem
 
@@ -783,32 +778,33 @@ Input goes directly into kinetic energy, producing a rapid temperature rise.
 ## 16. Practice Questions (Additional)
 
 16. A 200 g copper block at $150^{\circ}\mathrm{C{}$ is dropped into 300 g of water at
- $20^{\circ}\mathrm{C{}$. Assuming no heat loss to the surroundings, find the final temperature.
- (Specific heat capacity of copper = 390 J/(kg $^{\circ}$C), specific heat capacity of water =
- 4200 J/(kg $^{\circ}$C).)
+    $20^{\circ}\mathrm{C{}$. Assuming no heat loss to the surroundings, find the final temperature.
+    (Specific heat capacity of copper = 390 J/(kg $^{\circ}$C), specific heat capacity of water =
+    4200 J/(kg $^{\circ}$C).)
 
 17. A crane lifts a 500 kg load through a height of 12 m in 15 s. If the motor is 75% efficient,
- calculate the electrical power input to the motor.
+    calculate the electrical power input to the motor.
 
 18. Explain, with reference to energy stores and transfers, what happens when a ball is thrown
- vertically upward and then falls back down. Account for why the ball does not return to its
- original height.
+    vertically upward and then falls back down. Account for why the ball does not return to its
+    original height.
 
-19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{ m{}^2$ and receives
- solar radiation at $800 \mathrm{ W/m{}^2$. The efficiency of the panel is 35%. The water flows
- through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the water as it
- passes through the panel.
+19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{ m{}^2$ and
+    receives solar radiation at $800 \mathrm{ W/m{}^2$. The efficiency of the panel is 35%. The
+    water flows through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the
+    water as it passes through the panel.
 
 20. A bungee cord of natural length 20 m has spring constant 40 N/m. A jumper of mass 75 kg falls
- from a bridge. Find the maximum speed of the jumper during the fall. (Hint: the maximum speed
- occurs when the acceleration is zero, i.e., when the net force is zero.)
+    from a bridge. Find the maximum speed of the jumper during the fall. (Hint: the maximum speed
+    occurs when the acceleration is zero, i.e., when the net force is zero.)
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Gravitational potential energy</summary>
 
-A $60 \mathrm{ kg{}$ climber ascends a $15 \mathrm{ m{}$ cliff. Calculate the change in gravitational potential energy. Take $g = 9.8 \mathrm{ N/kg{}$.
+A $60 \mathrm{ kg{}$ climber ascends a $15 \mathrm{ m{}$ cliff. Calculate the change in
+gravitational potential energy. Take $g = 9.8 \mathrm{ N/kg{}$.
 
 </details>
 
@@ -822,7 +818,8 @@ $\Delta E_p = mgh = 60 \times 9.8 \times 15 = 8820 \mathrm{ J{}$.
 <details>
 <summary>Question 2: Kinetic energy and speed</summary>
 
-A car of mass $800 \mathrm{ kg{}$ is travelling at $20 \mathrm{ m/s{}$. Calculate its kinetic energy. If the brakes apply a force of $4000 \mathrm{ N{}$Calculate the stopping distance.
+A car of mass $800 \mathrm{ kg{}$ is travelling at $20 \mathrm{ m/s{}$. Calculate its kinetic
+energy. If the brakes apply a force of $4000 \mathrm{ N{}$Calculate the stopping distance.
 
 </details>
 
@@ -838,21 +835,24 @@ Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$$d = 40 \math
 <details>
 <summary>Question 3: Conservation of energy on a roller coaster</summary>
 
-A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m{}$ high. Calculate its speed at the bottom of the hill, assuming no energy is lost to friction.
+A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m{}$ high. Calculate its
+speed at the bottom of the hill, assuming no energy is lost to friction.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$mgh = \frac{1}{2}mv^2$So $v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 30} = \sqrt{588} = 24.2 \mathrm{ m/s{}$.
+$mgh = \frac{1}{2}mv^2$So
+$v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 30} = \sqrt{588} = 24.2 \mathrm{ m/s{}$.
 
 </details>
 
 <details>
 <summary>Question 4: Work done and power</summary>
 
-A motor lifts a $200 \mathrm{ kg{}$ load through a height of $8 \mathrm{ m{}$ in $10 \mathrm{ s{}$. Calculate (a) the work done and (b) the power of the motor.
+A motor lifts a $200 \mathrm{ kg{}$ load through a height of $8 \mathrm{ m{}$ in $10 \mathrm{ s{}$.
+Calculate (a) the work done and (b) the power of the motor.
 
 </details>
 
@@ -868,7 +868,9 @@ A motor lifts a $200 \mathrm{ kg{}$ load through a height of $8 \mathrm{ m{}$ in
 <details>
 <summary>Question 5: Specific heat capacity</summary>
 
-$2.0 \mathrm{ kg{}$ of water is heated from $20^\circ\mathrm{C{}$ to $80^\circ\mathrm{C{}$. The specific heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C){}$. Calculate the energy required.
+$2.0 \mathrm{ kg{}$ of water is heated from $20^\circ\mathrm{C{}$ to $80^\circ\mathrm{C{}$. The
+specific heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C){}$. Calculate the energy
+required.
 
 </details>
 

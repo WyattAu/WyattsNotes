@@ -1,6 +1,8 @@
 ---
 title: Worktrees
-description: "Worktrees — "error: Your local changes would be overwritten";. work on feature.;. work on main.;. work on feature-auth. for thorough revision and examination p."
+description:
+  'Worktrees — "error: Your local changes would be overwritten";. work on feature.;. work on main.;.
+  work on feature-auth. for thorough revision and examination p.'
 date: 2025-06-03T17:00:00.000Z
 tags:
   - git
@@ -10,9 +12,13 @@ categories:
   - CS
 slug: worktrees
 ---
+
 ## What are Worktrees
 
-`git worktree` allows you to have **multiple working directories** from the same repository, each checked out to a different branch. Unlike `git stash` (which temporarily shelves changes) or switching branches (which requires a clean working directory), worktrees let you work on multiple branches simultaneously.
+`git worktree` allows you to have **multiple working directories** from the same repository, each
+checked out to a different branch. Unlike `git stash` (which temporarily shelves changes) or
+switching branches (which requires a clean working directory), worktrees let you work on multiple
+branches simultaneously.
 
 ### The Problem Worktrees Solve
 
@@ -41,7 +47,8 @@ $ cd ../repo-main
 
 ## How Worktrees Work Internally
 
-A worktree is a linked working directory that shares the same `.git` object database and refs as the main repository:
+A worktree is a linked working directory that shares the same `.git` object database and refs as the
+main repository:
 
 ```
 repo/                          # Main worktree
@@ -219,7 +226,8 @@ $ git worktree add project-main main
 
 ### Submodule Interaction
 
-Submodules in worktrees can be tricky — each worktree initializes submodules independently, which can lead to conflicts:
+Submodules in worktrees can be tricky — each worktree initializes submodules independently, which
+can lead to conflicts:
 
 ```bash
 # In each worktree, initialize submodules separately
@@ -229,15 +237,16 @@ $ git submodule update --init --recursive
 
 ## Worktree vs Stash vs Branch
 
-| Feature | Worktree | Stash | Branch |
+| Feature           | Worktree               | Stash                | Branch            |
 | ----------------- | ---------------------- | -------------------- | ----------------- |
-| Parallel work | Yes | No | No (must switch) |
-| Persistent | Yes (until removed) | Until popped/dropped | Yes |
-| Independent index | Yes | No (single index) | No (single index) |
-| Disk usage | Higher (full checkout) | Minimal | Minimal |
-| Setup cost | `git worktree add` | `git stash push` | `git switch` |
+| Parallel work     | Yes                    | No                   | No (must switch)  |
+| Persistent        | Yes (until removed)    | Until popped/dropped | Yes               |
+| Independent index | Yes                    | No (single index)    | No (single index) |
+| Disk usage        | Higher (full checkout) | Minimal              | Minimal           |
+| Setup cost        | `git worktree add`     | `git stash push`     | `git switch`      |
 
-**Rule of thumb**: Use worktrees when you need to work on two things simultaneously for more than a few minutes. Use stash for brief interruptions. Use branches for sequential work.
+**Rule of thumb**: Use worktrees when you need to work on two things simultaneously for more than a
+few minutes. Use stash for brief interruptions. Use branches for sequential work.
 
 ## Common Pitfalls
 

@@ -1,7 +1,8 @@
 ---
 title: Statistics
-description: "Rigorous IB mathematics notes covering Statistics. Includes definitions, derivations, worked examples, and exam-style problems."
-  hypothesis testing.
+description:
+  'Rigorous IB mathematics notes covering Statistics. Includes definitions, derivations, worked
+  examples, and exam-style problems. hypothesis testing.'
 slug: statistics
 ---
 
@@ -37,11 +38,11 @@ Mode.
 
 ### Comparing Measures
 
-| Measure | Advantages | Disadvantages |
+| Measure | Advantages                                 | Disadvantages              |
 | ------- | ------------------------------------------ | -------------------------- |
-| Mean | Uses all data points, algebraic properties | Affected by outliers |
-| Median | Robust to outliers | Does not use all data |
-| Mode | Simple, useful for categorical data | May not exist or be unique |
+| Mean    | Uses all data points, algebraic properties | Affected by outliers       |
+| Median  | Robust to outliers                         | Does not use all data      |
+| Mode    | Simple, useful for categorical data        | May not exist or be unique |
 
 :::info[Example]
 
@@ -129,8 +130,8 @@ $$
 :::warning[Exam Tip]
 
 Know whether to use the population formula ($\div N$) or the sample formula ($\div (n-1)$). In IB
-Exams, when data is from a sample, use $s^2$ (dividing by $n-1$). Your GDC uses the sample
-Formula by default.
+Exams, when data is from a sample, use $s^2$ (dividing by $n-1$). Your GDC uses the sample Formula
+by default.
 
 :::
 
@@ -166,13 +167,13 @@ Where:
 
 :::info[Example]
 
-| Mass (g) | Frequency |
+| Mass (g)           | Frequency |
 | ------------------ | --------- |
-| $0 \le m \lt 20$ | 5 |
-| $20 \le m \lt 40$ | 12 |
-| $40 \le m \lt 60$ | 18 |
-| $60 \le m \lt 80$ | 10 |
-| $80 \le m \lt 100$ | 5 |
+| $0 \le m \lt 20$   | 5         |
+| $20 \le m \lt 40$  | 12        |
+| $40 \le m \lt 60$  | 18        |
+| $60 \le m \lt 80$  | 10        |
+| $80 \le m \lt 100$ | 5         |
 
 Total $n = 50$. Median position $= \dfrac{50}{2} = 25$.
 
@@ -214,7 +215,7 @@ $$
 - The **line inside** the box is the median.
 - **Whiskers** extend to the minimum and maximum (or to the most extreme non-outlier values).
 - **Skewness**: if the median is closer to $Q_1$The data is right-skewed (positively skewed). If
- closer to $Q_3$Left-skewed (negatively skewed).
+  closer to $Q_3$Left-skewed (negatively skewed).
 
 ---
 
@@ -234,11 +235,11 @@ Using the grouped data from the previous example:
 
 | Upper boundary | Cumulative frequency |
 | -------------- | -------------------- |
-| 20 | 5 |
-| 40 | 17 |
-| 60 | 35 |
-| 80 | 45 |
-| 100 | 50 |
+| 20             | 5                    |
+| 40             | 17                   |
+| 60             | 35                   |
+| 80             | 45                   |
+| 100            | 50                   |
 
 To find $Q_1$ (at $12.5$): interpolate between $(20, 5)$ and $(40, 17)$.
 
@@ -266,21 +267,21 @@ $$
 
 ### Properties of $r$
 
-| Value | Interpretation |
+| Value            | Interpretation                      |
 | ---------------- | ----------------------------------- |
-| $r = 1$ | Perfect positive linear correlation |
-| $r = -1$ | Perfect negative linear correlation |
-| $r = 0$ | No linear correlation |
-| $0 \lt r \lt 1$ | Positive linear correlation |
-| $-1 \lt r \lt 0$ | Negative linear correlation |
+| $r = 1$          | Perfect positive linear correlation |
+| $r = -1$         | Perfect negative linear correlation |
+| $r = 0$          | No linear correlation               |
+| $0 \lt r \lt 1$  | Positive linear correlation         |
+| $-1 \lt r \lt 0$ | Negative linear correlation         |
 
 ### Strength Guidelines
 
-| $            | r        | $ | Strength |
+| $            | r        | $   | Strength |
 | ------------ | -------- | --- | -------- |
-| $0.0$--$0.3$ | Weak | | |
-| $0.3$--$0.7$ | Moderate | | |
-| $0.7$--$1.0$ | Strong | | |
+| $0.0$--$0.3$ | Weak     |     |          |
+| $0.3$--$0.7$ | Moderate |     |          |
+| $0.7$--$1.0$ | Strong   |     |          |
 
 ### Computational Formula
 
@@ -344,7 +345,7 @@ $r^2$ represents the proportion of variance in $y$ explained by the linear relat
 
 Given the data:
 
-| $x$ | 1 | 2 | 3 | 4 | 5 |
+| $x$ | 1   | 2   | 3   | 4   | 5    |
 | --- | --- | --- | --- | --- | ---- |
 | $y$ | 2.1 | 3.9 | 6.2 | 7.8 | 10.1 |
 
@@ -397,7 +398,7 @@ Often ask you to comment on the reliability of a prediction.
 - **Significance level** ($\alpha$): The threshold for rejecting $H_0$ (commonly 0.05 or 0.01).
 - **Test statistic**: A value computed from the sample data.
 - **$p$-value**: The probability of observing the test statistic (or more extreme) assuming $H_0$ is
- true.
+  true.
 - **Critical value**: The boundary value(s) that define the rejection region.
 
 ### Decision Rule
@@ -407,18 +408,18 @@ Often ask you to comment on the reliability of a prediction.
 
 ### Types of Errors
 
-| Error Type | Description |
+| Error Type | Description                                                                       |
 | ---------- | --------------------------------------------------------------------------------- |
-| Type I | Rejecting $H_0$ when it is true (false positive). Probability $= \alpha$. |
-| Type II | Failing to reject $H_0$ when it is false (false negative). Probability $= \beta$. |
+| Type I     | Rejecting $H_0$ when it is true (false positive). Probability $= \alpha$.         |
+| Type II    | Failing to reject $H_0$ when it is false (false negative). Probability $= \beta$. |
 
 ### One-Tailed vs Two-Tailed Tests
 
-| Test | $H_1$ | Rejection Region |
+| Test         | $H_1$                  | Rejection Region |
 | ------------ | ---------------------- | ---------------- |
-| Two-tailed | Parameter $\neq$ value | Both tails |
-| Right-tailed | Parameter $\gt$ value | Upper tail |
-| Left-tailed | Parameter $\lt$ value | Lower tail |
+| Two-tailed   | Parameter $\neq$ value | Both tails       |
+| Right-tailed | Parameter $\gt$ value  | Upper tail       |
+| Left-tailed  | Parameter $\lt$ value  | Lower tail       |
 
 ### Hypothesis Test for Correlation
 
@@ -478,11 +479,11 @@ Columns.
 
 Test whether gender and favourite subject are independent:
 
-| | Maths | Science | English | Total |
+|        | Maths | Science | English | Total |
 | ------ | ----- | ------- | ------- | ----- |
-| Male | 30 | 25 | 15 | 70 |
-| Female | 20 | 20 | 40 | 80 |
-| Total | 50 | 45 | 55 | 150 |
+| Male   | 30    | 25      | 15      | 70    |
+| Female | 20    | 20      | 40      | 80    |
+| Total  | 50    | 45      | 55      | 150   |
 
 Expected frequencies:
 
@@ -531,14 +532,14 @@ The marks of 8 students in Maths and Physics are:
 
 | Student | Maths ($x$) | Physics ($y$) |
 | ------- | ----------- | ------------- |
-| `A` | 72 | 68 |
-| `B` | 85 | 82 |
-| `C` | 60 | 58 |
-| `D` | 90 | 88 |
-| `E` | 78 | 74 |
-| `F` | 65 | 70 |
-| `G` | 88 | 85 |
-| `H` | 76 | 72 |
+| `A`     | 72          | 68            |
+| `B`     | 85          | 82            |
+| `C`     | 60          | 58            |
+| `D`     | 90          | 88            |
+| `E`     | 78          | 74            |
+| `F`     | 65          | 70            |
+| `G`     | 88          | 85            |
+| `H`     | 76          | 72            |
 
 **(a)** Calculate Pearson's correlation coefficient.
 
@@ -607,20 +608,20 @@ $170\mathrm{ cm}$.
 
 ## Summary
 
-| Concept | Formula |
+| Concept          | Formula                                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------------------------------- |
-| Mean | $\bar{x} = \dfrac{\sum x_i}{n}$ |
-| Sample variance | $s^2 = \dfrac{\sum(x_i - \bar{x})^2}{n-1}$ |
-| IQR | $Q_3 - Q_1$ |
-| Correlation | $r = \dfrac{n\sum x_iy_i - \sum x_i \sum y_i}{\sqrt{[n\sum x_i^2 - (\sum x_i)^2][n\sum y_i^2 - (\sum y_i)^2]}}$ |
-| Regression slope | $b = \dfrac{n\sum x_iy_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}$ |
-| Chi-squared | $\chi^2 = \displaystyle\sum \dfrac{(O_i - E_i)^2}{E_i}$ |
+| Mean             | $\bar{x} = \dfrac{\sum x_i}{n}$                                                                                 |
+| Sample variance  | $s^2 = \dfrac{\sum(x_i - \bar{x})^2}{n-1}$                                                                      |
+| IQR              | $Q_3 - Q_1$                                                                                                     |
+| Correlation      | $r = \dfrac{n\sum x_iy_i - \sum x_i \sum y_i}{\sqrt{[n\sum x_i^2 - (\sum x_i)^2][n\sum y_i^2 - (\sum y_i)^2]}}$ |
+| Regression slope | $b = \dfrac{n\sum x_iy_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}$                                      |
+| Chi-squared      | $\chi^2 = \displaystyle\sum \dfrac{(O_i - E_i)^2}{E_i}$                                                         |
 
 :::tip[Exam Strategy]
 
-For statistics questions in Paper 2, always show your working. State hypotheses for
-Hypothesis tests. When using your GDC, note what function you used and the inputs. Interpret results
-In context — never leave a numerical answer without explaining what it means.
+For statistics questions in Paper 2, always show your working. State hypotheses for Hypothesis
+tests. When using your GDC, note what function you used and the inputs. Interpret results In context
+— never leave a numerical answer without explaining what it means.
 
 :::
 
@@ -632,14 +633,14 @@ In context — never leave a numerical answer without explaining what it means.
 
 If every data value is transformed by $y_i = ax_i + b$:
 
-| Statistic | Original | Transformed |
-| ----------------------- | ----------- | -------------------------------------------------- | --- | ------------ |
-| Mean | $\bar{x}$ | $a\bar{x} + b$ | | |
-| Standard deviation | $s_x$ | $                                                  | a   | s_x$ |
-| Variance | $s_x^2$ | $a^2 s_x^2$ | | |
-| Median | $Q_2$ | $aQ_2 + b$ | | |
-| IQR | $Q_3 - Q_1$ | $                                                  | a   | (Q_3 - Q_1)$ |
-| Correlation coefficient | $r$ | $r$ (unchanged if $a \gt 0$Negated if $a \lt 0$) | | |
+| Statistic               | Original    | Transformed                                      |
+| ----------------------- | ----------- | ------------------------------------------------ | --- | ------------ |
+| Mean                    | $\bar{x}$   | $a\bar{x} + b$                                   |     |              |
+| Standard deviation      | $s_x$       | $                                                | a   | s_x$         |
+| Variance                | $s_x^2$     | $a^2 s_x^2$                                      |     |              |
+| Median                  | $Q_2$       | $aQ_2 + b$                                       |     |              |
+| IQR                     | $Q_3 - Q_1$ | $                                                | a   | (Q_3 - Q_1)$ |
+| Correlation coefficient | $r$         | $r$ (unchanged if $a \gt 0$Negated if $a \lt 0$) |     |              |
 
 ### Standardised Scores (z-scores)
 
@@ -669,12 +670,12 @@ The student scored 2 standard deviations above the mean.
 
 When data shows a non-linear pattern, transform the variables to linearise:
 
-| Relationship | Transformation | Linear Form |
+| Relationship          | Transformation                        | Linear Form               |
 | --------------------- | ------------------------------------- | ------------------------- |
-| $y = a x^b$ | $\log y = \log a + b \log x$ | Plot $\log y$ vs $\log x$ |
-| $y = a e^{bx}$ | $\ln y = \ln a + bx$ | Plot $\ln y$ vs $x$ |
-| $y = a + b\ln x$ | $y = a + b\ln x$ | Plot $y$ vs $\ln x$ |
-| $y = \frac{a}{x} + b$ | $y = a\!\left(\frac{1}{x}\right) + b$ | Plot $y$ vs $1/x$ |
+| $y = a x^b$           | $\log y = \log a + b \log x$          | Plot $\log y$ vs $\log x$ |
+| $y = a e^{bx}$        | $\ln y = \ln a + bx$                  | Plot $\ln y$ vs $x$       |
+| $y = a + b\ln x$      | $y = a + b\ln x$                      | Plot $y$ vs $\ln x$       |
+| $y = \frac{a}{x} + b$ | $y = a\!\left(\frac{1}{x}\right) + b$ | Plot $y$ vs $1/x$         |
 
 ### Power Law
 
@@ -733,7 +734,7 @@ B. Group A's scores are more tightly clustered around the mean.
 A scientist investigates the relationship between temperature ($x$In $\degree$C) and reaction rate
 ($y$In mol/L/s). The following data was collected:
 
-| $x$ | 10 | 20 | 30 | 40 | 50 | 60 |
+| $x$ | 10  | 20  | 30  | 40  | 50   | 60   |
 | --- | --- | --- | --- | --- | ---- | ---- |
 | $y$ | 0.4 | 1.1 | 2.5 | 5.2 | 10.8 | 22.0 |
 
@@ -745,7 +746,7 @@ Increasing amount. A plot of $y$ vs $x$ would show a curve, not a straight line.
 **(b)** By plotting $\ln y$ against $x$Determine whether the relationship is of the form
 $y = ae^{bx}$.
 
-| $x$ | 10 | 20 | 30 | 40 | 50 | 60 |
+| $x$     | 10       | 20      | 30      | 40      | 50      | 60      |
 | ------- | -------- | ------- | ------- | ------- | ------- | ------- |
 | $\ln y$ | $-0.916$ | $0.095$ | $0.916$ | $1.649$ | $2.380$ | $3.091$ |
 
@@ -784,11 +785,11 @@ Between study hours and exam scores.
 
 Skewness measures the asymmetry of the distribution.
 
-| Type | Description | Mean vs Median |
+| Type                  | Description            | Mean vs Median    |
 | --------------------- | ---------------------- | ----------------- |
 | Positive (right) skew | Long tail to the right | Mean $\gt$ Median |
-| Negative (left) skew | Long tail to the left | Mean $\lt$ Median |
-| Symmetric | No skew | Mean = Median |
+| Negative (left) skew  | Long tail to the left  | Mean $\lt$ Median |
+| Symmetric             | No skew                | Mean = Median     |
 
 The **Pearson coefficient of skewness**:
 
@@ -800,11 +801,11 @@ $$
 
 Kurtosis measures the "tailedness" of the distribution compared to a normal distribution.
 
-| Type | Description |
+| Type        | Description                                |
 | ----------- | ------------------------------------------ |
 | Leptokurtic | Heavy tails, sharp peak (kurtosis $\gt 3$) |
-| Mesokurtic | Same as normal (kurtosis $= 3$) |
-| Platykurtic | Light tails, flat peak (kurtosis $\lt 3$) |
+| Mesokurtic  | Same as normal (kurtosis $= 3$)            |
+| Platykurtic | Light tails, flat peak (kurtosis $\lt 3$)  |
 
 ---
 
@@ -851,22 +852,22 @@ A score of 82.26 is at the 90th percentile.
 
 ### Types of Data
 
-| Type | Description | Examples |
+| Type                      | Description          | Examples                         |
 | ------------------------- | -------------------- | -------------------------------- |
-| Qualitative (categorical) | Labels or names | Colour, gender, nationality |
-| Quantitative | Numerical | Height, mass, temperature |
-| Discrete | Integer values | Number of siblings, goals scored |
-| Continuous | Any value in a range | Height, time, mass |
+| Qualitative (categorical) | Labels or names      | Colour, gender, nationality      |
+| Quantitative              | Numerical            | Height, mass, temperature        |
+| Discrete                  | Integer values       | Number of siblings, goals scored |
+| Continuous                | Any value in a range | Height, time, mass               |
 
 ### Sampling Methods
 
-| Method | Description | Advantages | Disadvantages |
+| Method        | Description                    | Advantages             | Disadvantages                   |
 | ------------- | ------------------------------ | ---------------------- | ------------------------------- |
-| Simple random | Every member has equal chance | Unbiased | Difficult for large populations |
-| Systematic | Every $k$-th member selected | Easy to implement | May be periodic bias |
-| Stratified | Population divided into strata | Ensures representation | Complex to organise |
-| Quota | Fixed numbers from each group | Quick | Not random |
-| Convenience | accessible members | Easy | Likely biased |
+| Simple random | Every member has equal chance  | Unbiased               | Difficult for large populations |
+| Systematic    | Every $k$-th member selected   | Easy to implement      | May be periodic bias            |
+| Stratified    | Population divided into strata | Ensures representation | Complex to organise             |
+| Quota         | Fixed numbers from each group  | Quick                  | Not random                      |
+| Convenience   | accessible members             | Easy                   | Likely biased                   |
 
 ### Reliability and Validity
 
@@ -876,14 +877,15 @@ A score of 82.26 is at the 90th percentile.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Statistics**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-statistics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Statistics**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-statistics) contains the hardest questions within
+the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistics with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Statistics
+with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Common Pitfalls
 

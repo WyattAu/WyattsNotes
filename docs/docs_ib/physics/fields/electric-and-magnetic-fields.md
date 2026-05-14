@@ -1,8 +1,9 @@
 ---
 title: Electric and Magnetic Fields
 slug: electric-and-magnetic-fields
-description: "Rigorous IB physics notes covering Electric and Magnetic Fields. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB physics notes covering Electric and Magnetic Fields. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Point Charge
@@ -23,8 +24,7 @@ $$
 \end`\{aligned}`
 $$
 
-:::info
-Coulomb's Law can also be expressed in vector form, where the force exerted by $q_1$ on
+:::info Coulomb's Law can also be expressed in vector form, where the force exerted by $q_1$ on
 $q_2$ is:
 
 $$
@@ -44,8 +44,7 @@ $$
 \end`\{aligned}`
 $$
 
-:::info
-The derivation of Coulomb's constant can be possible with Maxwell's equations. Gauss's Law
+:::info The derivation of Coulomb's constant can be possible with Maxwell's equations. Gauss's Law
 States that the electric flux ($\Phi$) through any closed surface is equal to net electric charge
 Enclosed within the surface multiply by the inverse of permittivity of free space ($\epsilon_0$):
 
@@ -107,8 +106,8 @@ $$
 \end`\{aligned}`
 $$
 
-Separating the magnitude and direction of $\bm{dr}$ gives $d|\bm{r}|\bm{\hat{r}}$And hence
-Changing the bounds ($\bm{r} \rightarrow |\bm{r}|$):
+Separating the magnitude and direction of $\bm{dr}$ gives $d|\bm{r}|\bm{\hat{r}}$And hence Changing
+the bounds ($\bm{r} \rightarrow |\bm{r}|$):
 
 $$
 \begin`\{aligned}`
@@ -231,7 +230,7 @@ Key properties:
 - The field is **uniform** (constant magnitude and direction) between the plates.
 - The field lines are parallel and equally spaced.
 - Fringing occurs at the edges of the plates (the field is not perfectly uniform there, but this is
- neglected in IB problems).
+  neglected in IB problems).
 
 ### Worked Example: Parallel Plates
 
@@ -318,7 +317,7 @@ Key properties:
 - $V_e$ is positive near positive charges and negative near negative charges.
 - $V_e = 0$ at infinity (by convention).
 - The electric field strength is the negative gradient of the potential:
- $E = -\frac{\Delta V_e}{\Delta r}$.
+  $E = -\frac{\Delta V_e}{\Delta r}$.
 
 ### Equipotential Surfaces
 
@@ -388,7 +387,7 @@ $$
 - **Permanent magnets:** Produce a magnetic field due to the alignment of magnetic domains.
 - **Current-carrying conductors:** A current produces a magnetic field around it (Ampere's law).
 - **Earth:** The Earth has a magnetic field, approximately that of a dipole, with the geographic
- south pole near the magnetic north pole.
+  south pole near the magnetic north pole.
 
 ### Magnetic Field Lines
 
@@ -430,44 +429,44 @@ Is approximately zero.
 
 ## Comparison: Electric vs Magnetic Fields
 
-| Property | Electric Field | Magnetic Field |
+| Property            | Electric Field                       | Magnetic Field                                 |
 | :------------------ | :----------------------------------- | :--------------------------------------------- |
-| Source | Stationary or moving charges | Moving charges (currents) |
-| Force on charge | $F = qE$ (parallel to E) | $F = qvB\sin\theta$ (perpendicular to v and B) |
-| Does work on charge | Yes | No (always perpendicular to velocity) |
-| Field lines | Start on + charges, end on - charges | Form closed loops (no monopoles) |
-| Units | V/m or N/C | Tesla (T) |
-| Constant | $\epsilon_0$ (permittivity) | $\mu_0$ (permeability) |
+| Source              | Stationary or moving charges         | Moving charges (currents)                      |
+| Force on charge     | $F = qE$ (parallel to E)             | $F = qvB\sin\theta$ (perpendicular to v and B) |
+| Does work on charge | Yes                                  | No (always perpendicular to velocity)          |
+| Field lines         | Start on + charges, end on - charges | Form closed loops (no monopoles)               |
+| Units               | V/m or N/C                           | Tesla (T)                                      |
+| Constant            | $\epsilon_0$ (permittivity)          | $\mu_0$ (permeability)                         |
 
 ---
 
 ## Exam Tips for D.2 (Electric and Magnetic Fields)
 
 1. **Coulomb's law vs gravitational force:** Both are inverse-square laws, but electric forces can
- be attractive or repulsive, while gravitational forces are always attractive.
+   be attractive or repulsive, while gravitational forces are always attractive.
 
 2. **Sign conventions for electric potential:** The electric potential energy of two like charges is
- positive (repulsive); for two unlike charges, it is negative (attractive). The potential energy
- is zero at infinite separation.
+   positive (repulsive); for two unlike charges, it is negative (attractive). The potential energy
+   is zero at infinite separation.
 
 3. **Distinguish between electric potential ($V_e$) and electric field strength ($E$):** Potential
- is a scalar; field strength is a vector. They are related by $E = -\Delta V_e / \Delta r$.
+   is a scalar; field strength is a vector. They are related by $E = -\Delta V_e / \Delta r$.
 
 4. **For parallel plate problems:** Always identify whether you need $E = V/d$ or
- $E = \sigma / \epsilon_0$ (the latter is beyond IB scope but good to know). The IB formula is
- $E = V/d$.
+   $E = \sigma / \epsilon_0$ (the latter is beyond IB scope but good to know). The IB formula is
+   $E = V/d$.
 
 5. **Millikan's experiment:** Be able to explain how balancing gravitational and electric forces on
- a charged oil drop allows the determination of the elementary charge. The key equation is
- $q = mgd/V$.
+   a charged oil drop allows the determination of the elementary charge. The key equation is
+   $q = mgd/V$.
 
-6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$$d$)
- and the dielectric, not on the charge or voltage. The energy stored can be expressed in three
- equivalent forms — use the one that matches your given data.
+6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$$d$) and
+   the dielectric, not on the charge or voltage. The energy stored can be expressed in three
+   equivalent forms — use the one that matches your given data.
 
 7. **Unit conversions:** Electric fields are often in V/m or N/C (equivalent). Capacitance is in
- farads (F), but practical values are in $\mu$F, nF, or pF. Be comfortable converting between SI
- prefixes.
+   farads (F), but practical values are in $\mu$F, nF, or pF. Be comfortable converting between SI
+   prefixes.
 
 ---
 
@@ -565,13 +564,13 @@ Total charge inside that surface.
 **Key implications:**
 
 - The electric flux through a closed surface depends only on the enclosed charge, not on the
- distribution of charge outside the surface.
+  distribution of charge outside the surface.
 - For a point charge, choosing a spherical Gaussian surface gives
- $E = \frac{Q}{4\pi\epsilon_0 r^2}$.
+  $E = \frac{Q}{4\pi\epsilon_0 r^2}$.
 - For a charged conducting sphere, the electric field outside is the same as a point charge at the
- center, and the field **inside** the conductor is zero (charges reside on the surface).
+  center, and the field **inside** the conductor is zero (charges reside on the surface).
 - Between parallel plates, using a rectangular Gaussian surface shows that the field is uniform:
- $E = \frac{\sigma}{\epsilon_0}$ where $\sigma$ is the surface charge density.
+  $E = \frac{\sigma}{\epsilon_0}$ where $\sigma$ is the surface charge density.
 
 **Exam tip:** For the IB, you need to understand Gauss's Law qualitatively. Be able to explain why
 The field inside a conductor is zero, and why the field outside a charged sphere behaves like a
@@ -582,26 +581,26 @@ Point charge.
 ## Common Pitfalls
 
 1. **Forgetting that electric potential is a scalar.** When calculating the total potential at a
- point due to multiple charges, add the potentials algebraically (including signs). Do not use
- vector addition.
+   point due to multiple charges, add the potentials algebraically (including signs). Do not use
+   vector addition.
 
 2. **Confusing electric potential energy and electric potential.** Potential energy $U$ depends on
- both charges ($U = kq_1 q_2 / r$). Potential $V_e$ is the energy per unit charge
- ($V_e = kQ / r$).
+   both charges ($U = kq_1 q_2 / r$). Potential $V_e$ is the energy per unit charge
+   ($V_e = kQ / r$).
 
 3. **Using the wrong formula for the force between charges.** Coulomb's law gives the force between
- **point** charges. For parallel plates, use $F = qE$ where $E = V/d$.
+   **point** charges. For parallel plates, use $F = qE$ where $E = V/d$.
 
 4. **Ignoring the sign of the charge in electric field direction.** The electric field points away
- from positive charges and toward negative charges. The force on a positive charge is in the
- direction of $\bm{E}$; the force on a negative charge is opposite to $\bm{E}$.
+   from positive charges and toward negative charges. The force on a positive charge is in the
+   direction of $\bm{E}$; the force on a negative charge is opposite to $\bm{E}$.
 
 5. **Capacitance is a property of the geometry, not the charge or voltage.** Changing the charge on
- a capacitor does not change its capacitance. $C = \epsilon_0 A / d$ depends only on plate area
- and separation.
+   a capacitor does not change its capacitance. $C = \epsilon_0 A / d$ depends only on plate area
+   and separation.
 
 6. **Magnetic force direction errors.** For a current-carrying wire, use Fleming's Left-Hand Rule.
- For a moving charge, use the right-hand rule (and reverse for negative charges).
+   For a moving charge, use the right-hand rule (and reverse for negative charges).
 
 ---
 
@@ -754,14 +753,15 @@ Equilibrium.
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Electric and Magnetic Fields**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-electric-magnetic-fields) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Electric and Magnetic Fields**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-electric-magnetic-fields) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric and Magnetic Fields with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Electric
+and Magnetic Fields with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

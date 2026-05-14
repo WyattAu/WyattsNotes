@@ -1,7 +1,8 @@
 ---
 title: Kinematics
-description: "Rigorous IB physics notes covering Kinematics. Includes definitions, derivations, worked examples, and exam-style problems."
-  equations.
+description:
+  'Rigorous IB physics notes covering Kinematics. Includes definitions, derivations, worked
+  examples, and exam-style problems. equations.'
 slug: kinematics
 ---
 
@@ -11,12 +12,12 @@ slug: kinematics
 
 | Scalar (magnitude only) | Vector (magnitude and direction) |
 | ----------------------- | -------------------------------- |
-| Distance | Displacement |
-| Speed | Velocity |
-| Mass | Weight |
-| Energy | Force |
-| Temperature | Acceleration |
-| Time | Momentum |
+| Distance                | Displacement                     |
+| Speed                   | Velocity                         |
+| Mass                    | Weight                           |
+| Energy                  | Force                            |
+| Temperature             | Acceleration                     |
+| Time                    | Momentum                         |
 
 ### Distance and Displacement
 
@@ -46,12 +47,12 @@ Instantaneous acceleration is the derivative of velocity with respect to time.
 
 For motion with **constant acceleration** in a straight line:
 
-| Equation | Variables | Missing |
+| Equation                   | Variables    | Missing |
 | -------------------------- | ------------ | ------- |
-| $v = u + at$ | $v, u, a, t$ | $s$ |
-| $s = ut + \frac{1}{2}at^2$ | $s, u, a, t$ | $v$ |
-| $v^2 = u^2 + 2as$ | $v, u, a, s$ | $t$ |
-| $s = \frac{1}{2}(u+v)t$ | $s, u, v, t$ | $a$ |
+| $v = u + at$               | $v, u, a, t$ | $s$     |
+| $s = ut + \frac{1}{2}at^2$ | $s, u, a, t$ | $v$     |
+| $v^2 = u^2 + 2as$          | $v, u, a, s$ | $t$     |
+| $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
 
 Where:
 
@@ -108,15 +109,15 @@ Try creating different motion scenarios and observe how the graphs relate to one
 
 ### Key Features
 
-| Feature | Interpretation |
+| Feature           | Interpretation                   |
 | ----------------- | -------------------------------- |
-| Gradient | Velocity |
-| Steeper gradient | Greater speed |
-| Horizontal line | Object at rest |
-| Positive gradient | Moving in positive direction |
-| Negative gradient | Moving in negative direction |
-| Curve | Changing velocity (acceleration) |
-| Area under graph | No direct meaning |
+| Gradient          | Velocity                         |
+| Steeper gradient  | Greater speed                    |
+| Horizontal line   | Object at rest                   |
+| Positive gradient | Moving in positive direction     |
+| Negative gradient | Moving in negative direction     |
+| Curve             | Changing velocity (acceleration) |
+| Area under graph  | No direct meaning                |
 
 ### Instantaneous Velocity
 
@@ -129,16 +130,16 @@ At that point.
 
 ### Key Features
 
-| Feature | Interpretation |
+| Feature           | Interpretation               |
 | ----------------- | ---------------------------- |
-| Gradient | Acceleration |
-| Area under graph | Displacement |
-| Horizontal line | Constant velocity |
-| Positive gradient | Accelerating |
-| Negative gradient | Decelerating |
-| Above $t$-axis | Moving in positive direction |
-| Below $t$-axis | Moving in negative direction |
-| Curve | Changing acceleration |
+| Gradient          | Acceleration                 |
+| Area under graph  | Displacement                 |
+| Horizontal line   | Constant velocity            |
+| Positive gradient | Accelerating                 |
+| Negative gradient | Decelerating                 |
+| Above $t$-axis    | Moving in positive direction |
+| Below $t$-axis    | Moving in negative direction |
+| Curve             | Changing acceleration        |
 
 ### Finding Displacement
 
@@ -357,7 +358,7 @@ Without air resistance, all objects fall at the same rate. With air resistance:
 - $F_d = mg$ at terminal velocity.
 - Heavier objects (with same shape and size) have a higher terminal velocity.
 - A skydiver reaches terminal velocity of about $55\mathrm{ m/s}$ (belly-down) or $90\mathrm{ m/s}$
- (head-down).
+  (head-down).
 
 ### Effect on Projectiles
 
@@ -479,26 +480,26 @@ $$
 
 ## Summary
 
-| Quantity | Symbol | SI Unit |
+| Quantity                   | Symbol | SI Unit      |
 | -------------------------- | ------ | ------------ |
-| Displacement | $s$ | m |
-| Velocity | $v$ | m/s |
-| Acceleration | $a$ | m/s$^2$ |
-| Time | $t$ | s |
-| Gravitational acceleration | $g$ | 9.81 m/s$^2$ |
+| Displacement               | $s$    | m            |
+| Velocity                   | $v$    | m/s          |
+| Acceleration               | $a$    | m/s$^2$      |
+| Time                       | $t$    | s            |
+| Gravitational acceleration | $g$    | 9.81 m/s$^2$ |
 
-| SUVAT Equation | Use When |
+| SUVAT Equation             | Use When                 |
 | -------------------------- | ------------------------ |
-| $v = u + at$ | No displacement needed |
+| $v = u + at$               | No displacement needed   |
 | $s = ut + \frac{1}{2}at^2$ | No final velocity needed |
-| $v^2 = u^2 + 2as$ | No time needed |
-| $s = \frac{1}{2}(u+v)t$ | No acceleration needed |
+| $v^2 = u^2 + 2as$          | No time needed           |
+| $s = \frac{1}{2}(u+v)t$    | No acceleration needed   |
 
 :::tip[Exam Strategy]
 
 For projectile problems, always resolve into horizontal and vertical components. Solve the vertical
-Motion first ( to find time), then use that time for the horizontal motion. Draw a clear
-Diagram showing the velocity components.
+Motion first ( to find time), then use that time for the horizontal motion. Draw a clear Diagram
+showing the velocity components.
 
 :::
 
@@ -846,8 +847,7 @@ $$
 
 **(c)** Find the distance travelled between $t = 0$ and $t = 4\mathrm{ s}$.
 
-Since $v \ge 0$ for $0 \le t \le 4$The distance equals the displacement:
-$\dfrac{32}{3}\mathrm{ m}$.
+Since $v \ge 0$ for $0 \le t \le 4$The distance equals the displacement: $\dfrac{32}{3}\mathrm{ m}$.
 
 ### Question 9 (Paper 1 style)
 
@@ -896,18 +896,20 @@ $$
 
 Speed $= 48.8\mathrm{ m/s}$ (downward).
 
-For the A-Level treatment of this topic, see [Kinematics](https://alevel.wyattau.com/docs/physics/mechanics/kinematics).
+For the A-Level treatment of this topic, see
+[Kinematics](https://alevel.wyattau.com/docs/physics/mechanics/kinematics).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Kinematics**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-kinematics) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Kinematics**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-kinematics) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics
+with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

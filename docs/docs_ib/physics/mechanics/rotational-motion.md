@@ -1,7 +1,8 @@
 ---
 title: Rotational Motion
-description: "Rigorous IB physics notes covering Rotational Motion. Includes definitions, derivations, worked examples, and exam-style problems."
-  momentum.
+description:
+  'Rigorous IB physics notes covering Rotational Motion. Includes definitions, derivations, worked
+  examples, and exam-style problems. momentum.'
 slug: rotational-motion
 ---
 
@@ -9,11 +10,11 @@ slug: rotational-motion
 
 ### Angular Quantities
 
-| Quantity | Symbol | SI Unit | Relation to Linear |
+| Quantity             | Symbol   | SI Unit   | Relation to Linear |
 | -------------------- | -------- | --------- | ------------------ |
-| Angular displacement | $\theta$ | rad | $s = r\theta$ |
-| Angular velocity | $\omega$ | rad/s | $v = r\omega$ |
-| Angular acceleration | $\alpha$ | rad/s$^2$ | $a_t = r\alpha$ |
+| Angular displacement | $\theta$ | rad       | $s = r\theta$      |
+| Angular velocity     | $\omega$ | rad/s     | $v = r\omega$      |
+| Angular acceleration | $\alpha$ | rad/s$^2$ | $a_t = r\alpha$    |
 
 ### Angular Velocity
 
@@ -73,7 +74,7 @@ Always directed toward the centre of the circular path (radially inward).
 
 - Centripetal acceleration changes the **direction** of velocity, not its magnitude.
 - If the centripetal force is removed, the object moves in a straight line (tangent to the circle)
- by Newton's first law.
+  by Newton's first law.
 - The word "centripetal" means "centre-seeking."
 
 :::warning[Exam Tip]
@@ -100,14 +101,14 @@ Always directed toward the centre of the circle.
 
 ### Common Examples
 
-| Situation | Centripetal Force Provided By |
+| Situation                              | Centripetal Force Provided By             |
 | -------------------------------------- | ----------------------------------------- |
-| Car turning on a flat road | Friction between tyres and road |
-| Car on a banked curve | Horizontal component of normal force |
-| Satellite in orbit | Gravitational force |
-| Object on a string (horizontal circle) | Tension in the string |
-| Conical pendulum | Horizontal component of tension |
-| Motorcyclist in vertical circle | Combination of weight and normal reaction |
+| Car turning on a flat road             | Friction between tyres and road           |
+| Car on a banked curve                  | Horizontal component of normal force      |
+| Satellite in orbit                     | Gravitational force                       |
+| Object on a string (horizontal circle) | Tension in the string                     |
+| Conical pendulum                       | Horizontal component of tension           |
+| Motorcyclist in vertical circle        | Combination of weight and normal reaction |
 
 ---
 
@@ -276,7 +277,7 @@ Where:
 - $d$ is the distance from the axis (pivot) to the point of application
 - $\theta$ is the angle between the force and the line from pivot to application point
 - $r_\perp = d\sin\theta$ is the perpendicular distance from the axis to the line of action (moment
- arm)
+  arm)
 
 ### SI Unit
 
@@ -352,15 +353,15 @@ $$
 
 ### Common Moments of Inertia
 
-| Object | Axis | $I$ |
+| Object              | Axis                         | $I$                 |
 | ------------------- | ---------------------------- | ------------------- |
-| Solid cylinder/disk | Central axis | $\dfrac{1}{2}MR^2$ |
-| Hollow cylinder | Central axis | $MR^2$ |
-| Solid sphere | Diameter | $\dfrac{2}{5}MR^2$ |
-| Hollow sphere | Diameter | $\dfrac{2}{3}MR^2$ |
-| Thin rod (centre) | Perpendicular through centre | $\dfrac{1}{12}ML^2$ |
-| Thin rod (end) | Perpendicular through end | $\dfrac{1}{3}ML^2$ |
-| Point mass | At distance $r$ | $Mr^2$ |
+| Solid cylinder/disk | Central axis                 | $\dfrac{1}{2}MR^2$  |
+| Hollow cylinder     | Central axis                 | $MR^2$              |
+| Solid sphere        | Diameter                     | $\dfrac{2}{5}MR^2$  |
+| Hollow sphere       | Diameter                     | $\dfrac{2}{3}MR^2$  |
+| Thin rod (centre)   | Perpendicular through centre | $\dfrac{1}{12}ML^2$ |
+| Thin rod (end)      | Perpendicular through end    | $\dfrac{1}{3}ML^2$  |
+| Point mass          | At distance $r$              | $Mr^2$              |
 
 ### Parallel Axis Theorem
 
@@ -488,18 +489,18 @@ More mass concentrated near the centre (smaller $I$) roll faster.
 
 ## Analogy: Linear vs Rotational
 
-| Linear Quantity | Rotational Equivalent |
+| Linear Quantity         | Rotational Equivalent          |
 | ----------------------- | ------------------------------ |
-| Displacement $s$ | Angular displacement $\theta$ |
-| Velocity $v$ | Angular velocity $\omega$ |
-| Acceleration $a$ | Angular acceleration $\alpha$ |
-| Mass $m$ | Moment of inertia $I$ |
-| Force $F$ | Torque $\tau$ |
-| Momentum $p = mv$ | Angular momentum $L = I\omega$ |
-| $F = ma$ | $\tau = I\alpha$ |
-| $E_k = \frac{1}{2}mv^2$ | $E_k = \frac{1}{2}I\omega^2$ |
-| $W = Fs$ | $W = \tau\theta$ |
-| $P = Fv$ | $P = \tau\omega$ |
+| Displacement $s$        | Angular displacement $\theta$  |
+| Velocity $v$            | Angular velocity $\omega$      |
+| Acceleration $a$        | Angular acceleration $\alpha$  |
+| Mass $m$                | Moment of inertia $I$          |
+| Force $F$               | Torque $\tau$                  |
+| Momentum $p = mv$       | Angular momentum $L = I\omega$ |
+| $F = ma$                | $\tau = I\alpha$               |
+| $E_k = \frac{1}{2}mv^2$ | $E_k = \frac{1}{2}I\omega^2$   |
+| $W = Fs$                | $W = \tau\theta$               |
+| $P = Fv$                | $P = \tau\omega$               |
 
 ---
 
@@ -555,8 +556,7 @@ $$
 V_{\mathrm{min}} = \sqrt`\{gr}` = \sqrt{9.81 \times 0.8} = \sqrt{7.85} = 2.80\mathrm{ m/s}
 $$
 
-**(b)** If the speed at the bottom is $8\mathrm{ m/s}$Find the tension in the string at the
-Bottom.
+**(b)** If the speed at the bottom is $8\mathrm{ m/s}$Find the tension in the string at the Bottom.
 
 $$
 T_{\mathrm{bottom}} = mg + \frac{mv^2}{r} = 0.2(9.81) + \frac{0.2(64)}{0.8} = 1.962 + 16 = 17.96\mathrm{ N}
@@ -625,16 +625,16 @@ She can complete 1 full somersault and is partway through a second.
 
 ## Summary
 
-| Quantity | Formula |
+| Quantity                         | Formula                                   |
 | -------------------------------- | ----------------------------------------- |
-| Angular velocity | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
-| Centripetal acceleration | $a_c = \dfrac{v^2}{r} = \omega^2 r$ |
-| Centripetal force | $F_c = \dfrac{mv^2}{r} = m\omega^2 r$ |
-| Torque | $\tau = Fr_\perp$ |
-| Newton's second law (rotation) | $\tau = I\alpha$ |
-| Angular momentum | $L = I\omega$ |
-| Rotational kinetic energy | $E_k = \dfrac{1}{2}I\omega^2$ |
-| Conservation of angular momentum | $I_1\omega_1 = I_2\omega_2$ |
+| Angular velocity                 | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
+| Centripetal acceleration         | $a_c = \dfrac{v^2}{r} = \omega^2 r$       |
+| Centripetal force                | $F_c = \dfrac{mv^2}{r} = m\omega^2 r$     |
+| Torque                           | $\tau = Fr_\perp$                         |
+| Newton's second law (rotation)   | $\tau = I\alpha$                          |
+| Angular momentum                 | $L = I\omega$                             |
+| Rotational kinetic energy        | $E_k = \dfrac{1}{2}I\omega^2$             |
+| Conservation of angular momentum | $I_1\omega_1 = I_2\omega_2$               |
 
 :::tip[Exam Strategy]
 
@@ -769,8 +769,7 @@ $$
 ### Question 6 (Paper 2 style)
 
 A disc of mass $5\mathrm{ kg}$ and radius $0.2\mathrm{ m}$ rotates about its central axis. A
-Constant torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$Starting from
-Rest.
+Constant torque of $0.5\mathrm{ N}\cdot\mathrm{m}$ is applied for $4\mathrm{ s}$Starting from Rest.
 
 **(a)** Find the angular acceleration.
 
@@ -852,18 +851,20 @@ Maximum available friction: $f_{\max} = \mu_s mg = 0.4m(9.81) = 3.924m$.
 
 Since $2.7m \lt 3.924m$The coin does not slip.
 
-For the A-Level treatment of this topic, see [Circular Motion](https://alevel.wyattau.com/docs/physics/mechanics/circular-motion).
+For the A-Level treatment of this topic, see
+[Circular Motion](https://alevel.wyattau.com/docs/physics/mechanics/circular-motion).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Rotational Motion**? The [diagnostic test](/docs/ib/physics/diagnostics/diag-rotational-motion) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Rotational Motion**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-rotational-motion) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Rotational Motion with other physics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Rotational
+Motion with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 

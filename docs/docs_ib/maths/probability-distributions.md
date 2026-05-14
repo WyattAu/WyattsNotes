@@ -1,11 +1,12 @@
 ---
 title: Probability Distributions
 tags:
-- IB
-- Maths
+  - IB
+  - Maths
 slug: probability-distributions
-description: "Rigorous IB mathematics notes covering Probability Distributions. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB mathematics notes covering Probability Distributions. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Discrete Random Variables
@@ -85,7 +86,7 @@ The spread by $|a|$.
 
 A discrete random variable $X$ has PMF:
 
-| $x$ | 0 | 1 | 2 | 3 |
+| $x$        | 0   | 1   | 2   | 3   |
 | ---------- | --- | --- | --- | --- |
 | $P(X = x)$ | 0.1 | 0.4 | 0.3 | 0.2 |
 
@@ -118,8 +119,8 @@ $E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.4) = 0.1 + 0.4 + 0.9 + 1.6 = 3.0$
 
 A random variable $X$ has the following PMF:
 
-| $x$ | 1 | 2 | 3 | 4 | 5 |
-| ---------- | --- | --- | --- | --- | --- |
+| $x$        | 1   | 2   | 3   | 4    | 5    |
+| ---------- | --- | --- | --- | ---- | ---- |
 | $P(X = x)$ | 0.1 | 0.2 | 0.3 | 0.25 | 0.15 |
 
 $$E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.25) + 5(0.15) = 0.1 + 0.4 + 0.9 + 1.0 + 0.75 = 3.15$$
@@ -591,8 +592,7 @@ $$
 
 $E(X) = p\displaystyle\sum_{x=1}^{\infty} x(1-p)^{x-1}$
 
-Using $\displaystyle\sum_{x=1}^{\infty} xr^{x-1} = \frac{1}{(1-r)^2}$ for $|r| \lt 1$With
-$r = 1-p$:
+Using $\displaystyle\sum_{x=1}^{\infty} xr^{x-1} = \frac{1}{(1-r)^2}$ for $|r| \lt 1$With $r = 1-p$:
 
 $E(X) = p \cdot \dfrac{1}{p^2} = \dfrac{1}{p}$
 
@@ -678,8 +678,7 @@ A coin has $P(\mathrm{heads}) = 0.4$. $X \sim \mathrm{NB}(3, 0.4)$ counts flips 
 
 $P(X = 7) = \dbinom{6}{2}(0.4)^3(0.6)^4 = 15 \times 0.064 \times 0.1296 \approx 0.1244$
 
-$E(X) = 3/0.4 = 7.5$$\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$
-$\sigma = \sqrt{11.25} \approx 3.354$.
+$E(X) = 3/0.4 = 7.5$$\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$ $\sigma = \sqrt{11.25} \approx 3.354$.
 
 :::
 
@@ -750,9 +749,9 @@ Where $z_{\alpha/2}$ satisfies $P(Z \gt z_{\alpha/2}) = \alpha/2$ and $\alpha = 
 
 | Confidence Level | $z_{\alpha/2}$ |
 | ---------------- | -------------- |
-| 90% | 1.645 |
-| 95% | 1.960 |
-| 99% | 2.576 |
+| 90%              | 1.645          |
+| 95%              | 1.960          |
+| 99%              | 2.576          |
 
 When $\sigma$ is unknown and $n$ is large ($n \ge 30$), replace $\sigma$ with the sample standard
 Deviation $s$.
@@ -944,8 +943,8 @@ $E(X) = 4/0.25 = 16$
 
 ### Question 8 (Paper 2, AHL)
 
-The masses of male students are $N(72, 36)$ and female students are $N(58, 25)$Independent. Find
-The probability that a randomly chosen male is heavier than a randomly chosen female.
+The masses of male students are $N(72, 36)$ and female students are $N(58, 25)$Independent. Find The
+probability that a randomly chosen male is heavier than a randomly chosen female.
 
 Let $M \sim N(72, 36)$ and $F \sim N(58, 25)$. Then $D = M - F \sim N(72-58, 36+25) = N(14, 61)$.
 
@@ -957,69 +956,67 @@ $P(D \gt 0) = P\!\left(Z \gt \dfrac{0 - 14}{\sqrt{61}}\right) = P(Z \gt -1.793) 
 
 ### Discrete Distributions
 
-| Distribution | Notation | PMF | $E(X)$ | $\mathrm{Var}(X)$ | Support |
+| Distribution        | Notation               | PMF                                 | $E(X)$         | $\mathrm{Var}(X)$     | Support           |
 | ------------------- | ---------------------- | ----------------------------------- | -------------- | --------------------- | ----------------- |
-| Binomial | $B(n, p)$ | $\dbinom{n}{x}p^x(1-p)^{n-x}$ | $np$ | $np(1-p)$ | $0, 1, \ldots, n$ |
-| Poisson | $\mathrm{Po}(\lambda)$ | $\dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$ | $\lambda$ | $0, 1, 2, \ldots$ |
-| Geometric (AHL) | $\mathrm{Geo}(p)$ | $(1-p)^{x-1}p$ | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$ | $1, 2, 3, \ldots$ |
-| Neg. Binomial (AHL) | $\mathrm{NB}(r, p)$ | $\dbinom{x-1}{r-1}p^r(1-p)^{x-r}$ | $\dfrac{r}{p}$ | $\dfrac{r(1-p)}{p^2}$ | $r, r+1, \ldots$ |
+| Binomial            | $B(n, p)$              | $\dbinom{n}{x}p^x(1-p)^{n-x}$       | $np$           | $np(1-p)$             | $0, 1, \ldots, n$ |
+| Poisson             | $\mathrm{Po}(\lambda)$ | $\dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$      | $\lambda$             | $0, 1, 2, \ldots$ |
+| Geometric (AHL)     | $\mathrm{Geo}(p)$      | $(1-p)^{x-1}p$                      | $\dfrac{1}{p}$ | $\dfrac{1-p}{p^2}$    | $1, 2, 3, \ldots$ |
+| Neg. Binomial (AHL) | $\mathrm{NB}(r, p)$    | $\dbinom{x-1}{r-1}p^r(1-p)^{x-r}$   | $\dfrac{r}{p}$ | $\dfrac{r(1-p)}{p^2}$ | $r, r+1, \ldots$  |
 
 ### Continuous Distributions
 
-| Distribution | Notation | PDF | $E(X)$ | $\mathrm{Var}(X)$ | Support |
+| Distribution  | Notation           | PDF                                                            | $E(X)$           | $\mathrm{Var}(X)$     | Support             |
 | ------------- | ------------------ | -------------------------------------------------------------- | ---------------- | --------------------- | ------------------- |
-| Normal | $N(\mu, \sigma^2)$ | $\dfrac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$ | $\sigma^2$ | $(-\infty, \infty)$ |
-| Uniform (AHL) | $U(a, b)$ | $\dfrac{1}{b-a}$ | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ | $[a, b]$ |
+| Normal        | $N(\mu, \sigma^2)$ | $\dfrac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$            | $\sigma^2$            | $(-\infty, \infty)$ |
+| Uniform (AHL) | $U(a, b)$          | $\dfrac{1}{b-a}$                                               | $\dfrac{a+b}{2}$ | $\dfrac{(b-a)^2}{12}$ | $[a, b]$            |
 
 ### Key Relationships
 
-| Relationship | Condition |
-| ----------------------------------------------------------------- | ------------------------------------------------------ |
-| $B(n, p) \approx \mathrm{Po}(np)$ | $n$ large, $p$ small, $np$ moderate |
-| $B(n, p) \approx N(np, np(1-p))$ | $np \ge 5$$n(1-p) \ge 5$With continuity correction |
-| $\mathrm{Geo}(p) = \mathrm{NB}(1, p)$ | Special case |
-| $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$ | Independent Poisson variables |
-| $aX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)$ | Independent normal variables |
-| $\bar{X}_n \approx N(\mu, \sigma^2/n)$ | CLT, large $n$ |
-| $E(aX + bY) = aE(X) + bE(Y)$ | Always |
-| $\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)$ | $X$$Y$ independent |
+| Relationship                                                      | Condition                                          |
+| ----------------------------------------------------------------- | -------------------------------------------------- |
+| $B(n, p) \approx \mathrm{Po}(np)$                                 | $n$ large, $p$ small, $np$ moderate                |
+| $B(n, p) \approx N(np, np(1-p))$                                  | $np \ge 5$$n(1-p) \ge 5$With continuity correction |
+| $\mathrm{Geo}(p) = \mathrm{NB}(1, p)$                             | Special case                                       |
+| $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$                   | Independent Poisson variables                      |
+| $aX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)$  | Independent normal variables                       |
+| $\bar{X}_n \approx N(\mu, \sigma^2/n)$                            | CLT, large $n$                                     |
+| $E(aX + bY) = aE(X) + bE(Y)$                                      | Always                                             |
+| $\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)$ | $X$$Y$ independent                                 |
 
 ---
 
 ## Common Pitfalls
 
 1. **Confusing $p$ and $\lambda$**: For Poisson, $\lambda$ is a rate, not a probability. Unlike
- binomial $p$There is no upper bound of 1 on $\lambda$.
+   binomial $p$There is no upper bound of 1 on $\lambda$.
 
 2. **Forgetting conditions**: Before applying a distribution, verify all conditions. For binomial:
- fixed $n$Independence, two outcomes, constant $p$.
+   fixed $n$Independence, two outcomes, constant $p$.
 
 3. **Variance of differences**: $\mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ (plus, not
- minus) for independent variables.
+   minus) for independent variables.
 
 4. **Continuity correction**: When approximating a discrete distribution with a continuous one,
- apply a continuity correction. For example, $P(X \le 5)$ becomes $P(X \lt 5.5)$ under the normal
- approximation.
+   apply a continuity correction. For example, $P(X \le 5)$ becomes $P(X \lt 5.5)$ under the normal
+   approximation.
 
 5. **Standardisation direction**: $\Phi(z)$ goes from $z$-score to probability; $\Phi^{-1}(p)$ goes
- from probability to $z$-score.
+   from probability to $z$-score.
 
 6. **Geometric support**: $X \sim \mathrm{Geo}(p)$ counts trials starting from 1 (IB convention).
 
 7. **Poisson additivity**: Requires independence. If events are correlated, the sum is not Poisson.
 
 8. **Confidence interval interpretation**: A 95% CI does not mean there is a 95% probability that
- $\mu$ lies in the interval. It means 95% of similarly constructed intervals contain $\mu$.
+   $\mu$ lies in the interval. It means 95% of similarly constructed intervals contain $\mu$.
 
-9. **Squaring constants in variance**: $\mathrm{Var}(3X) = 9\mathrm{Var}(X)$Not
- $3\mathrm{Var}(X)$.
+9. **Squaring constants in variance**: $\mathrm{Var}(3X) = 9\mathrm{Var}(X)$Not $3\mathrm{Var}(X)$.
 
 :::tip[Exam Strategy]
 
 Always define your random variable and state the distribution with parameters at the start. For
-Normal problems, sketch the bell curve and shade the relevant area. When combining variables,
- state whether independence is assumed. For confidence intervals, state the level and
-Interpret in context.
+Normal problems, sketch the bell curve and shade the relevant area. When combining variables, state
+whether independence is assumed. For confidence intervals, state the level and Interpret in context.
 
 :::
 
@@ -1201,9 +1198,10 @@ $$= \Phi(3.6) - \Phi(-2.4) = 0.9998 - 0.0082 = 0.9916$$
 
 ### Problem 9
 
-A 95% confidence interval for the mean diameter of bolts is $(10.02\,\mathrm{mm}, 10.18\,\mathrm{mm})$
-Based on a sample of size 50. The population standard deviation is known to be
-$\sigma = 0.4\,\mathrm{mm}$. Find the sample mean and verify the confidence interval.
+A 95% confidence interval for the mean diameter of bolts is
+$(10.02\,\mathrm{mm}, 10.18\,\mathrm{mm})$ Based on a sample of size 50. The population standard
+deviation is known to be $\sigma = 0.4\,\mathrm{mm}$. Find the sample mean and verify the confidence
+interval.
 
 <details>
 <summary>Solution</summary>
@@ -1216,7 +1214,8 @@ The margin of error is half the width:
 
 $$E = \frac{10.18 - 10.02}{2} = 0.08\,\mathrm{mm}$$
 
-Verify: $E = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} = 1.960 \times \frac{0.4}{\sqrt{50}} = 1.960 \times 0.0566 = 0.1109$
+Verify:
+$E = z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} = 1.960 \times \frac{0.4}{\sqrt{50}} = 1.960 \times 0.0566 = 0.1109$
 
 The calculated margin of error ($0.1109$) exceeds the stated margin ($0.08$). This suggests the
 Confidence interval was constructed with a different confidence level or the stated $\sigma$ does
@@ -1252,9 +1251,9 @@ This requires summing over $x = 0$ to $x = 10$:
 
 $$P(X + Y = 10) = \sum_{x=0}^{10} P(X = x)P(Y = 10 - x)$$
 
-This is computationally intensive without a GDC, but the key principle is clear: since $X$ and $Y$ are
-Independent binomial variables with the same success probability ($p = 0.3$ and $p = 0.4$ differ,
-So the sum is **not** binomial), the distribution of $X + Y$ must be found by convolution.
+This is computationally intensive without a GDC, but the key principle is clear: since $X$ and $Y$
+are Independent binomial variables with the same success probability ($p = 0.3$ and $p = 0.4$
+differ, So the sum is **not** binomial), the distribution of $X + Y$ must be found by convolution.
 
 **If you get this wrong, revise:** Combining Random Variables section.
 
@@ -1263,9 +1262,9 @@ So the sum is **not** binomial), the distribution of $X + Y$ must be found by co
 ### Problem 11
 
 The lifetimes of batteries are normally distributed with mean $500\,\mathrm{hours}$ and standard
-Deviation $50\,\mathrm{hours}$. Find the probability that a randomly selected battery lasts more than
-$550\,\mathrm{hours}$. If four batteries are selected independently, find the probability that at
-Least three last more than $550\,\mathrm{hours}$.
+Deviation $50\,\mathrm{hours}$. Find the probability that a randomly selected battery lasts more
+than $550\,\mathrm{hours}$. If four batteries are selected independently, find the probability that
+at Least three last more than $550\,\mathrm{hours}$.
 
 <details>
 <summary>Solution</summary>
@@ -1288,8 +1287,8 @@ Approximately 1.4% chance that at least three out of four batteries last more th
 
 ### Problem 12
 
-Use the Poisson approximation to the binomial to estimate the probability of getting 3 or more
-Sixes when rolling a fair die 60 times.
+Use the Poisson approximation to the binomial to estimate the probability of getting 3 or more Sixes
+when rolling a fair die 60 times.
 
 <details>
 <summary>Solution</summary>
@@ -1305,7 +1304,8 @@ $$P(X \ge 3) = 1 - P(X \le 2) = 1 - e^{-10}\!\left(1 + 10 + \frac{100}{2}\right)
 
 $$= 1 - 61e^{-10} = 1 - 61(0.0000454) = 1 - 0.00277 = 0.9972$$
 
-Exact binomial: $P(X \le 2) = \binom{60}{0}(5/6)^{60} + \binom{60}{1}(1/6)(5/6)^{59} + \binom{60}{2}(1/6)^2(5/6)^{58}$
+Exact binomial:
+$P(X \le 2) = \binom{60}{0}(5/6)^{60} + \binom{60}{1}(1/6)(5/6)^{59} + \binom{60}{2}(1/6)^2(5/6)^{58}$
 
 This gives approximately $P(X \le 2) \approx 0.00268$So $P(X \ge 3) \approx 0.9973$. The
 Approximation is quite close despite $p \gt 0.1$ because $\lambda = 10$ is moderate.
@@ -1319,19 +1319,22 @@ Approximation is quite close despite $p \gt 0.1$ because $\lambda = 10$ is moder
 ## Related Content at Other Levels
 
 - **A-Level Probability:** [Mathematics](https://alevel.wyattau.com/docs/maths/maths)
-- **DSE Probability:** [Probability](https://academics.wyattau.com/docs/dse/Maths/compulsory/probability)
-- **University Probability and Statistics:** [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)
+- **DSE Probability:**
+  [Probability](https://academics.wyattau.com/docs/dse/Maths/compulsory/probability)
+- **University Probability and Statistics:**
+  [Probability and Statistics](https://university.wyattau.com/docs/mathematics/probability-and-statistics)
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Probability Distributions**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-probability-distributions) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Probability Distributions**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-probability-distributions) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability Distributions with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability
+Distributions with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Worked Examples
 

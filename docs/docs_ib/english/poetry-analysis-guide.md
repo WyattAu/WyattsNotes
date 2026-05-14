@@ -1,11 +1,12 @@
 ---
 title: Poetry Analysis Guide for IB English
 tags:
-- IB
-- English
+  - IB
+  - English
 slug: poetry-analysis-guide
-description: "Rigorous IB English notes covering Poetry Analysis Guide for IB English. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB English notes covering Poetry Analysis Guide for IB English. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 # Poetry Analysis Guide for IB English
@@ -55,19 +56,18 @@ There are two primary types:
 
 - 14 lines divided into three quatrains (4 lines each) and a final couplet (2 lines)
 - Rhyme scheme: ABAB CDCD EFEF GG
-- The volta (turn) occurs at the beginning of the final couplet, where the argument shifts
- direction or introduces a new perspective
+- The volta (turn) occurs at the beginning of the final couplet, where the argument shifts direction
+  or introduces a new perspective
 - The couplet often functions as a summary, a twist, or a resolution of the tensions established in
- the quatrains
+  the quatrains
 
 **Petrarchan (Italian) Sonnet:**
 
 - 14 lines divided into an octave (8 lines) and a sestet (6 lines)
 - Rhyme scheme: ABBAABBA CDECDE (the sestet has more variation)
 - The volta occurs between the octave and the sestet, marking a shift in tone, perspective, or
- argument
-- The octave presents a problem, question, or situation; the sestet responds to or
- resolves it
+  argument
+- The octave presents a problem, question, or situation; the sestet responds to or resolves it
 
 The sonnet form is inherently dramatic: it establishes a tension and then resolves (or fails to
 Resolve) it within a tightly constrained space. The best sonnet analysis traces this dramatic arc
@@ -80,7 +80,7 @@ Rigorous repetition pattern:
 
 - 19 lines: five tercets (3-line stanzas) followed by a final quatrain (4-line stanza)
 - Two refrains: the first and third lines of the first tercet alternate as the final line of each
- subsequent tercet
+  subsequent tercet
 - In the final quatrain, both refrains appear as the final two lines
 - Rhyme scheme: ABA ABA ABA ABA ABA ABAA
 
@@ -133,9 +133,9 @@ The ode is a formal lyric poem that addresses and celebrates a particular subjec
 Main types:
 
 - **Pindaric ode:** Three sections (strophe, antistrophe, epode) with complex metrical patterns.
- Named after the Greek poet Pindar, it is grand and ceremonial in tone.
+  Named after the Greek poet Pindar, it is grand and ceremonial in tone.
 - **Horatian ode:** More intimate and reflective, with a regular stanza form. Named after the Roman
- poet Horace.
+  poet Horace.
 
 Odes are characterised by elevated diction, apostrophe (direct address to the subject), and a tone
 Of admiration, reverence, or contemplation. Keats's "Ode to a Nightingale" and "Ode on a Grecian
@@ -143,8 +143,8 @@ Urn" are canonical English examples.
 
 ### 2.7 The Elegy
 
-An elegy is a poem of mourning, written to commemorate a dead person. Formal elegies
-Follow a conventional structure:
+An elegy is a poem of mourning, written to commemorate a dead person. Formal elegies Follow a
+conventional structure:
 
 1. Lament: expression of grief and sorrow
 2. Praise: celebration of the dead person's virtues
@@ -157,22 +157,21 @@ Tennyson's "In Memoriam" are major English elegies.
 ### 2.8 The Haiku
 
 The haiku is a Japanese poetic form consisting of three lines with a 5-7-5 syllable pattern. It
- presents a single, concrete image from nature that evokes a broader emotional or
-Philosophical resonance. The haiku's extreme compression means that every word carries maximum
-Weight; analysis must attend to the specific sensory details and the gap between what is said and
-What is implied.
+presents a single, concrete image from nature that evokes a broader emotional or Philosophical
+resonance. The haiku's extreme compression means that every word carries maximum Weight; analysis
+must attend to the specific sensory details and the gap between what is said and What is implied.
 
-| Form | Lines | Rhyme | Meter | Key Feature |
+| Form                 | Lines    | Rhyme             | Meter                      | Key Feature                             |
 | -------------------- | -------- | ----------------- | -------------------------- | --------------------------------------- |
-| Shakespearean sonnet | 14 | ABAB CDCD EFEF GG | Iambic pentameter | Volta at the couplet |
-| Petrarchan sonnet | 14 | ABBAABBA CDECDE | Iambic pentameter | Volta between octave and sestet |
-| Villanelle | 19 | ABA throughout | Variable | Two refrains, obsessive repetition |
-| Free verse | Variable | None | Variable | Form determined by poet, not convention |
-| Blank verse | Variable | None | Iambic pentameter | Unrhymed metrical regularity |
-| Ballad | Variable | ABCB or ABAB | Iambic tetrameter/trimeter | Narrative, oral tradition |
-| Ode | Variable | Variable | Variable | Formal address, elevated tone |
-| Elegy | Variable | Variable | Variable | Mourning, lament to consolation |
-| Haiku | 3 | None | 5-7-5 syllables | Extreme compression, nature image |
+| Shakespearean sonnet | 14       | ABAB CDCD EFEF GG | Iambic pentameter          | Volta at the couplet                    |
+| Petrarchan sonnet    | 14       | ABBAABBA CDECDE   | Iambic pentameter          | Volta between octave and sestet         |
+| Villanelle           | 19       | ABA throughout    | Variable                   | Two refrains, obsessive repetition      |
+| Free verse           | Variable | None              | Variable                   | Form determined by poet, not convention |
+| Blank verse          | Variable | None              | Iambic pentameter          | Unrhymed metrical regularity            |
+| Ballad               | Variable | ABCB or ABAB      | Iambic tetrameter/trimeter | Narrative, oral tradition               |
+| Ode                  | Variable | Variable          | Variable                   | Formal address, elevated tone           |
+| Elegy                | Variable | Variable          | Variable                   | Mourning, lament to consolation         |
+| Haiku                | 3        | None              | 5-7-5 syllables            | Extreme compression, nature image       |
 
 ---
 
@@ -194,26 +193,26 @@ Analogue of its thematic content.
 **Meter.** Meter is the pattern of stressed and unstressed syllables in a line of poetry. The most
 Common meters in English poetry are:
 
-| Meter | Pattern | Example |
+| Meter     | Pattern                        | Example                                                                    |
 | --------- | ------------------------------ | -------------------------------------------------------------------------- |
-| Iambic | unstressed-stressed | "The curfew tolls the knell of parting day" (Gray) |
-| Trochaic | stressed-unstressed | "Tyger Tyger, burning bright" (Blake) |
+| Iambic    | unstressed-stressed            | "The curfew tolls the knell of parting day" (Gray)                         |
+| Trochaic  | stressed-unstressed            | "Tyger Tyger, burning bright" (Blake)                                      |
 | Anapestic | unstressed-unstressed-stressed | "And the sound of a voice that is still" (Break, break, break -- Tennyson) |
-| Dactylic | stressed-unstressed-unstressed | "This is the forest primeval" (Longfellow) |
-| Spondaic | stressed-stressed | "Bright sun, dark night" (rare as sustained meter) |
+| Dactylic  | stressed-unstressed-unstressed | "This is the forest primeval" (Longfellow)                                 |
+| Spondaic  | stressed-stressed              | "Bright sun, dark night" (rare as sustained meter)                         |
 
 Meter is conventionally described by the number of feet per line:
 
-| Feet per line | Term |
+| Feet per line | Term       |
 | ------------- | ---------- |
-| 1 | Monometer |
-| 2 | Dimeter |
-| 3 | Trimeter |
-| 4 | Tetrameter |
-| 5 | Pentameter |
-| 6 | Hexameter |
-| 7 | Heptameter |
-| 8 | Octameter |
+| 1             | Monometer  |
+| 2             | Dimeter    |
+| 3             | Trimeter   |
+| 4             | Tetrameter |
+| 5             | Pentameter |
+| 6             | Hexameter  |
+| 7             | Heptameter |
+| 8             | Octameter  |
 
 Iambic pentameter (five iambs per line, ten syllables total) is the most common meter in English
 Poetry. When analysing meter, attend to deviations from the expected pattern: a trochaic
@@ -325,14 +324,14 @@ Imagery is descriptive language that appeals to the senses. It is the primary me
 Creates concrete, vivid experiences in the reader's imagination. When analysing imagery, identify
 Which senses are invoked and explain why the poet has chosen those particular sensory modes.
 
-| Type | Definition | Example |
+| Type        | Definition                                          | Example                                        |
 | ----------- | --------------------------------------------------- | ---------------------------------------------- |
-| Visual | Imagery that appeals to sight | "A host, of golden daffodils" (Wordsworth) |
-| Auditory | Imagery that appeals to hearing | "The murmuring of innumerable bees" (Tennyson) |
-| Olfactory | Imagery that appeals to smell | "The scent of ripeness from overhead" (Frost) |
-| Tactile | Imagery that appeals to touch | "The rough bark of the ancient oak" |
-| Gustatory | Imagery that appeals to taste | "The bitter-sweet of this dark fruit" |
-| Kinesthetic | Imagery that appeals to movement or physical action | "The bird that came with the dawn and sang" |
+| Visual      | Imagery that appeals to sight                       | "A host, of golden daffodils" (Wordsworth)     |
+| Auditory    | Imagery that appeals to hearing                     | "The murmuring of innumerable bees" (Tennyson) |
+| Olfactory   | Imagery that appeals to smell                       | "The scent of ripeness from overhead" (Frost)  |
+| Tactile     | Imagery that appeals to touch                       | "The rough bark of the ancient oak"            |
+| Gustatory   | Imagery that appeals to taste                       | "The bitter-sweet of this dark fruit"          |
+| Kinesthetic | Imagery that appeals to movement or physical action | "The bird that came with the dawn and sang"    |
 
 The most effective imagery operates on multiple sensory channels simultaneously, creating an
 Immersive experience that engages the reader's body as well as their intellect. When a poem shifts
@@ -381,14 +380,14 @@ The **addressee** is the person or entity to whom the poem is directed. The addr
 Explicit (named in the poem) or implicit (suggested by the language and tone). The relationship
 Between speaker and addressee is a primary source of dramatic tension in many poems.
 
-| Relationship | Effect |
+| Relationship                                           | Effect                                                        |
 | ------------------------------------------------------ | ------------------------------------------------------------- |
-| Speaker addresses self (soliloquy) | Introspection, self-examination, interiority |
-| Speaker addresses a specific person | Intimacy, accusation, confession, persuasion |
-| Speaker addresses an absent person | Longing, grief, nostalgia |
+| Speaker addresses self (soliloquy)                     | Introspection, self-examination, interiority                  |
+| Speaker addresses a specific person                    | Intimacy, accusation, confession, persuasion                  |
+| Speaker addresses an absent person                     | Longing, grief, nostalgia                                     |
 | Speaker addresses an abstraction (Death, Time, Nature) | Philosophical contemplation, confrontation with the universal |
-| Speaker addresses the reader | Direct engagement, didacticism, challenge |
-| Speaker addresses God | Prayer, doubt, supplication, defiance |
+| Speaker addresses the reader                           | Direct engagement, didacticism, challenge                     |
+| Speaker addresses God                                  | Prayer, doubt, supplication, defiance                         |
 
 ### 3.7 Context
 
@@ -520,16 +519,16 @@ Comparative argument, not merely discuss each poem separately.
 **Effective strategies for comparative poetry analysis:**
 
 1. **Thematic axis.** Identify a shared thematic concern and trace how each poem approaches it
- through different formal means. Example: "Both poems explore the theme of mortality, but Poem A
- uses the sonnet form to contain and resolve the anxiety of death, while Poem B uses free verse to
- enact the formlessness and irreversibility of loss."
+   through different formal means. Example: "Both poems explore the theme of mortality, but Poem A
+   uses the sonnet form to contain and resolve the anxiety of death, while Poem B uses free verse to
+   enact the formlessness and irreversibility of loss."
 2. **Formal contrast.** Compare the poems' formal features and explain how the differences produce
- different effects. Example: "The regularity of Poem A's iambic pentameter creates a sense of
- order and control that is deliberately undermined by Poem B's irregular rhythms and disrupted
- line breaks."
+   different effects. Example: "The regularity of Poem A's iambic pentameter creates a sense of
+   order and control that is deliberately undermined by Poem B's irregular rhythms and disrupted
+   line breaks."
 3. **Intertextual dialogue.** Show how one poem responds to, challenges, or extends the other. This
- approach requires identifying specific connections (shared imagery, echoed phrases, allusion)
- between the poems.
+   approach requires identifying specific connections (shared imagery, echoed phrases, allusion)
+   between the poems.
 
 ---
 
@@ -600,11 +599,11 @@ Remaining and thereby maintaining the tension between the immediate and the inde
 
 The poem's three quatrains follow a pattern of progressive internalisation:
 
-| Quatrain | Metaphor | Domain | Scale |
+| Quatrain | Metaphor | Domain              | Scale              |
 | -------- | -------- | ------------------- | ------------------ |
-| 1 | Autumn | External, natural | Seasonal (year) |
-| 2 | Twilight | External, cosmic | Diurnal (day) |
-| 3 | Fire | Internal, elemental | Immediate (moment) |
+| 1        | Autumn   | External, natural   | Seasonal (year)    |
+| 2        | Twilight | External, cosmic    | Diurnal (day)      |
+| 3        | Fire     | Internal, elemental | Immediate (moment) |
 
 This progression moves from the public and observable (the changing of seasons) to the private and
 Subjective (the dying of an inner fire), enacting the speaker's withdrawal from the external world
@@ -630,18 +629,18 @@ Volta provides structurally: the closure of the rhyme mirrors the closure of the
 This worked example illustrates several principles that apply to all poetry analysis:
 
 1. **Form and content are inseparable.** The sonnet form is not merely a container for the poem's
- content; it actively shapes the argument. The volta at the couplet is both a formal feature and a
- thematic turning point.
+   content; it actively shapes the argument. The volta at the couplet is both a formal feature and a
+   thematic turning point.
 2. **Metaphor generates meaning through comparison.** Each of the three metaphors (autumn, twilight,
- fire) contributes something unique to the poem's exploration of aging and mortality. No single
- metaphor could accomplish what the three achieve in combination.
+   fire) contributes something unique to the poem's exploration of aging and mortality. No single
+   metaphor could accomplish what the three achieve in combination.
 3. **Specific textual details drive analysis.** The analysis is grounded in specific words ("late,"
- "seals up," "consumed," "ere long") and specific formal features (spondee, sibilance,
- enjambment). General observations about the poem's themes are supported by evidence from the
- text.
+   "seals up," "consumed," "ere long") and specific formal features (spondee, sibilance,
+   enjambment). General observations about the poem's themes are supported by evidence from the
+   text.
 4. **Structure is argument.** The progression from external to internal, from natural to elemental,
- from description to address, is not merely an organisational convenience; it is the poem's
- argument about the relationship between aging, mortality, and love.
+   from description to address, is not merely an organisational convenience; it is the poem's
+   argument about the relationship between aging, mortality, and love.
 
 ---
 
@@ -695,28 +694,26 @@ When analysing a poem, work through the following categories systematically. Not
 Be equally productive for every poem, but you should consider each before deciding which are most
 Significant.
 
-| Category | Key Questions |
+| Category            | Key Questions                                                                                                                                 |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Form | What is the poem's form (sonnet, villanelle, free verse, etc.)? Does it follow or deviate from the conventions of that form? |
-| Structure | How is the poem organised (stanzas, line breaks, sections)? Where does the volta occur? What patterns of repetition or variation exist? |
-| Meter and rhythm | What is the dominant meter? Where are there metrical variations, and what is their effect? What is the overall rhythmic quality of the poem? |
-| Rhyme | What is the rhyme scheme? Does the poem use exact rhyme, slant rhyme, or internal rhyme? What is the effect of the rhyme pattern? |
-| Sound | What sound devices (alliteration, assonance, consonance, onomatopoeia) are present? How do they contribute to the poem's meaning or mood? |
-| Diction | What is the level of formality? Are there unusual, archaic, or technical words? What connotations do key words carry? |
-| Imagery | What sensory modes are invoked? Which images are most striking or recurrent? What do the images suggest beyond their literal content? |
-| Figurative language | What figures of speech are present? How do they shape the reader's understanding of the poem's subject? |
-| Speaker | Who is speaking? What is their attitude toward the subject? How reliable are they? |
-| Addressee | Who is the poem addressed to? How does the addressee shape the poem's tone and argument? |
-| Tone and mood | What is the speaker's attitude? What emotional atmosphere does the poem create? Where does the tone shift? |
-| Context | What biographical, historical, cultural, or literary context is relevant? How does context illuminate specific features of the poem? |
-| Theme | What is the poem's central concern? What proposition does it advance about that concern? How does the form shape the expression of the theme? |
+| Form                | What is the poem's form (sonnet, villanelle, free verse, etc.)? Does it follow or deviate from the conventions of that form?                  |
+| Structure           | How is the poem organised (stanzas, line breaks, sections)? Where does the volta occur? What patterns of repetition or variation exist?       |
+| Meter and rhythm    | What is the dominant meter? Where are there metrical variations, and what is their effect? What is the overall rhythmic quality of the poem?  |
+| Rhyme               | What is the rhyme scheme? Does the poem use exact rhyme, slant rhyme, or internal rhyme? What is the effect of the rhyme pattern?             |
+| Sound               | What sound devices (alliteration, assonance, consonance, onomatopoeia) are present? How do they contribute to the poem's meaning or mood?     |
+| Diction             | What is the level of formality? Are there unusual, archaic, or technical words? What connotations do key words carry?                         |
+| Imagery             | What sensory modes are invoked? Which images are most striking or recurrent? What do the images suggest beyond their literal content?         |
+| Figurative language | What figures of speech are present? How do they shape the reader's understanding of the poem's subject?                                       |
+| Speaker             | Who is speaking? What is their attitude toward the subject? How reliable are they?                                                            |
+| Addressee           | Who is the poem addressed to? How does the addressee shape the poem's tone and argument?                                                      |
+| Tone and mood       | What is the speaker's attitude? What emotional atmosphere does the poem create? Where does the tone shift?                                    |
+| Context             | What biographical, historical, cultural, or literary context is relevant? How does context illuminate specific features of the poem?          |
+| Theme               | What is the poem's central concern? What proposition does it advance about that concern? How does the form shape the expression of the theme? |
 
-:::info
-For detailed examples of literary analysis applied to specific texts, see
+:::info For detailed examples of literary analysis applied to specific texts, see
 [A Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md) and
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md).
-The analytical techniques described in this guide apply equally to prose and drama.
-:::
+The analytical techniques described in this guide apply equally to prose and drama. :::
 
 ## Summary
 

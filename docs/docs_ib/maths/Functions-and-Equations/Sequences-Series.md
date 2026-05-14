@@ -1,7 +1,8 @@
 ---
 title: Sequences and Series
-description: "Rigorous IB mathematics notes covering Sequences and Series. Includes definitions, derivations, worked examples, and exam-style problems."
-  notation, binomial theorem.
+description:
+  'Rigorous IB mathematics notes covering Sequences and Series. Includes definitions, derivations,
+  worked examples, and exam-style problems. notation, binomial theorem.'
 slug: sequences-series
 ---
 
@@ -192,12 +193,12 @@ $$
 
 ### Conditions for Convergence
 
-| Condition | Behaviour |
+| Condition | Behaviour                     |
 | --------- | ----------------------------- | ------ | ------------------------------- |
 | $         | r                             | \lt 1$ | Converges to $\dfrac{u_1}{1-r}$ |
-| $r = 1$ | Diverges (grows linearly) | | |
-| $r = -1$ | Oscillates, does not converge | | |
-| $         | r                             | \gt 1$ | Diverges (grows exponentially) |
+| $r = 1$   | Diverges (grows linearly)     |        |                                 |
+| $r = -1$  | Oscillates, does not converge |        |                                 |
+| $         | r                             | \gt 1$ | Diverges (grows exponentially)  |
 
 ---
 
@@ -652,16 +653,16 @@ $$
 
 ## Summary
 
-| Topic | Key Formula |
+| Topic                  | Key Formula                                                   |
 | ---------------------- | ------------------------------------------------------------- | --- | ------ |
-| Arithmetic $n$-th term | $u_n = u_1 + (n-1)d$ | | |
-| Arithmetic sum | $S_n = \dfrac{n}{2}[2u_1 + (n-1)d]$ | | |
-| Geometric $n$-th term | $u_n = u_1 r^{n-1}$ | | |
-| Geometric sum | $S_n = \dfrac{u_1(1-r^n)}{1-r}$ | | |
-| Sum to infinity | $S_{\infty} = \dfrac{u_1}{1-r}$ for $                         | r   | \lt 1$ |
-| Binomial theorem | $(a+b)^n = \displaystyle\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$ | | |
-| Sigma of $i$ | $\displaystyle\sum_{i=1}^{n}i = \dfrac{n(n+1)}{2}$ | | |
-| Sigma of $i^2$ | $\displaystyle\sum_{i=1}^{n}i^2 = \dfrac{n(n+1)(2n+1)}{6}$ | | |
+| Arithmetic $n$-th term | $u_n = u_1 + (n-1)d$                                          |     |        |
+| Arithmetic sum         | $S_n = \dfrac{n}{2}[2u_1 + (n-1)d]$                           |     |        |
+| Geometric $n$-th term  | $u_n = u_1 r^{n-1}$                                           |     |        |
+| Geometric sum          | $S_n = \dfrac{u_1(1-r^n)}{1-r}$                               |     |        |
+| Sum to infinity        | $S_{\infty} = \dfrac{u_1}{1-r}$ for $                         | r   | \lt 1$ |
+| Binomial theorem       | $(a+b)^n = \displaystyle\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$ |     |        |
+| Sigma of $i$           | $\displaystyle\sum_{i=1}^{n}i = \dfrac{n(n+1)}{2}$            |     |        |
+| Sigma of $i^2$         | $\displaystyle\sum_{i=1}^{n}i^2 = \dfrac{n(n+1)(2n+1)}{6}$    |     |        |
 
 :::tip[Exam Strategy]
 
@@ -685,7 +686,7 @@ Mathematical induction is a proof technique used to prove statements about natur
 2. **Inductive hypothesis**: Assume the statement is true for $n = k$.
 3. **Inductive step**: Prove that if it is true for $n = k$Then it is true for $n = k + 1$.
 4. **Conclusion**: By the principle of mathematical induction, the statement is true for all
- $n \ge 1$.
+   $n \ge 1$.
 
 :::info[Example]
 
@@ -860,18 +861,20 @@ $$
 
 Verify: $16 + 8 + 4 = 28$. And $S_\infty = 16/(1 - 1/2) = 32$. Correct.
 
-For the A-Level treatment of this topic, see [Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).
+For the A-Level treatment of this topic, see
+[Sequences and Series](https://alevel.wyattau.com/docs/maths/pure-mathematics/sequences-and-series).
 
 ---
 
-:::tip
-Tip
-Ready to test your understanding of **Sequences and Series**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-sequences-series) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Tip Ready to test your understanding of **Sequences and Series**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-sequences-series) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences and Series with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences
+and Series with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Common Pitfalls
 

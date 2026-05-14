@@ -1,7 +1,8 @@
 ---
 title: Functions and Equations
-description: "Rigorous IB mathematics notes covering Functions and Equations. Includes definitions, derivations, worked examples, and exam-style problems."
-  and equations.
+description:
+  'Rigorous IB mathematics notes covering Functions and Equations. Includes definitions,
+  derivations, worked examples, and exam-style problems. and equations.'
 slug: functions
 ---
 
@@ -19,13 +20,13 @@ Variable).
 
 ### Key Terminology
 
-| Term | Definition |
+| Term     | Definition                                 |
 | -------- | ------------------------------------------ |
-| Domain | Set of all valid inputs |
-| Codomain | Set of possible outputs |
-| Range | Set of actual outputs (subset of codomain) |
-| Argument | The input value, e.g., $x$ in $f(x)$ |
-| Image | The output for a given input |
+| Domain   | Set of all valid inputs                    |
+| Codomain | Set of possible outputs                    |
+| Range    | Set of actual outputs (subset of codomain) |
+| Argument | The input value, e.g., $x$ in $f(x)$       |
+| Image    | The output for a given input               |
 
 ### Vertical Line Test
 
@@ -115,7 +116,7 @@ $$
 (g \circ f)(x) = g(f(x)) = g(2x+1) = (2x+1)^2 = 4x^2 + 4x + 1
 $$
 
- $f \circ g \neq g \circ f$.
+$f \circ g \neq g \circ f$.
 
 :::
 
@@ -214,8 +215,8 @@ Restricted.
 
 :::info[Example]
 
-$f(x) = x^2$ is not one-to-one on $\mathbb{'\{'}R{'\}'}$But $f: [0, \infty) \to [0, \infty)$ defined by
-$f(x) = x^2$ has inverse $f^{-1}(x) = \sqrt{x}$.
+$f(x) = x^2$ is not one-to-one on $\mathbb{'\{'}R{'\}'}$But $f: [0, \infty) \to [0, \infty)$ defined
+by $f(x) = x^2$ has inverse $f^{-1}(x) = \sqrt{x}$.
 
 :::
 
@@ -227,18 +228,18 @@ $f(x) = x^2$ has inverse $f^{-1}(x) = \sqrt{x}$.
 
 Given $y = f(x)$:
 
-| Transformation | Effect on Graph | Equation |
+| Transformation                      | Effect on Graph               | Equation                           |
 | ----------------------------------- | ----------------------------- | ---------------------------------- |
-| Vertical translation up by $k$ | Moves up $k$ units | $y = f(x) + k$ |
-| Vertical translation down by $k$ | Moves down $k$ units | $y = f(x) - k$ |
-| Horizontal translation right by $h$ | Moves right $h$ units | $y = f(x - h)$ |
-| Horizontal translation left by $h$ | Moves left $h$ units | $y = f(x + h)$ |
-| Vertical stretch by factor $a$ | Stretches vertically by $a$ | $y = af(x)$ |
-| Vertical compression by factor $a$ | Compresses by $\dfrac{1}{a}$ | $y = af(x)$ where $0 \lt a \lt 1$ |
-| Horizontal stretch by factor $b$ | Stretches horizontally by $b$ | $y = f\!\left(\dfrac{x}{b}\right)$ |
-| Reflection in $x$-axis | Flips vertically | $y = -f(x)$ |
-| Reflection in $y$-axis | Flips horizontally | $y = f(-x)$ |
-| Reflection in $y = x$ | Swaps $x$ and $y$ | $y = f^{-1}(x)$ |
+| Vertical translation up by $k$      | Moves up $k$ units            | $y = f(x) + k$                     |
+| Vertical translation down by $k$    | Moves down $k$ units          | $y = f(x) - k$                     |
+| Horizontal translation right by $h$ | Moves right $h$ units         | $y = f(x - h)$                     |
+| Horizontal translation left by $h$  | Moves left $h$ units          | $y = f(x + h)$                     |
+| Vertical stretch by factor $a$      | Stretches vertically by $a$   | $y = af(x)$                        |
+| Vertical compression by factor $a$  | Compresses by $\dfrac{1}{a}$  | $y = af(x)$ where $0 \lt a \lt 1$  |
+| Horizontal stretch by factor $b$    | Stretches horizontally by $b$ | $y = f\!\left(\dfrac{x}{b}\right)$ |
+| Reflection in $x$-axis              | Flips vertically              | $y = -f(x)$                        |
+| Reflection in $y$-axis              | Flips horizontally            | $y = f(-x)$                        |
+| Reflection in $y = x$               | Swaps $x$ and $y$             | $y = f^{-1}(x)$                    |
 
 :::warning[Exam Tip]
 
@@ -275,7 +276,7 @@ The vertex moves from $(0, 0)$ to $(3, 1)$And the parabola is narrower.
 
 | Point on $y = f(x)$ | Point on $y = f(x-h)+k$ |
 | ------------------- | ----------------------- |
-| $(x, y)$ | $(x+h, y+k)$ |
+| $(x, y)$            | $(x+h, y+k)$            |
 
 ---
 
@@ -301,7 +302,7 @@ For rational functions $\dfrac{P(x)}{Q(x)}$:
 
 - If $\deg P \lt \deg Q$: horizontal asymptote at $y = 0$.
 - If $\deg P = \deg Q$: horizontal asymptote at
- $y = \dfrac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$.
+  $y = \dfrac{\mathrm{leading coefficient of } P}{\mathrm{leading coefficient of } Q}$.
 - If $\deg P = \deg Q + 1$: oblique asymptote (found by polynomial division).
 
 :::info[Example]
@@ -314,7 +315,8 @@ Find the asymptotes of $\displaystyle f(x) = \frac{2x + 1}{x - 3}$.
 
 :::
 
-<DesmosGraph title="Function Graphing: Domain, Range, Asymptotes" expressions={["\frac{1}{x}", "x^2", "2^x", "\ln(x)"]} width={800} height={500} />
+<DesmosGraph title="Function Graphing: Domain, Range, Asymptotes" expressions={["\frac{1}{x}",
+"x^2", "2^x", "\ln(x)"]} width={800} height={500} />
 
 Use the sliders to adjust parameters and observe how the domain, range, and asymptotic behaviour
 Change.
@@ -676,16 +678,16 @@ From (2): $b = -10$.
 
 ## Summary
 
-| Concept | Key Point |
-| ------------------ | ------------------------------------------------- |
-| Composite function | $(f \circ g)(x) = f(g(x))$; order matters |
-| Inverse function | Reflect in $y = x$; swap domain/range |
-| Vertical shift | $y = f(x) + k$ moves up by $k$ |
-| Horizontal shift | $y = f(x - h)$ moves right by $h$ |
-| Factor theorem | $(x-a)$ factor $\iff P(a) = 0$ |
-| Remainder theorem | Remainder of $P(x) \div (x-a)$ is $P(a)$ |
-| Even function | $f(-x) = f(x)$Symmetric about $y$-axis |
-| Odd function | $f(-x) = -f(x)$Rotational symmetry about origin |
+| Concept            | Key Point                                       |
+| ------------------ | ----------------------------------------------- |
+| Composite function | $(f \circ g)(x) = f(g(x))$; order matters       |
+| Inverse function   | Reflect in $y = x$; swap domain/range           |
+| Vertical shift     | $y = f(x) + k$ moves up by $k$                  |
+| Horizontal shift   | $y = f(x - h)$ moves right by $h$               |
+| Factor theorem     | $(x-a)$ factor $\iff P(a) = 0$                  |
+| Remainder theorem  | Remainder of $P(x) \div (x-a)$ is $P(a)$        |
+| Even function      | $f(-x) = f(x)$Symmetric about $y$-axis          |
+| Odd function       | $f(-x) = -f(x)$Rotational symmetry about origin |
 
 :::tip[Exam Strategy]
 
@@ -821,7 +823,8 @@ Continuous at $x = 2$.
 
 ### Question 6 (Paper 2 style)
 
-The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb{'\{'}R{'\}'}$$x \neq 1$.
+The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for
+$x \in \mathbb{'\{'}R{'\}'}$$x \neq 1$.
 
 **(a)** Find the inverse function $f^{-1}$.
 
@@ -908,18 +911,20 @@ Case 3 ($x \gt 2.5$): $h(x) = (2x-5) + (x+1) = 3x - 4$. Minimum at $x = 2.5$: $h
 
 Minimum value is $3.5$ at $x = 2.5$.
 
-For the A-Level treatment of this topic, see [Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).
+For the A-Level treatment of this topic, see
+[Functions](https://alevel.wyattau.com/docs/maths/pure-mathematics/functions).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Functions and Equations**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-functions-equations) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Functions and Equations**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-functions-equations) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions and Equations with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions
+and Equations with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Common Pitfalls
 

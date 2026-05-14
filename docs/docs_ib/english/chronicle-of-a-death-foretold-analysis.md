@@ -1,11 +1,13 @@
 ---
 title: Chronicle of a Death Foretold — Close Reading and Analysis
 tags:
-- IB
-- English
+  - IB
+  - English
 slug: chronicle-of-a-death-foretold-analysis
-description: "Rigorous IB English notes covering Chronicle of a Death Foretold  Close Rea. Includes definitions, derivations, worked examples, and exam-style problems."
-  and analysis for the International Baccalaureate.
+description:
+  'Rigorous IB English notes covering Chronicle of a Death Foretold  Close Rea. Includes
+  definitions, derivations, worked examples, and exam-style problems. and analysis for the
+  International Baccalaureate.'
 ---
 
 # Chronicle of a Death Foretold: Close Reading and Analysis
@@ -300,8 +302,8 @@ The most disturbing aspect of _Chronicle of a Death Foretold_ is not the murder 
 Collective failure to prevent it. Virtually every adult in the town knows that the Vicario brothers
 Intend to kill Santiago Nasar. The butcher, the priest, the shopkeeper, the neighbours -- all are
 Informed, and all fail to act effectively. Some assume someone else will intervene. Some do not
-Believe the twins are serious. Some are indifferent. The result is a catastrophe of
-Collective negligence that the narrator, twenty-seven years later, is still trying to understand.
+Believe the twins are serious. Some are indifferent. The result is a catastrophe of Collective
+negligence that the narrator, twenty-seven years later, is still trying to understand.
 
 Garcia Marquez's depiction of the town is a study in the banality of evil. The townspeople are not
 Villains; they are ordinary people who, through a combination of inertia, conformity, and moral
@@ -835,10 +837,8 @@ Single, objective truth.
 
 ## Exam Preparation: Key Quotations and Discussion Points
 
-:::info
-The following passages are recommended for close study. In the IB English examination, the
-Ability to analyse specific textual detail is essential.
-:::
+:::info The following passages are recommended for close study. In the IB English examination, the
+Ability to analyse specific textual detail is essential. :::
 
 **Opening sentence:** "On the day they were going to kill him, Santiago Nasar got up at five-thirty
 In the morning to wait for the boat the bishop was coming on."
@@ -883,26 +883,36 @@ Carrying all the letters unopened suggests that the act of writing, rather than 
 Is the true vehicle of meaning: the letters are a testament to desire, not a vehicle for
 Information.
 
-:::tip
-When writing an IB essay on this novel, consider structuring your argument around a specific
+:::tip When writing an IB essay on this novel, consider structuring your argument around a specific
 Literary feature (narrative structure, imagery, irony) and tracing its operation across multiple
 Passages. Avoid plot summary; instead, analyse specific textual details and explain how they
-Contribute to the novel's overall meaning.
+Contribute to the novel's overall meaning. :::
+
+:::danger Common Pitfalls
+
+- **Treating the narrative structure as straightforward chronology:** The novel opens with the
+  announcement of Santiago Nasar's death and then works backward and forward in time. Students often
+  write essays that describe events in chronological order, missing Marquez's deliberate non-linear
+  structure. The fragmented timeline is essential to the novel's themes of collective guilt and
+  unreliable memory.
+
+- **Presenting the town's complicity as simple neglect:** The townspeople's failure to warn Santiago
+  is not mere negligence -- it involves a complex web of cultural honour codes (Angela's brothers
+  seeking revenge), practical obstacles (the bishop's boat), and wilful self-deception (people
+  assuming someone else would act). A superficial reading misses this layered culpability.
+
+- **Overlooking the role of fate and determinism:** The numerous omens and forewarnings (dreams, the
+  weather, the note under the door) create a sense of inevitability. However, Marquez also shows
+  that the tragedy was ENTIRELY preventable -- the fatalism coexists with human free will. A good
+  essay addresses this paradox rather than choosing one interpretation.
+
+- **Ignoring the novel's journalistic style:** Marquez blends journalism with magical realism. The
+  precise, factual tone of the narrator (who claims to have reconstructed events from testimony)
+  contrasts with the implausible coincidences and gaps in collective memory. Students who do not
+  discuss this narrative voice miss a key literary technique.
+
 :::
 
-
-:::danger
-Common Pitfalls
-
-- **Treating the narrative structure as straightforward chronology:** The novel opens with the announcement of Santiago Nasar's death and then works backward and forward in time. Students often write essays that describe events in chronological order, missing Marquez's deliberate non-linear structure. The fragmented timeline is essential to the novel's themes of collective guilt and unreliable memory.
-
-- **Presenting the town's complicity as simple neglect:** The townspeople's failure to warn Santiago is not mere negligence -- it involves a complex web of cultural honour codes (Angela's brothers seeking revenge), practical obstacles (the bishop's boat), and wilful self-deception (people assuming someone else would act). A superficial reading misses this layered culpability.
-
-- **Overlooking the role of fate and determinism:** The numerous omens and forewarnings (dreams, the weather, the note under the door) create a sense of inevitability. However, Marquez also shows that the tragedy was ENTIRELY preventable -- the fatalism coexists with human free will. A good essay addresses this paradox rather than choosing one interpretation.
-
-- **Ignoring the novel's journalistic style:** Marquez blends journalism with magical realism. The precise, factual tone of the narrator (who claims to have reconstructed events from testimony) contrasts with the implausible coincidences and gaps in collective memory. Students who do not discuss this narrative voice miss a key literary technique.
-
-:::
 ## Sample Essay Questions
 
 The following questions are modelled on the types of prompts that appear in IB English A Paper 2 and
@@ -939,24 +949,24 @@ For IB students studying _Chronicle of a Death Foretold_ as part of a comparativ
 Following pairings are especially productive:
 
 - **Chronicle of a Death Foretold and _Othello_ (Shakespeare):** Both texts explore the destructive
- consequences of jealousy, honour, and the manipulation of truth. Iago's insinuations and the
- town's gossip serve analogous functions as mechanisms of destruction that operate through language
- rather than direct action.
+  consequences of jealousy, honour, and the manipulation of truth. Iago's insinuations and the
+  town's gossip serve analogous functions as mechanisms of destruction that operate through language
+  rather than direct action.
 
 - **Chronicle of a Death Foretold and _Things Fall Apart_ (Achebe):** Both texts depict societies in
- which communal codes of honour and masculinity produce violence. Okonkwo's adherence to the code
- of strength and the Vicario twins' adherence to the code of honour are parallel expressions of a
- masculine identity that is defined by its capacity for violence.
+  which communal codes of honour and masculinity produce violence. Okonkwo's adherence to the code
+  of strength and the Vicario twins' adherence to the code of honour are parallel expressions of a
+  masculine identity that is defined by its capacity for violence.
 
 - **Chronicle of a Death Foretold and _The Great Gatsby_ (Fitzgerald):** Both texts explore the
- relationship between desire, social class, and destruction. Bayardo San Roman's pursuit of Angela
- Vicario echoes Gatsby's pursuit of Daisy Buchanan: in both cases, the object of desire is less a
- person than a symbol of social aspiration.
+  relationship between desire, social class, and destruction. Bayardo San Roman's pursuit of Angela
+  Vicario echoes Gatsby's pursuit of Daisy Buchanan: in both cases, the object of desire is less a
+  person than a symbol of social aspiration.
 
 - **Chronicle of a Death Foretold and _Blood Wedding_ (Lorca):** Both texts treat honour killing as
- a ritualistic act embedded in a rural, traditional community. Lorca's play, like Garcia Marquez's
- novel, uses non-realist elements (song, symbolism, dream sequences) to explore the psychological
- and social dimensions of honour violence.
+  a ritualistic act embedded in a rural, traditional community. Lorca's play, like Garcia Marquez's
+  novel, uses non-realist elements (song, symbolism, dream sequences) to explore the psychological
+  and social dimensions of honour violence.
 
 ---
 
@@ -964,14 +974,14 @@ Following pairings are especially productive:
 
 - Minta, Stephen. _Gabriel Garcia Marquez: Writer of Colombia_. London: Jonathan Cape, 1987.
 - Wood, Michael. _Gabriel Garcia Marquez: One Hundred Years of Solitude_. Cambridge: Cambridge
- University Press, 1990.
+  University Press, 1990.
 - Rabassa, Gregory. "How I Came to Translate Garcia Marquez." _Review of Contemporary Fiction_, vol.
- 13, no. 2, 1993, pp. 157-62.
+  13, no. 2, 1993, pp. 157-62.
 - Bell, Michael. _Gabriel Garcia Marquez: Solitude and Solidarity_. London: Macmillan, 1993.
 - Williams, Raymond Leslie. _The Colombian Novel, 1844-1987_. Austin: University of Texas
- Press, 1991.
+  Press, 1991.
 - Brushwood, John S. _The Spanish American Novel of the Twentieth Century_. Austin: University of
- Texas Press, 1975.
+  Texas Press, 1975.
 
 ## Common Pitfalls
 

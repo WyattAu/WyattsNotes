@@ -1,7 +1,8 @@
 ---
 title: Differentiation
-description: "Rigorous IB mathematics notes covering Differentiation. Includes definitions, derivations, worked examples, and exam-style problems."
-  exam-style problems.
+description:
+  'Rigorous IB mathematics notes covering Differentiation. Includes definitions, derivations, worked
+  examples, and exam-style problems. exam-style problems.'
 slug: differentiation-depth
 ---
 
@@ -42,14 +43,14 @@ Since the one-sided limits are not equal, the limit does not exist.
 
 :::
 
-| Limit | Value |
+| Limit                                                             | Value |
 | ----------------------------------------------------------------- | ----- |
-| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$ | $0$ |
-| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$ | $0$ |
-| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$ |
-| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$ | $1$ |
-| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$ | $1$ |
+| $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$                    | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x}$                | $0$   |
+| $\displaystyle\lim_{x \to \infty} \frac{1}{x}$                    | $0$   |
+| $\displaystyle\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$ | $e$   |
+| $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x}$                   | $1$   |
+| $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x}$                  | $1$   |
 
 ### The Squeeze Theorem
 
@@ -253,22 +254,22 @@ $$
 
 ## Derivatives of Standard Functions
 
-| $f(x)$ | $f'(x)$ |
+| $f(x)$      | $f'(x)$                    |
 | ----------- | -------------------------- |
-| $x^n$ | $nx^{n-1}$ |
-| $e^x$ | $e^x$ |
-| $a^x$ | $a^x \ln a$ |
-| $\ln x$ | $\dfrac{1}{x}$ |
-| $\log_a x$ | $\dfrac{1}{x \ln a}$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
-| $\tan x$ | $\sec^2 x$ |
-| $\csc x$ | $-\csc x \cot x$ |
-| $\sec x$ | $\sec x \tan x$ |
-| $\cot x$ | $-\csc^2 x$ |
-| $\arcsin x$ | $\dfrac{1}{\sqrt{1-x^2}}$ |
+| $x^n$       | $nx^{n-1}$                 |
+| $e^x$       | $e^x$                      |
+| $a^x$       | $a^x \ln a$                |
+| $\ln x$     | $\dfrac{1}{x}$             |
+| $\log_a x$  | $\dfrac{1}{x \ln a}$       |
+| $\sin x$    | $\cos x$                   |
+| $\cos x$    | $-\sin x$                  |
+| $\tan x$    | $\sec^2 x$                 |
+| $\csc x$    | $-\csc x \cot x$           |
+| $\sec x$    | $\sec x \tan x$            |
+| $\cot x$    | $-\csc^2 x$                |
+| $\arcsin x$ | $\dfrac{1}{\sqrt{1-x^2}}$  |
 | $\arccos x$ | $\dfrac{-1}{\sqrt{1-x^2}}$ |
-| $\arctan x$ | $\dfrac{1}{1+x^2}$ |
+| $\arctan x$ | $\dfrac{1}{1+x^2}$         |
 
 :::warning[Exam Tip]
 
@@ -335,8 +336,8 @@ $$
 
 ### Second Derivatives Implicitly
 
-To find $\dfrac{d^2y}{dx^2}$Differentiate $\dfrac{dy}{dx}$ again, remembering that
-$\dfrac{dy}{dx}$ is an expression in both $x$ and $y$.
+To find $\dfrac{d^2y}{dx^2}$Differentiate $\dfrac{dy}{dx}$ again, remembering that $\dfrac{dy}{dx}$
+is an expression in both $x$ and $y$.
 
 :::info[Example]
 
@@ -492,11 +493,11 @@ The normal is vertical: $x = 1$.
 
 A **stationary point** occurs where $f'(x) = 0$. There are three types:
 
-| Type | First Derivative Test | Second Derivative Test |
+| Type                | First Derivative Test        | Second Derivative Test            |
 | ------------------- | ---------------------------- | --------------------------------- |
-| Local maximum | $f'$ changes from $+$ to $-$ | $f''(x) \lt 0$ |
-| Local minimum | $f'$ changes from $-$ to $+$ | $f''(x) \gt 0$ |
-| Point of inflection | $f'$ does not change sign | $f''(x) = 0$ (inconclusive alone) |
+| Local maximum       | $f'$ changes from $+$ to $-$ | $f''(x) \lt 0$                    |
+| Local minimum       | $f'$ changes from $-$ to $+$ | $f''(x) \gt 0$                    |
+| Point of inflection | $f'$ does not change sign    | $f''(x) = 0$ (inconclusive alone) |
 
 :::warning[Exam Tip]
 
@@ -558,11 +559,11 @@ $$
 
 $f''(x) = 0$ when $x = 0$ or $x = 2$.
 
-| Interval | Sign of $f''$ | Concavity |
+| Interval        | Sign of $f''$ | Concavity    |
 | --------------- | ------------- | ------------ |
-| $x \lt 0$ | $+$ | Concave up |
-| $0 \lt x \lt 2$ | $-$ | Concave down |
-| $x \gt 2$ | $+$ | Concave up |
+| $x \lt 0$       | $+$           | Concave up   |
+| $0 \lt x \lt 2$ | $-$           | Concave down |
+| $x \gt 2$       | $+$           | Concave up   |
 
 Concavity changes at both $x = 0$ and $x = 2$So both are points of inflection.
 
@@ -855,40 +856,42 @@ The denominator $x^2 + 1 \neq 0$ for all real $x$So there are no vertical asympt
 
 ## Summary of Key Results
 
-| Concept | Formula |
+| Concept                | Formula                                                     |
 | ---------------------- | ----------------------------------------------------------- |
-| First principles | $\displaystyle f'(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ |
-| Power rule | $\dfrac{d}{dx}[x^n] = nx^{n-1}$ |
-| Product rule | $(uv)' = u'v + uv'$ |
-| Quotient rule | $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$ |
-| Chain rule | $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$ |
-| Tangent at $(a, f(a))$ | $y - f(a) = f'(a)(x - a)$ |
-| Normal gradient | $-\dfrac{1}{f'(a)}$ |
-| Increasing | $f'(x) \gt 0$ |
-| Decreasing | $f'(x) \lt 0$ |
-| Local max | $f'(a) = 0$$f''(a) \lt 0$ |
-| Local min | $f'(a) = 0$$f''(a) \gt 0$ |
+| First principles       | $\displaystyle f'(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ |
+| Power rule             | $\dfrac{d}{dx}[x^n] = nx^{n-1}$                             |
+| Product rule           | $(uv)' = u'v + uv'$                                         |
+| Quotient rule          | $\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}$       |
+| Chain rule             | $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$      |
+| Tangent at $(a, f(a))$ | $y - f(a) = f'(a)(x - a)$                                   |
+| Normal gradient        | $-\dfrac{1}{f'(a)}$                                         |
+| Increasing             | $f'(x) \gt 0$                                               |
+| Decreasing             | $f'(x) \lt 0$                                               |
+| Local max              | $f'(a) = 0$$f''(a) \lt 0$                                   |
+| Local min              | $f'(a) = 0$$f''(a) \gt 0$                                   |
 
 :::tip[Exam Strategy]
 
-For Paper 2 differentiation questions, always show your working . State which rule you are
-Using (product, quotient, chain) and lay out the substitution. Examiners award method marks for
-Correct application of rules even if arithmetic errors occur later.
+For Paper 2 differentiation questions, always show your working . State which rule you are Using
+(product, quotient, chain) and lay out the substitution. Examiners award method marks for Correct
+application of rules even if arithmetic errors occur later.
 
 :::
 
-For the A-Level treatment of this topic, see [Differentiation](https://alevel.wyattau.com/docs/maths/pure-mathematics/differentiation).
+For the A-Level treatment of this topic, see
+[Differentiation](https://alevel.wyattau.com/docs/maths/pure-mathematics/differentiation).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Differentiation**? The [diagnostic test](/docs/ib/maths/diagnostics/diag-differentiation) contains the hardest questions within the IB specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Differentiation**? The
+[diagnostic test](/docs/ib/maths/diagnostics/diag-differentiation) contains the hardest questions
+within the IB specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Differentiation with other IB mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Differentiation with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+and building a personal test matrix. :::
 
 ## Common Pitfalls
 

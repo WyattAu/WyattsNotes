@@ -1,11 +1,12 @@
 ---
 title: Chemical Bonding and Structure
 tags:
-- Chemistry
-- IB
+  - Chemistry
+  - IB
 slug: chemical-bonding-and-structure
-description: "Rigorous IB chemistry notes covering Chemical Bonding and Structure. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB chemistry notes covering Chemical Bonding and Structure. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Introduction
@@ -18,11 +19,11 @@ Sits in an energy well. The depth of that well is the bond enthalpy.
 
 There are three broad categories of chemical bonding:
 
-| Bond Type | Mechanism | Typical Participants | Directionality |
+| Bond Type | Mechanism                 | Typical Participants  | Directionality  |
 | --------- | ------------------------- | --------------------- | --------------- |
-| Ionic | Electron transfer | Metal + non-metal | Non-directional |
-| Covalent | Electron sharing | Non-metal + non-metal | Directional |
-| Metallic | Delocalised electron pool | Metal atoms | Non-directional |
+| Ionic     | Electron transfer         | Metal + non-metal     | Non-directional |
+| Covalent  | Electron sharing          | Non-metal + non-metal | Directional     |
+| Metallic  | Delocalised electron pool | Metal atoms           | Non-directional |
 
 Beyond intramolecular bonds, **intermolecular forces** govern how molecules interact with each
 Other. These are weaker by one to two orders of magnitude but are critical for determining physical
@@ -70,17 +71,17 @@ $$
 \Delta H_{\mathrm{LE}} \propto -\frac{|z^+| \cdot |z^-|}{r_+ + r_-}
 $$
 
-| Factor | Effect on Lattice Energy | Example |
+| Factor            | Effect on Lattice Energy | Example                          |
 | ----------------- | ------------------------ | -------------------------------- |
 | Higher ion charge | More negative (stronger) | $\mathrm{MgO} \gt \mathrm{NaCl}$ |
-| Smaller ion radii | More negative (stronger) | $\mathrm{LiF} \gt \mathrm{NaF}$ |
+| Smaller ion radii | More negative (stronger) | $\mathrm{LiF} \gt \mathrm{NaF}$  |
 
-| Compound | z⁺ | z⁻ | r⁺ + r⁻ (pm) | Lattice Energy (kJ/mol) |
+| Compound | z⁺  | z⁻  | r⁺ + r⁻ (pm) | Lattice Energy (kJ/mol) |
 | -------- | --- | --- | ------------ | ----------------------- |
-| NaCl | +1 | -1 | 276 | -787 |
-| MgO | +2 | -2 | 210 | -3795 |
-| LiF | +1 | -1 | 201 | -1036 |
-| CaO | +2 | -2 | 241 | -3414 |
+| NaCl     | +1  | -1  | 276          | -787                    |
+| MgO      | +2  | -2  | 210          | -3795                   |
+| LiF      | +1  | -1  | 201          | -1036                   |
+| CaO      | +2  | -2  | 241          | -3414                   |
 
 ### The Born-Haber Cycle
 
@@ -120,25 +121,25 @@ The terminology matters.
 
 ### Physical Properties of Ionic Compounds
 
-| Property | Explanation |
+| Property                                   | Explanation                                                                              |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| High melting/boiling point | Strong electrostatic forces in the lattice require large energy input to break |
-| Brittle | Shifting one layer of ions places like charges adjacent, causing repulsion and fracture |
+| High melting/boiling point                 | Strong electrostatic forces in the lattice require large energy input to break           |
+| Brittle                                    | Shifting one layer of ions places like charges adjacent, causing repulsion and fracture  |
 | Conduct electricity when molten or aqueous | Ions are free to move and carry charge; in the solid state ions are fixed in the lattice |
-| Soluble in polar solvents | Polar water molecules can surround and stabilise individual ions (solvation/hydration) |
+| Soluble in polar solvents                  | Polar water molecules can surround and stabilise individual ions (solvation/hydration)   |
 
 ### Solubility Rules
 
-| Ion Group | Solubility Pattern |
-| ---------------------------- | -------------------------------------------------------------- |
-| Group 1 cations, NH$_4^+$ | Always soluble |
-| Nitrates (NO$_3^-$) | Always soluble |
-| Acetates (CH$_3$COO$^-$) | Always soluble |
-| Chlorides, bromides, iodides | Soluble except with Ag$^+$Pb$^{2+}$Hg$_2^{2+}$ |
-| Sulfates (SO$_4^{2-}$) | Soluble except with Ba$^{2+}$Pb$^{2+}$Ca$^{2+}$ (slightly) |
-| Hydroxides (OH$^-$) | Insoluble except with Group 1, Ba$^{2+}$Ca$^{2+}$ (slightly) |
-| Carbonates (CO$_3^{2-}$) | Insoluble except with Group 1, NH$_4^+$ |
-| Phosphates (PO$_4^{3-}$) | Insoluble except with Group 1, NH$_4^+$ |
+| Ion Group                    | Solubility Pattern                                           |
+| ---------------------------- | ------------------------------------------------------------ |
+| Group 1 cations, NH$_4^+$    | Always soluble                                               |
+| Nitrates (NO$_3^-$)          | Always soluble                                               |
+| Acetates (CH$_3$COO$^-$)     | Always soluble                                               |
+| Chlorides, bromides, iodides | Soluble except with Ag$^+$Pb$^{2+}$Hg$_2^{2+}$               |
+| Sulfates (SO$_4^{2-}$)       | Soluble except with Ba$^{2+}$Pb$^{2+}$Ca$^{2+}$ (slightly)   |
+| Hydroxides (OH$^-$)          | Insoluble except with Group 1, Ba$^{2+}$Ca$^{2+}$ (slightly) |
+| Carbonates (CO$_3^{2-}$)     | Insoluble except with Group 1, NH$_4^+$                      |
+| Phosphates (PO$_4^{3-}$)     | Insoluble except with Group 1, NH$_4^+$                      |
 
 ---
 
@@ -157,7 +158,7 @@ Rules for drawing Lewis structures:
 4. Complete the octets of terminal atoms first.
 5. Place any remaining electrons on the central atom.
 6. If the central atom lacks an octet, form double or triple bonds by converting lone pairs on
- terminal atoms into bonding pairs.
+   terminal atoms into bonding pairs.
 
 :::warning[Common Mistake]
 
@@ -168,10 +169,10 @@ With 6. Do not force an octet on these atoms.
 
 ### Exceptions to the Octet Rule
 
-| Element | Reason | Example |
-| ------------ | --------------------------------------------- | ------------------------ |
-| Be | Only 4 valence electrons available | BeCl$_2$ |
-| B | Only 6 valence electrons in stable compounds | BF$_3$ |
+| Element      | Reason                                        | Example              |
+| ------------ | --------------------------------------------- | -------------------- |
+| Be           | Only 4 valence electrons available            | BeCl$_2$             |
+| B            | Only 6 valence electrons in stable compounds  | BF$_3$               |
 | P, S, Cl, Xe | Can expand octet using d-orbitals (period 3+) | PCl$_5$SF$_6$XeF$_4$ |
 
 ### Sigma and Pi Bonds
@@ -182,14 +183,14 @@ Orbitals. Electron density is concentrated along the internuclear axis.
 **Definition.** A **pi bond** ($\pi$) is formed by side-to-side (lateral) overlap of parallel
 P-orbitals. Electron density is concentrated above and below the internuclear axis.
 
-| Feature | Sigma Bond | Pi Bond |
+| Feature          | Sigma Bond                   | Pi Bond                      |
 | ---------------- | ---------------------------- | ---------------------------- |
-| Orbital overlap | Head-on | Side-to-side |
-| Electron density | Along internuclear axis | Above and below the axis |
-| Rotation | Free rotation about the bond | No rotation (locks the bond) |
-| Strength | Stronger | Weaker |
-| First bond | Always sigma | Never pi |
-| Additional | Can exist alone | Only with an existing sigma |
+| Orbital overlap  | Head-on                      | Side-to-side                 |
+| Electron density | Along internuclear axis      | Above and below the axis     |
+| Rotation         | Free rotation about the bond | No rotation (locks the bond) |
+| Strength         | Stronger                     | Weaker                       |
+| First bond       | Always sigma                 | Never pi                     |
+| Additional       | Can exist alone              | Only with an existing sigma  |
 
 A single bond = 1 sigma. A double bond = 1 sigma + 1 pi. A triple bond = 1 sigma + 2 pi.
 
@@ -202,29 +203,29 @@ The Pauling scale assigns fluorine (the most electronegative element) a value of
 
 | Element | Electronegativity (Pauling) |
 | ------- | --------------------------- |
-| F | 4.0 |
-| O | 3.5 |
-| N, Cl | 3.0 |
-| C | 2.5 |
-| S | 2.6 |
-| P | 2.2 |
-| H | 2.2 |
-| Na, K | 0.9, 0.8 |
+| F       | 4.0                         |
+| O       | 3.5                         |
+| N, Cl   | 3.0                         |
+| C       | 2.5                         |
+| S       | 2.6                         |
+| P       | 2.2                         |
+| H       | 2.2                         |
+| Na, K   | 0.9, 0.8                    |
 
 ### Electronegativity Trends
 
 - **Across a period (left to right):** Increases. Nuclear charge increases with constant shielding,
- pulling electron density in.
+  pulling electron density in.
 - **Down a group:** Decreases. Shielding increases and atomic radius increases, reducing the
- nucleus-electron attraction.
+  nucleus-electron attraction.
 
 ### Classifying Bond Type by Electronegativity Difference
 
-| $\Delta\mathrm{EN}$ | Bond Classification |
+| $\Delta\mathrm{EN}$ | Bond Classification   |
 | ------------------- | --------------------- |
-| 0.0 | Non-polar covalent |
-| 0.1 -- 1.7 | Polar covalent |
-| $\gt 1.7$ | Ionic (predominantly) |
+| 0.0                 | Non-polar covalent    |
+| 0.1 -- 1.7          | Polar covalent        |
+| $\gt 1.7$           | Ionic (predominantly) |
 
 :::info[IB Exam Tip]
 
@@ -247,12 +248,12 @@ $$
 \vec{\mu}_{\mathrm{net}} = \sum \vec{\mu}_i
 $$
 
-| Molecule | Bond Dipoles | Molecular Dipole | Reason |
+| Molecule | Bond Dipoles | Molecular Dipole | Reason                               |
 | -------- | ------------ | ---------------- | ------------------------------------ |
-| CO$_2$ | Present | Zero | Linear geometry, dipoles cancel |
-| H$_2$O | Present | Present | Bent geometry, dipoles do not cancel |
-| CCl$_4$ | Present | Zero | Tetrahedral symmetry, cancellation |
-| CHCl$_3$ | Present | Present | Asymmetric substitution |
+| CO$_2$   | Present      | Zero             | Linear geometry, dipoles cancel      |
+| H$_2$O   | Present      | Present          | Bent geometry, dipoles do not cancel |
+| CCl$_4$  | Present      | Zero             | Tetrahedral symmetry, cancellation   |
+| CHCl$_3$ | Present      | Present          | Asymmetric substitution              |
 
 ---
 
@@ -266,39 +267,39 @@ Attraction to this delocalised electron pool.
 
 This model explains the key properties of metals:
 
-| Property | Explanation |
+| Property                   | Explanation                                                                  |
 | -------------------------- | ---------------------------------------------------------------------------- |
-| High melting points | Strong metallic bonding throughout the lattice |
-| Electrical conductivity | Delocalised electrons are free to move under an applied potential |
-| Malleability and ductility | Layers of cations can slide past each other without breaking metallic bonds |
-| Thermal conductivity | Delocalised electrons transfer kinetic energy efficiently |
-| Lustrous appearance | Delocalised electrons absorb and re-emit photons across the visible spectrum |
-| Alloy formation | Atoms of different sizes distort the lattice, preventing layer sliding |
+| High melting points        | Strong metallic bonding throughout the lattice                               |
+| Electrical conductivity    | Delocalised electrons are free to move under an applied potential            |
+| Malleability and ductility | Layers of cations can slide past each other without breaking metallic bonds  |
+| Thermal conductivity       | Delocalised electrons transfer kinetic energy efficiently                    |
+| Lustrous appearance        | Delocalised electrons absorb and re-emit photons across the visible spectrum |
+| Alloy formation            | Atoms of different sizes distort the lattice, preventing layer sliding       |
 
 ### Factors Affecting Metallic Bond Strength
 
-| Factor | Effect | Example |
+| Factor                      | Effect                                     | Example     |
 | --------------------------- | ------------------------------------------ | ----------- |
 | Number of valence electrons | More delocalised electrons = stronger bond | Al $\gt$ Na |
-| Nuclear charge | Higher charge = stronger attraction | Ca $\gt$ K |
-| Ionic radius | Smaller radius = stronger bond | Mg $\gt$ Ca |
+| Nuclear charge              | Higher charge = stronger attraction        | Ca $\gt$ K  |
+| Ionic radius                | Smaller radius = stronger bond             | Mg $\gt$ Ca |
 
-| Metal | Melting Point ($\degree$C) | Reason |
+| Metal | Melting Point ($\degree$C) | Reason                               |
 | ----- | -------------------------- | ------------------------------------ |
-| Na | 98 | 1 valence electron, large radius |
-| Mg | 650 | 2 valence electrons |
-| Al | 660 | 3 valence electrons |
-| W | 3422 | Many valence electrons, small radius |
+| Na    | 98                         | 1 valence electron, large radius     |
+| Mg    | 650                        | 2 valence electrons                  |
+| Al    | 660                        | 3 valence electrons                  |
+| W     | 3422                       | Many valence electrons, small radius |
 
 ### Alloys
 
 **Definition.** An **alloy** is a homogeneous mixture of two or more elements, at least one of which
 Is a metal.
 
-| Alloy Type | Description | Effect on Properties |
+| Alloy Type     | Description                                             | Effect on Properties                                       |
 | -------------- | ------------------------------------------------------- | ---------------------------------------------------------- |
 | Substitutional | Atoms of similar size replace host atoms in the lattice | Distorts lattice, increases hardness, reduces malleability |
-| Interstitial | Small atoms (C, N) fit into gaps in the lattice | Blocks dislocation movement, increases hardness |
+| Interstitial   | Small atoms (C, N) fit into gaps in the lattice         | Blocks dislocation movement, increases hardness            |
 
 Steel is an interstitial alloy of iron with carbon. Brass is a substitutional alloy of copper and
 Zinc.
@@ -312,12 +313,12 @@ Intramolecular bonds ( 2--50 kJ/mol vs 150--1000 kJ/mol for covalent bonds).
 
 ### Types of Intermolecular Forces
 
-| IMF Type | Strength (kJ/mol) | Mechanism | Present In |
+| IMF Type          | Strength (kJ/mol) | Mechanism                                        | Present In                        |
 | ----------------- | ----------------- | ------------------------------------------------ | --------------------------------- |
-| London dispersion | 0.05 -- 40 | Temporary dipole from electron cloud fluctuation | All molecules |
-| Dipole-dipole | 5 -- 20 | Permanent dipole-dipole attraction | Polar molecules |
-| Hydrogen bonding | 10 -- 40 | H bonded to N, O, or F attracted to lone pair | Molecules with N-H, O-H, or F-H |
-| Ion-dipole | 10 -- 50 | Ion interacts with molecular dipole | Ionic compounds in polar solvents |
+| London dispersion | 0.05 -- 40        | Temporary dipole from electron cloud fluctuation | All molecules                     |
+| Dipole-dipole     | 5 -- 20           | Permanent dipole-dipole attraction               | Polar molecules                   |
+| Hydrogen bonding  | 10 -- 40          | H bonded to N, O, or F attracted to lone pair    | Molecules with N-H, O-H, or F-H   |
+| Ion-dipole        | 10 -- 50          | Ion interacts with molecular dipole              | Ionic compounds in polar solvents |
 
 ### London Dispersion Forces
 
@@ -330,11 +331,11 @@ Factors affecting London dispersion force strength:
 1. **Number of electrons:** More electrons = larger electron cloud = stronger temporary dipoles.
 2. **Molecular shape (surface area):** Larger contact area between molecules = stronger forces.
 
-| Molecule | Electrons | Boiling Point ($\degree$C) | Reason |
+| Molecule     | Electrons | Boiling Point ($\degree$C) | Reason                       |
 | ------------ | --------- | -------------------------- | ---------------------------- |
-| CH$_4$ | 10 | -161 | Few electrons, small surface |
-| C$_2$H$_6$ | 18 | -89 | More electrons |
-| C$_4$H\_{10} | 50 | -1 | Many more electrons |
+| CH$_4$       | 10        | -161                       | Few electrons, small surface |
+| C$_2$H$_6$   | 18        | -89                        | More electrons               |
+| C$_4$H\_{10} | 50        | -1                         | Many more electrons          |
 
 ### Dipole-Dipole Forces
 
@@ -355,13 +356,13 @@ Requirements:
 - A hydrogen atom bonded to N, O, or F.
 - A lone pair on an N, O, or F atom on a neighbouring molecule.
 
-| Substance | Boiling Point ($\degree$C) | Why so high? |
+| Substance | Boiling Point ($\degree$C) | Why so high?                          |
 | --------- | -------------------------- | ------------------------------------- |
-| H$_2$O | 100 | Extensive hydrogen bonding network |
-| HF | 20 | Strong H-bonds (1 per molecule) |
-| NH$_3$ | -33 | Fewer H-bonds per molecule |
-| H$_2$S | -60 | No hydrogen bonding (S not EN enough) |
-| CH$_4$ | -161 | Only London dispersion forces |
+| H$_2$O    | 100                        | Extensive hydrogen bonding network    |
+| HF        | 20                         | Strong H-bonds (1 per molecule)       |
+| NH$_3$    | -33                        | Fewer H-bonds per molecule            |
+| H$_2$S    | -60                        | No hydrogen bonding (S not EN enough) |
+| CH$_4$    | -161                       | Only London dispersion forces         |
 
 :::info[IB Exam Tip]
 
@@ -387,19 +388,19 @@ For comparing boiling points of similar molecules:
 1. Check for hydrogen bonding first (dominant IMF).
 2. Among non-H-bonding molecules, compare dipole-dipole vs London dispersion.
 3. For non-polar molecules, boiling point increases with molar mass (more electrons = stronger
- London forces).
+   London forces).
 4. For isomers, the more branched isomer has a lower boiling point (smaller surface area).
 
 ### Effect of IMF on Physical Properties
 
-| Property | Strong IMF | Weak IMF |
+| Property        | Strong IMF | Weak IMF |
 | --------------- | ---------- | -------- |
-| Melting point | High | Low |
-| Boiling point | High | Low |
-| Vapour pressure | Low | High |
-| Viscosity | High | Low |
-| Surface tension | High | Low |
-| Volatility | Low | High |
+| Melting point   | High       | Low      |
+| Boiling point   | High       | Low      |
+| Vapour pressure | Low        | High     |
+| Viscosity       | High       | Low      |
+| Surface tension | High       | Low      |
+| Volatility      | Low        | High     |
 
 ---
 
@@ -432,28 +433,28 @@ Are constrained between two nuclei.
 
 The base geometries depend on the total number of electron domains ($n + m$):
 
-| Total Domains | Base Geometry | Bond Angles |
-| ------------- | -------------------- | ------------------------- |
-| 2 | Linear | 180$\degree$ |
-| 3 | Trigonal planar | 120$\degree$ |
-| 4 | Tetrahedral | 109.5$\degree$ |
-| 5 | Trigonal bipyramidal | 90$\degree$120$\degree$ |
-| 6 | Octahedral | 90$\degree$ |
+| Total Domains | Base Geometry        | Bond Angles             |
+| ------------- | -------------------- | ----------------------- |
+| 2             | Linear               | 180$\degree$            |
+| 3             | Trigonal planar      | 120$\degree$            |
+| 4             | Tetrahedral          | 109.5$\degree$          |
+| 5             | Trigonal bipyramidal | 90$\degree$120$\degree$ |
+| 6             | Octahedral           | 90$\degree$             |
 
 ### Molecular Shapes and Examples
 
 #### 2 Electron Domains
 
-| Notation | Shape | Bond Angle | Example |
-| -------- | ------ | ------------ | ---------------- |
-| AX$_2$ | Linear | 180$\degree$ | CO$_2$BeCl$_2$ |
+| Notation | Shape  | Bond Angle   | Example        |
+| -------- | ------ | ------------ | -------------- |
+| AX$_2$   | Linear | 180$\degree$ | CO$_2$BeCl$_2$ |
 
 #### 3 Electron Domains
 
-| Notation | Shape | Bond Angle | Example |
-| -------- | --------------- | ---------------- | ---------------- |
-| AX$_3$ | Trigonal planar | 120$\degree$ | BF$_3$AlCl$_3$ |
-| AX$_2$E | Bent/V-shaped | $\lt 120\degree$ | SO$_2$O$_3$ |
+| Notation | Shape           | Bond Angle       | Example        |
+| -------- | --------------- | ---------------- | -------------- |
+| AX$_3$   | Trigonal planar | 120$\degree$     | BF$_3$AlCl$_3$ |
+| AX$_2$E  | Bent/V-shaped   | $\lt 120\degree$ | SO$_2$O$_3$    |
 
 :::warning[Common Mistake]
 
@@ -464,28 +465,28 @@ Students often forget that lone pairs repel more strongly, so AX$_2$E has a bond
 
 #### 4 Electron Domains
 
-| Notation | Shape | Bond Angle | Example |
-| ----------- | ------------------ | ------------------ | --------------- |
-| AX$_4$ | Tetrahedral | 109.5$\degree$ | CH$_4$CCl$_4$ |
-| AX$_3$E | Trigonal pyramidal | $\lt 109.5\degree$ | NH$_3$PCl$_3$ |
-| AX$_2$E$_2$ | Bent | $\lt 109.5\degree$ | H$_2$O, H$_2$S |
+| Notation    | Shape              | Bond Angle         | Example        |
+| ----------- | ------------------ | ------------------ | -------------- |
+| AX$_4$      | Tetrahedral        | 109.5$\degree$     | CH$_4$CCl$_4$  |
+| AX$_3$E     | Trigonal pyramidal | $\lt 109.5\degree$ | NH$_3$PCl$_3$  |
+| AX$_2$E$_2$ | Bent               | $\lt 109.5\degree$ | H$_2$O, H$_2$S |
 
 | Molecule | Measured Angle | Deviation from 109.5$\degree$ |
 | -------- | -------------- | ----------------------------- |
-| CH$_4$ | 109.5$\degree$ | 0$\degree$ |
-| NH$_3$ | 107.0$\degree$ | -2.5$\degree$ |
-| H$_2$O | 104.5$\degree$ | -5.0$\degree$ |
+| CH$_4$   | 109.5$\degree$ | 0$\degree$                    |
+| NH$_3$   | 107.0$\degree$ | -2.5$\degree$                 |
+| H$_2$O   | 104.5$\degree$ | -5.0$\degree$                 |
 
 The increasing deviation reflects the increasing number of lone pairs compressing the bonding pairs.
 
 #### 5 Electron Domains
 
-| Notation | Shape | Bond Angles | Example |
-| ----------- | -------------------- | --------------------------------- | ------- |
-| AX$_5$ | Trigonal bipyramidal | 90$\degree$120$\degree$ | PCl$_5$ |
-| AX$_4$E | Seesaw | $\lt 90\degree$$\lt 120\degree$ | SF$_4$ |
-| AX$_3$E$_2$ | T-shaped | $\lt 90\degree$ | ClF$_3$ |
-| AX$_2$E$_3$ | Linear | 180$\degree$ | XeF$_2$ |
+| Notation    | Shape                | Bond Angles                     | Example |
+| ----------- | -------------------- | ------------------------------- | ------- |
+| AX$_5$      | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
+| AX$_4$E     | Seesaw               | $\lt 90\degree$$\lt 120\degree$ | SF$_4$  |
+| AX$_3$E$_2$ | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
+| AX$_2$E$_3$ | Linear               | 180$\degree$                    | XeF$_2$ |
 
 In a trigonal bipyramidal arrangement, lone pairs always occupy **equatorial positions** because
 This minimises repulsion (equatorial positions have two 90$\degree$ interactions vs three
@@ -493,11 +494,11 @@ This minimises repulsion (equatorial positions have two 90$\degree$ interactions
 
 #### 6 Electron Domains
 
-| Notation | Shape | Bond Angles | Example |
+| Notation    | Shape            | Bond Angles     | Example |
 | ----------- | ---------------- | --------------- | ------- |
-| AX$_6$ | Octahedral | 90$\degree$ | SF$_6$ |
-| AX$_5$E | Square pyramidal | $\lt 90\degree$ | BrF$_5$ |
-| AX$_4$E$_2$ | Square planar | 90$\degree$ | XeF$_4$ |
+| AX$_6$      | Octahedral       | 90$\degree$     | SF$_6$  |
+| AX$_5$E     | Square pyramidal | $\lt 90\degree$ | BrF$_5$ |
+| AX$_4$E$_2$ | Square planar    | 90$\degree$     | XeF$_4$ |
 
 In octahedral geometry, all positions are equivalent. Lone pairs occupy positions 180$\degree$ apart
 To maximise separation.
@@ -510,15 +511,15 @@ To determine if a molecule is polar:
 2. Determine the molecular geometry.
 3. Check whether bond dipoles cancel by symmetry.
 
-| Geometry | Polar Bonds Cancel? | Result |
+| Geometry                      | Polar Bonds Cancel? | Result    |
 | ----------------------------- | ------------------- | --------- |
-| Linear (AX$_2$) | Yes (opposing) | Non-polar |
-| Trigonal planar (AX$_3$) | Yes (symmetric) | Non-polar |
-| Tetrahedral (AX$_4$) | Yes (symmetric) | Non-polar |
-| Trigonal pyramidal (AX$_3$E) | No (asymmetric) | Polar |
-| Bent (AX$_2$E or AX$_2$E$_2$) | No (asymmetric) | Polar |
-| Octahedral (AX$_6$) | Yes (symmetric) | Non-polar |
-| Square planar (AX$_4$E$_2$) | Yes (symmetric) | Non-polar |
+| Linear (AX$_2$)               | Yes (opposing)      | Non-polar |
+| Trigonal planar (AX$_3$)      | Yes (symmetric)     | Non-polar |
+| Tetrahedral (AX$_4$)          | Yes (symmetric)     | Non-polar |
+| Trigonal pyramidal (AX$_3$E)  | No (asymmetric)     | Polar     |
+| Bent (AX$_2$E or AX$_2$E$_2$) | No (asymmetric)     | Polar     |
+| Octahedral (AX$_6$)           | Yes (symmetric)     | Non-polar |
+| Square planar (AX$_4$E$_2$)   | Yes (symmetric)     | Non-polar |
 
 :::info[IB Exam Tip]
 
@@ -538,11 +539,11 @@ Symmetry). CH$_2$Cl$_2$ is polar because the two C-Cl dipoles and two C-H dipole
 **Definition.** **Hybridization** is the mathematical mixing of atomic orbitals on a central atom to
 Form a new set of equivalent hybrid orbitals that match the observed geometry.
 
-| Hybridization | Atomic Orbitals Mixed | Number of Hybrid Orbitals | Geometry | Bond Angle |
+| Hybridization | Atomic Orbitals Mixed | Number of Hybrid Orbitals | Geometry        | Bond Angle     |
 | ------------- | --------------------- | ------------------------- | --------------- | -------------- |
-| sp | 1s + 1p | 2 | Linear | 180$\degree$ |
-| sp$^2$ | 1s + 2p | 3 | Trigonal planar | 120$\degree$ |
-| sp$^3$ | 1s + 3p | 4 | Tetrahedral | 109.5$\degree$ |
+| sp            | 1s + 1p               | 2                         | Linear          | 180$\degree$   |
+| sp$^2$        | 1s + 2p               | 3                         | Trigonal planar | 120$\degree$   |
+| sp$^3$        | 1s + 3p               | 4                         | Tetrahedral     | 109.5$\degree$ |
 
 ### How to Determine Hybridization
 
@@ -556,13 +557,13 @@ Count the number of electron domains (bonding pairs + lone pairs) around the cen
 
 ### Examples
 
-| Molecule | Central Atom | Domains | Hybridization | Geometry |
+| Molecule | Central Atom | Domains | Hybridization | Geometry           |
 | -------- | ------------ | ------- | ------------- | ------------------ |
-| BeCl$_2$ | Be | 2 | sp | Linear |
-| BF$_3$ | B | 3 | sp$^2$ | Trigonal planar |
-| CH$_4$ | C | 4 | sp$^3$ | Tetrahedral |
-| NH$_3$ | N | 4 | sp$^3$ | Trigonal pyramidal |
-| H$_2$O | O | 4 | sp$^3$ | Bent |
+| BeCl$_2$ | Be           | 2       | sp            | Linear             |
+| BF$_3$   | B            | 3       | sp$^2$        | Trigonal planar    |
+| CH$_4$   | C            | 4       | sp$^3$        | Tetrahedral        |
+| NH$_3$   | N            | 4       | sp$^3$        | Trigonal pyramidal |
+| H$_2$O   | O            | 4       | sp$^3$        | Bent               |
 
 ### Hybridization and Multiple Bonds
 
@@ -570,12 +571,12 @@ In a double bond, one bond is sigma (hybrid orbital overlap) and one is pi (unhy
 Overlap). The hybridization of the central atom is determined by the total number of domains (not
 Bonds).
 
-| Molecule | Domains on C | Hybridization | Sigma Bonds | Pi Bonds |
+| Molecule            | Domains on C | Hybridization | Sigma Bonds | Pi Bonds |
 | ------------------- | ------------ | ------------- | ----------- | -------- |
-| C$_2$H$_4$ (ethene) | 3 | sp$^2$ | 5 | 1 |
-| C$_2$H$_2$ (ethyne) | 2 | sp | 3 | 2 |
-| CO$_2$ | 2 | sp | 2 | 2 |
-| HCN | 2 | sp | 2 | 2 |
+| C$_2$H$_4$ (ethene) | 3            | sp$^2$        | 5           | 1        |
+| C$_2$H$_2$ (ethyne) | 2            | sp            | 3           | 2        |
+| CO$_2$              | 2            | sp            | 2           | 2        |
+| HCN                 | 2            | sp            | 2           | 2        |
 
 ---
 
@@ -693,19 +694,19 @@ Total charge: $0 + 0 + 2(-1) = -2$. This is the preferred structure.
 
 These hybridizations involve d-orbitals and are used for expanded octet species:
 
-| Hybridization | Orbitals Mixed | Domains | Geometry | Bond Angles |
-| ------------- | -------------- | ------- | -------------------- | ------------------------- |
-| sp$^3$D | 1s + 3p + 1d | 5 | Trigonal bipyramidal | 90$\degree$120$\degree$ |
-| sp$^3$D$^2$ | 1s + 3p + 2d | 6 | Octahedral | 90$\degree$ |
+| Hybridization | Orbitals Mixed | Domains | Geometry             | Bond Angles             |
+| ------------- | -------------- | ------- | -------------------- | ----------------------- |
+| sp$^3$D       | 1s + 3p + 1d   | 5       | Trigonal bipyramidal | 90$\degree$120$\degree$ |
+| sp$^3$D$^2$   | 1s + 3p + 2d   | 6       | Octahedral           | 90$\degree$             |
 
 | Molecule | Central Atom | Domains | Hybridization |
 | -------- | ------------ | ------- | ------------- |
-| PCl$_5$ | P | 5 | sp$^3$D |
-| SF$_4$ | S | 5 | sp$^3$D |
-| ClF$_3$ | Cl | 5 | sp$^3$D |
-| SF$_6$ | S | 6 | sp$^3$D$^2$ |
-| BrF$_5$ | Br | 6 | sp$^3$D$^2$ |
-| XeF$_4$ | Xe | 6 | sp$^3$D$^2$ |
+| PCl$_5$  | P            | 5       | sp$^3$D       |
+| SF$_4$   | S            | 5       | sp$^3$D       |
+| ClF$_3$  | Cl           | 5       | sp$^3$D       |
+| SF$_6$   | S            | 6       | sp$^3$D$^2$   |
+| BrF$_5$  | Br           | 6       | sp$^3$D$^2$   |
+| XeF$_4$  | Xe           | 6       | sp$^3$D$^2$   |
 
 ### Molecular Orbital Theory (HL)
 
@@ -724,9 +725,9 @@ Key principles:
 For elements in period 2:
 
 - Li$_2$ through N$_2$:
- $\sigma_{2s} \lt \sigma^*_{2s} \lt \pi_{2p_x} = \pi_{2p_y} \lt \sigma_{2p_z} \lt \pi^*_{2p_x} = \pi^*_{2p_y} \lt \sigma^*_{2p_z}$
+  $\sigma_{2s} \lt \sigma^*_{2s} \lt \pi_{2p_x} = \pi_{2p_y} \lt \sigma_{2p_z} \lt \pi^*_{2p_x} = \pi^*_{2p_y} \lt \sigma^*_{2p_z}$
 - O$_2$ through Ne$_2$:
- $\sigma_{2s} \lt \sigma^*_{2s} \lt \sigma_{2p_z} \lt \pi_{2p_x} = \pi_{2p_y} \lt \pi^*_{2p_x} = \pi^*_{2p_y} \lt \sigma^*_{2p_z}$
+  $\sigma_{2s} \lt \sigma^*_{2s} \lt \sigma_{2p_z} \lt \pi_{2p_x} = \pi_{2p_y} \lt \pi^*_{2p_x} = \pi^*_{2p_y} \lt \sigma^*_{2p_z}$
 
 The s-p mixing in Li$_2$ through N$_2$ pushes the $\sigma_{2p_z}$ above the $\pi_{2p}$ orbitals. For
 O$_2$ and F$_2$The energy gap is large enough that s-p mixing is negligible.
@@ -737,18 +738,18 @@ $$
 \mathrm{Bond order} = \frac{1}{2}(N_{\mathrm{bonding}} - N_{\mathrm{antibonding}})
 $$
 
-| Molecule | Bonding Electrons | Antibonding Electrons | Bond Order | Stability |
+| Molecule | Bonding Electrons | Antibonding Electrons | Bond Order | Stability   |
 | -------- | ----------------- | --------------------- | ---------- | ----------- |
-| H$_2$ | 2 | 0 | 1 | Stable |
-| He$_2$ | 2 | 2 | 0 | Not stable |
-| Li$_2$ | 2 | 0 | 1 | Stable |
-| Be$_2$ | 2 | 2 | 0 | Not stable |
-| B$_2$ | 4 | 2 | 1 | Stable |
-| C$_2$ | 6 | 2 | 2 | Stable |
-| N$_2$ | 8 | 2 | 3 | Very stable |
-| O$_2$ | 8 | 4 | 2 | Stable |
-| F$_2$ | 8 | 6 | 1 | Stable |
-| Ne$_2$ | 8 | 8 | 0 | Not stable |
+| H$_2$    | 2                 | 0                     | 1          | Stable      |
+| He$_2$   | 2                 | 2                     | 0          | Not stable  |
+| Li$_2$   | 2                 | 0                     | 1          | Stable      |
+| Be$_2$   | 2                 | 2                     | 0          | Not stable  |
+| B$_2$    | 4                 | 2                     | 1          | Stable      |
+| C$_2$    | 6                 | 2                     | 2          | Stable      |
+| N$_2$    | 8                 | 2                     | 3          | Very stable |
+| O$_2$    | 8                 | 4                     | 2          | Stable      |
+| F$_2$    | 8                 | 6                     | 1          | Stable      |
+| Ne$_2$   | 8                 | 8                     | 0          | Not stable  |
 
 :::info[IB Exam Tip]
 
@@ -760,9 +761,9 @@ Structures cannot predict this. This is a classic HL exam question.
 #### Paramagnetism vs Diamagnetism
 
 - **Paramagnetic:** Contains unpaired electrons. Attracted to a magnetic field. Examples: O$_2$
- B$_2$.
+  B$_2$.
 - **Diamagnetic:** All electrons are paired. Repelled by a magnetic field. Examples: N$_2$F$_2$
- C$_2$.
+  C$_2$.
 
 ### Band Theory of Metals and Semiconductors (HL)
 
@@ -774,11 +775,11 @@ K. The **conduction band** is the next higher band, which is empty at 0 K.
 
 #### Classification by Band Gap
 
-| Material Type | Band Gap | Conductivity at 0 K | Example |
+| Material Type | Band Gap            | Conductivity at 0 K       | Example |
 | ------------- | ------------------- | ------------------------- | ------- |
-| Metal | Overlapping | Conducts | Cu, Na |
-| Semiconductor | Small (0.1 -- 3 eV) | Does not conduct (at 0 K) | Si, Ge |
-| Insulator | Large ($\gt 3$ eV) | Does not conduct | Diamond |
+| Metal         | Overlapping         | Conducts                  | Cu, Na  |
+| Semiconductor | Small (0.1 -- 3 eV) | Does not conduct (at 0 K) | Si, Ge  |
+| Insulator     | Large ($\gt 3$ eV)  | Does not conduct          | Diamond |
 
 In metals, the valence and conduction bands overlap, so electrons are always available for
 Conduction. In semiconductors, thermal energy can promote electrons across the band gap, creating
@@ -791,10 +792,10 @@ Temperature as more electrons are promoted across the band gap.
 
 **Extrinsic semiconductors** have been doped with impurities:
 
-| Doping Type | Dopant | Effect | Carrier Type |
+| Doping Type | Dopant       | Effect                                  | Carrier Type    |
 | ----------- | ------------ | --------------------------------------- | --------------- |
-| n-type | Group 15 (P) | Extra electron enters conduction band | Electron |
-| p-type | Group 13 (B) | Electron vacancy (hole) in valence band | Hole (positive) |
+| n-type      | Group 15 (P) | Extra electron enters conduction band   | Electron        |
+| p-type      | Group 13 (B) | Electron vacancy (hole) in valence band | Hole (positive) |
 
 :::warning[Common Mistake]
 
@@ -828,13 +829,13 @@ Explain why magnesium oxide has a much higher melting point than sodium chloride
 **Markscheme:**
 
 - P is the central atom with 5 valence electrons. Each O contributes 6 valence electrons. Add 3 for
- the -3 charge.
+  the -3 charge.
 - Total valence electrons: $5 + 4(6) + 3 = 32$.
 - P forms single bonds to all four O atoms (8 electrons used, 24 remaining).
 - Each O gets 3 lone pairs to complete its octet (24 electrons used).
 - P has a formal charge of $+1$; each singly-bonded O has a formal charge of $-1$.
 - One P=O double bond is added to reduce formal charges. The structure can have resonance with 4
- equivalent forms.
+  equivalent forms.
 
 (b) Determine the shape and bond angle of PO$_4^{3-}$. (3 marks)
 
@@ -882,7 +883,7 @@ The carbonate ion, CO$_3^{2-}$Has a measured C-O bond length of 136 pm. Explain 
 - CO$_3^{2-}$ has three equivalent resonance structures (1 mark).
 - Each C-O bond is intermediate between a single and a double bond (bond order = 1.33) (1 mark).
 - The bond length of 136 pm is between a typical C-O single bond (143 pm) and a C=O double bond (123
- pm) (1 mark).
+  pm) (1 mark).
 
 ---
 
@@ -890,14 +891,14 @@ The carbonate ion, CO$_3^{2-}$Has a measured C-O bond length of 136 pm. Explain 
 
 Calculate the lattice energy of calcium fluoride, CaF$_2$Using the following data:
 
-| Quantity | Value (kJ/mol) |
+| Quantity                              | Value (kJ/mol) |
 | ------------------------------------- | -------------- |
-| $\Delta H_f^\circ$(CaF$_2$) | -1220 |
-| $\Delta H_{\mathrm{at}}^\circ$(Ca) | +178 |
-| $\Delta H_{\mathrm{at}}^\circ$(F$_2$) | +159 |
-| IE$_1$(Ca) | +590 |
-| IE$_2$(Ca) | +1145 |
-| EA$_1$(F) | -328 |
+| $\Delta H_f^\circ$(CaF$_2$)           | -1220          |
+| $\Delta H_{\mathrm{at}}^\circ$(Ca)    | +178           |
+| $\Delta H_{\mathrm{at}}^\circ$(F$_2$) | +159           |
+| IE$_1$(Ca)                            | +590           |
+| IE$_2$(Ca)                            | +1145          |
+| EA$_1$(F)                             | -328           |
 
 **Markscheme:**
 
@@ -986,12 +987,12 @@ The following substances have the boiling points shown:
 
 | Substance | Boiling Point ($\degree$C) |
 | --------- | -------------------------- |
-| CH$_4$ | -161 |
-| SiH$_4$ | -112 |
-| NH$_3$ | -33 |
-| PH$_3$ | -88 |
-| H$_2$O | 100 |
-| H$_2$S | -60 |
+| CH$_4$    | -161                       |
+| SiH$_4$   | -112                       |
+| NH$_3$    | -33                        |
+| PH$_3$    | -88                        |
+| H$_2$O    | 100                        |
+| H$_2$S    | -60                        |
 
 (a) Explain the trend in boiling points from CH$_4$ to SiH$_4$. (2 marks)
 
@@ -1006,10 +1007,10 @@ Expected trend. (3 marks)
 **Markscheme:**
 
 - H$_2$O can form extensive hydrogen bonding due to two O-H bonds and two lone pairs on oxygen (1
- mark).
+  mark).
 - H$_2$S cannot form hydrogen bonding because S is not electronegative enough (1 mark).
 - NH$_3$ can form hydrogen bonding but only has one N-H bond per molecule, limiting the extent; the
- trend from NH$_3$ to PH$_3$ is dominated by increasing London dispersion forces (1 mark).
+  trend from NH$_3$ to PH$_3$ is dominated by increasing London dispersion forces (1 mark).
 
 ---
 
@@ -1017,15 +1018,15 @@ Expected trend. (3 marks)
 
 ### Bond Type Comparison
 
-| Feature | Ionic | Covalent (Molecular) | Covalent (Network) | Metallic |
+| Feature       | Ionic                        | Covalent (Molecular)             | Covalent (Network)           | Metallic                    |
 | ------------- | ---------------------------- | -------------------------------- | ---------------------------- | --------------------------- |
-| Bond type | Electrostatic attraction | Shared electron pairs | Continuous covalent | Metallic bonding |
-| Constituents | Cations and anions | Discrete molecules | Giant lattice | Metal cations + sea |
-| Melting point | High | Low | Very high | Variable (often high) |
-| Electrical | Conducts when molten/aqueous | Generally insulators | Insulators (except graphite) | Conducts (solid and liquid) |
-| Solubility | Polar solvents | Non-polar (molecular), varies | Insoluble | Generally insoluble |
-| Hardness | Hard but brittle | Soft (molecular), hard (network) | Very hard | Malleable, ductile |
-| Example | NaCl, MgO | H$_2$O, CO$_2$ | Diamond, SiO$_2$ | Cu, Fe, Al |
+| Bond type     | Electrostatic attraction     | Shared electron pairs            | Continuous covalent          | Metallic bonding            |
+| Constituents  | Cations and anions           | Discrete molecules               | Giant lattice                | Metal cations + sea         |
+| Melting point | High                         | Low                              | Very high                    | Variable (often high)       |
+| Electrical    | Conducts when molten/aqueous | Generally insulators             | Insulators (except graphite) | Conducts (solid and liquid) |
+| Solubility    | Polar solvents               | Non-polar (molecular), varies    | Insoluble                    | Generally insoluble         |
+| Hardness      | Hard but brittle             | Soft (molecular), hard (network) | Very hard                    | Malleable, ductile          |
+| Example       | NaCl, MgO                    | H$_2$O, CO$_2$                   | Diamond, SiO$_2$             | Cu, Fe, Al                  |
 
 ### IMF Strength Ranking
 
@@ -1035,31 +1036,31 @@ $$
 
 ### VSEPR Quick Reference
 
-| Domains | Lone Pairs | Shape | Angle | Example |
-| ------- | ---------- | -------------------- | --------------------------------- | ------- |
-| 2 | 0 | Linear | 180$\degree$ | CO$_2$ |
-| 3 | 0 | Trigonal planar | 120$\degree$ | BF$_3$ |
-| 3 | 1 | Bent | $\lt 120\degree$ | SO$_2$ |
-| 4 | 0 | Tetrahedral | 109.5$\degree$ | CH$_4$ |
-| 4 | 1 | Trigonal pyramidal | $\lt 109.5\degree$ | NH$_3$ |
-| 4 | 2 | Bent | $\lt 109.5\degree$ | H$_2$O |
-| 5 | 0 | Trigonal bipyramidal | 90$\degree$120$\degree$ | PCl$_5$ |
-| 5 | 1 | Seesaw | $\lt 90\degree$$\lt 120\degree$ | SF$_4$ |
-| 5 | 2 | T-shaped | $\lt 90\degree$ | ClF$_3$ |
-| 5 | 3 | Linear | 180$\degree$ | XeF$_2$ |
-| 6 | 0 | Octahedral | 90$\degree$ | SF$_6$ |
-| 6 | 1 | Square pyramidal | $\lt 90\degree$ | BrF$_5$ |
-| 6 | 2 | Square planar | 90$\degree$ | XeF$_4$ |
+| Domains | Lone Pairs | Shape                | Angle                           | Example |
+| ------- | ---------- | -------------------- | ------------------------------- | ------- |
+| 2       | 0          | Linear               | 180$\degree$                    | CO$_2$  |
+| 3       | 0          | Trigonal planar      | 120$\degree$                    | BF$_3$  |
+| 3       | 1          | Bent                 | $\lt 120\degree$                | SO$_2$  |
+| 4       | 0          | Tetrahedral          | 109.5$\degree$                  | CH$_4$  |
+| 4       | 1          | Trigonal pyramidal   | $\lt 109.5\degree$              | NH$_3$  |
+| 4       | 2          | Bent                 | $\lt 109.5\degree$              | H$_2$O  |
+| 5       | 0          | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
+| 5       | 1          | Seesaw               | $\lt 90\degree$$\lt 120\degree$ | SF$_4$  |
+| 5       | 2          | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
+| 5       | 3          | Linear               | 180$\degree$                    | XeF$_2$ |
+| 6       | 0          | Octahedral           | 90$\degree$                     | SF$_6$  |
+| 6       | 1          | Square pyramidal     | $\lt 90\degree$                 | BrF$_5$ |
+| 6       | 2          | Square planar        | 90$\degree$                     | XeF$_4$ |
 
 ### Hybridization Quick Reference
 
-| Domains | Hybridization | Geometry |
+| Domains | Hybridization | Geometry             |
 | ------- | ------------- | -------------------- |
-| 2 | sp | Linear |
-| 3 | sp$^2$ | Trigonal planar |
-| 4 | sp$^3$ | Tetrahedral |
-| 5 | sp$^3$D | Trigonal bipyramidal |
-| 6 | sp$^3$D$^2$ | Octahedral |
+| 2       | sp            | Linear               |
+| 3       | sp$^2$        | Trigonal planar      |
+| 4       | sp$^3$        | Tetrahedral          |
+| 5       | sp$^3$D       | Trigonal bipyramidal |
+| 6       | sp$^3$D$^2$   | Octahedral           |
 
 ## Practice Problems
 
@@ -1182,10 +1183,11 @@ Each carbon in ethene has 3 electron domains (2 C-H bonds + 1 C=C bond), so each
 Hybridised. The three $sp^2$ hybrid orbitals form sigma bonds: two C-H sigma bonds and one C-C sigma
 Bond. The remaining unhybridized $p$ orbital on each carbon overlaps side-to-side to form a pi
 ($\pi$) bond. The molecule is trigonal planar around each carbon with bond angles of approximately
-$120^\circ$And the entire molecule is planar. The C=C double bond consists of one sigma bond and
-One pi bond. The pi bond restricts rotation about the C=C bond.
+$120^\circ$And the entire molecule is planar. The C=C double bond consists of one sigma bond and One
+pi bond. The pi bond restricts rotation about the C=C bond.
 
-For the A-Level treatment of this topic, see [Bonding & Structure](https://alevel.wyattau.com/docs/chemistry/bonding-and-structure).
+For the A-Level treatment of this topic, see
+[Bonding & Structure](https://alevel.wyattau.com/docs/chemistry/bonding-and-structure).
 
 </details>
 

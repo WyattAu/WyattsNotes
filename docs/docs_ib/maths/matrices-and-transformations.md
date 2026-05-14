@@ -1,11 +1,12 @@
 ---
 title: Matrices and Transformations
 tags:
-- IB
-- Maths
+  - IB
+  - Maths
 slug: matrices-and-transformations
-description: "Rigorous IB mathematics notes covering Matrices and Transformations. Includes definitions, derivations, worked examples, and exam-style problems."
-  Baccalaureate.
+description:
+  'Rigorous IB mathematics notes covering Matrices and Transformations. Includes definitions,
+  derivations, worked examples, and exam-style problems. Baccalaureate.'
 ---
 
 ## Matrices and Transformations
@@ -30,26 +31,28 @@ $$
 The entry in row $i$ and column $j$ is denoted $a_{ij}$. The set of all $m \times n$ real matrices
 Is written $\mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$.
 
-A column vector in $\mathbb{'\{'}R{'\}'}^n$ is an $n \times 1$ matrix, and a row vector is a $1 \times n$
-Matrix. When the dimensions are equal ($m = n$), the matrix is called **square**.
+A column vector in $\mathbb{'\{'}R{'\}'}^n$ is an $n \times 1$ matrix, and a row vector is a
+$1 \times n$ Matrix. When the dimensions are equal ($m = n$), the matrix is called **square**.
 
 ### Matrix Addition and Scalar Multiplication
 
-**Addition.** If $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$Then $A + B$ is defined
-Entry-wise:
+**Addition.** If $A, B \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$Then $A + B$ is
+defined Entry-wise:
 
 $$
 (A + B)_`\{ij}` = a_`\{ij}` + b_`\{ij}`
 $$
 
-**Scalar multiplication.** For $k \in \mathbb{'\{'}R{'\}'}$ and $A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$:
+**Scalar multiplication.** For $k \in \mathbb{'\{'}R{'\}'}$ and
+$A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$:
 
 $$
 (kA)_`\{ij}` = k \cdot a_`\{ij}`
 $$
 
-These operations satisfy the following axioms (making $\mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ a
-Vector space over $\mathbb{'\{'}R{'\}'}$):
+These operations satisfy the following axioms (making
+$\mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$ a Vector space over
+$\mathbb{'\{'}R{'\}'}$):
 
 - $A + B = B + A$ (commutativity)
 - $(A + B) + C = A + (B + C)$ (associativity)
@@ -105,8 +108,8 @@ $D = \mathrm{diag}(d_1, d_2, \ldots, d_n)$.
 
 ### Transpose of a Matrix
 
-The **transpose** of $A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$Written $A^T$Is the
-$n \times m$ matrix obtained by interchanging rows and columns:
+The **transpose** of $A \in \mathcal{'\{'}M{'\}'}_{m \times n}(\mathbb{'\{'}R{'\}'})$Written $A^T$Is
+the $n \times m$ matrix obtained by interchanging rows and columns:
 
 $$
 (A^T)_`\{ij}` = a_`\{ji}`
@@ -123,8 +126,8 @@ $$
 
 A square matrix $A$ is **symmetric** if $A^T = A$I.e. $a_{ij} = a_{ji}$ for all $i, j$.
 
-A square matrix $A$ is **skew-symmetric** (or anti-symmetric) if $A^T = -A$I.e.
-$a_{ij} = -a_{ji}$. This implies $a_{ii} = 0$ for all diagonal entries.
+A square matrix $A$ is **skew-symmetric** (or anti-symmetric) if $A^T = -A$I.e. $a_{ij} = -a_{ji}$.
+This implies $a_{ii} = 0$ for all diagonal entries.
 
 Every square matrix $A$ can be uniquely decomposed as:
 
@@ -137,7 +140,8 @@ Where $\frac{1}{2}(A + A^T)$ is symmetric and $\frac{1}{2}(A - A^T)$ is skew-sym
 <details>
 <summary>Worked Example: Symmetric and Skew-Symmetric Decomposition</summary>
 
-Decompose $A = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix}$ into symmetric and skew-symmetric parts.
+Decompose $A = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix}$ into symmetric and skew-symmetric
+parts.
 
 $$A^T = \begin{pmatrix} 3 & 1 \\ 5 & 2 \end{pmatrix}$$
 
@@ -189,8 +193,8 @@ $$
 \det(A) = a_{11} C_{11} + a_{12} C_{12} + a_{13} C_{13}
 $$
 
-Where the **cofactor** $C_{ij} = (-1)^{i+j} M_{ij}$And $M_{ij}$ is the **minor** (determinant of
-The $2 \times 2$ submatrix obtained by deleting row $i$ and column $j$).
+Where the **cofactor** $C_{ij} = (-1)^{i+j} M_{ij}$And $M_{ij}$ is the **minor** (determinant of The
+$2 \times 2$ submatrix obtained by deleting row $i$ and column $j$).
 
 Explicitly:
 
@@ -222,7 +226,7 @@ Let $A$ and $B$ be $n \times n$ matrices and $k \in \mathbb{'\{'}R{'\}'}$.
 For a $2 \times 2$ matrix $A$ representing a linear transformation of the plane:
 
 - $|\det(A)|$ equals the **area scale factor**: the ratio of the area of the image of a region to
- the area of the original region.
+  the area of the original region.
 - If $\det(A) \gt 0$The transformation preserves orientation.
 - If $\det(A) \lt 0$The transformation reverses orientation (e.g. A reflection).
 - If $\det(A) = 0$The transformation collapses the plane onto a line or a point (not invertible).
@@ -316,7 +320,8 @@ $C_{31} = +\begin{vmatrix} 1 & 0 \\ 1 & 1 \end{vmatrix} = 1$$C_{32} = -\begin{vm
 
 Cofactor matrix: $\begin{pmatrix} 1 & 1 & -1 \\ -1 & 2 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
-**Step 3:** Transpose: $\mathrm{adj}(A) = \begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \end{pmatrix}$
+**Step 3:** Transpose:
+$\mathrm{adj}(A) = \begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \end{pmatrix}$
 
 **Step 4:** Divide by $\det(A) = 3$:
 
@@ -334,8 +339,9 @@ $$A^{-1} = \frac{1}{3}\begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \en
 ### Solving Systems of Linear Equations
 
 A system of $n$ linear equations in $n$ unknowns can be written in matrix form as
-$A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$Where $A$ is the coefficient matrix, $\mathbf{'\{'}x{'\}'}$ is the column vector
-Of unknowns, and $\mathbf{'\{'}b{'\}'}$ is the column vector of constants.
+$A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$Where $A$ is the coefficient matrix,
+$\mathbf{'\{'}x{'\}'}$ is the column vector Of unknowns, and $\mathbf{'\{'}b{'\}'}$ is the column
+vector of constants.
 
 If $A$ is invertible, the unique solution is:
 
@@ -382,8 +388,9 @@ So $x = \frac{11}{5}$ and $y = \frac{6}{5}$.
 
 ## 4. 2D Geometric Transformations
 
-Every linear transformation $T: \mathbb{'\{'}R{'\}'}^2 \to \mathbb{'\{'}R{'\}'}^2$ can be represented by a $2 \times 2$
-Matrix $M$ such that $T(\mathbf{'\{'}v{'\}'}) = M\mathbf{'\{'}v{'\}'}$. The images of the standard basis vectors
+Every linear transformation $T: \mathbb{'\{'}R{'\}'}^2 \to \mathbb{'\{'}R{'\}'}^2$ can be
+represented by a $2 \times 2$ Matrix $M$ such that
+$T(\mathbf{'\{'}v{'\}'}) = M\mathbf{'\{'}v{'\}'}$. The images of the standard basis vectors
 $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ form the columns
 Of $M$.
 
@@ -439,13 +446,13 @@ Key properties of rotation matrices:
 
 **Common rotations:**
 
-| Angle | Matrix |
+|    Angle    | Matrix                                                                                                              |
 | :---------: | :------------------------------------------------------------------------------------------------------------------ |
-| $90^\circ$ | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ |
-| $180^\circ$ | $\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$ |
-| $270^\circ$ | $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ |
-| $60^\circ$ | $\begin{pmatrix} \frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$ |
-| $45^\circ$ | $\begin{pmatrix} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{pmatrix}$ |
+| $90^\circ$  | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$                                                                     |
+| $180^\circ$ | $\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$                                                                    |
+| $270^\circ$ | $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$                                                                     |
+| $60^\circ$  | $\begin{pmatrix} \frac{1}{2} & -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$               |
+| $45^\circ$  | $\begin{pmatrix} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{pmatrix}$ |
 
 ### Enlargements (Dilations)
 
@@ -534,21 +541,22 @@ The image is $(2, -3)$.
 
 </details>
 
-**Inverse of a composite.** Since $(BA)^{-1} = A^{-1}B^{-1}$To undo a composite transformation,
-The individual inverses are applied in reverse order.
+**Inverse of a composite.** Since $(BA)^{-1} = A^{-1}B^{-1}$To undo a composite transformation, The
+individual inverses are applied in reverse order.
 
 ### Invariant Points and Invariant Lines
 
 An **invariant point** under transformation $M$ is a point $\mathbf{'\{'}v{'\}'}$ such that
-$M\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}v{'\}'}$I.e. $(M - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. The set of invariant points forms
-The null space of $M - I$.
+$M\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}v{'\}'}$I.e.
+$(M - I)\mathbf{'\{'}v{'\}'} = \mathbf{'\{'}0{'\}'}$. The set of invariant points forms The null
+space of $M - I$.
 
 For any $2 \times 2$ transformation matrix, the origin is always invariant.
 
 An **invariant line** is a line that is mapped onto itself (though individual points on the line may
-Move along it). A line through the origin with direction vector $\mathbf{'\{'}d{'\}'}$ is invariant if
-$M\mathbf{'\{'}d{'\}'} = \lambda \mathbf{'\{'}d{'\}'}$ for some scalar $\lambda$Which means $\mathbf{'\{'}d{'\}'}$ is an
-Eigenvector of $M$.
+Move along it). A line through the origin with direction vector $\mathbf{'\{'}d{'\}'}$ is invariant
+if $M\mathbf{'\{'}d{'\}'} = \lambda \mathbf{'\{'}d{'\}'}$ for some scalar $\lambda$Which means
+$\mathbf{'\{'}d{'\}'}$ is an Eigenvector of $M$.
 
 A line is **point-wise invariant** (every point is fixed) if and only if every point on it is an
 Invariant point, meaning the line lies entirely in the null space of $M - I$.
@@ -569,7 +577,7 @@ Factor is $|\det(M)|$. This means:
 
 - If $|\det(M)| = 1$The transformation preserves area (e.g. Rotations, reflections).
 - If $|\det(M)| = k^2$The area of any region is multiplied by $k^2$ (e.g. Enlargement by scale
- factor $k$).
+  factor $k$).
 - If $\det(M) = 0$The transformation is singular and collapses the plane to a line or point.
 
 This extends to $3 \times 3$ matrices where $|\det(M)|$ is the volume scale factor.
@@ -635,9 +643,9 @@ Matrices obtained by deleting each row and the corresponding column).
 **Fundamental properties of eigenvalues:**
 
 - The sum of the eigenvalues equals the trace:
- $\lambda_1 + \lambda_2 + \cdots + \lambda_n = \mathrm{tr}(A)$.
+  $\lambda_1 + \lambda_2 + \cdots + \lambda_n = \mathrm{tr}(A)$.
 - The product of the eigenvalues equals the determinant:
- $\lambda_1 \lambda_2 \cdots \lambda_n = \det(A)$.
+  $\lambda_1 \lambda_2 \cdots \lambda_n = \det(A)$.
 - A matrix is invertible if and only if none of its eigenvalues is zero.
 - The eigenvalues of $A^k$ are $\lambda_1^k, \lambda_2^k, \ldots, \lambda_n^k$.
 
@@ -662,27 +670,27 @@ When the characteristic equation has a repeated root (a repeated eigenvalue), th
 Not be diagonalisable.
 
 - **Geometric multiplicity** $\leq$ **algebraic multiplicity.** The algebraic multiplicity of an
- eigenvalue is its multiplicity as a root of the characteristic equation. The geometric
- multiplicity is the dimension of the corresponding eigenspace (the number of linearly independent
- eigenvectors for that eigenvalue).
+  eigenvalue is its multiplicity as a root of the characteristic equation. The geometric
+  multiplicity is the dimension of the corresponding eigenspace (the number of linearly independent
+  eigenvectors for that eigenvalue).
 - A matrix is diagonalisable if and only if the geometric multiplicity of each eigenvalue equals its
- algebraic multiplicity.
+  algebraic multiplicity.
 - If the geometric multiplicity is strictly less than the algebraic multiplicity, the matrix is
- **defective** and cannot be diagonalised.
+  **defective** and cannot be diagonalised.
 
 For a $2 \times 2$ matrix with a repeated eigenvalue $\lambda$:
 
-- If $A = \lambda I$Then every non-zero vector is an eigenvector (geometric multiplicity $= 2$),
- and $A$ is diagonalisable (it is already diagonal).
-- If $A \neq \lambda I$ but has a repeated eigenvalue, the geometric multiplicity is $1$
- and $A$ is not diagonalisable.
+- If $A = \lambda I$Then every non-zero vector is an eigenvector (geometric multiplicity $= 2$), and
+  $A$ is diagonalisable (it is already diagonal).
+- If $A \neq \lambda I$ but has a repeated eigenvalue, the geometric multiplicity is $1$ and $A$ is
+  not diagonalisable.
 
 ### 3x3 Eigenvalue Problems
 
 For a $3 \times 3$ matrix, the characteristic equation is a cubic polynomial in $\lambda$. The cubic
 Can have three distinct real roots, one repeated and one distinct real root, or one real root and
-Two complex conjugate roots. Since the IB course works over $\mathbb{'\{'}R{'\}'}$Only real eigenvalues and
-Eigenvectors are considered.
+Two complex conjugate roots. Since the IB course works over $\mathbb{'\{'}R{'\}'}$Only real
+eigenvalues and Eigenvectors are considered.
 
 :::info[Examples]
 
@@ -763,8 +771,8 @@ $$
 A = PDP^{-1}
 $$
 
-The columns of $P$ are the eigenvectors of $A$And the diagonal entries of $D$ are the
-Corresponding eigenvalues.
+The columns of $P$ are the eigenvectors of $A$And the diagonal entries of $D$ are the Corresponding
+eigenvalues.
 
 **Theorem.** An $n \times n$ matrix is diagonalisable if and only if it has $n$ linearly independent
 Eigenvectors. This is guaranteed when $A$ has $n$ distinct eigenvalues.
@@ -773,7 +781,8 @@ Eigenvectors. This is guaranteed when $A$ has $n$ distinct eigenvalues.
 
 1. Find the eigenvalues by solving $\det(A - \lambda I) = 0$.
 2. Find a corresponding eigenvector for each eigenvalue.
-3. Form $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \mathbf{'\{'}v{'\}'}_2 \end{pmatrix}$ (eigenvectors as columns).
+3. Form $P = \begin{pmatrix} \mathbf{'\{'}v{'\}'}_1 & \mathbf{'\{'}v{'\}'}_2 \end{pmatrix}$
+   (eigenvectors as columns).
 4. Form $D = \begin{pmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{pmatrix}$.
 5. Verify: $A = PDP^{-1}$Or equivalently, $P^{-1}AP = D$.
 
@@ -844,8 +853,10 @@ Augmented matrix to row echelon form (REF) or reduced row echelon form (RREF).
 **Existence and uniqueness:**
 
 - If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}]) = n$: unique solution.
-- If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}]) \lt n$: infinitely many solutions.
-- If $\mathrm{rank}(A) \lt \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}])$: no solution (inconsistent system).
+- If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}]) \lt n$: infinitely many
+  solutions.
+- If $\mathrm{rank}(A) \lt \mathrm{rank}([A \mid \mathbf{'\{'}b{'\}'}])$: no solution (inconsistent
+  system).
 
 :::info[Examples]
 
@@ -877,8 +888,8 @@ Solution: $(x, y, z) = (1, 1, 2)$.
 
 ### Cramer's Rule
 
-Cramer's rule provides an explicit formula for the solution of a system $A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$
-When $A$ is an $n \times n$ invertible matrix.
+Cramer's rule provides an explicit formula for the solution of a system
+$A\mathbf{'\{'}x{'\}'} = \mathbf{'\{'}b{'\}'}$ When $A$ is an $n \times n$ invertible matrix.
 
 **For a $2 \times 2$ system:**
 
@@ -886,8 +897,8 @@ $$
 X = \frac{\begin`\{vmatrix}` e & b \\ f & d \end`\{vmatrix}`}{\det(A)}, \qquad y = \frac{\begin`\{vmatrix}` a & e \\ c & f \end`\{vmatrix}`}{\det(A)}
 $$
 
-Where the numerator for $x$ replaces the first column of $A$ with $\mathbf{'\{'}b{'\}'}$And the numerator
-For $y$ replaces the second column.
+Where the numerator for $x$ replaces the first column of $A$ with $\mathbf{'\{'}b{'\}'}$And the
+numerator For $y$ replaces the second column.
 
 **General formula (Cramer's Rule):** For each variable $x_i$:
 
@@ -947,8 +958,8 @@ Modulo 26: $\begin{pmatrix} 15 \\ 15 \end{pmatrix}$Which gives "PP".
 Block 2:
 $\begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 11 \\ 15 \end{pmatrix} = \begin{pmatrix} 33 + 75 \\ 11 + 30 \end{pmatrix} = \begin{pmatrix} 108 \\ 41 \end{pmatrix}$
 
-Modulo 26: $108 \bmod 26 = 4$$41 \bmod 26 = 15$Giving $\begin{pmatrix} 4 \\ 15 \end{pmatrix}$
-Which is "EP".
+Modulo 26: $108 \bmod 26 = 4$$41 \bmod 26 = 15$Giving $\begin{pmatrix} 4 \\ 15 \end{pmatrix}$ Which
+is "EP".
 
 Ciphertext: "PPEP"
 
@@ -978,8 +989,8 @@ Multiplication.
 
 **Composition advantage.** Instead of applying $n$ separate transformations to each of $m$ vertices,
 The transformations are composed into a single matrix $M = T_n \cdots T_2 T_1$And each vertex is
-Transformed with a single multiplication $M\mathbf{'\{'}v{'\}'}$. This reduces the cost from $O(nm)$ to
-$O(n^3 + m)$ matrix operations.
+Transformed with a single multiplication $M\mathbf{'\{'}v{'\}'}$. This reduces the cost from $O(nm)$
+to $O(n^3 + m)$ matrix operations.
 
 ### Markov Chains
 
@@ -994,15 +1005,17 @@ Property).
 
 The entry $p_{ij}$ represents the probability of moving from state $i$ to state $j$ in one step.
 
-**State evolution.** If $\mathbf{'\{'}s{'\}'}^{(k)}$ is the state probability vector at step $k$Then:
+**State evolution.** If $\mathbf{'\{'}s{'\}'}^{(k)}$ is the state probability vector at step
+$k$Then:
 
 $$
 \mathbf{'\{'}s{'\}'}^{(k)} = \mathbf{'\{'}s{'\}'}^{(0)} P^k
 $$
 
 **Steady state.** A steady-state (stationary) vector $\mathbf{'\{'}s{'\}'}$ satisfies
-$\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$Or equivalently, $\mathbf{'\{'}s{'\}'}(P - I) = \mathbf{'\{'}0{'\}'}$. This means
-$\mathbf{'\{'}s{'\}'}$ is a left eigenvector of $P$ with eigenvalue $1$.
+$\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$Or equivalently,
+$\mathbf{'\{'}s{'\}'}(P - I) = \mathbf{'\{'}0{'\}'}$. This means $\mathbf{'\{'}s{'\}'}$ is a left
+eigenvector of $P$ with eigenvalue $1$.
 
 For a regular Markov chain (one where some power of $P$ has all positive entries), the steady-state
 Distribution exists, is unique, and is independent of the initial state. The eigenvalue $1$ is
@@ -1045,19 +1058,32 @@ $\lambda_2^k \to 0$ and the system converges to the eigenvector for $\lambda_1 =
 </details>
 :::
 
+:::danger Common Pitfalls
 
-:::danger
-Common Pitfalls
+- **Confusing matrix multiplication order:** Matrix multiplication is NOT commutative: AB is
+  generally not equal to BA. When applying a transformation matrix to a point, the ORDER matters.
+  For combined transformations, the matrix closest to the point is applied FIRST: if transformation
+  B follows transformation A, the combined matrix is BA (not AB).
 
-- **Confusing matrix multiplication order:** Matrix multiplication is NOT commutative: AB is generally not equal to BA. When applying a transformation matrix to a point, the ORDER matters. For combined transformations, the matrix closest to the point is applied FIRST: if transformation B follows transformation A, the combined matrix is BA (not AB).
+- **Forgetting that the determinant of a singular matrix is zero:** A singular matrix has
+  determinant zero and NO inverse. If asked to find the inverse of a 2x2 matrix, always check that
+  the determinant is non-zero first. A zero determinant means the transformation collapses space
+  (maps the plane onto a line), which is why no inverse exists.
 
-- **Forgetting that the determinant of a singular matrix is zero:** A singular matrix has determinant zero and NO inverse. If asked to find the inverse of a 2x2 matrix, always check that the determinant is non-zero first. A zero determinant means the transformation collapses space (maps the plane onto a line), which is why no inverse exists.
+- **Misidentifying the type of transformation from its matrix:** A reflection in the y-axis has
+  matrix [[-1, 0], [0, 1]] (negative in top-left). A reflection in the x-axis has matrix
+  [[1, 0], [0, -1]] (negative in bottom-right). Students frequently confuse these two. Also, a
+  rotation of 90 degrees anticlockwise gives [[0, -1], [1, 0]], which students often mix up with the
+  clockwise rotation.
 
-- **Misidentifying the type of transformation from its matrix:** A reflection in the y-axis has matrix [[-1, 0], [0, 1]] (negative in top-left). A reflection in the x-axis has matrix [[1, 0], [0, -1]] (negative in bottom-right). Students frequently confuse these two. Also, a rotation of 90 degrees anticlockwise gives [[0, -1], [1, 0]], which students often mix up with the clockwise rotation.
-
-- **Arithmetic errors when calculating determinants and inverses:** For a 2x2 matrix [[a, b], [c, d]], the determinant is ad - bc (not ad + bc). The inverse is (1/det) * [[d, -b], [-c, a]] (note the swap of a and d and the negative signs). A single sign error invalidates the entire calculation. Always double-check by multiplying the matrix by its inverse to get the identity.
+- **Arithmetic errors when calculating determinants and inverses:** For a 2x2 matrix
+  [[a, b], [c, d]], the determinant is ad - bc (not ad + bc). The inverse is (1/det) \*
+  [[d, -b], [-c, a]] (note the swap of a and d and the negative signs). A single sign error
+  invalidates the entire calculation. Always double-check by multiplying the matrix by its inverse
+  to get the identity.
 
 :::
+
 ### Orthogonal Matrices
 
 A square matrix $Q$ is **orthogonal** if $Q^T Q = Q Q^T = I$Which means $Q^{-1} = Q^T$.
@@ -1065,7 +1091,7 @@ A square matrix $Q$ is **orthogonal** if $Q^T Q = Q Q^T = I$Which means $Q^{-1} 
 **Equivalent characterisations:**
 
 - The columns of $Q$ form an orthonormal set (each column has unit length, and distinct columns are
- perpendicular).
+  perpendicular).
 - The rows of $Q$ form an orthonormal set.
 - $\det(Q) = \pm 1$ (since $\det(Q^T)\det(Q) = \det(I) = 1$ and $\det(Q^T) = \det(Q)$).
 
@@ -1081,7 +1107,8 @@ $$
 (Q\mathbf{'\{'}u{'\}'}) \cdot (Q\mathbf{'\{'}v{'\}'}) = \mathbf{'\{'}u{'\}'} \cdot \mathbf{'\{'}v{'\}'}
 $$
 
-In particular, $|Q\mathbf{'\{'}v{'\}'}| = |\mathbf{'\{'}v{'\}'}|$ and the angle between vectors is preserved.
+In particular, $|Q\mathbf{'\{'}v{'\}'}| = |\mathbf{'\{'}v{'\}'}|$ and the angle between vectors is
+preserved.
 
 **Orthogonal diagonalisation (spectral theorem).** A real symmetric matrix $A$ can always be
 Orthogonally diagonalised: $A = QDQ^T$ where $Q$ is orthogonal and $D$ is diagonal. This is a
@@ -1093,19 +1120,19 @@ That can be chosen orthonormal.
 
 ## Summary of Key Results
 
-| Concept | Formula / Result |
+| Concept                         | Formula / Result                                                                            |
 | :------------------------------ | :------------------------------------------------------------------------------------------ | ------- | --- |
-| $2 \times 2$ determinant | $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$ | | |
-| $2 \times 2$ inverse | $A^{-1} = \dfrac{1}{\det(A)}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$ | | |
-| $3 \times 3$ inverse | $A^{-1} = \dfrac{1}{\det(A)}\mathrm{adj}(A)$ | | |
-| Characteristic equation (2x2) | $\lambda^2 - \mathrm{tr}(A)\lambda + \det(A) = 0$ | | |
-| Diagonalisation | $A = PDP^{-1}$Where $D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$ | | |
-| Matrix powers | $A^k = PD^kP^{-1}$ | | |
-| Area scale factor | $                                                                                           | \det(M) | $ |
-| Rotation by $\theta$ | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ | | |
-| Reflection in $y = x\tan\theta$ | $\begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}$ | | |
-| Cramer's rule | $x_i = \det(A_i)/\det(A)$ | | |
-| Steady state of Markov chain | $\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$$\sum s_i = 1$ | | |
+| $2 \times 2$ determinant        | $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$                                |         |     |
+| $2 \times 2$ inverse            | $A^{-1} = \dfrac{1}{\det(A)}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$                 |         |     |
+| $3 \times 3$ inverse            | $A^{-1} = \dfrac{1}{\det(A)}\mathrm{adj}(A)$                                                |         |     |
+| Characteristic equation (2x2)   | $\lambda^2 - \mathrm{tr}(A)\lambda + \det(A) = 0$                                           |         |     |
+| Diagonalisation                 | $A = PDP^{-1}$Where $D = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)$                       |         |     |
+| Matrix powers                   | $A^k = PD^kP^{-1}$                                                                          |         |     |
+| Area scale factor               | $                                                                                           | \det(M) | $   |
+| Rotation by $\theta$            | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$         |         |     |
+| Reflection in $y = x\tan\theta$ | $\begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}$ |         |     |
+| Cramer's rule                   | $x_i = \det(A_i)/\det(A)$                                                                   |         |     |
+| Steady state of Markov chain    | $\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$$\sum s_i = 1$                                |         |     |
 
 <details>
 <summary>Worked Example: Finding Eigenvalues and Eigenvectors</summary>
@@ -1160,8 +1187,7 @@ $AB \neq BA$Confirming that matrix multiplication is not commutative.
 
 ### Problem 2
 
-Find the determinant and inverse of
-$A = \begin{pmatrix} 5 & 3 \\ 2 & 1 \end{pmatrix}$.
+Find the determinant and inverse of $A = \begin{pmatrix} 5 & 3 \\ 2 & 1 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
@@ -1172,7 +1198,8 @@ Since $\det(A) \neq 0$The inverse exists:
 
 $$A^{-1} = \frac{1}{-1}\begin{pmatrix} 1 & -3 \\ -2 & 5 \end{pmatrix} = \begin{pmatrix} -1 & 3 \\ 2 & -5 \end{pmatrix}$$
 
-Verification: $AA^{-1} = \begin{pmatrix} 5 & 3 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} -1 & 3 \\ 2 & -5 \end{pmatrix} = \begin{pmatrix} -5+6 & 15-15 \\ -2+2 & 6-5 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$
+Verification:
+$AA^{-1} = \begin{pmatrix} 5 & 3 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} -1 & 3 \\ 2 & -5 \end{pmatrix} = \begin{pmatrix} -5+6 & 15-15 \\ -2+2 & 6-5 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$
 
 **If you get this wrong, revise:** 2x2 Determinant and Inverse sections.
 
@@ -1243,9 +1270,7 @@ Area scale factor: $|\det(M)| = |-3 \times 3 - 0| = 9$.
 
 Solve the system of equations using matrices:
 
-$$3x + 2y - z = 5$$
-$$x - y + 2z = 1$$
-$$2x + y + z = 4$$
+$$3x + 2y - z = 5$$ $$x - y + 2z = 1$$ $$2x + y + z = 4$$
 
 <details>
 <summary>Solution</summary>
@@ -1311,8 +1336,8 @@ $y$-axis with scale factor $3$. Find the single matrix and describe its effect o
 
 $$M = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}$$
 
-The unit square (area = 1) is mapped to a rectangle with vertices
-$(0,0)$$(2,0)$$(2,3)$$(0,3)$. The new area is $6$.
+The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$$(2,0)$$(2,3)$$(0,3)$. The
+new area is $6$.
 
 Area scale factor: $|\det(M)| = 6$.
 
@@ -1339,7 +1364,9 @@ The only invariant point is the origin $(0, 0)$.
 **Invariant lines:** For an invariant line through the origin, the direction vector must be an
 Eigenvector. Eigenvalues satisfy $(2-\lambda)^2 = 0$So $\lambda = 2$ (repeated).
 
-For $\lambda = 2$: $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$Giving $v_2 = 0$. The only eigenvector direction is $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+For $\lambda = 2$:
+$\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$Giving
+$v_2 = 0$. The only eigenvector direction is $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
 
 The $x$-axis ($y = 0$) is the only invariant line through the origin.
 
@@ -1355,8 +1382,8 @@ $P = \begin{pmatrix} 0.6 & 0.3 \\ 0.4 & 0.7 \end{pmatrix}$. Find the steady-stat
 <details>
 <summary>Solution</summary>
 
-Solve $\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$ where $\mathbf{'\{'}s{'\}'} = \begin{pmatrix} s_1 & s_2 \end{pmatrix}$ with
-$s_1 + s_2 = 1$.
+Solve $\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$ where
+$\mathbf{'\{'}s{'\}'} = \begin{pmatrix} s_1 & s_2 \end{pmatrix}$ with $s_1 + s_2 = 1$.
 
 From $\mathbf{'\{'}s{'\}'}P = \mathbf{'\{'}s{'\}'}$:
 
@@ -1402,8 +1429,8 @@ Ciphertext: "ECJQ".
 
 ### Problem 12
 
-Diagonalise the matrix $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ and use the diagonalisation
-To find $A^4$.
+Diagonalise the matrix $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ and use the
+diagonalisation To find $A^4$.
 
 <details>
 <summary>Solution</summary>
@@ -1416,9 +1443,13 @@ $$(\lambda - 1)(\lambda - 3) = 0 \implies \lambda_1 = 1, \lambda_2 = 3$$
 
 **Eigenvectors:**
 
-$\lambda_1 = 1$: $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies v_1 = -v_2$So $\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+$\lambda_1 = 1$:
+$\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies v_1 = -v_2$So
+$\mathbf{'\{'}v{'\}'}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
-$\lambda_2 = 3$: $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies v_1 = v_2$So $\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+$\lambda_2 = 3$:
+$\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \mathbf{'\{'}0{'\}'} \implies v_1 = v_2$So
+$\mathbf{'\{'}v{'\}'}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
 **Diagonalisation:**
 
