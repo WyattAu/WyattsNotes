@@ -68,7 +68,7 @@
     "@docusaurus/theme-live-codeblock": "^3.10.0",
     "@docusaurus/theme-mermaid": "^3.10.0",
     "@docusaurus/tsconfig": "^3.10.0",
-    "@docusaurus/types": "^3.10.0",
+    "@docusaurus/types": "^3.10.1",
     "@lhci/cli": "^0.14.0",
     "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.16",
