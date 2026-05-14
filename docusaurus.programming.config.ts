@@ -72,7 +72,6 @@ const config = {
         ...commonDocsPluginConfig,
       },
     ],
-    ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
     [
       '@r74tech/docusaurus-plugin-panzoom',
       {
