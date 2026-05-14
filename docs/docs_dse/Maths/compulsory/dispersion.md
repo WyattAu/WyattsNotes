@@ -1,6 +1,8 @@
 ---
 title: Dispersion
-description: "DSE Mathematics statistics notes on measures of dispersion covering range, interquartile range, variance, standard deviation, and box-and-whisker plots."
+description:
+  'DSE Mathematics statistics notes on measures of dispersion covering range, interquartile range,
+  variance, standard deviation, and box-and-whisker plots.'
 date: 2025-06-03T16:18:22.480Z
 tags:
   - Maths
@@ -46,10 +48,9 @@ Order:
 
 - If $n$ is odd, the median is the value at position $\dfrac{n+1}{2}$.
 - If $n$ is even, the median is the average of the values at positions $\dfrac{n}{2}$ and
- $\dfrac{n}{2}+1$.
+  $\dfrac{n}{2}+1$.
 
-The median is robust to outliers since only on the position of data points, not their
-Magnitude.
+The median is robust to outliers since only on the position of data points, not their Magnitude.
 
 <details>
 <summary>Examples</summary>
@@ -76,9 +77,9 @@ The mode is the only measure of central tendency applicable to nominal (categori
 
 | Measure | Uses all values | Affected by outliers | Applicable to categorical data | Unique value |
 | ------- | :-------------: | :------------------: | :----------------------------: | :----------: |
-| Mean | Yes | Yes | No | Yes |
-| Median | No | No | No | Yes |
-| Mode | No | No | Yes | No |
+| Mean    |       Yes       |         Yes          |               No               |     Yes      |
+| Median  |       No        |          No          |               No               |     Yes      |
+| Mode    |       No        |          No          |              Yes               |      No      |
 
 ## Measures of Dispersion
 
@@ -159,10 +160,10 @@ $$
 
 **Why $n$ vs $n-1$?** Dividing by $n-1$ (Bessel's correction) provides an _unbiased_ estimator of
 The population variance when working with a sample. Using only $n$ data points, the sample mean
-$\bar{x}$ is closer to the data points than the true population mean $\mu$So the squared
-Deviations tend to underestimate the true spread. Dividing by $n-1$ compensates for this. In the DSE
-Syllabus, unless the problem explicitly identifies the data as a sample, the population formula
-(dividing by $n$) is expected.
+$\bar{x}$ is closer to the data points than the true population mean $\mu$So the squared Deviations
+tend to underestimate the true spread. Dividing by $n-1$ compensates for this. In the DSE Syllabus,
+unless the problem explicitly identifies the data as a sample, the population formula (dividing by
+$n$) is expected.
 
 <details>
 <summary>Examples</summary>
@@ -201,11 +202,11 @@ We work with class intervals instead.
 ### Key Definitions
 
 - **Class boundaries**: The endpoints of each class interval, with no gaps between consecutive
- classes. For example, if raw intervals are $10$--$19$ and $20$--$29$The class boundaries are
- $9.5$--$19.5$ and $19.5$--$29.5$.
+  classes. For example, if raw intervals are $10$--$19$ and $20$--$29$The class boundaries are
+  $9.5$--$19.5$ and $19.5$--$29.5$.
 - **Class width**: The difference between the upper and lower class boundaries.
 - **Class mark (midpoint)**: $x_i = \dfrac{\mathrm{lower boundary} + \mathrm{upper boundary}}{2}$
- used as the representative value for all data in the class.
+  used as the representative value for all data in the class.
 
 ### Mean of Grouped Data
 
@@ -215,8 +216,7 @@ $$
 \end{aligned}
 $$
 
-Where $k$ is the number of classes, $f_i$ is the frequency of class $i$And $x_i$ is the class
-Mark.
+Where $k$ is the number of classes, $f_i$ is the frequency of class $i$And $x_i$ is the class Mark.
 
 ### Assumed Mean Method (Coding Method)
 
@@ -237,11 +237,11 @@ This method simplifies calculation by working with small integer values of $d_i$
 
 | Class interval | $f_i$ | Class mark $x_i$ | $d_i$ | $f_i d_i$ |
 | -------------- | ----- | ---------------- | ----- | --------- |
-| 30 -- 39 | 4 | 34.5 | $-2$ | $-8$ |
-| 40 -- 49 | 8 | 44.5 | $-1$ | $-8$ |
-| 50 -- 59 | 14 | 54.5 | $0$ | $0$ |
-| 60 -- 69 | 10 | 64.5 | $1$ | $10$ |
-| 70 -- 79 | 4 | 74.5 | $2$ | $8$ |
+| 30 -- 39       | 4     | 34.5             | $-2$  | $-8$      |
+| 40 -- 49       | 8     | 44.5             | $-1$  | $-8$      |
+| 50 -- 59       | 14    | 54.5             | $0$   | $0$       |
+| 60 -- 69       | 10    | 64.5             | $1$   | $10$      |
+| 70 -- 79       | 4     | 74.5             | $2$   | $8$       |
 
 Here $A = 54.5$$h = 10$.
 
@@ -427,15 +427,15 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 </details>
 
 3. **Question:** For the grouped frequency distribution below, find the mean and standard deviation
- using the coding method.
+   using the coding method.
 
- | Class | Frequency |
- | -------- | --------- |
- | 10 -- 19 | 5 |
- | 20 -- 29 | 12 |
- | 30 -- 39 | 18 |
- | 40 -- 49 | 10 |
- | 50 -- 59 | 5 |
+| Class    | Frequency |
+| -------- | --------- |
+| 10 -- 19 | 5         |
+| 20 -- 29 | 12        |
+| 30 -- 39 | 18        |
+| 40 -- 49 | 10        |
+| 50 -- 59 | 5         |
 
 <details>
 <summary>Answer</summary>
@@ -444,27 +444,26 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 - $\sum f_i = 50$$\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
 - $\bar{x} = 34.5 + \frac{-2}{50} \times 10 = 34.5 - 0.4 = 34.1$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
-- $\sigma_d^2 = rac{62}{50} - \left(rac{-2}{50}
-Ight)^2 = 1.24 - 0.0016 = 1.2384$.
-- $\sigma^2 = 1.2384 	imes 10^2 = 123.84$So $\sigma = \sqrt{123.84} pprox 11.13$.
+- $\sigma_d^2 = \frac{62}{50} - \left(\frac{-2}{50}\right)^2 = 1.24 - 0.0016 = 1.2384$.
+- $\sigma^2 = 1.2384 \times 10^2 = 123.84$. So $\sigma = \sqrt{123.84} \approx 11.13$.
 </details>
 
-4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$$\bar{x}_1 = 72$
-$\sigma_1 = 8$). Class B ($n_2 = 20$$\bar{x}_2 = 80$$\sigma_2 = 6$). Find the combined mean and
-Combined standard deviation.
+4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$$\bar{x}_1 = 72$ $\sigma_1 = 8$).
+Class B ($n_2 = 20$$\bar{x}_2 = 80$$\sigma_2 = 6$). Find the combined mean and Combined standard
+deviation.
 <details>
 <summary>Answer</summary>
 
 - Combined mean:
- $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
+  $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
 - Combined variance:
   $$
- \begin{aligned}
- \sigma_c^2 &= \frac{30(64) + 20(36) + 30(72-75.2)^2 + 20(80-75.2)^2}{50} \\
- &= \frac{1920 + 720 + 30(10.24) + 20(23.04)}{50} \\
- &= \frac{1920 + 720 + 307.2 + 460.8}{50} \\
- &= \frac{3408}{50} = 68.16
- \end{aligned}
+  \begin{aligned}
+  \sigma_c^2 &= \frac{30(64) + 20(36) + 30(72-75.2)^2 + 20(80-75.2)^2}{50} \\
+  &= \frac{1920 + 720 + 30(10.24) + 20(23.04)}{50} \\
+  &= \frac{1920 + 720 + 307.2 + 460.8}{50} \\
+  &= \frac{3408}{50} = 68.16
+  \end{aligned}
   $$
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
 </details>
@@ -517,15 +516,15 @@ Multiplied by $2$ and then $5$ is added, find the new mean and new standard devi
 </details>
 
 9. **Question:** The histogram below (described verbally) shows the distribution of weights of $50$
- apples. The class intervals and frequencies are:
+   apples. The class intervals and frequencies are:
 
- | Weight (g) | Frequency |
- | ---------- | --------- |
- | 100 -- 119 | 6 |
- | 120 -- 139 | 14 |
- | 140 -- 159 | 20 |
- | 160 -- 179 | 8 |
- | 180 -- 199 | 2 |
+| Weight (g) | Frequency |
+| ---------- | --------- |
+| 100 -- 119 | 6         |
+| 120 -- 139 | 14        |
+| 140 -- 159 | 20        |
+| 160 -- 179 | 8         |
+| 180 -- 199 | 2         |
 
 Estimate the median weight from the cumulative frequency distribution.
 
@@ -534,21 +533,21 @@ Estimate the median weight from the cumulative frequency distribution.
 
 - Cumulative frequencies: $6, 20, 40, 48, 50$.
 - The median is the $\frac{50}{2} = 25$Th value, which lies in the class $140$--$159$ (cumulative
- $20$ to $40$).
+  $20$ to $40$).
 - Using linear interpolation within the class:
   $$
- \begin{aligned}
- \mathrm{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
- &= 139.5 + \frac{5}{20} \times 20 \\
- &= 139.5 + 5 = 144.5 \mathrm{ g}
- \end{aligned}
+  \begin{aligned}
+  \mathrm{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
+  &= 139.5 + \frac{5}{20} \times 20 \\
+  &= 139.5 + 5 = 144.5 \mathrm{ g}
+  \end{aligned}
   $$
 
 </details>
 
-10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$
-The mean, and the population variance. Verify your variance using both the definition formula and
-The computational formula.
+10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
+mean, and the population variance. Verify your variance using both the definition formula and The
+computational formula.
 <details>
 <summary>Answer</summary>
 
@@ -557,17 +556,17 @@ The computational formula.
 - $\bar{x} = \frac{52}{10} = 5.2$.
 - **Definition formula:**
   $$
- \begin{aligned}
- \sigma^2 &= \frac{(3-5.2)^2 + (7-5.2)^2 + (7-5.2)^2 + (2-5.2)^2 + (9-5.2)^2 + (5-5.2)^2 + (1-5.2)^2 + (8-5.2)^2 + (6-5.2)^2 + (4-5.2)^2}{10} \\
- &= \frac{4.84+3.24+3.24+10.24+14.44+0.04+17.64+7.84+0.64+1.44}{10} \\
- &= \frac{63.6}{10} = 6.36
- \end{aligned}
+  \begin{aligned}
+  \sigma^2 &= \frac{(3-5.2)^2 + (7-5.2)^2 + (7-5.2)^2 + (2-5.2)^2 + (9-5.2)^2 + (5-5.2)^2 + (1-5.2)^2 + (8-5.2)^2 + (6-5.2)^2 + (4-5.2)^2}{10} \\
+  &= \frac{4.84+3.24+3.24+10.24+14.44+0.04+17.64+7.84+0.64+1.44}{10} \\
+  &= \frac{63.6}{10} = 6.36
+  \end{aligned}
   $$
 - **Computational formula:**
   $$
- \begin{aligned}
- \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
- \end{aligned}
+  \begin{aligned}
+  \sigma^2 &= \frac{334}{10} - \left(\frac{52}{10}\right)^2 = 33.4 - 27.04 = 6.36 \quad \checkmark
+  \end{aligned}
   $$
 
 </details>
@@ -583,8 +582,8 @@ Dispersion.
 - Sorted: $\{3200, 3500, 3800, 4200, 4500, 4800, 5200, 12000\}$.
 - Median: $\frac{4200+4500}{2} = 4350$.
 - The median ($4350$) is a far more representative measure here. The single extreme value of
- `USD 12000` (likely the owner's own salary or a manager's) inflates the mean by `USD 800`. The median
- is resistant to outliers and better reflects what a typical worker earns.
+  `USD 12000` (likely the owner's own salary or a manager's) inflates the mean by `USD 800`. The
+  median is resistant to outliers and better reflects what a typical worker earns.
 - The range ($12000 - 3200 = 8800$) and the large gap between the mean and median both indicate
 Significant skewness, confirming the mean is a poor choice of summary statistic.
 </details>
@@ -604,18 +603,20 @@ Variance.
 </details>
 </details>
 
-For the A-Level treatment of this topic, see [Data Representation](https://alevel.wyattau.com/docs/maths/statistics/data-representation).
+For the A-Level treatment of this topic, see
+[Data Representation](https://alevel.wyattau.com/docs/maths/statistics/data-representation).
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Dispersion**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-dispersion) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Dispersion**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-dispersion) contains the hardest questions within
+the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dispersion with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dispersion
+with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ---
 
@@ -626,14 +627,16 @@ See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instruc
 For statistics problems in DSE Paper 1:
 
 1. When computing the mean, show the sum divided by $n$ before giving the decimal.
-2. When computing variance, use the computational formula $\sigma^2 = \dfrac{\sum x_i^2}{n} - \bar{x}^2$ and show both terms.
+2. When computing variance, use the computational formula
+   $\sigma^2 = \dfrac{\sum x_i^2}{n} - \bar{x}^2$ and show both terms.
 3. For grouped data, show the class marks and the coding method in a table.
 4. For the coding method, state the assumed mean $A$ and class width $h$.
 5. For box plots, label all five values (min, $Q_1$$Q_2$$Q_3$Max).
 
 ### Significant Figures
 
-The DSE requires answers to be given to 3 significant figures unless the question specifies otherwise. Exact fractions are preferred when they arise .
+The DSE requires answers to be given to 3 significant figures unless the question specifies
+otherwise. Exact fractions are preferred when they arise .
 
 ### Common DSE Question Types
 
@@ -649,7 +652,8 @@ The DSE requires answers to be given to 3 significant figures unless the questio
 
 **Worked Example 13: Effect of adding a data point**
 
-A dataset $\{2, 5, 8, 11, 14\}$ has mean $\bar{x} = 8$ and variance $\sigma^2 = 20$. Find the new mean and variance if the value $20$ is added.
+A dataset $\{2, 5, 8, 11, 14\}$ has mean $\bar{x} = 8$ and variance $\sigma^2 = 20$. Find the new
+mean and variance if the value $20$ is added.
 
 <details>
 <summary>Solution</summary>
@@ -664,7 +668,8 @@ New variance: $\sigma'^2 = \dfrac{810}{6} - 10^2 = 135 - 100 = 35$.
 
 **Worked Example 14: Standardised scores**
 
-In an exam, the mean is 60 and the standard deviation is 10. Student A scores 75 and Student B scores 55. Express each score as a standardised score (z-score).
+In an exam, the mean is 60 and the standard deviation is 10. Student A scores 75 and Student B
+scores 55. Express each score as a standardised score (z-score).
 
 <details>
 <summary>Solution</summary>
@@ -673,7 +678,8 @@ $$z_A = \frac{75 - 60}{10} = 1.5$$
 
 $$z_B = \frac{55 - 60}{10} = -0.5$$
 
-Student A scored 1.5 standard deviations above the mean; Student B scored 0.5 standard deviations below.
+Student A scored 1.5 standard deviations above the mean; Student B scored 0.5 standard deviations
+below.
 
 </details>
 
@@ -704,11 +710,13 @@ Try $\{2, 6, 6, 8, 8\}$: sum $= 30$$\sum x_i^2 = 4 + 36 + 36 + 64 + 64 = 204$.
 
 Try $\{4, 6, 6, 6, 8\}$: sum $= 30$$\sum x_i^2 = 16 + 36 + 36 + 36 + 64 = 188$.
 
-There may be no solution with 5 positive integers. Let me try $\{2, 5, 7, 7, 9\}$: sum $= 30$$\sum x_i^2 = 4 + 25 + 49 + 49 + 81 = 208$.
+There may be no solution with 5 positive integers. Let me try $\{2, 5, 7, 7, 9\}$: sum
+$= 30$$\sum x_i^2 = 4 + 25 + 49 + 49 + 81 = 208$.
 
 $\{3, 5, 6, 8, 8\}$: sum $= 30$$\sum x_i^2 = 9 + 25 + 36 + 64 + 64 = 198$.
 
-$\{4, 5, 6, 7, 8\}$: $\sum x_i^2 = 190$. Need 200. The deficit is 10. If we change 5 to 6 and 6 to 5: $\{4, 6, 5, 7, 8\}$: same sum of squares.
+$\{4, 5, 6, 7, 8\}$: $\sum x_i^2 = 190$. Need 200. The deficit is 10. If we change 5 to 6 and 6 to
+5: $\{4, 6, 5, 7, 8\}$: same sum of squares.
 
 If we change 4 to 5 and 8 to 7: $\{5, 5, 6, 7, 7\}$: $\sum x_i^2 = 25 + 25 + 36 + 49 + 49 = 184$.
 
@@ -722,13 +730,13 @@ The constraints may not be satisfiable with integers. In an exam, this would be 
 
 For the frequency distribution below, find the standard deviation using the assumed mean method.
 
-| Class | Frequency |
-|---|---|
-| 5 -- 9 | 3 |
-| 10 -- 14 | 7 |
-| 15 -- 19 | 12 |
-| 20 -- 24 | 5 |
-| 25 -- 29 | 3 |
+| Class    | Frequency |
+| -------- | --------- |
+| 5 -- 9   | 3         |
+| 10 -- 14 | 7         |
+| 15 -- 19 | 12        |
+| 20 -- 24 | 5         |
+| 25 -- 29 | 3         |
 
 <details>
 <summary>Solution</summary>
@@ -738,12 +746,12 @@ Class marks: $7$$12$$17$$22$$27$. $A = 17$$h = 5$.
 $d_i$: $-2$$-1$$0$$1$$2$.
 
 | $f_i$ | $d_i$ | $f_id_i$ | $f_id_i^2$ |
-|---|---|---|---|
-| 3 | $-2$ | $-6$ | 12 |
-| 7 | $-1$ | $-7$ | 7 |
-| 12 | 0 | 0 | 0 |
-| 5 | 1 | 5 | 5 |
-| 3 | 2 | 6 | 12 |
+| ----- | ----- | -------- | ---------- |
+| 3     | $-2$  | $-6$     | 12         |
+| 7     | $-1$  | $-7$     | 7          |
+| 12    | 0     | 0        | 0          |
+| 5     | 1     | 5        | 5          |
+| 3     | 2     | 6        | 12         |
 
 $n = 30$$\sum f_id_i = -2$$\sum f_id_i^2 = 36$.
 
@@ -761,7 +769,9 @@ $\sigma = \sqrt{\dfrac{269}{9}} = \dfrac{\sqrt{269}}{3} \approx 5.47$.
 
 ## DSE Exam-Style Questions
 
-**DSE Practice 1.** Two groups of students took the same test. Group A: $n_1 = 40$$\bar{x}_1 = 65$$\sigma_1 = 8$. Group B: $n_2 = 60$$\bar{x}_2 = 72$$\sigma_2 = 10$. Find the overall mean and standard deviation.
+**DSE Practice 1.** Two groups of students took the same test. Group A:
+$n_1 = 40$$\bar{x}_1 = 65$$\sigma_1 = 8$. Group B: $n_2 = 60$$\bar{x}_2 = 72$$\sigma_2 = 10$. Find
+the overall mean and standard deviation.
 
 <details>
 <summary>Solution</summary>
@@ -780,7 +790,8 @@ $$\sigma_c = \sqrt{97.36} \approx 9.87$$
 
 </details>
 
-**DSE Practice 2.** The heights (in cm) of 8 students are: 158, 162, 165, 168, 170, 172, 175, 180. After converting to feet (1 cm = 0.03281 ft), find the mean and standard deviation in feet.
+**DSE Practice 2.** The heights (in cm) of 8 students are: 158, 162, 165, 168, 170, 172, 175, 180.
+After converting to feet (1 cm = 0.03281 ft), find the mean and standard deviation in feet.
 
 <details>
 <summary>Solution</summary>
@@ -803,45 +814,53 @@ $\sigma_Y = 0.03281 \times 6.647 \approx 0.2181$ ft.
 
 </details>
 
-**DSE Practice 3.** For the dataset $\{1, 3, 5, 7, 9, 11, 13\}$Find the mean deviation (mean absolute deviation) and compare it with the standard deviation.
+**DSE Practice 3.** For the dataset $\{1, 3, 5, 7, 9, 11, 13\}$Find the mean deviation (mean
+absolute deviation) and compare it with the standard deviation.
 
 <details>
 <summary>Solution</summary>
 
 $\bar{x} = \dfrac{49}{7} = 7$.
 
-Mean deviation $= \dfrac{|1-7| + |3-7| + |5-7| + |7-7| + |9-7| + |11-7| + |13-7|}{7} = \dfrac{6 + 4 + 2 + 0 + 2 + 4 + 6}{7} = \dfrac{24}{7} \approx 3.43$.
+Mean deviation
+$= \dfrac{|1-7| + |3-7| + |5-7| + |7-7| + |9-7| + |11-7| + |13-7|}{7} = \dfrac{6 + 4 + 2 + 0 + 2 + 4 + 6}{7} = \dfrac{24}{7} \approx 3.43$.
 
 $\sigma^2 = \dfrac{1 + 9 + 25 + 49 + 81 + 121 + 169}{7} - 49 = \dfrac{455}{7} - 49 = 65 - 49 = 16$.
 
 $\sigma = 4$.
 
-The standard deviation (4) is greater than the mean deviation (3.43), which is always the case for datasets that are not constant.
+The standard deviation (4) is greater than the mean deviation (3.43), which is always the case for
+datasets that are not constant.
 
 </details>
 
-**DSE Practice 4.** A set of data has $\bar{x} = 50$ and $\sigma = 4$. If every value is increased by $k$The new standard deviation becomes 10. Find $k$ and explain your answer.
+**DSE Practice 4.** A set of data has $\bar{x} = 50$ and $\sigma = 4$. If every value is increased
+by $k$The new standard deviation becomes 10. Find $k$ and explain your answer.
 
 <details>
 <summary>Solution</summary>
 
-Adding a constant $k$ does not change the standard deviation. Therefore, the new standard deviation should still be $\sigma = 4$Not $10$.
+Adding a constant $k$ does not change the standard deviation. Therefore, the new standard deviation
+should still be $\sigma = 4$Not $10$.
 
-There is no value of $k$ that changes the standard deviation from 4 to 10 by addition alone. To change the standard deviation, we would need to multiply by a constant. If $Y = aX + b$Then $\sigma_Y = |a|\sigma_X$. For $\sigma_Y = 10$: $|a| = \dfrac{10}{4} = 2.5$.
+There is no value of $k$ that changes the standard deviation from 4 to 10 by addition alone. To
+change the standard deviation, we would need to multiply by a constant. If $Y = aX + b$Then
+$\sigma_Y = |a|\sigma_X$. For $\sigma_Y = 10$: $|a| = \dfrac{10}{4} = 2.5$.
 
-The question likely intends a multiplication, not just addition. If $Y = 2.5X + k$Then $\sigma_Y = 10$ for any $k$.
+The question likely intends a multiplication, not just addition. If $Y = 2.5X + k$Then
+$\sigma_Y = 10$ for any $k$.
 
 </details>
 
 **DSE Practice 5.** The table shows the distribution of marks in a test.
 
-| Marks | Frequency |
-|---|---|
-| 0 -- 19 | 4 |
-| 20 -- 39 | 10 |
-| 40 -- 59 | 22 |
-| 60 -- 79 | 14 |
-| 80 -- 100 | 5 |
+| Marks     | Frequency |
+| --------- | --------- |
+| 0 -- 19   | 4         |
+| 20 -- 39  | 10        |
+| 40 -- 59  | 22        |
+| 60 -- 79  | 14        |
+| 80 -- 100 | 5         |
 
 Estimate the mean and standard deviation.
 
@@ -857,12 +876,12 @@ $d_i$: $-2$$-1$$0$$1$$2$ (approximately; the last class has width 21).
 Using approximate equal widths:
 
 | $f_i$ | $x_i$ | $d_i$ | $f_id_i$ | $f_id_i^2$ |
-|---|---|---|---|---|
-| 4 | 9.5 | $-2$ | $-8$ | 16 |
-| 10 | 29.5 | $-1$ | $-10$ | 10 |
-| 22 | 49.5 | 0 | 0 | 0 |
-| 14 | 69.5 | 1 | 14 | 14 |
-| 5 | 89.5 | 2 | 10 | 20 |
+| ----- | ----- | ----- | -------- | ---------- |
+| 4     | 9.5   | $-2$  | $-8$     | 16         |
+| 10    | 29.5  | $-1$  | $-10$    | 10         |
+| 22    | 49.5  | 0     | 0        | 0          |
+| 14    | 69.5  | 1     | 14       | 14         |
+| 5     | 89.5  | 2     | 10       | 20         |
 
 $n = 55$$\sum f_id_i = 6$$\sum f_id_i^2 = 60$.
 

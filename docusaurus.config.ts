@@ -21,7 +21,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const commonDocsPluginConfig = createCommonDocsPluginConfig(false);
+const commonDocsPluginConfig = createCommonDocsPluginConfig(true);
 
 const config = {
   title: "Wyatt's Notes",

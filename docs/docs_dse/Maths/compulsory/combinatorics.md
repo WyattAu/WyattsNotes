@@ -1,6 +1,8 @@
 ---
 title: Combinatorics
-description: "DSE Mathematics combinatorics notes covering permutations, combinations, counting principles, binomial theorem, and probability applications."
+description:
+  'DSE Mathematics combinatorics notes covering permutations, combinations, counting principles,
+  binomial theorem, and probability applications.'
 date: 2025-06-03T11:59:39.630Z
 tags:
   - Maths
@@ -16,9 +18,9 @@ Combinatorics is the study of enumeration and arrangement.
 
 ### Sum Rule
 
-Given two [mutually exclusive](probability#mutually-exclusive-events) events, where the first
-Event can occur in $n_1$ distinct ways and the second event in $n_2$ distinct ways, the total number
-Of occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
+Given two [mutually exclusive](probability#mutually-exclusive-events) events, where the first Event
+can occur in $n_1$ distinct ways and the second event in $n_2$ distinct ways, the total number Of
+occurrences ($N$) for either event is $n_1 + n_2$. This extends to $k$ mutually exclusive events:
 
 $$
 \begin{aligned}
@@ -85,7 +87,8 @@ $$
 
 A combination is a selection of $r$ objects from $n$ distinct objects where order is irrelevant.
 Since the number of ways to permute the given selection is ($r!$), the combination
-($n \mathbf{'\{'}C{'\}'} r$) can multiply $r!$ to obtain the permutation ($n \mathbf{'\{'}P{'\}'} r$):
+($n \mathbf{'\{'}C{'\}'} r$) can multiply $r!$ to obtain the permutation
+($n \mathbf{'\{'}P{'\}'} r$):
 
 $$
 \begin{aligned}
@@ -124,10 +127,10 @@ $$
 
 In a case where $k = \sum_{i=0}^m n_i$$k, n_i, m \in \mathbb{'\{'}Z^+{'\}'}$The possible number of
 Solutions ($N$) can be thought of using the stars and bars method. This method imagine a $m-1$
-Number of bars as separations between each share of $k$ distributed to each $n_i$Due to the
-Discrete behavior of the separations, $k$ can be thought of as a number of stars. The total state
-The three bars are allowed in is therefore $k+m-1$Therefore the possible number of solutions would
-Be the combination of the bars, hence:
+Number of bars as separations between each share of $k$ distributed to each $n_i$Due to the Discrete
+behavior of the separations, $k$ can be thought of as a number of stars. The total state The three
+bars are allowed in is therefore $k+m-1$Therefore the possible number of solutions would Be the
+combination of the bars, hence:
 
 $$
 \begin{aligned}
@@ -206,10 +209,8 @@ $$
 The sign alternates: add singleton sizes, subtract pairwise intersections, add triple intersections,
 And so on.
 
-:::info
-Connection to Probability The inclusion-exclusion principle has a direct analogue in
-Probability via the [addition rule](probability)). If $A, B$ are events in a sample space $S$
-Then:
+:::info Connection to Probability The inclusion-exclusion principle has a direct analogue in
+Probability via the [addition rule](probability)). If $A, B$ are events in a sample space $S$ Then:
 
 $$
 \begin{aligned}
@@ -217,8 +218,7 @@ $$
 \end{aligned}
 $$
 
-This is just inclusion-exclusion divided by $|S|$.
-:::
+This is just inclusion-exclusion divided by $|S|$. :::
 
 <details>
 <summary>Examples</summary>
@@ -300,12 +300,10 @@ $$
 \end{aligned}
 $$
 
-:::warning
-Only apply the division by 2 when the problem explicitly states that reflections are
+:::warning Only apply the division by 2 when the problem explicitly states that reflections are
 Equivalent. For problems involving people seated at a round table, clockwise and anticlockwise
 Orderings are distinct -- a seating where person $A$ has person $B$ on their left is different from
-Person $B$ on their right.
-:::
+Person $B$ on their right. :::
 
 <details>
 <summary>Examples</summary>
@@ -390,10 +388,10 @@ Consider element 1. In any derangement, element 1 is sent to some position $j \n
 $n-1$ choices for $j$). Now consider element $j$:
 
 - If element $j$ goes to position 1, the remaining $n-2$ elements must be deranged among themselves:
- $!(n-2)$ ways.
+  $!(n-2)$ ways.
 - If element $j$ does not go to position 1, we have $n-1$ elements (all except 1) with $n-1$
- positions (all except position $j$), where element $j$ cannot go to position 1 and each remaining
- element cannot go to its own position: $!(n-1)$ ways.
+  positions (all except position $j$), where element $j$ cannot go to position 1 and each remaining
+  element cannot go to its own position: $!(n-1)$ ways.
 
 Since $j$ can be any of $n-1$ elements:
 
@@ -407,9 +405,9 @@ $$
 
 ### Small Values
 
-| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| $n$  | 0   | 1   | 2   | 3   | 4   | 5   | 6   |
 | ---- | --- | --- | --- | --- | --- | --- | --- |
-| $!n$ | 1 | 0 | 1 | 2 | 9 | 44 | 265 |
+| $!n$ | 1   | 0   | 1   | 2   | 9   | 44  | 265 |
 
 <details>
 <summary>Examples</summary>
@@ -518,8 +516,8 @@ A different outcome?
 - Choosing a committee: combination (order does not matter).
 - Assigning gold/silver/bronze: permutation. Selecting 3 finalists: combination.
 
-The relationship $\binom{n}{r} = \frac{n \mathbf{'\{'}P{'\}'} r}{r!}$ is the definitive test -- if you can
-Justify dividing out the $r!$You have a combination.
+The relationship $\binom{n}{r} = \frac{n \mathbf{'\{'}P{'\}'} r}{r!}$ is the definitive test -- if
+you can Justify dividing out the $r!$You have a combination.
 
 </details>
 
@@ -558,7 +556,7 @@ Stars and bars counts the number of **non-negative integer solutions** to an equ
 Apply when:
 
 - Variables have upper bounds (e.g. Each person gets at most 3 items) -- use inclusion-exclusion to
- subtract invalid cases.
+  subtract invalid cases.
 - Objects are distinct -- use the multiplication principle or Stirling numbers instead.
 - Order matters within groups -- stars and bars only counts compositions, not arrangements.
 
@@ -569,20 +567,26 @@ Are distinct.
 
 ---
 
-<details>
-<summary>Wrap-up Questions</summary>
-1. **Question:** How many 8-character passwords exist if they must contain at least one uppercase letter, one lowercase letter, one digit, and one symbol (from 10 symbols), with no repeated characters?
+### Wrap-up Questions
+
+1. **Question:** How many 8-character passwords exist if they must contain at least one uppercase
+letter, one lowercase letter, one digit, and one symbol (from 10 symbols), with no repeated
+characters?
 <details>
 <summary>Answer</summary>
-- Total permutations of 8 distinct characters from 72 options (26 uppercase, 26 lowercase, 10 digits, 10 symbols): $P(72,8)$. 
-- Subtract invalid cases using inclusion-exclusion (approximate): 
+
+- Total permutations of 8 distinct characters from 72 options (26 uppercase, 26 lowercase, 10
+  digits, 10 symbols): $P(72,8)$.
+- Subtract invalid cases using inclusion-exclusion (approximate):
   $$
- \begin{aligned}
- P(72,8) - \binom{4}{1}P(46,8) + \binom{4}{2}P(20,8) - \binom{4}{3}P(10,8) + 0
- \end{aligned}
+  \begin{aligned}
+  P(72,8) - \binom{4}{1}P(46,8) + \binom{4}{2}P(20,8) - \binom{4}{3}P(10,8) + 0
+  \end{aligned}
   $$
- Note: since the character types have different sizes (26, 26, 10, 10), the inclusion-exclusion terms subtract cases missing one type, add back cases missing two types, etc., using the size of the remaining pool after removing each type.
-</details>
+  Note: since the character types have different sizes (26, 26, 10, 10), the inclusion-exclusion
+  terms subtract cases missing one type, add back cases missing two types, etc., using the size of
+  the remaining pool after removing each type.
+  </details>
 
 2. **Question:** You have 9 books: 4 distinct mathematics books, 3 identical physics books, and 2
 Identical chemistry books. How many distinct ways can they be arranged on a shelf?
@@ -619,9 +623,9 @@ Questions if you must pick $\lq 1$ from each section?
 
 - Use inclusion-exclusion:
   $$
- \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
+  \binom{15}{6} - \binom{3}{1}\binom{10}{6} + \binom{3}{2}\binom{5}{6} - \binom{3}{3}\binom{0}{6}
   $$
- (Note: $\binom{5}{6} = 0$$\binom{0}{6} = 0$).
+  (Note: $\binom{5}{6} = 0$$\binom{0}{6} = 0$).
 
 </details>
 
@@ -649,7 +653,7 @@ Can be made with 3-5 toppings, including at least one meat and one vegetable?
 <summary>Answer</summary>
 
 - For $k$ toppings ($k = 3,4,5$): $\binom{10}{k} - \binom{6}{k} - \binom{4}{k}$ (exclude
- all-meat/all-vegetable).
+  all-meat/all-vegetable).
 - Sum:
 $\left[\binom{10}{3}{-}\binom{6}{3}{-}\binom{4}{3}\right] {+} \left[\binom{10}{4}{-}\binom{6}{4}{-}\binom{4}{4}\right] {+} \left[\binom{10}{5}{-}\binom{6}{5}{-}\binom{4}{5}\right] = 96{+}194{+}246 = 536$.
 </details>
@@ -670,7 +674,7 @@ How many plates exist if the number formed by the digits is even?
 
 - Letters: $P(26,3)$.
 - Digits: Choose last digit (even: 0,2,4,6,8; 5 options), then arrange first two from remaining 9
- digits: $5 \cdot P(9,2)$.
+  digits: $5 \cdot P(9,2)$.
 - Total: $P(26,3) \cdot 5 \cdot 9 \cdot 8 = 5,616,000$.
 </details>
 
@@ -729,7 +733,7 @@ Sit together, and children must be separated by at least one adult. How many arr
 - Total assignments: $3^{10}$.
 - Subtract cases where a child gets $<2$ gifts (inclusion-exclusion):
   $$
- 3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
+  3^{10} - \binom{3}{1}\left[\binom{10}{0}2^{10} + \binom{10}{1}2^9\right] + \binom{3}{2}\left[1 + 2\binom{10}{1} + \binom{10}{2}2!\right] = 59,049 - 18,099 = 40,950.
   $$
 
 </details>
@@ -743,8 +747,8 @@ Particular woman (X). How many valid pairings?
 - Subtract pairings where A or B is paired with X: $5! - 2 \cdot 4! = 120 - 48 = 72$.
 </details>
 
-18. **Question:** How many distinct 4-digit numbers can be formed from `{1,2,3,4,5,6}` with each digit
-Used $\lq2$ times?
+18. **Question:** How many distinct 4-digit numbers can be formed from `{1,2,3,4,5,6}` with each
+digit Used $\lq2$ times?
 <details>
 <summary>Answer</summary>
 
@@ -770,18 +774,18 @@ $\lq 1$ of each type?
 - First take one of each type. Distribute remaining 4 donuts freely:
 $\binom{4+8-1}{4} = \binom{11}{4} = 330$.
 </details>
-</details>
 
 ---
 
-:::tip
-Diagnostic Test
-Ready to test your understanding of **Combinatorics**? The [diagnostic test](/docs/dse/Maths/diagnostics/diag-combinatorics) contains the hardest questions within the DSE specification for this topic, each with a full worked solution.
+:::tip Diagnostic Test Ready to test your understanding of **Combinatorics**? The
+[diagnostic test](/docs/dse/Maths/diagnostics/diag-combinatorics) contains the hardest questions
+within the DSE specification for this topic, each with a full worked solution.
 
-**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Combinatorics with other DSE mathematics topics to test synthesis under exam conditions.
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
+Combinatorics with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on self-marking and building a personal test matrix.
-:::
+See [Diagnostic Guide](/docs/dse/Maths/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
 
 ## Summary
 

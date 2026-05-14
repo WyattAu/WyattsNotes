@@ -72,12 +72,6 @@ const config = {
         ...commonDocsPluginConfig,
       },
     ],
-    [
-      '@r74tech/docusaurus-plugin-panzoom',
-      {
-        selector: '.mermaid svg',
-      },
-    ],
   ],
 
   themeConfig: {
