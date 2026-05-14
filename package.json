@@ -51,7 +51,7 @@
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "docusaurus-theme-redoc": "^2.5.0",
     "dotenv-flow": "^4.1.0",
-    "katex": "^0.16.44",
+    "katex": "^0.16.46",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
