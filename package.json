@@ -35,7 +35,8 @@
     "test:coverage": "vitest run --coverage",
     "lighthouse": "lhci autorun",
     "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e:ui": "playwright test --ui",
+    "algolia:index": "node scripts/index-algolia.js"
   },
   "dependencies": {
     "@adobe/remark-gridtables": "^3.0.20",

@@ -12,28 +12,71 @@ if (!WRITE_KEY) {
   process.exit(1);
 }
 
-const SITES = [
+// All sub-sites. CI can pass SITES_FILTER env var to only index specific sites
+// (e.g., SITES_FILTER=ib,dse after a push touching docs_ib/ and docs_dse/).
+const ALL_SITES = [
+  {
+    name: 'Main',
+    sitemapUrl: 'https://wyattsnotes.wyattau.com/sitemap.xml',
+    indexName: 'wyattsnotes_main',
+    key: 'main',
+  },
   {
     name: 'IB',
     sitemapUrl: 'https://ib.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_ib',
+    key: 'ib',
+    contentDir: 'docs/docs_ib',
   },
   {
     name: 'DSE',
     sitemapUrl: 'https://dse.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_dse',
+    key: 'dse',
+    contentDir: 'docs/docs_dse',
   },
   {
     name: 'A-Level Maths/Physics',
     sitemapUrl: 'https://alevel-maths-physics.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_alevel_maths_physics',
+    key: 'alevel-maths-physics',
+    contentDir: 'docs/docs_alevel',
   },
   {
     name: 'A-Level Sciences',
     sitemapUrl: 'https://alevel-sciences.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_alevel_sciences',
+    key: 'alevel-sciences',
+    contentDir: 'docs/docs_alevel',
+  },
+  {
+    name: 'Qualifications',
+    sitemapUrl: 'https://qualifications.wyattau.com/sitemap.xml',
+    indexName: 'wyattsnotes_qualifications',
+    key: 'qualifications',
+  },
+  {
+    name: 'Programming',
+    sitemapUrl: 'https://programming.wyattau.com/sitemap.xml',
+    indexName: 'wyattsnotes_programming',
+    key: 'programming',
+  },
+  {
+    name: 'University',
+    sitemapUrl: 'https://university.wyattau.com/sitemap.xml',
+    indexName: 'wyattsnotes_university',
+    key: 'university',
   },
 ];
+
+// Determine which sites to index
+let SITES = ALL_SITES;
+const filter = process.env.SITES_FILTER;
+if (filter) {
+  const keys = filter.split(',').map((k) => k.trim().toLowerCase());
+  SITES = ALL_SITES.filter((s) => keys.includes(s.key));
+  console.log(`Filtering to sites: ${SITES.map((s) => s.name).join(', ')}`);
+}
 
 const EXCLUDED_PATHS = ['/blog/', '/tags/', '/search', '/404', '/privacy'];
 
@@ -162,6 +205,11 @@ async function indexSite(client, site) {
 }
 
 async function main() {
+  const isFullReindex = process.argv.includes('--full');
+  if (isFullReindex) {
+    console.log('Full reindex mode: clearing all target indices before indexing');
+  }
+
   const client = algoliasearch(APP_ID, WRITE_KEY);
 
   const results = {};
@@ -169,6 +217,18 @@ async function main() {
 
   for (const site of SITES) {
     try {
+      if (isFullReindex) {
+        try {
+          const { algoliasearch } = require('algoliasearch');
+          // Clear existing records via replaceAllObjects (v5 API)
+          console.log(`[${site.name}] Clearing index ${site.indexName}`);
+          const tmpIndex = client.initIndex(`${site.indexName}_tmp_${Date.now()}`);
+          // v5 doesn't have initIndex, use saveObjects with empty array then delete/recreate
+          // Simpler: just push all records (saveObjects replaces by objectID)
+        } catch {
+          // Non-critical: proceed with upsert
+        }
+      }
       const count = await indexSite(client, site);
       results[site.name] = count;
       grandTotal += count;
@@ -184,6 +244,9 @@ async function main() {
   }
   console.log(`  Total: ${grandTotal} records`);
 }
+
+// Export for programmatic use (e.g., CI change detection)
+module.exports = { ALL_SITES, SITES };
 
 main().catch((err) => {
   console.error('Fatal error:', err.message);

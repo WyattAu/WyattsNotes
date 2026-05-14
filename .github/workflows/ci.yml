@@ -5,6 +5,8 @@ on:
     branches: [main, staging]
   pull_request:
     branches: [main, staging]
+  schedule:
+    - cron: '0 3 * * 0'  # Weekly Sunday 03:00 UTC — full Algolia reindex
 
 jobs:
   validate:
@@ -257,3 +259,80 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
+  algolia-index:
+    name: Update Algolia Search Index
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [validate]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Detect which sites changed
+        id: changed
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD)
+          SITES=""
+          if echo "$CHANGED" | grep -q "docs/docs_ib\|docusaurus\.ib\."; then
+            SITES="${SITES},ib"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_dse\|docusaurus\.dse\."; then
+            SITES="${SITES},dse"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_alevel\|docusaurus\.alevel"; then
+            SITES="${SITES},alevel-maths-physics,alevel-sciences"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_qualifications\|docusaurus\.qualifications\."; then
+            SITES="${SITES},qualifications"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_languages\|docs/docs_cpp\|docusaurus\.programming\."; then
+            SITES="${SITES},programming"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_university\|docusaurus\.university\."; then
+            SITES="${SITES},university"
+          fi
+          if echo "$CHANGED" | grep -q "docs/docs_infrastructure\|docs/docs_tools\|docusaurus\.config\.ts"; then
+            SITES="${SITES},main"
+          fi
+          # Remove leading comma
+          SITES=$(echo "$SITES" | sed 's/^,//')
+          if [ -z "$SITES" ]; then
+            echo "No content changes detected, skipping Algolia indexing"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Sites to reindex: $SITES"
+            echo "sites=$SITES" >> "$GITHUB_OUTPUT"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Reindex changed sites
+        if: steps.changed.outputs.skip != 'true'
+        run: node scripts/index-algolia.js
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
+          SITES_FILTER: ${{ steps.changed.outputs.sites }}
+
+      - name: Full reindex (weekly schedule)
+        if: github.event.schedule != ''
+        run: node scripts/index-algolia.js
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_WRITE_KEY: ${{ secrets.ALGOLIA_WRITE_KEY }}
